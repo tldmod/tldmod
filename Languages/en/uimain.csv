@@ -1,0 +1,95 @@
+ui_texture_detail|Texture Detail:
+ui_max_frame_rate|Max. Frame Rate:
+ui_enable_bumpmap|Use Bump Mapping
+ui_disable_blood|Hide Blood
+ui_disable_music|Disable Music
+ui_disable_sound|Disable Sound
+ui_enable_cheats|Enable Cheats
+ui_enable_edit_mode|Enable Edit Mode (Be warned, this slows down the game.)
+ui_enable_pixel_shaders|Use Pixel Shaders
+ui_enable_sound_variation|Enable Sound Variation
+ui_enable_vertex_shaders|Render Method:
+ui_shadow_quality|Shadow Quality:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Show Framerate
+ui_start_windowed|Start Windowed
+ui_trialmode_caption|Activation
+ui_trialmode|Please take a moment to activate Mount&&Blade with your serial key. Your unique, 16-digit serial key is included inside your boxed copy.\nIf you don't wish to activate the game now for any reason, you can still continue to play the game in trial mode, however you won't be able to advance past character level 8.
+ui_launch_buy|Buy a License from TaleWorlds.com
+ui_launch_faq|Activation Frequently Asked Questions
+ui_trialmode2|In order to activate the game now...
+ui_trialmode3|Or, you can also...
+ui_trialmode4|If you have any questions about the activation process, you can read...
+ui_serial_key_caption|Serial Key
+ui_notification_serial_input|Enter your serial key below (you can copy && paste it) and click on Activate button
+ui_activate|Activate
+ui_paste|Paste
+ui_notification_serial_internet_connection|Activation requires an active Internet Connection!
+ui_notification_serial_offline|If this computer does not have access to the Internet you can also use:
+ui_manual_activation|Manual Activation
+ui_manual_activation_caption|Manual Activation
+ui_cancel2|Cancel
+ui_ok2|OK
+ui_activation_successful|The game has been activated successfuly.
+ui_activation_successful2|Please keep your serial key for future reference. You may need it again in the future if you want to install Mount&&Blade on a new computer.
+ui_activation_denied|Activation Denied!
+ui_notification_serial_already_used|Serial Key already used for another computer. You must wait for a few weeks to reactivate the game on this computer.
+ui_notification_unable_to_connect_to_activation_server|Unable to connect to activation server! 
+ui_notification_unable_to_connect_to_activation_server2|Please make sure that your internet connection is active and working properly and try again. If you are using a firewall, you many need to give the game permission to access the internet. If all else fails, you may always use manual activation.
+ui_incorrect_serial_number|Incorrect Serial Key!
+ui_incorrect_hardware_hash|Incorrect Hardware Hash!
+ui_incorrect_activation_code|Incorrect Activation Code!
+ui_cant_write_to_registry|Can't Write to Registry!
+ui_video|Video
+ui_audio|Audio
+ui_game|Game
+ui_advanced|Advanced
+ui_mount_and_blade_is_ready|Mount&&Blade is ready.
+ui_notification_trial_mode|Mount&&Blade is currently running in Trial Mode. In this mode you can play the game freely until your character reaches level 6. To continue further, please buy a license from taleworlds.com. It takes only a minute to buy a license online and unlock the complete mode.
+ui_there_are_no_modules_installed|There are no modules installed!
+ui_notification_new_version|A newer version of Mount&Blade was found.\nCurrently installed version is %d.%d%d%d.\nLatest version of Mount&Blade is %d.%d%d%d.\nYou can download the new version from www.taleworlds.com.
+ui_new_version_found|New Version Found!
+ui_notification_unable_to_retreive_new_version|Unable to retrieve new version info. Please try again later.
+ui_new_version|New Version:
+ui_notification_latest_version|The installed version of Mount&&Blade is the most current one.
+ui_mount_and_blade_is_up_to_date|Mount&Blade is up-to-date!
+ui_off|Off
+ui_continue_playing_the_trial_mode|Continue playing in Trial Mode
+ui_faq_caption|FAQ
+ui_faq_text|Q: What is activation?\r\nA: The activation system is a user-friendly copy-protection method which is based on distributing a unique serial key along with each copy of the game. You need to activate the game once on every computer that you want to play the game with your serial key. After activating once, you don't need to do anything else to play such as keeping the game disc in the drive. As long as you keep your serial key, you will be able to activate and play the game easily, even after many years.\r\n\r\nQ: Where can I find my serial key?\r\nA: Each boxed copy of the game includes a unique serial key. Different vendors may distribute the keys in different ways, but it is typically attached to the cover of your printed manual. If you have purchased your game online, then the online vendor should supply you your serial key.\r\n\r\nQ: How does the activation process work?\r\nA: The game creates a hash-value from the specifications of your computer and sends it to an activation server over the internet together with your serial key. The activation server registers the serial key to your computer and responds with an activation number, which then unlocks the full mode of the game.\r\n\r\nQ: Can I activate the game on multiple computers?\r\nA: Yes, you can. But please remember that the game is licensed to you for your own personal use. The activation server may reject a serial key temporarily if it is used on too many computers in a short period of time. \r\n\r\nQ: The program stops to respond after I click on the activate button.\r\nA: Sometimes it may take up to half a minute to carry out the activation process. Be patient, the game will eventually report the result.\r\n\r\nQ: My computer does not have access to the internet. How can I activate the game?\r\nA: In this case you may use manual activation. Just click on "Enter Your Serial Key", and then "Manual Activation" buttons. You will still need to open up the manual activation web-page from another computer that is linked to the internet.\r\n
+ui_auto_adjust|Auto Adjust
+ui_screen_size|Screen Resolution:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Use Desktop Resolution
+ui_play|Play Mount&&Blade
+ui_check_for_new_version|Check For New Version
+ui_configure|Configure
+ui_configure_caption|Configure
+ui_gamersgate_website|GamersGate Website
+ui_mountandblade_website|Mount & Blade Website
+ui_current_setting|           Current Module:
+ui_manual_activation_text1|1) In your web browser, open the following address:
+ui_manual_activation_text2|2) In the webpage that opens enter your serial key...
+ui_manual_activation_text3|3) ...and this machine's hardware hash:
+ui_manual_activation_text4|4) The page will then give you an activation code. Enter or paste it below and click OK.
+ui_activation_code|Activation Code:
+ui_force_vsync|Force Vertical Sync.
+ui_module_newer_than_application|The module you selected has been specified NOT TO WORK with the current version of the game. You are strongly advised not to run this setting. To remedy this, you may try checking for a newer version of the game.
+ui_module_older_than_application|The module you selected has been created for an older version of the game and may not work with the current version of the game. You may go ahead and try running it but there is a chance that you will run into difficulties. To remedy this, you may check if a newer version of the module is available.
+ui_m_low|Low
+ui_m_high|High
+ui_m_ultra_high|Ultra High
+ui_force_single_threading|Force Single Threading
+ui_not_enough_memory|It seems that you currently have %d MB of available total physical and virtual memory. Mount&Blade requires at least 700 MB of available memory in order to run without a problem. If Mount&Blade continuously crashes during your play, please close some of your programs before starting Mount&Blade or increase your virtual memory from Control Panel -> System menu.
+ui_install|Install Mount&Blade
+DirectXText|"Mount&Blade requires DirectX 9.0c or above to run. This computer does not meet the requirement. To fix the problem you need to download and install the latest version of DirectX from Microsoft's website. Would you like to visit TaleWorlds DirectX Download page now?"
+NoMountAndBladeText|"Mount&Blade has not been installed on this computer. Please download the full installer from www.taleworlds.com and use it to install the game."
+ui_SavegamesText|"Do you want to keep your save files?"
+ui_trialmode_online|Mount&&Blade is currently running in Trial Mode. In this mode you can play the game freely until your character reaches level 7. To continue further, you need to enter a serial key and activate the game. If you have already purchased the game, please enter your serial key now. If not you may easily purchase the game from Taleworlds.com. It takes only a minute to buy a license online and unlock the complete mode.
+ui_launch_activate|Enter Your Serial Key
+ui_trialmode2_online|After buying a license, you will obtain your serial key.\nTo unlock the full mode just proceed to...
+ui_trialmode3_online|Or, if you don't wish to purchase the game yet you can also...
+ui_trialmode4_online|Our online sales process is fully secure and we greatly respect our customers' rights to security, privacy, having backup copies of their game and upgrading their computers/hardware. If you'd like to learn more about our sales policy, please take a look at:
+
+

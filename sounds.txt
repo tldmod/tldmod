@@ -1,0 +1,733 @@
+soundsfile version 2
+520
+ drum_3.ogg 257
+ tutorial_1.ogg 1793
+ tutorial_2.ogg 1793
+ s_cymbals.ogg 1937
+ quest_completed.ogg 1937
+ quest_succeeded.ogg 1937
+ quest_concluded.ogg 1937
+ quest_failed.ogg 1937
+ quest_cancelled.ogg 1937
+ rain_1.ogg 1187
+ coins_dropped_1.ogg 1696
+ coins_dropped_2.ogg 2720
+ sword_clank_metal_09.ogg 0
+ sword_clank_metal_09b.ogg 0
+ sword_clank_metal_10.ogg 0
+ sword_clank_metal_10b.ogg 0
+ sword_clank_metal_12.ogg 0
+ sword_clank_metal_12b.ogg 0
+ sword_clank_metal_13.ogg 0
+ sword_clank_metal_13b.ogg 0
+ s_swordClash2.wav 0
+ s_swordClash3.wav 0
+ s_swordSwing.wav 2080
+ footstep_1.ogg 1040
+ footstep_2.ogg 1040
+ footstep_3.ogg 1040
+ footstep_4.ogg 1040
+ footstep_wood_1.ogg 1552
+ footstep_wood_2.ogg 1552
+ footstep_wood_4.ogg 1552
+ water_walk_1.ogg 1072
+ water_walk_2.ogg 1072
+ water_walk_3.ogg 1072
+ water_walk_4.ogg 1072
+ footstep_horse_5.ogg 48
+ footstep_horse_2.ogg 48
+ footstep_horse_3.ogg 48
+ footstep_horse_4.ogg 48
+ s_footstep_horse_4b.wav 48
+ s_footstep_horse_4f.wav 48
+ s_footstep_horse_5b.wav 48
+ s_footstep_horse_5f.wav 48
+ s_footstep_horse_2b.wav 48
+ s_footstep_horse_2f.wav 48
+ s_footstep_horse_3b.wav 48
+ s_footstep_horse_3f.wav 48
+ jump_begin.ogg 1936
+ jump_end.ogg 1424
+ jump_begin_water.ogg 1168
+ jump_end_water.ogg 1168
+ horse_jump_begin.ogg 1936
+ horse_jump_end.ogg 1936
+ release_bow_1.ogg 1280
+ release_crossbow_1.ogg 1792
+ throw_javelin_2.ogg 1280
+ throw_axe_1.ogg 1792
+ throw_knife_1.ogg 1280
+ throw_stone_1.ogg 1792
+ reload_crossbow_1.ogg 768
+ put_back_dagger.ogg 1536
+ pull_bow_1.ogg 1024
+ pull_arrow.ogg 1280
+ arrow_pass_by_1.ogg 0
+ arrow_pass_by_2.ogg 0
+ arrow_pass_by_3.ogg 0
+ arrow_pass_by_4.ogg 0
+ bolt_pass_by_1.ogg 0
+ javelin_pass_by_1.ogg 0
+ javelin_pass_by_2.ogg 0
+ stone_pass_by_1.ogg 2304
+ axe_pass_by_1.ogg 0
+ knife_pass_by_1.ogg 0
+ arrow_whoosh_1.ogg 0
+ arrow_hit_ground_2.ogg 1904
+ arrow_hit_ground_3.ogg 1904
+ incoming_bullet_hit_ground_1.ogg 1904
+ incoming_javelin_hit_ground_1.ogg 1904
+ incoming_stone_hit_ground_1.ogg 1904
+ outgoing_arrow_hit_ground.ogg 1904
+ draw_sword.ogg 64
+ put_back_sword.ogg 64
+ draw_greatsword.ogg 64
+ draw_mace.ogg 64
+ put_back_to_holster.ogg 64
+ draw_greataxe.ogg 64
+ put_back_to_leather.ogg 64
+ draw_spear.ogg 64
+ draw_crossbow.ogg 64
+ draw_from_holster.ogg 64
+ draw_dagger.ogg 64
+ draw_bow.ogg 64
+ draw_shield.ogg 1856
+ put_back_shield.ogg 1856
+ draw_other.ogg 64
+ draw_other2.ogg 64
+ body_fall_small_1.ogg 2656
+ body_fall_small_2.ogg 2656
+ body_fall_1.ogg 2656
+ body_fall_2.ogg 2656
+ body_fall_3.ogg 2656
+ horse_body_fall_begin_1.ogg 2656
+ horse_body_fall_end_1.ogg 2656
+ body_fall_very_big_1.ogg 2656
+ hit_wood_wood_1.ogg 2672
+ hit_wood_wood_2.ogg 2672
+ hit_wood_wood_3.ogg 2672
+ hit_wood_wood_4.ogg 2672
+ hit_wood_metal_4.ogg 2672
+ hit_wood_metal_5.ogg 2672
+ hit_wood_metal_6.ogg 2672
+ hit_metal_metal_3.ogg 2672
+ hit_metal_metal_4.ogg 2672
+ hit_metal_metal_5.ogg 2672
+ hit_metal_metal_6.ogg 2672
+ hit_metal_metal_7.ogg 2672
+ hit_metal_metal_8.ogg 2672
+ hit_metal_metal_9.ogg 2672
+ hit_metal_metal_10.ogg 2672
+ clang_metal_1.ogg 2672
+ clang_metal_2.ogg 2672
+ hit_metal_metal_1.ogg 2672
+ hit_metal_metal_2.ogg 2672
+ hit_wood_metal_7.ogg 2672
+ shield_hit_wood_wood_1.ogg 2672
+ shield_hit_wood_wood_2.ogg 2672
+ shield_hit_wood_wood_3.ogg 2672
+ shield_hit_metal_metal_1.ogg 2672
+ shield_hit_metal_metal_2.ogg 2672
+ shield_hit_metal_metal_3.ogg 2672
+ shield_hit_metal_metal_4.ogg 2672
+ shield_hit_cut_3.ogg 2672
+ shield_hit_cut_4.ogg 2672
+ shield_hit_cut_5.ogg 2672
+ shield_hit_cut_10.ogg 2672
+ shield_hit_metal_wood_1.ogg 2672
+ shield_hit_metal_wood_2.ogg 2672
+ shield_hit_metal_wood_3.ogg 2672
+ shield_broken.ogg 144
+ man_hit_5.ogg 2672
+ man_hit_6.ogg 2672
+ man_hit_7.ogg 2672
+ man_hit_8.ogg 2672
+ man_hit_9.ogg 2672
+ man_hit_10.ogg 2672
+ man_hit_11.ogg 2672
+ man_hit_12.ogg 2672
+ man_hit_13.ogg 2672
+ man_hit_14.ogg 2672
+ man_hit_15.ogg 2672
+ man_hit_17.ogg 2672
+ man_hit_18.ogg 2672
+ man_hit_19.ogg 2672
+ man_hit_22.ogg 2672
+ man_hit_29.ogg 2672
+ man_hit_32.ogg 2672
+ man_hit_47.ogg 2672
+ man_hit_57.ogg 2672
+ man_hit_59.ogg 2672
+ man_death_1.ogg 160
+ man_death_8.ogg 160
+ man_death_8b.ogg 160
+ man_death_11.ogg 160
+ man_death_14.ogg 160
+ man_death_16.ogg 160
+ man_death_18.ogg 160
+ man_death_21.ogg 160
+ man_death_29.ogg 160
+ man_death_40.ogg 160
+ man_death_44.ogg 160
+ man_death_46.ogg 160
+ man_death_48.ogg 160
+ man_death_64.ogg 160
+ woman_hit_2.ogg 112
+ woman_hit_3.ogg 112
+ woman_hit_b_2.ogg 112
+ woman_hit_b_4.ogg 112
+ woman_hit_b_6.ogg 112
+ woman_hit_b_7.ogg 112
+ woman_hit_b_8.ogg 112
+ woman_hit_b_11.ogg 112
+ woman_hit_b_14.ogg 112
+ woman_hit_b_16.ogg 112
+ woman_fall_1.ogg 160
+ woman_hit_b_5.ogg 160
+ s_hide.wav 0
+ s_unhide.wav 0
+ horse_exterior_whinny_01.ogg 0
+ horse_exterior_whinny_02.ogg 0
+ horse_exterior_whinny_03.ogg 0
+ horse_exterior_whinny_04.ogg 0
+ horse_exterior_whinny_05.ogg 0
+ horse_whinny.ogg 0
+ horse_gallop_3.ogg 768
+ horse_gallop_4.ogg 768
+ horse_gallop_5.ogg 768
+ battle.ogg 1024
+ arrow_hit_body_1.ogg 64
+ arrow_hit_body_2.ogg 64
+ arrow_hit_body_3.ogg 64
+ sword_hit_lo_armor_lo_dmg_1.ogg 2384
+ sword_hit_lo_armor_lo_dmg_2.ogg 2384
+ sword_hit_lo_armor_lo_dmg_3.ogg 2384
+ sword_hit_lo_armor_hi_dmg_1.ogg 2384
+ sword_hit_lo_armor_hi_dmg_2.ogg 2384
+ sword_hit_lo_armor_hi_dmg_3.ogg 2384
+ metal_hit_high_armor_low_damage.ogg 2384
+ metal_hit_high_armor_low_damage_2.ogg 2384
+ metal_hit_high_armor_low_damage_3.ogg 2384
+ sword_hit_hi_armor_hi_dmg_1.ogg 2384
+ sword_hit_hi_armor_hi_dmg_2.ogg 2384
+ sword_hit_hi_armor_hi_dmg_3.ogg 2384
+ blunt_hit_low_1.ogg 2384
+ blunt_hit_low_2.ogg 2384
+ blunt_hit_low_3.ogg 2384
+ blunt_hit_high_1.ogg 2384
+ blunt_hit_high_2.ogg 2384
+ blunt_hit_high_3.ogg 2384
+ wooden_hit_high_armor_low_damage.ogg 2384
+ wooden_hit_high_armor_low_damage_2.ogg 2384
+ punch_1.ogg 2384
+ punch_4.ogg 2384
+ punch_5.ogg 2384
+ player_hit_by_arrow.ogg 2720
+ fl_pistol.wav 2720
+ man_excercise_1.ogg 1120
+ man_excercise_2.ogg 1120
+ man_excercise_4.ogg 1120
+ man_ugh_1.ogg 2096
+ man_ugh_2.ogg 2096
+ man_ugh_4.ogg 2096
+ man_ugh_7.ogg 2096
+ man_ugh_12.ogg 2096
+ man_ugh_13.ogg 2096
+ man_ugh_17.ogg 2096
+ man_grunt_1.ogg 2128
+ man_grunt_2.ogg 2128
+ man_grunt_3.ogg 2128
+ man_grunt_5.ogg 2128
+ man_grunt_13.ogg 2128
+ man_grunt_14.ogg 2128
+ man_yell_4.ogg 2144
+ man_yell_4_2.ogg 2144
+ man_yell_7.ogg 2144
+ man_yell_9.ogg 2144
+ man_yell_11.ogg 2144
+ man_yell_13.ogg 2144
+ man_yell_15.ogg 2144
+ man_yell_16.ogg 2144
+ man_yell_17.ogg 2144
+ man_yell_20.ogg 2144
+ man_shortyell_4.ogg 2144
+ man_shortyell_5.ogg 2144
+ man_shortyell_6.ogg 2144
+ man_shortyell_9.ogg 2144
+ man_shortyell_11.ogg 2144
+ man_shortyell_11b.ogg 2144
+ man_yell_b_18.ogg 2144
+ man_yell_22.ogg 2144
+ man_yell_b_21.ogg 2144
+ man_yell_b_22.ogg 2144
+ man_yell_b_23.ogg 2144
+ man_yell_c_20.ogg 2144
+ man_insult_2.ogg 96
+ man_insult_3.ogg 96
+ man_insult_7.ogg 96
+ man_insult_9.ogg 96
+ man_insult_13.ogg 96
+ man_insult_15.ogg 96
+ man_insult_16.ogg 96
+ encounter_river_pirates_5.ogg 1281
+ encounter_river_pirates_6.ogg 1281
+ encounter_river_pirates_9.ogg 1281
+ encounter_river_pirates_10.ogg 1281
+ encounter_river_pirates_4.ogg 1281
+ encounter_bandit_2.ogg 1281
+ encounter_bandit_9.ogg 1281
+ encounter_bandit_12.ogg 1281
+ encounter_bandit_13.ogg 1281
+ encounter_bandit_15.ogg 1281
+ encounter_bandit_16.ogg 1281
+ encounter_bandit_10.ogg 1281
+ encounter_farmer_2.ogg 1281
+ encounter_farmer_5.ogg 1281
+ encounter_farmer_7.ogg 1281
+ encounter_farmer_9.ogg 1281
+ encounter_sea_raider_5.ogg 1281
+ encounter_sea_raider_9.ogg 1281
+ encounter_sea_raider_9b.ogg 1281
+ encounter_sea_raider_10.ogg 1281
+ encounter_steppe_bandit_3.ogg 1281
+ encounter_steppe_bandit_3b.ogg 1281
+ encounter_steppe_bandit_8.ogg 1281
+ encounter_steppe_bandit_10.ogg 1281
+ encounter_steppe_bandit_12.ogg 1281
+ encounter_nobleman_1.ogg 1281
+ encounter_vaegirs_ally.ogg 1281
+ encounter_vaegirs_ally_2.ogg 1281
+ encounter_vaegirs_neutral.ogg 1281
+ encounter_vaegirs_neutral_2.ogg 1281
+ encounter_vaegirs_neutral_3.ogg 1281
+ encounter_vaegirs_neutral_4.ogg 1281
+ sneak_halt_1.ogg 1
+ sneak_halt_2.ogg 1
+ horse_walk_1.ogg 2352
+ horse_walk_2.ogg 2352
+ horse_walk_3.ogg 2352
+ horse_walk_4.ogg 2352
+ horse_trot_1.ogg 1072
+ horse_trot_2.ogg 1072
+ horse_trot_3.ogg 1072
+ horse_trot_4.ogg 1072
+ horse_canter_1.ogg 1584
+ horse_canter_2.ogg 1584
+ horse_canter_3.ogg 1584
+ horse_canter_4.ogg 1584
+ horse_gallop_6.ogg 2096
+ horse_gallop_7.ogg 2096
+ horse_gallop_8.ogg 2096
+ horse_gallop_9.ogg 2096
+ horse_breath_4.ogg 2608
+ horse_breath_5.ogg 2608
+ horse_breath_6.ogg 2608
+ horse_breath_7.ogg 2608
+ horse_snort_1.ogg 1872
+ horse_snort_2.ogg 1872
+ horse_snort_3.ogg 1872
+ horse_snort_4.ogg 1872
+ horse_snort_5.ogg 1872
+ horse_whinny-1.ogg 2304
+ horse_whinny-2.ogg 2304
+ block_fist_3.ogg 0
+ block_fist_4.ogg 0
+ man_victory_3.ogg 2640
+ man_victory_4.ogg 2640
+ man_victory_5.ogg 2640
+ man_victory_8.ogg 2640
+ man_victory_15.ogg 2640
+ man_victory_49.ogg 2640
+ man_victory_52.ogg 2640
+ man_victory_54.ogg 2640
+ man_victory_57.ogg 2640
+ man_victory_71.ogg 2640
+ Fire_Torch_Loop3.ogg 1174
+ cow_moo_1.ogg 2193
+ cow_slaughter.ogg 2193
+ d_dog1.ogg 2177
+ d_dog2.ogg 2177
+ d_dog3.ogg 2177
+ d_dog7.ogg 2177
+ d_owl2.ogg 2433
+ d_owl3.ogg 2433
+ d_owl4.ogg 2433
+ d_chicken1.ogg 2177
+ d_chicken2.ogg 2177
+ d_carpenter1.ogg 897
+ d_saw_short3.ogg 897
+ d_blacksmith2.ogg 1153
+ arena_loop11.ogg 899
+ town_loop_3.ogg 899
+ gondor_yell_1.mp3 2144
+ gondor_yell_2.mp3 2144
+ gondor_yell_3.mp3 2144
+ gondor_yell_4.mp3 2144
+ gondor_yell_5.mp3 2144
+ gondor_yell_6.mp3 2144
+ gondor_victory_1.mp3 2640
+ gondor_victory_2.mp3 2640
+ gondor_victory_3.mp3 2640
+ gondor_victory_4.mp3 2640
+ gondor_victory_5.mp3 2640
+ gondor_victory_6.mp3 2640
+ rohan_yell_1.mp3 2144
+ rohan_yell_2.mp3 2144
+ rohan_yell_3.mp3 2144
+ rohan_yell_4.mp3 2144
+ rohan_yell_5.mp3 2144
+ rohan_yell_6.mp3 2144
+ rohan_yell_7.mp3 2144
+ rohan_yell_8.mp3 2144
+ rohan_yell_9.mp3 2144
+ rohan_yell_10.mp3 2144
+ rohan_yell_11.mp3 2144
+ rohan_yell_12.mp3 2144
+ rohan_yell_13.mp3 2144
+ rohan_yell_14.mp3 2144
+ rohan_victory_1.mp3 2640
+ rohan_victory_2.mp3 2640
+ rohan_victory_3.mp3 2640
+ rohan_victory_4.mp3 2640
+ dun_yell_1.mp3 2144
+ dun_yell_2.mp3 2144
+ dun_yell_3.mp3 2144
+ dun_yell_4.mp3 2144
+ dun_yell_5.mp3 2144
+ dun_yell_6.mp3 2144
+ dun_yell_7.mp3 2144
+ dun_yell_8.mp3 2144
+ dun_yell_9.mp3 2144
+ dun_yell_10.mp3 2144
+ dun_yell_11.mp3 2144
+ dun_yell_12.mp3 2144
+ dun_yell_13.mp3 2144
+ dun_yell_14.mp3 2144
+ dun_yell_15.mp3 2144
+ dun_yell_16.mp3 2144
+ dun_yell_17.mp3 2144
+ dun_yell_18.mp3 2144
+ dun_yell_19.mp3 2144
+ dun_yell_20.mp3 2144
+ dun_yell_21.mp3 2144
+ dun_yell_22.mp3 2144
+ dun_yell_23.mp3 2144
+ dun_yell_24.mp3 2144
+ dun_victory_1.mp3 2640
+ dun_victory_2.mp3 2640
+ dun_victory_4.mp3 2640
+ dun_victory_5.mp3 2640
+ dun_victory_6.mp3 2640
+ dun_victory_7.mp3 2640
+ dun_victory_8.mp3 2640
+ dun_victory_9.mp3 2640
+ orc_death_1.mp3 160
+ orc_death_2.mp3 160
+ orc_death_3.mp3 160
+ orc_death_4.mp3 160
+ orc_death_5.mp3 160
+ orc_death_6.mp3 160
+ orc_death_7.mp3 160
+ orc_death_8.mp3 160
+ orc_hit_1.mp3 2672
+ orc_hit_2.mp3 2672
+ orc_hit_3.mp3 2672
+ orc_hit_4.mp3 2672
+ orc_hit_6.mp3 2672
+ orc_hit_7.mp3 2672
+ orc_hit_9.mp3 2672
+ orc_hit_10.mp3 2672
+ orc_grunt_1.mp3 1120
+ orc_grunt_long_1.mp3 2128
+ orc_yell_1.mp3 2144
+ orc_yell_2.mp3 2144
+ orc_victory_1.mp3 2640
+ orc_victory_2.mp3 2640
+ orc_victory_3.mp3 2640
+ orc_victory_4.mp3 2640
+ orc_victory_5.mp3 2640
+ orc_victory_6.mp3 2640
+ har_yell_1.mp3.mp3 2144
+ har_yell_2.mp3 2144
+ har_yell_3.mp3 2144
+ har_yell_4.mp3 2144
+ har_yell_5.mp3 2144
+ har_yell_6.mp3 2144
+ har_yell_7.mp3 2144
+ har_yell_8.mp3 2144
+ har_yell_9.mp3 2144
+ har_yell_10.mp3 2144
+ haradrim_victory_1.mp3 2640
+ haradrim_victory_2.mp3 2640
+ haradrim_victory_3.mp3 2640
+ haradrim_victory_4.mp3 2640
+ haradrim_victory_5.mp3 2640
+ wilhelm.ogg 160
+ troll_death_1.mp3 160
+ troll_hit_1.mp3 2672
+ troll_grunt_1.mp3 1120
+ troll_grunt_2.mp3 1120
+ troll_hit_2.mp3 2128
+ dunedain_yell_1.mp3 2144
+ dunedain_yell_2.mp3 2144
+ dunedain_yell_3.mp3 2144
+ dunedain_yell_4.mp3 2144
+ dunedain_yell_5.mp3 2144
+ dunedain_yell_6.mp3 2144
+ dunedain_yell_7.mp3 2144
+ dunedain_yell_8.mp3 2144
+ dunedain_yell_9.mp3 2144
+ dunedain_yell_10.mp3 2144
+ dunedain_victory_1.mp3 2640
+ dunedain_victory_2.mp3 2640
+ dunedain_victory_3.mp3 2640
+ elf_lothlorien_yell_1.mp3 2144
+ elf_lothlorien_yell_2.mp3 2144
+ elf_lothlorien_yell_3.mp3 2144
+ elf_basic_yell_1.mp3 2144
+ elf_basic_yell_2.mp3 2144
+ elf_basic_yell_3.mp3 2144
+ elf_basic_yell_4.mp3 2144
+ elf_basic_yell_5.mp3 2144
+ elf_basic_yell_6.mp3 2144
+ elf_basic_yell_7.mp3 2144
+ elf_basic_yell_8.mp3 2144
+ elf_basic_yell_9.mp3 2144
+ elf_basic_yell_10.mp3 2144
+ elf_basic_victory_1.mp3 2640
+ elf_basic_victory_2.mp3 2640
+ elf_basic_victory_3.mp3 2640
+ elf_basic_victory_4.mp3 2640
+ elf_basic_victory_5.mp3 2640
+ elf_rivendell_yell_1.mp3 2144
+ elf_rivendell_yell_2.mp3 2144
+ elf_mirkwood_yell_1.mp3 2144
+ elf_mirkwood_yell_2.mp3 2144
+ s_big_weaponSwing.wav 2672
+ thunder.ogg 2720
+ order_form_ranks_(orc).mp3 768
+ horn_isengard.mp3 2560
+ nazgul_02.mp3 2720
+ nazgul_01.mp3 2720
+ horror_scream_man_0.wav 2720
+ horror_scream_man_1.wav 2720
+ horror_scream_man_2.wav 2720
+ horror_scream_man_3.wav 2720
+ horror_scream_man_4.wav 2720
+ horror_scream_women.wav 2720
+ warg_bark01.mp3 2656
+ warg_bark02.mp3 2656
+ warg_bark03.mp3 2656
+ warg_growl01.mp3 2656
+ warg_howl01.mp3 2656
+210
+snd_click 257 1 0 
+snd_tutorial_1 1793 1 1 
+snd_tutorial_2 1793 1 2 
+snd_gong 1937 1 3 
+snd_quest_taken 1937 0 
+snd_quest_completed 1937 1 4 
+snd_quest_succeeded 1937 1 5 
+snd_quest_concluded 1937 1 6 
+snd_quest_failed 1937 1 7 
+snd_quest_cancelled 1937 1 8 
+snd_rain 1187 1 9 
+snd_money_received 1696 1 10 
+snd_money_paid 2720 1 11 
+snd_sword_clash_1 0 8 12 13 14 15 16 17 18 19 
+snd_sword_clash_2 0 1 20 
+snd_sword_clash_3 0 1 21 
+snd_sword_swing 2080 1 22 
+snd_footstep_grass 1040 4 23 24 25 26 
+snd_footstep_wood 1552 3 27 28 29 
+snd_footstep_water 1072 4 30 31 32 33 
+snd_footstep_horse 48 4 34 35 36 37 
+snd_footstep_horse_1b 48 4 38 39 40 41 
+snd_footstep_horse_1f 48 4 42 43 44 45 
+snd_footstep_horse_2b 48 1 42 
+snd_footstep_horse_2f 48 1 43 
+snd_footstep_horse_3b 48 1 44 
+snd_footstep_horse_3f 48 1 45 
+snd_footstep_horse_4b 48 1 38 
+snd_footstep_horse_4f 48 1 39 
+snd_footstep_horse_5b 48 1 40 
+snd_footstep_horse_5f 48 1 41 
+snd_jump_begin 1936 1 46 
+snd_jump_end 1424 1 47 
+snd_jump_begin_water 1168 1 48 
+snd_jump_end_water 1168 1 49 
+snd_horse_jump_begin 1936 1 50 
+snd_horse_jump_end 1936 1 51 
+snd_horse_jump_begin_water 1168 1 48 
+snd_horse_jump_end_water 1168 1 49 
+snd_release_bow 1280 1 52 
+snd_release_crossbow 1792 1 53 
+snd_throw_javelin 1280 1 54 
+snd_throw_axe 1792 1 55 
+snd_throw_knife 1280 1 56 
+snd_throw_stone 1792 1 57 
+snd_reload_crossbow 768 1 58 
+snd_reload_crossbow_continue 1536 1 59 
+snd_pull_bow 1024 1 60 
+snd_pull_arrow 1280 1 61 
+snd_arrow_pass_by 0 4 62 63 64 65 
+snd_bolt_pass_by 0 1 66 
+snd_javelin_pass_by 0 2 67 68 
+snd_stone_pass_by 2304 1 69 
+snd_axe_pass_by 0 1 70 
+snd_knife_pass_by 0 1 71 
+snd_bullet_pass_by 0 1 72 
+snd_incoming_arrow_hit_ground 1904 3 73 74 75 
+snd_incoming_bolt_hit_ground 1904 3 73 74 75 
+snd_incoming_javelin_hit_ground 1904 1 76 
+snd_incoming_stone_hit_ground 1904 1 77 
+snd_incoming_axe_hit_ground 1904 1 76 
+snd_incoming_knife_hit_ground 1904 1 77 
+snd_incoming_bullet_hit_ground 1904 1 75 
+snd_outgoing_arrow_hit_ground 1904 1 78 
+snd_outgoing_bolt_hit_ground 1904 1 78 
+snd_outgoing_javelin_hit_ground 2672 1 78 
+snd_outgoing_stone_hit_ground 1904 1 77 
+snd_outgoing_axe_hit_ground 1904 1 76 
+snd_outgoing_knife_hit_ground 1904 1 77 
+snd_outgoing_bullet_hit_ground 1904 1 75 
+snd_draw_sword 64 1 79 
+snd_put_back_sword 64 1 80 
+snd_draw_greatsword 64 1 81 
+snd_put_back_greatsword 64 1 80 
+snd_draw_axe 64 1 82 
+snd_put_back_axe 64 1 83 
+snd_draw_greataxe 64 1 84 
+snd_put_back_greataxe 64 1 85 
+snd_draw_spear 64 1 86 
+snd_put_back_spear 64 1 85 
+snd_draw_crossbow 64 1 87 
+snd_put_back_crossbow 64 1 85 
+snd_draw_revolver 64 1 88 
+snd_put_back_revolver 64 1 83 
+snd_draw_dagger 64 1 89 
+snd_put_back_dagger 64 1 59 
+snd_draw_bow 64 1 90 
+snd_put_back_bow 64 1 83 
+snd_draw_shield 1856 1 91 
+snd_put_back_shield 1856 1 92 
+snd_draw_other 64 1 93 
+snd_put_back_other 64 1 94 
+snd_body_fall_small 2656 2 95 96 
+snd_body_fall_big 2656 3 97 98 99 
+snd_horse_body_fall_begin 2656 1 100 
+snd_horse_body_fall_end 2656 3 101 98 102 
+snd_hit_wood_wood 2672 7 103 104 105 106 107 108 109 
+snd_hit_metal_metal 2672 10 110 111 112 113 114 115 116 117 118 119 
+snd_hit_wood_metal 2672 3 120 121 122 
+snd_shield_hit_wood_wood 2672 3 123 124 125 
+snd_shield_hit_metal_metal 2672 4 126 127 128 129 
+snd_shield_hit_wood_metal 2672 4 130 131 132 133 
+snd_shield_hit_metal_wood 2672 3 134 135 136 
+snd_shield_broken 144 1 137 
+snd_man_hit 2672 20 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 
+snd_man_die 160 14 158 159 160 161 162 163 164 165 166 167 168 169 170 171 
+snd_woman_hit 112 10 172 173 174 175 176 177 178 179 180 181 
+snd_woman_die 160 2 182 183 
+snd_hide 0 1 184 
+snd_unhide 0 1 185 
+snd_neigh 0 6 186 187 188 189 190 191 
+snd_gallop 768 3 192 193 194 
+snd_battle 1024 1 195 
+snd_arrow_hit_body 64 3 196 197 198 
+snd_metal_hit_low_armor_low_damage 2384 3 199 200 201 
+snd_metal_hit_low_armor_high_damage 2384 3 202 203 204 
+snd_metal_hit_high_armor_low_damage 2384 3 205 206 207 
+snd_metal_hit_high_armor_high_damage 2384 3 208 209 210 
+snd_wooden_hit_low_armor_low_damage 2384 3 211 212 213 
+snd_wooden_hit_low_armor_high_damage 2384 3 214 215 216 
+snd_wooden_hit_high_armor_low_damage 2384 2 217 218 
+snd_wooden_hit_high_armor_high_damage 2384 3 214 215 216 
+snd_blunt_hit 2384 4 219 220 220 221 
+snd_player_hit_by_arrow 2720 1 222 
+snd_pistol_shot 2720 1 223 
+snd_man_grunt 1120 3 224 225 226 
+snd_man_breath_hard 2096 7 227 228 229 230 231 232 233 
+snd_man_grunt_long 2128 6 234 235 236 237 238 239 
+snd_man_yell 2144 22 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 
+snd_man_warcry 96 7 262 263 264 265 266 267 268 
+snd_encounter_looters 1281 5 269 270 271 272 273 
+snd_encounter_bandits 1281 7 274 275 276 277 278 279 280 
+snd_encounter_farmers 1281 4 281 282 283 284 
+snd_encounter_sea_raiders 1281 4 285 286 287 288 
+snd_encounter_steppe_bandits 1281 5 289 290 291 292 293 
+snd_encounter_nobleman 1281 1 294 
+snd_encounter_vaegirs_ally 1281 2 295 296 
+snd_encounter_vaegirs_neutral 1281 4 297 298 299 300 
+snd_encounter_vaegirs_enemy 1281 4 297 298 299 300 
+snd_sneak_town_halt 1 2 301 302 
+snd_horse_walk 2352 4 303 304 305 306 
+snd_horse_trot 1072 4 307 308 309 310 
+snd_horse_canter 1584 4 311 312 313 314 
+snd_horse_gallop 2096 4 315 316 317 318 
+snd_horse_breath 2608 4 319 320 321 322 
+snd_horse_snort 1872 5 323 324 325 326 327 
+snd_horse_low_whinny 2304 2 328 329 
+snd_block_fist 0 2 330 331 
+snd_man_hit_blunt_weak 2640 5 146 153 154 155 156 
+snd_man_hit_blunt_strong 2640 5 146 153 154 155 156 
+snd_man_hit_pierce_weak 2640 5 146 153 154 155 156 
+snd_man_hit_pierce_strong 2640 5 146 153 154 155 156 
+snd_man_hit_cut_weak 2640 5 146 153 154 155 156 
+snd_man_hit_cut_strong 2640 5 146 153 154 155 156 
+snd_man_victory 2640 10 332 333 334 335 336 337 338 339 340 341 
+snd_fire_loop 1174 1 342 
+snd_torch_loop 1174 1 342 
+snd_dummy_hit 144 2 130 132 
+snd_dummy_destroyed 144 1 137 
+snd_gourd_destroyed 144 1 137 
+snd_cow_moo 2193 1 343 
+snd_cow_slaughter 2193 1 344 
+snd_distant_dog_bark 2177 4 345 346 347 348 
+snd_distant_owl 2433 3 349 350 351 
+snd_distant_chicken 2177 2 352 353 
+snd_distant_carpenter 897 2 354 355 
+snd_distant_blacksmith 1153 1 356 
+snd_arena_ambiance 899 1 357 
+snd_town_ambiance 899 1 358 
+snd_gondor_yell 2144 6 359 360 361 362 363 364 
+snd_gondor_victory 2640 6 365 366 367 368 369 370 
+snd_rohan_yell 2144 14 371 372 373 374 375 376 377 378 379 380 381 382 383 384 
+snd_rohan_victory 2640 4 385 386 387 388 
+snd_dunlender_yell 2144 24 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 
+snd_dunlender_victory 2640 9 413 414 387 415 416 417 418 419 420 
+snd_orc_die 160 8 421 422 423 424 425 426 427 428 
+snd_orc_hit 2672 8 429 430 431 432 433 434 435 436 
+snd_orc_grunt 1120 1 437 
+snd_orc_grunt_long 2128 1 438 
+snd_orc_yell 2144 2 439 440 
+snd_orc_victory 2640 6 441 442 443 444 445 446 
+snd_haradrim_yell 2144 10 447 448 449 450 451 452 453 454 455 456 
+snd_haradrim_victory 2640 5 457 458 459 460 461 
+snd_haradrim_die 160 14 462 159 160 161 162 163 164 165 166 167 168 169 170 171 
+snd_troll_die 160 1 463 
+snd_troll_hit 2672 3 464 464 464 
+snd_troll_grunt 1120 2 465 466 
+snd_troll_grunt_long 2128 2 466 467 
+snd_troll_yell 2144 2 466 467 
+snd_troll_victory 2640 3 466 467 463 
+snd_dunedain_yell 2144 10 468 469 470 471 472 473 474 475 476 477 
+snd_dunedain_victory 2640 3 478 479 480 
+snd_lothlorien_yell 2144 13 481 482 483 484 485 486 487 488 489 490 491 492 493 
+snd_lothlorien_victory 2640 5 494 495 496 497 498 
+snd_rivendell_yell 2144 12 499 500 484 485 486 487 488 489 490 491 492 493 
+snd_rivendell_victory 2640 5 494 495 496 497 498 
+snd_mirkwood_yell 2144 12 501 502 484 485 486 487 488 489 490 491 492 493 
+snd_mirkwood_victory 2640 5 494 495 496 497 498 
+snd_big_weapon_swing 2672 1 503 
+snd_thunder 2720 1 504 
+snd_pull_ballista 2048 1 60 
+snd_evil_orders 768 1 505 
+snd_evil_horn 2560 1 506 
+snd_nazgul_skreech_long 2720 1 507 
+snd_nazgul_skreech_short 2720 1 508 
+snd_horror_scream_man 2720 5 509 510 511 512 513 
+snd_horror_scream_woman 2720 1 514 
+snd_horror_scream_orc 2720 1 514 
+snd_warg_lone_woof 2656 5 515 516 517 518 519 
+snd_horse_snort_again 1872 5 323 324 325 326 327 

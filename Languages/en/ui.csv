@@ -1,0 +1,573 @@
+﻿ui_music_volume|Music Volume:
+ui_sound_volume|Sound Volume:
+ui_mouse_sensitivity|Mouse Sensitivity:
+ui_invert_mouse_y_axis|Invert Mouse Y axis:
+ui_enabled|Enabled
+ui_disabled|Disabled
+ui_damage_to_player|Damage to player:
+ui_reduced_to_1_over_4_easiest|Reduced to 1/4 (Easiest)
+ui_reduced_to_1_over_2_easy|Reduced to 1/2 (Easy)
+ui_damage_to_friends|Damage to friends:
+ui_reduced_to_1_over_2_easiest|Reduced to 1/2 (Easiest)
+ui_reduced_to_3_over_4_easy|Reduced to 3/4 (Easy)
+ui_normal|Normal
+ui_combat_ai|Combat AI:
+ui_combat_speed|Combat Speed:
+ui_good|Good
+ui_average_caps|Average
+ui_poor|Poor
+ui_faster|Faster
+ui_slower|Slower
+ui_control_block_direction|Control block dir.:
+ui_automatic_recommended|Automatic (recommended)
+ui_by_mouse_movement|By mouse movement
+ui_control_attack_direction|Control attack dir.:
+ui_by_relative_enemy_position|By relative enemy position
+ui_by_inverse_mouse_movement|By inverse mouse movement
+ui_battle_size|Battle size:
+ui_show_attack_direction|Show attack direction:
+ui_show_targeting_reticule|Show targeting reticle:
+ui_show_names_of_friendly_troops|Show names of friendly troops:
+ui_report_damage|Report damage:
+ui_report_shot_difficulty|Report shot difficulty:
+ui_difficulty_rating_percentage|Difficulty Rating = %d%%
+ui_controls|Controls
+ui_video_options|Video Options
+ui_done|Done
+ui_factions|Factions
+ui_item_itemname|Item - %s
+ui_prop_propname|Prop - %s
+ui_unknown_unknownname|Unknown - %s
+ui_entry_point_entrypointname|Entry Point %d
+ui_passage_menu_item_passagename|Passage (menu item %d)
+ui_plant_plantname|Plant - %s
+ui_export_file_for_character_playername_already_exists_overwrite_it|Export file for character %s already exists. Overwrite it?
+ui_yes|Yes
+ui_no|No
+ui_set_save_file_name|Enter a name for this save-game:
+ui_export_character|Export Character
+ui_import_character|Import Character
+ui_character_playername_exported_successfully|Character %s exported successfully.
+ui_character_playername_imported_successfully|Character %s imported successfully.
+ui_unable_to_open_import_file|Unable to open import file.
+ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
+ui_unable_to_find_character_import_file|Unable to find character import file.
+ui_mount_and_blade_is_running_in_trial_mode_please_buy_the_game_for_importing_a_character|Mount&Blade is running in trial mode. Please buy the game for importing a character.
+ui_change_skin|Skin
+ui_change_hair|Hair
+ui_change_hair_color|Hair Color
+ui_change_beard|Beard
+ui_tutorial|Tutorial
+ui_tutorial_face_generator|Adjust your character's face using the buttons and the sliders. To rotate the head, click on it and drag the mouse.
+ui_restore|Restore
+ui_cancel|Cancel
+ui_delete|Delete
+ui_confirm_delete_game|Are you sure you want to delete this game?
+ui_error_removing_file|Error removing file...
+ui_day_datedisplay|Day %d (%d:%d%d)
+ui_reset_changes|Reset Changes
+ui_weapon_proficiencies|Proficiencies
+ui_skills|Skills
+ui_attributes|Attributes
+ui_enter_name_here|*Enter Name Here*
+ui_edit_face|Click to edit face
+ui_statistics|Statistics
+ui_next|Next
+ui_prev|Prev
+ui_learn|Learn
+ui_question_saving_policy|What will the game's saving policy be?
+ui_saving_policy_realistic|Realistic! No quitting without saving!
+ui_saving_policy_nonrealistic|Allow me to quit without saving.
+ui_tutorial_character_generation|Now enter your name and distribute your attribute, skill and weapon points. You can click on various elements on the screen to learn how each one will affect your character
+ui_str|STR
+ui_agi|AGI
+ui_int|INT
+ui_cha|CHA
+ui_at_learning_limit|(At learning limit)
+ui_not_enough_skill_points_to_learn|(Not enough skill points to learn)
+ui_strength|strength
+ui_agility|agility
+ui_intelligence|intelligence
+ui_charisma|charisma
+ui_not_enough_attributetype_to_learn_this_skill|(Not enough %s to learn this skill)
+ui_explanation_one_handed_weapon|Covers usage of one handed swords, axes and blunt weapons.
+ui_explanation_two_handed_weapon|Covers usage of two handed swords, great axes and mauls.
+ui_explanation_polearm|Covers usage of pole weapons like spears, lances, staffs, etc.
+ui_explanation_archery|Covers usage of bows.
+ui_explanation_crossbow|Covers usage of crossbows.
+ui_explanation_throwing|Covers usage of thrown weapons like javelins, darts, stones etc.
+ui_explanation_firearms|Covers usage of pistols and muskets.
+ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
+ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
+ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
+ui_level|Level: %d
+ui_xp|Experience: %d
+ui_next_level_at|Next level at: %d
+ui_health_player|Health: %d/%d
+ui_health|Health: %d
+ui_attribute_points|Attribute points: %d
+ui_skill_points|Skill points: %d
+ui_weapon_points|Weapon points: %d
+ui_mission_losses_none| none.
+ui_mission_losses_wounded|wounded :
+ui_mission_losses_killed|killed :
+ui_party_losses|%s  : %d wounded --- %d killed of %d.
+ui_casualties_sustained|Casualties sustained:
+ui_advantage_change|Advantage change = %c%d 
+ui_overall_battle_casualties|Overall battle causalties:
+ui_advantage_outnumbered| You are hopelessly outnumbered.
+ui_advantage_major_disadvantage| You have a major disadvantage.
+ui_advantage_slight_disadvantage| You are slightly disadvantaged.
+ui_advantage_balanced| The situation is balanced.
+ui_advantage_fair_advantage| You have a fair advantage for winning.
+ui_advantage_greatly_favored| The odds of battle favor you greatly.
+ui_tactical_advantage|Tactical advantage: %d (%s)
+ui_order_group|Order group:
+ui_question_save_changes|You have made changes to the objects. Do you want to save changes?
+ui_yes_save|Yes, save
+ui_no_discard_changes|No, discard changes
+ui_infantry_control|Infantry!
+ui_archers_control|Archers!
+ui_cavalry_control|Cavalry!
+ui_companions_control|Companions!
+ui_everyone_control|Everyone!
+ui_others_control|Others!
+ui_question_give_up_fight|Give up the fight?
+ui_give_up|Give up
+ui_keep_fighting|Keep fighting
+ui_question_leave_area|Leave Area
+ui_cant_retreat_there_are_enemies_nearby|Can't retreat. There are enemies nearby!
+ui_question_retreat_battle|Retreat battle?
+ui_retreated_battle|%s has been routed.
+ui_retreated_battle|%s has fled from the battlefield.
+ui_retreat|Retreat
+ui_talk|Talk
+ui_mount|Mount
+ui_riding_skill_not_adequate_to_mount|(Riding skill not adequate to mount)
+ui_dismount|Dismount
+ui_exit|Exit
+ui_door_to|Door to 
+ui_open|Open
+ui_equip|Equip
+ui_baggage|Baggage
+ui_access_inventory|Access inventory
+ui_chest|Chest
+ui_passage|Passage
+ui_go|Go
+ui_retreat_battle|Retreat Battle
+ui_leave_area|Leave Area
+ui_reports|Reports
+ui_camp|Camp
+ui_terrain|Terrain
+ui_quests|Quests
+ui_inventory|Inventory
+ui_character|Character
+ui_party|Party
+ui_paused|Paused
+ui_click_left_button_to_cancel_wait|Waiting... (Left click to return)
+ui_midnight|Midnight
+ui_late_night|Late night
+ui_dawn|Dawn
+ui_early_morning|Early morning
+ui_morning|Morning
+ui_noon|Noon
+ui_afternoon|Afternoon
+ui_late_afternoon|Late afternoon
+ui_dusk|Dusk
+ui_evening|Evening
+ui_midnight|Midnight
+ui_level_limit_reached|Level Limit Reached!
+ui_explanation_level_limit|Hail Adventurer, Mount&Blade has not been activated yet and is running in trial mode. In this mode, the game is limited to Level 8. In order to continue playing, please restart the game and activate it with your 16-digit serial key which is included in your boxed copy. After activating, you can continue playing right from here. Now, Mount&Blade will save your game and exit.
+ui_time_limit_reached|Time Limit Reached!
+ui_explanation_time_limit|Hail Adventurer, Mount&Blade has not been activated yet and is running in trial mode. In this mode, the game is limited to 30 game days. In oder to continue playing, please restart the game and activate it with your 16-digit serial key which is included in your boxed copy. After activating, you can continue playing right from here. Now, Mount&Blade will save your game and exit.
+ui_target_lost|Target lost
+ui_waiting|Waiting.
+ui_travelling_to|Travelling to 
+ui_following|Following 
+ui_accompanying|Accompanying 
+ui_running_from|Running from 
+ui_patrolling|Patrolling
+ui_patrolling_around|Patrolling around 
+ui_holding|Holding
+ui_travelling|Travelling
+ui_fighting_against|Fighting against 
+ui_speed_equals|Speed = %2.1f
+ui_defenders|Garrison:
+ui_prisoners|Prisoners:
+ui_1_hour|1 hour
+ui_n_hours|%d hours
+ui_between_hours|%d - %d hours
+ui_combatants|Combatants: %d
+ui_party_size|Party size: %d
+ui_party_size_between|Party size: %d - %d
+ui_merchant|Merchant
+ui_return|Return
+ui_no_cost|No cost
+ui_rename|Rename
+ui_use|Use
+ui_tutorial_inventory|In The Last Day, you need Resource Pts. to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
+ui_head_armor|Head Armor: %d
+ui_body_armor|Body Armor: %d
+ui_leg_armor|Leg Armor: %d
+ui_encumbrance|Encumbrance: %2.1f
+ui_you_dont_have_value|Don't have: %s
+ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+ui_merchant_pay_whatever|No, I don't need any of that, keep it.
+ui_merchant_think_of_something_else|Hmm. Let us think of something else.
+ui_dumping_value_items|%d items will be permanently lost, are you sure?
+ui_dumping_value_item|One item will be permanently lost, are you sure?
+ui_question_slaughter_food_and_eat|Slaughter this %s and eat it?
+ui_money_value|%s
+ui_dump|Discard
+ui_outfit|Outfit
+ui_arms|Arms
+ui_horse|Mount
+ui_food|Food
+ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
+ui_return_your_bought_goods|Return the goods you have taken before giving that!
+ui_polearm_no_shield|Polearm (No shield)
+ui_polearm|Polearm
+ui_two_handed|Two-handed
+ui_two_handed_one_handed|Two-handed/One-handed
+ui_one_handed|One-handed
+ui_return_price|if returned: +%d Res.P.
+ui_sell_price|if given: +%d Res.P.
+ui_reclaim_price|to reclaim: -%d Res.P.
+ui_buying_price|to claim: -%d Res.P.
+ui_weight|Weight: %2.1f
+ui_plus_value_to_head_armor|+%d to head armor
+ui_plus_value_to_body_armor|+%d to body armor
+ui_plus_value_to_leg_armor|+%d to leg armor
+ui_swing|Swing: %d%s
+ui_damage|Damage: %d%s
+ui_thrust|Thrust: %d%s
+ui_accuracy|Accuracy: %d
+ui_speed_rating|Speed rating: %d
+ui_value_to_damage|%c%d to damage
+ui_value_to_morale|+%1.1f to party morale
+ui_resistance|Resistance: %d
+ui_size|Size: %d
+ui_weapon_reach|Weapon reach: %d
+ui_armor|Armor: %d
+ui_speed|Speed: %d
+ui_maneuver|Maneuver: %d
+ui_charge|Charge: %d
+ui_hit_points|Hit Points: %d/%d
+ui_requires_value_difficulty|Requires %s: %d
+ui_bonus_against_shields|Bonus against shields
+ui_cant_be_used_to_block|Can't be used to block
+ui_troop_cant_use_item|%s: I can't use that item!
+ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
+ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
+ui_notification_payment_value|Consuming %s
+ui_notification_payment_receive_value|Gaining %s
+ui_one_handed_weapons|One Handed Weapons
+ui_two_handed_weapons|Two Handed Weapons
+ui_polearms|Polearms
+ui_archery|Archery
+ui_crossbows|Crossbows
+ui_throwing|Throwing
+ui_firearms|Firearms
+ui_reset|Reset
+ui_release_one|Release one
+ui_move_up|Move Up
+ui_move_down| Move Down 
+ui_upgrade_one|Upgrade one
+ui_party_skills|Party Skills
+ui_morale|Morale: %s
+ui_terrible|Terrible
+ui_very_low|Very low
+ui_low|Low
+ui_below_average|Below average
+ui_average|Average
+ui_above_average|Above average
+ui_high|High
+ui_very_high|Very high
+ui_excellent|Excellent
+ui_starving|Starving! %d%%
+ui_weekly_cost_value|Upkeep: %s
+ui_company|Company: %d / %d
+ui_prisoners_equal_value|Prisoners: %d / %d
+ui_choose_prisoners|Choose Prisoners
+ui_choose_companions|Choose Companions
+ui_rescued_prisoners|Rescued Prisoners
+ui_captured_enemies|Captured Enemies
+ui_disband|Disband
+ui_take_prisoner|Take prisoner
+ui_take_back|Take back
+ui_give|Give
+ui_take|Take
+ui_sell|Give
+ui_hire|Enroll
+ui_notification_cant_hire|(not enough R.P. to enroll)
+ui_uncapture|Release
+ui_capture|Capture
+ui_party_capcity_reached|(Party capacity reached)
+ui_all| all
+ui_joining_cost_weekly_wage|Enroll: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_weekly_wage|Upkeep: %d Res.P.
+ui_price|Value: %d Res.P.
+ui_number_ready_to_upgrade|%d ready to be upgraded.
+ui_upgrade_to_value| Upgrade to %s
+ui_notification_no_slot_for_upgrade|No slot for upgrading to %s!
+ui_shield_broken|Shield broken.
+ui_shield_cracked|Shield cracked.
+ui_shield_deformed|Shield deformed.
+ui_you_hit_a_friendly_troop|You hit a friendly troop!
+ui_hit_shield_on_back|Hit shield on back!
+ui_delivered_couched_lance_damage|Delivered couched lance damage!
+ui_received_couched_lance_damage|Received couched lance damage!
+ui_speed_bonus_plus|Speed bonus: +%d%%
+ui_speed_bonus|Speed bonus: %d%%
+ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
+ui_no_more_bolts|No more bolts...
+ui_you_are_not_carrying_any_bolts|You are not carrying any bolts.
+ui_no_more_arrows|No more arrows...
+ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_head_shot|Head shot!
+ui_delivered_number_damage|Delivered %d damage.
+ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
+ui_horse_charged_for_number_damage|Mount charged for %d damage.
+ui_received_number_damage|Received %d damage.
+ui_horse_received_number_damage|Mount received %d damage.
+ui_horse_fell_dead|Mount fell dead...
+ui_horse_crippled|Mount crippled...
+ui_shot_difficulty|Shot difficulty: %2.1f
+ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
+ui_value_killed_by_value|%s killed by %s.
+ui_value_fell_dead|%s fell dead.
+ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
+ui_value_fell_unconscious|%s fell unconscious.
+ui_troop_routed|%s has been routed.
+ui_troop_panicked|%s has panicked.
+ui_troop_fled|%s has fled the battle.
+ui_you_got_number_experience|You got %d experience.
+ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_value_has_advanced_to_level_number|%s has advanced to level %d.
+ui_you_got_value|%s earned.
+ui_new_quest_taken|New quest taken: %s.
+ui_quest_completed_value|Quest completed: %s.
+ui_quest_succeeded_value|Quest succeeded: %s.
+ui_quest_failed_value|Quest failed: %s.
+ui_quest_concluded_value|Quest concluded: %s.
+ui_quest_cancelled_value|Quest cancelled: %s.
+ui_lost_value| (Lost: %s)
+ui_items_lost| (Items lost:
+ui_party_has_nothing_to_eat|Party has nothing to eat!
+ui_days_training_is_complete|Day's training is complete...
+ui_total_experience_gained_through_training_number|Total experience gained through training: %d
+ui_some_soldiers_are_ready_to_upgrade|Some soldiers are ready to upgrade.
+ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
+ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
+ui_party_morale_is_low| Party morale is low!
+ui_and_one_space| and
+ui_has_deserted_the_party| has left the party.
+ui_have_deserted_the_party| have left the party.
+ui_weekly_report|Weekly report
+ui_shared_number_experience_within_party|Shared %d experience within party.
+ui_got_item_value|Got item: %s.
+ui_game_saved_successfully|Game saved successfully.
+ui_autosaving|Autosaving...
+ui_quick_saving|Quick-saving...
+ui_cant_quick_save|Can't Quick-save during battle...
+ui_screenshot_taken_to_value|Screenshot is saved to %s
+ui_screenshot_failed|Can't save screenshot.
+ui_value_joined_your_party|%s joined your party.
+ui_value_joined_party_as_prisoner|%s joined party as prisoner.
+ui_value_has_joined_party|%s has joined party.
+ui_value_has_been_taken_prisoner|%s has been taken prisoner.
+ui_value_left_the_party|%s left the party.
+ui_number_values_left_the_party|%d %s(s) left the party.
+ui_number_value_left_the_party|%d %s left the party.
+ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
+ui_you_lost_value|You lost %s.
+ui_lost_item_value|Lost item: %s.
+ui_got_number_value|Got %d %s.
+ui_lost_number_value|Lost %d %s.
+ui_set_default_keys|Set default keys
+ui_undo_changes|Undo changes
+ui_press_a_key|Press a key
+ui_return_to_game|Return to Game
+ui_options|Options
+ui_save_and_exit|Save & Exit
+ui_save|Save
+ui_save_as|Save As
+ui_quit_without_saving|Quit without Saving
+ui_empty_slot|Empty Slot
+ui_game_saved|Game saved...
+ui_confirm_overwrite|Savegame for %s will be overwritten. Are you sure?
+ui_dynamic_lighting|Dynamic Lighting:
+ui_character_shadows|Character Shadows:
+ui_grass_density|Grass Density:
+ui_environment_shadows|Environment Shadows:
+ui_realistic_shadows_on_plants|Realistic Shadows on Plants:
+ui_particle_systems|Particle Systems:
+ui_gamma|Monitor Gamma:
+ui_character_detail|Character Detail:
+ui_character_shadow_detail|Character Shadow Detail:
+ui_blood_stains|Blood Stains:
+ui_on|On
+ui_off|Off
+ui_near_player_only|Near player only
+ui_default|Default
+ui_3d_grass|3D Grass:
+ui_number_of_ragdolls|Number of Rag Dolls:
+ui_number_of_corpses|Number of Corpses:
+ui_unlimited|Unlimited
+ui_anisotropic_filtering|Anisotropic Filtering:
+ui_fast_water_reflection|Fast Water Reflections:
+ui_maximum_framerate|Max. Frame-rate:
+ui_show_framerate|Show Frame-rate:
+ui_estimated_performance|Estimated Performance: %d%%
+ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
+ui_start_tutorial|Play Tutorial
+ui_start_a_new_game|Start a New Game
+ui_restore_a_saved_game|Restore a Saved Game
+ui_exit_to_windows|Exit to Windows
+ui_credits|Credits
+ui_version_value|Version: %s
+ui_active_quests|Active Quests
+ui_finished_quests|Finished Quests
+ui_given_on_date|Given on: %s
+ui_days_since_given|Days since given: %d
+ui_quest_progression_number|Quest progression: %d%%
+ui_too_many_quests|Too many quests
+ui_ok|OK
+ui_move_forward|Move Forward
+ui_move_backward|Move Backward
+ui_move_left|Move Left
+ui_move_right|Move Right
+ui_action|Action
+ui_jump|Jump
+ui_attack|Attack
+ui_defend|Defend
+ui_equip_next_weapon|Equip Next Weapon
+ui_equip_next_shield|Equip Next Shield
+ui_sheath_weapon|Sheath Weapon
+ui_character_window|Character Window
+ui_inventory_window|Inventory Window
+ui_party_window|Party Window
+ui_quests_window|Quests Window
+ui_game_log_window|Game Log Window
+ui_leave_location_retreat|Leave Location/Retreat
+ui_zoom|Zoom
+ui_view_outfit|View Outfit
+ui_toggle_first_person_view|Toggle First Person View
+ui_view_orders|View Orders
+ui_quick_save|Quick Save
+ui_no_key_assigned|No key assigned
+ui_new_enemies_have_arrived|New enemies have arrived.
+ui_reinforcements_have_arrived|Reinforcements have arrived.
+ui_report_casualties|Report Casualties:
+ui_report_experience|Report Experience:
+ui_current_level_value|Current Level: %d
+ui_base_attribute_value|Base Attribute: %s
+ui_battle_controls|Battle Controls
+ui_map_controls|Map Controls
+ui_general_controls|General Controls
+ui_zoom_in|Zoom In
+ui_zoom_out|Zoom Out
+ui_wait|Wait
+ui_take_screenshot|Take Screenshot
+ui_randomize|Randomize
+ui_hint|Hint
+ui_press_left_mouse_button_to_continue|Press left mouse button to continue...
+ui_loot|Loot
+ui_chest|Chest
+ui_cut_short|c
+ui_pierce_short|p
+ui_blunt_short|b
+ui_battle|Battle
+ui_siege|Siege
+ui_troops|Troops:
+ui_loading_module_info_file|Loading Module Info File...
+ui_processing_ini_file|Processing INI File...
+ui_loading_music|Loading Music...
+ui_loading_data|Loading Data...
+ui_loading_setting_data|Loading Setting Data...
+ui_loading_textures|Loading Textures (be patient)...
+ui_finished|Finished.
+ui_creating_game|Creating Game...
+ui_loading_savegame_file|Loading Savegame File...
+ui_loading_map_file|Loading Map File...
+ui_initializing_map|Initializing Map...
+ui_launching_game|Launching Game...
+ui_capital_battle|BATTLE:
+ui_capital_versus|--VERSUS--
+ui_tracks|Tracks
+ui_battleground|Battleground
+ui_order_hold|Order Hold
+ui_order_follow|Order Follow
+ui_order_charge|Order Charge
+ui_order_advance|Order Advance
+ui_order_fall_back|Order Fall Back
+ui_order_stand_closer|Order Stand Closer
+ui_order_spread_out|Order Spread Out
+ui_order_blunt_weapons_toggle|Order Use Blunt Weapons (Toggle)
+ui_order_hold_fire_toggle|Don'tShoot/Shoot at Will (Toggle)
+ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
+ui_hold_this_position_e_|%s, Hold this position!
+ui_follow_me_e_|%s, Follow me!
+ui_charge_e_|%s, Charge!!!
+ui_mount_horses_e_|%s, Mount!
+ui_dismount_e_|%s, Dismount!
+ui_advance_e_|%s, Advance Ten Paces!
+ui_fall_back_e_|%s, Fall Back Ten Paces!
+ui_stand_closer_e_|%s, Stand Closer!
+ui_spread_out_e_|%s, Spread Out!
+ui_use_blunt_weapons_e_|%s, Use Only Blunt Weapons!
+ui_use_any_weapon_e_|%s, Use Weapons at Will!
+ui_hold_fire_e_|%s, Don't shoot!
+ui_fire_at_will_e_|%s, Shoot at Will!
+ui_infantry|Infantry
+ui_archers|Archers
+ui_cavalry|Cavalry
+ui_companions|Companions
+ui_everyone_hear_me|Everyone, Hear me!
+ui_everyone|Everyone
+ui_str_hear_me|%s, Hear me!
+ui_str_and_str|%s and %s
+ui_str_comma_str|%s, %s
+ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
+ui_game_log|Game Log
+ui_recent_messages|Last Msgs
+ui_custom_battle|Quick Battle
+ui_player|Player
+ui_value_denars|%d Resource Pts.
+ui_back|Back
+ui_forward|Forward
+ui_display_on_map|Show On Map
+ui_troops2|Characters
+ui_locations|Locations
+ui_click_button_to_view_note|Click on a link to view the notes
+ui_this_page_contains_no_information|This page contains no information
+ui_other_pages_that_link_here|Other pages that link here: 
+ui_report_is_value_days_old| (Report is %d days old)
+ui_report_is_current| (Report is current)
+ui_button_party_member_healthy_total|%s (%d/%d)
+ui_button_party_member_total|%s (%d)
+ui_button_party_member_hero_percentage_wounded|%s (%d%% - Wounded)
+ui_button_party_member_hero_percentage|%s (%d%%)
+ui_percentage_value|%d%%
+ui_full|Full
+ui_quick|Quick
+ui_none|None
+ui_change|Change
+ui_how_to_change|How to change this?
+ui_change_directx_explanation|You can change the render method between DirectX 7 and DirectX 9 by clicking on the Configure button at the launch menu that comes up when you first start the game.
+ui_dropping_picking_up|Dropping %s; picking up %s.
+ui_picking_up|Picking up %s.
+ui_unable_to_take|Unable to take that.
+ui_age|Age
+ui_cannot_be_used_on_horseback|Cannot be used while mounted
+ui_enable_vertex_shaders2|Render Method:
+ui_screen_size2|Screen Resolution:
+ui_use_desktop_resolution2|Use Desktop Resolution
+ui_shadow_quality2|Shadow Quality:
+ui_m_low2|Low
+ui_m_high2|High
+ui_m_ultra_high2|Ultra High
+ui_off2|Off

@@ -1,0 +1,848 @@
+#Buffer_sizes
+buffer_size_regular_ffp_static = 0
+buffer_size_regular_ffp_dynamic     =  24000
+buffer_size_regular_static          = 200000
+buffer_size_regular_dynamic         =  35000
+buffer_size_skinning_static         = 150000
+buffer_size_skinning_dynamic        =      0
+buffer_size_normal_map_static       = 150000
+buffer_size_normal_map_dynamic      =  12000
+buffer_size_dx7_regular_ffp_static  = 290000
+buffer_size_dx7_regular_ffp_dynamic =  30000
+
+#Global_values
+arrow_button_height = 0.1
+arrow_button_width_ratio = 1.51
+combobox_child_button_position_x = 0.001
+combobox_child_button_size_x = 0.215
+combobox_child_button_size_y = 0.029
+combobox_child_button_text_size_x = 0.018
+combobox_child_button_text_size_y = 0.018
+combobox_button_size_x = 0.217
+combobox_button_size_y = 0.038
+combobox_text_size = 0.02
+combobox_text_position_x = 0.0
+combobox_text_position_y = 0.013
+combobox_child_button_text_position_x = 0.0
+combobox_child_button_text_position_y = 0.01
+
+#Yes_no_window
+yn_tb_name_x = 0.1
+yn_tb_name_y = 0.2
+
+#Load_save_window
+save_b_done_position_x = 0.70
+save_b_done_position_y = 0.03
+save_b_cancel_position_x = 0.50
+save_b_cancel_position_y = 0.03
+save_b_delete_position_x = 0.05
+save_b_delete_position_y = 0.03
+save_b_delete_text_color = 0xFF990000
+save_b_delete_highlight_text_color = 0xFFFF2222
+
+#Load_save_window_variables
+save_b_done_h = 0.05
+save_b_cancel_h = 0.05
+save_b_delete_h = 0.04
+save_b_save_x = 0.015
+save_b_save_y = 0.51
+save_b_save_x_a = 0.32
+save_b_save_y_a = 0.21
+save_b_save_size_y = 0.2
+save_b_save_t_s = 0.03
+save_b_save_button_h = 0.37
+save_b_save_t_c = 0xFFAAAAAA
+save_b_save_t_h_c = 0xFFFFFFFF
+save_t_name_x = 0.05
+save_t_name_y = 0.12
+save_t_info_x = 0.05
+save_t_info_y = 0.07
+save_t_error_x = 0.02
+save_t_error_y = 0.01
+
+#Character_window
+char_b_reset_position_x = 0.7
+char_b_reset_position_y = 0.018
+char_b_reset_highlight_text_color = 0xFFAA2200
+
+char_b_done_position_x = 0.86
+char_b_done_position_y = 0.018
+
+char_b_stats_position_x = 0.02
+char_b_stats_position_y = 0.015
+
+char_b_next_position_x = 0.18125
+char_b_next_position_y = 0.715
+
+char_b_prev_position_x = 0.04875
+char_b_prev_position_y = 0.715
+
+char_bo_skills_position_x = 0.05
+char_bo_skills_position_y = 0.05
+char_bo_skills_size_x = 0.33
+
+char_b_attribs_base_position_x = 0
+char_b_attribs_base_position_y = 0.17
+char_b_attribs_base_size_x = 0.15
+char_b_attribs_base_size_y = 0.03
+char_b_attribs_base_text_color = 0xFF000033
+char_b_attribs_base_highlight_text_color = 0xFF0011DD
+char_b_attribs_base_text_flags = 0x4
+char_b_attribs_base_text_size_x = 0.02
+char_b_attribs_base_text_size_y = 0.02
+
+char_b_skills_base_position_x = 0
+char_b_skills_base_position_y = 0.00975
+char_b_skills_base_text_color = 0xFF003300
+char_b_skills_base_highlight_text_color = 0xFF00AA00
+char_b_skills_base_text_flags = 0x1
+char_b_skills_base_text_size_x = 0.017
+char_b_skills_base_text_size_y = 0.017
+
+char_b_weapon_proficiencies_base_text_color = 0xFF330000
+char_b_weapon_proficiencies_base_highlight_text_color = 0xFFDD1100
+char_b_weapon_proficiencies_base_text_flags = 0x4
+char_b_weapon_proficiencies_base_text_size_x = 0.017
+char_b_weapon_proficiencies_base_text_size_y = 0.017
+char_b_weapon_proficiencies_base_size_x = 0.206
+char_b_weapon_proficiencies_base_size_y = 0.01875
+char_b_weapon_proficiencies_base_position_x = 0.7125
+char_b_weapon_proficiencies_base_position_y = 0.38
+
+char_s_skills_position_x = 0.665
+char_s_skills_position_y = 0.067
+char_s_skills_size_x = 0.012
+char_s_skills_size_y = 0.43
+
+char_sc_skills_outer_position_x = 0.35
+char_sc_skills_outer_position_y = 0.07
+char_sc_skills_outer_size_x = 0.32
+char_sc_skills_outer_size_y = 0.48
+
+char_t_weapon_proficiencies_title_position_x = 0.7455
+char_t_weapon_proficiencies_title_position_y = 0.413
+char_t_weapon_proficiencies_title_size_x = 0.13
+char_t_weapon_proficiencies_title_size_y = 0.03
+char_t_weapon_proficiencies_title_text_size_x = 0.02
+char_t_weapon_proficiencies_title_text_size_y = 0.02
+char_t_weapon_proficiencies_title_text_color = 0xFF331100
+char_t_weapon_proficiencies_title_text_flags = 0x4
+
+char_t_attributes_title_position_x = 0.08
+char_t_attributes_title_position_y = 0.25
+char_t_attributes_title_size_x = 0.13
+char_t_attributes_title_size_y = 0.03
+char_t_attributes_title_text_size_x = 0.023
+char_t_attributes_title_text_size_y = 0.023
+char_t_attributes_title_text_color = 0xFF001133
+char_t_attributes_title_text_flags = 0x4
+
+char_t_skills_title_position_x = 0.39
+char_t_skills_title_position_y = 0.514
+char_t_skills_title_size_x = 0.13
+char_t_skills_title_size_y = 0.03
+char_t_skills_title_text_size_x = 0.02
+char_t_skills_title_text_size_y = 0.02
+char_t_skills_title_text_color = 0xFF113300
+char_t_skills_title_text_flags = 0x4
+
+char_bo_attribs_position_x = 0.042
+char_bo_attribs_position_y = 0.05
+char_bo_attribs_size_x = 0.223
+char_bo_attribs_size_y = 1
+char_bo_attribs_text_size_x = 0.02
+char_bo_attribs_text_size_y = 0.02
+
+char_bo_general_info_position_x = 0.355
+char_bo_general_info_position_y = 0.53
+char_bo_general_info_size_x = 0.4
+char_bo_general_info_size_y = 0.12
+char_bo_general_info_text_color = 0xFF331100
+
+char_tb_character_name_position_x = 0.31
+char_tb_character_name_position_y = 0.69
+char_tb_character_name_text_position_x = 0.02625
+char_tb_character_name_text_position_y = 0.015
+char_tb_character_name_size_x = 0.375
+char_tb_character_name_size_y = 0.04
+
+char_bo_skill_desc_position_x = 0.713125
+char_bo_skill_desc_position_y = 0.450625
+char_bo_skill_desc_size_x = 0.233125
+char_bo_skill_desc_size_y = 0.265
+char_bo_skill_desc_text_size_x = 0.017
+char_bo_skill_desc_text_size_y = 0.017
+char_bo_skill_desc_text_color = 0xFF330000
+char_bo_skill_desc_text_flags = 0x111
+
+char_t_explanation_position_x = 0
+char_t_explanation_position_y = 0.08
+char_t_explanation_size_x = 0.233125
+char_t_explanation_size_y = 0.013
+char_t_explanation_text_size_x = 0.014
+char_t_explanation_text_size_y = 0.014
+char_t_explanation_text_color = 0xFFFF0000
+
+char_i_character_position_x = 0.03
+char_i_character_position_y = 0.32
+char_i_character_size_x = 0.27
+char_i_character_size_y = 0.4
+
+char_i_character_shadow_position_x = 0.153
+char_i_character_shadow_position_y = 0.343
+char_i_character_shadow_size_x = 0.27
+char_i_character_shadow_size_y = 0.13
+
+#Character_window_variables
+char_b_reset_h = 0.038
+char_b_done_h = 0.038
+char_b_stats_h = 0.03
+char_b_prev_h = 0.025
+char_b_next_h = 0.025
+char_b_skills_w = 0.26
+char_b_skills_y_a = 0.0175
+char_b_skills_x_a = 0.025
+char_b_weapon_proficiencies_y_a = 0.03
+char_b_attribs_y_a = 0.03
+char_b_skill_levels_x = 0.24
+char_b_skill_levels_w = 0.02
+char_b_skill_increment_x = 0.2625
+char_b_skill_increment_y_a = 0.005
+char_b_skill_increment_h_a = 0.002
+char_b_skill_increment_t_s = 0.018
+char_b_weapon_proficiency_increment_x = 0.935
+char_b_weapon_proficiency_increment_y = 0.375
+char_b_weapon_proficiency_increment_y_a = 0.03
+char_b_weapon_proficiency_increment_h = 0.024
+char_b_weapon_proficiency_increment_t_s = 0.024
+char_b_attrib_increment_x = 0.17
+char_b_attrib_increment_y_a = 0.0000
+char_b_attrib_increment_h = 0.025
+char_b_attrib_increment_t_s = 0.025
+char_tb_character_name_t_c = 0xFFFF0000
+char_t_current_level_x = 0
+char_t_current_level_y = 0.045
+char_t_base_attrib_x = 0
+char_t_base_attrib_y = 0.020
+char_t_level_x = 0
+char_t_level_y = 0.12
+char_t_xp_x = 0
+char_t_xp_y = 0.07
+char_t_next_level_at_x = 0
+char_t_next_level_at_y = 0.045
+char_t_health_x = 0
+char_t_health_y = 0.095
+char_t_attrib_points_x = 0.04
+char_t_attrib_points_y = 0.02
+char_t_skill_points_x = 0.4
+char_t_skill_points_y = 0.02
+char_t_weapon_points_x = 0.72
+char_t_weapon_points_y = 0.02
+char_num_skills = 24
+
+#Inventory_window
+inv_s_inventory1_position_x = 0.961
+inv_s_inventory1_position_y = 0.11
+inv_s_inventory1_size_x = 0.02
+inv_s_inventory1_size_y = 0.58
+
+inv_s_inventory2_position_x = 0.2925
+inv_s_inventory2_position_y = 0.11
+inv_s_inventory2_size_x = 0.02
+inv_s_inventory2_size_y = 0.58
+
+inv_sc_inventory1_outer_position_x = 0.691
+inv_sc_inventory1_outer_position_y = 0.6975
+inv_sc_inventory1_outer_size_x = 0.2875
+
+inv_sc_inventory2_outer_position_x = 0.023
+inv_sc_inventory2_outer_position_y = 0.6975
+inv_sc_inventory2_outer_size_x = 0.2875
+
+inv_t_gold1_position_x = 0.726
+inv_t_gold1_position_y = 0.043
+inv_t_gold1_size_x = 0.21
+inv_t_gold1_size_y = 0.04
+inv_t_gold1_text_size_x = 0.023
+inv_t_gold1_text_size_y = 0.023
+inv_t_gold1_text_flags = 0x10
+
+inv_t_gold2_position_x = 0.065
+inv_t_gold2_position_y = 0.043
+inv_t_gold2_size_x = 0.21
+inv_t_gold2_size_y = 0.04
+inv_t_gold2_text_size_x = 0.023
+inv_t_gold2_text_size_y = 0.023
+inv_t_gold2_text_flags = 0x10
+
+inv_t_name1_position_x = 0.748
+inv_t_name1_position_y = 0.709
+inv_t_name1_text_size_x = 0.017
+inv_t_name1_text_size_y = 0.017
+inv_t_name1_size_x = 0.18
+inv_t_name1_size_y = 0.04
+inv_t_name1_text_flags = 0x10
+
+inv_t_name2_position_x = 0.075
+inv_t_name2_position_y = 0.709
+inv_t_name2_text_size_x = 0.017
+inv_t_name2_text_size_y = 0.017
+inv_t_name2_size_x = 0.18
+inv_t_name2_size_y = 0.04
+inv_t_name2_text_flags = 0x10
+
+inv_b_leave_position_x = 0.512
+inv_b_leave_position_y = 0.03
+
+inv_t_total_cost_position_x = 0.41
+inv_t_total_cost_position_y = 0.293
+inv_t_total_cost_size_x = 0.18
+inv_t_total_cost_size_y = 0.022
+inv_t_total_cost_text_size_x = 0.017
+inv_t_total_cost_text_size_y = 0.017
+inv_t_total_cost_text_color = 0xFFFFFF99
+inv_t_total_cost_text_flags = 0x10
+
+inv_t_armor_base_position_x = 0.51
+inv_t_armor_base_position_y = 0.18
+inv_t_armor_base_size_x = 0.125
+inv_t_armor_base_size_y = 0.022
+inv_t_armor_base_text_size_x = 0.017
+inv_t_armor_base_text_size_y = 0.017
+inv_t_armor_base_text_flags = 0x10
+inv_t_armor_base_text_color = 0xFF000000
+
+inv_t_armor_base2_position_x = 0.17
+inv_t_armor_base2_position_y = 0.18
+inv_t_armor_base2_size_x = 0.125
+inv_t_armor_base2_size_y = 0.022
+inv_t_armor_base2_text_size_x = 0.017
+inv_t_armor_base2_text_size_y = 0.017
+inv_t_armor_base2_text_flags = 0x10
+
+inv_i_character_position_x = 0.34
+inv_i_character_position_y = 0.017
+inv_i_character_size_y = 0.25
+inv_i_character_size_x = 0.17
+
+inv_i_character2_position_x = 0
+inv_i_character2_position_y = 0.017
+inv_i_character2_size_y = 0.25
+inv_i_character2_size_x = 0.17
+
+inv_im_equipment_menu_position_x = 0.34
+inv_im_equipment_menu_position_y = 0.31
+inv_im_equipment_menu_size_x = 0.32
+inv_im_equipment_menu_size_y = 0.55
+
+inv_hinge1_position_x = 0.3105
+inv_hinge1_position_y = 0.17
+inv_hinge1_size_x = 0.045
+inv_hinge1_size_y = 0.09
+
+inv_hinge2_position_x = 0.3105
+inv_hinge2_position_y = 0.565
+inv_hinge2_size_x = 0.045	
+inv_hinge2_size_y = 0.09
+
+inv_hinge3_position_x = 0.6452
+inv_hinge3_position_y = 0.17
+inv_hinge3_size_x = 0.045
+inv_hinge3_size_y = 0.09
+
+inv_hinge4_position_x = 0.6452
+inv_hinge4_position_y = 0.565
+inv_hinge4_size_x = 0.045
+inv_hinge4_size_y = 0.09
+
+inv_i_equipment_pangel_bg_position_x = 0.0
+inv_i_equipment_pangel_bg_position_y = 0.0
+inv_i_equipment_pangel_bg_size_x = 0.333333
+inv_i_equipment_pangel_bg_size_y = 0.75
+
+
+#Inventory_window_variables
+inv_b_leave_h = 0.04
+inv_t_armor_y_a = 0.024
+inv_visible_inventory_area = 0.598
+inv_equipment_x = 0.2125
+inv_equipment_y = 0.2953
+inv_armor_x = 0.111
+inv_horse_y = 0.007
+inv_equipment_menu_x_a = 0.333333
+
+#Face_gen_window
+face_bo_deform_position_x = 0
+face_bo_deform_position_y = 0
+face_bo_deform_size_x = 0.365625
+face_bo_deform_size_y = 0.008
+face_bo_deform_text_size_x = 0.02
+face_bo_deform_text_size_y = 0.02
+
+face_bo_button_position_x = 0.054
+face_bo_button_position_y = 0.057
+face_bo_button_size_x = 0.449375
+face_bo_button_size_y = 0.163125
+
+face_sl_deform_key_base_position_x = 0.13
+face_sl_deform_key_base_position_y = 0.008
+face_sl_deform_key_base_size_x = 0.83
+
+face_t_deform_key_base_position_x = 0
+face_t_deform_key_base_position_y = 0.016
+face_t_deform_key_base_size_x = 0.12
+face_t_deform_key_base_size_y = 0.03
+face_t_deform_key_base_text_flags = 0x8
+face_t_deform_key_base_text_size_x = 0.015
+face_t_deform_key_base_text_size_y = 0.015
+face_t_deform_key_base_text_color = 0xFFFFFFDD
+
+face_s_deform_position_x = 0.925
+face_s_deform_position_y = 0.052
+face_s_deform_size_x = 0.02
+face_s_deform_size_y = 0.648125
+
+face_sc_deform_position_x = 0.573125
+face_sc_deform_position_y = 0.039
+face_sc_deform_size_x = 0.345
+face_sc_deform_size_y = 0.673125
+
+face_b_next_face_position_x = 0.08
+face_b_next_face_position_y = 0.104
+
+face_b_next_beard_position_x = 0.232
+face_b_next_beard_position_y = 0.104
+
+face_b_next_hair_position_x = 0.384
+face_b_next_hair_position_y = 0.104
+
+face_b_prev_face_position_x = 0.009
+face_b_prev_face_position_y = 0.104
+
+face_b_prev_beard_position_x = 0.161
+face_b_prev_beard_position_y = 0.104
+
+face_b_prev_hair_position_x = 0.313
+face_b_prev_hair_position_y = 0.104
+
+face_t_change_beard_position_x = 0.19
+face_t_change_beard_position_y = 0.125
+face_t_change_beard_size_x = 0.087
+face_t_change_beard_size_y = 0.02
+face_t_change_beard_text_size_x = 0.023
+face_t_change_beard_text_size_y = 0.023
+face_t_change_beard_text_flags = 0x10
+
+face_t_change_face_position_x = 0.038
+face_t_change_face_position_y = 0.125
+face_t_change_face_size_x = 0.087
+face_t_change_face_size_y = 0.02
+face_t_change_face_text_size_x = 0.023
+face_t_change_face_text_size_y = 0.023
+face_t_change_face_text_flags = 0x10
+
+face_t_change_hair_position_x = 0.342
+face_t_change_hair_position_y = 0.125
+face_t_change_hair_size_x = 0.087
+face_t_change_hair_size_y = 0.02
+face_t_change_hair_text_size_x = 0.023
+face_t_change_hair_text_size_y = 0.023
+face_t_change_hair_text_flags = 0x10
+
+face_b_randomize_position_x = 0.015
+face_b_randomize_position_y = 0
+
+face_b_reset_position_x = 0.167
+face_b_reset_position_y = 0
+face_b_reset_highlight_text_color = 0xFFAA2200
+
+face_b_done_position_x = 0.319
+face_b_done_position_y = 0
+
+face_sl_age_position_x = 0.17
+face_sl_age_position_y = 0.079
+face_sl_age_size_x = 0.87
+
+face_t_age_position_x = 0
+face_t_age_position_y = 0.086
+face_t_age_size_x = 0.14
+face_t_age_size_y = 0.03
+face_t_age_text_size_x = 0.02
+face_t_age_text_size_y = 0.02
+face_t_age_text_flags = 0x8
+face_t_age_text_color = 0xFFFFFFDD
+
+face_sl_hair_color_position_x = 0.17
+face_sl_hair_color_position_y = 0.045
+face_sl_hair_color_size_x = 0.87
+
+face_t_hair_color_position_x = 0
+face_t_hair_color_position_y = 0.053
+face_t_hair_color_size_x = 0.14
+face_t_hair_color_size_y = 0.03
+face_t_hair_color_text_size_x = 0.02
+face_t_hair_color_text_size_y = 0.02
+face_t_hair_color_text_flags = 0x8
+face_t_hair_color_text_color = 0xFFFFFFDD
+
+#Face_gen_window_variables
+face_deform_key_h = 0.033
+face_button_h = 0.035
+face_button_arrow_h = 0.05
+
+#Party_window
+party_b_done_position_x = 0.52
+party_b_done_position_y = 0.026
+
+party_b_reset_position_x = 0.360625
+party_b_reset_position_y = 0.026
+party_b_reset_highlight_text_color = 0xFFAA2200
+
+party_b_talk_position_x = 0.095
+party_b_talk_position_y = 0.06
+
+party_b_release_position_x = 0.092
+party_b_release_position_y = 0.005
+party_b_release_highlight_text_color = 0xFFAA2200
+
+party_b_move_up_position_x = 0.20
+party_b_move_up_position_y = 0.5
+
+party_b_move_down_position_x = 0.20
+party_b_move_down_position_y = 0.46
+
+party_t_upgrade_position_x = 0.008
+party_t_upgrade_position_y = 0.26
+party_t_upgrade_size_x = 0.285
+party_t_upgrade_size_y = 0.02
+party_t_upgrade_text_size_x = 0.023
+party_t_upgrade_text_size_y = 0.023
+party_t_upgrade_text_flags = 0x10
+party_t_upgrade_text_color = 0xFF991100
+
+party_b_upgrade1_position_x = 0.008
+party_b_upgrade1_position_y = 0.22
+
+party_b_upgrade2_position_x = 0.008
+party_b_upgrade2_position_y = 0.18
+
+party_bo_info_position_x = 0.35
+party_bo_info_position_y = 0.11
+party_bo_info_size_x = 0.3
+party_bo_info_size_y = 0.60
+party_bo_info_text_size_x = 0.02
+party_bo_info_text_size_y = 0.02
+party_bo_info_text_color = 0xFF991100
+
+party_t_troop_cost_position_x = 0.01
+party_t_troop_cost_position_y = 0.125
+party_t_troop_cost_size_x = 0.27
+party_t_troop_cost_size_y = 0.04
+party_t_troop_cost_text_size_x = 0.02
+party_t_troop_cost_text_size_y = 0.02
+party_t_troop_cost_text_color = 0xFF111000
+
+party_bo_members_base_position_x = 0
+party_bo_members_base_position_y = 0
+party_bo_members_base_size_x = 0.263
+party_bo_members_base_size_y = 1.00
+
+party_s_members1_position_x = 0.3013
+party_s_members1_position_y = 0.301
+party_s_members1_size_x = 0.02
+party_s_members1_size_y = 0.3835
+
+party_s_members2_position_x = 0.3013
+party_s_members2_position_y = 0.109
+party_s_members2_size_x = 0.02
+party_s_members2_size_y = 0.131875
+
+party_sc_members1_position_x = 0.0345
+party_sc_members1_position_y = 0.32125
+party_sc_members1_size_x = 0.263
+party_sc_members1_size_y = 0.42
+
+party_sc_members2_position_x = 0.0345
+party_sc_members2_position_y = 0.093125
+party_sc_members2_size_x = 0.263
+party_sc_members2_size_y = 0.1
+
+party_bo_party1_position_x = 0.65
+party_bo_party1_position_y = 0.0
+party_bo_party1_size_x = 0.35
+party_bo_party1_size_y = 0.75
+
+party_bo_party2_position_x = -0.005
+party_bo_party2_position_y = 0
+party_bo_party2_size_x = 0.35
+party_bo_party2_size_y = 0.75
+
+party_t_prisoner_management_position_x = 0.04
+party_t_prisoner_management_position_y = 0.093125
+party_t_prisoner_management_size_x = 0.265
+party_t_prisoner_management_size_y = 0.15
+party_t_prisoner_management_text_flags = 0x111
+
+party_t_morale_position_x = 0.68
+party_t_morale_position_y = 0.062
+party_t_morale_size_x = 0.22
+party_t_morale_size_y = 0.02
+party_t_morale_text_size_x = 0.02
+party_t_morale_text_size_y = 0.02
+party_t_morale_text_flags = 0x4
+party_t_morale_text_color = 0xFFFFEEAA
+
+party_t_gold_position_x = 0.68
+party_t_gold_position_y = 0.041
+party_t_gold_size_x = 0.22
+party_t_gold_size_y = 0.015
+party_t_gold_text_size_x = 0.02
+party_t_gold_text_size_y = 0.02
+party_t_gold_text_flags = 0x4
+party_t_gold_text_color = 0xFFFFEEAA
+
+party_t_weekly_cost_position_x = 0.68
+party_t_weekly_cost_position_y = 0.02
+party_t_weekly_cost_size_x = 0.22
+party_t_weekly_cost_size_y = 0.015
+party_t_weekly_cost_text_size_x = 0.02
+party_t_weekly_cost_text_size_y = 0.02
+party_t_weekly_cost_text_flags = 0x4
+party_t_weekly_cost_text_color = 0xFFFFEEAA
+
+party_t_max_companions_position_x = 0.74
+party_t_max_companions_position_y = 0.719
+party_t_max_companions_size_x = 0.1825
+party_t_max_companions_size_y = 0.023
+party_t_max_companions_text_size_x = 0.02
+party_t_max_companions_text_size_y = 0.02
+party_t_max_companions_text_flags = 0x10
+
+party_t_max_prisoners_position_x = 0.738
+party_t_max_prisoners_position_y = 0.265
+party_t_max_prisoners_size_x = 0.1825
+party_t_max_prisoners_size_y = 0.023
+party_t_max_prisoners_text_size_x = 0.02
+party_t_max_prisoners_text_size_y = 0.02
+party_t_max_prisoners_text_flags = 0x10
+
+party_t_party_skills_position_x = 0.0785
+party_t_party_skills_position_y = 0.718
+party_t_party_skills_size_x = 0.1825
+party_t_party_skills_size_y = 0.023
+party_t_party_skills_text_size_x = 0.02
+party_t_party_skills_text_size_y = 0.02
+party_t_party_skills_text_flags = 0x10
+
+party_t_choose_companions_position_x = 0.0785
+party_t_choose_companions_position_y = 0.718
+party_t_choose_companions_size_x = 0.1825
+party_t_choose_companions_size_y = 0.023
+party_t_choose_companions_text_size_x = 0.02
+party_t_choose_companions_text_size_y = 0.02
+party_t_choose_companions_text_flags = 0x10
+
+party_t_choose_prisoners_position_x = 0.0785
+party_t_choose_prisoners_position_y = 0.265
+party_t_choose_prisoners_size_x = 0.1825
+party_t_choose_prisoners_size_y = 0.023
+party_t_choose_prisoners_text_size_x = 0.02
+party_t_choose_prisoners_text_size_y = 0.02
+party_t_choose_prisoners_text_flags = 0x10
+
+party_bo_skills_position_x = 0
+party_bo_skills_position_y = 0
+party_bo_skills_size_x = 0.35
+party_bo_skills_size_y = 0.75
+
+party_t_skills_position_x = 0.1175
+party_t_skills_position_y = 0.705
+party_t_skills_size_x = 0.128125
+party_t_skills_size_y = 0.023
+party_t_skills_text_flags = 0x10
+
+party_s_skills_position_x = 0.296
+party_s_skills_position_y = 0.299
+party_s_skills_size_x = 0.02
+party_s_skills_size_y = 0.386
+
+party_sc_skills_position_x = 0.0
+party_sc_skills_position_y = 0.297
+party_sc_skills_size_x = 0.35
+party_sc_skills_size_y = 0.391
+
+party_i_character_position_x = 0.3
+party_i_character_position_y = 0.38
+party_i_character_size_x = 0.3
+party_i_character_size_y = 0.3
+
+party_t_selected_troop_name_position_x = 0.0
+party_t_selected_troop_name_position_y = 0.56
+party_t_selected_troop_name_size_x = 0.3
+party_t_selected_troop_name_size_y = 0.02
+party_t_selected_troop_name_text_size_x = 0.02
+party_t_selected_troop_name_text_size_y = 0.02
+party_t_selected_troop_name_text_flags = 0x10
+
+#Party_window_variables
+party_b_done_h = 0.04
+party_b_reset_h = 0.04
+party_b_talk_h = 0.04
+party_b_release_h = 0.035
+party_b_move_up_h = 0.03
+party_b_move_down_h = 0.03
+party_b_upgrade1_h = 0.029
+party_b_upgrade2_h = 0.029
+party_b_member_h = 0.0262
+party_b_members_h = 0.0262
+party_b_members_width_ratio = 7.8
+party_b_members_button_h = 0.06
+party_b_members_x = 0.03
+party_bo_skills_t_x = 0.045
+party_bo_skills_t_x_deep = 0.06
+party_bo_skills_t_y = -0.035
+party_bo_skills_t_y_a = 0.03
+party_bo_skills_t_y_a_short = 0.025
+party_b_member_t_c = 0xFF000000
+party_b_member_t_c_wounded = 0xFFFF0000
+party_b_upgrade_t_c_passive = 0xFFCC0000
+party_bo_member1_h = 0.391
+party_bo_member2_h = 0.135
+party_bo_member1_y = 0.296
+party_bo_member2_y = 0.106
+party_info_warn_x = 0.05
+party_info_warn_y = 0.18
+
+#Notes_window
+note_i_picture_position_x = 0.1
+note_i_picture_position_y = 0.1
+note_i_picture_size_x = 0.2
+note_i_picture_size_y = 0.2
+
+note_t_keys_position_x = 0
+note_t_keys_position_y = 0
+note_t_keys_size_x = 0.25
+note_t_keys_size_y = 0.1
+note_t_keys_text_size_x = 0.02
+note_t_keys_text_size_y = 0.02
+note_t_keys_text_flags = 0x700
+
+note_t_data_position_x = 0
+note_t_data_position_y = 0
+note_t_data_size_x = 0.615
+note_t_data_size_y = 0.1
+note_t_data_text_size_x = 0.02
+note_t_data_text_size_y = 0.02
+note_t_data_text_flags = 0x700
+
+note_t_title_position_x = 0.03
+note_t_title_position_y = 0.67
+note_t_title_size_x = 0.615
+note_t_title_size_y = 0.1
+note_t_title_text_size_x = 0.025
+note_t_title_text_size_y = 0.025
+note_t_title_text_flags = 0x10
+note_t_title_text_color = 0xFF000000
+
+note_b_back_position_x = 0.06
+note_b_back_position_y = 0.7
+
+note_b_forward_position_x = 0.15
+note_b_forward_position_y = 0.7
+
+note_b_map_follow_position_x = 0.4
+note_b_map_follow_position_y = 0.7
+
+note_bo_keys_position_x = 0.7
+note_bo_keys_position_y = 0
+note_bo_keys_size_x = 0.255
+note_bo_keys_size_y = 0.0
+
+note_bo_data_position_x = 0
+note_bo_data_position_y = 0
+note_bo_data_size_x = 0.615
+note_bo_data_size_y = 0
+
+note_s_keys_position_x = 0.95
+note_s_keys_position_y = 0.08
+note_s_keys_size_x = 0.02
+note_s_keys_size_y = 0.62
+
+note_sc_keys_position_x = 0.7
+note_sc_keys_position_y = 0.07
+note_sc_keys_size_x = 0.255
+note_sc_keys_size_y = 0.648
+
+note_s_data_position_x = 0.65
+note_s_data_position_y = 0.08
+note_s_data_size_x = 0.02
+note_s_data_size_y = 0.62
+
+note_sc_data_position_x = 0.03
+note_sc_data_position_y = 0.08
+note_sc_data_size_x = 0.655
+note_sc_data_size_y = 0.57
+
+#Notes_window_variables
+note_button_sm_h = 0.024
+note_image_border = 0.03
+note_button_x_a = 0.14
+note_button_x = 0.02
+note_button_y = 0.01
+note_button_h = 0.04
+
+#Conversation_window
+conv_bo_board_position_x = 0.3
+conv_bo_board_position_y = 0.32
+conv_bo_board_size_x = 0.7
+conv_bo_board_size_y = 0.43
+
+conv_t_partner_position_x = 0.07
+conv_t_partner_position_y = 0.05
+conv_t_partner_size_x = 0.56
+conv_t_partner_size_y = 0.3
+conv_t_partner_text_flags = 0x111
+conv_t_partner_text_color = 0xFF331100
+
+conv_t_utterer_name_position_x = 0.05
+conv_t_utterer_name_position_y = 0.36
+conv_t_utterer_name_size_x = 0.2
+conv_t_utterer_name_size_y = 0.04
+conv_t_utterer_name_text_size_x = 0.026
+conv_t_utterer_name_text_size_y = 0.026
+conv_t_utterer_name_text_flags = 0x4
+conv_t_utterer_name_text_color = 0xFF001144
+
+conv_bo_choices_position_x = 0
+conv_bo_choices_position_y = 0
+conv_bo_choices_size_x = 0.965
+conv_bo_choices_size_y = 0
+
+conv_s_choices_position_x = 0.967
+conv_s_choices_position_y = 0.02
+conv_s_choices_size_x = 0.02
+conv_s_choices_size_y = 0.25
+
+conv_sc_choices_position_x = 0.01
+conv_sc_choices_position_y = 0.01
+conv_sc_choices_size_x = 0.965
+conv_sc_choices_size_y = 0.27
+
+conv_t_press_mouse_position_x = 0.62
+conv_t_press_mouse_position_y = 0.0287
+conv_t_press_mouse_size_x = 0.32
+conv_t_press_mouse_size_y = 0.03
+conv_t_press_mouse_text_size_x = 0.026
+conv_t_press_mouse_text_size_y = 0.026
+conv_t_press_mouse_text_flags = 0x8
+conv_t_press_mouse_text_color = 0xFFFFEEAA
+
+
+#Conversation_window_variables
+conv_sentence_x = 0.01
+conv_sentence_y_a = 0.041
+conv_sentence_text_x = 0.03
+conv_sentence_size_y = 0.0397
+conv_sentence_width_ratio = 22.8
+conv_sentence_button_height = 0.045
+conv_choices_min_y = 0.27

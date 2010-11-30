@@ -1,0 +1,497 @@
+map_icons_file version 1
+164
+player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+player_horseman 0 player_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+gray_knight 0 knight_a 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+vaegir_knight 0 knight_b 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+flagbearer_a 0 flagbearer_a 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+flagbearer_b 0 flagbearer_b 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+peasant 0 peasant_a 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+khergit 0 khergit_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+axeman 0 bandit_a 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+woman 0 woman_a 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+brigand 0 brigand 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+cataphract 0 cataphract 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+cataphract_x3 0 cataphract_x3 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+dunadan_horseman 0 dunadan_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+dunland_captain 0 dunland_captain 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+dunlander 0 dunlander 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+dunlander_x3 0 dunlander_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+easterling_horseman 0 easterling_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+easterling_horseman_x3 0 easterling_horseman_x3 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+footman_gondor 0 footman_gondor 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+harad_horseman 0 harad_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+harad_horseman_x3 0 harad_horseman_x3 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+isengard_captain 0 isengard_captain 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+ithilien_ranger 0 ithilien_ranger 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+knight_dolamroth 0 knight_dolamroth 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+knight_gondo_trot_x3 0 knight_gondo_trot_x3 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+dwarf 0 dwarf 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+dwarf_x3 0 dwarf_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+knight_gondor 0 knight_gondor 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+knight_rivendell 0 knight_rivendell 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+knight_rohan 0 knight_rohan 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+knight_rohan_x3 0 knight_rohan_x3 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+knight_rohan_x5 0 knight_rohan_x5 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+lamedon_horseman 0 lamedon_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+lorien_elf_a 0 lorien_elf_a 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+lorien_elf_b 0 lorien_elf_b 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+lorien_elf_b_x3 0 lorien_elf_b_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+lossarnach_axeman_icon 0 lossarnach_axeman_icon 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+mirkwood_elf 0 mirkwood_elf 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+mirkwood_elf_x3 0 mirkwood_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+mordor_captain 0 mordor_captain 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+orc 0 orc 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_isengard 0 orc_isengard 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_x4 0 orc_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_x6 0 orc_x6 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_tribal 0 orc_tribal 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_tribal_x4 0 orc_tribal_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+uruk 0 uruk 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+uruk_isengard 0 uruk_isengard 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+uruk_x4 0 uruk_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+uruk_x6 0 uruk_x6 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+pikeman_isengard 0 pikeman_isengard 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+rivendell_elf 0 rivendell_elf 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+rivendell_elf_x3 0 rivendell_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+slaver_isengard 0 slaver_isengard 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+slaver_mordor 0 slaver_mordor 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+supply_gondor 0 supply_gondor 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+supply_rohan 0 supply_rohan 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+supply_isengard 0 supply_isengard 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+supply_mordor 0 supply_mordor 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+theoden_x5 0 theoden_x5 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+umbar_captain 0 umbar_captain 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+umbar_corsair 0 umbar_corsair 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+umbar_corsair_x3 0 umbar_corsair_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+wargrider_furshield_run 0 wargrider_furshield_run 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+wargrider_run 0 wargrider_run 0.150000 111 0.150000 0.173000 0.000000 0
+
+
+wargrider_walk_x4 0 wargrider_walk_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+town 1 map_town_a 0.350000 0 0 0 0 0
+
+
+town_steppe 1 map_town_steppe_a 0.350000 0 0 0 0 0
+
+
+village_a 1 map_village_a 0.450000 0 0 0 0 0
+
+
+village_burnt_a 1 map_village_burnt_a 0.450000 0 0 0 0 0
+
+
+village_deserted_a 1 map_village_deserted_a 0.450000 0 0 0 0 0
+
+
+camp 1 camp_tent 0.250000 0 0 0 0 0
+
+
+ship 1 boat_sail_on 0.230000 17 0.000000 0.050000 0.000000 0
+
+
+ship_on_land 1 boat_sail_off 0.230000 0 0 0 0 0
+
+
+castle_a 1 map_castle_a 0.350000 0 0 0 0 0
+
+
+castle_b 1 map_castle_b 0.350000 0 0 0 0 0
+
+
+castle_c 1 map_castle_c 0.350000 0 0 0 0 0
+
+
+castle_d 1 map_castle_d 0.350000 0 0 0 0 0
+
+
+town_snow 1 map_town_snow_a 0.350000 0 0 0 0 0
+
+
+village_snow_a 1 map_village_snow_a 0.450000 0 0 0 0 0
+
+
+village_snow_burnt_a 1 map_village_snow_burnt_a 0.450000 0 0 0 0 0
+
+
+village_snow_deserted_a 1 map_village_snow_deserted_a 0.450000 0 0 0 0 0
+
+
+castle_snow_a 1 map_castle_snow_a 0.350000 0 0 0 0 0
+
+
+castle_snow_b 1 map_castle_snow_b 0.350000 0 0 0 0 0
+
+
+mule 0 icon_mule 0.200000 17 0.150000 0.173000 0.000000 0
+
+
+cattle 0 icon_cow 0.200000 17 0.150000 0.173000 0.000000 0
+
+
+training_ground 1 training 0.350000 0 0 0 0 0
+
+
+ancient_ruins 1 ancient_ruins 1.000000 0 0 0 0 0
+
+
+argonath 1 argonath 1.000000 0 0 0 0 0
+
+
+baraddur 1 baraddur 1.000000 0 0 0 0 0
+
+
+cirithungol 1 cirithungol 1.000000 0 0 0 0 0
+
+
+orodruin 0 orodruin 1.500000 0 0 0 0 0
+
+
+cairandros 1 cairandros 1.000000 0 0 0 0 0
+
+
+castle_gondor_small 1 Castle 1.500000 0 0 0 0 0
+
+
+castle__gondor_full 1 Castle_Full 1.000000 0 0 0 0 0
+
+
+castle__gondor_wall 1 Castle_Wall 1.000000 0 0 0 0 0
+
+
+corsaircamp 1 corsaircamp 1.000000 0 0 0 0 0
+
+
+dolamroth 1 dolamroth 1.000000 0 0 0 0 0
+
+
+dolguldur 1 dolguldur 1.000000 0 0 0 0 0
+
+
+east_osgilliath 1 east_osgilliath 0.800000 0 0 0 0 0
+
+
+west_osgilliath 1 west_osgilliath 0.800000 0 0 0 0 0
+
+
+edoras 1 Edoras 1.000000 0 0 0 0 0
+
+
+field_a 1 Fielda 1.000000 0 0 0 0 0
+
+
+field_b 1 Fieldb 1.000000 0 0 0 0 0
+
+
+field_c 1 Fieldc 1.000000 0 0 0 0 0
+
+
+gondortown 1 gondortown 1.000000 0 0 0 0 0
+
+
+grove 1 Grove 0.450000 0 0 0 0 0
+
+
+hand_isen 1 handsign 0.260000 0 0 0 0 0
+
+
+haradcamp 1 haradcamp 1.000000 0 0 0 0 0
+
+
+helms_deep 1 Helms_Deep 0.700000 0 0 0 0 0
+
+
+henneth_annun 1 henneth_annun 0.600000 0 0 0 0 0
+
+
+isengard 1 Isengard 0.500000 0 0 0 0 0
+
+
+minas_tirith 1 Minas_Tirith 0.800000 0 0 0 0 0
+
+
+minasmorgul 1 minasmorgul 0.700000 0 0 0 0 0
+
+
+morannon 1 Morannon 1.000000 0 0 0 0 0
+
+
+moria 1 moria 1.000000 0 0 0 0 0
+
+
+moria_bak 1 moria_bak 1.000000 0 0 0 0 0
+
+
+nomadcamp 1 nomadcamp 1.000000 0 0 0 0 0
+
+
+nomadcamp_b 1 nomadcamp_b 1.000000 0 0 0 0 0
+
+
+orctower 1 orctower 0.500000 0 0 0 0 0
+
+
+rohantown1 1 RohanTown1 1.000000 0 0 0 0 0
+
+
+smallvillage 1 smallvillage 2.000000 0 0 0 0 0
+
+
+tree 1 Tree 1.000000 0 0 0 0 0
+
+
+custom_banner_01 0 custom_map_banner_01 0.300000 0 0 0 0 1
+-70.000000  6 2071 1 1224979098644774912 521 3 1224979098644774913 1224979098644774912 7 4 0 30 2 1224979098644774913 0 1983 2 1729382256910270510 1224979098644774913 3 0 
+
+
+custom_banner_02 0 custom_map_banner_02 0.300000 0 0 0 0 1
+-70.000000  6 2071 1 1224979098644774912 521 3 1224979098644774913 1224979098644774912 7 4 0 30 2 1224979098644774913 0 1983 2 1729382256910270511 1224979098644774913 3 0 
+
+
+custom_banner_03 0 custom_map_banner_03 0.300000 0 0 0 0 1
+-70.000000  6 2071 1 1224979098644774912 521 3 1224979098644774913 1224979098644774912 7 4 0 30 2 1224979098644774913 0 1983 2 1729382256910270509 1224979098644774913 3 0 
+
+
+mfp_gondor 0 map_flag_gondor_lord 0.300000 0 0 0 0 0
+
+
+mfp_rohan 0 map_flag_rohan_lord 0.300000 0 0 0 0 0
+
+
+mfp_isengard 0 map_flag_isengard_lord 0.300000 0 0 0 0 0
+
+
+mfp_mordor 0 map_flag_mordor_lord 0.300000 0 0 0 0 0
+
+
+mfp_harad 0 map_flag_harad_lord 0.300000 0 0 0 0 0
+
+
+mfp_khand 0 map_flag_khand_lord 0.300000 0 0 0 0 0
+
+
+mfp_rhun 0 map_flag_rhun_lord 0.300000 0 0 0 0 0
+
+
+mfp_umbar 0 map_flag_umbar_lord 0.300000 0 0 0 0 0
+
+
+mfp_lorien 0 map_flag_lorien_lord 0.300000 0 0 0 0 0
+
+
+mfp_woodelf 0 map_flag_woodelf_lord 0.300000 0 0 0 0 0
+
+
+mfp_guldur 0 map_flag_guldur_lord 0.300000 0 0 0 0 0
+
+
+mfp_imladris 0 map_flag_imladris_lord 0.300000 0 0 0 0 0
+
+
+mfp_moria 0 map_flag_moria_lord 0.300000 0 0 0 0 0
+
+
+mfp_dwarf 0 map_flag_dwarf_lord 0.300000 0 0 0 0 0
+
+
+mfp_northmen 0 map_flag_northmen_lord 0.300000 0 0 0 0 0
+
+
+mfp_dale 0 map_flag_dale_lord 0.300000 0 0 0 0 0
+
+
+mfp_gundabad 0 map_flag_gundabad_lord 0.300000 0 0 0 0 0
+
+
+mfp_dunland 0 map_flag_dunland_lord 0.300000 0 0 0 0 0
+
+
+banner_126 0 map_flag_15 0.300000 0 0 0 0 0
+
+
+mfc_gondor 0 map_flag_gondor_center 0.300000 0 0 0 0 0
+
+
+mfc_rohan 0 map_flag_rohan_center 0.300000 0 0 0 0 0
+
+
+mfc_isengard 0 map_flag_isengard_center 0.300000 0 0 0 0 0
+
+
+mfc_mordor 0 map_flag_mordor_center 0.300000 0 0 0 0 0
+
+
+mfc_harad 0 map_flag_harad_center 0.300000 0 0 0 0 0
+
+
+mfc_khand 0 map_flag_khand_center 0.300000 0 0 0 0 0
+
+
+mfc_rhun 0 map_flag_rhun_center 0.300000 0 0 0 0 0
+
+
+mfc_umbar 0 map_flag_umbar_center 0.300000 0 0 0 0 0
+
+
+mfc_lorien 0 map_flag_lorien_center 0.300000 0 0 0 0 0
+
+
+mfc_woodelf 0 map_flag_woodelf_center 0.300000 0 0 0 0 0
+
+
+mfc_guldur 0 map_flag_guldur_center 0.300000 0 0 0 0 0
+
+
+mfc_imladris 0 map_flag_imladris_center 0.300000 0 0 0 0 0
+
+
+mfc_moria 0 map_flag_moria_center 0.300000 0 0 0 0 0
+
+
+mfc_dwarf 0 map_flag_dwarf_center 0.300000 0 0 0 0 0
+
+
+mfc_northmen 0 map_flag_northmen_center 0.300000 0 0 0 0 0
+
+
+mfc_dale 0 map_flag_dale_center 0.300000 0 0 0 0 0
+
+
+mfc_gundabad 0 map_flag_gundabad_center 0.300000 0 0 0 0 0
+
+
+mfc_dunland 0 map_flag_dunland_center 0.300000 0 0 0 0 0
+
+

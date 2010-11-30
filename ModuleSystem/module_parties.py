@@ -1,0 +1,225 @@
+from header_common import *
+from header_parties import *
+from ID_troops import *
+from ID_factions import *
+from ID_party_templates import *
+from ID_map_icons import *
+from module_constants import *
+
+####################################################################################################################
+#  Each party record contains the following fields:
+#  1) Party id: used for referencing parties in other files.
+#     The prefix p_ is automatically added before each party id.
+#  2) Party name.
+#  3) Party flags. See header_parties.py for a list of available flags
+#  4) Menu. ID of the menu to use when this party is met. The value 0 uses the default party encounter system.
+#  5) Party-template. ID of the party template this party belongs to. Use pt_none as the default value.
+#  6) Faction.
+#  7) Personality. See header_parties.py for an explanation of personality flags.
+#  8) Ai-behavior
+#  9) Ai-target party
+# 10) Initial coordinates.
+# 11) List of stacks. Each stack record is a triple that contains the following fields:
+#   11.1) Troop-id. 
+#   11.2) Number of troops in this stack. 
+#   11.3) Member flags. Use pmf_is_prisoner to note that this member is a prisoner.
+# 12) Party direction in degrees [optional]
+####################################################################################################################
+
+no_menu = 0
+#pf_tld_down = pf_is_static|pf_always_visible|pf_hide_defenders|pf_show_faction
+#pf_tld_down    = pf_is_static|pf_always_visible|pf_show_faction
+pf_tld_down  = pf_is_static|pf_always_visible|pf_show_faction|pf_label_large
+pf_village = pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small
+#pf_tld_down = pf_is_static|pf_always_visible|pf_show_faction|pf_hide_defenders|pf_label_large
+
+#sample_party = [(trp_veteran_knight_of_gondor,1,0), (trp_swadian_peasant,10,0), (trp_archer_of_gondor,1,0), (trp_knight_of_the_citadel, 1, 0), (trp_footmen_of_gondor, 1, 0), (trp_gondor_militiamen,1,0)]
+#!
+parties = [
+  ("main_party","Main_Party",icon_player|pf_limit_members, no_menu, pt_none,fac_player_faction,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_player,1,0)]),
+  ("temp_party","temp_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+  ("camp_bandits","camp_bandits",pf_disabled, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(1,1),[(trp_unarmed_troop,3,0)]),
+#parties before this point are hardwired. Their order should not be changed.
+
+  ("temp_party_2","temp_party_2"   ,pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+#Used for calculating casulties.
+  ("temp_casualties","casualties"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_casualties_2","casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_casualties_3","casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_wounded","enemies_wounded",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_killed","enemies_killed"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("main_party_backup","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("encountered_party_backup","_"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+#  ("ally_party_backup","_",  pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_friends_backup","_" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("player_casualties","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("enemy_casualties","_"          ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("ally_casualties","_"           ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+
+  ("collective_enemy"  ,"collective_enemy",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+
+#  ("village_reinforcements","village_reinforcements",pf_is_static|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+
+  #  volunteers parties (one per city)
+  # ] +concatenate_scripts([
+  #		("volunteers_"+str(x), "_+_",   pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[],0)
+  # ] for x in range(150)) +  [
+  
+  ("town_merc_1","sargoth_mercs",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.9,-0.5),[]),
+
+#TLD TOWNS
+    # Gondor towns
+    ("town_minas_tirith","Minas_Tirith",    icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.465164,24.283142),[],205),
+    ("town_pelargir","Pelargir",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.313404,60.998856),[],240),
+    ("town_linhir","Linhir",                icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.834263,59.125397),[],170),
+    ("town_dol_amroth","Dol_Amroth",        icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.235764,64.029526),[],280),
+    ("town_edhellond","Edhellond",          icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(37.656502,46.137527),[],170),
+    ("town_lossarnach","Lossarnach",        icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.850273,37.002899),[],170),
+    ("town_tarnost","Tarnost",              icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.311577,63.942841),[],170),
+    ("town_erech","Erech",                  icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.165466,9.340988),[],170),
+    ("town_pinnath_gelin","Pinnath_Gelin",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.819733,30.816559),[],170),
+    ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.194717,20.500275),[],0),
+    ("town_henneth_annun","Henneth_Annun",  icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.812923,-14.051041),[],170),
+    ("town_cair_andros","Cair_Andros",      icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.478985,3.547134),[],170),
+    ("town_ethring","Ethring",              icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.157860,30.863678),[],50),
+	# Rohan towns
+    ("town_edoras","Edoras",         icon_edoras     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(22.834366,-14.703476),[],215),
+    ("town_aldburg","Aldburg",       icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(7.918526,-8.333206),[],170),
+    ("town_hornburg","Hornburg",     icon_helms_deep |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(40.194038,-11.918579 ),[],190),
+    ("town_east_emnet","East_Emnet", icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.057114,-28.464279),[],170),
+    ("town_westfold","Westfold",     icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.469215,-29.294189),[],260),
+    ("town_west_emnet","West_Emnet", icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(22.136223,-40.135925),[],250),
+    ("town_eastfold","Eastfold",     icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.802509,-0.500977),[],170),
+# Mordor towns
+    ("town_morannon","Morannon",              icon_morannon   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.951805,-34.186600),[],170),
+    ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.311302,23.814362),[],170),
+    ("town_cirith_ungol","Cirith_Ungol",      icon_cirithungol|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-69.469307,18.762466),[],170),
+    ("town_east_osgiliath","East_Osgiliath",icon_east_osgilliath|pf_tld_down,no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.187012,20.631195),[],0),
+    ("town_orc_sentry_camp","Orc_Sentry_Camp",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.432182,30.439667),[],170),
+# Isengard towns
+    ("town_isengard","Isengard",                   icon_isengard|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(52.802551,-57.728455),[],170),
+    ("town_urukhai_outpost","Uruk_Hai_Outpost",    icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(23.713844,-52.454651),[],170),
+    ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.958641,-78.915405),[],170),
+    ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.393986,-54.170471),[],170),
+# Lothlorien towns
+    ("town_caras_galadhon","Caras_Galadhon",  icon_grove |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.7,-131.3),[],350),
+    ("town_cerin_dolen"   ,"Cerin_Dolen",     icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  6.0,-135.7),[],170),
+    ("town_cerin_amroth"  ,"Cerin_Amroth",    icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[],170),
+# Woodelves towns
+    ("town_thranduils_halls","Thranduil's_Halls",   icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[],170),
+    ("town_woodelf_camp","Woodelf_Camp",            icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.9,-159.6),[],170),
+    ("town_woodelf_west_camp","Woodelf_West_Camp",  icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.2,-215.4),[],170),
+#    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
+# Woodmen and Beorning towns   
+    ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-27.3,-197.8),[],170),
+    ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.9,-184.7),[],170),
+    ("town_beorn_house","Beorn's House",         icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.2,-200.6),[],170),
+# Moria towns
+    ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(29.0,-151.3),[],200),
+    ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.2,-94.4),[],170),
+# Dale towns
+    ("town_dale","Dale",             icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.1,-223.9),[],170),
+    ("town_esgaroth","Esgaroth",     icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.6,-218.9),[],170),
+#    ("town_dale_town","Dale Town",   icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-79.9,-204.6),[],170),
+# Dunlanders towns
+    ("town_dunland_camp","Dunlander_Camp", icon_nomadcamp_b|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(45.9,-43.5),[],350),
+# Haradrim towns
+    ("town_harad_camp","Haradrim_Camp",    icon_haradcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.9,67.7),[],170),
+# Khand towns
+    ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
+# Umbar towns
+    ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(12.9,65.9),[],175),
+# Imladris towns
+    ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.25,-145.1),[],170),
+# Dol Guldur towns
+    ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.3,-131.1),[],170),
+    ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.6,-188.0),[],170),
+# Rhun towns (Formerly Northmen)
+    ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.2,-223.1),[],170),
+#    ("town_rhun_encampment","Rhun_Encampment",        icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-94.09,-365.12),[],170),
+    ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.6,-188.8),[],170),
+    ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.5,-240.6),[],170),
+# Gundabad towns
+    ("town_gundabad_camp"       ,"Gundabad_Orc_Camp",        icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18.1,-234.5),[],170),
+    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.1,-246.1),[],170),
+    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.2,-243.6),[],170),
+    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.4,-213.3),[],170),
+    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.2,-194.0),[],170),
+    ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.6,-217.0),[],170),
+# Dwarves towns
+    ("town_erebor"       ,"Erebor",                 icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.7,-226.4),[],130),
+#    ("town_erebor_mining_camp","Erebor Mining Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-66.4,-229.0),[],170),
+    ("town_ironhill_camp","Iron_Hill_Dwarf_Camp",   icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
+
+#    ("town_pelargir_port","Port",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.48,59.15),[],240),
+
+####DONE TLD TOWNS
+
+# stuff from native
+ ("castle_1","Ethring",icon_castle_a|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
+# ("village_1", "Yaragar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15,0),[], 100),
+
+### TLD map icons
+   ("Argonath","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.883472,-51.047958),[],180),
+   ("Argonath2","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.795536,-51.047958),[],180),
+   #("Hand1","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(64.8,-59.1),[],75),
+   #("Hand2","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.4,-57.3),[],75),
+   #("Hand3","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68.5,-64.5),[],5),
+   #("Hand4","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.4,-64.5),[],5),
+   ("hand_isen" ,"hand_isen" ,icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.886200,-52.610794),[],185),
+   ("mount_doom","Mount_Doom",icon_orodruin |pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-109.411041,1.567230),[],170),
+   ("town_barad_dur","Barad_Dur",icon_baraddur|pf_is_static|pf_always_visible          , no_menu, pt_none, fac_mordor ,0,ai_bhvr_hold,0,(-100.048325,-3.573029),[],170),
+
+  ("salt_mine","Salt_Mine",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.004257,-11.482468),[]),
+  ("four_ways_inn","Four_Ways_Inn",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.064327,1.070496),[]),
+  ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
+  ("battlefields","battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
+  ("dhorak_keep","Dhorak_Keep",icon_town|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+
+  ("training_ground"  ,"Training_Ground", pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.189980,-6.471909),[]),
+  ("training_ground_1","Training_Field",  pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(39.999908,62.778122),[],100),
+  ("training_ground_2","Training_Field",  pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.935398,57.532211),[],100),
+  ("training_ground_3","Training_Field",  pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.349197,18.407715),[],100),
+  ("training_ground_4","Training_Field",  pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.176975,-68.801270),[],100),
+  ("training_ground_5","Training_Field",  pf_disabled|icon_training_ground|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-16.855721,-30.506454),[],100),
+
+#  bridge_a
+  ("looter_spawn_point"   ,"looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(29.273674,79.890099),[(trp_looter,15,0)]),
+  ("steppe_bandit_spawn_point"  ,"steppe_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(27.303375,-60.205627),[(trp_looter,15,0)]),
+##  ("black_khergit_spawn_point"  ,"black_khergit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(47.1, -73.3),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point"  ,"forest_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-37.252506,6.916382),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point","mountain_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(39.789207,26.066040),[(trp_looter,15,0)]),
+  ("sea_raider_spawn_point_1"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.249706,-5.009750),[(trp_looter,15,0)]),
+  ("sea_raider_spawn_point_2"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(49.033096,45.023560),[(trp_looter,15,0)]),
+ 
+ #####TLD PARTIES BEGIN##########
+  ("gondor_test"    ,"gondor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.509827,-5.265762),[(trp_looter,15,0)]),
+  ("mordor_test"    ,"mordor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("gondor_allies_test","gondor_allies_test_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.500393,-5.082901),[(trp_looter,15,0)]),
+  ("isengard_test"  ,"isengard_test_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.317505,-5.082901),[(trp_looter,15,0)]),
+  ("isen_rohan"     ,"isen_rohan_sp"     ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(34.842987,-27.865891),[(trp_looter,15,0)]),
+  ("mordor_gondor"  ,"mordor_gondor_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(30.825653,-23.388062),[(trp_looter,15,0)]),
+  ("harad_gondor"   ,"harad_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(37.227943,-30.542084),[(trp_looter,15,0)]),
+  ("corsair_gondor" ,"corsair_gondor_sp" ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("rhun_gondor"    ,"rhun_gondor_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("khand_gondor"   ,"khand_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("lorien_moria"   ,"lorien_moria_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("gunda_woodelves","gunda_woodelves_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+  ("gunda_dwarves"  ,"gunda_dwarves_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
+ 
+ # add extra towns before this point 
+  ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_looter,15,0)]),
+ # pointers for scripting purposes
+  ("pointer_player"           ,"bug",pf_disabled|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+  ("pointer_z_0_steppe"       ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-209.450211,88.843483),[]),
+  ("pointer_z_0_plain"        ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-209.402191,84.070091),[]),
+  ("pointer_z_0_snow"         ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-209.357376,79.792992),[]),
+  ("pointer_z_0_desert"       ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-209.314194,75.815643),[]),
+  ("pointer_z_0_steppe_forest","bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-212.439072,88.843483),[]),
+  ("pointer_z_0_plain_forest" ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-212.390060,84.070091),[]),
+  ("pointer_z_0_snow_forest"  ,"bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-212.344360,79.792992),[]),
+  ("pointer_z_0_desert_forest","bug",pf_disabled|pf_no_label|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-212.300293,75.815643),[]),
+  ]
