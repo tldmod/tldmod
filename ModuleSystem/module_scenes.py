@@ -112,7 +112,7 @@ scenes = [
   ("west_osgiliath_center"  ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
   ("henneth_annun_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000002b4ac00002ccd800026dc00000c1d",[],[],"outer_terrain_plain"),
   ("cair_andros_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["bonus_chest_1"],"outer_terrain_osgiliath_9"),
-  ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_mountains2south"),
+  ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2south"),
   ("aldburg_center"         ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
   ("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
   ("east_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_steppe"),
