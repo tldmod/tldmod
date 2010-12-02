@@ -1,21 +1,21 @@
 ////////////////////////////////////////////////// /  /   /    /
 //  M & B   I R O N   L A U N C H E R   LOG FILE
 ////////////////////////////////////////////////// / /  /   /
-  Launched on 24/11/2010 at 11:18:20 AM
+  Launched on 02/12/2010 at 3:18:26 AM
 
-[11:18:20 AM] System Language ID is 25
-[11:18:20 AM] The game Launched is Mount&Blade Original
-[11:18:20 AM] Iron Launcher "Auth to start the Workaround" variable is 1
-[11:18:20 AM] Current module name is "TLD"
-[11:18:20 AM] The path to the \Modules folder is "D:\Games\Mount&Blade1011TLD\Modules"
-[11:18:20 AM] Found & processing the flora_kinds.txt Data file
-[11:18:20 AM] Found & processing the Font_data.xml Data file
-[11:18:20 AM] Found & processing the ground_specs.txt Data file
-[11:18:20 AM] Found & processing the skeleton_bodies.xml Data file
-[11:18:20 AM] Found & processing the core_materials.brf Resource file
-[11:18:20 AM] Found & processing the core_shaders.brf Resource file
-[11:18:20 AM] Found & processing the mb.fxo Root file (shader or video) file
-[11:18:20 AM] Starting the game at mount&blade.exe [Mount&Blade Original] 
+[3:18:26 AM] System Language ID is 36
+[3:18:26 AM] The game Launched is Mount&Blade Original
+[3:18:26 AM] Iron Launcher "Auth to start the Workaround" variable is 1
+[3:18:26 AM] Current module name is "TLD"
+[3:18:26 AM] The path to the \Modules folder is "C:\Absolute\Mount&Blade1.011TLD\Modules"
+[3:18:26 AM] The flora_kinds.txt Data file was already workarounded, hmmm bad exited
+[3:18:26 AM] The Font_data.xml Data file was already workarounded, hmmm bad exited
+[3:18:26 AM] The ground_specs.txt Data file was already workarounded, hmmm bad exited
+[3:18:26 AM] The skeleton_bodies.xml Data file was already workarounded, hmmm bad exited
+[3:18:26 AM] The materials.brf Resource file was already workarounded, hmmm bad exited
+[3:18:26 AM] The shaders.brf Resource file was already workarounded, hmmm bad exited
+[3:18:26 AM] The mb.fxo Root file (shader or video) was already workarounded, hmmm bad exited
+[3:18:26 AM] Starting the game at mount&blade.exe [Mount&Blade Original] 
      >Waiting for M&B close...
-[11:47:44 AM] Mount&Blade Original has closed, Undoing all the changes...
-[11:47:44 AM] Iron Launcher is shutting Down... Bye!
+[3:24:14 AM] Mount&Blade Original has closed, Undoing all the changes...
+[3:24:14 AM] Iron Launcher is shutting Down... Bye!
