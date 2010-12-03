@@ -1835,7 +1835,7 @@ itemsfile version 2
  itm_harad_armor_j Far_Harad_Tribesman Far_Harad_Tribesman 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_armor_k Far_Harad_Champion Far_Harad_Champion 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_armor_k Far_Harad_Champion Far_Harad_Champion 1  far_harad_champion 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
 0
 
  itm_harad_armor_l Parsanah_Armor Parsanah_Armor 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
@@ -1868,6 +1868,12 @@ itemsfile version 2
  itm_harad_helm_k Great_Harad_Helmet Great_Harad_Helmet 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
 0
 
+ itm_harad_helm_g Leopard_Guard_Helm Leopard_Guard_Helm 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
+0
+
+ itm_harad_helm_h Eagle_Guard_Helm Eagle_Guard_Helm 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
+0
+
  itm_harad_cap_a Harad_Cloth_Cap Harad_Cloth_Cap 1  harad_heavy_inf_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
 0
 
@@ -1875,12 +1881,6 @@ itemsfile version 2
 0
 
  itm_harad_helm_f Lion_Guard_Helm Lion_Guard_Helm 1  lion_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
-0
-
- itm_harad_helm_g Leopard_Guard_Helm Leopard_Guard_Helm 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
-0
-
- itm_harad_helm_h Eagle_Guard_Helm Eagle_Guard_Helm 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
 0
 
  itm_harad_panther_guard Panther_Guard_Cap Panther_Guard_Cap 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0

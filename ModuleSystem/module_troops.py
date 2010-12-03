@@ -1201,7 +1201,7 @@ troops = [
 	[itm_harad_armor_b,itm_harad_armor_d,itm_harad_cap_c,itm_harad_bow,itm_harad_arrows,itm_harondor_a,itm_harondor_shield_a, itm_harad_horse],
 	def_attrib|level(14),wp(100),knows_common|knows_riding_2|knows_shield_2|knows_power_strike_2,haradrim_face_2,haradrim_face_3],
 ["harad_veteran_cavalry","Harondor Light Cavalry","Harondor Light Cavalry",8|tf_mounted|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
-	[itm_harad_armor_c,itm_harad_cap_c,itm_harad_helm_c,itm_harad_bow,itm_harad_arrows,itm_skirmisher_sword,itm_harondor_shield_a,itm_harad_horse],
+	[itm_harad_armor_c,itm_harad_cap_c,itm_harad_helm_c,itm_harad_bow,itm_harad_arrows,itm_skirmisher_sword,itm_harad_horse],
 	def_attrib|level(20),wp(120),knows_common|knows_riding_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,haradrim_face_2,haradrim_face_3],
 ["black_serpent_cavalry","Harondor Fang","Harondor Fangs",8|tf_mounted|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
 	[itm_harad_armor_f,itm_harad_helm_e,itm_karka_bow,itm_harad_arrows,itm_harad_sabre,itm_harondor_shield_b,itm_harad_warhorse],
@@ -1209,12 +1209,12 @@ troops = [
 ["harad_horse_archer","Harondor Raider","Harondor Raiders",8|tf_guarantee_ranged|tf_mounted|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
 	[itm_harad_armor_b,itm_harad_helm_e,itm_harad_spear_a,itm_harad_heavy_sword,itm_harondor_shield_b,itm_harad_warhorse],
 	def_attrib|level(14),wp_one_handed(70)|wp_two_handed(70)|wp_polearm(70)|wp_archery(100)|wp_crossbow(90)|wp_throwing(90),knows_common|knows_horse_archery_2|knows_riding_3|knows_shield_1|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_1,haradrim_face_2,haradrim_face_3],
-["harad_veteran_horse_archer","Black Snake Horse Archer","Black Snake Horse Archers",8|tf_guarantee_ranged|tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
+["harad_veteran_horse_archer","Black Snake Cavalryman","Black Snake Cavalrymen",8|tf_guarantee_ranged|tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
 	[itm_harad_armor_h,itm_harad_helm_i,itm_black_snake_sword,itm_harad_spear_b,itm_harondor_shield_b,itm_harad_warhorse],
 	def_attrib|level(20),wp_one_handed(90)|wp_two_handed(90)|wp_polearm(90)|wp_archery(120)|wp_crossbow(90)|wp_throwing(90),knows_common|knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,haradrim_face_2,haradrim_face_3],
 ["black_serpent_horse_archer","Blood Gold Serpent","Blood Gold Serpents",8|tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_boots,0,0,fac_harad,
 	[itm_harad_armor_g,itm_harad_helm_a,itm_harad_spear_b,itm_black_snake_sword,itm_harondor_shield_b, itm_harad_warhorse],
-	def_attrib|level(25),wp_one_handed(110)|wp_two_handed(110)|wp_polearm(110)|wp_archery(140)|wp_crossbow(110)|wp_throwing(110),knows_common|knows_horse_archery_4|knows_riding_5|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,haradrim_face_2,haradrim_face_3],   
+	def_attrib|level(25),wp_one_handed(140)|wp_two_handed(110)|wp_polearm(110)|wp_archery(110)|wp_crossbow(110)|wp_throwing(110),knows_common|knows_riding_5|knows_power_strike_2|knows_ironflesh_3,haradrim_face_2,haradrim_face_3],   
 #FAR HARAD
 ["far_harad_tribesman","Far Harad Tribesman","Far Harad Tribesmen",8|tf_guarantee_armor|tf_guarantee_boots,0,0,fac_harad,##UNUSED
 	[itm_harad_armor_j,itm_harad_spear_a,itm_harad_club,itm_far_harad_shield_a,itm_far_harad_shield_b,itm_far_harad_shield_c],

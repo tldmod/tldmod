@@ -1,6 +1,6 @@
 @echo off
 set OLDPATH=%PATH%
-set PATH="D:\Program Files\Python26";%PATH%
+set PATH="C:\Python24";"C:\Python26";%PATH%
 
 python process_init.py
 python process_global_variables.py
