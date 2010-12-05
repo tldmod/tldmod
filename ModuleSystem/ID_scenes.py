@@ -177,3 +177,4 @@ scn_rhun_north_camp_center = 175
 scn_gundabad_ne_outpost_center = 176
 scn_gundabad_nw_outpost_center = 177
 scn_dol_guldur_north_outpost_center = 178
+scn_rohan_castle_edoras = 179

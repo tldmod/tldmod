@@ -1863,19 +1863,22 @@ scene_props = [
   ("harad_oliphant", 0, "oliphant", "bo_oliphant", []),
 
 # Romainoir Rohan buildings
-  ("rohan_birdhouse",0,"birdhouse","0",[]),
-  ("rohan_tour",0,"tourrohan","0",[]),
-  ("rohan_meduseld",0,"meduseld","0",[]),
-  ("rohan_house1",0,"house1","0",[]),
-  ("rohan_house2",0,"house2","0",[]),
-  ("rohan_house3",0,"house3","0",[]),
-  ("rohan_house4",0,"house4","0",[]),
-  ("rohan_house5",0,"house5","0",[]),
-  ("rohan_rangefoin",0,"rangefoin","0",[]),
+  ("rohan_birdhouse",0,"rohan_birdhouse","0",[]),
+  ("rohan_platform",0,"rohan_platform","0",[]),
+  ("rohan_meduseld",0,"rohan_meduseld","0",[]),
+  ("rohan_house1",0,"rohan_house1","0",[]),
+  ("rohan_house2",0,"rohan_house2","0",[]),
+  ("rohan_house3",0,"rohan_house3","0",[]),
+  ("rohan_house4",0,"rohan_house4","0",[]),
+  ("rohan_house5",0,"rohan_house5","0",[]),
+  ("rohan_stables1",0,"rohan_stables1","0",[]),
+  ("rohan_watchtower",0,"rohan_watchtower","0",[]),
+  ("rohan_stonebase",0,"rohan_stonebase","0",[]),  
+  
 # Llew Rohan buildings
   ("rohan_palisade",0,"rohan_palisade_a","0",[]),
   ("rohan_palisade_slope",0,"rohan_palisade_b","0",[]),
-  ("rohan_house6",0,"rohan_house_a","0",[]),
-  ("rohan_house7",0,"rohan_house_b","0",[]),
+  ("rohan_house6",0,"rohan_house6","0",[]),
+  ("rohan_house7",0,"rohan_house7","0",[]),
 
 ]
