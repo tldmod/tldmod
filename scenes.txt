@@ -1,5 +1,5 @@
 scenesfile version 1
- 180
+ 179
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -480,7 +480,7 @@ scn_mordor_castle mordor_castle 1 interior_castle_q bo_interior_castle_q -100.00
   1  100000 
   1  576 
  0 
-scn_edoras_castle edoras_castle 1 interior_castle_z bo_interior_castle_z -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_interior_castle_z -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   1  578 
  0 
@@ -716,7 +716,3 @@ scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none non
   0 
   0 
  outer_terrain_plain 
-scn_rohan_castle_edoras rohan_castle_edoras 1 rohan_meduseld_int bo_interior_castle_t -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
-  0 
-  0 
- 0 

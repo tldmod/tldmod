@@ -156,7 +156,7 @@ scenes = [
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["town_2_seneschal"]),
   ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],["town_3_seneschal"]),
   ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],["town_4_seneschal"]),
-  ("edoras_castle"      ,sf_indoors, "interior_castle_z", "bo_interior_castle_z", (-100,-100),(100,100),-100,"0",["exit"],["town_6_seneschal"]),
+  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_interior_castle_z", (-100,-100),(100,100),-100,"0",["exit"],["town_6_seneschal"]),
 
   ("gondor_tavern" ,sf_indoors, "interior_tavern_f"    ,"bo_interior_tavern_f"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("rohan_tavern"  ,sf_indoors, "interior_tavern_g"    ,"bo_interior_tavern_g"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
@@ -234,8 +234,6 @@ scenes = [
   ("gundabad_ne_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("gundabad_nw_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("dol_guldur_north_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-
-  ("rohan_castle_edoras"       ,sf_indoors, "rohan_meduseld_int", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",[],[]),
 
   ]
 
