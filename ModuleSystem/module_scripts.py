@@ -4659,17 +4659,19 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #      Remove this when test is done
-       (assign, ":quest_no", "qst_investigate_fangorn"),
+#       (assign, ":quest_no", "qst_investigate_fangorn"),
+      (assign, ":quest_no", "qst_find_lost_spears"),
 #      Remove this when test is done end
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
          (try_begin),
           # Saruman wants Fangorn to be investigated
-          (eq, ":quest_no", "qst_investigate_fangorn"),
+##          (eq, ":quest_no", "qst_investigate_fangorn"),
+      (eq, ":quest_no", "qst_find_lost_spears"),
           (try_begin),
             #(eq, ":giver_troop", trp_isengard_lord),  # only saruman gives this quest
 			#(ge, ":player_level", 4),
-            (assign, ":quest_expiration_days", 20),
+            (assign, ":quest_expiration_days", 40),
             (assign, ":quest_dont_give_again_period", 200),
 			(assign, ":quest_importance", 2),
             (assign, ":quest_xp_reward", 100),

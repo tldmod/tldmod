@@ -25,6 +25,9 @@ quests = [
  ("capture_troll", "Capture a Troll", qf_random_quest,
   "{s9} asked you to bring him back a savage troll in stocks for His army."),
 
+ ("find_lost_spears", "Find the lost spears of king Bladorthin", qf_random_quest,
+  "{s9} asked you to try finding the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the deep of  the Lonely Mountain."),
+
 # TLD END lord's quests 
 
  ("deliver_message_to_enemy_lord", "Deliver Message to {s13}", qf_random_quest,

@@ -270,6 +270,8 @@ sounds = [
 											   ]),
  ("horse_snort_again",sf_priority_5|sf_vol_7, ["horse_snort_1.ogg","horse_snort_2.ogg","horse_snort_3.ogg","horse_snort_4.ogg","horse_snort_5.ogg"]),
 
+ ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
+
  
 #TLD end 
  

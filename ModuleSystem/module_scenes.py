@@ -235,5 +235,9 @@ scenes = [
   ("gundabad_nw_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("dol_guldur_north_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
 
+  #TLD Dungeons (Kolba)
+
+  ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
+
   ]
 

@@ -3217,39 +3217,60 @@ dialogs = [
                              ],
    "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
+  #TLD Dain II Ironfoot dialogue (Kolba)
+
+  [anyone|plyr,"lord_talk",[
+                          (eq,"$g_talk_troop","trp_dwarf_lord"),
+                          (check_quest_active,"qst_find_lost_spears"),
+                          ],
+   "Let me come into the dungeons","find_lost_spears_permission",[]],
+
+  [anyone,"find_lost_spears_permission",[(ge, "$g_talk_troop_faction_relation", 0)],
+   "Allright, go. Your relations with my faction are ok.","find_lost_spears_permission_yes",[]],
+
+  [anyone,"find_lost_spears_permission",[],
+   "Ye shall not go there. Your relations with my faction are bad.","find_lost_spears_permission_no",[]],
+
+  [anyone,"find_lost_spears_permission_yes",[],
+   "I thank you, my lord.","lord_pretalk",[(assign,"$dungeon_access",1)]],
+                            
 
 
+   #TLD - those oath options disabled for now, as no consequence menu is freezing game (Kolba)
+                                                                                                                                                                                    
+##  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
+##                             (ge, "$g_talk_troop_faction_relation", 0),
+##                             #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+##                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+##                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
+##                             (neq, "$players_kingdom", "$g_talk_troop_faction"),
+##                             (store_partner_quest, ":lords_quest"),
+##                             (neq, ":lords_quest", "qst_join_faction"),
+##                            ],
+##   "{s66}, I have come to offer you my sword in vassalage!", "lord_ask_enter_service",[]],
+##
+##
+##  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
+##                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
+##                             (eq, "$players_kingdom", "$g_talk_troop_faction"),
+##                             (eq, "$player_has_homage", 0),
+##                             (store_partner_quest, ":lords_quest"),
+##                             (neq, ":lords_quest", "qst_join_faction"),
+##                            ],
+##   "{s66}, I wish to become your sworn {man/woman} and fight for your honour.", "lord_ask_enter_service",[]],
+##
+##  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
+##                             (ge, "$g_talk_troop_faction_relation", 0),
+##                             #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+##                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+##                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
+##                             (eq, "$players_kingdom", "$g_talk_troop_faction"),
+##                             (eq, "$player_has_homage", 1),
+##                            ],
+##   "{s66}, I wish to be released from my oath to you.", "lord_ask_leave_service",[]],
 
-  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
-                             (ge, "$g_talk_troop_faction_relation", 0),
-                             #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
-                             (neq, "$players_kingdom", "$g_talk_troop_faction"),
-                             (store_partner_quest, ":lords_quest"),
-                             (neq, ":lords_quest", "qst_join_faction"),
-                            ],
-   "{s66}, I have come to offer you my sword in vassalage!", "lord_ask_enter_service",[]],
-
-
-  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
-                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
-                             (eq, "$players_kingdom", "$g_talk_troop_faction"),
-                             (eq, "$player_has_homage", 0),
-                             (store_partner_quest, ":lords_quest"),
-                             (neq, ":lords_quest", "qst_join_faction"),
-                            ],
-   "{s66}, I wish to become your sworn {man/woman} and fight for your honour.", "lord_ask_enter_service",[]],
-
-  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
-                             (ge, "$g_talk_troop_faction_relation", 0),
-                             #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-                             (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
-                             (eq, "$players_kingdom", "$g_talk_troop_faction"),
-                             (eq, "$player_has_homage", 1),
-                            ],
-   "{s66}, I wish to be released from my oath to you.", "lord_ask_leave_service",[]],
+    #TLD - oath options end (Kolba)
+  
 
 ##  [anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
 ##                             (ge, "$g_talk_troop_faction_relation", 0),
@@ -3258,6 +3279,8 @@ dialogs = [
 ##                             (eq, "$players_kingdom", 0),
 ##                             (eq,1,0)],
 ##   "TODO2:I want to fight alongside you against your enemies.", "close_window",[]],
+
+
 
   [anyone|plyr,"lord_talk", [(eq, 1, 0),(le,"$talk_context", tc_party_encounter),(ge, "$g_talk_troop_faction_relation", 0)],
    "I have an offer for you.", "lord_talk_preoffer",[]],
@@ -4754,7 +4777,7 @@ dialogs = [
   [anyone|plyr,"lord_mission_investigate_fangorn_2", [], "Master, pity of your servant! Don't ask me to venture in that cursed place!", "lord_mission_investigate_fangorn_rejected",[]],
 
   [anyone,"lord_mission_investigate_fangorn_rejected", [], "So you are like the other worms: a superstitious, worthless coward.\
-  I overestimated you. Now, begone!", "close_window",
+  I overestimated you. Now, begone!", "lord_pretalk",
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
    (assign, "$g_leave_encounter",1),]], 
  
@@ -4769,6 +4792,44 @@ dialogs = [
    ]],
 
   # TLD mission: investigate fangorn (mtarini) -- end
+
+  # TLD mission: Find the lost spears of king Bladorthin (Kolba) -- begin
+
+   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_find_lost_spears")],
+  "Here is a mission for a trusted and brave serve like you, {playername}.\
+   We are ill equipped to fight off the Easterling hordes.\
+   Our armies are losing battles one by one.\
+   A legend tells that once upon a time, the spears that were made for the armies of the great King Bladorthin (long since dead),\
+   each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..", "lord_mission_find_lost_spears", 
+  []],
+
+  [anyone|plyr,"lord_mission_find_lost_spears",[],
+   "What do you command me to do about it, my lord?","lord_mission_find_lost_spears_1",[]],
+
+  [anyone,"lord_mission_find_lost_spears_1",[],
+  "These weapons would increase effectivity of our armies and let them be somewhat superior to Easterlings. You'll have to find these spears.\
+   You'll have to go ask the dwarves permission to search for the spears in the deep of the Lonely Mountain.\
+   Beware, you may encounter some orcs or trolls in the tunnels. Are you avaiable for this task?","lord_mission_find_lost_spears_2",[]],
+
+  [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my king.","lord_mission_find_lost_spears_accepted",[]],
+  [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I'm afraid I can't help you, my lord.","lord_mission_find_lost_spears_rejected",[]],
+
+    [anyone,"lord_mission_find_lost_spears_rejected", [], "So you are like the other worms: a superstitious, worthless coward.\
+  I overestimated you. Now, get out of my sight!", "lord_pretalk",
+   [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+   (assign, "$g_leave_encounter",1),
+    ]],
+
+    [anyone,"lord_mission_find_lost_spears_accepted", [], "Good! put some advice or something here.","lord_pretalk",
+     [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+    (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
+      ]],
+
+    
+
+   
+  
   
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
    "I need to send a letter to {s13} who should be currently at {s4}.\

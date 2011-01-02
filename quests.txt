@@ -1,8 +1,9 @@
 questsfile version 1
-44
+45
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_investigate_fangorn Investigate_Fangorn 2 {s9}_asked_you_to_find_out_what_is_going_on_in_the_Fangorn_forest,_and_to_report_Him. 
 qst_capture_troll Capture_a_Troll 2 {s9}_asked_you_to_bring_him_back_a_savage_troll_in_stocks_for_His_army. 
+qst_find_lost_spears Find_the_lost_spears_of_king_Bladorthin 2 {s9}_asked_you_to_try_finding_the_lost_spears_dwarves_once_made_for_king_Bladorthin._You_have_to_ask_the_dwarves_permission_to_search_for_the_spears_in_the_deep_of__the_Lonely_Mountain. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him. 
 qst_escort_lady Escort_{s13}_to_{s14} 2 None 

@@ -116,6 +116,7 @@ game_menus = [
 	
 	 #  add a little money
 	(troop_add_gold, "trp_player", 50),
+##        (troop_add_item, "trp_player","itm_horn",0),
 	
 	 #  free food for everyone
 	(troop_add_item, "trp_player","itm_dried_meat",0),
@@ -1372,14 +1373,67 @@ game_menus = [
         (change_screen_mission),
         ]),	   
      ("camp_action",[],"Take an action.",[(jump_to_menu, "mnu_camp_action"),]),
-     ("camp_wait_here",[],"Wait here for some time.",
-       [(assign,"$g_camp_mode", 1),
-#       (assign,"$auto_menu","mnu_camp"),
-        (assign, "$g_player_icon_state", pis_camping),
-        (rest_for_hours_interactive, 24 * 7, 5, 1), #rest while attackable
-        (change_screen_return),
-        ]),
-		
+##     ("camp_wait_here",[],"Wait here for some time.",
+##       [(assign,"$g_camp_mode", 1),
+###       (assign,"$auto_menu","mnu_camp"),
+##        (assign, "$g_player_icon_state", pis_camping),
+##        (rest_for_hours_interactive, 24 * 7, 5, 1), #rest while attackable
+##        (change_screen_return),
+##        ]),
+
+     #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
+  ("camp_wait_here",[],"Wait here for some time.",
+      [
+			(store_random_in_range,":r",0,10),#random number
+			(try_begin),
+				(ge,":r",2),#if 3 or higher, we are attacked
+				#clearing temporary slots
+				(try_for_range,":slot",0,10),
+					(troop_set_slot,"trp_temp_array_a",":slot",-1),
+				(try_end),
+				
+				(assign,":slot",0),
+				(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+					(faction_slot_eq,":faction",slot_faction_state,sfs_active),
+					(neq,":faction","fac_player_supporters_faction"),
+					(store_relation,":relation",":faction","fac_player_faction"),
+					(lt,":relation",0),
+					(troop_set_slot,"trp_temp_array_a",":slot",":faction"),#save enemy faction to slot
+					(val_add,":slot",1),#continue to next slot
+				(try_end),
+				
+				(gt,":slot",0),#if there are no enemy factions, we are simply sleeping
+				(store_random_in_range,":faction_slot",0,":slot"),#choose random slot of enemy faction
+				(troop_get_slot,":faction","trp_temp_array_a",":faction_slot"),#get faction number from slot
+				
+				(troop_set_slot,"trp_temp_array_a",0,":faction"),#saves faction (to use it later, in the battle)
+          
+				#(call_script, "script_asasins_ambush_setup"), # set scene, it's exported to rego0
+				(assign,":scene",scn_khand_camp_center),#save scene to variable
+				(modify_visitors_at_site,":scene"),
+				(reset_visitors),
+				(set_visitor,0,"trp_player"),
+				
+				(faction_get_slot,":troop",":faction",slot_faction_tier_2_troop),# get troop from faction, you can set other tier
+				(try_begin),
+					(le,":troop",0),#if there are any problems with troop, it's set to normal bandit
+					(assign,":troop","trp_bandit"),
+				(try_end),
+				(set_visitors,1,":troop",5),
+
+				(set_jump_mission,"mt_assasins_attack"), #jump to mission template
+				(jump_to_scene,":scene"), #jump to scene
+				(change_screen_mission), #run mission
+			(else_try),
+				(assign,"$g_camp_mode", 1),
+				(assign, "$g_infinite_camping", 0),
+				(assign, "$g_player_icon_state", pis_camping),
+				(rest_for_hours_interactive, 24 * 365, 5, 1), #rest while attackable
+				(change_screen_return),
+			(try_end), #end trying
+		 ]
+		),
+	
 	
 	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
 	 ("Cheat_enable",[(eq,"$cheat_mode",0)],
@@ -1390,6 +1444,174 @@ game_menus = [
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
     ]
   ),
+
+  ##     #TLD - assasination menus begin (Kolba)
+     
+      (
+    "assasins_attack_player_won",mnf_disable_all_keys,
+    "Text after victory. Example - trial of assasination was done by faction {s2}, which is leaded by {s3}.",
+    "none",
+    [
+		#add prize
+		(call_script,"script_troop_add_gold","trp_player",100),#add gold
+		(add_xp_to_troop,1000,"trp_player"),#add exp
+		
+		(troop_get_slot,":faction","trp_temp_array_a",0),#get number of enemy faction, which organised assasination
+		(str_store_faction_name,s2,":faction"),#save faction name
+		(faction_get_slot,":leader",":faction",slot_faction_leader),#get faction leader
+		(str_store_troop_name,s3,":leader"),#save faction leader name
+		],
+    [
+      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
+    ],
+  ),
+		
+		
+  (
+    "assasins_attack_player_retreat",mnf_disable_all_keys,
+    "Text after player's retreat",
+    "none",
+    [
+		#add here any consequences of retreat
+		],
+    [
+      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
+    ],
+  ),
+		 
+  (
+    "assasins_attack_player_defeated",mnf_scale_picture,
+    "Text after player's defeat.",
+    "none",
+    [
+		
+		(troop_get_type, ":is_female", "trp_player"),
+		(try_begin),
+			(eq, ":is_female", 1),
+			(set_background_mesh, "mesh_pic_prisoner_fem"),
+		(else_try),
+			(set_background_mesh, "mesh_pic_prisoner_man"),
+		(try_end),
+		#consequences of defeat
+		(play_track,"track_captured",1),#music
+		
+		(troop_get_slot,":faction","trp_temp_array_a",0),#get number of assasin's faction
+		(str_store_faction_name,s2,":faction"),#save it
+		(faction_get_slot,":leader",":faction",slot_faction_leader),#get faction leader
+		(str_store_troop_name,s3,":leader"),#save it
+		
+		(assign,"$capturer_party",1),
+		
+		#(troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
+		(assign,":end",walled_centers_end),#breaking control flow
+		(try_for_range,":center",walled_centers_begin,":end"),
+			(party_get_slot,":owner",":center",slot_town_lord),
+			(eq,":owner",":leader"),
+			(assign,"$capturer_party",":center"),#prison for player
+			(assign,":end",walled_centers_begin),#ending control flow
+		(try_end),
+		
+		#freeing player's prisoners
+		(party_get_num_prisoner_stacks,":num_prisoner_stacks","p_main_party"),
+		(try_for_range,":stack_no",0,":num_prisoner_stacks"),
+			(party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
+			(troop_is_hero,":stack_troop"),
+			(call_script,"script_remove_troop_from_prison",":stack_troop"),
+		(try_end),
+		
+		(call_script,"script_loot_player_items","$g_enemy_party"),#player loose some equipment
+		
+		(assign,"$g_move_heroes",0),
+		(party_clear, "p_temp_party"),
+		(call_script, "script_party_add_party_prisoners", "p_temp_party", "p_main_party"),
+		(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party"),
+		(distribute_party_among_party_group, "p_temp_party","$capturer_party"),
+		
+		(call_script,"script_party_remove_all_companions","p_main_party"),#removing all troops
+		(assign, "$g_move_heroes",1),
+		(call_script,"script_party_remove_all_prisoners","p_main_party"),#removing all prisoners
+		
+		#setting captivity
+		(assign,"$g_player_is_captive",1),
+		(assign,"$auto_menu",-1),
+		
+		#for NPC who had been in party
+		(try_for_range, ":npc", companions_begin, companions_end),
+			(main_party_has_troop, ":npc"),
+			(store_random_in_range, ":rand", 0, 100),
+			(lt, ":rand", 30),
+			(remove_member_from_party, ":npc", "p_main_party"),
+			(troop_set_slot, ":npc", slot_troop_occupation, 0),
+			(troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
+			(assign, "$last_lost_companion", ":npc"),
+			(store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
+			(troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
+			(troop_set_health, ":npc", 100),
+			(store_random_in_range, ":rand_town", towns_begin, towns_end),
+			(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
+			(assign, ":nearest_town_dist", 1000),
+			(try_for_range, ":town_no", towns_begin, towns_end),
+				(store_faction_of_party, ":town_fac", ":town_no"),
+				(store_relation, ":reln", ":town_fac", "fac_player_faction"),
+				(ge, ":reln", 0),
+				(store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
+				(lt, ":dist", ":nearest_town_dist"),
+				(assign, ":nearest_town_dist", ":dist"),
+				(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
+				(try_end),
+		(try_end),
+		#end NPC
+
+		(set_camera_follow_party,"$capturer_party"),#camera
+		(store_random_in_range,":random_hours",30,60),#random time of captivity
+		(call_script,"script_event_player_captured_as_prisoner"),
+		(call_script,"script_stay_captive_for_hours",":random_hours"),
+		(assign,"$auto_menu","mnu_assasins_attack_captivity_check"),
+		],
+    [
+      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
+    ],
+  ),
+		 
+  (
+    "assasins_attack_captivity_check",0,
+    "stub",
+    "none",
+    [(jump_to_menu,"mnu_assasins_attack_captivity_end")],
+    []
+  ),
+  (
+    "assasins_attack_captivity_end",mnf_scale_picture,
+    "Text after escaping from cativity.",
+    "none",
+    [
+        (play_cue_track,"track_escape"),
+        (troop_get_type,":is_female","trp_player"),
+        (try_begin),
+          (eq,":is_female",1),
+          (set_background_mesh,"mesh_pic_escape_1_fem"),
+        (else_try),
+          (set_background_mesh,"mesh_pic_escape_1"),
+        (try_end),
+    ],
+    [
+      ("continue",[],"Continue...",
+       [
+           (assign,"$g_player_is_captive",0),
+           (try_begin),
+             (party_is_active,"$capturer_party"),
+             (party_relocate_near_party,"p_main_party","$capturer_party",2),
+           (try_end),
+           (call_script,"script_set_parties_around_player_ignore_player",2,4),
+           (assign,"$g_player_icon_state", pis_normal),
+           (set_camera_follow_party,"p_main_party"),
+           (rest_for_hours,0,0,0), #stop resting
+           (change_screen_return),
+        ]),
+    ]
+  ),
+
+  #TLD - assasination menus end (Kolba)
   
   #TLD start (Hokie)
  
@@ -6082,6 +6304,22 @@ game_menus = [
              (assign, "$talk_context", tc_hire_troops),
              (change_screen_map_conversation, reg(6))
              ]),
+      #Enter dungeon in 
+
+      ("dungeon_enter",[
+          
+          (eq, "$current_town", "p_town_erebor"),
+        (eq,"$dungeon_access",1),
+        ],"Enter the cellars.",[
+(modify_visitors_at_site,"scn_erebor_dungeon_01"),(reset_visitors),
+             (set_visitor,1,"trp_player"),
+              (set_jump_mission, "mt_tld_erebor_dungeon"),
+
+              (jump_to_scene, "scn_erebor_dungeon_01"),
+              (change_screen_mission),
+                ],"Open the door."),
+
+          
 		
       ("castle_wait",
        [#   (party_slot_eq,"$current_town",slot_party_type, spt_castle),

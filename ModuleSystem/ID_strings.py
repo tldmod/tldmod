@@ -1346,5 +1346,7 @@ str_gondor_rumor_11 = 1344
 str_gondor_rumor_12 = 1345
 str_other_rumor_begin = 1346
 str_tld_introduction = 1347
+str_tld_erebor_dungeon = 1348
+str_tld_spear_hit = 1349
 
 

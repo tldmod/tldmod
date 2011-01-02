@@ -1,5 +1,5 @@
 scenesfile version 1
- 179
+ 180
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -716,3 +716,7 @@ scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none non
   0 
   0 
  outer_terrain_plain 
+scn_erebor_dungeon_01 erebor_dungeon_01 1 dungeon_a bo_dungeon_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 

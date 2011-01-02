@@ -208,5 +208,6 @@ snd_horror_scream_woman = 206
 snd_horror_scream_orc = 207
 snd_warg_lone_woof = 208
 snd_horse_snort_again = 209
+snd_spear_trap = 210
 
 

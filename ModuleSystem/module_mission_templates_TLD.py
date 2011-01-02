@@ -1068,3 +1068,28 @@ horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m),],
     [ (get_player_agent_no,":player"),(agent_play_sound,":player","snd_man_warcry"),(display_message,"@You yell for your horse."),
       (agent_is_alive, "$player_horse"),(agent_get_position, pos1, ":player"),(agent_set_scripted_destination, "$player_horse", pos1, 0),
     ])
+
+##common_battle_kill_underwater = (
+##  5, 0, 0, [],
+##   [   
+##      (try_for_agents,":agent"),
+##         (agent_is_alive,":agent"),
+##         (agent_get_position,pos1,":agent"),
+##         (position_get_z, ":pos_z", pos1),
+##         #(assign, reg1, ":pos_z"), #debug only
+##         #(display_message, "@agent z-position is {reg1}"),   #debug only
+##         (try_begin),
+##            (le, ":pos_z",-150),   #agent is about 6ft underwater
+##            (store_agent_hit_points,":hp",":agent",1),
+##            (val_sub,":hp",7),
+##            (try_begin),
+##               (le, ":hp", 0),
+##               (agent_set_hit_points,":agent",0,0),
+##            (else_try),
+##               (agent_set_hit_points,":agent",":hp",1),
+##            (try_end),            
+##            (play_sound,"snd_man_grunt"),
+##            (agent_deliver_damage_to_agent,":agent",":agent"),
+##         (try_end),
+##      (try_end),
+##   ])

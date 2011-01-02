@@ -2021,4 +2021,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("tld_introduction","TLD Introduction - you should go to Edoras."),
 
+("tld_erebor_dungeon","The smell of death surrounds me. I'd better be careful"),
+("tld_spear_hit","Ouch!"),    
+
 ]

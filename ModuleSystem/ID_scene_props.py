@@ -1244,3 +1244,5 @@ spr_rohan_palisade = 1242
 spr_rohan_palisade_slope = 1243
 spr_rohan_house6 = 1244
 spr_rohan_house7 = 1245
+spr_spear_trap_1 = 1246
+spr_erebor_dungeon_01 = 1247

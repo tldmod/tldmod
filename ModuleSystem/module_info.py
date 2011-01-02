@@ -3,4 +3,4 @@
 # Make sure you use forward slashes (/) and NOT backward slashes (\)
 
 
-export_dir = "../"
+export_dir = "E:/harmony/Modules/TLD2/"

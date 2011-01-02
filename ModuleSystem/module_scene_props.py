@@ -330,6 +330,8 @@ scene_props = [
   ("tunnel_salt",0,"tunnel_salt","bo_tunnel_salt", []),
   ("salt_a",0,"salt_a","bo_salt_a", []),
 
+  
+
   ("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
 
  ("tutorial_door_b",sokf_moveable,"tutorial_door_b","bo_tutorial_door_b", []),
@@ -1880,5 +1882,10 @@ scene_props = [
   ("rohan_palisade_slope",0,"rohan_palisade_b","0",[]),
   ("rohan_house6",0,"rohan_house6","0",[]),
   ("rohan_house7",0,"rohan_house7","0",[]),
+
+# Kolba Erebor dungeon stuff  
+
+  ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
+  ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
 
 ]

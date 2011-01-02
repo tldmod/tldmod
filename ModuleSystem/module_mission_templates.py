@@ -135,6 +135,7 @@ tld_common_battle_scripts = [
 #	cheat_kill_all_on_ctrl_k,  
 	cheat_kill_self_on_ctrl_s,  
 #	cheat_heal_self_on_ctrl_h
+##        common_battle_kill_underwater,
 	]
 
 
@@ -493,6 +494,14 @@ mission_templates = [
       (0, 0, ti_once, [(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],
        [(call_script, "script_select_battle_tactic"),
         (call_script, "script_battle_tactic_init")]),
+
+      #TLD horn blowing begin (Kolba)
+
+      (0, 0, ti_once, [(key_clicked, key_u)], [
+(display_message,"@Aure entuluva!",0x7ccd7c),
+(play_sound, "snd_evil_horn"),
+         ]),
+      #TLD horn blowing end (Kolba)
       
       (5, 0, 0, [(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
 
@@ -500,6 +509,78 @@ mission_templates = [
       common_battle_order_panel_tick,
     ],
   ),
+
+  #TLD - assasins attack begin (Kolba)
+
+  (
+	"assasins_attack",mtf_battle_mode,-1,
+	"assasins",
+	[
+		(0,mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+		(1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
+	],
+        tld_common_battle_scripts+[
+		common_music_situation_update,
+		common_battle_check_friendly_kills,
+		common_battle_victory_display,
+		common_battle_inventory,
+		
+		
+		#if we are going to escape
+		(ti_question_answered,0,0,[],[
+			(store_trigger_param_1,":answer"),
+			(eq,":answer",0),
+			(assign,"$g_battle_result",-1),
+			(jump_to_menu,"mnu_assasins_attack_player_retreat"),#jump to retreat menu
+			(finish_mission,0),
+		]),
+
+		#if player dies
+		(1,4,ti_once,[(main_hero_fallen)],[
+			(assign,"$pin_player_fallen",1),
+			(assign,"$g_battle_result",-1),
+			(set_mission_result,-1),
+			(jump_to_menu,"mnu_assasins_attack_player_defeated"),#jump to defeat menu
+			(finish_mission,0),
+		]),
+		
+		
+		#TAB key
+		#Determines what happens after pressing TAB key
+		(ti_tab_pressed,0,0,[],[
+			(try_begin),#If the battle is won, missions ends.
+				(eq,"$battle_won",1),
+				(jump_to_menu,"mnu_assasins_attack_player_won"),#jump to menu, where player gets message and prize
+				(finish_mission,0),
+			(else_try),#check if there are enemies nearby
+				(call_script, "script_cf_check_enemies_nearby"),
+				(question_box,"str_do_you_want_to_retreat"),
+			(try_end),
+    ]),
+
+		#Victory conditions
+		#checking victory conditions (here it's set to 60 secunds)
+		(1,60,ti_once,[
+			(store_mission_timer_a,reg1),
+			(ge,reg1,10),
+			(all_enemies_defeated,5),
+			(neg|main_hero_fallen,0),
+			#if enemies are defeated and player survives, we continue
+			(set_mission_result,1),
+			(display_message,"str_msg_battle_won"),
+			(assign,"$battle_won",1),
+			(assign,"$g_battle_result",1),
+			(call_script,"script_play_victorious_sound"),
+		],
+		[
+			(jump_to_menu,"mnu_assasins_attack_player_won"),#jump to menu, where player gets message and prize
+			(finish_mission,1),
+		]),
+	],
+),
+
+#Kolba end
+
 
 (
     "village_center",0,-1,
@@ -3410,4 +3491,57 @@ mission_templates = [
     ],
   ),
 
-]
+   (
+    "tld_erebor_dungeon",0,-1,
+    "Default town visit",
+    [(0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+     (1,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+     (2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (4,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+	 ],
+	 [
+##  (ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
+##      (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1),], []),
+  
+##  
+##  (1, 0, ti_once, [], [(tutorial_box,"str_tld_erebor_dungeon"),]),n, 5, "$agent_no_player"),
+##            (entry_point_get_position, 2, 0),   (1, 0, 0, [],
+    
+(ti_before_mission_start, 0, 0, [],[(assign, "$trap_is_active", 1),(assign, "$atak", 0),]),
+
+
+(0, 0, 0, [(eq, "$trap_is_active", 1)],
+[
+(scene_prop_get_instance, ":instance", "spr_spear_trap_1", 0),
+(prop_instance_get_position, pos1, ":instance"),
+(get_player_agent_no, ":agent"),
+(agent_get_position, pos2, ":agent"),
+(get_distance_between_positions, ":dist", pos1, pos2),
+(le, ":dist", 100000),
+(display_message, "str_tld_spear_hit", 0xFFFFAAFF),
+(position_move_z, pos1, 1000),
+(prop_instance_animate_to_position, ":instance", pos1, 100),
+(store_agent_hit_points,":hp",":agent",0),
+(val_sub,":hp",20),
+(agent_set_hit_points,":agent",":hp"),
+(agent_play_sound,":agent","snd_spear_trap"),
+(agent_play_sound,":agent","snd_man_hit_pierce_strong"),
+(try_begin),
+(le, ":hp", 1),
+(agent_deliver_damage_to_agent, ":agent", ":agent"),
+(try_end),
+(assign, "$atak", 1),
+]),
+(1, 3, 0, [(eq, "$atak", 1),],
+[
+(assign, "$atak", 0),
+(scene_prop_get_instance, ":instance", "spr_spear_trap_1", 0),
+(prop_instance_get_position, pos1, ":instance"),
+(position_move_z, pos1, -1000),
+(prop_instance_animate_to_position, ":instance", pos1),
+]),
+]),
+ ]

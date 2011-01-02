@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1246
+ 1248
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3788,5 +3788,11 @@ spr_rohan_house6 0 0 rohan_house6 0 0
 
 
 spr_rohan_house7 0 0 rohan_house7 0 0
+
+
+spr_spear_trap_1 0 0 spear_trap bo_spear_trap 0
+
+
+spr_erebor_dungeon_01 0 0 dungeon_a bo_dungeon_a 0
 
 
