@@ -127,13 +127,13 @@ scenes = [
   ("orc_sentry_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
   ("isengard_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
   ("uruk_hai_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-  ("uruk_hai_h_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+  ("uruk_hai_h_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],[],"outer_terrain_plain"),
   ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("caras_galadhon_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("cerin_dolen_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("cerin_amroth_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("thranduils_halls_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
-  ("woodelf_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],["bonus_chest_3"],"outer_terrain_forest"),#Kolba
+  ("woodelf_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],["bonus_chest_2"],"outer_terrain_plain"),
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],[]),
   ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
@@ -233,11 +233,12 @@ scenes = [
   ("rhun_north_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("gundabad_ne_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("gundabad_nw_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("dol_guldur_north_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("dol_guldur_north_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
 
-  #TLD Dungeons (Kolba)
+  #Kolba stuff
 
   ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
+  ("gundabad_mirkwood_outpost" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 
   ]
 

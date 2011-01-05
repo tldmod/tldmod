@@ -1,5 +1,5 @@
 scenesfile version 1
- 180
+ 181
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -312,7 +312,7 @@ scn_cair_andros_center cair_andros_center 256 none none 0.000000 0.000000 100.00
   0 
   1  814 
  outer_terrain_osgiliath_9 
-scn_edoras_center edoras_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x000007200005004009c795a2000f5200005bd50000739d00 
+scn_edoras_center edoras_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007200005004009c5a200000f5200005bd50000739d 
   0 
   0 
  outer_mountains2south 
@@ -372,10 +372,10 @@ scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0.000000 0.000
   0 
   0 
  outer_terrain_plain 
-scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_plain 
 scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
@@ -396,10 +396,10 @@ scn_thranduils_halls_center thranduils_halls_center 256 none none 0.000000 0.000
   0 
   0 
  outer_terrain_forest 
-scn_woodelf_camp_center woodelf_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_woodelf_camp_center woodelf_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
   0 
-  1  816 
- outer_terrain_forest 
+  1  815 
+ outer_terrain_plain 
 scn_woodsmen_village_center woodsmen_village_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
@@ -712,11 +712,15 @@ scn_gundabad_nw_outpost_center gundabad_nw_outpost_center 256 none none 0.000000
   0 
   0 
  outer_terrain_plain 
-scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_erebor_dungeon_01 erebor_dungeon_01 1 dungeon_a bo_dungeon_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
  0 
+scn_gundabad_mirkwood_outpost gundabad_mirkwood_outpost 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+  0 
+  0 
+ outer_terrain_forest 
