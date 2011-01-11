@@ -84,7 +84,7 @@ bushes04_a 300647713820 3
 bushes05_a 300647712808 1
  PW_bushes05_a_xx 0
 bushes06_a 300647713820 3
- PW_bushes06_a  0
+ PW_bushes06_a_xx  0
  PW_bushes06_b_xx  0
  PW_bushes06_c_xx  0
 bushes07_a 300647716880 3
@@ -136,11 +136,11 @@ pw_fir3 17184065536 1
 pine_4 17184064512 1
  pine_4_a  bo_pine_4_a
 pw_pine_group2 17184065536 1
- PW_pine_4_a  bo_pw_pine_4_a
+ PW_pine_4_a  bo_pw_pine_4_a_cyl
 pine_6 17184064512 1
  pine_6_a  bo_pine_6_a
 pw_pine_group1 17184065536 1
- PW_pine_6_a  bo_pine_6_a
+ PW_pine_6_a  bo_pine_6_a_cyl
 snowy_pine 21479030784 1
  PW_tree_snowy_a  bo_pw_tree_snowy_a
 snowy_pine_2 21479030784 1
@@ -159,8 +159,8 @@ tree_2 51543801856 2
  tree_2_a  bo_tree_2_a
  tree_2_b  bo_tree_2_b
 pw_fir_shibby 51543805952 2
- PW_tree_2_a  bo_pw_tree_2_a
- PW_tree_2_b  bo_pw_tree_2_b
+ PW_tree_2_a  bo_pw_tree_2_a_cyl
+ PW_tree_2_b  bo_pw_tree_2_b_cyl
 tree_3 21479096320 2
  tree_3_a bo_tree_3_a
  tree_3_b bo_tree_3_b
@@ -171,18 +171,18 @@ tree_4 17184064516 2
  tree_4_a  bo_tree_4_a
  tree_4_b  bo_tree_4_b
 pw_birch_yellow 17184065548 2
- PW_tree_4_a  bo_pw_tree_4_a
- PW_tree_4_b  bo_pw_tree_4_b
+ PW_tree_4_a  bo_pw_tree_4_a_cyl
+ PW_tree_4_b  bo_pw_tree_4_b_cyl
 tree_5 300647711744 4
  tree_5_a  bo_tree_5_a
  tree_5_b  bo_tree_5_b
  tree_5_c  bo_tree_5_c
  tree_5_d  bo_tree_5_d
 pw_birch_green 300647712768 5
- PW_tree_5_a  bo_pw_tree_5_a
- PW_tree_5_b  bo_pw_tree_5_b
- PW_tree_5_c  bo_pw_tree_5_c
- PW_tree_5_d  bo_pw_tree_5_d
+ PW_tree_5_a  bo_pw_tree_5_a_cyl
+ PW_tree_5_b  bo_pw_tree_5_b_cyl
+ PW_tree_5_c  bo_pw_tree_5_c_cyl
+ PW_tree_5_d  bo_pw_tree_5_d_cyl
  PW_tree_5_a_yellow  bo_pw_tree_5_a
 tree_6 17184063488 4
  tree_6_a  bo_tree_6_a
@@ -247,23 +247,23 @@ tree_14 25769803780 3
  tree_14_b  bo_tree_14_b
  tree_14_c  bo_tree_14_c
 pw_tall_leaf 25769803776 3
- PW_tree_14_a  bo_pw_tree_14_a
- PW_tree_14_b  bo_pw_tree_14_b
- PW_tree_14_c  bo_pw_tree_14_c
+ PW_tree_14_a  bo_pw_tree_14_a_cyl
+ PW_tree_14_b  bo_pw_tree_14_b_cyl
+ PW_tree_14_c  bo_pw_tree_14_c_cyl
 tree_15 300647710720 3
  tree_15_a  bo_tree_15_a
  tree_15_b  bo_tree_15_b
  tree_15_c  bo_tree_15_c
 pw_leaf_yellow2 300647712768 3
- PW_tree_15_a  bo_pw_tree_15_a
- PW_tree_15_b  bo_pw_tree_15_b
- PW_tree_15_c  bo_pw_tree_15_c
+ PW_tree_15_a  bo_pw_tree_15_a_cyl
+ PW_tree_15_b  bo_pw_tree_15_b_cyl
+ PW_tree_15_c  bo_pw_tree_15_c_cyl
 tree_16 163208758272 2
  tree_16_a bo_tree_16_a
  tree_16_b bo_tree_16_b
 pw_pine_small_group 163208769536 2
- PW_tree_16_a  bo_pw_tree_16_a
- PW_tree_16_b  bo_pw_tree_16_b
+ PW_tree_16_a  bo_pw_tree_16_a_cyl
+ PW_tree_16_b  bo_pw_tree_16_b_cyl
 tree_17 17184064512 4
  tree_17_a  bo_tree_17_a
  tree_17_b  bo_tree_17_b
@@ -278,8 +278,8 @@ tree_plane 17184064512 2
  tree_18_a  bo_tree_18_a
  tree_18_b  bo_tree_18_b
 pw_birch_yellow_group 17184073728 2
- PW_tree_18_a  bo_pw_tree_18_a
- PW_tree_18_b  bo_pw_tree_18_b
+ PW_tree_18_a  bo_pw_tree_18_a_cyl
+ PW_tree_18_b  bo_pw_tree_18_b_cyl
 tree_19 17184064512 1
  tree_19_a bo_tree_19_a
 pw_snow_bushes 17184063488 1
@@ -293,7 +293,7 @@ pw_leaf_yellow2_group 12889098240 2
 tall_tree 17184064512 1
  tall_tree_a  bo_tall_tree_a
 pw_pine_group3 17184065536 1
- PW_tall_tree_a  bo_pw_tall_tree_a
+ PW_tall_tree_a  bo_pw_tall_tree_a_cyl
 tree_e 17184064512 3
  tree_e_1  bo_tree_e_1
  tree_e_2  bo_tree_e_2
@@ -329,19 +329,19 @@ zl_fir_tall 21479034880 3
  PL_fur_tall2 0
  PL_fur_tall3 0
 zl_fir_shubby 21479034880 5
- PW_tree_2_a bo_pw_tree_2_a
- PW_tree_2_b bo_pw_tree_2_b
+ PW_tree_2_a bo_pw_tree_2_a_cyl
+ PW_tree_2_b bo_pw_tree_2_b_cyl
  PW_tree_e_1 bo_pw_tree_e_1
  PW_tree_e_2 bo_pw_tree_e_2
  PW_tree_e_3 bo_pw_tree_e_3
 zl_birch_yellow 0 2
- PW_tree_4_a bo_pw_tree_4_a
- PW_tree_4_b bo_pw_tree_4_b
+ PW_tree_4_a bo_pw_tree_4_a_cyl
+ PW_tree_4_b bo_pw_tree_4_b_cyl
 zl_birch_green 0 4
- PW_tree_5_a bo_pw_tree_5_a
- PW_tree_5_b bo_pw_tree_5_b
- PW_tree_5_c bo_pw_tree_5_c
- PW_tree_5_d bo_pw_tree_5_d
+ PW_tree_5_a bo_pw_tree_5_a_cyl
+ PW_tree_5_b bo_pw_tree_5_b_cyl
+ PW_tree_5_c bo_pw_tree_5_c_cyl
+ PW_tree_5_d bo_pw_tree_5_d_cyl
 zl_fir_shubby_group 0 4
  PW_tree_6_a bo_pw_tree_6_a
  PW_tree_6_b bo_pw_tree_6_b
@@ -368,24 +368,24 @@ zl_tree_12 17184074752 3
  PW_tree_12_b_xx bo_pw_tree_12_b
  PW_tree_12_c_xx bo_pw_tree_12_c
 zl_birch_tall 0 3
- PW_tree_14_a bo_pw_tree_14_a
- PW_tree_14_b bo_pw_tree_14_b
- PW_tree_14_c bo_pw_tree_14_c
+ PW_tree_14_a bo_pw_tree_14_a_cyl
+ PW_tree_14_b bo_pw_tree_14_b_cyl
+ PW_tree_14_c bo_pw_tree_14_c_cyl
 zl_tree_15 17184074752 3
- PW_tree_15_a bo_pw_tree_15_a
- PW_tree_15_b bo_pw_tree_15_b
- PW_tree_15_c bo_pw_tree_15_c
+ PW_tree_15_a bo_pw_tree_15_a_cyl
+ PW_tree_15_b bo_pw_tree_15_b_cyl
+ PW_tree_15_c bo_pw_tree_15_c_cyl
 zl_tree_16 17184074752 2
- PW_tree_16_a bo_pw_tree_16_a
- PW_tree_16_b bo_pw_tree_16_b
+ PW_tree_16_a bo_pw_tree_16_a_cyl
+ PW_tree_16_b bo_pw_tree_16_b_cyl
 zl_birch_green_group 0 4
  PW_tree_17_a bo_pw_tree_17_a
  PW_tree_17_b bo_pw_tree_17_b
  PW_tree_17_c bo_pw_tree_17_c
  PW_tree_17_d bo_pw_tree_17_d
 zl_birch_yellow_group 0 2
- PW_tree_18_a bo_pw_tree_18_a
- PW_tree_18_b bo_pw_tree_18_b
+ PW_tree_18_a bo_pw_tree_18_a_cyl
+ PW_tree_18_b bo_pw_tree_18_b_cyl
 zl_aspen_yellow 0 3
  PW_tree_f_1 bo_pw_tree_f_1
  PW_tree_f_2 bo_pw_tree_f_2
@@ -410,8 +410,8 @@ zl_bush_08 0 3
  PW_bushes08_c_xx 0
 zl_fir_bush 146028892160 3
  PW_bushes09_a 0
- PW_bushes09_a 0
- PW_bushes09_a 0
+ PW_bushes09_b 0
+ PW_bushes09_c 0
 zl_birch_green_bush 0 3
  PW_bushes10_a 0
  PW_bushes10_b 0
@@ -425,9 +425,9 @@ zl_bush_steppe_wheat 0 3
  PW_bushes12_b_xx 0
  PW_bushes12_c_xx 0
 zl_pink_tree 17184066560 3
- PW_tall_tree_a bo_pw_tall_tree_a
- PW_pine_4_a bo_pw_pine_4_a
- PW_pine_6_a bo_pw_pine_6_a
+ PW_tall_tree_a bo_pw_tall_tree_a_cyl
+ PW_pine_4_a bo_pw_pine_4_a_cyl
+ PW_pine_6_a bo_pw_pine_6_a_cyl
 zl_rockformation 0 3
  PW_rock_c bo_pw_rock_c
  PW_rock_e bo_pw_rock_e
