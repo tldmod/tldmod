@@ -1766,7 +1766,7 @@ scene_props = [
   ("ZT_pl_willow_b1", 0, "PW_bushes02_a", "bo_pw_bushes02_a", []), ("ZT_pl_willow_b2", 0, "PW_bushes02_b", "bo_pw_bushes02_a", []), ("ZT_pl_willow_b3", 0, "PW_bushes02_c", "bo_pw_bushes02_a", []), 
 
   ("ZT_pl_shalebush1", 0, "PW_bushes11_a", "0", []), ("ZT_pl_shalebush2", 0, "PW_bushes11_b", "0", []), ("ZT_pl_shalebush3", 0, "PW_bushes11_c", "0", []), 
-  ("ZT_pl_fern1", 0, "PW_fern_a", "0", []), ("ZT_pl_fern2", 0, "PW_fern_b", "0", []), 
+  ("ZT_pl_fern1", 0, "PW_fern_a_xx", "0", []), ("ZT_pl_fern2", 0, "PW_fern_b_xx", "0", []), 
 
 
 #  ("test_vertex_paint_prop", 0, "test_vp_color", "0", []),

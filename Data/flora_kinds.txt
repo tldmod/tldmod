@@ -140,7 +140,7 @@ pw_pine_group2 17184065536 1
 pine_6 17184064512 1
  pine_6_a  bo_pine_6_a
 pw_pine_group1 17184065536 1
- PW_pine_6_a  bo_pine_6_a_cyl
+ PW_pine_6_a  bo_pw_pine_6_a_cyl
 snowy_pine 21479030784 1
  PW_tree_snowy_a  bo_pw_tree_snowy_a
 snowy_pine_2 21479030784 1
@@ -154,7 +154,7 @@ rock_snowy 21476999168 3
  PW_rock_snowy_b  bo_pw_rock_snowy_b
  PW_rock_snowy_c  bo_pw_rock_snowy_c
 tree_1 25769804800 1
- PW_tree_9_a 0
+ PW_tree_9_a_xx 0
 tree_2 51543801856 2
  tree_2_a  bo_tree_2_a
  tree_2_b  bo_tree_2_b
@@ -323,7 +323,7 @@ zl_fir 21479034880 4
  PL_fur1 0
  PL_fur2 0
  PL_fur3 0
- PW_pine_3_a bo_pw_pine_3_a
+ PW_pine_3_a_xx bo_pw_pine_3_a
 zl_fir_tall 21479034880 3
  PL_fur_tall1 0
  PL_fur_tall2 0
@@ -464,7 +464,7 @@ zl_fir_tall_hs 21479034880 4
  PW_rock_d bo_pw_rock_d
  PW_rock_f bo_pw_rock_f
  PW_rock_i bo_pw_rock_i
- PW_pine_1_a_single bo_pw_rock_f
+ PW_pine_1_a_xx bo_pw_rock_f
 zl_fir_shubby_single 21479030800 4
  PW_tree_2_a_single1 bo_pw_tree_2_a_single1
  PW_tree_2_a_single2 0
