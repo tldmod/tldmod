@@ -63,7 +63,7 @@ footman_gondor 0 footman_gondor 0.150000 17 0.150000 0.173000 0.000000 0
 harad_horseman 0 harad_horseman 0.150000 111 0.150000 0.173000 0.000000 0
 
 
-harad_horseman_x3 0 harad_horseman 0.150000 111 0.150000 0.173000 0.000000 0
+harad_horseman_x3 0 harad_horseman_x3 0.150000 111 0.150000 0.173000 0.000000 0
 
 
 isengard_captain 0 isengard_captain 0.150000 111 0.150000 0.173000 0.000000 0
@@ -709,4 +709,5 @@ map_str_082 1 map_str_082 1.000000 0 0 0 0 0
 
 
 map_str_083 1 map_str_083 1.000000 0 0 0 0 0
+
 
