@@ -151,12 +151,12 @@ scenes = [
   ("ironhill_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 
 ### GA stub scenes
-  ("gondor_castle"      ,sf_indoors, "interior_castle_v", "bo_interior_castle_v", (-100,-100),(100,100),-100,"0",["exit"],["town_7_seneschal"]),
+  ("gondor_castle"      ,sf_indoors, "interior_castle_v", "bo_interior_castle_v", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("minas_tirith_castle",sf_indoors|sf_force_skybox, "throne_room", "bo_throne_room", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["town_2_seneschal"]),
-  ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],["town_3_seneschal"]),
-  ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],["town_4_seneschal"]),
-  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_interior_castle_z", (-100,-100),(100,100),-100,"0",["exit"],["town_6_seneschal"]),
+  ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_interior_castle_z", (-100,-100),(100,100),-100,"0",["exit"],[]),
 
   ("gondor_tavern" ,sf_indoors, "interior_tavern_f"    ,"bo_interior_tavern_f"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("rohan_tavern"  ,sf_indoors, "interior_tavern_g"    ,"bo_interior_tavern_g"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
@@ -181,7 +181,7 @@ scenes = [
 
 #       1 Steppe
   ("castle_1_exterior",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b", [],[],"outer_terrain_steppe"),
-  ("castle_1_interior",sf_indoors, "dungeon_entry_a", "bo_dungeon_entry_a", (-100,-100),(100,100),-100,"0",  ["exit"],["castle_1_seneschal"]),
+  ("castle_1_interior",sf_indoors, "dungeon_entry_a", "bo_dungeon_entry_a", (-100,-100),(100,100),-100,"0",  ["exit"],[]),
   ("castle_1_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0", [],[]),
 
 #!!Villages !!#

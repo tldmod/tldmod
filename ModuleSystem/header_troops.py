@@ -27,7 +27,7 @@ tf_elf_begin    = 12
 tf_lothlorien	= 12
 tf_rivendell	= 13
 tf_mirkwood		= 14
-tf_elf_end    = 15
+tf_elf_end      = 15
 tf_easterling	= 15  
 tf_khand    	= 15
 tf_rhun     	= 15
@@ -44,13 +44,13 @@ tf_mounted           = 0x00000400 #Troop's movement speed on map is determined b
 tf_is_merchant       = 0x00001000 #When set, troop does not equip stuff he owns
 tf_randomize_face    = 0x00008000 #randomize face at the beginning of the game.
 
-tf_guarantee_boots            = 0x00100000
-tf_guarantee_armor            = 0x00200000
-tf_guarantee_helmet           = 0x00400000
-tf_guarantee_gloves           = 0x00800000
-tf_guarantee_horse            = 0x01000000
-tf_guarantee_shield           = 0x02000000
-tf_guarantee_ranged           = 0x04000000
+tfg_boots            = 0x00100000 #guarantees, shortened by GA
+tfg_armor            = 0x00200000
+tfg_helm             = 0x00400000
+tfg_gloves           = 0x00800000
+tfg_horse            = 0x01000000
+tfg_shield           = 0x02000000
+tfg_ranged           = 0x04000000
 tf_unmoveable_in_party_window = 0x10000000
 
 # Character attributes...

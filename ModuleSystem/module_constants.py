@@ -1023,13 +1023,13 @@ weapon_merchants_begin = "trp_smith_mtirith"
 weapon_merchants_end   = "trp_barman_mtirith"
 
 tavernkeepers_begin    = "trp_barman_mtirith"
-tavernkeepers_end      = "trp_town_1_merchant"
+tavernkeepers_end      = "trp_town_1_horse_merchant"
 
 goods_merchants_begin  = "trp_town_1_horse_merchant"
-goods_merchants_end    = "trp_town_1_mayor"
+goods_merchants_end    = "trp_village_1_elder"
 
 horse_merchants_begin  = "trp_town_1_horse_merchant"
-horse_merchants_end    = "trp_town_1_mayor"
+horse_merchants_end    = "trp_village_1_elder"
 
 mayors_begin           = "trp_elder"
 mayors_end             = "trp_gear_merchant"
