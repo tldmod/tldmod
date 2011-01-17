@@ -210,7 +210,7 @@ sounds = [
 #tf_rohan		= 3
  ("rohan_yell",sf_priority_6|sf_vol_8, ["rohan_yell_1.mp3","rohan_yell_2.mp3","rohan_yell_3.mp3","rohan_yell_4.mp3","rohan_yell_5.mp3","rohan_yell_6.mp3","rohan_yell_7.mp3","rohan_yell_8.mp3","rohan_yell_9.mp3","rohan_yell_10.mp3","rohan_yell_11.mp3","rohan_yell_12.mp3","rohan_yell_13.mp3","rohan_yell_14.mp3"]),
  ("rohan_victory",sf_priority_5|sf_vol_10, ["rohan_victory_1.mp3","rohan_victory_2.mp3","rohan_victory_3.mp3","rohan_victory_4.mp3"]),
-#tf_dunlander	= 4
+#tf_dunland	= 4
  ("dunlender_yell",sf_priority_6|sf_vol_8, ["dun_yell_1.mp3","dun_yell_2.mp3","dun_yell_3.mp3","dun_yell_4.mp3","dun_yell_5.mp3","dun_yell_6.mp3","dun_yell_7.mp3","dun_yell_8.mp3","dun_yell_9.mp3","dun_yell_10.mp3","dun_yell_11.mp3","dun_yell_12.mp3","dun_yell_13.mp3","dun_yell_14.mp3","dun_yell_15.mp3","dun_yell_16.mp3","dun_yell_17.mp3","dun_yell_18.mp3","dun_yell_19.mp3","dun_yell_20.mp3","dun_yell_21.mp3","dun_yell_22.mp3","dun_yell_23.mp3","dun_yell_24.mp3"]),
  ("dunlender_victory",sf_priority_5|sf_vol_10, ["dun_victory_1.mp3","dun_victory_2.mp3","rohan_victory_3.mp3","dun_victory_4.mp3","dun_victory_5.mp3","dun_victory_6.mp3","dun_victory_7.mp3","dun_victory_8.mp3","dun_victory_9.mp3"]),
 
@@ -223,7 +223,7 @@ sounds = [
  ("orc_yell",sf_priority_6|sf_vol_8, ["orc_yell_1.mp3","orc_yell_2.mp3"]), 
  ("orc_victory",sf_priority_5|sf_vol_10, ["orc_victory_1.mp3","orc_victory_2.mp3","orc_victory_3.mp3","orc_victory_4.mp3","orc_victory_5.mp3","orc_victory_6.mp3"]), 
  #tf_uruk			= 6 #(Uruks, Uruk Hai)
-#tf_haradrim	= 7
+#tf_harad	= 7
  ("haradrim_yell",sf_priority_6|sf_vol_8, ["har_yell_1.mp3.mp3","har_yell_2.mp3","har_yell_3.mp3","har_yell_4.mp3","har_yell_5.mp3","har_yell_6.mp3","har_yell_7.mp3","har_yell_8.mp3","har_yell_9.mp3","har_yell_10.mp3"]),
  ("haradrim_victory",sf_priority_5|sf_vol_10, ["haradrim_victory_1.mp3","haradrim_victory_2.mp3","haradrim_victory_3.mp3","haradrim_victory_4.mp3","haradrim_victory_5.mp3"]),
  ("haradrim_die",sf_priority_10,  ["wilhelm.ogg","man_death_8.ogg","man_death_8b.ogg","man_death_11.ogg","man_death_14.ogg","man_death_16.ogg","man_death_18.ogg","man_death_21.ogg","man_death_29.ogg","man_death_40.ogg","man_death_44.ogg","man_death_46.ogg","man_death_48.ogg","man_death_64.ogg"]),# ["man_fall_1.ogg","man_fall_2.ogg","man_fall_3.ogg","man_fall_4.ogg"]),
@@ -240,13 +240,13 @@ sounds = [
 #tf_dunedain		= 11
  ("dunedain_yell",sf_priority_6|sf_vol_8, ["dunedain_yell_1.mp3","dunedain_yell_2.mp3","dunedain_yell_3.mp3","dunedain_yell_4.mp3","dunedain_yell_5.mp3","dunedain_yell_6.mp3","dunedain_yell_7.mp3","dunedain_yell_8.mp3","dunedain_yell_9.mp3","dunedain_yell_10.mp3"]),
  ("dunedain_victory",sf_priority_5|sf_vol_10, ["dunedain_victory_1.mp3","dunedain_victory_2.mp3","dunedain_victory_3.mp3"]),
-#tf_lothlorien	= 12
+#tf_lorien	= 12
  ("lothlorien_yell",sf_priority_6|sf_vol_8, ["elf_lothlorien_yell_1.mp3","elf_lothlorien_yell_2.mp3","elf_lothlorien_yell_3.mp3","elf_basic_yell_1.mp3","elf_basic_yell_2.mp3","elf_basic_yell_3.mp3","elf_basic_yell_4.mp3","elf_basic_yell_5.mp3","elf_basic_yell_6.mp3","elf_basic_yell_7.mp3","elf_basic_yell_8.mp3","elf_basic_yell_9.mp3","elf_basic_yell_10.mp3"]),
  ("lothlorien_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.mp3","elf_basic_victory_2.mp3","elf_basic_victory_3.mp3","elf_basic_victory_4.mp3","elf_basic_victory_5.mp3"]),  
-#tf_rivendell	= 13
+#tf_imladris	= 13
  ("rivendell_yell",sf_priority_6|sf_vol_8, ["elf_rivendell_yell_1.mp3","elf_rivendell_yell_2.mp3","elf_basic_yell_1.mp3","elf_basic_yell_2.mp3","elf_basic_yell_3.mp3","elf_basic_yell_4.mp3","elf_basic_yell_5.mp3","elf_basic_yell_6.mp3","elf_basic_yell_7.mp3","elf_basic_yell_8.mp3","elf_basic_yell_9.mp3","elf_basic_yell_10.mp3"]),
  ("rivendell_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.mp3","elf_basic_victory_2.mp3","elf_basic_victory_3.mp3","elf_basic_victory_4.mp3","elf_basic_victory_5.mp3"]),  
- #tf_mirkwood		= 14
+ #tf_woodelf		= 14
  ("mirkwood_yell",sf_priority_6|sf_vol_8, ["elf_mirkwood_yell_1.mp3","elf_mirkwood_yell_2.mp3","elf_basic_yell_1.mp3","elf_basic_yell_2.mp3","elf_basic_yell_3.mp3","elf_basic_yell_4.mp3","elf_basic_yell_5.mp3","elf_basic_yell_6.mp3","elf_basic_yell_7.mp3","elf_basic_yell_8.mp3","elf_basic_yell_9.mp3","elf_basic_yell_10.mp3"]),
  ("mirkwood_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.mp3","elf_basic_victory_2.mp3","elf_basic_victory_3.mp3","elf_basic_victory_4.mp3","elf_basic_victory_5.mp3"]),  
 #tf_evil_male	= 15

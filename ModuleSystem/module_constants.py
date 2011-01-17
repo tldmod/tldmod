@@ -1480,9 +1480,6 @@ center_list = [
 	("p_town_esgaroth", ["scn_esgaroth_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_esgaroth", "trp_town_39_weaponsmith", "trp_town_39_horse_merchant", "trp_elder", "pt_dale_reinf_a", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_archer"], 
 		["icon_mfc_dale"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
-#	("p_town_dale_town", ["scn_dale_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
-#	    ["trp_barman_dale", "trp_town_38_weaponsmith", "trp_town_38_horse_merchant", "trp_elder", "pt_dale_reinf_a", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_bowmen"], 
-#		["icon_mfc_dale"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 
 	("p_town_dunland_camp", ["scn_dunland_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_41_weaponsmith", "trp_town_41_horse_merchant", "trp_elder", "pt_dunland_reinf_a", "trp_dunland_lord", "trp_dunnish_wildman","trp_dunnish_warrior", "trp_dunnish_pikeman", "trp_dunnish_wolf_guard"], 
@@ -1535,9 +1532,6 @@ center_list = [
 	("p_town_erebor", ["scn_erebor_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_erebor", "trp_town_40_weaponsmith", "trp_town_40_horse_merchant", "trp_elder", "pt_dwarf_reinf_a", "trp_dwarf_lord", "trp_dwarven_apprentice", "trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_miner"], 
 		["icon_mfc_dwarf"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
-#	("p_town_erebor_mining_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1],
-#	    [-1, "trp_town_49_weaponsmith", "trp_town_49_horse_merchant", "trp_elder", "pt_dwarf_reinf_a", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
-#		["icon_mfc_dwarf"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_49_weaponsmith", "trp_town_49_horse_merchant", "trp_elder", "pt_dwarf_reinf_a", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
 		["icon_mfc_dwarf"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
@@ -1612,15 +1606,12 @@ cheat_switch = 1
 
 # titles for one's own starting faction
 
-# titles for one's own starting faction
-
 #########################################################
 # TLD faction ranks
 #
 # Each faction with a list (enclosed in []) of ranks, each rank with (status points for rank, salary, list of positions in [])
 # Each position with (position name, list of troops[], list of items[], list of supplies[], condition script, renew troops cost, position description)
 # sort them in descend order of renown/influence value
-
 
 tld_faction_ranks = [
 #fac_gondor = 3
@@ -1723,14 +1714,12 @@ faction_strings =[    #shop rumors begin          shop rumors end
 ## tableau meshes list for factions
 fac_tableau_list = [
 #fac_gondor = 3
-[
-("tableau_tld_tunic", ["mesh_tableau_mesh_gondor_tunic_a", "mesh_tableau_mesh_gondor_tunic_b"]),
+[ ("tableau_tld_tunic", ["mesh_tableau_mesh_gondor_tunic_a", "mesh_tableau_mesh_gondor_tunic_b"]),
 ],
 #fac_dwarf = 4
 [],
 #fac_rohan = 5
-[
-("tableau_tld_tunic", ["mesh_tableau_mesh_rohan_tunic"]),
+[ ("tableau_tld_tunic", ["mesh_tableau_mesh_rohan_tunic"]),
 ],
 #fac_mordor = 6
 [],
@@ -1743,8 +1732,7 @@ fac_tableau_list = [
 #fac_woodelf = 10
 [],
 #fac_dale = 11
-[
-("tableau_tld_tunic", ["mesh_tableau_mesh_dale_tunic"]),
+[ ("tableau_tld_tunic", ["mesh_tableau_mesh_dale_tunic"]),
 ],
 #fac_harad = 12
 [],
@@ -1763,8 +1751,7 @@ fac_tableau_list = [
 #fac_dunland = 19
 [],
 #fac_northmen = 20
-[
-("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
+[ ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
 ],
 #fac_beorn = 21
 [],

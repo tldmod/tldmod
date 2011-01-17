@@ -1,5 +1,5 @@
 itemsfile version 2
-877
+874
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -359,9 +359,6 @@ itemsfile version 2
  itm_javelin Javelin Javelin 2  javelin 0  javelins_quiver 3458764513820540928  71368714 35970613248 75 0 5.000000 100 0 0 0 1 0 91 28 75 3 284 0
 0
 
- itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 35970613248 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
-0
-
  itm_throwing_knives Throwing_Knives Throwing_Knives 1  throwing_knife 0  4259850 131072 76 0 3.500000 100 0 0 0 0 0 121 25 0 15 19 0
 0
 
@@ -620,7 +617,7 @@ itemsfile version 2
  itm_gondor_lamedon_leader_helm Lamedon_High_Helmet Lamedon_High_Helmet 1  gondor_lamedon_leader_helm 0  65548 0 910 0 2.500000 100 50 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_gondor_courser Gondor_Courser Gondor_Courser 1  gondor_horse02 0  65537 0 323 110595670016 0.000000 70 0 16 0 2 0 37 43 0 0 11 0
+ itm_gondor_courser Gondor_Courser Gondor_Courser 1  gondor_horse02 0  65537 0 323 110595670016 0.000000 70 0 16 0 2 90 37 43 0 0 11 0
 0
 
  itm_gondor_hunter Gondor_Hunter Gondor_Hunter 1  gondor_horse01 0  65537 0 434 110595670016 0.000000 60 0 29 0 3 130 36 40 0 0 18 0
@@ -629,7 +626,7 @@ itemsfile version 2
  itm_dol_amroth_warhorse Dol_Amroth_Warhorse Dol_Amroth_Warhorse 1  da_warhorse02 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 33 35 0 0 25 0
 0
 
- itm_dol_amroth_warhorse2 Dol_Amroth_Haeavy_Warhorse Dol_Amroth_Haeavy_Warhorse 1  da_warhorse01 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 33 35 0 0 25 0
+ itm_dol_amroth_warhorse2 Dol_Amroth_Heavy_Warhorse Dol_Amroth_Heavy_Warhorse 1  da_warhorse01 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 33 35 0 0 25 0
 0
 
  itm_gondor_warhorse Warhorse Warhorse 1  gondor_warhorse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
@@ -1745,9 +1742,6 @@ itemsfile version 2
  itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 500 0 25.000000 100 0 52 16 8 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_leather_greaves mirkwood_leather_greaves mirkwood_leather_greaves 1  lthr_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
-0
-
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  4554756 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 101 0 148 0 283 532
 0
 
@@ -1791,6 +1785,9 @@ itemsfile version 2
 0
 
  itm_mirkwood_boots Mirkwood_boots Mirkwood_boots 1  mirkwood_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
+0
+
+ itm_mirkwood_leather_greaves Mirkwood_Leather_Greaves Mirkwood_Leather_Greaves 1  lthr_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
  itm_harad_armor_b Harondor_Hauberk Harondor_Hauberk 1  harad_hauberk 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
@@ -2430,12 +2427,6 @@ itemsfile version 2
 0
 
  itm_northm_armor_b Northman_Armor Northman_Armor 1  leather_jerkin 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
-0
-
- itm_northm_armor_c Northman_Armor Northman_Armor 1  padded_leather 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
-0
-
- itm_northm_armor_d Northman_Armor Northman_Armor 1  light_leather 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
 0
 
  itm_beorning_armor_a Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftan 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0

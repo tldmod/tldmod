@@ -13,20 +13,20 @@ tf_male         = 0	# (Dale/Northmen/corsair/bandits)
 tf_female       = 1	# all factions
 tf_gondor		= 2
 tf_rohan		= 3
-tf_dunlander	= 4
+tf_dunland	= 4
 tf_orc_begin    = 5
 tf_orc			= 5 #(orcs, goblins)
 tf_uruk			= 6 
 tf_urukhai		= 7 
 tf_orc_end      = 8
-tf_haradrim		= 8
+tf_harad		= 8
 tf_dwarf		= 9
 tf_troll		= 10
 tf_dunedain		= 11
 tf_elf_begin    = 12
-tf_lothlorien	= 12
-tf_rivendell	= 13
-tf_mirkwood		= 14
+tf_lorien	= 12
+tf_imladris	= 13
+tf_woodelf		= 14
 tf_elf_end      = 15
 tf_easterling	= 15  
 tf_khand    	= 15
@@ -352,7 +352,7 @@ Penalties_sys = [
         (wpt_firearm, 30),
         ]
     ),
-    (tf_dunlander, [
+    (tf_dunland, [
         ], [
         (wpt_archery, 30),
         (wpt_crossbow, 30),
@@ -402,7 +402,7 @@ Penalties_sys = [
         #(wpt_firearm, -20),
         ]
     ),
-    (tf_haradrim, [
+    (tf_harad, [
         ], [
         (wpt_archery, 30),
         (wpt_crossbow, 30),
@@ -441,7 +441,7 @@ Penalties_sys = [
         (wpt_firearm, 30),
         ]
     ),
-    (tf_lothlorien, [
+    (tf_lorien, [
         ], [
         (wpt_archery, 15),
         (wpt_crossbow, 15),
@@ -449,7 +449,7 @@ Penalties_sys = [
         (wpt_firearm, 15),
         ]
     ),
-    (tf_rivendell, [
+    (tf_imladris, [
         ], [
         (wpt_archery, 15),
         (wpt_crossbow, 15),
@@ -457,7 +457,7 @@ Penalties_sys = [
         (wpt_firearm, 15),
         ]
     ),
-    (tf_mirkwood, [
+    (tf_woodelf, [
         ], [
         (wpt_archery, 15),
         (wpt_crossbow, 15),
