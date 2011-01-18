@@ -139,7 +139,7 @@ scenes = [
   ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],[],"outer_terrain_plain"),
   ("esgaroth_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000830000500800d2348000000ed80006743000048b5",[],[],"outer_terrain_seaside_1"),
-  ("erebor_center"          ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720008a110002589600006af30000356b00002c27",[],[],"outer_mountains2north"),
+  ("erebor_center"          ,sf_indoors ,"hallfini", "bo_hallfini",(-100,-200),(100,200),-100,"0",[],[]),
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["bonus_chest_3"],"outer_terrain_plain"),
   ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
   ("khand_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
@@ -239,6 +239,8 @@ scenes = [
 
   ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
   ("gundabad_mirkwood_outpost" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+
+  ("thranduil_hall_room"   ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_interior_castle_gondor_c", (-100,-100),(100,100),-100,"0",[],[]),
 
   ]
 

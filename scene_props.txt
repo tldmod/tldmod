@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1248
+ 1259
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3794,5 +3794,40 @@ spr_spear_trap_1 0 0 spear_trap bo_spear_trap 0
 
 
 spr_erebor_dungeon_01 0 0 dungeon_a bo_dungeon_a 0
+
+
+spr_erebor 0 0 hallfini bo_hallfini 1
+-40.000000  1 1798 2 110 65793 
+
+
+spr_thranduil_hall 0 0 thranduil_hall 0 1
+-40.000000  1 1798 2 210 86096 
+
+
+spr_thranduil_helm1 0 0 statuemirk_helm1 0 0
+
+
+spr_thranduil_helm2 0 0 statuemirk_helm2 0 0
+
+
+spr_thranduil_helm3 0 0 statuemirk_helm3 0 0
+
+
+spr_thranduil_bow 0 0 statuemirk_bow 0 0
+
+
+spr_thranduil_longsword 0 0 statuemirk_longsword 0 0
+
+
+spr_thranduil_whiteknife 0 0 statuemirk_white_knife 0 0
+
+
+spr_thranduil_greatspear 0 0 statuemirk_great_spear 0 0
+
+
+spr_thranduil_warspear 0 0 statuemirk_war_spear 0 0
+
+
+spr_thranduil_medshield 0 0 statuemirk_med_shield 0 0
 
 

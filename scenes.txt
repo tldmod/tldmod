@@ -1,5 +1,5 @@
 scenesfile version 1
- 181
+ 182
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -420,10 +420,10 @@ scn_esgaroth_center esgaroth_center 256 none none 0.000000 0.000000 200.000000 2
   0 
   0 
  outer_terrain_seaside_1 
-scn_erebor_center erebor_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000720008a110002589600006af30000356b00002c27 
+scn_erebor_center erebor_center 1 hallfini bo_hallfini -100.000000 -200.000000 100.000000 200.000000 -100.000000 0 
   0 
   0 
- outer_mountains2north 
+ 0 
 scn_dunland_camp_center dunland_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
   1  713 
@@ -724,3 +724,7 @@ scn_gundabad_mirkwood_outpost gundabad_mirkwood_outpost 256 none none 0.000000 0
   0 
   0 
  outer_terrain_forest 
+scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_interior_castle_gondor_c -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 
