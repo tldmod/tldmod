@@ -1899,4 +1899,23 @@ scene_props = [
   ("thranduil_warspear",0,"statuemirk_war_spear","0",[]),
   ("thranduil_medshield",0,"statuemirk_med_shield","0",[]),
 
+  ("door_erebor",sokf_destructible|spr_hit_points(5001),"door_a","bo_door_a",   [
+   (ti_on_scene_prop_destroy,
+    [(store_trigger_param_1, ":instance_no"),
+	(prop_instance_get_starting_position, pos1, ":instance_no"),
+    (position_move_x, pos1, -100),
+    (position_move_y, pos1, 50),
+    (position_rotate_z, pos1, 130),
+    (prop_instance_animate_to_position, ":instance_no", pos1, 600), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+	(display_message,"@Secret place discovered!"),
+    (try_for_agents, ":cur_agent"),
+      (agent_get_troop_id, ":cur_agent_troop", ":cur_agent"),
+      (this_or_next|eq, ":cur_agent_troop", "trp_goblin_gundabad"),
+      (this_or_next|eq, ":cur_agent_troop", "trp_fell_orc_warrior_gundabad"),
+      (eq, ":cur_agent_troop", "trp_orc_fighter_gundabad"),
+      (agent_set_team, ":cur_agent", 1),
+    (try_end),]),
+  ]),
+
 ]

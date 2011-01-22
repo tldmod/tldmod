@@ -6304,7 +6304,7 @@ game_menus = [
              (assign, "$talk_context", tc_hire_troops),
              (change_screen_map_conversation, reg(6))
              ]),
-      #Enter dungeon in 
+      #Enter dungeon in Erebor begin (Kolba)
 
       ("dungeon_enter",[
           
@@ -6313,11 +6313,15 @@ game_menus = [
         ],"Enter the cellars.",[
 (modify_visitors_at_site,"scn_erebor_dungeon_01"),(reset_visitors),
              (set_visitor,1,"trp_player"),
+              (set_visitor, 2, "trp_goblin_gundabad"),
+              (set_visitor, 3, "trp_fell_orc_warrior_gundabad"),
+              (set_visitor, 4, "trp_orc_fighter_gundabad"),
               (set_jump_mission, "mt_tld_erebor_dungeon"),
 
               (jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
                 ],"Open the door."),
+      #Enter dungeon in Erebor end (Kolba)
 
           
 		

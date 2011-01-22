@@ -1526,7 +1526,7 @@ center_list = [
 	("p_town_goblin_south_outpost", ["scn_gundabad_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
-	("p_town_gundabad_mirkwood_outpost", ["scn_gundabad_camp_center", -1, -1,-1,-1],
+	("p_town_gundabad_mirkwood_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_erebor", ["scn_erebor_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],

@@ -4748,6 +4748,8 @@ dialogs = [
        (assign, "$random_quest_no", reg0),
    ]],
 
+  
+
    # TLD mission: investigate fangorn (mtarini) -- begin 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
   "Here is a mission for a trusted and brave serve like you, {playername}.\
@@ -4825,6 +4827,12 @@ dialogs = [
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
       ]],
+
+  #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
+
+  #TLD mission: nowy quest (Kolba) -- begin
+
+  
 
     
 
