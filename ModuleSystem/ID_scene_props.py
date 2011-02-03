@@ -1257,3 +1257,4 @@ spr_thranduil_whiteknife = 1255
 spr_thranduil_greatspear = 1256
 spr_thranduil_warspear = 1257
 spr_thranduil_medshield = 1258
+spr_door_erebor = 1259

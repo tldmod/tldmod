@@ -92,8 +92,7 @@ game_menus = [
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
     ],
-    [
-	 ("start_good"  ,[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
+    [("start_good"  ,[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil"  ,[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
 	 ("spacer",[]," "  ,[]),
 	 ("go_back",    [],"go back",[(change_screen_quit              ),]), 
@@ -108,24 +107,19 @@ game_menus = [
  The free peoples prapare for war, the like of which has not been seen for an age. Men, Elves, Dwarves and Orcs; all will\
  play their part. What part, however, remains to be seen... ",
     "none",
-    [
-	(set_background_mesh, "mesh_ui_default_menu_window"),
-	
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
 	(set_show_messages,0),
-	
-	 #  add a little money
+	#  add a little money
 	(troop_add_gold, "trp_player", 50),
 ##        (troop_add_item, "trp_player","itm_horn",0),
 	
 	 #  free food for everyone
 	(troop_add_item, "trp_player","itm_dried_meat",0),
-
 #	(call_script,"script_TLD_troop_banner_slot_init"),
 	(call_script,"script_reward_system_init"),
 	(call_script,"script_init_player_map_icons"),
-	(call_script, "script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
-	 
+	(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
 	
 	# relocate party next to own capital
 	(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
@@ -147,10 +141,8 @@ game_menus = [
 	(set_show_messages,1),
 	(try_end),
 	],
-    [
-      ("continue",[],"Go forth upon you chosen path...",
-       [
-	    (troop_equip_items, "trp_player"),
+    [ ("continue",[],"Go forth upon you chosen path...",
+       [(troop_equip_items, "trp_player"),
         (change_screen_map), #(change_screen_return),
         ]),
 		("spacer",[]," "  ,[]),
@@ -196,6 +188,8 @@ game_menus = [
       ],
    [("custom_battle_scenario_1",[], "                       Skirmish, Gondor factions vs Harad",
 		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_12",[],"                           Choose factions for battle",
+		[(assign, "$g_custom_battle_scenario",16),(jump_to_menu, "mnu_custom_battle_choose_faction1"),]),
 	("custom_battle_scenario_3",[],"         Skirmish, Elves vs Bandits",
 		[(assign, "$g_custom_battle_scenario", 2),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_4",[],"                             Helms Deep Defense, Rohan vs Isengard",
@@ -206,8 +200,8 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_7",[],"            Ambush, Orcs vs Mirkwood",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
-		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
+#	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
+#		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_10",[],"          Scenery test battle",
@@ -388,8 +382,8 @@ game_menus = [
      (troop_clear_inventory, "trp_player"),
      (troop_raise_attribute, "trp_player", ca_strength, -1000),
      (troop_raise_attribute, "trp_player", ca_agility, -1000),
-     (troop_raise_attribute, "trp_player", ca_charisma, -1000),
-     (troop_raise_attribute, "trp_player", ca_intelligence, -1000),
+#     (troop_raise_attribute, "trp_player", ca_charisma, -1000),
+#     (troop_raise_attribute, "trp_player", ca_intelligence, -1000),
      (troop_raise_skill, "trp_player", skl_shield, -1000),
      (troop_raise_skill, "trp_player", skl_athletics, -1000),
      (troop_raise_skill, "trp_player", skl_riding, -1000),
@@ -880,21 +874,51 @@ game_menus = [
 		(try_end),
 		
 		(str_store_string, s16, "@TEST SCENE"),
+		
+    (else_try),########################################## CUSTOM FACTIONS  
+		(eq, "$g_custom_battle_scenario", 16),
+		(assign, "$g_custom_battle_scene", "scn_random_scene_parade"),
+
+		(assign, "$g_player_troop", "trp_knight_1_1"), #Malvogil
+		(set_player_troop, "$g_player_troop"),
+		(modify_visitors_at_site, "$g_custom_battle_scene"),
+	    (set_visitor, 0, "$g_player_troop"),
+		
+		# determine player and enemy faction
+		(try_begin),(gt,"$cbadvantage",0),(assign,":ally_faction","$faction_good"),(assign,":enemy_faction","$faction_evil"),
+        (else_try) ,                    (assign,":ally_faction","$faction_evil"),(assign,":enemy_faction","$faction_good"),(val_mul,"$cbadvantage",-1),
+        (try_end),
+
+		#spawn all ally and enemy faction troops 
+		(assign,":ally_n",4),
+		(assign,":enemy_n",4),
+		(assign,":ally_entry",1),
+		(assign,":enemy_entry",30),
+		(try_for_range,":troop","trp_mercenaries_end","trp_looter"),
+            (store_troop_faction,":troop_faction",":troop"),
+		    (try_begin),
+			   (eq,":troop_faction",":ally_faction"),
+			      (set_visitors, ":ally_entry", ":troop", ":ally_n"),
+			      (val_add,":ally_entry",1),
+			(else_try),
+			   (eq,":troop_faction",":enemy_faction"),
+			      (set_visitors, ":enemy_entry", ":troop", ":enemy_n"),
+			      (val_add,":enemy_entry",1),
+		    (try_end),
+		(try_end),
+
+		(str_store_string, s16, "@FACTION SHOWOFF"),
 	(try_end),
 	(set_show_messages, 1),
 	],
     
     [("custom_battle_go",[],"Start.",
-       [(try_begin),
-          (eq, "$g_custom_battle_scenario", 5),(set_jump_mission,"mt_custom_battle_5"),
-        (else_try),
-          (eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),
-		(else_try),
-          (eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
-        (else_try),
-          (eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
-        (else_try),
-			                                   (set_jump_mission,"mt_custom_battle"),
+       [(try_begin),(eq, "$g_custom_battle_scenario", 5),(set_jump_mission,"mt_custom_battle_5"),
+         (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),
+		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
+         (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
+         (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),
+		 (else_try),                                     (set_jump_mission,"mt_custom_battle"),
         (try_end),
         (jump_to_menu, "mnu_custom_battle_end"),
         (jump_to_scene,"$g_custom_battle_scene"),
@@ -7782,6 +7806,43 @@ game_menus = [
 #     (change_screen_return),
 	],[],),
 
+( "custom_battle_choose_faction1",0,
+    "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01"),],
+    [("good_2xmore",[],"Good faction, 2x advantage",[(assign,"$cbadvantage", 3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+     ("good_equal" ,[],"Good faction, equal terms" ,[(assign,"$cbadvantage", 2),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+	 ("good_2xless",[],"Good faction, 2x handicap" ,[(assign,"$cbadvantage", 1),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+     ("bad_2xmore" ,[],"Evil faction, 2x advantage",[(assign,"$cbadvantage",-3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+     ("bad_equal"  ,[],"Evil faction, equal terms" ,[(assign,"$cbadvantage",-2),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+	 ("bad_2xless" ,[],"Evil faction, 2x handicap" ,[(assign,"$cbadvantage",-1),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+	 ("previous"   ,[(neq,"$faction_good",0),
+                     (neq,"$faction_evil",0)],
+					   "Replay previous setup"     ,[(jump_to_menu,"mnu_custom_battle_2"),]),
+]),
+( "custom_battle_choose_faction2",0,
+    "^^^^^^^^^^Choose good faction", "none", [(set_background_mesh, "mesh_relief01"),],
+    [("cb_mordor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor1"   ,[],"Rohan"     ,[(assign,"$faction_good",fac_rohan   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor2"   ,[],"Lothlorien",[(assign,"$faction_good",fac_lorien  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor3"   ,[],"Rivendell" ,[(assign,"$faction_good",fac_imladris),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor4"   ,[],"Mirkwood"  ,[(assign,"$faction_good",fac_woodelf ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor5"   ,[],"Dwarves"   ,[(assign,"$faction_good",fac_dwarf   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_mordor6"   ,[],"Dale"      ,[(assign,"$faction_good",fac_dale    ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("go_back"      ,[],"Go back"   ,[(jump_to_menu,"mnu_custom_battle_choose_faction1")]),
+]),
+( "custom_battle_choose_faction3",0,
+    "^^^^^^^^^^Choose evil faction", "none", [(set_background_mesh, "mesh_relief01"),],
+    [("cb_mordor"    ,[],"Mordor"     ,[(assign,"$faction_evil",fac_mordor  ),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor1"   ,[],"Isengard"   ,[(assign,"$faction_evil",fac_isengard),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor2"   ,[],"Haradrim"   ,[(assign,"$faction_evil",fac_harad   ),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor3"   ,[],"Easterlings",[(assign,"$faction_evil",fac_khand   ),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor4"   ,[],"Moria"      ,[(assign,"$faction_evil",fac_moria   ),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor5"   ,[],"Gundabad"   ,[(assign,"$faction_evil",fac_gundabad),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("cb_mordor6"   ,[],"Rhun"       ,[(assign,"$faction_evil",fac_rhun    ),(jump_to_menu,"mnu_custom_battle_2"),]),
+     ("go_back"      ,[],"Go back"    ,[(jump_to_menu,"mnu_custom_battle_choose_faction2")]),
+	 ]
+),
+
+	
 ]
 
 ## quick scene chooser

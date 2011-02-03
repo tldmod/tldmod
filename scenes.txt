@@ -1,5 +1,5 @@
 scenesfile version 1
- 182
+ 183
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -728,3 +728,7 @@ scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_interior_castle_
   0 
   0 
  0 
+scn_random_scene_parade random_scene_parade 768 none none 0.000000 0.000000 220.000000 220.000000 -0.500000 0x000000023c602800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 

@@ -2936,7 +2936,7 @@ spr_dwarf_statue 0 0 statue_dwarf bo_statue_dwarf 0
 spr_distant_mountain4 0 0 rom_mountain4 0 0
 
 
-spr_mordor_clouds 0 0 skybox_cloud_overlay 0 0
+spr_mordor_clouds 65536 0 skybox_cloud_overlay 0 0
 
 
 spr_distant_mountain1 0 0 kkk 0 0

@@ -180,3 +180,4 @@ scn_dol_guldur_north_outpost_center = 178
 scn_erebor_dungeon_01 = 179
 scn_gundabad_mirkwood_outpost = 180
 scn_thranduil_hall_room = 181
+scn_random_scene_parade = 182

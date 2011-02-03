@@ -89,7 +89,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(try_begin),
 		(agent_get_item_id, ":warg_item", ":agent"),
 		(is_between, ":warg_item", item_warg_begin , item_warg_end),
-		(store_add,"$wargs_in_battle","$wargs_in_battle",1),
+		(val_add,"$wargs_in_battle",1),
 	(try_end),
   ]
 )

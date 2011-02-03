@@ -38,3 +38,4 @@ mst_custom_battle_HD = 36
 mst_custom_battle_dynamic_scene = 37
 mst_tld_caravan_help = 38
 mst_tld_erebor_dungeon = 39
+mst_custom_battle_parade = 40

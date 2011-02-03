@@ -241,6 +241,7 @@ scenes = [
   ("gundabad_mirkwood_outpost" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 
   ("thranduil_hall_room"   ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_interior_castle_gondor_c", (-100,-100),(100,100),-100,"0",[],[]),
+  ("random_scene_parade"    ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),#GA, faction troops parade
 
   ]
 
