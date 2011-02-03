@@ -16,12 +16,7 @@ from header_common import *
 ########################################################
 
 race_names = (
- "@man",
- "@woman",
- "@gondor",
- "@rohan",
- "@dunlander",
- "@orc","@urukhai", "@uruk","@haradrim","@dwarf","@troll","@dunedain","@lothlorien","@rivendell","@mirkwood","@evil_man",
+ "@man","@woman","@gondor","@rohan","@dunlander","@orc","@urukhai", "@uruk","@haradrim","@dwarf","@troll","@dunedain","@lothlorien","@rivendell","@mirkwood","@evil_man",
 )
 
 slot_item_is_checked              = 0

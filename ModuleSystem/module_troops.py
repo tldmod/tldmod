@@ -422,7 +422,7 @@ troops = [
 ["beorning_carrock_berserker","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_northmen,
    [itm_gambeson,itm_one_handed_war_axe_a,itm_sword_viking_1,itm_leather_boots,itm_hide_covered_round_shield,],
       def_attrib|level(25),wp(140),knows_common|knows_pathfinding_2|knows_athletics_4|knows_power_strike_3|knows_ironflesh_4,rohan_face1,rohan_face2],
-["northmen_items","BUG","BUG",0,0,0,fac_northmen,
+["northmen_items","BUG","BUG",tf_hero,0,0,fac_northmen,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Dale
@@ -474,7 +474,7 @@ troops = [
 ["girions_guard_of_dale","Girion's_Gaurd_of_Dale","Girion's_Gaurds_of_Dale",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,
    [itm_dale_shield_d,itm_dale_pike,itm_dale_sword_long,itm_dale_armor_k,itm_dale_armor_l,itm_mail_boots,itm_dale_warhorse,itm_leather_gloves,itm_dale_helmet_f,],
       def_attrib|level(24),wp(130),knows_riding_4|knows_shield_2|knows_ironflesh_3|knows_power_strike_2,vaegir_face_middle_1,vaegir_face_older_2],
-["dale_items","BUG","BUG",0,0,0,fac_dale,
+["dale_items","BUG","BUG",tf_hero,0,0,fac_dale,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Rhun
@@ -529,7 +529,7 @@ troops = [
 ["dorwinion_noble_of_rhun","Dorwinion_Noble_of_Rhun","Dorwinion_Nobles_of_Rhun",tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_shield,0,0,fac_rhun,
    [itm_rhun_sword,itm_rhun_falchion,itm_rhun_helm_n,itm_rhun_helm_o,itm_rhun_shield,itm_rhun_horse_e,itm_rhun_horse_g,itm_rhun_armor_p,itm_rhun_armor_p,itm_rhun_armor_k,itm_rhun_armor_k,itm_splinted_greaves,itm_furry_boots,],
       def_attrib|level(26),wp(140),knows_riding_6|knows_power_strike_2|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_2|knows_horse_archery_1,khergit_face_middle_1,khergit_face_older_2],
-["rhun_items","BUG","BUG",0,0,0,fac_rhun,
+["rhun_items","BUG","BUG",tf_hero,0,0,fac_rhun,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 ########################## DWARVES #############################
@@ -587,7 +587,7 @@ troops = [
 ["grors_guard","Gror's_Guard","Gror's_Guards",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_armor_c,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_mail_mittens,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_axe,itm_dwarf_great_mattock,itm_dwarf_scale_boots,],
       str_18|agi_5|int_4|cha_4|level(35),wp(225),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
-["dwarf_items","BUG","BUG",0,0,0,fac_dwarf,
+["dwarf_items","BUG","BUG",tf_hero,0,0,fac_dwarf,
    [itm_leather_gloves,itm_dwarf_helm_b,itm_dwarf_shield_a,itm_dwarf_shield_b,itm_dwarf_shield_e,itm_dwarf_shield_f,itm_dwarf_shield_g,itm_dwarf_shield_i,itm_dwarf_shield_j,itm_dwarf_shield_k,itm_dwarf_shield_l,itm_dwarf_shield_m,itm_dwarf_shield_n,itm_dwarf_sword_b,itm_dwarf_sword_c,itm_dwarf_sword_d,itm_dwarf_great_mattock,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_spear,itm_dwarf_helm_i,itm_dwarf_helm_j,itm_dwarf_helm_l,itm_dwarf_helm_l,itm_dwarf_helm_l,itm_dwarf_helm_m,itm_dwarf_helm_o,itm_dwarf_helm_q,itm_dwarf_helm_r,],
       0,0,0,0],
 #GONDOR
@@ -838,7 +838,7 @@ troops = [
 ["galadhrim_royal_warden","Galadhrim_Royal_Warden","Galadhrim_Royal_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
    [itm_lorien_bow,itm_lorien_sword_c,itm_elven_arrows,itm_lorien_armor_a,itm_lorien_boots,itm_leather_gloves,itm_lorien_helm_b,],
       str_15|agi_5|int_4|cha_4|level(40),wp_one_handed(280)|wp_two_handed(280)|wp_polearm(250)|wp_archery(250)|wp_crossbow(110)|wp_throwing(135),knows_common|knows_pathfinding_5|knows_athletics_8|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lorien_items","BUG","BUG",0,0,0,fac_lorien,
+["lorien_items","BUG","BUG",tf_hero,0,0,fac_lorien,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 ##MIRKWOOD#####
@@ -884,7 +884,7 @@ troops = [
 ["thranduils_spearman","Thranduil's_Royal_Spearman","Thranduil's_Royal_Spearmen",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
    [itm_mirkwood_armor_e,itm_mirkwood_boots,itm_mail_mittens,itm_mirkwood_helm_c,itm_mirkwood_knife,itm_mirkwood_great_spear,],
       str_15|agi_5|int_4|cha_4|level(40),wp_one_handed(165)|wp_two_handed(165)|wp_polearm(165)|wp_archery(300)|wp_crossbow(110)|wp_throwing(135),knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["woodelf_items","BUG","BUG",0,0,0,fac_woodelf,
+["woodelf_items","BUG","BUG",tf_hero,0,0,fac_woodelf,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Rivendell
@@ -955,7 +955,7 @@ troops = [
 ["dunedain_master_ranger","Dunedain_Master_Ranger","Dunedain_Master_Rangers",tf_dunedain| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots,0,0,fac_imladris,
    [itm_elven_bow,itm_arnor_sword_f,itm_arnor_sword_f,itm_ithilien_arrows,itm_arnor_armor_d,itm_arnor_greaves,itm_leather_gloves,itm_dunedain_helm_a,],
       str_15|agi_5|int_4|cha_4|level(35),wp_one_handed(220)|wp_two_handed(220)|wp_polearm(220)|wp_archery(170)|wp_crossbow(110)|wp_throwing(135),knows_common|knows_pathfinding_4|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,arnor_face_older_1,arnor_face_older_2],
-["imladris_items","BUG","BUG",0,0,0,fac_imladris,
+["imladris_items","BUG","BUG",tf_hero,0,0,fac_imladris,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #ROHAN
@@ -1101,7 +1101,7 @@ troops = [
 ["far_harad_panther_guard","Panther_Guard","Panther_Guards",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_armor_l,itm_harad_panther_guard,itm_harad_2h_mace,],
       def_attrib|level(25),wp_one_handed(110)|wp_two_handed(110)|wp_polearm(110)|wp_archery(140)|wp_crossbow(110)|wp_throwing(110),knows_common|knows_horse_archery_4|knows_riding_5|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,haradrim_face_2,haradrim_face_3],
-["harad_items","BUG","BUG",0,0,0,fac_harad,
+["harad_items","BUG","BUG",tf_hero,0,0,fac_harad,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,],
       0,0,0,0],
 #Dunnish
@@ -1132,7 +1132,7 @@ troops = [
 ["dunnish_chieftan","Dunnish_Chieftan","Dunnish_Chieftans",tf_dunland| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dunland,
    [itm_uruk_chain_greaves,itm_dunland_armor_k,itm_dun_helm_d,itm_dun_berserker,itm_dun_shield_a,itm_dun_shield_b,],
       str_15|agi_15|int_4|cha_4|level(30),wp(180),knows_athletics_5|knows_power_strike_4|knows_ironflesh_5,0x8b18601c924a6d2492492,0xd024001f46e46e4924965],
-["dunland_items","BUG","BUG",0,0,0,fac_dunland,
+["dunland_items","BUG","BUG",tf_hero,0,0,fac_dunland,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #["dunnish_spear_master","Dunnish_Spear_Master","Dunnish_Spear_Masters",tf_dunlander|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_boots,0,0,fac_dunland,
@@ -1209,7 +1209,7 @@ troops = [
 ["easterling_elite_skirmisher","Variag_Heavy_Skirmisher","Variag_Heavy_Skirmishers",tf_khand| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
    [itm_khand_med_lam_b,itm_khand_med_lam_c,itm_khand_light_lam,itm_variag_greaves,itm_javelin,itm_khand_tulwar,itm_leather_gloves,itm_variag_kataphrakt,itm_khand_helmet_d1,itm_khand_helmet_d2,itm_easterling_round_horseman,],
       def_attrib|level(24),wp_one_handed(125)|wp_two_handed(125)|wp_polearm(125)|wp_archery(110)|wp_crossbow(110)|wp_throwing(140),knows_common|knows_horse_archery_4|knows_riding_5|knows_shield_2|knows_power_throw_4|knows_power_strike_3|knows_ironflesh_2,easterling_face1,easterling_face2],
-["khand_items","BUG","BUG",0,0,0,fac_khand,
+["khand_items","BUG","BUG",tf_hero,0,0,fac_khand,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Corsair
@@ -1264,7 +1264,7 @@ troops = [
 ["pike_master_of_umbar","Pike_Master_of_umbar","Pike_Masters_of_Umbar",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_umb_armor_f,itm_umb_armor_g,itm_umb_helm_a,itm_umbar_pike,itm_corsair_boots,itm_umb_shield_b,itm_umb_shield_a,],
       def_attrib|level(24),wp(140),knows_common|knows_athletics_3|knows_shield_4|knows_power_strike_4|knows_ironflesh_3,gondor_face1,gondor_face2],
-["umbar_items","BUG","BUG",0,0,0,fac_umbar,
+["umbar_items","BUG","BUG",tf_hero,0,0,fac_umbar,
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sword_two_handed_a,itm_short_bow,itm_pitch_fork,itm_wooden_shield,itm_javelin,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Isengard
@@ -1439,7 +1439,7 @@ troops = [
 ["fell_goblin_archer_of_moria","Fell_Goblin_Archer_of_Moria","Fell_Goblin_Archers_of_Moria",tf_orc| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
    [itm_moria_helm_d,itm_moria_helm_e,itm_orc_slasher,itm_orc_falchion,itm_orc_bow,itm_moria_armor_d,itm_moria_armor_e,itm_moria_armor_c,itm_orc_hook_arrow,itm_orc_ragwrap,],
       def_attrib|level(22),wp_one_handed(110)|wp_two_handed(110)|wp_polearm(110)|wp_archery(130)|wp_crossbow(110)|wp_throwing(110),knows_athletics_3|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,orc_face1,orc_face2],
-["moria_items","BUG","BUG",0,0,0,fac_moria,
+["moria_items","BUG","BUG",tf_hero,0,0,fac_moria,
    [itm_leather_boots,itm_warg_1b,itm_warg_1c,itm_warg_1d,itm_gundabad_armor_a,itm_gundabad_armor_b,itm_gundabad_armor_c,itm_gundabad_armor_d,itm_gundabad_armor_e,itm_gundabad_helm_a,itm_gundabad_helm_b,itm_gundabad_helm_c,itm_gundabad_helm_d,itm_gundabad_helm_e,itm_moria_orc_shield_c,itm_angmar_shield,itm_orc_bill,itm_orc_scimitar,itm_orc_machete,itm_orc_axe,itm_orc_two_handed_axe,itm_orc_chain_greaves,itm_orc_club_a,itm_orc_club_a,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,],
       0,0,0,0],
 #MT Gundabad
@@ -1473,7 +1473,7 @@ troops = [
 ["goblin_north_clan_rider","Goblin_North-Clan_Rider","Goblin_North-Clan_Riders",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_gundabad,
    [itm_moria_orc_shield_b,itm_moria_orc_shield_c,itm_gundabad_helm_e,itm_gundabad_armor_d,itm_gundabad_armor_e,itm_orc_skull_spear,itm_orc_throwing_arrow,itm_orc_sabre,itm_orc_sabre,itm_leather_gloves,itm_orc_coif,itm_orc_greaves,itm_orc_ragwrap,itm_orc_furboots,itm_wargarmored_1c,itm_wargarmored_1b,],
       def_attrib|level(22),wp(140),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_horse_archery_2|knows_riding_4|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_5,orc_face1,orc_face2],
-["gundabad_items","BUG","BUG",0,0,0,fac_gundabad,
+["gundabad_items","BUG","BUG",tf_hero,0,0,fac_gundabad,
    [itm_leather_boots,itm_leather_gloves,itm_warg_1b,itm_warg_1c,itm_warg_1d,itm_angmar_shield,itm_orc_bill,itm_orc_scimitar,itm_mordor_sword,itm_orc_machete,itm_orc_axe,itm_orc_two_handed_axe,itm_uruk_bow,itm_orc_chain_greaves,itm_orc_greaves,itm_skull_club,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,],
       0,0,0,0],
 ["mountain_goblin","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
@@ -3242,3 +3242,12 @@ upgrade(troops,"dwarven_archer","marksman_of_ravenhill")
 upgrade(troops,"iron_hills_miner","iron_hills_infantry")
 upgrade(troops,"iron_hills_infantry","iron_hills_battle_infantry")
 upgrade(troops,"iron_hills_battle_infantry","grors_guard")
+ 
+
+
+
+
+
+
+
+

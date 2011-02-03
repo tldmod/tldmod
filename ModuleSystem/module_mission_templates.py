@@ -3608,9 +3608,8 @@ mission_templates = [
 #      custom_battle_check_victory_condition,
       common_battle_victory_display,
       custom_battle_check_defeat_condition,
-
     ],
   ),
-
+########################### end custom battle faction troops showoff
 
  ]
