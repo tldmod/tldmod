@@ -1918,4 +1918,9 @@ scene_props = [
     (try_end),]),
   ]),
 
+  ("moria_altar",0,"moria_altar","bo_moria_altar",[]),
+  ("moria_rubble",0,"moria_rubble","bo_moria_rubble",[]),
+  ("moria_rubble_wall",0,"moria_rubble_wall","bo_moria_rubble_wall",[]),
+  ("moria_rubble_blocks",0,"moria_rubble_blocks","bo_moria_rubble_blocks",[]),
+
 ]

@@ -1258,3 +1258,7 @@ spr_thranduil_greatspear = 1256
 spr_thranduil_warspear = 1257
 spr_thranduil_medshield = 1258
 spr_door_erebor = 1259
+spr_moria_altar = 1260
+spr_moria_rubble = 1261
+spr_moria_rubble_wall = 1262
+spr_moria_rubble_blocks = 1263
