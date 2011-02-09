@@ -1432,7 +1432,7 @@ center_list = [
 		["icon_mfc_isengard"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 
 	("p_town_caras_galadhon", ["scn_caras_galadhon_center", "scn_elf_castle", "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
-	    ["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_town_30_horse_merchant", "trp_elder", "pt_lorien_reinf_a", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
+	    ["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_town_31_horse_merchant", "trp_elder", "pt_lorien_reinf_a", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 		["icon_mfc_lorien"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_cdolen", "trp_town_32_horse_merchant", "trp_elder", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 

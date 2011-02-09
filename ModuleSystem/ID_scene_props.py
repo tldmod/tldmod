@@ -1262,3 +1262,4 @@ spr_moria_altar = 1260
 spr_moria_rubble = 1261
 spr_moria_rubble_wall = 1262
 spr_moria_rubble_blocks = 1263
+spr_elf_bridge = 1264

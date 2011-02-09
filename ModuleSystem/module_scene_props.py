@@ -1923,4 +1923,6 @@ scene_props = [
   ("moria_rubble_wall",0,"moria_rubble_wall","bo_moria_rubble_wall",[]),
   ("moria_rubble_blocks",0,"moria_rubble_blocks","bo_moria_rubble_blocks",[]),
 
+  ("elf_bridge",0,"elf_bridge","0",[]),  
+
 ]
