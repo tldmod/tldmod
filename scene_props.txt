@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1265
+ 1267
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3847,6 +3847,12 @@ spr_moria_rubble_wall 0 0 moria_rubble_wall bo_moria_rubble_wall 0
 spr_moria_rubble_blocks 0 0 moria_rubble_blocks bo_moria_rubble_blocks 0
 
 
-spr_elf_bridge 0 0 elf_bridge 0 0
+spr_elf_bridge 0 0 elf_bridge bo_elf_bridge 0
+
+
+spr_elf_ramp 0 0 elf_ramp bo_elf_ramp 0
+
+
+spr_elf_treehouse 0 0 elf_treehouse bo_elf_treehouse 0
 
 

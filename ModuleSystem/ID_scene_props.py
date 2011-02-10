@@ -1263,3 +1263,5 @@ spr_moria_rubble = 1261
 spr_moria_rubble_wall = 1262
 spr_moria_rubble_blocks = 1263
 spr_elf_bridge = 1264
+spr_elf_ramp = 1265
+spr_elf_treehouse = 1266
