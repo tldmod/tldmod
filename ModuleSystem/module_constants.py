@@ -1446,7 +1446,7 @@ center_list = [
 	("p_town_woodelf_camp", ["scn_woodelf_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_35_weaponsmith", "trp_town_35_horse_merchant", "trp_elder", "pt_woodelf_reinf_a", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
 		["icon_mfc_woodelf"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
-	("p_town_woodelf_west_camp", ["scn_woodelf_camp_center", -1, -1,-1,-1],
+	("p_town_woodelf_west_camp", ["scn_woodelf_west_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_35_weaponsmith", "trp_town_35_horse_merchant", "trp_elder", "pt_woodelf_reinf_a", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
 		["icon_mfc_woodelf"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 #	("p_town_woodelf_north_camp", ["scn_woodelf_camp_center", -1, -1,-1,-1],

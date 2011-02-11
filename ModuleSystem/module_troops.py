@@ -2962,6 +2962,40 @@ troops = [
 ["androg","Androg","bug",tf_hero,scn_zendar_center|entry(7),0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,man_face_middle_1,man_face_older_2],
+["dorwinion_bandit        ","Dorwinion_Bandit","Dorwinion_Bandits",tfg_armor|tfg_shield,0,0,fac_outlaws,
+   [itm_sword_viking_1,itm_leather_boots,itm_white_tunic_a,itm_white_tunic_b,itm_javelin,itm_club,itm_shortened_spear,itm_spear,itm_wooden_shield,itm_blue_tunic,itm_woolen_hose,],
+         def_attrib|level(12),wp(100),knows_common,man_face_middle_1,mercenary_face_2],
+["dorwinion_raider        ","Dorwinion_Raider","Dorwinion_Raiders",tfg_armor|tfg_shield|tfg_boots|tfg_helm,0,0,fac_neutral,
+   [itm_rhun_shortsword,itm_rhun_sword,itm_rhun_sword,itm_rhun_helm_g,itm_rhun_helm_h,itm_rhun_armor_b,itm_rhun_armor_a,itm_rhun_armor_d,itm_javelin,itm_rhun_shield,itm_leather_boots,],
+              def_attrib|level(17),wp(120),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_1","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_2","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_3","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_4","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_5","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_6","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_7","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_8","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+["future_troop_9","Barman","bug",tf_hero| tf_randomize_face,0,0,fac_neutral,
+   [itm_courtly_outfit,itm_leather_boots,],
+      def_attrib|level(2),wp(20),knows_common,man_face_middle_1,mercenary_face_2],
+
 #Kolba additions
 # Troops for scripting purpose. Make sure these are the last troops. (by foxyman)
 ["troops_end","troops_end","troops_end",tf_hero,no_scene,reserved,fac_commoners,[],0,0,0,0,0],
@@ -3243,11 +3277,3 @@ upgrade(troops,"iron_hills_miner","iron_hills_infantry")
 upgrade(troops,"iron_hills_infantry","iron_hills_battle_infantry")
 upgrade(troops,"iron_hills_battle_infantry","grors_guard")
  
-
-
-
-
-
-
-
-

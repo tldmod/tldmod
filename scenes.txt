@@ -1,5 +1,5 @@
 scenesfile version 1
- 183
+ 184
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -732,3 +732,7 @@ scn_random_scene_parade random_scene_parade 768 none none 0.000000 0.000000 220.
   0 
   0 
  outer_terrain_plain 
+scn_woodelf_west_camp_center woodelf_west_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
+  0 
+  0 
+ outer_terrain_forest 
