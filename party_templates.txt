@@ -5,23 +5,23 @@ pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 430 0 4 0 -1 -1 -1 -1 
-pt_cattle_herd Cattle_Herd 2814749767106646 0 27 7 24 80 120 0 -1 -1 -1 -1 -1 
-pt_manhunters Manhunters 2 0 51 238 427 9 40 0 -1 -1 -1 -1 -1 
+pt_cattle_herd Cattle_Herd 2814749767106646 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
+pt_manhunters Manhunters 2 0 50 238 427 9 40 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 2251799813685293 0 2 494 381 4 25 0 -1 -1 -1 -1 -1 
-pt_forest_bandits Orc_Raiders 562949953421357 0 54 494 381 5 52 0 380 2 40 0 -1 -1 -1 -1 
-pt_mountain_bandits Orc_Stragglers 562949953421357 0 53 494 380 2 40 0 -1 -1 -1 -1 -1 
+pt_forest_bandits Orc_Raiders 562949953421357 0 53 494 381 5 52 0 380 2 40 0 -1 -1 -1 -1 
+pt_mountain_bandits Orc_Stragglers 562949953421357 0 52 494 380 2 40 0 -1 -1 -1 -1 -1 
 pt_steppe_bandits Dunlending_Raiders 562949953421319 0 2 494 270 5 58 0 -1 -1 -1 -1 -1 
 pt_sea_raiders Corsair_Raiders 562949953421320 0 2 494 305 5 50 0 -1 -1 -1 -1 -1 
-pt_deserters Deserters 844424930131971 0 52 494 -1 -1 -1 -1 -1 -1 
+pt_deserters Deserters 844424930131971 0 51 494 -1 -1 -1 -1 -1 -1 
 pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 431 1 1 0 432 5 25 0 -1 -1 -1 -1 
 pt_troublesome_bandits Troublesome_Bandits 2533274790658056 0 2 494 422 14 55 0 -1 -1 -1 -1 -1 
-pt_bandits_awaiting_ransom Bandits_Awaiting_Ransom 2533274790789128 0 27 494 422 24 58 0 428 1 1 1 -1 -1 -1 -1 
-pt_kidnapped_girl Kidnapped_Girl 262153 0 27 7 428 1 1 0 -1 -1 -1 -1 -1 
-pt_village_farmers Village_Farmers 6 0 28 7 25 5 10 0 430 3 8 0 -1 -1 -1 -1 
-pt_spy_partners Unremarkable_Travellers 844424930459650 0 27 7 730 1 1 0 432 5 11 0 -1 -1 -1 -1 
-pt_runaway_serfs Runaway_Serfs 2251799814012934 0 27 7 25 6 7 0 430 3 3 0 -1 -1 -1 -1 
-pt_spy Ordinary_beorning_vale_man 844424930459650 0 27 7 729 1 1 0 -1 -1 -1 -1 -1 
-pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 27 7 -1 -1 -1 -1 -1 -1 
+pt_bandits_awaiting_ransom Bandits_Awaiting_Ransom 2533274790789128 0 26 494 422 24 58 0 428 1 1 1 -1 -1 -1 -1 
+pt_kidnapped_girl Kidnapped_Girl 262153 0 26 7 428 1 1 0 -1 -1 -1 -1 -1 
+pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 430 3 8 0 -1 -1 -1 -1 
+pt_spy_partners Unremarkable_Travellers 844424930459650 0 26 7 730 1 1 0 432 5 11 0 -1 -1 -1 -1 
+pt_runaway_serfs Runaway_Serfs 2251799814012934 0 26 7 25 6 7 0 430 3 3 0 -1 -1 -1 -1 
+pt_spy Ordinary_beorning_vale_man 844424930459650 0 26 7 729 1 1 0 -1 -1 -1 -1 -1 
+pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
 pt_forager_party Foraging_Party 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_scout_party Scouts 281474980904962 0 1 494 -1 -1 -1 -1 -1 -1 
 pt_patrol_party Patrol 562949957615618 0 1 238 -1 -1 -1 -1 -1 -1 
@@ -46,8 +46,8 @@ pt_woodelves_scouts Mirkwood_Elven_Scouts 281474980904998 0 10 183 182 2 4 0 183
 pt_rivendell_scouts Rivendell_Scouts 281474980905012 0 9 183 196 3 5 0 197 3 5 0 210 1 1 0 -1 -1 -1 
 pt_dale_scouts Dale_Scouts 562949953421314 0 11 183 50 3 5 0 54 3 5 0 56 1 1 0 -1 -1 -1 
 pt_dwarven_scouts Dwarven_Scouts 562949953421320 0 4 183 92 3 5 0 85 3 5 0 95 1 1 0 -1 -1 -1 
-pt_beorning_scouts Beorning_Scouts 281474980904968 0 21 183 40 3 6 0 42 3 5 0 46 1 1 0 -1 -1 -1 
-pt_woodmen_scouts Woodmen_Scouts 281474980904968 0 21 183 32 3 6 0 36 3 5 0 38 1 1 0 -1 -1 -1 
+pt_beorning_scouts Beorning_Scouts 281474980904968 0 20 183 40 3 6 0 42 3 5 0 46 1 1 0 -1 -1 -1 
+pt_woodmen_scouts Woodmen_Scouts 281474980904968 0 20 183 32 3 6 0 36 3 5 0 38 1 1 0 -1 -1 -1 
 pt_harad_scouts Haradrim_Scouts 281474980904980 0 12 183 123 3 6 0 113 3 6 0 -1 -1 -1 -1 
 pt_dunlend_scouts Dunlending_Scouts 281474980904975 0 19 183 270 3 6 0 268 3 6 0 -1 -1 -1 -1 
 pt_umbar_scouts Corsair_Scouts 281474980905022 0 15 183 305 3 6 0 298 3 6 0 -1 -1 -1 -1 
@@ -215,4 +215,4 @@ pt_dwarf_reinf_c dwarf_reinf_c 0 0 1 0 95 3 6 0 98 3 6 0 -1 -1 -1 -1
 pt_dunland_reinf_a dunland_reinf_a 0 0 1 0 266 2 6 0 268 4 7 0 -1 -1 -1 -1 
 pt_dunland_reinf_b dunland_reinf_b 0 0 1 0 269 2 6 0 272 4 7 0 -1 -1 -1 -1 
 pt_dunland_reinf_c dunland_reinf_c 0 0 1 0 272 3 6 0 -1 -1 -1 -1 -1 
-pt_caravan_survivors Caravan_Survivors 562949953421314 0 27 7 425 5 5 0 -1 -1 -1 -1 -1 
+pt_caravan_survivors Caravan_Survivors 562949953421314 0 26 7 425 5 5 0 -1 -1 -1 -1 -1 

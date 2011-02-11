@@ -1225,7 +1225,7 @@ faction_init = [
     ("fac_woodelf" ,3500,"fac_culture_11", "trp_woodelf_lord" ,["trp_greenwood_scout",  "trp_greenwood_veteran_scout", "trp_greenwood_archer", "trp_greenwood_master_archer", "trp_greenwood_royal_spearman"     ], ["pt_woodelf_reinf_a",  "pt_woodelf_reinf_b","pt_woodelf_reinf_c",  "pt_mirkwood_p_train" ], "spr_banner_j", "icon_mfp_woodelf" ,[-1                    ,"trp_greenwood_sentinel"    ,"trp_greenwood_scout"           ,"trp_greenwood_veteran_spearman","trp_greenwood_royal_spearman" ],"p_town_thranduils_halls",faction_side_good  , theatre_C),
     ("fac_moria"   ,2500,"fac_culture_12", "trp_moria_lord"   ,["trp_snaga_of_moria",         "trp_goblin_of_moria",     "trp_fell_goblin_of_moria",     "trp_large_goblin_of_moria",   "trp_mountain_goblin"    ], ["pt_moria_reinf_a",     "pt_moria_reinf_b", "pt_moria_reinf_c",    -1                    ], "spr_banner_k", "icon_mfp_moria"   ,["trp_snaga_of_moria"  ,"trp_goblin_of_moria"       ,"trp_large_goblin_of_moria"     ,"trp_fell_goblin_of_moria"     ,"trp_fell_goblin_of_moria"      ],"p_town_moria"           ,faction_side_hand  , theatre_C),
     ("fac_guldur"  ,4500,"fac_culture_13", "trp_guldur_lord"  ,["trp_orc_snaga_of_mordor","trp_large_orc_of_mordor","trp_orc_tracker_of_mordor","trp_large_orc_archer_of_mordor","trp_great_warg_rider_of_mordor"], ["pt_guldur_reinf_a",   "pt_guldur_reinf_b",  "pt_guldur_reinf_c",  -1                    ], "spr_banner_l", "icon_mfp_guldur"  ,["trp_snaga_of_moria"  ,"trp_goblin_of_moria"       ,"trp_large_goblin_of_moria"     ,"trp_fell_goblin_of_moria"     ,"trp_fell_goblin_of_moria"      ],"p_town_dol_guldur"      ,faction_side_eye   , theatre_C),
-    ("fac_northmen",2500,"fac_culture_14", "trp_northmen_lord",["trp_beorning_vale_man",      "trp_beorning_warrior",   "trp_beorning_carrock_fighter",   "trp_woodmen_scout",       "trp_woodmen_master_axemen" ], ["pt_northmen_reinf_a","pt_northmen_reinf_b","pt_northmen_reinf_c", -1                    ], "spr_banner_m", "icon_mfp_northmen",[-1                    ,"trp_beorning_warrior"      ,"trp_beorning_carrock_fighter"  ,"trp_woodmen_scout"            ,"trp_woodmen_master_axemen"     ],"p_town_woodsmen_village",faction_side_good  , theatre_N), 
+#    ("fac_northmen",2500,"fac_culture_14", "trp_northmen_lord",["trp_beorning_vale_man",      "trp_beorning_warrior",   "trp_beorning_carrock_fighter",   "trp_woodmen_scout",       "trp_woodmen_master_axemen" ], ["pt_northmen_reinf_a","pt_northmen_reinf_b","pt_northmen_reinf_c", -1                    ], "spr_banner_m", "icon_mfp_northmen",[-1                    ,"trp_beorning_warrior"      ,"trp_beorning_carrock_fighter"  ,"trp_woodmen_scout"            ,"trp_woodmen_master_axemen"     ],"p_town_woodsmen_village",faction_side_good  , theatre_N), 
     ("fac_gundabad",3500,"fac_culture_15", "trp_gundabad_lord",["trp_goblin_gundabad",     "trp_orc_gundabad",      "trp_fell_orc_warrior_gundabad", "trp_goblin_bowmen_gundabad", "trp_goblin_rider_gundabad"   ], ["pt_gundabad_reinf_a","pt_gundabad_reinf_b","pt_gundabad_reinf_c", -1                    ], "spr_banner_n", "icon_mfp_gundabad",["trp_goblin_gundabad" ,"trp_orc_gundabad"          ,"trp_fell_orc_warrior_gundabad" ,"trp_goblin_bowmen_gundabad"   ,"trp_goblin_rider_gundabad"     ],"p_town_gundabad_camp"   ,faction_side_eye   , theatre_SE),
     ("fac_dale"    ,3500,"fac_culture_16", "trp_dale_lord"    ,["trp_dale_militia",              "trp_dale_man_at_arms",       "trp_laketown_archer",      "trp_dale_warrior",    "trp_merchant_squire_or_dale"  ], ["pt_dale_reinf_a",    "pt_dale_reinf_b",    "pt_dale_reinf_c",     "pt_dale_p_train"     ], "spr_banner_f21","icon_mfp_dale"   ,[-1                    ,"trp_dale_man_at_arms"      ,"trp_laketown_archer"           ,"trp_dale_warrior"             ,"trp_dale_marchwarden"          ],"p_town_dale"            ,faction_side_eye   , theatre_SE),
     ("fac_dwarf"   ,3500,"fac_culture_17", "trp_dwarf_lord"   ,["trp_dwarven_apprentice",         "trp_dwarven_warrior",         "trp_dwarven_spearman",       "trp_dwarven_lookout",      "trp_dwarven_bowman"  ], ["pt_dwarf_reinf_a",    "pt_dwarf_reinf_b",   "pt_dwarf_reinf_c",   "pt_dwarven_p_train"  ], "spr_banner_p", "icon_mfp_dwarf"   ,[-1                    ,"trp_dwarven_warrior"       ,"trp_dwarven_spearman"          ,"trp_dwarven_lookout"          ,"trp_dwarven_bowman"            ],"p_town_erebor"          ,faction_side_good  , theatre_N),
@@ -1453,7 +1453,7 @@ center_list = [
 #	    [-1, "trp_town_35_weaponsmith", "trp_town_35_horse_merchant", "trp_elder", "pt_woodelf_reinf_a", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
 #		["icon_mfc_woodelf"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_woodsmen_village", ["scn_woodsmen_village_center", -1, -1,-1,-1],
-	    [-1, "trp_town_36_weaponsmith", "trp_town_36_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_northmen_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
+	    [-1, "trp_town_36_weaponsmith", "trp_town_36_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
 		["icon_mfc_northmen"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_beorning_village", ["scn_woodsmen_village_center", -1, -1,-1,-1],
 	    [-1, "trp_town_36_weaponsmith", "trp_town_36_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
@@ -1698,7 +1698,7 @@ faction_strings =[    #shop rumors begin          shop rumors end
     ("fac_woodelf" ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_moria"   ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_guldur"  ,"str_default_rumor", "str_rohan_rumor_begin"),
-    ("fac_northmen","str_default_rumor", "str_rohan_rumor_begin"),
+#    ("fac_northmen","str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_gundabad","str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_dale"    ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_dwarf"   ,"str_default_rumor", "str_rohan_rumor_begin"),
@@ -1746,9 +1746,10 @@ fac_tableau_list = [
 #fac_dunland = 19
 [],
 #fac_northmen = 20
-[ ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
+[# ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
 ],
 #fac_beorn = 21
-[],
+[ ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
+],
 
 ]
