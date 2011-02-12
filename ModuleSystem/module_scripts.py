@@ -13249,12 +13249,13 @@ scripts = [
        (add_faction_note_from_sreg, ":faction_no", 0, s1, 0),
        (add_faction_note_from_sreg, ":faction_no", 1, s1, 0),
      (try_end),
-     (try_begin),
-       (is_between, ":faction_no", "fac_gondor", kingdoms_end), #Excluding player kingdom
-       (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh"),
-     (else_try),
+#MV: show faction leader banner instead of (non-existent) faction pic
+#     (try_begin),
+#       (is_between, ":faction_no", "fac_gondor", kingdoms_end), #Excluding player kingdom
+#       (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh"),
+#     (else_try),
        (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh_banner"),
-     (try_end),
+#     (try_end),
      ]),
 
   #script_update_faction_traveler_notes
