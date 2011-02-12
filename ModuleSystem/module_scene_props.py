@@ -1632,13 +1632,10 @@ scene_props = [
 
 ("lktn_awning_a",0,"dale_awning","bo_awning", []),
 ("lktn_awning_b",0,"dale_cloth_awning","bo_arena_block_j_awning", []),
-
 ("lktn_door_a",0,"laketown_door_a","bo_laketown_door", []),
 ("lktn_door_b",0,"laketown_door_b","bo_laketown_door", []),
 ("lktn_door_c",0,"laketown_door_c","bo_laketown_door", []),
-
 ("lktn_platform",0,"esgaroth_stilts","bo_esgaroth_stilts", []),
-
 ("lktn_stairs",0,"esgaroth_steps","bo_esgaroth_steps", []),
 
 
@@ -1865,23 +1862,23 @@ scene_props = [
   ("harad_oliphant", 0, "oliphant", "bo_oliphant", []),
 
 # Romainoir Rohan buildings
-  ("rohan_birdhouse",0,"rohan_birdhouse","0",[]),
-  ("rohan_platform",0,"rohan_platform","0",[]),
-  ("rohan_meduseld",0,"rohan_meduseld","0",[]),
-  ("rohan_house1",0,"rohan_house1","0",[]),
-  ("rohan_house2",0,"rohan_house2","0",[]),
-  ("rohan_house3",0,"rohan_house3","0",[]),
-  ("rohan_house4",0,"rohan_house4","0",[]),
-  ("rohan_house5",0,"rohan_house5","0",[]),
+  ("rohan_birdhouse",0,"rohan_birdhouse","bo_birdhouse",[]),
+  ("rohan_platform",0,"rohan_platform","bo_rangefoin",[]),
+  ("rohan_meduseld",0,"rohan_meduseld","bo_meduseld",[]),
+  ("rohan_house1",0,"rohan_house1","bo_house1",[]),
+  ("rohan_house2",0,"rohan_house2","bo_house2",[]),
+  ("rohan_house3",0,"rohan_house3","bo_house3",[]),
+  ("rohan_house4",0,"rohan_house4","bo_house4",[]),
+  ("rohan_house5",0,"rohan_house5","bo_house5",[]),
   ("rohan_stables1",0,"rohan_stables1","0",[]),
-  ("rohan_watchtower",0,"rohan_watchtower","0",[]),
-  ("rohan_stonebase",0,"rohan_stonebase","0",[]),  
+  ("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
+  ("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),  
   
 # Llew Rohan buildings
-  ("rohan_palisade",0,"rohan_palisade_a","0",[]),
-  ("rohan_palisade_slope",0,"rohan_palisade_b","0",[]),
-  ("rohan_house6",0,"rohan_house6","0",[]),
-  ("rohan_house7",0,"rohan_house7","0",[]),
+  ("rohan_palisade",0,"rohan_palisade_a","bo_rohan_palisade_a",[]),
+  ("rohan_palisade_slope",0,"rohan_palisade_b","bo_rohan_palisade_b",[]),
+  ("rohan_house6",0,"rohan_house6","bo_house6",[]),
+  ("rohan_house7",0,"rohan_house7","bo_house7",[]),
 
 # Kolba Erebor dungeon stuff  
 

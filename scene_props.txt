@@ -3745,49 +3745,49 @@ spr_harad_tent_b 0 0 haradTent_b bo_haradTent_a 0
 spr_harad_oliphant 0 0 oliphant bo_oliphant 0
 
 
-spr_rohan_birdhouse 0 0 rohan_birdhouse 0 0
+spr_rohan_birdhouse 0 0 rohan_birdhouse bo_birdhouse 0
 
 
-spr_rohan_platform 0 0 rohan_platform 0 0
+spr_rohan_platform 0 0 rohan_platform bo_rangefoin 0
 
 
-spr_rohan_meduseld 0 0 rohan_meduseld 0 0
+spr_rohan_meduseld 0 0 rohan_meduseld bo_meduseld 0
 
 
-spr_rohan_house1 0 0 rohan_house1 0 0
+spr_rohan_house1 0 0 rohan_house1 bo_house1 0
 
 
-spr_rohan_house2 0 0 rohan_house2 0 0
+spr_rohan_house2 0 0 rohan_house2 bo_house2 0
 
 
-spr_rohan_house3 0 0 rohan_house3 0 0
+spr_rohan_house3 0 0 rohan_house3 bo_house3 0
 
 
-spr_rohan_house4 0 0 rohan_house4 0 0
+spr_rohan_house4 0 0 rohan_house4 bo_house4 0
 
 
-spr_rohan_house5 0 0 rohan_house5 0 0
+spr_rohan_house5 0 0 rohan_house5 bo_house5 0
 
 
 spr_rohan_stables1 0 0 rohan_stables1 0 0
 
 
-spr_rohan_watchtower 0 0 rohan_watchtower 0 0
+spr_rohan_watchtower 0 0 rohan_watchtower bo_tourrohan 0
 
 
-spr_rohan_stonebase 0 0 rohan_stonebase 0 0
+spr_rohan_stonebase 0 0 rohan_stonebase bo_rohan_stonebase 0
 
 
-spr_rohan_palisade 0 0 rohan_palisade_a 0 0
+spr_rohan_palisade 0 0 rohan_palisade_a bo_rohan_palisade_a 0
 
 
-spr_rohan_palisade_slope 0 0 rohan_palisade_b 0 0
+spr_rohan_palisade_slope 0 0 rohan_palisade_b bo_rohan_palisade_b 0
 
 
-spr_rohan_house6 0 0 rohan_house6 0 0
+spr_rohan_house6 0 0 rohan_house6 bo_house6 0
 
 
-spr_rohan_house7 0 0 rohan_house7 0 0
+spr_rohan_house7 0 0 rohan_house7 bo_house7 0
 
 
 spr_spear_trap_1 0 0 spear_trap bo_spear_trap 0
