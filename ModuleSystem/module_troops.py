@@ -33,24 +33,35 @@ from ID_scenes import *
 #     The game will create random faces between Face code 1 and face code 2 for generated troops
 ####################################################################################################################
 # Some constant and function declarations to be used below...
- 
+
+#MV: wp, wpex and wp_melee brought from Warband code to eliminate randomness 
 def wp(x):
   n = 0
   r = 10 + int(x / 10)
-  n|= wp_one_handed(x + random.randrange(r))
-  n|= wp_two_handed(x + random.randrange(r))
-  n|= wp_polearm(x + random.randrange(r))
-  n|= wp_archery(x + random.randrange(r))
-  n|= wp_crossbow(x + random.randrange(r))
-  n|= wp_throwing(x + random.randrange(r))
+  n |= wp_one_handed(x)
+  n |= wp_two_handed(x)
+  n |= wp_polearm(x)
+  n |= wp_archery(x)
+  n |= wp_crossbow(x)
+  n |= wp_throwing(x)
   return n
  
+def wpex(o,w,p,a,c,t):
+   n = 0
+   n |= wp_one_handed(o)
+   n |= wp_two_handed(w)
+   n |= wp_polearm(p)
+   n |= wp_archery(a)
+   n |= wp_crossbow(c)
+   n |= wp_throwing(t)
+   return n
+   
 def wp_melee(x):
   n = 0
   r = 10 + int(x / 10)
-  n|= wp_one_handed(x + random.randrange(r))
-  n|= wp_two_handed(x + random.randrange(r))
-  n|= wp_polearm(x + random.randrange(r))
+  n |= wp_one_handed(x + 20)
+  n |= wp_two_handed(x)
+  n |= wp_polearm(x + 10)
   return n
  
 #Skills
