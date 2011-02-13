@@ -182,3 +182,4 @@ scn_gundabad_mirkwood_outpost = 180
 scn_thranduil_hall_room = 181
 scn_random_scene_parade = 182
 scn_woodelf_west_camp_center = 183
+scn_edoras_center_gastyle = 184

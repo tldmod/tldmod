@@ -243,6 +243,7 @@ scenes = [
   ("thranduil_hall_room"   ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_interior_castle_gondor_c", (-100,-100),(100,100),-100,"0",[],[]),
   ("random_scene_parade"    ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),#GA, faction troops parade
   ("woodelf_west_camp_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+  ("edoras_center_gastyle"   ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000005200005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2south"),
 
   ]
 
