@@ -1745,7 +1745,8 @@ scene_props = [
   ("ZT_mb_yew_big", 0, "tree_19_a", "bo_tree_19_a", []), 
 # gutek's flora  (does not mix well with vanilla!!)
 
-  ("ZT_pl_fir1", 0, "PL_fur1", "0", []), ("ZT_pl_fir2", 0, "PL_fur2", "0", []), ("ZT_pl_fir3", 0, "PL_fur3", "0", []), ("ZT_pl_fir4", 0, "PL_fur4", "0", []), 
+#MV: removed missing ("ZT_pl_fir4", 0, "PL_fur4", "0", [])
+  ("ZT_pl_fir1", 0, "PL_fur1", "0", []), ("ZT_pl_fir2", 0, "PL_fur2", "0", []), ("ZT_pl_fir3", 0, "PL_fur3", "0", []), 
   ("ZT_pl_fir_bush1", 0, "PW_bushes09_a", "0", []), ("ZT_pl_fir_bush2", 0, "PW_bushes09_b", "0", []), ("ZT_pl_fir_bush3", 0, "PW_bushes09_c", "0", []), 
   ("ZT_pl_fir_tall1", 0, "PL_fur_tall1", "0", []), ("ZT_pl_fir_tall2", 0, "PL_fur_tall2", "0", []), ("ZT_pl_fir_tall3", 0, "PL_fur_tall3", "0", []), 
 

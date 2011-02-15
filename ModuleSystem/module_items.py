@@ -221,7 +221,7 @@ items = [
 ["blackwhite_dress","Lady Dress" , [("gondor_dress_b" ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["white_tunic_a" , "White Tunic" , [("generic_tunic_a",0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["white_tunic_b" , "Simple Tunic", [("gondor_tunic_b",0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
-["white_tunic_a" , "Tunic Jacket", [("generic_tunic_c",0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
+["white_tunic_c" , "Tunic Jacket", [("generic_tunic_c",0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["blue_tunic"    , "Blue Tunic"  , [("dale_tunic"     ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["black_tunic"   , "Black Tunic" , [("gondor_tunic"   ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["green_tunic"   , "Green Tunic" , [("rohan_tunic"    ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian ,0, 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
@@ -242,7 +242,7 @@ items = [
 ["wimple_a", "Wimple", [("gondor_wimple_a",0)],itp_shop|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
 ["wimple_with_veil", "Wimple", [("gondor_wimple_b",0)],itp_shop|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
 ["fine_hat", "Fine Hat", [("gondor_fine_fem_hat",0)],itp_shop|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
-["fine_hat", "Fine Hat", [("gondor_fine_fem_hat",0)],itp_shop|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
+#MV commented out duplicate ["fine_hat", "Fine Hat", [("gondor_fine_fem_hat",0)],itp_shop|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
 
 ["courtly_outfit", "Courtly Outfit", [("nobleman_outf",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["nobleman_outfit", "Nobleman Outfit", [("nobleman_outfit_b",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
@@ -352,7 +352,8 @@ items = [
 #["felt_hat", "Felt Hat", [("felt_hat_a",0),("felt_hat_b",imodbits_good)], itp_shop|itp_type_head_armor |itp_civilian,0, 4 , weight(1)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #["leather_cap", "Leather Cap", [("leather_cap",0)], itp_shop|itp_type_head_armor|itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #["arming_cap", "Arming Cap", [("linen_arming_cap",0)], itp_shop|itp_type_head_armor  |itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["female_hood", "Lady's Hood", [("woolen_hood",0)], itp_shop|itp_type_head_armor |itp_civilian  ,0, 9 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+#MV removed itp_shop because of missing mesh "woolen_hood" (it has a LOD though)
+["female_hood", "Lady's Hood", [("woolen_hood",0)], itp_type_head_armor |itp_civilian  ,0, 9 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #["leather_steppe_cap_a", "Leather Steppe Cap", [("nomad_cap_a",0)], itp_shop|itp_type_head_armor   ,0, 24 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 #["leather_steppe_cap_b", "Leather Steppe Cap", [("leather_steppe_cap_a",0)], itp_shop|itp_type_head_armor   ,0, 36 , weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 #["leather_steppe_cap_c", "Leather Steppe Cap", [("leather_steppe_cap_b",0)], itp_shop|itp_type_head_armor   ,0, 51 , weight(1)|abundance(100)|head_armor(16)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
@@ -1727,7 +1728,8 @@ items = [
 
  #TLD NORTHMENMEN ITEMS##########
  ######ARMOR##########
-["northm_armor_a","Northman Armor", [("leather_vest",0)], itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+ #MV: renamed missing mesh "leather_vest" to "leather_jerkin" until someone thinks of something better
+["northm_armor_a","Northman Armor", [("leather_jerkin",0)], itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 ["northm_armor_b","Northman Armor", [("leather_jerkin",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 ["beorning_armor_a","Beorning Chieftan's Tunic", [("beorn_chieftan",0)], itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 ["beorning_armor_b","Beorning Tunic", [("beorn_tunic",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
@@ -1847,7 +1849,7 @@ items = [
  ["far_harad_shield_paint", "Wicker Shield", [("far_harad_c_giles",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item, [(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])],"fac_harad"],
 #["rohan_shield_a"        , "Rohan Shield" , [("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item, [(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 
-["witchking_helmet", "Witchking Helmet", [(" witchking_helmet",0)], itp_type_head_armor  |itp_covers_head ,0, 2755 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
+["witchking_helmet", "Witchking Helmet", [("witchking_helmet",0)], itp_type_head_armor  |itp_covers_head ,0, 2755 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
 # let   witchking_helmet  be the last item (mtarini)
 
 ]

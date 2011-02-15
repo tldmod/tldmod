@@ -1251,7 +1251,7 @@ dialogs = [
 		(else_try),
 			(ge, reg10, 1), (str_store_string, s33, "@Greetings, {s23}."), # player not much thrusted
 		(else_try),
-			(str_store_string, s33, "@So, you are {s23}. I hear you fight for {s25}, so I guess I should consider you an allied."), # player unknown
+			(str_store_string, s33, "@So, you are {s23}. I hear you fight for {s25}, so I guess I should consider you an ally."), # player unknown
 		(try_end),
 
 		# just to see if someone can be given away: backup party, then see if troops which can be given away 
@@ -3226,7 +3226,7 @@ dialogs = [
    "Let me come into the dungeons","find_lost_spears_permission",[]],
 
   [anyone,"find_lost_spears_permission",[(ge, "$g_talk_troop_faction_relation", 0)],
-   "Allright, go. Your relations with my faction are ok.","find_lost_spears_permission_yes",[]],
+   "Alright, go. Your relations with my faction are ok.","find_lost_spears_permission_yes",[]],
 
   [anyone,"find_lost_spears_permission",[],
    "Ye shall not go there. Your relations with my faction are bad.","find_lost_spears_permission_no",[]],
@@ -9681,6 +9681,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "The cattle herd must be at {s13} within 30 days. Sooner is better, much better,\
  but it must be absolutely no later than 30 days.\
  If you can do that, I'd be willing to pay you {reg8} denars for your trouble. Interested?", "move_cattle_herd_quest_brief",
+   []],
+
+#MV: remove when quest dialogs are done, or bugs are fixed   
+  [anyone,"merchant_quest_brief",
+   [(str_store_quest_name,s4,"$random_merchant_quest_no")],
+   "DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.", "mayor_pretalk",
    []],
   
   [anyone|plyr,"move_cattle_herd_quest_brief", [],  "Aye, I can take the herd to {s13}.",

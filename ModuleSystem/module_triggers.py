@@ -23,8 +23,9 @@ from module_constants import *
 ####################################################################################################################
 
 # Some constants for use below
-merchant_inventory_space = 30
-num_merchandise_goods = 36
+#MV: removed - use those in module_constants.py
+#merchant_inventory_space = 30
+#num_merchandise_goods = 36
 
 triggers = [
 # Tutorial:
@@ -97,7 +98,7 @@ triggers = [
 					  
     (try_for_range,":cur_center",towns_begin,towns_end),
         (party_get_slot,":cur_merchant",":cur_center",slot_town_merchant),
-        (neq, ":cur_merchant", -1),
+        (neq, ":cur_merchant", "trp_no_troop"),
         (reset_item_probabilities,100),     
         (troop_clear_inventory,":cur_merchant"),
         (store_troop_faction,":faction",":cur_merchant"),
@@ -132,13 +133,6 @@ triggers = [
             (troop_add_merchandise,":cur_merchant",itp_type_horse,":items"),
         (try_end),
     
-        (troop_ensure_inventory_space,":cur_merchant",65),
-        (troop_sort_inventory, ":cur_merchant"),
-        (store_troop_gold, ":cur_gold",":cur_merchant"),
-        (lt,":cur_gold",600),
-        (store_random_in_range,":new_gold",200,400),
-        (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
-
     # Add trade goods to merchant inventories
         (reset_item_probabilities,100),
         (try_for_range, ":cur_goods", trade_goods_begin, trade_goods_end),
@@ -152,16 +146,26 @@ triggers = [
             (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
             (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
             (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            (set_item_probability_in_merchandise,":cur_goods",":cur_probability"),
+            #MV: just set to 100 for now, so game can be playable
+            (set_item_probability_in_merchandise,":cur_goods",100),
+            #(set_item_probability_in_merchandise,":cur_goods",":cur_probability"),
         (try_end),
         (troop_add_merchandise,":cur_merchant",itp_type_goods,num_merchandise_goods),
+        
+        (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
+        (troop_sort_inventory, ":cur_merchant"),
+        (store_troop_gold, ":cur_gold",":cur_merchant"),
+        (lt,":cur_gold",600),
+        (store_random_in_range,":new_gold",200,400),
+        (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
 	(try_end),
 ]),
 
-  (5.7, 0, 0.0, [(store_num_parties_created,reg(3),"pt_manhunters"),
-                 (lt,reg(3),num_max_zendar_manhunters),
-                 (store_num_parties_of_template, reg(2), "pt_manhunters"), (lt,reg(2),3)],
-                [(set_spawn_radius,1),(spawn_around_party,"p_zendar","pt_manhunters")]),
+#MV: removed manhunters
+  # (5.7, 0, 0.0, [(store_num_parties_created,reg(3),"pt_manhunters"),
+                 # (lt,reg(3),num_max_zendar_manhunters),
+                 # (store_num_parties_of_template, reg(2), "pt_manhunters"), (lt,reg(2),3)],
+                # [(set_spawn_radius,1),(spawn_around_party,"p_zendar","pt_manhunters")]),
 
   (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_prisoner_train_party"),(party_is_in_any_town,reg(2)),],
               [(store_faction_of_party, ":faction_no", reg(2)),

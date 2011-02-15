@@ -224,7 +224,7 @@ sounds = [
  ("orc_victory",sf_priority_5|sf_vol_10, ["orc_victory_1.mp3","orc_victory_2.mp3","orc_victory_3.mp3","orc_victory_4.mp3","orc_victory_5.mp3","orc_victory_6.mp3"]), 
  #tf_uruk			= 6 #(Uruks, Uruk Hai)
 #tf_harad	= 7
- ("haradrim_yell",sf_priority_6|sf_vol_8, ["har_yell_1.mp3.mp3","har_yell_2.mp3","har_yell_3.mp3","har_yell_4.mp3","har_yell_5.mp3","har_yell_6.mp3","har_yell_7.mp3","har_yell_8.mp3","har_yell_9.mp3","har_yell_10.mp3"]),
+ ("haradrim_yell",sf_priority_6|sf_vol_8, ["har_yell_1.mp3","har_yell_2.mp3","har_yell_3.mp3","har_yell_4.mp3","har_yell_5.mp3","har_yell_6.mp3","har_yell_7.mp3","har_yell_8.mp3","har_yell_9.mp3","har_yell_10.mp3"]),
  ("haradrim_victory",sf_priority_5|sf_vol_10, ["haradrim_victory_1.mp3","haradrim_victory_2.mp3","haradrim_victory_3.mp3","haradrim_victory_4.mp3","haradrim_victory_5.mp3"]),
  ("haradrim_die",sf_priority_10,  ["wilhelm.ogg","man_death_8.ogg","man_death_8b.ogg","man_death_11.ogg","man_death_14.ogg","man_death_16.ogg","man_death_18.ogg","man_death_21.ogg","man_death_29.ogg","man_death_40.ogg","man_death_44.ogg","man_death_46.ogg","man_death_48.ogg","man_death_64.ogg"]),# ["man_fall_1.ogg","man_fall_2.ogg","man_fall_3.ogg","man_fall_4.ogg"]),
 #tf_easterling	= 8 #(Rhun/khand)
@@ -256,14 +256,14 @@ sounds = [
  ("thunder",sf_priority_10|sf_vol_10, ["thunder.ogg"]),
  ("pull_ballista",sf_vol_8, ["pull_bow_1.ogg"]),
  ("evil_orders",sf_vol_3, ["order_form_ranks_(orc).mp3"]),
- ("evil_horn",sf_vol_10, ["horn_isengard.mp3"]),
+ ("evil_horn",sf_vol_10, ["horn_isengard.ogg"]),
 
  ("nazgul_skreech_long",sf_priority_10|sf_vol_10, ["nazgul_02.mp3"]),
  ("nazgul_skreech_short",sf_priority_10|sf_vol_10, ["nazgul_01.mp3"]),
 
  ("horror_scream_man",sf_priority_10|sf_vol_10, ["horror_scream_man_0.wav","horror_scream_man_1.wav","horror_scream_man_2.wav","horror_scream_man_3.wav","horror_scream_man_4.wav"]),
- ("horror_scream_woman",sf_priority_10|sf_vol_10, ["horror_scream_women.wav"]),
- ("horror_scream_orc",sf_priority_10|sf_vol_10, ["horror_scream_women.wav"]),
+ ("horror_scream_woman",sf_priority_10|sf_vol_10, ["horror_scream_woman.wav"]),
+ ("horror_scream_orc",sf_priority_10|sf_vol_10, ["horror_scream_orc.wav"]),
  
  ("warg_lone_woof",sf_priority_6|sf_vol_10, ["warg_bark01.mp3","warg_bark02.mp3","warg_bark03.mp3","warg_growl01.mp3","warg_howl01.mp3"
 											   #,"warg_howl02.mp3","warg_howl03.mp3"

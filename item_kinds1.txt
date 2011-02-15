@@ -1,5 +1,5 @@
 itemsfile version 2
-874
+873
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -165,7 +165,7 @@ itemsfile version 2
  itm_white_tunic_b Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553648141 0 47 0 2.000000 100 0 11 6 0 0 0 0 0 0 0 0
 0
 
- itm_white_tunic_a Tunic_Jacket Tunic_Jacket 1  generic_tunic_c 0  553648141 0 47 0 2.000000 100 0 11 6 0 0 0 0 0 0 0 0
+ itm_white_tunic_c Tunic_Jacket Tunic_Jacket 1  generic_tunic_c 0  553648141 0 47 0 2.000000 100 0 11 6 0 0 0 0 0 0 0 0
 0
 
  itm_blue_tunic Blue_Tunic Blue_Tunic 1  dale_tunic 0  553648141 0 47 0 2.000000 100 0 11 6 0 0 0 0 0 0 0 0
@@ -220,9 +220,6 @@ itemsfile version 2
  itm_fine_hat Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  1610678284 0 10 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_fine_hat Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  1610678284 0 10 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
-0
-
  itm_courtly_outfit Courtly_Outfit Courtly_Outfit 1  nobleman_outf 0  553648141 0 348 0 4.000000 100 0 14 10 0 0 0 0 0 0 0 0
 0
 
@@ -253,7 +250,7 @@ itemsfile version 2
  itm_headcloth Headcloth Headcloth 1  headcloth 0  536936460 0 1 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_female_hood Lady's_Hood Lady's_Hood 1  woolen_hood 0  536936460 0 9 0 1.000000 100 10 0 0 0 0 0 0 0 0 0 0
+ itm_female_hood Lady's_Hood Lady's_Hood 1  woolen_hood 0  536870924 0 9 0 1.000000 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_skullcap Skullcap Skullcap 1  skull_cap_new_a 0  65548 0 60 0 1.000000 100 20 0 0 0 0 0 0 0 0 0 0
@@ -2423,7 +2420,7 @@ itemsfile version 2
  itm_umbar_pike Umbar_Pike Umbar_Pike 1  corsair_pike 0  407207940 201326848 125 0 3.000000 100 0 0 0 0 16384 81 0 191 0 282 528
 0
 
- itm_northm_armor_a Northman_Armor Northman_Armor 1  leather_vest 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
+ itm_northm_armor_a Northman_Armor Northman_Armor 1  leather_jerkin 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
 0
 
  itm_northm_armor_b Northman_Armor Northman_Armor 1  leather_jerkin 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
@@ -2634,6 +2631,6 @@ itemsfile version 2
 1
 -50.000000  1 1981 2 1729382256910270520 0 
 
- itm_witchking_helmet Witchking_Helmet Witchking_Helmet 1   witchking_helmet 0  2147483660 0 2755 0 2.500000 100 49 0 0 9 0 0 0 0 0 0 0
+ itm_witchking_helmet Witchking_Helmet Witchking_Helmet 1  witchking_helmet 0  2147483660 0 2755 0 2.500000 100 49 0 0 9 0 0 0 0 0 0 0
 0
 

@@ -1,5 +1,5 @@
 soundsfile version 2
-521
+522
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -447,7 +447,7 @@ soundsfile version 2
  orc_victory_4.mp3 2640
  orc_victory_5.mp3 2640
  orc_victory_6.mp3 2640
- har_yell_1.mp3.mp3 2144
+ har_yell_1.mp3 2144
  har_yell_2.mp3 2144
  har_yell_3.mp3 2144
  har_yell_4.mp3 2144
@@ -506,7 +506,7 @@ soundsfile version 2
  s_big_weaponSwing.wav 2672
  thunder.ogg 2720
  order_form_ranks_(orc).mp3 768
- horn_isengard.mp3 2560
+ horn_isengard.ogg 2560
  nazgul_02.mp3 2720
  nazgul_01.mp3 2720
  horror_scream_man_0.wav 2720
@@ -514,7 +514,8 @@ soundsfile version 2
  horror_scream_man_2.wav 2720
  horror_scream_man_3.wav 2720
  horror_scream_man_4.wav 2720
- horror_scream_women.wav 2720
+ horror_scream_woman.wav 2720
+ horror_scream_orc.wav 2720
  warg_bark01.mp3 2656
  warg_bark02.mp3 2656
  warg_bark03.mp3 2656
@@ -729,7 +730,7 @@ snd_nazgul_skreech_long 2720 1 507
 snd_nazgul_skreech_short 2720 1 508 
 snd_horror_scream_man 2720 5 509 510 511 512 513 
 snd_horror_scream_woman 2720 1 514 
-snd_horror_scream_orc 2720 1 514 
-snd_warg_lone_woof 2656 5 515 516 517 518 519 
+snd_horror_scream_orc 2720 1 515 
+snd_warg_lone_woof 2656 5 516 517 518 519 520 
 snd_horse_snort_again 1872 5 323 324 325 326 327 
-snd_spear_trap 2416 1 520 
+snd_spear_trap 2416 1 521 

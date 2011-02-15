@@ -217,7 +217,7 @@ qstr_{s9}_and_{s10} {s9}_and_{s10}
 qstr_{s9}_{s10} {s9},_{s10}
 qstr_{s11}_and_{s12} {s11}_and_{s12}
 qstr_{s11}_{s12} {s11},_{s12}
-qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_occupies_{s8}.^Its_vassals_are_{s10}.^{s5}_is_at_war_with_{s12}.
+qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_controls_{s8}.^Its_commanders_are_{s10}.^{s5}_is_at_war_with_{s12}.
 qstr_{s5}_has_been_defeat {s5}_has_been_defeated!
 qstr_{s5}_has_a_strength_ {s5}_has_a_strength_of_{reg1}_men_in_total.
 qstr_{s54}_is_a_claimant_ {s54}_is_a_claimant_to_the_throne_of_{s56}.
@@ -225,7 +225,7 @@ qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
 qstr_^{s59} ^{s59}
-qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_is_a_vassal_of_{s55}_of_{s56}.^}}Renown:_{reg5}.^{reg9?{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:{reg3?She:He}_has_no_fiefs.}{s59}
+qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_serves_{s55}_of_{s56}.^}}Renown:_{reg5}.^{reg9?{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:{reg3?She:He}_has_no_fiefs.}{s59}
 qstr_The_last_time_you_sa The_last_time_you_saw_{reg1?her:him},_{s1}
 qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_town_of_{s50} The_town_of_{s50}
@@ -417,7 +417,7 @@ qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_DEBUG:_player_defeat DEBUG:_player_defeated_a_party_of_faction_{s4}.
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
 qstr_{s3}_withnesses_your {s3}_withnesses_your_victory_against_{s4}.
-qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_withnesses_your_victory.
+qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
 qstr_Victory_comment._Pla Victory_comment._Player_was_alone
@@ -535,7 +535,7 @@ qstr__no_fiefs_ (no_fiefs)
 qstr__fiefs:_{s0}_ (fiefs:_{s0})
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
-qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_{s25},_so_I_guess_I_should_consider_you_an_allied.
+qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_{s25},_so_I_guess_I_should_consider_you_an_ally.
 qstr_Thank_you_officer.^ Thank_you,_officer.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
 qstr_My_duty. My_duty.

@@ -1293,8 +1293,8 @@ scripts = [
       (party_set_slot, subfaction_data[x][1], slot_town_prison_guard_troop   , subfaction_data[x][3][1]) ,
       (party_set_slot, subfaction_data[x][1], slot_town_castle_guard_troop   , subfaction_data[x][3][2]) ,
 	  (party_set_slot, subfaction_data[x][1],slot_party_subfaction    , subfaction_data[x][0]),
-	  (party_get_slot, ":weaponshmits",      subfaction_data[x][1]    , slot_town_weaponsmith),
-	  (troop_set_slot, ":weaponshmits",      slot_troop_subfaction    , subfaction_data[x][0]),
+	  (party_get_slot, ":weaponsmith",      subfaction_data[x][1]    , slot_town_weaponsmith),
+	  (troop_set_slot, ":weaponsmith",      slot_troop_subfaction    , subfaction_data[x][0]),
 	  ]   for x in range(len(subfaction_data)) ])+[
 	
 	  (party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop,  "trp_steward_guard"), # minas tirith exception
@@ -4660,7 +4660,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #      Remove this when test is done
 #       (assign, ":quest_no", "qst_investigate_fangorn"),
-      (assign, ":quest_no", "qst_find_lost_spears"),
+#MV removed, please don't put test code that breaks other code into SVN -      (assign, ":quest_no", "qst_find_lost_spears"),
 #      Remove this when test is done end
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -13236,7 +13236,7 @@ scripts = [
          (try_end),
          (val_add, ":num_enemies", 1),
        (try_end),
-       (add_faction_note_from_sreg, ":faction_no", 0, "@{s5} is ruled by {s6}.^It occupies {s8}.^Its vassals are {s10}.^{s5} is at war with {s12}.", 0),
+       (add_faction_note_from_sreg, ":faction_no", 0, "@{s5} is ruled by {s6}.^It controls {s8}.^Its commanders are {s10}.^{s5} is at war with {s12}.", 0),
      (else_try),
        (is_between, ":faction_no", kingdoms_begin, kingdoms_end),
        (faction_slot_eq, ":faction_no", slot_faction_state, sfs_defeated),
@@ -13349,6 +13349,10 @@ scripts = [
          (val_add, ":num_centers", 1),
        (try_end),
        (troop_get_type, reg3, ":troop_no"),
+       (try_begin),
+         (gt, reg3, 1), #MV: non-humans are male
+         (assign, reg3, 0),
+       (try_end),
        (troop_get_slot, reg5, ":troop_no", slot_troop_renown),
        (str_clear, s59),
        (try_begin),
@@ -13366,7 +13370,7 @@ scripts = [
          (str_store_string, s59, "@^{s59}"),
        (try_end),
        (assign, reg9, ":num_centers"),
-       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} is a vassal of {s55} of {s56}.^}}Renown: {reg5}.^{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:{reg3?She:He} has no fiefs.}{s59}", 0),
+       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.^{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:{reg3?She:He} has no fiefs.}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
      (try_end),
      ]),

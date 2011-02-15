@@ -2995,7 +2995,7 @@ game_menus = [
 				(display_log_message, "@{s3} withnesses your victory against {s4}."),
 			(try_end),
 		(else_try),
-			(display_log_message, "@DEBUG: nobody directly interested withnesses your victory."),
+			(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		(try_end),
 		(assign, ":ambient_faction_backup", "$ambient_faction"),
 		(call_script, "script_set_ambient_faction","$impressed_faction"),
@@ -6262,11 +6262,17 @@ game_menus = [
 #             (party_get_slot, ":spawned_troop", "$current_town", slot_town_armorer),
 #             (set_visitor, 9, ":spawned_troop"),
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_weaponsmith),
-             (set_visitor, 10, ":spawned_troop"),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 10, ":spawned_troop"),
+             (try_end),
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_elder),
              (set_visitor, 11, ":spawned_troop"),
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_horse_merchant),
-             (set_visitor, 12, ":spawned_troop"),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 12, ":spawned_troop"),
+             (try_end),
 
              (call_script, "script_init_town_walkers"),
              (set_jump_mission,"mt_town_center"),
@@ -6296,7 +6302,8 @@ game_menus = [
 	  ("trade_with_arms_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
-	  (party_slot_ge, "$current_town", slot_town_weaponsmith, 1)],
+	  (party_slot_ge, "$current_town", slot_town_weaponsmith, 1),
+      (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),],
        "Visit the {s61} Smiths.",
        [
            (party_get_slot, ":merchant_troop", "$current_town", slot_town_weaponsmith),
@@ -6307,6 +6314,7 @@ game_menus = [
 	  ("trade_with_horse_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
 	  (party_slot_ge, "$current_town", slot_town_horse_merchant, 1),
+      (neg|party_slot_eq, "$current_town", slot_town_horse_merchant, "trp_no_troop"),
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
        "Visit the {s61} Stables.",
        [

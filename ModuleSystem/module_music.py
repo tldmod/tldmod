@@ -39,7 +39,7 @@ tracks = [
 
   ("calm_night_1", "TLD_NightMusic.mp3", mtf_module_track|mtf_sit_night, mtf_sit_town|mtf_sit_tavern|mtf_sit_travel),
   ("captured", "capture.ogg", mtf_persist_until_finished, 0),
-  ("defeated_by_neutral", "TLD_Killed_By_Evil.mp3",mtf_persist_until_finished|mtf_sit_killed, 0),
+  ("defeated_by_neutral", "TLD_Killed_By_Evil.mp3",mtf_module_track|mtf_persist_until_finished|mtf_sit_killed, 0),
   ("defeated_by_neutral_2", "defeated_by_neutral_2.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
   ("defeated_by_neutral_3", "defeated_by_neutral_3.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
 

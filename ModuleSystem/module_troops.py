@@ -2221,7 +2221,7 @@ troops = [
 ["northmen_lord","Grimbeorn_the_Old","bug",tf_hero,0,0,fac_beorn,
    [itm_hunter,itm_nobleman_outfit,itm_leather_boots,itm_mail_boots,itm_mail_hauberk,itm_mail_mittens,itm_two_handed_axe,itm_hide_covered_round_shield,itm_skullcap,],
       knight_attrib_5,wp(220),knight_skills_5|knows_trainer_4,0x0000000e2c0c028a068e8c18557b12a500000000001c0fe80000000000000000,nord_face_older_2],
-["gundabad_lord","Mt.Gundagad_King","bug",tf_hero| tf_uruk,0,0,fac_gundabad,
+["gundabad_lord","Mt.Gundabad_King","bug",tf_hero| tf_uruk,0,0,fac_gundabad,
    [itm_warhorse,itm_gambeson,itm_leather_boots,itm_splinted_greaves,itm_mail_hauberk,itm_mail_mittens,itm_bastard_sword_a,itm_shield_heater_c,itm_skullcap,],
       knight_attrib_3,wp(220),knight_skills_4|knows_trainer_5,0x0000000efc04119225848dac5d50d62400000000001d48b80000000000000000,rhodok_face_old_2],
 ["dale_lord","Dale_King","bug",tf_hero,0,0,fac_dale,
@@ -2261,7 +2261,7 @@ troops = [
 ["knight_1_7","Faramir","bug",tf_hero,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_leather_jerkin,itm_mail_hauberk,itm_leather_boots,itm_splinted_greaves,itm_mail_mittens,itm_bastard_sword_a,itm_shield_heater_c,],
       knight_attrib_2,wp(160),knight_skills_2,0x0000000c380c30c2392a8e5322a5392c00000000001e5c620000000000000000,swadian_face_old_2],
-["knight_1_8","Forlong_the_fat","bug",tf_hero,0,0,fac_gondor,
+["knight_1_8","Forlong_the_Fat","bug",tf_hero,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_short_tunic,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_bastard_sword_a,itm_shield_heater_c,],
       knight_attrib_3,wp(190),knight_skills_3,0x0000000c3f10000532d45203954e192200000000001e47630000000000000000,swadian_face_older_2],
 #Rohan
@@ -2881,6 +2881,9 @@ troops = [
    [],
       0,0,0,0],
 ["merchants_end","bug","bug",tf_hero,0,0,fac_commoners,   [],      0,0,0,0],
+["no_troop","Bug","bug",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_commoners,
+   [],
+      0,0,0,0],
  
 # Chests
 ["zendar_chest","Zendar_Chest","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      def_attrib,0,0,0],
@@ -2974,7 +2977,7 @@ troops = [
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,man_face_middle_1,man_face_older_2],
 ["dorwinion_bandit        ","Dorwinion_Bandit","Dorwinion_Bandits",tfg_armor|tfg_shield,0,0,fac_outlaws,
-   [itm_sword_viking_1,itm_leather_boots,itm_white_tunic_a,itm_white_tunic_b,itm_javelin,itm_club,itm_shortened_spear,itm_spear,itm_wooden_shield,itm_blue_tunic,itm_woolen_hose,],
+   [itm_sword_viking_1,itm_leather_boots,itm_white_tunic_a,itm_white_tunic_b,itm_white_tunic_c,itm_javelin,itm_club,itm_shortened_spear,itm_spear,itm_wooden_shield,itm_blue_tunic,itm_woolen_hose,],
          def_attrib|level(12),wp(100),knows_common,man_face_middle_1,mercenary_face_2],
 ["dorwinion_raider        ","Dorwinion_Raider","Dorwinion_Raiders",tfg_armor|tfg_shield|tfg_boots|tfg_helm,0,0,fac_neutral,
    [itm_rhun_shortsword,itm_rhun_sword,itm_rhun_sword,itm_rhun_helm_g,itm_rhun_helm_h,itm_rhun_armor_b,itm_rhun_armor_a,itm_rhun_armor_d,itm_javelin,itm_rhun_shield,itm_leather_boots,],
