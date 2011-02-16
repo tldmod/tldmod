@@ -2218,9 +2218,10 @@ troops = [
 ["guldur_lord","Lord_Guldur","bug",tf_hero,0,0,fac_guldur,
    [itm_courser,itm_leather_jerkin,itm_leather_boots,itm_splinted_greaves,itm_mail_hauberk,itm_mail_mittens,itm_shield_heater_c,itm_skullcap,],
       knight_attrib_5,wp(220),knight_skills_5|knows_trainer_6,0x0000000cee0051cc44be2d14d370c65c00000000001ed6df0000000000000000,khergit_face_old_2],
-["northmen_lord","Grimbeorn_the_Old","bug",tf_hero,0,0,fac_beorn,
-   [itm_hunter,itm_nobleman_outfit,itm_leather_boots,itm_mail_boots,itm_mail_hauberk,itm_mail_mittens,itm_two_handed_axe,itm_hide_covered_round_shield,itm_skullcap,],
-      knight_attrib_5,wp(220),knight_skills_5|knows_trainer_4,0x0000000e2c0c028a068e8c18557b12a500000000001c0fe80000000000000000,nord_face_older_2],
+#MV: commented out - not used and duplicate
+#["northmen_lord","Grimbeorn_the_Old","bug",tf_hero,0,0,fac_beorn,
+#   [itm_hunter,itm_nobleman_outfit,itm_leather_boots,itm_mail_boots,itm_mail_hauberk,itm_mail_mittens,itm_two_handed_axe,itm_hide_covered_round_shield,itm_skullcap,],
+#      knight_attrib_5,wp(220),knight_skills_5|knows_trainer_4,0x0000000e2c0c028a068e8c18557b12a500000000001c0fe80000000000000000,nord_face_older_2],
 ["gundabad_lord","Mt.Gundabad_King","bug",tf_hero| tf_uruk,0,0,fac_gundabad,
    [itm_warhorse,itm_gambeson,itm_leather_boots,itm_splinted_greaves,itm_mail_hauberk,itm_mail_mittens,itm_bastard_sword_a,itm_shield_heater_c,itm_skullcap,],
       knight_attrib_3,wp(220),knight_skills_4|knows_trainer_5,0x0000000efc04119225848dac5d50d62400000000001d48b80000000000000000,rhodok_face_old_2],

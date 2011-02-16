@@ -1,4 +1,4 @@
-618
+624
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -367,6 +367,8 @@ qstr_Revengeful Revengeful
 qstr_Vengeful Vengeful
 qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
+qstr_You_have_been_pimped You_have_been_pimped_up!
+qstr_Tribal_orcs_with_wom Tribal_orcs_with_women_spawned!
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
@@ -420,6 +422,7 @@ qstr_{s3}_withnesses_your {s3}_withnesses_your_victory_against_{s4}.
 qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
+qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}
 qstr_Victory_comment._Pla Victory_comment._Player_was_alone
 qstr_Ordinary_victory_com Ordinary_victory_comment._The_player_provided_at_least_40_percent_forces.
 qstr_Player_participation Player_participation_comment._The_enemy_had_at_least_1k_starting_strength.
@@ -572,6 +575,9 @@ qstr_{s9}_asked_you_to_le {s9}_asked_you_to_lend_your_companion_{s3}_to_him_for_
 qstr_{s9}_asked_you_to_col {s9}_asked_you_to_collect_the_debt_of_{reg4}_denars_{s3}_owes_to_him._{s3}_was_at_{s4}_when_you_were_given_this_quest.
 qstr_{s11}_gave_you_a_fak {s11}_gave_you_a_fake_letter_to_fool_{s13}_into_banishing_his_vassal_{s16}._You_are_to_go_near_{s14},_give_the_letter_to_one_of_your_{s15}_and_send_him_into_the_town_as_a_messenger,_believing_his_orders_to_be_genuine.
 qstr_{s9}_has_requested_y {s9}_has_requested_you_to_bring_him_{reg1}_{s3}_as_prisoners.
+qstr_We_have_reports_that We_have_reports_that_several_of_our_allied_patrols_were_ambushed_and_defeated._Some_of_the_men_may_still_yet_live,_captured_by_the_enemy._Yet,_the_morale_of_my_troops_suffers,_as_the_captured_men_will_surely_be_killed,_imprisoned_or_worse._I_want_you_to_rescue_{reg1}_prisoners,_and_bolster_the_morale_of_our_troops.
+qstr_We_have_reports_that_ We_have_reports_that_several_of_our_patrols_were_ambushed_and_defeated._Some_of_the_cowards_may_still_yet_live,_captured_by_the_enemy._As_much_as_they_are_expendable,_it's_a_waste_to_let_them_die_in_some_prison_hole._I_want_you_to_rescue_{reg1}_prisoners,_and_make_them_fight_for_us_again.
+qstr_{s9}_has_asked_you_to {s9}_has_asked_you_to_rescue_{reg1}_prisoners.
 qstr_Lend_your_experience Lend_your_experienced_surgeon_{s3}_to_{s1}.
 qstr_Then_take_it_with_my Then_take_it,_with_my_eternal_thanks._You_are_a_noble_{man/woman}._I_will_never_forget_that_you_helped_me_in_my_time_of_need.
 qstr_Forgive_me_{playerna Forgive_me,_{playername},_but_I_must_insist_you_accept_it._The_money_means_little_to_me,_and_I_owe_you_so_much._Here,_take_it,_and_let_us_speak_no_more_of_this.

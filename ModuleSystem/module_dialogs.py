@@ -4499,6 +4499,17 @@ dialogs = [
     (party_add_prisoners, "$g_encountered_party", ":quest_target_troop", ":quest_target_amount"),
     (call_script, "script_finish_quest", "qst_capture_prisoners", 100)]],
 
+  [anyone|plyr,"lord_active_mission_2",[
+                            (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
+                            (check_quest_succeeded,"qst_rescue_prisoners"),
+                            (quest_slot_eq, "qst_rescue_prisoners", slot_quest_giver_troop, "$g_talk_troop"),
+                            (quest_get_slot, ":quest_target_amount", "qst_rescue_prisoners", slot_quest_target_amount),
+                             #slot_quest_current_state is where the actual number of rescued prisoners is kept
+                            (quest_slot_ge, "qst_rescue_prisoners", slot_quest_current_state, ":quest_target_amount"),
+                            (assign, reg1, ":quest_target_amount"),
+                            ],
+   "Indeed. I have rescued {reg1} allied prisoners and they joined my party.", "lord_generic_mission_thank",
+   [(call_script, "script_finish_quest", "qst_rescue_prisoners", 100)]],
 
   [anyone|plyr,"lord_active_mission_2",
    [
@@ -5751,7 +5762,29 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##       (try_end),
        (str_store_string, s2, "@{s9} has requested you to bring him {reg1} {s3} as prisoners."),
     ]],
-  
+
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_rescue_prisoners")],
+ "{s5}", "lord_mission_told",
+   [
+       (quest_get_slot, ":quest_target_amount", "qst_rescue_prisoners", slot_quest_target_amount),
+       (assign,reg1,":quest_target_amount"),
+       (str_store_troop_name_link,s9,"$g_talk_troop"),
+       (try_begin),
+         (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+         (str_store_string, s5, "@We have reports that several of our allied patrols were ambushed and defeated.\
+ Some of the men may still yet live, captured by the enemy.\
+ Yet, the morale of my troops suffers, as the captured men will surely be killed, imprisoned or worse.\
+ I want you to rescue {reg1} prisoners, and bolster the morale of our troops."), #Good
+       (else_try),
+         (str_store_string, s5, "@We have reports that several of our patrols were ambushed and defeated.\
+ Some of the cowards may still yet live, captured by the enemy.\
+ As much as they are expendable, it's a waste to let them die in some prison hole.\
+ I want you to rescue {reg1} prisoners, and make them fight for us again."), #Evil
+       (try_end),
+       (setup_quest_text,"$random_quest_no"),
+       (str_store_string, s2, "@{s9} has asked you to rescue {reg1} prisoners."),
+    ]],
+    
 
   [anyone,"lord_tell_mission", [], "No {playername}. I do not need your help at this time.", "lord_pretalk",[]],
 

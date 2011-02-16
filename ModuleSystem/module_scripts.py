@@ -3182,7 +3182,7 @@ scripts = [
       #      (val_div, ":loot_probability", ":num_shares"),
 
 	  (assign, ":can_steal", 1),  # can steal objects of own faction or , of no faction
-	  (try_begin), (faction_slot_eq, "$players_kingdom", faction_side_good), (assign, ":can_steal", 0),(try_end), # good guys don't steal
+	  (try_begin), (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), (assign, ":can_steal", 0),(try_end), # good guys don't steal
       # Loot the defeated party
       (store_mul, ":loot_probability", player_loot_share, 3),
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
@@ -3574,16 +3574,18 @@ scripts = [
   # This script will clear the root party and all parties attached to it recursively.
   ("clear_party_group",
     [ (store_script_param_1, ":root_party"),
-  #TLD assign faction strength penalties for party destruction, GA
-      (store_faction_of_party, ":faction", ":root_party"),
 	  (try_begin),
-	    (is_between, ":faction", kingdoms_begin, kingdoms_end),
-	    (faction_get_slot,":strength",":faction",slot_faction_strength_tmp),
-	    (party_get_slot,":party_value", ":root_party",slot_party_victory_value),
+        (ge, ":root_party", 0), #MV fix for script errors
+  #TLD assign faction strength penalties for party destruction, GA
+        (store_faction_of_party, ":faction", ":root_party"),
+	    (try_begin),
+	      (is_between, ":faction", kingdoms_begin, kingdoms_end),
+	      (faction_get_slot,":strength",":faction",slot_faction_strength_tmp),
+	      (party_get_slot,":party_value", ":root_party",slot_party_victory_value),
 	    #(party_get_slot,":party_type", ":root_party",slot_party_type),
 #	    (try_begin),
 #	      (eq,":party_type",spt_kingdom_hero_party), #hosts dying decrease faction strength unconditionally 
-		    (val_sub, ":strength",":party_value"),
+		  (val_sub, ":strength",":party_value"),
 #	    (else_try),
 #		  (store_div,":s0",":strength",1000),
 #		  (store_sub,":s",":strength",":party_value"),
@@ -3591,21 +3593,23 @@ scripts = [
 #		  (eq,":s0",":s"),
 #		    (val_sub, ":strength",":party_value"),   # lesser parties dying can't shift faction strength through threshold
 #	    (try_end),
-	    (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
+	      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
 	  #debug
-	    (assign,reg0,":party_value"),
-	    (assign,reg1,":strength"),
-	    (str_store_faction_name,s1,":faction"),
-	    (display_message,"@DEBUG:{s1} strength decreased by {reg0} to {reg1}."),
-	  (try_end),
+	      (assign,reg0,":party_value"),
+	      (assign,reg1,":strength"),
+	      (str_store_faction_name,s1,":faction"),
+	      (display_message,"@DEBUG:{s1} strength decreased by {reg0} to {reg1}."),
+	    (try_end),
 #end TLD
 
-      (party_clear, ":root_party"),
-      (party_get_num_attached_parties, ":num_attached_parties", ":root_party"),
-      (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
-        (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
-        (call_script, "script_clear_party_group", ":attached_party"),
-      (try_end),
+        (party_clear, ":root_party"),
+        (party_get_num_attached_parties, ":num_attached_parties", ":root_party"),
+        (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
+          (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
+          (call_script, "script_clear_party_group", ":attached_party"),
+        (try_end),
+      
+	  (try_end),
   ]),
   
   #script_get_nonempty_party_in_group:
@@ -4661,6 +4665,7 @@ scripts = [
 #      Remove this when test is done
 #       (assign, ":quest_no", "qst_investigate_fangorn"),
 #MV removed, please don't put test code that breaks other code into SVN -      (assign, ":quest_no", "qst_find_lost_spears"),
+#(assign, ":quest_no", "qst_rescue_prisoners"), #MV debug
 #      Remove this when test is done end
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5641,6 +5646,18 @@ scripts = [
             (assign, ":quest_xp_reward", ":quest_gold_reward"),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 90),
+            (assign, ":quest_dont_give_again_period", 20),
+          (try_end),
+        (else_try),
+          (eq, ":quest_no", "qst_rescue_prisoners"),
+          (try_begin),
+            (store_character_level, ":quest_target_amount", "trp_player"),
+            (val_clamp, ":quest_target_amount", 5, 21),
+            (assign, ":quest_importance", 1),
+            (store_mul, ":quest_gold_reward", ":quest_target_amount", 20),
+            (assign, ":quest_xp_reward", ":quest_gold_reward"),
+            (assign, ":result", ":quest_no"),
+            (assign, ":quest_expiration_days", 60),
             (assign, ":quest_dont_give_again_period", 20),
           (try_end),
         (try_end),

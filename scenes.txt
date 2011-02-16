@@ -58,7 +58,7 @@ scn_random_scene_desert_forest random_scene_desert_forest 1792 none none 0.00000
  outer_terrain_forest 
 scn_camp_scene camp_scene 256 none none 0.000000 0.000000 100.000000 100.000000 -0.500000 0x000000003004cd26800354d70000618700003c3300007a8c 
   0 
-  2  715  716 
+  2  714  715 
  outer_terrain_plain 
 scn_camp_scene_horse_track camp_scene_horse_track 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x300028000003e8fa0000034e00004b34000059be 
   0 
@@ -174,7 +174,7 @@ scn_reserved12 reserved12 1 thirsty_lion bo_thirsty_lion -100.000000 -100.000000
  0 
 scn_training_ground training_ground 256 none none 0.000000 0.000000 120.000000 120.000000 -100.000000 0x30000500400360d80000189f00002a8380006d91 
   0 
-  2  710  711 
+  2  709  710 
  outer_terrain_plain 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
@@ -242,7 +242,7 @@ scn_zendar_center zendar_center 256 none none 0.000000 0.000000 100.000000 100.0
  outer_terrain_plain 
 scn_the_happy_boar the_happy_boar 1 interior_town_house_f bo_interior_town_house_f -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  59 
-  1  709 
+  1  708 
  0 
 scn_zendar_merchant zendar_merchant 1 interior_town_house_i bo_interior_town_house_i -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
@@ -274,7 +274,7 @@ scn_dol_amroth_center dol_amroth_center 256 none none 0.000000 0.000000 200.0000
  outer_terrain_seaside_1 
 scn_edhellond_center edhellond_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000004300798b2000380e3000037960000573900003f48 
   0 
-  1  713 
+  1  712 
  outer_terrain_seaside_1 
 scn_lossarnach_center lossarnach_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007300005000006ada4000051a90000386b00003791 
   0 
@@ -290,7 +290,7 @@ scn_erech_center erech_center 256 none none 0.000000 0.000000 200.000000 200.000
  outer_mountains2north 
 scn_pinnath_gelin_center pinnath_gelin_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x300416a600035cd600007ee80000012100003fbc 
   0 
-  1  712 
+  1  711 
  outer_terrain_plain 
 scn_ethring_center ethring_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x000000042005591e00040506000059a100002cd500005052 
   0 
@@ -310,7 +310,7 @@ scn_henneth_annun_center henneth_annun_center 256 none none 0.000000 0.000000 10
  outer_terrain_plain 
 scn_cair_andros_center cair_andros_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
-  1  712 
+  1  711 
  outer_terrain_osgiliath_9 
 scn_edoras_center edoras_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007200005004009c5a200000f5200005bd50000739d 
   0 
@@ -338,7 +338,7 @@ scn_west_emnet_center west_emnet_center 256 none none 0.000000 0.000000 100.0000
  outer_terrain_plain 
 scn_eastfold_center eastfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
-  1  714 
+  1  713 
  outer_mountains2south 
 scn_barad_dur_center barad_dur_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072005591e00040506000059a100002cd500005052 
   0 
@@ -398,7 +398,7 @@ scn_thranduils_halls_center thranduils_halls_center 256 none none 0.000000 0.000
  outer_terrain_forest 
 scn_woodelf_camp_center woodelf_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
   0 
-  1  713 
+  1  712 
  outer_terrain_plain 
 scn_woodsmen_village_center woodsmen_village_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
@@ -426,7 +426,7 @@ scn_erebor_center erebor_center 1 hallfini bo_hallfini -100.000000 -200.000000 1
  0 
 scn_dunland_camp_center dunland_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
-  1  714 
+  1  713 
  outer_terrain_plain 
 scn_harad_camp_center harad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072005591e00040506000059a100002cd500005052 
   0 

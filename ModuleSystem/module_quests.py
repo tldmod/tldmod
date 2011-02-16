@@ -106,6 +106,12 @@ quests = [
   "{s9} wanted you to bring him {reg1} {s3} as prisoners."
   ),
 
+#TLD lord missions begin  
+ ("rescue_prisoners", "Rescue {reg1} Prisoners", qf_random_quest,
+  "{s9} wanted you to rescue {reg1} prisoners."
+  ),
+#TLD lord missions end  
+
 ## ("hunt_down_raiders", "Hunt Down Raiders",qf_random_quest,
 ##  "{s1} asked you to hunt down and punish the raiders that attacked a village near {s3} before they reach the safety of their base at {s4}."
 ##  ),

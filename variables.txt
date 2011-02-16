@@ -44,7 +44,6 @@ pretender_told_story
 town_to_rebel
 town_to_approach
 g_invite_offered_center
-g_player_follow_army_warnings
 prisoner_lord_to_buy
 g_ransom_offer_rejected
 g_convince_quest
@@ -129,9 +128,7 @@ g_battle_result
 g_custom_battle_scene
 g_player_troop
 last_menu
-character_gender
 g_cheat_selected_faction
-menu_report_upkeep_faction
 g_player_icon_state
 g_camp_mode
 cheat_mode
@@ -148,7 +145,6 @@ g_ent_water_ever_drunk
 g_prisoner_recruit_troop_id
 g_prisoner_recruit_size
 g_prisoner_recruit_last_time
-g_player_reading_book
 g_enemy_party
 g_ally_party
 new_encounter
@@ -307,7 +303,6 @@ min__x
 min__y
 max__x
 max__y
-mask
 player_horse
 battlemap_min_x
 battlemap_min_y
@@ -415,7 +410,6 @@ g_player_icon_foot_archer
 player_looks_like_an_orc
 ambient_faction
 g_cur_week_half_daily_wage_payments
-g_ent_seen
 g_player_luck
 g_player_party_icon
 disable_npc_complaints
@@ -425,7 +419,6 @@ g_encountered_party_faction
 g_encountered_party_relation
 g_encountered_party_type
 g_encountered_party_template
-playerparty_prebattle_regulars
 qst_deliver_wine_debt
 incriminate_quest_sacrificed_troop
 number_of_combatants
@@ -496,13 +489,15 @@ npc_with_personality_clash
 player_side_race_group
 enemy_side_race_group
 dungeon_access
-g_infinite_camping
-agent_no_player
-distance_spear_trap_1
-spear_trap_1
 trap_is_active
 atak
-advantage
 faction_good
 faction_evil
 cbadvantage
+g_player_follow_army_warnings
+character_gender
+menu_report_upkeep_faction
+g_infinite_camping
+mask
+g_ent_seen
+playerparty_prebattle_regulars

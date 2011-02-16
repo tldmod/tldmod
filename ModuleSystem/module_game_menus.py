@@ -1468,15 +1468,76 @@ game_menus = [
 				
 
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat"),]),
+## MadVader test begin
+     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
+## MadVader test end
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
     ]
   ),
+  
+## MadVader test begin
+  ("camp_mvtest",0,
+   "What do you want to test today?",
+   "none", [],
+  [
+  ("camp_mvtest_pimp",[],"Pimp me up first!",
+    [(call_script, "script_change_troop_renown", "trp_player" ,100),
+     (troop_raise_attribute, "trp_player",ca_strength,20),
+     (troop_raise_attribute, "trp_player",ca_agility,20),
+     (troop_raise_attribute, "trp_player",ca_intelligence,20),
+     (troop_raise_attribute, "trp_player",ca_charisma,20),
+     (troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 500),
+     (troop_raise_proficiency_linear, "trp_player", wpt_two_handed_weapon, 500),
+     (troop_raise_proficiency_linear, "trp_player", wpt_polearm, 500),
+     (troop_raise_proficiency_linear, "trp_player", wpt_archery, 500),
+     (troop_raise_proficiency_linear, "trp_player", wpt_crossbow, 500),
+     (troop_raise_proficiency_linear, "trp_player", wpt_throwing, 500),
+     (troop_raise_skill, "trp_player",skl_ironflesh,10),
+     (troop_raise_skill, "trp_player",skl_power_strike,10),
+     (troop_raise_skill, "trp_player",skl_weapon_master,10),
+     (troop_raise_skill, "trp_player",skl_athletics,10),
+     (troop_raise_skill, "trp_player",skl_power_draw,10),
+     (troop_raise_skill, "trp_player",skl_riding,10),
+     (troop_raise_skill, "trp_player",skl_spotting,10),
+     (troop_raise_skill, "trp_player",skl_prisoner_management,10),
+     (troop_raise_skill, "trp_player",skl_tactics,10),
+     (troop_raise_skill, "trp_player",skl_inventory_management,10),
+     (troop_raise_skill, "trp_player",skl_wound_treatment,10),
+     (troop_raise_skill, "trp_player",skl_surgery,10),
+     (troop_raise_skill, "trp_player",skl_first_aid,10),
+     (troop_raise_skill, "trp_player",skl_pathfinding,10),
+     (troop_raise_skill, "trp_player",skl_leadership,10),
+     (troop_raise_skill, "trp_player",skl_engineer,10),
+     (troop_add_gold, "trp_player", 1000000),
+	 (troop_set_health, "trp_player", 100),
+     (troop_add_item, "trp_player","itm_heavy_lance",0), #imod_balanced
+     (troop_add_item, "trp_player","itm_gondor_shield_e",0), #imod_reinforced
+     (troop_add_item, "trp_player","itm_gondor_ranger_sword",0), #imod_masterwork
+     (troop_add_item, "trp_player","itm_gondor_hunter",imod_heavy), #imod_champion
+     (troop_add_item, "trp_player","itm_riv_helm_c",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_mirkwood_light_scale",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_dol_greaves",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_lembas",0),
+     (troop_equip_items, "trp_player"),
+     (display_message, "@You have been pimped up!", 0x30FFC8),
+    ]
+   ),
+   ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
+     (set_spawn_radius, 0),
+     (spawn_around_party, "p_main_party", "pt_looters"),
+     (party_add_prisoners, reg0, "trp_peasant_woman", 10),
+     (display_message, "@Tribal orcs with women spawned!", 0x30FFC8),
+   ]),            
+   ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])            
+]),
+## MadVader test end
 
   ##     #TLD - assasination menus begin (Kolba)
      
       (
     "assasins_attack_player_won",mnf_disable_all_keys,
-    "Text after victory. Example - trial of assasination was done by faction {s2}, which is leaded by {s3}.",
+    "Text after victory. Example - trial of assassination was done by faction {s2}, which is led by {s3}.",
     "none",
     [
 		#add prize
@@ -3133,9 +3194,35 @@ game_menus = [
           (store_add, ":total_capture_size", ":num_rescued_prisoners", ":num_captured_enemies"),
           (gt, ":total_capture_size", 0),
           (change_screen_exchange_with_party, "p_temp_party"),
+          (try_begin),
+            (check_quest_active, "qst_rescue_prisoners"),
+            (quest_set_slot, "qst_rescue_prisoners", slot_quest_target_center, ":num_rescued_prisoners"), #abusing a slot as a global
+          (try_end),
         (else_try),
           (eq, "$loot_screen_shown", 0),
           (assign, "$loot_screen_shown", 1),
+          
+          (try_begin),
+            (check_quest_active, "qst_rescue_prisoners"),
+            (neg|check_quest_succeeded, "qst_rescue_prisoners"),
+            (neg|check_quest_failed, "qst_rescue_prisoners"),
+            (quest_get_slot, ":available", "qst_rescue_prisoners", slot_quest_target_center), #before...
+            (party_get_num_companions, ":not_rescued", "p_temp_party"), #...and after
+            (store_sub, ":rescued", ":available", ":not_rescued"),
+            (gt, ":rescued", 0), #ignore dismissing troops
+            (quest_get_slot, ":total_rescued", "qst_rescue_prisoners", slot_quest_current_state),
+            (val_add, ":total_rescued", ":rescued"),
+            (quest_set_slot, "qst_rescue_prisoners", slot_quest_current_state, ":total_rescued"),
+            (assign, reg1, ":total_rescued"),
+            (str_store_string, s2, "@Prisoners rescued so far: {reg1}"),
+            (add_quest_note_from_sreg, "qst_rescue_prisoners", 3, s2, 0),
+            (quest_get_slot, ":quest_target_amount", "qst_rescue_prisoners", slot_quest_target_amount),
+            (try_begin),
+              (ge, ":total_rescued", ":quest_target_amount"),
+              (call_script, "script_succeed_quest", "qst_rescue_prisoners"),
+            (try_end),
+          (try_end),
+
           (try_begin),
             (gt, "$g_ally_party", 0),
             (call_script, "script_party_add_party", "$g_ally_party", "p_temp_party"), #Add remaining prisoners to ally TODO: FIX it.
