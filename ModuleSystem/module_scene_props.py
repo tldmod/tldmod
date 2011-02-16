@@ -1925,4 +1925,7 @@ scene_props = [
   ("elf_ramp",0,"elf_ramp","bo_elf_ramp",[]),  
   ("elf_treehouse",0,"elf_treehouse","bo_elf_treehouse",[]),  
 
+  ("rohan_woodstairs",0,"rohan_woodstairs","bo_rohan_woodstairs",[]),
+  
+
 ]

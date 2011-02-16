@@ -156,7 +156,7 @@ scenes = [
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_interior_castle_z", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_rohan_meduseld_int", (-100,-100),(100,100),-100,"0",["exit"],[]),
 
   ("gondor_tavern" ,sf_indoors, "interior_tavern_f"    ,"bo_interior_tavern_f"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("rohan_tavern"  ,sf_indoors, "interior_tavern_g"    ,"bo_interior_tavern_g"    , (-100,-100),(100,100),-100,"0",["exit"],[]),

@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1266
+ 1267
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3851,5 +3851,8 @@ spr_elf_ramp 0 0 elf_ramp bo_elf_ramp 0
 
 
 spr_elf_treehouse 0 0 elf_treehouse bo_elf_treehouse 0
+
+
+spr_rohan_woodstairs 0 0 rohan_woodstairs bo_rohan_woodstairs 0
 
 
