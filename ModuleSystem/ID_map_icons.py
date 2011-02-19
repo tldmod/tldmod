@@ -162,3 +162,5 @@ icon_mfc_northmen = 160
 icon_mfc_dale = 161
 icon_mfc_gundabad = 162
 icon_mfc_dunland = 163
+icon_thranduil = 164
+icon_esgaroth = 165

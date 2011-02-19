@@ -193,12 +193,9 @@ map_icons = [
   ("smallvillage",mcn_no_shadow,"smallvillage", 2.0,0),
   ("tree",mcn_no_shadow,"Tree", 1.0,0),
 
-
   ("custom_banner_01",0,"custom_map_banner_01", banner_scale, 0,
-   [
-     (ti_on_init_map_icon,
-      [
-        (store_trigger_param_1, ":party_no"),
+   [(ti_on_init_map_icon,
+      [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
         (try_begin),
           (ge, ":leader_troop", 0),
@@ -207,10 +204,8 @@ map_icons = [
         ]),
      ]),
   ("custom_banner_02",0,"custom_map_banner_02", banner_scale, 0,
-   [
-     (ti_on_init_map_icon,
-      [
-        (store_trigger_param_1, ":party_no"),
+   [(ti_on_init_map_icon,
+      [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
         (try_begin),
           (ge, ":leader_troop", 0),
@@ -219,10 +214,8 @@ map_icons = [
         ]),
      ]),
   ("custom_banner_03",0,"custom_map_banner_03", banner_scale, 0,
-   [
-     (ti_on_init_map_icon,
-      [
-        (store_trigger_param_1, ":party_no"),
+   [(ti_on_init_map_icon,
+      [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
         (try_begin),
           (ge, ":leader_troop", 0),
@@ -271,4 +264,8 @@ map_icons = [
    ("mfc_dale",0,"map_flag_dale_center", banner_scale,0),
    ("mfc_gundabad",0,"map_flag_gundabad_center", banner_scale,0),
    ("mfc_dunland",0,"map_flag_dunland_center", banner_scale,0),
+
+  ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
+  ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
+
 ]

@@ -183,3 +183,5 @@ scn_thranduil_hall_room = 181
 scn_random_scene_parade = 182
 scn_woodelf_west_camp_center = 183
 scn_edoras_center_gastyle = 184
+scn_goblin_north_outpost_center = 185
+scn_goblin_south_outpost_center = 186

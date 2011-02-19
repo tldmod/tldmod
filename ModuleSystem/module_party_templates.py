@@ -394,7 +394,7 @@ party_templates = [
   ("guldur_reinf_a", "guldur_reinf_a", 0, 0, fac_commoners, 0, [(trp_large_orc_of_mordor,4,8),(trp_orc_snaga_of_mordor,2,4)]),
   ("guldur_reinf_b", "guldur_reinf_b", 0, 0, fac_commoners, 0, [(trp_orc_archer_of_mordor,1,3),(trp_uruk_of_mordor,3,5),(trp_large_orc_of_mordor,2,5)]),
   ("guldur_reinf_c", "guldur_reinf_c", 0, 0, fac_commoners, 0, [(trp_warg_rider_of_gorgoroth,3,6)]),
-#Norhtmen
+#Beornings
   ("northmen_reinf_a", "northmen_reinf_a", 0, 0, fac_commoners, 0, [(trp_beorning_vale_man,4,8),(trp_beorning_vale_man,2,4)]),
   ("northmen_reinf_b", "northmen_reinf_b", 0, 0, fac_commoners, 0, [(trp_beorning_vale_man,1,3),(trp_beorning_warrior,3,5),(trp_beorning_vale_man,2,5)]),
   ("northmen_reinf_c", "northmen_reinf_c", 0, 0, fac_commoners, 0, [(trp_beorning_vale_man,3,6)]),

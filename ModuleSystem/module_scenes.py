@@ -245,5 +245,8 @@ scenes = [
   ("woodelf_west_camp_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
   ("edoras_center_gastyle"   ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000005200005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2south"),
 
+  ("goblin_north_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("goblin_south_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+
   ]
 

@@ -109,7 +109,7 @@ parties = [
     ("town_cerin_dolen"   ,"Cerin_Dolen",     icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  6.0,-135.7),[],170),
     ("town_cerin_amroth"  ,"Cerin_Amroth",    icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[],170),
 # Woodelves towns
-    ("town_thranduils_halls","Thranduil's_Halls",   icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[],170),
+    ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[],170),
     ("town_woodelf_camp","Woodelf_Camp",            icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.9,-159.6),[],170),
     ("town_woodelf_west_camp","Woodelf_West_Camp",  icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.2,-215.4),[],170),
 #    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
@@ -121,8 +121,8 @@ parties = [
     ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(29.0,-151.3),[],200),
     ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.2,-94.4),[],170),
 # Dale towns
-    ("town_dale","Dale",             icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.1,-223.9),[],170),
-    ("town_esgaroth","Esgaroth",     icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.6,-218.9),[],170),
+    ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.1,-223.9),[],170),
+    ("town_esgaroth","Esgaroth",     icon_esgaroth |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.4,-217.9),[],170),
 #    ("town_dale_town","Dale Town",   icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-79.9,-204.6),[],170),
 # Dunlanders towns
     ("town_dunland_camp","Dunlander_Camp", icon_nomadcamp_b|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(45.9,-43.5),[],350),
@@ -150,9 +150,9 @@ parties = [
     ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.2,-194.0),[],170),
     ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.6,-217.0),[],170),
 # Dwarves towns
-    ("town_erebor"       ,"Erebor",                 icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.7,-226.4),[],130),
+    ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.7,-226.4),[],130),
 #    ("town_erebor_mining_camp","Erebor Mining Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-66.4,-229.0),[],170),
-    ("town_ironhill_camp","Iron_Hill_Dwarf_Camp",   icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
+    ("town_ironhill_camp","Iron_Hill_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
 
 #    ("town_pelargir_port","Port",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.48,59.15),[],240),
 

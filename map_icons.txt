@@ -1,5 +1,5 @@
 map_icons_file version 1
-236
+238
 player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
 
 
@@ -493,6 +493,12 @@ mfc_gundabad 0 map_flag_gundabad_center 0.300000 0 0 0 0 0
 
 
 mfc_dunland 0 map_flag_dunland_center 0.300000 0 0 0 0 0
+
+
+thranduil 1 thranduilhall 1.000000 0 0 0 0 0
+
+
+esgaroth 1 esgaroth 1.000000 0 0 0 0 0
 
 
 map_str_000 1 map_str_000 1.000000 0 0 0 0 0
