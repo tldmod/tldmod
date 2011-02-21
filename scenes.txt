@@ -307,7 +307,7 @@ scn_west_osgiliath_center west_osgiliath_center 256 none none 0.000000 0.000000 
 scn_henneth_annun_center henneth_annun_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005000002b4ac00002ccd800026dc00000c1d 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_plain_2 
 scn_cair_andros_center cair_andros_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
   0 
@@ -315,7 +315,7 @@ scn_cair_andros_center cair_andros_center 256 none none 0.000000 0.000000 100.00
 scn_edoras_center edoras_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007200005004009c5a200000f5200005bd50000739d 
   0 
   0 
- outer_terrain_steppe_2  
+ outer_terrain_rohan 
 scn_aldburg_center aldburg_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072007956000025896000037e800000e860000674b 
   0 
   0 
@@ -327,15 +327,15 @@ scn_hornburg_center hornburg_center 256 none none 0.000000 0.000000 100.000000 1
 scn_east_emnet_center east_emnet_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000720045abc000308c4000029d9000033bd000009b9 
   0 
   0 
- outer_terrain_steppe 
+ outer_terrain_rohan 
 scn_westfold_center westfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000720049cbd00025896000048e90000164400002b3f 
   0 
   0 
- outer_mountains2south 
+ outer_terrain_rohan 
 scn_west_emnet_center west_emnet_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000720045abc000308c4000029d9000033bd000009b9 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_eastfold_center eastfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
   0 
@@ -371,11 +371,11 @@ scn_isengard_center isengard_center 256 none none 0.000000 0.000000 100.000000 1
 scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
@@ -399,7 +399,7 @@ scn_thranduils_halls_center thranduils_halls_center 256 none none 0.000000 0.000
 scn_woodelf_camp_center woodelf_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_woodsmen_village_center woodsmen_village_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
@@ -427,7 +427,7 @@ scn_erebor_center erebor_center 1 hallfini bo_hallfini -100.000000 -200.000000 1
 scn_dunland_camp_center dunland_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_harad_camp_center harad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072005591e00040506000059a100002cd500005052 
   0 
   0 
@@ -731,7 +731,7 @@ scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_interior_castle_
 scn_random_scene_parade random_scene_parade 768 none none 0.000000 0.000000 220.000000 220.000000 -0.500000 0x000000023c602800000691a400003efe00004b34000059be 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_woodelf_west_camp_center woodelf_west_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
   0 
   0 
