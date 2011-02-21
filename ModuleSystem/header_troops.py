@@ -9,32 +9,32 @@ from header_common import *
 #Troop flags
 ####################################################
 #TLD start (Hokie)
-tf_male         = 0	# (Dale/Northmen/corsair/bandits)
-tf_female       = 1	# all factions
-tf_gondor		= 2
-tf_rohan		= 3
-tf_dunland	= 4
-tf_orc_begin    = 5
-tf_orc			= 5 #(orcs, goblins)
-tf_uruk			= 6 
-tf_urukhai		= 7 
-tf_orc_end      = 8
-tf_harad		= 8
-tf_dwarf		= 9
-tf_troll		= 10
-tf_dunedain		= 11
-tf_elf_begin    = 12
-tf_lorien	= 12
-tf_imladris	= 13
-tf_woodelf		= 14
-tf_elf_end      = 15
-tf_easterling	= 15  
-tf_khand    	= 15
-tf_rhun     	= 15
+tf_male       = 0	# (Dale/Northmen/corsair/bandits)
+tf_female     = 1	# all factions
+tf_gondor     = 2
+tf_rohan      = 3
+tf_dunland    = 4
+tf_orc_begin  = 5
+tf_orc        = 5 #(orcs, goblins)
+tf_uruk       = 6 
+tf_urukhai    = 7 
+tf_orc_end    = 8
+tf_harad      = 8
+tf_dwarf      = 9
+tf_troll      = 10
+tf_dunedain   = 11
+tf_elf_begin  = 12
+tf_lorien     = 12
+tf_imladris   = 13
+tf_woodelf    = 14
+tf_elf_end    = 15
+tf_easterling = 15  
+tf_khand      = 15
+tf_rhun       = 15
 #TLD end (Hokie)
 ####################################################
 
-troop_type_mask   = 0x0000000f
+troop_type_mask      = 0x0000000f
 tf_hero              = 0x00000010
 tf_inactive          = 0x00000020
 tf_unkillable        = 0x00000040

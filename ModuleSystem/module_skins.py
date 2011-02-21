@@ -239,8 +239,7 @@ skins = [
      # ]
   # ),
   
- (
-   "man", 0,
+ ( "man", 0,
    "man_body", "man_calf_l", "m_handL",
    "male_head", man_face_keys,
    ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -273,8 +272,7 @@ skins = [
      ]
   ),  
 #1  
-  (
-    "woman", skf_use_morph_key_30,
+  ( "woman", skf_use_morph_key_30,
     "woman_body",  "woman_calf_l", "f_handL",
     "female_head", woman_face_keys,
     ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s"], #woman_hair_meshes
@@ -296,8 +294,7 @@ skins = [
 
 ########################################################################################################################  
 #2
-  (
-    "gondor", 0,
+  ( "gondor", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", gondor_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -328,12 +325,11 @@ skins = [
   ),  
 ########################################################################################################################  
 #3
-  (
-    "rohan", 0,
+  ( "rohan", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", rohan_face_keys,
     ["man_hair_o", "man_hair_n","man_hair_q","man_hair_r", "man_hair_p"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-    ["beard_h","beard_t","beard_r","beard_q","beard_e","beard_o","beard_i","beard_l",   "beard_j", ], #beard meshes ,"beard_q"
+    ["beard_h","beard_t","beard_r","beard_q","beard_e","beard_o","beard_i","beard_l","beard_j"], #beard meshes ,"beard_q"
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
     [("rohan_face_a",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
@@ -360,8 +356,7 @@ skins = [
   ),  
 ########################################################################################################################  
 #4 
- (
-    "dunlander", 0,
+ (  "dunland", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", dunlander_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -405,8 +400,7 @@ skins = [
   ),    
 ########################################################################################################################  
 #5
-  (
-    "orc", skf_use_morph_key_20,
+  ( "orc", skf_use_morph_key_20,
     "orc_body", "orc_calf_l", "o_handL",
     "orc_head", orc_face_keys,
     ["orc_ears01","orc_ears02","orc_ears03","orc_ears04", "orc_hair01","orc_hair02","orc_hair03","orc_hair04","orc_hair05","orc_hair06","orc_hair07","orc_hair08","orc_hair09","orc_hair10","orc_hair11"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -432,8 +426,7 @@ skins = [
   ), 
 ########################################################################################################################  
 #6
-  (
-    "urukhai", 0,
+  ( "urukhai", 0,
     "urukhai_body", "urukhai_calf_l", "uh_handL",
     "urukhai_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
@@ -459,8 +452,7 @@ skins = [
   ),  
 ########################################################################################################################  
 #7
-  (
-    "uruk", 0,
+  ( "uruk", 0,
     "uruk_body", "uruk_calf_l", "u_handL",
     "uruk_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
@@ -485,8 +477,7 @@ skins = [
      ]
   ),  ########################################################################################################################  
 #8 
- (
-    "haradrim", 0,
+ (  "harad", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", haradrim_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -517,8 +508,7 @@ skins = [
   ),  
 ########################################################################################################################  
 #9   Dwarf
-  (
-    "dwarf", skf_use_morph_key_10 ,
+  ( "dwarf", skf_use_morph_key_10 ,
     "dwarf_body", "dwarf_calf_l", "dwarf_handL",
     "dwarf_head", dwarf_face_keys,
     ["man_hair_s","man_hair_n","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_y9"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
@@ -530,9 +520,7 @@ skins = [
      ("dwarfface_7",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
      ("dwarfface_midage",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
      ("dwarfface_midage_2",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
-#     ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("dwarfface_rugged",0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff007080c]),
-#     ("manface_african",0xff807c8a,["hair_blonde"],[0xff120808, 0xff007080c]),     
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
     "skel_dwarf", 1.0,
@@ -549,8 +537,7 @@ skins = [
   ),  
 ########################################################################################################################  
 #10 Troll
-  (
-    "troll", 0,
+  ( "troll", 0,
     "troll_body", "dummy_mesh", "troll_handL",
     "dummy_mesh", troll_face_keys,
     [], #hair meshes
@@ -566,22 +553,21 @@ skins = [
   ),  
 ########################################################################################################################  
 #11 Dunedain
-  (
-    "dunedain", 0,
+  ( "dunedain", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", dunedain_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("manface_young_2",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
-     ("manface_midage",0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("manface_young",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("manface_young_3",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
-     ("manface_7",0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff007080c]),
+    [("manface_young_2" ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
+     ("manface_midage"  ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+     ("manface_young"   ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("manface_young_3" ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
+     ("manface_7"       ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff007080c]),
      ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     ("manface_rugged",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff007080c]),
-     ("manface_african",0xff807c8a,["hair_blonde"],[0xff120808, 0xff007080c]),     
+     ("manface_rugged"  ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff007080c]),
+#     ("manface_african" ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff007080c]),     
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_dunedain_yell"),(voice_victory,"snd_dunedain_victory")], #voice sounds
     "skel_human", 1.0,
@@ -598,22 +584,17 @@ skins = [
   ),    
 ########################################################################################################################  
 #12
-  (
-    "lothlorien", 0,
+  ( "lorien", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", lothlorien_face_keys,
     ["elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","man_hair_p","elf_hair_6", "elf_hair_7","man_hair_r","man_hair_q","elf_hair_5","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("elfface_young",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
-     ("elfface_young_2",0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("elfface_young_4",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("elfface_young_3",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
-     # ("manface_7",0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff007080c]),
-     # ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     # ("manface_rugged",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff007080c]),
-     # ("manface_african",0xff807c8a,["hair_blonde"],[0xff120808, 0xff007080c]),     
+    [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19]),
+     ("elfface_young_2",0xffdfefe1,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+     ("elfface_young_4",0xffd0e0e0,["hair_blonde_elf"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff007080c]),
      ], #elf_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_lothlorien_yell"),(voice_victory,"snd_lothlorien_victory")], #voice sounds
     "skel_human", 1.0,
@@ -630,18 +611,17 @@ skins = [
   ),  
 ########################################################################################################################  
 #13
-  (
-    "rivendell", 0,
+  ( "imladris", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", rivendell_face_keys,
     ["elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","man_hair_p","elf_hair_6", "elf_hair_7","man_hair_r","man_hair_q","elf_hair_5","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("elfface_young",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
-     ("elfface_young_2",0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("elfface_young_4",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("elfface_young_3",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
+    [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19]),
+     ("elfface_young_2",0xffdfefe1,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+     ("elfface_young_4",0xffd0e0e0,["hair_blonde_elf"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff007080c]),
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_rivendell_yell"),(voice_victory,"snd_rivendell_victory")], #voice sounds
     "skel_human", 1.0,
@@ -658,18 +638,17 @@ skins = [
   ),  
 ########################################################################################################################  
 #14
- (
-    "mirkwood", 0,
+ (  "woodelf", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", mirkwood_face_keys,
-    ["elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","man_hair_p","elf_hair_6", "elf_hair_7","man_hair_r","man_hair_q","elf_hair_5","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-    [], #beard meshes ,"beard_q"
+    ["elf_hair_1","elf_hair_2","elf_hair_3","elf_hair_4","man_hair_p","elf_hair_5", "elf_hair_6","man_hair_r","man_hair_q","elf_hair_7","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
+    ["beard_q"], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
-    ["beard_blonde"], #beard_materials
-    [("elfface_young",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
-     ("elfface_young_2",0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("elfface_young_4",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("elfface_young_3",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
+    [], #beard_materials"beard_blonde"
+    [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19]),
+     ("elfface_young_2",0xffdfefe1,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+     ("elfface_young_4",0xffd0e0e0,["hair_blonde_elf"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff007080c]),
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_mirkwood_yell"),(voice_victory,"snd_mirkwood_victory")], #voice sounds
     "skel_human", 1.0,
@@ -687,8 +666,7 @@ skins = [
  
 ########################################################################################################################  
 #15    Khand   +  Rhun   +   Easterling
-  (
-    "evil_man", 0,
+  ( "evil_man", 0,
     "man_body", "man_calf_l", "m_handL",
     "male_head", easterling_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",

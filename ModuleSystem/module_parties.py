@@ -106,13 +106,13 @@ parties = [
     ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.393986,-54.170471),[],170),
 # Lothlorien towns
     ("town_caras_galadhon","Caras_Galadhon",  icon_grove |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.7,-131.3),[],350),
-    ("town_cerin_dolen"   ,"Cerin_Dolen",     icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  6.0,-135.7),[],170),
-    ("town_cerin_amroth"  ,"Cerin_Amroth",    icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[],170),
+    ("town_cerin_dolen"   ,"Cerin_Dolen",     icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  6.0,-135.7),[],170),
+    ("town_cerin_amroth"  ,"Cerin_Amroth",    icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[],170),
 # Woodelves towns
     ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[],170),
-    ("town_woodelf_camp","Woodelf_Camp",            icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.9,-159.6),[],170),
-    ("town_woodelf_west_camp","Woodelf_West_Camp",  icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.2,-215.4),[],170),
-#    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_camp |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
+    ("town_woodelf_camp","Woodelf_Camp",            icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.9,-159.6),[],170),
+    ("town_woodelf_west_camp","Woodelf_West_Camp",  icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.2,-215.4),[],170),
+#    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
 # Woodmen and Beorning towns   
     ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-27.3,-197.8),[],170),
     ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.9,-184.7),[],170),
@@ -152,7 +152,7 @@ parties = [
 # Dwarves towns
     ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.7,-226.4),[],130),
 #    ("town_erebor_mining_camp","Erebor Mining Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-66.4,-229.0),[],170),
-    ("town_ironhill_camp","Iron_Hill_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
+    ("town_ironhill_camp","Iron_Hills_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
 
 #    ("town_pelargir_port","Port",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.48,59.15),[],240),
 
