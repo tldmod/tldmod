@@ -116,30 +116,30 @@ map_icons = [
 #TLD end 
 
   ("town",mcn_no_shadow,"map_town_a", 0.35,0),
-  ("town_steppe",mcn_no_shadow,"map_town_steppe_a", 0.35,0),
+#  ("town_steppe",mcn_no_shadow,"map_town_steppe_a", 0.35,0),
   ("village_a",mcn_no_shadow,"map_village_a", 0.45, 0),
-  ("village_burnt_a",mcn_no_shadow,"map_village_burnt_a", 0.45, 0),
-  ("village_deserted_a",mcn_no_shadow,"map_village_deserted_a", 0.45, 0),
+#  ("village_burnt_a",mcn_no_shadow,"map_village_burnt_a", 0.45, 0),
+#  ("village_deserted_a",mcn_no_shadow,"map_village_deserted_a", 0.45, 0),
 
   ("camp",mcn_no_shadow,"camp_tent", 0.25, 0),
   ("ship",mcn_no_shadow,"boat_sail_on", 0.23, snd_footstep_grass, 0.0, 0.05, 0),
   ("ship_on_land",mcn_no_shadow,"boat_sail_off", 0.23, 0),
 
-  ("castle_a",mcn_no_shadow,"map_castle_a", 0.35,0),
-  ("castle_b",mcn_no_shadow,"map_castle_b", 0.35,0),
+#  ("castle_a",mcn_no_shadow,"map_castle_a", 0.35,0),
+#  ("castle_b",mcn_no_shadow,"map_castle_b", 0.35,0),
   ("castle_c",mcn_no_shadow,"map_castle_c", 0.35,0),
-  ("castle_d",mcn_no_shadow,"map_castle_d", 0.35,0),
-  ("town_snow",mcn_no_shadow,"map_town_snow_a", 0.35,0),
+#  ("castle_d",mcn_no_shadow,"map_castle_d", 0.35,0),
+#  ("town_snow",mcn_no_shadow,"map_town_snow_a", 0.35,0),
 
-  ("village_snow_a",mcn_no_shadow,"map_village_snow_a", 0.45, 0),
-  ("village_snow_burnt_a",mcn_no_shadow,"map_village_snow_burnt_a", 0.45, 0),
-  ("village_snow_deserted_a",mcn_no_shadow,"map_village_snow_deserted_a", 0.45, 0),
+#  ("village_snow_a",mcn_no_shadow,"map_village_snow_a", 0.45, 0),
+#  ("village_snow_burnt_a",mcn_no_shadow,"map_village_snow_burnt_a", 0.45, 0),
+#  ("village_snow_deserted_a",mcn_no_shadow,"map_village_snow_deserted_a", 0.45, 0),
 
-  ("castle_snow_a",mcn_no_shadow,"map_castle_snow_a", 0.35,0),
-  ("castle_snow_b",mcn_no_shadow,"map_castle_snow_b", 0.35,0),
+#  ("castle_snow_a",mcn_no_shadow,"map_castle_snow_a", 0.35,0),
+#  ("castle_snow_b",mcn_no_shadow,"map_castle_snow_b", 0.35,0),
   ("mule",0,"icon_mule", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
   ("cattle",0,"icon_cow", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
-  ("training_ground",mcn_no_shadow,"training", 0.35,0),
+#  ("training_ground",mcn_no_shadow,"training", 0.35,0),
 
   #("bridge_a",mcn_no_shadow,"map_river_bridge_a", 1.27,0),
   #("bridge_b",mcn_no_shadow,"map_river_bridge_b", 0.7,0),
@@ -223,6 +223,9 @@ map_icons = [
         (try_end),
         ]),
      ]),
+
+  #indication for fords
+  ("ford_rocks",0,"ford_rocks", 0.6, 0),
 
   # party map banners
    ("mfp_gondor",0,"map_flag_gondor_lord", banner_scale,0),

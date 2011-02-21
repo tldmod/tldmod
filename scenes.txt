@@ -375,11 +375,11 @@ scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0.000000 0.000
 scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
   0 
   0 
- outer_terrain_rohan 
+ outer_terrain_plain 
 scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_caras_galadhon_center caras_galadhon_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 

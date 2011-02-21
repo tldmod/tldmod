@@ -45,3 +45,4 @@ psys_map_village_fire = 43
 psys_map_village_fire_smoke = 44
 psys_map_village_looted_smoke = 45
 psys_dungeon_water_drops = 46
+psys_map_water_splash = 47

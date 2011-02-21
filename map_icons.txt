@@ -1,5 +1,5 @@
 map_icons_file version 1
-238
+154
 player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
 
 
@@ -204,16 +204,7 @@ wargrider_walk_x4 0 wargrider_walk_x4 0.150000 17 0.150000 0.173000 0.000000 0
 town 1 map_town_a 0.350000 0 0 0 0 0
 
 
-town_steppe 1 map_town_steppe_a 0.350000 0 0 0 0 0
-
-
 village_a 1 map_village_a 0.450000 0 0 0 0 0
-
-
-village_burnt_a 1 map_village_burnt_a 0.450000 0 0 0 0 0
-
-
-village_deserted_a 1 map_village_deserted_a 0.450000 0 0 0 0 0
 
 
 camp 1 camp_tent 0.250000 0 0 0 0 0
@@ -225,43 +216,13 @@ ship 1 boat_sail_on 0.230000 17 0.000000 0.050000 0.000000 0
 ship_on_land 1 boat_sail_off 0.230000 0 0 0 0 0
 
 
-castle_a 1 map_castle_a 0.350000 0 0 0 0 0
-
-
-castle_b 1 map_castle_b 0.350000 0 0 0 0 0
-
-
 castle_c 1 map_castle_c 0.350000 0 0 0 0 0
-
-
-castle_d 1 map_castle_d 0.350000 0 0 0 0 0
-
-
-town_snow 1 map_town_snow_a 0.350000 0 0 0 0 0
-
-
-village_snow_a 1 map_village_snow_a 0.450000 0 0 0 0 0
-
-
-village_snow_burnt_a 1 map_village_snow_burnt_a 0.450000 0 0 0 0 0
-
-
-village_snow_deserted_a 1 map_village_snow_deserted_a 0.450000 0 0 0 0 0
-
-
-castle_snow_a 1 map_castle_snow_a 0.350000 0 0 0 0 0
-
-
-castle_snow_b 1 map_castle_snow_b 0.350000 0 0 0 0 0
 
 
 mule 0 icon_mule 0.200000 17 0.150000 0.173000 0.000000 0
 
 
 cattle 0 icon_cow 0.200000 17 0.150000 0.173000 0.000000 0
-
-
-training_ground 1 training 0.350000 0 0 0 0 0
 
 
 ancient_ruins 1 ancient_ruins 1.000000 0 0 0 0 0
@@ -384,6 +345,9 @@ custom_banner_03 0 custom_map_banner_03 0.300000 0 0 0 0 1
 -70.000000  6 2071 1 1224979098644774912 521 3 1224979098644774913 1224979098644774912 7 4 0 30 2 1224979098644774913 0 1983 2 1729382256910270509 1224979098644774913 3 0 
 
 
+ford_rocks 0 ford_rocks 0.600000 0 0 0 0 0
+
+
 mfp_gondor 0 map_flag_gondor_lord 0.300000 0 0 0 0 0
 
 
@@ -499,221 +463,5 @@ thranduil 1 thranduilhall 1.000000 0 0 0 0 0
 
 
 esgaroth 1 esgaroth 1.000000 0 0 0 0 0
-
-
-map_str_000 1 map_str_000 1.000000 0 0 0 0 0
-
-
-map_str_001 1 map_str_001 1.000000 0 0 0 0 0
-
-
-map_str_002 1 map_str_002 1.000000 0 0 0 0 0
-
-
-map_str_003 1 map_str_003 1.000000 0 0 0 0 0
-
-
-map_str_004 1 map_str_004 1.000000 0 0 0 0 0
-
-
-map_str_005 1 map_str_005 1.000000 0 0 0 0 0
-
-
-map_str_007 1 map_str_007 1.000000 0 0 0 0 0
-
-
-map_str_008 1 map_str_008 1.000000 0 0 0 0 0
-
-
-map_str_009 1 map_str_009 1.000000 0 0 0 0 0
-
-
-map_str_010 1 map_str_010 1.000000 0 0 0 0 0
-
-
-map_str_011 1 map_str_011 1.000000 0 0 0 0 0
-
-
-map_str_012 1 map_str_012 1.000000 0 0 0 0 0
-
-
-map_str_013 1 map_str_013 1.000000 0 0 0 0 0
-
-
-map_str_014 1 map_str_014 1.000000 0 0 0 0 0
-
-
-map_str_015 1 map_str_015 1.000000 0 0 0 0 0
-
-
-map_str_016 1 map_str_016 1.000000 0 0 0 0 0
-
-
-map_str_017 1 map_str_017 1.000000 0 0 0 0 0
-
-
-map_str_019 1 map_str_019 1.000000 0 0 0 0 0
-
-
-map_str_020 1 map_str_020 1.000000 0 0 0 0 0
-
-
-map_str_022 1 map_str_022 1.000000 0 0 0 0 0
-
-
-map_str_024 1 map_str_024 1.000000 0 0 0 0 0
-
-
-map_str_025 1 map_str_025 1.000000 0 0 0 0 0
-
-
-map_str_026 1 map_str_026 1.000000 0 0 0 0 0
-
-
-map_str_027 1 map_str_027 1.000000 0 0 0 0 0
-
-
-map_str_028 1 map_str_028 1.000000 0 0 0 0 0
-
-
-map_str_029 1 map_str_029 1.000000 0 0 0 0 0
-
-
-map_str_030 1 map_str_030 1.000000 0 0 0 0 0
-
-
-map_str_032 1 map_str_032 1.000000 0 0 0 0 0
-
-
-map_str_033 1 map_str_033 1.000000 0 0 0 0 0
-
-
-map_str_034 1 map_str_034 1.000000 0 0 0 0 0
-
-
-map_str_035 1 map_str_035 1.000000 0 0 0 0 0
-
-
-map_str_036 1 map_str_036 1.000000 0 0 0 0 0
-
-
-map_str_037 1 map_str_037 1.000000 0 0 0 0 0
-
-
-map_str_038 1 map_str_038 1.000000 0 0 0 0 0
-
-
-map_str_039 1 map_str_039 1.000000 0 0 0 0 0
-
-
-map_str_040 1 map_str_040 1.000000 0 0 0 0 0
-
-
-map_str_041 1 map_str_041 1.000000 0 0 0 0 0
-
-
-map_str_042 1 map_str_042 1.000000 0 0 0 0 0
-
-
-map_str_043 1 map_str_043 1.000000 0 0 0 0 0
-
-
-map_str_044 1 map_str_044 1.000000 0 0 0 0 0
-
-
-map_str_045 1 map_str_045 1.000000 0 0 0 0 0
-
-
-map_str_046 1 map_str_046 1.000000 0 0 0 0 0
-
-
-map_str_047 1 map_str_047 1.000000 0 0 0 0 0
-
-
-map_str_048 1 map_str_048 1.000000 0 0 0 0 0
-
-
-map_str_051 1 map_str_051 1.000000 0 0 0 0 0
-
-
-map_str_053 1 map_str_053 1.000000 0 0 0 0 0
-
-
-map_str_055 1 map_str_055 1.000000 0 0 0 0 0
-
-
-map_str_056 1 map_str_056 1.000000 0 0 0 0 0
-
-
-map_str_057 1 map_str_057 1.000000 0 0 0 0 0
-
-
-map_str_059 1 map_str_059 1.000000 0 0 0 0 0
-
-
-map_str_060 1 map_str_060 1.000000 0 0 0 0 0
-
-
-map_str_061 1 map_str_061 1.000000 0 0 0 0 0
-
-
-map_str_062 1 map_str_062 1.000000 0 0 0 0 0
-
-
-map_str_063 1 map_str_063 1.000000 0 0 0 0 0
-
-
-map_str_064 1 map_str_064 1.000000 0 0 0 0 0
-
-
-map_str_065 1 map_str_065 1.000000 0 0 0 0 0
-
-
-map_str_067 1 map_str_067 1.000000 0 0 0 0 0
-
-
-map_str_068 1 map_str_068 1.000000 0 0 0 0 0
-
-
-map_str_069 1 map_str_069 1.000000 0 0 0 0 0
-
-
-map_str_070 1 map_str_070 1.000000 0 0 0 0 0
-
-
-map_str_071 1 map_str_071 1.000000 0 0 0 0 0
-
-
-map_str_072 1 map_str_072 1.000000 0 0 0 0 0
-
-
-map_str_073 1 map_str_073 1.000000 0 0 0 0 0
-
-
-map_str_074 1 map_str_074 1.000000 0 0 0 0 0
-
-
-map_str_075 1 map_str_075 1.000000 0 0 0 0 0
-
-
-map_str_076 1 map_str_076 1.000000 0 0 0 0 0
-
-
-map_str_077 1 map_str_077 1.000000 0 0 0 0 0
-
-
-map_str_078 1 map_str_078 1.000000 0 0 0 0 0
-
-
-map_str_079 1 map_str_079 1.000000 0 0 0 0 0
-
-
-map_str_080 1 map_str_080 1.000000 0 0 0 0 0
-
-
-map_str_082 1 map_str_082 1.000000 0 0 0 0 0
-
-
-map_str_083 1 map_str_083 1.000000 0 0 0 0 0
 
 

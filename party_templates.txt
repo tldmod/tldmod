@@ -5,7 +5,7 @@ pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 430 0 4 0 -1 -1 -1 -1 
-pt_cattle_herd Cattle_Herd 2814749767106646 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
+pt_cattle_herd Cattle_Herd 2814749767106634 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
 pt_manhunters Manhunters 2 0 50 238 427 9 40 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 2251799813685293 0 2 494 381 4 25 0 -1 -1 -1 -1 -1 
 pt_forest_bandits Orc_Raiders 562949953421357 0 53 494 381 5 52 0 380 2 40 0 -1 -1 -1 -1 
@@ -29,11 +29,11 @@ pt_war_party War_Party 844424930131970 0 1 238 -1 -1 -1 -1 -1 -1
 pt_messenger_party Messenger 4194306 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_raider_party Raiders 4503599627632642 0 1 494 -1 -1 -1 -1 -1 -1 
 pt_raider_captives Raider_Captives 0 0 1 0 430 6 30 1 -1 -1 -1 -1 -1 
-pt_kingdom_caravan_party Caravan 7036874421960789 0 1 7 431 1 1 0 432 12 40 0 -1 -1 -1 -1 
+pt_kingdom_caravan_party Caravan 7036874421960777 0 1 7 431 1 1 0 432 12 40 0 -1 -1 -1 -1 
 pt_prisoner_train_party Prisoner_Train 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_default_prisoners Default_Prisoners 0 0 1 0 422 5 10 1 -1 -1 -1 -1 -1 
-pt_swadian_caravan Swadian_Caravan 7036874417766485 0 3 7 431 1 1 0 110 8 16 0 124 5 20 0 -1 -1 -1 
-pt_vaegir_caravan Vaegir_Caravan 7036874417766485 0 5 7 431 1 1 0 110 8 16 0 124 5 20 0 -1 -1 -1 
+pt_swadian_caravan Swadian_Caravan 7036874417766473 0 3 7 431 1 1 0 110 8 16 0 124 5 20 0 -1 -1 -1 
+pt_vaegir_caravan Vaegir_Caravan 7036874417766473 0 5 7 431 1 1 0 110 8 16 0 124 5 20 0 -1 -1 -1 
 pt_swadian_prisoner_train Gondor_Prisoner_Train 1407374887747586 0 3 7 110 8 16 0 124 5 20 0 110 1 12 1 110 6 10 1 421 0 5 1 -1 
 pt_vaegir_prisoner_train Rohan_Prisoner_Train 1407374887747587 0 5 7 110 8 16 0 124 5 20 0 110 1 12 1 110 6 10 1 421 0 5 1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904983 0 3 183 122 1 1 0 102 3 5 0 103 3 5 0 -1 -1 -1 
@@ -100,20 +100,20 @@ pt_dale_elite_company Dale_Elite_Company 562949953421314 0 11 238 59 13 25 0 56 
 pt_dwarven_elite_company Dwarven_Elite_Company 562949953421338 0 4 238 84 18 34 0 90 18 34 0 95 18 34 0 564 1 1 0 -1 -1 
 pt_gondor_caravan Gondor_Caravan 562949953421368 0 3 238 108 15 15 0 105 15 15 0 118 15 15 0 114 10 10 0 431 1 1 0 -1 
 pt_rohan_caravan Rohan_Caravan 562949953421369 0 5 238 238 15 15 0 229 15 15 0 222 15 15 0 431 1 1 0 -1 -1 
-pt_rivendell_caravan Rivendell_Caravan 562949953421397 0 9 238 203 20 20 0 199 20 20 0 207 10 10 0 431 1 1 0 -1 -1 
-pt_lorien_caravan Lothlorien_Caravan 562949953421397 0 8 238 177 20 20 0 174 20 20 0 176 10 10 0 431 1 1 0 -1 -1 
-pt_mirkwood_caravan Mirkwood_Caravan 562949953421397 0 10 238 184 20 20 0 191 20 20 0 185 10 10 0 -1 -1 -1 
-pt_dale_caravan Dale_Caravan 562949953421397 0 11 238 55 20 20 0 60 10 10 0 52 20 20 0 431 1 1 0 -1 -1 
-pt_dwarven_caravan Dwarven_Caravan 562949953421397 0 4 238 92 20 20 0 85 20 20 0 90 10 10 0 431 1 1 0 -1 -1 
+pt_rivendell_caravan Rivendell_Caravan 562949953421385 0 9 238 203 20 20 0 199 20 20 0 207 10 10 0 431 1 1 0 -1 -1 
+pt_lorien_caravan Lothlorien_Caravan 562949953421385 0 8 238 177 20 20 0 174 20 20 0 176 10 10 0 431 1 1 0 -1 -1 
+pt_mirkwood_caravan Mirkwood_Caravan 562949953421385 0 10 238 184 20 20 0 191 20 20 0 185 10 10 0 -1 -1 -1 
+pt_dale_caravan Dale_Caravan 562949953421385 0 11 238 55 20 20 0 60 10 10 0 52 20 20 0 431 1 1 0 -1 -1 
+pt_dwarven_caravan Dwarven_Caravan 562949953421385 0 4 238 92 20 20 0 85 20 20 0 90 10 10 0 431 1 1 0 -1 -1 
 pt_mordor_caravan Mordor_Supply_Train 562949953421371 0 6 14 356 10 15 0 347 10 15 0 335 10 15 0 341 0 2 0 -1 -1 
 pt_isengard_caravan Isengard_Supply_Train 562949953421370 0 7 14 322 10 15 0 328 10 15 0 317 10 15 0 320 3 8 0 -1 -1 
 pt_gondor_p_train Gondor_Prisoner_Train 56 0 3 14 108 10 15 0 105 10 15 0 118 10 15 0 114 5 10 0 -1 -1 
 pt_rohan_p_train Rohan_Prisoner_Train 57 0 5 14 238 10 15 0 229 10 15 0 222 10 15 0 -1 -1 -1 
-pt_rivendell_p_train Rivendell_Prisoner_Train 85 0 9 14 203 15 20 0 199 15 20 0 207 5 10 0 -1 -1 -1 
-pt_lorien_p_train Lothlorien_Prisoner_Train 85 0 8 14 177 15 20 0 174 15 20 0 176 5 10 0 -1 -1 -1 
-pt_mirkwood_p_train Mirkwood_Prisoner_Train 85 0 10 14 184 15 20 0 191 15 20 0 185 5 10 0 -1 -1 -1 
-pt_dale_p_train Dale_Prisoner_Train 85 0 11 14 55 15 20 0 60 5 10 0 52 15 20 0 -1 -1 -1 
-pt_dwarven_p_train Dwarven_Prisoner_Train 85 0 4 14 92 15 20 0 85 15 20 0 90 5 10 0 -1 -1 -1 
+pt_rivendell_p_train Rivendell_Prisoner_Train 73 0 9 14 203 15 20 0 199 15 20 0 207 5 10 0 -1 -1 -1 
+pt_lorien_p_train Lothlorien_Prisoner_Train 73 0 8 14 177 15 20 0 174 15 20 0 176 5 10 0 -1 -1 -1 
+pt_mirkwood_p_train Mirkwood_Prisoner_Train 73 0 10 14 184 15 20 0 191 15 20 0 185 5 10 0 -1 -1 -1 
+pt_dale_p_train Dale_Prisoner_Train 73 0 11 14 55 15 20 0 60 5 10 0 52 15 20 0 -1 -1 -1 
+pt_dwarven_p_train Dwarven_Prisoner_Train 73 0 4 14 92 15 20 0 85 15 20 0 90 5 10 0 -1 -1 -1 
 pt_mordor_p_train Mordor_Prisoner_Train 562949953421367 0 6 14 356 10 15 0 347 10 15 0 335 10 15 0 341 0 2 0 -1 -1 
 pt_isengard_p_train Isengard_Prisoner_Train 562949953421366 0 7 14 322 10 15 0 328 10 15 0 317 10 15 0 320 3 8 0 -1 -1 
 pt_swadian_patrol Swadian_Patrol 844424934326274 0 3 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 

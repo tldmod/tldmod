@@ -7554,7 +7554,7 @@ scripts = [
                (party_slot_eq, ":village_no", slot_village_smoke_added, 0),
                (party_add_particle_system, ":village_no", "psys_map_village_fire"),
                (party_add_particle_system, ":village_no", "psys_map_village_fire_smoke"),
-               (party_set_icon, ":village_no", "icon_village_burnt_a"),
+#               (party_set_icon, ":village_no", "icon_village_burnt_a"), # TLD icons economy, GA
                (party_set_slot, ":village_no", slot_village_smoke_added, 1),
              (try_end),
              (try_begin),
@@ -7593,7 +7593,7 @@ scripts = [
              (party_slot_eq, ":village_no", slot_village_smoke_added, 2),
              (party_clear_particle_systems, ":village_no"),
              (party_set_slot, ":village_no", slot_village_smoke_added, 3),
-             (party_set_icon, ":village_no", "icon_village_deserted_a"),
+#             (party_set_icon, ":village_no", "icon_village_deserted_a"), # TLD icons economy, GA
            (try_end),
            (try_begin),
              (gt, ":recover_progress", 100),

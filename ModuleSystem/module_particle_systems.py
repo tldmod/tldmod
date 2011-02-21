@@ -793,7 +793,7 @@ particle_systems = [
      0.1                        #rotation damping
     ), 
 ##### Dungeon Water Drops #####
-    ("dungeon_water_drops", psf_billboard_2d|psf_global_emit_dir|psf_always_emit, "prtcl_rain",
+    ("dungeon_water_drops", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prtcl_rain",
      1, 1, 0.33, 0.8, 0, 0, #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (1.0, 0.2), (1, 0.2),      #alpha keys
      (1.0, 1.0), (1, 1.0),      #red keys
@@ -807,4 +807,17 @@ particle_systems = [
      0,                         #rotation damping
      ), 
 ##### Dungeon Water Drops  END #####
+    ("map_water_splash", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size , "prt_mesh_water_wave_1",
+     2, 2.0, 4, -0.1, 0.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.03, 0.5), (1, 0.0),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.4, 0.3),   (0.5, 1),   #scale keys
+     (0.0, 0.0, 0.0),           #emit box size
+     (0, 0.10, 0.10),                 #emit velocity
+     0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.5                        #rotation damping
+    ),
 ]
