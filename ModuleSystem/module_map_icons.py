@@ -191,7 +191,7 @@ map_icons = [
   
   ("rohantown1",mcn_no_shadow,"RohanTown1", 1.0,0),
   ("smallvillage",mcn_no_shadow,"smallvillage", 2.0,0),
-  ("tree",mcn_no_shadow,"Tree", 1.0,0),
+  ("tree",mcn_no_shadow,"Tree", 0.5,0),
 
   ("custom_banner_01",0,"custom_map_banner_01", banner_scale, 0,
    [(ti_on_init_map_icon,

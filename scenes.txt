@@ -238,7 +238,7 @@ scn_training_ground_ranged_melee_5 training_ground_ranged_melee_5 256 none none 
  outer_terrain_plain 
 scn_zendar_center zendar_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x300bc5430001e0780000448a0000049f00007932 
   3  60  0  61 
-  0 
+  1  712 
  outer_terrain_plain 
 scn_the_happy_boar the_happy_boar 1 interior_town_house_f bo_interior_town_house_f -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  59 
@@ -274,7 +274,7 @@ scn_dol_amroth_center dol_amroth_center 256 none none 0.000000 0.000000 200.0000
  outer_terrain_seaside_1 
 scn_edhellond_center edhellond_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000004300798b2000380e3000037960000573900003f48 
   0 
-  1  712 
+  0 
  outer_terrain_seaside_1 
 scn_lossarnach_center lossarnach_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007300005000006ada4000051a90000386b00003791 
   0 
@@ -290,7 +290,7 @@ scn_erech_center erech_center 256 none none 0.000000 0.000000 200.000000 200.000
  outer_mountains2north 
 scn_pinnath_gelin_center pinnath_gelin_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x300416a600035cd600007ee80000012100003fbc 
   0 
-  1  711 
+  0 
  outer_terrain_plain 
 scn_ethring_center ethring_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x000000042005591e00040506000059a100002cd500005052 
   0 
@@ -310,12 +310,12 @@ scn_henneth_annun_center henneth_annun_center 256 none none 0.000000 0.000000 10
  outer_terrain_plain 
 scn_cair_andros_center cair_andros_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
-  1  711 
+  0 
  outer_terrain_osgiliath_9 
 scn_edoras_center edoras_center 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007200005004009c5a200000f5200005bd50000739d 
   0 
   0 
- outer_mountains2south 
+ outer_terrain_steppe_2  
 scn_aldburg_center aldburg_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072007956000025896000037e800000e860000674b 
   0 
   0 
@@ -338,7 +338,7 @@ scn_west_emnet_center west_emnet_center 256 none none 0.000000 0.000000 100.0000
  outer_terrain_plain 
 scn_eastfold_center eastfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
-  1  713 
+  0 
  outer_mountains2south 
 scn_barad_dur_center barad_dur_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072005591e00040506000059a100002cd500005052 
   0 
@@ -398,7 +398,7 @@ scn_thranduils_halls_center thranduils_halls_center 256 none none 0.000000 0.000
  outer_terrain_forest 
 scn_woodelf_camp_center woodelf_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300798b2000380e3000037960000573900003f48 
   0 
-  1  712 
+  0 
  outer_terrain_plain 
 scn_woodsmen_village_center woodsmen_village_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
@@ -426,7 +426,7 @@ scn_erebor_center erebor_center 1 hallfini bo_hallfini -100.000000 -200.000000 1
  0 
 scn_dunland_camp_center dunland_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
-  1  713 
+  0 
  outer_terrain_plain 
 scn_harad_camp_center harad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000072005591e00040506000059a100002cd500005052 
   0 
@@ -455,7 +455,7 @@ scn_north_rhun_camp_center north_rhun_camp_center 256 none none 0.000000 0.00000
 scn_gundabad_camp_center gundabad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
   0 
   0 
- outer_mountains2west 
+ outer_mountains2north 
 scn_ironhill_camp_center ironhill_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007200016da000364d9000060f500007591000064e7 
   0 
   0 
@@ -707,11 +707,11 @@ scn_rhun_north_camp_center rhun_north_camp_center 256 none none 0.000000 0.00000
 scn_gundabad_ne_outpost_center gundabad_ne_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_mountains2north 
 scn_gundabad_nw_outpost_center gundabad_nw_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_mountains2north 
 scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
@@ -743,8 +743,8 @@ scn_edoras_center_gastyle edoras_center_gastyle 256 none none 0.000000 0.000000 
 scn_goblin_north_outpost_center goblin_north_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_mountains2west 
 scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_mountains2west 
