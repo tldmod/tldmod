@@ -1,5 +1,5 @@
 scenesfile version 1
- 187
+ 189
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -748,3 +748,11 @@ scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0.0000
   0 
   0 
  outer_mountains2west 
+scn_woodsmen_village2_center woodsmen_village2_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
+  0 
+  0 
+ outer_terrain_plain 
+scn_beorning_village_center beorning_village_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
+  0 
+  0 
+ outer_terrain_plain 

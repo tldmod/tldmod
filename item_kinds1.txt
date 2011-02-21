@@ -1,5 +1,5 @@
 itemsfile version 2
-866
+865
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -253,10 +253,7 @@ itemsfile version 2
  itm_female_hood Lady's_Hood Lady's_Hood 1  woolen_hood 0  536870924 0 9 0 1.000000 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_skullcap Skullcap Skullcap 1  skull_cap_new_a 0  65548 0 60 0 1.000000 100 20 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_wooden_stick Wooden_Stick Wooden_Stick 1  wooden_stick 0  4653058 9223388529554358286 4 0 2.500000 100 0 0 0 0 13312 99 0 90 0 256 525
+ itm_wooden_stick Wooden_Stick Wooden_Stick 1  wooden_stick 0  4407298 9223388529554358286 4 0 2.500000 100 0 0 0 0 13312 99 0 90 0 256 525
 0
 
  itm_club Club Club 1  club 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 95 0 256 527
@@ -1173,10 +1170,10 @@ itemsfile version 2
  itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
 0
 
- itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
+ itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
 0
 
- itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 55 0 256 527
+ itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4407298 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 55 0 256 527
 0
 
  itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
@@ -1194,7 +1191,7 @@ itemsfile version 2
  itm_orc_club_d Orc_Club Orc_Club 1  orc_club_d 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 67 0 256 527
 0
 
- itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  6750212 9223635925844623584 101 0 7.000000 100 0 0 0 12 35840 82 0 75 0 256 547
+ itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  6504452 9223635925844623584 101 0 7.000000 100 0 0 0 12 35840 82 0 75 0 256 547
 0
 
  itm_orc_simple_spear Orc_Spear Orc_Spear 1  orc_simple_spear 0  6651908 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 96 0 152 0 283 532
@@ -1688,7 +1685,7 @@ itemsfile version 2
  itm_rohirrim_war_greaves Rohirrim_War_Greaves Rohirrim_War_Greaves 1  H_rohan_scale_greaves 0  69390 0 1153 0 3.500000 100 0 0 28 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_shoes Rohan_Shoes Rohan_Shoes 1  L_rohan_shoes 0  536940302 0 34 0 1.000000 100 0 0 10 0 0 0 0 0 0 0 0
+ itm_rohan_shoes Leather_Shoes Leather_Shoes 1  L_rohan_shoes 0  536940302 0 34 0 1.000000 100 0 0 10 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_cav_sword Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 394 0 1.500000 100 0 0 0 0 31744 99 0 95 0 277 31

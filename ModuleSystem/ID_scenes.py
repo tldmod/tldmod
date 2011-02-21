@@ -185,3 +185,5 @@ scn_woodelf_west_camp_center = 183
 scn_edoras_center_gastyle = 184
 scn_goblin_north_outpost_center = 185
 scn_goblin_south_outpost_center = 186
+scn_woodsmen_village2_center = 187
+scn_beorning_village_center = 188

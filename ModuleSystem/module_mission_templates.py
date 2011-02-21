@@ -1464,8 +1464,8 @@ mission_templates = [
       (53, mtef_scene_source,af_override_horse,0,1,[]),(54, mtef_scene_source,af_override_horse,0,1,[]),(55, mtef_scene_source,af_override_horse,0,1,[]),
 #used for torunament master scene
 
-      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_hide_covered_round_shield, itm_gambeson, itm_skullcap]),
-      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_hide_covered_round_shield, itm_gambeson, itm_skullcap]),
+      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_hide_covered_round_shield, itm_gambeson]),
+      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_hide_covered_round_shield, itm_gambeson]),
     ],
     tournament_triggers
   ),
