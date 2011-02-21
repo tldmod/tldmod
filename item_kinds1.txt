@@ -1,5 +1,5 @@
 itemsfile version 2
-865
+864
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -2436,9 +2436,6 @@ itemsfile version 2
 0
 
  itm_beorn_staff Woodman's_Staff Woodman's_Staff 1  woodman_staff 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 104 0 532 532
-0
-
- itm_beorn_stave Woodman's_Stave Woodman's_Stave 1  woodman_stave 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 100 0 532 532
 0
 
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  73728004 9223635923965575392 240 0 5.000000 100 0 0 0 9 41984 88 0 71 0 256 41

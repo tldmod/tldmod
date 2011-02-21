@@ -371,7 +371,7 @@ troops = [
 # def_attrib|level(20),wp(125),knows_common|knows_riding_3|knows_shield_2|knows_power_strike_2|knows_ironflesh_2,bandit_face1,bandit_face2],
 #Woodmen
 ["woodmen_youth","Woodman","Woodmen",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_tunic,itm_leather_boots,itm_rohan_shoes,itm_gondor_ranger_hood,itm_beorn_staff,itm_beorn_stave,],
+   [itm_short_tunic,itm_leather_boots,itm_rohan_shoes,itm_beorn_staff,],
       def_attrib|level(5),wp(70),knows_common|knows_pathfinding_1|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["woodmen_hunter","Woodmen_Hunter","Woodmen_Hunters",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_tunic,itm_leather_boots,itm_rohan_shoes,itm_gondor_ranger_hood,itm_short_bow,itm_arrows,itm_beorn_staff,],
