@@ -1,5 +1,5 @@
 itemsfile version 2
-865
+866
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -2427,6 +2427,9 @@ itemsfile version 2
 0
 
  itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftan 0  16842765 0 152 0 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
+0
+
+ itm_beorn_helmet North_Skullcap North_Skullcap 1  beorn_helmet 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield North_Shield North_Shield 1  shield_round_g 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0

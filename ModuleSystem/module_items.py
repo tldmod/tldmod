@@ -1731,8 +1731,7 @@ items = [
 ["beorn_berserk","Beorning Berserker Kit"   ,[("beorn_berserker",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 ["beorn_chief"  ,"Beorning Chieftan's Tunic",[("beorn_chieftan" ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 	######HELMS##########
-#use itm_skullcap for rare helmets
-#["beorn_helm_a", "Northmen Helm", [("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
+["beorn_helmet", "North Skullcap", [("beorn_helmet",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #["northm_helm_b", "Northmen Helm", [("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 	#####SHIELDS##########
 ["beorn_shield","North Shield", [("shield_round_g",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
