@@ -1055,16 +1055,16 @@ food_end = "itm_grain"
 #readable_books_end   = reference_books_begin
 #books_begin = readable_books_begin
 #books_end = reference_books_end
-horses_begin = "itm_sumpter_horse"
-horses_end = "itm_arrows"
-weapons_begin = "itm_wooden_stick"
-weapons_end = "itm_wooden_shield"
-ranged_weapons_begin = "itm_javelin"
-ranged_weapons_end = "itm_corsair_bow"
-armors_begin = "itm_leather_gloves"
-armors_end = "itm_wooden_stick"
-shields_begin = "itm_wooden_shield"
-shields_end = "itm_javelin"
+#horses_begin = "itm_sumpter_horse"
+#horses_end = "itm_arrows"
+#weapons_begin = "itm_one_handed_war_axe_a"
+#weapons_end = "itm_tab_shield_small_round_b"
+#ranged_weapons_begin = "itm_javelin"
+#ranged_weapons_end = "itm_corsair_bow"
+#armors_begin = "itm_leather_gloves"
+#armors_end = "itm_tab_shield_small_round_b"
+#shields_begin = "itm_tab_shield_small_round_b"
+#shields_end = "itm_javelin"
 
 # Banner constants
 

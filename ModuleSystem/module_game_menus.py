@@ -1510,7 +1510,7 @@ game_menus = [
      (troop_raise_skill, "trp_player",skl_engineer,10),
      (troop_add_gold, "trp_player", 1000000),
 	 (troop_set_health, "trp_player", 100),
-     (troop_add_item, "trp_player","itm_heavy_lance",0), #imod_balanced
+#     (troop_add_item, "trp_player","itm_heavy_lance",0), #imod_balanced
      (troop_add_item, "trp_player","itm_gondor_shield_e",0), #imod_reinforced
      (troop_add_item, "trp_player","itm_gondor_ranger_sword",0), #imod_masterwork
      (troop_add_item, "trp_player","itm_gondor_hunter",imod_heavy), #imod_champion
@@ -2093,14 +2093,14 @@ game_menus = [
       "Add gear and gold to player.",
        [(troop_add_gold, "trp_player", 10000),
    
-		(troop_add_item, "trp_player","itm_mail_hauberk",0),
+#		(troop_add_item, "trp_player","itm_mail_hauberk",0),
 		(troop_add_item, "trp_player","itm_mail_mittens",0),
-		(troop_add_item, "trp_player","itm_mail_boots",0),
-		(troop_add_item, "trp_player","itm_shield_heater_c",0),
-		(troop_add_item, "trp_player","itm_bastard_sword_a",0),
+#		(troop_add_item, "trp_player","itm_mail_boots",0),
+#		(troop_add_item, "trp_player","itm_shield_heater_c",0),
+#		(troop_add_item, "trp_player","itm_bastard_sword_a",0),
 		(troop_add_item, "trp_player","itm_gondor_bow",0),
 		(troop_add_item, "trp_player","itm_arrows",0),		
-		(troop_add_item, "trp_player","itm_wargarmored_1c",0),		
+#		(troop_add_item, "trp_player","itm_wargarmored_1c",0),		
 		(troop_equip_items, "trp_player"),
 		
         (troop_add_item, "trp_player","itm_arrows",0),

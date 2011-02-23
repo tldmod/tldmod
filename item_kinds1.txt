@@ -1,5 +1,5 @@
 itemsfile version 2
-866
+825
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -7,9 +7,6 @@ itemsfile version 2
 0
 
  itm_practice_sword Practice_Sword Practice_Sword 1  practice_sword 0  12976130 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
-0
-
- itm_heavy_practice_sword Heavy_Practice_Sword Heavy_Practice_Sword 1  heavy_practicesword 0  6684675 9223635919737716976 21 0 6.250000 100 0 0 0 0 26624 94 0 128 0 530 538
 0
 
  itm_arena_axe Axe Axe 1  arena_axe 0  79953922 9223388530091229198 137 0 1.500000 100 0 0 0 0 23552 100 0 69 0 256 535
@@ -141,16 +138,7 @@ itemsfile version 2
  itm_leather_boots Leather_Boots Leather_Boots 1  boots 0  536940302 0 174 0 1.250000 100 0 0 16 0 0 0 0 0 0 0 0
 0
 
- itm_mail_chausses Mail_Chausses Mail_Chausses 1  chausses_cm 0  69390 0 410 0 3.000000 100 0 0 21 0 0 0 0 0 0 0 0
-0
-
- itm_splinted_greaves Splinted_Greaves Splinted_Greaves 1  spl_greaves 0  69390 0 1153 0 3.500000 100 0 0 28 7 0 0 0 0 0 0 0
-0
-
  itm_mail_boots Mail_Boots Mail_Boots 1  shoe_cm 0  69390 0 1746 0 3.000000 100 0 0 31 8 0 0 0 0 0 0 0
-0
-
- itm_iron_greaves Iron_Greaves Iron_Greaves 1  iron_greaves 0  69390 0 2374 0 3.500000 100 0 0 33 9 0 0 0 0 0 0 0
 0
 
  itm_black_dress Black_Dress Black_Dress 1  gondor_dress_a 0  553648141 0 500 0 3.000000 100 0 10 10 0 0 0 0 0 0 0 0
@@ -208,9 +196,6 @@ itemsfile version 2
  itm_robe_generic_dress Robe Robe 1  tld_robe_generic_dress 0  553648141 0 500 0 3.000000 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_court_hat Turret_Hat Turret_Hat 1  court_hat 0  1610612748 0 80 0 0.500000 100 8 0 0 0 0 0 0 0 0 0 0
-0
-
  itm_wimple_a Wimple Wimple 1  gondor_wimple_a 0  1610678284 0 10 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -220,91 +205,10 @@ itemsfile version 2
  itm_fine_hat Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  1610678284 0 10 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_courtly_outfit Courtly_Outfit Courtly_Outfit 1  nobleman_outf 0  553648141 0 348 0 4.000000 100 0 14 10 0 0 0 0 0 0 0 0
-0
-
- itm_nobleman_outfit Nobleman_Outfit Nobleman_Outfit 1  nobleman_outfit_b 0  553648141 0 348 0 4.000000 100 0 15 12 0 0 0 0 0 0 0 0
-0
-
- itm_blue_dress Blue_Dress Blue_Dress 1  blue_dress 0  553713677 0 6 0 1.000000 100 0 6 2 0 0 0 0 0 0 0 0
-0
-
- itm_peasant_dress Peasant_Dress Peasant_Dress 1  peasant_dress_b 0  553713677 0 6 0 1.000000 100 0 6 2 0 0 0 0 0 0 0 0
-0
-
- itm_linen_tunic Linen_Tunic Linen_Tunic 1  linen_tunic 0  553648141 0 6 0 1.000000 100 0 6 1 0 0 0 0 0 0 0 0
-0
-
- itm_short_tunic Rich_Tunic Rich_Tunic 1  cvl_costume_a 0  553648141 0 10 0 1.000000 100 0 7 1 0 0 0 0 0 0 0 0
-0
-
- itm_robe Robe Robe 1  robe 0  553713677 0 31 0 1.500000 100 0 8 6 0 0 0 0 0 0 0 0
-0
-
- itm_gambeson Gambeson Gambeson 1  white_gambeson 0  553713677 0 260 0 5.000000 100 0 20 5 0 0 0 0 0 0 0 0
-0
-
- itm_mail_hauberk Mail_Hauberk Mail_Hauberk 1  hauberk_a 0  16842765 0 1190 0 19.000000 100 0 40 12 7 0 0 0 0 0 0 0
-0
-
- itm_headcloth Headcloth Headcloth 1  headcloth 0  536936460 0 1 0 0.500000 100 4 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_female_hood Lady's_Hood Lady's_Hood 1  woolen_hood 0  536870924 0 9 0 1.000000 100 10 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_wooden_stick Wooden_Stick Wooden_Stick 1  wooden_stick 0  4407298 9223388529554358286 4 0 2.500000 100 0 0 0 0 13312 99 0 90 0 256 525
-0
-
- itm_club Club Club 1  club 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 95 0 256 527
-0
-
- itm_spiked_club Spiked_Club Spiked_Club 1  spiked_club 0  4521986 9223388532775583758 83 0 3.000000 100 0 0 0 0 21504 97 0 97 0 256 277
-0
-
- itm_knife Knife Knife 1  peasant_knife 0  12664834 9223372037685248015 4 0 0.500000 100 0 0 0 0 21504 110 0 40 0 269 21
-0
-
- itm_dagger Dagger Dagger 4  dagger 0  scab_dagger 3458764513820540928  dagger_b 0  dagger_b_scabbard 3458764513820540928  12664834 9223372072044986383 17 0 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
-0
-
- itm_falchion Falchion Falchion 1  falchion 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 8 30720 96 0 73 0 256 30
-0
-
- itm_scimitar Scimitar Scimitar 2  scimeter 0  scab_scimeter 3458764513820540928  4259842 9223388564182532110 108 0 1.500000 100 0 0 0 0 29696 105 0 97 0 256 29
-0
-
- itm_nomad_sabre Nomad_Sabre Nomad_Sabre 2  shashqa 0  scab_shashqa 3458764513820540928  4259842 9223388564182532110 115 0 1.750000 100 0 0 0 0 27648 101 0 100 0 256 27
-0
-
- itm_sword_two_handed_a Great_Sword Great_Sword 1  sword_two_handed_a 0  6365187 9223635924301119728 1123 0 2.750000 100 0 0 0 10 43008 89 0 120 0 284 42
-0
-
- itm_bastard_sword_a Bastard_Sword Bastard_Sword 2  bastard_sword_a 0  bastard_sword_a_scabbard 3458764513820540928  4259843 9223635954298781951 294 0 2.250000 100 0 0 0 9 37888 98 0 101 0 282 37
-0
-
  itm_one_handed_war_axe_a One_Handed_War_Axe One_Handed_War_Axe 1  one_handed_war_axe_a 0  80019458 9223388530091229198 87 0 1.500000 100 0 0 0 9 32768 100 0 60 0 256 32
 0
 
- itm_two_handed_axe Two_Handed_Axe Two_Handed_Axe 1  two_handed_battle_axe_a 0  73728003 9223635923965575392 110 0 4.500000 100 0 0 0 10 40960 90 0 90 0 256 40
-0
-
- itm_sword_medieval_b_small Short_Sword Short_Sword 2  sword_medieval_b_small 0  sword_medieval_b_small_scabbard 3458764513820540928  4259842 9223388564182532111 152 0 1.500000 100 0 0 0 0 26624 102 0 85 0 280 26
-0
-
  itm_sword_medieval_c Arming_Sword Arming_Sword 2  sword_medieval_c 0  sword_medieval_c_scabbard 3458764513820540928  4259842 9223388564182532111 410 0 1.500000 100 0 0 0 0 29696 99 0 95 0 280 29
-0
-
- itm_sword_viking_1 Nordic_Sword Nordic_Sword 2  sword_viking_c 0  sword_viking_c_scabbard  3458764513820540928  4259842 9223388564182532111 147 0 1.500000 100 0 0 0 0 28672 99 0 94 0 276 28
-0
-
- itm_pitch_fork Pitch_Fork Pitch_Fork 1  pitch_fork 0  138772484 4222124851986688 19 0 3.500000 100 0 0 0 0 0 83 0 154 0 274 512
-0
-
- itm_glaive Glaive Glaive 1  glaive 0  6651908 4222124851990272 352 0 4.500000 100 0 0 0 0 38912 83 0 157 0 277 38
-0
-
- itm_quarter_staff Quarter_Staff Quarter_Staff 1  quarter_staff 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 140 0 532 532
 0
 
  itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  138772484 4222131026005760 53 0 2.000000 100 0 0 0 0 19456 102 0 120 0 281 531
@@ -313,34 +217,10 @@ itemsfile version 2
  itm_spear Spear Spear 1  spear_h_2-15m 0  138772484 4222124851990272 75 0 2.250000 100 0 0 0 0 20480 98 0 135 0 282 532
 0
 
- itm_war_spear War_Spear War_Spear 1  spear_i_2-3m 0  138772484 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 96 0 150 0 283 532
-0
-
  itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  138772484 4222124851987200 89 0 2.500000 100 0 0 0 0 16384 90 0 175 0 283 528
 0
 
  itm_lance Lance Lance 1  spear_d_2-8m 0  138772484 4222124851987200 110 0 2.500000 100 0 0 0 0 16384 88 0 180 0 282 528
-0
-
- itm_heavy_lance Heavy_Lance Heavy_Lance 1  spear_f_2-9m 0  138772484 4222124851987200 130 0 2.750000 100 0 0 0 10 16384 85 0 190 0 282 528
-0
-
- itm_pike Pike Pike 1  spear_a_3m 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
-0
-
- itm_wooden_shield Wooden_Shield Wooden_Shield 1  shield_round_a 0  327687 5100273664 42 0 2.000000 100 0 1 0 0 360 100 0 50 0 0 0
-0
-
- itm_nordic_shield Nordic_Shield Nordic_Shield 1  shield_round_b 0  327687 5100273664 95 0 2.000000 100 0 1 0 0 440 100 0 50 0 0 0
-0
-
- itm_fur_covered_shield Fur_Covered_Shield Fur_Covered_Shield 1  shield_kite_m 0  262151 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
-0
-
- itm_hide_covered_round_shield Hide_Covered_Round_Shield Hide_Covered_Round_Shield 1  shield_round_f 0  262151 5100273664 40 0 2.000000 100 0 3 0 0 260 100 0 40 0 0 0
-0
-
- itm_shield_heater_c Heater_Shield Heater_Shield 1  shield_heater_c 0  327687 4831838208 277 0 3.500000 100 0 2 0 0 410 80 0 50 0 0 0
 0
 
  itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 195 0 2.500000 100 0 9 0 0 370 103 0 40 0 0 0
@@ -1005,10 +885,10 @@ itemsfile version 2
  itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16777229 0 500 0 2.000000 100 0 6 3 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_a Gauntlets Gauntlets 1  gauntlet_a 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_a Gauntlets Gauntlets 1  gauntlet_a_L 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_b Gauntlets Gauntlets 1  gauntlet_b 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_b Gauntlets Gauntlets 1  gauntlet_b_L 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_a 0  16842765 0 31 0 1.500000 100 0 8 6 0 0 0 0 0 0 0 0
@@ -1072,9 +952,6 @@ itemsfile version 2
 0
 
  itm_uruk_ragwrap Uruk_Ragwrap Uruk_Ragwrap 1  uruk_ragwrap_lr 0  65550 0 10 0 1.000000 100 0 0 6 0 0 0 0 0 0 0 0
-0
-
- itm_isengard_surcoat Isengard_Surcoat Isengard_Surcoat 1  uruk_body 0  16842765 0 500 0 25.000000 100 0 45 13 8 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_helm_a Isengard_Helm Isengard_Helm 1  orc_isen_helm_a 0  65548 0 121 0 1.250000 100 26 0 0 7 0 0 0 0 0 0 0
@@ -1509,7 +1386,7 @@ itemsfile version 2
  itm_dunland_armor_j Dunland_Hauberk Dunland_Hauberk 1  dunland_hauberk_b 0  16842765 0 1141 0 16.000000 100 0 48 12 8 0 0 0 0 0 0 0
 0
 
- itm_dunland_armor_k Dunland_Armor Dunland_Armor 1  dunland_chieftain 0  16842765 0 1250 0 8.000000 100 0 49 13 8 0 0 0 0 0 0 0
+ itm_dunland_armor_k Dun_Chief_Armor Dun_Chief_Armor 1  dunland_chieftain 0  16842765 0 1250 0 8.000000 100 0 49 13 8 0 0 0 0 0 0 0
 0
 
  itm_dun_helm_a Dunnish_Wolf_Cap Dunnish_Wolf_Cap 1  dunland_wolfcap 0  65548 0 280 0 1.000000 100 25 0 0 10 0 0 0 0 0 0 0
