@@ -1573,13 +1573,14 @@ items = [
 
  #TLD NORTHMENMEN ITEMS##########
  ######ARMOR##########
- #MV: renamed missing mesh "leather_vest" to "leather_jerkin" until someone thinks of something better
-# leather_jerkin as lowest armor
-["beorn_tunic"  ,"Beorning Tunic"           ,[("beorn_tunic"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
-["beorn_padded" ,"Beorning Padded Armor"    ,[("beorn_padded"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
-["beorn_heavy"  ,"Beorning Heavy Armor"     ,[("beorn_heavy"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
-["beorn_berserk","Beorning Berserker Kit"   ,[("beorn_berserker",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
-["beorn_chief"  ,"Beorning Chieftan's Tunic",[("beorn_chieftan" ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["woodman_tunic" ,"Woodman Tunic"            ,[("woodman_tunic"  ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["woodman_scout" ,"Woodman Scout Cape"       ,[("woodman_scout"  ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["woodman_padded","Woodman Padded Armor"     ,[("woodman_padded" ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["beorn_tunic"   ,"Beorning Tunic"           ,[("beorn_tunic"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["beorn_padded"  ,"Beorning Padded Armor"    ,[("beorn_padded"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["beorn_heavy"   ,"Beorning Heavy Armor"     ,[("beorn_heavy"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["beorn_berserk" ,"Beorning Berserker Kit"   ,[("beorn_berserker",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
+["beorn_chief"   ,"Beorning Chieftan's Tunic",[("beorn_chieftain",0)],itp_shop|itp_type_body_armor|itp_covers_legs, 0, 152,weight(15.0)|body_armor(20)|leg_armor(6),imodbits_none],
 	######HELMS##########
 ["beorn_helmet", "North Skullcap", [("beorn_helmet",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #["northm_helm_b", "Northmen Helm", [("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],

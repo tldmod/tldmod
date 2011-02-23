@@ -371,38 +371,38 @@ troops = [
 # def_attrib|level(20),wp(125),knows_common|knows_riding_3|knows_shield_2|knows_power_strike_2|knows_ironflesh_2,bandit_face1,bandit_face2],
 #Woodmen
 ["woodmen_youth","Woodman","Woodmen",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_white_tunic_a,itm_leather_boots,itm_rohan_shoes,itm_beorn_staff,],
+   [itm_woodman_tunic,itm_leather_boots,itm_rohan_shoes,itm_tld_tunic,itm_beorn_staff,],
       def_attrib|level(5),wp(70),knows_common|knows_pathfinding_1|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["woodmen_hunter","Woodmen_Hunter","Woodmen_Hunters",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_white_tunic_a,itm_leather_boots,itm_rohan_shoes,itm_short_bow,itm_arrows,itm_beorn_staff,],
+   [itm_woodman_tunic,itm_leather_boots,itm_rohan_shoes,itm_short_bow,itm_arrows,itm_beorn_staff,],
       def_attrib|level(9),wp(85),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_draw_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["woodmen_forester","Woodmen_Forester","Woodsmen_Foresters",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_rohan_shoes,itm_beorn_axe,],
+   [itm_woodman_tunic,itm_rohan_shoes,itm_beorn_axe,],
       def_attrib|level(11),wp(95),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_2,beorn_face1,beorn_face2],
 ["woodmen_skilled_forester","Woodmen_Skilled_Forester","Woodsmen_Skilled_Foresters",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_leather_boots,itm_rohan_shoes,itm_beorn_axe,itm_beorn_battle_axe,],
+   [itm_woodman_tunic,itm_leather_boots,itm_rohan_shoes,itm_beorn_axe,itm_beorn_battle_axe,],
       def_attrib|level(14),wp(105),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_2,beorn_face1,beorn_face2],
 ["woodmen_axemen","Woodmen_Axeman","Woodmen_Axemen",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_leather_boots,itm_beorn_battle_axe,],
+   [itm_woodman_padded,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_beorn_battle_axe,],
       def_attrib|level(20),wp(125),knows_common|knows_pathfinding_2|knows_athletics_3|knows_power_draw_2|knows_power_strike_3|knows_ironflesh_3,beorn_face1,beorn_face2],
 ["woodmen_master_axemen","Woodmen_Master_Axeman","Woodmen_Master_Axemen",tfg_armor| tfg_helm| tfg_boots| tfg_gloves,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_leather_boots,itm_leather_gloves,itm_beorn_battle_axe,],
+   [itm_woodman_padded,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_beorn_battle_axe,],
       def_attrib|level(25),wp(140),knows_common|knows_pathfinding_2|knows_athletics_4|knows_power_draw_2|knows_power_strike_3|knows_ironflesh_4,beorn_face1,beorn_face2],
 ["woodmen_tracker","Woodmen_Tracker","Woodmen_Trackers",tfg_ranged| tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_white_tunic_a,itm_leather_boots,itm_rohan_shoes,itm_short_bow,itm_arrows,itm_beorn_axe,],
+   [itm_woodman_scout,itm_leather_boots,itm_rohan_shoes,itm_gondor_ranger_hood,itm_short_bow,itm_arrows,itm_beorn_axe,],
       def_attrib|level(10),wp(90),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_draw_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["woodmen_scout","Woodmen_Scout","Woodsmen_Scouts",tfg_ranged| tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_rohan_shoes,itm_short_bow,itm_arrows,itm_beorn_axe,],
+   [itm_woodman_scout,itm_rohan_shoes,itm_gondor_ranger_hood,itm_short_bow,itm_arrows,itm_beorn_axe,],
       def_attrib|level(14),wp(105),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_2,beorn_face1,beorn_face2],
-["woodmen_archer","Woodmen_Archer","Woodmen_Archers",tfg_ranged| tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_rohan_shoes,itm_leather_gloves,itm_short_bow,itm_arrows,itm_beorn_axe,],
+["woodmen_archer","Woodmen_Archer","Woodmen_Archers",tfg_ranged| tfg_armor| tfg_boots| tfg_gloves,0,0,fac_beorn,
+   [itm_woodman_padded,itm_rohan_shoes,itm_leather_gloves,itm_beorn_helmet,itm_short_bow,itm_arrows,itm_beorn_axe,],
       def_attrib|level(20),wp(125),knows_common|knows_pathfinding_2|knows_athletics_3|knows_power_draw_2|knows_power_strike_3|knows_ironflesh_3,beorn_face1,beorn_face2],
-["fell_huntsmen_of_mirkwood","Fell_Huntsman_of_Mirkwood","Fell_Huntsmen_of_Mirkwood",tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
-   [itm_leather_jerkin,itm_leather_boots,itm_leather_gloves,itm_elven_bow,itm_arrows,itm_beorn_battle_axe,],
+["fell_huntsmen_of_mirkwood","Fell_Huntsman_of_Mirkwood","Fell_Huntsmen_of_Mirkwood",tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
+   [itm_beorn_chief,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_elven_bow,itm_arrows,itm_beorn_battle_axe,],
       def_attrib|level(25),wp(140),knows_common|knows_pathfinding_2|knows_athletics_4|knows_power_draw_2|knows_power_strike_3|knows_ironflesh_4,beorn_face1,beorn_face2],
 #Beornings
 ["beorning_vale_man","Beorning_Man","Beorning_Men",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_tunic,itm_leather_boots,itm_gondor_ranger_hood,itm_beorn_staff,itm_beorn_axe,],
+   [itm_beorn_tunic,itm_leather_boots,itm_tld_tunic,itm_gondor_ranger_hood,itm_beorn_staff,itm_beorn_axe,],
       def_attrib|level(5),wp(70),knows_common|knows_pathfinding_1|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["beorning_warrior","Beorning_Warrior","Beorning_Warriors",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_padded,itm_rohan_shoes,itm_beorn_axe,itm_beorn_battle_axe,],
@@ -411,10 +411,10 @@ troops = [
    [itm_beorn_padded,itm_rohan_shoes,itm_leather_gloves,itm_beorn_axe,itm_beorn_battle_axe,itm_beorn_shield,],
       def_attrib|level(14),wp(105),knows_common|knows_pathfinding_2|knows_athletics_2|knows_power_strike_2|knows_ironflesh_2,beorn_face1,beorn_face2],
 ["beorning_sentinel","Beorning_Sentinel","Beorning_Sentinel",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_padded,itm_leather_boots,itm_leather_gloves,itm_beorn_axe,itm_beorn_battle_axe,itm_beorn_shield,],
+   [itm_beorn_heavy,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_beorn_axe,itm_beorn_battle_axe,itm_beorn_shield,],
       def_attrib|level(20),wp(120),knows_common|knows_pathfinding_2|knows_athletics_3|knows_power_strike_3|knows_ironflesh_3,beorn_face1,beorn_face2],
 ["beorning_warden_of_the_ford","Beorning_Warden_of_the_Ford","Beorning_Warden_of_the_Ford",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_heavy,itm_leather_boots,itm_leather_gloves,itm_dale_helmet_b,itm_beorn_shield,itm_dwarf_sword_a,itm_dale_sword,],
+   [itm_beorn_chief,itm_leather_boots,itm_leather_gloves,itm_dale_helmet_b,itm_beorn_shield,itm_dwarf_sword_a,itm_dale_sword,],
       def_attrib|level(25),wp(140),knows_common|knows_pathfinding_2|knows_athletics_4|knows_power_strike_3|knows_ironflesh_4,beorn_face1,beorn_face2],
 ["beorning_carrock_lookout","Beorning_Carrock_Lookout","Beorning_Carrock_Lookouts",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_tunic,itm_rohan_shoes,itm_gondor_ranger_hood,itm_beorn_axe,],
@@ -595,7 +595,7 @@ troops = [
       0,0,0,0],
 #GONDOR
 ["gondor_commoner","Gondor_Levy","Gondor_Levies",tf_gondor| tfg_armor| tfg_boots,0,0,fac_gondor,
-   [itm_gon_jerkin,itm_gondor_light_greaves,itm_dagger,itm_gondor_arrows,itm_hunting_bow,itm_shortened_spear,],
+   [itm_gon_jerkin,itm_gondor_light_greaves,itm_dagger,itm_gondor_arrows,itm_hunting_bow,itm_shortened_spear,itm_tld_tunic,],
       def_attrib|level(5),wp(75),knows_common,gondor_face1,gondor_face2],
 ["gondor_militiamen","Gondor_Watchman","Gondor_Watchmen",tf_gondor| tfg_armor| tfg_shield| tfg_boots| tfg_helm,0,0,fac_gondor,
    [itm_gon_jerkin,itm_gondor_light_greaves,itm_shortened_spear,itm_gondor_auxila_helm,itm_short_bow,itm_gondor_arrows,itm_dagger,itm_gon_tab_shield_a,itm_gondor_short_sword,],
@@ -963,7 +963,7 @@ troops = [
       0,0,0,0],
 #ROHAN
 ["rohan_youth","Rohan_Youth","Rohan_Youths",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
-   [itm_rohan_armor_a,itm_rohan_armor_b,itm_rohan_armor_c,itm_rohan_shoes,itm_rohan_shoes,itm_rohan_sword_c,itm_spear,itm_quarter_staff,itm_rohan_shield_e,itm_rohan_shield_g,],
+   [itm_rohan_armor_a,itm_rohan_armor_b,itm_tld_tunic,itm_rohan_shoes,itm_rohan_shoes,itm_rohan_sword_c,itm_spear,itm_quarter_staff,itm_rohan_shield_e,itm_rohan_shield_g,],
       def_attrib|level(5),wp(75),knows_common,rohan_face1,rohan_face2],
 ["guardsman_of_rohan","Guardsman_of_Rohan","Guardsmen_of_Rohan",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
    [itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_sword_c,itm_rohan_shoes,itm_rohan_shield_e,itm_rohan_shield_g,itm_rohan_helmet_a,itm_spear,],
@@ -3280,4 +3280,14 @@ upgrade(troops,"iron_hills_miner","iron_hills_infantry")
 upgrade(troops,"iron_hills_infantry","iron_hills_battle_infantry")
 upgrade(troops,"iron_hills_battle_infantry","grors_guard")
  
+
+
+
+
+
+
+
+
+
+
 
