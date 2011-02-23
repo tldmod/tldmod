@@ -1,5 +1,5 @@
 itemsfile version 2
-867
+865
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -1341,16 +1341,10 @@ itemsfile version 2
  itm_m_orc_heavy_e Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_j 0  16842765 0 1830 0 19.000000 100 0 46 12 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_light_a Mordor_Uruk_Light_Armor Mordor_Uruk_Light_Armor 1  uruk_body 0  16842765 0 500 0 10.000000 100 0 45 8 8 0 0 0 0 0 0 0
+ itm_m_uruk_light_a Mordor_Uruk_Light_Armor Mordor_Uruk_Light_Armor 1  uruk_mordor_a 0  16842765 0 500 0 10.000000 100 0 45 8 8 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_light_b Mordor_Uruk_Light_Armor Mordor_Uruk_Light_Armor 1  uruk_mordor_a 0  16842765 0 500 0 10.000000 100 0 45 8 8 0 0 0 0 0 0 0
-0
-
- itm_m_uruk_heavy_a Mordor_Uruk_Heavy_Armor Mordor_Uruk_Heavy_Armor 1  uruk_mordor_a 0  16842765 0 61 0 3.000000 100 0 12 7 0 0 0 0 0 0 0 0
-0
-
- itm_m_uruk_heavy_b Mordor_Uruk_Heavy_Armor Mordor_Uruk_Heavy_Armor 1  uruk_mordor_b 0  16842765 0 107 0 3.000000 100 0 14 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_light_b Mordor_Uruk_Light_Armor Mordor_Uruk_Light_Armor 1  uruk_mordor_b 0  16842765 0 500 0 10.000000 100 0 45 8 8 0 0 0 0 0 0 0
 0
 
  itm_m_uruk_heavy_c Mordor_Uruk_Heavy_Armor Mordor_Uruk_Heavy_Armor 1  uruk_mordor_c 0  16842765 0 321 0 6.000000 100 0 23 6 0 0 0 0 0 0 0 0
