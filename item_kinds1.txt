@@ -437,10 +437,10 @@ itemsfile version 2
  itm_gondor_light_greaves Gondorian_Leather_Greaves Gondorian_Leather_Greaves 1  gondor_light_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_heavy_greaves Gondorian_Mailed_Greaves Gondorian_Mailed_Greaves 1  gondor_heavy_greaves 0  69390 0 1746 0 3.000000 100 0 0 31 8 0 0 0 0 0 0 0
+ itm_gondor_med_greaves Gondorian_Medium_Greaves Gondorian_Medium_Greaves 1  gondor_medium_greaves 0  69390 0 1153 0 3.500000 100 0 0 28 7 0 0 0 0 0 0 0
 0
 
- itm_gondor_med_greaves Gondorian_Medium_Greaves Gondorian_Medium_Greaves 1  gondor_medium_greaves 0  69390 0 1153 0 3.500000 100 0 0 28 7 0 0 0 0 0 0 0
+ itm_gondor_heavy_greaves Gondorian_Mailed_Greaves Gondorian_Mailed_Greaves 1  gondor_heavy_greaves 0  69390 0 1746 0 3.000000 100 0 0 31 8 0 0 0 0 0 0 0
 0
 
  itm_gondorian_light_helm Gondorian_Footman_Helm Gondorian_Footman_Helm 1  gondor_footman_helm 0  65548 0 95 0 1.500000 100 24 0 0 0 0 0 0 0 0 0 0
@@ -687,10 +687,10 @@ itemsfile version 2
  itm_amroth_bastard Dol_Amroth_Heavy_Sword Dol_Amroth_Heavy_Sword 2  DA_bastard 0  scab_DA_bastard 3458764513820540928  4259843 9223635954298781951 294 0 2.250000 100 0 0 0 9 37888 98 0 109 0 282 37
 0
 
- itm_gondor_short_sword Gondor_Short_Sword Gondor_Short_Sword 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 53 0 277 28
+ itm_gondor_short_sword Linhir_Eket Linhir_Eket 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 53 0 277 28
 0
 
- itm_pelargir_eket Pelargir_Short_Sword Pelargir_Short_Sword 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 49 0 277 28
+ itm_pelargir_eket Pelargir_Eket Pelargir_Eket 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 49 0 277 28
 0
 
  itm_pelargir_sword Pelargir_Sword Pelargir_Sword 2  pelargir_sword 0  scab_pelargir_sword 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 61 0 277 28

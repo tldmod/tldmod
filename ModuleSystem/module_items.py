@@ -410,18 +410,18 @@ items = [
 # [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_2", ":agent_no", ":troop_no")])]],
 
 #RANGED
-["javelin",         "Javelin", [("javelin",0),("javelins_quiver", ixmesh_carry)], itp_type_thrown |itp_shop|itp_primary|itp_bonus_against_shield ,itcf_throw_javelin|itcf_carry_quiver_back_right |itcf_show_holster_when_drawn, 75 , weight(5)|difficulty(1)|spd_rtng(91) | shoot_speed(28) | thrust_damage(28 ,  pierce)|max_ammo(3)|weapon_length(75),imodbits_thrown ],
-#["stones",         "Stones", [("throwing_stone",0)], itp_type_thrown |itp_shop|itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
-["throwing_knives", "Throwing Knives", [("throwing_knife",0)], itp_type_thrown |itp_shop|itp_primary ,itcf_throw_knife, 76 , weight(3.5)|difficulty(0)|spd_rtng(121) | shoot_speed(25) | thrust_damage(19 ,  cut)|max_ammo(15)|weapon_length(0),imodbits_thrown ],
-["throwing_axes", "Throwing Axes", [("francisca",0)], itp_type_thrown |itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241, weight(5)|difficulty(1)|spd_rtng(99) | shoot_speed(20) | thrust_damage(38,cut)|max_ammo(2)|weapon_length(53),imodbits_thrown ],
-["short_bow",         "Short Bow", [("small_bow",0),("small_bow_carry",ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back, 17 , weight(1)|difficulty(0)|spd_rtng(100) | shoot_speed(48) | thrust_damage(15 ,  bow_damage),imodbits_bow ],
-["regular_bow",         "Bow", [("regular_bow",0),("regular_bow_carry",ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 58 , weight(1)|difficulty(1)|spd_rtng(98) | shoot_speed(52) | thrust_damage(18 ,  bow_damage  ),imodbits_bow ],
-["nomad_bow",         "Nomad Bow", [("nomad_bow",0),("nomad_bow_case", ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 164 , weight(1.25)|difficulty(2)|spd_rtng(96) | shoot_speed(53) | thrust_damage(20 ,  bow_damage),imodbits_bow ],
-["gondor_bow",         "Gondor Bow", [("gondor_bow",0),("gondor_bow_carry",ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 145 , weight(1.75)|difficulty(3)|spd_rtng(82) | shoot_speed(54) | thrust_damage(22 ,  bow_damage),imodbits_bow ],
-#["khergit_bow",       "Haradrim Bow", [("khergit_bow",0),("khergit_bow_case", ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 269 , weight(1.25)|difficulty(3)|spd_rtng(95) | shoot_speed(56) | thrust_damage(21 ,bow_damage),imodbits_bow ],
-["strong_bow",         "Rohan Bow", [("strong_bow",0),("strong_bow_case", ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 437 , weight(1.25)|difficulty(3)|spd_rtng(94) | shoot_speed(57) | thrust_damage(23 ,bow_damage),imodbit_cracked | imodbit_bent | imodbit_masterwork ],
-["elven_bow",         "Elven Bow", [("elven_bow",0),("elven_bow_carry",ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 728 , weight(1.5)|difficulty(4)|spd_rtng(93) | shoot_speed(58) | thrust_damage(25 ,bow_damage),imodbits_bow,],
-["corsair_bow",         "Corsair Bow", [("corsair_bow",0),("corsair_bow_carry",ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 728 , weight(1.5)|difficulty(4)|spd_rtng(93) | shoot_speed(58) | thrust_damage(25 ,bow_damage),imodbits_bow,],
+["javelin"        ,"Javelin"        ,[("javelin"       ,0),("javelins_quiver"  ,ixmesh_carry)],itp_type_thrown |itp_shop|itp_primary|itp_bonus_against_shield ,itcf_throw_javelin|itcf_carry_quiver_back_right |itcf_show_holster_when_drawn, 75 , weight(5)|difficulty(1)|spd_rtng(91) | shoot_speed(28) | thrust_damage(28 ,  pierce)|max_ammo(3)|weapon_length(75),imodbits_thrown ],
+#["stones"        ,"Stones"         ,[("throwing_stone",0)                                   ],itp_type_thrown |itp_shop|itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
+["throwing_knives","Throwing Knives",[("throwing_knife",0)                                   ],itp_type_thrown |itp_shop|itp_primary ,itcf_throw_knife, 76 , weight(3.5)|difficulty(0)|spd_rtng(121) | shoot_speed(25) | thrust_damage(19 ,  cut)|max_ammo(15)|weapon_length(0),imodbits_thrown ],
+["throwing_axes"  ,"Throwing Axes"  ,[("francisca"     ,0)                                   ],itp_type_thrown |itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241, weight(5)|difficulty(1)|spd_rtng(99) | shoot_speed(20) | thrust_damage(38,cut)|max_ammo(2)|weapon_length(53),imodbits_thrown ],
+["short_bow"      ,"Short Bow"      ,[("small_bow"     ,0),("small_bow_carry"  ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 17 , weight(1)|difficulty(0)|spd_rtng(100) | shoot_speed(48) | thrust_damage(15 ,  bow_damage),imodbits_bow ],
+["regular_bow"    ,"Bow"            ,[("regular_bow"   ,0),("regular_bow_carry",ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 58 , weight(1)|difficulty(1)|spd_rtng(98) | shoot_speed(52) | thrust_damage(18 ,  bow_damage  ),imodbits_bow ],
+["nomad_bow"      ,"Nomad Bow"      ,[("nomad_bow"     ,0),("nomad_bow_case"   ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 164 , weight(1.25)|difficulty(2)|spd_rtng(96) | shoot_speed(53) | thrust_damage(20 ,  bow_damage),imodbits_bow ],
+["gondor_bow"     ,"Gondor Bow"     ,[("gondor_bow"    ,0),("gondor_bow_carry" ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 145 , weight(1.75)|difficulty(3)|spd_rtng(82) | shoot_speed(54) | thrust_damage(22 ,  bow_damage),imodbits_bow ],
+#["khergit_bow"   ,"Harad Bow"      ,[("khergit_bow"   ,0),("khergit_bow_case" ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 269 , weight(1.25)|difficulty(3)|spd_rtng(95) | shoot_speed(56) | thrust_damage(21 ,bow_damage),imodbits_bow ],
+["strong_bow"     ,"Rohan Bow"      ,[("strong_bow"    ,0),("strong_bow_case"  ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 437 , weight(1.25)|difficulty(3)|spd_rtng(94) | shoot_speed(57) | thrust_damage(23 ,bow_damage),imodbit_cracked | imodbit_bent | imodbit_masterwork ],
+["elven_bow"      ,"Elven Bow"      ,[("elven_bow"     ,0),("elven_bow_carry"  ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 728 , weight(1.5)|difficulty(4)|spd_rtng(93) | shoot_speed(58) | thrust_damage(25 ,bow_damage),imodbits_bow,],
+["corsair_bow"    ,"Corsair Bow"    ,[("corsair_bow"   ,0),("corsair_bow_carry",ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 728 , weight(1.5)|difficulty(4)|spd_rtng(93) | shoot_speed(58) | thrust_damage(25 ,bow_damage),imodbits_bow,],
 
 ##########TLD ITEMS START##########
 #####TLD RIVENDELL/DUNEDAIN ITEMS##########
@@ -450,12 +450,10 @@ items = [
 ["arnor_shield_c", "Arnor Cavalry Shield", [("arnor_cav_shield",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  118 , weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield ],
 ["arnor_shield_b", "Arnor Shield", [("arnor_shield_inf_b",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  118 , weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield ],
 ["arnor_shield_d", "Arnor Cavalry Shield", [("arnor_cav_shield_b",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  118 , weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield ],
-
 	#ARNOR MOUNTS########
 ["arnor_warhorse","Arnorian Warhorse", [("arnor_mail",0)], itp_shop|itp_type_horse, 0, 724,abundance(50)|hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(36)|horse_maneuver(34)|horse_charge(18),imodbits_horse_basic|imodbit_champion],
 ["dunedain_warhorse","Dunedain Warhorse", [("arnor_leather",0)],itp_shop|itp_type_horse, 0, 1411,abundance(40)|hit_points(140)|body_armor(65)|difficulty(4)|horse_speed(35)|horse_maneuver(32)|horse_charge(25),imodbits_horse_basic|imodbit_champion],
-
-	##########ARNOR WEAPONS########
+	####RNOR WEAPONS########
 ["arnor_sword_a", "Arnor Bastard Sword", [("dunedain_bastard_a",0),("scab_dunedain_bastard_a", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  294 , weight(2.05)|difficulty(9)|spd_rtng(99) | weapon_length(100)|swing_damage(36 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high ],
 #["arnor_sword_b", "Arnor Bastard Sword", [("dunedain_bastard_c",0),("bastard_sword_a_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
@@ -468,7 +466,6 @@ items = [
  #152 , weight(1.5)|difficulty(0)|spd_rtng(102) | weapon_length(85)|swing_damage(26, cut) | thrust_damage(24, pierce),imodbits_sword_high ],
 ["arnor_sword_f", "Arnor Shortsword", [("dunedain_1h",0),("scab_dunedain_1h", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(83)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
- 
 ["sword_of_arathorn", "Sword of Arathorn", [("aragorn_sword",0),("scab_aragorn_sword", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  294 , weight(2.05)|difficulty(9)|spd_rtng(99) | weapon_length(96)|swing_damage(36 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high ],
 
@@ -477,7 +474,6 @@ items = [
 ["riv_helm_b", "Rivendell Helm", [("rivendellarcherhelmet",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["riv_helm_c", "Rivendell Helm", [("rivendellswordfighterhelmet",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 #["riv_helm_d", "Rivendell Helm", [("elvenhelm_b",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
-	
 	##########RIVENDELL SHIELDS##########
 ["riv_shield_a", "Rivendell Shield", [("riv_inf_shield",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  318 , weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield ],
 ["riv_shield_b", "Rivendell Shield", [("riv_cav_shield",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  418 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -485,7 +481,6 @@ items = [
 #["riv_shield_d", "Rivendell Shield", [("riv_inf_shield_long_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  318 , weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield ],
 #["riv_shield_e", "Rivendell Shield", [("riv_inf_shield_short_a",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  418, weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["riv_shield_f", "Rivendell Shield", [("riv_inf_shield_short_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  218 , weight(2.0)|hit_points(380)|body_armor(1)|spd_rtng(99)|weapon_length(50),imodbits_shield  ],
- 
 	#####RIVENDELL WEAPONS########
 ["riv_bas_sword", "Rivendell Bastard Sword", [("rivendell_handandahalf1",0),("scab_rivendell_handandahalf1", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  294 , weight(2.25)|abundance(100)|difficulty(9)|spd_rtng(98) | weapon_length(106)|swing_damage(37 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
@@ -496,10 +491,8 @@ items = [
 ["riv_archer_sword", "Rivendell Archer's Sword", [("rivendellshortsword1",0),("scab_rivendell_shortsword1", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  162 , weight(1.25)|abundance(100)|difficulty(0)|spd_rtng(103) | weapon_length(80)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 ["riv_bow",         "Rivendell Bow", [("rivendellbow",0),("rivendellbow_carry",ixmesh_carry)], itp_type_bow |itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 145 , weight(1.75)|difficulty(3)|spd_rtng(82) | shoot_speed(54) | thrust_damage(22 ,  bow_damage),imodbits_bow ],
-
 ["riv_spear",         "Rivendell Spear", [("elf_spear_2",0)], itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_wooden_parry, itc_staff|itcf_carry_spear,
  175 , weight(2.25)|difficulty(0)|spd_rtng(102) | weapon_length(171)|swing_damage(20 , cut) | thrust_damage(30 ,  pierce),imodbits_polearm ],
-
 	########RIVENDELL ARMORS########
 ["riv_armor_light",   "Rivendell Armor", [("rivendellrecruitarcher"     ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_light_inf",   "Rivendell Armor", [("rivendellrecruitswordfighter"     ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
@@ -508,7 +501,6 @@ items = [
 ["riv_armor_med",     "Rivendell Armor", [("rivendellnormalswordfighter",0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_heavy",   "Rivendell Armor", [("rivendelleliteswordfighter" ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_h_archer","Rivendell Armor", [("rivendellmountedarcher"     ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
-
 	#######RIVENDELL MOUNTS##########
 ["riv_warhorse","Warhorse", [("rivendell_warhorse01",0)], itp_shop|itp_type_horse, 0, 824,abundance(50)|hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(38)|horse_maneuver(36)|horse_charge(20),imodbits_horse_basic|imodbit_champion],
 ["riv_warhorse2","Warhorse", [("rivendell_warhorse02",0)], itp_shop|itp_type_horse, 0, 824,abundance(50)|hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(38)|horse_maneuver(36)|horse_charge(20),imodbits_horse_basic|imodbit_champion],
@@ -535,12 +527,9 @@ items = [
 ["gondor_ranger_hood", "Green Hood", [("gondor_ranger_hood",0)], 0|itp_shop|itp_type_head_armor,0,60, weight(0.5)|abundance(100)|head_armor(13)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
 ["gondor_ranger_hood_mask", "Gondor Ranger Hood", [("gondor_ranger_hood_mask",0)], 0|itp_shop|itp_type_head_armor,0,90, weight(0.6)|abundance(100)|head_armor(15)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth ],
 
-["gondor_light_greaves", "Gondorian Leather Greaves", [("gondor_light_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0,
- 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
-["gondor_heavy_greaves", "Gondorian Mailed Greaves", [("gondor_heavy_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature  ,0,
- 1746 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(8) ,imodbits_armor],
-["gondor_med_greaves", "Gondorian Medium Greaves", [("gondor_medium_greaves",0)],  itp_shop|itp_type_foot_armor |itp_attach_armature,0,
- 1153 , weight(3.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7) ,imodbits_armor  ],
+["gondor_light_greaves", "Gondorian Leather Greaves", [("gondor_light_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
+["gondor_med_greaves", "Gondorian Medium Greaves", [("gondor_medium_greaves",0)],  itp_shop|itp_type_foot_armor |itp_attach_armature,0, 1153 , weight(3.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7) ,imodbits_armor  ],
+["gondor_heavy_greaves", "Gondorian Mailed Greaves", [("gondor_heavy_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature  ,0, 1746 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(8) ,imodbits_armor],
    ####Helms
 ["gondorian_light_helm"      ,"Gondorian_Footman_Helm",[("gondor_footman_helm"         ,0)],itp_shop|itp_type_head_armor,0, 95,weight(1.50)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 ["gondor_infantry_helm"      ,"Gondor_Infantry_Helm"  ,[("gondor_regular_helm"         ,0)],itp_shop|itp_type_head_armor,0,479,weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
@@ -652,9 +641,9 @@ items = [
 ["amroth_bastard", "Dol Amroth Heavy Sword"    , [("DA_bastard",0),("scab_DA_bastard", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  294 , weight(2.25)|difficulty(9)|spd_rtng(98) | weapon_length(109)|swing_damage(37 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
 
-["gondor_short_sword", "Gondor Short Sword", [("linhir_eket",0),("scab_linhir_eket", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
+["gondor_short_sword", "Linhir Eket", [("linhir_eket",0),("scab_linhir_eket", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(53)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["pelargir_eket", "Pelargir Short Sword", [("pelargir_eket",0),("scab_pelargir_eket", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
+["pelargir_eket", "Pelargir Eket", [("pelargir_eket",0),("scab_pelargir_eket", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(49)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 ["pelargir_sword", "Pelargir Sword", [("pelargir_sword",0),("scab_pelargir_sword", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(61)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
