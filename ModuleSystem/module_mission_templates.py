@@ -33,7 +33,7 @@ from module_mission_templates_unneeded import *
 # 
 ####################################################################################################################
 
-pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_knives]
+pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff,itm_throwing_knives]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
 common_battle_mission_start = (ti_before_mission_start, 0, 0, [],
