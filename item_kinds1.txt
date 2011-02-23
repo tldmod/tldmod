@@ -1,5 +1,5 @@
 itemsfile version 2
-865
+866
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -257,9 +257,6 @@ itemsfile version 2
 0
 
  itm_club Club Club 1  club 0  4653058 9223388529554358286 11 0 2.500000 100 0 0 0 0 15360 95 0 95 0 256 527
-0
-
- itm_warhammer Warhammer Warhammer 1  maul_d 0  6750211 9223635919670608096 309 0 9.000000 100 0 0 0 14 38912 85 0 75 0 256 550
 0
 
  itm_spiked_club Spiked_Club Spiked_Club 1  spiked_club 0  4521986 9223388532775583758 83 0 3.000000 100 0 0 0 0 21504 97 0 97 0 256 277
@@ -1008,6 +1005,12 @@ itemsfile version 2
  itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16777229 0 500 0 2.000000 100 0 6 3 0 0 0 0 0 0 0 0
 0
 
+ itm_evil_gauntlets_a Gauntlets Gauntlets 1  gauntlet_a 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
+0
+
+ itm_evil_gauntlets_b Gauntlets Gauntlets 1  gauntlet_b 0  65551 0 1940 0 1.000000 100 0 6 0 0 0 0 0 0 0 0 0
+0
+
  itm_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_a 0  16842765 0 31 0 1.500000 100 0 8 6 0 0 0 0 0 0 0 0
 0
 
@@ -1416,7 +1419,7 @@ itemsfile version 2
  itm_mordor_sword Mordor_Sword Mordor_Sword 1  mordor_sword 0  4259843 9223635924234010879 294 0 2.250000 100 0 0 0 9 37888 98 0 109 0 282 37
 0
 
- itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  6356995 9223635958660858096 423 0 2.750000 100 0 0 0 10 39936 95 0 125 0 287 39
+ itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532110 423 0 2.750000 100 0 0 0 10 39936 95 0 125 0 287 39
 0
 
  itm_mordor_warhorse _Mordor_Warhorse _Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
