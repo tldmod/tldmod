@@ -494,7 +494,7 @@ items = [
  175 , weight(2.25)|difficulty(0)|spd_rtng(102) | weapon_length(171)|swing_damage(20 , cut) | thrust_damage(30 ,  pierce),imodbits_polearm ],
 	########RIVENDELL ARMORS########
 ["riv_armor_light",   "Rivendell Armor", [("rivendellrecruitarcher"     ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
-["riv_armor_light_inf",   "Rivendell Armor", [("rivendellrecruitswordfighter"     ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
+["riv_armor_light_inf","Rivendell Armor",[("rivendellrecruitswordfighter",0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_archer",  "Rivendell Armor", [("rivendellnormalarcher"      ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_m_archer","Rivendell Armor", [("rivendellelitearcher"       ,0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],
 ["riv_armor_med",     "Rivendell Armor", [("rivendellnormalswordfighter",0)], itp_shop|itp_type_body_armor|itp_covers_legs ,0, 1259 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(7) ,imodbits_armor ],

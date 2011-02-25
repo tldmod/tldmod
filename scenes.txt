@@ -1,5 +1,5 @@
 scenesfile version 1
- 189
+ 188
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -736,10 +736,6 @@ scn_woodelf_west_camp_center woodelf_west_camp_center 256 none none 0.000000 0.0
   0 
   0 
  outer_terrain_forest 
-scn_edoras_center_gastyle edoras_center_gastyle 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000005200005004009c5a200000f5200005bd50000739d 
-  0 
-  0 
- outer_mountains2south 
 scn_goblin_north_outpost_center goblin_north_outpost_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
