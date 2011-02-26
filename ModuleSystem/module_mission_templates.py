@@ -3591,7 +3591,7 @@ mission_templates = [
           (call_script, "script_combat_music_set_situation_with_culture"),
          ]),
 
-      (0.1,0,ti_once, [	(key_clicked, key_f3)],#fight after F3 pressed
+      (0.1,0,0.1, [	(key_clicked, key_f3)],#fight after F3 pressed
 		[(display_message,"@THREE.. TWO... ONE.... FIGHT!"),
 		 (try_for_agents,":agent"),
 		    (agent_is_human),

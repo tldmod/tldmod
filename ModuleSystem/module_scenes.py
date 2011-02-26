@@ -104,7 +104,7 @@ scenes = [
   ("dol_amroth_center"      ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000005200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_seaside_1"),
   ("edhellond_center"       ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000004300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_seaside_1"),
   ("lossarnach_center"      ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005000006ada4000051a90000386b00003791",[],[],"outer_mountains2west"),
-  ("tarnost_center"         ,sf_generate,"none", "none",(0,0),(200,200),-100,        "0x30050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_mountains2west"),
+  ("tarnost_center"         ,sf_generate,"none", "none",(0,0),(200,200),-100,        "0x30050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_mountains2east"),
   ("erech_center"           ,sf_generate,"none", "none",(0,0),(200,200),-100,        "0x3000148000025896000074e600006c260000125a",[],[],"outer_mountains2north"),
   ("pinnath_gelin_center"   ,sf_generate,"none", "none",(0,0),(200,200),-100,        "0x300416a600035cd600007ee80000012100003fbc",[],[],"outer_terrain_plain"),
   ("ethring_center"         ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x000000042005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),

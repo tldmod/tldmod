@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1269
+ 1270
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3860,5 +3860,8 @@ spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entran
 
 
 spr_thranduil_throne 0 0 thranduil_throne bo_thranduil_throne 0
+
+
+spr_distant_mountain_white 0 0 mountains_outer 0 0
 
 

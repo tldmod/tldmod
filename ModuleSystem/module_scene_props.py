@@ -1929,5 +1929,6 @@ scene_props = [
 
   ("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
   ("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
+  ("distant_mountain_white",0,"mountains_outer","0",[]),
   
-]
+ ]

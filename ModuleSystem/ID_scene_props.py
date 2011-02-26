@@ -1267,3 +1267,4 @@ spr_elf_treehouse = 1265
 spr_rohan_woodstairs = 1266
 spr_thranduil_hall_entrance = 1267
 spr_thranduil_throne = 1268
+spr_distant_mountain_white = 1269

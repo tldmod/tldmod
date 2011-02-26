@@ -1,4 +1,4 @@
-656
+658
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -277,9 +277,11 @@ qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_You_company_cannot_t You_company_cannot_take_more_man
 qstr_You_inventory_has_no You_inventory_has_no_enough_space.
-qstr_DEBUG:_{s1}_decided_ DEBUG:_{s1}_decided_to_besiege_{s2}.
-qstr_DEBUG:_{s1}_decided_t DEBUG:_{s1}_decided_to_attack_{s2}.
-qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
+qstr_DEBUG:_{s1}_decided_ DEBUG:_{s1}_decided_to_do_nothing.
+qstr_DEBUG:_{s1}_decided_t DEBUG:_{s1}_decided_to_gather_army.
+qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_besiege_{s2}.
+qstr_DEBUG:_{s1}_decided_to_ DEBUG:_{s1}_decided_to_attack_{s2}.
+qstr_DEBUG:_{s1}_decided_to_a DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_Host_of_{s5} Host_of_{s5}
 qstr__{s6}_has_assumed_th _{s6}_has_assumed_the_command_of_{s5}_host!
