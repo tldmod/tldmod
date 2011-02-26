@@ -1523,6 +1523,16 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
+   ("camp_mvtest_expwar",[(neq,"$tld_war_began",1),],"Start the damn War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player")]),
+   ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
+   ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
+   ("camp_mvtest_towns",[],"View town wealth.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_notes",[],"Update lord locations.",[
+     (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+       (call_script, "script_update_troop_location_notes", ":troop_no", 0),
+     (try_end),
+     (display_message, "@Lord locations updated - see wiki!", 0x30FFC8),
+   ]),            
    ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
      (set_spawn_radius, 0),
      (spawn_around_party, "p_main_party", "pt_looters"),
@@ -1531,6 +1541,283 @@ game_menus = [
    ]),            
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])            
 ]),
+
+  ("mvtest_facstr_report",0,
+   "{s1}",
+   "none",
+   [(str_clear, s2),
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+      (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+      (call_script, "script_faction_strength_string", ":cur_kingdom"),
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
+      (str_store_string, s2, "@{s2}^{s4}: {reg1} ({s23})"),
+    (try_end),
+    (str_store_string, s1, "@Faction strengths report:^{s2}"),
+    ],
+    [("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+  ),
+  
+  ("mvtest_facai_report",0,
+   "{s1}",
+   "none",
+   [(str_clear, s2),
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+      (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+      (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+      (faction_get_slot, ":faction_ai_state", ":cur_kingdom", slot_faction_ai_state),
+      (faction_get_slot, ":faction_ai_object", ":cur_kingdom", slot_faction_ai_object),
+      (faction_get_slot, ":faction_theater", ":cur_kingdom", slot_faction_active_theater),
+      
+	  # calculate number of active hosts
+      (assign,":hosts",0),
+	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+        (store_troop_faction, ":troop_faction_no", ":troop_no"),
+        (eq, ":troop_faction_no", ":cur_kingdom"),
+		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+		(gt,":party",0),
+		(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
+	    (val_add,":hosts",1),
+	  (try_end),
+      
+      # AI string
+      (try_begin),
+        (eq, ":faction_ai_state", sfai_default),
+        (str_store_string, s11, "@Defending"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_gathering_army),
+        (str_store_string, s11, "@Gathering army"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_center),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Besieging {s11}"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Attacking enemies around {s11}"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_enemy_army),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Attacking enemy party {s11}"),
+      (else_try),
+        (assign, reg3, ":faction_ai_state"), (str_store_string, s11, "@Unknown({reg3})"),
+      (try_end),
+      
+      # theater string
+      (try_begin),
+        (eq, ":faction_theater", theatre_SE),
+        (str_store_string, s10, "@SE"),
+      (else_try),
+        (eq, ":faction_theater", theatre_SW),
+        (str_store_string, s10, "@SW"),
+      (else_try),
+        (eq, ":faction_theater", theatre_C),
+        (str_store_string, s10, "@C"),
+      (else_try),
+        (eq, ":faction_theater", theatre_N),
+        (str_store_string, s10, "@N"),
+      (else_try),
+        (str_store_string, s10, "@INVALID"),
+      (try_end),
+      
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
+      (assign, reg2, ":hosts"),
+      (str_store_string, s2, "@{s2}^{s4}: Th:{s10} Str:{reg1} Hosts:{reg2} {s11}"),
+    (try_end),
+    (str_store_string, s1, "@Faction AI report:^{s2}"),
+    ],
+    [("details",[],"Detailed faction report...", [(jump_to_menu, "mnu_mvtest_facai_details"),]),
+     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+  ),
+
+  ("mvtest_facai_details",0,
+   "{s1}",
+   "none",
+   [
+      (try_begin),
+	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
+	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
+	  (try_end),
+        
+      (assign, ":cur_kingdom", "$g_mvtest_faction"),
+      
+      (faction_get_slot, ":faction_ai_state", ":cur_kingdom", slot_faction_ai_state),
+      (faction_get_slot, ":faction_ai_object", ":cur_kingdom", slot_faction_ai_object),
+      (faction_get_slot, ":faction_theater", ":cur_kingdom", slot_faction_active_theater),
+      
+	  # calculate number of active hosts
+      (assign,":hosts",0),
+	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+        (store_troop_faction, ":troop_faction_no", ":troop_no"),
+        (eq, ":troop_faction_no", ":cur_kingdom"),
+		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+		(gt,":party",0),
+		(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
+	    (val_add,":hosts",1),
+	  (try_end),
+      
+      # AI string
+      (try_begin),
+        (eq, ":faction_ai_state", sfai_default),
+        (str_store_string, s11, "@Defending"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_gathering_army),
+        (str_store_string, s11, "@Gathering army"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_center),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Besieging {s11}"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Attacking enemies around {s11}"),
+      (else_try),
+        (eq, ":faction_ai_state", sfai_attacking_enemy_army),
+        (str_store_party_name, s11, ":faction_ai_object"),
+        (str_store_string, s11, "@Attacking enemy party {s11}"),
+      (else_try),
+        (assign, reg3, ":faction_ai_state"), (str_store_string, s11, "@Unknown({reg3})"),
+      (try_end),
+      
+      # theater string
+      (try_begin),
+        (eq, ":faction_theater", theatre_SE),
+        (str_store_string, s10, "@SE"),
+      (else_try),
+        (eq, ":faction_theater", theatre_SW),
+        (str_store_string, s10, "@SW"),
+      (else_try),
+        (eq, ":faction_theater", theatre_C),
+        (str_store_string, s10, "@C"),
+      (else_try),
+        (eq, ":faction_theater", theatre_N),
+        (str_store_string, s10, "@N"),
+      (else_try),
+        (str_store_string, s10, "@INVALID"),
+      (try_end),
+      
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
+      (assign, reg2, ":hosts"),
+      (str_store_string, s1, "@Detailed faction AI report for {s4}:^Theater:{s10} Str:{reg1} Hosts:{reg2} {s11}"),
+      (try_begin),
+        (neg|faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+        (str_store_string, s1, "@Faction defeated!^{s1}"),
+      (try_end),
+      
+	  # AI details for each host
+	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+        (store_troop_faction, ":troop_faction_no", ":troop_no"),
+        (eq, ":troop_faction_no", ":cur_kingdom"),
+		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+		(gt,":party",0),
+        
+        (str_store_troop_name, s6, ":troop_no"),
+        (str_store_party_name, s7, ":party"),
+        (str_store_string, s1, "@{s1}^{s6} leads {s7}, "),
+        (try_begin),
+          (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone),
+          (str_store_string, s1, "@{s1}(no host), "),          
+        (try_end),
+        
+        (party_get_slot, ":party_ai_state", ":party", slot_party_ai_state),
+        (party_get_slot, ":party_ai_object", ":party", slot_party_ai_object),
+        (try_begin),
+          (ge, ":party_ai_object", 0),
+          (str_store_party_name, s7, ":party_ai_object"),
+        (else_try),
+          (str_store_string, s7, "@INVALID"),
+        (try_end),
+        
+        # AI string
+        (try_begin),
+          (eq, ":party_ai_state", spai_undefined),
+          (str_store_string, s1, "@{s1}doing nothing"),
+        (else_try),
+          (eq, ":party_ai_state", spai_accompanying_army),
+          (str_store_string, s1, "@{s1}escorting {s7}"),
+        (else_try),
+          (eq, ":party_ai_state", spai_besieging_center),
+          (str_store_string, s1, "@{s1}besieging {s7}"),
+        (else_try),
+          (eq, ":party_ai_state", spai_holding_center),
+          (str_store_string, s1, "@{s1}defending {s7}"),
+        (else_try),
+          (eq, ":party_ai_state", spai_patrolling_around_center),
+          (str_store_string, s1, "@{s1}patrolling around {s7}"),
+        (else_try),
+          (eq, ":party_ai_state", spai_recruiting_troops),
+          (str_store_string, s1, "@{s1}recruiting in {s7} - INVALID"),
+        (else_try),
+          (eq, ":party_ai_state", spai_raiding_around_center),
+          (str_store_string, s1, "@{s1}raiding around {s7} - INVALID"),
+        (else_try),
+          (eq, ":party_ai_state", spai_engaging_army),
+          (str_store_string, s1, "@{s1}engaging {s7}"),
+        (else_try),
+          (eq, ":party_ai_state", spai_retreating_to_center),
+          (str_store_string, s1, "@{s1}retreating to {s7}"),
+        (else_try),
+          (assign, reg3, ":party_ai_state"), (str_store_string, s1, "@{s1}unknown({reg3})"),
+        (try_end),
+        
+	  (try_end),
+      
+    ],
+    [("change",[
+        (str_store_faction_name, s7, "$g_mvtest_faction"),
+      ],
+      "Change faction: {s7}",
+      [
+        (val_add, "$g_mvtest_faction", 1),
+        (try_begin),
+	      (eq, "$g_mvtest_faction", "fac_player_supporters_faction"),
+	      (assign, "$g_mvtest_faction", kingdoms_begin),
+	    (try_end),
+      ]),
+     ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
+    ]
+  ),
+
+  ("mvtest_town_wealth_report",0,
+   "{s1}",
+   "none",
+   [
+      (try_begin),
+	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
+	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
+	  (try_end),
+        
+      (assign, ":cur_kingdom", "$g_mvtest_faction"),
+      
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (str_store_string, s1, "@Town wealth for {s4}"),
+      (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (store_faction_of_party, ":center_faction", ":center_no"),
+        (eq, ":center_faction", ":cur_kingdom"),
+        (str_store_party_name, s7, ":center_no"),
+        (party_get_slot, reg1, ":center_no", slot_town_wealth),
+        (str_store_string, s1, "@{s1}^{s7}: {reg1}"),
+	  (try_end),
+    ],
+    [("change",[
+        (str_store_faction_name, s7, "$g_mvtest_faction"),
+      ],
+      "Change faction: {s7}",
+      [
+        (val_add, "$g_mvtest_faction", 1),
+        (try_begin),
+	      (eq, "$g_mvtest_faction", "fac_player_supporters_faction"),
+	      (assign, "$g_mvtest_faction", kingdoms_begin),
+	    (try_end),
+      ]),
+     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+  ),
 ## MadVader test end
 
   ##     #TLD - assasination menus begin (Kolba)
@@ -1868,11 +2155,11 @@ game_menus = [
   )
   ]for y in range(len(center_list)) ])
   +[
-  ("teleport_back",[],"No, Another Kindom",[(jump_to_menu, "mnu_teleport_to_town"),]),	   
+  ("teleport_back",[],"No, Another Kingdom",[(jump_to_menu, "mnu_teleport_to_town"),]),	   
   ]),
   
   ### CHOSE TOWN WHERE TO RELOCATE PART 1: chose faction (mtarini)
-  ("teleport_to_town",0,"^^^^^^^^Ride Shadowfax:^to which kindom?","none",[(set_background_mesh, "mesh_ui_default_menu_window"),],
+  ("teleport_to_town",0,"^^^^^^^^Ride Shadowfax:^to which kingdom?","none",[(set_background_mesh, "mesh_ui_default_menu_window"),],
   concatenate_scripts([[
   (
 	"go_to_town",
@@ -4190,6 +4477,7 @@ game_menus = [
            ],
        "Besiege the {reg6?town:castle}.",
        [
+         (eq, "$cheat_mode", 1), #MV: player can't start a siege
          (assign,"$g_player_besiege_town","$g_encountered_party"),
          (store_relation, ":relation", "fac_player_supporters_faction", "$g_encountered_party_faction"),
          (val_min, ":relation", -40),
@@ -7746,7 +8034,7 @@ game_menus = [
             for rnk in range(len(tld_faction_ranks[kd])) ]) \
             for kd in range(len(tld_faction_ranks))])+[
             ("refuse", [],
-            "I am no match of such duty.", [
+            "I am no match for such duty.", [
                 (change_screen_return),
                 ]
             ),

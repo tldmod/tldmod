@@ -3577,31 +3577,51 @@ dialogs = [
 
   [anyone,"lord_talk_ask_about_war", [],
    "{s12}", "lord_talk_ask_about_war_2",[
-                                                                      (assign, ":num_enemies", 0),
-                                                                      (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
-                                                                        (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
-                                                                        (store_relation, ":cur_relation", ":cur_faction", "$g_talk_troop_faction"),
-                                                                        (lt, ":cur_relation", 0),
-                                                                        (try_begin),
-                                                                          (eq, ":num_enemies", 0),
-                                                                          (str_store_faction_name_link, s12, ":cur_faction"),
-                                                                        (else_try),
-                                                                          (eq, ":num_enemies", 1),
-                                                                          (str_store_faction_name_link, s11, ":cur_faction"),
-                                                                          (str_store_string, s12, "@{s11} and {s12}"),
-                                                                        (else_try),
-                                                                          (str_store_faction_name_link, s11, ":cur_faction"),
-                                                                          (str_store_string, s12, "@{s11}, {s12}"),
-                                                                        (try_end),
-                                                                        (val_add, ":num_enemies", 1),
-                                                                      (try_end),
-                                                                      (try_begin),
-                                                                        (eq, ":num_enemies", 0),
-                                                                        (str_store_string, s12, "@We are not at war with anyone."),
-                                                                      (else_try),
-                                                                        (str_store_string, s12, "@We are at war with {s12}."),
-                                                                      (try_end),
-                                                                      ]],
+                                          (assign, ":num_enemies", 0),
+                                          (assign, ":num_theater_enemies", 0),
+                                          (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
+                                          (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
+                                            (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+                                            (store_relation, ":cur_relation", ":cur_faction", "$g_talk_troop_faction"),
+                                            (lt, ":cur_relation", 0),
+                                            (try_begin),
+                                              (eq, ":num_enemies", 0),
+                                              (str_store_faction_name_link, s12, ":cur_faction"),
+                                            (else_try),
+                                              (eq, ":num_enemies", 1),
+                                              (str_store_faction_name_link, s11, ":cur_faction"),
+                                              (str_store_string, s12, "@{s11} and {s12}"),
+                                            (else_try),
+                                              (str_store_faction_name_link, s11, ":cur_faction"),
+                                              (str_store_string, s12, "@{s11}, {s12}"),
+                                            (try_end),
+                                            (val_add, ":num_enemies", 1),
+                                            (faction_slot_eq, ":cur_faction", slot_faction_active_theater, ":faction_theater"),
+                                            (try_begin),
+                                              (eq, ":num_theater_enemies", 0),
+                                              (str_store_faction_name_link, s13, ":cur_faction"),
+                                            (else_try),
+                                              (eq, ":num_theater_enemies", 1),
+                                              (str_store_faction_name_link, s11, ":cur_faction"),
+                                              (str_store_string, s13, "@{s11} and {s13}"),
+                                            (else_try),
+                                              (str_store_faction_name_link, s11, ":cur_faction"),
+                                              (str_store_string, s13, "@{s11}, {s13}"),
+                                            (try_end),
+                                            (val_add, ":num_theater_enemies", 1),
+                                          (try_end),
+                                          (try_begin),
+                                            (eq, ":num_enemies", 0),
+                                            (str_store_string, s12, "@We are not at war with anyone."),
+                                          (else_try),
+                                            (try_begin),
+                                              (gt, ":num_theater_enemies", 0),
+                                              (str_store_string, s12, "@We are at war with {s12}. However, we are mostly fighting against {s13}."),
+                                            (else_try),
+                                              (str_store_string, s12, "@We are at war with {s12}. However, there are only skirmishes at the moment."),
+                                            (try_end),
+                                          (try_end),
+                                          ]],
 
   [anyone|plyr|repeat_for_factions, "lord_talk_ask_about_war_2", [(store_repeat_object, ":faction_no"),
                                                                   (is_between, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -3614,30 +3634,25 @@ dialogs = [
   [anyone|plyr,"lord_talk_ask_about_war_2", [], "That's all I wanted to know. Thank you.", "lord_pretalk",[]],
 
   [anyone,"lord_talk_ask_about_war_details", [],
-   "We have {reg5?{reg5}:no} {reg3?armies:army} and they have {reg6?{reg6}:none}. Overall, {s9}.",
-   "lord_talk_ask_about_war_2",[(call_script, "script_faction_get_number_of_armies", "$g_encountered_party_faction"),
-                                (assign, reg5, reg0),
-                                (assign, reg3, 1),
+   "We are {s22} and they are {s23}. Overall, {s9}.",
+   "lord_talk_ask_about_war_2",[(call_script, "script_faction_strength_string", "$g_encountered_party_faction"),
+                                (str_store_string_reg, s22, s23),
+                                (call_script, "script_faction_strength_string", "$faction_requested_to_learn_more_details_about_the_war_against"),
+                                (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
                                 (try_begin),
-                                  (eq, reg5, 1),
-                                  (assign, reg3, 0),
+                                  (faction_slot_eq, "$faction_requested_to_learn_more_details_about_the_war_against", slot_faction_active_theater, ":faction_theater"),
+                                  (faction_get_slot, ":our_str", "$g_encountered_party_faction", slot_faction_strength),
+                                  (faction_get_slot, ":enemy_str", "$faction_requested_to_learn_more_details_about_the_war_against", slot_faction_strength),
+                                  (store_sub, ":advantage", ":our_str", ":enemy_str"), #-7000 to +7000
+                                  (val_div, ":advantage", 1200), # -5 to +5
+                                  (val_clamp, ":advantage", -4, 5), # -4 to +4
+                                  (val_add, ":advantage", 4),
+                                  (store_add, ":adv_str", "str_war_report_minus_4", ":advantage"),
+                                  (str_store_string, s9, ":adv_str"),
+                                (else_try),
+                                  (str_store_string, s9, "@we are not too concerned with them at the moment, since we are fighting other enemies closer to home"),
                                 (try_end),
-                                (call_script, "script_faction_get_number_of_armies", "$faction_requested_to_learn_more_details_about_the_war_against"),
-                                (assign, reg6, reg0),
-                                (assign, reg4, 1),
-                                (try_begin),
-                                  (eq, reg6, 1),
-                                  (assign, reg4, 0),
-                                (try_end),
-                                (store_div, ":our_str", reg5, 2),
-                                (store_div, ":enemy_str", reg6, 2),
-                                (store_sub, ":advantage", ":our_str", ":enemy_str"),
-                                (val_clamp, ":advantage", -4, 5),
-                                (val_add, ":advantage", 4),
-                                (store_add, ":adv_str", "str_war_report_minus_4", ":advantage"),
-                                (str_store_string, s9, ":adv_str"),
                                 ]],
-
 
 
   [anyone|plyr,"lord_talk", [(eq,"$talk_context",tc_party_encounter),
@@ -4809,7 +4824,7 @@ dialogs = [
   # TLD mission: Find the lost spears of king Bladorthin (Kolba) -- begin
 
    [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_find_lost_spears")],
-  "Here is a mission for a trusted and brave serve like you, {playername}.\
+  "Here is a mission for a trusted and brave commander like you, {playername}.\
    We are ill equipped to fight off the Easterling hordes.\
    Our armies are losing battles one by one.\
    A legend tells that once upon a time, the spears that were made for the armies of the great King Bladorthin (long since dead),\
@@ -4820,14 +4835,14 @@ dialogs = [
    "What do you command me to do about it, my lord?","lord_mission_find_lost_spears_1",[]],
 
   [anyone,"lord_mission_find_lost_spears_1",[],
-  "These weapons would increase effectivity of our armies and let them be somewhat superior to Easterlings. You'll have to find these spears.\
-   You'll have to go ask the dwarves permission to search for the spears in the deep of the Lonely Mountain.\
-   Beware, you may encounter some orcs or trolls in the tunnels. Are you avaiable for this task?","lord_mission_find_lost_spears_2",[]],
+  "These weapons would increase the effectiveness of our armies and let them be somewhat superior to the Easterlings. You'll have to find these spears.\
+   You'll have to go ask the dwarves for permission to search for the spears in the deep of the Lonely Mountain.\
+   Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?","lord_mission_find_lost_spears_2",[]],
 
   [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my king.","lord_mission_find_lost_spears_accepted",[]],
   [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I'm afraid I can't help you, my lord.","lord_mission_find_lost_spears_rejected",[]],
 
-    [anyone,"lord_mission_find_lost_spears_rejected", [], "So you are like the other worms: a superstitious, worthless coward.\
+    [anyone,"lord_mission_find_lost_spears_rejected", [], "So you are like the other weaklings: a superstitious, worthless coward.\
   I overestimated you. Now, get out of my sight!", "lord_pretalk",
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
    (assign, "$g_leave_encounter",1),

@@ -1086,7 +1086,10 @@ scripts = [
         (faction_set_slot, ":faction", slot_faction_marshall, ":king"),
         
 		(faction_get_slot,":strength",":faction",slot_faction_strength),
-        (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),      
+        (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),
+        
+	    (faction_get_slot, ":theater", ":faction", slot_faction_home_theater),
+        (faction_set_slot, ":faction", slot_faction_active_theater, ":theater"),
       (try_end),
       (faction_set_slot, "fac_player_supporters_faction", slot_faction_marshall, "trp_player"),
 
@@ -1812,7 +1815,7 @@ scripts = [
                         (party_set_faction, ":prisoner_train", ":faction_receiving_prisoners"),
                         (party_set_slot, ":prisoner_train", slot_party_victory_value, ws_p_train_vp),
                         (party_set_slot, ":prisoner_train", slot_party_type, spt_prisoner_train),
-                        (assign, "$g_move_heroes", 1),
+                        (assign, "$g_move_heroes", 0), #MV set to 0, lords escape
                         (call_script, "script_party_prisoners_add_party_prisoners", ":prisoner_train", "p_temp_party"),
                         (call_script, "script_party_remove_all_prisoners", "p_temp_party"),
                         (call_script, "script_find_random_nearby_friendly_town", ":prisoner_train", 1),
@@ -1826,7 +1829,8 @@ scripts = [
                     (distribute_party_among_party_group, "p_temp_party", ":root_winner_party"), 
                 # TLD: spawn prisoner train end
              (try_end),
-             (call_script, "script_clear_party_group", ":root_defeated_party"),
+             (store_faction_of_party, ":winner_faction", ":root_winner_party"),
+             (call_script, "script_clear_party_group", ":root_defeated_party", ":winner_faction"),
              (assign, ":trigger_result", 1), #End battle!
 
              #Center captured
@@ -3572,9 +3576,11 @@ scripts = [
   
   #script_clear_party_group:
   # INPUT: param1: Party-id of the root of the group.
+  #        param2: winner faction
   # This script will clear the root party and all parties attached to it recursively.
   ("clear_party_group",
     [ (store_script_param_1, ":root_party"),
+      (store_script_param_2, ":winner_faction"),
 	  (try_begin),
         (ge, ":root_party", 0), #MV fix for script errors
   #TLD assign faction strength penalties for party destruction, GA
@@ -3595,11 +3601,30 @@ scripts = [
 #		    (val_sub, ":strength",":party_value"),   # lesser parties dying can't shift faction strength through threshold
 #	    (try_end),
 	      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
-	  #debug
-	      (assign,reg0,":party_value"),
-	      (assign,reg1,":strength"),
-	      (str_store_faction_name,s1,":faction"),
-	      (display_message,"@DEBUG:{s1} strength decreased by {reg0} to {reg1}."),
+          # add half victory points to the winner faction
+          (try_begin),
+            (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
+            (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
+		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
+		    (val_add, ":winner_strength", ":win_value"),
+	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
+          (try_end),
+          #debug
+          (try_begin),
+            (eq, cheat_switch, 1),
+	        (assign,reg0,":party_value"),
+	        (assign,reg1,":strength"),
+	        (assign,reg2,":win_value"),
+	        (assign,reg3,":winner_strength"),
+	        (str_store_faction_name,s1,":faction"),
+	        (str_store_faction_name,s2,":winner_faction"),
+            (try_begin),
+              (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
+	          (display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+            (else_try),
+	          (display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, defeat by {s2}."),
+            (try_end),
+          (try_end),
 	    (try_end),
 #end TLD
 
@@ -3607,7 +3632,7 @@ scripts = [
         (party_get_num_attached_parties, ":num_attached_parties", ":root_party"),
         (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
           (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
-          (call_script, "script_clear_party_group", ":attached_party"),
+          (call_script, "script_clear_party_group", ":attached_party", ":winner_faction"),
         (try_end),
       
 	  (try_end),
@@ -7060,31 +7085,35 @@ scripts = [
         (try_end),
       (try_end),
       
-	  # special minas
-      (party_get_slot, ":party_template_a", ":party_no", slot_town_reinforcements_a),
-      (party_get_slot, ":party_template_b", ":party_no", slot_town_reinforcements_b),
-      (party_get_slot, ":party_template_c", ":party_no", slot_town_reinforcements_c),
+      (faction_get_slot, ":party_template_a", ":party_faction", slot_faction_reinforcements_a),
+      (faction_get_slot, ":party_template_b", ":party_faction", slot_faction_reinforcements_b),
+      (faction_get_slot, ":party_template_c", ":party_faction", slot_faction_reinforcements_c),
+
+	  # special minas - MV: commented out, looks unfinished
+      # (party_get_slot, ":party_template_a", ":party_no", slot_town_reinforcements_a),
+      # (party_get_slot, ":party_template_b", ":party_no", slot_town_reinforcements_b),
+      # (party_get_slot, ":party_template_c", ":party_no", slot_town_reinforcements_c),
 
       (store_random_in_range, ":rand", 0, 100), # A, B, or C
 
 	  (assign, ":bonus", 0 ), 
-	  #uncomment the floowing block to make a 6% of mixing between gondor subfactions
-	  # (try_begin), 
-	  	# (eq, ":party_faction", "fac_gondor"), # only in gondor....
-		# (store_random_in_range, ":rand2", 0, 100), (le, ":rand2", 8), # 8% of times...
-		# (try_begin),
-			##non regular Gondor parties gets a regular reinforement...
-			# (neg|party_slot_eq, ":party_no", slot_party_subfaction, 0), 
-			# (faction_get_slot, ":party_template_a", ":party_faction", slot_faction_reinforcements_a),
-			# (faction_get_slot, ":party_template_b", ":party_faction", slot_faction_reinforcements_b),
-			# (faction_get_slot, ":party_template_c", ":party_faction", slot_faction_reinforcements_c),
-		# (else_try),
-			##regular Gondor parties gets a subfaction reinforement...
-			# (store_random_in_range, ":bonus", 1, len(subfaction_data)+1 ),
-			# (val_mul, ":bonus", 3), 
-		# (try_end),
-		# (val_mul,":rand",75),(val_div,":rand",100),  # but cannot pick "C"
-	  # (try_end),
+	  #(MV: did) uncomment the following block to make a 6% of mixing between gondor subfactions
+	  (try_begin), 
+	  	(eq, ":party_faction", "fac_gondor"), # only in gondor....
+		(store_random_in_range, ":rand2", 0, 100), (le, ":rand2", 8), # 8% of times...
+		(try_begin),
+			#non regular Gondor parties gets a regular reinforement...
+			(neg|party_slot_eq, ":party_no", slot_party_subfaction, 0), 
+			(faction_get_slot, ":party_template_a", ":party_faction", slot_faction_reinforcements_a),
+			(faction_get_slot, ":party_template_b", ":party_faction", slot_faction_reinforcements_b),
+			(faction_get_slot, ":party_template_c", ":party_faction", slot_faction_reinforcements_c),
+		(else_try),
+			#regular Gondor parties gets a subfaction reinforement...
+			(store_random_in_range, ":bonus", 1, len(subfaction_data)+1 ),
+			(val_mul, ":bonus", 3), 
+		(try_end),
+		(val_mul,":rand",75),(val_div,":rand",100),  # but cannot pick "C"
+	  (try_end),
 
       (assign, ":party_template", 0),
       (try_begin),
@@ -7109,18 +7138,19 @@ scripts = [
   ]),
   
   # script_hire_men_to_kingdom_hero_party
-  # TLD change: Hiring troops based on nearby town wealth instead of hero wealth
+  # [Old TLD change: Hiring troops based on nearby town wealth instead of hero wealth]
+  # New TLD change: Hiring troops based only on current and ideal party size
   # Input: arg1 = troop_no (hero of the party)
   # Output: none
   ("hire_men_to_kingdom_hero_party",
     [ (store_script_param_1, ":troop_no"),
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
-        (call_script, "script_find_random_nearby_friendly_town", ":party_no", 0),
-        (assign, ":nearby_center", reg0),
-        (party_get_slot, ":cur_wealth", ":nearby_center", slot_town_wealth),
-      (assign, ":hiring_budget", ":cur_wealth"),
-      (val_mul, ":hiring_budget", 4),
-      (val_div, ":hiring_budget", 5),
+        # (call_script, "script_find_random_nearby_friendly_town", ":party_no", 0),
+        # (assign, ":nearby_center", reg0),
+        # (party_get_slot, ":cur_wealth", ":nearby_center", slot_town_wealth),
+      # (assign, ":hiring_budget", ":cur_wealth"),
+      # (val_mul, ":hiring_budget", 4),
+      # (val_div, ":hiring_budget", 5),
       (assign, ":num_rounds", 1),
     
       (call_script, "script_party_get_ideal_size", ":party_no"),
@@ -7133,11 +7163,11 @@ scripts = [
       (try_for_range, ":unused", 0 , ":num_rounds"),
         (try_begin),
           (lt, ":party_size", ":ideal_size"),
-          (gt, ":hiring_budget", reinforcement_cost),
+#          (gt, ":hiring_budget", reinforcement_cost),
           (gt, ":party_no", 0),
           (call_script, "script_cf_reinforce_party", ":party_no"),
-          (val_sub, ":cur_wealth", reinforcement_cost),
-          (party_set_slot, ":nearby_center", slot_town_wealth, ":cur_wealth"), # TLD: wealth change to town
+#          (val_sub, ":cur_wealth", reinforcement_cost),
+#          (party_set_slot, ":nearby_center", slot_town_wealth, ":cur_wealth"), # TLD: wealth change to town
         (else_try),
           (gt, ":party_size", ":ideal_top_size"),
           (store_troop_faction, ":troop_faction", ":troop_no"),
@@ -13388,7 +13418,7 @@ scripts = [
          (str_store_string, s59, "@^{s59}"),
        (try_end),
        (assign, reg9, ":num_centers"),
-       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.^{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:{reg3?She:He} has no fiefs.}{s59}", 0),
+       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
      (try_end),
      ]),

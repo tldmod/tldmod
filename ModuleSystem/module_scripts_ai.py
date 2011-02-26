@@ -65,6 +65,9 @@ ai_scripts = [
 	   (faction_get_slot, ":old_faction_ai_state", ":faction_no", slot_faction_ai_state),
        (faction_get_slot, ":old_faction_ai_object", ":faction_no", slot_faction_ai_object),
        (faction_get_slot, ":old_faction_ai_last_offensive_time", ":faction_no", slot_faction_ai_last_offensive_time),
+       (faction_get_slot, ":faction_theater", ":faction_no", slot_faction_active_theater), #TLD
+       (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #TLD
+       
        (assign, ":faction_marshall_party", -1),
        (assign, ":faction_marshall_army_strength", 1),#0 might cause division by zero problems
        (assign, ":faction_marshall_num_followers", 1),
@@ -198,6 +201,7 @@ ai_scripts = [
        (try_end),
 ## Attacking center
        (try_begin),
+         (gt, ":faction_strength", fac_str_ok), #TLD
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_center", -1),
@@ -208,6 +212,12 @@ ai_scripts = [
          (assign, ":best_besiege_center", -1),
          (assign, ":best_besiege_center_score", 0),
          (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
+           #MV reminder: code here to not attack disabled centers of defeated factions?
+           
+           #MV: make sure the center is in the same theater, by checking if its owner is active in that theater
+           (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
+           (faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
+           
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
            (assign, ":besieger_own_faction", 0),
            (try_begin),
@@ -382,6 +392,10 @@ ai_scripts = [
            (store_distance_to_party_from_party, ":dist", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
            (val_add, ":dist", 20),
            (val_mul, ":dist", 10), #TLD: bigger effect of distance
+           (try_begin), #TLD: further effect of different active theaters
+             (neg|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
+             (val_mul, ":dist", 2),
+           (try_end),
            (val_div, ":attack_army_score", ":dist"),
            (gt, ":attack_army_score", ":best_attack_army_score"),
            (assign, ":best_attack_army", ":cur_kingdom_marshall_party"),
@@ -402,6 +416,7 @@ ai_scripts = [
        (try_end),
 #Attacking enemies around center
        (try_begin),
+         (gt, ":faction_strength", fac_str_weak), #TLD
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_enemies_around_center", -1),
@@ -418,6 +433,10 @@ ai_scripts = [
            (store_relation, ":fac_rln", ":center_faction", ":faction_no"),
            (this_or_next|gt, ":fac_rln", 0),
            (eq, ":center_faction", ":faction_no"),
+           
+           #MV: make sure the center is in the same theater
+           (faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
+           
            (party_get_slot, ":nearby_enemy_strength", ":center_no", slot_party_nearby_enemy_strength),
            (store_mul, ":attack_army_score", ":nearby_enemy_strength", 1000),
            (val_div, ":attack_army_score", ":faction_marshall_army_strength"), 
@@ -428,16 +447,16 @@ ai_scripts = [
            (gt, ":attack_army_score", 0),
            (val_mul, ":attack_army_score", 4),
            (try_begin),
-             (party_slot_eq, ":center_no", slot_party_type, spt_village),
-             (try_begin),
-               (party_slot_eq, ":center_no", slot_village_state, svs_being_raided),
-               (val_mul, ":attack_army_score", 3),
-             (try_end),
-           (else_try),
-             (try_begin),
+             # (party_slot_eq, ":center_no", slot_party_type, spt_village),
+             # (try_begin),
+               # (party_slot_eq, ":center_no", slot_village_state, svs_being_raided),
+               # (val_mul, ":attack_army_score", 3),
+             # (try_end),
+           # (else_try),
+             # (try_begin),
                (party_slot_ge, ":center_no", slot_center_is_besieged_by, 0),
                (val_mul, ":attack_army_score", 10),
-             (try_end),
+             # (try_end),
            (try_end),
            (try_begin),
              (eq, ":old_target_attacking_enemies_around_center", ":center_no"),
@@ -1040,10 +1059,10 @@ ai_scripts = [
   ##            (val_div, ":chance", 2),
               (val_min, ":chance", 100),
               (val_max, ":chance", 20),
-              (store_sub, ":faction_advantage_effect", "$g_average_center_value_per_faction", ":faction_center_value"),
-              (val_mul, ":faction_advantage_effect", 2),
-              (val_add, ":chance", ":faction_advantage_effect"),
-              (val_max, ":chance", 10),
+#MV              (store_sub, ":faction_advantage_effect", "$g_average_center_value_per_faction", ":faction_center_value"),
+#              (val_mul, ":faction_advantage_effect", 2),
+#              (val_add, ":chance", ":faction_advantage_effect"),
+#              (val_max, ":chance", 10),
               (assign, ":target_to_follow_other_party", ":faction_marshall_party"),
               (assign, ":chance_to_follow_other_party", ":chance"),
               (try_begin),
@@ -1053,7 +1072,7 @@ ai_scripts = [
             (try_end),
           (else_try),
             (this_or_next|eq, ":faction_ai_state", sfai_attacking_center),
-            (this_or_next|eq, ":faction_ai_state", sfai_raiding_village),
+#            (this_or_next|eq, ":faction_ai_state", sfai_raiding_village),
             (this_or_next|eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
             (eq, ":faction_ai_state", sfai_attacking_enemy_army),
             (eq, ":commander_party", ":faction_marshall_party"),
@@ -1126,9 +1145,10 @@ ai_scripts = [
               (val_sub, ":random_party_to_follow", 999),
             (try_end),
             (lt, ":random_party_to_follow", 0),
-            (store_mul, ":chance", 100, "$g_average_center_value_per_faction"),#this value is calculated at the beginning of the game
-            (val_div, ":chance", ":faction_center_value"),
-            (val_max, ":chance", 10),
+#MV            (store_mul, ":chance", 100, "$g_average_center_value_per_faction"),#this value is calculated at the beginning of the game
+#            (val_div, ":chance", ":faction_center_value"),
+#            (val_max, ":chance", 10),
+            (assign, ":chance", 100), #MV: average
             (assign, ":chance_to_follow_other_party", ":chance"),
             (val_mul, ":chance_to_follow_other_party", 2),#trp_player is always the leader
             (assign, ":target_to_follow_other_party", "p_main_party"),
@@ -1355,6 +1375,7 @@ ai_scripts = [
         (try_end),
 #Recruiting troops
         (try_begin),
+          (eq,1,0), # village removal by MV
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":old_target_recruit_troops", -1),
@@ -1700,8 +1721,8 @@ ai_scripts = [
 		
         (assign, ":sum_chances", ":chance_move_to_home_center"),
         (val_add, ":sum_chances", ":chance_move_to_other_center"),
-        (val_add, ":sum_chances", ":chance_recruit_troops"),
-        (val_add, ":sum_chances", ":chance_raid_around_center"),
+#        (val_add, ":sum_chances", ":chance_recruit_troops"),
+#        (val_add, ":sum_chances", ":chance_raid_around_center"),
         (val_add, ":sum_chances", ":chance_besiege_enemy_center"),
         (val_add, ":sum_chances", ":chance_patrol_around_center"),
 ##        (val_add, ":sum_chances", ":chance_stay"),
@@ -1719,11 +1740,13 @@ ai_scripts = [
           (call_script, "script_party_set_ai_state", ":party_no", spai_holding_center, ":target_move_to_other_center"),
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
         (else_try),
+          (eq,1,0), # village removal by MV
           (val_sub, ":random_no", ":chance_recruit_troops"),
           (lt, ":random_no", 0),
           (call_script, "script_party_set_ai_state", ":party_no", spai_recruiting_troops, ":target_recruit_troops"),
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
         (else_try),
+          (eq,1,0), # village removal by MV
           (val_sub, ":random_no", ":chance_raid_around_center"),
           (lt, ":random_no", 0),
           (call_script, "script_party_set_ai_state", ":party_no", spai_raiding_around_center, ":target_raid_around_center"),
@@ -1819,6 +1842,7 @@ ai_scripts = [
             (try_end),
           (try_end),
         (else_try),
+          (eq,1,0), # village removal by MV
           (eq, ":ai_state", spai_raiding_around_center),
           (party_slot_eq, ":party_no", slot_party_ai_substate, 0),
           (assign, ":selected_village", 0),
@@ -1859,6 +1883,7 @@ ai_scripts = [
             (party_set_slot, ":party_no", slot_party_ai_substate, 1),
           (try_end),
         (else_try),
+          (eq,1,0), # village removal by MV
           (eq, ":ai_state", spai_raiding_around_center),#substate is 1
           (try_begin),
             (store_distance_to_party_from_party, ":distance", ":party_no", ":ai_object"),
@@ -2172,6 +2197,8 @@ ai_scripts = [
 		  (gt,":party",0),
 	      (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone), # if lonely hero
 		  (store_troop_faction, ":troop_faction_no", ":hero"),
+          
+          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
 
 		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
@@ -2180,6 +2207,7 @@ ai_scripts = [
 		  (lt, ":hosts", ":strength"), # faction passes strength check 
 
 		  (store_random_in_range,":rnd",0,100),
+          (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
 		  (lt,":rnd",10),              # faction passes random check 
 
 			(val_add, ":hosts",1),  (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
@@ -2225,6 +2253,117 @@ ai_scripts = [
          (call_script, "script_calculate_troop_ai_under_command", ":hero"),
        (try_end),
     (try_end),
+ ]),
+ 
+# script_update_active_theaters
+# Input: none
+# Output: none
+# updates active theaters for all factions, called after a faction defeat
+  ("update_active_theaters",
+   [        
+        # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
+        (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+          (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
+          (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
+          (assign, ":theater_cleared", 1),
+          (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
+            (store_relation, ":rel", ":faction", ":enemy_faction"),
+            (lt, ":rel", 0), # active enemy
+            (faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":faction_theater"),
+            (assign, ":theater_cleared", 0), # found active enemy faction in the same theater, do nothing
+          (try_end),
+          # find another theater with active enemies
+          (try_begin),
+            (eq, ":theater_cleared", 1),
+            (assign, ":next_theater", ":faction_theater"),
+            (assign, ":continue_loop", 100),
+            (try_for_range, ":unused", 0, ":continue_loop"),
+              #get the next theater in hardcoded theater sequences
+              (call_script, "script_find_next_theater", ":faction", ":next_theater"),
+              (assign, ":next_theater", reg0),
+              (try_begin),
+                (neq, ":next_theater", -1),
+                (assign, ":theater_cleared", 1),
+                # find enemies in the next theater
+                (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
+                  (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
+                  (store_relation, ":rel", ":faction", ":enemy_faction"),
+                  (lt, ":rel", 0), # active enemy
+                  (faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":next_theater"),
+                  (assign, ":theater_cleared", 0), # found active enemy faction in the same theater
+                (try_end),
+                # if enemies found, move active theater
+                (try_begin),
+                  (eq, ":theater_cleared", 0),
+                  (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),
+                  (assign, ":continue_loop", 0), # exit loop
+                  (str_store_faction_name, s2, ":faction"),
+                  (display_log_message, "@The hosts of {s2} march to a new area of operations."),
+                (try_end),
+              (else_try),
+                # ERROR (or victory?)
+                (assign, ":continue_loop", 0), # exit loop
+                (str_store_faction_name, s2, ":faction"),
+                (display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
+              (try_end),
+            (try_end), # try_for_range, ":unused"
+            
+          (try_end), # end find another theater
+          
+        (try_end), # end update active theaters       
+ ]),
+ 
+# script_find_next_theater
+# Input: faction, current theater
+# Output: reg0 = theatre_SE, theatre_SW, theatre_C, theatre_N or -1 for error
+# theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
+  ("find_next_theater",
+   [
+     (store_script_param, ":faction", 1),
+     (store_script_param, ":active_theater", 2),
+     (assign, ":next_theater", -1),
+     (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
+     #hardcoded theater sequences
+     (try_begin),
+       (eq, ":home_theater", theatre_SE), # SE-SW-C-N
+       (try_begin),
+         (eq, ":active_theater", theatre_SE), (assign, ":next_theater", theatre_SW),
+       (else_try),
+         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_C),
+       (else_try),
+         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_N),
+       (try_end),
+     (else_try),
+       (eq, ":home_theater", theatre_SW), # SW-SE-C-N
+       (try_begin),
+         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_SE),
+       (else_try),
+         (eq, ":active_theater", theatre_SE), (assign, ":next_theater", theatre_C),
+       (else_try),
+         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_N),
+       (try_end),
+     (else_try),
+       (eq, ":home_theater", theatre_C), # C-SW-N-SE
+       (try_begin),
+         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_SW),
+       (else_try),
+         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_N),
+       (else_try),
+         (eq, ":active_theater", theatre_N), (assign, ":next_theater", theatre_SE),
+       (try_end),
+     (else_try),
+       (eq, ":home_theater", theatre_N), # N-C-SW-SE
+       (try_begin),
+         (eq, ":active_theater", theatre_N), (assign, ":next_theater", theatre_C),
+       (else_try),
+         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_SW),
+       (else_try),
+         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_SE),
+       (try_end),
+     (try_end),
+     
+     (assign, reg0, ":next_theater"),  
  ]),
 
   ]

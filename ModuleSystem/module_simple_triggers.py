@@ -211,15 +211,15 @@ simple_triggers = [
  
   #Hiring men with center wealths (once a day)
   (24,[
-    # TLD lords no longer have towns, this is useless
-#    (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
-#         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
-#         (ge, ":party_no", 1),
-#         (party_get_attached_to, ":cur_attached_party", ":party_no"),
-#         (is_between, ":cur_attached_party", centers_begin, centers_end),
-#         (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
-#         (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men with current wealth
-#       (try_end),
+      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+        (ge, ":party_no", 1),
+        (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party), #TLD: only hosts reinforce
+        (party_get_attached_to, ":cur_attached_party", ":party_no"),
+        (is_between, ":cur_attached_party", centers_begin, centers_end),
+        (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
+        (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men with current wealth
+      (try_end),
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
          (neg|party_slot_eq, ":center_no", slot_town_lord, "trp_player"), #center does not belong to player.
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
@@ -330,8 +330,8 @@ simple_triggers = [
  
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  #TLD, grow faction strength with time
 	     (faction_slot_ge,":faction_no",slot_faction_strength,1),
-	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
-		 (store_add,":strength",":strength",ws_faction_restoration),
+	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
+		 (val_add,":strength",ws_faction_restoration),
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
 	  (try_end),
      ]),
@@ -802,6 +802,7 @@ simple_triggers = [
 
          (store_troop_faction, ":cur_faction", ":troop_no"),
          (try_begin),
+           (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active), #MV, defensive
            (call_script, "script_cf_select_random_walled_center_with_faction_and_owner_priority_no_siege", ":cur_faction", ":troop_no"),#Can fail
            (assign, ":center_no", reg0),
            (call_script, "script_create_kingdom_hero_party", ":troop_no", ":center_no"),
@@ -1968,9 +1969,27 @@ simple_triggers = [
         (try_for_parties, ":cur_party"),
           (store_faction_of_party, ":party_faction", ":cur_party"),
           (eq, ":party_faction", ":cur_kingdom"),
-          (party_get_slot, ":home_center", ":cur_party", slot_party_home_center),
-          (store_faction_of_party, ":home_center_faction", ":home_center"),
-          (party_set_faction, ":cur_party", ":home_center_faction"),
+          
+          # TLD: parties are removed, they don't change faction
+          # first detach all attached parties, in case there are some allies (in battle or in center)
+          (party_get_num_attached_parties, ":num_attached_parties", ":cur_party"),
+          (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+            (party_get_attached_party_with_rank, ":attached_party", ":cur_party", ":attached_party_rank"),
+            (gt, ":attached_party", 0),
+            (party_detach, ":attached_party"),
+          (try_end),
+          (try_begin),
+            (neg|is_between, ":cur_party", centers_begin, centers_end),
+            (remove_party, ":cur_party"),
+          (else_try),
+            # MV reminder: may need special handling of centers here
+            (party_set_faction, ":cur_party", "fac_neutral"),
+            (party_clear, ":cur_party"),
+          (try_end),
+          
+          #(party_get_slot, ":home_center", ":cur_party", slot_party_home_center),
+          #(store_faction_of_party, ":home_center_faction", ":home_center"),
+          #(party_set_faction, ":cur_party", ":home_center_faction"),
         (try_end),
 #        (assign, ":kingdom_pretender", -1),
 #        (try_for_range, ":cur_pretender", pretenders_begin, pretenders_end),
@@ -1982,6 +2001,15 @@ simple_triggers = [
 #          (neq, ":kingdom_pretender", "$supported_pretender"),
 #          (troop_set_slot, ":kingdom_pretender", slot_troop_cur_center, 0), #remove pretender from the world
 #        (try_end),
+
+	    
+	    (str_store_faction_name,s2,":cur_kingdom"),
+	    (display_log_message,"@{s2} was defeated!"),
+        # now update active theaters for all factions
+        (call_script, "script_update_active_theaters"),
+        # rethink strategies
+        (assign, "$g_recalculate_ais", 1),
+
         (assign, ":faction_removed", 1),
         (try_begin),
           (eq, "$players_oath_renounced_against_kingdom", ":cur_kingdom"),
@@ -2024,17 +2052,10 @@ simple_triggers = [
        (str_store_faction_name, s22,":faction"),
        (call_script, "script_faction_strength_string", ":faction"),
        (try_begin),
-          (gt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
-          (display_message,"@The forces of {s22} have rallied!"),
-          (display_message,"@{s22} is now {s23}."),
+          (lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
+          (display_message,"@The forces of {s22} have rallied! {s22} is now {s23}."),
        (else_try),
-          (try_begin),
-		     (ge,":strength_new",0),
-             (display_message,"@The might of {s22} is diminished!"), # announce when strength threshold is crossed downwards
-             (display_message,"@{s22} is now {s23}."),
-          (else_try),
-             (display_message,"@The {s22} is defeated!"),  #announce defeat
-          (try_end),
+          (display_message,"@The might of {s22} has diminished! {s22} is now {s23}."), # announce when strength threshold is crossed downwards
        (try_end),
      (try_end),
     ]),
@@ -2070,7 +2091,7 @@ simple_triggers = [
         (troop_get_slot, ":stat", "trp_player", slot_troop_faction_status),
         (val_add, ":stat", 1000),
         (troop_set_slot, "trp_player", slot_troop_faction_status, ":stat"),
-        (display_message, "@DEBUG: Factions tatus raised by 1000", debug_color),
+        (display_message, "@DEBUG: Faction status raised by 1000", debug_color),
     ]
     ),
     

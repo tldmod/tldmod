@@ -216,7 +216,7 @@ triggers = [
             (store_faction_of_party, ":faction_no", ws_party_spawns_list[x][0]),
             (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
-			(val_div, ":strength", 50),
+			(val_div, ":strength", 50), #strength now 0-140
 #            (val_mul, ":strength", 20), # strength got multied 1000x, so mul became div
             #(assign, ":strength", 500),
             (try_begin),
@@ -334,7 +334,7 @@ triggers = [
    [
 		(str_store_faction_name, s11, "$ambient_faction"),
 		(str_store_faction_name, s10, "$players_kingdom"),
-		(dialog_box,"@When dealing with people in {s11}, remember that they do not know you and they don't necessarily acknoledge the merits you've earned in {s10}.                                                                                                                (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
+		(dialog_box,"@When dealing with people in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
 	]),
 
 #Companion quests
@@ -1258,9 +1258,9 @@ triggers = [
 		
 		(try_begin),
 		  (is_between,reg5,tf_orc_begin, tf_orc_end),
-  		  (dialog_box,"@A little after your fully recover from drinking the poisoned water you got from the walking trees, you start noticicing stange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?","@Ent water effect."),
+  		  (dialog_box,"@A little after your fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?","@Ent water effect."),
 		(else_try),
-		  (dialog_box,"@The water you drank from ents had a strange effect on your built. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take the risk again."),
+		  (dialog_box,"@The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take the risk again."),
 		(try_end),
 		(troop_raise_attribute,"trp_player",ca_strength,1),
 		(troop_raise_attribute,"trp_player",ca_charisma,1),
@@ -1277,7 +1277,7 @@ triggers = [
 		(ge,":level",tld_player_level_to_begin_war),
 	   ],[
 		(assign, "$tld_war_began",1),
-		(dialog_box,"@Dark shadow finally broke into storm, and evil hordes started their march on free people of MiddleEarth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against Elves.. Even in the far North there is a war of its own.","@The War has started!"),
+		(dialog_box,"@Dark shadow finally broke into storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
 		(play_sound,"snd_evil_horn"),
 #	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),
