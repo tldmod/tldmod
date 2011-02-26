@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1267
+ 1269
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3797,7 +3797,7 @@ spr_erebor 0 0 hallfini bo_hallfini 1
 -40.000000  1 1798 2 110 65793 
 
 
-spr_thranduil_hall 0 0 thranduil_hall 0 1
+spr_thranduil_hall 0 0 thranduil_hall bo_thranduil_hall 1
 -40.000000  1 1798 2 210 86096 
 
 
@@ -3854,5 +3854,11 @@ spr_elf_treehouse 0 0 elf_treehouse bo_elf_treehouse 0
 
 
 spr_rohan_woodstairs 0 0 rohan_woodstairs bo_rohan_woodstairs 0
+
+
+spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entrance 0
+
+
+spr_thranduil_throne 0 0 thranduil_throne bo_thranduil_throne 0
 
 

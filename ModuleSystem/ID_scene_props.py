@@ -1265,3 +1265,5 @@ spr_elf_bridge = 1263
 spr_elf_ramp = 1264
 spr_elf_treehouse = 1265
 spr_rohan_woodstairs = 1266
+spr_thranduil_hall_entrance = 1267
+spr_thranduil_throne = 1268

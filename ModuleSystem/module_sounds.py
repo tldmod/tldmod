@@ -212,7 +212,7 @@ sounds = [
  ("rohan_victory",sf_priority_5|sf_vol_10, ["rohan_victory_1.mp3","rohan_victory_2.mp3","rohan_victory_3.mp3","rohan_victory_4.mp3"]),
 #tf_dunland	= 4
  ("dunlender_yell",sf_priority_6|sf_vol_8, ["dun_yell_1.mp3","dun_yell_2.mp3","dun_yell_3.mp3","dun_yell_4.mp3","dun_yell_5.mp3","dun_yell_6.mp3","dun_yell_7.mp3","dun_yell_8.mp3","dun_yell_9.mp3","dun_yell_10.mp3","dun_yell_11.mp3","dun_yell_12.mp3","dun_yell_13.mp3","dun_yell_14.mp3","dun_yell_15.mp3","dun_yell_16.mp3","dun_yell_17.mp3","dun_yell_18.mp3","dun_yell_19.mp3","dun_yell_20.mp3","dun_yell_21.mp3","dun_yell_22.mp3","dun_yell_23.mp3","dun_yell_24.mp3"]),
- ("dunlender_victory",sf_priority_5|sf_vol_10, ["dun_victory_1.mp3","dun_victory_2.mp3","rohan_victory_3.mp3","dun_victory_4.mp3","dun_victory_5.mp3","dun_victory_6.mp3","dun_victory_7.mp3","dun_victory_8.mp3","dun_victory_9.mp3"]),
+ ("dunlender_victory",sf_priority_5|sf_vol_10, ["dun_victory_1.mp3","dun_victory_2.mp3","dun_victory_3.mp3","dun_victory_4.mp3","dun_victory_5.mp3","dun_victory_6.mp3","dun_victory_7.mp3","dun_victory_8.mp3","dun_victory_9.mp3"]),
 
 
 #tf_orc			= 5 #(orcs, goblins)

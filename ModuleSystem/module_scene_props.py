@@ -1886,7 +1886,7 @@ scene_props = [
   ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
   ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
   ("erebor",0,"hallfini","bo_hallfini", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
-  ("thranduil_hall",0,"thranduil_hall","0", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
+  ("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
   ("thranduil_helm1",0,"statuemirk_helm1","0",[]),
   ("thranduil_helm2",0,"statuemirk_helm2","0",[]),
   ("thranduil_helm3",0,"statuemirk_helm3","0",[]),
@@ -1926,6 +1926,8 @@ scene_props = [
   ("elf_treehouse",0,"elf_treehouse","bo_elf_treehouse",[]),  
 
   ("rohan_woodstairs",0,"rohan_woodstairs","bo_rohan_woodstairs",[]),
-  
 
+  ("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
+  ("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
+  
 ]

@@ -1,5 +1,5 @@
 soundsfile version 2
-522
+523
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -415,6 +415,7 @@ soundsfile version 2
  dun_yell_24.mp3 2144
  dun_victory_1.mp3 2640
  dun_victory_2.mp3 2640
+ dun_victory_3.mp3 2640
  dun_victory_4.mp3 2640
  dun_victory_5.mp3 2640
  dun_victory_6.mp3 2640
@@ -697,40 +698,40 @@ snd_gondor_victory 2640 6 365 366 367 368 369 370
 snd_rohan_yell 2144 14 371 372 373 374 375 376 377 378 379 380 381 382 383 384 
 snd_rohan_victory 2640 4 385 386 387 388 
 snd_dunlender_yell 2144 24 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 
-snd_dunlender_victory 2640 9 413 414 387 415 416 417 418 419 420 
-snd_orc_die 160 8 421 422 423 424 425 426 427 428 
-snd_orc_hit 2672 8 429 430 431 432 433 434 435 436 
-snd_orc_grunt 1120 1 437 
-snd_orc_grunt_long 2128 1 438 
-snd_orc_yell 2144 2 439 440 
-snd_orc_victory 2640 6 441 442 443 444 445 446 
-snd_haradrim_yell 2144 10 447 448 449 450 451 452 453 454 455 456 
-snd_haradrim_victory 2640 5 457 458 459 460 461 
-snd_haradrim_die 160 14 462 159 160 161 162 163 164 165 166 167 168 169 170 171 
-snd_troll_die 160 1 463 
-snd_troll_hit 2672 3 464 464 464 
-snd_troll_grunt 1120 2 465 466 
-snd_troll_grunt_long 2128 2 466 467 
-snd_troll_yell 2144 2 466 467 
-snd_troll_victory 2640 3 466 467 463 
-snd_dunedain_yell 2144 10 468 469 470 471 472 473 474 475 476 477 
-snd_dunedain_victory 2640 3 478 479 480 
-snd_lothlorien_yell 2144 13 481 482 483 484 485 486 487 488 489 490 491 492 493 
-snd_lothlorien_victory 2640 5 494 495 496 497 498 
-snd_rivendell_yell 2144 12 499 500 484 485 486 487 488 489 490 491 492 493 
-snd_rivendell_victory 2640 5 494 495 496 497 498 
-snd_mirkwood_yell 2144 12 501 502 484 485 486 487 488 489 490 491 492 493 
-snd_mirkwood_victory 2640 5 494 495 496 497 498 
-snd_big_weapon_swing 2672 1 503 
-snd_thunder 2720 1 504 
+snd_dunlender_victory 2640 9 413 414 415 416 417 418 419 420 421 
+snd_orc_die 160 8 422 423 424 425 426 427 428 429 
+snd_orc_hit 2672 8 430 431 432 433 434 435 436 437 
+snd_orc_grunt 1120 1 438 
+snd_orc_grunt_long 2128 1 439 
+snd_orc_yell 2144 2 440 441 
+snd_orc_victory 2640 6 442 443 444 445 446 447 
+snd_haradrim_yell 2144 10 448 449 450 451 452 453 454 455 456 457 
+snd_haradrim_victory 2640 5 458 459 460 461 462 
+snd_haradrim_die 160 14 463 159 160 161 162 163 164 165 166 167 168 169 170 171 
+snd_troll_die 160 1 464 
+snd_troll_hit 2672 3 465 465 465 
+snd_troll_grunt 1120 2 466 467 
+snd_troll_grunt_long 2128 2 467 468 
+snd_troll_yell 2144 2 467 468 
+snd_troll_victory 2640 3 467 468 464 
+snd_dunedain_yell 2144 10 469 470 471 472 473 474 475 476 477 478 
+snd_dunedain_victory 2640 3 479 480 481 
+snd_lothlorien_yell 2144 13 482 483 484 485 486 487 488 489 490 491 492 493 494 
+snd_lothlorien_victory 2640 5 495 496 497 498 499 
+snd_rivendell_yell 2144 12 500 501 485 486 487 488 489 490 491 492 493 494 
+snd_rivendell_victory 2640 5 495 496 497 498 499 
+snd_mirkwood_yell 2144 12 502 503 485 486 487 488 489 490 491 492 493 494 
+snd_mirkwood_victory 2640 5 495 496 497 498 499 
+snd_big_weapon_swing 2672 1 504 
+snd_thunder 2720 1 505 
 snd_pull_ballista 2048 1 60 
-snd_evil_orders 768 1 505 
-snd_evil_horn 2560 1 506 
-snd_nazgul_skreech_long 2720 1 507 
-snd_nazgul_skreech_short 2720 1 508 
-snd_horror_scream_man 2720 5 509 510 511 512 513 
-snd_horror_scream_woman 2720 1 514 
-snd_horror_scream_orc 2720 1 515 
-snd_warg_lone_woof 2656 5 516 517 518 519 520 
+snd_evil_orders 768 1 506 
+snd_evil_horn 2560 1 507 
+snd_nazgul_skreech_long 2720 1 508 
+snd_nazgul_skreech_short 2720 1 509 
+snd_horror_scream_man 2720 5 510 511 512 513 514 
+snd_horror_scream_woman 2720 1 515 
+snd_horror_scream_orc 2720 1 516 
+snd_warg_lone_woof 2656 5 517 518 519 520 521 
 snd_horse_snort_again 1872 5 323 324 325 326 327 
-snd_spear_trap 2416 1 521 
+snd_spear_trap 2416 1 522 
