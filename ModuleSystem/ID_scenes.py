@@ -186,3 +186,4 @@ scn_goblin_north_outpost_center = 184
 scn_goblin_south_outpost_center = 185
 scn_woodsmen_village2_center = 186
 scn_beorning_village_center = 187
+scn_isengard_center_flooded = 188
