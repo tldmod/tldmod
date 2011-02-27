@@ -2933,16 +2933,16 @@ spr_tree_destructible 629178368 600 tree_e_2 bo_tree_e_2 2
 spr_dwarf_statue 0 0 statue_dwarf bo_statue_dwarf 0
 
 
-spr_distant_mountain4 0 0 rom_mountain4 0 0
+spr_distant_mountain4 69632 0 rom_mountain4 0 0
 
 
-spr_mordor_clouds 65536 0 skybox_cloud_overlay 0 0
+spr_mordor_clouds 69632 0 skybox_cloud_overlay 0 0
 
 
-spr_distant_mountain1 0 0 kkk 0 0
+spr_distant_mountain1 69632 0 kkk 0 0
 
 
-spr_distant_mountain2 0 0 kkk2 0 0
+spr_distant_mountain2 69632 0 kkk2 0 0
 
 
 spr_laketown 0 0 laketown bo_laketown 0
@@ -3862,6 +3862,6 @@ spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entran
 spr_thranduil_throne 0 0 thranduil_throne bo_thranduil_throne 0
 
 
-spr_distant_mountain_white 0 0 mountains_outer 0 0
+spr_distant_mountain_white 69632 0 mountains_outer 0 0
 
 

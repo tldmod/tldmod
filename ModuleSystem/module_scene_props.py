@@ -1582,10 +1582,10 @@ scene_props = [
   
 ###DWARVEN PROPS###
 	("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
-	("distant_mountain4",0,"rom_mountain4","0",[]),
-	("mordor_clouds",sokf_moveable,"skybox_cloud_overlay","0",[]),
-	("distant_mountain1",0,"kkk","0",[]),
-	("distant_mountain2",0,"kkk2","0",[]),
+	("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
+	("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
+	("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
+	("distant_mountain2",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
 
 	
 #####DALE PROPS#####
@@ -1929,6 +1929,6 @@ scene_props = [
 
   ("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
   ("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
-  ("distant_mountain_white",0,"mountains_outer","0",[]),
+  ("distant_mountain_white",sokf_place_at_origin|sokf_moveable,"mountains_outer","0",[]),
   
  ]

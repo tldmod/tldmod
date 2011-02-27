@@ -251,6 +251,21 @@ itemsfile version 2
  itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 4 0 93 58 0 0 25 0
 0
 
+ itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
+0
+
+ itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 2 0 96 53 0 0 20 0
+0
+
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
+0
+
+ itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
+0
+
+ itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 35970613248 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
+0
+
  itm_arnor_helm_a Arnor_Helm Arnor_Helm 1  dunedain_helm_a 0  65548 0 320 0 1.250000 100 38 0 0 7 0 0 0 0 0 0 0
 0
 
@@ -1733,15 +1748,6 @@ itemsfile version 2
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372072044986383 17 0 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
-0
-
- itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
-0
-
- itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 35970613248 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
-0
-
  itm_harad_short_spear Harad_Spear Harad_Spear 1  harad_short_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
@@ -1913,10 +1919,10 @@ itemsfile version 2
  itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  6750212 9223635925844623584 97 0 6.000000 100 0 0 0 11 33792 84 0 102 0 256 545
 0
 
- itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 2  Khand_Weapon_Sword_Pit 0  sword_viking_a_small_scabbard 3458764513820540928  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 65 0 66 0 277 29
+ itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 65 0 66 0 277 29
 0
 
- itm_khand_tulwar Khand_Tulwar Khand_Tulwar 2  Khand_Weapon_Tulwar 0  sword_viking_a_small_scabbard 3458764513820540928  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 94 0 94 0 277 29
+ itm_khand_tulwar Khand_Tulwar Khand_Tulwar 1  Khand_Weapon_Tulwar 0  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 94 0 94 0 277 29
 0
 
  itm_khand_2h_tulwar Khand_Tulwar Khand_Tulwar 1  Khand_Weapon_Tulwar_Long 0  6365187 9223635924301119728 1123 0 2.750000 100 0 0 0 10 43008 89 0 116 0 284 42
@@ -2358,12 +2364,6 @@ itemsfile version 2
 0
 
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 4222124851990272 75 0 2.250000 100 0 0 0 0 20480 98 0 140 0 282 532
-0
-
- itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 269 0 1.250000 100 0 0 0 3 0 95 56 0 0 21 0
-0
-
- itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 2 0 96 53 0 0 20 0
 0
 
  itm_dwarf_helm_a Dwarf_Helm Dwarf_Helm 1  DwarfHelmCoif 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
