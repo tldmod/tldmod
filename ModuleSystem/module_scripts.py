@@ -10877,7 +10877,7 @@ scripts = [
   # script_remove_siege_objects
   ("remove_siege_objects",
     [ (replace_scene_props, "spr_battlement_a_destroyed", "spr_battlement_a"),
-      (replace_scene_props, "spr_snowy_castle_battlement_a_destroyed", "spr_snowy_castle_battlement_a"),
+#      (replace_scene_props, "spr_snowy_castle_battlement_a_destroyed", "spr_snowy_castle_battlement_a"),
       (replace_scene_props, "spr_castle_e_battlement_a_destroyed", "spr_castle_e_battlement_a"),
       (replace_scene_props, "spr_castle_battlement_a_destroyed", "spr_castle_battlement_a"),
       (replace_scene_props, "spr_castle_battlement_b_destroyed", "spr_castle_battlement_b"),

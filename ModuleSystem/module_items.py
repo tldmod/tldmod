@@ -183,8 +183,8 @@ items = [
 #footwear
 #["wrapping_boots", "Wrapping Boots", [("shoe_fur",0)], itp_shop|itp_type_foot_armor |itp_civilian |itp_attach_armature ,0,
 # 3 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(3)|difficulty(0) ,imodbits_cloth ],
-["woolen_hose", "Woolen Hose", [("woolen_hose",0)], itp_shop|itp_type_foot_armor |itp_civilian |itp_attach_armature ,0,
- 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
+#["woolen_hose", "Woolen Hose", [("woolen_hose",0)], itp_shop|itp_type_foot_armor |itp_civilian |itp_attach_armature ,0,
+# 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
 #["blue_hose", "Blue Hose", [("blue_leggings",0)], itp_shop|itp_type_foot_armor |itp_civilian |itp_attach_armature ,0,
 # 11 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
 #["hunter_boots", "Hunter Boots", [("boot_hunter",0)], itp_shop|itp_type_foot_armor |itp_civilian |itp_attach_armature,0,
@@ -203,8 +203,8 @@ items = [
 # 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
 #["splinted_greaves", "Splinted Greaves", [("spl_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0,
 # 1153 , weight(3.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7) ,imodbits_armor ],
-["mail_boots", "Mail Boots", [("shoe_cm",0)], itp_shop|itp_type_foot_armor |itp_attach_armature  ,0,
- 1746 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(8) ,imodbits_armor ],
+#["mail_boots", "Mail Boots", [("shoe_cm",0)], itp_shop|itp_type_foot_armor |itp_attach_armature  ,0,
+# 1746 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(8) ,imodbits_armor ],
 #["iron_greaves", "Iron Greaves", [("iron_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0,
 # 2374 , weight(3.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(33)|difficulty(9) ,imodbits_armor ],
 #["black_greaves", "Black Greaves", [("black_greaves",0)], itp_type_foot_armor  |itp_attach_armature,0,
@@ -1111,7 +1111,7 @@ items = [
 ["mirkwood_helm_d", "Mirkwood Royal Archer Helm", [("mirkwoodroyalarcher",0)], itp_shop|itp_type_head_armor   ,0, 479 , weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 	####BOOTS
 ["mirkwood_boots", "Mirkwood boots", [("mirkwood_boots",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
-["mirkwood_leather_greaves", "Mirkwood_Leather_Greaves", [("lthr_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
+["mirkwood_leather_greaves", "Mirkwood_Leather_Greaves", [("mirkwood_boots",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
 
 #####TLD HARAD ITEMS##########
 	############ARMOR##########
@@ -1340,17 +1340,17 @@ items = [
 ["dale_helmet_f", "Dale Helmet", [("DwarfHelmConicalChain"    ,0)], itp_shop| itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #["dale_hood", "Dale Hood", [("dale_hood",0)], itp_shop| itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #########	WEAPONS##########
-["dale_sword",      "Dale Shortsword",[("dale_sword_b" ,0),("scab_dale_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(88)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["dale_sword_long", "Dale Longsword" ,[("dale_sword_a" ,0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(95)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["dale_sword_broad","Dale Broadsword",[("dale_sword_c" ,0),("scab_dale_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(77)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dale_sword",      "Dale Shortsword",[("dale_sword_b" ,0),("scab_dwarf_sword_a_new",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(88)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dale_sword_long", "Dale Longsword" ,[("dale_sword_a" ,0),("scab_dwarf_sword_a_new",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(95)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dale_sword_broad","Dale Broadsword",[("dale_sword_c" ,0),("scab_dwarf_sword_a_new",ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(77)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 ["dale_bow",        "Dale Bow"       ,[("dale_bow"     ,0),("dale_bow_carry"   ,ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 728 , weight(1.5)|difficulty(4)|spd_rtng(93) | shoot_speed(58) | thrust_damage(25 ,bow_damage),imodbits_bow ],
 ["dale_pike",       "Dale Spear"     ,[("dale_spear"   ,0)                                   ],itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 125 , weight(3.0)|difficulty(0)|spd_rtng(95) | weapon_length(171)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
 ["dale_billhook",   "Dale Billhook"  ,[("dale_billhook",0)                                   ],itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 125 , weight(3.0)|difficulty(0)|spd_rtng(95) | weapon_length(185)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
 #####SHIELDS##########
-["dale_shield_a", "Dale Shield", [("arena_shield_blue",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
-["dale_shield_b", "Dale Shield", [("arena_shield_blue",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
-["dale_shield_c", "Dale Shield", [("arena_shield_blue",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
-["dale_shield_d", "Dale Shield", [("arena_shield_blue",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
+["dale_shield_a", "Dale Shield", [("dwarf_shield_n",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
+["dale_shield_b", "Dale Shield", [("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
+["dale_shield_c", "Dale Shield", [("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
+["dale_shield_d", "Dale Shield", [("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield ],
 
 
  #TLD UMBAR ITEMS##########
@@ -1404,8 +1404,7 @@ items = [
 ["beorn_helmet", "North Skullcap", [("beorn_helmet",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #["northm_helm_b", "Northmen Helm", [("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 	#####SHIELDS##########
-["beorn_shield","North Shield", [("shield_round_g",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-#["northm_shield_b","Northmen Shield", [("shield_round_g",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+["beorn_shield","North Shield", [("dwarf_shield_f",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 	######WEAPONS###########
 ["beorn_axe"    ,"Beorning Axe"    ,[("beorning_axe"    ,0)], itp_type_polearm|itp_shop|itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 240 , weight(5)|difficulty(9)|spd_rtng(88) | weapon_length(76)|swing_damage(41 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 # use itm_dale_sword, itm_dwarf_sword_a, itm_dwarf_sword_b for Beorning's imported swords
@@ -1420,7 +1419,6 @@ items = [
 ["dwarf_shield_b", "Dwarven Shield", [("dwarf_shield_b",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_c", "Dwarven Shield", [("dwarf_shield_c",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_d", "Dwarven Shield", [("dwarf_shield_d",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["dwarf_shield_e", "Dwarven Shield", [("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_f", "Dwarven Shield", [("dwarf_shield_f",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_g", "Dwarven Shield", [("dwarf_shield_g",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 # duplicate ["dwarf_shield_h",         "Dwarven Shield", [("dwarf_shield_h",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -1428,14 +1426,16 @@ items = [
 ["dwarf_shield_j", "Dwarven Shield", [("dwarf_shield_j",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_k", "Dwarven Shield", [("dwarf_shield_k",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["dwarf_shield_l", "Dwarven Shield", [("dwarf_shield_l",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["dwarf_shield_m", "Dwarven Shield", [("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["dwarf_shield_n", "Dwarven Shield", [("dwarf_shield_n",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+#went to dale shields
+#["dwarf_shield_e", "Dwarven Shield", [("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+#["dwarf_shield_m", "Dwarven Shield", [("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+#["dwarf_shield_n", "Dwarven Shield", [("dwarf_shield_n",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 
 	#WEAPONS###########
-["dwarf_sword_a", "Dwarf Sword", [("dwarf_sword_a",0),("scab_dwarf_sword_a", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(62)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["dwarf_sword_b", "Dwarf Sword", [("dwarf_sword_b",0),("scab_dwarf_sword_b", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(66)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["dwarf_sword_c", "Dwarf Sword", [("dwarf_sword_c",0),("scab_dwarf_sword_c", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(66)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
-["dwarf_sword_d", "Dwarf Sword", [("dwarf_sword_d",0),("scab_dwarf_sword_d", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(58)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dwarf_sword_a", "Dwarf Sword", [("dwarf_sword_a",0),("scab_dwarf_sword_a_new", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(62)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dwarf_sword_b", "Dwarf Sword", [("dwarf_sword_b",0),("scab_dwarf_sword_a_new", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(66)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dwarf_sword_c", "Dwarf Sword", [("dwarf_sword_c",0),("scab_dwarf_sword_a_new", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(66)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
+["dwarf_sword_d", "Dwarf Sword", [("dwarf_sword_d",0),("scab_dwarf_sword_a_new", ixmesh_carry)],itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_dagger_front_right |itcf_show_holster_when_drawn, 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(58)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 #["dwarf_sword_e", "Dwarf Sword", [("dwarf_sword107",0),("sword_viking_a_small_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
 # 280 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(96)|swing_damage(29 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 #["dwarf_sword_f", "Dwarf Sword", [("dwarf_sword110",0),("sword_viking_a_small_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
