@@ -1,5 +1,5 @@
 itemsfile version 2
-802
+803
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -114,13 +114,13 @@ itemsfile version 2
  itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
 0
 
- itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
+ itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
 0
 
- itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 1610612736 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 259 0
+ itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 259 0
 0
 
- itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 259 0
+ itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 259 0
 0
 
  itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  flying_missile 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 160 0 0 0 0 0 0 0 95 30 257 0
@@ -248,6 +248,9 @@ itemsfile version 2
  itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
 0
 
+ itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 20 0
+0
+
  itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
 0
 
@@ -281,13 +284,13 @@ itemsfile version 2
  itm_heavy_throwing_spear Heavy_Throwing_Spear Heavy_Throwing_Spear 1  rohan_throwing_spear 0  71368714 262144 209 0 4.000000 100 0 0 0 2 0 89 27 65 2 319 0
 0
 
- itm_javelin Javelin Javelin 2  javelin 0  javelins_quiver 3458764513820540928  71368714 35970613248 75 0 5.000000 100 0 0 0 1 0 91 28 75 3 284 0
+ itm_javelin Javelin Javelin 2  javelin 0  javelins_quiver 3458764513820540928  71368714 36507484160 75 0 5.000000 100 0 0 0 1 0 91 28 75 3 284 0
 0
 
- itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 35970613248 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
+ itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
 0
 
- itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 35970613248 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
+ itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 2 0 89 27 65 3 289 0
 0
 
  itm_rohirrim_throwing_axe Rohirrim_Throwing_Axes Rohirrim_Throwing_Axes 1  rohan_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 1 0 99 20 53 7 38 0
@@ -1422,7 +1425,7 @@ itemsfile version 2
  itm_dun_shield_b Dunnish_Shield Dunnish_Shield 1  dun_roundshield_b 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 2  dunland_sword 0  dunland_sword 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 98 0 277 28
+ itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 1  dunland_sword 0  4259842 9223388529822793743 162 0 1.250000 100 0 0 0 0 28672 103 0 98 0 277 28
 0
 
  itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 9 40960 97 0 73 0 256 40
@@ -1434,7 +1437,7 @@ itemsfile version 2
  itm_dunnish_axe Dunnish_Battle_Axe Dunnish_Battle_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 9 40960 97 0 34 0 256 40
 0
 
- itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  138772484 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 95 0 205 0 282 528
+ itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  138772484 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 95 0 205 0 282 528
 0
 
  itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
@@ -1727,34 +1730,34 @@ itemsfile version 2
  itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 8 30720 96 0 73 0 256 30
 0
 
- itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  6619140 9223388529554358286 7 0 2.000000 100 0 0 0 0 14336 100 0 55 0 256 526
+ itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  6619136 9223635925844623584 7 0 2.000000 100 0 0 0 0 14336 100 0 55 0 256 526
 0
 
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372072044986383 17 0 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
 0
 
- itm_harad_short_spear Harad_Spear Harad_Spear 1  harad_short_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_harad_short_spear Harad_Spear Harad_Spear 1  harad_short_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
  itm_harad_shield_a Harondor_Shield Harondor_Shield 1  harad_shield_a 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
@@ -1766,10 +1769,10 @@ itemsfile version 2
  itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  harad_tribal_a 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  harad_tribal_a 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  harad_tribal_b 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  harad_tribal_b 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
  itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
@@ -2117,13 +2120,13 @@ itemsfile version 2
  itm_dale_helmet_f Dale_Helmet Dale_Helmet 1  DwarfHelmConicalChain 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_b 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 88 0 277 28
+ itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_b 0  scab_dale_sword_b 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 88 0 277 28
 0
 
- itm_dale_sword_long Dale_Longsword Dale_Longsword 2  dale_sword_a 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 95 0 277 28
+ itm_dale_sword_long Dale_Longsword Dale_Longsword 2  dale_sword_a 0  scab_dale_sword_a 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 95 0 277 28
 0
 
- itm_dale_sword_broad Dale_Broadsword Dale_Broadsword 2  dale_sword_c 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 77 0 277 28
+ itm_dale_sword_broad Dale_Broadsword Dale_Broadsword 2  dale_sword_c 0  scab_dale_sword_c 3458764513820540928  4259842 9223388564182532111 162 0 1.250000 100 0 0 0 0 28672 103 0 77 0 277 28
 0
 
  itm_dale_pike Dale_Spear Dale_Spear 1  dale_spear 0  138772484 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 95 0 171 0 282 528
@@ -2300,16 +2303,16 @@ itemsfile version 2
  itm_dwarf_shield_l Dwarven_Shield Dwarven_Shield 1  dwarf_shield_l 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 2  dwarf_sword_a 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 62 0 277 29
+ itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 2  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 62 0 277 29
 0
 
- itm_dwarf_sword_b Dwarf_Sword Dwarf_Sword 2  dwarf_sword_b 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 66 0 277 29
+ itm_dwarf_sword_b Dwarf_Sword Dwarf_Sword 2  dwarf_sword_b 0  scab_dwarf_sword_b 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 66 0 277 29
 0
 
- itm_dwarf_sword_c Dwarf_Sword Dwarf_Sword 2  dwarf_sword_c 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 66 0 277 29
+ itm_dwarf_sword_c Dwarf_Sword Dwarf_Sword 2  dwarf_sword_c 0  scab_dwarf_sword_c 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 66 0 277 29
 0
 
- itm_dwarf_sword_d Dwarf_Sword Dwarf_Sword 2  dwarf_sword_d 0  scab_dwarf_sword_a_new 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 58 0 277 29
+ itm_dwarf_sword_d Dwarf_Sword Dwarf_Sword 2  dwarf_sword_d 0  scab_dwarf_sword_d 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 58 0 277 29
 0
 
  itm_dwarf_adz Dwarf_Adz Dwarf_Adz 1  dwarf_adz 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 10 44032 86 0 68 0 256 43
