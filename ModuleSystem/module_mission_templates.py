@@ -33,7 +33,7 @@ from module_mission_templates_unneeded import *
 # 
 ####################################################################################################################
 
-pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff,itm_throwing_knives]
+pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
 common_battle_mission_start = (ti_before_mission_start, 0, 0, [],
@@ -3591,7 +3591,7 @@ mission_templates = [
           (call_script, "script_combat_music_set_situation_with_culture"),
          ]),
 
-      (0.1,0,0.1, [	(key_clicked, key_f3)],#fight after F3 pressed
+      (0,0,0, [	(key_clicked, key_f3)],#fight after F3 pressed
 		[(display_message,"@THREE.. TWO... ONE.... FIGHT!"),
 		 (try_for_agents,":agent"),
 		    (agent_is_human),
