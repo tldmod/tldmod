@@ -1,5 +1,5 @@
 itemsfile version 2
-803
+804
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -368,7 +368,7 @@ itemsfile version 2
  itm_sword_of_arathorn Sword_of_Arathorn Sword_of_Arathorn 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  4259843 9223635954298781951 294 0 2.000000 100 0 0 0 9 36864 99 0 96 0 283 36
 0
 
- itm_riv_helm_a Rivendell_Coif Rivendell_Coif 1  rivendell_coif 0  65548 0 980 0 2.750000 100 53 0 0 10 0 0 0 0 0 0 0
+ itm_riv_helm_a Rivendell_Coif Rivendell_Coif 1  rivendell_coif_new 0  65548 0 980 0 2.750000 100 53 0 0 10 0 0 0 0 0 0 0
 0
 
  itm_riv_helm_b Rivendell_Helm Rivendell_Helm 1  rivendellarcherhelmet 0  65548 0 980 0 2.750000 100 53 0 0 10 0 0 0 0 0 0 0
@@ -771,6 +771,9 @@ itemsfile version 2
  itm_lorien_sword_c Lorien_War_Sword Lorien_War_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4259843 9223635954298781951 394 0 1.500000 100 0 0 0 0 30720 99 0 92 0 277 30
 0
 
+ itm_lorien_archer Lorien_Armor Lorien_Armor 1  lorien_archer 0  553713677 0 454 0 12.000000 100 0 27 10 0 0 0 0 0 0 0 0
+0
+
  itm_lorien_armor_a Lorien_Armor Lorien_Armor 1  lorien_infantry_01 0  553713677 0 454 0 12.000000 100 0 27 10 0 0 0 0 0 0 0 0
 0
 
@@ -792,13 +795,13 @@ itemsfile version 2
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_shield_a Lorien_Shield Lorien_Shield 1  loth_long_shield_a 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_lorien_shield_b Lorien_Shield Lorien_Shield 1  lorien_kite 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_lorien_shield_c Lorien_Shield Lorien_Shield 1  lorien_kite_small 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_lorien_round_shield Lorien_Round_Shield Lorien_Round_Shield 1  lorien_round_shield 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
  itm_lorien_helm_a Lorien_Archer_Helm Lorien_Archer_Helm 1  lorienhelmetarcherlow 0  65548 0 980 0 2.750000 100 53 0 0 10 0 0 0 0 0 0 0
@@ -1931,10 +1934,10 @@ itemsfile version 2
  itm_variag_gladiator_shield Variag_Gladiator_Shield Variag_Gladiator_Shield 1  eastershield_c 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_variag_plated_shield Variag_Plated_Shield Variag_Plated_Shield 1  eastershield_e 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_easterling_hawk_shield Easterling_Hawk_Shield Easterling_Hawk_Shield 1  eastershield_d 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_easterling_hawk_shield Easterling_Hawk_Shield Easterling_Hawk_Shield 1  eastershield_d 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_variag_plated_shield Variag_Plated_Shield Variag_Plated_Shield 1  eastershield_e 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
  itm_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 10 0 3.000000 100 0 0 12 0 0 0 0 0 0 0 0

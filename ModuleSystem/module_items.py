@@ -341,7 +341,7 @@ items = [
 ["elven_bow"      ,"Elven Bow"      ,[("elven_bow"     ,0),("elven_bow_carry"  ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back                                 ,728,weight(1.5)|difficulty(0)|spd_rtng(93)|shoot_speed(58)|thrust_damage(25,    pierce),imodbits_bow ],
 ["corsair_bow"    ,"Corsair Bow"    ,[("corsair_bow"   ,0),("corsair_bow_carry",ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back                                 ,728,weight(1.5)|difficulty(0)|spd_rtng(93)|shoot_speed(58)|thrust_damage(25,bow_damage),imodbits_bow ],
 ["dwarf_horn_bow" ,"Dwarf_Horn_Bow" ,[("dwarf_horn_bow",0),("dwarf_horn_bow"   ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left                             ,269,weight(1.3)|difficulty(0)|spd_rtng(95)|shoot_speed(56)|thrust_damage(21,bow_damage),imodbits_bow ],
-["dwarf_short_bow","Dwarf_Short_Bow",[("dwarf_short_bow",0),("dwarf_short_bow" ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bowcase_left                             ,164,weight(1.3)|difficulty(0)|spd_rtng(96)|shoot_speed(53)|thrust_damage(20,bow_damage),imodbits_bow ],
+["dwarf_short_bow","Dwarf_Short_Bow",[("dwarf_short_bow",0),("dwarf_short_bow" ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left                             ,164,weight(1.3)|difficulty(0)|spd_rtng(96)|shoot_speed(53)|thrust_damage(20,bow_damage),imodbits_bow ],
 ["harad_bow"     ,"Harad Curved Bow",[("harad_bow"     ,0),("khergit_bow_case" ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,269,weight(1.3)|difficulty(0)|spd_rtng(95)|shoot_speed(56)|thrust_damage(21,bow_damage),imodbits_bow ],
 ["lg_bow"         ,"Eagle Guard Bow",[("lg_bow"        ,0),("khergit_bow_case" ,ixmesh_carry)], itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,269,weight(1.3)|difficulty(0)|spd_rtng(95)|shoot_speed(56)|thrust_damage(21,bow_damage),imodbits_bow ],
 ["riv_bow"        ,"Rivendell Bow"  ,[("rivendellbow"  ,0),("rivendellbow_carry",ixmesh_carry)],itp_type_bow|itp_shop|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back                                 ,145,weight(1.8)|difficulty(0)|spd_rtng(82)|shoot_speed(54)|thrust_damage(22,    pierce),imodbits_bow ],
@@ -412,7 +412,7 @@ items = [
  294 , weight(2.05)|difficulty(9)|spd_rtng(99) | weapon_length(96)|swing_damage(36 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high ],
 
 	#RIVENDELL HELMS##########
-["riv_helm_a", "Rivendell Coif", [("rivendell_coif",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["riv_helm_a", "Rivendell Coif", [("rivendell_coif_new",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["riv_helm_b", "Rivendell Helm", [("rivendellarcherhelmet",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["riv_helm_c", "Rivendell Helm", [("rivendellswordfighterhelmet",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 #["riv_helm_d", "Rivendell Helm", [("elvenhelm_b",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
@@ -622,7 +622,7 @@ items = [
 ["lorien_sword_c", "Lorien War Sword", [("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
 394 , weight(1.5)|abundance(100)|difficulty(0)|spd_rtng(99) | weapon_length(92)|swing_damage(30 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 	###########LORIEN ARMORS########
-#["lorien_armor_a", "Lorien Armor",[("loth_half_leather"       ,0)], itp_shop|itp_type_body_armor|itp_covers_legs|itp_civilian,0,454, weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["lorien_archer", "Lorien Armor" ,[("lorien_archer"           ,0)], itp_shop|itp_type_body_armor|itp_covers_legs|itp_civilian,0,454, weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["lorien_armor_a", "Lorien Armor",[("lorien_infantry_01"      ,0)], itp_shop|itp_type_body_armor|itp_covers_legs|itp_civilian,0,454, weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["lorien_armor_b", "Lorien Armor",[("lorien_vetinfantry_01"   ,0)], itp_shop|itp_type_body_armor|itp_covers_legs|itp_civilian,0,454, weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 #["lorien_armor_d", "Lorien Armor",[("loth_full_leather"       ,0)], itp_shop|itp_type_body_armor|itp_covers_legs|itp_civilian,0,454, weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
@@ -635,10 +635,10 @@ items = [
 
 ["lorien_boots", "Lothlorien Boots", [("lorien_boots",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0,760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
 	########LORIEN SHIELDS#####
-["lorien_shield_a", "Lorien Shield", [("loth_long_shield_a" ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["lorien_shield_b", "Lorien Shield", [("lorien_kite"        ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["lorien_shield_c", "Lorien Shield", [("lorien_kite_small"  ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-#["lorien_shield_d", "Lorien Shield", [("lorien_round_shield",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+#["lorien_shield_a", "Lorien Shield", [("loth_long_shield_a" ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+["lorien_shield_b", "Lorien Tower Shield", [("lorien_kite"        ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+["lorien_shield_c", "Lorien Kite Shield", [("lorien_kite_small"  ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+["lorien_round_shield", "Lorien Round Shield", [("lorien_round_shield",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
  
 	########LORIEN HELMS#######
 ["lorien_helm_a", "Lorien Archer Helm", [("lorienhelmetarcherlow" ,0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
@@ -1168,8 +1168,8 @@ items = [
      ####KHAND SHIELDS
 ["easterling_round_horseman","Easterling_Round_Shield", [("eastershield_b",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["variag_gladiator_shield"  ,"Variag_Gladiator_Shield", [("eastershield_c",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["variag_plated_shield"     ,"Variag_Plated_Shield"   , [("eastershield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["easterling_hawk_shield"   ,"Easterling_Hawk_Shield" , [("eastershield_d",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
+["variag_plated_shield"     ,"Variag_Plated_Shield"   , [("eastershield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 
  ###TLD RHUN ITEMS##########
 ["furry_boots", "Furry Boots", [("furry_boots",0)], itp_shop|itp_type_foot_armor,0, 10 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_armor ],

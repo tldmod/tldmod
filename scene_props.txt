@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1200
+ 1201
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2157,6 +2157,9 @@ spr_gon_small_wall_d 0 0 gon_small_wall_d bo_small_wall_d 0
 
 
 spr_gon_small_wall_e 0 0 gon_small_wall_e bo_small_wall_d 0
+
+
+spr_gon_upper_apt 0 0 gon_upper_apt 0 0
 
 
 spr_gon_ruined_wall 0 0 ruined_wall bo_ruined_wall 0
