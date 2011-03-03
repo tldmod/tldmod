@@ -1255,7 +1255,7 @@ subfaction_data= [ # center          guard_troop,                prison_guard_tr
  (subfac_ethring,      "p_town_ethring"      ,"Lamedon"   ,[  "trp_clansman_of_lamedon",     "trp_footman_of_lamedon",     			"trp_veteran_of_lamedon"  ],     ["pt_ethring_reinf_a",   "pt_ethring_reinf_b",   "pt_ethring_reinf_c"],     ["trp_lamedon_leader"]),
  (subfac_lossarnach,   "p_town_lossarnach"   ,"Lossarnach",[  "trp_woodsman_of_lossarnach",  "trp_axeman_of_lossarnach",            "trp_axemaster_of_lossarnach"   ],["pt_lossarnach_reinf_a", "pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
  (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,[  "trp_warrior_of_pinnath_gelin","trp_veteran_warrior_of_pinnath_gelin","trp_champion_of_pinnath_gelin"],["pt_pinnath_reinf_a",    "pt_pinnath_reinf_b",   "pt_pinnath_reinf_c"],    ["trp_pinnath_leader"]),
- (subfac_rangers,      "p_town_henneth_annun","Ithilien"  ,[  "trp_warrior_of_pinnath_gelin","trp_veteran_warrior_of_pinnath_gelin","trp_champion_of_pinnath_gelin"],["pt_ithilien_reinf_a",   "pt_ithilien_reinf_b",  "pt_ithilien_reinf_c"],   ["trp_ithilien_leader"]),
+ (subfac_rangers,      "p_town_henneth_annun","Ithilien"  ,[  "trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"      ,"trp_master_ranger_of_ithilien"],["pt_ithilien_reinf_a",   "pt_ithilien_reinf_b",  "pt_ithilien_reinf_c"],   ["trp_ithilien_leader"]),
  (subfac_blackroot,    "p_town_erech"        ,"Blackroot" ,[  "trp_blackroot_vale_archer",   "trp_footman_of_blackroot_vale", 	    "trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a","pt_blackroot_reinf_b",  "pt_blackroot_reinf_c"],["trp_blackroot_leader"]),
  
 ]
@@ -1374,7 +1374,7 @@ center_list = [
 	    [-1, "trp_smith_wosgiliath", "trp_town_11_horse_merchant", -1 , "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
 		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_henneth_annun", ["scn_henneth_annun_center", "scn_henneth_annun_castle", -1, -1, -1],
-	    [-1, "trp_smith_hannun", "trp_no_troop", -1, "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
+	    [-1, "trp_smith_hannun", "trp_no_troop", -1, "pt_gondor_reinf_a", "trp_gondor_lord", "trp_ranger_of_ithilien","trp_ranger_of_ithilien","trp_veteran_ranger_of_ithilien","trp_master_ranger_of_ithilien"], 
 		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_cair_andros", ["scn_cair_andros_center", "scn_cair_andros_castle", -1, -1, -1],
 	    [-1, "trp_smith_candros", "trp_no_troop", -1, "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 

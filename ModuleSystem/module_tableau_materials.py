@@ -378,7 +378,7 @@ tableaus = [
 #       (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
 #       ]),
   
-  ("heraldic_armor_b", 0, "sample_heraldic_armor_b", 512, 512, 0, 0, 0, 0,
+  ("heraldic_armor_b", 0, "sample_heraldic_rohan_armor", 512, 512, 0, 0, 0, 0,
    [   (store_script_param, ":banner_mesh", 1),
        (set_fixed_point_multiplier, 100),
        (store_sub, ":background_slot", ":banner_mesh", arms_meshes_begin),

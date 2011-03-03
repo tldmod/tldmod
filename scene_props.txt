@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1201
+ 1202
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1447,6 +1447,9 @@ spr_snowy_house_h 0 0 snowy_house_h bo_snowy_house_h 0
 
 
 spr_snowy_house_i 0 0 snowy_house_i bo_snowy_house_i 0
+
+
+spr_snowy_stand 0 0 snowy_stand bo_snowy_stand 0
 
 
 spr_snowy_heap_a 0 0 snowy_heap_a bo_snowy_heap_a 0

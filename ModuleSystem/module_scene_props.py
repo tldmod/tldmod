@@ -877,7 +877,7 @@ scene_props = [
   ("snowy_house_i",0,"snowy_house_i","bo_snowy_house_i", []),
 #  ("snowy_wall_a",0,"snowy_wall_a","bo_snowy_wall_a", []),
 
-#  ("snowy_stand",0,"snowy_stand","bo_snowy_stand", []),
+  ("snowy_stand",0,"snowy_stand","bo_snowy_stand", []),
 
   ("snowy_heap_a",0,"snowy_heap_a","bo_snowy_heap_a", []),
   ("snowy_trunks_a",0,"snowy_trunks_a","bo_snowy_trunks_a", []),
