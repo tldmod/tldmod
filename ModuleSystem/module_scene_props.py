@@ -1329,7 +1329,7 @@ scene_props = [
   
   ("gon_small_wall_d",0,"gon_small_wall_d","bo_small_wall_d", []),
   ("gon_small_wall_e",0,"gon_small_wall_e","bo_small_wall_d", []),
-  ("gon_upper_apt",0,"gon_upper_apt","0", []),
+  ("gon_upper_apt",0,"gon_upper_apt_a","0", []),
   
   ##GONDOR RUINS###
    ("gon_ruined_wall",0,"ruined_wall","bo_ruined_wall", []),
