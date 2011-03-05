@@ -1779,6 +1779,9 @@ game_menus = [
 	      (assign, "$g_mvtest_faction", kingdoms_begin),
 	    (try_end),
       ]),
+     ("defeat",[],"Set faction strength to -1000 (defeat).", [
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,-1000),
+       (display_message, "@Faction defeated! Now wait for it...", 0x30FFC8),]),
      ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
     ]
   ),
@@ -3340,7 +3343,7 @@ game_menus = [
 			(try_begin),(is_between, reg10, towns_begin, towns_end), 
 					(display_log_message, "@News of your victory against {s4} reach {s3}."),
 			(else_try), 
-				(display_log_message, "@{s3} withnesses your victory against {s4}."),
+				(display_log_message, "@{s3} witnesses your victory against {s4}."),
 			(try_end),
 		(else_try),
 			(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
@@ -7899,12 +7902,12 @@ game_menus = [
       (position_set_x, pos0, 65),
       (position_set_y, pos0, 30),
       (position_set_z, pos0, 170),
-      (try_begin),
-        (is_between, "$g_notification_menu_var1", "fac_gondor", kingdoms_end), #Excluding player kingdom
-        (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_for_menu", "$g_notification_menu_var1", pos0),
-      (else_try),
+      # (try_begin),
+        # (is_between, "$g_notification_menu_var1", "fac_gondor", kingdoms_end), #Excluding player kingdom
+        # (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_for_menu", "$g_notification_menu_var1", pos0),
+      # (else_try),
         (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$g_notification_menu_var1", pos0),
-      (try_end),
+      # (try_end),
       ],
     [("continue",[],"Continue...",
        [(try_begin),

@@ -398,8 +398,12 @@ scripts = [
 	   (store_faction_of_party, ":pfac", ":party"),
 	   (store_relation, ":relation", ":pfac", ":fac"),
 	 
-	   (lt, ":relation", -1), # it's an enemy
+	   (lt, ":relation", 0), # it's an enemy...
 	   
+	   (store_relation, ":relation", ":pfac", "$players_kingdom"),
+	 
+	   (ge, ":relation", 0), # and it's your friend
+       
 	   (party_get_slot, ":val", ":party", slot_party_victory_value),(this_or_next|ge, ":val", ws_host_vp),  # its a host
 	   (is_between, ":party", towns_begin, towns_end),  #or a town
  
@@ -1635,6 +1639,10 @@ scripts = [
        (store_script_param_2, ":root_attacker_party"),
 
        (try_begin),
+         (this_or_next|neg|party_is_active,":root_defender_party"),
+         (neg|party_is_active,":root_attacker_party"),
+         (set_trigger_result, 1),
+       (else_try),
          (store_faction_of_party, ":defender_faction", ":root_defender_party"),
          (store_faction_of_party, ":attacker_faction", ":root_attacker_party"),
          (neq, ":defender_faction", "fac_player_faction"),
@@ -13450,6 +13458,7 @@ scripts = [
      (try_begin),
        (ge, ":lord_troop", 0),
        (store_troop_faction, ":lord_faction", ":lord_troop"),
+       (faction_slot_eq, ":lord_faction", slot_faction_state, sfs_active), #TLD
        (str_store_troop_name_link, s1, ":lord_troop"),
        (try_begin),
          (eq, ":lord_troop", "trp_player"),

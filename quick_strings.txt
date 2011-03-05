@@ -1,4 +1,4 @@
-658
+657
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -277,11 +277,9 @@ qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_You_company_cannot_t You_company_cannot_take_more_man
 qstr_You_inventory_has_no You_inventory_has_no_enough_space.
-qstr_DEBUG:_{s1}_decided_ DEBUG:_{s1}_decided_to_do_nothing.
-qstr_DEBUG:_{s1}_decided_t DEBUG:_{s1}_decided_to_gather_army.
-qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_besiege_{s2}.
-qstr_DEBUG:_{s1}_decided_to_ DEBUG:_{s1}_decided_to_attack_{s2}.
-qstr_DEBUG:_{s1}_decided_to_a DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
+qstr_DEBUG:_{s1}_decided_ DEBUG:_{s1}_decided_to_besiege_{s2}.
+qstr_DEBUG:_{s1}_decided_t DEBUG:_{s1}_decided_to_attack_{s2}.
+qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_Host_of_{s5} Host_of_{s5}
 qstr__{s6}_has_assumed_th _{s6}_has_assumed_the_command_of_{s5}_host!
@@ -398,6 +396,7 @@ qstr_{s1}raiding_around_{ {s1}raiding_around_{s7}_-_INVALID
 qstr_{s1}engaging_{s7} {s1}engaging_{s7}
 qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
+qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
 qstr_Town_wealth_for_{s4} Town_wealth_for_{s4}
 qstr_{s1}^{s7}:_{reg1} {s1}^{s7}:_{reg1}
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
@@ -449,7 +448,7 @@ qstr_You_have_retreated_f You_have_retreated_from_the_fight.
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_DEBUG:_player_defeat DEBUG:_player_defeated_a_party_of_faction_{s4}.
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
-qstr_{s3}_withnesses_your {s3}_withnesses_your_victory_against_{s4}.
+qstr_{s3}_witnesses_your_ {s3}_witnesses_your_victory_against_{s4}.
 qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}

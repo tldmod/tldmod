@@ -345,6 +345,7 @@ simple_triggers = [
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (try_begin),
           (gt, ":party_no", 0),
+          (party_is_active,":party_no"),
           (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
           (ge, ":commander_party", 0),
           (store_faction_of_party, ":faction_no", ":party_no"),
@@ -1568,6 +1569,7 @@ simple_triggers = [
        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
          (ge, ":party_no", 1),
+         (party_is_active, ":party_no"),
          (party_slot_eq, ":party_no", slot_party_following_player, 1),
          (store_current_hours, ":cur_time"),
          (neg|party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"),
@@ -1755,6 +1757,7 @@ simple_triggers = [
         (assign, ":continue", 1),
       (else_try),
         (gt, ":party_no", 0),
+        (party_is_active, ":party_no"), #MV fix
 
         #checking if the party is outside the centers
         (party_get_attached_to, ":cur_center_no", ":party_no"),
@@ -1954,7 +1957,13 @@ simple_triggers = [
       (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
       (val_add, ":num_active_factions", 1),
 #      (this_or_next|faction_slot_eq, ":cur_kingdom", slot_faction_number_of_parties, 0),
+
+      #MV for TLD: faction defeat if capital captured
+      (faction_get_slot, ":capital", ":cur_kingdom", slot_faction_capital),
+      (store_faction_of_party, ":capital_faction", ":capital"),
+	  (this_or_next|neq, ":cur_kingdom", ":capital_faction"),
 	  (neg|faction_slot_ge, ":cur_kingdom", slot_faction_strength, 1), # TLD faction strength check, GA
+      
       (assign, ":faction_removed", 0),
       (try_begin),
         (eq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -1967,6 +1976,7 @@ simple_triggers = [
         (neq, "$players_kingdom", ":cur_kingdom"),
         (faction_set_slot, ":cur_kingdom", slot_faction_state, sfs_defeated),
         (try_for_parties, ":cur_party"),
+          (party_is_active, ":cur_party"),
           (store_faction_of_party, ":party_faction", ":cur_party"),
           (eq, ":party_faction", ":cur_kingdom"),
           
@@ -1976,6 +1986,7 @@ simple_triggers = [
           (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
             (party_get_attached_party_with_rank, ":attached_party", ":cur_party", ":attached_party_rank"),
             (gt, ":attached_party", 0),
+            (party_is_active, ":attached_party"),
             (party_detach, ":attached_party"),
           (try_end),
           (try_begin),
@@ -2001,6 +2012,13 @@ simple_triggers = [
 #          (neq, ":kingdom_pretender", "$supported_pretender"),
 #          (troop_set_slot, ":kingdom_pretender", slot_troop_cur_center, 0), #remove pretender from the world
 #        (try_end),
+
+        # dispose of defeated heroes
+        (try_for_range, ":defeated_lord", kingdom_heroes_begin, kingdom_heroes_end),
+          (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
+          (eq, ":defeated_lord_faction", ":cur_kingdom"),
+          (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
+        (try_end),
 
 	    
 	    (str_store_faction_name,s2,":cur_kingdom"),
@@ -2063,6 +2081,7 @@ simple_triggers = [
     # TLD deal with prisoner trains reached destination
     (8, [
         (try_for_parties, ":party_no"),
+            (party_is_active, ":party_no"),
             (party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
             (party_is_in_any_town, ":party_no"),
             (party_get_cur_town, ":cur_center", ":party_no"),

@@ -44,11 +44,14 @@ ai_scripts = [
       (try_end),
 
       (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+        (store_faction_of_party, ":center_faction", ":cur_center"),
+        (is_between, ":center_faction", kingdoms_begin, kingdoms_end),
         (call_script, "script_party_calculate_and_set_nearby_friend_strength", ":cur_center"),
       (try_end),
       (try_for_range, ":cur_troop", heroes_begin, heroes_end),
         (troop_get_slot, ":cur_troop_party", ":cur_troop", slot_troop_leaded_party),
         (gt, ":cur_troop_party", 0),
+        (party_is_active, ":cur_troop_party"),
         (call_script, "script_party_calculate_and_set_nearby_friend_strength", ":cur_troop_party"),
       (try_end),
       (call_script, "script_party_calculate_and_set_nearby_friend_strength", "p_main_party"),
@@ -217,6 +220,12 @@ ai_scripts = [
            #MV: make sure the center is in the same theater, by checking if its owner is active in that theater
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
            (faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
+           #MV: make sure the enemy faction is weak enough to be sieged
+           (faction_get_slot, ":center_faction_strength", ":center_faction", slot_faction_strength),
+           (lt, ":center_faction_strength", fac_str_weak),
+           #MV: if it's a faction capital, the enemy needs to be very weak
+           (this_or_next|lt, ":center_faction_strength", fac_str_very_weak),
+           (neg|faction_slot_eq, ":center_faction", slot_faction_capital, ":enemy_walled_center"),
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
            (assign, ":besieger_own_faction", 0),
@@ -529,7 +538,7 @@ ai_scripts = [
          (try_begin),
            (eq, cheat_switch, 1),
            (str_store_faction_name, s1, ":faction_no"),
-           (display_message, "@DEBUG: {s1} decided to do nothing."),
+           #(display_message, "@DEBUG: {s1} decided to do nothing."),
          (try_end),
        (else_try),
          (val_sub, ":random_no", ":chance_gathering_army"),
@@ -544,7 +553,7 @@ ai_scripts = [
          (try_begin),
            (eq, cheat_switch, 1),
            (str_store_faction_name, s1, ":faction_no"),
-           (display_message, "@DEBUG: {s1} decided to gather army."),
+           #(display_message, "@DEBUG: {s1} decided to gather army."),
          (try_end),
        (else_try),
          (val_sub, ":random_no", ":chance_attacking_center"),
@@ -2186,6 +2195,7 @@ ai_scripts = [
           (store_troop_faction, ":troop_faction_no", ":troop_no"),
 		  (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
 		  (gt,":party",0),
+          (party_is_active, ":party"),
 		  (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
 		      (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 			  (val_add,":hosts",1),
@@ -2193,12 +2203,13 @@ ai_scripts = [
 	   (try_end),
 	# host spawning conditions
        (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end), # cycle through heros w/o hosts and try to spawn a host
+		  (store_troop_faction, ":troop_faction_no", ":hero"),
+          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
+          
 	      (troop_get_slot, ":party", ":hero", slot_troop_leaded_party),
 		  (gt,":party",0),
+          (party_is_active, ":party"),
 	      (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone), # if lonely hero
-		  (store_troop_faction, ":troop_faction_no", ":hero"),
-          
-          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
 
 		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
@@ -2238,8 +2249,9 @@ ai_scripts = [
        (try_end),
 	   
        (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+         (store_troop_faction, ":troop_faction", ":hero"),
+         (faction_slot_eq, ":troop_faction", slot_faction_state, sfs_active),
          (try_begin),
-           (store_troop_faction, ":troop_faction", ":hero"),
            (neg|faction_slot_eq, ":troop_faction", slot_faction_marshall, ":hero"),
            (troop_get_slot, ":troop_party", ":hero", slot_troop_leaded_party),
            (gt, ":troop_party", 0),

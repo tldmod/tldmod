@@ -1211,8 +1211,9 @@ theatre_SW = 1<<1
 theatre_C =  1<<2  
 theatre_N =  1<<3
 
-# some constants for faction strength as used in the faction AI
-fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse)
+# MV: some constants for faction strength as used in the faction AI
+fac_str_very_weak = 1000 # faction capital can be sieged and faction can be destroyed by capturing the capital
+fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 #fac_str_strong = 5000 # can siege enemy centers
 #fac_str_ratio_can_attack_mul = 3 # used to determine if a faction can take aggresive stance like attacking around enemy centers or sieging
