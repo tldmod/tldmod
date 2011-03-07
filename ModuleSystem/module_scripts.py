@@ -1165,6 +1165,9 @@ scripts = [
         (party_set_slot, center_list[x][0], slot_center_walker_8_troop, center_list[x][2][6]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_center_walker_9_troop, center_list[x][2][7]) for x in range(len(center_list)) ]+[
 		(party_set_banner_icon,             center_list[x][0],          center_list[x][3][0]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_strength_income,    center_list[x][6]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_garrison_limit,     center_list[x][7]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_destroy_on_capture, center_list[x][8]) for x in range(len(center_list)) ]+[
 #item abundancy in center shops
         (troop_set_slot, center_list[x][2][2], slot_troop_shop_horses  ,center_list[x][4][0] ) for x in range(len(center_list)) ]+[
         (troop_set_slot, center_list[x][2][1], slot_troop_shop_1h      ,center_list[x][4][1] ) for x in range(len(center_list)) ]+[
@@ -1347,8 +1350,19 @@ scripts = [
           (party_slot_eq, ":center_no", slot_party_type, spt_town),
           (assign, ":garrison_strength", 20), 
         (try_end),
+        (try_begin), # TLD: capitals get more
+          (store_faction_of_party, ":center_faction", ":center_no"),
+          (faction_slot_eq, ":center_faction", slot_faction_capital, ":center_no"),
+          (assign, ":garrison_strength", 30), 
+        (try_end),
+        (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
         (try_for_range, ":unused", 0, ":garrison_strength"),
           (call_script, "script_cf_reinforce_party", ":center_no"),
+          (try_begin), #TLD: don't go overboard
+            (party_get_num_companions, ":garrison_size", ":center_no"),
+            (le, ":garrison_limit", ":garrison_size"),
+            (assign, ":garrison_strength", 0),
+          (try_end),
         (try_end),
         (try_for_range, ":unused", 0, 2),
           (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
@@ -1604,6 +1618,9 @@ scripts = [
          (else_try),
            (eq, "$g_encountered_party", "p_camp_bandits"),
            (jump_to_menu, "mnu_camp"),
+         (else_try),
+           (eq, "$g_encountered_party_template", "pt_ruins"), #TLD ruins
+           (jump_to_menu, "mnu_ruins"),
          (else_try),
            (jump_to_menu, "mnu_simple_encounter"),
          (try_end),
@@ -1884,16 +1901,32 @@ scripts = [
                (try_end),
 
                (call_script, "script_lift_siege", ":root_defeated_party", 0),
-               (call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
-               (try_begin),
-                 (eq, ":defeated_faction", "fac_player_supporters_faction"),
-                 (call_script, "script_add_notification_menu", "mnu_notification_center_lost", ":root_defeated_party", ":winner_faction"),
+               (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
+                 (party_slot_eq, ":root_defeated_party", slot_center_destroy_on_capture, 1),
+                 (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
+                 # disable and replace with ruins
+                 (set_spawn_radius, 0),
+                 (spawn_around_party, ":root_defeated_party", "pt_ruins"),
+                 (assign, ":ruin_party", reg0),
+                 #(party_get_icon, ":map_icon", ":root_defeated_party"),
+                 #(party_set_icon, ":ruin_party", ":map_icon"),
+                 (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
+                 (str_store_party_name, s1, ":root_defeated_party"),
+                 (party_set_name, ":ruin_party", "@{s1} ruins"),
+                 (party_set_faction, ":root_defeated_party", "fac_neutral"), #purely defensive
+                 (disable_party, ":root_defeated_party"),
+               (else_try),
+                 (call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
+                 (try_begin),
+                   (eq, ":defeated_faction", "fac_player_supporters_faction"),
+                   (call_script, "script_add_notification_menu", "mnu_notification_center_lost", ":root_defeated_party", ":winner_faction"),
+                 (try_end),
+                 #Reduce prosperity of the center by 5
+                 (call_script, "script_change_center_prosperity", ":root_defeated_party", -5),
+                 (call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
+                 (call_script, "script_cf_reinforce_party", ":root_defeated_party"),
+                 (call_script, "script_cf_reinforce_party", ":root_defeated_party"),
                (try_end),
-               #Reduce prosperity of the center by 5
-               (call_script, "script_change_center_prosperity", ":root_defeated_party", -5),
-               (call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
-               (call_script, "script_cf_reinforce_party", ":root_defeated_party"),
-               (call_script, "script_cf_reinforce_party", ":root_defeated_party"),
              (try_end),
            (try_end),
 
@@ -6673,12 +6706,80 @@ scripts = [
       (try_end),
 
       (party_get_slot, ":old_town_lord", ":center_no", slot_town_lord),
-      (party_set_slot, ":center_no", slot_town_lord, stl_unassigned),
-      (party_set_banner_icon, ":center_no", 0),#Removing banner
+      
+      #TLD changes: give captured centers to kings, place faction banner
+      (faction_get_slot, ":king", ":faction_no", slot_faction_leader),
+      (party_set_slot, ":center_no", slot_town_lord, ":king"),
+	  (faction_get_slot,":faction_banner",":faction_no",slot_faction_party_map_banner),
+      (party_set_banner_icon, ":center_no", ":faction_banner"),
+      #TLD: change NPCs and walkers - since I'm lazy, I'll just give them clones of the faction capital NPCs and walkers
+      (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+      (party_get_slot, ":value", ":capital", slot_town_elder),
+      (party_set_slot, ":center_no", slot_town_elder, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_barman),
+      (party_set_slot, ":center_no", slot_town_barman, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_weaponsmith),
+      (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_armorer),
+      (party_set_slot, ":center_no", slot_town_armorer, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_merchant),
+      (party_set_slot, ":center_no", slot_town_merchant, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_horse_merchant),
+      (party_set_slot, ":center_no", slot_town_horse_merchant, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_reinf_pt),
+      (party_set_slot, ":center_no", slot_town_reinf_pt, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_0_troop),
+      (party_set_slot, ":center_no", slot_center_walker_0_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_1_troop),
+      (party_set_slot, ":center_no", slot_center_walker_1_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_2_troop),
+      (party_set_slot, ":center_no", slot_center_walker_2_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_3_troop),
+      (party_set_slot, ":center_no", slot_center_walker_3_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_4_troop),
+      (party_set_slot, ":center_no", slot_center_walker_4_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_5_troop),
+      (party_set_slot, ":center_no", slot_center_walker_5_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_6_troop),
+      (party_set_slot, ":center_no", slot_center_walker_6_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_7_troop),
+      (party_set_slot, ":center_no", slot_center_walker_7_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_8_troop),
+      (party_set_slot, ":center_no", slot_center_walker_8_troop, ":value"),
+      (party_get_slot, ":value", ":capital", slot_center_walker_9_troop),
+      (party_set_slot, ":center_no", slot_center_walker_9_troop, ":value"),
+      (faction_get_slot, ":value", ":faction_no", slot_faction_guard_troop),
+      (party_set_slot, ":center_no", slot_town_guard_troop, ":value"),
+      (faction_get_slot, ":value", ":faction_no", slot_faction_prison_guard_troop),
+      (party_set_slot, ":center_no", slot_town_prison_guard_troop, ":value"),
+      (faction_get_slot, ":value", ":faction_no", slot_faction_castle_guard_troop),
+      (party_set_slot, ":center_no", slot_town_castle_guard_troop, ":value"),
+      
+      #TLD: old faction loses faction strength
+      (faction_get_slot,":strength",":old_faction",slot_faction_strength_tmp),
+      (val_sub, ":strength", ws_center_vp),
+      (faction_set_slot,":old_faction",slot_faction_strength_tmp,":strength"),
+      #TLD: conquering faction gains faction strength
+      (faction_get_slot,":winner_strength",":faction_no",slot_faction_strength_tmp),
+      (store_div, ":win_value", ws_center_vp, 2), #this formula could be balanced after playtesting
+      (val_add, ":winner_strength", ":win_value"),
+      (faction_set_slot,":faction_no",slot_faction_strength_tmp,":winner_strength"),
+      #debug
+      (try_begin),
+        (eq, cheat_switch, 1),
+        (assign,reg0,ws_center_vp),
+        (assign,reg1,":strength"),
+        (assign,reg2,":win_value"),
+        (assign,reg3,":winner_strength"),
+        (str_store_faction_name,s1,":old_faction"),
+        (str_store_faction_name,s2,":faction_no"),
+        (display_message,"@DEBUG: Center captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+      (try_end),
 
       (call_script, "script_update_faction_notes", ":old_faction"),
       (call_script, "script_update_faction_notes", ":faction_no"),
       (call_script, "script_update_center_notes", ":center_no"),
+      (call_script, "script_update_troop_notes", ":king"), # TLD
       (try_begin),
         (ge, ":old_town_lord", 0),
         (call_script, "script_update_troop_notes", ":old_town_lord"),

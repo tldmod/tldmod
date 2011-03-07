@@ -214,25 +214,33 @@ simple_triggers = [
       (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (ge, ":party_no", 1),
+        (party_is_active, ":party_no"), #MV
         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party), #TLD: only hosts reinforce
         (party_get_attached_to, ":cur_attached_party", ":party_no"),
         (is_between, ":cur_attached_party", centers_begin, centers_end),
         (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
-        (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men with current wealth
+        (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men up to lord-specific limit
       (try_end),
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
          (neg|party_slot_eq, ":center_no", slot_town_lord, "trp_player"), #center does not belong to player.
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
-         (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
-         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
-         (assign, ":hiring_budget", ":cur_wealth"),
-         (val_div, ":hiring_budget", 5),
-         (gt, ":hiring_budget", reinforcement_cost),
+         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
+         # (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
+         # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
+         # (assign, ":hiring_budget", ":cur_wealth"),
+         # (val_div, ":hiring_budget", 5),
+         # (gt, ":hiring_budget", reinforcement_cost),
+         
+         #TLD: above replaced by this
+         (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
+         (party_get_num_companions, ":garrison_size", ":center_no"),
+         (gt, ":garrison_limit", ":garrison_size"),
+         
          (call_script, "script_cf_reinforce_party", ":center_no"),
 		 (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
 		 
-         (val_sub, ":cur_wealth", reinforcement_cost),
-         (party_set_slot, ":center_no", slot_town_wealth, ":cur_wealth"),
+         # (val_sub, ":cur_wealth", reinforcement_cost),
+         # (party_set_slot, ":center_no", slot_town_wealth, ":cur_wealth"),
        (try_end),
     ]),
 
@@ -308,7 +316,7 @@ simple_triggers = [
      ]),
 # Decide faction ai whenever flag is set
  (0,[ 
-    (eq, "$g_recalculate_ais", 1),(eq,"$tld_war_began",1),
+    (eq, "$g_recalculate_ais", 1),(ge,"$tld_war_began",1),
      (assign, "$g_recalculate_ais", 0),
      (call_script, "script_recalculate_ais"),
     ]),
@@ -316,27 +324,36 @@ simple_triggers = [
  (24,[(try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":faction_no"),
       (try_end),
+      
+      #TLD, grow faction strength with time from center income
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
+	     (faction_slot_ge,":faction_no",slot_faction_strength,1),
+	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
+		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
+         (try_for_range, ":center_no", centers_begin, centers_end),
+           (store_faction_of_party, ":center_faction", ":center_no"),
+           (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
+           (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
+           (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
+           (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
+           (val_add, ":strength", ":strength_income"),
+         (try_end),
+		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
+	  (try_end),
      ]),
 # Decide vassal ai
 # 7 hours in vanilla
  ( 3,[(try_begin),
-        (eq,"$tld_war_began",1),  # vassal AI can change only if War started, GA
+        (ge,"$tld_war_began",1),  # vassal AI can change only if War started, GA
         (call_script, "script_init_ai_calculation"),
         (call_script, "script_decide_kingdom_party_ais"), # TLD, script modified to also decide if a lord spawns a host
 	  (try_end),
      ]),
 # Process vassal ai
  ( 2,[(call_script, "script_process_kingdom_parties_ai"),
- 
-      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  #TLD, grow faction strength with time
-	     (faction_slot_ge,":faction_no",slot_faction_strength,1),
-	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
-		 (val_add,":strength",ws_faction_restoration),
-		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
-	  (try_end),
      ]),
 # Process sieges
- (24,[(try_begin),(eq,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end),
+ (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end),
      ]),
 
   # Changing readiness to join army
@@ -608,51 +625,52 @@ simple_triggers = [
   #  ]),
 
   # Accumulate taxes every week
-   (24 * 7,
-   [  (try_for_range, ":center_no", centers_begin, centers_end),
-        (party_get_slot, ":accumulated_rents", ":center_no", slot_center_accumulated_rents),
-        (assign, ":cur_rents", 0),
-        (try_begin),
-          (party_slot_eq, ":center_no", slot_party_type, spt_village),
-          (try_begin),
-            (party_slot_eq, ":center_no", slot_village_state, svs_normal),
-            (assign, ":cur_rents", 500),
-          (try_end),
-        (else_try),
-          (party_slot_eq, ":center_no", slot_party_type, spt_castle),
-          (assign, ":cur_rents", 250),
-        (else_try),
-          (party_slot_eq, ":center_no", slot_party_type, spt_town),
-          (assign, ":cur_rents", 1000),
-        (try_end),
-        (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
-        (store_add, ":multiplier", 10, ":prosperity"),
-        (val_mul, ":cur_rents", ":multiplier"),
-        (val_div, ":cur_rents", 110),#Prosperity of 100 gives the default values
-        (val_add, ":accumulated_rents", ":cur_rents"),
-        (party_set_slot, ":center_no", slot_center_accumulated_rents, ":accumulated_rents"),
-      (try_end),
+#TLD: removed
+   # (24 * 7,
+   # [  (try_for_range, ":center_no", centers_begin, centers_end),
+        # (party_get_slot, ":accumulated_rents", ":center_no", slot_center_accumulated_rents),
+        # (assign, ":cur_rents", 0),
+        # (try_begin),
+          # (party_slot_eq, ":center_no", slot_party_type, spt_village),
+          # (try_begin),
+            # (party_slot_eq, ":center_no", slot_village_state, svs_normal),
+            # (assign, ":cur_rents", 500),
+          # (try_end),
+        # (else_try),
+          # (party_slot_eq, ":center_no", slot_party_type, spt_castle),
+          # (assign, ":cur_rents", 250),
+        # (else_try),
+          # (party_slot_eq, ":center_no", slot_party_type, spt_town),
+          # (assign, ":cur_rents", 1000),
+        # (try_end),
+        # (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
+        # (store_add, ":multiplier", 10, ":prosperity"),
+        # (val_mul, ":cur_rents", ":multiplier"),
+        # (val_div, ":cur_rents", 110),#Prosperity of 100 gives the default values
+        # (val_add, ":accumulated_rents", ":cur_rents"),
+        # (party_set_slot, ":center_no", slot_center_accumulated_rents, ":accumulated_rents"),
+      # (try_end),
 
-      #Adding earnings to town lords' wealths.
-      (try_for_range, ":center_no", centers_begin, centers_end),
-        (party_get_slot, ":town_lord", ":center_no", slot_town_lord),
-        (neq, ":town_lord", "trp_player"),
-        (is_between, ":town_lord", kingdom_heroes_begin, kingdom_heroes_end),
-        (party_get_slot, ":accumulated_rents", ":center_no", slot_center_accumulated_rents),
-        (party_get_slot, ":accumulated_tariffs", ":center_no", slot_center_accumulated_tariffs),
-        (troop_get_slot, ":troop_wealth", ":town_lord", slot_troop_wealth),
-        (val_add, ":troop_wealth", ":accumulated_rents"),
-        (val_add, ":troop_wealth", ":accumulated_tariffs"),
-        (troop_set_slot, ":town_lord", slot_troop_wealth, ":troop_wealth"),
-        (party_set_slot, ":center_no", slot_center_accumulated_rents, 0),
-        (party_set_slot, ":center_no", slot_center_accumulated_tariffs, 0),
-        (try_begin),
-          (eq, "$cheat_mode", 1),
-          (assign, reg1, ":troop_wealth"),
-          (add_troop_note_from_sreg, ":town_lord", 1, "@Current wealth: {reg1}", 0),
-        (try_end),
-      (try_end),
-    ]),
+      # #Adding earnings to town lords' wealths.
+      # (try_for_range, ":center_no", centers_begin, centers_end),
+        # (party_get_slot, ":town_lord", ":center_no", slot_town_lord),
+        # (neq, ":town_lord", "trp_player"),
+        # (is_between, ":town_lord", kingdom_heroes_begin, kingdom_heroes_end),
+        # (party_get_slot, ":accumulated_rents", ":center_no", slot_center_accumulated_rents),
+        # (party_get_slot, ":accumulated_tariffs", ":center_no", slot_center_accumulated_tariffs),
+        # (troop_get_slot, ":troop_wealth", ":town_lord", slot_troop_wealth),
+        # (val_add, ":troop_wealth", ":accumulated_rents"),
+        # (val_add, ":troop_wealth", ":accumulated_tariffs"),
+        # (troop_set_slot, ":town_lord", slot_troop_wealth, ":troop_wealth"),
+        # (party_set_slot, ":center_no", slot_center_accumulated_rents, 0),
+        # (party_set_slot, ":center_no", slot_center_accumulated_tariffs, 0),
+        # (try_begin),
+          # (eq, "$cheat_mode", 1),
+          # (assign, reg1, ":troop_wealth"),
+          # (add_troop_note_from_sreg, ":town_lord", 1, "@Current wealth: {reg1}", 0),
+        # (try_end),
+      # (try_end),
+    # ]),
 
   # During rebellion, removing troops from player faction randomly because of low relation points
    (5,
@@ -775,22 +793,23 @@ simple_triggers = [
        (try_end),
     ]),
 
-  # Asking the ownership of captured centers to the player
-  (3,
-   [(assign, "$g_center_taken_by_player_faction", -1),
-    (try_for_range, ":center_no", centers_begin, centers_end),
-      (eq, "$g_center_taken_by_player_faction", -1),
-      (store_faction_of_party, ":center_faction", ":center_no"),
-      (eq, ":center_faction", "fac_player_supporters_faction"),
-      (this_or_next|party_slot_eq, ":center_no", slot_town_lord, stl_reserved_for_player),
-      (this_or_next|party_slot_eq, ":center_no", slot_town_lord, stl_unassigned),
-      (party_slot_eq, ":center_no", slot_town_lord, stl_rejected_by_player),
-      (assign, "$g_center_taken_by_player_faction", ":center_no"),
-    (try_end),
-    (ge, "$g_center_taken_by_player_faction", 0),
-    (faction_get_slot, ":leader", "fac_player_supporters_faction", slot_faction_leader),
-    (start_map_conversation, ":leader"),
-   ]),
+# TLD - removed
+  # # Asking the ownership of captured centers to the player
+  # (3,
+   # [(assign, "$g_center_taken_by_player_faction", -1),
+    # (try_for_range, ":center_no", centers_begin, centers_end),
+      # (eq, "$g_center_taken_by_player_faction", -1),
+      # (store_faction_of_party, ":center_faction", ":center_no"),
+      # (eq, ":center_faction", "fac_player_supporters_faction"),
+      # (this_or_next|party_slot_eq, ":center_no", slot_town_lord, stl_reserved_for_player),
+      # (this_or_next|party_slot_eq, ":center_no", slot_town_lord, stl_unassigned),
+      # (party_slot_eq, ":center_no", slot_town_lord, stl_rejected_by_player),
+      # (assign, "$g_center_taken_by_player_faction", ":center_no"),
+    # (try_end),
+    # (ge, "$g_center_taken_by_player_faction", 0),
+    # (faction_get_slot, ":leader", "fac_player_supporters_faction", slot_faction_leader),
+    # (start_map_conversation, ":leader"),
+   # ]),
 
 
   # Respawn hero party after kingdom hero is released from captivity.
@@ -810,15 +829,16 @@ simple_triggers = [
            (party_attach_to_party, "$pout_party", ":center_no"),
          (else_try),
            (neg|faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
-           (try_begin),
-             (is_between, ":troop_no", kings_begin, kings_end),
-             (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"),
-           (else_try),
-             (store_random_in_range, ":random_no", 0, 100),
-             (lt, ":random_no", 10),
-             (call_script, "script_cf_get_random_active_faction_except_player_faction_and_faction", ":cur_faction"),
-             (troop_set_slot, ":troop_no", slot_troop_change_to_faction, reg0),
-           (try_end),
+           (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"), #TLD: defeated faction lords simply disappear
+           # (try_begin),
+             # (is_between, ":troop_no", kings_begin, kings_end),
+             # (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"),
+           # (else_try),
+             # (store_random_in_range, ":random_no", 0, 100),
+             # (lt, ":random_no", 10),
+             # (call_script, "script_cf_get_random_active_faction_except_player_faction_and_faction", ":cur_faction"),
+             # (troop_set_slot, ":troop_no", slot_troop_change_to_faction, reg0),
+           # (try_end),
          (try_end),
        (try_end),
     ]),
@@ -855,21 +875,21 @@ simple_triggers = [
  # Updating trade good prices according to the productions
        (call_script, "script_update_trade_good_prices"),
  # Updating player odds
-       (try_for_range, ":cur_center", centers_begin, centers_end),
-         (party_get_slot, ":player_odds", ":cur_center", slot_town_player_odds),
-         (try_begin),
-           (gt, ":player_odds", 1000),
-           (val_mul, ":player_odds", 95),
-           (val_div, ":player_odds", 100),
-           (val_max, ":player_odds", 1000),
-         (else_try),
-           (lt, ":player_odds", 1000),
-           (val_mul, ":player_odds", 105),
-           (val_div, ":player_odds", 100),
-           (val_min, ":player_odds", 1000),
-         (try_end),
-         (party_set_slot, ":cur_center", slot_town_player_odds, ":player_odds"),
-       (try_end),
+       # (try_for_range, ":cur_center", centers_begin, centers_end),
+         # (party_get_slot, ":player_odds", ":cur_center", slot_town_player_odds),
+         # (try_begin),
+           # (gt, ":player_odds", 1000),
+           # (val_mul, ":player_odds", 95),
+           # (val_div, ":player_odds", 100),
+           # (val_max, ":player_odds", 1000),
+         # (else_try),
+           # (lt, ":player_odds", 1000),
+           # (val_mul, ":player_odds", 105),
+           # (val_div, ":player_odds", 100),
+           # (val_min, ":player_odds", 1000),
+         # (try_end),
+         # (party_set_slot, ":cur_center", slot_town_player_odds, ":player_odds"),
+       # (try_end),
     ]),
 
 
@@ -1255,9 +1275,9 @@ simple_triggers = [
      (try_end),
     ]),
 
-  # Assigning lords to centers with no leaders
-  (72,[(call_script, "script_assign_lords_to_empty_centers"),
-      ]),
+  # # Assigning lords to centers with no leaders
+  # (72,[(call_script, "script_assign_lords_to_empty_centers"),
+      # ]),
   
   # Updating player icon in every frame
   (0,
@@ -1973,8 +1993,37 @@ simple_triggers = [
           (assign, ":faction_removed", 1),
         (try_end),
       (else_try),
-        (neq, "$players_kingdom", ":cur_kingdom"),
+        #(neq, "$players_kingdom", ":cur_kingdom"), #TLD: player kingdom can be defeated!
         (faction_set_slot, ":cur_kingdom", slot_faction_state, sfs_defeated),
+        
+        #TLD: find the strongest enemy faction in the current or home theather, it will receive the centers
+        (assign, ":best_strength", 0),
+        (assign, ":best_faction", "fac_mordor"), #if no other, Mordor gets all :)
+        (faction_get_slot, ":active_theater", ":cur_kingdom", slot_faction_active_theater),
+        (faction_get_slot, ":home_theater", ":cur_kingdom", slot_faction_home_theater),
+        (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, ":home_theater"), # home theater enemies get to pick first
+          (store_relation, ":cur_relation", ":faction_no", ":cur_kingdom"),
+          (lt, ":cur_relation", 0), #enemy
+          (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength),
+          (gt, ":faction_strength", ":best_strength"), #better strength
+          (assign, ":best_strength", ":faction_strength"),
+          (assign, ":best_faction", ":faction_no"),
+        (try_end),
+        (try_begin),
+          (eq, ":best_strength", 0),
+          (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+            (this_or_next|faction_slot_eq, ":faction_no", slot_faction_active_theater, ":home_theater"), # if there are no home enemies, check for invaders
+            (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":active_theater"),
+            (store_relation, ":cur_relation", ":faction_no", ":cur_kingdom"),
+            (lt, ":cur_relation", 0), #enemy
+            (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength),
+            (gt, ":faction_strength", ":best_strength"), #better strength
+            (assign, ":best_strength", ":faction_strength"),
+            (assign, ":best_faction", ":faction_no"),
+          (try_end),
+        (try_end),
+        
         (try_for_parties, ":cur_party"),
           (party_is_active, ":cur_party"),
           (store_faction_of_party, ":party_faction", ":cur_party"),
@@ -1993,33 +2042,85 @@ simple_triggers = [
             (neg|is_between, ":cur_party", centers_begin, centers_end),
             (remove_party, ":cur_party"),
           (else_try),
-            # MV reminder: may need special handling of centers here
-            (party_set_faction, ":cur_party", "fac_neutral"),
-            (party_clear, ":cur_party"),
+            # Centers: destroy what you can, give the rest to the best enemy - this code copied from script_game_event_simulate_battle
+            (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
+              (party_slot_eq, ":cur_party", slot_center_destroy_on_capture, 1),
+              (party_set_slot, ":cur_party", slot_center_destroyed, 1), # DESTROY!
+              # disable and replace with ruins
+              (party_set_slot, ":cur_party", slot_town_lord, -1),
+              (set_spawn_radius, 0),
+              (spawn_around_party, ":cur_party", "pt_ruins"),
+              (assign, ":ruin_party", reg0),
+              (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
+              (str_store_party_name, s1, ":cur_party"),
+              (party_set_name, ":ruin_party", "@{s1} ruins"),
+              (party_set_faction, ":cur_party", "fac_neutral"), #purely defensive
+              (disable_party, ":cur_party"),
+            (else_try),
+              (party_clear, ":cur_party"), # remove previous garrison
+              (call_script, "script_give_center_to_faction", ":cur_party", ":best_faction"),
+              (call_script, "script_cf_reinforce_party", ":cur_party"),
+              (call_script, "script_cf_reinforce_party", ":cur_party"),
+              (call_script, "script_cf_reinforce_party", ":cur_party"),
+              (call_script, "script_cf_reinforce_party", ":cur_party"),
+              (call_script, "script_cf_reinforce_party", ":cur_party"),
+            (try_end),               
           (try_end),
           
           #(party_get_slot, ":home_center", ":cur_party", slot_party_home_center),
           #(store_faction_of_party, ":home_center_faction", ":home_center"),
           #(party_set_faction, ":cur_party", ":home_center_faction"),
         (try_end),
-#        (assign, ":kingdom_pretender", -1),
-#        (try_for_range, ":cur_pretender", pretenders_begin, pretenders_end),
-#          (troop_slot_eq, ":cur_pretender", slot_troop_original_faction, ":cur_kingdom"),
-#          (assign, ":kingdom_pretender", ":cur_pretender"),
-#        (try_end),
-#        (try_begin),
-#          (is_between, ":kingdom_pretender", pretenders_begin, pretenders_end),
-#          (neq, ":kingdom_pretender", "$supported_pretender"),
-#          (troop_set_slot, ":kingdom_pretender", slot_troop_cur_center, 0), #remove pretender from the world
-#        (try_end),
 
-        # dispose of defeated heroes
+        # dispose of defeated heroes - unneeded?
         (try_for_range, ":defeated_lord", kingdom_heroes_begin, kingdom_heroes_end),
           (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
           (eq, ":defeated_lord_faction", ":cur_kingdom"),
           (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
         (try_end),
 
+        # check if all good factions are defeated, to start the eye-hand war
+        (try_begin),
+          (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+          (assign, ":good_factions_left", 0),
+          (try_for_range, ":good_kingdom", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":good_kingdom", slot_faction_side, faction_side_good),
+            (faction_slot_eq, ":good_kingdom", slot_faction_state, sfs_active),
+            (val_add, ":good_factions_left", 1),
+          (try_end),
+          # Start the war between Mordor and Isengard
+          # Is this automatic defeat for good players?
+          (try_begin),
+            (eq, ":good_factions_left", 0),
+            # uncomment this if you script that Mordor and Isengard can't be defeated before their allies
+            #(faction_slot_eq, "fac_mordor", slot_faction_state, sfs_active),
+            #(faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
+            
+            # make sides hostile
+            (try_for_range, ":mordor_ally", kingdoms_begin, kingdoms_end),
+              (faction_slot_eq, ":mordor_ally", slot_faction_side, faction_side_eye),
+              (try_for_range, ":isengard_ally", kingdoms_begin, kingdoms_end),
+                (faction_slot_eq, ":isengard_ally", slot_faction_side, faction_side_hand),
+                (set_relation, ":mordor_ally", ":isengard_ally", -50), # works both ways, I hope
+              (try_end),
+            (try_end),
+            
+            # update player relations to mirror his kingdom
+            (try_for_range, ":some_faction", kingdoms_begin, kingdoms_end),
+              (neq, ":some_faction", "fac_player_supporters_faction"),
+              (store_relation, ":rel", "$players_kingdom", ":some_faction"),
+              (call_script, "script_set_player_relation_with_faction", ":some_faction", ":rel"),
+              
+              #unrelated, but let's reset active theaters to home for every kingdom
+              (faction_get_slot, ":home_theater", ":some_faction", slot_faction_home_theater),
+              (faction_set_slot, ":some_faction", slot_faction_active_theater, ":home_theater"),
+            (try_end),
+            
+		    (assign, "$tld_war_began", 2),
+		    (dialog_box,"@The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!","@The War of the Two Towers has started!"),
+            (play_sound,"snd_evil_horn"),
+          (try_end),
+        (try_end),
 	    
 	    (str_store_faction_name,s2,":cur_kingdom"),
 	    (display_log_message,"@{s2} was defeated!"),
@@ -2046,13 +2147,32 @@ simple_triggers = [
         (call_script, "script_update_faction_notes", ":cur_kingdom_2"),
       (try_end),
     (try_end),
-    (try_begin),
-      (eq, ":num_active_factions", 1),
-      (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
-        (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
-        (call_script, "script_add_notification_menu", "mnu_notification_one_faction_left", ":cur_kingdom", 0),
+    # TLD: check for total victory
+    (assign, ":game_over", 1),
+    (assign, ":living_side", -1),
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+      (faction_get_slot, ":cur_side", ":cur_kingdom", slot_faction_side),
+      (try_begin),
+        (eq, ":living_side", -1),
+        (assign, ":living_side", ":cur_side"), #first live faction
+      (else_try),
+        (neq, ":living_side", ":cur_side"),
+        (assign, ":game_over", 0), # found a live faction that belongs to some other side
       (try_end),
     (try_end),
+    (try_begin),
+      (eq, ":game_over", 1),
+      (call_script, "script_add_notification_menu", "mnu_notification_one_side_left", ":living_side", 0),
+    (try_end),
+    # TLD: replaced by the above
+    # (try_begin),
+      # (eq, ":num_active_factions", 1),
+      # (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+        # (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+        # (call_script, "script_add_notification_menu", "mnu_notification_one_faction_left", ":cur_kingdom", 0),
+      # (try_end),
+    # (try_end),
     ]),
 
 

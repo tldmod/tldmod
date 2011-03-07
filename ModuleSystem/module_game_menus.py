@@ -140,6 +140,8 @@ game_menus = [
 	(call_script, "script_determine_what_player_looks_like"), # for drawings
 	(set_show_messages,1),
 	(try_end),
+    (call_script, "script_update_troop_notes", "trp_player"), #MV fixes
+    (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
     [ ("continue",[],"Go forth upon you chosen path...",
        [(troop_equip_items, "trp_player"),
@@ -1413,7 +1415,7 @@ game_menus = [
       [
 			(store_random_in_range,":r",0,10),#random number
 			(try_begin),
-				(ge,":r",2),#if 3 or higher, we are attacked
+				(ge,":r",8),#if 8 or higher, we are attacked
 				#clearing temporary slots
 				(try_for_range,":slot",0,10),
 					(troop_set_slot,"trp_temp_array_a",":slot",-1),
@@ -1447,6 +1449,8 @@ game_menus = [
 					(assign,":troop","trp_bandit"),
 				(try_end),
 				(set_visitors,1,":troop",5),
+                
+                (display_message, "@Assassins in the camp, defend yourself!", 0xFF0000),
 
 				(set_jump_mission,"mt_assasins_attack"), #jump to mission template
 				(jump_to_scene,":scene"), #jump to scene
@@ -1510,12 +1514,12 @@ game_menus = [
      (troop_raise_skill, "trp_player",skl_engineer,10),
      (troop_add_gold, "trp_player", 1000000),
 	 (troop_set_health, "trp_player", 100),
-#     (troop_add_item, "trp_player","itm_heavy_lance",0), #imod_balanced
+     (troop_add_item, "trp_player","itm_gondor_lance",0), #imod_balanced
      (troop_add_item, "trp_player","itm_gondor_shield_e",0), #imod_reinforced
      (troop_add_item, "trp_player","itm_gondor_ranger_sword",0), #imod_masterwork
      (troop_add_item, "trp_player","itm_gondor_hunter",imod_heavy), #imod_champion
      (troop_add_item, "trp_player","itm_riv_helm_c",0), #imod_lordly
-     (troop_add_item, "trp_player","itm_mirkwood_light_scale",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_gon_tower_knight",0), #imod_lordly
      (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
      (troop_add_item, "trp_player","itm_dol_greaves",0), #imod_lordly
      (troop_add_item, "trp_player","itm_lembas",0),
@@ -1523,22 +1527,53 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(neq,"$tld_war_began",1),],"Start the damn War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player")]),
+   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the damn War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player"), (display_message, "@Added +1000 XP, now wait for the War...", 0x30FFC8),]),
+   ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+       (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+       (faction_set_slot,":cur_kingdom",slot_faction_strength_tmp,-1000),
+    (try_end),
+    (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
+   ]),
+   ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+       (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+       (faction_set_slot,":cur_kingdom",slot_faction_strength_tmp,-1000),
+    (try_end),
+    (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
+   ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
-   ("camp_mvtest_towns",[],"View town wealth.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
+     (assign, ":root_defeated_party", "p_town_hornburg"),
+     (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
+     # disable and replace with ruins
+     (set_spawn_radius, 0),
+     (spawn_around_party, ":root_defeated_party", "pt_ruins"),
+     (assign, ":ruin_party", reg0),
+     #(party_get_icon, ":map_icon", ":root_defeated_party"),
+     #(party_set_icon, ":ruin_party", ":map_icon"),
+     (str_store_party_name, s1, ":root_defeated_party"),
+     (disable_party, ":root_defeated_party"),
+     (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_medium, 1),
+     (party_set_name, ":ruin_party", "@{s1} ruins"),
+     (display_message, "@Hornburg razed - check map!", 0x30FFC8),
+   ]),
    ("camp_mvtest_notes",[],"Update lord locations.",[
      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (call_script, "script_update_troop_location_notes", ":troop_no", 0),
      (try_end),
      (display_message, "@Lord locations updated - see wiki!", 0x30FFC8),
    ]),            
-   ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
-     (set_spawn_radius, 0),
-     (spawn_around_party, "p_main_party", "pt_looters"),
-     (party_add_prisoners, reg0, "trp_peasant_woman", 10),
-     (display_message, "@Tribal orcs with women spawned!", 0x30FFC8),
-   ]),            
+   # ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
+     # (set_spawn_radius, 0),
+     # (spawn_around_party, "p_main_party", "pt_looters"),
+     # (party_add_prisoners, reg0, "trp_peasant_woman", 10),
+     # (display_message, "@Tribal orcs with women spawned!", 0x30FFC8),
+   # ]),            
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])            
 ]),
 
@@ -1796,16 +1831,24 @@ game_menus = [
 	  (try_end),
         
       (assign, ":cur_kingdom", "$g_mvtest_faction"),
+      (assign, ":total_income", 0),
       
       (str_store_faction_name, s4, ":cur_kingdom"),
-      (str_store_string, s1, "@Town wealth for {s4}"),
+      (str_store_string, s1, "@Daily strength income and garrisons for {s4}"),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":cur_kingdom"),
+        (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
         (str_store_party_name, s7, ":center_no"),
-        (party_get_slot, reg1, ":center_no", slot_town_wealth),
-        (str_store_string, s1, "@{s1}^{s7}: {reg1}"),
+        (party_get_slot, reg1, ":center_no", slot_center_strength_income),
+        (party_get_slot, reg2, ":center_no", slot_center_garrison_limit),
+        (party_get_num_companions, reg3, ":center_no"),
+        (party_get_slot, reg4, ":center_no", slot_center_destroy_on_capture),
+        (val_add, ":total_income", reg1),
+        (str_store_string, s1, "@{s1}^{s7}: {reg1}  Garrison: {reg3}/{reg2}{reg4?: Capturable}"),
 	  (try_end),
+      (assign, reg1, ":total_income"),
+      (str_store_string, s1, "@{s1}^^Total: {reg1}"),
     ],
     [("change",[
         (str_store_faction_name, s7, "$g_mvtest_faction"),
@@ -1827,7 +1870,7 @@ game_menus = [
      
       (
     "assasins_attack_player_won",mnf_disable_all_keys,
-    "Text after victory. Example - trial of assassination was done by faction {s2}, which is led by {s3}.",
+    "You have successfully defeated assassins from {s2}, sent by {s3}.",
     "none",
     [
 		#add prize
@@ -1847,7 +1890,7 @@ game_menus = [
 		
   (
     "assasins_attack_player_retreat",mnf_disable_all_keys,
-    "Text after player's retreat",
+    "You escaped with your life!",
     "none",
     [
 		#add here any consequences of retreat
@@ -1859,7 +1902,7 @@ game_menus = [
 		 
   (
     "assasins_attack_player_defeated",mnf_scale_picture,
-    "Text after player's defeat.",
+    "You have been defeated and imprisoned.",
     "none",
     [
 		
@@ -1960,7 +2003,7 @@ game_menus = [
   ),
   (
     "assasins_attack_captivity_end",mnf_scale_picture,
-    "Text after escaping from cativity.",
+    "After days in captivity you finally escape!",
     "none",
     [
         (play_cue_track,"track_escape"),
@@ -1997,12 +2040,12 @@ game_menus = [
   
   # player face fangor dangers
   ("fangorn_danger",0,
-   "^^^^^^Strange, threathening noises all around you.^Are the trees talking? There's a sense of deep hanger and pain in the air.^Your orders?",
+   "^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?",
    "none",
    [(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),
     (troop_get_type,reg5,"trp_player"),],
    [("be_quiet_elf",
-	 [(is_between,reg5,tf_elf_begin, tf_elf_end)], "Respect the hatred of the trees. Move along quietly",
+	 [(is_between,reg5,tf_elf_begin, tf_elf_end)], "Respect the hatred of the trees. Move along quietly.",
 	 [(assign,"$g_fangorn_rope_pulled", -100), # disable fangorn menu from now on
 	  (change_screen_map),
 	 ]),
@@ -2010,7 +2053,7 @@ game_menus = [
 	 [(neg|is_between,reg5,tf_orc_begin, tf_orc_end),# no orc can do this
 	  (neg|is_between,reg5,tf_elf_begin, tf_elf_end) # no elf can do this
 	 ],
-	 "Put weapons down and stay quiet! Now out of here!",
+	 "Put the weapons down and stay quiet! Now out of here!",
 	 [(val_add,"$g_fangorn_rope_pulled", 5), 
 	  (val_clamp,"$g_fangorn_rope_pulled", 0,65), 
 	  (call_script,"script_fangorn_deal_damage","p_main_party"),
@@ -2019,7 +2062,7 @@ game_menus = [
     ),
    ("be_bold",
 	 [(neg|is_between,reg5,tf_elf_begin, tf_elf_end)], # no elf can do this
-	 "Go on! I'm not afraid of plants, or of old myths!",
+	 "Go on! I'm not afraid of plants or old myths!",
 	 [(val_add,"$g_fangorn_rope_pulled", 30), 
 	  (val_clamp,"$g_fangorn_rope_pulled", 0,75), 
 	  (call_script,"script_fangorn_deal_damage","p_main_party"),
@@ -2078,7 +2121,7 @@ game_menus = [
   ),
   # player faced fangor dangers
   ("fangorn_battle_debrief",0,
-    "^^^Light goes out.^^^When you wake up, the forset is still. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
+    "^^^The light goes out.^^^When you wake up, the forest is still. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
 	"none",[
 		(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_ent_attack"), (set_background_mesh, reg10),
 		(try_begin),
@@ -2098,7 +2141,7 @@ game_menus = [
   ),
    # player faced fangor dangers, and won!
    ("fangorn_battle_debrief_won",0,
-    "^^^A great vicotry!^^^So this is what all the myths about Fangorn meant...",
+    "^^^A great victory!^^^So this is what all the myths about Fangorn meant...",
 	"none",[],[("ok_",[],"Continue...",[
 	(change_screen_map),
 	(try_begin),
@@ -2111,19 +2154,19 @@ game_menus = [
   ),
  # player only was killed by fangorn
   ("fangorn_killed_player_only",0,
-   "^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe an heavy branch fell on your head?^You stay unconcius only minutes. You are badly hurt but you can go on.",
+   "^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
 		[("ok_0",[],"Ouch! Let's get out of this cursed place!",[(change_screen_map)] ),]
   ),
  # player and troops were killed by fangorn
   ("fangorn_killed_troop_and_player",0,
-   "^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe an heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were this lucky.^^",
+   "^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were that lucky.^^",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
    [("ok_1",[],"Ouch! Let's get out of this cursed place!",[(change_screen_map)] ),]
   ),
  # troops were killed by fangorn
   ("fangorn_killed_troop_only",0,
-   "^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear a screams from the one on the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...",
+   "^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
    [("ok_2",[],"Let's get out of this cursed place!",[(change_screen_map)] ),]
   ),
@@ -3779,7 +3822,7 @@ game_menus = [
     ]
   ),
   
-  ( "join_battle",0,
+  ( "join_battle",mnf_enable_hot_keys,
     "^^^^^^You are helping the {s2} against the {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.",
     "none",
     [   (str_store_party_name, 1,"$g_enemy_party"),
@@ -4108,7 +4151,7 @@ game_menus = [
       ]
   ),
   
-  ( "besiegers_camp_with_allies",0,
+  ( "besiegers_camp_with_allies",mnf_enable_hot_keys,
     "{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,\
  where you and your men are welcomed.",
     "none",
@@ -4622,7 +4665,7 @@ game_menus = [
     ]
   ),
 
-   ("castle_besiege",mnf_scale_picture,
+   ("castle_besiege",mnf_enable_hot_keys|mnf_scale_picture,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
     [   (troop_get_type, ":is_female", "trp_player"),
@@ -5252,7 +5295,7 @@ game_menus = [
   ),
 
  
-  ( "siege_started_defender",0,
+  ( "siege_started_defender",mnf_enable_hot_keys,
     "{s1} is launching an assault against the walls of {s2}. You have {reg10} troops fit for battle against the enemy's {reg11}. You decide to...",
     "none",
     [
@@ -7766,6 +7809,38 @@ game_menus = [
      ]
   ),
   
+  ( "notification_one_side_left",0,
+    "The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious.",
+    "none",
+    # $g_notification_menu_var1 - faction_side_*
+    [ (assign, ":side", "$g_notification_menu_var1"),
+      
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":faction", "fac_gondor"),
+        (str_store_string, s1, "@Forces of Good"),
+      (else_try),
+        (eq, ":side", faction_side_eye),
+        (assign, ":faction", "fac_mordor"),
+        (str_store_string, s1, "@Forces of Morder"),
+      (else_try),
+        #(eq, ":side", faction_side_hand),
+        (assign, ":faction", "fac_isengard"),
+        (str_store_string, s1, "@Forces of Isengard"),
+      (try_end),
+      
+      (set_fixed_point_multiplier, 100),
+      (position_set_x, pos0, 65),
+      (position_set_y, pos0, 30),
+      (position_set_z, pos0, 170),
+      (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
+    ],
+    [ ("continue",[],"Continue...",
+       [(change_screen_return),
+        ]),
+     ]
+  ),
+  
   ( "notification_oath_renounced_faction_defeated",0,
     "Your Old Faction was Defeated^^You won the battle against {s1}! This ends your struggle which started after you renounced your oath to them.",
     "none",
@@ -7995,6 +8070,18 @@ game_menus = [
      ]
   ),
 
+  ( "ruins",0,
+    "You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
+    "none",
+    [(set_background_mesh, "mesh_pic_looted_village"),
+     (str_store_party_name, s1, "$g_encountered_party"),
+    ],
+    [("continue",[],"Continue...",
+       [
+         (change_screen_return),
+       ]),
+     ]
+  ),
 
 
     #################################

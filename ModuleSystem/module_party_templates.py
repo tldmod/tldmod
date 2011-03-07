@@ -37,7 +37,8 @@ party_templates = [
   ("village_defenders","Village Defenders",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,10,20),(trp_peasant_woman,0,4)]),
 
   ("cattle_herd","Cattle Herd",icon_cattle|carries_goods(10),0,fac_neutral,merchant_personality,[(trp_cattle,80,120)]),
-
+  ("ruins","Ruins",icon_ancient_ruins,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
+  
 ##  ("vaegir_nobleman","Vaegir Nobleman",icon_eorl_guard_of_rohan|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_eorl_guard_of_rohan,2,6),(trp_brego_guard_of_rohan,4,12)]),
 ##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_veteran_knight_of_gondor,2,6),(trp_knight_of_the_citadel,4,12)]),
 # Ryan BEGIN

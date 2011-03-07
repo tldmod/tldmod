@@ -250,7 +250,7 @@ triggers = [
                 (party_set_ai_patrol_radius, ":scout_party", 30),
             (try_end),
             (try_begin),
-                (eq,"$tld_war_began",1), # No raiders before war
+                (ge,"$tld_war_began",1), # No raiders before war
                 (neq, ws_party_spawns_list[x][2], -1),
                 (store_random_in_range, ":rand", 0, int(1000/ws_raider_freq_multiplier)),
                 (le, ":rand", ":strength"),
@@ -278,7 +278,7 @@ triggers = [
                 (party_set_ai_object, ":raider_party", ":enemy_center"),
             (try_end),                        
             (try_begin),
-                (eq,"$tld_war_began",1), # No patrols before war
+                (ge,"$tld_war_began",1), # No patrols before war
                 (neq, ws_party_spawns_list[x][3], -1),
                 (store_random_in_range, ":rand", 0, int(1000/ws_patrol_freq_multiplier)),
                 (le, ":rand", ":strength"),

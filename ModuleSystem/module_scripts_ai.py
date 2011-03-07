@@ -18,7 +18,7 @@ ai_scripts = [
 # script_recalculate_ais
   ("recalculate_ais",
    [(try_begin),
-	  (eq,"$tld_war_began",1),  # faction AI can change only if War started, GA
+	  (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
 	  (call_script, "script_init_ai_calculation"),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
         (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
@@ -62,7 +62,7 @@ ai_scripts = [
 #called from triggers
   ("decide_faction_ai",
    [(try_begin),
-	   (eq,"$tld_war_began",1),  # faction AI can change only if War started, GA
+	   (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
        
 	   (store_script_param_1, ":faction_no"),
 	   (faction_get_slot, ":old_faction_ai_state", ":faction_no", slot_faction_ai_state),
@@ -400,10 +400,9 @@ ai_scripts = [
            (try_end),
            (store_distance_to_party_from_party, ":dist", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
            (val_add, ":dist", 20),
-           (val_mul, ":dist", 10), #TLD: bigger effect of distance
-           (try_begin), #TLD: further effect of different active theaters
+           (try_begin), #TLD: large effect of different active theaters, but still allowed
              (neg|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
-             (val_mul, ":dist", 2),
+             (val_mul, ":dist", 50),
            (try_end),
            (val_div, ":attack_army_score", ":dist"),
            (gt, ":attack_army_score", ":best_attack_army_score"),
@@ -684,6 +683,7 @@ ai_scripts = [
         (eq, ":hero_faction_no", ":faction_no"),
         (troop_get_slot, ":hero_party", ":troop_no", slot_troop_leaded_party),
         (ge, ":hero_party", 0),
+        (party_is_active, ":hero_party"), #MV
         (party_slot_eq, ":hero_party", slot_party_type, spt_kingdom_hero_party), # TLD: heroes alone don't count into army
         (call_script, "script_party_count_fit_regulars", ":hero_party"),
         (assign, ":party_size", reg0),
@@ -2150,7 +2150,7 @@ ai_scripts = [
 #called from triggers
   ("decide_kingdom_party_ais",
    [(try_begin),
-      (eq,"$tld_war_began",1),  # party AI can change only if War started, GA
+      (ge,"$tld_war_began",1),  # party AI can change only if War started, GA
 	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
          (neq, ":faction_no", "fac_player_supporters_faction"),

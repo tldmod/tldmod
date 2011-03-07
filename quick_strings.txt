@@ -1,4 +1,4 @@
-657
+668
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -101,6 +101,7 @@ qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr__+_ _+_
 qstr_DEBUG:_Troll_hit!!! DEBUG:_Troll_hit!!!
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle_but_managed_to_escape.
+qstr_{s1}_ruins {s1}_ruins
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
@@ -141,6 +142,7 @@ qstr_{reg0}_town{reg1?s:}_ {reg0}_town{reg1?s:}_and_{s0}
 qstr_{reg0}_town{reg1?s:}_{ {reg0}_town{reg1?s:},_{s0}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
+qstr_DEBUG:_Center_captur DEBUG:_Center_captured:_{s1}_strength_-{reg0}_to_{reg1},_{s2}_strength_+{reg2}_to_{reg3}.
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
@@ -368,9 +370,13 @@ qstr_Revengeful Revengeful
 qstr_Vengeful Vengeful
 qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
+qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
+qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
+qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
+qstr_Evil_factions_defeat Evil_factions_defeated!_Now_wait_for_it...
+qstr_Hornburg_razed___che Hornburg_razed_-_check_map!
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
-qstr_Tribal_orcs_with_wom Tribal_orcs_with_women_spawned!
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
@@ -397,8 +403,9 @@ qstr_{s1}engaging_{s7} {s1}engaging_{s7}
 qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
 qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
-qstr_Town_wealth_for_{s4} Town_wealth_for_{s4}
-qstr_{s1}^{s7}:_{reg1} {s1}^{s7}:_{reg1}
+qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
+qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
+qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
@@ -518,11 +525,13 @@ qstr_After_beating_your_l After_beating_your_last_opponent,_you_explain_to_the_p
 qstr_The_bandits_are_brok The_bandits_are_broken!_Those_few_who_remain_alive_and_conscious_run_off_with_their_tails_between_their_legs,_terrified_of_the_peasants_and_their_new_champion.
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
+qstr_Forces_of_Good Forces_of_Good
+qstr_Forces_of_Morder Forces_of_Morder
+qstr_Forces_of_Isengard Forces_of_Isengard
 qstr_you you
 qstr_permit:_{reg7}_had:_ permit:_{reg7},_had:_{reg6}
 qstr_DEBUG:_Routine_2 DEBUG:_Routine_2
 qstr_Breaking_camp... Breaking_camp...
-qstr_Current_wealth:_{reg Current_wealth:_{reg1}
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_{reg1}_{s1}_{reg2?ha {reg1}_{s1}_{reg2?have:has}_escaped_from_your_party_during_the_night.
@@ -530,6 +539,8 @@ qstr_Building_of_{s0}_in_ Building_of_{s0}_in_{s4}_has_been_completed.
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_{s1}_has_switched_fr {s1}_has_switched_from_{s2}_to_{s3}.
+qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
+qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
