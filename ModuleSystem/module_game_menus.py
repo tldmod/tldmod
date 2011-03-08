@@ -1051,10 +1051,10 @@ game_menus = [
 ("start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_1",[],"HARADRIMS, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
- ("start_2",[],"Black NUMENORIANS, the renegades from the West",      [(call_script,"script_start_as_one","trp_black_numenorean_warrior"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_warrior"),(jump_to_menu,"mnu_choose_gender"),]),
  ("start_3",[],"UMBAR, the pirates from the South Seas",     [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
  ("start_4",[],"RHUN, the barbarians from the East",         [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
- ("start_5",[],"KHAND, the savege people from South-East",   [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_5",[],"KHAND, the savage people from South-East",   [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"go back",[(jump_to_menu, "mnu_start_eye")]),    ]
 ),
@@ -1068,17 +1068,17 @@ game_menus = [
 ),
 ("start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_1"  ,[],"in the Armies amassed at ISENGARD"     ,[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
- ("start_2"  ,[],"in the Mines of MORIA"                 ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("spacer",[],"_",[]),
- ("go_back"     ,[],"go back",[(jump_to_menu, "mnu_start_hand")]),    ]
+ ("start_1",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_2",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("spacer" ,[],"_",[]),
+ ("go_back",[],"go back",[(jump_to_menu, "mnu_start_hand")]),    ]
 ),
 ("start_gondor_mt",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage", "none",[(assign, "$last_menu", "mnu_start_gondor_mt")],[
- ("start_1",[],"Commoner",                                 [(call_script,"script_start_as_one","trp_gondor_commoner"),       (jump_to_menu,"mnu_choose_gender"),]),
- ("start_2",[],"High-born",                                [(call_script,"script_start_as_one","trp_gondor_noblemen"),       (jump_to_menu,"mnu_choose_gender"),]),
- ("spacer",[],"_",[]),
- ("go_back"     ,[],"go back",[(jump_to_menu, "mnu_start_gondor")]),    ]
+ ("start_1",[],"Commoner" ,[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2",[],"High-born",[(call_script,"script_start_as_one","trp_gondor_noblemen"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("spacer" ,[],"_"        ,[]),
+ ("go_back",[],"go back"  ,[(jump_to_menu, "mnu_start_gondor")]),    ]
 ),
 ("start_haradrim",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[

@@ -933,7 +933,7 @@ items = [
 ["dunnish_antler_axe","Dunnish Antler Axe"     ,[("dunland_antleraxe",0)], itp_type_one_handed_wpn|itp_shop|itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 524 , weight(2.0)|difficulty(9)|spd_rtng(97) | weapon_length(73)|swing_damage(40 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["dunnish_war_axe"   ,"Dunnish War Axe"        ,[("dunland_axe_a"    ,0)], itp_type_polearm|itp_shop|itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 524 , weight(2.0)|difficulty(9)|spd_rtng(97) | weapon_length(47)|swing_damage(40 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["dunnish_axe"       ,"Dunnish Battle Axe"     ,[("dunland_axe_b"    ,0)], itp_type_one_handed_wpn|itp_shop|itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 524 , weight(2.0)|difficulty(9)|spd_rtng(97) | weapon_length(34)|swing_damage(40 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-["dunnish_pike"      ,"Dunnish Pike"           ,[("dunland_pike"     ,0)], itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_back, 125 , weight(3.0)|difficulty(0)|spd_rtng(95) | weapon_length(205)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
+["dunnish_pike"      ,"Dunnish Pike"           ,[("dunland_pike"     ,0)], itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 125 , weight(3.0)|difficulty(0)|spd_rtng(95) | weapon_length(205)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
 
 
 ####TLD ROHAN ITEMS##########
@@ -1033,16 +1033,16 @@ items = [
 #####TLD HARAD ITEMS##########
 	############ARMOR##########
 			#########HARONDOR##
-["harad_tunic", "Harad Tunic"       ,[("harad_tunic"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_padded", "Harondor Padded Armor" ,[("harad_padded"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_hauberk", "Harondor Hauberk"     ,[("harad_hauberk"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_lamellar", "Harasjala Armor"  , [("harad_lamellar",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_heavy", "Harad Swordsman Armor" ,[("harad_heavy"     ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_skirmisher", "Light Harad Garb"  ,[("harad_skirmisher",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_archer"    , "Harad Archer Armor",[("harad_archer"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["black_snake_armor","Maranka Armor"  , [("black_snake_armor",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["harad_champion", "Far Harad Garb" , [("harad_champion",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["panther_guard", "Panther Hide" , [("panther_guard",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_tunic"     ,"Harad Tunic"       ,[("harad_tunic"      ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_padded" ,"Harondor Padded Armor",[("harad_padded"     ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_hauberk"   ,"Harondor Hauberk"  ,[("harad_hauberk"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_lamellar"  ,"Harasjala Armor"   ,[("harad_lamellar"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_heavy"  ,"Harad Swordsman Armor",[("harad_heavy"      ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_skirmisher","Light Harad Garb"  ,[("harad_skirmisher" ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_archer"    ,"Harad Archer Armor",[("harad_archer"     ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["black_snake_armor","Maranka Armor"    ,[("black_snake_armor",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["harad_champion"  ,"Far Harad Garb"    ,[("harad_champion"   ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["panther_guard"   ,"Panther Hide"      ,[("panther_guard"    ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 			###########TODO##
 #["harad_armor_e", "Harad Cuirass Armor",[("harad_hauberk",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #["harad_armor_m", "Serjala Armor"   , [("lion_guard",0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],

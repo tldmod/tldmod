@@ -926,7 +926,7 @@ tableaus = [
        ]),
 
 ### Rohan tableau shields, random white paintings
-  ("rohan_plain_shield", 0, "sample_shield_matte", 1024, 1024, 0, 0, 0, 0,
+  ("rohan_plain_shield", 0, "rohan_shields", 1024, 1024, 0, 0, 0, 0,
    [   (store_script_param, ":paint", 1),
        (set_fixed_point_multiplier, 100),
 #	   (store_random_in_range,":paint",0,7), (val_add,":paint","mesh_rohan_paint_1"), # choose paint among all available
@@ -934,7 +934,7 @@ tableaus = [
        (init_position, pos1), (cur_tableau_add_mesh, ":paint"                        , pos1, 0, 0),
        (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
        ]),
-  ("rohan_boss_shield", 0, "sample_shield_matte", 1024, 1024, 0, 0, 0, 0,
+  ("rohan_boss_shield", 0, "rohan_shields", 1024, 1024, 0, 0, 0, 0,
    [   (store_script_param, ":paint", 1),
        (set_fixed_point_multiplier, 100),
 #	   (store_random_in_range,":paint",4,7), (val_add,":paint","mesh_rohan_paint_1"), # choose paint among suitable for bossed shield
@@ -942,7 +942,7 @@ tableaus = [
        (init_position, pos1), (cur_tableau_add_mesh, ":paint"                        , pos1, 0, 0),
        (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
        ]),
-  ("far_harad_shield", 0, "sample_shield_matte", 1024, 1024, 0, 0, 0, 0,
+  ("far_harad_shield", 0, "rohan_shields", 1024, 1024, 0, 0, 0, 0,
    [   (set_fixed_point_multiplier, 100),
        (init_position, pos1),(cur_tableau_add_mesh, "mesh_tableau_mesh_shield_harad", pos1, 0, 0),
        (init_position, pos1),(cur_tableau_add_mesh, "mesh_far_harad_shield_paint"   , pos1, 100, 0),

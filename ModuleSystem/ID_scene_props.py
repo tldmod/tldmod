@@ -1200,3 +1200,5 @@ spr_rohan_woodstairs = 1198
 spr_thranduil_hall_entrance = 1199
 spr_thranduil_throne = 1200
 spr_distant_mountain_white = 1201
+spr_rock_cliff = 1202
+spr_rock_cliff_a = 1203

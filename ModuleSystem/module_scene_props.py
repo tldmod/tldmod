@@ -1930,4 +1930,11 @@ scene_props = [
   ("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
   ("distant_mountain_white",sokf_place_at_origin|sokf_moveable,"mountains_outer","0",[]),
   
+  ("rock_cliff",0,"cliff","bo_cliff",[]),
+  ("rock_cliff_a",0,"cliff_a","bo_cliff_a",[]),
+#  ("rock_cliff_1",0,"rock_cliff_1","bo_rock_cliff_1",[]),
+#  ("rock_boulder_1",0,"rock_boulder_1","bo_rock_boulder_1",[]),
+#  ("rock_flat_1",0,"rock_flat_1","bo_rock_flat_1",[]),
+  
+  
  ]

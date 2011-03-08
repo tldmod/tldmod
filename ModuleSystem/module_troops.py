@@ -371,7 +371,7 @@ troops = [
 # def_attrib|level(20),wp(125),knows_common|knows_riding_3|knows_shield_2|knows_power_strike_2|knows_ironflesh_2,bandit_face1,bandit_face2],
 #Woodmen
 ["woodmen_youth","Woodman","Woodmen",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_woodman_tunic,itm_leather_boots,itm_tld_tunic,itm_beorn_staff,],
+   [itm_woodman_tunic,itm_leather_boots,itm_beorn_staff,],
       def_attrib|level(5),wp(70),knows_common|knows_pathfinding_1|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,swadian_face_younger_1,swadian_face_older_1],
 ["woodmen_hunter","Woodmen_Hunter","Woodmen_Hunters",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_woodman_tunic,itm_leather_boots,itm_short_bow,itm_arrows,itm_beorn_staff,],
@@ -402,7 +402,7 @@ troops = [
       def_attrib|level(25),wp(140),knows_common|knows_pathfinding_2|knows_athletics_4|knows_power_draw_2|knows_power_strike_3|knows_ironflesh_4,beorn_face1,beorn_face2],
 #Beornings
 ["beorning_vale_man","Beorning_Man","Beorning_Men",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_tunic,itm_leather_boots,itm_tld_tunic,itm_gondor_ranger_hood,itm_beorn_staff,itm_beorn_axe,],
+   [itm_beorn_tunic,itm_leather_boots,itm_gondor_ranger_hood,itm_beorn_staff,itm_beorn_axe,],
       def_attrib|level(5),wp(70),knows_common|knows_pathfinding_1|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,beorn_face1,beorn_face2],
 ["beorning_warrior","Beorning_Warrior","Beorning_Warriors",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_padded,itm_rohan_shoes,itm_beorn_axe,itm_beorn_battle_axe,],
@@ -963,7 +963,7 @@ troops = [
       0,0,0,0],
 #ROHAN
 ["rohan_youth","Rohan_Youth","Rohan_Youths",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
-   [itm_rohan_shoes,itm_rohan_armor_a,itm_rohan_armor_b,itm_tld_tunic,itm_rohan_sword_c,itm_spear,itm_rohan_shield_e,itm_rohan_shield_g,],
+   [itm_rohan_shoes,itm_rohan_armor_a,itm_rohan_armor_b,itm_rohan_sword_c,itm_spear,itm_rohan_shield_e,itm_rohan_shield_g,],
       def_attrib|level(5),wp(75),knows_common,rohan_face1,rohan_face2],
 ["guardsman_of_rohan","Guardsman_of_Rohan","Guardsmen_of_Rohan",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_helmet_a,itm_rohan_sword_c,itm_rohan_shield_e,itm_rohan_shield_g,itm_spear,],
