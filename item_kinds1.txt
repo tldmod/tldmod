@@ -1,5 +1,5 @@
 itemsfile version 2
-804
+808
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -1685,6 +1685,15 @@ itemsfile version 2
  itm_panther_guard Panther_Hide Panther_Hide 1  panther_guard 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
 0
 
+ itm_harad_scale Harad_Scale_Armor Harad_Scale_Armor 1  harad_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+0
+
+ itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tiger_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+0
+
+ itm_harad_lion_scale Lion_Guard_Armor Lion_Guard_Armor 1  harad_lion_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+0
+
  itm_harad_dragon_helm Kiloka_Helm Kiloka_Helm 1  harad_dragon_helm 0  65548 0 479 0 2.250000 100 45 0 0 8 0 0 0 0 0 0 0
 0
 
@@ -1781,13 +1790,16 @@ itemsfile version 2
  itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_harad_boots Harad_Boots Harad_Boots 1  harad_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
-0
-
  itm_desert_boots Desert_Boots Desert_Boots 1  desert_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_black_snake_boots Harad_Greaves Harad_Greaves 1  black_snake_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
+ itm_harad_leather_greaves Harad_Greaves Harad_Greaves 1  harad_leather_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
+0
+
+ itm_harad_scale_greaves Harad_Boots Harad_Boots 1  harad_scale_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
+0
+
+ itm_harad_lamellar_greaves Harad_Boots Harad_Boots 1  harad_lamellar_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
  itm_harad_horse Harad_Horse Harad_Horse 1  harad_horse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
