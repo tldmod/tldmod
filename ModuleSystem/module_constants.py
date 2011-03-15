@@ -1236,19 +1236,17 @@ faction_init = [
     ("fac_khand"   ,3500,"fac_culture_7" , "trp_khand_lord"   ,["trp_easterling_youth",      "trp_easterling_warrior",     "trp_easterling_axeman",      "trp_easterling_rider",      "trp_easterling_horseman"  ], ["pt_khand_reinf_a",     "pt_khand_reinf_b",  "pt_khand_reinf_c",   -1                    ], "spr_banner_f", "icon_mfp_khand"   ,["trp_easterling_warrior","trp_easterling_axe_master","trp_easterling_rider"         ,"trp_easterling_rider"         ,"trp_easterling_horseman"       ],"p_town_khand_camp"      ,faction_side_eye   , theatre_SE),
     ("fac_umbar"   ,3500,"fac_culture_8" , "trp_umbar_lord"   ,["trp_corsair_youth",      "trp_corsair_warrior",     "trp_militia_of_umbar",    "trp_veteran_marksman_of_umbar",   "trp_veteran_pikeman_of_umbar"], ["pt_umbar_reinf_a",    "pt_umbar_reinf_b",    "pt_umbar_reinf_c",  -1                    ], "spr_banner_g", "icon_mfp_umbar"   ,["trp_corsair_warrior" ,"trp_corsair_night_raider"  ,"trp_marksman_of_umbar"         ,"trp_veteran_marksman_of_umbar","trp_corsair_elite_marauder"    ],"p_town_umbar_camp"      ,faction_side_eye   , theatre_SE),
     ("fac_lorien"  ,4500,"fac_culture_9" , "trp_lorien_lord"  ,["trp_lothlorien_scout","trp_lothlorien_veteran_scout","trp_lothlorien_infantry","trp_lothlorien_elite_infantry","trp_lothlorien_veteran_warden"  ], ["pt_lorien_reinf_a",   "pt_lorien_reinf_b",  "pt_lorien_reinf_c",  "pt_lorien_p_train"   ], "spr_banner_h", "icon_mfp_lorien"  ,[-1                    ,"trp_lothlorien_infantry"   ,"trp_lothlorien_veteran_scout","trp_lothlorien_veteran_infantry","trp_galadhrim_royal_swordsman" ],"p_town_caras_galadhon"  ,faction_side_good  , theatre_C),
-    ("fac_imladris",3500,"fac_culture_10", "trp_imladris_lord",["trp_rivendell_scout",   "trp_rivendell_sentinel", "trp_rivendell_veteran_sentinel", "trp_rivendell_elite_sentinel", "trp_knight_of_rivendell"   ], ["pt_imladris_reinf_a","pt_imladris_reinf_b","pt_imladris_reinf_c", "pt_rivendell_p_train"], "spr_banner_i", "icon_mfp_imladris",[-1                    ,"trp_rivendell_infantry"    ,"trp_rivendell_scout"           ,"trp_rivendell_sentinel"       ,"trp_knight_of_rivendell"       ],"p_town_imladris_camp"   ,faction_side_good  , theatre_C),
-    ("fac_woodelf" ,3500,"fac_culture_11", "trp_woodelf_lord" ,["trp_greenwood_scout",  "trp_greenwood_veteran_scout", "trp_greenwood_archer", "trp_greenwood_master_archer", "trp_greenwood_royal_spearman"     ], ["pt_woodelf_reinf_a",  "pt_woodelf_reinf_b","pt_woodelf_reinf_c",  "pt_mirkwood_p_train" ], "spr_banner_j", "icon_mfp_woodelf" ,[-1                    ,"trp_greenwood_sentinel"    ,"trp_greenwood_scout"           ,"trp_greenwood_veteran_spearman","trp_greenwood_royal_spearman" ],"p_town_thranduils_halls",faction_side_good  , theatre_C),
+    ("fac_imladris",3500,"fac_culture_10", "trp_imladris_lord",["trp_rivendell_scout",   "trp_rivendell_sentinel", "trp_rivendell_veteran_sentinel", "trp_rivendell_elite_sentinel", "trp_knight_of_rivendell"   ], ["pt_imladris_reinf_a","pt_imladris_reinf_b","pt_imladris_reinf_c", "pt_imladris_p_train" ], "spr_banner_i", "icon_mfp_imladris",[-1                    ,"trp_rivendell_infantry"    ,"trp_rivendell_scout"           ,"trp_rivendell_sentinel"       ,"trp_knight_of_rivendell"       ],"p_town_imladris_camp"   ,faction_side_good  , theatre_C),
+    ("fac_woodelf" ,3500,"fac_culture_11", "trp_woodelf_lord" ,["trp_greenwood_scout",  "trp_greenwood_veteran_scout", "trp_greenwood_archer", "trp_greenwood_master_archer", "trp_greenwood_royal_spearman"     ], ["pt_woodelf_reinf_a",  "pt_woodelf_reinf_b","pt_woodelf_reinf_c",  "pt_woodelf_p_train"  ], "spr_banner_j", "icon_mfp_woodelf" ,[-1                    ,"trp_greenwood_sentinel"    ,"trp_greenwood_scout"           ,"trp_greenwood_veteran_spearman","trp_greenwood_royal_spearman" ],"p_town_thranduils_halls",faction_side_good  , theatre_C),
     ("fac_moria"   ,2500,"fac_culture_12", "trp_moria_lord"   ,["trp_snaga_of_moria",         "trp_goblin_of_moria",     "trp_fell_goblin_of_moria",     "trp_large_goblin_of_moria",   "trp_mountain_goblin"    ], ["pt_moria_reinf_a",     "pt_moria_reinf_b", "pt_moria_reinf_c",    -1                    ], "spr_banner_k", "icon_mfp_moria"   ,["trp_snaga_of_moria"  ,"trp_goblin_of_moria"       ,"trp_large_goblin_of_moria"     ,"trp_fell_goblin_of_moria"     ,"trp_fell_goblin_of_moria"      ],"p_town_moria"           ,faction_side_hand  , theatre_C),
     ("fac_guldur"  ,4500,"fac_culture_13", "trp_guldur_lord"  ,["trp_orc_snaga_of_mordor","trp_large_orc_of_mordor","trp_orc_tracker_of_mordor","trp_large_orc_archer_of_mordor","trp_great_warg_rider_of_mordor"], ["pt_guldur_reinf_a",   "pt_guldur_reinf_b",  "pt_guldur_reinf_c",  -1                    ], "spr_banner_l", "icon_mfp_guldur"  ,["trp_snaga_of_moria"  ,"trp_goblin_of_moria"       ,"trp_large_goblin_of_moria"     ,"trp_fell_goblin_of_moria"     ,"trp_fell_goblin_of_moria"      ],"p_town_dol_guldur"      ,faction_side_eye   , theatre_C),
-#    ("fac_northmen",2500,"fac_culture_14", "trp_northmen_lord",["trp_beorning_vale_man",      "trp_beorning_warrior",   "trp_beorning_carrock_fighter",   "trp_woodmen_scout",       "trp_woodmen_master_axemen" ], ["pt_northmen_reinf_a","pt_northmen_reinf_b","pt_northmen_reinf_c", -1                    ], "spr_banner_m", "icon_mfp_northmen",[-1                    ,"trp_beorning_warrior"      ,"trp_beorning_carrock_fighter"  ,"trp_woodmen_scout"            ,"trp_woodmen_master_axemen"     ],"p_town_woodsmen_village",faction_side_good  , theatre_N), 
-    ("fac_gundabad",3500,"fac_culture_15", "trp_gundabad_lord",["trp_goblin_gundabad",     "trp_orc_gundabad",      "trp_fell_orc_warrior_gundabad", "trp_goblin_bowmen_gundabad", "trp_goblin_rider_gundabad"   ], ["pt_gundabad_reinf_a","pt_gundabad_reinf_b","pt_gundabad_reinf_c", -1                    ], "spr_banner_n", "icon_mfp_gundabad",["trp_goblin_gundabad" ,"trp_orc_gundabad"          ,"trp_fell_orc_warrior_gundabad" ,"trp_goblin_bowmen_gundabad"   ,"trp_goblin_rider_gundabad"     ],"p_town_gundabad_camp"   ,faction_side_hand   , theatre_N),
-    ("fac_dale"    ,3500,"fac_culture_16", "trp_dale_lord"    ,["trp_dale_militia",              "trp_dale_man_at_arms",       "trp_laketown_archer",      "trp_dale_warrior",    "trp_merchant_squire_or_dale"  ], ["pt_dale_reinf_a",    "pt_dale_reinf_b",    "pt_dale_reinf_c",     "pt_dale_p_train"     ], "spr_banner_f21","icon_mfp_dale"   ,[-1                    ,"trp_dale_man_at_arms"      ,"trp_laketown_archer"           ,"trp_dale_warrior"             ,"trp_dale_marchwarden"          ],"p_town_dale"            ,faction_side_good   , theatre_N),
-    ("fac_dwarf"   ,3500,"fac_culture_17", "trp_dwarf_lord"   ,["trp_dwarven_apprentice",         "trp_dwarven_warrior",         "trp_dwarven_spearman",       "trp_dwarven_lookout",      "trp_dwarven_bowman"  ], ["pt_dwarf_reinf_a",    "pt_dwarf_reinf_b",   "pt_dwarf_reinf_c",   "pt_dwarven_p_train"  ], "spr_banner_p", "icon_mfp_dwarf"   ,[-1                    ,"trp_dwarven_warrior"       ,"trp_dwarven_spearman"          ,"trp_dwarven_lookout"          ,"trp_dwarven_bowman"            ],"p_town_erebor"          ,faction_side_good  , theatre_N),
+    ("fac_gundabad",3500,"fac_culture_15", "trp_gundabad_lord",["trp_goblin_gundabad",     "trp_orc_gundabad",      "trp_fell_orc_warrior_gundabad", "trp_goblin_bowmen_gundabad", "trp_goblin_rider_gundabad"   ], ["pt_gundabad_reinf_a","pt_gundabad_reinf_b","pt_gundabad_reinf_c", -1                    ], "spr_banner_n", "icon_mfp_gundabad",["trp_goblin_gundabad" ,"trp_orc_gundabad"          ,"trp_fell_orc_warrior_gundabad" ,"trp_goblin_bowmen_gundabad"   ,"trp_goblin_rider_gundabad"     ],"p_town_gundabad_camp"   ,faction_side_hand  , theatre_N),
+    ("fac_dale"    ,3500,"fac_culture_16", "trp_dale_lord"    ,["trp_dale_militia",              "trp_dale_man_at_arms",       "trp_laketown_archer",      "trp_dale_warrior",    "trp_merchant_squire_or_dale"  ], ["pt_dale_reinf_a",    "pt_dale_reinf_b",    "pt_dale_reinf_c",     "pt_dale_p_train"     ], "spr_banner_f21","icon_mfp_dale"   ,[-1                    ,"trp_dale_man_at_arms"      ,"trp_laketown_archer"           ,"trp_dale_warrior"             ,"trp_dale_marchwarden"          ],"p_town_dale"            ,faction_side_good  , theatre_N),
+    ("fac_dwarf"   ,3500,"fac_culture_17", "trp_dwarf_lord"   ,["trp_dwarven_apprentice",         "trp_dwarven_warrior",         "trp_dwarven_spearman",       "trp_dwarven_lookout",      "trp_dwarven_bowman"  ], ["pt_dwarf_reinf_a",    "pt_dwarf_reinf_b",   "pt_dwarf_reinf_c",   "pt_dwarf_p_train"    ], "spr_banner_p", "icon_mfp_dwarf"   ,[-1                    ,"trp_dwarven_warrior"       ,"trp_dwarven_spearman"          ,"trp_dwarven_lookout"          ,"trp_dwarven_bowman"            ],"p_town_erebor"          ,faction_side_good  , theatre_N),
     ("fac_dunland" ,3500,"fac_culture_18", "trp_dunland_lord" ,["trp_dunnish_warrior",    "trp_dunnish_veteran_pikeman",    "trp_dunnish_raven_rider",    "trp_dunnish_wolf_guard",   "trp_dunnish_wolf_warrior" ], ["pt_dunland_reinf_a", "pt_dunland_reinf_b", "pt_dunland_reinf_c",  -1                    ], "spr_banner_q", "icon_mfp_dunland" ,["trp_dunnish_warrior" ,"trp_dunnish_pikeman"       ,"trp_dunnish_pikeman"           ,"trp_dunnish_pikeman"          ,"trp_dunnish_pikeman"           ],"p_town_dunland_camp"    ,faction_side_hand  , theatre_SW),
-    ("fac_beorn"   ,2500,"fac_culture_14", "trp_beorn_lord"   ,["trp_beorning_vale_man",      "trp_beorning_warrior",   "trp_beorning_carrock_fighter",   "trp_woodmen_scout",       "trp_woodmen_master_axemen" ], ["pt_northmen_reinf_a","pt_northmen_reinf_b","pt_northmen_reinf_c", -1                    ], "spr_banner_q", "icon_mfp_northmen",[-1                    ,"trp_beorning_warrior"      ,"trp_beorning_carrock_fighter"  ,"trp_woodmen_scout"            ,"trp_woodmen_master_axemen"     ],"p_town_beorn_house"     ,faction_side_good  , theatre_N),
+    ("fac_beorn"   ,2500,"fac_culture_14", "trp_beorn_lord"   ,["trp_beorning_vale_man",      "trp_beorning_warrior",   "trp_beorning_carrock_fighter",   "trp_woodmen_scout",       "trp_woodmen_master_axemen" ], ["pt_beorn_reinf_a",    "pt_beorn_reinf_b",   "pt_beorn_reinf_c",   -1                    ], "spr_banner_q", "icon_mfp_northmen",[-1                    ,"trp_beorning_warrior"      ,"trp_beorning_carrock_fighter"  ,"trp_woodmen_scout"            ,"trp_woodmen_master_axemen"     ],"p_town_beorn_house"     ,faction_side_good  , theatre_N),
 ]
 
-  
 # feudal troops guarding some Gondor centers
 # 0) subfaction index,     
 # 1) city,    
@@ -1256,10 +1254,10 @@ faction_init = [
 # 3)  [guard_troop,                prison_guard_troop,                   castle_guard_troop  ], 
 # 4)  [ reinforcements for garrisons], 
 # 5) [leaders...]
-subfaction_data= [ # center          guard_troop,                prison_guard_troop,                   castle_guard_troop  
- (subfac_pelargir,     "p_town_pelargir"     ,"Pelargir"  ,[  "trp_gondor_militiamen",       "trp_gondor_swordsmen",                "trp_veteran_knight_of_gondor"  ],["pt_pelargir_reinf_a",   "pt_pelargir_reinf_b",  "pt_pelargir_reinf_c"],  ["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
+subfaction_data= [      # center                              guard_troop,                   prison_guard_troop,                   castle_guard_troop  
+ (subfac_pelargir,     "p_town_pelargir"     ,"Pelargir"  ,[  "trp_pelargir_watchman",       "trp_pelargir_infantry",               "trp_pelargir_vet_infantry"  ],["pt_pelargir_reinf_a",   "pt_pelargir_reinf_b",  "pt_pelargir_reinf_c"],  ["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
  (subfac_dol_amroth,   "p_town_dol_amroth"   ,"Amroth"    ,[  "trp_squire_of_dol_amroth",    "trp_veteran_squire_of_dol_amroth",    "trp_swan_knight_of_dol_amroth" ],["pt_dol_amroth_reinf_a", "pt_dol_amroth_reinf_b","pt_dol_amroth_reinf_c"],["trp_dol_amroth_leader"]),
- (subfac_ethring,      "p_town_ethring"      ,"Lamedon"   ,[  "trp_clansman_of_lamedon",     "trp_footman_of_lamedon",     			"trp_veteran_of_lamedon"  ],     ["pt_ethring_reinf_a",   "pt_ethring_reinf_b",   "pt_ethring_reinf_c"],     ["trp_lamedon_leader"]),
+ (subfac_ethring,      "p_town_ethring"      ,"Lamedon"   ,[  "trp_clansman_of_lamedon",     "trp_footman_of_lamedon",     			"trp_veteran_of_lamedon"  ],     ["pt_lamedon_reinf_a",   "pt_lamedon_reinf_b",   "pt_lamedon_reinf_c"],     ["trp_lamedon_leader"]),
  (subfac_lossarnach,   "p_town_lossarnach"   ,"Lossarnach",[  "trp_woodsman_of_lossarnach",  "trp_axeman_of_lossarnach",            "trp_axemaster_of_lossarnach"   ],["pt_lossarnach_reinf_a", "pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
  (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,[  "trp_warrior_of_pinnath_gelin","trp_veteran_warrior_of_pinnath_gelin","trp_champion_of_pinnath_gelin"],["pt_pinnath_reinf_a",    "pt_pinnath_reinf_b",   "pt_pinnath_reinf_c"],    ["trp_pinnath_leader"]),
  (subfac_rangers,      "p_town_henneth_annun","Ithilien"  ,[  "trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"      ,"trp_master_ranger_of_ithilien"],["pt_ithilien_reinf_a",   "pt_ithilien_reinf_b",  "pt_ithilien_reinf_c"],   ["trp_ithilien_leader"]),
@@ -1274,43 +1272,74 @@ subfaction_data= [ # center          guard_troop,                prison_guard_tr
 # Use -1 to indicate a center should not spawn such kind of party
 #
 ws_party_spawns_list = [
-#   ("p_town_name"            , "pt_faction_scouts",           "pt_faction_raiders",     "pt_faction_patrol",    "pt_faction_caravan"),
+#   ("p_town_name"            ,"pt_faction_scouts",       "pt_faction_raiders",    "pt_faction_patrol",   "pt_faction_caravan"),
 #Gondor    
-	("p_town_minas_tirith"    , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_company",    "pt_gondor_caravan"),
-    ("p_town_pinnath_gelin"   , "pt_pinnath_gelin_auxila",      -1,                      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_pelargir"        , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_linhir"          , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_dol_amroth"      , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_edhellond"       , "pt_lemedon_auxila",           "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_lossarnach"      , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_tarnost"         , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_erech"           , "pt_blackroot_auxila",         "pt_gondor_raiders",      "pt_gondor_patrol",     "pt_gondor_caravan"),
-    ("p_town_west_osgiliath"  , "pt_gondor_scouts",            "pt_gondor_raiders",      "pt_gondor_patrol",     -1),
-    ("p_town_henneth_annun"   , "pt_gondor_scouts",            "pt_gondor_raiders",      -1,                     -1),
+	("p_town_minas_tirith"    ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_company",   "pt_gondor_caravan"),
+    ("p_town_pinnath_gelin"   ,"pt_pinnath_gelin_auxila", -1,                      "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_pelargir"        ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_linhir"          ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_dol_amroth"      ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_edhellond"       ,"pt_lamedon_auxila",       "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_lossarnach"      ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_tarnost"         ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_erech"           ,"pt_blackroot_auxila",     "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+    ("p_town_west_osgiliath"  ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    -1),
+    ("p_town_henneth_annun"   ,"pt_gondor_scouts",        "pt_gondor_raiders",     -1,                    -1),
 #Rohan    
-	("p_town_edoras"          , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
- 	("p_town_aldburg"         , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
-	("p_town_hornburg"        , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
-	("p_town_east_emnet"      , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
-	("p_town_westfold"        , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
-	("p_town_west_emnet"      , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
-	("p_town_eastfold"        , "pt_rohan_scouts",             "pt_rohan_raiders",       "pt_rohan_patrol",      "pt_rohan_caravan"),
+	("p_town_edoras"          ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+ 	("p_town_aldburg"         ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_town_hornburg"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_town_east_emnet"      ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_town_westfold"        ,"pt_rohan_scouts",         -1,                      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_town_west_emnet"      ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_town_eastfold"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
 #Mordor   
-	("p_town_minas_morgul"    , "pt_mordor_scouts",            "pt_mordor_war_party",     -1,                    "pt_mordor_caravan"),
-	("p_town_morannon"        , "pt_mordor_scouts",            "pt_mordor_war_party",     -1,                    "pt_mordor_caravan"),
-	("p_town_east_osgiliath"  , "pt_mordor_scouts",            -1,                        -1,                    -1),
-	("p_town_orc_sentry_camp" , "pt_mordor_scouts",            -1,                        -1,                    -1),
+	("p_town_minas_morgul"    ,"pt_mordor_scouts",        "pt_mordor_war_party",   -1,                    "pt_mordor_caravan"),
+	("p_town_morannon"        ,"pt_mordor_scouts",        "pt_mordor_war_party",   -1,                    "pt_mordor_caravan"),
+	("p_town_east_osgiliath"  ,"pt_mordor_scouts",        -1,                      -1,                    -1),
+	("p_town_orc_sentry_camp" ,"pt_mordor_scouts",        -1,                      -1,                    -1),
 #Isengard
-	("p_town_isengard"        , "pt_isengard_scouts",          "pt_isengard_scouts_b",    -1,                    "pt_isengard_caravan"),
-	("p_town_urukhai_outpost" , "pt_isengard_scouts",          "pt_isengard_scouts_b",    -1,                    "pt_isengard_caravan"),
-	("p_town_urukhai_h_camp"  , "pt_isengard_scouts",          "pt_isengard_scouts_b",    -1,                    "pt_isengard_caravan"),
-	("p_town_urukhai_r_camp"  , "pt_isengard_scouts",          "pt_isengard_scouts_b",    -1,                    "pt_isengard_caravan"),
-#Others
-	("p_town_caras_galadhon"  , "pt_lorien_scouts",            "pt_lorien_raiders",      "pt_lorien_patrol",     "pt_lorien_caravan"),
-	("p_town_thranduils_halls", "pt_woodelves_scouts",         "pt_mirkwood_raiders",    "pt_mirkwood_patrol",   "pt_mirkwood_caravan"),
-	("p_town_dale"            , "pt_dale_scouts",              "pt_dale_raiders",        "pt_dale_patrol",       "pt_dale_caravan"),
-	("p_town_imladris_camp"   , "pt_rivendell_scouts",         "pt_rivendell_raiders",   "pt_rivendell_patrol",  "pt_rivendell_caravan"),
-	("p_town_erebor"          , "pt_dwarven_scouts",           "pt_dwarven_raiders",     "pt_dwarven_patrol",    "pt_dwarven_caravan"),
+	("p_town_isengard"        ,"pt_isengard_scouts",      "pt_isengard_scouts_b",  -1,                    "pt_isengard_caravan"),
+	("p_town_urukhai_outpost" ,"pt_isengard_scouts",      "pt_isengard_scouts_b",  -1,                    "pt_isengard_caravan"),
+	("p_town_urukhai_h_camp"  ,"pt_isengard_scouts",      "pt_isengard_scouts_b",  -1,                    "pt_isengard_caravan"),
+	("p_town_urukhai_r_camp"  ,"pt_isengard_scouts",      "pt_isengard_scouts_b",  -1,                    "pt_isengard_caravan"),
+#Others good
+    ("p_town_caras_galadhon"  ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
+	("p_town_cerin_dolen"     ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    "pt_lorien_caravan"),
+	("p_town_cerin_amroth"    ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    -1),
+	("p_town_imladris_camp"   ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
+
+	("p_town_thranduils_halls","pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+	("p_town_woodelf_camp"    ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+	("p_town_woodelf_west_camp","pt_woodelf_scouts",      "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+
+	("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
+	("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
+	("p_town_erebor"          ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+	("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+#Others evil
+	("p_town_moria"           ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
+	("p_town_troll_cave"      ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
+
+	("p_town_dol_guldur"      ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
+	("p_town_dol_guldur_north_outpost","pt_guldur_scouts","pt_guldur_raiders",     "pt_mordor_war_party", -1),
+
+	("p_town_dunland_camp"    ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
+	("p_town_harad_camp"      ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
+	("p_town_khand_camp"      ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
+
+	("p_town_north_rhun_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+	("p_town_rhun_south_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+	("p_town_rhun_north_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+ 
+	("p_town_gundabad_camp"            ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+	("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+	("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+	("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+	("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+	("p_town_gundabad_mirkwood_outpost","pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
+
+	
 ]
 
 # TLD Spawn frequency multiplier. How frequent a party can spawn
@@ -1490,11 +1519,11 @@ center_list = [
 	("p_town_beorning_village", ["scn_beorning_village_center", -1, -1,-1,-1],
 	    [-1, "trp_no_troop", "trp_town_36_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_sentinel", "trp_beorning_warrior", "trp_beorning_tolltacker"], 
 		["icon_mfc_northmen"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1),
-	("p_town_beorn_house", ["scn_woodsmen_village_center", -1, -1,-1,-1],
+	("p_town_beorn_house", ["scn_woodsmen_village_center", "scn_beorn_castle", -1,-1,-1],
 	    [-1, "trp_town_36_weaponsmith", "trp_no_troop", "trp_elder", "pt_rohan_reinf_a", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
 		["icon_mfc_northmen"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 1),
 
-	("p_town_moria", ["scn_moria_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
+	("p_town_moria", ["scn_moria_center", "scn_moria_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_moria", "trp_town_37_weaponsmith", "trp_town_37_horse_merchant", "trp_elder", "pt_moria_reinf_a", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
 		["icon_mfc_moria"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 0),
 	("p_town_troll_cave", ["scn_troll_cave_center", -1, -1,-1,-1],
@@ -1601,6 +1630,7 @@ routes_list = [
  ("p_town_hornburg"     , "p_town_east_emnet", "p_town_eastfold"),
  ("p_town_eastfold"     , "p_town_east_emnet", "p_town_west_emnet"),
  ("p_town_morannon"     , "p_town_minas_morgul"),
+ ("p_town_erebor"       , "p_town_dale","p_town_esgaroth"),
 ]
 
 lords_spawn = [ ("trp_gondor_lord","p_town_minas_tirith"),
@@ -1646,8 +1676,7 @@ tld_faction_ranks = [
 #fac_dwarf = 4
 [],
 #fac_rohan = 5
-[
-    (1450, 3000, [
+[   (1450, 3000, [
         ("Captain of the Eorl Guard", 
             [("trp_eorl_guard_of_rohan", 10), ("trp_elite_rider_of_rohan", 30)], 
             [("itm_rohan_warhorse", 1), ("itm_rohan_armor_r", 1), ("itm_rohan_helmet_h", 1), ("itm_rohan_shield_g", 1), ("itm_rohirrim_war_greaves", 1), ("itm_rohan_cav_sword", 1), ("itm_rohirrim_short_axe", 1)],
@@ -1659,16 +1688,14 @@ tld_faction_ranks = [
             [("itm_rohan_warhorse", 1), ("itm_rohan_armor_r", 1), ("itm_rohan_helmet_h", 1), ("itm_rohan_shield_g", 1), ("itm_rohirrim_war_greaves", 1), ("itm_rohan_cav_sword", 1), ("itm_rohan_spear", 1), ("itm_heavy_throwing_spear", 1)],
             [("itm_smoked_fish", 5), ("itm_dried_meat", 5)],
             "script_cf_can_be_captain_of_the_brego_guard", 300, "str_captain_of_the_brego_guard_dscpt"            
-        ),
-    ]),
+        ),      ]),
     (1100, 1500, [
         ("Captain of Edoras",
             [("trp_dismounted_thengel_guard_of_rohan", 10), ("trp_dismounted_elite_skirmisher_of_rohan", 20), ("trp_dismounted_veteran_skirmisher_of_rohan", 20)],
             [],
             [],
             -1, 250, "str_captain_of_edoras_dscpt"
-        ),
-    ]),
+        ),       ]),
 ],
 #fac_mordor = 6
 [],
@@ -1713,7 +1740,6 @@ tfr_text_pos    = 6
 
 tfr_name_strings_begin = "str_tfr_name_strings_begin"
 
-#
 # TLD faction ranks end
 ###############################################
 faction_strings =[    #shop rumors begin          shop rumors end
@@ -1730,7 +1756,6 @@ faction_strings =[    #shop rumors begin          shop rumors end
     ("fac_woodelf" ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_moria"   ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_guldur"  ,"str_default_rumor", "str_rohan_rumor_begin"),
-#    ("fac_northmen","str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_gundabad","str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_dale"    ,"str_default_rumor", "str_rohan_rumor_begin"),
     ("fac_dwarf"   ,"str_default_rumor", "str_rohan_rumor_begin"),
@@ -1740,48 +1765,22 @@ faction_strings =[    #shop rumors begin          shop rumors end
 
 ## tableau meshes list for factions
 fac_tableau_list = [
-#fac_gondor = 3
-[ ("tableau_tld_tunic", ["mesh_tableau_mesh_gondor_tunic_a", "mesh_tableau_mesh_gondor_tunic_b"]),
-],
-#fac_dwarf = 4
-[],
-#fac_rohan = 5
-[ ("tableau_tld_tunic", ["mesh_tableau_mesh_rohan_tunic"]),
-],
-#fac_mordor = 6
-[],
-#fac_isengard = 7
-[],
-#fac_lorien = 8
-[],
-#fac_imladris = 9
-[],
-#fac_woodelf = 10
-[],
-#fac_dale = 11
-[ ("tableau_tld_tunic", ["mesh_tableau_mesh_dale_tunic"]),
-],
-#fac_harad = 12
-[],
-#fac_rhun = 13
-[],
-#fac_khand = 14
-[],
-#fac_umbar = 15
-[],
-#fac_moria = 16
-[],
-#fac_guldur = 17
-[],
-#fac_gundabad = 18
-[],
-#fac_dunland = 19
-[],
-#fac_northmen = 20
-[# ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
-],
-#fac_beorn = 21
-[ ("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),
-],
-
+[("tableau_tld_tunic", ["mesh_tableau_mesh_gondor_tunic_a", "mesh_tableau_mesh_gondor_tunic_b"]),],#fac_gondor = 3
+[],#fac_dwarf = 4
+[("tableau_tld_tunic", ["mesh_tableau_mesh_rohan_tunic"]),],#fac_rohan = 5
+[],#fac_mordor = 6
+[],#fac_isengard = 7
+[],#fac_lorien = 8
+[],#fac_imladris = 9
+[],#fac_woodelf = 10
+[("tableau_tld_tunic", ["mesh_tableau_mesh_dale_tunic"]),],#fac_dale = 11
+[],#fac_harad = 12
+[],#fac_rhun = 13
+[],#fac_khand = 14
+[],#fac_umbar = 15
+[],#fac_moria = 16
+[],#fac_guldur = 17
+[],#fac_gundabad = 18
+[],#fac_dunland = 19
+[("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),],#fac_beorn = 20
 ]

@@ -169,17 +169,16 @@ scenes = [
   ("elf_prison"   ,sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
 
   ("zendar_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("gondor_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("rohan_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("elf_arena"   ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("gondor_arena",sf_indoors ,"interior_gondor_training_room_b", "bo_interior_gondor_training_room_b", (0,0),(100,100),-100,"0",[],[]),
+  ("rohan_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_rohan"),
+  ("elf_arena"   ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_forest"),
   ("mordor_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
 
 # stub leftovers
   ("town_store",sf_indoors ,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",    [],[]),
   ("town_alley",sf_generate,"none", "none", (0,0),(100,100),-100,"0x300bc5430001e0780000448a0000049f00007932",    [],[],"outer_terrain_plain"),
   ("town_walls",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000130028e320005e17b00004a14000006d70000019d",    [],[],"outer_terrain_plain"),
-
-#       1 Steppe
+# 1 Steppe
   ("castle_1_exterior",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b", [],[],"outer_terrain_steppe"),
   ("castle_1_interior",sf_indoors, "dungeon_entry_a", "bo_dungeon_entry_a", (-100,-100),(100,100),-100,"0",  ["exit"],[]),
   ("castle_1_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0", [],[]),
@@ -214,42 +213,43 @@ scenes = [
   ("bridge_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a078bb2000589630000667200002fb90000179c",[],[], "outer_terrain_plain"),
 ## Mountain Forest with mines    
   ("battle_scene_mountain_forest_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"),
-  ("aw_tomb"             ,sf_indoors,"aw_tomb"                       , "bo_aw_tomb", (-100,-100),(240,240),-100,"0",[],[]),
-  ("dol_amroth_castle"   ,sf_indoors,"interior_castle_dolamroth"     , "bo_interior_castle_dolamroth", (-100,-100),(100,100),-100,"0",[],[]),
-  ("isengard_castle"     ,sf_indoors,"interior_throneroom_isengard_a", "bo_interior_throneroom_isengard_a", (-100,-100),(100,100),-100,"0",[],[]),
-  ("gondor_castle_a"     ,sf_indoors,"interior_castle_gondor_a"      , "bo_interior_castle_gondor_a", (-100,-100),(100,100),-100,"0",[],[]),
-  ("gondor_castle_b"     ,sf_indoors,"interior_castle_gondor_b"      , "bo_interior_castle_gondor_b", (-100,-100),(100,100),-100,"0",[],[]),
-  ("gondor_castle_c"     ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c", (-100,-100),(100,100),-100,"0",[],[]),
-  ("gondor_castle_c"     ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c", (-100,-100),(100,100),-100,"0",[],[]),
-  ("cair_andros_castle"  ,sf_indoors,"interior_castle_gondor_d"      , "bo_interior_castle_gondor_d", (-100,-100),(100,100),-100,"0",[],[]),
-  ("west_osgiliath_castle",sf_indoors,"interior_castle_gondor_d"     , "bo_interior_castle_gondor_d", (-100,-100),(100,100),-100,"0",[],[]),
-  ("henneth_annun_castle",sf_indoors,"mesh_henneth_annun"            , "bo_henneth_annun", (-100,-100),(100,100),-100,"0",[],[]),
-  ("rohan_castle_a"      ,sf_indoors,"interior_castle_rohan_a"       , "bo_interior_castle_i", (-100,-100),(100,100),-100,"0",[],[]),
-  ("rohan_castle_b"      ,sf_indoors,"interior_castle_rohan_b"       , "bo_interior_castle_j", (-100,-100),(100,100),-100,"0",[],[]),
-  ("mordor_castle_a"     ,sf_indoors,"interior_castle_mordor_a"      , "bo_interior_castle_mordor_a", (-100,-100),(100,100),-100,"0",[],[]),
-  ("mordor_castle_b"     ,sf_indoors,"interior_castle_mordor_b"      , "bo_interior_castle_mordor_b", (-100,-100),(100,100),-100,"0",[],[]),
+  ("aw_tomb"              ,sf_indoors,"aw_tomb"                       , "bo_aw_tomb"                  , (-100,-100),(240,240),-100,"0",[],[]),
+  ("dol_amroth_castle"    ,sf_indoors,"interior_castle_dolamroth"     , "bo_interior_castle_dolamroth", (-100,-100),(100,100),-100,"0",[],[]),
+  ("isengard_castle" ,sf_indoors,"interior_throneroom_isengard_a", "bo_interior_throneroom_isengard_a", (-100,-100),(100,100),-100,"0",[],[]),
+  ("gondor_castle_a"      ,sf_indoors,"interior_castle_gondor_a"      , "bo_interior_castle_gondor_a" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("gondor_castle_b"      ,sf_indoors,"interior_castle_gondor_b"      , "bo_interior_castle_gondor_b" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("gondor_castle_c"      ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("gondor_castle_c"      ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("cair_andros_castle"   ,sf_indoors,"interior_castle_gondor_d"      , "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("west_osgiliath_castle",sf_indoors,"interior_castle_gondor_d"      , "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("henneth_annun_castle" ,sf_indoors,"mesh_henneth_annun"            , "bo_henneth_annun"            , (-100,-100),(100,100),-100,"0",[],[]),
+  ("rohan_castle_a"       ,sf_indoors,"interior_castle_rohan_a"       , "bo_interior_castle_i"        , (-100,-100),(100,100),-100,"0",[],[]),
+  ("rohan_castle_b"       ,sf_indoors,"interior_castle_rohan_b"       , "bo_interior_castle_j"        , (-100,-100),(100,100),-100,"0",[],[]),
+  ("mordor_castle_a"      ,sf_indoors,"interior_castle_mordor_a"      , "bo_interior_castle_mordor_a" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("mordor_castle_b"      ,sf_indoors,"interior_castle_mordor_b"      , "bo_interior_castle_mordor_b" , (-100,-100),(100,100),-100,"0",[],[]),
 
-  ("rhun_south_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("rhun_north_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("gundabad_ne_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
-  ("gundabad_nw_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
-  ("dol_guldur_north_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
-
-  #Kolba stuff
+  ("rhun_south_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("rhun_north_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("gundabad_ne_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
+  ("gundabad_nw_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
+  ("dol_guldur_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
 
   ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
-  ("gundabad_mirkwood_outpost" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+  ("gundabad_mirkwood_outpost"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 
-  ("thranduil_hall_room"   ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_thranduil_hall", (-100,-100),(100,100),-100,"0",[],[]),
-  ("random_scene_parade"    ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade
-  ("woodelf_west_camp_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+  ("thranduil_hall_room"     ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_thranduil_hall", (-100,-100),(100,100),-100,"0",[],[]),
+  ("random_scene_parade"  ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade
  
-  ("goblin_north_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
-  ("goblin_south_outpost_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
+  ("woodelf_west_camp_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+  ("goblin_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
+  ("goblin_south_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
+  ("woodsmen_village2_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+  ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+  ("isengard_center_flooded"    ,sf_generate,"none","none",(0,0),(100,100), 100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
 
-  ("woodsmen_village2_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-  ("beorning_village_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-  ("isengard_center_flooded" ,sf_generate,"none", "none",(0,0),(100,100), 100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
+  ("beorn_castle",sf_indoors,"interior_castle_rohan_b","bo_interior_castle_rohan_b",(-100,-100),(100,100),-100,"0",[],[]),
+  ("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
+  
   
   ]
 

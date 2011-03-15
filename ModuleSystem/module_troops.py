@@ -566,7 +566,7 @@ troops = [
 ["dwarven_lookout","Dwarven_Lookout","Dwarven_Lookouts",tf_dwarf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_lamedon_hood,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],
       def_attrib|level(15),wp_one_handed(70)|wp_two_handed(70)|wp_polearm(70)|wp_archery(115)|wp_crossbow(100)|wp_throwing(100),knows_common|knows_athletics_2|knows_power_draw_4|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
-["dwarven_scout","Dwarven_Scout","Dwarven_Scouts",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
+["dwarven_scout","Dwarven_Scout","dwarf_scouts",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_dwarf_helm_a,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],
       def_attrib|level(20),wp_one_handed(90)|wp_two_handed(90)|wp_polearm(90)|wp_archery(130)|wp_crossbow(100)|wp_throwing(100),knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
 ["dwarven_bowman","Dwarven_Bowman","Dwarven_Bowmen",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
@@ -891,7 +891,7 @@ troops = [
    [itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_short_bow,itm_arrows,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Rivendell
-["rivendell_scout","Rivendell_Scout","Rivendell_Scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
+["rivendell_scout","Rivendell_Scout","imladris_scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_leather_boots,itm_leather_gloves,itm_riv_bow,itm_riv_armor_light,itm_riv_archer_sword,itm_elven_arrows,],
       def_attrib|level(15),wp_one_handed(150)|wp_two_handed(150)|wp_polearm(150)|wp_archery(130)|wp_crossbow(100)|wp_throwing(100),knows_common|knows_power_draw_2|knows_ironflesh_1,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_veteran_scout","Rivendell_Veteran_Scout","Rivendell_Veteran_Scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,

@@ -1,5 +1,5 @@
 scenesfile version 1
- 189
+ 191
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -520,18 +520,18 @@ scn_zendar_arena zendar_arena 256 none none 0.000000 0.000000 100.000000 100.000
   0 
   0 
  outer_terrain_plain 
-scn_gondor_arena gondor_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
+scn_gondor_arena gondor_arena 1 interior_gondor_training_room_b bo_interior_gondor_training_room_b 0.000000 0.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
- outer_terrain_plain 
+ 0 
 scn_rohan_arena rohan_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_elf_arena elf_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_mordor_arena mordor_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
@@ -756,3 +756,11 @@ scn_isengard_center_flooded isengard_center_flooded 256 none none 0.000000 0.000
   0 
   0 
  outer_mountains2north 
+scn_beorn_castle beorn_castle 1 interior_castle_rohan_b bo_interior_castle_rohan_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 
+scn_moria_castle moria_castle 1 interior_round_isengard bo_interior_round_isengard -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 

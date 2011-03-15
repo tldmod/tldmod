@@ -251,10 +251,10 @@ itemsfile version 2
  itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 20 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
 0
 
- itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  khergit_bow_case 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
+ itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
 0
 
  itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 82 54 0 0 278 0
@@ -1748,13 +1748,13 @@ itemsfile version 2
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372072044986383 17 0 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
 0
 
- itm_harad_short_spear Harad_Spear Harad_Spear 1  harad_short_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_harad_short_spear Harad_Spear Harad_Spear 1  harad_short_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222131026002688 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
  itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 6442450944 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
