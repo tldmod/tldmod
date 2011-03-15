@@ -1,5 +1,5 @@
 scenesfile version 1
- 191
+ 192
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -328,7 +328,7 @@ scn_east_emnet_center east_emnet_center 256 none none 0.000000 0.000000 100.0000
   0 
   0 
  outer_terrain_rohan 
-scn_westfold_center westfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000720049cbd00025896000048e90000164400002b3f 
+scn_westfold_center westfold_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000620049cbd00025896000048e90000164400002b3f 
   0 
   0 
  outer_terrain_rohan 
@@ -752,7 +752,7 @@ scn_beorning_village_center beorning_village_center 256 none none 0.000000 0.000
   0 
   0 
  outer_terrain_plain 
-scn_isengard_center_flooded isengard_center_flooded 256 none none 0.000000 0.000000 100.000000 100.000000 100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_isengard_center_flooded isengard_center_flooded 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
   0 
  outer_mountains2north 
@@ -764,3 +764,7 @@ scn_moria_castle moria_castle 1 interior_round_isengard bo_interior_round_isenga
   0 
   0 
  0 
+scn_amon_hen amon_hen 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000630000500000c2304000003ce000047ca0000794b 
+  0 
+  0 
+ outer_terrain_osgiliath_9 

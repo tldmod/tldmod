@@ -1,5 +1,5 @@
 itemsfile version 2
-808
+809
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  12582914 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 522 528
 0
 
@@ -78,19 +78,73 @@ itemsfile version 2
  itm_metal_scraps_good Good_quality_metal_scraps Good_quality_metal_scraps 1  weapon_scraps_b 0  11 0 250 0 40.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_sumpter_horse Sumpter_Horse Sumpter_Horse 1  sumpter_horse 0  65537 0 64 41876193280 0.000000 90 0 17 0 1 110 33 34 0 0 9 0
+ itm_sumpter_horse Sumpter_Horse Sumpter_Horse 1  sumpter_horse 0  65537 0 64 41876193280 0.000000 90 0 1 0 1 40 33 34 0 0 9 0
 0
 
- itm_saddle_horse Saddle_Horse Saddle_Horse 2  saddle_horse 0  horse_c 34360000512  65537 0 112 41876193280 0.000000 90 0 14 0 1 0 36 39 0 0 8 0
+ itm_saddle_horse Saddle_Horse Saddle_Horse 2  saddle_horse 0  horse_c 34360000512  65537 0 112 41876193280 0.000000 90 0 10 0 1 70 36 39 0 0 8 0
 0
 
- itm_steppe_horse Steppe_Horse Steppe_Horse 1  steppe_horse 0  65537 0 92 41876193280 0.000000 80 0 15 0 2 0 41 37 0 0 7 0
+ itm_steppe_horse Steppe_Horse Steppe_Horse 1  steppe_horse 0  65537 0 92 41876193280 0.000000 80 0 10 0 2 70 41 37 0 0 7 0
 0
 
- itm_courser Courser Courser 1  courser 0  65537 0 323 110595670016 0.000000 70 0 16 0 2 0 37 43 0 0 11 0
+ itm_courser Courser Courser 1  courser 0  65537 0 323 110595670016 0.000000 70 0 10 0 2 70 37 43 0 0 11 0
 0
 
- itm_hunter Hunter Hunter 2  hunting_horse 0  hunting_horse 34360000512  65537 0 434 110595670016 0.000000 60 0 29 0 3 130 36 40 0 0 18 0
+ itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 434 110595670016 0.000000 60 0 20 0 3 100 36 40 0 0 18 0
+0
+
+ itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_mail 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 1  arnor_leather 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_rohirrim_hunter Rohirrim_Hunter Rohirrim_Hunter 1  rohan_horse02 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_rohirrim_courser2 Rohirrim_Courser Rohirrim_Courser 1  rohan_horse03 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_thengel_warhorse Thengel_Guard_Warhorse Thengel_Guard_Warhorse 1  rohan_warhorse02 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_b Rhun_Horse Rhun_Horse 1  rhunhorselight2 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_d Rhun_Horse Rhun_Horse 1  rhunhorselight4 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_e Rhun_Horse Rhun_Horse 1  rhunhorseheav1 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_f Rhun_Horse Rhun_Horse 1  rhunhorseheav2 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_g Rhun_Horse Rhun_Horse 1  rhunhorseheav3 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_rhun_horse_h Rhun_Horse Rhun_Horse 1  rhunhorseheav4 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
+0
+
+ itm_dale_horse Dale_Horse Dale_Horse 1  sumpter_horse 0  65537 0 724 110595670016 0.000000 50 0 10 0 4 60 34 36 0 0 18 0
+0
+
+ itm_dale_warhorse Dale_Warhorse Dale_Warhorse 1  warhorse 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
+0
+
+ itm_riv_warhorse Warhorse Warhorse 1  rivendell_warhorse01 0  65537 0 824 110595670016 0.000000 50 0 52 0 4 135 36 38 0 0 20 0
+0
+
+ itm_riv_warhorse2 Warhorse Warhorse 1  rivendell_warhorse02 0  65537 0 824 110595670016 0.000000 50 0 52 0 4 135 36 38 0 0 20 0
 0
 
  itm_arrows Arrows Arrows 3  plain_arrow 0  flying_missile 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 160 0 0 0 0 0 0 0 95 30 1 0
@@ -114,7 +168,7 @@ itemsfile version 2
  itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
 0
 
- itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
+ itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 3 0
 0
 
  itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 50 0 0 0 0 0 0 0 91 29 259 0
@@ -223,6 +277,9 @@ itemsfile version 2
  itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 195 0 2.500000 100 0 9 0 0 370 103 0 40 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063520 1729382256910270472 1224979098644774912 1224979098644774913 
+
+ itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 15 0
+0
 
  itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 15 0
 0
@@ -350,12 +407,6 @@ itemsfile version 2
  itm_arnor_shield_d Arnor_Cavalry_Shield Arnor_Cavalry_Shield 1  arnor_cav_shield_b 0  327687 5100273664 118 0 1.250000 100 0 1 0 0 380 100 0 39 0 0 0
 0
 
- itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_mail 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 1  arnor_leather 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
  itm_arnor_sword_a Arnor_Bastard_Sword Arnor_Bastard_Sword 2  dunedain_bastard_a 0  scab_dunedain_bastard_a 3458764513820540928  4259843 9223635954298781951 294 0 2.000000 100 0 0 0 9 36864 99 0 100 0 283 36
 0
 
@@ -417,12 +468,6 @@ itemsfile version 2
 0
 
  itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  rivendellmountedarcher 0  16842765 0 1259 0 18.000000 100 0 38 19 7 0 0 0 0 0 0 0
-0
-
- itm_riv_warhorse Warhorse Warhorse 1  rivendell_warhorse01 0  65537 0 824 110595670016 0.000000 50 0 52 0 4 135 36 38 0 0 20 0
-0
-
- itm_riv_warhorse2 Warhorse Warhorse 1  rivendell_warhorse02 0  65537 0 824 110595670016 0.000000 50 0 52 0 4 135 36 38 0 0 20 0
 0
 
  itm_gon_footman Gondor_Mail_Shirt Gondor_Mail_Shirt 1  gondor_footman 0  16842765 0 995 0 17.000000 100 0 39 6 7 0 0 0 0 0 0 0
@@ -1443,21 +1488,6 @@ itemsfile version 2
  itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  138772484 4222124851987200 125 0 3.000000 100 0 0 0 0 16384 95 0 205 0 282 528
 0
 
- itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_rohirrim_hunter Rohirrim_Hunter Rohirrim_Hunter 1  rohan_horse02 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_rohirrim_courser2 Rohirrim_Courser Rohirrim_Courser 1  rohan_horse03 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_thengel_warhorse Thengel_Guard_Warhorse Thengel_Guard_Warhorse 1  rohan_warhorse02 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
  itm_rohan_armor_a Rohan_Armor Rohan_Armor 1  L_roh_shirt_M1 0  16842765 0 152 0 15.000000 100 0 40 9 0 0 0 0 0 0 0 0
 0
 
@@ -2052,33 +2082,6 @@ itemsfile version 2
 0
 
  itm_rhun_shield Rhun_Shield Rhun_Shield 1  rhun_shield 0  327687 4831838208 118 0 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
-0
-
- itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_b Rhun_Horse Rhun_Horse 1  rhunhorselight2 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_d Rhun_Horse Rhun_Horse 1  rhunhorselight4 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_e Rhun_Horse Rhun_Horse 1  rhunhorseheav1 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_f Rhun_Horse Rhun_Horse 1  rhunhorseheav2 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_g Rhun_Horse Rhun_Horse 1  rhunhorseheav3 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_rhun_horse_h Rhun_Horse Rhun_Horse 1  rhunhorseheav4 0  65537 0 1411 110595670016 0.000000 40 0 65 0 4 140 32 35 0 0 25 0
-0
-
- itm_dale_horse Dale_Horse Dale_Horse 1  sumpter_horse 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
-0
-
- itm_dale_warhorse Dale_Warhorse Dale_Warhorse 1  warhorse 0  65537 0 724 110595670016 0.000000 50 0 52 0 4 135 34 36 0 0 18 0
 0
 
  itm_dale_armor_a Dale_Armor Dale_Armor 1  dale_footman 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0

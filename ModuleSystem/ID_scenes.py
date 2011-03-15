@@ -189,3 +189,4 @@ scn_beorning_village_center = 187
 scn_isengard_center_flooded = 188
 scn_beorn_castle = 189
 scn_moria_castle = 190
+scn_amon_hen = 191
