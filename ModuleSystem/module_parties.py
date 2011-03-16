@@ -158,6 +158,26 @@ parties = [
 
 ####DONE TLD TOWNS
 
+# Advance camps for other theaters
+ ("advcamp_gondor", "Gondor Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_rohan", "Rohan Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_isengard", "Isengard Advance Camp", icon_orctower|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_mordor", "Mordor Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_harad", "Harad Advance Camp", icon_haradcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_rhun", "Rhun Advance Camp", icon_nomadcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_khand", "Khand Advance Camp", icon_nomadcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_umbar", "Umbar Advance Camp", icon_corsaircamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],175),
+ ("advcamp_lorien", "Lorien Advance Camp", icon_tree|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_imladris", "Imladris Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_woodelf", "Mirkwood Advance Camp", icon_tree|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_moria", "Moria Advance Camp", icon_orctower|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_guldur", "Dol Guldur Advance Camp", icon_orctower|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_gundabad", "Gundabad Advance Camp", icon_orctower|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_dale", "Dale Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_dwarf", "Erebor Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_dunland", "Dunland Advance Camp", icon_nomadcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+ ("advcamp_beorn", "Beorning Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
+
 # stuff from native
  ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
 # ("village_1", "Yaragar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15,0),[], 100),
