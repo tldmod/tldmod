@@ -213,6 +213,7 @@ triggers = [
         ]+concatenate_scripts([
         [
         (try_begin),
+            (party_is_active, ws_party_spawns_list[x][0]), #TLD
             (store_faction_of_party, ":faction_no", ws_party_spawns_list[x][0]),
             (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
@@ -1281,10 +1282,21 @@ triggers = [
 		(play_sound,"snd_evil_horn"),
 #	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),
-           (try_begin),
-			(neg|party_is_active,":center"),
-			(enable_party,":center"),
-		   (try_end),
+          (neg|party_is_active,":center"),
+          (store_faction_of_party, ":cur_faction", ":center"),
+          (neg|faction_slot_eq, ":cur_faction", slot_faction_advance_camp, ":center"), # don't reveal advance camps
+		  (enable_party,":center"),
+          # and reinforce
+          (assign, ":garrison_strength", 13),
+          (party_get_slot, ":garrison_limit", ":center", slot_center_garrison_limit),
+          (try_for_range, ":unused", 0, ":garrison_strength"),
+            (call_script, "script_cf_reinforce_party", ":center"),
+            (try_begin), #TLD: don't go overboard
+              (party_get_num_companions, ":garrison_size", ":center"),
+              (le, ":garrison_limit", ":garrison_size"),
+              (assign, ":garrison_strength", 0),
+            (try_end),
+          (try_end),
 		(try_end),
         ]
     ),

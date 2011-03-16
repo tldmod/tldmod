@@ -1079,6 +1079,7 @@ scripts = [
 	  (faction_set_slot, faction_init[x][0], slot_faction_capital           , faction_init[x][9])    for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_init[x][0], slot_faction_side              , faction_init[x][10])   for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_init[x][0], slot_faction_home_theater      , faction_init[x][11])   for x in range(len(faction_init)) ]+[
+	  (faction_set_slot, faction_init[x][0], slot_faction_advance_camp      , faction_init[x][12])   for x in range(len(faction_init)) ]+[
 	  
 # rumors in shops and tavers
 	  (faction_set_slot, faction_strings[x][0], slot_faction_rumors_begin   , faction_strings[x][1])    for x in range(len(faction_init)) ]+[
@@ -2938,6 +2939,7 @@ scripts = [
         (this_or_next|is_between, ":center_no", towns_begin, towns_end),
         (is_between, ":center_no", villages_begin, villages_end),
         (try_for_range, ":other_center", centers_begin, centers_end),
+          (party_is_active, ":other_center"), #TLD
           (this_or_next|is_between, ":center_no", towns_begin, towns_end),
           (is_between, ":center_no", villages_begin, villages_end),
           (neq, ":other_center", ":center_no"),
@@ -2975,6 +2977,7 @@ scripts = [
         (assign, ":num_centers", 0),
         (store_add, ":cur_good_slot", ":cur_good", ":item_to_slot"),
         (try_for_range, ":center_no", centers_begin, centers_end),
+          (party_is_active, ":center_no"), #TLD
           (val_add, ":num_centers", 1),
           (try_begin),
             (is_between, ":center_no", towns_begin, towns_end), #each town is weighted as 5 villages...
@@ -2986,6 +2989,7 @@ scripts = [
         (store_div, ":new_production_difference", ":total_production", ":num_centers"),
         (neq, ":new_production_difference", 0),
         (try_for_range, ":center_no", centers_begin, centers_end),
+          (party_is_active, ":center_no"), #TLD
           (this_or_next|is_between, ":center_no", towns_begin, towns_end),
           (is_between, ":center_no", villages_begin, villages_end),
           (party_get_slot, ":center_production", ":center_no", ":cur_good_slot"),
@@ -3000,6 +3004,7 @@ scripts = [
   ("update_trade_good_prices",
     [
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (this_or_next|is_between, ":center_no", towns_begin, towns_end),
         (is_between, ":center_no", villages_begin, villages_end),
         (call_script, "script_update_trade_good_price_for_party", ":center_no"),
@@ -3931,6 +3936,7 @@ scripts = [
      (assign, ":owned_castles", 0),
      (assign, ":owned_villages", 0),
      (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
+       (party_is_active, ":cur_center"), #TLD
        (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
        (try_begin),
          (party_slot_eq, ":cur_center", slot_party_type, spt_town),
@@ -4287,6 +4293,7 @@ scripts = [
       # First count num matching spawn points
       (assign, ":no_towns", 0),
       (try_for_range,":cur_town", towns_begin, towns_end),
+        (party_is_active, ":cur_town"), #TLD: don't consider disabled parties
         (store_faction_of_party, ":cur_faction", ":cur_town"),
         (eq, ":cur_faction", ":faction_no"),
         (val_add, ":no_towns", 1),
@@ -4295,6 +4302,7 @@ scripts = [
       (store_random_in_range, ":random_town", 0, ":no_towns"),
       (assign, ":no_towns", 0),
       (try_for_range,":cur_town", towns_begin, towns_end),
+        (party_is_active, ":cur_town"), #TLD: don't consider disabled parties
         (eq, ":result", -1),
         (store_faction_of_party, ":cur_faction", ":cur_town"),
         (eq, ":cur_faction", ":faction_no"),
@@ -4348,6 +4356,7 @@ scripts = [
       # First count num matching spawn points
       (assign, ":no_centers", 0),
       (try_for_range,":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
         (val_add, ":no_centers", 1),
@@ -4357,6 +4366,7 @@ scripts = [
       (gt, ":no_centers", 0), #Fail if there are no centers
       (store_random_in_range, ":random_center", 0, ":no_centers"),
       (try_for_range,":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (eq, ":result", -1),
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
@@ -4383,6 +4393,7 @@ scripts = [
       (assign, ":result", -1),
       (assign, ":no_centers", 0),
       (try_for_range,":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
         (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
@@ -4393,6 +4404,7 @@ scripts = [
       (gt, ":no_centers", 0), #Fail if there are no centers
       (store_random_in_range, ":random_center", 0, ":no_centers"),
       (try_for_range,":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (eq, ":result", -1),
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
@@ -4421,6 +4433,7 @@ scripts = [
       # First count num matching spawn points
       (assign, ":no_centers", 0),
       (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
         (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
@@ -4439,6 +4452,7 @@ scripts = [
       (gt, ":no_centers", 0), #Fail if there are no centers
       (store_random_in_range, ":random_center", 0, ":no_centers"),
       (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (eq, ":result", -1),
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
@@ -5773,6 +5787,7 @@ scripts = [
       (assign, ":num_centers", 0),
       (store_faction_of_party, ":faction_no", ":party_no"),
       (try_for_range, ":cur_center", centers_begin, centers_end),
+        (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
@@ -5784,6 +5799,7 @@ scripts = [
       (store_random_in_range, ":random_center", 0, ":num_centers"),
       (assign, ":end_cond", centers_end),
       (try_for_range, ":cur_center", centers_begin, ":end_cond"),
+        (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
@@ -6278,6 +6294,7 @@ scripts = [
       (assign, ":min_distance", 9999999),
       (assign, reg0, -1),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
         (lt, ":party_distance", ":min_distance"),
         (assign, ":min_distance", ":party_distance"),
@@ -6294,6 +6311,7 @@ scripts = [
       (assign, ":min_distance", 9999999),
       (assign, reg0, -1),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
         (lt, ":party_distance", ":min_distance"),
         (assign, ":min_distance", ":party_distance"),
@@ -6312,6 +6330,7 @@ scripts = [
       (assign, ":min_distance", 99999),
       (assign, ":result", -1),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":faction_no", ":center_no"),
         (eq, ":faction_no", ":kingdom_no"),
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
@@ -6332,6 +6351,7 @@ scripts = [
       (assign, ":min_distance", 99999),
       (assign, ":result", -1),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":faction_no", ":center_no"),
         (eq, ":faction_no", ":kingdom_no"),
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
@@ -6786,6 +6806,7 @@ scripts = [
       (try_end),
 
       (try_for_range, ":other_center", centers_begin, centers_end),
+        (party_is_active, ":other_center"), #TLD
         (party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"),
         (call_script, "script_give_center_to_faction_aux", ":other_center", ":faction_no"),
       (try_end),
@@ -6807,6 +6828,7 @@ scripts = [
 
       (troop_set_faction, ":troop_no", ":faction_no"),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (party_set_faction, ":center_no", ":faction_no"),
         (try_for_range, ":village_no", villages_begin, villages_end),
@@ -6959,6 +6981,7 @@ scripts = [
       (store_script_param_1, ":troop_no"),
       (assign, ":result", 0),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (val_add, ":result", 1),
       (try_end),
@@ -7041,6 +7064,7 @@ scripts = [
       (store_faction_of_party, ":party_faction", ":party_no"),
       
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (store_relation, ":party_relation", ":center_faction", ":party_faction"),
         (lt, ":party_relation", 0),
@@ -7051,6 +7075,7 @@ scripts = [
       (store_random_in_range, ":random_center", 0, ":total_enemy_centers"),
       (assign, ":total_enemy_centers", 0),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (eq, ":result", -1),
         (store_faction_of_party, ":center_faction", ":center_no"),
         (store_relation, ":party_relation", ":center_faction", ":party_faction"),
@@ -7110,6 +7135,7 @@ scripts = [
       (store_faction_of_party, ":faction_no", ":center_no"),
       (assign, ":total_weight", 0),
       (try_for_range, ":cur_center_no", centers_begin, centers_end),
+        (party_is_active, ":cur_center_no"), #TLD
         (neq, ":center_no", ":cur_center_no"),
         (store_faction_of_party, ":center_faction_no", ":cur_center_no"),
         (eq, ":faction_no", ":center_faction_no"),
@@ -7131,6 +7157,7 @@ scripts = [
         (assign, ":total_weight", 0),
         (assign, ":done", 0),
         (try_for_range, ":cur_center_no", centers_begin, centers_end),
+          (party_is_active, ":cur_center_no"), #TLD
           (eq, ":done", 0),
           (neq, ":center_no", ":cur_center_no"),
           (store_faction_of_party, ":center_faction_no", ":cur_center_no"),
@@ -7242,6 +7269,7 @@ scripts = [
       
       (try_begin),
         (gt, ":party_template", 0),
+        (party_is_active, ":party_no"), #TLD
         (party_add_template, ":party_no", ":party_template"),
       (try_end),
   ]),
@@ -7755,6 +7783,7 @@ scripts = [
   ("process_sieges",
     [
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+         (party_is_active, ":center_no"), #TLD
          #Reducing siege hardness every day by 20
          (party_get_slot, ":siege_hardness", ":center_no", slot_center_siege_hardness),
          (val_sub, ":siege_hardness", 20),
@@ -7872,6 +7901,7 @@ scripts = [
        (neg|party_is_in_any_town, ":party_no"),
        (store_faction_of_party, ":party_faction", ":party_no"),
        (try_for_range, ":center_no", centers_begin, centers_end),
+         (party_is_active, ":center_no"), #TLD
          (store_distance_to_party_from_party, ":distance", ":party_no", ":center_no"),
          (le, ":distance", ":spotting_range"),
          (store_faction_of_party, ":center_faction", ":center_no"),
@@ -7881,6 +7911,7 @@ scripts = [
        (try_end),
      (try_end),
      (try_for_range, ":center_no", centers_begin, centers_end),
+       (party_is_active, ":center_no"), #TLD
        (store_faction_of_party, ":center_faction", ":center_no"),
        (this_or_next|party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
        (eq, ":center_faction", "$players_kingdom"),
@@ -8650,6 +8681,7 @@ scripts = [
         #(troop_slot_ge, ":troop_no", slot_troop_is_prisoner, 1),
         (troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+          (party_is_active, ":center_no"), #TLD
           (party_count_prisoners_of_type, ":num_prisoners", ":center_no", ":troop_no"),
           (gt, ":num_prisoners", 0),
           (assign, ":found", 1),
@@ -10078,6 +10110,7 @@ scripts = [
       (assign, ":unclaimed_centers", 0),
       (assign, reg1, -1),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":faction_no", ":center_no"),
         (eq, ":faction_no", "fac_player_supporters_faction"),
         (party_slot_eq, ":center_no", slot_town_claimed_by_player, 0),
@@ -10130,6 +10163,7 @@ scripts = [
       (assign, ":result", -1),
       (assign, ":center_count", 0),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (eq, ":result", -1),
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (val_add, ":center_count", 1),
@@ -10149,6 +10183,7 @@ scripts = [
 
       (assign, ":num_centers", 0),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1),
         (val_add, ":num_centers", 1),
@@ -10167,6 +10202,7 @@ scripts = [
       (store_random_in_range, ":random_center", 0, ":num_centers"),
       (assign, ":result", -1),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (eq, ":result", -1),
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1),
@@ -10199,6 +10235,7 @@ scripts = [
 
       (assign, ":num_centers", 0),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (neg|party_slot_eq, ":center_no", slot_party_type, spt_castle),
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (neq, ":center_no", ":except_center_no"),
@@ -10209,6 +10246,7 @@ scripts = [
       (store_random_in_range, ":random_center", 0, ":num_centers"),
       (assign, ":end_cond", centers_end),
       (try_for_range, ":center_no", centers_begin, ":end_cond"),
+        (party_is_active, ":center_no"), #TLD
         (neg|party_slot_eq, ":center_no", slot_party_type, spt_castle),
         (party_slot_eq, ":center_no", slot_town_lord, ":troop_no"),
         (neq, ":center_no", ":except_center_no"),
@@ -12576,6 +12614,7 @@ scripts = [
     (store_script_param, ":center_no", 2),
     (assign, ":num_center_points", 1),
     (try_for_range, ":cur_center", centers_begin, centers_end),
+      (party_is_active, ":cur_center"), #TLD
       (assign, ":center_owned", 0),
       (try_begin),
         (eq, ":troop_no", "trp_player"),
@@ -12619,6 +12658,7 @@ scripts = [
   # script_assign_lords_to_empty_centers
   ("assign_lords_to_empty_centers",
    [(try_for_range, ":cur_center", centers_begin, centers_end),
+      (party_is_active, ":cur_center"), #TLD
       (party_get_slot, ":center_lord", ":cur_center", slot_town_lord),
       (this_or_next|eq, ":center_lord", stl_unassigned),
       (eq, ":center_lord", stl_rejected_by_player),
@@ -12804,6 +12844,7 @@ scripts = [
         (call_script, "script_set_player_relation_with_faction", ":other_kingdom", ":other_kingdom_reln"),
       (try_end),
       (try_for_range, ":cur_center", centers_begin, centers_end),
+        (party_is_active, ":cur_center"), #TLD
         #Give center to kingdom if player is the owner
         (party_slot_eq, ":cur_center", slot_town_lord, "trp_player"),
         (party_set_faction, ":cur_center", ":faction_no"),
@@ -12840,11 +12881,13 @@ scripts = [
       (try_begin),
         (neq, ":give_back_fiefs", 0),
         (try_for_range, ":cur_center", centers_begin, centers_end),
+          (party_is_active, ":cur_center"), #TLD
           (party_slot_eq, ":cur_center", slot_town_lord, "trp_player"),
           (call_script, "script_give_center_to_faction", ":cur_center", ":old_kingdom"),
         (try_end),
       (else_try),
         (try_for_range, ":cur_center", centers_begin, centers_end),
+          (party_is_active, ":cur_center"), #TLD
           (party_slot_eq, ":cur_center", slot_town_lord, "trp_player"),
           (call_script, "script_give_center_to_faction", ":cur_center", "fac_player_supporters_faction"),
         (try_end),
@@ -12877,6 +12920,7 @@ scripts = [
       (try_begin),
         (assign, ":has_center", 0),
         (try_for_range, ":cur_center", centers_begin, centers_end),
+          (party_is_active, ":cur_center"), #TLD
           (store_faction_of_party, ":cur_center_faction", ":cur_center"),
           (eq, ":cur_center_faction", "fac_player_supporters_faction"),
           (assign, ":has_center", 1),
@@ -13332,6 +13376,7 @@ scripts = [
        (assign, ":num_centers", 0),
        (str_store_string, s8, "@nowhere"),
        (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
+         (party_is_active, ":cur_center"), #TLD
          (store_faction_of_party, ":center_faction", ":cur_center"),
          (eq, ":center_faction", ":faction_no"),
          (try_begin),
@@ -13489,8 +13534,9 @@ scripts = [
          (assign, reg4, 1),
        (try_end),
        (assign, ":num_centers", 0),
-       (str_store_string, s58, "@nowhere"),
+       (str_store_string, s58, "@no holdings"),
        (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
+         (party_is_active, ":cur_center"), #TLD
          (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
          (try_begin),
            (eq, ":num_centers", 0),
@@ -13580,13 +13626,14 @@ scripts = [
        (else_try),
          (str_store_string, s51, "@{s50}"),
        (try_end),
-       (str_store_string, s2, "@{s51} belongs to {s1} of {s2}.^"),
+       (str_store_string, s2, "@{s50} belongs to {s1} of {s2}.^"), #TLD: was s51
      (else_try),
        (str_clear, s2),
      (try_end),
      (try_begin),
        (is_between, ":center_no", villages_begin, villages_end),
      (else_try),
+       (eq, 0, 1), #TLD: no villages
        (assign, ":num_villages", 0),
        (try_for_range_backwards, ":village_no", villages_begin, villages_end),
          (party_slot_eq, ":village_no", slot_village_bound_center, ":center_no"),
@@ -13612,7 +13659,8 @@ scripts = [
        (try_end),
      (try_end),
      (call_script, "script_get_prosperity_text_to_s50", ":center_no"),
-     (add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
+     (add_party_note_from_sreg, ":center_no", 0, "@{s2}", 0), #TLD: no prosperity
+     #(add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
      (add_party_note_tableau_mesh, ":center_no", "tableau_center_note_mesh"),
      ]),
       
@@ -13642,6 +13690,7 @@ scripts = [
         (call_script, "script_update_troop_notes", ":troop_no"),
       (try_end),
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (call_script, "script_update_center_notes", ":center_no"),
       (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -15017,6 +15066,7 @@ scripts = [
 
      (assign, ":num_center_points", 0),
      (try_for_range, ":cur_center", centers_begin, centers_end),
+       (party_is_active, ":cur_center"), #TLD
        (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
        (try_begin),
          (party_slot_eq, ":cur_center", slot_party_type, spt_town),

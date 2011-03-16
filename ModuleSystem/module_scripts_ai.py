@@ -215,7 +215,8 @@ ai_scripts = [
          (assign, ":best_besiege_center", -1),
          (assign, ":best_besiege_center_score", 0),
          (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
-           #MV reminder: code here to not attack disabled centers of defeated factions?
+           #MV reminder: code here to not attack disabled centers
+           (party_is_active, ":enemy_walled_center"),
            
            #MV: make sure the center is in the same theater, by checking if its owner is active in that theater
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
@@ -436,6 +437,7 @@ ai_scripts = [
          (assign, ":best_attack_army_center", -1),
          (assign, ":best_attack_army_score", 0),
          (try_for_range, ":center_no", centers_begin, centers_end),
+           (party_is_active, ":center_no"), #TLD
            (store_faction_of_party, ":center_faction", ":center_no"),
            #TLD: factions helping allies
            (store_relation, ":fac_rln", ":center_faction", ":faction_no"),
@@ -708,6 +710,7 @@ ai_scripts = [
       (assign, ":num_towns", 0),
 
       (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":faction_no"),
         (try_begin),
@@ -1565,6 +1568,7 @@ ai_scripts = [
           (assign, ":best_besiege_center", -1),
           (assign, ":best_besiege_center_score", 0),
           (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
+            (party_is_active, ":enemy_walled_center"), #TLD
             (party_get_slot, ":other_besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
             (assign, ":besieger_own_faction", 0),
             (try_begin),
@@ -1645,6 +1649,7 @@ ai_scripts = [
           (assign, ":best_patrol_score", 0),
           (assign, ":best_patrol_target", -1),
           (try_for_range, ":center_no", centers_begin, centers_end), #find closest center that has spotted enemies.
+            (party_is_active, ":center_no"), #TLD
             (store_faction_of_party, ":center_faction", ":center_no"),
             (eq, ":center_faction", ":faction_no"),
             (store_distance_to_party_from_party, ":distance", ":party_no", ":center_no"),
@@ -1990,6 +1995,7 @@ ai_scripts = [
         (assign, ":dist", 1000000000),
         (assign, reg0, -1),
         (try_for_range, ":cur_center", centers_begin, centers_end),
+            (party_is_active, ":cur_center"), #TLD
             (store_faction_of_party, ":cur_faction", ":cur_center"),
             (store_relation, ":rel", ":cur_faction", ":faction"),
             (lt, ":rel", 0),
@@ -2314,10 +2320,10 @@ ai_scripts = [
                   (display_log_message, "@The hosts of {s2} march to a new area of operations."),
                 (try_end),
               (else_try),
-                # ERROR (or victory?)
+                # ERROR (or victory!)
                 (assign, ":continue_loop", 0), # exit loop
-                (str_store_faction_name, s2, ":faction"),
-                (display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
+                #(str_store_faction_name, s2, ":faction"),
+                #(display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
               (try_end),
             (try_end), # try_for_range, ":unused"
             
@@ -2328,7 +2334,7 @@ ai_scripts = [
  
 # script_find_next_theater
 # Input: faction, current theater
-# Output: reg0 = theatre_SE, theatre_SW, theatre_C, theatre_N or -1 for error
+# Output: reg0 = theater_SE, theater_SW, theater_C, theater_N or -1 for error
 # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
   ("find_next_theater",
    [
@@ -2338,44 +2344,152 @@ ai_scripts = [
      (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
      #hardcoded theater sequences
      (try_begin),
-       (eq, ":home_theater", theatre_SE), # SE-SW-C-N
+       (eq, ":home_theater", theater_SE), # SE-SW-C-N
        (try_begin),
-         (eq, ":active_theater", theatre_SE), (assign, ":next_theater", theatre_SW),
+         (eq, ":active_theater", theater_SE), (assign, ":next_theater", theater_SW),
        (else_try),
-         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_C),
+         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_C),
        (else_try),
-         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_N),
+         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_N),
        (try_end),
      (else_try),
-       (eq, ":home_theater", theatre_SW), # SW-SE-C-N
+       (eq, ":home_theater", theater_SW), # SW-SE-C-N
        (try_begin),
-         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_SE),
+         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_SE),
        (else_try),
-         (eq, ":active_theater", theatre_SE), (assign, ":next_theater", theatre_C),
+         (eq, ":active_theater", theater_SE), (assign, ":next_theater", theater_C),
        (else_try),
-         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_N),
+         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_N),
        (try_end),
      (else_try),
-       (eq, ":home_theater", theatre_C), # C-SW-N-SE
+       (eq, ":home_theater", theater_C), # C-SW-N-SE
        (try_begin),
-         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_SW),
+         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_SW),
        (else_try),
-         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_N),
+         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_N),
        (else_try),
-         (eq, ":active_theater", theatre_N), (assign, ":next_theater", theatre_SE),
+         (eq, ":active_theater", theater_N), (assign, ":next_theater", theater_SE),
        (try_end),
      (else_try),
-       (eq, ":home_theater", theatre_N), # N-C-SW-SE
+       (eq, ":home_theater", theater_N), # N-C-SW-SE
        (try_begin),
-         (eq, ":active_theater", theatre_N), (assign, ":next_theater", theatre_C),
+         (eq, ":active_theater", theater_N), (assign, ":next_theater", theater_C),
        (else_try),
-         (eq, ":active_theater", theatre_C), (assign, ":next_theater", theatre_SW),
+         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_SW),
        (else_try),
-         (eq, ":active_theater", theatre_SW), (assign, ":next_theater", theatre_SE),
+         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_SE),
        (try_end),
      (try_end),
      
      (assign, reg0, ":next_theater"),  
- ]),
+   ]),
+ 
+
+# script_get_advcamp_pos
+# Gets a position of the advance camp in another theater (looks up faction active theater)
+# Input: faction
+# Output: pos1
+# Uses pos2 and pos3
+  ("get_advcamp_pos",
+   [
+     (store_script_param, ":faction", 1),
+     
+     (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
+     (faction_get_slot, ":capital", ":faction", slot_faction_capital),
+     
+     (assign, ":center_party", "p_town_east_emnet"), # some default
+     (try_begin),
+         (eq, ":active_theater", theater_N), (assign, ":center_party", "p_theater_N_center"),
+     (else_try),
+         (eq, ":active_theater", theater_C), (assign, ":center_party", "p_theater_C_center"),
+     (else_try),
+         (eq, ":active_theater", theater_SW), (assign, ":center_party", "p_theater_SW_center"),
+     (else_try),
+         (eq, ":active_theater", theater_SE), (assign, ":center_party", "p_theater_SE_center"),
+     (try_end),
+     
+     (party_get_position, pos2, ":capital"),
+     (party_get_position, pos3, ":center_party"),     
+     
+     # Get a position at 80% of the way from the capital to the theater center point
+     (set_fixed_point_multiplier, 100),
+     (position_get_x, ":capital_xpos", pos2),
+     (position_get_y, ":capital_ypos", pos2),
+     (position_get_x, ":theater_xpos", pos3),
+     (position_get_y, ":theater_ypos", pos3),
+     
+     # get the distance
+     (store_sub, ":xdiff", ":theater_xpos", ":capital_xpos"),
+     (store_sub, ":ydiff", ":theater_ypos", ":capital_ypos"),
+     (store_mul, ":xdiffsquared", ":xdiff", ":xdiff"),
+     (store_mul, ":ydiffsquared", ":ydiff", ":ydiff"),
+     (store_add, ":whole_distance", ":xdiffsquared", ":ydiffsquared"),
+     (store_sqrt, ":whole_distance", ":whole_distance"),
+# (assign, reg1, ":xdiff"),
+# (assign, reg2, ":ydiff"),
+# (assign, reg3, ":whole_distance"),
+# (display_message, "@DEBUG: diff {reg1}, {reg2} distance {reg3}."),
+     
+     # Calculate 20% from theater center and clamp it at 5-35 clicks (note: non-optimal code for readability)
+     (assign, ":distance", ":whole_distance"),
+     (val_mul, ":distance", 2), 
+     (val_div, ":distance", 10),
+     (val_clamp, ":distance", 5000, 35001),
+     
+     # Get the new scaled x,y differences
+     (val_mul, ":xdiff", ":distance"),
+     (val_div, ":xdiff", ":whole_distance"),
+     (val_mul, ":ydiff", ":distance"),
+     (val_div, ":ydiff", ":whole_distance"),
+
+     # finally.. the ideal position
+     (store_sub, ":ideal_xpos", ":theater_xpos", ":xdiff"),
+     (store_sub, ":ideal_ypos", ":theater_ypos", ":ydiff"),
+     
+     # now find a suitable random position around the ideal point     
+     (position_set_x, pos2, ":ideal_xpos"),
+     (position_set_y, pos2, ":ideal_ypos"),
+     #(set_fixed_point_multiplier, 1), #doesn't work!
+     
+     (assign, ":radius", 5),
+     (assign, ":continue", 1),
+     (try_for_range, ":tries", 0, 100),
+       (eq, ":continue", 1),
+       (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
+       (assign, ":too_close", 0),
+       # TODO here: check for suitable terrain?
+       (try_for_range, ":cur_center", centers_begin, centers_end),
+         (eq, ":too_close", 0),
+         (party_is_active, ":cur_center"), #TLD
+         (store_faction_of_party, ":cur_faction", ":cur_center"),
+         (store_relation, ":rel", ":cur_faction", ":faction"),
+         (party_get_position, pos3, ":cur_center"),
+         (get_distance_between_positions, ":cur_dist", pos1, pos3),
+# (try_begin),
+# (eq, ":faction", "fac_mordor"),
+# (assign, reg3, ":cur_dist"),
+# (str_store_party_name, s2, ":cur_center"),
+# (display_message, "@DEBUG: camp distance from {s2}: {reg3}."),
+# (try_end),
+         (try_begin),
+           (lt, ":cur_dist", 1000), #at least 10 clicks from enemy centers
+           (this_or_next|lt, ":rel", 0),
+           (lt, ":cur_dist", 500), #at least 5 clicks from friendly centers
+           (assign, ":too_close", 1),
+         (try_end),
+       (try_end),
+       (try_begin),
+         (eq, ":too_close", 0),
+         (assign, ":continue", 0),
+       (else_try), # increase radius for every 5 unsuccessful tries
+         (store_mod, ":tries_mod", ":tries", 5),
+         (eq, ":tries_mod", 4),
+         (val_add, ":radius", 1),
+       (try_end),
+     (try_end),
+     
+     # out comes pos1
+
+   ]),
 
   ]

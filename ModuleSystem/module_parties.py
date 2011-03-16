@@ -166,7 +166,7 @@ parties = [
  ("advcamp_harad", "Harad Advance Camp", icon_haradcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
  ("advcamp_rhun", "Rhun Advance Camp", icon_nomadcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
  ("advcamp_khand", "Khand Advance Camp", icon_nomadcamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
- ("advcamp_umbar", "Umbar Advance Camp", icon_corsaircamp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],175),
+ ("advcamp_umbar", "Umbar Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],175),
  ("advcamp_lorien", "Lorien Advance Camp", icon_tree|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
  ("advcamp_imladris", "Imladris Advance Camp", icon_camp|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
  ("advcamp_woodelf", "Mirkwood Advance Camp", icon_tree|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral, 0, ai_bhvr_hold,0,(0,0),[],170),
@@ -198,6 +198,13 @@ parties = [
   ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
   ("battlefields","battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
   ("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+  
+# central positions in theaters used to calculate advance camp positions
+  ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.194717,20.500275),[]), # West Osgiliath
+  ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.1,-28.5),[]), # East Emnet
+  ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[]), # Cerin Amroth
+  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[]), # Thranduil's Halls
+
 
   ("training_ground"  ,"Training_Ground", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.189980,-6.471909),[]),
   ("training_ground_1","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(39.999908,62.778122),[],100),

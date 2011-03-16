@@ -195,6 +195,7 @@ simple_triggers = [
 
 #Party AI: pruning some of the prisoners in each center (once a week)
 (24*7,[(try_for_range, ":center_no", centers_begin, centers_end),
+         (party_is_active, ":center_no"), #TLD
          (party_get_num_prisoner_stacks, ":num_prisoner_stacks",":center_no"),
          (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
            (party_prisoner_stack_get_troop_id, ":stack_troop",":center_no",":stack_no"),
@@ -222,9 +223,10 @@ simple_triggers = [
         (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men up to lord-specific limit
       (try_end),
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+         (party_is_active, ":center_no"), #TLD
          (neg|party_slot_eq, ":center_no", slot_town_lord, "trp_player"), #center does not belong to player.
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
-         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
+         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
          # (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
          # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
          # (assign, ":hiring_budget", ":cur_wealth"),
@@ -247,6 +249,7 @@ simple_triggers = [
   #Converging center prosperity to ideal prosperity once in every 15 days
   (24*15,
    [(try_for_range, ":center_no", centers_begin, centers_end),
+      (party_is_active, ":center_no"), #TLD
       (call_script, "script_get_center_ideal_prosperity", ":center_no"),
       (assign, ":ideal_prosperity", reg0),
       (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
@@ -298,6 +301,7 @@ simple_triggers = [
        (try_end),
        
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+         (party_is_active, ":center_no"), #TLD
          (store_random_in_range, ":rand", 0, 100),
          (lt, ":rand", 10),
          (party_get_slot, ":center_lord", ":center_no", slot_town_lord),
@@ -331,9 +335,10 @@ simple_triggers = [
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
          (try_for_range, ":center_no", centers_begin, centers_end),
+           (party_is_active, ":center_no"),
            (store_faction_of_party, ":center_faction", ":center_no"),
            (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
-           (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
+           (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
            (val_add, ":strength", ":strength_income"),
@@ -784,6 +789,7 @@ simple_triggers = [
    [   (call_script, "script_randomly_make_prisoner_heroes_escape_from_party", "p_main_party", 50),
        (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
 ##         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
+         (party_is_active, ":center_no"), #TLD
          (assign, ":chance", 30),
          (try_begin),
            (party_slot_eq, ":center_no", slot_center_has_prisoner_tower, 1),
@@ -1133,6 +1139,7 @@ simple_triggers = [
              (eq, ":continue", 1),
              (assign, ":done", 0),
              (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+               (party_is_active, ":cur_center"), #TLD
                (eq, ":done", 0),
                (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
                (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -1176,6 +1183,7 @@ simple_triggers = [
      (try_end),
      (eq, "$g_player_is_captive", 0),
      (try_for_range, ":cur_center", centers_begin, centers_end),
+       (party_is_active, ":cur_center"), #TLD
        (store_faction_of_party, ":cur_faction", ":cur_center"),
        (store_relation, ":reln", ":cur_faction", "fac_player_supporters_faction"),
        (lt, ":reln", 0),
@@ -1446,6 +1454,7 @@ simple_triggers = [
   # Setting random walker types
   (36,
    [(try_for_range, ":center_no", centers_begin, centers_end),
+      (party_is_active, ":center_no"), #TLD
       (this_or_next|party_slot_eq, ":center_no", slot_party_type, spt_town),
       (             party_slot_eq, ":center_no", slot_party_type, spt_village),
       (call_script, "script_center_remove_walker_type_from_walkers", ":center_no", walkert_needs_money),
@@ -1463,6 +1472,7 @@ simple_triggers = [
   # Checking center upgrades
   (12,
    [(try_for_range, ":center_no", centers_begin, centers_end),
+      (party_is_active, ":center_no"), #TLD
       (party_get_slot, ":cur_improvement", ":center_no", slot_center_current_improvement),
       (gt, ":cur_improvement", 0),
       (party_get_slot, ":cur_improvement_end_time", ":center_no", slot_center_improvement_end_hour),

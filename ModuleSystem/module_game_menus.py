@@ -1547,6 +1547,7 @@ game_menus = [
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
    ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      (assign, ":root_defeated_party", "p_town_hornburg"),
      (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
@@ -1642,16 +1643,16 @@ game_menus = [
       
       # theater string
       (try_begin),
-        (eq, ":faction_theater", theatre_SE),
+        (eq, ":faction_theater", theater_SE),
         (str_store_string, s10, "@SE"),
       (else_try),
-        (eq, ":faction_theater", theatre_SW),
+        (eq, ":faction_theater", theater_SW),
         (str_store_string, s10, "@SW"),
       (else_try),
-        (eq, ":faction_theater", theatre_C),
+        (eq, ":faction_theater", theater_C),
         (str_store_string, s10, "@C"),
       (else_try),
-        (eq, ":faction_theater", theatre_N),
+        (eq, ":faction_theater", theater_N),
         (str_store_string, s10, "@N"),
       (else_try),
         (str_store_string, s10, "@INVALID"),
@@ -1720,16 +1721,16 @@ game_menus = [
       
       # theater string
       (try_begin),
-        (eq, ":faction_theater", theatre_SE),
+        (eq, ":faction_theater", theater_SE),
         (str_store_string, s10, "@SE"),
       (else_try),
-        (eq, ":faction_theater", theatre_SW),
+        (eq, ":faction_theater", theater_SW),
         (str_store_string, s10, "@SW"),
       (else_try),
-        (eq, ":faction_theater", theatre_C),
+        (eq, ":faction_theater", theater_C),
         (str_store_string, s10, "@C"),
       (else_try),
-        (eq, ":faction_theater", theatre_N),
+        (eq, ":faction_theater", theater_N),
         (str_store_string, s10, "@N"),
       (else_try),
         (str_store_string, s10, "@INVALID"),
@@ -1836,6 +1837,7 @@ game_menus = [
       (str_store_faction_name, s4, ":cur_kingdom"),
       (str_store_string, s1, "@Daily strength income and garrisons for {s4}"),
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":cur_kingdom"),
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
@@ -1862,6 +1864,95 @@ game_menus = [
 	    (try_end),
       ]),
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+  ),
+  
+  ("mvtest_advcamps",0,
+   "Test advance camps",
+   "none",
+   [], [
+    ("spawnSW",[],"Spawn SW advance camps", [
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_SW),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SW),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (display_message, "@SW advance camps spawned around East Emnet!", 0x30FFC8),
+    ]),
+    ("spawnSE",[],"Spawn SE advance camps", [
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_SE),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SE),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (display_message, "@SE advance camps spawned around West Osgiliath!", 0x30FFC8),
+    ]),
+    ("spawnC",[],"Spawn C advance camps", [
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_C),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_C),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (display_message, "@C advance camps spawned around Cerin Amroth!", 0x30FFC8),
+    ]),
+    ("spawnN",[],"Spawn N advance camps", [
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_N),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_N),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (display_message, "@N advance camps spawned around Thranduil's Halls!", 0x30FFC8),
+    ]),
+    ("disable",[],"Disable advance camps", [
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        
+        (faction_get_slot, ":home_theater", ":faction_no", slot_faction_home_theater),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, ":home_theater"),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (disable_party, ":adv_camp"),
+      (try_end),
+      (call_script, "script_update_active_theaters"),
+      (display_message, "@Advance camps disabled, theaters restored!", 0x30FFC8),
+    ]),
+    ("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
 ## MadVader test end
@@ -1926,6 +2017,7 @@ game_menus = [
 		#(troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
 		(assign,":end",walled_centers_end),#breaking control flow
 		(try_for_range,":center",walled_centers_begin,":end"),
+            (party_is_active, ":center"), #TLD
 			(party_get_slot,":owner",":center",slot_town_lord),
 			(eq,":owner",":leader"),
 			(assign,"$capturer_party",":center"),#prison for player
