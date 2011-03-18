@@ -122,9 +122,10 @@ slot_faction_rumors_end             = 157
 
 # TLD War System begin(matrini)
 slot_faction_side          = 158  # side_good, side_eye, or side_hand
-slot_faction_home_theater  = 159  # theater_SW  theater_SE theater_C,  theater_N
-slot_faction_active_theater= 160  # theater_SW  theater_SE theater_C,  theater_N #MV
+slot_faction_home_theater  = 159  # theater_SW, theater_SE, theater_C, theater_N
+slot_faction_active_theater= 160  # theater_SW, theater_SE, theater_C, theater_N #MV
 slot_faction_advance_camp  = 161  # MV: advance camp party
+slot_faction_advcamp_timer = 162  # MV: used to time establishing an advance camp (3 days)
 # TLD War System end (matrini)
 
 _= "itm_warg_1b"
@@ -367,11 +368,19 @@ slot_town_reinforcements_a        = 253
 slot_town_reinforcements_b        = 254
 slot_town_reinforcements_c        = 255
 
-#MV for TLD, these three initialized from center_list
+#MV for TLD, next three initialized from center_list
 slot_center_strength_income       = 256 # regular faction strength gain from center
 slot_center_garrison_limit        = 257 # max number of troops in garrison, used to check if garrison needs reinforcements
 slot_center_destroy_on_capture    = 258 # 0 - leave it alone as in Native; 1 - disable it (RAZE IT!)
-slot_center_destroyed             = 259 # 0 - normal, 1 - destroyed/disabled, skip it in iterations
+slot_center_theater               = 259 # theater_SW, theater_SE, theater_C, theater_N - initialized on start from faction theater
+slot_center_destroyed             = 260 # 0 - normal, 1 - destroyed/disabled, skip it in iterations (may be redundant since destroyed parties are disabled and can be checked with party_is_active)
+
+#for holding ws_party_spawns_list values
+slot_center_spawn_scouts          = 261
+slot_center_spawn_raiders         = 262
+slot_center_spawn_patrol          = 263
+slot_center_spawn_caravan         = 264
+
 
 #slot_party_type values
 ##spt_caravan            = 1
@@ -1413,6 +1422,10 @@ ws_party_spawns_list = [
 	("p_town_woodelf_camp"    ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
 	("p_town_woodelf_west_camp","pt_woodelf_scouts",      "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
 
+	("p_town_woodsmen_village","pt_beorn_scouts",         -1,                      -1,                    -1),
+	("p_town_beorning_village","pt_beorn_scouts",         -1,                      -1,                    -1),
+	("p_town_beorn_house"     ,"pt_beorn_scouts",         -1,                      -1,                    -1),
+
 	("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
 	("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
 	("p_town_erebor"          ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
@@ -1431,6 +1444,8 @@ ws_party_spawns_list = [
 	("p_town_north_rhun_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
 	("p_town_rhun_south_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
 	("p_town_rhun_north_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+
+	("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
  
 	("p_town_gundabad_camp"            ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
 	("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
@@ -1438,7 +1453,25 @@ ws_party_spawns_list = [
 	("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
 	("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
 	("p_town_gundabad_mirkwood_outpost","pt_gundabad_scouts","pt_gundabad_raiders","pt_gundabad_raiders",  -1),
-
+#Advance camps   
+    ("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+	("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+	("p_advcamp_isengard"     ,"pt_isengard_scouts",      "pt_isengard_scouts_b",  -1,                    "pt_isengard_caravan"),
+	("p_advcamp_mordor"       ,"pt_mordor_scouts",        "pt_mordor_war_party",   -1,                    "pt_mordor_caravan"),
+	("p_advcamp_harad"        ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
+	("p_advcamp_rhun"         ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+	("p_advcamp_khand"        ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
+	("p_advcamp_umbar"        ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
+    ("p_advcamp_lorien"       ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
+	("p_advcamp_imladris"     ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
+	("p_advcamp_woodelf"      ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+	("p_advcamp_moria"        ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
+	("p_advcamp_guldur"       ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
+	("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   "pt_gundabad_raiders", -1),
+	("p_advcamp_dale"         ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
+	("p_advcamp_dwarf"        ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+	("p_advcamp_dunland"      ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
+	("p_advcamp_beorn"        ,"pt_beorn_scouts",         -1,                      -1,                    -1),
 	
 ]
 

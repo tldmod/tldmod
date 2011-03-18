@@ -1201,6 +1201,13 @@ scripts = [
 		
       (try_end),
 
+# Centers spawns init from ws_party_spawns_list in module_constants.py      
+        ]+[
+        (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_scouts,  ws_party_spawns_list[x][1]) for x in range(len(ws_party_spawns_list)) ]+[
+        (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_raiders, ws_party_spawns_list[x][2]) for x in range(len(ws_party_spawns_list)) ]+[
+        (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_patrol,  ws_party_spawns_list[x][3]) for x in range(len(ws_party_spawns_list)) ]+[
+        (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_caravan, ws_party_spawns_list[x][4]) for x in range(len(ws_party_spawns_list)) ]+[
+      
 # disable some evil centers at start
 ]+[   (disable_party, centers_disabled_at_start[x]) for x in range(len(centers_disabled_at_start)) ]+[
 
@@ -1222,13 +1229,16 @@ scripts = [
       (try_end),
 	  
 	  (try_for_range, ":town_no", centers_begin, centers_end),
-	  	(store_faction_of_party, ":fac", ":town_no"),
-		(faction_get_slot, ":tmp_a",":fac", slot_faction_reinforcements_a),
-		(faction_get_slot, ":tmp_b",":fac", slot_faction_reinforcements_b),
-		(faction_get_slot, ":tmp_c",":fac", slot_faction_reinforcements_c),
+	  	(store_faction_of_party, ":faction", ":town_no"),
+		(faction_get_slot, ":tmp_a",":faction", slot_faction_reinforcements_a),
+		(faction_get_slot, ":tmp_b",":faction", slot_faction_reinforcements_b),
+		(faction_get_slot, ":tmp_c",":faction", slot_faction_reinforcements_c),
 		(party_set_slot, ":town_no", slot_town_reinforcements_a, ":tmp_a"),
 		(party_set_slot, ":town_no", slot_town_reinforcements_b, ":tmp_b"),
 		(party_set_slot, ":town_no", slot_town_reinforcements_c, ":tmp_c"),
+        # set center theater according to faction theater - never changes except for advance camps
+        (faction_get_slot, ":theater", ":faction", slot_faction_home_theater),
+		(party_set_slot, ":town_no", slot_center_theater, ":theater"),
       (try_end),
 	  
 	  ]+[
@@ -1904,18 +1914,7 @@ scripts = [
                (call_script, "script_lift_siege", ":root_defeated_party", 0),
                (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
                  (party_slot_eq, ":root_defeated_party", slot_center_destroy_on_capture, 1),
-                 (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
-                 # disable and replace with ruins
-                 (set_spawn_radius, 0),
-                 (spawn_around_party, ":root_defeated_party", "pt_ruins"),
-                 (assign, ":ruin_party", reg0),
-                 #(party_get_icon, ":map_icon", ":root_defeated_party"),
-                 #(party_set_icon, ":ruin_party", ":map_icon"),
-                 (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
-                 (str_store_party_name, s1, ":root_defeated_party"),
-                 (party_set_name, ":ruin_party", "@{s1} ruins"),
-                 (party_set_faction, ":root_defeated_party", "fac_neutral"), #purely defensive
-                 (disable_party, ":root_defeated_party"),
+                 (call_script, "script_destroy_center", ":root_defeated_party"),
                (else_try),
                  (call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
                  (try_begin),
@@ -4390,12 +4389,15 @@ scripts = [
     [
       (store_script_param, ":faction_no", 1),
       (store_script_param, ":troop_no", 2),
+      #This script is used only to spawn lords, so make sure they spawn in their home theater
+      (faction_get_slot, ":home_theater", ":faction_no", slot_faction_home_theater), #TLD
       (assign, ":result", -1),
       (assign, ":no_centers", 0),
       (try_for_range,":cur_center", walled_centers_begin, walled_centers_end),
         (party_is_active, ":cur_center"), #TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
+        (party_slot_eq, ":cur_center", slot_center_theater, ":home_theater"), #TLD
         (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
         (val_add, ":no_centers", 1),
         (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
@@ -4408,6 +4410,7 @@ scripts = [
         (eq, ":result", -1),
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (eq, ":cur_faction", ":faction_no"),
+        (party_slot_eq, ":cur_center", slot_center_theater, ":home_theater"), #TLD
         (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
         (val_sub, ":random_center", 1),
         (try_begin),
@@ -4430,6 +4433,45 @@ scripts = [
       (store_script_param, ":faction_no", 1),
       (store_script_param, ":preferred_center_no", 2),
       (assign, ":result", -1),
+
+#TLD begin
+      (faction_get_slot, ":faction_theater", ":faction_no", slot_faction_active_theater),
+      # TLD: First try to find a center in the active theater, if that fails, go anywhere as normal
+      # Note: this script is only used when lords decide where to go next
+      # First count num matching spawn points
+      (assign, ":no_centers", 0),
+      (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
+        (store_faction_of_party, ":cur_faction", ":cur_center"),
+        (eq, ":cur_faction", ":faction_no"),
+        (party_slot_eq, ":cur_center", slot_center_theater, ":faction_theater"), #TLD
+        (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
+        (val_add, ":no_centers", 1),
+        (try_begin),
+          (eq, ":cur_center", ":preferred_center_no"),
+          (val_add, ":no_centers", 99),
+        (try_end),
+      (try_end),
+      (gt, ":no_centers", 0), #Fail if there are no centers
+      (store_random_in_range, ":random_center", 0, ":no_centers"),
+      (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+        (party_is_active, ":cur_center"), #TLD
+        (eq, ":result", -1),
+        (store_faction_of_party, ":cur_faction", ":cur_center"),
+        (eq, ":cur_faction", ":faction_no"),
+        (party_slot_eq, ":cur_center", slot_center_theater, ":faction_theater"), #TLD
+        (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
+        (val_sub, ":random_center", 1),
+        (try_begin),
+          (eq, ":cur_center", ":preferred_center_no"),
+          (val_sub, ":random_center", 99),
+        (try_end),
+        (lt, ":random_center", 0),
+        (assign, ":result", ":cur_center"),
+      (try_end),
+      
+#TLD end
+
       # First count num matching spawn points
       (assign, ":no_centers", 0),
       (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
@@ -6775,6 +6817,33 @@ scripts = [
       (faction_get_slot, ":value", ":faction_no", slot_faction_castle_guard_troop),
       (party_set_slot, ":center_no", slot_town_castle_guard_troop, ":value"),
       
+      # Change center spawns to be the same as for faction advance camps, only if there was such a spawn before
+      (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+      (try_begin),
+        (party_get_slot, ":old_value", ":center_no", slot_center_spawn_scouts),
+        (gt, ":old_value", 0),
+        (party_get_slot, ":value", ":adv_camp", slot_center_spawn_scouts),
+        (party_set_slot, ":center_no", slot_center_spawn_scouts, ":value"),
+      (try_end),
+      (try_begin),
+        (party_get_slot, ":old_value", ":center_no", slot_center_spawn_raiders),
+        (gt, ":old_value", 0),
+        (party_get_slot, ":value", ":adv_camp", slot_center_spawn_raiders),
+        (party_set_slot, ":center_no", slot_center_spawn_raiders, ":value"),
+      (try_end),
+      (try_begin),
+        (party_get_slot, ":old_value", ":center_no", slot_center_spawn_patrol),
+        (gt, ":old_value", 0),
+        (party_get_slot, ":value", ":adv_camp", slot_center_spawn_patrol),
+        (party_set_slot, ":center_no", slot_center_spawn_patrol, ":value"),
+      (try_end),
+      (try_begin),
+        (party_get_slot, ":old_value", ":center_no", slot_center_spawn_caravan),
+        (gt, ":old_value", 0),
+        (party_get_slot, ":value", ":adv_camp", slot_center_spawn_caravan),
+        (party_set_slot, ":center_no", slot_center_spawn_caravan, ":value"),
+      (try_end),
+      
       #TLD: old faction loses faction strength
       (faction_get_slot,":strength",":old_faction",slot_faction_strength_tmp),
       (val_sub, ":strength", ws_center_vp),
@@ -7347,6 +7416,19 @@ scripts = [
           (try_end),
         (try_end),
       (try_end),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # (store_troop_faction, ":faction_no", ":troop_no"),
+  # (this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_mordor"),
+  # (assign, reg1, ":party_size"),
+  # (assign, reg2, ":ideal_size"),
+  # (str_store_troop_name, s1, ":troop_no"),
+  # (party_get_num_companions, reg3, ":party_no"),
+  # (display_message, "@DEBUG: {s1} reinforces, current:{reg1} ideal:{reg2} new:{reg3}.", 0x30FFC8),
+# (try_end),
+#MV test code end
   ]),
 
   # script_find_random_nearby_friendly_town
@@ -12839,7 +12921,7 @@ scripts = [
           (store_relation, ":other_kingdom_reln", ":other_kingdom", ":faction_no"),
         (else_try),
           (store_relation, ":other_kingdom_reln", "fac_player_supporters_faction", ":other_kingdom"),
-          (val_max, ":other_kingdom_reln", 12),
+          #(val_max, ":other_kingdom_reln", 12), #TLD
         (try_end),
         (call_script, "script_set_player_relation_with_faction", ":other_kingdom", ":other_kingdom_reln"),
       (try_end),
@@ -13659,6 +13741,10 @@ scripts = [
        (try_end),
      (try_end),
      (call_script, "script_get_prosperity_text_to_s50", ":center_no"),
+     (try_begin), #TLD: if party is disabled, clear all text so there will be no wiki entry
+       (neg|party_is_active, ":center_no"),
+       (str_clear, s2),
+     (try_end),
      (add_party_note_from_sreg, ":center_no", 0, "@{s2}", 0), #TLD: no prosperity
      #(add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
      (add_party_note_tableau_mesh, ":center_no", "tableau_center_note_mesh"),

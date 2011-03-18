@@ -1,4 +1,4 @@
-668
+675
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -101,7 +101,6 @@ qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr__+_ _+_
 qstr_DEBUG:_Troll_hit!!! DEBUG:_Troll_hit!!!
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle_but_managed_to_escape.
-qstr_{s1}_ruins {s1}_ruins
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
@@ -224,6 +223,7 @@ qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_controls_{s8}.^Its_commander
 qstr_{s5}_has_been_defeat {s5}_has_been_defeated!
 qstr_{s5}_has_a_strength_ {s5}_has_a_strength_of_{reg1}_men_in_total.
 qstr_{s54}_is_a_claimant_ {s54}_is_a_claimant_to_the_throne_of_{s56}.
+qstr_no_holdings no_holdings
 qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
@@ -234,10 +234,10 @@ qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_town_of_{s50} The_town_of_{s50}
 qstr_The_village_of_{s50} The_village_of_{s50}_near_{s52}
 qstr_{s50} {s50}
-qstr_{s51}_belongs_to_{s1 {s51}_belongs_to_{s1}_of_{s2}.^
+qstr_{s50}_belongs_to_{s1 {s50}_belongs_to_{s1}_of_{s2}.^
 qstr_{s2}It_has_no_villag {s2}It_has_no_villages.^
 qstr_{s2}{reg0?Its_villag {s2}{reg0?Its_villages_are:Its_village_is}_{s8}.^
-qstr_{s2}Its_prosperity_i {s2}Its_prosperity_is:_{s50}
+qstr_{s2} {s2}
 qstr_Current_garrison_con Current_garrison_consists_of_{reg5}_men.^Has_food_stock_for_{reg6}_days.
 qstr_Very_Poor Very_Poor
 qstr_Poor Poor
@@ -285,8 +285,9 @@ qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_Host_of_{s5} Host_of_{s5}
 qstr__{s6}_has_assumed_th _{s6}_has_assumed_the_command_of_{s5}_host!
-qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_to_a_new_area_of_operations.
-qstr_ERROR:_Couldn_t_find ERROR:_Couldn't_find_a_theater_with_enemies_for_{s2}.
+qstr_The_hosts_of_{s2}_be The_hosts_of_{s2}_begin_to_march_to_a_new_area_of_operations!
+qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
+qstr_{s1}_ruins {s1}_ruins
 qstr_DEBUG:_troll_spawned DEBUG:_troll_spawned_with_{reg0}_hitpoints!
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_around_the_battleground!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_around_the_battleground!
@@ -406,6 +407,11 @@ qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
+qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_East_Emnet!
+qstr_SE_advance_camps_spa SE_advance_camps_spawned_around_West_Osgiliath!
+qstr_C_advance_camps_spaw C_advance_camps_spawned_around_Cerin_Amroth!
+qstr_N_advance_camps_spaw N_advance_camps_spawned_around_Thranduil's_Halls!
+qstr_Advance_camps_disabl Advance_camps_disabled,_theaters_restored!
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
@@ -544,6 +550,7 @@ qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
+qstr_The_hosts_of_{s2}_es The_hosts_of_{s2}_established_an_advanced_camp_in_a_new_area_of_operations!
 qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
 qstr_You_received_weekly_ You_received_weekly_wage.
 qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)

@@ -215,17 +215,18 @@ ai_scripts = [
          (assign, ":best_besiege_center", -1),
          (assign, ":best_besiege_center_score", 0),
          (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
-           #MV reminder: code here to not attack disabled centers
-           (party_is_active, ":enemy_walled_center"),
+           (party_is_active, ":enemy_walled_center"), #don't attack disabled centers
            
-           #MV: make sure the center is in the same theater, by checking if its owner is active in that theater
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
-           (faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
+           #MV: make sure the center is in the active theater
+           (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
            #MV: make sure the enemy faction is weak enough to be sieged
            (faction_get_slot, ":center_faction_strength", ":center_faction", slot_faction_strength),
+           (this_or_next|is_between, ":enemy_walled_center", advcamps_begin, advcamps_end), # advance camps can always be sieged
            (lt, ":center_faction_strength", fac_str_weak),
            #MV: if it's a faction capital, the enemy needs to be very weak
            (this_or_next|lt, ":center_faction_strength", fac_str_very_weak),
+           (this_or_next|is_between, ":enemy_walled_center", advcamps_begin, advcamps_end), # advance camps can always be sieged
            (neg|faction_slot_eq, ":center_faction", slot_faction_capital, ":enemy_walled_center"),
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
@@ -401,7 +402,7 @@ ai_scripts = [
            (try_end),
            (store_distance_to_party_from_party, ":dist", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
            (val_add, ":dist", 20),
-           (try_begin), #TLD: large effect of different active theaters, but still allowed
+           (try_begin), #TLD: large effect of different active theaters, but still allowed for more random fun
              (neg|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
              (val_mul, ":dist", 50),
            (try_end),
@@ -444,8 +445,9 @@ ai_scripts = [
            (this_or_next|gt, ":fac_rln", 0),
            (eq, ":center_faction", ":faction_no"),
            
-           #MV: make sure the center is in the same theater
-           (faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
+           #MV: make sure the center is in the active theater
+           (party_slot_eq, ":center_no", slot_center_theater, ":faction_theater"),
+           #(faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
            
            (party_get_slot, ":nearby_enemy_strength", ":center_no", slot_party_nearby_enemy_strength),
            (store_mul, ":attack_army_score", ":nearby_enemy_strength", 1000),
@@ -1076,7 +1078,8 @@ ai_scripts = [
 #              (val_add, ":chance", ":faction_advantage_effect"),
 #              (val_max, ":chance", 10),
               (assign, ":target_to_follow_other_party", ":faction_marshall_party"),
-              (assign, ":chance_to_follow_other_party", ":chance"),
+              (assign, ":chance_to_follow_other_party", 90), #MV: almost ALWAYS follow, regardless of distance
+#              (assign, ":chance_to_follow_other_party", ":chance"),
               (try_begin),
                 (eq, ":old_target_to_follow_other_party", ":target_to_follow_other_party"),
                 (val_mul, ":chance_to_follow_other_party", 1000),
@@ -1160,7 +1163,7 @@ ai_scripts = [
 #MV            (store_mul, ":chance", 100, "$g_average_center_value_per_faction"),#this value is calculated at the beginning of the game
 #            (val_div, ":chance", ":faction_center_value"),
 #            (val_max, ":chance", 10),
-            (assign, ":chance", 100), #MV: average
+            (assign, ":chance", 90), #MV: average
             (assign, ":chance_to_follow_other_party", ":chance"),
             (val_mul, ":chance_to_follow_other_party", 2),#trp_player is always the leader
             (assign, ":target_to_follow_other_party", "p_main_party"),
@@ -1199,13 +1202,18 @@ ai_scripts = [
             (val_mul, ":chance_to_follow_other_party", 100),
           (try_end),
         (try_end),
-
-        (assign, ":sum_chances", ":chance_to_follow_other_party"),
-        (val_add, ":sum_chances", 600),
-        (store_random_in_range, ":random_no", 0, ":sum_chances"),
+        # TLD: lords without hosts have very low chances to follow
         (try_begin),
-          (val_sub, ":random_no", ":chance_to_follow_other_party"),
-          (lt, ":random_no", 0),
+          (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_alone),
+          (assign, ":chance_to_follow_other_party", 10),
+        (try_end),
+
+        # (assign, ":sum_chances", ":chance_to_follow_other_party"),
+        # (val_add, ":sum_chances", 11), #MV: 10% chance won't follow if 100, was 600
+        (store_random_in_range, ":random_no", 0, 100), #MV: normalized chance to mean probability
+        (try_begin),
+          # (val_sub, ":random_no", ":chance_to_follow_other_party"),
+          (lt, ":random_no", ":chance_to_follow_other_party"),
           (party_set_slot, ":party_no", slot_party_commander_party, ":target_to_follow_other_party"),
         (else_try),
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
@@ -2295,7 +2303,7 @@ ai_scripts = [
           (try_begin),
             (eq, ":theater_cleared", 1),
             (assign, ":next_theater", ":faction_theater"),
-            (assign, ":continue_loop", 100),
+            (assign, ":continue_loop", 4),
             (try_for_range, ":unused", 0, ":continue_loop"),
               #get the next theater in hardcoded theater sequences
               (call_script, "script_find_next_theater", ":faction", ":next_theater"),
@@ -2317,7 +2325,45 @@ ai_scripts = [
                   (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),
                   (assign, ":continue_loop", 0), # exit loop
                   (str_store_faction_name, s2, ":faction"),
-                  (display_log_message, "@The hosts of {s2} march to a new area of operations."),
+                  (display_log_message, "@The hosts of {s2} begin to march to a new area of operations!"),
+                  
+                  (store_current_hours, ":cur_hours"),
+                  (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+
+                  (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
+                  #dismantle any existing camp, emptying it of lords
+                  (try_begin),
+                    (party_is_active, ":adv_camp"),
+                    # detach all attached parties, in case there are parties in the camp
+                    (party_get_num_attached_parties, ":num_attached_parties", ":adv_camp"),
+                    (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+                      (party_get_attached_party_with_rank, ":attached_party", ":adv_camp", ":attached_party_rank"),
+                      (gt, ":attached_party", 0),
+                      (party_is_active, ":attached_party"),
+                      (party_detach, ":attached_party"),
+                    (try_end),
+                    (disable_party, ":adv_camp"),
+                  (try_end),
+                                    
+                  # any enemy in the theater that has an advance camp elsewhere should return to defend their home theater
+                  (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
+                    (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
+                    (store_relation, ":rel", ":faction", ":enemy_faction"),
+                    (lt, ":rel", 0), # active enemy
+                    (faction_get_slot, ":home_theater", ":enemy_faction", slot_faction_home_theater),
+                    (eq, ":home_theater", ":next_theater"),
+                    (neg|faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":next_theater"),
+                    (faction_set_slot, ":enemy_faction", slot_faction_active_theater, ":home_theater"), #reset to home
+                    #dismantle advance camp and return
+                    (faction_get_slot, ":enemy_adv_camp", ":enemy_faction", slot_faction_advance_camp),
+                    (try_begin),
+                      (party_is_active, ":enemy_adv_camp"),
+                      (call_script, "script_destroy_center", ":enemy_adv_camp"),
+                    (try_end),
+                    (str_store_faction_name, s2, ":enemy_faction"),
+                    (display_log_message, "@The hosts of {s2} march back to defend their homes!"),
+                  (try_end),
+                  
                 (try_end),
               (else_try),
                 # ERROR (or victory!)
@@ -2453,11 +2499,27 @@ ai_scripts = [
      
      (assign, ":radius", 5),
      (assign, ":continue", 1),
-     (try_for_range, ":tries", 0, 100),
+     (try_for_range, ":tries", 0, 1000),
        (eq, ":continue", 1),
        (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
        (assign, ":too_close", 0),
-       # TODO here: check for suitable terrain?
+       # check for suitable terrain
+       (try_begin),
+         #use a fake party to check the terrain
+         (spawn_around_party, "p_main_party", "pt_none"),
+         (assign, ":fake_party", reg0),
+         (party_set_position, ":fake_party", pos1),
+         (party_get_current_terrain, ":terrain_type", ":fake_party"),
+         (remove_party, ":fake_party"),
+         #check for impassable terrain
+         (this_or_next|eq, ":terrain_type", rt_water),
+         (this_or_next|eq, ":terrain_type", rt_mountain),
+         (this_or_next|eq, ":terrain_type", rt_river),
+         (this_or_next|eq, ":terrain_type", rt_mountain_forest),
+         (             gt, ":terrain_type", rt_desert_forest), # any custom types?
+         (assign, ":too_close", 1), #exit loop, try again
+       (try_end),
+       # check if too close to another center
        (try_for_range, ":cur_center", centers_begin, centers_end),
          (eq, ":too_close", 0),
          (party_is_active, ":cur_center"), #TLD
@@ -2490,6 +2552,50 @@ ai_scripts = [
      
      # out comes pos1
 
+   ]),
+
+# script_destroy_center
+# Destroys a captured center (faction retreats if it's its last center in its active theater?)
+# Input: center
+# Output: none
+# Note: Depends on the destroyable flag being set for advance camps
+  ("destroy_center",
+   [
+     (store_script_param, ":center", 1),
+     (store_faction_of_party, ":center_faction", ":center"),
+     
+     # first detach all attached parties, in case there are parties in the camp
+     (party_get_num_attached_parties, ":num_attached_parties", ":center"),
+     (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+       (party_get_attached_party_with_rank, ":attached_party", ":center", ":attached_party_rank"),
+       (gt, ":attached_party", 0),
+       (party_is_active, ":attached_party"),
+       (party_detach, ":attached_party"),
+     (try_end),
+     
+     (try_begin),
+       (is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
+       #reestablish the advance camp in 3 days     
+       (store_current_hours, ":cur_hours"),
+       (faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+       (faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
+       (party_set_slot, ":center", slot_center_theater, ":theater"), #reset advance camp theater, just in case
+     (else_try),
+       (party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
+       # replace with ruins
+       (set_spawn_radius, 0),
+       (spawn_around_party, ":center", "pt_ruins"),
+       (assign, ":ruin_party", reg0),
+       #(party_get_icon, ":map_icon", ":center"),
+       #(party_set_icon, ":ruin_party", ":map_icon"),
+       (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
+       (str_store_party_name, s1, ":center"),
+       (party_set_name, ":ruin_party", "@{s1} ruins"),
+       (party_set_faction, ":center", "fac_neutral"), #purely defensive
+     (try_end),
+     
+     (disable_party, ":center"),
+     (call_script, "script_update_center_notes", ":center"),
    ]),
 
   ]

@@ -210,18 +210,25 @@ triggers = [
         #############################################
         # TLD Parties spawn (foxyman)
         #
-        ]+concatenate_scripts([
-        [
+      (try_for_range, ":center", centers_begin, centers_end),
+        (party_is_active, ":center"),
+        
+        (party_get_slot, ":center_scouts", ":center", slot_center_spawn_scouts),
+        (party_get_slot, ":center_raiders", ":center", slot_center_spawn_raiders),
+        (party_get_slot, ":center_patrol", ":center", slot_center_spawn_patrol),
+        (party_get_slot, ":center_caravan", ":center", slot_center_spawn_caravan),
         (try_begin),
-            (party_is_active, ws_party_spawns_list[x][0]), #TLD
-            (store_faction_of_party, ":faction_no", ws_party_spawns_list[x][0]),
-            (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+            (store_faction_of_party, ":faction_no", ":center"),
+            (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active), # faction lives
+            (party_get_slot, ":center_theater", ":center", slot_center_theater),
+            (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":center_theater"), #center in faction's active theater
+            
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
 			(val_div, ":strength", 50), #strength now 0-140
 #            (val_mul, ":strength", 20), # strength got multied 1000x, so mul became div
             #(assign, ":strength", 500),
             (try_begin),
-                (neq, ws_party_spawns_list[x][1], -1),
+                (gt, ":center_scouts", 0),
                 (store_random_in_range, ":rand", 0, int(300/ws_scout_freq_multiplier)),
                 (le, ":rand", ":strength"),
                 (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000),
@@ -229,21 +236,21 @@ triggers = [
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_scout),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
-                (spawn_around_party, ws_party_spawns_list[x][0], ws_party_spawns_list[x][1]),
+                (spawn_around_party, ":center", ":center_scouts"),
                 (assign, ":scout_party", reg0),
 #                (display_message, "@DEBUG: Party spawn: {reg0}", 0xFF00fd33),
                 (party_set_slot, ":scout_party", slot_party_type, spt_scout),
 				(party_set_slot, ":scout_party", slot_party_victory_value, ws_scout_vp), # victory points for party kill
                 (party_set_faction, ":scout_party", ":faction_no"),
-                (call_script, "script_find_closest_random_enemy_center_from_center", ws_party_spawns_list[x][0]),
+                (call_script, "script_find_closest_random_enemy_center_from_center", ":center"),
                 (try_begin),
                     (neq, reg0, -1),
                     (assign, ":enemy_center", reg0),
                     (party_get_position, pos1, ":enemy_center"),
-                    (party_get_position, pos2, ws_party_spawns_list[x][0]),
+                    (party_get_position, pos2, ":center"),
                     (call_script, "script_calc_mid_point"),
                 (else_try),
-                    (party_get_position, pos1, ws_party_spawns_list[x][0]),
+                    (party_get_position, pos1, ":center"),
                 (try_end),
                 (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
@@ -252,7 +259,7 @@ triggers = [
             (try_end),
             (try_begin),
                 (ge,"$tld_war_began",1), # No raiders before war
-                (neq, ws_party_spawns_list[x][2], -1),
+                (gt, ":center_raiders", 0),
                 (store_random_in_range, ":rand", 0, int(1000/ws_raider_freq_multiplier)),
                 (le, ":rand", ":strength"),
                 (store_mul, ":limit", ":strength", ws_raider_limit_multiplier*1000),
@@ -260,7 +267,7 @@ triggers = [
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_raider),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
-                (spawn_around_party, ws_party_spawns_list[x][0], ws_party_spawns_list[x][2]),
+                (spawn_around_party, ":center", ":center_raiders"),
                 (assign, ":raider_party", reg0),
                 (party_set_faction, ":raider_party", ":faction_no"),
                 (party_set_ai_behavior, ":raider_party", ai_bhvr_patrol_party),
@@ -269,18 +276,18 @@ triggers = [
                 (party_set_slot, ":raider_party", slot_party_type, spt_raider),
 				(party_set_slot, ":raider_party", slot_party_victory_value, ws_patrol_vp), # victory points for party kill
 
-                (call_script, "script_find_closest_random_enemy_center_from_center", ws_party_spawns_list[x][0]),
+                (call_script, "script_find_closest_random_enemy_center_from_center", ":center"),
                 (try_begin),
                     (neq, reg0, -1),
                     (assign, ":enemy_center", reg0),
                 (else_try),
-                    (assign, ":enemy_center", ws_party_spawns_list[x][0]),
+                    (assign, ":enemy_center", ":center"),
                 (try_end),
                 (party_set_ai_object, ":raider_party", ":enemy_center"),
             (try_end),                        
             (try_begin),
                 (ge,"$tld_war_began",1), # No patrols before war
-                (neq, ws_party_spawns_list[x][3], -1),
+                (gt, ":center_patrol", 0),
                 (store_random_in_range, ":rand", 0, int(1000/ws_patrol_freq_multiplier)),
                 (le, ":rand", ":strength"),
                 (store_mul, ":limit", ":strength", ws_patrol_limit_multiplier*1000),
@@ -288,7 +295,7 @@ triggers = [
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_patrol),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
-                (spawn_around_party, ws_party_spawns_list[x][0], ws_party_spawns_list[x][3]),
+                (spawn_around_party, ":center", ":center_patrol"),
                 (assign, ":patrol_party", reg0),
                 (party_set_faction, ":patrol_party", ":faction_no"),
                 (party_set_slot, ":patrol_party", slot_party_type, spt_patrol),
@@ -296,11 +303,11 @@ triggers = [
 
                 (party_set_slot, ":patrol_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":patrol_party", ai_bhvr_patrol_party),
-                (party_set_ai_object, ":patrol_party", ws_party_spawns_list[x][0]),
+                (party_set_ai_object, ":patrol_party", ":center"),
                 (party_set_ai_patrol_radius, ":patrol_party", 30),
             (try_end),
             (try_begin),
-                (neq, ws_party_spawns_list[x][4], -1),
+                (gt, ":center_caravan", 0),
                 (store_random_in_range, ":rand", 0, int(1000/ws_caravan_freq_multiplier)),
                 (le, ":rand", ":strength"),
                 (store_mul, ":limit", ":strength", ws_caravan_limit_multiplier*1000),
@@ -308,21 +315,20 @@ triggers = [
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_kingdom_caravan),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 0),
-                (spawn_around_party, ws_party_spawns_list[x][0], ws_party_spawns_list[x][4]),
+                (spawn_around_party, ":center", ":center_caravan"),
                 (assign, ":caravan_party", reg0),
                 (party_set_faction, ":caravan_party", ":faction_no"),
-                (party_set_slot, ":caravan_party", slot_party_home_center, ws_party_spawns_list[x][0]),
+                (party_set_slot, ":caravan_party", slot_party_home_center, ":center"),
                 (party_set_slot, ":caravan_party", slot_party_type, spt_kingdom_caravan),
 				(party_set_slot, ":caravan_party", slot_party_victory_value, ws_caravan_vp), # victory points for party kill
 
                 (party_set_slot, ":caravan_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":caravan_party", ai_bhvr_travel_to_party),
-                (party_set_ai_object, ":caravan_party", ws_party_spawns_list[x][0]),
+                (party_set_ai_object, ":caravan_party", ":center"),
                 (party_set_flags, ":caravan_party", pf_default_behavior, 1),
             (try_end),             
         (try_end),
-        ] for x in range(len(ws_party_spawns_list))
-        ])+[
+      (try_end),
         #
         # 
         #############################################
@@ -1286,6 +1292,7 @@ triggers = [
           (store_faction_of_party, ":cur_faction", ":center"),
           (neg|faction_slot_eq, ":cur_faction", slot_faction_advance_camp, ":center"), # don't reveal advance camps
 		  (enable_party,":center"),
+          (call_script, "script_update_center_notes", ":center"),
           # and reinforce
           (assign, ":garrison_strength", 13),
           (party_get_slot, ":garrison_limit", ":center", slot_center_garrison_limit),

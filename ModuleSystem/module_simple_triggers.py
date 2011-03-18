@@ -2052,20 +2052,10 @@ simple_triggers = [
             (neg|is_between, ":cur_party", centers_begin, centers_end),
             (remove_party, ":cur_party"),
           (else_try),
-            # Centers: destroy what you can, give the rest to the best enemy - this code copied from script_game_event_simulate_battle
+            # Centers: destroy what you can, give the rest to the best enemy
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
               (party_slot_eq, ":cur_party", slot_center_destroy_on_capture, 1),
-              (party_set_slot, ":cur_party", slot_center_destroyed, 1), # DESTROY!
-              # disable and replace with ruins
-              (party_set_slot, ":cur_party", slot_town_lord, -1),
-              (set_spawn_radius, 0),
-              (spawn_around_party, ":cur_party", "pt_ruins"),
-              (assign, ":ruin_party", reg0),
-              (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
-              (str_store_party_name, s1, ":cur_party"),
-              (party_set_name, ":ruin_party", "@{s1} ruins"),
-              (party_set_faction, ":cur_party", "fac_neutral"), #purely defensive
-              (disable_party, ":cur_party"),
+              (call_script, "script_destroy_center", ":cur_party"),
             (else_try),
               (party_clear, ":cur_party"), # remove previous garrison
               (call_script, "script_give_center_to_faction", ":cur_party", ":best_faction"),
@@ -2124,6 +2114,12 @@ simple_triggers = [
               #unrelated, but let's reset active theaters to home for every kingdom
               (faction_get_slot, ":home_theater", ":some_faction", slot_faction_home_theater),
               (faction_set_slot, ":some_faction", slot_faction_active_theater, ":home_theater"),
+              #dismantle any existing advance camps
+              (try_begin),
+                (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
+                (party_is_active, ":adv_camp"),
+                (call_script, "script_destroy_center", ":adv_camp"),
+              (try_end),
             (try_end),
             
 		    (assign, "$tld_war_began", 2),
@@ -2228,6 +2224,44 @@ simple_triggers = [
             (call_script, "script_party_prisoners_add_party_prisoners", ":cur_center", ":party_no"),
             (remove_party, ":party_no"),
         (try_end),
+    ]
+    ),
+
+    # TLD: establish advance camps in active, non-home theaters 
+    (1, [
+      (store_current_hours, ":cur_hours"),
+      (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
+        (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
+        (neg|faction_slot_eq, ":faction", slot_faction_home_theater, ":active_theater"), #not in home theater
+        (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
+        (neg|party_is_active, ":adv_camp"), #not already established
+        
+        (faction_get_slot, ":camp_requested_hours", ":faction", slot_faction_advcamp_timer),
+        (val_add, ":camp_requested_hours", 3*24), # 3 days after faction changes theater or previous camp destroyed
+        (ge, ":cur_hours", ":camp_requested_hours"),
+        
+        # set up the advance camp
+        (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
+        (call_script, "script_get_advcamp_pos", ":faction"), #fills pos1
+        (party_set_position, ":adv_camp", pos1), #teleport!
+        (enable_party, ":adv_camp"), #enable.. works if it's enabled already too
+        (str_store_faction_name, s2, ":faction"),
+        (display_log_message, "@The hosts of {s2} established an advanced camp in a new area of operations!"),
+        (call_script, "script_update_center_notes", ":adv_camp"),
+          
+        # fill the garrison if needed
+        (assign, ":garrison_strength", 20),
+        (party_get_slot, ":garrison_limit", ":adv_camp", slot_center_garrison_limit),
+        (try_for_range, ":unused", 0, ":garrison_strength"),
+          (call_script, "script_cf_reinforce_party", ":adv_camp"),
+          (try_begin), #TLD: don't go overboard
+            (party_get_num_companions, ":garrison_size", ":adv_camp"),
+            (le, ":garrison_limit", ":garrison_size"),
+            (assign, ":garrison_strength", 0),
+          (try_end),
+        (try_end),
+      (try_end), #try_for_range ":faction"
     ]
     ),
 
