@@ -387,7 +387,8 @@ script_create_kingdom_hero_party = 385
 script_decide_kingdom_party_ais = 386
 script_update_active_theaters = 387
 script_find_next_theater = 388
-script_get_advcamp_pos = 389
-script_destroy_center = 390
+script_theater_name_to_s15 = 389
+script_get_advcamp_pos = 390
+script_destroy_center = 391
 
 

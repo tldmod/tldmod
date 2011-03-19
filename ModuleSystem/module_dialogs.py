@@ -765,13 +765,13 @@ dialogs = [
       ]],
 
   [anyone,"member_separate", [
-            (gt, "$npc_quit_morale", 30),
-      ], "Oh really? Well, I'm not just going to wait around here. I'm going to go to the towns to look for other work. Is that what you want?", "member_separate_confirm",
+#            (gt, "$npc_quit_morale", 30),
+      ], "Oh really? Well, I'm not just going to wait around here. I'm going to go to my home town to look for other work. Is that what you want?", "member_separate_confirm",
    []],
 
-  [anyone,"member_separate", [
-      ], "Well, actually, there was something I needed to tell you.", "companion_quitting",
-   [ ]],
+#  [anyone,"member_separate", [
+#      ], "Well, actually, there was something I needed to tell you.", "companion_quitting",
+#   [ ]],
 
 
   [anyone|plyr,"member_separate_confirm", [], "That's right. We need to part ways.", "member_separate_yes",[]],
@@ -822,6 +822,8 @@ dialogs = [
 
 
   [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+                     (this_or_next|eq, "$talk_context", tc_court_talk), #TLD
+                     (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
                      (eq, "$talk_context", tc_tavern_talk),
                      (main_party_has_troop, "$g_talk_troop")],
    "Let's leave whenever you are ready.", "close_window", []],

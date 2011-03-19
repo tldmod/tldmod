@@ -2060,8 +2060,8 @@ game_menus = [
 			(store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
 			(troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
 			(troop_set_health, ":npc", 100),
-			(store_random_in_range, ":rand_town", towns_begin, towns_end),
-			(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
+			#(store_random_in_range, ":rand_town", towns_begin, towns_end),
+			#(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
 			(assign, ":nearest_town_dist", 1000),
 			(try_for_range, ":town_no", towns_begin, towns_end),
 				(store_faction_of_party, ":town_fac", ":town_no"),
@@ -2070,7 +2070,7 @@ game_menus = [
 				(store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
 				(lt, ":dist", ":nearest_town_dist"),
 				(assign, ":nearest_town_dist", ":dist"),
-				(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
+				#(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
 				(try_end),
 		(try_end),
 		#end NPC
@@ -3676,7 +3676,7 @@ game_menus = [
             (display_message,"str_error_string"),
           (try_end),
           (call_script, "script_event_player_defeated_enemy_party", "$g_enemy_party"),
-          (call_script, "script_clear_party_group", "$g_enemy_party"),
+          (call_script, "script_clear_party_group", "$g_enemy_party", "$players_kingdom"),
           (try_begin),
             (eq, "$g_next_menu", -1),
 
@@ -6774,6 +6774,19 @@ game_menus = [
 # TLD all gear in a smith, commented by GA
 #             (party_get_slot, ":spawned_troop", "$current_town", slot_town_armorer),
 #             (set_visitor, 9, ":spawned_troop"),
+#MV replaced by companion NPC, if any, and no castle
+             #TLD NPC companions
+             (try_begin),
+               (party_slot_eq,"$current_town", slot_town_castle, -1), #no town castle
+               (try_for_range, ":cur_troop", companions_begin, companions_end),
+                 (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
+                 (neg|main_party_has_troop, ":cur_troop"), #not already hired
+                 (store_troop_faction, ":troop_faction", ":cur_troop"),
+                 (eq, ":town_faction", ":troop_faction"), #only spawn if center wasn't captured
+                 (set_visitor, 9, ":cur_troop"), #only one companion NPC per town!
+               (try_end),
+             (try_end),
+
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_weaponsmith),
              (try_begin),
                (neq, ":spawned_troop", "trp_no_troop"),
@@ -7555,8 +7568,8 @@ game_menus = [
         (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
         (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
         (troop_set_health, ":npc", 100),
-        (store_random_in_range, ":rand_town", towns_begin, towns_end),
-        (troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
+        #(store_random_in_range, ":rand_town", towns_begin, towns_end),
+        #(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
         (assign, ":nearest_town_dist", 1000),
         (try_for_range, ":town_no", towns_begin, towns_end),
           (store_faction_of_party, ":town_fac", ":town_no"),
@@ -7565,7 +7578,7 @@ game_menus = [
           (store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
           (lt, ":dist", ":nearest_town_dist"),
           (assign, ":nearest_town_dist", ":dist"),
-          (troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
+          #(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
         (try_end),
       (try_end),
 

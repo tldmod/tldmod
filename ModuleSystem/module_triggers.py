@@ -1188,12 +1188,12 @@ triggers = [
 
 #NPC system changes begin
 #Move unemployed NPCs around taverns
-   (24 * 15, 0, 0,
-   [
-    (call_script, "script_update_companion_candidates_in_taverns"),
-    ],
-   []
-   ),
+   # (24 * 15, 0, 0,
+   # [
+    #(call_script, "script_update_companion_candidates_in_taverns"),
+    # ],
+   # []
+   # ),
 
 # TLD initialization
     (0, 0, ti_once, [

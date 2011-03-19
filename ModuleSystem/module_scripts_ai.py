@@ -252,6 +252,18 @@ ai_scripts = [
            (party_get_slot, ":center_near_str", ":enemy_walled_center", slot_party_nearby_friend_strength),
            (val_add, ":center_str", ":center_near_str"),
            (val_add, ":center_str", 1),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # (this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_mordor"),
+  # (assign, reg1, ":faction_marshall_army_strength"),
+  # (assign, reg2, ":center_str"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (str_store_party_name, s2, ":enemy_walled_center"),
+  # (display_message, "@DEBUG: {s1} considers sieging {s2}, marshall str:{reg1} center str:{reg2}.", 0x30FFC8),
+# (try_end),
+#MV test code end
            (store_mul, ":center_score", 1000, ":faction_marshall_army_strength"),
            (val_div, ":center_score", ":center_str"),
            (gt, ":center_score", 1500),
@@ -527,6 +539,22 @@ ai_scripts = [
        (val_add, ":sum_weights", ":chance_raiding_village"),
        (val_add, ":sum_weights", ":chance_attacking_enemy_army"),
        (val_add, ":sum_weights", ":chance_attacking_enemies_around_center"),
+       
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # (this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_mordor"),
+  # (assign, reg1, ":chance_defend"),
+  # (assign, reg2, ":chance_gathering_army"),
+  # (assign, reg3, ":chance_attacking_center"),
+  # (assign, reg4, ":chance_attacking_enemy_army"),
+  # (assign, reg5, ":chance_attacking_enemies_around_center"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (display_message, "@DEBUG: {s1} chances: D:{reg1} GA:{reg2} AC:{reg3} AEA:{reg4} AEAC:{reg5}.", 0x30FFC8),
+# (try_end),
+#MV test code end
+       
        (store_random_in_range, ":random_no", 0, ":sum_weights"),
        (val_sub, ":random_no", ":chance_defend"),
        (try_begin),
@@ -1207,7 +1235,22 @@ ai_scripts = [
           (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_alone),
           (assign, ":chance_to_follow_other_party", 10),
         (try_end),
-
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # (this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_mordor"),
+  # (assign, reg1, ":chance_to_follow_other_party"),
+  # (str_store_troop_name, s1, ":troop_no"),
+  # (try_begin),
+    # (neq, ":target_to_follow_other_party", -1),
+    # (str_store_party_name, s2, ":target_to_follow_other_party"),
+    # (display_message, "@DEBUG: {s1} chance to follow {s2}: {reg1}", 0x30FFC8),
+# #  (else_try),
+# #    (display_message, "@DEBUG: {s1} won't follow anyone", 0x30FFC8),
+  # (try_end),
+# (try_end),
+#MV test code end
         # (assign, ":sum_chances", ":chance_to_follow_other_party"),
         # (val_add, ":sum_chances", 11), #MV: 10% chance won't follow if 100, was 600
         (store_random_in_range, ":random_no", 0, 100), #MV: normalized chance to mean probability
@@ -2240,9 +2283,10 @@ ai_scripts = [
             (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
 	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
             (str_store_faction_name, s5,":troop_faction_no"), # TLD host naming after faction
-            (party_set_name, ":party", "@Host of {s5}"),
 			(str_store_troop_name, s6,":hero"),
-			(display_message, "@ {s6} has assumed the command of {s5} host!", 0x87D7FF),
+            #(party_set_name, ":party", "@Host of {s5}"),
+            (party_set_name, ":party", "@{s6}'s Host"),
+			(display_message, "@ {s6} has assumed the command of a {s5} host!", 0x87D7FF),
 	     # hire troops to host, kings get more
             (assign, ":num_tries", 30),
             (try_begin),
@@ -2324,8 +2368,9 @@ ai_scripts = [
                   (eq, ":theater_cleared", 0),
                   (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),
                   (assign, ":continue_loop", 0), # exit loop
+                  (call_script, "script_theater_name_to_s15", ":next_theater"),
                   (str_store_faction_name, s2, ":faction"),
-                  (display_log_message, "@The hosts of {s2} begin to march to a new area of operations!"),
+                  (display_log_message, "@The forces of {s2} march towards {s15}!"),
                   
                   (store_current_hours, ":cur_hours"),
                   (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
@@ -2429,7 +2474,26 @@ ai_scripts = [
      
      (assign, reg0, ":next_theater"),  
    ]),
- 
+
+
+# script_theater_name_to_s15
+# Input: theater
+# Output: s15
+  ("theater_name_to_s15",
+   [
+     (store_script_param, ":theater", 1),
+     (str_store_string, s15, "@ERROR"),
+     (try_begin),
+       (eq, ":theater", theater_SE), (str_store_string, s15, "str_theater_SE"),
+     (else_try),
+       (eq, ":theater", theater_SW), (str_store_string, s15, "str_theater_SW"),
+     (else_try),
+       (eq, ":theater", theater_C), (str_store_string, s15, "str_theater_C"),
+     (else_try),
+       (eq, ":theater", theater_N), (str_store_string, s15, "str_theater_N"),
+     (try_end),
+   ]),
+   
 
 # script_get_advcamp_pos
 # Gets a position of the advance camp in another theater (looks up faction active theater)

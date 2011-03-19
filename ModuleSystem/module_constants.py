@@ -1753,7 +1753,7 @@ center_list = [
 	("p_advcamp_umbar", ["scn_ironhill_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_44_weaponsmith", "trp_town_44_horse_merchant", -1, "pt_umbar_reinf_a", "trp_umbar_lord", "trp_corsair_youth", "trp_corsair_warrior", "trp_assassin_of_umbar","trp_militia_of_umbar"], 
 		["icon_mfc_umbar"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 1),
-	("p_advcamp_lorien", ["scn_cerin_amroth_center", -1, -1, -1, -1],
+	("p_advcamp_lorien", ["scn_rivendell_camp_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_camroth", "trp_town_33_horse_merchant", -1, "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 		["icon_mfc_lorien"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], 0, garrison_limit_med, 1),
 	("p_advcamp_imladris", ["scn_rivendell_camp_center", -1, -1,-1,-1],
