@@ -72,20 +72,20 @@ parties = [
 
 #TLD TOWNS
     # Gondor towns
-    ("town_minas_tirith","Minas_Tirith",    icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.465164,24.283142),[],205),
-    ("town_pelargir","Pelargir",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.313404,60.998856),[],240),
-    ("town_linhir","Linhir",                icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.834263,59.125397),[],170),
-    ("town_dol_amroth","Dol_Amroth",        icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.235764,64.029526),[],280),
-    ("town_edhellond","Edhellond",          icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(37.656502,46.137527),[],170),
-    ("town_lossarnach","Lossarnach",        icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.850273,37.002899),[],170),
-    ("town_tarnost","Tarnost",              icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.311577,63.942841),[],170),
-    ("town_erech","Erech",                  icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.165466,9.340988),[],170),
-    ("town_pinnath_gelin","Pinnath_Gelin",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.819733,30.816559),[],170),
+    ("town_minas_tirith"    ,"Minas_Tirith",icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.465164,24.283142),[],205),
+    ("town_pelargir"        ,"Pelargir",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.313404,60.998856),[],240),
+    ("town_linhir"          ,"Linhir",      icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.834263,59.125397),[],170),
+    ("town_dol_amroth"      ,"Dol_Amroth",  icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.235764,64.029526),[],280),
+    ("town_edhellond"       ,"Edhellond",   icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(37.656502,46.137527),[],170),
+    ("town_lossarnach"      ,"Lossarnach",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.850273,37.002899),[],170),
+    ("town_tarnost"         ,"Tarnost",     icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.311577,63.942841),[],170),
+    ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.165466,9.340988),[],170),
+    ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.819733,30.816559),[],170),
     ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.194717,20.500275),[],0),
-    ("town_henneth_annun","Henneth_Annun",  icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.812923,-14.051041),[],170),
-    ("town_cair_andros","Cair_Andros",      icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.478985,3.547134),[],170),
-    ("town_ethring","Ethring",              icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.157860,30.863678),[],50),
-	# Rohan towns
+    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.812923,-14.051041),[],170),
+    ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.478985,3.547134),[],170),
+    ("town_ethring"         ,"Ethring",     icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.157860,30.863678),[],50),
+# Rohan towns
     ("town_edoras","Edoras",         icon_edoras     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 22.8,-14.7),[],215),
     ("town_aldburg","Aldburg",       icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  7.9, -8.3),[],170),
     ("town_hornburg","Hornburg",     icon_helms_deep |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 40.2,-11.9),[],190),
@@ -137,7 +137,7 @@ parties = [
 # Dol Guldur towns
     ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.3,-131.1),[],170),
     ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.6,-188.0),[],170),
-# Rhun towns (Formerly Northmen)
+# Rhun towns
     ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.2,-223.1),[],170),
 #    ("town_rhun_encampment","Rhun_Encampment",        icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-94.09,-365.12),[],170),
     ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.6,-188.8),[],170),

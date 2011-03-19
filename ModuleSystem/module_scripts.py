@@ -17837,7 +17837,7 @@ scripts = [
             (is_between,":troop_no","trp_rhun_tribesman","trp_rhun_veteran_swift_horseman"),# Rhun randomized heraldry
             (store_random_in_range,":banner_mesh","mesh_circular_8mosaic1","mesh_circular_8mosaic10"),                                            
         (else_try),
-            (is_between,":troop_no","trp_harad_youth","trp_black_serpent_horse_archer"),# Harad randomized heraldry
+            (is_between,":troop_no","trp_harad_desert_warrior","trp_black_serpent_horse_archer"),# Harad randomized heraldry
             (store_random_in_range,":banner_mesh",275,300),                                            
         #(else_try),
             #(eq,"$player_universal_banner",1),                # indicator for the ability to set player's own banner

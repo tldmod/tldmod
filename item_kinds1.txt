@@ -1546,28 +1546,28 @@ itemsfile version 2
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063458 1729382256910270479 1224979098644774912 1224979098644774913 
 
- itm_rohan_helmet_a Rohan_Helmet Rohan_Helmet 1  rohan_inf_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_a Rohan_Infantry_Helmet Rohan_Infantry_Helmet 1  rohan_inf_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_b Rohan_Helmet Rohan_Helmet 1  rohan_inf_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_b Rohan_Infantry_Helmet Rohan_Infantry_Helmet 1  rohan_inf_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_c Rohan_Helmet Rohan_Helmet 1  rohan_archer_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_a Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_d Rohan_Helmet Rohan_Helmet 1  rohan_archer_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_b Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_e Rohan_Helmet Rohan_Helmet 1  rohan_cav_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_a Rohan_Cavalry_Helmet Rohan_Cavalry_Helmet 1  rohan_cav_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_f Rohan_Helmet Rohan_Helmet 1  rohan_cav_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_b Rohan_Cavalry_Helmet Rohan_Cavalry_Helmet 1  rohan_cav_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_g Rohan_Helmet Rohan_Helmet 1  rohan_cav_helmet_c 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_c Rohan_Cavalry_Helmet Rohan_Cavalry_Helmet 1  rohan_cav_helmet_c 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
- itm_rohan_helmet_h Rohan_Helmet Rohan_Helmet 1  rohan_captain_helmet 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
+ itm_rohan_captain_helmet Rohan_Captain_Helmet Rohan_Captain_Helmet 1  rohan_captain_helmet 0  65548 0 340 0 2.000000 100 40 0 0 7 0 0 0 0 0 0 0
 0
 
  itm_rohan_shield_a Rohan_Shield Rohan_Shield 1  rohan_shield_green 0  327687 5100273664 80 0 2.500000 100 0 8 0 0 310 96 0 40 0 0 0

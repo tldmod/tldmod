@@ -481,7 +481,7 @@ skins = [
     "harad_tribesman", "harad_man_calf_l", "harad_m_handL",
     "male_head", haradrim_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-    ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
+    [], #beard meshes ,"beard_q"
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
     [("harad_face_a",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
@@ -489,9 +489,6 @@ skins = [
      ("harad_face_c",0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
      ("harad_face_d",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
      ("harad_face_e",0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff007080c]),
-     # ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     # ("manface_rugged",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff007080c]),
-     # ("manface_african",0xff807c8a,["hair_blonde"],[0xff120808, 0xff007080c]),     
      ], #man_face_textures,
     [(voice_die,"snd_haradrim_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_haradrim_yell"),(voice_victory,"snd_haradrim_victory")], #voice sounds
     "skel_human", 1.0,

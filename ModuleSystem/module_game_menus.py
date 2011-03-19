@@ -434,7 +434,7 @@ game_menus = [
 		(set_visitors, 14, "trp_veteran_knight_of_dol_amroth",	3),
 		(set_visitors, 15, "trp_swan_knight_of_dol_amroth",		2),
 #		Enemy
-		(set_visitors, 16, "trp_harad_youth",					3),
+		(set_visitors, 16, "trp_harad_desert_warrior",			3),
 		(set_visitors, 17, "trp_harad_desert_warrior",			3),
 		(set_visitors, 18, "trp_harad_desert_skirmisher",		3),
 		(set_visitors, 19, "trp_harad_infantry",				3),
@@ -844,7 +844,7 @@ game_menus = [
 		(store_random_in_range,":bfac",0,9),  ## bad faction chosen randomly
 		(try_begin),
 			(eq,":bfac",0),(assign,":trp_bad_min","trp_rhun_tribesman"       ),(assign,":trp_bad_max","trp_dorwinion_noble_of_rhun"    ),(else_try),
-			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_youth"          ),(assign,":trp_bad_max","trp_black_serpent_horse_archer" ),(else_try),
+			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_desert_warrior" ),(assign,":trp_bad_max","trp_black_serpent_horse_archer" ),(else_try),
 			(eq,":bfac",2),(assign,":trp_bad_min","trp_dunnish_wildman"      ),(assign,":trp_bad_max","trp_dunnish_chieftan"           ),(else_try),
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_easterling_youth"     ),(assign,":trp_bad_max","trp_easterling_elite_skirmisher"),(else_try),
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_corsair_youth"        ),(assign,":trp_bad_max","trp_pike_master_of_umbar"       ),(else_try),
