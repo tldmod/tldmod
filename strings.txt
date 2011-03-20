@@ -760,7 +760,7 @@ str_npc10_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc11_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc12_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc13_personalitymatch_speech Did_I_mention_I_like_{s11}?
-str_npc14_personalityclash_speech Did_I_mention_I_like_{s11}?
+str_npc14_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc15_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc16_personalitymatch_speech Did_I_mention_I_like_{s11}?
 str_npc1_personalitymatch_speech_b I_like_{s11}.
@@ -776,7 +776,7 @@ str_npc10_personalitymatch_speech_b I_like_{s11}.
 str_npc11_personalitymatch_speech_b I_like_{s11}.
 str_npc12_personalitymatch_speech_b I_like_{s11}.
 str_npc13_personalitymatch_speech_b I_like_{s11}.
-str_npc14_personalityclash_speech_b I_like_{s11}.
+str_npc14_personalitymatch_speech_b I_like_{s11}.
 str_npc15_personalitymatch_speech_b I_like_{s11}.
 str_npc16_personalitymatch_speech_b I_like_{s11}.
 str_npc1_retirement_speech I'm_getting_a_bit_tired_of_the_warrior's_life,_I'll_retire.
