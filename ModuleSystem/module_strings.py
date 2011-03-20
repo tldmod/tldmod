@@ -1102,7 +1102,7 @@ strings = [
   ("npc11_personalitymatch_speech", "Did I mention I like {s11}?"),
   ("npc12_personalitymatch_speech", "Did I mention I like {s11}?"),
   ("npc13_personalitymatch_speech", "Did I mention I like {s11}?"),
-  ("npc14_personalityclash_speech", "Did I mention I like {s11}?"),
+  ("npc14_personalitymatch_speech", "Did I mention I like {s11}?"),
   ("npc15_personalitymatch_speech", "Did I mention I like {s11}?"),
   ("npc16_personalitymatch_speech", "Did I mention I like {s11}?"),
    
@@ -1119,7 +1119,7 @@ strings = [
   ("npc11_personalitymatch_speech_b", "I like {s11}."),
   ("npc12_personalitymatch_speech_b", "I like {s11}."),
   ("npc13_personalitymatch_speech_b", "I like {s11}."),
-  ("npc14_personalityclash_speech_b", "I like {s11}."),
+  ("npc14_personalitymatch_speech_b", "I like {s11}."),
   ("npc15_personalitymatch_speech_b", "I like {s11}."),
   ("npc16_personalitymatch_speech_b", "I like {s11}."),
 
