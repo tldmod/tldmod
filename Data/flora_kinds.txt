@@ -183,7 +183,7 @@ pw_birch_green 300647712768 5
  PW_tree_5_b  bo_pw_tree_5_b_cyl
  PW_tree_5_c  bo_pw_tree_5_c_cyl
  PW_tree_5_d  bo_pw_tree_5_d_cyl
- PW_tree_5_a_yellow  bo_pw_tree_5_a
+ PW_tree_5_a_yellow  bo_pw_tree_5_a_cyl
 tree_6 0 4
  tree_6_a  bo_tree_6_a
  tree_6_b  bo_tree_6_b
@@ -473,4 +473,3 @@ zl_fir_shubby_single 21479030800 4
 ga_tree_3_a_brown 163208765488 2
  PW_tree_3_a_brown  0
  PW_tree_3_b_brown  0
-
