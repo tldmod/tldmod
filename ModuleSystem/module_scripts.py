@@ -247,7 +247,6 @@ scripts = [
  # PlayerRewardSystem: rank_income (mtarini)
  # gives to player the income of his rank
   ("rank_income_to_player",[
-
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
 		(faction_get_slot, ":rank", ":fac", slot_faction_rank ),
 		(val_div, ":rank", 100), 
@@ -268,7 +267,7 @@ scripts = [
   # PlayerRewardSystem, script: stores in s24 title of a faction, rank, career  (mtarini)
   # param1: faction
   # param2: rank 
-  # param3: carreer variant (e.g. ranger vs knight) TODO
+  # param3: career variant (e.g. ranger vs knight) TODO
   # output: string 24
   # THIS IS JUST A STUB!!!! TODO: make rank names for all factions!
   ("get_own_rank_title",[
@@ -344,8 +343,7 @@ scripts = [
   ]),
  
 ("new_rank_attained",
-    [
-      (store_script_param_1, ":fac"),
+    [ (store_script_param_1, ":fac"),
 	  (play_sound, "snd_gong"),
 	  (call_script,"script_get_rank_title", ":fac", 0),
 	  (str_store_troop_name, s10, "trp_player"),
@@ -354,8 +352,7 @@ scripts = [
   ),
   
   ("increase_rank",
-    [
-	  # gain rank (need 100 points to advance)
+    [ # gain rank (need 100 points to advance)
       (store_script_param_1, ":fac"),
       (store_script_param_2, ":difference"),
 	  (faction_get_slot, ":val", ":fac", slot_faction_rank),
@@ -422,8 +419,7 @@ scripts = [
   # Input: param1: troop_id
   # Output: reg0: weekly wage
   ("npc_get_troop_wage",
-    [
-      (store_script_param_1, ":troop_id"),
+    [ (store_script_param_1, ":troop_id"),
 	  (call_script, "script_game_get_troop_wage", ":troop_id",0)
   ]),
   
@@ -432,11 +428,10 @@ scripts = [
   # Input:   param1: troop_id,
   # Output: reg0: join cost
   ("game_get_join_cost",
-  [
-	    (store_script_param_1, ":troop_id"),
-		(call_script, "script_game_get_troop_wage", ":troop_id",0),
-		(val_mul, reg0, 3), # to join, twice than day upkeep x 3
-		(set_trigger_result, reg0),
+  [ (store_script_param_1, ":troop_id"),
+	(call_script, "script_game_get_troop_wage", ":troop_id",0),
+	(val_mul, reg0, 3), # to join, twice than day upkeep x 3
+	(set_trigger_result, reg0),
   ]),
   
   # Call this script to know how much the player earns if he sends this troop home  (mtarini)
@@ -445,8 +440,7 @@ scripts = [
   # Input:   param3: 0 = sent home from map,   1 = given to city,    2 = given to host
   # Output: reg15: leave cost
   ("get_troop_disband_cost",
-  [
-	    (store_script_param_1, ":troop_id"),
+  [	    (store_script_param_1, ":troop_id"),
 		(store_script_param_2, ":opt"),
 		(store_script_param,   ":origin", 3),
 		
@@ -477,8 +471,7 @@ scripts = [
   # Input:   param2: 0 = sent home from map,   1 = given to city    2 = given to host
   # Output: reg0: leave cost of party  
   ("get_party_disband_cost",
-  [
-	(store_script_param_1, ":party_id"),
+  [	(store_script_param_1, ":party_id"),
 	(store_script_param_2, ":origin"),
 	(party_get_num_companion_stacks, ":num_stacks", ":party_id"),
 	(assign, ":tot", 0),
@@ -503,8 +496,7 @@ scripts = [
   # Input: param1: troop_id, param2: party-id
   # Output: reg0: weekly wage
   ("game_get_troop_wage",
-    [
-      (store_script_param_1, ":troop_id"),
+    [ (store_script_param_1, ":troop_id"),
       (store_script_param_2, ":unused"), #party id
       
 	  (store_character_level, ":troop_level", ":troop_id"),
@@ -539,8 +531,7 @@ scripts = [
   # Input: none
   # Output: reg0: weekly wage
   ("game_get_total_wage",
-    [
-      (assign, ":total_wage", 0),
+    [ (assign, ":total_wage", 0),
       (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
       (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
@@ -557,8 +548,7 @@ scripts = [
   # Input: arg1 = faction
   # Output: reg4 = weekly wage per faction (player has to pay)
   ("compute_wage_per_faction",
-  [
-	(store_script_param_1, ":fac"),
+  [ (store_script_param_1, ":fac"),
 	(assign, ":party", "p_main_party"),
 	(assign, ":spending",  0), # for this faction
 	(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
@@ -583,8 +573,7 @@ scripts = [
   # script_make_player_pay_upkeep  (mtarini)
   # no input, no output
   ("make_player_pay_upkeep",
-    [
-	(call_script, "script_update_respoint"), # make sure respoint are up-to-date (with current gold)
+   [(call_script, "script_update_respoint"), # make sure respoint are up-to-date (with current gold)
 	(assign, ":party", "p_main_party"), # pay only for player party (no garrisons, for now)
 	(party_get_num_companion_stacks, ":num_stacks",":party"),
 	
@@ -661,8 +650,7 @@ scripts = [
 	(end_try),
 	
 	(assign, "$g_cur_week_half_daily_wage_payments", 0), # reset "rest in city" discount
-
-    ]),
+   ]),
 	
 	
 	# script_make_unpaid_troop_go  (mtarini)
@@ -751,17 +739,13 @@ scripts = [
 
 	]),
 	
-	
-
 #############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS  END  (mtarini)  #############################?#
-
 
   #is a regular troop wounded inside a party?  (mtarini)
   # INPUT: arg1 = faction_no, arg2 = owner_troop_no
   #OUTPUT: nothing (can fail)
   ("cf_is_troop_in_party_wounded",
-    [
-      (store_script_param, ":troop", 1),
+    [ (store_script_param, ":troop", 1),
       (store_script_param, ":party", 2),
 	  (assign, ":yes", 0), 
       (party_get_num_companion_stacks, ":num_stacks", ":party"),
@@ -903,8 +887,7 @@ scripts = [
   #    INPUT: party to test
   #    OUTPUT: reg0  = 1 if yes
   ("party_is_in_fangorn",
-   [
-      #(position_get_x,reg0,1),
+   [#(position_get_x,reg0,1),
     #(position_get_y,reg1,1),
     #(display_message,"@main party now in ({reg0},{reg1})")
     (set_fixed_point_multiplier, 100),
@@ -957,16 +940,15 @@ scripts = [
   
   
   
-  ###############################################################################
+  ######################################################################################
   ##############################  GAME START MEGASCRIPT  ###############################
-  ###############################################################################
+  ######################################################################################
   
   #script_game_start:
   # This script is called when a new game is started
   # INPUT: none
   ("game_start",
-   [  
-	  (assign, "$g_fangorn_rope_pulled", 0),
+   [  (assign, "$g_fangorn_rope_pulled", 0),
 	  (assign, "$g_ent_seen", 0),
 	  (assign, "$g_ent_water_ever_drunk", 0),
 	  (assign, "$g_ent_water_taking_effect", 0),
@@ -1075,16 +1057,13 @@ scripts = [
       (faction_set_slot, faction_init[x][0], slot_faction_prison_guard_troop, faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
       (faction_set_slot, faction_init[x][0], slot_faction_castle_guard_troop, faction_init[x][8][4]) for x in range(len(faction_init)) ]+[
 
-
 	  (faction_set_slot, faction_init[x][0], slot_faction_capital           , faction_init[x][9])    for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_init[x][0], slot_faction_side              , faction_init[x][10])   for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_init[x][0], slot_faction_home_theater      , faction_init[x][11])   for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_init[x][0], slot_faction_advance_camp      , faction_init[x][12])   for x in range(len(faction_init)) ]+[
-	  
 # rumors in shops and tavers
 	  (faction_set_slot, faction_strings[x][0], slot_faction_rumors_begin   , faction_strings[x][1])    for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_strings[x][0], slot_faction_rumors_end     , faction_strings[x][2])    for x in range(len(faction_init)) ]+[
-
 # fixed faction info      
 	  (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
 	    (faction_get_slot, ":king", ":faction", slot_faction_leader),
@@ -1097,7 +1076,6 @@ scripts = [
         (faction_set_slot, ":faction", slot_faction_active_theater, ":theater"),
       (try_end),
       (faction_set_slot, "fac_player_supporters_faction", slot_faction_marshall, "trp_player"),
-
 
 # Towns:
       (try_for_range, ":item_no", trade_goods_begin, trade_goods_end),
@@ -1114,7 +1092,6 @@ scripts = [
       (call_script, "script_set_trade_route_between_centers", routes_list[x][0], routes_list[x][y]) for y in range (len(routes_list[x]))
       ] for x in range(len(routes_list))
      ])+[
-
       (call_script, "script_center_change_trade_good_production", "p_town_minas_tirith", "itm_tools", 110, 0),
       (call_script, "script_center_change_trade_good_production", "p_town_pelargir", "itm_smoked_fish", 130, 0),
       (call_script, "script_center_change_trade_good_production", "p_town_linhir", "itm_tools", 120, 0),
@@ -1198,7 +1175,6 @@ scripts = [
         (party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),
         #(party_set_slot, ":town_no", slot_town_tournament_max_teams, 4),
         #(party_set_slot, ":town_no", slot_town_tournament_max_team_size, 8),
-		
       (try_end),
 
 # Centers spawns init from ws_party_spawns_list in module_constants.py      
@@ -1207,7 +1183,6 @@ scripts = [
         (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_raiders, ws_party_spawns_list[x][2]) for x in range(len(ws_party_spawns_list)) ]+[
         (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_patrol,  ws_party_spawns_list[x][3]) for x in range(len(ws_party_spawns_list)) ]+[
         (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_caravan, ws_party_spawns_list[x][4]) for x in range(len(ws_party_spawns_list)) ]+[
-      
 # disable some evil centers at start
 ]+[   (disable_party, centers_disabled_at_start[x]) for x in range(len(centers_disabled_at_start)) ]+[
 
@@ -1268,8 +1243,8 @@ scripts = [
      (try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_add_gold,":kingdom_hero",100000),
         (store_troop_faction, ":kingdom_hero_faction", ":kingdom_hero"),
-	# other heroes get banners like lords
-		(faction_get_slot,":kingdom_leader",":kingdom_hero_faction",slot_faction_leader),
+	# other heroes get banners like lords, except Rohan (which will be overwritten later)
+	    (faction_get_slot,":kingdom_leader",":kingdom_hero_faction",slot_faction_leader),
 		(troop_get_slot, ":banner_id", ":kingdom_leader", slot_troop_banner_scene_prop),
 		(troop_set_slot, ":kingdom_hero", slot_troop_banner_scene_prop, ":banner_id"),
 
@@ -1293,7 +1268,13 @@ scripts = [
         (troop_set_slot, ":kingdom_hero", slot_troop_player_order_state, spai_undefined),
         (troop_set_slot, ":kingdom_hero", slot_troop_player_order_object, -1),
       (try_end),
-
+# Rohan lord banners
+    (assign, ":rohan_banner_id", "spr_banner_f01"), #first rohan banner in a list
+    (try_for_range, ":rohan_hero", "trp_knight_1_9", "trp_knight_1_15"),
+		(troop_set_slot, ":rohan_hero", slot_troop_banner_scene_prop, ":rohan_banner_id"),
+		(val_add,":rohan_banner_id",1),
+	(try_end),
+	
       (try_for_range, ":center_no", centers_begin, centers_end),
         (store_faction_of_party, ":original_faction", ":center_no"),
         (faction_get_slot, ":culture", ":original_faction", slot_faction_culture),
@@ -1401,7 +1382,7 @@ scripts = [
 		(faction_get_slot,":strength",":faction",slot_faction_strength),
         (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),      
       (try_end),
-# spawn kings, TLD
+# spawn kings in capitals, TLD
     ]+concatenate_scripts([
 	  [
 	  (call_script, "script_create_kingdom_hero_party", faction_init[x][3], faction_init[x][9]),
@@ -1414,10 +1395,10 @@ scripts = [
       (party_attach_to_party, "$pout_party", "p_town_dol_amroth"),
 # spawn lords in random places, TLD
       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+        (troop_slot_eq, ":hero", slot_troop_leaded_party, 0),
 	    (store_troop_faction, ":faction", ":hero"),
         (call_script,"script_cf_select_random_town_with_faction", ":faction"),
 		(assign,":center",reg0),
-        (troop_slot_eq, ":hero", slot_troop_leaded_party, 0),
         (call_script, "script_create_kingdom_hero_party", ":hero", ":center"),
         (party_attach_to_party, "$pout_party", ":center"),
         (party_set_slot, ":center", slot_town_player_odds, 1000),  
@@ -13800,8 +13781,7 @@ scripts = [
   # INPUT: agent_no
   # OUTPUT: none
   ("shield_item_set_banner",
-    [
-       (store_script_param, ":tableau_no",1),
+    [  (store_script_param, ":tableau_no",1),
        (store_script_param, ":agent_no", 2),
        (store_script_param, ":troop_no", 3),
        (assign, ":banner_troop", -1),
@@ -13863,6 +13843,7 @@ scripts = [
          (ge, ":town_lord", 0),
          (assign, ":banner_troop", ":town_lord"),
        (try_end),
+	   
        (try_begin),
          (ge, ":banner_troop", 0),
          (try_begin),

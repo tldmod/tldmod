@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1204
+ 1162
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -587,11 +587,11 @@ spr_banner_pole 0 0 banner_pole bo_banner_pole 0
 
 
 spr_custom_banner_01 0 0 custom_banner_01 0 1
--40.000000  5 521 3 1224979098644774912 144115188075856287 7 4 0 30 2 1224979098644774912 0 1982 2 1729382256910270497 1224979098644774912 3 0 
+-40.000000  6 521 3 1224979098644774912 144115188075856287 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270497 1224979098644774913 3 0 
 
 
 spr_custom_banner_02 0 0 custom_banner_02 0 1
--40.000000  5 521 3 1224979098644774912 144115188075856287 7 4 0 30 2 1224979098644774912 0 1982 2 1729382256910270497 1224979098644774912 3 0 
+-40.000000  6 521 3 1224979098644774912 144115188075856287 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270497 1224979098644774913 3 0 
 
 
 spr_banner_a 0 0 banner_a01 0 0
@@ -655,132 +655,6 @@ spr_banner_t 0 0 banner_a20 0 0
 
 
 spr_banner_u 0 0 banner_a21 0 0
-
-
-spr_banner_ba 0 0 banner_b01 0 0
-
-
-spr_banner_bb 0 0 banner_b02 0 0
-
-
-spr_banner_bc 0 0 banner_b03 0 0
-
-
-spr_banner_bd 0 0 banner_b04 0 0
-
-
-spr_banner_be 0 0 banner_b05 0 0
-
-
-spr_banner_bf 0 0 banner_b06 0 0
-
-
-spr_banner_bg 0 0 banner_b07 0 0
-
-
-spr_banner_bh 0 0 banner_b08 0 0
-
-
-spr_banner_bi 0 0 banner_b09 0 0
-
-
-spr_banner_bj 0 0 banner_b10 0 0
-
-
-spr_banner_bk 0 0 banner_b11 0 0
-
-
-spr_banner_bl 0 0 banner_b12 0 0
-
-
-spr_banner_bm 0 0 banner_b13 0 0
-
-
-spr_banner_bn 0 0 banner_b14 0 0
-
-
-spr_banner_bo 0 0 banner_b15 0 0
-
-
-spr_banner_bp 0 0 banner_b16 0 0
-
-
-spr_banner_bq 0 0 banner_b17 0 0
-
-
-spr_banner_br 0 0 banner_b18 0 0
-
-
-spr_banner_bs 0 0 banner_b19 0 0
-
-
-spr_banner_bt 0 0 banner_b20 0 0
-
-
-spr_banner_bu 0 0 banner_b21 0 0
-
-
-spr_banner_ca 0 0 banner_c01 0 0
-
-
-spr_banner_cb 0 0 banner_c02 0 0
-
-
-spr_banner_cc 0 0 banner_c03 0 0
-
-
-spr_banner_cd 0 0 banner_c04 0 0
-
-
-spr_banner_ce 0 0 banner_c05 0 0
-
-
-spr_banner_cf 0 0 banner_c06 0 0
-
-
-spr_banner_cg 0 0 banner_c07 0 0
-
-
-spr_banner_ch 0 0 banner_c08 0 0
-
-
-spr_banner_ci 0 0 banner_c09 0 0
-
-
-spr_banner_cj 0 0 banner_c10 0 0
-
-
-spr_banner_ck 0 0 banner_c11 0 0
-
-
-spr_banner_cl 0 0 banner_c12 0 0
-
-
-spr_banner_cm 0 0 banner_c13 0 0
-
-
-spr_banner_cn 0 0 banner_c14 0 0
-
-
-spr_banner_co 0 0 banner_c15 0 0
-
-
-spr_banner_cp 0 0 banner_c16 0 0
-
-
-spr_banner_cq 0 0 banner_c17 0 0
-
-
-spr_banner_cr 0 0 banner_c18 0 0
-
-
-spr_banner_cs 0 0 banner_c19 0 0
-
-
-spr_banner_ct 0 0 banner_c20 0 0
-
-
-spr_banner_cu 0 0 banner_c21 0 0
 
 
 spr_banner_da 0 0 banner_d01 0 0

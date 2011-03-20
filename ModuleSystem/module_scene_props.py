@@ -28,8 +28,7 @@ scene_props = [
 
   ("light_sun",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,
-      [
-          (neg|is_currently_night),
+      [   (neg|is_currently_night),
           (store_trigger_param_1, ":prop_instance_no"),
           (set_fixed_point_multiplier, 100),
           (prop_instance_get_scale, pos5, ":prop_instance_no"),
@@ -55,8 +54,7 @@ scene_props = [
     ]),
   ("light",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,
-      [
-          (store_trigger_param_1, ":prop_instance_no"),
+      [   (store_trigger_param_1, ":prop_instance_no"),
           (set_fixed_point_multiplier, 100),
           (prop_instance_get_scale, pos5, ":prop_instance_no"),
           (position_get_scale_x, ":scale", pos5),
@@ -73,8 +71,7 @@ scene_props = [
     ]),
   ("light_red",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,
-      [
-          (store_trigger_param_1, ":prop_instance_no"),
+      [   (store_trigger_param_1, ":prop_instance_no"),
           (set_fixed_point_multiplier, 100),
           (prop_instance_get_scale, pos5, ":prop_instance_no"),
           (position_get_scale_x, ":scale", pos5),
@@ -91,8 +88,7 @@ scene_props = [
     ]),
   ("light_night",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,
-      [
-#          (store_time_of_day,reg(12)),
+      [ #  (store_time_of_day,reg(12)),
 #          (neg|is_between,reg(12),5,20),
           (is_currently_night, 0),
           (store_trigger_param_1, ":prop_instance_no"),
@@ -111,10 +107,8 @@ scene_props = [
       ]),
     ]),
   ("torch",0,"torch_a","0",
-   [
-   (ti_on_init_scene_prop,
-    [
-        (set_position_delta,0,-35,48),
+   [(ti_on_init_scene_prop,
+    [   (set_position_delta,0,-35,48),
         (particle_system_add_new, "psys_torch_fire"),
         (particle_system_add_new, "psys_torch_smoke"),
         (particle_system_add_new, "psys_torch_fire_sparks"),
@@ -135,10 +129,8 @@ scene_props = [
     ]),
    ]),
   ("torch_night",0,"torch_a","0",
-   [
-   (ti_on_init_scene_prop,
-    [
-#        (store_time_of_day,reg(12)),
+   [(ti_on_init_scene_prop,
+    [#   (store_time_of_day,reg(12)),
 #        (neg|is_between,reg(12),5,20),
         (is_currently_night, 0),
         (set_position_delta,0,-35,48),
@@ -176,10 +168,7 @@ scene_props = [
   ("pillow_b",0,"pillow_b","bo_pillow", []),
   ("pillow_c",0,"pillow_c","0", []),
 
-
   ("interior_castle_g_square_keep_b",0,"interior_castle_g_square_keep_b","bo_interior_castle_g_square_keep_b", []),
-
-
 
   ("carpet_with_pillows_a",0,"carpet_with_pillows_a","bo_carpet_with_pillows", []),
   ("carpet_with_pillows_b",0,"carpet_with_pillows_b","bo_carpet_with_pillows", []),
@@ -191,7 +180,6 @@ scene_props = [
   ("sofa_b",0,"sofa_b","bo_sofa", []),
   ("ewer_a",0,"ewer_a","bo_ewer_a", []),
   ("end_table_a",0,"end_table_a","bo_end_table_a", []),
-
 
 #  ("fake_houses_steppe_a",0,"fake_houses_steppe_a","0", []),
 #  ("fake_houses_steppe_b",0,"fake_houses_steppe_b","0", []),
@@ -212,7 +200,6 @@ scene_props = [
   ("destroy_bridge_a",0,"destroy_bridge_a","bo_destroy_bridge_a", []),  
   ("destroy_bridge_b",0,"destroy_bridge_b","bo_destroy_bridge_b", []),  
 
-
   ("Catapult",0,"Catapult","bo_Catapult", []),
   ("broom",0,"broom","0", []),
   ("garlic",0,"garlic","0", []),
@@ -226,7 +213,6 @@ scene_props = [
   
   ("grave_a",0,"grave_a","bo_grave_a", []),
 
-  
   ("village_house_e",0,"village_house_e","bo_village_house_e", []),
   ("village_house_f",0,"village_house_f","bo_village_house_f", []),
   ("village_house_g",0,"village_house_g","bo_village_house_g", []),
@@ -242,8 +228,6 @@ scene_props = [
   ("village_snowy_house_d",0,"village_snowy_house_d","bo_village_snowy_house_d", []),
   ("village_snowy_house_e",0,"village_snowy_house_e","bo_village_snowy_house_e", []),
   ("village_snowy_house_f",0,"village_snowy_house_f","bo_village_snowy_house_f", []),
-
-
 
 #  ("town_house_steppe_a",0,"town_house_steppe_a","bo_town_house_steppe_a", []),
 #  ("town_house_steppe_b",0,"town_house_steppe_b","bo_town_house_steppe_b", []),
@@ -269,9 +253,6 @@ scene_props = [
   ("awning_long_b",0,"awning_long_b","bo_awning_long", []),
   ("awning_d",0,"awning_d","bo_awning_d", []),
 
-
-
-
   ("snowy_barrel_a",0,"snowy_barrel_a","bo_snowy_barrel_a", []),
   ("snowy_fence",0,"snowy_fence","bo_snowy_fence", []),
   ("snowy_wood_heap",0,"snowy_wood_heap","bo_snowy_wood_heap", []),
@@ -285,8 +266,6 @@ scene_props = [
   ("village_shed_b",0,"village_shed_b","bo_village_shed_b", []),
 
  # ("trunks_snowy",0,"trunks_snowy","0", []),
-
-
 
 
   ("dungeon_door_cell_a",0,"dungeon_door_cell_a","bo_dungeon_door_cell_a", []),
@@ -328,30 +307,27 @@ scene_props = [
   ("tunnel_salt",0,"tunnel_salt","bo_tunnel_salt", []),
   ("salt_a",0,"salt_a","bo_salt_a", []),
 
-  
+("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
 
-  ("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
+("tutorial_door_b",sokf_moveable,"tutorial_door_b","bo_tutorial_door_b", []),
 
- ("tutorial_door_b",sokf_moveable,"tutorial_door_b","bo_tutorial_door_b", []),
+("tutorial_flag_yellow",sokf_moveable,"tutorial_flag_yellow","0", []),
+("tutorial_flag_red",sokf_moveable,"tutorial_flag_red","0", []),
+("tutorial_flag_blue",sokf_moveable,"tutorial_flag_blue","0", []),
 
-  ("tutorial_flag_yellow",sokf_moveable,"tutorial_flag_yellow","0", []),
-  ("tutorial_flag_red",sokf_moveable,"tutorial_flag_red","0", []),
-  ("tutorial_flag_blue",sokf_moveable,"tutorial_flag_blue","0", []),
-
-  ("interior_prison_a",0,"interior_prison_a","bo_interior_prison_a", []),
-  ("interior_prison_b",0,"interior_prison_b","bo_interior_prison_b", []),
-  ("interior_prison_cell_a",0,"interior_prison_cell_a","bo_interior_prison_cell_a", []),
+("interior_prison_a",0,"interior_prison_a","bo_interior_prison_a", []),
+("interior_prison_b",0,"interior_prison_b","bo_interior_prison_b", []),
+("interior_prison_cell_a",0,"interior_prison_cell_a","bo_interior_prison_cell_a", []),
 
   
-#  ("interior_prison_c",0,"interior_prison_c","bo_interior_prison_c", []),
-  ("interior_prison_d",0,"interior_prison_d","bo_interior_prison_d", []),
+#("interior_prison_c",0,"interior_prison_c","bo_interior_prison_c", []),
+("interior_prison_d",0,"interior_prison_d","bo_interior_prison_d", []),
   
 
-  ("arena_archery_target_a",0,"arena_archery_target_a","bo_arena_archery_target_a", []),
-  ("archery_butt_a",0,"archery_butt","bo_archery_butt", [
+("arena_archery_target_a",0,"arena_archery_target_a","bo_arena_archery_target_a", []),
+("archery_butt_a",0,"archery_butt","bo_archery_butt", [
    (ti_on_scene_prop_hit,
-    [
-        (store_trigger_param_1, ":instance_no"),
+    [   (store_trigger_param_1, ":instance_no"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
@@ -378,8 +354,7 @@ scene_props = [
   ]),
   ("archery_target_with_hit_a",0,"arena_archery_target_a","bo_arena_archery_target_a", [
    (ti_on_scene_prop_hit,
-    [
-        (store_trigger_param_1, ":instance_no"),
+    [   (store_trigger_param_1, ":instance_no"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
@@ -407,8 +382,7 @@ scene_props = [
   ]),
   ("dummy_a",sokf_destructible|sokf_moveable,"arena_archery_target_b","bo_arena_archery_target_b",   [
    (ti_on_scene_prop_destroy,
-    [
-        (store_trigger_param_1, ":instance_no"),
+    [   (store_trigger_param_1, ":instance_no"),
         (prop_instance_get_starting_position, pos1, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, 2, ":player_agent"),
@@ -423,8 +397,7 @@ scene_props = [
         (play_sound, "snd_dummy_destroyed"),
     ]),
    (ti_on_scene_prop_hit,
-    [
-        (store_trigger_param_1, ":instance_no"),
+    [   (store_trigger_param_1, ":instance_no"),
         (store_trigger_param_2, ":damage"),
         (assign, reg60, ":damage"),
         (val_div, ":damage", 8),
@@ -468,10 +441,6 @@ scene_props = [
   ("castle_h_house_c",0,"castle_h_house_c","bo_castle_h_house_b", []),
   ("castle_h_battlement_barrier",0,"castle_h_battlement_barrier","bo_castle_h_battlement_barrier", []),
 
-
-
-
-
   ("castle_f_keep_a",0,"castle_f_keep_a","bo_castle_f_keep_a", []),
   ("castle_f_battlement_a",0,"castle_f_battlement_a","bo_castle_f_battlement_a", []),
   ("castle_f_battlement_a_destroyed",0,"castle_f_battlement_a_destroyed","bo_castle_f_battlement_a_destroyed", []),
@@ -494,7 +463,6 @@ scene_props = [
  # ("castle_g_gate_house_door_b",0,"castle_g_gate_house_door_b","bo_castle_g_gate_house_door_b", []),
  # ("castle_g_square_keep_a",0,"castle_g_square_keep_a","bo_castle_g_square_keep_a", []),
 
-
   ("mosque_a",0,"mosque_a","bo_mosque_a", []),
   ("stone_minaret_a",0,"stone_minaret_a","bo_stone_minaret_a", []),
   ("stone_house_a",0,"stone_house_a","bo_stone_house_a", []),
@@ -511,7 +479,8 @@ scene_props = [
       [ (party_get_slot, ":leader_troop", "$g_encountered_party", slot_town_lord),
         (try_begin),
           (ge, ":leader_troop", 0),
-          (cur_scene_prop_set_tableau_material, "tableau_custom_banner_default", ":leader_troop"),
+		  (troop_get_slot, ":banner_mesh", ":leader_troop", slot_troop_banner_scene_prop),
+          (cur_scene_prop_set_tableau_material, "tableau_custom_banner_default", ":banner_mesh"),
         (try_end),
         ]),
      ]),
@@ -520,7 +489,8 @@ scene_props = [
       [ (party_get_slot, ":leader_troop", "$g_encountered_party", slot_town_lord),
         (try_begin),
           (ge, ":leader_troop", 0),
-          (cur_scene_prop_set_tableau_material, "tableau_custom_banner_default", ":leader_troop"),
+		  (troop_get_slot, ":banner_mesh", ":leader_troop", slot_troop_banner_scene_prop),
+          (cur_scene_prop_set_tableau_material, "tableau_custom_banner_default", ":banner_mesh"),
         (try_end),
         ]),
      ]),
@@ -546,48 +516,7 @@ scene_props = [
   ("banner_s",0,"banner_a19","0", []),
   ("banner_t",0,"banner_a20","0", []),
   ("banner_u",0,"banner_a21","0", []),
-  ("banner_ba",0,"banner_b01","0", []),
-  ("banner_bb",0,"banner_b02","0", []),
-  ("banner_bc",0,"banner_b03","0", []),
-  ("banner_bd",0,"banner_b04","0", []),
-  ("banner_be",0,"banner_b05","0", []),
-  ("banner_bf",0,"banner_b06","0", []),
-  ("banner_bg",0,"banner_b07","0", []),
-  ("banner_bh",0,"banner_b08","0", []),
-  ("banner_bi",0,"banner_b09","0", []),
-  ("banner_bj",0,"banner_b10","0", []),
-  ("banner_bk",0,"banner_b11","0", []),
-  ("banner_bl",0,"banner_b12","0", []),
-  ("banner_bm",0,"banner_b13","0", []),
-  ("banner_bn",0,"banner_b14","0", []),
-  ("banner_bo",0,"banner_b15","0", []),
-  ("banner_bp",0,"banner_b16","0", []),
-  ("banner_bq",0,"banner_b17","0", []),
-  ("banner_br",0,"banner_b18","0", []),
-  ("banner_bs",0,"banner_b19","0", []),
-  ("banner_bt",0,"banner_b20","0", []),
-  ("banner_bu",0,"banner_b21","0", []),
-  ("banner_ca",0,"banner_c01","0", []),
-  ("banner_cb",0,"banner_c02","0", []),
-  ("banner_cc",0,"banner_c03","0", []),
-  ("banner_cd",0,"banner_c04","0", []),
-  ("banner_ce",0,"banner_c05","0", []),
-  ("banner_cf",0,"banner_c06","0", []),
-  ("banner_cg",0,"banner_c07","0", []),
-  ("banner_ch",0,"banner_c08","0", []),
-  ("banner_ci",0,"banner_c09","0", []),
-  ("banner_cj",0,"banner_c10","0", []),
-  ("banner_ck",0,"banner_c11","0", []),
-  ("banner_cl",0,"banner_c12","0", []),
-  ("banner_cm",0,"banner_c13","0", []),
-  ("banner_cn",0,"banner_c14","0", []),
-  ("banner_co",0,"banner_c15","0", []),
-  ("banner_cp",0,"banner_c16","0", []),
-  ("banner_cq",0,"banner_c17","0", []),
-  ("banner_cr",0,"banner_c18","0", []),
-  ("banner_cs",0,"banner_c19","0", []),
-  ("banner_ct",0,"banner_c20","0", []),
-  ("banner_cu",0,"banner_c21","0", []),
+# banners B and C not used
   ("banner_da",0,"banner_d01","0", []),
   ("banner_db",0,"banner_d02","0", []),
   ("banner_dc",0,"banner_d03","0", []),
@@ -653,7 +582,6 @@ scene_props = [
   ("banner_f20", 0, "banner_f20", "0", []),
   ("banner_f21", 0, "banner_a15", "0", []),
 
-  
   ("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
   ("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),
   ("tavern_table_a",0,"tavern_table_a","bo_tavern_table_a", []),
@@ -876,16 +804,13 @@ scene_props = [
   ("snowy_house_h",0,"snowy_house_h","bo_snowy_house_h", []),
   ("snowy_house_i",0,"snowy_house_i","bo_snowy_house_i", []),
 #  ("snowy_wall_a",0,"snowy_wall_a","bo_snowy_wall_a", []),
-
   ("snowy_stand",0,"snowy_stand","bo_snowy_stand", []),
-
   ("snowy_heap_a",0,"snowy_heap_a","bo_snowy_heap_a", []),
   ("snowy_trunks_a",0,"snowy_trunks_a","bo_snowy_trunks_a", []),
 
   #("snowy_castle_tower_a",0,"snowy_castle_tower_a","bo_snowy_castle_tower_a", []),
   #("snowy_castle_battlement_a",0,"snowy_castle_battlement_a","bo_snowy_castle_battlement_a", []),
   #("snowy_castle_battlement_a_destroyed",0,"snowy_castle_battlement_a_destroyed","bo_snowy_castle_battlement_a_destroyed", []),
- 
 #  ("snowy_castle_battlement_b",0,"snowy_castle_battlement_b","bo_snowy_castle_battlement_b", []),
 #  ("snowy_castle_battlement_corner_a",0,"snowy_castle_battlement_corner_a","bo_snowy_castle_battlement_corner_a", []),
 #  ("snowy_castle_battlement_corner_b",0,"snowy_castle_battlement_corner_b","bo_snowy_castle_battlement_corner_b", []),
@@ -901,7 +826,6 @@ scene_props = [
   ("square_keep_d",0,"square_keep_d","bo_square_keep_d", []),
   ("square_keep_e",0,"square_keep_e","bo_square_keep_e", []),
   ("square_keep_f",0,"square_keep_f","bo_square_keep_f", []),
-
 
   ("square_extension_a",0,"square_extension_a","bo_square_extension_a", []),
   ("square_stairs_a",0,"square_stairs_a","bo_square_stairs_a", []),
@@ -937,11 +861,8 @@ scene_props = [
   ("arena_block_g",0,"arena_block_g","bo_arena_block_ghi", []),
   ("arena_block_h",0,"arena_block_h","bo_arena_block_ghi", []),
   ("arena_block_i",0,"arena_block_i","bo_arena_block_ghi", []),
-
 #  ("arena_block_j",0,"arena_block_j","bo_arena_block_j", []),
   ("arena_block_j_awning",0,"arena_block_j_awning","bo_arena_block_j_awning", []),
-
-
 
   ("arena_palisade_a",0,"arena_palisade_a","bo_arena_palisade_a", []),
   ("arena_wall_a",0,"arena_wall_a","bo_arena_wall_ab", []),
@@ -958,7 +879,6 @@ scene_props = [
   ("arena_spectator_sitting_a",0,"arena_spectator_sitting_a","0", []),
   ("arena_spectator_sitting_b",0,"arena_spectator_sitting_b","0", []),
   ("arena_spectator_sitting_c",0,"arena_spectator_sitting_c","0", []),
-
 
   ("courtyard_gate_a",0,"courtyard_entry_a","bo_courtyard_entry_a", []),
   ("courtyard_gate_b",0,"courtyard_entry_b","bo_courtyard_entry_b", []),
@@ -1065,11 +985,9 @@ scene_props = [
   ("smoke_stain",0,"soot_a","0", []),
   ("brazier_with_fire",0,"brazier","bo_brazier",    [
    (ti_on_scene_prop_init,
-    [
-        (set_position_delta,0,0,85),
+    [   (set_position_delta,0,0,85),
         (particle_system_add_new, "psys_brazier_fire_1"),
         (particle_system_add_new, "psys_fire_sparks_1"),
-
         (set_position_delta,0,0,100),
         (particle_system_add_new, "psys_fire_glow_1"),
         (particle_system_emit, "psys_fire_glow_1",9000000),
@@ -1077,13 +995,11 @@ scene_props = [
         #(set_position_delta,0,0,95),
         #(particle_system_add_new, "psys_cooking_smoke"),
     ]),
-   ]),
+  ]),
 
   ("cooking_fire",0,"fire_floor","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-        (set_position_delta,0,0,12),
+   [(ti_on_scene_prop_init,
+    [   (set_position_delta,0,0,12),
         (particle_system_add_new, "psys_cooking_fire_1"),
         (particle_system_add_new, "psys_fire_sparks_1"),
         (particle_system_add_new, "psys_cooking_smoke"),
@@ -1091,7 +1007,7 @@ scene_props = [
         (particle_system_add_new, "psys_fire_glow_1"),
         (particle_system_emit, "psys_fire_glow_1",9000000),
     ]),
-   ]),
+  ]),
   ("cauldron_a",0,"cauldron_a","bo_cauldron_a", []),
   ("fry_pan_a",0,"fry_pan_a","0", []),
   ("tripod_cauldron_a",0,"tripod_cauldron_a","bo_tripod_cauldron_a", []),
@@ -1137,129 +1053,100 @@ scene_props = [
   ("fish_roasted_a",0,"fish_roasted_a","0", []),
   ("chicken_roasted",0,"chicken_roasted","0", []),
   ("food_steam",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,0,0,0),
+   [(ti_on_scene_prop_init,
+    [(set_position_delta,0,0,0),
      (particle_system_add_new, "psys_food_steam"),
     ]),
    ]),
   ########################
   ("city_smoke",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (store_time_of_day,reg(12)),
+   [(ti_on_scene_prop_init,
+    [(store_time_of_day,reg(12)),
      (neg|is_between,reg(12),5,20),
      (set_position_delta,0,0,0),
      (particle_system_add_new, "psys_night_smoke_1"),
     ]),
    ]),
-    ("city_fire_fly_night",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (store_time_of_day,reg(12)),
+   ("city_fire_fly_night",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(store_time_of_day,reg(12)),
      (neg|is_between,reg(12),5,20),
      (set_position_delta,0,0,0),
      (particle_system_add_new, "psys_fire_fly_1"),
     ]),
    ]),
-    ("city_fly_day",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_bug_fly_1"),
+   ("city_fly_day",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_bug_fly_1"),
     ]),
    ]),
-    ("flue_smoke_tall",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_flue_smoke_tall"),
+   ("flue_smoke_tall",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_flue_smoke_tall"),
     ]),
    ]),
-      ("flue_smoke_short",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_flue_smoke_short"),
+   ("flue_smoke_short",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_flue_smoke_short"),
     ]),
    ]),
-      ("moon_beam",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_moon_beam_1"),
+   ("moon_beam",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_moon_beam_1"),
      (particle_system_add_new, "psys_moon_beam_paricle_1"),
     ]),
    ]),
-    ("fire_small",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_fireplace_fire_small"),
+   ("fire_small",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_fireplace_fire_small"),
     ]),
    ]),
   ("fire_big",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_fireplace_fire_big"),
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_fireplace_fire_big"),
     ]),
    ]),
-    ("battle_field_smoke",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_war_smoke_tall"),
+  ("battle_field_smoke",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_war_smoke_tall"),
     ]),
    ]),
-      ("Village_fire_big",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_village_fire_big"),
+  ("Village_fire_big",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_village_fire_big"),
      (set_position_delta,0,0,100),
      (particle_system_add_new, "psys_village_fire_smoke_big"),
     ]),
    ]),
   #########################
   ("candle_a",0,"candle_a","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,0,0,27),
+   [(ti_on_scene_prop_init,
+    [(set_position_delta,0,0,27),
      (particle_system_add_new, "psys_candle_light"),
     ]),
    ]),
   ("candle_b",0,"candle_b","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,0,0,25),
+   [(ti_on_scene_prop_init,
+    [(set_position_delta,0,0,25),
      (particle_system_add_new, "psys_candle_light"),
     ]),
    ]),
-  ("candle_c",0,"candle_c","0",   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,0,0,10),
+  ("candle_c",0,"candle_c","0",   
+  [(ti_on_scene_prop_init,
+    [(set_position_delta,0,0,10),
      (particle_system_add_new, "psys_candle_light_small"),
     ]),
    ]),
-  ("lamp_a",0,"lamp_a","0",   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,66,0,2),
+  ("lamp_a",0,"lamp_a","0",   
+   [(ti_on_scene_prop_init,
+    [(set_position_delta,66,0,2),
      (particle_system_add_new, "psys_candle_light"),
     ]),
    ]),
 
-  ("lamp_b",0,"lamp_b","0",   [
-   (ti_on_scene_prop_init,
-    [
-     (set_position_delta,65,0,-7),
+  ("lamp_b",0,"lamp_b","0",   
+   [(ti_on_scene_prop_init,
+    [(set_position_delta,65,0,-7),
      (particle_system_add_new, "psys_lamp_fire"),
      (set_position_delta,70,0,-5),
      (particle_system_add_new, "psys_fire_glow_1"),
@@ -1273,10 +1160,8 @@ scene_props = [
   ("fried_pig",0,"fried_pig","0", []),
   ("village_oven",0,"village_oven","bo_village_oven", []),
   ("dungeon_water_drops",0,"0","0",
-   [
-   (ti_on_scene_prop_init,
-    [
-     (particle_system_add_new, "psys_dungeon_water_drops"),
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_dungeon_water_drops"),
     ]),
    ]),
   ("shadow_circle_1",0,"shadow_circle_1","0", []),
@@ -1285,10 +1170,8 @@ scene_props = [
   ("shadow_square_2",0,"shadow_square_2","0", []),
   ("wheelbarrow",0,"wheelbarrow","bo_wheelbarrow", []),
   ("gourd",sokf_destructible|spr_hit_points(1),"gourd","bo_gourd",
-   [
-     (ti_on_scene_prop_destroy,
-      [
-        (store_trigger_param_1, ":instance_no"),
+   [(ti_on_scene_prop_destroy,
+      [ (store_trigger_param_1, ":instance_no"),
         #(val_add, "$g_last_destroyed_gourds", 1),
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
@@ -1422,34 +1305,34 @@ scene_props = [
 			 (else_try),                      (set_fog_distance,700,0x4DB08D)]),]),
   
 # old MT props  
-  ("gondor_mt_bridge_modular_a",0,"mt_bridge_modular_a", "bo_bridge_modular_a", []),
-  ("gondor_mt_bridge_modular_b",0,"mt_bridge_modular_b", "bo_bridge_modular_b", []),
-  ("gondor_mt_door_extension_a",0,"mt_door_extension_a", "bo_door_extension_a", []),
-  ("gondor_mt_gate",0,"mt_gate", "bo_mt_gate", []),
-  ("gondor_mt_gate_tower",0,"mt_gate_tower", "bo_mt_tower", []),
-  ("gondor_mt_gate_house",0,"mt_gate_house", "bo_mt_gate_house", []),
-  ("gondor_mt_house_extension_a",0,"mt_house_extension_a", "bo_house_extension_a", []),
-  ("gondor_mt_house_extension_b",0,"mt_house_extension_b", "bo_house_extension_b", []),
-  ("gondor_mt_house_extension_c",0,"mt_house_extension_c", "bo_house_extension_a", []),
-  ("gondor_mt_house_extension_d",0,"mt_house_extension_d", "bo_house_extension_d", []),
+("gondor_mt_bridge_modular_a",0,"mt_bridge_modular_a", "bo_bridge_modular_a", []),
+("gondor_mt_bridge_modular_b",0,"mt_bridge_modular_b", "bo_bridge_modular_b", []),
+("gondor_mt_door_extension_a",0,"mt_door_extension_a", "bo_door_extension_a", []),
+("gondor_mt_gate",0,"mt_gate", "bo_mt_gate", []),
+("gondor_mt_gate_tower",0,"mt_gate_tower", "bo_mt_tower", []),
+("gondor_mt_gate_house",0,"mt_gate_house", "bo_mt_gate_house", []),
+("gondor_mt_house_extension_a",0,"mt_house_extension_a", "bo_house_extension_a", []),
+("gondor_mt_house_extension_b",0,"mt_house_extension_b", "bo_house_extension_b", []),
+("gondor_mt_house_extension_c",0,"mt_house_extension_c", "bo_house_extension_a", []),
+("gondor_mt_house_extension_d",0,"mt_house_extension_d", "bo_house_extension_d", []),
 #  ("gondor_mt_mini_town_house_a",0,"mt_mini_town_house_a", 0, []),
 #  ("gondor_mt_mini_town_house_b",0,"mt_mini_town_house_b", 0, []),
 #  ("gondor_mt_mini_town_house_c",0,"mt_mini_town_house_c", 0, []),
 #  ("gondor_mt_mini_town_house_d",0,"mt_mini_town_house_d", 0, []),
-  ("gondor_mt_passage_house_b",0,"mt_passage_house_b", "bo_passage_house_b", []),
-  ("gondor_mt_short_tower",0,"mt_short_tower", "bo_mt_short_tower", []),
-  ("gondor_mt_small_wall_a",0,"mt_small_wall_a", "bo_small_wall_a", []),
-  ("gondor_mt_stairs_arch_a",0,"mt_stairs_arch_a", "bo_stairs_arch_a", []),
-  ("gondor_mt_town_house_a",0,"mt_town_house_a", "bo_town_house_a", []),
-  ("gondor_mt_town_house_b",0,"mt_town_house_b", "bo_town_house_b", []),
-  ("gondor_mt_town_house_c",0,"mt_town_house_c", "bo_town_house_c", []),
-  ("gondor_mt_town_house_d",0,"mt_town_house_d", "bo_town_house_d", []),
-  ("gondor_mt_town_house_f",0,"mt_town_house_f", "bo_town_house_f", []),
-  ("gondor_mt_town_house_h",0,"mt_town_house_h", "bo_town_house_h", []),
-  ("gondor_mt_town_house_i",0,"mt_town_house_i", "bo_town_house_i", []),
-  ("gondor_mt_town_house_j",0,"mt_town_house_j", "bo_town_house_j", []),
-  ("gondor_mt_town_house_l",0,"mt_town_house_l", "bo_town_house_l", []),
-  ("gondor_mt_wall",0,"mt_wall", "bo_mt_wall", []),
+("gondor_mt_passage_house_b",0,"mt_passage_house_b", "bo_passage_house_b", []),
+("gondor_mt_short_tower",0,"mt_short_tower", "bo_mt_short_tower", []),
+("gondor_mt_small_wall_a",0,"mt_small_wall_a", "bo_small_wall_a", []),
+("gondor_mt_stairs_arch_a",0,"mt_stairs_arch_a", "bo_stairs_arch_a", []),
+("gondor_mt_town_house_a",0,"mt_town_house_a", "bo_town_house_a", []),
+("gondor_mt_town_house_b",0,"mt_town_house_b", "bo_town_house_b", []),
+("gondor_mt_town_house_c",0,"mt_town_house_c", "bo_town_house_c", []),
+("gondor_mt_town_house_d",0,"mt_town_house_d", "bo_town_house_d", []),
+("gondor_mt_town_house_f",0,"mt_town_house_f", "bo_town_house_f", []),
+("gondor_mt_town_house_h",0,"mt_town_house_h", "bo_town_house_h", []),
+("gondor_mt_town_house_i",0,"mt_town_house_i", "bo_town_house_i", []),
+("gondor_mt_town_house_j",0,"mt_town_house_j", "bo_town_house_j", []),
+("gondor_mt_town_house_l",0,"mt_town_house_l", "bo_town_house_l", []),
+("gondor_mt_wall",0,"mt_wall", "bo_mt_wall", []),
   ##OSGILIATH ruins by Llew###
 ("osgiliath_bridge",0,"osgiliath_bridge","bo_osgiliath_bridge", []),
 ("osgiliath_broken_bridge",0,"osgiliath_broken_bridge","bo_osgiliath_broken_bridge", []),
@@ -1526,23 +1409,23 @@ scene_props = [
 								]),
 ("moria_dimrill_gate",0,"dimrill_gate","bo_dimrill_gate", []),								
 
-  ######ROHAN SCENE PROPS##########
-  ("rohan_gate"      ,0,"rohan_gate"      ,"bo_rohan_gate"      , []),
-  ("rohan_tower2"    ,0,"rohan_tower2"    ,"bo_rohan_tower2"    , []),
-  ("rohan_tower3"    ,0,"rohan_tower3"    ,"bo_rohan_tower3"    , []),
-  ("rohan_wall_stair",0,"rohan_wall_stair","bo_rohan_wall_stair", []),
-  ("rohan_long_stair",0,"rohan_long_stair","bo_rohan_long_stair", []),
-  ("rohan_wall"      ,0,"rohan_wall"      ,"bo_rohan_wall"      , []),
+######ROHAN SCENE PROPS##########
+("rohan_gate"      ,0,"rohan_gate"      ,"bo_rohan_gate"      , []),
+("rohan_tower2"    ,0,"rohan_tower2"    ,"bo_rohan_tower2"    , []),
+("rohan_tower3"    ,0,"rohan_tower3"    ,"bo_rohan_tower3"    , []),
+("rohan_wall_stair",0,"rohan_wall_stair","bo_rohan_wall_stair", []),
+("rohan_long_stair",0,"rohan_long_stair","bo_rohan_long_stair", []),
+("rohan_wall"      ,0,"rohan_wall"      ,"bo_rohan_wall"      , []),
 
-  #Helms Deep
-  ("HD",0,"HD","bo_HD", []),
-  ("ballista",0,"ballista","0",[]),
-  ("ballista_empty",0,"ballista_empty","0",[]),
-  ("ballista_missile",0,"ballista_missile","0",[]),
-  ("throwing_stone",0,"throwing_stone","0",[]),
-  ("Village_fire_big_no_smoke",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_village_fire_big"),]),]),
+#Helms Deep
+("HD",0,"HD","bo_HD", []),
+("ballista",0,"ballista","0",[]),
+("ballista_empty",0,"ballista_empty","0",[]),
+("ballista_missile",0,"ballista_missile","0",[]),
+("throwing_stone",0,"throwing_stone","0",[]),
+("Village_fire_big_no_smoke",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_village_fire_big"),]),]),
 
-  ("gate_destructible",sokf_destructible|spr_hit_points(1000),"door_e_left","bo_door_left",   [
+("gate_destructible",sokf_destructible|spr_hit_points(1000),"door_e_left","bo_door_left",   [
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
     (prop_instance_get_starting_position, pos1, ":instance_no"),
@@ -1554,8 +1437,8 @@ scene_props = [
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),(particle_system_burst, "psys_dummy_smoke", pos1, 3),(particle_system_burst, "psys_dummy_straw", pos1, 10),
     ]),
-  ]),
-  ("HD_gate_destructible",sokf_destructible|spr_hit_points(1000),"HD_gate_door","bo_HD_gate_door",   [
+]),
+("HD_gate_destructible",sokf_destructible|spr_hit_points(1000),"HD_gate_door","bo_HD_gate_door",   [
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
 	(prop_instance_get_starting_position, pos1, ":instance_no"),
@@ -1567,8 +1450,8 @@ scene_props = [
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),(particle_system_burst, "psys_dummy_smoke", pos1, 3),(particle_system_burst, "psys_dummy_straw", pos1, 10),
     ]),
-  ]),
-  ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
+]),
+("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
 	(prop_instance_get_starting_position, pos1, ":instance_no"),
@@ -1577,19 +1460,17 @@ scene_props = [
     (play_sound, "snd_dummy_destroyed"),
     ]),
    (ti_on_scene_prop_hit, [(play_sound, "snd_dummy_hit"), (particle_system_burst, "psys_dummy_straw", pos1, 10),]),
-  ]),
+]),
   
 ###DWARVEN PROPS###
-	("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
-	("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
-	("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
-	("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
-	("distant_mountain2",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
+("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
+("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
+("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
+("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
+("distant_mountain2",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
 
-	
 #####DALE PROPS#####
 ("laketown",0,"laketown","bo_laketown", []),
-
 
 ("lktn_building_a",0,"dale_frame_house_a","bo_small_timber_frame_house_a", []),
 ("lktn_building_b",0,"dale_house_b","bo_tf_house_b", []),
@@ -1642,69 +1523,63 @@ scene_props = [
 
 ########## SMALL PLANTS FOR CHANGEABLE TREES #################################
 #	pointers for generated trees
-	("zz_pointer00", 0, "spike_a", "0", []),("zz_pointer01", 0, "spike_a", "0", []),("zz_pointer02", 0, "spike_a", "0", []),("zz_pointer03", 0, "spike_a", "0", []),	
-	("zz_pointer04", 0, "spike_a", "0", []),("zz_pointer05", 0, "spike_a", "0", []),("zz_pointer06", 0, "spike_a", "0", []),("zz_pointer07", 0, "spike_a", "0", []),	
-	("zz_pointer08", 0, "spike_a", "0", []),("zz_pointer09", 0, "spike_a", "0", []),("zz_pointer10", 0, "spike_a", "0", []),("zz_pointer11", 0, "spike_a", "0", []),	
-	("zz_pointer12", 0, "spike_a", "0", []),("zz_pointer13", 0, "spike_a", "0", []),("zz_pointer14", 0, "spike_a", "0", []),("zz_pointer15", 0, "spike_a", "0", []),	
-	("zz_pointer16", 0, "spike_a", "0", []),("zz_pointer17", 0, "spike_a", "0", []),("zz_pointer18", 0, "spike_a", "0", []),("zz_pointer19", 0, "spike_a", "0", []),	
-	("zz_pointerend", 0, "0", "0", []),
+("zz_pointer00", 0, "spike_a", "0", []),("zz_pointer01", 0, "spike_a", "0", []),("zz_pointer02", 0, "spike_a", "0", []),("zz_pointer03", 0, "spike_a", "0", []),	
+("zz_pointer04", 0, "spike_a", "0", []),("zz_pointer05", 0, "spike_a", "0", []),("zz_pointer06", 0, "spike_a", "0", []),("zz_pointer07", 0, "spike_a", "0", []),	
+("zz_pointer08", 0, "spike_a", "0", []),("zz_pointer09", 0, "spike_a", "0", []),("zz_pointer10", 0, "spike_a", "0", []),("zz_pointer11", 0, "spike_a", "0", []),	
+("zz_pointer12", 0, "spike_a", "0", []),("zz_pointer13", 0, "spike_a", "0", []),("zz_pointer14", 0, "spike_a", "0", []),("zz_pointer15", 0, "spike_a", "0", []),	
+("zz_pointer16", 0, "spike_a", "0", []),("zz_pointer17", 0, "spike_a", "0", []),("zz_pointer18", 0, "spike_a", "0", []),("zz_pointer19", 0, "spike_a", "0", []),	
+("zz_pointerend",0, "0", "0", []),
 # pointers for landmarks
-	("zz_landmark00", 0, "cabbage", "0", []),("zz_landmark01", 0, "cabbage", "0", []),("zz_landmark02", 0, "cabbage", "0", []),("zz_landmark03", 0, "cabbage", "0", []),
-	("zz_landmark04", 0, "cabbage", "0", []),("zz_landmark05", 0, "cabbage", "0", []),("zz_landmark06", 0, "cabbage", "0", []),("zz_landmark07", 0, "cabbage", "0", []),
-	("zz_landmark08", 0, "cabbage", "0", []),("zz_landmark09", 0, "cabbage", "0", []),("zz_landmarkend", 0, "cabbage", "0", []),
+("zz_landmark00", 0, "cabbage", "0", []),("zz_landmark01", 0, "cabbage", "0", []),("zz_landmark02", 0, "cabbage", "0", []),("zz_landmark03", 0, "cabbage", "0", []),
+("zz_landmark04", 0, "cabbage", "0", []),("zz_landmark05", 0, "cabbage", "0", []),("zz_landmark06", 0, "cabbage", "0", []),("zz_landmark07", 0, "cabbage", "0", []),
+("zz_landmark08", 0, "cabbage", "0", []),("zz_landmark09", 0, "cabbage", "0", []),("zz_landmarkend", 0, "cabbage", "0", []),
 #	trees, bushes and rocks props
 
-	("tree0_yellow_flower", 0, "yellow_flower", "0", []),
-	("tree1_yellow_flower", 0, "tree_e_2","bo_tree_e_2", []),
-#	("tree_seedy_plant_a", 0, "seedy_plant_a", "0", []),
-#	("tree_ground_bush", 0, "ground_bush", "0", []),
-#	("tree1_ground_bush", 0, "tree_e_2", "bo_tree_e_2", []),
-#	("tree_bushes07_a", 0, "bushes07_a", "0", []),
-#	("tree1_bushes07_a", 0, "tree_e_1", "0", []),
-#	("tree_bushes04_a", 0, "bushes04_a", "0", []),
-#	("tree1_bushes04_a", 0, "tree_e_3", "0", []),
-	("tree1_aspen_a", 0, "aspen_a", "bo_aspen_a", []),
-	("tree1_aspen_b", 0, "aspen_b", "bo_aspen_b", []),
-	("tree1_aspen_c", 0, "aspen_c", "bo_aspen_c", []),
-	("tree1_pine_1_a", 0, "pine_1_a", "bo_pine_1_a", []),
-	("tree1_pine_1_b", 0, "pine_1_b", "bo_pine_1_b", []),
-	("tree1_pine_2_a", 0, "pine_2_a", "bo_pine_2_a", []),
-	("tree1_pine_3_a", 0, "pine_3_a", "bo_pine_3_a", []),
-	("tree1_pine_4_a", 0, "pine_4_a", "bo_pine_4_a", []),
-	("tree1_rock_c", 0, "rock_c", "bo_rock_c", []),
-	("tree1_beech_d", 0, "beech_d", "bo_beech_d", []),
-	("tree1_beech_e", 0, "beech_e", "bo_beech_e", []),
-	("tree1_tree_12_a", 0, "tree_12_a", "bo_tree_12_a", []),
-	("tree1_tree_12_b", 0, "tree_12_b", "bo_tree_12_b", []),
-	("tree1_tree_12_c", 0, "tree_12_c", "bo_tree_12_c", []),
-
-	("trees_end", 0, "spike_a", "0", []),	
-
-	("football_ball",0,"stone_ball","0", []),
-	("dolguldur_copy",0,"dolguldur_copy","0", []),
-	("morannon_gate",0,"morannon_gate","0", [(ti_on_scene_prop_init,[(neg|is_currently_night),(set_fog_distance,800,0x150101),]),]),
-	("mor_tower_a",0,"mor_tower_a","0", []),
-	("evil_element",0,"evil_element","0", []),
-	("evil_tunnel_a",0,"evil_tunnel_a","0", []),
-	
-
-	("minas_tirith_copy",0,"minas_tirith_copy","0", []),
-  ####OSGILIATH##########
-#	("aw_tomb",0,"aw_tomb","0", []),
+("tree0_yellow_flower", 0, "yellow_flower", "0", []),
+("tree1_yellow_flower", 0, "tree_e_2","bo_tree_e_2", []),
+#("tree_seedy_plant_a", 0, "seedy_plant_a", "0", []),
+#("tree_ground_bush", 0, "ground_bush", "0", []),
+#("tree1_ground_bush", 0, "tree_e_2", "bo_tree_e_2", []),
+#("tree_bushes07_a", 0, "bushes07_a", "0", []),
+#("tree1_bushes07_a", 0, "tree_e_1", "0", []),
+#("tree_bushes04_a", 0, "bushes04_a", "0", []),
+#("tree1_bushes04_a", 0, "tree_e_3", "0", []),
+("tree1_aspen_a", 0, "aspen_a", "bo_aspen_a", []),
+("tree1_aspen_b", 0, "aspen_b", "bo_aspen_b", []),
+("tree1_aspen_c", 0, "aspen_c", "bo_aspen_c", []),
+("tree1_pine_1_a", 0, "pine_1_a", "bo_pine_1_a", []),
+("tree1_pine_1_b", 0, "pine_1_b", "bo_pine_1_b", []),
+("tree1_pine_2_a", 0, "pine_2_a", "bo_pine_2_a", []),
+("tree1_pine_3_a", 0, "pine_3_a", "bo_pine_3_a", []),
+("tree1_pine_4_a", 0, "pine_4_a", "bo_pine_4_a", []),
+("tree1_rock_c", 0, "rock_c", "bo_rock_c", []),
+("tree1_beech_d", 0, "beech_d", "bo_beech_d", []),
+("tree1_beech_e", 0, "beech_e", "bo_beech_e", []),
+("tree1_tree_12_a", 0, "tree_12_a", "bo_tree_12_a", []),
+("tree1_tree_12_b", 0, "tree_12_b", "bo_tree_12_b", []),
+("tree1_tree_12_c", 0, "tree_12_c", "bo_tree_12_c", []),
+("trees_end", 0, "spike_a", "0", []),	
+("football_ball",0,"stone_ball","0", []),
+("dolguldur_copy",0,"dolguldur_copy","0", []),
+("morannon_gate",0,"morannon_gate","0", [(ti_on_scene_prop_init,[(neg|is_currently_night),(set_fog_distance,800,0x150101),]),]),
+("mor_tower_a",0,"mor_tower_a","0", []),
+("evil_element",0,"evil_element","0", []),
+("evil_tunnel_a",0,"evil_tunnel_a","0", []),
+("minas_tirith_copy",0,"minas_tirith_copy","0", []),
 
 ##### CENTER GUARDS #####
-  ("troop_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
-        (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-        (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-		(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
-  ("troop_prison_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
-        (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-        (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
-		(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
-  ("troop_castle_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
-        (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-        (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
-		(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
+("troop_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
+("troop_prison_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
+("troop_castle_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
 
   
 #	("ZT_mb_", 0, "mesh", "bo_", []), for vanilla flora
@@ -1795,108 +1670,108 @@ scene_props = [
 	(display_message,"@Gate opens... You have reached the most sacred place in Middle Earth!"),   ]),
   ]),
 ## isengard props
-  ("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
-  ("isen_circular_wall", 0, "isen_circular_wall", "bo_isen_circular_wall", []),
-  ("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
-  ("isen_wood_construction", 0, "isen_wood_construction", "0", []),
-  ("isen_crane", 0, "isen_crane", "bo_isen_crane", []),
-  ("isen_awning", 0, "isen_awning", "0", []),
-  ("isen_tower_a", 0, "isen_tower_a", "0", []),
-  ("isen_tower_b", 0, "isen_tower_b", "bo_isen_tower_b", []),
-  ("isen_stairs", 0, "isen_stairs", "bo_isen_stairs", []),
-  ("isen_battlement_corner", 0, "isen_battlement_corner", "bo_isen_battlement_corner", []),
-  ("isen_square_keep_a", 0, "isen_square_keep_a", "bo_isen_square_keep_a", []),
-  ("isen_gate_house_a", 0, "isen_gate_house_a", "bo_isen_gate_house_a", []),
-  ("isen_post_a", 0, "isen_post_a", "bo_isen_post_a", []),
-  ("isen_gate_big", 0, "isen_gate_big", "bo_isen_gate_big", []),
-  ("isen_passage_house", 0, "isen_passage_house", "bo_isen_passage_house", []),
-  ("isen_good_ring_10", 0, "isen_good_ring_10", "bo_isen_good_ring_10", []),
+("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
+("isen_circular_wall", 0, "isen_circular_wall", "bo_isen_circular_wall", []),
+("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
+("isen_wood_construction", 0, "isen_wood_construction", "0", []),
+("isen_crane", 0, "isen_crane", "bo_isen_crane", []),
+("isen_awning", 0, "isen_awning", "0", []),
+("isen_tower_a", 0, "isen_tower_a", "0", []),
+("isen_tower_b", 0, "isen_tower_b", "bo_isen_tower_b", []),
+("isen_stairs", 0, "isen_stairs", "bo_isen_stairs", []),
+("isen_battlement_corner", 0, "isen_battlement_corner", "bo_isen_battlement_corner", []),
+("isen_square_keep_a", 0, "isen_square_keep_a", "bo_isen_square_keep_a", []),
+("isen_gate_house_a", 0, "isen_gate_house_a", "bo_isen_gate_house_a", []),
+("isen_post_a", 0, "isen_post_a", "bo_isen_post_a", []),
+("isen_gate_big", 0, "isen_gate_big", "bo_isen_gate_big", []),
+("isen_passage_house", 0, "isen_passage_house", "bo_isen_passage_house", []),
+("isen_good_ring_10", 0, "isen_good_ring_10", "bo_isen_good_ring_10", []),
   
-  ("isen_isengard_throne", 0, "isengard_throne", "bo_isengard_throne", []),
+("isen_isengard_throne", 0, "isengard_throne", "bo_isengard_throne", []),
   
-  ("dead_marshes_a", 0, "dead_a", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
-  ("dead_marshes_b", 0, "dead_b", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
-  ("dead_marshes_c", 0, "dead_c", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_lamp_fire"         ),])]),
-  ("dead_marshes_d", 0, "dead_d", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_fire_glow_1"       ),])]),
-  ("dead_marshes_e", 0, "dead_e", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
-  ("isen_wood_construction_b", 0, "isen_wood_construction_b", "0", []),
-  ("prop_cage_rusty", 0, "prop_cage_rusty", "0", []),
-  ("wagon_c", 0, "wagon_c", "0", []),
-  ("mt_fountain", 0, "mt_fountain", "bo_mt_fountain", []),
-  ("gondor_ruined_fountain", 0, "ruined_fountain", "bo_ruined_fountain", []),
-  ("palantir", 0, "palantir", "bo_palantir", []),
-  ("mt_horse_statue", 0, "mt_horse_statue", "0", []),
-  ("gondor_ruined_horse_statue", 0, "ruined_horse_statue", "0", []),
-  ("gondor_ruined_horse_statue_head", 0, "ruined_horse_statue_head", "0", []),
-  ("large_fire_pit", 0, "large_fire_pit", "0", []),
-  ("gondor_altar", 0, "altar", "bo_altar", []),
-  ("tree_mallorn_a", 0, "tree_mallorn_a", "bo_tree_mallorn_a", []),
-  ("tree_mallorn_b", 0, "tree_mallorn_b", "bo_tree_mallorn_b", []),
-  ("tree_mallorn_c", 0, "tree_mallorn_c", "bo_tree_mallorn_c", []),
-  ("tent_a", 0, "tent_a", "bo_tent_a", []),
-  ("tent_b", 0, "tent_b", "bo_tent_b", []),
-  ("tent_c", 0, "tent_c", "bo_tent_c", []),
-  ("gondor_man_statue", 0, "gondor_statue", "bo_gondor_statue", []),
-  ("gondor_ruined_man_statue", 0, "ruined_man_statue", "0", []),
-  ("gondor_ruined_man_torso", 0, "ruined_man_torso", "0", []),
-  ("rohan_tapestry_a", 0, "tapestry_rohirrim_a", "0", []),
-  ("rohan_tapestry_b", 0, "tapestry_rohirrim_b", "0", []),
-  ("rohan_tapestry_c", 0, "tapestry_rohirrim_c", "0", []),
+("dead_marshes_a", 0, "dead_a", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
+("dead_marshes_b", 0, "dead_b", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
+("dead_marshes_c", 0, "dead_c", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_lamp_fire"         ),])]),
+("dead_marshes_d", 0, "dead_d", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_fire_glow_1"       ),])]),
+("dead_marshes_e", 0, "dead_e", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
+("isen_wood_construction_b", 0, "isen_wood_construction_b", "0", []),
+("prop_cage_rusty", 0, "prop_cage_rusty", "0", []),
+("wagon_c", 0, "wagon_c", "0", []),
+("mt_fountain", 0, "mt_fountain", "bo_mt_fountain", []),
+("gondor_ruined_fountain", 0, "ruined_fountain", "bo_ruined_fountain", []),
+("palantir", 0, "palantir", "bo_palantir", []),
+("mt_horse_statue", 0, "mt_horse_statue", "0", []),
+("gondor_ruined_horse_statue", 0, "ruined_horse_statue", "0", []),
+("gondor_ruined_horse_statue_head", 0, "ruined_horse_statue_head", "0", []),
+("large_fire_pit", 0, "large_fire_pit", "0", []),
+("gondor_altar", 0, "altar", "bo_altar", []),
+("tree_mallorn_a", 0, "tree_mallorn_a", "bo_tree_mallorn_a", []),
+("tree_mallorn_b", 0, "tree_mallorn_b", "bo_tree_mallorn_b", []),
+("tree_mallorn_c", 0, "tree_mallorn_c", "bo_tree_mallorn_c", []),
+("tent_a", 0, "tent_a", "bo_tent_a", []),
+("tent_b", 0, "tent_b", "bo_tent_b", []),
+("tent_c", 0, "tent_c", "bo_tent_c", []),
+("gondor_man_statue", 0, "gondor_statue", "bo_gondor_statue", []),
+("gondor_ruined_man_statue", 0, "ruined_man_statue", "0", []),
+("gondor_ruined_man_torso", 0, "ruined_man_torso", "0", []),
+("rohan_tapestry_a", 0, "tapestry_rohirrim_a", "0", []),
+("rohan_tapestry_b", 0, "tapestry_rohirrim_b", "0", []),
+("rohan_tapestry_c", 0, "tapestry_rohirrim_c", "0", []),
 
-  ("osgiliath_broken_bridge_beams", 0, "osgiliath_broken_bridge_beams", "bo_osgiliath_broken_bridge_beams", []),
+("osgiliath_broken_bridge_beams", 0, "osgiliath_broken_bridge_beams", "bo_osgiliath_broken_bridge_beams", []),
 
-  ("banner_stand_a", 0, "battle_banner_stand_a", "0", []),
-  ("banner_stand_b", 0, "battle_banner_stand_b", "0", []),
-  ("banner_stand_orc", 0, "orc_banner_stand", "0", []),
+("banner_stand_a", 0, "battle_banner_stand_a", "0", []),
+("banner_stand_b", 0, "battle_banner_stand_b", "0", []),
+("banner_stand_orc", 0, "orc_banner_stand", "0", []),
 ## Brutus tents
-  ("elf_tent_short", 0, "elfTentShort", "bo_elfTentShort", []),
-  ("elf_tent_tall", 0, "elfTentTall", "bo_elfTentTall", []),
-  ("orc_tent_small", 0, "orcTentSmall", "bo_orcTentSmall", []),
-  ("rhun_tent_large", 0, "rhunTentLarge", "bo_rhunTentLarge", []),
-  ("rhun_yurt", 0, "rhunYurt", "bo_rhunYurt", []),
-  ("khand_tent_a", 0, "khandTent_a", "bo_khandTent_a", []),
-  ("khand_tent_b", 0, "khandTent_b", "bo_khandTent_a", []),
-  ("harad_tent_tusks", 0, "haradTentTusks", "bo_haradTentTusks", []),
-  ("harad_tent_a", 0, "haradTent_a", "bo_haradTent_a", []),
-  ("harad_tent_b", 0, "haradTent_b", "bo_haradTent_a", []),
-  ("harad_oliphant", 0, "oliphant", "bo_oliphant", []),
+("elf_tent_short", 0, "elfTentShort", "bo_elfTentShort", []),
+("elf_tent_tall", 0, "elfTentTall", "bo_elfTentTall", []),
+("orc_tent_small", 0, "orcTentSmall", "bo_orcTentSmall", []),
+("rhun_tent_large", 0, "rhunTentLarge", "bo_rhunTentLarge", []),
+("rhun_yurt", 0, "rhunYurt", "bo_rhunYurt", []),
+("khand_tent_a", 0, "khandTent_a", "bo_khandTent_a", []),
+("khand_tent_b", 0, "khandTent_b", "bo_khandTent_a", []),
+("harad_tent_tusks", 0, "haradTentTusks", "bo_haradTentTusks", []),
+("harad_tent_a", 0, "haradTent_a", "bo_haradTent_a", []),
+("harad_tent_b", 0, "haradTent_b", "bo_haradTent_a", []),
+("harad_oliphant", 0, "oliphant", "bo_oliphant", []),
 
 # Romainoir Rohan buildings
-  ("rohan_birdhouse",0,"rohan_birdhouse","bo_birdhouse",[]),
-  ("rohan_platform",0,"rohan_platform","bo_rangefoin",[]),
-  ("rohan_meduseld",0,"rohan_meduseld","bo_meduseld",[]),
-  ("rohan_house1",0,"rohan_house1","bo_house1",[]),
-  ("rohan_house2",0,"rohan_house2","bo_house2",[]),
-  ("rohan_house3",0,"rohan_house3","bo_house3",[]),
-  ("rohan_house4",0,"rohan_house4","bo_house4",[]),
-  ("rohan_house5",0,"rohan_house5","bo_house5",[]),
-  ("rohan_stables1",0,"rohan_stables1","0",[]),
-  ("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
-  ("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),  
+("rohan_birdhouse",0,"rohan_birdhouse","bo_birdhouse",[]),
+("rohan_platform",0,"rohan_platform","bo_rangefoin",[]),
+("rohan_meduseld",0,"rohan_meduseld","bo_meduseld",[]),
+("rohan_house1",0,"rohan_house1","bo_house1",[]),
+("rohan_house2",0,"rohan_house2","bo_house2",[]),
+("rohan_house3",0,"rohan_house3","bo_house3",[]),
+("rohan_house4",0,"rohan_house4","bo_house4",[]),
+("rohan_house5",0,"rohan_house5","bo_house5",[]),
+("rohan_stables1",0,"rohan_stables1","0",[]),
+("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
+("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),  
   
 # Llew Rohan buildings
-  ("rohan_palisade",0,"rohan_palisade_a","bo_rohan_palisade_a",[]),
-  ("rohan_palisade_slope",0,"rohan_palisade_b","bo_rohan_palisade_b",[]),
-  ("rohan_house6",0,"rohan_house6","bo_house6",[]),
-  ("rohan_house7",0,"rohan_house7","bo_house7",[]),
+("rohan_palisade",0,"rohan_palisade_a","bo_rohan_palisade_a",[]),
+("rohan_palisade_slope",0,"rohan_palisade_b","bo_rohan_palisade_b",[]),
+("rohan_house6",0,"rohan_house6","bo_house6",[]),
+("rohan_house7",0,"rohan_house7","bo_house7",[]),
 
 # Kolba Erebor dungeon stuff  
+("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
+("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
+("erebor",0,"hallfini","bo_hallfini", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
 
-  ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
-  ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
-  ("erebor",0,"hallfini","bo_hallfini", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
-  ("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
-  ("thranduil_helm1",0,"statuemirk_helm1","0",[]),
-  ("thranduil_helm2",0,"statuemirk_helm2","0",[]),
-  ("thranduil_helm3",0,"statuemirk_helm3","0",[]),
-  ("thranduil_bow",0,"statuemirk_bow","0",[]),
-  ("thranduil_longsword",0,"statuemirk_longsword","0",[]),
-  ("thranduil_whiteknife",0,"statuemirk_white_knife","0",[]),
-  ("thranduil_greatspear",0,"statuemirk_great_spear","0",[]),
-  ("thranduil_warspear",0,"statuemirk_war_spear","0",[]),
-  ("thranduil_medshield",0,"statuemirk_med_shield","0",[]),
+("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
+("thranduil_helm1",0,"statuemirk_helm1","0",[]),
+("thranduil_helm2",0,"statuemirk_helm2","0",[]),
+("thranduil_helm3",0,"statuemirk_helm3","0",[]),
+("thranduil_bow",0,"statuemirk_bow","0",[]),
+("thranduil_longsword",0,"statuemirk_longsword","0",[]),
+("thranduil_whiteknife",0,"statuemirk_white_knife","0",[]),
+("thranduil_greatspear",0,"statuemirk_great_spear","0",[]),
+("thranduil_warspear",0,"statuemirk_war_spear","0",[]),
+("thranduil_medshield",0,"statuemirk_med_shield","0",[]),
 
-  ("door_erebor",sokf_destructible|spr_hit_points(5001),"door_a","bo_door_a",   [
+("door_erebor",sokf_destructible|spr_hit_points(5001),"door_a","bo_door_a",   [
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
 	(prop_instance_get_starting_position, pos1, ":instance_no"),
@@ -1915,26 +1790,26 @@ scene_props = [
     (try_end),]),
   ]),
 
-  ("moria_altar",0,"moria_altar","bo_moria_altar",[]),
-  ("moria_rubble",0,"moria_rubble","bo_moria_rubble",[]),
-  ("moria_rubble_wall",0,"moria_rubble_wall","bo_moria_rubble_wall",[]),
-  ("moria_rubble_blocks",0,"moria_rubble_blocks","bo_moria_rubble_blocks",[]),
+("moria_altar",0,"moria_altar","bo_moria_altar",[]),
+("moria_rubble",0,"moria_rubble","bo_moria_rubble",[]),
+("moria_rubble_wall",0,"moria_rubble_wall","bo_moria_rubble_wall",[]),
+("moria_rubble_blocks",0,"moria_rubble_blocks","bo_moria_rubble_blocks",[]),
 
-  ("elf_bridge",0,"elf_bridge","bo_elf_bridge",[]),  
-  ("elf_ramp",0,"elf_ramp","bo_elf_ramp",[]),  
-  ("elf_treehouse",0,"elf_treehouse","bo_elf_treehouse",[]),  
+("elf_bridge",0,"elf_bridge","bo_elf_bridge",[]),  
+("elf_ramp",0,"elf_ramp","bo_elf_ramp",[]),  
+("elf_treehouse",0,"elf_treehouse","bo_elf_treehouse",[]),  
 
-  ("rohan_woodstairs",0,"rohan_woodstairs","bo_rohan_woodstairs",[]),
+("rohan_woodstairs",0,"rohan_woodstairs","bo_rohan_woodstairs",[]),
 
-  ("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
-  ("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
-  ("distant_mountain_white",sokf_place_at_origin|sokf_moveable,"mountains_outer","0",[]),
+("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
+("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
+("distant_mountain_white",sokf_place_at_origin|sokf_moveable,"mountains_outer","0",[]),
   
-  ("rock_cliff",0,"cliff","bo_cliff",[]),
-  ("rock_cliff_a",0,"cliff_a","bo_cliff_a",[]),
-#  ("rock_cliff_1",0,"rock_cliff_1","bo_rock_cliff_1",[]),
-#  ("rock_boulder_1",0,"rock_boulder_1","bo_rock_boulder_1",[]),
-#  ("rock_flat_1",0,"rock_flat_1","bo_rock_flat_1",[]),
+("rock_cliff",0,"cliff","bo_cliff",[]),
+("rock_cliff_a",0,"cliff_a","bo_cliff_a",[]),
+#("rock_cliff_1",0,"rock_cliff_1","bo_rock_cliff_1",[]),
+#("rock_boulder_1",0,"rock_boulder_1","bo_rock_boulder_1",[]),
+#("rock_flat_1",0,"rock_flat_1","bo_rock_flat_1",[]),
   
   
  ]

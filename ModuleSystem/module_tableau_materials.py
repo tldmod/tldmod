@@ -389,6 +389,7 @@ tableaus = [
        (init_position, pos1),
        (position_set_x, pos1, -5),
        (position_set_y, pos1, 130),
+	   
        (cur_tableau_add_mesh, ":banner_mesh", pos1, 113, 0),
        (cur_tableau_add_mesh, "mesh_banner_a01", pos1, 116, 0),
        (init_position, pos1),
