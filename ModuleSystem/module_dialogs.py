@@ -760,8 +760,8 @@ dialogs = [
   [anyone,"view_member_char_requested", [], "All right, let me tell you...", "do_member_view_char",[(change_screen_view_character)]],
 
   [anyone|plyr,"member_talk", [], "We need to separate for a while.", "member_separate",[
-            (call_script, "script_npc_morale", "$g_talk_troop"),
-            (assign, "$npc_quit_morale", reg0),
+            # (call_script, "script_npc_morale", "$g_talk_troop"),
+            # (assign, "$npc_quit_morale", reg0),
       ]],
 
   [anyone,"member_separate", [
@@ -2578,7 +2578,7 @@ dialogs = [
      (setup_quest_text, "qst_follow_army"),
      (str_store_string, s2, "@Your mission is complete, {s9} wants you to resume following his army until further notice."),
      (call_script, "script_start_quest", "qst_follow_army", "$g_talk_troop"),
-     (assign, "$g_player_follow_army_warnings", 0),
+     #(assign, "$g_player_follow_army_warnings", 0),
      ]],
 
   [anyone|plyr, "lord_deliver_cattle_to_army_thank", [],
@@ -2607,7 +2607,7 @@ dialogs = [
      (setup_quest_text, "qst_follow_army"),
      (str_store_string, s2, "@Your mission is complete, {s9} wants you to resume following his army until further notice."),
      (call_script, "script_start_quest", "qst_follow_army", "$g_talk_troop"),
-     (assign, "$g_player_follow_army_warnings", 0),
+     #(assign, "$g_player_follow_army_warnings", 0),
      ]],
 
   [anyone|plyr, "lord_scout_waypoints_thank", [],
@@ -2682,7 +2682,7 @@ dialogs = [
      (setup_quest_text, "qst_follow_army"),
      (str_store_string, s2, "@{s9} wants you to follow his army until further notice."),
      (call_script, "script_start_quest", "qst_follow_army", "$g_talk_troop"),
-     (assign, "$g_player_follow_army_warnings", 0),
+     #(assign, "$g_player_follow_army_warnings", 0),
      (assign, "$g_leave_encounter", 1),
    ]],
 

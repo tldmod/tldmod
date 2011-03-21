@@ -949,7 +949,7 @@ scripts = [
   # INPUT: none
   ("game_start",
    [  (assign, "$g_fangorn_rope_pulled", 0),
-	  (assign, "$g_ent_seen", 0),
+	  #(assign, "$g_ent_seen", 0),
 	  (assign, "$g_ent_water_ever_drunk", 0),
 	  (assign, "$g_ent_water_taking_effect", 0),
       (faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
@@ -1557,7 +1557,7 @@ scripts = [
 
 #NPC companion changes begin
        (call_script, "script_party_count_fit_regulars", "p_main_party"),
-       (assign, "$playerparty_prebattle_regulars", reg0),
+       #(assign, "$playerparty_prebattle_regulars", reg0),
 
        (assign, "$g_last_rest_center", -1),
        (assign, "$talk_context", 0),
@@ -6704,7 +6704,7 @@ scripts = [
         (setup_quest_text, "qst_follow_army"),
         (str_store_string, s2, "@{s9} wants you to resume following his army until further notice."),
         (call_script, "script_start_quest", "qst_follow_army", ":faction_marshall"),
-        (assign, "$g_player_follow_army_warnings", 0),
+        #(assign, "$g_player_follow_army_warnings", 0),
       (try_end),
       (store_faction_of_party, ":old_faction", ":center_no"),
       (call_script, "script_give_center_to_faction_aux", ":center_no", ":faction_no"),
@@ -8962,8 +8962,9 @@ scripts = [
         (neg|main_party_has_troop, ":cur_troop"), #not already hired
         (store_faction_of_party, ":center_faction", ":center_no"),
         (store_troop_faction, ":troop_faction", ":cur_troop"),
-        (eq, ":center_faction", ":troop_faction"), #only spawn if center wasn't captured
-        (lt, ":cur_pos", 32), # spawn up to entry point 32
+        (store_relation, ":rel", ":center_faction", ":troop_faction"),
+        (ge, ":rel", 0), #only spawn if friendly center
+        (lt, ":cur_pos", 32), # spawn up to entry point 32, can have multiple companions in a single town castle
         (set_visitor, ":cur_pos", ":cur_troop"),
         (val_add,":cur_pos", 1),
       (try_end),

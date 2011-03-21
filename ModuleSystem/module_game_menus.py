@@ -1091,7 +1091,8 @@ game_menus = [
 
 ("choose_gender",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Your gender?", "none",[],
- [("start_male"  ,[],"Male"   ,[(assign,"$character_gender",tf_male  ),(jump_to_menu,"mnu_choose_skill"),]),
+ [("start_male"  ,[],"Male"   ,[#(assign,"$character_gender",tf_male  ),
+    (jump_to_menu,"mnu_choose_skill"),]),
   ("start_female",[],"Female" ,[
     (troop_set_type,"trp_player",tf_female), # override race for females elves and mans
     #(assign,"$character_gender",tf_female), no need
@@ -1304,7 +1305,8 @@ game_menus = [
 			(call_script, "script_compute_wage_per_faction",y),
 			(gt, reg4, 0),
 			(faction_get_slot, reg5, y, slot_faction_respoint),
-		],"{s4}: {reg4} Res. pts ({reg5})",[(assign, "$menu_report_upkeep_faction", y),(jump_to_menu, "mnu_upkeep_report")
+		],"{s4}: {reg4} Res. pts ({reg5})",[#(assign, "$menu_report_upkeep_faction", y),
+            (jump_to_menu, "mnu_upkeep_report")
 		])
 	]for y in range(kingdoms_begin_i,kingdoms_end_i) ])+
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
@@ -1457,7 +1459,7 @@ game_menus = [
 				(change_screen_mission), #run mission
 			(else_try),
 				(assign,"$g_camp_mode", 1),
-				(assign, "$g_infinite_camping", 0),
+				#(assign, "$g_infinite_camping", 0),
 				(assign, "$g_player_icon_state", pis_camping),
 				(rest_for_hours_interactive, 24 * 365, 5, 1), #rest while attackable
 				(change_screen_return),
@@ -2621,23 +2623,23 @@ game_menus = [
  "^^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
  "none",
  [],
- [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),	   
-  ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1),(assign,"$character_gender",tf_female),(jump_to_menu,"mnu_camp"),]),
-  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2),(assign,"$character_gender",tf_male),(assign,"$players_kingdom","fac_gondor"),(jump_to_menu, "mnu_camp"),]),
-  ("race_rohan"     ,[],"Rohan"     ,[(troop_set_type,"trp_player", 3),(assign,"$character_gender",tf_male),(assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
-  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4),(assign,"$character_gender",tf_male),(assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
-  ("race_orc"       ,[],"Orc"       ,[(troop_set_type,"trp_player", 5),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_uruk"      ,[],"Uruk"      ,[(troop_set_type,"trp_player", 6),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_haradrim"  ,[],"Haradrim"  ,[(troop_set_type,"trp_player", 7),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),	   
-  ("race_easterling",[],"Easterling",[(troop_set_type,"trp_player", 8),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_dwarf"     ,[],"Dwarf"     ,[(troop_set_type,"trp_player", 9),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_troll"     ,[],"Troll"     ,[(troop_set_type,"trp_player",10),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),	   
-  ("race_dunedain"  ,[],"Dunedain"  ,[(troop_set_type,"trp_player",11),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_lothlorien",[],"Lothlorien",[(troop_set_type,"trp_player",12),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),
-  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15),(assign,"$character_gender",tf_male),(jump_to_menu, "mnu_camp"),]),	   
+ [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
+  ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
+  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"), (jump_to_menu, "mnu_camp"),]),
+  ("race_rohan"     ,[],"Rohan"     ,[(troop_set_type,"trp_player", 3), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
+  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
+  ("race_orc"       ,[],"Orc"       ,[(troop_set_type,"trp_player", 5), (jump_to_menu, "mnu_camp"),]),
+  ("race_uruk"      ,[],"Uruk"      ,[(troop_set_type,"trp_player", 6), (jump_to_menu, "mnu_camp"),]),
+  ("race_haradrim"  ,[],"Haradrim"  ,[(troop_set_type,"trp_player", 7), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_easterling",[],"Easterling",[(troop_set_type,"trp_player", 8), (jump_to_menu, "mnu_camp"),]),
+  ("race_dwarf"     ,[],"Dwarf"     ,[(troop_set_type,"trp_player", 9), (jump_to_menu, "mnu_camp"),]),
+  ("race_troll"     ,[],"Troll"     ,[(troop_set_type,"trp_player",10), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_dunedain"  ,[],"Dunedain"  ,[(troop_set_type,"trp_player",11), (jump_to_menu, "mnu_camp"),]),
+  ("race_lothlorien",[],"Lothlorien",[(troop_set_type,"trp_player",12), (jump_to_menu, "mnu_camp"),]),
+  ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13), (jump_to_menu, "mnu_camp"),]),
+  ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
+  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),	   
   ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
  ]
 ),  
@@ -4314,7 +4316,7 @@ game_menus = [
              (setup_quest_text, "qst_follow_army"),
              (str_store_string, s2, "@{s9} wants you to follow his army until further notice."),
              (call_script, "script_start_quest", "qst_follow_army", ":faction_marshall"),
-             (assign, "$g_player_follow_army_warnings", 0),
+             #(assign, "$g_player_follow_army_warnings", 0),
            (try_end),
            (try_begin),
              (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
@@ -4358,7 +4360,7 @@ game_menus = [
            (setup_quest_text, "qst_follow_army"),
            (str_store_string, s2, "@{s9} wants you to follow his army until further notice."),
            (call_script, "script_start_quest", "qst_follow_army", ":faction_marshall"),
-           (assign, "$g_player_follow_army_warnings", 0),
+           #(assign, "$g_player_follow_army_warnings", 0),
          (try_end),
          (jump_to_menu,"mnu_castle_attack_walls_with_allies_simulate")]),
       ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
@@ -6778,11 +6780,13 @@ game_menus = [
              #TLD NPC companions
              (try_begin),
                (party_slot_eq,"$current_town", slot_town_castle, -1), #no town castle
+               (neq, "$sneaked_into_town", 1), #haven't sneaked in
                (try_for_range, ":cur_troop", companions_begin, companions_end),
                  (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
                  (neg|main_party_has_troop, ":cur_troop"), #not already hired
                  (store_troop_faction, ":troop_faction", ":cur_troop"),
-                 (eq, ":town_faction", ":troop_faction"), #only spawn if center wasn't captured
+                 (store_relation, ":rel", ":town_faction", ":troop_faction"),
+                 (ge, ":rel", 0), #only spawn if friendly center
                  (set_visitor, 9, ":cur_troop"), #only one companion NPC per town!
                (try_end),
              (try_end),

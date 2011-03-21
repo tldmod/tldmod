@@ -234,7 +234,7 @@ custom_commander_camera = (0, 0, 0.5, [],
         (try_end),
       ])
 	  
-test_val_and = (0, 0, 0.5,[(key_clicked, key_p)],[(assign, reg30, "$mask"),(assign, reg31, "$mask"),(val_and, reg31 ,512),(display_message,"@Mask: {reg30} Result: {reg31}"),(val_mul,"$mask",2)])
+#test_val_and = (0, 0, 0.5,[(key_clicked, key_p)],[(assign, reg30, "$mask"),(assign, reg31, "$mask"),(val_and, reg31 ,512),(display_message,"@Mask: {reg30} Result: {reg31}"),(val_mul,"$mask",2)])
 
 ########## Vanilla siege and tournament triggers
 

@@ -3440,7 +3440,7 @@ mission_templates = [
         (assign, "$attacker_team", 1),
         (assign, "$defender_team_2", 3),
         (assign, "$attacker_team_2", 2), 
-					(assign,"$mask",1),
+					#(assign,"$mask",1),
 #		(display_message,"@DEBUG: mission template dynamic scene"),
        ],[]),
 	   
