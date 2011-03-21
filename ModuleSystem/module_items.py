@@ -1146,4 +1146,8 @@ items =[
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 ["witchking_helmet","Witchking_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_covers_head,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
 # let   witchking_helmet  be the last item (mtarini)
+["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2010,weight(248)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(0),0,],
+["ent_head_helm","Ent_Head",[("ent_head",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
+["ent_feet_boots","Ent_Feet",[("ent_foot",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(40)|body_armor(55)|leg_armor(55)|difficulty(40),0],
+["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(30),0],
 ]

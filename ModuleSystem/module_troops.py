@@ -425,7 +425,7 @@ troops = [
 ["beorning_carrock_berserker","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
    [itm_beorn_berserk,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_dale_helmet_b,itm_dwarf_sword_a,itm_dale_sword,itm_beorn_battle_axe,itm_dale_sword_long,],
       def_attrib|level(25),wp(140),knows_common|knows_athletics_4|knows_power_strike_3|knows_ironflesh_4,beorn_face1,beorn_face2],
-["northmen_items","BUG","BUG",tf_hero,0,0,fac_beorn,
+["northmen_items","BUG","_",tf_hero,0,0,fac_beorn,
    [itm_leather_gloves,],
       0,0,0,0],
 #Dale
@@ -1358,9 +1358,9 @@ troops = [
 ["olog_hai","Olog_Hai_of_Mordor","Olog_Hai_of_Mordor",tf_troll| tfg_helm| tfg_boots| tfg_gloves| tfg_armor| tf_no_capture_alive,0,0,fac_mordor,
    [itm_giant_mace,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
       str_255| agi_3| int_3| cha_3|level(7),wp(75),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
-["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_commoners,
-   [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_troll_feet_boots,itm_troll_head_helm,itm_troll_head_helm_b,itm_troll_head_helm_c,itm_ent_water,],
-      str_255| agi_3| int_3| cha_3|level(8),wp(75),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
+["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,
+   [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_ent_feet_boots,itm_ent_head_helm,itm_ent_body,itm_ent_hands,itm_ent_water,],
+      str_255| agi_3| int_3| cha_3|level(8),wp(75),knows_power_strike_10|knows_ironflesh_10,0],
 # Dol Guldur Orcs (duplicates of Mordor orcs!)  # not used so far, only for the start players 
 ["orc_snaga_of_guldur","Orc_Snaga_of_Guldur","Orc_Snagas_of_Dol_Guldur",tf_orc| tf_no_capture_alive,0,0,fac_guldur,
    [itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_machete,itm_orc_simple_spear,itm_orc_axe,itm_orc_helm_a,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,],

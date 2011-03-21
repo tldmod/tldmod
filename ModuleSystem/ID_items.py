@@ -807,3 +807,7 @@ itm_dwarf_chain_boots = 805
 itm_dwarf_scale_boots = 806
 itm_far_harad_shield_paint = 807
 itm_witchking_helmet = 808
+itm_ent_body = 809
+itm_ent_head_helm = 810
+itm_ent_feet_boots = 811
+itm_ent_hands = 812
