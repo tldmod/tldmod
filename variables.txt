@@ -29,7 +29,6 @@ g_comment_found
 g_leave_encounter
 g_move_heroes
 supported_pretender
-npc_quit_morale
 temp
 g_center_taken_by_player_faction
 map_talk_troop
@@ -494,11 +493,4 @@ atak
 faction_good
 faction_evil
 cbadvantage
-g_player_follow_army_warnings
-character_gender
-menu_report_upkeep_faction
-g_infinite_camping
-mask
-g_ent_seen
-playerparty_prebattle_regulars
 g_mvtest_faction
