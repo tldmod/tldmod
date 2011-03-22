@@ -109,7 +109,12 @@ slot_faction_num_towns               = 82
 ##################################
 # TLD War System faction (foxyman)
 #
-slot_faction_strength               = 150 # strength 0-7000
+
+#MV: these two used for tracking strength gain/loss for balancing purposes, not needed for release
+slot_faction_debug_str_gain         = 148
+slot_faction_debug_str_loss         = 149
+
+slot_faction_strength               = 150 # strength 0-7000, no upper limit
 slot_faction_party_map_banner		= 151
 slot_faction_hosts                  = 152 # number of alive hosts
 slot_faction_strength_tmp           = 153 # strength changes from killed parties enter here first, then processed through onmap trigger each hour (to make messages work ok)
@@ -1397,11 +1402,11 @@ ws_host_limit_multiplier = 4
 
 # TLD Party victory points. Faction strength got diminished by these when party is killed.
 ws_scout_vp   = 20
-ws_patrol_vp  = 100
 ws_raider_vp  = 50
+ws_patrol_vp  = 100
 ws_caravan_vp = 200
-ws_host_vp    = 300  # for hero-led parties (hosts). Only those killed can flip faction strength to lower level
 ws_alone_vp   = 100  # for hero-led parties (alone).
+ws_host_vp    = 300  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
 ws_p_train_vp = 50
 ws_center_vp  = 500  # loss of center
 

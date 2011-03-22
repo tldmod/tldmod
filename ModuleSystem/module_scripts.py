@@ -384,7 +384,7 @@ scripts = [
   
 # input: faction f,  party x
 # output: Reg10 = closest party to x enemy of f,   Reg11 = its dist
-("find_closest_enemy_town_or_mayor_party",[
+("find_closest_enemy_town_or_host",[
 	(store_script_param, ":fac", 1),
 	(store_script_param, ":target", 2),
 	(assign, ":mindist", 100000),
@@ -401,7 +401,7 @@ scripts = [
 	 
 	   (ge, ":relation", 0), # and it's your friend
        
-	   (party_get_slot, ":val", ":party", slot_party_victory_value),(this_or_next|ge, ":val", ws_host_vp),  # its a host
+       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),  # its a host
 	   (is_between, ":party", towns_begin, towns_end),  #or a town
  
        (lt, ":dist", ":mindist"),
@@ -3618,7 +3618,11 @@ scripts = [
 	    #(party_get_slot,":party_type", ":root_party",slot_party_type),
 #	    (try_begin),
 #	      (eq,":party_type",spt_kingdom_hero_party), #hosts dying decrease faction strength unconditionally 
-		  (val_sub, ":strength",":party_value"),
+		  (val_sub, ":strength", ":party_value"),
+          #debug stuff
+          (faction_get_slot, ":debug_loss", ":faction", slot_faction_debug_str_loss),
+		  (val_add, ":debug_loss", ":party_value"),
+          (faction_set_slot, ":faction", slot_faction_debug_str_loss, ":debug_loss"),
 #	    (else_try),
 #		  (store_div,":s0",":strength",1000),
 #		  (store_sub,":s",":strength",":party_value"),
@@ -3634,6 +3638,10 @@ scripts = [
 		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
 		    (val_add, ":winner_strength", ":win_value"),
 	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
+            #debug stuff
+            (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),
+		    (val_add, ":debug_gain", ":win_value"),
+            (faction_set_slot, ":winner_faction", slot_faction_debug_str_gain, ":debug_gain"),
           (try_end),
           #debug
           (try_begin),
@@ -6829,11 +6837,19 @@ scripts = [
       (faction_get_slot,":strength",":old_faction",slot_faction_strength_tmp),
       (val_sub, ":strength", ws_center_vp),
       (faction_set_slot,":old_faction",slot_faction_strength_tmp,":strength"),
+      #debug stuff
+      (faction_get_slot, ":debug_loss", ":old_faction", slot_faction_debug_str_loss),
+      (val_add, ":debug_loss", ws_center_vp),
+      (faction_set_slot, ":old_faction", slot_faction_debug_str_loss, ":debug_loss"),
       #TLD: conquering faction gains faction strength
       (faction_get_slot,":winner_strength",":faction_no",slot_faction_strength_tmp),
       (store_div, ":win_value", ws_center_vp, 2), #this formula could be balanced after playtesting
       (val_add, ":winner_strength", ":win_value"),
       (faction_set_slot,":faction_no",slot_faction_strength_tmp,":winner_strength"),
+      #debug stuff
+      (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain),
+      (val_add, ":debug_gain", ":win_value"),
+      (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"),
       #debug
       (try_begin),
         (eq, cheat_switch, 1),
@@ -6843,7 +6859,8 @@ scripts = [
         (assign,reg3,":winner_strength"),
         (str_store_faction_name,s1,":old_faction"),
         (str_store_faction_name,s2,":faction_no"),
-        (display_message,"@DEBUG: Center captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+        (str_store_party_name,s3,":center_no"),
+        (display_message,"@DEBUG: {s3} captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
       (try_end),
 
       (call_script, "script_update_faction_notes", ":old_faction"),

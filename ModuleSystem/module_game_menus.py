@@ -145,6 +145,7 @@ game_menus = [
 	],
     [ ("continue",[],"Go forth upon you chosen path...",
        [(troop_equip_items, "trp_player"),
+        (troop_sort_inventory, "trp_player"),
         (change_screen_map), #(change_screen_return),
         ]),
 		("spacer",[]," "  ,[]),
@@ -1524,8 +1525,10 @@ game_menus = [
      (troop_add_item, "trp_player","itm_gon_tower_knight",0), #imod_lordly
      (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
      (troop_add_item, "trp_player","itm_dol_greaves",0), #imod_lordly
-     (troop_add_item, "trp_player","itm_lembas",0),
+     (troop_add_items, "trp_player","itm_lembas",3),
+     (troop_add_items, "trp_player","itm_map",6),
      (troop_equip_items, "trp_player"),
+     (troop_sort_inventory, "trp_player"),
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
@@ -1538,33 +1541,34 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
-    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
-       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
-       (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
-       (faction_set_slot,":cur_kingdom",slot_faction_strength_tmp,-1000),
-    (try_end),
-    (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
-   ]),
+   # ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
+    # (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+       # (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+       # (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+       # (faction_set_slot,":cur_kingdom",slot_faction_strength_tmp,-1000),
+    # (try_end),
+    # (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
+   # ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
+   ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
    ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
    ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
-   ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
-     (assign, ":root_defeated_party", "p_town_hornburg"),
-     (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
-     # disable and replace with ruins
-     (set_spawn_radius, 0),
-     (spawn_around_party, ":root_defeated_party", "pt_ruins"),
-     (assign, ":ruin_party", reg0),
-     #(party_get_icon, ":map_icon", ":root_defeated_party"),
-     #(party_set_icon, ":ruin_party", ":map_icon"),
-     (str_store_party_name, s1, ":root_defeated_party"),
-     (disable_party, ":root_defeated_party"),
-     (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_medium, 1),
-     (party_set_name, ":ruin_party", "@{s1} ruins"),
-     (display_message, "@Hornburg razed - check map!", 0x30FFC8),
-   ]),
+   # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
+     # (assign, ":root_defeated_party", "p_town_hornburg"),
+     # (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
+     # # disable and replace with ruins
+     # (set_spawn_radius, 0),
+     # (spawn_around_party, ":root_defeated_party", "pt_ruins"),
+     # (assign, ":ruin_party", reg0),
+     # #(party_get_icon, ":map_icon", ":root_defeated_party"),
+     # #(party_set_icon, ":ruin_party", ":map_icon"),
+     # (str_store_party_name, s1, ":root_defeated_party"),
+     # (disable_party, ":root_defeated_party"),
+     # (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_medium, 1),
+     # (party_set_name, ":ruin_party", "@{s1} ruins"),
+     # (display_message, "@Hornburg razed - check map!", 0x30FFC8),
+   # ]),
    ("camp_mvtest_notes",[],"Update lord locations.",[
      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (call_script, "script_update_troop_location_notes", ":troop_no", 0),
@@ -1590,11 +1594,14 @@ game_menus = [
       (call_script, "script_faction_strength_string", ":cur_kingdom"),
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
-      (str_store_string, s2, "@{s2}^{s4}: {reg1} ({s23})"),
+      (faction_get_slot, reg2, ":cur_kingdom", slot_faction_debug_str_gain),
+      (faction_get_slot, reg3, ":cur_kingdom", slot_faction_debug_str_loss),
+      (val_sub, reg2, reg3),
+      (str_store_string, s2, "@{s2}^{s4}: {reg1} ({s23}) Diff: {reg2}"),
     (try_end),
     (str_store_string, s1, "@Faction strengths report:^{s2}"),
     ],
-    [("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    [("continue",[],"Back to test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
   
@@ -1608,6 +1615,7 @@ game_menus = [
       (faction_get_slot, ":faction_ai_state", ":cur_kingdom", slot_faction_ai_state),
       (faction_get_slot, ":faction_ai_object", ":cur_kingdom", slot_faction_ai_object),
       (faction_get_slot, ":faction_theater", ":cur_kingdom", slot_faction_active_theater),
+      (faction_get_slot, ":home_theater", ":cur_kingdom", slot_faction_home_theater),
       
 	  # calculate number of active hosts
       (assign,":hosts",0),
@@ -1645,6 +1653,22 @@ game_menus = [
       
       # theater string
       (try_begin),
+        (eq, ":home_theater", theater_SE),
+        (str_store_string, s9, "@SE"),
+      (else_try),
+        (eq, ":home_theater", theater_SW),
+        (str_store_string, s9, "@SW"),
+      (else_try),
+        (eq, ":home_theater", theater_C),
+        (str_store_string, s9, "@C"),
+      (else_try),
+        (eq, ":home_theater", theater_N),
+        (str_store_string, s9, "@N"),
+      (else_try),
+        (str_store_string, s9, "@INVALID"),
+      (try_end),
+      # theater string
+      (try_begin),
         (eq, ":faction_theater", theater_SE),
         (str_store_string, s10, "@SE"),
       (else_try),
@@ -1663,7 +1687,7 @@ game_menus = [
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
       (assign, reg2, ":hosts"),
-      (str_store_string, s2, "@{s2}^{s4}: Th:{s10} Str:{reg1} Hosts:{reg2} {s11}"),
+      (str_store_string, s2, "@{s2}^{s4}: Th: {s9}-{s10} Str: {reg1} Hosts: {reg2} {s11}"),
     (try_end),
     (str_store_string, s1, "@Faction AI report:^{s2}"),
     ],
@@ -1686,6 +1710,7 @@ game_menus = [
       (faction_get_slot, ":faction_ai_state", ":cur_kingdom", slot_faction_ai_state),
       (faction_get_slot, ":faction_ai_object", ":cur_kingdom", slot_faction_ai_object),
       (faction_get_slot, ":faction_theater", ":cur_kingdom", slot_faction_active_theater),
+      (faction_get_slot, ":home_theater", ":cur_kingdom", slot_faction_home_theater),
       
 	  # calculate number of active hosts
       (assign,":hosts",0),
@@ -1723,6 +1748,22 @@ game_menus = [
       
       # theater string
       (try_begin),
+        (eq, ":home_theater", theater_SE),
+        (str_store_string, s9, "@SE"),
+      (else_try),
+        (eq, ":home_theater", theater_SW),
+        (str_store_string, s9, "@SW"),
+      (else_try),
+        (eq, ":home_theater", theater_C),
+        (str_store_string, s9, "@C"),
+      (else_try),
+        (eq, ":home_theater", theater_N),
+        (str_store_string, s9, "@N"),
+      (else_try),
+        (str_store_string, s9, "@INVALID"),
+      (try_end),
+      # theater string
+      (try_begin),
         (eq, ":faction_theater", theater_SE),
         (str_store_string, s10, "@SE"),
       (else_try),
@@ -1741,7 +1782,7 @@ game_menus = [
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
       (assign, reg2, ":hosts"),
-      (str_store_string, s1, "@Detailed faction AI report for {s4}:^Theater:{s10} Str:{reg1} Hosts:{reg2} {s11}"),
+      (str_store_string, s1, "@Detailed faction AI report for {s4}:^Theater:{s9}-{s10} Str:{reg1} Hosts:{reg2} {s11}"),
       (try_begin),
         (neg|faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
         (str_store_string, s1, "@Faction defeated!^{s1}"),
@@ -1821,6 +1862,119 @@ game_menus = [
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,-1000),
        (display_message, "@Faction defeated! Now wait for it...", 0x30FFC8),]),
      ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
+    ]
+  ),
+
+  ("mvtest_faction_casualties",0,
+   "{s1}",
+   "none",
+   [
+      (try_begin),
+	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
+	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
+	  (try_end),
+        
+      (assign, ":cur_kingdom", "$g_mvtest_faction"),
+      (assign, ":total_strength_loss", 0),
+      
+      (store_current_day, reg1),
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (str_store_string, s1, "@Faction spawn losses for {s4} after {reg1} days^"),
+      
+      (assign, ":faction_scouts", 0),
+      (assign, ":faction_raiders", 0),
+      (assign, ":faction_patrol", 0),
+      (assign, ":faction_caravan", 0),
+      
+      # determine faction spawns (scouts, raiders, patrol, caravan) by looking at center spawns
+      (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+        #(party_is_active, ":center_no"), #TLD
+        (store_faction_of_party, ":center_faction", ":center_no"),
+        (eq, ":center_faction", ":cur_kingdom"),
+        (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
+        
+        (party_get_slot, ":center_scouts", ":center_no", slot_center_spawn_scouts),
+        (party_get_slot, ":center_raiders", ":center_no", slot_center_spawn_raiders),
+        (party_get_slot, ":center_patrol", ":center_no", slot_center_spawn_patrol),
+        (party_get_slot, ":center_caravan", ":center_no", slot_center_spawn_caravan),
+        (try_begin),
+          (eq, ":faction_scouts", 0), (gt, ":center_scouts", 0), (assign, ":faction_scouts", ":center_scouts"),
+        (try_end),
+        (try_begin),
+          (eq, ":faction_raiders", 0), (gt, ":center_raiders", 0), (assign, ":faction_raiders", ":center_raiders"),
+        (try_end),
+        (try_begin),
+          (eq, ":faction_patrol", 0), (gt, ":center_patrol", 0), (assign, ":faction_patrol", ":center_patrol"),
+        (try_end),
+        (try_begin),
+          (eq, ":faction_caravan", 0), (gt, ":center_caravan", 0), (assign, ":faction_caravan", ":center_caravan"),
+        (try_end),
+	  (try_end),
+      
+      # Print out the results
+      (try_begin),
+        (gt, ":faction_scouts", 0),
+        (store_num_parties_destroyed, reg1, ":faction_scouts"),
+        (store_mul, reg2, reg1, ws_scout_vp), #strength loss
+        (store_num_parties_of_template, reg3, ":faction_scouts"),
+        (str_store_string, s1, "@{s1}^Scouts lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (val_add, ":total_strength_loss", reg2),
+      (try_end),
+      (try_begin),
+        (gt, ":faction_raiders", 0),
+        (store_num_parties_destroyed, reg1, ":faction_raiders"),
+        (store_mul, reg2, reg1, ws_raider_vp), #strength loss
+        (store_num_parties_of_template, reg3, ":faction_raiders"),
+        (str_store_string, s1, "@{s1}^Raiders lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (val_add, ":total_strength_loss", reg2),
+      (try_end),
+      (try_begin),
+        (gt, ":faction_patrol", 0),
+        (store_num_parties_destroyed, reg1, ":faction_patrol"),
+        (store_mul, reg2, reg1, ws_patrol_vp), #strength loss
+        (store_num_parties_of_template, reg3, ":faction_patrol"),
+        (str_store_string, s1, "@{s1}^Patrols lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (val_add, ":total_strength_loss", reg2),
+      (try_end),
+      (try_begin),
+        (gt, ":faction_caravan", 0),
+        (store_num_parties_destroyed, reg1, ":faction_caravan"),
+        (store_mul, reg2, reg1, ws_caravan_vp), #strength loss
+        (store_num_parties_of_template, reg3, ":faction_caravan"),
+        (str_store_string, s1, "@{s1}^Caravans lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (val_add, ":total_strength_loss", reg2),
+      (try_end),
+      (faction_get_slot, ":prisoner_train_pt", "$g_mvtest_faction", slot_faction_prisoner_train),
+      (try_begin),
+        (gt, ":prisoner_train_pt", 0),
+        (store_num_parties_destroyed, reg1, ":prisoner_train_pt"), #note that removed on arrival are also counted here
+        (store_mul, reg2, reg1, ws_p_train_vp), #strength loss
+        (store_num_parties_of_template, reg3, ":prisoner_train_pt"),
+        (str_store_string, s1, "@{s1}^P. trains lost-arrived: {reg1} Strength loss: 0{reg2?-{reg2}:} Active: {reg3}"),
+        #(val_add, ":total_strength_loss", reg2),
+      (try_end),
+      
+      (assign, reg1, ":total_strength_loss"),
+      (str_store_string, s1, "@{s1}^^Total strength loss from spawns: {reg1}^"),
+      (faction_get_slot, reg1, "$g_mvtest_faction", slot_faction_debug_str_gain),
+      (str_store_string, s1, "@{s1}^Total strength gain: {reg1}"),
+      (faction_get_slot, reg2, "$g_mvtest_faction", slot_faction_debug_str_loss),
+      (str_store_string, s1, "@{s1}^Total strength loss: {reg2}"),
+      (val_sub, reg1, reg2),
+      (str_store_string, s1, "@{s1}^Difference: {reg1}"),
+    ],
+    [("change",[
+        (str_store_faction_name, s7, "$g_mvtest_faction"),
+      ],
+      "Change faction: {s7}",
+      [
+        (val_add, "$g_mvtest_faction", 1),
+        (try_begin),
+	      (eq, "$g_mvtest_faction", "fac_player_supporters_faction"),
+	      (assign, "$g_mvtest_faction", kingdoms_begin),
+	    (try_end),
+      ]),
+     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
 
@@ -3471,7 +3625,7 @@ game_menus = [
 	    (str_store_faction_name, s4, ":defeated_faction"),
         (display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
 
-		(call_script, "script_find_closest_enemy_town_or_mayor_party",":defeated_faction","p_main_party"), 
+		(call_script, "script_find_closest_enemy_town_or_host",":defeated_faction","p_main_party"), 
 		
 		(try_begin),
 			(ge, reg10, 0),

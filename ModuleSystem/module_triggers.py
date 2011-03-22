@@ -224,14 +224,14 @@ triggers = [
             (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":center_theater"), #center in faction's active theater
             
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
-			(val_div, ":strength", 50), #strength now 0-140
+			(val_div, ":strength", 50), #strength now 0-140 or more
 #            (val_mul, ":strength", 20), # strength got multied 1000x, so mul became div
             #(assign, ":strength", 500),
             (try_begin),
                 (gt, ":center_scouts", 0),
-                (store_random_in_range, ":rand", 0, int(300/ws_scout_freq_multiplier)),
+                (store_random_in_range, ":rand", 0, int(300/ws_scout_freq_multiplier)), #95
                 (le, ":rand", ":strength"),
-                (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000),
+                (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000), #10000
                 (val_div, ":limit", 20000),
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_scout),
                 (lt, reg0, ":limit"),
@@ -321,6 +321,10 @@ triggers = [
                 (party_set_slot, ":caravan_party", slot_party_home_center, ":center"),
                 (party_set_slot, ":caravan_party", slot_party_type, spt_kingdom_caravan),
 				(party_set_slot, ":caravan_party", slot_party_victory_value, ws_caravan_vp), # victory points for party kill
+                
+                (str_store_party_name, s1, ":caravan_party"),
+                (str_store_party_name, s2, ":center"),
+                (party_set_name, ":caravan_party", "@{s1} from {s2}"),
 
                 (party_set_slot, ":caravan_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":caravan_party", ai_bhvr_travel_to_party),
@@ -1374,15 +1378,15 @@ triggers = [
                 (try_end),
             (try_end),
             (store_distance_to_party_from_party, ":dis", ":party_no", "p_main_party"),
-            (le, ":dis", 10),  #TODO: Adjust this distance later
+            (le, ":dis", 5),  #TODO: Adjust this distance later
             (display_message, "@Your party witnessed orcs eating prisoners.", 0xffaa3333),
             (party_get_morale, ":morale", "p_main_party"),
             (try_begin),
                 (gt, ":morale", 50), # base morale high, get boost
-                (display_message, "@Your companions' morale has boosted in hatred.", 0xffaa3333),
+                (display_message, "@Your companions' morale has risen from hatred.", 0xffaa3333),
                 (val_add, ":morale", 10),
             (else_try), # base morale low, drop in fear
-                (display_message, "@Your companions' morale has dropped in fear.", 0xffaa3333),
+                (display_message, "@Your companions' morale has dropped from fear.", 0xffaa3333),
                 (val_sub, ":morale", 10),
             (try_end),
             (party_set_morale, "p_main_party", ":morale"),

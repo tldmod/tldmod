@@ -2136,7 +2136,7 @@ ai_scripts = [
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (gt, ":party_no", 0),
           (party_slot_ge, ":party_no", slot_party_commander_party, 0),
-          (party_set_ai_initiative, ":party_no", 50),
+          (party_set_ai_initiative, ":party_no", 30), #MV: review this number, was 50
           (call_script, "script_party_decide_next_ai_state_under_command", ":party_no"),
       (try_end),
       ]),
@@ -2314,7 +2314,7 @@ ai_scripts = [
            (troop_get_slot, ":troop_party", ":hero", slot_troop_leaded_party),
            (gt, ":troop_party", 0),
            (party_is_active, ":troop_party"),
-           (party_set_ai_initiative, ":troop_party", 100),
+           (party_set_ai_initiative, ":troop_party", 100), #MV: review this number
          (try_end),
          (call_script, "script_calculate_troop_ai", ":hero"),
        (try_end),

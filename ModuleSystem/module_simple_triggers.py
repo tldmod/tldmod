@@ -333,6 +333,7 @@ simple_triggers = [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
 	     (faction_slot_ge,":faction_no",slot_faction_strength,1),
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
+         (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain), #debug
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
          (try_for_range, ":center_no", centers_begin, centers_end),
            (party_is_active, ":center_no"),
@@ -342,8 +343,10 @@ simple_triggers = [
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
            (val_add, ":strength", ":strength_income"),
+           (val_add, ":debug_gain", ":strength_income"), #debug
          (try_end),
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
+         (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"), #debug
 	  (try_end),
      ]),
 # Decide vassal ai
