@@ -299,13 +299,13 @@ ui_take_back|Take back
 ui_give|Give
 ui_take|Take
 ui_sell|Give
-ui_hire|Enroll
-ui_notification_cant_hire|(not enough R.P. to enroll)
+ui_hire|Enlist
+ui_notification_cant_hire|(not enough R.P. to enlist)
 ui_uncapture|Release
 ui_capture|Capture
 ui_party_capcity_reached|(Party capacity reached)
 ui_all| all
-ui_joining_cost_weekly_wage|Enroll: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
 ui_weekly_wage|Upkeep: %d Res.P.
 ui_price|Value: %d Res.P.
 ui_number_ready_to_upgrade|%d ready to be upgraded.

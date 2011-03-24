@@ -465,7 +465,8 @@ scripts = [
 		(val_mul, reg0, ":perc"), 
 		(store_div, reg15, reg0, 100), # when this troop leaves, you gain  $ join_cost * perc/100  
   ]),
-  
+ 
+  # script_get_party_disband_cost 
   # Call this script to know how much the player earns if this entire party is disbanded (mtarini)
   # Input:   param1: party_id,  
   # Input:   param2: 0 = sent home from map,   1 = given to city    2 = given to host
@@ -2270,12 +2271,13 @@ scripts = [
       (store_script_param_1, ":troop_id"),
       (assign, reg0, 50),
       (try_begin),
-        (is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end),
+        #(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end),
         (store_character_level, ":troop_level", ":troop_id"),
         (assign, ":ransom_amount", ":troop_level"),
         (val_add, ":ransom_amount", 10), 
         (val_mul, ":ransom_amount", ":ransom_amount"),
         (val_div, ":ransom_amount", 6),
+        (assign, reg0, ":ransom_amount"),
       (try_end),
       (set_trigger_result, reg0),
   ]),
@@ -2548,8 +2550,8 @@ scripts = [
 
   ##  
   # script_party_split_by_faction (mtarini)
-  # Input: arg1 = party_input, which will lose all troop of given faction
-  # Input: arg2 = party_A, which will receive all troops NOT of given faction (and not the main heroes)
+  # Input: arg1 = party_A, retains only the player and troops of given faction, except heroes
+  # Input: arg2 = party_B, receives the rest, old A = new A + new B
   # Input: arg3 = faction
   ("party_split_by_faction",
     [

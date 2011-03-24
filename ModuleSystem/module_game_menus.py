@@ -1286,30 +1286,30 @@ game_menus = [
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
   ),
   
-  ("upkeep_report",0,"Upkeep Report^^{s12}", "none",[
-    (assign, reg5,0),
-    (str_clear, s12),
+  ("upkeep_report", 0, "{s12}", "none",[
+    (assign, reg5, 0),
     #(set_background_mesh, "mesh_ui_default_menu_window"),
-]+concatenate_scripts([[
-  	(call_script, "script_compute_wage_per_faction",y),
-	(val_add,reg5,reg4),
-]for y in range(kingdoms_begin_i,kingdoms_end_i) ])+[
-    (try_begin),(gt,reg5,0),
-       (str_store_string, s12, "@^^^^^Weekly Upkeep For Troops:^{reg5} Resource Points^^Of which:"),
+    (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+      (neq, ":faction_no", "fac_player_supporters_faction"),
+  	  (call_script, "script_compute_wage_per_faction", ":faction_no"),
+	  (val_add, reg5, reg4),
+    (try_end),
+    
+    (try_begin),
+      (gt,reg5,0),
+      (str_store_string, s12, "@Weekly Upkeep For Troops:^{reg5} Resource Points^"),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (call_script, "script_compute_wage_per_faction", ":faction_no"),
+        (gt, reg4, 0),
+        (str_store_faction_name, s4, ":faction_no"),
+        (faction_get_slot, reg5, ":faction_no", slot_faction_respoint),
+        (str_store_string, s12, "@{s12}^  {s4}: {reg4} Resource pts ({reg5})"),
+      (try_end),
 	(else_try),
-	   (str_store_string, s12, "@No upkeep costs"),
+	  (str_store_string, s12, "@No upkeep costs"),
     (try_end),
    ],
-   concatenate_scripts([[
-		("___",[
-		(str_store_faction_name,s4,y),
-			(call_script, "script_compute_wage_per_faction",y),
-			(gt, reg4, 0),
-			(faction_get_slot, reg5, y, slot_faction_respoint),
-		],"{s4}: {reg4} Res. pts ({reg5})",[#(assign, "$menu_report_upkeep_faction", y),
-            (jump_to_menu, "mnu_upkeep_report")
-		])
-	]for y in range(kingdoms_begin_i,kingdoms_end_i) ])+
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
   ),
 
@@ -3616,37 +3616,39 @@ game_menus = [
     [   # We exploit the menu condition system below.
         # The conditions should make sure that always another screen or menu is called.
         (assign, ":done", 0),
-		
-		# select what freindly faction was most interested at this victory (mtarini)
-		(assign, "$impressed_faction", "$players_kingdom"), # by default, it is player starting fatcion
-
-		(store_faction_of_party, ":defeated_faction", "$g_enemy_party"),
-		
-	    (str_store_faction_name, s4, ":defeated_faction"),
-        (display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
-
-		(call_script, "script_find_closest_enemy_town_or_host",":defeated_faction","p_main_party"), 
-		
-		(try_begin),
-			(ge, reg10, 0),
-			(str_store_party_name, s3, reg10),
-			(store_faction_of_party, "$impressed_faction", reg10),
-			(try_begin),(is_between, reg10, towns_begin, towns_end), 
-					(display_log_message, "@News of your victory against {s4} reach {s3}."),
-			(else_try), 
-				(display_log_message, "@{s3} witnesses your victory against {s4}."),
-			(try_end),
-		(else_try),
-			(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
-		(try_end),
-		(assign, ":ambient_faction_backup", "$ambient_faction"),
-		(call_script, "script_set_ambient_faction","$impressed_faction"),
-			  
-			  
+					  
+		(assign, ":ambient_faction_backup", "$ambient_faction"), #TLD
+        
         (try_begin),
           # Talk to ally leader
           (eq, "$thanked_by_ally_leader", 0),
           (assign, "$thanked_by_ally_leader", 1),
+          
+#TLD begin - do this only once
+		  # select what friendly faction was most interested in this victory (mtarini)
+		  (assign, "$impressed_faction", "$players_kingdom"), # by default, it is player starting fatcion
+		  (store_faction_of_party, ":defeated_faction", "$g_enemy_party"),
+		
+	      (str_store_faction_name, s4, ":defeated_faction"),
+          (display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
+
+		  (call_script, "script_find_closest_enemy_town_or_host",":defeated_faction","p_main_party"), 
+		
+		  (try_begin),
+			  (ge, reg10, 0),
+			  (str_store_party_name, s3, reg10),
+			  (store_faction_of_party, "$impressed_faction", reg10),
+			  (try_begin),(is_between, reg10, towns_begin, towns_end), 
+                (display_log_message, "@News of your victory against {s4} reach {s3}."),
+			  (else_try), 
+				(display_log_message, "@{s3} witnesses your victory against {s4}."),
+			  (try_end),
+		  (else_try),
+			  (display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
+		  (try_end),
+		  (call_script, "script_set_ambient_faction","$impressed_faction"),
+#TLD end
+          
           (gt, "$g_ally_party", 0),
           
           (store_add, ":total_str_without_player", "$g_starting_strength_friends", "$g_starting_strength_enemy_party"),
@@ -3816,7 +3818,7 @@ game_menus = [
           (troop_clear_inventory, "trp_temp_troop"),
           (call_script, "script_party_calculate_loot", "p_encountered_party_backup"),
           (gt, reg0, 0),
-          #(troop_sort_inventory, "trp_temp_troop"),
+          (troop_sort_inventory, "trp_temp_troop"),
           (change_screen_loot, "trp_temp_troop"),
         (else_try),
           #finished all
@@ -3837,7 +3839,7 @@ game_menus = [
             (eq, "$g_next_menu", -1),
 
 #NPC companion changes begin
-           #(call_script, "script_post_battle_personality_clash_check"),
+           (call_script, "script_post_battle_personality_clash_check"),
 #NPC companion changes end
 
 #Post 0907 changes begin

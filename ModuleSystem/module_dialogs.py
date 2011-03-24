@@ -107,17 +107,19 @@ dialogs = [
 
                      (troop_get_type, reg65, "$g_talk_troop"),
                      (try_begin),
+                       (neq, reg65, 1), #not female
+                       (assign, reg65, 0), #make it male for strings
+                     (try_end),
+                     (try_begin),
                        (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
                        (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
-                       (str_store_string,s65,"@{reg65?my Lady:my Lord}"),
-                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"),
-                       (str_store_string,s67,"@{reg65?My Lady:My Lord}"), #bug fix
+                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"), #bug fix
                      (else_try),
                        (str_store_string,s64,"@{reg65?madame:sir}"), #bug fix
-                       (str_store_string,s65,"@{reg65?madame:sir}"),
-                       (str_store_string,s66,"@{reg65?Madame:Sir}"),
-                       (str_store_string,s67,"@{reg65?Madame:Sir}"), #bug fix
+                       (str_store_string,s66,"@{reg65?Madame:Sir}"), #bug fix
                      (try_end),
+                     (str_store_string_reg,s65,s64),
+                     (str_store_string_reg,s67,s66), #bug fix
 
                      (eq, 1, 0)],
    "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
@@ -128,19 +130,21 @@ dialogs = [
                                (talk_info_show, 1),
                                (call_script, "script_setup_talk_info_companions"),
                            (try_end),
-                           (troop_get_type, reg65, "$g_talk_troop"),
                            
                      (troop_get_type, reg65, "$g_talk_troop"),
                      (try_begin),
+                       (neq, reg65, 1), #not female
+                       (assign, reg65, 0), #make it male for strings
+                     (try_end),
+                     (try_begin),
                        (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
                        (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
-                       (str_store_string,s65,"@{reg65?my Lady:my Lord}"),
-                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"),
+                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"), #bug fix
                      (else_try),
                        (str_store_string,s64,"@{reg65?madame:sir}"), #bug fix
-                       (str_store_string,s65,"@{reg65?madame:sir}"),
-                       (str_store_string,s66,"@{reg65?Madame:Sir}"),
+                       (str_store_string,s66,"@{reg65?Madame:Sir}"), #bug fix
                      (try_end),
+                     (str_store_string_reg,s65,s64),
 
                      (eq, 1, 0)],  
    "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
@@ -154,16 +158,18 @@ dialogs = [
                                
                      (troop_get_type, reg65, "$g_talk_troop"),
                      (try_begin),
+                       (neq, reg65, 1), #not female
+                       (assign, reg65, 0), #make it male for strings
+                     (try_end),
+                     (try_begin),
                        (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
                        (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
-                       (str_store_string,s65,"@{reg65?my Lady:my Lord}"),
-                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"),
+                       (str_store_string,s66,"@{reg65?My Lady:My Lord}"), #bug fix
                      (else_try),
                        (str_store_string,s64,"@{reg65?madame:sir}"), #bug fix
-                       (str_store_string,s65,"@{reg65?madame:sir}"),
-                       (str_store_string,s66,"@{reg65?Madame:Sir}"),
+                       (str_store_string,s66,"@{reg65?Madame:Sir}"), #bug fix
                      (try_end),
-
+                     (str_store_string_reg,s65,s64),
 
                      (eq, 1, 0)],  
    "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
@@ -1232,43 +1238,41 @@ dialogs = [
    [
 		(eq, "$talk_context", tc_hire_troops), 
 		# prepare strings useful in the folowing dialog
-		(store_faction_of_party, ":fac", "$g_encountered_party"),
-		(assign, ":p_fac", "$players_kingdom" ),
 		(str_store_party_name, s21, "$g_encountered_party"), # s21: CITY NAME
-		(str_store_faction_name, s22, ":fac"), # s22: City faction name
+		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: City faction name
 		(str_store_troop_name, s23, "$g_player_troop"), # s23: Player name
-		(faction_get_slot, ":p_rank", ":fac", slot_faction_rank),
-		(call_script, "script_get_rank_title", ":p_fac" ),(str_store_string_reg, 29, 24), # s29: player TITLE  (among own faction)
-		(call_script, "script_get_rank_title", ":fac" ), # s24: player TITLE  (among city faction)
-		(str_store_faction_name, s25, ":p_fac"), # s25: Player's faction name
-		(assign, reg26, 0),(try_begin),(eq,":p_fac",":fac"),(assign,reg26,1),(try_end), # reg26: 1 if city of player faction
+		(faction_get_slot, ":p_rank", "$g_encountered_party_faction", slot_faction_rank),
+		(call_script, "script_get_rank_title", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player TITLE  (among own faction)
+		(call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player TITLE  (among city faction)
+		(str_store_faction_name, s25, "$players_kingdom"), # s25: Player's faction name
+		(assign, reg26, 0),(try_begin),(eq,"$players_kingdom","$g_encountered_party_faction"),(assign,reg26,1),(try_end), # reg26: 1 if city of player faction
 		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
 
 		# prepare greeting string
 		(store_div, reg10,":p_rank", 100),
 		(try_begin),
-			(eq, reg26, 1), (str_store_string, s33, "@Greetings, {s23}, {s24}."), # same faction (military salut?)
+			(eq, reg26, 1), (str_store_string, s33, "@Greetings, {s23}, {s24}."), # same faction (military salute?)
 		(else_try),
-			(ge, reg10, 4), (str_store_string, s33, "@Greetings, {s23}, {s24}."),  # player not same faction, but thrusted
+			(ge, reg10, 4), (str_store_string, s33, "@Greetings, {s23}, {s24}."),  # player not same faction, but trusted
 		(else_try),
-			(ge, reg10, 1), (str_store_string, s33, "@Greetings, {s23}."), # player not much thrusted
+			(ge, reg10, 1), (str_store_string, s33, "@Greetings, {s23}."), # player not much trusted
 		(else_try),
-			(str_store_string, s33, "@So, you are {s23}. I hear you fight for {s25}, so I guess I should consider you an ally."), # player unknown
+			(str_store_string, s33, "@So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally."), # player unknown
 		(try_end),
 
 		# just to see if someone can be given away: backup party, then see if troops which can be given away 
 		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
-		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party",":fac"),
+		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction"),
 		
    ],
-   "{s33}^^I am currently in charge of the forces garrisoned here at {s21}. Did you want to see me?", "player_hire_troop", 
+   "{s33}^^I am in charge of the forces garrisoned here at {s21}. Did you want to see me?", "player_hire_troop", 
    [
    ]
  ],
 
 [anyone|plyr,"player_hire_troop", 
 	[(party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0)], 
-	"I need volunteers willing to follow me in dangerous missions in the open.", "player_hire_troop_take", [
+	"I need volunteers willing to follow me on dangerous missions.", "player_hire_troop_take", [
 		# prepare party to recruit  from
 		(party_get_slot, "$hiring_from", "$current_town", slot_town_volunteer_pt ),
 		(assign, "$num_hirable", 0),
@@ -1285,41 +1289,73 @@ dialogs = [
 
 [anyone|plyr,"player_hire_troop", 
 	[(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)], # player has someone to give away 
-	"Some of my soldiers in my group would be more useful here, to defend {s21}.", "player_hire_troop_give", [
-		(store_faction_of_party, ":fac", "$g_encountered_party"),
-		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party",":fac"),
+	"Some of the soldiers in my group would be more useful here, to defend {s21}.", "player_hire_troop_give", [
+        (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
+		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
 		
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
 		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value (after removing troops ...)
-
 	]
-	
 ],
+
+
+[anyone|plyr, "player_hire_troop",
+   [(store_num_regular_prisoners,reg5),(ge,reg5,1)],
+   "I have brought you some prisoners.", "tld_sell_prisoners", []],
+[anyone, "tld_sell_prisoners", [
+  (try_begin),
+    (ge, reg5, 30),
+    (str_store_string, s33, "@Excellent job, {s23}! I wish all our commanders were as dedicated as you.^"),
+  (else_try),
+    (ge, reg5, 20),
+    (str_store_string, s33, "@Nicely done, {s23}."),
+  (else_try),
+    (ge, reg5, 10),
+    (str_store_string, s33, "@Good work, {s23}."),
+  (else_try),
+    (ge, reg5, 5),
+    (str_store_string, s33, "@The more you capture, the better, {s23}."),
+  (else_try),
+    (str_store_string, s33, "@Caught a few stragglers, {s23}?"),
+  (try_end),
+  ],
+  "{s33} Let's see the wretched scum.", "tld_sell_prisoners_check",
+   [[change_screen_trade_prisoners]]],
+
+# this one is needed because change_screen_trade_* needs another dialog to update the main party
+[anyone, "tld_sell_prisoners_check", [], 
+    "Let me check our dungeon records...", "tld_sell_prisoners_2", []],
+
+[anyone, "tld_sell_prisoners_2",
+   [(store_num_regular_prisoners,reg6),(eq,reg5,reg6)],
+   "Changed your mind, eh?", "player_hire_troop_nextcycle", []],
+[anyone, "tld_sell_prisoners_2", [], "I'll make sure they won't run away from our dungeons.", "player_hire_troop_nextcycle",[]],
 
 [anyone|plyr,"player_hire_troop", [], "Farewell.", "close_window", [] ],
 
+
 [anyone,"player_hire_troop_take", 
   [(eq,"$num_hirable" ,0)], # no one wants to join
-  "I am sorry, no-one else is ready to go.^They will serve {s22} by holding the defences here.", 
+  "I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here.", 
   "player_hire_troop_nextcycle", []
 ],
 
 [anyone,"player_hire_troop_take", 
   [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),(eq, reg26, 1)], # these who want to join cost too much -- player same faction
-  "There would be brave soldiers willing to risk their life, but in those dark times I cannot afford to let them leave the defence here, or to lose one more man.^^Not even to let them fight under your command. Sorry.", 
+  "There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here, or to lose one more soldier.^^Not even to let them fight under your command. Sorry.", 
   "player_hire_troop_nextcycle", []
 ],
 
 [anyone,"player_hire_troop_take", 
   [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),(eq, reg26, 0)], # these who want to join cost too much -- player other faction
-  "There are brave soldiers here willing to risk their life, but not fighting under your command, I'm afraid...^^We are men of {s22}, not of {s25}.", 
+  "There are brave soldiers here willing to risk their life, but none willing to fight under your command, I'm afraid...^^We are men of {s22}, not of {s25}.", 
   "player_hire_troop_nextcycle", []
 ],
 
 [anyone,"player_hire_troop_take", 
 	[(gt,"$num_hirable" ,0),   # there's someone to hire...
 	 (store_troop_gold, ":cur_gold", "$g_player_troop"), (le,"$cheapest_join",":cur_gold"),], # and player can afford it
-	"There are brave soldiers here volunteering for these missions.^^I think can let a few of them go with you for a while.", 
+	"There are brave soldiers here volunteering for field duty.^^I think can let a few of them go with you.", 
 	"player_hire_troop_pre_pre_nextcycle", [[change_screen_buy_mercenaries]]
 ],
 
@@ -1330,24 +1366,24 @@ dialogs = [
  ],
 
  [anyone,"player_hire_troop_pre_pre_nextcycle", [ ], 
-    ". . .", 
+    "Let me check the soldier roster...", 
     "player_hire_troop_pre_nextcycle", []
  ],
 
  [anyone,"player_hire_troop_pre_nextcycle", 
-	 [ (party_get_num_companions, reg10, "p_main_party"), (eq, reg10, reg27), ], # party didn't change size 
+	 [ (party_get_num_companions, reg10, "p_main_party"), (eq, reg10, reg27),], # party didn't change size 
     "So you changed your mind...^I see.", 
     "player_hire_troop_nextcycle", []
  ],
 
  [anyone,"player_hire_troop_pre_nextcycle", 
-	 [ (party_get_num_companions, reg10, "p_main_party"), (gt, reg10, reg27),], # party increased size 
-    "Make them return in one piece. I personally know the valor of each one of them. And here we need every soul.", 
+	 [], # party increased size 
+    "Please return them in one piece. I personally know the valor of each one of them. And here we need every soul.", 
     "player_hire_troop_nextcycle", []
  ],
 
  [anyone,"player_hire_troop_reunite", [ ], 
-    ". . .", 
+    "Let me check the soldier roster...", 
     "player_hire_troop_reunite_1", [
 	]
  ],
@@ -1356,25 +1392,43 @@ dialogs = [
 	 [ 
 	   (party_get_num_companions, reg0, "p_main_party"), 
 	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
-	 ], # party decreased size 
+	 ],
     "So you changed your mind...^I see.", 
-    "player_hire_troop_nextcycle", []
+    "player_hire_troop_nextcycle", [
+    #MV: now recreate the main party from p_encountered_party_backup (main backup) and p_main_party (factionalized main minus troops given away)
+    #  I replaced the script_party_add_party solely because it messes up the party order as set by the player
+    #  Possible bug in any case: loss of stack experience which is kept by the engine only for main party stacks
+    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+    (party_get_num_companion_stacks, ":num_stacks_2", "p_encountered_party_backup"),
+    (try_for_range, ":i_stack", 0, ":num_stacks"),
+      (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+      (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
+      (neq, ":stack_troop", "$g_player_troop"),
+      (try_for_range, ":j_stack", 0, ":num_stacks_2"),
+        (party_stack_get_troop_id, ":stack_troop_2", "p_encountered_party_backup", ":j_stack"),
+        (party_stack_get_size, ":stack_size_2", "p_encountered_party_backup", ":j_stack"),
+        (eq, ":stack_troop", ":stack_troop_2"),
+        (gt, ":stack_size_2", ":stack_size"), #stack_size_2-stack_size of this troop were given away
+        (store_sub, ":given_away", ":stack_size_2", ":stack_size"),
+        (party_remove_members, "p_encountered_party_backup", ":stack_troop_2", ":given_away"),
+      (try_end),
+    (try_end),
+    (call_script, "script_party_copy", "p_main_party", "p_encountered_party_backup"),
+    ]
  ],
 
  [anyone,"player_hire_troop_reunite_1", 
 	 [ 
 		(party_get_num_companions, reg0, "p_main_party"), (store_sub, reg10, reg28, reg0), 
-		(gt, reg10, 0), # player did give someone 
+		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (store_sub, reg11, reg29, reg0), 
 		(str_clear,  s31),(str_clear,  s32),
 		(try_begin),(eq, reg26, 1), #player is in own faction
-			(str_store_string, s31, "@Thank you, officer.^"),
+			(str_store_string, s31, "@Thank you, commander.^"),
 		(else_try),
 			(str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),
 		(try_end),
-		
-
 	 ], # party decreased size 
     "{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^^^[earned {reg11} Res.Points of {s22}]", 
     "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", reg11),]
@@ -1382,26 +1436,44 @@ dialogs = [
 
  [anyone|plyr,"player_hire_troop_reunite_2", 
 	 [ (try_begin),(eq, reg26, 1), #player is ih own faction
-			(str_store_string, s31, "@My duty."),
+			(str_store_string, s31, "@It is my duty to protect our people."),
 		(else_try),
-			(str_store_string, s31, "@Our enemy is ultimately the same,^our war is one."),
+			(str_store_string, s31, "@Our enemy is the same, we fight the same war."),
 		(try_end), 
 	],
     "{s31}", 
     "player_hire_troop_nextcycle", [
-	(call_script, "script_party_add_party", "p_main_party", "p_temp_party"),
+	#(call_script, "script_party_add_party", "p_main_party", "p_temp_party"), #mtarini code
+    #MV: now recreate the main party from p_encountered_party_backup (main backup) and p_main_party (factionalized main minus troops given away)
+    #  I replaced the script_party_add_party solely because it messes up the party order as set by the player
+    #  Possible bug in any case: loss of stack experience which is kept by the engine only for main party stacks
+    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+    (party_get_num_companion_stacks, ":num_stacks_2", "p_encountered_party_backup"),
+    (try_for_range, ":i_stack", 0, ":num_stacks"),
+      (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+      (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
+      (neq, ":stack_troop", "$g_player_troop"),
+      (try_for_range, ":j_stack", 0, ":num_stacks_2"),
+        (party_stack_get_troop_id, ":stack_troop_2", "p_encountered_party_backup", ":j_stack"),
+        (party_stack_get_size, ":stack_size_2", "p_encountered_party_backup", ":j_stack"),
+        (eq, ":stack_troop", ":stack_troop_2"),
+        (gt, ":stack_size_2", ":stack_size"), #stack_size_2-stack_size of this troop were given away
+        (store_sub, ":given_away", ":stack_size_2", ":stack_size"),
+        (party_remove_members, "p_encountered_party_backup", ":stack_troop_2", ":given_away"),
+      (try_end),
+    (try_end),
+    (call_script, "script_party_copy", "p_main_party", "p_encountered_party_backup"),
 	]
  ],
 
  [anyone,"player_hire_troop_nextcycle", 
-	 [  ], # party didn't change size 
+	 [  ],
     "Anything else?", 
     "player_hire_troop", [
-		(party_get_num_companions, reg27, "p_main_party"),
+		(party_get_num_companions, reg27, "p_main_party"), # refresh reg27
 		# prepare troops which can be given away (others are in moved in temp party)
-		(store_faction_of_party, ":fac", "$current_town"),
 		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
-		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party",":fac"),
+		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party","$g_encountered_party_faction"),
 	]
  ],
 
@@ -1938,12 +2010,13 @@ dialogs = [
                             (eq, ":faction_leader", "$g_talk_troop"),
                             (str_store_string, s9, "@I am {s4}, the ruler of {s6}", 0),
                           (else_try),
-                            (str_store_string, s9, "@I am {s4}, a vassal of {s6}", 0),
+                            (str_store_string, s9, "@I am {s4}, a commander of {s6}", 0),
                           (try_end),
                           (assign, ":num_centers", 0),
                           (str_clear, s8),
                           (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
                             (party_slot_eq, ":cur_center", slot_town_lord, "$g_talk_troop"),
+                            (party_is_active, ":cur_center"), #TLD
                             (try_begin),
                               (eq, ":num_centers", 0),
                               (str_store_party_name, s8, ":cur_center"),
@@ -10617,9 +10690,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
                                (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
 							   (store_random_in_range,":string",":rumors_begin",":rumors_end"),
-							   (str_store_string, s64, ":string"),
-							   (assign, reg0,":rumors_begin"), (assign, reg1,":rumors_end"), 
-							 ],"{s64}^Strings chosen from {reg0} to {reg1}" , "town_merchant_talk",[]],
+							   (str_store_string, s1, ":string"),
+							   #(assign, reg0,":rumors_begin"), (assign, reg1,":rumors_end"), 
+							 ],"{s1}" , "town_merchant_talk",[]],
   [anyone|plyr,"town_merchant_talk", [], "Good-bye.", "close_window",[]],
 
 
@@ -10840,10 +10913,19 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"town_dweller_talk", [(eq, "$rumors_inquired", 0)], "What is the latest rumor around here?", "town_dweller_ask_rumor",[(assign, "$rumors_inquired", 1)]],
   [anyone,"town_dweller_ask_rumor", [(neg|party_slot_ge, "$current_town", slot_center_player_relation, -5)], "I don't know anything that would be of interest to you.", "town_dweller_talk",[]],
   
-  [anyone,"town_dweller_ask_rumor", [(store_mul, ":rumor_id", "$current_town", 197),
-                                     (val_add,  ":rumor_id", "$g_talk_agent"),
-                                     (call_script, "script_get_rumor_to_s61", ":rumor_id"),
-                                     (gt, reg0, 0)], "{s61}", "town_dweller_talk",[]],
+  # [anyone,"town_dweller_ask_rumor", [(store_mul, ":rumor_id", "$current_town", 197),
+                                     # (val_add,  ":rumor_id", "$g_talk_agent"),
+                                     # (call_script, "script_get_rumor_to_s61", ":rumor_id"),
+                                     # (gt, reg0, 0)], "{s61}", "town_dweller_talk",[]],
+
+# TLD stuff                                     
+  [anyone,"town_dweller_ask_rumor", [ (store_troop_faction,":faction","$g_talk_troop"),     # random faction related rumors
+                               (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
+                               (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
+							   (store_random_in_range,":string",":rumors_begin",":rumors_end"),
+							   (str_store_string, s1, ":string"),
+							   #(assign, reg0,":rumors_begin"), (assign, reg1,":rumors_end"), 
+							 ],"{s1}" , "town_dweller_talk",[]],
 
   [anyone,"town_dweller_ask_rumor", [], "I haven't heard anything interesting lately.", "town_dweller_talk",[]],
 

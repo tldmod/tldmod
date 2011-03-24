@@ -1,4 +1,4 @@
-676
+691
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -141,7 +141,7 @@ qstr_{reg0}_town{reg1?s:}_ {reg0}_town{reg1?s:}_and_{s0}
 qstr_{reg0}_town{reg1?s:}_{ {reg0}_town{reg1?s:},_{s0}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
-qstr_DEBUG:_Center_captur DEBUG:_Center_captured:_{s1}_strength_-{reg0}_to_{reg1},_{s2}_strength_+{reg2}_to_{reg3}.
+qstr_DEBUG:_{s3}_captured DEBUG:_{s3}_captured:_{s1}_strength_-{reg0}_to_{reg1},_{s2}_strength_+{reg2}_to_{reg3}.
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
@@ -349,7 +349,8 @@ qstr_Attacking_enemies_ar Attacking_enemies_around_{s11}
 qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
-qstr_^^^^^Weekly_Upkeep_F ^^^^^Weekly_Upkeep_For_Troops:^{reg5}_Resource_Points^^Of_which:
+qstr_Weekly_Upkeep_For_Tr Weekly_Upkeep_For_Troops:^{reg5}_Resource_Points^
+qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Renown:_{s4}{reg3}^TOTAL:__{reg5}
 qstr_Loyal Loyal
@@ -376,10 +377,8 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
-qstr_Evil_factions_defeat Evil_factions_defeated!_Now_wait_for_it...
-qstr_Hornburg_razed___che Hornburg_razed_-_check_map!
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
-qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})
+qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
 qstr_Unknown_{reg3}_ Unknown({reg3})
@@ -388,9 +387,9 @@ qstr_SW SW
 qstr_C C
 qstr_N N
 qstr_INVALID INVALID
-qstr_{s2}^{s4}:_Th:{s10}_ {s2}^{s4}:_Th:{s10}_Str:{reg1}_Hosts:{reg2}_{s11}
+qstr_{s2}^{s4}:_Th:_{s9}_ {s2}^{s4}:_Th:_{s9}-{s10}_Str:_{reg1}_Hosts:_{reg2}_{s11}
 qstr_Faction_AI_report:^{ Faction_AI_report:^{s2}
-qstr_Detailed_faction_AI_ Detailed_faction_AI_report_for_{s4}:^Theater:{s10}_Str:{reg1}_Hosts:{reg2}_{s11}
+qstr_Detailed_faction_AI_ Detailed_faction_AI_report_for_{s4}:^Theater:{s9}-{s10}_Str:{reg1}_Hosts:{reg2}_{s11}
 qstr_Faction_defeated!^{s Faction_defeated!^{s1}
 qstr_{s1}^{s6}_leads_{s7} {s1}^{s6}_leads_{s7},_
 qstr_{s1}_no_host__ {s1}(no_host),_
@@ -405,6 +404,16 @@ qstr_{s1}engaging_{s7} {s1}engaging_{s7}
 qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
 qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
+qstr_Faction_spawn_losses Faction_spawn_losses_for_{s4}_after_{reg1}_days^
+qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^P._trains_lost_ {s1}^P._trains_lost-arrived:_{reg1}_Strength_loss:_0{reg2?-{reg2}:}_Active:_{reg3}
+qstr_{s1}^^Total_strength {s1}^^Total_strength_loss_from_spawns:_{reg1}^
+qstr_{s1}^Total_strength_ {s1}^Total_strength_gain:_{reg1}
+qstr_{s1}^Total_strength_l {s1}^Total_strength_loss:_{reg2}
+qstr_{s1}^Difference:_{re {s1}^Difference:_{reg1}
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
@@ -554,6 +563,7 @@ qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
 qstr_You_received_weekly_ You_received_weekly_wage.
+qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
 qstr_You_entered_in_posse You_entered_in_possession_of_a_strage,_oversized_bowl_of_fresh_looking_water._It_smells_a_little_like_musk.
@@ -568,8 +578,8 @@ qstr_Dark_shadow_finally_ Dark_shadow_finally_broke_into_storm,_and_evil_hordes_
 qstr_The_War_has_started! The_War_has_started!
 qstr_DEBUG:_you_are_insid DEBUG:_you_are_inside_fangorn._Fangorn_danger_level:_{reg5}
 qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
-qstr_Your_companions__mor Your_companions'_morale_has_boosted_in_hatred.
-qstr_Your_companions__mora Your_companions'_morale_has_dropped_in_fear.
+qstr_Your_companions__mor Your_companions'_morale_has_risen_from_hatred.
+qstr_Your_companions__mora Your_companions'_morale_has_dropped_from_fear.
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
 qstr_{reg65?madame:sir} {reg65?madame:sir}
@@ -586,13 +596,18 @@ qstr__no_fiefs_ (no_fiefs)
 qstr__fiefs:_{s0}_ (fiefs:_{s0})
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
-qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_{s25},_so_I_guess_I_should_consider_you_an_ally.
-qstr_Thank_you_officer.^ Thank_you,_officer.^
+qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
+qstr_Excellent_job_{s23}! Excellent_job,_{s23}!_I_wish_all_our_commanders_were_as_dedicated_as_you.^
+qstr_Nicely_done_{s23}. Nicely_done,_{s23}.
+qstr_Good_work_{s23}. Good_work,_{s23}.
+qstr_The_more_you_capture The_more_you_capture,_the_better,_{s23}.
+qstr_Caught_a_few_straggl Caught_a_few_stragglers,_{s23}?
+qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
-qstr_My_duty. My_duty.
-qstr_Our_enemy_is_ultimat Our_enemy_is_ultimately_the_same,^our_war_is_one.
+qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
+qstr_Our_enemy_is_the_sam Our_enemy_is_the_same,_we_fight_the_same_war.
 qstr_I_am_{s4}_the_ruler_ I_am_{s4},_the_ruler_of_{s6}
-qstr_I_am_{s4}_a_vassal_o I_am_{s4},_a_vassal_of_{s6}
+qstr_I_am_{s4}_a_commande I_am_{s4},_a_commander_of_{s6}
 qstr_{s9}{reg5?_and_the_l {s9}{reg5?_and_the_lord_of_{s8}.:.
 qstr_Your_mission_is_comp Your_mission_is_complete,_{s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_heads_of_cattle_and_deliver_them_back_to_him.
