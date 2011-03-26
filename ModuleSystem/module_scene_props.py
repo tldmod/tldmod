@@ -1824,4 +1824,14 @@ scene_props = [
 ("ruins_amon_hen",0,"ruins_amon_hen","0",[]),
 ("ruins_tower",0,"ruins_tower","0",[]),
 
- ]
+###TLD Tunnel System###
+("tunnel_short",0,"tunnel_short","bo_tunnel_short", []),
+("tunnel_straight",0,"tunnel_straight","bo_tunnel_straight", []),
+("tunnel_curved",0,"tunnel_curved","bo_tunnel_curved", []),
+("tunnel_support",0,"tunnel_support","bo_tunnel_support", []),
+("tunnel_sloped",0,"tunnel_sloped","bo_tunnel_sloped", []),
+("tunnel_split",0,"tunnel_split","bo_tunnel_split", []),
+("tunnel_crossing",0,"tunnel_crossing","bo_tunnel_crossing", []),
+("tunnel_chasm",0,"chasm","bo_chasm", []), 
+
+]

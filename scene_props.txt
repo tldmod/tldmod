@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1172
+ 1180
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3569,5 +3569,29 @@ spr_ruins_amon_hen 0 0 ruins_amon_hen 0 0
 
 
 spr_ruins_tower 0 0 ruins_tower 0 0
+
+
+spr_tunnel_short 0 0 tunnel_short bo_tunnel_short 0
+
+
+spr_tunnel_straight 0 0 tunnel_straight bo_tunnel_straight 0
+
+
+spr_tunnel_curved 0 0 tunnel_curved bo_tunnel_curved 0
+
+
+spr_tunnel_support 0 0 tunnel_support bo_tunnel_support 0
+
+
+spr_tunnel_sloped 0 0 tunnel_sloped bo_tunnel_sloped 0
+
+
+spr_tunnel_split 0 0 tunnel_split bo_tunnel_split 0
+
+
+spr_tunnel_crossing 0 0 tunnel_crossing bo_tunnel_crossing 0
+
+
+spr_tunnel_chasm 0 0 chasm bo_chasm 0
 
 
