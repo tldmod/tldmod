@@ -2413,7 +2413,7 @@ game_menus = [
 	 [(store_random_in_range,":chance",0,100),
 	  (try_begin),
 	    (lt,":chance",60),
-		#(call_script,"script_fangorn_fight_ents"),
+		(call_script,"script_fangorn_fight_ents"),
 		(modify_visitors_at_site,"scn_random_scene_steppe_forest"),
         (reset_visitors),
        

@@ -890,21 +890,26 @@ scripts = [
   #    INPUT: party to test
   #    OUTPUT: reg0  = 1 if yes
   ("party_is_in_fangorn",
-   [#(position_get_x,reg0,1),
-    #(position_get_y,reg1,1),
-    #(display_message,"@main party now in ({reg0},{reg1})")
+   [
     (set_fixed_point_multiplier, 100),
     (store_script_param_1, ":party"),
-    (party_get_position,pos1,":party"),
+    (party_get_position, pos1, ":party"),
     (position_set_x,pos2,3524),(position_set_y,pos2,-8419),(position_set_z,pos2,0), # MV: new fangorn center, should be in parties though
     #(position_set_x,pos2,6647),(position_set_y,pos2,-10644),(position_set_z,pos2,0), # fangorn center
-    (get_distance_between_positions,reg0,pos1,pos2),
-    #(display_message,"@distance from fangorn: {reg0}"),
+    (get_distance_between_positions, ":dist", pos1, pos2),
+    (party_get_current_terrain, ":terrain_type", ":party"),
+# (assign, reg0, ":dist"),
+# (assign, reg1, ":terrain_type"),
+# (display_message,"@Distance from Fangorn: {reg0}, terrain: {reg1}"),
+    
     (try_begin),
-      (lt,reg0,1800), #MV: was 3200
-      (assign,reg0,1),
+      (lt, ":dist", 2500), #MV: was 3200
+      (this_or_next|eq, ":terrain_type", rt_steppe_forest),
+      (this_or_next|eq, ":terrain_type", rt_forest),
+      (eq, ":terrain_type", rt_snow_forest),
+      (assign, reg0, 1),
     (else_try),
-      (assign,reg0,0),
+      (assign, reg0, 0),
     (try_end),
    ]
   ),
