@@ -139,10 +139,10 @@ party_templates = [
 ("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1),0,fac_isengard,soldier_personality,[(trp_uruk_snaga_of_isengard,8,13),(trp_large_uruk_hai_scout,8,13),(trp_large_uruk_hai_of_isengard,3,8),(trp_fighting_uruk_hai_champion,1,1)]),
 ("dunland_raiders" ,"Dunlending Raiders",icon_dunlander     |carries_goods(2),0,fac_dunland ,soldier_personality,[(trp_dunnish_wildman,15,20),(trp_dunnish_raven_rider,15,20),(trp_dunnish_wolf_guard,1,1)]),
 ("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2),0,fac_harad   ,soldier_personality,[(trp_harad_desert_warrior,11,20),(trp_harad_archer,10,20),(trp_harad_black_serpent_infantry,1,1)]),
-("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2),0,fac_khand   ,soldier_personality,[(trp_easterling_warrior,5,15),(trp_greenwood_veteran_archer,5,15),(trp_greenwood_royal_spearman,1,1)]),
-("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2),0,fac_umbar   ,soldier_personality,[(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10),(trp_girions_guard_of_dale,1,1)]),
+("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2),0,fac_khand   ,soldier_personality,[(trp_easterling_veteran_horseman,5,15),(trp_easterling_rider,5,15),(trp_easterling_horsemaster,1,1)]),
+("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2),0,fac_umbar   ,soldier_personality,[(trp_corsair_warrior,4,10),(trp_corsair_raider,4,10),(trp_corsair_veteran_raider,4,10),(trp_corsair_night_raider,1,1)]),
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2),0,fac_moria   ,soldier_personality,[(trp_warg_rider_of_moria,5,15),(trp_goblin_of_moria,5,15),(trp_fell_goblin_archer_of_moria,1,1)]),
-("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2),0,fac_guldur  ,soldier_personality,[(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10),(trp_girions_guard_of_dale,1,1)]),
+("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2),0,fac_guldur  ,soldier_personality,[(trp_orc_of_guldur,4,10),(trp_large_orc_of_mordor,4,10),(trp_fell_orc_of_mordor,4,10),(trp_fell_orc_tracker_of_mordor,1,1)]),
 ("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2),0,fac_gundabad,soldier_personality,[(trp_orc_gundabad,5,15),(trp_keen_eyed_goblin_archer_gundabad,5,15),(trp_goblin_north_clan_rider,1,1)]),
 ("rhun_raiders"    ,"Rhun Raiders"      ,icon_gray_knight   |carries_goods(1),0,fac_rhun    ,soldier_personality,[(trp_rhun_horse_archer,10,15),(trp_rhun_tribal_infantry,10,15),(trp_infantry_of_the_ox,1,1)]),
 
@@ -331,7 +331,7 @@ party_templates = [
 ("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_fell_orc_warrior_gundabad,5,16)]),
 #Dale
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,4,8),(trp_dale_man_at_arms,2,4)]),
-("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,3),(trp_dale_warrior,3,5),(trp_dale_militia,2,5)]),
+("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,3),(trp_dale_warrior,3,5),(trp_dale_veteran_warrior,2,5)]),
 ("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_dale_marchwarden,3,6)]),
 #Erebor
 ("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,6),(trp_dwarven_lookout,4,7)]),

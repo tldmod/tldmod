@@ -1464,7 +1464,7 @@ scene_props = [
   
 ###DWARVEN PROPS###
 ("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
-("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
+#("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
 ("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
 ("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
 ("distant_mountain2",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
@@ -1626,7 +1626,7 @@ scene_props = [
 
   ("ZT_pl_fir_shubby1", 0, "PL_fur_tall1", "0", []), ("ZT_pl_fir_shubby2", 0, "PL_fur_tall2", "0", []), ("ZT_pl_fir_shubby3", 0, "PL_fur_tall3", "0", []), 
   ("ZT_pl_fir_shubby_sm1", 0, "PW_tree_2_a", "bo_pw_tree_2_a_cyl", []), ("ZT_pl_fir_shubby_sm2", 0, "PW_tree_2_b", "bo_pw_tree_2_b_cyl", []), 
-  ("ZT_pl_birch_y1", 0, "PW_tree_4_a", "bo_pw_tree_4_a_cyl", []), ("ZT_pl_birch_y2", 0, "pw_tree_4_b", "bo_pw_tree_4_b_cyl", []), 
+  ("ZT_pl_birch_y1", 0, "PW_tree_4_a", "bo_pw_tree_4_a_cyl", []), ("ZT_pl_birch_y2", 0, "PW_tree_4_b", "bo_pw_tree_4_b_cyl", []), 
   ("ZT_pl_birch_yg1", 0, "PW_tree_18_a", "bo_pw_tree_18_a_cyl", []), ("ZT_pl_birch_yg2", 0, "PW_tree_18_b", "bo_pw_tree_18_b_cyl", []), 
   ("ZT_pl_birch_g1", 0, "PW_tree_5_a", "bo_pw_tree_5_a_cyl", []), ("ZT_pl_birch_g2", 0, "PW_tree_5_b", "bo_pw_tree_5_b_cyl", []), ("ZT_pl_birch_g3", 0, "PW_tree_5_c", "bo_pw_tree_5_c_cyl", []), ("ZT_pl_birch_g4", 0, "PW_tree_5_d", "bo_pw_tree_5_d_cyl", []), 
   ("ZT_pl_birch_gg1", 0, "PW_tree_17_a", "bo_pw_tree_17_a", []), ("ZT_pl_birch_gg2", 0, "PW_tree_17_b", "bo_pw_tree_17_b", []), ("ZT_pl_birch_gg3", 0, "PW_tree_17_c", "bo_pw_tree_17_c", []), 
@@ -1811,9 +1811,9 @@ scene_props = [
 #("rock_boulder_1",0,"rock_boulder_1","bo_rock_boulder_1",[]),
 #("rock_flat_1",0,"rock_flat_1","bo_rock_flat_1",[]),
 
-("argo1",0,"argo1","0",[]),
-("argo2",0,"argo2","0",[]),
-("argo3",0,"argo3","0",[]),
+("argo1",0,"argo1","bo_argo1",[]),
+("argo2",0,"argo2","bo_argo2",[]),
+#("argo3",0,"argo3","0",[]),
 ("mist_a",sokf_moveable,"mist_a","0",[]),
 ("mist_b",sokf_moveable,"mist_b","0",[]),
 

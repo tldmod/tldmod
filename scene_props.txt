@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1180
+ 1178
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2603,9 +2603,6 @@ spr_tree_destructible 629178368 600 tree_e_2 bo_tree_e_2 2
 spr_dwarf_statue 0 0 statue_dwarf bo_statue_dwarf 0
 
 
-spr_distant_mountain4 69632 0 rom_mountain4 0 0
-
-
 spr_mordor_clouds 69632 0 skybox_cloud_overlay 0 0
 
 
@@ -3126,7 +3123,7 @@ spr_ZT_pl_fir_shubby_sm2 0 0 PW_tree_2_b bo_pw_tree_2_b_cyl 0
 spr_ZT_pl_birch_y1 0 0 PW_tree_4_a bo_pw_tree_4_a_cyl 0
 
 
-spr_ZT_pl_birch_y2 0 0 pw_tree_4_b bo_pw_tree_4_b_cyl 0
+spr_ZT_pl_birch_y2 0 0 PW_tree_4_b bo_pw_tree_4_b_cyl 0
 
 
 spr_ZT_pl_birch_yg1 0 0 PW_tree_18_a bo_pw_tree_18_a_cyl 0
@@ -3541,13 +3538,10 @@ spr_rock_cliff 0 0 cliff bo_cliff 0
 spr_rock_cliff_a 0 0 cliff_a bo_cliff_a 0
 
 
-spr_argo1 0 0 argo1 0 0
+spr_argo1 0 0 argo1 bo_argo1 0
 
 
-spr_argo2 0 0 argo2 0 0
-
-
-spr_argo3 0 0 argo3 0 0
+spr_argo2 0 0 argo2 bo_argo2 0
 
 
 spr_mist_a 65536 0 mist_a 0 0
