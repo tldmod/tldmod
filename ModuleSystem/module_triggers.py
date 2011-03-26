@@ -1320,7 +1320,7 @@ triggers = [
 	  (eq,":inside_fangorn",1),
 	  (assign,reg5,"$g_fangorn_rope_pulled"),
       (display_message,"@DEBUG: you are inside fangorn. Fangorn danger level: {reg5}"),
-	  (store_random_in_range,":chance",1,100),
+	  (store_random_in_range,":chance",0,100),
 	  (lt,":chance",25),
 	  (jump_to_menu,"mnu_fangorn_danger"),
 	(try_end),
