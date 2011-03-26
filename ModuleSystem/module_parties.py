@@ -200,10 +200,10 @@ parties = [
   ("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
   
 # central positions in theaters used to calculate advance camp positions
-  ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.194717,20.500275),[]), # West Osgiliath
-  ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.1,-28.5),[]), # East Emnet
+  ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
+  ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
   ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[]), # Thranduil's Halls
+  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.3,-194.0),[]), # Beorn's House
 
 
   ("training_ground"  ,"Training_Ground", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.189980,-6.471909),[]),

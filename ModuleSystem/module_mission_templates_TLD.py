@@ -306,10 +306,12 @@ tld_player_cant_ride = (0.90,1.5,0.5,
 	(agent_get_item_id,":mount_item", ":mount"),
 	(agent_set_animation, ":mount", "anim_horse_rear"),
 	(try_begin), 
-		(is_between, ":mount_item", item_warg_begin , item_warg_end),
+		(is_between, ":mount_item", item_warg_begin, item_warg_end),
 		(agent_deliver_damage_to_agent, ":mount", ":player"), # warg bytes!
+		(display_message, "@Bitten by your own warg mount!"),
 		(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 	(else_try),
+		(display_message, "@Your horse rears, refusing to obey your orders!"),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(try_end),
   ]
@@ -317,14 +319,14 @@ tld_player_cant_ride = (0.90,1.5,0.5,
 
 custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
   [
-    (assign, "$wargs_in_battle",0), # recount them, to account for deaths
-    (try_for_agents,":warg"),
+    (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
+    (try_for_agents, ":warg"),
 		(agent_get_item_id, ":warg_item", ":warg"),
-		(is_between, ":warg_item", item_warg_begin , item_warg_end),
+		(is_between, ":warg_item", item_warg_begin ,item_warg_end),
 		(agent_is_alive, ":warg"),
-		(store_add,"$wargs_in_battle","$wargs_in_battle",1), #  wargs_in_battle++
-		(store_random_in_range, reg10, 1,101), (ge, 7 , reg10),  # 7% of times
-		(display_message,"@warg says: 'woof, woof!'"),
+		(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
+		(store_random_in_range, ":random", 1, 101), (le, ":random", 7),  # 7% of time
+		#(display_message,"@warg says: 'woof, woof!'"),
 		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
 	(try_end),
   ]

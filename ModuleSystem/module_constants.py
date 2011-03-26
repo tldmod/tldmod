@@ -1211,6 +1211,11 @@ debug_point_4 = (1106, "@DEBUG: Routine 4", 0xffff00ff)
 
 debug_color = 0xff00ff
 
+# color-coded messages
+color_good_news = 0x50FF50
+color_bad_news = 0xFF5050
+color_neutral_news = 0xFFAA00
+
 def concatenate_scripts(block_list):
     result = []
     for block in block_list:

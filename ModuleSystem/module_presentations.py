@@ -1415,6 +1415,26 @@ presentations = [
           (store_div, "$g_battle_map_scale", ":map_height", "$g_battle_map_height"),
           (store_div, "$g_battle_map_width", ":map_width", "$g_battle_map_scale"),
         (try_end),
+
+## MadVader white dot begin        
+        (scene_prop_get_num_instances, ":inv_found", "spr_inventory"),
+        (try_begin),
+          (gt, ":inv_found", 0),
+          #white dot for player inventory
+          (create_mesh_overlay, reg1, "mesh_white_dot"),
+          (position_set_x, pos1, 200),
+          (position_set_y, pos1, 200),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_alpha, reg1, 0xFF),
+          (overlay_set_color, reg1, 0xFFFFFF),
+          (assign, ":inv_overlay", reg1),
+          (get_scene_boundaries, pos2, pos3),
+          (scene_prop_get_instance, ":inv_object", "spr_inventory", 0),
+          (prop_instance_get_position,pos1,":inv_object"),
+          (call_script, "script_convert_3d_pos_to_map_pos"), #uses g_battle_map_scale!
+          (overlay_set_position, ":inv_overlay", pos0),
+        (try_end),
+## MadVader white dot end        
         
         (create_image_button_overlay, "$g_battle_map_plane", "mesh_white_plane", "mesh_white_plane"),
         (overlay_set_color, "$g_battle_map_plane", 0),

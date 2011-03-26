@@ -1329,7 +1329,7 @@ dialogs = [
 [anyone, "tld_sell_prisoners_2",
    [(store_num_regular_prisoners,reg6),(eq,reg5,reg6)],
    "Changed your mind, eh?", "player_hire_troop_nextcycle", []],
-[anyone, "tld_sell_prisoners_2", [], "I'll make sure they won't run away from our dungeons.", "player_hire_troop_nextcycle",[]],
+[anyone, "tld_sell_prisoners_2", [], "I'll make sure they won't escape from our dungeons.", "player_hire_troop_nextcycle",[]],
 
 [anyone|plyr,"player_hire_troop", [], "Farewell.", "close_window", [] ],
 
@@ -1348,7 +1348,7 @@ dialogs = [
 
 [anyone,"player_hire_troop_take", 
   [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),(eq, reg26, 0)], # these who want to join cost too much -- player other faction
-  "There are brave soldiers here willing to risk their life, but none willing to fight under your command, I'm afraid...^^We are men of {s22}, not of {s25}.", 
+  "There are brave soldiers here willing to risk their life, but none willing to fight under your command, I'm afraid...^^We are {s22}, not {s25} soldiers.", 
   "player_hire_troop_nextcycle", []
 ],
 

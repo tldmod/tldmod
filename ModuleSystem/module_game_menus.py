@@ -319,7 +319,7 @@ game_menus = [
 	
 	(call_script, "script_get_own_rank_title", ":fac", reg10),
 	(str_store_string, s11, "@{s24}"),  # first title (own faction)
-	(str_store_string, s13, "@Influence:^ {reg11} (in {s16})"),  # first inf
+	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
 	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
 
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
@@ -334,10 +334,10 @@ game_menus = [
 			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24}"),  # title
 		(try_end),
 		(try_begin), 
-			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13}, {reg11} (in {s16})"),  # finf
+			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13}, {reg11} (with {s16})"),  # finf
 		(try_end),
 		(try_begin), 
-			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15}, {reg12} (in {s16})"),  # first rp
+			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15}, {reg12} (with {s16})"),  # first rp
 		(try_end),
 		
 	(try_end),
@@ -1297,7 +1297,7 @@ game_menus = [
     
     (try_begin),
       (gt,reg5,0),
-      (str_store_string, s12, "@Weekly Upkeep For Troops:^{reg5} Resource Points^"),
+      (str_store_string, s12, "@Weekly upkeep for troops:^{reg5} Resource Points^"),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (neq, ":faction_no", "fac_player_supporters_faction"),
         (call_script, "script_compute_wage_per_faction", ":faction_no"),
@@ -2042,7 +2042,7 @@ game_menus = [
           (enable_party, ":adv_camp"),
         (try_end),
       (try_end),
-      (display_message, "@SW advance camps spawned around East Emnet!", 0x30FFC8),
+      (display_message, "@SW advance camps spawned around a point northwest of East Emnet!", 0x30FFC8),
     ]),
     ("spawnSE",[],"Spawn SE advance camps", [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -2059,7 +2059,7 @@ game_menus = [
           (enable_party, ":adv_camp"),
         (try_end),
       (try_end),
-      (display_message, "@SE advance camps spawned around West Osgiliath!", 0x30FFC8),
+      (display_message, "@SE advance camps spawned around a point west of West Osgiliath!", 0x30FFC8),
     ]),
     ("spawnC",[],"Spawn C advance camps", [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -2093,9 +2093,9 @@ game_menus = [
           (enable_party, ":adv_camp"),
         (try_end),
       (try_end),
-      (display_message, "@N advance camps spawned around Thranduil's Halls!", 0x30FFC8),
+      (display_message, "@N advance camps spawned around Beorn's House!", 0x30FFC8),
     ]),
-    ("disable",[],"Disable advance camps", [
+    ("disable",[],"Remove all advance camps", [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2107,6 +2107,94 @@ game_menus = [
       (try_end),
       (call_script, "script_update_active_theaters"),
       (display_message, "@Advance camps disabled, theaters restored!", 0x30FFC8),
+    ]),
+    ("movespawnSW",[],"Move SW theater center and spawn camps there", [
+      (party_get_position, pos13, "p_main_party"),
+      (party_set_position, "p_theater_sw_center", pos13),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_SW),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SW),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (set_fixed_point_multiplier, 1000),
+      (position_get_x, reg2, pos13),
+      (position_get_y, reg3, pos13),
+      (display_message, "@SW advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
+    ]),
+    ("movespawnSE",[],"Move SE theater center and spawn camps there", [
+      (party_get_position, pos13, "p_main_party"),
+      (party_set_position, "p_theater_se_center", pos13),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_SE),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SE),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (set_fixed_point_multiplier, 1000),
+      (position_get_x, reg2, pos13),
+      (position_get_y, reg3, pos13),
+      (display_message, "@SE advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
+    ]),
+    ("movespawnC",[],"Move C theater center and spawn camps there", [
+      (party_get_position, pos13, "p_main_party"),
+      (party_set_position, "p_theater_c_center", pos13),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_C),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_C),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (set_fixed_point_multiplier, 1000),
+      (position_get_x, reg2, pos13),
+      (position_get_y, reg3, pos13),
+      (display_message, "@C advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
+    ]),
+    ("movespawnN",[],"Move N theater center and spawn camps there", [
+      (party_get_position, pos13, "p_main_party"),
+      (party_set_position, "p_theater_n_center", pos13),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neq, ":faction_no", "fac_player_supporters_faction"),
+        (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_N),
+        (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_N),
+          (disable_party, ":adv_camp"),
+        (else_try),        
+          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (party_set_position, ":adv_camp", pos1),
+          (enable_party, ":adv_camp"),
+        (try_end),
+      (try_end),
+      (set_fixed_point_multiplier, 1000),
+      (position_get_x, reg2, pos13),
+      (position_get_y, reg3, pos13),
+      (display_message, "@N advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
     ]),
     ("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
@@ -3104,12 +3192,12 @@ game_menus = [
             (assign, "$g_encounter_type", enctype_catched_during_village_raid),
             (party_quick_attach_to_current_battle, "$g_encounter_is_in_village", 1), #attach as enemy
             (str_store_string, s1, "@Villagers"),
-            (display_message, "str_s1_joined_battle_enemy"),
+            (display_message, "str_s1_joined_battle_enemy", color_bad_news),
           (else_try),
             (eq, "$g_encounter_type", enctype_fighting_against_village_raid),
             (party_quick_attach_to_current_battle, "$g_encounter_is_in_village", 0), #attach as friend
             (str_store_string, s1, "@Villagers"),
-            (display_message, "str_s1_joined_battle_friend"),
+            (display_message, "str_s1_joined_battle_friend", color_good_news),
             # Let village party join battle at your side
           (try_end),
           (call_script, "script_let_nearby_parties_join_current_battle", 0, 0),
@@ -3632,16 +3720,18 @@ game_menus = [
 	      (str_store_faction_name, s4, ":defeated_faction"),
           (display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
 
-		  (call_script, "script_find_closest_enemy_town_or_host",":defeated_faction","p_main_party"), 
+		  (call_script, "script_find_closest_enemy_town_or_host", ":defeated_faction", "p_main_party"),
+          (assign, ":impressed_party", reg0),
 		
 		  (try_begin),
-			  (ge, reg10, 0),
-			  (str_store_party_name, s3, reg10),
-			  (store_faction_of_party, "$impressed_faction", reg10),
-			  (try_begin),(is_between, reg10, towns_begin, towns_end), 
-                (display_log_message, "@News of your victory against {s4} reach {s3}."),
+			  (ge, ":impressed_party", 0),
+			  (str_store_party_name, s3, ":impressed_party"),
+			  (store_faction_of_party, "$impressed_faction", ":impressed_party"),
+			  (try_begin),
+                (is_between, ":impressed_party", towns_begin, towns_end), 
+                (display_log_message, "@News of your victory against {s4} reach {s3}.", color_good_news),
 			  (else_try), 
-				(display_log_message, "@{s3} witnesses your victory against {s4}."),
+				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end),
 		  (else_try),
 			  (display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
@@ -4073,11 +4163,12 @@ game_menus = [
   ),
   
   ( "join_battle",mnf_enable_hot_keys,
-    "^^^^^^You are helping the {s2} against the {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.",
+    "^^^^^^You are helping {s2} against {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.",
     "none",
     [   (str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
+        (assign, ":friends_left", reg10), #TLD fix
 
         (try_begin),
           (eq, "$new_encounter", 1),
@@ -4138,6 +4229,7 @@ game_menus = [
           (leave_encounter),
           (change_screen_return),
         (try_end),
+        (assign, reg10, ":friends_left"), #TLD fix
       ],
     [ ("join_attack",[
 #          (neq, "$encountered_party_hostile", 0),
@@ -4177,7 +4269,7 @@ game_menus = [
            (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
            (party_stack_get_troop_id, ":enemy_leader","$g_enemy_party",0),
            (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":enemy_leader", -1),
-           (display_message, "@Player retreats from battle"),
+           (display_message, "@You retreated from battle."),
         (try_end),
         (leave_encounter),(change_screen_return)]),
 		  
@@ -6752,8 +6844,8 @@ game_menus = [
 			(eq, ":encountered_subfaction", 0),
 			(str_store_faction_name, s61,":encountered_faction"), # non subfaction city get faction name in S61
 		(else_try),
-			(store_add, reg1, ":encountered_subfaction", "str_subfaction_gondor_name_begin"),
-			(str_store_string, s61, reg1),
+			(store_add, ":str_subfaction", ":encountered_subfaction", "str_subfaction_gondor_name_begin"),
+			(str_store_string, s61, ":str_subfaction"),
 		(try_end),
 
         (store_relation, ":faction_relation", ":encountered_faction", "fac_player_supporters_faction"),

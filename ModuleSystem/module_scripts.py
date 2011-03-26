@@ -208,7 +208,7 @@ scripts = [
 		(try_end),
 	(try_end),
 	(str_store_faction_name,s3,"$players_kingdom"),(store_troop_gold, reg3, "$g_player_troop"),
-	(display_message, "@debug: player has faction '{s3}' and {reg3} golds"),
+	(display_message, "@debug: player has faction '{s3}' and {reg3} gold"),
 	#]+concatenate_scripts([
 	#	(store_set_slot, faction_init[y][0], slot_faction_influence, 0),
 	#	(store_set_slot, faction_init[y][0], slot_faction_rank, 0),
@@ -286,7 +286,7 @@ scripts = [
 	(else_try),
 		(ge, reg10, 5), (str_store_string, s24, "@Commander of {s5}"),
 	(else_try),
-		(ge, reg10, 4), (str_store_string, s24, "@Sargent of {s5}"),
+		(ge, reg10, 4), (str_store_string, s24, "@Sergeant of {s5}"),
 	(else_try),
 		(ge, reg10, 3), (str_store_string, s24, "@Veteran of {s5}"),
 	(else_try),
@@ -294,7 +294,7 @@ scripts = [
 	(else_try),
 		(ge, reg10, 1), (str_store_string, s24, "@Recruit of {s5}"),
 	(else_try),
-		(str_store_string, s24, "@a no-one in {s5}"),
+		(str_store_string, s24, "@unknown in {s5}"),
 	(end_try),
   ]),
 
@@ -347,7 +347,7 @@ scripts = [
 	  (play_sound, "snd_gong"),
 	  (call_script,"script_get_rank_title", ":fac", 0),
 	  (str_store_troop_name, s10, "trp_player"),
-	  (display_message, "@You are now {s10}, {s24}"),
+	  (display_message, "@You are now {s10}, {s24}", color_good_news),
 	]
   ),
   
@@ -372,7 +372,7 @@ scripts = [
 	  (try_begin), (lt, reg10, 10), (str_store_string, s10, "@.0"), (else_try), (str_store_string, s10, "@."), (try_end),
 	  (str_store_faction_name, s11, ":fac"),
 	  (assign, reg12, ":inf_dif"),
-	  (display_message, "@Earned {reg12} influence in {s11} (+{reg10}{s10}{reg11} rank)"),
+	  (display_message, "@Earned {reg12} influence with {s11} (+{reg10}{s10}{reg11} rank)", color_good_news),
 	  
 	  # rank increased?
 	  (try_begin),
@@ -381,9 +381,10 @@ scripts = [
 	  (try_end),
  	]
   ),
-  
+
+# script_find_closest_enemy_town_or_host  
 # input: faction f,  party x
-# output: Reg10 = closest party to x enemy of f,   Reg11 = its dist
+# output: reg0 = closest party to x enemy of f, but friend of player, reg1 = its distance
 ("find_closest_enemy_town_or_host",[
 	(store_script_param, ":fac", 1),
 	(store_script_param, ":target", 2),
@@ -391,25 +392,25 @@ scripts = [
 	(assign, ":res", -1),
     (try_for_parties, ":party"),
        (party_is_active, ":party"),
-       (store_distance_to_party_from_party, ":dist", ":party", ":target"),
+       
+       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),  # its a host
+       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone),  # or a lone hero
+	   (is_between, ":party", towns_begin, towns_end),  #or a town
+       
 	   (store_faction_of_party, ":pfac", ":party"),
 	   (store_relation, ":relation", ":pfac", ":fac"),
-	 
 	   (lt, ":relation", 0), # it's an enemy...
 	   
 	   (store_relation, ":relation", ":pfac", "$players_kingdom"),
-	 
 	   (ge, ":relation", 0), # and it's your friend
-       
-       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),  # its a host
-	   (is_between, ":party", towns_begin, towns_end),  #or a town
  
+       (store_distance_to_party_from_party, ":dist", ":party", ":target"),
        (lt, ":dist", ":mindist"),
 	   (assign, ":mindist", ":dist"),
 	   (assign, ":res", ":party"),
      (try_end),
-	 (assign, reg10, ":res"),
-	 (assign, reg11, ":dist"),
+	 (assign, reg0, ":res"),
+	 (assign, reg1, ":dist"),
      ]),
 	 
 	 
@@ -6431,6 +6432,7 @@ scripts = [
         (assign, ":join_distance", 3),
       (try_end),
       (try_for_parties, ":party_no"),
+        (party_is_active, ":party_no"), # Warband fix
         (party_get_battle_opponent, ":opponent",":party_no"),
         (lt, ":opponent", 0), #party is not itself involved in a battle
         (party_get_attached_to, ":attached_to",":party_no"),
@@ -6468,12 +6470,14 @@ scripts = [
           (lt, ":reln_with_player", 0),
           (gt, ":reln_with_enemy", 0),
           (party_get_slot, ":party_type", ":party_no"),
-          (eq, ":party_type", spt_kingdom_hero_party),
+          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
+          (neq, ":party_type", spt_town), #...except towns
+
           (get_party_ai_behavior, ":ai_bhvr", ":party_no"),
           (neq, ":ai_bhvr", ai_bhvr_avoid_party),
           (party_quick_attach_to_current_battle, ":party_no", ":enemy_side"), #attach as enemy
           (str_store_party_name, s1, ":party_no"),
-          (display_message, "str_s1_joined_battle_enemy"),
+          (display_message, "str_s1_joined_battle_enemy", color_bad_news),
         (else_try),
           (eq, ":dont_add_friends", 0),
           (gt, ":reln_with_player", 0),
@@ -6488,15 +6492,18 @@ scripts = [
           (try_end),
           (eq, ":do_join", 1),
           (party_get_slot, ":party_type", ":party_no"),
-          (eq, ":party_type", spt_kingdom_hero_party),
-          (party_stack_get_troop_id, ":leader", ":party_no", 0),
+          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
+          (neq, ":party_type", spt_town), #...except towns
+
+          #MV commented out personal relations
+          #(party_stack_get_troop_id, ":leader", ":party_no", 0),
    #       (troop_get_slot, ":player_relation", ":leader", slot_troop_player_relation),
-          (call_script, "script_troop_get_player_relation", ":leader"),
-          (assign, ":player_relation", reg0),
-          (ge, ":player_relation", 0),
+          #(call_script, "script_troop_get_player_relation", ":leader"),
+          #(assign, ":player_relation", reg0),
+          #(ge, ":player_relation", 0),
           (party_quick_attach_to_current_battle, ":party_no", 0), #attach as friend
           (str_store_party_name, s1, ":party_no"),
-          (display_message, "str_s1_joined_battle_friend"),
+          (display_message, "str_s1_joined_battle_friend", color_good_news),
         (try_end),
       (try_end),
   ]),
@@ -8237,10 +8244,10 @@ scripts = [
         (val_abs, reg12),
         (try_begin),
          (gt, ":renown_change", 0),
-         (display_message, "@You gained {reg12} renown."),
+         (display_message, "@You gained {reg12} renown.", color_good_news),
         (else_try),
           (lt, ":renown_change", 0),
-          (display_message, "@You lose {reg12} renown."),
+          (display_message, "@You lose {reg12} renown.", color_bad_news),
         (try_end),
       (try_end),
       (call_script, "script_update_troop_notes", ":troop_no"),
@@ -8274,10 +8281,10 @@ scripts = [
           (assign, reg2, ":new_effective_relation"),
           (try_begin),
             (gt, ":difference", 0),
-            (display_message, "str_troop_relation_increased"),
+            (display_message, "str_troop_relation_increased", color_good_news),
           (else_try),
             (lt, ":difference", 0),
-            (display_message, "str_troop_relation_detoriated"),
+            (display_message, "str_troop_relation_detoriated", color_bad_news),
           (try_end),
           (try_begin),
             (eq, ":troop_no", "$g_talk_troop"),
@@ -8306,7 +8313,7 @@ scripts = [
       (str_store_party_name_link, s1, ":center_no"),
       (try_begin),
         (gt, ":difference", 0),
-        (display_message, "@Your relation with {s1} has improved."),
+        (display_message, "@Your relation with {s1} has improved.", color_good_news),
       (else_try),
         (lt, ":difference", 0),
         (display_message, "@Your relation with {s1} has deteriorated."),
@@ -8342,10 +8349,10 @@ scripts = [
       (str_store_faction_name_link, s1, ":faction_no"),
       (try_begin),
         (gt, ":difference", 0),
-        (display_message, "str_faction_relation_increased"),
+        (display_message, "str_faction_relation_increased", color_good_news),
       (else_try),
         (lt, ":difference", 0),
-        (display_message, "str_faction_relation_detoriated"),
+        (display_message, "str_faction_relation_detoriated", color_bad_news),
       (try_end),
       (call_script, "script_update_all_notes"),
       ]),
@@ -8417,10 +8424,10 @@ scripts = [
       (val_add, "$player_honor", ":honor_dif"),
       (try_begin),
         (gt, ":honor_dif", 0),
-        (display_message, "@You gain honour."),
+        (display_message, "@You gain honour.", color_good_news),
       (else_try),
         (lt, ":honor_dif", 0),
-        (display_message, "@You lose honour."),
+        (display_message, "@You lose honour.", color_bad_news),
       (try_end),
 
 ##      (val_mul, ":honor_dif", 1000),
@@ -8463,11 +8470,11 @@ scripts = [
       (try_begin),
         (lt, ":new_morale", ":cur_morale"),
         (store_sub, reg1, ":cur_morale", ":new_morale"),
-        (display_message, "str_party_lost_morale"),
+        (display_message, "str_party_lost_morale", color_bad_news),
       (else_try),
         (gt, ":new_morale", ":cur_morale"),
         (store_sub, reg1, ":new_morale", ":cur_morale"),
-        (display_message, "str_party_gained_morale"),
+        (display_message, "str_party_gained_morale", color_good_news),
       (try_end),
   ]),
 
@@ -10813,6 +10820,7 @@ scripts = [
 #      (try_end),
   ]),
   
+#script_party_vote_race
 	# each party member "votes" his race,. Votes go in reg15 and reg16 -- mtarini
     ("party_vote_race",
     [
@@ -10841,6 +10849,7 @@ scripts = [
   ]),
 
   
+#script_calculate_battleside_races
   # compute with rache each battle is (mtarini)
   # $player_side_race_group = humanoids or orchoids
   # $player_side_race = humanoids or orchoids
@@ -17997,7 +18006,7 @@ scripts = [
                         for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]))
                     ]+[
                     (else_try),
-                        (display_message, "@You company cannot take more man", 0xffff1493),
+                        (display_message, "@You company cannot take more men", 0xffff1493),
                     (try_end),
                 (else_try),
                     ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
@@ -18050,7 +18059,7 @@ scripts = [
                         ]+[
                         (assign, ":continue", 1),
                     (else_try),
-                        (display_message, "@You inventory has no enough space.", 0xffff1493),                    
+                        (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
                     (try_end),
                 (else_try),
                     ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
@@ -18103,7 +18112,7 @@ scripts = [
                         ]+[
                         (assign, ":continue", 1),
                     (else_try),
-                        (display_message, "@You inventory has no enough space.", 0xffff1493),                    
+                        (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
                     (try_end),
                 (else_try),
                     ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))

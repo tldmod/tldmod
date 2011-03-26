@@ -2540,11 +2540,11 @@ ai_scripts = [
 # (assign, reg3, ":whole_distance"),
 # (display_message, "@DEBUG: diff {reg1}, {reg2} distance {reg3}."),
      
-     # Calculate 20% from theater center and clamp it at 5-35 clicks (note: non-optimal code for readability)
+     # Calculate 20% from theater center and clamp it at 7-35 clicks (note: non-optimal code for readability)
      (assign, ":distance", ":whole_distance"),
      (val_mul, ":distance", 2), 
      (val_div, ":distance", 10),
-     (val_clamp, ":distance", 5000, 35001),
+     (val_clamp, ":distance", 7000, 35001),
      
      # Get the new scaled x,y differences
      (val_mul, ":xdiff", ":distance"),

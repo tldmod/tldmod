@@ -46,7 +46,7 @@ subfac_ethring = 3
 subfac_lossarnach = 4
 subfac_pinnath_gelin = 5
 subfac_rangers = 6
-subfac_blackroot = 6
+subfac_blackroot = 7
 
 opmask_register             =  tag_register       << op_num_value_bits
 opmask_variable             =  tag_variable       << op_num_value_bits

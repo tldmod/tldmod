@@ -1,4 +1,4 @@
-691
+696
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -55,18 +55,18 @@ qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
 qstr_You_gain_{reg10}_Res You_gain_{reg10}_Resource_Pts._of_{s10}.
 qstr_You_used_{reg10}_Res You_used_{reg10}_Resource_Pts._of_{s10}.
-qstr_debug:_player_has_fa debug:_player_has_faction_'{s3}'_and_{reg3}_golds
+qstr_debug:_player_has_fa debug:_player_has_faction_'{s3}'_and_{reg3}_gold
 qstr_{s24}: {s24}:
 qstr_Uber_Master_Knight_o Uber-Master_Knight_of_{s5}_(rank_{reg10})
 qstr_Master_Knight_of_{s5 Master_Knight_of_{s5}
 qstr_Veteran_Knight_of_{s Veteran_Knight_of_{s5}
 qstr_Knight_of_{s5} Knight_of_{s5}
 qstr_Commander_of_{s5} Commander_of_{s5}
-qstr_Sargent_of_{s5} Sargent_of_{s5}
+qstr_Sergeant_of_{s5} Sergeant_of_{s5}
 qstr_Veteran_of_{s5} Veteran_of_{s5}
 qstr_Soldier_of_{s5} Soldier_of_{s5}
 qstr_Recruit_of_{s5} Recruit_of_{s5}
-qstr_a_no_one_in_{s5} a_no-one_in_{s5}
+qstr_unknown_in_{s5} unknown_in_{s5}
 qstr_Great_Hope_of_{s5}__ Great_Hope_of_{s5}_(rank_{reg10})
 qstr_Hope_of_{s5} Hope_of_{s5}
 qstr_Great_Friend_of_{s5} Great_Friend_of_{s5}
@@ -80,7 +80,7 @@ qstr_unknown_stranger_in_ unknown_stranger_in_{s5}
 qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}
 qstr_.0 .0
 qstr_. .
-qstr_Earned_{reg12}_influ Earned_{reg12}_influence_in_{s11}_(+{reg10}{s10}{reg11}_rank)
+qstr_Earned_{reg12}_influ Earned_{reg12}_influence_with_{s11}_(+{reg10}{s10}{reg11}_rank)
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their
@@ -277,8 +277,8 @@ qstr_Event_#{reg5}_type_{reg6 Event_#{reg5},_type_{reg6},_time_{reg8}._Player_un
 qstr_Elapsed_hours:_{reg7 Elapsed_hours:_{reg7}
 qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
-qstr_You_company_cannot_t You_company_cannot_take_more_man
-qstr_You_inventory_has_no You_inventory_has_no_enough_space.
+qstr_You_company_cannot_t You_company_cannot_take_more_men
+qstr_You_inventory_doesn_ You_inventory_doesn't_have_enough_space.
 qstr_DEBUG:_{s1}_decided_ DEBUG:_{s1}_decided_to_besiege_{s2}.
 qstr_DEBUG:_{s1}_decided_t DEBUG:_{s1}_decided_to_attack_{s2}.
 qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
@@ -300,7 +300,8 @@ qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_DEBUG:_troll_health: DEBUG:_troll_health:_{reg1}%!
-qstr_warg_says:__woof_woo warg_says:_'woof,_woof!'
+qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
+qstr_Your_horse_rears_ref Your_horse_rears,_refusing_to_obey_your_orders!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Cannot_leave_now. Cannot_leave_now.
@@ -319,11 +320,11 @@ qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_max_X{reg0}_max_Y_{r max_X{reg0}_max_Y_{reg1}
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
 qstr_{s24} {s24}
-qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(in_{s16})
+qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})
 qstr_Resource_Pts:^_{reg1 Resource_Pts:^_{reg12}_(in_{s16})
 qstr_{s11}_{s24} {s11},_{s24}
-qstr_{s13}_{reg11}__in_{s {s13},_{reg11}_(in_{s16})
-qstr_{s15}_{reg12}__in_{s {s15},_{reg12}_(in_{s16})
+qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
+qstr_{s15}_{reg12}__with_ {s15},_{reg12}_(with_{s16})
 qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.^^Renown:_{reg2}.
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
 qstr_They_came_here_after They_came_here_after_we_kicked_their_asses_5:0_in_the_first_round!_Let's_do_it_again.
@@ -349,7 +350,7 @@ qstr_Attacking_enemies_ar Attacking_enemies_around_{s11}
 qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
-qstr_Weekly_Upkeep_For_Tr Weekly_Upkeep_For_Troops:^{reg5}_Resource_Points^
+qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
 qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Renown:_{s4}{reg3}^TOTAL:__{reg5}
@@ -417,11 +418,15 @@ qstr_{s1}^Difference:_{re {s1}^Difference:_{reg1}
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
-qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_East_Emnet!
-qstr_SE_advance_camps_spa SE_advance_camps_spawned_around_West_Osgiliath!
+qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_a_point_northwest_of_East_Emnet!
+qstr_SE_advance_camps_spa SE_advance_camps_spawned_around_a_point_west_of_West_Osgiliath!
 qstr_C_advance_camps_spaw C_advance_camps_spawned_around_Cerin_Amroth!
-qstr_N_advance_camps_spaw N_advance_camps_spawned_around_Thranduil's_Halls!
+qstr_N_advance_camps_spaw N_advance_camps_spawned_around_Beorn's_House!
 qstr_Advance_camps_disabl Advance_camps_disabled,_theaters_restored!
+qstr_SW_advance_camps_spaw SW_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_SE_advance_camps_spaw SE_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
@@ -488,7 +493,7 @@ qstr_Retirement_is_starti Retirement_is_starting_to_sound_better_and_better.
 qstr_No_matter!_I_will_pe No_matter!_I_will_persevere!
 qstr_What_did_I_do_to_des What_did_I_do_to_deserve_this?
 qstr_I_suppose_it_ll_make I_suppose_it'll_make_for_a_good_story,_at_least...
-qstr_Player_retreats_from Player_retreats_from_battle
+qstr_You_retreated_from_b You_retreated_from_battle.
 qstr_{s9}_wants_you_to_fo {s9}_wants_you_to_follow_his_army_until_further_notice.
 qstr_{s8}_of_{s9} {s8}_of_{s9}
 qstr__Your_own_banner_fli _Your_own_banner_flies_over_the_castle_gate.
