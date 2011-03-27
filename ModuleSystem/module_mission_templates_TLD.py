@@ -53,15 +53,15 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 		(try_begin),
 			(gt, ":die_roll", 95),
 			(assign,"$nazgul_in_battle",3),	
-			(display_log_message, "@Three Nazguls are circling in the sky around the battleground!"),
+			(display_log_message, "@Three Nazguls are circling in the sky above the battlefield!"),
 		(else_try),
 			(gt, ":die_roll", 70),
 			(assign,"$nazgul_in_battle",2),	
-			(display_log_message, "@Two Nazguls are circling in the sky around the battleground!"),
+			(display_log_message, "@Two Nazguls are circling in the sky above the battlefield!"),
 		(else_try),
 			(gt, ":die_roll", 5),
 			(assign,"$nazgul_in_battle",1),	
-			(display_log_message, "@A Nazgul is circling in the sky around the battleground!"),
+			(display_log_message, "@A Nazgul is circling in the sky above the battlefield!"),
 		(try_end),
 	(try_end),
   ]
@@ -79,11 +79,11 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
 	  (agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
 	  # troll gets x4 hp
-	  (store_agent_hit_points,reg0,":troll",1),
+	  #(store_agent_hit_points,reg0,":troll",1),
 	  #(store_mul,":hp",4,":hp"),
 	  #(agent_set_hit_points ,":troll",":hp",1),
 	  #(assign, reg0, ":hp"),
-	  (display_message,"@DEBUG: troll spawned with {reg0} hitpoints!"),
+	  #(display_message,"@DEBUG: troll spawned with {reg0} hitpoints!"),
 	  (agent_set_stand_animation,":troll","anim_walk_forward_troll"),
 	(try_end),
 	(try_begin),
@@ -130,6 +130,8 @@ nazgul_sweeps = (2,1.2,5,
 		#(display_log_message, "@Debug: SHORT sweep!"),
 	(try_end), 
 	 
+	(get_player_agent_no, ":player_agent"), #for messages
+			
 	# psycological effect:
 	(try_for_agents,":victim"),
 		(agent_is_alive,":victim"),
@@ -152,9 +154,9 @@ nazgul_sweeps = (2,1.2,5,
 		(store_attribute_level, ":int", ":trp_victim", ca_intelligence),
 		(store_skill_level, ":riding", "skl_riding", ":trp_victim"),
 		(store_random_in_range,":die_roll_int",1,26),
-			
-		(assign, ":human_resisted", 0),
-		(assign, ":horse_resisted", 0),
+        
+		# (assign, ":human_resisted", 0),
+		# (assign, ":horse_resisted", 0),
 
 		# the horses couldrear
 		(try_begin), 
@@ -168,14 +170,22 @@ nazgul_sweeps = (2,1.2,5,
 				(else_try), 
 					(agent_set_animation, ":horse", "anim_horse_rear_fast_blend"), 
 				(try_end), 
+                (try_begin), #always let the player know what affects him
+                    (eq, ":player_agent", ":victim"),
+                    (display_log_message, "@You and your horse panic, the Nazgul cries are unbearable!"),
+                (try_end), 
 			(else_try), 
 				# if rider success on intelligece test: he won'y panic, horse could
 				(store_random_in_range,":die_roll_riding",1,13),
 				(ge, ":die_roll_riding" , ":riding"), # riding test: horse is a victim if 1d12 rolls over riding skill
 				(agent_set_animation, ":horse", "anim_horse_rear"),
 				#(agent_play_sound,":horse","snd_neigh"),
-			(else_try), 
-				(assign, ":horse_resisted", 1),
+                (try_begin), #always let the player know what affects him
+                    (eq, ":player_agent", ":victim"),
+                    (display_log_message, "@Your horse panics, the Nazgul cries are unbearable!"),
+                (try_end), 
+			# (else_try), 
+				# (assign, ":horse_resisted", 1),
 			(try_end), 
 		(try_end), 
 		
@@ -200,18 +210,22 @@ nazgul_sweeps = (2,1.2,5,
 					(agent_set_animation, ":victim", "anim_nazgul_noooo_short"),
 				(try_end), 
 			(try_end), 
-		(else_try), 
-			(assign, ":human_resisted", 1),
-				
+            (try_begin), #always let the player know what affects him
+                (eq, ":player_agent", ":victim"),
+                (display_log_message, "@You cower in terror, the Nazgul cries are unbearable!"),
+            (try_end), 
+		# (else_try), 
+			# (assign, ":human_resisted", 1),				
 		(try_end), 
 		
 		# show message?
-		(get_player_agent_no, ":player_agent"),
-		(eq,":player_agent", ":victim"),
-		(eq,":human_resisted", 1),
-		(display_log_message,"@Panic resisted!"),
-		(eq,":horse_resisted", 1),
-		(display_log_message,"@Horse panic avoided!"),
+        # MV: commented out - resistance not important, it's the other way around, effects are important
+		# (get_player_agent_no, ":player_agent"),
+		# (eq,":player_agent", ":victim"),
+		# (eq,":human_resisted", 1),
+		# (display_log_message,"@Panic resisted!"),
+		# (eq,":horse_resisted", 1),
+		# (display_log_message,"@Horse panic avoided!"),
     (try_end),
 	
 	(store_random_in_range,":die_roll",1,4),
@@ -311,7 +325,7 @@ tld_player_cant_ride = (0.90,1.5,0.5,
 		(display_message, "@Bitten by your own warg mount!"),
 		(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 	(else_try),
-		(display_message, "@Your horse rears, refusing to obey your orders!"),
+		(display_message, "@Your horse rears, refusing to obey your commands!"),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(try_end),
   ]
@@ -1060,7 +1074,7 @@ scene_set_flora_army_spawn = (0, 0, ti_once,[
 	(try_end),
 	(assign,reg0,"$battlemap_max_x"),
 	(assign,reg1,"$battlemap_max_y"),	 
-	(display_message,"@max X{reg0} max Y {reg1}"),
+	(display_message,"@max X {reg0} max Y {reg1}"),
     ],[])
  
 

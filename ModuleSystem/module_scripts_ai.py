@@ -1875,7 +1875,14 @@ ai_scripts = [
             (str_store_party_name_link, s1, ":ai_object"),
             (str_store_troop_name_link, s2, ":troop_no"),
             (str_store_faction_name_link, s3, ":faction_no"),
-            (display_log_message, "@{s1} has been besieged by {s2} of {s3}."),
+            (try_begin),
+              (store_relation, ":rel", "$players_kingdom", ":faction_no"),
+              (gt, ":rel", 0),
+              (assign, ":news_color", color_good_news),
+            (else_try),
+              (assign, ":news_color", color_bad_news),
+            (try_end),
+            (display_log_message, "@{s1} has been besieged by {s2} of {s3}.", ":news_color"),
             (try_begin),
               (store_faction_of_party, ":ai_object_faction", ":ai_object"),
               (this_or_next|party_slot_eq, ":ai_object", slot_town_lord, "trp_player"),
@@ -2085,6 +2092,8 @@ ai_scripts = [
     
   # TLD War System Scripts end (foxyman)
   ##########################################
+
+
   # script_calculate_troop_ai
   # Input: troop_no
   # Output: none
@@ -2221,7 +2230,13 @@ ai_scripts = [
          (gt, ":faction_marshall_party", 0),
          (try_begin),
            (eq, ":faction_ai_state", sfai_gathering_army),
-           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_undefined, -1),
+           (try_begin), #TLD: if there is an advance camp, travel there to gather your army
+             (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+             (party_is_active, ":adv_camp"),
+             (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, ":adv_camp"),
+           (else_try),
+             (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_undefined, -1),
+           (try_end),
            (party_set_ai_initiative, ":faction_marshall_party", 100),
          (else_try),
            (eq, ":faction_ai_state", sfai_attacking_center),

@@ -1391,29 +1391,36 @@ ws_party_spawns_list = [
 	
 ]
 
-# TLD Spawn frequency multiplier. How frequent a party can spawn
-ws_scout_freq_multiplier = 3.5
-ws_patrol_freq_multiplier = 1.5
-ws_raider_freq_multiplier = 2.5
-ws_caravan_freq_multiplier = 2.5
-ws_host_freq_multiplier = 1
+# TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
+ws_scout_chance = 50
+ws_raider_chance = 30 # no chance below str. 500
+ws_patrol_chance = 15 # no chance below str. 2000
+ws_caravan_chance = 25 # no chance below str. 1000
+#ws_host_chance = 35
 
-# TLD Party limit multiplier. Maximum number of parties depending on the faction strength. (Namely strength*multiplier is the party number limit)
+#MV: removed these because of unnecessarily obscure meaning, replaced by ws_*_chance
+# ws_scout_freq_multiplier = 3.5
+# ws_raider_freq_multiplier = 2.5
+# ws_patrol_freq_multiplier = 1.5
+# ws_caravan_freq_multiplier = 2.5
+# ws_host_freq_multiplier = 1
+
+# TLD Party limit multiplier. Maximum number of parties depending on the faction strength. (Namely strength*multiplier/2500 is the party number limit)
 ws_scout_limit_multiplier = 10
-ws_patrol_limit_multiplier = 4.5
 ws_raider_limit_multiplier = 7
+ws_patrol_limit_multiplier = 4.5
 ws_caravan_limit_multiplier = 5.5
-ws_host_limit_multiplier = 4
+#ws_host_limit_multiplier = 4
 
 # TLD Party victory points. Faction strength got diminished by these when party is killed.
 ws_scout_vp   = 20
 ws_raider_vp  = 50
 ws_patrol_vp  = 100
-ws_caravan_vp = 200
+ws_caravan_vp = 100
 ws_alone_vp   = 100  # for hero-led parties (alone).
-ws_host_vp    = 300  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
+ws_host_vp    = 150  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
 ws_p_train_vp = 50
-ws_center_vp  = 500  # loss of center
+ws_center_vp  = 200  # loss of center
 
 # TLD faction restoration speed (added each 2 hours to faction strength)
 #ws_faction_restoration = 1 #MV: not used anymore

@@ -1569,6 +1569,13 @@ game_menus = [
      # (party_set_name, ":ruin_party", "@{s1} ruins"),
      # (display_message, "@Hornburg razed - check map!", 0x30FFC8),
    # ]),
+   ("camp_mvtest_wait",[],"Fast forward for 30 days.",[
+         (assign, "$g_camp_mode", 1),
+         #(assign, "$g_infinite_camping", 1),
+         (assign, "$g_player_icon_state", pis_camping),
+         (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
+         (change_screen_return),
+   ]), 
    ("camp_mvtest_notes",[],"Update lord locations.",[
      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (call_script, "script_update_troop_location_notes", ":troop_no", 0),

@@ -224,15 +224,19 @@ triggers = [
             (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":center_theater"), #center in faction's active theater
             
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
-			(val_div, ":strength", 50), #strength now 0-140 or more
-#            (val_mul, ":strength", 20), # strength got multied 1000x, so mul became div
-            #(assign, ":strength", 500),
+            (val_clamp, ":strength", 0, 7001), # keep spawning chance and limits within reason
+			(store_div, ":chance_modifier", ":strength", 100),
+            (val_sub, ":chance_modifier", 35), # -5 for str. 3000, 0 for 3500, +5 for 4000,... +35 for 7000 
+            
             (try_begin),
                 (gt, ":center_scouts", 0),
-                (store_random_in_range, ":rand", 0, int(300/ws_scout_freq_multiplier)), #95
-                (le, ":rand", ":strength"),
-                (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000), #10000
-                (val_div, ":limit", 20000),
+                # (store_random_in_range, ":rand", 0, int(15000/ws_scout_freq_multiplier)), # 0-4285
+                # (le, ":rand", ":strength"), # 81% for fac.str. 3500
+                (store_add, ":chance", ws_scout_chance, ":chance_modifier"),
+                (store_random_in_range, ":rand", 0, 100),
+                (lt, ":rand", ":chance"), # 50% for fac.str. 3500
+                (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000),
+                (val_div, ":limit", 2500*1000), #14 for fac.str. 3500; 28 for 7000
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_scout),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
@@ -260,10 +264,13 @@ triggers = [
             (try_begin),
                 (ge,"$tld_war_began",1), # No raiders before war
                 (gt, ":center_raiders", 0),
-                (store_random_in_range, ":rand", 0, int(1000/ws_raider_freq_multiplier)),
-                (le, ":rand", ":strength"),
+                # (store_random_in_range, ":rand", 0, int(50000/ws_raider_freq_multiplier)), # 0-20000
+                # (le, ":rand", ":strength"), # 17% for fac.str. 3500
+                (store_add, ":chance", ws_raider_chance, ":chance_modifier"),
+                (store_random_in_range, ":rand", 0, 100),
+                (lt, ":rand", ":chance"), # 30% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_raider_limit_multiplier*1000),
-                (val_div, ":limit", 20000),
+                (val_div, ":limit", 2500*1000), #9 for fac.str. 3500
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_raider),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
@@ -288,10 +295,13 @@ triggers = [
             (try_begin),
                 (ge,"$tld_war_began",1), # No patrols before war
                 (gt, ":center_patrol", 0),
-                (store_random_in_range, ":rand", 0, int(1000/ws_patrol_freq_multiplier)),
-                (le, ":rand", ":strength"),
+                # (store_random_in_range, ":rand", 0, int(50000/ws_patrol_freq_multiplier)), # 0-33333
+                # (le, ":rand", ":strength"), # 10% for fac.str. 3500
+                (store_add, ":chance", ws_patrol_chance, ":chance_modifier"),
+                (store_random_in_range, ":rand", 0, 100),
+                (lt, ":rand", ":chance"), # 15% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_patrol_limit_multiplier*1000),
-                (val_div, ":limit", 20000),
+                (val_div, ":limit", 2500*1000), #6 for fac.str. 3500
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_patrol),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
@@ -308,10 +318,13 @@ triggers = [
             (try_end),
             (try_begin),
                 (gt, ":center_caravan", 0),
-                (store_random_in_range, ":rand", 0, int(1000/ws_caravan_freq_multiplier)),
-                (le, ":rand", ":strength"),
+                # (store_random_in_range, ":rand", 0, int(50000/ws_caravan_freq_multiplier)), # 0-20000
+                # (le, ":rand", ":strength"), # 17% for fac.str. 3500
+                (store_add, ":chance", ws_caravan_chance, ":chance_modifier"),
+                (store_random_in_range, ":rand", 0, 100),
+                (lt, ":rand", ":chance"), # 25% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_caravan_limit_multiplier*1000),
-                (val_div, ":limit", 20000),
+                (val_div, ":limit", 2500*1000), #7 for fac.str. 3500
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_kingdom_caravan),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 0),

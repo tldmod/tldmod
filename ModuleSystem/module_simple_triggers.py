@@ -2196,13 +2196,22 @@ simple_triggers = [
        (val_div,":strength",1000),
        (val_div,":strength_new",1000),
        (neq,":strength",":strength_new"),
+       (store_relation, ":rel", "$players_kingdom", ":faction"),
+       (try_begin),
+          (store_sub, ":is_good", ":strength_new", ":strength"),
+          (val_mul, ":is_good", ":rel"), # only the sign is important
+          (ge, ":is_good", 0), # ++ or --
+          (assign, ":news_color", color_good_news),
+       (else_try),
+          (assign, ":news_color", color_bad_news),
+       (try_end),
        (str_store_faction_name, s22,":faction"),
        (call_script, "script_faction_strength_string", ":faction"),
        (try_begin),
           (lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
-          (display_message,"@The forces of {s22} have rallied! {s22} is now {s23}."),
+          (display_message,"@The forces of {s22} have rallied! {s22} is now {s23}.", ":news_color"),
        (else_try),
-          (display_message,"@The might of {s22} has diminished! {s22} is now {s23}."), # announce when strength threshold is crossed downwards
+          (display_message,"@The might of {s22} has diminished! {s22} is now {s23}.", ":news_color"), # announce when strength threshold is crossed downwards
        (try_end),
      (try_end),
     ]),
