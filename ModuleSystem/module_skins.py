@@ -336,15 +336,9 @@ skins = [
      ("manface_7"         ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("manface_midage_2"  ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("manface_rugged"    ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("manface_african"   ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ("berserker_face_a"  ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
      ("berserker_face_b"  ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
      ("berserker_face_c"  ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("face_camo_a"       ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("face_camo_b"       ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("face_camo_c"       ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     ("face_camo_d"       ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("face_camo_e"       ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ("wildman_face_a"    ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ("wildman_face_b"    ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("east_bandit_face_a",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
@@ -396,7 +390,7 @@ skins = [
     "urukhai_body", "urukhai_calf_l", "uh_handL",
     "urukhai_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
-    ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes ,"beard_q"
+    ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
     ["orc_hair_ears"], #hair textures
     ["orc_hair_ears"], #beard_materials
 	[("face_uruk_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),
@@ -422,7 +416,7 @@ skins = [
     "uruk_body", "uruk_calf_l", "u_handL",
     "uruk_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
-    ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes ,"beard_q"
+    ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
     ["orc_hair_ears"], #hair textures
     ["orc_hair_ears"], #beard_materials
 	[("face_urukhai_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
