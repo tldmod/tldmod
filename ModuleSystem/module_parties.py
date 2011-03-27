@@ -119,7 +119,7 @@ parties = [
     ("town_beorn_house"     ,"Beorn's House",    icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.3,-194.0),[],170),
 # Moria towns
     ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(29.0,-151.3),[],200),
-    ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.2,-94.4),[],170),
+    ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(33.2,-114.4),[],170),
 # Dale towns
     ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.1,-223.9),[],170),
     ("town_esgaroth","Esgaroth",     icon_esgaroth |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.4,-217.9),[],170),

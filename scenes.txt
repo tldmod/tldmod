@@ -412,7 +412,7 @@ scn_troll_cave_center troll_cave_center 256 none none 0.000000 0.000000 100.0000
   0 
   0 
  outer_terrain_forest 
-scn_dale_center dale_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
+scn_dale_center dale_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000         0x20008a110002589600006af30000356b00002c27 
   0 
   0 
  outer_terrain_plain 
