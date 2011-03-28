@@ -1,5 +1,5 @@
 stringsfile version 1
-1351
+1354
 str_no_string NO_STRING!
 str_empty_string _
 str_yes Yes.
@@ -168,7 +168,7 @@ str_siege_defender_order_attack_failure The_assault_quickly_turns_into_a_bloodba
 str_siege_defender_order_attack_continue Repeated,_bloody_attempts_on_the_walls_fail_to_gain_any_ground,_but_too_many_enemies_remain_for_the_defenders_to_claim_a_true_victory._The_siege_continues.
 str_hero_taken_prisoner {s1}_of_{s3}_has_been_taken_prisoner_by_{s2}.
 str_hero_freed {s1}_of_{s3}_has_been_freed_from_captivity_by_{s2}.
-str_center_captured {s2}_have_taken_{s1}_from_{s3}.
+str_center_captured {s2}_have_taken_{s1}_from_{s3}!
 str_troop_relation_increased Your_relation_with_{s1}_has_increased_from_{reg1}_to_{reg2}.
 str_troop_relation_detoriated Your_relation_with_{s1}_has_deteriorated_from_{reg1}_to_{reg2}.
 str_faction_relation_increased Your_relation_with_{s1}_has_increased_from_{reg1}_to_{reg2}.
@@ -1296,10 +1296,13 @@ str_credits_12 Thanks_to_all_of_our_partners_worldwide,_in_particular_long-term_
 str_faction_strength_crushed crushed
 str_faction_strength_spent_and_wavering spent_and_wavering
 str_faction_strength_weakened weakened
-str_faction_strength_in_good_state in_a_good_state
+str_faction_strength_fair fair
+str_faction_strength_average average
 str_faction_strength_strong strong
+str_faction_strength_quite_strong quite_strong
 str_faction_strength_very_strong very_strong
 str_faction_strength_unmatched unmatched
+str_faction_strength_last INVALID
 str_theater_se Gondor
 str_theater_sw Rohan
 str_theater_c South_Rhovanion

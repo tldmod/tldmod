@@ -130,7 +130,7 @@ slot_faction_side          = 158  # side_good, side_eye, or side_hand
 slot_faction_home_theater  = 159  # theater_SW, theater_SE, theater_C, theater_N
 slot_faction_active_theater= 160  # theater_SW, theater_SE, theater_C, theater_N #MV
 slot_faction_advance_camp  = 161  # MV: advance camp party
-slot_faction_advcamp_timer = 162  # MV: used to time establishing an advance camp (3 days)
+slot_faction_advcamp_timer = 162  # MV: used to time establishing an advance camp (3+ days)
 # TLD War System end (matrini)
 
 _= "itm_warg_1b"
@@ -1392,9 +1392,9 @@ ws_party_spawns_list = [
 ]
 
 # TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
-ws_scout_chance = 50
-ws_raider_chance = 30 # no chance below str. 500
-ws_patrol_chance = 15 # no chance below str. 2000
+ws_scout_chance = 60
+ws_raider_chance = 45
+ws_patrol_chance = 30 # no chance below str. 500
 ws_caravan_chance = 25 # no chance below str. 1000
 #ws_host_chance = 35
 
@@ -1405,21 +1405,21 @@ ws_caravan_chance = 25 # no chance below str. 1000
 # ws_caravan_freq_multiplier = 2.5
 # ws_host_freq_multiplier = 1
 
-# TLD Party limit multiplier. Maximum number of parties depending on the faction strength. (Namely strength*multiplier/2500 is the party number limit)
-ws_scout_limit_multiplier = 10
-ws_raider_limit_multiplier = 7
-ws_patrol_limit_multiplier = 4.5
-ws_caravan_limit_multiplier = 5.5
+# TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
+ws_scout_limit_multiplier = 14
+ws_raider_limit_multiplier = 9
+ws_patrol_limit_multiplier = 6
+ws_caravan_limit_multiplier = 5
 #ws_host_limit_multiplier = 4
 
-# TLD Party victory points. Faction strength got diminished by these when party is killed.
+# TLD Party victory points. Faction strength decreased by these when party is killed, winner gets half of it.
 ws_scout_vp   = 20
-ws_raider_vp  = 50
+ws_raider_vp  = 40
 ws_patrol_vp  = 100
 ws_caravan_vp = 100
-ws_alone_vp   = 100  # for hero-led parties (alone).
-ws_host_vp    = 150  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
-ws_p_train_vp = 50
+ws_alone_vp   = 80  # for hero-led parties (alone).
+ws_host_vp    = 120  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
+ws_p_train_vp = 40
 ws_center_vp  = 200  # loss of center
 
 # TLD faction restoration speed (added each 2 hours to faction strength)
@@ -1429,6 +1429,7 @@ ws_center_vp  = 200  # loss of center
 str_income_low  = 5
 str_income_med  = 10
 str_income_high = 20
+str_income_very_high = 50
 
 # Center garrison limits (slot_center_garrison_limit), for easy mass tweaking
 garrison_limit_low  = 150
@@ -1454,16 +1455,16 @@ center_list = [
 		[0],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0),
 	("p_town_minas_tirith", ["scn_minas_tirith_center", "scn_minas_tirith_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_town_1_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"], 
-		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,2000],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0),
+		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 0),
 	("p_town_pelargir", ["scn_pelargir_center", "scn_gondor_castle_a", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_pelargir", "trp_smith_pelargir", "trp_town_2_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_b"], 
 		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[4,4,4,6,4,8], str_income_low, garrison_limit_med, 0),
 	("p_town_linhir", ["scn_linhir_center", "scn_gondor_castle_b", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_linhir", "trp_smith_linhir", "trp_town_3_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-		["icon_mfc_gondor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 0),
+		["icon_mfc_gondor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,2,8,2,8], str_income_med, garrison_limit_med, 0),
 	("p_town_dol_amroth", ["scn_dol_amroth_center", "scn_dol_amroth_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_dolamroth", "trp_smith_dolamroth", "trp_town_4_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_white","trp_walker_man_gondor_blue","trp_walker_woman_gondor_b"], 
-		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,3,8,2,5], str_income_low, garrison_limit_med, 0),
+		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,3,8,2,5], str_income_med, garrison_limit_med, 0),
 	("p_town_edhellond", ["scn_edhellond_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_edhellond", "trp_smith_edhellond", "trp_town_5_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
 		["icon_mfc_gondor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,3,2,5,2,8], str_income_low, garrison_limit_med, 0),
@@ -1500,19 +1501,19 @@ center_list = [
 		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,3,2,5,2,8], str_income_med, garrison_limit_med, 0),
 	("p_town_hornburg", ["scn_hornburg_center", -1, "scn_rohan_prison","scn_rohan_tavern", -1],
 	    ["trp_barman_hornburg", "trp_smith_hornburg", "trp_town_16_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_knight_1_10", "trp_rohan_youth", "trp_walker_man_rohan_t", "trp_guardsman_of_rohan", "trp_footman_of_rohan"], 
-		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[3,8,4,6,4,5], str_income_med, garrison_limit_high, 0),
+		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[3,8,4,6,4,5], str_income_high, garrison_limit_high, 0),
 	("p_town_east_emnet", ["scn_east_emnet_center", "scn_rohan_castle_a", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_eastemnet", "trp_smith_eastemnet", "trp_town_17_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_knight_1_11", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
 		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,4,5,4,7], str_income_low, garrison_limit_low, 0),
 	("p_town_westfold", ["scn_westfold_center", "scn_rohan_castle_b", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_westfold", "trp_smith_westfold", "trp_town_18_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_knight_1_12", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_low, garrison_limit_low, 0),
+		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_med, garrison_limit_low, 0),
 	("p_town_west_emnet", ["scn_west_emnet_center", "scn_rohan_castle_a", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_westemnet", "trp_smith_westemnet", "trp_town_19_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_knight_1_13", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
 		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,3,4,3,6], str_income_low, garrison_limit_low, 0),
 	("p_town_eastfold", ["scn_eastfold_center", "scn_rohan_castle_b", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_eastfold", "trp_smith_eastfold", "trp_town_20_horse_merchant", "trp_elder", "pt_rohan_reinf_a", "trp_knight_1_14", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[3,8,4,6,4,5], str_income_low, garrison_limit_med, 0),
+		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[3,8,4,6,4,5], str_income_med, garrison_limit_med, 0),
 # Mordor centers
 #	("p_town_barad_dur", ["scn_barad_dur_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 #	    ["trp_barman_baraddur", "trp_smith_baraddur", "trp_town_21_horse_merchant", "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
@@ -1522,19 +1523,19 @@ center_list = [
 		["icon_mfc_mordor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,4,5,4,7], str_income_high, garrison_limit_evil_high*2, 0),
 	("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_town_23_horse_merchant", "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-		["icon_mfc_mordor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_high, garrison_limit_evil_high, 0),
+		["icon_mfc_mordor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_med, garrison_limit_evil_high, 0),
 #	("p_town_mount_doom", ["scn_mount_doom_center", -1, -1, -1, -1],
 #	    [-1, -1, -1, "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 #		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
 	("p_town_cirith_ungol", ["scn_cirith_ungol_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_cungol", "trp_smith_cungol", "trp_town_25_horse_merchant", "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 0),
+		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0),
 	("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_oscamp", "trp_town_26_horse_merchant", "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
+		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
 	("p_town_east_osgiliath", ["scn_east_osgiliath_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_eosgiliath", "trp_town_10_horse_merchant", "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 0),
+		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0),
 	("p_town_isengard", ["scn_isengard_center", "scn_isengard_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_isengard", "trp_smith_isengard", "trp_town_26_horse_merchant", "trp_elder", "pt_isengard_reinf_a",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_scout","trp_uruk_hai_of_isengard"], 
 		["icon_mfc_isengard"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 0),
@@ -1550,10 +1551,10 @@ center_list = [
 
 	("p_town_caras_galadhon", ["scn_caras_galadhon_center", "scn_elf_castle", "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
 	    ["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_town_31_horse_merchant", "trp_elder", "pt_lorien_reinf_a", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-		["icon_mfc_lorien"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 0),
+		["icon_mfc_lorien"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0),
 	("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_cdolen", "trp_town_32_horse_merchant", "trp_elder", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-		["icon_mfc_lorien"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 0),
+		["icon_mfc_lorien"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0),
 	("p_town_cerin_amroth", ["scn_cerin_amroth_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_camroth", "trp_town_33_horse_merchant", "trp_elder", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 		["icon_mfc_lorien"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0),
@@ -1584,7 +1585,7 @@ center_list = [
 		["icon_mfc_moria"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 0),
 	("p_town_troll_cave", ["scn_troll_cave_center", -1, -1,-1,-1],
 	    [-1, "trp_no_troop", "trp_no_troop", "trp_elder", "pt_moria_reinf_a", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
-		["icon_mfc_moria"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_moria"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1),
 
 	("p_town_dale", ["scn_dale_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_dale", "trp_town_38_weaponsmith", "trp_town_38_horse_merchant", "trp_elder", "pt_dale_reinf_a", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_bowmen"], 
@@ -1625,19 +1626,19 @@ center_list = [
 		["icon_mfc_rhun"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
 	("p_town_gundabad_camp", ["scn_gundabad_camp_center", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1),
 	("p_town_gundabad_ne_outpost", ["scn_gundabad_ne_outpost_center", -1, -1,-1,-1],
 	    [-1, "trp_no_troop", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
 	("p_town_gundabad_nw_outpost", ["scn_gundabad_nw_outpost_center", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_no_troop", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_gundabad"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
 	("p_town_goblin_north_outpost", ["scn_goblin_north_outpost_center", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
 	("p_town_goblin_south_outpost", ["scn_goblin_south_outpost_center", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
+		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1),
 	("p_town_gundabad_mirkwood_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_elder", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),

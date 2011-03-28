@@ -1223,6 +1223,8 @@ scripts = [
         # set center theater according to faction theater - never changes except for advance camps
         (faction_get_slot, ":theater", ":faction", slot_faction_home_theater),
 		(party_set_slot, ":town_no", slot_center_theater, ":theater"),
+        # victory points value on capture/destruction
+		(party_set_slot, ":town_no", slot_party_victory_value, ws_center_vp),
       (try_end),
 	  
 	  ]+[
@@ -1862,8 +1864,8 @@ scripts = [
                     (distribute_party_among_party_group, "p_temp_party", ":root_winner_party"), 
                 # TLD: spawn prisoner train end
              (try_end),
-             (store_faction_of_party, ":winner_faction", ":root_winner_party"),
-             (call_script, "script_clear_party_group", ":root_defeated_party", ":winner_faction"),
+             
+             (call_script, "script_clear_party_group", ":root_defeated_party", ":faction_receiving_prisoners"),
              (assign, ":trigger_result", 1), #End battle!
 
              #Center captured
@@ -1888,7 +1890,12 @@ scripts = [
                (else_try),
                  (assign, ":news_color", color_bad_news),
                (try_end),
-               (display_log_message, "str_center_captured", ":news_color"),
+               (try_begin),
+                 (party_slot_eq, ":root_defeated_party", slot_center_destroy_on_capture, 1),
+                 (display_log_message, "@{s2} have razed {s1}!", ":news_color"),
+               (else_try),
+                 (display_log_message, "str_center_captured", ":news_color"),
+               (try_end),
 
                (try_begin),
                     (eq, "$g_encountered_party", ":root_defeated_party"),
@@ -3678,9 +3685,9 @@ scripts = [
 	        (str_store_faction_name,s2,":winner_faction"),
             (try_begin),
               (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
-	          (display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+	          #(display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."), #mvdebug
             (else_try),
-	          (display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, defeat by {s2}."),
+	          #(display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, defeat by {s2}."), #mvdebug
             (try_end),
           (try_end),
 	    (try_end),
@@ -6862,35 +6869,40 @@ scripts = [
         (party_set_slot, ":center_no", slot_center_spawn_caravan, ":value"),
       (try_end),
       
+      #reduce income to 5 if non-zero
+      (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
+      (val_min, ":strength_income", str_income_low),
+      (party_set_slot, ":center_no", slot_center_strength_income, ":strength_income"),
+      
       #TLD: old faction loses faction strength
-      (faction_get_slot,":strength",":old_faction",slot_faction_strength_tmp),
-      (val_sub, ":strength", ws_center_vp),
-      (faction_set_slot,":old_faction",slot_faction_strength_tmp,":strength"),
-      #debug stuff
-      (faction_get_slot, ":debug_loss", ":old_faction", slot_faction_debug_str_loss),
-      (val_add, ":debug_loss", ws_center_vp),
-      (faction_set_slot, ":old_faction", slot_faction_debug_str_loss, ":debug_loss"),
-      #TLD: conquering faction gains faction strength
-      (faction_get_slot,":winner_strength",":faction_no",slot_faction_strength_tmp),
-      (store_div, ":win_value", ws_center_vp, 2), #this formula could be balanced after playtesting
-      (val_add, ":winner_strength", ":win_value"),
-      (faction_set_slot,":faction_no",slot_faction_strength_tmp,":winner_strength"),
-      #debug stuff
-      (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain),
-      (val_add, ":debug_gain", ":win_value"),
-      (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"),
-      #debug
-      (try_begin),
-        (eq, cheat_switch, 1),
-        (assign,reg0,ws_center_vp),
-        (assign,reg1,":strength"),
-        (assign,reg2,":win_value"),
-        (assign,reg3,":winner_strength"),
-        (str_store_faction_name,s1,":old_faction"),
-        (str_store_faction_name,s2,":faction_no"),
-        (str_store_party_name,s3,":center_no"),
-        (display_message,"@DEBUG: {s3} captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
-      (try_end),
+      # (faction_get_slot,":strength",":old_faction",slot_faction_strength_tmp),
+      # (val_sub, ":strength", ws_center_vp),
+      # (faction_set_slot,":old_faction",slot_faction_strength_tmp,":strength"),
+      # #debug stuff
+      # (faction_get_slot, ":debug_loss", ":old_faction", slot_faction_debug_str_loss),
+      # (val_add, ":debug_loss", ws_center_vp),
+      # (faction_set_slot, ":old_faction", slot_faction_debug_str_loss, ":debug_loss"),
+      # #TLD: conquering faction gains faction strength
+      # (faction_get_slot,":winner_strength",":faction_no",slot_faction_strength_tmp),
+      # (store_div, ":win_value", ws_center_vp, 2), #this formula could be balanced after playtesting
+      # (val_add, ":winner_strength", ":win_value"),
+      # (faction_set_slot,":faction_no",slot_faction_strength_tmp,":winner_strength"),
+      # #debug stuff
+      # (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain),
+      # (val_add, ":debug_gain", ":win_value"),
+      # (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"),
+      # #debug
+      # (try_begin),
+        # (eq, cheat_switch, 1),
+        # (assign,reg0,ws_center_vp),
+        # (assign,reg1,":strength"),
+        # (assign,reg2,":win_value"),
+        # (assign,reg3,":winner_strength"),
+        # (str_store_faction_name,s1,":old_faction"),
+        # (str_store_faction_name,s2,":faction_no"),
+        # (str_store_party_name,s3,":center_no"),
+        # (display_message,"@DEBUG: {s3} captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+      # (try_end),
 
       (call_script, "script_update_faction_notes", ":old_faction"),
       (call_script, "script_update_faction_notes", ":faction_no"),
@@ -7924,6 +7936,11 @@ scripts = [
                (store_distance_to_party_from_party, ":besieger_distance", ":center_no", ":besieger_party"),
                (gt, ":besieger_distance", 5),
                (assign, ":siege_lifted", 1),
+             (else_try), #MV: possibly redundant code
+               (store_faction_of_party, ":besieger_faction", ":besieger_party"),
+               (store_relation, ":reln", ":besieger_faction", ":center_faction"),
+               (gt, ":reln", 0), #MV: if center changed hands
+               (assign, ":siege_lifted", 1),
              (try_end),
              (eq, ":siege_lifted", 1),
              (try_for_range, ":enemy_hero", kingdom_heroes_begin, kingdom_heroes_end),
@@ -7983,7 +8000,15 @@ scripts = [
       (try_begin),
         (eq, ":display_message", 1),
         (str_store_party_name_link, s3, ":center_no"),
-        (display_message, "@{s3} is no longer under siege."),
+        (try_begin),
+          (store_faction_of_party, ":faction", ":center_no"),
+          (store_relation, ":rel", "$players_kingdom", ":faction"),
+          (gt, ":rel", 0),
+          (assign, ":news_color", color_good_news),
+        (else_try),
+          (assign, ":news_color", color_bad_news),
+        (try_end),
+        (display_message, "@{s3} is no longer under siege.", ":news_color"),
       (try_end),
       ]),
 
@@ -9003,6 +9028,7 @@ scripts = [
         (val_add,":cur_pos", 1),
       (try_end),
       #TLD NPC companions
+      (val_max, ":cur_pos", 17), #if no one else in court, skip 16 (could be a throne)
       (try_for_range, ":cur_troop", companions_begin, companions_end),
         (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
         (neg|main_party_has_troop, ":cur_troop"), #not already hired
@@ -13710,6 +13736,10 @@ scripts = [
      (try_begin),
        (neq, reg0, 0),
        (troop_get_type, reg1, ":troop_no"),
+       (try_begin),
+         (gt, reg1, 1), #MV: non-humans are male
+         (assign, reg1, 0),
+       (try_end),
        (try_begin),
          (eq, ":see_or_hear", 0),
          (add_troop_note_from_sreg, ":troop_no", 2, "@The last time you saw {reg1?her:him}, {s1}", 1),

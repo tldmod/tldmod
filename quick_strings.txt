@@ -1,4 +1,4 @@
-696
+694
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -101,6 +101,7 @@ qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr__+_ _+_
 qstr_DEBUG:_Troll_hit!!! DEBUG:_Troll_hit!!!
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle_but_managed_to_escape.
+qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
@@ -121,8 +122,6 @@ qstr_Move_here Move_here
 qstr_View_notes View_notes
 qstr__{s61} _{s61}
 qstr_ERROR:_More_than_15_ ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
-qstr_DEBUG:_{s1}_strength DEBUG:_{s1}_strength_-{reg0}_to_{reg1},_{s2}_strength_+{reg2}_to_{reg3}.
-qstr_DEBUG:_{s1}_strength_ DEBUG:_{s1}_strength_-{reg0}_to_{reg1},_defeat_by_{s2}.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded
 qstr_killed killed
 qstr_wounded wounded
@@ -141,7 +140,6 @@ qstr_{reg0}_town{reg1?s:}_ {reg0}_town{reg1?s:}_and_{s0}
 qstr_{reg0}_town{reg1?s:}_{ {reg0}_town{reg1?s:},_{s0}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
-qstr_DEBUG:_{s3}_captured DEBUG:_{s3}_captured:_{s1}_strength_-{reg0}_to_{reg1},_{s2}_strength_+{reg2}_to_{reg3}.
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
@@ -285,7 +283,7 @@ qstr_DEBUG:_{s1}_decided_to DEBUG:_{s1}_decided_to_attack_enemies_around_{s2}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_{s6}_s_Host {s6}'s_Host
 qstr__{s6}_has_assumed_th _{s6}_has_assumed_the_command_of_a_{s5}_host!
-qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_towards_{s15}!
+qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
 qstr_{s1}_ruins {s1}_ruins
@@ -569,7 +567,7 @@ qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s1
 qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
 qstr_You_received_weekly_ You_received_weekly_wage.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
-qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
+qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}_service.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
 qstr_You_entered_in_posse You_entered_in_possession_of_a_strage,_oversized_bowl_of_fresh_looking_water._It_smells_a_little_like_musk.
 qstr_Obtained:_Ent_water. Obtained:_Ent_water.

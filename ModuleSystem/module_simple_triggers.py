@@ -949,6 +949,8 @@ simple_triggers = [
            (else_try),
              (call_script, "script_cf_select_random_town_at_peace_with_faction_in_trade_route", ":cur_center", ":merchant_faction"),
              (assign, ":target_center", reg0),
+             (eq, ":target_center", -1),
+             (remove_party, ":party_no"), #MV: no towns to travel to, remove
            (try_end),
            (is_between, ":target_center", towns_begin, towns_end),
 #           (display_message, "@DEBUG: target", 0xff00fd33),
@@ -2253,6 +2255,9 @@ simple_triggers = [
         (val_add, ":camp_requested_hours", 3*24), # 3 days after faction changes theater or previous camp destroyed
         (ge, ":cur_hours", ":camp_requested_hours"),
         
+        (store_random_in_range, ":rand", 0, 100),
+        (lt, ":rand", 5), # 5% chance each hour
+        
         # set up the advance camp
         (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
         (call_script, "script_get_advcamp_pos", ":faction"), #fills pos1
@@ -2260,7 +2265,14 @@ simple_triggers = [
         (enable_party, ":adv_camp"), #enable.. works if it's enabled already too
         (call_script, "script_theater_name_to_s15", ":active_theater"),
         (str_store_faction_name, s2, ":faction"),
-        (display_log_message, "@The forces of {s2} established an advanced camp in {s15}!"),
+        (try_begin),
+          (store_relation, ":rel", "$players_kingdom", ":faction"),
+          (gt, ":rel", 0),
+          (assign, ":news_color", color_good_news),
+        (else_try),
+          (assign, ":news_color", color_bad_news),
+        (try_end),
+        (display_log_message, "@The forces of {s2} established an advanced camp in {s15}!", ":news_color"),
         (call_script, "script_update_center_notes", ":adv_camp"),
           
         # fill the garrison if needed

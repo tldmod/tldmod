@@ -367,6 +367,7 @@ ai_scripts = [
 
 #Attacking enemy army
        (try_begin),
+         (gt, ":faction_strength", fac_str_very_weak), #TLD: conserve strength if very weak
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_enemy_army", -1),
@@ -416,7 +417,7 @@ ai_scripts = [
            (val_add, ":dist", 20),
            (try_begin), #TLD: large effect of different active theaters, but still allowed for more random fun
              (neg|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
-             (val_mul, ":dist", 50),
+             (val_mul, ":dist", 100),
            (try_end),
            (val_div, ":attack_army_score", ":dist"),
            (gt, ":attack_army_score", ":best_attack_army_score"),
@@ -426,7 +427,7 @@ ai_scripts = [
          (ge, ":best_attack_army", 0),
          #Army having with equal strength and 30 kms away will have a best_attack_army_score of 28
          (store_mul, ":chance_attacking_enemy_army", ":best_attack_army_score", 2),
-         (val_min, ":chance_attacking_enemy_army", 1500),
+         #(val_min, ":chance_attacking_enemy_army", 1500), #TLD - too big scores
          (assign, ":target_attacking_enemy_army", ":best_attack_army"),
          (try_begin),
            (eq, ":old_target_attacking_enemy_army", ":target_attacking_enemy_army"),
@@ -631,6 +632,13 @@ ai_scripts = [
            (str_store_faction_name, s1, ":faction_no"),
            (str_store_party_name, s2, ":target_attacking_enemy_army"),
            (display_message, "@DEBUG: {s1} decided to attack {s2}."),
+  (assign, reg1, ":chance_defend"),
+  (assign, reg2, ":chance_gathering_army"),
+  (assign, reg3, ":chance_attacking_center"),
+  (assign, reg4, ":chance_attacking_enemy_army"),
+  (assign, reg5, ":chance_attacking_enemies_around_center"),
+  (str_store_faction_name, s1, ":faction_no"),
+  #(display_message, "@DEBUG: {s1} chances: D:{reg1} GA:{reg2} AC:{reg3} AEA:{reg4} AEAC:{reg5}.", 0x30FFC8), #mvdebug
          (try_end),
        (else_try),
          (val_sub, ":random_no", ":chance_attacking_enemies_around_center"),
@@ -1075,6 +1083,7 @@ ai_scripts = [
           (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
           (neq, ":faction_marshall", ":troop_no"),
           (ge, ":faction_marshall_party", 0),
+          (party_slot_eq, ":faction_marshall_party", slot_party_type, spt_kingdom_hero_party), # TLD: don't follow hostless kings
           (try_begin),
             (eq, ":faction_ai_state", sfai_gathering_army),
             (assign, ":old_target_to_follow_other_party", -1),
@@ -1592,7 +1601,7 @@ ai_scripts = [
         (try_end),
 #besiege center
         (try_begin), 
-          (eq,1,0), # no sieges so far, GA
+          #(eq,1,0), # no sieges so far, GA #MV: yes, sieges
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":continue", 0),
@@ -2165,15 +2174,20 @@ ai_scripts = [
       (faction_get_slot,":strength",":faction_no",slot_faction_strength),
 	  (val_add,":strength",999),
 	  (val_div,":strength",1000),
+	  (store_sub,":total_strings","str_faction_strength_last","str_faction_strength_crushed"),
+	  (val_clamp,":strength",0,":total_strings"),
 
-	  (try_begin),(le,":strength",0),(str_store_string,s23,"str_faction_strength_crushed"),
-	  (else_try) ,(eq,":strength",1),(str_store_string,s23,"str_faction_strength_spent_and_wavering"),
-	  (else_try) ,(eq,":strength",2),(str_store_string,s23,"str_faction_strength_weakened"),
-	  (else_try) ,(eq,":strength",3),(str_store_string,s23,"str_faction_strength_in_good_state"),
-	  (else_try) ,(eq,":strength",4),(str_store_string,s23,"str_faction_strength_strong"),
-	  (else_try) ,(eq,":strength",5),(str_store_string,s23,"str_faction_strength_very strong"),
-	  (else_try) ,(ge,":strength",6),(str_store_string,s23,"str_faction_strength_unmatched"),
-	  (try_end),
+	  (val_add,":strength","str_faction_strength_crushed"),
+      (str_store_string,s23,":strength"),
+
+	  # (try_begin),(le,":strength",0),(str_store_string,s23,"str_faction_strength_crushed"),
+	  # (else_try) ,(eq,":strength",1),(str_store_string,s23,"str_faction_strength_spent_and_wavering"),
+	  # (else_try) ,(eq,":strength",2),(str_store_string,s23,"str_faction_strength_weakened"),
+	  # (else_try) ,(eq,":strength",3),(str_store_string,s23,"str_faction_strength_in_good_state"),
+	  # (else_try) ,(eq,":strength",4),(str_store_string,s23,"str_faction_strength_strong"),
+	  # (else_try) ,(eq,":strength",5),(str_store_string,s23,"str_faction_strength_very strong"),
+	  # (else_try) ,(ge,":strength",6),(str_store_string,s23,"str_faction_strength_unmatched"),
+	  # (try_end),
     ]),
 	
   # script_create_kingdom_hero_party
@@ -2285,8 +2299,8 @@ ai_scripts = [
 
 		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
-		  (val_div, ":strength",1300),
-		  (val_add, ":strength",1),
+		  (val_div, ":strength", 1300),
+		  (val_add, ":strength", 1),
 		  (lt, ":hosts", ":strength"), # faction passes strength check 
 
 		  (store_random_in_range,":rnd",0,100),
@@ -2385,7 +2399,14 @@ ai_scripts = [
                   (assign, ":continue_loop", 0), # exit loop
                   (call_script, "script_theater_name_to_s15", ":next_theater"),
                   (str_store_faction_name, s2, ":faction"),
-                  (display_log_message, "@The forces of {s2} march towards {s15}!"),
+                  (try_begin),
+                    (store_relation, ":rel", "$players_kingdom", ":faction"),
+                    (gt, ":rel", 0),
+                    (assign, ":news_color", color_good_news),
+                  (else_try),
+                    (assign, ":news_color", color_bad_news),
+                  (try_end),
+                  (display_log_message, "@The forces of {s2} march on {s15}!", ":news_color"),
                   
                   (store_current_hours, ":cur_hours"),
                   (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
@@ -2421,7 +2442,14 @@ ai_scripts = [
                       (call_script, "script_destroy_center", ":enemy_adv_camp"),
                     (try_end),
                     (str_store_faction_name, s2, ":enemy_faction"),
-                    (display_log_message, "@The hosts of {s2} march back to defend their homes!"),
+                    (try_begin),
+                      (store_relation, ":rel", "$players_kingdom", ":enemy_faction"),
+                      (lt, ":rel", 0),
+                      (assign, ":news_color", color_good_news),
+                    (else_try),
+                      (assign, ":news_color", color_bad_news),
+                    (try_end),
+                    (display_log_message, "@The hosts of {s2} march back to defend their homes!", ":news_color"),
                   (try_end),
                   
                 (try_end),
@@ -2654,7 +2682,7 @@ ai_scripts = [
      
      (try_begin),
        (is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
-       #reestablish the advance camp in 3 days     
+       #reestablish the advance camp in 3+ days     
        (store_current_hours, ":cur_hours"),
        (faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
        (faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
@@ -2672,6 +2700,11 @@ ai_scripts = [
        (party_set_name, ":ruin_party", "@{s1} ruins"),
        (party_set_faction, ":center", "fac_neutral"), #purely defensive
      (try_end),
+     
+     # lose strength
+     # (faction_get_slot, ":strength", ":center_faction", slot_faction_strength_tmp),
+     # (val_sub, ":strength", ws_center_vp),
+     # (faction_set_slot, ":center_faction", slot_faction_strength_tmp, ":strength"),
      
      (disable_party, ":center"),
      (call_script, "script_update_center_notes", ":center"),

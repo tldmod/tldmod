@@ -344,7 +344,7 @@ strings = [
 
   ("hero_taken_prisoner", "{s1} of {s3} has been taken prisoner by {s2}."),
   ("hero_freed", "{s1} of {s3} has been freed from captivity by {s2}."),
-  ("center_captured", "{s2} have taken {s1} from {s3}."),
+  ("center_captured", "{s2} have taken {s1} from {s3}!"),
 
   ("troop_relation_increased", "Your relation with {s1} has increased from {reg1} to {reg2}."),
   ("troop_relation_detoriated", "Your relation with {s1} has deteriorated from {reg1} to {reg2}."),
@@ -1951,10 +1951,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("faction_strength_crushed"           , "crushed"),
  ("faction_strength_spent_and_wavering", "spent and wavering"),
  ("faction_strength_weakened"          , "weakened"),
- ("faction_strength_in_good_state"     , "in a good state"),
+ ("faction_strength_fair"              , "fair"),
+ ("faction_strength_average"           , "average"),
  ("faction_strength_strong"            , "strong"),
+ ("faction_strength_quite strong"      , "quite strong"),
  ("faction_strength_very strong"       , "very strong"),
  ("faction_strength_unmatched"         , "unmatched"),
+ ("faction_strength_last"       , "INVALID"),
 
 # TLD theater names
  ("theater_SE", "Gondor"),
