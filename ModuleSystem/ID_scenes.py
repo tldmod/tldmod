@@ -190,3 +190,6 @@ scn_isengard_center_flooded = 188
 scn_beorn_castle = 189
 scn_moria_castle = 190
 scn_amon_hen = 191
+scn_cair_andros_siege = 192
+scn_dale_siege = 193
+scn_west_emnet_siege = 194

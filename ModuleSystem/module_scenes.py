@@ -251,6 +251,10 @@ scenes = [
   ("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
   
   ("amon_hen"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
-  
+# Siege scenes  
+("cair_andros_siege"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
+("dale_siege"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000013002491600055157000000d20000152a0000611a",[],[],"outer_terrain_plain"),
+("west_emnet_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+
   ]
 
