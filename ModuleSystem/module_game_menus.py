@@ -1921,39 +1921,64 @@ game_menus = [
       # Print out the results
       (try_begin),
         (gt, ":faction_scouts", 0),
+        (spawn_around_party, "p_main_party", ":faction_scouts"),
+        (assign, ":test_party", reg0),
+        (call_script, "script_party_calculate_strength", ":test_party", 0),
+        (assign, reg4, reg0), #test party strength as used by game calc
+        (remove_party, ":test_party"),
         (store_num_parties_destroyed, reg1, ":faction_scouts"),
         (store_mul, reg2, reg1, ws_scout_vp), #strength loss
         (store_num_parties_of_template, reg3, ":faction_scouts"),
-        (str_store_string, s1, "@{s1}^Scouts lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (str_store_string, s1, "@{s1}^Scouts lost: {reg1} Str loss: {reg2} Active: {reg3} (Party Str: {reg4})"),
         (val_add, ":total_strength_loss", reg2),
       (try_end),
       (try_begin),
         (gt, ":faction_raiders", 0),
+        (spawn_around_party, "p_main_party", ":faction_raiders"),
+        (assign, ":test_party", reg0),
+        (call_script, "script_party_calculate_strength", ":test_party", 0),
+        (assign, reg4, reg0), #test party strength as used by game calc
+        (remove_party, ":test_party"),
         (store_num_parties_destroyed, reg1, ":faction_raiders"),
         (store_mul, reg2, reg1, ws_raider_vp), #strength loss
         (store_num_parties_of_template, reg3, ":faction_raiders"),
-        (str_store_string, s1, "@{s1}^Raiders lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (str_store_string, s1, "@{s1}^Raiders lost: {reg1} Str loss: {reg2} Active: {reg3} (Party Str: {reg4})"),
         (val_add, ":total_strength_loss", reg2),
       (try_end),
       (try_begin),
         (gt, ":faction_patrol", 0),
+        (spawn_around_party, "p_main_party", ":faction_patrol"),
+        (assign, ":test_party", reg0),
+        (call_script, "script_party_calculate_strength", ":test_party", 0),
+        (assign, reg4, reg0), #test party strength as used by game calc
+        (remove_party, ":test_party"),
         (store_num_parties_destroyed, reg1, ":faction_patrol"),
         (store_mul, reg2, reg1, ws_patrol_vp), #strength loss
         (store_num_parties_of_template, reg3, ":faction_patrol"),
-        (str_store_string, s1, "@{s1}^Patrols lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (str_store_string, s1, "@{s1}^Patrols lost: {reg1} Str loss: {reg2} Active: {reg3} (Party Str: {reg4})"),
         (val_add, ":total_strength_loss", reg2),
       (try_end),
       (try_begin),
         (gt, ":faction_caravan", 0),
+        (spawn_around_party, "p_main_party", ":faction_caravan"),
+        (assign, ":test_party", reg0),
+        (call_script, "script_party_calculate_strength", ":test_party", 0),
+        (assign, reg4, reg0), #test party strength as used by game calc
+        (remove_party, ":test_party"),
         (store_num_parties_destroyed, reg1, ":faction_caravan"),
         (store_mul, reg2, reg1, ws_caravan_vp), #strength loss
         (store_num_parties_of_template, reg3, ":faction_caravan"),
-        (str_store_string, s1, "@{s1}^Caravans lost: {reg1} Strength loss: {reg2} Active: {reg3}"),
+        (str_store_string, s1, "@{s1}^Caravans lost: {reg1} Str loss: {reg2} Active: {reg3} (Party Str: {reg4})"),
         (val_add, ":total_strength_loss", reg2),
       (try_end),
       (faction_get_slot, ":prisoner_train_pt", "$g_mvtest_faction", slot_faction_prisoner_train),
       (try_begin),
         (gt, ":prisoner_train_pt", 0),
+        (spawn_around_party, "p_main_party", ":prisoner_train_pt"),
+        (assign, ":test_party", reg0),
+        (call_script, "script_party_calculate_strength", ":test_party", 0),
+        (assign, reg4, reg0), #test party strength as used by game calc
+        (remove_party, ":test_party"),
         (store_num_parties_destroyed, reg1, ":prisoner_train_pt"), #note that removed on arrival are also counted here
         (store_mul, reg2, reg1, ws_p_train_vp), #strength loss
         (store_num_parties_of_template, reg3, ":prisoner_train_pt"),
@@ -3725,7 +3750,7 @@ game_menus = [
 		  (store_faction_of_party, ":defeated_faction", "$g_enemy_party"),
 		
 	      (str_store_faction_name, s4, ":defeated_faction"),
-          (display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
+          #(display_log_message, "@DEBUG: player defeated a party of faction {s4}."),
 
 		  (call_script, "script_find_closest_enemy_town_or_host", ":defeated_faction", "p_main_party"),
           (assign, ":impressed_party", reg0),
@@ -3741,7 +3766,7 @@ game_menus = [
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end),
 		  (else_try),
-			  (display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
+			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		  (try_end),
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
 #TLD end
@@ -5656,7 +5681,7 @@ game_menus = [
         (call_script, "script_encounter_calculate_fit"),
         (try_begin),
           (eq, "$g_siege_first_encounter", 1),
-          (call_script, "script_let_nearby_parties_join_current_battle", 0, 1),
+          (call_script, "script_let_nearby_parties_join_current_battle", 1, 1), #MV from 0, 1, so no enemies standing by would join
           (call_script, "script_encounter_init_variables"),
         (try_end),
 

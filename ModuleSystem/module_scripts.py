@@ -71,7 +71,7 @@ faction_player_icons = [
 ]
   
 scripts = [
-
+# script_init_player_map_icons
 ############################# TLD player icon (mtarini)
 # party player icons (mtarini)
   ("init_player_map_icons",[
@@ -126,7 +126,8 @@ scripts = [
 		
   ]
   ),
-  
+
+# script_determine_what_player_looks_like  
   # no input. Call me when player can have changed look
   ("determine_what_player_looks_like", [
     (troop_get_type, ":race","$g_player_troop"),
@@ -138,8 +139,9 @@ scripts = [
 	(try_end),
   ]
   ),
-#############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS   (mtarini)  #############################?#
 
+#############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS   (mtarini)  #############################?#
+# script_player_meets_party 
   # PlayerRewardSystem: call this when enetring a city, or meeting a party, so that player's "gold" will update    (mtarini)
   # param1: encountered party
   ("player_meets_party",[
@@ -152,7 +154,8 @@ scripts = [
 	(call_script, "script_set_ambient_faction", ":fac"),
 	(try_end),
   ]),
-  
+
+# script_add_faction_respoint  
   # PlayerRewardSystem:  adds / removes (if neg) some respoints (parameter2) to a given faction (parameter1)  (mtarini)
   ("add_faction_respoint",[
 	(store_script_param_1, ":fac"),
@@ -184,13 +187,14 @@ scripts = [
 	(try_end),
   ]),
   
+# script_update_respoint
   # PlayerRewardSystem, update_respoint script: makes sure that respoints of active faction reflect current "gold"(no params)  (mtarini)
   ("update_respoint",[
 	(store_troop_gold, ":cur_gold", "$g_player_troop"),
 	(faction_set_slot, "$ambient_faction", slot_faction_respoint, ":cur_gold"),
   ]),
   
- 
+# script_reward_system_init
   # PlayerRewardSystem: init (mtarini)
   ("reward_system_init",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
@@ -208,7 +212,7 @@ scripts = [
 		(try_end),
 	(try_end),
 	(str_store_faction_name,s3,"$players_kingdom"),(store_troop_gold, reg3, "$g_player_troop"),
-	(display_message, "@debug: player has faction '{s3}' and {reg3} gold"),
+	#(display_message, "@debug: player has faction '{s3}' and {reg3} gold"),
 	#]+concatenate_scripts([
 	#	(store_set_slot, faction_init[y][0], slot_faction_influence, 0),
 	#	(store_set_slot, faction_init[y][0], slot_faction_rank, 0),
@@ -216,7 +220,7 @@ scripts = [
 	#]for y in range(len(faction_init)) ) +[
   ]),
 
-
+# script_set_ambient_faction
   # PlayerRewardSystem, script: stores current gold to appropriate faction's respoint, and resoruce point of a parameter faction to current gold  (mtarini)
   # param1: new current faction
   ("set_ambient_faction",[
@@ -244,6 +248,7 @@ scripts = [
 	(try_end),
   ]),
 
+# script_rank_income_to_player
  # PlayerRewardSystem: rank_income (mtarini)
  # gives to player the income of his rank
   ("rank_income_to_player",[
@@ -262,8 +267,9 @@ scripts = [
 		
 		(call_script, "script_add_faction_respoint", ":fac", ":income"),
 	(try_end),
-  ]),  
+  ]),
   
+# script_get_own_rank_title 
   # PlayerRewardSystem, script: stores in s24 title of a faction, rank, career  (mtarini)
   # param1: faction
   # param2: rank 
@@ -298,6 +304,7 @@ scripts = [
 	(end_try),
   ]),
 
+# script_get_allied_rank_title
   # PlayerRewardSystem, script: stores in s24 title of a faction, rank, career  (mtarini)
   # param1: faction
   # param2: rank 
@@ -330,7 +337,8 @@ scripts = [
 		              (str_store_string, s24, "@stranger to {s5}"),
 	(end_try),
   ]),
-  
+
+# script_get_rank_title  
   ("get_rank_title",[
 	(store_script_param_1, ":fac"),
 	(faction_get_slot, ":rank", ":fac", slot_faction_rank ),
@@ -341,7 +349,8 @@ scripts = [
 		(call_script, "script_get_allied_rank_title", ":fac", ":rank"),
 	(try_end),
   ]),
- 
+
+# script_new_rank_attained
 ("new_rank_attained",
     [ (store_script_param_1, ":fac"),
 	  (play_sound, "snd_gong"),
@@ -351,6 +360,7 @@ scripts = [
 	]
   ),
   
+# script_increase_rank 
   ("increase_rank",
     [ # gain rank (need 100 points to advance)
       (store_script_param_1, ":fac"),
@@ -424,7 +434,7 @@ scripts = [
 	  (call_script, "script_game_get_troop_wage", ":troop_id",0)
   ]),
   
-   # script_game_get_join_cost  (mtarini)
+  # script_game_get_join_cost  (mtarini)
   # This script is called from the game engine for calculating troop join cost.
   # Input:   param1: troop_id,
   # Output: reg0: join cost
@@ -435,6 +445,7 @@ scripts = [
 	(set_trigger_result, reg0),
   ]),
   
+# script_get_troop_disband_cost
   # Call this script to know how much the player earns if he sends this troop home  (mtarini)
   # Input:   param1: troop_id,  
   # Input:   param2: 0 = auto, 1 = perfect helath  2 =  wounded
@@ -493,7 +504,8 @@ scripts = [
     (try_end),
     (assign, reg0, ":tot"),
   ]),
-  
+
+# script_game_get_troop_wage  
   # This script is called from the game engine for calculating troop wages.  (mod by mtarini)
   # Input: param1: troop_id, param2: party-id
   # Output: reg0: weekly wage
@@ -546,7 +558,7 @@ scripts = [
       (set_trigger_result, reg0),
   ]),
 
-  # compute_wage_per_faction  (mtarini)
+  # script_compute_wage_per_faction  (mtarini)
   # Input: arg1 = faction
   # Output: reg4 = weekly wage per faction (player has to pay)
   ("compute_wage_per_faction",
@@ -742,7 +754,7 @@ scripts = [
 	]),
 	
 #############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS  END  (mtarini)  #############################?#
-
+#script_cf_is_troop_in_party_wounded 
   #is a regular troop wounded inside a party?  (mtarini)
   # INPUT: arg1 = faction_no, arg2 = owner_troop_no
   #OUTPUT: nothing (can fail)
@@ -760,6 +772,8 @@ scripts = [
       (try_end),
 	  (eq, ":yes", 1), # fails if not wounded
    ]),
+   
+#script_cf_is_troop_in_party_not_wounded 
    # as above, but the opposite
    ("cf_is_troop_in_party_not_wounded",
     [
@@ -776,7 +790,8 @@ scripts = [
       (try_end),
 	  (eq, ":yes", 0), # fails if not wounded   ]),
 	]),  
-   
+
+#script_store_troop_king_in_s15    
 # get a troop (param1) and return how player will refer to that troop's king  (mtarini)
 ("store_troop_king_in_s15",[
 	(store_script_param_1, ":troop"),
@@ -802,7 +817,7 @@ scripts = [
  
  
  #############################  TLD FANGORN SCRIPTS   (mtarini)  #############################?#
-
+#script_fangorn_deal_damage
   # script: deal 'fangorn damage' to a party (abstact attack by ents):  (mtarini)
   #  INPUT: party to deal damage
   #  OUTPUT: reg0 killed troops. reg1 = wonded troops. reg2 = wounded player (1 or 0)
@@ -851,7 +866,8 @@ scripts = [
    (assign, reg1, ":wounded"),
    (assign, reg2, ":leader_wounded"),
   ]),
-  
+
+#script_after_fangorn_damage_to_player 
   # script: after_fangorn_damage_to_player:  (mtarini)
   ("after_fangorn_damage_to_player",
    [ (try_begin),
@@ -914,6 +930,7 @@ scripts = [
    ]
   ),
   
+#script_fangorn_fight_ents
   # Script: start a battle with wandering ents  (mtarini)
   ("fangorn_fight_ents",[
         #(assign, ":ent_troop", "trp_ent"), # should be ents!
@@ -2745,6 +2762,12 @@ scripts = [
       (party_stack_get_troop_id, ":troop_no", ":party_no", 0),
       (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
       (context_menu_add_item, "@View notes", 2),
+    (try_end),
+    #MV debug stuff
+    (try_begin),
+      (eq, cheat_switch, 1),
+      (call_script, "script_party_calculate_strength", ":party_no", 0),
+      (context_menu_add_item, "@Debug str: {reg0}", 3),
     (try_end),
   ]),
 
@@ -13523,7 +13546,7 @@ scripts = [
        (str_store_faction_name, s5, ":faction_no"),
        (str_store_troop_name_link, s6, ":faction_leader"),
        (assign, ":num_centers", 0),
-       (str_store_string, s8, "@nowhere"),
+       (str_store_string, s8, "@no holdings"),
        (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
          (party_is_active, ":cur_center"), #TLD
          (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -13568,7 +13591,7 @@ scripts = [
          (try_end),
          (val_add, ":num_members", 1),
        (try_end),
-       (str_store_string, s12, "@noone"),
+       (str_store_string, s12, "@no one"),
        (assign, ":num_enemies", 0),
        (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
          (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),

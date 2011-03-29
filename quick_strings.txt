@@ -1,4 +1,4 @@
-694
+692
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -55,7 +55,6 @@ qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
 qstr_You_gain_{reg10}_Res You_gain_{reg10}_Resource_Pts._of_{s10}.
 qstr_You_used_{reg10}_Res You_used_{reg10}_Resource_Pts._of_{s10}.
-qstr_debug:_player_has_fa debug:_player_has_faction_'{s3}'_and_{reg3}_gold
 qstr_{s24}: {s24}:
 qstr_Grandmaster_Knight_o Grandmaster_Knight_of_{s5}_(rank_{reg10})
 qstr_Master_Knight_of_{s5 Master_Knight_of_{s5}
@@ -120,6 +119,7 @@ qstr_+{reg1}_to_party_mor +{reg1}_to_party_morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
+qstr_Debug_str:_{reg0} Debug_str:_{reg0}
 qstr__{s61} _{s61}
 qstr_ERROR:_More_than_15_ ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded
@@ -209,19 +209,19 @@ qstr_This_quest_has_faile This_quest_has_failed._Talk_to_{s59}_to_explain_the_si
 qstr_At_the_time_quest_wa At_the_time_quest_was_given:^{s1}
 qstr_{s4}_is_in_{s5} {s4}_is_in_{s5}
 qstr_{s1}_is_infested_by_ {s1}_is_infested_by_bandits.
-qstr_nowhere nowhere
+qstr_no_holdings no_holdings
 qstr_{s7}_and_{s8} {s7}_and_{s8}
 qstr_{s7}_{s8} {s7},_{s8}
 qstr_noone noone
 qstr_{s9}_and_{s10} {s9}_and_{s10}
 qstr_{s9}_{s10} {s9},_{s10}
+qstr_no_one no_one
 qstr_{s11}_and_{s12} {s11}_and_{s12}
 qstr_{s11}_{s12} {s11},_{s12}
 qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_controls_{s8}.^Its_commanders_are_{s10}.^{s5}_is_at_war_with_{s12}.
 qstr_{s5}_has_been_defeat {s5}_has_been_defeated!
 qstr_{s5}_has_a_strength_ {s5}_has_a_strength_of_{reg1}_men_in_total.
 qstr_{s54}_is_a_claimant_ {s54}_is_a_claimant_to_the_throne_of_{s56}.
-qstr_no_holdings no_holdings
 qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
@@ -404,10 +404,10 @@ qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
 qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
 qstr_Faction_spawn_losses Faction_spawn_losses_for_{s4}_after_{reg1}_days^
-qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
-qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
-qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
-qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Strength_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
+qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
+qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
+qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
 qstr_{s1}^P._trains_lost_ {s1}^P._trains_lost-arrived:_{reg1}_Strength_loss:_0{reg2?-{reg2}:}_Active:_{reg3}
 qstr_{s1}^^Total_strength {s1}^^Total_strength_loss_from_spawns:_{reg1}^
 qstr_{s1}^Total_strength_ {s1}^Total_strength_gain:_{reg1}
@@ -472,10 +472,8 @@ qstr_Your_companions_carr Your_companions_carry_you_away_from_the_fighting.
 qstr_You_have_defeated_th You_have_defeated_the_enemy.
 qstr_You_have_retreated_f You_have_retreated_from_the_fight.
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
-qstr_DEBUG:_player_defeat DEBUG:_player_defeated_a_party_of_faction_{s4}.
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
 qstr_{s3}_witnesses_your_ {s3}_witnesses_your_victory_against_{s4}.
-qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
 qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}
@@ -567,7 +565,7 @@ qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s1
 qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
 qstr_You_received_weekly_ You_received_weekly_wage.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
-qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}_service.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
+qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
 qstr_You_entered_in_posse You_entered_in_possession_of_a_strage,_oversized_bowl_of_fresh_looking_water._It_smells_a_little_like_musk.
 qstr_Obtained:_Ent_water. Obtained:_Ent_water.
