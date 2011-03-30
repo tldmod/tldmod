@@ -599,6 +599,8 @@ slot_troop_personalityclash_penalties = 77 ### accumulated grievances from perso
 
 slot_troop_home_speech_delivered = 78
 
+slot_troop_last_complaint_hours = 79 #TLD: last time complained about his faction being demolished
+
 #NPC history slots
 
 slot_troop_met_previously        = 80
@@ -669,6 +671,7 @@ slot_troop_home_recap         = 129
 slot_troop_honorific   = 130
 slot_troop_strings_end = 131
 slot_troop_payment_request = 132
+slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
 #Rebellion changes begin
 slot_troop_discussed_rebellion = 140

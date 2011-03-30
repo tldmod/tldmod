@@ -1710,6 +1710,7 @@ simple_triggers = [
 #NPC changes begin
 #Resolve one issue each hour
 (1,[
+        (assign, "$npc_map_talk_context", 0),
         (try_begin),
 ### Here do NPC that is quitting
             (gt, "$npc_is_quitting", 0),
@@ -1750,6 +1751,7 @@ simple_triggers = [
         (else_try), ###check for regional background
             (eq, "$disable_local_histories", 0),
             (try_for_range, ":npc", companions_begin, companions_end),
+                (eq, "$npc_map_talk_context", 0),
                 (main_party_has_troop, ":npc"),           
                 (troop_slot_eq, ":npc", slot_troop_home_speech_delivered, 0),
 #                (eq, "$npc_map_talk_context", 0),
@@ -1758,6 +1760,26 @@ simple_triggers = [
                 (store_distance_to_party_from_party, ":distance", ":home", "p_main_party"),
                 (lt, ":distance", 7),                
                 (assign, "$npc_map_talk_context", slot_troop_home),
+                (start_map_conversation, ":npc"),
+            (try_end),
+            (neq, "$npc_map_talk_context", 0), #fail if nothing happened here
+        (else_try), ###TLD: complain about NPC's home faction getting demolished
+            (try_for_range, ":npc", companions_begin, companions_end),
+                (eq, "$npc_map_talk_context", 0),
+                (main_party_has_troop, ":npc"),
+                (store_troop_faction, ":npc_faction", ":npc"),
+                (faction_slot_eq, ":npc_faction", slot_faction_state, sfs_active),
+
+                (faction_get_slot, ":npc_faction_strength", ":npc_faction", slot_faction_strength),
+                (lt, ":npc_faction_strength", fac_str_very_weak),
+                
+                (troop_get_slot, ":last_complaint_hours", ":npc", slot_troop_last_complaint_hours),
+                (store_current_hours, ":hours"),
+                (val_add, ":last_complaint_hours", 7*24), #complain every 7 days at most                
+                (gt, ":hours", ":last_complaint_hours"),
+                
+                (troop_set_slot, ":npc", slot_troop_last_complaint_hours, ":hours"), #reset complaint
+                (assign, "$npc_map_talk_context", slot_troop_last_complaint_hours),
                 (start_map_conversation, ":npc"),
             (try_end),
         (try_end),

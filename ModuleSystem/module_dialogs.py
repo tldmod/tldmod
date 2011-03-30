@@ -918,7 +918,7 @@ dialogs = [
                     (hero_can_join, "p_main_party"),
                     (troop_get_slot, ":signup_response", "$g_talk_troop", slot_troop_signup_response_1),
                     (str_store_string, 6, ":signup_response")
-      ], "{s6}", "companion_recruit_payment", []],
+      ], "{s6}", "companion_recruit_rank", []],
 
   [anyone|plyr, "companion_recruit_signup_response", [
                     (hero_can_join, "p_main_party"),
@@ -927,6 +927,32 @@ dialogs = [
       ],  "{s7}", "close_window", [
           ]],
 
+# rank 0 needed - don't mention it at all
+  [anyone|auto_proceed, "companion_recruit_rank", [
+      (troop_slot_eq, "$g_talk_troop", slot_troop_rank_request, 0),
+   ],
+   ".", "companion_recruit_payment", []],
+   
+# rank not ok
+  [anyone, "companion_recruit_rank", [ 
+      (troop_get_slot, ":rank_needed", "$g_talk_troop", slot_troop_rank_request),
+      (val_mul, ":rank_needed", 100), #convert to rank points
+      (faction_get_slot, ":rank_held", "$g_talk_troop_faction", slot_faction_rank),
+      (call_script, "script_get_rank_title", "$g_talk_troop_faction"), (str_store_string_reg, s29, s24), #to s29
+      # a little hackery to determine needed rank title
+      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_needed"),
+      (call_script, "script_get_rank_title", "$g_talk_troop_faction"), #to s24
+      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_held"), #end vile hackery
+      (store_sub, reg3, ":rank_needed", ":rank_held"), # reg3: how many more rank points are needed to recruit
+      (gt, reg3, 0), # not enough?
+   ],
+   "It seems that you have not helped my people enough, {playername}. You are {s29} and you need to be {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in these lands.", "close_window", []],
+
+# rank ok
+  [anyone, "companion_recruit_rank", [ 
+   ],
+   "I'm glad to see you have become {s29}, and I'm looking forward to joining you.", "companion_recruit_payment", []],
+   
   [anyone|auto_proceed, "companion_recruit_payment", [
       (troop_slot_eq, "$g_talk_troop", slot_troop_payment_request, 0),
    ],
@@ -1192,6 +1218,28 @@ dialogs = [
      (troop_get_type, reg3, "$temp"),
      (assign, "$g_center_taken_by_player_faction", -1),
      ]],
+
+#TLD: companions complain about their home faction getting demolished
+  [anyone, "event_triggered", [
+                     (eq, "$npc_map_talk_context", slot_troop_last_complaint_hours), 
+                     (store_conversation_troop, "$map_talk_troop"),
+                     (troop_get_slot, ":honorific", "$map_talk_troop", slot_troop_honorific),
+                     (str_store_string, s5, ":honorific"),
+                     (store_troop_faction, ":npc_faction", "$map_talk_troop"),
+                     (str_store_faction_name, s6, ":npc_faction"),
+                     (assign, reg6, 0),
+                     (try_begin),
+                       (eq, "$players_kingdom", ":npc_faction"),
+                       (assign, reg6, 1),
+                     (try_end),
+                     ],
+   "{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.", "companion_faction_demolished", [
+       ]],
+
+  [anyone|plyr, "companion_faction_demolished", [
+      ],  "Then we shall ride to aid {s6} immediately.", "close_window", []],
+  [anyone|plyr, "companion_faction_demolished", [
+      ],  "I'm sorry, but we are needed elsewhere.", "close_window", []],
 
 
   [anyone, "event_triggered", [
@@ -2942,6 +2990,10 @@ dialogs = [
                             (quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),
                             (str_store_troop_name,s14,":quest_target_troop"),
                             (troop_get_type, reg3, ":quest_target_troop"),
+                            (try_begin),
+                              (gt, reg3, 1), #MV: non-humans are male
+                              (assign, reg3, 0),
+                            (try_end),
                             ],
    "I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.", "lord_lend_companion_end",
    []],
@@ -5658,6 +5710,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (str_store_troop_name,s3,":quest_target_troop"),
        (setup_quest_text,"$random_quest_no"),
        (troop_get_type, reg3, ":quest_target_troop"),
+       (try_begin),
+         (gt, reg3, 1), #MV: non-humans are male
+         (assign, reg3, 0),
+       (try_end),
        (str_store_string, s2, "@{s9} asked you to lend your companion {s3} to him for a week."),
     ]],
   [anyone|plyr,"lord_tell_mission_lend_companion", [],
@@ -6099,6 +6155,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##     (str_store_party_name,2,"$g_encountered_party"),
      (str_store_troop_name,3,":quest_object_troop"),
      (troop_get_type, reg3, ":quest_object_troop"),
+     (try_begin),
+       (gt, reg3, 1), #MV: non-humans are male
+       (assign, reg3, 0),
+     (try_end),
      (setup_quest_text,"$random_quest_no"),
 ##     (try_begin),
 ##       (is_between, "$g_encountered_party", centers_begin, centers_end),

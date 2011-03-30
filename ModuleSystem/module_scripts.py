@@ -300,7 +300,7 @@ scripts = [
 	(else_try),
 		(ge, reg10, 1), (str_store_string, s24, "@Recruit of {s5}"),
 	(else_try),
-		(str_store_string, s24, "@unknown to {s5}"),
+		(str_store_string, s24, "@Unknown to {s5}"),
 	(end_try),
   ]),
 
@@ -322,19 +322,19 @@ scripts = [
 	(else_try),
 		(ge, reg10, 7), (str_store_string, s24, "@Great Friend of {s5}"),
 	(else_try),
-		(ge, reg10, 6), (str_store_string, s24, "@dearest friend of {s5}"),
+		(ge, reg10, 6), (str_store_string, s24, "@Dearest friend of {s5}"),
 	(else_try),
-		(ge, reg10, 5), (str_store_string, s24, "@admired friend of {s5}"),
+		(ge, reg10, 5), (str_store_string, s24, "@Admired friend of {s5}"),
 	(else_try),
-		(ge, reg10, 4), (str_store_string, s24, "@trusted friend of {s5}"),
+		(ge, reg10, 4), (str_store_string, s24, "@Trusted friend of {s5}"),
 	(else_try),
-		(ge, reg10, 3), (str_store_string, s24, "@friend of {s5}"),
+		(ge, reg10, 3), (str_store_string, s24, "@Friend of {s5}"),
 	(else_try),
-		(ge, reg10, 2), (str_store_string, s24, "@familiar to {s5}"),
+		(ge, reg10, 2), (str_store_string, s24, "@Familiar to {s5}"),
 	(else_try),
-		(ge, reg10, 1), (str_store_string, s24, "@known to {s5}"),
+		(ge, reg10, 1), (str_store_string, s24, "@Known to {s5}"),
 	(else_try),
-		              (str_store_string, s24, "@stranger to {s5}"),
+		              (str_store_string, s24, "@Stranger to {s5}"),
 	(end_try),
   ]),
 
@@ -354,7 +354,7 @@ scripts = [
 ("new_rank_attained",
     [ (store_script_param_1, ":fac"),
 	  (play_sound, "snd_gong"),
-	  (call_script,"script_get_rank_title", ":fac", 0),
+	  (call_script, "script_get_rank_title", ":fac"),
 	  (str_store_troop_name, s10, "trp_player"),
 	  (display_message, "@You are now {s10}, {s24}", color_good_news),
 	]
@@ -10479,10 +10479,10 @@ scripts = [
       
       (troop_get_type, ":gender", ":troop_no"),
       (try_begin),
-        (eq, ":gender", 0),
-        (str_store_string, s5, "str_he"),
-      (else_try),
+        (eq, ":gender", 1),
         (str_store_string, s5, "str_she"),
+      (else_try),
+        (str_store_string, s5, "str_he"),
       (try_end),
       
       (try_begin),
@@ -14837,6 +14837,7 @@ scripts = [
         (troop_set_slot, "trp_npc1", slot_troop_home, "p_town_edoras"),
         (troop_set_slot, "trp_npc1", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc1", slot_troop_cur_center, "p_town_west_osgiliath"),  #TLD
+        (troop_set_slot, "trp_npc1", slot_troop_rank_request, 1),  #TLD
 
         # Gondor NPC
         (troop_set_slot, "trp_npc2", slot_troop_morality_type, tmt_humanitarian),
@@ -14849,8 +14850,9 @@ scripts = [
         (troop_set_slot, "trp_npc2", slot_troop_home, "p_town_edoras"),
         (troop_set_slot, "trp_npc2", slot_troop_payment_request, 0), 
         (troop_set_slot, "trp_npc2", slot_troop_cur_center, "p_town_minas_tirith"),  #TLD
+        (troop_set_slot, "trp_npc2", slot_troop_rank_request, 0),  #TLD
 
-        # Eowyn
+        # Ulfas
         (troop_set_slot, "trp_npc3", slot_troop_morality_type, tmt_humanitarian),
         (troop_set_slot, "trp_npc3", slot_troop_morality_value, 4),  
         (troop_set_slot, "trp_npc3", slot_troop_2ary_morality_type, tmt_aristocratic), 
@@ -14860,9 +14862,10 @@ scripts = [
         (troop_set_slot, "trp_npc3", slot_troop_personalitymatch_object, "trp_npc4"),  #Rohan NPC
         (troop_set_slot, "trp_npc3", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc3", slot_troop_payment_request, 0), 
-        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_edoras"),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_hornburg"),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_rank_request, 0),  #TLD
 
-        # Rohan NPC
+        # Eowyn
         (troop_set_slot, "trp_npc4", slot_troop_morality_type, tmt_aristocratic),
         (troop_set_slot, "trp_npc4", slot_troop_morality_value, 4),  
         (troop_set_slot, "trp_npc4", slot_troop_2ary_morality_type, tmt_honest), 
@@ -14872,7 +14875,8 @@ scripts = [
         (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc3"),  #Eowyn
         (troop_set_slot, "trp_npc4", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc4", slot_troop_payment_request, 300), 
-        (troop_set_slot, "trp_npc4", slot_troop_cur_center, "p_town_hornburg"),  #TLD
+        (troop_set_slot, "trp_npc4", slot_troop_cur_center, "p_town_edoras"),  #TLD
+        (troop_set_slot, "trp_npc4", slot_troop_rank_request, 3),  #TLD
 
         # Glorfindel
         (troop_set_slot, "trp_npc5", slot_troop_morality_type, tmt_egalitarian),
@@ -14885,8 +14889,9 @@ scripts = [
         (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc5", slot_troop_payment_request, 400),
         (troop_set_slot, "trp_npc5", slot_troop_cur_center, "p_town_cerin_amroth"),  #TLD
+        (troop_set_slot, "trp_npc5", slot_troop_rank_request, 5),  #TLD
 
-        # Ulfas
+        # Miriel
         (troop_set_slot, "trp_npc6", slot_troop_morality_type, tmt_humanitarian),
         (troop_set_slot, "trp_npc6", slot_troop_morality_value, 2),
         (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_type, tmt_honest),
@@ -14897,6 +14902,7 @@ scripts = [
         (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc6", slot_troop_payment_request, 0),
         (troop_set_slot, "trp_npc6", slot_troop_cur_center, "p_town_thranduils_halls"),  #TLD
+        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 2),  #TLD
 
         # Dwarf NPC
         (troop_set_slot, "trp_npc7", slot_troop_morality_type, tmt_egalitarian),
@@ -14909,6 +14915,7 @@ scripts = [
         (troop_set_slot, "trp_npc7", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc7", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc7", slot_troop_cur_center, "p_town_erebor"),  #TLD
+        (troop_set_slot, "trp_npc7", slot_troop_rank_request, 1),  #TLD
 
         # Beorn NPC
         (troop_set_slot, "trp_npc8", slot_troop_morality_type, tmt_aristocratic),
@@ -14921,6 +14928,7 @@ scripts = [
         (troop_set_slot, "trp_npc8", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc8", slot_troop_payment_request, 500),
         (troop_set_slot, "trp_npc8", slot_troop_cur_center, "p_town_beorn_house"),  #TLD
+        (troop_set_slot, "trp_npc8", slot_troop_rank_request, 1),  #TLD
 
 #evil companions
         # Gulm
@@ -14934,6 +14942,7 @@ scripts = [
         (troop_set_slot, "trp_npc9", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc9", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc9", slot_troop_cur_center, "p_town_isengard"),  #TLD
+        (troop_set_slot, "trp_npc9", slot_troop_rank_request, 1),  #TLD
 
         # Durgash
         (troop_set_slot, "trp_npc10", slot_troop_morality_type, tmt_humanitarian),
@@ -14946,6 +14955,7 @@ scripts = [
         (troop_set_slot, "trp_npc10", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc10", slot_troop_payment_request, 200),
         (troop_set_slot, "trp_npc10", slot_troop_cur_center, "p_town_urukhai_outpost"),  #TLD
+        (troop_set_slot, "trp_npc10", slot_troop_rank_request, 1),  #TLD
 
         # Ufthak
         (troop_set_slot, "trp_npc11", slot_troop_morality_type, tmt_egalitarian),
@@ -14958,6 +14968,7 @@ scripts = [
         (troop_set_slot, "trp_npc11", slot_troop_home, "p_town_isengard"),
         (troop_set_slot, "trp_npc11", slot_troop_payment_request, 100),
         (troop_set_slot, "trp_npc11", slot_troop_cur_center, "p_town_cirith_ungol"),  #TLD
+        (troop_set_slot, "trp_npc11", slot_troop_rank_request, 1),  #TLD
 
         # Gorbag
         (troop_set_slot, "trp_npc12", slot_troop_morality_type, tmt_humanitarian),
@@ -14970,6 +14981,7 @@ scripts = [
         (troop_set_slot, "trp_npc12", slot_troop_home, "p_town_isengard"),
         (troop_set_slot, "trp_npc12", slot_troop_payment_request, 0),
         (troop_set_slot, "trp_npc12", slot_troop_cur_center, "p_town_minas_morgul"),  #TLD
+        (troop_set_slot, "trp_npc12", slot_troop_rank_request, 1),  #TLD
 
         # Harad NPC
         (troop_set_slot, "trp_npc13", slot_troop_morality_type, tmt_aristocratic),
@@ -14982,6 +14994,7 @@ scripts = [
         (troop_set_slot, "trp_npc13", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc13", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc13", slot_troop_cur_center, "p_town_harad_camp"),  #TLD
+        (troop_set_slot, "trp_npc13", slot_troop_rank_request, 1),  #TLD
 
         # Umbar NPC
         (troop_set_slot, "trp_npc14", slot_troop_morality_type, tmt_aristocratic),
@@ -14994,6 +15007,7 @@ scripts = [
         (troop_set_slot, "trp_npc14", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc14", slot_troop_payment_request, 400),
         (troop_set_slot, "trp_npc14", slot_troop_cur_center, "p_town_umbar_camp"),  #TLD
+        (troop_set_slot, "trp_npc14", slot_troop_rank_request, 1),  #TLD
 
         # Moria NPC
         (troop_set_slot, "trp_npc15", slot_troop_morality_type, tmt_egalitarian),
@@ -15006,6 +15020,7 @@ scripts = [
         (troop_set_slot, "trp_npc15", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc15", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc15", slot_troop_cur_center, "p_town_moria"),  #TLD
+        (troop_set_slot, "trp_npc15", slot_troop_rank_request, 1),  #TLD
 
         # Rhun NPC
         (troop_set_slot, "trp_npc16", slot_troop_morality_type, tmt_aristocratic),
@@ -15018,6 +15033,7 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc16", slot_troop_payment_request, 200),
         (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_north_rhun_camp"),  #TLD
+        (troop_set_slot, "trp_npc16", slot_troop_rank_request, 1),  #TLD
 
         (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro),
 
