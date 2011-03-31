@@ -100,9 +100,9 @@ party_templates = [
 #TLD Scouts
 
 ("gondor_scouts"       ,"Gondorian Scouts" ,icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_ranger_of_ithilien,1,1),(trp_gondor_commoner,3,5),(trp_gondor_militiamen,3,5)]),
-("blackroot_auxila"    ,"Blackroot_Vale Auxila",icon_gray_knight|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_blackroot_leader,1,1),(trp_veteran_blackroot_vale_archer,2,25),(trp_blackroot_vale_archer,6,30)]),
-("lamedon_auxila"      ,"Lamedon Auxila"   ,icon_axeman         |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_lamedon_leader,1,1),(trp_footman_of_lamedon,2,25),(trp_clansman_of_lamedon,6,30)]),
-("pinnath_gelin_auxila","Pinnath_Gelin Auxila",icon_axeman      |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_leader,1,1),(trp_veteran_warrior_of_pinnath_gelin,2,25),(trp_warrior_of_pinnath_gelin,6,30)]),
+("blackroot_auxila"    ,"Blackroot_Vale Auxilia",icon_gray_knight|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_blackroot_leader,1,1),(trp_veteran_blackroot_vale_archer,2,25),(trp_blackroot_vale_archer,6,30)]),
+("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_axeman         |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_lamedon_leader,1,1),(trp_footman_of_lamedon,2,25),(trp_clansman_of_lamedon,6,30)]),
+("pinnath_gelin_auxila","Pinnath_Gelin Auxilia",icon_axeman      |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_leader,1,1),(trp_veteran_warrior_of_pinnath_gelin,2,25),(trp_warrior_of_pinnath_gelin,6,30)]),
 
 ("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_rohan_youth,3,5),(trp_guardsman_of_rohan,3,5),(trp_elite_skirmisher_of_rohan,1,1)]),
 ("lorien_scouts"   ,"Lothlorien Scouts"    ,icon_lorien_elf_a |carries_goods(1)|pf_show_faction,0,fac_lorien  ,scout_personality,[(trp_lothlorien_scout,3,5),(trp_lothlorien_veteran_scout,3,5),(trp_lothlorien_veteran_warden,1,1)]),
@@ -126,14 +126,14 @@ party_templates = [
 ("rhun_scouts"      ,"Rhun Scouts"         ,icon_vaegir_knight      |carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_swift_horseman,3,6),(trp_rhun_house_scout,3,5),(trp_rhun_horse_archer,1,1)]),
  
 ####TLD Raiders
-("gondor_raiders"  ,"Gondor Raiders"    ,icon_knight_gondor|carries_goods(1),0,fac_gondor  ,soldier_personality,[(trp_footmen_of_gondor,10,15),(trp_bowmen_of_gondor,10,15),(trp_squire_of_gondor,1,1)]),
-("rohan_raiders"   ,"Rohan Raiders"     ,icon_knight_rohan |carries_goods(1),0,fac_rohan   ,soldier_personality,[(trp_esquire_of_rohan,5,10),(trp_rider_of_rohan,3,8),(trp_skirmisher_of_rohan,3,8),(trp_elite_rider_of_rohan,1,1)]),
-("imladris_raiders","Rivendell Raiders" ,icon_rivendell_elf|carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,10,15),(trp_rivendell_sentinel,10,15),(trp_rivendell_royal_infantry,1,1)]),
-("lorien_raiders"  ,"Lothlorien Raiders",icon_lorien_elf_a |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_lothlorien_infantry,6,15),(trp_lothlorien_archer,6,15),(trp_galadhrim_royal_warden,1,1)]),
-("woodelf_raiders" ,"Mirkwood Raiders"  ,icon_mirkwood_elf |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,5,15),(trp_greenwood_veteran_archer,5,15),(trp_greenwood_royal_spearman,1,1)]),
-("dale_raiders"    ,"Dale Raiders"      ,icon_gray_knight  |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10),(trp_girions_guard_of_dale,1,1)]),
-("dwarf_raiders"   ,"Dwarven Raiders"   ,icon_dwarf        |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,5,15),(trp_dwarven_lookout,5,15),(trp_dwarven_expert_axeman,1,1)]),
-#("beorning_raiders","Beorning Raiders" ,icon_gray_knight  |carries_goods(1),0,fac_beorn   ,soldier_personality,[(trp_blank,10,15),(trp_blank,10,15),(trp_blank,1,1)]),
+("gondor_raiders"  ,"Gondor Foragers"    ,icon_knight_gondor|carries_goods(1),0,fac_gondor  ,soldier_personality,[(trp_footmen_of_gondor,10,15),(trp_bowmen_of_gondor,10,15),(trp_squire_of_gondor,1,1)]),
+("rohan_raiders"   ,"Rohan Foragers"     ,icon_knight_rohan |carries_goods(1),0,fac_rohan   ,soldier_personality,[(trp_esquire_of_rohan,5,10),(trp_rider_of_rohan,3,8),(trp_skirmisher_of_rohan,3,8),(trp_elite_rider_of_rohan,1,1)]),
+("imladris_raiders","Rivendell Foragers" ,icon_rivendell_elf|carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,10,15),(trp_rivendell_sentinel,10,15),(trp_rivendell_royal_infantry,1,1)]),
+("lorien_raiders"  ,"Lothlorien Foragers",icon_lorien_elf_a |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_lothlorien_infantry,6,15),(trp_lothlorien_archer,6,15),(trp_galadhrim_royal_warden,1,1)]),
+("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,5,15),(trp_greenwood_veteran_archer,5,15),(trp_greenwood_royal_spearman,1,1)]),
+("dale_raiders"    ,"Dale Foragers"      ,icon_gray_knight  |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10),(trp_girions_guard_of_dale,1,1)]),
+("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,5,15),(trp_dwarven_lookout,5,15),(trp_dwarven_expert_axeman,1,1)]),
+#("beorning_raiders","Beorning Foragers" ,icon_gray_knight  |carries_goods(1),0,fac_beorn   ,soldier_personality,[(trp_blank,10,15),(trp_blank,10,15),(trp_blank,1,1)]),
 
 ("mordor_raiders"  ,"Mordor Raiders"    ,icon_uruk          |carries_goods(1),0,fac_mordor  ,soldier_personality,[(trp_orc_snaga_of_mordor,15,20),(trp_orc_archer_of_mordor,15,20),(trp_fell_morgul_orc,1,1)]),
 ("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1),0,fac_isengard,soldier_personality,[(trp_uruk_snaga_of_isengard,8,13),(trp_large_uruk_hai_scout,8,13),(trp_large_uruk_hai_of_isengard,3,8),(trp_fighting_uruk_hai_champion,1,1)]),

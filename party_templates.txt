@@ -34,9 +34,9 @@ pt_kingdom_caravan_party Caravan 7036874421960777 0 1 7 430 1 1 0 431 12 40 0 -1
 pt_prisoner_train_party Prisoner_Train 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_default_prisoners Default_Prisoners 0 0 1 0 421 5 10 1 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904983 0 3 183 122 1 1 0 102 3 5 0 103 3 5 0 -1 -1 -1 
-pt_blackroot_auxila Blackroot_Vale_Auxila 281474980904962 0 3 183 157 1 1 0 153 2 25 0 152 6 30 0 -1 -1 -1 
-pt_lamedon_auxila Lamedon_Auxila 281474980904968 0 3 183 145 1 1 0 140 2 25 0 139 6 30 0 -1 -1 -1 
-pt_pinnath_gelin_auxila Pinnath_Gelin_Auxila 281474980904968 0 3 183 151 1 1 0 147 2 25 0 146 6 30 0 -1 -1 -1 
+pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904962 0 3 183 157 1 1 0 153 2 25 0 152 6 30 0 -1 -1 -1 
+pt_lamedon_auxila Lamedon_Auxilia 281474980904968 0 3 183 145 1 1 0 140 2 25 0 139 6 30 0 -1 -1 -1 
+pt_pinnath_gelin_auxila Pinnath_Gelin_Auxilia 281474980904968 0 3 183 151 1 1 0 147 2 25 0 146 6 30 0 -1 -1 -1 
 pt_rohan_scouts Rohirrim_Scouts 281474980904990 0 5 183 219 3 5 0 220 3 5 0 230 1 1 0 -1 -1 -1 
 pt_lorien_scouts Lothlorien_Scouts 281474980904994 0 8 183 165 3 5 0 166 3 5 0 178 1 1 0 -1 -1 -1 
 pt_woodelf_scouts Mirkwood_Elven_Scouts 281474980904998 0 10 183 182 2 4 0 183 2 4 0 190 2 4 0 184 1 1 0 -1 -1 
@@ -56,13 +56,13 @@ pt_moria_scouts Moria_Scouts 281474980905001 0 16 183 358 3 6 0 361 3 5 0 366 1 
 pt_guldur_scouts Dol_Guldur_Scouts 281474980905005 0 17 183 354 3 6 0 361 3 5 0 351 1 1 0 -1 -1 -1 
 pt_gundabad_scouts Gundabad_Scouts 281474980905005 0 18 183 369 3 6 0 373 3 5 0 377 1 1 0 -1 -1 -1 
 pt_rhun_scouts Rhun_Scouts 281474980904963 0 13 183 70 3 6 0 66 3 5 0 67 1 1 0 -1 -1 -1 
-pt_gondor_raiders Gondor_Raiders 281474976710684 0 3 238 104 10 15 0 117 10 15 0 112 1 1 0 -1 -1 -1 
-pt_rohan_raiders Rohan_Raiders 281474976710686 0 5 238 236 5 10 0 237 3 8 0 228 3 8 0 239 1 1 0 -1 -1 
-pt_imladris_raiders Rivendell_Raiders 562949953421364 0 9 238 202 10 15 0 198 10 15 0 205 1 1 0 -1 -1 -1 
-pt_lorien_raiders Lothlorien_Raiders 562949953421346 0 8 238 173 6 15 0 167 6 15 0 179 1 1 0 -1 -1 -1 
-pt_woodelf_raiders Mirkwood_Raiders 562949953421350 0 10 238 191 5 15 0 184 5 15 0 192 1 1 0 -1 -1 -1 
-pt_dale_raiders Dale_Raiders 562949953421314 0 11 238 60 4 10 0 49 4 10 0 50 4 10 0 63 1 1 0 -1 -1 
-pt_dwarf_raiders Dwarven_Raiders 562949953421338 0 4 238 85 5 15 0 92 5 15 0 90 1 1 0 -1 -1 -1 
+pt_gondor_raiders Gondor_Foragers 281474976710684 0 3 238 104 10 15 0 117 10 15 0 112 1 1 0 -1 -1 -1 
+pt_rohan_raiders Rohan_Foragers 281474976710686 0 5 238 236 5 10 0 237 3 8 0 228 3 8 0 239 1 1 0 -1 -1 
+pt_imladris_raiders Rivendell_Foragers 562949953421364 0 9 238 202 10 15 0 198 10 15 0 205 1 1 0 -1 -1 -1 
+pt_lorien_raiders Lothlorien_Foragers 562949953421346 0 8 238 173 6 15 0 167 6 15 0 179 1 1 0 -1 -1 -1 
+pt_woodelf_raiders Mirkwood_Foragers 562949953421350 0 10 238 191 5 15 0 184 5 15 0 192 1 1 0 -1 -1 -1 
+pt_dale_raiders Dale_Foragers 562949953421314 0 11 238 60 4 10 0 49 4 10 0 50 4 10 0 63 1 1 0 -1 -1 
+pt_dwarf_raiders Dwarven_Foragers 562949953421338 0 4 238 85 5 15 0 92 5 15 0 90 1 1 0 -1 -1 -1 
 pt_mordor_raiders Mordor_Raiders 281474976710703 0 6 238 344 15 20 0 354 15 20 0 351 1 1 0 -1 -1 -1 
 pt_isengard_raiders Isengard_Raiders 281474976710704 0 7 238 325 8 13 0 322 8 13 0 327 3 8 0 329 1 1 0 -1 -1 
 pt_dunland_raiders Dunlending_Raiders 562949953421327 0 19 238 265 15 20 0 269 15 20 0 272 1 1 0 -1 -1 -1 

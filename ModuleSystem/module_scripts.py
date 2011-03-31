@@ -8862,8 +8862,7 @@ scripts = [
   # Input: arg1 = troop_no,
   # Output: none
   ("recruit_troop_as_companion",
-    [
-      (store_script_param_1, ":troop_no"),
+    [ (store_script_param_1, ":troop_no"),
       (troop_set_slot, ":troop_no", slot_troop_occupation, slto_player_companion),
       #(troop_set_slot, ":troop_no", slot_troop_cur_center, -1),
       (troop_set_auto_equip, ":troop_no",0),
@@ -8877,68 +8876,62 @@ scripts = [
   # Input: arg1 = center_no, arg2 = mission_template_no
   # Output: none
   ("setup_random_scene",
-    [
-      (party_get_current_terrain, ":terrain_type", "p_main_party"),
-      (assign, ":scene_to_use", "scn_random_scene_snow"),
-	  
-# original, commented by GA
-#      (try_begin),
-#        (eq, ":terrain_type", rt_steppe),
-#        (assign, ":scene_to_use", "scn_random_scene_steppe"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_plain),
-#        (assign, ":scene_to_use", "scn_random_scene_plain"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_snow),
-#        (assign, ":scene_to_use", "scn_random_scene_snow"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_desert),
-#        (assign, ":scene_to_use", "scn_random_scene_desert"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_steppe_forest),
-#        (assign, ":scene_to_use", "scn_random_scene_steppe_forest"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_forest),
-#        (assign, ":scene_to_use", "scn_random_scene_plain_forest"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_snow_forest),
-#        (assign, ":scene_to_use", "scn_random_scene_snow_forest"),
-#      (else_try),
-#        (eq, ":terrain_type", rt_desert_forest),
-#        (assign, ":scene_to_use", "scn_random_scene_desert_forest"),
-#      (try_end),
+    [(party_get_current_terrain, ":terrain_type", "p_main_party"),
+     (assign, ":scene_to_use", 0),
+	
+# check if near small fords
+	 (try_for_range,":ford","p_ford_cerin_dolen","p_ford_moria2"),
+	    (store_distance_to_party_from_party,":dist","p_main_party",":ford"),
+	    (lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_01"), #placeholder scenes
+	 (try_end),
 
-##  player party temporary relocation to map Z=0, anti-crazy-hills. GA
+# check if near large fords
+  (try_begin),
+     (eq,":scene_to_use",0),
+	 (try_for_range,":ford","p_ford_cair_andros1","p_ford_cerin_dolen"),
+	   (store_distance_to_party_from_party,":dist","p_main_party",":ford"),
+	   (lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_02"), #placeholder scenes
+	 (try_end),
+  (try_end),
+  
+# check if near Gondor towns (farms and fields scenes)
+
+# check if in Lorien (elven forest scenes)
+
+# check if in Fangorn (Fangorn forest scenes)
+
+# checks depleted, completely random terrain generated
+  (try_begin),
+     (eq,":scene_to_use",0),	
+     (assign, ":scene_to_use", "scn_random_scene_plain"),
+  #  player party temporary relocation to map Z=0, anti-crazy-hills. GA
      (assign,"$relocated",1),
 	 (party_relocate_near_party,"p_pointer_player","p_main_party",0), #remember original player location
      
-	 (try_begin),  # non-forest types randomly mashed for generation testing purposes
-        (this_or_next|eq, ":terrain_type", rt_steppe),
+	 (try_begin),
+        (store_random_in_range, ":radius", 1, 5), # radius around base terrain Z=0 position for seed generation
+        
+		(this_or_next|eq, ":terrain_type", rt_steppe),
         (this_or_next|eq, ":terrain_type", rt_plain ),
         (this_or_next|eq, ":terrain_type", rt_snow  ),
         (             eq, ":terrain_type", rt_desert),
-
-        (store_random_in_range, ":terrain", 0, 4),
+#        (store_random_in_range, ":terrain", 0, 4), #randomness off
         (try_begin),
-		   (eq, ":terrain", 0),
-		   (assign, ":scene_to_use", "scn_random_scene_steppe"),
-		   (display_message,"@SCENE: steppe"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",5),
+		   (eq, ":terrain_type", rt_steppe),
+		   (assign, ":scene_to_use", "scn_random_scene_steppe"),           (display_message,"@SCENE: steppe"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",":radius"),
         (else_try),
-		   (eq, ":terrain", 1),
-		   (assign, ":scene_to_use", "scn_random_scene_plain" ),
-		   (display_message,"@SCENE: plain"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain" ,5),
+		   (eq, ":terrain_type", rt_plain),
+		   (assign, ":scene_to_use", "scn_random_scene_plain" ),           (display_message,"@SCENE: plain"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain" ,":radius"),
         (else_try),
-		   (eq, ":terrain", 2),
-		   (assign, ":scene_to_use", "scn_random_scene_snow"  ),
-		   (display_message,"@SCENE: snow"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow"  ,5),
+		   (eq, ":terrain_type", rt_snow),
+		   (assign, ":scene_to_use", "scn_random_scene_snow"  ),           (display_message,"@SCENE: snow"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow"  ,":radius"),
         (else_try),
-		   (eq, ":terrain", 3),
-		   (assign, ":scene_to_use", "scn_random_scene_desert"),
-		   (display_message,"@SCENE: desert"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert",5),
+		   (eq, ":terrain_type", rt_desert),
+		   (assign, ":scene_to_use", "scn_random_scene_desert"),           (display_message,"@SCENE: desert"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert",":radius"),
         (try_end),
 	# get number of combatants (calculated in script_calculate_battle_advantage) and use small scene if too few. GA
 	    (try_begin), 
@@ -8953,30 +8946,27 @@ scripts = [
         (this_or_next|eq, ":terrain_type", rt_snow_forest  ),
         (             eq, ":terrain_type", rt_desert_forest),
 
-        (store_random_in_range, ":terrain", 0, 4),
+#        (store_random_in_range, ":terrain", 0, 4),
         (try_begin),
-		   (eq, ":terrain", 0),
-		   (assign, ":scene_to_use", "scn_random_scene_steppe_forest"),
-		   (display_message,"@SCENE: steppe forest"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe_forest",5),
+		   (eq, ":terrain_type", rt_steppe_forest),
+		   (assign, ":scene_to_use", "scn_random_scene_steppe_forest"),            (display_message,"@SCENE: steppe forest"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe_forest",":radius"),
         (else_try),
-		   (eq, ":terrain", 1),
-		   (assign, ":scene_to_use", "scn_random_scene_plain_forest" ),
-		   (display_message,"@SCENE: plain forest" ),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain_forest" ,5),
+		   (eq, ":terrain_type", rt_forest),
+		   (assign, ":scene_to_use", "scn_random_scene_plain_forest" ),            (display_message,"@SCENE: plain forest" ),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain_forest" ,":radius"),
         (else_try),
-		   (eq, ":terrain", 2),
-		   (assign, ":scene_to_use", "scn_random_scene_snow_forest"  ),
-		   (display_message,"@SCENE: snow forest"  ),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow_forest"  ,5),
+		   (eq, ":terrain_type", rt_snow_forest),
+		   (assign, ":scene_to_use", "scn_random_scene_snow_forest"  ),            (display_message,"@SCENE: snow forest"  ),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow_forest"  ,":radius"),
         (else_try),
-		   (eq, ":terrain", 3),
-		   (assign, ":scene_to_use", "scn_random_scene_desert_forest"),
-		   (display_message,"@SCENE: desert forest"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert_forest",5),
+		   (eq, ":terrain_type", rt_desert_forest),
+		   (assign, ":scene_to_use", "scn_random_scene_desert_forest"),            (display_message,"@SCENE: desert forest"),
+		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert_forest",":radius"),
         (try_end),
       (try_end),
-
+  (try_end),
+  
       (jump_to_scene,":scene_to_use"),
   ]),
 

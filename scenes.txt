@@ -11,11 +11,11 @@ scn_conversation_scene conversation_scene 0 encounter_spot bo_encounter_spot -40
 scn_random_scene_steppe random_scene_steppe 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
   0 
   0 
- outer_terrain_steppe 
+ outer_terrain_rohan 
 scn_random_scene_steppe_small random_scene_steppe_small 1792 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_steppe 
+ outer_terrain_rohan 
 scn_random_scene_plain random_scene_plain 1792 none none 0.000000 0.000000 220.000000 220.000000 -0.500000 0x000000023c602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -756,7 +756,7 @@ scn_isengard_center_flooded isengard_center_flooded 256 none none 0.000000 0.000
   0 
   0 
  outer_mountains2north 
-scn_beorn_castle beorn_castle 1 interior_castle_rohan_b bo_interior_castle_rohan_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_beorn_castle beorn_castle 1 interior_castle_rohan_b bo_interior_castle_j -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
  0 
