@@ -211,5 +211,14 @@ snd_horse_snort_again = 209
 snd_spear_trap = 210
 snd_moria_ambiance = 211
 snd_henneth_ambiance = 212
+snd_goodforest_ambiance = 213
+snd_evilforest_ambiance = 214
+snd_water_waves_ambiance = 215
+snd_water_splash_ambiance = 216
+snd_water_wavesplash_ambiance = 217
+snd_wind_ambiance = 218
+snd_isengard_ambiance = 219
+snd_evilmen_ambiance = 220
+snd_orcs_ambiance = 221
 
 

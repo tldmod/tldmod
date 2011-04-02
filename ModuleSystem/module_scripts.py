@@ -1090,6 +1090,10 @@ scripts = [
 # rumors in shops and tavers
 	  (faction_set_slot, faction_strings[x][0], slot_faction_rumors_begin   , faction_strings[x][1])    for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_strings[x][0], slot_faction_rumors_end     , faction_strings[x][2])    for x in range(len(faction_init)) ]+[
+# ambient sounds
+	  (faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_day   , faction_strings[x][3])    for x in range(len(faction_init)) ]+[
+	  (faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_always, faction_strings[x][4])    for x in range(len(faction_init)) ]+[
+
 # fixed faction info      
 	  (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
 	    (faction_get_slot, ":king", ":faction", slot_faction_leader),
@@ -1199,8 +1203,6 @@ scripts = [
         (party_set_slot, ":town_no", slot_town_store, "scn_town_store"),
         (party_set_slot, ":town_no", slot_town_alley, "scn_town_alley"),
         (party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),
-        #(party_set_slot, ":town_no", slot_town_tournament_max_teams, 4),
-        #(party_set_slot, ":town_no", slot_town_tournament_max_team_size, 8),
       (try_end),
 
 # Centers spawns init from ws_party_spawns_list in module_constants.py      
@@ -1231,17 +1233,22 @@ scripts = [
 	  
 	  (try_for_range, ":town_no", centers_begin, centers_end),
 	  	(store_faction_of_party, ":faction", ":town_no"),
-		(faction_get_slot, ":tmp_a",":faction", slot_faction_reinforcements_a),
-		(faction_get_slot, ":tmp_b",":faction", slot_faction_reinforcements_b),
-		(faction_get_slot, ":tmp_c",":faction", slot_faction_reinforcements_c),
-		(party_set_slot, ":town_no", slot_town_reinforcements_a, ":tmp_a"),
-		(party_set_slot, ":town_no", slot_town_reinforcements_b, ":tmp_b"),
-		(party_set_slot, ":town_no", slot_town_reinforcements_c, ":tmp_c"),
-        # set center theater according to faction theater - never changes except for advance camps
-        (faction_get_slot, ":theater", ":faction", slot_faction_home_theater),
-		(party_set_slot, ":town_no", slot_center_theater, ":theater"),
-        # victory points value on capture/destruction
+		(faction_get_slot, ":tmp",":faction", slot_faction_reinforcements_a),
+		(party_set_slot, ":town_no", slot_town_reinforcements_a, ":tmp"),
+		(faction_get_slot, ":tmp",":faction", slot_faction_reinforcements_b),
+		(party_set_slot, ":town_no", slot_town_reinforcements_b, ":tmp"),
+		(faction_get_slot, ":tmp",":faction", slot_faction_reinforcements_c),
+		(party_set_slot, ":town_no", slot_town_reinforcements_c, ":tmp"),
+    # set center theater according to faction theater - never changes except for advance camps
+        (faction_get_slot, ":tmp", ":faction", slot_faction_home_theater),
+		(party_set_slot, ":town_no", slot_center_theater, ":tmp"),
+    # victory points value on capture/destruction
 		(party_set_slot, ":town_no", slot_party_victory_value, ws_center_vp),
+	# ambient sounds for centers from faction defaults
+        (faction_get_slot, ":tmp", ":faction", slot_faction_ambient_sound_day),
+		(party_set_slot, ":town_no", slot_center_ambient_sound_day, ":tmp"),
+        (faction_get_slot, ":tmp", ":faction", slot_faction_ambient_sound_always),
+		(party_set_slot, ":town_no", slot_center_ambient_sound_always, ":tmp"),
       (try_end),
 	  
 	  ]+[
@@ -1250,6 +1257,9 @@ scripts = [
       (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_c, subfaction_data[x][4][2])  for x in range(len(subfaction_data)) ]+[
 	  
 	  (party_add_members, subfaction_data[x][1], subfaction_data[x][5][y],1)  for x in range(len(subfaction_data)) for y in range(len(subfaction_data[x][5])) ]+[
+# specific centers ambient sounds
+      (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_day   , center_sounds[x][1])  for x in range(len(center_sounds)) ]+[
+      (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_always, center_sounds[x][2])  for x in range(len(center_sounds)) ]+[
 
 	  ]+[
 
@@ -11263,12 +11273,12 @@ scripts = [
         (try_begin),
           (store_random_in_range, ":r", 0, 7),
 
-          (try_begin),(eq, ":r", 1),(ge, ":sound_1", 0),(play_sound, ":sound_1"),
-          (else_try) ,(eq, ":r", 2),(ge, ":sound_2", 0),(play_sound, ":sound_2"),
-          (else_try) ,(eq, ":r", 3),(ge, ":sound_3", 0),(play_sound, ":sound_3"),
-          (else_try) ,(eq, ":r", 4),(ge, ":sound_4", 0),(play_sound, ":sound_4"),
-          (else_try) ,(eq, ":r", 5),(ge, ":sound_5", 0),(play_sound, ":sound_5"),
-          (try_end),
+        #  (try_begin),(eq, ":r", 1),(ge, ":sound_1", 0),(play_sound, ":sound_1"),
+        #  (else_try) ,(eq, ":r", 2),(ge, ":sound_2", 0),(play_sound, ":sound_2"),
+        #  (else_try) ,(eq, ":r", 3),(ge, ":sound_3", 0),(play_sound, ":sound_3"),
+        #  (else_try) ,(eq, ":r", 4),(ge, ":sound_4", 0),(play_sound, ":sound_4"),
+        #  (else_try) ,(eq, ":r", 5),(ge, ":sound_5", 0),(play_sound, ":sound_5"),
+        #  (try_end),
         (try_end),
   ]),
 

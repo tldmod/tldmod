@@ -261,9 +261,9 @@ sounds = [
  ("nazgul_skreech_long",sf_priority_10|sf_vol_10, ["nazgul_02.mp3"]),
  ("nazgul_skreech_short",sf_priority_10|sf_vol_10, ["nazgul_01.mp3"]),
 
- ("horror_scream_man",sf_priority_10|sf_vol_10, ["horror_scream_man_0.wav","horror_scream_man_1.wav","horror_scream_man_2.wav","horror_scream_man_3.wav","horror_scream_man_4.wav"]),
- ("horror_scream_woman",sf_priority_10|sf_vol_10, ["horror_scream_woman.wav"]),
- ("horror_scream_orc",sf_priority_10|sf_vol_10, ["horror_scream_orc.wav"]),
+ ("horror_scream_man"  ,sf_priority_10|sf_vol_10,["horror_scream_man_0.wav","horror_scream_man_1.wav","horror_scream_man_2.wav","horror_scream_man_3.wav","horror_scream_man_4.wav"]),
+ ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),
+ ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
  
  ("warg_lone_woof",sf_priority_6|sf_vol_10, ["warg_bark01.mp3","warg_bark02.mp3","warg_bark03.mp3","warg_growl01.mp3","warg_howl01.mp3"
 											   #,"warg_howl02.mp3","warg_howl03.mp3"
@@ -272,9 +272,17 @@ sounds = [
 
  ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
 
- ("moria_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["moria_loop.ogg"]),
- ("henneth_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["henneth_loop.ogg"]),
-
+ ("moria_ambiance"      ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["moria_loop.ogg"]),
+ ("henneth_ambiance"    ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["henneth_loop.ogg"]),
+ ("goodforest_ambiance" ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["good_forest_loop.ogg"]),
+ ("evilforest_ambiance"  ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_forest_loop.ogg"]),
+ ("water_waves_ambiance",sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["water_waves_loop.ogg"]),
+ ("water_splash_ambiance",sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["water_splash_loop.ogg"]),
+ ("water_wavesplash_ambiance",sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["water_wavesplash_loop.ogg"]),
+ ("wind_ambiance"       ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["wind_loop.ogg"]),
+ ("isengard_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["isen_loop.ogg"]),
+ ("evilmen_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_men_loop.ogg"]),
+ ("orcs_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["beast_loop.ogg"]),
 #TLD end 
  
 ]

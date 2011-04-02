@@ -1,5 +1,5 @@
 soundsfile version 2
-525
+534
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -525,7 +525,16 @@ soundsfile version 2
  spear_trap.wav 2416
  moria_loop.ogg 899
  henneth_loop.ogg 899
-213
+ good_forest_loop.ogg 899
+ evil_forest_loop.ogg 899
+ water_waves_loop.ogg 899
+ water_splash_loop.ogg 899
+ water_wavesplash_loop.ogg 899
+ wind_loop.ogg 899
+ isen_loop.ogg 899
+ evil_men_loop.ogg 899
+ beast_loop.ogg 899
+222
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -739,3 +748,12 @@ snd_horse_snort_again 1872 5 323 324 325 326 327
 snd_spear_trap 2416 1 522 
 snd_moria_ambiance 899 1 523 
 snd_henneth_ambiance 899 1 524 
+snd_goodforest_ambiance 899 1 525 
+snd_evilforest_ambiance 899 1 526 
+snd_water_waves_ambiance 899 1 527 
+snd_water_splash_ambiance 899 1 528 
+snd_water_wavesplash_ambiance 899 1 529 
+snd_wind_ambiance 899 1 530 
+snd_isengard_ambiance 899 1 531 
+snd_evilmen_ambiance 899 1 532 
+snd_orcs_ambiance 899 1 533 
