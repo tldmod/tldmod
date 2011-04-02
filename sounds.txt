@@ -1,5 +1,5 @@
 soundsfile version 2
-523
+525
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -523,7 +523,9 @@ soundsfile version 2
  warg_growl01.mp3 2656
  warg_howl01.mp3 2656
  spear_trap.wav 2416
-211
+ moria_loop.ogg 899
+ henneth_loop.ogg 899
+213
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -735,3 +737,5 @@ snd_horror_scream_orc 2720 1 516
 snd_warg_lone_woof 2656 5 517 518 519 520 521 
 snd_horse_snort_again 1872 5 323 324 325 326 327 
 snd_spear_trap 2416 1 522 
+snd_moria_ambiance 899 1 523 
+snd_henneth_ambiance 899 1 524 

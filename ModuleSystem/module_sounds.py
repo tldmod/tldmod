@@ -272,7 +272,9 @@ sounds = [
 
  ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
 
- 
+ ("moria_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["moria_loop.ogg"]),
+ ("henneth_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["henneth_loop.ogg"]),
+
 #TLD end 
  
 ]

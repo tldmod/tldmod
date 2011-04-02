@@ -209,5 +209,7 @@ snd_horror_scream_orc = 207
 snd_warg_lone_woof = 208
 snd_horse_snort_again = 209
 snd_spear_trap = 210
+snd_moria_ambiance = 211
+snd_henneth_ambiance = 212
 
 
