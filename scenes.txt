@@ -355,11 +355,11 @@ scn_minas_morgul_center minas_morgul_center 256 none none 0.000000 0.000000 100.
 scn_mount_doom_center mount_doom_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_flat 
 scn_cirith_ungol_center cirith_ungol_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_flat 
 scn_orc_sentry_camp_center orc_sentry_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
   0 
