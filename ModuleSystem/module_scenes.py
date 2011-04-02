@@ -257,7 +257,7 @@ scenes = [
 ("west_emnet_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 
 # various battlefield scenes
-  ("battlefield1" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+  ("battlefield1" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
   ("battlefield2" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("battlefield3" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("battlefield4" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
@@ -267,6 +267,7 @@ scenes = [
   ("battlefield8" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("battlefield9" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("battlefield10",sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+  ("small_ford"   ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 
   ]
 

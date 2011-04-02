@@ -283,6 +283,7 @@ sounds = [
  ("isengard_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["isen_loop.ogg"]),
  ("evilmen_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_men_loop.ogg"]),
  ("orcs_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["beast_loop.ogg"]),
+ ("morgul_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["morgul_loop.ogg"]),
 #TLD end 
  
 ]

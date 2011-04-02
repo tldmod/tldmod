@@ -220,5 +220,6 @@ snd_wind_ambiance = 218
 snd_isengard_ambiance = 219
 snd_evilmen_ambiance = 220
 snd_orcs_ambiance = 221
+snd_morgul_ambiance = 222
 
 

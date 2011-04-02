@@ -1,5 +1,5 @@
 soundsfile version 2
-534
+535
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -534,7 +534,8 @@ soundsfile version 2
  isen_loop.ogg 899
  evil_men_loop.ogg 899
  beast_loop.ogg 899
-222
+ morgul_loop.ogg 899
+223
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -757,3 +758,4 @@ snd_wind_ambiance 899 1 530
 snd_isengard_ambiance 899 1 531 
 snd_evilmen_ambiance 899 1 532 
 snd_orcs_ambiance 899 1 533 
+snd_morgul_ambiance 899 1 534 

@@ -1,5 +1,5 @@
 itemsfile version 2
-813
+814
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -279,10 +279,10 @@ itemsfile version 2
  itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
 0
 
- itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 259 0
+ itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
- itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 259 0
+ itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
  itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  flying_missile 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
@@ -386,58 +386,58 @@ itemsfile version 2
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063520 1729382256910270472 1224979098644774912 1224979098644774913 
 
- itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 15 0
+ itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 25 0
 0
 
- itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 15 0
+ itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 17 0 1.000000 100 0 0 0 0 0 99 48 0 0 25 0
 0
 
- itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  6357000 5905584128 58 0 1.000000 100 0 0 0 0 0 98 52 0 0 18 0
+ itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  6357000 5905584128 58 0 1.000000 100 0 0 0 0 0 98 52 0 0 28 0
 0
 
- itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 20 0
+ itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 30 0
 0
 
- itm_gondor_bow Gondor_Bow Gondor_Bow 2  gondor_bow 0  gondor_bow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 82 54 0 0 22 0
+ itm_gondor_bow Gondor_Bow Gondor_Bow 2  gondor_bow 0  gondor_bow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 82 54 0 0 42 0
 0
 
- itm_strong_bow Rohan_Bow Rohan_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 23 0
+ itm_strong_bow Rohan_Bow Rohan_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 43 0
 0
 
- itm_elven_bow Elven_Bow Elven_Bow 2  elven_bow 0  elven_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 281 0
+ itm_elven_bow Elven_Bow Elven_Bow 2  elven_bow 0  elven_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
 0
 
- itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 25 0
+ itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
 0
 
- itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
+ itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
 0
 
- itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 20 0
+ itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 30 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
 0
 
- itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 21 0
+ itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
 0
 
- itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 82 54 0 0 278 0
+ itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 93 65 0 0 278 0
 0
 
- itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 281 0
+ itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
 0
 
- itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 281 0
+ itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 87 58 0 0 281 0
 0
 
- itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 25 0
+ itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
 0
 
- itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 23 0
+ itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 33 0
 0
 
- itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 281 0
+ itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
 0
 
  itm_dunland_javelin Dunland_Javelins Dunland_Javelins 1  dunland_javelin 0  71368714 262144 209 0 4.000000 100 0 0 0 0 0 89 27 65 2 319 0
@@ -1191,7 +1191,7 @@ itemsfile version 2
  itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 7 38 0
 0
 
- itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312987136 437 131082 1.250000 100 0 0 0 0 0 94 57 0 0 23 0
+ itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312987136 437 131082 1.250000 100 0 0 0 0 0 86 57 0 0 33 0
 0
 
  itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 80 0 2.500000 100 0 8 0 0 310 96 0 40 0 0 0
@@ -1558,25 +1558,25 @@ itemsfile version 2
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063458 1729382256910270479 1224979098644774912 1224979098644774913 
 
- itm_rohan_inf_helmet_a Rohan_Inf_Helmet Rohan_Inf_Helmet 1  rohan_inf_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_a Rohan_Inf_Helmet Rohan_Inf_Helmet 1  rohan_inf_helmet_a 0  65548 0 340 0 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_b Rohan_Inf_Helmet Rohan_Inf_Helmet 1  rohan_inf_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_b Rohan_Inf_Helmet Rohan_Inf_Helmet 1  rohan_inf_helmet_b 0  65548 0 340 0 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_a Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_a Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_a 0  65548 0 340 0 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_b Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_b Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_b 0  65548 0 340 0 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_a Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_a 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_a Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_a 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_b Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_b Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_b 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_c Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_c 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_c Rohan_Cav_Helmet Rohan_Cav_Helmet 1  rohan_cav_helmet_c 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_captain_helmet Rohan_Captain_Helmet Rohan_Captain_Helmet 1  rohan_captain_helmet 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
@@ -1635,6 +1635,9 @@ itemsfile version 2
 0
 
  itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 53 0 256 40
+0
+
+ itm_rohan_2h_sword Rohan_Foot_Two_Hander Rohan_Foot_Two_Hander 1  rohan_sword_a_2h 0  6356995 9223635924301119728 524 0 3.000000 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
  itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 500 0 12.000000 100 0 30 14 0 0 0 0 0 0 0 0
@@ -1697,28 +1700,28 @@ itemsfile version 2
  itm_mirkwood_leather_greaves Mirkwood_Leather_Greaves Mirkwood_Leather_Greaves 1  mirkwood_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 65 0 7.000000 100 0 10 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_padded Harondor_Padded_Armor Harondor_Padded_Armor 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_padded Harondor_Padded_Armor Harondor_Padded_Armor 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 4 0 0 0 0 0 0 0 0
 0
 
- itm_harad_hauberk Harondor_Hauberk Harondor_Hauberk 1  harad_hauberk 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_hauberk Harondor_Hauberk Harondor_Hauberk 1  harad_hauberk 0  16842765 0 65 0 7.000000 100 0 27 6 0 0 0 0 0 0 0 0
 0
 
- itm_harad_lamellar Harasjala_Armor Harasjala_Armor 1  harad_lamellar 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_lamellar Harasjala_Armor Harasjala_Armor 1  harad_lamellar 0  16842765 0 65 0 7.000000 100 0 27 6 0 0 0 0 0 0 0 0
 0
 
- itm_harad_heavy Harad_Swordsman_Armor Harad_Swordsman_Armor 1  harad_heavy 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_heavy Harad_Swordsman_Armor Harad_Swordsman_Armor 1  harad_heavy 0  16842765 0 65 0 7.000000 100 0 41 10 0 0 0 0 0 0 0 0
 0
 
- itm_harad_skirmisher Light_Harad_Garb Light_Harad_Garb 1  harad_skirmisher 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_skirmisher Light_Harad_Garb Light_Harad_Garb 1  harad_skirmisher 0  16842765 0 65 0 7.000000 100 0 18 2 0 0 0 0 0 0 0 0
 0
 
- itm_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16842765 0 65 0 7.000000 100 0 18 6 0 0 0 0 0 0 0 0
 0
 
- itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16842765 0 65 0 7.000000 100 0 40 10 0 0 0 0 0 0 0 0
 0
 
  itm_harad_champion Far_Harad_Garb Far_Harad_Garb 1  harad_champion 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
@@ -1727,40 +1730,40 @@ itemsfile version 2
  itm_panther_guard Panther_Hide Panther_Hide 1  panther_guard 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_scale Harad_Scale_Armor Harad_Scale_Armor 1  harad_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_scale Harad_Scale_Armor Harad_Scale_Armor 1  harad_scale 0  16842765 0 65 0 7.000000 100 0 30 8 0 0 0 0 0 0 0 0
 0
 
- itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tiger_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tiger_scale 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_harad_lion_scale Lion_Guard_Armor Lion_Guard_Armor 1  harad_lion_scale 0  16842765 0 65 0 7.000000 100 0 18 0 0 0 0 0 0 0 0 0
+ itm_harad_lion_scale Lion_Guard_Armor Lion_Guard_Armor 1  harad_lion_scale 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_harad_dragon_helm Kiloka_Helm Kiloka_Helm 1  harad_dragon_helm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_dragon_helm Kiloka_Helm Kiloka_Helm 1  harad_dragon_helm 0  65548 0 479 0 2.250000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_cav_helm_a Harondor_Cavalry_Helm Harondor_Cavalry_Helm 1  harad_cav_helm_a 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_cav_helm_a Harondor_Cavalry_Helm Harondor_Cavalry_Helm 1  harad_cav_helm_a 0  65548 0 479 0 2.250000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_cav_helm_b Harondor_Cavalry_Helm Harondor_Cavalry_Helm 1  harad_cav_helm_b 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_cav_helm_b Harondor_Cavalry_Helm Harondor_Cavalry_Helm 1  harad_cav_helm_b 0  65548 0 479 0 2.250000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_black_snake_helm Maranka_Helm Maranka_Helm 1  black_snake_helm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_finhelm Great_Harad_Helmet Great_Harad_Helmet 1  harad_finhelm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_finhelm Great_Harad_Helmet Great_Harad_Helmet 1  harad_finhelm 0  65548 0 479 0 2.250000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_heavy_inf_helm Great_Harad_Helmet Great_Harad_Helmet 1  harad_heavy_inf_helm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_heavy_inf_helm Great_Harad_Helmet Great_Harad_Helmet 1  harad_heavy_inf_helm 0  65548 0 479 0 2.250000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_wavy_helm Great_Harad_Helmet Great_Harad_Helmet 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_wavy_helm Great_Harad_Helmet Great_Harad_Helmet 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_lion_helm Lion_Guard_Helm Lion_Guard_Helm 1  lion_helm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_lion_helm Lion_Guard_Helm Lion_Guard_Helm 1  lion_helm 0  65548 0 479 0 2.250000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_harad_pantherhelm Panther_Guard_Cap Panther_Guard_Cap 1  harad_pantherhelm 0  65548 0 479 0 2.250000 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_harad_pantherhelm Panther_Guard_Cap Panther_Guard_Cap 1  harad_pantherhelm 0  65548 0 479 0 2.250000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_harad_khopesh Harad_Khopesh Harad_Khopesh 1  harad_khopesh 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 80 0 256 30
@@ -1901,31 +1904,31 @@ itemsfile version 2
  itm_khand_helmet_mask2 Khand_Mask Khand_Mask 1  Khand_Helmet_Mask2 0  65548 0 479 0 2.250000 100 20 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam_a Khand_Armor Khand_Armor 1  khand_foot_lam_a 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_foot_lam_a Khand_Armor Khand_Armor 1  khand_foot_lam_a 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam_b Khand_Armor Khand_Armor 1  khand_foot_lam_b 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_foot_lam_b Khand_Armor Khand_Armor 1  khand_foot_lam_b 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam_c Khand_Armor Khand_Armor 1  khand_foot_lam_c 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_foot_lam_c Khand_Armor Khand_Armor 1  khand_foot_lam_c 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 1  khand_heavy_lam 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 1  khand_heavy_lam 0  16842765 0 65 0 27.000000 100 0 45 15 0 0 0 0 0 0 0 0
 0
 
- itm_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 65 0 7.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_b Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_b 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_med_lam_b Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_b 0  16842765 0 65 0 20.000000 100 0 40 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 65 0 20.000000 100 0 40 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_d Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_d 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_med_lam_d Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_d 0  16842765 0 65 0 20.000000 100 0 40 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 1  khand_noble_lam 0  16842765 0 65 0 7.000000 100 0 45 15 0 0 0 0 0 0 0 0
+ itm_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 1  khand_noble_lam 0  16842765 0 65 0 26.000000 100 0 45 15 0 0 0 0 0 0 0 0
 0
 
  itm_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
@@ -1958,10 +1961,10 @@ itemsfile version 2
  itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  6750212 9223635925844623584 97 0 6.000000 100 0 0 0 0 33792 84 0 102 0 256 545
 0
 
- itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 65 0 66 0 277 29
+ itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388529822793743 280 0 1.250000 100 0 0 0 0 29696 65 0 66 0 277 29
 0
 
- itm_khand_tulwar Khand_Tulwar Khand_Tulwar 1  Khand_Weapon_Tulwar 0  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 94 0 94 0 277 29
+ itm_khand_tulwar Khand_Tulwar Khand_Tulwar 1  Khand_Weapon_Tulwar 0  4259842 9223388529822793743 280 0 1.250000 100 0 0 0 0 29696 94 0 94 0 277 29
 0
 
  itm_khand_2h_tulwar Khand_Tulwar Khand_Tulwar 1  Khand_Weapon_Tulwar_Long 0  6356995 9223635924301119728 1123 0 2.750000 100 0 0 0 0 43008 89 0 116 0 284 42
@@ -2069,7 +2072,7 @@ itemsfile version 2
  itm_rhun_glaive Rhun_Glaive Rhun_Glaive 1  rhun_glaive 0  6651908 4222124851990272 352 0 4.500000 100 0 0 0 0 38912 83 0 156 0 277 38
 0
 
- itm_rhun_greatfalchion Rhun_Great_Falchion Rhun_Great_Falchion 2  rhun_greatfalchion 0  scab_bastardsw_b 3458764513820540928  6356995 9223635958660858096 524 0 3.000000 100 0 0 0 0 43008 92 0 102 0 287 42
+ itm_rhun_greatfalchion Rhun_Great_Falchion Rhun_Great_Falchion 1  rhun_greatfalchion 0  6356995 9223635924301119728 524 0 3.000000 100 0 0 0 0 43008 92 0 102 0 287 42
 0
 
  itm_rhun_greatsword Rhun_Great_Sword Rhun_Great_Sword 2  rhun_greatsword 0  scab_bastardsw_b 3458764513820540928  6356995 9223635958660858096 524 0 3.000000 100 0 0 0 0 40960 94 0 101 0 287 40
@@ -2090,28 +2093,28 @@ itemsfile version 2
  itm_dale_armor_b Dale_Armor Dale_Armor 1  WIP_dale_footman_cloak 0  16842765 0 65 0 7.000000 100 0 27 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_c Dale_Armor Dale_Armor 1  dale_new_archer_c 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_c Dale_Armor Dale_Armor 1  dale_new_archer_c 0  16842765 0 65 0 7.000000 100 0 35 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_d Dale_Armor Dale_Armor 1  dale_new_archer_f 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_d Dale_Armor Dale_Armor 1  dale_new_archer_f 0  16842765 0 65 0 7.000000 100 0 35 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_e Dale_Armor Dale_Armor 1  dale_heavy_lvam_a 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_e Dale_Armor Dale_Armor 1  dale_heavy_lvam_a 0  16842765 0 65 0 7.000000 100 0 40 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_f Dale_Armor Dale_Armor 1  dale_heavy_lvam_b 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_f Dale_Armor Dale_Armor 1  dale_heavy_lvam_b 0  16842765 0 65 0 7.000000 100 0 40 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_g Dale_Armor Dale_Armor 1  dale_heavy_lvam_d 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_g Dale_Armor Dale_Armor 1  dale_heavy_lvam_d 0  16842765 0 65 0 7.000000 100 0 40 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_h Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_a 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_h Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_a 0  16842765 0 65 0 7.000000 100 0 48 5 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_i Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_b 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_i Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_b 0  16842765 0 65 0 7.000000 100 0 48 5 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_j Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_d 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
+ itm_dale_armor_j Dale_Heavy_Cloak_Armor Dale_Heavy_Cloak_Armor 1  dale_heavy_cloak_d 0  16842765 0 65 0 7.000000 100 0 48 5 0 0 0 0 0 0 0 0
 0
 
  itm_dale_armor_k Dale_Armor Dale_Armor 1  dale_heavy_belt_a 0  16842765 0 65 0 7.000000 100 0 48 0 0 0 0 0 0 0 0 0
@@ -2174,40 +2177,40 @@ itemsfile version 2
  itm_umb_armor_b Corsair_Raider_Armor Corsair_Raider_Armor 1  corsair_leather_cape 0  16842765 0 125 0 7.000000 100 0 23 6 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_c Corsair_Padded_Armor Corsair_Padded_Armor 1  corsair_padded 0  16842765 0 355 0 10.000000 100 0 35 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_c Corsair_Padded_Armor Corsair_Padded_Armor 1  corsair_padded 0  16842765 0 355 0 10.000000 100 0 27 8 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_d Corsair_Heavy_Padded_Armor Corsair_Heavy_Padded_Armor 1  corsair_padded_pauldron 0  16842765 0 395 0 11.000000 100 0 39 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_d Corsair_Heavy_Padded_Armor Corsair_Heavy_Padded_Armor 1  corsair_padded_pauldron 0  16842765 0 395 0 11.000000 100 0 32 8 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_e Corsair_Padded_Raider_Armor Corsair_Padded_Raider_Armor 1  corsair_padded_cape 0  16842765 0 365 0 10.000000 100 0 37 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_e Corsair_Padded_Raider_Armor Corsair_Padded_Raider_Armor 1  corsair_padded_cape 0  16842765 0 365 0 10.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_f Corsair_Hauberk Corsair_Hauberk 1  corsair_chain 0  16842765 0 965 0 7.000000 100 0 47 9 0 0 0 0 0 0 0 0
+ itm_umb_armor_f Corsair_Hauberk Corsair_Hauberk 1  corsair_chain 0  16842765 0 965 0 7.000000 100 0 38 9 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 965 0 7.000000 100 0 51 9 0 0 0 0 0 0 0 0
+ itm_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 965 0 7.000000 100 0 40 9 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_h Corsair_Heavy_Raider_Armor Corsair_Heavy_Raider_Armor 1  corsair_chain_cape 0  16842765 0 965 0 7.000000 100 0 48 9 0 0 0 0 0 0 0 0
+ itm_umb_armor_h Corsair_Heavy_Raider_Armor Corsair_Heavy_Raider_Armor 1  corsair_chain_cape 0  16842765 0 965 0 7.000000 100 0 40 9 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 340 0 2.000000 100 49 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_b Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet_blue 0  65548 0 340 0 2.000000 100 49 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_b Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet_blue 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_c Corsair_Militia_Helm Corsair_Militia_Helm 1  umbar_militia_helmet 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_c Corsair_Militia_Helm Corsair_Militia_Helm 1  umbar_militia_helmet 0  65548 0 340 0 2.000000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_d Corsair_Militia_Helm Corsair_Militia_Helm 1  umbar_militia_helmet_b 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_d Corsair_Militia_Helm Corsair_Militia_Helm 1  umbar_militia_helmet_b 0  65548 0 340 0 2.000000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_e Corsair_Raider_Helm Corsair_Raider_Helm 1  raider_helmet 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_e Corsair_Raider_Helm Corsair_Raider_Helm 1  raider_helmet 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_f Corsair_Raider_Helm Corsair_Raider_Helm 1  raider_helmet_b 0  65548 0 340 0 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_f Corsair_Raider_Helm Corsair_Raider_Helm 1  raider_helmet_b 0  65548 0 340 0 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_umb_hood Umbar_Hood Umbar_Hood 1  umbar_hood 0  65548 0 340 0 2.000000 100 14 0 0 0 0 0 0 0 0 0 0

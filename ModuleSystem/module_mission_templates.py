@@ -141,8 +141,7 @@ tld_common_battle_scripts = [
 
 
 mission_templates = [
-  (
-    "town_default",0,-1,
+  ( "town_default",0,-1,
     "Default town visit",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
      (1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
@@ -155,8 +154,7 @@ mission_templates = [
      ],
     tld_common_battle_scripts+[
 	   (ti_on_agent_spawn, 0, 0, [],
-       [
-         (store_trigger_param_1, ":agent_no"),
+       [ (store_trigger_param_1, ":agent_no"),
          (call_script, "script_init_town_agent", ":agent_no"),
        ]),
 
@@ -191,9 +189,20 @@ mission_templates = [
     #Other party
      (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,af_override_fullhelm,0,1,[]),(19,mtef_visitor_source,af_override_fullhelm,0,1,[]),(20,mtef_visitor_source,af_override_fullhelm,0,1,[]),(21,mtef_visitor_source,af_override_fullhelm,0,1,[]),
      (22,mtef_visitor_source,af_override_fullhelm,0,1,[]),(23,mtef_visitor_source,af_override_fullhelm,0,1,[]),(24,mtef_visitor_source,af_override_fullhelm,0,1,[]),(25,mtef_visitor_source,af_override_fullhelm,0,1,[]),(26,mtef_visitor_source,af_override_fullhelm,0,1,[]),
-     (27,mtef_visitor_source,af_override_fullhelm,0,1,[]),(28,mtef_visitor_source,af_override_fullhelm,0,1,[]),(29,mtef_visitor_source,af_override_fullhelm,0,1,[]),(30,mtef_visitor_source,af_override_fullhelm,0,1,[]),(31,mtef_visitor_source,af_override_fullhelm,0,1,[]),
+     (27,mtef_visitor_source,af_override_fullhelm,0,1,[]),(28,mtef_visitor_source,af_override_fullhelm,0,1,[]),(29,mtef_visitor_source,af_override_fullhelm,0,1,[]),(30,mtef_visitor_source,af_override_fullhelm,0,1,[]),
+# mob running towards you
+	 (31,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      ],
-    [],
+    [(1, 0, ti_once, [], [(add_reinforcements_to_entry,31,5),]),
+     (4, 0, ti_once, [], [
+	         (entry_point_get_position,pos1,0),
+			 (try_for_agents,":agent"),
+			    (agent_get_entry_no,":e",":agent"),
+				(eq,":e",31),
+				(agent_set_scripted_destination,pos1,":agent",1),
+			 (try_end),
+			 ]),
+	],
   ),
   
 #----------------------------------------------------------------
