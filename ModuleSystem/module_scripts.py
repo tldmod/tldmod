@@ -378,11 +378,12 @@ scripts = [
 	  (faction_set_slot, ":fac", slot_faction_influence,  ":val"),
 
 	  # display message
-	  (store_mod, reg10, ":difference", 100),(store_div, reg11, ":difference", 100),
-	  (try_begin), (lt, reg10, 10), (str_store_string, s10, "@.0"), (else_try), (str_store_string, s10, "@."), (try_end),
+	  # (store_mod, reg10, ":difference", 100),(store_div, reg11, ":difference", 100),
+	  # (try_begin), (lt, reg10, 10), (str_store_string, s10, "@.0"), (else_try), (str_store_string, s10, "@."), (try_end),
 	  (str_store_faction_name, s11, ":fac"),
+	  (assign, reg11, ":difference"),
 	  (assign, reg12, ":inf_dif"),
-	  (display_message, "@Earned {reg12} influence with {s11} (+{reg10}{s10}{reg11} rank)", color_good_news),
+	  (display_message, "@Earned {reg11} rank points and {reg12} influence with {s11}.", color_good_news),
 	  
 	  # rank increased?
 	  (try_begin),
@@ -1595,7 +1596,7 @@ scripts = [
 
 #NPC companion changes begin
        (call_script, "script_party_count_fit_regulars", "p_main_party"),
-       #(assign, "$playerparty_prebattle_regulars", reg0),
+       (assign, "$playerparty_prebattle_regulars", reg0),
 
        (assign, "$g_last_rest_center", -1),
        (assign, "$talk_context", 0),
@@ -11244,34 +11245,34 @@ scripts = [
   # script_center_ambiance_sounds
   # to be called every two seconds. TODO for TLD centers
   ("center_ambiance_sounds",
-    [   (assign, ":sound_1", -1),
-        (assign, ":sound_2", -1),
-        (assign, ":sound_3", -1),
-        (assign, ":sound_4", -1),
-        (assign, ":sound_5", -1),
+    [   #(assign, ":sound_1", -1),
+        #(assign, ":sound_2", -1),
+        #(assign, ":sound_3", -1),
+        #(assign, ":sound_4", -1),
+        #(assign, ":sound_5", -1),
         (try_begin),
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_village),
           (try_begin),
             (neg|is_currently_night),
-            (assign, ":sound_3", "snd_distant_dog_bark"),
-            (assign, ":sound_3", "snd_distant_chicken"),
+        #    (assign, ":sound_3", "snd_distant_dog_bark"),
+        #    (assign, ":sound_3", "snd_distant_chicken"),
           (else_try),
-            (assign, ":sound_1", "snd_distant_dog_bark"),
-            (assign, ":sound_2", "snd_distant_owl"),
+        #    (assign, ":sound_1", "snd_distant_dog_bark"),
+        #    (assign, ":sound_2", "snd_distant_owl"),
           (try_end),
         (else_try),
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (try_begin),
             (neg|is_currently_night),
-            (assign, ":sound_1", "snd_distant_carpenter"),
-            (assign, ":sound_2", "snd_distant_blacksmith"),
-            (assign, ":sound_3", "snd_distant_dog_bark"),
+        #    (assign, ":sound_1", "snd_distant_carpenter"),
+        #    (assign, ":sound_2", "snd_distant_blacksmith"),
+        #    (assign, ":sound_3", "snd_distant_dog_bark"),
           (else_try),
-            (assign, ":sound_1", "snd_distant_dog_bark"),
+        #    (assign, ":sound_1", "snd_distant_dog_bark"),
           (try_end),
         (try_end),
         (try_begin),
-          (store_random_in_range, ":r", 0, 7),
+        #  (store_random_in_range, ":r", 0, 7),
 
         #  (try_begin),(eq, ":r", 1),(ge, ":sound_1", 0),(play_sound, ":sound_1"),
         #  (else_try) ,(eq, ":r", 2),(ge, ":sound_2", 0),(play_sound, ":sound_2"),
@@ -14828,70 +14829,70 @@ scripts = [
 #good companions
         # Mablung
         (troop_set_slot, "trp_npc1", slot_troop_morality_type, tmt_egalitarian),
-        (troop_set_slot, "trp_npc1", slot_troop_morality_value, 4),
-        (troop_set_slot, "trp_npc1", slot_troop_2ary_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc1", slot_troop_2ary_morality_value, -1),
+        (troop_set_slot, "trp_npc1", slot_troop_morality_value, 3),
+        (troop_set_slot, "trp_npc1", slot_troop_2ary_morality_type, tmt_honest),
+        (troop_set_slot, "trp_npc1", slot_troop_2ary_morality_value, 2),
         (troop_set_slot, "trp_npc1", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
         (troop_set_slot, "trp_npc1", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc1", slot_troop_personalitymatch_object, "trp_npc2"),  #Gondor NPC
-        (troop_set_slot, "trp_npc1", slot_troop_home, "p_town_edoras"),
-        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 300),
-        (troop_set_slot, "trp_npc1", slot_troop_cur_center, "p_town_west_osgiliath"),  #TLD
-        (troop_set_slot, "trp_npc1", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc1", slot_troop_personalitymatch_object, "trp_npc6"),  #Luevanna
+        (troop_set_slot, "trp_npc1", slot_troop_home, "p_town_west_osgiliath"),
+        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 2000),
+        (troop_set_slot, "trp_npc1", slot_troop_cur_center, "p_town_henneth_annun"),  #TLD
+        (troop_set_slot, "trp_npc1", slot_troop_rank_request, 3),  #TLD
 
-        # Gondor NPC
-        (troop_set_slot, "trp_npc2", slot_troop_morality_type, tmt_humanitarian),
+        # Cirdil
+        (troop_set_slot, "trp_npc2", slot_troop_morality_type, tmt_egalitarian),
         (troop_set_slot, "trp_npc2", slot_troop_morality_value, 2),  
-        (troop_set_slot, "trp_npc2", slot_troop_2ary_morality_type, tmt_honest),  
-        (troop_set_slot, "trp_npc2", slot_troop_2ary_morality_value, 1),
+        (troop_set_slot, "trp_npc2", slot_troop_2ary_morality_type, -1),  
+        (troop_set_slot, "trp_npc2", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc2", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
         (troop_set_slot, "trp_npc2", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc2", slot_troop_personalitymatch_object, "trp_npc1"),  #Gondor NPC
-        (troop_set_slot, "trp_npc2", slot_troop_home, "p_town_edoras"),
-        (troop_set_slot, "trp_npc2", slot_troop_payment_request, 0), 
+        (troop_set_slot, "trp_npc2", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung
+        (troop_set_slot, "trp_npc2", slot_troop_home, "p_town_minas_morgul"),
+        (troop_set_slot, "trp_npc2", slot_troop_payment_request, 100), 
         (troop_set_slot, "trp_npc2", slot_troop_cur_center, "p_town_minas_tirith"),  #TLD
         (troop_set_slot, "trp_npc2", slot_troop_rank_request, 0),  #TLD
 
         # Ulfas
-        (troop_set_slot, "trp_npc3", slot_troop_morality_type, tmt_humanitarian),
+        (troop_set_slot, "trp_npc3", slot_troop_morality_type, tmt_aristocratic),
         (troop_set_slot, "trp_npc3", slot_troop_morality_value, 4),  
-        (troop_set_slot, "trp_npc3", slot_troop_2ary_morality_type, tmt_aristocratic), 
-        (troop_set_slot, "trp_npc3", slot_troop_2ary_morality_value, -1),
-        (troop_set_slot, "trp_npc3", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
+        (troop_set_slot, "trp_npc3", slot_troop_2ary_morality_type, -1), 
+        (troop_set_slot, "trp_npc3", slot_troop_2ary_morality_value, 0),
+        (troop_set_slot, "trp_npc3", slot_troop_personalityclash_object, "trp_npc1"), #Mablung
         (troop_set_slot, "trp_npc3", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc3", slot_troop_personalitymatch_object, "trp_npc4"),  #Rohan NPC
-        (troop_set_slot, "trp_npc3", slot_troop_home, "p_town_minas_tirith"),
-        (troop_set_slot, "trp_npc3", slot_troop_payment_request, 0), 
-        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_hornburg"),  #TLD
-        (troop_set_slot, "trp_npc3", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_personalitymatch_object, "trp_npc4"),  #Gálmynë
+        (troop_set_slot, "trp_npc3", slot_troop_home, "p_ford_fangorn"),
+        (troop_set_slot, "trp_npc3", slot_troop_payment_request, 1200), 
+        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_west_emnet"),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_rank_request, 1),  #TLD
 
-        # Eowyn
+        # Gálmynë
         (troop_set_slot, "trp_npc4", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc4", slot_troop_morality_value, 4),  
+        (troop_set_slot, "trp_npc4", slot_troop_morality_value, -1),  
         (troop_set_slot, "trp_npc4", slot_troop_2ary_morality_type, tmt_honest), 
-        (troop_set_slot, "trp_npc4", slot_troop_2ary_morality_value, -1),
+        (troop_set_slot, "trp_npc4", slot_troop_2ary_morality_value, 1),
         (troop_set_slot, "trp_npc4", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
         (troop_set_slot, "trp_npc4", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc3"),  #Eowyn
-        (troop_set_slot, "trp_npc4", slot_troop_home, "p_town_minas_tirith"),
-        (troop_set_slot, "trp_npc4", slot_troop_payment_request, 300), 
+        (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc8"),  #Dale NPC
+        (troop_set_slot, "trp_npc4", slot_troop_home, "p_ford_brown_lands"), #Field of Celebrant ford
+        (troop_set_slot, "trp_npc4", slot_troop_payment_request, 3000), 
         (troop_set_slot, "trp_npc4", slot_troop_cur_center, "p_town_edoras"),  #TLD
-        (troop_set_slot, "trp_npc4", slot_troop_rank_request, 3),  #TLD
+        (troop_set_slot, "trp_npc4", slot_troop_rank_request, 4),  #TLD
 
         # Glorfindel
-        (troop_set_slot, "trp_npc5", slot_troop_morality_type, tmt_egalitarian),
+        (troop_set_slot, "trp_npc5", slot_troop_morality_type, tmt_honest),
         (troop_set_slot, "trp_npc5", slot_troop_morality_value, 3),
         (troop_set_slot, "trp_npc5", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc5", slot_troop_2ary_morality_value, 0),
-        (troop_set_slot, "trp_npc5", slot_troop_personalityclash_object, "trp_npc7"), #Dwarf NPC
+        (troop_set_slot, "trp_npc5", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
         (troop_set_slot, "trp_npc5", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc5", slot_troop_personalitymatch_object, "trp_npc6"),  #Ulfas
-        (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_minas_tirith"),
+        (troop_set_slot, "trp_npc5", slot_troop_personalitymatch_object, "trp_npc9"),  #Gulm/none
+        (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_isengard"),
         (troop_set_slot, "trp_npc5", slot_troop_payment_request, 400),
         (troop_set_slot, "trp_npc5", slot_troop_cur_center, "p_town_cerin_amroth"),  #TLD
-        (troop_set_slot, "trp_npc5", slot_troop_rank_request, 5),  #TLD
+        (troop_set_slot, "trp_npc5", slot_troop_rank_request, 6),  #TLD
 
-        # Miriel
+        # Luevanna
         (troop_set_slot, "trp_npc6", slot_troop_morality_type, tmt_humanitarian),
         (troop_set_slot, "trp_npc6", slot_troop_morality_value, 2),
         (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_type, tmt_honest),
@@ -14902,7 +14903,7 @@ scripts = [
         (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc6", slot_troop_payment_request, 0),
         (troop_set_slot, "trp_npc6", slot_troop_cur_center, "p_town_thranduils_halls"),  #TLD
-        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 2),  #TLD
+        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 1),  #TLD
 
         # Dwarf NPC
         (troop_set_slot, "trp_npc7", slot_troop_morality_type, tmt_egalitarian),
@@ -14911,13 +14912,13 @@ scripts = [
         (troop_set_slot, "trp_npc7", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc7", slot_troop_personalityclash_object, "trp_npc5"), #Glorfindel
         (troop_set_slot, "trp_npc7", slot_troop_personalityclash2_object, "trp_npc6"),  #Ulfas
-        (troop_set_slot, "trp_npc7", slot_troop_personalitymatch_object, "trp_npc8"),  #Beorn NPC
+        (troop_set_slot, "trp_npc7", slot_troop_personalitymatch_object, "trp_npc8"),  #Dale NPC
         (troop_set_slot, "trp_npc7", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc7", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc7", slot_troop_cur_center, "p_town_erebor"),  #TLD
         (troop_set_slot, "trp_npc7", slot_troop_rank_request, 1),  #TLD
 
-        # Beorn NPC
+        # Dale NPC
         (troop_set_slot, "trp_npc8", slot_troop_morality_type, tmt_aristocratic),
         (troop_set_slot, "trp_npc8", slot_troop_morality_value, 3),
         (troop_set_slot, "trp_npc8", slot_troop_2ary_morality_type, -1),
@@ -14927,8 +14928,8 @@ scripts = [
         (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc7"),  #Dwarf NPC
         (troop_set_slot, "trp_npc8", slot_troop_home, "p_town_minas_tirith"),
         (troop_set_slot, "trp_npc8", slot_troop_payment_request, 500),
-        (troop_set_slot, "trp_npc8", slot_troop_cur_center, "p_town_beorn_house"),  #TLD
-        (troop_set_slot, "trp_npc8", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc8", slot_troop_cur_center, "p_town_dale"),  #TLD
+        (troop_set_slot, "trp_npc8", slot_troop_rank_request, 0),  #TLD
 
 #evil companions
         # Gulm
@@ -14937,7 +14938,7 @@ scripts = [
         (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_type, tmt_honest),
         (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_value, 1),
         (troop_set_slot, "trp_npc9", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc9", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc9", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc9", slot_troop_personalitymatch_object, "trp_npc10"),  #Durgash
         (troop_set_slot, "trp_npc9", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc9", slot_troop_payment_request, 300),
@@ -14950,7 +14951,7 @@ scripts = [
         (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_type, tmt_egalitarian),
         (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_value, 1),
         (troop_set_slot, "trp_npc10", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc10", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc10", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc10", slot_troop_personalitymatch_object, "trp_npc9"),  #Gulm
         (troop_set_slot, "trp_npc10", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc10", slot_troop_payment_request, 200),
@@ -14963,7 +14964,7 @@ scripts = [
         (troop_set_slot, "trp_npc11", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc11", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc11", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc11", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc11", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc11", slot_troop_personalitymatch_object, "trp_npc12"),  #Gorbag
         (troop_set_slot, "trp_npc11", slot_troop_home, "p_town_isengard"),
         (troop_set_slot, "trp_npc11", slot_troop_payment_request, 100),
@@ -14976,7 +14977,7 @@ scripts = [
         (troop_set_slot, "trp_npc12", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc12", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc12", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc12", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc12", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc12", slot_troop_personalitymatch_object, "trp_npc11"),  #Ufthak
         (troop_set_slot, "trp_npc12", slot_troop_home, "p_town_isengard"),
         (troop_set_slot, "trp_npc12", slot_troop_payment_request, 0),
@@ -14989,7 +14990,7 @@ scripts = [
         (troop_set_slot, "trp_npc13", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc13", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc13", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc13", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc13", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc13", slot_troop_personalitymatch_object, "trp_npc14"), #Umbar NPC
         (troop_set_slot, "trp_npc13", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc13", slot_troop_payment_request, 300),
@@ -15002,7 +15003,7 @@ scripts = [
         (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_type, tmt_egalitarian),
         (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_value, -1),
         (troop_set_slot, "trp_npc14", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
-        (troop_set_slot, "trp_npc14", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc14", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc14", slot_troop_personalitymatch_object, "trp_npc13"), #Harad NPC
         (troop_set_slot, "trp_npc14", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc14", slot_troop_payment_request, 400),
@@ -15014,8 +15015,8 @@ scripts = [
         (troop_set_slot, "trp_npc15", slot_troop_morality_value, 2),
         (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_type, tmt_honest),
         (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_value, 1),
-        (troop_set_slot, "trp_npc15", slot_troop_personalityclash_object, "trp_npc1"), #Gulm/none
-        (troop_set_slot, "trp_npc15", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc15", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
+        (troop_set_slot, "trp_npc15", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc15", slot_troop_personalitymatch_object, "trp_npc16"), #Rhun NPC
         (troop_set_slot, "trp_npc15", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc15", slot_troop_payment_request, 300),
@@ -15027,15 +15028,15 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_morality_value, 4),
         (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_type, tmt_humanitarian),
         (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_value, -1),
-        (troop_set_slot, "trp_npc16", slot_troop_personalityclash_object, "trp_npc1"), #Gulm/none
-        (troop_set_slot, "trp_npc16", slot_troop_personalityclash2_object, "trp_npc2"), #Gondor NPC/none
+        (troop_set_slot, "trp_npc16", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
+        (troop_set_slot, "trp_npc16", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc15"),  #Moria NPC
         (troop_set_slot, "trp_npc16", slot_troop_home, "p_town_minas_morgul"),
         (troop_set_slot, "trp_npc16", slot_troop_payment_request, 200),
         (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_north_rhun_camp"),  #TLD
         (troop_set_slot, "trp_npc16", slot_troop_rank_request, 1),  #TLD
 
-        (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro),
+        (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro), # 131-101=30 strings per NPC 
 
         (store_sub, ":total_companions", companions_end, companions_begin),
         (try_for_range, ":npc", companions_begin, companions_end),

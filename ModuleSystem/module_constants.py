@@ -669,8 +669,8 @@ slot_troop_signup_2 = 111
 slot_troop_signup_response_1 = 112
 slot_troop_signup_response_2 = 113
 
-slot_troop_mentions_payment = 114 #Not actually used
-slot_troop_payment_response = 115 #Not actually used
+slot_troop_mentions_payment = 114
+slot_troop_payment_response = 115
 slot_troop_morality_speech   = 116
 slot_troop_2ary_morality_speech = 117
 slot_troop_personalityclash_speech = 118
@@ -679,7 +679,7 @@ slot_troop_personalityclash2_speech = 120
 slot_troop_personalityclash2_speech_b = 121
 slot_troop_personalitymatch_speech = 122
 slot_troop_personalitymatch_speech_b = 123
-slot_troop_retirement_speech = 124
+slot_troop_retirement_speech = 124 #Not actually used
 slot_troop_rehire_speech = 125
 slot_troop_home_intro           = 126
 slot_troop_home_description    = 127
@@ -1478,10 +1478,10 @@ center_list = [
 		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 0),
 	("p_town_pelargir", ["scn_pelargir_center", "scn_gondor_castle_a", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_pelargir", "trp_smith_pelargir", "trp_town_2_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_b"], 
-		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[4,4,4,6,4,8], str_income_low, garrison_limit_med, 0),
+		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0),
 	("p_town_linhir", ["scn_linhir_center", "scn_gondor_castle_b", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_linhir", "trp_smith_linhir", "trp_town_3_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-		["icon_mfc_gondor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,2,8,2,8], str_income_med, garrison_limit_med, 0),
+		["icon_mfc_gondor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 0),
 	("p_town_dol_amroth", ["scn_dol_amroth_center", "scn_dol_amroth_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena"],
 	    ["trp_barman_dolamroth", "trp_smith_dolamroth", "trp_town_4_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_white","trp_walker_man_gondor_blue","trp_walker_woman_gondor_b"], 
 		["icon_mfc_gondor"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,8,3,8,2,5], str_income_med, garrison_limit_med, 0),

@@ -946,7 +946,7 @@ dialogs = [
       (store_sub, reg3, ":rank_needed", ":rank_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0), # not enough?
    ],
-   "It seems that you have not helped my people enough, {playername}. You are {s29} and you need to be {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in these lands.", "close_window", []],
+   "It seems that you have not helped my people enough, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in these lands.", "close_window", []],
 
 # rank ok
   [anyone, "companion_recruit_rank", [ 
@@ -961,9 +961,9 @@ dialogs = [
   [anyone, "companion_recruit_payment", [
       (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
       (store_add, ":dialog_line", "str_npc1_payment", ":npc_offset"),
-      (str_store_string, s5, ":dialog_line"),
       (troop_get_slot, reg3, "$g_talk_troop", slot_troop_payment_request),
       (str_store_party_name, s20, "$g_encountered_party"),
+      (str_store_string, s5, ":dialog_line"),
    ],
    "{s5}", "companion_recruit_payment_response", []],
 
@@ -1035,7 +1035,7 @@ dialogs = [
           ]],
 
   [anyone|plyr, "companion_recruit_backstory_delayed_response", [
-      ],  "I'll let you know if I hear of anything.", "close_window", [
+      ],  "Never mind, another time perhaps.", "close_window", [
           ]],
 
   [anyone, "companion_recruit_signup_confirm", [], "Good! Give me a few moments to prepare and I'll be ready to move.", "close_window",

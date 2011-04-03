@@ -1541,6 +1541,7 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
+   ("camp_mvtest_rank",[],"Increase ambient faction rank.",[(call_script, "script_increase_rank", "$ambient_faction", 100),]),
    # ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
     # (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        # (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -3680,7 +3681,7 @@ game_menus = [
        (ge, "$g_enemy_fit_for_battle",1),
        (this_or_next|le, "$g_friend_fit_for_battle",0),
        (             le, "$playerparty_postbattle_regulars", 0),
-       (str_store_string, s11, "@Battle was lost. Your forces were utterly crushed."),
+       (str_store_string, s11, "@The battle was lost. Your forces were utterly crushed."),
        #(set_background_mesh, "mesh_ui_default_menu_window"),
 	   #(set_background_mesh, "mesh_pic_defeat"),
      (else_try),
@@ -3705,14 +3706,14 @@ game_menus = [
        (str_store_string, s11, "@You have retreated from the fight."),
      (try_end),
 #NPC companion changes begin
-##check for excessive casualties, more forgiving if battle result is good
-     #(try_begin),
-     #   (gt, "$playerparty_prebattle_regulars", 9),
-     #  (store_add, ":divisor", 3, "$g_battle_result"), 
-     #   (store_div, ":half_of_prebattle_regulars", "$playerparty_prebattle_regulars", ":divisor"),
-     #   (lt, "$playerparty_postbattle_regulars", ":half_of_prebattle_regulars"),
-     #   (call_script, "script_objectionable_action", tmt_egalitarian, "str_excessive_casualties"),
-     #(try_end),
+#check for excessive casualties, more forgiving if battle result is good
+     (try_begin),
+       (gt, "$playerparty_prebattle_regulars", 9),
+       (store_add, ":divisor", 3, "$g_battle_result"), 
+       (store_div, ":half_of_prebattle_regulars", "$playerparty_prebattle_regulars", ":divisor"),
+       (lt, "$playerparty_postbattle_regulars", ":half_of_prebattle_regulars"),
+       (call_script, "script_objectionable_action", tmt_egalitarian, "str_excessive_casualties"),
+     (try_end),
 #NPC companion changes end
 
      (call_script, "script_print_casualties_to_s0", "p_player_casualties", 0),

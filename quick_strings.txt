@@ -1,4 +1,4 @@
-692
+690
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -77,9 +77,7 @@ qstr_Familiar_to_{s5} Familiar_to_{s5}
 qstr_Known_to_{s5} Known_to_{s5}
 qstr_Stranger_to_{s5} Stranger_to_{s5}
 qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}
-qstr_.0 .0
-qstr_. .
-qstr_Earned_{reg12}_influ Earned_{reg12}_influence_with_{s11}_(+{reg10}{s10}{reg11}_rank)
+qstr_Earned_{reg11}_rank_ Earned_{reg11}_rank_points_and_{reg12}_influence_with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their
@@ -467,7 +465,7 @@ qstr_You_have_engaged_{s1 You_have_engaged_{s1}_while_they_were_raiding_{s3}.
 qstr_You_were_caught_by_{ You_were_caught_by_{s1}_while_your_forces_were_raiding_{s3}.
 qstr_CHEAT:_healed!!! CHEAT:_healed!!!
 qstr_You_were_victorious! You_were_victorious!
-qstr_Battle_was_lost._You Battle_was_lost._Your_forces_were_utterly_crushed.
+qstr_The_battle_was_lost. The_battle_was_lost._Your_forces_were_utterly_crushed.
 qstr_Your_companions_carr Your_companions_carry_you_away_from_the_fighting.
 qstr_You_have_defeated_th You_have_defeated_the_enemy.
 qstr_You_have_retreated_f You_have_retreated_from_the_fight.
