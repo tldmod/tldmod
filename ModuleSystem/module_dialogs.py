@@ -838,7 +838,7 @@ dialogs = [
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1),
    ],
-   "Please do not waste any more of my time today, {sir/madame}. Perhaps we shall meet again in our travels.", "close_window", [
+   "Please do not waste any more of my time today. Perhaps we shall meet again.", "close_window", [
        ]],
 
 
@@ -1218,6 +1218,239 @@ dialogs = [
      (troop_get_type, reg3, "$temp"),
      (assign, "$g_center_taken_by_player_faction", -1),
      ]],
+#Morality objections
+  [anyone, "event_triggered", [
+                     (store_conversation_troop, "$map_talk_troop"),
+                     (eq, "$map_talk_troop", "$npc_with_grievance"), 
+                     (eq, "$npc_map_talk_context", slot_troop_morality_state), 
+
+                     (try_begin),
+                         (eq, "$npc_grievance_slot", slot_troop_morality_state),
+                         (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_morality_speech),
+                     (else_try),
+                         (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_2ary_morality_speech),
+                     (try_end),
+                     (str_store_string, 21, "$npc_grievance_string"),
+                     (str_store_string, 5, ":speech"),
+                     ],
+   "{s5}", "companion_objection_response", [
+                    (assign, "$npc_with_grievance", 0),
+       ]],
+
+
+
+  [anyone|plyr, "companion_objection_response", [
+                    (eq, "$npc_praise_not_complaint", 1),
+      ], "Thank you, I appreciate your support.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", "$npc_grievance_slot", tms_acknowledged),
+          ]],
+
+  [anyone|plyr, "companion_objection_response", [
+                    (eq, "$npc_praise_not_complaint", 0),
+      ], "Hopefully it won't happen again.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", "$npc_grievance_slot", tms_acknowledged),
+          ]],
+
+  [anyone|plyr, "companion_objection_response", [
+                    (eq, "$npc_praise_not_complaint", 0),
+      ],  "Your objection is noted, but I have more important things on my mind.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", "$npc_grievance_slot", tms_dismissed),
+                    (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_morality_penalties),
+                    (val_add, ":grievance", 10),
+                    (troop_set_slot, "$map_talk_troop", slot_troop_morality_penalties, ":grievance"),
+          ]],
+
+
+##  [anyone|plyr, "companion_objection_response", [
+##      ],  "I prefer my followers to keep their opinions to themselves.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", "$npc_grievance_slot", tms_dismissed),
+##                    (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_morality_penalties),
+##                    (val_add, ":grievance", 10),
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_morality_penalties, ":grievance"),
+##                    (assign, "$disable_npc_complaints", 1),
+##          ]],
+
+
+
+# Personality clash 2 objections
+  [anyone, "event_triggered", [
+                     (store_conversation_troop, "$map_talk_troop"),
+                     (eq, "$map_talk_troop", "$npc_with_personality_clash_2"), 
+                     (eq, "$npc_map_talk_context", slot_troop_personalityclash2_state), 
+
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash2_speech),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+                     ],
+   "{s5}", "companion_personalityclash2_b", [
+                    (assign, "$npc_with_personality_clash_2", 0),
+                    (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_personalityclash_penalties),
+                    (val_add, ":grievance", 5),
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_penalties, ":grievance"),
+       ]],
+
+  [anyone, "companion_personalityclash2_b", [
+      ],  "{s5}", "companion_personalityclash2_response", [
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash2_speech_b),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+          ]],
+
+
+
+  [anyone|plyr, "companion_personalityclash2_response", [
+      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
+      (str_store_troop_name, s11, ":object"),
+      (troop_get_type, reg11, ":object"),
+      (try_begin),
+        (gt, reg11, 1), #MV: non-humans are male
+        (assign, reg11, 0),
+      (try_end),
+      ],  "I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, pclash_penalty_to_self),
+          ]],
+
+  [anyone|plyr, "companion_personalityclash2_response", [
+      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
+      (str_store_troop_name, s11, ":object"),
+      (troop_get_type, reg11, ":object"),
+      (try_begin),
+        (gt, reg11, 1), #MV: non-humans are male
+        (assign, reg11, 0),
+      (try_end),
+      ],  "You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, pclash_penalty_to_other),
+          ]],
+  
+  [anyone|plyr, "companion_personalityclash2_response", [
+      ],  "I don't have time for petty squabbles.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, pclash_penalty_to_both),
+          ]],
+
+  
+##  [anyone|plyr, "companion_personalityclash2_response", [
+##      ],  "Your grievance is noted. Now fall back in line.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, 1),
+##          ]],
+
+##  [anyone|plyr, "companion_personalityclash2_response", [
+##      ],  "I prefer my followers to keep their opinions to themselves.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash2_state, 1),
+##                    (assign, "$disable_npc_complaints", 1),
+##          ]],
+
+
+
+
+# Personality clash objections
+
+  [anyone, "event_triggered", [
+                     (store_conversation_troop, "$map_talk_troop"),
+                     (eq, "$map_talk_troop", "$npc_with_personality_clash"),
+                     (eq, "$npc_map_talk_context", slot_troop_personalityclash_state), 
+
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash_speech),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+                     ],
+   "{s5}", "companion_personalityclash_b", [
+                    (assign, "$npc_with_personality_clash", 0),
+                    (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_personalityclash_penalties),
+                    (val_add, ":grievance", 5),
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_penalties, ":grievance"),
+       ]],
+
+  [anyone, "companion_personalityclash_b", [
+      ],  "{s5}", "companion_personalityclash_response", [
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash_speech_b),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+          ]],
+
+  [anyone|plyr, "companion_personalityclash_response", [
+      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash_object),
+      (str_store_troop_name, s11, ":object"),
+      (troop_get_type, reg11, ":object"),
+      (try_begin),
+        (gt, reg11, 1), #MV: non-humans are male
+        (assign, reg11, 0),
+      (try_end),
+      ],  "I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_state, pclash_penalty_to_self),
+          ]],
+
+  [anyone|plyr, "companion_personalityclash_response", [
+      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash_object),
+      (str_store_troop_name, s11, ":object"),
+      (troop_get_type, reg11, ":object"),
+      (try_begin),
+        (gt, reg11, 1), #MV: non-humans are male
+        (assign, reg11, 0),
+      (try_end),
+      ],  "You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_state, pclash_penalty_to_other),
+          ]],
+  
+  [anyone|plyr, "companion_personalityclash_response", [
+      ],  "I don't have time for petty squabbles.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_state, pclash_penalty_to_both),
+          ]],
+
+
+##  [anyone|plyr, "companion_personalityclash_response", [
+##      ],  "Your grievance is noted. Now fall back in line.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_state, 1),
+##          ]],
+
+##  [anyone|plyr, "companion_personalityclash_response", [
+##      ],  "I prefer my followers to keep their opinions to themselves.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_personalityclash_state, 1),
+##                    (assign, "$disable_npc_complaints", 1),
+##          ]],
+
+
+
+# Personality match
+
+  [anyone, "event_triggered", [
+                     (eq, "$npc_map_talk_context", slot_troop_personalitymatch_state), 
+                     (store_conversation_troop, "$map_talk_troop"),
+                     (eq, "$map_talk_troop", "$npc_with_personality_match"),
+
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalitymatch_speech),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalitymatch_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+                     ],
+   "{s5}", "companion_personalitymatch_b", [
+                    (assign, "$npc_with_personality_match", 0),
+       ]],
+
+  [anyone, "companion_personalitymatch_b", [
+                     (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalitymatch_speech_b),
+                     (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalitymatch_object),
+                     (str_store_troop_name, 11, ":object"),
+                     (str_store_string, 5, ":speech"),
+                     ],
+   "{s5}", "companion_personalitymatch_response", [
+       ]],
+
+
+  [anyone|plyr, "companion_personalitymatch_response", [
+      ],  "Very good.", "close_window", [
+                    (troop_set_slot, "$map_talk_troop", slot_troop_personalitymatch_state, 1),
+          ]],
+
+##  [anyone|plyr, "companion_personalitymatch_response", [
+##      ],  "I prefer my followers to keep their opinions to themselves.", "close_window", [
+##                    (troop_set_slot, "$map_talk_troop", slot_troop_personalitymatch_state, 1),
+##                    (assign, "$disable_npc_complaints", 1),
+##          ]],
+
 
 #TLD: companions complain about their home faction getting demolished
   [anyone, "event_triggered", [

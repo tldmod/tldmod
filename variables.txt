@@ -495,3 +495,7 @@ faction_evil
 cbadvantage
 g_mvtest_faction
 playerparty_prebattle_regulars
+npc_grievance_string
+npc_grievance_slot
+npc_praise_not_complaint
+personality_clash_after_24_hrs

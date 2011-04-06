@@ -1,4 +1,4 @@
-690
+692
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -253,6 +253,8 @@ qstr_A_messenger_post_let A_messenger_post_lets_the_inhabitants_send_you_a_messa
 qstr_Prison_Tower Prison_Tower
 qstr_A_prison_tower_reduc A_prison_tower_reduces_the_chance_of_captives_held_here_running_away_successfully.
 qstr_Prosperity_of_{s2}_h Prosperity_of_{s2}_has_changed_from_{s3}_to_{s4}.
+qstr_ERROR:_Companion_str ERROR:_Companion_strings_actual/needed:_{reg1}/{reg2}
+qstr_{s4}_looks_upset. {s4}_looks_upset.
 qstr_your_party your_party
 qstr_{reg0?One_of_your_pr {reg0?One_of_your_prisoners,_:}{s1}_of_{s3}_has_escaped_from_captivity!
 qstr_You_brought_{reg3}_h You_brought_{reg3}_heads_of_cattle_to_{s1}.

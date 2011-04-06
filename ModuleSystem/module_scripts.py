@@ -911,8 +911,7 @@ scripts = [
     (set_fixed_point_multiplier, 100),
     (store_script_param_1, ":party"),
     (party_get_position, pos1, ":party"),
-    (position_set_x,pos2,3524),(position_set_y,pos2,-8419),(position_set_z,pos2,0), # MV: new fangorn center, should be in parties though
-    #(position_set_x,pos2,6647),(position_set_y,pos2,-10644),(position_set_z,pos2,0), # fangorn center
+    (party_get_position, pos2, "p_fangorn_center"),
     (get_distance_between_positions, ":dist", pos1, pos2),
     (party_get_current_terrain, ":terrain_type", ":party"),
 # (assign, reg0, ":dist"),
@@ -1022,7 +1021,7 @@ scripts = [
 
 #NPC companion changes begin
       (call_script, "script_initialize_npcs"),
-      (assign, "$disable_npc_complaints", 1),
+      (assign, "$disable_npc_complaints", 0), #MV: back to 0
 #NPC companion changes end
 
 # Setting book intelligence requirements
@@ -14873,7 +14872,7 @@ scripts = [
         (troop_set_slot, "trp_npc4", slot_troop_2ary_morality_value, 1),
         (troop_set_slot, "trp_npc4", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
         (troop_set_slot, "trp_npc4", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc8"),  #Dale NPC
+        (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc8"),  #Faniul
         (troop_set_slot, "trp_npc4", slot_troop_home, "p_ford_brown_lands"), #Field of Celebrant ford
         (troop_set_slot, "trp_npc4", slot_troop_payment_request, 3000), 
         (troop_set_slot, "trp_npc4", slot_troop_cur_center, "p_town_edoras"),  #TLD
@@ -14888,46 +14887,46 @@ scripts = [
         (troop_set_slot, "trp_npc5", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc5", slot_troop_personalitymatch_object, "trp_npc9"),  #Gulm/none
         (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_isengard"),
-        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 400),
-        (troop_set_slot, "trp_npc5", slot_troop_cur_center, "p_town_cerin_amroth"),  #TLD
-        (troop_set_slot, "trp_npc5", slot_troop_rank_request, 6),  #TLD
+        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 5000),
+        (troop_set_slot, "trp_npc5", slot_troop_cur_center, "p_town_caras_galadhon"),  #TLD
+        (troop_set_slot, "trp_npc5", slot_troop_rank_request, 7),  #TLD
 
         # Luevanna
-        (troop_set_slot, "trp_npc6", slot_troop_morality_type, tmt_humanitarian),
-        (troop_set_slot, "trp_npc6", slot_troop_morality_value, 2),
-        (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_type, tmt_honest),
-        (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_value, 1),
-        (troop_set_slot, "trp_npc6", slot_troop_personalityclash_object, "trp_npc7"), #Dwarf NPC
+        (troop_set_slot, "trp_npc6", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc6", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc6", slot_troop_2ary_morality_value, 0),
+        (troop_set_slot, "trp_npc6", slot_troop_personalityclash_object, "trp_npc7"), #Kíli
         (troop_set_slot, "trp_npc6", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc6", slot_troop_personalitymatch_object, "trp_npc5"),  #Glorfindel
-        (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_minas_tirith"),
+        (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_dol_guldur"),
         (troop_set_slot, "trp_npc6", slot_troop_payment_request, 0),
         (troop_set_slot, "trp_npc6", slot_troop_cur_center, "p_town_thranduils_halls"),  #TLD
-        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 0),  #TLD
 
-        # Dwarf NPC
-        (troop_set_slot, "trp_npc7", slot_troop_morality_type, tmt_egalitarian),
+        # Kíli
+        (troop_set_slot, "trp_npc7", slot_troop_morality_type, tmt_aristocratic),
         (troop_set_slot, "trp_npc7", slot_troop_morality_value, 3),
         (troop_set_slot, "trp_npc7", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc7", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc7", slot_troop_personalityclash_object, "trp_npc5"), #Glorfindel
-        (troop_set_slot, "trp_npc7", slot_troop_personalityclash2_object, "trp_npc6"),  #Ulfas
-        (troop_set_slot, "trp_npc7", slot_troop_personalitymatch_object, "trp_npc8"),  #Dale NPC
-        (troop_set_slot, "trp_npc7", slot_troop_home, "p_town_minas_tirith"),
-        (troop_set_slot, "trp_npc7", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc7", slot_troop_personalityclash2_object, "trp_npc6"),  #Luevanna
+        (troop_set_slot, "trp_npc7", slot_troop_personalitymatch_object, "trp_npc8"),  #Faniul
+        (troop_set_slot, "trp_npc7", slot_troop_home, "p_town_moria"),
+        (troop_set_slot, "trp_npc7", slot_troop_payment_request, 800),
         (troop_set_slot, "trp_npc7", slot_troop_cur_center, "p_town_erebor"),  #TLD
         (troop_set_slot, "trp_npc7", slot_troop_rank_request, 1),  #TLD
 
-        # Dale NPC
-        (troop_set_slot, "trp_npc8", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc8", slot_troop_morality_value, 3),
+        # Faniul
+        (troop_set_slot, "trp_npc8", slot_troop_morality_type, tmt_egalitarian),
+        (troop_set_slot, "trp_npc8", slot_troop_morality_value, 4),
         (troop_set_slot, "trp_npc8", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc8", slot_troop_2ary_morality_value, 0),
-        (troop_set_slot, "trp_npc8", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
+        (troop_set_slot, "trp_npc8", slot_troop_personalityclash_object, "trp_npc3"), #Ulfas
         (troop_set_slot, "trp_npc8", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
-        (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc7"),  #Dwarf NPC
-        (troop_set_slot, "trp_npc8", slot_troop_home, "p_town_minas_tirith"),
-        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 500),
+        (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc7"),  #Kíli
+        (troop_set_slot, "trp_npc8", slot_troop_home, "p_town_beorn_house"),
+        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc8", slot_troop_cur_center, "p_town_dale"),  #TLD
         (troop_set_slot, "trp_npc8", slot_troop_rank_request, 0),  #TLD
 
@@ -15036,9 +15035,29 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_north_rhun_camp"),  #TLD
         (troop_set_slot, "trp_npc16", slot_troop_rank_request, 1),  #TLD
 
-        (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro), # 131-101=30 strings per NPC 
+#additional companions        
+        # Dímborn
+        (troop_set_slot, "trp_npc17", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc17", slot_troop_morality_value, 0), 
+        (troop_set_slot, "trp_npc17", slot_troop_2ary_morality_type, -1), 
+        (troop_set_slot, "trp_npc17", slot_troop_2ary_morality_value, 0),
+        (troop_set_slot, "trp_npc17", slot_troop_personalityclash_object, "trp_npc9"), #Gulm/none
+        (troop_set_slot, "trp_npc17", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
+        (troop_set_slot, "trp_npc17", slot_troop_personalitymatch_object, "trp_npc6"),  #Luevanna
+        (troop_set_slot, "trp_npc17", slot_troop_home, "p_town_cerin_dolen"),
+        (troop_set_slot, "trp_npc17", slot_troop_payment_request, 400),
+        (troop_set_slot, "trp_npc17", slot_troop_cur_center, "p_town_woodsmen_village"),  #TLD
+        (troop_set_slot, "trp_npc17", slot_troop_rank_request, 0),  #TLD
 
+        (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro), # 131-101=30 strings per NPC 
         (store_sub, ":total_companions", companions_end, companions_begin),
+        (try_begin),
+          (store_sub, reg1, "str_companion_strings_end", "str_npc1_intro"), #total actual strings
+          (store_mul, reg2, "$number_of_npc_slots", ":total_companions"), #total strings needed
+          (neq, reg1, reg2),
+          (display_message, "@ERROR: Companion strings actual/needed: {reg1}/{reg2}", 0xFFFF2222),
+        (try_end),
+        
         (try_for_range, ":npc", companions_begin, companions_end),
             (try_for_range, ":slot_addition", 0, "$number_of_npc_slots"),
                 (store_add, ":slot", ":slot_addition", slot_troop_intro),
@@ -15086,7 +15105,100 @@ scripts = [
 
   ("objectionable_action",
     [
-    ]),
+        (store_script_param_1, ":action_type"),
+        (store_script_param_2, ":action_string"),
+
+#        (str_store_string, 12, ":action_string"),
+#        (display_message, "@Objectionable action check: {s12}"),
+
+        (assign, ":grievance_minimum", -2),
+        (assign, ":npc_last_displayed", 0),
+        (try_for_range, ":npc", companions_begin, companions_end),
+            (main_party_has_troop, ":npc"),
+
+###Primary morality check
+            (try_begin),
+                (troop_slot_eq, ":npc", slot_troop_morality_type, ":action_type"),
+                (troop_get_slot, ":value", ":npc", slot_troop_morality_value),
+                (try_begin),
+                    (troop_slot_eq, ":npc", slot_troop_morality_state, tms_acknowledged),
+# npc is betrayed, major penalty to player honor and morale
+                    (troop_get_slot, ":grievance", ":npc", slot_troop_morality_penalties),
+                    (val_mul, ":value", 2),
+                    (val_add, ":grievance", ":value"),
+                    (troop_set_slot, ":npc", slot_troop_morality_penalties, ":grievance"),
+                (else_try),
+                    (this_or_next|troop_slot_eq, ":npc", slot_troop_morality_state, tms_dismissed),
+                        (eq, "$disable_npc_complaints", 1),
+# npc is quietly disappointed
+                    (troop_get_slot, ":grievance", ":npc", slot_troop_morality_penalties),
+                    (val_add, ":grievance", ":value"),
+                    (troop_set_slot, ":npc", slot_troop_morality_penalties, ":grievance"),
+                (else_try),
+# npc raises the issue for the first time
+                    (troop_slot_eq, ":npc", slot_troop_morality_state, tms_no_problem),
+                    (gt, ":value", ":grievance_minimum"),
+                    (assign, "$npc_with_grievance", ":npc"),
+                    (assign, "$npc_grievance_string", ":action_string"),
+                    (assign, "$npc_grievance_slot", slot_troop_morality_state),
+                    (assign, ":grievance_minimum", ":value"),
+                    (assign, "$npc_praise_not_complaint", 0),
+                    (try_begin),
+                        (lt, ":value", 0),
+                        (assign, "$npc_praise_not_complaint", 1),
+                    (try_end),
+                (try_end),
+
+
+
+###Secondary morality check
+            (else_try),
+                (troop_slot_eq, ":npc", slot_troop_2ary_morality_type, ":action_type"),
+                (troop_get_slot, ":value", ":npc", slot_troop_2ary_morality_value),
+                (try_begin),
+                    (troop_slot_eq, ":npc", slot_troop_2ary_morality_state, tms_acknowledged),
+# npc is betrayed, major penalty to player honor and morale
+                    (troop_get_slot, ":grievance", ":npc", slot_troop_morality_penalties),
+                    (val_mul, ":value", 2),
+                    (val_add, ":grievance", ":value"),
+                    (troop_set_slot, ":npc", slot_troop_morality_penalties, ":grievance"),
+                (else_try),
+                    (this_or_next|troop_slot_eq, ":npc", slot_troop_2ary_morality_state, tms_dismissed),
+                        (eq, "$disable_npc_complaints", 1),
+# npc is quietly disappointed
+                    (troop_get_slot, ":grievance", ":npc", slot_troop_morality_penalties),
+                    (val_add, ":grievance", ":value"),
+                    (troop_set_slot, ":npc", slot_troop_morality_penalties, ":grievance"),
+                (else_try),
+# npc raises the issue for the first time
+                    (troop_slot_eq, ":npc", slot_troop_2ary_morality_state, tms_no_problem),
+                    (gt, ":value", ":grievance_minimum"),
+                    (assign, "$npc_with_grievance", ":npc"),
+                    (assign, "$npc_grievance_string", ":action_string"),
+                    (assign, "$npc_grievance_slot", slot_troop_2ary_morality_state),
+                    (assign, ":grievance_minimum", ":value"),
+                    (assign, "$npc_praise_not_complaint", 0),
+                    (try_begin),
+                        (lt, ":value", 0),
+                        (assign, "$npc_praise_not_complaint", 1),
+                    (try_end),
+                (try_end),
+            (try_end),
+
+            (try_begin),
+                (gt, "$npc_with_grievance", 0),
+                (eq, "$npc_praise_not_complaint", 0),
+                (neq, "$npc_with_grievance", ":npc_last_displayed"),                
+                (str_store_troop_name, 4, "$npc_with_grievance"),
+                (display_message, "@{s4} looks upset."),
+                (assign, ":npc_last_displayed", "$npc_with_grievance"),
+            (try_end),
+
+        (try_end),        
+
+
+     ]),
+
 
   ("post_battle_personality_clash_check",
 [

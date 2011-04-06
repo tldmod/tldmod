@@ -19,9 +19,9 @@ pt_troublesome_bandits Troublesome_Bandits 2533274790658056 0 2 494 421 14 55 0 
 pt_bandits_awaiting_ransom Bandits_Awaiting_Ransom 2533274790789128 0 26 494 421 24 58 0 427 1 1 1 -1 -1 -1 -1 
 pt_kidnapped_girl Kidnapped_Girl 262153 0 26 7 427 1 1 0 -1 -1 -1 -1 -1 
 pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 429 3 8 0 -1 -1 -1 -1 
-pt_spy_partners Unremarkable_Travellers 844424930459650 0 26 7 728 1 1 0 431 5 11 0 -1 -1 -1 -1 
+pt_spy_partners Unremarkable_Travellers 844424930459650 0 26 7 729 1 1 0 431 5 11 0 -1 -1 -1 -1 
 pt_runaway_serfs Runaway_Serfs 2251799814012934 0 26 7 25 6 7 0 429 3 3 0 -1 -1 -1 -1 
-pt_spy Ordinary_beorning_vale_man 844424930459650 0 26 7 727 1 1 0 -1 -1 -1 -1 -1 
+pt_spy Ordinary_beorning_vale_man 844424930459650 0 26 7 728 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
 pt_forager_party Foraging_Party 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_scout_party Scouts 281474980904962 0 1 494 -1 -1 -1 -1 -1 -1 
@@ -86,15 +86,15 @@ pt_rohan_company Rohan_Company 30 0 5 238 239 25 25 0 230 25 25 0 223 25 25 0 24
 pt_imladris_company Rivendell_Company 52 0 9 238 202 20 33 0 203 20 33 0 204 20 33 0 205 3 6 0 392 1 1 0 -1 
 pt_lorien_company Lothlorien_Company 35 0 8 238 174 30 30 0 175 30 30 0 178 30 30 0 179 5 5 0 176 5 5 0 388 1 1 0 
 pt_woodelf_company Mirkwood_Company 38 0 10 238 191 21 22 0 191 21 22 0 184 21 22 0 185 21 22 0 186 8 12 0 -1 
-pt_dale_company Dale_Company 2 0 11 238 52 20 20 0 53 20 20 0 55 20 20 0 59 20 20 0 63 20 20 0 561 1 1 0 
-pt_dwarf_company Dwarven_Company 26 0 4 238 85 25 25 0 92 25 25 0 84 20 20 0 90 20 20 0 95 10 10 0 562 1 1 0 
+pt_dale_company Dale_Company 2 0 11 238 52 20 20 0 53 20 20 0 55 20 20 0 59 20 20 0 63 20 20 0 562 1 1 0 
+pt_dwarf_company Dwarven_Company 26 0 4 238 85 25 25 0 92 25 25 0 84 20 20 0 90 20 20 0 95 10 10 0 563 1 1 0 
 pt_gondor_elite_company Gondor_Elite_Company 25 0 3 238 107 15 30 0 116 15 30 0 120 15 30 0 110 15 30 0 412 1 1 0 -1 
 pt_rohan_elite_company Rohan_Elite_Company 31 0 5 238 240 10 20 0 231 10 20 0 224 10 20 0 227 10 20 0 225 10 20 0 395 1 1 0 
 pt_imladris_elite_company Rivendell_Elite_Company 29 0 9 238 205 25 50 0 207 25 50 0 392 1 1 0 -1 -1 -1 
 pt_lorien_elite_company Lothlorien_Elite_Company 36 0 8 238 171 13 25 0 176 13 25 0 170 13 25 0 179 13 25 0 387 1 1 0 -1 
 pt_woodelf_elite_company Mirkwood_Elite_Company 39 0 10 238 192 20 40 0 186 20 40 0 390 0 0 0 -1 -1 -1 
-pt_dale_elite_company Dale_Elite_Company 2 0 11 238 59 13 25 0 56 13 25 0 63 13 25 0 53 13 25 0 561 13 25 0 -1 
-pt_dwarf_elite_company Dwarven_Elite_Company 26 0 4 238 84 18 34 0 90 18 34 0 95 18 34 0 562 1 1 0 -1 -1 
+pt_dale_elite_company Dale_Elite_Company 2 0 11 238 59 13 25 0 56 13 25 0 63 13 25 0 53 13 25 0 562 13 25 0 -1 
+pt_dwarf_elite_company Dwarven_Elite_Company 26 0 4 238 84 18 34 0 90 18 34 0 95 18 34 0 563 1 1 0 -1 -1 
 pt_gondor_caravan Gondor_Caravan 562949953421368 0 3 14 108 15 15 0 105 15 15 0 118 15 15 0 114 10 10 0 430 1 1 0 -1 
 pt_rohan_caravan Rohan_Caravan 562949953421369 0 5 14 238 15 15 0 229 15 15 0 222 15 15 0 430 1 1 0 -1 -1 
 pt_imladris_caravan Rivendell_Caravan 562949953421385 0 9 14 203 20 20 0 199 20 20 0 207 10 10 0 430 1 1 0 -1 -1 
@@ -117,7 +117,7 @@ pt_swadian_patrol Swadian_Patrol 844424934326274 0 3 238 117 8 13 0 104 8 20 0 1
 pt_vaegir_patrol Vaegir_Patrol 562949957615619 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_swadian_war_party Swadian_War_Party 1407374887747586 0 3 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_vaegir_war_party Vaegir_War_Party 1407374887747587 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
-pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 764 4 20 0 -1 -1 -1 -1 
+pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 765 4 20 0 -1 -1 -1 -1 
 pt_kingdom_hero_party War_Party 4259844 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_war_party Gondor_War_Party 844424930131993 0 3 238 107 8 36 0 124 15 20 0 114 15 35 0 119 8 13 0 109 8 20 0 115 5 35 0 
 pt_gondor_allies_war_party Gondor_Allies_War_Party 844424930132007 0 3 238 163 8 13 0 162 8 20 0 161 8 16 0 148 5 20 0 159 4 15 0 154 4 15 0 
