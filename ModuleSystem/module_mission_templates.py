@@ -48,6 +48,15 @@ common_battle_tab_press = (ti_tab_pressed, 0, 0, [],
       (eq, "$battle_won", 1),
       (call_script, "script_count_mission_casualties_from_agents"),
       (finish_mission,0),
+    (else_try), #MV added this section
+       (main_hero_fallen),
+       (assign, "$pin_player_fallen", 1),
+       (str_store_string, s5, "str_retreat"),
+       (call_script, "script_simulate_retreat", 10, 20),
+       (assign, "$g_battle_result", -1),
+       (set_mission_result,-1),
+       (call_script, "script_count_mission_casualties_from_agents"),
+       (finish_mission,0),
     (else_try),
       (call_script, "script_cf_check_enemies_nearby"),
       (question_box,"str_do_you_want_to_retreat"),
@@ -107,7 +116,7 @@ common_battle_check_victory_condition = (1, 60, ti_once,
   [ (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
     (all_enemies_defeated, 5),
-    (neg|main_hero_fallen, 0),
+    #(neg|main_hero_fallen, 0), #MV
     (set_mission_result,1),
     (display_message,"str_msg_battle_won"),
     (assign,"$battle_won",1),
@@ -123,6 +132,90 @@ common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(st
 common_battle_order_panel_tick = (0.1, 0, 0, [], [ (eq, "$g_presentation_battle_active", 1),(call_script, "script_update_order_panel_statistics_and_map")])
 common_battle_inventory = (ti_inventory_key_pressed, 0, 0, [],[(display_message,"str_use_baggage_for_inventory")])
 common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_message, "str_cant_use_inventory_now")],[])
+
+## MadVader deathcam begin: this is a simple death camera from kt0, works by moving the player body so mouselook is automatic
+common_init_deathcam = (0, 0, ti_once, [], [(assign, "$tld_camera_on", 0)])
+
+common_start_deathcam = (
+   0, 4, ti_once, # 4 seconds delay before the camera activates
+   [
+     (main_hero_fallen),
+     (eq, "$tld_camera_on", 0),
+   ],
+   [
+      (assign, "$tld_camera_on", 1),
+   ]
+)
+
+common_move_forward_deathcam = (
+   0, 0, 0,
+   [
+      (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_forward),
+      (game_key_is_down, gk_move_forward),
+   ],
+   [
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_y, pos1, 10),
+      (agent_set_position, ":player_agent", pos1),
+   ]
+)
+
+common_move_backward_deathcam = (
+   0, 0, 0,
+   [
+      (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_backward),
+      (game_key_is_down, gk_move_backward),
+   ],
+   [
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_y, pos1, -10),
+      (agent_set_position, ":player_agent", pos1),
+   ]
+)
+
+common_move_left_deathcam = (
+   0, 0, 0,
+   [
+      (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_left),
+      (game_key_is_down, gk_move_left),
+   ],
+   [
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_x, pos1, -10),
+      (agent_set_position, ":player_agent", pos1),
+   ]
+)
+
+common_move_right_deathcam = (
+   0, 0, 0,
+   [
+      (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_right),
+      (game_key_is_down, gk_move_right),
+   ],
+   [
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_x, pos1, 10),
+      (agent_set_position, ":player_agent", pos1),
+   ]
+)
+
+common_deathcam_triggers = [
+ 	common_init_deathcam,
+	common_start_deathcam,
+	common_move_forward_deathcam,
+	common_move_backward_deathcam,
+	common_move_left_deathcam,
+	common_move_right_deathcam,
+	]
+## MadVader deathcam end
 
 
 tld_common_battle_scripts = [
@@ -431,6 +524,7 @@ mission_templates = [
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
      ],
+    common_deathcam_triggers+
     tld_common_battle_scripts+[
       (ti_on_agent_spawn, 0, 0, [],
        [
@@ -496,12 +590,14 @@ mission_templates = [
       (1, 4, ti_once, [(main_hero_fallen)],
           [
               (assign, "$pin_player_fallen", 1),
-              (str_store_string, s5, "str_retreat"),
-              (call_script, "script_simulate_retreat", 10, 20),
-              (assign, "$g_battle_result", -1),
-              (set_mission_result,-1),
-              (call_script, "script_count_mission_casualties_from_agents"),
-              (finish_mission,0)]),
+              (display_message, "str_player_down"), #MV
+              # (str_store_string, s5, "str_retreat"),
+              # (call_script, "script_simulate_retreat", 10, 20),
+              # (assign, "$g_battle_result", -1),
+              # (set_mission_result,-1),
+              # (call_script, "script_count_mission_casualties_from_agents"),
+              # (finish_mission,0)
+          ]),
 
       common_battle_inventory,
 
@@ -1125,6 +1221,7 @@ mission_templates = [
      (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,12,[]),
      (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
      ],
+    common_deathcam_triggers+
     tld_common_battle_scripts+[
       (ti_on_agent_spawn, 0, 0, [],
        [
@@ -1179,12 +1276,14 @@ mission_templates = [
       (1, 4, ti_once, [(main_hero_fallen)],
           [
               (assign, "$pin_player_fallen", 1),
-              (str_store_string, s5, "str_retreat"),
-              (call_script, "script_simulate_retreat", 5, 20),
-              (assign, "$g_battle_result", -1),
-              (set_mission_result, -1),
-              (call_script, "script_count_mission_casualties_from_agents"),
-              (finish_mission,0)]),
+              (display_message, "str_player_down"), #MV
+              # (str_store_string, s5, "str_retreat"),
+              # (call_script, "script_simulate_retreat", 5, 20),
+              # (assign, "$g_battle_result", -1),
+              # (set_mission_result, -1),
+              # (call_script, "script_count_mission_casualties_from_agents"),
+              # (finish_mission,0)
+          ]),
 
       common_battle_order_panel,
       common_battle_order_panel_tick,
@@ -1211,6 +1310,7 @@ mission_templates = [
      (46,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (47,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    common_deathcam_triggers+
     tld_common_battle_scripts+[
       common_battle_mission_start,
       common_battle_tab_press,
@@ -1266,6 +1366,7 @@ mission_templates = [
      (45,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (46,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    common_deathcam_triggers+
     tld_common_battle_scripts+[
       common_battle_mission_start,
       common_battle_tab_press,
@@ -3073,12 +3174,13 @@ mission_templates = [
       (1, 4, ti_once, [(main_hero_fallen)],
           [
               (assign, "$pin_player_fallen", 1),
-              (str_store_string, s5, "str_retreat"),
-              (call_script, "script_simulate_retreat", 5, 20),
-              (assign, "$g_battle_result", -1),
-              (set_mission_result,-1),
-              (call_script, "script_count_mission_casualties_from_agents"),
-              (finish_mission,0)
+              (display_message, "str_player_down"), #MV
+              # (str_store_string, s5, "str_retreat"),
+              # (call_script, "script_simulate_retreat", 5, 20),
+              # (assign, "$g_battle_result", -1),
+              # (set_mission_result,-1),
+              # (call_script, "script_count_mission_casualties_from_agents"),
+              # (finish_mission,0)
               ]),
       
       common_battle_order_panel,
@@ -3136,12 +3238,13 @@ mission_templates = [
       (1, 4, ti_once, [(main_hero_fallen)],
           [
               (assign, "$pin_player_fallen", 1),
-              (str_store_string, s5, "str_retreat"),
-              (call_script, "script_simulate_retreat", 5, 20),
-              (assign, "$g_battle_result", -1),
-              (set_mission_result,-1),
-              (call_script, "script_count_mission_casualties_from_agents"),
-              (finish_mission,0)
+              (display_message, "str_player_down"), #MV
+              # (str_store_string, s5, "str_retreat"),
+              # (call_script, "script_simulate_retreat", 5, 20),
+              # (assign, "$g_battle_result", -1),
+              # (set_mission_result,-1),
+              # (call_script, "script_count_mission_casualties_from_agents"),
+              # (finish_mission,0)
               ]),
 
       common_battle_order_panel,

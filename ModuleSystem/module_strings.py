@@ -324,6 +324,7 @@ strings = [
 
   ("battle_won", "You have won the battle!"),
   ("battle_lost", "You have lost the battle!"),
+  ("player_down", "You have been knocked out, but your troops fight on!"),
 
   ("attack_walls_success", "After a bloody fight, your brave soldiers manage to claim the walls from the enemy."),
   ("attack_walls_failure", "Your soldiers fall in waves as they charge the walls, and the few who remain alive soon rout and run away, never to be seen again."),
