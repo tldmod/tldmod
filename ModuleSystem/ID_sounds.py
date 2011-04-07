@@ -221,5 +221,9 @@ snd_isengard_ambiance = 219
 snd_evilmen_ambiance = 220
 snd_orcs_ambiance = 221
 snd_morgul_ambiance = 222
+snd_gondor_ambiance = 223
+snd_rohan_ambiance = 224
+snd_dwarf_ambiance = 225
+snd_harad_ambiance = 226
 
 

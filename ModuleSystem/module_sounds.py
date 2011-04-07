@@ -284,6 +284,10 @@ sounds = [
  ("evilmen_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_men_loop.ogg"]),
  ("orcs_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["beast_loop.ogg"]),
  ("morgul_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["morgul_loop.ogg"]),
-#TLD end 
+ ("gondor_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["gondor_people_loop.ogg"]),
+ ("rohan_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["rohan_people_loop.ogg"]),
+ ("dwarf_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["dwarf_men_loop.ogg"]),
+ ("harad_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["harad_loop.ogg"]),
+##TLD end 
  
 ]

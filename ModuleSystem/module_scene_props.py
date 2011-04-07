@@ -1834,4 +1834,7 @@ scene_props = [
 ("tunnel_crossing",0,"tunnel_crossing","bo_tunnel_crossing", []),
 ("tunnel_chasm",0,"chasm","bo_chasm", []), 
 
+("rohan_burial_mound",0,"roh_burial_mound","0", []), 
+("tree_huorn",0,"tree_huorn","0", []), 
+
 ]
