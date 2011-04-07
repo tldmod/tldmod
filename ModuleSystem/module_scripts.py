@@ -145,14 +145,52 @@ scripts = [
   # PlayerRewardSystem: call this when enetring a city, or meeting a party, so that player's "gold" will update    (mtarini)
   # param1: encountered party
   ("player_meets_party",[
-	(try_begin),
-	(store_script_param_1, ":party"),
-	(store_faction_of_party, ":fac", ":party"),
-	(is_between, ":fac", kingdoms_begin, kingdoms_end),
-	(neg|eq, "$ambient_faction", ":fac"), # no need to swap anything, already right
-	(store_relation, reg0, "fac_player_faction", ":fac"), (ge, reg0, 0), # only with players	
-	(call_script, "script_set_ambient_faction", ":fac"),
-	(try_end),
+
+    #MV: old code: didn't work too well, should have detected "territory", not opposing party faction
+	# (try_begin),
+	  # (store_script_param_1, ":party"),
+	  # (store_faction_of_party, ":fac", ":party"),
+	  # (is_between, ":fac", kingdoms_begin, kingdoms_end),
+	  # (neq, "$ambient_faction", ":fac"), # no need to swap anything, already right
+	  # (store_relation, reg0, "fac_player_faction", ":fac"),
+      # (ge, reg0, 0), # only with non-enemies	
+	  # (call_script, "script_set_ambient_faction", ":fac"),
+	# (try_end),
+    
+    (store_script_param_1, ":party"),
+    
+    (assign, ":closest_faction", -1),
+    (try_begin),
+      # check if visiting a friendly town, to optimize code
+      (is_between, ":party", centers_begin, centers_end),
+      (store_faction_of_party, ":center_faction", ":party"),
+      (store_relation, ":relation", ":center_faction", "$players_kingdom"),
+      (ge, ":relation", 0),
+      (assign, ":closest_faction", ":center_faction"),
+    (else_try),
+      # find closest friendly active center to determine in whose "territory" is the main party
+      (assign, ":mindist", 100000),
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"),
+        (store_faction_of_party, ":center_faction", ":center_no"),
+        (store_relation, ":relation", ":center_faction", "$players_kingdom"),
+        (ge, ":relation", 0), # friendly center found
+        (store_distance_to_party_from_party, ":dist", "p_main_party", ":center_no"),
+        (lt, ":dist", ":mindist"),
+        (assign, ":mindist", ":dist"),
+        (assign, ":closest_faction", ":center_faction"),
+      (try_end),
+      (try_begin),
+        (eq, ":closest_faction", -1), #all friendly factions defeated, the player is his own faction :)
+        (assign, ":closest_faction", "$players_kingdom"),
+      (try_end),
+    (try_end),
+      
+    (try_begin),
+      (neq, "$ambient_faction", ":closest_faction"), # no need to swap anything, already right
+      (call_script, "script_set_ambient_faction", ":closest_faction"),
+    (try_end),
+
   ]),
 
 # script_add_faction_respoint  
@@ -180,10 +218,10 @@ scripts = [
 	(str_store_faction_name, s10, ":fac"),
 	(try_begin),(gt, ":diff", 0),
 		(assign, reg10, ":diff"),
-		(display_message, "@You gain {reg10} Resource Pts. of {s10}." ),
+		(display_message, "@You gain {reg10} Resource Pts. of {s10}."),
 	(else_try),(gt, ":diff_neg", 0),
 		(assign, reg10, ":diff_neg"),
-		(display_message, "@You used {reg10} Resource Pts. of {s10}." ),
+		(display_message, "@You used {reg10} Resource Pts. of {s10}."),
 	(try_end),
   ]),
   
@@ -211,7 +249,7 @@ scripts = [
 			(faction_set_slot,  ":fac", slot_faction_respoint , 0),
 		(try_end),
 	(try_end),
-	(str_store_faction_name,s3,"$players_kingdom"),(store_troop_gold, reg3, "$g_player_troop"),
+	#(str_store_faction_name,s3,"$players_kingdom"),(store_troop_gold, reg3, "$g_player_troop"),
 	#(display_message, "@debug: player has faction '{s3}' and {reg3} gold"),
 	#]+concatenate_scripts([
 	#	(store_set_slot, faction_init[y][0], slot_faction_influence, 0),
@@ -225,25 +263,26 @@ scripts = [
   # param1: new current faction
   ("set_ambient_faction",[
     (try_begin),
-    (store_script_param_1, ":fac"),
-	(store_troop_gold, ":old_gold", "$g_player_troop"),
-	(faction_get_slot, ":new_gold",  ":fac", slot_faction_respoint),
-	(faction_set_slot, "$ambient_faction", slot_faction_respoint, ":old_gold"),
+      (store_script_param_1, ":fac"),
+	  (store_troop_gold, ":old_gold", "$g_player_troop"),
+	  (faction_get_slot, ":new_gold",  ":fac", slot_faction_respoint),
+	  (faction_set_slot, "$ambient_faction", slot_faction_respoint, ":old_gold"),
 	
-	(neg|eq, "$ambient_faction", ":fac"), # no need to swap, already right
-	(assign, "$ambient_faction", ":fac"),	
+	  (neq, "$ambient_faction", ":fac"), # no need to swap, already right
+	  (assign, "$ambient_faction", ":fac"),	
 	
-	(set_show_messages, 0),
-	(try_begin),(gt, ":old_gold", ":new_gold"),
+	  (set_show_messages, 0),
+	  (try_begin),
+        (gt, ":old_gold", ":new_gold"),
 		(store_sub, ":diff", ":old_gold", ":new_gold"),
 		(troop_remove_gold, "$g_player_troop", ":diff"),
-	(else_try),
+	  (else_try),
 		(store_sub, ":diff", ":new_gold", ":old_gold"),
 		(troop_add_gold, "$g_player_troop", ":diff"),
-	(try_end),
-	(set_show_messages, 1),
+	  (try_end),
+	  (set_show_messages, 1),
 
-	(str_store_faction_name, s10, "$ambient_faction"),			
+	#(str_store_faction_name, s10, "$ambient_faction"),			
 	#(display_message, "@info: now using Resource Pts. of {s10}." ),
 	(try_end),
   ]),
@@ -259,7 +298,6 @@ scripts = [
 		(call_script, "script_get_rank_title", ":fac"),
 		(display_message, "@{s24}:"),
 
-		
 		(store_mul, ":income", ":rank", ":rank"), 
 		(store_mul, ":rank10", ":rank", 10), 
 		(val_mul, ":income", 5),  #  ( rank^2 *5 +rank * 10) =  0,  15 , 30, 55, 90 , 135, 190, 255, ... per day.
@@ -14932,108 +14970,108 @@ scripts = [
 
 #evil companions
         # Gulm
-        (troop_set_slot, "trp_npc9", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc9", slot_troop_morality_value, 2),
-        (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_type, tmt_honest),
-        (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_value, 1),
+        (troop_set_slot, "trp_npc9", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc9", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc9", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc9", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc9", slot_troop_personalitymatch_object, "trp_npc10"),  #Durgash
-        (troop_set_slot, "trp_npc9", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc9", slot_troop_payment_request, 300),
-        (troop_set_slot, "trp_npc9", slot_troop_cur_center, "p_town_isengard"),  #TLD
-        (troop_set_slot, "trp_npc9", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc9", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
+        (troop_set_slot, "trp_npc9", slot_troop_home, -1), #no "home" speeches
+        (troop_set_slot, "trp_npc9", slot_troop_payment_request, 2000),
+        (troop_set_slot, "trp_npc9", slot_troop_cur_center, "p_town_urukhai_h_camp"),  #TLD
+        (troop_set_slot, "trp_npc9", slot_troop_rank_request, 3),  #TLD
 
         # Durgash
-        (troop_set_slot, "trp_npc10", slot_troop_morality_type, tmt_humanitarian),
-        (troop_set_slot, "trp_npc10", slot_troop_morality_value, 2),
-        (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_type, tmt_egalitarian),
-        (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_value, 1),
+        (troop_set_slot, "trp_npc10", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc10", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc10", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc10", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc10", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc10", slot_troop_personalitymatch_object, "trp_npc9"),  #Gulm
-        (troop_set_slot, "trp_npc10", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc10", slot_troop_payment_request, 200),
-        (troop_set_slot, "trp_npc10", slot_troop_cur_center, "p_town_urukhai_outpost"),  #TLD
+        (troop_set_slot, "trp_npc10", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
+        (troop_set_slot, "trp_npc10", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc10", slot_troop_payment_request, 800),
+        (troop_set_slot, "trp_npc10", slot_troop_cur_center, "p_town_isengard"),  #TLD
         (troop_set_slot, "trp_npc10", slot_troop_rank_request, 1),  #TLD
 
         # Ufthak
-        (troop_set_slot, "trp_npc11", slot_troop_morality_type, tmt_egalitarian),
-        (troop_set_slot, "trp_npc11", slot_troop_morality_value, 3),
+        (troop_set_slot, "trp_npc11", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc11", slot_troop_morality_value, 0),
         (troop_set_slot, "trp_npc11", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc11", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc11", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc11", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc11", slot_troop_personalitymatch_object, "trp_npc12"),  #Gorbag
-        (troop_set_slot, "trp_npc11", slot_troop_home, "p_town_isengard"),
+        (troop_set_slot, "trp_npc11", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
+        (troop_set_slot, "trp_npc11", slot_troop_home, -1),
         (troop_set_slot, "trp_npc11", slot_troop_payment_request, 100),
         (troop_set_slot, "trp_npc11", slot_troop_cur_center, "p_town_cirith_ungol"),  #TLD
-        (troop_set_slot, "trp_npc11", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc11", slot_troop_rank_request, 0),  #TLD
 
         # Gorbag
-        (troop_set_slot, "trp_npc12", slot_troop_morality_type, tmt_humanitarian),
-        (troop_set_slot, "trp_npc12", slot_troop_morality_value, 3),
+        (troop_set_slot, "trp_npc12", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc12", slot_troop_morality_value, 0),
         (troop_set_slot, "trp_npc12", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc12", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc12", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc12", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc12", slot_troop_personalitymatch_object, "trp_npc11"),  #Ufthak
-        (troop_set_slot, "trp_npc12", slot_troop_home, "p_town_isengard"),
-        (troop_set_slot, "trp_npc12", slot_troop_payment_request, 0),
+        (troop_set_slot, "trp_npc12", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
+        (troop_set_slot, "trp_npc12", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc12", slot_troop_payment_request, 1800),
         (troop_set_slot, "trp_npc12", slot_troop_cur_center, "p_town_minas_morgul"),  #TLD
-        (troop_set_slot, "trp_npc12", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc12", slot_troop_rank_request, 3),  #TLD
 
-        # Harad NPC
-        (troop_set_slot, "trp_npc13", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc13", slot_troop_morality_value, 3),
+        # Badharkân
+        (troop_set_slot, "trp_npc13", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc13", slot_troop_morality_value, 0),
         (troop_set_slot, "trp_npc13", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc13", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc13", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc13", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc13", slot_troop_personalitymatch_object, "trp_npc14"), #Umbar NPC
-        (troop_set_slot, "trp_npc13", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc13", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc13", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
+        (troop_set_slot, "trp_npc13", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc13", slot_troop_payment_request, 4000),
         (troop_set_slot, "trp_npc13", slot_troop_cur_center, "p_town_harad_camp"),  #TLD
-        (troop_set_slot, "trp_npc13", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc13", slot_troop_rank_request, 5),  #TLD
 
-        # Umbar NPC
-        (troop_set_slot, "trp_npc14", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc14", slot_troop_morality_value, 4),
-        (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_type, tmt_egalitarian),
-        (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_value, -1),
+        # Fuldimir
+        (troop_set_slot, "trp_npc14", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc14", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc14", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc14", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc14", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc14", slot_troop_personalitymatch_object, "trp_npc13"), #Harad NPC
-        (troop_set_slot, "trp_npc14", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc14", slot_troop_payment_request, 400),
+        (troop_set_slot, "trp_npc14", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
+        (troop_set_slot, "trp_npc14", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc14", slot_troop_payment_request, 300),
         (troop_set_slot, "trp_npc14", slot_troop_cur_center, "p_town_umbar_camp"),  #TLD
-        (troop_set_slot, "trp_npc14", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc14", slot_troop_rank_request, 0),  #TLD
 
-        # Moria NPC
-        (troop_set_slot, "trp_npc15", slot_troop_morality_type, tmt_egalitarian),
-        (troop_set_slot, "trp_npc15", slot_troop_morality_value, 2),
-        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_type, tmt_honest),
-        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_value, 1),
+        # Bolzog
+        (troop_set_slot, "trp_npc15", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc15", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc15", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc15", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc15", slot_troop_personalitymatch_object, "trp_npc16"), #Rhun NPC
-        (troop_set_slot, "trp_npc15", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc15", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc15", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
+        (troop_set_slot, "trp_npc15", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc15", slot_troop_payment_request, 500),
         (troop_set_slot, "trp_npc15", slot_troop_cur_center, "p_town_moria"),  #TLD
         (troop_set_slot, "trp_npc15", slot_troop_rank_request, 1),  #TLD
 
-        # Rhun NPC
-        (troop_set_slot, "trp_npc16", slot_troop_morality_type, tmt_aristocratic),
-        (troop_set_slot, "trp_npc16", slot_troop_morality_value, 4),
-        (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_type, tmt_humanitarian),
-        (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_value, -1),
+        # Varfang
+        (troop_set_slot, "trp_npc16", slot_troop_morality_type, -1),
+        (troop_set_slot, "trp_npc16", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_type, -1),
+        (troop_set_slot, "trp_npc16", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc16", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc16", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
-        (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc15"),  #Moria NPC
-        (troop_set_slot, "trp_npc16", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 200),
+        (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
+        (troop_set_slot, "trp_npc16", slot_troop_home, -1),
+        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 1200),
         (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_north_rhun_camp"),  #TLD
-        (troop_set_slot, "trp_npc16", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc16", slot_troop_rank_request, 2),  #TLD
 
 #additional companions        
         # Dímborn

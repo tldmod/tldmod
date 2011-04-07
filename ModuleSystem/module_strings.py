@@ -704,23 +704,23 @@ strings = [
   ("here_plus_space", "here "),
 
 #NPC strings
-#npc1 = Mablung
-#npc2 = Cirdil
-#npc3 = Ulfas
-#npc4 = Gálmynë
-#npc5 = Glorfindel
-#npc6 = Luevanna
-#npc7 = Kíli
-#npc8 = Faniul
-#npc9 = Gulm
-#npc10 = Durgash
-#npc11 = Ufthak
-#npc12 = Gorbag
-#npc13 = Harad NPC
-#npc14 = Umbar NPC
-#npc15 = Moria NPC
-#npc16 = Rhun NPC
-#npc17 = Dímborn
+#npc1 = Mablung (Gondor)
+#npc2 = Cirdil (Gondor)
+#npc3 = Ulfas (Rohan)
+#npc4 = Gálmynë (Rohan)
+#npc5 = Glorfindel (Lorien)
+#npc6 = Luevanna (Mirkwood Elves)
+#npc7 = Kíli (Erebor)
+#npc8 = Faniul (Dale)
+#npc9 = Gulm (Isengard)
+#npc10 = Durgash (Isengard)
+#npc11 = Ufthak (Mordor)
+#npc12 = Gorbag (Mordor)
+#npc13 = Badharkân (Harad)
+#npc14 = Fuldimir (Umbar)
+#npc15 = Bolzog (Moria)
+#npc16 = Varfang (Rhun)
+#npc17 = Dímborn (Beornings)
   
   ("npc1_intro", "Hail, warrior, and welcome to Henneth Annûn."),
   ("npc2_intro", "Hail, visitor! Might I ask what is your business here?"),
@@ -786,13 +786,13 @@ strings = [
   ("npc7_backstory_a", "Polite of you to ask, {playername}. We are fighting off incursions from Gundabad orcs and Rhun warriors, but so far nothing we and our Dale allies can't handle."),
   ("npc8_backstory_a", "I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills."),
   ("npc9_backstory_a", "They call me Gulm! I have gutted my sergeant and his snagas now hunt for me. I would come with you and hunt men in the south while the snagas of Isengard gnash their teeth."),
-  ("npc10_backstory_a", "It's a long story..."),
+  ("npc10_backstory_a", "I am Durgash!"),
   ("npc11_backstory_a", "They call me Ufthak! My unit is dead and gone to worms. If you need a warrior, it is me."),
-  ("npc12_backstory_a", "It's a long story..."),
-  ("npc13_backstory_a", "It's a long story..."),
-  ("npc14_backstory_a", "It's a long story..."),
-  ("npc15_backstory_a", "It's a long story..."),
-  ("npc16_backstory_a", "It's a long story..."),
+  ("npc12_backstory_a", "I am Gorbag!"),
+  ("npc13_backstory_a", "I am Badharkân!"),
+  ("npc14_backstory_a", "I am Fuldimir!"),
+  ("npc15_backstory_a", "I am Bolzog!"),
+  ("npc16_backstory_a", "I am Varfang!"),
   ("npc17_backstory_a", "They call me Dímborn and I work in the woods. It is nice there. I like the woods. Many trees in the woods. I like trees. I've worked in the woods all my life, because I am strong and because I like trees."),
 
 #backstory main body
@@ -804,14 +804,14 @@ strings = [
   ("npc6_backstory_b", "I like to walk the hidden paths in our beautiful forest. Sometimes I move quietly through the trees and observe the habits of the many woodland animals. The song of a rare bird, the nesting of a wild boar are as beautiful to me as the clash of weapons and great walls are to the Edain."),
   ("npc7_backstory_b", "I helped improve the Erebor defenses and trained some younger dwarven folk, under the direction of my venerated father Dwalin, as is our custom."),
   ("npc8_backstory_b", "I have treated my King Brand for constipation, a common malaise affecting men going to war. A light brew of wormwood, and both the bowels and the mind are put at ease."),
-  ("npc9_backstory_b", "You should know that I am a slayer in the service of the White Hand. What there is to know of killing men, I know it."),
-  ("npc10_backstory_b", "...blah blah blah..."),
-  ("npc11_backstory_b", "You should know that I am a slayer in service to the Great Eye. I will kill for you!"),
-  ("npc12_backstory_b", "...blah blah blah..."),
-  ("npc13_backstory_b", "...blah blah blah..."),
-  ("npc14_backstory_b", "...blah blah blah..."),
-  ("npc15_backstory_b", "...blah blah blah..."),
-  ("npc16_backstory_b", "...blah blah blah..."),
+  ("npc9_backstory_b", "You should know that I am a Fighting Uruk Hai Berserker in the service of the White Hand. What there is to know of killing men, I know it."),
+  ("npc10_backstory_b", "I am a Wolf Rider of Isengard and a tracker."),
+  ("npc11_backstory_b", "You should know that I am an Orc Snaga in service to the Great Eye. I will kill for you!"),
+  ("npc12_backstory_b", "I am an Uruk Slayer of Mordor."),
+  ("npc13_backstory_b", "I am a Gold Serpent Horse Archer."),
+  ("npc14_backstory_b", "I am an Umbar Sailor."),
+  ("npc15_backstory_b", "I am a Snaga of Moria and a healer."),
+  ("npc16_backstory_b", "I am a Rhun Swift Horseman."),
   ("npc17_backstory_b", "You can make many things out of the trees, you know. It's what I do. I work with trees and make things out of trees. Sometimes bushes also. But I like trees more."),
 
 #backstory recruit pitch
@@ -823,14 +823,14 @@ strings = [
   ("npc6_backstory_c", "You wouldn't understand that, I think, seeing you prepared for war. But you must have travelled far and wide - have you seen the other great forests? Can you take me there?"),
   ("npc7_backstory_c", "There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival."),
   ("npc8_backstory_c", "I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all."),
-  ("npc9_backstory_c", "...and I ended up here."),
-  ("npc10_backstory_c", "...and I ended up here."),
-  ("npc11_backstory_c", "...and I ended up here."),
-  ("npc12_backstory_c", "...and I ended up here."),
-  ("npc13_backstory_c", "...and I ended up here."),
-  ("npc14_backstory_c", "...and I ended up here."),
-  ("npc15_backstory_c", "...and I ended up here."),
-  ("npc16_backstory_c", "...and I ended up here."),
+  ("npc9_backstory_c", "Maybe you can be my next master."),
+  ("npc10_backstory_c", "Maybe you can be my next master."),
+  ("npc11_backstory_c", "Maybe you can be my next master."),
+  ("npc12_backstory_c", "Maybe you can be my next master."),
+  ("npc13_backstory_c", "Maybe you can be my next Chieftain."),
+  ("npc14_backstory_c", "Maybe you can be my next Captain."),
+  ("npc15_backstory_c", "Maybe you can be my next master."),
+  ("npc16_backstory_c", "Maybe you can be my next Chieftain."),
   ("npc17_backstory_c", "If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know."),
 
 
@@ -869,7 +869,7 @@ strings = [
   ("npc13_backstory_response_1", "You will do."),
   ("npc14_backstory_response_1", "You will do."),
   ("npc15_backstory_response_1", "You will do."),
-  ("npc16_backstory_response_1", "If you're looking for work, I can use experienced fighters."),
+  ("npc16_backstory_response_1", "You will do."),
   ("npc17_backstory_response_1", "Well, one can always learn more about trees. We'd be glad to have you along."),
 
   ("npc1_backstory_response_2", "I am sorry to hear that. May your faith sustain your valor."),
@@ -884,10 +884,10 @@ strings = [
   ("npc10_backstory_response_2", "I don't need you, slave."),
   ("npc11_backstory_response_2", "I don't need you, slave."),
   ("npc12_backstory_response_2", "I don't need you, slave."),
-  ("npc13_backstory_response_2", "I don't need you, slave."),
-  ("npc14_backstory_response_2", "I don't need you, slave."),
+  ("npc13_backstory_response_2", "I don't need you."),
+  ("npc14_backstory_response_2", "I don't need you."),
   ("npc15_backstory_response_2", "I don't need you, slave."),
-  ("npc16_backstory_response_2", "No, sorry. Nothing I can do for you."),
+  ("npc16_backstory_response_2", "I don't need you."),
   ("npc17_backstory_response_2", "No, I'm sorry. We're off to war, not to a botanical journey."),
 
   ("npc1_signup", "I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage."),
@@ -1010,14 +1010,14 @@ strings = [
   ("npc6_morality_speech", "[No primary moral code]"),
   ("npc7_morality_speech", "I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?"),
   ("npc8_morality_speech", "Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake."),
-  ("npc9_morality_speech", "{Sir/Madame} -- it is not my way to {s21}. Men of my house will accept death but not dishonour. Please do not make me ashamed to serve under you."),
-  ("npc10_morality_speech", "Begging your pardon, captain. I can't say that I'm happy to see us {s21}. Those are just simple people, trying to make a living. If we could try to go easy on the poor wretches, captain, I'd feel much better."),
-  ("npc11_morality_speech", "Excuse me, captain. It's not good that we {s21}. I've followed armies and warbands for 30 years, and the least the soldiers expect of a leader is to feed them, pay them, and do {his/her} best to keep their sorry skins intact as best {he/she} can."),
-  ("npc12_morality_speech", "Captain -- I do not like to see us {s21}. I am prepared to be a warrior, but not a brigand. Pray let us try to show a little more compassion."),
-  ("npc13_morality_speech", "Captain, if we can avoid it, I'd prefer not to {s21}. Calradia is a small place, and one's reputation is precious. I would not care for one of my rivals to include this latest unfortunate incident in a satirical verse."),
-  ("npc14_morality_speech", "I do not care to {s21}. No one with a reputation for cowardice will be properly feared by his men."),
-  ("npc15_morality_speech", "{Sir/Madame} -- just so you know my opinion, any commander with sense will not let his company {s21}.I hope you don't mind me speaking so bluntly."),
-  ("npc16_morality_speech", "Captain. I don't like to {s21}. So many throats left uncut, and so many purses left unexplored..."),
+  ("npc9_morality_speech", "[No primary moral code]"),
+  ("npc10_morality_speech", "[No primary moral code]"),
+  ("npc11_morality_speech", "[No primary moral code]"),
+  ("npc12_morality_speech", "[No primary moral code]"),
+  ("npc13_morality_speech", "[No primary moral code]"),
+  ("npc14_morality_speech", "[No primary moral code]"),
+  ("npc15_morality_speech", "[No primary moral code]"),
+  ("npc16_morality_speech", "[No primary moral code]"),
   ("npc17_morality_speech", "[No primary moral code]"),
 
 
@@ -1029,14 +1029,14 @@ strings = [
   ("npc6_2ary_morality_speech", "[No secondary moral code]"),
   ("npc7_2ary_morality_speech", "[No secondary moral code]"),
   ("npc8_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc9_2ary_morality_speech", "Captain, I am dismayed that you {s21}. A {gentleman/gentlewoman} such as yourself should exhibit the highest standards of honour at all times."),
-  ("npc10_2ary_morality_speech", "{Brother/Sister} -- I can't say I like to see us {s21}. You should treat your men well, and they'll repay with interest."),
+  ("npc9_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc10_2ary_morality_speech", "[No secondary moral code]"),
   ("npc11_2ary_morality_speech", "[No secondary moral code]"),
   ("npc12_2ary_morality_speech", "[No secondary moral code]"),
   ("npc13_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc14_2ary_morality_speech", "Captain -- you should not let it bother you that you {s21}. Armies are made to do their leaders' bidding, and hardships are part of a soldier's life."),
-  ("npc15_2ary_morality_speech", "You know, friend {playername}, it's none too reassuring to see how you just {s21}. If you can break your word to them, you can break your word to me, is how I figure it."),
-  ("npc16_2ary_morality_speech", "Captain -- just so you know, it's no problem by me that we {s21}. We do what we need to do to live, and they'd do the same to us if they were in our shoes."),
+  ("npc14_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc15_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc16_2ary_morality_speech", "[No secondary moral code]"),
   ("npc17_2ary_morality_speech", "[No secondary moral code]"),
 
   ("npc1_personalityclash_speech", "Did I mention I hate {s11}?"),
@@ -1273,10 +1273,10 @@ strings = [
   ("npc10_honorific", "master"),
   ("npc11_honorific", "master"),
   ("npc12_honorific", "master"),
-  ("npc13_honorific", "master"),
-  ("npc14_honorific", "master"),
+  ("npc13_honorific", "Chieftain"),
+  ("npc14_honorific", "Captain"),
   ("npc15_honorific", "master"),
-  ("npc16_honorific", "master"),
+  ("npc16_honorific", "Chieftain"),
   ("npc17_honorific", "chief"),
 
   ("companion_strings_end", "INVALID"),

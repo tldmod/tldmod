@@ -1,4 +1,4 @@
-692
+707
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -585,6 +585,21 @@ qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
 qstr_{reg65?madame:sir} {reg65?madame:sir}
 qstr_{reg65?Madame:Sir} {reg65?Madame:Sir}
+qstr_How_do_magnets_work? How_do_magnets_work?
+qstr_Um..._by_bewitching_ Um..._by_bewitching_iron?
+qstr_Magnets_are_made_of_ Magnets_are_made_of_metal,_which_is_mined_from_the_ground._They_are_magnetic_because_the_metal_still_contains_pieces_of_gravity_inside_it.
+qstr_i_wont_a_warband_por i_wont_a_warband_port_nao!!11!
+qstr_I_m_sure_the_TLD_tea I'm_sure_the_TLD_team_will_get_to_it_when_they_can.
+qstr_Install_TLD_in_your_ Install_TLD_in_your_Warband_Modules_folder,_add_the_line_'compatible_with_warband_=_1'_to_module.ini,_and_you_can_play_it_on_Warband!
+qstr_dis_mod_takes_2_long dis_mod_takes_2_long_2_releaze!_it_sux!!11!
+qstr_Well_there_s_a_lot_o Well,_there's_a_lot_of_new_graphics_and_stuff,_I_guess_that_takes_time.
+qstr_It_has_been_recently It_has_been_recently_released,_if_you_missed_the_link,_you_can_download_it_at_lemonparty.org.
+qstr_i_wont_decapitated_e i_wont_decapitated_elephants_in_multi,_nao!!11!
+qstr_I_don_t_think_there_ I_don't_think_there's_multiplayer_in_TLD,_but_elephants_would_be_nice.
+qstr_There_is_a_hidden_el There_is_a_hidden_elephant_deathmatch_mode_in_TLD,_but_you_need_to_remove_all_your_savegames_first,_play_for_a_100_game_days_without_saving_then_go_to_the_character_screen_and_press_Alt+F4._Totally_worth_it!
+qstr_Did_you_bring_your_z Did_you_bring_your_zupdog?
+qstr_What_s_zupdog? What's_zupdog?
+qstr_My_zupdog_is_ill_but My_zupdog_is_ill,_but_I_brought_my_zupmaiass.
 qstr_Hrrr!_Frresh_meat_an Hrrr!_Frresh_meat_and_shiny_things.
 qstr_Gharr!_Hand_over_all Gharr!_Hand_over_all_yerr_stuff,_and_we_might_spare_yourr_life.
 qstr_Death_to_men! Death_to_men!

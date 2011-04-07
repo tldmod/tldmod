@@ -7,6 +7,7 @@ from header_skills import *
 from header_triggers import *
 from ID_troops import *
 from ID_party_templates import *
+from header_troops import *
 
 from module_constants import *
 
@@ -270,6 +271,62 @@ dialogs = [
   [trp_ramun_the_slave_trader|plyr,"ramun_talk", [], "I'd better be going.", "ramun_leave",[]],
   [trp_ramun_the_slave_trader,"ramun_leave", [], "Remember, any prisoners you've got, bring them to me. I'll pay you good silver for every one.", "close_window",[]],
 
+#MV: Easter Egg Troll dialogs
+  [trp_easter_egg_troll, "start", [
+   (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
+   ], "Problem?", "troll_introduce_1",[]],
+  [trp_easter_egg_troll, "start", [], "U mad?", "troll_talk_1",[]],
+  
+  [trp_easter_egg_troll|plyr, "troll_introduce_1", [], "Whoa! A talking troll?!", "troll_goodbye",[
+   (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
+  ]],
+  [trp_easter_egg_troll|plyr, "troll_introduce_1", [], "I own a horse.", "close_window",[]],
+  
+  [trp_easter_egg_troll|plyr, "troll_talk_1", [], "Troll me, troll.", "troll_talk_2",[]],
+  [trp_easter_egg_troll|plyr, "troll_talk_1", [], "I own a horse.", "close_window",[]],
+  
+  [trp_easter_egg_troll, "troll_talk_2", [
+    (store_random_in_range, ":random", 0, 5),
+    #s4: troll question, s5: fail answer, s6: win answer
+    (try_begin),
+      (eq, ":random", 0),
+      (str_store_string, s4, "@How do magnets work?"),
+      (str_store_string, s5, "@Um... by bewitching iron?"),
+      (str_store_string, s6, "@Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it."),
+    (else_try),
+      (eq, ":random", 1),
+      (str_store_string, s4, "@i wont a warband port nao!!11!"),
+      (str_store_string, s5, "@I'm sure the TLD team will get to it when they can."),
+      (str_store_string, s6, "@Install TLD in your Warband Modules folder, add the line 'compatible_with_warband = 1' to module.ini, and you can play it on Warband!"),
+    (else_try),
+      (eq, ":random", 2),
+      (str_store_string, s4, "@dis mod takes 2 long 2 releaze! it sux!!11!"),
+      (str_store_string, s5, "@Well, there's a lot of new graphics and stuff, I guess that takes time."),
+      (str_store_string, s6, "@It has been recently released, if you missed the link, you can download it at lemonparty.org."),
+    (else_try),
+      (eq, ":random", 3),
+      (str_store_string, s4, "@i wont decapitated elephants in multi, nao!!11!"),
+      (str_store_string, s5, "@I don't think there's multiplayer in TLD, but elephants would be nice."),
+      (str_store_string, s6, "@There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!"),
+    (else_try),
+      (str_store_string, s4, "@Did you bring your zupdog?"),
+      (str_store_string, s5, "@What's zupdog?"),
+      (str_store_string, s6, "@My zupdog is ill, but I brought my zupmaiass."),
+    (try_end),
+    
+    ], "Challenge accepted!^^{s4}", "troll_talk_3",[]],
+    
+  [trp_easter_egg_troll|plyr, "troll_talk_3", [
+    (store_attribute_level, ":int", "trp_player", ca_intelligence),
+    (gt, ":int", 12),
+    ], "{s6}", "troll_beaten",[]],
+  [trp_easter_egg_troll|plyr, "troll_talk_3", [
+    (store_attribute_level, ":int", "trp_player", ca_intelligence),
+    (le, ":int", 12),
+    ], "{s5}", "troll_goodbye",[]],
+  
+  [trp_easter_egg_troll, "troll_beaten", [], "I bow to your wisdom, Master Troll Baiter!", "troll_talk_1",[]],
+  [trp_easter_egg_troll, "troll_goodbye", [], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
 
 ##  [trp_tutorial_trainer,"start", [(eq, "$tutorial_quest_award_taken", 1),], "I think you have trained enough. Perhaps you should go to Zendar for the next step of your adventure.", "close_window",[]],
 ##  [trp_tutorial_trainer,"start", [(store_character_level, ":player_level", "trp_player"),(gt, ":player_level", 1)], "I think you have trained enough. Perhaps you should go to Zendar for the next step of your adventure.", "close_window",[]],
@@ -808,8 +865,8 @@ dialogs = [
   [anyone,"member_background_recap", [
           (troop_get_slot, ":first_met", "$g_talk_troop", slot_troop_first_encountered),
           (str_store_party_name, 20, ":first_met"),
-          (troop_get_slot, ":home", "$g_talk_troop", slot_troop_home),
-          (str_store_party_name, 21, ":home"),
+          #(troop_get_slot, ":home", "$g_talk_troop", slot_troop_home),
+          #(str_store_party_name, 21, ":home"),
           (troop_get_slot, ":recap", "$g_talk_troop", slot_troop_home_recap),
           (str_store_string, 5, ":recap"),
       ], "{s5}", "member_background_recap_2",[]],
