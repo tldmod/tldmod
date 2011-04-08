@@ -1475,6 +1475,9 @@ game_menus = [
 				
 
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat"),]),
+     
+     ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options"),]),
+     
 ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
 ## MadVader test end
@@ -1526,7 +1529,7 @@ game_menus = [
      (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
      (troop_add_item, "trp_player","itm_dol_greaves",0), #imod_lordly
      (troop_add_items, "trp_player","itm_lembas",3),
-     (troop_add_items, "trp_player","itm_map",6),
+     (troop_add_items, "trp_player","itm_map",3),
      (troop_equip_items, "trp_player"),
      (troop_sort_inventory, "trp_player"),
      (display_message, "@You have been pimped up!", 0x30FFC8),
@@ -1550,10 +1553,19 @@ game_menus = [
     # (try_end),
     # (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
    # ]),
+   ("camp_mvtest_reinf",[],"Reinforce me!",[
+    (party_get_num_companions, ":old_size", "p_main_party"),
+    (try_for_range, ":unused", 0, 10),
+      (call_script, "script_cf_reinforce_party", "p_main_party"),
+    (try_end),
+    (party_get_num_companions, reg1, "p_main_party"),
+    (assign, reg0, ":old_size"),
+    (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
+   ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
-   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+#   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
    ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),
@@ -1572,7 +1584,6 @@ game_menus = [
    # ]),
    ("camp_mvtest_wait",[],"Fast forward for 30 days.",[
          (assign, "$g_camp_mode", 1),
-         #(assign, "$g_infinite_camping", 1),
          (assign, "$g_player_icon_state", pis_camping),
          (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
          (change_screen_return),
@@ -2233,6 +2244,24 @@ game_menus = [
     ]
   ),
 ## MadVader test end
+
+  ("game_options",0,"Click on an option to toggle:","none",[],
+    [
+      ("game_options_formations",[
+         (try_begin),
+           (neq, "$tld_option_formations", 0),
+           (str_store_string, s7, "@ON"),
+         (else_try),
+           (str_store_string, s7, "@OFF"),
+         (try_end),
+        ],"Battle formations and AI: {s7}",[
+         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),
+         (val_clamp, "$tld_option_formations", 0, 2),
+        ]
+       ),
+      ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+    ]
+  ),
 
   ##     #TLD - assasination menus begin (Kolba)
      

@@ -6,39 +6,39 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+#MV: commented out - not used and why not use built-in Ctrl-Shift-F4 like normal people? Really.
+# cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
+    # (eq, "$cheat_mode",1),
+	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    # (get_player_agent_no, ":player_agent"),
+	# (agent_get_team, ":player_team", ":player_agent"),
+	# (display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
+    # (try_for_agents, ":agent"),
+        # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+		# (agent_get_horse,":horse",":agent"),
+		# (try_begin), (gt, ":horse", -1), 
+			# (agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
+			# (agent_set_animation, ":horse", "anim_horse_rear"), 
+		# (else_try),
+			# (agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
+		# (try_end),
+	# (end_try),
+  # ], [ 
+	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    # (get_player_agent_no, ":player_agent"),
+	# (agent_get_team, ":player_team", ":player_agent"),
+	# (display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
 
-cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
-    (eq, "$cheat_mode",1),
-	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    (get_player_agent_no, ":player_agent"),
-	(agent_get_team, ":player_team", ":player_agent"),
-	(display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
-    (try_for_agents, ":agent"),
-        (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-		(agent_get_horse,":horse",":agent"),
-		(try_begin), (gt, ":horse", -1), 
-			(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
-			(agent_set_animation, ":horse", "anim_horse_rear"), 
-		(else_try),
-			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
-		(try_end),
-	(end_try),
-  ], [ 
-	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    (get_player_agent_no, ":player_agent"),
-	(agent_get_team, ":player_team", ":player_agent"),
-	(display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
+	# (set_show_messages , 0),
+    # (try_for_agents, ":agent"),
+       # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+	   # (agent_set_hit_points , ":agent",0,1),
+	   # (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
+	# (end_try),
+	# (set_show_messages , 1),
 
-	(set_show_messages , 0),
-    (try_for_agents, ":agent"),
-       (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-	   (agent_set_hit_points , ":agent",0,1),
-	   (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
-	(end_try),
-	(set_show_messages , 1),
-
-	]
-)
+	# ]
+# )
 
 cheat_heal_self_on_ctrl_h = (0.5,0,2,[
     (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
@@ -48,56 +48,57 @@ cheat_heal_self_on_ctrl_h = (0.5,0,2,[
   ], [ ]
 )
 
+#MV: commented out - not used and if used will interfere with formation keys
 ################################ set up fog on a scene
-scene_init_fog =(0, 0, ti_once,[],[
-	(assign,"$fog_red"  , 255),
-	(assign,"$fog_green", 255),
-	(assign,"$fog_blue" , 255),
-	(assign,"$fog_dist" ,1000),
-	])
+# scene_init_fog =(0, 0, ti_once,[],[
+	# (assign,"$fog_red"  , 255),
+	# (assign,"$fog_green", 255),
+	# (assign,"$fog_blue" , 255),
+	# (assign,"$fog_dist" ,1000),
+	# ])
  
-scene_set_fog = (0, 0, 0.5,
-	[(this_or_next|key_clicked, key_o),	(this_or_next|key_clicked, key_l),
-	 (this_or_next|key_clicked, key_i),	(this_or_next|key_clicked, key_k),
-	 (this_or_next|key_clicked, key_u),	(this_or_next|key_clicked, key_j),
-	 (this_or_next|key_clicked, key_y),	(key_clicked, key_h),
-	],[
-	(try_begin),(key_is_down, key_left_shift),	(assign, ":move_val", 50),
-    (else_try),									(assign, ":move_val", 5),
-    (try_end),
+# scene_set_fog = (0, 0, 0.5,
+	# [(this_or_next|key_clicked, key_o),	(this_or_next|key_clicked, key_l),
+	 # (this_or_next|key_clicked, key_i),	(this_or_next|key_clicked, key_k),
+	 # (this_or_next|key_clicked, key_u),	(this_or_next|key_clicked, key_j),
+	 # (this_or_next|key_clicked, key_y),	(key_clicked, key_h),
+	# ],[
+	# (try_begin),(key_is_down, key_left_shift),	(assign, ":move_val", 50),
+    # (else_try),									(assign, ":move_val", 5),
+    # (try_end),
         
-	(try_begin),(key_clicked, key_o),(val_add,"$fog_blue" ,":move_val"),
-    (else_try),	(key_clicked, key_l),(val_sub,"$fog_blue" ,":move_val"),
-    (else_try),	(key_clicked, key_i),(val_add,"$fog_green",":move_val"),
-    (else_try),	(key_clicked, key_k),(val_sub,"$fog_green",":move_val"),
-    (else_try),	(key_clicked, key_u),(val_add,"$fog_red"  ,":move_val"),
-    (else_try),	(key_clicked, key_j),(val_sub,"$fog_red"  ,":move_val"),
-	(else_try),	(key_clicked, key_y),(val_add,"$fog_dist" ,100),
-	(else_try),	(key_clicked, key_h),(val_sub,"$fog_dist" ,100),
-    (try_end),
+	# (try_begin),(key_clicked, key_o),(val_add,"$fog_blue" ,":move_val"),
+    # (else_try),	(key_clicked, key_l),(val_sub,"$fog_blue" ,":move_val"),
+    # (else_try),	(key_clicked, key_i),(val_add,"$fog_green",":move_val"),
+    # (else_try),	(key_clicked, key_k),(val_sub,"$fog_green",":move_val"),
+    # (else_try),	(key_clicked, key_u),(val_add,"$fog_red"  ,":move_val"),
+    # (else_try),	(key_clicked, key_j),(val_sub,"$fog_red"  ,":move_val"),
+	# (else_try),	(key_clicked, key_y),(val_add,"$fog_dist" ,100),
+	# (else_try),	(key_clicked, key_h),(val_sub,"$fog_dist" ,100),
+    # (try_end),
 	
-	(try_begin),(lt,"$fog_red",  0),(assign,"$fog_red",  0),
-	(else_try), (gt,"$fog_red",255),(assign,"$fog_red",255),
-	(try_end),
-	(try_begin),(lt,"$fog_green",  0),(assign,"$fog_green",  0),
-	(else_try), (gt,"$fog_green",255),(assign,"$fog_green",255),
-	(try_end),
-	(try_begin),(lt,"$fog_blue",  0),(assign,"$fog_blue",  0),
-	(else_try), (gt,"$fog_blue",255),(assign,"$fog_blue",255),
-	(try_end),
-	(try_begin),(lt,"$fog_dist",  0),(assign,"$fog_dist",  0),(try_end),
+	# (try_begin),(lt,"$fog_red",  0),(assign,"$fog_red",  0),
+	# (else_try), (gt,"$fog_red",255),(assign,"$fog_red",255),
+	# (try_end),
+	# (try_begin),(lt,"$fog_green",  0),(assign,"$fog_green",  0),
+	# (else_try), (gt,"$fog_green",255),(assign,"$fog_green",255),
+	# (try_end),
+	# (try_begin),(lt,"$fog_blue",  0),(assign,"$fog_blue",  0),
+	# (else_try), (gt,"$fog_blue",255),(assign,"$fog_blue",255),
+	# (try_end),
+	# (try_begin),(lt,"$fog_dist",  0),(assign,"$fog_dist",  0),(try_end),
 	
-	(store_mul,"$fog_color","$fog_red",256),
-	(store_add,"$fog_color","$fog_color","$fog_green"),
-	(store_mul,"$fog_color","$fog_color",256),
-	(store_add,"$fog_color","$fog_color","$fog_blue"),
-	(set_fog_distance, "$fog_dist", "$fog_color"),
-	(assign,reg0,"$fog_red"),
-	(assign,reg1,"$fog_green"),	
-	(assign,reg2,"$fog_blue"),	
-	(assign,reg3,"$fog_dist"),	
-	(display_message,"@FOG:R {reg0} G {reg1} B{reg2} dist {reg3}"),
-	])
+	# (store_mul,"$fog_color","$fog_red",256),
+	# (store_add,"$fog_color","$fog_color","$fog_green"),
+	# (store_mul,"$fog_color","$fog_color",256),
+	# (store_add,"$fog_color","$fog_color","$fog_blue"),
+	# (set_fog_distance, "$fog_dist", "$fog_color"),
+	# (assign,reg0,"$fog_red"),
+	# (assign,reg1,"$fog_green"),	
+	# (assign,reg2,"$fog_blue"),	
+	# (assign,reg3,"$fog_dist"),	
+	# (display_message,"@FOG:R {reg0} G {reg1} B{reg2} dist {reg3}"),
+	# ])
 ################## FOOTBALL BEGIN ############################################
 ################## uses spr_stoneball ########################################
 ################## pos48 - ball prop, pos49 - ball position ##################

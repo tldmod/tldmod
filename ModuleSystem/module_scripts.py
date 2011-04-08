@@ -15,6 +15,7 @@ from ID_factions import *
 from module_troops import *
 
 from module_scripts_ai import *
+from module_scripts_form import *
 
 ####################################################################################################################
 # scripts is a list of script records.
@@ -1525,7 +1526,10 @@ scripts = [
 
       (call_script, "script_get_player_party_morale_values"),
       (party_set_morale, "p_main_party", reg0),
-	  
+
+      #initialize game option defaults (see camp menu)
+      (assign, "$tld_option_formations", 0),
+        
 	   # PlayerRewardSystem: end
     ]),    
 
@@ -7390,6 +7394,9 @@ scripts = [
       #(party_get_slot, ":party_type",":party_no", slot_party_type),
 
       (try_begin),
+        (eq, ":party_no", "p_main_party"), #for testing, but doesn't hurt
+        (assign, ":party_faction", "$players_kingdom"),
+      (else_try),
         (eq, ":party_faction", "fac_player_supporters_faction"),
         (party_get_slot, ":town_lord", ":party_no", slot_town_lord),
         (try_begin),
@@ -9266,7 +9273,7 @@ scripts = [
   # script_battle_tactic_init_aux
   # Input: team_no, battle_tactic
   # Output: none
-  ("battle_tactic_init_aux",
+  ("orig_battle_tactic_init_aux", # formations change
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":battle_tactic", 2),
@@ -9310,7 +9317,7 @@ scripts = [
   # script_battle_tactic_apply_aux
   # Input: team_no, battle_tactic
   # Output: battle_tactic
-  ("battle_tactic_apply_aux",
+  ("orig_battle_tactic_apply_aux", # formations change
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":battle_tactic", 2),
@@ -12288,6 +12295,12 @@ scripts = [
         (team_set_order_position, ":team_no", grc_cavalry, pos1),
       (try_end),
     (try_end),
+    
+    (try_begin),
+	  (eq, "$tld_option_formations", 1),
+	  (call_script, "script_player_order_formations", ":order"),	#for formations
+    (try_end),
+    
     (set_show_messages, 1),
   ]),  
 
@@ -18461,4 +18474,4 @@ scripts = [
 	
 ]
 
-scripts += ai_scripts
+scripts = scripts + ai_scripts + formAI_scripts

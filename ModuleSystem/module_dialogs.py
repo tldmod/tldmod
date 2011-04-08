@@ -325,7 +325,7 @@ dialogs = [
     (le, ":int", 12),
     ], "{s5}", "troll_goodbye",[]],
   
-  [trp_easter_egg_troll, "troll_beaten", [], "I bow to your wisdom, Master Troll Baiter!", "troll_talk_1",[]],
+  [trp_easter_egg_troll, "troll_beaten", [], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
   [trp_easter_egg_troll, "troll_goodbye", [], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
 
 ##  [trp_tutorial_trainer,"start", [(eq, "$tutorial_quest_award_taken", 1),], "I think you have trained enough. Perhaps you should go to Zendar for the next step of your adventure.", "close_window",[]],
