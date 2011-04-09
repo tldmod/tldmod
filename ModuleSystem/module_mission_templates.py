@@ -222,9 +222,31 @@ AI_triggers = [
 	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
 		(assign, "$cur_casualties", 0),
 		(assign, "$prev_casualties", 0),
+		(assign, "$prev_casualties2", 0), #adeed by JL to use for checking every second
 		(assign, "$ranged_clock", 1),
 		(assign, "$battle_phase", BP_Setup),
 		(assign, "$clock_reset", 0),
+		(assign, "$charge_activated", 0), # added for cav charge control -JL
+		(assign, "$charge_ongoing",0), # added for cav charge control -JL
+		(assign, "$inf_charge_activated", 0), # added for inf charge control -JL
+		(assign, "$inf_charge_ongoing", 0), # added for inf charge control -JL
+		(assign, "$arc_charge_activated", 0), # added for archer charge control -JL
+		(assign, "$att_reinforcements_arrived",0), #added for seeing if reinforcements have arrived -JL
+		(assign, "$def_reinforcements_arrived",0), #added for seeing if reinforcements have arrived -JL
+		(assign, "$att_reinforcements_needed", 0), #added for seeing if reinforcements are needed -JL
+		(assign, "$def_reinforcements_needed", 0), #added for seeing if reinforcements are needed -JL
+		(assign, "$formai_disengage", 0), #added for controlling cavalry disengagement -JL
+		(assign, "$formai_patrol_mode", 0), #added for controlling patrol mode -JL
+	##JL code for assigning random local variables:
+		(store_random_in_range, "$formai_rand0", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range randomness
+		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
+		(store_random_in_range, "$formai_rand1", 0, 501), #JL close hold position to archers for cavalry
+		(store_random_in_range, "$formai_rand3", AI_charge_distance, 3001), # JL main charge distance randomness
+		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 3001), #JL alternative charge range randomness
+		(store_random_in_range, "$formai_rand5", -1000, 0), #JL retreat range randomness
+		(store_random_in_range, "$formai_rand6", 4000, 5001), #JL grand charge distance and firing distance range randomness
+		(store_random_in_range, "$formai_rand7", 55, 66), #JL random decision comparative number (that partly decides when AI strives to execute a grand charge). A value of 30 = Patrol Mode. A value of 35 = enemy has >40% archers/others
+		(store_random_in_range, "$formai_rand8", -100, 101), #JL random very short range positioning for inf around archers in x pos.			
 		(assign, "$team0_default_formation", formation_default),
 		(assign, "$team1_default_formation", formation_default),
 		(assign, "$team2_default_formation", formation_default),
@@ -245,9 +267,25 @@ AI_triggers = [
 		(call_script, "script_battlegroup_get_position", Team3_Starting_Point, 3, grc_everyone),
 		(call_script, "script_field_tactics", 1)
 	]),
+    
+	#JL new trigger for assigning randoms:
+	(60, 0, 0, [(eq, "$tld_option_formations", 1)], [
+	##JL code for assigning random local variables:
+		(store_random_in_range, "$formai_rand0", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range randomness
+		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
+		(store_random_in_range, "$formai_rand1", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range 2
+		(store_random_in_range, "$formai_rand3", AI_charge_distance, 3001), # JL main charge distance randomness
+		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 3001), #JL alternative charge range randomness
+		(store_random_in_range, "$formai_rand5", -1000, 0), #JL retreat range randomness
+		(store_random_in_range, "$formai_rand6", 4000, 5001), #JL grand charge distance and firing distance range randomness
+		(store_random_in_range, "$formai_rand7", 55, 66), #JL random decision comparative number (that partly decides when AI strives to execute a grand charge).
+		(store_random_in_range, "$formai_rand8", -100, 101), #JL random very short range positioning for inf around archers in x pos.	
+		#(display_message, "@Randoms  have been updated"),
+	]), #End JL
 
 	(1, .5, 0, [(eq, "$tld_option_formations", 1)], [	#delay to offset half a second from formations trigger
 		(try_begin),
+			(assign, "$prev_casualties2", "$cur_casualties"), #added by JL
 			(call_script, "script_cf_count_casualties"),
 			(assign, "$cur_casualties", reg0),
 			(assign, "$battle_phase", BP_Fight),
@@ -256,7 +294,7 @@ AI_triggers = [
 		(set_fixed_point_multiplier, 100),
 		(call_script, "script_store_battlegroup_data"),
 		(try_begin),	#reassess ranged position when fighting starts
-			(ge, "$battle_phase", BP_Fight),
+			(eq, "$battle_phase", BP_Fight), #changed from ge to eq -JL
 			(eq, "$clock_reset", 0),
 			(call_script, "script_field_tactics", 1),
 			(assign, "$ranged_clock", 0),
