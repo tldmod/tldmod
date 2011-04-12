@@ -2312,10 +2312,10 @@ formAI_scripts = [
 		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_dunland"),	#Dunland
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_beorn"),	#Beornings
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_player_faction"),	#independent player
 		(assign, reg0, formation_ranks),

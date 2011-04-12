@@ -67,7 +67,6 @@ player_made_benefit_claim
 rebellion_check
 random_quest_no
 g_leave_town
-qst_kill_local_merchant_center
 qst_follow_spy_spy_partners_party
 qst_follow_spy_spy_party
 qst_bring_back_runaway_serfs_party_1
@@ -191,11 +190,8 @@ g_battle_simulation_auto_enter_town_after_battle
 g_siege_first_encounter
 g_siege_join
 g_defending_against_siege
-qst_train_peasants_against_bandits_currently_training
 auto_enter_menu_in_center
 g_player_raiding_village
-qst_eliminate_bandits_infesting_village_num_bandits
-qst_eliminate_bandits_infesting_village_num_villagers
 g_player_raid_complete
 town_nighttime
 g_last_rest_center
@@ -204,7 +200,6 @@ g_improvement_type
 quest_auto_menu
 g_last_rest_payment_until
 g_main_ship_party
-g_train_peasants_against_bandits_num_peasants
 last_sneak_attempt_town
 last_sneak_attempt_time
 g_player_is_captive
@@ -214,7 +209,6 @@ trolls_in_battle
 wargs_in_battle
 nazgul_in_battle
 nazgul_team
-g_train_peasants_against_bandits_training_succeeded
 battle_won
 defender_reinforcement_stage
 attacker_reinforcement_stage
@@ -419,7 +413,6 @@ g_encountered_party_relation
 g_encountered_party_type
 g_encountered_party_template
 qst_deliver_wine_debt
-incriminate_quest_sacrificed_troop
 number_of_combatants
 player_honor
 g_player_party_morale_modifier_party_size
@@ -442,8 +435,6 @@ g_starting_strength_friends
 player_side_race
 enemy_side_race
 battle_renown_value
-spy_item_worn
-spy_quest_troop
 num_center_bandits
 cur_belfry_pos
 belfry_rotating_objects_begin
@@ -481,7 +472,6 @@ qst_scout_waypoints_wp_3
 qst_scout_waypoints_wp_1_visited
 qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
-qst_train_peasants_against_bandits_num_hours_trained
 npc_is_quitting
 npc_with_grievance
 npc_with_personality_clash
@@ -660,3 +650,4 @@ formai_rand7
 formai_rand8
 formai_disengage
 formai_patrol_mode
+g_player_follow_army_warnings

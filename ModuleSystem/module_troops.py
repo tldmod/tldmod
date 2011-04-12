@@ -1929,6 +1929,20 @@ troops = [
 ["caravan_guard","Caravan_Guard","Caravan_Guards",tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       str_13|agi_11|int_4|cha_4|level(15),wp(100),knows_common|knows_riding_2|knows_shield_1|knows_power_strike_2|knows_ironflesh_1,bandit_face1,bandit_face2],
+      
+# Messengers of different races for quests (non-heroes: can be killed or captured on purpose)
+["messenger_man", "Messenger", "Messengers", tf_randomize_face| tf_unmoveable_in_party_window,0,0,fac_commoners,
+   [itm_gon_ranger_skirt,itm_gondor_light_greaves,],
+      str_7|agi_5|int_4|cha_4|level(5),wp(50),knows_common|knows_riding_2,man_face_young_1,man_face_old_2],
+["messenger_elf", "Messenger", "Messengers", tf_lorien| tf_randomize_face| tf_unmoveable_in_party_window,0,0,fac_commoners,
+   [itm_lorien_armor_a,itm_lorien_boots,],
+      str_7|agi_5|int_4|cha_4|level(5),wp(50),knows_common|knows_riding_2,lorien_elf_face_1,lorien_elf_face_2],
+["messenger_dwarf", "Messenger", "Messengers", tf_dwarf| tf_randomize_face| tf_unmoveable_in_party_window,0,0,fac_commoners,
+   [itm_dwarf_pad_boots,itm_leather_dwarf_armor,],
+      str_7|agi_5|int_4|cha_4|level(5),wp(50),knows_common|knows_riding_2,dwarf_face_2,dwarf_face_3],
+["messenger_orc", "Messenger", "Messengers", tf_orc| tf_randomize_face| tf_unmoveable_in_party_window,0,0,fac_commoners,
+   [itm_moria_armor_a,],
+      str_7|agi_5|int_4|cha_4|level(5),wp(50),knows_common|knows_riding_2,orc_face1,orc_face2],
  
 ##
 #This troop is the troop marked as soldiers_end

@@ -492,15 +492,15 @@ strings = [
   
 
 # meet_spy_in_enemy_town quest secret sentences
-  ("secret_sign_1",  "The armoire dances at midnight..."),
-  ("secret_sign_2",  "I am selling these fine Khergit tapestries. Would you like to buy some?"),
-  ("secret_sign_3",  "The friend of a friend sent me..."),
-  ("secret_sign_4",  "The wind blows hard from the east and the river runs red..."),
+  # ("secret_sign_1",  "The armoire dances at midnight..."),
+  # ("secret_sign_2",  "I am selling these fine Khergit tapestries. Would you like to buy some?"),
+  # ("secret_sign_3",  "The friend of a friend sent me..."),
+  # ("secret_sign_4",  "The wind blows hard from the east and the river runs red..."),
   
-  ("countersign_1",  "But does he dance for the dresser or the candlestick?"),
-  ("countersign_2",  "Yes I would, do you have any in blue?"),
-  ("countersign_3",  "But, my friend, your friend's friend will never have a friend like me."),
-  ("countersign_4",  "Have you been sick?"),
+  # ("countersign_1",  "But does he dance for the dresser or the candlestick?"),
+  # ("countersign_2",  "Yes I would, do you have any in blue?"),
+  # ("countersign_3",  "But, my friend, your friend's friend will never have a friend like me."),
+  # ("countersign_4",  "Have you been sick?"),
 
 # Names  
   ("name_1",  "Albard"),

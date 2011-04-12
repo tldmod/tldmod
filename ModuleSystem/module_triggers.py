@@ -390,54 +390,55 @@ triggers = [
 ###########################################################################
 
 # Incriminate Loyal Advisor quest
-  (0.2, 0.0, 0.0,
-   [
-       (check_quest_active, "qst_incriminate_loyal_commander"),
-       (neg|check_quest_concluded, "qst_incriminate_loyal_commander"),
-       (quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_current_state, 2),
-       (quest_get_slot, ":quest_target_center", "qst_incriminate_loyal_commander", slot_quest_target_center),
-       (quest_get_slot, ":quest_target_party", "qst_incriminate_loyal_commander", slot_quest_target_party),
-       (try_begin),
-         (neg|party_is_active, ":quest_target_party"),
-         (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
-         (call_script, "script_fail_quest", "qst_incriminate_loyal_commander"),
-       (else_try),
-         (party_is_in_town, ":quest_target_party", ":quest_target_center"),
-         (remove_party, ":quest_target_party"),
-         (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
-         (quest_get_slot, ":quest_object_troop", "qst_incriminate_loyal_commander", slot_quest_object_troop),
-         (assign, ":num_available_factions", 0),
-         (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-           (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
-           (neq, ":faction_no", "fac_player_supporters_faction"),
-           (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
-           (val_add, ":num_available_factions", 1),
-         (try_end),
-         (try_begin),
-           (gt, ":num_available_factions", 0),
-           (store_random_in_range, ":random_faction", 0, ":num_available_factions"),
-           (assign, ":target_faction", -1),
-           (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-             (eq, ":target_faction", -1),
-             (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
-             (neq, ":faction_no", "fac_player_supporters_faction"),
-             (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
-             (val_sub, ":random_faction", 1),
-             (lt, ":random_faction", 0),
-             (assign, ":target_faction", ":faction_no"),
-           (try_end),
-         (try_end),
-         (try_begin),
-           (gt, ":target_faction", 0),
-           (call_script, "script_change_troop_faction", ":quest_object_troop", ":target_faction"),
-         (else_try),
-           (call_script, "script_change_troop_faction", ":quest_object_troop", "fac_outlaws"),
-         (try_end),
-         (call_script, "script_succeed_quest", "qst_incriminate_loyal_commander"),
-       (try_end),
-    ],
-   []
-   ),
+  # (0.2, 0.0, 0.0,
+   # [
+       # (check_quest_active, "qst_incriminate_loyal_commander"),
+       # (neg|check_quest_concluded, "qst_incriminate_loyal_commander"),
+       # (quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_current_state, 2),
+       # (quest_get_slot, ":quest_target_center", "qst_incriminate_loyal_commander", slot_quest_target_center),
+       # (quest_get_slot, ":quest_target_party", "qst_incriminate_loyal_commander", slot_quest_target_party),
+       # (try_begin),
+         # (neg|party_is_active, ":quest_target_party"),
+         # (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
+         # (call_script, "script_fail_quest", "qst_incriminate_loyal_commander"),
+       # (else_try),
+         # (party_is_in_town, ":quest_target_party", ":quest_target_center"),
+         # (remove_party, ":quest_target_party"),
+         # (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
+         # (quest_get_slot, ":quest_object_troop", "qst_incriminate_loyal_commander", slot_quest_object_troop),
+         # (assign, ":num_available_factions", 0),
+         # (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+           # (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+           # (neq, ":faction_no", "fac_player_supporters_faction"),
+           # (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
+           # (val_add, ":num_available_factions", 1),
+         # (try_end),
+         # (try_begin),
+           # (gt, ":num_available_factions", 0),
+           # (store_random_in_range, ":random_faction", 0, ":num_available_factions"),
+           # (assign, ":target_faction", -1),
+           # (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+             # (eq, ":target_faction", -1),
+             # (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+             # (neq, ":faction_no", "fac_player_supporters_faction"),
+             # (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
+             # (val_sub, ":random_faction", 1),
+             # (lt, ":random_faction", 0),
+             # (assign, ":target_faction", ":faction_no"),
+           # (try_end),
+         # (try_end),
+         # (try_begin),
+           # (gt, ":target_faction", 0),
+           # (call_script, "script_change_troop_faction", ":quest_object_troop", ":target_faction"),
+         # (else_try),
+           # (call_script, "script_change_troop_faction", ":quest_object_troop", "fac_outlaws"),
+         # (try_end),
+         # (call_script, "script_succeed_quest", "qst_incriminate_loyal_commander"),
+       # (try_end),
+    # ],
+   # []
+   # ),
+
 # Runaway Peasants quest
   (0.2, 0.0, 0.0,
    [
@@ -1157,50 +1158,50 @@ triggers = [
                    ],
                   [(call_script, "script_succeed_quest", "qst_troublesome_bandits"),]),
 # Kidnapped girl:
-   (1, 0, 0,
-   [(check_quest_active, "qst_kidnapped_girl"),
-    (quest_get_slot, ":quest_target_party", "qst_kidnapped_girl", slot_quest_target_party),
-    (party_is_active, ":quest_target_party"),
-    (party_is_in_any_town, ":quest_target_party"),
-    (remove_party, ":quest_target_party"),
-    ],
-   []
-   ),
+   # (1, 0, 0,
+   # [(check_quest_active, "qst_kidnapped_girl"),
+    # (quest_get_slot, ":quest_target_party", "qst_kidnapped_girl", slot_quest_target_party),
+    # (party_is_active, ":quest_target_party"),
+    # (party_is_in_any_town, ":quest_target_party"),
+    # (remove_party, ":quest_target_party"),
+    # ],
+   # []
+   # ),
 
 
 #Rebellion changes begin
 #move 
 
-  (0, 0, 24 * 14,
-   [
-        (try_for_range, ":pretender", pretenders_begin, pretenders_end),
-          (troop_set_slot, ":pretender", slot_troop_cur_center, 0),
-          (neq, ":pretender", "$supported_pretender"),
-          (troop_get_slot, ":target_faction", ":pretender", slot_troop_original_faction),
-          (faction_slot_eq, ":target_faction", slot_faction_state, sfs_active),
-          (faction_slot_eq, ":target_faction", slot_faction_has_rebellion_chance, 1),
-          (neg|troop_slot_eq, ":pretender", slot_troop_occupation, slto_kingdom_hero),
+  # (0, 0, 24 * 14,
+   # [
+        # (try_for_range, ":pretender", pretenders_begin, pretenders_end),
+          # (troop_set_slot, ":pretender", slot_troop_cur_center, 0),
+          # (neq, ":pretender", "$supported_pretender"),
+          # (troop_get_slot, ":target_faction", ":pretender", slot_troop_original_faction),
+          # (faction_slot_eq, ":target_faction", slot_faction_state, sfs_active),
+          # (faction_slot_eq, ":target_faction", slot_faction_has_rebellion_chance, 1),
+          # (neg|troop_slot_eq, ":pretender", slot_troop_occupation, slto_kingdom_hero),
 
-          (try_for_range, ":unused", 0, 30),
-            (troop_slot_eq, ":pretender", slot_troop_cur_center, 0),
-            (store_random_in_range, ":town", towns_begin, towns_end),
-            (store_faction_of_party, ":town_faction", ":town"),
-            (store_relation, ":relation", ":town_faction", ":target_faction"),
-            (le, ":relation", 0), #fail if nothing qualifies
+          # (try_for_range, ":unused", 0, 30),
+            # (troop_slot_eq, ":pretender", slot_troop_cur_center, 0),
+            # (store_random_in_range, ":town", towns_begin, towns_end),
+            # (store_faction_of_party, ":town_faction", ":town"),
+            # (store_relation, ":relation", ":town_faction", ":target_faction"),
+            # (le, ":relation", 0), #fail if nothing qualifies
            
-            (troop_set_slot, ":pretender", slot_troop_cur_center, ":town"),
-            (try_begin),
-              (eq, "$cheat_mode", 1),
-              (str_store_troop_name, 4, ":pretender"),
-              (str_store_party_name, 5, ":town"),
-              (display_message, "@{s4} is in {s5}"),
-            (try_end),
-          (try_end),
+            # (troop_set_slot, ":pretender", slot_troop_cur_center, ":town"),
+            # (try_begin),
+              # (eq, "$cheat_mode", 1),
+              # (str_store_troop_name, 4, ":pretender"),
+              # (str_store_party_name, 5, ":town"),
+              # (display_message, "@{s4} is in {s5}"),
+            # (try_end),
+          # (try_end),
 
-        (try_end), 
-       ],
-[]
-),
+        # (try_end), 
+       # ],
+# []
+# ),
 #Rebellion changes end
 
 #NPC system changes begin
@@ -1407,7 +1408,7 @@ triggers = [
     (1, 0, ti_once, 
 	   [(player_has_item,"itm_ent_water"),
 	   ],[
-		(dialog_box,"@You entered in possession of a strage, oversized bowl of fresh looking water. It smells a little like musk.","@Obtained: Ent water."),
+		(dialog_box,"@You came into a possession of a strange, oversized bowl of fresh-looking water. It smells a little like musk.","@Obtained: Ent water."),
 		(play_sound,"snd_quest_completed"),
         ]
     ),
@@ -1425,9 +1426,9 @@ triggers = [
 		
 		(try_begin),
 		  (is_between,reg5,tf_orc_begin, tf_orc_end),
-  		  (dialog_box,"@A little after your fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?","@Ent water effect."),
+  		  (dialog_box,"@A little after you fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?","@Ent water effect."),
 		(else_try),
-		  (dialog_box,"@The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take the risk again."),
+		  (dialog_box,"@The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take that risk again."),
 		(try_end),
 		(troop_raise_attribute,"trp_player",ca_strength,1),
 		(troop_raise_attribute,"trp_player",ca_charisma,1),
@@ -1437,14 +1438,14 @@ triggers = [
         ]
     ),
 	
-# TLD War beginning condition (player level = 2 so far), GA
+# TLD War beginning condition (player level = 2 at the moment), GA
     (1, 0, 0, 
 	   [(eq,"$tld_war_began",0),
 	    (store_character_level,":level","trp_player"),
 		(ge,":level",tld_player_level_to_begin_war),
 	   ],[
 		(assign, "$tld_war_began",1),
-		(dialog_box,"@Dark shadow finally broke into storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
+		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
 		(play_sound,"snd_evil_horn"),
 #	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),
@@ -1484,6 +1485,7 @@ triggers = [
 	  (eq,":inside_fangorn",0),	
 	  (gt,"$g_fangorn_rope_pulled",5),
 	  (val_sub,"$g_fangorn_rope_pulled", 5), # if outside fangorn, fangorn calms down (to 0).
+	  (val_max,"$g_fangorn_rope_pulled", 0),
 	(try_end),
   ] ),
 

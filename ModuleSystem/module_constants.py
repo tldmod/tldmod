@@ -196,7 +196,7 @@ slot_village_state            = 35 #svs_normal, svs_being_raided, svs_looted, sv
 slot_village_raid_progress    = 36
 slot_village_recover_progress = 37
 slot_village_smoke_added      = 38
-slot_village_infested_by_bandits   = 39
+slot_village_infested_by_bandits   = 39 #TLD: not used
 
 slot_center_last_player_alarm_hour = 42
 
@@ -825,6 +825,7 @@ slot_quest_gold_reward              = 22
 slot_quest_expiration_days          = 23
 slot_quest_dont_give_again_period   = 24
 slot_quest_dont_give_again_remaining_days = 25
+slot_quest_rank_reward              = 26
 
 
 ########################################################
@@ -860,6 +861,8 @@ tc_tavern_talk                = 14
 tc_rebel_thanks               = 15
 tc_hire_troops                = 16
 tc_starting_quest             = 17 #TLD
+
+tld_max_quest_distance = 100 #TLD
 
 #Troop Commentaries begin
 #Log entry types
@@ -978,16 +981,16 @@ mercenary_troops_end = "trp_mercenaries_end"
 lord_quests_begin = "qst_deliver_message"
 lord_quests_end   = "qst_follow_army"
 
-enemy_lord_quests_begin = "qst_lend_surgeon"
+enemy_lord_quests_begin = lord_quests_end #no enemy lord quests at present in TLD, was "qst_lend_surgeon"
 enemy_lord_quests_end   = lord_quests_end
 
-village_elder_quests_begin = "qst_deliver_grain"
-village_elder_quests_end = "qst_eliminate_bandits_infesting_village"
+village_elder_quests_begin = lord_quests_end #no village elder quests in TLD, was "qst_deliver_grain"
+village_elder_quests_end = lord_quests_end #no village elder quests in TLD, was "qst_eliminate_bandits_infesting_village"
 
 mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = village_elder_quests_begin
 
-lady_quests_begin = "qst_rescue_lord_by_replace"
+lady_quests_begin = mayor_quests_begin  #no lady quests in TLD, was "qst_rescue_lord_by_replace"
 lady_quests_end   = mayor_quests_begin
 
 army_quests_begin = "qst_deliver_cattle_to_army"
