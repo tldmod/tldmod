@@ -2570,7 +2570,24 @@ scripts = [
       (val_mul, ":skill", 5),
       (val_add, ":limit", ":skill"),
       (val_add, ":limit", ":charisma"),
-
+	
+	# add some if there are orcs in the party (you can recruit loads of orcs), TLD  
+	  (assign,":total",0),
+      (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+      (try_for_range, ":i_stack", 0, ":num_stacks"), #count number of orcs in party
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+        (troop_get_type, ":type", ":stack_troop"),
+		(eq, ":type", tf_orc),
+		  (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
+          (val_add, ":total", ":stack_size"),
+      (try_end),  
+	  (val_mul, ":total", orc_bonus_nominator  ),
+	  (val_div, ":total", orc_bonus_denominator),
+	  (assign, reg0, ":total"), (assign, reg1, ":limit"),(display_message,"@Orc bonus ={reg0}, limit = {reg1}"),
+	  (val_add, ":limit", ":total"),
+	  (assign, reg0, ":total"), (assign, reg1, ":limit"),(display_message,"@Orc bonus ={reg0}, limit = {reg1}"),
+	###
+		
       (troop_get_slot, ":troop_renown", ":troop_no", slot_troop_renown),
       (store_div, ":renown_bonus", ":troop_renown", 25),
       (val_add, ":limit", ":renown_bonus"),

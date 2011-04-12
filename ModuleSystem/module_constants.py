@@ -2031,3 +2031,7 @@ Team1_Starting_Point	= 13	#pos13
 Team2_Starting_Point	= 14	#pos14
 Team3_Starting_Point	= 16	#pos16
 ### End of formAI_constants
+
+### orc bonus for party headcount (each orc in main party adds nom/denom to max party size)
+orc_bonus_nominator   = 2
+orc_bonus_denominator = 3

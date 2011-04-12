@@ -1,4 +1,4 @@
-724
+725
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -107,6 +107,7 @@ qstr_Hey_it_seems_that_mo Hey_it_seems_that_more_stuff_can_be_put_here!!!_(on_mu
 qstr_So_let_s_think_of_so So_let's_think_of_something_worth_keeping_track_of!
 qstr_1_Res.Pts__{s2}_ 1_Res.Pts_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
+qstr_Orc_bonus_={reg0}_li Orc_bonus_={reg0},_limit_=_{reg1}
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
 qstr_+1_to_Horse_Archery +1_to_Horse_Archery
 qstr_+1_to_Pathfinding +1_to_Pathfinding
