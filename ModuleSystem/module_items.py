@@ -1134,7 +1134,7 @@ items =[
 ["dwarf_vest","Dwarven_Archer_Armor",[("dwarf_tunicmailarcher",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1370,weight(18)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["dwarf_armor_b","Dwarven_Pad_over_Tunic",[("dwarf_padtunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,348,weight(14)|head_armor(0)|body_armor(34)|leg_armor(8)|difficulty(0),imodbits_armor,],
 ["dwarf_armor_c","Dwarven_Scale_over_Mail",[("dwarf_scalemail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2410,weight(25)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(0),imodbits_armor,],
-["leather_dwarf_armor_b","Dwarven_Tunic",[("dwarf_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,195,weight(5)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_cloth,],
+["leather_dwarf_armor_b","Dwarven_Tunic",[("dwarf_tunic_erebor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,195,weight(5)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["dwarf_vest_b","Iron_Hills_Tunic",[("dwarf_tunic_ironhills",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1370,weight(18)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 #["dwarf_dol_greaves", "Dwarven Plate Boots",[("dwarf_dol_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
 ["dwarf_pad_boots","Dwarven_Padded_Boots",[("dwarf_pad_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(15)|difficulty(0),imodbits_cloth],

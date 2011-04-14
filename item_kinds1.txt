@@ -2423,7 +2423,7 @@ itemsfile version 2
  itm_dwarf_armor_c Dwarven_Scale_over_Mail Dwarven_Scale_over_Mail 1  dwarf_scalemail 0  16842765 0 2410 0 25.000000 100 0 35 13 0 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor_b Dwarven_Tunic Dwarven_Tunic 1  dwarf_tunic 0  16842765 0 195 0 5.000000 100 0 16 8 0 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor_b Dwarven_Tunic Dwarven_Tunic 1  dwarf_tunic_erebor 0  16842765 0 195 0 5.000000 100 0 16 8 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_vest_b Iron_Hills_Tunic Iron_Hills_Tunic 1  dwarf_tunic_ironhills 0  16842765 0 1370 0 18.000000 100 0 20 8 0 0 0 0 0 0 0 0
