@@ -288,6 +288,26 @@ sounds = [
  ("rohan_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["rohan_people_loop.ogg"]),
  ("dwarf_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["dwarf_men_loop.ogg"]),
  ("harad_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["harad_loop.ogg"]),
-##TLD end 
+
+("gondor_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["good_eagle01.ogg","gondor_army.ogg","d_blacksmith2.ogg","good_workshop.ogg","d_dog7.ogg"]),
+("elves_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.ogg","good_bird02.ogg","good_bird03.ogg","good_bird_wings.ogg"]), 
+("beorn_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.ogg","good_bird02.ogg","good_bird03.ogg","good_workshop.ogg","d_saw_short3.ogg","d_dog7.ogg","d_carpenter1.ogg"]), 
+("rohan_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.ogg", "rohan02.ogg","rohan03.ogg","rohan04.ogg","good_workshop.ogg", "good_eagle01.ogg","good_bird01.ogg","d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg"]),
+("dwarf_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["dwarves01.ogg", "dwarves02.ogg","d_blacksmith2.ogg","osgiliath05.ogg","osgiliath02.ogg"]),
+("dale_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.ogg","good_bird02.ogg","good_bird03.ogg","good_workshop.ogg","d_saw_short3.ogg", "d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg","osgiliath04.ogg"]),
+("rhun_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.ogg", "rohan02.ogg","rohan03.ogg","rohan04.ogg","evil_crow.ogg", "d_saw_short3.ogg","d_blacksmith2.ogg","d_dog7.ogg"]),
+("harad_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["d_chicken1.ogg", "rohan02.ogg","rohan03.ogg","rohan04.ogg","evil_crow.ogg", "d_saw_short3.ogg","d_chicken2.ogg","harad01.ogg","harad02.ogg","harad03.ogg"]),
+("umbar_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["sea_seagulls.ogg", "sea_seaside.ogg"]),
+("dunland_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["evil_crow.ogg", "good_eagle01.ogg","d_dog1.ogg","d_dog2.ogg","d_dog3.ogg","d_dog7.ogg","d_carpenter1.ogg"]),
+("orc_occasional"     ,sf_2d|sf_priority_8|sf_vol_4,["evil_flies_loop.ogg","evil_crow.ogg", "orc_warg.ogg","orc_beast01.ogg","orc_beast02.ogg","orc_beast03.ogg"]),
+("guldur_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["evil_crow.ogg","orc_beast01.ogg","orc_beast02.ogg","orc_beast03.ogg"]),
+("moria_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["moria01.ogg","moria02.ogg"]),
+("isengard_occasional",sf_2d|sf_priority_8|sf_vol_4,["moria02.ogg", "evil_crow.ogg","orc_beast01.ogg","orc_beast02.ogg","orc_beast03.ogg", "d_saw_short3.ogg","orc_warg.ogg","d_blacksmith2.ogg","dwarves01.ogg","dwarves02.ogg","osgiliath04.ogg","d_carpenter1.ogg"]),
+("urukhai_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["evil_crow.ogg","orc_beast01.ogg","orc_beast02.ogg","orc_beast03.ogg", "orc_warg.ogg","d_carpenter1.ogg"]),
+("seaside_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.ogg","good_bird02.ogg","good_bird03.ogg","sea_seagulls.ogg", "sea_seaside.ogg", "d_blacksmith2.ogg"]),
+("morgul_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["morgul01.ogg","morgul02.ogg"]),
+("eosgi_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["orc_beast01.ogg","orc_beast02.ogg","orc_beast03.ogg","osgiliath01.ogg","osgiliath02.ogg","osgiliath03.ogg","osgiliath04.ogg","osgiliath05.ogg"]),
+("wosgi_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["osgiliath01.ogg","osgiliath02.ogg","osgiliath03.ogg","osgiliath04.ogg","osgiliath05.ogg"]),
+ ##TLD end 
  
 ]

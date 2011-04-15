@@ -225,5 +225,24 @@ snd_gondor_ambiance = 223
 snd_rohan_ambiance = 224
 snd_dwarf_ambiance = 225
 snd_harad_ambiance = 226
+snd_gondor_occasional = 227
+snd_elves_occasional = 228
+snd_beorn_occasional = 229
+snd_rohan_occasional = 230
+snd_dwarf_occasional = 231
+snd_dale_occasional = 232
+snd_rhun_occasional = 233
+snd_harad_occasional = 234
+snd_umbar_occasional = 235
+snd_dunland_occasional = 236
+snd_orc_occasional = 237
+snd_guldur_occasional = 238
+snd_moria_occasional = 239
+snd_isengard_occasional = 240
+snd_urukhai_occasional = 241
+snd_seaside_occasional = 242
+snd_morgul_occasional = 243
+snd_eosgi_occasional = 244
+snd_wosgi_occasional = 245
 
 

@@ -1,5 +1,5 @@
 soundsfile version 2
-539
+572
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -539,7 +539,40 @@ soundsfile version 2
  rohan_people_loop.ogg 899
  dwarf_men_loop.ogg 899
  harad_loop.ogg 899
-227
+ good_eagle01.ogg 1153
+ gondor_army.ogg 1153
+ good_workshop.ogg 1153
+ good_bird01.ogg 1153
+ good_bird02.ogg 1153
+ good_bird03.ogg 1153
+ good_bird_wings.ogg 1153
+ rohan01.ogg 1153
+ rohan02.ogg 1153
+ rohan03.ogg 1153
+ rohan04.ogg 1153
+ dwarves01.ogg 1153
+ dwarves02.ogg 1153
+ osgiliath05.ogg 1153
+ osgiliath02.ogg 1153
+ osgiliath04.ogg 1153
+ evil_crow.ogg 1153
+ harad01.ogg 1153
+ harad02.ogg 1153
+ harad03.ogg 1153
+ sea_seagulls.ogg 1153
+ sea_seaside.ogg 1153
+ evil_flies_loop.ogg 1153
+ orc_warg.ogg 1153
+ orc_beast01.ogg 1153
+ orc_beast02.ogg 1153
+ orc_beast03.ogg 1153
+ moria01.ogg 1153
+ moria02.ogg 1153
+ morgul01.ogg 1153
+ morgul02.ogg 1153
+ osgiliath01.ogg 1153
+ osgiliath03.ogg 1153
+246
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -767,3 +800,22 @@ snd_gondor_ambiance 899 1 535
 snd_rohan_ambiance 899 1 536 
 snd_dwarf_ambiance 899 1 537 
 snd_harad_ambiance 899 1 538 
+snd_gondor_occasional 1153 5 539 540 356 541 348 
+snd_elves_occasional 1153 4 542 543 544 545 
+snd_beorn_occasional 1153 7 542 543 544 541 355 348 354 
+snd_rohan_occasional 1153 10 546 547 548 549 541 539 542 356 348 352 
+snd_dwarf_occasional 1153 5 550 551 356 552 553 
+snd_dale_occasional 1153 9 542 543 544 541 355 356 348 352 554 
+snd_rhun_occasional 1153 8 546 547 548 549 555 355 356 348 
+snd_harad_occasional 1153 10 352 547 548 549 555 355 353 556 557 558 
+snd_umbar_occasional 1153 2 559 560 
+snd_dunland_occasional 1153 7 555 539 345 346 347 348 354 
+snd_orc_occasional 1153 6 561 555 562 563 564 565 
+snd_guldur_occasional 1153 4 555 563 564 565 
+snd_moria_occasional 1153 2 566 567 
+snd_isengard_occasional 1153 12 567 555 563 564 565 355 562 356 550 551 554 354 
+snd_urukhai_occasional 1153 6 555 563 564 565 562 354 
+snd_seaside_occasional 1153 6 542 543 544 559 560 356 
+snd_morgul_occasional 1153 2 568 569 
+snd_eosgi_occasional 1153 8 563 564 565 570 553 571 554 552 
+snd_wosgi_occasional 1153 5 570 553 571 554 552 

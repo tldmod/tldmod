@@ -1881,39 +1881,41 @@ tfr_name_strings_begin = "str_tfr_name_strings_begin"
 
 # TLD faction ranks end
 ###############################################
-faction_strings =[    #shop rumors begin     shop rumors end          loop_ambient_day       loop_ambient_always     occ_ambient1
-    ("fac_gondor"  ,"str_gondor_rumor_begin","str_other_rumor_begin" ,"snd_gondor_ambiance" ,"snd_wind_ambiance"),
-    ("fac_rohan"   ,"str_rohan_rumor_begin" ,"str_gondor_rumor_begin","snd_rohan_ambiance"  ,"snd_wind_ambiance"),
-    ("fac_isengard","str_default_rumor"     , "str_rohan_rumor_begin","snd_orcs_ambiance"   ,"snd_wind_ambiance"),
-    ("fac_mordor"  ,"str_default_rumor"     , "str_rohan_rumor_begin",0                     ,"snd_wind_ambiance"),
-    ("fac_harad"   ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_harad_ambiance"  ,"snd_wind_ambiance"),
-    ("fac_rhun"    ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_evilmen_ambiance","snd_wind_ambiance"),
-    ("fac_khand"   ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_evilmen_ambiance","snd_wind_ambiance"),
-    ("fac_umbar"   ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_evilmen_ambiance","snd_water_waves_ambiance"),
-    ("fac_lorien"  ,"str_default_rumor"     , "str_rohan_rumor_begin",0                     ,"snd_goodforest_ambiance"),
-    ("fac_imladris","str_default_rumor"     , "str_rohan_rumor_begin",0                     ,"snd_goodforest_ambiance"),
-    ("fac_woodelf" ,"str_default_rumor"     , "str_rohan_rumor_begin",0                     ,"snd_goodforest_ambiance"),
-    ("fac_moria"   ,"str_default_rumor"     , "str_rohan_rumor_begin",0                     ,"snd_moria_ambiance"),
-    ("fac_guldur"  ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_orcs_ambiance"   ,"snd_evilforest_ambiance"),
-    ("fac_gundabad","str_default_rumor"     , "str_rohan_rumor_begin","snd_orcs_ambiance"   ,"snd_evilforest_ambiance"),
-    ("fac_dale"    ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_town_ambiance"   ,"snd_wind_ambiance"),
-    ("fac_dwarf"   ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_dwarf_ambiance"  ,"snd_wind_ambiance"),
-    ("fac_dunland" ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_evilmen_ambiance","snd_wind_ambiance"),
-    ("fac_beorn"   ,"str_default_rumor"     , "str_rohan_rumor_begin","snd_town_ambiance"   ,"snd_goodforest_ambiance"),
+faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)
+ ("fac_gondor","str_gondor_rumor_begin","str_other_rumor_begin" ,"snd_gondor_ambiance" ,"snd_wind_ambiance"      ,"snd_gondor_occasional"),
+ ("fac_rohan"  ,"str_rohan_rumor_begin","str_gondor_rumor_begin","snd_rohan_ambiance"  ,"snd_wind_ambiance"      ,"snd_rohan_occasional"),
+ ("fac_isengard","str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_orcs_ambiance"   ,"snd_wind_ambiance"      ,"snd_urukhai_occasional"),
+ ("fac_mordor"  ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_wind_ambiance"      ,"snd_orc_occasional"),
+ ("fac_harad"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_harad_ambiance"  ,"snd_wind_ambiance"      ,"snd_harad_occasional"),
+ ("fac_rhun"    ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
+ ("fac_khand"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
+ ("fac_umbar"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_evilmen_ambiance","snd_water_waves_ambiance","snd_umbar_occasional"),
+ ("fac_lorien"  ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
+ ("fac_imladris","str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
+ ("fac_woodelf" ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
+ ("fac_moria"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_moria_ambiance"     ,"snd_moria_occasional"),
+ ("fac_guldur"  ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_orcs_ambiance"   ,"snd_evilforest_ambiance","snd_orc_occasional"),
+ ("fac_gundabad","str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_orcs_ambiance"   ,"snd_wind_ambiance"      ,"snd_orc_occasional"),
+ ("fac_dale"    ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_rohan_ambiance"  ,"snd_wind_ambiance"      ,"snd_dale_occasional"),
+ ("fac_dwarf"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_dwarf_ambiance"  ,"snd_wind_ambiance"      ,"snd_dwarf_occasional"),
+ ("fac_dunland" ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_dunland_occasional"),
+ ("fac_beorn"   ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_rohan_ambiance"  ,"snd_goodforest_ambiance","snd_beorn_occasional"),
 ]
 # specific ambient sounds for selected centers
-center_sounds=[#center      specific day ambiance ,specific always ambiance
-    ("p_town_dol_amroth"   ,"snd_town_ambiance"   ,"snd_water_waves_ambiance"),
-    ("p_town_pelargir"     ,"snd_town_ambiance"   ,"snd_water_wavesplash_ambiance"),
-    ("p_town_edhellond"    ,"snd_town_ambiance"   ,"snd_water_waves_ambiance"),
-    ("p_town_cair_andros"  ,0                     ,"snd_water_splash_ambiance"),
-    ("p_town_henneth_annun",0                     ,"snd_henneth_ambiance"),
-    ("p_town_isengard"     ,0                     ,"snd_isengard_ambiance"),
-    ("p_town_west_osgiliath",0                    ,"snd_wind_ambiance"),
-    ("p_town_esgaroth"     ,"snd_town_ambiance"   ,"snd_water_splash_ambiance"),
-    ("p_town_lossarnach"   ,0                     ,"snd_goodforest_ambiance"),
-    ("p_town_erebor"       ,"snd_town_ambiance"   ,"snd_moria_ambiance"),
-    ("p_town_minas_morgul" ,0                     ,"snd_morgul_ambiance"),
+center_sounds=[#center      specific day ambiance , specific always ambiance      , occasional sounds (later to be divided into occasional nature and occasional faction)
+    ("p_town_dol_amroth"   ,"snd_gondor_ambiance" ,"snd_water_waves_ambiance"     ,"snd_seaside_occasional"),
+    ("p_town_pelargir"     ,"snd_gondor_ambiance" ,"snd_water_wavesplash_ambiance","snd_seaside_occasional"),
+    ("p_town_edhellond"    ,"snd_gondor_ambiance" ,"snd_water_waves_ambiance"     ,"snd_seaside_occasional"),
+    ("p_town_cair_andros"  ,0                     ,"snd_water_splash_ambiance"    ,"snd_elves_occasional"),
+    ("p_town_henneth_annun",0                     ,"snd_henneth_ambiance"         ,"snd_elves_occasional"),
+    ("p_town_isengard"     ,"snd_orcs_ambiance"   ,"snd_isengard_ambiance"        ,"snd_isengard_occasional"),
+    ("p_town_west_osgiliath",0                    ,"snd_wind_ambiance"            ,"snd_wosgi_occasional"),
+    ("p_town_east_osgiliath",0                    ,"snd_wind_ambiance"            ,"snd_eosgi_occasional"),
+    ("p_town_esgaroth"     ,"snd_town_ambiance"   ,"snd_water_splash_ambiance"    ,"snd_dale_occasional"),
+    ("p_town_lossarnach"   ,"snd_gondor_ambiance" ,"snd_goodforest_ambiance"      ,"snd_elves_occasional"),
+    ("p_town_pinnath_gelin","snd_gondor_ambiance" ,"snd_goodforest_ambiance"      ,"snd_elves_occasional"),
+    ("p_town_erebor"       ,"snd_town_ambiance"   ,"snd_moria_ambiance"           ,"snd_dwarf_occasional"),
+    ("p_town_minas_morgul" ,0                     ,"snd_morgul_ambiance"          ,"snd_morgul_occasional"),
 ] 
 
 ## tableau meshes list for factions
@@ -2035,6 +2037,6 @@ Team2_Starting_Point	= 14	#pos14
 Team3_Starting_Point	= 16	#pos16
 ### End of formAI_constants
 
-### orc bonus for party headcount (each orc in main party adds nom/denom to max party size)
+### orc bonus for party headcount (each tf_orc in main party adds nom/denom to max party size)
 orc_bonus_nominator   = 2
 orc_bonus_denominator = 3

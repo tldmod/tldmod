@@ -488,10 +488,10 @@ itemsfile version 2
  itm_arnor_armor_c Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger 0  16842765 0 1530 0 19.000000 100 0 42 10 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 1930 0 19.000000 100 0 44 13 0 0 0 0 0 0 0 0
+ itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 1930 0 19.000000 100 0 28 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 2710 0 23.000000 100 0 49 14 0 0 0 0 0 0 0 0
+ itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 2710 0 23.000000 100 0 32 10 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_f Arnorian_High_Armor Arnorian_High_Armor 1  arnor_knight 0  16842765 0 3100 0 24.000000 100 0 50 15 0 0 0 0 0 0 0 0
@@ -578,13 +578,13 @@ itemsfile version 2
  itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  rivendellmountedarcher 0  16842765 0 1259 0 18.000000 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
- itm_gon_footman Gondor_Mail_Shirt Gondor_Mail_Shirt 1  gondor_footman 0  16842765 0 995 0 17.000000 100 0 39 6 0 0 0 0 0 0 0 0
+ itm_gon_footman Gondor_Mail_Shirt Gondor_Mail_Shirt 1  gondor_footman 0  16842765 0 995 0 17.000000 100 0 20 6 0 0 0 0 0 0 0 0
 0
 
- itm_gon_jerkin Gondor_Jerkin Gondor_Jerkin 1  gondor_jerkin 0  16842765 0 830 0 10.000000 100 0 36 8 0 0 0 0 0 0 0 0
+ itm_gon_jerkin Gondor_Jerkin Gondor_Jerkin 1  gondor_jerkin 0  16842765 0 830 0 10.000000 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_gon_regular Gondor_Heavy_Mail Gondor_Heavy_Mail 1  gondor_regular 0  16842765 0 1295 0 17.000000 100 0 45 12 0 0 0 0 0 0 0 0
+ itm_gon_regular Gondor_Heavy_Mail Gondor_Heavy_Mail 1  gondor_regular 0  16842765 0 1295 0 17.000000 100 0 40 12 0 0 0 0 0 0 0 0
 0
 
  itm_gon_bowman Gondor_Gambeson Gondor_Gambeson 1  gondor_bowman 0  553713677 0 280 0 5.000000 100 0 23 8 0 0 0 0 0 0 0 0
@@ -593,19 +593,19 @@ itemsfile version 2
  itm_gon_archer Gondor_Gambeson_with_Cloak Gondor_Gambeson_with_Cloak 1  gondor_archer 0  553713677 0 300 0 5.000000 100 0 26 8 0 0 0 0 0 0 0 0
 0
 
- itm_gon_noble_cloak Gondor_Noble's_Jerkin Gondor_Noble's_Jerkin 1  gondor_noble_cloak 0  16842765 0 830 0 10.000000 100 0 39 8 0 0 0 0 0 0 0 0
+ itm_gon_noble_cloak Gondor_Noble's_Jerkin Gondor_Noble's_Jerkin 1  gondor_noble_cloak 0  16842765 0 830 0 10.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_gon_squire Gondor_Mail_with_Cloak Gondor_Mail_with_Cloak 1  gondor_squire 0  16842765 0 1020 0 17.000000 100 0 40 9 0 0 0 0 0 0 0 0
+ itm_gon_squire Gondor_Mail_with_Cloak Gondor_Mail_with_Cloak 1  gondor_squire 0  16842765 0 1020 0 17.000000 100 0 24 9 0 0 0 0 0 0 0 0
 0
 
  itm_gon_knight Gondor_Heavy_Mail_and_Cloak Gondor_Heavy_Mail_and_Cloak 1  gondor_knight 0  16842765 0 1295 0 17.000000 100 0 45 12 0 0 0 0 0 0 0 0
 0
 
- itm_gon_ranger_cloak Gondor_Ranger_Cloak Gondor_Ranger_Cloak 1  gondor_ranger_cloak 0  16842765 0 830 0 10.000000 100 0 36 8 0 0 0 0 0 0 0 0
+ itm_gon_ranger_cloak Gondor_Ranger_Cloak Gondor_Ranger_Cloak 1  gondor_ranger_cloak 0  16842765 0 830 0 10.000000 100 0 25 8 0 0 0 0 0 0 0 0
 0
 
- itm_gon_ranger_skirt Gondor_Ranger_Skirt Gondor_Ranger_Skirt 1  gondor_ranger_skirt 0  16842765 0 990 0 10.000000 100 0 39 12 0 0 0 0 0 0 0 0
+ itm_gon_ranger_skirt Gondor_Ranger_Skirt Gondor_Ranger_Skirt 1  gondor_ranger_skirt 0  16842765 0 990 0 10.000000 100 0 30 12 0 0 0 0 0 0 0 0
 0
 
  itm_gon_steward_guard Gondor_Steward_Guard_Armor Gondor_Steward_Guard_Armor 1  gondor_steward_guard 0  16842765 0 1720 0 22.000000 100 0 48 14 0 0 0 0 0 0 0 0
@@ -683,22 +683,22 @@ itemsfile version 2
  itm_blackroot_archer Blackroot_Vale_Archer_Armor Blackroot_Vale_Archer_Armor 1  blackroot_archer 0  16842765 0 321 0 6.000000 100 0 23 6 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_bowman Blackroot_Vale_Bowman_Armor Blackroot_Vale_Bowman_Armor 1  blackroot_bowman 0  16842765 0 730 0 10.000000 100 0 36 8 0 0 0 0 0 0 0 0
+ itm_blackroot_bowman Blackroot_Vale_Bowman_Armor Blackroot_Vale_Bowman_Armor 1  blackroot_bowman 0  16842765 0 730 0 10.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_footman Blackroot_Vale_Footman_Armor Blackroot_Vale_Footman_Armor 1  blackroot_footman 0  16842765 0 690 0 10.000000 100 0 34 7 0 0 0 0 0 0 0 0
+ itm_blackroot_footman Blackroot_Vale_Footman_Armor Blackroot_Vale_Footman_Armor 1  blackroot_footman 0  16842765 0 690 0 10.000000 100 0 24 7 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_warrior Blackroot_Vale_Warrior_Armor Blackroot_Vale_Warrior_Armor 1  blackroot_warrior 0  16842765 0 795 0 17.000000 100 0 39 6 0 0 0 0 0 0 0 0
+ itm_blackroot_warrior Blackroot_Vale_Warrior_Armor Blackroot_Vale_Warrior_Armor 1  blackroot_warrior 0  16842765 0 795 0 17.000000 100 0 26 6 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_leader Blackroot_Vale_Leader_Armor Blackroot_Vale_Leader_Armor 1  blackroot_leader 0  16842765 0 820 0 17.000000 100 0 40 8 0 0 0 0 0 0 0 0
+ itm_blackroot_leader Blackroot_Vale_Leader_Armor Blackroot_Vale_Leader_Armor 1  blackroot_leader 0  16842765 0 820 0 17.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
  itm_blackroot_hood Blackroot_Hood Blackroot_Hood 1  blackroot_hood 0  1073807372 0 30 0 1.000000 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dol_hauberk Dol_Amroth_Hauberk Dol_Amroth_Hauberk 1  dol_hauberk 0  16842765 0 1190 0 19.000000 100 0 40 12 0 0 0 0 0 0 0 0
+ itm_dol_hauberk Dol_Amroth_Hauberk Dol_Amroth_Hauberk 1  dol_hauberk 0  16842765 0 1190 0 19.000000 100 0 30 12 0 0 0 0 0 0 0 0
 0
 
  itm_dol_heavy_mail Dol_Amroth_Heavy_Mail Dol_Amroth_Heavy_Mail 1  dol_heavy_mail 0  16842765 0 1370 0 18.000000 100 0 46 8 0 0 0 0 0 0 0 0
@@ -710,7 +710,7 @@ itemsfile version 2
  itm_dol_shirt Dol_Amroth_Shirt Dol_Amroth_Shirt 1  dol_shirt 0  553713677 0 260 0 5.000000 100 0 20 5 0 0 0 0 0 0 0 0
 0
 
- itm_dol_very_heavy_mail Dol_Amroth_Very_Heavy_Mail Dol_Amroth_Very_Heavy_Mail 1  dol_very_heavy_mail 0  16842765 0 3300 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_dol_very_heavy_mail Dol_Amroth_Very_Heavy_Mail Dol_Amroth_Very_Heavy_Mail 1  dol_very_heavy_mail 0  16842765 0 3300 0 25.000000 100 0 48 16 0 0 0 0 0 0 0 0
 0
 
  itm_dol_greaves Dol_Amroth_Greaves Dol_Amroth_Greaves 1  dol_greaves 0  69390 0 1746 0 3.000000 100 0 0 31 0 0 0 0 0 0 0 0
@@ -719,61 +719,61 @@ itemsfile version 2
  itm_dol_shoes Dol_Amroth_Light_Boots Dol_Amroth_Light_Boots 1  dol_shoes 0  536940302 0 75 0 1.000000 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_clansman Lamedon_Clansman_Armor Lamedon_Clansman_Armor 1  lamedon_clansman 0  16842765 0 795 0 17.000000 100 0 39 6 0 0 0 0 0 0 0 0
+ itm_lamedon_clansman Lamedon_Clansman_Armor Lamedon_Clansman_Armor 1  lamedon_clansman 0  16842765 0 795 0 17.000000 100 0 14 6 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_footman Lamedon_Footman_Armor Lamedon_Footman_Armor 1  lamedon_footman 0  16842765 0 810 0 17.000000 100 0 40 6 0 0 0 0 0 0 0 0
+ itm_lamedon_footman Lamedon_Footman_Armor Lamedon_Footman_Armor 1  lamedon_footman 0  16842765 0 810 0 17.000000 100 0 24 6 0 0 0 0 0 0 0 0
 0
 
  itm_lamedon_knight Lamedon_Knight_Armor Lamedon_Knight_Armor 1  lamedon_knight 0  16842765 0 1820 0 22.000000 100 0 49 15 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_leader_surcoat_cloak Lamedon_Leader_Armor Lamedon_Leader_Armor 1  lamedon_leader_surcoat_cloak 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lamedon_leader_surcoat_cloak Lamedon_Leader_Armor Lamedon_Leader_Armor 1  lamedon_leader_surcoat_cloak 0  16842765 0 500 0 25.000000 100 0 35 12 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_warrior Lamedon_Warrior_Armor Lamedon_Warrior_Armor 1  lamedon_warrior 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lamedon_warrior Lamedon_Warrior_Armor Lamedon_Warrior_Armor 1  lamedon_warrior 0  16842765 0 500 0 25.000000 100 0 24 8 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_veteran Lamedon_Veteran_Armor Lamedon_Veteran_Armor 1  lamedon_veteran 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lamedon_veteran Lamedon_Veteran_Armor Lamedon_Veteran_Armor 1  lamedon_veteran 0  16842765 0 500 0 25.000000 100 0 30 9 0 0 0 0 0 0 0 0
 0
 
- itm_lamedon_vet_warrior Lamedon_Veteran_Warrior_Armor Lamedon_Veteran_Warrior_Armor 1  lamedon_vet_warrior 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lamedon_vet_warrior Lamedon_Veteran_Warrior_Armor Lamedon_Veteran_Warrior_Armor 1  lamedon_vet_warrior 0  16842765 0 500 0 25.000000 100 0 26 8 0 0 0 0 0 0 0 0
 0
 
  itm_lamedon_hood Lamedon_Hood Lamedon_Hood 1  lamedon_hood 0  536936460 0 35 0 1.250000 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_archer Pinnath_Gelin_Archer_Armor Pinnath_Gelin_Archer_Armor 1  pinnath_archer 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pinnath_archer Pinnath_Gelin_Archer_Armor Pinnath_Gelin_Archer_Armor 1  pinnath_archer 0  16842765 0 500 0 25.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_footman Pinnath_Gelin_Footman_Armor Pinnath_Gelin_Footman_Armor 1  pinnath_footman 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pinnath_footman Pinnath_Gelin_Footman_Armor Pinnath_Gelin_Footman_Armor 1  pinnath_footman 0  16842765 0 500 0 25.000000 100 0 24 8 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_leader Pinnath_Gelin_Leader_Armor Pinnath_Gelin_Leader_Armor 1  pinnath_leader 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pinnath_leader Pinnath_Gelin_Leader_Armor Pinnath_Gelin_Leader_Armor 1  pinnath_leader 0  16842765 0 500 0 25.000000 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_vet_footman Pinnath_Gelin_Veteran_Footman_Armor Pinnath_Gelin_Veteran_Footman_Armor 1  pinnath_vet_footman 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pinnath_vet_footman Pinnath_Gelin_Veteran_Footman_Armor Pinnath_Gelin_Veteran_Footman_Armor 1  pinnath_vet_footman 0  16842765 0 500 0 25.000000 100 0 28 12 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_warrior Pinnath_Gelin_Warrior_Armor Pinnath_Gelin_Warrior_Armor 1  pinnath_warrior 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pinnath_warrior Pinnath_Gelin_Warrior_Armor Pinnath_Gelin_Warrior_Armor 1  pinnath_warrior 0  16842765 0 500 0 25.000000 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
- itm_pel_footman Pelargir_Footman_Armor Pelargir_Footman_Armor 1  pelargir_footman 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pel_footman Pelargir_Footman_Armor Pelargir_Footman_Armor 1  pelargir_footman 0  16842765 0 500 0 25.000000 100 0 30 8 0 0 0 0 0 0 0 0
 0
 
- itm_pel_jerkin Pelargir_Jerkin Pelargir_Jerkin 1  pelargir_jerkin 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pel_jerkin Pelargir_Jerkin Pelargir_Jerkin 1  pelargir_jerkin 0  16842765 0 500 0 25.000000 100 0 14 6 0 0 0 0 0 0 0 0
 0
 
- itm_pel_leader Pelargir_Leader_Armor Pelargir_Leader_Armor 1  pelargir_leader 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pel_leader Pelargir_Leader_Armor Pelargir_Leader_Armor 1  pelargir_leader 0  16842765 0 500 0 25.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
- itm_pel_marine Pelargir_Marine Pelargir_Marine 1  pelargir_marine 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pel_marine Pelargir_Marine Pelargir_Marine 1  pelargir_marine 0  16842765 0 500 0 25.000000 100 0 34 10 0 0 0 0 0 0 0 0
 0
 
- itm_pelargir_marine_leader Pelargir_Marine_Leader Pelargir_Marine_Leader 1  pelargir_marine_leader 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pelargir_marine_leader Pelargir_Marine_Leader Pelargir_Marine_Leader 1  pelargir_marine_leader 0  16842765 0 500 0 25.000000 100 0 36 12 0 0 0 0 0 0 0 0
 0
 
- itm_pelargir_regular Pelargir_Regular Pelargir_Regular 1  pelargir_regular 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_pelargir_regular Pelargir_Regular Pelargir_Regular 1  pelargir_regular 0  16842765 0 500 0 25.000000 100 0 28 8 0 0 0 0 0 0 0 0
 0
 
  itm_pelargir_hood Pelargir_Hood Pelargir_Hood 1  pelargir_hood 0  536936460 0 35 0 1.250000 100 14 0 0 0 0 0 0 0 0 0 0
@@ -788,22 +788,22 @@ itemsfile version 2
  itm_pelargir_greaves Pelargir_Greaves Pelargir_Greaves 1  pelargir_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_shirt Lossarnach_Shirt Lossarnach_Shirt 1  lossarnach_shirt 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_shirt Lossarnach_Shirt Lossarnach_Shirt 1  lossarnach_shirt 0  16842765 0 500 0 25.000000 100 0 12 4 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_axeman Lossarnach_Axeman_Armor Lossarnach_Axeman_Armor 1  lossarnach_axeman 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_axeman Lossarnach_Axeman_Armor Lossarnach_Axeman_Armor 1  lossarnach_axeman 0  16842765 0 500 0 25.000000 100 0 23 4 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_leader Lossarnach_Leader_Armor Lossarnach_Leader_Armor 1  lossarnach_leader 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_leader Lossarnach_Leader_Armor Lossarnach_Leader_Armor 1  lossarnach_leader 0  16842765 0 500 0 25.000000 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_vet_axeman Lossarnach_Veteran_Axeman_Armor Lossarnach_Veteran_Axeman_Armor 1  lossarnach_vet_axeman 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_vet_axeman Lossarnach_Veteran_Axeman_Armor Lossarnach_Veteran_Axeman_Armor 1  lossarnach_vet_axeman 0  16842765 0 500 0 25.000000 100 0 28 4 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_vet_warrior Lossarnach_Veteran_Warrior_Armor Lossarnach_Veteran_Warrior_Armor 1  lossarnach_vet_warrior 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_vet_warrior Lossarnach_Veteran_Warrior_Armor Lossarnach_Veteran_Warrior_Armor 1  lossarnach_vet_warrior 0  16842765 0 500 0 25.000000 100 0 32 8 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_warrior Lossarnach_Warrior_Armor Lossarnach_Warrior_Armor 1  lossarnach_warrior 0  16842765 0 500 0 25.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_lossarnach_warrior Lossarnach_Warrior_Armor Lossarnach_Warrior_Armor 1  lossarnach_warrior 0  16842765 0 500 0 25.000000 100 0 30 8 0 0 0 0 0 0 0 0
 0
 
  itm_lossarnach_cloth_cap Lossarnach_Cloth_Cap Lossarnach_Cloth_Cap 1  lossarnach_cloth_cap 0  65548 0 300 0 1.000000 100 15 0 0 0 0 0 0 0 0 0 0
@@ -1527,13 +1527,13 @@ itemsfile version 2
  itm_rohan_armor_i Rohan_Long_Mail Rohan_Long_Mail 1  M_roh_long_shirt_cape_c_M3 0  16842765 0 152 0 15.000000 100 0 28 10 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_j Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_a_M6 0  16842765 0 152 0 15.000000 100 0 40 9 0 0 0 0 0 0 0 0
+ itm_rohan_armor_j Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_a_M6 0  16842765 0 152 0 15.000000 100 0 32 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_k Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_b_M7 0  16842765 0 152 0 15.000000 100 0 40 9 0 0 0 0 0 0 0 0
+ itm_rohan_armor_k Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_b_M7 0  16842765 0 152 0 15.000000 100 0 32 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_l Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_c_M8 0  16842765 0 152 0 15.000000 100 0 40 9 0 0 0 0 0 0 0 0
+ itm_rohan_armor_l Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_c_M8 0  16842765 0 152 0 15.000000 100 0 32 9 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_armor_m Rohan_Scale_Armor Rohan_Scale_Armor 1  H_roh_scale_cape_a_M10 0  16842765 0 152 0 15.000000 100 0 40 9 0 0 0 0 0 0 0 0

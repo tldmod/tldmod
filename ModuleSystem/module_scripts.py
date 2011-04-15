@@ -1138,6 +1138,7 @@ scripts = [
 # ambient sounds
 	  (faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_day   , faction_strings[x][3])    for x in range(len(faction_init)) ]+[
 	  (faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_always, faction_strings[x][4])    for x in range(len(faction_init)) ]+[
+	  (faction_set_slot, faction_strings[x][0], slot_faction_occasional_sound1_day,faction_strings[x][5])    for x in range(len(faction_init)) ]+[
 
 # fixed faction info      
 	  (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
@@ -1294,6 +1295,8 @@ scripts = [
 		(party_set_slot, ":town_no", slot_center_ambient_sound_day, ":tmp"),
         (faction_get_slot, ":tmp", ":faction", slot_faction_ambient_sound_always),
 		(party_set_slot, ":town_no", slot_center_ambient_sound_always, ":tmp"),
+        (faction_get_slot, ":tmp", ":faction", slot_faction_occasional_sound1_day),
+		(party_set_slot, ":town_no", slot_center_occasional_sound1_day, ":tmp"),
       (try_end),
 	  
 	  ]+[
@@ -1305,6 +1308,7 @@ scripts = [
 # specific centers ambient sounds
       (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_day   , center_sounds[x][1])  for x in range(len(center_sounds)) ]+[
       (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_always, center_sounds[x][2])  for x in range(len(center_sounds)) ]+[
+      (party_set_slot, center_sounds[x][0], slot_center_occasional_sound1_day,center_sounds[x][3])  for x in range(len(center_sounds)) ]+[
 
 	  ]+[
 
@@ -11458,42 +11462,15 @@ scripts = [
   # script_center_ambiance_sounds
   # to be called every two seconds. TODO for TLD centers
   ("center_ambiance_sounds",
-    [   #(assign, ":sound_1", -1),
-        #(assign, ":sound_2", -1),
-        #(assign, ":sound_3", -1),
-        #(assign, ":sound_4", -1),
-        #(assign, ":sound_5", -1),
-        (try_begin),
-          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_village),
-          (try_begin),
-            (neg|is_currently_night),
-        #    (assign, ":sound_3", "snd_distant_dog_bark"),
-        #    (assign, ":sound_3", "snd_distant_chicken"),
-          (else_try),
-        #    (assign, ":sound_1", "snd_distant_dog_bark"),
-        #    (assign, ":sound_2", "snd_distant_owl"),
-          (try_end),
-        (else_try),
-          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (try_begin),
-            (neg|is_currently_night),
-        #    (assign, ":sound_1", "snd_distant_carpenter"),
-        #    (assign, ":sound_2", "snd_distant_blacksmith"),
-        #    (assign, ":sound_3", "snd_distant_dog_bark"),
-          (else_try),
-        #    (assign, ":sound_1", "snd_distant_dog_bark"),
-          (try_end),
-        (try_end),
-        (try_begin),
-        #  (store_random_in_range, ":r", 0, 7),
-
-        #  (try_begin),(eq, ":r", 1),(ge, ":sound_1", 0),(play_sound, ":sound_1"),
-        #  (else_try) ,(eq, ":r", 2),(ge, ":sound_2", 0),(play_sound, ":sound_2"),
-        #  (else_try) ,(eq, ":r", 3),(ge, ":sound_3", 0),(play_sound, ":sound_3"),
-        #  (else_try) ,(eq, ":r", 4),(ge, ":sound_4", 0),(play_sound, ":sound_4"),
-        #  (else_try) ,(eq, ":r", 5),(ge, ":sound_5", 0),(play_sound, ":sound_5"),
-        #  (try_end),
-        (try_end),
+   [(try_begin),
+      (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+      (neg|is_currently_night),
+        (party_get_slot,":sound","$g_encountered_party", slot_center_occasional_sound1_day), 
+        (store_random_in_range, ":r", 0, 7),
+        (ge, ":r", 4),
+           (play_sound, ":sound"), 
+#		   (assign,reg0,":sound"),(display_message,"@Sound played: {reg0}"),
+    (try_end),
   ]),
 
   # script_center_set_walker_to_type
