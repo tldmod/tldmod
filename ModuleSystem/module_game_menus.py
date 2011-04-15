@@ -2247,7 +2247,7 @@ game_menus = [
 
   ("game_options",0,"Click on an option to toggle:","none",[],
     [
-      ("game_options_restrict items",[
+      ("game_options_restrict_items",[
          (try_begin),
            (neq, "$g_crossdressing_activated", 0),
            (str_store_string, s7, "@OFF"),
