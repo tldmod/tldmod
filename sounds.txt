@@ -1,5 +1,5 @@
 soundsfile version 2
-572
+573
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -559,6 +559,7 @@ soundsfile version 2
  harad01.ogg 1153
  harad02.ogg 1153
  harad03.ogg 1153
+ silence.ogg 1153
  sea_seagulls.ogg 1153
  sea_seaside.ogg 1153
  evil_flies_loop.ogg 1153
@@ -808,14 +809,14 @@ snd_dwarf_occasional 1153 5 550 551 356 552 553
 snd_dale_occasional 1153 9 542 543 544 541 355 356 348 352 554 
 snd_rhun_occasional 1153 8 546 547 548 549 555 355 356 348 
 snd_harad_occasional 1153 10 352 547 548 549 555 355 353 556 557 558 
-snd_umbar_occasional 1153 2 559 560 
+snd_umbar_occasional 1153 3 559 560 561 
 snd_dunland_occasional 1153 7 555 539 345 346 347 348 354 
-snd_orc_occasional 1153 6 561 555 562 563 564 565 
-snd_guldur_occasional 1153 4 555 563 564 565 
-snd_moria_occasional 1153 2 566 567 
-snd_isengard_occasional 1153 12 567 555 563 564 565 355 562 356 550 551 554 354 
-snd_urukhai_occasional 1153 6 555 563 564 565 562 354 
-snd_seaside_occasional 1153 6 542 543 544 559 560 356 
-snd_morgul_occasional 1153 2 568 569 
-snd_eosgi_occasional 1153 8 563 564 565 570 553 571 554 552 
-snd_wosgi_occasional 1153 5 570 553 571 554 552 
+snd_orc_occasional 1153 6 562 555 563 564 565 566 
+snd_guldur_occasional 1153 4 555 564 565 566 
+snd_moria_occasional 1153 4 559 559 567 568 
+snd_isengard_occasional 1153 12 568 555 564 565 566 355 563 356 550 551 554 354 
+snd_urukhai_occasional 1153 6 555 564 565 566 563 354 
+snd_seaside_occasional 1153 6 542 543 544 560 561 356 
+snd_morgul_occasional 1153 9 559 559 559 559 559 559 559 569 570 
+snd_eosgi_occasional 1153 8 564 565 566 571 553 572 554 552 
+snd_wosgi_occasional 1153 5 571 553 572 554 552 

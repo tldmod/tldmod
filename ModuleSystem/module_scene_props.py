@@ -1836,5 +1836,6 @@ scene_props = [
 
 ("rohan_burial_mound",0,"roh_burial_mound","0", []), 
 ("tree_huorn",0,"tree_huorn","0", []), 
+("waterfall",0,"waterfall","0", []), 
 
 ]

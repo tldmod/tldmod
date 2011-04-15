@@ -152,7 +152,7 @@ scenes = [
 
 ### GA stub scenes
   ("gondor_castle"      ,sf_indoors, "interior_castle_v", "bo_interior_castle_v", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("minas_tirith_castle",sf_indoors|sf_force_skybox, "throne_room", "bo_throne_room", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("minas_tirith_castle",sf_indoors|sf_force_skybox, "throne_room", "bo_throne_room", (-1000,-1000),(1000,1000),-100,"0",["exit"],[]),
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],[]),

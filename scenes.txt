@@ -464,7 +464,7 @@ scn_gondor_castle gondor_castle 1 interior_castle_v bo_interior_castle_v -100.00
   1  100000 
   0 
  0 
-scn_minas_tirith_castle minas_tirith_castle 3 throne_room bo_throne_room -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_minas_tirith_castle minas_tirith_castle 3 throne_room bo_throne_room -1000.000000 -1000.000000 1000.000000 1000.000000 -100.000000 0 
   1  100000 
   0 
  0 
