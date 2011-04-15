@@ -2247,6 +2247,18 @@ game_menus = [
 
   ("game_options",0,"Click on an option to toggle:","none",[],
     [
+      ("game_options_restrict items",[
+         (try_begin),
+           (neq, "$g_crossdressing_activated", 0),
+           (str_store_string, s7, "@OFF"),
+         (else_try),
+           (str_store_string, s7, "@ON"),
+         (try_end),
+        ],"Item restrictions: {s7}",[
+         (store_sub, "$g_crossdressing_activated", 1, "$g_crossdressing_activated"),
+         (val_clamp, "$g_crossdressing_activated", 0, 2),
+        ]
+       ),
       ("game_options_formations",[
          (try_begin),
            (neq, "$tld_option_formations", 0),
@@ -3725,8 +3737,7 @@ game_menus = [
 
   (
     "kingdom_army_follow_failed",mnf_scale_picture,
-    "You have disobeyed orders and failed to follow {s8}. In anger he has disbanded you from the army,\
- and sends a stern warning that your actions will not be forgotten.",
+    "You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.",
     "none",
     [
         #(set_background_mesh, "mesh_pic_messenger"),
@@ -3738,7 +3749,7 @@ game_menus = [
         (faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),
         (str_store_troop_name, s8, ":faction_marshall"),
         (call_script, "script_abort_quest", "qst_follow_army", 1),
-        (call_script, "script_change_player_relation_with_troop", ":faction_marshall", -3),
+        #(call_script, "script_change_player_relation_with_troop", ":faction_marshall", -3),
       ],
     [
       ("continue",[],"Continue...",
@@ -4038,15 +4049,16 @@ game_menus = [
             (try_end),
              #next if there's anything left, we'll open up the party exchange screen and offer them to the player.
           (try_end),
+          
           (party_get_num_companions, ":num_rescued_prisoners", "p_temp_party"),
-          (party_get_num_prisoners,  ":num_captured_enemies", "p_temp_party"),
-          (store_add, ":total_capture_size", ":num_rescued_prisoners", ":num_captured_enemies"),
-          (gt, ":total_capture_size", 0),
-          (change_screen_exchange_with_party, "p_temp_party"),
           (try_begin),
             (check_quest_active, "qst_rescue_prisoners"),
             (quest_set_slot, "qst_rescue_prisoners", slot_quest_target_center, ":num_rescued_prisoners"), #abusing a slot as a global
           (try_end),
+          (party_get_num_prisoners,  ":num_captured_enemies", "p_temp_party"),
+          (store_add, ":total_capture_size", ":num_rescued_prisoners", ":num_captured_enemies"),
+          (gt, ":total_capture_size", 0),
+          (change_screen_exchange_with_party, "p_temp_party"),
         (else_try),
           (eq, "$loot_screen_shown", 0),
           (assign, "$loot_screen_shown", 1),
@@ -4145,6 +4157,18 @@ game_menus = [
         (try_end),
 #Post 0907 changes end
             (val_add, "$g_total_victories", 1),
+            
+            # MV: handle post-victory quest checks
+            (try_begin),
+              # fail if messenger died in a battle
+              (check_quest_active, "qst_escort_messenger"),
+              (quest_get_slot, ":quest_object_troop", "qst_escort_messenger", slot_quest_object_troop),
+              (party_count_companions_of_type, ":amount", "p_main_party", ":quest_object_troop"),
+              (eq, ":amount", 0),
+              (call_script, "script_abort_quest", "qst_escort_messenger", 1),
+              (call_script, "script_change_player_honor", -5),
+            (try_end),
+            
             (leave_encounter),
             (change_screen_return),
           (else_try),
@@ -4190,6 +4214,13 @@ game_menus = [
           (call_script, "script_party_remove_all_prisoners", "p_main_party"),
 
           (val_add, "$g_total_defeats", 1),
+            
+          # MV: handle post-defeat quest checks
+          (try_begin),
+            (check_quest_active, "qst_escort_messenger"),
+            (call_script, "script_abort_quest", "qst_escort_messenger", 1),
+            (call_script, "script_change_player_honor", -5),
+          (try_end),
 
           (try_begin),
             (store_random_in_range, ":random_no", 0, 100),
@@ -4907,9 +4938,9 @@ game_menus = [
           (assign, "$g_permitted_to_center", 0),
           (change_screen_return),
         (else_try),
-          (check_quest_active, "qst_escort_lady"),
-          (quest_slot_eq, "qst_escort_lady", slot_quest_target_center, "$g_encountered_party"),
-          (quest_get_slot, ":quest_object_troop", "qst_escort_lady", slot_quest_object_troop),
+          (check_quest_active, "qst_escort_messenger"),
+          (quest_slot_eq, "qst_escort_messenger", slot_quest_target_center, "$g_encountered_party"),
+          (quest_get_slot, ":quest_object_troop", "qst_escort_messenger", slot_quest_object_troop),
           (modify_visitors_at_site,"scn_conversation_scene"),
           (reset_visitors),
           (set_visitor,0, "trp_player"),
@@ -6225,7 +6256,7 @@ game_menus = [
              (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
              (neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
              (neg|check_quest_failed, "qst_hunt_down_fugitive"),
-             (set_visitor, 45, "trp_fugitive"),
+             (set_visitor, 45, "trp_fugitive_man"),
            (try_end),
 
            (set_jump_mission,"mt_village_center"),
@@ -7223,7 +7254,10 @@ game_menus = [
                (set_visitor, 10, ":spawned_troop"),
              (try_end),
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_elder),
-             (set_visitor, 11, ":spawned_troop"),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 11, ":spawned_troop"),
+             (try_end),
              (party_get_slot, ":spawned_troop", "$current_town", slot_town_horse_merchant),
              (try_begin),
                (neq, ":spawned_troop", "trp_no_troop"),
@@ -7246,11 +7280,12 @@ game_menus = [
              
              (try_begin), #TLD: fugitive in a town
                (check_quest_active, "qst_hunt_down_fugitive"),
-               (neg|is_currently_night),
+               #(neg|is_currently_night),
                (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
                (neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
                (neg|check_quest_failed, "qst_hunt_down_fugitive"),
-               (set_visitor, 45, "trp_fugitive"),
+               (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+               (set_visitor, 9, ":quest_object_troop"), #spawn in place of any NPC companion, so sceners won't make a fuss 
              (try_end),
 
              (call_script, "script_init_town_walkers"),

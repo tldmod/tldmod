@@ -322,7 +322,7 @@ dialogs = [
   [trp_easter_egg_troll|plyr, "troll_talk_1", [], "I own a horse.", "close_window",[]],
   
   [trp_easter_egg_troll, "troll_talk_2", [
-    (store_random_in_range, ":random", 0, 5),
+    (store_random_in_range, ":random", 0, 10),
     #s4: troll question, s5: fail answer, s6: win answer
     (try_begin),
       (eq, ":random", 0),
@@ -345,9 +345,35 @@ dialogs = [
       (str_store_string, s5, "@I don't think there's multiplayer in TLD, but elephants would be nice."),
       (str_store_string, s6, "@There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!"),
     (else_try),
+      (eq, ":random", 4),
       (str_store_string, s4, "@Did you bring your zupdog?"),
       (str_store_string, s5, "@What's zupdog?"),
       (str_store_string, s6, "@My zupdog is ill, but I brought my zupmaiass."),
+    (else_try), #MV: next Triglav's jokes, don't blame me :)
+      (eq, ":random", 5),
+      (str_store_string, s4, "@Wai no plate armour in mod???"),
+      (str_store_string, s5, "@What is plate armour? Never heard of it."),
+      (str_store_string, s6, "@Wai no female trolls? Eh? Eh? You ma biatch!"),
+    (else_try),
+      (eq, ":random", 6),
+      (str_store_string, s4, "@WHEN U REALSE MOD?!!?"),
+      (str_store_string, s5, "@But we did release. You're in it. And why are you shouting?"),
+      (str_store_string, s6, "@YES! ALSO SOMETIMES IS!"),
+    (else_try),
+      (eq, ":random", 7),
+      (str_store_string, s4, "@Wai u no work wiht otehr mods to make a super LOTR mod?"),
+      (str_store_string, s5, "@Every mod team works according to their standards, you can't make mods cooperate if their vision is different."),
+      (str_store_string, s6, "@Because we don't have a sense of humour and most of them are just too funny for us."),
+    (else_try),
+      (eq, ":random", 8),
+      (str_store_string, s4, "@In movies trolls are big and fat, wai u make me skinny?"),
+      (str_store_string, s5, "@We interpreted Tolkien like this."),
+      (str_store_string, s6, "@But we did make you as stupid as in the movies. That's gotta count for something."),
+    (else_try),
+      #(eq, ":random", 9),
+      (str_store_string, s4, "@What is news? Got any screenshots?"),
+      (str_store_string, s5, "@Well just look around you, what do you need screenshots for?"),
+      (str_store_string, s6, "@Say cheese!"),
     (try_end),
     
     ], "Challenge accepted!^^{s4}", "troll_talk_3",[]],
@@ -2831,46 +2857,60 @@ dialogs = [
                          (store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_follow_spy"),
                          (eq, "$qst_follow_spy_no_active_parties", 1),
-                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", "trp_spy"),
-                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", "trp_spy_partner"),
+                         (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+                         (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", ":spy_troop"),
+                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", ":spy_partner"),
                          (gt, ":num_spies", 0),
                          (gt, ":num_spy_partners", 0)],
-   "Beautiful work, {playername}! You captured both the spy and his handler, just as I'd hoped,\
- and the pair are now safely ensconced in my dungeon, waiting to be questioned.\
+   "{s4}", "lord_follow_spy_completed",
+   [
+    (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+    (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+    (party_remove_prisoners, "p_main_party", ":spy_troop", 1),
+    (party_remove_prisoners, "p_main_party", ":spy_partner", 1),
+    (call_script, "script_finish_quest", "qst_follow_spy", 100),
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (str_store_string, s4, "@Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped,\
+ and the pair are now safely locked up, waiting to be questioned.\
+ They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you\
+ this purse as a token of my appreciation."),
+    (else_try),
+      (str_store_string, s4, "@Beautiful work, {playername}! You captured both the spy and his handler, just as you were told,\
+ and the pair are now safely locked up in my dungeon, waiting to be questioned.\
  My torturer shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you\
- this purse as a token of my appreciation.", "lord_follow_spy_completed",
-   [(party_remove_prisoners, "p_main_party", "trp_spy", 1),
-    (party_remove_prisoners, "p_main_party", "trp_spy_partner", 1),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",4),
-    (call_script, "script_troop_add_gold", "trp_player", 2000),
-    (add_xp_as_reward, 4000),
-    (call_script, "script_end_quest", "qst_follow_spy")]],
+ this purse as a token of my appreciation."),
+    (try_end),
+    ]],
 
   [anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 						 (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                          (store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_follow_spy"),
                          (eq, "$qst_follow_spy_no_active_parties", 1),
-                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", "trp_spy"),
-                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", "trp_spy_partner"),
+                         (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+                         (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", ":spy_troop"),
+                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", ":spy_partner"),
                          (gt, ":num_spies", 0),
                          (eq, ":num_spy_partners", 0),],
    "Blast and damn you! I wanted TWO prisoners, {playername} -- what you've brought me is one step short of\
  useless! I already know everything the spy knows, it was the handler I was after.\
  Here, half a job gets you half a reward. Take it and begone.", "lord_follow_spy_half_completed",
-   [(party_remove_prisoners, "p_main_party", "trp_spy", 1),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
-    (call_script, "script_troop_add_gold", "trp_player", 1000),
-    (add_xp_as_reward, 400),
-    (call_script, "script_end_quest", "qst_follow_spy")]],
+   [(quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+    (party_remove_prisoners, "p_main_party", ":spy_troop", 1),
+    (call_script, "script_finish_quest", "qst_follow_spy", 50)]],
 
   [anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 					     (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                          (store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_follow_spy"),
                          (eq, "$qst_follow_spy_no_active_parties", 1),
-                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", "trp_spy"),
-                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", "trp_spy_partner"),
+                         (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+                         (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", ":spy_troop"),
+                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", ":spy_partner"),
                          (eq, ":num_spies", 0),
                          (gt, ":num_spy_partners", 0),
                          ],
@@ -2878,17 +2918,17 @@ dialogs = [
  the more important one of the pair. The spy will not dare return here and will prove quite useless to\
  whatever master he served. 'Tis better than nothing.\
  However, you'll understand if I pay you half the promised reward for what is but half a success.", "lord_follow_spy_half_completed",
-   [(party_remove_prisoners, "p_main_party", "trp_spy_partner", 1),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
-    (call_script, "script_troop_add_gold", "trp_player", 1000),
-    (add_xp_as_reward, 400),
-    (call_script, "script_end_quest", "qst_follow_spy")]],
+   [(quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+    (party_remove_prisoners, "p_main_party", ":spy_partner", 1),
+    (call_script, "script_finish_quest", "qst_follow_spy", 75)]],
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_follow_spy"),
                          (eq, "$qst_follow_spy_no_active_parties", 1),
-                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", "trp_spy"),
-                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", "trp_spy_partner"),
+                         (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+                         (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+                         (party_count_prisoners_of_type, ":num_spies", "p_main_party", ":spy_troop"),
+                         (party_count_prisoners_of_type, ":num_spy_partners", "p_main_party", ":spy_partner"),
                          (eq, ":num_spies", 0),
                          (eq, ":num_spy_partners", 0),
                          ],
@@ -2913,57 +2953,50 @@ dialogs = [
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_succeeded, "qst_bring_back_runaway_serfs")],
-   "Damn me, but you've done it, {playername}. All the serfs are back and they're busy preparing for the harvest.\
+   "Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest.\
  You certainly earned your reward. Here, take it, with my compliments.", "lord_generic_mission_completed",
-   [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",4),
-    (call_script, "script_troop_add_gold", "trp_player", 300),
-    (add_xp_as_reward, 300),
-    (call_script, "script_end_quest", "qst_bring_back_runaway_serfs"),
+   [
+    (call_script, "script_finish_quest", "qst_bring_back_runaway_serfs", 100),
     (call_script, "script_objectionable_action", tmt_humanitarian, "str_round_up_serfs"),
     ]],
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_failed, "qst_bring_back_runaway_serfs"),],
-   "{playername}. I have been waiting patiently for my serfs, yet none have returned. Have you an explanation?\
- Were you outwitted by simple fieldhands, or are you merely incompetent?\
- Or perhaps you are plotting with my enemies, intending to ruin me...", "lord_bring_back_runaway_serfs_failed", []],
+   "{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation?\
+ Were you outwitted by simple animals, or are you merely incompetent?", "lord_bring_back_runaway_serfs_failed", []],
   [anyone|plyr,"lord_bring_back_runaway_serfs_failed", [],
-   "Forgive me, {s65}, those serfs were slippery as eels.", "lord_bring_back_runaway_serfs_failed_1a", []],
-  [anyone|plyr,"lord_bring_back_runaway_serfs_failed", [],
-   "Perhaps if you had treated them better...", "lord_bring_back_runaway_serfs_failed_1b", []],
+   "Forgive me, {s65}, those slaves were slippery as eels.", "lord_bring_back_runaway_serfs_failed_1a", []],
+  # [anyone|plyr,"lord_bring_back_runaway_serfs_failed", [],
+   # "Perhaps if you had treated them better...", "lord_bring_back_runaway_serfs_failed_1b", []],
   [anyone,"lord_bring_back_runaway_serfs_failed_1a", [],
    "Hmph, that is hardly an excuse for failure, {playername}.\
- Now if you will excuse me, I need to recruit new men to work these fields before we all starve.", "lord_pretalk",
+ Now if you will excuse me, I need to capture new men to work these fields before we all starve.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
     (call_script, "script_end_quest", "qst_bring_back_runaway_serfs")]],
-  [anyone,"lord_bring_back_runaway_serfs_failed_1b", [],
-   "Hah, now you reveal your true colours, traitor! Your words match your actions all too well. I should never have trusted you.", "close_window",
-   [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-10),
-    (quest_get_slot, ":home_village", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (call_script, "script_change_player_relation_with_center",":home_village",6),
-    (call_script, "script_end_quest", "qst_bring_back_runaway_serfs"),
-    (assign, "$g_leave_encounter", 1),
-    ]],
+  # [anyone,"lord_bring_back_runaway_serfs_failed_1b", [],
+   # "Hah, now you reveal your true colours, traitor! Your words match your actions all too well. I should never have trusted you.", "close_window",
+   # [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-10),
+    # (quest_get_slot, ":home_village", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    # (call_script, "script_change_player_relation_with_center",":home_village",6),
+    # (call_script, "script_end_quest", "qst_bring_back_runaway_serfs"),
+    # (assign, "$g_leave_encounter", 1),
+    # ]],
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
                          (check_quest_concluded, "qst_bring_back_runaway_serfs"),
                          (assign, reg17, "$qst_bring_back_runaway_serfs_num_parties_returned")],
-   "You disappoint me, {playername}. There were 3 groups of serfs that I charged you to return. 3. Not {reg17}.\
+   "You disappoint me, {playername}. There were 3 groups of slaves that I charged you to return. 3. Not {reg17}.\
  I suppose the ones who did come back shall have to work twice as hard to make up for those that got away.\
- As for your reward, {playername}, I'll only pay you for the serfs you returned, not the ones you let fly.\
+ As for your reward, {playername}, I'll only pay you for the slaves you returned, not the ones you let fly.\
  Here. Take it, and let this business be done.", "lord_runaway_serf_half_completed",
-   [(store_mul, ":reward", "$qst_bring_back_runaway_serfs_num_parties_returned", 100),
-    (val_div, ":reward", 2),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop","$qst_bring_back_runaway_serfs_num_parties_returned"),
-    (call_script, "script_troop_add_gold", "trp_player", ":reward"),
-    (add_xp_as_reward, ":reward"),
-
+   [(store_mul, ":completion", "$qst_bring_back_runaway_serfs_num_parties_returned", 100),
+    (val_div, ":completion", 3),
 
     (call_script, "script_objectionable_action", tmt_humanitarian, "str_round_up_serfs"),
     
-    (call_script, "script_end_quest", "qst_bring_back_runaway_serfs"),
+    (call_script, "script_finish_quest", "qst_bring_back_runaway_serfs", ":completion"),
     ]],
 
   [anyone|plyr,"lord_runaway_serf_half_completed", [],
@@ -3261,8 +3294,8 @@ dialogs = [
                          (assign, ":continue", 1),
                          (try_begin),
                            (check_quest_active, "qst_capture_enemy_hero"),
-                           (store_troop_faction, ":prisoner_faction", "$prisoner_lord_to_buy"),
-                           (quest_slot_eq, "qst_capture_enemy_hero", slot_quest_target_faction, ":prisoner_faction"),
+                           #(store_troop_faction, ":prisoner_faction", "$prisoner_lord_to_buy"),
+                           #(quest_slot_eq, "qst_capture_enemy_hero", slot_quest_target_faction, ":prisoner_faction"),
                            (assign, ":continue", 0),
                          (try_end),
                          (eq, ":continue", 1),
@@ -3275,7 +3308,7 @@ dialogs = [
                          ],
    "I heard that you have captured our enemy {s3} and he is with you at the moment.\
  I can pay you {reg6} denars for him if you want to get rid of him.\
- You can wait for his family to pay his ransom of course, but there is no telling how long that will take, eh?\
+ You can wait for his kingdom to pay his ransom of course, but there is no telling how long that will take, eh?\
 ", "lord_buy_prisoner", []],
 
   [anyone|plyr,"lord_buy_prisoner", [],
@@ -3333,7 +3366,7 @@ dialogs = [
    []],
 
   [anyone,"lord_lend_companion_end",[],
-   "Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky {man/woman} to have such worthy companions.", "lord_pretalk",
+   "Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.", "lord_pretalk",
    [(quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),
     (party_add_members, "p_main_party", ":quest_target_troop", 1),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 3),
@@ -4973,16 +5006,51 @@ dialogs = [
                             (check_quest_active,"qst_capture_prisoners"),
                             (quest_slot_eq, "qst_capture_prisoners", slot_quest_giver_troop, "$g_talk_troop"),
                             (quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
-                            (quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
-                            (party_count_prisoners_of_type, ":count_prisoners", "p_main_party", ":quest_target_troop"),
+                            #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
+                            #(party_count_prisoners_of_type, ":count_prisoners", "p_main_party", ":quest_target_troop"),
+
+                            (assign, ":count_prisoners", 0),
+                            (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
+                            (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
+                              (party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
+                              (neg|troop_is_hero, ":stack_troop"), #no heroes
+                              (store_troop_faction, ":troop_faction", ":stack_troop"),
+                              (is_between, ":troop_faction", kingdoms_begin, kingdoms_end), #no bandits
+                              (store_relation, ":relation", ":troop_faction", "$g_talk_troop_faction"),
+                              (lt, ":relation", 0), #no friendly bandits, like deserters
+                              (party_prisoner_stack_get_size, ":stack_size","p_main_party",":stack_no"),
+                              (val_add, ":count_prisoners", ":stack_size"),
+                            (try_end),
+    
                             (ge, ":count_prisoners", ":quest_target_amount"),
                             (assign, reg1, ":quest_target_amount"),
-                            (str_store_troop_name_plural, s1, ":quest_target_troop")],
-   "Indeed. I brought you {reg1} {s1} as prisoners.", "lord_generic_mission_thank",
+                            #(str_store_troop_name_plural, s1, ":quest_target_troop")
+                            ],
+   "Indeed. I brought you {reg1} prisoners.", "lord_generic_mission_thank",
    [(quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
-    (quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
-    (party_remove_prisoners, "p_main_party", ":quest_target_troop", ":quest_target_amount"),
-    (party_add_prisoners, "$g_encountered_party", ":quest_target_troop", ":quest_target_amount"),
+    #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
+    #MV: remove the last X prisoners
+    (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
+    (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
+      (gt, ":quest_target_amount", 0),
+      (party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
+      (neg|troop_is_hero, ":stack_troop"), #no heroes
+      (store_troop_faction, ":troop_faction", ":stack_troop"),
+      (is_between, ":troop_faction", kingdoms_begin, kingdoms_end), #no bandits
+      (store_relation, ":relation", ":troop_faction", "$g_talk_troop_faction"),
+      (lt, ":relation", 0), #no friendly bandits, like deserters
+      (party_prisoner_stack_get_size, ":stack_size","p_main_party",":stack_no"),
+      (try_begin),
+        (ge, ":quest_target_amount", ":stack_size"),
+        (assign, ":to_remove", ":stack_size"),
+      (else_try),
+        (assign, ":to_remove", ":quest_target_amount"),
+      (try_end),
+      (val_sub, ":quest_target_amount", ":to_remove"),
+      (party_remove_prisoners, "p_main_party", ":stack_troop", ":to_remove"),
+    (try_end),
+    #(party_remove_prisoners, "p_main_party", ":quest_target_troop", ":quest_target_amount"),
+    #(party_add_prisoners, "$g_encountered_party", ":quest_target_troop", ":quest_target_amount"),
     (call_script, "script_finish_quest", "qst_capture_prisoners", 100)]],
 
   [anyone|plyr,"lord_active_mission_2",[
@@ -5004,37 +5072,37 @@ dialogs = [
      (store_partner_quest, ":lords_quest"),
      (eq, ":lords_quest", "qst_capture_enemy_hero"),
      (assign, ":has_prisoner", 0),
-     (quest_get_slot, ":quest_target_faction", "qst_capture_enemy_hero", slot_quest_target_faction),
+     #(quest_get_slot, ":quest_target_faction", "qst_capture_enemy_hero", slot_quest_target_faction),
      (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
      (try_for_range, ":i_stack", 0, ":num_stacks"),
        (party_prisoner_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
        (troop_is_hero, ":stack_troop"),
-       (store_troop_faction, ":stack_faction", ":stack_troop"),
-       (eq, ":quest_target_faction", ":stack_faction"),
+       #(store_troop_faction, ":stack_faction", ":stack_troop"),
+       #(eq, ":quest_target_faction", ":stack_faction"),
        (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
        (assign, ":has_prisoner", 1),
        (quest_set_slot, "qst_capture_enemy_hero", slot_quest_target_troop, ":stack_troop"),
      (try_end),
      (eq, ":has_prisoner", 1),
-     (str_store_faction_name, s13, ":quest_target_faction")
+     #(str_store_faction_name, s13, ":quest_target_faction")
      ],
-   "Oh, indeed. I've captured a lord from {s13} for you.", "capture_enemy_hero_thank",
+   "Oh, indeed. I've captured an enemy commander for you.", "capture_enemy_hero_thank",
    []],
 
   [anyone,"capture_enemy_hero_thank", [],
-   "Many thanks, my friend. He will serve very well for a bargain. You've done a fine work here. Please accept these {reg5} denars for your help.", "capture_enemy_hero_thank_2",
+   "Many thanks, my friend. He will serve very well for questioning. You've done a fine work here. Please accept these {reg5} RPs for your help.", "capture_enemy_hero_thank_2",
    [(quest_get_slot, ":quest_target_troop", "qst_capture_enemy_hero", slot_quest_target_troop),
-     (quest_get_slot, ":quest_target_faction", "qst_capture_enemy_hero", slot_quest_target_faction),
+     # (quest_get_slot, ":quest_target_faction", "qst_capture_enemy_hero", slot_quest_target_faction),
      (party_remove_prisoners, "p_main_party", ":quest_target_troop", 1),
-     (store_relation, ":reln", "$g_encountered_party_faction", ":quest_target_faction"),
-     (try_begin),
-       (lt, ":reln", 0),
-       (party_add_prisoners, "$g_encountered_party", ":quest_target_troop", 1), #Adding him to the dungeon
-     (else_try),
+     # (store_relation, ":reln", "$g_encountered_party_faction", ":quest_target_faction"),
+     # (try_begin),
+       # (lt, ":reln", 0),
+       # (party_add_prisoners, "$g_encountered_party", ":quest_target_troop", 1), #Adding him to the dungeon
+     # (else_try),
        #Do not add a non-enemy lord to the dungeon (due to recent diplomatic changes or due to a neutral town/castle)
        #(troop_set_slot, ":quest_target_troop", slot_troop_is_prisoner, 0),
        (troop_set_slot, ":quest_target_troop", slot_troop_prisoner_of_party, -1),
-     (try_end),
+     # (try_end),
      (quest_get_slot, ":reward", "qst_capture_enemy_hero", slot_quest_gold_reward),
      (call_script, "script_troop_add_gold", "trp_player", ":reward"),
      (add_xp_as_reward, 2500),
@@ -5113,9 +5181,10 @@ dialogs = [
                                          (quest_get_slot, ":quest_target_center", "qst_hunt_down_fugitive", slot_quest_target_center),
                                          (str_store_party_name, s3, ":quest_target_center"),
                                          (quest_get_slot, ":quest_target_dna", "qst_hunt_down_fugitive", slot_quest_target_dna),
-                                         (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna"),
+                                         (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+                                         (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
                                          (str_store_string, s4, s50),],
-   "I found {s4} hiding at {s3} and gave him his punishment.", "lord_hunt_down_fugitive_success",
+   "I found {s4} hiding in {s3} and gave him his punishment.", "lord_hunt_down_fugitive_success",
    []],
 
   [anyone|plyr,"lord_active_mission_2", [(store_partner_quest,":lords_quest"),
@@ -5129,14 +5198,14 @@ dialogs = [
    "And we'll all be a lot better off without him! Thank you, {playername},\
  for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things\
  with an appropriate level of tactfulness.\
- A bounty I promised, and a bounty you shall have. 300 denars and not a copper less!", "lord_hunt_down_fugitive_success_2",
+ A bounty I promised, and a bounty you shall have!", "lord_hunt_down_fugitive_success_2",
    [
      (add_xp_as_reward, 300),
     ]],
   
   [anyone|plyr,"lord_hunt_down_fugitive_success_2", [],
    "Let me take the money, {s65}. Thank you.", "lord_hunt_down_fugitive_reward_accept",[]],
-  [anyone|plyr,"lord_hunt_down_fugitive_success_2", [],
+  [anyone|plyr,"lord_hunt_down_fugitive_success_2", [(faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good)],
    "This is blood money. I can't accept it.", "lord_hunt_down_fugitive_reward_reject",[]],
 
 #Post 0907 changes begin
@@ -5152,7 +5221,7 @@ dialogs = [
        ]],
 
   [anyone,"lord_hunt_down_fugitive_reward_reject", [],
-   "You are a {man/woman} for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
+   "You are a person for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
  An honourable sentiment, to be true. Regardless, you've my thanks for ridding me of that {s44}.", "lord_pretalk",[
 
        (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
@@ -5443,7 +5512,7 @@ dialogs = [
 ##     (try_end),
 ##   ]],
 ##
-  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_escort_lady")],
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_escort_messenger")],
    "There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}.\
  His trip has been postponed several times already with all the trouble on the roads,\
  but this time he must get through. So, I want to at least make sure he's well-guarded.\
@@ -5736,9 +5805,10 @@ dialogs = [
    [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
+     (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
      (str_store_troop_name_link,s9, "$g_talk_troop"),
      (str_store_party_name_link,s3, ":quest_target_center"),
-     (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna"),
+     (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
      (str_store_string, s4, s50),
      (setup_quest_text, "$random_quest_no"),
      (str_store_string, s2, "@{s9} asked you to hunt down a fugitive named {s4}. He is currently believed to be at {s3}."),
@@ -5945,7 +6015,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_bring_back_runaway_serfs")],
- "Well, some of the serfs working my fields in {s4} have run away. The ungrateful swine,\
+ "Well, some of the slaves working my fields in {s4} have run away. The ungrateful swine,\
  I let them plough my fields and rent my cottages, and this is how they repay me!\
  From what I've been hearing, they're running to {s3} as fast as they can,\
  and have split up into three groups to try and avoid capture.\
@@ -5960,7 +6030,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (str_store_party_name_link, s3, ":quest_target_center"),
        (str_store_party_name_link, s4, ":quest_object_center"),
        (setup_quest_text,"$random_quest_no"),
-       (str_store_string, s2, "@{s9} asked you to catch the three groups of runaway serfs and bring them back to {s4}, alive and breathing. He said that all three groups are heading towards {s3}."),
+       (str_store_string, s2, "@{s9} asked you to catch the three groups of runaway slaves and bring them back to {s4}, alive and breathing. He said that all three groups are heading towards {s3}."),
     ]],
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_follow_spy")],
@@ -5996,13 +6066,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      #TODO: Change this value
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
 
-     (spawn_around_party, "p_main_party", "pt_spy_partners"),
+     (quest_get_slot, ":spy_partners_template", "qst_follow_spy", slot_quest_target_party),
+     (spawn_around_party, "p_main_party", ":spy_partners_template"),
      (assign, "$qst_follow_spy_spy_partners_party", reg0),
      (party_set_position, "$qst_follow_spy_spy_partners_party", pos63),
      (party_set_ai_behavior, "$qst_follow_spy_spy_partners_party", ai_bhvr_hold),
      (party_set_flags, "$qst_follow_spy_spy_partners_party", pf_default_behavior, 0),
      (set_spawn_radius, 0),
-     (spawn_around_party, "$g_encountered_party", "pt_spy"),
+     (quest_get_slot, ":spy_template", "qst_follow_spy", slot_quest_target_party_template),
+     (spawn_around_party, "$g_encountered_party", ":spy_template"),
      (assign, "$qst_follow_spy_spy_party", reg0),
      (party_set_ai_behavior, "$qst_follow_spy_spy_party", ai_bhvr_travel_to_party),
      (party_set_ai_object, "$qst_follow_spy_spy_party", "$qst_follow_spy_spy_partners_party"),
@@ -6020,30 +6092,30 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_enemy_hero")],
- "There is a difficult job I need done, {playername}, and you may be the {man/one} who can carry it off.\
- I need someone to capture one of the noble lords of {s13} and bring him to me.\
- Afterwards, I'll be able to exchange him in return for a relative of mine held by {s13}.\
+ "There is a difficult job I need done, {playername}, and you may be the one who can carry it off.\
+ I need someone to capture one of the enemy commanders and bring him to me.\
+ Afterwards, I'll be able to question him on the enemy battle plans.\
  It is a simple enough job, but whomever you choose will be guarded by an elite band of personal retainers.\
  Are you up for a fight?", "lord_tell_mission_capture_enemy_hero",
    [
-     (quest_get_slot, ":quest_target_faction", "$random_quest_no", slot_quest_target_faction),
-     (str_store_faction_name, s13, ":quest_target_faction"),
+     # (quest_get_slot, ":quest_target_faction", "$random_quest_no", slot_quest_target_faction),
+     # (str_store_faction_name, s13, ":quest_target_faction"),
     ]],
 
   [anyone|plyr, "lord_tell_mission_capture_enemy_hero", [],
  "Consider it done, {s65}.", "lord_tell_mission_capture_enemy_hero_accepted", []],
   [anyone|plyr, "lord_tell_mission_capture_enemy_hero", [],
- "I must refuse, {s65}. I am not a kidnapper.", "lord_tell_mission_capture_enemy_hero_rejected", []],
+ "I must refuse, {s65}. I don't want to get close to any of them.", "lord_tell_mission_capture_enemy_hero_rejected", []],
 
   [anyone,"lord_tell_mission_capture_enemy_hero_accepted", [],
    "I like your spirit! Go and bring me one of our enemies,\
  and I'll toast your name in my hall when you return! And reward you for your efforts, of course...", "close_window",
    [
-     (quest_get_slot, ":quest_target_faction", "$random_quest_no", slot_quest_target_faction),
+     #(quest_get_slot, ":quest_target_faction", "$random_quest_no", slot_quest_target_faction),
      (str_store_troop_name_link, s11, "$g_talk_troop"),
-     (str_store_faction_name_link, s13, ":quest_target_faction"),
+     #(str_store_faction_name_link, s13, ":quest_target_faction"),
      (setup_quest_text, "$random_quest_no"),
-     (str_store_string, s2, "@{s11} asked you to capture a lord from {s13}, any lord, and then drag your victim back to {s11} for safekeeping."),
+     (str_store_string, s2, "@{s11} asked you to capture an enemy commander and then bring him back to {s11} for questioning."),
      (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
      #TODO: Change this value
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
@@ -6251,14 +6323,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  "A group of my soldiers were captured in a recent skirmish with the enemy.\
  Thankfully we have a mutual agreement of prisoner exchange, and they will release my men,\
  but they want us to give them prisoners of equal rank and number. Prisoners I don't currently have.\
- So, I need a good {man/warrior} to find me {reg1} {s3} as prisoners, that I may exchange them.", "lord_mission_told",
+ So, I need a good warrior to find me {reg1} enemy prisoners, that I may exchange them.", "lord_mission_told",
    [
-       (quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
+       #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
        (quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
        (assign,reg1,":quest_target_amount"),
        (str_store_troop_name_link,s9,"$g_talk_troop"),
 ##       (str_store_party_name,2,"$g_encountered_party"),
-       (str_store_troop_name_by_count,3,":quest_target_troop",":quest_target_amount"),
+       #(str_store_troop_name_by_count,3,":quest_target_troop",":quest_target_amount"),
        (setup_quest_text,"$random_quest_no"),
 ##       (try_begin),
 ##         (is_between, "$g_encountered_party", centers_begin, centers_end),
@@ -6266,7 +6338,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##       (else_try),
 ##         (setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
 ##       (try_end),
-       (str_store_string, s2, "@{s9} has requested you to bring him {reg1} {s3} as prisoners."),
+       (str_store_string, s2, "@{s9} has requested you to bring him {reg1} enemy prisoners."),
     ]],
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_rescue_prisoners")],
@@ -6301,7 +6373,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"lord_mission_accepted", [], "Excellent, {playername}, excellent. I have every confidence in you.", "close_window",
    [(assign, "$g_leave_encounter",1),
     (try_begin),
-      (eq, "$random_quest_no", "qst_escort_lady"),
+      (eq, "$random_quest_no", "qst_escort_messenger"),
       (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
       #(troop_set_slot, ":quest_object_troop", slot_troop_cur_center, 0),
       (troop_join, ":quest_object_troop"),
@@ -6368,7 +6440,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (party_set_ai_behavior,"$qst_bring_back_runaway_serfs_party_3",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_bring_back_runaway_serfs_party_3",":quest_target_center"),
       (party_set_flags, "$qst_bring_back_runaway_serfs_party_3", pf_default_behavior, 0),
-      (rest_for_hours, 1, 4),
+      (rest_for_hours, 2, 4), #TLD was 1,4
 ##    (else_try),
 ##      (eq, "$random_quest_no", "qst_capture_conspirators"),
 ##      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
@@ -6612,18 +6684,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
   [anyone,"start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_lady),
-                    (check_quest_active, "qst_escort_lady"),
+                    (check_quest_active, "qst_escort_messenger"),
                     (eq, "$talk_context", tc_entering_center_quest_talk),
-                    (quest_slot_eq, "qst_escort_lady", slot_quest_object_troop, "$g_talk_troop")],
+                    (quest_slot_eq, "qst_escort_messenger", slot_quest_object_troop, "$g_talk_troop")],
    "Thank you for escorting me here, {playername}. Here's your payment for ensuring my safe passage.", "lady_escort_lady_succeeded",
    [
-     #(quest_get_slot, ":cur_center", "qst_escort_lady", slot_quest_target_center),
-     (add_xp_as_reward, 300),
-     (quest_get_slot, ":quest_giver", "qst_escort_lady", slot_quest_giver_troop),
-     (store_troop_faction, ":quest_faction", ":quest_giver"),
-     (call_script, "script_troop_add_gold_faction", "trp_player", 250, ":quest_faction"),
-     (call_script, "script_increase_rank", ":quest_faction", 10),
-     (call_script, "script_end_quest", "qst_escort_lady"),
+     #(quest_get_slot, ":cur_center", "qst_escort_messenger", slot_quest_target_center),
+     #(add_xp_as_reward, 300),
+     #(quest_get_slot, ":quest_giver", "qst_escort_messenger", slot_quest_giver_troop),
+     #(store_troop_faction, ":quest_faction", ":quest_giver"),
+     #(call_script, "script_troop_add_gold_faction", "trp_player", 250, ":quest_faction"),
+     #(call_script, "script_increase_rank", ":quest_faction", 10),
+     (call_script, "script_finish_quest", "qst_escort_messenger", 100),
      #(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
      #(troop_set_slot, "$g_talk_troop", slot_troop_cur_center, ":cur_center"),
      (remove_member_from_party,"$g_talk_troop"),
@@ -8103,23 +8175,38 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 # Village traitor
 
-  [trp_fugitive,"start", [], "Yes, what do you want?", "fugitive_1",[]],
-  [trp_fugitive|plyr,"fugitive_1", [
+  [anyone,"start", [
+    (check_quest_active, "qst_hunt_down_fugitive"),
+    (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+    (eq, "$g_talk_troop", ":quest_object_troop"),
+    ], "Yes, what do you want?", "fugitive_1",[]],
+  [anyone|plyr,"fugitive_1", [
      (quest_get_slot, ":quest_target_dna", "qst_hunt_down_fugitive", slot_quest_target_dna),
-     (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna"),
+     (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+     (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
      (str_store_string, s4, s50),
-      ], "I am looking for a murderer by the name of {s4}. You fit his description.", "fugitive_2",[]],
-  [trp_fugitive|plyr,"fugitive_1", [], "Nothing. Sorry to trouble you.", "close_window",[]],
-  [trp_fugitive,"fugitive_2", [], "I do not know what you are talking about {sir/madam}.\
- I assure you, I am just one of the dwellers here.", "fugitive_3",[]],
-  [trp_fugitive|plyr,"fugitive_3", [], "Then drop your sword. If you are innocent, you have nothing to fear.\
- We'll go now and talk to your neighbours, and if they verify your story, I'll go my way.", "fugitive_4",[]],
+      ], "I am looking for a fugitive by the name of {s4}. You fit his description.", "fugitive_2",[]],
+  [anyone|plyr,"fugitive_1", [], "Nothing. Sorry to trouble you.", "close_window",[]],
+  [anyone,"fugitive_2", [], "I do not know what you are talking about.\
+ You must have confused me with someone else.", "fugitive_3",[]],
+  [anyone|plyr,"fugitive_3", [], "Then drop your sword. If you are innocent, you have nothing to fear.\
+ We'll go now and talk to the guard captain to see who is confused.", "fugitive_4",[]],
   [anyone,"fugitive_4", [], "Damn you! You will not be going anywhere!", "close_window",
    [(set_party_battle_mode),
+    (get_player_agent_no, ":player_agent"),
     (try_for_agents, ":cur_agent"),
       (agent_get_troop_id, ":cur_agent_troop", ":cur_agent"),
-      (eq, ":cur_agent_troop", "trp_fugitive"),
-      (agent_set_team, ":cur_agent", 1),
+      (try_begin),
+        (eq, ":cur_agent_troop", "$g_talk_troop"),
+        (agent_set_team, ":cur_agent", 3),
+      (else_try),
+        (eq, ":cur_agent", ":player_agent"),
+        (agent_set_team, ":cur_agent", 2),
+      (try_end),
+    (try_end),
+    (team_set_relation, 2, 3, -1),
+    (team_set_relation, 2, 0, 0),
+    (team_set_relation, 3, 0, 0),
     (try_end),
     (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 1),
     ]],
@@ -8178,7 +8265,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Spy
 
-  [party_tpl|pt_spy,"start", [], "Good day {sir/madam}. Such fine weather don't you think? If you'll excuse me now I must go on my way.", "follow_spy_talk",[]],
+  [anyone,"start", [
+    (check_quest_active, "qst_follow_spy"),
+    (quest_get_slot, ":spy_troop", "qst_follow_spy", slot_quest_object_troop),
+    (eq, "$g_talk_troop", ":spy_troop"),
+  ], "Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.", "follow_spy_talk",[]],
 
   [anyone|plyr, "follow_spy_talk",
    [
@@ -8189,7 +8280,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone, "follow_spy_talk_2", [], "You won't get me alive!", "close_window", []],
   [anyone|plyr, "follow_spy_talk", [], "Never mind me. I was just passing by.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
-  [party_tpl|pt_spy_partners,"start", [], "Greetings.", "spy_partners_talk",[]],
+  [anyone,"start", [
+    (check_quest_active, "qst_follow_spy"),
+    (quest_get_slot, ":spy_partner", "qst_follow_spy", slot_quest_target_troop),
+    (eq, "$g_talk_troop", ":spy_partner"),
+  ], "Greetings.", "spy_partners_talk",[]],
 
   [anyone|plyr,"spy_partners_talk",
    [
@@ -8219,7 +8314,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
   [party_tpl|pt_runaway_serfs,"start", [(party_slot_eq, "$g_encountered_party", slot_town_center, 0)],#slot_town_center is used for first time meeting
-   "Good day {sir/madam}.", "runaway_serf_intro_1",
+   "Good day master.", "runaway_serf_intro_1",
    [(party_set_slot, "$g_encountered_party", slot_town_center, 1)]],
   
   [anyone|plyr,"runaway_serf_intro_1", [(quest_get_slot, ":lord", "qst_bring_back_runaway_serfs", slot_quest_giver_troop),
@@ -8230,62 +8325,64 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                    (str_store_party_name, s6, ":target_center"),
                                    (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                    (str_store_party_name, s1, ":quest_object_center")],
-   "My good {sir/madam}. Our lives at our village {s1} was unbearable. We worked all day long and still went to bed hungry.\
+   "My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry.\
  We are going to {s6} to start a new life, where we will be treated like humans.", "runaway_serf_intro_3",[]],
 
   [anyone|plyr,"runaway_serf_intro_3", [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                         (str_store_party_name, s1, ":quest_object_center"),],
-   "You have gone against our laws by running from your bondage. You will go back to {s1} now!", "runaway_serf_go_back",
-   [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (call_script, "script_change_player_relation_with_center", ":quest_object_center", -1)]],
+   "You have gone against our laws by running from slavery. You will go back to {s1} now!", "runaway_serf_go_back",
+   [#(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    #(call_script, "script_change_player_relation_with_center", ":quest_object_center", -1)
+    ]],
 
-  [anyone|plyr,"runaway_serf_intro_3", [], "Well, maybe you are right. All right then. If anyone asks, I haven't seen you.", "runaway_serf_let_go",
-   [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (call_script, "script_change_player_relation_with_center", ":quest_object_center", 1)]],
+  # [anyone|plyr,"runaway_serf_intro_3", [], "Well, maybe you are right. All right then. If anyone asks, I haven't seen you.", "runaway_serf_let_go",
+   # [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    # (call_script, "script_change_player_relation_with_center", ":quest_object_center", 1)
+    # ]],
 
   [party_tpl|pt_runaway_serfs,"runaway_serf_go_back", [(quest_get_slot, ":home_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                                        (str_store_party_name, s5, ":home_center")],
-   "All right {sir/madam}. As you wish. We'll head back to {s5} now.", "close_window",
+   "All right master. As you wish. We'll head back to {s5} now.", "close_window",
    [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     (party_set_ai_object, "$g_encountered_party", ":quest_object_center"),
     (assign, "$g_leave_encounter",1)]],
   
-  [anyone,"runaway_serf_let_go", [], "God bless you, {sir/madam}. We will not forget your help.", "close_window",
-   [(party_set_slot, "$g_encountered_party", slot_town_castle, 1),
-    (assign, "$g_leave_encounter",1)]],
+  # [anyone,"runaway_serf_let_go", [], "God bless you, {sir/madam}. We will not forget your help.", "close_window",
+   # [(party_set_slot, "$g_encountered_party", slot_town_castle, 1),
+    # (assign, "$g_leave_encounter",1)]],
   
 
-  [party_tpl|pt_runaway_serfs,"start", [(party_slot_eq, "$g_encountered_party", slot_town_castle, 1),
-                                        ],
-   "Good day {sir/madam}. Don't worry. If anyone asks, we haven't seen you.", "runaway_serf_reconsider",[]],
+  # [party_tpl|pt_runaway_serfs,"start", [(party_slot_eq, "$g_encountered_party", slot_town_castle, 1),
+                                        # ],
+   # "Good day {sir/madam}. Don't worry. If anyone asks, we haven't seen you.", "runaway_serf_reconsider",[]],
 
-  [anyone|plyr,"runaway_serf_reconsider", [], "I have changed my mind. You must back to your village!", "runaway_serf_go_back",
-   [(party_set_slot, "$g_encountered_party", slot_town_castle, 0),
-    (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (call_script, "script_change_player_relation_with_center", ":quest_object_center", -2)]],
+  # [anyone|plyr,"runaway_serf_reconsider", [], "I have changed my mind. You must back to your master!", "runaway_serf_go_back",
+   # [(party_set_slot, "$g_encountered_party", slot_town_castle, 0),
+    # (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    # (call_script, "script_change_player_relation_with_center", ":quest_object_center", -2)]],
 
-  [anyone|plyr,"runaway_serf_reconsider", [], "Good. Go quickly now before I change my mind.", "runaway_serf_let_go",[]],
+  # [anyone|plyr,"runaway_serf_reconsider", [], "Good. Go quickly now before I change my mind.", "runaway_serf_let_go",[]],
   
   
   [party_tpl|pt_runaway_serfs,"start", [(party_slot_eq, "$g_encountered_party", slot_town_castle, 0),
                                         (get_party_ai_object, ":cur_ai_object"),
                                         (quest_get_slot, ":home_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                         (neq, ":home_center", ":cur_ai_object")],
-   "Good day {sir/madam}. We were heading back to {s5}, but I am afraid we lost our way.", "runaway_serf_talk_caught",[]],
+   "Good day master. We were heading back to {s5}, but I am afraid we lost our way.", "runaway_serf_talk_caught",[]],
 
   [anyone|plyr,"runaway_serf_talk_caught", [], "Do not test my patience. You are going back now!", "runaway_serf_go_back",[]],
-  [anyone|plyr,"runaway_serf_talk_caught", [], "Well, if you are that eager to go, then go.", "runaway_serf_let_go",
-   [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (call_script, "script_change_player_relation_with_center", ":quest_object_center", 1)]],
+  # [anyone|plyr,"runaway_serf_talk_caught", [], "Well, if you are that eager to go, then go.", "runaway_serf_let_go",
+   # [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    # (call_script, "script_change_player_relation_with_center", ":quest_object_center", 1)]],
   
   [party_tpl|pt_runaway_serfs,"start",
    [(quest_get_slot, ":home_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-    (str_store_party_name, s5, ":home_center")], "We are on our way back to {s5} {sir/madam}.", "runaway_serf_talk_again_return",[]],
+    (str_store_party_name, s5, ":home_center")], "We are on our way back to {s5} master.", "runaway_serf_talk_again_return",[]],
   
   [anyone|plyr,"runaway_serf_talk_again_return", [], "Make haste now. The sooner you return the better.", "runaway_serf_talk_again_return_2",[]],
   [anyone|plyr,"runaway_serf_talk_again_return", [], "Good. Keep going.", "runaway_serf_talk_again_return_2",[]],
   
-  [anyone|plyr,"runaway_serf_talk_again_return_2", [], "Yes {sir/madam}. As you wish.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  [anyone|plyr,"runaway_serf_talk_again_return_2", [], "Yes master. As you wish.", "close_window",[(assign, "$g_leave_encounter",1)]],
   
 
 
@@ -11130,7 +11227,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 					(is_between,":entry",town_walker_entries_start, 40),
 #					(is_between,"$g_talk_troop",walkers_begin, walkers_end),
                     (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-                     ], "My {lord/lady}?", "town_dweller_talk",[(assign, "$welfare_inquired",0),(assign, "$rumors_inquired",0),(assign, "$info_inquired",0)]],
+                     ], "Excuse me?", "town_dweller_talk",[(assign, "$welfare_inquired",0),(assign, "$rumors_inquired",0),(assign, "$info_inquired",0)]],
 
   [anyone,"start", [(eq, "$talk_context", 0),
                     (agent_get_entry_no, ":entry", "$g_talk_agent"),
@@ -11142,12 +11239,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                      (neg|check_quest_concluded, "qst_hunt_down_fugitive"),
                                       (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
                                       (quest_get_slot, ":quest_target_dna", "qst_hunt_down_fugitive", slot_quest_target_dna),
-                                      (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna"),
+                                      (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+                                      (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
                                       (str_store_string, s4, s50),
                                       ],
-   "I am looking for a man by the name of {s4}. I was told he may be hiding here.", "town_dweller_ask_fugitive",[]],
+   "I am looking for a fugitive by the name of {s4}. I was told he may be hiding here.", "town_dweller_ask_fugitive",[]],
   [anyone ,"town_dweller_ask_fugitive", [],
-   "Strangers come and go to our village, {sir/madam}. If he is hiding here, you will surely find him if you look around.", "close_window",[]],
+   "Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.", "close_window",[]],
 
 # Ryan BEGIN
   # [anyone|plyr,"town_dweller_talk",

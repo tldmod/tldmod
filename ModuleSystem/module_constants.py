@@ -924,13 +924,21 @@ hero_escape_after_defeat_chance = 100 #MV: was 80
 raid_distance = 4
 
 surnames_begin = "str_surname_1"
+surnames_nickname_begin = "str_surname_21"
 surnames_end = "str_surnames_end"
 names_begin = "str_name_1"
-names_end = surnames_begin
-countersigns_begin = "str_countersign_1"
-countersigns_end = names_begin
-secret_signs_begin = "str_secret_sign_1"
-secret_signs_end = countersigns_begin
+names_elf_begin = "str_name_elf_1"
+names_dwarf_begin = "str_name_dwarf_1"
+names_orc_begin = "str_name_orc_1"
+names_end = names_elf_begin
+names_elf_end = names_dwarf_begin
+names_dwarf_end = names_orc_begin
+names_orc_end = surnames_begin
+
+#countersigns_begin = "str_countersign_1"
+#countersigns_end = names_begin
+#secret_signs_begin = "str_secret_sign_1"
+#secret_signs_end = countersigns_begin
 
 kingdoms_begin = "fac_gondor"
 kingdoms_begin_i = fac_gondor
@@ -988,7 +996,7 @@ village_elder_quests_begin = lord_quests_end #no village elder quests in TLD, wa
 village_elder_quests_end = lord_quests_end #no village elder quests in TLD, was "qst_eliminate_bandits_infesting_village"
 
 mayor_quests_begin  = "qst_move_cattle_herd"
-mayor_quests_end    = village_elder_quests_begin
+mayor_quests_end    = "qst_join_faction"
 
 lady_quests_begin = mayor_quests_begin  #no lady quests in TLD, was "qst_rescue_lord_by_replace"
 lady_quests_end   = mayor_quests_begin
@@ -1069,13 +1077,13 @@ tavernkeepers_begin    = "trp_barman_mtirith"
 tavernkeepers_end      = "trp_town_1_horse_merchant"
 
 goods_merchants_begin  = "trp_town_1_horse_merchant"
-goods_merchants_end    = "trp_village_1_elder"
+goods_merchants_end    = "trp_elder_mtirith"
 
 horse_merchants_begin  = "trp_town_1_horse_merchant"
-horse_merchants_end    = "trp_village_1_elder"
+horse_merchants_end    = "trp_elder_mtirith"
 
-mayors_begin           = "trp_elder"
-mayors_end             = "trp_gear_merchant"
+mayors_begin           = "trp_elder_mtirith"
+mayors_end             = "trp_village_1_elder"
 
 village_elders_begin   = "trp_village_1_elder"
 village_elders_end     = "trp_merchants_end"
@@ -1603,7 +1611,7 @@ center_list = [
 	    [-1, "trp_town_36_weaponsmith", "trp_no_troop", "trp_elder_beorn", "pt_beorn_reinf_a", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
 		["icon_mfc_northmen"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 1),
 
-	("p_town_moria", ["scn_moria_center", "scn_moria_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
+	("p_town_moria", ["scn_moria_center", -1, "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_moria", "trp_town_37_weaponsmith", "trp_town_37_horse_merchant", "trp_elder_moria", "pt_moria_reinf_a", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
 		["icon_mfc_moria"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_very_high, garrison_limit_evil_high, 0),
 	("p_town_troll_cave", ["scn_troll_cave_center", -1, -1,-1,-1],

@@ -1538,6 +1538,7 @@ scripts = [
       (party_set_morale, "p_main_party", reg0),
 
       #initialize game option defaults (see camp menu)
+      (assign, "$g_crossdressing_activated", 0),
       (assign, "$tld_option_formations", 0),
         
 	   # PlayerRewardSystem: end
@@ -2055,22 +2056,24 @@ scripts = [
   # param2: Attacker Party
   ("game_event_battle_end",
     [
-      (store_script_param_1, ":root_defender_party"),
-      (store_script_param_2, ":root_attacker_party"),
+      # (store_script_param_1, ":root_defender_party"),
+      # (store_script_param_2, ":root_attacker_party"),
       
-      # Check post-battle states for player party
-      (try_begin),
-        (this_or_next|eq, ":root_defender_party", "p_main_party"),
-        (eq, ":root_attacker_party", "p_main_party"),
+      # Check post-battle states for player party - this event doesn't work for main party!
+      # (try_begin),
+        # (this_or_next|eq, ":root_defender_party", "p_main_party"),
+        # (eq, ":root_attacker_party", "p_main_party"),
         
-        # fail if messenger died in a battle
-        (check_quest_active, "qst_escort_lady"),
-        (quest_get_slot, ":quest_object_troop", "qst_escort_lady", slot_quest_object_troop),
-        (party_count_companions_of_type, ":amount", "p_main_party", ":quest_object_troop"),
-        (eq, ":amount", 0),
-        (call_script, "script_abort_quest", "qst_escort_lady", 1),
-        (call_script, "script_change_player_honor", -5),
-      (try_end),
+        # # fail if messenger died in a battle
+        # (check_quest_active, "qst_escort_messenger"),
+        # (quest_get_slot, ":quest_object_troop", "qst_escort_messenger", slot_quest_object_troop),
+        # (party_count_companions_of_type, ":amount", "p_main_party", ":quest_object_troop"),
+# (assign, reg0, ":amount"),
+# (display_message, "@Debug: script_game_event_battle_end: {reg0} messengers."),
+        # (eq, ":amount", 0),
+        # (call_script, "script_abort_quest", "qst_escort_messenger", 1),
+        # (call_script, "script_change_player_honor", -5),
+      # (try_end),
       
       #Fixing deleted heroes
       (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
@@ -4906,7 +4909,7 @@ scripts = [
       (store_troop_faction, ":giver_faction_no", ":giver_troop"),
       
       (troop_get_slot, ":giver_party_no", ":giver_troop", slot_troop_leaded_party),
-      (troop_get_slot, ":giver_reputation", ":giver_troop", slot_lord_reputation_type),
+      #(troop_get_slot, ":giver_reputation", ":giver_troop", slot_lord_reputation_type),
       
       (assign, ":giver_center_no", -1),
       (try_begin),
@@ -4964,7 +4967,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_escort_lady"),
+#(assign, ":quest_no", "qst_hunt_down_fugitive"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5327,7 +5330,7 @@ scripts = [
             (assign, ":quest_expiration_days", 30),
           (try_end),
         (else_try),
-          (eq, ":quest_no", "qst_escort_lady"),
+          (eq, ":quest_no", "qst_escort_messenger"),
           (try_begin),
             (hero_can_join, "p_main_party"), #Skip if player has no available slots
             (ge, "$g_talk_troop_faction_relation", 0),
@@ -5368,7 +5371,20 @@ scripts = [
             (try_end),
             (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
             (assign, ":cur_target_center", reg0),
+            (assign, ":cur_target_dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),
+            
+            (store_mul, ":quest_xp_reward", 200, ":cur_target_dist"), # 200-400
+            (val_div, ":quest_xp_reward", tld_max_quest_distance),
+            (val_add, ":quest_xp_reward", 200),
+            (store_mul, ":quest_gold_reward", 100, ":cur_target_dist"), # 200-300
+            (val_div, ":quest_gold_reward", tld_max_quest_distance),
+            (val_add, ":quest_gold_reward", 200),
+            (store_mul, ":quest_rank_reward", 10, ":cur_target_dist"), # 7-17
+            (val_div, ":quest_rank_reward", tld_max_quest_distance),
+            (val_add, ":quest_rank_reward", 7),
+            
+            (assign, ":quest_importance", 20),
 
             (assign, ":quest_object_troop", ":cur_object_troop"),
             (assign, ":quest_target_center", ":cur_target_center"),
@@ -5633,10 +5649,33 @@ scripts = [
           (try_begin),
             (ge, "$g_talk_troop_faction_relation", 0),
             #(call_script, "script_cf_select_random_village_with_faction", ":giver_faction_no"),
+            
+            # TLD: Choose fugitive of appropriate race
+            (try_begin),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_mordor"),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_isengard"),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_moria"),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_guldur"),
+              (eq, "$g_talk_troop_faction", "fac_gundabad"),
+              (assign, ":cur_object_troop", "trp_fugitive_orc"),
+            (else_try),
+              (eq, "$g_talk_troop_faction", "fac_dwarf"),
+              (assign, ":cur_object_troop", "trp_fugitive_dwarf"),
+            (else_try),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
+              (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
+              (eq, "$g_talk_troop_faction", "fac_woodelf"),
+              (assign, ":cur_object_troop", "trp_fugitive_elf"),
+            (else_try),
+              (assign, ":cur_object_troop", "trp_fugitive_man"),
+            (try_end),
+            (assign, ":quest_object_troop", ":cur_object_troop"),
+            
             (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
             (assign, ":quest_target_center", reg0),
             #(assign, ":quest_target_dist", reg1),
-            (neq, ":cur_target_center", ":giver_center_no"),
+            (neq, ":quest_target_center", ":giver_center_no"),
+            
             (store_random_in_range, ":quest_target_dna", 0, 1000000),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 30),
@@ -5679,22 +5718,26 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_bring_back_runaway_serfs"),
           (try_begin),
-            (neq, ":giver_reputation", lrep_goodnatured),
-            (neq, ":giver_reputation", lrep_upstanding),
+            (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
+            #(neq, ":giver_reputation", lrep_goodnatured),
+            #(neq, ":giver_reputation", lrep_upstanding),
             (ge, "$g_talk_troop_faction_relation", 0),
             (ge, ":player_level", 5),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
       
-            (assign, ":cur_object_center", -1),
-            (try_for_range, ":cur_village", villages_begin, villages_end),
-              (party_slot_eq, ":cur_village", slot_town_lord, ":giver_troop"),
-              (store_distance_to_party_from_party, ":dist", ":cur_village", ":giver_center_no"),
-              (lt, ":dist", 25),
-              (assign, ":cur_object_center", ":cur_village"),
-            (try_end),
-            (ge, ":cur_object_center", 0),#Skip if the quest giver is not the owner of any villages around the center
-            (call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),
+            # (assign, ":cur_object_center", -1),
+            # (try_for_range, ":cur_village", villages_begin, villages_end),
+              # (party_slot_eq, ":cur_village", slot_town_lord, ":giver_troop"),
+              # (store_distance_to_party_from_party, ":dist", ":cur_village", ":giver_center_no"),
+              # (lt, ":dist", 25),
+              # (assign, ":cur_object_center", ":cur_village"),
+            # (try_end),
+            # (ge, ":cur_object_center", 0),#Skip if the quest giver is not the owner of any villages around the center
+            
+            (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
+            #(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":cur_target_center", reg0),
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
             (store_distance_to_party_from_party, ":dist", ":cur_target_center", ":giver_center_no"),
@@ -5702,9 +5745,10 @@ scripts = [
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
-            (assign, ":quest_importance", 1),
-            (assign, ":quest_xp_reward", 200),
-            (assign, ":quest_gold_reward", 150),
+            (assign, ":quest_importance", 8),
+            (assign, ":quest_xp_reward", 300),
+            (assign, ":quest_gold_reward", 600),
+            (assign, ":quest_rank_reward", 9),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 20),
@@ -5715,7 +5759,7 @@ scripts = [
           (eq, ":quest_no", "qst_follow_spy"),
           (try_begin),
             (ge, "$g_talk_troop_faction_relation", 0),
-            (neq, ":giver_reputation", lrep_goodnatured),
+            #(neq, ":giver_reputation", lrep_goodnatured),
             (party_get_skill_level, ":tracking_skill", "p_main_party", "skl_tracking"),
             (ge, ":tracking_skill", 2),
             (ge, ":player_level", 10),
@@ -5725,20 +5769,50 @@ scripts = [
             (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town), #skip if we are not in a town.
             (party_get_position, pos2, "p_main_party"),
             (assign, ":min_distance", 99999),
-            (try_for_range, ":unused_2", 0, 10),
+            (try_for_range, ":unused_2", 0, 5), #MV: more distant centers more likely, was 10
               (call_script, "script_cf_get_random_enemy_center", ":giver_party_no"),
               (assign, ":random_object_center", reg0),
               (party_get_position, pos3, ":random_object_center"),
               (map_get_random_position_around_position, pos4, pos3, 6),
               (get_distance_between_positions, ":cur_distance", pos2, pos4),
               (lt, ":cur_distance", ":min_distance"),
+              (gt, ":cur_distance", 10), #MV: not too close
               (assign, ":min_distance", ":cur_distance"),
               (assign, ":cur_object_center", ":random_object_center"),
               (copy_position, pos63, pos4), #Do not change pos63 until quest is accepted
             (try_end),
             (gt, ":cur_object_center", 0), #Skip if there are no enemy centers
 
+            #TLD good/evil troops and party templates
+            (try_begin),
+              (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
+              (assign, ":quest_object_troop", "trp_spy_evil"),
+              (assign, ":quest_target_troop", "trp_spy_partner_evil"),
+              (assign, ":quest_target_party_template", "pt_spy_evil"),
+              (assign, ":quest_target_party", "pt_spy_partners_evil"), #abusing this for the second template
+            (else_try),
+              (assign, ":quest_object_troop", "trp_spy"),
+              (assign, ":quest_target_troop", "trp_spy_partner"),
+              (assign, ":quest_target_party_template", "pt_spy"),
+              (assign, ":quest_target_party", "pt_spy_partners"), #abusing this for the second template
+            (try_end),
+            
             (assign, ":quest_object_center", ":cur_object_center"),
+
+            (assign, ":quest_importance", 12),
+            (assign, ":quest_xp_reward", 4000),
+            (assign, ":quest_gold_reward", 2000),
+            
+            (store_mul, ":quest_xp_reward", 1000, ":cur_target_dist"), #TLD: 3000-4000
+            (val_div, ":quest_xp_reward", tld_max_quest_distance),
+            (val_add, ":quest_xp_reward", 3000),
+            (store_mul, ":quest_gold_reward", 1000, ":cur_target_dist"), #TLD: 2000-3000
+            (val_div, ":quest_gold_reward", tld_max_quest_distance),
+            (val_add, ":quest_gold_reward", 2000),
+            (store_mul, ":quest_rank_reward", 5, ":cur_target_dist"), # TLD: 15-20
+            (val_div, ":quest_rank_reward", tld_max_quest_distance),
+            (val_add, ":quest_rank_reward", 15),
+
             (assign, ":quest_dont_give_again_period", 50),
             (assign, ":result", ":quest_no"),
             (assign, "$qst_follow_spy_run_away", 0),
@@ -5751,11 +5825,11 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_capture_enemy_hero"),
           (try_begin),
-            (eq, "$players_kingdom", ":giver_faction_no"),
-            (neg|faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+            #(eq, "$players_kingdom", ":giver_faction_no"),
+            #(neg|faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
             (ge, ":player_level", 15),
-            (call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
-            (assign, ":quest_target_faction", reg0),
+            #(call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
+            #(assign, ":quest_target_faction", reg0),
             (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 80),
             (assign, ":quest_gold_reward", 2000),
@@ -5988,19 +6062,19 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_capture_prisoners"),
           (try_begin),
-            (eq, "$players_kingdom", ":giver_faction_no"),
-            (call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
-            (assign, ":cur_target_faction", reg0),
-            (store_add, ":max_tier_no", slot_faction_tier_5_troop, 1),
-            (store_random_in_range, ":random_tier_no", slot_faction_tier_2_troop, ":max_tier_no"),
-            (faction_get_slot, ":cur_target_troop", ":cur_target_faction", ":random_tier_no"),
-            (gt, ":cur_target_troop", 0),
-            (store_random_in_range, ":quest_target_amount", 3, 7),
-            (assign, ":quest_target_troop", ":cur_target_troop"),
-            (assign, ":quest_target_faction", ":cur_target_faction"),
+            #(eq, "$players_kingdom", ":giver_faction_no"),
+            #(call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
+            #(assign, ":cur_target_faction", reg0),
+            #(store_add, ":max_tier_no", slot_faction_tier_5_troop, 1),
+            #(store_random_in_range, ":random_tier_no", slot_faction_tier_2_troop, ":max_tier_no"),
+            #(faction_get_slot, ":cur_target_troop", ":cur_target_faction", ":random_tier_no"),
+            #(gt, ":cur_target_troop", 0),
+            (store_random_in_range, ":quest_target_amount", 5, 10),
+            #(assign, ":quest_target_troop", ":cur_target_troop"),
+            #(assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_importance", 1),
-            (store_character_level, ":quest_gold_reward", ":cur_target_troop"),
-            (val_add, ":quest_gold_reward", 5),
+            #(store_character_level, ":quest_gold_reward", ":cur_target_troop"),
+            (assign, ":quest_gold_reward", 5),
             (val_mul, ":quest_gold_reward", ":quest_gold_reward"),
             (val_div, ":quest_gold_reward", 5),
             (val_mul, ":quest_gold_reward", ":quest_target_amount"),
@@ -9003,8 +9077,9 @@ scripts = [
       (else_try),
         (val_div, ":quest_importance", 4),
         (val_add, ":quest_importance", 1),
-        (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
       (try_end),
+      
+      (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
       
       (add_xp_as_reward, ":quest_xp_reward"),
       (call_script, "script_troop_add_gold_faction", "trp_player", ":quest_gold_reward", ":quest_faction"),
@@ -9810,8 +9885,8 @@ scripts = [
         (assign, ":quest_return_penalty", -2),
         (assign, ":quest_expire_penalty", -3),
       (else_try),
-        (eq, ":quest_no", "qst_escort_lady"),
-        (quest_get_slot, ":quest_object_troop", "qst_escort_lady", slot_quest_object_troop),
+        (eq, ":quest_no", "qst_escort_messenger"),
+        (quest_get_slot, ":quest_object_troop", "qst_escort_messenger", slot_quest_object_troop),
         (party_remove_members, "p_main_party", ":quest_object_troop", 1),
         (assign, ":quest_return_penalty", -2),
         (assign, ":quest_expire_penalty", -3),
@@ -10087,9 +10162,9 @@ scripts = [
 ##        (check_quest_active, "qst_deliver_message"),
 ##      (try_end),
 ##      (try_begin),
-##        (check_quest_active, "qst_escort_lady"),
-##        (quest_slot_eq, "qst_escort_lady", slot_quest_target_center, ":center_no"),
-##        (call_script, "script_abort_quest", "qst_escort_lady"),
+##        (check_quest_active, "qst_escort_messenger"),
+##        (quest_slot_eq, "qst_escort_messenger", slot_quest_target_center, ":center_no"),
+##        (call_script, "script_abort_quest", "qst_escort_messenger"),
 ##      (try_end),
 ##      (try_begin),
 ##        (check_quest_active, "qst_rescue_lady_under_siege"),
@@ -14917,21 +14992,53 @@ scripts = [
      ]),
 
   #script_get_name_from_dna_to_s50
-  # INPUT: arg1 = dna
+  # INPUT: arg1 = dna, arg2 = troop_no (MV added for races)
   # OUTPUT: s50 = name
   ("get_name_from_dna_to_s50",
     [(store_script_param, ":dna", 1),
-     (store_sub, ":num_names", names_end, names_begin),
+     (store_script_param, ":troop", 2),
+     (troop_get_type, ":race", ":troop"),
+     (try_begin),
+       (is_between, ":race", tf_orc_begin, tf_orc_end),
+       (assign, ":names_begin", names_orc_begin),
+       (assign, ":names_end", names_orc_end),
+     (else_try),
+       (eq, ":race", tf_dwarf),
+       (assign, ":names_begin", names_dwarf_begin),
+       (assign, ":names_end", names_dwarf_end),
+     (else_try),
+       (is_between, ":race", tf_elf_begin, tf_elf_end),
+       (assign, ":names_begin", names_elf_begin),
+       (assign, ":names_end", names_elf_end),
+     (else_try),
+       (assign, ":names_begin", names_begin),
+       (assign, ":names_end", names_end),
+     (try_end),
+     
+     (store_sub, ":num_names", ":names_end", ":names_begin"),
      (store_sub, ":num_surnames", surnames_end, surnames_begin),
      (assign, ":selected_name", ":dna"),
      (val_mod, ":selected_name", ":num_names"),
      (assign, ":selected_surname", ":dna"),
      (val_div, ":selected_surname", ":num_names"),
      (val_mod, ":selected_surname", ":num_surnames"),
-     (val_add, ":selected_name", names_begin),
+     (val_add, ":selected_name", ":names_begin"),
      (val_add, ":selected_surname", surnames_begin),
      (str_store_string, s50, ":selected_name"),
      (str_store_string, s50, ":selected_surname"),
+     (try_begin), #add a little extra
+       (lt, ":selected_surname", surnames_nickname_begin), # somebody of sometown format
+       (try_begin),
+         (is_between, ":race", tf_orc_begin, tf_orc_end),
+         (str_store_string, s50, "@{s50} Caves"),
+       (else_try),
+         (eq, ":race", tf_dwarf),
+         (str_store_string, s50, "@{s50} Mines"),
+       (else_try),
+         (is_between, ":race", tf_elf_begin, tf_elf_end),
+         (str_store_string, s50, "@{s50} Woods"),
+       (try_end),
+     (try_end),
      ]),
      
   #script_change_center_prosperity
@@ -15287,13 +15394,18 @@ scripts = [
             (try_end),
         (try_end),
 #Troop commentary changes begin
-        (try_for_range, ":lord", "trp_knight_1_1", "trp_heroes_end"),
-            (store_random_in_range, ":reputation", 0, 8),
-            (try_begin),
-                (eq, ":reputation", 0),
-                (assign, ":reputation", 1),
-            (try_end),
-            (troop_set_slot, ":lord", slot_lord_reputation_type, ":reputation"),
+        #MV: good lords are upstanding, Eye sadistic, Hand cunning
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+          (store_troop_faction, ":lord_faction", ":lord"),
+          (try_begin),
+            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_upstanding),
+          (else_try),
+            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_eye),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_debauched),
+          (else_try),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_cunning),
+          (try_end),
         (try_end),
 #Troop commentary changes end
 
@@ -15497,14 +15609,6 @@ scripts = [
   # OUTPUT: none
   ("event_player_captured_as_prisoner",
     [
-        # (try_begin),
-          # (check_quest_active, "qst_raid_caravan_to_start_war"),
-          # (neg|check_quest_concluded, "qst_raid_caravan_to_start_war"),
-          # (quest_get_slot, ":quest_target_faction", "qst_raid_caravan_to_start_war", slot_quest_target_faction),
-          # (store_faction_of_party, ":capturer_faction", "$capturer_party"),
-          # (eq, ":quest_target_faction", ":capturer_faction"),
-          # (call_script, "script_fail_quest", "qst_raid_caravan_to_start_war"),
-        # (try_end),
         #Removing followers of the player
         (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
           (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -15667,6 +15771,23 @@ scripts = [
           # (assign, ":quest_target", 1),
         # (try_end),
         # (eq, ":quest_target", 0),
+        
+        (assign, ":always_capture", 0),
+        (try_begin),
+          (check_quest_active, "qst_capture_enemy_hero"),
+          (assign, ":has_prisoner", 0),
+          (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
+          (try_for_range, ":i_stack", 0, ":num_stacks"),
+            (party_prisoner_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+            (troop_is_hero, ":stack_troop"),
+            (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
+            (assign, ":has_prisoner", 1),
+          (try_end),
+          (eq, ":has_prisoner", 0),
+          (assign, ":always_capture", 1),
+        (try_end),
+        (eq, ":always_capture", 0),
+        
         (store_random_in_range, ":rand", 0, 100),
         (lt, ":rand", hero_escape_after_defeat_chance),
     ]),

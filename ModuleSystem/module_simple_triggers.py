@@ -1600,7 +1600,7 @@ simple_triggers = [
     ]),
 
 # Report to army quest
-  (6,
+  (24, #MV: make it more rare, was 6
    [
      (is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
      (eq, "$g_player_is_captive", 0),

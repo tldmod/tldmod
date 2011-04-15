@@ -23,7 +23,7 @@ quests = [
  ("raise_troops", "Raise {reg1} {s14}", qf_random_quest,
   "{s9} asked you to raise {reg1} {s14} and bring them to him."
   ),
- ("escort_lady", "Escort the messenger to {s14}", qf_random_quest,
+ ("escort_messenger", "Escort the messenger to {s14}", qf_random_quest,
   "None"
   ),
 ## ("rescue_lady_under_siege", "Rescue {s3} from {s4}", qf_random_quest,
@@ -62,14 +62,14 @@ quests = [
  # ("kill_local_merchant", "Assassinate Local Merchant at {s3}", qf_random_quest,
   # "{s9} asked you to assassinate a local merchant at {s3}."
   # ),
- ("bring_back_runaway_serfs", "Bring Back Runaway Serfs", qf_random_quest,
-  "{s9} asked you to bring back the three groups of runaway serfs back to {s2}. He said all three groups must be running away in the direction of {s3}."
+ ("bring_back_runaway_serfs", "Bring Back Runaway Slaves", qf_random_quest,
+  "{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}."
   ),
  ("follow_spy", "Follow the Spy to Meeting", qf_random_quest,
   "{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}."
   ),
- ("capture_enemy_hero", "Capture a Lord from {s13}", qf_random_quest,
-  "TODO: {s11} asked you to capture a lord from {s13}."
+ ("capture_enemy_hero", "Capture an enemy commander", qf_random_quest,
+  "{s11} asked you to capture an enemy commander."
   ),
  ("lend_companion", "Lend Your Companion {s3} to {s9}", qf_random_quest,
   "{s9} asked you to lend your companion {s3} to him for a week."
@@ -92,8 +92,8 @@ quests = [
  # ("meet_spy_in_enemy_town", "Meet Spy in {s13}", qf_random_quest,
   # "None"
   # ),
- ("capture_prisoners", "Bring {reg1} {s3} Prisoners", qf_random_quest,
-  "{s9} wanted you to bring him {reg1} {s3} as prisoners."
+ ("capture_prisoners", "Bring {reg1} enemy prisoners", qf_random_quest,
+  "{s9} wanted you to bring him {reg1} enemy prisoners."
   ),
   
 # TLD BEGIN   lord's quests  (mtarini)
@@ -101,8 +101,9 @@ quests = [
  ("investigate_fangorn", "Investigate Fangorn", qf_random_quest,
   "{s9} asked you to find out what is going on in the Fangorn forest, and to report back."),
 
- ("capture_troll", "Capture a Troll", qf_random_quest,
-  "{s9} asked you to bring back a savage troll for use in his army."),
+#MV: nothing done, so commented out
+ # ("capture_troll", "Capture a Troll", qf_random_quest,
+  # "{s9} asked you to bring back a savage troll for use in his army."),
 
  ("find_lost_spears", "Find the lost spears of king Bladorthin", qf_random_quest,
   "{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain."),
