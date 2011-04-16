@@ -1,17 +1,16 @@
 questsfile version 1
-28
+27
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him. 
-qst_escort_lady Escort_the_messenger_to_{s14} 2 None 
+qst_escort_messenger Escort_the_messenger_to_{s14} 2 None 
 qst_hunt_down_fugitive Hunt_down_{s4} 2 {s9}_asked_you_to_hunt_down_the_fugitive_named_{s4}._He_is_currently_believed_to_be_at_{s3}. 
-qst_bring_back_runaway_serfs Bring_Back_Runaway_Serfs 2 {s9}_asked_you_to_bring_back_the_three_groups_of_runaway_serfs_back_to_{s2}._He_said_all_three_groups_must_be_running_away_in_the_direction_of_{s3}. 
+qst_bring_back_runaway_serfs Bring_Back_Runaway_Slaves 2 {s9}_asked_you_to_bring_back_the_three_groups_of_runaway_slaves_back_to_{s2}._He_said_all_three_groups_must_be_running_away_in_the_direction_of_{s3}. 
 qst_follow_spy Follow_the_Spy_to_Meeting 2 {s11}_asked_you_to_follow_the_spy_that_will_leave_{s12}._You_must_be_careful_not_to_be_seen_by_the_spy_during_his_travel,_or_else_he_may_get_suspicious_and_turn_back._Once_the_spy_meets_with_his_accomplice,_you_are_to_ambush_and_capture_them_and_bring_them_both_back_to_{s11}. 
-qst_capture_enemy_hero Capture_a_Lord_from_{s13} 2 TODO:_{s11}_asked_you_to_capture_a_lord_from_{s13}. 
+qst_capture_enemy_hero Capture_an_enemy_commander 2 {s11}_asked_you_to_capture_an_enemy_commander. 
 qst_lend_companion Lend_Your_Companion_{s3}_to_{s9} 2 {s9}_asked_you_to_lend_your_companion_{s3}_to_him_for_a_week. 
-qst_capture_prisoners Bring_{reg1}_{s3}_Prisoners 2 {s9}_wanted_you_to_bring_him_{reg1}_{s3}_as_prisoners. 
+qst_capture_prisoners Bring_{reg1}_enemy_prisoners 2 {s9}_wanted_you_to_bring_him_{reg1}_enemy_prisoners. 
 qst_investigate_fangorn Investigate_Fangorn 2 {s9}_asked_you_to_find_out_what_is_going_on_in_the_Fangorn_forest,_and_to_report_back. 
-qst_capture_troll Capture_a_Troll 2 {s9}_asked_you_to_bring_back_a_savage_troll_for_use_in_his_army. 
 qst_find_lost_spears Find_the_lost_spears_of_king_Bladorthin 2 {s9}_asked_you_to_find_the_lost_spears_dwarves_once_made_for_king_Bladorthin._You_have_to_ask_the_dwarves_permission_to_search_for_the_spears_in_the_depths_of_the_Lonely_Mountain. 
 qst_rescue_prisoners Rescue_{reg1}_Prisoners 2 {s9}_wanted_you_to_rescue_{reg1}_prisoners. 
 qst_follow_army Follow_{s9}'s_Army 2 None 

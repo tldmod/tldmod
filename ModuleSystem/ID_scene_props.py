@@ -1178,3 +1178,4 @@ spr_tunnel_crossing = 1176
 spr_tunnel_chasm = 1177
 spr_rohan_burial_mound = 1178
 spr_tree_huorn = 1179
+spr_waterfall = 1180
