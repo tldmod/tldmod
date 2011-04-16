@@ -1939,6 +1939,7 @@ scripts = [
                         (party_set_slot, ":prisoner_train", slot_party_ai_state, spai_undefined),
                         (party_set_ai_behavior, ":prisoner_train", ai_bhvr_travel_to_party),
                         (party_set_ai_object, ":prisoner_train", reg0),
+                        (party_set_slot, ":prisoner_train", slot_party_ai_object, reg0),
                         (party_set_flags, ":prisoner_train", pf_default_behavior, 0),
                     (try_end),
                     (distribute_party_among_party_group, "p_temp_party", ":root_winner_party"), 
@@ -2714,6 +2715,66 @@ scripts = [
         (party_remove_members, ":partyA", ":stack_troop",  ":stack_size"),
 		(party_add_members, ":partyB", ":stack_troop",  ":stack_size"),
       (try_end),
+	]),
+    
+  # script_reconstruct_main_party (MV)
+  # Reconstruct main party after splitting by script_party_split_by_faction
+  ("reconstruct_main_party",
+    [
+	#(call_script, "script_party_add_party", "p_main_party", "p_temp_party"), #mtarini code that was replaced
+    
+    #MV: recreate the main party from p_encountered_party_backup (main backup) and p_main_party (factionalized main minus troops given away)
+    #  I replaced the script_party_add_party solely because it messes up the party order as set by the player
+    #  Possible bug in any case: loss of stack experience which is kept by the engine only for main party stacks
+    (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
+    (party_get_num_companion_stacks, ":num_stacks_2", "p_main_party"),
+    # for every troop in p_encountered_party_backup try to find a match in p_main_party and remove as many as needed
+    (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
+      (party_stack_get_troop_id, ":stack_troop", "p_encountered_party_backup", ":i_stack"),
+      (party_stack_get_size, ":stack_size", "p_encountered_party_backup", ":i_stack"),
+      (neg|troop_is_hero, ":stack_troop"), #no heroes
+      (store_troop_faction, ":troop_faction", ":stack_troop"),
+      (eq, ":troop_faction", "$g_encountered_party_faction"), # only safe on map!
+      (assign, ":troop_found", 0),
+      (try_for_range, ":j_stack", 0, ":num_stacks_2"),
+        (party_stack_get_troop_id, ":stack_troop_2", "p_main_party", ":j_stack"),
+        (party_stack_get_size, ":stack_size_2", "p_main_party", ":j_stack"),
+        (neg|troop_is_hero, ":stack_troop_2"), #no heroes
+        (eq, ":stack_troop", ":stack_troop_2"),
+        (assign, ":troop_found", 1),
+        (lt, ":stack_size_2", ":stack_size"), #stack_size-stack_size_2 of this troop were given away
+        (store_sub, ":given_away", ":stack_size", ":stack_size_2"),
+        (party_remove_members, "p_encountered_party_backup", ":stack_troop", ":given_away"),
+      (try_end),
+      # if not found in p_main_party, but still of the correct faction, whole stack was given
+      (eq, ":troop_found", 0),
+      (party_remove_members, "p_encountered_party_backup", ":stack_troop", ":stack_size"),
+    (try_end),
+    
+    # now copy p_encountered_party_backup over p_main_party
+    #(call_script, "script_party_copy", "p_main_party", "p_encountered_party_backup"), will copy the player too,
+    #  so he'll be there twice, before the engine removes him - no need to risk anything funny there, so doing it manually
+    (party_clear, "p_main_party"), #player still there!
+    (assign, ":source_party", "p_encountered_party_backup"),
+    (assign, ":target_party", "p_main_party"),
+    # script_party_add_party_companions
+    (party_get_num_companion_stacks, ":num_stacks",":source_party"),
+    (try_for_range, ":stack_no", 0, ":num_stacks"),
+      (party_stack_get_troop_id,     ":stack_troop",":source_party",":stack_no"),
+      (neq, ":stack_troop", "trp_player"), #crucial
+      (party_stack_get_size,         ":stack_size",":source_party",":stack_no"),
+      (party_add_members, ":target_party", ":stack_troop", ":stack_size"),
+      (party_stack_get_num_wounded, ":num_wounded", ":source_party", ":stack_no"),
+      (party_wound_members, ":target_party", ":stack_troop", ":num_wounded"),
+    (try_end),
+    # script_party_prisoners_add_party_prisoners
+    (party_get_num_prisoner_stacks, ":num_stacks",":source_party"),
+    (try_for_range, ":stack_no", 0, ":num_stacks"),
+      (party_prisoner_stack_get_troop_id,     ":stack_troop",":source_party",":stack_no"),
+      (party_prisoner_stack_get_size,         ":stack_size",":source_party",":stack_no"),
+      (party_add_prisoners, ":target_party", ":stack_troop", ":stack_size"),
+    (try_end),
+
 	]),
 	
   #script_game_reset_player_party_name:

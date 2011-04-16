@@ -244,6 +244,7 @@ triggers = [
                 (assign, ":scout_party", reg0),
 #                (display_message, "@DEBUG: Party spawn: {reg0}", 0xFF00fd33),
                 (party_set_slot, ":scout_party", slot_party_type, spt_scout),
+                (party_set_slot, ":scout_party", slot_party_home_center, ":center"),
 				(party_set_slot, ":scout_party", slot_party_victory_value, ws_scout_vp), # victory points for party kill
                 (party_set_faction, ":scout_party", ":faction_no"),
                 (call_script, "script_find_closest_random_enemy_center_from_center", ":center"),
@@ -256,6 +257,7 @@ triggers = [
                 (else_try),
                     (party_get_position, pos1, ":center"),
                 (try_end),
+                (party_set_slot, ":scout_party", slot_party_ai_object, ":enemy_center"),
                 (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
                 (party_set_ai_target_position, ":scout_party", pos1),
@@ -276,12 +278,13 @@ triggers = [
                 (set_spawn_radius, 1),
                 (spawn_around_party, ":center", ":center_raiders"),
                 (assign, ":raider_party", reg0),
+                (party_set_slot, ":raider_party", slot_party_home_center, ":center"),
                 (party_set_faction, ":raider_party", ":faction_no"),
                 (party_set_ai_behavior, ":raider_party", ai_bhvr_patrol_party),
                 (party_set_ai_patrol_radius, ":raider_party", 30),
                 (party_set_slot, ":raider_party", slot_party_ai_state, spai_undefined),
                 (party_set_slot, ":raider_party", slot_party_type, spt_raider),
-				(party_set_slot, ":raider_party", slot_party_victory_value, ws_patrol_vp), # victory points for party kill
+				(party_set_slot, ":raider_party", slot_party_victory_value, ws_raider_vp), # victory points for party kill
 
                 (call_script, "script_find_closest_random_enemy_center_from_center", ":center"),
                 (try_begin),
@@ -309,7 +312,8 @@ triggers = [
                 (assign, ":patrol_party", reg0),
                 (party_set_faction, ":patrol_party", ":faction_no"),
                 (party_set_slot, ":patrol_party", slot_party_type, spt_patrol),
-				(party_set_slot, ":patrol_party", slot_party_victory_value, ws_raider_vp), # victory points for party kill
+				(party_set_slot, ":patrol_party", slot_party_victory_value, ws_patrol_vp), # victory points for party kill
+                (party_set_slot, ":patrol_party", slot_party_home_center, ":center"),
 
                 (party_set_slot, ":patrol_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":patrol_party", ai_bhvr_patrol_party),

@@ -1797,76 +1797,37 @@ dialogs = [
 	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
 	 ],
     "So you changed your mind...^I see.", 
-    "player_hire_troop_nextcycle", [
-    #MV: now recreate the main party from p_encountered_party_backup (main backup) and p_main_party (factionalized main minus troops given away)
-    #  I replaced the script_party_add_party solely because it messes up the party order as set by the player
-    #  Possible bug in any case: loss of stack experience which is kept by the engine only for main party stacks
-    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
-    (party_get_num_companion_stacks, ":num_stacks_2", "p_encountered_party_backup"),
-    (try_for_range, ":i_stack", 0, ":num_stacks"),
-      (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
-      (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
-      (neq, ":stack_troop", "$g_player_troop"),
-      (try_for_range, ":j_stack", 0, ":num_stacks_2"),
-        (party_stack_get_troop_id, ":stack_troop_2", "p_encountered_party_backup", ":j_stack"),
-        (party_stack_get_size, ":stack_size_2", "p_encountered_party_backup", ":j_stack"),
-        (eq, ":stack_troop", ":stack_troop_2"),
-        (gt, ":stack_size_2", ":stack_size"), #stack_size_2-stack_size of this troop were given away
-        (store_sub, ":given_away", ":stack_size_2", ":stack_size"),
-        (party_remove_members, "p_encountered_party_backup", ":stack_troop_2", ":given_away"),
-      (try_end),
-    (try_end),
-    (call_script, "script_party_copy", "p_main_party", "p_encountered_party_backup"),
-    ]
+    "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]
  ],
 
  [anyone,"player_hire_troop_reunite_1", 
 	 [ 
-		(party_get_num_companions, reg0, "p_main_party"), (store_sub, reg10, reg28, reg0), 
+		(party_get_num_companions, reg0, "p_main_party"),
+        (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
-		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (store_sub, reg11, reg29, reg0), 
-		(str_clear,  s31),(str_clear,  s32),
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
+        (store_sub, reg11, reg29, reg0), 
+		(str_clear, s31), (str_clear, s32),
 		(try_begin),(eq, reg26, 1), #player is in own faction
 			(str_store_string, s31, "@Thank you, commander.^"),
 		(else_try),
 			(str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),
 		(try_end),
 	 ], # party decreased size 
-    "{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^^^[earned {reg11} Res.Points of {s22}]", 
+    "{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]", 
     "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", reg11),]
  ],
 
  [anyone|plyr,"player_hire_troop_reunite_2", 
-	 [ (try_begin),(eq, reg26, 1), #player is ih own faction
+	 [ (try_begin),(eq, reg26, 1), #player is of the same faction
 			(str_store_string, s31, "@It is my duty to protect our people."),
 		(else_try),
-			(str_store_string, s31, "@Our enemy is the same, we fight the same war."),
+			(str_store_string, s31, "@It is my duty to protect our allies."),
 		(try_end), 
 	],
     "{s31}", 
-    "player_hire_troop_nextcycle", [
-	#(call_script, "script_party_add_party", "p_main_party", "p_temp_party"), #mtarini code
-    #MV: now recreate the main party from p_encountered_party_backup (main backup) and p_main_party (factionalized main minus troops given away)
-    #  I replaced the script_party_add_party solely because it messes up the party order as set by the player
-    #  Possible bug in any case: loss of stack experience which is kept by the engine only for main party stacks
-    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
-    (party_get_num_companion_stacks, ":num_stacks_2", "p_encountered_party_backup"),
-    (try_for_range, ":i_stack", 0, ":num_stacks"),
-      (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
-      (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
-      (neq, ":stack_troop", "$g_player_troop"),
-      (try_for_range, ":j_stack", 0, ":num_stacks_2"),
-        (party_stack_get_troop_id, ":stack_troop_2", "p_encountered_party_backup", ":j_stack"),
-        (party_stack_get_size, ":stack_size_2", "p_encountered_party_backup", ":j_stack"),
-        (eq, ":stack_troop", ":stack_troop_2"),
-        (gt, ":stack_size_2", ":stack_size"), #stack_size_2-stack_size of this troop were given away
-        (store_sub, ":given_away", ":stack_size_2", ":stack_size"),
-        (party_remove_members, "p_encountered_party_backup", ":stack_troop_2", ":given_away"),
-      (try_end),
-    (try_end),
-    (call_script, "script_party_copy", "p_main_party", "p_encountered_party_backup"),
-	]
+    "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]
  ],
 
  [anyone,"player_hire_troop_nextcycle", 
@@ -4174,42 +4135,42 @@ dialogs = [
        (assign,"$encountered_party_hostile",1)]],
 
 
-  [anyone|plyr,"lord_talk", [(eq,"$talk_context", tc_party_encounter),
-                             (neq,"$g_encountered_party_faction","$players_kingdom"),
-                             (ge, "$g_encountered_party_relation", 0),
-                                 ], "I'm here to deliver you my demands!", "lord_predemand",[]],
-  [anyone,"lord_predemand", [], "Eh? What do you want?", "lord_demand",[]],
+  # [anyone|plyr,"lord_talk", [(eq,"$talk_context", tc_party_encounter),
+                             # (neq,"$g_encountered_party_faction","$players_kingdom"),
+                             # (ge, "$g_encountered_party_relation", 0),
+                                 # ], "I'm here to deliver you my demands!", "lord_predemand",[]],
+  # [anyone,"lord_predemand", [], "Eh? What do you want?", "lord_demand",[]],
 
-  [anyone|plyr,"lord_demand", [(neq,"$g_encountered_party_faction","$players_kingdom"),
-                               (ge, "$g_encountered_party_relation", 0),], "I offer you one chance to surrender or die.", "lord_ultimatum_surrender",[]],
+  # [anyone|plyr,"lord_demand", [(neq,"$g_encountered_party_faction","$players_kingdom"),
+                               # (ge, "$g_encountered_party_relation", 0),], "I offer you one chance to surrender or die.", "lord_ultimatum_surrender",[]],
 
-  [anyone,"lord_ultimatum_surrender", [(ge, "$g_encountered_party_relation", 0)], "{s43}", "lord_attack_verify",[#originally, speak you rascal
-        (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_unprovoked_attack_default"),
-      ]],
+  # [anyone,"lord_ultimatum_surrender", [(ge, "$g_encountered_party_relation", 0)], "{s43}", "lord_attack_verify",[#originally, speak you rascal
+        # (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_unprovoked_attack_default"),
+      # ]],
   
-  [anyone|plyr,"lord_attack_verify", [], "Forgive me sir. I don't know what I was thinking.", "lord_attack_verify_cancel",[]],
-  [anyone,"lord_attack_verify_cancel", [], "Be gone, then.", "close_window",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),(assign, "$g_leave_encounter",1)]],
-  [anyone|plyr,"lord_attack_verify", [], "That is none of your business. Prepare to fight!", "lord_attack_verify_commit",[]],
+  # [anyone|plyr,"lord_attack_verify", [], "Forgive me sir. I don't know what I was thinking.", "lord_attack_verify_cancel",[]],
+  # [anyone,"lord_attack_verify_cancel", [], "Be gone, then.", "close_window",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),(assign, "$g_leave_encounter",1)]],
+  # [anyone|plyr,"lord_attack_verify", [], "That is none of your business. Prepare to fight!", "lord_attack_verify_commit",[]],
 
-  [anyone,"lord_ultimatum_surrender", [], "{s43}", "lord_attack_verify_b", #originally, you will not survive this
-   [
-    (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_unnecessary_attack_default"),
-    (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
-    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -5),
-    ]],
+  # [anyone,"lord_ultimatum_surrender", [], "{s43}", "lord_attack_verify_b", #originally, you will not survive this
+   # [
+    # (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_unnecessary_attack_default"),
+    # (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
+    # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -5),
+    # ]],
 
-  [anyone|plyr,"lord_attack_verify_b", [],  "Forgive me sir. I don't know what I was thinking.", "lord_attack_verify_cancel",[]],
-  [anyone|plyr,"lord_attack_verify_b", [],   "I stand my ground. Prepare to fight!", "lord_attack_verify_commit",[]],
+  # [anyone|plyr,"lord_attack_verify_b", [],  "Forgive me sir. I don't know what I was thinking.", "lord_attack_verify_cancel",[]],
+  # [anyone|plyr,"lord_attack_verify_b", [],   "I stand my ground. Prepare to fight!", "lord_attack_verify_commit",[]],
 
-  [anyone,"lord_attack_verify_commit", [], "{s43}", "close_window",
-   [
-    (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default"),
-    (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
-    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -30),
-    ]],
-#Post 0907 changes end
+  # [anyone,"lord_attack_verify_commit", [], "{s43}", "close_window",
+   # [
+    # (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default"),
+    # (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
+    # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -30),
+    # ]],
+# #Post 0907 changes end
   
-  [anyone|plyr,"lord_demand", [], "Forgive me. It's nothing.", "lord_pretalk",[]],
+  # [anyone|plyr,"lord_demand", [], "Forgive me. It's nothing.", "lord_pretalk",[]],
 
 
 ##  [anyone|plyr,"lord_talk", [(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
@@ -7321,34 +7282,34 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"talk_caravan_escort_2b", [],
    "I'll breathe easy when we reach {s1} and not a moment sooner. Let's keep moving.", "close_window",[[str_store_party_name,s1,"$caravan_escort_destination_town"],(assign, "$g_leave_encounter",1)]],
 
-  [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
-                    (eq, "$g_encountered_party_type", spt_kingdom_caravan),
-                    (party_slot_ge, "$g_encountered_party", slot_party_last_toll_paid_hours, "$g_current_hours"),
-                    ],
-   "What do you want? We paid our toll to you less than three days ago.", "merchant_talk",[]],
+  # [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
+                    # (eq, "$g_encountered_party_type", spt_kingdom_caravan),
+                    # (party_slot_ge, "$g_encountered_party", slot_party_last_toll_paid_hours, "$g_current_hours"),
+                    # ],
+   # "What do you want? We paid our toll to you less than three days ago.", "merchant_talk",[]],
 
-  [anyone,"start", [(eq,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_type", spt_kingdom_caravan),(ge,"$g_encountered_party_relation",0)],
-   "Hail, friend.", "merchant_talk",[]],
+  # [anyone,"start", [(eq,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_type", spt_kingdom_caravan),(ge,"$g_encountered_party_relation",0)],
+   # "Hail, friend.", "merchant_talk",[]],
 
-  [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
-                    (eq, "$g_encountered_party_type", spt_kingdom_caravan),
-                    (lt,"$g_encountered_party_relation",0),
-                    (eq, "$g_encountered_party_faction", "fac_merchants"),
-                    ],
-   "What do you want? We are but simple merchants, we've no quarrel with you, so leave us alone.", "merchant_talk",[]],
+  # [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
+                    # (eq, "$g_encountered_party_type", spt_kingdom_caravan),
+                    # (lt,"$g_encountered_party_relation",0),
+                    # (eq, "$g_encountered_party_faction", "fac_merchants"),
+                    # ],
+   # "What do you want? We are but simple merchants, we've no quarrel with you, so leave us alone.", "merchant_talk",[]],
 
-  [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
-                    (eq, "$g_encountered_party_type", spt_kingdom_caravan),
-                    (lt,"$g_encountered_party_relation",0),
-                    (faction_get_slot, ":faction_leader", "$g_encountered_party_faction",slot_faction_leader),
-                    (str_store_troop_name, s9, ":faction_leader"),
-                    ],
-   "Be warned, knave! This caravan is under the protection of {s9}.\
- Step out of our way or you will face his fury!", "merchant_talk",[]],
+  # [anyone,"start", [(eq,"$talk_context", tc_party_encounter),
+                    # (eq, "$g_encountered_party_type", spt_kingdom_caravan),
+                    # (lt,"$g_encountered_party_relation",0),
+                    # (faction_get_slot, ":faction_leader", "$g_encountered_party_faction",slot_faction_leader),
+                    # (str_store_troop_name, s9, ":faction_leader"),
+                    # ],
+   # "Be warned, knave! This caravan is under the protection of {s9}.\
+ # Step out of our way or you will face his fury!", "merchant_talk",[]],
 
 
-  [anyone,"start", [(party_slot_eq, "$g_encountered_party", slot_party_type, spt_kingdom_caravan),(this_or_next|eq,"$talk_context", tc_party_encounter),(eq,"$talk_context", 0)],
-   "Yes? What do you want?", "merchant_talk",[]],
+  # [anyone,"start", [(party_slot_eq, "$g_encountered_party", slot_party_type, spt_kingdom_caravan),(this_or_next|eq,"$talk_context", tc_party_encounter),(eq,"$talk_context", 0)],
+   # "Yes? What do you want?", "merchant_talk",[]],
   [anyone,"merchant_pretalk", [], "Anything else?", "merchant_talk",[]],
 
   # [anyone|plyr,"merchant_talk", [(le,"$talk_context", tc_party_encounter),
@@ -11565,6 +11526,174 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   ], "But you are still needed here, as well!", "disband_regular_member_insist",[ ]],
 
   [anyone,"disband_regular_member_insist", [ ], "I know, but my duty brings me to different battles.^I will soon leave.", "close_window",[ ]],
+
+
+#TLD: faction specific non-lord party encounter dialogs for friends and enemies
+# (note: depends on lord dialogs coming before this; also bandits are not handled here)
+
+#Friendly faction party
+  [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
+                    (eq,"$encountered_party_hostile",0),
+                    (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end),
+                    ],
+   "{s4} What brings you here, {s24}?", "party_encounter_friend",
+   [
+     # find the greeting
+     (store_sub, ":greet_str", "$g_encountered_party_faction", kingdoms_begin),
+     (val_mul, ":greet_str", 2),
+     (val_add, ":greet_str", "str_party_greet_friend_gondor"),
+     (str_store_string, s4, ":greet_str"),
+     # add a note for home faction
+     (try_begin),
+       (eq, "$g_encountered_party_faction", "$players_kingdom"),
+       (str_store_string, s4, "@{s4} It is always good to see one of our own."),
+     (try_end),
+     # find party home and target centers, if any
+     (party_get_slot, ":home_center", "$g_encountered_party", slot_party_home_center),
+     (try_begin),
+       (gt, ":home_center", 0),
+       (str_store_party_name, s11, ":home_center"),
+     (else_try),
+       (str_store_string, s11, "@a nearby town"), #defensive
+     (try_end),
+     (party_get_slot, ":target_center", "$g_encountered_party", slot_party_ai_object),
+     (try_begin),
+       (gt, ":target_center", 0),
+       (str_store_party_name, s12, ":target_center"),
+     (else_try),
+       (str_store_string, s12, "@that town over there"), #defensive
+     (try_end),
+     # describe what the party is doing
+     (try_begin),
+       (eq, "$g_encountered_party_type", spt_scout),
+       (str_store_string, s4, "@{s4}^We are from {s11}, scouting in the direction of {s12}."),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_raider),
+       (assign, reg1, 0),
+       (try_begin),
+         (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+         (assign, reg1, 1),
+       (try_end),
+       (str_store_string, s4, "@{s4}^We are {reg1?foraging:raiding} around {s11}."),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_patrol),
+       (str_store_string, s4, "@{s4}^We are patrolling around {s11}."),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_kingdom_caravan),
+       (str_store_string, s4, "@{s4}^We are carrying supplies from {s11} to {s12}."),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_prisoner_train),
+       (str_store_string, s4, "@{s4}^We are escorting prisoners to {s12}."),
+     (try_end),
+     (call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player rank title with this faction
+   ]],
+
+  [anyone|plyr,"party_encounter_friend", [(gt,"$tld_war_began",0)],
+   "Greetings, do you need reinforcements?", "party_reinforce", [
+   #init from TLD recruiting in city - modified
+		# prepare strings useful in the folowing dialog
+		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: Party faction name
+		(call_script, "script_get_rank_title", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player rank title with own faction
+		(call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player rank title with this faction
+		(assign, reg26, 0),(try_begin),(eq,"$players_kingdom","$g_encountered_party_faction"),(assign,reg26,1),(try_end), # reg26: 1 if party of player faction
+		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
+		# just to see if someone can be given away: backup party, then see if troops which can be given away 
+		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction"),
+        
+   ]],
+  [anyone|plyr,"party_encounter_friend", [],
+   "Goodbye, friends.", "close_window", [(assign, "$g_leave_encounter",1)]],
+
+#Reinforcement code from town garrison reinforcement, register init above
+ [anyone,"party_reinforce", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
+	 "Reinforce our party? We can always use a few more soldiers.", 
+	 "party_reinforce_check", [
+        (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
+		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
+		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
+		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value (after removing troops ...)
+        (change_screen_give_members)]],
+ [anyone,"party_reinforce", [],
+	 "Unfortunately you don't have any {s22} soldiers to reinforce us with.", 
+	 "party_reinforce_end", []],
+     
+ [anyone,"party_reinforce_check", [], 
+    "Let me check the soldier roster...", 
+    "party_reinforce_check_1", []],
+
+ [anyone,"party_reinforce_check_1", 
+	 [ 
+	   (party_get_num_companions, reg0, "p_main_party"), 
+	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
+	 ],
+    "So you changed your mind...^I see.", 
+    "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]
+ ],
+
+ [anyone,"party_reinforce_check_1", 
+	 [ 
+		(party_get_num_companions, reg0, "p_main_party"),
+        (store_sub, reg10, reg28, reg0), 
+		#(gt, reg10, 0), # player did give someone 
+		(store_sub, reg9, reg10, 1),
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
+        (store_sub, reg11, reg29, reg0), 
+		(str_clear, s31), (str_clear, s32),
+		(try_begin),
+          (eq, reg26, 1), #player is in own faction
+		  (str_store_string, s31, "@Thank you, commander.^"),
+		(else_try),
+		  (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
+		(try_end),
+	 ], # party decreased size 
+    "{s31}{reg9?Those:That} {reg9?soldiers:soldier} will surely help us.{s32}^[earned {reg11} Res.Points of {s22}]", 
+    "party_reinforce_check_2", [(call_script, "script_troop_add_gold_faction", "trp_player", reg11, "$g_encountered_party_faction")]
+ ],
+
+ [anyone|plyr,"party_reinforce_check_2", 
+	[ (try_begin),
+        (eq, reg26, 1), #player is of same faction
+		(str_store_string, s31, "@It is my duty to help our people."),
+	  (else_try),
+		(str_store_string, s31, "@It is my duty to help our allies."),
+	  (try_end), 
+	],
+    "{s31}", 
+    "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]
+ ],
+
+ [anyone,"party_reinforce_end", [],
+    "Good luck in your travels.", "close_window", [(assign, "$g_leave_encounter",1)]],
+
+
+#Enemy faction party
+  [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
+                    (eq,"$encountered_party_hostile",1),
+                    (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end),
+                    ],
+   "{s4}", "party_encounter_enemy",
+   [
+     (store_sub, ":greet_str", "$g_encountered_party_faction", kingdoms_begin),
+     (val_mul, ":greet_str", 2),
+     (val_add, ":greet_str", "str_party_greet_enemy_gondor"),
+     (str_store_string, s4, ":greet_str"),
+     (try_begin),
+       (encountered_party_is_attacker),
+       (str_store_string, s4, "@{s4} Surrender or die!"),
+     (else_try),
+       (str_store_string, s4, "@{s4} Attack, and you will pay dearly!"),
+     (try_end),
+   ]],
+
+  [anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)],
+   "We will fight you to the end!", "close_window", []], #auto-attack
+  [anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)],
+   "Don't attack! We surrender.", "close_window", [(assign,"$g_player_surrenders",1)]],
+  [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)],
+   "Let's fight and see!", "close_window", [(encounter_attack)]],
+  [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)],
+   "Not this time. Begone.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
 
 ######################################

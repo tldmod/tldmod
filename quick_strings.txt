@@ -1,4 +1,4 @@
-724
+737
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -650,7 +650,7 @@ qstr_Caught_a_few_straggl Caught_a_few_stragglers,_{s23}?
 qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
-qstr_Our_enemy_is_the_sam Our_enemy_is_the_same,_we_fight_the_same_war.
+qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
 qstr_I_am_{s4}_the_ruler_ I_am_{s4},_the_ruler_of_{s6}
 qstr_I_am_{s4}_a_commande I_am_{s4},_a_commander_of_{s6}
 qstr_{s9}{reg5?_and_the_l {s9}{reg5?_and_the_lord_of_{s8}.:.
@@ -723,3 +723,16 @@ qstr_{s6}_Our_{reg4?town:v {s6}_Our_{reg4?town:village}_and_the_surrounding_land
 qstr_{s3}_and_{s5} {s3}_and_{s5}
 qstr_{s3}_{s5} {s3},_{s5}
 qstr_{reg20?We_mostly_pro {reg20?We_mostly_produce_{s5}_here:We_don't_produce_much_here_these_days}._If_you_would_like_to_learn_more,_you_can_speak_with_our_{reg4?guildmaster:village_elder}._He_is_nearby,_right_over_there.
+qstr_{s4}_It_is_always_go {s4}_It_is_always_good_to_see_one_of_our_own.
+qstr_a_nearby_town a_nearby_town
+qstr_that_town_over_there that_town_over_there
+qstr_{s4}^We_are_from_{s1 {s4}^We_are_from_{s11},_scouting_in_the_direction_of_{s12}.
+qstr_{s4}^We_are_{reg1?fo {s4}^We_are_{reg1?foraging:raiding}_around_{s11}.
+qstr_{s4}^We_are_patrolli {s4}^We_are_patrolling_around_{s11}.
+qstr_{s4}^We_are_carrying {s4}^We_are_carrying_supplies_from_{s11}_to_{s12}.
+qstr_{s4}^We_are_escortin {s4}^We_are_escorting_prisoners_to_{s12}.
+qstr_^{s22}_is_grateful_to ^{s22}_is_grateful_to_you,_{playername},_{s29}^
+qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
+qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
+qstr_{s4}_Surrender_or_di {s4}_Surrender_or_die!
+qstr_{s4}_Attack_and_you_ {s4}_Attack,_and_you_will_pay_dearly!
