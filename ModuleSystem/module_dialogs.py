@@ -1775,7 +1775,7 @@ dialogs = [
 
  [anyone,"player_hire_troop_pre_nextcycle", 
 	 [ (party_get_num_companions, reg10, "p_main_party"), (eq, reg10, reg27),], # party didn't change size 
-    "So you changed your mind...^I see.", 
+    "So you've changed your mind...^I see.", 
     "player_hire_troop_nextcycle", []
  ],
 
@@ -1796,7 +1796,7 @@ dialogs = [
 	   (party_get_num_companions, reg0, "p_main_party"), 
 	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
 	 ],
-    "So you changed your mind...^I see.", 
+    "So you've changed your mind...^I see.", 
     "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]
  ],
 
@@ -11605,6 +11605,30 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"party_encounter_friend", [],
    "Goodbye, friends.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
+ [anyone,"party_reinforce", [
+     #prevent some exploitation by placing caps on party size
+     (assign, ":party_limit", 80),
+     (try_begin),
+       (eq, "$g_encountered_party_type", spt_scout),
+       (assign, ":party_limit", 20),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_raider),
+       (assign, ":party_limit", 50),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_patrol),
+       (assign, ":party_limit", 80),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_kingdom_caravan),
+       (assign, ":party_limit", 100),
+     (else_try),
+       (eq, "$g_encountered_party_type", spt_prisoner_train),
+       (assign, ":party_limit", 80),
+     (try_end),
+     (party_get_num_companions, ":party_size", "$g_encountered_party"),
+     (ge, ":party_size", ":party_limit"),
+     ],
+	 "We don't need any more soldiers, thank you.", 
+	 "party_reinforce_end", []],
 #Reinforcement code from town garrison reinforcement, register init above
  [anyone,"party_reinforce", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
 	 "Reinforce our party? We can always use a few more soldiers.", 
@@ -11627,7 +11651,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 	   (party_get_num_companions, reg0, "p_main_party"), 
 	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
 	 ],
-    "So you changed your mind...^I see.", 
+    "So you've changed your mind...^I see.", 
     "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]
  ],
 

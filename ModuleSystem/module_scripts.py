@@ -1443,9 +1443,10 @@ scripts = [
             (assign, ":garrison_strength", 0),
           (try_end),
         (try_end),
-        (try_for_range, ":unused", 0, 2),
-          (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
-        (try_end),
+        #MV removed - creates volunteers everywhere because player faction is not defined yet
+        # (try_for_range, ":unused", 0, 2),
+          # (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
+        # (try_end),
         ## ADD some XP initially
         #(store_div, ":xp_amount", ":garrison_strength", 8),
         #(val_add, ":xp_amount", 4),
@@ -1545,31 +1546,30 @@ scripts = [
     ]),    
 
 
-  # script script_maybe_someone_volunteers_in_town (mtarini)
+  # script_maybe_someone_volunteers_in_town (mtarini)
   ("maybe_someone_volunteers_in_town",[
    (store_script_param_1, ":town"),
-   (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt ),
+   (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
    (try_begin),
 	(store_faction_of_party, ":fac", ":town"), # friendly towns only
-	(store_relation, ":rel", ":fac", "fac_player_faction"),
+	(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
  	(ge, ":rel", 0),
 
 	(try_begin),
-		(gt,  ":volunteers", -1),
+		(gt, ":volunteers", -1),
 		(neg|party_is_active, ":volunteers"), # depleted
-		(assign,  ":volunteers", -1),
+		(assign, ":volunteers", -1),
 	(try_end),
 	(try_begin),
 		(lt,  ":volunteers", 0),
 		(spawn_around_party, ":town"),
 		(assign,":volunteers", reg0),
-		(party_attach_to_party,":volunteers", ":town"),
-		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers" ),
-		(party_set_name, ":volunteers", "@_+_"),
-		(party_set_flags, ":volunteers",pf_no_label),
-		(party_set_ai_behavior, ":volunteers",ai_bhvr_hold),
+		(party_attach_to_party, ":volunteers", ":town"),
+		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
+		(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_"
+		(party_set_flags, ":volunteers", pf_no_label),
+		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
 	(try_end),
-	(store_faction_of_party, ":fac", ":town"),
 	
 	# compute ideal number of volunteers in r10
 	(store_party_size, ":to_add", ":town"),(val_div, ":to_add", 20), #   base: [num-garrisons] / 20
