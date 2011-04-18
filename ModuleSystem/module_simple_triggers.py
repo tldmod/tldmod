@@ -233,13 +233,14 @@ simple_triggers = [
          # (val_div, ":hiring_budget", 5),
          # (gt, ":hiring_budget", reinforcement_cost),
          
+		 (call_script, "script_refresh_volunteers_in_town", ":center_no"),
+         
          #TLD: above replaced by this
          (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
          (party_get_num_companions, ":garrison_size", ":center_no"),
          (gt, ":garrison_limit", ":garrison_size"),
          
          (call_script, "script_cf_reinforce_party", ":center_no"),
-		 (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
 		 
          # (val_sub, ":cur_wealth", reinforcement_cost),
          # (party_set_slot, ":center_no", slot_town_wealth, ":cur_wealth"),
@@ -1569,7 +1570,28 @@ simple_triggers = [
            (troop_set_slot, "trp_player", slot_troop_renown, ":player_renown"),
           ]),
 
-
+# Removing cattle herds if they are way out of range
+  (12, [(try_for_parties, ":cur_party"),
+          (party_slot_eq, ":cur_party", slot_party_type, spt_cattle_herd),
+          (store_distance_to_party_from_party, ":dist",":cur_party", "p_main_party"),
+          (try_begin),
+            (gt, ":dist", 30),
+            (remove_party, ":cur_party"),
+            (try_begin),
+              #Fail quest if the party is the quest party
+              (check_quest_active, "qst_move_cattle_herd"),
+              (neg|check_quest_concluded, "qst_move_cattle_herd"),
+              (quest_slot_eq, "qst_move_cattle_herd", slot_quest_target_party, ":cur_party"),
+              (call_script, "script_fail_quest", "qst_move_cattle_herd"),
+            (end_try),
+          (else_try),
+            (gt, ":dist", 10),
+            (party_set_slot, ":cur_party", slot_cattle_driven_by_player, 0),
+            (party_set_ai_behavior, ":cur_party", ai_bhvr_hold),
+          (try_end),
+        (try_end),
+    ]),
+    
 # Quest triggers:
 
 # Remaining days text update
@@ -1786,6 +1808,17 @@ simple_triggers = [
          (jump_to_menu, "mnu_kingdom_army_follow_failed"),
        (try_end),
      (try_end),
+    ]),
+
+# Move cattle herd
+  (0.5, [(check_quest_active,"qst_move_cattle_herd"),
+         (neg|check_quest_concluded,"qst_move_cattle_herd"),
+         (quest_get_slot, ":target_party", "qst_move_cattle_herd", slot_quest_target_party),
+         (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
+         (store_distance_to_party_from_party, ":dist",":target_party", ":target_center"),
+         (lt, ":dist", 3),
+         (remove_party, ":target_party"),
+         (call_script, "script_succeed_quest", "qst_move_cattle_herd"),
     ]),
 
   (2, [

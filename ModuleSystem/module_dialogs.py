@@ -607,38 +607,38 @@ dialogs = [
    
    
    
-  [party_tpl|pt_village_farmers,"start", [(eq,"$talk_context",tc_party_encounter),
-                                          (agent_play_sound, "$g_talk_agent", "snd_encounter_farmers"),
-  ],
-   " My {lord/lady}, we're only poor farmers from the village of {s11}. {reg1?We are taking our products to the market at {s12}.:We are returning from the market at {s12} back to our village.}", "village_farmer_talk",
-   [(party_get_slot, ":target_center", "$g_encountered_party", slot_party_ai_object),
-    (party_get_slot, ":home_center", "$g_encountered_party", slot_party_home_center),
-    (party_get_slot, ":market_town", ":home_center", slot_village_market_town),
-    (str_store_party_name, s11, ":home_center"),
-    (str_store_party_name, s12, ":market_town"),
-    (assign, reg1, 1),
-    (try_begin),
-      (party_slot_eq, ":target_center", slot_party_type, spt_village),
-      (assign, reg1, 0),
-    (try_end),
-    ]],
+  # [party_tpl|pt_village_farmers,"start", [(eq,"$talk_context",tc_party_encounter),
+                                          # (agent_play_sound, "$g_talk_agent", "snd_encounter_farmers"),
+  # ],
+   # " My {lord/lady}, we're only poor farmers from the village of {s11}. {reg1?We are taking our products to the market at {s12}.:We are returning from the market at {s12} back to our village.}", "village_farmer_talk",
+   # [(party_get_slot, ":target_center", "$g_encountered_party", slot_party_ai_object),
+    # (party_get_slot, ":home_center", "$g_encountered_party", slot_party_home_center),
+    # (party_get_slot, ":market_town", ":home_center", slot_village_market_town),
+    # (str_store_party_name, s11, ":home_center"),
+    # (str_store_party_name, s12, ":market_town"),
+    # (assign, reg1, 1),
+    # (try_begin),
+      # (party_slot_eq, ":target_center", slot_party_type, spt_village),
+      # (assign, reg1, 0),
+    # (try_end),
+    # ]],
 
-  [anyone|plyr,"village_farmer_talk", [], "We'll see how poor you are after I take what you've got!", "close_window",
-   [(party_get_slot, ":home_center", "$g_encountered_party", slot_party_home_center),
-    (party_get_slot, ":market_town", ":home_center", slot_village_market_town),
-    (party_get_slot, ":village_owner", ":home_center", slot_town_lord),
-    (call_script, "script_change_player_relation_with_center", ":home_center", -4),
-    (call_script, "script_change_player_relation_with_center", ":market_town", -2),
-    (call_script, "script_change_player_relation_with_troop", ":village_owner", -2),
-    (store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
-    (try_begin),
-      (gt, ":rel", 0),
-      (val_sub, ":rel", 5),
-    (try_end),
-    (val_sub, ":rel", 3),
-    (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
-    ]],
-  [anyone|plyr,"village_farmer_talk", [], "Carry on, then. Farewell.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  # [anyone|plyr,"village_farmer_talk", [], "We'll see how poor you are after I take what you've got!", "close_window",
+   # [(party_get_slot, ":home_center", "$g_encountered_party", slot_party_home_center),
+    # (party_get_slot, ":market_town", ":home_center", slot_village_market_town),
+    # (party_get_slot, ":village_owner", ":home_center", slot_town_lord),
+    # (call_script, "script_change_player_relation_with_center", ":home_center", -4),
+    # (call_script, "script_change_player_relation_with_center", ":market_town", -2),
+    # (call_script, "script_change_player_relation_with_troop", ":village_owner", -2),
+    # (store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
+    # (try_begin),
+      # (gt, ":rel", 0),
+      # (val_sub, ":rel", 5),
+    # (try_end),
+    # (val_sub, ":rel", 3),
+    # (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
+    # ]],
+  # [anyone|plyr,"village_farmer_talk", [], "Carry on, then. Farewell.", "close_window",[(assign, "$g_leave_encounter",1)]],
 
 
 ### COMPANIONS
@@ -9519,7 +9519,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_succeeded, "qst_move_cattle_herd"),
                           ],
-   "Good to see you again {playername}. I have heard that you have delivered the cattle successfully.\
+   "Good to see you again {playername}. I have heard that you have delivered the people successfully.\
  I will tell the merchants how reliable you are.\
  And here is your pay, {reg8} denars.", "close_window",
    [(quest_get_slot, ":quest_gold_reward", "qst_move_cattle_herd", slot_quest_gold_reward),
@@ -9536,19 +9536,19 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_failed, "qst_move_cattle_herd"),
                           ],
-   "I heard that you have lost the cattle herd on your way to {s9}.\
- I had a very difficult time explaining your failure to the owner of that herd, {sir/madam}.\
+   "I heard that you have lost the people on your way to {s9}.\
+ I had a very difficult time explaining your failure to the commander here.\
  Do you have anything to say?", "move_cattle_herd_failed",
    []],
 
   [anyone|plyr ,"move_cattle_herd_failed", [],
    "I am sorry. But I was attacked on the way.", "move_cattle_herd_failed_2",[]],
   [anyone|plyr ,"move_cattle_herd_failed", [],
-   "I am sorry. The stupid animals wandered off during the night.", "move_cattle_herd_failed_2",[]],
+   "I am sorry. Those people wandered off during the night.", "move_cattle_herd_failed_2",[]],
 
   [anyone,"move_cattle_herd_failed_2", [],
-   "Well, it was your responsibility to deliver that herd safely, no matter what.\
- You should know that the owner of the herd demanded to be compensated for his loss, and I had to pay him 1000 denars.\
+   "Well, it was your responsibility to deliver them safely, no matter what.\
+ You should know that the commander demanded to be compensated for this, and I had to pay him 1000 denars.\
  So you now owe me that money.", "merchant_ask_for_debts",
    [(assign, "$debt_to_merchants_guild", 1000),
     (call_script, "script_end_quest", "qst_move_cattle_herd"),]],
@@ -10271,7 +10271,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_move_cattle_herd"),
                                        (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
                                        (str_store_party_name,s13,":target_center"),],
-   "One of the merchants here is looking for herdsmen to take his cattle to the market at {s13}.", "merchant_quest_brief",
+   "The garrison commander here is looking for a resourceful warrior to take a group of people to {s13}.", "merchant_quest_brief",
    []],
 
   [anyone,"merchant_quest_brief",
@@ -10281,9 +10281,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
     (str_store_party_name, s13, ":target_center"),
     ],
-   "The cattle herd must be at {s13} within 30 days. Sooner is better, much better,\
+   "These people must arrive at {s13} within 30 days. Sooner is better, much better,\
  but it must be absolutely no later than 30 days.\
- If you can do that, I'd be willing to pay you {reg8} denars for your trouble. Interested?", "move_cattle_herd_quest_brief",
+ If you can do that, I'd be willing to pay you {reg8} RPs for your trouble. Interested?", "move_cattle_herd_quest_brief",
    []],
 
 #MV: remove when quest dialogs are done, or bugs are fixed   
@@ -10292,24 +10292,40 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.", "mayor_pretalk",
    []],
   
-  [anyone|plyr,"move_cattle_herd_quest_brief", [],  "Aye, I can take the herd to {s13}.",
+  [anyone|plyr,"move_cattle_herd_quest_brief", [],  "Aye, I can take them to {s13}.",
    "move_cattle_herd_quest_taken",
    [
-     (call_script, "script_create_cattle_herd", "$g_encountered_party", 0),
-     (quest_set_slot, "qst_move_cattle_herd", slot_quest_target_party, reg0),
-     (str_store_party_name_link, s10,"$g_encountered_party"),
+     #(call_script, "script_create_cattle_herd", "$g_encountered_party", 0),
+     (set_spawn_radius, 1),
+     (spawn_around_party, "$g_encountered_party", "pt_village_farmers"),
+     (assign, ":herd_party", reg0),
+     (str_store_faction_name, s1, "$g_encountered_party_faction"),
+     (try_begin),
+       (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+       (party_set_name, ":herd_party", "@{s1} Refugees"),
+     (else_try),
+       (party_set_name, ":herd_party", "@{s1} Slaves"),
+     (try_end),
+     (party_set_faction, ":herd_party", "$g_encountered_party_faction"),
+     (party_set_slot, ":herd_party", slot_party_type, spt_cattle_herd),
+     (party_set_slot, ":herd_party", slot_party_ai_state, spai_undefined),
+     (party_set_ai_behavior, ":herd_party", ai_bhvr_hold),
+     (party_set_slot, ":herd_party", slot_party_commander_party, -1),
+     (quest_set_slot, "qst_move_cattle_herd", slot_quest_target_party, ":herd_party"),
+     (str_store_party_name_link, s10, "$g_encountered_party"),
      (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
      (str_store_party_name_link, s13, ":target_center"),
      (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
      (setup_quest_text, "qst_move_cattle_herd"),
-     (str_store_string, s2, "@Guildmaster of {s10} asked you to move a cattle herd to {s13}. You will earn {reg8} denars in return."),
+     (str_store_troop_name, s11, "$g_talk_troop"),
+     (str_store_string, s2, "@The {s11} of {s10} asked you to escort some people to {s13}. You will earn {reg8} RPs in return."),
      (call_script, "script_start_quest", "qst_move_cattle_herd", "$g_talk_troop"),
      ]],
   [anyone|plyr,"move_cattle_herd_quest_brief", [],
    "I am sorry, but no.", "merchant_quest_stall",[]],
 
-  [anyone,"move_cattle_herd_quest_taken", [], "Splendid. You can find the herd right outside the town.\
- After you take the animals to {s13}, return back to me and I will give you your pay.", "mayor_pretalk",[]],
+  [anyone,"move_cattle_herd_quest_taken", [], "Splendid. You can find them right outside the town.\
+ After you take them to {s13}, return back to me and I will give you your pay.", "mayor_pretalk",[]],
 
 
 ################################################# 

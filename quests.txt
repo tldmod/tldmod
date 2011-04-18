@@ -18,7 +18,7 @@ qst_report_to_army Report_to_{s13},_the_Marshall 2 None
 qst_deliver_cattle_to_army Deliver_{reg3}_Heads_of_Cattle_to_{s13} 2 None 
 qst_join_siege_with_army Join_the_Siege_of_{s14} 2 None 
 qst_scout_waypoints Scout_{s13},_{s14}_and_{s15} 2 None 
-qst_move_cattle_herd Move_Cattle_Herd_to_{s13} 2 Guildmaster_of_{s10}_asked_you_to_move_a_cattle_herd_to_{s13}. 
+qst_move_cattle_herd Move_People_to_{s13} 2 The_Elder_of_{s10}_asked_you_to_move_some_people_to_{s13}. 
 qst_escort_merchant_caravan Escort_Supply_Caravan_to_{s8} 2 Escort_the_supply_caravan_to_the_town_of_{s8}. 
 qst_deliver_wine Deliver_{reg5}_Units_of_{s6}_to_{s4} 2 {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_tavern_in_{s4}_in_7_days. 
 qst_troublesome_bandits Hunt_Down_Troublesome_Bandits 2 {s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_bandits_in_the_vicinity_of_the_town. 

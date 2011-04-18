@@ -168,8 +168,8 @@ quests = [
 # Mayor quests
 ##################
 # Note : This is defined as the first mayor quest in module_constants.py: 
- ("move_cattle_herd", "Move Cattle Herd to {s13}", qf_random_quest,
-  "Guildmaster of {s10} asked you to move a cattle herd to {s13}."
+ ("move_cattle_herd", "Move People to {s13}", qf_random_quest,
+  "The Elder of {s10} asked you to move some people to {s13}."
   ),
  ("escort_merchant_caravan", "Escort Supply Caravan to {s8}", qf_random_quest,
   "Escort the supply caravan to the town of {s8}."

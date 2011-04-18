@@ -1,4 +1,4 @@
-737
+739
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -97,7 +97,7 @@ qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr_Volunteers Volunteers
 qstr_DEBUG:_Troll_hit!!! DEBUG:_Troll_hit!!!
-qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle_but_managed_to_escape.
+qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
@@ -706,7 +706,9 @@ qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}
 qstr_Escort_the_merchant_ Escort_the_merchant_caravan_to_the_town_of_{s8}.
 qstr_Merchant_{s9}_of_{s4 Merchant_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_bandits_in_the_vicinity_of_the_town.
 qstr_The_Guildmaster_of_{s The_Guildmaster_of_{s14}_has_asked_you_to_deal_with_a_group_of_bandits_terrorising_the_streets_of_{s14}._They_only_come_out_at_night,_and_only_attack_lone_travellers_on_the_streets.
-qstr_Guildmaster_of_{s10} Guildmaster_of_{s10}_asked_you_to_move_a_cattle_herd_to_{s13}._You_will_earn_{reg8}_denars_in_return.
+qstr_{s1}_Refugees {s1}_Refugees
+qstr_{s1}_Slaves {s1}_Slaves
+qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_people_to_{s13}._You_will_earn_{reg8}_RPs_in_return.
 qstr_{s16}_and_{s15} {s16}_and_{s15}
 qstr_{s16}_{s15} {s16},_{s15}
 qstr_I_can_smell_a_fat_pu I_can_smell_a_fat_purse_a_mile_away._Methinks_yours_could_do_with_some_lightening,_eh?

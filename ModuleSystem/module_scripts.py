@@ -1101,11 +1101,11 @@ scripts = [
 
 # culture troop slots
 	  ]+[
-      (faction_set_slot, faction_init[x][0], slot_faction_tier_1_troop,  faction_init[x][4][0])  for x in range(len(faction_init)) ]+[
-      (faction_set_slot, faction_init[x][0], slot_faction_tier_2_troop,  faction_init[x][4][1])  for x in range(len(faction_init)) ]+[
-      (faction_set_slot, faction_init[x][0], slot_faction_tier_3_troop,  faction_init[x][4][2])  for x in range(len(faction_init)) ]+[
-      (faction_set_slot, faction_init[x][0], slot_faction_tier_4_troop,  faction_init[x][4][3])  for x in range(len(faction_init)) ]+[
-      (faction_set_slot, faction_init[x][0], slot_faction_tier_5_troop,  faction_init[x][4][4])  for x in range(len(faction_init)) ]+[      
+      # (faction_set_slot, faction_init[x][0], slot_faction_tier_1_troop,  faction_init[x][4][0])  for x in range(len(faction_init)) ]+[
+      # (faction_set_slot, faction_init[x][0], slot_faction_tier_2_troop,  faction_init[x][4][1])  for x in range(len(faction_init)) ]+[
+      # (faction_set_slot, faction_init[x][0], slot_faction_tier_3_troop,  faction_init[x][4][2])  for x in range(len(faction_init)) ]+[
+      # (faction_set_slot, faction_init[x][0], slot_faction_tier_4_troop,  faction_init[x][4][3])  for x in range(len(faction_init)) ]+[
+      # (faction_set_slot, faction_init[x][0], slot_faction_tier_5_troop,  faction_init[x][4][4])  for x in range(len(faction_init)) ]+[      
 # Faction init from data in module_constants.py
 # War system (foxyman)
       (faction_set_slot, faction_init[x][0], slot_faction_strength        , faction_init[x][1])     for x in range(len(faction_init)) ]+[
@@ -1386,7 +1386,7 @@ scripts = [
 	  (troop_set_slot, ":weaponsmith",      slot_troop_subfaction    , subfaction_data[x][0]),
 	  ]   for x in range(len(subfaction_data)) ])+[
 	
-	  (party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop,  "trp_steward_guard"), # minas tirith exception
+	  (party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
       (call_script, "script_update_village_market_towns"),
 
       (try_for_range, ":troop_id", kingdom_heroes_begin, kingdom_heroes_end),
@@ -1410,11 +1410,7 @@ scripts = [
         (troop_set_slot, ":troop_id", slot_troop_wealth, ":initial_wealth"),
       (try_end),
 
-	  # assign volunteer partis to towns (mtarini)
-	  (try_for_parties, ":town"), 
-		(party_set_slot,":town", slot_town_volunteer_pt, -1),
-	  (try_end),
-
+	  
       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),#add town garrisons
         #Add initial center wealth
         (assign, ":initial_wealth", 20000),
@@ -1443,9 +1439,12 @@ scripts = [
             (assign, ":garrison_strength", 0),
           (try_end),
         (try_end),
+        
+        #(party_set_slot, ":center_no", slot_town_volunteer_pt, -1), # initialize volunteer parties in towns (mtarini)
+        
         #MV removed - creates volunteers everywhere because player faction is not defined yet
         # (try_for_range, ":unused", 0, 2),
-          # (call_script, "script_maybe_someone_volunteers_in_town", ":center_no"),
+          # (call_script, "script_refresh_volunteers_in_town", ":center_no"),
         # (try_end),
         ## ADD some XP initially
         #(store_div, ":xp_amount", ":garrison_strength", 8),
@@ -1546,8 +1545,8 @@ scripts = [
     ]),    
 
 
-  # script_maybe_someone_volunteers_in_town (mtarini)
-  ("maybe_someone_volunteers_in_town",[
+  # script_refresh_volunteers_in_town (mtarini)
+  ("refresh_volunteers_in_town",[
    (store_script_param_1, ":town"),
    (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
    (try_begin),
@@ -1556,14 +1555,14 @@ scripts = [
  	(ge, ":rel", 0),
 
 	(try_begin),
-		(gt, ":volunteers", -1),
+		(gt, ":volunteers", 0),
 		(neg|party_is_active, ":volunteers"), # depleted
-		(assign, ":volunteers", -1),
+		(assign, ":volunteers", 0),
 	(try_end),
 	(try_begin),
-		(lt,  ":volunteers", 0),
+		(eq, ":volunteers", 0),
 		(spawn_around_party, ":town"),
-		(assign,":volunteers", reg0),
+		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
 		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
 		(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_"
@@ -1571,16 +1570,33 @@ scripts = [
 		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
 	(try_end),
 	
-	# compute ideal number of volunteers in r10
-	(store_party_size, ":to_add", ":town"),(val_div, ":to_add", 20), #   base: [num-garrisons] / 20
-	(faction_get_slot, reg12, ":fac", slot_faction_rank), (val_div, reg12, 100), (val_mul, reg12, 1), (val_add, ":to_add", reg12), #  + rank
-	(store_skill_level, reg13, "skl_leadership", "trp_player"), (val_div, reg13, 2), (val_add, ":to_add", reg13),   # +leadership / 2
+	# compute ideal number of volunteers
+	(store_party_size_wo_prisoners, ":to_add", ":town"),
+    (val_div, ":to_add", 20), #   base: [num-garrison] / 20
+	(faction_get_slot, ":rank_bonus", ":fac", slot_faction_rank),
+    (val_div, ":rank_bonus", 100),
+    (val_mul, ":rank_bonus", 1),
+    (val_add, ":to_add", ":rank_bonus"), #  + rank
+	(store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
+    (val_div, ":lead_bonus", 2),
+    (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
+    # orc bonus
+    (assign, ":is_orc_faction", 0),
+    (try_begin),
+      (this_or_next|eq, ":fac", "fac_mordor"),
+      (this_or_next|eq, ":fac", "fac_isengard"),
+      (this_or_next|eq, ":fac", "fac_moria"),
+      (this_or_next|eq, ":fac", "fac_guldur"),
+      (eq, ":fac", "fac_gundabad"),
+      (assign, ":is_orc_faction", 1),
+      (val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
+	(try_end),
 	
 	# compute how many soldiers to add to volunteers
-	(store_party_size, reg11, ":volunteers"),
-	(val_sub, ":to_add", reg11), # how many troops to add to volunteer (in theory)
-	(val_add, ":to_add", 2), (val_div, ":to_add",3), # fill 1/3 of the gap per time
-	(store_random_in_range, reg15, 0, 5), (val_add, reg15, -2), (val_add, ":to_add", reg15), # plus random -2 .. +2
+	(store_party_size, ":vol_total", ":volunteers"),
+	(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
+	(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
+	(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
 
 	(try_begin),
 		(gt, ":to_add", 0), # add volunteers!
@@ -1604,11 +1620,20 @@ scripts = [
 		(lt, ":to_add", 0), # remove volunteers!
 		(val_mul, ":to_add", -1),
 		(try_for_range, ":unused", 0, ":to_add"),
-			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"),(assign,":guy", reg0),  # can fail
+			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
 			(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
 			(party_add_members, ":town", ":guy", 1),
 		(try_end),
 	(try_end),
+    
+    # add a couple of orcs each day
+    (try_begin),
+      (eq, ":is_orc_faction", 1),
+      (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
+      (gt, ":puny_orc", 0),
+      (party_add_members, ":town", ":puny_orc", 2),
+	(try_end),
+    
    (try_end),
 
 	
@@ -1886,7 +1911,8 @@ scripts = [
                  (else_try),
                    (assign, ":news_color", color_bad_news),
                  (try_end),
-                 (display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
+                 (display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
+                 #(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
                (try_end),
                (try_begin),
                  (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
@@ -5028,7 +5054,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_hunt_down_fugitive"),
+#(assign, ":quest_no", "qst_move_cattle_herd"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5168,11 +5194,13 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_move_cattle_herd"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (call_script, "script_cf_select_random_town_at_peace_with_faction", ":giver_faction_no"),
+          #(call_script, "script_cf_select_random_town_at_peace_with_faction", ":giver_faction_no"),
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
           (assign, ":quest_target_center", reg0),
-          (store_distance_to_party_from_party, ":dist",":giver_center_no",":quest_target_center"),
-          (assign, ":quest_gold_reward", ":dist"),
+          #(store_distance_to_party_from_party, ":dist",":giver_center_no",":quest_target_center"),
+          (assign, ":quest_gold_reward", ":cur_target_dist"),
           (val_add, ":quest_gold_reward", 25),
           (val_mul, ":quest_gold_reward", 50),
           (val_div, ":quest_gold_reward", 20),
@@ -6839,7 +6867,7 @@ scripts = [
         (lt, ":attached_to", 0), #party is not attached to another party
         (get_party_ai_behavior, ":behavior", ":party_no"),
         (neq, ":behavior", ai_bhvr_in_town),
-
+        (neg|party_slot_eq, ":party_no", slot_party_type, spt_cattle_herd), #TLD: "cattle" won't join
       
         (store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
         (lt, ":distance", ":join_distance"),

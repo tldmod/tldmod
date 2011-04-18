@@ -1496,7 +1496,8 @@ triggers = [
   ] ),
 
     # Orc parties eat prisoners at night
-    (0, 18, 6, [], [
+    (0, 18, 6, [(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], #MV: only affects good sides
+    [
 #        debug_point_4,
 #        (try_begin),
 #            (is_currently_night),
@@ -1542,7 +1543,7 @@ triggers = [
                 (try_end),
             (try_end),
             (store_distance_to_party_from_party, ":dis", ":party_no", "p_main_party"),
-            (le, ":dis", 5),  #TODO: Adjust this distance later
+            (le, ":dis", 3),  #TODO: Adjust this distance later
             (display_message, "@Your party witnessed orcs eating prisoners.", 0xffaa3333),
             (party_get_morale, ":morale", "p_main_party"),
             (try_begin),
