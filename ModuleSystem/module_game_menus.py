@@ -8953,7 +8953,11 @@ choose_scene_template = Game_Menu_Template(
   optn_id="choose_scene_",
   optn_text="{list_item[0]}{list_item[1]}",
   optn_consq = [
-    (jump_to_scene, "scn_{list_item[0]}"),
+    (modify_visitors_at_site,"scn_{list_item[0]}"),
+	(reset_visitors,0),
+    (set_visitor,0,"trp_player"),    
+	(set_jump_mission,"mt_scene_chooser"),
+	(jump_to_scene, "scn_{list_item[0]}"),
     (change_screen_mission)
   ]
 )

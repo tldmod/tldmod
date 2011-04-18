@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1181
+ 1202
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3596,5 +3596,68 @@ spr_tree_huorn 0 0 tree_huorn 0 0
 
 
 spr_waterfall 0 0 waterfall 0 0
+
+
+spr_tunnel_cave 0 0 tunnel_cave bo_tunnel_cave 0
+
+
+spr_moria_a 0 0 moria_a bo_moria_a 0
+
+
+spr_moria_entry_a 0 0 moria_entry_a bo_moria_entry_a 0
+
+
+spr_moria_stairs_a 0 0 moria_stairs_a bo_moria_stairs_a 0
+
+
+spr_moria_corridor_a 0 0 moria_corridor_a bo_moria_corridor_a 0
+
+
+spr_moria_direction_a 0 0 moria_direction_a bo_moria_direction_a 0
+
+
+spr_moria_corridor_b 0 0 moria_corridor_b bo_moria_corridor_b 0
+
+
+spr_moria_cell_a 0 0 moria_cell_a bo_moria_cell_a 0
+
+
+spr_moria_entry_b 0 0 moria_entry_b bo_moria_entry_b 0
+
+
+spr_moria_room_a 0 0 moria_room_a bo_moria_room_a 0
+
+
+spr_moria_stairs_b 0 0 moria_stairs_b bo_moria_stairs_a 0
+
+
+spr_moria_cell_b 0 0 moria_cell_b bo_moria_cell_b 0
+
+
+spr_moria_tower_stairs_a 0 0 moria_tower_stairs_a bo_moria_tower_stairs_a 0
+
+
+spr_moria_tower_cell_a 0 0 moria_tower_cell_a bo_moria_tower_cell_a 0
+
+
+spr_light_fog_black0 16384 0 f0_pointer 0 0
+
+
+spr_light_fog_black1 16384 0 f1_pointer 0 0
+
+
+spr_light_fog_black2 16384 0 f2_pointer 0 0
+
+
+spr_light_fog_black3 16384 0 f3_pointer 0 0
+
+
+spr_light_fog_black4 16384 0 f4_pointer 0 0
+
+
+spr_light_fog_black5 16384 0 f5_pointer 0 0
+
+
+spr_moria_rock 0 0 moria_rock bo_moria_rock 0
 
 

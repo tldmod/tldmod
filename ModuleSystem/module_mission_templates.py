@@ -4231,5 +4231,40 @@ mission_templates = [
     ],
   ),
 ########################### end custom battle faction troops showoff
-
+( "scene_chooser",mtf_battle_mode,-1,
+    "You go to the scene",
+    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+	
+	(1, 0, 0, [], # dynamic fog in dungeons, governed by player triggering scene props
+   [ (get_player_agent_no,":player"), 
+     (agent_get_position,pos25,":player"),
+     # cycle through fog triggers
+     (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
+       (scene_prop_get_num_instances,":max_instance", ":pointer"),
+       (ge,":max_instance", 1),
+	   # setting fog thickness
+         (try_begin),(eq,":pointer","spr_light_fog_black0"),(assign,":fog_distance",10000),
+	       (else_try),(eq,":pointer","spr_light_fog_black1"),(assign,":fog_distance",500),
+	       (else_try),(eq,":pointer","spr_light_fog_black2"),(assign,":fog_distance",200),
+	       (else_try),(eq,":pointer","spr_light_fog_black3"),(assign,":fog_distance",120),
+	       (else_try),(eq,":pointer","spr_light_fog_black4"),(assign,":fog_distance",80),
+	       (else_try),(eq,":pointer","spr_light_fog_black5"),(assign,":fog_distance",50),
+         (try_end),
+	   # checking distance to player
+         (try_for_range,":instance_no",0,":max_instance"),
+	       (scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
+           (ge, ":i", 0),
+             (prop_instance_get_position,pos1,":i"),
+             (get_distance_between_positions,":dist",pos1,pos25),
+	         (le,":dist",200),
+	           (set_fog_distance,":fog_distance",0x010101),
+         (try_end),
+      (try_end),
+  ]),
+  ],
+),
+ 
+ 
  ]
