@@ -1228,3 +1228,4 @@ spr_horse_dol_amroth_warhorse = 1226
 spr_horse_dol_amroth_warhorse2 = 1227
 spr_horse_gondor_warhorse = 1228
 spr_horse_gondor_lam_horse = 1229
+spr_spiderweb = 1230

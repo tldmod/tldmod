@@ -1944,5 +1944,5 @@ scene_props = [
 ("horse_gondor_lam_horse",sokf_invisible,"lam_warhorse01","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_gondor_lam_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
-
+("spiderweb",0,"spiderweb","0", []), 
 ]

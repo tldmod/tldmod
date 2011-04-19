@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1230
+ 1231
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3770,5 +3770,8 @@ spr_horse_gondor_warhorse 16384 0 gondor_warhorse01 0 1
 
 spr_horse_gondor_lam_horse 16384 0 lam_warhorse01 0 1
 -40.000000  5 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1970 1 1 1973 2 288230376151711799 0 1741 2 72057594037927936 1801439850948198806 
+
+
+spr_spiderweb 0 0 spiderweb 0 0
 
 
