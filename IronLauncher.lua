@@ -44,6 +44,11 @@ BreakPoints = 0
 -- // Module Root
 
 	ModuleRoot2CommonRoot("Data\\","mb.fxo")
+	ModuleRoot2CommonRoot("Data\\","specular.pp")
+	ModuleRoot2CommonRoot("Data\\","man_alpha.pp")
+	ModuleRoot2CommonRoot("Data\\","man_basic.pp")
+	ModuleRoot2CommonRoot("Data\\","man_flora.pp")
+	ModuleRoot2CommonRoot("Data\\","man_plain.pp")
 
 --videos (wb & orig)
 	--ModuleRoot2CommonRoot("Data\\","taleworlds_intro.bik")
