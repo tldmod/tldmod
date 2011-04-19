@@ -1860,4 +1860,89 @@ scene_props = [
 ("light_fog_black4",sokf_invisible,"f4_pointer","0",  []),
 ("light_fog_black5",sokf_invisible,"f5_pointer","0",  []),
 ("moria_rock",0,"moria_rock","bo_moria_rock", []), 
+("tunnel_sunshield",0,"tunnel_sunshield","0", []), 
+
+#horse spawns
+("horse_riv_warhorse",sokf_invisible,"rivendell_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_riv_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_riv_warhorse2",sokf_invisible,"rivendell_warhorse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_riv_warhorse2", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_sumpter_horse",sokf_invisible,"sumpter_horse","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_sumpter_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_saddle_horse",sokf_invisible,"saddle_horse","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_saddle_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_steppe_horse",sokf_invisible,"steppe_horse","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_steppe_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_courser",sokf_invisible,"courser","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_courser", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_hunter",sokf_invisible,"hunting_horse","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_hunter", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rohirrim_courser",sokf_invisible,"rohan_horse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rohirrim_courser", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rohirrim_hunter",sokf_invisible,"rohan_horse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rohirrim_hunter", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rohirrim_courser2",sokf_invisible,"rohan_horse03","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rohirrim_courser2", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rohan_warhorse",sokf_invisible,"rohan_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rohan_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_thengel_warhorse",sokf_invisible,"rohan_warhorse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_thengel_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rhun_horse_a",sokf_invisible,"rhunhorselight1","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rhun_horse_a", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rhun_horse_b",sokf_invisible,"rhunhorselight2","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rhun_horse_b", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rhun_horse_d",sokf_invisible,"rhunhorselight4","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rhun_horse_d", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_rhun_horse_e",sokf_invisible,"rhunhorseheav1","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_rhun_horse_e", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_harad_horse",sokf_invisible,"harad_horse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_harad_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_harad_warhorse",sokf_invisible,"harad_horse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_harad_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_variag_pony",sokf_invisible,"horse_c","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_variag_pony", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_variag_kataphrakt",sokf_invisible,"easterling_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_variag_kataphrakt", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_mordor_warhorse",sokf_invisible,"mordor_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_mordor_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_gondor_courser",sokf_invisible,"gondor_horse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_gondor_courser", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_gondor_hunter",sokf_invisible,"gondor_horse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_gondor_hunter", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_dol_amroth_warhorse",sokf_invisible,"da_warhorse02","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_dol_amroth_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_dol_amroth_warhorse2",sokf_invisible,"da_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_dol_amroth_warhorse2", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_gondor_warhorse",sokf_invisible,"gondor_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_gondor_warhorse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_gondor_lam_horse",sokf_invisible,"lam_warhorse01","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_gondor_lam_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+
 ]
