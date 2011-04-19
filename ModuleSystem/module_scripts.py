@@ -1591,6 +1591,7 @@ scripts = [
       (assign, ":is_orc_faction", 1),
       (val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
 	(try_end),
+    (assign, ":ideal_size", ":to_add"),
 	
 	# compute how many soldiers to add to volunteers
 	(store_party_size, ":vol_total", ":volunteers"),
@@ -1626,12 +1627,13 @@ scripts = [
 		(try_end),
 	(try_end),
     
-    # add a couple of orcs each day
+    # add a couple of orc volunteers each day
     (try_begin),
       (eq, ":is_orc_faction", 1),
+      (gt, ":ideal_size", ":vol_total"), #only if needed
       (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
       (gt, ":puny_orc", 0),
-      (party_add_members, ":town", ":puny_orc", 2),
+      (party_add_members, ":volunteers", ":puny_orc", 2),
 	(try_end),
     
    (try_end),
@@ -5054,7 +5056,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_move_cattle_herd"),
+#(assign, ":quest_no", "qst_troublesome_bandits"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5127,9 +5129,15 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_escort_merchant_caravan"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (store_random_party_in_range, ":quest_target_center", towns_begin, towns_end),
-          (store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
-          (assign, ":quest_gold_reward", ":dist"),
+          (party_get_slot, ":quest_target_party_template", ":giver_center_no", slot_center_spawn_caravan),
+          (gt, ":quest_target_party_template", 0), #only for centers that spawn caravans
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (assign, ":cur_target_dist", reg1),
+          (neq, ":giver_center_no", reg0),
+          (assign, ":quest_target_center", reg0),
+          # (store_random_party_in_range, ":quest_target_center", towns_begin, towns_end),
+          # (store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
+          (assign, ":quest_gold_reward", ":cur_target_dist"),
           (val_add, ":quest_gold_reward", 25),
           (val_mul, ":quest_gold_reward", 25),
           (val_div, ":quest_gold_reward", 20),
@@ -5139,23 +5147,30 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_deliver_wine"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (store_random_party_in_range, ":quest_target_center", towns_begin, towns_end),
-          (store_random_in_range, ":random_no", 0, 2),
-          (try_begin),
-            (eq, ":random_no", 0),
-            (assign, ":quest_target_item", "itm_quest_wine"),
-          (else_try),
-            (assign, ":quest_target_item", "itm_quest_ale"),
-          (try_end),
+          #(store_random_party_in_range, ":quest_target_center", towns_begin, towns_end),
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (assign, ":quest_target_center", reg0),
+          (assign, ":cur_target_dist", reg1),
+          (party_get_slot, ":elder", ":quest_target_center", slot_town_elder),
+          (neq, ":elder", "trp_no_troop"), #make sure there is an elder to deliver stuff to
+          (gt, ":elder", 0),
+          (assign, ":quest_target_troop", ":elder"),
+          # (store_random_in_range, ":random_no", 0, 2),
+          # (try_begin),
+            # (eq, ":random_no", 0),
+            # (assign, ":quest_target_item", "itm_quest_wine"),
+          # (else_try),
+          (assign, ":quest_target_item", "itm_siege_supply"), #TLD
+          # (try_end),
           (store_random_in_range, ":quest_target_amount", 6, 12),
-          (store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
-          (assign, ":quest_gold_reward", ":dist"),
+          #(store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
+          (assign, ":quest_gold_reward", ":cur_target_dist"),
           (val_add, ":quest_gold_reward", 2),
           (assign, ":multiplier", 5),
           (val_add, ":multiplier", ":quest_target_amount"),
           (val_mul, ":quest_gold_reward", ":multiplier"),
           (val_div, ":quest_gold_reward", 100),
-          (val_mul, ":quest_gold_reward", 10),
+          (val_mul, ":quest_gold_reward", 30),
           (store_item_value,"$qst_deliver_wine_debt",":quest_target_item"),
           (val_mul,"$qst_deliver_wine_debt",":quest_target_amount"),
           (val_mul,"$qst_deliver_wine_debt", 6),

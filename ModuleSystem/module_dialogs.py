@@ -88,8 +88,8 @@ dialogs = [
                        (assign, "$g_enemy_strength", reg0),
                        (call_script, "script_party_calculate_strength", "p_main_party",0),
                        (assign, "$g_ally_strength", reg0),
-                       (store_mul, "$g_strength_ratio", "$g_ally_strength", 100),
-                       (val_div, "$g_strength_ratio", "$g_enemy_strength"),
+                       #(store_mul, "$g_strength_ratio", "$g_ally_strength", 100),
+                       #(val_div, "$g_strength_ratio", "$g_enemy_strength"),
                      (try_end),
 
                      (assign, "$g_comment_found", 0),
@@ -7310,7 +7310,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   # [anyone,"start", [(party_slot_eq, "$g_encountered_party", slot_party_type, spt_kingdom_caravan),(this_or_next|eq,"$talk_context", tc_party_encounter),(eq,"$talk_context", 0)],
    # "Yes? What do you want?", "merchant_talk",[]],
-  [anyone,"merchant_pretalk", [], "Anything else?", "merchant_talk",[]],
+  # [anyone,"merchant_pretalk", [], "Anything else?", "merchant_talk",[]],
 
   # [anyone|plyr,"merchant_talk", [(le,"$talk_context", tc_party_encounter),
                                  # (check_quest_active, "qst_raid_caravan_to_start_war"),
@@ -7326,11 +7326,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   # [anyone|plyr,"caravan_start_war_quest_2", [], "Never mind, 'twas but a joke. Farewell.", "close_window",[(assign, "$g_leave_encounter",1)]],
 
 
-  [anyone|plyr,"merchant_talk", [(le,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_faction", "$players_kingdom")], "I have an offer for you.", "merchant_talk_offer",[]],
-  [anyone,"merchant_talk_offer", [], "What is it?", "merchant_talk_offer_2",[]],
+  # [anyone|plyr,"merchant_talk", [(le,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_faction", "$players_kingdom")], "I have an offer for you.", "merchant_talk_offer",[]],
+  # [anyone,"merchant_talk_offer", [], "What is it?", "merchant_talk_offer_2",[]],
   
-  [anyone|plyr,"merchant_talk_offer_2", [(eq,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_faction", "$players_kingdom")],
-   "I can escort you to your destination for a price.", "caravan_offer_protection",[]],
+  # [anyone|plyr,"merchant_talk_offer_2", [(eq,"$talk_context", tc_party_encounter),(eq, "$g_encountered_party_faction", "$players_kingdom")],
+   # "I can escort you to your destination for a price.", "caravan_offer_protection",[]],
   
 ##  [anyone|plyr,"merchant_talk_offer_2", [(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 ##                                 (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #he is not a faction leader!
@@ -7341,131 +7341,131 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##   "I need capable men like you. Will you join me?", "knight_offer_join",[
 ##       ]],
   
-  [anyone|plyr,"merchant_talk_offer_2", [], "Nothing. Forget it", "merchant_pretalk",[]],
+  # [anyone|plyr,"merchant_talk_offer_2", [], "Nothing. Forget it", "merchant_pretalk",[]],
 
   
-  [anyone|plyr,"merchant_talk", [(eq,"$talk_context", tc_party_encounter), #TODO: For the moment don't let attacking if merchant has paid toll.
-                                 (neg|party_slot_ge, "$g_encountered_party", slot_party_last_toll_paid_hours, "$g_current_hours"),
-                                 ], "I demand something from you!", "merchant_demand",[]],
-  [anyone,"merchant_demand", [(eq,"$talk_context", tc_party_encounter)], "What do you want?", "merchant_demand_2",[]],
+  # [anyone|plyr,"merchant_talk", [(eq,"$talk_context", tc_party_encounter), #TODO: For the moment don't let attacking if merchant has paid toll.
+                                 # (neg|party_slot_ge, "$g_encountered_party", slot_party_last_toll_paid_hours, "$g_current_hours"),
+                                 # ], "I demand something from you!", "merchant_demand",[]],
+  # [anyone,"merchant_demand", [(eq,"$talk_context", tc_party_encounter)], "What do you want?", "merchant_demand_2",[]],
 
-  [anyone|plyr,"merchant_demand_2", [(neq,"$g_encountered_party_faction","$players_kingdom")], "There is a toll for free passage here!", "merchant_demand_toll",[]],
+  # [anyone|plyr,"merchant_demand_2", [(neq,"$g_encountered_party_faction","$players_kingdom")], "There is a toll for free passage here!", "merchant_demand_toll",[]],
   
-  [anyone,"merchant_demand_toll", [(gt, "$g_strength_ratio", 70),
-                                        (store_div, reg6, "$g_ally_strength", 2),
-                                        (val_add, reg6, 40),
-                                        (assign, "$temp", reg6),
-                                        ], "Please, I don't want any trouble. I can give you {reg6} denars, just let us go.", "merchant_demand_toll_2",[]],
-  [anyone,"merchant_demand_toll", [(store_div, reg6, "$g_ally_strength", 4),
-                                        (val_add, reg6, 10),
-                                        (assign, "$temp", reg6),
-                                        ], "I don't want any trouble. I can give you {reg6} denars if you'll let us go.", "merchant_demand_toll_2",[]],
+  # [anyone,"merchant_demand_toll", [(gt, "$g_strength_ratio", 70),
+                                        # (store_div, reg6, "$g_ally_strength", 2),
+                                        # (val_add, reg6, 40),
+                                        # (assign, "$temp", reg6),
+                                        # ], "Please, I don't want any trouble. I can give you {reg6} denars, just let us go.", "merchant_demand_toll_2",[]],
+  # [anyone,"merchant_demand_toll", [(store_div, reg6, "$g_ally_strength", 4),
+                                        # (val_add, reg6, 10),
+                                        # (assign, "$temp", reg6),
+                                        # ], "I don't want any trouble. I can give you {reg6} denars if you'll let us go.", "merchant_demand_toll_2",[]],
   
-  [anyone|plyr,"merchant_demand_toll_2", [], "Agreed, hand it over and you may go in peace.", "merchant_demand_toll_accept",[]],
-  [anyone,"merchant_demand_toll_accept", [(assign, reg6, "$temp")], "Very well then. Here's {reg6} denars. ", "close_window",
-   [(assign, "$g_leave_encounter",1),
-    (call_script, "script_troop_add_gold", "trp_player","$temp"),
-    (store_add, ":toll_finish_time", "$g_current_hours", merchant_toll_duration),
-    (party_set_slot, "$g_encountered_party", slot_party_last_toll_paid_hours, ":toll_finish_time"),
-    (try_begin),
-      (ge, "$g_encountered_party_relation", -5),
-      (store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
-      (try_begin),
-        (gt, ":rel", 0),
-        (val_sub, ":rel", 1),
-      (try_end),
-      (val_sub, ":rel", 1),
-      (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
-    (try_end),
-### Troop commentaries changes begin
-    (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
-### Troop commentaries changes end
-    (assign, reg6, "$temp"),
-    ]],
+  # [anyone|plyr,"merchant_demand_toll_2", [], "Agreed, hand it over and you may go in peace.", "merchant_demand_toll_accept",[]],
+  # [anyone,"merchant_demand_toll_accept", [(assign, reg6, "$temp")], "Very well then. Here's {reg6} denars. ", "close_window",
+   # [(assign, "$g_leave_encounter",1),
+    # (call_script, "script_troop_add_gold", "trp_player","$temp"),
+    # (store_add, ":toll_finish_time", "$g_current_hours", merchant_toll_duration),
+    # (party_set_slot, "$g_encountered_party", slot_party_last_toll_paid_hours, ":toll_finish_time"),
+    # (try_begin),
+      # (ge, "$g_encountered_party_relation", -5),
+      # (store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
+      # (try_begin),
+        # (gt, ":rel", 0),
+        # (val_sub, ":rel", 1),
+      # (try_end),
+      # (val_sub, ":rel", 1),
+      # (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
+    # (try_end),
+# ### Troop commentaries changes begin
+    # (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
+# ### Troop commentaries changes end
+    # (assign, reg6, "$temp"),
+    # ]],
   
-  [anyone|plyr,"merchant_demand_toll_2", [], "I changed my mind, I can't take your money.", "merchant_pretalk",[]],
+  # [anyone|plyr,"merchant_demand_toll_2", [], "I changed my mind, I can't take your money.", "merchant_pretalk",[]],
   
-  [anyone|plyr,"merchant_demand_toll_2", [], "No, I want everything you have! [Attack]", "merchant_attack",[]],
+  # [anyone|plyr,"merchant_demand_toll_2", [], "No, I want everything you have! [Attack]", "merchant_attack",[]],
   
-  [anyone|plyr,"merchant_demand_2", [(neq,"$g_encountered_party_faction","$players_kingdom")], "Hand over your gold and valuables now!", "merchant_attack_begin",[]],
-  [anyone|plyr,"merchant_demand_2", [], "Nothing. Forget it.", "merchant_pretalk",[]],
+  # [anyone|plyr,"merchant_demand_2", [(neq,"$g_encountered_party_faction","$players_kingdom")], "Hand over your gold and valuables now!", "merchant_attack_begin",[]],
+  # [anyone|plyr,"merchant_demand_2", [], "Nothing. Forget it.", "merchant_pretalk",[]],
   
   
-  [anyone,"merchant_attack_begin", [], "Are you robbing us?", "merchant_attack_verify",[]],
-  [anyone|plyr,"merchant_attack_verify", [], "Robbing you? No, no! It was a joke.", "merchant_attack_verify_norob",[]],
-  [anyone,"merchant_attack_verify_norob", [], "God, don't joke about that, {lad/lass}. For a moment I thought we were in real trouble.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  [anyone|plyr,"merchant_attack_verify", [], "Of course I'm robbing you. Now hand over your goods.", "merchant_attack",[]],
+  # [anyone,"merchant_attack_begin", [], "Are you robbing us?", "merchant_attack_verify",[]],
+  # [anyone|plyr,"merchant_attack_verify", [], "Robbing you? No, no! It was a joke.", "merchant_attack_verify_norob",[]],
+  # [anyone,"merchant_attack_verify_norob", [], "God, don't joke about that, {lad/lass}. For a moment I thought we were in real trouble.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  # [anyone|plyr,"merchant_attack_verify", [], "Of course I'm robbing you. Now hand over your goods.", "merchant_attack",[]],
   
-  [anyone,"merchant_attack", [], "Damn you, you won't get anything from us without a fight!", "close_window",
-   [(store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
-    (try_begin),
-      (gt, ":rel", 0),
-      (val_sub, ":rel", 10),
-    (try_end),
-    (val_sub, ":rel", 5),
-    (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
-### Troop commentaries changes begin
-    (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
-### Troop commentaries changes end
-    ]],
+  # [anyone,"merchant_attack", [], "Damn you, you won't get anything from us without a fight!", "close_window",
+   # [(store_relation,":rel", "$g_encountered_party_faction","fac_player_supporters_faction"),
+    # (try_begin),
+      # (gt, ":rel", 0),
+      # (val_sub, ":rel", 10),
+    # (try_end),
+    # (val_sub, ":rel", 5),
+    # (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
+# ### Troop commentaries changes begin
+    # (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
+# ### Troop commentaries changes end
+    # ]],
 
-  [anyone,"caravan_offer_protection", [],
-   "These roads are dangerous indeed. One can never have enough protection.", "caravan_offer_protection_2",
-   [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
-    (store_distance_to_party_from_party, "$caravan_distance_to_target",":caravan_destination","$g_encountered_party"),
-    (assign,"$caravan_escort_offer","$caravan_distance_to_target"),
-    (val_sub, "$caravan_escort_offer", 10),
-    (call_script, "script_party_calculate_strength", "p_main_party",0),
-    (assign, ":player_strength", reg0),
-    (val_min, ":player_strength", 200),
-    (val_add, ":player_strength", 20),
-    (val_mul,"$caravan_escort_offer",":player_strength"),
-    (val_div,"$caravan_escort_offer",50),
-    (val_max, "$caravan_escort_offer", 5),
-    ]],
-  [anyone,"caravan_offer_protection_2", [[lt,"$caravan_distance_to_target",10]],
-   "An escort? We're almost there already! Thank you for the offer, though.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  [anyone,"caravan_offer_protection_2", [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
-    (str_store_party_name,1,":caravan_destination"),
-    (assign,reg(2),"$caravan_escort_offer")],
-   "We are heading to {s1}. I will pay you {reg2} denars if you escort us there.", "caravan_offer_protection_3",
-   []],
-  [anyone|plyr,"caravan_offer_protection_3", [],
-   "Agreed.", "caravan_offer_protection_4",[]],
-  [anyone,"caravan_offer_protection_4", [],
-   "I want you to stay close to us along the way.\
- We'll need your help if we get ambushed by bandits.", "caravan_offer_protection_5",[]],
-  [anyone|plyr,"caravan_offer_protection_5", [],
-   "Don't worry, you can trust me.", "caravan_offer_protection_6",[]],
-  [anyone,"caravan_offer_protection_6", [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
-    (str_store_party_name,1,":caravan_destination")],
-   "Good. Come and collect your money when we're within sight of {s1}. For now, let's just get underway.", "close_window",
-   [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
-    (assign, "$caravan_escort_destination_town", ":caravan_destination"),
-    (assign, "$caravan_escort_party_id", "$g_encountered_party"),
-    (assign, "$caravan_escort_agreed_reward", "$caravan_escort_offer"),
-    (assign, "$caravan_escort_state", 1),
-    (assign, "$g_leave_encounter",1)
-   ]],
-  [anyone|plyr,"caravan_offer_protection_3", [],
-   "Forget it.", "caravan_offer_protection_4b",[]],
-  [anyone,"caravan_offer_protection_4b", [],
-   "Perhaps another time, then.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  # [anyone,"caravan_offer_protection", [],
+   # "These roads are dangerous indeed. One can never have enough protection.", "caravan_offer_protection_2",
+   # [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
+    # (store_distance_to_party_from_party, "$caravan_distance_to_target",":caravan_destination","$g_encountered_party"),
+    # (assign,"$caravan_escort_offer","$caravan_distance_to_target"),
+    # (val_sub, "$caravan_escort_offer", 10),
+    # (call_script, "script_party_calculate_strength", "p_main_party",0),
+    # (assign, ":player_strength", reg0),
+    # (val_min, ":player_strength", 200),
+    # (val_add, ":player_strength", 20),
+    # (val_mul,"$caravan_escort_offer",":player_strength"),
+    # (val_div,"$caravan_escort_offer",50),
+    # (val_max, "$caravan_escort_offer", 5),
+    # ]],
+  # [anyone,"caravan_offer_protection_2", [[lt,"$caravan_distance_to_target",10]],
+   # "An escort? We're almost there already! Thank you for the offer, though.", "close_window",[(assign, "$g_leave_encounter",1)]],
+  # [anyone,"caravan_offer_protection_2", [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
+    # (str_store_party_name,1,":caravan_destination"),
+    # (assign,reg(2),"$caravan_escort_offer")],
+   # "We are heading to {s1}. I will pay you {reg2} denars if you escort us there.", "caravan_offer_protection_3",
+   # []],
+  # [anyone|plyr,"caravan_offer_protection_3", [],
+   # "Agreed.", "caravan_offer_protection_4",[]],
+  # [anyone,"caravan_offer_protection_4", [],
+   # "I want you to stay close to us along the way.\
+ # We'll need your help if we get ambushed by bandits.", "caravan_offer_protection_5",[]],
+  # [anyone|plyr,"caravan_offer_protection_5", [],
+   # "Don't worry, you can trust me.", "caravan_offer_protection_6",[]],
+  # [anyone,"caravan_offer_protection_6", [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
+    # (str_store_party_name,1,":caravan_destination")],
+   # "Good. Come and collect your money when we're within sight of {s1}. For now, let's just get underway.", "close_window",
+   # [(get_party_ai_object,":caravan_destination","$g_encountered_party"),
+    # (assign, "$caravan_escort_destination_town", ":caravan_destination"),
+    # (assign, "$caravan_escort_party_id", "$g_encountered_party"),
+    # (assign, "$caravan_escort_agreed_reward", "$caravan_escort_offer"),
+    # (assign, "$caravan_escort_state", 1),
+    # (assign, "$g_leave_encounter",1)
+   # ]],
+  # [anyone|plyr,"caravan_offer_protection_3", [],
+   # "Forget it.", "caravan_offer_protection_4b",[]],
+  # [anyone,"caravan_offer_protection_4b", [],
+   # "Perhaps another time, then.", "close_window",[(assign, "$g_leave_encounter",1)]],
 
-  [anyone|plyr,"merchant_talk", [(eq,"$talk_context", tc_party_encounter),(lt, "$g_talk_troop_faction_relation", 0)],
-   "Not so fast. First, hand over all your goods and money.", "talk_caravan_enemy_2",[]],
+  # [anyone|plyr,"merchant_talk", [(eq,"$talk_context", tc_party_encounter),(lt, "$g_talk_troop_faction_relation", 0)],
+   # "Not so fast. First, hand over all your goods and money.", "talk_caravan_enemy_2",[]],
 
-  [anyone,"talk_caravan_enemy_2", [],
-   "Never. It is our duty to protect these goods. You shall have to fight us, brigand!", "close_window",
-   [
-    (store_relation,":rel","$g_encountered_party_faction","fac_player_supporters_faction"),
-    (val_min,":rel",0),
-    (val_sub,":rel",4),
-    (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
-    (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
-    ]],
+  # [anyone,"talk_caravan_enemy_2", [],
+   # "Never. It is our duty to protect these goods. You shall have to fight us, brigand!", "close_window",
+   # [
+    # (store_relation,":rel","$g_encountered_party_faction","fac_player_supporters_faction"),
+    # (val_min,":rel",0),
+    # (val_sub,":rel",4),
+    # (call_script, "script_set_player_relation_with_faction", "$g_encountered_party_faction", ":rel"),
+    # (call_script, "script_add_log_entry", logent_caravan_accosted, "trp_player",  -1, -1, "$g_encountered_party_faction"),
+    # ]],
 
-  [anyone|plyr,"merchant_talk", [], "[Leave]", "close_window",[(assign, "$g_leave_encounter",1)]],
+  # [anyone|plyr,"merchant_talk", [], "[Leave]", "close_window",[(assign, "$g_leave_encounter",1)]],
 
 
 
@@ -8418,7 +8418,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
   [anyone,"tavernkeeper_pretalk", [], "Anything else?", "tavernkeeper_talk",[]],
 
-  [anyone|plyr,"tavernkeeper_talk", [(check_quest_active,"qst_deliver_wine"),
+  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
                                      (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
                                      (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
                                      (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
@@ -8429,11 +8429,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                      ],
    "I was told to deliver you {reg9} units of {s4}.", "tavernkeeper_deliver_wine",[]],
   [anyone,"tavernkeeper_deliver_wine", [],
- "At last! My stock was almost depleted.\
+ "At last! Our stocks were almost depleted.\
  I had paid the cost of the {s4} in advance.\
- Here, take these {reg5} denars. That should cover your pay.\
+ Here, take these {reg5} RPs. That should cover your pay.\
  And give {s9} my regards.\
- I'll put in a good word for you next time I deal with him.", "tavernkeeper_pretalk",
+ I'll put in a good word for you next time I deal with him.", "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
@@ -8454,7 +8454,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
 	
-  [anyone|plyr,"tavernkeeper_talk", [(check_quest_active,"qst_deliver_wine"),
+  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
                                      (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
                                      (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
                                      (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
@@ -8468,9 +8468,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"tavernkeeper_deliver_wine_incomplete", [],
  "Attacked by bandits eh?\
  You are lucky they left you alive.\
- Anyway, I can pay you no more than {reg5} denars for this.\
+ Anyway, I can pay you no more than {reg5} RPs for this.\
  And I will let {s1} know that my order was delivered less than completely,\
- so you will probably be charged for this loss.", "tavernkeeper_pretalk",
+ so you will probably be charged for this loss.", "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
@@ -8495,7 +8495,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (call_script, "script_end_quest", "qst_deliver_wine"),
     ]],
   
-  [anyone|plyr,"tavernkeeper_talk", [(check_quest_active,"qst_deliver_wine"),
+  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
                                      (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
                                      (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
                                      (store_item_kind_count, ":item_count", ":quest_target_item"),
@@ -8508,7 +8508,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"tavernkeeper_deliver_wine_lost", [],
  "What? I was waiting for that {s4} for weeks!\
  And now you are telling me that you lost it?\
- You may rest assured that I will let {s1} know about this.", "tavernkeeper_pretalk",
+ You may rest assured that I will let {s1} know about this.", "mayor_pretalk",
    [(add_xp_as_reward, 40),
     (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_giver_troop", "qst_deliver_wine", slot_quest_giver_troop),
@@ -9576,10 +9576,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                           (check_quest_succeeded, "qst_troublesome_bandits"),
                           (quest_slot_eq, "qst_troublesome_bandits", slot_quest_giver_troop, "$g_talk_troop"),
                           ],
-   "I have heard about your deeds. You have given those bandits the punishment they deserved.\
+   "I have heard about your deeds. You have given those goblins the punishment they deserved.\
  You are really as good as they say.\
- Here is your reward: {reg5} denars.\
- I would like to give more but those bandits almost brought me to bankruptcy.",
+ Here is your reward: {reg5} RPs.",
    "mayor_friendly_pretalk", [(quest_get_slot, ":quest_gold_reward", "qst_troublesome_bandits", slot_quest_gold_reward),
                               (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
                               (assign, ":xp_reward", ":quest_gold_reward"),
@@ -9738,19 +9737,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
   [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_wine")],
-   "I have a cargo of {s6} that needs to be delivered to the tavern in {s4}.\
- If you can take {reg5} units of {s6} to {s4} in 7 days, you may earn {reg8} denars.\
+   "I have a cargo of {s6} that needs to be delivered to the {s10} in {s4}.\
+ If you can take {reg5} units of {s6} to {s4} in 7 days, you may earn {reg8} RPs.\
  What do you say?", "merchant_quest_brief_deliver_wine",
    [(quest_get_slot, reg5, "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, reg8, "qst_deliver_wine", slot_quest_gold_reward),
     (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_center", "qst_deliver_wine", slot_quest_target_center),
+    (quest_get_slot, ":quest_target_troop", "qst_deliver_wine", slot_quest_target_troop),
     (str_store_troop_name, s9, "$g_talk_troop"),
+    (str_store_troop_name, s10, ":quest_target_troop"),
     (str_store_party_name_link, s3, "$g_encountered_party"),
     (str_store_party_name_link, s4, ":quest_target_center"),
     (str_store_item_name, s6, ":quest_target_item"),
     (setup_quest_text,"qst_deliver_wine"),
-    (str_store_string, s2, "@{s9} of {s3} asked you to deliver {reg5} units of {s6} to the tavern in {s4} in 7 days."),
+    (str_store_string, s2, "@{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in 7 days."),
     #s2 should not be changed until the decision is made
    ]],
   
@@ -9769,14 +9770,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #escort merchant caravan:
   [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_escort_merchant_caravan")], "You're looking for a job?\
- Actually I was looking for someone to escort a caravan.\
+ Actually I was looking for someone to escort a supply train.\
  Perhaps you can do that...", "merchant_quest_brief",
    []],
 
   [anyone,"merchant_quest_brief", [(eq, "$random_merchant_quest_no", "qst_escort_merchant_caravan")],
-   "I am going to send a caravan of goods to {s8}.\
- However with all those bandits and deserters on the roads, I don't want to send them out without an escort.\
- If you can lead that caravan to {s8} in 15 days, you will earn {reg8} denars.\
+   "I am going to send a supply train to {s8}.\
+ However with all those enemy patrols on the roads, I don't want to send them out without an escort.\
+ If you can lead that supply train to {s8} in 15 days, you will earn {reg8} RPs.\
  Of course your party needs to be at least {reg4} strong to offer them any protection.", "escort_merchant_caravan_quest_brief",
    [(quest_get_slot, reg8, "qst_escort_merchant_caravan", slot_quest_gold_reward),
     (quest_get_slot, reg4, "qst_escort_merchant_caravan", slot_quest_target_amount),
@@ -9788,19 +9789,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                                        (quest_get_slot, ":quest_target_amount", "qst_escort_merchant_caravan", slot_quest_target_amount),
                                                        (ge,":party_size",":quest_target_amount"),
                                                        ],
-   "Alright. I will escort the caravan.", "merchant_quest_taken",
+   "Alright. I will escort the supply train.", "merchant_quest_taken",
    [(quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
+    (quest_get_slot, ":quest_caravan", "qst_escort_merchant_caravan", slot_quest_target_party_template),
     (set_spawn_radius, 1),
-    (spawn_around_party,"$g_encountered_party","pt_merchant_caravan"),
+    (spawn_around_party, "$g_encountered_party", ":quest_caravan"),
     (assign, ":quest_target_party", reg0),
     (party_set_ai_behavior, ":quest_target_party", ai_bhvr_track_party),
     (party_set_ai_object, ":quest_target_party", "p_main_party"),
     (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
+    (party_set_slot, ":quest_target_party", slot_party_victory_value, ws_caravan_vp), # victory points for party kill
     (quest_set_slot, "qst_escort_merchant_caravan", slot_quest_target_party, ":quest_target_party"),
     (quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 0),
     (str_store_party_name_link, s8, ":quest_target_center"),
     (setup_quest_text, "qst_escort_merchant_caravan"),
-    (str_store_string, s2, "@Escort the merchant caravan to the town of {s8}."),
+    (str_store_string, s2, "@Escort the supply train to {s8}."),
     (call_script, "script_start_quest", "qst_escort_merchant_caravan", "$g_talk_troop"),
     ]],
   
@@ -9813,21 +9816,23 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                                        (ge,":party_size",":quest_target_amount"),],
    "Sorry. I can't do that right now", "merchant_quest_stall",[]],
 
-  [party_tpl|pt_merchant_caravan,"start", [(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
-                                           (eq,"$g_encountered_party",":quest_target_party"),
-                                           (quest_slot_eq,"qst_escort_merchant_caravan", slot_quest_current_state, 2),
-                                           ],
+  [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),
+                      (quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
+                      (eq,"$g_encountered_party",":quest_target_party"),
+                      (quest_slot_eq,"qst_escort_merchant_caravan", slot_quest_current_state, 2),
+                    ],
    "We can cover the rest of the way ourselves. Thanks.", "close_window",[(assign, "$g_leave_encounter", 1)]],
   
-  [party_tpl|pt_merchant_caravan,"start", [(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
-                                           (eq,"$g_encountered_party",":quest_target_party"),
-                                           (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
-                                           (store_distance_to_party_from_party, ":dist", ":quest_target_center",":quest_target_party"),
-                                           (lt,":dist",4),
-                                           (quest_slot_eq, "qst_escort_merchant_caravan", slot_quest_current_state, 1),
-                                           ],
+  [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),
+                      (quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
+                      (eq,"$g_encountered_party",":quest_target_party"),
+                      (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
+                      (store_distance_to_party_from_party, ":dist", ":quest_target_center",":quest_target_party"),
+                      (lt,":dist",4),
+                      (quest_slot_eq, "qst_escort_merchant_caravan", slot_quest_current_state, 1),
+                    ],
    "Well, we have almost reached {s21}. We can cover the rest of the way ourselves.\
- Here's your pay... {reg14} denars.\
+ Here's your pay... {reg14} Resources.\
  Thanks for escorting us. Good luck.", "close_window",[(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
                                                        (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
                                                        (quest_get_slot, ":quest_giver_center", "qst_escort_merchant_caravan", slot_quest_giver_center),
@@ -9849,10 +9854,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                                        (assign, "$g_leave_encounter", 1),
                                                        ]],
   
-  [party_tpl|pt_merchant_caravan,"start", [(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
-                                           (eq,"$g_encountered_party",":quest_target_party"),
-                                           (quest_slot_eq, "qst_escort_merchant_caravan", slot_quest_current_state, 0),
-                                           ],
+  [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),
+                      (quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
+                      (eq,"$g_encountered_party",":quest_target_party"),
+                      (quest_slot_eq, "qst_escort_merchant_caravan", slot_quest_current_state, 0),
+                    ],
    "Greetings. You must be our escort, right?", "merchant_caravan_intro_1",[(quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 1),]],
   
   [anyone|plyr,"merchant_caravan_intro_1", [], "Yes. My name is {playername}. I will lead you to {s1}.",
@@ -9862,9 +9868,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
   [anyone,"merchant_caravan_intro_2", [], "Well, It is good to know we won't travel alone. What do you want us to do now?", "escort_merchant_caravan_talk",[]],
   
-  [party_tpl|pt_merchant_caravan,"start", [(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
-                                           (eq, "$g_encountered_party", ":quest_target_party"),
-                                           ],
+  [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),
+                      (quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
+                      (eq, "$g_encountered_party", ":quest_target_party"),
+                    ],
    "Eh. We've made it this far... What do you want us to do?", "escort_merchant_caravan_talk",[]],
   
   [anyone|plyr,"escort_merchant_caravan_talk", [], "You follow my lead. I'll take you through a safe route.", "merchant_caravan_follow_lead",[]],
@@ -9879,21 +9886,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 # Troublesome bandits:
   [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_troublesome_bandits")],
- "Actually, I was looking for an able adventurer like you.\
- There's this group of particularly troublesome bandits.\
- They have infested the vicinity of our town and are preying on my caravans.\
- They have avoided all the soldiers and the militias up to now.\
- If someone doesn't stop them soon, I am going to be ruined...", "merchant_quest_brief",
+ "Actually, I was looking for an able commander like you.\
+ There's this group of particularly troublesome goblins.\
+ They have infested the vicinity of our town and are preying on our supply trains.\
+ They have avoided all our patrols up to now.\
+ If someone doesn't stop them soon, we are going to have a serious supply shortage...", "merchant_quest_brief",
    []],
 
   [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no", "qst_troublesome_bandits")],
-  "I will pay you {reg8} denars if you hunt down those troublesome bandits.\
- It's dangerous work. But I believe that you are the {man/one} for it.\
+  "I will pay you {reg8} RPs if you hunt down those troublesome goblins.\
+ It's dangerous work. But I believe that you are the one for it.\
  What do you say?", "troublesome_bandits_quest_brief",[(quest_get_slot, reg8, "qst_troublesome_bandits", slot_quest_gold_reward),
                                                        ]],
 
   [anyone|plyr,"troublesome_bandits_quest_brief", [],
-   "Alright. I will hunt down those bandits.", "merchant_quest_taken_bandits",
+   "Alright. I will hunt down those goblins.", "merchant_quest_taken_bandits",
    [(set_spawn_radius,7),
     (quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
     (spawn_around_party,":quest_giver_center","pt_troublesome_bandits"),
@@ -9903,7 +9910,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (str_store_troop_name, s9, "$g_talk_troop"),
     (str_store_party_name_link, s4, "$g_encountered_party"),
     (setup_quest_text,"qst_troublesome_bandits"),
-    (str_store_string, s2, "@Merchant {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town."),
+    (str_store_string, s2, "@The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town."),
     (call_script, "script_start_quest", "qst_troublesome_bandits", "$g_talk_troop"),
     ]],
   [anyone,"merchant_quest_taken_bandits", [], "You will? I am so happy to hear that. Good luck to you.", "close_window",
@@ -11130,15 +11137,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #Quest dialogs
   
   [party_tpl|pt_troublesome_bandits,"start", [(quest_slot_eq, "qst_troublesome_bandits", slot_quest_target_party, "$g_encountered_party")],
-   "This must be your unlucky day indeed. We are the baddest guys you could have run into in these parts...", "troublesome_bandits_intro_1",[]],
+   "What? We will kill. We will take your food and mounts and eat 'em. We will eat you.", "troublesome_bandits_intro_1",[]],
   [anyone|plyr,"troublesome_bandits_intro_1", [],
-   "Heh. For me, you are nothing more than walking money bags.\
- A merchant in {s1} offered me good money for your heads.",
+   "You'll regret causing trouble around these parts.\
+ You should have never left your mountain caves.",
    "troublesome_bandits_intro_2", [(quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
                                    (str_store_party_name, s1, ":quest_giver_center")
                                    ]],
   [anyone,"troublesome_bandits_intro_2", [],
-   "A bounty hunter! ... I hate bounty hunters! Kill {him/her}! Kill {him/her} now!", "close_window",[(encounter_attack)]],
+   "Kill now! Eat later!", "close_window",[(encounter_attack)]],
  
  
 

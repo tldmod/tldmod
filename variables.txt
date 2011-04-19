@@ -24,7 +24,6 @@ g_time_since_last_talk
 g_talk_troop_met
 g_enemy_strength
 g_ally_strength
-g_strength_ratio
 g_comment_found
 g_leave_encounter
 g_move_heroes
@@ -84,8 +83,6 @@ convince_relation_penalty
 persuasion_strength
 hero_requested_to_learn_relations
 caravan_escort_state
-caravan_distance_to_target
-caravan_escort_offer
 caravan_escort_destination_town
 caravan_escort_party_id
 caravan_escort_agreed_reward

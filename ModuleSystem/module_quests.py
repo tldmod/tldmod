@@ -171,14 +171,14 @@ quests = [
  ("move_cattle_herd", "Move People to {s13}", qf_random_quest,
   "The Elder of {s10} asked you to move some people to {s13}."
   ),
- ("escort_merchant_caravan", "Escort Supply Caravan to {s8}", qf_random_quest,
-  "Escort the supply caravan to the town of {s8}."
+ ("escort_merchant_caravan", "Escort Supply Train to {s8}", qf_random_quest,
+  "Escort the supply train to {s8}."
   ),
  ("deliver_wine", "Deliver {reg5} Units of {s6} to {s4}", qf_random_quest,
-  "{s9} of {s3} asked you to deliver {reg5} units of {s6} to the tavern in {s4} in 7 days."
+  "The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days."
   ),
- ("troublesome_bandits", "Hunt Down Troublesome Bandits", qf_random_quest,
-  "{s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town."
+ ("troublesome_bandits", "Hunt Down Troublesome Goblins", qf_random_quest,
+  "The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town."
   ),
  # ("kidnapped_girl", "Ransom Girl from Bandits", qf_random_quest,
   # "Guildmaster of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
