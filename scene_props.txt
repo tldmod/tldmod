@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1231
+ 1249
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3773,5 +3773,59 @@ spr_horse_gondor_lam_horse 16384 0 lam_warhorse01 0 1
 
 
 spr_spiderweb 0 0 spiderweb 0 0
+
+
+spr_tunnel_dirt 0 0 dirt 0 0
+
+
+spr_tunnel_liana 0 0 liana 0 0
+
+
+spr_tunnel_liana2 0 0 liana2 0 0
+
+
+spr_tunnel_mushroom1 0 0 mushroom1 0 0
+
+
+spr_tunnel_mushroom2 0 0 mushroom2 0 0
+
+
+spr_tunnel_mushroom3 0 0 mushroom3 0 0
+
+
+spr_tunnel_mushroom4 0 0 mushroom4 0 0
+
+
+spr_tunnel_mushroom5 0 0 mushroom5 0 0
+
+
+spr_tunnel_root 0 0 root 0 0
+
+
+spr_tunnel_spiderweb1 0 0 spiderweb1 0 0
+
+
+spr_tunnel_spiderweb2 0 0 spiderweb2 0 0
+
+
+spr_tunnel_spiderweb3 0 0 spiderweb3 0 0
+
+
+spr_tunnel_crystal1 0 0 crystal1 0 0
+
+
+spr_tunnel_crystal2 0 0 crystal2 0 0
+
+
+spr_tunnel_crystal3 0 0 crystal3 0 0
+
+
+spr_tunnel_crystal4 0 0 crystal4 0 0
+
+
+spr_tunnel_crystal5 0 0 crystal5 0 0
+
+
+spr_tunnel_crystal6 0 0 crystal6 0 0
 
 
