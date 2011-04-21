@@ -14,7 +14,7 @@ qst_investigate_fangorn Investigate_Fangorn 2 {s9}_asked_you_to_find_out_what_is
 qst_find_lost_spears Find_the_lost_spears_of_king_Bladorthin 2 {s9}_asked_you_to_find_the_lost_spears_dwarves_once_made_for_king_Bladorthin._You_have_to_ask_the_dwarves_permission_to_search_for_the_spears_in_the_depths_of_the_Lonely_Mountain. 
 qst_rescue_prisoners Rescue_{reg1}_Prisoners 2 {s9}_wanted_you_to_rescue_{reg1}_prisoners. 
 qst_follow_army Follow_{s9}'s_Army 2 None 
-qst_report_to_army Report_to_{s13},_the_Marshall 2 None 
+qst_report_to_army Report_to_{s13} 2 None 
 qst_deliver_cattle_to_army Deliver_{reg3}_Heads_of_Cattle_to_{s13} 2 None 
 qst_join_siege_with_army Join_the_Siege_of_{s14} 2 None 
 qst_scout_waypoints Scout_{s13},_{s14}_and_{s15} 2 None 
@@ -22,8 +22,8 @@ qst_move_cattle_herd Move_People_to_{s13} 2 The_Elder_of_{s10}_asked_you_to_move
 qst_escort_merchant_caravan Escort_Supply_Train_to_{s8} 2 Escort_the_supply_train_to_{s8}. 
 qst_deliver_wine Deliver_{reg5}_Units_of_{s6}_to_{s4} 2 The_{s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_{s4}_in_7_days. 
 qst_troublesome_bandits Hunt_Down_Troublesome_Goblins 2 The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town. 
-qst_deal_with_looters Deal_with_Looters 2 The_Guildmaster_of_{s4}_has_asked_you_to_deal_with_several_bands_of_looters_around_{s4},_and_bring_back_any_goods_you_recover. 
-qst_deal_with_night_bandits Deal_with_Night_Bandits 2 TODO:_The_Guildmaster_of_{s14}_has_asked_you_to_deal_with_night_bandits_at_{s14}. 
+qst_deal_with_looters Deal_with_tribal_orcs 2 The_Elder_of_{s4}_has_asked_you_to_deal_with_several_bands_of_tribal_orcs_around_{s4}. 
+qst_deal_with_night_bandits Deal_with_Rogue_Goblins 2 The_Elder_of_{s14}_has_asked_you_to_deal_with_night_goblins_at_{s14}. 
 qst_join_faction Give_Oath_of_Homage_to_{s1} 2 Find_{s1}_and_give_him_your_oath_of_homage. 
 qst_tld_introduction Deliver_message_about_Mordor_orcs_to_the_command 2 None 
 qst_quests_end Quests_End 0 . 

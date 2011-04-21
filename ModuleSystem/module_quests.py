@@ -135,7 +135,7 @@ quests = [
  ("follow_army", "Follow {s9}'s Army", qf_random_quest,
   "None"
   ),
- ("report_to_army", "Report to {s13}, the Marshall", qf_random_quest,
+ ("report_to_army", "Report to {s13}", qf_random_quest,
   "None"
   ),
 # Note : This is defined as the first army quest in module_constants.py:
@@ -190,11 +190,11 @@ quests = [
  # {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.\
  # In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made."
   # ),
- ("deal_with_looters", "Deal with Looters", qf_random_quest,
-  "The Guildmaster of {s4} has asked you to deal with several bands of looters around {s4}, and bring back any goods you recover."
+ ("deal_with_looters", "Deal with tribal orcs", qf_random_quest,
+  "The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}."
   ),
- ("deal_with_night_bandits", "Deal with Night Bandits", qf_random_quest,
-  "TODO: The Guildmaster of {s14} has asked you to deal with night bandits at {s14}."
+ ("deal_with_night_bandits", "Deal with Rogue Goblins", qf_random_quest,
+  "The Elder of {s14} has asked you to deal with night goblins at {s14}."
   ),
 
 ############

@@ -3685,6 +3685,10 @@ game_menus = [
         (assign, reg13, ":quest_target_amount"),
       ],
     [
+      ("reject",[],"Send a message you are too busy.",
+       [
+           (change_screen_return),
+        ]),
       ("continue",[],"Continue...",
        [
            (quest_get_slot, ":quest_target_troop", "qst_report_to_army", slot_quest_target_troop),
@@ -6704,7 +6708,7 @@ game_menus = [
   ),
 
   ( "town_bandits_succeeded",mnf_disable_all_keys,
-    "The bandits fall before you as wheat to a scythe! Soon you stand alone in the streets\
+    "The goblins fall before you as wheat to a scythe! Soon you stand alone\
  while most of your attackers lie unconscious, dead or dying.\
  Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes.\
  Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.",
@@ -7157,16 +7161,16 @@ game_menus = [
         (try_end),
 
         #forbidden to enter?
-        #(try_begin), 
-        #  (store_time_of_day,reg(12)),
-        #  (ge,reg(12),5),
-        #  (lt,reg(12),21),
-        #  (assign,"$town_nighttime",0),
-        #(else_try),
-        #  (assign,"$town_nighttime",1),
-        #  (party_slot_eq,"$current_town",slot_party_type, spt_town),
-        #  (str_store_string, s13, "str_town_nighttime"),
-        #(try_end),
+        (try_begin), 
+         (store_time_of_day,reg(12)),
+         (ge,reg(12),5),
+         (lt,reg(12),21),
+         (assign,"$town_nighttime",0),
+        (else_try),
+         (assign,"$town_nighttime",1),
+         # (party_slot_eq,"$current_town",slot_party_type, spt_town),
+         # (str_store_string, s13, "str_town_nighttime"),
+        (try_end),
 
         #(assign,"$castle_undefended",0),
         #(party_get_num_companions, ":castle_garrison_size", "p_collective_enemy"),

@@ -5056,7 +5056,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_troublesome_bandits"),
+#(assign, ":quest_no", "qst_deal_with_night_bandits"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5245,10 +5245,11 @@ scripts = [
           (is_between, ":player_level", 0, 15),
           (is_between, ":giver_center_no", centers_begin, centers_end),
           # (store_faction_of_party, ":cur_object_faction", ":giver_center_no"),
-          (store_num_parties_destroyed_by_player, ":num_looters_destroyed", "pt_looters"),
-          (party_template_set_slot,"pt_looters",slot_party_template_num_killed,":num_looters_destroyed"),
+          (assign, ":quest_target_party_template", "pt_looters"), #can be regionalized for different bandits
+          (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":quest_target_party_template"),
+          (party_template_set_slot,":quest_target_party_template",slot_party_template_num_killed,":num_looters_destroyed"),
           (quest_set_slot,"$random_merchant_quest_no",slot_quest_current_state,0),
-          (quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
+          #(quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
           (assign, ":quest_gold_reward", 500),
           (assign, ":quest_xp_reward", 500),
           (assign, ":quest_expiration_days", 20),
@@ -5256,9 +5257,11 @@ scripts = [
           (assign, ":result", ":quest_no"),
         (else_try),
           (eq, ":quest_no", "qst_deal_with_night_bandits"),
+          (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good), #TLD: evil factions only
           (is_between, ":player_level", 0, 15),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
+          (party_set_slot, ":giver_center_no", slot_center_has_bandits, "trp_mountain_goblin"), #TLD: goblins
+          #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
           (assign, ":quest_expiration_days", 4),
           (assign, ":quest_dont_give_again_period", 15),
@@ -10039,9 +10042,10 @@ scripts = [
         (assign, ":quest_expire_penalty", -5),
       (else_try),
         (eq, ":quest_no", "qst_deal_with_looters"),
+        (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
         (try_for_parties, ":cur_party_no"),
           (party_get_template_id, ":cur_party_template", ":cur_party_no"),
-          (eq, ":cur_party_template", "pt_looters"),
+          (eq, ":cur_party_template", ":looter_template"),
           (party_set_flags, ":cur_party_no", pf_quest_party, 0),
         (try_end),
         (assign, ":quest_return_penalty", -4),
@@ -11879,6 +11883,7 @@ scripts = [
         (assign, "$town_entered", 1),
         (assign, "$all_doors_locked", 1),
       (try_end),
+      
 
       (display_message, "@You have run into a trap!", 0xFFFF2222),
       (display_message, "@You are attacked by a group of bandits!", 0xFFFF2222),
@@ -14866,12 +14871,12 @@ scripts = [
        (spawn_around_party,":spawn_point","pt_looters"),
        (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
        (assign, ":spawned_party_id", reg0),
-       (try_begin),
-         (check_quest_active, "qst_deal_with_looters"),
-         (party_set_flags, ":spawned_party_id", pf_quest_party, 1),
-       (else_try),
+       # (try_begin), #MV: commented out - looters don't disappear, they are neutral
+         # (check_quest_active, "qst_deal_with_looters"),
+         # (party_set_flags, ":spawned_party_id", pf_quest_party, 1),
+       # (else_try),
          (party_set_flags, ":spawned_party_id", pf_quest_party, 0),
-       (try_end),
+       # (try_end),
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_deserters"),

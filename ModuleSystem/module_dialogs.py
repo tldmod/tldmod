@@ -9371,7 +9371,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                           (check_quest_succeeded, "qst_deal_with_night_bandits"),
                          ],
    "Very nice work, {playername}, you made short work of those lawless curs.\
- Thank you kindly for all your help, and please accept this bounty of 150 denars.", "lord_deal_with_night_bandits_completed",
+ And here's a nice reward of 150 RPs.", "lord_deal_with_night_bandits_completed",
    [
      (add_xp_as_reward,200),
      (call_script, "script_troop_add_gold","trp_player", 150),
@@ -9393,26 +9393,28 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"mayor_looters_quest_response",
    [
-     (store_num_parties_destroyed_by_player, ":num_looters_destroyed", "pt_looters"),
-     (party_template_get_slot,":previous_looters_destroyed","pt_looters",slot_party_template_num_killed),
+     (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+     (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
+     (party_template_get_slot,":previous_looters_destroyed",":looter_template",slot_party_template_num_killed),
      (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
      (quest_get_slot,":looters_paid_for","qst_deal_with_looters",slot_quest_current_state),
      (lt,":looters_paid_for",":num_looters_destroyed"),
      ],
-   "I've killed some looters.", "mayor_looters_quest_destroyed",[]],
-  [anyone|plyr,"mayor_looters_quest_response", [(eq,1,0)
-  ],
-   "I've brought you some goods.", "mayor_looters_quest_goods",[]],
+   "I've killed some tribal orcs.", "mayor_looters_quest_destroyed",[]],
+  # [anyone|plyr,"mayor_looters_quest_response", [(eq,1,0)
+  # ],
+   # "I've brought you some goods.", "mayor_looters_quest_goods",[]],
   [anyone|plyr,"mayor_looters_quest_response", [
   ],
    "Not yet, sir. Farewell.", "close_window",[]],
 
   [anyone,"mayor_looters_quest_destroyed", [],
-   "Aye, my scouts saw the whole thing. That should make anyone else think twice before turning outlaw!\
- The bounty is 40 denars for every band, so that makes {reg1} in total. Here is your money, as promised.",
+   "Aye, my scouts saw the whole thing. That should make any tribal orcs think twice before raiding our countryside!\
+ The bounty is 40 RPs for every band, so that makes {reg1} in total. Here is your money, as promised.",
    "mayor_looters_quest_destroyed_2",[
-      (store_num_parties_destroyed_by_player, ":num_looters_destroyed", "pt_looters"),
-      (party_template_get_slot,":previous_looters_destroyed","pt_looters",slot_party_template_num_killed),
+      (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+      (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
+      (party_template_get_slot,":previous_looters_destroyed",":looter_template",slot_party_template_num_killed),
       (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
       (quest_get_slot,":looters_paid_for","qst_deal_with_looters",slot_quest_current_state),
       (store_sub,":looter_bounty",":num_looters_destroyed",":looters_paid_for"),
@@ -9431,17 +9433,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
       (call_script, "script_change_troop_renown", "trp_player", 1),
       (call_script, "script_change_player_relation_with_center", "$current_town", 5),
+      (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       (call_script, "script_end_quest", "qst_deal_with_looters"),
       (try_for_parties, ":cur_party_no"),
         (party_get_template_id, ":cur_party_template", ":cur_party_no"),
-        (eq, ":cur_party_template", "pt_looters"),
+        (eq, ":cur_party_template", ":looter_template"),
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
       (try_end),
   ],
-   "And that's not the only good news! Thanks to you, the looters have ceased to be a threat. We've not had a single attack reported for some time now.\
-   If there are any of them left, they've either run off or gone deep into hiding. That's good for business,\
-   and what's good for business is good for the town!\
-   I think that concludes our arrangement, {playername}. Please accept this silver as a token of my gratitude. Thank you, and farewell.",
+   "And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.\
+   If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of our people!\
+   I think that concludes your contract, {playername}. Please accept this RPs as a token of my gratitude. Thank you, and farewell.",
    "close_window",[
       ]],
   [anyone,"mayor_looters_quest_destroyed_2", [],
@@ -9449,68 +9451,69 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "mayor_looters_quest_response",[
       ]],
 
-  [anyone,"mayor_looters_quest_goods", [
-      (quest_get_slot,reg1,"qst_deal_with_looters",slot_quest_target_item),
-  ],
-   "Hah, I knew I could count on you! Just tell me which item to take from your baggage, and I'll send some men to collect it.\
- I still need {reg1} denars' worth of goods.",
-   "mayor_looters_quest_goods_response",[
-      ]],
-  [anyone|plyr|repeat_for_100,"mayor_looters_quest_goods_response", [
-      (store_repeat_object,":goods"),
-      (val_add,":goods",trade_goods_begin),
-      (is_between,":goods",trade_goods_begin,trade_goods_end),
-      (player_has_item,":goods"),
-      (str_store_item_name,s5,":goods"),
-  ],
-   "{s5}.", "mayor_looters_quest_goods_2",[
-      (store_repeat_object,":goods"),
-      (val_add,":goods",trade_goods_begin),
-      (troop_remove_items,"trp_player",":goods",1),
-      (assign,":value",reg0),
-      (call_script, "script_troop_add_gold","trp_player",":value"),
-      (quest_get_slot,":gold_num","qst_deal_with_looters",slot_quest_target_item),
-      (val_sub,":gold_num",":value"),
-      (quest_set_slot,"qst_deal_with_looters",slot_quest_target_item,":gold_num"),
-      (str_store_item_name,s6,":goods"),
-   ]],
-  [anyone|plyr,"mayor_looters_quest_goods_response", [
-  ],
-   "Nothing at the moment, sir.", "mayor_looters_quest_goods_3",[]],
+  # [anyone,"mayor_looters_quest_goods", [
+      # (quest_get_slot,reg1,"qst_deal_with_looters",slot_quest_target_item),
+  # ],
+   # "Hah, I knew I could count on you! Just tell me which item to take from your baggage, and I'll send some men to collect it.\
+ # I still need {reg1} denars' worth of goods.",
+   # "mayor_looters_quest_goods_response",[
+      # ]],
+  # [anyone|plyr|repeat_for_100,"mayor_looters_quest_goods_response", [
+      # (store_repeat_object,":goods"),
+      # (val_add,":goods",trade_goods_begin),
+      # (is_between,":goods",trade_goods_begin,trade_goods_end),
+      # (player_has_item,":goods"),
+      # (str_store_item_name,s5,":goods"),
+  # ],
+   # "{s5}.", "mayor_looters_quest_goods_2",[
+      # (store_repeat_object,":goods"),
+      # (val_add,":goods",trade_goods_begin),
+      # (troop_remove_items,"trp_player",":goods",1),
+      # (assign,":value",reg0),
+      # (call_script, "script_troop_add_gold","trp_player",":value"),
+      # (quest_get_slot,":gold_num","qst_deal_with_looters",slot_quest_target_item),
+      # (val_sub,":gold_num",":value"),
+      # (quest_set_slot,"qst_deal_with_looters",slot_quest_target_item,":gold_num"),
+      # (str_store_item_name,s6,":goods"),
+   # ]],
+  # [anyone|plyr,"mayor_looters_quest_goods_response", [
+  # ],
+   # "Nothing at the moment, sir.", "mayor_looters_quest_goods_3",[]],
 
-  [anyone,"mayor_looters_quest_goods_3", [
-  ],
-   "Anything else you need?",
-   "mayor_looters_quest_response",[
-      ]],
+  # [anyone,"mayor_looters_quest_goods_3", [
+  # ],
+   # "Anything else you need?",
+   # "mayor_looters_quest_response",[
+      # ]],
 
-  [anyone,"mayor_looters_quest_goods_2", [
-      (quest_slot_ge,"qst_deal_with_looters",slot_quest_target_item,1),
-      (quest_get_slot,reg1,"qst_deal_with_looters",slot_quest_target_item),
-  ],
-   "Excellent, here is the money for your {s6}. Do you have any more goods to give me? I still need {reg1} denars' worth of goods.",
-   "mayor_looters_quest_goods_response",[
-      ]],
-  [anyone,"mayor_looters_quest_goods_2", [
-      (neg|quest_slot_ge,"qst_deal_with_looters",slot_quest_target_item,1),
-      (quest_get_slot,":xp_reward","qst_deal_with_looters",slot_quest_xp_reward),
-      (quest_get_slot,":gold_reward","qst_deal_with_looters",slot_quest_gold_reward),
-      (add_xp_as_reward, ":xp_reward"),
-      (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
-#      (call_script, "script_change_troop_renown", "trp_player", 1),
-      (call_script, "script_change_player_relation_with_center", "$current_town", 3),
-      (call_script, "script_end_quest", "qst_deal_with_looters"),
-      (try_for_parties, ":cur_party_no"),
-        (party_get_template_id, ":cur_party_template", ":cur_party_no"),
-        (eq, ":cur_party_template", "pt_looters"),
-        (party_set_flags, ":cur_party_no", pf_quest_party, 0),
-      (try_end),
-  ],
-   "Well done, {playername}, that's the last of the goods I need. Here is the money for your {s6}, and a small bonus for helping me out.\
- I'm afraid I won't be paying for any more goods, nor bounties on looters, but you're welcome to keep hunting the bastards if any remain.\
- Thank you for your help, I won't forget it.",
-   "close_window",[
-      ]],
+  # [anyone,"mayor_looters_quest_goods_2", [
+      # (quest_slot_ge,"qst_deal_with_looters",slot_quest_target_item,1),
+      # (quest_get_slot,reg1,"qst_deal_with_looters",slot_quest_target_item),
+  # ],
+   # "Excellent, here is the money for your {s6}. Do you have any more goods to give me? I still need {reg1} denars' worth of goods.",
+   # "mayor_looters_quest_goods_response",[
+      # ]],
+  # [anyone,"mayor_looters_quest_goods_2", [
+      # (neg|quest_slot_ge,"qst_deal_with_looters",slot_quest_target_item,1),
+      # (quest_get_slot,":xp_reward","qst_deal_with_looters",slot_quest_xp_reward),
+      # (quest_get_slot,":gold_reward","qst_deal_with_looters",slot_quest_gold_reward),
+      # (add_xp_as_reward, ":xp_reward"),
+      # (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+# #      (call_script, "script_change_troop_renown", "trp_player", 1),
+      # (call_script, "script_change_player_relation_with_center", "$current_town", 3),
+      # (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+      # (call_script, "script_end_quest", "qst_deal_with_looters"),
+      # (try_for_parties, ":cur_party_no"),
+        # (party_get_template_id, ":cur_party_template", ":cur_party_no"),
+        # (eq, ":cur_party_template", ":looter_template"),
+        # (party_set_flags, ":cur_party_no", pf_quest_party, 0),
+      # (try_end),
+  # ],
+   # "Well done, {playername}, that's the last of the goods I need. Here is the money for your {s6}, and a small bonus for helping me out.\
+ # I'm afraid I won't be paying for any more goods, nor bounties on looters, but you're welcome to keep hunting the bastards if any remain.\
+ # Thank you for your help, I won't forget it.",
+   # "close_window",[
+      # ]],
 # Ryan END
 
 
@@ -9686,8 +9689,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (try_end),
      ],
    "We've had some fighting near the {s5} lately, with all the chaos that comes with it,\
- and that's led some of our less upstanding locals to try and make their fortune out of looting the shops and farms during the confusion.\
- A lot of valuable goods were taken. I need somebody to teach those bastards a lesson.\
+ and that's attracted a few bands of tribal orcs to raid the surrounding farms during the confusion.\
+ Valuable crops were destroyed and farmers are fleeing to {s5}. I need somebody to teach those orcs a lesson.\
  Sound like your kind of work?", "merchant_quest_looters_choice", []],
 
   [anyone|plyr,"merchant_quest_looters_choice", [], "Aye, I'll do it.", "merchant_quest_looters_brief", []],
@@ -9707,24 +9710,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #     (troop_clear_inventory,":merchant"),
    (store_random_in_range,":random_num_looters",3,7),
    (quest_set_slot,"qst_deal_with_looters",slot_quest_target_amount,":random_num_looters"),
+   (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
    (try_for_range,":unused",0,":random_num_looters"),
      (store_random_in_range,":random_radius",5,14),
      (set_spawn_radius,":random_radius"),
-     (spawn_around_party,"$g_encountered_party","pt_looters"),
+     (spawn_around_party,"$g_encountered_party",":looter_template"),
      (party_set_flags, reg0, pf_quest_party, 1),
+     (party_set_faction, reg0, "fac_neutral"), #MV: so they don't get into fights
    (try_end),
-   (str_store_troop_name_link, s9, "$g_talk_troop"),
+   (str_store_troop_name, s9, "$g_talk_troop"),
    (str_store_party_name_link, s13, "$g_encountered_party"),
    (str_store_party_name, s4, "$g_encountered_party"),
    (setup_quest_text, "qst_deal_with_looters"),
-   (str_store_string, s2, "@The Guildmaster of {s13} has asked you to deal with looters in the surrounding countryside."),
+   (str_store_string, s2, "@The {s9} of {s13} has asked you to deal with tribal orcs in the surrounding countryside."),
    (call_script, "script_start_quest", "qst_deal_with_looters", "$g_talk_troop"),
    (assign, "$g_leave_encounter",1),
   ],
-   "Excellent! You'll find the looters roaming around the countryside, probably trying to rob more good people.\
- Kill or capture the bastards, I don't care what you do with them.\
- I'll pay you a bounty of 40 denars on every band of looters you destroy,\
- until all the looters are dealt with.", "close_window",
+   "Excellent! You'll find the tribal orcs roaming around the countryside, probably looking to raid more farms.\
+ Kill the tribal orcs, and rid us of their presence.\
+ I'll pay you a bounty of 40 RPs on every band of tribal orcs you destroy,\
+ until all the orcs are dealt with.", "close_window",
    []],
 # Ryan END
 
@@ -10237,11 +10242,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [
      (eq, "$random_merchant_quest_no", "qst_deal_with_night_bandits"),
      ],
-   "Do I indeed! There's a group of bandits infesting the town, and I'm at the end of my rope as to how to deal with them.\
- They've been ambushing and robbing townspeople under the cover of night,\
+   "Do I indeed! There's a group of rogue goblins infesting the town, and I'm at the end of my rope as to how to deal with them.\
+ They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
- I need someone who can take on these bandits alone and win. That seems to be the only way of bringing them to justice.\
+ I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them.\
  Are you up to the task?", "merchant_quest_deal_with_night_bandits",
    []],
 
@@ -10249,26 +10254,27 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [
      (eq,"$random_merchant_quest_no","qst_deal_with_night_bandits"),
      ],
-   "There's a group of bandits infesting the town, and I'm at the end of my rope as to how to deal with them.\
- They've been ambushing and robbing townspeople under the cover of night,\
+   "There's a group of rogue goblins infesting the town, and I'm at the end of my rope as to how to deal with them.\
+ They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
- I need someone who can take on these bandits alone and win. That seems to be the only way of bringing them to justice.\
+ I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them.\
  Are you up to the task?", "merchant_quest_deal_with_night_bandits",
    []],
 
   [anyone|plyr,"merchant_quest_deal_with_night_bandits", [],
-   "Killing bandits? Why, certainly!",
+   "Killing rogue goblins? Why, certainly!",
    "deal_with_night_bandits_quest_taken",
    [
      (str_store_party_name_link, s14, "$g_encountered_party"),
+     (str_store_troop_name, s9, "$g_talk_troop"),
      (setup_quest_text, "qst_deal_with_night_bandits"),
-     (str_store_string, s2, "@The Guildmaster of {s14} has asked you to deal with a group of bandits terrorising the streets of {s14}. They only come out at night, and only attack lone travellers on the streets."),
+     (str_store_string, s2, "@The {s9} of {s14} has asked you to deal with a group of goblins making trouble in {s14}. They only come out at night, and only attack lone people on the streets."),
      (call_script, "script_start_quest", "qst_deal_with_night_bandits", "$g_talk_troop"),
      ]],
   
   [anyone|plyr, "merchant_quest_deal_with_night_bandits", [],
-   "My apologies, I'm not interested.", "merchant_quest_stall",[]],
+   "No, I'm not interested.", "merchant_quest_stall",[]],
 
   [anyone,"deal_with_night_bandits_quest_taken", [], "That takes a weight off my shoulders, {playername}.\
  You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?", "mayor_pretalk",[]],
