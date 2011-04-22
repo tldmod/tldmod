@@ -7181,22 +7181,17 @@ game_menus = [
         #(try_end),
         ],
     [
-      # ("castle_castle",[(this_or_next|party_slot_eq,"$current_town",slot_party_type, spt_castle),(party_slot_eq,"$current_town",slot_party_type, spt_town),],"Go to the Lord's hall.",
-       # [
-           # (try_begin),
-             # (eq,"$all_doors_locked",1),
-             # (display_message,"str_door_locked",0xFFFFAAAA),
-           # (else_try),
-             # (assign, "$town_entered", 1),
-             # (call_script, "script_enter_court", "$current_town"),
-           # (try_end),
-        # ], "Door to the castle."),
-      
-      ("town_castle",[
+       # stub menus to make passage 2 lead to castle
+	   ("town_menu_0",[(eq,1,0)],"Go to some location.",
+       [], "Door to some location."),
+
+       ("town_menu_1",[(eq,1,0)],"Go to some location.",
+       [], "Door to some location."),
+
+	   ("town_castle",[
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq,"$entry_to_town_forbidden",0),
-          (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
-#          (scene_slot_ge, ":castle_scene", slot_scene_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+#          (party_slot_eq, "$current_town", slot_castle_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
           ],"Go to the castle.",
        [
            (try_begin),
@@ -7231,17 +7226,12 @@ game_menus = [
              (store_faction_of_party, ":town_faction","$current_town"),
              (try_begin),
                (neq, ":town_faction", "fac_player_supporters_faction"),
-#               (faction_get_slot, ":troop_prison_guard", "$g_encountered_party_faction", slot_faction_prison_guard_troop),
-#               (faction_get_slot, ":troop_castle_guard", "$g_encountered_party_faction", slot_faction_castle_guard_troop),
 # TLD center specific guards
                (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
                (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
-##############
                (set_visitor, 23, ":troop_castle_guard"),
                (set_visitor, 24, ":troop_prison_guard"),
              (try_end),
-#             (faction_get_slot, ":tier_2_troop", ":town_faction", slot_faction_tier_2_troop),
-#             (faction_get_slot, ":tier_3_troop", ":town_faction", slot_faction_tier_3_troop),
 # TLD center specific guards
              (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
              (party_get_slot, ":tier_3_troop", "$current_town", slot_town_prison_guard_troop),
@@ -7255,9 +7245,6 @@ game_menus = [
              (shuffle_range,0,4),
              (set_visitor,25,reg0),(set_visitor,26,reg1),(set_visitor,27,reg2),(set_visitor,28,reg3),
 
-# TLD all gear in a smith, commented by GA
-#             (party_get_slot, ":spawned_troop", "$current_town", slot_town_armorer),
-#             (set_visitor, 9, ":spawned_troop"),
 #MV replaced by companion NPC, if any, and no castle
              #TLD NPC companions
              (try_begin),
@@ -7341,18 +7328,16 @@ game_menus = [
 	  ("trade_with_arms_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
-	  (party_slot_ge, "$current_town", slot_town_weaponsmith, 1),
+      #(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),],
        "Visit the {s61} Smiths.",
-       [
-           (party_get_slot, ":merchant_troop", "$current_town", slot_town_weaponsmith),
+       [   (party_get_slot, ":merchant_troop", "$current_town", slot_town_weaponsmith),
            (change_screen_trade, ":merchant_troop"),
         ]),
 		
-					
 	  ("trade_with_horse_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
-	  (party_slot_ge, "$current_town", slot_town_horse_merchant, 1),
+      #(party_slot_eq, "$current_town", slot_horse_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_horse_merchant, "trp_no_troop"),
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
        "Visit the {s61} Stables.",
@@ -7378,26 +7363,38 @@ game_menus = [
              (assign, "$talk_context", tc_hire_troops),
              (change_screen_map_conversation, reg(6))
              ]),
-      #Enter dungeon in Erebor begin (Kolba)
-
+       
+	   ("town_prison",
+       [(eq, 1, 0)],"Never: Enter the prison.",
+       [   (try_begin),
+             (eq,"$all_doors_locked",1),
+             (display_message,"str_door_locked",0xFFFFAAAA),
+           (else_try),
+             (this_or_next|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+             (eq, "$g_encountered_party_faction", "$players_kingdom"),
+             (assign, "$town_entered", 1),
+             (call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle"),
+           (else_try),
+             (display_message,"str_door_locked",0xFFFFAAAA),
+           (try_end),
+        ],"Door to the prison."),
+		
+	 #Enter dungeon in Erebor begin (Kolba)
       ("dungeon_enter",[
-          
-          (eq, "$current_town", "p_town_erebor"),
+        (eq, "$current_town", "p_town_erebor"),
         (eq,"$dungeon_access",1),
         ],"Enter the cellars.",[
-(modify_visitors_at_site,"scn_erebor_dungeon_01"),(reset_visitors),
-             (set_visitor,1,"trp_player"),
+              (modify_visitors_at_site,"scn_erebor_dungeon_01"),(reset_visitors),
+              (set_visitor,1,"trp_player"),
               (set_visitor, 2, "trp_goblin_gundabad"),
               (set_visitor, 3, "trp_fell_orc_warrior_gundabad"),
               (set_visitor, 4, "trp_orc_fighter_gundabad"),
               (set_jump_mission, "mt_tld_erebor_dungeon"),
-
               (jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
-                ],"Open the door."),
+       ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)
-
-          
+    
 		
       ("castle_wait",
        [#   (party_slot_eq,"$current_town",slot_party_type, spt_castle),
@@ -7573,228 +7570,10 @@ game_menus = [
     ]
   ),
 
-
-# They must learn field discipline and the steadiness to follow orders in combat before they can be thought to use arms.",
-  # (
-    # "train_peasants_against_bandits",0,
-    # "As the party member with the highest training skill ({reg2}), {reg3?you expect:{s1} expects} that getting some peasants ready for practice will take {reg4} hours.",
-    # "none",
-    # [(call_script, "script_get_max_skill_of_player_party", "skl_trainer"),
-     # (assign, ":max_skill", reg0),
-     # (assign, reg2, reg0),
-     # (assign, ":max_skill_owner", reg1),
-     # (try_begin),
-       # (eq, ":max_skill_owner", "trp_player"),
-       # (assign, reg3, 1),
-     # (else_try),
-       # (assign, reg3, 0),
-       # (str_store_troop_name, s1, ":max_skill_owner"),
-     # (try_end),
-     # (store_sub, ":needed_hours", 20, ":max_skill"),
-     # (val_mul, ":needed_hours", 3),
-     # (val_div, ":needed_hours", 5),
-     # (store_sub, reg4, ":needed_hours", "$qst_train_peasants_against_bandits_num_hours_trained"),
-     # ],
-    # [
-      # ("make_preparation", [], "Train them.",
-       # [
-         # (assign, "$qst_train_peasants_against_bandits_currently_training", 1),
-         # (rest_for_hours_interactive, 1000, 5, 0), #rest while not attackable
-         # (assign, "$auto_enter_town", "$current_town"),
-         # (assign, "$g_town_visit_after_rest", 1),
-         # (change_screen_return),
-         # ]),
-      # ("train_later", [], "Put it off until later.",
-       # [
-         # (jump_to_menu, "mnu_village"),
-        # ]),
-    # ]
-  # ), 
-
-  # (
-    # "train_peasants_against_bandits_ready",0,
-    # "You put the peasants through the basics of soldiering, discipline and obedience.\
- # You think {reg0} of them {reg1?have:has} fully grasped the training and {reg1?are:is} ready for some practice.",
-    # "none",
-    # [
-      # (store_character_level, ":level", "trp_player"),
-      # (val_div, ":level", 10),
-      # (val_add, ":level", 1),
-      # (quest_get_slot, ":quest_target_amount", "qst_train_peasants_against_bandits", slot_quest_target_amount),
-      # (quest_get_slot, ":quest_current_state", "qst_train_peasants_against_bandits", slot_quest_current_state),
-      # (val_sub, ":quest_target_amount", ":quest_current_state"),
-      # (assign, ":max_random", ":level"),
-      # (val_min, ":max_random", ":quest_target_amount"),
-      # (val_add, ":max_random", 1),
-      # (store_random_in_range, ":random_number", 1, ":max_random"),
-      # (assign, "$g_train_peasants_against_bandits_num_peasants", ":random_number"),
-      # (assign, reg0, ":random_number"),
-      # (store_sub, reg1, ":random_number", 1),
-      # (str_store_troop_name_by_count, s0, "trp_trainee_peasant", ":random_number"),
-     # ],
-    # [
-      # ("peasant_start_practice", [], "Start the practice fight.",
-       # [
-         # (set_jump_mission,"mt_village_training"),
-         # (quest_get_slot, ":target_center", "qst_train_peasants_against_bandits", slot_quest_target_center),
-         # (party_get_slot, ":village_scene", ":target_center", slot_castle_exterior),
-         # (modify_visitors_at_site, ":village_scene"),
-         # (reset_visitors),
-         # (set_visitor, 0, "trp_player"),
-         # (set_visitors, 1, "trp_trainee_peasant", "$g_train_peasants_against_bandits_num_peasants"),
-         # (set_jump_entry, 11),
-         # (jump_to_scene, ":village_scene"),
-         # (jump_to_menu, "mnu_train_peasants_against_bandits_training_result"),
-         # (music_set_situation, 0),
-         # (change_screen_mission),
-         # ]),
-      # ]
-    # ),
-
-  # ( "train_peasants_against_bandits_training_result",mnf_disable_all_keys,
-    # "{s0}",
-    # "none",
-    # [
-      # (assign, reg5, "$g_train_peasants_against_bandits_num_peasants"),
-      # (str_store_troop_name_by_count, s0, "trp_trainee_peasant", "$g_train_peasants_against_bandits_num_peasants"),
-      # (try_begin),
-        # (eq, "$g_train_peasants_against_bandits_training_succeeded", 0),
-        # (str_store_string, s0, "@You were beaten. The peasants are heartened by their success, but the lesson you wanted to teach them probably didn't get through..."),
-      # (else_try),
-        # (str_store_string, s0, "@After beating your last opponent, you explain to the peasants how to better defend themselves against such an attack. Hopefully they'll take the experience on board and will be prepared next time."),
-        # (quest_get_slot, ":quest_current_state", "qst_train_peasants_against_bandits", slot_quest_current_state),
-        # (val_add, ":quest_current_state", "$g_train_peasants_against_bandits_num_peasants"),
-        # (quest_set_slot, "qst_train_peasants_against_bandits", slot_quest_current_state, ":quest_current_state"),
-      # (try_end),
-     # ],
-    # [
-      # ("continue", [], "Continue...",
-       # [
-         # (try_begin),
-           # (quest_get_slot, ":quest_current_state", "qst_train_peasants_against_bandits", slot_quest_current_state),
-           # (quest_slot_eq, "qst_train_peasants_against_bandits", slot_quest_target_amount, ":quest_current_state"),
-           # (jump_to_menu, "mnu_train_peasants_against_bandits_attack"),
-         # (else_try),
-           # (change_screen_map),
-         # (try_end),
-         # ]),
-      # ]
-    # ),
-
-  # (
-    # "train_peasants_against_bandits_attack",0,
-    # "As you get ready to continue the training, a sentry from the village runs up to you, shouting alarums.\
- # The bandits have been spotted on the horizon, riding hard for {s3}.\
- # The elder begs that you organize your newly-trained militia and face them.",
-    # "none",
-    # [
-	# (str_store_party_name, s3, "$current_town"),
-     # ],
-    # [
-      # ("peasants_against_bandits_attack_resist", [], "Prepare for a fight!",
-       # [
-        # (store_random_in_range, ":random_no", 0, 3),
-        # (try_begin),
-          # (eq, ":random_no", 0),
-          # (assign, ":bandit_troop", "trp_bandit"),
-        # (else_try),
-          # (eq, ":random_no", 1),
-          # (assign, ":bandit_troop", "trp_mountain_bandit"),
-        # (else_try),
-          # (assign, ":bandit_troop", "trp_forest_bandit"),
-        # (try_end),
-        # (party_get_slot, ":scene_to_use", "$g_encountered_party", slot_castle_exterior),
-        # (modify_visitors_at_site, ":scene_to_use"),
-        # (reset_visitors),
-        # (store_character_level, ":level", "trp_player"),
-        # (val_div, ":level", 2),
-        # (store_add, ":min_bandits", ":level", 16),
-        # (store_add, ":max_bandits", ":min_bandits", 6),
-        # (store_random_in_range, ":random_no", ":min_bandits", ":max_bandits"),
-        # (set_visitors, 0, ":bandit_troop", ":random_no"),
-        # (assign, ":num_villagers", ":max_bandits"),
-        # (set_visitors, 2, "trp_trainee_peasant", ":num_villagers"),
-        # (set_party_battle_mode),
-        # (set_battle_advantage, 0),
-        # (assign, "$g_battle_result", 0),
-        # (set_jump_mission,"mt_village_attack_bandits"),
-        # (jump_to_scene, ":scene_to_use"),
-        # (assign, "$g_next_menu", "mnu_train_peasants_against_bandits_attack_result"),
-        # (jump_to_menu, "mnu_battle_debrief"),
-        # (assign, "$g_mt_mode", vba_after_training),
-        # (change_screen_mission),
-        # ]),
-      # ]
-    # ),
-
-  # (
-    # "train_peasants_against_bandits_attack_result",mnf_scale_picture|mnf_disable_all_keys,
-    # "{s9}",
-    # "none",
-    # [
-      # (try_begin),
-        # (eq, "$g_battle_result", 1),
-        # (str_store_string, s9, "@The bandits are broken!\
- # Those few who remain alive and conscious run off with their tails between their legs,\
- # terrified of the peasants and their new champion."),
-	# (call_script, "script_succeed_quest", "qst_train_peasants_against_bandits"),
-        # (jump_to_menu, "mnu_train_peasants_against_bandits_success"),
-      # (else_try),
-        # (call_script, "script_fail_quest", "qst_train_peasants_against_bandits"),
-        # (str_store_string, s9, "@Try as you might, you could not defeat the bandits.\
- # Infuriated, they raze the village to the ground to punish the peasants,\
- # and then leave the burning wasteland behind to find greener pastures to plunder."),
-        # (set_background_mesh, "mesh_pic_looted_village"),
-      # (try_end),
-     # ],
-    # [("continue", [], "Continue...",
-       # [(try_begin),
-          # (call_script, "script_village_set_state",  "$current_town", svs_looted),
-          # (party_set_slot, "$current_town", slot_village_raid_progress, 0),
-          # (party_set_slot, "$current_town", slot_village_recover_progress, 0),
-          # (call_script, "script_change_player_relation_with_center", "$g_encountered_party", -3),
-          # (call_script, "script_end_quest", "qst_train_peasants_against_bandits"),
-        # (try_end),
-        # (change_screen_map),
-	 # ]),
-      # ]
-    # ),
-
-   # ("train_peasants_against_bandits_success",mnf_disable_all_keys,
-    # "The bandits are broken!\
- # Those few who remain run off with their tails between their legs,\
- # terrified of the peasants and their new champion.\
- # The villagers have little left in the way of wealth after their ordeal,\
- # but they offer you all they can find to show their gratitude.",
-    # "none",
-    # [(party_clear, "p_temp_party"),
-     # (call_script, "script_end_quest", "qst_train_peasants_against_bandits"),
-     # (call_script, "script_change_player_relation_with_center", "$g_encountered_party", 4),
-
-     # (party_get_slot, ":merchant_troop", "$current_town", slot_town_elder),
-     # (try_for_range, ":slot_no", num_equipment_kinds ,max_inventory_items + num_equipment_kinds),
-        # (store_random_in_range, ":rand", 0, 100),
-        # (lt, ":rand", 50),
-        # (troop_set_inventory_slot, ":merchant_troop", ":slot_no", -1),
-     # (try_end),
-     # (call_script, "script_add_log_entry", logent_helped_peasants, "trp_player",  "$current_town", -1, -1),
-    # ],
-    # [
-      # ("village_bandits_defeated_accept",[],"Take it as your just due.",[(jump_to_menu, "mnu_auto_return_to_map"),
-                                                                         # (party_get_slot, ":merchant_troop", "$current_town", slot_town_elder),
-                                                                         # (troop_sort_inventory, ":merchant_troop"),
-                                                                         # (change_screen_loot, ":merchant_troop"),
-                                                                       # ]),
-      # ("village_bandits_defeated_cont",[],  "Refuse, stating that they need these items more than you do.",[(call_script, "script_change_player_relation_with_center", "$g_encountered_party", 3),
-                                                                                                             # (call_script, "script_change_player_honor", 1),
-                                                                                                                # (change_screen_map)]),
-    # ],
-  # ),
-
   ( "disembark",0,
     "Do you wish to disembark?",
     "none",
-    [	(set_background_mesh, "mesh_ui_default_menu_window"), ],
+    [(set_background_mesh, "mesh_ui_default_menu_window"), ],
     [("disembark_yes", [], "Yes.",
        [(assign, "$g_player_icon_state", pis_normal),
         (party_set_flags, "p_main_party", pf_is_ship, 0),
@@ -7833,8 +7612,7 @@ game_menus = [
     "Do you wish to embark?",
     "none",
     [],
-    [
-      ("reembark_yes", [], "Yes.",
+    [ ("reembark_yes", [], "Yes.",
        [(assign, "$g_player_icon_state", pis_ship),
         (party_set_flags, "p_main_party", pf_is_ship, 1),
         (party_get_position, pos1, "p_main_party"),
@@ -7958,13 +7736,11 @@ game_menus = [
     "You make your way back through the gates and quickly retreat to the safety of the hills.",
     "none",
     [],
-    [
-      ("continue",[],"Continue...",
-       [
-           (assign,"$auto_menu",-1),
-           (store_encountered_party,"$last_sneak_attempt_town"),
-           (store_current_hours,"$last_sneak_attempt_time"),
-           (change_screen_return),
+    [("continue",[],"Continue...",
+       [ (assign,"$auto_menu",-1),
+         (store_encountered_party,"$last_sneak_attempt_town"),
+         (store_current_hours,"$last_sneak_attempt_time"),
+         (change_screen_return),
         ]),
     ]
   ),
