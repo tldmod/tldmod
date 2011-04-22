@@ -346,6 +346,7 @@ simple_triggers = [
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
          (try_end),
+         (val_min, ":strength", 9999), #limit max strength
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
          (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"), #debug
 	  (try_end),
@@ -1622,7 +1623,7 @@ simple_triggers = [
     ]),
 
 # Report to army quest
-  (24, #MV: make it more rare, was 6
+  (12, #MV: make it more rare?, was 6
    [
      (is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
      (eq, "$g_player_is_captive", 0),
@@ -1711,6 +1712,8 @@ simple_triggers = [
                (gt, ":passed_time", 120),#5 days
                (store_random_in_range, ":quest_target_amount", 5, 10),
                (assign, ":result", ":quest_no"),
+               (store_random_in_range, ":random_food", normal_food_begin, food_end),
+               (quest_set_slot, ":result", slot_quest_target_item, ":random_food"),
                (quest_set_slot, ":result", slot_quest_target_amount, ":quest_target_amount"),
                (quest_set_slot, ":result", slot_quest_expiration_days, 10),
                (quest_set_slot, ":result", slot_quest_dont_give_again_period, 30),
@@ -2260,6 +2263,7 @@ simple_triggers = [
         (faction_get_slot, ":active_theater", ":cur_kingdom", slot_faction_active_theater),
         (faction_get_slot, ":home_theater", ":cur_kingdom", slot_faction_home_theater),
         (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, ":home_theater"), # home theater enemies get to pick first
           (store_relation, ":cur_relation", ":faction_no", ":cur_kingdom"),
           (lt, ":cur_relation", 0), #enemy
@@ -2271,6 +2275,7 @@ simple_triggers = [
         (try_begin),
           (eq, ":best_strength", 0),
           (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
             (this_or_next|faction_slot_eq, ":faction_no", slot_faction_active_theater, ":home_theater"), # if there are no home enemies, check for invaders
             (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":active_theater"),
             (store_relation, ":cur_relation", ":faction_no", ":cur_kingdom"),
@@ -2306,7 +2311,47 @@ simple_triggers = [
               (call_script, "script_destroy_center", ":cur_party"),
             (else_try),
               (party_clear, ":cur_party"), # remove previous garrison
-              (call_script, "script_give_center_to_faction", ":cur_party", ":best_faction"),
+              
+              # if a center was besieged, give it to the besieger
+              (party_get_slot, ":besieger_party", ":cur_party", slot_center_is_besieged_by),
+              (try_begin),
+                (gt, ":besieger_party", 0),
+                (party_is_active, ":besieger_party"),
+                (store_faction_of_party, ":besieger_faction", ":besieger_party"),
+                (party_slot_ge, ":cur_party", slot_center_is_besieged_by, 1),
+                (call_script, "script_give_center_to_faction", ":cur_party", ":besieger_faction"),
+              (else_try),
+                # if not give it to the best+closest faction in the theater
+                (assign, ":closest_faction", ":best_faction"),
+                (assign, ":closest_score", 0),
+                (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+                  (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+                  (this_or_next|faction_slot_eq, ":faction_no", slot_faction_active_theater, ":home_theater"), # if there are no home enemies, check for invaders
+                  (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":active_theater"),
+                  (store_relation, ":cur_relation", ":faction_no", ":cur_kingdom"),
+                  (lt, ":cur_relation", 0), #enemy
+                  (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength),
+                  (faction_get_slot, ":faction_capital", ":faction_no", slot_faction_capital),
+                  (call_script, "script_get_tld_distance", ":cur_party", ":faction_capital"),
+                  (assign, ":dist", reg0),
+                  #(val_mul, ":dist", ":dist"),
+                  (val_min, ":faction_strength", 7000),
+                  (val_mul, ":faction_strength", 1000),
+                  # score = 1000*str/dist
+                  (store_div, ":score", ":faction_strength", ":dist"),
+# (assign, reg0, ":score"),
+# (assign, reg1, ":dist"),
+# (str_store_party_name, s1, ":cur_party"),
+# (str_store_faction_name, s13, ":faction_no"),
+# (display_message, "@Debug: Closest faction score: {reg0} for {s13} claiming {s1} (dist: {reg1})."),
+                  (gt, ":score", ":closest_score"),
+                  (assign, ":closest_score", ":score"),
+                  (assign, ":closest_faction", ":faction_no"),
+                (try_end),
+                (call_script, "script_give_center_to_faction", ":cur_party", ":closest_faction"),
+              #(call_script, "script_give_center_to_faction", ":cur_party", ":best_faction"),
+              (try_end),
+              
               (call_script, "script_cf_reinforce_party", ":cur_party"),
               (call_script, "script_cf_reinforce_party", ":cur_party"),
               (call_script, "script_cf_reinforce_party", ":cur_party"),
@@ -2432,7 +2477,7 @@ simple_triggers = [
 
    
  # TLD Messages about faction strength changes
-(2,[(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+(5,[(try_for_range,":faction",kingdoms_begin,kingdoms_end),
        (faction_get_slot,":strength",":faction",slot_faction_strength),
        (faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
        (faction_set_slot,":faction",slot_faction_strength,":strength_new"),

@@ -1,4 +1,4 @@
-739
+740
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -556,6 +556,9 @@ qstr_Forces_of_Good Forces_of_Good
 qstr_Forces_of_Morder Forces_of_Morder
 qstr_Forces_of_Isengard Forces_of_Isengard
 qstr_you you
+qstr_their_enemies their_enemies
+qstr_{s11}_and_{s13} {s11}_and_{s13}
+qstr_{s11}_{s13} {s11},_{s13}
 qstr_permit:_{reg7}_had:_ permit:_{reg7},_had:_{reg6}
 qstr_DEBUG:_Routine_2 DEBUG:_Routine_2
 qstr_Breaking_camp... Breaking_camp...
@@ -657,14 +660,12 @@ qstr_{s9}{reg5?_and_the_l {s9}{reg5?_and_the_lord_of_{s8}.:.
 qstr_Very_well_done_{play Very_well_done,_{playername}!_You_captured_both_the_spy_and_his_handler,_just_as_I'd_hoped,_and_the_pair_are_now_safely_locked_up,_waiting_to_be_questioned._They_will_have_some_explaining_to_do!_Anyway,_I'm_very_pleased_with_your_success,_{playername},_and_I_give_you_this_purse_as_a_token_of_my_appreciation.
 qstr_Beautiful_work_{play Beautiful_work,_{playername}!_You_captured_both_the_spy_and_his_handler,_just_as_you_were_told,_and_the_pair_are_now_safely_locked_up_in_my_dungeon,_waiting_to_be_questioned._My_torturer_shall_be_busy_tonight!_Anyway,_I'm_very_pleased_with_your_success,_{playername},_and_I_give_you_this_purse_as_a_token_of_my_appreciation.
 qstr_Your_mission_is_comp Your_mission_is_complete,_{s9}_wants_you_to_resume_following_his_army_until_further_notice.
-qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_heads_of_cattle_and_deliver_them_back_to_him.
+qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_units_of_{s4}_and_deliver_them_back_to_him.
 qstr_{s9}_asked_you_to_sc {s9}_asked_you_to_scout_{s13},_{s14}_and_{s15},_then_report_back.
 qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_you_to_bring_me_this,_{playername}._Take_my_seal_as_proof_that_I've_received_it,_and_give_my_regards_to_{s9}_when_you_see_him_again.
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._If_you_see_{s9}_again_tell_him_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.
 qstr_Give_me_that!_Hrmph!_ Give_me_that!_Hrmph!_You_are_a_useful_servant_to_your_masters,_{playername},_but_all_of_you_will_be_dead_before_long._Not_now_though,_so_scurry_off.
-qstr_{s11}_and_{s13} {s11}_and_{s13}
-qstr_{s11}_{s13} {s11},_{s13}
 qstr_We_are_not_at_war_wi We_are_not_at_war_with_anyone.
 qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fighting_against_{s13}.
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.

@@ -60,8 +60,8 @@ items =[
 ["practice_bow","Practice_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_type_bow|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back,0,weight(1.5)|difficulty(0)|shoot_speed(40)|spd_rtng(90)|thrust_damage(19,blunt),imodbits_bow],
 #
 #foods (first one is smoked_fish)
-["human_meat","Human_Meat",[("raw_meat",0)],itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(80)|max_ammo(70),imodbits_none],
-["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_consumable|itp_food,0,200,weight(1.3)|abundance(0)|food_quality(70)|max_ammo(70),imodbits_none],
+["human_meat","Human_Meat",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
+["lembas","Lembas",[("lembas",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,200,weight(1.3)|abundance(10)|food_quality(70)|max_ammo(70),imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(70)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(80)|max_ammo(70),imodbits_none],

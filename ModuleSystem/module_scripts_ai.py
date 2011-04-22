@@ -245,7 +245,9 @@ ai_scripts = [
            (lt, ":reln", 0),
            (val_mul, ":reln", -1),
            (val_add, ":reln", 50),
-           (store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":faction_marshall_party"),
+           #(store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":faction_marshall_party"),
+           (call_script, "script_get_tld_distance", ":enemy_walled_center", ":faction_marshall_party"),
+           (assign, ":dist", reg0),
            (val_add, ":dist", 20),
            (val_mul, ":dist", 10), #TLD: give more weight on distance consideration
            (party_get_slot, ":center_str", ":enemy_walled_center", slot_party_cached_strength),
@@ -487,7 +489,9 @@ ai_scripts = [
              (eq, ":old_target_attacking_enemies_around_center", ":center_no"),
              (val_mul, ":attack_army_score", 100),
            (try_end),
-           (store_distance_to_party_from_party, ":dist", ":center_no", ":faction_marshall_party"),
+           #(store_distance_to_party_from_party, ":dist", ":center_no", ":faction_marshall_party"),
+           (call_script, "script_get_tld_distance", ":center_no", ":faction_marshall_party"),
+           (assign, ":dist", reg0),
            (val_add, ":dist", 20),
            (val_mul, ":dist", 10), #TLD: bigger effect of distance
            (val_div, ":attack_army_score", ":dist"),
@@ -1645,7 +1649,9 @@ ai_scripts = [
             (lt, ":reln", 0),
             (val_mul, ":reln", -1),
             (val_add, ":reln", 50),
-            (store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":party_no"),
+            #(store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":party_no"),
+            (call_script, "script_get_tld_distance", ":enemy_walled_center", ":party_no"),
+            (assign, ":dist", reg0),
             (store_sub, ":dist_factor", 75, ":dist"),
             (val_max, ":dist_factor", 3),
             (party_get_slot, ":center_str", ":enemy_walled_center", slot_party_cached_strength),
@@ -1712,7 +1718,9 @@ ai_scripts = [
             (party_is_active, ":center_no"), #TLD
             (store_faction_of_party, ":center_faction", ":center_no"),
             (eq, ":center_faction", ":faction_no"),
-            (store_distance_to_party_from_party, ":distance", ":party_no", ":center_no"),
+            #(store_distance_to_party_from_party, ":distance", ":party_no", ":center_no"),
+            (call_script, "script_get_tld_distance", ":party_no", ":center_no"),
+            (assign, ":distance", reg0),
             (store_sub, ":this_center_score", 100, ":distance"),
             (val_max, ":this_center_score", 1),
             (try_begin),
@@ -2711,4 +2719,54 @@ ai_scripts = [
      (call_script, "script_update_center_notes", ":center"),
    ]),
 
+# script_get_tld_distance
+# Store real walking distance between parties (to handle Gondor towns)
+# Input: party1, party2
+# Output: reg0 - distance
+  ("get_tld_distance",
+   [
+     (store_script_param, ":party1", 1),
+     (store_script_param, ":party2", 2),
+     (try_begin), # one or the other is in SG, but not both (xor)
+       (assign, ":count", 0),
+       (try_begin),
+         (call_script, "script_cf_center_is_in_south_gondor", ":party1"),
+         (val_add, ":count", 1),
+       (try_end),
+       (try_begin),
+         (call_script, "script_cf_center_is_in_south_gondor", ":party2"),
+         (val_add, ":count", 1),
+       (try_end),
+       (eq, ":count", 1), #xor
+       (store_distance_to_party_from_party, ":dist1", ":party1", "p_town_minas_tirith"),
+       (store_distance_to_party_from_party, reg0, ":party2", "p_town_minas_tirith"),
+       (val_add, reg0, ":dist1"),
+# (store_distance_to_party_from_party, reg1, ":party1", ":party2"),
+# (str_store_party_name, s13, ":party1"),
+# (str_store_party_name, s14, ":party2"),
+# (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
+     (else_try),
+       (store_distance_to_party_from_party, reg0, ":party1", ":party2"),
+     (try_end),
+   ]),
+
+# script_cf_center_is_in_south_gondor
+# List of centers in South Gondor
+# Input: center
+  ("cf_center_is_in_south_gondor",
+   [
+     (store_script_param, ":center", 1),
+     (is_between, ":center", centers_begin, centers_end), #optimize
+     (this_or_next|eq, ":center", "p_town_pelargir"),
+     (this_or_next|eq, ":center", "p_town_linhir"),
+     (this_or_next|eq, ":center", "p_town_dol_amroth"),
+     (this_or_next|eq, ":center", "p_town_edhellond"),
+     (this_or_next|eq, ":center", "p_town_lossarnach"),
+     (this_or_next|eq, ":center", "p_town_tarnost"),
+     (this_or_next|eq, ":center", "p_town_erech"),
+     (this_or_next|eq, ":center", "p_town_pinnath_gelin"),
+     (this_or_next|eq, ":center", "p_town_ethring"),
+     (this_or_next|eq, ":center", "p_town_harad_camp"),
+     (eq, ":center", "p_town_umbar_camp"),
+   ]),
   ]

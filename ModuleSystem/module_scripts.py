@@ -1970,7 +1970,10 @@ scripts = [
                         (party_set_slot, ":prisoner_train", slot_party_ai_object, reg0),
                         (party_set_flags, ":prisoner_train", pf_default_behavior, 0),
                     (try_end),
-                    (distribute_party_among_party_group, "p_temp_party", ":root_winner_party"), 
+                    (try_begin),
+                      (gt, ":root_winner_party", 0),
+                      (distribute_party_among_party_group, "p_temp_party", ":root_winner_party"),
+                    (try_end),                      
                 # TLD: spawn prisoner train end
              (try_end),
              
@@ -3877,6 +3880,7 @@ scripts = [
             (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
 		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
 		    (val_add, ":winner_strength", ":win_value"),
+            (val_min, ":winner_strength", 9999), #limit max strength
 	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
             #debug stuff
             (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),
@@ -4557,7 +4561,9 @@ scripts = [
         (store_faction_of_party, ":cur_faction", ":cur_town"),
         (store_relation, ":relation", ":faction_no", ":cur_faction"),
         (ge, ":relation", 0), #TLD: allied towns
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":cur_town"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":no_towns", 1),
       (try_end),
@@ -4570,7 +4576,9 @@ scripts = [
         (store_faction_of_party, ":cur_faction", ":cur_town"),
         (store_relation, ":relation", ":faction_no", ":cur_faction"),
         (ge, ":relation", 0), #TLD: allied towns
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":cur_town"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":no_towns", 1),
         (gt, ":no_towns", ":random_town"),
@@ -6253,7 +6261,9 @@ scripts = [
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        (store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
+        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
+        (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
+        (assign, ":dist", reg0),
         (le, ":dist", ":range"),
         (val_add, ":num_centers", 1),
       (try_end),
@@ -6265,7 +6275,9 @@ scripts = [
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        (store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
+        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
+        (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
+        (assign, ":dist", reg0),
         (le, ":dist", ":range"),
         (val_sub, ":random_center", 1),
         (lt, ":random_center", 0),
@@ -6639,7 +6651,9 @@ scripts = [
         (ge, ":lord_party", 0),
         (party_get_attached_to, ":lord_attachment", ":lord_party"),
         (is_between, ":lord_attachment", centers_begin, centers_end), #is troop in a center?
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":lord_attachment"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":count_lords", 1),
       (try_end),
@@ -6658,7 +6672,9 @@ scripts = [
         (ge, ":lord_party", 0),
         (party_get_attached_to, ":lord_attachment", ":lord_party"),
         (is_between, ":lord_attachment", centers_begin, centers_end), #is troop in a center?
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":lord_attachment"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":count_lords", 1),
         (lt, ":random_lord", ":count_lords"),
@@ -6733,7 +6749,9 @@ scripts = [
         (ge, ":lord_party", 0),
         (party_get_attached_to, ":lord_attachment", ":lord_party"),
         (is_between, ":lord_attachment", centers_begin, centers_end), #is troop in a center?
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":lord_attachment"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":count_lords", 1),
       (try_end),
@@ -6754,7 +6772,9 @@ scripts = [
         (ge, ":lord_party", 0),
         (party_get_attached_to, ":lord_attachment", ":lord_party"),
         (is_between, ":lord_attachment", centers_begin, centers_end), #is troop in a center?
-        (store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        #(store_distance_to_party_from_party, ":dist", "p_main_party", ":lord_attachment"),
+        (call_script, "script_get_tld_distance", "p_main_party", ":lord_attachment"),
+        (assign, ":dist", reg0),
         (le, ":dist", tld_max_quest_distance), #TLD: not too far
         (val_add, ":count_lords", 1),
         (lt, ":random_lord", ":count_lords"),
@@ -7667,7 +7687,9 @@ scripts = [
         (store_faction_of_party, ":center_faction_no", ":cur_center_no"),
         (eq, ":faction_no", ":center_faction_no"),
         
-        (store_distance_to_party_from_party, ":cur_distance", ":center_no", ":cur_center_no"),
+        #(store_distance_to_party_from_party, ":cur_distance", ":center_no", ":cur_center_no"),
+        (call_script, "script_get_tld_distance", ":center_no", ":cur_center_no"),
+        (assign, ":cur_distance", reg0),
         (val_add, ":cur_distance", 1),
         
         (assign, ":new_weight", 100000),
@@ -7690,7 +7712,9 @@ scripts = [
           (store_faction_of_party, ":center_faction_no", ":cur_center_no"),
           (eq, ":faction_no", ":center_faction_no"),
           
-          (store_distance_to_party_from_party, ":cur_distance", ":center_no", ":cur_center_no"),
+          #(store_distance_to_party_from_party, ":cur_distance", ":center_no", ":cur_center_no"),
+          (call_script, "script_get_tld_distance", ":center_no", ":cur_center_no"),
+          (assign, ":cur_distance", reg0),
           (val_add, ":cur_distance", 1),
           
           (assign, ":new_weight", 100000),
@@ -10164,8 +10188,8 @@ scripts = [
       #Kingdom Army quests
       (else_try),
         (eq, ":quest_no", "qst_follow_army"),
-        (assign, ":quest_return_penalty", -4),
-        (assign, ":quest_expire_penalty", -5),
+        #(assign, ":quest_return_penalty", -4),
+        #(assign, ":quest_expire_penalty", -5),
       (else_try),
         (eq, ":quest_no", "qst_deliver_cattle_to_army"),
         (assign, ":quest_return_penalty", -1),

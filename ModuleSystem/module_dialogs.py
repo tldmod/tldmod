@@ -3005,15 +3005,22 @@ dialogs = [
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq, ":lords_quest", "qst_deliver_cattle_to_army"),
-                         (check_quest_succeeded, "qst_deliver_cattle_to_army"),
+                         (quest_get_slot, ":quest_target_item", "qst_deliver_cattle_to_army", slot_quest_target_item),
+                         (store_item_kind_count, ":item_count", ":quest_target_item"),
+                         #(check_quest_succeeded, "qst_deliver_cattle_to_army"),
                          (quest_get_slot, reg13, "qst_deliver_cattle_to_army", slot_quest_target_amount),
+                         (ge, ":item_count", reg13),
+                         (str_store_item_name, s4, ":quest_target_item"),
                          ],
-   "Ah, {playername}. My quartermaster has informed me of your delivery, {reg13} heads of cattle, as I requested. I'm impressed.", "lord_deliver_cattle_to_army_thank",
+   "Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.", "lord_deliver_cattle_to_army_thank",
    [
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+     (quest_get_slot, ":quest_target_item", "qst_deliver_cattle_to_army", slot_quest_target_item),
      (quest_get_slot, ":quest_target_amount", "qst_deliver_cattle_to_army", slot_quest_target_amount),
-     #TODO: Change reward
-     (store_mul, ":reward", ":quest_target_amount", 100),
+     (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
+     (store_item_value, ":item_value", ":quest_target_item"),
+     (val_mul, ":item_value", 150), (val_div, ":item_value", 100), #50% profit
+     (store_mul, ":reward", ":quest_target_amount", ":item_value"),
      (call_script, "script_troop_add_gold", "trp_player", ":reward"),
      (val_div, ":reward", 5),
      (add_xp_as_reward, ":reward"),
@@ -3030,8 +3037,8 @@ dialogs = [
    "Not a problem, {s65}.", "lord_pretalk",[]],
   [anyone|plyr, "lord_deliver_cattle_to_army_thank", [],
    "Glad to be of service.", "lord_pretalk",[]],
-  [anyone|plyr, "lord_deliver_cattle_to_army_thank", [],
-   "Mere child's play.", "lord_pretalk",[]],
+  # [anyone|plyr, "lord_deliver_cattle_to_army_thank", [],
+   # "Mere child's play.", "lord_pretalk",[]],
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq, ":lords_quest", "qst_scout_waypoints"),
@@ -3069,25 +3076,29 @@ dialogs = [
      (check_quest_active, "qst_follow_army"),
      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"),
      (eq, "$g_random_army_quest", "qst_deliver_cattle_to_army"),
+     (quest_get_slot, ":quest_target_item", "$g_random_army_quest", slot_quest_target_item),
      (quest_get_slot, ":quest_target_amount", "$g_random_army_quest", slot_quest_target_amount),
      (assign, reg3, ":quest_target_amount"),
+     (str_store_item_name, s4, ":quest_target_item"),
      ],
-   "The army's supplies are dwindling too quickly, {playername}. I need you to bring me {reg3} heads of cattle so I can keep the troops fed. I care very little about where you get them, just bring them to me as soon as you can.", "lord_mission_told_deliver_cattle_to_army",
+   "The army's supplies are dwindling too quickly, {playername}. I need you to bring me {reg3} units of {s4} so I can keep the troops fed. I care very little about where you get them, just bring them to me as soon as you can.", "lord_mission_told_deliver_cattle_to_army",
    [
    ]
    ],
 
-  [anyone|plyr,"lord_mission_told_deliver_cattle_to_army", [], "Very well, I can find you some cattle.", "lord_mission_told_deliver_cattle_to_army_accepted",[]],
+  [anyone|plyr,"lord_mission_told_deliver_cattle_to_army", [], "Very well, I can find you some {s4}.", "lord_mission_told_deliver_cattle_to_army_accepted",[]],
   [anyone|plyr,"lord_mission_told_deliver_cattle_to_army", [], "Sorry, sir, I have other plans.", "lord_mission_told_deliver_cattle_to_army_rejected",[]],
 
   [anyone,"lord_mission_told_deliver_cattle_to_army_accepted", [], "Excellent! You know what to do, {playername}, now get to it. I need that cattle sooner rather than later.", "close_window",
    [
      (call_script, "script_end_quest", "qst_follow_army"),
+     (quest_get_slot, ":quest_target_item", "$g_random_army_quest", slot_quest_target_item),
      (quest_get_slot, ":quest_target_amount", "$g_random_army_quest", slot_quest_target_amount),
      (str_store_troop_name_link, s13, "$g_talk_troop"),
      (assign, reg3, ":quest_target_amount"),
+     (str_store_item_name, s4, ":quest_target_item"),
      (setup_quest_text, "$g_random_army_quest"),
-     (str_store_string, s2, "@{s13} asked you to gather {reg3} heads of cattle and deliver them back to him."),
+     (str_store_string, s2, "@{s13} asked you to gather {reg3} units of {s4} and deliver them back to him."),
      (call_script, "script_start_quest", "$g_random_army_quest", "$g_talk_troop"),
      #TODO: Change this value
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),

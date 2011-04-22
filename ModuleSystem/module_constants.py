@@ -1099,7 +1099,7 @@ village_prod_max = 18
 item_warg_begin = "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"
 
-trade_goods_begin = "itm_smoked_fish"
+trade_goods_begin = "itm_human_meat" #MV: was itm_smoked_fish
 trade_goods_end = "itm_siege_supply"
 food_begin = "itm_human_meat"
 normal_food_begin = "itm_smoked_fish"
@@ -1159,7 +1159,7 @@ khergit_banners_end_offset = 84
 
 # Some constants for merchant invenotries
 merchant_inventory_space = 30
-num_merchandise_goods = 40
+num_merchandise_goods = 3 #MV: was 40
 
 num_max_river_pirates = 25
 num_max_zendar_peasants = 25

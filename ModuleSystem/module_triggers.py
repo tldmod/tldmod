@@ -91,7 +91,7 @@ triggers = [
 # Refresh Horse sellers
   (0.0, 0, 24.0, [], [
     (set_merchandise_modifier_quality,150),
-    (store_sub, ":item_to_price_slot", slot_town_trade_good_prices_begin, trade_goods_begin),
+    #(store_sub, ":item_to_price_slot", slot_town_trade_good_prices_begin, trade_goods_begin),
 
     #(set_item_probability_in_merchandise,"itm_smoked_fish",400),
     #(troop_add_merchandise,"trp_salt_mine_merchant",itp_type_goods,num_merchandise_goods),
@@ -106,6 +106,23 @@ triggers = [
         (troop_get_slot,":subfaction",":cur_center", slot_troop_subfaction),
         (call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
 
+        (assign, ":is_orc_faction", 0),
+        (try_begin),
+          (this_or_next|eq, ":faction", "fac_mordor"),
+          (this_or_next|eq, ":faction", "fac_isengard"),
+          (this_or_next|eq, ":faction", "fac_moria"),
+          (this_or_next|eq, ":faction", "fac_guldur"),
+          (eq, ":faction", "fac_gundabad"),
+          (assign, ":is_orc_faction", 1),
+        (try_end),
+        (assign, ":is_elf_faction", 0),
+        (try_begin),
+          (this_or_next|eq, ":faction", "fac_imladris"),
+          (this_or_next|eq, ":faction", "fac_woodelf"),
+          (eq, ":faction", "fac_lorien"),
+          (assign, ":is_elf_faction", 1),
+        (try_end),
+        (party_get_slot, ":center_str_income", ":cur_center", slot_center_strength_income),
 
         (try_for_range,":item","itm_sumpter_horse", "itm_dale_pike"),
             (item_get_slot,":item_faction_mask",":item",slot_item_faction),
@@ -137,20 +154,33 @@ triggers = [
         (reset_item_probabilities,100),
         (try_for_range, ":cur_goods", trade_goods_begin, trade_goods_end),
 #            (store_add, ":cur_production_slot", ":cur_goods", ":item_to_production_slot"),
-            (store_add, ":cur_price_slot", ":cur_goods", ":item_to_price_slot"),
+            # (store_add, ":cur_price_slot", ":cur_goods", ":item_to_price_slot"),
 #            (party_get_slot, ":cur_production", ":cur_center", ":cur_production_slot"),
-            (party_get_slot, ":cur_price", ":cur_center", ":cur_price_slot"),
+            # (party_get_slot, ":cur_price", ":cur_center", ":cur_price_slot"),
                     
-            (assign, ":cur_probability", 100),
-            (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            #MV: just set to 100 for now, so game can be playable
-            (set_item_probability_in_merchandise,":cur_goods",100),
+            # (assign, ":cur_probability", 100),
+            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
+            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
+            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
+            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
+            
+            #MV: no non-edible trade goods and some factional food
+            (try_begin),
+              (is_between, ":cur_goods", food_begin, food_end),
+              (this_or_next|eq, ":is_orc_faction", 1),
+              (neq, ":cur_goods", "itm_human_meat"),
+              (this_or_next|eq, ":is_elf_faction", 1),
+              (neq, ":cur_goods", "itm_lembas"),
+              (set_item_probability_in_merchandise,":cur_goods",100),
+            (else_try),
+              (set_item_probability_in_merchandise,":cur_goods",0),
+            (try_end),
+            
             #(set_item_probability_in_merchandise,":cur_goods",":cur_probability"),
         (try_end),
-        (troop_add_merchandise,":cur_merchant",itp_type_goods,num_merchandise_goods),
+        (store_div, ":num_goods", ":center_str_income", 5),
+        (val_add, ":num_goods", num_merchandise_goods), #now 3-7
+        (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
         
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
         (troop_sort_inventory, ":cur_merchant"),

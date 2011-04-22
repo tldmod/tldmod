@@ -3687,9 +3687,10 @@ game_menus = [
     [
       ("reject",[],"Send a message you are too busy.",
        [
+           (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 5),
            (change_screen_return),
         ]),
-      ("continue",[],"Continue...",
+      ("continue",[],"Send word you'll join him shortly.",
        [
            (quest_get_slot, ":quest_target_troop", "qst_report_to_army", slot_quest_target_troop),
            (quest_get_slot, ":quest_target_amount", "qst_report_to_army", slot_quest_target_amount),
@@ -8427,7 +8428,7 @@ game_menus = [
   ),
   
   ( "notification_one_side_left",0,
-    "The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious.",
+    "The War of the Ring is over!^^^^^^^The {s1} have defeated all their enemies and stand victorious.",
     "none",
     # $g_notification_menu_var1 - faction_side_*
     [ (assign, ":side", "$g_notification_menu_var1"),
@@ -8587,9 +8588,32 @@ game_menus = [
   ),
   
   ( "notification_faction_defeated",0,
-    "{s1} Defeated^^{s1} is no more!",
+    "{s1} Defeated!^^^^^^^{s1} is no more, defeated by the forces of {s13}!",
     "none",
     [ (str_store_faction_name, s1, "$g_notification_menu_var1"),
+    
+      (assign, ":num_theater_enemies", 0),
+      (str_store_string, s13, "@their enemies"), #defensive
+      (faction_get_slot, ":faction_theater", "$g_notification_menu_var1", slot_faction_home_theater),
+      (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+        (store_relation, ":cur_relation", ":cur_faction", "$g_notification_menu_var1"),
+        (lt, ":cur_relation", 0),
+        (faction_slot_eq, ":cur_faction", slot_faction_home_theater, ":faction_theater"),
+        (try_begin),
+          (eq, ":num_theater_enemies", 0),
+          (str_store_faction_name, s13, ":cur_faction"),
+        (else_try),
+          (eq, ":num_theater_enemies", 1),
+          (str_store_faction_name, s11, ":cur_faction"),
+          (str_store_string, s13, "@{s11} and {s13}"),
+        (else_try),
+          (str_store_faction_name, s11, ":cur_faction"),
+          (str_store_string, s13, "@{s11}, {s13}"),
+        (try_end),
+        (val_add, ":num_theater_enemies", 1),
+      (try_end),
+      
       (set_fixed_point_multiplier, 100),
       (position_set_x, pos0, 65),
       (position_set_y, pos0, 30),
