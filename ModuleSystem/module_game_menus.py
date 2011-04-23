@@ -1535,7 +1535,7 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the damn War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player"), (display_message, "@Added +1000 XP, now wait for the War...", 0x30FFC8),]),
+   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player"), (display_message, "@Added +1000 XP, now wait for the War...", 0x30FFC8),]),
    ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -1566,6 +1566,25 @@ game_menus = [
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
 #   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_wm",[],"Where is my party?",[
+    (try_begin),
+      (call_script, "script_cf_party_is_south_of_white_mountains", "p_main_party"),
+      (display_message, "@The party is south of the White Mountains.", 0x30FFC8),
+    (else_try),
+      (call_script, "script_cf_party_is_north_of_white_mountains", "p_main_party"),
+      (display_message, "@The party is north of the White Mountains.", 0x30FFC8),
+    (else_try),
+      (display_message, "@The party is east of the White Mountains.", 0x30FFC8),
+    (try_end),
+   ]),
+   # ("camp_mvtest_formula",[],"Test line formulas.",[
+    # (call_script, "script_get_line_through_parties", "p_town_hornburg", "p_town_minas_tirith"),
+    # (display_message, "@Debug: Hornburg-MT line: y = {reg0}/{reg1}*x + {reg2}"),
+    # (call_script, "script_get_line_through_parties", "p_town_harad_camp", "p_town_minas_tirith"),
+    # (display_message, "@Debug: Harad-MT line: y = {reg0}/{reg1}*x + {reg2}"),
+    # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
+    # (display_message, "@Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
+   # ]),
    ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),

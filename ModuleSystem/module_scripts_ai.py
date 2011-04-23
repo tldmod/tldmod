@@ -1290,6 +1290,8 @@ ai_scripts = [
         (party_get_slot, ":our_follower_strength", ":party_no", slot_party_follower_strength),
 
         (store_troop_faction, ":faction_no", ":troop_no"),
+        
+        (faction_get_slot, ":faction_theater", ":faction_no", slot_faction_active_theater), #TLD
 
         #find current center
         (assign, ":besieger_party", -1),
@@ -1633,6 +1635,10 @@ ai_scripts = [
           (assign, ":best_besiege_center_score", 0),
           (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
             (party_is_active, ":enemy_walled_center"), #TLD
+            
+            #MV: make sure the center is in the active theater
+            (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
+            
             (party_get_slot, ":other_besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
             (assign, ":besieger_own_faction", 0),
             (try_begin),
@@ -2720,24 +2726,26 @@ ai_scripts = [
    ]),
 
 # script_get_tld_distance
-# Store real walking distance between parties (to handle Gondor towns)
+# Store real walking distance between parties (to handle Gondor towns), because aerial distance across White Mountains can be way off
 # Input: party1, party2
 # Output: reg0 - distance
   ("get_tld_distance",
    [
      (store_script_param, ":party1", 1),
      (store_script_param, ":party2", 2),
-     (try_begin), # one or the other is in SG, but not both (xor)
+     (try_begin), # one is south of WM, the other north of WM
        (assign, ":count", 0),
        (try_begin),
-         (call_script, "script_cf_center_is_in_south_gondor", ":party1"),
+         (call_script, "script_cf_party_is_south_of_white_mountains", ":party1"),
+         (call_script, "script_cf_party_is_north_of_white_mountains", ":party2"),
          (val_add, ":count", 1),
        (try_end),
        (try_begin),
-         (call_script, "script_cf_center_is_in_south_gondor", ":party2"),
+         (call_script, "script_cf_party_is_south_of_white_mountains", ":party2"),
+         (call_script, "script_cf_party_is_north_of_white_mountains", ":party1"),
          (val_add, ":count", 1),
        (try_end),
-       (eq, ":count", 1), #xor
+       (eq, ":count", 1), #xor, but should never be 2
        (store_distance_to_party_from_party, ":dist1", ":party1", "p_town_minas_tirith"),
        (store_distance_to_party_from_party, reg0, ":party2", "p_town_minas_tirith"),
        (val_add, reg0, ":dist1"),
@@ -2750,23 +2758,127 @@ ai_scripts = [
      (try_end),
    ]),
 
-# script_cf_center_is_in_south_gondor
-# List of centers in South Gondor
-# Input: center
-  ("cf_center_is_in_south_gondor",
+# script_cf_party_is_south_of_white_mountains
+# Party is south of White Mountains, i.e. south of the Hornburg-Minas Tirith line, west of Minas Tirith-Haradrim Camp line
+# Input: party
+  ("cf_party_is_south_of_white_mountains",
    [
-     (store_script_param, ":center", 1),
-     (is_between, ":center", centers_begin, centers_end), #optimize
-     (this_or_next|eq, ":center", "p_town_pelargir"),
-     (this_or_next|eq, ":center", "p_town_linhir"),
-     (this_or_next|eq, ":center", "p_town_dol_amroth"),
-     (this_or_next|eq, ":center", "p_town_edhellond"),
-     (this_or_next|eq, ":center", "p_town_lossarnach"),
-     (this_or_next|eq, ":center", "p_town_tarnost"),
-     (this_or_next|eq, ":center", "p_town_erech"),
-     (this_or_next|eq, ":center", "p_town_pinnath_gelin"),
-     (this_or_next|eq, ":center", "p_town_ethring"),
-     (this_or_next|eq, ":center", "p_town_harad_camp"),
-     (eq, ":center", "p_town_umbar_camp"),
+     (store_script_param, ":party", 1),
+     
+     (set_fixed_point_multiplier, 1000), #needed
+     
+     (try_begin),
+       (eq, "$g_tld_line_A1_mul", 0), #if globals not initialized, do it here (globals are for optimization, they are constant)
+       (call_script, "script_get_line_through_parties", "p_town_hornburg", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A1_mul", reg0),
+       (assign, "$g_tld_line_A1_div", reg1),
+       (assign, "$g_tld_line_B1", reg2),
+       (call_script, "script_get_line_through_parties", "p_town_harad_camp", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A2_mul", reg0),
+       (assign, "$g_tld_line_A2_div", reg1),
+       (assign, "$g_tld_line_B2", reg2),
+       (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A3_mul", reg0),
+       (assign, "$g_tld_line_A3_div", reg1),
+       (assign, "$g_tld_line_B3", reg2),
+     (try_end),
+     
+     (party_get_position, pos1, ":party"),
+     (position_get_x, ":xparty", pos1),
+     (position_get_y, ":yparty", pos1),
+     
+     (store_mul, ":yline", ":xparty", "$g_tld_line_A1_mul"),
+     (val_div, ":yline", "$g_tld_line_A1_div"),
+     (val_add, ":yline", "$g_tld_line_B1"), # yline = a1*xparty + b1
+     (gt, ":yparty", ":yline"), # is party south of Hornburg-MT line?
+# (assign, reg0, ":yline"),
+# (assign, reg1, ":yparty"),
+# (display_message, "@Debug: The party is south of Hornburg-MT line. (Line: {reg0}, Party: {reg1})"),
+     
+     (store_mul, ":yline", ":xparty", "$g_tld_line_A2_mul"),
+     (val_div, ":yline", "$g_tld_line_A2_div"),
+     (val_add, ":yline", "$g_tld_line_B2"), # yline = a2*xparty + b2
+     (gt, ":yparty", ":yline"), # is party west of Harad-MT line?
+# (assign, reg0, ":yline"),
+# (assign, reg1, ":yparty"),
+# (display_message, "@Debug: The party is west of Harad-MT line. (Line: {reg0}, Party: {reg1})"),
+     
    ]),
-  ]
+
+# script_cf_party_is_north_of_white_mountains
+# Party is north of White Mountains, i.e. north of the Hornburg-Minas Tirith line, west of Minas Tirith-Morannon line
+# Input: party
+  ("cf_party_is_north_of_white_mountains",
+   [
+     (store_script_param, ":party", 1),
+     
+     (set_fixed_point_multiplier, 1000), #needed
+     
+     (try_begin),
+       (eq, "$g_tld_line_A1_mul", 0), #if globals not initialized, do it here (globals are for optimization, they are constant)
+       (call_script, "script_get_line_through_parties", "p_town_hornburg", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A1_mul", reg0),
+       (assign, "$g_tld_line_A1_div", reg1),
+       (assign, "$g_tld_line_B1", reg2),
+       (call_script, "script_get_line_through_parties", "p_town_harad_camp", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A2_mul", reg0),
+       (assign, "$g_tld_line_A2_div", reg1),
+       (assign, "$g_tld_line_B2", reg2),
+       (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
+       (assign, "$g_tld_line_A3_mul", reg0),
+       (assign, "$g_tld_line_A3_div", reg1),
+       (assign, "$g_tld_line_B3", reg2),
+     (try_end),
+     
+     (party_get_position, pos1, ":party"),
+     (position_get_x, ":xparty", pos1),
+     (position_get_y, ":yparty", pos1),
+     
+     (store_mul, ":yline", ":xparty", "$g_tld_line_A1_mul"),
+     (val_div, ":yline", "$g_tld_line_A1_div"),
+     (val_add, ":yline", "$g_tld_line_B1"), # yline = a1*xparty + b1
+     (lt, ":yparty", ":yline"), # is party north of Hornburg-MT line?
+# (assign, reg0, ":yline"),
+# (assign, reg1, ":yparty"),
+# (display_message, "@Debug: The party is north of Hornburg-MT line. (Line: {reg0}, Party: {reg1})"),
+     
+     (store_mul, ":yline", ":xparty", "$g_tld_line_A3_mul"),
+     (val_div, ":yline", "$g_tld_line_A3_div"),
+     (val_add, ":yline", "$g_tld_line_B3"), # yline = a3*xparty + b3
+     (lt, ":yparty", ":yline"), # is party west of Morannon-MT line?
+# (assign, reg0, ":yline"),
+# (assign, reg1, ":yparty"),
+# (display_message, "@Debug: The party is west of Morannon-MT line. (Line: {reg0}, Party: {reg1})"),
+     
+   ]),
+
+# script_get_line_through_parties
+# Get a line y=Ax+B that passes through both input parties, where A=A_mul/A_div
+# Input: party1, party2
+# Output: reg0=A_mul, reg1=A_div, reg2=B
+  ("get_line_through_parties",
+   [
+     (store_script_param, ":party1", 1),
+     (store_script_param, ":party2", 2),
+     
+     (set_fixed_point_multiplier, 1000), #we need some accuracy here
+     
+     (party_get_position, pos1, ":party1"),
+     (position_get_x, ":x1", pos1),
+     (position_get_y, ":y1", pos1),
+     (party_get_position, pos1, ":party2"),
+     (position_get_x, ":x2", pos1),
+     (position_get_y, ":y2", pos1),
+     
+     #get A=(y2-y1)/(x2-x1)= A_mul/A_div
+     (store_sub, reg0, ":y2", ":y1"), #A_mul
+     (store_sub, reg1, ":x2", ":x1"), #A_div
+     
+     #get B=y1-A*x1= y1-A_mul*x1/A_div
+     (store_mul, reg2, reg0, ":x1"),
+     (val_div, reg2, reg1), #some numerical loss
+     (val_mul, reg2, -1),
+     (val_add, reg2, ":y1"),
+# (display_message, "@Debug: script_get_line_through_parties: y = {reg0}/{reg1}*x + {reg2}"),
+   ]),
+]
