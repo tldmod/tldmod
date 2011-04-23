@@ -1585,6 +1585,7 @@ game_menus = [
     # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
     # (display_message, "@Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
    # ]),
+   ("camp_mvtest_defeat",[],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
    ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),
@@ -1621,6 +1622,28 @@ game_menus = [
    # ]),            
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])            
 ]),
+
+  ("mvtest_destroy_faction",0,
+   "Choose a faction to defeat:",
+   "none",
+   [],
+  [("continue",[],"Back to test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),]
+  +
+  concatenate_scripts([[
+  (
+	"kill_faction",
+	[(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
+     (faction_slot_ge, faction_init[y][0], slot_faction_strength_tmp, 0),
+     (str_store_faction_name, s10, faction_init[y][0]),],
+	"{s10}.",
+	[
+		(faction_set_slot, faction_init[y][0], slot_faction_strength_tmp, -1000),
+        (str_store_faction_name, s10, faction_init[y][0]),
+		(display_message, "@{s10} defeated! Now wait for it...", 0x30FFC8),
+    ]
+  )
+  ]for y in range(len(faction_init)) ])      
+),
 
   ("mvtest_facstr_report",0,
    "{s1}",
@@ -8223,7 +8246,7 @@ game_menus = [
   ),
   
   ( "notification_one_side_left",0,
-    "The War of the Ring is over!^^^^^^^The {s1} have defeated all their enemies and stand victorious.",
+    "The War of the Ring is over!^^^^^^^The {s1} have defeated all their enemies and stand victorious!",
     "none",
     # $g_notification_menu_var1 - faction_side_*
     [ (assign, ":side", "$g_notification_menu_var1"),
@@ -8235,7 +8258,7 @@ game_menus = [
       (else_try),
         (eq, ":side", faction_side_eye),
         (assign, ":faction", "fac_mordor"),
-        (str_store_string, s1, "@Forces of Morder"),
+        (str_store_string, s1, "@Forces of Mordor"),
       (else_try),
         #(eq, ":side", faction_side_hand),
         (assign, ":faction", "fac_isengard"),
@@ -8253,7 +8276,70 @@ game_menus = [
         ]),
      ]
   ),
-  
+
+  ( "notification_total_defeat",0,
+    "The War of the Ring is over for you!^^^^^^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
+    "none",
+    # $g_notification_menu_var1 - faction_side_*
+    [ (assign, ":side", "$g_notification_menu_var1"),
+      
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":faction", "fac_gondor"),
+        (str_store_string, s1, "@Forces of Good"),
+      (else_try),
+        (eq, ":side", faction_side_eye),
+        (assign, ":faction", "fac_mordor"),
+        (str_store_string, s1, "@Forces of Mordor"),
+      (else_try),
+        #(eq, ":side", faction_side_hand),
+        (assign, ":faction", "fac_isengard"),
+        (str_store_string, s1, "@Forces of Isengard"),
+      (try_end),
+      
+      (set_fixed_point_multiplier, 100),
+      (position_set_x, pos0, 65),
+      (position_set_y, pos0, 30),
+      (position_set_z, pos0, 170),
+      (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
+    ],
+    [ ("continue",[],"Continue...",
+       [(change_screen_return),
+        ]),
+     ]
+  ),
+
+  ( "notification_join_another_faction",0,
+    "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War - who would you like to join:",
+    "none",
+    # $g_notification_menu_var1 - player side
+    [ (str_store_faction_name, s11, "$players_kingdom"),
+      (set_fixed_point_multiplier, 100),
+      (position_set_x, pos0, 65),
+      (position_set_y, pos0, 30),
+      (position_set_z, pos0, 170),
+      (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$players_kingdom", pos0),
+    ],
+  concatenate_scripts([[
+  (
+	"join_faction",
+	[(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
+     (faction_slot_eq, faction_init[y][0], slot_faction_side, "$g_notification_menu_var1"),
+     (str_store_faction_name, s10, faction_init[y][0]),],
+	"{s10}.",
+	[
+        (call_script, "script_player_join_faction", faction_init[y][0]),
+        (str_store_faction_name, s10, "$players_kingdom"),
+        (display_message, "@You have joined {s10}!"),
+		(change_screen_return),
+    ]
+  )
+  ]for y in range(len(faction_init)) ])
+  # +
+    # [ ("continue",[],"Continue...", [(change_screen_return)]),
+    # ]
+  ),
+
   ( "notification_oath_renounced_faction_defeated",0,
     "Your Old Faction was Defeated^^You won the battle against {s1}! This ends your struggle which started after you renounced your oath to them.",
     "none",

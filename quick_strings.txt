@@ -1,4 +1,4 @@
-743
+745
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -391,6 +391,7 @@ qstr_The_party_is_south_o The_party_is_south_of_the_White_Mountains.
 qstr_The_party_is_north_o The_party_is_north_of_the_White_Mountains.
 qstr_The_party_is_east_of The_party_is_east_of_the_White_Mountains.
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
+qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
@@ -556,8 +557,9 @@ qstr___{reg1}_Resource_pt _({reg1}_Resource_pts._per_night)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
 qstr_Forces_of_Good Forces_of_Good
-qstr_Forces_of_Morder Forces_of_Morder
+qstr_Forces_of_Mordor Forces_of_Mordor
 qstr_Forces_of_Isengard Forces_of_Isengard
+qstr_You_have_joined_{s10 You_have_joined_{s10}!
 qstr_you you
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}

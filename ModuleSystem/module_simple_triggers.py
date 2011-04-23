@@ -2320,6 +2320,7 @@ simple_triggers = [
                 (store_faction_of_party, ":besieger_faction", ":besieger_party"),
                 (party_slot_ge, ":cur_party", slot_center_is_besieged_by, 1),
                 (call_script, "script_give_center_to_faction", ":cur_party", ":besieger_faction"),
+                (call_script, "script_lift_siege", ":cur_party", 0),
               (else_try),
                 # if not give it to the best+closest faction in the theater
                 (assign, ":closest_faction", ":best_faction"),
@@ -2434,8 +2435,25 @@ simple_triggers = [
           (assign, "$players_oath_renounced_against_kingdom", 0),
           (call_script, "script_add_notification_menu", "mnu_notification_oath_renounced_faction_defeated", ":cur_kingdom", 0),
         (try_end),
-   #This menu must be at the end because faction banner will change after this menu if the player's supported pretender's original faction is cur_kingdom
+   #This menu must be at the end because faction banner will change after this menu if the player's supported pretender's original faction is cur_kingdom - but not in TLD!
         (call_script, "script_add_notification_menu", "mnu_notification_faction_defeated", ":cur_kingdom", 0),
+        #If the player's home faction was defeated, offer the player to join another faction of the same side
+        (try_begin),
+          (eq, "$players_kingdom", ":cur_kingdom"),
+          (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+          (assign, ":game_over", 1),
+          (try_for_range, ":allied_kingdom", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":allied_kingdom", slot_faction_state, sfs_active),
+            (faction_slot_eq, ":allied_kingdom", slot_faction_side, ":player_side"),
+            (assign, ":game_over", 0),
+          (try_end),
+          (try_begin),
+            (eq, ":game_over", 1), #no living factions of the player's side remain - total defeat
+            (call_script, "script_add_notification_menu", "mnu_notification_total_defeat", ":player_side", 0),
+          (else_try), # some allies left, offer player to join
+            (call_script, "script_add_notification_menu", "mnu_notification_join_another_faction", ":player_side", 0),
+          (try_end),
+        (try_end),
       (try_end),
       (try_begin),
         (eq, ":faction_removed", 1),

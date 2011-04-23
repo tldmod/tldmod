@@ -293,7 +293,8 @@ scripts = [
  # gives to player the income of his rank
   ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(faction_get_slot, ":rank", ":fac", slot_faction_rank ),
+        (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
+		(faction_get_slot, ":rank", ":fac", slot_faction_rank),
 		(val_div, ":rank", 100), 
 		(gt, ":rank", 0),
 		(call_script, "script_get_rank_title", ":fac"),
