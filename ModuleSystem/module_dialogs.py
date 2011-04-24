@@ -3157,7 +3157,7 @@ dialogs = [
      (str_store_party_name, s14, "$qst_scout_waypoints_wp_2"),
      (str_store_party_name, s15, "$qst_scout_waypoints_wp_3"),
      ],
-   "{playername}, I need a volunteer to scout the area. We're sorely lacking on information,\
+   "{playername}, I need a volunteer to scout the area. We're sorely lacking in information,\
  and I simply must have a better picture of the situation before we can proceed.\
  I want you to go to {s13}, {s14} and {s15} and report back whatever you find.", "lord_mission_told_scout_waypoints",
    [
@@ -3166,7 +3166,7 @@ dialogs = [
   [anyone|plyr, "lord_mission_told_scout_waypoints", [], "You've found your volunteer, sir.", "lord_mission_told_scout_waypoints_accepted",[]],
   [anyone|plyr, "lord_mission_told_scout_waypoints", [], "I fear I must decline.", "lord_mission_told_scout_waypoints_rejected",[]],
 
-  [anyone,"lord_mission_told_scout_waypoints_accepted", [], "Good {man/lass}! Simply pass near {s13}, {s14} and {s15} and check out what's there. Make a note of anything you find and return to me as soon as possible.", "close_window",
+  [anyone,"lord_mission_told_scout_waypoints_accepted", [], "Good! Simply pass near {s13}, {s14} and {s15} and check out what's there. Make a note of anything you find and return to me as soon as possible.", "close_window",
    [
      (call_script, "script_end_quest", "qst_follow_army"),
      (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -5771,7 +5771,7 @@ dialogs = [
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_hunt_down_fugitive")],
    "I have something you could help with, an issue with the lawless villain known as {s4}. \
  He murdered one of my men and has been on the run from his judgment ever since.\
- I can't let him get away with avoiding justice, so I've put a bounty of 300 denars on his head.\
+ I can't let him get away with avoiding justice, so I've put a bounty of 300 RPs on his head.\
  Friends of the murdered man reckon that this assassin may have taken refuge with his kinsmen at {s3}.\
  You might be able to hunt him down and give him what he deserves, and claim the bounty for yourself.", "lord_mission_hunt_down_fugitive_told",
    [

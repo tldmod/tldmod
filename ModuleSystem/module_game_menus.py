@@ -7233,6 +7233,7 @@ game_menus = [
 	   ("town_castle",[
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq,"$entry_to_town_forbidden",0),
+          (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
 #          (party_slot_eq, "$current_town", slot_castle_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
           ],"Go to the castle.",
        [

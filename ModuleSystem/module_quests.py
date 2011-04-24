@@ -139,7 +139,7 @@ quests = [
   "None"
   ),
 # Note : This is defined as the first army quest in module_constants.py:
- ("deliver_cattle_to_army", "Deliver {reg3} Heads of Cattle to {s13}", qf_random_quest,
+ ("deliver_cattle_to_army", "Deliver {reg3} units of food to {s13}", qf_random_quest,
   "None"
   ),
  ("join_siege_with_army", "Join the Siege of {s14}", qf_random_quest,
