@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1260
+ 1261
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3860,5 +3860,9 @@ spr_rohan_horn 0 0 horn 0 0
 
 
 spr_tunnel_stalactite 0 0 tunnel_stalactite bo_tunnel_stalactite 0
+
+
+spr_fog_scene 16384 0 f0_pointer 0 1
+-40.000000  3 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1965 2 1008806316530991152 1 
 
 

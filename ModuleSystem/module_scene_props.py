@@ -1974,5 +1974,8 @@ scene_props = [
 ("rock_elf", 0, "rock_elf", "bo_rock_elf", []),
 ("rohan_horn", 0, "horn", "0", []),
 ("tunnel_stalactite", 0, "tunnel_stalactite", "bo_tunnel_stalactite", []),
-
+("fog_scene",sokf_invisible,"f0_pointer","0",[(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+	(prop_instance_get_position, pos1, ":instance_no"),
+	(particle_system_add_new,"psys_scene_fog",pos1)]),]),
 ]

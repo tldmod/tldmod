@@ -1580,7 +1580,7 @@ center_list = [
 	    [-1, "trp_smith_urcamp", "trp_town_30_horse_merchant", "trp_no_troop", "pt_isengard_reinf_a",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_scout","trp_uruk_hai_of_isengard"], 
 		["icon_mfc_isengard"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_low, 1),
 
-	("p_town_caras_galadhon", ["scn_caras_galadhon_center", "scn_elf_castle", "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
+	("p_town_caras_galadhon", ["scn_caras_galadhon_center", -1, "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
 	    ["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_town_31_horse_merchant", "trp_elder_cgaladhon", "pt_lorien_reinf_a", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 		["icon_mfc_lorien"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0),
 	("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1],
@@ -1589,7 +1589,7 @@ center_list = [
 	("p_town_cerin_amroth", ["scn_cerin_amroth_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_camroth", "trp_town_33_horse_merchant", "trp_elder_camroth", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 		["icon_mfc_lorien"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0),
-	("p_town_thranduils_halls", ["scn_thranduils_halls_center", "scn_rohan_castle", "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
+	("p_town_thranduils_halls", ["scn_thranduils_halls_center", "scn_thranduil_hall_room", "scn_elf_prison","scn_elf_tavern","scn_elf_arena"],
 	    ["trp_barman_thalls", "trp_town_34_weaponsmith", "trp_town_34_horse_merchant", "trp_elder_thalls", "pt_woodelf_reinf_a", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
 		["icon_mfc_woodelf"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 0),
 	("p_town_woodelf_camp", ["scn_woodelf_camp_center", -1, -1,-1,-1],

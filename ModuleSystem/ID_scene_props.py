@@ -1258,3 +1258,4 @@ spr_door_iron = 1256
 spr_rock_elf = 1257
 spr_rohan_horn = 1258
 spr_tunnel_stalactite = 1259
+spr_fog_scene = 1260

@@ -824,7 +824,7 @@ scn_small_ford small_ford 1280 none none 0.000000 0.000000 200.000000 200.000000
   0 
   0 
  outer_terrain_plain 
-scn_hornburg_castle hornburg_castle 1 dungeon_entry_b bo_dungeon_entry_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_hornburg_castle hornburg_castle 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000240002800000691a400003efe00004b34000059be 
   0 
   0 
  0 

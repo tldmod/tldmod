@@ -812,3 +812,7 @@ itm_ent_body = 810
 itm_ent_head_helm = 811
 itm_ent_feet_boots = 812
 itm_ent_hands = 813
+itm_galadriel = 814
+itm_empty_hands = 815
+itm_empty_legs = 816
+itm_empty_head = 817

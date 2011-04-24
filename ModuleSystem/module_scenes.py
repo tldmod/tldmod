@@ -269,7 +269,7 @@ scenes = [
   ("battlefield10",sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("small_ford"   ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 
-  ("hornburg_castle",sf_indoors,"dungeon_entry_b","bo_dungeon_entry_b",(-100,-100),(100,100),-100,"0",[],[]),
+  ("hornburg_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000240002800000691a400003efe00004b34000059be",[],[]),
 
   ]
 

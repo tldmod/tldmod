@@ -1151,4 +1151,8 @@ items =[
 ["ent_head_helm","Ent_Head",[("ent_head",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(40)|body_armor(55)|leg_armor(55)|difficulty(40),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(30),0],
+["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,130,weight(225)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
+["empty_hands","empty hands",[("0",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(0),0],
+["empty_legs","empty legs",[("0",0)],itp_type_foot_armor|itp_unique,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
+["empty_head","empty head",[("0",0)],itp_type_head_armor|itp_unique|itp_covers_head,0,130,weight(225)|head_armor(0)|difficulty(0),0],
 ]

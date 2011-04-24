@@ -820,4 +820,18 @@ particle_systems = [
      0,                       #rotation speed
      0.5                        #rotation damping
     ),
+	
+    ("scene_fog", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size , "prt_mesh_dust_1",
+     1, 30, 1.5, 0.01, 30, 4,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.1), (1, 0.0),        #alpha keys
+     (0.5, 0.5), (1, 0.5),      #red keys
+     (0.5, 0.5), (1, 0.5),      #green keys
+     (0.5, 0.5), (1, 0.5),      #blue keys
+     (0, 20),   (1, 30),   #scale keys
+     (25, 25, 1),           #emit box size
+     (0, 0.01, 0),                 #emit velocity
+     2,                       #emit dir randomness
+     20,                       #rotation speed
+     1                        #rotation damping
+    ),
 ]
