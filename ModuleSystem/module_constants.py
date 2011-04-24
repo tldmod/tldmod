@@ -1530,7 +1530,7 @@ center_list = [
 	("p_town_aldburg", ["scn_aldburg_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],
 	    ["trp_barman_aldburg", "trp_smith_aldburg", "trp_town_15_horse_merchant", "trp_elder_aldburg", "pt_rohan_reinf_a", "trp_knight_1_9", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
 		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,3,2,5,2,8], str_income_med, garrison_limit_med, 0),
-	("p_town_hornburg", ["scn_hornburg_center", -1, "scn_rohan_prison","scn_rohan_tavern", -1],
+	("p_town_hornburg", ["scn_hornburg_center", "scn_hornburg_castle", "scn_rohan_prison","scn_rohan_tavern", -1],
 	    ["trp_barman_hornburg", "trp_smith_hornburg", "trp_town_16_horse_merchant", "trp_elder_hornburg", "pt_rohan_reinf_a", "trp_knight_1_10", "trp_rohan_youth", "trp_walker_man_rohan_t", "trp_guardsman_of_rohan", "trp_footman_of_rohan"], 
 		["icon_mfc_rohan"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[3,8,4,6,4,5], str_income_high, garrison_limit_high, 0),
 	("p_town_east_emnet", ["scn_east_emnet_center", "scn_rohan_castle_a", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena"],

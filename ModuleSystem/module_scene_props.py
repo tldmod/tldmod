@@ -1963,5 +1963,16 @@ scene_props = [
 ("tunnel_crystal4",0,"crystal4","0", []),
 ("tunnel_crystal5",0,"crystal5","0", []),
 ("tunnel_crystal6",0,"crystal6","0", []),
+("smith_anvil",0,"anvil","0",[]),
+("smith_hammer",0,"smith_hammer","0",[]),
+("book_open",0,"JIKBookOpen","0",[]),
+("book_closed",0,"JIKBookClosed","0",[]),
+("book_open",0,"big_book","0",[]),
+("book_scroll",0,"quenya_scroll","0",[]),
+("prop_cage_wheeled", 0, "wheeled_cage", "bo_wheeled_cage", []),
+("door_iron", 0, "door_iron", "bo_door_iron", []),
+("rock_elf", 0, "rock_elf", "bo_rock_elf", []),
+("rohan_horn", 0, "horn", "0", []),
+("tunnel_stalactite", 0, "tunnel_stalactite", "bo_tunnel_stalactite", []),
 
 ]

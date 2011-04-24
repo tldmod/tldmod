@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1249
+ 1260
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3827,5 +3827,38 @@ spr_tunnel_crystal5 0 0 crystal5 0 0
 
 
 spr_tunnel_crystal6 0 0 crystal6 0 0
+
+
+spr_smith_anvil 0 0 anvil 0 0
+
+
+spr_smith_hammer 0 0 smith_hammer 0 0
+
+
+spr_book_open 0 0 JIKBookOpen 0 0
+
+
+spr_book_closed 0 0 JIKBookClosed 0 0
+
+
+spr_book_open 0 0 big_book 0 0
+
+
+spr_book_scroll 0 0 quenya_scroll 0 0
+
+
+spr_prop_cage_wheeled 0 0 wheeled_cage bo_wheeled_cage 0
+
+
+spr_door_iron 0 0 door_iron bo_door_iron 0
+
+
+spr_rock_elf 0 0 rock_elf bo_rock_elf 0
+
+
+spr_rohan_horn 0 0 horn 0 0
+
+
+spr_tunnel_stalactite 0 0 tunnel_stalactite bo_tunnel_stalactite 0
 
 
