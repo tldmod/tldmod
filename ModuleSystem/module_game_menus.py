@@ -920,7 +920,7 @@ game_menus = [
     
     [("custom_battle_go",[],"Start.",
        [(try_begin),(eq, "$g_custom_battle_scenario", 5),(set_jump_mission,"mt_custom_battle_5"),
-         (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),
+         (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),(rest_for_hours,8,1000,0),
 		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),
@@ -928,7 +928,7 @@ game_menus = [
         (try_end),
         (jump_to_menu, "mnu_custom_battle_end"),
         (jump_to_scene,"$g_custom_battle_scene"),
-        (change_screen_mission),
+		(change_screen_mission),
        ]),
       ("leave_custom_battle_2",[],"Cancel.", [(jump_to_menu, "mnu_start_game_3"), ]),
     ]

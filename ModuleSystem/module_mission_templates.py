@@ -138,24 +138,20 @@ common_init_deathcam = (0, 0, ti_once, [], [(assign, "$tld_camera_on", 0)])
 
 common_start_deathcam = (
    0, 4, ti_once, # 4 seconds delay before the camera activates
-   [
-     (main_hero_fallen),
+   [ (main_hero_fallen),
      (eq, "$tld_camera_on", 0),
    ],
-   [
-      (assign, "$tld_camera_on", 1),
+   [ (assign, "$tld_camera_on", 1),
    ]
 )
 
 common_move_forward_deathcam = (
    0, 0, 0,
-   [
-      (eq, "$tld_camera_on", 1),
+   [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_forward),
       (game_key_is_down, gk_move_forward),
    ],
-   [
-      (get_player_agent_no, ":player_agent"),
+   [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_y, pos1, 10),
       (agent_set_position, ":player_agent", pos1),
@@ -164,13 +160,11 @@ common_move_forward_deathcam = (
 
 common_move_backward_deathcam = (
    0, 0, 0,
-   [
-      (eq, "$tld_camera_on", 1),
+   [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_backward),
       (game_key_is_down, gk_move_backward),
    ],
-   [
-      (get_player_agent_no, ":player_agent"),
+   [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_y, pos1, -10),
       (agent_set_position, ":player_agent", pos1),
@@ -179,13 +173,11 @@ common_move_backward_deathcam = (
 
 common_move_left_deathcam = (
    0, 0, 0,
-   [
-      (eq, "$tld_camera_on", 1),
+   [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_left),
       (game_key_is_down, gk_move_left),
    ],
-   [
-      (get_player_agent_no, ":player_agent"),
+   [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_x, pos1, -10),
       (agent_set_position, ":player_agent", pos1),
@@ -194,13 +186,11 @@ common_move_left_deathcam = (
 
 common_move_right_deathcam = (
    0, 0, 0,
-   [
-      (eq, "$tld_camera_on", 1),
+   [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_right),
       (game_key_is_down, gk_move_right),
    ],
-   [
-      (get_player_agent_no, ":player_agent"),
+   [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_x, pos1, 10),
       (agent_set_position, ":player_agent", pos1),
@@ -653,13 +643,12 @@ formations_triggers = [
 	]),
 		
 	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_advance)], [(call_script, "script_player_order_formations", mordr_advance)]),
-		
-	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_fall_back)], [(call_script, "script_player_order_formations", mordr_fall_back)]),
-		
-	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_spread_out)], [(call_script, "script_player_order_formations", mordr_spread_out)]),
-		
-	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_stand_closer)], [(call_script, "script_player_order_formations", mordr_stand_closer)]),
 
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_fall_back)], [(call_script, "script_player_order_formations", mordr_fall_back)]),
+
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_spread_out)], [(call_script, "script_player_order_formations", mordr_spread_out)]),
+
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_stand_closer)], [(call_script, "script_player_order_formations", mordr_stand_closer)]),
 ]
 #end formations triggers
 
@@ -733,7 +722,7 @@ mission_templates = [
 	 (31,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      ],
     [(1, 0, ti_once, [], [(add_reinforcements_to_entry,31,5),]),
-     (4, 0, ti_once, [], [
+     (4, 0, ti_once, [], [ #attempt to show running orcs
 	         (entry_point_get_position,pos1,0),
 			 (try_for_agents,":agent"),
 			    (agent_get_entry_no,":e",":agent"),
@@ -899,35 +888,22 @@ mission_templates = [
 
       common_inventory_not_available,
       
-      (ti_tab_pressed, 0, 0,
-       [
-         (display_message, "@Cannot leave now."),
-         ], []),
-      (ti_on_leave_area, 0, 0,
-       [
-         (try_begin),
-           (eq, "$g_defending_against_siege", 0),
-           (assign,"$g_leave_town",1),
-         (try_end),
-         ], []),
-
+      (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
+      (ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)], []),
       (0, 0, ti_once, [],
-       [
-         (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+       [ (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
          (set_party_battle_mode),
          (party_slot_eq, "$current_town", slot_party_type, spt_town),
          (call_script, "script_town_init_doors", 0),
         ]),
 
       (1, 4, ti_once,
-       [
-         (store_mission_timer_a,":cur_time"),
+       [ (store_mission_timer_a,":cur_time"),
          (ge, ":cur_time", 5),
          (this_or_next|main_hero_fallen),
          (num_active_teams_le,2) #MV: was 1
          ],
-       [
-         (try_begin),
+       [ (try_begin),
            (main_hero_fallen),
            (jump_to_menu, "mnu_town_bandits_failed"),
          (else_try),
@@ -980,10 +956,8 @@ mission_templates = [
 		common_battle_check_victory_condition,
 		common_battle_victory_display,
 
-		 
-		  (1, 4, ti_once, [(main_hero_fallen)],
-          [
-              (assign, "$pin_player_fallen", 1),
+	  (1, 4, ti_once, [(main_hero_fallen)],
+        [     (assign, "$pin_player_fallen", 1),
               (str_store_string, s5, "str_retreat"),
               (call_script, "script_simulate_retreat", 10, 20),
               (assign, "$g_battle_result", -1),
@@ -992,17 +966,15 @@ mission_templates = [
               (finish_mission,0)]),
 
       #common_battle_inventory,
-
       common_battle_order_panel,
       common_battle_order_panel_tick,
    ]
   ),
   
-  
+
   ( "lead_charge",mtf_battle_mode,charge,
     "You lead your men to battle.",
-	[
-     (1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,12,[]),
+	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,12,[]),
      (0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
@@ -1100,7 +1072,6 @@ mission_templates = [
 
       common_battle_inventory,
 
-
       #AI Tiggers
       (0, 0, ti_once, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],
        [(call_script, "script_select_battle_tactic"),
@@ -1123,21 +1094,17 @@ mission_templates = [
   ),
 
   #TLD - assasins attack begin (Kolba)
-
-  (
-	"assasins_attack",mtf_battle_mode,-1,
+  ( "assasins_attack",mtf_battle_mode,-1,
 	"assasins",
-	[
-		(0,mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-		(1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
+	[(0,mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+	 (1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
 	],
         tld_common_battle_scripts+[
 		common_music_situation_update,
 		common_battle_check_friendly_kills,
 		common_battle_victory_display,
 		common_battle_inventory,
-		
-		
+			
 		#if we are going to escape
 		(ti_question_answered,0,0,[],[
 			(store_trigger_param_1,":answer"),
@@ -1156,9 +1123,6 @@ mission_templates = [
 			(finish_mission,0),
 		]),
 		
-		
-		#TAB key
-		#Determines what happens after pressing TAB key
 		(ti_tab_pressed,0,0,[],[
 			(try_begin),#If the battle is won, missions ends.
 				(eq,"$battle_won",1),
@@ -1190,12 +1154,10 @@ mission_templates = [
 		]),
 	],
 ),
-
 #Kolba end
 
 
-(
-    "village_center",0,-1,
+(   "village_center",0,-1,
     "village center",
     [(0,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
@@ -1269,44 +1231,6 @@ mission_templates = [
     ],
   ),
 
-  # ( "village_training", mtf_arena_fight, -1,
-    # "village_training",
-    # [(2,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
-     # (4,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
-     # ],
-    # [
-      # (ti_before_mission_start, 0, 0, [],
-       # [
-         # (assign, "$g_train_peasants_against_bandits_training_succeeded", 0),
-         # (call_script, "script_change_banners_and_chest"),
-         # ]),
-      
-      # common_arena_fight_tab_press,
-      
-      # (ti_question_answered, 0, 0, [],
-       # [
-         # (store_trigger_param_1,":answer"),
-         # (eq,":answer",0),
-         # (finish_mission),
-         # ]),
-      
-      # common_inventory_not_available,
-
-      # (1, 4, ti_once,
-       # [
-         # (this_or_next|main_hero_fallen),
-         # (num_active_teams_le, 1)
-         # ],
-       # [
-         # (try_begin),
-           # (neg|main_hero_fallen),
-           # (assign, "$g_train_peasants_against_bandits_training_succeeded", 1),
-         # (try_end),
-         # (finish_mission),
-         # ]),
-      # ],
-    # ),
-  
   ( "visit_town_castle",0,-1,
     "You enter the halls of the lord.",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons|af_override_head,0,1,[]),
@@ -1318,17 +1242,10 @@ mission_templates = [
      (25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),(28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
     [
-      (ti_on_agent_spawn, 0, 0, [],
-       [
-         (store_trigger_param_1, ":agent_no"),
-         (call_script, "script_init_town_agent", ":agent_no"),
-         ]),
-      (ti_before_mission_start, 0, 0, [],
-       [
-         (call_script, "script_change_banners_and_chest"),
-         ]),
+      (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
+      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest")]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
-      (ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
+      (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
       (0, 0, ti_once, [], [
         #(set_fog_distance, 150, 0xFF736252)
         (try_begin),
@@ -1341,71 +1258,6 @@ mission_templates = [
     ],
   ),
   
-  # ( "back_alley_kill_local_merchant",mtf_arena_fight,-1,
-    # "You enter the back alley",
-    # [
-      # (0,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      # (3,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-    # ],
-    # tld_common_battle_scripts+[
-      # common_inventory_not_available,
-      # (ti_tab_pressed, 0, 0, [(display_message,"@Cannot leave now.")], []),
-      # (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
-
-      # (0, 0, ti_once, [],
-       # [
-         # (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
-         # ]),
-
-      # (0, 0, ti_once, [
-          # (store_mission_timer_a,":cur_time"),
-          # (ge,":cur_time",1), 
-          # (assign, ":merchant_hp", 0),
-          # (assign, ":player_hp", 0),
-          # (assign, ":merchant_hp", 0),
-          # (assign, ":merchant_agent", -1),
-          # (assign, ":player_agent", -1),
-          # (try_for_agents, ":agent_no"),
-            # (agent_get_troop_id, ":troop_id", ":agent_no"),
-            # (try_begin),
-              # (eq, ":troop_id", "trp_local_merchant"),
-              # (store_agent_hit_points, ":merchant_hp",":agent_no"),
-              # (assign, ":merchant_agent", ":agent_no"),
-            # (else_try),
-              # (eq, ":troop_id", "trp_player"),
-              # (store_agent_hit_points, ":player_hp",":agent_no"),
-              # (assign, ":player_agent", ":agent_no"),
-            # (try_end),
-          # (try_end),
-          # (ge, ":player_agent", 0),
-          # (ge, ":merchant_agent", 0),
-          # (agent_is_alive, ":player_agent"),
-          # (agent_is_alive, ":merchant_agent"),
-          # (is_between, ":merchant_hp", 1, 30),
-          # (gt, ":player_hp", 50),
-          # (start_mission_conversation, "trp_local_merchant"),
-          # ], []),
-      
-      # (1, 4, ti_once, [(assign, ":not_alive", 0),
-                       # (try_begin),
-                         # (call_script, "script_cf_troop_agent_is_alive", "trp_local_merchant"),
-                       # (else_try),
-                         # (assign, ":not_alive", 1),
-                       # (try_end),
-                       # (this_or_next|main_hero_fallen),
-                       # (eq, ":not_alive", 1)],
-       # [
-           # (try_begin),
-             # (main_hero_fallen),
-             # (call_script, "script_fail_quest", "qst_kill_local_merchant"),
-           # (else_try),
-             # (call_script, "script_change_player_relation_with_center", "$current_town", -4),
-             # (call_script, "script_succeed_quest", "qst_kill_local_merchant"),
-           # (try_end),
-           # (finish_mission),
-           # ]),
-    # ],
-  # ),
 
   ( "village_attack_bandits",mtf_battle_mode,charge,
     "You lead your men to battle.",
@@ -1462,11 +1314,9 @@ mission_templates = [
   ),
 
 
-
   ( "village_raid",mtf_battle_mode,charge,
     "You lead your men to battle.",
-    [
-     (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,12,[]),
+    [(3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,12,[]),
      (3,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),

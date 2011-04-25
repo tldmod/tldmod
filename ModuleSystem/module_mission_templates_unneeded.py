@@ -376,9 +376,9 @@ common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
     # (finish_mission,0),
     ])
 
-common_siege_init_ai_and_belfry = (0, 0, ti_once,[(call_script, "script_siege_init_ai_and_belfry")],[])
-common_siege_move_belfry = (0, 0, ti_once,[(call_script, "script_cf_siege_move_belfry")], [])
-common_siege_rotate_belfry = (0, 2, ti_once,[(call_script, "script_cf_siege_rotate_belfry_platform")],[(assign, "$belfry_positioned", 3)])
+common_siege_init_ai_and_belfry   = (0, 0, ti_once,[(call_script, "script_siege_init_ai_and_belfry")],[])
+common_siege_move_belfry          = (0, 0, ti_once,[(call_script, "script_cf_siege_move_belfry")], [])
+common_siege_rotate_belfry        = (0, 2, ti_once,[(call_script, "script_cf_siege_rotate_belfry_platform")],[(assign, "$belfry_positioned", 3)])
 common_siege_assign_men_to_belfry = (0, 0, ti_once,[(call_script, "script_cf_siege_assign_men_to_belfry")], [])
 
 

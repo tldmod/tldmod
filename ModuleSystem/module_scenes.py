@@ -215,7 +215,7 @@ scenes = [
   ("battle_scene_mountain_forest_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"),
   ("aw_tomb"              ,sf_indoors,"aw_tomb"                       , "bo_aw_tomb"                  , (-100,-100),(240,240),-100,"0",[],[]),
   ("dol_amroth_castle"    ,sf_indoors,"interior_castle_dolamroth"     , "bo_interior_castle_dolamroth", (-100,-100),(100,100),-100,"0",[],[]),
-  ("isengard_castle" ,sf_indoors,"interior_throneroom_isengard_a", "bo_interior_throneroom_isengard_a", (-100,-100),(100,100),-100,"0",[],[]),
+  ("isengard_castle"      ,sf_indoors,"interior_throneroom_isengard_a", "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],[]),
   ("gondor_castle_a"      ,sf_indoors,"interior_castle_gondor_a"      , "bo_interior_castle_gondor_a" , (-100,-100),(100,100),-100,"0",[],[]),
   ("gondor_castle_b"      ,sf_indoors,"interior_castle_gondor_b"      , "bo_interior_castle_gondor_b" , (-100,-100),(100,100),-100,"0",[],[]),
   ("gondor_castle_c"      ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c" , (-100,-100),(100,100),-100,"0",[],[]),

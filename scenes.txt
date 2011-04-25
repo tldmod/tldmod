@@ -648,7 +648,7 @@ scn_dol_amroth_castle dol_amroth_castle 1 interior_castle_dolamroth bo_interior_
   0 
   0 
  0 
-scn_isengard_castle isengard_castle 1 interior_throneroom_isengard_a bo_interior_throneroom_isengard_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_isengard_castle isengard_castle 1 interior_throneroom_isengard_a bo_interior_castle_gondor_d -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
  0 

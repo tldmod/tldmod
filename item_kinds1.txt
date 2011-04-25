@@ -30,16 +30,16 @@ itemsfile version 2
  itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  34144267 0 200 0 1.250000 10 70 0 0 0 0 0 0 0 70 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  34144267 0 200 0 1.250000 10 90 0 0 0 0 0 0 0 70 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_dried_meat Dried_Meat Dried_Meat 1  smoked_meat 0  34144267 0 72 0 15.000000 100 70 0 0 0 0 0 0 0 50 0 0
+ itm_dried_meat Dried_Meat Dried_Meat 1  smoked_meat 0  34144267 0 72 0 15.000000 100 60 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_cattle_meat Beef Beef 1  raw_meat 0  34144267 0 103 0 20.000000 100 80 0 0 0 0 0 0 0 70 0 0
+ itm_cattle_meat Beef Beef 1  raw_meat 0  34144267 0 103 0 20.000000 100 70 0 0 0 0 0 0 0 70 0 0
 0
 
  itm_grain Wheat Wheat 1  wheat_sack 0  33619979 0 77 0 50.000000 110 40 0 0 0 0 0 0 0 50 0 0
@@ -264,16 +264,16 @@ itemsfile version 2
  itm_gondor_auxila_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  flying_missile 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_khergit_arrows Barbed_Arrows Barbed_Arrows 3  rohan_arrow2 0  flying_missile 2305843009213693952  rohan_quiver 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 3 0
+ itm_khergit_arrows Barbed_Arrows Barbed_Arrows 3  rohan_arrow2 0  flying_missile 2305843009213693952  rohan_quiver 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  flying_missile 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 3 0
+ itm_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  flying_missile 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
  itm_harad_arrows Haradrim_Arrows Haradrim_Arrows 3  harad_arrow 0  flying_missile 2305843009213693952  harad_quiver 3458764513820540928  65541 1342177280 124 0 3.000000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
+ itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 2 0
 0
 
  itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
@@ -288,7 +288,7 @@ itemsfile version 2
  itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  flying_missile 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
 0
 
- itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  flying_missile 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
+ itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  flying_missile 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 258 0
 0
 
  itm_pilgrim_disguise Pilgrim_Disguise Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 0 2.000000 100 0 19 8 0 0 0 0 0 0 0 0
@@ -404,7 +404,7 @@ itemsfile version 2
  itm_strong_bow Rohan_Bow Rohan_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 43 0
 0
 
- itm_elven_bow Elven_Bow Elven_Bow 2  elven_bow 0  elven_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
+ itm_elven_bow Elven_Bow Elven_Bow 2  elven_bow 0  elven_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 3 0 93 65 0 0 281 0
 0
 
  itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
@@ -416,16 +416,16 @@ itemsfile version 2
  itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 164 0 1.250000 100 0 0 0 0 0 96 53 0 0 30 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
 0
 
- itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  6357000 37312532480 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
+ itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  6357000 6174019584 269 0 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
 0
 
- itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 0 0 93 65 0 0 278 0
+ itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  6357000 5905584128 145 0 1.750000 100 0 0 0 3 0 93 65 0 0 278 0
 0
 
- itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
+ itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 3 0 93 65 0 0 281 0
 0
 
  itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 87 58 0 0 281 0
@@ -434,10 +434,10 @@ itemsfile version 2
  itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
 0
 
- itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312532480 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 33 0
+ itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 437 0 1.250000 100 0 0 0 0 0 94 57 0 0 33 0
 0
 
- itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 0 0 93 65 0 0 281 0
+ itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  6357000 5905584128 728 0 1.500000 100 0 0 0 3 0 93 65 0 0 281 0
 0
 
  itm_dunland_javelin Dunland_Javelins Dunland_Javelins 1  dunland_javelin 0  71368714 262144 209 0 4.000000 100 0 0 0 0 0 89 27 65 2 319 0
@@ -449,19 +449,19 @@ itemsfile version 2
  itm_heavy_throwing_spear Heavy_Throwing_Spear Heavy_Throwing_Spear 1  rohan_throwing_spear 0  71368714 262144 209 0 4.000000 100 0 0 0 0 0 89 27 65 2 319 0
 0
 
- itm_javelin Javelin Javelin 2  javelin 0  javelins_quiver 3458764513820540928  71368714 36507484160 75 0 5.000000 100 0 0 0 0 0 91 28 75 3 284 0
+ itm_javelin Javelin Javelin 2  javelin 0  javelins_quiver 3458764513820540928  71368714 36507484160 75 0 5.000000 100 0 0 0 0 0 91 28 75 3 301 0
 0
 
- itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 0 0 89 27 65 3 289 0
+ itm_harad_javelin Harad_Javelin Harad_Javelin 2  harad_javelin 0  harad_javelins_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 0 0 89 27 65 3 301 0
 0
 
- itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 0 0 89 27 65 3 289 0
+ itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 36507484160 209 0 4.000000 100 0 0 0 0 0 89 27 65 3 306 0
 0
 
- itm_rohirrim_throwing_axe Rohirrim_Throwing_Axes Rohirrim_Throwing_Axes 1  rohan_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 7 38 0
+ itm_rohirrim_throwing_axe Rohirrim_Throwing_Axes Rohirrim_Throwing_Axes 1  rohan_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 7 60 0
 0
 
- itm_loss_throwing_axes Lossarnach_Throwing_Axes Lossarnach_Throwing_Axes 1  loss_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 3 38 0
+ itm_loss_throwing_axes Lossarnach_Throwing_Axes Lossarnach_Throwing_Axes 1  loss_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 3 45 0
 0
 
  itm_arnor_helm_a Arnor_Helm Arnor_Helm 1  dunedain_helm_a 0  65548 0 320 0 1.250000 100 38 0 0 0 0 0 0 0 0 0 0
@@ -1101,10 +1101,10 @@ itemsfile version 2
  itm_isengard_sword Isengard_Sword Isengard_Sword 1  isengard_sword 0  4259843 9223652412613460206 105 0 2.500000 100 0 0 0 0 30720 96 0 75 0 256 30
 0
 
- itm_isengard_axe Isengard_Axe Isengard_Axe 1  isengard_axe 0  80019458 9223388530091229198 294 0 2.000000 100 0 0 0 0 38912 95 0 73 0 256 38
+ itm_isengard_axe Isengard_Axe Isengard_Axe 1  isengard_axe 0  80019458 9223388530091229198 294 0 2.000000 100 0 0 0 0 38912 85 0 73 0 256 38
 0
 
- itm_isengard_hammer Isengard_Hammer Isengard_Hammer 1  isengard_hammer 0  4521986 9223388532775583758 212 0 2.500000 100 0 0 0 0 24576 98 0 61 0 256 536
+ itm_isengard_hammer Isengard_Hammer Isengard_Hammer 1  isengard_hammer 0  4521986 9223388532775583758 212 0 2.500000 100 0 0 0 0 24576 85 0 61 0 527 536
 0
 
  itm_isengard_halberd Isengard_Halberd Isengard_Halberd 1  isengard_halberd 0  6651908 4222124851990272 352 0 4.500000 100 0 0 0 0 38912 83 0 156 0 277 38
@@ -1134,25 +1134,25 @@ itemsfile version 2
  itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
 0
 
- itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
+ itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
 0
 
- itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4407298 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 55 0 256 527
+ itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 55 0 256 527
 0
 
- itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
+ itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
 0
 
- itm_orc_club_a Orc_Club Orc_Club 1  orc_club_a 0  4653058 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 62 0 256 527
+ itm_orc_club_a Orc_Club Orc_Club 1  orc_club_a 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 62 0 256 527
 0
 
- itm_orc_club_b Orc_Club Orc_Club 1  orc_club_b 0  4653058 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 65 0 256 527
+ itm_orc_club_b Orc_Club Orc_Club 1  orc_club_b 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 65 0 256 527
 0
 
- itm_orc_club_c Orc_Club Orc_Club 1  orc_club_c 0  4653058 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 75 0 256 527
+ itm_orc_club_c Orc_Club Orc_Club 1  orc_club_c 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 75 0 256 527
 0
 
- itm_orc_club_d Orc_Club Orc_Club 1  orc_club_d 0  4653058 9223388532775583758 11 0 2.500000 100 0 0 0 0 15360 95 0 67 0 256 527
+ itm_orc_club_d Orc_Club Orc_Club 1  orc_club_d 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 67 0 256 527
 0
 
  itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  6504452 9223635925844623584 101 0 7.000000 100 0 0 0 0 30720 80 0 75 0 256 542
@@ -1170,28 +1170,28 @@ itemsfile version 2
  itm_orc_slasher Orc_Slasher Orc_Slasher 1  orc_slasher 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 54 0 256 30
 0
 
- itm_orc_falchion Orc_Falchion Orc_Falchion 1  orc_falchion 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 65 0 256 30
+ itm_orc_falchion Orc_Falchion Orc_Falchion 1  orc_falchion 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 93 0 65 0 256 30
 0
 
  itm_orc_scimitar Orc_Scimitar Orc_Scimitar 1  orc_scimitar 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 56 0 256 30
 0
 
- itm_orc_sabre Orc_Sabre Orc_Sabre 1  orc_sabre 0  4259842 9223388529822793742 108 0 1.500000 100 0 0 0 0 29696 105 0 71 0 256 29
+ itm_orc_sabre Orc_Sabre Orc_Sabre 1  orc_sabre 0  4259842 9223388529822793742 108 0 1.500000 100 0 0 0 0 29696 100 0 71 0 256 29
 0
 
- itm_orc_machete Orc_Machete Orc_Machete 1  orc_machete 0  12664834 9223388529822793742 108 0 1.500000 100 0 0 0 0 29696 105 0 55 0 256 29
+ itm_orc_machete Orc_Machete Orc_Machete 1  orc_machete 0  12664834 9223388529822793742 108 0 1.500000 100 0 0 0 0 29696 100 0 55 0 256 29
 0
 
- itm_orc_axe Orc_Axe Orc_Axe 1  orc_axe 0  80019458 9223388530091229198 294 0 2.000000 100 0 0 0 0 38912 95 0 61 0 256 38
+ itm_orc_axe Orc_Axe Orc_Axe 1  orc_axe 0  80019458 9223388530091229198 294 0 2.000000 100 0 0 0 0 38912 85 0 61 0 256 38
 0
 
  itm_orc_two_handed_axe Orc_Double_Handed_Axe Orc_Double_Handed_Axe 1  orc_twohanded_axe 0  73728003 9223635923965575392 110 0 4.500000 100 0 0 0 0 40960 90 0 84 0 256 40
 0
 
- itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 7 38 0
+ itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 7 40 0
 0
 
- itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 37312987136 437 131082 1.250000 100 0 0 0 0 0 86 57 0 0 33 0
+ itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 437 0 1.250000 100 0 0 0 0 0 86 57 0 0 33 0
 0
 
  itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 80 0 2.500000 100 0 8 0 0 310 96 0 40 0 0 0
@@ -1488,13 +1488,13 @@ itemsfile version 2
  itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 1  dunland_sword 0  4259842 9223388529822793743 162 0 1.250000 100 0 0 0 0 28672 103 0 98 0 277 28
 0
 
- itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 73 0 256 40
+ itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 90 0 73 0 256 40
 0
 
  itm_dunnish_war_axe Dunnish_War_Axe Dunnish_War_Axe 1  dunland_axe_a 0  80019460 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 47 0 256 40
 0
 
- itm_dunnish_axe Dunnish_Battle_Axe Dunnish_Battle_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 34 0 256 40
+ itm_dunnish_axe Dunnish_Battle_Axe Dunnish_Battle_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 90 0 34 0 256 40
 0
 
  itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  138772484 201326848 125 0 3.000000 100 0 0 0 0 16384 95 0 205 0 282 528
@@ -1634,7 +1634,7 @@ itemsfile version 2
  itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 50 0 256 40
 0
 
- itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 53 0 256 40
+ itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 92 0 53 0 256 40
 0
 
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  6356995 9223635924301119728 524 0 3.000000 100 0 0 0 0 40960 94 0 101 0 287 40
@@ -1769,10 +1769,10 @@ itemsfile version 2
  itm_harad_khopesh Harad_Khopesh Harad_Khopesh 1  harad_khopesh 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 80 0 256 30
 0
 
- itm_black_snake_sword Harad_Heavy_Falchion Harad_Heavy_Falchion 1  black_snake_sword 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 71 0 256 30
+ itm_black_snake_sword Harad_Heavy_Falchion Harad_Heavy_Falchion 1  black_snake_sword 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 100 0 71 0 256 30
 0
 
- itm_harad_heavy_sword Harad_Heavy_Sword Harad_Heavy_Sword 1  harad_heavy_sword 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 80 0 256 30
+ itm_harad_heavy_sword Harad_Heavy_Sword Harad_Heavy_Sword 1  harad_heavy_sword 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 92 0 80 0 256 30
 0
 
  itm_horandor_a Harad_Scimitar Harad_Scimitar 1  horandor_a 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 90 0 256 30
@@ -1784,7 +1784,7 @@ itemsfile version 2
  itm_harad_sabre Harad_Sabre Harad_Sabre 1  harad_sabre 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 92 0 256 30
 0
 
- itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 73 0 256 30
+ itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 105 0 2.500000 100 0 0 0 0 30720 96 0 73 0 512 542
 0
 
  itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  73728003 9223635925844623584 7 0 2.000000 100 0 0 0 0 14336 100 0 55 0 256 526
@@ -2249,7 +2249,7 @@ itemsfile version 2
  itm_corsair_sword Corsair_Eket Corsair_Eket 2  corsair_sword 0  scab_corsair_sword 3458764513820540928  4259842 9223388564182532111 363 0 1.500000 100 0 0 0 0 29696 101 0 90 0 280 29
 0
 
- itm_corsair_throwing_dagger Umbarian_Throwing_Daggers Umbarian_Throwing_Daggers 1  corsair_throwing_dagger 0  4259850 131072 193 0 3.500000 100 0 0 0 0 0 110 24 0 10 35 0
+ itm_corsair_throwing_dagger Umbarian_Throwing_Daggers Umbarian_Throwing_Daggers 1  corsair_throwing_dagger 0  4259850 131072 193 0 3.500000 100 0 0 0 0 0 110 24 0 10 45 0
 0
 
  itm_umbar_pike Umbar_Pike Umbar_Pike 1  corsair_pike 0  407207940 201326848 125 0 3.000000 100 0 0 0 0 16384 81 0 191 0 282 528
@@ -2357,7 +2357,7 @@ itemsfile version 2
  itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 524 0 2.000000 100 0 0 0 0 40960 97 0 54 0 256 40
 0
 
- itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 1  dwarf_throw_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 4 48 0
+ itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 1  dwarf_throw_axe 0  71368714 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 4 45 0
 0
 
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 4222124851990272 75 0 2.250000 100 0 0 0 0 20480 98 0 140 0 282 532
