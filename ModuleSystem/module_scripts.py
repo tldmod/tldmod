@@ -5065,7 +5065,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_deal_with_night_bandits"),
+#(assign, ":quest_no", "qst_dispatch_scouts"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5257,7 +5257,7 @@ scripts = [
           (assign, ":quest_target_party_template", "pt_looters"), #can be regionalized for different bandits
           (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":quest_target_party_template"),
           (party_template_set_slot,":quest_target_party_template",slot_party_template_num_killed,":num_looters_destroyed"),
-          (quest_set_slot,"$random_merchant_quest_no",slot_quest_current_state,0),
+          (quest_set_slot,"qst_deal_with_looters",slot_quest_current_state,0),
           #(quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
           (assign, ":quest_gold_reward", 500),
           (assign, ":quest_xp_reward", 500),
@@ -5855,8 +5855,8 @@ scripts = [
             #(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":cur_target_center", reg0),
+            (assign, ":dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (store_distance_to_party_from_party, ":dist", ":cur_target_center", ":giver_center_no"),
             (ge, ":dist", 20),
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -6195,6 +6195,7 @@ scripts = [
             (val_div, ":quest_gold_reward", 5),
             (val_mul, ":quest_gold_reward", ":quest_target_amount"),
             (assign, ":quest_xp_reward", ":quest_gold_reward"),
+            (assign, ":quest_rank_reward", ":quest_target_amount"),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 90),
             (assign, ":quest_dont_give_again_period", 20),
@@ -6207,8 +6208,121 @@ scripts = [
             (assign, ":quest_importance", 1),
             (store_mul, ":quest_gold_reward", ":quest_target_amount", 20),
             (assign, ":quest_xp_reward", ":quest_gold_reward"),
+            (store_mul, ":quest_rank_reward", ":quest_target_amount", 2),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 60),
+            (assign, ":quest_dont_give_again_period", 20),
+          (try_end),
+        (else_try),
+          (eq, ":quest_no", "qst_scout_enemy_town"),
+          (try_begin),
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (assign, ":quest_target_center", reg0),
+            (assign, ":dist", reg1),
+            (assign, ":quest_target_troop", 0), #abuse this as a boolean flag: if town scouted
+            
+            (assign, ":quest_importance", 1),
+            (store_mul, ":quest_gold_reward", ":dist", 5),
+            (assign, ":quest_xp_reward", ":dist"),
+            (store_div, ":quest_rank_reward", ":dist", 7),
+            (assign, ":result", ":quest_no"),
+            (assign, ":quest_expiration_days", 7),
+            (assign, ":quest_dont_give_again_period", 20),
+          (try_end),
+        (else_try),
+          (eq, ":quest_no", "qst_dispatch_scouts"),
+          (try_begin),
+            (faction_get_slot, ":capital", ":giver_faction_no", slot_faction_capital), #count on capitals to have scouts
+            (party_get_slot, ":center_scouts", ":capital", slot_center_spawn_scouts),
+            (gt, ":center_scouts", 0),
+            (assign, ":quest_target_party_template", ":center_scouts"),
+            
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (assign, ":quest_target_center", reg0),
+            (assign, ":dist", reg1),
+            
+            (assign, ":quest_object_faction", ":giver_faction_no"),
+            (faction_get_slot, ":tier_1_troop", ":quest_object_faction", slot_faction_tier_1_troop), #4 of these
+            (faction_get_slot, ":tier_2_troop", ":quest_object_faction", slot_faction_tier_2_troop), #2 of these
+            (faction_get_slot, ":tier_3_troop", ":quest_object_faction", slot_faction_tier_3_troop), #1 of these, and used for member chat
+            (gt, ":tier_1_troop", 0),
+            (gt, ":tier_2_troop", 0),
+            (gt, ":tier_3_troop", 0),
+            (assign, ":quest_object_troop", ":tier_3_troop"),
+            
+            (assign, ":quest_importance", 4),
+            (store_mul, ":quest_gold_reward", ":dist", 7),
+            (assign, ":quest_xp_reward", ":dist"),
+            (store_div, ":quest_rank_reward", ":dist", 5),
+            (assign, ":result", ":quest_no"),
+            (assign, ":quest_expiration_days", 15),
+            (assign, ":quest_dont_give_again_period", 20),
+          (try_end),
+        (else_try),
+          (eq, ":quest_no", "qst_eliminate_patrols"),
+          (try_begin),
+            (gt, "$tld_war_began", 0),
+            (ge, ":player_level", 10),
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (assign, ":quest_target_center", reg0),
+            #(assign, ":dist", reg1),
+            #find a random enemy scout/raider/patrol/caravan spawned in the enemy center
+            (party_get_slot, ":center_scouts", ":quest_target_center", slot_center_spawn_scouts),
+            (party_get_slot, ":center_raiders", ":quest_target_center", slot_center_spawn_raiders),
+            (party_get_slot, ":center_patrol", ":quest_target_center", slot_center_spawn_patrol),
+            (party_get_slot, ":center_caravan", ":quest_target_center", slot_center_spawn_caravan),
+            (store_random_in_range, ":random_no", 0, 4),
+            (assign, ":min_amount", 0),
+            (assign, ":done", 0),
+            (try_begin),
+              (eq, ":random_no", 0),
+              (gt, ":center_caravan", 0),
+              (assign, ":done", 1),
+              (assign, ":quest_target_party_template", ":center_caravan"),
+              (assign, ":min_amount", 3),
+            (else_try),
+              (eq, ":done", 0),
+              (le, ":random_no", 1),
+              (gt, ":center_patrol", 0),
+              (assign, ":done", 1),
+              (assign, ":quest_target_party_template", ":center_patrol"),
+              (assign, ":min_amount", 3),
+            (else_try),
+              (eq, ":done", 0),
+              (le, ":random_no", 2),
+              (gt, ":center_raiders", 0),
+              (assign, ":done", 1),
+              (assign, ":quest_target_party_template", ":center_raiders"),
+              (assign, ":min_amount", 4),
+            (else_try),
+              (eq, ":done", 0),
+              (gt, ":center_scouts", 0),
+              (assign, ":done", 1),
+              (assign, ":quest_target_party_template", ":center_scouts"),
+              (assign, ":min_amount", 5),
+            (try_end),
+            
+            (eq, ":done", 1), #should never happen, but who knows
+            # get a random party, used only to find the template name - won't work for caravans with changed names!
+            #(store_random_party_of_template, ":quest_target_party" ":quest_target_party_template"), #can fail, expensive
+            
+            (assign, ":quest_target_amount", ":player_level"),
+            (val_clamp, ":quest_target_amount", 10, 31), #10-30
+            (val_add, ":quest_target_amount", 10), #20-40
+            (val_mul, ":quest_target_amount", 5), #100-200
+            (val_mul, ":quest_target_amount", ":min_amount"),
+            (val_div, ":quest_target_amount", 100), #min_amount - 2*min_amount
+            
+            (store_num_parties_destroyed_by_player, ":num_already_destroyed", ":quest_target_party_template"),
+            (party_template_set_slot, ":quest_target_party_template", slot_party_template_num_killed, ":num_already_destroyed"),
+            
+            (assign, ":quest_importance", 12),
+            (store_mul, ":quest_gold_reward", ":quest_target_amount", 100),
+            (store_mul, ":quest_xp_reward", ":quest_target_amount", 40),
+            (store_mul, ":quest_rank_reward", ":quest_target_amount", 5),
+            
+            (assign, ":result", ":quest_no"),
+            (assign, ":quest_expiration_days", 40),
             (assign, ":quest_dont_give_again_period", 20),
           (try_end),
         (try_end),
@@ -6249,13 +6363,14 @@ scripts = [
   
   # script_cf_get_random_enemy_center_within_range
   # INPUT: arg1 = party_no, arg2 = range (in kms)
-  #OUTPUT: reg0 = center_no
+  #OUTPUT: reg0 = center_no, reg1 = distance
   ("cf_get_random_enemy_center_within_range",
     [
       (store_script_param, ":party_no", 1),
       (store_script_param, ":range", 2),
 
       (assign, ":num_centers", 0),
+      (assign, ":dist", 0),
       (store_faction_of_party, ":faction_no", ":party_no"),
       (try_for_range, ":cur_center", centers_begin, centers_end),
         (party_is_active, ":cur_center"), #TLD
@@ -6286,6 +6401,7 @@ scripts = [
         (assign, ":end_cond", 0),#break
       (try_end),
       (assign, reg0, ":result"),
+      (assign, reg1, ":dist"),
   ]),
   
   # script_cf_faction_get_random_enemy_faction
@@ -10151,6 +10267,14 @@ scripts = [
         (eq, ":quest_no", "qst_capture_enemy_hero"),
         (assign, ":quest_return_penalty", -3),
         (assign, ":quest_expire_penalty", -4),
+      (else_try),
+        (eq, ":quest_no", "qst_scout_enemy_town"),
+        (assign, ":quest_return_penalty", -1),
+        (assign, ":quest_expire_penalty", -2),
+      (else_try),
+        (eq, ":quest_no", "qst_dispatch_scouts"),
+        (assign, ":quest_return_penalty", -2),
+        (assign, ":quest_expire_penalty", -3),
 ##      (else_try),
 ##        (eq, ":quest_no", "qst_lend_companion"),
 ##        (quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),

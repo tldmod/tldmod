@@ -110,10 +110,23 @@ quests = [
 
 # TLD END lord's quests 
 
-#TLD lord missions begin  
+#TLD lord missions begin (MV)
  ("rescue_prisoners", "Rescue {reg1} Prisoners", qf_random_quest,
   "{s9} wanted you to rescue {reg1} prisoners."
   ),
+  
+ ("scout_enemy_town", "Scout Enemy Town", qf_random_quest,
+  "{s9} asked you to scout around {s13}."
+  ),
+
+ ("dispatch_scouts", "Dispatch a Scout Party", qf_random_quest,
+  "{s9} asked you to dispatch a scout party near {s13}."
+  ),
+  
+ ("eliminate_patrols", "Eliminate {reg1} Enemy Parties", qf_random_quest,
+  "{s9} asked you to eliminate {reg1} {s13} enemy parties."
+  ),
+
 #TLD lord missions end  
 
 ## ("hunt_down_raiders", "Hunt Down Raiders",qf_random_quest,

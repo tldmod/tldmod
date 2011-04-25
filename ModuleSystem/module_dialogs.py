@@ -689,7 +689,7 @@ dialogs = [
   # [trp_kidnapped_girl,"kidnapped_girl_chat_2", [], "I can't wait to get back. I've missed my family so much, I'd give anything to see them again.", "close_window",[]],
 
   [anyone,"member_chat",
-   [
+   [(check_quest_active, "qst_escort_messenger"),
     (this_or_next|eq, "$g_talk_troop", "trp_messenger_dwarf"),
     (this_or_next|eq, "$g_talk_troop", "trp_messenger_elf"),
     (this_or_next|eq, "$g_talk_troop", "trp_messenger_man"),
@@ -697,6 +697,55 @@ dialogs = [
     ], "{playername}, when do you think we can reach our destination?", "member_lady_1",[]],
   [anyone|plyr, "member_lady_1", [],  "We still have a long way ahead of us.", "close_window", []],
   [anyone|plyr, "member_lady_1", [],  "Very soon. We're almost there.", "close_window", []],
+
+  [anyone,"member_chat",
+   [(check_quest_active, "qst_dispatch_scouts"),
+    (quest_slot_eq, "qst_dispatch_scouts", slot_quest_object_troop, "$g_talk_troop"),
+    # count if enough troops
+    (quest_get_slot, ":quest_object_faction", "qst_dispatch_scouts", slot_quest_object_faction),
+    (faction_get_slot, ":tier_1_troop", ":quest_object_faction", slot_faction_tier_1_troop), #4 of these
+    (party_count_companions_of_type, ":num_tier_1", "p_main_party", ":tier_1_troop"),
+    (ge, ":num_tier_1", 4),
+    (faction_get_slot, ":tier_2_troop", ":quest_object_faction", slot_faction_tier_2_troop), #2 of these
+    (party_count_companions_of_type, ":num_tier_2", "p_main_party", ":tier_2_troop"),
+    (ge, ":num_tier_2", 2),
+    # see if close enough
+    (quest_get_slot, ":quest_target_center", "qst_dispatch_scouts", slot_quest_target_center),
+    (store_distance_to_party_from_party, ":dist", ":quest_target_center", "p_main_party"),
+    (lt, ":dist", 7),
+    ], "We are ready to go on our scouting mission. Should we go now?", "member_scout_1",[]],
+  [anyone|plyr, "member_scout_1", [],  "Yes, you've got your orders. Goodbye.", "close_window", [
+    #remove them from our party
+    (quest_get_slot, ":quest_object_faction", "qst_dispatch_scouts", slot_quest_object_faction),
+    (faction_get_slot, ":tier_1_troop", ":quest_object_faction", slot_faction_tier_1_troop), #4 of these
+    (party_remove_members, "p_main_party", ":tier_1_troop", 4),
+    (faction_get_slot, ":tier_2_troop", ":quest_object_faction", slot_faction_tier_2_troop), #2 of these
+    (party_remove_members, "p_main_party", ":tier_2_troop", 2),
+    (faction_get_slot, ":tier_3_troop", ":quest_object_faction", slot_faction_tier_3_troop), #1 of these, and used for member chat
+    (party_remove_members, "p_main_party", ":tier_3_troop", 1),
+    #create a real scouting party
+    (quest_get_slot, ":quest_target_party_template", "qst_dispatch_scouts", slot_quest_target_party_template),
+    (set_spawn_radius, 1),
+    (spawn_around_party, "p_main_party", ":quest_target_party_template"),
+    (assign, ":scout_party", reg0),
+    (party_clear, ":scout_party"),
+    (party_add_members, ":scout_party", ":tier_3_troop", 1),
+    (party_add_members, ":scout_party", ":tier_2_troop", 2),
+    (party_add_members, ":scout_party", ":tier_1_troop", 4),
+    (party_set_slot, ":scout_party", slot_party_type, spt_scout),
+    (faction_get_slot, ":capital", ":quest_object_faction", slot_faction_capital),
+    (party_set_slot, ":scout_party", slot_party_home_center, ":capital"), #er... something
+    (party_set_slot, ":scout_party", slot_party_victory_value, ws_scout_vp), # victory points for party kill
+    (party_set_faction, ":scout_party", ":quest_object_faction"),
+    (quest_get_slot, ":quest_target_center", "qst_dispatch_scouts", slot_quest_target_center),
+    (party_set_slot, ":scout_party", slot_party_ai_object, ":quest_target_center"),
+    (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
+    (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
+    (party_set_ai_patrol_radius, ":scout_party", 30),
+    
+    (call_script, "script_succeed_quest", "qst_dispatch_scouts"),
+  ]],
+  [anyone|plyr, "member_scout_1", [],  "Wait a minute, not just yet.", "close_window", []],
 
   # [anyone ,"member_lady_2a", [],  "Ah, I am going to enjoy the road for a while longer then. I won't complain.\
  # I find riding out in the open so much more pleasant than sitting in the castle all day.\
@@ -5037,6 +5086,39 @@ dialogs = [
    "Indeed. I have rescued {reg1} allied prisoners and they joined my party.", "lord_generic_mission_thank",
    [(call_script, "script_finish_quest", "qst_rescue_prisoners", 100)]],
 
+  [anyone|plyr,"lord_active_mission_2",[
+                            (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
+                            (check_quest_succeeded,"qst_scout_enemy_town"),
+                            (quest_slot_eq, "qst_scout_enemy_town", slot_quest_giver_troop, "$g_talk_troop"),
+                            (quest_slot_eq, "qst_scout_enemy_town", slot_quest_target_troop, 1), #scouted
+                            (quest_get_slot, ":quest_target_center", "qst_scout_enemy_town", slot_quest_target_center),
+                            (str_store_party_name, s13, ":quest_target_center"),
+                            ],
+   "Indeed. I have scouted {s13}.", "lord_generic_mission_thank",
+   [(call_script, "script_finish_quest", "qst_scout_enemy_town", 100)]],
+
+  [anyone|plyr,"lord_active_mission_2",[
+                            (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
+                            (check_quest_succeeded,"qst_dispatch_scouts"),
+                            (quest_slot_eq, "qst_dispatch_scouts", slot_quest_giver_troop, "$g_talk_troop"),
+                            ],
+   "Indeed. I have dispatched the scouts.", "lord_generic_mission_thank",
+   [(call_script, "script_finish_quest", "qst_dispatch_scouts", 100)]],
+
+  [anyone|plyr,"lord_active_mission_2",[
+                            (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
+                            (check_quest_active, "qst_eliminate_patrols"),
+                            (quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
+                            (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
+                            (store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
+                            (party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
+                            (val_sub, ":num_destroyed", ":previous_num_destroyed"),
+                            (quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
+                            (le, ":to_destroy", ":num_destroyed"),
+                            ],
+   "Indeed. I have defeated enough enemy parties.", "lord_generic_mission_thank",
+   [(call_script, "script_finish_quest", "qst_eliminate_patrols", 100)]],
+
   [anyone|plyr,"lord_active_mission_2",
    [
      #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
@@ -5086,8 +5168,8 @@ dialogs = [
    "Certainly, {s65}.", "lord_pretalk",[]],
   [anyone|plyr,"capture_enemy_hero_thank_2", [],
    "It was nothing.", "lord_pretalk",[]],
-  [anyone|plyr,"capture_enemy_hero_thank_2", [],
-   "Give me more of a challenge next time.", "lord_pretalk",[]],
+  # [anyone|plyr,"capture_enemy_hero_thank_2", [],
+   # "Give me more of a challenge next time.", "lord_pretalk",[]],
 
 ##
 ##  [anyone|plyr,"lord_active_mission_2", [(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
@@ -5305,7 +5387,7 @@ dialogs = [
 
    # TLD mission: investigate fangorn (mtarini) -- begin 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
-  "Here is a mission for a trusted and brave serve like you, {playername}.\
+  "Here is a mission for a trusted and brave servant like you, {playername}.\
   The strangest rumors reach my ears from the forest of Fangorn. \
   Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return.\
   Other times, they report of mysterious losses among their troops.\
@@ -5319,7 +5401,7 @@ dialogs = [
   [anyone|plyr,"lord_mission_investigate_fangorn_0", [], "But Master, there is danger and pain in Fangorn! I've felt it myself!", "lord_mission_investigate_fangorn_rejected",[]],
 
     [anyone,"lord_mission_investigate_fangorn_1", [],
-  "Maybe it is just that my other servants are unable to prevent the most coward worms in their troops from deserting.\
+  "Maybe it is just that my other servants are unable to prevent the most cowardly worms in their troops from deserting.\
   Fools, blinded by superstitions. \
   Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they do. \
   It could even be lowborn traitors from Rohan.\
@@ -5329,7 +5411,7 @@ dialogs = [
     [anyone|plyr,"lord_mission_investigate_fangorn_2", [], "I fear no elves or spirit. Leave this to me, Master.",
   "lord_mission_investigate_fangorn_accepted",[]],
   
-  [anyone|plyr,"lord_mission_investigate_fangorn_2", [], "Master, pity of your servant! Don't ask me to venture in that cursed place!", "lord_mission_investigate_fangorn_rejected",[]],
+  [anyone|plyr,"lord_mission_investigate_fangorn_2", [], "Master, pity your servant! Don't ask me to venture in that cursed place!", "lord_mission_investigate_fangorn_rejected",[]],
 
   [anyone,"lord_mission_investigate_fangorn_rejected", [], "So you are like the other worms: a superstitious, worthless coward.\
   I overestimated you. Now, begone!", "lord_pretalk",
@@ -5369,8 +5451,7 @@ dialogs = [
   [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my king.","lord_mission_find_lost_spears_accepted",[]],
   [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I'm afraid I can't help you, my lord.","lord_mission_find_lost_spears_rejected",[]],
 
-    [anyone,"lord_mission_find_lost_spears_rejected", [], "So you are like the other weaklings: a superstitious, worthless coward.\
-  I overestimated you. Now, get out of my sight!", "lord_pretalk",
+    [anyone,"lord_mission_find_lost_spears_rejected", [], "I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.", "lord_pretalk",
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
    (assign, "$g_leave_encounter",1),
     ]],
@@ -6292,10 +6373,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     # ]],
 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_prisoners")],
- "A group of my soldiers were captured in a recent skirmish with the enemy.\
- Thankfully we have a mutual agreement of prisoner exchange, and they will release my men,\
- but they want us to give them prisoners of equal rank and number. Prisoners I don't currently have.\
- So, I need a good warrior to find me {reg1} enemy prisoners, that I may exchange them.", "lord_mission_told",
+ "Our scouts have noticed a recent increase in enemy activity.\
+ Unfortunately they almost never succeed in capturing live prisoners and bring them in for questioning,\
+ so we can piece together what the enemy is up to.\
+ So, I need a good warrior to find me {reg1} enemy prisoners, that I may question them.", "lord_mission_told",
    [
        #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
        (quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
@@ -6331,8 +6412,83 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  As much as they are expendable, it's a waste to let them die in some prison hole.\
  I want you to rescue {reg1} prisoners, and make them fight for us again."), #Evil
        (try_end),
-       (setup_quest_text,"$random_quest_no"),
+       (setup_quest_text, "qst_rescue_prisoners"),
        (str_store_string, s2, "@{s9} has asked you to rescue {reg1} prisoners."),
+    ]],
+
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_scout_enemy_town")],
+ "{s5}", "lord_mission_told",
+   [
+       (quest_get_slot, ":quest_target_center", "qst_scout_enemy_town", slot_quest_target_center),
+       (str_store_party_name, s13, ":quest_target_center"),
+       (str_store_troop_name_link, s9, "$g_talk_troop"),
+       (try_begin),
+         (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+         (str_store_string, s5, "@We have reports that an enemy host may be gathering in {s13}.\
+ Clearly, this is of grave concern to me, as I don't know how many troops the enemy has and whether my soldiers will be ready to meet them\
+ on the field of battle.\
+ I want you to get close enough to {s13}, and find out as much as you can."), #Good
+       (else_try),
+         (str_store_string, s5, "@My spies tell me of a large group of warriors gathering in {s13}.\
+ They should be no match for us and our servants, but it wouldn't hurt to know just how many of them are there.\
+ I want you to get close enough to {s13}, and find out as much as you can."), #Evil
+       (try_end),
+       (setup_quest_text, "qst_scout_enemy_town"),
+       (str_store_string, s2, "@{s9} asked you to scout around {s13}."),
+    ]],
+    
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_dispatch_scouts")],
+ "{s5}", "lord_mission_told",
+   [
+       (quest_get_slot, ":quest_target_center", "qst_dispatch_scouts", slot_quest_target_center),
+       (str_store_party_name, s13, ":quest_target_center"),
+       (str_store_troop_name_link, s9, "$g_talk_troop"),
+       (try_begin),
+         (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+         (str_store_string, s5, "@We have reports of some enemy activity near {s13}.\
+ Our scouts have so far failed to get close enough and scout the area for enemy comings and goings.\
+ I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts."), #Good
+       (else_try),
+         (str_store_string, s5, "@My spies tell me the enemy is up to something in {s13}.\
+ Our cowardly scouts have so far failed to get close enough and tell us anything of import.\
+ I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!"), #Evil
+       (try_end),
+       
+       (faction_get_slot, ":tier_1_troop", "$g_talk_troop_faction", slot_faction_tier_1_troop), #4 of these
+       (str_store_troop_name_plural, s16, ":tier_1_troop"),
+       (faction_get_slot, ":tier_2_troop", "$g_talk_troop_faction", slot_faction_tier_2_troop), #2 of these
+       (str_store_troop_name_plural, s15, ":tier_2_troop"),
+       (faction_get_slot, ":tier_3_troop", "$g_talk_troop_faction", slot_faction_tier_3_troop), #1 of these, and used for member chat
+       (str_store_troop_name, s14, ":tier_3_troop"),
+       
+       (setup_quest_text, "qst_dispatch_scouts"),
+       (str_store_string, s2, "@{s9} asked you to dispatch a scout party near {s13}.^Recruit 1 {s14}, 2 {s15} and 4 {s16}, get close to {s13} and talk to the {s14} to dispatch the party."),
+    ]],
+    
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_eliminate_patrols")],
+ "{s5}", "lord_mission_told",
+   [
+       (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
+       (quest_get_slot, reg1, "qst_eliminate_patrols", slot_quest_target_amount),
+       
+       (spawn_around_party, "p_main_party", ":quest_target_party_template"),
+       (assign, ":fake_party", reg0),
+       (str_store_party_name, s13, ":fake_party"),
+       (remove_party, ":fake_party"),
+       
+       (str_store_troop_name_link, s9, "$g_talk_troop"),
+       (try_begin),
+         (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+         (str_store_string, s5, "@We need to take the battle to the enemy, {playername}.\
+ At this moment, we can do this by striking at his patrols and communications.\
+ I want you to eliminate {reg1} {s13} parties, that would help us regain initiative."), #Good
+       (else_try),
+         (str_store_string, s5, "@We need to grind down our worthless enemies, {playername}.\
+ Their patrols and supply trains are growing too bold for my liking.\
+ I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming."), #Evil
+       (try_end),
+       (setup_quest_text, "qst_eliminate_patrols"),
+       (str_store_string, s2, "@{s9} asked you to eliminate {reg1} {s13} parties."),
     ]],
     
 
@@ -6510,7 +6666,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"lord_mission_rejected", [], "Is that so? Well, I suppose you're just not up to the task.\
  I shall have to look for somebody with more mettle.", "close_window",
    [(assign, "$g_leave_encounter",1),
-    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    #(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
     (try_begin),
       (quest_slot_eq, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 0),
       (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 1),

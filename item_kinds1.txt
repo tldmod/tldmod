@@ -27,10 +27,10 @@ itemsfile version 2
  itm_practice_bow Practice_Bow Practice_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6291464 5905584128 0 0 1.500000 100 0 0 0 0 0 90 40 0 0 531 0
 0
 
- itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 100 80 0 0 0 0 0 0 0 70 0 0
+ itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  34144267 0 200 0 1.250000 100 70 0 0 0 0 0 0 0 70 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  34144267 0 200 0 1.250000 10 70 0 0 0 0 0 0 0 70 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
