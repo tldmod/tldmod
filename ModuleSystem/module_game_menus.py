@@ -1481,7 +1481,13 @@ game_menus = [
 ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
 ## MadVader test end
-     ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
+     ("resume_travelling",[],"Resume travelling.",[
+     	 (try_begin), #if "walk around place" used
+	       (eq, "$relocated", 1),
+	       (assign, "$relocated", 0),
+           (party_relocate_near_party, "p_main_party", "p_pointer_player", 0),
+	    (try_end),
+	    (change_screen_return),]),
     ]
   ),
   
@@ -7270,14 +7276,24 @@ game_menus = [
              (try_begin),
                (neq, ":town_faction", "fac_player_supporters_faction"),
 # TLD center specific guards
-               (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
-               (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
+               (try_begin),
+                 (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
+                 (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+               (else_try),
+                 (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
+               (try_end),
+               (try_begin),
+                 (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
+                 (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
+               (else_try),
+                 (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_guard_troop),
+               (try_end),
                (set_visitor, 23, ":troop_castle_guard"),
                (set_visitor, 24, ":troop_prison_guard"),
              (try_end),
 # TLD center specific guards
              (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
-             (party_get_slot, ":tier_3_troop", "$current_town", slot_town_prison_guard_troop),
+             (party_get_slot, ":tier_3_troop", "$current_town", slot_town_guard_troop), #was slot_town_prison_guard_troop
 ########
              (try_begin),
                (gt,":tier_2_troop", 0),
