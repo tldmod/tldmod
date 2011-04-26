@@ -1564,7 +1564,7 @@ center_list = [
 	("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1],
 	    [-1, "trp_smith_oscamp", "trp_town_26_horse_merchant", "trp_no_troop", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1),
-	("p_town_east_osgiliath", ["scn_east_osgiliath_center", -1, -1, -1, -1],
+	("p_town_east_osgiliath", ["scn_east_osgiliath_center", "scn_west_osgiliath_castle", -1, -1, -1],
 	    [-1, "trp_smith_eosgiliath", "trp_town_10_horse_merchant", "trp_no_troop", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0),
 	("p_town_isengard", ["scn_isengard_center", "scn_isengard_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
@@ -1740,7 +1740,7 @@ center_list = [
 		["icon_mfc_northmen"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], 0, garrison_limit_med, 1),
 ]
 # evil camps that will appear only when War starts
-centers_disabled_at_start =	["p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp","p_town_dunland_camp","p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_camp","p_town_gundabad_ne_outpost", "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_mirkwood_outpost"]		 
+centers_disabled_at_start =	["p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp","p_town_dunland_camp","p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_ne_outpost", "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_mirkwood_outpost"]		 
 #### end of center descriptions
 
 # forest tree seeding. 1-scene prop to use, 2-number of times to repeat, 3-displacement vector, 4-vector rotation angle, then repeat with other scene prop 

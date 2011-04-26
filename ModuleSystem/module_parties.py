@@ -72,19 +72,19 @@ parties = [
 
 #TLD TOWNS
     # Gondor towns
-    ("town_minas_tirith"    ,"Minas_Tirith",icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.465164,24.283142),[],205),
-    ("town_pelargir"        ,"Pelargir",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.313404,60.998856),[],240),
-    ("town_linhir"          ,"Linhir",      icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.834263,59.125397),[],170),
-    ("town_dol_amroth"      ,"Dol_Amroth",  icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.235764,64.029526),[],280),
-    ("town_edhellond"       ,"Edhellond",   icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(37.656502,46.137527),[],170),
-    ("town_lossarnach"      ,"Lossarnach",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.850273,37.002899),[],170),
-    ("town_tarnost"         ,"Tarnost",     icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.311577,63.942841),[],170),
-    ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.165466,9.340988),[],170),
-    ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(50.819733,30.816559),[],170),
-    ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.194717,20.500275),[],0),
-    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.812923,-14.051041),[],170),
-    ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.478985,3.547134),[],170),
-    ("town_ethring"         ,"Ethring",     icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.157860,30.863678),[],50),
+    ("town_minas_tirith"    ,"Minas_Tirith",icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.47, 24.28),[],205),
+    ("town_pelargir"        ,"Pelargir",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.31, 61.0 ),[],240),
+    ("town_linhir"          ,"Linhir",      icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -0.83, 59.13),[],170),
+    ("town_dol_amroth"      ,"Dol_Amroth",  icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 46.24, 64.03),[],280),
+    ("town_edhellond"       ,"Edhellond",   icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.66, 46.14),[],170),
+    ("town_lossarnach"      ,"Lossarnach",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.85, 37.0 ),[],170),
+    ("town_tarnost"         ,"Tarnost",     icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 15.31, 63.94),[],170),
+    ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 28.17,  9.34),[],170),
+    ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 50.82, 30.82),[],170),
+    ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.19, 20.5 ),[],0),
+    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.81,-14.05),[],170),
+    ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.48,  3.55),[],170),
+    ("town_ethring"         ,"Ethring",     icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -2.16, 30.86),[],50),
 # Rohan towns
     ("town_edoras","Edoras",         icon_edoras     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 22.8,-14.7),[],215),
     ("town_aldburg","Aldburg",       icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  7.9, -8.3),[],170),
@@ -95,7 +95,7 @@ parties = [
     ("town_eastfold","Eastfold",     icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.2,-0.52),[],170),
 # Mordor towns
     ("town_morannon","Morannon",              icon_morannon   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.9,-34.2),[],170),
-    ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.3,23.814362),[],170),
+    ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.3,23.8),[],170),
     ("town_cirith_ungol","Cirith_Ungol",      icon_cirithungol|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-69.5,18.8),[],170),
     ("town_east_osgiliath","East_Osgiliath",icon_east_osgilliath|pf_tld_down,no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.2,20.6),[],0),
     ("town_orc_sentry_camp","Orc_Sentry_Camp",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.4,30.4),[],170),
@@ -105,24 +105,24 @@ parties = [
     ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.9,-78.9),[],170),
     ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.39,-54.2),[],170),
 # Lothlorien towns
-    ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.7,-131.3),[],350),
-    ("town_cerin_dolen"   ,"Cerin_Dolen",   icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  6.0,-135.7),[],170),
-    ("town_cerin_amroth"  ,"Cerin_Amroth",  icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[],170),
+    ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -5.7,-131.3),[],350),
+    ("town_cerin_dolen"   ,"Cerin_Dolen",   icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 20.2,-135.7),[],170),
+    ("town_cerin_amroth"  ,"Cerin_Amroth",  icon_tree  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  5.7,-134.3),[],170),
 # Woodelves towns
-    ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.3,-223.0),[],170),
-    ("town_woodelf_camp"     ,"Woodelf_Camp",        icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.5,-155.1),[],170),
-    ("town_woodelf_west_camp","Woodelf_West_Camp",   icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.2,-215.4),[],170),
+    ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-30.8,-223.0),[],170),
+    ("town_woodelf_camp"     ,"Woodelf_Camp",        icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.3,-155.1),[],170),
+    ("town_woodelf_west_camp","Woodelf_West_Camp",   icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -6.2,-215.4),[],170),
 #    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_tree |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
 # Woodmen and Beorning towns   
-    ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.4,-175.1),[],170),
-    ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.9,-184.7),[],170),
-    ("town_beorn_house"     ,"Beorn's House",    icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.3,-194.0),[],170),
+    ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.4,-175.1),[],170),
+    ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.4,-184.7),[],170),
+    ("town_beorn_house"     ,"Beorn's House",    icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.7,-194.0),[],170),
 # Moria towns
-    ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(29.0,-151.3),[],200),
-    ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(33.2,-114.4),[],170),
+    ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(55.33,-150.7),[],200),
+    ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.6,-120),[],170),
 # Dale towns
-    ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.1,-223.9),[],170),
-    ("town_esgaroth","Esgaroth",     icon_esgaroth |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.4,-217.9),[],170),
+    ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.1,-223.9),[],170),
+    ("town_esgaroth","Esgaroth",     icon_esgaroth |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.89,-216.83),[],150),
 #    ("town_dale_town","Dale Town",   icon_town       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-79.9,-204.6),[],170),
 # Dunlanders towns
     ("town_dunland_camp","Dunlander_Camp", icon_nomadcamp_b|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(45.9,-43.5),[],350),
@@ -133,26 +133,26 @@ parties = [
 # Umbar towns
     ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(12.9,65.9),[],175),
 # Imladris towns
-    ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.25,-145.1),[],170),
+    ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.5,-145.1),[],170),
 # Dol Guldur towns
-    ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.3,-131.1),[],170),
-    ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.6,-188.0),[],170),
+    ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.3,-131.1),[],170),
+    ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-46.6,-188.0),[],170),
 # Rhun towns
-    ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.2,-223.1),[],170),
+    ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-71.2,-223.1),[],170),
 #    ("town_rhun_encampment","Rhun_Encampment",        icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-94.09,-365.12),[],170),
-    ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-82.6,-188.8),[],170),
-    ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.5,-240.6),[],170),
+    ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.02,-189.9),[],170),
+    ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-68.63,-236.87),[],170),
 # Gundabad towns
-    ("town_gundabad_camp"       ,"Gundabad_Orc_Camp",        icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18.1,-234.5),[],170),
-    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.1,-246.1),[],170),
-    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.2,-243.6),[],170),
-    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.4,-213.3),[],170),
-    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.2,-194.0),[],170),
-    ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.6,-217.0),[],170),
+    ("town_gundabad_camp"       ,"Gundabad_Orc_Camp",        icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(30.4,-234.5),[],170),
+    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-25.1,-246.1),[],170),
+    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.2,-243.6),[],170),
+    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(22.1,-211.2),[],170),
+    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(18.9,-194.8),[],170),
+    ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-23.9,-217.0),[],170),
 # Dwarves towns
-    ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.7,-226.4),[],130),
+    ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-59.6,-226.4),[],130),
 #    ("town_erebor_mining_camp","Erebor Mining Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-66.4,-229.0),[],170),
-    ("town_ironhill_camp","Iron_Hills_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.6,-238.3),[],170),
+    ("town_ironhill_camp","Iron_Hills_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-49.6,-239.9),[],170),
 
 #    ("town_pelargir_port","Port",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.48,59.15),[],240),
 
@@ -203,7 +203,7 @@ parties = [
   ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
   ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
   ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.3,-194.0),[]), # Beorn's House
+  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-22.3,-194.0),[]), # Beorn's House
 
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),
@@ -256,21 +256,21 @@ parties = [
 #big rivers
   ("ford_cair_andros1"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
   ("ford_cair_andros2"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
-  ("ford_caras_galadhon","_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.42,-129.55),[],220),
-  ("ford_brown_lands"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-23.24,-109.76),[], 30),
+  ("ford_caras_galadhon","_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),
+  ("ford_brown_lands"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -18.7,-109.76),[], 30),
   ("ford_rauros"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.27, -32.95),[],145),
   ("ford_pelargir"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.91,  64.37),[],145),
   ("ford_edhellond"     ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 36.59,  48.24),[],145),
 #small rivers
-  ("ford_cerin_dolen"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  7.26,-130.72),[],220),
-  ("ford_erech"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  0.74,  31.75),[],145),
-  ("ford_isen1"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 49.35, -43.59),[],145),
-  ("ford_isen2"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 47.73, -47.21),[],145),
-  ("ford_rohan"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  7.70, -53.44),[],145),
-  ("ford_rohan2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -6.66, -12.31),[],145),
-  ("ford_fangorn"       ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 27.89, -66.35),[],145),
-  ("ford_fangorn2"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 14.57, -95.99),[],145),
-  ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 17.81,-142.13),[],145),
-  ("ford_moria2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-25.83,-189.36),[],145),
+  ("ford_cerin_dolen"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.46,-130.72),[],220),
+  ("ford_erech"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.74,  31.75),[],145),
+  ("ford_isen1"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.35, -43.6),[],145),
+  ("ford_isen2"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.73, -47.21),[],145),
+  ("ford_rohan"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7.70, -53.44),[],145),
+  ("ford_rohan2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.66, -12.31),[],145),
+  ("ford_fangorn"       ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
+  ("ford_fangorn2"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
+  ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
+  ("ford_moria2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
   
   ]

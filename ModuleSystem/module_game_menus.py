@@ -923,7 +923,7 @@ game_menus = [
          (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),(rest_for_hours,8,1000,0),
 		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
-         (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),
+         (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),(rest_for_hours,12,1000,0),
 		 (else_try),                                     (set_jump_mission,"mt_custom_battle"),
         (try_end),
         (jump_to_menu, "mnu_custom_battle_end"),
