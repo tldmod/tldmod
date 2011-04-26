@@ -1,4 +1,4 @@
-754
+777
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -650,13 +650,28 @@ qstr__fiefs:_{s0}_ (fiefs:_{s0})
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
+qstr_I_need_volunteers_wi I_need_volunteers_willing_to_follow_me_on_dangerous_missions.
+qstr_I_need_some_soldiers I_need_some_soldiers_to_replace_my_dead.
 qstr_Excellent_job_{s23}! Excellent_job,_{s23}!_I_wish_all_our_commanders_were_as_dedicated_as_you.^
 qstr_Nicely_done_{s23}. Nicely_done,_{s23}.
 qstr_Good_work_{s23}. Good_work,_{s23}.
 qstr_The_more_you_capture The_more_you_capture,_the_better,_{s23}.
 qstr_Caught_a_few_straggl Caught_a_few_stragglers,_{s23}?
+qstr_I_am_sorry_no_one_el I_am_sorry,_no_one_else_is_ready_to_go.^They_will_serve_{s22}_by_holding_the_defences_here.
+qstr_Tough_luck_but_we_do Tough_luck,_but_we_don't_have_any._Come_back_later.
+qstr_There_are_brave_sold There_are_brave_soldiers_willing_to_risk_their_life,_but_in_these_dark_times_I_cannot_afford_to_let_them_leave_the_defences_here.^Let_us_discuss_this_when_you_can_make_good_their_loss_by_contributing_resources_to_our_cause.
+qstr_We_have_some_spare_t We_have_some_spare_troops,_but_we_can't_afford_to_lose_them_to_the_likes_of_you._Go_and_earn_us_some_resources,_and_I_may_change_my_mind.
+qstr_There_are_brave_soldi There_are_brave_soldiers_here_volunteering_for_field_duty.^^I_think_I_can_let_a_few_of_them_go_with_you.
+qstr_There_are_spare_troo There_are_spare_troops_here_that_wouldn't_mind_a_little_blood-letting.^^I_can_let_a_few_of_them_go_with_you.
+qstr_Strenghten_defences_ Strenghten_defences_in_{s21}?_This_is_surely_welcome.
+qstr_Strenghten_defences_i Strenghten_defences_in_{s21}?_Well,_as_long_as_they_are_not_crippled,_why_not.
+qstr_Please_return_them_i Please_return_them_in_one_piece._I_personally_know_the_valor_of_each_one_of_them._And_here_we_need_every_soul.
+qstr_Don_t_let_them_all_d Don't_let_them_all_die_in_one_place._Except_the_cowards._Put_those_in_your_front_ranks,_you_know_the_drill_by_now.
 qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
+qstr_{s31}{reg9?Those:Tha {s31}{reg9?Those:That}_brave_{reg9?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^[earned_{reg11}_Res.Points_of_{s22}]
+qstr_{s31}{reg9?Those:That {s31}{reg9?Those:That}_useful_{reg9?troops:troop}_will_help_us_hold_{s21}.{s32}^[earned_{reg11}_Res.Points_of_{s22}]
+qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
 qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
 qstr_I_am_{s4}_the_ruler_ I_am_{s4},_the_ruler_of_{s6}
@@ -748,8 +763,16 @@ qstr_{s4}^We_are_{reg1?fo {s4}^We_are_{reg1?foraging:raiding}_around_{s11}.
 qstr_{s4}^We_are_patrolli {s4}^We_are_patrolling_around_{s11}.
 qstr_{s4}^We_are_carrying {s4}^We_are_carrying_supplies_from_{s11}_to_{s12}.
 qstr_{s4}^We_are_escortin {s4}^We_are_escorting_prisoners_to_{s12}.
+qstr_Greetings_do_you_nee Greetings,_do_you_need_reinforcements?
+qstr_You_don_t_look_too_s You_don't_look_too_strong,_do_you_need_troops?
+qstr_Goodbye_friends. Goodbye,_friends.
+qstr_See_you_later_if_you See_you_later_if_you_don't_get_killed.
 qstr_^{s22}_is_grateful_to ^{s22}_is_grateful_to_you,_{playername},_{s29}^
+qstr_{s31}{reg9?Those:That} {s31}{reg9?Those:That}_brave_{reg9?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^[earned_{reg11}_Res.Points_of_{s22}]
+qstr_{s31}{reg9?Those:That}_ {s31}{reg9?Those:That}_useful_{reg9?troops:troop}_will_help_us_wreak_more_havoc.{s32}^[earned_{reg11}_Res.Points_of_{s22}]
 qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
+qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
+qstr_Try_not_getting_your Try_not_getting_yourself_killed.
 qstr_{s4}_Surrender_or_di {s4}_Surrender_or_die!
 qstr_{s4}_Attack_and_you_ {s4}_Attack,_and_you_will_pay_dearly!

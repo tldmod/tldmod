@@ -1723,8 +1723,15 @@ dialogs = [
  ],
 
 [anyone|plyr,"player_hire_troop", 
-	[(party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0)], 
-	"I need volunteers willing to follow me on dangerous missions.", "player_hire_troop_take", [
+	[(party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+     (try_begin),
+       (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+       (str_store_string, s4, "@I need volunteers willing to follow me on dangerous missions."),
+     (else_try),
+       (str_store_string, s4, "@I need some soldiers to replace my dead."),
+     (try_end),
+    ], 
+	"{s4}", "player_hire_troop_take", [
 		# prepare party to recruit  from
 		(party_get_slot, "$hiring_from", "$current_town", slot_town_volunteer_pt ),
 		(assign, "$num_hirable", 0),
@@ -1787,38 +1794,61 @@ dialogs = [
 
 
 [anyone,"player_hire_troop_take", 
-  [(eq,"$num_hirable" ,0)], # no one wants to join
-  "I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here.", 
+  [(eq,"$num_hirable" ,0),
+   (try_begin),
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+     (str_store_string, s4, "@I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here."),
+   (else_try),
+     (str_store_string, s4, "@Tough luck, but we don't have any. Come back later."),
+   (try_end),
+  ], # no one wants to join
+  "{s4}", 
   "player_hire_troop_nextcycle", []
 ],
 
 [anyone,"player_hire_troop_take", 
-  [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),(eq, reg26, 1)], # these who want to join cost too much -- player same faction
-  "There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here, or to lose one more soldier.^^Not even to let them fight under your command. Sorry.", 
+  [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),
+   (try_begin),
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+     (str_store_string, s4, "@There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^Let us discuss this when you can make good their loss by contributing resources to our cause."),
+   (else_try),
+     (str_store_string, s4, "@We have some spare troops, but we can't afford to lose them to the likes of you. Go and earn us some resources, and I may change my mind."),
+   (try_end),
+  ], # these who want to join cost too much
+  "{s4}", 
   "player_hire_troop_nextcycle", []
 ],
 
-[anyone,"player_hire_troop_take", 
-  [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),(eq, reg26, 0)], # these who want to join cost too much -- player other faction
-  "There are brave soldiers here willing to risk their life, but none willing to fight under your command, I'm afraid...^^We are {s22}, not {s25} soldiers.", 
-  "player_hire_troop_nextcycle", []
-],
 
 [anyone,"player_hire_troop_take", 
 	[(gt,"$num_hirable" ,0),   # there's someone to hire...
-	 (store_troop_gold, ":cur_gold", "$g_player_troop"), (le,"$cheapest_join",":cur_gold"),], # and player can afford it
-	"There are brave soldiers here volunteering for field duty.^^I think can let a few of them go with you.", 
-	"player_hire_troop_pre_pre_nextcycle", [[change_screen_buy_mercenaries]]
+	 (store_troop_gold, ":cur_gold", "$g_player_troop"), (le,"$cheapest_join",":cur_gold"),
+     (try_begin),
+       (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+       (str_store_string, s4, "@There are brave soldiers here volunteering for field duty.^^I think I can let a few of them go with you."),
+     (else_try),
+       (str_store_string, s4, "@There are spare troops here that wouldn't mind a little blood-letting.^^I can let a few of them go with you."),
+     (try_end),
+     ], # and player can afford it
+	"{s4}", 
+	"player_hire_troop_pre_pre_nextcycle", [(change_screen_buy_mercenaries)]
 ],
 
  [anyone,"player_hire_troop_give", 
-	 [],
-	 "Strenghten defences in {s21}? This is surely welcome. ", 
-	 "player_hire_troop_reunite", [[change_screen_give_members]]
+	 [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Strenghten defences in {s21}? This is surely welcome."),
+        (else_try),
+          (str_store_string, s4, "@Strenghten defences in {s21}? Well, as long as they are not crippled, why not."),
+        (try_end),
+     ],
+	 "{s4}", 
+	 "player_hire_troop_reunite", [(change_screen_give_members)]
  ],
 
  [anyone,"player_hire_troop_pre_pre_nextcycle", [ ], 
-    "Let me check the soldier roster...", 
+    "Let me check the troop roster...", 
     "player_hire_troop_pre_nextcycle", []
  ],
 
@@ -1829,13 +1859,20 @@ dialogs = [
  ],
 
  [anyone,"player_hire_troop_pre_nextcycle", 
-	 [], # party increased size 
-    "Please return them in one piece. I personally know the valor of each one of them. And here we need every soul.", 
+	 [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Please return them in one piece. I personally know the valor of each one of them. And here we need every soul."),
+        (else_try),
+          (str_store_string, s4, "@Don't let them all die in one place. Except the cowards. Put those in your front ranks, you know the drill by now."),
+        (try_end),
+     ], # party increased size 
+    "{s4}", 
     "player_hire_troop_nextcycle", []
  ],
 
  [anyone,"player_hire_troop_reunite", [ ], 
-    "Let me check the soldier roster...", 
+    "Let me check the troop roster...", 
     "player_hire_troop_reunite_1", [
 	]
  ],
@@ -1863,17 +1900,27 @@ dialogs = [
 		(else_try),
 			(str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),
 		(try_end),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+        (else_try),
+          (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us hold {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+        (try_end),
 	 ], # party decreased size 
-    "{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]", 
+    "{s4}", 
     "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", reg11),]
  ],
 
  [anyone|plyr,"player_hire_troop_reunite_2", 
-	 [ (try_begin),(eq, reg26, 1), #player is of the same faction
-			(str_store_string, s31, "@It is my duty to protect our people."),
-		(else_try),
-			(str_store_string, s31, "@It is my duty to protect our allies."),
-		(try_end), 
+	 [ (try_begin),
+         (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		 (str_store_string, s31, "@I don't need them anyway, so save it."),
+	   (else_try),
+         (eq, reg26, 1), #player is of the same faction
+		 (str_store_string, s31, "@It is my duty to protect our people."),
+	   (else_try),
+		 (str_store_string, s31, "@It is my duty to protect our allies."),
+	   (try_end), 
 	],
     "{s31}", 
     "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]
@@ -7645,7 +7692,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (             party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")
                     ],
    "Good day, my {lord/lady}. Will you be visiting the prison?", "prison_guard_players",[]],
-  [anyone|plyr,"prison_guard_players", [],
+  [anyone|plyr,"prison_guard_players", [(neg|party_slot_eq, "$current_town", slot_town_prison, -1)],
    "Yes. Unlock the door.", "close_window",[(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
   [anyone|plyr,"prison_guard_players", [],
    "No, not now.", "close_window",[]],
@@ -7657,7 +7704,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"prison_guard_talk", [],
    "Who is imprisoned here?", "prison_guard_ask_prisoners",[]],
-  [anyone|plyr,"prison_guard_talk", [],
+  [anyone|plyr,"prison_guard_talk", [(neg|party_slot_eq, "$current_town", slot_town_prison, -1)],
    "I want to speak with a prisoner.", "prison_guard_visit_prison",[]],
 
   [anyone,"prison_guard_ask_prisoners", [],
@@ -7712,7 +7759,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (             party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")
                     ],
    "Your orders, {Lord/Lady}?", "castle_guard_players",[]],
-  [anyone|plyr,"castle_guard_players", [],
+  [anyone|plyr,"castle_guard_players", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)],
    "Open the door. I'll go in.", "close_window",[(call_script, "script_enter_court", "$current_town")]],
   [anyone|plyr,"castle_guard_players", [],
    "Never mind.", "close_window",[]],
@@ -7729,7 +7776,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                              (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop"),
                                              (eq, "$sneaked_into_town",1)],
    "Get lost before I lose my temper you vile beggar!", "close_window",[]],
-  [anyone|plyr,"castle_guard_sneaked_intro_1", [], "I want to enter the hall and speak to the lord.", "castle_guard_sneaked_intro_2",[]],
+  [anyone|plyr,"castle_guard_sneaked_intro_1", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)], "I want to enter the hall and speak to the lord.", "castle_guard_sneaked_intro_2",[]],
   [anyone|plyr,"castle_guard_sneaked_intro_1", [], "[Leave]", "close_window",[]],
   [anyone,"castle_guard_sneaked_intro_2", [], "Are you out of your mind, {man/woman}?\
  Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.", "close_window",[]],
@@ -7739,7 +7786,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                              # TLD center specific guards
                                              (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop")],
    "What do you want?", "castle_guard_intro_1",[]],
-  [anyone|plyr,"castle_guard_intro_1", [],
+  [anyone|plyr,"castle_guard_intro_1", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)],
    "I want to enter the hall and speak to the lord.", "castle_guard_intro_2",[]],
   [anyone|plyr,"castle_guard_intro_1", [],
    "Never mind.", "close_window",[]],
@@ -11784,8 +11831,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player rank title with this faction
    ]],
 
-  [anyone|plyr,"party_encounter_friend", [(gt,"$tld_war_began",0)],
-   "Greetings, do you need reinforcements?", "party_reinforce", [
+  [anyone|plyr,"party_encounter_friend", [
+        (gt,"$tld_war_began",0),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Greetings, do you need reinforcements?"),
+        (else_try),
+          (str_store_string, s4, "@You don't look too strong, do you need troops?"),
+        (try_end),        
+        ],
+   "{s4}", "party_reinforce", [
    #init from TLD recruiting in city - modified
 		# prepare strings useful in the folowing dialog
 		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: Party faction name
@@ -11796,10 +11851,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 		# just to see if someone can be given away: backup party, then see if troops which can be given away 
 		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
 		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction"),
-        
    ]],
-  [anyone|plyr,"party_encounter_friend", [],
-   "Goodbye, friends.", "close_window", [(assign, "$g_leave_encounter",1)]],
+  [anyone|plyr,"party_encounter_friend", [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Goodbye, friends."),
+        (else_try),
+          (str_store_string, s4, "@See you later if you don't get killed."),
+        (try_end),
+  ],
+   "{s4}", "close_window", [(assign, "$g_leave_encounter",1)]],
 
  [anyone,"party_reinforce", [
      #prevent some exploitation by placing caps on party size
@@ -11866,13 +11927,22 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 		(else_try),
 		  (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
 		(try_end),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
+        (else_try),
+          (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
+        (try_end),
 	 ], # party decreased size 
-    "{s31}{reg9?Those:That} {reg9?soldiers:soldier} will surely help us.{s32}^[earned {reg11} Res.Points of {s22}]", 
+    "{s4}", 
     "party_reinforce_check_2", [(call_script, "script_troop_add_gold_faction", "trp_player", reg11, "$g_encountered_party_faction")]
  ],
 
  [anyone|plyr,"party_reinforce_check_2", 
 	[ (try_begin),
+        (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		(str_store_string, s31, "@I don't need them anyway, so save it."),
+	  (else_try),
         (eq, reg26, 1), #player is of same faction
 		(str_store_string, s31, "@It is my duty to help our people."),
 	  (else_try),
@@ -11883,8 +11953,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]
  ],
 
- [anyone,"party_reinforce_end", [],
-    "Good luck in your travels.", "close_window", [(assign, "$g_leave_encounter",1)]],
+ [anyone,"party_reinforce_end", [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Good luck in your travels."),
+        (else_try),
+          (str_store_string, s4, "@Try not getting yourself killed."),
+        (try_end),
+    ],
+    "{s4}", "close_window", [(assign, "$g_leave_encounter",1)]],
 
 
 #Enemy faction party

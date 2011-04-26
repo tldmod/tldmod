@@ -7351,6 +7351,10 @@ game_menus = [
                (assign, ":override_state", af_override_all),
              (try_end),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 0, ":override_state"),
+             (try_begin),
+               (eq, "$current_town", "p_town_moria"), #no mounts in cave towns
+               (mission_tpl_entry_set_override_flags, "mt_town_center", 1, ":override_state"),
+             (try_end),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 2, ":override_state"),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 3, ":override_state"),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 4, ":override_state"),
