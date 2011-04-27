@@ -9593,9 +9593,29 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (call_script, "script_end_quest", "qst_deal_with_night_bandits"),
     ]],
 
+    
+  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
+                              (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$g_encountered_party"),
+                              (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+                              (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
+                              (store_item_kind_count, ":item_count", ":quest_target_item"),
+                              (ge, ":item_count", ":quest_target_amount"),
+                              (assign, reg9, ":quest_target_amount"),
+                              (str_store_item_name, s4, ":quest_target_item"),
+                             ],
+   "Here's your food, {reg9} units of {s4}.", "mayor_deliver_food",[]],
+   
+  [anyone,"mayor_deliver_food", [],
+   "Very nice work, {playername}, our food stores are full again and nobody will starve for now.", "mayor_deliver_food_completed",
+   [
+     (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+     (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
+     (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
+     (call_script, "script_finish_quest", "qst_deliver_food", 100),
+    ]],
 
-  [anyone|plyr,"lord_deal_with_night_bandits_completed", [],
-   "It was my pleasure, {s65}.", "close_window",[]],
+  [anyone|plyr,"mayor_deliver_food_completed", [],
+   "I do what I can.", "close_window",[]],
 
 # Ryan BEGIN
   [anyone,"mayor_begin", [(check_quest_active, "qst_deal_with_looters"),
@@ -9986,6 +10006,36 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
   [anyone|plyr,"merchant_quest_brief_deliver_wine", [], "I am afraid I can't carry all that cargo now.", "merchant_quest_stall",[]],
+  
+  # deliver_food:
+  [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], "You're looking for a job?\
+ Actually I was looking for someone to supply us with {s4}.\
+ Perhaps you can do that...", "merchant_quest_brief",
+   [(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+    (str_store_item_name, s4, ":quest_target_item"),
+    ]],
+
+  [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_food")],
+   "Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.\
+ I need someone to bring us {reg5} units of {s6} in 10 days, or we'll begin to starve.\
+ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",
+   [(quest_get_slot, reg5, "qst_deliver_food", slot_quest_target_amount),
+    (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+    (str_store_troop_name, s9, "$g_talk_troop"),
+    (str_store_party_name_link, s3, "$g_encountered_party"),
+    (str_store_item_name, s6, ":quest_target_item"),
+    (setup_quest_text,"qst_deliver_food"),
+    (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days."),
+    #s2 should not be changed until the decision is made
+   ]],
+
+  [anyone|plyr,"merchant_quest_brief_deliver_food", [],
+      "Alright. I will requisition the food and bring it to you.", "merchant_quest_taken",
+   [
+    (call_script, "script_start_quest", "qst_deliver_food", "$g_talk_troop"),
+    ]],
+
+  [anyone|plyr,"merchant_quest_brief_deliver_food", [], "I am too busy to carry around food.", "merchant_quest_stall",[]],
 
 #escort merchant caravan:
   [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_escort_merchant_caravan")], "You're looking for a job?\

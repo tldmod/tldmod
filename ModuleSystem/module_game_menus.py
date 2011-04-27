@@ -7403,7 +7403,7 @@ game_menus = [
       #(party_slot_eq, "$current_town", slot_horse_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_horse_merchant, "trp_no_troop"),
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
-       "Visit the {s61} Stables.",
+       "Visit the {s61} Stables and Warehouse.",
        [
            (party_get_slot, ":merchant_troop", "$current_town", slot_town_horse_merchant),
            (change_screen_trade, ":merchant_troop"),

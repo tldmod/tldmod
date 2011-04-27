@@ -5065,7 +5065,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_dispatch_scouts"),
+#(assign, ":quest_no", "qst_deliver_food"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5273,6 +5273,27 @@ scripts = [
           #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
           (assign, ":quest_expiration_days", 4),
+          (assign, ":quest_dont_give_again_period", 15),
+          (assign, ":result", ":quest_no"),
+        (else_try),
+          (eq, ":quest_no", "qst_deliver_food"),
+          (store_random_in_range, ":quest_target_amount", 7, 12),
+          (store_random_in_range, ":quest_target_item", normal_food_begin, food_end),
+          #empty merchant store of that food - done here and not in dialogs to prevent exploit
+          (party_get_slot, ":center_merchant", ":giver_center_no", slot_town_merchant), #horse+goods guy
+          (try_begin),
+            (neq, ":center_merchant", "trp_no_troop"),
+            (store_item_kind_count, ":num_items", ":quest_target_item", ":center_merchant"),
+            (ge, ":num_items", 1),
+            (troop_remove_items, ":center_merchant", ":quest_target_item", ":num_items"),
+            (troop_sort_inventory, ":center_merchant"),
+          (try_end),
+          (assign, ":quest_target_center", ":giver_center_no"),
+          (store_item_value, ":item_value", ":quest_target_item"),
+          (val_mul, ":item_value", 150), (val_div, ":item_value", 100), #50% profit
+          (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
+          (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
+          (assign, ":quest_expiration_days", 10),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
 # Lady quests
@@ -10250,6 +10271,10 @@ scripts = [
         (eq, ":quest_no", "qst_deal_with_night_bandits"),
         (assign, ":quest_return_penalty", -1),
         (assign, ":quest_expire_penalty", -1),
+      (else_try),
+        (eq, ":quest_no", "qst_deliver_food"),
+        (assign, ":quest_return_penalty", -2),
+        (assign, ":quest_expire_penalty", -4),
       
       (else_try),
         (eq, ":quest_no", "qst_follow_spy"),

@@ -171,6 +171,16 @@ triggers = [
               (neq, ":cur_goods", "itm_human_meat"),
               (this_or_next|eq, ":is_elf_faction", 1),
               (neq, ":cur_goods", "itm_lembas"),
+              
+              (assign, ":quest_prevents", 0),
+              (try_begin), # don't allow this food to generate if the quest says there is a shortage
+                (check_quest_active, "qst_deliver_food"),
+                (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, ":cur_center"),
+                (quest_slot_eq, "qst_deliver_food", slot_quest_target_item, ":cur_goods"),
+                (assign, ":quest_prevents", 1),
+              (try_end),
+              (eq, ":quest_prevents", 0),
+              
               (set_item_probability_in_merchandise,":cur_goods",100),
             (else_try),
               (set_item_probability_in_merchandise,":cur_goods",0),

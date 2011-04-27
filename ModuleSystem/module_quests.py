@@ -203,12 +203,15 @@ quests = [
  # {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.\
  # In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made."
   # ),
- ("deal_with_looters", "Deal with tribal orcs", qf_random_quest,
+ ("deal_with_looters", "Deal with Tribal Orcs", qf_random_quest,
   "The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}."
   ),
  ("deal_with_night_bandits", "Deal with Rogue Goblins", qf_random_quest,
   "The Elder of {s14} has asked you to deal with night goblins at {s14}."
   ),
+ ("deliver_food", "Supply {s3} with {reg5} Units of {s6}", qf_random_quest,
+  "The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days."
+  ), #not done
 
 ############
 # Village Elder quests
