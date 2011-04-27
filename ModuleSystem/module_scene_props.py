@@ -1978,4 +1978,10 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
 	(prop_instance_get_position, pos1, ":instance_no"),
 	(particle_system_add_new,"psys_scene_fog",pos1)]),]),
+("elf_galadriel_table", 0, "galadriel_table", "0", []),
+("elf_lamp_lorien_1", 0, "lamp_lorien_1", "0", []),
+("elf_lamp_lorien_2", 0, "lamp_lorien_2", "0", []),
+("elf_waterplant", 0, "waterplant", "0", []),
+("elf_statue", 0, "statue", "0", []),
+
 ]

@@ -96,7 +96,7 @@ parties = [
 # Mordor towns
     ("town_morannon","Morannon",              icon_morannon   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.9,-34.2),[],170),
     ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.3,23.8),[],170),
-    ("town_cirith_ungol","Cirith_Ungol",      icon_cirithungol|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-69.5,18.8),[],170),
+    ("town_cirith_ungol","ORc_Patrol_Camp",   icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
     ("town_east_osgiliath","East_Osgiliath",icon_east_osgilliath|pf_tld_down,no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.2,20.6),[],0),
     ("town_orc_sentry_camp","Orc_Sentry_Camp",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.4,30.4),[],170),
 # Isengard towns
@@ -129,7 +129,7 @@ parties = [
 # Haradrim towns
     ("town_harad_camp","Haradrim_Camp",    icon_haradcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.9,67.7),[],170),
 # Khand towns
-    ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
+    ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.6,-39.4),[],170),
 # Umbar towns
     ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(12.9,65.9),[],175),
 # Imladris towns
@@ -202,8 +202,8 @@ parties = [
 # central positions in theaters used to calculate advance camp positions
   ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
   ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
-  ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -7.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-22.3,-194.0),[]), # Beorn's House
+  ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
+  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.7,-194.0),[]), # Beorn's House
 
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),
