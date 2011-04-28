@@ -2266,14 +2266,15 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rohan_rumor_9", "No army fights Rohan without pikes and spears to set against our horsemen.  Saruman will cut down the whole Fangorn forest equipping his armies before this war is done."),
 ("rohan_rumor_10", "Being the best horsemen in the realm starts with raising the best horses."),
 ("rohan_rumor_11", "Most of the horses for sale in Gondor came from us. They prefer a slightly stronger, slower horse that can carry a little more armor."),
-("rohan_rumor_12", "orses are the backbone of our economy, you know. Everybody gets their horses from us!"),
+("rohan_rumor_12", "Horses are the backbone of our economy, you know. Everybody gets their horses from us!"),
 ("rohan_rumor_13", "Orcs are tough but don't wear much protection. They're no match for a good axe."),
 ("rohan_rumor_14", "Our throwing axes and spears are bulky, but how many chances do your cavalry have to throw a missile before they ride down the foe? Make your one shot count by throwing something with some heft."),
 ("rohan_rumor_15", "Hitting an orc with an arrow loosed from the back of a horse looks difficult because it is, but the price of charging a rank of long pikes is higher."),
 ("rohan_rumor_16", "Gondor practices archery. We practice horse archery. Dunlendings practice neither."),
 ("rohan_rumor_17", "Many of Saruman's orcs are deadly archers. Many are not. A wise cavalry commander shouldn't wait to discover which is which."),
+("rohan_rumor_18", "If everyone traded horses for wargs tomorrow Rohan's children would be thrown into poverty the day after. But then who'd want to ride a warg?"),
 
-("gondor_rumor_begin", "If everyone traded horses for wargs tomorrow Rohan's children would be thrown into poverty the day after. But then who'd want to ride a warg?"),
+("gondor_rumor_begin", "There's no more beautiful a city in the Middle Earth than Minas Tirith."),
 ("gondor_rumor_2", "Here in Gondor there is nothing under the sun we don't make, build, or grow in some quantity."),
 ("gondor_rumor_3", "We speculate that food is the orcs' most limiting resource. That would explain the cannibalism, wouldn't it?"),
 ("gondor_rumor_4", "Rohan has a reputation for its horses, but they also produce an abundance of basic foods at lower cost than Gondor. It may be bland, but it keeps their armies in the field and their people hard at work."),
@@ -2285,11 +2286,11 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("gondor_rumor_10", "Between Sauron and Saruman it is only Saruman who exhibits greed in the conventional sense. He'll deal with anyone and do anything if there's profit in it. What he does with his money is anyone's guess, but rumor has it his agents are well-paid. Whether his lust for money is a sign of weakness or wisdom I cannot say."),
 ("gondor_rumor_11", "Dol Guldur ... a slave economy built mostly underground, that's all I know."),
 ("gondor_rumor_12", "Moria? Ahh, the treasures they used to bring out of there! They paid well, too, for food, supplies, wine and ale ... all that's gone, now."),
-("other_rumor_begin", "Moria? Ahh, the treasures they used to bring out of there! They paid well, too, for food, supplies, wine and ale ... all that's gone, now."),
+("last_rumor", "INVALID RUMOR"),
 
 ("tld_introduction","TLD Introduction - you should go to Edoras."),
 
-("tld_erebor_dungeon","The smell of death surrounds me. I'd better be careful"),
+("tld_erebor_dungeon","The smell of death surrounds this place. I'd better be careful."),
 ("tld_spear_hit","Ouch!"),    
 
 ]

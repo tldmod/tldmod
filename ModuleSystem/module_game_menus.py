@@ -1270,7 +1270,8 @@ game_menus = [
 
   
   ("character_report",0,
-   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
+   "^^^^^Character Renown: {reg5}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
+#   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
    "none",
    [
     (set_background_mesh, "mesh_ui_default_menu_window"),
@@ -1279,7 +1280,7 @@ game_menus = [
     (assign, ":party_size_limit", reg0),
     (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
     (assign, reg5, ":renown"),
-    (assign, reg6, "$player_honor"),
+    #(assign, reg6, "$player_honor"),
     (assign, reg7, ":party_size_limit"),
     (party_get_morale, reg8, "p_main_party"),
    ],
@@ -4240,7 +4241,7 @@ game_menus = [
               (party_count_companions_of_type, ":amount", "p_main_party", ":quest_object_troop"),
               (eq, ":amount", 0),
               (call_script, "script_abort_quest", "qst_escort_messenger", 1),
-              (call_script, "script_change_player_honor", -5),
+              #(call_script, "script_change_player_honor", -5),
             (try_end),
             
             (leave_encounter),
@@ -4293,7 +4294,7 @@ game_menus = [
           (try_begin),
             (check_quest_active, "qst_escort_messenger"),
             (call_script, "script_abort_quest", "qst_escort_messenger", 1),
-            (call_script, "script_change_player_honor", -5),
+            #(call_script, "script_change_player_honor", -5),
           (try_end),
 
           (try_begin),
@@ -7105,7 +7106,7 @@ game_menus = [
   ),
 
   ( "town",mnf_enable_hot_keys|city_menu_color,
-	"You arrived in {s60}.{s13}",
+	"You arrived in {s60}.{s12}{s13}",
     "none",
     code_to_set_city_background + [   
 		
@@ -7195,22 +7196,18 @@ game_menus = [
         #  (str_store_string,s10,"@You are at {s2}."),
         #(try_end),
         
-        #(str_clear, s12),
-        #(try_begin),
-          #(party_slot_eq,"$current_town",slot_party_type, spt_town),
-          #(party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
-          #(call_script, "script_describe_center_relation_to_s3", ":center_relation"),
-          #(assign, reg9, ":center_relation"),
-          #(str_store_string, s12, "@ {s3} ({reg9})."),
-        #(try_end),
-
-        (str_clear, s13),
-        (try_begin), 
-          (gt,"$entry_to_town_forbidden",0),
-          (str_store_string, s13, "@^^You have successfully sneaked in."),
+        (str_clear, s12),
+        (try_begin),
+          (party_slot_eq,"$current_town",slot_party_type, spt_town),
+          (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
+          (call_script, "script_describe_center_relation_to_s3", ":center_relation"),
+          (assign, reg9, ":center_relation"),
+          (str_store_string, s12, "@ {s3} ({reg9})."),
         (try_end),
 
-        #forbidden to enter?
+        (str_clear, s13),
+
+        #night?
         (try_begin), 
          (store_time_of_day,reg(12)),
          (ge,reg(12),5),
@@ -7218,8 +7215,13 @@ game_menus = [
          (assign,"$town_nighttime",0),
         (else_try),
          (assign,"$town_nighttime",1),
-         # (party_slot_eq,"$current_town",slot_party_type, spt_town),
-         # (str_store_string, s13, "str_town_nighttime"),
+         (party_slot_eq,"$current_town",slot_party_type, spt_town),
+         (str_store_string, s13, "str_town_nighttime"),
+        (try_end),
+        
+        (try_begin), 
+          (gt,"$entry_to_town_forbidden",0),
+          (str_store_string, s13, "@{s13}^^You have successfully sneaked in."),
         (try_end),
 
         #(assign,"$castle_undefended",0),

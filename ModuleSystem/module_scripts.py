@@ -290,11 +290,18 @@ scripts = [
 
 # script_rank_income_to_player
  # PlayerRewardSystem: rank_income (mtarini)
- # gives to player the income of his rank
+ # gives to player the income of his rank MV: and adds influence too
   ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
 		(faction_get_slot, ":rank", ":fac", slot_faction_rank),
+        
+        #MV: gain (daily) influence = rank/20
+        (faction_get_slot, ":influence", ":fac", slot_faction_influence),
+        (store_div, ":inf_increase", ":rank", 20),
+        (val_add, ":influence", ":inf_increase"),
+        (faction_set_slot, ":fac", slot_faction_influence, ":influence"),
+        
 		(val_div, ":rank", 100), 
 		(gt, ":rank", 0),
 		(call_script, "script_get_rank_title", ":fac"),
@@ -416,7 +423,7 @@ scripts = [
           (store_div, ":new", ":val", 100),
           (faction_set_slot, ":fac", slot_faction_rank,  ":val"),
           
-          # gain 1/10 influence
+          # gain influence = 1/10 rank  
           (faction_get_slot, ":val", ":fac", slot_faction_influence),
           (store_div, ":inf_dif", ":difference", 10),
           (val_add, ":val", ":inf_dif"),
@@ -1249,7 +1256,7 @@ scripts = [
         (party_set_slot, ":town_no", slot_town_walls, "scn_town_walls"),
         (party_set_slot, ":town_no", slot_town_store, "scn_town_store"),
         (party_set_slot, ":town_no", slot_town_alley, "scn_town_alley"),
-        (party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),
+        #(party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),
       (try_end),
 
 # Centers spawns init from ws_party_spawns_list in module_constants.py      
@@ -1546,7 +1553,7 @@ scripts = [
     ]),    
 
 
-  # script_refresh_volunteers_in_town (mtarini)
+  # script_refresh_volunteers_in_town (mtarini and others)
   ("refresh_volunteers_in_town",[
    (store_script_param_1, ":town"),
    (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
@@ -1592,6 +1599,11 @@ scripts = [
       (assign, ":is_orc_faction", 1),
       (val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
 	(try_end),
+    # town relations bonus +size*rel/100
+    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
+    (val_add, ":center_relation", 100),
+    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
+    
     (assign, ":ideal_size", ":to_add"),
 	
 	# compute how many soldiers to add to volunteers
@@ -3044,17 +3056,25 @@ scripts = [
 
 
   #script_setup_talk_info
-  # INPUT: $g_talk_troop, $g_talk_troop_relation
+  # INPUT: $g_talk_troop, $g_talk_troop_relation, $current_town (TLD)
   ("setup_talk_info",
-    [
-      (talk_info_set_relation_bar, "$g_talk_troop_relation"),
-      (str_store_troop_name, s61, "$g_talk_troop"),
+    [ 
+      (try_begin),
+        (is_between, "$g_talk_troop", mayors_begin, mayors_end),
+        (party_slot_eq, "$current_town", slot_town_elder, "$g_talk_troop"), #redundant, but doesn't hurt
+        (party_get_slot, ":relation", "$current_town", slot_center_player_relation),
+        (str_store_party_name, s61, "$current_town"),
+      (else_try),
+        (assign, ":relation", "$g_talk_troop_relation"),
+        (str_store_troop_name, s61, "$g_talk_troop"),
+      (try_end),
+      (talk_info_set_relation_bar, ":relation"),
       (str_store_string, s61, "@ {s61}"),
-      (assign, reg1, "$g_talk_troop_relation"),
+      (assign, reg1, ":relation"),
       (str_store_string, s62, "str_relation_reg1"),
       (talk_info_set_line, 0, s61),
       (talk_info_set_line, 1, s62),
-      (call_script, "script_describe_relation_to_s63", "$g_talk_troop_relation"),
+      (call_script, "script_describe_relation_to_s63", ":relation"),
       (talk_info_set_line, 3, s63),
   ]),
 
@@ -5150,7 +5170,11 @@ scripts = [
           (val_add, ":quest_gold_reward", 25),
           (val_mul, ":quest_gold_reward", 25),
           (val_div, ":quest_gold_reward", 20),
+          (assign, ":quest_xp_reward", ":quest_gold_reward"),
+          (val_mul, ":quest_xp_reward", 5),
+          (val_add, ":quest_xp_reward", 100),
           (store_random_in_range, ":quest_target_amount", 6, 12),
+          (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
           (assign, "$escort_merchant_caravan_mode", 0),
           (assign, ":result", ":quest_no"),
         (else_try),
@@ -5180,6 +5204,9 @@ scripts = [
           (val_mul, ":quest_gold_reward", ":multiplier"),
           (val_div, ":quest_gold_reward", 100),
           (val_mul, ":quest_gold_reward", 30),
+          (store_mul, ":quest_xp_reward", ":quest_gold_reward", 4),
+          (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
+		  (assign, ":quest_importance", 4),
           (store_item_value,"$qst_deliver_wine_debt",":quest_target_item"),
           (val_mul,"$qst_deliver_wine_debt",":quest_target_amount"),
           (val_mul,"$qst_deliver_wine_debt", 6),
@@ -5195,6 +5222,9 @@ scripts = [
           (val_mul, ":quest_gold_reward", 35),
           (val_div, ":quest_gold_reward",100),
           (val_mul, ":quest_gold_reward", 10),
+          (store_mul, ":quest_xp_reward", ":quest_gold_reward", 7),
+          (assign, ":quest_rank_reward", 5),
+		  (assign, ":quest_importance", 4),
           (assign, ":quest_expiration_days", 30),
           (assign, ":quest_dont_give_again_period", 30),
           (assign, ":result", ":quest_no"),
@@ -5228,6 +5258,10 @@ scripts = [
           (val_add, ":quest_gold_reward", 25),
           (val_mul, ":quest_gold_reward", 50),
           (val_div, ":quest_gold_reward", 20),
+          (store_div, ":quest_xp_reward", ":quest_gold_reward", 3),
+          (store_mul, ":quest_rank_reward", ":cur_target_dist", 8),
+          (val_div, ":quest_rank_reward", tld_max_quest_distance),
+          (assign, ":quest_importance", 8),
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 20),
           (assign, ":result", ":quest_no"),
@@ -5261,6 +5295,8 @@ scripts = [
           #(quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
           (assign, ":quest_gold_reward", 500),
           (assign, ":quest_xp_reward", 500),
+          (assign, ":quest_rank_reward", 6),
+          (assign, ":quest_importance", 2),
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 30),
           (assign, ":result", ":quest_no"),
@@ -5272,6 +5308,10 @@ scripts = [
           (party_set_slot, ":giver_center_no", slot_center_has_bandits, "trp_mountain_goblin"), #TLD: goblins
           #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
+          (assign, ":quest_gold_reward", 150),
+          (assign, ":quest_xp_reward", 200),
+          (assign, ":quest_rank_reward", 2),
+          (assign, ":quest_importance", 2),
           (assign, ":quest_expiration_days", 4),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
@@ -5293,6 +5333,7 @@ scripts = [
           (val_mul, ":item_value", 150), (val_div, ":item_value", 100), #50% profit
           (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
           (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
+          (store_div, ":quest_rank_reward", ":quest_target_amount", 3),
           (assign, ":quest_expiration_days", 10),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
@@ -5813,6 +5854,11 @@ scripts = [
             #(assign, ":quest_target_dist", reg1),
             (neq, ":quest_target_center", ":giver_center_no"),
             
+            (assign, ":quest_importance", 4),
+            (assign, ":quest_gold_reward", 300),
+            (assign, ":quest_xp_reward", 100),
+            (assign, ":quest_rank_reward", 13),
+            
             (store_random_in_range, ":quest_target_dna", 0, 1000000),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 30),
@@ -5967,9 +6013,12 @@ scripts = [
             (ge, ":player_level", 15),
             #(call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
             #(assign, ":quest_target_faction", reg0),
+            (assign, ":quest_gold_reward", 2000),
+            (assign, ":quest_xp_reward", 2500),
+            (assign, ":quest_rank_reward", 15),
+            (assign, ":quest_importance", 12),
             (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 80),
-            (assign, ":quest_gold_reward", 2000),
             (assign, ":result", ":quest_no"),
           (try_end),
         (else_try),
@@ -6022,8 +6071,9 @@ scripts = [
             (val_add, ":quest_target_amount", 8),
 
             (assign, ":quest_importance", 1),
-            (assign, ":quest_xp_reward", 300),
-            (assign, ":quest_gold_reward", 400),
+            (assign, ":quest_xp_reward", 200),
+            (assign, ":quest_gold_reward", 300),
+            (assign, ":quest_rank_reward", 10),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_dont_give_again_period", 30),
           (try_end),
@@ -6340,7 +6390,7 @@ scripts = [
             (assign, ":quest_importance", 12),
             (store_mul, ":quest_gold_reward", ":quest_target_amount", 100),
             (store_mul, ":quest_xp_reward", ":quest_target_amount", 40),
-            (store_mul, ":quest_rank_reward", ":quest_target_amount", 5),
+            (store_mul, ":quest_rank_reward", ":quest_target_amount", 4),
             
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 40),
@@ -8821,36 +8871,37 @@ scripts = [
     # script_troop_get_player_relation
     # Input: arg1 = troop_no
     # Output: reg0 = effective relation (modified by troop reputation, honor, etc.)
+#TLD: no reputation and honor
     ("troop_get_player_relation",
       [
         (store_script_param_1, ":troop_no"),
-        (troop_get_slot, ":reputation", ":troop_no", slot_lord_reputation_type),
+        #(troop_get_slot, ":reputation", ":troop_no", slot_lord_reputation_type),
         (troop_get_slot, ":effective_relation", ":troop_no", slot_troop_player_relation),
-        (assign, ":honor_bonus", 0),
-        (try_begin),
-          (eq,  ":reputation", lrep_quarrelsome),
-          (val_add, ":effective_relation", -3),
-        (try_end),
-        (try_begin),
-          (ge, "$player_honor", 0),
-          (try_begin),
-            (this_or_next|eq,  ":reputation", lrep_upstanding),
-            (             eq,  ":reputation", lrep_goodnatured),
-            (store_div, ":honor_bonus", "$player_honor", 3),
-          (try_end),
-        (try_end),
-        (try_begin),
-          (lt, "$player_honor", 0),
-          (try_begin),
-            (this_or_next|eq,  ":reputation", lrep_upstanding),
-            (             eq,  ":reputation", lrep_goodnatured),
-            (store_div, ":honor_bonus", "$player_honor", 3),
-          (else_try),
-            (eq,  ":reputation", lrep_martial),
-            (store_div, ":honor_bonus", "$player_honor", 5),
-          (try_end),
-        (try_end),
-        (val_add, ":effective_relation", ":honor_bonus"),
+        # (assign, ":honor_bonus", 0),
+        # (try_begin),
+          # (eq,  ":reputation", lrep_quarrelsome),
+          # (val_add, ":effective_relation", -3),
+        # (try_end),
+        # (try_begin),
+          # (ge, "$player_honor", 0),
+          # (try_begin),
+            # (this_or_next|eq,  ":reputation", lrep_upstanding),
+            # (             eq,  ":reputation", lrep_goodnatured),
+            # (store_div, ":honor_bonus", "$player_honor", 3),
+          # (try_end),
+        # (try_end),
+        # (try_begin),
+          # (lt, "$player_honor", 0),
+          # (try_begin),
+            # (this_or_next|eq,  ":reputation", lrep_upstanding),
+            # (             eq,  ":reputation", lrep_goodnatured),
+            # (store_div, ":honor_bonus", "$player_honor", 3),
+          # (else_try),
+            # (eq,  ":reputation", lrep_martial),
+            # (store_div, ":honor_bonus", "$player_honor", 5),
+          # (try_end),
+        # (try_end),
+        # (val_add, ":effective_relation", ":honor_bonus"),
         (assign, reg0, ":effective_relation"),
     ]),
   
@@ -9043,21 +9094,22 @@ scripts = [
         (call_script, "script_set_player_relation_with_faction", ":kingdom_no", ":player_relation"),
       (try_end),
   ]),
-  
+
+#TLD: never used, no honor  
   # script_change_player_honor
   # Input: arg1 = honor difference
   # Output: none
-  ("change_player_honor",
-    [
-      (store_script_param_1, ":honor_dif"),
-      (val_add, "$player_honor", ":honor_dif"),
-      (try_begin),
-        (gt, ":honor_dif", 0),
-        (display_message, "@You gain honour.", color_good_news),
-      (else_try),
-        (lt, ":honor_dif", 0),
-        (display_message, "@You lose honour.", color_bad_news),
-      (try_end),
+  # ("change_player_honor",
+    # [
+      # (store_script_param_1, ":honor_dif"),
+      # (val_add, "$player_honor", ":honor_dif"),
+      # (try_begin),
+        # (gt, ":honor_dif", 0),
+        # (display_message, "@You gain honour.", color_good_news),
+      # (else_try),
+        # (lt, ":honor_dif", 0),
+        # (display_message, "@You lose honour.", color_bad_news),
+      # (try_end),
 
 ##      (val_mul, ":honor_dif", 1000),
 ##      (assign, ":temp_honor", 0),
@@ -9084,7 +9136,7 @@ scripts = [
 ##        (val_div, ":honor_dif", 2),
 ##      (try_end),
 ##      (val_add, "$player_honor", ":honor_dif"),
-  ]),
+  # ]),
 
   # script_change_player_party_morale
   # Input: arg1 = morale difference
@@ -9324,6 +9376,7 @@ scripts = [
       
       (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop),
       (store_troop_faction, ":quest_faction", ":quest_giver"),
+      (quest_get_slot, ":quest_giver_center", ":quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_importance", ":quest_no", slot_quest_importance),
       (quest_get_slot, ":quest_xp_reward", ":quest_no", slot_quest_xp_reward),
       (quest_get_slot, ":quest_gold_reward", ":quest_no", slot_quest_gold_reward),
@@ -9348,7 +9401,12 @@ scripts = [
         (val_add, ":quest_importance", 1),
       (try_end),
       
-      (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
+      (try_begin),
+        (is_between, ":quest_giver", mayors_begin, mayors_end),
+        (call_script, "script_change_player_relation_with_center", ":quest_giver_center", ":quest_importance"),
+      (else_try),
+        (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
+      (try_end),
       
       (add_xp_as_reward, ":quest_xp_reward"),
       (call_script, "script_troop_add_gold_faction", "trp_player", ":quest_gold_reward", ":quest_faction"),

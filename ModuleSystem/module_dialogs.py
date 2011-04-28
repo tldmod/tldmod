@@ -894,7 +894,7 @@ dialogs = [
      (else_try),
        (call_script, "script_activate_deactivate_player_faction", -1),
      (try_end),
-     (call_script, "script_change_player_honor", -20),
+     #(call_script, "script_change_player_honor", -20),
      # (call_script, "script_fail_quest", "qst_rebel_against_kingdom"),
      # (call_script, "script_end_quest", "qst_rebel_against_kingdom"),
     ]],
@@ -2002,8 +2002,8 @@ dialogs = [
 
   [anyone|plyr,"defeat_lord_answer", [],
    "You have fought well. You are free to go.", "defeat_lord_answer_2",
-   [(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
-    (call_script, "script_change_player_honor", 3),
+   [#(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
+    #(call_script, "script_change_player_honor", 3),
     (call_script, "script_add_log_entry", logent_lord_defeated_but_let_go_by_player, "trp_player",  -1, "$g_talk_troop", "$g_talk_troop_faction")]],
 
   [anyone,"defeat_lord_answer_2", [],
@@ -2032,10 +2032,11 @@ dialogs = [
       (gt, "$g_comment_found", 0),
                     ],
    "{s42}", "party_encounter_lord_hostile_attacker", [
-                         (try_begin),
-                           (neq, "$log_comment_relation_change", 0),
-                           (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", "$log_comment_relation_change"),
-                         (try_end),
+                         #MV: no relation changes with enemy lords
+                         # (try_begin),
+                           # (neq, "$log_comment_relation_change", 0),
+                           # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", "$log_comment_relation_change"),
+                         # (try_end),
                          (assign, "$g_comment_found", 0),
                     ]],
 
@@ -2627,8 +2628,8 @@ dialogs = [
 	"The trees are alive! They assault our troops!","lord_investigate_fangorn_completed1",[] ],
 	
 	[anyone, "lord_investigate_fangorn_completed1",[],
-	"ktnxbye","close_window",[
-	(call_script, "script_end_quest", "qst_investigate_fangorn"),
+	"I suspected that all along. You have been of good service to me, {playername}.","close_window",[
+	(call_script, "script_finish_quest", "qst_investigate_fangorn", 100),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5)] ],
 
   [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
@@ -3120,6 +3121,7 @@ dialogs = [
      (call_script, "script_troop_add_gold", "trp_player", ":reward"),
      (val_div, ":reward", 5),
      (add_xp_as_reward, ":reward"),
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", 8),
      (call_script, "script_end_quest", "qst_deliver_cattle_to_army"),
      #Reactivating follow army quest
      (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -3149,6 +3151,7 @@ dialogs = [
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
 #     (call_script, "script_troop_add_gold", "trp_player", 100),
      (add_xp_as_reward, 100),
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", 6),
      (call_script, "script_end_quest", "qst_scout_waypoints"),
      #Reactivating follow army quest
      (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -3185,7 +3188,7 @@ dialogs = [
   [anyone|plyr,"lord_mission_told_deliver_cattle_to_army", [], "Very well, I can find you some {s4}.", "lord_mission_told_deliver_cattle_to_army_accepted",[]],
   [anyone|plyr,"lord_mission_told_deliver_cattle_to_army", [], "Sorry, sir, I have other plans.", "lord_mission_told_deliver_cattle_to_army_rejected",[]],
 
-  [anyone,"lord_mission_told_deliver_cattle_to_army_accepted", [], "Excellent! You know what to do, {playername}, now get to it. I need that cattle sooner rather than later.", "close_window",
+  [anyone,"lord_mission_told_deliver_cattle_to_army_accepted", [], "Excellent! You know what to do, {playername}, now get to it. I need that food sooner rather than later.", "close_window",
    [
      (call_script, "script_end_quest", "qst_follow_army"),
      (quest_get_slot, ":quest_target_item", "$g_random_army_quest", slot_quest_target_item),
@@ -3225,6 +3228,7 @@ dialogs = [
    []],
 
   [anyone,"lord_report_to_army_completed", [], "Excellent. I will send the word when I have a task for you. For the moment, just follow us and stay close. We'll be moving soon.", "close_window",[
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", 1),
      (call_script, "script_end_quest", "qst_report_to_army"),
      (quest_set_slot, "qst_report_to_army", slot_quest_giver_troop, "$g_talk_troop"),
      #TODO: Change this value
@@ -3437,11 +3441,15 @@ dialogs = [
    "Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.", "lord_pretalk",
    [(quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),
     (party_add_members, "p_main_party", ":quest_target_troop", 1),
-    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 3),
-    (add_xp_as_reward, 100),
-    (call_script, "script_end_quest", "qst_lend_companion"),
+    # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 3),
+    # (add_xp_as_reward, 100),
+    (call_script, "script_finish_quest", "qst_lend_companion", 100),
     (str_store_troop_name,s14,":quest_target_troop"),
     (troop_get_type, reg3, ":quest_target_troop"),
+    (try_begin),
+      (gt, reg3, 1), #MV: non-humans are male
+      (assign, reg3, 0),
+    (try_end),
     ]],
    
   # [anyone|plyr,"lord_talk",[(check_quest_active,"qst_collect_debt"),
@@ -3668,7 +3676,7 @@ dialogs = [
      (call_script, "script_finish_quest", "qst_deliver_message_to_enemy_lord", 100),
      #(quest_get_slot, ":quest_giver", "qst_deliver_message_to_enemy_lord", slot_quest_giver_troop),
      #(call_script, "script_change_player_relation_with_troop", ":quest_giver", 3),
-     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
+     #(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
      (assign, "$g_leave_encounter", 1),
      ]],
 
@@ -4234,11 +4242,11 @@ dialogs = [
   [anyone,"party_encounter_lord_hostile_ultimatum_surrender", [],
    "{s43}", "close_window", [
        (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default"),
-       (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
-       (try_begin),
-         (gt, "$g_talk_troop_relation", -10),
-         (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
-       (try_end),
+       # (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
+       # (try_begin),
+         # (gt, "$g_talk_troop_relation", -10),
+         # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+       # (try_end),
        (assign,"$encountered_party_hostile",1)]],
 
 
@@ -5204,11 +5212,11 @@ dialogs = [
        #(troop_set_slot, ":quest_target_troop", slot_troop_is_prisoner, 0),
        (troop_set_slot, ":quest_target_troop", slot_troop_prisoner_of_party, -1),
      # (try_end),
-     (quest_get_slot, ":reward", "qst_capture_enemy_hero", slot_quest_gold_reward),
-     (call_script, "script_troop_add_gold", "trp_player", ":reward"),
-     (add_xp_as_reward, 2500),
-     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 4),
-     (call_script, "script_end_quest", "qst_capture_enemy_hero"),
+     # (quest_get_slot, ":reward", "qst_capture_enemy_hero", slot_quest_gold_reward),
+     # (call_script, "script_troop_add_gold", "trp_player", ":reward"),
+     # (add_xp_as_reward, 2500),
+     # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 4),
+     (call_script, "script_finish_quest", "qst_capture_enemy_hero", 100),
    ]],
 
   [anyone|plyr,"capture_enemy_hero_thank_2", [],
@@ -5306,8 +5314,8 @@ dialogs = [
   
   [anyone|plyr,"lord_hunt_down_fugitive_success_2", [],
    "Let me take the money, {s65}. Thank you.", "lord_hunt_down_fugitive_reward_accept",[]],
-  [anyone|plyr,"lord_hunt_down_fugitive_success_2", [(faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good)],
-   "This is blood money. I can't accept it.", "lord_hunt_down_fugitive_reward_reject",[]],
+  # [anyone|plyr,"lord_hunt_down_fugitive_success_2", [(faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good)],
+   # "This is blood money. I can't accept it.", "lord_hunt_down_fugitive_reward_reject",[]],
 
 #Post 0907 changes begin
   [anyone,"lord_hunt_down_fugitive_reward_accept", [],
@@ -5316,26 +5324,26 @@ dialogs = [
        (val_add, ":insult_string", "str_lord_insult_default"),
        (str_store_string, s44, ":insult_string"),
 
-       (call_script, "script_troop_add_gold", "trp_player", 300),
-       (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
-       (call_script, "script_end_quest", "qst_hunt_down_fugitive"),
+       # (call_script, "script_troop_add_gold", "trp_player", 300),
+       # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+       (call_script, "script_finish_quest", "qst_hunt_down_fugitive", 100),
        ]],
 
-  [anyone,"lord_hunt_down_fugitive_reward_reject", [],
-   "You are a person for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
- An honourable sentiment, to be true. Regardless, you've my thanks for ridding me of that {s44}.", "lord_pretalk",[
+  # [anyone,"lord_hunt_down_fugitive_reward_reject", [],
+   # "You are a person for whom justice is its own reward, eh? As you wish it, {playername}, as you wish it.\
+ # An honourable sentiment, to be true. Regardless, you've my thanks for ridding me of that {s44}.", "lord_pretalk",[
 
-       (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
-       (val_add, ":insult_string", "str_lord_insult_default"),
-       (str_store_string, s44, ":insult_string"),
+       # (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
+       # (val_add, ":insult_string", "str_lord_insult_default"),
+       # (str_store_string, s44, ":insult_string"),
        
-       (call_script, "script_change_player_honor", 3),
-       (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
-       (call_script, "script_end_quest", "qst_hunt_down_fugitive"),
-       ]],
+       # #(call_script, "script_change_player_honor", 3),
+       # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+       # (call_script, "script_end_quest", "qst_hunt_down_fugitive"),
+       # ]],
 
   [anyone,"lord_hunt_down_fugitive_fail", [],
-   "It is a sad day when that {s44} manages to avoid the hand of justice yet again.\
+   "It is a sad day when that {s44} manages to avoid my grasp yet again.\
  I thought you would be able to do this, {playername}. Clearly I was wrong.", "lord_pretalk",
    [
     (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
@@ -8653,18 +8661,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
     (quest_get_slot, ":quest_giver_troop", "qst_deliver_wine", slot_quest_giver_troop),
     (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
-    (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
-    (assign, ":xp_reward", ":quest_gold_reward"),
-    (val_mul, ":xp_reward", 4),
-    (add_xp_as_reward, ":xp_reward"),
+    # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+    # (assign, ":xp_reward", ":quest_gold_reward"),
+    # (val_mul, ":xp_reward", 4),
+    # (add_xp_as_reward, ":xp_reward"),
     (assign, reg5, ":quest_gold_reward"),
     (str_store_item_name, s4, ":quest_target_item"),
     (str_store_troop_name, s9, ":quest_giver_troop"),
     
-    (quest_get_slot, ":giver_town", "qst_deliver_wine", slot_quest_giver_center),
-    (call_script, "script_change_player_relation_with_center", ":giver_town", 2),
+    # (quest_get_slot, ":giver_town", "qst_deliver_wine", slot_quest_giver_center),
+    # (call_script, "script_change_player_relation_with_center", ":giver_town", 2),
     (call_script, "script_change_player_relation_with_center", "$current_town", 1),
-    (call_script, "script_end_quest", "qst_deliver_wine"),
+    (call_script, "script_finish_quest", "qst_deliver_wine", 100),
     ]],
 
 	
@@ -9587,10 +9595,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "Very nice work, {playername}, you made short work of those lawless curs.\
  And here's a nice reward of 150 RPs.", "lord_deal_with_night_bandits_completed",
    [
-     (add_xp_as_reward,200),
-     (call_script, "script_troop_add_gold","trp_player", 150),
-     (call_script, "script_change_player_relation_with_center", "$current_town", 1),
-     (call_script, "script_end_quest", "qst_deal_with_night_bandits"),
+     # (add_xp_as_reward,200),
+     # (call_script, "script_troop_add_gold","trp_player", 150),
+     # (call_script, "script_change_player_relation_with_center", "$current_town", 1),
+     (call_script, "script_finish_quest", "qst_deal_with_night_bandits", 100),
     ]],
 
     
@@ -9663,8 +9671,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (quest_slot_ge,"qst_deal_with_looters",slot_quest_current_state,":total_looters"), # looters paid for >= total looters
       (quest_get_slot,":xp_reward","qst_deal_with_looters",slot_quest_xp_reward),
       (quest_get_slot,":gold_reward","qst_deal_with_looters",slot_quest_gold_reward),
+      (quest_get_slot,":rank_reward","qst_deal_with_looters",slot_quest_rank_reward),
       (add_xp_as_reward, ":xp_reward"),
       (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+      (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
       (call_script, "script_change_troop_renown", "trp_player", 1),
       (call_script, "script_change_player_relation_with_center", "$current_town", 5),
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
@@ -9757,15 +9767,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                           (check_quest_succeeded, "qst_move_cattle_herd"),
                           ],
    "Good to see you again {playername}. I have heard that you have delivered the people successfully.\
- I will tell the merchants how reliable you are.\
- And here is your pay, {reg8} denars.", "close_window",
+ I will tell our commander how reliable you are.\
+ And here is your pay, {reg8} RPs.", "close_window",
    [(quest_get_slot, ":quest_gold_reward", "qst_move_cattle_herd", slot_quest_gold_reward),
-    (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
-    (store_div, ":xp_reward", ":quest_gold_reward", 3),
-    (add_xp_as_reward, ":xp_reward"),
+    # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+    # (store_div, ":xp_reward", ":quest_gold_reward", 3),
+    # (add_xp_as_reward, ":xp_reward"),
     (call_script, "script_change_troop_renown", "trp_player", 1),
-    (call_script, "script_change_player_relation_with_center", "$current_town", 3),    
-    (call_script, "script_end_quest", "qst_move_cattle_herd"),
+    # (call_script, "script_change_player_relation_with_center", "$current_town", 3),    
+    (call_script, "script_finish_quest", "qst_move_cattle_herd", 100),
     (assign, reg8, ":quest_gold_reward"),
     ]],
   
@@ -9817,13 +9827,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  You are really as good as they say.\
  Here is your reward: {reg5} RPs.",
    "mayor_friendly_pretalk", [(quest_get_slot, ":quest_gold_reward", "qst_troublesome_bandits", slot_quest_gold_reward),
-                              (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
-                              (assign, ":xp_reward", ":quest_gold_reward"),
-                              (val_mul, ":xp_reward", 7),
-                              (add_xp_as_reward, ":xp_reward"),
-                              (call_script, "script_change_player_relation_with_center", "$current_town", 2),
+                              # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+                              # (assign, ":xp_reward", ":quest_gold_reward"),
+                              # (val_mul, ":xp_reward", 7),
+                              # (add_xp_as_reward, ":xp_reward"),
+                              # (call_script, "script_change_player_relation_with_center", "$current_town", 2),
                               (call_script, "script_change_troop_renown", "trp_player", 3),
-                              (call_script, "script_end_quest", "qst_troublesome_bandits"),
+                              (call_script, "script_finish_quest", "qst_troublesome_bandits", 100),
                               (assign, reg5, ":quest_gold_reward"),
                               ]],
 
@@ -10104,20 +10114,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  Here's your pay... {reg14} Resources.\
  Thanks for escorting us. Good luck.", "close_window",[(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
                                                        (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
-                                                       (quest_get_slot, ":quest_giver_center", "qst_escort_merchant_caravan", slot_quest_giver_center),
                                                        (quest_get_slot, ":quest_gold_reward", "qst_escort_merchant_caravan", slot_quest_gold_reward),
                                                        (party_set_ai_behavior, ":quest_target_party", ai_bhvr_travel_to_party),
                                                        (party_set_ai_object, ":quest_target_party", ":quest_target_center"),
                                                        (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
                                                        (str_store_party_name, s21, ":quest_target_center"),
-                                                       (call_script, "script_change_player_relation_with_center", ":quest_giver_center", 1),
-                                                       (call_script, "script_end_quest","qst_escort_merchant_caravan"),
                                                        (quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 2),
-                                                       (call_script, "script_troop_add_gold", "trp_player",":quest_gold_reward"),
-                                                       (assign, ":xp_reward", ":quest_gold_reward"),
-                                                       (val_mul, ":xp_reward", 5),
-                                                       (val_add, ":xp_reward", 100),
-                                                       (add_xp_as_reward, ":xp_reward"),
+                                                       (call_script, "script_finish_quest", "qst_escort_merchant_caravan", 100),
                                                        (call_script, "script_change_troop_renown", "trp_player", 2),
                                                        (assign, reg14, ":quest_gold_reward"),
                                                        (assign, "$g_leave_encounter", 1),
@@ -11633,8 +11636,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_village),
                                      (eq, "$welfare_inquired", 0)], "How is life here?", "town_dweller_ask_situation",[(assign, "$welfare_inquired", 1)]],
-  [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_town),
-                                     (eq, "$welfare_inquired", 0)], "How is life here?", "town_dweller_ask_situation",[(assign, "$welfare_inquired", 1)]],
+  # [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_town),
+                                     # (eq, "$welfare_inquired", 0)], "How is life here?", "town_dweller_ask_situation",[(assign, "$welfare_inquired", 1)]],
 
 
   [anyone,"town_dweller_ask_situation", [(call_script, "script_agent_get_town_walker_details", "$g_talk_agent"),

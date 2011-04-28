@@ -1040,15 +1040,7 @@ swadian_merc_parties_end   = "p_town_8_mercs"
 vaegir_merc_parties_begin  = "p_town_8_mercs"
 vaegir_merc_parties_end    = "p_zendar"
 
-##########################################################
-# Test : Tavern Recruitment Begin ########################
-##########################################################
-slot_town_mercs = slot_town_volunteer_pt #please don't leave dangerous test code around! was 66
-merc_parties_begin = "p_town_merc_1"
-merc_parties_end = "p_zendar"
-#########################################################
-# Test : Tavern Recruitment End #########################
-#########################################################
+
 arena_masters_begin    = "trp_brigand_arena_master"
 arena_masters_end      = "trp_troops_end"
 
@@ -1890,7 +1882,7 @@ tfr_name_strings_begin = "str_tfr_name_strings_begin"
 # TLD faction ranks end
 ###############################################
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)
- ("fac_gondor","str_gondor_rumor_begin","str_other_rumor_begin" ,"snd_gondor_ambiance" ,"snd_wind_ambiance"      ,"snd_gondor_occasional"),
+ ("fac_gondor","str_gondor_rumor_begin","str_last_rumor" ,"snd_gondor_ambiance" ,"snd_wind_ambiance"      ,"snd_gondor_occasional"),
  ("fac_rohan"  ,"str_rohan_rumor_begin","str_gondor_rumor_begin","snd_rohan_ambiance"  ,"snd_wind_ambiance"      ,"snd_rohan_occasional"),
  ("fac_isengard","str_default_rumor"   ,"str_rohan_rumor_begin" ,"snd_orcs_ambiance"   ,"snd_wind_ambiance"      ,"snd_urukhai_occasional"),
  ("fac_mordor"  ,"str_default_rumor"   ,"str_rohan_rumor_begin" ,0                     ,"snd_wind_ambiance"      ,"snd_orc_occasional"),

@@ -1,4 +1,4 @@
-778
+776
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -147,8 +147,6 @@ qstr_You_gained_{reg12}_r You_gained_{reg12}_renown.
 qstr_You_lose_{reg12}_ren You_lose_{reg12}_renown.
 qstr_Your_relation_with_{ Your_relation_with_{s1}_has_improved.
 qstr_Your_relation_with_{s Your_relation_with_{s1}_has_deteriorated.
-qstr_You_gain_honour. You_gain_honour.
-qstr_You_lose_honour. You_lose_honour.
 qstr_{s1}_has_declared_wa {s1}_has_declared_war_against_{s2}.
 qstr_{s2}_{reg3?was:is_cu {s2}_{reg3?was:is_currently}_at_{s3}.
 qstr_{s2}_{reg3?was:is}_t {s2}_{reg3?was:is}_travelling_to_{s3}_and_{reg4?she:he}_{reg3?was:should_be}_close_to_{s4}{reg3?:_at_the_moment}.
@@ -552,7 +550,7 @@ qstr_Luckily_some_of_your Luckily_some_of_your_companions_come_to_search_for_you
 qstr_Luckily_some_passing Luckily_some_passing_townspeople_find_you_lying_by_the_side_of_the_road,_and_recognise_you_as_something_other_than_a_simple_beggar._They_carry_you_to_the_nearest_inn_and_dress_your_wounds.
 qstr_You_fail_to_steal_an You_fail_to_steal_any_cattle.
 qstr_You_drive_away_{reg1 You_drive_away_{reg17}_{reg12?heads:head}_of_cattle_from_the_village's_herd.
-qstr_^^You_have_successfu ^^You_have_successfully_sneaked_in.
+qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr___{reg1}_Resource_pt _({reg1}_Resource_pts._per_night)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^

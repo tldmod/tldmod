@@ -96,7 +96,7 @@ parties = [
 # Mordor towns
     ("town_morannon","Morannon",              icon_morannon   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.9,-34.2),[],170),
     ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.3,23.8),[],170),
-    ("town_cirith_ungol","ORc_Patrol_Camp",   icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
+    ("town_cirith_ungol","Orc_Patrol_Camp",   icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
     ("town_east_osgiliath","East_Osgiliath",icon_east_osgilliath|pf_tld_down,no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.2,20.6),[],0),
     ("town_orc_sentry_camp","Orc_Sentry_Camp",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.4,30.4),[],170),
 # Isengard towns
