@@ -300,7 +300,7 @@ strings = [
 ##  ("you_are_in_castle","You are at the castle of "),
 ##  ("you_sneaked_into_town","You have sneaked into the town of "),
 
-  ("town_nighttime"," It is late at night and honest folk have abandoned the streets."),
+  ("town_nighttime"," It is late at night."),
   ("door_locked","The door is locked."),
   ("castle_is_abondened","The castle seems to be unoccupied."),
   ("town_is_abondened","The town has no garrison defending it."),

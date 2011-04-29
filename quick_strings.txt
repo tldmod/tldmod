@@ -1,4 +1,4 @@
-776
+777
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -684,6 +684,7 @@ qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._If_you_see_{s9}_again_tell_him_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.
 qstr_Give_me_that!_Hrmph!_ Give_me_that!_Hrmph!_You_are_a_useful_servant_to_your_masters,_{playername},_but_all_of_you_will_be_dead_before_long._Not_now_though,_so_scurry_off.
+qstr_You_spent_{reg0}_of_ You_spent_{reg0}_of_your_influence_with_{s1},_with_{reg1}_remaining.
 qstr_We_are_not_at_war_wi We_are_not_at_war_with_anyone.
 qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fighting_against_{s13}.
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.

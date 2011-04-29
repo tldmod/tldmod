@@ -5108,7 +5108,7 @@ game_menus = [
       ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
                      (eq,"$cant_sneak_into_town",0)],
-       "Disguise yourself and try to sneak into the town.",
+       "TEST: Disguise yourself and try to sneak into the town.",
        [
          (faction_get_slot, ":player_alarm", "$g_encountered_party_faction", slot_faction_player_alarm),
          (party_get_num_companions, ":num_men", "p_main_party"),

@@ -3884,10 +3884,15 @@ dialogs = [
 
   [anyone|plyr,"lord_talk",
    [
-     (eq, "$g_talk_troop_faction", "$players_kingdom"),
-     (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+     #(eq, "$g_talk_troop_faction", "$players_kingdom"),
+     #(faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
      #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+     
+     # TLD: give orders if you have some minimum faction influence
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #can't give orders to kings
+     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     (ge, ":influence", 10), #the lowest cost among the actions below
      ],
    "I have a new task for you.", "lord_give_order_ask",[]],
 
@@ -3897,29 +3902,41 @@ dialogs = [
 
 
 
-  [anyone|plyr,"lord_give_order", [],
-   "Follow me.", "lord_give_order_answer",
+  [anyone|plyr,"lord_give_order", [
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, 30),
+    ],
+   "Follow me. [Costs 30/{reg2} influence]", "lord_give_order_answer",
    [
      (assign, "$temp", spai_accompanying_army),
      (assign, "$temp_2", "p_main_party"),
+     (assign, "$tld_action_cost", 30),
      ]],
 
-  [anyone|plyr,"lord_give_order", [],
-   "Go to...", "lord_give_order_details_ask",
+  [anyone|plyr,"lord_give_order", [
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, 10),
+    ],
+   "Go to... [Costs 10/{reg2} influence]", "lord_give_order_details_ask",
    [
      (assign, "$temp", spai_holding_center),
+     (assign, "$tld_action_cost", 10),
      ]],
 
-  [anyone|plyr,"lord_give_order", [],
-   "Raid around the village of...", "lord_give_order_details_ask",
-   [
-     (assign, "$temp", spai_raiding_around_center),
-     ]],
+  # [anyone|plyr,"lord_give_order", [],
+   # "Raid around the village of...", "lord_give_order_details_ask",
+   # [
+     # (assign, "$temp", spai_raiding_around_center),
+     # ]],
 
-  [anyone|plyr,"lord_give_order", [],
-   "Patrol around...", "lord_give_order_details_ask",
+  [anyone|plyr,"lord_give_order", [
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, 15),
+    ],
+   "Patrol around... [Costs 15/{reg2} influence]", "lord_give_order_details_ask",
    [
      (assign, "$temp", spai_patrolling_around_center),
+     (assign, "$tld_action_cost", 15),
      ]],
 
   
@@ -3941,6 +3958,7 @@ dialogs = [
   [anyone|plyr|repeat_for_parties, "lord_give_order_details",
    [
      (store_repeat_object, ":party_no"),
+     (party_is_active, ":party_no"), #TLD
      (store_faction_of_party, ":party_faction", ":party_no"),
      (store_relation, ":relation", ":party_faction", "$players_kingdom"),
      (assign, ":continue", 0),
@@ -3949,7 +3967,8 @@ dialogs = [
        (try_begin),
          (this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_castle),
          (party_slot_eq, ":party_no", slot_party_type, spt_town),
-         (eq, ":party_faction", "$players_kingdom"),
+         #(eq, ":party_faction", "$players_kingdom"),
+         (eq, ":party_faction", "$g_talk_troop_faction"),
          (assign, ":continue", 1),
        (try_end),
      (else_try),
@@ -3962,7 +3981,8 @@ dialogs = [
      (else_try),
        (eq, "$temp", spai_patrolling_around_center),
        (try_begin),
-         (eq, ":party_faction", "$players_kingdom"),
+         #(eq, ":party_faction", "$players_kingdom"),
+         (eq, ":party_faction", "$g_talk_troop_faction"),
          (is_between, ":party_no", centers_begin, centers_end),
          (assign, ":continue", 1),
        (try_end),
@@ -4011,7 +4031,7 @@ dialogs = [
      (eq, ":continue", 0),
      #Meaning that hero does not want to follow player orders for a while.
      ],
-   "I am sorry. I need to attend my own business at the moment.", "lord_pretalk",
+   "I am sorry. I am needed somewhere else at the moment.", "lord_pretalk",
    [
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_state, spai_undefined),
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_object, -1),
@@ -4043,7 +4063,15 @@ dialogs = [
      (assign, "$g_leave_encounter", 1),
      ],
    "I will do that.", "close_window",
-   []],
+   [
+     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     (val_sub, ":influence", "$tld_action_cost"),
+     (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
+     (assign, reg0, "$tld_action_cost"),
+     (assign, reg1, ":influence"),
+     (str_store_faction_name, s1, "$g_talk_troop_faction"),
+     (display_message, "@You spent {reg0} of your influence with {s1}, with {reg1} remaining."),
+   ]],
 
   [anyone,"lord_give_order_answer_2",
    [
