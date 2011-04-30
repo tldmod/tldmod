@@ -311,7 +311,7 @@ items =[
 ["riv_helm_a","Rivendell_Coif",[("rivendell_coif_new",0)],itp_type_head_armor|itp_shop,0,980,weight(1)|head_armor(35)|difficulty(0),imodbits_plate],
 ["riv_helm_b","Rivendell_Helm",[("rivendellarcherhelmet",0)],itp_type_head_armor|itp_shop,0,980,weight(1)|head_armor(40)|difficulty(0),imodbits_plate],
 ["riv_helm_c","Rivendell_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,980,weight(1.2)|head_armor(55)|difficulty(0),imodbits_plate],
-#["riv_helm_d", "Rivendell Helm",[("elvenhelm_b",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_type_head_armor|0,0,3000,weight(1.2)|head_armor(65)|difficulty(0),imodbits_plate],
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,318,weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield,],
 ["riv_shield_b","Rivendell_Shield",[("riv_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,418,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
@@ -333,6 +333,9 @@ items =[
 ["riv_armor_med","Rivendell_Armor",[("rivendellnormalswordfighter",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1259,weight(12)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(0),imodbits_armor,],
 ["riv_armor_heavy","Rivendell_Armor",[("rivendelleliteswordfighter",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1259,weight(12)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(0),imodbits_armor,],
 ["riv_armor_h_archer","Rivendell_Armor",[("rivendellmountedarcher",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1259,weight(12)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(0),imodbits_armor,],
+["riv_armor_leader","Rivendell_Leader_Armor",[("rivendellleader",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(12)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(0),imodbits_armor,],
+["riv_armor_reward","Rivendell_Decorated_Armor",[("rivendellrewardarmour",0)],itp_type_body_armor|itp_covers_legs|0,0,6000,weight(12)|head_armor(2)|body_armor(50)|leg_armor(20)|difficulty(0),imodbits_armor,],
+["riv_boots","Rivendell_Boots",[("rivendell_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,174,weight(1.25)|leg_armor(16)|difficulty(0),imodbits_cloth],
 #####TLD GONDOR ITEMS##########
 ####ARMORS
 ["gon_footman","Gondor_Mail_Shirt",[("gondor_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,995,weight(17)|head_armor(0)|body_armor(16)|leg_armor(6)|difficulty(0),imodbits_cloth,],
@@ -1152,7 +1155,7 @@ items =[
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(40)|body_armor(55)|leg_armor(55)|difficulty(40),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(30),0],
 ["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,130,weight(225)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
-["empty_hands","empty hands",[("0",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(0),0],
-["empty_legs","empty legs",[("0",0)],itp_type_foot_armor|itp_unique,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
+["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(0),0],
+["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
 ["empty_head","empty head",[("0",0)],itp_type_head_armor|itp_unique|itp_covers_head,0,130,weight(225)|head_armor(0)|difficulty(0),0],
 ]

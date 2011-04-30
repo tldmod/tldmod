@@ -47,9 +47,16 @@ city_menu_color = menu_text_color(0xFFFFFFFF)  # city menu text color: white
 # sode spipped to set city meny background
 code_to_set_city_background = [
   (try_begin),(eq,"$g_encountered_party", "p_town_west_emnet"),(set_background_mesh, "mesh_town_west_emnet"),
-  (else_try),(eq,"$g_encountered_party", "p_town_isengard"),(set_background_mesh, "mesh_town_isengard"),
-  (else_try),(eq,"$g_encountered_party", "p_town_dol_guldur"),(set_background_mesh, "mesh_town_dol_guldur"),
-  (else_try),(set_background_mesh, "mesh_ui_default_menu_window"),
+   (else_try),(eq,"$g_encountered_party", "p_town_isengard"),(set_background_mesh, "mesh_town_isengard"),
+   (else_try),(eq,"$g_encountered_party", "p_town_dol_guldur"),(set_background_mesh, "mesh_town_dol_guldur"),
+   (else_try),(eq,"$g_encountered_party", "p_town_minas_tirith"),(set_background_mesh, "mesh_town_minas_tirith"),
+   (else_try),(eq,"$g_encountered_party", "p_town_morannon"),(set_background_mesh, "mesh_town_morannon"),
+   (else_try),(eq,"$g_encountered_party", "p_town_edoras"),(set_background_mesh, "mesh_town_edoras"),
+   (else_try),(eq,"$g_encountered_party", "p_town_pelargir"),(set_background_mesh, "mesh_town_pelargir"),
+   (else_try),(eq,"$g_encountered_party", "p_town_dol_amroth"),(set_background_mesh, "mesh_town_dol_amroth"),
+   (else_try),(eq,"$g_encountered_party", "p_town_west_osgiliath"),(set_background_mesh, "mesh_town_osgilliath"),
+   (else_try),(eq,"$g_encountered_party", "p_town_east_osgiliath"),(set_background_mesh, "mesh_town_osgilliath"),
+   (else_try),(set_background_mesh, "mesh_ui_default_menu_window"),
   (try_end),
 ]
 
