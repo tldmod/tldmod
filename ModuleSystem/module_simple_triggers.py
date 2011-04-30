@@ -1143,6 +1143,11 @@ simple_triggers = [
                (eq, ":commander_party", ":faction_marshall_party"),
                (assign, ":continue", 0),
              (try_end),
+             (try_begin),
+               (store_current_hours, ":cur_time"),
+               (party_slot_ge, ":cur_party", slot_party_follow_player_until_time, ":cur_time"), # MV: don't retreat if following orders
+               (assign, ":continue", 0),
+             (try_end),
              (eq, ":continue", 1),
              (assign, ":done", 0),
              (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
@@ -1834,7 +1839,7 @@ simple_triggers = [
          (neg|party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"),
          (party_set_slot, ":party_no", slot_party_commander_party, -1),
          (party_set_slot, ":party_no", slot_party_following_player, 0),
-         (assign,  ":dont_follow_period", 200),
+         (assign,  ":dont_follow_period", 48), #MV was 200
          (store_add, ":dont_follow_time", ":cur_time", ":dont_follow_period"),
          (party_set_slot, ":party_no", slot_party_dont_follow_player_until_time,  ":dont_follow_time"),
        (try_end),

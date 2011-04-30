@@ -3945,6 +3945,16 @@ dialogs = [
      (assign, "$tld_action_cost", 15),
      ]],
 
+  [anyone|plyr,"lord_give_order", [
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, 40),
+    ],
+   "Engage enemies around... [Costs 40/{reg2} influence]", "lord_give_order_details_ask",
+   [
+     (assign, "$temp", spai_raiding_around_center), #not really, changed later to spai_patrolling_around_center
+     (assign, "$tld_action_cost", 40),
+     ]],
+
   
 
   [anyone|plyr,"lord_give_order",
@@ -3966,35 +3976,35 @@ dialogs = [
      (store_repeat_object, ":party_no"),
      (party_is_active, ":party_no"), #TLD
      (store_faction_of_party, ":party_faction", ":party_no"),
-     (store_relation, ":relation", ":party_faction", "$players_kingdom"),
+     (store_relation, ":relation", ":party_faction", "$g_talk_troop_faction"),
+     (faction_get_slot, ":lord_theater", "$g_encountered_party_faction", slot_faction_active_theater),
      (assign, ":continue", 0),
      (try_begin),
        (eq, "$temp", spai_holding_center),
        (try_begin),
          (this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_castle),
          (party_slot_eq, ":party_no", slot_party_type, spt_town),
-         #(eq, ":party_faction", "$players_kingdom"),
          (eq, ":party_faction", "$g_talk_troop_faction"),
-         (assign, ":continue", 1),
-       (try_end),
-     (else_try),
-       (eq, "$temp", spai_raiding_around_center),
-       (try_begin),
-         (party_slot_eq, ":party_no", slot_party_type, spt_village),
-         (lt, ":relation", 0),
          (assign, ":continue", 1),
        (try_end),
      (else_try),
        (eq, "$temp", spai_patrolling_around_center),
        (try_begin),
-         #(eq, ":party_faction", "$players_kingdom"),
          (eq, ":party_faction", "$g_talk_troop_faction"),
          (is_between, ":party_no", centers_begin, centers_end),
          (assign, ":continue", 1),
        (try_end),
+     (else_try),
+       (eq, "$temp", spai_raiding_around_center),
+       (try_begin),
+         (party_slot_eq, ":party_no", slot_party_type, spt_town),
+         (lt, ":relation", 0),
+         (party_slot_eq, ":party_no", slot_center_theater, ":lord_theater"), # must be in active theater
+         (assign, ":continue", 1),
+       (try_end),
      (try_end),
      (eq, ":continue", 1),
-     (neq, ":party_no", "$g_encountered_party"),
+     #(neq, ":party_no", "$g_encountered_party"), #MV
      (str_store_party_name, s1, ":party_no")],
    "{s1}", "lord_give_order_answer",
    [
@@ -4047,6 +4057,11 @@ dialogs = [
    [],
    ".", "lord_give_order_answer_2",
    [
+     (try_begin),
+       (eq, "$temp", spai_raiding_around_center),
+       (assign, "$temp", spai_patrolling_around_center), # simply patrol around enemy town.. does this work?
+     (try_end),
+
      (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
      (call_script, "script_party_set_ai_state", ":party_no", "$temp", "$temp_2"),
      (try_begin),
@@ -4058,7 +4073,7 @@ dialogs = [
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_state, "$temp"),
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_object, "$temp_2"),
      #Checking if the order is accepted by the ai
-     (call_script, "script_recalculate_ai_for_troop", "$g_talk_troop"),
+     #(call_script, "script_recalculate_ai_for_troop", "$g_talk_troop"), #TLD: disabled! lords should always obey..
      ]],
 
   [anyone,"lord_give_order_answer_2",
@@ -4070,6 +4085,10 @@ dialogs = [
      ],
    "I will do that.", "close_window",
    [
+     (store_current_hours, ":cur_time"),
+     (store_add, ":obey_until_time", ":cur_time", 5*24), # commands last 5 days
+     (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
+     (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (val_sub, ":influence", "$tld_action_cost"),
      (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
@@ -4863,6 +4882,13 @@ dialogs = [
    "CHEAT:I want to suggest a course of action.", "lord_suggest_action_ask",[]],
 
   [anyone,"lord_tell_objective", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 1),
+                                  # insert this string where appropriate
+                                  (str_clear, s5),
+                                  (try_begin),
+                                    (store_current_hours, ":cur_time"),
+                                    (party_slot_ge, "$g_talk_troop_party", slot_party_follow_player_until_time, ":cur_time"), # MV: under orders
+                                    (str_store_string, s5, "@, under your orders"),
+                                  (try_end),
                                   (troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
   ],
    "What am I doing? What does it look like I'm doing?! I'm a prisoner here!", "lord_pretalk",[]],
@@ -4878,11 +4904,11 @@ dialogs = [
                                   (try_end),
                                   (is_between, ":cur_center_no", centers_begin, centers_end),
                                   ],
-   "We are resting at {s1}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+   "We are resting at {s1}{s5}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                               (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_holding_center)],
-   "We are travelling to {s1}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+   "We are travelling to {s1}{s5}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                                  (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_recruiting_troops)],
@@ -4890,7 +4916,7 @@ dialogs = [
                                                  (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_patrolling_around_center)],
-   "We are scouting for the enemy around {s1}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+   "We are scouting for the enemy around {s1}{s5}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                                       (str_store_party_name, s1, ":ai_object")]],
 
 #  [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_raiding_around_center)],
@@ -4906,21 +4932,21 @@ dialogs = [
                                                                (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_besieging_center)],
-   "We are besieging {s1}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+   "We are besieging {s1}{s5}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                                                (str_store_party_name, s1, ":ai_object")]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_engaging_army),
                                   (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                   (party_is_active, ":ai_object"),
                                   ],
-   "We are fighting against {s1}.", "lord_pretalk",
+   "We are fighting against {s1}{s5}.", "lord_pretalk",
    [
      (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
      (str_store_party_name, s1, ":ai_object")
      ]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_accompanying_army)],
-   "We are accompanying {s1}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+   "We are accompanying {s1}{s5}.", "lord_pretalk",[(party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
                                                       (str_store_party_name, s1, ":ai_object")]],
 
 

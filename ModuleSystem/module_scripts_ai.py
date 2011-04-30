@@ -2136,6 +2136,11 @@ ai_scripts = [
           (neg|faction_slot_eq, ":faction_no", slot_faction_ai_state, sfai_default),
           (assign, ":continue", 0),
         (try_end),
+        (try_begin),
+          (store_current_hours, ":cur_time"),
+          (party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"), # MV: don't calc if following orders
+          (assign, ":continue", 0),
+        (try_end),
         (eq, ":continue", 1),
         (call_script, "script_party_count_fit_for_battle", ":party_no"),
         (assign, ":party_fit_for_battle", reg0),

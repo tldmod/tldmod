@@ -296,9 +296,9 @@ scripts = [
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
 		(faction_get_slot, ":rank", ":fac", slot_faction_rank),
         
-        #MV: gain (daily) influence = rank/20
+        #MV: gain (daily) influence = rank/50
         (faction_get_slot, ":influence", ":fac", slot_faction_influence),
-        (store_div, ":inf_increase", ":rank", 20),
+        (store_div, ":inf_increase", ":rank", 50),
         (val_add, ":influence", ":inf_increase"),
         (faction_set_slot, ":fac", slot_faction_influence, ":influence"),
         
@@ -1549,7 +1549,7 @@ scripts = [
 
       #initialize game option defaults (see camp menu)
       (assign, "$g_crossdressing_activated", 0),
-      (assign, "$tld_option_formations", 0),
+      (assign, "$tld_option_formations", 1),
         
 	   # PlayerRewardSystem: end
     ]),    

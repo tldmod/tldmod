@@ -2541,7 +2541,7 @@ game_menus = [
 		(modify_visitors_at_site,"scn_random_scene_steppe_forest"),
         (reset_visitors),
        
-        (set_visitor,0,0),
+        (set_visitor,0,"trp_player"),
 		(store_random_in_range,":n_ents",0,3),(val_max,":n_ents",1), #  2 ents once in three
         (set_visitors,2,"trp_ent",":n_ents"), # just a troll to start with
 
