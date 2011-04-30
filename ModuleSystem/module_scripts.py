@@ -898,6 +898,7 @@ scripts = [
              (store_random_in_range, reg0,0,2), (this_or_next|eq, reg0, 0),  # wound 1 in 2 just wounded (and all heros)
              (troop_is_hero,":stack_troop"),
              (neg|troop_is_wounded,":stack_troop"),
+             # wound
              (party_wound_members,":party",":stack_troop",1),
              (try_begin),
                 (troop_is_hero,":stack_troop"),
@@ -909,7 +910,8 @@ scripts = [
              (else_try),
                 (val_add,":wounded",1),
              (try_end),
-           (else_try),
+           (else_try), #kill
+             (neg|troop_is_hero,":stack_troop"), #MV
              (party_remove_members,":party",":stack_troop",1),
              (val_add,":killed",reg0),
            (try_end),

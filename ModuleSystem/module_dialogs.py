@@ -2429,6 +2429,12 @@ dialogs = [
   [anyone|plyr ,"lord_invite_3", [],  "No, {s65}. I cannot serve you right now.", "lord_enter_service_reject",  []],
 
   [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
+                     (eq,"$talk_context",tc_town_talk),
+                     (eq, "$sneaked_into_town",1)
+                     ],
+   "Away with you, vile beggar.", "close_window",  []],
+  
+  [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                      (neq, "$g_talk_troop_met", 0),
                      (gt, "$g_time_since_last_talk", 24),
                      (gt, "$g_talk_troop_relation", 50),
@@ -9534,6 +9540,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Mayor talk (town elder)
 
+  [anyone ,"start", [(is_between,"$g_talk_troop",mayors_begin,mayors_end),
+                     (eq, "$sneaked_into_town",1)],
+   "Away with you, vile beggar.", "close_window",[]],
+   
   [anyone ,"start", [(is_between,"$g_talk_troop",mayors_begin,mayors_end),(eq,"$g_talk_troop_met",0),
                      (this_or_next|eq, "$players_kingdom", "$g_encountered_party_faction"),
                      (             eq, "$g_encountered_party_faction", "fac_player_supporters_faction"),],
@@ -11128,12 +11138,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 #Goods Merchants
+  [anyone ,"start", [(is_between,"$g_talk_troop",goods_merchants_begin,goods_merchants_end),
+                     (eq, "$sneaked_into_town",1)],
+   "Away with you, vile beggar.", "close_window",[]],
   
   [anyone ,"start", [(is_between,"$g_talk_troop",goods_merchants_begin,goods_merchants_end),
                      (party_slot_eq, "$current_town", slot_town_lord, "trp_player")],
    "{My lord/my lady}, you honour my humble shop with your presence.", "goods_merchant_talk",[]],
   [anyone ,"start", [(is_between,"$g_talk_troop",goods_merchants_begin,goods_merchants_end)],
-   "Welcome {sir/madam}. What can I do for you?", "goods_merchant_talk",[]],
+   "Welcome commander. What can I do for you?", "goods_merchant_talk",[]],
 
 #  [trp_salt_mine_merchant,"start", [], "Hello.", "goods_merchant_talk",[]],
 
@@ -11464,7 +11477,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"prisoner_chat", [], "Do not try running away or trying something stupid. I will be watching you.", "prisoner_chat_2",[]],
   [anyone,"prisoner_chat_2", [], "No, I swear I won't.", "close_window",[]],
 
-
+  [anyone,"start", [(this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+                    (this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),
+                    (             is_between,"$g_talk_troop",horse_merchants_begin, horse_merchants_end),
+                    (eq, "$sneaked_into_town",1)],
+   "Away with you, vile beggar.", "close_window",[]],
+                    
   [anyone,"start", [(party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
                     (this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     (this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),
