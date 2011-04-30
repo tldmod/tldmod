@@ -2289,7 +2289,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("gondor_rumor_12", "Moria? The dwarves mine there, don't they?"),
 ("gondor_rumor_13", "Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left."),
 ("gondor_rumor_14", "People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes."),
-("gondor_rumor_15", "The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told "No.", our soldiers are to protect the heart of the realm."),
+("gondor_rumor_15", "The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told, that our soldiers are to protect the heart of the realm."),
 ("gondor_rumor_16", "My brother is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me."),
 ("gondor_rumor_17", "There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock."),
 ("gondor_rumor_18", "We are truth-speakers, we men of Gondor. We boast seldom, and then perform or die trying."),
