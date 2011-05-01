@@ -168,7 +168,7 @@ scene_props = [
   ("pillow_b",0,"pillow_b","bo_pillow", []),
   ("pillow_c",0,"pillow_c","0", []),
 
-  ("interior_castle_g_square_keep_b",0,"interior_castle_g_square_keep_b","bo_interior_castle_g_square_keep_b", []),
+  ("interior_castle_g_square_keep_b",0,"0","0", []),
 
   ("carpet_with_pillows_a",0,"carpet_with_pillows_a","bo_carpet_with_pillows", []),
   ("carpet_with_pillows_b",0,"carpet_with_pillows_b","bo_carpet_with_pillows", []),
@@ -316,12 +316,12 @@ scene_props = [
 ("tutorial_flag_blue",sokf_moveable,"tutorial_flag_blue","0", []),
 
 ("interior_prison_a",0,"interior_prison_a","bo_interior_prison_a", []),
-("interior_prison_b",0,"interior_prison_b","bo_interior_prison_b", []),
-("interior_prison_cell_a",0,"interior_prison_cell_a","bo_interior_prison_cell_a", []),
+("interior_prison_b",0,"0","0", []),
+("interior_prison_cell_a",0,"0","0", []),
 
   
 #("interior_prison_c",0,"interior_prison_c","bo_interior_prison_c", []),
-("interior_prison_d",0,"interior_prison_d","bo_interior_prison_d", []),
+("interior_prison_d",0,"0","0", []),
   
 
 ("arena_archery_target_a",0,"arena_archery_target_a","bo_arena_archery_target_a", []),
@@ -1372,10 +1372,10 @@ scene_props = [
 ("gondor_ship_vp",0,"gondor_ship_color","bo_gondor_ship", []),
 ("gondor_ship_oars",0,"gondor_ship_oars","0", []),
 ("gondor_building_a_vp",0,"gondor_building_a_color","bo_gondor_building_a", []),
-("gondor_building_b",0,"gondor_building_b","0", []),
-("gondor_building_b_vp",0,"gondor_building_b_color","0", []),
-("gondor_building_c",0,"gondor_building_c","0", []),
-("gondor_building_c_vp",0,"gondor_building_c_color","0", []),
+("gondor_building_b",0,"gondor_building_b","bo_gondor_building_b", []),
+("gondor_building_b_vp",0,"gondor_building_b_color","bo_gondor_building_b", []),
+("gondor_building_c",0,"gondor_building_c","bo_gondor_building_c", []),
+("gondor_building_c_vp",0,"gondor_building_c_color","bo_gondor_building_c", []),
 
 
 ### Orc contrievances by Llew
@@ -1561,10 +1561,10 @@ scene_props = [
 ("trees_end", 0, "spike_a", "0", []),	
 ("football_ball",0,"stone_ball","0", []),
 ("dolguldur_copy",0,"dolguldur_copy","0", []),
-("morannon_gate",0,"morannon_gate","0", [(ti_on_scene_prop_init,[(neg|is_currently_night),(set_fog_distance,800,0x150101),]),]),
-("mor_tower_a",0,"mor_tower_a","0", []),
+("morannon_gate",0,"morannon_gate","bo_morannon_gate", [(ti_on_scene_prop_init,[(neg|is_currently_night),(set_fog_distance,800,0x150101),]),]),
+("mor_tower_a",0,"mor_tower_a","bo_mor_tower_a", []),
 ("evil_element",0,"evil_element","0", []),
-("evil_tunnel_a",0,"evil_tunnel_a","0", []),
+("evil_tunnel_a",0,"evil_tunnel_a","bo_evil_tunnel_a", []),
 ("minas_tirith_copy",0,"minas_tirith_copy","0", []),
 
 ##### CENTER GUARDS #####
@@ -1700,7 +1700,7 @@ scene_props = [
 ("mt_fountain", 0, "mt_fountain", "bo_mt_fountain", []),
 ("gondor_ruined_fountain", 0, "ruined_fountain", "bo_ruined_fountain", []),
 ("palantir", 0, "palantir", "bo_palantir", []),
-("mt_horse_statue", 0, "mt_horse_statue", "0", []),
+("mt_horse_statue", 0, "mt_horse_statue", "bo_mt_statue", []),
 ("gondor_ruined_horse_statue", 0, "ruined_horse_statue", "0", []),
 ("gondor_ruined_horse_statue_head", 0, "ruined_horse_statue_head", "0", []),
 ("large_fire_pit", 0, "large_fire_pit", "0", []),
@@ -1944,7 +1944,7 @@ scene_props = [
 ("horse_gondor_lam_horse",sokf_invisible,"lam_warhorse01","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_gondor_lam_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
-("spiderweb",0,"spiderweb","0", []),
+("spiderweb",0,"0","0", []),
 ("tunnel_dirt",0,"dirt","0", []),
 ("tunnel_liana",0,"liana","0", []),
 ("tunnel_liana2",0,"liana2","0", []),
@@ -1983,5 +1983,6 @@ scene_props = [
 ("elf_lamp_lorien_2", 0, "lamp_lorien_2", "0", []),
 ("elf_waterplant", 0, "waterplant", "0", []),
 ("elf_statue", 0, "statue", "0", []),
+("distant_mountain_mordor",sokf_place_at_origin|sokf_moveable,"mountains_outer_mordor","0",[]),
 
 ]

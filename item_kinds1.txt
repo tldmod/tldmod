@@ -1,5 +1,5 @@
 itemsfile version 2
-822
+823
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -255,40 +255,40 @@ itemsfile version 2
  itm_olog_hands Olog_Hai_Hands Olog_Hai_Hands 1  olog_hand_L 0  4111 0 130 0 33.000000 100 0 1 0 30 0 0 0 0 0 0 0
 0
 
- itm_arrows Arrows Arrows 3  plain_arrow 0  flying_missile 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
+ itm_arrows Arrows Arrows 3  plain_arrow 0  flying_missile_tld 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_gondor_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  flying_missile 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
+ itm_gondor_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  flying_missile_tld 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_gondor_auxila_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  flying_missile 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
+ itm_gondor_auxila_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  flying_missile_tld 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_khergit_arrows Barbed_Arrows Barbed_Arrows 3  rohan_arrow2 0  flying_missile 2305843009213693952  rohan_quiver 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
+ itm_khergit_arrows Barbed_Arrows Barbed_Arrows 3  rohan_arrow2 0  flying_missile_tld 2305843009213693952  rohan_quiver 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  flying_missile 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
+ itm_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  flying_missile_tld 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 410 0 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_harad_arrows Haradrim_Arrows Haradrim_Arrows 3  harad_arrow 0  flying_missile 2305843009213693952  harad_quiver 3458764513820540928  65541 1342177280 124 0 3.000000 100 0 0 0 0 0 0 0 95 30 2 0
+ itm_harad_arrows Haradrim_Arrows Haradrim_Arrows 3  harad_arrow 0  flying_missile_tld 2305843009213693952  harad_quiver 3458764513820540928  65541 1342177280 124 0 3.000000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 2 0
+ itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  flying_missile_tld 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 2 0
 0
 
- itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
+ itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  flying_missile_tld 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
 0
 
  itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  flying_missile 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
- itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
+ itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  flying_missile_tld 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
- itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  flying_missile 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
+ itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  flying_missile_tld 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
 0
 
- itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  flying_missile 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 258 0
+ itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  flying_missile_tld 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 258 0
 0
 
  itm_pilgrim_disguise Pilgrim_Disguise Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 0 2.000000 100 0 19 8 0 0 0 0 0 0 0 0
@@ -1772,7 +1772,10 @@ itemsfile version 2
  itm_harad_wavy_helm Great_Harad_Helmet Great_Harad_Helmet 1  harad_wavy_helm 0  65548 0 479 0 2.250000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_lion_helm Lion_Guard_Helm Lion_Guard_Helm 1  lion_helm 0  65548 0 479 0 2.250000 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_harad_eaglehelm Eagle_Guard_Helm Eagle_Guard_Helm 1  eagle_guard_helmet 0  65548 0 1200 0 2.250000 100 40 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_lion_helm Lion_Guard_Helm Lion_Guard_Helm 1  lion_helm 0  65548 0 1200 0 2.250000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_harad_pantherhelm Panther_Guard_Cap Panther_Guard_Cap 1  harad_pantherhelm 0  65548 0 479 0 2.250000 100 28 0 0 0 0 0 0 0 0 0 0

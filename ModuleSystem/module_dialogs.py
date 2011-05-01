@@ -11768,15 +11768,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                      # (gt, reg0, 0)], "{s61}", "town_dweller_talk",[]],
 
 # TLD stuff                                     
-  [anyone,"town_dweller_ask_rumor", [ (store_troop_faction,":faction","$g_talk_troop"),     # random faction related rumors
-                               (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
-                               (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
-							   (store_random_in_range,":string",":rumors_begin",":rumors_end"),
-							   (str_store_string, s1, ":string"),
-							   #(assign, reg0,":rumors_begin"), (assign, reg1,":rumors_end"), 
-							 ],"{s1}" , "town_dweller_talk",[]],
+  [anyone,"town_dweller_ask_rumor", [(call_script, "script_tld_get_rumor_to_s61", "$g_talk_troop", "$current_town", "$g_talk_agent"),
+							 ],"{s61}" , "town_dweller_talk",[]],
 
-  [anyone,"town_dweller_ask_rumor", [], "I haven't heard anything interesting lately.", "town_dweller_talk",[]],
+  #[anyone,"town_dweller_ask_rumor", [], "I haven't heard anything interesting lately.", "town_dweller_talk",[]],
 
   [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[]],
 

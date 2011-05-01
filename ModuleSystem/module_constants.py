@@ -404,6 +404,8 @@ slot_center_occasional_sound1_night = 276
 slot_center_occasional_sound2_night = 277
 slot_center_occasional_sound3_night = 278
 
+slot_center_rumor_check_begin = 1000 # [slot+32, slot+45] used for checking walkers already told you rumors this day
+
 #slot_party_type values
 ##spt_caravan            = 1
 spt_castle             = 2
@@ -742,6 +744,7 @@ slot_troop_faction_status = 168
 slot_troop_upkeep_not_paid = 169   # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
 slot_troop_subfaction      = 170 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
 
+slot_troop_rumor_check     = 180 # if 1: troop already told player a rumor this day
 #######################
 
 #Rebellion changes end
@@ -1550,7 +1553,7 @@ center_list = [
 #	("p_town_mount_doom", ["scn_mount_doom_center", -1, -1, -1, -1],
 #	    [-1, -1, -1, "trp_elder", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 #		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1]),
-	("p_town_cirith_ungol", ["scn_cirith_ungol_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
+	("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena"],
 	    ["trp_barman_cungol", "trp_smith_cungol", "trp_town_25_horse_merchant", "trp_elder_cungol", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0),
 	("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1],
@@ -1888,7 +1891,7 @@ faction_strings =[    #shop rumors begin     shop rumors end           loop_ambi
  ("fac_mordor"  ,"str_mordor_rumor_begin"  ,"str_isengard_rumor_begin",0                     ,"snd_wind_ambiance"      ,"snd_orc_occasional"),
  ("fac_harad"   ,"str_harad_rumor_begin"   ,"str_gunda_rumor_begin"   ,"snd_harad_ambiance"  ,"snd_wind_ambiance"      ,"snd_harad_occasional"),
  ("fac_rhun"    ,"str_rhun_rumor_begin"    ,"str_dunland_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
- ("fac_khand"   ,"str_khand_rumor_begin"   ,"str_last_rumor"          ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
+ ("fac_khand"   ,"str_khand_rumor_begin"   ,"str_good_rumor_begin"    ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
  ("fac_umbar"   ,"str_umbar_rumor_begin"   ,"str_khand_rumor_begin"   ,"snd_evilmen_ambiance","snd_water_waves_ambiance","snd_umbar_occasional"),
  ("fac_lorien"  ,"str_lorien_rumor_begin"  ,"str_imladris_rumor_begin",0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
  ("fac_imladris","str_imladris_rumor_begin","str_woodelf_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),

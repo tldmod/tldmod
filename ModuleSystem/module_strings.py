@@ -2329,17 +2329,17 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("mordor_rumor_18", "Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum."),
 ("mordor_rumor_19", "Come not between the Nazgul and his prey!"),
 
-("isengard_rumor_begin", "Sharku commands, you obey!"),
+("isengard_rumor_begin", "Sharkû commands, you obey!"),
 ("isengard_rumor_2", "Horse-men food! Bubhosh!"),
 ("isengard_rumor_3", "Horse-men get pike surprise! Ha ha ha!"),
 ("isengard_rumor_4", "Saruman has many tricks! Strong steel and fire-stone!"),
-("isengard_rumor_5", "Wild-men stink! But Sharku is wise. He knows how to use them."),
+("isengard_rumor_5", "Wild-men stink! But Sharkû is wise. He knows how to use them."),
 ("isengard_rumor_6", "Moria-scum breed olog-hai! Big! Skai!"),
 ("isengard_rumor_7", "Wise master make uruk-hai strong!"),
 ("isengard_rumor_8", "Warg is faster than horse! Warg eats horse!"),
 ("isengard_rumor_9", "Uruk-hai will trample the horse-men!"),
 ("isengard_rumor_10", "Grind! Grind! Grind!"),
-("isengard_rumor_11", "Uruk glob ishi krimp shar-kuk."),
+("isengard_rumor_11", "Uruk glob ishi krimp shar-kûk."),
 ("isengard_rumor_12", "Burn forest! Make weapons! Kill horse-men!"),
 ("isengard_rumor_13", "Keep away from the berserker before he starts chopping us up!"),
 ("isengard_rumor_14", "I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts."),
@@ -2356,7 +2356,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rhun_rumor_10", "Elven women? Nah. Too fragile!"),
 ("rhun_rumor_11", "Each of my sons has already brought me a head of an enemy. And my daughter the testicles of one. Ha ha ha!"),
 ("rhun_rumor_12", "Orcs are filthy beasts with no skill or courage. They have no place on the field of battle."),
-("rhun_rumor_13", "What's best in life? Hah! Crush your enemies, see them driven before you, and hear the lamentations of their women."),
+("rhun_rumor_13", "What's best in life? Hah! To crush your enemies, see them driven before you, and to hear the lamentation of their women."),
 
 ("dunland_rumor_begin", "We won't rest until we are avenged and the strawheads are on their knees!"),
 ("dunland_rumor_2", "Rohirrim bastards are friendly with their horses at night! Ha ha ha!"),
@@ -2375,21 +2375,20 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
 
-("lorien_rumor_begin", "Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!"),
-("lorien_rumor_2", "The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater."),
-("lorien_rumor_3", "Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house."),
-("lorien_rumor_4", "O Lorien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away."),
+("lorien_rumor_begin", "O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. "), #Galadriel's Song of Eldamar
+("lorien_rumor_2", "Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!"), #Aragorn quote of Galadriel
+("lorien_rumor_3", "The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater."), #Haldir quote
+("lorien_rumor_4", "Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house."), #Aragorn quote
 
-("imladris_rumor_begin", "May the blessing of Elves and Men and all Free Folk go with you."),
-("imladris_rumor_1", "May the stars shine upon your faces!"),
-("imladris_rumor_2", "He that breaks a thing to find out what it is has left the path of wisdom."),
-("imladris_rumor_3", "We must take a hard road, a road unforeseen. There lies our hope, if hope it be."),
-("imladris_rumor_4", "Despair is only for those who see the end beyond all doubt. We do not."),
+("imladris_rumor_begin", "May the blessing of Elves and Men and all Free Folk go with you."), #Elrond quote
+("imladris_rumor_2", "May the stars shine upon your faces!"), #Elrond quote
+("imladris_rumor_3", "He that breaks a thing to find out what it is has left the path of wisdom."), #Gandalf at council of Elrond.
+("imladris_rumor_4", "We must take a hard road, a road unforeseen. There lies our hope, if hope it be."), #Elrond at council of Elrond.
+("imladris_rumor_5", "Despair is only for those who see the end beyond all doubt. We do not."), #Gandalf at council of Elrond.
 
-("woodelf_rumor_begin", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."),
-("woodelf_rumor_2", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."),
-("woodelf_rumor_3", "I'll tell you Woodelf rumor 3"),
-("woodelf_rumor_4", "I'll tell you Woodelf rumor 4"),
+("woodelf_rumor_begin", " "),
+("woodelf_rumor_2", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."), #Song of Nimrodel sung by Legolas
+("woodelf_rumor_3", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #Legolas quote
 
 ("dale_rumor_begin", "First there was the dragon, now this..."),
 ("dale_rumor_2", "As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!"),
@@ -2401,13 +2400,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("harad_rumor_3", "I'll tell you Harad rumor 3"),
 ("harad_rumor_4", "I'll tell you Harad rumor 4"),
 
-("gunda_rumor_begin", "I'll tell you Gundabad rumor 1"),
-("gunda_rumor_2", "I'll tell you Gundabad rumor 2"),
+("gunda_rumor_begin", "Take warm lands from men we come!"),
+("gunda_rumor_2", "Sharkû promised warm caves."),
 ("gunda_rumor_3", "I'll tell you Gundabad rumor 3"),
 ("gunda_rumor_4", "I'll tell you Gundabad rumor 4"),
 
-("moria_rumor_begin", "I'll tell you Moria rumor 1"),
-("moria_rumor_2", "I'll tell you Moria rumor 2"),
+("moria_rumor_begin", "When hear drums - run and hide!"),
+("moria_rumor_2", "Ghâsh is in the deep"),
 ("moria_rumor_3", "I'll tell you Moria rumor 3"),
 ("moria_rumor_4", "I'll tell you Moria rumor 4"),
 
@@ -2421,7 +2420,30 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("khand_rumor_3", "I'll tell you Khand rumor 3"),
 ("khand_rumor_4", "I'll tell you Khand rumor 4"),
 
-("last_rumor", "INVALID RUMOR"),
+("good_rumor_begin", "From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king."), #Gandalf quote
+("good_rumor_2", "Orcs fight better at night but are weaker by day."),
+("good_rumor_3", "Urukhai are a different breed of orc that doesn't fear sunlight!"),
+("good_rumor_4", "Always after a defeat and a respite, the Shadow takes another shape and grows again."), #Gandalf quote
+("good_rumor_5", "Often does hatred hurt itself!"), #Gandalf quote
+("good_rumor_6", "The Dead Marshes... a land defiled, diseased beyond all healing."), #Chapter 'The Passage of the Marshes'.
+("good_rumor_7", "The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them."), #Frodo quote
+
+("neutral_rumor_begin", "I'll tell you Neutral rumor 1"),
+("neutral_rumor_2", "I'll tell you Neutral rumor 2"),
+("neutral_rumor_3", "Dead Marshes... a place defiled and diseased."),
+("neutral_rumor_4", "I'll tell you Neutral rumor 4"),
+
+("evil_rumor_begin", "Orc fight better at night, men by day."),
+("evil_rumor_2", "Fight horseman with pike, footman with arrow and archer with shield!"),
+("evil_rumor_3", "I'll tell you Evil rumor 3"),
+("evil_rumor_4", "I'll tell you Evil rumor 4"),
+
+("legendary_rumor_begin", "They say, there is a special place at the Anduin, somewhere where big statues stand."),
+("legendary_rumor_2", "They say, something is there in the middle of Dead Marshes."),
+("legendary_rumor_3", "I'll tell you Legendary rumor 3"),
+("legendary_rumor_4", "I'll tell you Legendary rumor 4"),
+
+("last_rumor", "I haven't heard anything interesting lately."),
 
 ("tld_introduction","TLD Introduction - you should go to Edoras."),
 

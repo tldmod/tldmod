@@ -92,7 +92,7 @@ scenes = [
   ("training_ground_ranged_melee_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000001324a9cba0005194a000041ef00005ae800003c55",[],[], "outer_terrain_plain"),
 
   ("zendar_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x300bc5430001e0780000448a0000049f00007932", ["the_happy_boar","","zendar_merchant"],["bonus_chest_2"], "outer_terrain_plain"),
-  ("the_happy_boar" ,sf_indoors,"interior_town_house_f", "bo_interior_town_house_f", (-100,-100),(100,100),-100,"0",   ["zendar_center"],["zendar_chest"]),
+  ("the_happy_boar" ,sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",   ["zendar_center"],["zendar_chest"]),
   ("zendar_merchant",sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",  [],[]),
 
 # city centers
@@ -154,17 +154,17 @@ scenes = [
   ("gondor_castle"      ,sf_indoors, "interior_castle_v", "bo_interior_castle_v", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("minas_tirith_castle",sf_indoors|sf_force_skybox, "throne_room", "bo_throne_room", (-1000,-1000),(1000,1000),-100,"0",["exit"],[]),
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("elf_castle"         ,sf_indoors, "interior_castle_a", "bo_interior_castle_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("mordor_castle"      ,sf_indoors, "interior_castle_q", "bo_interior_castle_q", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("elf_castle"         ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("mordor_castle"      ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_rohan_meduseld_int", (-100,-100),(100,100),-100,"0",["exit"],[]),
 
-  ("gondor_tavern" ,sf_indoors, "interior_tavern_f"    ,"bo_interior_tavern_f"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("rohan_tavern"  ,sf_indoors, "interior_tavern_g"    ,"bo_interior_tavern_g"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("gondor_tavern" ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("rohan_tavern"  ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("elf_tavern"    ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("mordor_tavern" ,sf_indoors, "interior_tavern_d"    ,"bo_interior_tavern_d"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("mordor_tavern" ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
 	
   ("gondor_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
-  ("rohan_prison" ,sf_indoors,"dungeon_cell_b"   , "bo_dungeon_cell_b"   , (-100,-100),(100,100),-100,"0",["exit"],[]),
+  ("rohan_prison" ,sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
   ("elf_prison"   ,sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
 

@@ -19102,7 +19102,62 @@ scripts = [
     (cur_item_set_tableau_material, ":tableau_no",":bm"),
   ]),
 	
-	
+  # script_get_rumor_to_s61
+  # Input: troop, center, agent
+  # Output: s61 will contain rumor string
+  ("tld_get_rumor_to_s61",
+    [(store_script_param, ":troop", 1),
+     (store_script_param, ":center", 2),
+     (store_script_param, ":agent", 3),
+
+     #check rumor heard already (once a day), troop slot for merchants/lords/etc, center slots for walkers
+	 (assign, ":no_new_rumor", 0),
+     (agent_get_entry_no, ":entry_no", ":agent"),
+     (try_begin),
+	    (is_between,":entry_no", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
+		(val_add, ":entry_no", slot_center_rumor_check_begin),
+	    (try_begin),
+		   (party_slot_eq, ":center", ":entry_no", 1),  # rumor heard earlier
+		   (assign, ":no_new_rumor", 1),
+        (else_try),
+           (party_set_slot, ":center", ":entry_no", 1), # rumor set as already heard
+        (try_end),
+	 (else_try),	 
+	    (try_begin),
+           (troop_slot_eq, ":troop", slot_troop_rumor_check, 1),  # rumor heard earlier
+		   (assign, ":no_new_rumor", 1),
+        (else_try),
+           (troop_set_slot, ":troop", slot_troop_rumor_check, 1), # rumor set as already heard
+        (try_end),
+     (try_end),
+
+     (try_begin),
+	    (eq,":no_new_rumor", 1), # agent knows nothing new
+	    (str_store_string, s61, "str_last_rumor"),
+	 (else_try),
+	   (store_random_in_range,":rumor_type",0,100),
+       (store_troop_faction,":faction","$g_talk_troop"),
+		 (try_begin),
+         (is_between, ":rumor_type", 0, 70), #faction specific rumors
+         (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
+         (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
+         (store_random_in_range,":string",":rumors_begin",":rumors_end"),
+       (else_try),
+         (is_between, ":rumor_type", 70, 90), #generic rumors
+         (faction_get_slot,":faction_side",":faction",slot_faction_side),
+		 (try_begin),
+            (eq,":faction_side",faction_side_good),
+			(store_random_in_range,":string","str_good_rumor_begin","str_evil_rumor_begin"),
+         (else_try),
+			(store_random_in_range,":string","str_neutral_rumor_begin","str_legendary_rumor_begin"),
+         (try_end),
+       (else_try),
+         (is_between, ":rumor_type", 90, 100), #legendary rumors
+		 (store_random_in_range,":string","str_legendary_rumor_begin","str_last_rumor"),
+       (try_end),
+       (str_store_string, s61, ":string"),
+     (try_end),
+     ]),	
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts

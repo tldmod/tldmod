@@ -240,7 +240,7 @@ scn_zendar_center zendar_center 256 none none 0.000000 0.000000 100.000000 100.0
   3  60  0  61 
   1  754 
  outer_terrain_plain 
-scn_the_happy_boar the_happy_boar 1 interior_town_house_f bo_interior_town_house_f -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_the_happy_boar the_happy_boar 1 interior_town_house_i bo_interior_town_house_i -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  59 
   1  750 
  0 
@@ -472,11 +472,11 @@ scn_rohan_castle rohan_castle 1 interior_castle_t bo_interior_castle_t -100.0000
   1  100000 
   0 
  0 
-scn_elf_castle elf_castle 1 interior_castle_a bo_interior_castle_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 
-scn_mordor_castle mordor_castle 1 interior_castle_q bo_interior_castle_q -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 
@@ -484,11 +484,11 @@ scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -100.
   1  100000 
   0 
  0 
-scn_gondor_tavern gondor_tavern 1 interior_tavern_f bo_interior_tavern_f -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_gondor_tavern gondor_tavern 1 interior_tavern_b bo_interior_tavern_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 
-scn_rohan_tavern rohan_tavern 1 interior_tavern_g bo_interior_tavern_g -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_rohan_tavern rohan_tavern 1 interior_tavern_b bo_interior_tavern_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 
@@ -496,7 +496,7 @@ scn_elf_tavern elf_tavern 1 interior_tavern_b bo_interior_tavern_b -100.000000 -
   1  100000 
   0 
  0 
-scn_mordor_tavern mordor_tavern 1 interior_tavern_d bo_interior_tavern_d -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_mordor_tavern mordor_tavern 1 interior_tavern_b bo_interior_tavern_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 
@@ -504,7 +504,7 @@ scn_gondor_prison gondor_prison 1 interior_prison_a bo_interior_prison_a -100.00
   0 
   0 
  0 
-scn_rohan_prison rohan_prison 1 dungeon_cell_b bo_dungeon_cell_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_rohan_prison rohan_prison 1 interior_prison_a bo_interior_prison_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
   0 
  0 

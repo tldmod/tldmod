@@ -149,14 +149,26 @@ simple_triggers = [
    
   (24,
    [ (call_script, "script_rank_income_to_player"),
+
+	 (try_for_range, ":center_no", centers_begin, centers_end),               # clear rumors in centers
+	   (try_for_range, ":walker", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
+	       (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
+		   (party_set_slot, ":center_no", ":slot", 0),
+       (try_end),
+	 (try_end),
+	 (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # clear rumors in lords
+         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
+     (try_end),
+	 (try_for_range, ":troop_no", armor_merchants_begin, village_elders_end), # clear rumors in merchants/elders
+         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
+     (try_end),
    ]),
 
   (4.15,
-   [ 
-   (try_begin),
+   [ (try_begin),
 		(store_random_in_range, ":dieroll", 1,101), (lt,":dieroll",10),
 		(call_script, "script_make_unpaid_troop_go"),
-   (try_end),
+     (try_end),
    ]),
 
    # Reducing luck by 1 in every 180 hours

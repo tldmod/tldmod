@@ -1264,3 +1264,4 @@ spr_elf_lamp_lorien_1 = 1262
 spr_elf_lamp_lorien_2 = 1263
 spr_elf_waterplant = 1264
 spr_elf_statue = 1265
+spr_distant_mountain_mordor = 1266

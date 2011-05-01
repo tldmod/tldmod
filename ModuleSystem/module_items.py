@@ -172,19 +172,19 @@ items =[
 ["olog_hands","Olog_Hai_Hands",[("olog_hand_L",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(30),0],
 #
 #BOW MISSILES
-["arrows","Arrows",[("plain_arrow",0),("flying_missile",ixmesh_flying_ammo),("common_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["gondor_arrows","Gondorian_Arrows",[("gondor_arrow",0),("flying_missile",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["gondor_auxila_arrows","Gondorian_Arrows",[("gondor_arrow",0),("flying_missile",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["khergit_arrows","Barbed_Arrows",[("rohan_arrow2",0),("flying_missile",ixmesh_flying_ammo),("rohan_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,410,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["rohan_arrows_2","Rohirrim_Arrows",[("rohan_arrow1",0),("flying_missile",ixmesh_flying_ammo),("rohan_quiver2",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,410,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["harad_arrows","Haradrim_Arrows",[("harad_arrow",0),("flying_missile",ixmesh_flying_ammo),("harad_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,124,weight(3)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["corsair_arrows","Corsair_Arrows",[("corsair_arrow",0),("flying_missile",ixmesh_flying_ammo),("corsair_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,350,weight(3)|thrust_damage(2,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
-["ithilien_arrows","Ithilien_Arrows",[("ilithien_arrow",0),("flying_missile",ixmesh_flying_ammo),("ithilien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,350,weight(3)|thrust_damage(3,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
+["arrows","Arrows",[("plain_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("common_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["gondor_arrows","Gondorian_Arrows",[("gondor_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["gondor_auxila_arrows","Gondorian_Arrows",[("gondor_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["khergit_arrows","Barbed_Arrows",[("rohan_arrow2",0),("flying_missile_tld",ixmesh_flying_ammo),("rohan_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,410,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["rohan_arrows_2","Rohirrim_Arrows",[("rohan_arrow1",0),("flying_missile_tld",ixmesh_flying_ammo),("rohan_quiver2",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,410,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["harad_arrows","Haradrim_Arrows",[("harad_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("harad_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,124,weight(3)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["corsair_arrows","Corsair_Arrows",[("corsair_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("corsair_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,350,weight(3)|thrust_damage(2,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
+["ithilien_arrows","Ithilien_Arrows",[("ilithien_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("ithilien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,350,weight(3)|thrust_damage(3,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
 ["woodelf_arrows","Woodelf_Arrows",[("mirkwood_arrow",0),("flying_missile",ixmesh_flying_ammo),("mirkwood_quiver_new",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
-["elven_arrows","Elven_Arrows",[("white_elf_arrow",0),("flying_missile",ixmesh_flying_ammo),("lothlorien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
+["elven_arrows","Elven_Arrows",[("white_elf_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("lothlorien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
 #["loth_arrows"    ,"Ghaladrim_Arrows",[("white_elf_arrow",0),("flying_missile",ixmesh_flying_ammo),("lothlorien_quiver", ixmesh_carry)],itp_type_arrows|itp_shop, itcf_carry_quiver_back_right ,350,weight(3.0)|abundance(50) |weapon_length(91)|thrust_damage(3,    pierce)|max_ammo(29),imodbits_missile],
-["orc_hook_arrow","Orc_Hook_Arrows",[("orc_hook_arrow",0),("flying_missile",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(1,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
-["isengard_arrow","Isengard_Arrows",[("isengard_arrow",0),("flying_missile",ixmesh_flying_ammo),("isengard_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(2,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["orc_hook_arrow","Orc_Hook_Arrows",[("orc_hook_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(1,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
+["isengard_arrow","Isengard_Arrows",[("isengard_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("isengard_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(2,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
 ["pilgrim_disguise","Pilgrim_Disguise",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,25,weight(2)|head_armor(0)|body_armor(19)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 #["pilgrim_hood", "Pilgrim Hood",[("pilgrim_hood",0)], 0|itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ###ARMOR
@@ -839,10 +839,10 @@ items =[
 #waiting for mesh from giles...
 #["harad_helm_g"    , "Leopard Guard Helm" ,[("harad_wavy_helm"   ,0)],itp_shop|itp_type_head_armor,0,479, weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 #need meshes for these 3
-#["eagle_helm" , "Eagle Guard Helm"   ,[("harad_wavy_helm"   ,0)],itp_shop|itp_type_head_armor,0,479, weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
+["harad_eaglehelm","Eagle_Guard_Helm",[("eagle_guard_helmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(2.25)|head_armor(40)|difficulty(0),imodbits_plate],
 #["harad_cap_a"     , "Harad Cloth Cap"  ,[("harad_heavy_inf_helm",0)],itp_shop|itp_type_head_armor,0,479, weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 #["harad_cloth_helm", "Harad Cloth Covered Helmet",[("black_snake_helm",0)],itp_shop|itp_type_head_armor,0,479, weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
-["lion_helm","Lion_Guard_Helm",[("lion_helm",0)],itp_type_head_armor|itp_shop,0,479,weight(2.25)|head_armor(40)|difficulty(0),imodbits_plate],
+["lion_helm","Lion_Guard_Helm",[("lion_helm",0)],itp_type_head_armor|itp_shop,0,1200,weight(2.25)|head_armor(40)|difficulty(0),imodbits_plate],
 #FAR HARAD
 ["harad_pantherhelm","Panther_Guard_Cap",[("harad_pantherhelm",0)],itp_type_head_armor|itp_shop,0,479,weight(2.25)|head_armor(28)|difficulty(0),imodbits_plate],
 ##########WEAPONS##########

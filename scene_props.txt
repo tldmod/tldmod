@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1266
+ 1267
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -111,7 +111,7 @@ spr_pillow_b 0 0 pillow_b bo_pillow 0
 spr_pillow_c 0 0 pillow_c 0 0
 
 
-spr_interior_castle_g_square_keep_b 0 0 interior_castle_g_square_keep_b bo_interior_castle_g_square_keep_b 0
+spr_interior_castle_g_square_keep_b 0 0 0 0 0
 
 
 spr_carpet_with_pillows_a 0 0 carpet_with_pillows_a bo_carpet_with_pillows 0
@@ -447,13 +447,13 @@ spr_tutorial_flag_blue 65536 0 tutorial_flag_blue 0 0
 spr_interior_prison_a 0 0 interior_prison_a bo_interior_prison_a 0
 
 
-spr_interior_prison_b 0 0 interior_prison_b bo_interior_prison_b 0
+spr_interior_prison_b 0 0 0 0 0
 
 
-spr_interior_prison_cell_a 0 0 interior_prison_cell_a bo_interior_prison_cell_a 0
+spr_interior_prison_cell_a 0 0 0 0 0
 
 
-spr_interior_prison_d 0 0 interior_prison_d bo_interior_prison_d 0
+spr_interior_prison_d 0 0 0 0 0
 
 
 spr_arena_archery_target_a 0 0 arena_archery_target_a bo_arena_archery_target_a 0
@@ -2460,16 +2460,16 @@ spr_gondor_ship_oars 0 0 gondor_ship_oars 0 0
 spr_gondor_building_a_vp 0 0 gondor_building_a_color bo_gondor_building_a 0
 
 
-spr_gondor_building_b 0 0 gondor_building_b 0 0
+spr_gondor_building_b 0 0 gondor_building_b bo_gondor_building_b 0
 
 
-spr_gondor_building_b_vp 0 0 gondor_building_b_color 0 0
+spr_gondor_building_b_vp 0 0 gondor_building_b_color bo_gondor_building_b 0
 
 
-spr_gondor_building_c 0 0 gondor_building_c 0 0
+spr_gondor_building_c 0 0 gondor_building_c bo_gondor_building_c 0
 
 
-spr_gondor_building_c_vp 0 0 gondor_building_c_color 0 0
+spr_gondor_building_c_vp 0 0 gondor_building_c_color bo_gondor_building_c 0
 
 
 spr_orc_cage 0 0 orc_cage bo_orc_cage 0
@@ -2897,17 +2897,17 @@ spr_football_ball 0 0 stone_ball 0 0
 spr_dolguldur_copy 0 0 dolguldur_copy 0 0
 
 
-spr_morannon_gate 0 0 morannon_gate 0 1
+spr_morannon_gate 0 0 morannon_gate bo_morannon_gate 1
 -40.000000  2 2147485921 0 1798 2 800 1376513 
 
 
-spr_mor_tower_a 0 0 mor_tower_a 0 0
+spr_mor_tower_a 0 0 mor_tower_a bo_mor_tower_a 0
 
 
 spr_evil_element 0 0 evil_element 0 0
 
 
-spr_evil_tunnel_a 0 0 evil_tunnel_a 0 0
+spr_evil_tunnel_a 0 0 evil_tunnel_a bo_evil_tunnel_a 0
 
 
 spr_minas_tirith_copy 0 0 minas_tirith_copy 0 0
@@ -3313,7 +3313,7 @@ spr_gondor_ruined_fountain 0 0 ruined_fountain bo_ruined_fountain 0
 spr_palantir 0 0 palantir bo_palantir 0
 
 
-spr_mt_horse_statue 0 0 mt_horse_statue 0 0
+spr_mt_horse_statue 0 0 mt_horse_statue bo_mt_statue 0
 
 
 spr_gondor_ruined_horse_statue 0 0 ruined_horse_statue 0 0
@@ -3772,7 +3772,7 @@ spr_horse_gondor_lam_horse 16384 0 lam_warhorse01 0 1
 -40.000000  5 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1970 1 1 1973 2 288230376151711799 0 1741 2 72057594037927936 1801439850948198806 
 
 
-spr_spiderweb 0 0 spiderweb 0 0
+spr_spiderweb 0 0 0 0 0
 
 
 spr_tunnel_dirt 0 0 dirt 0 0
@@ -3879,5 +3879,8 @@ spr_elf_waterplant 0 0 waterplant 0 0
 
 
 spr_elf_statue 0 0 statue 0 0
+
+
+spr_distant_mountain_mordor 69632 0 mountains_outer_mordor 0 0
 
 

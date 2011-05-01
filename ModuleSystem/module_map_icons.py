@@ -246,7 +246,7 @@ map_icons = [
    ("mfp_dale",0,"map_flag_dale_lord", banner_scale,0),
    ("mfp_gundabad",0,"map_flag_gundabad_lord", banner_scale,0),
    ("mfp_dunland",0,"map_flag_dunland_lord", banner_scale,0),
-  ("banner_126",0,"map_flag_15", banner_scale,0), 
+  ("banner_126",0,"custom_map_banner_01", banner_scale,0), 
 
  # centers map banners
    ("mfc_gondor",0,"map_flag_gondor_center", banner_scale,0),
