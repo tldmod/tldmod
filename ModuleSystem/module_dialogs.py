@@ -926,12 +926,18 @@ dialogs = [
   [anyone|plyr,"member_talk", [],
 
    "Let me see your equipment.", "member_trade",[]],
+   
+  [anyone,"member_trade", [
+      (store_character_level, ":talk_troop_level", "$g_talk_troop"),
+      (ge, ":talk_troop_level", 40),
+  ], "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
+      
   [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[
 #      (change_screen_trade)
       (change_screen_equip_other),
       ]],
 
-  [anyone,"do_member_trade", [], "Anything else?", "member_talk",[]],
+#  [anyone,"do_member_trade", [], "Anything else?", "member_talk",[]],
 
   [anyone|plyr,"member_talk", [], "What can you tell me about your skills?", "view_member_char_requested",[]],
   [anyone,"view_member_char_requested", [], "All right, let me tell you...", "do_member_view_char",[(change_screen_view_character)]],
@@ -943,7 +949,14 @@ dialogs = [
 
   [anyone,"member_separate", [
 #            (gt, "$npc_quit_morale", 30),
-      ], "Oh really? Well, I'm not just going to wait around here. I'm going to go to my home town to look for other work. Is that what you want?", "member_separate_confirm",
+        (troop_get_slot, ":home_center", "$g_talk_troop", slot_troop_cur_center),
+        (try_begin),
+          (gt, ":home_center", 0),
+          (str_store_party_name, s4, ":home_center"),
+        (else_try),
+          (str_store_string, s4, "@my home town"),
+        (try_end),
+      ], "Oh really? Well, I'm not just going to wait around here. I'm going to go back to {s4}. Is that what you want?", "member_separate_confirm",
    []],
 
 #  [anyone,"member_separate", [
@@ -3333,7 +3346,7 @@ dialogs = [
                          (troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
                          (gt, ":cur_debt", 0),
                          (assign, reg1, ":cur_debt")],
-   "I think you owe me {reg1} denars, {playername}. Do you intend to pay your debt anytime soon?", "lord_pay_debt_2",[]],
+   "I think you owe me {reg1} RPs, {playername}. Do you intend to pay your debt anytime soon?", "lord_pay_debt_2",[]],
 
   [anyone|plyr, "lord_pay_debt_2", [(troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
                                     (store_troop_gold, ":cur_gold", "trp_player"),
@@ -3385,17 +3398,17 @@ dialogs = [
                          (assign, "$temp", reg6),
                          ],
    "I heard that you have captured our enemy {s3} and he is with you at the moment.\
- I can pay you {reg6} denars for him if you want to get rid of him.\
+ I can pay you {reg6} RPs for him if you want to get rid of him.\
  You can wait for his kingdom to pay his ransom of course, but there is no telling how long that will take, eh?\
 ", "lord_buy_prisoner", []],
 
   [anyone|plyr,"lord_buy_prisoner", [],
-   "I accept your offer. I'll leave {s3} to you for {reg6} denars.", "lord_buy_prisoner_accept", []],
+   "I accept your offer. I'll leave {s3} to you for {reg6} RPs.", "lord_buy_prisoner_accept", []],
   [anyone|plyr,"lord_buy_prisoner", [],
    "I fear I can't accept your offer.", "lord_buy_prisoner_deny", [(assign, "$g_ransom_offer_rejected", 1),]],
 
   [anyone,"lord_buy_prisoner_accept", [],
-   "Excellent! Here's your {reg6} denars.\
+   "Excellent! Here's your {reg6} RPs.\
  I'll send some men to take him to our prison with due haste.", "lord_pretalk", [
      (remove_troops_from_prisoners,  "$prisoner_lord_to_buy", 1),
      (call_script, "script_troop_add_gold", "trp_player", "$temp"),
@@ -3788,7 +3801,7 @@ dialogs = [
    "{s67}, I humbly request the weekly payment for my service.", "lord_pay_mercenary",[]],
 
   [anyone,"lord_pay_mercenary", [(assign, reg8, "$mercenary_service_accumulated_pay")],
-   "Hmm, let me see... According to my ledgers, we owe you {reg8} denars for your work. Here you are.", "lord_pay_mercenary_2",
+   "Hmm, let me see... According to my ledgers, we owe you {reg8} RPs for your work. Here you are.", "lord_pay_mercenary_2",
    [(troop_add_gold, "trp_player", "$mercenary_service_accumulated_pay"),
     (assign, "$mercenary_service_accumulated_pay", 0)]],
 
@@ -4942,7 +4955,12 @@ dialogs = [
    "We are fighting against {s1}{s5}.", "lord_pretalk",
    [
      (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
-     (str_store_party_name, s1, ":ai_object")
+     (try_begin),
+       (eq, ":ai_object", "p_main_party"),
+       (str_store_string, s1, "@your party"),
+     (else_try),
+       (str_store_party_name, s1, ":ai_object"),
+     (try_end),
      ]],
 
   [anyone,"lord_tell_objective", [(party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_accompanying_army)],
@@ -8669,9 +8687,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##   "All right we join you then.", "close_window",[(assign, "$g_enemy_surrenders", 1)]],
 ##  [anyone,"deserter_join_as_prisoner", [], "TODO: We will never surrender!", "close_window",[(encounter_attack)]],
 
-  [anyone,"deserter_barter", [], "Good. You are clever. You pay us {reg5} denars. Then you can go.", "deserter_barter_2",[(assign,"$deserter_tribute",150),(assign,reg(5),"$deserter_tribute")]],
+  [anyone,"deserter_barter", [], "Good. You are clever. You pay us {reg5} RPs. Then you can go.", "deserter_barter_2",[(assign,"$deserter_tribute",150),(assign,reg(5),"$deserter_tribute")]],
   [anyone|plyr,"deserter_barter_2", [(store_troop_gold,reg(2)),(ge,reg(2),"$deserter_tribute"),(assign,reg(5),"$deserter_tribute")],
-   "All right here's your {reg5} denars.", "deserter_barter_3a",[(troop_remove_gold, "trp_player","$deserter_tribute")]],
+   "All right here's your {reg5} RPs.", "deserter_barter_3a",[(troop_remove_gold, "trp_player","$deserter_tribute")]],
   [anyone|plyr,"deserter_barter_2", [],
    "I don't have that much money with me", "deserter_barter_3b",[]],
   [anyone,"deserter_barter_3b", [],
@@ -9859,8 +9877,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone,"move_cattle_herd_failed_2", [],
    "Well, it was your responsibility to deliver them safely, no matter what.\
- You should know that the commander demanded to be compensated for this, and I had to pay him 1000 denars.\
- So you now owe me that money.", "merchant_ask_for_debts",
+ You should know that the commander demanded to be compensated for this, and I had to pay him 1000 RPs.\
+ So you now owe me that.", "merchant_ask_for_debts",
    [(assign, "$debt_to_merchants_guild", 1000),
     (call_script, "script_end_quest", "qst_move_cattle_herd"),]],
 
@@ -9902,7 +9920,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                               ]],
 
   [anyone,"mayor_begin", [(ge, "$debt_to_merchants_guild", 50)],
-   "According to my accounts, you owe the merchants guild {reg1} denars.\
+   "According to my accounts, you owe the merchants guild {reg1} RPs.\
  I'd better collect that now.", "merchant_ask_for_debts",[(assign,reg(1),"$debt_to_merchants_guild")]],
   [anyone|plyr,"merchant_ask_for_debts", [[store_troop_gold,reg(5),"trp_player"],[ge,reg(5),"$debt_to_merchants_guild"]],
    "Alright. I'll pay my debt to you.", "merchant_debts_paid",[[troop_remove_gold, "trp_player","$debt_to_merchants_guild"],
@@ -9911,7 +9929,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr, "merchant_ask_for_debts", [], "I'm afraid I can't pay that sum now.", "merchant_debts_not_paid",[]],
   [anyone, "merchant_debts_not_paid", [(assign,reg(1),"$debt_to_merchants_guild")], "In that case, I am afraid, I can't deal with you. Guild rules...\
- Come back when you can pay the {reg1} denars.\
+ Come back when you can pay the {reg1} RPs.\
  And know that we'll be charging an interest to your debt.\
  So the sooner you pay it, the better.", "close_window",[]],
 
@@ -11431,7 +11449,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (val_add, "$bandit_tribute", 100),
     (val_mul, "$bandit_tribute", 10),
     (assign, reg5, "$bandit_tribute")
-    ], "Silver without blood, that's our favourite kind. Pay us {reg5} denars and we'll let you be on your way.", "bandit_barter_2",[]],
+    ], "Silver without blood, that's our favourite kind. Pay us {reg5} RPs and we'll let you be on your way.", "bandit_barter_2",[]],
   [anyone|plyr,"bandit_barter_2", [[store_troop_gold,reg(2)],[ge,reg(2),"$bandit_tribute"],[assign,reg(5),"$bandit_tribute"]],
    "Very well, take it.", "bandit_barter_3a",[[troop_remove_gold, "trp_player","$bandit_tribute"]]],
   [anyone|plyr,"bandit_barter_2", [],
@@ -11834,7 +11852,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"regular_member_talk", [], "Tell me about yourself", "view_regular_char_requested",[]],
 	  
-  [anyone,"view_regular_char_requested", [], "Aye {sir/madam}. Let me tell you all there is to know about me.", "do_regular_member_view_char",[[change_screen_view_character]]],
+  [anyone,"view_regular_char_requested", [], "Yes, commander. Let me tell you all there is to know about me.", "do_regular_member_view_char",[[change_screen_view_character]]],
   [anyone,"do_regular_member_view_char", [], "Anything else?", "regular_member_talk",[]],
 
   # TLD: can disband members for Res Point (mtarini)

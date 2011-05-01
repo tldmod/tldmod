@@ -5186,6 +5186,7 @@ scripts = [
           (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
           (assign, ":quest_target_center", reg0),
           (assign, ":cur_target_dist", reg1),
+          (neq, ":giver_center_no", ":quest_target_center"),
           (party_get_slot, ":elder", ":quest_target_center", slot_town_elder),
           (neq, ":elder", "trp_no_troop"), #make sure there is an elder to deliver stuff to
           (gt, ":elder", 0),
@@ -5954,8 +5955,8 @@ scripts = [
             (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town), #skip if we are not in a town.
             (party_get_position, pos2, "p_main_party"),
             (assign, ":min_distance", 99999),
-            (try_for_range, ":unused_2", 0, 5), #MV: more distant centers more likely, was 10
-              (call_script, "script_cf_get_random_enemy_center", ":giver_party_no"),
+            (try_for_range, ":unused_2", 0, 3), #MV: more distant centers more likely, was 10
+              (call_script, "script_cf_get_random_enemy_center_within_range", ":giver_party_no", tld_max_quest_distance),
               (assign, ":random_object_center", reg0),
               (party_get_position, pos3, ":random_object_center"),
               (map_get_random_position_around_position, pos4, pos3, 6),
@@ -5983,10 +5984,9 @@ scripts = [
             (try_end),
             
             (assign, ":quest_object_center", ":cur_object_center"),
+            (assign, ":cur_target_dist", ":min_distance"),
 
             (assign, ":quest_importance", 12),
-            (assign, ":quest_xp_reward", 4000),
-            (assign, ":quest_gold_reward", 2000),
             
             (store_mul, ":quest_xp_reward", 1000, ":cur_target_dist"), #TLD: 3000-4000
             (val_div, ":quest_xp_reward", tld_max_quest_distance),
