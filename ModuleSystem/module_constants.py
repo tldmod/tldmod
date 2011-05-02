@@ -371,6 +371,8 @@ num_trade_goods = itm_siege_supply - itm_smoked_fish
 slot_town_trade_good_productions_begin       = 205
 slot_town_trade_good_prices_begin            = slot_town_trade_good_productions_begin + num_trade_goods + 1
 
+slot_center_rumor_check_begin = 200 # TLD [slot+32, slot+45] used for checking walkers already told you rumors this day
+
 ### TLD center specific guards
 slot_town_guard_troop          = 250
 slot_town_prison_guard_troop   = 251
@@ -403,8 +405,6 @@ slot_center_occasional_sound3_day = 275
 slot_center_occasional_sound1_night = 276
 slot_center_occasional_sound2_night = 277
 slot_center_occasional_sound3_night = 278
-
-slot_center_rumor_check_begin = 1000 # [slot+32, slot+45] used for checking walkers already told you rumors this day
 
 #slot_party_type values
 ##spt_caravan            = 1
@@ -518,6 +518,7 @@ slot_troop_original_faction    = 14 # for pretenders
 slot_troop_loyalty              = 15
 slot_troop_player_order_state   = 16
 slot_troop_player_order_object  = 17
+slot_troop_rumor_check          = 18 # TLD if 1: troop already told player a rumor this day
 
 #slot_troop_present_at_event    = 19 #defined below
 
@@ -744,7 +745,6 @@ slot_troop_faction_status = 168
 slot_troop_upkeep_not_paid = 169   # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
 slot_troop_subfaction      = 170 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
 
-slot_troop_rumor_check     = 180 # if 1: troop already told player a rumor this day
 #######################
 
 #Rebellion changes end
