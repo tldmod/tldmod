@@ -5087,7 +5087,7 @@ scripts = [
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_deliver_food"),
+#(assign, ":quest_no", "qst_move_cattle_herd"),
 
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
@@ -5954,16 +5954,17 @@ scripts = [
             (gt, ":giver_center_no", 0), #skip if the quest giver is not in a center
             (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town), #skip if we are not in a town.
             (party_get_position, pos2, "p_main_party"),
-            (assign, ":min_distance", 99999),
+            (assign, ":max_distance", 0),
+            (assign, ":cur_object_center", 0),
             (try_for_range, ":unused_2", 0, 3), #MV: more distant centers more likely, was 10
               (call_script, "script_cf_get_random_enemy_center_within_range", ":giver_party_no", tld_max_quest_distance),
               (assign, ":random_object_center", reg0),
+              (assign, ":cur_distance", reg1),
               (party_get_position, pos3, ":random_object_center"),
               (map_get_random_position_around_position, pos4, pos3, 6),
-              (get_distance_between_positions, ":cur_distance", pos2, pos4),
-              (lt, ":cur_distance", ":min_distance"),
               (gt, ":cur_distance", 10), #MV: not too close
-              (assign, ":min_distance", ":cur_distance"),
+              (gt, ":cur_distance", ":max_distance"),
+              (assign, ":max_distance", ":cur_distance"),
               (assign, ":cur_object_center", ":random_object_center"),
               (copy_position, pos63, pos4), #Do not change pos63 until quest is accepted
             (try_end),
@@ -5984,7 +5985,7 @@ scripts = [
             (try_end),
             
             (assign, ":quest_object_center", ":cur_object_center"),
-            (assign, ":cur_target_dist", ":min_distance"),
+            (assign, ":cur_target_dist", ":max_distance"),
 
             (assign, ":quest_importance", 12),
             
@@ -9676,6 +9677,13 @@ scripts = [
       (try_for_range, ":cur_troop", companions_begin, companions_end),
         (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
         (neg|main_party_has_troop, ":cur_troop"), #not already hired
+        (assign, ":on_lease", 0),
+        (try_begin),
+          (check_quest_active,"qst_lend_companion"),
+          (quest_slot_eq, "qst_lend_companion", slot_quest_target_troop, ":cur_troop"),
+          (assign, ":on_lease", 1),
+        (try_end),
+        (eq, ":on_lease", 0),
         (store_faction_of_party, ":center_faction", ":center_no"),
         (store_troop_faction, ":troop_faction", ":cur_troop"),
         (store_relation, ":rel", ":center_faction", ":troop_faction"),

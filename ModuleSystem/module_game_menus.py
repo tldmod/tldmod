@@ -7322,6 +7322,13 @@ game_menus = [
                (try_for_range, ":cur_troop", companions_begin, companions_end),
                  (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
                  (neg|main_party_has_troop, ":cur_troop"), #not already hired
+                 (assign, ":on_lease", 0),
+                 (try_begin),
+                   (check_quest_active,"qst_lend_companion"),
+                   (quest_slot_eq, "qst_lend_companion", slot_quest_target_troop, ":cur_troop"),
+                   (assign, ":on_lease", 1),
+                 (try_end),
+                 (eq, ":on_lease", 0),
                  (store_troop_faction, ":troop_faction", ":cur_troop"),
                  (store_relation, ":rel", ":town_faction", ":troop_faction"),
                  (ge, ":rel", 0), #only spawn if friendly center
