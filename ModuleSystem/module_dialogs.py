@@ -1749,7 +1749,7 @@ dialogs = [
 		(party_get_slot, "$hiring_from", "$current_town", slot_town_volunteer_pt ),
 		(assign, "$num_hirable", 0),
 		(try_begin),
-			(ge, "$hiring_from", 0),
+			(gt, "$hiring_from", 0),
 			(party_is_active, "$hiring_from"),
 			(store_party_size, "$num_hirable" , "$hiring_from"),
 			(set_mercenary_source_party,"$hiring_from"),
