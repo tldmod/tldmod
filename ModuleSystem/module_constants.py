@@ -708,10 +708,10 @@ slot_troop_shop_1h     = 151
 slot_troop_shop_2h     = 152
 slot_troop_shop_pole   = 153
 slot_troop_shop_arrows = 154
-slot_troop_shop_bolts       = 155
+slot_troop_shop_bolts  = 155
 slot_troop_shop_shield = 156
 slot_troop_shop_bow    = 157
-slot_troop_shop_crossbow    = 158
+slot_troop_shop_crossbow = 158
 slot_troop_shop_thrown = 159
 slot_troop_shop_goods  = 160
 slot_troop_shop_head   = 161
@@ -847,7 +847,7 @@ rel_ally    = 2
 
 #Talk contexts
 tc_town_talk                  = 0
-tc_court_talk   	      = 1
+tc_court_talk   	          = 1
 tc_party_encounter            = 2
 tc_castle_gate                = 3
 tc_siege_commander            = 4

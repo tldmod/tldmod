@@ -11552,13 +11552,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone,"merchant_trade", [], "Anything else?", "town_merchant_talk",[]],
   [anyone|plyr,"town_merchant_talk", [], "Tell me. What are people talking about these days?", "merchant_gossip",[]],
-  [anyone,"merchant_gossip", [ (store_troop_faction,":faction","$g_talk_troop"),     # random faction related rumors
-                               (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
-                               (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
-							   (store_random_in_range,":string",":rumors_begin",":rumors_end"),
-							   (str_store_string, s1, ":string"),
-							   #(assign, reg0,":rumors_begin"), (assign, reg1,":rumors_end"), 
-							 ],"{s1}" , "town_merchant_talk",[]],
+  [anyone,"merchant_gossip", [ (call_script,"script_tld_get_rumor_to_s61", "$g_talk_troop", "$current_town", "$g_talk_agent"),
+							 ],"{s61}" , "town_merchant_talk",[]],
   [anyone|plyr,"town_merchant_talk", [], "Good-bye.", "close_window",[]],
 
 

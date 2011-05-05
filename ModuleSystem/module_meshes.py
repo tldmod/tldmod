@@ -44,7 +44,13 @@ meshes = [
   ("town_dol_amroth", 0, "town_dol_amroth", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_minas_morgul", 0, "town_minas_morgul", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_osgilliath", 0, "town_osgilliath", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  
+  ("town_thranduils", 0, "town_thranduils", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_rivendell_camp", 0, "town_rivendell_camp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_moria", 0, "town_moria", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_hornburg", 0, "town_hornburg", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_esgaroth", 0, "town_esgaroth", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_caras_galadhon", 0, "town_caras_galadhon", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_beorns_house", 0, "town_beorns_house", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("pic_prisoner_man", 0, "pic_prisoner_man", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_prisoner_fem", 0, "pic_prisoner_fem", 0, 0, 0, 0, 0, 0, 1, 1, 1),

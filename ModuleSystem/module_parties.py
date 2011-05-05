@@ -102,7 +102,7 @@ parties = [
 # Isengard towns
     ("town_isengard","Isengard",                   icon_isengard|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(52.8,-57.7),[],170),
     ("town_urukhai_outpost","Uruk_Hai_Outpost",    icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(23.7,-52.4),[],170),
-    ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.9,-78.9),[],170),
+    ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.8,-78.7),[],170),
     ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.39,-54.2),[],170),
 # Lothlorien towns
     ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -5.7,-131.3),[],350),
