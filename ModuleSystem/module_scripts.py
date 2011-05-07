@@ -1210,12 +1210,11 @@ scripts = [
         (party_set_slot, center_list[x][0], slot_town_prison          , center_list[x][1][2]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_tavern          , center_list[x][1][3]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_arena           , center_list[x][1][4]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_town_menu_background , center_list[x][1][5]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_elder           , center_list[x][2][3]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_barman          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_weaponsmith     , center_list[x][2][1]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_town_armorer         , center_list[x][2][1]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_merchant        , center_list[x][2][2]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_town_horse_merchant  , center_list[x][2][2]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_reinf_pt        , center_list[x][2][4]) for x in range(len(center_list)) ]+[
 #walker types
         (party_set_slot, center_list[x][0], slot_center_walker_0_troop, center_list[x][2][6]) for x in range(len(center_list)) ]+[
@@ -7437,12 +7436,8 @@ scripts = [
       (party_set_slot, ":center_no", slot_town_barman, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_weaponsmith),
       (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
-      (party_get_slot, ":value", ":capital", slot_town_armorer),
-      (party_set_slot, ":center_no", slot_town_armorer, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_merchant),
       (party_set_slot, ":center_no", slot_town_merchant, ":value"),
-      (party_get_slot, ":value", ":capital", slot_town_horse_merchant),
-      (party_set_slot, ":center_no", slot_town_horse_merchant, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_reinf_pt),
       (party_set_slot, ":center_no", slot_town_reinf_pt, ":value"),
       (party_get_slot, ":value", ":capital", slot_center_walker_0_troop),

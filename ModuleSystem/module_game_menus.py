@@ -42,29 +42,12 @@ tmp_max_troop = 858 # troop_end
 
 magic_items = range( itm_ent_water , itm_metal_scraps_bad ) + [itm_lembas]# first non magin item
 
-city_menu_color = menu_text_color(0xFFFFFFFF)  # city menu text color: white
+city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
 # sode spipped to set city meny background
 code_to_set_city_background = [
-  (try_begin),(eq,"$g_encountered_party", "p_town_west_emnet"      ),(set_background_mesh, "mesh_town_west_emnet"),
-   (else_try),(eq,"$g_encountered_party", "p_town_isengard"        ),(set_background_mesh, "mesh_town_isengard"),
-   (else_try),(eq,"$g_encountered_party", "p_town_dol_guldur"      ),(set_background_mesh, "mesh_town_dol_guldur"),
-   (else_try),(eq,"$g_encountered_party", "p_town_minas_tirith"    ),(set_background_mesh, "mesh_town_minas_tirith"),
-   (else_try),(eq,"$g_encountered_party", "p_town_morannon"        ),(set_background_mesh, "mesh_town_morannon"),
-   (else_try),(eq,"$g_encountered_party", "p_town_edoras"          ),(set_background_mesh, "mesh_town_edoras"),
-   (else_try),(eq,"$g_encountered_party", "p_town_pelargir"        ),(set_background_mesh, "mesh_town_pelargir"),
-   (else_try),(eq,"$g_encountered_party", "p_town_dol_amroth"      ),(set_background_mesh, "mesh_town_dol_amroth"),
-   (else_try),(eq,"$g_encountered_party", "p_town_west_osgiliath"  ),(set_background_mesh, "mesh_town_osgilliath"),
-   (else_try),(eq,"$g_encountered_party", "p_town_east_osgiliath"  ),(set_background_mesh, "mesh_town_osgilliath"),
-   (else_try),(eq,"$g_encountered_party", "p_town_thranduils_halls"),(set_background_mesh, "mesh_town_thranduils"),
-   (else_try),(eq,"$g_encountered_party", "p_town_imladris_camp"   ),(set_background_mesh, "mesh_town_rivendell_camp"),
-   (else_try),(eq,"$g_encountered_party", "p_town_moria"           ),(set_background_mesh, "mesh_town_moria"),
-   (else_try),(eq,"$g_encountered_party", "p_town_hornburg"        ),(set_background_mesh, "mesh_town_hornburg"),
-   (else_try),(eq,"$g_encountered_party", "p_town_esgaroth"        ),(set_background_mesh, "mesh_town_esgaroth"),
-   (else_try),(eq,"$g_encountered_party", "p_town_caras_galadhon"  ),(set_background_mesh, "mesh_town_caras_galadhon"),
-   (else_try),(eq,"$g_encountered_party", "p_town_beorn_house"     ),(set_background_mesh, "mesh_town_beorns_house"),
-   (else_try),(set_background_mesh, "mesh_ui_default_menu_window"),
-  (try_end),
+  (party_get_slot,":mesh","$g_encountered_party",slot_town_menu_background),
+  (set_background_mesh, ":mesh"),
 ]
 
 # (a code that is used twice, so I put it here) -- mtarini
@@ -7353,7 +7336,7 @@ game_menus = [
                (neq, ":spawned_troop", "trp_no_troop"),
                (set_visitor, 11, ":spawned_troop"),
              (try_end),
-             (party_get_slot, ":spawned_troop", "$current_town", slot_town_horse_merchant),
+             (party_get_slot, ":spawned_troop", "$current_town", slot_town_merchant),
              (try_begin),
                (neq, ":spawned_troop", "trp_no_troop"),
                (set_visitor, 12, ":spawned_troop"),
@@ -7425,11 +7408,11 @@ game_menus = [
 	  ("trade_with_horse_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       #(party_slot_eq, "$current_town", slot_horse_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
-      (neg|party_slot_eq, "$current_town", slot_town_horse_merchant, "trp_no_troop"),
+      (neg|party_slot_eq, "$current_town", slot_town_merchant, "trp_no_troop"),
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
        "Visit the {s61} Stables and Warehouse.",
        [
-           (party_get_slot, ":merchant_troop", "$current_town", slot_town_horse_merchant),
+           (party_get_slot, ":merchant_troop", "$current_town", slot_town_merchant),
            (change_screen_trade, ":merchant_troop"),
         ]),
 
