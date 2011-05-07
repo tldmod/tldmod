@@ -142,11 +142,11 @@ scenes = [
   ("erebor_center"          ,sf_indoors ,"hallfini", "bo_hallfini",(-100,-200),(100,200),-100,"0",[],[]),
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_terrain_rohan"),
   ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
-  ("khand_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("khand_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
   ("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"        0x3002898a80051d440000154e000026f300004e2d",[],[]),
   ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),
-  ("north_rhun_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+  ("north_rhun_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_flat"),
   ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],[],"outer_mountains2north"),
   ("ironhill_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 
@@ -228,8 +228,8 @@ scenes = [
   ("mordor_castle_a"      ,sf_indoors,"interior_castle_mordor_a"      , "bo_interior_castle_mordor_a" , (-100,-100),(100,100),-100,"0",[],[]),
   ("mordor_castle_b"      ,sf_indoors,"interior_castle_mordor_b"      , "bo_interior_castle_mordor_b" , (-100,-100),(100,100),-100,"0",[],[]),
 
-  ("rhun_south_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
-  ("rhun_north_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("rhun_south_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+  ("rhun_north_camp_center"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
   ("gundabad_ne_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
   ("gundabad_nw_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
   ("dol_guldur_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
@@ -249,8 +249,13 @@ scenes = [
 
   ("beorn_castle",sf_indoors,"interior_castle_rohan_b","bo_interior_castle_j",(-100,-100),(100,100),-100,"0",[],[]),
   ("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
-  
+
+# Legendary places  
   ("amon_hen"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
+  ("deadmarshes"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
+  ("mirkwood"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+  ("fangorn"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+
 # Siege scenes  
 ("cair_andros_siege"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 ("dale_siege"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000013002491600055157000000d20000152a0000611a",[],[],"outer_terrain_plain"),

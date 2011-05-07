@@ -1,5 +1,5 @@
 map_icons_file version 1
-154
+156
 player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
 
 
@@ -331,6 +331,12 @@ smallvillage 1 smallvillage 2.000000 0 0 0 0 0
 
 
 tree 1 Tree 0.500000 0 0 0 0 0
+
+
+burial_mound 1 burial_mound 1.000000 0 0 0 0 0
+
+
+tree_low 1 Tree_low 1.000000 0 0 0 0 0
 
 
 custom_banner_01 0 custom_map_banner_01 0.300000 0 0 0 0 1

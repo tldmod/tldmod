@@ -3661,6 +3661,17 @@ mission_templates = [
       common_battle_order_panel_tick,
     ],
   ),
+
+   ("legendary_place_visit",0,-1,
+    "You visit a legendary place.",
+    [
+     (0,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     ],
+    [
+      (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+    ],
+  ),
   
   ( "custom_battle",mtf_battle_mode,-1,
     "You lead your men to battle.",

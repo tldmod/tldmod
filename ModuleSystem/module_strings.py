@@ -2519,7 +2519,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("legendary_rumor_amonhen", "They say there is a special place on the Anduin, somewhere where the big statues stand."),
 ("legendary_rumor_deadmarshes", "It is rumoured all dead seems alive in the middle of Dead Marshes."),
 ("legendary_rumor_mirkwood", "Creatures other than orcs crawl around Mirkwood."),
-("legendary_rumor_5", "Legend has it trees meet to talk in Fangorn. What nonsense!"),
+("legendary_rumor_fangorn", "Legend has it trees meet to talk in Fangorn. What nonsense!"),
 
 ("last_rumor", "I haven't heard anything interesting lately."),
 

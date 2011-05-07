@@ -1,5 +1,5 @@
 missionsfile version 1
- 40
+ 41
 mst_town_default town_default 0  -1
 Default_town_visit 
 
@@ -1082,6 +1082,15 @@ You_start_training.
 0.000000 0.000000 100000000.000000  0  1 2133 2 144115188075856083 0 
 0.000000 0.000000 0.000000  0  2 73 1 20 900 1 1513209474796486665 
 0.100000 0.000000 0.000000  0  2 31 2 144115188075856083 1 1 1 936748722493063424 
+
+
+mst_legendary_place_visit legendary_place_visit 0  -1
+You_visit_a_legendary_place. 
+
+2 0 4100 0 0 1 0  
+1 4100 0 0 1 0  
+1
+-21.000000 0.000000 0.000000  0  1 1907 1 0 
 
 
 mst_custom_battle custom_battle 2  -1
