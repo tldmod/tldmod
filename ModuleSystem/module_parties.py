@@ -200,7 +200,7 @@ parties = [
   ("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
 
 # Legendary Places
-  ("legend_amonhen","Amon Hen",icon_ancient_ruins|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-32.31,-47.82),[],180),
+  ("legend_amonhen","Amon Hen",icon_ancient_ruins|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-31.80,-47.71),[],180),
   ("legend_deadmarshes","Dead Marshes",icon_burial_mound|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-58.10,-36.43),[],180),
   ("legend_mirkwood","Mirkwood Forest",icon_tree_low|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-57.86,-140.82),[],180),
   ("legend_fangorn","Fangorn Entmoot",icon_tree_low|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[],180),
