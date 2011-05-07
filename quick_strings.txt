@@ -1,4 +1,4 @@
-783
+782
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -274,6 +274,7 @@ qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_You_company_cannot_t You_company_cannot_take_more_men
 qstr_You_inventory_doesn_ You_inventory_doesn't_have_enough_space.
+qstr_A_new_location_is_no A_new_location_is_now_available_on_the_map!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_{s6}_s_Host {s6}'s_Host
 qstr__{s7}_has_assumed_th _{s7}_has_assumed_the_command_of_a_{s5}_host!
@@ -385,9 +386,7 @@ qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
-qstr_The_party_is_south_o The_party_is_south_of_the_White_Mountains.
-qstr_The_party_is_north_o The_party_is_north_of_the_White_Mountains.
-qstr_The_party_is_east_of The_party_is_east_of_the_White_Mountains.
+qstr_All_three_legendary_ All_three_legendary_place_enabled!
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}

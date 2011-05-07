@@ -2515,10 +2515,10 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("evil_rumor_3", "Mirkwood is in our hands already, but the elves don't know it yet."),
 ("evil_rumor_3", "Large statues of weaklings on the big river will not stand much longer."),
 
-("legendary_rumor_begin", "They say there is a special place on the Anduin, somewhere where the big statues stand."),
-("legendary_rumor_2", "It is rumoured all dead seems alive in the middle of Dead Marshes."),
-("legendary_rumor_3", "Creatures other than orcs crawl around Mirkwood."),
-("legendary_rumor_4", "Fangorn is a forest best avoided. Unusual things happen there."),
+("legendary_rumor_begin", "Fangorn is a forest best avoided. Unusual things happen there."),
+("legendary_rumor_amonhen", "They say there is a special place on the Anduin, somewhere where the big statues stand."),
+("legendary_rumor_deadmarshes", "It is rumoured all dead seems alive in the middle of Dead Marshes."),
+("legendary_rumor_mirkwood", "Creatures other than orcs crawl around Mirkwood."),
 ("legendary_rumor_5", "Legend has it trees meet to talk in Fangorn. What nonsense!"),
 
 ("last_rumor", "I haven't heard anything interesting lately."),

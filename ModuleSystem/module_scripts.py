@@ -1746,6 +1746,9 @@ scripts = [
            (eq, "$g_encountered_party_template", "pt_ruins"), #TLD ruins
            (jump_to_menu, "mnu_ruins"),
          (else_try),
+           (eq, "$g_encountered_party_template", "pt_legendary_place"), #TLD legendary places
+           (jump_to_menu, "mnu_legendary_place"),
+         (else_try),
            (jump_to_menu, "mnu_simple_encounter"),
          (try_end),
        (else_try), #Battle or siege
@@ -19105,7 +19108,7 @@ scripts = [
     (cur_item_set_tableau_material, ":tableau_no",":bm"),
   ]),
 	
-  # script_get_rumor_to_s61
+  # script_tld_get_rumor_to_s61
   # Input: troop, center, agent
   # Output: s61 will contain rumor string
   ("tld_get_rumor_to_s61",
@@ -19157,6 +19160,22 @@ scripts = [
        (else_try),
          (is_between, ":rumor_type", 90, 100), #legendary rumors
 		 (store_random_in_range,":string","str_legendary_rumor_begin","str_last_rumor"),
+         (try_begin),
+           (eq, ":string", "str_legendary_rumor_amonhen"),
+           (neg|party_is_active, "p_legend_amonhen"),
+           (enable_party, "p_legend_amonhen"),
+           (display_log_message, "@A new location is now available on the map!", color_good_news),
+         (else_try),
+           (eq, ":string", "str_legendary_rumor_deadmarshes"),
+           (neg|party_is_active, "p_legend_deadmarshes"),
+           (enable_party, "p_legend_deadmarshes"),
+           (display_log_message, "@A new location is now available on the map!", color_good_news),
+         (else_try),
+           (eq, ":string", "str_legendary_rumor_mirkwood"),
+           (neg|party_is_active, "p_legend_mirkwood"),
+           (enable_party, "p_legend_mirkwood"),
+           (display_log_message, "@A new location is now available on the map!", color_good_news),
+         (try_end),
        (try_end),
        (str_store_string, s61, ":string"),
      (try_end),

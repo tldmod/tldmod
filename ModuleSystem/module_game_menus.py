@@ -1567,21 +1567,27 @@ game_menus = [
     (assign, reg0, ":old_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
    ]),
+   ("camp_mvtest_legend",[],"Enable legendary places.",[
+    (enable_party, "p_legend_amonhen"),
+    (enable_party, "p_legend_deadmarshes"),
+    (enable_party, "p_legend_mirkwood"),
+    (display_message, "@All three legendary place enabled!", 0x30FFC8),
+   ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
 #   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
-   ("camp_mvtest_wm",[],"Where is my party?",[
-    (try_begin),
-      (call_script, "script_cf_party_is_south_of_white_mountains", "p_main_party"),
-      (display_message, "@The party is south of the White Mountains.", 0x30FFC8),
-    (else_try),
-      (call_script, "script_cf_party_is_north_of_white_mountains", "p_main_party"),
-      (display_message, "@The party is north of the White Mountains.", 0x30FFC8),
-    (else_try),
-      (display_message, "@The party is east of the White Mountains.", 0x30FFC8),
-    (try_end),
-   ]),
+   # ("camp_mvtest_wm",[],"Where is my party?",[
+    # (try_begin),
+      # (call_script, "script_cf_party_is_south_of_white_mountains", "p_main_party"),
+      # (display_message, "@The party is south of the White Mountains.", 0x30FFC8),
+    # (else_try),
+      # (call_script, "script_cf_party_is_north_of_white_mountains", "p_main_party"),
+      # (display_message, "@The party is north of the White Mountains.", 0x30FFC8),
+    # (else_try),
+      # (display_message, "@The party is east of the White Mountains.", 0x30FFC8),
+    # (try_end),
+   # ]),
    # ("camp_mvtest_formula",[],"Test line formulas.",[
     # (call_script, "script_get_line_through_parties", "p_town_hornburg", "p_town_minas_tirith"),
     # (display_message, "@Debug: Hornburg-MT line: y = {reg0}/{reg1}*x + {reg2}"),
@@ -8621,16 +8627,50 @@ game_menus = [
   # ),
 
   ( "ruins",0,
-    "You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
+    "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
     [(set_background_mesh, "mesh_pic_looted_village"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
-    [("continue",[],"Continue...",
+    [
+     ("continue",[],"Leave.",
        [
          (change_screen_return),
        ]),
-     ]
+    ]
+  ),
+
+  ( "legendary_place",0,
+    "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
+    "none",
+    [#(set_background_mesh, "mesh_pic_looted_village"),
+     (str_store_party_name, s1, "$g_encountered_party"),
+    ],
+    [
+     ("explore",[],"Explore this place.",
+       [
+        (set_jump_mission, "mt_ai_training"),
+        (try_begin),
+          (eq, "$g_encountered_party", "p_legend_amonhen"),
+          (assign, ":lp_scene", "scn_amon_hen"),
+        (else_try),
+          (eq, "$g_encountered_party", "p_legend_deadmarshes"),
+          (assign, ":lp_scene", "scn_cirith_ungol_center"),
+        (else_try), # p_legend_mirkwood
+          (assign, ":lp_scene", "scn_woodelf_camp_center"),
+        (try_end),
+        (modify_visitors_at_site,":lp_scene"),
+        (reset_visitors),
+        (set_visitor, 1, "trp_player"),
+        (jump_to_menu, "mnu_legendary_place"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+     ("continue",[],"Leave.",
+       [
+         (change_screen_return),
+       ]),
+    ]
   ),
 
 

@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-213
+214
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -7,6 +7,7 @@ pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1
 pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 429 0 4 0 -1 -1 -1 -1 
 pt_cattle_herd Cattle_Herd 2814749767106634 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
 pt_ruins Ruins 75 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
+pt_legendary_place Legendary_Place 69 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_manhunters Manhunters 2 0 50 238 426 9 40 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 2251799813685293 0 2 494 380 4 25 0 -1 -1 -1 -1 -1 
 pt_forest_bandits Orc_Raiders 562949953421357 0 2 494 380 5 52 0 379 2 40 0 -1 -1 -1 -1 
