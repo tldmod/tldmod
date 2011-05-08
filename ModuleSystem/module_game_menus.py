@@ -89,11 +89,12 @@ game_menus = [
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
     ],
-    [("start_good"  ,[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
-     ("start_evil"  ,[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
-	 ("spacer",[]," "  ,[]),
-	 ("go_back",    [],"go back",[(change_screen_quit              ),]), 
-	 ("quick",    [],"[quick start gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+    [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
+     ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
+	 ("spacer"    ,[]," "  ,[]),
+	 ("go_back"   ,[],"Go Back",[(change_screen_quit              ),]), 
+	 ("quick"     ,[],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+	 ("quick2"    ,[],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	 ]
   ),
 

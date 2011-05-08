@@ -7771,23 +7771,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 # Prison Guards
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_prison_guard_troop, "$g_talk_troop"),
-                                             # TLD center specific guards
-                    (party_slot_eq, "$g_encountered_party", slot_town_prison_guard_troop, "$g_talk_troop"),
-					(this_or_next|eq, "$g_encountered_party_faction", "fac_player_supporters_faction"),
-                    (             party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")
-                    ],
-   "Good day, my {lord/lady}. Will you be visiting the prison?", "prison_guard_players",[]],
+  [anyone,"start", [(eq, "$talk_context", 0),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",24),
+                      (this_or_next|eq, "$g_encountered_party_faction", "fac_player_supporters_faction"),
+                    (             party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")], #player visited prison in brigand fort only?
+   "Good day, Commander. Will you be visiting the prison?", "prison_guard_players",[]],
   [anyone|plyr,"prison_guard_players", [(neg|party_slot_eq, "$current_town", slot_town_prison, -1)],
    "Yes. Unlock the door.", "close_window",[(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
   [anyone|plyr,"prison_guard_players", [],
    "No, not now.", "close_window",[]],
 
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_prison_guard_troop, "$g_talk_troop")],
-                                             # TLD center specific guards
-                                             (party_slot_eq, "$g_encountered_party", slot_town_prison_guard_troop, "$g_talk_troop")],
+  [anyone,"start", [(eq, "$talk_context", 0),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",24)],
    "Yes? What do you want?", "prison_guard_talk",[]],
-
   [anyone|plyr,"prison_guard_talk", [],
    "Who is imprisoned here?", "prison_guard_ask_prisoners",[]],
   [anyone|plyr,"prison_guard_talk", [(neg|party_slot_eq, "$current_town", slot_town_prison, -1)],
@@ -7815,7 +7809,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                         (this_or_next|party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player"),
                                         (eq, "$g_encountered_party_faction", "$players_kingdom"),
                                         ],
-   "Of course, {sir/madam}. Go in.", "close_window",[(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
+   "Of course, Commander. Go in.", "close_window",[(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
 
   [anyone,"prison_guard_visit_prison", [],
    "You need to get permission from the lord to talk to prisoners.", "prison_guard_visit_prison_2",[]],
@@ -7838,29 +7832,22 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 # Castle Guards
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop"),
-                                             # TLD center specific guards
-                                             (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop"),
+  [anyone,"start", [(eq, "$talk_context", 0),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",23),
                     (this_or_next|eq, "$g_encountered_party_faction", "fac_player_supporters_faction"),
                     (             party_slot_eq, "$g_encountered_party", slot_town_lord, "trp_player")
                     ],
-   "Your orders, {Lord/Lady}?", "castle_guard_players",[]],
+   "Your orders, Commander?", "castle_guard_players",[]],
   [anyone|plyr,"castle_guard_players", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)],
    "Open the door. I'll go in.", "close_window",[(call_script, "script_enter_court", "$current_town")]],
   [anyone|plyr,"castle_guard_players", [],
    "Never mind.", "close_window",[]],
 
 
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop"),
-                                             # TLD center specific guards
+  [anyone,"start", [(eq, "$talk_context", 0),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",23),
                                              (eq, "$sneaked_into_town",1),
-                                             (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop"),
                     (gt,"$g_time_since_last_talk",0)],
    "Get out of my sight, beggar! You stink!", "castle_guard_sneaked_intro_1",[]],
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop"),
-                                             # TLD center specific guards
-                                             (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop"),
-                                             (eq, "$sneaked_into_town",1)],
+  [anyone,"start", [(eq, "$talk_context", 0),(eq, "$sneaked_into_town",1),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",23)],
    "Get lost before I lose my temper you vile beggar!", "close_window",[]],
   [anyone|plyr,"castle_guard_sneaked_intro_1", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)], "I want to enter the hall and speak to the lord.", "castle_guard_sneaked_intro_2",[]],
   [anyone|plyr,"castle_guard_sneaked_intro_1", [], "[Leave]", "close_window",[]],
@@ -7868,9 +7855,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.", "close_window",[]],
   
   
-  [anyone,"start", [(eq, "$talk_context", 0),#(faction_slot_eq, "$g_encountered_party_faction", slot_faction_castle_guard_troop, "$g_talk_troop")
-                                             # TLD center specific guards
-                                             (party_slot_eq, "$g_encountered_party", slot_town_castle_guard_troop, "$g_talk_troop")],
+  [anyone,"start", [(eq, "$talk_context", 0),(agent_get_entry_no, ":entry", "$g_talk_agent"),(eq,":entry",23)],
    "What do you want?", "castle_guard_intro_1",[]],
   [anyone|plyr,"castle_guard_intro_1", [(neg|party_slot_eq, "$current_town", slot_town_castle, -1)],
    "I want to enter the hall and speak to the lord.", "castle_guard_intro_2",[]],
