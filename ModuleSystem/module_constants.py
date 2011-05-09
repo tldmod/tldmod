@@ -1158,32 +1158,32 @@ khergit_banners_end_offset = 84
 merchant_inventory_space = 30
 num_merchandise_goods = 3 #MV: was 40
 
-num_max_river_pirates = 25
-num_max_zendar_peasants = 25
+#num_max_river_pirates = 25
+#num_max_zendar_peasants = 25
 num_max_zendar_manhunters = 10
 
-num_max_dp_bandits = 10
-num_max_refugees = 10
-num_max_deserters = 10
+#num_max_dp_bandits = 10
+#num_max_refugees = 10
+#num_max_deserters = 10
 
-num_max_militia_bands = 15
-num_max_armed_bands = 12
+#num_max_militia_bands = 15
+#num_max_armed_bands = 12
 
-num_max_vaegir_punishing_parties = 20
-num_max_rebel_peasants = 25
+#num_max_vaegir_punishing_parties = 20
+#num_max_rebel_peasants = 25
 
-num_max_frightened_farmers = 50
-num_max_undead_messengers  = 20
+#num_max_frightened_farmers = 50
+#num_max_undead_messengers  = 20
 
 num_forest_bandit_spawn_points = 5
 num_mountain_bandit_spawn_points = 5
 num_steppe_bandit_spawn_points = 2
-num_black_khergit_spawn_points = 1
+#num_black_khergit_spawn_points = 1
 num_sea_raider_spawn_points = 2
 
-peak_prisoner_trains = 4
-peak_kingdom_caravans = 12
-peak_kingdom_messengers = 3
+#peak_prisoner_trains = 4
+#peak_kingdom_caravans = 12
+#peak_kingdom_messengers = 3
 
 
 # Note positions

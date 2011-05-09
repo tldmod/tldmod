@@ -868,7 +868,25 @@ scripts = [
 	(try_end),
   
 ]),
- 
+
+#script_store_faction_king_in_s15    
+# as above, but need faction, and no our/your crap in output
+("store_faction_king_in_s15",[
+	(store_script_param_1, ":fac"),
+	
+	(try_begin),
+        (eq, ":fac", "fac_gondor"),
+		(str_store_string, s15,"@Steward"),
+	(else_try),
+		(try_begin),
+            (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
+			(str_store_string, s15,"@King"),
+		(else_try),
+			(str_store_string, s15,"@Master"),
+		(try_end), 
+	(try_end),
+]),
+  
  
  
  #############################  TLD FANGORN SCRIPTS   (mtarini)  #############################?#
@@ -19145,12 +19163,12 @@ scripts = [
 	   (store_random_in_range,":rumor_type",0,100),
        (store_troop_faction,":faction","$g_talk_troop"),
 		 (try_begin),
-         (is_between, ":rumor_type", 0, 70), #faction specific rumors
+         (is_between, ":rumor_type", 0, 80), #faction specific rumors
          (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
          (faction_get_slot,":rumors_end"  ,":faction",slot_faction_rumors_end),
          (store_random_in_range,":string",":rumors_begin",":rumors_end"),
        (else_try),
-         (is_between, ":rumor_type", 70, 90), #generic rumors
+         (is_between, ":rumor_type", 80, 95), #generic rumors
          (faction_get_slot,":faction_side",":faction",slot_faction_side),
 		 (try_begin),
             (eq,":faction_side",faction_side_good),
@@ -19159,7 +19177,7 @@ scripts = [
 			(store_random_in_range,":string","str_neutral_rumor_begin","str_legendary_rumor_begin"),
          (try_end),
        (else_try),
-         (is_between, ":rumor_type", 90, 100), #legendary rumors
+         (is_between, ":rumor_type", 95, 100), #legendary rumors
 		 (store_random_in_range,":string","str_legendary_rumor_begin","str_last_rumor"),
          (try_begin),
            (eq, ":string", "str_legendary_rumor_amonhen"),
@@ -19179,6 +19197,7 @@ scripts = [
          (else_try),
            (this_or_next|eq, ":string", "str_legendary_rumor_begin"),
            (eq, ":string", "str_legendary_rumor_fangorn"),
+           (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # evil guys can't uncover Entmoot
            (neg|party_is_active, "p_legend_fangorn"),
            (enable_party, "p_legend_fangorn"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),

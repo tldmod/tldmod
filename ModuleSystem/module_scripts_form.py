@@ -2537,6 +2537,16 @@ formAI_scripts = [
 		(end_try),	
 	(end_try),
 	(team_set_order_position, ":fteam", ":fclass", ":fposition"),
+    
+# #test code
+# (try_begin),
+# (eq, ":fteam", 1),
+# (eq, ":fclass", grc_infantry),
+# (position_get_x, reg0, ":fposition"),
+# (position_get_y, reg1, ":fposition"),
+# (display_message, "@Debug: enemy infantry ordered to ({reg0},{reg1})"),
+# (end_try),
+
   ]),	
 
 
@@ -2711,6 +2721,10 @@ formAI_scripts = [
 	(agent_is_alive, ":agent"),
 	(agent_is_human, ":agent"),
 	(neq, ":fleader", ":agent"),
+    #MV: troll check - they don't belong to formations
+    # (agent_get_troop_id, ":agent_troop", ":agent"),
+    # (troop_get_type, ":agent_race", ":agent_troop"),
+    # (neq, ":agent_race", tf_troll),
   ]),
 
 	

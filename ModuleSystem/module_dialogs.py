@@ -2472,6 +2472,16 @@ dialogs = [
                      ],
    "We meet again, {playername}...", "lord_start", []],
 
+#TLD: your fellow kingdom lords know you
+  [anyone|auto_proceed ,"start", [
+                     (eq,"$players_kingdom","$g_talk_troop_faction"),
+                     (troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
+                     (eq, "$g_talk_troop_met", 0),
+                     (ge, "$g_talk_troop_faction_relation", 0),
+                     (le,"$talk_context",tc_siege_commander),
+                     ],
+   "INVALID", "lord_intro", []],
+   
   [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                      (eq, "$g_talk_troop_met", 0),
                      (ge, "$g_talk_troop_faction_relation", 0),
@@ -3419,6 +3429,49 @@ dialogs = [
 
   [anyone,"lord_buy_prisoner_deny", [],
    "Mmm. As you wish, {playername}, but you'll not get a better offer. Take it from me.", "lord_pretalk", []],
+
+#TLD: your king gives you a faction intro and a horse when you first meet him
+  [anyone,"lord_start", [
+        (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
+        (eq, "$g_talk_troop_met", 0),
+        ],
+   "Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a simple mount to help you in your travels.", "lord_pretalk",[
+          (assign, ":num_theater_enemies", 0),
+          (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
+          (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+            (store_relation, ":cur_relation", ":cur_faction", "$g_talk_troop_faction"),
+            (lt, ":cur_relation", 0),
+            (faction_slot_eq, ":cur_faction", slot_faction_active_theater, ":faction_theater"),
+            (try_begin),
+              (eq, ":num_theater_enemies", 0),
+              (str_store_faction_name_link, s13, ":cur_faction"),
+            (else_try),
+              (eq, ":num_theater_enemies", 1),
+              (str_store_faction_name_link, s11, ":cur_faction"),
+              (str_store_string, s13, "@{s11} and {s13}"),
+            (else_try),
+              (str_store_faction_name_link, s11, ":cur_faction"),
+              (str_store_string, s13, "@{s11}, {s13}"),
+            (try_end),
+            (val_add, ":num_theater_enemies", 1),
+          (try_end),
+          (try_begin),
+            (gt, ":num_theater_enemies", 0),
+            (str_store_string, s12, "@we are fighting against {s13}"),
+          (else_try),
+            (str_store_string, s12, "@we are not fighting anyone at the moment"),
+          (try_end),
+        (try_end),
+        (call_script, "script_store_faction_king_in_s15", "$players_kingdom"),
+        (call_script, "script_get_rank_title", "$players_kingdom"), #in s24
+        (try_begin),
+          (eq, "$player_looks_like_an_orc",1),
+          (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
+        (else_try),
+          (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
+        (try_end),
+   ]],
 
   [anyone,"lord_start", [],
    "What is it?", "lord_talk",[]],

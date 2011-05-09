@@ -1,4 +1,4 @@
-784
+789
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -93,6 +93,9 @@ qstr_our our
 qstr_your your
 qstr_{s13}_King {s13}_King
 qstr_{s13}_Master {s13}_Master
+qstr_Steward Steward
+qstr_King King
+qstr_Master Master
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr_Volunteers Volunteers
@@ -686,6 +689,8 @@ qstr_Beautiful_work_{play Beautiful_work,_{playername}!_You_captured_both_the_sp
 qstr_Your_mission_is_comp Your_mission_is_complete,_{s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_units_of_{s4}_and_deliver_them_back_to_him.
 qstr_{s9}_asked_you_to_sc {s9}_asked_you_to_scout_{s13},_{s14}_and_{s15},_then_report_back.
+qstr_we_are_fighting_agai we_are_fighting_against_{s13}
+qstr_we_are_not_fighting_ we_are_not_fighting_anyone_at_the_moment
 qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_you_to_bring_me_this,_{playername}._Take_my_seal_as_proof_that_I've_received_it,_and_give_my_regards_to_{s9}_when_you_see_him_again.
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._If_you_see_{s9}_again_tell_him_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.
