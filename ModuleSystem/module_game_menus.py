@@ -1575,6 +1575,13 @@ game_menus = [
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary place enabled!", 0x30FFC8),
    ]),
+   ("camp_mvtest_coords",[],"Print party coordinates x100.",[
+      (set_fixed_point_multiplier, 100),
+      (party_get_position, pos13, "p_main_party"),
+      (position_get_x, reg2, pos13),
+      (position_get_y, reg3, pos13),
+      (display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
+   ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
@@ -6502,7 +6509,7 @@ game_menus = [
  but luckily none of the wounds appear to be lethal.",
     "none",
     [],
-    [("continue",[],"Continue...",[(jump_to_menu, "mnu_village"),]),],
+    [("continue",[],"Continue...",[(jump_to_menu, "mnu_town"),]),],
   ),
 
   # (

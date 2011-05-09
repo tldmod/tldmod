@@ -1175,9 +1175,9 @@ num_max_rebel_peasants = 25
 num_max_frightened_farmers = 50
 num_max_undead_messengers  = 20
 
-num_forest_bandit_spawn_points = 1
-num_mountain_bandit_spawn_points = 1
-num_steppe_bandit_spawn_points = 1
+num_forest_bandit_spawn_points = 5
+num_mountain_bandit_spawn_points = 5
+num_steppe_bandit_spawn_points = 2
 num_black_khergit_spawn_points = 1
 num_sea_raider_spawn_points = 2
 

@@ -1573,9 +1573,9 @@ simple_triggers = [
 #  (6,[(call_script, "script_tld_war_system"),
 #     ]),
 
-# Spawn some bandits.
-#  (36,[(call_script, "script_spawn_bandits"),
-#      ]),
+  #Spawn some bandits.
+  (36,[(call_script, "script_spawn_bandits"),
+      ]),
 
   # Make parties larger as game progresses.
   (24,[(call_script, "script_update_party_creation_random_limits"),

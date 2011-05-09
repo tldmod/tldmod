@@ -225,9 +225,18 @@ parties = [
 #  bridge_a
   ("looter_spawn_point"   ,"looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(29.273674,79.890099),[(trp_looter,15,0)]),
   ("steppe_bandit_spawn_point"  ,"steppe_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(27.303375,-60.205627),[(trp_looter,15,0)]),
+  ("steppe_bandit_spawn_point_2"  ,"steppe_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(28.19,-30.90),[(trp_looter,15,0)]),
 ##  ("black_khergit_spawn_point"  ,"black_khergit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(47.1, -73.3),[(trp_looter,15,0)]),
   ("forest_bandit_spawn_point"  ,"forest_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-37.252506,6.916382),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point_2"  ,"forest_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-65.33,43.30),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point_3"  ,"forest_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-52.10,-28.62),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point_4"  ,"forest_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-25.94,-117.04),[(trp_looter,15,0)]),
+  ("forest_bandit_spawn_point_5"  ,"forest_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-59.65,-173.31),[(trp_looter,15,0)]),
   ("mountain_bandit_spawn_point","mountain_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(39.789207,26.066040),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point_2","mountain_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-21.54,34.50),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point_3","mountain_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(40.43,-130.92),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point_4","mountain_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(17.53,-175.76),[(trp_looter,15,0)]),
+  ("mountain_bandit_spawn_point_5","mountain_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-15.06,-237.27),[(trp_looter,15,0)]),
   ("sea_raider_spawn_point_1"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-3,66.7),[(trp_looter,15,0)]),
   ("sea_raider_spawn_point_2"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(48.6,48.6),[(trp_looter,15,0)]),
  

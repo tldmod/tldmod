@@ -561,7 +561,9 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
  )
 
 custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
+        (get_player_agent_no, ":player_agent"),
 		(try_for_agents,":troll"),										# horse rearing near troll
+            (agent_is_alive, ":troll"), #MV
 			(agent_get_troop_id,reg0,":troll"),
 			(troop_get_type, reg0, reg0),
 			(try_begin),
@@ -578,13 +580,19 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 					(agent_get_position,2,":horse"),
 					(get_distance_between_positions,":dist",1,2),
 					(lt,":dist",700),
-					(store_random_in_range, reg0, 0,12),
+					(store_random_in_range, reg0, 0, 12),
 					(try_begin),
 						(eq,reg0,0),(agent_set_animation, ":horse", "anim_horse_rear"),(agent_play_sound,":horse","snd_neigh"),
 					(else_try),
 						(eq,reg0,1),(agent_set_animation, ":horse", "anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
 					(else_try),
 						(eq,reg0,2),(agent_set_animation, ":horse", "anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
+					(try_end),
+                    # let the player know what happened
+					(try_begin),
+                        (eq, ":rider", ":player_agent"),
+                        (is_between, reg0, 0, 3),
+                        (display_message, "@Your mount is scared by the troll!"),
 					(try_end),
 				(try_end),
 			(try_end),

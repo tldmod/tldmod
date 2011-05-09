@@ -573,8 +573,9 @@ scripts = [
       (val_mul, ":wage", ":wage"),
       (val_div, ":wage", 25),
 
-	  (troop_get_type, reg13, ":troop_id"),
-	  (try_begin), (eq, reg13, tf_troll),
+	  (troop_get_type, ":race", ":troop_id"),
+	  (try_begin),
+        (eq, ":race", tf_troll),
 		(val_add, ":wage", 5),
 		(val_mul, ":wage", 27),# trolls cost x 27
 	  (try_end),
@@ -14928,10 +14929,10 @@ scripts = [
   # INPUT: none
   # OUTPUT: none
   ("spawn_bandits",
-    [(set_spawn_radius,1),
+    [(set_spawn_radius,5),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_mountain_bandits"),
-       (lt,":num_parties",14),
+       (lt,":num_parties",num_mountain_bandit_spawn_points*4), # 4 bandits per spawn point on average
        (store_random,":spawn_point",num_mountain_bandit_spawn_points),
        (val_add,":spawn_point","p_mountain_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_mountain_bandits"),
@@ -14939,15 +14940,15 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_forest_bandits"),
-       (lt,":num_parties",14),
-       (store_random,":spawn_point",num_mountain_bandit_spawn_points),
+       (lt,":num_parties",num_forest_bandit_spawn_points*4),
+       (store_random,":spawn_point",num_forest_bandit_spawn_points),
        (val_add,":spawn_point","p_forest_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_forest_bandits"),
      (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_sea_raiders"),
-       (lt,":num_parties",14),
+       (lt,":num_parties",num_sea_raider_spawn_points*4),
        (store_random,":spawn_point",num_sea_raider_spawn_points),
        (val_add,":spawn_point","p_sea_raider_spawn_point_1"),
        (spawn_around_party,":spawn_point","pt_sea_raiders"),
@@ -15098,7 +15099,7 @@ scripts = [
 #     (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_steppe_bandits"),
-       (lt,":num_parties",14),
+       (lt,":num_parties",num_steppe_bandit_spawn_points*4),
        (store_random,":spawn_point",num_steppe_bandit_spawn_points),
        (val_add,":spawn_point","p_steppe_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_steppe_bandits"),
@@ -15106,12 +15107,12 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_looters"),
-       (lt,":num_parties",23),
-       (store_random_in_range,":spawn_point",villages_begin,villages_end), #spawn looters twice to have lots of them at the beginning
+       (lt,":num_parties",30), # 1 looter per 2 towns
+       (store_random_in_range,":spawn_point",towns_begin,advcamps_begin),
        (spawn_around_party,":spawn_point","pt_looters"),
        (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
        (assign, ":spawned_party_id", reg0),
-       # (try_begin), #MV: commented out - looters don't disappear, they are neutral
+       # (try_begin), #MV: commented out - quest looters don't disappear, they are neutral
          # (check_quest_active, "qst_deal_with_looters"),
          # (party_set_flags, ":spawned_party_id", pf_quest_party, 1),
        # (else_try),
