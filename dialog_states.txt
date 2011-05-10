@@ -212,6 +212,9 @@ find_lost_spears_permission_yes
 find_lost_spears_permission_no
 lord_talk_preoffer
 lord_give_troops
+lord_get_reward_item_ask
+lord_get_reward_item
+lord_get_reward_item_answer
 lord_give_order_ask
 lord_give_order
 lord_give_order_answer

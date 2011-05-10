@@ -114,7 +114,7 @@ slot_faction_num_towns               = 82
 slot_faction_debug_str_gain         = 148
 slot_faction_debug_str_loss         = 149
 
-slot_faction_strength               = 150 # strength 0-7000, no upper limit
+slot_faction_strength               = 150 # strength 0-9999
 slot_faction_party_map_banner		= 151
 slot_faction_hosts                  = 152 # number of alive hosts
 slot_faction_strength_tmp           = 153 # strength changes from killed parties enter here first, then processed through onmap trigger each hour (to make messages work ok)
@@ -1270,7 +1270,7 @@ theater_N =  1<<3
 
 
 # MV: some constants for faction strength as used in the faction AI
-fac_str_very_weak = 1000 # faction capital can be sieged and faction can be destroyed by capturing the capital
+fac_str_very_weak = 1000 # less than this, faction capital can be sieged and faction can be destroyed by capturing the capital
 fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 #fac_str_strong = 5000 # can siege enemy centers
@@ -1947,8 +1947,30 @@ fac_tableau_list = [
 [("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),],#fac_beorn = 20
 ]
 
+## Reward items (rank number 0-9, item id, item modifier)
+## TODO: fill out the list, these are test values
+fac_reward_items_list = [
+[(1, "itm_horse_meat", imod_rotten), (3, "itm_gondor_hunter", imod_champion), (5, "itm_gondor_ranger_sword",imod_masterwork),],#fac_gondor = 3
+[(1, "itm_horse_meat", imod_rotten)],#fac_dwarf = 4
+[(1, "itm_horse_meat", imod_rotten)],#fac_rohan = 5
+[(1, "itm_horse_meat", imod_rotten)],#fac_mordor = 6
+[(1, "itm_horse_meat", imod_rotten)],#fac_isengard = 7
+[(1, "itm_horse_meat", imod_rotten)],#fac_lorien = 8
+[(1, "itm_horse_meat", imod_rotten)],#fac_imladris = 9
+[(1, "itm_horse_meat", imod_rotten)],#fac_woodelf = 10
+[(1, "itm_horse_meat", imod_rotten)],#fac_dale = 11
+[(1, "itm_horse_meat", imod_rotten)],#fac_harad = 12
+[(1, "itm_horse_meat", imod_rotten)],#fac_rhun = 13
+[(1, "itm_horse_meat", imod_rotten)],#fac_khand = 14
+[(1, "itm_horse_meat", imod_rotten)],#fac_umbar = 15
+[(1, "itm_horse_meat", imod_rotten)],#fac_moria = 16
+[(1, "itm_horse_meat", imod_rotten)],#fac_guldur = 17
+[(1, "itm_horse_meat", imod_rotten)],#fac_gundabad = 18
+[(1, "itm_horse_meat", imod_rotten)],#fac_dunland = 19
+[(1, "itm_horse_meat", imod_rotten)],#fac_beorn = 20
+]
 
-#Formations and AI by Motomataru with adjustments by MadVader (MV) and Treebeard (JL)
+#Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)
 
 #Formation modes
 formation_none	= 0

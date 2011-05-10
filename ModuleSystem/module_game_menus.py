@@ -313,10 +313,11 @@ game_menus = [
 	(faction_get_slot, reg10, ":fac", slot_faction_rank),
 	(faction_get_slot, reg11, ":fac", slot_faction_influence),
 	(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
+    (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 	(str_store_faction_name, s16, ":fac"),
 	
 	(call_script, "script_get_own_rank_title", ":fac", reg10),
-	(str_store_string, s11, "@{s24}"),  # first title (own faction)
+	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
 	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
 
@@ -325,11 +326,12 @@ game_menus = [
 		(faction_get_slot, reg10, ":fac", slot_faction_rank),
 		(faction_get_slot, reg11, ":fac", slot_faction_influence),
 		(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
+        (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 		(str_store_faction_name, s16, ":fac"),
 		
 		(call_script, "script_get_allied_rank_title", ":fac", reg10),
 		(try_begin), 
-			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24}"),  # title
+			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24} ({reg13})"),  # title
 		(try_end),
 		(try_begin), 
 			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13}, {reg11} (with {s16})"),  # finf
@@ -1528,8 +1530,8 @@ game_menus = [
 	 (troop_set_health, "trp_player", 100),
      (troop_add_item, "trp_player","itm_gondor_lance",0), #imod_balanced
      (troop_add_item, "trp_player","itm_gondor_shield_e",0), #imod_reinforced
-     (troop_add_item, "trp_player","itm_gondor_ranger_sword",0), #imod_masterwork
-     (troop_add_item, "trp_player","itm_gondor_hunter",imod_heavy), #imod_champion
+     (troop_add_item, "trp_player","itm_gondor_ranger_sword",imod_masterwork), #imod_masterwork
+     (troop_add_item, "trp_player","itm_gondor_hunter",imod_champion),
      (troop_add_item, "trp_player","itm_riv_helm_c",0), #imod_lordly
      (troop_add_item, "trp_player","itm_gon_tower_knight",0), #imod_lordly
      (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
@@ -1575,13 +1577,35 @@ game_menus = [
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary place enabled!", 0x30FFC8),
    ]),
-   ("camp_mvtest_coords",[],"Print party coordinates x100.",[
-      (set_fixed_point_multiplier, 100),
-      (party_get_position, pos13, "p_main_party"),
-      (position_get_x, reg2, pos13),
-      (position_get_y, reg3, pos13),
-      (display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
+   ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
+    (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
+    (try_begin),
+        ]+concatenate_scripts([
+            [
+            (eq, ":faction_index", x),
+            ]+concatenate_scripts([[
+                (assign, ":rank", fac_reward_items_list[x][item_entry][0]),
+                (assign, ":item", fac_reward_items_list[x][item_entry][1]),
+                (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
+                (assign, reg0, ":rank"),
+                (assign, reg1, ":modifier"),
+                (str_store_item_name, s20, ":item"),
+                (display_message, "@Rank {reg0}: {s20}, mod {reg1}.", 0x30FFC8),
+                ] for item_entry in range(len(fac_reward_items_list[x]))
+            ])+[
+         (else_try),
+            ] for x in range(len(fac_reward_items_list))
+        ])+[
+    (try_end),
+    
    ]),
+   # ("camp_mvtest_coords",[],"Print party coordinates x100.",[
+      # (set_fixed_point_multiplier, 100),
+      # (party_get_position, pos13, "p_main_party"),
+      # (position_get_x, reg2, pos13),
+      # (position_get_y, reg3, pos13),
+      # (display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
+   # ]),
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),

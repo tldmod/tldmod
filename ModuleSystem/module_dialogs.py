@@ -3951,15 +3951,136 @@ dialogs = [
      ]],
   
   
-  
-
-
+#TLD: Ask a friendly king for reward items 
   [anyone|plyr,"lord_talk",
    [
-     #(eq, "$g_talk_troop_faction", "$players_kingdom"),
-     #(faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
-     #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+     #must be a king
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
+     (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
      
+     (faction_get_slot, ":rank", "$g_talk_troop_faction", slot_faction_rank),
+     
+     #find minimum influence needed for reward items of this faction
+     (assign, ":min_rank", 1000),
+     (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+     (try_begin),
+        ]+concatenate_scripts([
+            [
+            (eq, ":faction_index", x),
+            ]+concatenate_scripts([[
+              (try_begin),
+                (le, fac_reward_items_list[x][item_entry][0], ":rank"), #player rank condition
+                (lt, fac_reward_items_list[x][item_entry][0], ":min_rank"),
+                (assign, ":min_rank", fac_reward_items_list[x][item_entry][0]),
+              (try_end),
+                ] for item_entry in range(len(fac_reward_items_list[x]))
+            ])+[
+         (else_try),
+            ] for x in range(len(fac_reward_items_list))
+        ])+[
+     (try_end),
+
+     (neq, ":min_rank", 1000), # reward item found
+     
+     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     (store_mul, ":min_price", ":min_rank", 10), # reward item price = 10*rank
+     (ge, ":influence", ":min_price"), # player has enough influence to buy the cheapest reward item?
+     ],
+   "I want to request a special item.", "lord_get_reward_item_ask",[]],
+
+  [anyone,"lord_get_reward_item_ask", [],
+   "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],
+   
+  [anyone|plyr|repeat_for_100,"lord_get_reward_item", [
+     (store_repeat_object, ":rank_index"),
+     (is_between, ":rank_index", 0, 10),
+	 (faction_get_slot, ":rank", "$g_talk_troop_faction", slot_faction_rank),
+     (val_div, ":rank", 100), #rank points to rank number 0-9
+     (ge, ":rank", ":rank_index"), #player of sufficient rank?
+     (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+    
+     #find a reward item for specified rank if it exists
+     (assign, ":item_exists", 0),
+     (try_begin),
+        ]+concatenate_scripts([
+            [
+            (eq, ":faction_index", x),
+            ]+concatenate_scripts([[
+              (try_begin),
+                (eq, ":rank_index", fac_reward_items_list[x][item_entry][0]),
+                (assign, ":item_exists", 1),
+                (str_store_item_name, s20, fac_reward_items_list[x][item_entry][1]),
+              (try_end),
+                ] for item_entry in range(len(fac_reward_items_list[x]))
+            ])+[
+         (else_try),
+            ] for x in range(len(fac_reward_items_list))
+        ])+[
+     (try_end),
+     (eq, ":item_exists", 1),
+     
+     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
+     (ge, ":influence", ":price"), # player has enough influence to buy?
+     
+     (store_mul, ":needed_rank_points", ":rank_index", 100),
+	 (try_begin),
+	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
+	   (call_script, "script_get_own_rank_title", "$g_talk_troop_faction", ":needed_rank_points"),
+	 (else_try),
+	   (call_script, "script_get_allied_rank_title", "$g_talk_troop_faction", ":needed_rank_points"),
+	 (try_end),
+     #required rank title in s24
+     
+     (assign, reg10, ":price"),
+     (assign, reg11, ":influence"),
+  ],
+   "{s24}: {s20}. [Costs {reg10}/{reg11} influence]", "lord_get_reward_item_answer",[
+     (store_repeat_object, ":rank_index"),
+     (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+     
+     #find it again
+     (try_begin),
+        ]+concatenate_scripts([
+            [
+            (eq, ":faction_index", x),
+            ]+concatenate_scripts([[
+              (try_begin),
+                (eq, ":rank_index", fac_reward_items_list[x][item_entry][0]),
+                (assign, ":item", fac_reward_items_list[x][item_entry][1]),
+                (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
+              (try_end),
+                ] for item_entry in range(len(fac_reward_items_list[x]))
+            ])+[
+         (else_try),
+            ] for x in range(len(fac_reward_items_list))
+        ])+[
+     (try_end),
+     
+     # and give it away
+     (troop_add_item, "trp_player", ":item", ":modifier"),
+     
+     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
+     (val_sub, ":influence", ":price"),
+     (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
+     (str_store_faction_name, s1, "$g_talk_troop_faction"),
+     (assign, reg10, ":price"),
+     (assign, reg11, ":influence"),
+     (display_message, "@You spent {reg10} of your influence with {s1}, with {reg11} remaining."),
+   ]],
+        
+  [anyone|plyr,"lord_get_reward_item", [],
+   "Never mind.", "lord_pretalk", []],
+
+  [anyone,"lord_get_reward_item_answer", [],
+   "Very well. May you use it to vanquish our enemies.", "lord_pretalk", []],
+
+     
+
+# TLD: give orders to lords
+  [anyone|plyr,"lord_talk",
+   [
      # TLD: give orders if you have some minimum faction influence
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #can't give orders to kings
@@ -3970,8 +4091,6 @@ dialogs = [
 
   [anyone,"lord_give_order_ask", [],
    "Yes?", "lord_give_order",[]],
-
-
 
 
   [anyone|plyr,"lord_give_order", [
