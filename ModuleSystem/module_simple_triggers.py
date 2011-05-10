@@ -2654,37 +2654,37 @@ simple_triggers = [
      # TLD faction ranks
      #
     # pay wage
-    (24*7, [
-        (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
-        (store_and, ":pos", ":faction_rank", stfr_position_mask),
-        (val_div, ":pos", stfr_position_unit),
-        (store_and, ":rank", ":faction_rank", stfr_rank_mask),
-        (val_div, ":rank", stfr_rank_unit),
-        (val_or, ":faction_rank", stfr_soldiers_permit),
-        (val_or, ":faction_rank", stfr_supplies_permit),
-        (troop_set_slot, "trp_player", slot_troop_faction_rank, ":faction_rank"),
-        (try_begin),
-        ]+concatenate_scripts([
-            [
-            (store_add, ":kd", kd, kingdoms_begin),
-            (eq, ":kd", "$players_kingdom"),
-            (try_begin),
-            ]+concatenate_scripts([
-                [
-                (eq, ":rank", rnk),
-                (display_message, "@You received weekly wage."),
-                (troop_add_gold, "trp_player", tld_faction_ranks[kd][rnk][1]),
-            (else_try),
-                ] for rnk in range(len(tld_faction_ranks[kd]))
-            ])+[
-            (try_end),        
-        (else_try),
-            ] for kd in range(len(tld_faction_ranks))
-        ])+[
-        (try_end),
+    # (24*7, [
+        # (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
+        # (store_and, ":pos", ":faction_rank", stfr_position_mask),
+        # (val_div, ":pos", stfr_position_unit),
+        # (store_and, ":rank", ":faction_rank", stfr_rank_mask),
+        # (val_div, ":rank", stfr_rank_unit),
+        # (val_or, ":faction_rank", stfr_soldiers_permit),
+        # (val_or, ":faction_rank", stfr_supplies_permit),
+        # (troop_set_slot, "trp_player", slot_troop_faction_rank, ":faction_rank"),
+        # (try_begin),
+        # ]+concatenate_scripts([
+            # [
+            # (store_add, ":kd", kd, kingdoms_begin),
+            # (eq, ":kd", "$players_kingdom"),
+            # (try_begin),
+            # ]+concatenate_scripts([
+                # [
+                # (eq, ":rank", rnk),
+                # (display_message, "@You received weekly wage."),
+                # (troop_add_gold, "trp_player", tld_faction_ranks[kd][rnk][1]),
+            # (else_try),
+                # ] for rnk in range(len(tld_faction_ranks[kd]))
+            # ])+[
+            # (try_end),        
+        # (else_try),
+            # ] for kd in range(len(tld_faction_ranks))
+        # ])+[
+        # (try_end),
     
-        ]
-    ), 
+        # ]
+    # ), 
     
     # refresh reinforcement
     #(12, [ 

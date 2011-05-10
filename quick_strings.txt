@@ -1,4 +1,4 @@
-790
+783
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -56,26 +56,24 @@ qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
 qstr_You_gain_{reg10}_Res You_gain_{reg10}_Resource_Pts._of_{s10}.
 qstr_You_used_{reg10}_Res You_used_{reg10}_Resource_Pts._of_{s10}.
 qstr_{s24}: {s24}:
-qstr_Grandmaster_Knight_o Grandmaster_Knight_of_{s5}
-qstr_Master_Knight_of_{s5 Master_Knight_of_{s5}
-qstr_Veteran_Knight_of_{s Veteran_Knight_of_{s5}
-qstr_Knight_of_{s5} Knight_of_{s5}
-qstr_Commander_of_{s5} Commander_of_{s5}
-qstr_Sergeant_of_{s5} Sergeant_of_{s5}
-qstr_Veteran_of_{s5} Veteran_of_{s5}
-qstr_Soldier_of_{s5} Soldier_of_{s5}
-qstr_Recruit_of_{s5} Recruit_of_{s5}
-qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_Great_Hope_of_{s5} Great_Hope_of_{s5}
 qstr_Hope_of_{s5} Hope_of_{s5}
-qstr_Great_Friend_of_{s5} Great_Friend_of_{s5}
-qstr_Dearest_friend_of_{s Dearest_friend_of_{s5}
-qstr_Admired_friend_of_{s Admired_friend_of_{s5}
-qstr_Trusted_friend_of_{s Trusted_friend_of_{s5}
+qstr_Indispensable_Ally_o Indispensable_Ally_of_{s5}
+qstr_Faithful_Ally_of_{s5 Faithful_Ally_of_{s5}
+qstr_Trusted_Friend_of_{s Trusted_Friend_of_{s5}
+qstr_Close_Friend_of_{s5} Close_Friend_of_{s5}
 qstr_Friend_of_{s5} Friend_of_{s5}
 qstr_Familiar_to_{s5} Familiar_to_{s5}
 qstr_Known_to_{s5} Known_to_{s5}
 qstr_Stranger_to_{s5} Stranger_to_{s5}
+qstr_Great_Enforcer_of_{s Great_Enforcer_of_{s5}
+qstr_Enforcer_of_{s5} Enforcer_of_{s5}
+qstr_Important_Ally_of_{s Important_Ally_of_{s5}
+qstr_Ally_of_{s5} Ally_of_{s5}
+qstr_Accomplice_of_{s5} Accomplice_of_{s5}
+qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
+qstr_Servant_of_{s5} Servant_of_{s5}
+qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}
 qstr_Earned_{reg11}_rank_ Earned_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
@@ -275,8 +273,6 @@ qstr_Event_#{reg5}_type_{reg6 Event_#{reg5},_type_{reg6},_time_{reg8}._Player_un
 qstr_Elapsed_hours:_{reg7 Elapsed_hours:_{reg7}
 qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
-qstr_You_company_cannot_t You_company_cannot_take_more_men
-qstr_You_inventory_doesn_ You_inventory_doesn't_have_enough_space.
 qstr_A_new_location_is_no A_new_location_is_now_available_on_the_map!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_{s6}_s_Host {s6}'s_Host
@@ -566,8 +562,6 @@ qstr_you you
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
-qstr_permit:_{reg7}_had:_ permit:_{reg7},_had:_{reg6}
-qstr_DEBUG:_Routine_2 DEBUG:_Routine_2
 qstr_Breaking_camp... Breaking_camp...
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
@@ -585,7 +579,6 @@ qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
-qstr_You_received_weekly_ You_received_weekly_wage.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info

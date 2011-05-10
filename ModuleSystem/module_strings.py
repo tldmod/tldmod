@@ -2227,20 +2227,20 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("party_greet_enemy_beorn", "You will taste the fury of the bear people!"), 
 
 
-#################################
-# TLD faction ranks
-#
-     ("tfr_name_strings_begin", "tfr_name_strings_begin"),
-     ]+concatenate_scripts([
-        concatenate_scripts([
-                [(tld_faction_ranks[fac][rnk][2][pos][0].lower().replace(" ", "_"), tld_faction_ranks[fac][rnk][2][pos][0]) for pos in range(len(tld_faction_ranks[fac][rnk][2]))
-            ] for rnk in range(len(tld_faction_ranks[fac]))
-        ]) for fac in range(len(tld_faction_ranks))
-     ])+[
-    ("promote", "You have been working well for the realm. Now you can be:"),
-#
-# TLD faction ranks end
-#################################
+# #################################
+# # TLD faction ranks
+# #
+     # ("tfr_name_strings_begin", "tfr_name_strings_begin"),
+     # ]+concatenate_scripts([
+        # concatenate_scripts([
+                # [(tld_faction_ranks[fac][rnk][2][pos][0].lower().replace(" ", "_"), tld_faction_ranks[fac][rnk][2][pos][0]) for pos in range(len(tld_faction_ranks[fac][rnk][2]))
+            # ] for rnk in range(len(tld_faction_ranks[fac]))
+        # ]) for fac in range(len(tld_faction_ranks))
+     # ])+[
+    # ("promote", "You have been working well for the realm. Now you can be:"),
+# #
+# # TLD faction ranks end
+# #################################
 
  ("subfaction_gondor_name_begin" , "Gondor"),
  
@@ -2522,6 +2522,208 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("legendary_rumor_fangorn", "Legend has it trees meet to talk in Fangorn. What nonsense!"),
 
 ("last_rumor", "I haven't heard anything interesting lately."),
+
+
+### TLD home faction ranks - faction order must be kept 
+("gondor_rank_0", "Commoner of Gondor"),
+("gondor_rank_1", "Soldier of Gondor"),
+("gondor_rank_2", "Lieutenant of Gondor"),
+("gondor_rank_3", "Knight of Gondor"),
+("gondor_rank_4", "Tower Guard of Gondor"),
+("gondor_rank_5", "Citadel Knight of Gondor"),
+("gondor_rank_6", "Steward's Guard of Gondor"),
+("gondor_rank_7", "Captain of Gondor"),
+("gondor_rank_8", "Champion of Gondor"),
+("gondor_rank_9", "Hero of Gondor"),
+
+("dwarf_rank_0", "Dwarven Greenbeard"),
+("dwarf_rank_1", "Dwarven Miner"),
+("dwarf_rank_2", "Dwarven Warrior"),
+("dwarf_rank_3", "Dwarven Longbeard"),
+("dwarf_rank_4", "Dwarven Axe"),
+("dwarf_rank_5", "Dwarven Master Axe"),
+("dwarf_rank_6", "Dwarven Greybeard"),
+("dwarf_rank_7", "Dwarven Captain"),
+("dwarf_rank_8", "Dwarven Chief"),
+("dwarf_rank_9", "Hero of the Halls"),
+
+("rohan_rank_0", "Ceorl, Commoner of Rohan"),
+("rohan_rank_1", "Thain, Servant of Rohan"),
+("rohan_rank_2", "Léod, Freeman of Rohan"),
+("rohan_rank_3", "Rohir, Rider of Rohan"),
+("rohan_rank_4", "Scyldbora, Shieldbearer of Rohan"),
+("rohan_rank_5", "Swéordbora, Swordbearer of Rohan"),
+("rohan_rank_6", "Frumgar, First Spear of Rohan"),
+("rohan_rank_7", "Bealdoraed, Master Adviser of Rohan"),
+("rohan_rank_8", "Eorl, Nobleman of Rohan"),
+("rohan_rank_9", "Haleth, Hero of Rohan"),
+
+("mordor_rank_0", "Worm"),
+("mordor_rank_1", "Snaga"),
+("mordor_rank_2", "Backstabber of Gorgoroth"),
+("mordor_rank_3", "Sentry of Cirith Ungol"),
+("mordor_rank_4", "Slavedriver of Udûn"),
+("mordor_rank_5", "Despoiler of Durthang"),
+("mordor_rank_6", "Watchman of Morannon"),
+("mordor_rank_7", "Captain of Minas Morgul"),
+("mordor_rank_8", "Commander of Barad-dûr"),
+("mordor_rank_9", "Scourge of Mankind"),
+
+("isengard_rank_0", "Rat"),
+("isengard_rank_1", "Snaga"),
+("isengard_rank_2", "Crankturner"),
+("isengard_rank_3", "Treeburner"),
+("isengard_rank_4", "Wargfeeder"),
+("isengard_rank_5", "Ironsmelter"),
+("isengard_rank_6", "Forgemaster"),
+("isengard_rank_7", "Captain of Orthanc"),
+("isengard_rank_8", "Commander of Legions"),
+("isengard_rank_9", "White Right Hand of the Wizard"),
+
+("lorien_rank_0", "Sador, Faithful to Lorien"),
+("lorien_rank_1", "Tauron, Forester of Lorien"),
+("lorien_rank_2", "Mifaron, Grey Hunter of Lorien"),
+("lorien_rank_3", "Thindirith, Grey Guard of Lorien"),
+("lorien_rank_4", "Thangyl, Shieldbearer of Lorien"),
+("lorien_rank_5", "Maglagyl, Swordbearer of Lorien"),
+("lorien_rank_6", "Tiribrannon, Warden of Lorien"),
+("lorien_rank_7", "Glaurchir, Grandmaster of Lorien"),
+("lorien_rank_8", "Galadhîr, Radiant Lord of Lorien"),
+("lorien_rank_9", "Thalion, Hero of Lorien"),
+
+("imladris_rank_0", "Háno, Brother of Imladris"),
+("imladris_rank_1", "Macar, Warrior of Imladris"),
+("imladris_rank_2", "Sindacollo, Grey Cloak of Imladris"),
+("imladris_rank_3", "Luinëcollo, Blue Cloak of Imladris"),
+("imladris_rank_4", "Turmacolindo, Shieldbearer of Imladris"),
+("imladris_rank_5", "Langocolindo, Swordbearer of Imladris"),
+("imladris_rank_6", "Aráto, Champion of Imladris"),
+("imladris_rank_7", "Hesto, Captain of Imladris"),
+("imladris_rank_8", "Runando, Redeemer of Imladris"),
+("imladris_rank_9", "Callo, Hero of Imladris"),
+
+("woodelf_rank_0", "Sador, Faithful to Greenwood"),
+("woodelf_rank_1", "Tauron, Forester of Greenwood"),
+("woodelf_rank_2", "Hirfaron, Master Hunter of Greenwood"),
+("woodelf_rank_3", "Calendirith, Green Guard of Greenwood"),
+("woodelf_rank_4", "Thangyl, Shieldbearer of Greenwood"),
+("woodelf_rank_5", "Maglagyl, Swordbearer of Greenwood"),
+("woodelf_rank_6", "Tiribrannon, Warden of Greenwood"),
+("woodelf_rank_7", "Pengherdir, Bowmaster of Greenwood"),
+("woodelf_rank_8", "Armagor, Royal Swordsman of Greenwood"),
+("woodelf_rank_9", "Thalion, Hero of Greenwood"),
+
+("dale_rank_0", "Commoner of Dale"),
+("dale_rank_1", "Freeman of Dale"),
+("dale_rank_2", "Soldier of Dale"),
+("dale_rank_3", "Boatman of Dale"),
+("dale_rank_4", "Shieldbearer of Dale"),
+("dale_rank_5", "Swordbearer of Dale"),
+("dale_rank_6", "Barding, Archer of Dale"),
+("dale_rank_7", "Captain of Dale"),
+("dale_rank_8", "Lake Master of Dale"),
+("dale_rank_9", "Hero of Dale"),
+
+("harad_rank_0", "Initiate of the Tribe"),
+("harad_rank_1", "Adult of the Tribe"),
+("harad_rank_2", "Warrior of the Tribe"),
+("harad_rank_3", "Lionslayer"),
+("harad_rank_4", "Snakecharmer"),
+("harad_rank_5", "Mumakil Handler"),
+("harad_rank_6", "Black Snake Guard"),
+("harad_rank_7", "Captain of Harondor"),
+("harad_rank_8", "General of the Great Desert"),
+("harad_rank_9", "The Golden Serpent"),
+
+("rhun_rank_0", "Plainsman of Rhun"),
+("rhun_rank_1", "Serf of Rhun"),
+("rhun_rank_2", "Warrior of Rhun"),
+("rhun_rank_3", "Bull Warrior of Rhun"),
+("rhun_rank_4", "Shieldbearer of Rhun"),
+("rhun_rank_5", "Swordbearer of Rhun"),
+("rhun_rank_6", "Horsemaster of Rhun"),
+("rhun_rank_7", "Warlord of Rhun"),
+("rhun_rank_8", "Chief of the Steppe Clans"),
+("rhun_rank_9", "Khamûl's Right Hand"),
+
+("khand_rank_0", "Plainsman of Khand"),
+("khand_rank_1", "Serf of Khand"),
+("khand_rank_2", "Warrior of Khand"),
+("khand_rank_3", "Hawk Warrior of Khand"),
+("khand_rank_4", "Shieldbearer of Khand"),
+("khand_rank_5", "Swordbearer of Khand"),
+("khand_rank_6", "Horsemaster of Khand"),
+("khand_rank_7", "Warlord of the Variags"),
+("khand_rank_8", "Chief of the Variag Clans"),
+("khand_rank_9", "Legendary Conqueror"),
+
+("umbar_rank_0", "Landlubber"),
+("umbar_rank_1", "Deck Hand"),
+("umbar_rank_2", "Sailor"),
+("umbar_rank_3", "Harpooner"),
+("umbar_rank_4", "Throatcutter"),
+("umbar_rank_5", "Plunderer"),
+("umbar_rank_6", "Sailmaster"),
+("umbar_rank_7", "Captain of Umbar"),
+("umbar_rank_8", "Commander of the Fleet"),
+("umbar_rank_9", "Grand Admiral of the Seas"),
+
+("moria_rank_0", "Maggot"),
+("moria_rank_1", "Snaga"),
+("moria_rank_2", "Tunnel Rat"),
+("moria_rank_3", "Cave Forager"),
+("moria_rank_4", "Plunderer of the Mines"),
+("moria_rank_5", "Despoiler of the Halls"),
+("moria_rank_6", "Dwarfbane"),
+("moria_rank_7", "Goblin Warlord"),
+("moria_rank_8", "Goblin Chief"),
+("moria_rank_9", "Terror from the Deep"),
+
+#same as Mordor
+("guldur_rank_0", "Worm"),
+("guldur_rank_1", "Snaga"),
+("guldur_rank_2", "Backstabber of Gorgoroth"),
+("guldur_rank_3", "Sentry of Cirith Ungol"),
+("guldur_rank_4", "Slavedriver of Udûn"),
+("guldur_rank_5", "Despoiler of Durthang"),
+("guldur_rank_6", "Watchman of Morannon"),
+("guldur_rank_7", "Captain of Minas Morgul"),
+("guldur_rank_8", "Commander of Barad-dûr"),
+("guldur_rank_9", "Scourge of Mankind"),
+
+("gundabad_rank_0", "Turd"),
+("gundabad_rank_1", "Snaga"),
+("gundabad_rank_2", "Tunnel Rat"),
+("gundabad_rank_3", "Cave Forager"),
+("gundabad_rank_4", "Plunderer of the Hills"),
+("gundabad_rank_5", "Despoiler of the Mountains"),
+("gundabad_rank_6", "Dwarfbane"),
+("gundabad_rank_7", "Wargrider Warlord"),
+("gundabad_rank_8", "Great Goblin"),
+("gundabad_rank_9", "Pillager of the North"),
+
+("dunland_rank_0", "Pup"),
+("dunland_rank_1", "Dog"),
+("dunland_rank_2", "Wardog"),
+("dunland_rank_3", "Wolf"),
+("dunland_rank_4", "Strong Wolf"),
+("dunland_rank_5", "Dire Wolf"),
+("dunland_rank_6", "Great Wolf"),
+("dunland_rank_7", "Wolfpack Leader"),
+("dunland_rank_8", "Chief of the Clans"),
+("dunland_rank_9", "Freca's Avenger"),
+
+("beorn_rank_0", "Forest Cub"),
+("beorn_rank_1", "Forest Tracker"),
+("beorn_rank_2", "Forest Hunter"),
+("beorn_rank_3", "Forest Ranger"),
+("beorn_rank_4", "Forest Shieldbearer"),
+("beorn_rank_5", "Forest Axebearer"),
+("beorn_rank_6", "Forest Bear"),
+("beorn_rank_7", "Forest Great Bear"),
+("beorn_rank_8", "Forest Giant"),
+("beorn_rank_9", "Hero of the Forests"),
+# end of ranks
 
 ("tld_introduction","TLD Introduction - you should go to Edoras."),
 

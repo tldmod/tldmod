@@ -304,7 +304,7 @@ scripts = [
         
 		(val_div, ":rank", 100), 
 		(gt, ":rank", 0),
-		(call_script, "script_get_rank_title", ":fac"),
+		(call_script, "script_get_rank_title_to_s24", ":fac"),
 		(display_message, "@{s24}:"),
 
 		(store_mul, ":income", ":rank", ":rank"), 
@@ -316,84 +316,115 @@ scripts = [
 	(try_end),
   ]),
   
-# script_get_own_rank_title 
-  # PlayerRewardSystem, script: stores in s24 title of a faction, rank, career  (mtarini)
+# script_get_own_rank_title_to_s24 
+  # PlayerRewardSystem, script: stores in s24 title of home faction rank 
   # param1: faction
   # param2: rank 
   # param3: career variant (e.g. ranger vs knight) TODO
   # output: string 24
-  # THIS IS JUST A STUB!!!! TODO: make rank names for all factions!
-  ("get_own_rank_title",[
-	(store_script_param_1, ":fac"),
-	(store_script_param_2, ":rank"),
-	(str_store_faction_name, s5, ":fac"),
-	(store_div, reg10,":rank", 100),
-	(try_begin),
-		(ge, reg10, 9), (str_store_string, s24, "@Grandmaster Knight of {s5}"),
-	(else_try),
-		(ge, reg10, 8), (str_store_string, s24, "@Master Knight of {s5}"),
-	(else_try),
-		(ge, reg10, 7), (str_store_string, s24, "@Veteran Knight of {s5}"),
-	(else_try),
-		(ge, reg10, 6), (str_store_string, s24, "@Knight of {s5}"),
-	(else_try),
-		(ge, reg10, 5), (str_store_string, s24, "@Commander of {s5}"),
-	(else_try),
-		(ge, reg10, 4), (str_store_string, s24, "@Sergeant of {s5}"),
-	(else_try),
-		(ge, reg10, 3), (str_store_string, s24, "@Veteran of {s5}"),
-	(else_try),
-		(ge, reg10, 2), (str_store_string, s24, "@Soldier of {s5}"),
-	(else_try),
-		(ge, reg10, 1), (str_store_string, s24, "@Recruit of {s5}"),
-	(else_try),
-		(str_store_string, s24, "@Unknown to {s5}"),
-	(end_try),
+  ("get_own_rank_title_to_s24",[
+	(store_script_param_1, ":faction"),
+	(store_script_param_2, ":rank_points"),
+	(store_div, ":rank", ":rank_points", 100),
+    (val_clamp, ":rank", 0, 10),
+    
+    (store_sub, ":string", ":faction", kingdoms_begin),
+    (val_mul, ":string", 10), #10 ranks
+    (val_add, ":string", ":rank"),
+    (val_add, ":string", "str_gondor_rank_0"),
+    
+    (str_store_string, s24, ":string"),
+    
+	# (try_begin),
+		# (ge, reg10, 9), (str_store_string, s24, "@Grandmaster Knight of {s5}"),
+	# (else_try),
+		# (ge, reg10, 8), (str_store_string, s24, "@Master Knight of {s5}"),
+	# (else_try),
+		# (ge, reg10, 7), (str_store_string, s24, "@Veteran Knight of {s5}"),
+	# (else_try),
+		# (ge, reg10, 6), (str_store_string, s24, "@Knight of {s5}"),
+	# (else_try),
+		# (ge, reg10, 5), (str_store_string, s24, "@Commander of {s5}"),
+	# (else_try),
+		# (ge, reg10, 4), (str_store_string, s24, "@Sergeant of {s5}"),
+	# (else_try),
+		# (ge, reg10, 3), (str_store_string, s24, "@Veteran of {s5}"),
+	# (else_try),
+		# (ge, reg10, 2), (str_store_string, s24, "@Soldier of {s5}"),
+	# (else_try),
+		# (ge, reg10, 1), (str_store_string, s24, "@Recruit of {s5}"),
+	# (else_try),
+		# (str_store_string, s24, "@Unknown to {s5}"),
+	# (end_try),
   ]),
 
-# script_get_allied_rank_title
+# script_get_allied_rank_title_to_s24
   # PlayerRewardSystem, script: stores in s24 title of a faction, rank, career  (mtarini)
   # param1: faction
   # param2: rank 
   # output: string 24
-  # THIS IS JUST A STUB!!!! TODO: make rank allied names for all factions!
-  ("get_allied_rank_title",[
+  ("get_allied_rank_title_to_s24",[
 	(store_script_param_1, ":fac"),
-	(store_script_param_2, ":rank"),
+	(store_script_param_2, ":rank_points"),
 	(str_store_faction_name, s5, ":fac"),
-	(store_div, reg10,":rank", 100),
-	(try_begin),
-		(ge, reg10, 9), (str_store_string, s24, "@Great Hope of {s5}"),
-	(else_try),
-		(ge, reg10, 8), (str_store_string, s24, "@Hope of {s5}"),
-	(else_try),
-		(ge, reg10, 7), (str_store_string, s24, "@Great Friend of {s5}"),
-	(else_try),
-		(ge, reg10, 6), (str_store_string, s24, "@Dearest friend of {s5}"),
-	(else_try),
-		(ge, reg10, 5), (str_store_string, s24, "@Admired friend of {s5}"),
-	(else_try),
-		(ge, reg10, 4), (str_store_string, s24, "@Trusted friend of {s5}"),
-	(else_try),
-		(ge, reg10, 3), (str_store_string, s24, "@Friend of {s5}"),
-	(else_try),
-		(ge, reg10, 2), (str_store_string, s24, "@Familiar to {s5}"),
-	(else_try),
-		(ge, reg10, 1), (str_store_string, s24, "@Known to {s5}"),
-	(else_try),
-		              (str_store_string, s24, "@Stranger to {s5}"),
-	(end_try),
+	(store_div, ":rank", ":rank_points", 100),
+    (try_begin),
+        (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
+        (try_begin),
+            (ge, ":rank", 9), (str_store_string, s24, "@Great Hope of {s5}"),
+        (else_try),
+            (eq, ":rank", 8), (str_store_string, s24, "@Hope of {s5}"),
+        (else_try),
+            (eq, ":rank", 7), (str_store_string, s24, "@Indispensable Ally of {s5}"),
+        (else_try),
+            (eq, ":rank", 6), (str_store_string, s24, "@Faithful Ally of {s5}"),
+        (else_try),
+            (eq, ":rank", 5), (str_store_string, s24, "@Trusted Friend of {s5}"),
+        (else_try),
+            (eq, ":rank", 4), (str_store_string, s24, "@Close Friend of {s5}"),
+        (else_try),
+            (eq, ":rank", 3), (str_store_string, s24, "@Friend of {s5}"),
+        (else_try),
+            (eq, ":rank", 2), (str_store_string, s24, "@Familiar to {s5}"),
+        (else_try),
+            (eq, ":rank", 1), (str_store_string, s24, "@Known to {s5}"),
+        (else_try),
+            (str_store_string, s24, "@Stranger to {s5}"),
+        (end_try),
+    (else_try),
+        (try_begin),
+            (ge, ":rank", 9), (str_store_string, s24, "@Great Enforcer of {s5}"),
+        (else_try),
+            (eq, ":rank", 8), (str_store_string, s24, "@Enforcer of {s5}"),
+        (else_try),
+            (eq, ":rank", 7), (str_store_string, s24, "@Important Ally of {s5}"),
+        (else_try),
+            (eq, ":rank", 6), (str_store_string, s24, "@Ally of {s5}"),
+        (else_try),
+            (eq, ":rank", 5), (str_store_string, s24, "@Accomplice of {s5}"),
+        (else_try),
+            (eq, ":rank", 4), (str_store_string, s24, "@Useful Tool of {s5}"),
+        (else_try),
+            (eq, ":rank", 3), (str_store_string, s24, "@Servant of {s5}"),
+        (else_try),
+            (eq, ":rank", 2), (str_store_string, s24, "@Familiar to {s5}"),
+        (else_try),
+            (eq, ":rank", 1), (str_store_string, s24, "@Known to {s5}"),
+        (else_try),
+            (str_store_string, s24, "@Unknown to {s5}"),
+        (end_try),
+    (end_try),
   ]),
 
-# script_get_rank_title  
-  ("get_rank_title",[
+# script_get_rank_title_to_s24  
+  ("get_rank_title_to_s24",[
 	(store_script_param_1, ":fac"),
 	(faction_get_slot, ":rank", ":fac", slot_faction_rank ),
 	(try_begin),
 		(eq, ":fac", "$players_kingdom"),
-		(call_script, "script_get_own_rank_title", ":fac", ":rank"),
+		(call_script, "script_get_own_rank_title_to_s24", ":fac", ":rank"),
 	(else_try),
-		(call_script, "script_get_allied_rank_title", ":fac", ":rank"),
+		(call_script, "script_get_allied_rank_title_to_s24", ":fac", ":rank"),
 	(try_end),
   ]),
 
@@ -401,7 +432,7 @@ scripts = [
 ("new_rank_attained",
     [ (store_script_param_1, ":fac"),
 	  (play_sound, "snd_gong"),
-	  (call_script, "script_get_rank_title", ":fac"),
+	  (call_script, "script_get_rank_title_to_s24", ":fac"),
 	  (str_store_troop_name, s10, "trp_player"),
 	  (display_message, "@You are now {s10}, {s24}", color_good_news),
 	]
@@ -852,15 +883,18 @@ scripts = [
 	(store_script_param_1, ":troop"),
 	(store_troop_faction, ":fac", ":troop"),
 	
-	(try_begin), (eq, ":fac", "fac_gondor"),
+	(try_begin),
+        (eq, ":fac", "fac_gondor"),
 		(str_store_string, s15,"@the Steward"),
 	(else_try),
-		(try_begin),(eq, ":fac", "$players_kingdom"),
+		(try_begin),
+            (eq, ":fac", "$players_kingdom"),
 			(str_store_string, s13,"@our"),
 		(else_try),
 			(str_store_string, s13,"@your"),
 		(try_end),
-		(try_begin),(faction_slot_eq, ":fac", slot_faction_side, faction_side_good ),
+		(try_begin),
+            (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
 			(str_store_string, s15,"@{s13} King"),
 		(else_try),
 			(str_store_string, s15,"@{s13} Master"),
@@ -18880,163 +18914,163 @@ scripts = [
     # Used by faction rank sys to get troops of rank
     # Input: none
     # Output: none
-    ("cf_get_soldiers",
-    [
-        (assign, "$g_move_heroes", 0),
-        (assign, ":successful", 0),
-#       (call_script, "script_party_remove_all_companions", "p_main_party"),
-        (try_begin),
-            (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
-            (store_and, ":pos", ":faction_rank", stfr_position_mask),
-            (val_div, ":pos", stfr_position_unit),
-            (store_and, ":rank", ":faction_rank", stfr_rank_mask),
-            (val_div, ":rank", stfr_rank_unit),
-        ]+concatenate_scripts([
-            [
-            (store_add, ":kd", kd, kingdoms_begin),
-            (eq, ":kd", "$players_kingdom"),
-            (try_begin),
-            ]+concatenate_scripts([
-                [
-                (eq, ":rank", rnk),
-                (try_begin),
-                ]+concatenate_scripts([
-                    [
-                    (eq, ":pos", pos),
-                    (try_begin),
-                        (call_script, "script_game_get_party_companion_limit"),
-                        (store_party_size_wo_prisoners, ":size", "p_main_party"),
-                        (val_add, ":size", sum([tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][1] for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]))])),
-                        (le, ":size", reg0),
-                        (assign, ":successful", 1),
-                    ]+[
-                    (party_add_members, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][0],
-                                                        tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][1]) \
-                        for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]))
-                    ]+[
-                    (else_try),
-                        (display_message, "@You company cannot take more men", 0xffff1493),
-                    (try_end),
-                (else_try),
-                    ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
-                ])+[
-                (try_end),
-            (else_try),
-                ] for rnk in range(len(tld_faction_ranks[kd]))
-            ])+[
-            (try_end),        
-        (else_try),
-            ] for kd in range(len(tld_faction_ranks))
-        ])+[
-        (try_end),
-        (eq, ":successful", 1),
-    ]),
+    # ("cf_get_soldiers",
+    # [
+        # (assign, "$g_move_heroes", 0),
+        # (assign, ":successful", 0),
+# #       (call_script, "script_party_remove_all_companions", "p_main_party"),
+        # (try_begin),
+            # (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
+            # (store_and, ":pos", ":faction_rank", stfr_position_mask),
+            # (val_div, ":pos", stfr_position_unit),
+            # (store_and, ":rank", ":faction_rank", stfr_rank_mask),
+            # (val_div, ":rank", stfr_rank_unit),
+        # ]+concatenate_scripts([
+            # [
+            # (store_add, ":kd", kd, kingdoms_begin),
+            # (eq, ":kd", "$players_kingdom"),
+            # (try_begin),
+            # ]+concatenate_scripts([
+                # [
+                # (eq, ":rank", rnk),
+                # (try_begin),
+                # ]+concatenate_scripts([
+                    # [
+                    # (eq, ":pos", pos),
+                    # (try_begin),
+                        # (call_script, "script_game_get_party_companion_limit"),
+                        # (store_party_size_wo_prisoners, ":size", "p_main_party"),
+                        # (val_add, ":size", sum([tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][1] for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]))])),
+                        # (le, ":size", reg0),
+                        # (assign, ":successful", 1),
+                    # ]+[
+                    # (party_add_members, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][0],
+                                                        # tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos][stck][1]) \
+                        # for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]))
+                    # ]+[
+                    # (else_try),
+                        # (display_message, "@You company cannot take more men", 0xffff1493),
+                    # (try_end),
+                # (else_try),
+                    # ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
+                # ])+[
+                # (try_end),
+            # (else_try),
+                # ] for rnk in range(len(tld_faction_ranks[kd]))
+            # ])+[
+            # (try_end),        
+        # (else_try),
+            # ] for kd in range(len(tld_faction_ranks))
+        # ])+[
+        # (try_end),
+        # (eq, ":successful", 1),
+    # ]),
 
     # script_cf_get_supplies
     # Used by faction rank sys to get supplies of rank
     # Input: none
     # Output: none
-    ("cf_get_supplies",
-    [
-        (store_free_inventory_capacity,":capacity", "trp_player"),
-        (assign, ":continue", 0),
-        (try_begin),
-            (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
-            (store_and, ":pos", ":faction_rank", stfr_position_mask),
-            (val_div, ":pos", stfr_position_unit),
-            (store_and, ":rank", ":faction_rank", stfr_rank_mask),
-            (val_div, ":rank", stfr_rank_unit),
-        ]+concatenate_scripts([
-            [
-            (store_add, ":kd", kd, kingdoms_begin),
-            (eq, ":kd", "$players_kingdom"),
-            (try_begin),
-            ]+concatenate_scripts([
-                [
-                (eq, ":rank", rnk),
-                (try_begin),
-                ]+concatenate_scripts([
-                    [
-                    (eq, ":pos", pos),
-                    (try_begin),
-                        (ge, ":capacity", sum(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][1] \
-                        for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos])))),
-                        ]+[
-                        (troop_add_items, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][0],
-                                                            tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][1]) \
-                            for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos]))
-                        ]+[
-                        (assign, ":continue", 1),
-                    (else_try),
-                        (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
-                    (try_end),
-                (else_try),
-                    ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
-                ])+[
-                (try_end),
-            (else_try),
-                ] for rnk in range(len(tld_faction_ranks[kd]))
-            ])+[
-            (try_end),        
-        (else_try),
-            ] for kd in range(len(tld_faction_ranks))
-        ])+[
-        (try_end),
-        (neq, ":continue", 0),
-    ]),
+    # ("cf_get_supplies",
+    # [
+        # (store_free_inventory_capacity,":capacity", "trp_player"),
+        # (assign, ":continue", 0),
+        # (try_begin),
+            # (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
+            # (store_and, ":pos", ":faction_rank", stfr_position_mask),
+            # (val_div, ":pos", stfr_position_unit),
+            # (store_and, ":rank", ":faction_rank", stfr_rank_mask),
+            # (val_div, ":rank", stfr_rank_unit),
+        # ]+concatenate_scripts([
+            # [
+            # (store_add, ":kd", kd, kingdoms_begin),
+            # (eq, ":kd", "$players_kingdom"),
+            # (try_begin),
+            # ]+concatenate_scripts([
+                # [
+                # (eq, ":rank", rnk),
+                # (try_begin),
+                # ]+concatenate_scripts([
+                    # [
+                    # (eq, ":pos", pos),
+                    # (try_begin),
+                        # (ge, ":capacity", sum(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][1] \
+                        # for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos])))),
+                        # ]+[
+                        # (troop_add_items, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][0],
+                                                            # tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos][stck][1]) \
+                            # for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_supplies_pos]))
+                        # ]+[
+                        # (assign, ":continue", 1),
+                    # (else_try),
+                        # (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
+                    # (try_end),
+                # (else_try),
+                    # ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
+                # ])+[
+                # (try_end),
+            # (else_try),
+                # ] for rnk in range(len(tld_faction_ranks[kd]))
+            # ])+[
+            # (try_end),        
+        # (else_try),
+            # ] for kd in range(len(tld_faction_ranks))
+        # ])+[
+        # (try_end),
+        # (neq, ":continue", 0),
+    # ]),
     
     # script_cf_get_equipments
     # Used by faction rank sys to get equipments of rank
     # Input: none
     # Output: none
-    ("cf_get_equipments",
-    [
-        (store_free_inventory_capacity,":capacity", "trp_player"),
-        (assign, ":continue", 0),
-        (try_begin),
-            (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
-            (store_and, ":pos", ":faction_rank", stfr_position_mask),
-            (val_div, ":pos", stfr_position_unit),
-            (store_and, ":rank", ":faction_rank", stfr_rank_mask),
-            (val_div, ":rank", stfr_rank_unit),
-        ]+concatenate_scripts([
-            [
-            (store_add, ":kd", kd, kingdoms_begin),
-            (eq, ":kd", "$players_kingdom"),
-            (try_begin),
-            ]+concatenate_scripts([
-                [
-                (eq, ":rank", rnk),
-                (try_begin),
-                ]+concatenate_scripts([
-                    [
-                    (eq, ":pos", pos),
-                    (try_begin),
-                        (ge, ":capacity", sum([tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][1] \
-                            for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos]))])),
-                        ]+[
-                        (troop_add_items, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][0],
-                                                            tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][1]) \
-                            for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos]))
-                        ]+[
-                        (assign, ":continue", 1),
-                    (else_try),
-                        (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
-                    (try_end),
-                (else_try),
-                    ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
-                ])+[
-                (try_end),
-            (else_try),
-                ] for rnk in range(len(tld_faction_ranks[kd]))
-            ])+[
-            (try_end),        
-        (else_try),
-            ] for kd in range(len(tld_faction_ranks))
-        ])+[
-        (try_end),
-        (neq, ":continue", 0),    
-    ]),
+    # ("cf_get_equipments",
+    # [
+        # (store_free_inventory_capacity,":capacity", "trp_player"),
+        # (assign, ":continue", 0),
+        # (try_begin),
+            # (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
+            # (store_and, ":pos", ":faction_rank", stfr_position_mask),
+            # (val_div, ":pos", stfr_position_unit),
+            # (store_and, ":rank", ":faction_rank", stfr_rank_mask),
+            # (val_div, ":rank", stfr_rank_unit),
+        # ]+concatenate_scripts([
+            # [
+            # (store_add, ":kd", kd, kingdoms_begin),
+            # (eq, ":kd", "$players_kingdom"),
+            # (try_begin),
+            # ]+concatenate_scripts([
+                # [
+                # (eq, ":rank", rnk),
+                # (try_begin),
+                # ]+concatenate_scripts([
+                    # [
+                    # (eq, ":pos", pos),
+                    # (try_begin),
+                        # (ge, ":capacity", sum([tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][1] \
+                            # for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos]))])),
+                        # ]+[
+                        # (troop_add_items, "p_main_party", tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][0],
+                                                            # tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos][stck][1]) \
+                            # for stck in range(len(tld_faction_ranks[kd][rnk][2][pos][tfr_equipments_pos]))
+                        # ]+[
+                        # (assign, ":continue", 1),
+                    # (else_try),
+                        # (display_message, "@You inventory doesn't have enough space.", 0xffff1493),                    
+                    # (try_end),
+                # (else_try),
+                    # ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
+                # ])+[
+                # (try_end),
+            # (else_try),
+                # ] for rnk in range(len(tld_faction_ranks[kd]))
+            # ])+[
+            # (try_end),        
+        # (else_try),
+            # ] for kd in range(len(tld_faction_ranks))
+        # ])+[
+        # (try_end),
+        # (neq, ":continue", 0),    
+    # ]),
 
     ############# Condition scripts
     
@@ -19044,23 +19078,23 @@ scripts = [
     # Input: none
     # Output: none
     # Fail if player fail the criterion to be captain of eorl guard
-    ("cf_can_be_captain_of_the_eorl_guard", [
-        (store_proficiency_level, ":onehanded", "trp_player", wpt_one_handed_weapon),
-        (store_proficiency_level, ":polearm", "trp_player", wpt_polearm),
-        (ge, ":onehanded", ":polearm"),
-        ]
-    ),
+    # ("cf_can_be_captain_of_the_eorl_guard", [
+        # (store_proficiency_level, ":onehanded", "trp_player", wpt_one_handed_weapon),
+        # (store_proficiency_level, ":polearm", "trp_player", wpt_polearm),
+        # (ge, ":onehanded", ":polearm"),
+        # ]
+    # ),
     
     # script_cf_can_be_captain_of_the_brego_guard
     # Input: none
     # Output: none
     # Fail if player fail the criterion to be captain of eorl guard
-    ("cf_can_be_captain_of_the_brego_guard", [
-        (store_proficiency_level, ":onehanded", "trp_player", wpt_one_handed_weapon),
-        (store_proficiency_level, ":polearm", "trp_player", wpt_polearm),
-        (lt, ":onehanded", ":polearm"),
-        ]
-    ),
+    # ("cf_can_be_captain_of_the_brego_guard", [
+        # (store_proficiency_level, ":onehanded", "trp_player", wpt_one_handed_weapon),
+        # (store_proficiency_level, ":polearm", "trp_player", wpt_polearm),
+        # (lt, ":onehanded", ":polearm"),
+        # ]
+    # ),
     
     #
     # TLD faction ranks end

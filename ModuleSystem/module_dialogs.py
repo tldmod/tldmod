@@ -1122,10 +1122,10 @@ dialogs = [
       (troop_get_slot, ":rank_needed", "$g_talk_troop", slot_troop_rank_request),
       (val_mul, ":rank_needed", 100), #convert to rank points
       (faction_get_slot, ":rank_held", "$g_talk_troop_faction", slot_faction_rank),
-      (call_script, "script_get_rank_title", "$g_talk_troop_faction"), (str_store_string_reg, s29, s24), #to s29
+      (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s29, s24), #to s29
       # a little hackery to determine needed rank title
       (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_needed"),
-      (call_script, "script_get_rank_title", "$g_talk_troop_faction"), #to s24
+      (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), #to s24
       (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_held"), #end vile hackery
       (store_sub, reg3, ":rank_needed", ":rank_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0), # not enough?
@@ -1707,8 +1707,8 @@ dialogs = [
 		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: City faction name
 		(str_store_troop_name, s23, "$g_player_troop"), # s23: Player name
 		(faction_get_slot, ":p_rank", "$g_encountered_party_faction", slot_faction_rank),
-		(call_script, "script_get_rank_title", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player TITLE  (among own faction)
-		(call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player TITLE  (among city faction)
+		(call_script, "script_get_rank_title_to_s24", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player TITLE  (among own faction)
+		(call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" ), # s24: player TITLE  (among city faction)
 		(str_store_faction_name, s25, "$players_kingdom"), # s25: Player's faction name
 		(assign, reg26, 0),(try_begin),(eq,"$players_kingdom","$g_encountered_party_faction"),(assign,reg26,1),(try_end), # reg26: 1 if city of player faction
 		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
@@ -3464,7 +3464,7 @@ dialogs = [
           (try_end),
         (try_end),
         (call_script, "script_store_faction_king_in_s15", "$players_kingdom"),
-        (call_script, "script_get_rank_title", "$players_kingdom"), #in s24
+        (call_script, "script_get_rank_title_to_s24", "$players_kingdom"), #in s24
         (try_begin),
           (eq, "$player_looks_like_an_orc",1),
           (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
@@ -4026,9 +4026,9 @@ dialogs = [
      (store_mul, ":needed_rank_points", ":rank_index", 100),
 	 (try_begin),
 	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
-	   (call_script, "script_get_own_rank_title", "$g_talk_troop_faction", ":needed_rank_points"),
+	   (call_script, "script_get_own_rank_title_to_s24", "$g_talk_troop_faction", ":needed_rank_points"),
 	 (else_try),
-	   (call_script, "script_get_allied_rank_title", "$g_talk_troop_faction", ":needed_rank_points"),
+	   (call_script, "script_get_allied_rank_title_to_s24", "$g_talk_troop_faction", ":needed_rank_points"),
 	 (try_end),
      #required rank title in s24
      
@@ -12118,7 +12118,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (eq, "$g_encountered_party_type", spt_prisoner_train),
        (str_store_string, s4, "@{s4}^We are escorting prisoners to {s12}."),
      (try_end),
-     (call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player rank title with this faction
+     (call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" ), # s24: player rank title with this faction
    ]],
 
   [anyone|plyr,"party_encounter_friend", [
@@ -12134,8 +12134,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    #init from TLD recruiting in city - modified
 		# prepare strings useful in the folowing dialog
 		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: Party faction name
-		(call_script, "script_get_rank_title", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player rank title with own faction
-		(call_script, "script_get_rank_title", "$g_encountered_party_faction" ), # s24: player rank title with this faction
+		(call_script, "script_get_rank_title_to_s24", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player rank title with own faction
+		(call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" ), # s24: player rank title with this faction
 		(assign, reg26, 0),(try_begin),(eq,"$players_kingdom","$g_encountered_party_faction"),(assign,reg26,1),(try_end), # reg26: 1 if party of player faction
 		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
 		# just to see if someone can be given away: backup party, then see if troops which can be given away 

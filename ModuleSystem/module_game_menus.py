@@ -316,7 +316,7 @@ game_menus = [
     (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 	(str_store_faction_name, s16, ":fac"),
 	
-	(call_script, "script_get_own_rank_title", ":fac", reg10),
+	(call_script, "script_get_own_rank_title_to_s24", ":fac", reg10),
 	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
 	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
@@ -329,7 +329,7 @@ game_menus = [
         (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 		(str_store_faction_name, s16, ":fac"),
 		
-		(call_script, "script_get_allied_rank_title", ":fac", reg10),
+		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg10),
 		(try_begin), 
 			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24} ({reg13})"),  # title
 		(try_end),
@@ -8714,153 +8714,153 @@ game_menus = [
     #################################
     # TLD faction ranks
     #
-    ("faction_rank_change", 0,
-        "{s11}",
-        "none",
-        [], 
-        concatenate_scripts([concatenate_scripts([
-            [
-            (tld_faction_ranks[kd][rnk][2][pos][tfr_name_pos].lower().replace(' ', '_'), [
-                (store_add, ":kd", kd, kingdoms_begin),
-                (eq, ":kd", "$players_kingdom"),
-                (eq, rnk, "$tld_new_rank"),
-                (assign, ":continue", 0),
-                (try_begin),
-                    (eq, tld_faction_ranks[kd][rnk][2][pos][tfr_condition_pos], -1),
-                    (assign, ":continue", 1),
-                (else_try),
-                    (call_script, tld_faction_ranks[kd][rnk][2][pos][tfr_condition_pos]),
-                    (assign, ":continue", 1),
-                (try_end),
-                (eq, ":continue", 1),
-            ], tld_faction_ranks[kd][rnk][2][pos][tfr_name_pos], [
-                (troop_get_slot, ":ofc_pos", "trp_player", slot_troop_faction_rank),
-                (store_and, ":cur_equipment", ":ofc_pos", stfr_equipments_permit),
-                (store_sub, ":name_str", "str_"+tld_faction_ranks[kd][rnk][2][pos][0].lower().replace(" ", "_"), tfr_name_strings_begin),
-                (val_mul, ":name_str", stfr_name_string_unit),
-                (store_add, ":ofc_pos", ":cur_equipment", 
-                rnk*stfr_rank_unit+pos*stfr_position_unit \
-                +(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]) > 0)*stfr_in_command \
-                +stfr_soldiers_permit+stfr_supplies_permit+stfr_reinforcement),
-                (val_add, ":ofc_pos", ":name_str"),
-                (troop_set_slot, "trp_player", slot_troop_faction_rank, ":ofc_pos"),
-#                (troop_add_gold, "trp_player", tld_faction_ranks[kd][rnk][2][pos][tfr_base_fund_pos]),
-                (change_screen_return),
-            ]
-            )   for pos in range(len(tld_faction_ranks[kd][rnk][2])) ]
-            for rnk in range(len(tld_faction_ranks[kd])) ]) \
-            for kd in range(len(tld_faction_ranks))])+[
-            ("refuse", [],
-            "I am no match for such duty.", [
-                (change_screen_return),
-                ]
-            ),
-        ]
-    ),
+    # ("faction_rank_change", 0,
+        # "{s11}",
+        # "none",
+        # [], 
+        # concatenate_scripts([concatenate_scripts([
+            # [
+            # (tld_faction_ranks[kd][rnk][2][pos][tfr_name_pos].lower().replace(' ', '_'), [
+                # (store_add, ":kd", kd, kingdoms_begin),
+                # (eq, ":kd", "$players_kingdom"),
+                # (eq, rnk, "$tld_new_rank"),
+                # (assign, ":continue", 0),
+                # (try_begin),
+                    # (eq, tld_faction_ranks[kd][rnk][2][pos][tfr_condition_pos], -1),
+                    # (assign, ":continue", 1),
+                # (else_try),
+                    # (call_script, tld_faction_ranks[kd][rnk][2][pos][tfr_condition_pos]),
+                    # (assign, ":continue", 1),
+                # (try_end),
+                # (eq, ":continue", 1),
+            # ], tld_faction_ranks[kd][rnk][2][pos][tfr_name_pos], [
+                # (troop_get_slot, ":ofc_pos", "trp_player", slot_troop_faction_rank),
+                # (store_and, ":cur_equipment", ":ofc_pos", stfr_equipments_permit),
+                # (store_sub, ":name_str", "str_"+tld_faction_ranks[kd][rnk][2][pos][0].lower().replace(" ", "_"), tfr_name_strings_begin),
+                # (val_mul, ":name_str", stfr_name_string_unit),
+                # (store_add, ":ofc_pos", ":cur_equipment", 
+                # rnk*stfr_rank_unit+pos*stfr_position_unit \
+                # +(len(tld_faction_ranks[kd][rnk][2][pos][tfr_soldiers_pos]) > 0)*stfr_in_command \
+                # +stfr_soldiers_permit+stfr_supplies_permit+stfr_reinforcement),
+                # (val_add, ":ofc_pos", ":name_str"),
+                # (troop_set_slot, "trp_player", slot_troop_faction_rank, ":ofc_pos"),
+# #                (troop_add_gold, "trp_player", tld_faction_ranks[kd][rnk][2][pos][tfr_base_fund_pos]),
+                # (change_screen_return),
+            # ]
+            # )   for pos in range(len(tld_faction_ranks[kd][rnk][2])) ]
+            # for rnk in range(len(tld_faction_ranks[kd])) ]) \
+            # for kd in range(len(tld_faction_ranks))])+[
+            # ("refuse", [],
+            # "I am no match for such duty.", [
+                # (change_screen_return),
+                # ]
+            # ),
+        # ]
+    # ),
     
-  #Faction rank resources menu
-  (
-    "faction_rank_resource",0,
-    "You are currently {s10} of {s9}. You have access to the following resources of the realm.",
-    "none",
-    [
-        (troop_get_slot, reg5, "trp_player", slot_troop_faction_rank),
-        (store_and, ":rnk", reg5, stfr_rank_mask),
-        (val_div, ":rnk", stfr_rank_unit),
-        (store_and, ":name_str", reg5, stfr_name_string),
-        (val_div, ":name_str", stfr_name_string_unit),
-        (val_add, ":name_str", tfr_name_strings_begin),
-        (str_store_string, s10, ":name_str"),
-        (str_store_faction_name, s9, "$players_kingdom"),
-    ], [
-      ("get_equipments",[
-            (store_and, reg7, reg5, stfr_equipments_permit),
-            (store_and, reg6, reg5, stfr_rank_mask),
-            (val_div, reg6, stfr_rank_unit),
-            (val_mul, reg6, stfr_equipment_unit),
-            (display_message, "@permit: {reg7}, had: {reg6}", debug_color),
-            (gt, reg7, reg6),
-            debug_point_2,
-        ],
-      "Equipment.",[
-            (call_script,"script_cf_get_equipments"),
-            (val_sub, reg5, reg7),
-            (val_add, reg5, reg6),
-            (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
-#            (jump_to_menu, "mnu_get_soldiers"),
-      ]),
-      ("get_soldiers",[
-            (store_and, ":soldier", reg5, stfr_soldiers_permit),
-            (neq, ":soldier", 0),
-            (store_and, ":in_command", reg5, stfr_in_command),
-            (neq, ":in_command", 0),
-           ],
-      "Troops.",[
-            (call_script, "script_cf_get_soldiers"),
-            (val_sub, reg5, stfr_soldiers_permit),
-            (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
-      ]),
-      ("get_supplies",[
-            (store_and, ":supplies", reg5, stfr_supplies_permit),
-            (neq, ":supplies", 0),
-        ],
-      "Supplies.",[
-            (call_script,"script_cf_get_supplies"),
-            (val_sub, reg5, stfr_supplies_permit),
-            (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
-#            (jump_to_menu, "mnu_get_soldiers"),
-      ]),
-      ("renown_soldiers",[
-          (troop_get_slot, reg3, "trp_player", slot_troop_renown),
-          (assign, ":continue", 0),
-          (try_begin),
-              (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
-              (store_and, ":pos", ":faction_rank", stfr_position_mask),
-              (val_div, ":pos", stfr_position_unit),
-              (store_and, ":rank", ":faction_rank", stfr_rank_mask),
-              (val_div, ":rank", stfr_rank_unit),
-          ]+concatenate_scripts([
-              [
-              (store_add, ":kd", kd, kingdoms_begin),
-              (eq, ":kd", "$players_kingdom"),
-              (try_begin),
-              ]+concatenate_scripts([
-                  [
-                  (eq, ":rank", rnk),
-                  (try_begin),
-                  ]+concatenate_scripts([
-                      [
-                      (eq, ":pos", pos),
-                      (ge, reg3, tld_faction_ranks[kd][rnk][2][pos][tfr_con_sol_ex_pos]),
-                      (assign, ":continue", 1),
-                      (assign, reg4, tld_faction_ranks[kd][rnk][2][pos][tfr_con_sol_ex_pos]),
-                  (else_try),
-                      ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
-                  ])+[
-                  (try_end),
-              (else_try),
-                  ] for rnk in range(len(tld_faction_ranks[kd]))
-              ])+[
-              (try_end),        
-          (else_try),
-              ] for kd in range(len(tld_faction_ranks))
-          ])+[
-          (try_end),
-          (neq, ":continue", 0),
-      ],
-      "Hire troops (renown points).",[
-              (call_script,"script_cf_get_soldiers"),
-              (val_sub, reg3, reg4),
-              (troop_set_slot, "trp_player", slot_troop_renown, reg3),
-      ]),
+  # #Faction rank resources menu
+  # (
+    # "faction_rank_resource",0,
+    # "You are currently {s10} of {s9}. You have access to the following resources of the realm.",
+    # "none",
+    # [
+        # (troop_get_slot, reg5, "trp_player", slot_troop_faction_rank),
+        # (store_and, ":rnk", reg5, stfr_rank_mask),
+        # (val_div, ":rnk", stfr_rank_unit),
+        # (store_and, ":name_str", reg5, stfr_name_string),
+        # (val_div, ":name_str", stfr_name_string_unit),
+        # (val_add, ":name_str", tfr_name_strings_begin),
+        # (str_store_string, s10, ":name_str"),
+        # (str_store_faction_name, s9, "$players_kingdom"),
+    # ], [
+      # ("get_equipments",[
+            # (store_and, reg7, reg5, stfr_equipments_permit),
+            # (store_and, reg6, reg5, stfr_rank_mask),
+            # (val_div, reg6, stfr_rank_unit),
+            # (val_mul, reg6, stfr_equipment_unit),
+            # (display_message, "@permit: {reg7}, had: {reg6}", debug_color),
+            # (gt, reg7, reg6),
+            # debug_point_2,
+        # ],
+      # "Equipment.",[
+            # (call_script,"script_cf_get_equipments"),
+            # (val_sub, reg5, reg7),
+            # (val_add, reg5, reg6),
+            # (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
+# #            (jump_to_menu, "mnu_get_soldiers"),
+      # ]),
+      # ("get_soldiers",[
+            # (store_and, ":soldier", reg5, stfr_soldiers_permit),
+            # (neq, ":soldier", 0),
+            # (store_and, ":in_command", reg5, stfr_in_command),
+            # (neq, ":in_command", 0),
+           # ],
+      # "Troops.",[
+            # (call_script, "script_cf_get_soldiers"),
+            # (val_sub, reg5, stfr_soldiers_permit),
+            # (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
+      # ]),
+      # ("get_supplies",[
+            # (store_and, ":supplies", reg5, stfr_supplies_permit),
+            # (neq, ":supplies", 0),
+        # ],
+      # "Supplies.",[
+            # (call_script,"script_cf_get_supplies"),
+            # (val_sub, reg5, stfr_supplies_permit),
+            # (troop_set_slot, "trp_player", slot_troop_faction_rank, reg5),
+# #            (jump_to_menu, "mnu_get_soldiers"),
+      # ]),
+      # ("renown_soldiers",[
+          # (troop_get_slot, reg3, "trp_player", slot_troop_renown),
+          # (assign, ":continue", 0),
+          # (try_begin),
+              # (troop_get_slot,":faction_rank","trp_player",slot_troop_faction_rank),
+              # (store_and, ":pos", ":faction_rank", stfr_position_mask),
+              # (val_div, ":pos", stfr_position_unit),
+              # (store_and, ":rank", ":faction_rank", stfr_rank_mask),
+              # (val_div, ":rank", stfr_rank_unit),
+          # ]+concatenate_scripts([
+              # [
+              # (store_add, ":kd", kd, kingdoms_begin),
+              # (eq, ":kd", "$players_kingdom"),
+              # (try_begin),
+              # ]+concatenate_scripts([
+                  # [
+                  # (eq, ":rank", rnk),
+                  # (try_begin),
+                  # ]+concatenate_scripts([
+                      # [
+                      # (eq, ":pos", pos),
+                      # (ge, reg3, tld_faction_ranks[kd][rnk][2][pos][tfr_con_sol_ex_pos]),
+                      # (assign, ":continue", 1),
+                      # (assign, reg4, tld_faction_ranks[kd][rnk][2][pos][tfr_con_sol_ex_pos]),
+                  # (else_try),
+                      # ] for pos in range(len(tld_faction_ranks[kd][rnk][2]))
+                  # ])+[
+                  # (try_end),
+              # (else_try),
+                  # ] for rnk in range(len(tld_faction_ranks[kd]))
+              # ])+[
+              # (try_end),        
+          # (else_try),
+              # ] for kd in range(len(tld_faction_ranks))
+          # ])+[
+          # (try_end),
+          # (neq, ":continue", 0),
+      # ],
+      # "Hire troops (renown points).",[
+              # (call_script,"script_cf_get_soldiers"),
+              # (val_sub, reg3, reg4),
+              # (troop_set_slot, "trp_player", slot_troop_renown, reg3),
+      # ]),
       
       
-      ("forget_it",[],
-      "Forget it.",[
-            (jump_to_menu, "mnu_town"),
-        ]),
-    ]
-  ),
+      # ("forget_it",[],
+      # "Forget it.",[
+            # (jump_to_menu, "mnu_town"),
+        # ]),
+    # ]
+  # ),
   #
   # TLD faction ranks end
   ############################

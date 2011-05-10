@@ -1639,44 +1639,44 @@ triggers = [
 # TLD faction ranks
 #
 # Detect new rank
-  (12, 0, 0, [], [
-    (troop_get_slot, ":status", "trp_player", slot_troop_faction_status),
-    (try_begin),
-    ]+concatenate_scripts([
-        [
-        (store_add, ":kd", kd, kingdoms_begin),
-        (eq, ":kd", "$players_kingdom"),
-        (try_begin),
-        ]+concatenate_scripts([
-            [
-            (ge, ":status", tld_faction_ranks[kd][rnk][0]),
-            (troop_get_slot, ":ofc_pos", "trp_player", slot_troop_faction_rank),
-            (store_and, ":rank", ":ofc_pos", stfr_rank_mask),
-            (val_div, ":rank", stfr_rank_unit),
-            (assign, ":continue", 0),
-            (try_begin),
-                (gt, ":rank", rnk),
-                (str_store_string, s11, "str_promote"),
-#            (else_try),
-#                (lt, ":rank", rnk),
-#                (str_store_string, s11, "str_demote"),
-            (else_try),
-                (assign, ":continue", 1),
-            (try_end),
-            (try_begin),
-                (eq, ":continue", 0),
-                (assign, "$tld_new_rank", rnk),
-                (jump_to_menu, "mnu_faction_rank_change"),
-            (try_end),
-        (else_try),
-            ] for rnk in range(len(tld_faction_ranks[kd]))
-        ])+[
-        (try_end),
-    (else_try),
-        ] for kd in range(len(tld_faction_ranks))
-    ])+[
-    (try_end),
-  ]),
+  # (12, 0, 0, [], [
+    # (troop_get_slot, ":status", "trp_player", slot_troop_faction_status),
+    # (try_begin),
+    # ]+concatenate_scripts([
+        # [
+        # (store_add, ":kd", kd, kingdoms_begin),
+        # (eq, ":kd", "$players_kingdom"),
+        # (try_begin),
+        # ]+concatenate_scripts([
+            # [
+            # (ge, ":status", tld_faction_ranks[kd][rnk][0]),
+            # (troop_get_slot, ":ofc_pos", "trp_player", slot_troop_faction_rank),
+            # (store_and, ":rank", ":ofc_pos", stfr_rank_mask),
+            # (val_div, ":rank", stfr_rank_unit),
+            # (assign, ":continue", 0),
+            # (try_begin),
+                # (gt, ":rank", rnk),
+                # (str_store_string, s11, "str_promote"),
+# #            (else_try),
+# #                (lt, ":rank", rnk),
+# #                (str_store_string, s11, "str_demote"),
+            # (else_try),
+                # (assign, ":continue", 1),
+            # (try_end),
+            # (try_begin),
+                # (eq, ":continue", 0),
+                # (assign, "$tld_new_rank", rnk),
+                # (jump_to_menu, "mnu_faction_rank_change"),
+            # (try_end),
+        # (else_try),
+            # ] for rnk in range(len(tld_faction_ranks[kd]))
+        # ])+[
+        # (try_end),
+    # (else_try),
+        # ] for kd in range(len(tld_faction_ranks))
+    # ])+[
+    # (try_end),
+  # ]),
 
 #
 # TLD faction ranks end
