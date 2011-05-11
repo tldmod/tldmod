@@ -308,7 +308,8 @@ tld_player_cant_ride = (0.90,1.5,0.5,
 	(assign, ":is_orc", 0),
 	(agent_get_item_id,":mount_item", ":mount"),
 	(try_begin), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":is_warg", 1),(try_end),
-	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
+#	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
+	(try_begin), (eq, ":race", tf_orc),(assign, ":is_orc" , 1),(try_end), # non-orcs (uruks & hai included) cannot ride ordinary wargs
 	(neq, ":is_warg", ":is_orc"), # non orc riding wargs, or orc riding non wargs
 	(store_random_in_range, ":rand",0,100),
 	(ge, ":rand", 50),

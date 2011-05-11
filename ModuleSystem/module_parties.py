@@ -68,7 +68,7 @@ parties = [
   # ] for x in range(150)) +  [
   
   ("town_merc_1","sargoth_mercs",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.9,-0.5),[]),
+  ("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.9,-28.3),[]),
 
 #TLD TOWNS
     # Gondor towns
@@ -89,7 +89,7 @@ parties = [
     ("town_edoras","Edoras",         icon_edoras     |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 22.8,-14.7),[],215),
     ("town_aldburg","Aldburg",       icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(  7.9, -8.3),[],170),
     ("town_hornburg","Hornburg",     icon_helms_deep |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 40.2,-11.9),[],190),
-    ("town_east_emnet","East_Emnet", icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.1,-28.5),[],170),
+    ("town_east_emnet","East_Emnet", icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.9,-27.6),[],170),
     ("town_westfold","Westfold",     icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 41.5,-29.3),[],260),
     ("town_west_emnet","West_Emnet", icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 22.1,-40.1),[],250),
     ("town_eastfold","Eastfold",     icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.2,-0.52),[],170),
@@ -129,7 +129,7 @@ parties = [
 # Haradrim towns
     ("town_harad_camp","Haradrim_Camp",    icon_haradcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.9,67.7),[],170),
 # Khand towns
-    ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.6,-39.4),[],170),
+    ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-74.2,-44.9),[],170),
 # Umbar towns
     ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(12.9,65.9),[],175),
 # Imladris towns
