@@ -40,7 +40,7 @@ tmp_menu_max_fac = 21
 tmp_menu_max_tier = 4
 tmp_max_troop = 858 # troop_end
 
-magic_items = range( itm_ent_water , itm_metal_scraps_bad ) + [itm_lembas]# first non magin item
+magic_items = range( itm_ent_water , itm_witchking_helmet) + [itm_lembas]# first non magin item
 
 city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
@@ -2677,7 +2677,6 @@ game_menus = [
   
   
   ################################ CHEAT/MODDING MENU START ########################################
-
   # free magic item cheat (mtarini)
   ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],[
     ("mi",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) for x in magic_items ]+[

@@ -235,7 +235,7 @@ items =[
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_round_shield_4", ":agent_no", ":troop_no")])]],
 #["tab_shield_small_round_a", "Plain Cavalry Shield",[("tableau_shield_small_round_3",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  96 , weight(2)|hit_points(310)|body_armor(3)|spd_rtng(105)|weapon_length(40),imodbits_shield,
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_3", ":agent_no", ":troop_no")])]],
-["tab_shield_small_round_b","Round_Cavalry_Shield",[("tableau_shield_small_round_1",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,195,weight(2.5)|hit_points(370)|body_armor(9)|spd_rtng(103)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_shield_item_set_banner", "tableau_small_round_shield_1", ":agent_no", ":troop_no")])]],
+["tab_shield_small_round_b","Round_Cavalry_Shield",[("tableau_shield_small_round_1",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,195,weight(2.5)|hit_points(370)|body_armor(5)|spd_rtng(103)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_shield_item_set_banner", "tableau_small_round_shield_1", ":agent_no", ":troop_no")])]],
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_shield_item_set_banner", "tableau_small_round_shield_1", ":agent_no", ":troop_no")])]],
 #["tab_shield_small_round_c", "Elite Cavalry Shield",[("tableau_shield_small_round_2",0)], itp_shop|itp_type_shield, itcf_carry_round_shield,  370 , weight(3)|hit_points(420)|body_armor(14)|spd_rtng(100)|weapon_length(40),imodbits_shield,
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_2", ":agent_no", ":troop_no")])]],
@@ -287,11 +287,11 @@ items =[
 ["arnor_greaves","Arnorian_Greaves",[("arnor_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(24)|difficulty(0),imodbits_armor],
 ["arnor_splinted","Arnorian_Splinted_Greaves",[("arnor_splinted",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(3.5)|leg_armor(28)|difficulty(0),imodbits_armor],
 #ARNOR SHIELDS########
-["arnor_shield_a","Arnor_Shield",[("arnor_shield_inf",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield,],
+["arnor_shield_a","Arnor_Shield",[("arnor_shield_inf",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(14)|spd_rtng(100)|weapon_length(50),imodbits_shield,],
 #["arnor_shield_b", "Arnor Buckler",[("arnor_buckler",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  118 , weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield ],
-["arnor_shield_c","Arnor_Cavalry_Shield",[("arnor_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield,],
-["arnor_shield_b","Arnor_Shield",[("arnor_shield_inf_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield,],
-["arnor_shield_d","Arnor_Cavalry_Shield",[("arnor_cav_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(1)|spd_rtng(100)|weapon_length(39),imodbits_shield,],
+["arnor_shield_c","Arnor_Cavalry_Shield",[("arnor_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(14)|spd_rtng(100)|weapon_length(50),imodbits_shield,],
+["arnor_shield_b","Arnor_Shield",[("arnor_shield_inf_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(14)|spd_rtng(100)|weapon_length(50),imodbits_shield,],
+["arnor_shield_d","Arnor_Cavalry_Shield",[("arnor_cav_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(1.3)|hit_points(380)|body_armor(14)|spd_rtng(100)|weapon_length(50),imodbits_shield,],
 ####RNOR WEAPONS########
 ["arnor_sword_a","Arnor_Bastard_Sword",[("dunedain_bastard_a",0),("scab_dunedain_bastard_a",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,294,weight(2.05)|difficulty(0)|spd_rtng(99)|weapon_length(100)|swing_damage(36,cut)|thrust_damage(27,pierce),imodbits_sword_high],
 #["arnor_sword_b", "Arnor Bastard Sword",[("dunedain_bastard_c",0),("bastard_sword_a_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,324 , weight(2.25)|difficulty(9)|spd_rtng(97) | weapon_length(110)|swing_damage(38 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high ],
@@ -306,8 +306,8 @@ items =[
 ["riv_helm_c","Rivendell_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,980,weight(1.2)|head_armor(55)|difficulty(0),imodbits_plate],
 ["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_type_head_armor|0,0,3000,weight(1.2)|head_armor(65)|difficulty(0),imodbits_plate],
 ##########RIVENDELL SHIELDS##########
-["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,318,weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield,],
-["riv_shield_b","Rivendell_Shield",[("riv_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,418,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,318,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(85)|weapon_length(82),imodbits_shield,],
+["riv_shield_b","Rivendell_Shield",[("riv_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,418,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 #["riv_shield_c", "Rivendell Shield",[("riv_inf_shield_long_a",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  218 , weight(2.0)|hit_points(380)|body_armor(1)|spd_rtng(99)|weapon_length(50),imodbits_shield ],
 #["riv_shield_d", "Rivendell Shield",[("riv_inf_shield_long_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  318 , weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield ],
 #["riv_shield_e", "Rivendell Shield",[("riv_inf_shield_short_a",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  418, weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -340,10 +340,6 @@ items =[
 ["gon_knight","Gondor_Heavy_Mail_and_Cloak",[("gondor_knight",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1295,weight(17)|head_armor(0)|body_armor(45)|leg_armor(12)|difficulty(0),imodbits_armor,],
 ["gon_ranger_cloak","Gondor_Ranger_Cloak",[("gondor_ranger_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,830,weight(10)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["gon_ranger_skirt","Gondor_Ranger_Skirt",[("gondor_ranger_skirt",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,990,weight(10)|head_armor(0)|body_armor(30)|leg_armor(12)|difficulty(0),imodbits_armor,],
-
-
-
-
 ["gon_leader_surcoat_cloak","Gondor_Leader's_Surcoat",[("gon_leader_surcoat_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1342,weight(17)|head_armor(0)|body_armor(42)|leg_armor(10)|difficulty(0),imodbits_armor,],
 ["gondor_ranger_hood","Green_Hood",[("gondor_ranger_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,60,weight(0.5)|head_armor(13)|difficulty(0),imodbits_cloth],
 ["gondor_ranger_hood_mask","Gondor_Ranger_Hood",[("gondor_ranger_hood_mask",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,90,weight(0.6)|head_armor(15)|difficulty(0),imodbits_cloth],
@@ -422,11 +418,11 @@ items =[
 ["lossarnach_scale_cap","Lossarnach_Scale_Cap",[("lossarnach_scale_cap",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(40)|difficulty(0),imodbits_plate],
 ["lossarnach_greaves","Lossarnach_Greaves",[("lossarnach_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(24)|difficulty(0),imodbits_armor],
 ####SHIELDS#####
-["gondor_shield_a","Gondor_Square_Shield",[("gondor_square_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["gondor_shield_b","Gondor_Kite_Shield",[("gondor_point_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["gondor_shield_c","Gondor_Tower_Shield",[("gondor_tower_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["gondor_shield_d","Gondor_Kite_Shield",[("gondorian_kite_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["gondor_shield_e","Gondor_Royal_Shield",[("denethor_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["gondor_shield_a","Gondor_Square_Shield",[("gondor_square_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["gondor_shield_b","Gondor_Kite_Shield",[("gondor_point_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["gondor_shield_c","Gondor_Tower_Shield",[("gondor_tower_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["gondor_shield_d","Gondor_Kite_Shield",[("gondorian_kite_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["gondor_shield_e","Gondor_Royal_Shield",[("denethor_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 #
 ["gon_tab_shield_a","Heraldic_Gondor_Round_Shield",[("tableau_shield_round",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,96,weight(2)|hit_points(310)|body_armor(3)|spd_rtng(105)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_gondor_round_shield_banner", "tableau_gon_shield_round", ":agent_no", ":troop_no")])]],
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_gondor_round_shield_banner", "tableau_gon_shield_round", ":agent_no", ":troop_no")])]],
@@ -479,9 +475,9 @@ items =[
 ["lorien_boots","Lothlorien_Boots",[("lorien_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(24)|difficulty(0),imodbits_cloth],
 ########LORIEN SHIELDS#####
 #["lorien_shield_a", "Lorien Shield",[("loth_long_shield_a" ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["lorien_shield_b","Lorien_Tower_Shield",[("lorien_kite",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["lorien_shield_c","Lorien_Kite_Shield",[("lorien_kite_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["lorien_round_shield","Lorien_Round_Shield",[("lorien_round_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["lorien_shield_b","Lorien_Tower_Shield",[("lorien_kite",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["lorien_shield_c","Lorien_Kite_Shield",[("lorien_kite_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["lorien_round_shield","Lorien_Round_Shield",[("lorien_round_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 # 
 ########LORIEN HELMS#######
 ["lorien_helm_a","Lorien_Archer_Helm",[("lorienhelmetarcherlow",0)],itp_type_head_armor|itp_shop,0,980,weight(1)|head_armor(40)|difficulty(0),imodbits_plate],
@@ -585,20 +581,20 @@ items =[
 ["orc_bow","Orc_Bow",[("orc_bow",0),("orc_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_ganstabow|itcf_carry_bowcase_left,437,weight(1.25)|difficulty(0)|shoot_speed(57)|spd_rtng(86)|thrust_damage(33,cut),imodbits_bow],
 # uruk_bow is a orc_bow intended for uruks/humans (vertical shooting position)
 ####Orc Shields
-["orc_shield_a","Orc_Shield",[("orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["orc_shield_b","Orc_Shield",[("orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["orc_shield_c","Orc_Shield",[("orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,227,weight(3.5)|hit_points(600)|body_armor(1)|spd_rtng(76)|weapon_length(81),imodbits_shield,],
-["mordor_orc_shield_a","Mordor_Orc_Shield",[("mordor_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_orc_shield_b","Mordor_Orc_Shield",[("mordor_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_orc_shield_c","Mordor_Orc_Shield",[("mordor_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_orc_shield_d","Mordor_Orc_Shield",[("mordor_orc_shield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_orc_shield_e","Mordor_Orc_Shield",[("mordor_orc_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_uruk_shield_a","Mordor_Uruk_Shield",[("mordor_uruk_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_uruk_shield_b","Mordor_Uruk_Shield",[("mordor_uruk_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_uruk_shield_c","Mordor_Uruk_Shield",[("mordor_uruk_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_man_shield_a","Mordor_Man_Shield",[("mordor_man_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["mordor_man_shield_b","Mordor_Man_Shield",[("mordor_man_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["angmar_shield","Angmar_Shield",[("angmar_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["orc_shield_a","Orc_Shield",[("orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(200)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["orc_shield_b","Orc_Shield",[("orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(200)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["orc_shield_c","Orc_Shield",[("orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3.5)|hit_points(200)|body_armor(1)|spd_rtng(76)|weapon_length(81),imodbits_shield,],
+["mordor_orc_shield_a","Mordor_Orc_Shield",[("mordor_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_orc_shield_b","Mordor_Orc_Shield",[("mordor_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_orc_shield_c","Mordor_Orc_Shield",[("mordor_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_orc_shield_d","Mordor_Orc_Shield",[("mordor_orc_shield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_orc_shield_e","Mordor_Orc_Shield",[("mordor_orc_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_uruk_shield_a","Mordor_Uruk_Shield",[("mordor_uruk_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(3)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_uruk_shield_b","Mordor_Uruk_Shield",[("mordor_uruk_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(4)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_uruk_shield_c","Mordor_Uruk_Shield",[("mordor_uruk_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(3)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_man_shield_a","Mordor_Man_Shield",[("mordor_man_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(3)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_man_shield_b","Mordor_Man_Shield",[("mordor_man_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["angmar_shield","Angmar_Shield",[("angmar_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(10)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 #### Generic orc helmets
 ["orc_helm_a","Orc_Skullcap",[("orc_helm_a",0)],itp_type_head_armor|itp_shop,0,60,weight(1)|head_armor(20)|difficulty(0),imodbits_plate],
 ["orc_helm_b","Orc_Skullcap",[("orc_helm_b",0)],itp_type_head_armor|itp_shop,0,14,weight(1)|head_armor(18)|difficulty(0),imodbits_cloth],
@@ -663,9 +659,9 @@ items =[
 ["moria_armor_d","Moria_Armor",[("orc_moria_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(15)|head_armor(0)|body_armor(8)|leg_armor(6)|difficulty(0),imodbits_armor,],
 ["moria_armor_e","Moria_Armor",[("orc_moria_e",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(15)|head_armor(0)|body_armor(9)|leg_armor(6)|difficulty(0),imodbits_armor,],
 #######SHIELDS##########
-["moria_orc_shield_a","Moria_Orc_Shield",[("moria_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["moria_orc_shield_b","Moria_Orc_Shield",[("moria_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["moria_orc_shield_c","Moria_Orc_Shield",[("moria_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["moria_orc_shield_a","Moria_Orc_Shield",[("moria_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["moria_orc_shield_b","Moria_Orc_Shield",[("moria_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["moria_orc_shield_c","Moria_Orc_Shield",[("moria_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,80,weight(2.5)|hit_points(310)|body_armor(1)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ###TLD GUNDABAD ITEMS##########
 #ARMORS##########
 ["gundabad_armor_a","Gundabad_Orc_Armor",[("orc_gunda_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,31,weight(15)|head_armor(0)|body_armor(8)|leg_armor(6)|difficulty(0),imodbits_cloth,],
@@ -702,8 +698,8 @@ items =[
 ["dun_helm_e","Dun_Tall_War_Helm",[("dunland_helm_b",0)],itp_type_head_armor|itp_shop,0,565,weight(2.75)|head_armor(35)|difficulty(0),imodbits_plate],
 #["dun_helm_f", "Dunnish Helm",[("dunland_helm_c",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 #######SHIELDS##########
-["dun_shield_a","Dunnish_Shield",[("dun_roundshield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dun_shield_b","Dunnish_Shield",[("dun_roundshield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["dun_shield_a","Dunnish_Shield",[("dun_roundshield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["dun_shield_b","Dunnish_Shield",[("dun_roundshield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 #["dun_shield_c", "Dunnish Shield",[("dunland_shield_c",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dun_shield_z", "Dunnish Shield",[("dunland_shield_d",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dun_shield_e", "Dunnish Shield",[("dunland_shield_e",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -788,9 +784,9 @@ items =[
 #["elf_war_spear", "Elf War Spear",[("elf_spear_1",0)], itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_staff|itcf_carry_spear,390 , weight(2.5)|difficulty(0)|spd_rtng(97) | weapon_length(185)|swing_damage(20 , cut) | thrust_damage(27 ,  pierce),imodbits_polearm ],
 ["mirkwood_sword","Mirkwood_Sword",[("mirkwood_longsword",0),("scab_mirkwood_longsword",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,105,weight(1.25)|difficulty(0)|spd_rtng(96)|weapon_length(92)|swing_damage(30,cut)|thrust_damage(25,pierce),imodbits_sword],
 #SHIELDS##########
-["mirkwood_spear_shield_a","Mirkwood_Spearman_Shield",[("mirkwood_spear_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["mirkwood_spear_shield_b","Mirkwood_War_Shield",[("mirkwood_med_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["mirkwood_spear_shield_c","Mirkwood_Swordsman_Shield",[("mirkwood_royal_round",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["mirkwood_spear_shield_a","Mirkwood_Spearman_Shield",[("mirkwood_spear_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["mirkwood_spear_shield_b","Mirkwood_War_Shield",[("mirkwood_med_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["mirkwood_spear_shield_c","Mirkwood_Swordsman_Shield",[("mirkwood_royal_round",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 #["mirkwood_spear_shield_d", "Mirkwood Spearman Shield",[("elven_oval_a"         ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #HELMETS##########
 ["mirkwood_helm_a","Mirkwood_Archer_Helm",[("mirkwood_helm",0)],itp_type_head_armor|itp_shop,0,479,weight(1)|head_armor(39)|difficulty(0),imodbits_plate],
@@ -857,12 +853,12 @@ items =[
 ["harad_long_shield_c","Harad_Sun_Shield",[("harad_long_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 ["harad_long_shield_d","Harad_Snake_Shield",[("harad_long_shield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 ["harad_long_shield_e","Harad_Snake_Shield",[("harad_long_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_shield_a","Harondor_Shield",[("harad_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_shield_b","Harondor_Buckler",[("harad_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_shield_c","Harondor_Buckler",[("harad_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_tribal_a","Far_Harad_Shield",[("harad_tribal_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_tribal_b","Far_Harad_Shield",[("harad_tribal_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["harad_yellow_shield","Harad_Shield",[("harad_yellow_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["harad_shield_a","Harondor_Shield",[("harad_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["harad_shield_b","Harondor_Buckler",[("harad_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["harad_shield_c","Harondor_Buckler",[("harad_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["harad_tribal_a","Far_Harad_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["harad_tribal_b","Far_Harad_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_board_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["harad_yellow_shield","Harad_Shield",[("harad_yellow_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
 ############BOOTS##########
 ["desert_boots","Desert_Boots",[("desert_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(15)|difficulty(0),imodbits_cloth],
 ["harad_leather_greaves","Harad_Greaves",[("harad_leather_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(18)|difficulty(0),imodbits_cloth],
@@ -896,15 +892,16 @@ items =[
 ["khand_helmet_mask1","Khand_Mask",[("Khand_Helmet_Mask1",0)],itp_type_head_armor|itp_shop,0,479,weight(2.25)|head_armor(20)|difficulty(0),imodbits_plate],
 ["khand_helmet_mask2","Khand_Mask",[("Khand_Helmet_Mask2",0)],itp_type_head_armor|itp_shop,0,479,weight(2.25)|head_armor(20)|difficulty(0),imodbits_plate],
 #########ARMOR##########
-["khand_foot_lam_a","Khand_Armor",[("khand_foot_lam_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(7)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0),imodbits_cloth,],
-["khand_foot_lam_b","Khand_Armor",[("khand_foot_lam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(7)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0),imodbits_cloth,],
-["khand_foot_lam_c","Khand_Armor",[("khand_foot_lam_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(7)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0),imodbits_cloth,],
+["khand_light","Khand_Kilt",[("khand_light",0)],itp_type_body_armor|itp_covers_legs|0,0,300,weight(7)|head_armor(0)|body_armor(2)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["khand_foot_lam_a","Khand_Armor",[("khand_foot_lam_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(28)|leg_armor(8)|difficulty(0),imodbits_armor,],
+["khand_foot_lam_b","Khand_Armor",[("khand_foot_lam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(28)|leg_armor(8)|difficulty(0),imodbits_armor,],
+["khand_foot_lam_c","Khand_Armor",[("khand_foot_lam_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(28)|leg_armor(8)|difficulty(0),imodbits_armor,],
 ["khand_heavy_lam","Khand_Heavy_Lamellar",[("khand_heavy_lam",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(27)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(0),imodbits_armor,],
-["khand_light_lam","Khand_Light_Lamellar",[("khand_light_lam",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(22)|head_armor(0)|body_armor(30)|leg_armor(8)|difficulty(0),imodbits_armor,],
+["khand_light_lam","Khand_Light_Lamellar",[("khand_light_lam",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(19)|head_armor(0)|body_armor(30)|leg_armor(8)|difficulty(0),imodbits_armor,],
 #["khand_med_lam_a", "Khand Armor",[("khand_med_lam_a" ,0)],itp_shop|itp_type_body_armor|itp_covers_legs,0,65,weight(7)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
-["khand_med_lam_b","Khand_Medium_Lamellar",[("khand_med_lam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["khand_med_lam_c","Khand_Medium_Lamellar",[("khand_med_lam_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["khand_med_lam_d","Khand_Medium_Lamellar",[("khand_med_lam_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
+["khand_med_lam_b","Khand_Medium_Lamellar",[("khand_med_lam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(22)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
+["khand_med_lam_c","Khand_Medium_Lamellar",[("khand_med_lam_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(22)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
+["khand_med_lam_d","Khand_Medium_Lamellar",[("khand_med_lam_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(22)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
 ["khand_noble_lam","Khand_Noble_Armor",[("khand_noble_lam",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(26)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(0),imodbits_armor,],
 ["variag_greaves","Variag_Greaves",[("variag_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,760,weight(3)|leg_armor(24)|difficulty(0),imodbits_armor],
 #########WEAPONS##########
@@ -924,10 +921,12 @@ items =[
 ["khand_2h_tulwar","Khand_Tulwar",[("Khand_Weapon_Tulwar_Long",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop,itc_greatsword|itcf_carry_sword_back,1123,weight(2.75)|difficulty(0)|spd_rtng(89)|weapon_length(116)|swing_damage(42,cut)|thrust_damage(28,pierce),imodbits_sword_high],
 ["khand_lance","Khand_Lance",[("khand_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_cutting_spear,210,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(218)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_polearm],
 ####KHAND SHIELDS
-["easterling_round_horseman","Easterling_Round_Shield",[("eastershield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["variag_gladiator_shield","Variag_Gladiator_Shield",[("eastershield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["easterling_hawk_shield","Easterling_Hawk_Shield",[("eastershield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["variag_plated_shield","Variag_Plated_Shield",[("eastershield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["easterling_round_horseman","Easterling_Round_Shield",[("eastershield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["variag_gladiator_shield","Variag_Gladiator_Shield",[("eastershield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["easterling_hawk_shield","Easterling_Hawk_Shield",[("eastershield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
+["rhun_bull1_shield","Rhun_Shield",[("eastershield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(3)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+["rhun_bull2_shield","Rhun_Shield",[("eastershield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(3)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+["rhun_bull3_shield","Rhun_Shield",[("eastershield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,118,weight(2.5)|hit_points(480)|body_armor(3)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
 ###TLD RHUN ITEMS##########
 ["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,200,weight(3)|leg_armor(12)|difficulty(0),imodbits_cloth],
 ###ARMOR##########
@@ -975,7 +974,7 @@ items =[
 ["rhun_shortsword","Rhun_Shortsword",[("rhun_shortsword",0)],itp_type_one_handed_wpn|itp_primary|0,itc_scimitar|itcf_carry_sword_left_hip,105,weight(2.5)|difficulty(0)|spd_rtng(98)|weapon_length(70)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_sword],
 ["rhun_sword","Rhun_Sword",[("rhun_sword",0)],itp_type_one_handed_wpn|itp_primary|0,itc_scimitar|itcf_carry_sword_left_hip,105,weight(2.9)|difficulty(0)|spd_rtng(92)|weapon_length(89)|swing_damage(32,cut)|thrust_damage(0,pierce),imodbits_sword],
 ########shields##########
-["rhun_shield","Rhun_Shield",[("rhun_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["rhun_shield","Rhun_Kite_Shield",[("rhun_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
 #TLD DALE ITEMS##########
 ########ARMORS##########
 ["dale_armor_a","Dale_Armor",[("dale_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,65,weight(7)|head_armor(0)|body_armor(15)|leg_armor(0)|difficulty(0),imodbits_cloth,],
@@ -1005,10 +1004,10 @@ items =[
 ["dale_pike","Dale_Spear",[("dale_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_pike,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(171)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_polearm],
 ["dale_billhook","Dale_Billhook",[("dale_billhook",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_cutting_spear,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(185)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_polearm],
 #####SHIELDS##########
-["dale_shield_a","Dale_Shield",[("dwarf_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["dale_shield_b","Dale_Shield",[("dwarf_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["dale_shield_c","Dale_Shield",[("dwarf_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["dale_shield_d","Dale_Shield",[("dwarf_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
+["dale_shield_a","Dale_Shield",[("dwarf_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
+["dale_shield_b","Dale_Shield",[("dwarf_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
+["dale_shield_c","Dale_Shield",[("dwarf_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
+["dale_shield_d","Dale_Shield",[("dwarf_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
 #TLD UMBAR ITEMS##########
 ##ARMOR##########
 ["umb_armor_a","Corsair_Leather_Armor",[("corsair_leather",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,65,weight(7)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,],
@@ -1030,11 +1029,11 @@ items =[
 ["umb_hood","Umbar_Hood",[("umbar_hood",0)],itp_type_head_armor|itp_shop,0,340,weight(2)|head_armor(14)|difficulty(0),imodbits_plate],
 ["corsair_boots","Corsair_Boots",[("corsair_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,174,weight(1.25)|leg_armor(16)|difficulty(0),imodbits_cloth],
 ########SHIELDS##########
-["umb_shield_a","Corsair_Buckler",[("corsair_buckler_long_a",0),("corsair_buckler_long_a_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["umb_shield_b","Corsair_Buckler",[("corsair_buckler_round_a",0),("corsair_buckler_round_a_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["umb_shield_c","Corsair_Buckler",[("corsair_buckler_round_b",0),("corsair_buckler_round_b_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["umb_shield_d","Corsair_Buckler",[("corsair_buckler_round_c",0),("corsair_buckler_round_c_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
-["umb_shield_e","Corsair_Buckler",[("corsair_buckler_long_b",0),("corsair_buckler_long_b_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(60),imodbits_shield,],
+["umb_shield_a","Corsair_Buckler",[("corsair_buckler_long_a",0),("corsair_buckler_long_a_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(40),imodbits_shield,],
+["umb_shield_b","Corsair_Buckler",[("corsair_buckler_round_a",0),("corsair_buckler_round_a_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(40),imodbits_shield,],
+["umb_shield_c","Corsair_Buckler",[("corsair_buckler_round_b",0),("corsair_buckler_round_b_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(40),imodbits_shield,],
+["umb_shield_d","Corsair_Buckler",[("corsair_buckler_round_c",0),("corsair_buckler_round_c_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(40),imodbits_shield,],
+["umb_shield_e","Corsair_Buckler",[("corsair_buckler_long_b",0),("corsair_buckler_long_b_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,42,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(40),imodbits_shield,],
 ##########WEAPONS##########umbar_weapon_rapier
 ["umbar_cutlass","Umbar_Cutlass",[("corsair_cutlass",0),("scab_corsair_cutlass",ixmesh_carry|imodbits_good)],itp_type_one_handed_wpn|itp_primary|0,itc_scimitar|itcf_carry_sword_left_hip,158,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(86)|swing_damage(28,cut)|thrust_damage(0,pierce),imodbits_sword_high],
 ["kraken","Kraken_Cutlass",[("umbar_weapon_kraken_cutlass",0),("scab_kraken_cutlass",ixmesh_carry|imodbits_good)],itp_type_one_handed_wpn|itp_primary|0,itc_scimitar|itcf_carry_sword_left_hip,158,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(103)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_sword_high],
@@ -1059,7 +1058,7 @@ items =[
 ["beorn_helmet","North_Skullcap",[("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,340,weight(2)|head_armor(30)|difficulty(0),imodbits_plate],
 #["northm_helm_b", "Northmen Helm",[("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #####SHIELDS##########
-["beorn_shield","North_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["beorn_shield","North_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(8)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
 ######WEAPONS###########
 ["beorn_axe","Beorning_Axe",[("beorning_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry,itc_nodachi|itcf_carry_axe_back,240,weight(5)|difficulty(0)|spd_rtng(88)|weapon_length(76)|swing_damage(41,cut)|thrust_damage(0,pierce),imodbits_axe],
 # use itm_dale_sword, itm_dwarf_sword_a, itm_dwarf_sword_b for Beorning's imported swords
@@ -1069,17 +1068,17 @@ items =[
 ["beorn_battle_axe","Beorning_War_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry,itc_nodachi|itcf_carry_axe_back,240,weight(5)|difficulty(0)|spd_rtng(88)|weapon_length(71)|swing_damage(41,cut)|thrust_damage(0,pierce),imodbits_axe],
 ###TLD DWARF ITEMS##########
 ########SHIELDS##########
-["dwarf_shield_a","Dwarven_Shield",[("dwarf_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_b","Dwarven_Shield",[("dwarf_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_c","Dwarven_Shield",[("dwarf_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_d","Dwarven_Shield",[("dwarf_shield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_f","Dwarven_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_g","Dwarven_Shield",[("dwarf_shield_g",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["dwarf_shield_a","Dwarven_Shield",[("dwarf_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_b","Dwarven_Shield",[("dwarf_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_c","Dwarven_Shield",[("dwarf_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_d","Dwarven_Shield",[("dwarf_shield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_f","Dwarven_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_g","Dwarven_Shield",[("dwarf_shield_g",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
 # duplicate["dwarf_shield_h",         "Dwarven Shield",[("dwarf_shield_h",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["dwarf_shield_i","Dwarven_Shield",[("dwarf_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_j","Dwarven_Shield",[("dwarf_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_k","Dwarven_Shield",[("dwarf_shield_k",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
-["dwarf_shield_l","Dwarven_Shield",[("dwarf_shield_l",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
+["dwarf_shield_i","Dwarven_Shield",[("dwarf_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_j","Dwarven_Shield",[("dwarf_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_k","Dwarven_Shield",[("dwarf_shield_k",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["dwarf_shield_l","Dwarven_Shield",[("dwarf_shield_l",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
 #went to dale shields
 #["dwarf_shield_e", "Dwarven Shield",[("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dwarf_shield_m", "Dwarven Shield",[("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -1142,7 +1141,7 @@ items =[
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 
-# let ent_body  be the last item (mtarini)
+# let   witchking_helmet  be the last item (mtarini)
 ["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2010,weight(248)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(0),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 ["ent_head_helm2","Ent_Head",[("ent_head2",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
@@ -1156,17 +1155,17 @@ items =[
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_type_goods,0,0,weight(15)|abundance(0)|0,imodbits_none],
-["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["athelas_reward","Athelas",[("athelas_plant",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["scroll_reward","Scroll_of_Elven_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["hammer_reward","Dwarven_Smith_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["khand_knife_reward","Khand_Sacrificial_Knife",[("khand_sacrificial_knife",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["angmar_whip_reward","Angmar_Whip",[("AngmarWhip",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["horn_gondor_reward","Horn_of_Gondor",[("GondorHorn",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["harad_totem_reward","Harad_Totem",[("harad_totem",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["elven_amulet_reward","Elven_Amulet_of_Powerful_Mageekness",[("elven_amulet",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["torque_reward","Evil_Torque",[("reward_torque",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
+["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["athelas_reward","Athelas_Plant",[("athelas_plant",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["scroll_reward","Scroll_of_Elven_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["hammer_reward","Dwarven_Smith_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["khand_knife_reward","Sacrificial_Knife",[("khand_sacrificial_knife",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["angmar_whip_reward","Angmar_Whip",[("AngmarWhip",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["horn_gondor_reward","Horn_of_Gondor",[("GondorHorn",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["harad_totem_reward","Harad_Totem",[("harad_totem",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["elven_amulet_reward","Elven_Amulet_of_Powerful_Mageekness",[("elven_amulet",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["torque_reward","Evil_Torque",[("reward_torque",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["orc_brew","Orc_Brew",[("orc_brew",0)],itp_type_goods|itp_consumable,0,1000,weight(0.2)|abundance(0)|max_ammo(100),imodbits_none],
 ["rohan_saddle","Saddle_of_Rohan",[("RohanSaddle",0)],itp_unique|itp_type_goods,0,5000,weight(4)|abundance(0)|0,imodbits_none],
 ["mearas_reward","Mearh_Stallion",[("courser",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(60)|difficulty(2)|horse_speed(45)|horse_maneuver(40)|horse_charge(40),imodbits_horse_basic|0],
@@ -1179,5 +1178,8 @@ items =[
 ["westernesse1h_reward","Sword_of_Westernesse_1h",[("1h_westernesse",0),("scab_1h_westernesse",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,150,weight(1.25)|difficulty(0)|spd_rtng(130)|weapon_length(100)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
 ["westernesse2h_reward","Sword_of_Westernesse",[("2h_westernesse",0),("scab_2h_westernesse",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(50,pierce)|thrust_damage(45,pierce),imodbits_sword_high],
 ["mirkwood_sword_reward","Greenwood_Relic_Sword",[("mirkwood_sword",0),("scab_mirkwood_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(50,pierce)|thrust_damage(45,pierce),imodbits_sword_high],
+["cooking_cauldron","Cooking_Cauldron",[("cauldron_a",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
+["eorl_cavalry_sword","Eorl_Cavalry_Sword",[("eorl_cavalry_sword",0)],itp_type_one_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_longsword|itcf_carry_sword_left_hip,150,weight(1.25)|difficulty(0)|spd_rtng(130)|weapon_length(100)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
+["garlic_reward","Garlic",[("garlic",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["witchking_helmet","Witchking_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_covers_head,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
 ]
