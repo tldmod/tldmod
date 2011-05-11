@@ -196,6 +196,7 @@ scripts = [
 
 # script_add_faction_respoint  
   # PlayerRewardSystem:  adds / removes (if neg) some respoints (parameter2) to a given faction (parameter1)  (mtarini)
+  # messes up s10
   ("add_faction_respoint",[
 	(store_script_param_1, ":fac"),
 	(store_script_param_2, ":diff"),
@@ -291,6 +292,7 @@ scripts = [
 # script_rank_income_to_player
  # PlayerRewardSystem: rank_income (mtarini)
  # gives to player the income of his rank MV: and adds influence too
+ # messes up s24
   ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
@@ -363,6 +365,7 @@ scripts = [
   # param1: faction
   # param2: rank 
   # output: string 24
+  # messes up s5
   ("get_allied_rank_title_to_s24",[
 	(store_script_param_1, ":fac"),
 	(store_script_param_2, ":rank_points"),
@@ -429,6 +432,7 @@ scripts = [
   ]),
 
 # script_new_rank_attained
+  # messes up s10
 ("new_rank_attained",
     [ (store_script_param_1, ":fac"),
 	  (play_sound, "snd_gong"),
@@ -438,7 +442,8 @@ scripts = [
 	]
   ),
   
-# script_increase_rank 
+# script_increase_rank
+  # messes up s11
   ("increase_rank",
     [ # gain rank (need 100 points to advance)
       (store_script_param_1, ":fac"),
@@ -1111,7 +1116,7 @@ scripts = [
 
 
     # TLD: Initialize faction rank
-    (troop_set_slot, "trp_player", slot_troop_faction_rank, stfr_rank_mask+stfr_position_mask+stfr_equipments_permit),
+    # (troop_set_slot, "trp_player", slot_troop_faction_rank, stfr_rank_mask+stfr_position_mask+stfr_equipments_permit),
 #Setting background colors for banners
 	  ]+[ (troop_set_slot, "trp_banner_background_color_array", x,  color_list[x])  for x in range(len(color_list)) ]+[
  
@@ -2958,7 +2963,7 @@ scripts = [
         (set_trigger_result, 0xFFEEDD),
       (else_try),
 		(eq,":item_no","itm_orc_brew"),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+5 to Wound Treatement"),(set_trigger_result, 0xFFEEDD),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Wound Treatement"),(set_trigger_result, 0xFFEEDD),(try_end),
 		#(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Not Used"),(set_trigger_result, 0xAAAAAA),(try_end),
 		#(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Camp Menu"),(set_trigger_result, 0xAAAAAA),(try_end),
       (else_try),
@@ -2966,6 +2971,17 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Use from"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Camp Menu"),(try_end),
         (set_trigger_result, 0xAAAAAA),
+      (else_try),
+		(eq,":item_no","itm_athelas_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to First Aid"),(set_trigger_result, 0xFFEEDD),(try_end),
+      (else_try),
+		(eq,":item_no","itm_scroll_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Training"),(set_trigger_result, 0xFFEEDD),(try_end),
+      (else_try),
+		(eq,":item_no","itm_phial_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Persuasion"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Leadership"),(try_end),
+        (set_trigger_result, 0xFFEEDD),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
@@ -3066,23 +3082,29 @@ scripts = [
 	  (eq, ":troop_no", "trp_player"), # player only uses brew
 	  (call_script, "script_get_troop_item_amount", ":troop_no", "itm_orc_brew"),
 	  (gt, reg0, 0),
-      (val_add, ":modifier_value", 5),	
+      (val_add, ":modifier_value", 1),	
 	(else_try),
   	  (this_or_next|eq, ":skill_no", "skl_riding"),
   	  (eq, ":skill_no", "skl_horse_archery"),
 	  (call_script, "script_get_troop_item_amount", ":troop_no", "itm_rohan_saddle"),
 	  (gt, reg0, 0),
       (val_add, ":modifier_value", 1),
-#    (else_try),
-#      (eq, ":skill_no", "skl_trainer"),
-#      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_book_training_reference"),
-#      (gt, reg0, 0),
-#      (val_add, ":modifier_value", 1),
-#    (else_try),
-#      (eq, ":skill_no", "skl_surgery"),
-#      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_book_surgery_reference"),
-#      (gt, reg0, 0),
-#      (val_add, ":modifier_value", 1),
+    (else_try),
+      (eq, ":skill_no", "skl_first_aid"),
+      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_athelas_reward"),
+      (gt, reg0, 0),
+      (val_add, ":modifier_value", 1),
+    (else_try),
+      (eq, ":skill_no", "skl_trainer"),
+      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_scroll_reward"),
+      (gt, reg0, 0),
+      (val_add, ":modifier_value", 1),
+    (else_try),
+  	  (this_or_next|eq, ":skill_no", "skl_persuasion"),
+      (eq, ":skill_no", "skl_leadership"),
+      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_phial_reward"),
+      (gt, reg0, 0),
+      (val_add, ":modifier_value", 1),
     (try_end),
     (set_trigger_result, ":modifier_value"),
     ]),
@@ -18865,7 +18887,7 @@ scripts = [
    (troop_ensure_inventory_space,"trp_camp_chest_faction",70),
    (troop_ensure_inventory_space,"trp_camp_chest_none",70),
    
-   (store_add,":last_item_plus_one","itm_witchking_helmet",1),
+   (store_add,":last_item_plus_one","itm_ent_body",1),
    (try_for_range,":item","itm_no_item",":last_item_plus_one"),
       (item_get_slot,":item_faction_mask",":item",slot_item_faction),
 #	  (assign,":ii",":item_faction_mask"),
@@ -18894,7 +18916,7 @@ scripts = [
     (call_script,"script_get_faction_mask",":faction"),(assign, ":fac_mask", reg30),
 	(troop_get_slot,":subfaction",":cur_merchant",slot_troop_subfaction),
     (call_script,"script_get_faction_mask",":subfaction"),(assign, ":subfac_mask", reg30),
-    (try_for_range,":item","itm_no_item","itm_witchking_helmet"),
+    (try_for_range,":item","itm_no_item","itm_ent_body"),
       (item_get_slot,":item_faction_mask",":item",slot_item_faction),
       (val_and,":item_faction_mask",":fac_mask"),
       (item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),

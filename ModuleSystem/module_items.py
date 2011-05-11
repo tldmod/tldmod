@@ -1142,7 +1142,7 @@ items =[
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,118,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 
-# let   witchking_helmet  be the last item (mtarini)
+# let ent_body  be the last item (mtarini)
 ["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2010,weight(248)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(0),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 ["ent_head_helm2","Ent_Head",[("ent_head2",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
@@ -1157,7 +1157,7 @@ items =[
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_type_goods,0,0,weight(15)|abundance(0)|0,imodbits_none],
 ["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
-["athelas_reward","Maps_of_Middle_Earth",[("athelas_plant",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
+["athelas_reward","Athelas",[("athelas_plant",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
 ["scroll_reward","Scroll_of_Elven_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],
 ["hammer_reward","Dwarven_Smith_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,100,weight(0.2)|abundance(0)|0,imodbits_none],

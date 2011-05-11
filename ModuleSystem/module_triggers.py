@@ -47,7 +47,7 @@ triggers = [
     (call_script,"script_get_faction_mask",":faction"),(assign,":faction_mask",reg30),          
     (troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
     (call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
-    (store_add,":last_item_plus_one","itm_witchking_helmet",1),
+    (store_add,":last_item_plus_one","itm_ent_body",1),
 
     (try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
             (item_get_slot,":item_faction_mask",":item",slot_item_faction),
@@ -115,13 +115,13 @@ triggers = [
           (eq, ":faction", "fac_gundabad"),
           (assign, ":is_orc_faction", 1),
         (try_end),
-        (assign, ":is_elf_faction", 0),
-        (try_begin),
-          (this_or_next|eq, ":faction", "fac_imladris"),
-          (this_or_next|eq, ":faction", "fac_woodelf"),
-          (eq, ":faction", "fac_lorien"),
-          (assign, ":is_elf_faction", 1),
-        (try_end),
+        # (assign, ":is_elf_faction", 0),
+        # (try_begin),
+          # (this_or_next|eq, ":faction", "fac_imladris"),
+          # (this_or_next|eq, ":faction", "fac_woodelf"),
+          # (eq, ":faction", "fac_lorien"),
+          # (assign, ":is_elf_faction", 1),
+        # (try_end),
         (party_get_slot, ":center_str_income", ":cur_center", slot_center_strength_income),
 
         (try_for_range,":item","itm_sumpter_horse", "itm_dale_pike"),
@@ -169,7 +169,7 @@ triggers = [
               (is_between, ":cur_goods", food_begin, food_end),
               (this_or_next|eq, ":is_orc_faction", 1),
               (neq, ":cur_goods", "itm_human_meat"),
-              (this_or_next|eq, ":is_elf_faction", 1),
+              # (this_or_next|eq, ":is_elf_faction", 1),
               (neq, ":cur_goods", "itm_lembas"),
               
               (assign, ":quest_prevents", 0),

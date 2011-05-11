@@ -1561,6 +1561,13 @@ game_menus = [
     # (try_end),
     # (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
    # ]),
+   ("camp_mvtest_influence",[],"Increase ambient faction influence by 100.",[
+    (faction_get_slot, reg0, "$ambient_faction", slot_faction_influence),
+    (val_add, reg0, 100),
+    (faction_set_slot, "$ambient_faction", slot_faction_influence, reg0),
+    (str_store_faction_name, s1, "$ambient_faction"),
+    (display_message, "@{s1} influence increased to {reg0}!", 0x30FFC8),
+   ]),
    ("camp_mvtest_reinf",[],"Reinforce me!",[
     (party_get_num_companions, ":old_size", "p_main_party"),
     (try_for_range, ":unused", 0, 10),

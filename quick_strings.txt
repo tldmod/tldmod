@@ -1,4 +1,4 @@
-783
+787
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -109,9 +109,13 @@ qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
 qstr_+1_to_Horse_Archery +1_to_Horse_Archery
 qstr_+1_to_Pathfinding +1_to_Pathfinding
-qstr_+5_to_Wound_Treateme +5_to_Wound_Treatement
+qstr_+1_to_Wound_Treateme +1_to_Wound_Treatement
 qstr_Use_from Use_from
 qstr_Camp_Menu Camp_Menu
+qstr_+1_to_First_Aid +1_to_First_Aid
+qstr_+1_to_Training +1_to_Training
+qstr_+1_to_Persuasion +1_to_Persuasion
+qstr_+1_to_Leadership +1_to_Leadership
 qstr_+{reg1}_to_party_mor +{reg1}_to_party_morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
@@ -385,6 +389,7 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
+qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
 qstr_Rank_{reg0}:_{s20}_m Rank_{reg0}:_{s20},_mod_{reg1}.
@@ -578,7 +583,6 @@ qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
-qstr_DEBUG:_Faction_statu DEBUG:_Faction_status_raised_by_1000
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_pe When_dealing_with_people_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info

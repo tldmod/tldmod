@@ -2633,18 +2633,18 @@ simple_triggers = [
     ]
     ),
 
-    # TLD Add some cheats for ease of testing
-    (0, [
-        (eq, cheat_switch, 1),
-        (key_clicked, key_z),
-        (key_is_down, key_left_control),
-        (add_xp_to_troop, 500, "trp_player"),
-        (troop_get_slot, ":stat", "trp_player", slot_troop_faction_status),
-        (val_add, ":stat", 1000),
-        (troop_set_slot, "trp_player", slot_troop_faction_status, ":stat"),
-        (display_message, "@DEBUG: Faction status raised by 1000", debug_color),
-    ]
-    ),
+    # # TLD Add some cheats for ease of testing
+    # (0, [
+        # (eq, cheat_switch, 1),
+        # (key_clicked, key_z),
+        # (key_is_down, key_left_control),
+        # (add_xp_to_troop, 500, "trp_player"),
+        # (troop_get_slot, ":stat", "trp_player", slot_troop_faction_status),
+        # (val_add, ":stat", 1000),
+        # (troop_set_slot, "trp_player", slot_troop_faction_status, ":stat"),
+        # (display_message, "@DEBUG: Faction status raised by 1000", debug_color),
+    # ]
+    # ),
     
     #
     # TLD War system end

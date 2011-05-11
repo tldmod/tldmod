@@ -725,23 +725,23 @@ slot_troop_shop_food   = 166
 
 
 # TLD faction ranks
-slot_troop_faction_rank = 167
-stfr_position_mask      =        0x7
-stfr_position_unit      =        0x1
-stfr_rank_mask          =       0xF8
-stfr_rank_unit          =       0x08
-stfr_equipments_permit  =     0xF800
-stfr_equipment_unit     =     0x0800
-stfr_soldiers_permit    =    0x10000
-stfr_supplies_permit   =     0x20000
-stfr_garrison_permit    =    0x40000
-stfr_grand_general      =    0x80000
-stfr_in_command         =   0x100000
-stfr_reinforcement      =   0x200000
-stfr_name_string        = 0xff000000
-stfr_name_string_unit   = 0x01000000
+# slot_troop_faction_rank = 167
+# stfr_position_mask      =        0x7
+# stfr_position_unit      =        0x1
+# stfr_rank_mask          =       0xF8
+# stfr_rank_unit          =       0x08
+# stfr_equipments_permit  =     0xF800
+# stfr_equipment_unit     =     0x0800
+# stfr_soldiers_permit    =    0x10000
+# stfr_supplies_permit   =     0x20000
+# stfr_garrison_permit    =    0x40000
+# stfr_grand_general      =    0x80000
+# stfr_in_command         =   0x100000
+# stfr_reinforcement      =   0x200000
+# stfr_name_string        = 0xff000000
+# stfr_name_string_unit   = 0x01000000
 
-slot_troop_faction_status = 168
+# slot_troop_faction_status = 168
 
 # TLD Player Reward system
 slot_troop_upkeep_not_paid = 169   # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
@@ -1952,24 +1952,24 @@ fac_tableau_list = [
 ## Reward items (rank number 0-9, item id, item modifier)
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
-[(1, "itm_horse_meat", imod_rotten), (3, "itm_gondor_hunter", imod_champion), (5, "itm_gondor_ranger_sword",imod_masterwork),],#fac_gondor = 3
-[(1, "itm_horse_meat", imod_rotten)],#fac_dwarf = 4
-[(1, "itm_horse_meat", imod_rotten)],#fac_rohan = 5
-[(1, "itm_horse_meat", imod_rotten)],#fac_mordor = 6
-[(1, "itm_horse_meat", imod_rotten)],#fac_isengard = 7
-[(1, "itm_horse_meat", imod_rotten)],#fac_lorien = 8
-[(1, "itm_horse_meat", imod_rotten)],#fac_imladris = 9
-[(1, "itm_horse_meat", imod_rotten)],#fac_woodelf = 10
-[(1, "itm_horse_meat", imod_rotten)],#fac_dale = 11
-[(1, "itm_horse_meat", imod_rotten)],#fac_harad = 12
-[(1, "itm_horse_meat", imod_rotten)],#fac_rhun = 13
-[(1, "itm_horse_meat", imod_rotten)],#fac_khand = 14
-[(1, "itm_horse_meat", imod_rotten)],#fac_umbar = 15
-[(1, "itm_horse_meat", imod_rotten)],#fac_moria = 16
-[(1, "itm_horse_meat", imod_rotten)],#fac_guldur = 17
-[(1, "itm_horse_meat", imod_rotten)],#fac_gundabad = 18
-[(1, "itm_horse_meat", imod_rotten)],#fac_dunland = 19
-[(1, "itm_horse_meat", imod_rotten)],#fac_beorn = 20
+[(3, "itm_athelas_reward", 0), (4, "itm_gon_tower_guard", 0), (5, "itm_gon_tower_knight", 0), (6, "itm_gon_steward_guard", 0), (7, "itm_horn_gondor_reward", 0), (9, "itm_sword_of_arathorn", 0)],#fac_gondor = 3
+[(3, "itm_map", 0), (7, "itm_hammer_reward", 0)],#fac_dwarf = 4
+[(3, "itm_mearas_reward", imod_spirited), (4, "itm_rohan_shield_d", imod_reinforced), (6, "itm_rohan_armor_q", imod_reinforced), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_thengel_warhorse", imod_champion)],#fac_rohan = 5
+[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_mordor = 6
+[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_isengard = 7
+[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_phial_reward", 0)],#fac_lorien = 8
+[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_riv_armor_reward", imod_lordly)],#fac_imladris = 9
+[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_mirkwood_sword_reward", imod_masterwork)],#fac_woodelf = 10
+[(3, "itm_map", 0)],#fac_dale = 11
+[(3, "itm_torque_reward", 0), (7, "itm_harad_totem_reward", 0)],#fac_harad = 12
+[(3, "itm_map", 0), (5, "itm_rhun_greatsword", imod_balanced)],#fac_rhun = 13
+[(3, "itm_map", 0), (7, "itm_khand_knife_reward", 0)],#fac_khand = 14
+[(3, "itm_map", 0)],#fac_umbar = 15
+[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_moria = 16
+[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_guldur = 17
+[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_gundabad = 18
+[(3, "itm_torque_reward", 0)],#fac_dunland = 19
+[(3, "itm_athelas_reward", 0)],#fac_beorn = 20
 ]
 
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)
