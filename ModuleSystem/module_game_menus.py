@@ -920,10 +920,10 @@ game_menus = [
     
     [("custom_battle_go",[],"Start.",
        [(try_begin),(eq, "$g_custom_battle_scenario", 5),(set_jump_mission,"mt_custom_battle_5"),
-         (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),(rest_for_hours,8,1000,0),
+         (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),#(rest_for_hours,8,1000,0),
 		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
-         (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),(rest_for_hours,12,1000,0),
+         (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
 		 (else_try),                                     (set_jump_mission,"mt_custom_battle"),
         (try_end),
         (jump_to_menu, "mnu_custom_battle_end"),
@@ -1016,7 +1016,7 @@ game_menus = [
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_good_man")],[
   ("start_01",[],"GONDOR, the Kingdom of the White Tower",[(jump_to_menu,"mnu_start_gondor"),]),
   ("start_02",[],"ROHAN, the Horse people"               ,[(call_script,"script_start_as_one","trp_rohan_youth"),           (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_05",[],"DUNEDAIN, the ancient dinasty of Man"  ,[(call_script,"script_start_as_one","trp_dunedain_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_05",[],"DUNEDAIN, the ancient dynasty of Men"  ,[(call_script,"script_start_as_one","trp_dunedain_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
   ("start_04",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_beorning_vale_man"),     (jump_to_menu,"mnu_choose_gender"),]),
   ("start_06",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
   ("spacer"  ,[],"_",[]),  
