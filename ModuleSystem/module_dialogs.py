@@ -1120,17 +1120,18 @@ dialogs = [
 # rank not ok
   [anyone, "companion_recruit_rank", [ 
       (troop_get_slot, ":rank_needed", "$g_talk_troop", slot_troop_rank_request),
-      (val_mul, ":rank_needed", 100), #convert to rank points
-      (faction_get_slot, ":rank_held", "$g_talk_troop_faction", slot_faction_rank),
+      (call_script, "script_get_rank_points_for_rank", ":rank_needed"), #convert to rank points
+      (assign, ":rank_points_needed", reg0),
+      (faction_get_slot, ":rank_points_held", "$g_talk_troop_faction", slot_faction_rank),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s29, s24), #to s29
       # a little hackery to determine needed rank title
-      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_needed"),
+      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_needed"),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), #to s24
-      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_held"), #end vile hackery
-      (store_sub, reg3, ":rank_needed", ":rank_held"), # reg3: how many more rank points are needed to recruit
+      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_held"), #end vile hackery
+      (store_sub, reg3, ":rank_points_needed", ":rank_points_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0), # not enough?
    ],
-   "It seems that you have not helped my people enough, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in these lands.", "close_window", []],
+   "It seems that you have not helped my people enough, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in this realm.", "close_window", []],
 
 # rank ok
   [anyone, "companion_recruit_rank", [ 
@@ -1706,7 +1707,6 @@ dialogs = [
 		(str_store_party_name, s21, "$g_encountered_party"), # s21: CITY NAME
 		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: City faction name
 		(str_store_troop_name, s23, "$g_player_troop"), # s23: Player name
-		(faction_get_slot, ":p_rank", "$g_encountered_party_faction", slot_faction_rank),
 		(call_script, "script_get_rank_title_to_s24", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player TITLE  (among own faction)
 		(call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" ), # s24: player TITLE  (among city faction)
 		(str_store_faction_name, s25, "$players_kingdom"), # s25: Player's faction name
@@ -1714,13 +1714,14 @@ dialogs = [
 		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
 
 		# prepare greeting string
-		(store_div, reg10,":p_rank", 100),
+        (call_script, "script_get_faction_rank", "$g_encountered_party_faction"),
+        (assign, ":rank", reg0),
 		(try_begin),
 			(eq, reg26, 1), (str_store_string, s33, "@Greetings, {s23}, {s24}."), # same faction (military salute?)
 		(else_try),
-			(ge, reg10, 4), (str_store_string, s33, "@Greetings, {s23}, {s24}."),  # player not same faction, but trusted
+			(ge, ":rank", 4), (str_store_string, s33, "@Greetings, {s23}, {s24}."),  # player not same faction, but trusted
 		(else_try),
-			(ge, reg10, 1), (str_store_string, s33, "@Greetings, {s23}."), # player not much trusted
+			(ge, ":rank", 1), (str_store_string, s33, "@Greetings, {s23}."), # player not much trusted
 		(else_try),
 			(str_store_string, s33, "@So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally."), # player unknown
 		(try_end),
@@ -3958,33 +3959,34 @@ dialogs = [
      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
      
-     (faction_get_slot, ":rank", "$g_talk_troop_faction", slot_faction_rank),
+     # (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),
+     # (assign, ":rank", reg0),
      
-     #find minimum influence needed for reward items of this faction
-     (assign, ":min_rank", 1000),
-     (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
-     (try_begin),
-        ]+concatenate_scripts([
-            [
-            (eq, ":faction_index", x),
-            ]+concatenate_scripts([[
-              (try_begin),
-                (le, fac_reward_items_list[x][item_entry][0], ":rank"), #player rank condition
-                (lt, fac_reward_items_list[x][item_entry][0], ":min_rank"),
-                (assign, ":min_rank", fac_reward_items_list[x][item_entry][0]),
-              (try_end),
-                ] for item_entry in range(len(fac_reward_items_list[x]))
-            ])+[
-         (else_try),
-            ] for x in range(len(fac_reward_items_list))
-        ])+[
-     (try_end),
+     # #find minimum influence needed for reward items of this faction
+     # (assign, ":min_rank", 1000),
+     # (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+     # (try_begin),
+        # ]+concatenate_scripts([
+            # [
+            # (eq, ":faction_index", x),
+            # ]+concatenate_scripts([[
+              # (try_begin),
+                # (le, fac_reward_items_list[x][item_entry][0], ":rank"), #player rank condition
+                # (lt, fac_reward_items_list[x][item_entry][0], ":min_rank"),
+                # (assign, ":min_rank", fac_reward_items_list[x][item_entry][0]),
+              # (try_end),
+                # ] for item_entry in range(len(fac_reward_items_list[x]))
+            # ])+[
+         # (else_try),
+            # ] for x in range(len(fac_reward_items_list))
+        # ])+[
+     # (try_end),
 
-     (neq, ":min_rank", 1000), # reward item found
+     # (neq, ":min_rank", 1000), # reward item found
      
-     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
-     (store_mul, ":min_price", ":min_rank", 10), # reward item price = 10*rank
-     (ge, ":influence", ":min_price"), # player has enough influence to buy the cheapest reward item?
+     # (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+     # (store_mul, ":min_price", ":min_rank", 10), # reward item price = 10*rank
+     # (ge, ":influence", ":min_price"), # player has enough influence to buy the cheapest reward item?
      ],
    "I want to request a special item.", "lord_get_reward_item_ask",[]],
 
@@ -3994,8 +3996,8 @@ dialogs = [
   [anyone|plyr|repeat_for_100,"lord_get_reward_item", [
      (store_repeat_object, ":rank_index"),
      (is_between, ":rank_index", 0, 10),
-	 (faction_get_slot, ":rank", "$g_talk_troop_faction", slot_faction_rank),
-     (val_div, ":rank", 100), #rank points to rank number 0-9
+     (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), #rank points to rank number 0-9
+     (assign, ":rank", reg0),
      (ge, ":rank", ":rank_index"), #player of sufficient rank?
      (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
     
@@ -4023,12 +4025,11 @@ dialogs = [
      (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
      (ge, ":influence", ":price"), # player has enough influence to buy?
      
-     (store_mul, ":needed_rank_points", ":rank_index", 100),
 	 (try_begin),
 	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
-	   (call_script, "script_get_own_rank_title_to_s24", "$g_talk_troop_faction", ":needed_rank_points"),
+	   (call_script, "script_get_own_rank_title_to_s24", "$g_talk_troop_faction", ":rank_index"),
 	 (else_try),
-	   (call_script, "script_get_allied_rank_title_to_s24", "$g_talk_troop_faction", ":needed_rank_points"),
+	   (call_script, "script_get_allied_rank_title_to_s24", "$g_talk_troop_faction", ":rank_index"),
 	 (try_end),
      #required rank title in s24
      
@@ -4071,7 +4072,7 @@ dialogs = [
    ]],
         
   [anyone|plyr,"lord_get_reward_item", [],
-   "Never mind.", "lord_pretalk", []],
+   "Never mind then.", "lord_pretalk", []],
 
   [anyone,"lord_get_reward_item_answer", [],
    "Very well. May you use it to vanquish our enemies.", "lord_pretalk", []],
@@ -9839,6 +9840,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      # (call_script, "script_change_player_relation_with_center", "$current_town", 1),
      (call_script, "script_finish_quest", "qst_deal_with_night_bandits", 100),
     ]],
+
+  [anyone|plyr,"lord_deal_with_night_bandits_completed", [],
+   "They had it coming.", "close_window",[]],
 
     
   [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),

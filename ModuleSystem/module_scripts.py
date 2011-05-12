@@ -242,7 +242,7 @@ scripts = [
 			(eq,"$players_kingdom", ":fac"),
 			(store_troop_gold, ":gold_player", "$g_player_troop"),
 			(faction_set_slot,  ":fac", slot_faction_influence, 1),
-			(faction_set_slot,  ":fac", slot_faction_rank     , 100),
+			(faction_set_slot,  ":fac", slot_faction_rank     , 50),
 			(faction_set_slot,  ":fac", slot_faction_respoint , ":gold_player"),
 			(assign, "$ambient_faction", ":fac"),
 		(else_try),
@@ -296,15 +296,16 @@ scripts = [
   ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
-		(faction_get_slot, ":rank", ":fac", slot_faction_rank),
+		(faction_get_slot, ":rank_points", ":fac", slot_faction_rank),
         
-        #MV: gain (daily) influence = rank/50
+        #MV: gain (daily) influence = rank_points/50
         (faction_get_slot, ":influence", ":fac", slot_faction_influence),
-        (store_div, ":inf_increase", ":rank", 50),
+        (store_div, ":inf_increase", ":rank_points", 50),
         (val_add, ":influence", ":inf_increase"),
         (faction_set_slot, ":fac", slot_faction_influence, ":influence"),
         
-		(val_div, ":rank", 100), 
+		(call_script, "script_get_faction_rank", ":fac"),
+		(assign, ":rank", reg0),
 		(gt, ":rank", 0),
 		(call_script, "script_get_rank_title_to_s24", ":fac"),
 		(display_message, "@{s24}:"),
@@ -326,8 +327,7 @@ scripts = [
   # output: string 24
   ("get_own_rank_title_to_s24",[
 	(store_script_param_1, ":faction"),
-	(store_script_param_2, ":rank_points"),
-	(store_div, ":rank", ":rank_points", 100),
+	(store_script_param_2, ":rank"),
     (val_clamp, ":rank", 0, 10),
     
     (store_sub, ":string", ":faction", kingdoms_begin),
@@ -368,9 +368,8 @@ scripts = [
   # messes up s5
   ("get_allied_rank_title_to_s24",[
 	(store_script_param_1, ":fac"),
-	(store_script_param_2, ":rank_points"),
+	(store_script_param_2, ":rank"),
 	(str_store_faction_name, s5, ":fac"),
-	(store_div, ":rank", ":rank_points", 100),
     (try_begin),
         (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
         (try_begin),
@@ -421,13 +420,14 @@ scripts = [
 
 # script_get_rank_title_to_s24  
   ("get_rank_title_to_s24",[
-	(store_script_param_1, ":fac"),
-	(faction_get_slot, ":rank", ":fac", slot_faction_rank ),
+	(store_script_param_1, ":faction"),
+    (call_script, "script_get_faction_rank", ":faction"),
+    (assign, ":rank", reg0),
 	(try_begin),
-		(eq, ":fac", "$players_kingdom"),
-		(call_script, "script_get_own_rank_title_to_s24", ":fac", ":rank"),
+		(eq, ":faction", "$players_kingdom"),
+		(call_script, "script_get_own_rank_title_to_s24", ":faction", ":rank"),
 	(else_try),
-		(call_script, "script_get_allied_rank_title_to_s24", ":fac", ":rank"),
+		(call_script, "script_get_allied_rank_title_to_s24", ":faction", ":rank"),
 	(try_end),
   ]),
 
@@ -445,7 +445,7 @@ scripts = [
 # script_increase_rank
   # messes up s11
   ("increase_rank",
-    [ # gain rank (need 100 points to advance)
+    [ # gain rank (need rank points to advance)
       (store_script_param_1, ":fac"),
       (store_script_param_2, ":difference"),
       
@@ -453,17 +453,21 @@ scripts = [
           (is_between, ":fac", kingdoms_begin, kingdoms_end),
           (gt, ":difference", 0),
           
+          (call_script, "script_get_faction_rank", ":fac"),
+          (assign, ":old_rank", reg0),
+          
           (faction_get_slot, ":val", ":fac", slot_faction_rank),
-          (store_div, ":old", ":val", 100),
           (val_add, ":val", ":difference"),
-          (store_div, ":new", ":val", 100),
-          (faction_set_slot, ":fac", slot_faction_rank,  ":val"),
+          (faction_set_slot, ":fac", slot_faction_rank, ":val"),
+          
+          (call_script, "script_get_faction_rank", ":fac"),
+          (assign, ":new_rank", reg0),
           
           # gain influence = 1/10 rank  
           (faction_get_slot, ":val", ":fac", slot_faction_influence),
           (store_div, ":inf_dif", ":difference", 10),
           (val_add, ":val", ":inf_dif"),
-          (faction_set_slot, ":fac", slot_faction_influence,  ":val"),
+          (faction_set_slot, ":fac", slot_faction_influence, ":val"),
 
           # display message
           # (store_mod, reg10, ":difference", 100),(store_div, reg11, ":difference", 100),
@@ -475,12 +479,73 @@ scripts = [
           
           # rank increased?
           (try_begin),
-            (neq, ":old", ":new"),
+            (neq, ":old_rank", ":new_rank"),
             (call_script, "script_new_rank_attained", ":fac"),
           (try_end),
       (try_end),
  	]
   ),
+
+# script_get_faction_rank
+# converts rank points to rank number
+# input: faction
+# output: reg0 = rank 0-9 or higher
+("get_faction_rank",
+    [ (store_script_param_1, ":faction"),
+    
+      (faction_get_slot, ":rank_points", ":faction", slot_faction_rank),
+	  (call_script, "script_get_rank_for_rank_points", ":rank_points"),
+      # reg0 = rank
+	]
+  ),
+
+# script_get_rank_points_for_rank
+# converts rank number to rank points
+# input: rank 0-9 or higher
+# output: reg0 = rank points needed
+("get_rank_points_for_rank",
+    [ (store_script_param_1, ":rank"),
+    
+      # current formula rank points (rank) = Ax^2 + Bx
+      (assign, ":A", 5),
+      (assign, ":B", 45),
+      
+      (store_mul, ":ranksquared", ":rank", ":rank"),
+      (store_mul, ":rank_points", ":ranksquared", ":A"),
+      (store_mul, ":Bx", ":rank", ":B"),
+      (val_add, ":rank_points", ":Bx"),
+    
+      (assign, reg0, ":rank_points"),
+	]
+  ),
+
+# script_get_rank_for_rank_points
+# converts rank points to rank number
+# input: rank points
+# output: reg0 = rank 0-9 or higher
+("get_rank_for_rank_points",
+    [ (store_script_param_1, ":rank_points"),
+      
+      # current formula rank points (rank) = Ax^2 + Bx
+      (assign, ":A", 5),
+      (assign, ":B", 45),
+      
+      # rank = (sqrt(B*B+4*A*rp)-B)/(2*A)
+      (store_mul, ":AC4", ":rank_points", 4),
+      (val_mul, ":AC4", ":A"),
+      (store_mul, ":rank", ":B", ":B"),
+      (val_add, ":rank", ":AC4"),
+      (convert_to_fixed_point, ":rank"),
+      (store_sqrt, ":rank", ":rank"),
+      (convert_from_fixed_point, ":rank"),
+      (val_sub, ":rank", ":B"),
+      (val_div, ":rank", 2),
+      (val_div, ":rank", ":A"),
+    
+      (assign, reg0, ":rank"),
+	]
+  ),
+
 
 # script_find_closest_enemy_town_or_host  
 # input: faction f,  party x
@@ -1130,7 +1195,7 @@ scripts = [
       (item_set_slot, "itm_dried_meat", slot_item_food_bonus, 5),
       (item_set_slot, "itm_cattle_meat", slot_item_food_bonus, 7),
       (item_set_slot, "itm_human_meat", slot_item_food_bonus, 6),
-	  (item_set_slot, "itm_lembas", slot_item_food_bonus, 10),
+	  (item_set_slot, "itm_lembas", slot_item_food_bonus, 20),
 
 #NPC companion changes begin
       (call_script, "script_initialize_npcs"),
@@ -1640,10 +1705,9 @@ scripts = [
 	# compute ideal number of volunteers
 	(store_party_size_wo_prisoners, ":to_add", ":town"),
     (val_div, ":to_add", 20), #   base: [num-garrison] / 20
-	(faction_get_slot, ":rank_bonus", ":fac", slot_faction_rank),
-    (val_div, ":rank_bonus", 100),
-    (val_mul, ":rank_bonus", 1),
-    (val_add, ":to_add", ":rank_bonus"), #  + rank
+    (call_script, "script_get_faction_rank", ":fac"),
+    (assign, ":rank", reg0),
+    (val_add, ":to_add", ":rank"), #  + rank
 	(store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
     (val_div, ":lead_bonus", 2),
     (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
@@ -5774,6 +5838,7 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_deliver_message_to_enemy_lord"),
           (try_begin),
+(eq, 1, 0), #disabled - no dealings with the enemy
             (ge, "$g_talk_troop_faction_relation", 0),
             (is_between, ":player_level", 5, 25),
             (call_script, "script_cf_get_random_lord_from_enemy_faction_in_a_center", ":giver_faction_no"),#Can fail
@@ -6355,7 +6420,9 @@ scripts = [
           (eq, ":quest_no", "qst_rescue_prisoners"),
           (try_begin),
             (store_character_level, ":quest_target_amount", "trp_player"),
-            (val_clamp, ":quest_target_amount", 5, 21),
+            (gt, ":quest_target_amount", 7),
+            (val_clamp, ":quest_target_amount", 8, 21),
+            (val_sub, ":quest_target_amount", 4), #4-16
             (assign, ":quest_importance", 1),
             (store_mul, ":quest_gold_reward", ":quest_target_amount", 20),
             (assign, ":quest_xp_reward", ":quest_gold_reward"),

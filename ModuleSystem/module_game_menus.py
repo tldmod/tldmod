@@ -313,10 +313,11 @@ game_menus = [
 	(faction_get_slot, reg10, ":fac", slot_faction_rank),
 	(faction_get_slot, reg11, ":fac", slot_faction_influence),
 	(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
-    (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 	(str_store_faction_name, s16, ":fac"),
 	
-	(call_script, "script_get_own_rank_title_to_s24", ":fac", reg10),
+    (call_script, "script_get_faction_rank", ":fac"),
+    (assign, reg13, reg0),
+	(call_script, "script_get_own_rank_title_to_s24", ":fac", reg13),
 	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
 	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
@@ -326,10 +327,11 @@ game_menus = [
 		(faction_get_slot, reg10, ":fac", slot_faction_rank),
 		(faction_get_slot, reg11, ":fac", slot_faction_influence),
 		(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
-        (store_div, reg13, reg10, 100), #rank points to rank number 0-9
 		(str_store_faction_name, s16, ":fac"),
 		
-		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg10),
+		(call_script, "script_get_faction_rank", ":fac"),
+		(assign, reg13, reg0),
+		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg13),
 		(try_begin), 
 			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24} ({reg13})"),  # title
 		(try_end),
@@ -1552,7 +1554,7 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_rank",[],"Increase ambient faction rank.",[(call_script, "script_increase_rank", "$ambient_faction", 100),]),
+   ("camp_mvtest_rank",[],"Increase ambient faction rank points.",[(call_script, "script_increase_rank", "$ambient_faction", 100),]),
    # ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
     # (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        # (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -3084,11 +3086,11 @@ game_menus = [
 	  (player_has_item,"itm_ent_water"),
 	  (eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
 	 ],
-	  "Drink the water you got from the walking trees",
+	  "Drink the Ent Water!",
 	  [
 	    (troop_get_type,reg5,"trp_player"),
 	    (troop_remove_item,"itm_ent_water"),
-		(display_log_message,"@Drank Ent water"),
+		(display_log_message,"@You drank the Ent Water..."),
 		(assign,"$g_ent_water_ever_drunk",1),
 		(assign,"$g_ent_water_taking_effect",1),
 		(try_begin),
