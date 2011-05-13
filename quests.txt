@@ -28,6 +28,6 @@ qst_troublesome_bandits Hunt_Down_Troublesome_Goblins 2 The_{s9}_of_{s4}_asked_y
 qst_deal_with_looters Deal_with_Tribal_Orcs 2 The_Elder_of_{s4}_has_asked_you_to_deal_with_several_bands_of_tribal_orcs_around_{s4}. 
 qst_deal_with_night_bandits Deal_with_Rogue_Goblins 2 The_Elder_of_{s14}_has_asked_you_to_deal_with_night_goblins_at_{s14}. 
 qst_deliver_food Supply_{s3}_with_{reg5}_Units_of_{s6} 2 The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_10_days. 
-qst_join_faction Give_Oath_of_Homage_to_{s1} 2 Find_{s1}_and_give_him_your_oath_of_homage. 
 qst_tld_introduction Deliver_message_about_Mordor_orcs_to_the_command 2 None 
+qst_treebeard_kill_orcs Defeat_the_tree-chopping_orc_party 2 Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn. 
 qst_quests_end Quests_End 0 . 

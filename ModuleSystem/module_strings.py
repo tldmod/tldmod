@@ -2527,7 +2527,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ### TLD home faction ranks - faction order must be kept 
 ("gondor_rank_0", "Commoner of Gondor"),
 ("gondor_rank_1", "Soldier of Gondor"),
-("gondor_rank_2", "Lieutenant of Gondor"),
+("gondor_rank_2", "Sergeant of Gondor"),
 ("gondor_rank_3", "Knight of Gondor"),
 ("gondor_rank_4", "Tower Guard of Gondor"),
 ("gondor_rank_5", "Citadel Knight of Gondor"),

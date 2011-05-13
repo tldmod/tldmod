@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-214
+215
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -17,6 +17,7 @@ pt_sea_raiders Corsair_Raiders 562949953421320 0 2 494 303 3 50 0 -1 -1 -1 -1 -1
 pt_deserters Deserters 844424930131971 0 51 494 -1 -1 -1 -1 -1 -1 
 pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 430 1 1 0 431 5 25 0 -1 -1 -1 -1 
 pt_troublesome_bandits Troublesome_Goblins 2533274790658056 0 2 494 379 14 55 0 -1 -1 -1 -1 -1 
+pt_fangorn_orcs Tree-chopping_Orcs 2533274790658056 0 26 494 329 1 1 0 327 3 8 0 322 8 13 0 325 12 24 0 -1 -1 
 pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 429 3 8 0 -1 -1 -1 -1 
 pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 776 1 1 0 159 5 11 0 -1 -1 -1 -1 
 pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 777 1 1 0 269 5 11 0 -1 -1 -1 -1 
@@ -118,7 +119,7 @@ pt_swadian_patrol Swadian_Patrol 844424934326274 0 3 238 117 8 13 0 104 8 20 0 1
 pt_vaegir_patrol Vaegir_Patrol 562949957615619 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_swadian_war_party Swadian_War_Party 1407374887747586 0 3 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_vaegir_war_party Vaegir_War_Party 1407374887747587 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
-pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 814 4 20 0 -1 -1 -1 -1 
+pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 818 4 20 0 -1 -1 -1 -1 
 pt_kingdom_hero_party War_Party 4259844 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_war_party Gondor_War_Party 844424930131993 0 3 238 107 8 36 0 124 15 20 0 114 15 35 0 119 8 13 0 109 8 20 0 115 5 35 0 
 pt_gondor_allies_war_party Gondor_Allies_War_Party 844424930132007 0 3 238 163 8 13 0 162 8 20 0 161 8 16 0 148 5 20 0 159 4 15 0 154 4 15 0 

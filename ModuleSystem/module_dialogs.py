@@ -389,6 +389,63 @@ dialogs = [
   
   [trp_easter_egg_troll, "troll_beaten", [], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
   [trp_easter_egg_troll, "troll_goodbye", [], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
+  
+  
+#MV: Treebeard dialogs
+  [trp_treebeard, "start", [
+   (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
+   ], "Well met, little orc!", "treebeard_introduce_1",[]],
+  [trp_treebeard, "start", [], "Always good to see you, little orc.", "treebeard_talk",[]],
+  
+  [trp_treebeard|plyr, "treebeard_introduce_1", [], "Hi, talking tree!", "treebeard_talk",[
+   (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
+  ]],
+  [trp_treebeard|plyr, "treebeard_introduce_1", [], "I'm not a little orc. Goodbye.", "close_window",[]],
+  
+  [trp_treebeard, "treebeard_talk", [
+                                     (neg|check_quest_active, "qst_treebeard_kill_orcs"),
+                                     (quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_current_state, 0),
+                                    ], 
+  "You might be able to help me with something.^There are orcs chopping down trees in the forest. Kill the little motherfuckers!", "treebeard_quest_brief",[]],
+  [trp_treebeard, "treebeard_talk", [(check_quest_active, "qst_treebeard_kill_orcs"),
+                                     (check_quest_succeeded, "qst_treebeard_kill_orcs"),
+                                    ], 
+  "Excellent! That should stop that terrible song. Have some ent water!", "close_window",[
+    (add_xp_as_reward, 2000),
+    (call_script, "script_change_troop_renown", "trp_player", 20),
+    (troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the orcs
+    (call_script, "script_end_quest", "qst_treebeard_kill_orcs"),
+    (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1), #don't give it again
+  ]],
+  [trp_treebeard, "treebeard_talk", [(check_quest_active, "qst_treebeard_kill_orcs")], 
+  "Those orcs won't kill themselves.", "close_window",[]],
+  
+  [trp_treebeard, "treebeard_talk", [], "See you, very small uruk.", "close_window",[]],
+  
+  [trp_treebeard|plyr,"treebeard_quest_brief", [],
+   "Alright. I will kill the little buggers.", "treebeard_quest_taken",
+   [(set_spawn_radius,7),
+    (spawn_around_party, "p_fangorn_center", "pt_fangorn_orcs"),
+    (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_target_party, reg0),
+    (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_giver_troop, "trp_treebeard"),
+    (setup_quest_text, "qst_treebeard_kill_orcs"),
+    (str_store_string, s2, "@Treebeard wants you find and defeat the orcs cutting down trees in Fangorn."),
+    (call_script, "script_start_quest", "qst_treebeard_kill_orcs", "trp_treebeard"),
+    ]],
+  [trp_treebeard, "treebeard_quest_taken", [], "Good. And bring me some orc ears when you are done.", "close_window", []],
+  
+  [trp_treebeard|plyr,"treebeard_quest_brief", [],
+   "Sorry. I don't have time for this right now.", "close_window",[]],
+  
+#  [trp_treebeard|plyr, "treebeard_talk_1", [], "Troll me, troll.", "treebeard_talk_2",[]],
+  # [trp_treebeard|plyr, "treebeard_talk_1", [], "Likewise.", "close_window",[]],
+  
+  # [trp_treebeard, "treebeard_goodbye", [], "Goodbye, little orc!", "close_window",[]],
+
+#MV: Other ents
+  [trp_ent_1, "start", [], "Mmmmm?", "close_window",[]],
+  [trp_ent_2, "start", [], "Mmhhrmmm?", "close_window",[]],
+  [trp_ent_3, "start", [], "Mmmrhrrhmm?", "close_window",[]],
 
 ##  [trp_tutorial_trainer,"start", [(eq, "$tutorial_quest_award_taken", 1),], "I think you have trained enough. Perhaps you should go to Zendar for the next step of your adventure.", "close_window",[]],
 ##  [trp_tutorial_trainer,"start", [(store_character_level, ":player_level", "trp_player"),(gt, ":player_level", 1)], "I think you have trained enough. Perhaps you should go to Zendar for the next step of your adventure.", "close_window",[]],
@@ -2416,31 +2473,31 @@ dialogs = [
 
 #Meeting.
 
-  [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
-                     (check_quest_active, "qst_join_faction"),
-                     (eq, "$g_invite_faction_lord", "$g_talk_troop"),
-                     (try_begin),
-                       (gt, "$g_invite_offered_center", 0),
-                       (store_faction_of_party, ":offered_center_faction", "$g_invite_offered_center"),
-                       (neq, ":offered_center_faction", "$g_talk_troop_faction"),
-                       (call_script, "script_get_poorest_village_of_faction", "$g_talk_troop_faction"),
-                       (assign, "$g_invite_offered_center", reg0),
-                     (try_end),
-                     ],
-   #TODO: change conversations according to relation.
-   "{playername}, I've been expecting you. Word has reached my ears of your exploits.\
- Why, I keep hearing such tales of prowess and bravery that my mind was quickly made up.\
- I knew that I had found someone worthy of becoming my vassal.", "lord_invite_1",
-   []],
+  # [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
+                     # (check_quest_active, "qst_join_faction"),
+                     # (eq, "$g_invite_faction_lord", "$g_talk_troop"),
+                     # (try_begin),
+                       # (gt, "$g_invite_offered_center", 0),
+                       # (store_faction_of_party, ":offered_center_faction", "$g_invite_offered_center"),
+                       # (neq, ":offered_center_faction", "$g_talk_troop_faction"),
+                       # (call_script, "script_get_poorest_village_of_faction", "$g_talk_troop_faction"),
+                       # (assign, "$g_invite_offered_center", reg0),
+                     # (try_end),
+                     # ],
+   # #TODO: change conversations according to relation.
+   # "{playername}, I've been expecting you. Word has reached my ears of your exploits.\
+ # Why, I keep hearing such tales of prowess and bravery that my mind was quickly made up.\
+ # I knew that I had found someone worthy of becoming my vassal.", "lord_invite_1",
+   # []],
 
 
-  [anyone|plyr ,"lord_invite_1", [],  "Thank you, {s65}, you honour me with your offer.", "lord_invite_2",  []],
-  [anyone|plyr ,"lord_invite_1", [],  "It is good to have my true value recognised.", "lord_invite_2",  []],
+  # [anyone|plyr ,"lord_invite_1", [],  "Thank you, {s65}, you honour me with your offer.", "lord_invite_2",  []],
+  # [anyone|plyr ,"lord_invite_1", [],  "It is good to have my true value recognised.", "lord_invite_2",  []],
    
-  [anyone ,"lord_invite_2", [],  "Aye. Let us dispense with the formalities, {playername}; are you ready to swear homage to me?", "lord_invite_3",  []],
+  # [anyone ,"lord_invite_2", [],  "Aye. Let us dispense with the formalities, {playername}; are you ready to swear homage to me?", "lord_invite_3",  []],
     
-  [anyone|plyr ,"lord_invite_3", [],  "Yes, {s65}.", "lord_give_oath_2",  []],
-  [anyone|plyr ,"lord_invite_3", [],  "No, {s65}. I cannot serve you right now.", "lord_enter_service_reject",  []],
+  # [anyone|plyr ,"lord_invite_3", [],  "Yes, {s65}.", "lord_give_oath_2",  []],
+  # [anyone|plyr ,"lord_invite_3", [],  "No, {s65}. I cannot serve you right now.", "lord_enter_service_reject",  []],
 
   [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                      (eq,"$talk_context",tc_town_talk),
@@ -4010,8 +4067,10 @@ dialogs = [
             ]+concatenate_scripts([[
               (try_begin),
                 (eq, ":rank_index", fac_reward_items_list[x][item_entry][0]),
+                (assign, ":item", fac_reward_items_list[x][item_entry][1]),
+                (item_slot_eq, ":item", slot_item_given_as_reward, 0), # not already given
                 (assign, ":item_exists", 1),
-                (str_store_item_name, s20, fac_reward_items_list[x][item_entry][1]),
+                (str_store_item_name, s20, ":item"),
               (try_end),
                 ] for item_entry in range(len(fac_reward_items_list[x]))
             ])+[
@@ -4060,6 +4119,12 @@ dialogs = [
      
      # and give it away
      (troop_add_item, "trp_player", ":item", ":modifier"),
+     
+     (item_set_slot, ":item", slot_item_given_as_reward, 1), # can't give more then one
+     
+     (call_script, "script_apply_attribute_bonuses"), # update player attributes for rings and such
+     
+     (call_script, "script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
      
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
@@ -11658,14 +11723,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [party_tpl|pt_troublesome_bandits,"start", [(quest_slot_eq, "qst_troublesome_bandits", slot_quest_target_party, "$g_encountered_party")],
    "What? We will kill. We will take your food and mounts and eat 'em. We will eat you.", "troublesome_bandits_intro_1",[]],
   [anyone|plyr,"troublesome_bandits_intro_1", [],
-   "You'll regret causing trouble around these parts.\
- You should have never left your mountain caves.",
-   "troublesome_bandits_intro_2", [(quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
-                                   (str_store_party_name, s1, ":quest_giver_center")
-                                   ]],
+   "You'll regret causing trouble around these parts. You should have never left your mountain caves.",
+   "troublesome_bandits_intro_2", []],
   [anyone,"troublesome_bandits_intro_2", [],
    "Kill now! Eat later!", "close_window",[(encounter_attack)]],
  
+  [party_tpl|pt_fangorn_orcs,"start", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_target_party, "$g_encountered_party")],
+   "I'm a lumberjack and I'm okay, I sleep all night and I work all day.", "fangorn_orcs_intro_1",[]],
+  [anyone|plyr,"fangorn_orcs_intro_1", [],
+   "He's a lumberjack and he's okay, he sleeps all night and he works all day!",
+   "fangorn_orcs_intro_2", []],
+  [anyone,"fangorn_orcs_intro_2", [],
+   "I cut down trees, I wear high heels... Hey! No unauthorized singing!", "close_window",[(encounter_attack)]],
  
 
   [party_tpl|pt_rescued_prisoners,"start", [(eq,"$talk_context",tc_party_encounter)], "Do you want us to follow you?", "disbanded_troop_ask",[]],

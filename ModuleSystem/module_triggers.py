@@ -170,7 +170,7 @@ triggers = [
               (this_or_next|eq, ":is_orc_faction", 1),
               (neq, ":cur_goods", "itm_human_meat"),
               # (this_or_next|eq, ":is_elf_faction", 1),
-              (neq, ":cur_goods", "itm_lembas"),
+              # (neq, ":cur_goods", "itm_lembas"),
               
               (assign, ":quest_prevents", 0),
               (try_begin), # don't allow this food to generate if the quest says there is a shortage
@@ -1203,6 +1203,14 @@ triggers = [
                    (neq, ":cur_eliminated_by_player", "$qst_troublesome_bandits_eliminated_by_player"),
                    ],
                   [(call_script, "script_succeed_quest", "qst_troublesome_bandits"),]),
+                  
+  (0.3, 0.0, 1.1, [(check_quest_active, "qst_treebeard_kill_orcs"),
+                   (neg|check_quest_succeeded, "qst_treebeard_kill_orcs"),
+                   (store_num_parties_destroyed_by_player, ":cur_eliminated_by_player", "pt_fangorn_orcs"),
+                   (gt, ":cur_eliminated_by_player", 0),
+                   ],
+                  [(call_script, "script_succeed_quest", "qst_treebeard_kill_orcs"),]),
+
 # Kidnapped girl:
    # (1, 0, 0,
    # [(check_quest_active, "qst_kidnapped_girl"),

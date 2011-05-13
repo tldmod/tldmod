@@ -26,8 +26,8 @@ qst_troublesome_bandits = 24
 qst_deal_with_looters = 25
 qst_deal_with_night_bandits = 26
 qst_deliver_food = 27
-qst_join_faction = 28
-qst_tld_introduction = 29
+qst_tld_introduction = 28
+qst_treebeard_kill_orcs = 29
 qst_quests_end = 30
 qsttag_deliver_message = 504403158265495552
 qsttag_deliver_message_to_enemy_lord = 504403158265495553
@@ -57,8 +57,8 @@ qsttag_troublesome_bandits = 504403158265495576
 qsttag_deal_with_looters = 504403158265495577
 qsttag_deal_with_night_bandits = 504403158265495578
 qsttag_deliver_food = 504403158265495579
-qsttag_join_faction = 504403158265495580
-qsttag_tld_introduction = 504403158265495581
+qsttag_tld_introduction = 504403158265495580
+qsttag_treebeard_kill_orcs = 504403158265495581
 qsttag_quests_end = 504403158265495582
 
 

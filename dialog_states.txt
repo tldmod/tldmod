@@ -47,6 +47,10 @@ troll_goodbye
 troll_talk_2
 troll_talk_3
 troll_beaten
+treebeard_introduce_1
+treebeard_talk
+treebeard_quest_brief
+treebeard_quest_taken
 manhunter_talk_b
 manhunter_talk_b1
 manhunter_talk_b2
@@ -165,10 +169,6 @@ lord_event_choose_friend_renounce
 lord_pretalk
 lord_event_choose_friend_defend
 lord_event_choose_friend_neutral
-lord_invite_1
-lord_invite_2
-lord_invite_3
-lord_enter_service_reject
 lord_start
 lord_intro
 lord_meet_neutral
@@ -569,6 +569,8 @@ bandit_meet
 bandit_attack
 troublesome_bandits_intro_1
 troublesome_bandits_intro_2
+fangorn_orcs_intro_1
+fangorn_orcs_intro_2
 disbanded_troop_ask
 disbanded_troop_join
 enemy_talk_1

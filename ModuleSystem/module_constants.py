@@ -28,6 +28,12 @@ slot_item_faction                 = 5 # additional item slot for culture-specifi
 slot_item_text                    = 6 # for future use, links to text string
 slot_item_subfaction              = 7 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
 
+slot_item_given_as_reward         = 8 # 0 or 1, used to check if item was already given as a reward
+
+slot_item_strength_bonus          = 9 # 0 or 1, used to check if strength bonus was already applied by this item
+slot_item_agility_bonus           = 10 # 0 or 1, used to check if agility bonus was already applied by this item
+slot_item_intelligence_bonus      = 11 # 0 or 1, used to check if intelligence bonus was already applied by this item
+slot_item_charisma_bonus          = 12 # 0 or 1, used to check if charisma bonus was already applied by this item
 
 ########################################################
 ##  AGENT SLOTS            #############################
@@ -1001,7 +1007,7 @@ village_elder_quests_begin = lord_quests_end #no village elder quests in TLD, wa
 village_elder_quests_end = lord_quests_end #no village elder quests in TLD, was "qst_eliminate_bandits_infesting_village"
 
 mayor_quests_begin  = "qst_move_cattle_herd"
-mayor_quests_end    = "qst_join_faction"
+mayor_quests_end    = "qst_tld_introduction"
 
 lady_quests_begin = mayor_quests_begin  #no lady quests in TLD, was "qst_rescue_lord_by_replace"
 lady_quests_end   = mayor_quests_begin
@@ -1952,24 +1958,24 @@ fac_tableau_list = [
 ## Reward items (rank number 0-9, item id, item modifier)
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
-[(3, "itm_athelas_reward", 0), (4, "itm_gon_tower_guard", 0), (5, "itm_gon_tower_knight", 0), (6, "itm_gon_steward_guard", 0), (7, "itm_horn_gondor_reward", 0), (9, "itm_sword_of_arathorn", 0)],#fac_gondor = 3
-[(3, "itm_map", 0), (7, "itm_hammer_reward", 0)],#fac_dwarf = 4
-[(3, "itm_mearas_reward", imod_spirited), (4, "itm_rohan_shield_d", imod_reinforced), (6, "itm_rohan_armor_q", imod_reinforced), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_thengel_warhorse", imod_champion)],#fac_rohan = 5
-[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_mordor = 6
-[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_isengard = 7
+[(2, "itm_cooking_cauldron", 0), (3, "itm_athelas_reward", 0), (4, "itm_gon_tower_guard", 0), (5, "itm_gon_tower_knight", 0), (6, "itm_gon_steward_guard", 0), (7, "itm_horn_gondor_reward", 0), (9, "itm_sword_of_arathorn", 0)],#fac_gondor = 3
+[(2, "itm_cooking_cauldron", 0), (3, "itm_hammer_reward", 0), (4, "itm_ring_a_reward", 0), (5, "itm_ring_b_reward", 0)],#fac_dwarf = 4
+[(2, "itm_cooking_cauldron", 0), (3, "itm_map", 0), (4, "itm_rohan_shield_d", imod_reinforced), (6, "itm_rohan_armor_q", imod_reinforced), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],#fac_rohan = 5
+[(2, "itm_cooking_cauldron", 0), (3, "itm_orc_brew", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_mordor = 6
+[(2, "itm_cooking_cauldron", 0), (3, "itm_orc_brew", 0)],#fac_isengard = 7
 [(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_phial_reward", 0)],#fac_lorien = 8
-[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_riv_armor_reward", imod_lordly)],#fac_imladris = 9
-[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_mirkwood_sword_reward", imod_masterwork)],#fac_woodelf = 10
-[(3, "itm_map", 0)],#fac_dale = 11
-[(3, "itm_torque_reward", 0), (7, "itm_harad_totem_reward", 0)],#fac_harad = 12
-[(3, "itm_map", 0), (5, "itm_rhun_greatsword", imod_balanced)],#fac_rhun = 13
-[(3, "itm_map", 0), (7, "itm_khand_knife_reward", 0)],#fac_khand = 14
-[(3, "itm_map", 0)],#fac_umbar = 15
-[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_moria = 16
-[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_guldur = 17
-[(2, "itm_orc_brew", 0), (3, "itm_warg_reward", 0)],#fac_gundabad = 18
-[(3, "itm_torque_reward", 0)],#fac_dunland = 19
-[(3, "itm_athelas_reward", 0)],#fac_beorn = 20
+[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_riv_armor_reward", 0)],#fac_imladris = 9
+[(2, "itm_lembas", 0), (3, "itm_athelas_reward", 0), (5, "itm_scroll_reward", 0), (7, "itm_elven_amulet_reward", 0), (9, "itm_mirkwood_sword_reward", 0)],#fac_woodelf = 10
+[(2, "itm_cooking_cauldron", 0), (3, "itm_garlic_reward", 0), (4, "itm_herbarium_reward", 0), (5, "itm_silmarillion_reward", 0)],#fac_dale = 11
+[(2, "itm_cooking_cauldron", 0), (3, "itm_map", 0), (7, "itm_harad_totem_reward", 0)],#fac_harad = 12
+[(2, "itm_cooking_cauldron", 0), (3, "itm_garlic_reward", 0), (5, "itm_rhun_greatsword", imod_balanced)],#fac_rhun = 13
+[(2, "itm_cooking_cauldron", 0), (3, "itm_hammer_reward", 0), (7, "itm_khand_knife_reward", 0)],#fac_khand = 14
+[(2, "itm_cooking_cauldron", 0), (3, "itm_map", 0)],#fac_umbar = 15
+[(2, "itm_cooking_cauldron", 0), (3, "itm_orc_brew", 0)],#fac_moria = 16
+[(2, "itm_cooking_cauldron", 0), (3, "itm_orc_brew", 0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],#fac_guldur = 17
+[(2, "itm_cooking_cauldron", 0), (3, "itm_orc_brew", 0)],#fac_gundabad = 18
+[(2, "itm_cooking_cauldron", 0), (3, "itm_garlic_reward", 0)],#fac_dunland = 19
+[(2, "itm_cooking_cauldron", 0), (3, "itm_athelas_reward", 0)],#fac_beorn = 20
 ]
 
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)

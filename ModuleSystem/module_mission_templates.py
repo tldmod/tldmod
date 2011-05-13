@@ -3667,6 +3667,10 @@ mission_templates = [
     [
      (0,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (16,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (17,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (18,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (19,mtef_scene_source|mtef_team_0,0,0,1,[]),
      ],
     [
       (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),

@@ -1,5 +1,5 @@
 itemsfile version 2
-854
+852
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -30,16 +30,10 @@ itemsfile version 2
  itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  34144267 0 200 0 1.250000 10 90 0 0 0 0 0 0 0 70 0 0
-0
-
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_dried_meat Dried_Meat Dried_Meat 1  smoked_meat 0  34144267 0 72 0 15.000000 100 60 0 0 0 0 0 0 0 50 0 0
-0
-
- itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  smoked_meat 0  34144267 0 72 0 15.000000 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_cattle_meat Beef Beef 1  raw_meat 0  34144267 0 103 0 20.000000 100 70 0 0 0 0 0 0 0 70 0 0
@@ -1550,7 +1544,7 @@ itemsfile version 2
 
  itm_rohan_armor_s Rohan_Heraldric_Mail Rohan_Heraldric_Mail 1  VH_heraldic_rohan_armor_M16 0  16777229 0 6000 0 22.000000 100 0 50 16 0 0 0 0 0 0 0 0
 1
--50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063462 1729382256910270479 1224979098644774912 1224979098644774913 
+-50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063461 1729382256910270479 1224979098644774912 1224979098644774913 
 
  itm_rohan_inf_helmet_a Rohan_Inf_Helmet Rohan_Inf_Helmet 1  rohan_inf_helmet_a 0  65548 0 340 0 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
@@ -2478,7 +2472,10 @@ itemsfile version 2
  itm_empty_head empty_head empty_head 1  0 0  2147487756 0 130 0 33.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  11 0 0 0 15.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 0 0 2.000000 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2490,13 +2487,10 @@ itemsfile version 2
  itm_phial_reward Light_of_Galadriel Light_of_Galadriel 1  galadriel_light 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_scroll_reward Scroll_of_Elven_Wisdomz Scroll_of_Elven_Wisdomz 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_scroll_reward Scroll_of_Ancient_Wars Scroll_of_Ancient_Wars 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_evil_scroll_reward Scroll_of_Evil_Wisdomz Scroll_of_Evil_Wisdomz 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_hammer_reward Dwarven_Smith_Hammer Dwarven_Smith_Hammer 1  smith_hammer 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_hammer_reward Smith's_Hammer Smith's_Hammer 1  smith_hammer 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_khand_knife_reward Khand_Sacrificial_Knife Khand_Sacrificial_Knife 1  khand_sacrificial_knife 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2511,16 +2505,16 @@ itemsfile version 2
  itm_harad_totem_reward Harad_Totem Harad_Totem 1  harad_totem 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_elven_amulet_reward Elven_Amulet_of_Powerful_Mageekness Elven_Amulet_of_Powerful_Mageekness 1  elven_amulet 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_elven_amulet_reward Elven_Amulet Elven_Amulet 1  elven_amulet 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_torque_reward Evil_Torque Evil_Torque 1  reward_torque 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  33554443 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 100 0 0
+ itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 1.500000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_saddle Saddle_of_Rohan Saddle_of_Rohan 1  RohanSaddle 0  4107 0 5000 0 4.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_saddle Saddle_of_Thengel Saddle_of_Thengel 1  RohanSaddle 0  4107 0 5000 0 4.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  courser 0  4097 0 400 41876193280 0.000000 100 0 60 0 2 180 40 45 0 0 40 0
@@ -2544,10 +2538,10 @@ itemsfile version 2
  itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gon_tower_knight 0  16777229 0 1820 0 22.000000 100 0 49 15 0 0 0 0 0 0 0 0
 0
 
- itm_westernesse1h_reward Sword_of_Westernesse_1h Sword_of_Westernesse_1h 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
+ itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
 0
 
- itm_westernesse2h_reward Sword_of_Westernesse Sword_of_Westernesse 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
+ itm_westernesse2h_reward Great_Sword_of_Westernesse Great_Sword_of_Westernesse 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
 0
 
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
@@ -2559,7 +2553,7 @@ itemsfile version 2
  itm_eorl_cavalry_sword Eorl_Cavalry_Sword Eorl_Cavalry_Sword 1  eorl_cavalry_sword 0  71307266 9223388529822793743 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
 0
 
- itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 1.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_silmarillion_reward Silmarillion Silmarillion 1  JIKBookClosed 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2568,10 +2562,10 @@ itemsfile version 2
  itm_herbarium_reward Middle_Earth_Herbarium Middle_Earth_Herbarium 1  JIKBookOpen 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ring_a_reward Ring_of_Whatever Ring_of_Whatever 1  reward_ring_a 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_ring_a_reward Tulcarisil Tulcarisil 1  reward_ring_a 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ring_b_reward Ring_of_More_Whatever Ring_of_More_Whatever 1  reward_ring_b 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_ring_b_reward Finwarisil Finwarisil 1  reward_ring_b 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_witchking_helmet Witchking_Helmet Witchking_Helmet 1  witchking_helmet 0  2147483660 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0

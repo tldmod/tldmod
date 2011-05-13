@@ -40,7 +40,6 @@ g_player_surrenders
 pretender_told_story
 town_to_rebel
 town_to_approach
-g_invite_offered_center
 prisoner_lord_to_buy
 g_ransom_offer_rejected
 g_convince_quest
@@ -418,8 +417,6 @@ ai_team_1_battle_tactic
 ai_team_1
 ai_team_2
 ai_team_2_battle_tactic
-g_invite_faction
-g_invite_faction_lord
 g_player_current_own_troop_kills
 g_last_mission_player_damage
 g_friend_fit_for_battle

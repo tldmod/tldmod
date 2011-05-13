@@ -1,4 +1,4 @@
-787
+795
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -74,7 +74,7 @@ qstr_Accomplice_of_{s5} Accomplice_of_{s5}
 qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
-qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}
+qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}_({reg0})
 qstr_Earned_{reg11}_rank_ Earned_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
@@ -97,7 +97,6 @@ qstr_Master Master
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr_Volunteers Volunteers
-qstr_DEBUG:_Troll_hit!!! DEBUG:_Troll_hit!!!
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
@@ -106,17 +105,24 @@ qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
 qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
+qstr_+30_to_Party_Morale +30_to_Party_Morale
+qstr_+20_to_Party_Morale +20_to_Party_Morale
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
-qstr_+1_to_Horse_Archery +1_to_Horse_Archery
 qstr_+1_to_Pathfinding +1_to_Pathfinding
-qstr_+1_to_Wound_Treateme +1_to_Wound_Treatement
+qstr_+1_to_Athletics +1_to_Athletics
 qstr_Use_from Use_from
 qstr_Camp_Menu Camp_Menu
 qstr_+1_to_First_Aid +1_to_First_Aid
-qstr_+1_to_Training +1_to_Training
-qstr_+1_to_Persuasion +1_to_Persuasion
+qstr_+1_to_Weapon_Mastery +1_to_Weapon_Mastery
+qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
+qstr_+1_to_Tactics +1_to_Tactics
+qstr_+1_to_Power_Strike +1_to_Power_Strike
+qstr_+1_to_Strength +1_to_Strength
+qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
-qstr_+{reg1}_to_party_mor +{reg1}_to_party_morale
+qstr_+1_to_Power_Draw +1_to_Power_Draw
+qstr_+1_to_Persuasion +1_to_Persuasion
+qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
@@ -352,7 +358,7 @@ qstr___ _-
 qstr__ _
 qstr__+ _+
 qstr_^No_food:___{reg7} ^No_food:__-{reg7}
-qstr_Current_party_morale Current_party_morale_is_{reg5}.^Current_party_morale_modifiers_are:^^Base_morale:__+50^Party_size:_{s2}{reg1}^Leadership:_{s3}{reg2}^Food_variety:_{s4}{reg3}{s5}^Recent_events:_{s7}{reg4}^TOTAL:__{reg5}
+qstr_Current_party_morale Current_party_morale_is_{reg5}.^Current_party_morale_modifiers_are:^^Base_morale:__+50^Party_size:_{s2}{reg1}^Leadership:_{s3}{reg2}^Food_variety:_{s4}{reg3}{s5}^Special_items:_{s6}{reg6}^Recent_events:_{s7}{reg4}^TOTAL:__{reg5}
 qstr_Defending Defending
 qstr_Gathering_army Gathering_army
 qstr_Besieging_{s11} Besieging_{s11}
@@ -389,6 +395,7 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
+qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
 qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
@@ -640,6 +647,7 @@ qstr_But_we_did_make_you_ But_we_did_make_you_as_stupid_as_in_the_movies._That's
 qstr_What_is_news?_Got_an What_is_news?_Got_any_screenshots?
 qstr_Well_just_look_aroun Well_just_look_around_you,_what_do_you_need_screenshots_for?
 qstr_Say_cheese! Say_cheese!
+qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Hrrr!_Frresh_meat_an Hrrr!_Frresh_meat_and_shiny_things.
 qstr_Gharr!_Hand_over_all Gharr!_Hand_over_all_yerr_stuff,_and_we_might_spare_yourr_life.
 qstr_Death_to_men! Death_to_men!

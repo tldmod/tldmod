@@ -245,9 +245,9 @@ quests = [
 ##     ),
 
  # Join Kingdom quest - TLD: not used, but could be reworked
- ("join_faction", "Give Oath of Homage to {s1}", qf_random_quest,
-  "Find {s1} and give him your oath of homage."
-  ),
+ # ("join_faction", "Give Oath of Homage to {s1}", qf_random_quest,
+  # "Find {s1} and give him your oath of homage."
+  # ),
 
  # Rebel against Kingdom quest
  # ("rebel_against_kingdom", "Help {s13} Claim the Throne of {s14}", qf_random_quest,
@@ -255,8 +255,12 @@ quests = [
   # ),
 
 ### TLD quests
-  ("tld_introduction","Deliver message about Mordor orcs to the command",qf_random_quest,
+  ("tld_introduction", "Deliver message about Mordor orcs to the command", qf_random_quest,
   "None",
+  ),
+  
+  ("treebeard_kill_orcs", "Defeat the tree-chopping orc party", qf_random_quest,
+  "Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.",
   ),
 
  ("quests_end", "Quests End", 0, "."),

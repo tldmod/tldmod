@@ -2633,6 +2633,9 @@ simple_triggers = [
     ]
     ),
 
+    # TLD: update player attributes for rings and such
+    (1, [(call_script, "script_apply_attribute_bonuses")]),
+    
     # # TLD Add some cheats for ease of testing
     # (0, [
         # (eq, cheat_switch, 1),

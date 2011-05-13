@@ -40,7 +40,7 @@ tmp_menu_max_fac = 21
 tmp_menu_max_tier = 4
 tmp_max_troop = 858 # troop_end
 
-magic_items = range( itm_ent_water , itm_witchking_helmet) + [itm_lembas]# first non magin item
+magic_items = range(itm_ent_water, itm_witchking_helmet) + [itm_lembas]# first non magin item
 
 city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
@@ -1165,6 +1165,21 @@ game_menus = [
     (else_try),
       (str_store_string, s4, "@ "),
     (try_end),
+    
+    # TLD morale-boosting items (non-cumulative)
+    (assign, reg6, 0),
+    (str_store_string, s6, "@ "),
+    (try_begin),
+	  (call_script, "script_get_troop_item_amount", "trp_player", "itm_lembas"),
+	  (gt, reg0, 0),
+      (assign, reg6, 30),
+      (str_store_string, s6, "@ +"),
+    (else_try),
+	  (call_script, "script_get_troop_item_amount", "trp_player", "itm_cooking_cauldron"),
+	  (gt, reg0, 0),
+      (assign, reg6, 20),
+      (str_store_string, s6, "@ +"),      
+    (try_end),
 
     (party_get_morale, reg5, "p_main_party"),
     (store_sub, reg4, reg5, ":target_morale"),
@@ -1174,7 +1189,7 @@ game_menus = [
     (else_try),
       (str_store_string, s7, "@ "),
     (try_end),
-    (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
+    (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),
     ]
@@ -1554,7 +1569,26 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_rank",[],"Increase ambient faction rank points.",[(call_script, "script_increase_rank", "$ambient_faction", 100),]),
+   ("camp_mvtest_rank",[],"Increase ambient faction rank points by 100.",[
+    (call_script, "script_increase_rank", "$ambient_faction", 100),
+    (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
+    (str_store_faction_name, s1, "$ambient_faction"),
+    (display_message, "@{s1} rank points increased to {reg0}!", 0x30FFC8),
+   ]),
+   # ("camp_mvtest_rankfunc",[],"Test rank functions.",[
+    # (try_for_range, ":rank_index", 0, 13),
+      # (call_script, "script_get_own_rank_title_to_s24", "$ambient_faction", ":rank_index"),
+      # (call_script, "script_get_rank_points_for_rank", ":rank_index"),
+      # (assign, reg1, ":rank_index"),
+      # (display_message, "@Rank {reg1} ({reg0} points): {s24}", 0x30FFC8),
+    # (try_end),
+    # (try_for_range, ":something", 0, 25),
+      # (store_mul, ":rank_points", ":something", 40),
+      # (call_script, "script_get_rank_for_rank_points", ":rank_points"),
+      # (assign, reg1, ":rank_points"),
+      # (display_message, "@Rank points {reg1}: at rank {reg0}.", 0x30FFC8),
+    # (try_end),
+   # ]),
    # ("camp_mvtest_goodvictory",[],"Defeat all evil factions!",[
     # (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        # (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -2654,6 +2688,7 @@ game_menus = [
 		(neg|check_quest_succeeded, "qst_investigate_fangorn"),
         (neg|check_quest_failed, "qst_investigate_fangorn"),
 		(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
+        (troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the Ents
     (try_end),
 	] ),]
   ),
