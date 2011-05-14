@@ -391,39 +391,44 @@ dialogs = [
   [trp_easter_egg_troll, "troll_goodbye", [], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
   
   
-#MV: Treebeard dialogs
-  [trp_treebeard, "start", [
-   (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
-   ], "Well met, little orc!", "treebeard_introduce_1",[]],
-  [trp_treebeard, "start", [], "Always good to see you, little orc.", "treebeard_talk",[]],
+#MV: Treebeard dialogs - text by Treebeard (JL)
+  [trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0)],
+    "(You find that you are looking at a most extraordinary creature. He is very tall and stiff-limbed with bark-like skin and leafy hair. Moss is also covering parts of his body. But at the moment you are noting little but the eyes. The deep eyes are surveying you, slow and solemn but very sharp and penetrating. You think they are brown, shot with green light, as if there is an enormous well behind them, filled up with ages of memory and long, slow, steady thinking. But on the surface his eyes are sparkling with the present... like the sun shimmering on the outer leaves of a vast tree, or the ripples of a very deep lake.)", "treebeard_introduce_1", []],
+  [trp_treebeard, "treebeard_introduce_1", [], "(You are about to say something but a strange stifling feeling falls upon you, as if the air is too thin or too scanty for breathing... with an almost desperate inhale of air you manage to shake loose the feeling and the huge tree-like creature drops the intensity of his gaze a little bit. The creature continues to look at you and you notice the other huge tree creatures are watching you too, as if expecting you to speak...)", "treebeard_introduce_2",[]],
   
-  [trp_treebeard|plyr, "treebeard_introduce_1", [], "Hi, talking tree!", "treebeard_talk",[
-   (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
-  ]],
-  [trp_treebeard|plyr, "treebeard_introduce_1", [], "I'm not a little orc. Goodbye.", "close_window",[]],
+  [trp_treebeard|plyr, "treebeard_introduce_2", [], "Pardon my intrusion... I'm but a weary traveler seeking refuge from recent events... my name is {playername}. Might I ask who you are?", "treebeard_introduce_3",[]],
+   
+  [trp_treebeard, "treebeard_introduce_3", [], "(The stiff-limbed tree giant slowly opens his mouth which is concealed behind small branches, leaves and moss. With a very deep, slow and booming voice he very slowly expounds in a most commanding way:)^\
+  'Hrooom... Hmmm... *I* am not going to tell you my name... not yet at any rate. For one thing it would take a long while. My name is growing all the time and I've lived a very long, long time; so my name is like a story. Real names tell you the story of things they belong to in my language, in the Old Entish as you might say. It is a lovely language, but it takes a very long time saying anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.'", "treebeard_introduce_4",[]],
   
-  [trp_treebeard, "treebeard_talk", [
+  [trp_treebeard|plyr, "treebeard_introduce_4", [], "Oh, you are an Ent! Legends speak of you and I am honored to be in your presence. I do not wish to impose and will leave if you so wish.", "treebeard_introduce_5",[]],
+   
+  [trp_treebeard, "treebeard_introduce_5", [], "(The stiff-limped giant and his fellow Ents stand still for many minutes in silence while a breeze passes through their leafy hairs and beards. They look at each other for another prolonged moment until an unusually hasty Ent who is resembling a rowan tree seems to want to speak. However, he stays silent until the giant stiff-limped Ent continues:)", "treebeard_questtalk",[]],
+  
+  [trp_treebeard|auto_proceed, "start", [], "ERROR", "treebeard_questtalk",[]],
+  
+  # [trp_treebeard|plyr, "treebeard_introduce_1", [], "Hi, talking tree!", "treebeard_talk",[
+   # (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
+  # ]],
+  # [trp_treebeard|plyr, "treebeard_introduce_1", [], "I'm not a little orc. Goodbye.", "close_window",[]],
+  
+  [trp_treebeard, "treebeard_questtalk", [
                                      (neg|check_quest_active, "qst_treebeard_kill_orcs"),
                                      (quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_current_state, 0),
+                                     (troop_get_type, reg1, "trp_player"),
+                                     (try_begin),
+                                       (is_between, reg1, tf_elf_begin, tf_elf_end),
+                                       (assign, reg1, 0), #elves
+                                     (else_try),
+                                       (assign, reg1, 1), #others
+                                     (try_end),
+                                     (troop_get_slot, reg2, "trp_treebeard", slot_troop_met_previously),
                                     ], 
-  "You might be able to help me with something.^There are orcs chopping down trees in the forest. Kill the little motherfuckers!", "treebeard_quest_brief",[]],
-  [trp_treebeard, "treebeard_talk", [(check_quest_active, "qst_treebeard_kill_orcs"),
-                                     (check_quest_succeeded, "qst_treebeard_kill_orcs"),
-                                    ], 
-  "Excellent! That should stop that terrible song. Have some ent water!", "close_window",[
-    (add_xp_as_reward, 2000),
-    (call_script, "script_change_troop_renown", "trp_player", 20),
-    (troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the orcs
-    (call_script, "script_end_quest", "qst_treebeard_kill_orcs"),
-    (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1), #don't give it again
-  ]],
-  [trp_treebeard, "treebeard_talk", [(check_quest_active, "qst_treebeard_kill_orcs")], 
-  "Those orcs won't kill themselves.", "close_window",[]],
-  
-  [trp_treebeard, "treebeard_talk", [], "See you, very small uruk.", "close_window",[]],
+  "{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Times are not good, ever since the Entwives disappeared - and now there are many evil creatures released by the Dark Lord himself who are trying to destroy our homes. We seek someone who is fast but not hasty. Someone who can help us while we discuss our next moves.^Many bands of orcs have raided the woods and burned down our trees with fire arrows - if you were to defeat the orcs and make sure that they do not threaten the woods we would be grateful and consider you a true friend. Do this and we will talk again.",
+  "treebeard_quest_brief",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1)]],
   
   [trp_treebeard|plyr,"treebeard_quest_brief", [],
-   "Alright. I will kill the little buggers.", "treebeard_quest_taken",
+   "Orcs are vile creatures indeed. I will make sure they do not harm the forest again.", "close_window",
    [(set_spawn_radius,7),
     (spawn_around_party, "p_fangorn_center", "pt_fangorn_orcs"),
     (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_target_party, reg0),
@@ -432,11 +437,47 @@ dialogs = [
     (str_store_string, s2, "@Treebeard wants you find and defeat the orcs cutting down trees in Fangorn."),
     (call_script, "script_start_quest", "qst_treebeard_kill_orcs", "trp_treebeard"),
     ]],
-  [trp_treebeard, "treebeard_quest_taken", [], "Good. And bring me some orc ears when you are done.", "close_window", []],
+  # [trp_treebeard, "treebeard_quest_taken", [], "Good. And bring me some orc ears when you are done.", "close_window", []],
   
   [trp_treebeard|plyr,"treebeard_quest_brief", [],
-   "Sorry. I don't have time for this right now.", "close_window",[]],
+   "Sorry. I don't have time for this right now.", "treebeard_pretalk",[]],
+    
+  [trp_treebeard, "treebeard_questtalk", [(check_quest_active, "qst_treebeard_kill_orcs"),
+                                          (check_quest_succeeded, "qst_treebeard_kill_orcs"),
+                                         ], 
+  "(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'", "close_window",[
+    (add_xp_as_reward, 2000),
+    (call_script, "script_change_troop_renown", "trp_player", 20),
+    (troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the orcs
+    (call_script, "script_end_quest", "qst_treebeard_kill_orcs"),
+    (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1), #don't give it again
+  ]],
   
+  [trp_treebeard, "treebeard_questtalk", [(check_quest_active, "qst_treebeard_kill_orcs")], 
+  "(The stiff-limped giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)", "close_window",[]],
+  
+  [trp_treebeard|auto_proceed, "treebeard_questtalk", [], "ERROR", "treebeard_pretalk",[]],
+  
+  [trp_treebeard, "treebeard_pretalk", [], "Hrooom... What would you like to know, young friend?", "treebeard_talk_response",[]],
+
+  [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me more about you.", "treebeard_about_himself",[]],
+  [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me about the Entwives.", "treebeard_about_entwives",[]],
+  [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me about the Ents.", "treebeard_about_ents",[]],
+  [trp_treebeard|plyr, "treebeard_talk_response", [], "Never mind, goodbye.", "close_window",[]],
+  
+  [trp_treebeard, "treebeard_about_himself", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_current_state, 0)],
+    "(The Ent leader looks distant and solemn. After a while he slowly says:)^'Don't be hasty... we can talk more about this when the woods are safe from the orcs.'", "treebeard_pretalk",[]],
+  [trp_treebeard, "treebeard_about_himself", [],
+    "Hrooom... I am the oldest of my kind hmmm... I am known as Treebeard by a few mortals and the Elves call me Fangorn. Hummm... I, Skinbark and Leaflock are the only Ents who have walked the forests before the Darkness. I am no longer very bendable as I used to be... young Quickbeam can bend and sway, like a slender tree in the wind... Hummm... If the Entwives were here...", "treebeard_pretalk",[]],
+
+  [trp_treebeard, "treebeard_about_entwives", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_current_state, 0)],
+    "(The Ent leader suddenly gets an expression of sadness and his voice is unusually deep.)^'Hummm... This is a sad tale... when the woods are free from the orcs we can discuss this.'", "treebeard_pretalk",[]],
+ [trp_treebeard, "treebeard_about_entwives", [],
+    "Ahummm... the beautiful Entwives... they like to plant and grow... we should have listened more to them... Hrooom... then they left to the Brown Lands to plant gardens and they taught mortals about making the lands fertile... we used to visit them... until... Sauron attacked... the Entwives are now lost... Hummm... Fimbrethil... her hue of ripe grain... we have looked for them... but not found them... yet...", "treebeard_pretalk",[]],
+    
+ [trp_treebeard, "treebeard_about_ents", [],
+    "Hrooom... We are shephards of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.", "treebeard_pretalk",[]],
+
 #  [trp_treebeard|plyr, "treebeard_talk_1", [], "Troll me, troll.", "treebeard_talk_2",[]],
   # [trp_treebeard|plyr, "treebeard_talk_1", [], "Likewise.", "close_window",[]],
   
@@ -11729,12 +11770,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "Kill now! Eat later!", "close_window",[(encounter_attack)]],
  
   [party_tpl|pt_fangorn_orcs,"start", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_target_party, "$g_encountered_party")],
-   "I'm a lumberjack and I'm okay, I sleep all night and I work all day.", "fangorn_orcs_intro_1",[]],
+   "Eh? The Old Man won't be happy if you interrupt the work of his servants.", "fangorn_orcs_intro_1",[]],
   [anyone|plyr,"fangorn_orcs_intro_1", [],
-   "He's a lumberjack and he's okay, he sleeps all night and he works all day!",
+   "Stop harming this forest and leave, or you'll regret it!",
    "fangorn_orcs_intro_2", []],
   [anyone,"fangorn_orcs_intro_2", [],
-   "I cut down trees, I wear high heels... Hey! No unauthorized singing!", "close_window",[(encounter_attack)]],
+   "Har-har! We'll cut and burn as we please! After we are done with you.", "close_window",[(encounter_attack)]],
  
 
   [party_tpl|pt_rescued_prisoners,"start", [(eq,"$talk_context",tc_party_encounter)], "Do you want us to follow you?", "disbanded_troop_ask",[]],
