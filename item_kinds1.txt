@@ -599,6 +599,15 @@ itemsfile version 2
  itm_gon_knight Gondor_Heavy_Mail_and_Cloak Gondor_Heavy_Mail_and_Cloak 1  gondor_knight 0  16842765 0 1295 0 17.000000 100 0 45 12 0 0 0 0 0 0 0 0
 0
 
+ itm_gon_steward_guard Gondor_Steward_Guard_Armor Gondor_Steward_Guard_Armor 1  gondor_steward_guard 0  16842765 0 1720 0 22.000000 100 0 48 14 0 0 0 0 0 0 0 0
+0
+
+ itm_gon_tower_guard Gondor_Tower_Guard_Armor Gondor_Tower_Guard_Armor 1  gondor_tower_guard 0  16842765 0 1720 0 22.000000 100 0 48 14 0 0 0 0 0 0 0 0
+0
+
+ itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gon_tower_knight 0  16842765 0 1820 0 22.000000 100 0 49 15 0 0 0 0 0 0 0 0
+0
+
  itm_gon_ranger_cloak Gondor_Ranger_Cloak Gondor_Ranger_Cloak 1  gondor_ranger_cloak 0  16842765 0 830 0 10.000000 100 0 25 8 0 0 0 0 0 0 0 0
 0
 
@@ -2523,19 +2532,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_3A 0  4097 0 400 41876193280 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
- itm_sword_of_arathorn Sword_of_Arathorn Sword_of_Arathorn 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  71307267 9223635954298781951 294 0 2.000000 100 0 0 0 0 36864 99 0 96 0 283 36
+ itm_sword_of_arathorn Arathorn's_Sword Arathorn's_Sword 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  71307267 9223635954298781951 294 0 2.000000 100 0 0 0 0 36864 99 0 96 0 283 36
 0
 
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 0 12.000000 100 2 50 20 0 0 0 0 0 0 0 0
-0
-
- itm_gon_steward_guard Gondor_Steward_Guard_Armor Gondor_Steward_Guard_Armor 1  gondor_steward_guard 0  16777229 0 1720 0 22.000000 100 0 48 14 0 0 0 0 0 0 0 0
-0
-
- itm_gon_tower_guard Gondor_Tower_Guard_Armor Gondor_Tower_Guard_Armor 1  gondor_tower_guard 0  16777229 0 1720 0 22.000000 100 0 48 14 0 0 0 0 0 0 0 0
-0
-
- itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gon_tower_knight 0  16777229 0 1820 0 22.000000 100 0 49 15 0 0 0 0 0 0 0 0
 0
 
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
