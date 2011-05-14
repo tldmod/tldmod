@@ -1529,6 +1529,7 @@ triggers = [
 	(try_begin),
 	  (eq, "$g_player_is_captive", 0),
 	  (eq,":inside_fangorn",1),
+      (troop_slot_eq, "trp_treebeard", slot_troop_met_previously, 0), # and didn't meet Treabeard
 	  #(assign,reg5,"$g_fangorn_rope_pulled"),
       (try_begin),
         (lt, "$g_fangorn_rope_pulled", 25),
