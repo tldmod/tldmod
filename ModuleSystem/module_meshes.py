@@ -58,6 +58,12 @@ meshes = [
   ("town_harad"         , 0, "town_harad", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_lossarnach"    , 0, "town_lossarnach", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_rhun_north"    , 0, "town_rhun_north", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_henneth_annun" , 0, "town_henneth_annun", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_khand"         , 0, "town_khand", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_rhun"          , 0, "town_rhun", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_goodcamp"      , 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_evilcamp"      , 0, "town_evilcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_cair_andros"   , 0, "town_cair_andros", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("pic_prisoner_man", 0, "pic_prisoner_man", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_prisoner_fem", 0, "pic_prisoner_fem", 0, 0, 0, 0, 0, 0, 1, 1, 1),
