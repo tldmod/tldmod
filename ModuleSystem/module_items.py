@@ -1171,7 +1171,7 @@ items =[
 ["torque_reward","Evil_Torque",[("reward_torque",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["orc_brew","Orc_Brew",[("orc_brew",0)],itp_unique|itp_type_goods,0,1000,weight(1.5)|abundance(0)|0,imodbits_none],
 ["rohan_saddle","Saddle_of_Thengel",[("RohanSaddle",0)],itp_unique|itp_type_goods,0,5000,weight(4)|abundance(0)|0,imodbits_none],
-["mearas_reward","Mearh_Stallion",[("courser",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(60)|difficulty(2)|horse_speed(45)|horse_maneuver(40)|horse_charge(40),imodbits_horse_basic|0],
+["mearas_reward","Mearh_Stallion",[("mearh",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(60)|difficulty(2)|horse_speed(45)|horse_maneuver(40)|horse_charge(40),imodbits_horse_basic|0],
 ["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
 ["sword_of_arathorn","Arathorn's_Sword",[("aragorn_sword",0),("scab_aragorn_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,294,weight(2.05)|difficulty(0)|spd_rtng(99)|weapon_length(96)|swing_damage(36,cut)|thrust_damage(27,pierce),imodbits_sword_high],
 ["riv_armor_reward","Rivendell_Decorated_Armor",[("rivendellrewardarmour",0)],itp_type_body_armor|itp_covers_legs|0,0,6000,weight(12)|head_armor(2)|body_armor(50)|leg_armor(20)|difficulty(0),imodbits_armor,],

@@ -1545,14 +1545,14 @@ game_menus = [
      (troop_raise_skill, "trp_player",skl_engineer,10),
      (troop_add_gold, "trp_player", 1000000),
 	 (troop_set_health, "trp_player", 100),
-     (troop_add_item, "trp_player","itm_gondor_lance",0), #imod_balanced
-     (troop_add_item, "trp_player","itm_gondor_shield_e",0), #imod_reinforced
-     (troop_add_item, "trp_player","itm_gondor_ranger_sword",imod_masterwork), #imod_masterwork
+     (troop_add_item, "trp_player","itm_gondor_lance",imod_balanced),
+     (troop_add_item, "trp_player","itm_gondor_shield_e",imod_reinforced),
+     (troop_add_item, "trp_player","itm_gondor_ranger_sword",imod_masterwork),
      (troop_add_item, "trp_player","itm_gondor_hunter",imod_champion),
-     (troop_add_item, "trp_player","itm_riv_helm_c",0), #imod_lordly
-     (troop_add_item, "trp_player","itm_gon_tower_knight",0), #imod_lordly
-     (troop_add_item, "trp_player","itm_mail_mittens",0), #imod_lordly
-     (troop_add_item, "trp_player","itm_dol_greaves",0), #imod_lordly
+     (troop_add_item, "trp_player","itm_riv_helm_c",imod_lordly),
+     (troop_add_item, "trp_player","itm_gon_tower_knight",imod_lordly),
+     (troop_add_item, "trp_player","itm_mail_mittens",imod_lordly),
+     (troop_add_item, "trp_player","itm_dol_greaves",imod_lordly),
      (troop_add_items, "trp_player","itm_lembas",3),
      (troop_add_items, "trp_player","itm_map",3),
      (troop_equip_items, "trp_player"),

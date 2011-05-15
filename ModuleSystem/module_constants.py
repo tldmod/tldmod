@@ -1245,6 +1245,11 @@ debug_point_4 = (1106, "@DEBUG: Routine 4", 0xffff00ff)
 
 debug_color = 0xff00ff
 
+# color-coded item descriptions
+color_item_text_normal = 0xFFEEDD
+color_item_text_morale = 0x4444FF
+color_item_text_bonus = 0xE066FF
+
 # color-coded messages
 color_good_news = 0x50FF50
 color_bad_news = 0xFF5050

@@ -1,4 +1,4 @@
-797
+801
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -117,13 +117,17 @@ qstr_+1_to_Weapon_Mastery +1_to_Weapon_Mastery
 qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
 qstr_+1_to_Tactics +1_to_Tactics
 qstr_+1_to_Power_Strike +1_to_Power_Strike
+qstr_when_equipped when_equipped
 qstr_+1_to_Strength +1_to_Strength
 qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_+1_to_Trainer +1_to_Trainer
 qstr_+1_to_Charisma +1_to_Charisma
+qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Persuasion +1_to_Persuasion
+qstr_+1_to_Ironflesh +1_to_Ironflesh
+qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
