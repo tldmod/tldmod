@@ -2254,8 +2254,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  
 #### TLD shop/bar rumors
 ("default_rumor", "The War. Everybody is talking about the war."),
-# Rohan
-("rohan_rumor_begin", "It breaks my heart to see my babies off to war!  But without them the men would have to walk."),
+#Rohan
+#general idea=Enthusiastic about their horseplay and way of life, angry with Saruman.
+("rohan_rumor_begin", "It breaks my heart to see my babies off to war! But without them the men would have to walk."),
 ("rohan_rumor_2", "I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course."),
 ("rohan_rumor_3", "There are no horses finer than Rohan's. Even the Elves get their horses from us!"),
 ("rohan_rumor_4", "If you can heal men, please treat my horses with just as much care should they be wounded."),
@@ -2266,41 +2267,42 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rohan_rumor_9", "Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over."),
 ("rohan_rumor_10", "Being the best horsemen in the realm starts with raising the best horses."),
 ("rohan_rumor_11", "Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour."),
-("rohan_rumor_12", "We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small."),
+("rohan_rumor_12", "We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small."), #maybe we could do the whole endless Borat thing here, with player only being able to say "Yes" until the guy is finished. http://www.youtube.com/watch?v=i_KH28KuZ3I
 ("rohan_rumor_13", "Saruman's orcs are nasty but don't wear much protection. They're no match for a good axe."),
 ("rohan_rumor_14", "Our throwing axes and spears may seem bulky, but how many chances do you have to throw a missile before you ride down the foe? Make it count by throwing something with some heft."),
 ("rohan_rumor_15", "Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher."),
 ("rohan_rumor_16", "Gondor practices archery. We practice horse archery. Dunlendings practice neither."),
 ("rohan_rumor_17", "Many of Saruman's orcs are deadly archers. Many are not. A wise cavalry commander shouldn't wait to discover which is which."),
-("rohan_rumor_18", "We are all friends here. Or should be; for the laughter of Mordor will be our only reward, if we quarrel."),
-("rohan_rumor_19", "Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world."),
-
+("rohan_rumor_18", "We are all friends here. Or should be; for the laughter of Mordor will be our only reward, if we quarrel."), #Gandalf quote
+("rohan_rumor_19", "Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world."), #Theoden quote
+#Gondor
+#general idea: Gloom, spread from depressive Denethor downwards gripping the hearts of Gondorians
 ("gondor_rumor_begin", "Gondor has no king and enemies are at the doorstep. The shadow grows in the east. Things do not look good."),
 ("gondor_rumor_2", "In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?"),
 ("gondor_rumor_3", "Mordor is a dry, infertile land. What do the creatures there eat? Surely not one another? Or maybe..."),
 ("gondor_rumor_4", "We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain."),
 ("gondor_rumor_5", "The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour."),
 ("gondor_rumor_6", "We know of the elves in the north, but nowadays noone gets to see them anymore."),
-("gondor_rumor_7", "I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens."),
+("gondor_rumor_7", "I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens."), #Faramir quote
 ("gondor_rumor_8", "Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?"),
-("gondor_rumor_9", "War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend."),
-("gondor_rumor_10", "Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea."),
+("gondor_rumor_9", "War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend."), #Faramir quote
+("gondor_rumor_10", "Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea."), #The Fall of Gil-galad poem
 ("gondor_rumor_11", "Dol Guldur? Never heard of it."),
 ("gondor_rumor_12", "Moria? The dwarves mine there, don't they?"),
 ("gondor_rumor_13", "Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left."),
 ("gondor_rumor_14", "People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes."),
-("gondor_rumor_15", "The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told, that our soldiers are to protect the heart of the realm."),
-("gondor_rumor_16", "My brother is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me."),
+("gondor_rumor_15", "The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm."),
+("gondor_rumor_16", "My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me."), #:) I like
 ("gondor_rumor_17", "There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock."),
-("gondor_rumor_18", "We are truth-speakers, we men of Gondor. We boast seldom, and then perform or die trying."),
+("gondor_rumor_18", "We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt."), #Faramir quote.
 #Erebor
 #general idea: greedy, grubby, grumpy comic releif dwarves
 ("dwarf_rumor_begin", "They ask us if dwarves have any friends. Of course we have friends. But we don't like them."), #A variation on an old joke about Slovenians.
 ("dwarf_rumor_2", "Orcs? Pfft! Axe-grease, all they are."),
 ("dwarf_rumor_3", "What's that you're wearing? It doesn't look like it would protect you from a bee sting. And it looks funny."),
 ("dwarf_rumor_4", "Of course we can ride horses. We just don't want to!"),
-("dwarf_rumor_5", "Bugger off! We don't need your kind around here, the orcs are bad enough."),
-("dwarf_rumor_6", "Who are you calling short? You think the view is so much different from up there?"),
+("dwarf_rumor_5", "Bugger off! We don't need your sort around here, the orcs are bad enough."),
+("dwarf_rumor_6", "Who are you calling short?"),
 ("dwarf_rumor_7", "You should see the caves of Hornburg. If we could only mine all the gems there..."),
 ("dwarf_rumor_8", "No word from our brothers in Moria for a while now. I bet they just want to keep all the riches to themselves!"),
 ("dwarf_rumor_9", "Elves? What have the elves ever done for us? Ok, healing arts, but besides that? Ok, some smithing techniques, but anything else? Ok, they fight the Shadow, but besides what have they really ever done for us, I ask you?"), #Monty Python paraphrase
@@ -2385,7 +2387,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("dunland_rumor_12", "My forefathers fought with Freca and later Wulf against the bloodied Forgoil. We remember their courage."),
 #Beornings/Woodsmen
 #general idea= haughty, happy types, somewhat detached from the wars
-("beorn_rumor_begin", "The woods are vast and quiet."),
+("beorn_rumor_begin", "The woods are vast and all manner of creatures live inside."),
 ("beorn_rumor_2", "Wild bees make the best honey!"),
 ("beorn_rumor_3", "Elves are elusive, but kind. Dwarves are loud and cheerful. Men of Dale are hardworking."),
 ("beorn_rumor_4", "We see many strange beasts passing through the lands."),
@@ -2397,7 +2399,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("beorn_rumor_10", "Men of Rohan are our kin, bears are our blood, goblins are our prey!"),
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
-("beorn_rumor_13", "*GROWLS*   Do you have any honey on ya?"),
+("beorn_rumor_13", "*GROWLS*   Do you have any honey?"),
 #Lothlorien
 #general idea= Merl? Marco? - slight depression about shit that's going down, thoughts about leaving this goddamn continent mixed with semi-confident feeling of safety in the woods.
 ("lorien_rumor_begin", "O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. "), #Galadriel's Song of Eldamar
@@ -2457,9 +2459,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("harad_rumor_10", "Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant."),
 ("harad_rumor_11", "In Harad we have deserts and jungles, mountains and sea. Our peoples are as diverse as our lands and as numerous as the grains of sand."),
 ("harad_rumor_12", "Many knights from Harondor prefer sabres over straight blades. They're quite good for cutting down running peasants, but you need a spear or a good sword to penetrate strong armour."),
-("harad_rumor_13", "My blood brother signed up with the Karka - he's a scout now. Riders of The Fang lead a dangerous life, but it is good experience for young hot-headed boys."),
+("harad_rumor_13", "My blood brother signed up with the Karka - he's a scout now. Riders of 'The Fang' lead a dangerous life, but it is good experience for young hot-headed boys."),
 ("harad_rumor_14", "Don't ever pick a fight with the Lion brotherhood! Their reputation is well earned."),
-("harad_rumor_15", "I wish we had more weapons made of black iron. So many still have to manage with bronze, some even with wooden clubs and javelins of black glass, running into battle naked."),
+("harad_rumor_15", "I wish we had more weapons made of black iron. Many still have to manage with bronze, some even with wooden clubs and javelins of black glass, running into battle naked."),
 #Mt.Gundabad
 # orcs from cold north in search for warmer places?
 ("gunda_rumor_begin", "Take warm lands from men we come!"),
@@ -2476,12 +2478,12 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #Moria
 #terror from the deep?
 ("moria_rumor_begin", "When you hear drums - run and hide!"),
-("moria_rumor_2", "Ghâsh is in the deep"),
+("moria_rumor_2", "Ghâsh is in the deep!"),
 ("moria_rumor_3", "Doom! Doom! Doom! Drums of the deep."),
 ("moria_rumor_4", "Moria is big, but no dwarves hide in it anymore."),
 ("moria_rumor_5", "Dwarves dug too deep. All the better for us. Ha ha ha!"),
 ("moria_rumor_6", "Many tunnels in Moria. We don't go to all."),
-("moria_rumor_7", "Some manlings and dwarves sneaked past our sentries a while ago. We doubled the watch since."),
+("moria_rumor_7", "Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since."),
 ("moria_rumor_8", "Dwarves will never set foot here again! Ever!"),
 ("moria_rumor_9", "When we gather enough troops, we will go and burn down woods of elves."),
 ("moria_rumor_10", "Not much food in Moria. We're hungry. Must catch men and elves!"),

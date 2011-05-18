@@ -225,7 +225,7 @@ urukhai 0
 
  1  orc_hair_ears 
  1  orc_hair_ears 
- 3  face_uruk_a 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_b 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_c 4294967295 1 1  orc_hair_ears  4294967295 
+ 3  face_urukhai_a 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_b 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_c 4294967295 1 1  orc_hair_ears  4294967295 
  6  0 snd_orc_die  1 snd_orc_hit  2 snd_orc_grunt  3 snd_orc_grunt_long  4 snd_orc_yell  6 snd_orc_victory 
  skel_uruk 1.000000 
 4 5
@@ -256,7 +256,7 @@ uruk 0
 
  1  orc_hair_ears 
  1  orc_hair_ears 
- 3  face_urukhai_a 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_b 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_c 4294967295 1 1  orc_hair_ears  4294967295 
+ 3  face_uruk_a 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_b 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_c 4294967295 1 1  orc_hair_ears  4294967295 
  6  0 snd_orc_die  1 snd_orc_hit  2 snd_orc_grunt  3 snd_orc_grunt_long  4 snd_orc_yell  6 snd_orc_victory 
  skel_uruk 0.900000 
 4 5

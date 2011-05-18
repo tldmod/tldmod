@@ -393,9 +393,9 @@ skins = [
     ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
     ["orc_hair_ears"], #hair textures
     ["orc_hair_ears"], #beard_materials
-	[("face_uruk_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),
-     ("face_uruk_b",0xffffffff,["orc_hair_ears"],[0xffffffff]),
-     ("face_uruk_c",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
+	[("face_urukhai_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
+     ("face_urukhai_b",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
+     ("face_urukhai_c",0xffffffff,["orc_hair_ears"],[0xffffffff]), 
      ], #man_face_textures,
     [(voice_die,"snd_orc_die"),(voice_hit,"snd_orc_hit"),(voice_grunt,"snd_orc_grunt"),(voice_grunt_long,"snd_orc_grunt_long"),(voice_yell,"snd_orc_yell"),(voice_victory,"snd_orc_victory")], #voice sounds
     "skel_uruk", 1.0,
@@ -419,9 +419,9 @@ skins = [
     ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
     ["orc_hair_ears"], #hair textures
     ["orc_hair_ears"], #beard_materials
-	[("face_urukhai_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
-     ("face_urukhai_b",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
-     ("face_urukhai_c",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
+	[("face_uruk_a",0xffffffff,["orc_hair_ears"],[0xffffffff]),
+     ("face_uruk_b",0xffffffff,["orc_hair_ears"],[0xffffffff]),
+     ("face_uruk_c",0xffffffff,["orc_hair_ears"],[0xffffffff]),     
      ], #man_face_textures,
     [(voice_die,"snd_orc_die"),(voice_hit,"snd_orc_hit"),(voice_grunt,"snd_orc_grunt"),(voice_grunt_long,"snd_orc_grunt_long"),(voice_yell,"snd_orc_yell"),(voice_victory,"snd_orc_victory")], #voice sounds
     "skel_uruk", 0.9,
