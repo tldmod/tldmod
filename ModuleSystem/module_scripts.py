@@ -1144,11 +1144,7 @@ scripts = [
 
   #############################  TLD FANGORN SCRIPTS  END ##############################
   
-  
-  
-  ######################################################################################
   ##############################  GAME START MEGASCRIPT  ###############################
-  ######################################################################################
   
   #script_game_start:
   # This script is called when a new game is started
@@ -1178,8 +1174,7 @@ scripts = [
       (troop_set_slot, "trp_player", slot_troop_custom_banner_charge_color_2, 0xFFFFFFFF),
       (troop_set_slot, "trp_player", slot_troop_custom_banner_charge_color_3, 0xFFFFFFFF),
       (troop_set_slot, "trp_player", slot_troop_custom_banner_charge_color_4, 0xFFFFFFFF),
-	  
-	  (troop_set_type, "trp_gondor_lord" , 16),  # test!!!
+#	  (troop_set_type, "trp_gondor_lord" , 16),  # test!!!
 
 
     # TLD: Initialize faction rank
@@ -1236,11 +1231,6 @@ scripts = [
 
 # culture troop slots
 	  ]+[
-      # (faction_set_slot, faction_init[x][0], slot_faction_tier_1_troop,  faction_init[x][4][0])  for x in range(len(faction_init)) ]+[
-      # (faction_set_slot, faction_init[x][0], slot_faction_tier_2_troop,  faction_init[x][4][1])  for x in range(len(faction_init)) ]+[
-      # (faction_set_slot, faction_init[x][0], slot_faction_tier_3_troop,  faction_init[x][4][2])  for x in range(len(faction_init)) ]+[
-      # (faction_set_slot, faction_init[x][0], slot_faction_tier_4_troop,  faction_init[x][4][3])  for x in range(len(faction_init)) ]+[
-      # (faction_set_slot, faction_init[x][0], slot_faction_tier_5_troop,  faction_init[x][4][4])  for x in range(len(faction_init)) ]+[      
 # Faction init from data in module_constants.py
 # War system (foxyman)
       (faction_set_slot, faction_init[x][0], slot_faction_strength        , faction_init[x][1])     for x in range(len(faction_init)) ]+[
@@ -1830,50 +1820,21 @@ scripts = [
        (assign, "$new_encounter", 1), #check this in the menu.
        (try_begin),
          (lt, "$g_encountered_party_2",0), #Normal encounter. Not battle or siege.
-         (try_begin),
-           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-           (jump_to_menu, "mnu_castle_outside"),
-         (else_try),
-           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-           (jump_to_menu, "mnu_castle_outside"),
-         (else_try),
-           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_ship),
-           (jump_to_menu, "mnu_ship_reembark"),
-         (else_try),
-           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_village),
-           (jump_to_menu, "mnu_village"),
-         (else_try),
-           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),
-           (jump_to_menu, "mnu_cattle_herd"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_zendar"),
-           (jump_to_menu, "mnu_zendar"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_salt_mine"),
-           (jump_to_menu, "mnu_salt_mine"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_four_ways_inn"),
-           (jump_to_menu, "mnu_four_ways_inn"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_test_scene"),
-           (jump_to_menu, "mnu_test_scene"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_battlefields"),
-           (jump_to_menu, "mnu_battlefields"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_training_ground"),
-           (jump_to_menu, "mnu_tutorial"),
-         (else_try),
-           (eq, "$g_encountered_party", "p_camp_bandits"),
-           (jump_to_menu, "mnu_camp"),
-         (else_try),
-           (eq, "$g_encountered_party_template", "pt_ruins"), #TLD ruins
-           (jump_to_menu, "mnu_ruins"),
-         (else_try),
-           (eq, "$g_encountered_party_template", "pt_legendary_place"), #TLD legendary places
-           (jump_to_menu, "mnu_legendary_place"),
-         (else_try),
-           (jump_to_menu, "mnu_simple_encounter"),
+         (try_begin),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town       ),(jump_to_menu, "mnu_castle_outside"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle     ),(jump_to_menu, "mnu_castle_outside"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_ship       ),(jump_to_menu, "mnu_ship_reembark"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_village    ),(jump_to_menu, "mnu_village"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
+          (else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
+          (else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
+          (else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
+          (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
+          (else_try),(eq, "$g_encountered_party", "p_battlefields"   ),(jump_to_menu, "mnu_battlefields"),
+          (else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),
+          (else_try),(eq, "$g_encountered_party", "p_camp_bandits"   ),(jump_to_menu, "mnu_camp"),
+          (else_try),(eq, "$g_encountered_party_template", "pt_ruins"),(jump_to_menu, "mnu_ruins"), #TLD ruins
+          (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
+          (else_try),(jump_to_menu, "mnu_simple_encounter"),
          (try_end),
        (else_try), #Battle or siege
          (try_begin),
@@ -19527,7 +19488,7 @@ scripts = [
          (faction_get_slot,":faction_side",":faction",slot_faction_side),
 		 (try_begin),
             (eq,":faction_side",faction_side_good),
-			(store_random_in_range,":string","str_good_rumor_begin","str_evil_rumor_begin"),
+			(store_random_in_range,":string","str_good_rumor_begin","str_evil_rumor_begin"), #good guys get good and neutral rumors
          (else_try),
 			(store_random_in_range,":string","str_neutral_rumor_begin","str_legendary_rumor_begin"),
          (try_end),

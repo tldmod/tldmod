@@ -1984,5 +1984,6 @@ scene_props = [
 ("elf_waterplant", 0, "waterplant", "0", []),
 ("elf_statue", 0, "statue", "0", []),
 ("distant_mountain_mordor",sokf_place_at_origin|sokf_moveable,"mountains_outer_mordor","0",[]),
+("tunnel_henneth_annun",0,"mesh_henneth_annun","bo_henneth_annun",[]),
 
 ]

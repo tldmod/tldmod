@@ -208,3 +208,4 @@ scn_battlefield9 = 206
 scn_battlefield10 = 207
 scn_small_ford = 208
 scn_hornburg_castle = 209
+scn_morannon_castle = 210

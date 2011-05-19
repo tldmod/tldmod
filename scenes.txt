@@ -1,5 +1,5 @@
 scenesfile version 1
- 210
+ 211
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -58,7 +58,7 @@ scn_random_scene_desert_forest random_scene_desert_forest 1792 none none 0.00000
  outer_terrain_forest 
 scn_camp_scene camp_scene 256 none none 0.000000 0.000000 100.000000 100.000000 -0.500000 0x000000003004cd26800354d70000618700003c3300007a8c 
   0 
-  2  756  757 
+  2  757  758 
  outer_terrain_plain 
 scn_camp_scene_horse_track camp_scene_horse_track 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x300028000003e8fa0000034e00004b34000059be 
   0 
@@ -174,7 +174,7 @@ scn_reserved12 reserved12 1 thirsty_lion bo_thirsty_lion -100.000000 -100.000000
  0 
 scn_training_ground training_ground 256 none none 0.000000 0.000000 120.000000 120.000000 -100.000000 0x30000500400360d80000189f00002a8380006d91 
   0 
-  2  751  752 
+  2  752  753 
  outer_terrain_plain 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
@@ -238,11 +238,11 @@ scn_training_ground_ranged_melee_5 training_ground_ranged_melee_5 256 none none 
  outer_terrain_plain 
 scn_zendar_center zendar_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x300bc5430001e0780000448a0000049f00007932 
   3  60  0  61 
-  1  754 
+  1  755 
  outer_terrain_plain 
 scn_the_happy_boar the_happy_boar 1 interior_town_house_i bo_interior_town_house_i -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  59 
-  1  750 
+  1  751 
  0 
 scn_zendar_merchant zendar_merchant 1 interior_town_house_i bo_interior_town_house_i -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
@@ -840,3 +840,7 @@ scn_hornburg_castle hornburg_castle 256 none none 0.000000 0.000000 100.000000 1
   0 
   0 
  0 
+scn_morannon_castle morannon_castle 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2west_mordor 

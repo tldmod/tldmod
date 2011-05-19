@@ -221,7 +221,7 @@ skins = [
     ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
     ("manface_rugged"  ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
  #   ("manface_young_4",0xffe0e8e8,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff007080c]),
-    ("manface_african" ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
+ #   ("manface_african" ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
   #  ("manface_old_2",0xffd5d5c5,["hair_white"],[0xffffcded, 0xffbbcded, 0xff99eebb]),
     ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
@@ -250,7 +250,7 @@ skins = [
      ("womanface_b"      ,0xffdfdfdf,["hair_blonde"],[0xffa5481f, 0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("womanface_a"      ,0xffe8dfe5,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("womanface_brown"  ,0xffaf9f7e,["hair_blonde"],[0xff19100c, 0xff0c0d19, 0xff07080c]),
-     ("womanface_african",0xff808080,["hair_blonde"],[0xff120808, 0xff07080c]),
+#     ("womanface_african",0xff808080,["hair_blonde"],[0xff120808, 0xff07080c]),
 #     ("womanface_midage",0xffe5eaf0,["hair_black","hair_brunette","hair_red","hair_white"],[0xffffcded, 0xffbbcded, 0xff99eebb]),
      ],#woman_face_textures
     [(voice_die,"snd_woman_die"),(voice_hit,"snd_woman_hit")], #voice sounds
@@ -274,7 +274,7 @@ skins = [
      ("manface_7"       ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("manface_rugged"  ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("manface_african" ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
+#     ("manface_african" ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_gondor_yell"),(voice_victory,"snd_gondor_victory")], #voice sounds
     "skel_human", 1.0,
@@ -329,21 +329,21 @@ skins = [
     ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("manface_young_2"   ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
+    [#("manface_young_2"   ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
      ("manface_midage"    ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("manface_young"     ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("manface_young_3"   ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("manface_7"         ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("manface_midage_2"  ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
+#     ("manface_young"     ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+#     ("manface_young_3"   ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
+#     ("manface_7"         ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
+#     ("manface_midage_2"  ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("manface_rugged"    ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("berserker_face_a"  ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
      ("berserker_face_b"  ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
      ("berserker_face_c"  ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
      ("wildman_face_a"    ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ("wildman_face_b"    ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("east_bandit_face_a",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     ("east_bandit_face_b",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("east_bandit_face_c",0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
+#     ("east_bandit_face_a",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
+#     ("east_bandit_face_b",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
+#     ("east_bandit_face_c",0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_dunlender_yell"),(voice_victory,"snd_dunlender_victory")], #voice sounds
     "skel_human", 0.8,
@@ -630,14 +630,14 @@ skins = [
     ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("manface_young_2"   ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
-     ("manface_midage"    ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("manface_young"     ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("manface_young_3"   ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("manface_7"         ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("manface_midage_2"  ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
-     ("manface_rugged"    ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ("manface_african"   ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
+    [#("manface_young_2"   ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
+#     ("manface_midage"    ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+#     ("manface_young"     ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+#     ("manface_young_3"   ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
+#     ("manface_7"         ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
+#     ("manface_midage_2"  ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
+#     ("manface_rugged"    ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
+#     ("manface_african"   ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ("mordor_face_a"     ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("mordor_face_b"     ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ("berserker_face_a"  ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19]),
@@ -648,8 +648,6 @@ skins = [
      ("face_camo_c"       ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("face_camo_d"       ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("face_camo_e"       ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
-     ("wildman_face_a"    ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("wildman_face_b"    ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("east_bandit_face_a",0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
      ("east_bandit_face_b",0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("east_bandit_face_c",0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     

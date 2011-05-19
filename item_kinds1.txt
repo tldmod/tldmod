@@ -30,13 +30,13 @@ itemsfile version 2
  itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
+ itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  smoked_meat 0  34144267 0 72 0 15.000000 100 50 0 0 0 0 0 0 0 50 0 0
+0
+
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_dried_meat Dried_Meat Dried_Meat 1  smoked_meat 0  34144267 0 72 0 15.000000 100 60 0 0 0 0 0 0 0 50 0 0
-0
-
- itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  smoked_meat 0  34144267 0 72 0 15.000000 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_cattle_meat Beef Beef 1  raw_meat 0  34144267 0 103 0 20.000000 100 70 0 0 0 0 0 0 0 70 0 0
@@ -1113,7 +1113,7 @@ itemsfile version 2
  itm_isengard_mallet Isengard_Mallet Isengard_Mallet 1  isengard_mallet 0  6750212 9223635919670608096 101 0 7.000000 100 0 0 0 0 35840 82 0 83 0 256 547
 0
 
- itm_isengard_heavy_axe Isengard_Heavy_Axe Isengard_Heavy_Axe 1  isengard_heavy_axe 0  73728004 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 116 0 256 35
+ itm_isengard_heavy_axe Isengard_Heavy_Axe Isengard_Heavy_Axe 1  isengard_heavy_axe 0  342163460 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 116 0 256 35
 0
 
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  73728003 9223635919939043552 110 0 4.500000 100 0 0 0 0 40960 90 0 102 0 256 40
@@ -1658,7 +1658,7 @@ itemsfile version 2
  itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 500 0 15.000000 100 0 52 16 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  4554756 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 101 0 148 0 291 532
+ itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  272990212 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 101 0 148 0 291 532
 0
 
  itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 4222124851987200 290 0 2.500000 100 0 0 0 0 20480 99 0 150 0 287 532
@@ -1940,19 +1940,19 @@ itemsfile version 2
  itm_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  73728004 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 109 0 256 35
+ itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  342163460 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 109 0 256 35
 0
 
- itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  73728004 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 96 0 256 35
+ itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  342163460 9223635923965575392 129 0 4.500000 100 0 0 0 0 35840 87 0 96 0 256 35
 0
 
- itm_khand_halberd Khand_Halberd Khand_Halberd 1  Khand_Weapon_Halberd 0  6651908 4222129146954496 352 0 4.500000 100 0 0 0 0 38912 88 0 164 0 277 38
+ itm_khand_halberd Khand_Halberd Khand_Halberd 1  Khand_Weapon_Halberd 0  275087364 4222129146954496 352 0 4.500000 100 0 0 0 0 38912 88 0 164 0 277 38
 0
 
- itm_khand_trident Khand_Trident Khand_Trident 1  Khand_Weapon_Trident 0  6651908 4222129146954496 352 0 4.500000 100 0 0 0 0 28672 88 0 164 0 291 28
+ itm_khand_trident Khand_Trident Khand_Trident 1  Khand_Weapon_Trident 0  275087364 4222129146954496 352 0 4.500000 100 0 0 0 0 28672 88 0 164 0 291 28
 0
 
- itm_khand_voulge Khand_Voulge Khand_Voulge 1  Khand_Weapon_Voulge 0  6651908 4222129146954496 352 0 4.500000 100 0 0 0 0 38912 88 0 126 0 277 38
+ itm_khand_voulge Khand_Voulge Khand_Voulge 1  Khand_Weapon_Voulge 0  275087364 4222129146954496 352 0 4.500000 100 0 0 0 0 38912 88 0 126 0 277 38
 0
 
  itm_khand_mace1 Khand_Mace Khand_Mace 1  Khand_Weapon_Mace1 0  4521986 9223388532775583758 122 0 3.500000 100 0 0 0 0 21504 99 0 77 0 256 533
@@ -2348,19 +2348,19 @@ itemsfile version 2
  itm_dwarf_sword_d Dwarf_Sword Dwarf_Sword 2  dwarf_sword_d 0  scab_dwarf_sword_d 3458764513820540928  4259842 9223388564987838479 280 0 1.250000 100 0 0 0 0 29696 103 0 58 0 277 29
 0
 
- itm_dwarf_adz Dwarf_Adz Dwarf_Adz 1  dwarf_adz 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 68 0 256 43
+ itm_dwarf_adz Dwarf_Adz Dwarf_Adz 1  dwarf_adz 0  342163460 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 68 0 256 43
 0
 
- itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 1  dwarf_great_axe 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 102 0 256 43
+ itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 1  dwarf_great_axe 0  342163460 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 102 0 256 43
 0
 
- itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 1  dwarf_great_mattock 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 94 0 256 43
+ itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 1  dwarf_great_mattock 0  342163460 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 94 0 256 43
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 1  dwarf_great_pick 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 93 0 256 43
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 1  dwarf_great_pick 0  342163460 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 93 0 256 43
 0
 
- itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  73728004 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 94 0 256 43
+ itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163460 9223635923965575392 264 0 5.000000 100 0 0 0 0 44032 86 0 94 0 256 43
 0
 
  itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 1  dwarf_mattock 0  4521988 9223388530091229198 27 0 3.000000 100 0 0 0 0 19456 96 0 99 0 256 275
@@ -2493,7 +2493,7 @@ itemsfile version 2
  itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 200 0 2.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 10 90 0 0 0 0 0 0 0 70 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 10 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2544,7 +2544,7 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_3A 0  4097 0 400 41876193280 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
- itm_sword_of_arathorn Arathorn_Sword Arathorn_Sword 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  71307267 9223635954298781951 294 0 2.000000 100 0 0 0 0 38912 110 0 100 0 286 294
+ itm_sword_of_arathorn Arathorn's_Sword Arathorn's_Sword 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  71307267 9223635954298781951 294 0 2.000000 100 0 0 0 0 38912 110 0 100 0 286 294
 0
 
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 0 12.000000 100 2 50 20 0 0 0 0 0 0 0 0

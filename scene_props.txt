@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1267
+ 1268
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3882,5 +3882,8 @@ spr_elf_statue 0 0 statue 0 0
 
 
 spr_distant_mountain_mordor 69632 0 mountains_outer_mordor 0 0
+
+
+spr_tunnel_henneth_annun 0 0 mesh_henneth_annun bo_henneth_annun 0
 
 

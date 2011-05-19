@@ -28,9 +28,10 @@ tf_lorien     = 12
 tf_imladris   = 13
 tf_woodelf    = 14
 tf_elf_end    = 15
-tf_easterling = 15  
-tf_khand      = 15
-tf_rhun       = 15
+#tf_easterling = 15  
+#tf_khand      = 15
+#tf_rhun       = 15
+tf_evil_man   = 15
 #TLD end (Hokie)
 ####################################################
 
@@ -465,7 +466,7 @@ Penalties_sys = [
         (wpt_firearm, 15),
         ]
     ),
-    (tf_easterling|tf_khand|tf_rhun, [
+    (tf_evil_man, [
         ], [
         (wpt_archery, 30),
         (wpt_crossbow, 30),
