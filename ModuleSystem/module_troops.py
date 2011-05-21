@@ -1482,6 +1482,12 @@ troops = [
 ["tribal_orc","Tribal_Orc","Tribal_Orcs",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       str_5|agi_5|int_4|cha_4|level(5),wp(70),knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,orc_face1,orc_face2],
+["tribal_orc_warrior","Tribal_Orc_Warrior","Tribal_Orc_Warriors",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_tribal_b,itm_orc_throwing_axes,itm_orc_machete,itm_orc_club_c,itm_orc_club_d,itm_orc_axe,itm_orc_axe,itm_orc_axe,],
+      str_7|agi_7|int_4|cha_4|level(10),wp(95),knows_athletics_3|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,orc_face1,orc_face2],
+["tribal_orc_chief","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_shield| tfg_boots| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_tribal_a,itm_orc_throwing_axes,itm_orc_sabre,itm_orc_machete,itm_orc_furboots,itm_orc_shield_b,itm_orc_shield_a,],
+      str_9|agi_8|int_4|cha_4|level(15),wp(105),knows_athletics_4|knows_power_throw_3|knows_power_strike_5|knows_ironflesh_5,orc_face1,orc_face2],
 #Numenorean
 ["black_numenorean_warrior","Black_Numenorean_Warrior","Black_Numenorean_Warriors",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_m_armor_b,itm_mordor_man_shield_b,itm_mordor_sword,itm_mordor_longsword,],
@@ -3434,6 +3440,9 @@ upgrade(troops,"laketown_scout","laketown_bowmen")
 upgrade(troops,"laketown_bowmen","laketown_archer")
 upgrade(troops,"laketown_archer","barding_bowmen_of_esgaroth")
 
+#BANDITS
+upgrade(troops,"tribal_orc","tribal_orc_warrior")
+upgrade(troops,"tribal_orc_warrior","tribal_orc_chief")
 
 
 

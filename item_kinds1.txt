@@ -1,5 +1,5 @@
 itemsfile version 2
-857
+858
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -30,7 +30,10 @@ itemsfile version 2
  itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
- itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  smoked_meat 0  34144267 0 72 0 15.000000 100 50 0 0 0 0 0 0 0 50 0 0
+ itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  bread_slice_a 0  34144267 0 32 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
+0
+
+ itm_cram Cram Cram 1  bread_a 0  34144267 0 44 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
@@ -2505,10 +2508,7 @@ itemsfile version 2
  itm_phial_reward Light_of_Galadriel Light_of_Galadriel 1  galadriel_light 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_scroll_reward Scroll_of_Ancient_Lore Scroll_of_Ancient_Lore 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_evil_scroll_reward Scroll_of_Evil_Wisdomz Scroll_of_Evil_Wisdomz 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_scroll_reward On_the_Fall_of_Gondolin On_the_Fall_of_Gondolin 1  quenya_scroll 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_hammer_reward Smith's_Hammer Smith's_Hammer 1  smith_hammer 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2553,7 +2553,7 @@ itemsfile version 2
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
 0
 
- itm_westernesse2h_reward Great_Sword_of_Westernesse Great_Sword_of_Westernesse 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
+ itm_westernesse2h_reward Nazgul_Sword Nazgul_Sword 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
 0
 
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
@@ -2584,5 +2584,8 @@ itemsfile version 2
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  2147483660 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_explosive_reward Isengard_Mine Isengard_Mine 1  tavern_barrel_b 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 

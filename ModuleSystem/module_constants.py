@@ -1245,9 +1245,10 @@ debug_point_4 = (1106, "@DEBUG: Routine 4", 0xffff00ff)
 debug_color = 0xff00ff
 
 # color-coded item descriptions
-color_item_text_normal = 0xFFEEDD
-color_item_text_morale = 0x4444FF
-color_item_text_bonus  = 0xE066FF
+color_item_text_normal  = 0xFFEEDD
+color_item_text_morale  = 0x4444FF
+color_item_text_bonus   = 0xE066FF
+color_item_text_special = 0xEEEE00
 
 # color-coded messages
 color_good_news    = 0x50FF50
@@ -1962,9 +1963,9 @@ fac_reward_items_list = [
 #fac_rohan
 [(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
 #fac_mordor
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_masterwork), (8, "itm_westernesse2h_reward", 0), (9, "itm_witchking_helmet", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_westernesse2h_reward", 0), (9, "itm_witchking_helmet", 0)],
 #fac_isengard
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_isengard_heavy_sword", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_isengard_halberd", imod_balanced)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_isengard_heavy_sword", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
 #fac_lorien
 [(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0), (4, "itm_elven_amulet_reward", 0), (5, "itm_lorien_bow", imod_strong), (6, "itm_silmarillion_reward", 0), (7, "itm_lorien_sword_c", imod_masterwork), (8, "itm_lorien_armor_f", imod_lordly), (9, "itm_phial_reward", 0)],
 #fac_imladris
@@ -1972,7 +1973,7 @@ fac_reward_items_list = [
 #fac_woodelf
 [(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0), (4, "itm_elven_amulet_reward", 0), (5, "itm_scroll_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_mirkwood_great_spear", imod_balanced), (8, "itm_mirkwood_armor_e", imod_lordly), (9, "itm_mirkwood_sword_reward", 0)],
 #fac_dale
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0), (4, "itm_dale_horse", imod_spirited), (5, "itm_scroll_reward", 0), (6, "itm_herbarium_reward", 0), (7, "itm_dale_billhook", imod_balanced), (8, "itm_dale_armor_l", imod_lordly), (9, "itm_dale_bow_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0), (4, "itm_dale_horse", imod_spirited), (5, "itm_scroll_reward", 0), (6, "itm_herbarium_reward", 0), (7, "itm_dale_sword_long", imod_masterwork), (8, "itm_dale_armor_l", imod_lordly), (9, "itm_dale_bow_reward", 0)],
 #fac_harad
 [(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_horandor_a", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_lg_bow", imod_masterwork), (8, "itm_harad_lion_scale", imod_lordly), (9, "itm_harad_totem_reward", 0)],
 #fac_rhun
@@ -2027,7 +2028,7 @@ AI_long_range	= 13000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
 AI_charge_distance	= 2000
 AI_Self_Defence_Distance = 1000 #range for preparing for self defense, JL
-AI_for_kingdoms_only	= 0
+AI_for_kingdoms_only	= 1
 Weapon_Length_Proxy	= 100
 Far_Away	= 1000000
 Percentage_Cav_For_New_Dest	= 40

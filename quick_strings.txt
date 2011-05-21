@@ -1,4 +1,4 @@
-801
+804
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -92,6 +92,7 @@ qstr_your your
 qstr_{s13}_King {s13}_King
 qstr_{s13}_Master {s13}_Master
 qstr_Steward Steward
+qstr_Lieutenant Lieutenant
 qstr_King King
 qstr_Master Master
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
@@ -123,11 +124,13 @@ qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_+1_to_Trainer +1_to_Trainer
+qstr_Recruits_Tribal_Orcs Recruits_Tribal_Orcs
 qstr_+1_to_Charisma +1_to_Charisma
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Persuasion +1_to_Persuasion
 qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
+qstr_+2_to_Engineering +2_to_Engineering
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
@@ -692,7 +695,7 @@ qstr_{s31}{reg9?Those:That {s31}{reg9?Those:That}_useful_{reg9?troops:troop}_wil
 qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
 qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
-qstr_I_am_{s4}_the_ruler_ I_am_{s4},_the_ruler_of_{s6}
+qstr_I_am_{s4}_{s15}_of_{ I_am_{s4},_{s15}_of_{s6}
 qstr_I_am_{s4}_a_commande I_am_{s4},_a_commander_of_{s6}
 qstr_{s9}{reg5?_and_the_l {s9}{reg5?_and_the_lord_of_{s8}.:.
 qstr_Very_well_done_{play Very_well_done,_{playername}!_You_captured_both_the_spy_and_his_handler,_just_as_I'd_hoped,_and_the_pair_are_now_safely_locked_up,_waiting_to_be_questioned._They_will_have_some_explaining_to_do!_Anyway,_I'm_very_pleased_with_your_success,_{playername},_and_I_give_you_this_purse_as_a_token_of_my_appreciation.

@@ -4,26 +4,26 @@ pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 429 0 4 0 -1 -1 -1 -1 
+pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 431 0 4 0 -1 -1 -1 -1 
 pt_cattle_herd Cattle_Herd 2814749767106634 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
 pt_ruins Ruins 75 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_legendary_place Legendary_Place 69 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
-pt_manhunters Manhunters 2 0 31 238 426 9 40 0 -1 -1 -1 -1 -1 
-pt_looters Tribal_Orcs 2251799813685293 0 2 494 380 2 25 0 -1 -1 -1 -1 -1 
-pt_forest_bandits Orc_Stragglers 562949953421357 0 2 494 380 3 40 0 379 1 30 0 -1 -1 -1 -1 
+pt_manhunters Manhunters 2 0 31 238 428 9 40 0 -1 -1 -1 -1 -1 
+pt_looters Tribal_Orcs 2251799813685293 0 2 494 381 0 1 0 380 2 25 0 -1 -1 -1 -1 
+pt_forest_bandits Orc_Stragglers 562949953421357 0 2 494 382 0 1 0 381 0 8 0 380 3 40 0 379 1 30 0 -1 -1 
 pt_mountain_bandits Wild_Goblins 562949953421357 0 2 494 379 2 40 0 -1 -1 -1 -1 -1 
 pt_steppe_bandits Dunlending_Raiders 562949953421319 0 2 494 269 3 48 0 -1 -1 -1 -1 -1 
 pt_sea_raiders Corsair_Raiders 562949953421320 0 2 494 303 3 50 0 -1 -1 -1 -1 -1 
 pt_deserters Deserters 844424930131971 0 32 494 -1 -1 -1 -1 -1 -1 
-pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 430 1 1 0 431 5 25 0 -1 -1 -1 -1 
+pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 432 1 1 0 433 5 25 0 -1 -1 -1 -1 
 pt_troublesome_bandits Troublesome_Goblins 2533274790658056 0 2 494 379 14 55 0 -1 -1 -1 -1 -1 
 pt_fangorn_orcs Tree-chopping_Orcs 2533274790658056 0 26 494 329 1 1 0 327 3 8 0 322 8 13 0 325 12 24 0 -1 -1 
-pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 429 3 8 0 -1 -1 -1 -1 
-pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 777 1 1 0 159 5 11 0 -1 -1 -1 -1 
-pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 778 1 1 0 269 5 11 0 -1 -1 -1 -1 
-pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 429 3 3 0 -1 -1 -1 -1 
-pt_spy Lone_Rider 844424930459650 0 26 7 775 1 1 0 -1 -1 -1 -1 -1 
-pt_spy_evil Lone_Rider 844424930459650 0 26 7 776 1 1 0 -1 -1 -1 -1 -1 
+pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 431 3 8 0 -1 -1 -1 -1 
+pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 779 1 1 0 159 5 11 0 -1 -1 -1 -1 
+pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 780 1 1 0 269 5 11 0 -1 -1 -1 -1 
+pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 431 3 3 0 -1 -1 -1 -1 
+pt_spy Lone_Rider 844424930459650 0 26 7 777 1 1 0 -1 -1 -1 -1 -1 
+pt_spy_evil Lone_Rider 844424930459650 0 26 7 778 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
 pt_forager_party Foraging_Party 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_scout_party Scouts 281474980904962 0 1 494 -1 -1 -1 -1 -1 -1 
@@ -31,10 +31,10 @@ pt_patrol_party Patrol 562949957615618 0 1 238 -1 -1 -1 -1 -1 -1
 pt_war_party War_Party 844424930131970 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_messenger_party Messenger 4194306 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_raider_party Raiders 4503599627632642 0 1 494 -1 -1 -1 -1 -1 -1 
-pt_raider_captives Raider_Captives 0 0 1 0 429 6 30 1 -1 -1 -1 -1 -1 
-pt_kingdom_caravan_party Caravan 7036874421960777 0 1 7 430 1 1 0 431 12 40 0 -1 -1 -1 -1 
+pt_raider_captives Raider_Captives 0 0 1 0 431 6 30 1 -1 -1 -1 -1 -1 
+pt_kingdom_caravan_party Caravan 7036874421960777 0 1 7 432 1 1 0 433 12 40 0 -1 -1 -1 -1 
 pt_prisoner_train_party Prisoner_Train 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_default_prisoners Default_Prisoners 0 0 1 0 421 5 10 1 -1 -1 -1 -1 -1 
+pt_default_prisoners Default_Prisoners 0 0 1 0 423 5 10 1 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904983 0 3 183 122 1 1 0 102 3 5 0 103 3 5 0 -1 -1 -1 
 pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904962 0 3 183 157 1 1 0 153 2 25 0 152 6 30 0 -1 -1 -1 
 pt_lamedon_auxila Lamedon_Auxilia 281474980904968 0 3 183 145 1 1 0 140 2 25 0 139 6 30 0 -1 -1 -1 
@@ -83,27 +83,27 @@ pt_woodelf_patrol Mirkwood_Patrol 562949953421350 0 10 238 183 7 17 0 184 7 17 0
 pt_dale_patrol Dale_Patrol 562949953421314 0 11 238 52 4 10 0 53 4 10 0 50 4 10 0 58 4 10 0 56 4 10 0 63 1 1 0 
 pt_dwarf_patrol Dwarven_Patrol 562949953421338 0 4 238 92 10 25 0 95 10 25 0 84 1 1 0 -1 -1 -1 
 pt_rhun_patrol Rhun_Patrol 281474976710658 0 13 238 75 8 20 0 68 8 20 0 80 8 20 0 81 1 1 0 -1 -1 
-pt_gondor_company Gondor_Company 25 0 3 238 109 10 30 0 106 10 30 0 119 10 20 0 114 7 10 0 115 7 10 0 412 1 1 0 
-pt_rohan_company Rohan_Company 30 0 5 238 239 25 25 0 230 25 25 0 223 25 25 0 240 12 12 0 231 12 12 0 395 1 1 0 
-pt_imladris_company Rivendell_Company 52 0 9 238 202 20 33 0 203 20 33 0 204 20 33 0 205 3 6 0 392 1 1 0 -1 
-pt_lorien_company Lothlorien_Company 35 0 8 238 174 30 30 0 175 30 30 0 178 30 30 0 179 5 5 0 176 5 5 0 388 1 1 0 
+pt_gondor_company Gondor_Company 25 0 3 238 109 10 30 0 106 10 30 0 119 10 20 0 114 7 10 0 115 7 10 0 414 1 1 0 
+pt_rohan_company Rohan_Company 30 0 5 238 239 25 25 0 230 25 25 0 223 25 25 0 240 12 12 0 231 12 12 0 397 1 1 0 
+pt_imladris_company Rivendell_Company 52 0 9 238 202 20 33 0 203 20 33 0 204 20 33 0 205 3 6 0 394 1 1 0 -1 
+pt_lorien_company Lothlorien_Company 35 0 8 238 174 30 30 0 175 30 30 0 178 30 30 0 179 5 5 0 176 5 5 0 390 1 1 0 
 pt_woodelf_company Mirkwood_Company 38 0 10 238 191 21 22 0 191 21 22 0 184 21 22 0 185 21 22 0 186 8 12 0 -1 
-pt_dale_company Dale_Company 2 0 11 238 52 20 20 0 53 20 20 0 55 20 20 0 59 20 20 0 63 20 20 0 566 1 1 0 
-pt_dwarf_company Dwarven_Company 26 0 4 238 85 25 25 0 92 25 25 0 84 20 20 0 90 20 20 0 95 10 10 0 567 1 1 0 
-pt_gondor_elite_company Gondor_Elite_Company 25 0 3 238 107 15 30 0 116 15 30 0 120 15 30 0 110 15 30 0 412 1 1 0 -1 
-pt_rohan_elite_company Rohan_Elite_Company 31 0 5 238 240 10 20 0 231 10 20 0 224 10 20 0 227 10 20 0 225 10 20 0 395 1 1 0 
-pt_imladris_elite_company Rivendell_Elite_Company 29 0 9 238 205 25 50 0 207 25 50 0 392 1 1 0 -1 -1 -1 
-pt_lorien_elite_company Lothlorien_Elite_Company 36 0 8 238 171 13 25 0 176 13 25 0 170 13 25 0 179 13 25 0 387 1 1 0 -1 
-pt_woodelf_elite_company Mirkwood_Elite_Company 39 0 10 238 192 20 40 0 186 20 40 0 390 0 0 0 -1 -1 -1 
-pt_dale_elite_company Dale_Elite_Company 2 0 11 238 59 13 25 0 56 13 25 0 63 13 25 0 53 13 25 0 566 13 25 0 -1 
-pt_dwarf_elite_company Dwarven_Elite_Company 26 0 4 238 84 18 34 0 90 18 34 0 95 18 34 0 567 1 1 0 -1 -1 
-pt_gondor_caravan Gondor_Caravan 562949953421368 0 3 14 108 15 15 0 105 15 15 0 118 15 15 0 114 10 10 0 430 1 1 0 -1 
-pt_rohan_caravan Rohan_Caravan 562949953421369 0 5 14 238 15 15 0 229 15 15 0 222 15 15 0 430 1 1 0 -1 -1 
-pt_imladris_caravan Rivendell_Caravan 562949953421385 0 9 14 203 20 20 0 199 20 20 0 207 10 10 0 430 1 1 0 -1 -1 
-pt_lorien_caravan Lothlorien_Caravan 562949953421385 0 8 14 177 20 20 0 174 20 20 0 176 10 10 0 430 1 1 0 -1 -1 
+pt_dale_company Dale_Company 2 0 11 238 52 20 20 0 53 20 20 0 55 20 20 0 59 20 20 0 63 20 20 0 568 1 1 0 
+pt_dwarf_company Dwarven_Company 26 0 4 238 85 25 25 0 92 25 25 0 84 20 20 0 90 20 20 0 95 10 10 0 569 1 1 0 
+pt_gondor_elite_company Gondor_Elite_Company 25 0 3 238 107 15 30 0 116 15 30 0 120 15 30 0 110 15 30 0 414 1 1 0 -1 
+pt_rohan_elite_company Rohan_Elite_Company 31 0 5 238 240 10 20 0 231 10 20 0 224 10 20 0 227 10 20 0 225 10 20 0 397 1 1 0 
+pt_imladris_elite_company Rivendell_Elite_Company 29 0 9 238 205 25 50 0 207 25 50 0 394 1 1 0 -1 -1 -1 
+pt_lorien_elite_company Lothlorien_Elite_Company 36 0 8 238 171 13 25 0 176 13 25 0 170 13 25 0 179 13 25 0 389 1 1 0 -1 
+pt_woodelf_elite_company Mirkwood_Elite_Company 39 0 10 238 192 20 40 0 186 20 40 0 392 0 0 0 -1 -1 -1 
+pt_dale_elite_company Dale_Elite_Company 2 0 11 238 59 13 25 0 56 13 25 0 63 13 25 0 53 13 25 0 568 13 25 0 -1 
+pt_dwarf_elite_company Dwarven_Elite_Company 26 0 4 238 84 18 34 0 90 18 34 0 95 18 34 0 569 1 1 0 -1 -1 
+pt_gondor_caravan Gondor_Caravan 562949953421368 0 3 14 108 15 15 0 105 15 15 0 118 15 15 0 114 10 10 0 432 1 1 0 -1 
+pt_rohan_caravan Rohan_Caravan 562949953421369 0 5 14 238 15 15 0 229 15 15 0 222 15 15 0 432 1 1 0 -1 -1 
+pt_imladris_caravan Rivendell_Caravan 562949953421385 0 9 14 203 20 20 0 199 20 20 0 207 10 10 0 432 1 1 0 -1 -1 
+pt_lorien_caravan Lothlorien_Caravan 562949953421385 0 8 14 177 20 20 0 174 20 20 0 176 10 10 0 432 1 1 0 -1 -1 
 pt_woodelf_caravan Mirkwood_Caravan 562949953421385 0 10 14 184 20 20 0 191 20 20 0 185 10 10 0 -1 -1 -1 
-pt_dale_caravan Dale_Caravan 562949953421385 0 11 14 55 20 20 0 60 10 10 0 52 20 20 0 430 1 1 0 -1 -1 
-pt_dwarf_caravan Dwarven_Caravan 562949953421385 0 4 14 92 20 20 0 85 20 20 0 90 10 10 0 430 1 1 0 -1 -1 
+pt_dale_caravan Dale_Caravan 562949953421385 0 11 14 55 20 20 0 60 10 10 0 52 20 20 0 432 1 1 0 -1 -1 
+pt_dwarf_caravan Dwarven_Caravan 562949953421385 0 4 14 92 20 20 0 85 20 20 0 90 10 10 0 432 1 1 0 -1 -1 
 pt_mordor_caravan Mordor_Supply_Train 562949953421371 0 6 14 355 10 15 0 346 10 15 0 334 10 15 0 340 0 2 0 -1 -1 
 pt_isengard_caravan Isengard_Supply_Train 562949953421370 0 7 14 321 10 15 0 327 10 15 0 316 10 15 0 319 3 8 0 -1 -1 
 pt_gondor_p_train Gondor_Prisoner_Train 56 0 3 14 108 10 15 0 105 10 15 0 118 10 15 0 114 5 10 0 -1 -1 
@@ -119,7 +119,7 @@ pt_swadian_patrol Swadian_Patrol 844424934326274 0 3 238 117 8 13 0 104 8 20 0 1
 pt_vaegir_patrol Vaegir_Patrol 562949957615619 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_swadian_war_party Swadian_War_Party 1407374887747586 0 3 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
 pt_vaegir_war_party Vaegir_War_Party 1407374887747587 0 5 238 117 8 13 0 104 8 20 0 110 8 16 0 124 5 20 0 114 4 15 0 116 4 15 0 
-pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 819 4 20 0 -1 -1 -1 -1 
+pt_center_reinforcements Reinforcements 4503599627370504 0 1 238 39 5 30 0 821 4 20 0 -1 -1 -1 -1 
 pt_kingdom_hero_party War_Party 4259844 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_war_party Gondor_War_Party 844424930131993 0 3 238 107 8 36 0 124 15 20 0 114 15 35 0 119 8 13 0 109 8 20 0 115 5 35 0 
 pt_gondor_allies_war_party Gondor_Allies_War_Party 844424930132007 0 3 238 163 8 13 0 162 8 20 0 161 8 16 0 148 5 20 0 159 4 15 0 154 4 15 0 
@@ -128,7 +128,7 @@ pt_lorien_war_party lorien_war_party 844424930132004 0 8 238 165 8 13 0 167 8 20
 pt_woodelf_war_party woodelf_war_party 844424930132007 0 10 238 181 8 13 0 192 8 20 0 185 8 16 0 190 5 20 0 191 4 15 0 192 4 15 0 
 pt_imladris_war_party Rivendell_War_Party 844424930132021 0 9 238 196 8 13 0 198 8 20 0 199 8 16 0 207 5 20 0 200 4 15 0 197 4 15 0 
 pt_dunedain_war_party Dunedain_War_Party 844424930131984 0 9 238 216 8 13 0 213 8 20 0 212 8 16 0 214 5 20 0 215 4 15 0 217 4 15 0 
-pt_mordor_war_party Mordor_War_Party 844424930132018 0 6 238 346 20 50 0 351 15 30 0 354 13 36 0 381 15 30 0 386 5 40 0 340 1 2 0 
+pt_mordor_war_party Mordor_War_Party 844424930132018 0 6 238 346 20 50 0 351 15 30 0 354 13 36 0 383 15 30 0 388 5 40 0 340 1 2 0 
 pt_isengard_war_party Isengard_War_Party 844424930132034 0 7 238 323 20 50 0 329 10 30 0 327 13 36 0 318 5 30 0 324 10 40 0 339 1 2 0 
 pt_harad_war_party Harad_War_Party 844424930131989 0 12 238 245 20 50 0 252 15 30 0 248 13 36 0 255 5 30 0 257 5 40 0 260 5 20 0 
 pt_dunland_war_party Dunlending_Warband 844424930131984 0 19 238 265 20 50 0 268 15 30 0 266 13 36 0 269 5 30 0 -1 -1 
@@ -182,8 +182,8 @@ pt_khand_reinf_a _ 0 0 1 0 275 2 6 0 276 4 7 0 -1 -1 -1 -1
 pt_khand_reinf_b _ 0 0 1 0 277 2 6 0 280 3 5 0 286 1 3 0 -1 -1 -1 
 pt_khand_reinf_c _ 0 0 1 0 292 3 6 0 -1 -1 -1 -1 -1 
 pt_umbar_reinf_a _ 0 0 1 0 294 2 6 0 295 4 7 0 -1 -1 -1 -1 
-pt_umbar_reinf_b _ 0 0 1 0 304 2 6 0 300 4 7 0 381 3 6 0 -1 -1 -1 
-pt_umbar_reinf_c _ 0 0 1 0 310 3 6 0 383 1 5 0 -1 -1 -1 -1 
+pt_umbar_reinf_b _ 0 0 1 0 304 2 6 0 300 4 7 0 383 3 6 0 -1 -1 -1 
+pt_umbar_reinf_c _ 0 0 1 0 310 3 6 0 385 1 5 0 -1 -1 -1 -1 
 pt_lorien_reinf_a _ 0 0 1 0 165 2 4 0 166 2 4 0 -1 -1 -1 -1 
 pt_lorien_reinf_b _ 0 0 1 0 169 1 3 0 173 1 3 0 175 2 5 0 -1 -1 -1 
 pt_lorien_reinf_c _ 0 0 1 0 178 3 6 0 -1 -1 -1 -1 -1 
@@ -214,4 +214,4 @@ pt_dwarf_reinf_c _ 0 0 1 0 95 3 6 0 98 3 6 0 -1 -1 -1 -1
 pt_dunland_reinf_a _ 0 0 1 0 265 2 6 0 267 4 7 0 -1 -1 -1 -1 
 pt_dunland_reinf_b _ 0 0 1 0 268 2 6 0 271 4 7 0 -1 -1 -1 -1 
 pt_dunland_reinf_c _ 0 0 1 0 271 3 6 0 -1 -1 -1 -1 -1 
-pt_caravan_survivors Caravan_Survivors 562949953421314 0 26 7 424 5 5 0 -1 -1 -1 -1 -1 
+pt_caravan_survivors Caravan_Survivors 562949953421314 0 26 7 426 5 5 0 -1 -1 -1 -1 -1 

@@ -31,16 +31,7 @@ python process_dialogs.py
 python process_global_variables_unused.py
 set PATH=%OLDPATH%
 @del *.pyc
-REM
-REM adding scripts on map with mapscribbler... (mtarini)
-echo Adding text map-icons with MapScribbler...
-copy /Y ..\parties.txt ..\parties.orig.txt  >nul
-copy /Y ..\map_icons.txt ..\map_icons.orig.txt >nul
-cd mapScribbler_0.7
-mapScribbler.exe -b
-type stderr.txt
-cd ..
-REM
+
 REM count objects... (mtarini)
 set /a cnt=0
 set /a max=915

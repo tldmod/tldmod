@@ -546,6 +546,17 @@ dialogs = [
 	(play_sound, "snd_encounter_looters")
   ]],
   [party_tpl|pt_looters,"looters_1", [], "{s4}", "looters_2",[]],
+  [party_tpl|pt_looters|plyr,"looters_2", [
+    (player_has_item, "itm_angmar_whip_reward"),
+    (party_can_join_party, "$g_encountered_party","p_main_party"),
+    (str_store_item_name, s4, "itm_angmar_whip_reward")],
+    "Bow to the power of the {s4} and serve me!", "looters_2_join", []],
+  [party_tpl|pt_looters,"looters_2_join", [], "We will obey, Master.", "close_window", [
+    (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
+    (remove_party, "$g_encountered_party"),
+    (assign, "$g_leave_encounter", 1),
+  ]],
+  
   [party_tpl|pt_looters|plyr,"looters_2", [[store_character_level,reg(1),"trp_player"],[lt,reg(1),4]], "I'm not afraid of you lot. Fight me if you dare!", "close_window",
    [[encounter_attack]]],
   [party_tpl|pt_looters|plyr,"looters_2", [[store_character_level,reg(1),"trp_player"],[ge,reg(1),4]], "You'll have nothing of mine but cold steel, scum.", "close_window",
@@ -2597,7 +2608,8 @@ dialogs = [
                           (str_store_troop_name, s4, "$g_talk_troop"),
                           (try_begin),
                             (eq, ":faction_leader", "$g_talk_troop"),
-                            (str_store_string, s9, "@I am {s4}, the ruler of {s6}", 0),
+                            (call_script, "script_store_faction_king_in_s15", "$g_talk_troop_faction"),
+                            (str_store_string, s9, "@I am {s4}, {s15} of {s6}", 0),
                           (else_try),
                             (str_store_string, s9, "@I am {s4}, a commander of {s6}", 0),
                           (try_end),
@@ -11809,7 +11821,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (             is_between,"$g_talk_troop",horse_merchants_begin, horse_merchants_end)], "Good day. What can I do for you?", "town_merchant_talk",[]],
 
   [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end)],
-   "I want to request new equipment. Show me what you have in your stockpiles.", "trade_requested_weapons",[]],
+   "I want to request new equipment. Show me what you have in your warehouse.", "trade_requested_weapons",[]],
   # [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",armor_merchants_begin,armor_merchants_end)],
    # "I am looking for some equipment. Show me what you have.", "trade_requested_armor",[]],
   [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",horse_merchants_begin,horse_merchants_end)],
@@ -12134,6 +12146,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (troop_slot_eq, "$g_talk_troop", slot_troop_upkeep_not_paid,0), # it was paid... still player can send him away
 	(call_script, "script_cf_is_troop_in_party_not_wounded", "$g_talk_troop", "p_main_party"), # not wounded 
     (store_partner_faction, reg10),
+    (is_between, reg10, kingdoms_begin, kingdoms_end), #no bandits
     (str_store_faction_name, s12, reg10),
   ], "Your services are now more urgent back home in {s12}, than here with me.", "disband_regular_member_confirm",[]],
 
@@ -12141,6 +12154,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (troop_slot_eq, "$g_talk_troop", slot_troop_upkeep_not_paid,0),  # it was paid... still player can send him away
 	(call_script, "script_cf_is_troop_in_party_wounded", "$g_talk_troop", "p_main_party"),# wounded 
     (store_partner_faction, reg10),
+    (is_between, reg10, kingdoms_begin, kingdoms_end), #no bandits
     (str_store_faction_name, s12, reg10),
   ], "You are wounded... you should go back home in {s12}, where you can be more useful than here.", "disband_regular_member_confirm",[]],
 

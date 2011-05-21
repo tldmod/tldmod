@@ -61,7 +61,8 @@ items =[
 #
 #foods (first one is smoked_fish)
 ["human_meat","Human_Meat",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
-["maggoty_bread","Maggoty_Bread",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
+["maggoty_bread","Maggoty_Bread",[("bread_slice_a",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
+["cram","Cram",[("bread_a",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(60)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(70)|max_ammo(70),imodbits_none],
@@ -1150,8 +1151,8 @@ items =[
 ["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["athelas_reward","Athelas_Plant",[("athelas_plant",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
-["scroll_reward","Scroll_of_Ancient_Lore",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
-["evil_scroll_reward","Scroll_of_Evil_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["scroll_reward","On_the_Fall_of_Gondolin",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+#["evil_scroll_reward","Scroll_of_Evil_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["hammer_reward","Smith's_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["khand_knife_reward","Khand_Sacrificial_Knife",[("khand_sacrificial_knife",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["angmar_whip_reward","Master's_Whip",[("AngmarWhip",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
@@ -1166,7 +1167,7 @@ items =[
 ["sword_of_arathorn","Arathorn's_Sword",[("aragorn_sword",0),("scab_aragorn_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,294,weight(2.05)|difficulty(0)|spd_rtng(110)|weapon_length(100)|swing_damage(38,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
 ["riv_armor_reward","Rivendell_Decorated_Armor",[("rivendellrewardarmour",0)],itp_type_body_armor|itp_covers_legs|0,0,6000,weight(12)|head_armor(2)|body_armor(50)|leg_armor(20)|difficulty(0),imodbits_armor,],
 ["westernesse1h_reward","Sword_of_Westernesse",[("1h_westernesse",0),("scab_1h_westernesse",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,150,weight(1.25)|difficulty(0)|spd_rtng(130)|weapon_length(100)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
-["westernesse2h_reward","Great_Sword_of_Westernesse",[("2h_westernesse",0),("scab_2h_westernesse",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(50,pierce)|thrust_damage(45,pierce),imodbits_sword_high],
+["westernesse2h_reward","Nazgul_Sword",[("2h_westernesse",0),("scab_2h_westernesse",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(50,pierce)|thrust_damage(45,pierce),imodbits_sword_high],
 ["mirkwood_sword_reward","Greenwood_Relic_Sword",[("mirkwood_sword",0),("scab_mirkwood_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(50,pierce)|thrust_damage(45,pierce),imodbits_sword_high],
 ["cooking_cauldron","Cooking_Cauldron",[("cauldron_a",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["eorl_cavalry_sword","Eorl_Cavalry_Sword",[("eorl_cavalry_sword",0)],itp_type_one_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_longsword|itcf_carry_sword_left_hip,150,weight(1.25)|difficulty(0)|spd_rtng(130)|weapon_length(100)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
@@ -1177,4 +1178,5 @@ items =[
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_covers_head,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
+["explosive_reward","Isengard_Mine",[("tavern_barrel_b",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ]

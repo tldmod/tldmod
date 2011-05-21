@@ -670,6 +670,8 @@ scripts = [
     [ (store_script_param_1, ":troop_id"),
       (store_script_param_2, ":unused"), #party id
       
+      (store_troop_faction, ":troop_faction", ":troop_id"),
+      
 	  (store_character_level, ":troop_level", ":troop_id"),
       (assign, ":wage", ":troop_level"),
       (val_add, ":wage", 3),
@@ -689,8 +691,13 @@ scripts = [
         (val_div, ":wage", 100),
       (try_end),
        
-	  (try_begin), #mounted troops cost 50% more than the normal cost
+	  (try_begin),
 		(troop_is_hero,":troop_id"), # no upkeep for heros! (player included)
+		(assign, reg0, 0),
+      (try_end),
+      
+	  (try_begin),
+		(neg|is_between, ":troop_faction", kingdoms_begin, kingdoms_end), # bandits are free
 		(assign, reg0, 0),
       (try_end),
 	  
@@ -715,6 +722,9 @@ scripts = [
       (assign, reg0, ":total_wage"),
       (set_trigger_result, reg0),
   ]),
+
+
+#MV: Note that non-kingdom troops like bandits don't need upkeep!
 
   # script_compute_wage_per_faction  (mtarini)
   # Input: arg1 = faction
@@ -984,6 +994,9 @@ scripts = [
         (eq, ":fac", "fac_gondor"),
 		(str_store_string, s15,"@Steward"),
 	(else_try),
+        (eq, ":fac", "fac_mordor"),
+		(str_store_string, s15,"@Lieutenant"),
+	(else_try),
 		(try_begin),
             (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
 			(str_store_string, s15,"@King"),
@@ -1193,6 +1206,8 @@ scripts = [
       (item_set_slot, "itm_cattle_meat", slot_item_food_bonus, 7),
       (item_set_slot, "itm_human_meat", slot_item_food_bonus, 6),
 	  #(item_set_slot, "itm_lembas", slot_item_food_bonus, 20),
+      (item_set_slot, "itm_maggoty_bread", slot_item_food_bonus, 2),
+      (item_set_slot, "itm_cram", slot_item_food_bonus, 3),
 
 #NPC companion changes begin
       (call_script, "script_initialize_npcs"),
@@ -3045,6 +3060,7 @@ scripts = [
       (else_try),
 		(eq,":item_no","itm_angmar_whip_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Trainer"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Recruits Tribal Orcs"),(set_trigger_result, color_item_text_special),(try_end),
       (else_try),
 		(eq,":item_no","itm_horn_gondor_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Leadership"),(try_end),
@@ -3071,6 +3087,11 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Prisoner Mgmt"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@+1 to Charisma"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 3),(set_result_string, "@when equipped"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
+      (else_try),
+		(eq,":item_no","itm_explosive_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Tactics"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+2 to Engineering"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
@@ -3212,6 +3233,11 @@ scripts = [
       (val_add, ":modifier_value", 1),
     (else_try), #Tactics
       (eq, ":skill_no", "skl_tactics"),
+      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_explosive_reward"),
+      (try_begin),
+        (gt, reg0, 0),
+        (val_add, ":modifier_value", 1),
+      (try_end),
       (call_script, "script_get_troop_item_amount", ":troop_no", "itm_scroll_reward"),
       (gt, reg0, 0),
       (val_add, ":modifier_value", 1),
@@ -3276,6 +3302,11 @@ scripts = [
   	  (eq, ":skill_no", "skl_prisoner_management"),
       (troop_has_item_equipped, ":troop_no", "itm_witchking_helmet"),
       (val_add, ":modifier_value", 1),
+    (else_try), #Engineering
+  	  (eq, ":skill_no", "skl_engineer"),
+      (call_script, "script_get_troop_item_amount", ":troop_no", "itm_explosive_reward"),
+      (gt, reg0, 0),
+      (val_add, ":modifier_value", 2),
     (try_end),
     (set_trigger_result, ":modifier_value"),
     ]),
@@ -13990,7 +14021,7 @@ scripts = [
           (faction_set_name, "fac_player_supporters_faction", "@{s1} Rebels"),
           (faction_set_color, "fac_player_supporters_faction", 0xAAAAAA),
           (assign, "$players_kingdom", "fac_player_supporters_faction"),
-          (assign, "$g_player_banner_granted", 1),
+          #(assign, "$g_player_banner_granted", 1),
           (call_script, "script_store_average_center_value_per_faction"),
           (call_script, "script_update_all_notes"),
           (call_script, "script_add_notification_menu", "mnu_notification_player_faction_active", 0, 0),

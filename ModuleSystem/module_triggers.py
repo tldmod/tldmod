@@ -171,6 +171,10 @@ triggers = [
               (neq, ":cur_goods", "itm_human_meat"),
               # (this_or_next|eq, ":is_elf_faction", 1),
               # (neq, ":cur_goods", "itm_lembas"),
+              (this_or_next|neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+              (neq, ":cur_goods", "itm_maggoty_bread"),
+              (this_or_next|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+              (neq, ":cur_goods", "itm_cram"),
               
               (assign, ":quest_prevents", 0),
               (try_begin), # don't allow this food to generate if the quest says there is a shortage
