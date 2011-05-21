@@ -1370,7 +1370,7 @@ mission_templates = [
            (eq, "$g_village_raid_evil", 0),
            (call_script, "script_play_victorious_sound"),
          (else_try),
-           (play_track, "track_victorious_evil", 1),
+           (play_track, "track_victorious_evil1", 1),
          (try_end),
          ],
        [

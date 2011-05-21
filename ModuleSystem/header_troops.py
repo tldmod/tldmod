@@ -324,41 +324,41 @@ Penalties_sys = [
     (tf_male, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_female, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_gondor, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_rohan, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_dunland, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_orc, [
@@ -370,9 +370,9 @@ Penalties_sys = [
         (wpt_two_handed_weapon, -20),
         (wpt_polearm, -20),
         (wpt_archery, -20),
-        (wpt_crossbow, -20),
+#        (wpt_crossbow, -20),
         (wpt_throwing, -20),
-        (wpt_firearm, -20),
+#        (wpt_firearm, -20),
         ]
     ),
     (tf_uruk, [
@@ -384,9 +384,9 @@ Penalties_sys = [
         (wpt_two_handed_weapon, -20),
         (wpt_polearm, -20),
         (wpt_archery, -20),
-        (wpt_crossbow, -20),
+#        (wpt_crossbow, -20),
         (wpt_throwing, -20),
-        (wpt_firearm, -20),
+#        (wpt_firearm, -20),
         ]
     ),
     (tf_urukhai, [
@@ -406,17 +406,17 @@ Penalties_sys = [
     (tf_harad, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_dwarf, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_troll, [
@@ -427,51 +427,51 @@ Penalties_sys = [
         (wpt_one_handed_weapon, -20),
         (wpt_two_handed_weapon, -20),
         (wpt_polearm, -20),
-        (wpt_archery, -20),
-        (wpt_crossbow, -20),
-        (wpt_throwing, -20),
-        (wpt_firearm, -20),
+#        (wpt_archery, -20),
+#        (wpt_crossbow, -20),
+#        (wpt_throwing, -20),
+#        (wpt_firearm, -20),
         ]
     ),
     (tf_dunedain, [
         ("skl_athletics", 7),
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
     (tf_lorien, [
         ], [
         (wpt_archery, 15),
-        (wpt_crossbow, 15),
+#        (wpt_crossbow, 15),
         (wpt_throwing, 15),
-        (wpt_firearm, 15),
+#        (wpt_firearm, 15),
         ]
     ),
     (tf_imladris, [
         ], [
         (wpt_archery, 15),
-        (wpt_crossbow, 15),
+#        (wpt_crossbow, 15),
         (wpt_throwing, 15),
-        (wpt_firearm, 15),
+#        (wpt_firearm, 15),
         ]
     ),
     (tf_woodelf, [
         ], [
         (wpt_archery, 15),
-        (wpt_crossbow, 15),
+#        (wpt_crossbow, 15),
         (wpt_throwing, 15),
-        (wpt_firearm, 15),
+#        (wpt_firearm, 15),
         ]
     ),
     (tf_evil_man, [
         ], [
         (wpt_archery, 30),
-        (wpt_crossbow, 30),
+#        (wpt_crossbow, 30),
         (wpt_throwing, 30),
-        (wpt_firearm, 30),
+#        (wpt_firearm, 30),
         ]
     ),
 ]

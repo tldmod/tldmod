@@ -5,12 +5,15 @@
 ###################################################
 
 
-mtf_culture_1                          = 0x00000001
-mtf_culture_2                          = 0x00000002
-mtf_culture_3                          = 0x00000004
-mtf_culture_4                          = 0x00000008
-mtf_culture_5                          = 0x00000010
-mtf_culture_6                          = 0x00000020
+mtf_culture_1                          = 0x00000001 # Gondor
+mtf_culture_2                          = 0x00000002 # Rohan and other good men
+mtf_culture_3                          = 0x00000004 # Orcs
+mtf_culture_4                          = 0x00000008 # Elves
+mtf_culture_5                          = 0x00000010 # Harad & Khand
+mtf_culture_6                          = 0x00000020 # Various evil men
+
+mtf_culture_good                       = 0x0000000B # all good
+mtf_culture_evil                       = 0x00000034 # all evil
 mtf_culture_all                        = 0x0000003F
 
 
@@ -38,6 +41,9 @@ mtf_sit_day                            = 0x00100000
 mtf_sit_encounter_hostile              = 0x00200000
 mtf_sit_main_title                     = 0x00400000
 mtf_sit_victorious                     = 0x00800000
+mtf_sit_lords_hall                     = 0x02000000
 mtf_module_track                       = 0x10000000 ##set this flag for tracks placed under module folder
 
+mtf_culture_7                          = 0x01000000 # try if it works?
+mtf_culture_8                          = 0x04000000 # try if it works?
 

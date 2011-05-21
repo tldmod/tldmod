@@ -56,7 +56,7 @@ dialogs = [
                      (assign, "$g_talk_troop_relation", reg0),
 
                      (try_begin),
-                       (this_or_next|is_between, "$g_talk_troop", village_elders_begin, village_elders_end),
+#                       (this_or_next|is_between, "$g_talk_troop", village_elders_begin, village_elders_end),
                        (is_between, "$g_talk_troop", mayors_begin, mayors_end),
                        (party_get_slot, "$g_talk_troop_relation", "$current_town", slot_center_player_relation),
                      (try_end),
@@ -11809,11 +11809,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (             is_between,"$g_talk_troop",horse_merchants_begin, horse_merchants_end)], "Good day. What can I do for you?", "town_merchant_talk",[]],
 
   [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end)],
-   "I want to buy new equipment. Show me your wares.", "trade_requested_weapons",[]],
+   "I want to request new equipment. Show me what you have in your stockpiles.", "trade_requested_weapons",[]],
   # [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",armor_merchants_begin,armor_merchants_end)],
    # "I am looking for some equipment. Show me what you have.", "trade_requested_armor",[]],
   [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",horse_merchants_begin,horse_merchants_end)],
-   "I am thinking of buying a horse.", "trade_requested_horse",[]],
+   "I am thinking of getting a mount.", "trade_requested_horse",[]],
 
   [anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[[change_screen_trade]]],
   # [anyone,"trade_requested_armor", [], "Of course, {sir/madam}. You won't find better quality armour than these in all Middle Earth.", "merchant_trade",[[change_screen_trade]]],

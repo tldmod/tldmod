@@ -412,7 +412,7 @@ scn_troll_cave_center troll_cave_center 256 none none 0.000000 0.000000 100.0000
   0 
   0 
  outer_terrain_forest 
-scn_dale_center dale_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000         0x20008a110002589600006af30000356b00002c27 
+scn_dale_center dale_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000003200005000007a9ea000006810000219700002120 
   0 
   0 
  outer_terrain_plain 
@@ -784,7 +784,7 @@ scn_cair_andros_siege cair_andros_siege 256 none none 0.000000 0.000000 100.0000
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_dale_siege dale_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x20008a110002589600006af30000356b00002c27 
+scn_dale_siege dale_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000003200005000007a9ea000006810000219700002120 
   0 
   0 
  outer_terrain_plain 

@@ -150,16 +150,16 @@ simple_triggers = [
   (24,
    [ (call_script, "script_rank_income_to_player"),
 
-	 (try_for_range, ":center_no", centers_begin, centers_end),               # clear rumors in centers
+	 (try_for_range, ":center_no", centers_begin, centers_end),               # TLD clear rumors in centers
 	   (try_for_range, ":walker", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
 	       (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
 		   (party_set_slot, ":center_no", ":slot", 0),
        (try_end),
 	 (try_end),
-	 (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # clear rumors in lords
+	 (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
          (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
      (try_end),
-	 (try_for_range, ":troop_no", armor_merchants_begin, village_elders_end), # clear rumors in merchants/elders
+	 (try_for_range, ":troop_no", armor_merchants_begin, village_elders_end), # TLD clear rumors in merchants/elders
          (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
      (try_end),
    ]),
@@ -175,14 +175,15 @@ simple_triggers = [
   (180,[(val_sub, "$g_player_luck", 1),(val_max, "$g_player_luck", 0),]),
 
   # Banner selection menu
-  (24,[(eq, "$g_player_banner_granted", 1),
-       (troop_slot_eq, "trp_player", slot_troop_banner_scene_prop, 0),
-       (le,"$auto_menu",0),
+  #GA: no custom banners in TLD
+#  (24,[(eq, "$g_player_banner_granted", 1),
+#       (troop_slot_eq, "trp_player", slot_troop_banner_scene_prop, 0),
+#       (le,"$auto_menu",0),
 #normal_banner_begin
-       (start_presentation, "prsnt_banner_selection"),
+#       (start_presentation, "prsnt_banner_selection"),
 #custom_banner_begin
 #    (start_presentation, "prsnt_custom_banner"),
-      ]),
+#      ]),
 
   # Party Morale: Move morale towards target value.
  (24,[(call_script, "script_get_player_party_morale_values"),
@@ -378,7 +379,7 @@ simple_triggers = [
  (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end),
      ]),
 
-  # Changing readiness to join army
+# Changing readiness to join army
    (10,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":modifier", 1),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -580,11 +581,11 @@ simple_triggers = [
 
   # Reset hero quest status
   # Change hero relation
- (36,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+ (12,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
         (troop_set_slot, ":troop_no", slot_troop_does_not_give_quest, 0),
       (try_end),
      
-      (try_for_range, ":troop_no", village_elders_begin, village_elders_end),
+      (try_for_range, ":troop_no", mayors_begin, mayors_end),
         (troop_set_slot, ":troop_no", slot_troop_does_not_give_quest, 0),
       (try_end),
      ]),
@@ -1245,8 +1246,7 @@ simple_triggers = [
   ]),
   # Consuming food at every 14 hours
   (14,
-   [
-    (eq, "$g_player_is_captive", 0),
+   [(eq, "$g_player_is_captive", 0),
     (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
     (assign, ":num_men", 0),
     (try_for_range, ":i_stack", 0, ":num_stacks"),
@@ -1692,8 +1692,7 @@ simple_triggers = [
 
 # Army quest initializer
   (3,
-   [
-     (assign, "$g_random_army_quest", -1),
+   [ (assign, "$g_random_army_quest", -1),
      (check_quest_active, "qst_follow_army", 1),
      (is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
 #Rebellion changes begin
