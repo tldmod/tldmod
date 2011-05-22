@@ -640,6 +640,7 @@ skins = [
 #     ("manface_african"   ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
      ("mordor_face_a"     ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("mordor_face_b"     ,0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
+     ("mordor_face_c"     ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("face_camo_a"       ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ("face_camo_b"       ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ("face_camo_c"       ,0xfde4c8d8,["hair_blonde"],[0xff502a19, 0xff19100c, 0xff0c0d19]),
