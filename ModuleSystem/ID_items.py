@@ -854,5 +854,5 @@ itm_herbarium_reward = 852
 itm_ring_a_reward = 853
 itm_ring_b_reward = 854
 itm_dale_bow_reward = 855
-itm_witchking_helmet = 856
-itm_explosive_reward = 857
+itm_explosive_reward = 856
+itm_witchking_helmet = 857

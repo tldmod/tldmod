@@ -1152,7 +1152,6 @@ items =[
 ["athelas_reward","Athelas_Plant",[("athelas_plant",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["scroll_reward","On_the_Fall_of_Gondolin",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
-#["evil_scroll_reward","Scroll_of_Evil_Wisdomz",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["hammer_reward","Smith's_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["khand_knife_reward","Khand_Sacrificial_Knife",[("khand_sacrificial_knife",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["angmar_whip_reward","Master's_Whip",[("AngmarWhip",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
@@ -1177,6 +1176,6 @@ items =[
 ["ring_a_reward","Tulcarisil",[("reward_ring_a",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
-["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_covers_head,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
 ["explosive_reward","Isengard_Mine",[("tavern_barrel_b",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
+["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_covers_head,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
 ]
