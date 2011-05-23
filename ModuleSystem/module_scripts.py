@@ -13857,6 +13857,7 @@ scripts = [
       (assign, reg0, ":total_change"),
   ]),
 
+  # script_start_as_one
   # script to start the game as one... troop -- mtarini
   # (copys that troop stats, items, factions, race, etc, into player)
   ("start_as_one",[
@@ -13868,7 +13869,13 @@ scripts = [
     (troop_get_slot, "$players_subkingdom",":troop", slot_troop_subfaction), # subfaction
 	# copy race
 	(troop_get_type,":race",":troop"),
-	(troop_set_type,"trp_player",":race"),
+	(troop_get_type,":playerace","trp_player"),
+    (try_begin), # if player chose woman, preserve woman. If chose orc/dwarf troop - force orc/dwarf
+	   (this_or_next|neq, ":playerace", tf_female),
+	   (this_or_next|is_between, ":race", tf_orc_begin,tf_orc_end),
+	   (eq, ":race", tf_dwarf),
+	   (troop_set_type,"trp_player",":race"),
+	(try_end),
 	# copy items
 	(troop_clear_inventory, "trp_player"),
 	(troop_get_inventory_capacity, ":inv_cap", ":troop"),
@@ -14716,7 +14723,7 @@ scripts = [
        (str_store_party_name, s50, ":center_no"),
        (try_begin),
          (party_slot_eq, ":center_no", slot_party_type, spt_town),
-         (str_store_string, s51, "@The town of {s50}"),
+         (str_store_string, s51, "@The {s50}"), # "town of" stricken out
        (else_try),
          (party_slot_eq, ":center_no", slot_party_type, spt_village),
          (party_get_slot, ":bound_center", ":center_no", slot_village_bound_center),
