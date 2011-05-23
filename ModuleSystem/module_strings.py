@@ -2361,7 +2361,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rhun_rumor_begin", "Ride like the wind of the steppes!"),
 ("rhun_rumor_2", "The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us."),
 ("rhun_rumor_3", "Three wizards came to our lands a while ago. I wonder what they are up to."),
-("rhun_rumor_4", "Our lands are vast and scarcely populated. But we know how to survive there."),
+("rhun_rumor_4", "Our lands are vast and sparsely populated. But we know how to survive there."),
 ("rhun_rumor_5", "We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!"),
 ("rhun_rumor_6", "Our cousins from Khand prefer to fight on foot, but we know being on a horse is better."),
 ("rhun_rumor_7", "We have defeated Gondor legions before, and we will do it again!"),
@@ -2389,13 +2389,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #general idea= haughty, happy types, somewhat detached from the wars
 ("beorn_rumor_begin", "The woods are vast and all manner of creatures live inside."),
 ("beorn_rumor_2", "Wild bees make the best honey!"),
-("beorn_rumor_3", "Elves are elusive, but kind. Dwarves are loud and cheerful. Men of Dale are hardworking."),
-("beorn_rumor_4", "We see many strange beasts passing through the lands."),
+("beorn_rumor_3", "Elves of ht woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking."),
+("beorn_rumor_4", "We see many strange beasts passing through our lands."),
 ("beorn_rumor_5", "I sleep all night, and I work all day!"),
 ("beorn_rumor_6", "Evil is creeping from the mountains yonder."),
 ("beorn_rumor_7", "The great forest is not as it used to be anymore!"),
-("beorn_rumor_8", "The strength of the axe is not in the blade, but the haft."),
-("beorn_rumor_9", "We slept through the winter."),
+("beorn_rumor_8", "The strength of the axe is not in the blade, but in the haft."),
+("beorn_rumor_9", "We slept through the last winter. What? Yes, you need to eat a lot in the autumn to last through winter like this."),
 ("beorn_rumor_10", "Men of Rohan are our kin, bears are our blood, goblins are our prey!"),
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
@@ -2424,7 +2424,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("imladris_rumor_9", "I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours."),
 #Mirkwood Elves
 #general idea= Merl? Marco? - quite paranoid, slightly bigheaded about their own importance, secretly enjoying the fruits of their trade with Dale and dwarves.
-("woodelf_rumor_begin", " "),
+("woodelf_rumor_begin", "Edain of Dale make entertaining toys! They've learnt much from the Naugrim."),
 ("woodelf_rumor_2", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."), #Song of Nimrodel sung by Legolas
 ("woodelf_rumor_3", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #Legolas quote
 ("woodelf_rumor_4", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."),
@@ -2432,7 +2432,6 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("woodelf_rumor_6", "Shhh, no dhínen! There may be orcs lurking around. We must be on guard!"),
 ("woodelf_rumor_7", "*stares at you, obviously annoyed by your presence*"), #removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign
 ("woodelf_rumor_8", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
-("woodelf_rumor_9", "Edain of Dale make such amazing toys! They've learnt much from the Naugrim."),
 #Dale
 #general idea= fearful because of the assault from several fronts
 ("dale_rumor_begin", "First there was the dragon, now this..."),
@@ -2447,13 +2446,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("dale_rumor_10", "Our prosperity comes from trade with the Dwarves and the Elves. But it's hard to bargain with Dwarves. Very little profit there."),
 #Harad
 #general idea= Merl? This should be Merl's forte.
-("harad_rumor_begin", "The Black Snake will strike swift and deadly."),
+("harad_rumor_begin", "The Black Snake strike is swift and deadly."),
 ("harad_rumor_2", "By the Serpent! Our beasts will trample Gondorians into the dirt."),
 ("harad_rumor_3", "Odum vermajál otí verthaba av daranaja-e-jatánus!"),
 ("harad_rumor_4", "There is much gold and gems in Gondor. And even more in the lands beyond."),
 ("harad_rumor_5", "We will catch many western weaklings and sacrifice them to the Serpent God."),
 ("harad_rumor_6", "Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour."),
-("harad_rumor_7", "I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned."),
+("harad_rumor_7", "I'd never set my foot on a ship. Corsairs can have all the seas for themselves, it does not bother me the slightest."),
 ("harad_rumor_8", "Warriors of Khand are fierce and fearless, but their strategy is too simple."),
 ("harad_rumor_9", "I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace."),
 ("harad_rumor_10", "Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant."),
@@ -2503,7 +2502,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #Khand
 #general idea= More hardcore Easterling types
 ("khand_rumor_begin", "A fight is a fight, no matter how bloody. But retreat is the greatest shame!"),
-("khand_rumor_2", "Our swords once drawn, must have blood!"),
+("khand_rumor_2", "Our swords once drawn, must taste blood!"),
 ("khand_rumor_3", "The ground trembles under our heavy cataphract cavalry, but our enemies tremble at the mere mention of us!"),
 ("khand_rumor_4", "This time we left the Wainriders behind, our attack will catch the enemies off guard."),
 ("khand_rumor_5", "We are the Variags of Khand, the fiercest warriors anywhere!"),
