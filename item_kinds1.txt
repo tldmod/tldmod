@@ -1,5 +1,5 @@
 itemsfile version 2
-858
+860
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -139,6 +139,9 @@ itemsfile version 2
 0
 
  itm_mordor_warhorse Mordor_Warhorse Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 1500 110595670016 0.000000 100 0 52 0 4 135 34 36 0 0 33 0
+0
+
+ itm_mordor_warhorse2 Mordor_Sinister_Warhorse Mordor_Sinister_Warhorse 1  mordor_warhorse02 0  65537 0 2000 110595670016 0.000000 100 0 60 0 4 150 34 35 0 0 40 0
 0
 
  itm_gondor_courser Gondor_Courser Gondor_Courser 1  gondor_horse02 0  65537 0 323 110595670016 0.000000 100 0 16 0 2 80 37 43 0 0 10 0
@@ -2553,10 +2556,13 @@ itemsfile version 2
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 150 0 1.250000 100 0 0 0 0 40960 130 0 100 0 286 296
 0
 
- itm_westernesse2h_reward Nazgul_Sword Nazgul_Sword 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
+ itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
 0
 
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
+0
+
+ itm_nazgul_sword Nazgul_Sword Nazgul_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  73404419 9223635954298781951 200 0 3.000000 100 0 0 0 0 51200 120 0 120 0 301 306
 0
 
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0

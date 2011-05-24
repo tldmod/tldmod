@@ -1054,7 +1054,7 @@ game_menus = [
 ("start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_1",[],"HARADRIMS, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
- ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_warrior"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_acolyte"),(jump_to_menu,"mnu_choose_gender"),]),
  ("start_3",[],"UMBAR, the pirates from the South Seas",     [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
  ("start_4",[],"RHUN, the barbarians from the East",         [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
  ("start_5",[],"KHAND, the savage people from South-East",   [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),

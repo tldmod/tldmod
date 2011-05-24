@@ -1963,7 +1963,7 @@ fac_reward_items_list = [
 #fac_rohan
 [(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
 #fac_mordor
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_westernesse2h_reward", 0), (9, "itm_witchking_helmet", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
 #fac_isengard
 [(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_isengard_heavy_sword", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
 #fac_lorien
@@ -1981,7 +1981,7 @@ fac_reward_items_list = [
 #fac_khand
 [(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0), (4, "itm_khand_voulge", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_khand_heavy_lam", imod_lordly), (8, "itm_variag_kataphrakt", imod_champion), (9, "itm_khand_knife_reward", 0)],
 #fac_umbar
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_corsair_throwing_dagger", imod_large_bag), (5, "itm_umb_helm_f", imod_reinforced), (6, "itm_ring_b_reward", 0), (7, "itm_umbar_pike", imod_masterwork), (8, "itm_umb_armor_h", imod_lordly), (9, "itm_kraken", imod_masterwork)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_corsair_throwing_dagger", imod_large_bag), (5, "itm_umb_helm_f", imod_reinforced), (6, "itm_ring_b_reward", 0), (7, "itm_umbar_pike", imod_masterwork), (8, "itm_umb_armor_h", imod_lordly), (9, "itm_westernesse2h_reward", 0)],
 #fac_moria
 [(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_moria_orc_shield_c", imod_reinforced), (5, "itm_warg_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_orc_two_handed_axe", imod_masterwork), (8, "itm_moria_armor_e", imod_lordly), (9, "itm_orc_bow", imod_masterwork)],
 #fac_guldur

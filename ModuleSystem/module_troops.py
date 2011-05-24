@@ -254,8 +254,8 @@ pirate_face2           = man_face_older_2
 undead_face1   = 0x00000000002000000000000000000000
 undead_face2   = 0x000000000020010000001fffffffffff
  
-mordor_man1            = 0x000000003f000594150294994a49149200000000001d36600000000000000000
-mordor_man2            = 0x0000000fff0020044fc3bdcbd56e24db00000000001e48bc0000000000000000
+mordor_man1            = 0x00000001b500058014c170390922190a00000000001d48780000000000000000
+mordor_man2            = 0x0000000fff000004594c9a49a34b2b5300000000001deaf90000000000000000
 
 #NAMES:
 #
@@ -1494,8 +1494,11 @@ troops = [
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_machete,],
       str_9|agi_8|int_4|cha_4|level(15),wp(105),knows_athletics_2|knows_power_strike_3,orc_face1,orc_face2],
 #Numenorean
+["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
+   [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_uruk_spear,],
+      str_10|agi_7|int_4|cha_4|level(10),wp(100),knows_common|knows_riding_1|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
 ["black_numenorean_warrior","Black_Numenorean_Warrior","Black_Numenorean_Warriors",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
-   [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_m_armor_b,itm_mordor_man_shield_b,itm_mordor_sword,itm_mordor_longsword,],
+   [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_m_armor_b,itm_mordor_man_shield_b,itm_mordor_sword,],
       str_13|agi_11|int_4|cha_4|level(15),wp(135),knows_common|knows_riding_2|knows_athletics_2|knows_shield_2|knows_power_strike_3|knows_ironflesh_3,mordor_man1,mordor_man2],
 ["black_numenorean_veteran_warrior","Black_Numenorean_Veteran_Warrior","Black_Numenorean_Veteran_Warriors",tf_evil_man| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_uruk_greaves,itm_evil_gauntlets_b,itm_m_armor_a,itm_mordor_helm,itm_mordor_man_shield_b,itm_mordor_longsword,itm_mordor_sword,],
@@ -1562,13 +1565,13 @@ troops = [
    [itm_isen_uruk_helm_d,itm_isen_uruk_heavy_c,itm_evil_gauntlets_a,itm_uruk_greaves,itm_isen_uruk_shield_b,itm_isengard_sword,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knows_common|knows_riding_5|knows_shield_4|knows_power_strike_5|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
 ["lieutenant_of_mordor","Lieutenant_of_Mordor","Lieutenants_of_Mordor",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_cap_helm,itm_m_cap_armor,itm_leather_gloves,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse,],
+   [itm_mordor_cap_helm,itm_m_cap_armor,itm_leather_gloves,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse2,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knows_common|knows_tactics_1|knows_athletics_2|knows_shield_1|knows_power_strike_4,mordor_man1,mordor_man2],
 ["captain_of_mordor","Captain_of_Mordor","Captains_of_Mordor",tf_evil_man| tf_mounted| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_cap_helm,itm_m_cap_armor,itm_evil_gauntlets_b,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse,],
+   [itm_mordor_cap_helm,itm_m_cap_armor,itm_evil_gauntlets_b,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse2,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knows_common|knows_tactics_3|knows_riding_2|knows_athletics_3|knows_shield_3|knows_power_strike_4|knows_ironflesh_1,mordor_man1,mordor_man2],
 ["high_captain_of_mordor","High_Captain_of_Mordor","High_Captains_of_Mordor",tf_evil_man| tf_mounted| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_cap_helm,itm_m_cap_armor,itm_evil_gauntlets_a,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse,],
+   [itm_mordor_cap_helm,itm_m_cap_armor,itm_evil_gauntlets_a,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse2,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knows_common|knows_tactics_4|knows_riding_6|knows_athletics_3|knows_shield_3|knows_power_strike_5|knows_ironflesh_7,mordor_man1,mordor_man2],
 ["easterling_chieftain","Variag_Chieftain","Variag_Chieftains",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
    [itm_khand_noble_lam,itm_variag_greaves,itm_variag_kataphrakt,itm_khand_helmet_b1,itm_mail_mittens,itm_khand_tulwar,itm_khand_2h_tulwar,itm_easterling_round_horseman,],
@@ -2315,16 +2318,16 @@ troops = [
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_5|knows_trainer_5,0x00000004f2001185003a4e4b5475450200000000000000000000000000000000],
 #Mordor
 ["knight_2_1","Captain_Mortakh","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_1|knows_trainer_3,0x0000000cff00150f21c38927434e804f00000000001d24be0000000000000000],
 ["knight_2_2","Duessa","_",tf_hero| tf_female| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_2,0x0000000ebf0010060df26111c003815400000000001c5e380000000000000000],
 ["knight_2_3","Skang","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_3,0x000000003f002580204175274345004f00000000001d24380000000000000000],
 ["knight_2_4","Slitrik_the_Cleaver","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_4,0x0000000bff0005c53d8299398c69929200000000001db67b0000000000000000],
 ["knight_2_5","Grishnakh","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_uruk_heavy_k,itm_m_uruk_heavy_k,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_uruk_helm_f,itm_mordor_longsword,itm_mordor_uruk_shield_c,],
@@ -2401,7 +2404,7 @@ troops = [
 # ["knight_4_5","Goblin_Chieftain","bug",tf_hero,0,reserved,fac_moria,[  itm_fur_coat,itm_mail_hauberk,itm_leather_boots,itm_splinted_greaves,itm_mail_mittens,itm_bastard_sword_a,itm_tab_shield_round_e,itm_throwing_axes,itm_throwing_axes],knight_attrib_5,wp(250),knight_skills_5,0x0000000ff508330546dc4a59422d450c00000000001e51340000000000000000,nord_face_older_2],
 #Dol Guldur
 ["knight_4_6","Lord_Rometyon","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_guldur,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_1,0x00000008bf00140821c0b9959091a33700000000001cc8790000000000000000],
 ["knight_4_7","General_Tuskim","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_guldur,
    [itm_m_uruk_heavy_k,itm_m_uruk_heavy_k,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_uruk_helm_f,itm_mordor_uruk_shield_c,itm_mordor_longsword,],
@@ -3187,9 +3190,9 @@ troops = [
 ["black_numenorean_sorcerer","Black_Numenorean_Sorcerer","Black_numenorean_sorcerer",tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_m_cap_armor,itm_mordor_man_shield_b,itm_mordor_helm,itm_mail_mittens,itm_mordor_sword,itm_leather_boots,],
       def_attrib|level(45),wp(255),knows_common|knows_tactics_1|knows_athletics_6|knows_shield_6|knows_power_strike_6|knows_ironflesh_6,mercenary_face_1,mercenary_face_2],
-["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_numenorean_acolyte",tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_man_shield_b,itm_m_cap_armor,itm_mordor_helm,itm_mail_mittens,itm_mordor_sword,itm_leather_boots,],
-      def_attrib|level(24),wp(145),knows_common|knows_tactics_1|knows_athletics_4|knows_shield_3|knows_power_strike_4|knows_ironflesh_4,mercenary_face_1,mercenary_face_2],
+["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
+   [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_uruk_spear,],
+      str_10|agi_7|int_4|cha_4|level(10),wp(100),knows_common|knows_riding_1|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
 ["wolf_rider_of_mirkwood","Wolf_Rider_of_Isengard","warg_rider_of_mirkwood",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_leather_gloves,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_leather_boots,itm_wargarmored_2c,],
       def_attrib|level(15),wp(110),knows_pathfinding_1|knows_horse_archery_2|knows_riding_4|knows_power_throw_2|knows_power_strike_2|knows_ironflesh_2,mercenary_face_1,mercenary_face_2],
@@ -3416,6 +3419,7 @@ upgrade2(troops,"uruk_hai_of_isengard","large_uruk_hai_of_isengard","uruk_hai_pi
 upgrade2(troops,"large_uruk_hai_of_isengard","fighting_uruk_hai_warrior","fighting_uruk_hai_berserker")
 upgrade2(troops,"uruk_hai_pikeman","fighting_uruk_hai_pikeman","fighting_uruk_hai_berserker")
 #BLACK NUMENORIANS
+upgrade(troops,"black_numenorean_acolyte","black_numenorean_warrior")
 upgrade2(troops,"black_numenorean_warrior","black_numenorean_veteran_warrior","black_numenorean_veteran_horseman")
 upgrade2(troops,"black_numenorean_veteran_warrior","black_numenorean_champion","black_numenorean_assassin")
 upgrade(troops,"black_numenorean_veteran_horseman","black_numenorean_horsemaster")
