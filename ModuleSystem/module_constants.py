@@ -1963,7 +1963,7 @@ fac_reward_items_list = [
 #fac_rohan
 [(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
 #fac_mordor
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse2", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
 #fac_isengard
 [(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_isengard_heavy_sword", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
 #fac_lorien

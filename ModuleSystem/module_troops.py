@@ -254,8 +254,8 @@ pirate_face2           = man_face_older_2
 undead_face1   = 0x00000000002000000000000000000000
 undead_face2   = 0x000000000020010000001fffffffffff
  
-mordor_man1            = 0x00000001b500058014c170390922190a00000000001d48780000000000000000
-mordor_man2            = 0x0000000fff000004594c9a49a34b2b5300000000001deaf90000000000000000
+mordor_man1            = 0x000000013f00000013045438c402929200000000001d4ab00000000000000000
+mordor_man2            = 0x0000000fff00200429cd7d495667732e00000000001d5cf90000000000000000
 
 #NAMES:
 #
@@ -2317,7 +2317,7 @@ troops = [
    [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_5|knows_trainer_5,0x00000004f2001185003a4e4b5475450200000000000000000000000000000000],
 #Mordor
-["knight_2_1","Captain_Mortakh","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
+["knight_2_1","Captain_Mortakh","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_1|knows_trainer_3,0x0000000cff00150f21c38927434e804f00000000001d24be0000000000000000],
 ["knight_2_2","Duessa","_",tf_hero| tf_female| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
@@ -2326,7 +2326,7 @@ troops = [
 ["knight_2_3","Skang","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_3,0x000000003f002580204175274345004f00000000001d24380000000000000000],
-["knight_2_4","Slitrik_the_Cleaver","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
+["knight_2_4","Slitrik_the_Cleaver","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_longsword,itm_mordor_man_shield_b,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_4,0x0000000bff0005c53d8299398c69929200000000001db67b0000000000000000],
 ["knight_2_5","Grishnakh","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
@@ -2403,7 +2403,7 @@ troops = [
 # ["knight_4_4","Goblin_Chieftain","bug",tf_hero,0,reserved,fac_moria,[itm_hunter,itm_gambeson,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_tab_shield_round_e,itm_throwing_axes],knight_attrib_4,wp(210),knight_skills_4,0x0000000c3f1001ca3d6955b26a8939a300000000001e39b60000000000000000,nord_face_older_2],
 # ["knight_4_5","Goblin_Chieftain","bug",tf_hero,0,reserved,fac_moria,[  itm_fur_coat,itm_mail_hauberk,itm_leather_boots,itm_splinted_greaves,itm_mail_mittens,itm_bastard_sword_a,itm_tab_shield_round_e,itm_throwing_axes,itm_throwing_axes],knight_attrib_5,wp(250),knight_skills_5,0x0000000ff508330546dc4a59422d450c00000000001e51340000000000000000,nord_face_older_2],
 #Dol Guldur
-["knight_4_6","Lord_Rometyon","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_guldur,
+["knight_4_6","Lord_Rometyon","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_guldur,
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_m_cap_armor,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
       str_20|agi_20|int_20|cha_20|level(40),wp(300),knight_skills_1,0x00000008bf00140821c0b9959091a33700000000001cc8790000000000000000],
 ["knight_4_7","General_Tuskim","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_guldur,
@@ -2626,7 +2626,7 @@ troops = [
 ["town_46_weaponsmith","Shtazg_Dulbash","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_uruk,0,0,fac_mordor,
    [itm_m_uruk_light_a,itm_uruk_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,mercenary_face_1,mercenary_face_2],
-["town_47_weaponsmith","Moez_Metalz","_",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_rhun,
+["town_47_weaponsmith","Moez_Metalz","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_evil_man,0,0,fac_rhun,
    [itm_rhun_armor_j,itm_furry_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,rhun_man1,rhun_man2],
 ["town_48_weaponsmith","Blurg_Snowseller","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_gundabad,
@@ -2881,10 +2881,10 @@ troops = [
 ["town_46_horse_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_uruk,0,0,fac_guldur,
    [itm_m_uruk_heavy_c,itm_orc_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,man_face_young_1,man_face_older_2],
-["town_47_horse_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_rhun,
+["town_47_horse_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_evil_man,0,0,fac_rhun,
    [itm_rhun_armor_p,itm_furry_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,rhun_man1,rhun_man2],
-["town_south_rhun_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_rhun,
+["town_south_rhun_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_evil_man,0,0,fac_rhun,
    [itm_rhun_armor_p,itm_furry_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,rhun_man1,rhun_man2],
 ["town_48_horse_merchant","Supply_Master","_",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_gundabad,
@@ -2985,22 +2985,22 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_rhun","Rhun_Camp_Chief","_",tf_hero| tf_randomize_face,0,0,fac_rhun,
    [itm_rhun_armor_p,itm_furry_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(2),wp(20),knows_common,rhun_man1,rhun_man2],
 ["elder_khand","Khand_Camp_Chief","_",tf_hero| tf_randomize_face,0,0,fac_khand,
    [itm_khand_foot_lam_c,itm_variag_greaves,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dunland","Dun_Camp_Chief","_",tf_hero| tf_randomize_face,0,0,fac_dunland,
    [itm_dunland_armor_h,itm_dunland_wolfboots,],
       def_attrib|level(2),wp(20),knows_common,dunland_face1,dunland_face2],
 ["elder_umbar","Umbar_Quartermaster","_",tf_hero| tf_randomize_face,0,0,fac_umbar,
    [itm_umb_armor_a,itm_corsair_boots,],
-      def_attrib|level(2),wp(20),knows_common,dunland_face1,dunland_face2],
+      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_moria","Moria_Chief","_",tf_hero| tf_randomize_face| tf_orc,0,0,fac_moria,
    [itm_moria_armor_c,itm_orc_ragwrap,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_gunda","Chief_of_the_North_Camps","_",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
    [itm_gundabad_armor_d,itm_orc_furboot_tall,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dale","Dale_Quartermaster","_",tf_hero| tf_randomize_face,0,0,fac_dale,
    [itm_fur_coat,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
