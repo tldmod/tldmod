@@ -1055,19 +1055,19 @@ game_menus = [
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_1",[],"HARADRIMS, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_acolyte"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_3",[],"UMBAR, the pirates from the South Seas",     [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
- ("start_4",[],"RHUN, the barbarians from the East",         [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
- ("start_5",[],"KHAND, the savage people from South-East",   [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_3",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_4",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_5",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"go back",[(jump_to_menu, "mnu_start_eye")]),    ]
 ),
 ("start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_1"  ,[],"in the armies amassed at MORDOR",         [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("start_2"  ,[],"in the cliffs of Mount GUNDABAD",          [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
- ("start_3"  ,[],"in the caves of DOL GULDUR",             [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("spacer",[],"_",[]),
- ("go_back"     ,[],"go back",[(jump_to_menu, "mnu_start_eye")]),    ]
+ ("start_1",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_2",[],"in the cliffs of Mount GUNDABAD", [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_3",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("spacer" ,[],"_"  ,[]),
+ ("go_back",[],"go back",[(jump_to_menu, "mnu_start_eye")]),    ]
 ),
 ("start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
