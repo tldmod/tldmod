@@ -3471,9 +3471,9 @@ VS_OUTPUT_TLD_MAP vs_mtarini_map (
       
    if (Distort) {
      // break texture patterns
-     Out.Tex0 += float2(1,1) * 0.07*sin( 2.6*tc.x );
-     Out.Tex0 += float2(-1,1) * 0.06*sin( 4.0*tc.y );
-     Out.Tex0*=1.4;
+     Out.Tex0 += float2(1.0,1.0) * 0.09*sin( 2.6*tc.x );
+     Out.Tex0 += float2(-1.5,1.0) * 0.12*sin( 4.0*tc.y );
+     Out.Tex0*=2.4;
    }
    
    float4 diffuse_light = vAmbientColor + vLightColor;
