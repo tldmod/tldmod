@@ -209,3 +209,4 @@ scn_battlefield10 = 207
 scn_small_ford = 208
 scn_hornburg_castle = 209
 scn_morannon_castle = 210
+scn_west_osgiliath_center1 = 211

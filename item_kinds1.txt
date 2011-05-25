@@ -1,5 +1,5 @@
 itemsfile version 2
-860
+861
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2592,6 +2592,9 @@ itemsfile version 2
  itm_explosive_reward Isengard_Mine Isengard_Mine 1  tavern_barrel_b 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  2147483660 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
+ itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 4222129146954496 2000 0 4.500000 100 0 0 0 0 33792 94 0 166 0 296 289
+0
+
+ itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
 0
 

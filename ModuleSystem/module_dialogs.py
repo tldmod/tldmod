@@ -6916,11 +6916,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (try_begin),
          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
          (str_store_string, s5, "@We have reports of some enemy activity near {s13}.\
- Our scouts have so far failed to get close enough and scout the area for enemy movements.\
+ Our scouts have so far failed to get close enough and scout the area for enemy comings and goings.\
  I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts."), #Good
        (else_try),
          (str_store_string, s5, "@My spies tell me the enemy is up to something in {s13}.\
- Our cowardly scouts have so far failed to get close enough and tell us anything of importance.\
+ Our cowardly scouts have so far failed to get close enough and tell us anything of import.\
  I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!"), #Evil
        (try_end),
        

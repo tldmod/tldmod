@@ -857,4 +857,5 @@ itm_ring_a_reward = 855
 itm_ring_b_reward = 856
 itm_dale_bow_reward = 857
 itm_explosive_reward = 858
-itm_witchking_helmet = 859
+itm_corsair_trident = 859
+itm_witchking_helmet = 860
