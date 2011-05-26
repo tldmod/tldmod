@@ -3455,6 +3455,7 @@ VS_OUTPUT_TLD_MAP vs_mtarini_map (
   uniform const int Shadow, 
   uniform const int Special, 
   uniform const int Distort, 
+  uniform const float MultUV,
   float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
 {
    VS_OUTPUT_TLD_MAP Out = (VS_OUTPUT_TLD_MAP)0;
@@ -3473,7 +3474,7 @@ VS_OUTPUT_TLD_MAP vs_mtarini_map (
      // break texture patterns
      Out.Tex0 += float2(1.0,1.0) * 0.09*sin( 2.6*tc.x );
      Out.Tex0 += float2(-1.5,1.0) * 0.12*sin( 4.0*tc.y );
-     Out.Tex0*=2.4;
+     Out.Tex0*=MultUV;
    }
    
    float4 diffuse_light = vAmbientColor + vLightColor;
@@ -3622,7 +3623,7 @@ technique mtarini_snowy_map
 {
    pass P0
    {
-      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES);
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
       PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_NONE);
    }
 }
@@ -3631,7 +3632,7 @@ technique mtarini_map
 {
    pass P0
    {
-      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO);
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
       PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
    }
 }
@@ -3640,8 +3641,8 @@ technique mtarini_swampy_map
 {
    pass P0
    {
-      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES);
-      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_MID);
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
    }
 }
 
@@ -3649,7 +3650,7 @@ technique mtarini_desert_map
 {
    pass P0
    {
-      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES);
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
       PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
    }
 }
@@ -3676,7 +3677,6 @@ VS_OUTPUT_FONT vs_mtarini_progressbar(float4 vPosition : POSITION, float4 vColor
    return Out;
 }
 
-
 technique mtarini_progressbar
 {
    pass P0
@@ -3685,3 +3685,77 @@ technique mtarini_progressbar
       PixelShader = compile ps_2_0 ps_main_no_shadow();
    }
 }
+
+// WATERFALLS
+VS_OUTPUT vs_mtarini_waterfall (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   tc.y -= 0.15*time_var;
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+   if (UseSecondLight)
+   {
+		diffuse_light += vLightColor;
+	}
+   
+	//directional lights, compute diffuse color
+	float dp = dot(vWorldN, -vSkyLightDir);
+	diffuse_light += max(0, dp) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+
+	//shadow mapping variables
+	float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+technique mtarini_waterfall
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_waterfall(PCF_NONE, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
