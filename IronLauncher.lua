@@ -38,8 +38,8 @@ BreakPoints = 0
 	CoreResources2CommonRes("Data\\","materials.brf")
 	--CoreResources2CommonRes("Data\\","pictures.brf")
 	CoreResources2CommonRes("Data\\","shaders.brf")
-	--CoreResources2CommonRes("Data\\","textures.brf")
-	--CoreResources2CommonRes("Data\\","ui_meshes.brf")
+	CoreResources2CommonRes("Data\\","textures.brf")
+	CoreResources2CommonRes("Data\\","ui_meshes.brf")
 
 -- // Module Root
 
