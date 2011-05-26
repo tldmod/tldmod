@@ -3654,3 +3654,34 @@ technique mtarini_desert_map
    }
 }
 
+// PROGRESS BAR SHADER TRICK
+
+VS_OUTPUT_FONT vs_mtarini_progressbar(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FONT Out;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   tc.x *= (vPosition.x )*1.25213;
+
+   Out.Tex0 = tc;
+   Out.Color = vColor * vMaterialColor;
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+
+technique mtarini_progressbar
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_progressbar();
+      PixelShader = compile ps_2_0 ps_main_no_shadow();
+   }
+}
