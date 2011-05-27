@@ -110,10 +110,8 @@ game_menus = [
 	(set_show_messages,0),
 	#  add a little money
 	(troop_add_gold, "trp_player", 50),
-##        (troop_add_item, "trp_player","itm_horn",0),
+	##        (troop_add_item, "trp_player","itm_horn",0),
 	
-	 #  free food for everyone
-	(troop_add_item, "trp_player","itm_dried_meat",0),
 #	(call_script,"script_TLD_troop_banner_slot_init"),
 	(call_script,"script_reward_system_init"),
 	(call_script,"script_init_player_map_icons"),
@@ -142,7 +140,13 @@ game_menus = [
     (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
     [ ("continue",[],"Go forth upon you chosen path...",
-       [(troop_equip_items, "trp_player"),
+       [ 
+	     #  free food for everyone
+		(troop_add_item, "trp_player","itm_dried_meat",0),
+		# TEMP: a spear for everyone
+		(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
+		
+		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
         (change_screen_map), #(change_screen_return),
         ]),
@@ -152,14 +156,12 @@ game_menus = [
 	    ],"CHEAT: become a {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",0),
 	    (call_script,"script_start_as_one",":t"),
-	    (troop_add_item, "trp_player","itm_dried_meat",0),
 		(jump_to_menu,"mnu_start_phase_2" ),
 	  ]),
       ("cheat01",[(troop_get_upgrade_troop,":t","$player_current_troop_type",1),(gt,":t",0),(str_store_troop_name,s21,":t"),
 	    ],"CHEAT: become a  {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",1),
 	    (call_script,"script_start_as_one",":t"),
-	    (troop_add_item, "trp_player","itm_dried_meat",0),
 		(jump_to_menu,"mnu_start_phase_2" ),
 	  ]),
       ("cheat03",[(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party",
