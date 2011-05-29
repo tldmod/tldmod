@@ -429,5 +429,6 @@ script_formation_battle_tactic_init_aux = 427
 script_formation_battle_tactic_apply_aux = 428
 script_battle_tactic_init_aux = 429
 script_battle_tactic_apply_aux = 430
+script_team_get_nontroll_leader = 431
 
 

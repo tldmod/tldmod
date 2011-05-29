@@ -1562,7 +1562,7 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War (+1000 XP).",[(add_xp_to_troop,1000,"trp_player"), (display_message, "@Added +1000 XP, now wait for the War...", 0x30FFC8),]),
+   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War!",[(assign,"$tld_war_began",1), (display_message, "@You asked for it...", 0x30FFC8),]),
    ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -1615,6 +1615,18 @@ game_menus = [
     (assign, reg0, ":old_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
    ]),
+   ("camp_mvtest_trolls",[],"Test trolls in battle.",[
+     (party_add_members, "p_main_party", "trp_troll_of_moria", 3),
+     (set_spawn_radius, 0),
+     (spawn_around_party, "p_main_party", "pt_mordor_war_party"),
+     (assign, ":troll_party", reg0),
+     (party_clear, ":troll_party"),
+     (party_add_members, ":troll_party", "trp_black_numenorean_horsemaster", 3),
+     (party_add_members, ":troll_party", "trp_olog_hai", 3),
+     (party_add_members, ":troll_party", "trp_orc_archer_of_mordor", 10),
+     (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
+     (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
+   ]),            
    ("camp_mvtest_legend",[],"Enable legendary places.",[
     (enable_party, "p_legend_amonhen"),
     (enable_party, "p_legend_deadmarshes"),

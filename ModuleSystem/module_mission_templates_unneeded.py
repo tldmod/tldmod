@@ -22,7 +22,7 @@ from module_constants import *
 		# (else_try),
 			# (agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
 		# (try_end),
-	# (end_try),
+	# (try_end),
   # ], [ 
 	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     # (get_player_agent_no, ":player_agent"),
@@ -34,7 +34,7 @@ from module_constants import *
        # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
 	   # (agent_set_hit_points , ":agent",0,1),
 	   # (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
-	# (end_try),
+	# (try_end),
 	# (set_show_messages , 1),
 
 	# ]

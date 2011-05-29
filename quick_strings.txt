@@ -325,7 +325,6 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
-qstr_DEBUG:_troll_health: DEBUG:_troll_health:_{reg1}%!
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_Your_horse_rears_ref Your_horse_rears,_refusing_to_obey_your_commands!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
@@ -402,11 +401,12 @@ qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
-qstr_Added_+1000_XP_now_w Added_+1000_XP,_now_wait_for_the_War...
+qstr_You_asked_for_it... You_asked_for_it...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
 qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
+qstr_Mordor_party_with_ol Mordor_party_with_olog_hai_spawned!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
 qstr_Rank_{reg0}:_{s20}_m Rank_{reg0}:_{s20},_mod_{reg1}.
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!

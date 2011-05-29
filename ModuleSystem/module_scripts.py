@@ -357,7 +357,7 @@ scripts = [
 		# (ge, reg10, 1), (str_store_string, s24, "@Recruit of {s5}"),
 	# (else_try),
 		# (str_store_string, s24, "@Unknown to {s5}"),
-	# (end_try),
+	# (try_end),
   ]),
 
 # script_get_allied_rank_title_to_s24
@@ -392,7 +392,7 @@ scripts = [
             (eq, ":rank", 1), (str_store_string, s24, "@Known to {s5}"),
         (else_try),
             (str_store_string, s24, "@Stranger to {s5}"),
-        (end_try),
+        (try_end),
     (else_try),
         (try_begin),
             (ge, ":rank", 9), (str_store_string, s24, "@Great Enforcer of {s5}"),
@@ -414,8 +414,8 @@ scripts = [
             (eq, ":rank", 1), (str_store_string, s24, "@Known to {s5}"),
         (else_try),
             (str_store_string, s24, "@Unknown to {s5}"),
-        (end_try),
-    (end_try),
+        (try_end),
+    (try_end),
   ]),
 
 # script_get_rank_title_to_s24  
@@ -747,7 +747,7 @@ scripts = [
 		(val_mul, ":cur_wage", ":stack_size"),
 						
 		(val_add, ":spending", ":cur_wage"),
-	(end_try),  # end of for each stack
+	(try_end),  # end of for each stack
 	(assign, reg4, ":spending"),
   ]
   ),
@@ -798,9 +798,9 @@ scripts = [
 				# CAN'T afford
 				(val_add, ":n_unpaid_troops", ":stack_size"),
 				(troop_set_slot, ":stack_troop", slot_troop_upkeep_not_paid, 1),
-			(end_try),
+			(try_end),
 			
-		(end_try),  # end of for each stack
+		(try_end),  # end of for each stack
 
 		(try_begin),(gt,  ":n_unpaid_troops", 0 ), 
 		    (assign, reg12, ":n_unpaid_troops"),
@@ -811,9 +811,9 @@ scripts = [
 			(else_try),
 				(str_store_string, s10, "@{s11}"),
 				(str_store_string, s12, "@its"), 
-			(end_try),
+			(try_end),
 			(assign, ":n_unpaid_troops", ":stack_size" ), # for this faction
-		(end_try),
+		(try_end),
 		
 		(val_add, ":n_tot_unpaid_troops", ":n_unpaid_troops"),
 		
@@ -821,15 +821,15 @@ scripts = [
 		(store_mul, reg10, ":spending", -1),
 		(call_script, "script_add_faction_respoint", ":fac", reg10),
 			
-	(end_try),  # end of for each faction
+	(try_end),  # end of for each faction
 
 	(try_begin),(eq,  ":tot_spending", 0 ),(eq,  ":n_tot_unpaid_troops", 0 ), 
 		(display_message, "@[no upkeep costs]"),
-	(end_try),
+	(try_end),
 	(try_begin),(gt, ":n_tot_unpaid_troops", 0),
 		(display_message, "@Short of Resource Points!!", color_bad_news),
 		(display_message, "@{s10} will soon reassign some of {s12} troops away from your party!", color_bad_news),
-	(end_try),
+	(try_end),
 	
 	(assign, "$g_cur_week_half_daily_wage_payments", 0), # reset "rest in city" discount
    ]),
@@ -889,13 +889,13 @@ scripts = [
 					(try_begin), (gt, ":stack_wounded", 0),  # if wounded, gain less money
 						(val_sub, ":stack_wounded", 1),
 						(assign, ":gain", ":gain_ko"),
-					(end_try),
+					(try_end),
 					(val_sub, ":spending", ":gain"),  # gain RP
 					(val_sub, ":tot_spending", ":gain"), # gain RP
 					(val_add, ":allowance",":gain"), # gain RP
 					(val_add, ":n_left",  1), 
 					#(val_add, ":n_tot_left",  1), 
-				(end_try),
+				(try_end),
 			(try_end), # end of a stack
 			
 			(gt, ":n_left", 0),
@@ -903,20 +903,20 @@ scripts = [
 				(str_store_faction_name,s11,":fac"),
 				(display_message, "@Superior orders from {s11} to reassign troops:", color_bad_news),
 				(assign,  ":msg_shown", 1), # only once
-			(end_try),
+			(try_end),
 			
 			(str_store_troop_name_by_count,s10,":stack_troop", ":n_left"),
 			(assign, reg12, ":n_left"),
 			
 			(display_message, "@{reg12} {s10} left the party!", color_bad_news),
 			(party_remove_members, ":party", ":stack_troop", ":n_left"),
-		(end_try),  # end of for all stacks
+		(try_end),  # end of for all stacks
 		
 		(neq,  ":spending", 0),
 		(store_mul, reg10, ":spending", -1),
 		(call_script, "script_add_faction_respoint", ":fac", reg10),
 		
-	(end_try),  # end of for each faction
+	(try_end),  # end of for each faction
 
 
 	]),
@@ -5170,7 +5170,7 @@ scripts = [
   ##        (store_faction_of_party, reg(23), reg(25)),
   ##        (eq, reg(23), "$pin_faction"),
   ##        (val_add, reg(24), 1),
-  ##      (end_try,0),
+  ##      (try_end,0),
   ##      # reg4 now holds num towns of this faction.
   ##      (gt, reg(24), 0), #Fail if there are no towns
   ##      (store_random, reg(26), reg(24)),
@@ -5182,9 +5182,9 @@ scripts = [
   ##        (try_begin,0),
   ##          (eq, reg(24), reg(26)),
   ##          (assign, "$pout_town", reg(25)), # result is this town
-  ##        (end_try,0),
+  ##        (try_end,0),
   ##        (val_add, reg(24), 1),
-  ##      (end_try,0),
+  ##      (try_end,0),
   ##  ]),
   
   #script_spawn_party_at_random_town:
@@ -9952,17 +9952,17 @@ scripts = [
       (party_get_num_companion_stacks, ":num_stacks","p_temp_party"),
       (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
-        (lt, ":cur_pos", 32), # spawn up to entry point 32
+        (lt, ":cur_pos", 32), # spawn up to entry point 31
         (set_visitor, ":cur_pos", ":stack_troop"),
         (val_add,":cur_pos", 1),
       (try_end),
-      (try_for_range, ":cur_troop", heroes_begin, heroes_end),
-        (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_lady),
-        (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
-        (lt, ":cur_pos", 32), # spawn up to entry point 32
-        (set_visitor, ":cur_pos", ":cur_troop"),
-        (val_add,":cur_pos", 1),
-      (try_end),
+      # (try_for_range, ":cur_troop", heroes_begin, heroes_end),
+        # (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_lady),
+        # (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
+        # (lt, ":cur_pos", 32), # spawn up to entry point 32
+        # (set_visitor, ":cur_pos", ":cur_troop"),
+        # (val_add,":cur_pos", 1),
+      # (try_end),
       #TLD NPC companions
       (val_max, ":cur_pos", 17), #if no one else in court, skip 16 (could be a throne)
       (try_for_range, ":cur_troop", companions_begin, companions_end),
@@ -9979,7 +9979,7 @@ scripts = [
         (store_troop_faction, ":troop_faction", ":cur_troop"),
         (store_relation, ":rel", ":center_faction", ":troop_faction"),
         (ge, ":rel", 0), #only spawn if friendly center
-        (lt, ":cur_pos", 32), # spawn up to entry point 32, can have multiple companions in a single town castle
+        (lt, ":cur_pos", 32), # spawn up to entry point 31, can have multiple companions in a single town castle
         (set_visitor, ":cur_pos", ":cur_troop"),
         (val_add,":cur_pos", 1),
       (try_end),
@@ -10001,7 +10001,9 @@ scripts = [
       (store_script_param, ":search_radius", 2),
       (val_mul, ":search_radius", 100),
       (get_scene_boundaries, pos10,pos11),
-      (team_get_leader, ":ai_leader", ":team_no"),
+      #(team_get_leader, ":ai_leader", ":team_no"),
+      (call_script, "script_team_get_nontroll_leader", ":team_no"),
+      (assign, ":ai_leader", reg0),
       (agent_get_position, pos1, ":ai_leader"),
       (set_fixed_point_multiplier, 100),
       (position_get_x, ":o_x", pos1),
@@ -10152,7 +10154,9 @@ scripts = [
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":battle_tactic", 2),
-      (team_get_leader, ":ai_leader", ":team_no"),
+      #(team_get_leader, ":ai_leader", ":team_no"),
+      (call_script, "script_team_get_nontroll_leader", ":team_no"),
+      (assign, ":ai_leader", reg0),
       (try_begin),
         (eq, ":battle_tactic", btactic_hold),
         (agent_get_position, pos1, ":ai_leader"),
@@ -10167,7 +10171,7 @@ scripts = [
         (team_give_order, ":team_no", grc_archers, mordr_advance),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
         (agent_set_speed_limit, ":ai_leader", 8),
         (agent_get_position, pos60, ":ai_leader"),
         (team_give_order, ":team_no", grc_everyone, mordr_hold),
@@ -10211,7 +10215,9 @@ scripts = [
         (try_end),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
         (agent_set_speed_limit, ":ai_leader", 9),
         (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
         (copy_position, pos60, pos0),
@@ -12441,7 +12447,7 @@ scripts = [
           (agent_set_animation, ":agent_no", "anim_stand_townguard"),
         (else_try),
           (agent_set_animation, ":agent_no", "anim_stand_townguard"),
-        (end_try),
+        (try_end),
       (else_try),
         (eq, ":troop_no", "trp_gondor_lord" ),
         (assign, ":stand_animation", "anim_sit_on_trone"), # mtarini: let sire denethor sit.
@@ -13899,13 +13905,13 @@ scripts = [
 	  (troop_raise_attribute,  "trp_player",":i",-1000), 	  
 	  (troop_raise_attribute,  "trp_player",":i",":x"), 
 	  #(assign, reg10, ":x"),(assign, reg11, ":i"),(display_message, "@Rising skill {reg11} to {reg10}"),
-	(end_try),
+	(try_end),
 	# copy stats: skills
     (try_for_range, ":i", 0, 38 ),
 	  (store_skill_level, ":x", ":i", ":troop"),
 	  (troop_raise_skill,  "trp_player",":i",-1000), 	  
 	  (troop_raise_skill,  "trp_player",":i",":x"), 
-	(end_try),
+	(try_end),
 	# copy stats: proficienceis
     (try_for_range, ":i", 0, 6),
 	  (store_proficiency_level, ":x", ":i", ":troop"),
@@ -13913,7 +13919,7 @@ scripts = [
 	  #(val_div, ":x", 4), # weapon proficiencies are too high!
 	  #(val_min, ":x", 60),
 	  (troop_raise_proficiency,  "trp_player",":i",":x"), 
-	(end_try),
+	(try_end),
   ]),
 
   #script_player_join_faction

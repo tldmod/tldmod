@@ -22,7 +22,7 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 		(else_try),
 			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
 		(try_end),
-	(end_try),
+	(try_end),
   ], [ 
 	(key_is_down, key_s),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     (get_player_agent_no, ":player_agent"),
@@ -34,7 +34,7 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
        (agent_get_team, reg10, ":agent"), (neg|teams_are_enemies , reg10, ":player_team"),
 	   (agent_set_hit_points , ":agent",0,1),
 	   (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
-	(end_try),
+	(try_end),
 	(set_show_messages , 1),
 
 	]
@@ -347,9 +347,9 @@ custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
   ]
 )
 
+#MV: inserted troll charging
 custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
   [
-	#  for tuning: show current troll HP
 	(try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
@@ -357,12 +357,46 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 		(troop_get_type, reg0, reg0),
 		(eq, reg0, tf_troll),
 
+        #Trolls charging - begin
+        (agent_get_team, ":troll_team", ":troll"),
+        (agent_get_position, pos1, ":troll"),
+
+        #get the closest noncav enemy
+        (assign, ":min_dist", 1000000),
+        (try_for_agents, ":enemy_agent"),
+            (agent_is_alive, ":enemy_agent"),
+            (agent_is_human, ":enemy_agent"),
+            (agent_get_team, ":enemy_team_no", ":enemy_agent"),
+            (teams_are_enemies, ":enemy_team_no", ":troll_team"),
+            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            (neq, ":enemy_class_no", grc_cavalry),
+            
+            (agent_get_position, pos0, ":enemy_agent"),
+            (get_distance_between_positions, ":dist", pos0, pos1),
+            (gt, ":min_dist", ":dist"),
+            (assign, ":min_dist", ":dist"),
+            (copy_position, pos2, pos0), #pos2 holds the nearest enemy position
+        (try_end),
+    
+# (assign, reg0, ":min_dist"),
+# (assign, reg1, ":troll"),
+# (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+
+        (try_begin),
+          (this_or_next|eq, ":min_dist", 1000000),
+          (lt, ":min_dist", 500),
+          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        (else_try),
+          (agent_set_scripted_destination, ":troll", pos2, 1), # head for the nearest enemy
+        (try_end),
+        #Trolls charging - end
+        
 		#  for tuning: show current troll HP at random times
 		(try_begin), 
 			(store_random_in_range,":random",1,20),
 			(eq,":random",1), # show it once in 20
 			(store_agent_hit_points,reg1,":troll"),
-			(display_message,"@DEBUG: troll health: {reg1}%!"),
+			#(display_message,"@DEBUG: troll health: {reg1}%!"),
 		(try_end),
 		
 		(agent_get_slot,":status",":troll",slot_agent_troll_swing_status),
@@ -400,7 +434,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 						
 					(neg|position_is_behind_position,2,1),
 					(assign,":status",1),
-				(end_try),
+				(try_end),
 			(try_end),
 		(try_end),
 		
@@ -429,7 +463,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 			(else_try),
 				(assign,":random_attack",3),
 				(agent_set_animation, ":troll", "anim_ready_overswing_troll"),
-			(end_try),
+			(try_end),
 			(agent_play_sound,":troll","snd_troll_grunt_long"),
 			(agent_set_slot,":troll",slot_agent_troll_swing_move,":random_attack"),
 		(else_try),
@@ -447,7 +481,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 				(agent_set_animation, ":troll", "anim_ready_and_release_slashleft_troll"),
 			(else_try),
 				(agent_set_animation, ":troll", "anim_ready_and_release_overswing_troll"),
-			(end_try),
+			(try_end),
 			#(agent_set_animation_progress, ":troll", 66),
 	  
 			(agent_play_sound,":troll","snd_big_weapon_swing"),
@@ -457,7 +491,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 				#(agent_get_look_position,1,":troll"), # because move 3 (overswing) rotates torso!
 			#(else_try),
 			(agent_get_position,1,":troll"),
-			#(end_try),
+			#(try_end),
 	  
 			(try_for_agents,":victim"),
 				(agent_is_alive,":victim"),
@@ -477,7 +511,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 					(position_rotate_z,3,-150),
 					(position_is_behind_position,2,3),
 					(assign,":hit",0), # misses troops if not in +/- 30 degrees 
-				(end_try),
+				(try_end),
 				(eq,":hit",1),
 			
 				# test if friendly troll...
@@ -555,7 +589,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 					(agent_set_hit_points,":victim",0), # horses are killed on spot!
 					(agent_deliver_damage_to_agent, ":troll", ":victim"),
 				(try_end),
-			(end_try),
+			(try_end),
 		(try_end),
 	(try_end),
 	]

@@ -2389,7 +2389,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #general idea= haughty, happy types, somewhat detached from the wars
 ("beorn_rumor_begin", "The woods are vast and all manner of creatures live inside."),
 ("beorn_rumor_2", "Wild bees make the best honey!"),
-("beorn_rumor_3", "Elves of ht woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking."),
+("beorn_rumor_3", "Elves of the woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking."),
 ("beorn_rumor_4", "We see many strange beasts passing through our lands."),
 ("beorn_rumor_5", "I sleep all night, and I work all day!"),
 ("beorn_rumor_6", "Evil is creeping from the mountains yonder."),

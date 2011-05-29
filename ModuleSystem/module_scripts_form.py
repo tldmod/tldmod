@@ -295,6 +295,11 @@ formAI_scripts = [
 			(agent_is_human, ":enemy_agent"),
 			(agent_get_team, ":enemy_team_no", ":enemy_agent"),
 			(teams_are_enemies, ":enemy_team_no", ":team_no"),
+            
+            (agent_get_troop_id, ":enemy_troop", ":enemy_agent"),
+            (troop_get_type, ":enemy_race", ":enemy_troop"),
+			(neq, ":enemy_race", tf_troll), #disregard trolls
+
 			(agent_get_class, ":enemy_class_no", ":enemy_agent"),
 			(try_begin),
 				(eq, ":enemy_class_no", grc_infantry),
@@ -432,7 +437,9 @@ formAI_scripts = [
 			(assign, "$battle_phase", BP_Jockey),
 		(try_end),
 		
-		(team_get_leader, ":team_leader", ":team_no"),
+		#(team_get_leader, ":team_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":team_leader", reg0),
 		
 		#infantry AI
 		(assign, ":place_leader_by_infantry", 0),
@@ -444,7 +451,7 @@ formAI_scripts = [
 			(ge, ":enemy_from_archers", AI_charge_distance), #and enemies are not immediately near
 			(assign, "$arc_charge_activated", 0), #then deactivate inf charge mode
 			#(display_message, "@Archers ordered to resume shooting."), #######################
-		(end_try),
+		(try_end),
 		
 		#JL ADVANCE Archers closer to infantry if they are too far away:
 		(try_begin),
@@ -569,7 +576,10 @@ formAI_scripts = [
 				(agent_get_class, ":enemy_nearest_troop_class", ":enemy_nearest_agent"), 
 
 				(agent_get_team, ":enemy_nearest_troop_team", ":enemy_nearest_agent"),
-				(team_get_leader, ":enemy_leader", ":enemy_nearest_troop_team"),
+				#(team_get_leader, ":enemy_leader", ":enemy_nearest_troop_team"),
+				(call_script, "script_team_get_nontroll_leader", ":enemy_nearest_troop_team"),
+				(assign, ":enemy_leader", reg0),
+
 				(store_mul, ":percent_enemy_cavalry", ":num_enemy_cavalry", 100),
 				(val_div, ":percent_enemy_cavalry", ":num_enemies"),
 				(try_begin),
@@ -619,7 +629,8 @@ formAI_scripts = [
 						(assign, ":distance_to_enemy_troop", ":enemy_nearest_non_cav_troop_distance"),
 						(copy_position, pos60, Nearest_Non_Cav_Enemy_Troop_Pos),
 						(agent_get_team, ":enemy_non_cav_team", ":enemy_nearest_non_cav_agent"),
-						(team_get_leader, reg0, ":enemy_non_cav_team"),
+						#(team_get_leader, reg0, ":enemy_non_cav_team"),
+						(call_script, "script_team_get_nontroll_leader", ":enemy_non_cav_team"),
 						(try_begin),
 							(eq, reg0, -1),
 							(assign, ":distance_to_enemy_group", Far_Away),
@@ -733,7 +744,7 @@ formAI_scripts = [
 			(try_begin),
 				(eq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and infantry needs to close in with them quickly
 				(team_give_order, ":team_no", grc_infantry, mordr_charge), #charge the infantry forward towards cavalry and enemy				
-			(end_try),
+			(try_end),
 				
 			 ##JL ACTIVATION of Inf Charge Mode when Inf AI has been deemed to need charge mode. Put here to activate charge immediately (not wait until next trigger).
 			(try_begin),
@@ -1312,30 +1323,30 @@ formAI_scripts = [
 
 		#put leader in duel or place leader -- JL added code for put leader in duel
 		(try_begin),
-			#basic conditions:
-			(ge, ":team_leader", 0), #The current team must have a leader
-			(agent_is_alive, ":team_leader"), #and the team leader must be alive
-			(store_agent_hit_points, ":leader_hp", ":team_leader"), #gets leaders hit point percent
-			(ge, ":leader_hp", 25), #and AI leader has more than 25% hit points (- he'll not want to duel any more when he's too wounded)
-			(get_player_agent_no, "$fplayer_agent_no"), #get the player agent ID
-			(agent_is_alive, "$fplayer_agent_no"), #and the player has to be alive
-			#(gt, ":nearest_threat_distance", 3000), #and if there is no cavalry threat within 30m
-			#(eq, ":enemy_nearest_gen_agent", "$fplayer_agent_no"), #and the nearest enemy unit (in relation to either AI inf or cav) must be the player character
-			#(eq, ":nearest_target_guarded", 0), #and the nearest cavalry target is unguarded
-			#if basic conditions are met then 
-			(agent_get_position, pos17, "$fplayer_agent_no"), #get the position of the player
-			(agent_get_position, pos18, ":team_leader"),	#get position of AI leader
-			(get_distance_between_positions, ":duel_distance", pos18, pos17), #get the (duel) distance between AI leader and player
-			(le, ":duel_distance", 3000), #if duel distance is 30m or less
-			#(display_message, "@Team leader moves towards the player"),
-			(agent_set_scripted_destination, ":team_leader", pos17, 1),
-			(try_begin),
-				(le, ":duel_distance", 3000), #if duel distance is 30m or less
-				#(agent_ai_set_always_attack_in_melee, ":team_leader", 1), #set the leader to offensive mode?
-				(team_give_order, ":team_no", grc_heroes, mordr_charge), #charge any heroes (presumably the leader). This overrides the movement to player position.
-				#(display_message, "@Team leader charges the player"),
-			(try_end),
-		(else_try),
+			# #basic conditions:
+			# (ge, ":team_leader", 0), #The current team must have a leader
+			# (agent_is_alive, ":team_leader"), #and the team leader must be alive
+			# (store_agent_hit_points, ":leader_hp", ":team_leader"), #gets leaders hit point percent
+			# (ge, ":leader_hp", 25), #and AI leader has more than 25% hit points (- he'll not want to duel any more when he's too wounded)
+			# (get_player_agent_no, "$fplayer_agent_no"), #get the player agent ID
+			# (agent_is_alive, "$fplayer_agent_no"), #and the player has to be alive
+			# #(gt, ":nearest_threat_distance", 3000), #and if there is no cavalry threat within 30m
+			# #(eq, ":enemy_nearest_gen_agent", "$fplayer_agent_no"), #and the nearest enemy unit (in relation to either AI inf or cav) must be the player character
+			# #(eq, ":nearest_target_guarded", 0), #and the nearest cavalry target is unguarded
+			# #if basic conditions are met then 
+			# (agent_get_position, pos17, "$fplayer_agent_no"), #get the position of the player
+			# (agent_get_position, pos18, ":team_leader"),	#get position of AI leader
+			# (get_distance_between_positions, ":duel_distance", pos18, pos17), #get the (duel) distance between AI leader and player
+			# (le, ":duel_distance", 3000), #if duel distance is 30m or less
+			# #(display_message, "@Team leader moves towards the player"),
+			# (agent_set_scripted_destination, ":team_leader", pos17, 1),
+			# (try_begin),
+				# (le, ":duel_distance", 3000), #if duel distance is 30m or less
+				# #(agent_ai_set_always_attack_in_melee, ":team_leader", 1), #set the leader to offensive mode?
+				# (team_give_order, ":team_no", grc_heroes, mordr_charge), #charge any heroes (presumably the leader). This overrides the movement to player position.
+				# #(display_message, "@Team leader charges the player"),
+			# (try_end),
+		# (else_try),
 			#---------------Normal form AI code for placing leader -- JL: let leader be in scripted mode before the fight starts only. And the leader primarily follows his cavalry if leader is on horse and has cavalry
 			(ge, ":team_leader", 0),
 			(agent_is_alive, ":team_leader"),
@@ -1829,8 +1840,10 @@ formAI_scripts = [
 	(store_script_param, ":fclass", 2),
 	(store_script_param, ":formation_extra_spacing", 3),
 	(store_script_param, ":fformation", 4),
-	(team_get_leader, ":fleader", ":fteam"),
-	(gt, ":fleader", -1),	#any team members left?
+	#(team_get_leader, ":fleader", ":fteam"),
+    (call_script, "script_team_get_nontroll_leader", ":fteam"),
+    (assign, ":fleader", reg0),
+	(gt, ":fleader", -1),	#any team members left? (MV: except trolls)
 	(agent_get_position, pos1, ":fleader"),
 	(try_begin),
 		(eq, "$autorotate_at_player", 1),
@@ -1906,7 +1919,7 @@ formAI_scripts = [
 		(store_character_level, ":troop_level", ":troop_id"),
 		(gt, ":troop_level", ":max_level"),
 		(assign, ":max_level", ":troop_level"),
-	(end_try),
+	(try_end),
 	(assign, ":column", 1),
 	(assign, ":rank_dimension", 1),
 	(store_mul, ":neg_y_distance", ":y_distance", -1),
@@ -1943,8 +1956,8 @@ formAI_scripts = [
 			(try_end),			
 			(assign, ":column", 1),
 			(val_add, ":rank_dimension", 1),
-		(end_try),
-	(end_try),
+		(try_end),
+	(try_end),
 	(assign, reg0, ":troop_count")
   ]),
 	   
@@ -2033,7 +2046,7 @@ formAI_scripts = [
 				(position_move_x, pos1, ":distance", 0),
 			(try_end),			
 			(assign, ":column", 1),		
-		(end_try),
+		(try_end),
 		
 	(else_try),
 		(eq, ":infantry_formation", formation_wedge),
@@ -2044,7 +2057,7 @@ formAI_scripts = [
 			(store_character_level, ":troop_level", ":troop_id"),
 			(gt, ":troop_level", ":max_level"),
 			(assign, ":max_level", ":troop_level"),
-		(end_try),
+		(try_end),
 		(assign, ":column", 1),
 		(assign, ":rank_dimension", 1),
 		(store_div, ":wedge_adj", ":distance", 2),
@@ -2076,8 +2089,8 @@ formAI_scripts = [
 				(try_end),			
 				(assign, ":column", 1),
 				(val_add, ":rank_dimension", 1),
-			(end_try),
-		(end_try),
+			(try_end),
+		(try_end),
 		
 	(else_try),
 		(eq, ":infantry_formation", formation_ranks),
@@ -2090,7 +2103,7 @@ formAI_scripts = [
 			(store_character_level, ":troop_level", ":troop_id"),
 			(gt, ":troop_level", ":max_level"),
 			(assign, ":max_level", ":troop_level"),
-		(end_try),
+		(try_end),
 
 		(assign, ":column", 1),
 		(val_add, ":max_level", 1),
@@ -2119,8 +2132,8 @@ formAI_scripts = [
 					(position_move_x, pos1, ":distance", 0),
 				(try_end),			
 				(assign, ":column", 1),
-			(end_try),
-		(end_try),
+			(try_end),
+		(try_end),
 		
 	(else_try),
 		(eq, ":infantry_formation", formation_shield),
@@ -2480,7 +2493,7 @@ formAI_scripts = [
 			(position_get_x, "$formation_02_x", ":fposition"),
 			(position_get_y, "$formation_02_y", ":fposition"),
 			(position_get_rotation_around_z, "$formation_02_rot", ":fposition"),
-		(end_try),
+		(try_end),
 	(else_try),
 		(eq, ":fteam", 1),
 		(try_begin),
@@ -2498,7 +2511,7 @@ formAI_scripts = [
 			(position_get_x, "$formation_12_x", ":fposition"),
 			(position_get_y, "$formation_12_y", ":fposition"),
 			(position_get_rotation_around_z, "$formation_12_rot", ":fposition"),
-		(end_try),
+		(try_end),
 	(else_try),
 		(eq, ":fteam", 2),
 		(try_begin),
@@ -2516,7 +2529,7 @@ formAI_scripts = [
 			(position_get_x, "$formation_22_x", ":fposition"),
 			(position_get_y, "$formation_22_y", ":fposition"),
 			(position_get_rotation_around_z, "$formation_22_rot", ":fposition"),
-		(end_try),
+		(try_end),
 	(else_try),
 		(eq, ":fteam", 3),
 		(try_begin),
@@ -2534,19 +2547,10 @@ formAI_scripts = [
 			(position_get_x, "$formation_32_x", ":fposition"),
 			(position_get_y, "$formation_32_y", ":fposition"),
 			(position_get_rotation_around_z, "$formation_32_rot", ":fposition"),
-		(end_try),	
-	(end_try),
+		(try_end),	
+	(try_end),
 	(team_set_order_position, ":fteam", ":fclass", ":fposition"),
     
-# #test code
-# (try_begin),
-# (eq, ":fteam", 1),
-# (eq, ":fclass", grc_infantry),
-# (position_get_x, reg0, ":fposition"),
-# (position_get_y, reg1, ":fposition"),
-# (display_message, "@Debug: enemy infantry ordered to ({reg0},{reg1})"),
-# (end_try),
-
   ]),	
 
 
@@ -2654,7 +2658,9 @@ formAI_scripts = [
 	(store_script_param, ":fteam", 1),
 	(store_script_param, ":fclass", 2),
 	(store_script_param, ":fformation", 3),
-	(team_get_leader, ":fleader", ":fteam"),
+	#(team_get_leader, ":fleader", ":fteam"),
+    (call_script, "script_team_get_nontroll_leader", ":fteam"),
+    (assign, ":fleader", reg0),
 	(assign, ":first_agent_in_formation", -1),
 	(try_begin),
 		(eq, ":fformation", formation_square),
@@ -2715,6 +2721,7 @@ formAI_scripts = [
 	(store_script_param, ":fleader", 3),
 	(store_script_param, ":agent", 4),
 	(agent_get_class, reg0, ":agent"),
+	(this_or_next|eq, ":fclass", grc_everyone),
 	(eq, reg0, ":fclass"),
 	(agent_get_team, ":team", ":agent"),
 	(eq, ":team", ":fteam"),
@@ -2722,9 +2729,9 @@ formAI_scripts = [
 	(agent_is_human, ":agent"),
 	(neq, ":fleader", ":agent"),
     #MV: troll check - they don't belong to formations
-    # (agent_get_troop_id, ":agent_troop", ":agent"),
-    # (troop_get_type, ":agent_race", ":agent_troop"),
-    # (neq, ":agent_race", tf_troll),
+    (agent_get_troop_id, ":agent_troop", ":agent"),
+    (troop_get_type, ":agent_race", ":agent_troop"),
+    (neq, ":agent_race", tf_troll),
   ]),
 
 	
@@ -3282,6 +3289,10 @@ formAI_scripts = [
 		(agent_get_team, ":bgteam", ":cur_agent"),
 		(agent_get_class, ":bgroup", ":cur_agent"),
 		(agent_get_troop_id, ":cur_troop", ":cur_agent"),
+        
+		(troop_get_type, ":cur_race", ":cur_troop"),
+		(neq, ":cur_race", tf_troll), #disregard trolls
+            
 		(store_character_level, ":cur_level", ":cur_troop"),
 		(agent_get_ammo, ":cur_ammo", ":cur_agent"),
 		(agent_get_wielded_item, reg0, ":cur_agent", 0),
@@ -4025,7 +4036,9 @@ formAI_scripts = [
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":battle_tactic", 2),
-      (team_get_leader, ":ai_leader", ":team_no"),
+      #(team_get_leader, ":ai_leader", ":team_no"),
+      (call_script, "script_team_get_nontroll_leader", ":team_no"),
+      (assign, ":ai_leader", reg0),
       (try_begin),
         (eq, ":battle_tactic", btactic_hold),
         (agent_get_position, pos1, ":ai_leader"),
@@ -4040,7 +4053,7 @@ formAI_scripts = [
         (team_give_order, ":team_no", grc_archers, mordr_advance),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
         (ge, ":ai_leader", 0),
         (agent_set_speed_limit, ":ai_leader", 8),
         (agent_get_position, pos60, ":ai_leader"),
@@ -4085,7 +4098,9 @@ formAI_scripts = [
         (try_end),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
         (try_begin),
           (agent_is_alive, ":ai_leader"),
           (agent_set_speed_limit, ":ai_leader", 9),
@@ -4189,5 +4204,37 @@ formAI_scripts = [
 		(call_script, "script_orig_battle_tactic_apply_aux", ":team_no", ":battle_tactic"),
 	  (try_end),
   ]),
+
+  # script_team_get_nontroll_leader
+  # Input: team_no
+  # Output: leader agent ID (-1 if failed)
+  # This is a wrapper around team_get_leader, because team_set_leader doesn't work in MB, written to prevent trolls from being designated as leaders
+  ("team_get_nontroll_leader",
+    [
+      (store_script_param, ":team_no", 1),
+      (team_get_leader, ":team_leader", ":team_no"),
+      (assign, ":new_leader", ":team_leader"),
+      
+      (try_begin),
+        (agent_get_troop_id, ":troop_id", ":team_leader"),
+        (troop_get_type, ":troop_type", ":troop_id"),
+        (eq, ":troop_type", tf_troll), # is it a troll?
+      
+        #find a new leader: highest level
+        (assign, ":max_level", 0),
+        (assign, ":new_leader", -1),
+        (try_for_agents, ":agent"),
+          (call_script, "script_cf_valid_formation_member", ":team_no", grc_everyone, ":team_leader", ":agent"), #disregards trolls too
+          (agent_get_troop_id, ":troop_id", ":agent"),
+          (store_character_level, ":troop_level", ":troop_id"),
+          (gt, ":troop_level", ":max_level"),
+          (assign, ":max_level", ":troop_level"),
+          (assign, ":new_leader", ":agent"),
+        (try_end),
+      (try_end),
+      
+      (assign, reg0, ":new_leader"),
+  ]),
+
 
 ]
