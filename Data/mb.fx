@@ -3625,8 +3625,8 @@ technique mtarini_map
 {
    pass P0
    {
-      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
-      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
    }
 }
 
@@ -3643,8 +3643,81 @@ technique mtarini_desert_map
 {
    pass P0
    {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_snowy_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_DEFAULT);
+   }
+}
+
+technique mtarini_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_swampy_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+   }
+}
+
+technique mtarini_desert_map_SHDW
+{
+   pass P0
+   {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
       PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+
+technique mtarini_snowy_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_NVIDIA);
+   }
+}
+
+technique mtarini_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_swampy_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+   }
+}
+
+technique mtarini_desert_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
    }
 }
 
@@ -3864,6 +3937,25 @@ technique mtarini_standart_shader
    }
 }
 
+technique mtarini_standart_shader_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_DEFAULT,true);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+   }
+}
+
+technique mtarini_standart_shader_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NVIDIA,true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NVIDIA);
+   }
+}
+
+
 
 
 // WIND THOUGH LEAVES
@@ -3918,3 +4010,24 @@ technique mtarini_windy_flora
       PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
 	}
 }
+
+technique mtarini_windy_flora_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
+	}
+}
+
+technique mtarini_windy_flora_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
+	}
+}
+
+
+
