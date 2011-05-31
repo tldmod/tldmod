@@ -334,6 +334,7 @@ itc_bastardsword = itc_cut_two_handed |  itcf_thrust_twohanded | itc_parry_two_h
 itc_bastardfalchion = itc_cut_two_handed  | itc_parry_two_handed |itc_cleaver |itc_parry_onehanded
 
 itc_parry_polearm = itcf_parry_forward_polearm | itcf_parry_up_polearm | itcf_parry_right_polearm | itcf_parry_left_polearm
+itc_banner     = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_polearm
 itc_poleaxe    = itc_parry_polearm| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
 itc_staff      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
 itc_spear      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm

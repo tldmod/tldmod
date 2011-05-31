@@ -216,13 +216,20 @@ sounds = [
 
 
 #tf_orc			= 5 #(orcs, goblins)
- ("orc_die",sf_priority_10,  ["orc_death_1.mp3","orc_death_2.mp3","orc_death_3.mp3","orc_death_4.mp3","orc_death_5.mp3","orc_death_6.mp3","orc_death_7.mp3","orc_death_8.mp3"]),
- ("orc_hit",sf_priority_7|sf_vol_10, ["orc_hit_1.mp3","orc_hit_2.mp3","orc_hit_3.mp3","orc_hit_4.mp3","orc_hit_6.mp3","orc_hit_7.mp3","orc_hit_9.mp3","orc_hit_10.mp3"]),
- ("orc_grunt",sf_priority_6|sf_vol_4, ["orc_grunt_1.mp3"]), 
- ("orc_grunt_long",sf_priority_5|sf_vol_8, ["orc_grunt_long_1.mp3"]), 
- ("orc_yell",sf_priority_6|sf_vol_8, ["orc_yell_1.mp3","orc_yell_2.mp3"]), 
- ("orc_victory",sf_priority_5|sf_vol_10, ["orc_victory_1.mp3","orc_victory_2.mp3","orc_victory_3.mp3","orc_victory_4.mp3","orc_victory_5.mp3","orc_victory_6.mp3"]), 
- #tf_uruk			= 6 #(Uruks, Uruk Hai)
+("orc_die",sf_priority_10,  ["orc_death_1.mp3","orc_death_2.mp3","orc_death_3.mp3","orc_death_4.mp3","orc_death_5.mp3","orc_death_6.mp3","orc_death_7.mp3","orc_death_8.mp3"]),
+("orc_hit",sf_priority_7|sf_vol_10, ["orc_hit_1.mp3","orc_hit_2.mp3","orc_hit_3.mp3","orc_hit_4.mp3","orc_hit_6.mp3","orc_hit_7.mp3","orc_hit_9.mp3","orc_hit_10.mp3"]),
+("orc_grunt",sf_priority_6|sf_vol_4, ["orc_grunt_1.mp3"]), 
+("orc_grunt_long",sf_priority_5|sf_vol_8, ["orc_grunt_long_1.mp3"]), 
+("orc_yell",sf_priority_6|sf_vol_8, ["orc_yell_1.mp3","orc_yell_2.mp3"]), 
+("orc_victory",sf_priority_5|sf_vol_10, ["orc_victory_1.mp3","orc_victory_2.mp3","orc_victory_3.mp3","orc_victory_4.mp3","orc_victory_5.mp3","orc_victory_6.mp3"]), 
+#tf_uruk			= 6 #(Uruks, Uruk Hai)
+("uruk_die",sf_priority_10,  ["uruk_death_01.ogg","uruk_death_02.ogg","uruk_death_03.ogg","uruk_death_04.ogg","uruk_death_05.ogg","uruk_death_06.ogg"]),
+("uruk_hit",sf_priority_7|sf_vol_10, ["uruk_hit_01.ogg","uruk_hit_02.ogg","uruk_hit_03.ogg","uruk_hit_04.ogg","uruk_hit_05.ogg","uruk_hit_06.ogg","uruk_hit_07.ogg","uruk_hit_08.ogg","uruk_hit_09.ogg"]),
+("uruk_grunt",sf_priority_6|sf_vol_4, ["orc_grunt_1.mp3"]), 
+("uruk_grunt_long",sf_priority_5|sf_vol_8, ["uruk_shortyell_01.ogg","uruk_shortyell_02.ogg","uruk_shortyell_03.ogg","uruk_shortyell_04.ogg","uruk_shortyell_05.ogg","uruk_shortyell_06.ogg","uruk_shortyell_07.ogg",]), 
+("uruk_yell",sf_priority_6|sf_vol_8, ["uruk_yell_01.ogg","uruk_yell_02.ogg","uruk_yell_03.ogg","uruk_yell_04.ogg","uruk_yell_05.ogg","uruk_yell_06.ogg","uruk_yell_07.ogg","uruk_yell_08.ogg","uruk_yell_09.ogg","uruk_yell_10.ogg","uruk_yell_11.ogg","uruk_yell_12.ogg"]), 
+("uruk_victory",sf_priority_5|sf_vol_10, ["uruk_victory_01.ogg","uruk_victory_02.ogg","uruk_victory_03.ogg","uruk_victory_04.ogg","uruk_victory_05.ogg","uruk_victory_06.ogg","uruk_victory_07.ogg","uruk_victory_08.ogg","uruk_victory_09.ogg","uruk_victory_10.ogg","uruk_victory_11.ogg","uruk_victory_12.ogg","uruk_victory_13.ogg","uruk_victory_14.ogg","uruk_victory_15.ogg","uruk_victory_16.ogg","uruk_victory_17.ogg"]), 
+ 
 #tf_harad	= 7
  ("haradrim_yell",sf_priority_6|sf_vol_8, ["har_yell_1.mp3","har_yell_2.mp3","har_yell_3.mp3","har_yell_4.mp3","har_yell_5.mp3","har_yell_6.mp3","har_yell_7.mp3","har_yell_8.mp3","har_yell_9.mp3","har_yell_10.mp3"]),
  ("haradrim_victory",sf_priority_5|sf_vol_10, ["haradrim_victory_1.mp3","haradrim_victory_2.mp3","haradrim_victory_3.mp3","haradrim_victory_4.mp3","haradrim_victory_5.mp3"]),

@@ -1958,41 +1958,41 @@ fac_tableau_list = [
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
-[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0), (4, "itm_gondor_hunter", imod_heavy), (5, "itm_gon_tower_knight", imod_reinforced), (6, "itm_ring_a_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_westernesse1h_reward", 0), (9, "itm_horn_gondor_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4,"itm_gondor_hunter", imod_heavy), (5, "itm_gon_tower_knight", imod_reinforced), (6, "itm_ring_a_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_westernesse1h_reward", 0), (9, "itm_horn_gondor_reward", 0)],
 #fac_dwarf
-[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0), (4, "itm_dwarf_shield_j", imod_reinforced), (5, "itm_scroll_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_dwarf_armor_c", imod_lordly), (8, "itm_dwarf_great_axe", imod_masterwork), (9, "itm_dwarf_helm_p", imod_lordly)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_dwarf_shield_j", imod_reinforced), (5, "itm_scroll_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_dwarf_armor_c", imod_lordly), (8, "itm_dwarf_great_axe", imod_masterwork), (9, "itm_dwarf_helm_p", imod_lordly)],
 #fac_rohan
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
 #fac_mordor
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_mordor_warhorse2", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_mordor_warhorse2", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
 #fac_isengard
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_isengard_heavy_sword", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_crebain_reward", 0), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
 #fac_lorien
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0), (4, "itm_elven_amulet_reward", 0), (5, "itm_lorien_bow", imod_strong), (6, "itm_silmarillion_reward", 0), (7, "itm_lorien_sword_c", imod_masterwork), (8, "itm_lorien_armor_f", imod_lordly), (9, "itm_phial_reward", 0)],
+[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_lorien_bow", imod_strong), (6, "itm_silmarillion_reward", 0), (7, "itm_lorien_sword_c", imod_masterwork), (8, "itm_lorien_armor_f", imod_lordly), (9, "itm_phial_reward", 0)],
 #fac_imladris
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0), (4, "itm_elven_amulet_reward", 0), (5, "itm_riv_bas_sword", imod_balanced), (6, "itm_ring_b_reward", 0), (7, "itm_riv_warhorse2", imod_champion), (8, "itm_sword_of_arathorn", 0), (9, "itm_riv_armor_reward", 0)],
+[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_miruvor_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_riv_warhorse2", imod_champion), (8, "itm_sword_of_arathorn", 0), (9, "itm_riv_armor_reward", 0)],
 #fac_woodelf
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0), (4, "itm_elven_amulet_reward", 0), (5, "itm_scroll_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_mirkwood_great_spear", imod_balanced), (8, "itm_mirkwood_armor_e", imod_lordly), (9, "itm_mirkwood_sword_reward", 0)],
+[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_scroll_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_mirkwood_great_spear", imod_balanced), (8, "itm_mirkwood_armor_e", imod_lordly), (9, "itm_mirkwood_sword_reward", 0)],
 #fac_dale
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0), (4, "itm_dale_horse", imod_spirited), (5, "itm_scroll_reward", 0), (6, "itm_herbarium_reward", 0), (7, "itm_dale_sword_long", imod_masterwork), (8, "itm_dale_armor_l", imod_lordly), (9, "itm_dale_bow_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_dale_horse", imod_spirited), (5, "itm_scroll_reward", 0), (6, "itm_herbarium_reward", 0), (7, "itm_dale_sword_long", imod_masterwork), (8, "itm_dale_armor_l", imod_lordly), (9, "itm_dale_bow_reward", 0)],
 #fac_harad
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_lg_bow", imod_masterwork), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_westernesse2h_reward", 0), (8, "itm_harad_lion_scale", imod_lordly), (9, "itm_harad_totem_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_lg_bow", imod_masterwork), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_westernesse2h_reward", 0), (8, "itm_harad_lion_scale", imod_lordly), (9, "itm_harad_totem_reward", 0)],
 #fac_rhun
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0), (4, "itm_rhun_helm_h", imod_reinforced), (5, "itm_rhun_sword", imod_balanced), (6, "itm_herbarium_reward", 0), (7, "itm_rhun_greatsword", imod_masterwork), (8, "itm_rhun_armor_k", imod_lordly), (9, "itm_rhun_horse_h", imod_champion)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_rhun_helm_h", imod_reinforced), (5, "itm_rhun_sword", imod_balanced), (6, "itm_herbarium_reward", 0), (7, "itm_rhun_greatsword", imod_masterwork), (8, "itm_rhun_armor_k", imod_lordly), (9, "itm_rhun_horse_h", imod_champion)],
 #fac_khand
-[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0), (4, "itm_khand_voulge", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_khand_heavy_lam", imod_lordly), (8, "itm_variag_kataphrakt", imod_champion), (9, "itm_khand_knife_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_khand_voulge", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_khand_heavy_lam", imod_lordly), (8, "itm_variag_kataphrakt", imod_champion), (9, "itm_khand_knife_reward", 0)],
 #fac_umbar
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0), (4, "itm_corsair_throwing_dagger", imod_large_bag), (5, "itm_umb_helm_f", imod_reinforced), (6, "itm_ring_b_reward", 0), (7, "itm_umbar_pike", imod_masterwork), (8, "itm_umb_armor_h", imod_lordly), (9, "itm_corsair_trident", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_corsair_throwing_dagger", imod_large_bag), (5, "itm_umb_helm_f", imod_reinforced), (6, "itm_ring_b_reward", 0), (7, "itm_umbar_pike", imod_masterwork), (8, "itm_umb_armor_h", imod_lordly), (9, "itm_corsair_trident", 0)],
 #fac_moria
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_moria_orc_shield_c", imod_reinforced), (5, "itm_warg_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_orc_two_handed_axe", imod_masterwork), (8, "itm_moria_armor_e", imod_lordly), (9, "itm_orc_bow", imod_masterwork)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_moria_orc_shield_c", imod_reinforced), (5, "itm_warg_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_orc_two_handed_axe", imod_masterwork), (8, "itm_moria_armor_e", imod_lordly), (9, "itm_orc_bow", imod_masterwork)],
 #fac_guldur
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (7, "itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (7,"itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],
 #fac_gundabad
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (4, "itm_orc_throwing_axes", imod_large_bag), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_gundabad_helm_e", imod_lordly), (8, "itm_gundabad_armor_e", imod_lordly), (9, "itm_angmar_shield", imod_reinforced)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4, "itm_orc_throwing_axes", imod_large_bag), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_gundabad_helm_e", imod_lordly), (8, "itm_gundabad_armor_e", imod_lordly), (9, "itm_angmar_shield", imod_reinforced)],
 #fac_dunland
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0), (4, "itm_dun_shield_b", imod_reinforced), (5, "itm_torque_reward", 0), (6, "itm_dunnish_pike", imod_balanced), (7, "itm_dun_helm_e", imod_lordly), (8, "itm_dunland_armor_k", imod_lordly), (9, "itm_dun_berserker", imod_masterwork)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4, "itm_dun_shield_b", imod_reinforced), (5, "itm_torque_reward", 0), (6, "itm_dunnish_pike", imod_balanced), (7, "itm_dun_helm_e", imod_lordly), (8, "itm_dunland_armor_k", imod_lordly), (9, "itm_dun_berserker", imod_masterwork)],
 #fac_beorn
-[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0), (4, "itm_leather_gloves", imod_reinforced), (5, "itm_beorn_shield", imod_reinforced), (6, "itm_herbarium_reward", 0), (7, "itm_beorn_staff", imod_balanced), (8, "itm_beorn_heavy", imod_lordly), (9, "itm_beorn_battle_axe", imod_masterwork)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4, "itm_leather_gloves", imod_reinforced), (5, "itm_beorn_shield", imod_reinforced), (6, "itm_herbarium_reward", 0), (7, "itm_beorn_staff", imod_balanced), (8, "itm_beorn_heavy", imod_lordly), (9, "itm_beorn_battle_axe", imod_masterwork)],
 ]
 
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)

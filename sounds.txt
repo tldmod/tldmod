@@ -1,5 +1,5 @@
 soundsfile version 2
-573
+624
  drum_3.ogg 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -448,6 +448,57 @@ soundsfile version 2
  orc_victory_4.mp3 2640
  orc_victory_5.mp3 2640
  orc_victory_6.mp3 2640
+ uruk_death_01.ogg 160
+ uruk_death_02.ogg 160
+ uruk_death_03.ogg 160
+ uruk_death_04.ogg 160
+ uruk_death_05.ogg 160
+ uruk_death_06.ogg 160
+ uruk_hit_01.ogg 2672
+ uruk_hit_02.ogg 2672
+ uruk_hit_03.ogg 2672
+ uruk_hit_04.ogg 2672
+ uruk_hit_05.ogg 2672
+ uruk_hit_06.ogg 2672
+ uruk_hit_07.ogg 2672
+ uruk_hit_08.ogg 2672
+ uruk_hit_09.ogg 2672
+ uruk_shortyell_01.ogg 2128
+ uruk_shortyell_02.ogg 2128
+ uruk_shortyell_03.ogg 2128
+ uruk_shortyell_04.ogg 2128
+ uruk_shortyell_05.ogg 2128
+ uruk_shortyell_06.ogg 2128
+ uruk_shortyell_07.ogg 2128
+ uruk_yell_01.ogg 2144
+ uruk_yell_02.ogg 2144
+ uruk_yell_03.ogg 2144
+ uruk_yell_04.ogg 2144
+ uruk_yell_05.ogg 2144
+ uruk_yell_06.ogg 2144
+ uruk_yell_07.ogg 2144
+ uruk_yell_08.ogg 2144
+ uruk_yell_09.ogg 2144
+ uruk_yell_10.ogg 2144
+ uruk_yell_11.ogg 2144
+ uruk_yell_12.ogg 2144
+ uruk_victory_01.ogg 2640
+ uruk_victory_02.ogg 2640
+ uruk_victory_03.ogg 2640
+ uruk_victory_04.ogg 2640
+ uruk_victory_05.ogg 2640
+ uruk_victory_06.ogg 2640
+ uruk_victory_07.ogg 2640
+ uruk_victory_08.ogg 2640
+ uruk_victory_09.ogg 2640
+ uruk_victory_10.ogg 2640
+ uruk_victory_11.ogg 2640
+ uruk_victory_12.ogg 2640
+ uruk_victory_13.ogg 2640
+ uruk_victory_14.ogg 2640
+ uruk_victory_15.ogg 2640
+ uruk_victory_16.ogg 2640
+ uruk_victory_17.ogg 2640
  har_yell_1.mp3 2144
  har_yell_2.mp3 2144
  har_yell_3.mp3 2144
@@ -573,7 +624,7 @@ soundsfile version 2
  morgul02.ogg 1153
  osgiliath01.ogg 1153
  osgiliath03.ogg 1153
-246
+252
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -755,68 +806,74 @@ snd_orc_grunt 1120 1 438
 snd_orc_grunt_long 2128 1 439 
 snd_orc_yell 2144 2 440 441 
 snd_orc_victory 2640 6 442 443 444 445 446 447 
-snd_haradrim_yell 2144 10 448 449 450 451 452 453 454 455 456 457 
-snd_haradrim_victory 2640 5 458 459 460 461 462 
-snd_haradrim_die 160 14 463 159 160 161 162 163 164 165 166 167 168 169 170 171 
-snd_troll_die 160 1 464 
-snd_troll_hit 2672 3 465 465 465 
-snd_troll_grunt 1120 2 466 467 
-snd_troll_grunt_long 2128 2 467 468 
-snd_troll_yell 2144 2 467 468 
-snd_troll_victory 2640 3 467 468 464 
-snd_dunedain_yell 2144 10 469 470 471 472 473 474 475 476 477 478 
-snd_dunedain_victory 2640 3 479 480 481 
-snd_lothlorien_yell 2144 13 482 483 484 485 486 487 488 489 490 491 492 493 494 
-snd_lothlorien_victory 2640 5 495 496 497 498 499 
-snd_rivendell_yell 2144 12 500 501 485 486 487 488 489 490 491 492 493 494 
-snd_rivendell_victory 2640 5 495 496 497 498 499 
-snd_mirkwood_yell 2144 12 502 503 485 486 487 488 489 490 491 492 493 494 
-snd_mirkwood_victory 2640 5 495 496 497 498 499 
-snd_big_weapon_swing 2672 1 504 
-snd_thunder 2720 1 505 
+snd_uruk_die 160 6 448 449 450 451 452 453 
+snd_uruk_hit 2672 9 454 455 456 457 458 459 460 461 462 
+snd_uruk_grunt 1120 1 438 
+snd_uruk_grunt_long 2128 7 463 464 465 466 467 468 469 
+snd_uruk_yell 2144 12 470 471 472 473 474 475 476 477 478 479 480 481 
+snd_uruk_victory 2640 17 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 
+snd_haradrim_yell 2144 10 499 500 501 502 503 504 505 506 507 508 
+snd_haradrim_victory 2640 5 509 510 511 512 513 
+snd_haradrim_die 160 14 514 159 160 161 162 163 164 165 166 167 168 169 170 171 
+snd_troll_die 160 1 515 
+snd_troll_hit 2672 3 516 516 516 
+snd_troll_grunt 1120 2 517 518 
+snd_troll_grunt_long 2128 2 518 519 
+snd_troll_yell 2144 2 518 519 
+snd_troll_victory 2640 3 518 519 515 
+snd_dunedain_yell 2144 10 520 521 522 523 524 525 526 527 528 529 
+snd_dunedain_victory 2640 3 530 531 532 
+snd_lothlorien_yell 2144 13 533 534 535 536 537 538 539 540 541 542 543 544 545 
+snd_lothlorien_victory 2640 5 546 547 548 549 550 
+snd_rivendell_yell 2144 12 551 552 536 537 538 539 540 541 542 543 544 545 
+snd_rivendell_victory 2640 5 546 547 548 549 550 
+snd_mirkwood_yell 2144 12 553 554 536 537 538 539 540 541 542 543 544 545 
+snd_mirkwood_victory 2640 5 546 547 548 549 550 
+snd_big_weapon_swing 2672 1 555 
+snd_thunder 2720 1 556 
 snd_pull_ballista 2048 1 60 
-snd_evil_orders 768 1 506 
-snd_evil_horn 2560 1 507 
-snd_nazgul_skreech_long 2720 1 508 
-snd_nazgul_skreech_short 2720 1 509 
-snd_horror_scream_man 2720 5 510 511 512 513 514 
-snd_horror_scream_woman 2720 1 515 
-snd_horror_scream_orc 2720 1 516 
-snd_warg_lone_woof 2656 5 517 518 519 520 521 
+snd_evil_orders 768 1 557 
+snd_evil_horn 2560 1 558 
+snd_nazgul_skreech_long 2720 1 559 
+snd_nazgul_skreech_short 2720 1 560 
+snd_horror_scream_man 2720 5 561 562 563 564 565 
+snd_horror_scream_woman 2720 1 566 
+snd_horror_scream_orc 2720 1 567 
+snd_warg_lone_woof 2656 5 568 569 570 571 572 
 snd_horse_snort_again 1872 5 323 324 325 326 327 
-snd_spear_trap 2416 1 522 
-snd_moria_ambiance 899 1 523 
-snd_henneth_ambiance 899 1 524 
-snd_goodforest_ambiance 899 1 525 
-snd_evilforest_ambiance 899 1 526 
-snd_water_waves_ambiance 899 1 527 
-snd_water_splash_ambiance 899 1 528 
-snd_water_wavesplash_ambiance 899 1 529 
-snd_wind_ambiance 899 1 530 
-snd_isengard_ambiance 899 1 531 
-snd_evilmen_ambiance 899 1 532 
-snd_orcs_ambiance 899 1 533 
-snd_morgul_ambiance 899 1 534 
-snd_gondor_ambiance 899 1 535 
-snd_rohan_ambiance 899 1 536 
-snd_dwarf_ambiance 899 1 537 
-snd_harad_ambiance 899 1 538 
-snd_gondor_occasional 1153 5 539 540 356 541 348 
-snd_elves_occasional 1153 4 542 543 544 545 
-snd_beorn_occasional 1153 7 542 543 544 541 355 348 354 
-snd_rohan_occasional 1153 10 546 547 548 549 541 539 542 356 348 352 
-snd_dwarf_occasional 1153 5 550 551 356 552 553 
-snd_dale_occasional 1153 9 542 543 544 541 355 356 348 352 554 
-snd_rhun_occasional 1153 8 546 547 548 549 555 355 356 348 
-snd_harad_occasional 1153 10 352 547 548 549 555 355 353 556 557 558 
-snd_umbar_occasional 1153 3 559 560 561 
-snd_dunland_occasional 1153 7 555 539 345 346 347 348 354 
-snd_orc_occasional 1153 6 562 555 563 564 565 566 
-snd_guldur_occasional 1153 4 555 564 565 566 
-snd_moria_occasional 1153 4 559 559 567 568 
-snd_isengard_occasional 1153 12 568 555 564 565 566 355 563 356 550 551 554 354 
-snd_urukhai_occasional 1153 6 555 564 565 566 563 354 
-snd_seaside_occasional 1153 6 542 543 544 560 561 356 
-snd_morgul_occasional 1153 9 559 559 559 559 559 559 559 569 570 
-snd_eosgi_occasional 1153 8 564 565 566 571 553 572 554 552 
-snd_wosgi_occasional 1153 5 571 553 572 554 552 
+snd_spear_trap 2416 1 573 
+snd_moria_ambiance 899 1 574 
+snd_henneth_ambiance 899 1 575 
+snd_goodforest_ambiance 899 1 576 
+snd_evilforest_ambiance 899 1 577 
+snd_water_waves_ambiance 899 1 578 
+snd_water_splash_ambiance 899 1 579 
+snd_water_wavesplash_ambiance 899 1 580 
+snd_wind_ambiance 899 1 581 
+snd_isengard_ambiance 899 1 582 
+snd_evilmen_ambiance 899 1 583 
+snd_orcs_ambiance 899 1 584 
+snd_morgul_ambiance 899 1 585 
+snd_gondor_ambiance 899 1 586 
+snd_rohan_ambiance 899 1 587 
+snd_dwarf_ambiance 899 1 588 
+snd_harad_ambiance 899 1 589 
+snd_gondor_occasional 1153 5 590 591 356 592 348 
+snd_elves_occasional 1153 4 593 594 595 596 
+snd_beorn_occasional 1153 7 593 594 595 592 355 348 354 
+snd_rohan_occasional 1153 10 597 598 599 600 592 590 593 356 348 352 
+snd_dwarf_occasional 1153 5 601 602 356 603 604 
+snd_dale_occasional 1153 9 593 594 595 592 355 356 348 352 605 
+snd_rhun_occasional 1153 8 597 598 599 600 606 355 356 348 
+snd_harad_occasional 1153 10 352 598 599 600 606 355 353 607 608 609 
+snd_umbar_occasional 1153 3 610 611 612 
+snd_dunland_occasional 1153 7 606 590 345 346 347 348 354 
+snd_orc_occasional 1153 6 613 606 614 615 616 617 
+snd_guldur_occasional 1153 4 606 615 616 617 
+snd_moria_occasional 1153 4 610 610 618 619 
+snd_isengard_occasional 1153 12 619 606 615 616 617 355 614 356 601 602 605 354 
+snd_urukhai_occasional 1153 6 606 615 616 617 614 354 
+snd_seaside_occasional 1153 6 593 594 595 611 612 356 
+snd_morgul_occasional 1153 9 610 610 610 610 610 610 610 620 621 
+snd_eosgi_occasional 1153 8 615 616 617 622 604 623 605 603 
+snd_wosgi_occasional 1153 5 622 604 623 605 603 

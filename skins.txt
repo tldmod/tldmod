@@ -226,7 +226,7 @@ urukhai 0
  1  orc_hair_ears 
  1  orc_hair_ears 
  3  face_urukhai_a 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_b 4294967295 1 1  orc_hair_ears  4294967295  face_urukhai_c 4294967295 1 1  orc_hair_ears  4294967295 
- 6  0 snd_orc_die  1 snd_orc_hit  2 snd_orc_grunt  3 snd_orc_grunt_long  4 snd_orc_yell  6 snd_orc_victory 
+ 6  0 snd_uruk_die  1 snd_uruk_hit  2 snd_uruk_grunt  3 snd_uruk_grunt_long  4 snd_uruk_yell  6 snd_uruk_victory 
  skel_uruk 1.000000 
 4 5
 8
@@ -257,7 +257,7 @@ uruk 0
  1  orc_hair_ears 
  1  orc_hair_ears 
  3  face_uruk_a 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_b 4294967295 1 1  orc_hair_ears  4294967295  face_uruk_c 4294967295 1 1  orc_hair_ears  4294967295 
- 6  0 snd_orc_die  1 snd_orc_hit  2 snd_orc_grunt  3 snd_orc_grunt_long  4 snd_orc_yell  6 snd_orc_victory 
+ 6  0 snd_uruk_die  1 snd_uruk_hit  2 snd_uruk_grunt  3 snd_uruk_grunt_long  4 snd_uruk_yell  6 snd_uruk_victory 
  skel_uruk 0.900000 
 4 5
 8
@@ -310,7 +310,7 @@ dwarf 1
 
  1  hair_blonde_dwarf 
  1  dwarf_beard_blonde 
- 6  dwarfface_young 4291551456 1 3  hair_blonde  4289742615  4289742615  4283443737  dwarfface_young_2 4292866017 1 4  hair_blonde  4289742615  4284689944  4283443737  4279832588  dwarfface_7 4291879136 1 4  hair_blonde  4286787610  4283443737  4279832588  4278979865  dwarfface_midage 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  dwarfface_midage_2 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  dwarfface_rugged 4290824392 1 2  hair_blonde  4279702291  4278650892 
+ 6  manface_young 4291551456 1 3  hair_blonde  4289742615  4289742615  4283443737  manface_young_2 4292866017 1 4  hair_blonde  4289742615  4284689944  4283443737  4279832588  manface_7 4291879136 1 4  hair_blonde  4286787610  4283443737  4279832588  4278979865  manface_midage 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  manface_midage_2 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  manface_rugged 4290824392 1 2  hair_blonde  4279702291  4278650892 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_man_yell  6 snd_man_victory 
  skel_dwarf 1.000000 
 2 3
