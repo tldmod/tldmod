@@ -3611,7 +3611,7 @@ dialogs = [
         (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
         (eq, "$g_talk_troop_met", 0),
         ],
-   "Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a simple mount to help you in your travels.", "lord_pretalk",[
+   "Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a simple mount to help you in your travels. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to a chest.", "lord_pretalk",[
           (assign, ":num_theater_enemies", 0),
           (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
           (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
@@ -3647,6 +3647,7 @@ dialogs = [
         (else_try),
           (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
         (try_end),
+        (assign, reg1, tld_player_level_to_own_chest),
    ]],
 
   [anyone,"lord_start", [],

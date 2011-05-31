@@ -9,16 +9,16 @@ spr_inventory 4101 0 package bobaggage 0
 spr_empty 0 0 0 0 0
 
 
-spr_chest_a 5 0 chest_gothic bochest_gothic 0
+spr_chest_a 0 0 chest_gothic bochest_gothic 0
 
 
-spr_container_small_chest 5 0 package bobaggage 0
+spr_container_small_chest 0 0 package bobaggage 0
 
 
-spr_container_chest_b 5 0 chest_b bo_chest_b 0
+spr_container_chest_b 0 0 chest_b bo_chest_b 0
 
 
-spr_container_chest_c 5 0 chest_c bo_chest_c 0
+spr_container_chest_c 0 0 chest_c bo_chest_c 0
 
 
 spr_player_chest 5 0 player_chest bo_player_chest 0

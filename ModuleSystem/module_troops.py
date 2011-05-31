@@ -3028,6 +3028,7 @@ troops = [
 ["bonus_chest_3","Bonus_Chest","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      def_attrib,0,0,0],
 ["camp_chest_faction","Faction_Chest","bug",tf_hero|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [],      def_attrib,0,knows_inventory_management_10,0],
 ["camp_chest_none","Chest_for_nones","bug",tf_hero|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [],      def_attrib,0,0,0],
+["player_chest","Your_Chest","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      def_attrib,0,0,0],
 # These are used as arrays in the scripts.
 ["temp_array_a","bug","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      0,0,0,0],
 ["temp_array_b","bug","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      0,0,0,0],

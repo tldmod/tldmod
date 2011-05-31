@@ -12129,7 +12129,12 @@ scripts = [
 #       (replace_scene_props, banner_scene_props_begin, "spr_empty"),
      (try_end),
      (try_begin),
-       (neq, ":cur_leader", "trp_player"),
+       #(neq, ":cur_leader", "trp_player"),
+       (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"),
+       (store_character_level, ":player_level", "trp_player"),
+       (ge, ":player_level", tld_player_level_to_own_chest),
+       #leave unlocked
+     (else_try),
        (replace_scene_props, "spr_player_chest", "spr_locked_player_chest"),
      (try_end),
      ]),
