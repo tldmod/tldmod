@@ -1933,6 +1933,7 @@ dialogs = [
       (try_begin),
         (neg|party_is_active, "p_player_garrison"),
         (enable_party, "p_player_garrison"),
+        (party_add_members, "p_player_garrison", "trp_player", 1), #to get around a bug with empty parties
         (party_attach_to_party, "p_player_garrison", "$g_encountered_party"),
         (party_set_name, "p_player_garrison", "@{playername}'s Reserves"),
         (party_set_flags, "p_player_garrison", pf_no_label),
