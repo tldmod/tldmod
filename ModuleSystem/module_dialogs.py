@@ -1926,7 +1926,26 @@ dialogs = [
 	]
 ],
 
+# Player reserves - no upkeep for now
+[anyone|plyr,"player_hire_troop", 
+	[ (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), # keep troops only at faction's capital
+      # check if first time, and initialize      
+      (try_begin),
+        (neg|party_is_active, "p_player_garrison"),
+        (enable_party, "p_player_garrison"),
+        (party_attach_to_party, "p_player_garrison", "$g_encountered_party"),
+        (party_set_name, "p_player_garrison", "@{playername}'s Reserves"),
+        (party_set_flags, "p_player_garrison", pf_no_label),
+        (party_set_ai_behavior, "p_player_garrison", ai_bhvr_hold),
+      (try_end),
+    ], 
+	"I want to review some of my soldiers stationed here.", "close_window", [
+      # (change_screen_exchange_with_party, "p_player_garrison"), # doesn't work without changing context...
+      (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
+	]    
+],
 
+ 
 [anyone|plyr, "player_hire_troop",
    [(store_num_regular_prisoners,reg5),(ge,reg5,1)],
    "I have brought you some prisoners.", "tld_sell_prisoners", []],

@@ -1,4 +1,4 @@
-805
+806
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -674,6 +674,7 @@ qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
 qstr_I_need_volunteers_wi I_need_volunteers_willing_to_follow_me_on_dangerous_missions.
 qstr_I_need_some_soldiers I_need_some_soldiers_to_replace_my_dead.
+qstr_{playername}_s_Reser {playername}'s_Reserves
 qstr_Excellent_job_{s23}! Excellent_job,_{s23}!_I_wish_all_our_commanders_were_as_dedicated_as_you.^
 qstr_Nicely_done_{s23}. Nicely_done,_{s23}.
 qstr_Good_work_{s23}. Good_work,_{s23}.

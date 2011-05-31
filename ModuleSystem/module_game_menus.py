@@ -8928,6 +8928,33 @@ game_menus = [
     [(change_screen_map)],
     []
   ),
+
+#MV: hackery to get around change_screen_exchange_with_party limitations
+  ( "auto_player_garrison",0,
+    "stub",
+    "none",
+    [(jump_to_menu, "mnu_auto_player_garrison_2"), (change_screen_exchange_with_party, "p_player_garrison")],
+    []
+  ),
+  
+  ( "auto_player_garrison_2",0,
+    "stub",
+    "none",
+    [(jump_to_menu, "mnu_town"),
+     
+     (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+     (set_visitor,0,"trp_player"),
+     (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
+     (party_stack_get_troop_id, reg(6),"$g_encountered_party",reg0),
+     (party_stack_get_troop_dna,reg(7),"$g_encountered_party",reg0),
+     (set_visitor,17,reg(6),reg(7)),
+     (set_jump_mission,"mt_conversation_encounter"),
+     (jump_to_scene,"scn_conversation_scene"),
+     (assign, "$talk_context", tc_hire_troops),
+     (change_screen_map_conversation, reg(6)),
+    ],
+    []
+  ),
   
 ###################### starting quest, GA ##############################  
 ###################### starting quest, GA ##############################  

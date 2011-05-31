@@ -59,6 +59,8 @@ parties = [
   ("collective_enemy"  ,"collective_enemy",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  
+  ("player_garrison","player_garrison" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]), #TLD: player's garrison in the faction capital
 
 #  ("village_reinforcements","village_reinforcements",pf_is_static|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
 
@@ -206,10 +208,10 @@ parties = [
   ("legend_fangorn","Fangorn Entmoot",icon_tree_low|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[],180),
   
 # central positions in theaters used to calculate advance camp positions
-  ("theater_SE_center", "SE center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
-  ("theater_SW_center", "SW center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
-  ("theater_C_center", "C center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.7,-194.0),[]), # Beorn's House
+  ("theater_SE_center", "SE Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
+  ("theater_SW_center", "SW Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
+  ("theater_C_center", "C Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
+  ("theater_N_center", "N Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.7,-194.0),[]), # Beorn's House
 
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),

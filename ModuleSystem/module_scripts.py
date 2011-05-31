@@ -751,7 +751,8 @@ scripts = [
 	(assign, reg4, ":spending"),
   ]
   ),
-  
+
+#MV: update this script to charge for player's reserves (p_player_garrison) - or not   
   # script_make_player_pay_upkeep  (mtarini)
   # no input, no output
   ("make_player_pay_upkeep",
