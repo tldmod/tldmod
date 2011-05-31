@@ -3759,104 +3759,7 @@ technique mtarini_waterfall
 // WAVING STANDARD
 /////////////////////
 
-VS_OUTPUT_SPECULAR_ALPHA vs_mtarini_standart_shader(uniform const int PcfMode, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0)
-{
-   VS_OUTPUT_SPECULAR_ALPHA Out = (VS_OUTPUT_SPECULAR_ALPHA)0;
 
-   Out.Pos = mul(matWorldViewProj, vPosition);
-   
-   float4 vPositionNew = vPosition;
-   float3 vNormalNew;
-
-   // float absTime = texture_offset.y; // nice try. Still 0.
-
-   float time = 5.0*(
-        // 1.3*(matWorld._m00+matWorld._m11+matWorld._m22)
-        +0.45*(matWorld._m03+matWorld._m13+matWorld._m23)
-		+time_var
-		);
-   //time = sin(time*5.0);
-
-   float atten=1.0, wavel=1.0+tc.y*0.8, angle;
-
-   atten = min(tc.y*tc.x*2.0f,1.0f);
-   angle = time+tc.x*9.0*wavel;
-  
-   vPositionNew.x = sin(angle)*(atten*0.065);
-
-   vNormalNew.z = cos(angle)*atten*1.0;
-   vNormalNew.y = 0; //vNormalNew.z * tc.y*0.1;
-   vNormalNew.x = -sqrt(1.0-vNormalNew.z*vNormalNew.z);
-//   vNormalNew=normalize(vNormalNew); 
-
-
-   // revert all in not waving parts
-   vPositionNew = (tc.x>0.75)?vPosition:vPositionNew;
-   vPositionNew = (tc.x==0)?vPosition:vPositionNew;
-   vPosition = (matWorldView._m00>0.99)?vPosition:vPositionNew;// to prevent inventory disasters
-   vNormal = (tc.x>0.75)?vNormal:vNormalNew;
-   
-   ////
-   
-   
-   float4 vWorldPos = (float4)mul(matWorld,vPosition);
-   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
-   
-   Out.worldPos = vWorldPos;
-   Out.worldNormal = vWorldN;
-   
-   float3 P = mul(matWorldView, vPosition); //position in view space
-   
-   Out.Tex0 = tc;
-
-   float4 diffuse_light = vAmbientColor;
-//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
-
-   
-	//directional lights, compute diffuse color
-	float dp = dot(vWorldN, -vSkyLightDir);
-	if (dp < 0.0f)
-	{
-		dp *= -0.2f;
-	}
-	diffuse_light += dp * vSkyLightColor;
-
-	//point lights
-	for(int j = 0; j < iLightPointCount; j++)
-	{
-		int i = iLightIndices[j];
-		float3 point_to_light = vLightPosDir[i]-vWorldPos;
-		float LD = length(point_to_light);
-		float3 L = normalize(point_to_light);
-		float wNdotL = dot(vWorldN, L);
-		
-		float fAtten = 1.0f/(LD*LD);// + 0.9f / (LD * LD);
-		//compute diffuse color
-		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
-	}
-   //apply material color
-//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
-	Out.Color = (vMaterialColor * vColor * diffuse_light);
-	//shadow mapping variables
-	float wNdotSun = max(-0.0001f,dot(vWorldN, -vSunDir));
-	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
-
-	if (PcfMode != PCF_NONE)
-	{
-		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
-		Out.ShadowTexCoord = ShadowPos;
-		Out.ShadowTexCoord.z /= ShadowPos.w;
-		Out.ShadowTexCoord.w = 1.0f;
-		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
-		//shadow mapping variables end
-	}
-	
-   //apply fog
-   float d = length(P);
-   Out.Fog = get_fog_amount(d);
-
-   return Out;
-}
 
 VS_OUTPUT vs_mtarini_standart(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
 {
@@ -3878,7 +3781,7 @@ VS_OUTPUT vs_mtarini_standart(uniform const int PcfMode, uniform const bool UseS
    atten = min(tc.y*tc.x*2.0f,1.0f);
    angle = time+tc.x*9.0*wavel;
   
-   vPositionNew.x = sin(angle)*(atten*0.065);
+   vPositionNew.x += sin(angle)*(atten*0.065);
 
    vNormalNew.z = cos(angle)*atten*1.0;
    vNormalNew.y = 0; //vNormalNew.z * tc.y*0.1;
@@ -3959,4 +3862,59 @@ technique mtarini_standart_shader
       VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NONE,true);
       PixelShader = compile ps_2_0 ps_main(PCF_NONE);
    }
+}
+
+
+
+// WIND THOUGH LEAVES
+/////////////////////////
+
+VS_OUTPUT_FLORA vs_mtarini_windy_flora(uniform const int PcfMode, float4 vPosition : POSITION, float3 norm : NORMAL, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FLORA Out = (VS_OUTPUT_FLORA)0;
+
+   float2 treePos = float2 (matWorld._m03, matWorld._m23);
+   
+   float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
+   windAmount*=windAmount;
+   
+   float t2 = time_var + dot( treePos , float2(2.5,1.5)) + dot(norm,float3(7.1,0.4,3.2));
+   float windPhase = sin(t2*3.9)*cos(t2*2.3);
+   vPosition.xyz += norm*(tc.x-0.5)*(tc.y-0.5)*windPhase*windAmount*0.28;
+   
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+   Out.Color = vColor * (vAmbientColor + vSunColor * 0.06f); //add some sun color to simulate sun passing through leaves.
+   
+   	//shadow mapping variables
+	Out.SunLight = (vSunColor * 0.34f)* vMaterialColor * vColor;
+
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
+	}
+	//shadow mapping variables end
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+technique mtarini_windy_flora
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
 }
