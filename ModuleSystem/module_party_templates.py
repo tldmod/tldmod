@@ -253,9 +253,9 @@ party_templates = [
 # Reinforcements
 ("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_knight_of_the_citadel,2,4), (trp_archer_of_the_tower_guard,2,4),(trp_swordsmen_of_the_tower_guard,2,4),(trp_guard_of_the_fountain_court,2,4),]),
 
-("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_bowmen_of_gondor,4,6), (trp_gondor_militiamen,3,4), (trp_gondor_commoner,5,8),]),
-("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_archer_of_gondor,4,6), (trp_footmen_of_gondor,3,4), (trp_gondor_spearmen,0,2),  (trp_gondor_swordsmen,0,2),]),
-("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_veteran_archer_of_gondor,4,6), (trp_gondor_veteran_spearmen,3,4),(trp_gondor_veteran_swordsmen,0,2)]),
+("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_bowmen_of_gondor,4,6), (trp_gondor_militiamen,3,4), (trp_gondor_commoner,5,8),(trp_gondor_noblemen,1,2)]),
+("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_archer_of_gondor,4,6), (trp_footmen_of_gondor,3,4), (trp_gondor_spearmen,1,3),(trp_gondor_swordsmen,0,2),(trp_squire_of_gondor,0,2)]),
+("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_veteran_archer_of_gondor,4,6), (trp_gondor_veteran_spearmen,3,4),(trp_gondor_veteran_swordsmen,0,2),(trp_veteran_squire_of_gondor,0,2) ]),
 ("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_watchman,6,16), (trp_pelargir_infantry,6,16),]),
 ("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_infantry,6,16), (trp_pelargir_vet_infantry,6,16),]),
 ("pelargir_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_marine,6,9),]),

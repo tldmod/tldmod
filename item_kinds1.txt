@@ -141,7 +141,7 @@ itemsfile version 2
  itm_mordor_warhorse Mordor_Warhorse Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 1500 110595670016 0.000000 100 0 52 0 4 135 34 36 0 0 33 0
 0
 
- itm_mordor_warhorse2 Mordor_Sinister_Warhorse Mordor_Sinister_Warhorse 1  mordor_warhorse02 0  65537 0 2000 110595670016 0.000000 100 0 60 0 4 150 34 35 0 0 40 0
+ itm_mordor_warhorse2 Mordor_Sinister_Warhorse Mordor_Sinister_Warhorse 1  mordor_warhorse02 0  4097 0 2000 110595670016 0.000000 100 0 60 0 4 150 34 35 0 0 40 0
 0
 
  itm_gondor_courser Gondor_Courser Gondor_Courser 1  gondor_horse02 0  65537 0 323 110595670016 0.000000 100 0 16 0 2 80 37 43 0 0 10 0
@@ -376,7 +376,7 @@ itemsfile version 2
  itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  138772484 4222124851987200 89 0 2.500000 100 0 0 0 0 16384 90 0 175 0 283 528
 0
 
- itm_lance Lance Lance 1  spear_d_2-8m 0  138772484 4222124851987200 110 0 2.500000 100 0 0 0 0 16384 88 0 180 0 282 528
+ itm_lance Lance Lance 1  spear_d_2-8m 0  138772484 201326848 110 0 2.500000 100 0 0 0 0 16384 88 0 180 0 282 528
 0
 
  itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 195 0 2.500000 100 0 5 0 0 370 103 0 40 0 0 0
@@ -1634,7 +1634,7 @@ itemsfile version 2
  itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 4222124650660353 189 0 2.500000 100 0 0 0 0 16384 92 0 172 0 293 528
 0
 
- itm_rohan_lance_standard Rohirrim_Lance Rohirrim_Lance 1  lance_standard 0  6619139 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
+ itm_rohan_lance_standard Rohirrim_Lance Rohirrim_Lance 1  lance_standard 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
  itm_rohan_sword_c Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 280 0 1.250000 100 0 0 0 0 29696 103 0 96 0 277 29
@@ -2484,16 +2484,16 @@ itemsfile version 2
  itm_imladris_banner Imladris_Banner Imladris_Banner 1  banner_rivendell 0  275054595 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
- itm_gondor_lance_banner Gondor_Lance_With_Banner Gondor_Lance_With_Banner 1  banner_lance_gondor 0  6619139 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
+ itm_gondor_lance_banner Gondor_Lance_With_Banner Gondor_Lance_With_Banner 1  banner_lance_gondor 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
- itm_amroth_lance_banner DolAmroth_Lance_With_Banner DolAmroth_Lance_With_Banner 1  banner_lance_dolamroth 0  6619139 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
+ itm_amroth_lance_banner DolAmroth_Lance_With_Banner DolAmroth_Lance_With_Banner 1  banner_lance_dolamroth 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
- itm_rohan_lance_banner_sun Rohan_Lance_With_Sun_Banner Rohan_Lance_With_Sun_Banner 1  banner_lance_rohan_b 0  6619139 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
+ itm_rohan_lance_banner_sun Rohan_Lance_With_Sun_Banner Rohan_Lance_With_Sun_Banner 1  banner_lance_rohan_b 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
- itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  6619139 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
+ itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
  itm_ent_body Ent_Body Ent_Body 1  ent_body 0  16781325 0 2010 0 56.000000 100 0 62 0 0 0 0 0 0 0 0 0

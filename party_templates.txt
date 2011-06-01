@@ -139,9 +139,9 @@ pt_dale_war_party Dale_War_Party 844424930132007 0 11 238 49 8 13 0 55 8 20 0 53
 pt_dwarf_war_party Dwarven_War_Party 844424930131995 0 4 238 83 8 13 0 100 8 20 0 84 8 16 0 90 5 20 0 92 4 15 0 95 4 15 0 
 pt_rhun_war_party Rhun_War_Party 844424930131986 0 13 238 80 20 50 0 81 15 30 0 73 13 36 0 71 5 30 0 68 5 40 0 65 5 20 0 
 pt_gondor_reinf_d _ 0 0 1 0 116 2 4 0 120 2 4 0 110 2 4 0 107 2 4 0 -1 -1 
-pt_gondor_reinf_a _ 0 0 1 0 117 4 6 0 103 3 4 0 102 5 8 0 -1 -1 -1 
-pt_gondor_reinf_b _ 0 0 1 0 118 4 6 0 104 3 4 0 105 0 2 0 108 0 2 0 -1 -1 
-pt_gondor_reinf_c _ 0 0 1 0 119 4 6 0 106 3 4 0 109 0 2 0 -1 -1 -1 
+pt_gondor_reinf_a _ 0 0 1 0 117 4 6 0 103 3 4 0 102 5 8 0 111 1 2 0 -1 -1 
+pt_gondor_reinf_b _ 0 0 1 0 118 4 6 0 104 3 4 0 105 1 3 0 108 0 2 0 112 0 2 0 -1 
+pt_gondor_reinf_c _ 0 0 1 0 119 4 6 0 106 3 4 0 109 0 2 0 113 0 2 0 -1 -1 
 pt_pelargir_reinf_a _ 0 0 1 0 132 6 16 0 135 6 16 0 -1 -1 -1 -1 
 pt_pelargir_reinf_b _ 0 0 1 0 135 6 16 0 136 6 16 0 -1 -1 -1 -1 
 pt_pelargir_reinf_c _ 0 0 1 0 133 6 9 0 -1 -1 -1 -1 -1 
