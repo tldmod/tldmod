@@ -180,7 +180,7 @@ slot_town_arena         = 16
 slot_town_alley         = 17
 slot_town_walls         = 18
 #slot_center_culture     = 19
-
+slot_center_visited     = 19 #TLD entry spawn conditions
 slot_town_barman  = 20
 slot_town_weaponsmith   = 21
 #slot_town_armorer       = 22 #TLD all gear in smiths

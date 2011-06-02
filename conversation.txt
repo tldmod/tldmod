@@ -82,7 +82,7 @@ dlga_manhunter_talk_b:manhunter_talk_b1 196616 61  0 Yes,_they_went_this_way_abo
 dlga_manhunter_talk_b1:close_window 131080 62  0 I_knew_it!_Come_on,_lads,_lets_go_get_these_bastards!_Thanks_a_lot,_friend.  6  1 2133 2 144115188075855898 1 
 dlga_manhunter_talk_b:manhunter_talk_b2 196616 61  0 No,_haven't_seen_any_outlaws_lately.  63  0 
 dlga_manhunter_talk_b2:close_window 131080 63  0 Bah._They're_holed_up_in_this_country_like_rats,_but_we'll_smoke_them_out_yet._Sooner_or_later.  6  1 2133 2 144115188075855898 1 
-dlga_start:looters_1 393225 0  1 31 2 144115188075856018 2 Warning:_This_line_should_never_be_displayed.  64  6 2320 2 11 1585267068834415250 2320 2 12 1585267068834415251 2320 2 13 1585267068834415252 2136 3 1224979098644774912 11 14 2321 2 4 1224979098644774912 600 1 1152921504606847106 
+dlga_start:looters_1 393225 0  1 31 2 144115188075856018 2 Warning:_This_line_should_never_be_displayed.  64  6 2320 2 11 1585267068834415250 2320 2 12 1585267068834415251 2320 2 13 1585267068834415252 2136 3 1224979098644774912 11 14 2321 2 4 1224979098644774912 600 1 1152921504606847097 
 dlga_looters_1:looters_2 131081 64  0 {s4}  65  0 
 dlga_looters_2:looters_2_join 196617 65  3 150 1 288230376151712589 107 2 144115188075856275 648518346341351424 2325 2 4 288230376151712589 Bow_to_the_power_of_the_{s4}_and_serve_me!  66  0 
 dlga_looters_2_join:close_window 131081 66  0 We_will_obey,_Master.  6  3 1 3 936748722493063258 648518346341351424 144115188075856275 1232 1 144115188075856275 2133 2 144115188075855898 1 
@@ -1081,7 +1081,7 @@ dlga_galeas_sell_prisoners:galeas_sell_prisoners_2 470 568  0 Let_me_see_what_yo
 dlga_galeas_sell_prisoners_2:close_window 470 569  0 You_take_more_prisoners,_bring_them_to_me._I_will_pay_well.  6  0 
 dlga_start:bandit_introduce 393227 0  2 31 2 144115188075856018 2 39 0 Warning:_This_line_should_never_display.  570  0 
 dlga_start:bandit_introduce 393226 0  2 31 2 144115188075856018 2 39 0 Warning:_This_line_should_never_display.  570  0 
-dlga_bandit_introduce:bandit_talk 4095 570  6 2136 3 1224979098644774912 11 15 2320 2 11 1585267068834415363 2320 2 12 1585267068834415364 2320 2 13 1585267068834415365 2320 2 14 1585267068834415366 2321 2 5 1224979098644774912 {s5}  571  1 600 1 1152921504606847107 
+dlga_bandit_introduce:bandit_talk 4095 570  6 2136 3 1224979098644774912 11 15 2320 2 11 1585267068834415363 2320 2 12 1585267068834415364 2320 2 13 1585267068834415365 2320 2 14 1585267068834415366 2321 2 5 1224979098644774912 {s5}  571  1 600 1 1152921504606847098 
 dlga_bandit_talk:close_window 69631 571  0 I'll_give_you_nothing_but_cold_steel,_you_scum!  6  1 1302 0 
 dlga_bandit_talk:bandit_barter 69631 571  0 There's_no_need_to_fight._I_can_pay_for_free_passage.  572  0 
 dlga_bandit_barter:bandit_barter_2 4095 572  7 2190 3 1224979098644774912 432345564227567639 144115188075856277 30 2 1224979098644774912 -50 2122 3 144115188075855981 1224979098644774912 1224979098644774912 2108 2 144115188075855981 70 2105 2 144115188075855981 100 2107 2 144115188075855981 10 2133 2 72057594037927941 144115188075855981 Silver_without_blood,_that's_our_favourite_kind._Pay_us_{reg5}_RPs_and_we'll_let_you_be_on_your_way.  573  0 
@@ -1159,7 +1159,7 @@ dlga_hall_guard_arrest_2:close_window 69631 606  0 Ah,_never_mind_my_high_spirit
 dlga_hall_guard_arrest_2:close_window.1 69631 606  0 Forget_it._I_will_find_another_way_to_deal_with_this.  6  0 
 dlga_enemy_defeated:close_window 4095 3  0 Arggh!_I_hate_this.  6  0 
 dlga_party_relieved:close_window 4095 4  0 Thank_you_for_helping_us_against_those_bastards.  6  0 
-dlga_start:battle_reason_stated 4095 0  4 31 2 144115188075856018 2 2202 1 72057594037927941 1609 2 72057594037927943 72057594037927941 31 2 72057594037927943 576460752303423501 I_will_drink_from_your_skull!  607  1 600 1 1152921504606847109 
+dlga_start:battle_reason_stated 4095 0  4 31 2 144115188075856018 2 2202 1 72057594037927941 1609 2 72057594037927943 72057594037927941 31 2 72057594037927943 576460752303423501 I_will_drink_from_your_skull!  607  1 600 1 1152921504606847100 
 dlga_member_chat:regular_member_talk 4095 13  1 540 3 144115188075855885 169 0 Your_orders_{sir/madam}?  608  0 
 dlga_regular_member_talk:view_regular_char_requested 69631 608  0 Tell_me_about_yourself  609  0 
 dlga_view_regular_char_requested:do_regular_member_view_char 4095 609  0 Yes,_commander._Let_me_tell_you_all_there_is_to_know_about_me.  610  1 2046 0 
@@ -1189,7 +1189,7 @@ dlga_party_encounter_enemy:close_window 69631 620  1 39 0 We_will_fight_you_to_t
 dlga_party_encounter_enemy:close_window.1 69631 620  1 39 0 Don't_attack!_We_surrender.  6  1 2133 2 144115188075855910 1 
 dlga_party_encounter_enemy:close_window.2 69631 620  1 2147483687 0 Let's_fight_and_see!  6  1 1302 0 
 dlga_party_encounter_enemy:close_window.3 69631 620  1 2147483687 0 Not_this_time._Begone.  6  1 2133 2 144115188075855898 1 
-dlga_start:party_encounter_hostile_attacker 4095 0  3 31 2 144115188075856018 2 32 2 144115188075855924 0 39 0 You_have_no_chance_against_us._Surrender_now_or_we_will_kill_you_all...  621  4 4 0 31 2 144115188075856280 576460752303423500 600 1 1152921504606847110 3 0 
+dlga_start:party_encounter_hostile_attacker 4095 0  3 31 2 144115188075856018 2 32 2 144115188075855924 0 39 0 You_have_no_chance_against_us._Surrender_now_or_we_will_kill_you_all...  621  4 4 0 31 2 144115188075856280 576460752303423500 600 1 1152921504606847101 3 0 
 dlga_party_encounter_hostile_attacker:close_window 69631 621  0 Don't_attack!_We_surrender.  6  1 2133 2 144115188075855910 1 
 dlga_party_encounter_hostile_attacker:close_window.1 69631 621  0 We_will_fight_you_to_the_end!  6  0 
 dlga_start:party_encounter_hostile_defender 4095 0  2 31 2 144115188075856018 2 2147483687 0 What_do_you_want?  622  0 
