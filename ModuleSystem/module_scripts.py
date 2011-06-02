@@ -436,15 +436,23 @@ scripts = [
 ("new_rank_attained",
     [ (store_script_param_1, ":fac"),
       (store_script_param_2, ":rank"),
+      (store_script_param, ":is_promoted", 3),
 	  (play_sound, "snd_gong"),
 	  (call_script, "script_get_rank_title_to_s24", ":fac"),
 	  (str_store_troop_name, s10, "trp_player"),
       (assign, reg0, ":rank"),
-	  (display_message, "@You are now {s10}, {s24} ({reg0})", color_good_news),
+      (assign, reg1, ":is_promoted"),
+      (assign, ":news_color", color_bad_news),
+      (try_begin),
+        (eq, ":is_promoted", 1),
+        (assign, ":news_color", color_good_news),
+      (try_end),
+	  (display_message, "@You have been {reg1?promoted:demoted} to {s24} ({reg0})!", ":news_color"),
 	]
   ),
   
 # script_increase_rank
+  # difference can be a negative value
   # messes up s11
   ("increase_rank",
     [ # gain rank (need rank points to advance)
@@ -453,13 +461,14 @@ scripts = [
       
 	  (try_begin),
           (is_between, ":fac", kingdoms_begin, kingdoms_end),
-          (gt, ":difference", 0),
+          #(gt, ":difference", 0),
           
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":old_rank", reg0),
           
           (faction_get_slot, ":val", ":fac", slot_faction_rank),
           (val_add, ":val", ":difference"),
+          (ge, ":val", 0), #no negative rank points
           (faction_set_slot, ":fac", slot_faction_rank, ":val"),
           
           (call_script, "script_get_faction_rank", ":fac"),
@@ -477,12 +486,21 @@ scripts = [
           (str_store_faction_name, s11, ":fac"),
           (assign, reg11, ":difference"),
           (assign, reg12, ":inf_dif"),
-          (display_message, "@Earned {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", color_good_news),
+          (assign, reg1, 1),
+          (assign, ":news_color", color_good_news),
+          (try_begin),
+            (lt, reg11, 0),
+            (val_abs, reg11),
+            (val_abs, reg12),
+            (assign, reg1, 0),
+            (assign, ":news_color", color_bad_news),
+          (try_end),
+          (display_message, "@{reg1?Earned:Lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
           
           # rank increased?
           (try_begin),
             (neq, ":old_rank", ":new_rank"),
-            (call_script, "script_new_rank_attained", ":fac", ":new_rank"),
+            (call_script, "script_new_rank_attained", ":fac", ":new_rank", reg1),
           (try_end),
       (try_end),
  	]
@@ -12354,7 +12372,7 @@ scripts = [
          (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
          (gt, ":walker_troop_id", 0),
          (store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
-         (set_visitor, ":entry_no", ":walker_troop_id"),
+         (set_visitor, ":entry_no", ":walker_troop_id"), #entry points 32-39
        (try_end),
 ##       (try_for_range, ":cur_walker", 0, 8),
 ##         (try_begin),
@@ -12398,7 +12416,7 @@ scripts = [
 ##       (set_visitor, 37, reg5),
 ##       (set_visitor, 38, reg6),
 ##       (set_visitor, 39, reg7),
-##     (try_end),
+     (try_end),
   ]),
 
   # script_cf_enter_center_location_bandit_check

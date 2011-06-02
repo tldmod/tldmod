@@ -74,8 +74,8 @@ qstr_Accomplice_of_{s5} Accomplice_of_{s5}
 qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
-qstr_You_are_now_{s10}_{s You_are_now_{s10},_{s24}_({reg0})
-qstr_Earned_{reg11}_rank_ Earned_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
+qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
+qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their

@@ -914,6 +914,65 @@ mission_templates = [
       ],
     ),
 
+
+  ( "town_brawl",0,-1,
+    "Town brawl with walkers",
+    [(0,mtef_scene_source|mtef_team_1, af_override_horse|af_override_weapons, aif_start_alarmed, 1, [itm_wood_club]), #MV: player set to team 1 (guards are enemies)
+     (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
+     (2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (4,mtef_visitor_source|mtef_team_0, af_override_horse, aif_start_alarmed, 1, []),
+     (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     
+     (8,mtef_scene_source,af_override_horse,0,1,[]),
+     (9,mtef_visitor_source,af_override_horse,0,1,[]),(10,mtef_visitor_source,af_override_horse,0,1,[]),(11,mtef_visitor_source,af_override_horse,aif_start_alarmed,1,[]),(12,mtef_visitor_source,af_override_horse,0,1,[]),(13,mtef_scene_source,0,0,1,[]),(14,mtef_scene_source,0,0,1,[]),(15,mtef_scene_source,0,0,1,[]),
+     (16,mtef_visitor_source,af_override_horse,0,1,[]),(17,mtef_visitor_source,af_override_horse,0,1,[]),(18,mtef_visitor_source,af_override_horse,0,1,[]),(19,mtef_visitor_source,af_override_horse,0,1,[]),(20,mtef_visitor_source,af_override_horse,0,1,[]),(21,mtef_visitor_source,af_override_horse,0,1,[]),(22,mtef_visitor_source,af_override_horse,0,1,[]),(23,mtef_visitor_source,af_override_horse,0,1,[]),
+     (24,mtef_visitor_source,af_override_horse,0,1,[]),(25,mtef_visitor_source,af_override_horse,0,1,[]),(26,mtef_visitor_source,af_override_horse,0,1,[]),(27,mtef_visitor_source,af_override_horse,aif_start_alarmed,1,[]),(28,mtef_visitor_source,af_override_horse,aif_start_alarmed,1,[]),(29,mtef_visitor_source,af_override_horse,0,1,[]),(30,mtef_visitor_source,af_override_horse,0,1,[]),(31,mtef_visitor_source,af_override_horse,0,1,[]),
+     
+     #walkers: some friends, some enemies
+     (32,mtef_visitor_source|mtef_team_2,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (33,mtef_visitor_source|mtef_team_2,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (34,mtef_visitor_source|mtef_team_2,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (35,mtef_visitor_source|mtef_team_2,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (36,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (37,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (38,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (39,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     (40,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     ],
+    tld_common_battle_scripts+[
+      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(mission_disable_talk)]),
+
+      common_inventory_not_available,
+      
+      (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
+      (ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)], []),
+      (0, 0, ti_once, [],
+       [ (call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),
+         (set_party_battle_mode),
+         (party_slot_eq, "$current_town", slot_party_type, spt_town),
+         (call_script, "script_town_init_doors", 0),
+        ]),
+
+      (1, 4, ti_once,
+       [ (store_mission_timer_a,":cur_time"),
+         (ge, ":cur_time", 5),
+         (this_or_next|main_hero_fallen),
+         (num_active_teams_le, 1)
+         ],
+       [ (try_begin),
+          (main_hero_fallen),
+          (jump_to_menu, "mnu_town_brawl_lost"),
+         (else_try),
+          (jump_to_menu, "mnu_town_brawl_won"),
+         (try_end),
+         (finish_mission),
+         ]),
+      ],
+    ),
+
   
 # FANGORN BATTLE VS random ents!!! (mtarini)  
    ("fangorn_battle",mtf_battle_mode,charge,

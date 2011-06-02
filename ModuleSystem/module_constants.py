@@ -754,6 +754,8 @@ slot_troop_shop_food   = 166
 slot_troop_upkeep_not_paid = 169   # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
 slot_troop_subfaction      = 170 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
 
+slot_troop_player_reserve_party      = 171
+
 #######################
 
 #Rebellion changes end

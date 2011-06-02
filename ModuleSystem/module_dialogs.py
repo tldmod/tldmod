@@ -1926,27 +1926,46 @@ dialogs = [
 	]
 ],
 
-# Player reserves - no upkeep for now
+# Player reserves - no upkeep for now - exploitable!
 [anyone|plyr,"player_hire_troop", 
 	[ (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), # keep troops only at faction's capital
-      # check if first time, and initialize      
+      # check if first time or depleted, and initialize
+      (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+	  (try_begin),
+		(gt, ":reserve_party", 0),
+		(neg|party_is_active, ":reserve_party"), # depleted
+		(assign, ":reserve_party", 0),
+	  (try_end),
       (try_begin),
-        (neg|party_is_active, "p_player_garrison"),
-        (enable_party, "p_player_garrison"),
-        (party_add_members, "p_player_garrison", "trp_player", 1), #to get around a bug with empty parties
-        (party_attach_to_party, "p_player_garrison", "$g_encountered_party"),
-        (party_set_name, "p_player_garrison", "@{playername}'s Reserves"),
-        (party_set_flags, "p_player_garrison", pf_no_label),
-        (party_set_ai_behavior, "p_player_garrison", ai_bhvr_hold),
+		(eq, ":reserve_party", 0), #first time or depleted
+        (spawn_around_party, "$g_encountered_party"),
+        (assign, ":reserve_party", reg0),
+        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
+        (party_remove_members, ":reserve_party", "trp_looter", 1),
+        (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
+        (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
+        (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
+        (party_set_flags, ":reserve_party", pf_no_label),
+        (party_set_ai_behavior, ":reserve_party", ai_bhvr_hold),
       (try_end),
     ], 
 	"I want to review some of my soldiers stationed here.", "close_window", [
-      # (change_screen_exchange_with_party, "p_player_garrison"), # doesn't work without changing context...
+      #(troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+      #(change_screen_exchange_with_party, ":reserve_party"), # doesn't work without changing context...
       (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
 	]    
 ],
 
- 
+# Training
+[anyone|plyr,"player_hire_troop", 
+	[ (neg|party_slot_eq, "$g_encountered_party", slot_town_arena, -1),
+    ], 
+	"I need some training.", "close_window", [
+      (jump_to_menu, "mnu_auto_training_ground_trainer"),
+	]    
+],
+
+# Selling prisoners 
 [anyone|plyr, "player_hire_troop",
    [(store_num_regular_prisoners,reg5),(ge,reg5,1)],
    "I have brought you some prisoners.", "tld_sell_prisoners", []],
@@ -1981,7 +2000,7 @@ dialogs = [
 
 [anyone|plyr,"player_hire_troop", [], "Farewell.", "close_window", [] ],
 
-
+# Hiring troops
 [anyone,"player_hire_troop_take", 
   [(eq,"$num_hirable" ,0),
    (try_begin),
@@ -2023,6 +2042,7 @@ dialogs = [
 	"player_hire_troop_pre_pre_nextcycle", [(change_screen_buy_mercenaries)]
 ],
 
+# Selling troops
  [anyone,"player_hire_troop_give", 
 	 [
         (try_begin),
@@ -12135,6 +12155,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 							 ],"{s61}" , "town_dweller_talk",[]],
 
   #[anyone,"town_dweller_ask_rumor", [], "I haven't heard anything interesting lately.", "town_dweller_talk",[]],
+  
+  # Brawls for evil sides
+  [anyone|plyr,"town_dweller_talk", [
+    (neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+    ], "Hey scum! Let's see what's in your pockets.", "town_dweller_brawl",[]],
+  [anyone,"town_dweller_brawl", [], "Are you threatening me? It won't end well for you.", "town_dweller_brawl_confirm",[]],
+  [anyone|plyr,"town_dweller_brawl_confirm", [], "Oh really? Let's see what you've got.", "close_window", [
+    (jump_to_menu, "mnu_auto_town_brawl"),
+    (call_script, "script_change_player_relation_with_center", "$current_town", -2),
+    (call_script, "script_increase_rank", "$g_encountered_party_faction", -1),
+    (finish_mission)]],
+  [anyone|plyr,"town_dweller_brawl_confirm", [], "No, I thought you were someone else.", "close_window",[]],
 
   [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[]],
 

@@ -6874,6 +6874,30 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),],
   ),
 
+  ( "town_brawl_lost",mnf_disable_all_keys,
+    "You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.",
+    "none",
+    [
+      (store_troop_gold, ":total_gold", "trp_player"),
+      (store_div, ":gold_loss", ":total_gold", 30),
+      (store_random_in_range, ":random_loss", 40, 100),
+      (val_add, ":gold_loss", ":random_loss"),
+      (val_min, ":gold_loss", ":total_gold"),
+      (troop_remove_gold, "trp_player",":gold_loss"),
+    ],
+    [("continue",[],"Continue...",[(change_screen_return)]),],
+  ),
+
+  ( "town_brawl_won",mnf_disable_all_keys,
+    "You have beaten all the opponents and the guards sent to quell the disturbance. You quickly manage the frisk them for valuables before vanishing until tempers quiet down.^Maybe next time they would show more respect and back off.",
+    "none",
+    [
+      (store_random_in_range, ":random_gold", 200, 500),
+      (call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
+      (call_script, "script_change_troop_renown", "trp_player", 1),
+    ],
+    [("continue",[],"Continue...",[(change_screen_return)]),],
+  ),
   
    ("village_steal_cattle_confirm",0,
     "As the party member with the highest looting skill ({reg2}), {reg3?you reckon:{s1} reckons} that you can steal as many as {reg4} heads of village's cattle.",
@@ -7921,6 +7945,21 @@ game_menus = [
     ]
   ),
 
+  ("auto_training_ground_trainer", 0, "stub", "none",
+    [
+         (jump_to_menu, "mnu_town"),
+    
+         (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+         (set_jump_mission, "mt_training_ground_trainer_talk"),
+         (modify_visitors_at_site, ":training_scene"),
+         (reset_visitors),
+         (set_visitor, 0, "trp_player"),
+         (jump_to_scene, ":training_scene"),
+         (change_screen_mission),
+         (music_set_situation, 0),
+    ],
+    []
+  ),
 
 #####################################################################
 ## Captivity....
@@ -8940,16 +8979,15 @@ game_menus = [
   ),
 
 #MV: hackery to get around change_screen_exchange_with_party limitations
-  ( "auto_player_garrison",0,
-    "stub",
-    "none",
-    [(jump_to_menu, "mnu_auto_player_garrison_2"), (change_screen_exchange_with_party, "p_player_garrison")],
+  ( "auto_player_garrison",0,"stub","none",
+    [(jump_to_menu, "mnu_auto_player_garrison_2"),
+     (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+     (change_screen_exchange_with_party, ":reserve_party")
+    ],
     []
   ),
   
-  ( "auto_player_garrison_2",0,
-    "stub",
-    "none",
+  ( "auto_player_garrison_2",0,"stub","none",
     [(jump_to_menu, "mnu_town"),
      
      (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
@@ -8965,6 +9003,21 @@ game_menus = [
     ],
     []
   ),
+  
+  ( "auto_town_brawl",0,"stub","none",
+    [
+     (party_get_slot, ":town_scene", "$current_town", slot_town_center),
+     (modify_visitors_at_site, ":town_scene"),
+     (reset_visitors),
+     (call_script, "script_init_town_walkers"),
+     (set_jump_mission,"mt_town_brawl"),
+     (jump_to_scene, ":town_scene"),
+     (change_screen_mission),
+    ],
+    []
+  ),
+
+
   
 ###################### starting quest, GA ##############################  
 ###################### starting quest, GA ##############################  

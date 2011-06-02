@@ -60,8 +60,6 @@ parties = [
   ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   
-  ("player_garrison","player_garrison" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]), #TLD: player's garrison in the faction capital
-
 #  ("village_reinforcements","village_reinforcements",pf_is_static|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
 
   #  volunteers parties (one per city)
