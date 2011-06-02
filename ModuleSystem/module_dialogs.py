@@ -2867,6 +2867,75 @@ dialogs = [
    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5) 
    ]],
   
+  
+    # CAPTURE TROLL QUEST START
+	
+    #[anyone,"lord_start", [(store_partner_quest,":lords_quest"),
+    #                     (eq,":lords_quest","qst_capture_troll"),
+    #                     (check_quest_succeeded, "qst_capture_troll"),
+    #                     ],
+   #"{playername}! I asked you to bring me one troll beast.", "lord_capture_troll_completed0",[
+   #  ]],
+	 
+	[anyone|plyr, "lord_active_mission_2",[
+	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
+	   (ge, ":num_trolls", 2),
+	 ],
+	"Master, I hereby give you not one, but a pair of beasts!","lord_capture_troll_completed_two_trolls",[] ],
+
+	[anyone|plyr, "lord_active_mission_2",[
+	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
+	   (eq, ":num_trolls", 1),
+	 ],
+	"Master, I subjugated the beast you have asked for!","lord_capture_troll_completed_one_troll",[] ],
+	
+	
+	[anyone, "lord_capture_troll_completed_two_trolls",[],
+	"Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. Your command, {playername}.",
+	"lord_capture_troll_completed_two_trolls_thankyou",
+	[ 
+	(call_script, "script_finish_quest", "qst_capture_troll", 100),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+	(party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 2), # remove trolls prisoners	
+	] ],
+
+	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
+	"Thank you, Master. You will be pleased by the way this troll will be put in good use.","lord_capture_troll_completed_two_trolls_thankyou_accept",[] ],
+
+	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
+	"Thank you, master. But I'm not worth your great gift. It is too dangerous for me.","lord_capture_troll_completed_two_trolls_thankyou_refuse",[] ],
+
+	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
+	"Master, I will bring greater havoc if you also provide an armour for the beast [5000 pts].","lord_capture_troll_completed_two_trolls_thankyou_raise",[] ],
+
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[(party_add_members, "trp_troll_of_moria", "p_main_party", 1),],
+	"Now bring havoc to my enemies with your new gift","lord_pretalk",[] ],
+
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_refuse",[ ],
+	"As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.","lord_pretalk",[] ],
+
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(party_add_members, "trp_armoured_troll", "p_main_party", 1),],
+	"You dare ask for an armoured troll, {playername}, given under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",[] ],
+
+	[anyone, "lord_capture_troll_completed_one_troll",[],
+	"Excellent, {playername}. You are a most faithful and useful servant. This troll We will be most useful for our purposes. That it is taken to the dungeons!",
+	"close_window",[
+	(call_script, "script_finish_quest", "qst_capture_troll", 100),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+	(party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 1), # remove trolls prisoners	
+	] ],
+	
+    [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
+                         (eq,":lords_quest","qst_capture_troll"),
+                         (check_quest_failed, "qst_capture_troll")],
+   "Too long ago, I asked you to take me one troll alive. But I should have known. \
+   How could I expect someone like {playername} to be up to the challange. My servant was not skilled or faithful enough.", "close_window",[
+   (call_script, "script_end_quest", "qst_investigate_fangorn"),
+   (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5) 
+   ]],
+  
+      # CAPTURE TROLL QUEST END
+
   #TLD quests fail/success END:
  
 	 
@@ -5533,6 +5602,7 @@ dialogs = [
    "{playername}, I must beg your patience, I still have need of your companion. Please return later when things have settled.", "lord_pretalk",[]],
   [anyone,"lord_active_mission_1", [], "Yes, have you made any progress on it?", "lord_active_mission_2",[]],
 
+
   [anyone|plyr,"lord_active_mission_2",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                             (check_quest_active,"qst_capture_prisoners"),
@@ -5894,7 +5964,41 @@ dialogs = [
        (assign, "$random_quest_no", reg0),
    ]],
 
+    # TLD mission: capture troll (mtarini) -- begin 
+  [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_troll")],
+  "You are a brave servant, {playername}, and we will give you a glimpse of our plans.\
+  We need fresh monstrosus blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", 
+  "lord_mission_capture_troll_1", 
+  []],
   
+   [anyone|plyr,"lord_mission_capture_troll_1", [], "How can I serve, Master?", "lord_mission_capture_troll_2",[]],
+
+   [anyone,"lord_mission_capture_troll_2", [], "A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experimets! Two, would be better. The more we have, the better.",
+  "lord_mission_capture_troll_3",[]],
+
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be found?",                      "lord_mission_capture_troll_infoa",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be captured?",                   "lord_mission_capture_troll_infob",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be transported to you?",         "lord_mission_capture_troll_infoc",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "You shall have your wild troll, Master.",             "lord_mission_capture_troll_accepted",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "Pity, master! That beast will sqash me like a bug!",  "lord_mission_capture_troll_rejected",[]],
+
+   [anyone,"lord_mission_capture_troll_infoa", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
+   [anyone,"lord_mission_capture_troll_infob", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
+   [anyone,"lord_mission_capture_troll_infoc", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
+  
+    [anyone,"lord_mission_capture_troll_rejected", [], "Now you reveal what you are really worth, but I knew that of you all along. Weak, codardous {playername}. Now begone", "lord_pretalk",
+   [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+   (assign, "$g_leave_encounter",1),]], 
+ 
+ [anyone,"lord_mission_capture_troll_accepted", [], "I knew I could count on your strenght and bravery. Slaves, give to {playername} one of Our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed. ", "lord_pretalk",
+   [
+    (troop_add_item, "trp_player","itm_wheeled_cage",0),
+    (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+    (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
+   ]],
+   
+    # TLD mission: capture troll (mtarini) -- end
 
    # TLD mission: investigate fangorn (mtarini) -- begin 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
@@ -5936,7 +6040,6 @@ dialogs = [
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
-    
    ]],
 
   # TLD mission: investigate fangorn (mtarini) -- end
@@ -5977,13 +6080,6 @@ dialogs = [
 
   #TLD mission: nowy quest (Kolba) -- begin
 
-  
-
-    
-
-   
-  
-  
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
    "I need to send a letter to {s13} who should be currently at {s4}.\
  If you will be heading towards there, would you deliver it to him?\

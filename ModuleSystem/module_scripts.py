@@ -1719,7 +1719,7 @@ scripts = [
 	(try_end),
 	(try_begin),
 		(eq, ":volunteers", 0),
-		(spawn_around_party, ":town"),
+		(spawn_around_party, ":town"),  # Error here? Command takes TWO arguments -- mtarini
 		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
 		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
@@ -5395,12 +5395,27 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 
-#MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))
-#(assign, ":quest_no", "qst_move_cattle_herd"),
-
+#MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
+		#(assign, ":quest_no", "qst_move_cattle_herd"),
+#mtarini: ok, ok, so we put in a menu:
+		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
+		
+		
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
         (try_begin),
+          #mtarini: Saruman wants a troll be captured
+          (eq, ":quest_no", "qst_capture_troll"),
+          (eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
+		  (ge, ":player_level", 6),
+          (assign, ":quest_expiration_days", 10),
+          (assign, ":quest_dont_give_again_period", 10),
+		  (assign, ":quest_importance", 3),
+          (assign, ":quest_xp_reward", 100),
+	      (assign, ":quest_gold_reward", 500),
+          (assign, ":quest_rank_reward", 75),
+          (assign, ":result", ":quest_no"),
+        (else_try),
           #mtarini: Saruman wants Fangorn to be investigated
           (eq, ":quest_no", "qst_investigate_fangorn"),
           (eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest

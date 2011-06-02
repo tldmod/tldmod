@@ -79,6 +79,7 @@ items =[
 ["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,10,weight(40)|abundance(0)|0,imodbits_none],
 ["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,50,weight(40)|abundance(0)|0,imodbits_none],
 ["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,250,weight(40)|abundance(0)|0,imodbits_none],
+["wheeled_cage","Giant wheeled cage",[("wheeled_cage",0)],itp_type_goods,0,250,weight(250)|abundance(0)|0,imodbits_none],
 # 
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.

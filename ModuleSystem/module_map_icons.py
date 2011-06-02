@@ -86,6 +86,8 @@ map_icons = [
   ("uruk_isengard",0,"uruk_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("uruk_x4",0,"uruk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("uruk_x6",0,"uruk_x6", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+
+  ("wild_troll",0,"wild_troll", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   #("uruk_tribal",0,"uruk_tribal_", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   #("uruk_tribal_x4",0,"uruk_tribal_x4", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
 

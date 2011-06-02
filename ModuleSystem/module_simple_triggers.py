@@ -1244,6 +1244,7 @@ simple_triggers = [
 	#(store_random_in_range, reg10, 0, 10),(val_add, ":n_drinks",10),(val_div, ":n_drinks",10), # div 10, roudning at random
 	(call_script,"script_consume_orc_brew",":n_drinks"),
   ]),
+  
   # Consuming food at every 14 hours
   (14,
    [(eq, "$g_player_is_captive", 0),
@@ -1612,6 +1613,25 @@ simple_triggers = [
     
 # Quest triggers:
 
+# capture troll quest (mtarini)
+# if the quest is active, add a wild troll party
+(10, [(check_quest_active, "qst_capture_troll"),
+     (assign,":count",0), # count active wild troll parties (*45)
+	 (try_for_parties,":i"),(party_is_active, ":i"),(party_get_template_id, ":j", ":i"),(eq,":j","pt_wild_troll"),(val_add,":count",45),(try_end),
+	 (store_random_in_range,":die_roll",0,100),(ge,":die_roll",":count"), # if (die_roll(100)>numtrolls*45)
+	 (set_spawn_radius,1),
+	 (spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
+	]),
+
+(10, [(check_quest_active, "qst_capture_troll"),
+     (assign,":count",0), # count active wild troll parties (*45)
+	 (try_for_parties,":i"),(party_is_active, ":i"),(party_get_template_id, ":j", ":i"),(eq,":j","pt_wild_troll"),(val_add,":count",45),(try_end),
+	 (store_random_in_range,":die_roll",0,100),(ge,":die_roll",":count"), # if (die_roll(100)>numtrolls*45)
+	 (set_spawn_radius,1),
+	 (spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
+	]),
+	
+ 
 # Remaining days text update
   (24, [(try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
           (try_begin),

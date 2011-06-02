@@ -44,7 +44,7 @@ magic_items = range(itm_ent_water, itm_witchking_helmet) + [itm_lembas]# first n
 
 city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
-# sode spipped to set city meny background
+# code snipped to set city meny background
 code_to_set_city_background = [
   (party_get_slot,":mesh","$g_encountered_party",slot_town_menu_background),
   (set_background_mesh, ":mesh"),
@@ -133,6 +133,8 @@ game_menus = [
 	(assign, "$cheat_menu_add_troop_search_fac", "$players_kingdom"), # player's kingdo
 	(assign, "$cheat_menu_add_troop_search_hero", 0),	
 
+	(assign, "$cheat_imposed_quest", -1),	
+
 	(call_script, "script_determine_what_player_looks_like"), # for drawings
 	(set_show_messages,1),
 	(try_end),
@@ -144,7 +146,7 @@ game_menus = [
 	     #  free food for everyone
 		(troop_add_item, "trp_player","itm_dried_meat",0),
 		# TEMP: a spear for everyone
-		(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
+		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
 		
 		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
@@ -2747,14 +2749,34 @@ game_menus = [
   ),
 
   
+  #### CAPTURE TROLL MENU
+  ("can_capture_troll",0,"The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in its blood, it looks tremendously dangerous...",
+  "none",[(set_background_mesh, "mesh_ui_default_menu_window")], [
+	("killit",[],"Dispatch it, now. Make sure it dies.",[(jump_to_menu,"$g_next_menu")],),
+	("cageit",[(player_has_item,"itm_wheeled_cage"),],"Cage it and drag it around.",[
+      (party_add_prisoners, "p_main_party", "trp_troll_of_moria", 1),
+	  (display_message,"@Troll caged in wheeled cage."),
+      (jump_to_menu,"$g_next_menu")],
+	)
+  ]
+  ),
   
   ################################ CHEAT/MODDING MENU START ########################################
-  # free magic item cheat (mtarini)
+  # free magic item cheat (mtarini)   
   ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],[
     ("mi",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) for x in magic_items ]+[
 	("cheat_free_magic_item_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
   ]),
   
+  # choose quest cheat (mtarini)
+  ("cheat_impose_quest",0,"Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)","none",[
+    (set_background_mesh, "mesh_ui_default_menu_window"),
+    (try_begin),(ge,"$cheat_imposed_quest",0),(str_store_quest_name,s20,"$cheat_imposed_quest"),(else_try),(str_store_string,s20,"@None"),(try_end),
+  ],[
+	("back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
+	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
+    ]+[("mi",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
+  ]),
   
   ### CHOSE TOWN WHERE TO RELOCATE PART 2: chose city (mtarini)
   ("teleport_to_town_part_two",0,"^^^^^^^^Ride Shadowfax:^to which city inside {s11}?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
@@ -2932,33 +2954,23 @@ game_menus = [
 
 	("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
  
-
       #("cheat_increase_renown",   [],
 	  #"Increase player renown by 100.",
       # [(str_store_string, s1, "@Increased player renown by 100."),
       #  (call_script, "script_change_troop_renown", "trp_player",100),
       #  ]),	   
 	   
- 	   ("relocate_party",   [],  
-		"Cheat: move to town...",
-	   [(jump_to_menu, "mnu_teleport_to_town")]),
-	   
-	   
-      ("camp_mod_4",   [],
-      "Add troops to player party.",
-      [(jump_to_menu, "mnu_cheat_add_troops") ]),
+	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
 
-	   ("cheat_get_item", [],
-	   "Gain a free magic item",
-	   [(jump_to_menu, "mnu_cheat_free_magic_item")]),
+	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town")]),
+	   
+	("camp_mod_4", [], "Add troops to player party.", [(jump_to_menu, "mnu_cheat_add_troops") ]),
+	  
+	("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
 
-	   ("cheat_add_xp",   [],
-	  "Add 1000 experience to player.",
-       [(add_xp_to_troop, 1000, "trp_player"),
-		(display_message, "@Added 1000 experience to player."),
-        ]),	  
-		
-      ("camp_mod_2",    [],
+	("cheat_add_xp", [], "Add 1000 experience to player.", [(add_xp_to_troop, 1000, "trp_player"), (display_message, "@Added 1000 experience to player."), ]),	  	
+	   
+    ("camp_mod_2",    [],
       "Raise player's attributes, skills, and proficiencies.",
       [ #attributes
          (troop_raise_attribute, "trp_player",ca_intelligence,20),
@@ -3565,6 +3577,8 @@ game_menus = [
           (is_between, "$g_encountered_party_template", "pt_forest_bandits" ,"pt_steppe_bandits"        ),
 		  (set_background_mesh, "mesh_draw_orc_raiders"),
         (else_try),
+          (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"        ),
+		  (set_background_mesh, "mesh_draw_wild_troll"),
         #  (eq, "$g_encountered_party_template", "pt_steppe_bandits"  ),(set_background_mesh, "mesh_pic_steppe_bandits"),
         #(else_try),
         #  (eq, "$g_encountered_party_template", "pt_sea_raiders"     ),(set_background_mesh, "mesh_pic_sea_raiders"),
@@ -3574,6 +3588,7 @@ game_menus = [
         #  (eq, "$g_encountered_party_template", "pt_deserters"       ),(set_background_mesh, "mesh_pic_deserters"),
         (try_end),
     ],
+	
     [
       ("encounter_attack",[
           (eq, "$encountered_party_friendly", 0),
@@ -3975,6 +3990,7 @@ game_menus = [
 	 (try_begin), # set background picture for victory/defeat -- mtarini
 		(store_mul, ":tmp", "$g_enemy_fit_for_battle","$g_friend_fit_for_battle"),
 		(eq, ":tmp", 0 ), # battle is totally over: proceed!
+		
 		(try_begin),
 			(eq, "$g_battle_result", 1),
 			(assign, ":winning_side_race_group", "$player_side_race_group" ),
@@ -4070,8 +4086,14 @@ game_menus = [
        (str_store_string, s10, "@^^Ally Casualties:{s0}"),
      (try_end),
      ],
-    [("continue",[],"Continue...",[(jump_to_menu, "$g_next_menu"),]),
-    ]
+	[("insp_troll",
+	  [
+	   (eq, "$g_battle_result", 1),
+	   (check_quest_active, "qst_capture_troll"),
+	   (party_get_template_id, ":j", "$g_enemy_party"),(eq,":j","pt_wild_troll"),
+	  ],"Inspect downed troll",[ (jump_to_menu, "mnu_can_capture_troll")]) ,
+     ("continue",[],"Continue...",[(jump_to_menu, "$g_next_menu"),]),
+	]
   ),
 
   ( "total_victory",0,

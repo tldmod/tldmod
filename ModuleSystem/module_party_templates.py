@@ -46,7 +46,11 @@ party_templates = [
  ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
+  ("wild_troll"      ,"Wild Troll"        ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,2),]),
+  ("raging_trolls"   ,"Raging Trolls"        ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
+
   ("looters"         ,"Tribal Orcs"       ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
+  
   ("forest_bandits"  ,"Orc Stragglers"       ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
   ("mountain_bandits","Wild Goblins"    ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
   ("steppe_bandits"  ,"Dunlending Raiders",icon_khergit   |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_raven_rider,3,48)]),

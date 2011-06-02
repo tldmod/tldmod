@@ -1,4 +1,4 @@
-811
+812
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -463,6 +463,7 @@ qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_OFF OFF
 qstr_ON ON
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
+qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
 qstr_neutral_whereabouts neutral_whereabouts

@@ -101,13 +101,17 @@ quests = [
  ("investigate_fangorn", "Investigate Fangorn", qf_random_quest,
   "{s9} asked you to find out what is going on in the Fangorn forest, and to report back."),
 
-#MV: nothing done, so commented out
- # ("capture_troll", "Capture a Troll", qf_random_quest,
-  # "{s9} asked you to bring back a savage troll for use in his army."),
+ ("capture_troll", "Capture a Troll", qf_random_quest,
+   "{s9} asked you to bring back a savage troll for use in his army."),
+
+ ("kill_troll", "Dispatch raging Troll", qf_random_quest,
+   "{s9} asked you free {s13} from the manace of a Troll raging in its outskirts."),
 
  ("find_lost_spears", "Find the lost spears of king Bladorthin", qf_random_quest,
   "{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain."),
 
+  
+  
 # TLD END lord's quests 
 
 #TLD lord missions begin (MV)
