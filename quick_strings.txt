@@ -1,4 +1,4 @@
-806
+811
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -379,6 +379,8 @@ qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
 qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Renown:_{s4}{reg3}^TOTAL:__{reg5}
+qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s23})
+qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Loyal Loyal
 qstr_Devoted Devoted
 qstr_Fond Fond
@@ -397,7 +399,7 @@ qstr_Angry Angry
 qstr_Hateful Hateful
 qstr_Revengeful Revengeful
 qstr_Vengeful Vengeful
-qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
+qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
@@ -411,8 +413,7 @@ qstr_All_four_legendary_p All_four_legendary_place_enabled!
 qstr_Rank_{reg0}:_{s20}_m Rank_{reg0}:_{s20},_mod_{reg1}.
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
-qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
-qstr_Faction_strengths_re Faction_strengths_report:^{s2}
+qstr_{s2}^{s4}:_{reg1}__{s2 {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
 qstr_Unknown_{reg3}_ Unknown({reg3})
 qstr_SE SE
@@ -784,6 +785,10 @@ qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{
 qstr_{s3}_and_{s5} {s3}_and_{s5}
 qstr_{s3}_{s5} {s3},_{s5}
 qstr_{reg20?We_mostly_pro {reg20?We_mostly_produce_{s5}_here:We_don't_produce_much_here_these_days}._If_you_would_like_to_learn_more,_you_can_speak_with_our_{reg4?guildmaster:village_elder}._He_is_nearby,_right_over_there.
+qstr_Hey_scum!_I_can_fix_ Hey_scum!_I_can_fix_that_jaw_of_yours.
+qstr_Watch_where_you_re_g Watch_where_you're_going,_maggot!
+qstr_I_don_t_like_your_fa I_don't_like_your_face!_I_think_it_needs_some_fixing.
+qstr_What_are_you_looking What_are_you_looking_at?_WHAT?
 qstr_{s4}_It_is_always_go {s4}_It_is_always_good_to_see_one_of_our_own.
 qstr_a_nearby_town a_nearby_town
 qstr_that_town_over_there that_town_over_there

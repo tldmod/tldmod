@@ -375,6 +375,7 @@ game_menus = [
         (try_end),
         ]),
 #NPC companion changes end
+      ("view_faction_strengths_report",[],"View faction strengths report.",[(jump_to_menu, "mnu_faction_strengths_report"),]),
       ("view_faction_relations_report",[],"View faction relations report.",[(jump_to_menu, "mnu_faction_relations_report"),]),
       ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_return),]),
     ]
@@ -1370,6 +1371,26 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
   ),
+
+
+  ("faction_strengths_report",0,
+   "{s1}",
+   "none",
+   [(str_clear, s2),
+    (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
+      (neq, ":cur_kingdom", "fac_player_supporters_faction"),
+      (call_script, "script_faction_strength_string", ":cur_kingdom"),
+      (str_store_faction_name, s4, ":cur_kingdom"),
+      (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
+      (str_store_string, s2, "@{s2}^{s4}: {reg1} ({s23})"),
+    (try_end),
+    (str_store_string, s1, "@Faction strengths report:^{s2}"),
+    ],
+    [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports"),]),
+    ]
+  ),
+
 
   ("faction_relations_report",0,
    "{s1}",
@@ -4085,9 +4106,12 @@ game_menus = [
 			  (try_begin),
                 (is_between, ":impressed_party", towns_begin, towns_end), 
                 (display_log_message, "@News of your victory against {s4} reach {s3}.", color_good_news),
+                
 			  (else_try), 
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
-			  (try_end),
+			  (try_end), 
+              (store_div, ":rank_increase", "$battle_renown_value", 5), # MV: give some rank increase according to renown (should be small 1-10)
+              (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
 			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		  (try_end),

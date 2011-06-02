@@ -1949,7 +1949,7 @@ dialogs = [
         (party_set_ai_behavior, ":reserve_party", ai_bhvr_hold),
       (try_end),
     ], 
-	"I want to review some of my soldiers stationed here.", "close_window", [
+	"I want to review my soldiers stationed here.", "close_window", [
       #(troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
       #(change_screen_exchange_with_party, ":reserve_party"), # doesn't work without changing context...
       (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
@@ -12159,11 +12159,27 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   # Brawls for evil sides
   [anyone|plyr,"town_dweller_talk", [
     (neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-    ], "Hey scum! Let's see what's in your pockets.", "town_dweller_brawl",[]],
-  [anyone,"town_dweller_brawl", [], "Are you threatening me? It won't end well for you.", "town_dweller_brawl_confirm",[]],
+    (store_random_in_range, ":random", 0, 4),
+    (try_begin),
+      (eq, ":random", 0),
+      (str_store_string, s4, "@Hey scum! I can fix that jaw of yours."),
+    (else_try),
+      (eq, ":random", 1),
+      (str_store_string, s4, "@Watch where you're going, maggot!"),
+    (else_try),
+      (eq, ":random", 2),
+      (str_store_string, s4, "@I don't like your face! I think it needs some fixing."),
+    (else_try),
+      (str_store_string, s4, "@What are you looking at? WHAT?"),
+    (try_end),
+    ], "{s4}", "town_dweller_brawl",[]],
+  [anyone,"town_dweller_brawl", [], "Are you threatening me? The guards hardly wait for your type to show up.", "town_dweller_brawl_confirm",[]],
   [anyone|plyr,"town_dweller_brawl_confirm", [], "Oh really? Let's see what you've got.", "close_window", [
     (jump_to_menu, "mnu_auto_town_brawl"),
-    (call_script, "script_change_player_relation_with_center", "$current_town", -2),
+    (try_begin),
+      (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"), #has to have a way to restore bad rels
+      (call_script, "script_change_player_relation_with_center", "$current_town", -2),
+    (try_end),
     (call_script, "script_increase_rank", "$g_encountered_party_faction", -1),
     (finish_mission)]],
   [anyone|plyr,"town_dweller_brawl_confirm", [], "No, I thought you were someone else.", "close_window",[]],

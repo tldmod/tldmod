@@ -461,7 +461,7 @@ scripts = [
       
 	  (try_begin),
           (is_between, ":fac", kingdoms_begin, kingdoms_end),
-          #(gt, ":difference", 0),
+          (neq, ":difference", 0),
           
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":old_rank", reg0),
@@ -15507,7 +15507,10 @@ scripts = [
          (store_troop_faction, ":troop_faction", ":troop_no"),
          (neq, ":troop_faction", "fac_player_supporters_faction"),
          (gt, ":party_no", 0),
-         (neg|party_is_in_any_town, ":party_no"),
+         (neg|party_is_in_any_town, ":party_no"), #MV: this doesn't seem to work, so added two equivalent lines
+         (party_get_attached_to, ":attached_to_party", ":party_no"),
+         (neg|is_between, ":attached_to_party", centers_begin, centers_end),
+
          (faction_get_slot, ":tier_1_troop", ":troop_faction", slot_faction_deserter_troop),
          (try_begin), # only evil factions have deserters, good ones have -1 for deserter troop
            (ge, ":tier_1_troop", 0),		 
