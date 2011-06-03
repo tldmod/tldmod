@@ -555,13 +555,12 @@ slot_troop_sibling             = 35
 slot_troop_lover               = 36
 
 slot_troop_trainer_met                       = 30
-slot_troop_trainer_waiting_for_result        = 31
-slot_troop_trainer_training_fight_won        = 32
-slot_troop_trainer_num_opponents_to_beat     = 33
-slot_troop_trainer_training_system_explained = 34
+slot_troop_trainer_waiting_for_result        = 31 #used in TLD
+slot_troop_trainer_training_result           = 32 #used in TLD
+slot_troop_trainer_training_mode             = 33 #used in TLD
+slot_troop_trainer_num_opponents_to_beat     = 34 #used in TLD
 slot_troop_trainer_opponent_troop            = 35
 slot_troop_trainer_training_difficulty       = 36
-slot_troop_trainer_training_fight_won        = 37
 
 
 slot_troop_family_begin        = 30
@@ -1057,8 +1056,8 @@ vaegir_merc_parties_end    = "p_zendar"
 arena_masters_begin    = "trp_brigand_arena_master"
 arena_masters_end      = "trp_troops_end"
 
-training_gound_trainers_begin    = "trp_trainer_1"
-training_gound_trainers_end      = "trp_ransom_broker_1"
+training_ground_trainers_begin    = "trp_trainer_1"
+training_ground_trainers_end      = "trp_ransom_broker_1"
 
 # town_walkers_begin = "trp_town_walker_1"
 # town_walkers_end = "trp_village_walker_1"
@@ -1214,6 +1213,8 @@ tcm_disguised = 1
 abm_training = 1
 abm_visit = 2
 abm_tournament = 3
+abm_team = 4
+abm_gauntlet = 5
 
 # Camp training modes
 ctm_melee    = 1

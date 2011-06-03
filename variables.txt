@@ -214,7 +214,6 @@ attacker_team
 defender_team_2
 attacker_team_2
 belfry_positioned
-trainer_help_message
 g_arena_training_num_agents_spawned
 g_arena_training_max_opponents
 g_arena_training_kills
@@ -653,3 +652,6 @@ g_tld_line_A3_mul
 g_tld_line_A3_div
 tld_action_cost
 cheat_imposed_quest
+g_tld_training_mode
+g_tld_training_opponents
+g_tld_training_weapon

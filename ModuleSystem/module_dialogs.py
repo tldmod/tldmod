@@ -8,6 +8,7 @@ from header_triggers import *
 from ID_troops import *
 from ID_party_templates import *
 from header_troops import *
+from header_items import * #TLD
 
 from module_constants import *
 
@@ -3728,16 +3729,15 @@ dialogs = [
           (else_try),
             (str_store_string, s12, "@we are not fighting anyone at the moment"),
           (try_end),
-        (try_end),
-        (call_script, "script_store_faction_king_in_s15", "$players_kingdom"),
-        (call_script, "script_get_rank_title_to_s24", "$players_kingdom"), #in s24
-        (try_begin),
-          (eq, "$player_looks_like_an_orc",1),
-          (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
-        (else_try),
-          (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
-        (try_end),
-        (assign, reg1, tld_player_level_to_own_chest),
+          (call_script, "script_store_faction_king_in_s15", "$players_kingdom"),
+          (call_script, "script_get_rank_title_to_s24", "$players_kingdom"), #in s24
+          (try_begin),
+            (eq, "$player_looks_like_an_orc",1),
+            (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
+          (else_try),
+            (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
+          (try_end),
+          (assign, reg1, tld_player_level_to_own_chest),
    ]],
 
   [anyone,"lord_start", [],
@@ -9812,14 +9812,60 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Trainers
 
-    [anyone,"start", [(is_between, "$g_talk_troop", training_gound_trainers_begin, training_gound_trainers_end)],
+#Reward for results
+    [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
+      (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
+      (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_training_result, 100), #victory
+      ],
+   "Very good, you've eliminated all the opponents.", "trainer_pretalk",[
+      (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0),
+      (assign, ":reward_xp", 0),
+      (assign, ":reward_gold", 0),
+      #rewards
+      (try_begin),
+        (eq, "$g_tld_training_mode", abm_training),
+        (store_sub, ":reward_xp", "$g_tld_training_opponents", 1),
+        (val_mul, ":reward_xp", 20), #0-60
+      (else_try),
+        (eq, "$g_tld_training_mode", abm_team),
+        (store_div, ":reward_xp", "$g_tld_training_opponents", 4),
+        (val_sub, ":reward_xp", 1), #0-2
+        (store_mul, ":reward_gold", ":reward_xp", 50), #0-100
+        (val_mul, ":reward_xp", 30), #0-60
+      (try_end),
+      (add_xp_as_reward, ":reward_xp"),
+      (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
+     ]],
+     
+    [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
+      (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
+      (try_begin),
+        (troop_slot_ge, "$g_talk_troop", slot_troop_trainer_training_result, 75),
+        (str_store_string, s4, "@Good moves, but you may still need some work to do."),
+      (else_try),
+        (troop_slot_ge, "$g_talk_troop", slot_troop_trainer_training_result, 50),
+        (str_store_string, s4, "@More than half of the opponents, not bad."),
+      (else_try),
+        (troop_slot_ge, "$g_talk_troop", slot_troop_trainer_training_result, 25),
+        (str_store_string, s4, "@You'll need to try harder than that."),
+      (else_try),
+        (str_store_string, s4, "@Well... better here than in combat, eh?"),
+      (try_end),
+      ],
+   "{s4}.", "trainer_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0)]],
+
+
+    [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end)],
    "Good day. Ready for some training today?", "trainer_talk",[]],
 
     [anyone,"trainer_pretalk", [],
-   "Ah, are you ready for some training?", "trainer_talk",[]],
+   "Are you ready for some training?", "trainer_talk",[]],
   
     [anyone|plyr,"trainer_talk", [],
    "First, tell me something about combat...", "trainer_combat_begin",[]],
+
+    [anyone|plyr,"trainer_talk", [],
+   "I'm ready for training.", "trainer_choose_mode",[]],
 
     [anyone|plyr,"trainer_talk", [],
    "I need to leave now. Farewell.", "close_window",[]],
@@ -9867,7 +9913,83 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  However you must pay particular attention to horse-mounted enemies couching their lances, as they may take down any opponent in one hit.\
  [To use the couched lance yourself, wield a lance or similar weapon, and speed up your horse without pressing attack or defense buttons.\
  after you reach a speed, you'll lower your lance. Then try to target your enemies by maneuvering your horse.]", "trainer_combat_pretalk",[]],
+
+# Choosing training parameters
+# Training mode   
+ [anyone,"trainer_choose_mode", [],
+   "We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself.^Which one do you prefer?", "trainer_choose_mode_player",[
+     (assign, "$g_tld_training_mode", 0),
+     (assign, "$g_tld_training_opponents", 0),
+     (assign, "$g_tld_training_weapon", 0),
+   ]],
+
+ [anyone|plyr,"trainer_choose_mode_player",[], "Single combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_training)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[], "Team combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_team)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[], "Gauntlet.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_gauntlet)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[], "None of that, I've changed my mind.", "trainer_pretalk",[]],
  
+# Number of opponents
+ [anyone,"trainer_choose_opponents",[], "Now choose the number of opponents.", "trainer_choose_opponents_player",[]],   
+
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_training)],
+   "One.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 1)]],   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_training)],
+   "Two.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 2)]],   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_training)],
+   "Three.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 3)]],   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_training)],
+   "Four, I feel lucky today.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 4)]],
+   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_team)],
+   "Four.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 4)]],   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_team)],
+   "Eight.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 8)]],   
+ [anyone|plyr,"trainer_choose_opponents_player",[(eq, "$g_tld_training_mode", abm_team)],
+   "Twelve, me and my companions can take on anyone.", "trainer_choose_weapon",[(assign, "$g_tld_training_opponents", 12)]],   
+
+ [anyone|plyr,"trainer_choose_opponents_player",[], "None, I've changed my mind.", "trainer_pretalk",[]],
+ 
+# Player weapon type
+ [anyone,"trainer_choose_weapon",[], "And finally choose your preferred weapon type.", "trainer_choose_weapon_player",[]],   
+
+ [anyone|plyr,"trainer_choose_weapon_player",[], "One-handed weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_one_handed_wpn)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[], "Two-handed weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_two_handed_wpn)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[], "Polearms.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_polearm)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[], "Bows.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_bow)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[], "Thrown weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_thrown)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[], "None, I've changed my mind.", "trainer_pretalk",[]],
+
+# Set up training and start 
+ [anyone,"trainer_begin_training",[], "Very well, here we go. Once you finish training, come back and speak to me.", "close_window",[
+     # Setting slots for use in reward dialog only - training code uses globals only (except slot_troop_trainer_training_result)
+     (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_mode, "$g_tld_training_mode"),
+     (troop_set_slot, "$g_talk_troop", slot_troop_trainer_num_opponents_to_beat, "$g_tld_training_opponents"),
+     (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_result, 0),
+     (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
+     
+     (call_script, "script_tld_start_training_at_training_ground"),
+     
+     # (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+     
+     # (try_begin), # Single combat
+       # (eq, "$g_tld_training_mode", abm_training),
+       # (modify_visitors_at_site, ":training_scene"),
+       # (reset_visitors),
+       # (set_visitor, 4, "trp_player"),
+       # (try_for_range, ":enemy_no", 0, "$g_tld_training_opponents"),
+         # (store_add, ":entry_point", 5, ":enemy_no"), #5-8
+         # (set_visitor, ":entry_point", "trp_looter"),
+       # (try_end),
+       # (set_jump_mission, "mt_training_ground_training"),
+       # (jump_to_scene, ":training_scene"),
+     # (else_try), # Team combat
+       # (eq, "$g_tld_training_mode", abm_team),
+     # (else_try), # Gauntlet
+       # (eq, "$g_tld_training_mode", abm_gauntlet),
+     # (try_end),
+   ]],   
+
+
 #Crooks
 
 ##  [anyone ,"start", [(is_between,"$g_talk_troop",crooks_begin,crooks_end),(eq,"$g_talk_troop_met",0),(eq,"$sneaked_into_town",0),(store_random_in_range, reg2, 2)],

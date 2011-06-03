@@ -943,8 +943,12 @@ mission_templates = [
      (40,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      ],
     tld_common_battle_scripts+[
-      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(mission_disable_talk)]),
-
+      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(mission_disable_talk),
+        #remove some cabbage guard spawn points, so castle and prison guards don't spawn
+        (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
+        ]),
+      
       common_inventory_not_available,
       
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
@@ -1893,8 +1897,73 @@ mission_templates = [
 
   ( "training_ground_training", mtf_arena_fight, -1,
     "Training.",
-    [],
-    [],
+    [
+      (0,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (1,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (2,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (3,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      
+      # Player
+      (4,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[]),
+      # Opponents
+      (5,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (6,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (7,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (8,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      
+      # Spares
+      (9,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (10,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (11,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      
+      # Player team
+      (12,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[]), #player
+      (13,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (14,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (15,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      
+      # Enemy team
+      (16,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (17,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (18,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (19,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (20,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (21,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (22,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (23,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (24,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (25,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (26,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (27,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+    ],
+    [
+      (1, 3, ti_once,
+       [
+         (this_or_next|main_hero_fallen),
+         (num_active_teams_le, 1)
+         ],
+       [
+         (try_begin),
+           (neg|main_hero_fallen),
+           (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_result, 100),
+         (else_try),
+           (assign, ":alive_enemies", 0),
+           (try_for_agents, ":agent_no"),
+             (agent_is_alive, ":agent_no"),
+             (agent_is_human, ":agent_no"),
+             (agent_get_team, ":team_no", ":agent_no"),
+             (eq, ":team_no", 1),
+             (val_add, ":alive_enemies", 1),
+           (try_end),
+           (store_sub, ":dead_enemies", "$g_tld_training_opponents", ":alive_enemies"),
+           (store_mul, ":training_result", ":dead_enemies", 100),
+           (val_div, ":training_result", "$g_tld_training_opponents"),
+           (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_result, ":training_result"),
+         (try_end),
+         (jump_to_menu, "mnu_auto_training_ground_trainer"),
+         (finish_mission),
+         ]),
+    ],
   ),
 
   ( "training_ground_trainer_talk", 0, -1,
@@ -1913,17 +1982,17 @@ mission_templates = [
       (ti_inventory_key_pressed, 0, 0,[(set_trigger_result,1)], []),
       (ti_tab_pressed          , 0, 0,[(set_trigger_result,1)], []),
       
-	  (0.0, 1.0, 2.0,
-      [(lt, "$trainer_help_message", 2),
-        ],
-      [(try_begin),
-         (eq, "$trainer_help_message", 0),
-         (tutorial_box, "str_trainer_help_1", "@Tutorial"),
-       (else_try),
-         (tutorial_box, "str_trainer_help_2", "@Tutorial"),
-       (try_end),
-       (val_add, "$trainer_help_message", 1),
-          ]),
+	  # (0.0, 1.0, 2.0,
+      # [(lt, "$trainer_help_message", 2),
+        # ],
+      # [(try_begin),
+         # (eq, "$trainer_help_message", 0),
+         # (tutorial_box, "str_trainer_help_1", "@Tutorial"),
+       # (else_try),
+         # (tutorial_box, "str_trainer_help_2", "@Tutorial"),
+       # (try_end),
+       # (val_add, "$trainer_help_message", 1),
+          # ]),
     ],
   ),
 

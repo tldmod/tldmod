@@ -6935,12 +6935,12 @@ game_menus = [
   ),
 
   ( "town_brawl_won",mnf_disable_all_keys,
-    "You have beaten all the opponents and the guards sent to quell the disturbance. You quickly manage the frisk them for valuables before vanishing until tempers quiet down.^Maybe next time they would show more respect and back off.",
+    "You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.",
     "none",
     [
       (store_random_in_range, ":random_gold", 200, 500),
       (call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
-      (call_script, "script_change_troop_renown", "trp_player", 1),
+      (call_script, "script_change_troop_renown", "trp_player", 10),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
   ),
@@ -7994,6 +7994,7 @@ game_menus = [
   ("auto_training_ground_trainer", 0, "stub", "none",
     [
          (jump_to_menu, "mnu_town"),
+         (assign, "$talk_context", tc_town_talk),
     
          (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
          (set_jump_mission, "mt_training_ground_trainer_talk"),
@@ -8006,6 +8007,7 @@ game_menus = [
     ],
     []
   ),
+  
 
 #####################################################################
 ## Captivity....

@@ -4470,6 +4470,227 @@ scripts = [
   # INPUT: arg1: troop_id, arg2: stack_no, arg3: troop_count, arg4: xp_ratio_to_add
   ("cf_training_ground_sub_routine_for_training_result", []),
 
+  #script_tld_start_training_at_training_ground
+  # Sets up the training scene and spawns player and opponents of appropriate race and equipment
+  # INPUT:
+  #   $g_tld_training_mode = abm_training, abm_team or abm_gauntlet
+  #   $g_tld_training_opponents = 1-4 for abm_training, 4-12 for abm_team
+  #   $g_tld_training_weapon = player weapon type
+  ("tld_start_training_at_training_ground",
+   [
+     
+     (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+     
+     (modify_visitors_at_site, ":training_scene"),
+     (reset_visitors),
+     
+     # Set up player and his team, if any
+     (try_begin),
+       (eq, "$g_tld_training_mode", abm_training),
+       (assign, ":player_entry_point", 4),
+     (else_try),
+       (assign, ":player_entry_point", 12),
+     (try_end),
+     
+     # Player
+     (call_script, "script_tld_training_equip_entry_point", ":player_entry_point", "trp_player", 0, "$g_tld_training_weapon", 0), #not mounted
+     
+     #Player team - first check for unwounded companions, then fill up with medium training troops
+     (try_begin),
+       (this_or_next|eq, "$g_tld_training_mode", abm_team),
+       (eq, "$g_tld_training_mode", abm_gauntlet),
+       
+       (assign, ":teammates_needed", 3),
+       (store_add, ":teammate_entry_point", ":player_entry_point", 1),
+       # companions
+       (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+       (try_for_range, ":stack_no", 1, ":num_stacks"),
+         (gt, ":teammates_needed", 0),
+         (party_stack_get_troop_id, ":cur_troop", "p_main_party", ":stack_no"),
+         (troop_is_hero, ":cur_troop"),
+         (neg|troop_is_wounded, ":cur_troop"),
+         (call_script, "script_tld_training_equip_entry_point", ":teammate_entry_point", ":cur_troop", 0, -1, -1), #random weapon type and mount
+         (val_add, ":teammate_entry_point", 1),
+         (val_sub, ":teammates_needed", 1),
+       (try_end),
+       # filling up
+       (faction_get_slot, ":teammate", "$g_encountered_party_faction", slot_faction_tier_2_troop),
+       (try_for_range, ":unused", 0, ":teammates_needed"),
+         (call_script, "script_tld_training_equip_entry_point", ":teammate_entry_point", ":teammate", 0, -1, -1), #random weapon type and mount
+         (val_add, ":teammate_entry_point", 1),
+       (try_end),
+     (try_end),
+    
+     #Set up enemies
+     (try_begin),
+       (eq, "$g_tld_training_mode", abm_training),
+       (assign, ":first_enemy_entry_point", 5),
+     (else_try),
+       (assign, ":first_enemy_entry_point", 16),
+     (try_end),
+     (store_add, ":last_enemy_entry_point_plus_one", ":first_enemy_entry_point", "$g_tld_training_opponents"),
+     
+     (try_begin), #non-gauntlet battles
+       (this_or_next|eq, "$g_tld_training_mode", abm_training),
+       (eq, "$g_tld_training_mode", abm_team),
+       (try_for_range, ":entry_point", ":first_enemy_entry_point", ":last_enemy_entry_point_plus_one"),
+         # choose opponent based on player level and random number
+         (store_character_level, ":player_level_bias", "trp_player"),
+         (val_clamp, ":player_level_bias", 1, 30), #1-29
+         (val_sub, ":player_level_bias", 15), #-14..+14
+         (store_random_in_range, ":random_no", 0, 100),
+         (val_add, ":random_no", ":player_level_bias"), #-14..+113
+         (try_begin),
+           (lt, ":random_no", 20),
+           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_1_troop),
+         (else_try),
+           (lt, ":random_no", 40),
+           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_2_troop),
+         (else_try),
+           (lt, ":random_no", 60),
+           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_3_troop),
+         (else_try),
+           (lt, ":random_no", 80),
+           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_4_troop),
+         (else_try),
+           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_5_troop),
+         (try_end),
+         
+         # arm the opponent randomly
+         (call_script, "script_tld_training_equip_entry_point", ":entry_point", ":opponent", 1, -1, -1), #random weapon type and mount
+       (try_end),
+     (try_end),
+    
+     (set_jump_mission, "mt_training_ground_training"),
+     (jump_to_scene, ":training_scene"),
+     ]),
+     
+  #script_tld_training_equip_entry_point
+  # Equip entry point with training items for a weapon type
+  # INPUT: entry_point to override
+  #        troop to spawn there
+  #        team: 0-player, 1-enemy
+  #        weapon_type = itp_X; -1 for random
+  #        is_mounted = 0 or 1, flag for mounted weapons; -1 for random
+  # OUTPUT: none
+  ("tld_training_equip_entry_point",
+   [
+     (store_script_param_1, ":entry_point"),
+     (store_script_param_2, ":troop"),
+     (store_script_param, ":team", 3),
+     (store_script_param, ":weapon_type", 4),
+     (store_script_param, ":is_mounted", 5),
+     
+     (troop_get_type, ":race", ":troop"),
+     (assign, ":is_orc", 0),
+	 (try_begin),
+		(is_between, ":race", tf_orc_begin, tf_orc_end),
+		(assign, ":is_orc", 1),
+	 (try_end),
+     
+     (set_visitor, ":entry_point", ":troop"),
+     (mission_tpl_entry_clear_override_items, "mt_training_ground_training", ":entry_point"),
+         
+     # clothes
+     (try_begin),
+       (eq, ":team", 0),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_a"),
+     (else_try),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_red_tunic"), #is black
+	 (try_end),
+     (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_leather_boots"),
+     
+     # random equipment
+     (try_begin),
+       (eq, ":weapon_type", -1),
+       (store_random_in_range, ":random_no", 0, 100),
+       (try_begin),
+         (lt, ":random_no", 15),
+         (assign, ":weapon_type", itp_type_bow), #15% chance
+       (else_try),
+         (lt, ":random_no", 25),
+         (assign, ":weapon_type", itp_type_thrown), #10%
+       (else_try),
+         (lt, ":random_no", 50),
+         (assign, ":weapon_type", itp_type_one_handed_wpn), #25%
+       (else_try),
+         (lt, ":random_no", 75),
+         (assign, ":weapon_type", itp_type_two_handed_wpn), #25%
+       (else_try),
+         (assign, ":weapon_type", itp_type_polearm), #25%
+       (try_end),
+     (try_end),
+
+     # random mounted status
+     (try_begin),
+       (eq, ":is_mounted", -1),
+       (store_random_in_range, ":is_mounted", 0, 100),
+       (val_div, ":is_mounted", 80), #20% chance mounted
+     (try_end),
+     
+     # equip mount
+     (try_begin),
+       (eq, ":is_mounted", 1),
+       (try_begin),
+         (eq, ":is_orc", 1),
+         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_warg_1b"),
+       (else_try),
+         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_sumpter_horse"),
+       (try_end),
+     (try_end),
+     
+     # choose set of items according to weapon type
+     (assign, ":item_1", -1),
+     (assign, ":item_2", -1),
+     (assign, ":item_3", -1),
+     (assign, ":item_4", -1),
+     (try_begin),
+       (eq, ":weapon_type", itp_type_bow),
+       (assign, ":item_1", "itm_practice_bow"),
+       (assign, ":item_2", "itm_arrows"),
+       (assign, ":item_3", "itm_wood_club"),
+     (else_try),
+       (eq, ":weapon_type", itp_type_thrown),
+       (assign, ":item_1", "itm_rohirrim_throwing_axe"),
+       (assign, ":item_2", "itm_rohirrim_throwing_axe"),
+       (assign, ":item_3", "itm_wood_club"),
+     (else_try),
+       (eq, ":weapon_type", itp_type_one_handed_wpn),
+       (assign, ":item_1", "itm_practice_sword"),
+       (assign, ":item_2", "itm_tab_shield_small_round_b"),
+     (else_try),
+       (eq, ":weapon_type", itp_type_two_handed_wpn),
+       (assign, ":item_1", "itm_arena_sword_two_handed"),
+     (else_try),
+       #(eq, ":weapon_type", itp_type_polearm),
+       (try_begin),
+         (eq, ":is_mounted", 1),
+         (assign, ":item_1", "itm_arena_lance"),
+         (assign, ":item_2", "itm_tab_shield_small_round_b"),
+       (else_try),
+         (assign, ":item_1", "itm_practice_staff"),
+       (try_end),
+     (try_end),
+
+     #...and equip
+     (try_begin),
+       (ge, ":item_1", 0),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_1"),
+     (try_end),
+     (try_begin),
+       (ge, ":item_2", 0),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_2"),
+     (try_end),
+     (try_begin),
+       (ge, ":item_3", 0),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_3"),
+     (try_end),
+     (try_begin),
+       (ge, ":item_4", 0),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_4"),
+     (try_end),
+
+   ]),
 
 ##  #script_cf_print_troop_name_with_stack_index_to_s0
 ##  # INPUT:

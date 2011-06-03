@@ -230,7 +230,7 @@ items =[
 #
 #RANGED
 #["stones"        ,"Troll Stones"   ,[("throwing_stone",0)                                   ], itp_type_thrown |itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
-["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,17,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut),imodbits_bow],
+#["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,17,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut),imodbits_bow],
 ["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,17,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut),imodbits_bow],
 ["regular_bow","Bow",[("regular_bow",0),("regular_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,58,weight(1)|difficulty(0)|shoot_speed(52)|spd_rtng(98)|thrust_damage(28,cut),imodbits_bow],
 ["nomad_bow","Nomad_Bow",[("nomad_bow",0),("nomad_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,164,weight(1.3)|difficulty(0)|shoot_speed(53)|spd_rtng(96)|thrust_damage(30,cut),imodbits_bow],
