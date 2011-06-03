@@ -1973,6 +1973,25 @@ presentations = [
         ]),
       ]),
 
+  ("gauntlet", prsntf_read_only, 0, [
+      (ti_on_presentation_load,
+       [(presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+        (str_store_string, s1, "@Gauntlet wave: 1"),
+        (create_text_overlay, "$g_presentation_obj_1", s1),
+        (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
+        (position_set_x, pos1, 10),
+        (position_set_y, pos1, 700),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        ]),
+      (ti_on_presentation_run,
+       [
+        (assign, reg1, "$g_tld_training_wave"),
+        (str_store_string, s1, "@Gauntlet wave: {reg1}"),
+        (overlay_set_text, "$g_presentation_obj_1", s1),
+        ]),
+      ]),
+
   ("retirement", 0, mesh_load_window,
    [
      (ti_on_presentation_load,

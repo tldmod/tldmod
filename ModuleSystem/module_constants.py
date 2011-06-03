@@ -1056,7 +1056,7 @@ vaegir_merc_parties_end    = "p_zendar"
 arena_masters_begin    = "trp_brigand_arena_master"
 arena_masters_end      = "trp_troops_end"
 
-training_ground_trainers_begin    = "trp_trainer_1"
+training_ground_trainers_begin    = "trp_trainer_gondor"
 training_ground_trainers_end      = "trp_ransom_broker_1"
 
 # town_walkers_begin = "trp_town_walker_1"
@@ -1215,6 +1215,7 @@ abm_visit = 2
 abm_tournament = 3
 abm_team = 4
 abm_gauntlet = 5
+abm_mass_melee = 6
 
 # Camp training modes
 ctm_melee    = 1

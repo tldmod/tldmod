@@ -9815,24 +9815,54 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #Reward for results
     [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
       (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
+      (troop_get_slot, ":training_mode", "$g_talk_troop", slot_troop_trainer_training_mode),
+      (eq, ":training_mode", abm_gauntlet),
+      ],
+   "You have survived up to Gauntlet wave {reg2}. {s4}", "trainer_pretalk",[
+      (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0),
+      (troop_get_slot, ":wave_reached", "$g_talk_troop", slot_troop_trainer_training_result),
+      (store_sub, ":reward_xp", ":wave_reached", 1),
+      (store_mul, ":reward_gold", ":reward_xp", 50), #50,100,..
+      (val_mul, ":reward_xp", 60), #60,120,..
+      (add_xp_as_reward, ":reward_xp"),
+      (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
+      (try_begin),
+        (ge, ":wave_reached", 10),
+        (str_store_string, s4, "@What an amazing feat of arms!"),
+      (else_try),
+        (ge, ":wave_reached", 5),
+        (str_store_string, s4, "@Well done!"),
+      (else_try),
+        (ge, ":wave_reached", 2),
+        (str_store_string, s4, "@Nice legwork."),
+      (else_try),
+        (str_store_string, s4, "@Heh."),
+      (try_end),
+      (assign, reg2, ":wave_reached"),
+      ]],
+
+    [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
+      (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
       (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_training_result, 100), #victory
       ],
    "Very good, you've eliminated all the opponents.", "trainer_pretalk",[
       (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0),
+      (troop_get_slot, ":training_mode", "$g_talk_troop", slot_troop_trainer_training_mode),
+      (troop_get_slot, ":num_opponents", "$g_talk_troop", slot_troop_trainer_num_opponents_to_beat),
       (assign, ":reward_xp", 0),
       (assign, ":reward_gold", 0),
       #rewards
       (try_begin),
-        (eq, "$g_tld_training_mode", abm_training),
-        (store_sub, ":reward_xp", "$g_tld_training_opponents", 1),
+        (eq, ":training_mode", abm_training),
+        (store_sub, ":reward_xp", ":num_opponents", 1),
         (val_mul, ":reward_xp", 20), #0-60
       (else_try),
-        (eq, "$g_tld_training_mode", abm_team),
-        (store_div, ":reward_xp", "$g_tld_training_opponents", 4),
+        (eq, ":training_mode", abm_team),
+        (store_div, ":reward_xp", ":num_opponents", 4),
         (val_sub, ":reward_xp", 1), #0-2
-        (store_mul, ":reward_gold", ":reward_xp", 50), #0-100
+        (store_mul, ":reward_gold", ":reward_xp", 40), #0-80
         (val_mul, ":reward_xp", 30), #0-60
-      (try_end),
+      (try_end), # no rewards for mass melee
       (add_xp_as_reward, ":reward_xp"),
       (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
      ]],
@@ -9917,15 +9947,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 # Choosing training parameters
 # Training mode   
  [anyone,"trainer_choose_mode", [],
-   "We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself.^Which one do you prefer?", "trainer_choose_mode_player",[
+   "We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself. Mass melee is a simple brawl.^Which one do you prefer?", "trainer_choose_mode_player",[
      (assign, "$g_tld_training_mode", 0),
      (assign, "$g_tld_training_opponents", 0),
      (assign, "$g_tld_training_weapon", 0),
+     (assign, "$g_tld_training_wave", 0),
    ]],
 
  [anyone|plyr,"trainer_choose_mode_player",[], "Single combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_training)]],   
  [anyone|plyr,"trainer_choose_mode_player",[], "Team combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_team)]],   
- [anyone|plyr,"trainer_choose_mode_player",[], "Gauntlet.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_gauntlet)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[], "Gauntlet.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_gauntlet),(assign, "$g_tld_training_opponents", 12)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[], "Mass melee.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_mass_melee),(assign, "$g_tld_training_opponents", 12)]],
  [anyone|plyr,"trainer_choose_mode_player",[], "None of that, I've changed my mind.", "trainer_pretalk",[]],
  
 # Number of opponents
@@ -9955,8 +9987,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  [anyone|plyr,"trainer_choose_weapon_player",[], "One-handed weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_one_handed_wpn)]],   
  [anyone|plyr,"trainer_choose_weapon_player",[], "Two-handed weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_two_handed_wpn)]],   
  [anyone|plyr,"trainer_choose_weapon_player",[], "Polearms.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_polearm)]],   
- [anyone|plyr,"trainer_choose_weapon_player",[], "Bows.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_bow)]],   
- [anyone|plyr,"trainer_choose_weapon_player",[], "Thrown weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_thrown)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[(neq, "$g_tld_training_mode", abm_mass_melee)], "Bows.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_bow)]],   
+ [anyone|plyr,"trainer_choose_weapon_player",[(neq, "$g_tld_training_mode", abm_mass_melee)], "Thrown weapons.", "trainer_begin_training",[(assign, "$g_tld_training_weapon", itp_type_thrown)]],   
  [anyone|plyr,"trainer_choose_weapon_player",[], "None, I've changed my mind.", "trainer_pretalk",[]],
 
 # Set up training and start 
@@ -9968,25 +10000,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
      
      (call_script, "script_tld_start_training_at_training_ground"),
-     
-     # (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
-     
-     # (try_begin), # Single combat
-       # (eq, "$g_tld_training_mode", abm_training),
-       # (modify_visitors_at_site, ":training_scene"),
-       # (reset_visitors),
-       # (set_visitor, 4, "trp_player"),
-       # (try_for_range, ":enemy_no", 0, "$g_tld_training_opponents"),
-         # (store_add, ":entry_point", 5, ":enemy_no"), #5-8
-         # (set_visitor, ":entry_point", "trp_looter"),
-       # (try_end),
-       # (set_jump_mission, "mt_training_ground_training"),
-       # (jump_to_scene, ":training_scene"),
-     # (else_try), # Team combat
-       # (eq, "$g_tld_training_mode", abm_team),
-     # (else_try), # Gauntlet
-       # (eq, "$g_tld_training_mode", abm_gauntlet),
-     # (try_end),
    ]],   
 
 

@@ -10,4 +10,5 @@ prsnt_color_selection = 8
 prsnt_battle = 9
 prsnt_sliders = 10
 prsnt_arena_training = 11
-prsnt_retirement = 12
+prsnt_gauntlet = 12
+prsnt_retirement = 13

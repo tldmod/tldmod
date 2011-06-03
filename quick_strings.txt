@@ -1,4 +1,4 @@
-815
+822
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -29,6 +29,8 @@ qstr_Number_of_men_knocke Number_of_men_knocked_down:_{reg1}
 qstr_Number_of_men_left:_ Number_of_men_left:_{reg1}
 qstr_Opponents_Beaten:_{r Opponents_Beaten:_{reg1}
 qstr_Opponents_Remaining: Opponents_Remaining:_{reg1}
+qstr_Gauntlet_wave:_1 Gauntlet_wave:_1
+qstr_Gauntlet_wave:_{reg1 Gauntlet_wave:_{reg1}
 qstr_Remain_in_retirement Remain_in_retirement.
 qstr_Go_back_to_the_adven Go_back_to_the_adventuring.
 qstr_You_have_retired_at_ You_have_retired_at_level_{reg4}_after_{reg5}_days_of_adventuring.
@@ -332,6 +334,7 @@ qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_Forming_ranks. Forming_ranks.
+qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_DEBUG:borders_Xmin:{ DEBUG:borders_Xmin:{reg1}_Xmax{reg0}
 qstr_DEBUG:borders_Ymin:{ DEBUG:borders_Ymin:{reg1}_Ymax{reg0}
 qstr_ball_X:{reg0} ball_X:{reg0}
@@ -760,6 +763,10 @@ qstr_You_chose_well_{sir/ You_chose_well,_{sir/madam}._My_lads_know_how_to_keep_
 qstr_Well_done_{sir/madam Well_done,_{sir/madam}._Keep_the_money_and_wine_coming_our_way,_and_there's_no_foe_in_Calradia_you_need_fear.
 qstr_We_are_at_your_servi We_are_at_your_service,_{sir/madam}._Point_us_in_the_direction_of_those_who_need_hurting,_and_we'll_do_the_rest.
 qstr_You_will_not_be_diss You_will_not_be_dissapointed_{sir/madam}._You_will_not_find_better_warriors_in_all_Calradia.
+qstr_What_an_amazing_feat What_an_amazing_feat_of_arms!
+qstr_Well_done! Well_done!
+qstr_Nice_legwork. Nice_legwork.
+qstr_Heh. Heh.
 qstr_Good_moves_but_you_m Good_moves,_but_you_may_still_need_some_work_to_do.
 qstr_More_than_half_of_th More_than_half_of_the_opponents,_not_bad.
 qstr_You_ll_need_to_try_h You'll_need_to_try_harder_than_that.

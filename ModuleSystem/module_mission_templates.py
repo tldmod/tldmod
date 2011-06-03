@@ -1937,13 +1937,131 @@ mission_templates = [
       (27,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
     ],
     [
-      (1, 3, ti_once,
+      (0, 0, ti_once, [], [(eq, "$g_tld_training_mode", abm_gauntlet),(start_presentation, "prsnt_gauntlet")]),
+      
+      # terrible workaround for the buggy? add_visitors_to_current_scene
+      (1, 0, 0, [],
+      [
+         (store_add, ":enemies", "$g_tld_training_wave", 3),
+         (assign, ":alive_enemies", 0),
+         (try_for_agents, ":agent_no"), # count enemy agents just spawned
+           (agent_is_alive, ":agent_no"),
+           (agent_is_human, ":agent_no"),
+           (agent_get_team, ":team_no", ":agent_no"),
+           (eq, ":team_no", 1),
+           (val_add, ":alive_enemies", 1),
+         (try_end),
+# (assign, reg1, ":enemies"),
+# (assign, reg2, ":alive_enemies"),
+# (display_message, "@Spawned/alive: {reg1}/{reg2}."),
+         (store_sub, ":enemies_to_kill", ":alive_enemies", ":enemies"), # the number of extra enemies to eliminate
+	     (set_show_messages, 0),
+         (try_for_agents, ":agent_no"), #kill the first ":enemies_to_kill" enemy agents
+           (gt, ":enemies_to_kill", 0),
+           (agent_is_alive, ":agent_no"),
+           (agent_is_human, ":agent_no"),
+           (agent_get_team, ":team_no", ":agent_no"),
+           (eq, ":team_no", 1),
+           # suicide
+		   (agent_get_horse, ":horse", ":agent_no"),
+		   (try_begin),
+             (gt, ":horse", -1), 
+             (agent_set_hit_points, ":horse", 0, 1),
+	         (agent_deliver_damage_to_agent, ":agent_no", ":horse"),
+		   (try_end),
+           (agent_set_hit_points, ":agent_no", 0, 1),
+	       (agent_deliver_damage_to_agent, ":agent_no", ":agent_no"),
+           (val_sub, ":enemies_to_kill", 1),
+         (try_end),
+	     (set_show_messages, 1),
+      ]),
+      
+      # spawn next wave of enemies
+      (1, 0, 0,
        [
-         (this_or_next|main_hero_fallen),
+         (eq, "$g_tld_training_mode", abm_gauntlet),
+         (neg|main_hero_fallen),
          (num_active_teams_le, 1)
          ],
        [
+         (store_add, ":enemies", "$g_tld_training_wave", 4),
+         (assign, ":enemy_entry_point", 16), #first entry point
+         (assign, ":spawnings", ":enemies"),
+         (val_min, ":spawnings", 12), #total entry points
+         
+         (store_div, ":to_spawn", ":enemies", ":spawnings"), #1 or more
+         (store_add, ":to_spawn_plus_one", ":to_spawn", 1), #2 or more
+         (store_mod, ":one_extra", ":enemies", ":spawnings"), #0-11
+# (assign, reg1, ":enemies"),
+# (assign, reg2, ":spawnings"),
+# (assign, reg3, ":to_spawn"),
+# (assign, reg4, ":one_extra"),
+# (display_message, "@Enemies {reg1}. Spawnings {reg2}. To spawn {reg3}. One extra {reg4}."),
+
+         (store_character_level, ":player_level_bias", "trp_player"),
+         (val_clamp, ":player_level_bias", 1, 30), #1-29
+         (val_sub, ":player_level_bias", 15), #-14..+14
+         (try_for_range, ":spawn_number", 0, ":spawnings"),
+           (store_random_in_range, ":random_no", 0, 100),
+           (val_add, ":random_no", ":player_level_bias"), #-14..+113
+           (try_begin),
+             (lt, ":random_no", 20),
+             (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_1_troop),
+           (else_try),
+             (lt, ":random_no", 40),
+             (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_2_troop),
+           (else_try),
+             (lt, ":random_no", 60),
+             (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_3_troop),
+           (else_try),
+             (lt, ":random_no", 80),
+             (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_4_troop),
+           (else_try),
+             (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_5_troop),
+           (try_end),
+           
+           (try_begin),
+             (lt, ":spawn_number", ":one_extra"),
+             (add_visitors_to_current_scene, ":enemy_entry_point", ":opponent", ":to_spawn_plus_one"),
+# (assign, reg1, ":enemy_entry_point"),
+# (assign, reg2, ":to_spawn_plus_one"),
+# (display_message, "@Entry {reg1}: {reg2}."),
+           (else_try),
+             (add_visitors_to_current_scene, ":enemy_entry_point", ":opponent", ":to_spawn"),
+# (assign, reg1, ":enemy_entry_point"),
+# (assign, reg2, ":to_spawn"),
+# (display_message, "@Entry {reg1}: {reg2}."),
+           (try_end),
+           (val_add, ":enemy_entry_point", 1),
+         (try_end),
+         (val_add, "$g_tld_training_wave", 1),
+         (assign, reg1, "$g_tld_training_wave"),
+         (display_message, "@Reached Gauntlet wave {reg1}!"),
+         ]),
+      
+      # finish mission
+      (1, 3, ti_once,
+       [ (assign, ":gauntlet_finished", 0),
          (try_begin),
+           (eq, "$g_tld_training_mode", abm_gauntlet),
+           (main_hero_fallen),
+           (assign, ":gauntlet_finished", 1),
+         (try_end),
+         (assign, ":one_team_left", 0),
+         (try_begin),
+           (neq, "$g_tld_training_mode", abm_gauntlet),
+           (num_active_teams_le, 1),
+           (assign, ":one_team_left", 1),
+         (try_end),
+         (this_or_next|eq, ":gauntlet_finished", 1),
+         (this_or_next|main_hero_fallen),
+         (eq, ":one_team_left", 1)
+         ],
+       [
+         (try_begin),
+           (eq, "$g_tld_training_mode", abm_gauntlet),
+           (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_result, "$g_tld_training_wave"),
+         (else_try),
            (neg|main_hero_fallen),
            (troop_set_slot, "$g_talk_troop", slot_troop_trainer_training_result, 100),
          (else_try),
