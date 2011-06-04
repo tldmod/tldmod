@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1377
+ 1387
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3346,6 +3346,9 @@ spr_tent_b 0 0 tent_b bo_tent_b 0
 spr_tent_c 0 0 tent_c bo_tent_c 0
 
 
+spr_tent_d 0 0 tent bo_tent 0
+
+
 spr_gondor_man_statue 0 0 gondor_statue bo_gondor_statue 0
 
 
@@ -3536,6 +3539,33 @@ spr_rock_cliff 0 0 cliff bo_cliff 0
 
 
 spr_rock_cliff_a 0 0 cliff_a bo_cliff_a 0
+
+
+spr_rock_cliff_b 0 0 cliff_b bo_cliff_b 0
+
+
+spr_rock_cliff_c 0 0 cliff_distant_1 bo_cliff_distant_1 0
+
+
+spr_rock_cliff_d 0 0 cliff_distant_2 bo_cliff_distant_2 0
+
+
+spr_rock_cliff_e 0 0 cliff_distant_3 bo_cliff_distant_3 0
+
+
+spr_rock_cliff_f 0 0 cliff_distant_4 bo_cliff_distant_4 0
+
+
+spr_rock_cliff_g 0 0 cliff_distant_5 bo_cliff_distant_5 0
+
+
+spr_rock_cliff_h 0 0 cliff_distant_6 bo_cliff_distant_6 0
+
+
+spr_rock_cliff_i 0 0 cliff_distant_7 bo_cliff_distant_7 0
+
+
+spr_rock_cliff_j 0 0 cliff_distant_8 bo_cliff_distant_8 0
 
 
 spr_argo1 0 0 argo1 bo_argo1 0
