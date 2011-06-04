@@ -411,7 +411,6 @@ qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
 qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
-qstr_Mordor_party_with_ol Mordor_party_with_olog_hai_spawned!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
 qstr_Rank_{reg0}:_{s20}_m Rank_{reg0}:_{s20},_mod_{reg1}.
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
@@ -454,6 +453,7 @@ qstr_{s1}^Difference:_{re {s1}^Difference:_{reg1}
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
+qstr_{s10}_besieged! {s10}_besieged!
 qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_a_point_northwest_of_East_Emnet!
 qstr_SE_advance_camps_spa SE_advance_camps_spawned_around_a_point_west_of_West_Osgiliath!
 qstr_C_advance_camps_spaw C_advance_camps_spawned_around_Cerin_Amroth!

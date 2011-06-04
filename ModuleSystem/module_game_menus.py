@@ -1638,18 +1638,19 @@ game_menus = [
     (assign, reg0, ":old_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
    ]),
-   ("camp_mvtest_trolls",[],"Test trolls in battle.",[
-     (party_add_members, "p_main_party", "trp_troll_of_moria", 3),
-     (set_spawn_radius, 0),
-     (spawn_around_party, "p_main_party", "pt_mordor_war_party"),
-     (assign, ":troll_party", reg0),
-     (party_clear, ":troll_party"),
-     (party_add_members, ":troll_party", "trp_black_numenorean_horsemaster", 3),
-     (party_add_members, ":troll_party", "trp_olog_hai", 3),
-     (party_add_members, ":troll_party", "trp_orc_archer_of_mordor", 10),
-     (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
-     (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
-   ]),            
+   ("camp_mvtest_sieges",[],"Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
+   # ("camp_mvtest_trolls",[],"Test trolls in battle.",[
+     # (party_add_members, "p_main_party", "trp_troll_of_moria", 3),
+     # (set_spawn_radius, 0),
+     # (spawn_around_party, "p_main_party", "pt_mordor_war_party"),
+     # (assign, ":troll_party", reg0),
+     # (party_clear, ":troll_party"),
+     # (party_add_members, ":troll_party", "trp_black_numenorean_horsemaster", 3),
+     # (party_add_members, ":troll_party", "trp_olog_hai", 3),
+     # (party_add_members, ":troll_party", "trp_orc_archer_of_mordor", 10),
+     # (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
+     # (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
+   # ]),            
    ("camp_mvtest_legend",[],"Enable legendary places.",[
     (enable_party, "p_legend_amonhen"),
     (enable_party, "p_legend_deadmarshes"),
@@ -2232,6 +2233,53 @@ game_menus = [
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
+  
+  ("mvtest_sieges",0,
+   "Test sieges",
+   "none",
+   [],
+    [("order_siege",[],"Order ambient faction to besiege...", [(jump_to_menu, "mnu_mvtest_order_siege")]),
+     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+  ),
+  
+  ("mvtest_order_siege",0,
+   "Order {s1} to besiege...",
+   "none",
+   [(str_store_faction_name, s1, "$ambient_faction"),],
+  [("continue",[],"Back to siege menu.", [(jump_to_menu, "mnu_mvtest_sieges"),]),]
+  +
+  concatenate_scripts([[
+  (
+	"siege_town",
+	[(party_is_active, center_list[y][0]),
+     (store_faction_of_party, ":town_faction", center_list[y][0]),
+     (store_relation, ":reln", ":town_faction", "$ambient_faction"),
+	 (lt, ":reln", 0),
+     (faction_get_slot, ":faction_theater", "$ambient_faction", slot_faction_active_theater),
+     (party_slot_eq, center_list[y][0], slot_center_theater, ":faction_theater"),
+     (party_slot_eq, center_list[y][0], slot_center_is_besieged_by, -1),
+     (str_store_party_name, s10, center_list[y][0]),],
+	"{s10}.",
+	[
+        #order ambient king to besiege
+        (faction_get_slot, ":king", "$ambient_faction", slot_faction_leader),
+        (troop_get_slot, ":king_party", ":king", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", center_list[y][0], 0),
+        (party_set_slot, center_list[y][0], slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, center_list[y][0]),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", center_list[y][0]),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (str_store_party_name, s10, center_list[y][0]),
+		(display_message, "@{s10} besieged!", 0x30FFC8),
+    ]
+  )
+  ]for y in range(len(center_list)) ])      
+),
+
   
   ("mvtest_advcamps",0,
    "Test advance camps",
@@ -4989,10 +5037,23 @@ game_menus = [
            (try_end),
            (try_begin),
              (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-             (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+             (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_center), #TLD
+             #(party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
            (else_try),
              (party_get_slot, ":battle_scene", "$g_encountered_party", slot_castle_exterior),
            (try_end),
+#MV: TEST CODE - hardcoded siege scenes
+(try_begin),
+  (eq, "$g_encountered_party", "p_town_cair_andros"),
+  (assign, ":battle_scene", "scn_cair_andros_siege"),
+(else_try),
+  (eq, "$g_encountered_party", "p_town_dale"),
+  (assign, ":battle_scene", "scn_dale_siege"),
+(else_try),
+  (eq, "$g_encountered_party", "p_town_west_emnet"),
+  (assign, ":battle_scene", "scn_west_emnet_siege"),
+(try_end),
+#END TEST CODE
            (call_script, "script_calculate_battle_advantage"),
            (val_mul, reg0, 2),
            (val_div, reg0, 3), #scale down the advantage a bit in sieges.
