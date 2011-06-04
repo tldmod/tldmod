@@ -28,7 +28,7 @@ from module_scripts_form import *
 # added subfactions (mtarini)
 def set_item_faction():
 	command_list = []
-	for i_troop in xrange(1,len(troops) ):
+	for i_troop in xrange(28,396 ): #regular troops here
 		r = 0
 		#for i_item in troops[i_troop][7]: 
 		for j in range(0,len(subfaction_data) ):
@@ -62,7 +62,6 @@ faction_player_icons = [
     ("fac_woodelf" ,"icon_player_horseman", "icon_mirkwood_elf", "icon_mirkwood_elf"),
     ("fac_moria"   ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
     ("fac_guldur"  ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
-#    ("fac_northmen","icon_player_horseman", "icon_player", "icon_player"),
     ("fac_gundabad","icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
     ("fac_dale"    ,"icon_player_horseman", "icon_player", "icon_player"),
     ("fac_dwarf"   ,"icon_player_horseman", "icon_dwarf",  "icon_dwarf"),

@@ -51,15 +51,14 @@ items =[
 ["no_item","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["horse_meat","Horse_Meat",[("raw_meat",0)],itp_type_goods|itp_consumable|itp_food,0,12,weight(40)|abundance(0)|food_quality(30)|max_ammo(40),imodbits_none],
 ###Items before this point are hardwired and their order should not be changed!
-["practice_sword","Practice_Sword",[("practice_sword",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_wooden_attack,itc_longsword,3,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(90)|swing_damage(16,blunt)|thrust_damage(12,blunt),imodbits_none],
-["arena_axe","Axe",[("arena_axe",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_bonus_against_shield,itc_scimitar|itcf_carry_axe_left_hip,137,weight(1.5)|difficulty(0)|spd_rtng(100)|weapon_length(69)|swing_damage(23,blunt)|thrust_damage(17,blunt),imodbits_axe],
-["arena_sword","Sword",[("arena_sword_one_handed",0),("sword_medieval_b_scabbard",ixmesh_carry)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,243,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(21,blunt)|thrust_damage(17,blunt),imodbits_sword_high],
-["arena_sword_two_handed","Two_Handed_Sword",[("arena_sword_two_handed",0)],itp_primary|itp_wooden_parry|itp_type_two_handed_wpn|itp_two_handed,itc_greatsword|itcf_carry_sword_back,670,weight(2.75)|difficulty(0)|spd_rtng(93)|weapon_length(110)|swing_damage(29,blunt)|thrust_damage(21,blunt),imodbits_sword_high],
-["arena_lance","Lance",[("arena_lance",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield,itc_staff|itcf_carry_spear,90,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_polearm],
-["practice_staff","Practice_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,9,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(12,blunt),imodbits_none],
+["practice_sword","Practice_Sword",[("practice_sword",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_wooden_attack,itc_longsword,3,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(90)|swing_damage(16,blunt)|thrust_damage(0,pierce),imodbits_none],
+["arena_axe","Axe",[("arena_axe",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_bonus_against_shield,itc_scimitar|itcf_carry_axe_left_hip,137,weight(1.5)|difficulty(0)|spd_rtng(100)|weapon_length(69)|swing_damage(23,blunt)|thrust_damage(0,pierce),imodbits_axe],
+["arena_sword","Sword",[("arena_sword_one_handed",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn,itc_longsword|itcf_carry_sword_left_hip,243,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(21,blunt)|thrust_damage(0,pierce),imodbits_sword_high],
+["arena_sword_two_handed","Two_Handed_Sword",[("arena_sword_two_handed",0)],itp_primary|itp_wooden_parry|itp_type_two_handed_wpn|itp_two_handed,itc_greatsword|itcf_carry_sword_back,670,weight(2.75)|difficulty(0)|spd_rtng(93)|weapon_length(110)|swing_damage(29,blunt)|thrust_damage(0,pierce),imodbits_sword_high],
+["arena_lance","Lance",[("arena_lance",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield,itc_staff|itcf_carry_spear,90,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(0,pierce),imodbits_polearm],
+["practice_staff","Practice_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,9,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(0,pierce),imodbits_none],
 ["practice_bow","Practice_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_type_bow|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back,0,weight(1.5)|difficulty(0)|shoot_speed(40)|spd_rtng(90)|thrust_damage(19,blunt),imodbits_bow],
-["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(25,blunt)|max_ammo(10),imodbits_thrown],
-
+["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(35,blunt)|max_ammo(7),imodbits_thrown],
 #
 #foods (first one is smoked_fish)
 ["human_meat","Human_Meat",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
@@ -81,7 +80,6 @@ items =[
 ["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,10,weight(40)|abundance(0)|0,imodbits_none],
 ["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,50,weight(40)|abundance(0)|0,imodbits_none],
 ["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,250,weight(40)|abundance(0)|0,imodbits_none],
-["wheeled_cage","Giant wheeled cage",[("wheeled_cage",0)],itp_type_goods,0,250,weight(250)|abundance(0)|0,imodbits_none],
 # 
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.
@@ -231,8 +229,7 @@ items =[
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_2", ":agent_no", ":troop_no")])]],
 #
 #RANGED
-#["stones"        ,"Troll Stones"   ,[("throwing_stone",0)                                   ], itp_type_thrown |itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
-#["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,17,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut),imodbits_bow],
+#["stones","Troll Stones",[("throwing_stone",0)], itp_type_thrown |itp_primary ,itcf_throw_stone, 1, weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
 ["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,17,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut),imodbits_bow],
 ["regular_bow","Bow",[("regular_bow",0),("regular_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,58,weight(1)|difficulty(0)|shoot_speed(52)|spd_rtng(98)|thrust_damage(28,cut),imodbits_bow],
 ["nomad_bow","Nomad_Bow",[("nomad_bow",0),("nomad_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,164,weight(1.3)|difficulty(0)|shoot_speed(53)|spd_rtng(96)|thrust_damage(30,cut),imodbits_bow],
@@ -756,6 +753,7 @@ items =[
 ["rohan_cav_sword","Rohan_Riding_Sword",[("rohan_sword_a",0),("scab_rohan_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,394,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_sword_high],
 ["rohan_inf_sword","Rohan_Sword",[("rohan_sword_b",0),("scab_rohan_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,280,weight(1.25)|difficulty(0)|spd_rtng(100)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(22,pierce),imodbits_sword_high],
 ["rohan_spear","Rohan_Spear",[("rohan_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_rohan_spear,189,weight(2.5)|difficulty(0)|spd_rtng(92)|weapon_length(172)|swing_damage(16,blunt)|thrust_damage(37,pierce),imodbits_polearm],
+["rohan_lance","Rohan_Lance",[("rohan_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_pike,110,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(180)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_polearm],
 ["rohan_lance_standard","Rohirrim_Lance",[("lance_standard",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(35,pierce)|thrust_damage(35,pierce),imodbits_polearm],
 ["rohan_sword_c","Rohan_Sword",[("rohan_sword_c",0),("scab_rohan_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,280,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(96)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_sword_high],
 ["rohirrim_short_axe","Rohirrim_Short_Axe",[("rohan_1haxe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,524,weight(2)|difficulty(0)|spd_rtng(97)|weapon_length(50)|swing_damage(40,cut)|thrust_damage(0,pierce),imodbits_axe],
@@ -1196,5 +1194,6 @@ items =[
 ["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_cutting_spear|itcf_carry_axe_back,2000,weight(4.5)|difficulty(0)|spd_rtng(94)|weapon_length(166)|swing_damage(33,pierce)|thrust_damage(40,pierce),imodbits_polearm],
 ["crebain_reward","Isengard_Crebain",[("reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
+["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
 ]
