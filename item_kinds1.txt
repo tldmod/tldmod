@@ -1,5 +1,5 @@
 itemsfile version 2
-874
+875
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -12,7 +12,7 @@ itemsfile version 2
  itm_arena_axe Axe Axe 1  arena_axe 0  79953922 9223388530091229198 137 0 1.500000 100 0 0 0 0 23552 100 0 69 0 529 535
 0
 
- itm_arena_sword Sword Sword 2  arena_sword_one_handed 0  sword_medieval_b_scabbard 3458764513820540928  4456450 9223388564182532111 243 0 1.500000 100 0 0 0 0 21504 99 0 95 0 529 533
+ itm_arena_sword Sword Sword 1  arena_sword_one_handed 0  4456450 9223388529822793743 243 0 1.500000 100 0 0 0 0 21504 99 0 95 0 529 533
 0
 
  itm_arena_sword_two_handed Two_Handed_Sword Two_Handed_Sword 1  arena_sword_two_handed 0  6553603 9223635924301119728 670 0 2.750000 100 0 0 0 0 29696 93 0 110 0 533 541
@@ -27,7 +27,7 @@ itemsfile version 2
  itm_practice_bow Practice_Bow Practice_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6291464 5905584128 0 0 1.500000 100 0 0 0 0 0 90 40 0 0 531 0
 0
 
- itm_practice_throwing_axe Practice_Throwing_Axes Practice_Throwing_Axes 1  rohan_throwing_axe 0  71303178 196608 241 0 5.000000 100 0 0 0 0 0 99 20 53 10 537 0
+ itm_practice_throwing_axe Practice_Throwing_Axes Practice_Throwing_Axes 1  rohan_throwing_axe 0  71303178 196608 241 0 1.500000 100 0 0 0 0 0 99 20 30 10 537 0
 0
 
  itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
@@ -70,9 +70,6 @@ itemsfile version 2
 0
 
  itm_metal_scraps_good Good_quality_metal_scraps Good_quality_metal_scraps 1  weapon_scraps_b 0  11 0 250 0 40.000000 100 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_wheeled_cage Giant_wheeled_cage Giant_wheeled_cage 1  wheeled_cage 0  11 0 250 0 58.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_sumpter_horse Sumpter_Horse Sumpter_Horse 1  sumpter_horse 0  65537 0 64 41876193280 0.000000 100 0 1 0 1 40 33 28 0 0 5 0
@@ -1637,6 +1634,9 @@ itemsfile version 2
  itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 4222124650660353 189 0 2.500000 100 0 0 0 0 16384 92 0 172 0 293 528
 0
 
+ itm_rohan_lance Rohan_Lance Rohan_Lance 1  rohan_lance 0  138772484 201326848 110 0 2.500000 100 0 0 0 0 16384 88 0 180 0 282 528
+0
+
  itm_rohan_lance_standard Rohirrim_Lance Rohirrim_Lance 1  lance_standard 0  138772484 4222124717768960 1000 0 3.000000 100 0 0 0 0 35840 120 0 120 0 291 291
 0
 
@@ -2632,6 +2632,9 @@ itemsfile version 2
 0
 
  itm_miruvor_reward Miruvor_Flask Miruvor_Flask 1  reward_miruvor 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_wheeled_cage Giant_wheeled_cage Giant_wheeled_cage 1  wheeled_cage 0  4107 0 1000 0 58.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0

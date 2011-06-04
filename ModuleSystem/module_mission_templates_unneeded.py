@@ -277,7 +277,7 @@ common_siege_ai_trigger_init = (0, 0, ti_once,
 
 common_siege_ai_trigger_init_2 = (0, 0, ti_once,
   [ (set_show_messages, 0),
-    (entry_point_get_position, pos10, 10),
+    (entry_point_get_position, pos10, 41), #TLD, was 10
     (team_give_order, "$defender_team", grc_infantry, mordr_hold),
     (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
@@ -303,7 +303,7 @@ common_siege_defender_reinforcement_check = (3, 0, 5, [],
      (ge,":mission_time",10),
        (store_normalized_team_count,":num_defenders",0),
        (lt,":num_defenders",10),
-       (add_reinforcements_to_entry,4, 7),
+       (add_reinforcements_to_entry, 5, 7), #TLD, was 4, 7
        (val_add,"$defender_reinforcement_stage",1),
    (try_begin),
      (ge, "$defender_reinforcement_stage", 2),
@@ -330,7 +330,7 @@ common_siege_attacker_reinforcement_check = (1, 0, 5,
         (store_normalized_team_count,":num_attackers",1),
         (lt,":num_attackers",6)
     ],
-  [ (add_reinforcements_to_entry, 1, 8),
+  [ (add_reinforcements_to_entry, 8, 8), #TLD, was 1, 8
     (val_add,"$attacker_reinforcement_stage", 1),
     ])
 

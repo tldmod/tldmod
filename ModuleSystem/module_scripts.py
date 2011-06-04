@@ -13372,7 +13372,7 @@ scripts = [
        (eq, ":agent_class", grc_archers),
        (try_begin),
          (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
-         (store_random_in_range, ":random_entry_point", 40, 44),
+         (store_random_in_range, ":random_entry_point", 50, 60), #TLD, was 40, 44
          (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":random_entry_point"),
        (try_end),
        (try_begin),

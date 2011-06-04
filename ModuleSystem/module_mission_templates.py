@@ -1766,19 +1766,35 @@ mission_templates = [
   ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
     "You attack the walls of the castle...",
     [
-     (0,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
-     (0,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
-     (10,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
-     (11,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,7,[]),
-     (15,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     # Attacker initial spawn point (was 0)
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
 
-     (40,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (41,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (42,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (43,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (44,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (45,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     # Initial defender spawn point (was 11)
+     (40,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,7,[]),
+     # Defender choke points (was 10)
+     (41,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     (42,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     (43,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     # Defender reinforcements (was 15)
+     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     (46,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     # Attacker reinforcements (was 0)
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]), #entry 8 for add_reinforcements_to_entry
+     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
+     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
+     
+     # archer target positions (was 40-43)
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      ],
     common_deathcam_triggers+
     tld_common_battle_scripts+[
