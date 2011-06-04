@@ -1940,7 +1940,7 @@ mission_templates = [
       (0, 0, ti_once, [], [(eq, "$g_tld_training_mode", abm_gauntlet),(start_presentation, "prsnt_gauntlet")]),
       
       # terrible workaround for the buggy? add_visitors_to_current_scene
-      (1, 0, 0, [],
+      (1, 0, 0, [(eq, "$g_tld_training_mode", abm_gauntlet)],
       [
          (store_add, ":enemies", "$g_tld_training_wave", 3),
          (assign, ":alive_enemies", 0),

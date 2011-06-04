@@ -3034,8 +3034,6 @@ scripts = [
       (else_try),
 		(eq,":item_no","itm_orc_brew"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Athletics"),(set_trigger_result, color_item_text_bonus),(try_end),
-		#(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Not Used"),(set_trigger_result, 0xAAAAAA),(try_end),
-		#(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Camp Menu"),(set_trigger_result, 0xAAAAAA),(try_end),
       (else_try),
 		(eq,":item_no","itm_ent_water"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Use from"),(try_end),
@@ -3112,6 +3110,12 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Tactics"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+2 to Engineering"),(try_end),
         (set_trigger_result, color_item_text_bonus),
+      (else_try),
+		(eq,":item_no","itm_crebain_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+3 to Spotting"),(set_trigger_result, color_item_text_bonus),(try_end),
+      (else_try),
+		(eq,":item_no","itm_miruvor_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Athletics"),(set_trigger_result, color_item_text_bonus),(try_end),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
@@ -4546,7 +4550,7 @@ scripts = [
          (else_try),
            (faction_get_slot, ":teammate", "$g_encountered_party_faction", slot_faction_tier_3_troop),
          (try_end),
-         (set_visitors, ":teammate_entry_point", ":teammate", 3), # 1 player + 3*3 troops = 10 vs. 12 enemies
+         (set_visitors, ":teammate_entry_point", ":teammate", 5), # 1 player + 5*3 troops = 16 vs. 24 enemies
          (call_script, "script_tld_training_equip_entry_point", ":teammate_entry_point", ":teammate", 0, -1, -1), #random weapon type and mount
          (val_add, ":teammate_entry_point", 1),
        (try_end),
@@ -4587,6 +4591,9 @@ scripts = [
          
          # arm the opponent randomly
          (try_begin),
+           (eq, "$g_tld_training_mode", abm_mass_melee),
+           (set_visitors, ":entry_point", ":opponent", 2), #24 dudes
+         (else_try),
            (neq, "$g_tld_training_mode", abm_gauntlet),
            (set_visitor, ":entry_point", ":opponent"), #gauntlet does this in the mission template
          (try_end),
@@ -4689,7 +4696,8 @@ scripts = [
      (else_try),
        (eq, ":weapon_type", itp_type_thrown),
        (assign, ":item_1", "itm_practice_throwing_axe"),
-       (assign, ":item_2", "itm_wood_club"),
+       (assign, ":item_2", "itm_tab_shield_small_round_b"),
+       (assign, ":item_3", "itm_wood_club"),
      (else_try),
        (eq, ":weapon_type", itp_type_one_handed_wpn),
        (store_random_in_range, ":random_no", 0, 3),
