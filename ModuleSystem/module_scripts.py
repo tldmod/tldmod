@@ -4636,9 +4636,14 @@ scripts = [
        (eq, ":team", 0),
        (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_a"),
      (else_try),
-       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_red_tunic"), #is black
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_blue_tunic"),
 	 (try_end),
-     (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_leather_boots"),
+     (try_begin),
+       (eq, ":is_orc", 1),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_orc_ragwrap"),
+     (else_try),
+       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_leather_boots"),
+	 (try_end),
      
      # random equipment
      (try_begin),

@@ -1640,7 +1640,7 @@ center_list = [
 	("p_town_harad_camp", ["scn_harad_camp_center", -1, -1,-1,-1, "mesh_town_harad"],
 	    [-1, "trp_town_42_weaponsmith", "trp_town_42_horse_merchant", "trp_elder_harad", "pt_harad_reinf_a", "trp_harad_lord","trp_harad_desert_warrior","trp_harad_desert_warrior","trp_harad_infantry","trp_harad_cavalry"], 
 		["icon_mfc_harad"],[4,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_low, 1),
-	("p_town_khand_camp", ["scn_khand_camp_center", -1, -1,-1,-1, "mesh_town_khand"],
+	("p_town_khand_camp", ["scn_khand_camp_center", -1, -1,-1, "scn_khand_arena", "mesh_town_khand"],
 	    [-1, "trp_town_43_weaponsmith", "trp_town_43_horse_merchant", "trp_elder_khand", "pt_khand_reinf_a", "trp_khand_lord", "trp_easterling_youth", "trp_easterling_axeman","trp_khand_glaive_whirler","trp_variag_pitfighter"], 
 		["icon_mfc_khand"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_low, 1),
 	("p_town_umbar_camp", ["scn_umbar_camp_center", -1, -1,-1,-1, "mesh_town_evilcamp"],

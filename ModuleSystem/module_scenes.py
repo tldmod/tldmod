@@ -171,8 +171,9 @@ scenes = [
   ("zendar_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("gondor_arena",sf_indoors ,"interior_gondor_training_room_b", "bo_interior_gondor_training_room_b", (0,0),(100,100),-100,"0",[],[]),
   ("rohan_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_rohan"),
-  ("elf_arena"   ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_forest"),
+  ("elf_arena"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
   ("mordor_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  ("khand_arena",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 
 # stub leftovers
   ("town_store",sf_indoors ,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",    [],[]),

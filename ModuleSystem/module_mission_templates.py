@@ -1938,13 +1938,18 @@ mission_templates = [
     ],
     [
       (0, 0, ti_once, [], [(eq, "$g_tld_training_mode", abm_gauntlet),(start_presentation, "prsnt_gauntlet")]),
+      (0, 0, ti_once, [],
+      [
+        #(play_sound, "snd_arena_ambiance", sf_looping),
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+      ]),
       
       # terrible workaround for the buggy? add_visitors_to_current_scene
       (1, 0, 0, [(eq, "$g_tld_training_mode", abm_gauntlet)],
       [
          (store_add, ":enemies", "$g_tld_training_wave", 3),
          (assign, ":alive_enemies", 0),
-         (try_for_agents, ":agent_no"), # count enemy agents just spawned
+         (try_for_agents, ":agent_no"), # count enemy agents spawned
            (agent_is_alive, ":agent_no"),
            (agent_is_human, ":agent_no"),
            (agent_get_team, ":team_no", ":agent_no"),
@@ -1956,6 +1961,7 @@ mission_templates = [
 # (display_message, "@Spawned/alive: {reg1}/{reg2}."),
          (store_sub, ":enemies_to_kill", ":alive_enemies", ":enemies"), # the number of extra enemies to eliminate
 	     (set_show_messages, 0),
+         (init_position, pos1),
          (try_for_agents, ":agent_no"), #kill the first ":enemies_to_kill" enemy agents
            (gt, ":enemies_to_kill", 0),
            (agent_is_alive, ":agent_no"),
@@ -1968,9 +1974,11 @@ mission_templates = [
              (gt, ":horse", -1), 
              (agent_set_hit_points, ":horse", 0, 1),
 	         (agent_deliver_damage_to_agent, ":agent_no", ":horse"),
+             (agent_set_position, ":horse", pos1),
 		   (try_end),
            (agent_set_hit_points, ":agent_no", 0, 1),
 	       (agent_deliver_damage_to_agent, ":agent_no", ":agent_no"),
+           (agent_set_position, ":agent_no", pos1),
            (val_sub, ":enemies_to_kill", 1),
          (try_end),
 	     (set_show_messages, 1),

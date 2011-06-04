@@ -2075,7 +2075,7 @@ troops = [
  
 ["trainer_gondor","Trainer","_",tf_hero| tf_gondor| tfg_armor| tfg_boots, scn_gondor_arena|entry(1),0,fac_commoners,
    [itm_tld_tunic,itm_leather_boots,],
-      0,0,0,man_face_old_1,man_face_older_1],
+      0,0,0,gondor_face1,gondor_face2],
 ["trainer_rohan","Trainer","_",tf_hero| tf_rohan| tfg_armor| tfg_boots, scn_rohan_arena|entry(1),0,fac_commoners,
    [itm_tld_tunic,itm_leather_boots,],
       0,0,0,rohan_face1,rohan_face2],
@@ -2085,10 +2085,10 @@ troops = [
 ["trainer_mordor","Trainer","_",tf_hero| tf_uruk| tfg_armor| tfg_boots, scn_mordor_arena|entry(1),0,fac_commoners,
    [itm_uruk_ragwrap,itm_m_uruk_heavy_c,],
       0,0,0,uruk_hai_face1,uruk_hai_face2],
-["trainer_5","Trainer","_",tf_hero, scn_training_ground_ranged_melee_5|entry(1),0,fac_commoners,
-   [],
-      0,0,0,merchant_face_1,merchant_face_2],
- 
+["trainer_khand","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_khand_arena|entry(1),0,fac_commoners,
+   [itm_khand_foot_lam_c,itm_leather_boots,],
+      0,0,0,khand_man1,khand_man2],
+
 # Ransom brokers.
 ["ransom_broker_1","Ransom_Broker","_",tf_hero| tf_randomize_face,0,0,fac_commoners,
    [],

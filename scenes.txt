@@ -1,5 +1,5 @@
 scenesfile version 1
- 212
+ 213
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -528,7 +528,7 @@ scn_rohan_arena rohan_arena 256 none none 0.000000 0.000000 100.000000 100.00000
   0 
   0 
  outer_terrain_rohan 
-scn_elf_arena elf_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
+scn_elf_arena elf_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
@@ -536,6 +536,10 @@ scn_mordor_arena mordor_arena 256 none none 0.000000 0.000000 100.000000 100.000
   0 
   0 
  outer_terrain_plain 
+scn_khand_arena khand_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+  0 
+  0 
+ outer_terrain_flat 
 scn_town_store town_store 1 interior_town_house_i bo_interior_town_house_i -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
