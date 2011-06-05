@@ -2239,6 +2239,74 @@ game_menus = [
    "none",
    [],
     [("order_siege",[],"Order ambient faction to besiege...", [(jump_to_menu, "mnu_mvtest_order_siege")]),
+     ("order_siege_wo",[
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Gothmog to besiege West Osgiliath.",
+      [
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_west_osgiliath", 0),
+        (party_set_slot, "p_town_west_osgiliath", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_west_osgiliath"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_west_osgiliath"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Gothmog besieges West Osgiliath!", 0x30FFC8),
+        (change_screen_map),
+      ]),
+     ("order_siege_candros",[
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Gothmog to besiege Cair Andros.",
+      [
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_cair_andros", 0),
+        (party_set_slot, "p_town_cair_andros", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_cair_andros"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_cair_andros"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Gothmog besieges Cair Andros!", 0x30FFC8),
+        (change_screen_map),
+      ]),
+     ("order_siege_wemnet",[
+        (troop_get_slot, ":king_party", "trp_isengard_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Saruman to besiege West Emnet.",
+      [
+        (troop_get_slot, ":king_party", "trp_isengard_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_west_emnet", 0),
+        (party_set_slot, "p_town_west_emnet", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_west_emnet"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_west_emnet"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Saruman besieges West Emnet!", 0x30FFC8),
+        (change_screen_map),
+      ]),
+     ("order_siege_dale",[
+        (troop_get_slot, ":king_party", "trp_rhun_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Partitava to besiege Dale.",
+      [
+        (troop_get_slot, ":king_party", "trp_rhun_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_dale", 0),
+        (party_set_slot, "p_town_dale", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_dale"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_dale"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Partitava besieges Dale!", 0x30FFC8),
+        (change_screen_map),
+      ]),
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
@@ -2253,6 +2321,9 @@ game_menus = [
   (
 	"siege_town",
 	[(party_is_active, center_list[y][0]),
+     (faction_get_slot, ":king", "$ambient_faction", slot_faction_leader),
+     (troop_get_slot, ":king_party", ":king", slot_troop_leaded_party),
+     (party_is_active, ":king_party"),
      (store_faction_of_party, ":town_faction", center_list[y][0]),
      (store_relation, ":reln", ":town_faction", "$ambient_faction"),
 	 (lt, ":reln", 0),
@@ -2275,6 +2346,7 @@ game_menus = [
         (party_set_slot, ":king_party", slot_party_ai_substate, 1),
         (str_store_party_name, s10, center_list[y][0]),
 		(display_message, "@{s10} besieged!", 0x30FFC8),
+        (change_screen_map),
     ]
   )
   ]for y in range(len(center_list)) ])      
@@ -6116,6 +6188,7 @@ game_menus = [
         (str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
+        (assign, ":friends_left", reg10), #TLD fix
         (try_begin),
           (eq, "$g_siege_first_encounter", 1),
           (call_script, "script_let_nearby_parties_join_current_battle", 1, 1), #MV from 0, 1, so no enemies standing by would join
@@ -6205,6 +6278,7 @@ game_menus = [
         (try_end),
         (assign, "$g_siege_first_encounter", 0),
         (assign, "$new_encounter", 0),
+        (assign, reg10, ":friends_left"), #TLD fix
         ],
     [
       ("siege_defender_join_battle",
