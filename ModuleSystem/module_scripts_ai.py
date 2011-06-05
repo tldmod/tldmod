@@ -217,17 +217,23 @@ ai_scripts = [
          (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
            (party_is_active, ":enemy_walled_center"), #don't attack disabled centers
            
-           (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
            #MV: make sure the center is in the active theater
            (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
+           
+           (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
+           (party_get_slot, ":siegable", ":enemy_walled_center", slot_center_siegability),
+           
+           (neq, ":siegable", tld_siegable_never), #some places are never siegable
+           
            #MV: make sure the enemy faction is weak enough to be sieged
            (faction_get_slot, ":center_faction_strength", ":center_faction", slot_faction_strength),
-           (this_or_next|is_between, ":enemy_walled_center", advcamps_begin, advcamps_end), # advance camps can always be sieged
-           (lt, ":center_faction_strength", fac_str_weak),
+           
+           (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+           (lt, ":center_faction_strength", fac_str_weak), # otherwise, defenders need to be weak
            #MV: if it's a faction capital, the enemy needs to be very weak
            (this_or_next|lt, ":center_faction_strength", fac_str_very_weak),
-           (this_or_next|is_between, ":enemy_walled_center", advcamps_begin, advcamps_end), # advance camps can always be sieged
-           (neg|faction_slot_eq, ":center_faction", slot_faction_capital, ":enemy_walled_center"),
+           (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+           (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
            (assign, ":besieger_own_faction", 0),
@@ -287,6 +293,12 @@ ai_scripts = [
            (try_begin),
              (party_slot_eq, ":enemy_walled_center", slot_center_ex_faction, ":faction_no"),
              (val_mul, ":center_score", 2),
+           (try_end),
+           (try_begin), # if it's a capital, pretty much go for it
+             (eq, ":siegable", tld_siegable_capital),
+             (val_mul, ":center_score", 3),
+             (lt, ":center_faction_strength", fac_str_dying),
+             (val_mul, ":center_score", 100),
            (try_end),
            (val_mul, ":center_score", ":reln"),
            (val_div, ":center_score", ":dist"),

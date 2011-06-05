@@ -1358,7 +1358,8 @@ scripts = [
         (party_set_slot, center_list[x][0], slot_town_prison          , center_list[x][1][2]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_tavern          , center_list[x][1][3]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_arena           , center_list[x][1][4]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_town_menu_background , center_list[x][1][5]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_town_walls           , center_list[x][1][5]) for x in range(len(center_list)) ]+[   
+        (party_set_slot, center_list[x][0], slot_town_menu_background , center_list[x][1][6]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_elder           , center_list[x][2][3]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_barman          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_town_weaponsmith     , center_list[x][2][1]) for x in range(len(center_list)) ]+[
@@ -1379,6 +1380,7 @@ scripts = [
         (party_set_slot, center_list[x][0], slot_center_strength_income,    center_list[x][6]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_center_garrison_limit,     center_list[x][7]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_center_destroy_on_capture, center_list[x][8]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_siegability,        center_list[x][9]) for x in range(len(center_list)) ]+[
 #item abundancy in center shops
         (troop_set_slot, center_list[x][2][2], slot_troop_shop_horses  ,center_list[x][4][0] ) for x in range(len(center_list)) ]+[
         (troop_set_slot, center_list[x][2][1], slot_troop_shop_1h      ,center_list[x][4][1] ) for x in range(len(center_list)) ]+[
@@ -1402,7 +1404,11 @@ scripts = [
 # center fixed info filling
       (try_for_range, ":town_no", towns_begin, towns_end),
         (party_set_slot, ":town_no", slot_party_type, spt_town),
-        (party_set_slot, ":town_no", slot_town_walls, "scn_town_walls"),
+        (try_begin),
+          (party_slot_eq, ":town_no", slot_town_walls, -1),
+          (party_get_slot, ":town_scene", ":town_no", slot_town_center),
+          (party_set_slot, ":town_no", slot_town_walls, ":town_scene"),
+        (try_end),
         (party_set_slot, ":town_no", slot_town_store, "scn_town_store"),
         (party_set_slot, ":town_no", slot_town_alley, "scn_town_alley"),
         #(party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),

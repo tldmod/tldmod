@@ -5037,23 +5037,10 @@ game_menus = [
            (try_end),
            (try_begin),
              (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-             (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_center), #TLD
-             #(party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+             (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
            (else_try),
              (party_get_slot, ":battle_scene", "$g_encountered_party", slot_castle_exterior),
            (try_end),
-#MV: TEST CODE - hardcoded siege scenes
-(try_begin),
-  (eq, "$g_encountered_party", "p_town_cair_andros"),
-  (assign, ":battle_scene", "scn_cair_andros_siege"),
-(else_try),
-  (eq, "$g_encountered_party", "p_town_dale"),
-  (assign, ":battle_scene", "scn_dale_siege"),
-(else_try),
-  (eq, "$g_encountered_party", "p_town_west_emnet"),
-  (assign, ":battle_scene", "scn_west_emnet_siege"),
-(try_end),
-#END TEST CODE
            (call_script, "script_calculate_battle_advantage"),
            (val_mul, reg0, 2),
            (val_div, reg0, 3), #scale down the advantage a bit in sieges.
@@ -6229,23 +6216,10 @@ game_menus = [
               (assign, "$g_battle_result", 0),
               (try_begin),
                 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-                (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_center), #TLD
-                #(party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+                (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
               (else_try),
                 (party_get_slot, ":battle_scene", "$g_encountered_party", slot_castle_exterior),
               (try_end),
-#MV: TEST CODE - hardcoded siege scenes
-(try_begin),
-  (eq, "$g_encountered_party", "p_town_cair_andros"),
-  (assign, ":battle_scene", "scn_cair_andros_siege"),
-(else_try),
-  (eq, "$g_encountered_party", "p_town_dale"),
-  (assign, ":battle_scene", "scn_dale_siege"),
-(else_try),
-  (eq, "$g_encountered_party", "p_town_west_emnet"),
-  (assign, ":battle_scene", "scn_west_emnet_siege"),
-(try_end),
-#END TEST CODE
               (call_script, "script_calculate_battle_advantage"),
               (val_mul, reg0, 2),
               (val_div, reg0, 3), #scale down the advantage a bit.
