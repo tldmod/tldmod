@@ -115,7 +115,7 @@ game_menus = [
 #	(call_script,"script_TLD_troop_banner_slot_init"),
 	(call_script,"script_reward_system_init"),
 	(call_script,"script_init_player_map_icons"),
-	(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
+	#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
 	
 	# relocate party next to own capital
 	(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
@@ -145,6 +145,8 @@ game_menus = [
        [ 
 	     #  free food for everyone
 		(troop_add_item, "trp_player","itm_dried_meat",0),
+        (call_script, "script_get_player_party_morale_values"),
+        (party_set_morale, "p_main_party", reg0),
 		# TEMP: a spear for everyone
 		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
 		

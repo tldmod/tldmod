@@ -228,6 +228,9 @@ find_lost_spears_permission_yes
 find_lost_spears_permission_no
 lord_talk_preoffer
 lord_give_troops
+lord_give_troops_check
+lord_give_troops_check_1
+lord_give_troops_check_2
 lord_get_reward_item_ask
 lord_get_reward_item
 lord_get_reward_item_answer
@@ -267,7 +270,6 @@ lord_join_rebellion_suggest_3
 lord_join_rebellion_suggest_4
 lord_join_rebellion_suggest_5
 lord_suggest_action_ask
-lord_ask_follow
 lord_talk_offer
 knight_offer_join
 hero_pretalk

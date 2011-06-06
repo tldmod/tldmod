@@ -1692,6 +1692,22 @@ scripts = [
       (try_for_range, ":cur_center", centers_begin, centers_end),
         (call_script, "script_update_center_notes", ":cur_center"),
       (try_end),
+      
+#Troop commentary changes begin
+        #MV: good lords are upstanding, Eye sadistic, Hand cunning
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+          (store_troop_faction, ":lord_faction", ":lord"),
+          (try_begin),
+            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_upstanding),
+          (else_try),
+            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_eye),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_debauched),
+          (else_try),
+            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_cunning),
+          (try_end),
+        (try_end),
+#Troop commentary changes end
 
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":faction_no"),
@@ -2906,7 +2922,7 @@ scripts = [
       (party_stack_get_size, ":stack_size", "p_encountered_party_backup", ":i_stack"),
       (neg|troop_is_hero, ":stack_troop"), #no heroes
       (store_troop_faction, ":troop_faction", ":stack_troop"),
-      (eq, ":troop_faction", "$g_encountered_party_faction"), # only safe on map!
+      (eq, ":troop_faction", "$g_talk_troop_faction"),
       (assign, ":troop_found", 0),
       (try_for_range, ":j_stack", 0, ":num_stacks_2"),
         (party_stack_get_troop_id, ":stack_troop_2", "p_main_party", ":j_stack"),
@@ -16522,21 +16538,6 @@ scripts = [
                 (troop_set_slot, ":npc", ":slot", ":string"),
             (try_end),
         (try_end),
-#Troop commentary changes begin
-        #MV: good lords are upstanding, Eye sadistic, Hand cunning
-        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-          (store_troop_faction, ":lord_faction", ":lord"),
-          (try_begin),
-            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good),
-            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_upstanding),
-          (else_try),
-            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_eye),
-            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_debauched),
-          (else_try),
-            (troop_set_slot, ":lord", slot_lord_reputation_type, lrep_cunning),
-          (try_end),
-        (try_end),
-#Troop commentary changes end
 
 #Post 0907 changes begin
         (call_script, "script_add_log_entry", logent_game_start, "trp_player", -1, -1, -1),

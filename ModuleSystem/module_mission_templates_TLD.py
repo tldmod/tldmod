@@ -297,7 +297,7 @@ nazgul_sweeps = (2,1.2,5,
 )
 
 # if player attempts to ride non matching mount, mount rebels
-tld_player_cant_ride = (0.90,1.5,0.5,
+tld_player_cant_ride = (1.90,1.5,0.5,
   [
     (eq, "$g_crossdressing_activated", 0),
 	(get_player_agent_no, ":player_agent"),
@@ -312,7 +312,7 @@ tld_player_cant_ride = (0.90,1.5,0.5,
 	(try_begin), (eq, ":race", tf_orc),(assign, ":is_orc" , 1),(try_end), # non-orcs (uruks & hai included) cannot ride ordinary wargs
 	(neq, ":is_warg", ":is_orc"), # non orc riding wargs, or orc riding non wargs
 	(store_random_in_range, ":rand",0,100),
-	(ge, ":rand", 50),
+	(ge, ":rand", 20),
   ],
   [
 	(get_player_agent_no, ":player"),
