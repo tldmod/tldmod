@@ -2901,25 +2901,46 @@ dialogs = [
 	] ],
 
 	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
+	"Can a savage beast be made to obey commands?","lord_capture_troll_completed_two_trolls_thankyou_info",[] ],
+
+	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
 	"Thank you, Master. You will be pleased by the way this troll will be put in good use.","lord_capture_troll_completed_two_trolls_thankyou_accept",[] ],
 
 	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
 	"Thank you, master. But I'm not worth your great gift. It is too dangerous for me.","lord_capture_troll_completed_two_trolls_thankyou_refuse",[] ],
 
-	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[ ],
-	"Master, I will bring greater havoc if you also provide an armour for the beast [5000 pts].","lord_capture_troll_completed_two_trolls_thankyou_raise",[] ],
+	[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[
+		(faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
+	],
+	"Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].","lord_capture_troll_completed_two_trolls_thankyou_raise",[] ],
 
-	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[(party_add_members, "trp_troll_of_moria", "p_main_party", 1),],
-	"Now bring havoc to my enemies with your new gift","lord_pretalk",[] ],
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_info",[],
+	"Are you questioning the abilities of your Master, {playername}? This beast is trained to follow every command on the battlefield. It will wrack havock over Our enemies. But, you and your warriors keep at due distance from the beast when it fights, and never stand between its arms and its victims.","lord_capture_troll_completed_two_trolls_thankyou",[] ],
+
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[],
+	"Now bring havoc to my enemies with your new gift","lord_pretalk",[(party_add_members, "p_main_party", "trp_troll_of_moria", 1),] ],
 
 	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_refuse",[ ],
 	"As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.","lord_pretalk",[] ],
 
-	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(party_add_members, "trp_armoured_troll", "p_main_party", 1),],
-	"You dare ask for an armoured troll, {playername}, given under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",[] ],
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[
+	 (faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10),
+	],
+	"You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",
+	[(party_add_members, "p_main_party", "trp_armoured_troll", 1),
+	 (faction_get_slot, ":val", "$g_talk_troop_faction", slot_faction_influence),
+	 (store_sub, ":val", 10),
+	 (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":val" ),
+	] ],
+
+	[anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[ 
+  	  (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10),
+	],
+	"How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.","lord_capture_troll_completed_two_trolls_thankyou",
+	[] ],
 
 	[anyone, "lord_capture_troll_completed_one_troll",[],
-	"Excellent, {playername}. You are a most faithful and useful servant. This troll We will be most useful for our purposes. That it is taken to the dungeons!",
+	"Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!",
 	"close_window",[
 	(call_script, "script_finish_quest", "qst_capture_troll", 100),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
@@ -2935,7 +2956,21 @@ dialogs = [
    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5) 
    ]],
   
-      # CAPTURE TROLL QUEST END
+    # CAPTURE TROLL QUEST END
+	  
+	# KILL TROLL QUEST START
+	[anyone,"lord_start", [
+	  (store_partner_quest,":lords_quest"),
+	  (eq,":lords_quest","qst_kill_troll"),
+	  (check_quest_succeeded, "qst_kill_troll"),
+	  (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+	  (str_store_party_name,12,":quest_object_center"),
+	],"News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.",
+	"lord_generic_mission_completed",[
+	  (call_script, "script_finish_quest", "qst_kill_troll", 100),
+	  (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3)]
+	],
+	# KILL TROLL QUEST END
 
   #TLD quests fail/success END:
  
@@ -5967,39 +6002,72 @@ dialogs = [
     # TLD mission: capture troll (mtarini) -- begin 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_troll")],
   "You are a brave servant, {playername}, and we will give you a glimpse of our plans.\
-  We need fresh monstrosus blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", 
+  We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", 
   "lord_mission_capture_troll_1", 
   []],
   
    [anyone|plyr,"lord_mission_capture_troll_1", [], "How can I serve, Master?", "lord_mission_capture_troll_2",[]],
 
-   [anyone,"lord_mission_capture_troll_2", [], "A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experimets! Two, would be better. The more we have, the better.",
+   [anyone,"lord_mission_capture_troll_2", [], "A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experiments! Two, would be better. The more we have, the better.",
   "lord_mission_capture_troll_3",[]],
 
-   [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be found?",                      "lord_mission_capture_troll_infoa",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "Where can such a beast be found?",                      "lord_mission_capture_troll_infoa",[]],
    [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be captured?",                   "lord_mission_capture_troll_infob",[]],
    [anyone|plyr,"lord_mission_capture_troll_3", [], "How can such a beast be transported to you?",         "lord_mission_capture_troll_infoc",[]],
    [anyone|plyr,"lord_mission_capture_troll_3", [], "You shall have your wild troll, Master.",             "lord_mission_capture_troll_accepted",[]],
-   [anyone|plyr,"lord_mission_capture_troll_3", [], "Pity, master! That beast will sqash me like a bug!",  "lord_mission_capture_troll_rejected",[]],
+   [anyone|plyr,"lord_mission_capture_troll_3", [], "Mercy, Master! That beast will smash me like a bug!",  "lord_mission_capture_troll_rejected",[]],
 
-   [anyone,"lord_mission_capture_troll_infoa", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
-   [anyone,"lord_mission_capture_troll_infob", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
-   [anyone,"lord_mission_capture_troll_infoc", [], "In these time of blood and shadows, wild cave trolls are growing excited and going my many eyes in the land... TODO","lord_mission_capture_troll_3",[]],
+   [anyone,"lord_mission_capture_troll_infoa", [], "In these time of blood and shadows, wild cave trolls are growing excited and they are spreading from their lairs in the Misty Mountains... the best place where to look would be around the caves there.","lord_mission_capture_troll_3",[]],
+   [anyone,"lord_mission_capture_troll_infob", [], "You shall find one, and take it down in combat. Fear not of killing it during the fight: a troll is too coriaceous a beast for your weapons to kill it right away... and they do recover, more than you would expect. After it falls over its own black blood, you shall carry it to our feet, still breathing.","lord_mission_capture_troll_3",[]],
+   [anyone,"lord_mission_capture_troll_infoc", [], "You will be provided with a robust wheeled cage. It harbours more than enough space for a troll, and it can be pulled around. Hasten your steps on the way back: not even the metal of the cage is totally safe against the fury of a troll blinded by rage and pain. Make sure it does not break free and kill you.","lord_mission_capture_troll_3",[]],
   
-    [anyone,"lord_mission_capture_troll_rejected", [], "Now you reveal what you are really worth, but I knew that of you all along. Weak, codardous {playername}. Now begone", "lord_pretalk",
+    [anyone,"lord_mission_capture_troll_rejected", [], "Only now you reveal what you are really worth, but I knew that of you all along. Weak, coward {playername}. Now begone.", "lord_pretalk",
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
    (assign, "$g_leave_encounter",1),]], 
  
- [anyone,"lord_mission_capture_troll_accepted", [], "I knew I could count on your strenght and bravery. Slaves, give to {playername} one of Our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed. ", "lord_pretalk",
+ [anyone,"lord_mission_capture_troll_accepted", [], "I knew I could count on your strenght and bravery. Slaves, give to {playername} one of Our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.", "lord_pretalk",
    [
     (troop_add_item, "trp_player","itm_wheeled_cage",0),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+	(setup_quest_text,"$random_quest_no"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
    ]],
    
     # TLD mission: capture troll (mtarini) -- end
 
+	[anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_kill_troll")],
+      "Our land is facing dangers that were unheard of in our times. People are disappearing in the outskirts of {s3}. Not only commoners, but even small armed groups who venture outside the walls never return. There have been the strangest rumors, but I know what we are facing.", "lord_tell_mission_kill_troll",
+    [
+       (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+       (str_store_party_name_link,3,":quest_object_center"),
+    ]],
+
+	
+	[anyone,"lord_tell_mission_kill_troll", [],
+      "Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I dont know what whitchery has caused this, but I need that thing to be dispatched.", "lord_mission_told",
+    [
+       (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+       (str_store_party_name_link,3,":quest_object_center"),
+    ]],
+
+    [anyone|plyr,"lord_mission_told", [(eq,"$random_quest_no","qst_kill_troll")],
+      "How can those beasts be fought?", "lord_mission_kill_troll_info_a",
+    []],
+
+	[anyone,"lord_mission_kill_troll_info_a", [],
+      "A troll is a dangerous creature indeed. A giant monster ehich possesses an incredible strenght in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wileded in their hands. A single troll, is rumored, can esily best a group of half a dozen of well armed and trained men, wasting them all with a single blow. Not only men but horses fear trolls. Be careful if you plan to charge one while mounted.", "lord_mission_told",
+    []],
+
+    [anyone|plyr,"lord_mission_told", [(eq,"$random_quest_no","qst_kill_troll")],
+      "Do you think it comes from Mordor, or Isengard?", "lord_mission_kill_troll_info_b",
+    []],
+
+	[anyone,"lord_mission_kill_troll_info_b", [(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),(str_store_party_name_link,3,":quest_object_center"),],
+      "No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.", "lord_mission_told",
+    []],
+
+	
    # TLD mission: investigate fangorn (mtarini) -- begin 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
   "Here is a mission for a trusted and brave servant like you, {playername}.\
@@ -7113,6 +7181,28 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
       #(troop_set_slot, ":quest_object_troop", slot_troop_cur_center, 0),
       (troop_join, ":quest_object_troop"),
+    (else_try),
+	  (eq, "$random_quest_no", "qst_kill_troll"),
+	  (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+	  (set_spawn_radius, 3),
+	  (spawn_around_party,":quest_object_center","pt_raging_trolls"),
+	  (assign, ":quest_target_party", reg0),
+	  (party_relocate_near_party, reg0, ":quest_object_center"),
+	  (quest_set_slot, "$random_quest_no", slot_quest_target_party, ":quest_target_party"),
+	  (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
+	  (str_store_troop_name,1,"$g_talk_troop"),
+	  (str_store_party_name,2,"$g_encountered_party"),
+	  (str_store_troop_name,s9,"$g_talk_troop"),
+      (str_store_party_name,s13,":quest_object_center"),
+	 
+      (setup_quest_text,"$random_quest_no"),
+      (try_begin),
+        (is_between, "$g_encountered_party", centers_begin, centers_end),
+        (setup_quest_giver, "$random_quest_no", "str_given_by_s1_at_s2"),
+      (else_try),
+        (setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
+      (try_end),
+
 ##    (else_try),
 ##      (eq, "$random_quest_no", "qst_hunt_down_raiders"),
 ##      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),

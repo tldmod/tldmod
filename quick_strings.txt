@@ -471,6 +471,7 @@ qstr_OFF OFF
 qstr_ON ON
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
+qstr_A_second_troll_is_ca A_second_troll_is_caged_in_wheeled_cage.
 qstr_Here_you_are. Here_you_are.
 qstr_Player_was_moved_to_ Player_was_moved_to_{s10}.
 qstr_neutral_whereabouts neutral_whereabouts
@@ -498,8 +499,6 @@ qstr_Regulars_and_Heroes Regulars_and_Heroes
 qstr_Added_1000_experienc Added_1000_experience_to_player.
 qstr_Attributes_skills_an Attributes,_skills_and_proficiencies_raised.
 qstr_Items_added_to_playe Items_added_to_player_inventory.
-qstr_Increased_relations_ Increased_relations_with_all_factions.
-qstr_Decreased_relations_ Decreased_relations_with_all_factions.
 qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
@@ -598,6 +597,7 @@ qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_{reg1}_{s1}_{reg2?ha {reg1}_{s1}_{reg2?have:has}_escaped_from_your_party_during_the_night.
 qstr_Building_of_{s0}_in_ Building_of_{s0}_in_{s4}_has_been_completed.
 qstr_You_pay_for_accommod You_pay_for_accommodation.
+qstr_Troll_outside_{s2}_w Troll_outside_{s2}_was_killed._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_{s1}_is_scouted. {s1}_is_scouted.

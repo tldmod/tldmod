@@ -2873,11 +2873,23 @@ game_menus = [
   ("can_capture_troll",0,"The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in its blood, it looks tremendously dangerous...",
   "none",[(set_background_mesh, "mesh_ui_default_menu_window")], [
 	("killit",[],"Dispatch it, now. Make sure it dies.",[(jump_to_menu,"$g_next_menu")],),
-	("cageit",[(player_has_item,"itm_wheeled_cage"),],"Cage it and drag it around.",[
+	("cageit1",[
+	  (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),
+	  (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),(eq, ":num_trolls", 0),
+	 ],
+	 "Cage it and drag it around.",[
       (party_add_prisoners, "p_main_party", "trp_troll_of_moria", 1),
 	  (display_message,"@Troll caged in wheeled cage."),
       (jump_to_menu,"$g_next_menu")],
-	)
+	),
+	("cageit2",[ # capture a second troll as prisoner
+	   (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),
+	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),(eq, ":num_trolls", 1),
+	],"Cage it togheter with the other troll.",[
+      (party_add_prisoners, "p_main_party", "trp_troll_of_moria", 1),
+	  (display_message,"@A second troll is caged in wheeled cage."),
+      (jump_to_menu,"$g_next_menu")],
+	),
   ]
   ),
   
@@ -3150,22 +3162,22 @@ game_menus = [
         ]
        ),	  
 	  
-      ("camp_mod_1",   [],
-	  "Increase relations with all Factions.",
-       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
-		   (call_script, "script_set_player_relation_with_faction", ":faction", 40),
-        (try_end),
-		(display_message, "@Increased relations with all factions."),
-        ]
-       ),
+      #("camp_mod_1",   [],
+	  #"Increase relations with all Factions.",
+#       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+#		   (call_script, "script_set_player_relation_with_faction", ":faction", 40),
+        #(try_end),
+		#(display_message, "@Increased relations with all factions."),
+        #]
+       #),
 	   
-      ("camp_mod_1b", [],
-	  "Decrease relations with all Factions.",
-       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
-		   (call_script, "script_set_player_relation_with_faction", ":faction", -40),
-        (try_end),
-		(display_message, "@Decreased relations with all factions."),
-        ]),	   
+      #("camp_mod_1b", [],
+	  #"Decrease relations with all Factions.",
+#       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+#		   (call_script, "script_set_player_relation_with_faction", ":faction", -40),
+        #(try_end),
+		#(display_message, "@Decreased relations with all factions."),
+        #]),	   
 
       ("camp_mod_5",   [],
       "Spawn a looter party nearby.",
@@ -3196,9 +3208,10 @@ game_menus = [
 #        (try_end),
 #		(display_message, "@All villages are now infested by bandits."),
 #        ]),	   
-	 ("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
 
-	 ("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
+	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
+
+	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
 	 
 	 ("cheat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),	 
 	 
@@ -4205,15 +4218,30 @@ game_menus = [
        (call_script, "script_print_casualties_to_s0", "p_ally_casualties", 0),
        (str_store_string, s10, "@^^Ally Casualties:{s0}"),
      (try_end),
-     ],
-	[("insp_troll",
+	 # kill troll quest (mtarini)
+     (try_begin),
+       (check_quest_active, "qst_kill_troll"),
+       (eq, "$g_battle_result", 1),
+	   (quest_get_slot, ":quest_object_troop","qst_kill_troll", slot_quest_target_party),
+	   (eq, ":quest_object_troop", "$g_enemy_party"),
+	   (call_script, "script_succeed_quest", "qst_kill_troll"),
+     (try_end),
+
+    ],
+	 
+	[
+	 #options for players:
+	 
+	 # capture troll quest troll quest (mtarini)
+	 ("inspect_troll",
 	  [
 	   (eq, "$g_battle_result", 1),
 	   (check_quest_active, "qst_capture_troll"),
 	   (party_get_template_id, ":j", "$g_enemy_party"),(eq,":j","pt_wild_troll"),
 	  ],"Inspect downed troll",[ (jump_to_menu, "mnu_can_capture_troll")]) ,
+	  
      ("continue",[],"Continue...",[(jump_to_menu, "$g_next_menu"),]),
-	]
+	],
   ),
 
   ( "total_victory",0,

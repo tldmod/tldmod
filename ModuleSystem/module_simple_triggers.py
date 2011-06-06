@@ -1614,7 +1614,7 @@ simple_triggers = [
 # Quest triggers:
 
 # capture troll quest (mtarini)
-# if the quest is active, add a wild troll party
+# if the quest is active, add a wild troll party every now and then, up to two.
 (10, [(check_quest_active, "qst_capture_troll"),
      (assign,":count",0), # count active wild troll parties (*45)
 	 (try_for_parties,":i"),(party_is_active, ":i"),(party_get_template_id, ":j", ":i"),(eq,":j","pt_wild_troll"),(val_add,":count",45),(try_end),
@@ -1623,13 +1623,16 @@ simple_triggers = [
 	 (spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
 	]),
 
-(10, [(check_quest_active, "qst_capture_troll"),
-     (assign,":count",0), # count active wild troll parties (*45)
-	 (try_for_parties,":i"),(party_is_active, ":i"),(party_get_template_id, ":j", ":i"),(eq,":j","pt_wild_troll"),(val_add,":count",45),(try_end),
-	 (store_random_in_range,":die_roll",0,100),(ge,":die_roll",":count"), # if (die_roll(100)>numtrolls*45)
-	 (set_spawn_radius,1),
-	 (spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
-	]),
+# kill troll quest: if troll dies on its own, cancel quest (mtarini)
+(5, [
+  (check_quest_active, "qst_kill_troll"),
+  (quest_get_slot, ":quest_target_party", "qst_kill_troll", slot_quest_target_party),
+  (neg|party_is_active, ":quest_target_party"),
+  (quest_get_slot, ":quest_object_center", "qst_kill_troll", slot_quest_object_center),
+  (str_store_party_name,2,":quest_object_center"),
+  (display_message, "@Troll outside {s2} was killed. Mission canceled."),
+  (cancel_quest, "qst_kill_troll"),
+]),
 	
  
 # Remaining days text update
