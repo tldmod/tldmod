@@ -454,7 +454,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(200),knows_ironflesh_2|knows_power_draw_4|knows_athletics_3|knows_power_throw_1,vaegir_face_young_1,vaegir_face_older_2],
 ["dale_warrior","Dale_Warrior","Dale_Warriors",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,
    [itm_dale_pike,itm_dale_sword,itm_dale_armor_b,itm_leather_boots,itm_dale_helmet_b,],
-      str_10|agi_7|int_4|cha_4|level(10),wp(100),knows_athletics_1|knows_ironflesh_1|knows_shield_2,vaegir_face_young_1,vaegir_face_old_2],
+      str_13|agi_11|int_4|cha_4|level(15),wp(135),knows_athletics_1|knows_ironflesh_1|knows_shield_2,vaegir_face_young_1,vaegir_face_old_2],
 ["dale_veteran_warrior","Dale_Veteran_Warrior","Dale_Veteran_Warriors",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,
    [itm_dale_pike,itm_dale_shield_a,itm_dale_sword,itm_dale_armor_f,itm_leather_boots,itm_dale_helmet_a,itm_dale_helmet_b,],
       str_15|agi_15|int_4|cha_4|level(20),wp(170),knows_athletics_2|knows_ironflesh_2|knows_power_strike_2|knows_shield_2,vaegir_face_young_1,vaegir_face_older_2],
@@ -536,7 +536,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(200),knows_riding_6|knows_power_strike_2|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_2|knows_horse_archery_1,rhun_man1,rhun_man2],
 ["dorwinion_noble_of_rhun","Dorwinion_Noble_of_Rhun","Dorwinion_Nobles_of_Rhun",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_shield|tfg_helm,0,0,fac_rhun,
    [itm_furry_boots,itm_rhun_armor_p,itm_rhun_armor_k,itm_rhun_helm_n,itm_rhun_helm_o,itm_rhun_horse_g,itm_rhun_horse_h,itm_rhun_greatsword,itm_rhun_falchion,itm_rhun_bull3_shield,],
-      def_attrib|level(26),wp(140),knows_riding_6|knows_power_strike_2|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_2|knows_horse_archery_1,rhun_man1,rhun_man2],
+      str_20|agi_20|int_20|cha_20|level(40),wp(300),knows_riding_6|knows_power_strike_2|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_2|knows_horse_archery_1,rhun_man1,rhun_man2],
 ["rhun_items","BUG","BUG",tf_hero,0,0,fac_rhun,
    [itm_saddle_horse,itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sumpter_horse,itm_short_bow,],
       0,0,0,0],
@@ -555,10 +555,10 @@ troops = [
       str_18|agi_13|int_4|cha_4|level(20),wp(240),knows_common|knows_athletics_3|knows_power_draw_4|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
 ["dwarven_pikeman","Pike-dwarf","Pike-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_mail_mittens,itm_dwarf_armor_a,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_g,itm_dwarf_shield_k,],
-      str_18|agi_13|int_4|cha_4|level(20),wp(240),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
+      str_18|agi_15|int_4|cha_4|level(25),wp(270),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
 ["dwarven_halberdier","Halberdier-dwarf","Halberdier-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_axe,itm_dwarf_great_mattock,],
-      str_18|agi_18|int_4|cha_4|level(30),wp(300),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
+      str_24|agi_18|int_4|cha_4|level(40),wp(350),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
 ["dwarven_axeman","Axedwarf","Axedwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_leather_dwarf_armor,itm_dwarf_helm_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],
       str_18|agi_13|int_4|cha_4|level(20),wp(240),knows_common|knows_athletics_3|knows_power_draw_4|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
@@ -567,7 +567,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(300),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
 ["longbeard_axeman","Longbeard_Axedwarf","Longbeard_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,itm_dwarf_great_axe,],
-      str_24|agi_18|int_4|cha_4|level(30),wp(350),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
+      str_24|agi_18|int_4|cha_4|level(40),wp(350),knows_common|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
 ["dwarven_lookout","Dwarven_Lookout","Dwarven_Lookouts",tf_dwarf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_lamedon_hood,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],
       str_12|agi_9|int_4|cha_4|level(10),wp(160),knows_common|knows_athletics_2|knows_power_draw_4|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
@@ -582,7 +582,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(300),knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
 ["marksman_of_ravenhill","Marks-dwarf_of_Ravenhill","Marks-dwarves_of_Ravenhill",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_leather_dwarf_armor,itm_dwarf_helm_a,itm_dwarf_horn_bow,itm_arrows,itm_dwarf_sword_a,],
-      str_24|agi_18|int_4|cha_4|level(30),wp(350),knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
+      str_24|agi_18|int_4|cha_4|level(40),wp(350),knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
 ["iron_hills_miner","Iron_Hills_Miner","Iron_Hills_Miners",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_dwarf_vest_b,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_c,itm_dwarf_shield_d,],
       str_12|agi_9|int_4|cha_4|level(10),wp(160),knows_common|knows_athletics_3|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
@@ -594,7 +594,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(300),knows_common|knows_athletics_3|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
 ["grors_guard","Gror's_Guard","Gror's_Guards",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_axe,itm_dwarf_great_mattock,],
-      str_24|agi_18|int_4|cha_4|level(30),wp(350),knows_common|knows_athletics_4|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
+      str_24|agi_18|int_4|cha_4|level(40),wp(350),knows_common|knows_athletics_4|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
 ["dwarf_items","BUG","_",tf_hero,0,0,fac_dwarf,
    [itm_leather_gloves,itm_dwarf_helm_b,itm_dwarf_shield_a,itm_dwarf_shield_b,itm_dwarf_shield_f,itm_dwarf_shield_g,itm_dwarf_shield_i,itm_dwarf_shield_j,itm_dwarf_shield_k,itm_dwarf_shield_l,itm_dwarf_sword_b,itm_dwarf_sword_c,itm_dwarf_sword_d,itm_dwarf_great_mattock,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_spear,itm_dwarf_helm_i,itm_dwarf_helm_j,itm_dwarf_helm_l,itm_dwarf_helm_m,itm_dwarf_helm_o,itm_dwarf_helm_q,],
       0,0,0,0],
@@ -771,7 +771,7 @@ troops = [
       str_18|agi_18|int_4|cha_4|level(30),wp(200),knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,gondor_face1,gondor_face2],
 ["footman_of_blackroot_vale","Footman_of_Blackroot_Vale","Footmen_of_Blackroot_Vale",tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
    [itm_blackroot_footman,itm_gondor_auxila_helm,itm_gondor_spear,itm_gon_tab_shield_a,itm_gondor_light_greaves,],
-      str_10|agi_7|int_4|cha_4|level(10),wp(100),knows_common|knows_athletics_4|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,gondor_face1,gondor_face2],
+      str_15|agi_15|int_4|cha_4|level(20),wp(170),knows_common|knows_athletics_4|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,gondor_face1,gondor_face2],
 ["spearman_of_blackroot_vale","Spearman_of_Blackroot_Vale","Spearmen_of_Blackroot_Vale",tf_gondor| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
    [itm_blackroot_warrior,itm_gondor_auxila_helm,itm_gon_tab_shield_d,itm_gondor_spear,itm_gondor_med_greaves,itm_leather_gloves,],
       str_18|agi_18|int_4|cha_4|level(30),wp(200),knows_common|knows_athletics_5|knows_power_throw_3|knows_power_strike_5|knows_ironflesh_5,gondor_face1,gondor_face2],
@@ -879,7 +879,7 @@ troops = [
       str_18|agi_24|int_4|cha_4|level(20),wp(400),knows_common|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["mirkwood_guardsman","Greenwood_Guardsman","Greenwood_Guardsmen",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
    [itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_sword,itm_mirkwood_helm_d,itm_mirkwood_spear_shield_c,],
-      str_12|agi_12|int_4|cha_4|level(5),wp(280),knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+      str_24|agi_27|int_4|cha_4|level(30),wp(450),knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["greenwood_spearman","Greenwood_Infantry","Greenwood_Infantry",tf_woodelf| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
    [itm_mirkwood_war_spear,itm_mirkwood_spear_shield_a,itm_leather_gloves,itm_mirkwood_light_scale,itm_mirkwood_boots,itm_mirkwood_short_spear,itm_mirkwood_helm_b,itm_mirkwood_sword,],
       str_14|agi_14|int_4|cha_4|level(10),wp(320),knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_5|knows_ironflesh_3,mirkwood_elf_face_1,mirkwood_elf_face_2],
@@ -3235,16 +3235,16 @@ troops = [
 #upgrade(troops,"thug","cutthroat")
 #upgrade(troops,"brigand_slaver","master_slaver")
 #WOODMEN
-upgrade(troops,"woodmen_youth","woodmen_forester")
-upgrade2(troops,"woodmen_forester","woodmen_skilled_forester","woodmen_tracker")
+upgrade2(troops,"woodmen_youth","woodmen_forester","woodmen_tracker")
+upgrade(troops,"woodmen_forester","woodmen_skilled_forester")
 upgrade(troops,"woodmen_skilled_forester","woodmen_axemen")
 upgrade(troops,"woodmen_axemen","woodmen_master_axemen")
 upgrade(troops,"woodmen_tracker","woodmen_scout")
 upgrade(troops,"woodmen_scout","woodmen_archer")
 upgrade(troops,"woodmen_archer","fell_huntsmen_of_mirkwood")
 #BEORNINGS
-upgrade2(troops,"beorning_vale_man","beorning_warrior","beorning_carrock_lookout")
-upgrade(troops,"beorning_warrior","beorning_tolltacker")
+upgrade(troops,"beorning_vale_man","beorning_warrior")
+upgrade2(troops,"beorning_warrior","beorning_tolltacker","beorning_carrock_lookout")
 upgrade(troops,"beorning_tolltacker","beorning_sentinel")
 upgrade(troops,"beorning_sentinel","beorning_warden_of_the_ford")
 upgrade(troops,"beorning_carrock_lookout","beorning_carrock_fighter")
@@ -3279,7 +3279,7 @@ upgrade(troops,"knight_of_dol_amroth","veteran_knight_of_dol_amroth")
 upgrade(troops,"veteran_knight_of_dol_amroth","swan_knight_of_dol_amroth")
 #LORIEN
 upgrade(troops,"lothlorien_scout","lothlorien_veteran_scout")
-upgrade2(troops,"lothlorien_veteran_scout","lothlorien_archer","lothlorien_infantry")
+upgrade(troops,"lothlorien_veteran_scout","lothlorien_archer")
 upgrade2(troops,"lothlorien_archer","lothlorien_veteran_archer","lothlorien_warden")
 upgrade(troops,"lothlorien_veteran_archer","lothlorien_master_archer")
 upgrade2(troops,"lothlorien_master_archer","galadhrim_royal_archer","galadhrim_royal_marksman")
@@ -3289,8 +3289,8 @@ upgrade(troops,"lothlorien_elite_infantry","galadhrim_royal_swordsman")
 upgrade(troops,"lothlorien_warden","lothlorien_veteran_warden")
 upgrade(troops,"lothlorien_veteran_warden","galadhrim_royal_warden")
 #MIRKWOOD
-upgrade(troops,"greenwood_scout","greenwood_veteran_scout")
-upgrade2(troops,"greenwood_veteran_scout","greenwood_archer","greenwood_spearman")
+upgrade2(troops,"greenwood_scout","greenwood_veteran_scout","greenwood_spearman")
+upgrade(troops,"greenwood_veteran_scout","greenwood_archer")
 upgrade2(troops,"greenwood_archer","greenwood_veteran_archer","greenwood_sentinel")
 upgrade(troops,"greenwood_veteran_archer","greenwood_master_archer")
 upgrade(troops,"greenwood_master_archer","thranduils_royal_marksman")
@@ -3475,6 +3475,20 @@ upgrade(troops,"merchant_protector_of_dale","girions_guard_of_dale")
 upgrade(troops,"laketown_scout","laketown_bowmen")
 upgrade(troops,"laketown_bowmen","laketown_archer")
 upgrade(troops,"laketown_archer","barding_bowmen_of_esgaroth")
+#RHUN
+upgrade2(troops,"rhun_tribesman","rhun_house_scout","rhun_tribal_warrior")
+upgrade2(troops,"rhun_house_scout","rhun_horse_archer","rhun_swift_horseman")
+upgrade(troops,"rhun_horse_archer","rhun_veteran_horse_archer")
+upgrade(troops,"rhun_veteran_horse_archer","fell_balchoth_horse_archer")
+upgrade(troops,"rhun_swift_horseman","rhun_veteran_swift_horseman")
+upgrade(troops,"rhun_veteran_swift_horseman","falcon_horseman")
+upgrade(troops,"rhun_tribal_warrior","rhun_tribal_infantry")
+upgrade(troops,"rhun_tribal_infantry","rhun_vet_infantry")
+upgrade(troops,"rhun_vet_infantry","infantry_of_the_ox")
+upgrade(troops,"rhun_light_horseman","rhun_light_cavalry")
+upgrade(troops,"rhun_light_cavalry","rhun_noble_cavalry")
+upgrade(troops,"rhun_noble_cavalry","rhun_heavy_noble_cavalry")
+upgrade(troops,"rhun_heavy_noble_cavalry","dorwinion_noble_of_rhun")
 #BANDITS
 upgrade(troops,"tribal_orc","tribal_orc_warrior")
 upgrade(troops,"tribal_orc_warrior","tribal_orc_chief")
