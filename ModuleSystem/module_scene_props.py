@@ -1759,7 +1759,8 @@ scene_props = [
 ("rohan_house5",0,"rohan_house5","bo_house5",[]),
 ("rohan_stables1",0,"rohan_stables1","0",[]),
 ("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
-("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),  
+("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),
+("rohan_fountain",0,"edoras_fountain","bo_edoras_fountain",[]), 
   
 # Llew Rohan buildings
 ("rohan_palisade",0,"rohan_palisade_a","bo_rohan_palisade_a",[]),
@@ -1854,11 +1855,13 @@ scene_props = [
 ("tunnel_sloped",0,"tunnel_sloped","bo_tunnel_sloped", []),
 ("tunnel_split",0,"tunnel_split","bo_tunnel_split", []),
 ("tunnel_crossing",0,"tunnel_crossing","bo_tunnel_crossing", []),
-("tunnel_chasm",0,"chasm","bo_chasm", []), 
+("tunnel_chasm",0,"chasm","bo_chasm", []),
+  
 
 ("rohan_burial_mound",0,"roh_burial_mound","0", []), 
 ("tree_huorn",0,"tree_huorn","0", []), 
-("waterfall",0,"waterfall","0", []), 
+("waterfall_stream",0,"waterfall_stream","0", []),
+("waterfall",0,"waterfall","bo_waterfall", []),
 ("tunnel_cave",0,"tunnel_cave","bo_tunnel_cave", []), 
 
 ("moria_a",0,"moria_a","bo_moria_a", []), 

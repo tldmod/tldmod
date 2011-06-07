@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1387
+ 1389
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3445,6 +3445,9 @@ spr_rohan_watchtower 0 0 rohan_watchtower bo_tourrohan 0
 spr_rohan_stonebase 0 0 rohan_stonebase bo_rohan_stonebase 0
 
 
+spr_rohan_fountain 0 0 edoras_fountain bo_edoras_fountain 0
+
+
 spr_rohan_palisade 0 0 rohan_palisade_a bo_rohan_palisade_a 0
 
 
@@ -3625,7 +3628,10 @@ spr_rohan_burial_mound 0 0 roh_burial_mound 0 0
 spr_tree_huorn 0 0 tree_huorn 0 0
 
 
-spr_waterfall 0 0 waterfall 0 0
+spr_waterfall_stream 0 0 waterfall_stream 0 0
+
+
+spr_waterfall 0 0 waterfall bo_waterfall 0
 
 
 spr_tunnel_cave 0 0 tunnel_cave bo_tunnel_cave 0
