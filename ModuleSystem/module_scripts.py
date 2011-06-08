@@ -8037,6 +8037,17 @@ scripts = [
       (store_faction_of_party, ":old_faction", ":center_no"),
       (call_script, "script_give_center_to_faction_aux", ":center_no", ":faction_no"),
       (call_script, "script_update_village_market_towns"),
+      
+      # If this is Edoras and Hornburg is still Rohan's, move capital
+      (try_begin),
+        (eq, ":center_no", "p_town_edoras"),
+        (eq, ":old_faction", "fac_rohan"),
+        (faction_slot_eq, "fac_rohan", slot_faction_capital, "p_town_edoras"),
+        (store_faction_of_party, ":hornburg_faction", "p_town_hornburg"),
+        (eq, ":hornburg_faction", "fac_rohan"),
+        (faction_set_slot, "fac_rohan", slot_faction_capital, "p_town_hornburg"),
+        (display_message, "@Rohan capital moved from Edoras to Hornburg!"),
+      (try_end),
 
       (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":cur_faction"),
@@ -8803,6 +8814,7 @@ scripts = [
         (neq, ":c_castles", 0),
         (this_or_next|party_slot_eq, ":party", slot_party_type, spt_town),
         (party_slot_eq, ":party", slot_party_type, spt_castle),
+        (party_is_active, ":party"), #TLD
         (store_faction_of_party, ":faction", ":party"),
         (eq, ":faction", ":party_faction"),
         (store_distance_to_party_from_party, ":dis", ":party", ":party_no"),

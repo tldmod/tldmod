@@ -134,49 +134,49 @@ party_templates = [
 ("rhun_scouts"      ,"Rhun Scouts"         ,icon_vaegir_knight      |carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,1),(trp_rhun_swift_horseman,3,6),(trp_rhun_house_scout,3,5)]),
  
 ####TLD Raiders
-("gondor_raiders"  ,"Gondor Foragers"    ,icon_knight_gondor|carries_goods(1),0,fac_gondor  ,soldier_personality,[(trp_footmen_of_gondor,10,15),(trp_bowmen_of_gondor,10,15),(trp_squire_of_gondor,1,1)]),
-("rohan_raiders"   ,"Rohan Foragers"     ,icon_knight_rohan |carries_goods(1),0,fac_rohan   ,soldier_personality,[(trp_esquire_of_rohan,5,10),(trp_rider_of_rohan,3,8),(trp_skirmisher_of_rohan,3,8),(trp_elite_rider_of_rohan,1,1)]),
-("imladris_raiders","Rivendell Foragers" ,icon_rivendell_elf|carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,10,15),(trp_rivendell_sentinel,10,15),(trp_rivendell_royal_infantry,1,1)]),
-("lorien_raiders"  ,"Lothlorien Foragers",icon_lorien_elf_a |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_lothlorien_infantry,6,15),(trp_lothlorien_archer,6,15),(trp_galadhrim_royal_warden,1,1)]),
-("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,5,15),(trp_greenwood_veteran_archer,5,15),(trp_greenwood_royal_spearman,1,1)]),
-("dale_raiders"    ,"Dale Foragers"      ,icon_gray_knight  |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10),(trp_girions_guard_of_dale,1,1)]),
-("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,5,15),(trp_dwarven_lookout,5,15),(trp_dwarven_expert_axeman,1,1)]),
+("gondor_raiders"  ,"Gondor Foragers"    ,icon_knight_gondor|carries_goods(1),0,fac_gondor  ,soldier_personality,[(trp_squire_of_gondor,1,1),(trp_footmen_of_gondor,10,15),(trp_bowmen_of_gondor,10,15)]),
+("rohan_raiders"   ,"Rohan Foragers"     ,icon_knight_rohan |carries_goods(1),0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan,1,1),(trp_rider_of_rohan,3,8),(trp_skirmisher_of_rohan,3,8),(trp_esquire_of_rohan,5,10)]),
+("imladris_raiders","Rivendell Foragers" ,icon_rivendell_elf|carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_royal_infantry,1,1),(trp_rivendell_infantry,10,15),(trp_rivendell_sentinel,10,15)]),
+("lorien_raiders"  ,"Lothlorien Foragers",icon_lorien_elf_a |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_warden,1,1),(trp_lothlorien_infantry,6,15),(trp_lothlorien_archer,6,15)]),
+("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman,1,1),(trp_greenwood_veteran_spearman,5,15),(trp_greenwood_veteran_archer,5,15)]),
+("dale_raiders"    ,"Dale Foragers"      ,icon_gray_knight  |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,10)]),
+("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_expert_axeman,1,1),(trp_dwarven_hardened_warrior,5,15),(trp_dwarven_lookout,5,15)]),
 #("beorning_raiders","Beorning Foragers" ,icon_gray_knight  |carries_goods(1),0,fac_beorn   ,soldier_personality,[(trp_blank,10,15),(trp_blank,10,15),(trp_blank,1,1)]),
 
-("mordor_raiders"  ,"Mordor Raiders"    ,icon_uruk          |carries_goods(1),0,fac_mordor  ,soldier_personality,[(trp_orc_snaga_of_mordor,15,20),(trp_orc_archer_of_mordor,15,20),(trp_fell_morgul_orc,1,1)]),
-("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1),0,fac_isengard,soldier_personality,[(trp_uruk_snaga_of_isengard,8,13),(trp_large_uruk_hai_scout,8,13),(trp_large_uruk_hai_of_isengard,3,8),(trp_fighting_uruk_hai_champion,1,1)]),
-("dunland_raiders" ,"Dunlending Raiders",icon_dunlander     |carries_goods(2),0,fac_dunland ,soldier_personality,[(trp_dunnish_wildman,15,20),(trp_dunnish_raven_rider,15,20),(trp_dunnish_wolf_guard,1,1)]),
-("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2),0,fac_harad   ,soldier_personality,[(trp_harad_desert_warrior,11,20),(trp_harad_archer,10,20),(trp_harad_black_serpent_infantry,1,1)]),
-("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2),0,fac_khand   ,soldier_personality,[(trp_easterling_veteran_horseman,5,15),(trp_easterling_rider,5,15),(trp_easterling_horsemaster,1,1)]),
-("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2),0,fac_umbar   ,soldier_personality,[(trp_corsair_warrior,4,10),(trp_corsair_raider,4,10),(trp_corsair_veteran_raider,4,10),(trp_corsair_night_raider,1,1)]),
-("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2),0,fac_moria   ,soldier_personality,[(trp_warg_rider_of_moria,5,15),(trp_goblin_of_moria,5,15),(trp_fell_goblin_archer_of_moria,1,1)]),
-("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2),0,fac_guldur  ,soldier_personality,[(trp_orc_of_guldur,4,10),(trp_large_orc_of_mordor,4,10),(trp_fell_orc_of_mordor,4,10),(trp_fell_orc_tracker_of_mordor,1,1)]),
-("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2),0,fac_gundabad,soldier_personality,[(trp_orc_gundabad,5,15),(trp_keen_eyed_goblin_archer_gundabad,5,15),(trp_goblin_north_clan_rider,1,1)]),
-("rhun_raiders"    ,"Rhun Raiders"      ,icon_gray_knight   |carries_goods(1),0,fac_rhun    ,soldier_personality,[(trp_rhun_horse_archer,10,15),(trp_rhun_tribal_infantry,10,15),(trp_infantry_of_the_ox,1,1)]),
+("mordor_raiders"  ,"Mordor Raiders"    ,icon_uruk          |carries_goods(1),0,fac_mordor  ,soldier_personality,[(trp_fell_morgul_orc,1,1),(trp_orc_snaga_of_mordor,15,20),(trp_orc_archer_of_mordor,15,20)]),
+("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1),0,fac_isengard,soldier_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_scout,8,13),(trp_uruk_snaga_of_isengard,8,13)]),
+("dunland_raiders" ,"Dunlending Raiders",icon_dunlander     |carries_goods(2),0,fac_dunland ,soldier_personality,[(trp_dunnish_wolf_guard,1,1),(trp_dunnish_raven_rider,15,20),(trp_dunnish_wildman,15,20)]),
+("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2),0,fac_harad   ,soldier_personality,[(trp_harad_black_serpent_infantry,1,1),(trp_harad_archer,10,20),(trp_harad_desert_warrior,11,20)]),
+("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2),0,fac_khand   ,soldier_personality,[(trp_easterling_horsemaster,1,1),(trp_easterling_rider,5,15),(trp_easterling_veteran_horseman,5,15)]),
+("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2),0,fac_umbar   ,soldier_personality,[(trp_corsair_night_raider,1,1),(trp_corsair_raider,4,10),(trp_corsair_veteran_raider,4,10),(trp_corsair_warrior,4,10)]),
+("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2),0,fac_moria   ,soldier_personality,[(trp_fell_goblin_archer_of_moria,1,1),(trp_warg_rider_of_moria,5,15),(trp_goblin_of_moria,5,15)]),
+("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2),0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_orc_of_guldur,4,10),(trp_large_orc_of_mordor,4,10),(trp_fell_orc_of_mordor,4,10)]),
+("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2),0,fac_gundabad,soldier_personality,[(trp_goblin_north_clan_rider,1,1),(trp_orc_gundabad,5,15),(trp_keen_eyed_goblin_archer_gundabad,5,15)]),
+("rhun_raiders"    ,"Rhun Raiders"      ,icon_gray_knight   |carries_goods(1),0,fac_rhun    ,soldier_personality,[(trp_infantry_of_the_ox,1,1),(trp_rhun_horse_archer,10,15),(trp_rhun_tribal_infantry,10,15)]),
 
 ####TLD Patrols
-("gondor_patrol"  ,"Gondor Patrol"    ,icon_ithilien_ranger|carries_goods(2),0,fac_gondor  ,soldier_personality,[(trp_ranger_of_ithilien,8,20),(trp_veteran_ranger_of_ithilien,8,20),(trp_master_ranger_of_ithilien,4,10),(trp_ithilien_leader,1,1)]),
-("rohan_patrol"   ,"Rohan Patrol"     ,icon_knight_rohan   |carries_goods(2),0,fac_rohan   ,soldier_personality,[(trp_skirmisher_of_rohan,3,5),(trp_veteran_skirmisher_of_rohan,3,5),(trp_elite_skirmisher_of_rohan,3,5),(trp_thengel_guard_of_rohan,1,1)]),
-("imladris_patrol","Rivendell Patrol" ,icon_rivendell_elf  |carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_sentinel,8,20),(trp_rivendell_veteran_sentinel,8,20),(trp_rivendell_elite_sentinel,4,10),(trp_rivendell_guardian,1,1)]),
-("lorien_patrol"  ,"Lothlorien Patrol",icon_lorien_elf_b   |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_lothlorien_archer,4,15),(trp_lothlorien_veteran_archer,4,15),(trp_lothlorien_master_archer,3,5),(trp_galadhrim_royal_archer,1,1)]),
-("woodelf_patrol" ,"Mirkwood Patrol"  ,icon_mirkwood_elf   |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_greenwood_archer,7,17),(trp_greenwood_veteran_archer,7,17),(trp_greenwood_master_archer,7,17),(trp_thranduils_royal_marksman,1,1)]),
-("dale_patrol"    ,"Dale Patrol"      ,icon_gray_knight    |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_laketown_archer,4,10),(trp_barding_bowmen_of_esgaroth,4,10),(trp_laketown_scout,4,10),(trp_dale_billman,4,10),(trp_dale_marchwarden,4,10),(trp_girions_guard_of_dale,1,1)]),
-("dwarf_patrol"   ,"Dwarven Patrol"   ,icon_dwarf          |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_lookout,10,25),(trp_dwarven_archer,10,25),(trp_dwarven_warrior,1,1)]),
+("gondor_patrol"  ,"Gondor Patrol"    ,icon_ithilien_ranger|carries_goods(2),0,fac_gondor  ,soldier_personality,[(trp_ithilien_leader,1,1),(trp_master_ranger_of_ithilien,4,10),(trp_veteran_ranger_of_ithilien,8,20),(trp_ranger_of_ithilien,8,20)]),
+("rohan_patrol"   ,"Rohan Patrol"     ,icon_knight_rohan   |carries_goods(2),0,fac_rohan   ,soldier_personality,[(trp_thengel_guard_of_rohan,1,1),(trp_elite_skirmisher_of_rohan,3,5),(trp_veteran_skirmisher_of_rohan,3,5),(trp_skirmisher_of_rohan,3,5)]),
+("imladris_patrol","Rivendell Patrol" ,icon_rivendell_elf  |carries_goods(2),0,fac_imladris,soldier_personality,[(trp_rivendell_guardian,1,1),(trp_rivendell_elite_sentinel,4,10),(trp_rivendell_veteran_sentinel,8,20),(trp_rivendell_sentinel,8,20)]),
+("lorien_patrol"  ,"Lothlorien Patrol",icon_lorien_elf_b   |carries_goods(2),0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_archer,1,1),(trp_lothlorien_master_archer,3,5),(trp_lothlorien_veteran_archer,4,15),(trp_lothlorien_archer,4,15)]),
+("woodelf_patrol" ,"Mirkwood Patrol"  ,icon_mirkwood_elf   |carries_goods(2),0,fac_woodelf ,soldier_personality,[(trp_thranduils_royal_marksman,1,1),(trp_greenwood_master_archer,7,17),(trp_greenwood_veteran_archer,7,17),(trp_greenwood_archer,7,17)]),
+("dale_patrol"    ,"Dale Patrol"      ,icon_gray_knight    |carries_goods(2),0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_dale_marchwarden,4,10),(trp_barding_bowmen_of_esgaroth,4,10),(trp_dale_billman,4,10),(trp_laketown_archer,4,10),(trp_laketown_scout,4,10)]),
+("dwarf_patrol"   ,"Dwarven Patrol"   ,icon_dwarf          |carries_goods(2),0,fac_dwarf   ,soldier_personality,[(trp_dwarven_warrior,1,1),(trp_dwarven_archer,10,25),(trp_dwarven_lookout,10,25)]),
 
-("rhun_patrol"    ,"Rhun Patrol"      ,icon_gray_knight    |carries_goods(1),0,fac_rhun    ,soldier_personality,[(trp_rhun_vet_infantry,8,20),(trp_rhun_veteran_horse_archer,8,20),(trp_rhun_heavy_noble_cavalry,8,20),(trp_dorwinion_noble_of_rhun,1,1)]),
+("rhun_patrol"    ,"Rhun Patrol"      ,icon_gray_knight    |carries_goods(1),0,fac_rhun    ,soldier_personality,[(trp_dorwinion_noble_of_rhun,1,1),(trp_rhun_heavy_noble_cavalry,8,20),(trp_rhun_veteran_horse_archer,8,20),(trp_rhun_vet_infantry,8,20)]),
 
-####TLD Companies
-("gondor_company"  ,"Gondor Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_gondor_veteran_swordsmen   ,10,30),(trp_gondor_veteran_spearmen   ,10,30),(trp_veteran_archer_of_gondor ,10,20),(trp_knight_of_gondor,7,10),(trp_veteran_knight_of_gondor,7,10),(trp_captain_of_gondor,1,1)]),
-("rohan_company"   ,"Rohan Company"     ,icon_knight_rohan        ,0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan       ,25,25),(trp_elite_skirmisher_of_rohan ,25,25),(trp_elite_footman_of_rohan   ,25,25),(trp_eorl_guard_of_rohan,12,12),(trp_thengel_guard_of_rohan,12,12),(trp_captain_of_rohan,1,1)]),
-("imladris_company","Rivendell Company" ,icon_rivendell_elf       ,0,fac_imladris,soldier_personality,[(trp_rivendell_infantry         ,20,33),(trp_rivendell_veteran_infantry,20,33),(trp_rivendell_elite_infantry ,20,33),(trp_rivendell_royal_infantry,3,6),(trp_elf_captain_of_rivendell,1,1)]),
-("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry ,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
-("woodelf_company" ,"Mirkwood Company"  ,icon_mirkwood_elf        ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman ,21,22),(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_archer ,21,22),(trp_greenwood_master_archer,21,22),(trp_thranduils_royal_marksman,8,12)]),
-("dale_company"    ,"Dale Company"      ,icon_gray_knight         ,0,fac_dale    ,soldier_personality,[(trp_laketown_archer            ,20,20),(trp_barding_bowmen_of_esgaroth,20,20),(trp_dale_veteran_warrior     ,20,20),(trp_dale_bill_master,20,20),(trp_girions_guard_of_dale,20,20),(trp_knight_5_1,1,1)]),
-("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior   ,25,25),(trp_dwarven_lookout           ,25,25),(trp_dwarven_warrior          ,20,20),(trp_dwarven_expert_axeman,20,20),(trp_dwarven_archer,10,10),(trp_knight_5_6,1,1)]),
+####TLD Companies (only Gondorian used as a patrol)
+("gondor_company"  ,"Gondor Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_captain_of_gondor,1,1),(trp_veteran_knight_of_gondor,7,10),(trp_knight_of_gondor,7,10),(trp_gondor_veteran_swordsmen,10,30),(trp_veteran_archer_of_gondor,10,20),(trp_gondor_veteran_spearmen,10,30)]),
+("rohan_company"   ,"Rohan Company"     ,icon_knight_rohan        ,0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan,25,25),(trp_elite_skirmisher_of_rohan,25,25),(trp_elite_footman_of_rohan,25,25),(trp_eorl_guard_of_rohan,12,12),(trp_thengel_guard_of_rohan,12,12),(trp_captain_of_rohan,1,1)]),
+("imladris_company","Rivendell Company" ,icon_rivendell_elf       ,0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,20,33),(trp_rivendell_veteran_infantry,20,33),(trp_rivendell_elite_infantry,20,33),(trp_rivendell_royal_infantry,3,6),(trp_elf_captain_of_rivendell,1,1)]),
+("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
+("woodelf_company" ,"Mirkwood Company"  ,icon_mirkwood_elf        ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_archer,21,22),(trp_greenwood_master_archer,21,22),(trp_thranduils_royal_marksman,8,12)]),
+("dale_company"    ,"Dale Company"      ,icon_gray_knight         ,0,fac_dale    ,soldier_personality,[(trp_laketown_archer,20,20),(trp_barding_bowmen_of_esgaroth,20,20),(trp_dale_veteran_warrior,20,20),(trp_dale_bill_master,20,20),(trp_girions_guard_of_dale,20,20),(trp_knight_5_1,1,1)]),
+("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,25,25),(trp_dwarven_lookout,25,25),(trp_dwarven_warrior,20,20),(trp_dwarven_expert_axeman,20,20),(trp_dwarven_archer,10,10),(trp_knight_5_6,1,1)]),
 
 #("blank_patrol","Blank Patrol",icon_gray_knight|carries_goods(1)|pf_show_faction,0,fac_blank,soldier_personality,[(trp_blank,8,20),(trp_blank,8,20),(trp_blank,8,20),(trp_blank,1,1)]),
 
-####TLD Elite Companies
+####TLD Elite Companies (not used)
 ("gondor_elite_company"  ,"Gondor Elite Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_guard_of_the_fountain_court,15,30),(trp_knight_of_the_citadel,15,30),(trp_archer_of_the_tower_guard,15,30),(trp_swordsmen_of_the_tower_guard,15,30),(trp_captain_of_gondor,1,1)]),
 ("rohan_elite_company"   ,"Rohan Elite Company"     ,icon_knight_rohan_x3     ,0,fac_rohan   ,soldier_personality,[(trp_eorl_guard_of_rohan        ,10,20),(trp_thengel_guard_of_rohan,10,20),(trp_folcwine_guard_of_rohan,10,20),(trp_warden_of_methuseld,10,20),(trp_raider_of_rohan,10,20),(trp_captain_of_rohan,1,1)]),
 ("imladris_elite_company","Rivendell Elite Company" ,icon_knight_rivendell    ,0,fac_imladris,soldier_personality,[(trp_rivendell_royal_infantry   ,25,50),(trp_knight_of_rivendell,25,50),(trp_elf_captain_of_rivendell,1,1)]),
@@ -195,45 +195,46 @@ party_templates = [
 #("dwarven_legion","Dwarven Legion",icon_|carries_goods(2),0,fac_,soldier_personality,[(trp_,0,0)]),
 
 ####TLD Caravans
-("gondor_caravan"  ,"Gondor Caravan"    ,icon_supply_gondor|carries_goods(2),0,fac_gondor  ,prisoner_train_personality,[(trp_gondor_swordsmen,15,15),(trp_gondor_spearmen,15,15),(trp_archer_of_gondor,15,15),(trp_knight_of_gondor,10,10),(trp_caravan_master,1,1)]),
-("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(2),0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,15,15),(trp_veteran_skirmisher_of_rohan,15,15),(trp_veteran_footman_of_rohan,15,15),(trp_caravan_master,1,1)]),
-("imladris_caravan","Rivendell Caravan" ,icon_mule         |carries_goods(2),0,fac_imladris,prisoner_train_personality,[(trp_rivendell_veteran_infantry,20,20),(trp_rivendell_veteran_sentinel,20,20),(trp_knight_of_rivendell,10,10),(trp_caravan_master,1,1)]),
-("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(2),0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_warden,20,20),(trp_lothlorien_veteran_infantry,20,20),(trp_galadhrim_royal_swordsman,10,10),(trp_caravan_master,1,1)]),
-("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(2),0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_veteran_archer,20,20),(trp_greenwood_veteran_spearman,20,20),(trp_greenwood_master_archer,10,10)],(trp_caravan_master,1,1)),
-("dale_caravan"    ,"Dale Caravan"      ,icon_mule         |carries_goods(2),0,fac_dale    ,prisoner_train_personality,[(trp_dale_veteran_warrior,20,20),(trp_merchant_squire_or_dale,10,10),(trp_laketown_archer,20,20),(trp_caravan_master,1,1)]),
-("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(2),0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_lookout,20,20),(trp_dwarven_hardened_warrior,20,20),(trp_dwarven_expert_axeman,10,10),(trp_caravan_master,1,1)]),
+("gondor_caravan"  ,"Gondor Caravan"    ,icon_supply_gondor|carries_goods(2),0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,10,10),(trp_gondor_swordsmen,15,15),(trp_gondor_spearmen,15,15),(trp_archer_of_gondor,15,15)]),
+("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(2),0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,15,15),(trp_veteran_skirmisher_of_rohan,15,15),(trp_veteran_footman_of_rohan,15,15)]),
+("imladris_caravan","Rivendell Caravan" ,icon_mule         |carries_goods(2),0,fac_imladris,prisoner_train_personality,[(trp_knight_of_rivendell,10,10),(trp_rivendell_veteran_infantry,20,20),(trp_rivendell_veteran_sentinel,20,20)]),
+("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(2),0,fac_lorien  ,prisoner_train_personality,[(trp_galadhrim_royal_swordsman,10,10),(trp_lothlorien_warden,20,20),(trp_lothlorien_veteran_infantry,20,20)]),
+("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(2),0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_master_archer,10,10),(trp_greenwood_veteran_archer,20,20),(trp_greenwood_veteran_spearman,20,20)]),
+("dale_caravan"    ,"Dale Caravan"      ,icon_mule         |carries_goods(2),0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,10,10),(trp_dale_veteran_warrior,20,20),(trp_laketown_archer,20,20)]),
+("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(2),0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_expert_axeman,10,10),(trp_dwarven_lookout,20,20),(trp_dwarven_hardened_warrior,20,20)]),
 
 ("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(2),0,fac_mordor  ,prisoner_train_personality, [(trp_large_orc_archer_of_mordor, 10, 15), (trp_large_orc_of_mordor, 10, 15), (trp_large_uruk_of_mordor, 10, 15), (trp_olog_hai, 0, 2)]),
-("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(2),0,fac_isengard,prisoner_train_personality, [(trp_uruk_hai_scout, 10, 15), (trp_large_uruk_hai_of_isengard, 10, 15), (trp_large_orc_despoiler, 10, 15), (trp_warg_rider_of_isengard, 3, 8)]),
+("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(2),0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 10, 15), (trp_large_orc_despoiler, 10, 15), (trp_uruk_hai_scout, 10, 15)]),
 
 
 ####TLD Prisoner Trains
-("gondor_p_train"  ,"Gondor Prisoner Train"    ,icon_supply_gondor,0,fac_gondor  ,prisoner_train_personality,[(trp_gondor_swordsmen          ,10,15),(trp_gondor_spearmen,10,15),(trp_archer_of_gondor,10,15),(trp_knight_of_gondor,5,10)]),
-("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan ,0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan    ,10,15),(trp_veteran_skirmisher_of_rohan,10,15),(trp_veteran_footman_of_rohan,10,15)]),
-("imladris_p_train","Rivendell Prisoner Train" ,icon_mule         ,0,fac_imladris,prisoner_train_personality,[(trp_rivendell_veteran_infantry,15,20),(trp_rivendell_veteran_sentinel,15,20),(trp_knight_of_rivendell,5,10)]),
-("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         ,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_warden         ,15,20),(trp_lothlorien_veteran_infantry,15,20),(trp_galadhrim_royal_swordsman,5,10)]),
-("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         ,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_veteran_archer  ,15,20),(trp_greenwood_veteran_spearman,15,20),(trp_greenwood_master_archer,5,10)]),
-("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         ,0,fac_dale    ,prisoner_train_personality,[(trp_dale_veteran_warrior      ,15,20),(trp_merchant_squire_or_dale,5,10),(trp_laketown_archer,15,20)]),
-("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         ,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_lookout           ,15,20),(trp_dwarven_hardened_warrior,15,20),(trp_dwarven_expert_axeman,5,10)]),
+("gondor_p_train"  ,"Gondor Prisoner Train"    ,icon_supply_gondor,0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,5,10), (trp_gondor_swordsmen,10,15), (trp_gondor_spearmen,10,15), (trp_archer_of_gondor,10,15)]),
+("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan ,0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,10,15), (trp_veteran_skirmisher_of_rohan,10,15), (trp_veteran_footman_of_rohan,10,15)]),
+("imladris_p_train","Rivendell Prisoner Train" ,icon_mule         ,0,fac_imladris,prisoner_train_personality,[(trp_knight_of_rivendell,5,10), (trp_rivendell_veteran_infantry,15,20), (trp_rivendell_veteran_sentinel,15,20)]),
+("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         ,0,fac_lorien  ,prisoner_train_personality,[(trp_galadhrim_royal_swordsman,5,10), (trp_lothlorien_warden,15,20), (trp_lothlorien_veteran_infantry,15,20)]),
+("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         ,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_master_archer,5,10), (trp_greenwood_veteran_archer,15,20), (trp_greenwood_veteran_spearman,15,20)]),
+("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         ,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,5,10), (trp_dale_veteran_warrior,15,20), (trp_laketown_archer,15,20)]),
+("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         ,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_expert_axeman,5,10), (trp_dwarven_hardened_warrior,15,20), (trp_dwarven_lookout,15,20)]),
 
-("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2),0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_archer_of_mordor, 10, 15), (trp_large_orc_of_mordor, 10, 15), (trp_large_uruk_of_mordor, 10, 15), (trp_olog_hai, 0, 2)]),
-("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2),0,fac_isengard, prisoner_train_personality, [(trp_uruk_hai_scout, 10, 15), (trp_large_uruk_hai_of_isengard, 10, 15), (trp_large_orc_despoiler, 10, 15), (trp_warg_rider_of_isengard, 3, 8)]),
+("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2),0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_archer_of_mordor,10,15), (trp_olog_hai,0,2), (trp_large_orc_of_mordor,10,15), (trp_large_uruk_of_mordor,10,15)]),
+("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2),0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,3,8), (trp_large_uruk_hai_of_isengard,10,15), (trp_large_orc_despoiler,10,15), (trp_uruk_hai_scout,10,15)]),
 
 
 #Patrols
-("swadian_patrol","Swadian Patrol",icon_gray_knight|carries_goods(3)|pf_show_faction,0,fac_gondor,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
-("vaegir_patrol","Vaegir Patrol",icon_vaegir_knight|carries_goods(2)|pf_show_faction,0,fac_rohan,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
+#("swadian_patrol","Swadian Patrol",icon_gray_knight|carries_goods(3)|pf_show_faction,0,fac_gondor,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
+#("vaegir_patrol","Vaegir Patrol",icon_vaegir_knight|carries_goods(2)|pf_show_faction,0,fac_rohan,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
 #War Parties
-("swadian_war_party","Swadian War Party",icon_gray_knight|carries_goods(5)|pf_show_faction,0,fac_gondor,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
-("vaegir_war_party","Vaegir War Party",icon_vaegir_knight|carries_goods(5)|pf_show_faction,0,fac_rohan,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
+#("swadian_war_party","Swadian War Party",icon_gray_knight|carries_goods(5)|pf_show_faction,0,fac_gondor,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
+#("vaegir_war_party","Vaegir War Party",icon_vaegir_knight|carries_goods(5)|pf_show_faction,0,fac_rohan,soldier_personality,[(trp_bowmen_of_gondor,8,13),(trp_footmen_of_gondor,8,20),(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_knight_of_gondor,4,15),(trp_knight_of_the_citadel,4,15)]),
 
 #Raiders
 # ("swadian_raiders","Swadian Raiders",icon_gray_knight|carries_goods(16)|pf_quest_party,0,fac_gondor,soldier_personality,[(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_peasant_woman,6,30,pmf_is_prisoner)]),
 # ("vaegir_raiders","Vaegir Raiders",icon_vaegir_knight|carries_goods(16)|pf_quest_party,0,fac_rohan,soldier_personality,[(trp_swordsmen_of_the_tower_guard,8,16),(trp_master_ranger_of_ithilien,5,20),(trp_peasant_woman,6,30,pmf_is_prisoner)]),
 ##########################
-("center_reinforcements","Reinforcements",icon_axeman|carries_goods(16),0,fac_commoners,soldier_personality,[(trp_beorning_vale_man,5,30),(trp_watchman,4,20)]),
+#("center_reinforcements","Reinforcements",icon_axeman|carries_goods(16),0,fac_commoners,soldier_personality,[(trp_beorning_vale_man,5,30),(trp_watchman,4,20)]),
 ("kingdom_hero_party","War Party",icon_flagbearer_a|pf_show_faction|pf_default_behavior,0,fac_commoners,soldier_personality,[]),
-  
+
+# These are not used  
 ("gondor_war_party"   ,"Gondor_War_Party"   ,icon_knight_gondo_trot_x3|carries_goods(3),0,fac_gondor,soldier_personality,[(trp_guard_of_the_fountain_court,8,36),(trp_master_ranger_of_ithilien,15,20),(trp_knight_of_gondor,15,35),(trp_veteran_archer_of_gondor,8,13),(trp_gondor_veteran_swordsmen,8,20),(trp_veteran_knight_of_gondor,5,35)]),
 ("gondor_allies_war_party","Gondor_Allies_War_Party",icon_mirkwood_elf_x3|carries_goods(3),0,fac_gondor,soldier_personality,[(trp_swan_knight_of_dol_amroth,8,13),(trp_veteran_knight_of_dol_amroth,8,20),(trp_knight_of_dol_amroth,8,16),(trp_champion_of_pinnath_gelin,5,20),(trp_squire_of_dol_amroth,4,15),(trp_master_blackroot_vale_archer,4,15)]),
 ("rohan_war_party"    ,"Rohan_War_Party"    ,icon_knight_rohan_x3 |carries_goods(3),0,fac_rohan   ,soldier_personality,[(trp_elite_lancer_of_rohan  ,8,13),(trp_brego_guard_of_rohan,8,20),(trp_elite_skirmisher_of_rohan,4,16),(trp_lancer_of_rohan,10,20),(trp_rider_of_rohan,14,35),(trp_eorl_guard_of_rohan,14,45)]),
@@ -241,8 +242,9 @@ party_templates = [
 ("woodelf_war_party"  ,"Woodelf_War_Party"  ,icon_mirkwood_elf_x3 |carries_goods(3),0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman,8,20),(trp_greenwood_master_archer,8,16),(trp_greenwood_spearman,5,20),(trp_greenwood_veteran_spearman,4,15),(trp_greenwood_royal_spearman,4,15),(trp_greenwood_standard_bearer,2,4)]),
 ("imladris_war_party" ,"Rivendell_War_Party",icon_rivendell_elf_x3|carries_goods(3),0,fac_imladris,soldier_personality,[(trp_rivendell_sentinel,8,20),(trp_rivendell_veteran_sentinel,8,16),(trp_knight_of_rivendell,5,20),(trp_rivendell_elite_sentinel,4,15),(trp_rivendell_veteran_scout,4,15),(trp_rivendell_standard_bearer,2,4)]),
 ("dunedain_war_party" ,"Dunedain_War_Party" ,icon_dunlander_x3    |carries_goods(3),0,fac_imladris,soldier_personality,[(trp_dunedain_veteran_ranger,8,13),(trp_arnor_horsemen,8,20),(trp_high_swordsman_of_arnor,8,16),(trp_knight_of_arnor,5,20),(trp_dunedain_ranger,4,15),(trp_dunedain_master_ranger,4,15)]),
-  
-("mordor_war_party"   ,"Mordor_War_Party"  ,icon_uruk_x6          |carries_goods(3),0,fac_mordor  ,soldier_personality,[(trp_large_orc_of_mordor    ,20,50),(trp_orc_archer_of_mordor,13,36),(trp_black_numenorean_warrior,15,30),(trp_black_numenorean_veteran_warrior,5,40),(trp_olog_hai,1,2),(trp_uruk_mordor_standard_bearer,2,3)]),#(trp_uruk_snaga_of_mordor,5,20), ,(trp_black_numenorean_captain,1,1)
+
+# Some used as patrols, some not  
+("mordor_war_party"   ,"Mordor_War_Party"  ,icon_uruk_x6          |carries_goods(3),0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,2,3),(trp_olog_hai,1,2),(trp_black_numenorean_veteran_warrior,5,40),(trp_black_numenorean_warrior,15,30),(trp_large_orc_of_mordor,20,50),(trp_orc_archer_of_mordor,13,36)]),#(trp_uruk_snaga_of_mordor,5,20), ,(trp_black_numenorean_captain,1,1)
 ("isengard_war_party" ,"Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3),0,fac_isengard,soldier_personality,[(trp_fighting_uruk_hai_champion,10,30),(trp_large_uruk_hai_of_isengard,13,36),(trp_wolf_rider_of_isengard,5,30),(trp_fighting_uruk_hai_berserker,10,40),(trp_troll_of_moria,1,2),(trp_urukhai_standard_bearer,1,2)]),#(trp_fighting_uruk_hai_pikeman,5,20),
 ("harad_war_party"    ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3),0,fac_harad   ,soldier_personality,[(trp_harad_desert_warrior   ,20,50),(trp_harad_veteran_archer,15,30),(trp_harad_black_serpent_infantry,13,36),(trp_harad_cavalry,5,30),(trp_black_serpent_cavalry,5,40),(trp_black_serpent_horse_archer,5,20)]),
 ("dunland_war_party"  ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3),0,fac_dunland ,soldier_personality,[(trp_dunnish_wildman        ,20,50),(trp_dunnish_veteran_pikeman,15,30),(trp_dunnish_warrior,13,36),(trp_dunnish_raven_rider,5,30)]),
@@ -339,8 +341,8 @@ party_templates = [
 ("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_fell_orc_warrior_gundabad,5,16)]),
 #Dale
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,4,8),(trp_dale_man_at_arms,2,4)]),
-("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,3),(trp_dale_warrior,3,5),(trp_dale_veteran_warrior,2,5)]),
-("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_dale_marchwarden,3,6)]),
+("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,3),(trp_dale_warrior,3,5),(trp_laketown_scout,3,7)]),
+("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_dale_marchwarden,3,6),(trp_merchant_squire_or_dale,1,3)]),
 #Erebor
 ("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,6),(trp_dwarven_lookout,4,7)]),
 ("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_hardened_warrior,2,6),(trp_dwarven_warrior,3,5),(trp_dwarven_expert_axeman,1,3)]),

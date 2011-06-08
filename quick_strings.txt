@@ -1,4 +1,4 @@
-828
+829
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -159,6 +159,7 @@ qstr_{reg0}_town{reg1?s:}_ {reg0}_town{reg1?s:}_and_{s0}
 qstr_{reg0}_town{reg1?s:}_{ {reg0}_town{reg1?s:},_{s0}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
+qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
