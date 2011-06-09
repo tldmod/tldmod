@@ -1338,6 +1338,7 @@ scene_props = [
 ("gondor_mt_town_house_j",0,"mt_town_house_j", "bo_town_house_j", []),
 ("gondor_mt_town_house_l",0,"mt_town_house_l", "bo_town_house_l", []),
 ("gondor_mt_wall",0,"mt_wall", "bo_mt_wall", []),
+("gondor_tirith_gate",0,"tirith_gate", "bo_tirith_gate", []),
   ##OSGILIATH ruins by Llew###
 ("osgiliath_bridge",0,"osgiliath_bridge","bo_osgiliath_bridge", []),
 ("osgiliath_broken_bridge",0,"osgiliath_broken_bridge","bo_osgiliath_broken_bridge", []),
@@ -1829,7 +1830,7 @@ scene_props = [
 ("rock_cliff_h",0,"cliff_distant_6","bo_cliff_distant_6",[]),
 ("rock_cliff_i",0,"cliff_distant_7","bo_cliff_distant_7",[]),
 ("rock_cliff_j",0,"cliff_distant_8","bo_cliff_distant_8",[]),
-  
+("rock_mountain",0,"mountain_scene","bo_mountain_scene",[]), 
 #("rock_cliff_1",0,"rock_cliff_1","bo_rock_cliff_1",[]),
 #("rock_boulder_1",0,"rock_boulder_1","bo_rock_boulder_1",[]),
 #("rock_flat_1",0,"rock_flat_1","bo_rock_flat_1",[]),

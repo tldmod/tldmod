@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1389
+ 1391
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2352,6 +2352,9 @@ spr_gondor_mt_town_house_l 0 0 mt_town_house_l bo_town_house_l 0
 spr_gondor_mt_wall 0 0 mt_wall bo_mt_wall 0
 
 
+spr_gondor_tirith_gate 0 0 tirith_gate bo_tirith_gate 0
+
+
 spr_osgiliath_bridge 0 0 osgiliath_bridge bo_osgiliath_bridge 0
 
 
@@ -3569,6 +3572,9 @@ spr_rock_cliff_i 0 0 cliff_distant_7 bo_cliff_distant_7 0
 
 
 spr_rock_cliff_j 0 0 cliff_distant_8 bo_cliff_distant_8 0
+
+
+spr_rock_mountain 0 0 mountain_scene bo_mountain_scene 0
 
 
 spr_argo1 0 0 argo1 bo_argo1 0
