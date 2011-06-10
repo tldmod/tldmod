@@ -107,6 +107,11 @@ WriteLogFile("["..System.GetTime(TIME_FMT_AMPM).."] "..Game.." has closed, Undoi
 -- // Shader file
 	CommonRoot2trash("mb.fx")
 	CommonRoot2trash("mb.fxo")
+	CommonRoot2trash("specular.pp")
+	CommonRoot2trash("man_alpha.pp")
+	CommonRoot2trash("man_basic.pp")
+	CommonRoot2trash("man_flora.pp")
+	CommonRoot2trash("man_plain.pp")
 
 --videos (wb & orig)
 	--CommonRoot2trash("taleworlds_intro.bik")
