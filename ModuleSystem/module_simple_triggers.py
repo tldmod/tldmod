@@ -695,27 +695,6 @@ simple_triggers = [
       # (try_end),
     # ]),
 
-  # During rebellion, removing troops from player faction randomly because of low relation points
-#   (5,
-#   [ (gt, "$supported_pretender", 0),
-#     (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
-#       (store_troop_faction, ":cur_faction", ":cur_troop"),
-#       (eq, ":cur_faction", "fac_player_supporters_faction"),
-#       (neg|troop_slot_ge, ":cur_troop", slot_troop_change_to_faction, 1),
-#       (call_script, "script_troop_get_player_relation", ":cur_troop"),
-#       (assign, ":player_relation", reg0),
-#       #(troop_get_slot, ":player_relation", ":cur_troop", slot_troop_player_relation),
-#       (lt, ":player_relation", -5),
-#       (neq, "$supported_pretender", ":cur_troop"),
-#       (val_mul, ":player_relation", -1),
-#       (val_sub, ":player_relation", 5),
-#       (store_random_in_range, ":random_no", 0, 2000),
-#       (lt, ":random_no", ":player_relation"),
-#       (call_script, "script_cf_get_random_active_faction_except_player_faction_and_faction", -1),
-#       (troop_set_slot, ":cur_troop", slot_troop_change_to_faction, reg0),
-#     (try_end),
-#    ]),
-
 
   # Reset kingdom lady current centers
 ##   (28,
@@ -2308,7 +2287,6 @@ simple_triggers = [
       (try_begin),
         (eq, ":cur_kingdom", "fac_player_supporters_faction"),
         (try_begin),
-          (le, "$supported_pretender", 0),
           (faction_set_slot, ":cur_kingdom", slot_faction_state, sfs_inactive),
           (assign, ":faction_removed", 1),
         (try_end),

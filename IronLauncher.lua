@@ -43,12 +43,8 @@ BreakPoints = 0
 
 -- // Module Root
 
+	ModuleRoot2CommonRoot("Data\\","mb.fx")
 	ModuleRoot2CommonRoot("Data\\","mb.fxo")
-	ModuleRoot2CommonRoot("Data\\","specular.pp")
-	ModuleRoot2CommonRoot("Data\\","man_alpha.pp")
-	ModuleRoot2CommonRoot("Data\\","man_basic.pp")
-	ModuleRoot2CommonRoot("Data\\","man_flora.pp")
-	ModuleRoot2CommonRoot("Data\\","man_plain.pp")
 
 --videos (wb & orig)
 	--ModuleRoot2CommonRoot("Data\\","taleworlds_intro.bik")
@@ -85,26 +81,27 @@ WriteLogFile("["..System.GetTime(TIME_FMT_AMPM).."] "..Game.." has closed, Undoi
 -- // Module Data
 
 	--Data2trash("falls.txt");
-	--Data2trash("flora_kinds.txt");
-	--Data2trash("Font_data.xml");
-	--Data2trash("ground_specs.txt");
+	Data2trash("flora_kinds.txt");
+	Data2trash("Font_data.xml");
+	Data2trash("ground_specs.txt");
 	--Data2trash("item_modifiers.txt");
 	--Data2trash("mission_types.txt");
-	--Data2trash("skeleton_bodies.xml");
+	Data2trash("skeleton_bodies.xml");
 	--Data2trash("skyboxes.txt");
 	--Data2trash("sound_samples1.txt");
 
 
 -- // Core Resource COMMENTED (mtarini)
 
-	--CommonRes2trash("materials.brf")
+	CommonRes2trash("materials.brf")
 	--CommonRes2trash("pictures.brf")
-	--CommonRes2trash("shaders.brf")
-	--CommonRes2trash("textures.brf")
-	--CommonRes2trash("ui_meshes.brf")
+	CommonRes2trash("shaders.brf")
+	CommonRes2trash("textures.brf")
+	CommonRes2trash("ui_meshes.brf")
 
 -- // Shader file
-	--CommonRoot2trash("mb.fxo")
+	CommonRoot2trash("mb.fx")
+	CommonRoot2trash("mb.fxo")
 
 --videos (wb & orig)
 	--CommonRoot2trash("taleworlds_intro.bik")

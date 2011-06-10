@@ -94,13 +94,6 @@ slot_faction_influence = 70
 slot_faction_rank = 71
 slot_faction_respoint = 72
 
-#Rebellion changes
-#slot_faction_rebellion_target                     = 65
-#slot_faction_inactive_leader_location         = 66
-#slot_faction_support_base                     = 67
-#Rebellion changes
-
-
 
 #slot_faction_deserter_party_template       = 62
 
@@ -959,33 +952,20 @@ kingdoms_begin_i = fac_gondor
 kingdoms_end = "fac_kingdoms_end"
 kingdoms_end_i = fac_kingdoms_end
 
-kingdom_ladies_begin = "trp_knight_1_1_wife"
-kingdom_ladies_end = "trp_heroes_end"
-
 kings_begin = "trp_gondor_lord"
 kings_end = "trp_knight_1_1"
 
 kingdom_heroes_begin = "trp_gondor_lord"
-kingdom_heroes_end = kingdom_ladies_begin
+kingdom_heroes_end = "trp_heroes_end"
 
 heroes_begin = kingdom_heroes_begin
-heroes_end = kingdom_ladies_end
-
+heroes_end = kingdom_heroes_end
 
 companions_begin = "trp_npc1"
 companions_end = "trp_kingdom_heroes_including_player_begin"
 
 soldiers_begin = "trp_farmer"
 soldiers_end = "trp_town_walker_1"
-
-#Rebellion changes
-
-##rebel_factions_begin = "fac_kingdom_1_rebels"
-##rebel_factions_end =   "fac_kingdoms_end"
-
-pretenders_begin = "trp_kingdom_1_pretender"
-pretenders_end = kingdom_heroes_end
-#Rebellion changes
 
 tavern_minstrels_begin = "trp_tavern_minstrel_1"
 tavern_minstrels_end   = companions_begin

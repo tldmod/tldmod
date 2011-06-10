@@ -41,7 +41,7 @@ def wp(x):
   n|= wp_two_handed(x)
   n|= wp_polearm(x)
   n|= wp_archery(x)
-  n|= wp_crossbow(x)
+#  n|= wp_crossbow(x)
   n|= wp_throwing(x)
   return n
  
@@ -87,26 +87,26 @@ attr_tier_5 = str_18|agi_18| int_4| cha_4|level(30)
 attr_tier_6 = str_20|agi_20|int_20|cha_20|level(40)
 attr_tier_7 = str_22|agi_22|int_22|cha_22|level(45)
 
-attr_elf_tier_1 = str_12|agi_12| int_4| cha_4|level(5)
-attr_elf_tier_2 = str_14|agi_14| int_4| cha_4|level(10)
-attr_elf_tier_3 = str_18|agi_18| int_4| cha_4|level(15)
-attr_elf_tier_4 = str_18|agi_24| int_4| cha_4|level(20)
-attr_elf_tier_5 = str_24|agi_27| int_4| cha_4|level(30)
-attr_elf_tier_6 = str_30|agi_30|int_20|cha_20|level(40)
+attr_elf_tier_1 = str_12|agi_12| int_4| cha_4|level(6)
+attr_elf_tier_2 = str_14|agi_14| int_4| cha_4|level(12)
+attr_elf_tier_3 = str_18|agi_18| int_4| cha_4|level(17)
+attr_elf_tier_4 = str_18|agi_24| int_4| cha_4|level(22)
+attr_elf_tier_5 = str_24|agi_27| int_4| cha_4|level(33)
+attr_elf_tier_6 = str_30|agi_30|int_20|cha_20|level(44)
 
-attr_dwarf_tier_1 =  str_9| agi_6| int_4| cha_4|level(5)
-attr_dwarf_tier_2 = str_12| agi_9| int_4| cha_4|level(10)
-attr_dwarf_tier_3 = str_15|agi_11| int_4| cha_4|level(15)
-attr_dwarf_tier_4 = str_18|agi_13| int_4| cha_4|level(20)
-attr_dwarf_tier_5 = str_18|agi_18| int_4| cha_4|level(30)
-attr_dwarf_tier_6 = str_24|agi_18|int_4|cha_4|level(40)
+attr_dwarf_tier_1 =  str_9| agi_6| int_4| cha_4|level(6)
+attr_dwarf_tier_2 = str_12| agi_9| int_4| cha_4|level(11)
+attr_dwarf_tier_3 = str_15|agi_11| int_4| cha_4|level(16)
+attr_dwarf_tier_4 = str_18|agi_13| int_4| cha_4|level(21)
+attr_dwarf_tier_5 = str_18|agi_18| int_4| cha_4|level(32)
+attr_dwarf_tier_6 = str_24|agi_18| int_4| cha_4|level(43)
 
-attr_orc_tier_1 =  str_5| agi_5| int_4| cha_4|level(5)
-attr_orc_tier_2 =  str_7| agi_7| int_4| cha_4|level(10)
-attr_orc_tier_3 =  str_9| agi_8| int_4| cha_4|level(15)
-attr_orc_tier_4 = str_11| agi_9| int_4| cha_4|level(20)
-attr_orc_tier_5 = str_14|agi_10| int_4| cha_4|level(30)
-attr_orc_tier_6 = str_17|agi_12| int_4| cha_4|level(40)
+attr_orc_tier_1 =  str_5| agi_5| int_4| cha_4|level(4)
+attr_orc_tier_2 =  str_7| agi_7| int_4| cha_4|level(9)
+attr_orc_tier_3 =  str_9| agi_8| int_4| cha_4|level(14)
+attr_orc_tier_4 = str_11| agi_9| int_4| cha_4|level(19)
+attr_orc_tier_5 = str_14|agi_10| int_4| cha_4|level(28)
+attr_orc_tier_6 = str_17|agi_12| int_4| cha_4|level(37)
 
 #TLD weapon proficiencies
 wp_tier_1 = wp(70)
@@ -2337,7 +2337,7 @@ troops = [
  
   #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
 #Gondor 
-["knight_1_1","Malvogil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+["knight_1_1","Malvegil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_pel_leader,itm_pel_leader,itm_leather_boots,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword,itm_gondor_bow,itm_gondor_arrows,],
       attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_1|knows_trainer_3,0x00000006ff003004225b8ac89c62d2f400000000001ec8f90000000000000000],
 ["knight_1_2","Halbarad","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
@@ -2538,25 +2538,6 @@ troops = [
 # ["knight_5_18","Lord Fraichin","bug",tf_hero,0,reserved,fac_dunland,[itm_saddle_horse,itm_courtly_outfit,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_shield_heater_c],knight_attrib_3,wp(180),knight_skills_3,0x0000000a3d0c13c3452aa967276dc95c00000000001dad350000000000000000,rhodok_face_older_2],
 # ["knight_5_19","Lord Trimbau","bug",tf_hero,0,reserved,fac_dunland,[itm_warhorse,itm_fur_coat,itm_mail_hauberk,itm_leather_boots,itm_splinted_greaves,itm_mail_mittens,itm_sword_two_handed_a,itm_shield_heater_c],knight_attrib_4,wp(210),knight_skills_4|knows_trainer_5,0x0000000c3f08038245545e3b236a68de00000000001e37230000000000000000,rhodok_face_older_2],
 # ["knight_5_20","Lord Reichsin","bug",tf_hero,0,reserved,fac_dunland,[itm_warhorse,itm_rich_outfit,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_bastard_sword_a,itm_shield_heater_c],knight_attrib_5,wp(240),knight_skills_5|knows_trainer_6,0x0000000d8a00514544be2d14d370c65c00000000001ed6df0000000000000000,rhodok_face_older_2],
-["kingdom_1_pretender","Lady_Isolla_of_Suno","_",tf_hero| tf_female| tf_unmoveable_in_party_window,0,0,fac_neutral,
-   [itm_hunter,itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x00000000ef00000237dc71b90c31631200000000001e371b0000000000000000],
-["kingdom_2_pretender","Prince_Valdym_the_Bastard","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_neutral,
-   [itm_hunter,itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x00000000200412142452ed631b30365c00000000001c94e80000000000000000],
-["kingdom_3_pretender","Dustum_Khan","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_neutral,
-   [itm_hunter,itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x000000065504310b30d556b51238f66100000000001c256d0000000000000000],
-["kingdom_4_pretender","Lethwin_Far-Seeker","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_neutral,
-   [itm_hunter,itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x00000004340c01841d89949529a6776a00000000001c910a0000000000000000],
-["kingdom_5_pretender","Lord_Kastor_of_Veluca","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_neutral,
-   [itm_hunter,itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x0000000bed1031051da9abc49ecce25e00000000001e98680000000000000000],
-#Royal family members
-["knight_1_1_wife","Lady_Anna","_",tf_hero| tf_female| tf_unmoveable_in_party_window,0,0,fac_gondor,
-   [itm_leather_jerkin,itm_leather_boots,],
-      0,0,0,0x000000055910200107632d675a92b92d00000000001e45620000000000000000],
 ["heroes_end","bug","_",tf_hero,0,0,fac_neutral,
    [],
       0,0,0,0x000000000008318101f390c515555594],
@@ -3132,28 +3113,28 @@ troops = [
 ["trainee_peasant","Peasant","Peasants",tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(4),wp(60),knows_common,mercenary_face_1,mercenary_face_2],
-["fugitive_man","Nervous_Man","Nervous_Men",tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_man","Suspicious_Man","Suspicious_Men",tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,itm_arnor_sword_f,itm_loss_throwing_axes,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
-["fugitive_elf","Nervous_Elf","Nervous_Men",tf_lorien| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_elf","Suspicious_Elf","Suspicious_Elves",tf_lorien| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_lorien_armor_a,itm_lorien_boots,itm_lorien_sword_a,itm_loss_throwing_axes,],
       attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,lorien_elf_face_1,lorien_elf_face_2],
-["fugitive_dwarf","Nervous_Dwarf","Nervous_Men",tf_dwarf| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_dwarf","Suspicious_Dwarf","Suspicious_Dwarves",tf_dwarf| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_dwarf_armor,itm_dwarf_pad_boots,itm_dwarf_sword_a,itm_dwarf_throwing_axe,],
       attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,dwarf_face_2,dwarf_face_3],
-["fugitive_orc","Nervous_Orc","Nervous_Men",tf_orc| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_orc","Suspicious_Orc","Suspicious_Orcs",tf_orc| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_moria_armor_a,itm_orc_slasher,itm_orc_throwing_arrow,],
       attr_orc_tier_4,wp_orc_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
-["spy","Shifty-eyed_Corsair","Ordinary_Townsmen",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy","Shifty-eyed_Corsair","Shifty-eyed_Corsairs",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_umb_armor_f,itm_umb_armor_h,itm_corsair_boots,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,itm_steppe_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_power_strike_3,bandit_face1,bandit_face2],
-["spy_evil","Shifty-eyed_Southerner","Ordinary_Townsmen",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_evil","Shifty-eyed_Southerner","Shifty-eyed_Southerners",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_leather_jerkin,itm_leather_gloves,itm_leather_boots,itm_arnor_sword_f,itm_steppe_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_power_strike_3,bandit_face1,bandit_face2],
-["spy_partner","Spy_Handler","Unremarkable_Townsmen",tf_gondor| tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_partner","Spy_Handler","Spy_Handlers",tf_gondor| tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_gon_squire,itm_gondor_med_greaves,itm_gondor_cav_sword,itm_gondor_shield_d,itm_leather_gloves,itm_gondor_squire_helm,itm_gondor_courser,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,gondor_face1,gondor_face2],
-["spy_partner_evil","Spy_Handler","Unremarkable_Townsmen",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_partner_evil","Spy_Handler","Spy_Handlers",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_evil_light_armor,itm_leather_boots,itm_mordor_sword,itm_mordor_man_shield_b,itm_mordor_longsword,itm_mordor_warhorse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
 #MV: Easter Egg Troll in Troll Cave

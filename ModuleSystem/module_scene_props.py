@@ -1993,7 +1993,7 @@ scene_props = [
 ("smith_hammer",0,"smith_hammer","0",[]),
 ("book_open",0,"JIKBookOpen","0",[]),
 ("book_closed",0,"JIKBookClosed","0",[]),
-("book_open",0,"big_book","0",[]),
+#("book_open",0,"big_book","0",[]),
 ("book_scroll",0,"quenya_scroll","0",[]),
 ("prop_cage_wheeled", 0, "wheeled_cage", "bo_wheeled_cage", []),
 ("door_iron", 0, "door_iron", "bo_door_iron", []),

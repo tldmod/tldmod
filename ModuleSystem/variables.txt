@@ -26,7 +26,6 @@ g_ally_strength
 g_comment_found
 g_leave_encounter
 g_move_heroes
-supported_pretender
 temp
 g_center_taken_by_player_faction
 map_talk_troop
@@ -37,9 +36,6 @@ cheapest_join
 g_enemy_surrenders
 g_castle_left_to_player
 g_player_surrenders
-pretender_told_story
-town_to_rebel
-town_to_approach
 prisoner_lord_to_buy
 g_ransom_offer_rejected
 g_convince_quest
@@ -51,17 +47,6 @@ g_recalculate_ais
 hero_requested_to_learn_location
 faction_requested_to_learn_more_details_about_the_war_against
 encountered_party_hostile
-g_rebellion_suggest_friends_stronger
-rival_lord
-rebellion_chance
-prior_argument_value
-player_made_legitimacy_claim
-current_argument
-current_argument_value
-player_made_ruler_claim
-player_made_strength_claim
-player_made_benefit_claim
-rebellion_check
 random_quest_no
 g_leave_town
 qst_follow_spy_spy_partners_party
@@ -92,7 +77,6 @@ ransom_broker_prices_told
 ransom_broker_ransom_me_told
 traveler_land_asked
 last_lost_companion
-traveller_claimants_mentioned
 merchant_quest_last_offerer
 merchant_offered_quest
 random_merchant_quest_no
@@ -199,7 +183,6 @@ last_sneak_attempt_town
 last_sneak_attempt_time
 g_player_is_captive
 player_ransom_amount
-supported_pretender_old_faction
 trolls_in_battle
 wargs_in_battle
 nazgul_in_battle

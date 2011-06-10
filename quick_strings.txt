@@ -1,4 +1,4 @@
-829
+816
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -238,7 +238,6 @@ qstr_{s11}_{s12} {s11},_{s12}
 qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_controls_{s8}.^Its_commanders_are_{s10}.^{s5}_is_at_war_with_{s12}.
 qstr_{s5}_has_been_defeat {s5}_has_been_defeated!
 qstr_{s5}_has_a_strength_ {s5}_has_a_strength_of_{reg1}_men_in_total.
-qstr_{s54}_is_a_claimant_ {s54}_is_a_claimant_to_the_throne_of_{s56}.
 qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
@@ -671,11 +670,6 @@ qstr_Hrrr!_Frresh_meat_an Hrrr!_Frresh_meat_and_shiny_things.
 qstr_Gharr!_Hand_over_all Gharr!_Hand_over_all_yerr_stuff,_and_we_might_spare_yourr_life.
 qstr_Death_to_men! Death_to_men!
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
-qstr_we_have_made_very_li we_have_made_very_little_progress_so_far
-qstr_we_have_suceeded_in_ we_have_suceeded_in_gaining_some_ground,_but_we_still_have_a_long_way_to_go
-qstr_we_have_become_a_sig we_have_become_a_significant_force,_and_we_have_an_even_chance_of_victory
-qstr_we_are_winning_the_w we_are_winning_the_war,_but_our_enemies_are_still_holding_on.
-qstr_we_are_on_the_verge_ we_are_on_the_verge_of_victory._The_remaining_enemies_pose_no_threat,_but_we_still_need_to_hunt_them_down.
 qstr_my_home_town my_home_town
 qstr__no_fiefs_ (no_fiefs)
 qstr__fiefs:_{s0}_ (fiefs:_{s0})
@@ -734,13 +728,6 @@ qstr_We_are_not_at_war_wi We_are_not_at_war_with_anyone.
 qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fighting_against_{s13}.
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.
 qstr_we_are_not_too_conce we_are_not_too_concerned_with_them_at_the_moment,_since_we_are_fighting_other_enemies_closer_to_home
-qstr_Prior_argument_effec Prior_argument_effect:_{reg6},_rebellion_chance:_{reg7}
-qstr_Rebellion_chance__30 Rebellion_chance_-30_from_rival_=_{reg7}
-qstr_Consistency_check:_{ Consistency_check:_{reg10}/{reg11}
-qstr_Current_argument_eff Current_argument_effect:_{reg6},_rebellion_chance:_{reg7}
-qstr_Persuasion_effect:_{ Persuasion_effect:_{reg6},_rebellion_chance:_{reg7}
-qstr_Personal_relation_ef Personal_relation_effect:_{reg6},_rebellion_chance:_{reg7}
-qstr_Rebellion_check:_{re Rebellion_check:_{reg6}
 qstr__under_your_orders ,_under_your_orders
 qstr_These_soldiers_may_w These_soldiers_may_well_turn_the_tide_in_my_plans,_{playername}._I_am_confident_you've_trained_them_well._My_thanks_and_my_compliments_to_you.
 qstr_Good_work_in_shaping Good_work_in_shaping_up_those_recruits,_{playername},_you_have_been_most_useful._Hopefully_they'll_last_longer_than_the_last_batch,_but_come_see_me_again_if_they_don't.

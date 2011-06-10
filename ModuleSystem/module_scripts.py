@@ -1557,12 +1557,7 @@ scripts = [
           (store_troop_faction, ":faction_id", ":troop_id"),
           (is_between, ":faction_id", kingdoms_begin, kingdoms_end),
           (troop_set_slot, ":troop_id", slot_troop_original_faction, ":faction_id"),
-          (try_begin),
-            (is_between, ":troop_id", pretenders_begin, pretenders_end),
-            (faction_set_slot, ":faction_id", slot_faction_has_rebellion_chance, 1),
-          (else_try),
-            (troop_set_slot, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
-          (try_end),
+          (troop_set_slot, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
         (try_end),
         (assign, ":initial_wealth", 60000),
         (try_begin),
@@ -3674,32 +3669,46 @@ scripts = [
       (try_end),
       
   ]),
+
+
+  #script_troop_calculate_strength:
+  # INPUT: arg1 = troop_id
+  # OUTPUT: reg0 = strength
+  ("troop_calculate_strength",
+    [
+      (store_script_param_1, ":troop"),
+      
+      #TLD: Troop strength = ((level+11)^2-27)/100
+      (store_character_level, reg0, ":troop"),
+      (val_add, reg0, 11),
+      (val_mul, reg0, reg0),
+      (val_sub, reg0, 27),
+      (val_div, reg0, 100),
+  ]),
+  
   
   #script_party_calculate_regular_strength:
-  # INPUT:
-  # param1: Party-id
+  # INPUT: arg1 = party_id
+  # OUTPUT: reg0 = strength
   ("party_calculate_regular_strength",
     [
       (store_script_param_1, ":party"), #Party_id
       
-      (assign, reg(0),0),
+      (assign, ":strength", 0),
       (party_get_num_companion_stacks, ":num_stacks",":party"),
       (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop",":party",":i_stack"),
         (neg|troop_is_hero, ":stack_troop"),
-        (store_character_level, ":stack_strength", ":stack_troop"),
-        (val_add, ":stack_strength", 12),
-        (val_mul, ":stack_strength", ":stack_strength"),
-        (val_div, ":stack_strength", 100),
+        (call_script, "script_troop_calculate_strength", ":stack_troop"),
+        (assign, ":stack_strength", reg0),
         (party_stack_get_size, ":stack_size",":party",":i_stack"),
         (party_stack_get_num_wounded, ":num_wounded",":party",":i_stack"),
         (val_sub, ":stack_size", ":num_wounded"),
         (val_mul, ":stack_strength", ":stack_size"),
-        (val_add,reg(0), ":stack_strength"),
+        (val_add, ":strength", ":stack_strength"),
       (try_end),
+      (assign, reg0, ":strength"),
   ]),
-  
-  
   
   
   #script_party_calculate_strength:
@@ -3710,7 +3719,7 @@ scripts = [
       (store_script_param_1, ":party"), #Party_id
       (store_script_param_2, ":exclude_leader"), #Party_id
       
-      (assign, reg(0),0),
+      (assign, ":strength", 0),
       (party_get_num_companion_stacks, ":num_stacks",":party"),
       (assign, ":first_stack", 0),
       (try_begin),
@@ -3719,10 +3728,8 @@ scripts = [
       (try_end),
       (try_for_range, ":i_stack", ":first_stack", ":num_stacks"),
         (party_stack_get_troop_id,     ":stack_troop",":party",":i_stack"),
-        (store_character_level, ":stack_strength", ":stack_troop"),
-        (val_add, ":stack_strength", 12),
-        (val_mul, ":stack_strength", ":stack_strength"),
-        (val_div, ":stack_strength", 100),
+        (call_script, "script_troop_calculate_strength", ":stack_troop"),
+        (assign, ":stack_strength", reg0),
         (try_begin),
           (neg|troop_is_hero, ":stack_troop"),
           (party_stack_get_size, ":stack_size",":party",":i_stack"),
@@ -3733,9 +3740,10 @@ scripts = [
           (troop_is_wounded, ":stack_troop"), #hero...
           (assign,":stack_strength",0),
         (try_end),
-        (val_add,reg(0), ":stack_strength"),
+        (val_add, ":strength", ":stack_strength"),
       (try_end),
-      (party_set_slot, ":party", slot_party_cached_strength, reg(0)),
+      (party_set_slot, ":party", slot_party_cached_strength, ":strength"),
+      (assign, reg0, ":strength"),
   ]),
 
 
@@ -7950,23 +7958,6 @@ scripts = [
       (store_script_param_2, ":party_no_to_collect_heroes"),
       (party_clear, ":party_no_to_collect_heroes"),
       (call_script, "script_get_heroes_attached_to_center_aux", ":center_no", ":party_no_to_collect_heroes"),
-
-#rebellion changes begin -Arma
-     (try_for_range, ":pretender", pretenders_begin, pretenders_end),
-        (neq, ":pretender", "$supported_pretender"),
-        (troop_slot_eq, ":pretender", slot_troop_cur_center, ":center_no"),
-        (party_add_members, ":party_no_to_collect_heroes", ":pretender", 1),
-     (try_end),
-
-#     (try_for_range, ":rebel_faction", rebel_factions_begin, rebel_factions_end),
-#        (faction_slot_eq, ":rebel_faction", slot_faction_state, sfs_inactive_rebellion),
-#        (faction_slot_eq, ":rebel_faction", slot_faction_inactive_leader_location, ":center_no"),
-#        (faction_get_slot, ":pretender", ":rebel_faction", slot_faction_leader),
-#        (party_add_members, ":party_no_to_collect_heroes", ":pretender", 1),
-#     (try_end),
-#rebellion changes end
-
-
   ]),
   
   
@@ -12870,9 +12861,6 @@ scripts = [
         (eq, ":troop_no", "trp_gondor_lord" ),
         (assign, ":stand_animation", "anim_sit_on_trone"), # mtarini: let sire denethor sit.
       (else_try),
-        (is_between, ":troop_no", kingdom_ladies_begin, kingdom_ladies_end),
-        (assign, ":stand_animation", "anim_stand_lady"),
-      (else_try),
         (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":stand_animation", "anim_stand_lord"),
       (else_try),
@@ -14459,7 +14447,6 @@ scripts = [
         (else_try),
           (eq, ":has_center", 0),
           (faction_slot_eq, "fac_player_supporters_faction", slot_faction_state, sfs_active),
-          (le, "$supported_pretender", 0),
           (faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
           (faction_set_slot, "fac_player_supporters_faction", slot_faction_leader, "trp_player"),
           (assign, "$players_kingdom", 0),
@@ -15023,29 +15010,6 @@ scripts = [
        (add_troop_note_from_sreg, ":troop_no", 0, s54, 0),
        (add_troop_note_from_sreg, ":troop_no", 1, s54, 0),
        (add_troop_note_from_sreg, ":troop_no", 2, s54, 0),
-     (else_try),
-       (is_between, ":troop_no", kingdom_ladies_begin, kingdom_ladies_end),
-       (str_clear, s54),
-       (add_troop_note_from_sreg, ":troop_no", 0, s54, 0),
-       (add_troop_note_from_sreg, ":troop_no", 1, s54, 0),
-       (add_troop_note_from_sreg, ":troop_no", 2, s54, 0),
-     (else_try),
-       (is_between, ":troop_no", pretenders_begin, pretenders_end),
-       (neg|troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
-       (neq, ":troop_no", "$supported_pretender"),
-       (troop_get_slot, ":orig_faction", ":troop_no", slot_troop_original_faction),
-       (try_begin),
-         (faction_slot_eq, ":orig_faction", slot_faction_state, sfs_active),
-         (faction_slot_eq, ":orig_faction", slot_faction_has_rebellion_chance, 1),
-         (str_store_faction_name_link, s56, ":orig_faction"),
-         (add_troop_note_from_sreg, ":troop_no", 0, "@{s54} is a claimant to the throne of {s56}.", 0),
-         (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
-       (else_try),
-         (str_clear, s54),
-         (add_troop_note_from_sreg, ":troop_no", 0, s54, 0),
-         (add_troop_note_from_sreg, ":troop_no", 1, s54, 0),
-         (add_troop_note_from_sreg, ":troop_no", 2, s54, 0),
-       (try_end),
      (else_try),
        (faction_get_slot, ":faction_leader", ":troop_faction", slot_faction_leader),
        (str_store_troop_name_link, s55, ":faction_leader"),
@@ -16033,7 +15997,6 @@ scripts = [
      (this_or_next|ge, ":center_relation", 5),
      (this_or_next|eq, ":village_faction", "$players_kingdom"),
      (this_or_next|ge, ":village_faction_relation", 0),
-     (this_or_next|eq, ":village_faction", "$supported_pretender_old_faction"),
      (             eq, "$players_kingdom", 0),
      (party_slot_ge, "$current_town", slot_center_volunteer_troop_amount, 0),
      (party_slot_ge, "$current_town", slot_center_volunteer_troop_type, 1),
@@ -16555,22 +16518,6 @@ scripts = [
         (call_script, "script_add_log_entry", logent_game_start, "trp_player", -1, -1, -1),
 #Post 0907 changes end
 
-#Rebellion changes begin
-        (troop_set_slot, "trp_kingdom_1_pretender", slot_troop_original_faction, "fac_gondor"),
-        (troop_set_slot, "trp_kingdom_2_pretender", slot_troop_original_faction, "fac_rohan"),
-        (troop_set_slot, "trp_kingdom_3_pretender", slot_troop_original_faction, "fac_isengard"),
-        (troop_set_slot, "trp_kingdom_4_pretender", slot_troop_original_faction, "fac_mordor"),
-        (troop_set_slot, "trp_kingdom_5_pretender", slot_troop_original_faction, "fac_harad"),
-
-        (troop_set_slot, "trp_kingdom_1_pretender", slot_troop_support_base,     "p_town_dol_amroth"), #suno
-        (troop_set_slot, "trp_kingdom_2_pretender", slot_troop_support_base,     "p_town_edoras"), #curaw
-        (troop_set_slot, "trp_kingdom_3_pretender", slot_troop_support_base,     "p_town_minas_morgul"), #town_18
-        (troop_set_slot, "trp_kingdom_4_pretender", slot_troop_support_base,     "p_town_hornburg"), #wercheg
-        (troop_set_slot, "trp_kingdom_5_pretender", slot_troop_support_base,     "p_town_linhir"), #veluca
-        (try_for_range, ":pretender", pretenders_begin, pretenders_end),
-            (troop_set_slot, ":pretender", slot_lord_reputation_type, lrep_none),
-        (try_end),
-#Rebellion changes end
      ]),
 
   ("objectionable_action",
@@ -19085,115 +19032,6 @@ scripts = [
 
 #Troop Commentaries end
 
-#Rebellion changes begin
-  ("find_rival_from_faction",
-    [
-     (store_script_param, ":source_lord", 1),
-     (store_script_param, ":target_faction", 2),
-
-     (assign, ":rival", 0),
-     (troop_get_slot, ":source_reputation", ":source_lord", slot_lord_reputation_type),
-
-     (try_for_range, ":target_lord", kingdom_heroes_begin, kingdom_heroes_end),
-         (store_troop_faction, ":test_faction", ":target_lord"),
-         (eq, ":test_faction", ":target_faction"),
-         (troop_get_slot, ":target_reputation", ":target_lord", slot_lord_reputation_type),
-         (try_begin),
-             (eq, ":source_reputation", lrep_martial),
-             (eq, ":target_reputation", lrep_martial),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_debauched),
-             (eq, ":target_reputation", lrep_upstanding),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_selfrighteous),
-             (eq, ":target_reputation", lrep_goodnatured),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_cunning),
-             (eq, ":target_reputation", lrep_quarrelsome),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_quarrelsome),
-             (eq, ":target_reputation", lrep_cunning),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_goodnatured),
-             (eq, ":target_reputation", lrep_selfrighteous),
-             (assign, ":rival", ":target_lord"),
-         (else_try),
-             (eq, ":source_reputation", lrep_upstanding),
-             (eq, ":target_reputation", lrep_debauched),
-             (assign, ":rival", ":target_lord"),
-         (try_end),
-     (try_end),
-
-     (assign, reg0, ":rival"),
-]),
-
-
-  ("rebellion_arguments",
-    [
-     (store_script_param, ":lord", 1),
-     (store_script_param, ":argument", 2),
-
-     (assign, ":argument_value", 0),
-     (troop_get_slot, ":reputation", ":lord", slot_lord_reputation_type),
-     (try_begin),
-         (eq, ":reputation", lrep_martial),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value", 30),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value", 10),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value",-30),
-         (try_end),
-     (else_try),
-         (eq, ":reputation", lrep_quarrelsome),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value",-30),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value", 30),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value", 10),
-         (try_end),
-     (else_try),
-         (eq, ":reputation", lrep_selfrighteous),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value",-30),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value", 20),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value", 20),
-         (try_end),
-	 (else_try),
-         (eq, ":reputation", lrep_cunning),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value",-30),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value", 20),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value", 20),
-         (try_end),
-     (else_try),
-         (eq, ":reputation", lrep_debauched),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value",-20),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value", 20),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value", 10),
-         (try_end),
-     (else_try),
-         (eq, ":reputation", lrep_goodnatured),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value", 10),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value", 20),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value",-15),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value",-25),
-         (try_end),
-     (else_try),
-         (eq, ":reputation", lrep_upstanding),
-         (try_begin),(eq, ":argument", argument_claim  ),(assign, ":argument_value", 10),
-         (else_try) ,(eq, ":argument", argument_ruler  ),(assign, ":argument_value",  0),
-         (else_try) ,(eq, ":argument", argument_benefit),(assign, ":argument_value",-40),
-         (else_try) ,(eq, ":argument", argument_victory),(assign, ":argument_value", 10),
-         (try_end),
-     (try_end),
-     (assign, reg0, ":argument_value"),
-]),
-
-#Rebellion changes end
 
   # script_get_culture_with_party_faction_for_music
   # Input: arg1 = party_no
