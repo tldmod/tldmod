@@ -356,6 +356,12 @@ simple_triggers = [
            (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
+           (try_begin),
+             (eq, "$tld_war_began", 0),
+             (val_div, ":strength_income", 2), #halve income before the War
+             (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
+             (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it increments of 5
+           (try_end),
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
          (try_end),
@@ -2390,11 +2396,10 @@ simple_triggers = [
               #(call_script, "script_give_center_to_faction", ":cur_party", ":best_faction"),
               (try_end),
               
-              (call_script, "script_cf_reinforce_party", ":cur_party"),
-              (call_script, "script_cf_reinforce_party", ":cur_party"),
-              (call_script, "script_cf_reinforce_party", ":cur_party"),
-              (call_script, "script_cf_reinforce_party", ":cur_party"),
-              (call_script, "script_cf_reinforce_party", ":cur_party"),
+              # add a small garrison
+              (try_for_range, ":unused", 0, 5),
+                (call_script, "script_cf_reinforce_party", ":cur_party"),
+              (try_end),
             (try_end),               
           (try_end),
           
@@ -2622,11 +2627,12 @@ simple_triggers = [
         (assign, ":garrison_strength", 20),
         (party_get_slot, ":garrison_limit", ":adv_camp", slot_center_garrison_limit),
         (try_for_range, ":unused", 0, ":garrison_strength"),
-          (call_script, "script_cf_reinforce_party", ":adv_camp"),
-          (try_begin), #TLD: don't go overboard
+          (try_begin), 
             (party_get_num_companions, ":garrison_size", ":adv_camp"),
-            (le, ":garrison_limit", ":garrison_size"),
+            (le, ":garrison_limit", ":garrison_size"), #TLD: don't go overboard
             (assign, ":garrison_strength", 0),
+          (else_try),
+            (call_script, "script_cf_reinforce_party", ":adv_camp"),
           (try_end),
         (try_end),
       (try_end), #try_for_range ":faction"

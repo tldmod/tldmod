@@ -438,9 +438,10 @@ troops = [
 ["woodmen_youth","Woodman","Woodmen",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_woodman_tunic,itm_leather_boots,itm_beorn_staff,],
       attr_tier_1,wp_tier_1,knows_common|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,swadian_face_younger_1,swadian_face_older_1],
-["woodmen_hunter","Woodmen_Hunter","Woodmen_Hunters",tfg_armor| tfg_boots,0,0,fac_beorn,
-   [itm_woodman_tunic,itm_leather_boots,itm_short_bow,itm_arrows,itm_beorn_staff,],
-      attr_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_power_draw_1|knows_ironflesh_1,swadian_face_younger_1,swadian_face_older_1],
+# unused - same role as woodmen_tracker
+# ["woodmen_hunter","Woodmen_Hunter","Woodmen_Hunters",tfg_armor| tfg_boots,0,0,fac_beorn,
+   # [itm_woodman_tunic,itm_leather_boots,itm_short_bow,itm_arrows,itm_beorn_staff,],
+      # attr_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_power_draw_1|knows_ironflesh_1,swadian_face_younger_1,swadian_face_older_1],
 ["woodmen_forester","Woodmen_Forester","Woodmen_Foresters",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_woodman_tunic,itm_leather_boots,itm_beorn_axe,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_2,swadian_face_younger_1,swadian_face_older_1],
@@ -549,7 +550,7 @@ troops = [
 ["rhun_tribesman","Rhun_Tribesman","Rhun_Tribesmen",tf_evil_man| tf_mounted| tfg_boots| tfg_armor,0,0,fac_rhun,
    [itm_furry_boots,itm_rhun_armor_a,itm_rhun_armor_b,itm_rhun_shortsword,itm_arrows,itm_hunting_bow,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_3|knows_power_draw_2|knows_horse_archery_2,rhun_man1,rhun_man2],
-["rhun_house_scout","Rhun_Horse_Scout","Rhun_Horse_Scouts",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_ranged,0,0,fac_rhun,
+["rhun_horse_scout","Rhun_Horse_Scout","Rhun_Horse_Scouts",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_ranged,0,0,fac_rhun,
    [itm_furry_boots,itm_rhun_armor_a,itm_rhun_armor_b,itm_rhun_armor_d,itm_rhun_horse_a,itm_rhun_horse_b,itm_rhun_falchion,itm_arrows,itm_nomad_bow,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_4|knows_power_draw_3|knows_power_throw_1|knows_horse_archery_3,rhun_man1,rhun_man2],
 ["rhun_horse_archer","Rhun_Horse_Archer","Rhun_Horse_Archers",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_ranged| tfg_horse,0,0,fac_rhun,
@@ -801,13 +802,13 @@ troops = [
    [itm_lamedon_leader_surcoat_cloak,itm_gondor_cav_sword,itm_gondor_heavy_greaves,itm_gondor_lam_horse,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondor_lamedon_leader_helm,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3],
 #Pinnath Gelin####
-["warrior_of_pinnath_gelin","Plainsman_of_Pinnath_Gelin","Plainsmen_of_Pinnath_Gelin",tf_gondor| tfg_armor| tfg_boots,0,0,fac_gondor,
+["pinnath_gelin_plainsman","Plainsman_of_Pinnath_Gelin","Plainsmen_of_Pinnath_Gelin",tf_gondor| tfg_armor| tfg_boots,0,0,fac_gondor,
    [itm_pinnath_footman,itm_gondor_ranger_hood,itm_shortened_spear,itm_gondor_light_greaves,itm_gondor_auxila_arrows,itm_short_bow,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_3|knows_power_throw_1|knows_power_strike_3|knows_ironflesh_3,gondor_face1,gondor_face2],
-["veteran_warrior_of_pinnath_gelin","Spearman_of_Pinnath_Gelin","Spearmen_of_Pinnath_Gelin",tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+["pinnath_gelin_spearman","Spearman_of_Pinnath_Gelin","Spearmen_of_Pinnath_Gelin",tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
    [itm_pinnath_footman,itm_gondor_auxila_helm,itm_spear,itm_gon_tab_shield_a,itm_gondor_light_greaves,itm_leather_gloves,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_4|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,gondor_face1,gondor_face2],
-["champion_of_pinnath_gelin","Warrior_of_Pinnath_Gelin","Warriors_of_Pinnath_Gelin",tf_gondor| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+["warrior_of_pinnath_gelin","Warrior_of_Pinnath_Gelin","Warriors_of_Pinnath_Gelin",tf_gondor| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
    [itm_pinnath_warrior,itm_gondor_auxila_helm,itm_gon_tab_shield_d,itm_gondor_spear,itm_gondor_sword,itm_gondor_med_greaves,itm_leather_gloves,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_throw_3|knows_power_strike_5|knows_ironflesh_5,gondor_face1,gondor_face2],
 ["pinnath_gelin_bowman","Bowman_of_Pinnath_Gelin","Bowmen_of_Pinnath_Gelin",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
@@ -1087,7 +1088,7 @@ troops = [
 ["king_s_man_of_rohan","King's_Guard","King's_Guards",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_p,itm_rohan_armor_q,itm_rohan_armor_r,itm_rohan_cav_helmet_c,itm_rohan_spear,itm_rohan_inf_sword,itm_rohan_cav_sword,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,itm_rohan_shield_g,itm_rohan_warhorse,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_7|knows_ironflesh_6,rohan_face1,rohan_face2],
-["esquire_of_rohan","Squire_of_Rohan","Squires_of_Rohan",tf_rohan| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
+["squire_of_rohan","Squire_of_Rohan","Squires_of_Rohan",tf_rohan| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_leather_gloves,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_saddle_horse,],
       attr_tier_2,wp_tier_2,knows_common|knows_shield_1|knows_power_strike_1,rohan_face1,rohan_face2],
 ["rider_of_rohan","Rider_of_Rohan","Riders_of_Rohan",tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
@@ -1203,6 +1204,7 @@ troops = [
 ["dunnish_wolf_guard","Dunnish_Wolf_Guard","Dunnish_Wolf_Guards",tf_dunland| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dunland,
    [itm_dunland_wolfboots,itm_evil_gauntlets_b,itm_dunland_armor_i,itm_dunland_armor_j,itm_dun_helm_a,itm_dun_helm_b,itm_dun_shield_a,itm_dun_shield_b,itm_dunnish_axe,itm_dunnish_war_axe,itm_dunland_javelin,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_4|knows_power_strike_4|knows_ironflesh_2|knows_power_throw_5,dunland_face1,dunland_face2],
+#unused
 ["dunnish_chieftan","Dunnish_Chieftain","Dunnish_Chieftains",tf_dunland| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dunland,
    [itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dunland_armor_k,itm_dun_helm_d,itm_dun_berserker,itm_dun_shield_a,itm_dun_shield_b,],
       attr_tier_5,wp_tier_5,knows_athletics_5|knows_power_strike_4|knows_ironflesh_5,dunland_face1,dunland_face2],
@@ -1268,10 +1270,10 @@ troops = [
 ["khand_glaive_master","Khand_Halberd_Master","Khand_Halberd_Masters",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
    [itm_khand_foot_lam_a,itm_variag_greaves,itm_khand_helmet_e2,itm_khand_halberd,itm_mail_mittens,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
-["variag_pitfighter","Variag_Pitfighter","Variag_Pitfighters",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
+["variag_pitfighter","Variag_Pitfighter","Variag_Pitfighters",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
    [itm_khand_light,itm_javelin,itm_leather_boots,itm_khand_helmet_mask1,itm_khand_helmet_mask2,itm_khand_tulwar,itm_khand_pitsword,itm_easterling_hawk_shield,itm_variag_gladiator_shield,itm_tab_shield_small_round_b,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,khand_man1,khand_man2],
-["variag_gladiator","Variag_Berserker","Variag_Berserkers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
+["variag_gladiator","Variag_Berserker","Variag_Berserkers",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
    [itm_khand_light,itm_javelin,itm_leather_boots,itm_khand_helmet_mask1,itm_khand_helmet_mask2,itm_khand_2h_tulwar,itm_khand_tulwar,itm_khand_pitsword,itm_khand_mace_spiked,itm_khand_2h_tulwar,itm_easterling_hawk_shield,itm_tab_shield_small_round_b,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_throw_3|knows_power_strike_5|knows_ironflesh_6,khand_man1,khand_man2],
 ["easterling_skirmisher","Variag_Skirmisher","Variag_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
@@ -1293,7 +1295,7 @@ troops = [
 ["corsair_warrior","Umbar_Warrior","Umbar_Warriors",tfg_armor| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_b,itm_umb_hood,itm_umb_shield_b,itm_umb_shield_d,itm_shortened_spear,itm_corsair_sword,itm_corsair_harpoon,itm_umbar_rapier,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_shield_1|knows_power_strike_1,bandit_face1,bandit_face2],
-["corsair_raider","Pikeman_of_Umbar","Pikemen_of_Umbar",tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
+["corsair_pikeman","Pikeman_of_Umbar","Pikemen_of_Umbar",tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_f,itm_umb_armor_h,itm_umb_helm_e,itm_umb_helm_f,itm_corsair_sword,itm_umbar_pike,],
       attr_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_2|knows_ironflesh_1,bandit_face1,bandit_face2],
 ["corsair_veteran_raider","Corsair_Veteran_Raider","Corsair_Veteran_Raiders",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
@@ -1311,22 +1313,22 @@ troops = [
 ["veteran_marksman_of_umbar","Veteran_Skirmisher_of_Umbar","Veteran_Skirmishers_of_Umbar",tfg_ranged| tfg_armor| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_c,itm_umb_armor_e,itm_umb_helm_c,itm_umb_helm_d,itm_corsair_bow,itm_corsair_arrows,itm_umbar_cutlass,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_draw_3|knows_ironflesh_1,bandit_face1,bandit_face2],
-["master_marksman_of_umbar","Corsair_Master_Skirmisher","Corsair_Master_Skirmishers",tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
+["master_marksman_of_umbar","Corsair_Master_Skirmisher","Corsair_Master_Skirmishers",tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_d,itm_umb_helm_c,itm_umb_helm_d,itm_umb_shield_a,itm_corsair_bow,itm_corsair_arrows,itm_umbar_cutlass,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_power_draw_4|knows_ironflesh_2,bandit_face1,bandit_face2],
-["corsair_marauder","Swordsman_of_Umbar","Swordsmen_of_Umbar",tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
+["corsair_marauder","Swordsman_of_Umbar","Swordsmen_of_Umbar",tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_f,itm_umb_armor_h,itm_umb_helm_e,itm_umb_helm_f,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,],
-      attr_tier_3,wp_tier_3,knows_common|knows_riding_2|knows_shield_2|knows_power_strike_2,bandit_face1,bandit_face2],
-["corsair_veteran_marauder","Veteran_Swordsman_of_Umbar","Veteran_Swordsmen_of_Umbar",tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
+      attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_shield_2|knows_power_strike_2,bandit_face1,bandit_face2],
+["corsair_veteran_marauder","Veteran_Swordsman_of_Umbar","Veteran_Swordsmen_of_Umbar",tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_f,itm_umb_armor_h,itm_umb_helm_e,itm_umb_helm_f,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,],
-      attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_shield_2|knows_power_throw_1|knows_power_strike_3,bandit_face1,bandit_face2],
-["corsair_elite_marauder","Corsair_Swordmaster","Corsair_Swordmasters",tf_mounted| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
+      attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_throw_1|knows_power_strike_3,bandit_face1,bandit_face2],
+["corsair_elite_marauder","Corsair_Swordmaster","Corsair_Swordmasters",tfg_gloves| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_g,itm_umb_helm_a,itm_umb_helm_b,itm_umb_shield_c,itm_kraken,],
-      attr_tier_5,wp_tier_5,knows_common|knows_riding_4|knows_shield_2|knows_power_throw_2|knows_power_strike_6|knows_ironflesh_3,bandit_face1,bandit_face2],
-["assassin_of_umbar","Assassin_of_Umbar","Assassins_of_Umbar",tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_throw_2|knows_power_strike_6|knows_ironflesh_3,bandit_face1,bandit_face2],
+["assassin_of_umbar","Assassin_of_Umbar","Assassins_of_Umbar",tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_f,itm_umb_armor_d,itm_umb_helm_b,itm_umb_shield_b,itm_corsair_bow,itm_corsair_arrows,itm_umbar_cutlass,itm_kraken,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_4|knows_power_throw_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
-["master_assassin_of_umbar","Corsair_Assassin","Corsair_Assassins",tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
+["master_assassin_of_umbar","Corsair_Assassin","Corsair_Assassins",tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_d,itm_umb_helm_d,itm_umb_helm_c,itm_corsair_bow,itm_corsair_arrows,itm_corsair_sword,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,bandit_face1,bandit_face2],
 ["pikeman_of_umbar","Pikeman_of_Umbar","Pikemen_of_Umbar",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
@@ -1345,19 +1347,19 @@ troops = [
 ["orc_snaga_of_isengard","Orc_Snaga_of_Isengard","Orc_Snagas_of_Isengard",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
    [itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_isengard_axe,itm_isengard_axe,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_simple_spear,itm_orc_axe,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_2|knows_power_throw_1|knows_power_strike_1,orc_face1,orc_face2],
-["orc_of_isengard","Orc_of_Isengard","Orcs_of_Isengard",tf_orc| tf_mounted| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["orc_of_isengard","Orc_of_Isengard","Orcs_of_Isengard",tf_orc| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_ragwrap,itm_isen_orc_armor_c,itm_isen_orc_armor_d,itm_isen_orc_helm_a,itm_isen_orc_helm_b,itm_isen_orc_shield_a,itm_orc_slasher,itm_orc_falchion,itm_orc_scimitar,itm_orc_sabre,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_simple_spear,itm_orc_bill,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_throw_2|knows_power_strike_3,orc_face1,orc_face2],
-["large_orc_of_isengard","Large_Orc_of_Isengard","Large_Orcs_of_Isengard",tf_orc| tf_mounted| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["large_orc_of_isengard","Large_Orc_of_Isengard","Large_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_ragwrap,itm_evil_gauntlets_b,itm_isen_orc_armor_e,itm_isen_orc_armor_f,itm_isen_orc_helm_b,itm_leather_gloves,itm_isen_orc_shield_a,itm_isen_orc_shield_b,itm_orc_slasher,itm_orc_falchion,itm_orc_scimitar,itm_orc_sabre,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_orc_club_a,itm_orc_club_b,itm_orc_simple_spear,itm_orc_club_d,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_throw_2|knows_power_strike_4,orc_face1,orc_face2],
-["fell_orc_of_isengard","Fell_Orc_of_Isengard","Fell_Orcs_of_Isengard",tf_orc| tf_mounted| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
+["fell_orc_of_isengard","Fell_Orc_of_Isengard","Fell_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_g,itm_isen_orc_helm_c,itm_isen_orc_shield_a,itm_isen_orc_shield_b,itm_orc_slasher,itm_orc_falchion,itm_orc_scimitar,itm_orc_sabre,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_simple_spear,itm_orc_bill,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_5|knows_power_throw_3|knows_power_strike_4,orc_face1,orc_face2],
-["large_orc_despoiler","Large_Orc_Despoiler","Large_Orc_Despoilers",tf_orc| tf_mounted| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["large_orc_despoiler","Large_Orc_Despoiler","Large_Orc_Despoilers",tf_orc| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_e,itm_isen_orc_armor_f,itm_isen_orc_helm_b,itm_isengard_mallet,itm_orc_sledgehammer,itm_isengard_hammer,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_4,orc_face1,orc_face2],
-["fell_orc_despoiler","Fell_Orc_Despoiler","Fell_Orc_Despoilers",tf_orc| tf_mounted| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
+["fell_orc_despoiler","Fell_Orc_Despoiler","Fell_Orc_Despoilers",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_g,itm_isen_orc_helm_c,itm_isengard_mallet,itm_orc_sledgehammer,itm_isengard_hammer,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_power_strike_5,orc_face1,orc_face2],
 ["wolf_rider_of_isengard","Wolf_Rider_of_Isengard","Wolf_Riders_of_Isengard",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_isengard,
@@ -1370,13 +1372,13 @@ troops = [
    [itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_wargarmored_1b,itm_wargarmored_1c,itm_wargarmored_2b,itm_wargarmored_2c,itm_orc_scimitar,itm_orc_falchion,itm_orc_sabre,],
       attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_power_throw_5|knows_power_strike_4,orc_face1,orc_face2],
 #Isengard
-["uruk_hai_scout","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
+["uruk_hai_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_ragwrap,itm_isen_uruk_heavy_d,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],
       attr_tier_2,wp_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,urukhai_face_low1,urukhai_face_low2],
-["large_uruk_hai_scout","Large_Uruk_Hai_Tracker","Large_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
+["large_uruk_hai_tracker","Large_Uruk_Hai_Tracker","Large_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_tracker_boots,itm_isen_uruk_helm_e,itm_isen_uruk_heavy_d,itm_isen_uruk_heavy_e,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],
       attr_tier_3,wp_tier_3,knows_athletics_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,urukhai_face_low1,urukhai_face_low2],
-["fighting_uruk_hai_scout","Fighting_Uruk_Hai_Tracker","Fighting_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
+["fighting_uruk_hai_tracker","Fighting_Uruk_Hai_Tracker","Fighting_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_tracker_boots,itm_isen_uruk_helm_f,itm_isen_uruk_heavy_e,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_sword,],
       attr_tier_4,wp_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
 ["fighting_uruk_hai_berserker","Fighting_Uruk_Hai_Berserker","Fighting_Uruk_Hai_Berserkers",tf_urukhai| tf_no_capture_alive,0,0,fac_isengard,
@@ -1435,7 +1437,7 @@ troops = [
 ["troll_of_moria","Troll_of_Moria","Trolls_of_Moria",tf_troll| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
    [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_troll_feet_boots,itm_troll_head_helm,itm_troll_head_helm_b,itm_troll_head_helm_c,],
       str_255| agi_3| int_3| cha_3|level(58),wp(75),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
-["armoured_troll","Armored_Troll","Armored_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_mordor,
+["armoured_troll","Armored_Troll","Armored_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
    [itm_giant_mace,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
       str_255| agi_3| int_3| cha_3|level(61),wp(100),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
 ["olog_hai","Olog_Hai_of_Mordor","Olog_Hai_of_Mordor",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_mordor,
@@ -1444,7 +1446,7 @@ troops = [
 ["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head_helm,itm_ent_water,itm_ent_head_helm2,itm_ent_head_helm3,],
       str_255| agi_3| int_3| cha_3|level(63),wp(200),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
-# Dol Guldur Orcs (duplicates of Mordor orcs!)  # not used so far, only for the start players 
+# Dol Guldur Orcs (duplicates of Mordor orcs!)
 ["orc_snaga_of_guldur","Orc_Snaga_of_Guldur","Orc_Snagas_of_Dol_Guldur",tf_orc| tf_no_capture_alive,0,0,fac_guldur,
    [itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_machete,itm_orc_simple_spear,itm_orc_axe,itm_orc_helm_a,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_2|knows_power_strike_1,orc_face1,orc_face2],
@@ -1572,7 +1574,7 @@ troops = [
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_machete,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_2|knows_power_strike_3,orc_face1,orc_face2],
 #Numenorean
-["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
+["black_numenorean_renegade","Black_Numenorean_Renegade","Black_Numenorean_Renegades",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
    [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_uruk_spear,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_1|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
 ["black_numenorean_warrior","Black_Numenorean_Warrior","Black_Numenorean_Warriors",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
@@ -3191,10 +3193,10 @@ troops = [
 ["androg","Androg","_",tf_hero,scn_zendar_center|entry(7),0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["dorwinion_bandit        ","Dorwinion_Bandit","Dorwinion_Bandits",tfg_armor|tfg_shield,0,0,fac_outlaws,
+["dorwinion_bandit","Dorwinion_Bandit","Dorwinion_Bandits",tfg_armor|tfg_shield,0,0,fac_outlaws,
    [itm_rhun_sword,itm_leather_boots,itm_white_tunic_a,itm_white_tunic_b,itm_javelin,itm_shortened_spear,itm_spear,itm_blue_tunic,itm_leather_boots,],
          def_attrib|level(12),wp(100),knows_common,mercenary_face_1,mercenary_face_2],
-["dorwinion_raider        ","Dorwinion_Raider","Dorwinion_Raiders",tfg_armor|tfg_shield|tfg_boots|tfg_helm,0,0,fac_outlaws,
+["dorwinion_raider","Dorwinion_Raider","Dorwinion_Raiders",tfg_armor|tfg_shield|tfg_boots|tfg_helm,0,0,fac_outlaws,
    [itm_rhun_shortsword,itm_rhun_sword,itm_rhun_sword,itm_rhun_helm_g,itm_rhun_helm_h,itm_rhun_armor_b,itm_rhun_armor_a,itm_rhun_armor_d,itm_javelin,itm_rhun_shield,itm_leather_boots,],
               def_attrib|level(17),wp(120),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_1","Barman","_",tf_hero| tf_randomize_face,0,0,fac_neutral,
@@ -3240,15 +3242,17 @@ troops = [
 ["log_array_troop_object_faction","bug","bug",0,0,0,fac_commoners,   [],      0,0,0,0],
 ["log_array_faction_object","bug","bug",0,0,0,fac_commoners,   [],      0,0,0,0],
 ##############################
+#MV: what are these - future quest troops? not used anywhere
 ["city_guard","City_Guard","city_guard",tfg_armor| tfg_boots,0,0,fac_gondor,
    [itm_leather_jerkin,itm_leather_boots,itm_gon_tab_shield_a,],
       def_attrib|level(9),wp(90),knows_common|knows_athletics_1|knows_power_strike_1,mercenary_face_1,mercenary_face_2],
-["watchman","Watchman","Watchmen",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,
-   [itm_dale_sword,itm_spear,itm_leather_jerkin,itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common|knows_shield_1,mercenary_face_1,mercenary_face_2],
-["orc_sentry","Orc_Sentry","orc_sentry",tf_mounted| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+#duplicate
+#["watchman","Watchman","Watchmen",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,
+#   [itm_dale_sword,itm_spear,itm_leather_jerkin,itm_leather_boots,],
+#      attr_tier_1,wp_tier_1,knows_common|knows_shield_1,mercenary_face_1,mercenary_face_2],
+["orc_sentry","Orc_Sentry","orc_sentry",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
    [itm_mordor_orc_shield_d,itm_orc_coif,itm_orc_ragwrap,itm_orc_slasher,],
-      def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_3|knows_power_strike_2|knows_ironflesh_2,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_3|knows_power_strike_2|knows_ironflesh_2,orc_face1,orc_face2],
 ["uruk_hai_sentry","Uruk-hai_Sentry","uruk_hai_sentry",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_isen_orc_shield_a,itm_isen_orc_armor_b,itm_isen_uruk_helm_a,],
       def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,mercenary_face_1,mercenary_face_2],
@@ -3258,12 +3262,12 @@ troops = [
 ["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
    [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_uruk_spear,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_1|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
-["wolf_rider_of_mirkwood","Wolf_Rider_of_Mirkwood","Wolf_Riders_of_Mirkwood",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["wolf_rider_of_mirkwood","Wolf_Rider_of_Mirkwood","Wolf_Riders_of_Mirkwood",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_wargarmored_2c,],
-      def_attrib|level(15),wp(110),knows_pathfinding_1|knows_horse_archery_2|knows_riding_4|knows_power_throw_2|knows_power_strike_2|knows_ironflesh_2,mercenary_face_1,mercenary_face_2],
-["warg_rider_of_mirkwood","Warg_Rider_of_Mirkwood","Warg_Riders_of_Mirkwood",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+      def_attrib|level(15),wp(110),knows_pathfinding_1|knows_horse_archery_2|knows_riding_4|knows_power_throw_2|knows_power_strike_2|knows_ironflesh_2,orc_face1,orc_face2],
+["warg_rider_of_mirkwood","Warg_Rider_of_Mirkwood","Warg_Riders_of_Mirkwood",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_wargarmored_1c,],
-      def_attrib|level(22),wp(135),knows_pathfinding_1|knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(22),wp(135),knows_pathfinding_1|knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,orc_face1,orc_face2],
  
  
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
@@ -3301,8 +3305,8 @@ upgrade(troops,"footman_of_lamedon","veteran_of_lamedon")
 upgrade(troops,"veteran_of_lamedon","warrior_of_lamedon")
 upgrade2(troops,"warrior_of_lamedon","champion_of_lamedon","knight_of_lamedon")
 ##PINNATH GELIN
-upgrade2(troops,"warrior_of_pinnath_gelin","veteran_warrior_of_pinnath_gelin","pinnath_gelin_bowman")
-upgrade(troops,"veteran_warrior_of_pinnath_gelin","champion_of_pinnath_gelin")
+upgrade2(troops,"pinnath_gelin_plainsman","pinnath_gelin_spearman","pinnath_gelin_bowman")
+upgrade(troops,"pinnath_gelin_spearman","warrior_of_pinnath_gelin")
 upgrade(troops,"pinnath_gelin_bowman","pinnath_gelin_archer")
 ##BLACK ROOT VALE
 upgrade2(troops,"blackroot_vale_archer","veteran_blackroot_vale_archer","footman_of_blackroot_vale")
@@ -3322,7 +3326,7 @@ upgrade(troops,"veteran_knight_of_dol_amroth","swan_knight_of_dol_amroth")
 upgrade(troops,"lothlorien_scout","lothlorien_veteran_scout")
 upgrade(troops,"lothlorien_veteran_scout","lothlorien_archer")
 upgrade(troops,"lothlorien_archer","lothlorien_veteran_archer")
-upgrade(troops,"lothlorien_veteran_archer","lothlorien_master_archer")
+upgrade2(troops,"lothlorien_veteran_archer","lothlorien_master_archer","noldorin_mounted_archer")
 upgrade2(troops,"lothlorien_master_archer","galadhrim_royal_archer","galadhrim_royal_marksman")
 upgrade2(troops,"lothlorien_infantry","lothlorien_veteran_infantry","lothlorien_warden")
 upgrade(troops,"lothlorien_veteran_infantry","lothlorien_elite_infantry")
@@ -3379,7 +3383,7 @@ upgrade(troops,"veteran_archer_of_gondor","archer_of_the_tower_guard" )
 upgrade(troops,"ranger_of_ithilien","veteran_ranger_of_ithilien" )
 upgrade(troops,"veteran_ranger_of_ithilien","master_ranger_of_ithilien" )
 #ROHAN
-upgrade2(troops,"rohan_youth","esquire_of_rohan","guardsman_of_rohan")
+upgrade2(troops,"rohan_youth","squire_of_rohan","guardsman_of_rohan")
 upgrade(troops,"guardsman_of_rohan","footman_of_rohan")
 upgrade(troops,"footman_of_rohan","veteran_footman_of_rohan")
 upgrade2(troops,"veteran_footman_of_rohan","elite_footman_of_rohan","heavy_swordsman_of_rohan")
@@ -3390,7 +3394,7 @@ upgrade(troops,"veteran_skirmisher_of_rohan","elite_skirmisher_of_rohan")
 upgrade(troops,"elite_skirmisher_of_rohan","thengel_guard_of_rohan")
 upgrade(troops,"lancer_of_rohan","elite_lancer_of_rohan")
 upgrade(troops,"elite_lancer_of_rohan","brego_guard_of_rohan")
-upgrade2(troops,"esquire_of_rohan","rider_of_rohan","skirmisher_of_rohan")
+upgrade2(troops,"squire_of_rohan","rider_of_rohan","skirmisher_of_rohan")
 upgrade2(troops,"rider_of_rohan","veteran_rider_of_rohan","lancer_of_rohan")
 upgrade(troops,"veteran_rider_of_rohan","elite_rider_of_rohan")
 upgrade(troops,"elite_rider_of_rohan","eorl_guard_of_rohan")
@@ -3435,8 +3439,8 @@ upgrade(troops,"easterling_skirmisher","easterling_veteran_skirmisher")
 upgrade(troops,"easterling_veteran_skirmisher","easterling_elite_skirmisher")
 #CORSAIRS
 upgrade2(troops,"corsair_youth","corsair_warrior","militia_of_umbar")
-upgrade2(troops,"corsair_warrior","corsair_raider","corsair_marauder")
-upgrade(troops,"corsair_raider","corsair_veteran_raider")
+upgrade2(troops,"corsair_warrior","corsair_pikeman","corsair_marauder")
+upgrade(troops,"corsair_pikeman","corsair_veteran_raider")
 upgrade(troops,"corsair_veteran_raider","corsair_night_raider")
 upgrade(troops,"militia_of_umbar","marksman_of_umbar")
 upgrade(troops,"marksman_of_umbar","veteran_marksman_of_umbar")
@@ -3453,17 +3457,32 @@ upgrade(troops,"large_orc_of_isengard","fell_orc_of_isengard")
 upgrade(troops,"large_orc_despoiler","fell_orc_despoiler")
 upgrade(troops,"wolf_rider_of_isengard","warg_rider_of_isengard")
 upgrade(troops,"warg_rider_of_isengard","white_hand_rider")
-#GULDUR ORCS
-upgrade2(troops,"orc_snaga_of_guldur","orc_of_guldur","orc_archer_of_mordor")
-upgrade2(troops,"orc_of_guldur","large_orc_of_mordor","orc_tracker_of_mordor")
+#ISENGARD URUK-HAIS
+upgrade(troops,"uruk_hai_tracker","large_uruk_hai_tracker")
+upgrade(troops,"large_uruk_hai_tracker","fighting_uruk_hai_tracker")
+upgrade2(troops,"uruk_snaga_of_isengard","uruk_hai_of_isengard","uruk_hai_tracker")
+upgrade2(troops,"uruk_hai_of_isengard","large_uruk_hai_of_isengard","uruk_hai_pikeman")
+upgrade(troops,"large_uruk_hai_of_isengard","fighting_uruk_hai_warrior")
+upgrade(troops,"fighting_uruk_hai_warrior","fighting_uruk_hai_champion")
+upgrade(troops,"uruk_hai_pikeman","fighting_uruk_hai_pikeman")
+upgrade(troops,"fighting_uruk_hai_pikeman","fighting_uruk_hai_berserker")
 #MORDOR ORCS
 upgrade2(troops,"orc_snaga_of_mordor","orc_of_mordor","orc_archer_of_mordor")
-upgrade2(troops,"orc_of_mordor","large_orc_of_mordor","orc_tracker_of_mordor")
+upgrade2(troops,"orc_of_mordor","large_orc_of_mordor","warg_rider_of_gorgoroth")
 upgrade2(troops,"large_orc_of_mordor","fell_orc_of_mordor","fell_morgul_orc")
 upgrade(troops,"orc_tracker_of_mordor","fell_orc_tracker_of_mordor")
 upgrade2(troops,"orc_archer_of_mordor","large_orc_archer_of_mordor","orc_tracker_of_mordor")
 upgrade(troops,"large_orc_archer_of_mordor","fell_orc_archer_of_mordor")
-#MORIA
+upgrade(troops,"warg_rider_of_gorgoroth","great_warg_rider_of_mordor")
+#MORDOR URUKS
+upgrade(troops,"uruk_snaga_of_mordor","uruk_of_mordor")
+upgrade2(troops,"uruk_of_mordor","large_uruk_of_mordor","uruk_slayer_of_mordor")
+upgrade(troops,"large_uruk_of_mordor","fell_uruk_of_mordor")
+upgrade(troops,"uruk_slayer_of_mordor","fell_uruk_slayer_of_mordor")
+#GULDUR ORCS
+upgrade2(troops,"orc_snaga_of_guldur","orc_of_guldur","orc_archer_of_mordor")
+upgrade2(troops,"orc_of_guldur","large_orc_of_mordor","warg_rider_of_gorgoroth")
+#MORIA ORCS
 upgrade(troops,"wolf_rider_of_moria","warg_rider_of_moria")
 upgrade(troops,"warg_rider_of_moria","bolg_clan_rider")
 upgrade2(troops,"snaga_of_moria","goblin_of_moria","archer_snaga_of_moria")
@@ -3471,11 +3490,6 @@ upgrade2(troops,"goblin_of_moria","large_goblin_of_moria","wolf_rider_of_moria")
 upgrade(troops,"archer_snaga_of_moria","large_goblin_archer_of_moria")
 upgrade(troops,"large_goblin_archer_of_moria","fell_goblin_archer_of_moria")
 upgrade(troops,"large_goblin_of_moria","fell_goblin_of_moria")
-#MORDOR URUKS
-upgrade(troops,"uruk_snaga_of_mordor","uruk_of_mordor")
-upgrade2(troops,"uruk_of_mordor","large_uruk_of_mordor","uruk_slayer_of_mordor")
-upgrade(troops,"large_uruk_of_mordor","fell_uruk_of_mordor")
-upgrade(troops,"uruk_slayer_of_mordor","fell_uruk_slayer_of_mordor")
 #GUNDABAD ORCS
 upgrade2(troops,"goblin_gundabad","orc_gundabad","goblin_bowmen_gundabad")
 upgrade2(troops,"orc_gundabad","orc_fighter_gundabad","goblin_rider_gundabad")
@@ -3484,17 +3498,8 @@ upgrade(troops,"goblin_bowmen_gundabad","keen_eyed_goblin_archer_gundabad")
 upgrade(troops,"keen_eyed_goblin_archer_gundabad","fell_goblin_archer_gundabad")
 upgrade(troops,"goblin_rider_gundabad","warg_rider_gundabad")
 upgrade(troops,"warg_rider_gundabad","goblin_north_clan_rider")
-#ISENGARD URUK-HAIS
-upgrade(troops,"uruk_hai_scout","large_uruk_hai_scout")
-upgrade(troops,"large_uruk_hai_scout","fighting_uruk_hai_scout")
-upgrade2(troops,"uruk_snaga_of_isengard","uruk_hai_of_isengard","uruk_hai_scout")
-upgrade2(troops,"uruk_hai_of_isengard","large_uruk_hai_of_isengard","uruk_hai_pikeman")
-upgrade(troops,"large_uruk_hai_of_isengard","fighting_uruk_hai_warrior")
-upgrade(troops,"fighting_uruk_hai_warrior","fighting_uruk_hai_berserker")
-upgrade(troops,"uruk_hai_pikeman","fighting_uruk_hai_pikeman")
-upgrade(troops,"fighting_uruk_hai_pikeman","fighting_uruk_hai_berserker")
 #BLACK NUMENORIANS
-upgrade(troops,"black_numenorean_acolyte","black_numenorean_warrior")
+upgrade(troops,"black_numenorean_renegade","black_numenorean_warrior")
 upgrade2(troops,"black_numenorean_warrior","black_numenorean_veteran_warrior","black_numenorean_veteran_horseman")
 upgrade2(troops,"black_numenorean_veteran_warrior","black_numenorean_champion","black_numenorean_assassin")
 upgrade(troops,"black_numenorean_veteran_horseman","black_numenorean_horsemaster")
@@ -3527,8 +3532,8 @@ upgrade(troops,"laketown_scout","laketown_bowmen")
 upgrade(troops,"laketown_bowmen","laketown_archer")
 upgrade(troops,"laketown_archer","barding_bowmen_of_esgaroth")
 #RHUN
-upgrade2(troops,"rhun_tribesman","rhun_house_scout","rhun_tribal_warrior")
-upgrade2(troops,"rhun_house_scout","rhun_horse_archer","rhun_swift_horseman")
+upgrade2(troops,"rhun_tribesman","rhun_horse_scout","rhun_tribal_warrior")
+upgrade2(troops,"rhun_horse_scout","rhun_horse_archer","rhun_swift_horseman")
 upgrade(troops,"rhun_horse_archer","rhun_veteran_horse_archer")
 upgrade(troops,"rhun_veteran_horse_archer","fell_balchoth_horse_archer")
 upgrade(troops,"rhun_swift_horseman","rhun_veteran_swift_horseman")
