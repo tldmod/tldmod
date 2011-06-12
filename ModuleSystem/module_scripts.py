@@ -4700,6 +4700,14 @@ scripts = [
        (eq, "$g_tld_training_mode", abm_mass_melee),
        (assign, ":is_mounted", 0),
      (try_end),
+     # overrides: no horses for dwarves, always horses for rohan
+     (try_begin),
+       (eq, "$g_talk_troop", "trp_trainer_dwarf"),
+       (assign, ":is_mounted", 0),
+     (else_try),
+       (eq, "$g_talk_troop", "trp_trainer_rohan"),
+       (assign, ":is_mounted", 1),
+     (try_end),
      
      # equip mount
      (try_begin),
@@ -19189,7 +19197,7 @@ scripts = [
             (is_between,":troop_no","trp_rhun_tribesman","trp_rhun_veteran_swift_horseman"),# Rhun randomized heraldry
             (store_random_in_range,":banner_mesh","mesh_circular_8mosaic1","mesh_circular_8mosaic10"),                                            
         (else_try),
-            (is_between,":troop_no","trp_harad_desert_warrior","trp_black_serpent_horse_archer"),# Harad randomized heraldry
+            (is_between,":troop_no","trp_harad_desert_warrior","trp_gold_serpent_horse_archer"),# Harad randomized heraldry
             (store_random_in_range,":banner_mesh",275,300),                                            
         #(else_try),
             #(eq,"$player_universal_banner",1),                # indicator for the ability to set player's own banner

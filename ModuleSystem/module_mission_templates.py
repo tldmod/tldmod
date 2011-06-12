@@ -2060,7 +2060,7 @@ mission_templates = [
          (try_end),
          (val_add, "$g_tld_training_wave", 1),
          (assign, reg1, "$g_tld_training_wave"),
-         (display_message, "@Reached Gauntlet wave {reg1}!"),
+         (display_message, "@Reached Gauntlet wave {reg1}!", 0x30FFC8),
          ]),
       
       # finish mission

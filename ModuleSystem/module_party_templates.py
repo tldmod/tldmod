@@ -111,7 +111,7 @@ party_templates = [
 ("mordor_scouts"    ,"Mordor Scouts"       ,icon_orc                |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_fell_orc_tracker_of_mordor,3,6),(trp_uruk_snaga_of_mordor,3,6)]),
 ("isengard_scouts"  ,"Isengard Scouts"     ,icon_orc_isengard       |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_large_uruk_hai_tracker,3,6),(trp_uruk_snaga_of_isengard,3,6)]),
 ("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run      |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_white_hand_rider,1,1),(trp_warg_rider_of_isengard,3,6),(trp_wolf_rider_of_isengard,3,6)]),
-("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman     |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_harad_archer,3,6),(trp_harad_desert_warrior,3,6)]),
+("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman     |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_harad_skirmisher,3,6),(trp_harad_desert_warrior,3,6)]),
 ("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander          |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_dunnish_raven_rider,3,6),(trp_dunnish_pikeman,3,6)]),
 ("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_corsair_veteran_marauder,3,6),(trp_corsair_veteran_raider,3,6)]),
 ("khand_scouts"     ,"Easterling Scouts"   ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_elite_skirmisher,3,6),(trp_easterling_horseman,3,6)]),
@@ -133,7 +133,7 @@ party_templates = [
 ("mordor_raiders"  ,"Mordor Raiders"    ,icon_uruk          |carries_goods(1),0,fac_mordor  ,soldier_personality,[(trp_fell_morgul_orc,1,1),(trp_orc_snaga_of_mordor,15,20),(trp_orc_archer_of_mordor,15,20)]),
 ("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1),0,fac_isengard,soldier_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_tracker,8,13),(trp_uruk_snaga_of_isengard,8,13)]),
 ("dunland_raiders" ,"Dunlending Raiders",icon_dunlander     |carries_goods(2),0,fac_dunland ,soldier_personality,[(trp_dunnish_wolf_guard,1,1),(trp_dunnish_raven_rider,15,20),(trp_dunnish_wildman,15,20)]),
-("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2),0,fac_harad   ,soldier_personality,[(trp_harad_black_serpent_infantry,1,1),(trp_harad_archer,10,20),(trp_harad_desert_warrior,11,20)]),
+("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2),0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,1,1),(trp_harad_skirmisher,10,20),(trp_harad_desert_warrior,11,20)]),
 ("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2),0,fac_khand   ,soldier_personality,[(trp_easterling_horsemaster,1,1),(trp_easterling_rider,5,15),(trp_easterling_veteran_horseman,5,15)]),
 ("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2),0,fac_umbar   ,soldier_personality,[(trp_corsair_night_raider,1,1),(trp_corsair_pikeman,4,10),(trp_corsair_veteran_raider,4,10),(trp_corsair_warrior,4,10)]),
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2),0,fac_moria   ,soldier_personality,[(trp_fell_goblin_archer_of_moria,1,1),(trp_warg_rider_of_moria,5,15),(trp_goblin_of_moria,5,15)]),
@@ -156,7 +156,7 @@ party_templates = [
 # Some used as patrols, some not  
 ("mordor_war_party"   ,"Mordor_War_Party"  ,icon_uruk_x6          |carries_goods(3),0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,2,3),(trp_olog_hai,1,2),(trp_black_numenorean_veteran_warrior,5,40),(trp_black_numenorean_warrior,15,30),(trp_large_orc_of_mordor,20,50),(trp_orc_archer_of_mordor,13,36)]),#(trp_uruk_snaga_of_mordor,5,20), ,(trp_black_numenorean_captain,1,1)
 ("isengard_war_party" ,"Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3),0,fac_isengard,soldier_personality,[(trp_fighting_uruk_hai_champion,10,30),(trp_large_uruk_hai_of_isengard,13,36),(trp_wolf_rider_of_isengard,5,30),(trp_fighting_uruk_hai_berserker,10,40),(trp_armoured_troll,1,2),(trp_urukhai_standard_bearer,1,2)]),#(trp_fighting_uruk_hai_pikeman,5,20),
-("harad_war_party"    ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3),0,fac_harad   ,soldier_personality,[(trp_harad_desert_warrior   ,20,50),(trp_harad_veteran_archer,15,30),(trp_harad_black_serpent_infantry,13,36),(trp_harad_cavalry,5,30),(trp_black_serpent_cavalry,5,40),(trp_black_serpent_horse_archer,5,20)]),
+("harad_war_party"    ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3),0,fac_harad   ,soldier_personality,[(trp_harad_desert_warrior   ,20,50),(trp_harad_archer,15,30),(trp_harad_tiger_guard,13,36),(trp_harondor_rider,5,30),(trp_fang_heavy_cavalry,5,40),(trp_gold_serpent_horse_archer,5,20)]),
 ("dunland_war_party"  ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3),0,fac_dunland ,soldier_personality,[(trp_dunnish_wildman        ,20,50),(trp_dunnish_veteran_pikeman,15,30),(trp_dunnish_warrior,13,36),(trp_dunnish_raven_rider,5,30)]),
 ("khand_war_party"    ,"Khand_War_Party"   ,icon_cataphract_x3    |carries_goods(3),0,fac_khand   ,soldier_personality,[(trp_easterling_warrior     ,20,50),(trp_easterling_axe_master,15,30),(trp_easterling_rider,13,36),(trp_khand_glaive_master,5,30),(trp_easterling_horsemaster,5,40),(trp_easterling_lance_kataphract,5,20)]),
 #("corsair_war_party"  ,"Corsair_War_Party" ,icon_umbar_corsair_x3 |carries_goods(3),0,fac_umbar   ,soldier_personality,[(trp_pike_master_of_umbar   ,20,50),(trp_corsair_veteran_raider,15,30),(trp_veteran_pikeman_of_umbar,13,36),(trp_master_marksman_of_umbar,5,30),(trp_corsair_veteran_marauder,5,40),(trp_master_assassin_of_umbar,5,20)]),
@@ -286,9 +286,9 @@ party_templates = [
 ("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_black_numenorean_renegade,1,2),(trp_orc_archer_of_mordor,2,4),(trp_uruk_of_mordor,2,3),(trp_orc_of_mordor,2,4),]),
 ("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_black_numenorean_warrior,1,2),(trp_warg_rider_of_gorgoroth,1,2),(trp_large_uruk_of_mordor,1,1),(trp_uruk_slayer_of_mordor,0,1),(trp_large_orc_archer_of_mordor,1,2),(trp_large_orc_of_mordor,1,2)]),
 #Harad (7-14, 5-10, 4-8)
-("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_harad_desert_skirmisher,1,2),(trp_far_harad_tribesman,1,2),(trp_harad_desert_warrior,5,10),]),
-("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_harad_horse_archer,1,2),(trp_harad_archer,2,4),(trp_harad_infantry,1,2),(trp_far_harad_tribesman,1,2),]),
-("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_harad_veteran_horse_archer,1,2),(trp_harad_veteran_cavalry,1,2),(trp_far_harad_champion,1,2),(trp_harad_swordsman,1,1),(trp_harad_veteran_infantry,0,1),]),
+("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_harondor_scout,1,2),(trp_far_harad_tribesman,1,2),(trp_harad_desert_warrior,5,10),]),
+("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_harad_horse_archer,1,2),(trp_harad_skirmisher,2,4),(trp_harad_infantry,1,2),(trp_far_harad_tribesman,1,2),]),
+("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_black_snake_horse_archer,1,2),(trp_harondor_light_cavalry,1,2),(trp_far_harad_champion,1,2),(trp_harad_swordsman,1,1),(trp_harad_veteran_infantry,0,1),]),
 #Rhun
 ("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_rhun_light_horseman,1,2),(trp_rhun_horse_scout,1,2),(trp_rhun_tribesman,5,10),]),
 ("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_rhun_horse_archer,2,4),(trp_rhun_light_cavalry,1,2),(trp_rhun_tribal_infantry,2,4),]),

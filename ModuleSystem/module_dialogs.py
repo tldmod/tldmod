@@ -9091,9 +9091,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    ]],
 
  [anyone|plyr,"trainer_choose_mode_player",[], "Single combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_training)]],   
- [anyone|plyr,"trainer_choose_mode_player",[], "Team combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_team)]],   
- [anyone|plyr,"trainer_choose_mode_player",[], "Gauntlet.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_gauntlet),(assign, "$g_tld_training_opponents", 12)]],   
- [anyone|plyr,"trainer_choose_mode_player",[], "Mass melee.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_mass_melee),(assign, "$g_tld_training_opponents", 12)]],
+ [anyone|plyr,"trainer_choose_mode_player",[(neq, "$g_talk_troop", "trp_trainer_dwarf")],
+   "Team combat.", "trainer_choose_opponents",[(assign, "$g_tld_training_mode", abm_team)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[(neq, "$g_talk_troop", "trp_trainer_dwarf")], "Gauntlet.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_gauntlet),(assign, "$g_tld_training_opponents", 12)]],   
+ [anyone|plyr,"trainer_choose_mode_player",[(neq, "$g_talk_troop", "trp_trainer_dwarf")], "Mass melee.", "trainer_choose_weapon",[(assign, "$g_tld_training_mode", abm_mass_melee),(assign, "$g_tld_training_opponents", 12)]],
  [anyone|plyr,"trainer_choose_mode_player",[], "None of that, I've changed my mind.", "trainer_pretalk",[]],
  
 # Number of opponents
@@ -10942,204 +10943,204 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #############################################################################
 #### ARENA MASTERS
 #############################################################################
-  [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
-                     (assign, "$arena_reward_asked", 0), #set some variables.
-                     (assign, "$arena_tournaments_asked", 0),
-                     (eq,1,0),
-                     ],
-   ".", "arena_intro_1",[]],
-  [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
-                     (eq,"$arena_master_first_talk", 0),
-                     ],
-   "Good day friend. If you came to watch the tournaments you came in vain. There won't be a tournament here anytime soon.", "arena_intro_1",[(assign,"$arena_master_first_talk", 1)]],
-  [anyone|plyr,"arena_intro_1", [], "Tournaments? So they hold the tournaments here...", "arena_intro_2",[]],
-  [anyone,"arena_intro_2", [], "Yes. You should see this place during one of the tournament fights.\
- Everyone from the town and nearby villages comes here. The crowd becomes mad with excitement.\
- Anyway, as I said, there won't be an event here soon, so there isn't much to see.\
- Except, there is an official duel every now and then, and  of course we have melee fights almost every day.", "arena_intro_3",[]],
-  [anyone|plyr,"arena_intro_3", [], "Tell me about the melee fights.", "arena_training_melee_intro",[]],
-  [anyone,"arena_training_melee_intro", [], "The fighters and knights get bored waiting for the next tournament,\
- so they have invented the training melee. It is a simple idea really.\
- Fighters jump into the arena with a weapon. There are no rules, no teams.\
- Everyone beats at each other until there is only fighter left standing.\
- Sounds like fun, eh?", "arena_training_melee_intro_2",[]],
-  [anyone|plyr,"arena_training_melee_intro_2", [(eq, "$arena_reward_asked", 0)], "Is there a reward?", "arena_training_melee_intro_reward",[(assign, "$arena_reward_asked", 1)]],
-  [anyone,"arena_training_melee_intro_reward", [(assign, reg1, arena_tier1_opponents_to_beat),(assign, reg11, arena_tier1_prize),
-      (assign, reg2, arena_tier2_opponents_to_beat),(assign, reg12, arena_tier2_prize),
-      (assign, reg3, arena_tier3_opponents_to_beat),(assign, reg13, arena_tier3_prize),
-      (assign, reg4, arena_tier4_opponents_to_beat),(assign, reg14, arena_tier4_prize),
-      (assign, reg15, arena_grand_prize)
-    ], "There is, actually. Some of the wealthy townsmen offer prizes for those fighters who show great skill in the fights.\
- If you can beat {reg1} opponents before going down, you'll earn {reg11} denars. You'll get {reg12} denars for striking down at least {reg2} opponents,\
- {reg13} denars if you can defeat {reg3} opponents, and {reg14} denars if you can survive long enough to beat {reg4} opponents.\
- If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_training_melee_intro_2",[(assign, "$arena_tournaments_asked", 1),]],
-  [anyone,"arena_training_melee_explain_reward", [
-      (assign, reg1, arena_tier1_opponents_to_beat),(assign, reg11, arena_tier1_prize),
-      (assign, reg2, arena_tier2_opponents_to_beat),(assign, reg12, arena_tier2_prize),
-      (assign, reg3, arena_tier3_opponents_to_beat),(assign, reg13, arena_tier3_prize),
-      (assign, reg4, arena_tier4_opponents_to_beat),(assign, reg14, arena_tier4_prize),
-      (assign, reg15, arena_grand_prize)
-      ], "Some of the wealthy townsmen offer prizes for those fighters who show great skill in the fights.\
- If you can beat {reg1} opponents before going down, you'll earn {reg11} denars. You'll get {reg12} denars for striking down at least {reg2} opponents,\
- {reg13} denars if you can defeat {reg3} opponents, and {reg14} denars if you can survive long enough to beat {reg4} opponents.\
- If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_master_melee_pretalk",[]],
-  [anyone|plyr,"arena_training_melee_intro_2", [], "Can I join too?", "arena_training_melee_intro_3",[]],
-  [anyone,"arena_training_melee_intro_3", [], "Ha ha. You would have to be out of your mind not to. Of course. The melee fights are open to all.\
- Actually there is going to be a fight soon. You can go and hop in if you want to.", "arena_master_melee_talk",[]],
+  # [anyone ,"start", [(store_conversation_troop,reg(1)),
+                     # (is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     # (assign, "$arena_reward_asked", 0), #set some variables.
+                     # (assign, "$arena_tournaments_asked", 0),
+                     # (eq,1,0),
+                     # ],
+   # ".", "arena_intro_1",[]],
+  # [anyone ,"start", [(store_conversation_troop,reg(1)),
+                     # (is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     # (eq,"$arena_master_first_talk", 0),
+                     # ],
+   # "Good day friend. If you came to watch the tournaments you came in vain. There won't be a tournament here anytime soon.", "arena_intro_1",[(assign,"$arena_master_first_talk", 1)]],
+  # [anyone|plyr,"arena_intro_1", [], "Tournaments? So they hold the tournaments here...", "arena_intro_2",[]],
+  # [anyone,"arena_intro_2", [], "Yes. You should see this place during one of the tournament fights.\
+ # Everyone from the town and nearby villages comes here. The crowd becomes mad with excitement.\
+ # Anyway, as I said, there won't be an event here soon, so there isn't much to see.\
+ # Except, there is an official duel every now and then, and  of course we have melee fights almost every day.", "arena_intro_3",[]],
+  # [anyone|plyr,"arena_intro_3", [], "Tell me about the melee fights.", "arena_training_melee_intro",[]],
+  # [anyone,"arena_training_melee_intro", [], "The fighters and knights get bored waiting for the next tournament,\
+ # so they have invented the training melee. It is a simple idea really.\
+ # Fighters jump into the arena with a weapon. There are no rules, no teams.\
+ # Everyone beats at each other until there is only fighter left standing.\
+ # Sounds like fun, eh?", "arena_training_melee_intro_2",[]],
+  # [anyone|plyr,"arena_training_melee_intro_2", [(eq, "$arena_reward_asked", 0)], "Is there a reward?", "arena_training_melee_intro_reward",[(assign, "$arena_reward_asked", 1)]],
+  # [anyone,"arena_training_melee_intro_reward", [(assign, reg1, arena_tier1_opponents_to_beat),(assign, reg11, arena_tier1_prize),
+      # (assign, reg2, arena_tier2_opponents_to_beat),(assign, reg12, arena_tier2_prize),
+      # (assign, reg3, arena_tier3_opponents_to_beat),(assign, reg13, arena_tier3_prize),
+      # (assign, reg4, arena_tier4_opponents_to_beat),(assign, reg14, arena_tier4_prize),
+      # (assign, reg15, arena_grand_prize)
+    # ], "There is, actually. Some of the wealthy townsmen offer prizes for those fighters who show great skill in the fights.\
+ # If you can beat {reg1} opponents before going down, you'll earn {reg11} denars. You'll get {reg12} denars for striking down at least {reg2} opponents,\
+ # {reg13} denars if you can defeat {reg3} opponents, and {reg14} denars if you can survive long enough to beat {reg4} opponents.\
+ # If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_training_melee_intro_2",[(assign, "$arena_tournaments_asked", 1),]],
+  # [anyone,"arena_training_melee_explain_reward", [
+      # (assign, reg1, arena_tier1_opponents_to_beat),(assign, reg11, arena_tier1_prize),
+      # (assign, reg2, arena_tier2_opponents_to_beat),(assign, reg12, arena_tier2_prize),
+      # (assign, reg3, arena_tier3_opponents_to_beat),(assign, reg13, arena_tier3_prize),
+      # (assign, reg4, arena_tier4_opponents_to_beat),(assign, reg14, arena_tier4_prize),
+      # (assign, reg15, arena_grand_prize)
+      # ], "Some of the wealthy townsmen offer prizes for those fighters who show great skill in the fights.\
+ # If you can beat {reg1} opponents before going down, you'll earn {reg11} denars. You'll get {reg12} denars for striking down at least {reg2} opponents,\
+ # {reg13} denars if you can defeat {reg3} opponents, and {reg14} denars if you can survive long enough to beat {reg4} opponents.\
+ # If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_master_melee_pretalk",[]],
+  # [anyone|plyr,"arena_training_melee_intro_2", [], "Can I join too?", "arena_training_melee_intro_3",[]],
+  # [anyone,"arena_training_melee_intro_3", [], "Ha ha. You would have to be out of your mind not to. Of course. The melee fights are open to all.\
+ # Actually there is going to be a fight soon. You can go and hop in if you want to.", "arena_master_melee_talk",[]],
 
 
-  [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
-                     (eq,"$g_talk_troop_met", 0),
-                     ],
-   "Hello. You seem to be new here. Care to share your name?", "arena_master_intro_1",[]],
-  [anyone|plyr,"arena_master_intro_1", [], "I am {playername}.", "arena_master_intro_2",[]],
-  [anyone,"arena_master_intro_2", [(store_encountered_party,reg(2)),(str_store_party_name,1,reg(2))],
-   "Well met {playername}. I am the master of the tournaments here at {s1}. Talk to me if you want to join the fights.", "arena_master_pre_talk",[]],
+  # [anyone ,"start", [(store_conversation_troop,reg(1)),
+                     # (is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     # (eq,"$g_talk_troop_met", 0),
+                     # ],
+   # "Hello. You seem to be new here. Care to share your name?", "arena_master_intro_1",[]],
+  # [anyone|plyr,"arena_master_intro_1", [], "I am {playername}.", "arena_master_intro_2",[]],
+  # [anyone,"arena_master_intro_2", [(store_encountered_party,reg(2)),(str_store_party_name,1,reg(2))],
+   # "Well met {playername}. I am the master of the tournaments here at {s1}. Talk to me if you want to join the fights.", "arena_master_pre_talk",[]],
 
 
-  [anyone|auto_proceed ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),
-                     (eq, "$last_training_fight_town", "$current_town"),
-                     (store_current_hours,":cur_hours"),
-                     (val_add, ":cur_hours", -4),
-                     (lt, ":cur_hours", "$training_fight_time")],
-   ".", "arena_master_fight_result",[(assign, "$arena_reward_asked", 0)]],
+  # [anyone|auto_proceed ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     # (eq, "$last_training_fight_town", "$current_town"),
+                     # (store_current_hours,":cur_hours"),
+                     # (val_add, ":cur_hours", -4),
+                     # (lt, ":cur_hours", "$training_fight_time")],
+   # ".", "arena_master_fight_result",[(assign, "$arena_reward_asked", 0)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (eq, "$g_arena_training_kills", 0)
-     ],
-   "Ha-ha, that's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (eq, "$g_arena_training_kills", 0)
+     # ],
+   # "Ha-ha, that's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (lt, "$g_arena_training_kills", arena_tier1_opponents_to_beat),
-     (assign, reg8, "$g_arena_training_kills")
-     ],
-   "Hey, you managed to take down {reg8} opponents. Not bad. But that won't bring you any prize money.\
- Now, if I were you, I would go back there and show everyone what I can do...", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (lt, "$g_arena_training_kills", arena_tier1_opponents_to_beat),
+     # (assign, reg8, "$g_arena_training_kills")
+     # ],
+   # "Hey, you managed to take down {reg8} opponents. Not bad. But that won't bring you any prize money.\
+ # Now, if I were you, I would go back there and show everyone what I can do...", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (lt, "$g_arena_training_kills", arena_tier2_opponents_to_beat),
-     (assign, reg8, "$g_arena_training_kills"),
-     (assign, reg10, arena_tier1_prize),
-     ],
-   "You put up quite a good fight there. Good moves. You definitely show promise.\
- And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",[
-     (call_script, "script_troop_add_gold", "trp_player",arena_tier1_prize),
-     (add_xp_to_troop,5,"trp_player"),
-     (assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (lt, "$g_arena_training_kills", arena_tier2_opponents_to_beat),
+     # (assign, reg8, "$g_arena_training_kills"),
+     # (assign, reg10, arena_tier1_prize),
+     # ],
+   # "You put up quite a good fight there. Good moves. You definitely show promise.\
+ # And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",[
+     # (call_script, "script_troop_add_gold", "trp_player",arena_tier1_prize),
+     # (add_xp_to_troop,5,"trp_player"),
+     # (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (lt, "$g_arena_training_kills", arena_tier3_opponents_to_beat),
-     (assign, reg8, "$g_arena_training_kills"),
-     (assign, reg10, arena_tier2_prize),
-     (assign, reg12, arena_tier2_opponents_to_beat),
-     ],
-   "That was a good fight you put up there. You managed to take down no less than {reg8} opponents.\
- And of course, you earned a prize money of {reg10} denars.", "arena_master_pre_talk",[
-     (call_script, "script_troop_add_gold", "trp_player",arena_tier2_prize),
-     (add_xp_to_troop,10,"trp_player"),
-     (assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (lt, "$g_arena_training_kills", arena_tier3_opponents_to_beat),
+     # (assign, reg8, "$g_arena_training_kills"),
+     # (assign, reg10, arena_tier2_prize),
+     # (assign, reg12, arena_tier2_opponents_to_beat),
+     # ],
+   # "That was a good fight you put up there. You managed to take down no less than {reg8} opponents.\
+ # And of course, you earned a prize money of {reg10} denars.", "arena_master_pre_talk",[
+     # (call_script, "script_troop_add_gold", "trp_player",arena_tier2_prize),
+     # (add_xp_to_troop,10,"trp_player"),
+     # (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (lt, "$g_arena_training_kills", arena_tier4_opponents_to_beat),
-     (assign, reg8, "$g_arena_training_kills"),
-     (assign, reg10, arena_tier3_prize)
-     ],
-   "Your performance was amazing! You are without doubt a very skilled fighter.\
- Not everyone can knock down {reg8} people in the fights. Of course you deserve a prize with that performance: {reg10} denars. Nice, eh?", "arena_master_pre_talk",[
-     (call_script, "script_troop_add_gold", "trp_player",arena_tier3_prize),
-     (add_xp_to_troop,10,"trp_player"),
-     (assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (lt, "$g_arena_training_kills", arena_tier4_opponents_to_beat),
+     # (assign, reg8, "$g_arena_training_kills"),
+     # (assign, reg10, arena_tier3_prize)
+     # ],
+   # "Your performance was amazing! You are without doubt a very skilled fighter.\
+ # Not everyone can knock down {reg8} people in the fights. Of course you deserve a prize with that performance: {reg10} denars. Nice, eh?", "arena_master_pre_talk",[
+     # (call_script, "script_troop_add_gold", "trp_player",arena_tier3_prize),
+     # (add_xp_to_troop,10,"trp_player"),
+     # (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
-   [
-     (eq, "$g_arena_training_won", 0),
-     (assign, reg8, "$g_arena_training_kills"),
-     (assign, reg10, arena_tier4_prize),
-     ],
-   "That was damned good fighting, {playername}. You have very good moves, excellent tactics.\
- And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",
-   [
-     (call_script, "script_troop_add_gold", "trp_player",arena_tier4_prize),
-     (add_xp_to_troop,10,"trp_player"),
-     (assign, "$last_training_fight_town", -1),
-     ]],
+  # [anyone ,"arena_master_fight_result",
+   # [
+     # (eq, "$g_arena_training_won", 0),
+     # (assign, reg8, "$g_arena_training_kills"),
+     # (assign, reg10, arena_tier4_prize),
+     # ],
+   # "That was damned good fighting, {playername}. You have very good moves, excellent tactics.\
+ # And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",
+   # [
+     # (call_script, "script_troop_add_gold", "trp_player",arena_tier4_prize),
+     # (add_xp_to_troop,10,"trp_player"),
+     # (assign, "$last_training_fight_town", -1),
+     # ]],
 
-  [anyone ,"arena_master_fight_result", [(assign, reg10, arena_grand_prize)],
-   "Congratulations champion! Your fight there was something to remember! You managed to be the last fighter standing beating down everyone else. And of course you won the grand prize of the fights: {reg10} denars.", "arena_master_pre_talk",[
-     (call_script, "script_troop_add_gold", "trp_player",arena_grand_prize),
-     (add_xp_to_troop,200,"trp_player"),
-     (assign, "$last_training_fight_town", -1)]],
+  # [anyone ,"arena_master_fight_result", [(assign, reg10, arena_grand_prize)],
+   # "Congratulations champion! Your fight there was something to remember! You managed to be the last fighter standing beating down everyone else. And of course you won the grand prize of the fights: {reg10} denars.", "arena_master_pre_talk",[
+     # (call_script, "script_troop_add_gold", "trp_player",arena_grand_prize),
+     # (add_xp_to_troop,200,"trp_player"),
+     # (assign, "$last_training_fight_town", -1)]],
 
 
-  [anyone ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end)],
-   "Hello {playername}. Good to see you again.", "arena_master_pre_talk",[(assign, "$arena_reward_asked", 0)]],
+  # [anyone ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end)],
+   # "Hello {playername}. Good to see you again.", "arena_master_pre_talk",[(assign, "$arena_reward_asked", 0)]],
   
 
-  [anyone,"arena_master_pre_talk", [], "What would you like to do?", "arena_master_talk",[]],
+  # [anyone,"arena_master_pre_talk", [], "What would you like to do?", "arena_master_talk",[]],
 
 
-#  [anyone|plyr,"arena_master_talk", [], "About the arena fights...", "arena_master_melee",[]],
-  [anyone|plyr,"arena_master_talk", [], "About the melee fights...", "arena_master_melee_pretalk",[]],
-  [anyone|plyr,"arena_master_talk", [(eq, "$arena_tournaments_asked", 0)], "Will there be a tournament in nearby towns soon?", "arena_master_ask_tournaments",[(assign, "$arena_tournaments_asked", 1)]],
-  [anyone|plyr,"arena_master_talk", [], "I need to leave now. Good bye.", "close_window",[]],
+# #  [anyone|plyr,"arena_master_talk", [], "About the arena fights...", "arena_master_melee",[]],
+  # [anyone|plyr,"arena_master_talk", [], "About the melee fights...", "arena_master_melee_pretalk",[]],
+  # [anyone|plyr,"arena_master_talk", [(eq, "$arena_tournaments_asked", 0)], "Will there be a tournament in nearby towns soon?", "arena_master_ask_tournaments",[(assign, "$arena_tournaments_asked", 1)]],
+  # [anyone|plyr,"arena_master_talk", [], "I need to leave now. Good bye.", "close_window",[]],
 
-  [anyone,"arena_master_ask_tournaments", [], "{reg2?There won't be any tournaments any time soon.:{reg1?Tournaments are:A tournament is} going to be held at {s15}.}", "arena_master_talk",
-   [
-       (assign, ":num_tournaments", 0),
-       (try_for_range_backwards, ":town_no", towns_begin, towns_end),
-         (party_slot_ge, ":town_no", slot_town_has_tournament, 1),
-         (val_add, ":num_tournaments", 1),
-         (try_begin),
-           (eq, ":num_tournaments", 1),
-           (str_store_party_name, s15, ":town_no"),
-         (else_try),
-           (str_store_party_name, s16, ":town_no"),
-           (eq, ":num_tournaments", 2),
-           (str_store_string, s15, "@{s16} and {s15}"),
-         (else_try),
-           (str_store_string, s15, "@{s16}, {s15}"),
-         (try_end),
-       (try_end),
-       (try_begin),
-         (eq, ":num_tournaments", 0),
-         (assign, reg2, 1),
-       (else_try),
-         (assign, reg2, 0),
-         (store_sub, reg1, ":num_tournaments", 1),
-       (try_end),
-   ]],
+  # [anyone,"arena_master_ask_tournaments", [], "{reg2?There won't be any tournaments any time soon.:{reg1?Tournaments are:A tournament is} going to be held at {s15}.}", "arena_master_talk",
+   # [
+       # (assign, ":num_tournaments", 0),
+       # (try_for_range_backwards, ":town_no", towns_begin, towns_end),
+         # (party_slot_ge, ":town_no", slot_town_has_tournament, 1),
+         # (val_add, ":num_tournaments", 1),
+         # (try_begin),
+           # (eq, ":num_tournaments", 1),
+           # (str_store_party_name, s15, ":town_no"),
+         # (else_try),
+           # (str_store_party_name, s16, ":town_no"),
+           # (eq, ":num_tournaments", 2),
+           # (str_store_string, s15, "@{s16} and {s15}"),
+         # (else_try),
+           # (str_store_string, s15, "@{s16}, {s15}"),
+         # (try_end),
+       # (try_end),
+       # (try_begin),
+         # (eq, ":num_tournaments", 0),
+         # (assign, reg2, 1),
+       # (else_try),
+         # (assign, reg2, 0),
+         # (store_sub, reg1, ":num_tournaments", 1),
+       # (try_end),
+   # ]],
 
-  [anyone,"arena_master_melee_pretalk", [], "There will be a fight here soon. You can go and jump in if you like.", "arena_master_melee_talk",[]],
-  [anyone|plyr,"arena_master_melee_talk", [], "Good. That's what I am going to do.", "close_window",
-   [
-    (assign, "$last_training_fight_town", "$current_town"),
-    (store_current_hours,"$training_fight_time"),
-    (assign, "$g_mt_mode", abm_training),
-    (party_get_slot, ":scene","$current_town",slot_town_arena),
-    (modify_visitors_at_site,":scene"),
-    (reset_visitors),
-    (store_random_in_range, "$g_player_entry_point", 32, 40),
-    (set_visitor, "$g_player_entry_point", "trp_player"),
-    (set_jump_mission,"mt_arena_melee_fight"),
-    (jump_to_scene, ":scene"),
-    ]],
-  [anyone|plyr,"arena_master_melee_talk", [], "Thanks. But I will give my bruises some time to heal.", "arena_master_melee_reject",[]],
-  [anyone,"arena_master_melee_reject", [], "Good {man/girl}. That's clever of you.", "arena_master_pre_talk",[]],
+  # [anyone,"arena_master_melee_pretalk", [], "There will be a fight here soon. You can go and jump in if you like.", "arena_master_melee_talk",[]],
+  # [anyone|plyr,"arena_master_melee_talk", [], "Good. That's what I am going to do.", "close_window",
+   # [
+    # (assign, "$last_training_fight_town", "$current_town"),
+    # (store_current_hours,"$training_fight_time"),
+    # (assign, "$g_mt_mode", abm_training),
+    # (party_get_slot, ":scene","$current_town",slot_town_arena),
+    # (modify_visitors_at_site,":scene"),
+    # (reset_visitors),
+    # (store_random_in_range, "$g_player_entry_point", 32, 40),
+    # (set_visitor, "$g_player_entry_point", "trp_player"),
+    # (set_jump_mission,"mt_arena_melee_fight"),
+    # (jump_to_scene, ":scene"),
+    # ]],
+  # [anyone|plyr,"arena_master_melee_talk", [], "Thanks. But I will give my bruises some time to heal.", "arena_master_melee_reject",[]],
+  # [anyone,"arena_master_melee_reject", [], "Good {man/girl}. That's clever of you.", "arena_master_pre_talk",[]],
 
-  [anyone|plyr,"arena_master_melee_talk", [(eq, "$arena_reward_asked", 0)], "Actually, can you tell me about the rewards again?", "arena_training_melee_explain_reward",[(assign, "$arena_reward_asked", 1)]],
+  # [anyone|plyr,"arena_master_melee_talk", [(eq, "$arena_reward_asked", 0)], "Actually, can you tell me about the rewards again?", "arena_training_melee_explain_reward",[(assign, "$arena_reward_asked", 1)]],
 
 
 ######################################################################################

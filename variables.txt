@@ -84,11 +84,6 @@ mayor_info_lord_told
 escort_merchant_caravan_mode
 qst_troublesome_bandits_eliminated
 qst_troublesome_bandits_eliminated_by_player
-arena_reward_asked
-arena_tournaments_asked
-arena_master_first_talk
-last_training_fight_town
-training_fight_time
 g_mt_mode
 g_player_entry_point
 bandit_tribute
@@ -199,8 +194,6 @@ attacker_team_2
 belfry_positioned
 g_arena_training_num_agents_spawned
 g_arena_training_max_opponents
-g_arena_training_kills
-g_arena_training_won
 g_arena_training_next_spawn_time
 tutorial_1_state
 tutorial_1_msg_1_displayed

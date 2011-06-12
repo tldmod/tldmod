@@ -159,13 +159,13 @@ swadian_face_older_2   = 0x0000000fc00062c76ddcdf7feefbffff00000000001efdbc00000
 vaegir_face_younger_1  = 0x0000000000000001124000000020000000000000001c00800000000000000000
 vaegir_face_young_1    = 0x0000000400000001124000000020000000000000001c00800000000000000000
 vaegir_face_middle_1   = 0x0000000800000001124000000020000000000000001c00800000000000000000
-vaegir_face_old_1      = 0x0000000d00000001124000000020000000000000001c00800000000000000000
+vaegir_face_old_1      = 0x0000000d00000001124000000020000000000000001c00800000000000000000 #retard face
 vaegir_face_older_1    = 0x0000000fc0000001124000000020000000000000001c00800000000000000000
  
 vaegir_face_younger_2  = 0x000000003f00230c4deeffffffffffff00000000001efff90000000000000000
 vaegir_face_young_2    = 0x00000003bf00230c4deeffffffffffff00000000001efff90000000000000000
 vaegir_face_middle_2   = 0x00000007bf00230c4deeffffffffffff00000000001efff90000000000000000
-vaegir_face_old_2      = 0x0000000cbf00230c4deeffffffffffff00000000001efff90000000000000000
+vaegir_face_old_2      = 0x0000000cbf00230c4deeffffffffffff00000000001efff90000000000000000 #mongol face
 vaegir_face_older_2    = 0x0000000ff100230c4deeffffffffffff00000000001efff90000000000000000
  
 khergit_face_younger_1 = 0x0000000009003109207000000000000000000000001c80470000000000000000
@@ -241,15 +241,22 @@ gondor_face2           = 0x00000009bf00200942ec7096e3a9b69c00000000001d473300000
 gondor_face3           = 0x000000002400200142ec7096e3a9b49c00000000001d47330000000000000000
 gondor_younger_1       = 0x00000004ef00200f070c6a374b40452c00000000001cc6690000000000000000 
 gondor_older_1         = 0x000000072e002585209c6e399260532c00000000001cd6720000000000000000 
- 
-rohan_face1            = 0x000000078c00024114ec6dc59280d4ec00000000001d52780000000000000000
-rohan_face2            = 0x00000009c000030704ed6ca663a9d6db00000000001d47330000000000000000
+
+#MV: default Rohan face (blond, beard+moustache)
+rohan_face_younger_0   = 0x000000000000004136db6db6db6db6db00000000001db6db0000000000000000
+rohan_face_young_0     = 0x00000003c000004136db6db6db6db6db00000000001db6db0000000000000000
+rohan_face_middle_0    = 0x00000007c000004136db6db6db6db6db00000000001db6db0000000000000000
+rohan_face_old_0       = 0x0000000bc000004136db6db6db6db6db00000000001db6db0000000000000000
+rohan_face_older_0     = 0x0000000fc000004136db6db6db6db6db00000000001db6db0000000000000000
+
+rohan_face1            = 0x000000000000020114ec6dc59280d4ec00000000001d47330000000000000000
+rohan_face2            = 0x00000009c000034114ed6ca663a9d6db00000000001d52780000000000000000
 rohan_face3            = 0x000000000000218744dc6ca463a9d6db00000000001d47250000000000000000
 rohan_middle_1         = 0x00000009c000030104ed6ca663a9d6db00000000001d47330000000000000000
 rohan_middle_2         = 0x00000003a100134704ed6ca663a9d6db00000000001d47330000000000000000
-rohan_older_1          = 0x000000078c00024114ec6dc59280d4ec00000000001d52780000000000000000
-rohan_older_2          = 0x000000058000130618a464d76384f72e00000000001d50b80000000000000000
-rohan_older_1          = 0x0000000cc9002003140000000000000000000000001c80400000000000000000
+rohan_old_1            = 0x000000078c00024114ec6dc59280d4ec00000000001d52780000000000000000
+rohan_old_2            = 0x000000058000130618a464d76384f72e00000000001d50b80000000000000000
+rohan_older_1          = 0x0000000cc9002003140000000000000000000000001c80400000000000000000 #bad facecode?
 rohan_older_2          = 0x0000000400000001124000000020000000000000001c00800000000000000000
 beorn_face1 = rohan_face1
 beorn_face2 = rohan_face2
@@ -1126,44 +1133,44 @@ troops = [
 ["harad_veteran_infantry","Harad_Spearman","Harad_Spearmen",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_scale_greaves,itm_harad_scale,itm_harad_finhelm,itm_harad_long_spear,itm_harad_long_shield_d,itm_harad_long_shield_e,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
-["harad_black_serpent_infantry","Tiger_Guard","Tiger_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tfg_gloves,0,0,fac_harad,
+["harad_tiger_guard","Tiger_Guard","Tiger_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tfg_gloves,0,0,fac_harad,
    [itm_harad_scale_greaves,itm_leather_gloves,itm_harad_tiger_scale,itm_lion_helm,itm_harad_long_spear,itm_harad_long_shield_b,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_4|knows_power_strike_4|knows_ironflesh_3,haradrim_face_1,haradrim_face_2],
 ["harad_swordsman","Harad_Swordsman","Harad_Swordsmen",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_scale_greaves,itm_harad_scale,itm_harad_finhelm,itm_harad_heavy_sword,itm_harad_khopesh,itm_harad_long_shield_d,itm_harad_long_shield_e,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
-["harad_court_eunich","Lion_Guard","Lion_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
+["harad_lion_guard","Lion_Guard","Lion_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_scale_greaves,itm_leather_gloves,itm_harad_lion_scale,itm_lion_helm,itm_harad_heavy_sword,itm_harad_khopesh,itm_harad_long_shield_b,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_6,haradrim_face_1,haradrim_face_2],
-["harad_archer","Harad_Skirmisher","Harad_Skirmishers",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
+["harad_skirmisher","Harad_Skirmisher","Harad_Skirmishers",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_desert_boots,itm_harad_skirmisher,itm_harad_heavy_inf_helm,itm_harad_bow,itm_harad_arrows,itm_harad_dagger,],
       attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_draw_2|knows_ironflesh_1|knows_power_throw_2,haradrim_face_1,haradrim_face_2],
-["harad_veteran_archer","Harad_Archer","Harad_Archers",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
+["harad_archer","Harad_Archer","Harad_Archers",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_harad_archer,itm_harad_heavy_inf_helm,itm_harad_bow,itm_harad_arrows,itm_skirmisher_sword,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_draw_3|knows_ironflesh_1,haradrim_face_1,haradrim_face_2],
-["harad_master_archer","Eagle_Guard","Eagle_Guards",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
+["harad_eagle_guard","Eagle_Guard","Eagle_Guards",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_leather_gloves,itm_black_snake_armor,itm_harad_eaglehelm,itm_lg_bow,itm_harad_arrows,itm_eagle_guard_spear,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_2|knows_power_draw_4|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
 ###HARONDOR#####
-["harad_desert_skirmisher","Harondor_Scout","Harondor_Scouts",tf_harad| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_harad,
+["harondor_scout","Harondor_Scout","Harondor_Scouts",tf_harad| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_desert_boots,itm_harad_padded,itm_horandor_a,itm_harad_shield_a,itm_saddle_horse,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_1,haradrim_face_1,haradrim_face_2],
-["harad_cavalry","Harondor_Rider","Harondor_Riders",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+["harondor_rider","Harondor_Rider","Harondor_Riders",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_harad_hauberk,itm_harad_cav_helm_b,itm_horandor_a,itm_harad_shield_b,itm_harad_horse,itm_harad_shield_c,],
       attr_tier_3,wp_tier_3,knows_common|knows_riding_2|knows_shield_2|knows_power_strike_2,haradrim_face_1,haradrim_face_2],
-["harad_veteran_cavalry","Harondor_Light_Cavalry","Harondor_Light_Cavalry",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+["harondor_light_cavalry","Harondor_Light_Cavalry","Harondor_Light_Cavalry",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_lamellar_greaves,itm_harad_lamellar,itm_harad_wavy_helm,itm_horandor_a,itm_harad_shield_b,itm_harad_warhorse,itm_harad_shield_c,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
-["black_serpent_cavalry","Fang_Heavy_Cavalry","Fang_Heavy_Cavalry",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+["fang_heavy_cavalry","Fang_Heavy_Cavalry","Fang_Heavy_Cavalry",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_lamellar_greaves,itm_leather_gloves,itm_harad_heavy,itm_harad_dragon_helm,itm_harad_long_spear,itm_harad_yellow_shield,itm_harad_warhorse,],
       attr_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_3|knows_ironflesh_3,haradrim_face_1,haradrim_face_2],
 ["harad_horse_archer","Harad_Horse_Archer","Harad_Horse_Archers",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_desert_boots,itm_harad_skirmisher,itm_harad_cav_helm_a,itm_harad_bow,itm_harad_arrows,itm_harad_sabre,itm_saddle_horse,],
       attr_tier_3,wp_tier_3,knows_common|knows_horse_archery_2|knows_riding_3|knows_shield_1|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_1,haradrim_face_1,haradrim_face_2],
-["harad_veteran_horse_archer","Black_Snake_Horse_Archer","Black_Snake_Horse_Archers",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+["black_snake_horse_archer","Black_Snake_Horse_Archer","Black_Snake_Horse_Archers",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_harad_archer,itm_harad_heavy_inf_helm,itm_harad_bow,itm_harad_arrows,itm_harad_sabre,itm_harad_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,haradrim_face_1,haradrim_face_2],
-["black_serpent_horse_archer","Gold_Serpent_Horse_Archer","Gold_Serpent_Horse_Archers",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+["gold_serpent_horse_archer","Gold_Serpent_Horse_Archer","Gold_Serpent_Horse_Archers",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_black_snake_armor,itm_black_snake_helm,itm_harad_bow,itm_harad_arrows,itm_black_snake_sword,itm_harad_warhorse,],
       attr_tier_5,wp_tier_5,knows_common|knows_horse_archery_5|knows_riding_5|knows_power_strike_2|knows_ironflesh_3,haradrim_face_1,haradrim_face_2],
 #FAR HARAD
@@ -2128,33 +2135,48 @@ troops = [
 ["farmer_from_bandit_village","Farmer","Farmers",tfg_armor,0,0,fac_commoners,
    [],
       attr_tier_1,wp_tier_1,knows_common,merchant_face_1,merchant_face_2],
-["trainer_1","Trainer","_",tf_hero, scn_gondor_arena|entry(1),0,fac_commoners,
+["trainer_1","Trainer","_",tf_hero, 0,0,fac_commoners,
    [],
       0,0,0,merchant_face_1,merchant_face_2],
-["trainer_2","Trainer","_",tf_hero, scn_rohan_arena|entry(1),0,fac_commoners,
+["trainer_2","Trainer","_",tf_hero, 0,0,fac_commoners,
    [],
       0,0,0,merchant_face_1,merchant_face_2],
-["trainer_3","Trainer","_",tf_hero, scn_elf_arena|entry(1),0,fac_commoners,
+["trainer_3","Trainer","_",tf_hero, 0,0,fac_commoners,
    [],
       0,0,0,merchant_face_1,merchant_face_2],
-["trainer_4","Trainer","_",tf_hero, scn_mordor_arena|entry(1),0,fac_commoners,
+["trainer_4","Trainer","_",tf_hero, 0,0,fac_commoners,
    [],
       0,0,0,merchant_face_1,merchant_face_2],
+
+#TRAINERS
 ["trainer_gondor","Trainer","_",tf_hero| tf_gondor| tfg_armor| tfg_boots, scn_gondor_arena|entry(1),0,fac_commoners,
    [itm_tld_tunic,itm_leather_boots,],
-      0,0,0,gondor_face1,gondor_face2],
+      0,0,0,gondor_face2],
 ["trainer_rohan","Trainer","_",tf_hero| tf_rohan| tfg_armor| tfg_boots, scn_rohan_arena|entry(1),0,fac_commoners,
    [itm_tld_tunic,itm_leather_boots,],
-      0,0,0,rohan_face1,rohan_face2],
+      0,0,0,rohan_old_2],
+["trainer_dale","Trainer","_",tf_hero| tfg_armor| tfg_boots, scn_dale_arena|entry(1),0,fac_commoners,
+   [itm_tld_tunic,itm_leather_boots,],
+      0,0,0,gondor_face2],
 ["trainer_elf","Trainer","_",tf_hero| tf_lorien| tfg_armor| tfg_boots, scn_elf_arena|entry(1),0,fac_commoners,
    [itm_lorien_armor_e,itm_lorien_boots,],
-      0,0,0,lorien_elf_face_1,lorien_elf_face_2],
+      0,0,0,lorien_elf_face_2],
+["trainer_dwarf","Trainer","_",tf_hero| tf_dwarf| tfg_armor| tfg_boots, scn_dwarf_arena|entry(1),0,fac_commoners,
+   [itm_leather_dwarf_armor,itm_dwarf_pad_boots,],
+      0,0,0,dwarf_face_2],
 ["trainer_mordor","Trainer","_",tf_hero| tf_uruk| tfg_armor| tfg_boots, scn_mordor_arena|entry(1),0,fac_commoners,
    [itm_uruk_ragwrap,itm_m_uruk_heavy_c,],
-      0,0,0,uruk_hai_face1,uruk_hai_face2],
+      0,0,0,uruk_hai_face2],
+["trainer_isengard","Trainer","_",tf_hero| tf_urukhai| tfg_armor| tfg_boots, scn_isengard_arena|entry(1),0,fac_commoners,
+   [itm_uruk_ragwrap,itm_isen_uruk_light_a,],
+      0,0,0,uruk_hai_face2],
 ["trainer_khand","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_khand_arena|entry(1),0,fac_commoners,
    [itm_khand_foot_lam_c,itm_leather_boots,],
-      0,0,0,khand_man1,khand_man2],
+      0,0,0,khand_man2],
+["trainer_rhun","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_rhun_arena|entry(1),0,fac_commoners,
+   [itm_rhun_armor_a,itm_furry_boots,],
+      0,0,0,rhun_man2],
+      
 #
 # Ransom brokers.
 ["ransom_broker_1","Ransom_Broker","_",tf_hero| tf_randomize_face,0,0,fac_commoners,
@@ -3174,21 +3196,21 @@ troops = [
 ["start_quest_caravaneer","Torbal_the_Caravaneer","_",tf_hero| tf_randomize_face,0,0,fac_neutral,
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(50),wp(400),knows_common|knows_power_strike_10|knows_ironflesh_10,mercenary_face_1,mercenary_face_2],
-["brigand_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_zendar_arena|entry(52),0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["gondor_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_gondor_arena|entry(52),0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["rohan_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_rohan_arena|entry(52),0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["mordor_arena_master","Pit_Master","_",tf_hero| tf_randomize_face,scn_mordor_arena|entry(52),0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["elf_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_elf_arena|entry(52),0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+# ["brigand_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_zendar_arena|entry(52),0,fac_commoners,
+   # [itm_leather_jerkin,itm_leather_boots,],
+      # def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+# ["gondor_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_gondor_arena|entry(52),0,fac_commoners,
+   # [itm_leather_jerkin,itm_leather_boots,],
+      # def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+# ["rohan_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_rohan_arena|entry(52),0,fac_commoners,
+   # [itm_leather_jerkin,itm_leather_boots,],
+      # def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+# ["mordor_arena_master","Pit_Master","_",tf_hero| tf_randomize_face,scn_mordor_arena|entry(52),0,fac_commoners,
+   # [itm_leather_jerkin,itm_leather_boots,],
+      # def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+# ["elf_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_elf_arena|entry(52),0,fac_commoners,
+   # [itm_leather_jerkin,itm_leather_boots,],
+      # def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 #Kolba additions
 ["androg","Androg","_",tf_hero,scn_zendar_center|entry(7),0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
@@ -3399,17 +3421,17 @@ upgrade2(troops,"rider_of_rohan","veteran_rider_of_rohan","lancer_of_rohan")
 upgrade(troops,"veteran_rider_of_rohan","elite_rider_of_rohan")
 upgrade(troops,"elite_rider_of_rohan","eorl_guard_of_rohan")
 #HARAD
-upgrade2(troops,"harad_desert_warrior","harad_infantry","harad_archer")
-upgrade2(troops,"harad_desert_skirmisher","harad_cavalry","harad_horse_archer")
+upgrade2(troops,"harad_desert_warrior","harad_infantry","harad_skirmisher")
+upgrade2(troops,"harondor_scout","harondor_rider","harad_horse_archer")
 upgrade2(troops,"harad_infantry","harad_veteran_infantry","harad_swordsman")
-upgrade(troops,"harad_swordsman","harad_court_eunich")
-upgrade(troops,"harad_veteran_infantry","harad_black_serpent_infantry")
-upgrade(troops,"harad_cavalry","harad_veteran_cavalry")
-upgrade(troops,"harad_veteran_cavalry","black_serpent_cavalry")
-upgrade(troops,"harad_archer","harad_veteran_archer")
-upgrade(troops,"harad_veteran_archer","harad_master_archer")
-upgrade(troops,"harad_horse_archer","harad_veteran_horse_archer")
-upgrade(troops,"harad_veteran_horse_archer","black_serpent_horse_archer")
+upgrade(troops,"harad_swordsman","harad_lion_guard")
+upgrade(troops,"harad_veteran_infantry","harad_tiger_guard")
+upgrade(troops,"harondor_rider","harondor_light_cavalry")
+upgrade(troops,"harondor_light_cavalry","fang_heavy_cavalry")
+upgrade(troops,"harad_skirmisher","harad_archer")
+upgrade(troops,"harad_archer","harad_eagle_guard")
+upgrade(troops,"harad_horse_archer","black_snake_horse_archer")
+upgrade(troops,"black_snake_horse_archer","gold_serpent_horse_archer")
 upgrade(troops,"far_harad_tribesman","far_harad_champion")
 upgrade(troops,"far_harad_champion","far_harad_panther_guard")
 #DUNLAND

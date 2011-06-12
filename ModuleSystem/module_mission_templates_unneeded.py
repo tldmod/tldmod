@@ -431,8 +431,8 @@ tournament_triggers = [
   (0, 0, ti_once, [], [(eq, "$g_mt_mode", abm_training),
                        (assign, "$g_arena_training_max_opponents", 40),
                        (assign, "$g_arena_training_num_agents_spawned", 0),
-                       (assign, "$g_arena_training_kills", 0),
-                       (assign, "$g_arena_training_won", 0),
+                       # (assign, "$g_arena_training_kills", 0),
+                       # (assign, "$g_arena_training_won", 0),
                        (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
                        ]),
 
@@ -448,12 +448,12 @@ tournament_triggers = [
                    (this_or_next|eq, ":win_cond", 1),
                    (main_hero_fallen)],
    [
-       (get_player_agent_no, ":player_agent"),
-       (agent_get_kill_count, "$g_arena_training_kills", ":player_agent", 1),#use this for conversation
-       (assign, "$g_arena_training_won", 0),
+       # (get_player_agent_no, ":player_agent"),
+       # (agent_get_kill_count, "$g_arena_training_kills", ":player_agent", 1),#use this for conversation
+       # (assign, "$g_arena_training_won", 0),
        (try_begin),
          (neg|main_hero_fallen),
-         (assign, "$g_arena_training_won", 1),#use this for conversation
+         # (assign, "$g_arena_training_won", 1),#use this for conversation
        (try_end),
        (assign, "$g_mt_mode", abm_visit),
        (set_jump_mission, "mt_arena_melee_fight"),
