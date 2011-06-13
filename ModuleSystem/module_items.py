@@ -61,9 +61,10 @@ items =[
 ["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(25,blunt)|max_ammo(10),imodbits_thrown],
 #
 #foods (first one is smoked_fish)
-["human_meat","Human_Meat",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
+["human_meat","Human_Flesh",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
 ["maggoty_bread","Maggoty_Bread",[("maggoty_bread",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["cram","Cram_Ration",[("cram",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
+["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique,0,200,weight(1.3)|abundance(10)|0,imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(60)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(70)|max_ammo(70),imodbits_none],
@@ -1161,7 +1162,6 @@ items =[
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
-["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique,0,200,weight(1.3)|abundance(10)|0,imodbits_none],
 ["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["athelas_reward","Athelas_Plant",[("athelas_plant",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],

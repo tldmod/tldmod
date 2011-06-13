@@ -490,6 +490,8 @@ mayor_talk
 lord_deal_with_night_bandits_completed
 mayor_deliver_iron
 mayor_deliver_iron_completed
+mayor_deliver_food
+mayor_deliver_food_completed
 mayor_looters_quest_response
 mayor_looters_quest_destroyed
 mayor_looters_quest_destroyed_2
@@ -514,6 +516,7 @@ merchant_quest_looters_brief
 merchant_quest_stall
 merchant_quest_brief_deliver_wine
 merchant_quest_taken
+merchant_quest_brief_deliver_food
 merchant_quest_brief_deliver_iron
 escort_merchant_caravan_quest_brief
 merchant_caravan_intro_1

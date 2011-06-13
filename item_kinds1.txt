@@ -30,13 +30,16 @@ itemsfile version 2
  itm_practice_throwing_axe Practice_Throwing_Axes Practice_Throwing_Axes 1  rohan_throwing_axe 0  71303178 196608 241 0 1.500000 100 0 0 0 0 0 99 20 30 10 537 0
 0
 
- itm_human_meat Human_Meat Human_Meat 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
+ itm_human_meat Human_Flesh Human_Flesh 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
 0
 
  itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  maggoty_bread 0  34144267 0 32 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_cram Cram_Ration Cram_Ration 1  cram 0  34144267 0 44 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
+0
+
+ itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 10 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
@@ -2530,9 +2533,6 @@ itemsfile version 2
 0
 
  itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 200 0 2.000000 100 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 10 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  4107 0 1000 0 0.000000 100 0 0 0 0 0 0 0 0 0 0 0
