@@ -9467,7 +9467,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 			(store_item_kind_count, ":item_count_i", ":food_item"),
 			(val_min, ":item_count_i", ":to_give" ),
 			(troop_remove_items, "trp_player", ":food_item", ":item_count_i"),
-			(store_sub, ":to_give", ":item_count_i"),
+			(val_sub, ":to_give", ":item_count_i"),
 	  (try_end),
       
       (call_script, "script_finish_quest", "qst_deliver_food", 100),
@@ -9722,9 +9722,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                               (eq,"$merchant_quest_last_offerer", "$g_talk_troop"),
                               (ge,"$merchant_offered_quest",0)
                               ],
-   "About that job you offered me...", "merchant_quest_last_offered_job",[]],
+   "About that task you needed me to do...", "merchant_quest_last_offered_job",[]],
   [anyone|plyr,"mayor_talk", [(store_partner_quest,reg(2)),(ge,reg(2),0)],
-   "About the job you gave me...", "merchant_quest_about_job",[]],
+   "About the task you appointed to me...", "merchant_quest_about_job",[]],
 
   [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[]],
 
@@ -9757,7 +9757,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone,"merchant_quest_taken", [], "Excellent. I am counting on you then. Good luck.", "mayor_pretalk",
    []],
-  [anyone,"merchant_quest_stall", [], "Well, the job will be available for a few more days I guess. Tell me if you decide to take it.", "mayor_pretalk",[]],
+  [anyone,"merchant_quest_stall", [], "Well, I'll see to find someone else. But tell me if you change your mind.", "mayor_pretalk",[]],
 
 ###################################################################3
 # Random Merchant quests....

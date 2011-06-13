@@ -3967,10 +3967,11 @@ VS_OUTPUT_FLORA vs_mtarini_windy_flora(uniform const int PcfMode, float4 vPositi
 
    float2 treePos = float2 (matWorld._m03, matWorld._m23);
    float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
-   windAmount*=windAmount; 
+   windAmount*=windAmount;
+   windAmount+=0.2;
    float t2 = time_var + dot( treePos , float2(2.5,1.5)) + dot(norm,float3(7.1,0.4,3.2));
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-   vPosition.xyz += norm*(tc.x-0.5)*(tc.y-0.5)*windPhase*windAmount*0.28;
+   vPosition.xyz += norm*(tc.x-0.5)*(tc.y-0.5)*windPhase*windAmount*0.18;
    
    Out.Pos = mul(matWorldViewProj, vPosition);
    float4 vWorldPos = (float4)mul(matWorld,vPosition);
@@ -4006,8 +4007,9 @@ VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPositi
 	
    float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
    windAmount*=windAmount; 
-   float2 treePos = float2 (matWorld._m03, matWorld._m13) + vPosition.xy;
-   float t2 = time_var + dot( treePos , float2(2.5,1.5)) ;
+   float2 treePos = //float2 (matWorld._m03, matWorld._m13) + 
+                    vPosition.xy;
+   float t2 = time_var + dot( treePos , float2(6.5,4.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
    vPosition.xy += float2(0.00018,0.00018)*(vPosition.z+50.0)*windPhase*(windAmount+0.2);
    
