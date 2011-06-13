@@ -1036,6 +1036,9 @@ scene_props = [
   ("maize_a",0,"maize_a","0", []),
   ("maize_b",0,"maize_b","0", []),
   ("cabbage",0,"cabbage","0", []),
+  ("athelas_plant",0,"athelas_plant","0", []),
+  ("galadriel_light",0,"galadriel_light","0", []),
+  ("middle_earth_map",0,"middle_earth_map","0", []),
 
   ("cabbage_b",0,"cabbage_b","0", []),
   ("bean",0,"bean","0", []),

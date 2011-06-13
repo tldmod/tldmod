@@ -9417,29 +9417,53 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"lord_deal_with_night_bandits_completed", [],
    "They had it coming.", "close_window",[]],
 
+
     
-  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
-                              (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$g_encountered_party"),
-                              (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
-                              (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
+  [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
+                              (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
+                              (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+                              (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
                               (store_item_kind_count, ":item_count", ":quest_target_item"),
                               (ge, ":item_count", ":quest_target_amount"),
                               (assign, reg9, ":quest_target_amount"),
                               (str_store_item_name, s4, ":quest_target_item"),
                              ],
-   "Here's your food, {reg9} units of {s4}.", "mayor_deliver_food",[]],
+   "Here's your metal supply, {reg9} units of {s4}.", "mayor_deliver_iron",[]],
    
-  [anyone,"mayor_deliver_food", [],
-   "Very nice work, {playername}, our food stores are full again and nobody will starve for now.", "mayor_deliver_food_completed",
-   [
-     (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
-     (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
-     (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
-     (call_script, "script_finish_quest", "qst_deliver_food", 100),
-    ]],
+   [anyone,"mayor_deliver_iron", [],
+    "Very nice work, {playername}. Our smiths and armourers will find ways to put everything they are given to good use.", "mayor_deliver_iron_completed",
+    [
+      (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+      (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+      (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
+      (call_script, "script_finish_quest", "qst_deliver_iron", 100),
+     ]],
 
-  [anyone|plyr,"mayor_deliver_food_completed", [],
+   [anyone|plyr,"mayor_deliver_iron_completed", [],
    "I do what I can.", "close_window",[]],
+   
+  # [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
+                              # (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$g_encountered_party"),
+                              # (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+                              # (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
+                              # (store_item_kind_count, ":item_count", ":quest_target_item"),
+                              # (ge, ":item_count", ":quest_target_amount"),
+                              # (assign, reg9, ":quest_target_amount"),
+                              # (str_store_item_name, s4, ":quest_target_item"),
+                             # ],
+   # "Here's your food, {reg9} units of {s4}.", "mayor_deliver_food",[]],
+   
+  # [anyone,"mayor_deliver_food", [],
+   # "Very nice work, {playername}, our food stores are full again and nobody will starve for now.", "mayor_deliver_food_completed",
+   # [
+     # (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+     # (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
+     # (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
+     # (call_script, "script_finish_quest", "qst_deliver_food", 100),
+    # ]],
+
+  # [anyone|plyr,"mayor_deliver_food_completed", [],
+  # "I do what I can.", "close_window",[]],
 
 # Ryan BEGIN
   [anyone,"mayor_begin", [(check_quest_active, "qst_deal_with_looters"),
@@ -9834,34 +9858,82 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"merchant_quest_brief_deliver_wine", [], "I am afraid I can't carry all that cargo now.", "merchant_quest_stall",[]],
   
   # deliver_food:
-  [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], "You're looking for a job?\
- Actually I was looking for someone to supply us with {s4}.\
- Perhaps you can do that...", "merchant_quest_brief",
-   [(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
-    (str_store_item_name, s4, ":quest_target_item"),
-    ]],
+  # [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], "You're looking for a job?\
+ # Actually I was looking for someone to supply us with {s4}.\
+ # Perhaps you can do that...", "merchant_quest_brief",
+   # [(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+    # (str_store_item_name, s4, ":quest_target_item"),
+    # ]],
 
-  [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_food")],
-   "Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.\
- I need someone to bring us {reg5} units of {s6} in 10 days, or we'll begin to starve.\
- Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",
-   [(quest_get_slot, reg5, "qst_deliver_food", slot_quest_target_amount),
-    (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+  # [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_food")],
+   # "Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.\
+ # I need someone to bring us {reg5} units of {s6} in 10 days, or we'll begin to starve.\
+ # Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",
+   # [(quest_get_slot, reg5, "qst_deliver_food", slot_quest_target_amount),
+    # (quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
+    # (str_store_troop_name, s9, "$g_talk_troop"),
+    # (str_store_party_name_link, s3, "$g_encountered_party"),
+    # (str_store_item_name, s6, ":quest_target_item"),
+    # (setup_quest_text,"qst_deliver_food"),
+    # (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days."),
+    # #s2 should not be changed until the decision is made
+   # ]],
+
+  # [anyone|plyr,"merchant_quest_brief_deliver_food", [],
+      # "Alright. I will requisition the food and bring it to you.", "merchant_quest_taken",
+   # [
+    # (call_script, "script_start_quest", "qst_deliver_food", "$g_talk_troop"),
+    # ]],
+
+  # [anyone|plyr,"merchant_quest_brief_deliver_food", [], "I am too busy to carry around food.", "merchant_quest_stall",[]],
+
+    # deliver_iron:
+  [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_iron"),(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),], 
+  "A task, you say?\
+ Actually I am looking for someone to supply us with ore and metals.\
+ Mines and roads are not safe anymore, and getting resupplied of raw materials is more and more difficult.\
+ The enemy must have its own obscure, but efficient ways of extracting ore, as we see even orcs and other lowly beasts in their ranks go around covered with metal.\
+ Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times.\
+ But in these times our smelters learnt how to deal with poor materials too, if necessary.\
+ Every little helps."
+, "merchant_quest_brief",
+   []],
+
+  [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_iron"),(neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),], 
+  "A task, you say?\
+   Master demands more troops everyday, and it is never battleworthy enough for Him... but armours don't just grow on skins, you know?\
+   The moggots which are supposed to bring us ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.\
+   Are we supposed to protect ourselves with mud dried on our skin, like snagas?\
+   But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to the lowest born of them ... \
+   Scavenge their corpses and bring me the metal, {playername}. With an ounce of that iron, our smelter can make enough material to cover an entire pack of warriors."
+   , "merchant_quest_brief",
+   []],
+
+   
+  [anyone,"merchant_quest_brief", [
+     (eq,"$random_merchant_quest_no","qst_deliver_iron"),
+     (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+  ],
+ "We need {reg5} units of {s6} in 14 days, before our weaponsmiths run out of raw materials.\
+ What do you say?", "merchant_quest_brief_deliver_iron",
+   [(quest_get_slot, reg5, "qst_deliver_iron", slot_quest_target_amount),
+    (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
     (str_store_troop_name, s9, "$g_talk_troop"),
     (str_store_party_name_link, s3, "$g_encountered_party"),
     (str_store_item_name, s6, ":quest_target_item"),
-    (setup_quest_text,"qst_deliver_food"),
+    (setup_quest_text,"qst_deliver_iron"),
     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days."),
     #s2 should not be changed until the decision is made
    ]],
 
-  [anyone|plyr,"merchant_quest_brief_deliver_food", [],
-      "Alright. I will requisition the food and bring it to you.", "merchant_quest_taken",
+   
+  [anyone|plyr,"merchant_quest_brief_deliver_iron", [],
+      "Alright. I will get the metal scraps and bring them to you.", "merchant_quest_taken",
    [
-    (call_script, "script_start_quest", "qst_deliver_food", "$g_talk_troop"),
+    (call_script, "script_start_quest", "qst_deliver_iron", "$g_talk_troop"),
     ]],
 
-  [anyone|plyr,"merchant_quest_brief_deliver_food", [], "I am too busy to carry around food.", "merchant_quest_stall",[]],
+  [anyone|plyr,"merchant_quest_brief_deliver_iron", [], "I am too busy to deal with that.", "merchant_quest_stall",[]],
 
 #escort merchant caravan:
   [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_escort_merchant_caravan")], "You're looking for a job?\

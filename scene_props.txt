@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1390
+ 1393
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1821,6 +1821,15 @@ spr_maize_b 0 0 maize_b 0 0
 
 
 spr_cabbage 0 0 cabbage 0 0
+
+
+spr_athelas_plant 0 0 athelas_plant 0 0
+
+
+spr_galadriel_light 0 0 galadriel_light 0 0
+
+
+spr_middle_earth_map 0 0 middle_earth_map 0 0
 
 
 spr_cabbage_b 0 0 cabbage_b 0 0

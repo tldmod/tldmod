@@ -1090,6 +1090,9 @@ food_begin = "itm_human_meat"
 normal_food_begin = "itm_smoked_fish"
 food_end = "itm_grain"
 
+scraps_begin = "itm_metal_scraps_bad"
+scraps_end = "itm_sumpter_horse" #"itm_metal_scraps_good"+1
+
 #reference_books_begin = "itm_book_wound_treatment_reference"
 #reference_books_end   = trade_goods_begin
 #readable_books_begin = "itm_book_tactics"
