@@ -527,7 +527,7 @@ scn_gondor_arena gondor_arena 256 none none 0.000000 0.000000 100.000000 100.000
 scn_rohan_arena rohan_arena 256 none none 0.000000 0.000000 120.000000 120.000000 -100.000000 0x00000001324a9cba0005194a000041ef00005ae800003c55 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_rohan 
 scn_dale_arena dale_arena 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0xa0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 

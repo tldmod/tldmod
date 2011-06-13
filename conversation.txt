@@ -947,8 +947,8 @@ dlga_mayor_friendly_pretalk:mayor_talk 4095 500  0 Now..._What_else_may_I_do_for
 dlga_mayor_pretalk:mayor_talk 4095 425  0 Yes?  488  0 
 dlga_mayor_talk:mayor_info_begin 69631 488  0 Can_you_tell_me_about_what_you_do?  503  0 
 dlga_mayor_talk:merchant_quest_requested 69631 488  3 2240 1 1224979098644774912 2147483678 2 1224979098644774912 0 2147483679 2 144115188075855951 144115188075855885 Do_you_happen_to_have_a_job_for_me?  504  4 2133 2 144115188075855951 144115188075855885 1 2 936748722493063290 144115188075855885 2133 2 144115188075855953 72057594037927936 2133 2 144115188075855952 144115188075855953 
-dlga_mayor_talk:merchant_quest_last_offered_job 69631 488  4 2240 1 1224979098644774912 2147483678 2 1224979098644774912 0 31 2 144115188075855951 144115188075855885 30 2 144115188075855952 0 About_that_job_you_offered_me...  505  0 
-dlga_mayor_talk:merchant_quest_about_job 69631 488  2 2240 1 72057594037927938 30 2 72057594037927938 0 About_the_job_you_gave_me...  506  0 
+dlga_mayor_talk:merchant_quest_last_offered_job 69631 488  4 2240 1 1224979098644774912 2147483678 2 1224979098644774912 0 31 2 144115188075855951 144115188075855885 30 2 144115188075855952 0 About_that_task_you_needed_me_to_do...  505  0 
+dlga_mayor_talk:merchant_quest_about_job 69631 488  2 2240 1 72057594037927938 30 2 72057594037927938 0 About_the_task_you_appointed_to_me...  506  0 
 dlga_mayor_talk:close_window 69631 488  0 [Leave]  6  0 
 dlga_mayor_info_begin:mayor_info_talk 4095 503  1 2330 2 9 144115188075856016 I_am_the_guildmaster_of_{s9}._You_can_say_I_am_the_leader_of_the_good_people_of_{s9}._I_can_help_you_find_a_job_if_you_are_looking_for_some_honest_work.  507  1 2133 2 144115188075855954 0 
 dlga_mayor_info_talk:mayor_info_lord 69631 507  1 31 2 144115188075855954 0 Who_rules_this_town?  508  0 
@@ -962,7 +962,7 @@ dlga_merchant_quest_last_offered_job:merchant_quest_brief 4095 505  0 Eh,_you_wa
 dlga_merchant_quest_what_if_fail:mayor_pretalk 4095 510  2 2240 1 1224979098644774912 31 2 1224979098644774912 504403158265495577 I_hope_you_don't_fail._In_that_case,_I'll_have_to_ask_for_the_price_of_the_cargo_you_were_carrying.  425  0 
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1 4095 510  0 Well,_just_do_your_best_to_finish_it.  425  0 
 dlga_merchant_quest_taken:mayor_pretalk 4095 517  0 Excellent._I_am_counting_on_you_then._Good_luck.  425  0 
-dlga_merchant_quest_stall:mayor_pretalk 4095 515  0 Well,_the_job_will_be_available_for_a_few_more_days_I_guess._Tell_me_if_you_decide_to_take_it.  425  0 
+dlga_merchant_quest_stall:mayor_pretalk 4095 515  0 Well,_I'll_see_to_find_someone_else._But_tell_me_if_you_change_your_mind.  425  0 
 dlga_merchant_quest_requested:merchant_quest_brief 4095 504  1 31 2 144115188075855953 504403158265495579 Well,_you_look_able_enough._I_think_I_might_have_something_you_could_do.  512  0 
 dlga_merchant_quest_brief:merchant_quest_looters_choice 4095 512  8 31 2 144115188075855953 504403158265495579 4 0 541 3 144115188075856250 0 3 2320 2 5 1585267068834415160 5 0 541 3 144115188075856250 0 4 2320 2 5 1585267068834415159 3 0 We've_had_some_fighting_near_the_{s5}_lately,_with_all_the_chaos_that_comes_with_it,_and_that's_attracted_a_few_bands_of_tribal_orcs_to_raid_the_surrounding_farms_during_the_confusion._Valuable_crops_were_destroyed_and_farmers_are_fleeing_to_{s5}._I_need_somebody_to_teach_those_orcs_a_lesson._Sound_like_your_kind_of_work?  513  0 
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief 69631 513  0 Aye,_I'll_do_it.  514  0 
