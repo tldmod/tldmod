@@ -556,7 +556,7 @@ game_menus = [
 		(set_visitors, 44, "trp_dismounted_veteran_skirmisher_of_rohan",	1),
 ## ENEMY
 		(set_visitors, 16, "trp_uruk_hai_tracker",							3),
-		(set_visitors, 17, "trp_large_uruk_hai_tracker",						3),
+		(set_visitors, 17, "trp_large_uruk_hai_tracker",					3),
 		(set_visitors, 18, "trp_fighting_uruk_hai_tracker",					3),
 		(set_visitors, 19, "trp_fighting_uruk_hai_berserker",				8),
 		(set_visitors, 20, "trp_uruk_snaga_of_isengard",					10),
@@ -7793,6 +7793,20 @@ game_menus = [
        ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)
     
+		 #Enter dungeon in Moria begin (mtarini)
+      ("moria_enter",[
+        (eq, "$current_town", "p_town_moria"),
+	  	(eq,"$entry_to_town_forbidden",0), 
+        ],"Search the mountains.",[
+            (modify_visitors_at_site,"scn_moria_secret_entry"),
+			(reset_visitors),
+            (set_visitor,1,"trp_player"),
+            (jump_to_scene, "scn_moria_secret_entry"),
+            (change_screen_mission),
+       ],"Entrer Moria."),
+      #Enter dungeon in Moria end (mtarini)
+	  
+	  
 		
       ("castle_wait",
        [#   (party_slot_eq,"$current_town",slot_party_type, spt_castle),

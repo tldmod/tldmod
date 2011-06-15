@@ -1,5 +1,5 @@
 scenesfile version 1
- 217
+ 218
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -868,3 +868,7 @@ scn_west_osgiliath_center1 west_osgiliath_center1 256 none none 0.000000 0.00000
   0 
   0 
  outer_terrain_osgiliath_9 
+scn_moria_secret_entry moria_secret_entry 1280 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000240004d634005c96d0000734a00004b340000734a 
+  0 
+  0 
+ outer_terrain_plain 

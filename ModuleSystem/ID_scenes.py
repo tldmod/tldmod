@@ -215,3 +215,4 @@ scn_small_ford = 213
 scn_hornburg_castle = 214
 scn_morannon_castle = 215
 scn_west_osgiliath_center1 = 216
+scn_moria_secret_entry = 217

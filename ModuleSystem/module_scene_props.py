@@ -1750,7 +1750,6 @@ scene_props = [
 ("harad_tent_tusks", 0, "haradTentTusks", "bo_haradTentTusks", []),
 ("harad_tent_a", 0, "haradTent_a", "bo_haradTent_a", []),
 ("harad_tent_b", 0, "haradTent_b", "bo_haradTent_a", []),
-("harad_oliphant", 0, "oliphant", "bo_oliphant", []),
 
 # Romainoir Rohan buildings
 ("rohan_birdhouse",0,"rohan_birdhouse","bo_birdhouse",[]),
@@ -1973,6 +1972,11 @@ scene_props = [
 ("horse_gondor_lam_horse",sokf_invisible,"lam_warhorse01","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_gondor_lam_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("harad_oliphant",sokf_invisible,"oliphant","bo_oliphant", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_oliphant", 0),
+	(agent_set_speed_limit, reg0, 0),
+	(agent_set_stand_animation, reg0, "anim_oliphant_stand"),(agent_set_animation, reg0, "anim_oliphant_stand")])]),
 ("spiderweb",0,"0","0", []),
 ("tunnel_dirt",0,"dirt","0", []),
 ("tunnel_liana",0,"liana","0", []),
