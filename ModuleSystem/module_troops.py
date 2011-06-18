@@ -1378,7 +1378,36 @@ troops = [
 ["white_hand_rider","White_Hand_Rider","White_Hand_Riders",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_wargarmored_1b,itm_wargarmored_1c,itm_wargarmored_2b,itm_wargarmored_2c,itm_orc_scimitar,itm_orc_falchion,itm_orc_sabre,],
       attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_power_throw_5|knows_power_strike_4,orc_face1,orc_face2],
+
+# "ghost" warg riders
+["warg_ghost_1b","Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_warg_1b],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_1c","Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_warg_1c],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_1d","Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_warg_1d],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_a1b","Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_1b],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_a1c","Armored Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_1c],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_a2b","Armored Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_2b],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_a2c","Armored Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_2c],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_a3a","Armored Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_3a],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+
+	  
 #Isengard
+# first non ghost-warg
 ["uruk_hai_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_ragwrap,itm_isen_uruk_heavy_d,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],
       attr_tier_2,wp_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,urukhai_face_low1,urukhai_face_low2],

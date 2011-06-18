@@ -10498,6 +10498,19 @@ scripts = [
       (try_end),
   ]),
   
+  # script_remove_agent (mtarini)
+  ("remove_agent", [
+	(store_script_param, ":agent", 1),
+	# send agent to Pluto ;)
+	(init_position, pos5),  
+	(agent_set_position,":agent", pos5), 				
+	# self destruct it!
+	(agent_set_hit_points, ":agent", 0,0), 
+	(set_show_messages,0),
+	(agent_deliver_damage_to_agent, ":agent", ":agent"), 
+	(set_show_messages,1),
+  ]),
+  
   # script_select_battle_tactic
   # Input: none
   # Output: none

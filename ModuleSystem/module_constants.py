@@ -55,6 +55,7 @@ slot_agent_walker_type            = 12
 slot_agent_troll_swing_status     = 13
 slot_agent_troll_swing_move       = 14
 slot_agent_last_hp		          = 15
+slot_agent_mount_side		      = 16 # a mount has the side as its rider
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -1083,6 +1084,9 @@ village_prod_max = 18
 
 item_warg_begin = "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"
+
+warg_ghost_begin = "trp_warg_ghost_1b"
+warg_ghost_end = "trp_uruk_hai_tracker"
 
 trade_goods_begin = "itm_human_meat" #MV: was itm_smoked_fish
 trade_goods_end = "itm_siege_supply"

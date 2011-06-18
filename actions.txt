@@ -700,8 +700,8 @@
   2.000000 oh_no_mounted 42 83 3 0 0.0 0.0 0.0 0.0 
   2.000000 oh_no_mounted 84 125 3 0 0.0 0.0 0.0 0.0 
   2.000000 oh_no_mounted 126 167 3 0 0.0 0.0 0.0 0.0 
- unused_human_anim_22 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
+ hide_inside_warg 257  1
+  1.000000 hide_inside_warg 0 31 268435456 0 0.0 0.0 0.0 0.0 
  unused_human_anim_23 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_24 0  1

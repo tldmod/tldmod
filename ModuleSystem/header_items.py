@@ -345,6 +345,7 @@ itc_rohan_spear = itc_parry_polearm|itcf_overswing_polearm|itcf_thrust_onehanded
 
 itc_greatlance = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
 itc_umbar_pike = itc_parry_polearm|itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
+itc_ghost_lance = itcf_thrust_onehanded_lance_horseback
 
 #EXtra Mesh IDs
 ixmesh_inventory   = 0x1000000000000000

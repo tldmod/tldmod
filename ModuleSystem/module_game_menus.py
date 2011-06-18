@@ -215,6 +215,8 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_11",[],"          Test Troll Battle",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
+	("custom_battle_scenario_11",[],"          Test Warg Battle",
+		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
 	("choose_scene",[],"** Scene Chooser **",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
     ("go_back",[],".                 Go back",[(change_screen_quit),]),    ]
@@ -768,7 +770,7 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_gondor_veteran_spearmen",		8),
-	   (set_visitors, 16, "trp_ent",				1),
+	   (set_visitors, 16, "trp_troll_of_moria",				1),
 	   (str_store_string, s16, "@TEST: troll VS infantry"),
      (else_try),
 	    # TROLL TEST
@@ -779,9 +781,10 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_veteran_archer_of_gondor",		7),
-	   (set_visitors, 16, "trp_ent",				1),
+	   (set_visitors, 16, "trp_troll_of_moria",				1),
+	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				1),
 	   (str_store_string, s16, "@TEST: troll VS archers"),
-     (else_try),
+	(else_try),
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 12),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
@@ -790,7 +793,7 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_elite_rider_of_rohan",		6),
-	   (set_visitors, 16, "trp_ent",				1),
+	   (set_visitors, 16, "trp_troll_of_moria",				1),
 	   (str_store_string, s16, "@TEST: troll VS chavalry"),
     (else_try),
 	    # TROLL TEST
@@ -801,7 +804,7 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_lancer_of_rohan",		6),
-	   (set_visitors, 16, "trp_ent",				1),
+	   (set_visitors, 16, "trp_troll_of_moria",				1),
 	   (str_store_string, s16, "@TEST: troll VS lancers"),
       (else_try),
 	    # TROLL TEST
@@ -812,15 +815,15 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_orc_of_isengard",	8),
-	   (set_visitors, 2, "trp_ent",	1),
-	   (set_visitors, 16, "trp_ent",	1),
+	   (set_visitors, 2, "trp_troll_of_moria",	1),
+	   (set_visitors, 16, "trp_olog_hai",	1),
 	   (set_visitors, 17, "trp_orc_of_mordor",	8),
  	   (str_store_string, s16, "@TEST: Troll vs Troll"),
     (else_try),
 	    # TROLL TEST 3
        (eq, "$g_custom_battle_scenario", 15),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_ent"),
+       (assign, "$g_player_troop", "trp_olog_hai"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 16, "$g_player_troop"),
@@ -829,7 +832,75 @@ game_menus = [
 	   (set_visitors, 0, "trp_gondor_veteran_swordsmen",				1),
 	   (str_store_string, s16, "@TEST: Troll by player"),
 	   (str_store_string, s16, "@TROLL TEST"),
-    (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
+    (else_try),
+	    # WARG TEST 1vs1
+       (eq, "$g_custom_battle_scenario", 20),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   (set_visitors, 16, "trp_wolf_rider_of_isengard",				1),
+	   (str_store_string, s16, "@TEST: warg test 1 VS 1"),
+    (else_try),
+	    # WARG TEST 2vs3
+       (eq, "$g_custom_battle_scenario", 21),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   (set_visitors, 2, "trp_veteran_archer_of_gondor",		1),
+	   (set_visitors, 16, "trp_wolf_rider_of_isengard",		    3),
+	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				1),
+	   (str_store_string, s16, "@TEST: warg test 2 VS 3"),
+    (else_try),
+	    # WARG TEST 12vs8
+       (eq, "$g_custom_battle_scenario", 22),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   (set_visitors, 2, "trp_veteran_archer_of_gondor",		9),
+	   (set_visitors, 16, "trp_wolf_rider_of_isengard",		    9),
+	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				4),
+	   (str_store_string, s16, "@TEST: warg test many VS many"),
+    (else_try),
+	    # WARG TEST 1vs1
+       (eq, "$g_custom_battle_scenario", 23),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_wolf_rider_of_isengard"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 17, "$g_player_troop"),
+	   (set_visitors, 0, "trp_veteran_archer_of_gondor",		1),
+	   (str_store_string, s16, "@TEST: play warg, test 1 VS 1"),
+    (else_try),
+	    # WARG TEST 2vs3
+       (eq, "$g_custom_battle_scenario", 24),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_white_hand_rider"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   (set_visitors, 2, "trp_wolf_rider_of_isengard",		    2),
+	   (set_visitors, 16, "trp_veteran_archer_of_gondor",		2),
+	   #(set_visitors, 18, "trp_orc_snaga_of_isengard",				1),
+	   (str_store_string, s16, "@TEST: play wargs, test 2 VS 3"),
+    (else_try),
+	    # WARG TEST 12vs8
+       (eq, "$g_custom_battle_scenario", 25),
+       (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (assign, "$g_player_troop", "trp_white_hand_rider"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   (set_visitors, 2, "trp_wolf_rider_of_isengard",		    12),
+	   (set_visitors, 16, "trp_veteran_archer_of_gondor",		10),
+	   #(set_visitors, 18, "trp_orc_snaga_of_isengard",				4),
+	   (str_store_string, s16, "@TEST: play wargs, many VS many"),
+   (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
 		(eq, "$g_custom_battle_scenario", 9),
 		(assign, "$g_custom_battle_scene", "scn_quick_battle_random"),
 
@@ -984,8 +1055,30 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 14),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_15",[],"          Toy-Test: player controlled Troll",
 		[(assign, "$g_custom_battle_scenario", 15),(jump_to_menu, "mnu_custom_battle_2"),]),
-        ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
+    ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
   ),
+  
+  
+  ( "quick_battle_wargs",mnf_disable_all_keys,
+    "^^^^^^^^Choose your TEST Warg scenario:",
+    "none",
+    [(set_background_mesh, "mesh_draw_orc_raiders"),],
+   [
+	("custom_battle_scenario_10",[],"          Against Wargs: 1 vs 1",
+		[(assign, "$g_custom_battle_scenario", 20),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_11",[],"          Against Wargs: 2 vs 3",
+		[(assign, "$g_custom_battle_scenario", 21),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_12",[],"          Against Wargs: many vs many",
+		[(assign, "$g_custom_battle_scenario", 22),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_10",[],"          Play Wargs: 1 vs 1",
+		[(assign, "$g_custom_battle_scenario", 23),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_11",[],"          Play Wargs: 2 vs 3",
+		[(assign, "$g_custom_battle_scenario", 24),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("custom_battle_scenario_12",[],"          Play Wargs: many vs many",
+		[(assign, "$g_custom_battle_scenario", 25),(jump_to_menu, "mnu_custom_battle_2"),]),
+    ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
+  ),
+  
   
 ######################################
 #TLD Character creation menus CONTINUE
@@ -2781,7 +2874,7 @@ game_menus = [
        
         (set_visitor,0,"trp_player"),
 		(store_random_in_range,":n_ents",0,3),(val_max,":n_ents",1), #  2 ents once in three
-        (set_visitors,2,"trp_ent",":n_ents"), # just a troll to start with
+        (set_visitors,2,"trp_ent",":n_ents"), # just a ent to start with
 
 		#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
@@ -5394,6 +5487,21 @@ game_menus = [
 ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    ]),
       
+	  #Enter dungeon in Moria begin (mtarini)
+      ("moria_enter",[
+        (eq, "$current_town", "p_town_moria"),
+	  	(eq,"$entry_to_town_forbidden",1), 
+        ],"Search for a secret entrance to Moria",[
+            (modify_visitors_at_site,"scn_moria_secret_entry"),
+			(reset_visitors),
+            (set_visitor,1,"trp_player"),
+            (jump_to_scene, "scn_moria_secret_entry"),
+            (change_screen_mission),
+       ],"Enter Moria."),
+      #Enter dungeon in Moria end (mtarini)
+
+	  
+	  
       ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
                      (eq,"$cant_sneak_into_town",0)],
@@ -7791,22 +7899,7 @@ game_menus = [
               (jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
        ],"Open the door."),
-      #Enter dungeon in Erebor end (Kolba)
-    
-		 #Enter dungeon in Moria begin (mtarini)
-      ("moria_enter",[
-        (eq, "$current_town", "p_town_moria"),
-	  	(eq,"$entry_to_town_forbidden",0), 
-        ],"Search the mountains.",[
-            (modify_visitors_at_site,"scn_moria_secret_entry"),
-			(reset_visitors),
-            (set_visitor,1,"trp_player"),
-            (jump_to_scene, "scn_moria_secret_entry"),
-            (change_screen_mission),
-       ],"Entrer Moria."),
-      #Enter dungeon in Moria end (mtarini)
-	  
-	  
+      #Enter dungeon in Erebor end (Kolba)	  
 		
       ("castle_wait",
        [#   (party_slot_eq,"$current_town",slot_party_type, spt_castle),

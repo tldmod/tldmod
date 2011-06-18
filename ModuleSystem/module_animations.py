@@ -1245,8 +1245,11 @@ animations = [
    [2.0, "oh_no_mounted", 42, 42+41, arf_blend_in_2], 
    [2.0, "oh_no_mounted", 84, 84+41, arf_blend_in_2], 
    [2.0, "oh_no_mounted",126,126+41, arf_blend_in_2], 
+ ],     
+ # used to make "ghost" rider hide inside warg
+ ["hide_inside_warg", acf_enforce_lowerbody | acf_synch_with_horse,
+   [1.0, "hide_inside_warg", 0, 31, arf_cyclic],
  ],
- ["unused_human_anim_22", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_23", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_24", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_25", 0, [1.0, "anim_human", 0, 1, 0]],
@@ -1391,16 +1394,17 @@ animations = [
  ### Unused horse animations start from here.
 
  ### TLD (mtarini)
- # nazgul reactions for panic-ed riders
+ # nazgul reactions for  the horses of panic-ed riders
  ["horse_rear_twice", acf_enforce_lowerbody | acf_ignore_slope,
    [4.0, "horse_rear_twice", 0, 83,  arf_blend_in_2],
  ],
  ["horse_rear_fast_blend", acf_enforce_lowerbody | acf_ignore_slope,
    [2.0, "horse_rear_twice", 0, 41,  arf_blend_in_2],
  ],
+ 
+ # oliphant stand (mtarini): a slowed down version of horse_stand, plus the occasional rampage.
+ #  (for some reason, after a while, standing oliphants loses this and get back to standard horse_stand animation)
  ["oliphant_stand", 0,
-##   [5.0, "anim_horse", 1000, 1044, arf_cyclic],
-##   [3.0, "anim_horse", 600, 644, arf_cyclic], 
    [3.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
    [2.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
    [3.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],

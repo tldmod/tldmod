@@ -45,7 +45,11 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$trolls_in_battle",0),	
 	(assign,"$nazgul_in_battle",0),	
 	(assign,"$wargs_in_battle",0),	
+	
+	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
+	
 	(assign, "$nazgul_team", -1), # will be found when needed
+	
 	(try_begin),
 		(this_or_next|eq, "$g_encountered_party", "pt_mordor_war_party"),
 		(eq, "$g_encountered_party_2", "pt_mordor_war_party"),
@@ -67,13 +71,28 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   ]
 )
 
+
+# custom TLD functions for special troops spawining
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   [
     (store_trigger_param_1, ":agent"),
+	(agent_get_troop_id,":agent_trp",":agent"),
+	(agent_get_item_id, ":agent_item", ":agent"),
+	(agent_set_slot, ":agent", slot_agent_mount_side, -1),
+	
+	
+	#(str_store_troop_name, s11, ":agent_trp"),  
+	#(try_begin),
+	#	(ge,":agent_item",0),
+	#	(str_store_item_name, s12, ":agent_item"),  
+	#	(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
+	#(else_try),
+	#	(display_message,"@DEBUG: spawning troop {s11}"),
+	#(try_end),
+
     (try_begin),
 	  (assign, ":troll", ":agent"),
-	  (agent_get_troop_id,reg0,":troll"),
-	  (troop_get_type, reg0, reg0),
+	  (troop_get_type, reg0, ":agent_trp"),
 	  (eq, reg0, tf_troll),
 	  (agent_set_speed_limit,":troll",4),	# trolls go 4 km/h max <GA>
 	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
@@ -86,11 +105,43 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	  #(display_message,"@DEBUG: troll spawned with {reg0} hitpoints!"),
 	  (agent_set_stand_animation,":troll","anim_walk_forward_troll"),
 	(try_end),
+	
 	(try_begin),
-		(agent_get_item_id, ":warg_item", ":agent"),
-		(is_between, ":warg_item", item_warg_begin , item_warg_end),
+		(is_between, ":agent_item", item_warg_begin , item_warg_end),
+		# keep warg count up to date...
 		(val_add,"$wargs_in_battle",1),
 	(try_end),
+	
+	# for ghost wargs: set it up to replace the unmounted warg
+	(try_begin),
+		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
+	    (assign, ":warg", "$warg_to_be_replaced"),
+
+		(try_begin),
+			(eq, "$warg_to_be_replaced", -1),
+			(agent_set_team, ":agent",  reg25),
+			#(display_message,"@DEBUG: new wargs rider team is now: {reg45}"),
+		(else_try),
+			(assign, "$warg_to_be_replaced", -1),
+		
+			(agent_get_look_position,pos4,":warg"),
+			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
+
+			(store_agent_hit_points, reg12, ":warg",1),
+			(agent_set_hit_points, ":agent", reg12, 1),
+			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+		
+			(call_script, "script_remove_agent", ":warg"),
+			
+			(agent_set_position, ":agent", pos4),
+		
+			(agent_set_team, ":agent",  reg25), # this was set just above
+			#(display_message,"@DEBUG: new wargs team is now: {reg45}"),
+		(try_end),
+
+	(try_end),
+
+	
   ]
 )
 
@@ -296,7 +347,7 @@ nazgul_sweeps = (2,1.2,5,
   ]
 )
 
-# if player attempts to ride non matching mount, mount rebels
+# if player attempts to ride non matching mount, mount rebels (mtarini)
 tld_player_cant_ride = (1.90,1.5,0.5,
   [
     (eq, "$g_crossdressing_activated", 0),
@@ -633,7 +684,54 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 			(try_end),
 		(try_end),
 ])
+
+# wargs without rider respawn
+custom_lone_wargs_are_agressive = (0,0,2, [],[
+	(try_for_agents,":warg"),
+        (agent_is_alive, ":warg"), 
+		(agent_get_item_id,":warg_itm",":warg"),
+		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
+		(agent_get_rider,":rider",":warg"),
 		
+		
+		(try_begin),
+			# rider not dead: record its owner 
+			(neq,":rider",-1),
+			(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
+			(agent_get_team, reg10, ":rider"),
+			(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
+			#(display_message,"@DEBUG: This warg has side {reg10}"),
+		(try_end),
+		
+		(eq,":rider",-1),
+		# riderless rider found. spawn a new rider in its place
+		
+		(eq, "$warg_to_be_replaced", -1), # only spawn a new warg per "turn"
+		(assign, "$warg_to_be_replaced", ":warg"),
+
+		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
+		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
+		
+		(add_visitors_to_current_scene,0,":warg_ghost_trp",1),
+
+		#(display_message,"@DEBUG: Spawning ghost rider!"),
+	(try_end),
+
+	# self destruct any ghost rider which has no ride
+	(try_for_agents,":ghost"),
+        (agent_is_alive, ":ghost"), 
+		(agent_is_human,":ghost"),
+		(agent_get_troop_id,":trp_ghost",":ghost"),
+		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
+		 (agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
+		(agent_get_horse,":horse",":ghost"),
+		(eq,":horse",-1),
+		(call_script, "script_remove_agent", ":ghost"),
+	(try_end),
+
+])
+
+	
 ################## SIEGE LADDERS BEGIN #######################################
 HD_ladders_init = (0,0,ti_once,[],[
 			 (scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 0),		###### lower siege ladders at battle start

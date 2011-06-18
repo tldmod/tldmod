@@ -660,6 +660,7 @@ tld_common_battle_scripts = [
 	nazgul_sweeps,
 	custom_troll_hitting,
 	custom_warg_sounds,
+	custom_lone_wargs_are_agressive,
 	tld_player_cant_ride,
 #	cheat_kill_all_on_ctrl_k,  
 	cheat_kill_self_on_ctrl_s,  

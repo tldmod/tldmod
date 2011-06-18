@@ -143,12 +143,12 @@ items =[
 ["troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 ["troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 #
-["tree_trunk_club_a","Tree_Trunk",[("troll_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(87)|weapon_length(186)|swing_damage(75,blunt)|thrust_damage(75,blunt),imodbits_none],
-["tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(75,blunt)|thrust_damage(75,blunt),imodbits_none],
-["tree_trunk_invis","Tree_Trunk",[("0",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(75,blunt)|thrust_damage(75,blunt),imodbits_none],
-["giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,blunt)|thrust_damage(80,blunt),imodbits_none],
-["giant_mace","Giant_Mace",[("giant_mace",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(90,blunt),imodbits_none],
-["giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(90,blunt),imodbits_none],
+["tree_trunk_club_a","Tree_Trunk",[("troll_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(87)|weapon_length(186)|swing_damage(32,blunt)|thrust_damage(32,blunt),imodbits_none],
+["tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(32,blunt)|thrust_damage(32,blunt),imodbits_none],
+["tree_trunk_invis","Tree_Trunk",[("0",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(75,blunt)|thrust_damage(32,blunt),imodbits_none],
+["giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,blunt)|thrust_damage(40,blunt),imodbits_none],
+["giant_mace","Giant_Mace",[("giant_mace",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(45,blunt),imodbits_none],
+["giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(45,blunt)|thrust_damage(45,blunt),imodbits_none],
 #
 ["olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(30),0],
 ["olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(62)|difficulty(30),0],
@@ -158,6 +158,23 @@ items =[
 ["olog_body_b","Olog_Hai_Armor",[("olog_body_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2010,weight(248)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(0),0,],
 ["olog_hands","Olog_Hai_Hands",[("olog_hand_L",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(30),0],
 #
+# warg ghost items...  (mtarini)
+#  invisible items which are used for ghost riders (riding unmounted wargs)
+["warg_ghost_armour","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_gloves","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_hand_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_boots", "HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_foot_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_helm",  "HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_head_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_lance" ,"HIDEME_lance"  ,[("dummy_mesh",0)],itp_unique|itp_type_polearm|itp_primary|itp_no_parry,itcf_thrust_onehanded_lance_horseback,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+
+#tuse these to make the ghost rider visble (peek behind the courtain)
+#["warg_ghost_armour","HIDEME_armour" ,[("orc_mordor_a",0)],itp_unique|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+#["warg_ghost_gloves","HIDEME_armour" ,[("lthr_glove_L",0)],itp_unique|itp_type_hand_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+#["warg_ghost_boots", "HIDEME_armour" ,[("orc_furboots",0)],itp_unique|itp_type_foot_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+#["warg_ghost_helm",  "HIDEME_armour" ,[("orc_isen_helm_a",0)],itp_unique|itp_type_head_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+#["warg_ghost_lance" ,"HIDEME_lance"  ,[("spear_b_2-75m",0)],itp_unique|itp_type_polearm|itp_primary|itp_no_parry,itcf_thrust_onehanded_lance_horseback,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+
+
+
 #BOW MISSILES
 ["arrows","Arrows",[("plain_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("common_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
 ["gondor_arrows","Gondorian_Arrows",[("gondor_arrow",0),("flying_missile_tld",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile],
