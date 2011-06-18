@@ -222,22 +222,22 @@ itemsfile version 2
  itm_troll_head_helm_c Troll_Head Troll_Head 1  troll_head_c 0  4108 0 500 0 58.000000 100 0 0 0 30 0 0 0 0 0 0 0
 0
 
- itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 1  troll_club 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 32768 87 0 186 0 544 544
+ itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 1  troll_club 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 49152 87 0 186 0 560 560
 0
 
- itm_tree_trunk_club_b Tree_Trunk Tree_Trunk 1  tree_trunk_club 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 32768 92 0 175 0 544 544
+ itm_tree_trunk_club_b Tree_Trunk Tree_Trunk 1  tree_trunk_club 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 49152 92 0 175 0 560 560
 0
 
- itm_tree_trunk_invis Tree_Trunk Tree_Trunk 1  0 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 11264 92 0 175 0 544 587
+ itm_tree_trunk_invis Tree_Trunk Tree_Trunk 1  0 0  4587522 9223372036854775808 11 0 58.000000 100 0 0 0 0 49152 92 0 175 0 560 560
 0
 
- itm_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 16384 96 0 150 0 552 592
+ itm_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 16384 96 0 150 0 577 592
 0
 
- itm_giant_mace Giant_Mace Giant_Mace 1  giant_mace 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 26624 96 0 150 0 557 602
+ itm_giant_mace Giant_Mace Giant_Mace 1  giant_mace 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 26624 96 0 150 0 577 602
 0
 
- itm_giant_mace_b Giant_Spiked_Mace Giant_Spiked_Mace 1  giant_mace_b 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 46080 96 0 150 0 557 557
+ itm_giant_mace_b Giant_Spiked_Mace Giant_Spiked_Mace 1  giant_mace_b 0  4194306 9223372036854775808 11 0 58.000000 100 0 0 0 0 1024 96 0 150 0 577 577
 0
 
  itm_olog_feet_boots Olog_Hai_Feet Olog_Hai_Feet 1  olog_feet 0  4110 0 500 0 58.000000 100 0 0 62 30 0 0 0 0 0 0 0
