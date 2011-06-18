@@ -1753,28 +1753,31 @@ game_menus = [
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary place enabled!", 0x30FFC8),
    ]),
-   ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
-    (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
-    (try_begin),
-        ]+concatenate_scripts([
-            [
-            (eq, ":faction_index", x),
-            ]+concatenate_scripts([[
-                (assign, ":rank", fac_reward_items_list[x][item_entry][0]),
-                (assign, ":item", fac_reward_items_list[x][item_entry][1]),
-                (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
-                (assign, reg0, ":rank"),
-                (assign, reg1, ":modifier"),
-                (str_store_item_name, s20, ":item"),
-                (display_message, "@Rank {reg0}: {s20}, mod {reg1}.", 0x30FFC8),
-                ] for item_entry in range(len(fac_reward_items_list[x]))
-            ])+[
-         (else_try),
-            ] for x in range(len(fac_reward_items_list))
-        ])+[
-    (try_end),
-    
+   ("camp_mvtest_intro",[],"Test intro.",[
+    (call_script, "script_tld_start_intro_movie"),
+#    (change_screen_map),
    ]),
+   # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
+    # (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
+    # (try_begin),
+        # ]+concatenate_scripts([
+            # [
+            # (eq, ":faction_index", x),
+            # ]+concatenate_scripts([[
+                # (assign, ":rank", fac_reward_items_list[x][item_entry][0]),
+                # (assign, ":item", fac_reward_items_list[x][item_entry][1]),
+                # (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
+                # (assign, reg0, ":rank"),
+                # (assign, reg1, ":modifier"),
+                # (str_store_item_name, s20, ":item"),
+                # (display_message, "@Rank {reg0}: {s20}, mod {reg1}.", 0x30FFC8),
+                # ] for item_entry in range(len(fac_reward_items_list[x]))
+            # ])+[
+         # (else_try),
+            # ] for x in range(len(fac_reward_items_list))
+        # ])+[
+    # (try_end),   
+   # ]),
    # ("camp_mvtest_coords",[],"Print party coordinates x100.",[
       # (set_fixed_point_multiplier, 100),
       # (party_get_position, pos13, "p_main_party"),

@@ -40,3 +40,4 @@ mst_tld_caravan_help = 38
 mst_tld_erebor_dungeon = 39
 mst_custom_battle_parade = 40
 mst_scene_chooser = 41
+mst_intro = 42

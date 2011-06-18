@@ -1559,7 +1559,7 @@ center_list = [
 	("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", -1, "mesh_ui_default_menu_window"],
 	    ["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_town_23_horse_merchant", "trp_elder_mmorgul", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 0, tld_siegable_never),
-	("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", -1, "mesh_ui_default_menu_window"],
+	("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern", -1, -1, "mesh_ui_default_menu_window"],
 	    ["trp_barman_cungol", "trp_smith_cungol", "trp_town_25_horse_merchant", "trp_elder_cungol", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0, tld_siegable_always),
 	("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1, -1, "mesh_town_evilcamp"],
