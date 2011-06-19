@@ -177,3 +177,4 @@ p_ford_fangorn = 175
 p_ford_fangorn2 = 176
 p_ford_moria = 177
 p_ford_moria2 = 178
+p_ancient_ruins = 179

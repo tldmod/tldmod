@@ -1,5 +1,5 @@
 scenesfile version 1
- 221
+ 226
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -880,7 +880,27 @@ scn_west_osgiliath_center1 west_osgiliath_center1 256 none none 0.000000 0.00000
   0 
   0 
  outer_terrain_osgiliath_9 
+scn_tld_sorcerer_forest_a tld_sorcerer_forest_a 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0xbc675123800409020000424b0000206b000043ce 
+  0 
+  0 
+ outer_terrain_forest 
+scn_tld_sorcerer_forest_b tld_sorcerer_forest_b 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0xbc6759230002c8b000000f6e00006f7d00001e9c 
+  0 
+  0 
+ outer_terrain_forest 
+scn_tld_sorcerer_forest_c tld_sorcerer_forest_c 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0xb7e55217000469130000779200005f5f00007f2f 
+  0 
+  0 
+ outer_terrain_forest 
 scn_moria_secret_entry moria_secret_entry 1280 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000240004d634005c96d0000734a00004b340000734a 
   0 
   0 
  outer_terrain_plain 
+scn_pick_troops pick_troops 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x30674c1b0003f90100001b70000067da00002878 
+  0 
+  0 
+ outer_terrain_forest 
+scn_pick_troops_b pick_troops_b 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0xbc66d39c000489220000340c00007722000048c7 
+  0 
+  0 
+ 0 

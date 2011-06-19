@@ -3610,15 +3610,3 @@ upgrade(troops,"tribal_orc","tribal_orc_warrior")
 upgrade(troops,"tribal_orc_warrior","tribal_orc_chief")
 
 
-
-
-
-
-
-
-
-
-
-
-
-

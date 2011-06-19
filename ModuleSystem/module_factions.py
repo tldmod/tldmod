@@ -80,4 +80,15 @@ factions = [
 #  ("slavers","Slavers", 0, 0.1, [], []),
 #  ("peasant_rebels","Peasant Rebels", 0, 1.0,[("noble_refugees",-1.0),("player_faction",-0.4)], []),
   ("noble_refugees","Noble Refugees", 0, 0.5,[], []),
+  ("mission_companion_1" ,"_", 0, 0.5,[], []), # mission companion arrays
+  ("mission_companion_2" ,"_", 0, 0.5,[], []),
+  ("mission_companion_3" ,"_", 0, 0.5,[], []),
+  ("mission_companion_4" ,"_", 0, 0.5,[], []),
+  ("mission_companion_5" ,"_", 0, 0.5,[], []),
+  ("mission_companion_6" ,"_", 0, 0.5,[], []),
+  ("mission_companion_7" ,"_", 0, 0.5,[], []),
+  ("mission_companion_8" ,"_", 0, 0.5,[], []),
+  ("mission_companion_9" ,"_", 0, 0.5,[], []),
+  ("mission_companion_10","_", 0, 0.5,[], []),
+  ("mission_companion_11","_", 0, 0.5,[], []),
 ]

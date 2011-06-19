@@ -145,6 +145,12 @@ slot_faction_occasional_sound3_night = 178
 _= "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"
 
+# slots for stealth missions companion tracking
+slot_fcomp_troopid = 1
+slot_fcomp_agentid = 2
+slot_fcomp_hp      = 3
+slot_fcomp_kia     = 4
+
 ##################################
 
 
@@ -156,7 +162,9 @@ slot_party_victory_value       = 1  #TLD, subtract from faction strength when de
 slot_party_retreat_flag        = 2
 slot_party_ignore_player_until = 3
 slot_party_ai_state            = 4
+slot_mound_state               = 4  #TLD
 slot_party_ai_object           = 5
+slot_mound_killer_faction      = 5  #TLD
 
 slot_town_belongs_to_kingdom   = 6
 slot_town_lord                 = 7
@@ -494,7 +502,12 @@ slot_scene_belfry_props_begin   = 10
 ########################################################
 #slot_troop_role         = 0  # 10=Kingdom Lord
 #slot_troop_player_start_char   = 1  #TLD starting char
-
+slot_troop_wound_mask          = 1 # TLD heroes wounds and death system
+wound_arm   = 0x001
+wound_leg   = 0x002
+wound_head  = 0x004
+wound_chest = 0x008
+wound_death = 0x010
 
 slot_troop_occupation          = 2  # 0 = free, 1 = merchant
 #slot_troop_duty               = 3  # Kingdom duty, 0 = free

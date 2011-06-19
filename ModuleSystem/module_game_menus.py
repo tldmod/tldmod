@@ -1533,17 +1533,8 @@ game_menus = [
      #(set_background_mesh, "mesh_pic_camp"),
 	 (set_background_mesh, "mesh_ui_default_menu_window"),
     ],
-   [ ("camp_scene",[],"Walk around camp.",
-       [(jump_to_scene, "scn_camp_scene"),
-        (change_screen_mission),
-        ]),
-#	 ("camp_action_1",[],"Walk around place.",
-#       [(set_jump_mission,"mt_ai_training"),
-#        (call_script, "script_setup_random_scene"),
-#        (change_screen_mission),
-#  
-#       ]),	   
-     ("camp_action",[],"Take an action.",[(jump_to_menu, "mnu_camp_action"),]),
+   [ ("camp_scene"      ,[],"Walk around camp."  ,[(jump_to_scene, "scn_camp_scene"),(change_screen_mission)]),
+     ("camp_action"     ,[],"Take an action."    ,[(jump_to_menu, "mnu_camp_action")]),
 ##     ("camp_wait_here",[],"Wait here for some time.",
 ##       [(assign,"$g_camp_mode", 1),
 ###       (assign,"$auto_menu","mnu_camp"),
@@ -1753,31 +1744,28 @@ game_menus = [
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary place enabled!", 0x30FFC8),
    ]),
-   ("camp_mvtest_intro",[],"Test intro.",[
-    (call_script, "script_tld_start_intro_movie"),
-#    (change_screen_map),
+   ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
+    (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
+    (try_begin),
+        ]+concatenate_scripts([
+            [
+            (eq, ":faction_index", x),
+            ]+concatenate_scripts([[
+                (assign, ":rank", fac_reward_items_list[x][item_entry][0]),
+                (assign, ":item", fac_reward_items_list[x][item_entry][1]),
+                (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
+                (assign, reg0, ":rank"),
+                (assign, reg1, ":modifier"),
+                (str_store_item_name, s20, ":item"),
+                (display_message, "@Rank {reg0}: {s20}, mod {reg1}.", 0x30FFC8),
+                ] for item_entry in range(len(fac_reward_items_list[x]))
+            ])+[
+         (else_try),
+            ] for x in range(len(fac_reward_items_list))
+        ])+[
+    (try_end),
+    
    ]),
-   # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
-    # (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
-    # (try_begin),
-        # ]+concatenate_scripts([
-            # [
-            # (eq, ":faction_index", x),
-            # ]+concatenate_scripts([[
-                # (assign, ":rank", fac_reward_items_list[x][item_entry][0]),
-                # (assign, ":item", fac_reward_items_list[x][item_entry][1]),
-                # (assign, ":modifier", fac_reward_items_list[x][item_entry][2]),
-                # (assign, reg0, ":rank"),
-                # (assign, reg1, ":modifier"),
-                # (str_store_item_name, s20, ":item"),
-                # (display_message, "@Rank {reg0}: {s20}, mod {reg1}.", 0x30FFC8),
-                # ] for item_entry in range(len(fac_reward_items_list[x]))
-            # ])+[
-         # (else_try),
-            # ] for x in range(len(fac_reward_items_list))
-        # ])+[
-    # (try_end),   
-   # ]),
    # ("camp_mvtest_coords",[],"Print party coordinates x100.",[
       # (set_fixed_point_multiplier, 100),
       # (party_get_position, pos13, "p_main_party"),
@@ -2655,6 +2643,22 @@ game_menus = [
          (val_clamp, "$tld_option_formations", 0, 2),
         ]
        ),
+	  ("game_options_town_entry",[
+	     (try_begin),(neq, "$tld_option_town_entry", 0),(str_store_string, s7, "@M&B system"),
+          (else_try),                                   (str_store_string, s7, "@TLD system"),
+         (try_end),
+	    ],"Spawning when entering towns: {s7}.",[
+	     (store_sub, "$tld_option_town_entry", 1, "$tld_option_town_entry"),
+         (val_clamp, "$tld_option_town_entry", 0, 2),
+		]),
+	  ("game_options_death",[
+	     (try_begin),(neq, "$tld_option_death", 0),(str_store_string, s7, "@ON"),
+          (else_try),                              (str_store_string, s7, "@OFF"),
+         (try_end),
+	    ],"Permanent death for npcs: {s7}.",[
+	     (store_sub, "$tld_option_death", 1, "$tld_option_death"),
+         (val_clamp, "$tld_option_death", 0, 2),
+		]),
       ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
     ]
   ),
@@ -5475,31 +5479,6 @@ game_menus = [
 #             (assign, "$talk_context", tc_castle_commander),
 #             (change_screen_map_conversation, reg(6))
 #             ]),
-      
-	  ("moria_enter",[(eq,1,0)], "You are not reading this",[
-			(modify_visitors_at_site,"scn_moria_center",),
-			(reset_visitors),
-            (set_visitor,2,"trp_player"),
-			(set_jump_mission,"mt_dungeon_crawl"),
-            (jump_to_scene, "scn_moria_center"),
-            (change_screen_mission),
-	  ]
-	  ,"Enter Moria."),
-	  
-	  #Enter dungeon in Moria begin (mtarini)
-      ("moria_secret",[
-        (eq, "$current_town", "p_town_moria"),
-	  	(eq,"$entry_to_town_forbidden",1), 
-        ],"Search for a secret entrance to Moria",[
-            (modify_visitors_at_site,"scn_moria_secret_entry"),
-			(reset_visitors),
-            (set_visitor,0,"trp_player"),
-			(set_jump_mission,"mt_dungeon_crawl"),
-            (jump_to_scene, "scn_moria_secret_entry"),
-            (change_screen_mission),
-       ]),
-      #Enter dungeon in Moria end (mtarini)
-
       ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
        "Approach the gates and hail the guard.",[
@@ -5514,6 +5493,20 @@ game_menus = [
 ##                                                   (assign, "$talk_context", tc_castle_gate),
 ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    ]),
+      
+	  #Enter dungeon in Moria begin (mtarini)
+      ("moria_enter",[
+        (eq, "$current_town", "p_town_moria"),
+	  	(eq,"$entry_to_town_forbidden",1), 
+        ],"Search for a secret entrance to Moria",[
+            (modify_visitors_at_site,"scn_moria_secret_entry"),
+			(reset_visitors),
+            (set_visitor,1,"trp_player"),
+            (jump_to_scene, "scn_moria_secret_entry"),
+            (change_screen_mission),
+       ],"Enter Moria."),
+      #Enter dungeon in Moria end (mtarini)
+
 	  
 	  
       ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
@@ -7809,7 +7802,7 @@ game_menus = [
              (call_script, "script_init_town_walkers"),
              (set_jump_mission,"mt_town_center"),
              (assign, ":override_state", af_override_horse),
-             (try_begin),
+			 (try_begin),
                (eq, "$sneaked_into_town", 1), #setup disguise
                (assign, ":override_state", af_override_all),
              (try_end),
@@ -7825,21 +7818,26 @@ game_menus = [
              (mission_tpl_entry_set_override_flags, "mt_town_center", 5, ":override_state"),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 6, ":override_state"),
              (mission_tpl_entry_set_override_flags, "mt_town_center", 7, ":override_state"),
-             
-			 (try_begin),
-			   (eq, "$town_entered", 0),(assign, "$town_entered", 1),
-             (try_end),
+             (assign, "$spawn_horse", 0),
 			 (try_begin),                 # start outside when center not visited yet 
 #               (eq, "$town_nighttime", 0),
+               (eq, "$tld_option_town_entry",0),          # TLD style entrance
+			   (assign, "$spawn_horse", 1),
 			   (party_slot_eq,"$current_town", slot_center_visited, 0),
 			   (party_set_slot,"$current_town", slot_center_visited, 1),
-               (try_begin),
-                 (troop_is_mounted, "trp_player"),
-				 (set_jump_entry, 1),
-			   (else_try),
-				 (set_jump_entry, 2),
+			   (try_begin),(troop_is_mounted, "trp_player"),(set_jump_entry, 1),(assign, "$spawn_horse", 0),
+			    (else_try),                                 (set_jump_entry, 2),(assign, "$spawn_horse", 0),
+			   (try_end),
+			 (try_end),
+			 (try_begin), 
+			   (eq, "$tld_option_town_entry",1),          # MB style entrance
+			   (assign, "$spawn_horse", 0),
+			   (eq, "$town_entered", 0),
+			   (try_begin),(troop_is_mounted, "trp_player"),(set_jump_entry, 1),
+			    (else_try),                                 (set_jump_entry, 2),
 			   (try_end),
              (try_end),
+             (assign, "$town_entered", 1),
              (jump_to_scene, ":town_scene"),
              (change_screen_mission),
            (try_end),
@@ -7850,7 +7848,7 @@ game_menus = [
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
       #(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),],
-       "Visit the {s61} Smiths.",
+       "Visit the {s61} Smithy.",
        [   (party_get_slot, ":merchant_troop", "$current_town", slot_town_weaponsmith),
            (change_screen_trade, ":merchant_troop"),
         ]),
@@ -7945,6 +7943,16 @@ game_menus = [
            (rest_for_hours_interactive, 24 * 7, 5, 0), #rest while not attackable
            (change_screen_return),
           ]),
+		
+      ("speak_with_elder",[
+	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
+      #(party_slot_eq, "$current_town", slot_elder_merchant_visited, 1), #check if elder has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+      (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
+	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
+       "Visit the Elder.",
+       [   (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
+           (call_script, "script_setup_troop_meeting", ":elder_troop", 0),
+        ]),
 
 ##      ("rest_until_morning",
 ##       [
@@ -9303,8 +9311,6 @@ game_menus = [
   ),
 
 
-  
-###################### starting quest, GA ##############################  
 ###################### starting quest, GA ##############################  
 ("starting_quest_good",0,
    "^^^^^^^^ You spot a small caravan under attack from a band of orcs. What will you do?",
@@ -9342,7 +9348,7 @@ game_menus = [
 	],[],),
 
 ( "custom_battle_choose_faction1",0,
-    "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01"),],
+    "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],
     [#("good_2xmore",[],"Good faction, 2x advantage",[(assign,"$cbadvantage", 3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
      ("good_equal" ,[],"Good faction"         ,[(assign,"$cbadvantage", 2),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
 	 #("good_2xless",[],"Good faction, 2x handicap" ,[(assign,"$cbadvantage", 1),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
@@ -9353,7 +9359,7 @@ game_menus = [
      ("go_back"    ,[],"Go back"              ,[(jump_to_menu,"mnu_start_game_3")]),
 ]),
 ( "custom_battle_choose_faction2",0,
-    "^^^^^^^^^^Choose good faction", "none", [(set_background_mesh, "mesh_relief01"),],
+    "^^^^^^^^^^Choose good faction", "none", [(set_background_mesh, "mesh_relief01")],
     [("cb_mordor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor1"   ,[],"Rohan"     ,[(assign,"$faction_good",fac_rohan   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor2"   ,[],"Lothlorien",[(assign,"$faction_good",fac_lorien  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
@@ -9365,7 +9371,7 @@ game_menus = [
      ("go_back"      ,[],"Go back"   ,[(jump_to_menu,"mnu_custom_battle_choose_faction1")]),
 ]),
 ( "custom_battle_choose_faction3",0,
-    "^^^^^^^^^^Choose evil faction", "none", [(set_background_mesh, "mesh_relief01"),],
+    "^^^^^^^^^^Choose evil faction", "none", [(set_background_mesh, "mesh_relief01")],
     [("cb_mordor"    ,[],"Mordor"     ,[(assign,"$faction_evil",fac_mordor  ),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor1"   ,[],"Isengard"   ,[(assign,"$faction_evil",fac_isengard),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor2"   ,[],"Dunland"    ,[(assign,"$faction_evil",fac_dunland ),(jump_to_menu,"mnu_custom_battle_2"),]),
@@ -9379,7 +9385,166 @@ game_menus = [
 	 ]
 ),
 
-	
+######################### TLD808 menus ##########################
+( "ancient_ruins", 0,
+  "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_relief01")],
+  [ ("rescue_mission",  [(check_quest_active, "qst_mirkwood_sorcerer")],  "Sneak_into_the_sorcerer's_lair under the night's cover.",
+						[(try_begin),
+							(neg|is_currently_night),
+							(store_time_of_day, reg1),
+							(assign, reg2, 24),
+							(val_sub, reg2, reg1),
+							(display_message, "@You_wait_for_darkness_to_fall.", 4292863579),
+							(rest_for_hours, reg2),
+						(try_end),
+						(set_party_battle_mode),
+						(call_script, "script_initialize_general_rescue"),
+						(call_script, "script_initialize_sorcerer_quest"),
+						(assign, "$rescue_stage", 0),
+#						(call_script, "script_setup_troop_meeting", "trp_barman",0),
+#						(set_jump_mission, "mt_pick_troops"),
+#						(jump_to_scene, "scn_pick_troops_b", 0),
+	(assign, "$active_rescue", 5),
+#	(assign, "$sorcerer_quest", 3),
+    (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+	(disable_party, "p_ancient_ruins"),
+	(call_script, "script_set_meta_stealth"),
+	(call_script, "script_crunch_stealth_results"),
+	(call_script, "script_set_infiltration_player_record"),
+	(try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
+		(display_message, "@You_are_quickly_discovered_by_the_enemy."),
+		(display_message, "@Eliminate_them_before_the_alarm_spreads!"),
+	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
+		(display_message, "@You_advance_stealthily_far_into_the_forest."),
+		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
+		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
+	 (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 2),(call_script, "script_final_sorcerer_fight"),
+		(display_message, "@You_have_evaded_the_patrols_and_crept_close_to_the_ruins!"),
+		(display_message, "@You_have_found_the_sorcerer!"),
+	(try_end),
+						(change_screen_mission)]),
+    ("next_rescue_scene", [], "_!",  
+						[(call_script, "script_store_hero_death"),
+						 (call_script, "script_set_meta_stealth"),
+						 (call_script, "script_crunch_stealth_results"),
+						 (try_begin),
+							(eq, "$rescue_stage", 0),
+							(try_begin),
+								(ge, "$stealth_results", 2),
+								(assign, "$rescue_stage", 1),
+								(call_script, "script_infiltration_stealth_1"),
+								(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
+								(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
+							(else_try),
+								(assign, "$rescue_stage", 2),
+								(call_script, "script_final_sorcerer_fight"),
+								(display_message, "@You_have_found_the_sorcerer!"),
+								(display_message, "@Kill_him_quickly_before_he_escapes!"),
+							(try_end),
+						(else_try),
+							(eq, "$rescue_stage", 1),
+							(assign, "$rescue_stage", 2),
+							(call_script, "script_final_sorcerer_fight"),
+							(display_message, "@You_have_found_the_sorcerer!", 0),
+							(display_message, "@Kill_him_quickly_before_he_escapes!", 0),
+						(try_end)],"Continue_onward!"),
+#"Continue_onward!"  
+		("leave", [], "Leave.",
+							[(leave_encounter),
+							(change_screen_return),
+							(neg|eq, "$active_rescue", 0),
+							(call_script, "script_infiltration_mission_final_casualty_tabulation", 0, 0)]),
+	]
+),
+
+( "burial_mound", 0, 
+  "You_approach_the_burial_mound_of_{s3}_of_{s2}._It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
+[		(store_encountered_party, ":mound"),
+#		(str_store_party_name, s1, ":mound"),
+		(store_faction_of_party, ":local1", ":mound"),
+#		(store_relation, ":local2", ":local1", "fac_player_faction"),
+		(party_get_slot, ":hero", ":mound", slot_party_commander_party),
+		(str_store_faction_name, s2, ":local1"),
+		(str_store_troop_name, s3, ":hero")], [
+  ("pay_respects", [(store_encountered_party, ":mound"),
+					(store_faction_of_party, ":faction", ":mound"),
+					(store_relation, ":local2", ":faction", "fac_player_faction"),
+					(gt, ":local2", 0),
+					(party_get_slot, ":state", ":mound", slot_mound_state),
+					(eq, ":state", 1)],
+   "Kneel_and_pay_your_respects.", [(jump_to_menu, "mnu_burial_mound_respects")]),  
+  ("swear_oath",   [(store_encountered_party, ":mound"),
+					(store_faction_of_party, ":faction", ":mound"),
+					(store_relation, ":local2", ":faction", "fac_player_faction"),
+					(gt, ":local2", 0),
+					(party_get_slot, ":state", ":mound", slot_mound_state),
+					(eq, ":state", 1),
+					(check_quest_active|neg, "qst_oath_of_vengeance")],
+   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_burial_mound_oath")]),  
+  ("despoil",      [(store_encountered_party, ":mound"),
+					(str_store_party_name, s1, ":mound"),
+					(store_faction_of_party, ":faction", ":mound"),
+					(store_relation, ":local2", ":faction", "fac_player_faction"),
+					(neg|gt, ":local2", 0)],
+   "Desecrate_the_site",  [(jump_to_menu, "mnu_burial_mound_despoil")]),  
+  ("leave",        [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
+]),  
+
+( "burial_mound_respects", 0, 
+  "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife. \
+  There is nothing left to be done here.", "none",
+					[(store_encountered_party, ":mound"),
+					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
+					(str_store_troop_name, s1, ":hero"),
+					(party_set_slot, ":mound", slot_mound_state, 2),
+					(store_random, ":rnd", 100),
+					(try_begin),(is_between, ":rnd", 5, 15),(call_script, "script_cf_gain_trait_reverent"),
+					 (else_try),		(neg|ge, ":rnd", 5),(call_script, "script_cf_gain_trait_blessed"),
+					(try_end)],[
+  ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
+]),  
+
+( "burial_mound_oath", 0, 
+  "You loudly swear an oath of vengeance for the death of {s1}. \
+  Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
+	[(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
+	(party_get_slot, ":target", ":mound", slot_mound_killer_faction),
+	(store_current_day, ":day"),
+	(val_add, ":day", 3),
+	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
+	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
+	(quest_set_slot, "qst_oath_of_vengeance", 3, 0), # counter for destroyed parties of target faction
+	(party_set_slot, ":mound", slot_mound_state, 3),
+#	(str_store_faction_name, s2, ":target"),
+#	(assign, "$vengeance_quest_active", 1),
+	(setup_quest_text, "qst_oath_of_vengeance"),
+	(start_quest, "qst_oath_of_vengeance")],[
+ ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
+]),
+
+( "burial_mound_despoil", 0, 
+  "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts. \
+  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
+	[(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
+	 (store_random, ":rnd", 100),
+	 (try_begin),(is_between, ":rnd", 5, 10),(call_script, "script_cf_gain_trait_despoiler"),
+	  (else_try),    (neg|ge, ":rnd", 5),    (call_script, "script_cf_gain_trait_accursed"),
+	 (try_end),
+	 (party_set_slot, ":mound", slot_mound_state, 4),
+	 (disable_party, ":mound")],[
+ ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
+]),
+ 
+( "funeral_pyre", 0, 
+  "You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
+  Here his corpse was ceremoniously burned by the evil men \
+  who served as his personal guard. Nothing of value remains.", "none", 
+   [(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s3, ":hero"),
+	(store_faction_of_party, ":faction", ":mound"),
+	(str_store_faction_name, s2, ":faction")],[
+ ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
+]),
+
 ]
 
 ## quick scene chooser

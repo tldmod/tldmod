@@ -3,6 +3,8 @@ from header_parties import *
 from ID_troops import *
 from ID_factions import *
 from ID_map_icons import *
+from ID_menus import *
+
 
 pmf_is_prisoner = 0x0001
 
@@ -39,6 +41,8 @@ party_templates = [
   ("cattle_herd","Cattle Herd",icon_cattle|carries_goods(10),0,fac_neutral,merchant_personality,[(trp_cattle,80,120)]),
   ("ruins","Ruins",icon_ancient_ruins,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
   ("legendary_place","Legendary Place",icon_camp,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
+  ("mound","Hero_Mound",icon_burial_mound|pf_hide_defenders|pf_is_static|pf_always_visible, 0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
+  ("pyre","Hero_Pyre",icon_burial_mound|pf_hide_defenders|pf_is_static|pf_always_visible, 0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
   
 ##  ("vaegir_nobleman","Vaegir Nobleman",icon_eorl_guard_of_rohan|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_eorl_guard_of_rohan,2,6),(trp_brego_guard_of_rohan,4,12)]),
 ##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_veteran_knight_of_gondor,2,6),(trp_knight_of_the_citadel,4,12)]),
@@ -47,12 +51,12 @@ party_templates = [
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
   ("wild_troll"      ,"Wild Troll"        ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,2),]),
-  ("raging_trolls"   ,"Raging Trolls"        ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
+  ("raging_trolls"   ,"Raging Trolls"     ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
 
   ("looters"         ,"Tribal Orcs"       ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
   
-  ("forest_bandits"  ,"Orc Stragglers"       ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
-  ("mountain_bandits","Wild Goblins"    ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
+  ("forest_bandits"  ,"Orc Stragglers"    ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
+  ("mountain_bandits","Wild Goblins"      ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
   ("steppe_bandits"  ,"Dunlending Raiders",icon_khergit   |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_raven_rider,3,48)]),
   ("sea_raiders"     ,"Corsair Raiders"   ,icon_axeman    |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_marauder,3,50)]),
 

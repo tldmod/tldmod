@@ -34,5 +34,16 @@ fac_deserters = 32
 fac_mountain_bandits = 33
 fac_forest_bandits = 34
 fac_noble_refugees = 35
+fac_mission_companion_1 = 36
+fac_mission_companion_2 = 37
+fac_mission_companion_3 = 38
+fac_mission_companion_4 = 39
+fac_mission_companion_5 = 40
+fac_mission_companion_6 = 41
+fac_mission_companion_7 = 42
+fac_mission_companion_8 = 43
+fac_mission_companion_9 = 44
+fac_mission_companion_10 = 45
+fac_mission_companion_11 = 46
 
 

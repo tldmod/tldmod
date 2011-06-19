@@ -2129,4 +2129,14 @@ scene_props = [
 ("gon_small_wall_d_E",0,"gon_small_wall_d","0", []),
 ("gon_small_wall_e_E",0,"gon_small_wall_e","0", []),
 ("gon_upper_apt_E",0,"gon_upper_apt_a","0", []),
+
+("horse_player_horse",sokf_invisible,"mearh","0", [(ti_on_init_scene_prop,[
+    (eq, "$tld_option_town_entry", 0),
+	(eq, "$spawn_horse", 1),
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"),
+    (troop_get_inventory_slot, ":horse", "trp_player", 8),
+	(gt, ":horse", 1),
+	(set_spawn_position, pos1),(spawn_horse,":horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+	
+("mt_tirith_gate",0,"tirith_gate","bo_tirith_gate", []),
 ]

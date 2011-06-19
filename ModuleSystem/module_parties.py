@@ -5,7 +5,7 @@ from ID_factions import *
 from ID_party_templates import *
 from ID_map_icons import *
 from module_constants import *
-
+from ID_menus import *
 ####################################################################################################################
 #  Each party record contains the following fields:
 #  1) Party id: used for referencing parties in other files.
@@ -288,4 +288,6 @@ parties = [
   ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
   ("ford_moria2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
   
+  ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
+
   ]

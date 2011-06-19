@@ -1391,3 +1391,5 @@ spr_gon_castle_h_battlement_barrier_E = 1389
 spr_gon_small_wall_d_E = 1390
 spr_gon_small_wall_e_E = 1391
 spr_gon_upper_apt_E = 1392
+spr_horse_player_horse = 1393
+spr_mt_tirith_gate = 1394
