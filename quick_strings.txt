@@ -1,4 +1,4 @@
-886
+885
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -476,7 +476,6 @@ qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
 qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
-qstr_Rank_{reg0}:_{s20}_m Rank_{reg0}:_{s20},_mod_{reg1}.
 qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s2 {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
