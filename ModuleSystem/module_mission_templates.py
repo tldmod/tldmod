@@ -37,6 +37,51 @@ pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 
+
+# dynamic fog in dungeons, governed by player triggering scene props
+dungeon_darkness_effect = (1, 0, 0, [], [ 
+	(get_player_agent_no,":player"), 
+    (agent_get_position,pos25,":player"),
+    # cycle through fog triggers, find closest one
+	(assign,":min_dist",200),
+	(assign,":min_pointer",-1),
+    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
+		(scene_prop_get_num_instances,":max_instance", ":pointer"),
+		(ge,":max_instance", 1),
+		# checking distance to player
+		(try_for_range,":instance_no",0,":max_instance"),
+			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
+			(ge, ":i", 0),
+            (prop_instance_get_position,pos1,":i"),
+            (get_distance_between_positions,":dist",pos1,pos25),
+	        (le,":dist",":min_dist"),
+			(assign, ":min_dist", ":dist"), 
+			(assign, ":min_pointer", ":pointer"), 
+        (try_end),
+    (try_end),
+	
+	# setting fog thickness
+	(try_begin),
+		(neq,":min_pointer",-1),
+		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
+		(else_try), (eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
+		(else_try), (eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
+		(else_try), (eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
+		(else_try), (eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
+		(else_try), (eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		(try_end),
+		(set_fog_distance,reg11,0x000001), 
+		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
+		(try_begin),
+			(eq, reg11, 10000),
+			(assign, "$player_is_inside_dungeon",0),
+		(else_try),
+			(assign, "$player_is_inside_dungeon",1),
+		(try_end),
+	(try_end),
+
+  ])
+	
 common_battle_mission_start = (ti_before_mission_start, 0, 0, [],
   [ (team_set_relation, 0, 2, 1),
     (team_set_relation, 1, 3, 1),
@@ -64,7 +109,7 @@ common_battle_tab_press = (ti_tab_pressed, 0, 0, [],
       (display_message,"str_can_not_retreat"),
     (try_end),
     ])
-
+	
 common_arena_fight_tab_press = (ti_tab_pressed, 0, 0, [],[(question_box,"str_give_up_fight")])
 
 common_custom_battle_tab_press = (ti_tab_pressed, 0, 0, [],
@@ -4377,39 +4422,32 @@ mission_templates = [
     ],
   ),
 ########################### end custom battle faction troops showoff
-( "scene_chooser",mtf_battle_mode,-1,
+
+( "dungeon_crawl",mtf_battle_mode,-1,
     "You go to the scene",
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
 	
-	(1, 0, 0, [], # dynamic fog in dungeons, governed by player triggering scene props
-   [ (get_player_agent_no,":player"), 
-     (agent_get_position,pos25,":player"),
-     # cycle through fog triggers
-     (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
-       (scene_prop_get_num_instances,":max_instance", ":pointer"),
-       (ge,":max_instance", 1),
-	   # setting fog thickness
-       (try_begin),(eq,":pointer","spr_light_fog_black0"),(assign,":fog_distance",200), # 10000
-	       (else_try),(eq,":pointer","spr_light_fog_black1"),(assign,":fog_distance",120),# was 500
-	       (else_try),(eq,":pointer","spr_light_fog_black2"),(assign,":fog_distance",80), # was 200
-	       (else_try),(eq,":pointer","spr_light_fog_black3"),(assign,":fog_distance",40),  # was 120
-	       (else_try),(eq,":pointer","spr_light_fog_black4"),(assign,":fog_distance",20), # was 80
-	       (else_try),(eq,":pointer","spr_light_fog_black5"),(assign,":fog_distance",10), # was 20
-       (try_end),
-	   # checking distance to player
-         (try_for_range,":instance_no",0,":max_instance"),
-	       (scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
-           (ge, ":i", 0),
-             (prop_instance_get_position,pos1,":i"),
-             (get_distance_between_positions,":dist",pos1,pos25),
-	         (le,":dist",150),
-			   (set_fog_distance,":fog_distance",0x000001), # was 0x010101
-			   (assign, reg11, ":fog_distance"), (display_message, "@DEBUG: Fog distance: {reg11}"),
-         (try_end),
-      (try_end),
-  ]),
+    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
+
+    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
+	
+	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	
+	dungeon_darkness_effect,
+	
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), ]),
+  ],
+),
+
+
+( "scene_chooser",mtf_battle_mode,-1,
+    "You go to the scene",
+    [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+	dungeon_darkness_effect,
+	
   ],
 ),
  

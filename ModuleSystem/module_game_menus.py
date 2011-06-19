@@ -5475,6 +5475,31 @@ game_menus = [
 #             (assign, "$talk_context", tc_castle_commander),
 #             (change_screen_map_conversation, reg(6))
 #             ]),
+      
+	  ("moria_enter",[(eq,1,0)], "You are not reading this",[
+			(modify_visitors_at_site,"scn_moria_center",),
+			(reset_visitors),
+            (set_visitor,2,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl"),
+            (jump_to_scene, "scn_moria_center"),
+            (change_screen_mission),
+	  ]
+	  ,"Enter Moria."),
+	  
+	  #Enter dungeon in Moria begin (mtarini)
+      ("moria_secret",[
+        (eq, "$current_town", "p_town_moria"),
+	  	(eq,"$entry_to_town_forbidden",1), 
+        ],"Search for a secret entrance to Moria",[
+            (modify_visitors_at_site,"scn_moria_secret_entry"),
+			(reset_visitors),
+            (set_visitor,0,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl"),
+            (jump_to_scene, "scn_moria_secret_entry"),
+            (change_screen_mission),
+       ]),
+      #Enter dungeon in Moria end (mtarini)
+
       ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
        "Approach the gates and hail the guard.",[
@@ -5489,20 +5514,6 @@ game_menus = [
 ##                                                   (assign, "$talk_context", tc_castle_gate),
 ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    ]),
-      
-	  #Enter dungeon in Moria begin (mtarini)
-      ("moria_enter",[
-        (eq, "$current_town", "p_town_moria"),
-	  	(eq,"$entry_to_town_forbidden",1), 
-        ],"Search for a secret entrance to Moria",[
-            (modify_visitors_at_site,"scn_moria_secret_entry"),
-			(reset_visitors),
-            (set_visitor,1,"trp_player"),
-            (jump_to_scene, "scn_moria_secret_entry"),
-            (change_screen_mission),
-       ],"Enter Moria."),
-      #Enter dungeon in Moria end (mtarini)
-
 	  
 	  
       ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),

@@ -1,4 +1,4 @@
-823
+824
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -350,7 +350,8 @@ qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_max_X_{reg0}_max_Y_{ max_X_{reg0}_max_Y_{reg1}
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
-qstr_DEBUG:_Fog_distance: DEBUG:_Fog_distance:_{reg11}
+qstr_Leave_scene? Leave_scene?
+qstr_Trace_back_your_step Trace_back_your_steps_and_go_back_in_the_open_now?
 qstr_{s24}__{reg13}_ {s24}_({reg13})
 qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})
 qstr_Resource_Pts:^_{reg1 Resource_Pts:^_{reg12}_(in_{s16})
