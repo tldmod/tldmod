@@ -2017,9 +2017,9 @@ mission_templates = [
       ]),
       
       # terrible workaround for the buggy? add_visitors_to_current_scene
-      (1, 0, 0, [(eq, "$g_tld_training_mode", abm_gauntlet)],
+      (0.2, 0, 0, [(eq, "$g_tld_training_mode", abm_gauntlet)],
       [
-         (store_add, ":enemies", "$g_tld_training_wave", 3),
+         (store_add, ":enemies", "$g_tld_training_wave", 2),
          (assign, ":alive_enemies", 0),
          (try_for_agents, ":agent_no"), # count enemy agents spawned
            (agent_is_alive, ":agent_no"),
@@ -2064,7 +2064,7 @@ mission_templates = [
          (num_active_teams_le, 1)
          ],
        [
-         (store_add, ":enemies", "$g_tld_training_wave", 4),
+         (store_add, ":enemies", "$g_tld_training_wave", 3),
          (assign, ":enemy_entry_point", 16), #first entry point
          (assign, ":spawnings", ":enemies"),
          (val_min, ":spawnings", 12), #total entry points
@@ -4487,17 +4487,17 @@ mission_templates = [
         (position_set_x, pos1, 4500),
         (position_set_y, pos1, 3900),
         (set_spawn_position, pos1),
-        (spawn_agent, "trp_farmer"), #has to be in a condition block, or it will crash
+        (spawn_agent, "trp_walker_man_rohan_t"), #has to be in a condition block, or it will crash
         (agent_set_team, reg0, 0),
         (agent_set_stand_animation, reg0, "anim_stand_man"),
-        (agent_set_hit_points, reg0, 1, 1),
+        (agent_set_hit_points, reg0, 0, 1),
         (position_move_y, pos1, 200),
         (position_rotate_z, pos1, 180),
         (set_spawn_position, pos1),
-        (spawn_agent, "trp_peasant_woman"),
+        (spawn_agent, "trp_walker_woman_rohan_d"),
         (agent_set_team, reg0, 0),
         (agent_set_stand_animation, reg0, "anim_stand_man"),
-        (agent_set_hit_points, reg0, 1, 1),
+        (agent_set_hit_points, reg0, 0, 1),
        ],
        [
        ]),
@@ -4510,7 +4510,7 @@ mission_templates = [
        (assign, "$g_tld_intro_state", 1),
       ]),
 	
-      (0.5, 0, 0,
+      (0, 0, 0,
        [
          (set_show_messages, 0),
          (store_mission_timer_a, ":cur_time"),
@@ -4529,7 +4529,7 @@ mission_templates = [
          
          (try_begin),
            (eq, "$g_tld_intro_state", 1), #look at the sky
-           #(ge, ":cur_time", 1),
+           (ge, ":cur_time", 1),
            (mission_cam_set_mode, 1),
            (init_position, pos1),
            (position_rotate_z, pos1, 90),

@@ -2190,6 +2190,9 @@ troops = [
 ["trainer_elf","Trainer","_",tf_hero| tf_lorien| tfg_armor| tfg_boots, scn_elf_arena|entry(1),0,fac_commoners,
    [itm_lorien_armor_e,itm_lorien_boots,],
       0,0,0,lorien_elf_face_2],
+["trainer_beorn","Trainer","_",tf_hero| tfg_armor| tfg_boots, scn_beorn_arena|entry(1),0,fac_commoners,
+   [itm_beorn_padded,itm_rohan_shoes,],
+      0,0,0,beorn_face2],
 ["trainer_dwarf","Trainer","_",tf_hero| tf_dwarf| tfg_armor| tfg_boots, scn_dwarf_arena|entry(1),0,fac_commoners,
    [itm_leather_dwarf_armor,itm_dwarf_pad_boots,],
       0,0,0,dwarf_face_2],
@@ -2205,6 +2208,12 @@ troops = [
 ["trainer_rhun","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_rhun_arena|entry(1),0,fac_commoners,
    [itm_rhun_armor_a,itm_furry_boots,],
       0,0,0,rhun_man2],
+["trainer_harad","Trainer","_",tf_hero| tf_harad| tfg_armor| tfg_boots, scn_harad_arena|entry(1),0,fac_commoners,
+   [itm_harad_scale,itm_harad_scale_greaves,],
+      0,0,0,haradrim_face_2],
+["trainer_umbar","Trainer","_",tf_hero| tfg_armor| tfg_boots, scn_umbar_arena|entry(1),0,fac_commoners,
+   [itm_umb_armor_g,itm_corsair_boots,],
+      0,0,0,bandit_face2],
       
 #
 # Ransom brokers.

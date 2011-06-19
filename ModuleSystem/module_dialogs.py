@@ -8958,9 +8958,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0),
       (troop_get_slot, ":wave_reached", "$g_talk_troop", slot_troop_trainer_training_result),
       (store_sub, ":reward_xp", ":wave_reached", 1),
-      (store_mul, ":reward_gold", ":reward_xp", 50), #50,100,..
-      (val_mul, ":reward_xp", 60), #60,120,..
-      (add_xp_as_reward, ":reward_xp"),
+      (store_mul, ":reward_gold", ":reward_xp", 30), #0,30,60,..
+      (val_mul, ":reward_xp", 50), #0,50,100,..
+      (add_xp_to_troop, ":reward_xp", "trp_player"),
       (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
       (try_begin),
         (ge, ":wave_reached", 10),
@@ -8992,14 +8992,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (eq, ":training_mode", abm_training),
         (store_sub, ":reward_xp", ":num_opponents", 1),
         (val_mul, ":reward_xp", 20), #0-60
+        (add_xp_to_troop, ":reward_xp", "trp_player"),
       (else_try),
         (eq, ":training_mode", abm_team),
         (store_div, ":reward_xp", ":num_opponents", 4),
         (val_sub, ":reward_xp", 1), #0-2
         (store_mul, ":reward_gold", ":reward_xp", 40), #0-80
         (val_mul, ":reward_xp", 30), #0-60
+        (add_xp_as_reward, ":reward_xp"),
       (try_end), # no rewards for mass melee
-      (add_xp_as_reward, ":reward_xp"),
       (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
      ]],
      

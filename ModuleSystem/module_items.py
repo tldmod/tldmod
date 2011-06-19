@@ -205,7 +205,7 @@ items =[
 ["blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,47,weight(2)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,47,weight(2)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["green_tunic","Green_Tunic",[("rohan_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,47,weight(2)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["red_tunic","Red_Tunic",[("woodman_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,47,weight(2)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["red_tunic","Red_Tunic",[("haradrim_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,47,weight(2)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["leather_apron","Leather_Apron",[("smith_leather_apron",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,61,weight(3)|head_armor(0)|body_armor(8)|leg_armor(7)|difficulty(0),imodbits_cloth,],
 ["leather_jerkin","Leather_Jerkin",[("generic_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,321,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,117,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,],
