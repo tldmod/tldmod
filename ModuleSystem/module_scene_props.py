@@ -2132,7 +2132,6 @@ scene_props = [
 ("gon_upper_apt_E",0,"gon_upper_apt_a","0", []),
 
 ("horse_player_horse",sokf_invisible,"mearh","0", [(ti_on_init_scene_prop,[
-    (eq, "$tld_option_town_entry", 0),
 	(eq, "$spawn_horse", 1),
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"),
     (troop_get_inventory_slot, ":horse", "trp_player", 8),

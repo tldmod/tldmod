@@ -1,4 +1,4 @@
-885
+884
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -532,8 +532,6 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_OFF OFF
 qstr_ON ON
-qstr_M&B_system M&B_system
-qstr_TLD_system TLD_system
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
 qstr_A_second_troll_is_ca A_second_troll_is_caged_in_wheeled_cage.
@@ -645,6 +643,7 @@ qstr_Luckily_some_passing Luckily_some_passing_townspeople_find_you_lying_by_the
 qstr_You_fail_to_steal_an You_fail_to_steal_any_cattle.
 qstr_You_drive_away_{reg1 You_drive_away_{reg17}_{reg12?heads:head}_of_cattle_from_the_village's_herd.
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
+qstr_the_place the_place
 qstr___{reg1}_Resource_pt _({reg1}_Resource_pts._per_night)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^

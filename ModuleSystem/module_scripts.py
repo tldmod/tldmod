@@ -1744,7 +1744,7 @@ scripts = [
    #initialize game option defaults (see camp menu)
       (assign, "$g_crossdressing_activated", 0),
       (assign, "$tld_option_formations", 1),
-	  (assign, "$tld_option_town_entry", 1), #old system by default
+#	  (assign, "$tld_option_town_entry", 1), #old system by default
 	  (assign, "$tld_option_death", 0), #permanent death for npcs
 	  (assign, "$wound_setting", 7), # rnd, 0-3 result in wounds
 	  (assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
@@ -21091,6 +21091,131 @@ scripts = [
 (try_end),
 (assign, "$number_of_troop_type", 1),
 ]), 
+
+#script_initialize_center_scene
+("initialize_center_scene",[
+           (assign, "$talk_context", 0),
+           (try_begin),
+             (call_script, "script_cf_enter_center_location_bandit_check"),
+           (else_try),
+             (party_get_slot, ":town_scene", "$current_town", slot_town_center),
+             (modify_visitors_at_site, ":town_scene"),
+             (reset_visitors),
+             (assign, "$g_mt_mode", tcm_default),
+             (store_faction_of_party, ":town_faction","$current_town"),
+             (try_begin),
+               (neq, ":town_faction", "fac_player_supporters_faction"),
+# TLD center specific guards
+               (try_begin),
+                 (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
+                 (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+               (else_try),
+                 (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
+               (try_end),
+               (try_begin),
+                 (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
+                 (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
+               (else_try),
+                 (party_get_slot, ":troop_castle_guard", "$current_town", slot_town_guard_troop),
+               (try_end),
+               (set_visitor, 23, ":troop_castle_guard"),
+               (set_visitor, 24, ":troop_prison_guard"),
+             (try_end),
+# TLD center specific guards
+             (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
+             (party_get_slot, ":tier_3_troop", "$current_town", slot_town_guard_troop), #was slot_town_prison_guard_troop
+########
+             (try_begin),
+               (gt,":tier_2_troop", 0),
+               (assign,reg0,":tier_3_troop"),(assign,reg1,":tier_3_troop"),(assign,reg2,":tier_2_troop"),(assign,reg3,":tier_2_troop"),
+             (else_try),
+               (assign,reg0,"trp_gondor_swordsmen"),(assign,reg1,"trp_gondor_swordsmen"),(assign,reg2,"trp_archer_of_gondor"),(assign,reg3,"trp_footman_of_rohan"),
+             (try_end),
+             (shuffle_range,0,4),
+             (set_visitor,25,reg0),(set_visitor,26,reg1),(set_visitor,27,reg2),(set_visitor,28,reg3),
+
+#MV replaced by companion NPC, if any, and no castle
+             #TLD NPC companions
+             (try_begin),
+               (party_slot_eq, "$current_town", slot_town_castle, -1), #no town castle
+               (neq, "$sneaked_into_town", 1), #haven't sneaked in
+               (try_for_range, ":cur_troop", companions_begin, companions_end),
+                 (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
+                 (neg|main_party_has_troop, ":cur_troop"), #not already hired
+                 (assign, ":on_lease", 0),
+                 (try_begin),
+                   (check_quest_active,"qst_lend_companion"),
+                   (quest_slot_eq, "qst_lend_companion", slot_quest_target_troop, ":cur_troop"),
+                   (assign, ":on_lease", 1),
+                 (try_end),
+                 (eq, ":on_lease", 0),
+                 (store_troop_faction, ":troop_faction", ":cur_troop"),
+                 (store_relation, ":rel", ":town_faction", ":troop_faction"),
+                 (ge, ":rel", 0), #only spawn if friendly center
+                 (set_visitor, 9, ":cur_troop"), #only one companion NPC per town!
+               (try_end),
+             (try_end),
+
+             (party_get_slot, ":spawned_troop", "$current_town", slot_town_weaponsmith),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 10, ":spawned_troop"),
+             (try_end),
+             (party_get_slot, ":spawned_troop", "$current_town", slot_town_elder),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 11, ":spawned_troop"),
+             (try_end),
+             (party_get_slot, ":spawned_troop", "$current_town", slot_town_merchant),
+             (try_begin),
+               (neq, ":spawned_troop", "trp_no_troop"),
+               (set_visitor, 12, ":spawned_troop"),
+             (try_end),
+             
+             #TLD: lords in the streets 16-22, if no castle
+             (try_begin),
+               (party_slot_eq, "$current_town", slot_town_castle, -1), #no town castle
+               (assign, ":cur_pos", 16),
+               (call_script, "script_get_heroes_attached_to_center", "$current_town", "p_temp_party"),
+               (party_get_num_companion_stacks, ":num_stacks","p_temp_party"),
+               (try_for_range, ":i_stack", 0, ":num_stacks"),
+                 (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
+                 (lt, ":cur_pos", 23), # spawn up to entry point 22
+                 (set_visitor, ":cur_pos", ":stack_troop"),
+                 (val_add,":cur_pos", 1),
+               (try_end),
+             (try_end),
+             
+             (try_begin), #TLD: fugitive in a town
+               (check_quest_active, "qst_hunt_down_fugitive"),
+               #(neg|is_currently_night),
+               (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
+               (neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
+               (neg|check_quest_failed, "qst_hunt_down_fugitive"),
+               (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+               (set_visitor, 9, ":quest_object_troop"), #spawn in place of any NPC companion, so sceners won't make a fuss 
+             (try_end),
+
+             (call_script, "script_init_town_walkers"),
+             (set_jump_mission,"mt_town_center"),
+             (assign, ":override_state", af_override_horse),
+			 (try_begin),
+               (eq, "$sneaked_into_town", 1), #setup disguise
+               (assign, ":override_state", af_override_all),
+             (try_end),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 0, ":override_state"), #entry 0 always in center & w/o horse
+             (try_begin),
+               (this_or_next|eq, "$current_town", "p_town_moria"), #no mounts in cave towns
+               (eq, "$current_town", "p_town_erebor"),
+               (mission_tpl_entry_set_override_flags, "mt_town_center", 1, ":override_state"),
+               (mission_tpl_entry_set_override_flags, "mt_town_center", 2, ":override_state"),
+             (try_end),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 3, ":override_state"),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 4, ":override_state"),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 5, ":override_state"),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 6, ":override_state"),
+             (mission_tpl_entry_set_override_flags, "mt_town_center", 7, ":override_state"),
+]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts
