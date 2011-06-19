@@ -9457,14 +9457,14 @@ game_menus = [
 							(eq, "$rescue_stage", 1),
 							(assign, "$rescue_stage", 2),
 							(call_script, "script_final_sorcerer_fight"),
-							(display_message, "@You_have_found_the_sorcerer!", 0),
-							(display_message, "@Kill_him_quickly_before_he_escapes!", 0),
+							(display_message, "@You_have_found_the_sorcerer!"),
+							(display_message, "@Kill_him_quickly_before_he_escapes!"),
 						(try_end)],"Continue_onward!"),
 		("leave", [], "Leave.",
 							[(leave_encounter),
 							(change_screen_return),
 							(neg|eq, "$active_rescue", 0),
-							(call_script, "script_infiltration_mission_final_casualty_tabulation", 0, 0)]),
+							(call_script, "script_infiltration_mission_final_casualty_tabulation")]),
 	]
 ),
 

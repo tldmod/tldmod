@@ -5197,8 +5197,9 @@ mission_templates = [
         (display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
 #        (assign, "$sorcerer_quest", 3),
         (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+		(fail_quest,"qst_mirkwood_sorcerer"),
 #        (agent_set_slot, ":agent", 1, 4),
-        (set_mission_result, -1),
+		(set_mission_result, -1),
         (finish_mission),
     (try_end),
   (try_end),
@@ -5214,6 +5215,7 @@ mission_templates = [
 #    (assign, "$sorcerer_quest", 2),
 	(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
     (display_message, "@The_sorcerer_is_dead!", 4294967040),
+	(succeed_quest,"qst_mirkwood_sorcerer"),
 	(eq,"$rescue_stage",1), #dummy usage of global var
 #    (scene_prop_get_instance, ":local1", [opmask_scene_prop]528, 0),
 #    (prop_instance_get_position, pos1, ":local1"),
@@ -5248,7 +5250,8 @@ mission_templates = [
 
 ( "pick_troops", 0, 0, "You_pick_your_stealthy_men.", [
   [0, 1536, 0, 1, 1, []],  
-  [1,  256, 0,17, 0, []]],[(1,1,ti_once,[],[(start_mission_conversation, "trp_barman")])]
+  [1,  256, 0,17, 0, []]],
+  [(1,1,ti_once,[],[(start_mission_conversation, "trp_barman")])]
 ),
 
 ( "battle_wall_mission",mtf_battle_mode,0,

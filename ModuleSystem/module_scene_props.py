@@ -1887,8 +1887,9 @@ scene_props = [
 ("light_fog_black3",sokf_invisible,"f3_pointer","0",  []),
 ("light_fog_black4",sokf_invisible,"f4_pointer","0",  []),
 ("light_fog_black5",sokf_invisible,"f5_pointer","0",  []),
-("moria_rock",0,"moria_rock","bo_moria_rock", []), 
+("moria_rock",0,"moria_rock","bo_moria_rock", []),
 ("darkness_portal",0,"darkness_portal","0", []), 
+#("tunnel_sunshield",0,"tunnel_sunshield","0", []),
 
 #horse spawns
 ("horse_riv_warhorse",sokf_invisible,"rivendell_warhorse01","0", [(ti_on_init_scene_prop,[

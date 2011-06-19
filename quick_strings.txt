@@ -656,7 +656,6 @@ qstr_you you
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
-qstr_You_wait_for_darknes You_wait_for_darkness_to_fall.
 qstr_You_are_quickly_disc You_are_quickly_discovered_by_the_enemy.
 qstr_You_advance_stealthi You_advance_stealthily_far_into_the_forest.
 qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_ruins!
@@ -840,6 +839,7 @@ qstr_Good_moves_but_you_m Good_moves,_but_you_may_still_need_some_work_to_do.
 qstr_More_than_half_of_th More_than_half_of_the_opponents,_not_bad.
 qstr_You_ll_need_to_try_h You'll_need_to_try_harder_than_that.
 qstr_Well..._better_here_ Well..._better_here_than_in_combat,_eh?
+qstr_Lady_Galadriel_has_a Lady_Galadriel_has_asked_you_to_slay_the_Dol_Guldur_sorcerer_in_Mirkwood.
 qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
 qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_7_days.
 qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_10_days.
