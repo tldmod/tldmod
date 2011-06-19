@@ -5482,6 +5482,30 @@ game_menus = [
 #             (assign, "$talk_context", tc_castle_commander),
 #             (change_screen_map_conversation, reg(6))
 #             ]),
+      ("moria_enter",[(eq,1,0)], "You are not reading this",[
+			(modify_visitors_at_site,"scn_moria_center",),
+			(reset_visitors),
+            (set_visitor,2,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl"),
+            (jump_to_scene, "scn_moria_center"),
+            (change_screen_mission),
+	  ]
+	  ,"Enter Moria."),
+	  
+	  #Enter dungeon in Moria begin (mtarini)
+      ("moria_secret",[
+        (eq, "$current_town", "p_town_moria"),
+	  	(eq,"$entry_to_town_forbidden",1), 
+        ],"Search for a secret entrance to Moria",[
+            (modify_visitors_at_site,"scn_moria_secret_entry"),
+			(reset_visitors),
+            (set_visitor,0,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl"),
+            (jump_to_scene, "scn_moria_secret_entry"),
+            (change_screen_mission),
+       ]),
+      #Enter dungeon in Moria end (mtarini)
+	  
       ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
        "Approach the gates and hail the guard.",[
@@ -5496,21 +5520,6 @@ game_menus = [
 ##                                                   (assign, "$talk_context", tc_castle_gate),
 ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    ]),
-      
-	  #Enter dungeon in Moria begin (mtarini)
-      ("moria_enter",[
-        (eq, "$current_town", "p_town_moria"),
-	  	(eq,"$entry_to_town_forbidden",1), 
-        ],"Search for a secret entrance to Moria",[
-            (modify_visitors_at_site,"scn_moria_secret_entry"),
-			(reset_visitors),
-            (set_visitor,1,"trp_player"),
-            (jump_to_scene, "scn_moria_secret_entry"),
-            (change_screen_mission),
-       ],"Enter Moria."),
-      #Enter dungeon in Moria end (mtarini)
-
-	  
 	  
       ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
@@ -9393,12 +9402,12 @@ game_menus = [
   "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_relief01")],
   [ ("rescue_mission",  [(check_quest_active, "qst_mirkwood_sorcerer")],  "Sneak_into_the_sorcerer's_lair under the night's cover.",
 						[(try_begin),
-							(neg|is_currently_night),
-							(store_time_of_day, reg1),
-							(assign, reg2, 24),
-							(val_sub, reg2, reg1),
-							(display_message, "@You_wait_for_darkness_to_fall.", 4292863579),
-							(rest_for_hours, reg2),
+							# (neg|is_currently_night),
+							# (store_time_of_day, reg1),
+							# (assign, reg2, 24),
+							# (val_sub, reg2, reg1),
+							# (display_message, "@You_wait_for_darkness_to_fall.", 4292863579),
+							# (rest_for_hours, reg2),
 						(try_end),
 						(set_party_battle_mode),
 						(call_script, "script_initialize_general_rescue"),
@@ -9417,7 +9426,7 @@ game_menus = [
 	(try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
 		(display_message, "@You_are_quickly_discovered_by_the_enemy."),
 		(display_message, "@Eliminate_them_before_the_alarm_spreads!"),
-	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
+	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_2"),
 		(display_message, "@You_advance_stealthily_far_into_the_forest."),
 		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
 		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
@@ -9426,7 +9435,7 @@ game_menus = [
 		(display_message, "@You_have_found_the_sorcerer!"),
 	(try_end),
 						(change_screen_mission)]),
-    ("next_rescue_scene", [], "_!",  
+    ("next_rescue_scene", [], "_",  
 						[(call_script, "script_store_hero_death"),
 						 (call_script, "script_set_meta_stealth"),
 						 (call_script, "script_crunch_stealth_results"),
@@ -9435,7 +9444,7 @@ game_menus = [
 							(try_begin),
 								(ge, "$stealth_results", 2),
 								(assign, "$rescue_stage", 1),
-								(call_script, "script_infiltration_stealth_1"),
+								(call_script, "script_infiltration_stealth_2"),
 								(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
 								(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
 							(else_try),
@@ -9451,7 +9460,6 @@ game_menus = [
 							(display_message, "@You_have_found_the_sorcerer!", 0),
 							(display_message, "@Kill_him_quickly_before_he_escapes!", 0),
 						(try_end)],"Continue_onward!"),
-#"Continue_onward!"  
 		("leave", [], "Leave.",
 							[(leave_encounter),
 							(change_screen_return),
