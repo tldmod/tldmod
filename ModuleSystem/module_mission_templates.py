@@ -771,7 +771,17 @@ mission_templates = [
              (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
            (try_end),
           ]),
-        (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
+        (ti_before_mission_start, 0, 0, [], [
+			(call_script, "script_change_banners_and_chest"),
+			
+			# remove beam bridges in osgiliath (for non battle scenes)
+			(try_begin),
+				(store_current_scene, ":cur_scene"),
+				(this_or_next|eq,  ":cur_scene", "scn_east_osgiliath_center"),
+				(eq,  ":cur_scene", "scn_west_osgiliath_center"),
+				(replace_scene_props, "spr_osgiliath_broken_bridge_beams", "spr_empty"),
+			(try_end),
+		]),
         (ti_inventory_key_pressed, 0, 0,
          [
            (try_begin),
@@ -4381,21 +4391,22 @@ mission_templates = [
        (scene_prop_get_num_instances,":max_instance", ":pointer"),
        (ge,":max_instance", 1),
 	   # setting fog thickness
-         (try_begin),(eq,":pointer","spr_light_fog_black0"),(assign,":fog_distance",10000),
-	       (else_try),(eq,":pointer","spr_light_fog_black1"),(assign,":fog_distance",500),
-	       (else_try),(eq,":pointer","spr_light_fog_black2"),(assign,":fog_distance",200),
-	       (else_try),(eq,":pointer","spr_light_fog_black3"),(assign,":fog_distance",120),
-	       (else_try),(eq,":pointer","spr_light_fog_black4"),(assign,":fog_distance",80),
-	       (else_try),(eq,":pointer","spr_light_fog_black5"),(assign,":fog_distance",50),
-         (try_end),
+       (try_begin),(eq,":pointer","spr_light_fog_black0"),(assign,":fog_distance",200), # 10000
+	       (else_try),(eq,":pointer","spr_light_fog_black1"),(assign,":fog_distance",120),# was 500
+	       (else_try),(eq,":pointer","spr_light_fog_black2"),(assign,":fog_distance",80), # was 200
+	       (else_try),(eq,":pointer","spr_light_fog_black3"),(assign,":fog_distance",40),  # was 120
+	       (else_try),(eq,":pointer","spr_light_fog_black4"),(assign,":fog_distance",20), # was 80
+	       (else_try),(eq,":pointer","spr_light_fog_black5"),(assign,":fog_distance",10), # was 20
+       (try_end),
 	   # checking distance to player
          (try_for_range,":instance_no",0,":max_instance"),
 	       (scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
            (ge, ":i", 0),
              (prop_instance_get_position,pos1,":i"),
              (get_distance_between_positions,":dist",pos1,pos25),
-	         (le,":dist",200),
-	           (set_fog_distance,":fog_distance",0x010101),
+	         (le,":dist",150),
+			   (set_fog_distance,":fog_distance",0x000001), # was 0x010101
+			   (assign, reg11, ":fog_distance"), (display_message, "@DEBUG: Fog distance: {reg11}"),
          (try_end),
       (try_end),
   ]),

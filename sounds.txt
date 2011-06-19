@@ -1,5 +1,5 @@
 soundsfile version 2
-636
+637
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -602,6 +602,7 @@ soundsfile version 2
  good_bird02.wav 1153
  good_bird03.wav 1153
  good_bird_wings.wav 1153
+ elf_elfsong.wav 1153
  d_saw_short3.wav 1153
  d_carpenter1.wav 1153
  rohan01.wav 1153
@@ -636,7 +637,7 @@ soundsfile version 2
  morgul02.wav 1153
  osgiliath01.wav 1153
  osgiliath03.wav 1153
-252
+253
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -872,20 +873,21 @@ snd_dwarf_ambiance 899 1 591
 snd_harad_ambiance 899 1 592 
 snd_gondor_occasional 1153 5 593 594 595 596 597 
 snd_elves_occasional 1153 4 598 599 600 601 
-snd_beorn_occasional 1153 7 598 599 600 596 602 597 603 
-snd_rohan_occasional 1153 10 604 605 606 607 596 593 598 595 597 608 
-snd_dwarf_occasional 1153 5 609 610 595 611 612 
-snd_dale_occasional 1153 9 598 599 600 596 602 595 597 608 613 
-snd_rhun_occasional 1153 8 604 605 606 607 614 602 595 597 
-snd_harad_occasional 1153 10 608 605 606 607 614 602 615 616 617 618 
-snd_umbar_occasional 1153 3 619 620 621 
-snd_dunland_occasional 1153 7 614 593 622 623 624 597 603 
-snd_orc_occasional 1153 6 625 614 626 627 628 629 
-snd_guldur_occasional 1153 4 614 627 628 629 
-snd_moria_occasional 1153 4 619 619 630 631 
-snd_isengard_occasional 1153 12 631 614 627 628 629 602 626 595 609 610 613 603 
-snd_urukhai_occasional 1153 6 614 627 628 629 626 603 
-snd_seaside_occasional 1153 6 598 599 600 620 621 595 
-snd_morgul_occasional 1153 9 619 619 619 619 619 619 619 632 633 
-snd_eosgi_occasional 1153 8 627 628 629 634 612 635 613 611 
-snd_wosgi_occasional 1153 5 634 612 635 613 611 
+snd_lorien_occasional 1153 5 602 598 599 600 601 
+snd_beorn_occasional 1153 7 598 599 600 596 603 597 604 
+snd_rohan_occasional 1153 10 605 606 607 608 596 593 598 595 597 609 
+snd_dwarf_occasional 1153 5 610 611 595 612 613 
+snd_dale_occasional 1153 9 598 599 600 596 603 595 597 609 614 
+snd_rhun_occasional 1153 8 605 606 607 608 615 603 595 597 
+snd_harad_occasional 1153 10 609 606 607 608 615 603 616 617 618 619 
+snd_umbar_occasional 1153 3 620 621 622 
+snd_dunland_occasional 1153 7 615 593 623 624 625 597 604 
+snd_orc_occasional 1153 6 626 615 627 628 629 630 
+snd_guldur_occasional 1153 4 615 628 629 630 
+snd_moria_occasional 1153 4 620 620 631 632 
+snd_isengard_occasional 1153 12 632 615 628 629 630 603 627 595 610 611 614 604 
+snd_urukhai_occasional 1153 6 615 628 629 630 627 604 
+snd_seaside_occasional 1153 6 598 599 600 621 622 595 
+snd_morgul_occasional 1153 9 620 620 620 620 620 620 620 633 634 
+snd_eosgi_occasional 1153 8 628 629 630 635 613 636 614 612 
+snd_wosgi_occasional 1153 5 635 613 636 614 612 

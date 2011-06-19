@@ -1901,7 +1901,7 @@ faction_strings =[    #shop rumors begin     shop rumors end           loop_ambi
  ("fac_rhun"    ,"str_rhun_rumor_begin"    ,"str_dunland_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
  ("fac_khand"   ,"str_khand_rumor_begin"   ,"str_good_rumor_begin"    ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
  ("fac_umbar"   ,"str_umbar_rumor_begin"   ,"str_khand_rumor_begin"   ,"snd_evilmen_ambiance","snd_water_waves_ambiance","snd_umbar_occasional"),
- ("fac_lorien"  ,"str_lorien_rumor_begin"  ,"str_imladris_rumor_begin",0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
+ ("fac_lorien"  ,"str_lorien_rumor_begin"  ,"str_imladris_rumor_begin",0                     ,"snd_goodforest_ambiance","snd_lorien_occasional"),
  ("fac_imladris","str_imladris_rumor_begin","str_woodelf_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
  ("fac_woodelf" ,"str_woodelf_rumor_begin" ,"str_dale_rumor_begin"    ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
  ("fac_moria"   ,"str_moria_rumor_begin"   ,"str_umbar_rumor_begin"   ,0                     ,"snd_moria_ambiance"     ,"snd_moria_occasional"),
