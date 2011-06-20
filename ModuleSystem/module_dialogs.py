@@ -10028,8 +10028,12 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 #	(neg|eq, "$rescue_companion_9", "trp_npc1")],
 "Ulfas",  "pick_troops_number1",  [(assign, "$troop_to_pick", "trp_npc1"),(call_script, "script_set_hero_companion")]],
 
-[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")],"Done", "rescue_begins", [(assign, "$companions_picked", 1)]],
-[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops")],"Done", "ruins_begin", [(assign, "$companions_picked", 1)]],
+[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")],"Done", "rescue_begins", [ 
+  #(assign, "$companions_picked", 1)
+]],
+[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops")],"Done", "ruins_begin", [
+  #(assign, "$companions_picked", 1)
+]],
 
 [trp_barman, "pick_troops_next", [(assign, reg5, "$pick_stage")], 
 "Who_else_would_you_like_to_take_on_a_rescue_mission_with_you?_You_currently_have_selected_{reg5}_companions_to_fill_your_available_slots.", "pick_troops",

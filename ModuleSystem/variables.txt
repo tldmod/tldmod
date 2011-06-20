@@ -86,7 +86,6 @@ qst_troublesome_bandits_eliminated
 qst_troublesome_bandits_eliminated_by_player
 stealth_general_b_tut_box
 troop_to_pick
-companions_picked
 number_of_rescuers
 number_of_troop_type
 active_rescue
@@ -116,7 +115,6 @@ relocated
 g_mvtest_faction
 g_crossdressing_activated
 tld_option_formations
-tld_option_town_entry
 tld_option_death
 capturer_party
 g_player_is_captive
@@ -468,9 +466,7 @@ rescue_wall_battle
 rescue_courtyard_scene_2
 rescue_stealth_scene_2
 wall_mounted_troop1
-wall_mounted_troop2
 wall_mounted_troop3
-wall_mounted_troop4
 wall_mounted_troop5
 wall_missile_troop1
 wall_missile_troop2

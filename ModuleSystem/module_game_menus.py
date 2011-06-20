@@ -5306,7 +5306,7 @@ game_menus = [
   ),
 
   ( "moria_didnt_escape",city_menu_color,
-    "There are too many orcs around! You cry in despair, when, all of a sudden, a you feel a shattering pain on the back of your head and the world goes dark.^^^But this is not your end. You wake up lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murked pit.^By who knows what underground river, you must have surfraced.",
+    "There are too many orcs around! You cry in despair, when, all of a sudden, a you feel a shattering pain on the back of your head and the world goes dark.^^^But this is not your end. You wake up lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (jump_to_menu,"mnu_castle_outside"), ]),
 	]
