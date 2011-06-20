@@ -9206,6 +9206,17 @@ game_menus = [
     []
   ),
 
+  ( "auto_intro_joke",0,"stub","none",
+    [
+       (modify_visitors_at_site, "scn_minas_tirith_castle"),
+       (reset_visitors),
+       (set_visitor, 1, "trp_player"),
+       (set_jump_mission, "mt_intro_joke"),
+       (jump_to_scene, "scn_minas_tirith_castle"),
+       (change_screen_mission),
+    ],
+    []
+  ),
 
 ###################### starting quest, GA ##############################  
 ("starting_quest_good",0,

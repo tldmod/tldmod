@@ -19895,11 +19895,8 @@ scripts = [
     [
      (modify_visitors_at_site,"scn_westfold_center"),
      (reset_visitors,0),
-     #(set_visitor, 0, "trp_farmer"),
      (set_visitor, 1, "trp_player"), #for testing
-     # (set_visitor, 2, "$g_wedding_brides_dad_troop"),
-     # (set_visitor, 3, "$g_wedding_bishop_troop"),
-     (set_jump_mission,"mt_intro"),
+     (set_jump_mission,"mt_intro_rohan"),
      (jump_to_scene,"scn_westfold_center"),
      (change_screen_mission),
     ]),

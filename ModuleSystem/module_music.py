@@ -11,7 +11,7 @@ from header_music import *
 
 tracks = [
 ("bogus", "cant_find_this.ogg", 0, 0),
-("mount_and_blade_title_screen", "TLD_Over_The_Misty_Mountains.mp3", mtf_module_track|mtf_sit_main_title|mtf_start_immediately, 0),
+("mount_and_blade_title_screen", "TLD_A_Tale_Untold.mp3", mtf_module_track|mtf_sit_main_title|mtf_start_immediately, 0),
 
 ("ambushed_by_neutral", "TLD_Rohan_Ambush.mp3", mtf_module_track|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight),
 ("ambushed_by_khergit", "TLD_Orc_Ambush.mp3", mtf_module_track|mtf_culture_all|mtf_sit_ambushed|mtf_sit_siege, mtf_sit_fight|mtf_culture_all),
