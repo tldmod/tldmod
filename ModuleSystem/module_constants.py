@@ -142,7 +142,7 @@ slot_faction_occasional_sound1_night = 176
 slot_faction_occasional_sound2_night = 177
 slot_faction_occasional_sound3_night = 178
 
-_= "itm_warg_1b"
+item_warg_begin = "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"
 
 # slots for stealth missions companion tracking

@@ -127,6 +127,7 @@ items =[
 ["variag_pony","Variag_Pony",[("horse_c",0)],itp_type_horse|itp_shop,0,724,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(34)|horse_charge(10),imodbits_horse_basic|0],
 ["variag_kataphrakt","Easterling_Warhorse",[("easterling_warhorse01",0)],itp_type_horse|itp_shop,0,2000,hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(36)|horse_maneuver(34)|horse_charge(35),imodbits_horse_basic|imodbit_champion],
 #########WARGS#########
+
 #first farg in list: warg_1b (see in module_constants)
 ["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(100)|body_armor(15)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(47),imodbits_horse_basic|0],
 ["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(100)|body_armor(15)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(47),imodbits_horse_basic|0],
@@ -136,7 +137,9 @@ items =[
 ["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|0],
 ["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|0],
 ["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(150)|body_armor(40)|difficulty(5)|horse_speed(30)|horse_maneuver(60)|horse_charge(60),imodbits_horse_basic|imodbit_champion],
-#first non WARG item: troll_feet_boots (see in module_constants)
+["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
+# first non WARG item: troll_feet_boots (see in module_constants)
+
 #TROLL "ITEMS"#########
 ["troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(40)|body_armor(55)|leg_armor(55)|difficulty(40),0],
 ["troll_head_helm","Troll_Head",[("troll_head",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
@@ -1167,7 +1170,6 @@ items =[
 ["rohan_lance_banner_sun","Rohan_Lance_With_Sun_Banner",[("banner_lance_rohan_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(35,pierce)|thrust_damage(35,pierce),imodbits_polearm],
 ["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(120)|weapon_length(120)|swing_damage(35,pierce)|thrust_damage(35,pierce),imodbits_polearm],
 #
-# let   witchking_helmet  be the last item (mtarini)
 ["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2010,weight(248)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(0),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
 ["ent_head_helm2","Ent_Head",[("ent_head2",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(0)|difficulty(30),0],
@@ -1195,7 +1197,6 @@ items =[
 ["orc_brew","Orc_Brew",[("orc_brew",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|max_ammo(100),imodbits_none],
 ["rohan_saddle","Saddle_of_Thengel",[("RohanSaddle",0)],itp_unique|itp_type_goods,0,5000,weight(4)|abundance(0)|0,imodbits_none],
 ["mearas_reward","Mearh_Stallion",[("mearh",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(60)|difficulty(2)|horse_speed(45)|horse_maneuver(40)|horse_charge(40),imodbits_horse_basic|0],
-["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
 ["sword_of_arathorn","Arathorn's_Sword",[("aragorn_sword",0),("scab_aragorn_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,2000,weight(2.05)|difficulty(0)|spd_rtng(110)|weapon_length(100)|swing_damage(38,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
 ["riv_armor_reward","Rivendell_Decorated_Armor",[("rivendellrewardarmour",0)],itp_type_body_armor|itp_covers_legs|0,0,6000,weight(12)|head_armor(2)|body_armor(50)|leg_armor(20)|difficulty(0),imodbits_armor,],
 ["westernesse1h_reward","Sword_of_Westernesse",[("1h_westernesse",0),("scab_1h_westernesse",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,150,weight(1.25)|difficulty(0)|spd_rtng(130)|weapon_length(100)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_sword_high],
@@ -1207,6 +1208,7 @@ items =[
 ["garlic_reward","Garlic",[("garlic",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["silmarillion_reward","Silmarillion",[("JIKBookClosed",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["herbarium_reward","Middle_Earth_Herbarium",[("JIKBookOpen",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
+["book_of_moria","Balin Memories",[("JIKBookClosed",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["ring_a_reward","Tulcarisil",[("reward_ring_a",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
@@ -1216,4 +1218,5 @@ items =[
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
+# let   witchking_helmet  be the last item (mtarini)
 ]

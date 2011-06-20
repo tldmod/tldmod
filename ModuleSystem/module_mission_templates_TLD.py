@@ -125,6 +125,11 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(assign, "$warg_to_be_replaced", -1),
 		
 			(agent_get_look_position,pos4,":warg"),
+			
+			# testing
+			(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
+			(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
+			
 			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
 
 			(store_agent_hit_points, reg12, ":warg",1),
@@ -358,6 +363,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 	(assign, ":is_warg", 0),
 	(assign, ":is_orc", 0),
 	(agent_get_item_id,":mount_item", ":mount"),
+	(neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
 	(try_begin), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":is_warg", 1),(try_end),
 #	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
 	(try_begin), (eq, ":race", tf_orc),(assign, ":is_orc" , 1),(try_end), # non-orcs (uruks & hai included) cannot ride ordinary wargs
@@ -398,7 +404,7 @@ custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
   ]
 )
 
-#MV: inserted troll charging
+#MV: inserted troll "charging" (going haead not following orders)
 custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
   [
 	(try_for_agents,":troll"),
@@ -684,6 +690,56 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 			(try_end),
 		(try_end),
 ])
+
+custom_lone_wargs_special_attack = (0,0,2, [
+	(store_random_in_range,reg10,0,3), (eq,reg10,1) # once every three times
+],[
+	(try_for_agents,":warg"),										# horse rearing near troll
+        (agent_is_alive, ":warg"), #MV
+		(agent_get_troop_id,reg0,":warg"),
+		(agent_is_human, ":warg"),
+		(is_between, reg0, warg_ghost_begin, warg_ghost_end),
+
+		(agent_get_horse, ":warg_mount", ":warg"),
+
+        (agent_get_position, pos0, ":warg_mount"),
+		(agent_get_team, ":warg_team", ":warg"),
+		
+		(assign,":wants_to_jump",0),
+        (try_for_agents, ":enemy_agent"),
+            (agent_is_alive, ":enemy_agent"),
+            (agent_is_human, ":enemy_agent"),
+            (agent_get_team, ":enemy_team", ":enemy_agent"),
+            (teams_are_enemies, ":enemy_team", ":warg_team"),
+            
+            (agent_get_position, pos10, ":enemy_agent"),
+			(position_transform_position_to_local, pos2,pos0, pos10),
+			(position_get_x, reg10, pos2),
+			(position_get_y, reg11, pos2),
+			(position_get_z, reg12, pos2),
+			(position_normalize_origin, reg13, pos2),
+			
+			(val_mul, reg10,100.0),
+			(val_mul, reg11,100.0),
+			(val_mul, reg12,100.0),
+			(val_mul, reg13,100.0),
+			(convert_from_fixed_point, reg10),
+			(convert_from_fixed_point, reg11),
+			(convert_from_fixed_point, reg12),
+			(convert_from_fixed_point, reg13),
+			(display_message, "@DEBUG: warg victim at ({reg10}, {reg11}, {reg12}) -- {reg13}"),
+			(is_between, reg10, -100, 100),
+			(is_between, reg11, +100, 600),
+			(assign,":wants_to_jump",1),
+        (try_end),
+		(eq,":wants_to_jump",1),
+		(agent_set_walk_forward_animation, ":warg_mount", "anim_warg_jump"),
+		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
+        
+	(try_end),
+
+])
+
 
 # wargs without rider respawn
 custom_lone_wargs_are_agressive = (0,0,2, [],[

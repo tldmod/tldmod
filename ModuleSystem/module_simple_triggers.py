@@ -942,16 +942,16 @@ simple_triggers = [
 
            (assign, ":target_center", -1),
            
-           (try_begin), #Make sure escorted caravan continues to its original destination.
-             (eq, "$caravan_escort_party_id", ":party_no"),
-             (neg|party_is_in_town, ":party_no", "$caravan_escort_destination_town"),
-             (assign, ":target_center", "$caravan_escort_destination_town"),
-           (else_try),
+           #(try_begin), #Make sure escorted caravan continues to its original destination.
+           #  (eq, "$caravan_escort_party_id", ":party_no"),
+           #  (neg|party_is_in_town, ":party_no", "$caravan_escort_destination_town"),
+           #  (assign, ":target_center", "$caravan_escort_destination_town"),
+           #(else_try),
              (call_script, "script_cf_select_random_town_at_peace_with_faction_in_trade_route", ":cur_center", ":merchant_faction"),
              (assign, ":target_center", reg0),
              (eq, ":target_center", -1),
              (remove_party, ":party_no"), #MV: no towns to travel to, remove
-           (try_end),
+           #(try_end),
            (is_between, ":target_center", towns_begin, towns_end),
 #           (display_message, "@DEBUG: target", 0xff00fd33),
            (neg|party_is_in_town, ":party_no", ":target_center"),

@@ -1771,6 +1771,7 @@ scene_props = [
 ("rohan_house6",0,"rohan_house6","bo_house6",[]),
 ("rohan_house7",0,"rohan_house7","bo_house7",[]),
 
+
 # Kolba Erebor dungeon stuff  
 ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
 ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
@@ -1888,6 +1889,10 @@ scene_props = [
 ("light_fog_black4",sokf_invisible,"f4_pointer","0",  []),
 ("light_fog_black5",sokf_invisible,"f5_pointer","0",  []),
 ("moria_rock",0,"moria_rock","bo_moria_rock", []),
+
+("tunnel_sunshield", 0, "tunnel_sunshield", "0", []),
+
+
 ("darkness_portal",0,"darkness_portal","0", []), 
 #("tunnel_sunshield",0,"tunnel_sunshield","0", []),
 

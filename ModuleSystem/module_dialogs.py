@@ -5889,120 +5889,120 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 #Convincing bargaining
-[anyone,"convince_begin", [], "I still don't see why I should accept what you're asking of me.", "convince_options",
-   [(quest_get_slot, "$convince_value", "$g_convince_quest", slot_quest_convince_value)]],
+# [anyone,"convince_begin", [], "I still don't see why I should accept what you're asking of me.", "convince_options",
+   # [(quest_get_slot, "$convince_value", "$g_convince_quest", slot_quest_convince_value)]],
     
-[anyone|plyr,"convince_options", [(assign, reg8, "$convince_value")], "Then I'll make it worth your while. ({reg8} denars)", "convince_bribe",[]],
-[anyone|plyr,"convince_options", 
-  [(store_div, "$convince_relation_penalty", "$convince_value", 300),
-   (val_add, "$convince_relation_penalty", 1),
-   (assign, reg9, "$convince_relation_penalty")], 
-"Please, do it for the sake of our friendship. (-{reg9} to relation)", "convince_friendship",[]],
-[anyone|plyr,"convince_options", [], "Let me try and convince you. (Persuasion)", "convince_persuade_begin", []],
-[anyone|plyr,"convince_options", [], "Never mind.", "lord_pretalk",[]],
+# [anyone|plyr,"convince_options", [(assign, reg8, "$convince_value")], "Then I'll make it worth your while. ({reg8} denars)", "convince_bribe",[]],
+# [anyone|plyr,"convince_options", 
+  # [(store_div, "$convince_relation_penalty", "$convince_value", 300),
+   # (val_add, "$convince_relation_penalty", 1),
+   # (assign, reg9, "$convince_relation_penalty")], 
+# "Please, do it for the sake of our friendship. (-{reg9} to relation)", "convince_friendship",[]],
+# [anyone|plyr,"convince_options", [], "Let me try and convince you. (Persuasion)", "convince_persuade_begin", []],
+# [anyone|plyr,"convince_options", [], "Never mind.", "lord_pretalk",[]],
 
-[anyone,"convince_bribe", [], "Mmm, a generous gift to my coffers would certainly help matters...\
- {reg8} denars should do it. If you agree, then I'll go with your suggestion.", "convince_bribe_verify",[]],
+# [anyone,"convince_bribe", [], "Mmm, a generous gift to my coffers would certainly help matters...\
+ # {reg8} denars should do it. If you agree, then I'll go with your suggestion.", "convince_bribe_verify",[]],
 
-[anyone|plyr,"convince_bribe_verify", [(store_troop_gold, ":gold", "trp_player"),
-                                         (lt, ":gold", "$convince_value")],
-"I'm afraid my finances will not allow for such a gift.", "convince_bribe_cant_afford",[]],
-[anyone|plyr,"convince_bribe_verify", [(store_troop_gold, ":gold", "trp_player"),
-                                         (ge, ":gold", "$convince_value")],
-"Very well, please accept these {reg8} denars as a token of my gratitude.", "convince_bribe_goon",[]],
-[anyone|plyr,"convince_bribe_verify", [], "Let me think about this some more.", "convince_begin",[]],
+# [anyone|plyr,"convince_bribe_verify", [(store_troop_gold, ":gold", "trp_player"),
+                                         # (lt, ":gold", "$convince_value")],
+# "I'm afraid my finances will not allow for such a gift.", "convince_bribe_cant_afford",[]],
+# [anyone|plyr,"convince_bribe_verify", [(store_troop_gold, ":gold", "trp_player"),
+                                         # (ge, ":gold", "$convince_value")],
+# "Very well, please accept these {reg8} denars as a token of my gratitude.", "convince_bribe_goon",[]],
+# [anyone|plyr,"convince_bribe_verify", [], "Let me think about this some more.", "convince_begin",[]],
 
-[anyone,"convince_bribe_cant_afford", [], "Ah. In that case, there is little I can do,\
- unless you have some further argument to make.", "convince_options",[]],
-[anyone,"convince_bribe_goon", [], "My dear {playername}, your generous gift has led me to reconsider what you ask,\
- and I have come to appreciate the wisdom of your proposal.", "convince_accept",[(troop_remove_gold, "trp_player","$convince_value")]],
+# [anyone,"convince_bribe_cant_afford", [], "Ah. In that case, there is little I can do,\
+ # unless you have some further argument to make.", "convince_options",[]],
+# [anyone,"convince_bribe_goon", [], "My dear {playername}, your generous gift has led me to reconsider what you ask,\
+ # and I have come to appreciate the wisdom of your proposal.", "convince_accept",[(troop_remove_gold, "trp_player","$convince_value")]],
 
-[anyone,"convince_friendship", [(store_add, ":min_relation", 5, "$convince_relation_penalty"),
-								(ge, "$g_talk_troop_relation", ":min_relation")], 
-"You've done well by me in the past, {playername},\
- and for that I will go along with your request, but know that I do not like you using our relationship this way.", "convince_friendship_verify",[]],
+# [anyone,"convince_friendship", [(store_add, ":min_relation", 5, "$convince_relation_penalty"),
+								# (ge, "$g_talk_troop_relation", ":min_relation")], 
+# "You've done well by me in the past, {playername},\
+ # and for that I will go along with your request, but know that I do not like you using our relationship this way.", "convince_friendship_verify",[]],
 
-[anyone|plyr,"convince_friendship_verify", [], "I am sorry, my friend, but I need your help in this.", "convince_friendship_go_on",[]],
-[anyone|plyr,"convince_friendship_verify", [], "If it will not please you, then I'll try something else.", "lord_pretalk",[]],
+# [anyone|plyr,"convince_friendship_verify", [], "I am sorry, my friend, but I need your help in this.", "convince_friendship_go_on",[]],
+# [anyone|plyr,"convince_friendship_verify", [], "If it will not please you, then I'll try something else.", "lord_pretalk",[]],
 
-[anyone,"convince_friendship_go_on", [], "All right then, {playername}, I will accept this for your sake. But remember, you owe me for this.", "convince_accept",
-   [(store_sub, ":relation_change", 0, "$convince_relation_penalty"),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",":relation_change")]],
+# [anyone,"convince_friendship_go_on", [], "All right then, {playername}, I will accept this for your sake. But remember, you owe me for this.", "convince_accept",
+   # [(store_sub, ":relation_change", 0, "$convince_relation_penalty"),
+    # (call_script, "script_change_player_relation_with_troop","$g_talk_troop",":relation_change")]],
 
-[anyone,"convince_friendship", [(ge, "$g_talk_troop_relation", -5)], 
-"I don't think I owe you such a favor {playername}.\
- I see no reason to accept this for you.", "lord_pretalk",[]],
+# [anyone,"convince_friendship", [(ge, "$g_talk_troop_relation", -5)], 
+# "I don't think I owe you such a favor {playername}.\
+ # I see no reason to accept this for you.", "lord_pretalk",[]],
 
-[anyone,"convince_friendship", [], "Is this a joke? You've some nerve asking me for favours, {playername},\
- and let me assure you you'll get none.", "lord_pretalk",[]],
+# [anyone,"convince_friendship", [], "Is this a joke? You've some nerve asking me for favours, {playername},\
+ # and let me assure you you'll get none.", "lord_pretalk",[]],
 
-[anyone,"convince_persuade_begin", 
-  [(troop_get_slot, ":last_persuasion_time", "$g_talk_troop", slot_troop_last_persuasion_time),
-   (store_current_hours, ":cur_hours"),
-   (store_add, ":valid_time", ":last_persuasion_time", 24),
-   (gt, ":cur_hours", ":valid_time")], 
-"Very well. Make your case.", "convince_persuade_begin_2",[]],
+# [anyone,"convince_persuade_begin", 
+  # [(troop_get_slot, ":last_persuasion_time", "$g_talk_troop", slot_troop_last_persuasion_time),
+   # (store_current_hours, ":cur_hours"),
+   # (store_add, ":valid_time", ":last_persuasion_time", 24),
+   # (gt, ":cur_hours", ":valid_time")], 
+# "Very well. Make your case.", "convince_persuade_begin_2",[]],
    
    
-[anyone|plyr,"convince_persuade_begin_2", [], "[Attempt to persuade]", "convince_persuade",[
-        (try_begin),
-          (store_random_in_range, ":rand", 0, 100),
-          (lt, ":rand", 30),
-          (store_current_hours, ":cur_hours"),
-          (troop_set_slot, "$g_talk_troop", slot_troop_last_persuasion_time, ":cur_hours"),
-        (try_end),
-        (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
-        (store_add, ":persuasion_potential", ":persuasion_level", 5),
+# [anyone|plyr,"convince_persuade_begin_2", [], "[Attempt to persuade]", "convince_persuade",[
+        # (try_begin),
+          # (store_random_in_range, ":rand", 0, 100),
+          # (lt, ":rand", 30),
+          # (store_current_hours, ":cur_hours"),
+          # (troop_set_slot, "$g_talk_troop", slot_troop_last_persuasion_time, ":cur_hours"),
+        # (try_end),
+        # (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
+        # (store_add, ":persuasion_potential", ":persuasion_level", 5),
 
-        (store_random_in_range, ":random_1", 0, ":persuasion_potential"),
-        (store_random_in_range, ":random_2", 0, ":persuasion_potential"),
-        (store_add, ":rand", ":random_1", ":random_2"),
+        # (store_random_in_range, ":random_1", 0, ":persuasion_potential"),
+        # (store_random_in_range, ":random_2", 0, ":persuasion_potential"),
+        # (store_add, ":rand", ":random_1", ":random_2"),
 
-        (assign, ":persuasion_difficulty", "$convince_value"),
-        (convert_to_fixed_point, ":persuasion_difficulty"),
-        (store_sqrt, ":persuasion_difficulty", ":persuasion_difficulty"),
-        (convert_from_fixed_point, ":persuasion_difficulty"),
-        (val_div, ":persuasion_difficulty", 10),
-        (val_add, ":persuasion_difficulty", 4),
+        # (assign, ":persuasion_difficulty", "$convince_value"),
+        # (convert_to_fixed_point, ":persuasion_difficulty"),
+        # (store_sqrt, ":persuasion_difficulty", ":persuasion_difficulty"),
+        # (convert_from_fixed_point, ":persuasion_difficulty"),
+        # (val_div, ":persuasion_difficulty", 10),
+        # (val_add, ":persuasion_difficulty", 4),
 
-        (store_sub, "$persuasion_strength", ":rand", ":persuasion_difficulty"),
-        (val_mul, "$persuasion_strength", 20),
-        (assign, reg5, "$persuasion_strength"),
-        (val_sub, "$convince_value", "$persuasion_strength"),
-        (quest_set_slot, "$g_convince_quest", slot_quest_convince_value, "$convince_value"),
-        (str_store_troop_name, s50, "$g_talk_troop"),
-        (troop_get_type, reg51, "$g_talk_troop"),
-        (try_begin),
-          (lt, "$persuasion_strength", -30),
-          (str_store_string, s5, "str_persuasion_summary_very_bad"),
-        (else_try),
-          (lt, "$persuasion_strength", -10),
-          (str_store_string, s5, "str_persuasion_summary_bad"),
-        (else_try),
-          (lt, "$persuasion_strength", 10),
-          (str_store_string, s5, "str_persuasion_summary_average"),
-        (else_try),
-          (lt, "$persuasion_strength", 30),
-          (str_store_string, s5, "str_persuasion_summary_good"),
-        (else_try),
-          (str_store_string, s5, "str_persuasion_summary_very_good"),
-        (try_end),
-        (dialog_box, "@{s5} (Persuasion strength: {reg5})", "@Persuasion Attempt"),]],
+        # (store_sub, "$persuasion_strength", ":rand", ":persuasion_difficulty"),
+        # (val_mul, "$persuasion_strength", 20),
+        # (assign, reg5, "$persuasion_strength"),
+        # (val_sub, "$convince_value", "$persuasion_strength"),
+        # (quest_set_slot, "$g_convince_quest", slot_quest_convince_value, "$convince_value"),
+        # (str_store_troop_name, s50, "$g_talk_troop"),
+        # (troop_get_type, reg51, "$g_talk_troop"),
+        # (try_begin),
+          # (lt, "$persuasion_strength", -30),
+          # (str_store_string, s5, "str_persuasion_summary_very_bad"),
+        # (else_try),
+          # (lt, "$persuasion_strength", -10),
+          # (str_store_string, s5, "str_persuasion_summary_bad"),
+        # (else_try),
+          # (lt, "$persuasion_strength", 10),
+          # (str_store_string, s5, "str_persuasion_summary_average"),
+        # (else_try),
+          # (lt, "$persuasion_strength", 30),
+          # (str_store_string, s5, "str_persuasion_summary_good"),
+        # (else_try),
+          # (str_store_string, s5, "str_persuasion_summary_very_good"),
+        # (try_end),
+        # (dialog_box, "@{s5} (Persuasion strength: {reg5})", "@Persuasion Attempt"),]],
 
-[anyone|plyr,"convince_persuade_begin_2", [], "Wait, perhaps there is another way to convince you.", "convince_begin",[]],
+# [anyone|plyr,"convince_persuade_begin_2", [], "Wait, perhaps there is another way to convince you.", "convince_begin",[]],
 
-[anyone,"convince_persuade_begin", [], "By God's grace, {playername}!\
- Haven't we talked enough already? I am tired of listening to you,\
- and I do not want to hear any more of it right now.", "lord_pretalk",[]],
+# [anyone,"convince_persuade_begin", [], "By God's grace, {playername}!\
+ # Haven't we talked enough already? I am tired of listening to you,\
+ # and I do not want to hear any more of it right now.", "lord_pretalk",[]],
  
-[anyone,"convince_persuade", [(le, "$convince_value", 0)], "All right, all right. You have persuaded me to it.\
- I'll go ahead with what you suggest.", "convince_accept",[]],
-[anyone,"convince_persuade", [(gt, "$persuasion_strength", 5)], "You've a point, {playername},\
- I'll admit that much. However I am not yet convinced I should do as you bid.", "convince_options",[]],
-[anyone,"convince_persuade", [(gt, "$persuasion_strength", -5)], "Enough, {playername}.\
- You've a lot of arguments, but I find none of them truly convincing. I stand by what I said before.", "convince_options",[]],
-[anyone,"convince_persuade", [], "Truthfully, {playername}, I fail to see the virtue of your reasoning.\
- What you ask for makes even less sense now than it did before.", "convince_options",[]],
+# [anyone,"convince_persuade", [(le, "$convince_value", 0)], "All right, all right. You have persuaded me to it.\
+ # I'll go ahead with what you suggest.", "convince_accept",[]],
+# [anyone,"convince_persuade", [(gt, "$persuasion_strength", 5)], "You've a point, {playername},\
+ # I'll admit that much. However I am not yet convinced I should do as you bid.", "convince_options",[]],
+# [anyone,"convince_persuade", [(gt, "$persuasion_strength", -5)], "Enough, {playername}.\
+ # You've a lot of arguments, but I find none of them truly convincing. I stand by what I said before.", "convince_options",[]],
+# [anyone,"convince_persuade", [], "Truthfully, {playername}, I fail to see the virtue of your reasoning.\
+ # What you ask for makes even less sense now than it did before.", "convince_options",[]],
 
 #Seneschal
 
@@ -6204,34 +6204,34 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-#caravan merchants
-[anyone,"start", [(eq,"$caravan_escort_state",1),
-    (eq,"$g_encountered_party","$caravan_escort_party_id"),
-    (le,"$talk_context",tc_party_encounter),
-    (store_distance_to_party_from_party, reg0,"$caravan_escort_destination_town","$caravan_escort_party_id"),
-    (lt,reg0,5),
-    (str_store_party_name,s3,"$caravan_escort_destination_town"),
-    (assign,reg3, "$caravan_escort_agreed_reward")],
-"There! I can see the walls of {s3} in the distance. We've made it safely.\
- Here, take this purse of {reg3} denars, as I promised. I hope we can travel together again someday.", "close_window",[
-    (assign,"$caravan_escort_state",0),
-    (call_script, "script_troop_add_gold", "trp_player","$caravan_escort_agreed_reward"),
-    (assign,reg4, "$caravan_escort_agreed_reward"),
-#    (val_mul,reg4, 1),
-    (add_xp_as_reward,reg4),
-    (assign, "$g_leave_encounter",1)]],
+# #caravan merchants
+# [anyone,"start", [(eq,"$caravan_escort_state",1),
+    # (eq,"$g_encountered_party","$caravan_escort_party_id"),
+    # (le,"$talk_context",tc_party_encounter),
+    # (store_distance_to_party_from_party, reg0,"$caravan_escort_destination_town","$caravan_escort_party_id"),
+    # (lt,reg0,5),
+    # (str_store_party_name,s3,"$caravan_escort_destination_town"),
+    # (assign,reg3, "$caravan_escort_agreed_reward")],
+# "There! I can see the walls of {s3} in the distance. We've made it safely.\
+ # Here, take this purse of {reg3} denars, as I promised. I hope we can travel together again someday.", "close_window",[
+    # (assign,"$caravan_escort_state",0),
+    # (call_script, "script_troop_add_gold", "trp_player","$caravan_escort_agreed_reward"),
+    # (assign,reg4, "$caravan_escort_agreed_reward"),
+# #    (val_mul,reg4, 1),
+    # (add_xp_as_reward,reg4),
+    # (assign, "$g_leave_encounter",1)]],
   
-[anyone,"start",   [(eq,"$caravan_escort_state",1),
-					(eq,"$g_encountered_party","$caravan_escort_party_id"),
-					(eq, "$talk_context", tc_party_encounter)],
-"We've made it this far... Is everything clear up ahead?", "talk_caravan_escort",[]],
-[anyone|plyr,"talk_caravan_escort", [], "There might be bandits nearby. Stay close.", "talk_caravan_escort_2a",[]],
-[anyone,"talk_caravan_escort_2a", [], "Trust me, {playername}, we're already staying as close to you as we can. Lead the way.", "close_window",[(assign, "$g_leave_encounter",1)]],
-[anyone|plyr,"talk_caravan_escort", [], "No sign of trouble, we can breathe easy.", "talk_caravan_escort_2b",[]],
-[anyone,"talk_caravan_escort_2b", [], 
-"I'll breathe easy when we reach {s1} and not a moment sooner. Let's keep moving.", "close_window",[
-		(str_store_party_name,s1,"$caravan_escort_destination_town"),
-		(assign, "$g_leave_encounter",1)]],
+# [anyone,"start",   [(eq,"$caravan_escort_state",1),
+					# (eq,"$g_encountered_party","$caravan_escort_party_id"),
+					# (eq, "$talk_context", tc_party_encounter)],
+# "We've made it this far... Is everything clear up ahead?", "talk_caravan_escort",[]],
+# [anyone|plyr,"talk_caravan_escort", [], "There might be bandits nearby. Stay close.", "talk_caravan_escort_2a",[]],
+# [anyone,"talk_caravan_escort_2a", [], "Trust me, {playername}, we're already staying as close to you as we can. Lead the way.", "close_window",[(assign, "$g_leave_encounter",1)]],
+# [anyone|plyr,"talk_caravan_escort", [], "No sign of trouble, we can breathe easy.", "talk_caravan_escort_2b",[]],
+# [anyone,"talk_caravan_escort_2b", [], 
+# "I'll breathe easy when we reach {s1} and not a moment sooner. Let's keep moving.", "close_window",[
+		# (str_store_party_name,s1,"$caravan_escort_destination_town"),
+		# (assign, "$g_leave_encounter",1)]],
 
 
 

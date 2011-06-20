@@ -311,6 +311,9 @@ scenes = [
   ("tld_sorcerer_forest_c" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xb7e55217000469130000779000005f5f00007f2f",[],[],"outer_terrain_forest"),
 
   ("moria_secret_entry" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
+
+  ("moria_deep_mines" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+
   ("pick_troops" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x30674c1b0003f90100001b70000067da00002878",[],[],"outer_terrain_forest"),
   ("pick_troops_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc66d39c000489220000340c00007722000048c7",[],[]),
   

@@ -1379,7 +1379,7 @@ troops = [
    [itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_wargarmored_1b,itm_wargarmored_1c,itm_wargarmored_2b,itm_wargarmored_2c,itm_orc_scimitar,itm_orc_falchion,itm_orc_sabre,],
       attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_power_throw_5|knows_power_strike_4,orc_face1,orc_face2],
 
-# "ghost" warg riders
+# "ghost" warg riders: (invisible riders for lone wargs) number and order match warg items
 ["warg_ghost_1b","Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_warg_1b],
       attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
@@ -1403,6 +1403,9 @@ troops = [
       attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
 ["warg_ghost_a3a","Armored Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_wargarmored_3a],
+      attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
+["warg_ghost_h","Huge Warg","ERROR",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_warg_ghost_boots,itm_warg_ghost_gloves,itm_warg_ghost_helm,itm_warg_reward],
       attr_orc_tier_2,wp_orc_tier_2,knows_riding_10|knows_power_throw_2|knows_power_strike_2,orc_face1,orc_face2],
 
 	  

@@ -116,6 +116,7 @@ game_menus = [
 	(call_script,"script_reward_system_init"),
 	(call_script,"script_init_player_map_icons"),
 	#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
+	(assign, "$found_moria_entrance", 0),
 	
 	# relocate party next to own capital
 	(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
@@ -5289,6 +5290,29 @@ game_menus = [
     ]
   ),
 
+  # dungeon craw: way out of moira
+  ( "moria_must_escape",city_menu_color,
+    "^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.",
+    "none",[(set_background_mesh, "mesh_town_moria"),],[
+	  ("moria_exit_scene",[], "Find your way out!",[
+			(modify_visitors_at_site,"scn_moria_deep_mines"),
+			(reset_visitors),
+            (set_visitor,0,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl_moria_deep"),
+            (jump_to_scene, "scn_moria_deep_mines"),
+            (change_screen_mission),
+	  ]),
+	]
+  ),
+
+  ( "moria_didnt_escape",city_menu_color,
+    "There are too many orcs around! You cry in despair, when, all of a sudden, a you feel a shattering pain on the back of your head and the world goes dark.^^^But this is not your end. You wake up lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murked pit.^By who knows what underground river, you must have surfraced.",
+    "none",[(set_background_mesh, "mesh_town_moria"),],[
+	  ("whatever",[], "Get up!",[ (jump_to_menu,"mnu_castle_outside"), ]),
+	]
+  ),
+  
+ 
   ( "castle_outside",city_menu_color,
     "You are outside {s2}.{s11} {s3} {s4}",
     "none",
@@ -5482,12 +5506,14 @@ game_menus = [
 #             (assign, "$talk_context", tc_castle_commander),
 #             (change_screen_map_conversation, reg(6))
 #             ]),
-      ("moria_enter",[(eq,1,0)], "You are not reading this",[
+	  ("moria_enter",[(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1)
+	        ], "Return into main hall of Moria trough the secret entrance",[
 			(modify_visitors_at_site,"scn_moria_center",),
 			(reset_visitors),
-            (set_visitor,2,"trp_player"),
-			(set_jump_mission,"mt_dungeon_crawl"),
+            (set_visitor,1,"trp_player"),
+			(set_jump_mission,"mt_dungeon_crawl_moria_hall"),
             (jump_to_scene, "scn_moria_center"),
+			(assign, "$found_moria_entrance", 1),
             (change_screen_mission),
 	  ]
 	  ,"Enter Moria."),
@@ -5496,15 +5522,29 @@ game_menus = [
       ("moria_secret",[
         (eq, "$current_town", "p_town_moria"),
 	  	(eq,"$entry_to_town_forbidden",1), 
-        ],"Search for a secret entrance to Moria",[
+		(try_begin), (eq, "$found_moria_entrance", 1),
+			(str_store_string, s12, "@Go at the secret entrance to Moria" ),
+		(else_try),
+			(str_store_string, s12, "@Search for a secret entrance to Moria" ),
+		(try_end),
+		
+        ],"{s12}",[
             (modify_visitors_at_site,"scn_moria_secret_entry"),
 			(reset_visitors),
             (set_visitor,0,"trp_player"),
-			(set_jump_mission,"mt_dungeon_crawl"),
+			(set_jump_mission,"mt_dungeon_crawl_moria_entrance"),
             (jump_to_scene, "scn_moria_secret_entry"),
             (change_screen_mission),
        ]),
       #Enter dungeon in Moria end (mtarini)
+	  
+	  ("moria_exit_scene",[(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
+			(troop_add_item, "trp_player","itm_book_of_moria",0),
+			(jump_to_menu,"mnu_moria_must_escape"),
+			(finish_mission),
+	  ]
+	  ,"Get book."),
+
 	  
       ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
@@ -9451,7 +9491,8 @@ game_menus = [
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
 ]),
 
-]
+] 
+
 
 ## quick scene chooser
 import header_scenes

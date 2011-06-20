@@ -699,6 +699,7 @@ tld_common_battle_scripts = [
 	nazgul_sweeps,
 	custom_troll_hitting,
 	custom_warg_sounds,
+	#custom_lone_wargs_special_attack,
 	custom_lone_wargs_are_agressive,
 	tld_player_cant_ride,
 #	cheat_kill_all_on_ctrl_k,  
@@ -4405,16 +4406,39 @@ mission_templates = [
     ],
   ),
 ########################### end custom battle faction troops showoff
-( "dungeon_crawl",mtf_battle_mode,-1,
-    "You go to the scene",
+
+# daungeon crawl
+( "dungeon_crawl_moria_entrance",0,-1,
+    "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
     [
-	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
 	dungeon_darkness_effect,
 	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), ]),
+  ],
+),
+
+( "dungeon_crawl_moria_hall",0,-1,
+    "Explore around Moria",
+    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
+    [
+    (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
+	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+  ],
+),
+
+
+( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
+    "Lost in Moria! Orcs are everywhere! You must find a way out!",
+    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
+    [
+    (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
+	(ti_question_answered, 0, 0, [], [ 
+		(troop_remove_item, "trp_player","itm_book_of_moria"),(store_trigger_param_1,":answer"), (eq,":answer",0), (jump_to_menu,"mnu_moria_didnt_escape"), (finish_mission), 
+	]),
+	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001) ]),
   ],
 ),
 
@@ -4424,29 +4448,7 @@ mission_templates = [
     [
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
 	
-	(1, 0, 0, [], # dynamic fog in dungeons, governed by player triggering scene props
-    [(get_player_agent_no,":player"), 
-     (agent_get_position,pos25,":player"),
-     (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),     # cycle through fog triggers
-       (scene_prop_get_num_instances,":max_instance", ":pointer"),
-       (ge,":max_instance", 1),	   # setting fog thickness
-       (try_begin),(eq,":pointer","spr_light_fog_black0"),(assign,":fog_distance",10000),
-	     (else_try),(eq,":pointer","spr_light_fog_black1"),(assign,":fog_distance",500),
-	     (else_try),(eq,":pointer","spr_light_fog_black2"),(assign,":fog_distance",200),
-	     (else_try),(eq,":pointer","spr_light_fog_black3"),(assign,":fog_distance",120),
-	     (else_try),(eq,":pointer","spr_light_fog_black4"),(assign,":fog_distance",80),
-	     (else_try),(eq,":pointer","spr_light_fog_black5"),(assign,":fog_distance",50),
-       (try_end),
-       (try_for_range,":instance_no",0,":max_instance"),	   # checking distance to player
-	     (scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
-         (ge, ":i", 0),
-           (prop_instance_get_position,pos1,":i"),
-           (get_distance_between_positions,":dist",pos1,pos25),
-	       (le,":dist",200),
-	       (set_fog_distance,":fog_distance",0x010101),
-       (try_end),
-     (try_end),
-   ]),
+	dungeon_darkness_effect,
   ],
 ),
 
@@ -4613,7 +4615,7 @@ mission_templates = [
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
-           (jump_to_menu, "mnu_auto_intro_joke"),
+           (jump_to_menu, "mnu_auto_intro_joke"),  #### something went wrong, or SVN problems? I don't see any such menu. commented this MT
          (try_end),
          ], []),
     ],

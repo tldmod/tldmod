@@ -230,13 +230,13 @@ triggers = [
 ##               (party_set_flags, reg(2), pf_default_behavior, 0),
 ##            ]),
   
-  (4, 0, 0, [(eq, "$caravan_escort_state", 1), #cancel caravan_escort_state if caravan leaves the destination
-             (get_party_ai_object,reg(1),"$caravan_escort_party_id"),
-             (neq,reg(1),"$caravan_escort_destination_town"),
-            ],
-            [(assign,"$caravan_escort_state",0),
-             (add_xp_as_reward,100),
-            ]),
+  # (4, 0, 0, [(eq, "$caravan_escort_state", 1), #cancel caravan_escort_state if caravan leaves the destination
+             # (get_party_ai_object,reg(1),"$caravan_escort_party_id"),
+             # (neq,reg(1),"$caravan_escort_destination_town"),
+            # ],
+            # [(assign,"$caravan_escort_state",0),
+             # (add_xp_as_reward,100),
+            # ]),
 
 #  (1.5, 0, 0, [(store_random_party_of_template, reg(2), "pt_messenger_party"),
 #               (party_is_in_any_town,reg(2)),
