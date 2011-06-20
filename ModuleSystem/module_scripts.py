@@ -13264,7 +13264,10 @@ scripts = [
          (position_transform_position_to_parent, pos1, pos1, pos2),
        (try_end),
        (agent_set_scripted_destination, ":agent_no", pos1, 0),
-       (agent_set_speed_limit, ":agent_no", 5),
+	   (try_begin),
+			(neq, "$current_town", "p_town_west_osgiliath"),
+			(agent_set_speed_limit, ":agent_no", 4),
+	   (try_end),
      (try_end),
   ]),
 

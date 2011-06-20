@@ -10828,5 +10828,8 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 
 [anyone|plyr,"free", [[in_meta_mission]], " Good-bye.", "close_window",[]],
 [anyone|plyr,"free", [[neg|in_meta_mission]], " [Leave]", "close_window",[]],
-#[anyone,"free", [], "NO MATCHING SENTENCE!", "close_window",[]],
+
+[anyone,"free", [], "NO MATCHING SENTENCE!", "close_window",[]],
+[anyone,"start", [], "NO MATCHING SENTENCE!", "close_window",[]],
+
 ]
