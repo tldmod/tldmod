@@ -1471,7 +1471,7 @@ troops = [
       attr_tier_5,wp_tier_5,knows_athletics_5|knows_power_strike_5|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
 ["uruk_mordor_standard_bearer","Mordor_Standard_Bearer","Mordor_Standard_Bearers",tf_uruk| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
    [itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_mordor_banner,itm_uruk_helm_b,itm_uruk_helm_c,itm_uruk_helm_d,],
-      attr_tier_5,wp_tier_5,knows_athletics_2|knows_power_strike_5|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
+      attr_tier_5,wp_tier_5,knows_athletics_5|knows_power_strike_5|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
 #Trolls  & ents
 ["troll_of_moria","Troll_of_Moria","Trolls_of_Moria",tf_troll| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
    [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_troll_feet_boots,itm_troll_head_helm,itm_troll_head_helm_b,itm_troll_head_helm_c,],

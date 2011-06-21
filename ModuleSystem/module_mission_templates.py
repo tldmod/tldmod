@@ -4643,7 +4643,7 @@ mission_templates = [
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_joke"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_mordor"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -4794,6 +4794,151 @@ mission_templates = [
          (else_try),
            (eq, "$g_tld_intro_state", 22), #finish
            (ge, ":cur_time", 39),
+           (finish_mission, 0),
+           (val_add, "$g_tld_intro_state", 1),
+           #chain to next intro mission
+           (jump_to_menu, "mnu_auto_intro_mordor"),
+         (try_end),
+         ], []),
+    ],
+),
+
+("intro_mordor", 0, -1,
+    "Intro cutscene mission",
+    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+     (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    ],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_joke"),]),
+    
+    (ti_before_mission_start, 0, 0, [],
+      [ 
+        (assign, "$g_tld_intro_state", 30),
+        
+        (music_set_situation, 0), (music_set_culture, 0),
+        (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
+        (music_set_situation, mtf_sit_siege),
+      ]),
+      
+      (0, 0, ti_once,
+       [(start_presentation, "prsnt_intro_titles"),
+        
+        #spawn a standard bearer and ranks of soldiers
+        (set_fixed_point_multiplier, 100),
+        (init_position, pos1),
+        (position_set_x, pos1, 22644),
+        (position_set_y, pos1, 20078),
+        (position_rotate_z, pos1, -11),
+        (set_spawn_position, pos1),
+        (spawn_agent, "trp_uruk_mordor_standard_bearer"), #has to be in a condition block, or it will crash
+        (agent_set_speed_limit, reg0, 7),
+        (position_move_x, pos1, -225), #1.5x column width
+        (position_move_y, pos1, -200), # bearer ahead of troops
+        (try_for_range, ":unused", 0, 8), #ranks
+          (try_for_range, ":unused2", 0, 4), #columns
+            (set_spawn_position, pos1),
+            (spawn_agent, "trp_black_uruk_of_barad_dur"),
+            (agent_set_speed_limit, reg0, 7),
+            (position_move_x, pos1, 150), #1.5m between columns
+          (try_end),
+          # get back to first column of previous rank
+          (position_move_x, pos1, -600), #4x1.5m
+          (position_move_y, pos1, -150), #next rank 1.5m behind
+        (try_end),
+       ],[]),
+
+      # detect player camera init
+      (0, 0, ti_once,
+        [
+         (mission_cam_get_position, pos1),
+         (position_get_z, ":z_pos", pos1),
+         (neq, ":z_pos", 0),       
+        ],
+        [
+         (assign, "$g_tld_intro_state", 31),
+        ]),
+      
+      (0, 0, 0,
+       [
+         (set_show_messages, 0),
+         (store_mission_timer_a, ":cur_time"),
+         (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_set_animation, ":player_agent", "anim_stand"),
+         
+         (try_begin),
+           (eq, "$g_tld_intro_state", 31), #start with looking at the city
+           (mission_cam_set_mode, 1),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 169),
+           (position_set_x, pos1, 23600),
+           (position_set_y, pos1, 36200),
+           (position_set_z, pos1, 2100),
+           (mission_cam_set_position, pos1),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 32), #pan to the bridge
+           (ge, ":cur_time", 4),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 169),
+           (position_set_x, pos1, 25000),
+           (position_set_y, pos1, 32200),
+           (position_set_z, pos1, 1400),
+           (mission_cam_animate_to_position, pos1, 2000, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 33), #pan to the other side of the bridge
+           (ge, ":cur_time", 6),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 169),
+           (position_set_x, pos1, 23000),
+           (position_set_y, pos1, 22000),
+           (position_set_z, pos1, 500),
+           (mission_cam_animate_to_position, pos1, 10000, 0),
+           # march the troops down the bridge
+           (try_for_agents, ":agent_no"), # find everyone and march them off
+             (agent_get_troop_id, ":agent_troop", ":agent_no"),
+             (this_or_next|eq, ":agent_troop", "trp_uruk_mordor_standard_bearer"),
+             (eq, ":agent_troop", "trp_black_uruk_of_barad_dur"),
+             (agent_get_position, pos1, ":agent_no"),
+             (position_move_x, pos1, 1350), # correction for angle numerical loss
+             (position_move_y, pos1, 10000),
+             (agent_set_scripted_destination, ":agent_no", pos1, 1),
+             (eq, ":agent_troop", "trp_uruk_mordor_standard_bearer"),
+             (agent_play_sound, ":agent_no", "snd_nazgul_skreech_long"), #somebody has to screech
+           (try_end),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 34), #turn around
+           (ge, ":cur_time", 16),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -11),
+           (position_set_x, pos1, 23000),
+           (position_set_y, pos1, 22000),
+           (position_set_z, pos1, 400),
+           (mission_cam_animate_to_position, pos1, 1000, 0),
+           # find the leader and make him make yell a little
+           (try_for_agents, ":agent_no"), 
+             (agent_get_troop_id, ":agent_troop", ":agent_no"),
+             (eq, ":agent_troop", "trp_uruk_mordor_standard_bearer"),
+             (agent_play_sound, ":agent_no", "snd_uruk_victory"),
+           (try_end),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 35), #and fly over again
+           (ge, ":cur_time", 26),
+           (init_position, pos1),
+           (position_rotate_x, pos1, 50),
+           (position_rotate_z, pos1, 30),
+           (position_set_x, pos1, 25000),
+           (position_set_y, pos1, 32200),
+           (position_set_z, pos1, 400),
+           (mission_cam_animate_to_position, pos1, 7000, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 36), #finish
+           (ge, ":cur_time", 34),
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
