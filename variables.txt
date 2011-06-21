@@ -253,6 +253,8 @@ team3_default_formation
 team0_reinforcement_stage
 team1_reinforcement_stage
 tld_camera_on
+agent_king
+player_is_bowing
 defender_team
 attacker_team
 defender_team_2

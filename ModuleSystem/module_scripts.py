@@ -940,6 +940,33 @@ scripts = [
 	]),
 	
 #############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS  END  (mtarini)  #############################?#
+
+# script_get_entry_point_with_most_similar_facing
+# stores in reg1 the entry point  (in 0..64) with a facting more similar to 1st param 
+("get_entry_point_with_most_similar_facing", 
+[
+	(store_script_param_1, ":target"),
+	
+	(store_add, ":target2", ":target", 360),
+	(try_begin),
+		(ge,":target", 180), (store_add, ":target2", ":target", -360),
+	(try_end),
+	
+	(assign, reg1, 0),
+	(assign, ":best", 9999),
+	(try_for_range, ":i", 0, 64),
+		(entry_point_get_position,pos10,":i"),
+		(position_get_rotation_around_z, reg10, pos10),
+		# find min distance from target2, target (store in reg12)
+		(store_sub, reg11, reg10, ":target2"),(val_abs, reg11),
+		(store_sub, reg12, reg10, ":target"), (val_abs, reg12),
+		(val_min, reg12,reg11),
+		(lt, reg12, ":best"), 
+		(assign, ":best", reg12),
+		(assign, reg1, ":i"),
+	(try_end),
+]),
+
 #script_cf_is_troop_in_party_wounded 
   #is a regular troop wounded inside a party?  (mtarini)
   # INPUT: arg1 = faction_no, arg2 = owner_troop_no
@@ -13127,6 +13154,7 @@ scripts = [
       (agent_get_troop_id, ":troop_no", ":agent_no"),
       (set_fixed_point_multiplier, 100),
       (assign, ":stand_animation", -1),
+	  
       (try_begin),
         (this_or_next|is_between, ":troop_no", armor_merchants_begin, armor_merchants_end),
         (is_between, ":troop_no", weapon_merchants_begin, weapon_merchants_end),
@@ -13147,6 +13175,8 @@ scripts = [
         (is_between, ":troop_no", soldiers_begin, soldiers_end),
         (assign, ":stand_animation", "anim_stand_townguard"),
       (try_end),
+	  
+	  
       (try_begin),
         (ge, ":stand_animation", 0),
         (agent_set_stand_animation, ":agent_no", ":stand_animation"),

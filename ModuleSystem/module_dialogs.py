@@ -8726,8 +8726,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      #(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
      (str_store_troop_name, s9, "$g_talk_troop"),
      (str_store_party_name_link, s3, "$g_encountered_party"),
+	 (str_clear, s6), 
      (setup_quest_text,"qst_deliver_food"),
-     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days.")]], #s2 should not be changed until the decision is made
+     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.")]], #s2 should not be changed until the decision is made
 
 [anyone|plyr,"merchant_quest_brief_deliver_food", [],
 "Alright. I will find the food and bring it to you.", "merchant_quest_taken",[
@@ -8759,14 +8760,16 @@ Scavenge their corpses and bring me the metal, {playername}. With an ounce of th
    
 [anyone,"merchant_quest_brief", [
      (eq,"$random_merchant_quest_no","qst_deliver_iron"),
+     (str_clear, s9), (str_store_troop_name, s9, "$g_talk_troop"),
+     (str_clear, s3), (str_store_party_name_link, s3, "$g_encountered_party"),
+	 (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+	 (str_clear, s6),  (str_store_item_name, s6, ":quest_target_item"),
+	 (quest_get_slot, reg5, "qst_deliver_iron", slot_quest_target_amount),
      (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good)],
 "We need {reg5} units of {s6} in 14 days, before our weaponsmiths run out of raw materials.\
 What do you say?", "merchant_quest_brief_deliver_iron",
-   [(quest_get_slot, reg5, "qst_deliver_iron", slot_quest_target_amount),
-    (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
-    (str_store_troop_name, s9, "$g_talk_troop"),
-    (str_store_party_name_link, s3, "$g_encountered_party"),
-    (str_store_item_name, s6, ":quest_target_item"),
+   [
+    
     (setup_quest_text,"qst_deliver_iron"),
     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days.")]],#s2 should not be changed until the decision is made
    

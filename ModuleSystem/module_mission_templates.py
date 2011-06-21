@@ -743,9 +743,12 @@ mission_templates = [
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
       (ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
-    ],
+	  (ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
+	  
+   ],
   ),
-
+  
+ 
 # This template is used in party encounters and such.
 # 
   ( "conversation_encounter",0,-1,
@@ -1354,11 +1357,12 @@ mission_templates = [
      (16,mtef_visitor_source,af_castle_warlord,0,1,[]),(17,mtef_visitor_source,af_castle_warlord,0,1,[]),(18,mtef_visitor_source,af_castle_warlord,0,1,[]),(19,mtef_visitor_source,af_castle_warlord,0,1,[]),(20,mtef_visitor_source,af_castle_warlord,0,1,[]),(21,mtef_visitor_source,af_castle_warlord,0,1,[]),(22,mtef_visitor_source,af_castle_warlord,0,1,[]),(23,mtef_visitor_source,af_castle_warlord,0,1,[]),(24,mtef_visitor_source,af_castle_warlord,0,1,[]),
      (25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),(28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
-    [
+    custom_tld_bow_to_kings + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
-      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest")]),
+      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest"),]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
       (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
+	  
       (0, 0, ti_once, [], [
         #(set_fog_distance, 150, 0xFF736252)
         (try_begin),
@@ -1367,7 +1371,8 @@ mission_templates = [
         (else_try),
           (call_script, "script_music_set_situation_with_culture", 0), #prison
         (try_end),
-        ]),
+        ]),	  
+ 
     ],
   ),
   
@@ -5002,7 +5007,7 @@ mission_templates = [
         (troop_get_inventory_slot, ":horse_item", "trp_gondor_lord", 8),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, -1),
         (spawn_agent, "trp_gondor_lord"),
-        (agent_set_stand_animation, reg0, "anim_sit_on_trone"),
+        (agent_set_stand_animation, reg0, "anim_sit_on_trone"),####
         (agent_set_team, reg0, 2),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, ":horse_item"),
         # guards
@@ -5146,7 +5151,7 @@ mission_templates = [
            (try_for_agents, ":agent_no"),
              (agent_get_troop_id, ":troop", ":agent_no"),
              (eq, ":troop", "trp_gondor_lord"),
-             (agent_set_animation, ":agent_no", "anim_sit_on_trone"),
+             (agent_set_animation, ":agent_no", "anim_sit_on_trone"),####
            (try_end),
            (entry_point_get_position, pos1, 16),
            (position_rotate_z, pos1, 180),

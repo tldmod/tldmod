@@ -1076,7 +1076,7 @@ animations = [
  ["strike_fall_back_rise", acf_enforce_lowerbody|acf_align_with_ground, 
    [1.7, "anim_human", blow+5400, blow+5453, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],
  ],
- ["strike_fall_back_rise_upper", acf_align_with_ground,
+ ["strike_fall_back_per", acf_align_with_ground,
    [1.38, "anim_human", blow+5400, blow+5442, arf_blend_in_2], 
  ],
 
@@ -1133,16 +1133,34 @@ animations = [
  ["ready_carrystone", acf_overswing,
    [ready_durn, "anim_human", combat+6206, combat+6210, blend_in_ready|arf_use_walk_progress|blend_in_walk], 
  ],
+ 
+ # FOR TRONES  ROOMS(mtarini)
+ # ---------------------
+ 
+ # used by lords 
  ["sit_on_trone", 0,
    [5.5, "sit", 100, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 200, 208, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 300, 308, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
  ],
  
- # TROLL STUFF
+ # bow to lord
+ ["bow_to_lord_go_down", 0,
+   [2.0, "bow_to_lord", 4, 18, arf_blend_in_3, 0, (0, 0, 0), 0],
+ ], 
+ ["bow_to_lord_get_up", 0,
+   [0.4, "bow_to_lord", 4, 0, arf_blend_in_6, 0, (0, 0, 0), 0],
+ ],
+ ["bow_to_lord_stay_down", 0,
+   [2.1, "bow_to_lord", 8, 28, #arf_use_stand_progress|arf_cyclic|
+      arf_blend_in_20, 0, (0, 0, 0), 0],
+ ],
+ 
+ 
+ # TROLL STUFF  (mtarini)
  # ------------------
  
- # TROLL ATTACK, in one go (ready and release)
+ # TROLL ATTACK, in one go (ready and release)  
  ["ready_and_release_slashright_troll", acf_right_cut|acf_enforce_all,
    [0.6*(43-28)/72, "troll_slash_right", 34, 43, 6], # (last number X means: blend_in_X)
  ], 
@@ -1207,7 +1225,10 @@ animations = [
  ["strike_fly_front", acf_enforce_all|acf_align_with_ground|acf_displace_position, 
    [0.59, "ani_fall_flyfront_rise", 0, 40, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.36,2.93,0), 0.5],
  ],
- # nazgul reaction 
+ 
+ 
+ # NAZUGL REACTIONS (mtarini) 
+ # ------------------
  ["nazgul_noooo_long", acf_enforce_all, 
    [3.5, "oh_no", 8,  8+30, arf_blend_in_2], 
    [3.6, "oh_no",12, 12+31, arf_blend_in_2], 
@@ -1254,9 +1275,9 @@ animations = [
    [1.7, "hide_inside_warg", 0, 20, arf_blend_in_4|arf_cyclic| acf_synch_with_horse,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9],
    #[1.7, "hide_inside_warg", 0, 20, arf_blend_in_4,pack2f(0.4, 0.0), ( 0.0, 4.2,0), 0],
  ],
- ["unused_human_anim_24", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_25", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_26", 0, [1.0, "anim_human", 0, 1, 0]],
+ 
+
+ 
  ["unused_human_anim_27", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_28", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_29", 0, [1.0, "anim_human", 0, 1, 0]],

@@ -370,8 +370,6 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
-qstr_DEBUG:_wargs_view_or DEBUG:_wargs_view_orientation:_{reg20}
-qstr_DEBUG:_wargs_orienta DEBUG:_wargs_orientation:_{reg20}
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -659,7 +657,8 @@ qstr_You_fail_to_steal_an You_fail_to_steal_any_cattle.
 qstr_You_drive_away_{reg1 You_drive_away_{reg17}_{reg12?heads:head}_of_cattle_from_the_village's_herd.
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
-qstr___{reg1}_Resource_pt _({reg1}_Resource_pts._per_night)
+qstr_Stay_indoor_for_some Stay_indoor_for_some_time_({reg1}_Resource_pts._per_night)
+qstr_Camp_near_town_for_s Camp_near_town_for_some_time_(free)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
 qstr_Forces_of_Good Forces_of_Good
@@ -854,7 +853,8 @@ qstr_Well..._better_here_ Well..._better_here_than_in_combat,_eh?
 qstr_Lady_Galadriel_has_a Lady_Galadriel_has_asked_you_to_slay_the_Dol_Guldur_sorcerer_in_Mirkwood.
 qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
 qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_7_days.
-qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_10_days.
+qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_10_days.
+qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_10_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.
 qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town.
 qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_of_goblins_making_trouble_in_{s14}._They_only_come_out_at_night,_and_only_attack_lone_people_on_the_streets.

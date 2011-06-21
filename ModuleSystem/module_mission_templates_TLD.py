@@ -40,6 +40,54 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 	]
 )
 
+custom_tld_bow_to_kings = [
+	# bow to lords (mtarini)
+	(ti_before_mission_start , 0, 0, [],[
+		(assign, "$agent_king", -1),]),
+	  
+		(ti_on_agent_spawn       , 0, 0, [],[ 
+	    (store_trigger_param_1, ":agent_no"), 
+		(agent_get_troop_id, ":troop_no", ":agent_no"),
+		(is_between, ":troop_no", kings_begin, kings_end),
+		(assign, "$agent_king", ":agent_no"),
+	]),
+	  
+	# push: go down up
+	(0, 0.6, 0, [ 
+		(gt, "$agent_king", -1),
+        (game_key_clicked, gk_jump), 
+		# (key_clicked, key_b),   # overrides jump key
+	    (get_player_agent_no, reg10),
+		(agent_get_position, pos1, "$agent_king"),
+		# see if facing the lord...
+		(agent_get_position, pos2, reg10),
+		(position_rotate_z,pos2,180-45),(position_is_behind_position, pos1, pos2),
+		(position_rotate_z,pos2,90),(position_is_behind_position, pos1, pos2),
+
+		#(agent_set_scripted_destination, reg10, pos1, 1), # hopefully, turn toward lord
+	    (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
+		(assign, "$player_is_bowing", 1),
+	],[ 
+	]),
+
+	# release: get up
+	(0, 0, 0, [],[ 
+	    (neq, "$player_is_bowing", 0 ),
+		(neg|game_key_is_down, gk_jump), # (key_is_down, key_b),  
+		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_get_up"),
+		(assign, "$player_is_bowing", 0 ),
+	]),
+	   
+	# keep pressed: stay down
+	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1 ), ],[ 
+		# (key_is_down, key_b),  
+		(game_key_is_down, gk_jump),
+		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
+	]),
+	  
+]
+	  
+	  
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   [
 	(assign,"$trolls_in_battle",0),	
@@ -96,14 +144,16 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	  (eq, reg0, tf_troll),
 	  (agent_set_speed_limit,":troll",4),	# trolls go 4 km/h max <GA>
 	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
-	  (agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
 	  # troll gets x4 hp
 	  #(store_agent_hit_points,reg0,":troll",1),
 	  #(store_mul,":hp",4,":hp"),
 	  #(agent_set_hit_points ,":troll",":hp",1),
 	  #(assign, reg0, ":hp"),
 	  #(display_message,"@DEBUG: troll spawned with {reg0} hitpoints!"),
-	  (agent_set_stand_animation,":troll","anim_walk_forward_troll"),
+	  
+	  # a failed test: set custom troll walking/standing animations... why wouldn't this work?
+	  #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
+	  #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
 	(try_end),
 	
 	(try_begin),
@@ -127,8 +177,8 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(agent_get_look_position,pos4,":warg"),
 			
 			# testing
-			(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
-			(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
+			#(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
+			#(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
 			
 			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
 
@@ -413,6 +463,11 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 		(agent_get_troop_id,reg0,":troll"), # is it a troll?
 		(troop_get_type, reg0, reg0),
 		(eq, reg0, tf_troll),
+		
+		# TEST...
+		#(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
+	    #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
+
 
         #Trolls charging - begin
         (agent_get_team, ":troll_team", ":troll"),
@@ -751,7 +806,7 @@ custom_lone_wargs_are_agressive = (0,0,2, [],[
 		
 		
 		(try_begin),
-			# rider not dead: record its owner 
+			# rider not dead: record its original owner in a slot (1st time only)
 			(neq,":rider",-1),
 			(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
 			(agent_get_team, reg10, ":rider"),
@@ -768,7 +823,11 @@ custom_lone_wargs_are_agressive = (0,0,2, [],[
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
 		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
 		
-		(add_visitors_to_current_scene,0,":warg_ghost_trp",1),
+		(agent_get_position, pos10, ":warg"),
+		(position_get_rotation_around_z, reg1, pos10),
+		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
+		
+		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
 
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),

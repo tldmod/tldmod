@@ -593,7 +593,7 @@
   0.400000 anim_human 45000 45010 4 0 0.0 0.0 0.0 0.0 
  strike_fall_back_rise 258  1
   1.700000 anim_human 45400 45453 515 102 0.000000 0.000000 0.000000  0.500000 
- strike_fall_back_rise_upper 2  1
+ strike_fall_back_per 2  1
   1.380000 anim_human 45400 45442 3 0 0.0 0.0 0.0 0.0 
  cheer 0  4
   6.000000 man_cheer 0 185 6 0 0.0 0.0 0.0 0.0 
@@ -626,6 +626,12 @@
   5.500000 sit 100 100 1342177280 0 0.000000 0.000000 0.000000  0.250000 
   5.500000 sit 200 208 1342177280 0 0.000000 0.000000 0.000000  0.250000 
   5.500000 sit 300 308 1342177280 0 0.000000 0.000000 0.000000  0.250000 
+ bow_to_lord_go_down 0  1
+  2.000000 bow_to_lord 4 18 4 0 0.000000 0.000000 0.000000  0.000000 
+ bow_to_lord_get_up 0  1
+  0.400000 bow_to_lord 4 0 7 0 0.000000 0.000000 0.000000  0.000000 
+ bow_to_lord_stay_down 0  1
+  2.100000 bow_to_lord 8 28 21 0 0.000000 0.000000 0.000000  0.000000 
  ready_and_release_slashright_troll 132096  1
   0.125000 troll_slash_right 34 43 6 0 0.0 0.0 0.0 0.0 
  ready_and_release_slashleft_troll 263168  1
@@ -704,12 +710,6 @@
   1.000000 hide_inside_warg 0 31 268435456 0 0.0 0.0 0.0 0.0 
  ride_warg_jump 257  1
   1.700000 hide_inside_warg 0 20 268435461 2829396006 0.000000 0.000000 0.000000  0.900000 
- unused_human_anim_24 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_25 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_26 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_27 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_28 0  1

@@ -88,6 +88,7 @@ game_menus = [
   ( "start_game_1",menu_text_color(0xFF000000)|mnf_disable_all_keys,
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
+	(set_show_messages,0),
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
@@ -106,10 +107,9 @@ game_menus = [
  play their part. What part, however, remains to be seen... ",
     "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
+   (set_show_messages,0),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
-	(set_show_messages,0),
-	#  add a little money
-	(troop_add_gold, "trp_player", 50),
+	
 	##        (troop_add_item, "trp_player","itm_horn",0),
 	
 #	(call_script,"script_TLD_troop_banner_slot_init"),
@@ -117,6 +117,9 @@ game_menus = [
 	(call_script,"script_init_player_map_icons"),
 	#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
 	(assign, "$found_moria_entrance", 0),
+
+	#  add a little money
+	(troop_add_gold, "trp_player", 50),
 	
 	# relocate party next to own capital
 	(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
@@ -153,7 +156,9 @@ game_menus = [
 		
 		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
+		(set_show_messages, 1),
         (change_screen_map), #(change_screen_return),
+		
         ]),
 		("spacer",[]," "  ,[]),
 		 
@@ -7866,22 +7871,24 @@ game_menus = [
 		   (eq,"$entry_to_town_forbidden",0),
            (this_or_next|ge, "$g_encountered_party_relation", 0),
            (eq,"$castle_undefended",1),
-           (assign, ":can_rest", 1),
+           
            (str_clear, s1),
+           (str_clear, s2),
            (try_begin),
              #(neg|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
              (party_get_num_companions, ":num_men", "p_main_party"),
              (store_div, reg1, ":num_men", 4),
              (val_add, reg1, 1),
-             (str_store_string, s1, "@ ({reg1} Resource pts. per night)"),
              (store_troop_gold, ":gold", "trp_player"),
-             (lt, ":gold", reg1),
-             (assign, ":can_rest", 0),
+             (ge, ":gold", reg1),
+             (str_store_string, s1, "@Stay indoor for some time ({reg1} Resource pts. per night)"),
+           (else_try),
+		     # not enough money... can rest anyway (but no health bonus)
+             (str_store_string, s1, "@Camp near town for some time (free)"),
            (try_end),
-           (eq, ":can_rest", 1),
-##           (eq, "$g_defending_against_siege", 0),
+			##           (eq, "$g_defending_against_siege", 0),
         ],
-         "Wait here for some time{s1}.",
+         "{s1}.",
          [
            (assign,"$auto_enter_town","$current_town"),
            (assign, "$g_town_visit_after_rest", 1),
@@ -7892,6 +7899,7 @@ game_menus = [
            (change_screen_return),
           ]),
 
+		  
 
 ##      ("rest_until_morning",
 ##       [

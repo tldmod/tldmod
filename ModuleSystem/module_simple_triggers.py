@@ -45,7 +45,7 @@ simple_triggers = [
 
 #Auto-menu
  (0,[(try_begin),
-       (gt, "$g_last_rest_center", 0),
+       (ge, "$g_last_rest_center", 0),
        (party_get_battle_opponent, ":besieger_party", "$g_last_rest_center"),
        (gt, ":besieger_party", 0),
        (store_faction_of_party, ":encountered_faction", "$g_last_rest_center"),

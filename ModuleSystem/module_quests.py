@@ -213,7 +213,7 @@ quests = [
  ("deal_with_night_bandits", "Deal with Rogue Goblins", qf_random_quest,
   "The Elder of {s14} has asked you to deal with night goblins at {s14}."
   ),
-("deliver_food", "Supply {s3} with {reg5} Units of {s6}", qf_random_quest,
+("deliver_food", "Supply {s3} with {reg5} Units of food", qf_random_quest,
   "The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days."
   ), 
  ("deliver_iron", "Supply {s3} with {reg5} Units of {s6}", qf_random_quest,
