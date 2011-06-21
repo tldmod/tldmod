@@ -7852,8 +7852,11 @@ game_menus = [
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       #(party_slot_eq, "$current_town", slot_elder_merchant_visited, 1), #check if elder has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
-	  (party_slot_eq,"$current_town",slot_party_type, spt_town)],
-       "Visit the center authority.",
+	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
+	  (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
+	  (str_store_troop_name, s6, ":elder_troop"),
+	  ],
+       "Speak with the {s6}.",
        [   (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
            (call_script, "script_setup_troop_meeting", ":elder_troop", 0),
         ]),
@@ -9359,7 +9362,7 @@ game_menus = [
 ######################### TLD808 menus ##########################
 ( "ancient_ruins", 0,
   "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_relief01")],
-  [ ("rescue_mission",  [(check_quest_active, "qst_mirkwood_sorcerer")],  "Sneak_into_the_sorcerer's_lair under the night's cover.",
+  [ ("rescue_mission",  [(check_quest_active, "qst_mirkwood_sorcerer"),(neg|check_quest_finished, "qst_mirkwood_sorcerer")],  "Sneak_into_the_sorcerer's_lair under the night's cover.",
 						[(try_begin),
 							# (neg|is_currently_night),
 							# (store_time_of_day, reg1),

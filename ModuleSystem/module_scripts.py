@@ -5916,7 +5916,20 @@ scripts = [
         (neg|check_quest_active,":quest_no"),
         (neg|quest_slot_ge, ":quest_no", slot_quest_dont_give_again_remaining_days, 1),
         (try_begin),
-          #mtarini: Saruman wants a troll be captured
+          #GA: Galadriel wants sorcerer killed
+          (eq, ":quest_no", "qst_mirkwood_sorcerer"),
+		  (try_begin),
+			(eq, ":giver_troop", "trp_elder_cgaladhon"),  # only Galadriel gives this quest
+			(ge, ":player_level", 1),
+			(assign, ":quest_expiration_days", 10),
+			(assign, ":quest_dont_give_again_period", 10000),
+			(assign, ":quest_importance", 4),
+			(assign, ":quest_xp_reward", 3000),
+			(assign, ":quest_gold_reward", 1500),
+			(assign, ":quest_rank_reward", 120),
+			(assign, ":result", ":quest_no"),
+		  (try_end),
+        (else_try),          #mtarini: Saruman wants a troll be captured
           (eq, ":quest_no", "qst_capture_troll"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
@@ -20938,28 +20951,28 @@ scripts = [
 #				(val_add, "$heroes_captured_by_gondor", 1),
 				(val_add, ":comp_captured", 1),
 				(str_store_party_name, s2, "p_town_minas_tirith"),
-				(display_message, "@Gondor_takes_a_captive", 0),
+				(display_message, "@Gondor_takes_a_captive"),
 			(else_try),
 				(eq, ":local3", 1),
 				(eq, ":local0", 2),
 #				(val_add, "$heroes_captured_by_rohan", 1),
 				(val_add, ":comp_captured", 1),
 				(str_store_party_name, s2, "p_town_hornburg"),
-				(display_message, "@Rohan_takes_a_captive", 0),
+				(display_message, "@Rohan_takes_a_captive"),
 			(else_try),
 				(eq, ":local3", 1),
 				(eq, ":local0", 3),
 #				(val_add, "$heroes_captured_by_mordor", 1),
 				(val_add, ":comp_captured", 1),
 				(str_store_party_name, s2, "p_town_minas_morgul"),
-				(display_message, "@Mordor_takes_a_captive", 0),
+				(display_message, "@Mordor_takes_a_captive"),
 			(else_try),
 				(eq, ":local3", 1),
 				(eq, ":local0", 4),
 #				(val_add, "$heroes_captured_by_isengard", 1),
 				(val_add, ":comp_captured", 1),
 				(str_store_party_name, s2, "p_town_isengard"),
-				(display_message, "@Isengard_takes_a_captive", 0),
+				(display_message, "@Isengard_takes_a_captive"),
 			(try_end),
 		(try_end),
 	(try_end),
@@ -20972,7 +20985,7 @@ scripts = [
     (tutorial_box, "@You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort."),
 (else_try),
     (gt, ":comp_captured", 1),
-    (tutorial_box, "@You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured."),
+    (tutorial_box, "@You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured and dragged to {s2}."),
 (try_end),
 ]),
 #script_store_hero_death
@@ -21011,7 +21024,6 @@ scripts = [
  (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
 (try_end),
 ]), 
-
 #script_mt_sneak_2
 ("mt_sneak_2",[
 (store_script_param_1, ":enemy_agent"),
@@ -21028,7 +21040,6 @@ scripts = [
  (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
 (try_end),
 ]), 
-
 #script_isen_sneak_1
 ("isen_sneak_1",[
 (store_script_param_1, ":enemy_agent"),

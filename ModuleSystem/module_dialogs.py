@@ -8341,7 +8341,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 [anyone,"mayor_looters_quest_destroyed_2", [], "Anything else you need?", "mayor_looters_quest_response",[]],
 
 	# MIRKWOOD SORCERER QUEST START
-[trp_elder_cgaladhon|plyr, "lord_active_mission_2",[
+[trp_elder_cgaladhon|plyr, "mayor_begin",[
 	  (store_partner_quest,":lords_quest"),
 	  (eq,":lords_quest","qst_mirkwood_sorcerer"),
 	  (check_quest_succeeded, "qst_mirkwood_sorcerer")],
@@ -8355,7 +8355,7 @@ You have performed a great service for your people and as such you are entitled 
 	  (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5)]],
 	  #(assign, "$galadriel_power", 100)]],
 
-[trp_elder_cgaladhon|plyr, "lord_active_mission_2",[
+[trp_elder_cgaladhon|plyr, "mayor_begin",[
 	  (store_partner_quest,":lords_quest"),
 	  (eq,":lords_quest","qst_mirkwood_sorcerer"),
 	  (check_quest_failed, "qst_mirkwood_sorcerer")],

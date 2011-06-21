@@ -219,6 +219,10 @@ quests = [
  ("deliver_iron", "Supply {s3} with {reg5} Units of {s6}", qf_random_quest,
   "The {s9} of {s3} asked you to bring him {reg5} units of {s6}."
   ), 
+  
+ ("mirkwood_sorcerer", "Slay_a_sorcerer_in_Mirkwood.", qf_random_quest,
+  "Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him."
+  ),
 
 ############
 # Village Elder quests
@@ -273,9 +277,6 @@ quests = [
   ("oath_of_vengeance", "Oath of Vengeance.", qf_random_quest,
   "Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
   
-  ("mirkwood_sorcerer", "Slay_a_sorcerer_in_Mirkwood.", qf_random_quest,
-  "Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him."),
-
  ### TLD traits
 ("trait_elf_friend", "*TRAIT*_-Elf_Friend", 0, 
 "You_have_become_highly_esteemed_by_the_Elves_and_they_now_regard_you_as_a_trusted_ally._The_influence_cost_to_recruit_elves_has_been_reduced_and_you_may_now_attempt_to_give_orders_to_elven_armies."),
