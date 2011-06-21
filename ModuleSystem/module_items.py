@@ -51,14 +51,14 @@ items =[
 ["no_item","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["horse_meat","Horse_Meat",[("raw_meat",0)],itp_type_goods|itp_consumable|itp_food,0,12,weight(40)|abundance(0)|food_quality(30)|max_ammo(40),imodbits_none],
 ###Items before this point are hardwired and their order should not be changed!
-["practice_sword","Practice_Sword",[("practice_sword",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_wooden_attack,itc_longsword,3,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(90)|swing_damage(16,blunt)|thrust_damage(12,blunt),imodbits_none],
-["arena_axe","Axe",[("arena_axe",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_bonus_against_shield,itc_scimitar|itcf_carry_axe_left_hip,137,weight(1.5)|difficulty(0)|spd_rtng(100)|weapon_length(69)|swing_damage(23,blunt)|thrust_damage(17,blunt),imodbits_axe],
-["arena_sword","Sword",[("arena_sword_one_handed",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn,itc_longsword|itcf_carry_sword_left_hip,243,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(21,blunt)|thrust_damage(17,blunt),imodbits_sword_high],
-["arena_sword_two_handed","Two_Handed_Sword",[("arena_sword_two_handed",0)],itp_primary|itp_wooden_parry|itp_type_two_handed_wpn|itp_two_handed,itc_greatsword|itcf_carry_sword_back,670,weight(2.75)|difficulty(0)|spd_rtng(93)|weapon_length(110)|swing_damage(29,blunt)|thrust_damage(21,blunt),imodbits_sword_high],
-["arena_lance","Lance",[("arena_lance",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield,itc_staff|itcf_carry_spear,90,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_polearm],
-["practice_staff","Practice_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,9,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(12,blunt),imodbits_none],
+["practice_sword","Practice_Sword",[("practice_sword",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_wooden_attack,itc_longsword,3,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(90)|swing_damage(16,blunt)|thrust_damage(0,pierce),imodbits_none],
+["arena_axe","Axe",[("arena_axe",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_bonus_against_shield,itc_scimitar|itcf_carry_axe_left_hip,137,weight(1.5)|difficulty(0)|spd_rtng(100)|weapon_length(69)|swing_damage(23,blunt)|thrust_damage(0,pierce),imodbits_axe],
+["arena_sword","Sword",[("arena_sword_one_handed",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn,itc_longsword|itcf_carry_sword_left_hip,243,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(21,blunt)|thrust_damage(0,pierce),imodbits_sword_high],
+["arena_sword_two_handed","Two_Handed_Sword",[("arena_sword_two_handed",0)],itp_primary|itp_wooden_parry|itp_type_two_handed_wpn|itp_two_handed,itc_greatsword|itcf_carry_sword_back,670,weight(2.75)|difficulty(0)|spd_rtng(93)|weapon_length(110)|swing_damage(29,blunt)|thrust_damage(0,pierce),imodbits_sword_high],
+["arena_lance","Lance",[("arena_lance",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield,itc_staff|itcf_carry_spear,90,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(0,pierce),imodbits_polearm],
+["practice_staff","Practice_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,9,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(0,pierce),imodbits_none],
 ["practice_bow","Practice_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_type_bow|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back,0,weight(1.5)|difficulty(0)|shoot_speed(40)|spd_rtng(90)|thrust_damage(19,blunt),imodbits_bow],
-["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(25,blunt)|max_ammo(10),imodbits_thrown],
+["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(35,blunt)|max_ammo(7),imodbits_thrown],
 #
 #foods (first one is smoked_fish)
 ["human_meat","Human_Flesh",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
@@ -138,7 +138,7 @@ items =[
 ["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|0],
 ["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(150)|body_armor(40)|difficulty(5)|horse_speed(30)|horse_maneuver(60)|horse_charge(60),imodbits_horse_basic|imodbit_champion],
 ["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
-# first non WARG item: troll_feet_boots (see in module_constants)
+#first non WARG item: troll_feet_boots (see in module_constants)
 
 #TROLL "ITEMS"#########
 ["troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(40)|body_armor(55)|leg_armor(55)|difficulty(40),0],
@@ -151,7 +151,7 @@ items =[
 ["tree_trunk_invis","Tree_Trunk",[("0",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,blunt)|thrust_damage(48,blunt),imodbits_none],
 ["giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,blunt)|thrust_damage(65,blunt),imodbits_none],
 ["giant_mace","Giant_Mace",[("giant_mace",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(65,blunt),imodbits_none],
-["giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(65,blunt)|thrust_damage(65,blunt),imodbits_none],
+["giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,11,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(65,blunt),imodbits_none],
 #
 ["olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_type_foot_armor|itp_unique,0,500,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(30),0],
 ["olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_type_head_armor|itp_unique,0,500,weight(250)|head_armor(62)|difficulty(30),0],
@@ -164,11 +164,11 @@ items =[
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
 ["warg_ghost_armour","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
-["warg_ghost_gloves","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_hand_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
-["warg_ghost_boots", "HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_foot_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
-["warg_ghost_helm",  "HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_head_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+#
+#
+#
 ["warg_ghost_lance" ,"HIDEME_lance"  ,[("dummy_mesh",0)],itp_unique|itp_type_polearm|itp_primary|itp_no_parry,itcf_thrust_onehanded_lance_horseback,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
-
+#
 #tuse these to make the ghost rider visble (peek behind the courtain)
 #["warg_ghost_armour","HIDEME_armour" ,[("orc_mordor_a",0)],itp_unique|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
 #["warg_ghost_gloves","HIDEME_armour" ,[("lthr_glove_L",0)],itp_unique|itp_type_hand_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
@@ -1179,7 +1179,7 @@ items =[
 ["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,130,weight(225)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique,0,130,weight(225)|body_armor(1)|difficulty(0),0],
 ["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
-["empty_head","empty head",[("0",0)],itp_type_head_armor|itp_unique|itp_covers_head,0,130,weight(225)|head_armor(0)|difficulty(0),0],
+["empty_head","empty head",[("0",0)],itp_type_head_armor|itp_unique|itp_covers_head,0,130,weight(225)|head_armor(50)|difficulty(0),0],
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
@@ -1208,7 +1208,7 @@ items =[
 ["garlic_reward","Garlic",[("garlic",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["silmarillion_reward","Silmarillion",[("JIKBookClosed",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["herbarium_reward","Middle_Earth_Herbarium",[("JIKBookOpen",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
-["book_of_moria","Balin Memories",[("JIKBookClosed",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
+["book_of_moria","Balin_Memories",[("JIKBookClosed",0)],itp_unique|itp_type_goods,0,1000,weight(3)|abundance(0)|0,imodbits_none],
 ["ring_a_reward","Tulcarisil",[("reward_ring_a",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
