@@ -1,4 +1,4 @@
-892
+895
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -58,11 +58,14 @@ qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
 qstr_______ ______
 qstr_A_peaceful_village_n A_peaceful_village_not_far_from_Westfold...
 qstr_The_War_is_upon_Roha The_War_is_upon_Rohan!
+qstr_Minas_Tirith___The_W Minas_Tirith_-_The_White_City
+qstr_The_White_Tree_stand The_White_Tree_stands_dead_since_the_line_of_the_Kings_had_failed
+qstr_The_Shadow_grows_str The_Shadow_grows_stronger_in_the_East
 qstr_Meanwhile_adventurer Meanwhile,_adventurers_at_audience_with_Steward_Denethor...
 qstr__What_business_do_yo 'What_business_do_you_have_here,_supplicants?'
 qstr__Your_Stewardship_we 'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr__Enough_of_this_madn 'Enough_of_this_madness!_Guards!!'
-qstr__I_ve_had_enough_of_ 'I've_had_enough_of_these_pranks..._I'm_lowering_the_ceilings_tomorrow!'
+qstr__I_ve_had_enough_of_ 'I've_had_enough_of_these_pranks..._The_next_ones_would_have_to_kneel!'
 qstr_You_gain_{reg10}_Res You_gain_{reg10}_Resource_Pts._of_{s10}.
 qstr_You_used_{reg10}_Res You_used_{reg10}_Resource_Pts._of_{s10}.
 qstr_{s24}: {s24}:

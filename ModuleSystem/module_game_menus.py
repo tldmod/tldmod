@@ -9246,6 +9246,18 @@ game_menus = [
     []
   ),
 
+  ( "auto_intro_gondor",0,"stub","none",
+    [
+       (modify_visitors_at_site, "scn_minas_tirith_center"),
+       (reset_visitors),
+       (set_visitor, 1, "trp_player"),
+       (set_jump_mission, "mt_intro_gondor"),
+       (jump_to_scene, "scn_minas_tirith_center"),
+       (change_screen_mission),
+    ],
+    []
+  ),
+
   ( "auto_intro_joke",0,"stub","none",
     [
        (modify_visitors_at_site, "scn_minas_tirith_castle"),

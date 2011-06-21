@@ -980,13 +980,23 @@ mission_templates = [
      (37,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      (38,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      (39,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
-     (40,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
+     #(40,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      ],
     tld_common_battle_scripts+[
-      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(mission_disable_talk),
+      (ti_before_mission_start, 0, 0, [], [
+        (call_script, "script_change_banners_and_chest"),
+        (mission_disable_talk),
         #remove some cabbage guard spawn points, so castle and prison guards don't spawn
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
+        # remove all other guards except the first five - doesn't work!
+        # (init_position, pos1),
+        # (position_move_z, pos1, -1000000),
+        # (scene_prop_get_num_instances, ":num_guards", "spr_troop_guard"),
+        # (try_for_range, ":count", 5, ":num_guards"),
+          # (scene_prop_get_instance, ":guard_instance", "spr_troop_guard", ":count"),
+          # (prop_instance_set_position, ":guard_instance", pos1), #does this work?? how do you remove a single prop?
+        # (try_end),
         ]),
       
       common_inventory_not_available,
@@ -4458,7 +4468,7 @@ mission_templates = [
      (1,mtef_visitor_source|mtef_team_2,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_gondor"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ #remove cabbage guard spawn points
@@ -4483,6 +4493,7 @@ mission_templates = [
         (init_position, pos1),
         (position_set_x, pos1, 4500),
         (position_set_y, pos1, 3900),
+        (position_rotate_z, pos1, -20),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_walker_man_rohan_t"), #has to be in a condition block, or it will crash
         (agent_set_team, reg0, 0),
@@ -4514,12 +4525,17 @@ mission_templates = [
          (store_mission_timer_a, ":cur_time"),
          (store_mission_timer_b, ":cur_time_b"),
          (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_set_animation, ":player_agent", "anim_stand"),
+         
+         # peasants run!
          (init_position, pos1),
          (position_set_x, pos1, 4500),
          (position_set_y, pos1, 5500),
          (try_begin),
            (ge, "$g_tld_intro_state", 4),
-           (try_for_agents, ":agent_no"), # peasants run!
+           (try_for_agents, ":agent_no"), 
              (agent_get_team, ":team", ":agent_no"),
              (eq, ":team", 0),
              (agent_set_scripted_destination, ":agent_no", pos1, 1),
@@ -4557,8 +4573,8 @@ mission_templates = [
            (play_sound, "snd_warg_lone_woof"),
            (play_cue_track, "track_victorious_evil2"),
            (init_position, pos1),
-           (position_set_x, pos1, 4600), #4500 #6000
-           (position_set_y, pos1, 100), #100 #3000
+           (position_set_x, pos1, 4600),
+           (position_set_y, pos1, 100),
            (set_spawn_position, pos1),
            (try_for_range, ":unused", 0, 10),
              (spawn_agent, "trp_warg_rider_of_isengard"),
@@ -4584,7 +4600,7 @@ mission_templates = [
            (position_rotate_z, pos1, 180),
            (position_rotate_x, pos1, -15),
            (position_set_x, pos1, 4500),
-           (position_set_y, pos1, 5500),
+           (position_set_y, pos1, 5700),
            (position_set_z, pos1, 1200),
            (mission_cam_animate_to_position, pos1, 5000, 0),
            (val_add, "$g_tld_intro_state", 1),
@@ -4615,7 +4631,173 @@ mission_templates = [
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
-           (jump_to_menu, "mnu_auto_intro_joke"),  #### something went wrong, or SVN problems? I don't see any such menu. commented this MT
+           (jump_to_menu, "mnu_auto_intro_gondor"),
+         (try_end),
+         ], []),
+    ],
+),
+
+("intro_gondor", 0, -1,
+    "Intro cutscene mission",
+    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+     (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    ],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_joke"),]),
+    
+    (ti_before_mission_start, 0, 0, [],
+      [ 
+        (assign, "$g_tld_intro_state", 10),
+        
+        (music_set_situation, 0), (music_set_culture, 0),
+        (play_track, "track_mount_and_blade_title_screen", 2),
+        (music_set_situation, mtf_sit_fight),
+      ]),
+      
+      (0, 0, ti_once,
+       [(start_presentation, "prsnt_intro_titles"),
+       ],[]),
+
+      # detect player camera init
+      (0, 0, ti_once,
+        [
+         (mission_cam_get_position, pos1),
+         (position_get_z, ":z_pos", pos1),
+         (neq, ":z_pos", 0),       
+        ],
+        [
+         (assign, "$g_tld_intro_state", 11),
+        ]),
+      
+      (0, 0, 0,
+       [
+         (set_show_messages, 0),
+         (store_mission_timer_a, ":cur_time"),
+         (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_set_animation, ":player_agent", "anim_stand"),
+         
+         (try_begin),
+           (eq, "$g_tld_intro_state", 11), #start with looking at the gate
+           (mission_cam_set_mode, 1),
+           (entry_point_get_position, pos1, 0),
+           (position_move_z, pos1, 300),
+           (mission_cam_set_position, pos1),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 12), #through the gate
+           (ge, ":cur_time", 4),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -120),
+           (position_set_x, pos1, 17300),
+           (position_set_y, pos1, 21600),
+           (position_set_z, pos1, 1300),
+           (mission_cam_animate_to_position, pos1, 2600, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 13), #just turn in place
+           (ge, ":cur_time", 6),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -95),
+           (position_set_x, pos1, 17300),
+           (position_set_y, pos1, 21600),
+           (position_set_z, pos1, 1300),
+           (mission_cam_animate_to_position, pos1, 400, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 14), #left through the streets
+           (ge, ":cur_time", 7),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -100),
+           (position_set_x, pos1, 20800),
+           (position_set_y, pos1, 22000),
+           (position_set_z, pos1, 1300),
+           (mission_cam_animate_to_position, pos1, 3000, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 15), #forward and above the street level
+           (ge, ":cur_time", 10),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -120),
+           (position_rotate_x, pos1, 15),
+           (position_set_x, pos1, 25000),
+           (position_set_y, pos1, 20100),
+           (position_set_z, pos1, 3000),
+           (mission_cam_animate_to_position, pos1, 3000, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 16), #up one level and look at the statue
+           (ge, ":cur_time", 13),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -180),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 28300),
+           (position_set_y, pos1, 12500),
+           (position_set_z, pos1, 5000),
+           (mission_cam_animate_to_position, pos1, 2700, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 17), #top of the city
+           (ge, ":cur_time", 17),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 100),
+           (position_rotate_x, pos1, -30),
+           (position_set_x, pos1, 21600),
+           (position_set_y, pos1, 8300),
+           (position_set_z, pos1, 17300),
+           (mission_cam_animate_to_position, pos1, 2700, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 18), #white tree
+           (ge, ":cur_time", 20),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -150),
+           (position_rotate_x, pos1, -40),
+           (position_set_x, pos1, 16900),
+           (position_set_y, pos1, 9000),
+           (position_set_z, pos1, 16800),
+           (mission_cam_animate_to_position, pos1, 2700, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 19), #off the cliff
+           (ge, ":cur_time", 24),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -160),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 15900),
+           (position_set_y, pos1, 23200),
+           (position_set_z, pos1, 17800),
+           (mission_cam_animate_to_position, pos1, 2700, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 20), #drop to the right
+           (ge, ":cur_time", 27),
+           (init_position, pos1),
+           (position_rotate_z, pos1, -150),
+           (position_set_x, pos1, 7800),
+           (position_set_y, pos1, 20300),
+           (position_set_z, pos1, 7100),
+           (mission_cam_animate_to_position, pos1, 3000, 0),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 21), #guard position
+           (ge, ":cur_time", 30),
+           (init_position, pos1),
+           (position_set_x, pos1, 14900),
+           (position_set_y, pos1, 23200),
+           (position_set_z, pos1, 3900),
+           (mission_cam_animate_to_position, pos1, 4000, 0),
+           # ominious music
+           (play_cue_track, "track_victorious_evil3"),
+           (val_add, "$g_tld_intro_state", 1),
+         (else_try),
+           (eq, "$g_tld_intro_state", 22), #finish
+           (ge, ":cur_time", 39),
+           (finish_mission, 0),
+           (val_add, "$g_tld_intro_state", 1),
+           #chain to next intro mission
+           (jump_to_menu, "mnu_auto_intro_joke"),
          (try_end),
          ], []),
     ],
@@ -4639,8 +4821,6 @@ mission_templates = [
         (team_set_relation, 0, 1, 1), 
         
         (music_set_situation, 0),
-        (music_set_situation, mtf_sit_travel),
-        (music_set_culture, mtf_culture_2),
         (play_cue_track, "track_lords_hall_goodmen"),
       ]),
       
@@ -4677,7 +4857,6 @@ mission_templates = [
         (troop_get_inventory_slot, ":horse_item", "trp_gondor_lord", 8),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, -1),
         (spawn_agent, "trp_gondor_lord"),
-        (agent_set_animation, reg0, "anim_sit_on_trone"),
         (agent_set_stand_animation, reg0, "anim_sit_on_trone"),
         (agent_set_team, reg0, 2),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, ":horse_item"),
@@ -4685,22 +4864,22 @@ mission_templates = [
         (entry_point_get_position, pos1, 6),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_steward_guard"),
-        (agent_set_animation, reg0, "anim_stand_townguard"),
+        (agent_set_stand_animation, reg0, "anim_stand_townguard"),
         (agent_set_team, reg0, 0),
         (entry_point_get_position, pos1, 7),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_steward_guard"),
-        (agent_set_animation, reg0, "anim_stand_townguard"),
+        (agent_set_stand_animation, reg0, "anim_stand_townguard"),
         (agent_set_team, reg0, 0),
         (entry_point_get_position, pos1, 17),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_steward_guard"),
-        (agent_set_animation, reg0, "anim_stand_townguard"),
+        (agent_set_stand_animation, reg0, "anim_stand_townguard"),
         (agent_set_team, reg0, 0),
         (entry_point_get_position, pos1, 25),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_steward_guard"),
-        (agent_set_animation, reg0, "anim_stand_townguard"),
+        (agent_set_stand_animation, reg0, "anim_stand_townguard"),
         (agent_set_team, reg0, 0),        
        ],[]),
 
@@ -4721,6 +4900,9 @@ mission_templates = [
          (store_mission_timer_a, ":cur_time"),
          (store_mission_timer_b, ":cur_time_b"),
          (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_set_animation, ":player_agent", "anim_stand"),
          
          (try_begin),
            (eq, "$g_tld_intro_state", 101), #look at the throne

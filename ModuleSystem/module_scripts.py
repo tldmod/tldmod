@@ -19898,7 +19898,7 @@ scripts = [
     [
      (modify_visitors_at_site,"scn_westfold_center"),
      (reset_visitors,0),
-     (set_visitor, 1, "trp_player"), #for testing
+     (set_visitor, 1, "trp_player"), #needed
      (set_jump_mission,"mt_intro_rohan"),
      (jump_to_scene,"scn_westfold_center"),
      (change_screen_mission),

@@ -10447,6 +10447,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
   # Brawls for evil sides
 [anyone|plyr,"town_dweller_talk", [
     (neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+    (neg|troop_is_wounded, "trp_player"), # to prevent endless brawls
     (store_random_in_range, ":random", 0, 4),
     (try_begin),
       (eq, ":random", 0),
