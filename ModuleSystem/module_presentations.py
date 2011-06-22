@@ -1,4 +1,4 @@
-from header_common import *
+﻿from header_common import *
 from header_presentations import *
 from header_mission_templates import *
 from ID_meshes import *
@@ -2730,16 +2730,16 @@ presentations = [
           (str_store_string, s1, "@Adventurers at audience with Steward Denethor..."),
         (else_try),
           (eq, "$g_tld_intro_state", 104),
-          (str_store_string, s1, "@What business do you have here, supplicants?"),
+          (str_store_string, s1, "@_'What business do you have here, supplicants?'"),
         (else_try),
           (eq, "$g_tld_intro_state", 105),
-          (str_store_string, s1, "@Your Stewardship, we have come from distant lands to... jump!"),
+          (str_store_string, s1, "@_'Your Stewardship, we have come from distant lands to... jump!'"),
         (else_try),
           (eq, "$g_tld_intro_state", 107),
-          (str_store_string, s1, "@Enough of this madness! Guards!!"),
+          (str_store_string, s1, "@_'Enough of this madness! Guards!!'"),
         (else_try),
           (eq, "$g_tld_intro_state", 110),
-          (str_store_string, s1, "@I've had enough of these pranks... The next ones would have to kneel!"),
+          (str_store_string, s1, "@_'I've had enough of these pranks... The next ones would have to kneel!'"),
         (try_end),
         (overlay_set_text, "$g_presentation_obj_1", s1),
         ]),

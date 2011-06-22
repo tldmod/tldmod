@@ -1,4 +1,4 @@
-from header_game_menus import *
+﻿from header_game_menus import *
 from header_parties import *
 from header_items import *
 from header_mission_templates import *
@@ -9384,7 +9384,8 @@ game_menus = [
 ######################### TLD808 menus ##########################
 ( "ancient_ruins", 0,
   "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_relief01")],
-  [ ("rescue_mission",  [(check_quest_active, "qst_mirkwood_sorcerer"),(neg|check_quest_finished, "qst_mirkwood_sorcerer")],  "Sneak_into_the_sorcerer's_lair under the night's cover.",
+  [ ("rescue_mission",  [(neg|quest_slot_eq, "qst_mirkwood_sorcerer",slot_quest_current_state,3)],
+  "Sneak_into_the_sorcerer's_lair under the night's cover.",
 						[(try_begin),
 							# (neg|is_currently_night),
 							# (store_time_of_day, reg1),

@@ -1,4 +1,4 @@
-from header_quests import *
+﻿from header_quests import *
 
 ####################################################################################################################
 #  Each quest record contains the following fields:

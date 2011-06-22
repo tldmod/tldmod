@@ -1,4 +1,4 @@
-from header_common import *
+﻿from header_common import *
 from header_dialogs import *
 from header_operations import *
 from header_parties import *
