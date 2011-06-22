@@ -355,7 +355,7 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_joke"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -473,10 +473,10 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 35), #and fly over again
-           (ge, ":cur_time", 26),
+           (ge, ":cur_time", 22),
            (init_position, pos1),
            (position_rotate_x, pos1, 50),
-           (position_rotate_z, pos1, 30),
+           #(position_rotate_z, pos1, 30),
            (position_set_x, pos1, 25000),
            (position_set_y, pos1, 32200),
            (position_set_z, pos1, 400),
@@ -484,11 +484,11 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 36), #finish
-           (ge, ":cur_time", 34),
+           (ge, ":cur_time", 30),
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
-           #chain to next intro mission
-           (jump_to_menu, "mnu_auto_intro_joke"),
+           # finish chain
+           (change_screen_return),
          (try_end),
          ], []),
     ],
@@ -548,7 +548,7 @@ mission_templates_cutscenes = [
         (troop_get_inventory_slot, ":horse_item", "trp_gondor_lord", 8),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, -1),
         (spawn_agent, "trp_gondor_lord"),
-        (agent_set_stand_animation, reg0, "anim_sit_on_trone"),####
+        (agent_set_stand_animation, reg0, "anim_sit_on_throne"),####
         (agent_set_team, reg0, 2),
         (troop_set_inventory_slot, "trp_gondor_lord", 8, ":horse_item"),
         # guards
@@ -692,7 +692,7 @@ mission_templates_cutscenes = [
            (try_for_agents, ":agent_no"),
              (agent_get_troop_id, ":troop", ":agent_no"),
              (eq, ":troop", "trp_gondor_lord"),
-             (agent_set_animation, ":agent_no", "anim_sit_on_trone"),####
+             (agent_set_animation, ":agent_no", "anim_sit_on_throne"),####
            (try_end),
            (entry_point_get_position, pos1, 16),
            (position_rotate_z, pos1, 180),

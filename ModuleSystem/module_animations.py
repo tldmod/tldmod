@@ -1138,7 +1138,7 @@ animations = [
  # ---------------------
  
  # used by lords 
- ["sit_on_trone", 0,
+ ["sit_on_throne", 0,
    [5.5, "sit", 100, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 200, 208, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 300, 308, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],

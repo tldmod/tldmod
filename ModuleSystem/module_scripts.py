@@ -13167,7 +13167,7 @@ scripts = [
         (try_end),
       (else_try),
         (eq, ":troop_no", "trp_gondor_lord" ),
-        (assign, ":stand_animation", "anim_sit_on_trone"), # mtarini: let sire denethor sit.
+        (assign, ":stand_animation", "anim_sit_on_throne"), # mtarini: let sire denethor sit.
       (else_try),
         (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":stand_animation", "anim_stand_lord"),
@@ -19936,16 +19936,6 @@ scripts = [
      (try_end),
      ]),
 
-  # script_tld_start_intro_movie
-  ("tld_start_intro_movie",
-    [
-     (modify_visitors_at_site,"scn_westfold_center"),
-     (reset_visitors,0),
-     (set_visitor, 1, "trp_player"), #needed
-     (set_jump_mission,"mt_intro_rohan"),
-     (jump_to_scene,"scn_westfold_center"),
-     (change_screen_mission),
-    ]),
 
 ##### TLD TRAITS ###############################################################3
 #script_gain_trait_blessed

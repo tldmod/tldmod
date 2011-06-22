@@ -1751,7 +1751,7 @@ game_menus = [
     (display_message, "@All four legendary place enabled!", 0x30FFC8),
    ]),
    ("camp_mvtest_intro",[],"Test intro.",[
-    (call_script, "script_tld_start_intro_movie"),
+    (jump_to_menu, "mnu_auto_intro_rohan"),
 #    (change_screen_map),
    ]),
    # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
@@ -7881,10 +7881,10 @@ game_menus = [
              (val_add, reg1, 1),
              (store_troop_gold, ":gold", "trp_player"),
              (ge, ":gold", reg1),
-             (str_store_string, s1, "@Stay indoor for some time ({reg1} Resource pts. per night)"),
+             (str_store_string, s1, "@Stay indoors for some time ({reg1} Resource pts. per night)"),
            (else_try),
 		     # not enough money... can rest anyway (but no health bonus)
-             (str_store_string, s1, "@Camp near town for some time (free)"),
+             (str_store_string, s1, "@Camp outside for some time (free)"),
            (try_end),
 			##           (eq, "$g_defending_against_siege", 0),
         ],
@@ -9257,8 +9257,21 @@ game_menus = [
     []
   ),
 
+  ( "auto_intro_rohan",0,"stub","none",
+    [
+     (modify_visitors_at_site,"scn_westfold_center"),
+     (reset_visitors,0),
+     (set_visitor, 1, "trp_player"), #needed
+     (set_jump_mission,"mt_intro_rohan"),
+     (jump_to_scene,"scn_westfold_center"),
+     (change_screen_mission),
+    ],
+    []
+  ),
+  
   ( "auto_intro_gondor",0,"stub","none",
     [
+       (assign, "$current_town", "p_town_minas_tirith"), #for the cabbage guards 
        (modify_visitors_at_site, "scn_minas_tirith_center"),
        (reset_visitors),
        (set_visitor, 1, "trp_player"),
@@ -9271,6 +9284,7 @@ game_menus = [
 
   ( "auto_intro_mordor",0,"stub","none",
     [
+       (assign, "$current_town", "p_town_minas_morgul"), #for the cabbage guards 
        (modify_visitors_at_site, "scn_minas_morgul_center"),
        (reset_visitors),
        (set_visitor, 1, "trp_player"),

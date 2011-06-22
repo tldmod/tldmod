@@ -63,7 +63,7 @@ qstr_The_White_Tree_stand The_White_Tree_stands_dead_since_the_line_of_the_Kings
 qstr_The_Shadow_grows_eve The_Shadow_grows_ever_stronger_in_the_East
 qstr_Minas_Morgul___City_ Minas_Morgul_-_City_of_the_Nazgul
 qstr_Sauron_s_armies_marc Sauron's_armies_march_into_War!
-qstr_Meanwhile_adventurer Meanwhile,_adventurers_at_audience_with_Steward_Denethor...
+qstr_Adventurers_at_audie Adventurers_at_audience_with_Steward_Denethor...
 qstr__What_business_do_yo 'What_business_do_you_have_here,_supplicants?'
 qstr__Your_Stewardship_we 'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr__Enough_of_this_madn 'Enough_of_this_madness!_Guards!!'
@@ -657,8 +657,8 @@ qstr_You_fail_to_steal_an You_fail_to_steal_any_cattle.
 qstr_You_drive_away_{reg1 You_drive_away_{reg17}_{reg12?heads:head}_of_cattle_from_the_village's_herd.
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
-qstr_Stay_indoor_for_some Stay_indoor_for_some_time_({reg1}_Resource_pts._per_night)
-qstr_Camp_near_town_for_s Camp_near_town_for_some_time_(free)
+qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_pts._per_night)
+qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
 qstr_Forces_of_Good Forces_of_Good

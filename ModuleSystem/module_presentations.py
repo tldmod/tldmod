@@ -2727,7 +2727,7 @@ presentations = [
           (str_store_string, s1, "@Sauron's armies march into War!"),
         (else_try),
           (eq, "$g_tld_intro_state", 102),
-          (str_store_string, s1, "@Meanwhile, adventurers at audience with Steward Denethor..."),
+          (str_store_string, s1, "@Adventurers at audience with Steward Denethor..."),
         (else_try),
           (eq, "$g_tld_intro_state", 104),
           (str_store_string, s1, "@'What business do you have here, supplicants?'"),

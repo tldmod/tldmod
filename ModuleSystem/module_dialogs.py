@@ -10486,7 +10486,6 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 [anyone,"player_castle_guard_talk_2", [], "All is quiet {sir/madam}. Nothing to report.", "player_castle_guard_talk_3",[]],
 [anyone|plyr,"player_castle_guard_talk_3", [], "Good. Keep your eyes open.", "close_window",[]],
 
-
 [anyone,"start", [(eq, "$talk_context", 0),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
@@ -10499,6 +10498,17 @@ What do you say?", "merchant_quest_brief_deliver_iron",
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end)],
 "Mind your manners around here and we'll have no trouble.", "close_window",[]],
+
+# Easter Egg joke cutscene: available from MT castle guards on midnight
+[anyone,"start", [(eq, "$talk_context", tc_court_talk),
+                    (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    (eq, "$g_encountered_party", "p_town_minas_tirith"),
+                    (store_time_of_day, ":cur_time_of_day"),
+                    (eq, ":cur_time_of_day", 0),],
+"Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?", "hall_guard_easter_egg",[]],
+[anyone|plyr,"hall_guard_easter_egg", [], "Yes, please go on.", "hall_guard_easter_egg_scene",[]],
+[anyone|plyr,"hall_guard_easter_egg", [], "No, I don't care for gossip.", "close_window",[]],
+[anyone,"hall_guard_easter_egg_scene", [], "Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...", "close_window",[(jump_to_menu, "mnu_auto_intro_joke"),(finish_mission)]],
 
 [anyone,"start", [(eq, "$talk_context", tc_court_talk),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),

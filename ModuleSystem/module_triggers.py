@@ -1462,7 +1462,7 @@ triggers = [
         ]
     ),
 	
-# TLD War beginning condition (player level = 2 at the moment), GA
+# TLD War beginning condition (player level = 8 at the moment), GA
     (1, 0, 0, 
 	   [(eq,"$tld_war_began",0),
 	    (store_character_level,":level","trp_player"),
@@ -1490,6 +1490,8 @@ triggers = [
             (try_end),
           (try_end),
 		(try_end),
+        # start the intro cutscene sequence
+        (jump_to_menu, "mnu_auto_intro_rohan"),
         ]
     ),
 	
