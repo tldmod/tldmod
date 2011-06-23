@@ -505,11 +505,11 @@ dialogs = [
 [anyone|plyr,"member_castellan_talk", [], "[Leave]", "close_window",[]],
 
 
-[anyone,"start", [(troop_slot_eq,"$g_talk_troop", slot_troop_occupation, slto_player_companion),
-                    (neg|main_party_has_troop,"$g_talk_troop"),
-                    (eq, "$talk_context", tc_party_encounter)],
-"Do you want me to rejoin you?", "member_wilderness_talk",[]],
-[anyone,"start", [(neg|main_party_has_troop,"$g_talk_troop"),(eq, "$g_encountered_party", "p_four_ways_inn")], "Do you want me to rejoin you?", "member_inn_talk",[]],
+# [anyone,"start", [(troop_slot_eq,"$g_talk_troop", slot_troop_occupation, slto_player_companion),
+                    # (neg|main_party_has_troop,"$g_talk_troop"),
+                    # (eq, "$talk_context", tc_party_encounter)],
+# "Do you want me to rejoin you?", "member_wilderness_talk",[]],
+# [anyone,"start", [(neg|main_party_has_troop,"$g_talk_troop"),(eq, "$g_encountered_party", "p_four_ways_inn")], "Do you want me to rejoin you?", "member_inn_talk",[]],
 #[anyone,"member_separate_inn", [], "I don't know what you will do without me, but you are the boss. I'll wait for you at the Four Ways inn.", "close_window",
 #[anyone,"member_separate_inn", [], "All right then. I'll meet you at the four ways inn. Good luck.", "close_window",
 #   [(remove_member_from_party,"$g_talk_troop", "p_main_party"),(add_troop_to_site, "$g_talk_troop", "scn_four_ways_inn", borcha_inn_entry)]],

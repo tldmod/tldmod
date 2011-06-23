@@ -401,9 +401,11 @@ triggers = [
     ]
   ),
 
-   (0, 0, ti_once,
+   (0.1, 0, ti_once,
    [ #(entering_town,":party"),
-     (neg|eq,"$ambient_faction","$players_kingdom"), ],
+     (neq,"$ambient_faction","$players_kingdom"),
+	 (call_script, "script_cf_factions_are_allies", "$ambient_faction","$players_kingdom"),
+   ],
    [
 		(str_store_faction_name, s11, "$ambient_faction"),
 		(str_store_faction_name, s10, "$players_kingdom"),

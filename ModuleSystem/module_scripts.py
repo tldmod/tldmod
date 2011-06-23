@@ -964,6 +964,25 @@ scripts = [
 	
 #############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS  END  (mtarini)  #############################?#
 
+### given two factions, fails if they are not allies...
+("cf_factions_are_allies", 
+[
+	(store_script_param_1, ":a"),
+	(store_script_param_2, ":b"),
+	(faction_get_slot, ":a",":a", slot_faction_side),
+	(faction_get_slot, ":b",":b", slot_faction_side),
+	(try_begin), # eye and hand still allies?
+		(le, "$tld_war_began",1),
+		(try_begin), 
+			(eq,":a", faction_side_hand),(assign,":a",faction_side_eye),
+		(try_end),
+		(try_begin), 
+			(eq,":b", faction_side_hand),(assign,":b",faction_side_eye),
+		(try_end),
+	(try_end),
+    (eq,":a",":b"),
+]),
+	 
 # script_get_entry_point_with_most_similar_facing
 # stores in reg1 the entry point  (in 0..64) with a facting more similar to 1st param 
 ("get_entry_point_with_most_similar_facing", 
@@ -975,9 +994,9 @@ scripts = [
 		(ge,":target", 180), (store_add, ":target2", ":target", -360),
 	(try_end),
 	
-	(assign, reg1, 0),
+	(assign, reg1, 3),
 	(assign, ":best", 9999),
-	(try_for_range, ":i", 0, 64),
+	(try_for_range, ":i", 5, 64), # avoid 0..4
 		(entry_point_get_position,pos10,":i"),
 		(position_get_rotation_around_z, reg10, pos10),
 		#(try_begin),(assign,reg5,":i"),(le,reg5,20),(display_message, "@Pos N.{reg5}:{reg10}"),(try_end),
@@ -1963,8 +1982,8 @@ scripts = [
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_village    ),(jump_to_menu, "mnu_village"),
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
           (else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
-          (else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
-          (else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
+          #(else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
+          #(else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
           (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
           (else_try),(eq, "$g_encountered_party", "p_battlefields"   ),(jump_to_menu, "mnu_battlefields"),
           (else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),
@@ -10561,7 +10580,7 @@ scripts = [
 #        (store_random_in_range, ":terrain", 0, 4), #randomness off
         (try_begin),
 		   (eq, ":terrain_type", rt_steppe),
-		   (assign, ":scene_to_use", "scn_random_scene_steppe"),           (display_message,"@SCENE: steppe"),
+		   (assign, ":scene_to_use", "scn_random_scene_rohan_steppe"),           (display_message,"@SCENE: rohan steppe"),
 		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",":radius"),
         (else_try),
 		   (eq, ":terrain_type", rt_plain),

@@ -4012,7 +4012,8 @@ VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPositi
                     vPosition.xy;
    float t2 = time_var + dot( treePos , float2(6.5,4.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-   vPosition.xy += float2(0.00018,0.00018)*(vPosition.z+50.0)*windPhase*(windAmount+0.2);
+   vPosition.xy += float2(0.00018,0.00018)*(vPosition.z+50.0)*windPhase*(windAmount+0.2)
+                   *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
    
    Out.Pos = mul(matWorldViewProj, vPosition);
    float4 vWorldPos = (float4)mul(matWorld,vPosition);

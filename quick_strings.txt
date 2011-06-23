@@ -1,4 +1,4 @@
-901
+902
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -193,7 +193,7 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
-qstr_SCENE:_steppe SCENE:_steppe
+qstr_SCENE:_rohan_steppe SCENE:_rohan_steppe
 qstr_SCENE:_plain SCENE:_plain
 qstr_SCENE:_snow SCENE:_snow
 qstr_SCENE:_desert SCENE:_desert
@@ -371,6 +371,7 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_DEBUG:_new_wargs_has DEBUG:_new_wargs_has_{reg12}_hitpoints_left
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!

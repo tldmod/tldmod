@@ -1533,13 +1533,18 @@ game_menus = [
   ),
 
   ("camp",0,
-   "You set up a camp. What do you want to do?",
+   "You are in (insert-place-here). What do you want to do?",
    "none",
-   [ (assign, "$g_player_icon_state", pis_normal),
+	[ (assign, "$g_player_icon_state", pis_normal),
      #(set_background_mesh, "mesh_pic_camp"),
 	 (set_background_mesh, "mesh_ui_default_menu_window"),
     ],
-   [ ("camp_scene"      ,[],"Walk around camp."  ,[(jump_to_scene, "scn_camp_scene"),(change_screen_mission)]),
+	[
+	("camp_scene"      ,[],"Walk around."  ,[
+		(assign, "$number_of_combatants", 1), # add a scene as if a battle with one combatant...
+		(call_script, "script_setup_random_scene"), #    (jump_to_scene, "scn_camp_scene"),
+		(change_screen_mission)
+	]),
      ("camp_action"     ,[],"Take an action."    ,[(jump_to_menu, "mnu_camp_action")]),
 ##     ("camp_wait_here",[],"Wait here for some time.",
 ##       [(assign,"$g_camp_mode", 1),
@@ -1550,7 +1555,7 @@ game_menus = [
 ##        ]),
 
      #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
-  ("camp_wait_here",[],"Wait here for some time.",
+  ("camp_wait_here",[],"Camp here for some time.",
       [
 			(store_random_in_range,":r",0,10),#random number
 			(try_begin),
@@ -5047,26 +5052,26 @@ game_menus = [
       ("town_1_leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
     ]
   ),
-  (
-    "salt_mine",mnf_auto_enter,
-    "You enter the salt mine.",
-    "none",
-    [(reset_price_rates,0),(set_price_rate_for_item,"itm_smoked_fish",55)],
-    [
-      ("enter",[],"Enter.",[(set_jump_mission,"mt_town_center"),(jump_to_scene,"scn_salt_mine"),(change_screen_mission)]),
-      ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
-    ]
-  ),
-  (
-    "four_ways_inn",mnf_auto_enter,
-    "You arrive at the Four Ways Inn.",
-    "none",
-    [],
-    [ #("enter",[],"Enter.",[[set_jump_mission,"mt_town_default"],[jump_to_scene,"scn_conversation_scene"],[change_screen_mission]]),
-      ("enter",[],"Enter.",[(set_jump_mission,"mt_camera_test"),(jump_to_scene,"scn_four_ways_inn"),(change_screen_mission)]),
-      ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
-    ]
-  ),
+  # (
+    # "salt_mine",mnf_auto_enter,
+    # "You enter the salt mine.",
+    # "none",
+    # [(reset_price_rates,0),(set_price_rate_for_item,"itm_smoked_fish",55)],
+    # [
+      # ("enter",[],"Enter.",[(set_jump_mission,"mt_town_center"),(jump_to_scene,"scn_salt_mine"),(change_screen_mission)]),
+      # ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
+    # ]
+  # ),
+  # (
+    # "four_ways_inn",mnf_auto_enter,
+    # "You arrive at the Four Ways Inn.",
+    # "none",
+    # [],
+    # [ #("enter",[],"Enter.",[[set_jump_mission,"mt_town_default"],[jump_to_scene,"scn_conversation_scene"],[change_screen_mission]]),
+      # ("enter",[],"Enter.",[(set_jump_mission,"mt_camera_test"),(jump_to_scene,"scn_four_ways_inn"),(change_screen_mission)]),
+      # ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
+    # ]
+  # ),
   
   ( "test_scene",mnf_auto_enter,
     "You enter the test scene.",

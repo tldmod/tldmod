@@ -229,7 +229,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	#	(str_store_item_name, s12, ":agent_item"),  
 	#	(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
 	#(else_try),
-	#	(display_message,"@DEBUG: spawning troop {s11}"),
+	#	#(display_message,"@DEBUG: spawning troop {s11}"),
 	#(try_end),
 
     (try_begin),
@@ -272,7 +272,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 
 			(store_agent_hit_points, reg12, ":warg",1),
 			(agent_set_hit_points, ":agent", reg12, 1),
-			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+			(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		
 			(agent_get_position,pos4,":warg"),
 			(call_script, "script_remove_agent", ":warg"),			
@@ -921,7 +921,9 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		
 		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@respawn{reg1} {s12}..."),
-		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
+		(add_visitors_to_current_scene,4,":warg_ghost_trp",1),
+		(add_visitors_to_current_scene,5,":warg_ghost_trp",1),
+		(add_visitors_to_current_scene,6,":warg_ghost_trp",1),
 
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),
