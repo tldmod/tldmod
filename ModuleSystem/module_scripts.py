@@ -71,9 +71,32 @@ faction_player_icons = [
 ]
   
 scripts = [
-# script_init_player_map_icons
+
+	("troop_get_cheer_sound", [
+		(store_script_param_1, ":trp"),		
+		(troop_get_type, ":race",":trp"),
+		(try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
+		(else_try), (eq,":race",0x1),(assign,reg1,-1), # woman
+		(else_try), (eq,":race",0x2),(assign,reg1,"snd_gondor_victory_player"),
+		(else_try), (eq,":race",0x3),(assign,reg1,"snd_rohan_victory"),
+		(else_try), (eq,":race",0x4),(assign,reg1,"snd_dunlender_victory"),
+		(else_try), (eq,":race",0x5),(assign,reg1,"snd_orc_victory"),
+		(else_try), (eq,":race",0x6),(assign,reg1,"snd_uruk_victory"),
+		(else_try), (eq,":race",0x7),(assign,reg1,"snd_uruk_victory"),
+		(else_try), (eq,":race",0x8),(assign,reg1,"snd_haradrim_victory"),
+		(else_try), (eq,":race",0x9),(assign,reg1,"snd_man_victory"), # dwarf
+		(else_try), (eq,":race",0xA),(assign,reg1,"snd_troll_victory"),
+		(else_try), (eq,":race",0xB),(assign,reg1,"snd_dunedain_victory_player"),
+		(else_try), (eq,":race",0xC),(assign,reg1,"snd_mirkwood_victory_player"),
+		(else_try), (eq,":race",0xD),(assign,reg1,"snd_mirkwood_victory_player"),
+		(else_try), (eq,":race",0xE),(assign,reg1,"snd_mirkwood_victory_player"),
+		(else_try), (eq,":race",0xF),(assign,reg1,"snd_man_victory"), # Khand   +  Rhun   +   Easterling
+		(else_try),(assign,reg1,"snd_man_victory"), 
+		(try_end),
+	]),
+
 ############################# TLD player icon (mtarini)
-# party player icons (mtarini)
+# script_init_player_map_icons
   ("init_player_map_icons",[
 	# defaults
   	(assign, "$g_player_icon_mounted", "icon_player_horseman"),
@@ -957,6 +980,8 @@ scripts = [
 	(try_for_range, ":i", 0, 64),
 		(entry_point_get_position,pos10,":i"),
 		(position_get_rotation_around_z, reg10, pos10),
+		#(try_begin),(assign,reg5,":i"),(le,reg5,20),(display_message, "@Pos N.{reg5}:{reg10}"),(try_end),
+		(neq,reg10,0.0), # skip undefined positions
 		# find min distance from target2, target (store in reg12)
 		(store_sub, reg11, reg10, ":target2"),(val_abs, reg11),
 		(store_sub, reg12, reg10, ":target"), (val_abs, reg12),
@@ -965,6 +990,7 @@ scripts = [
 		(assign, ":best", reg12),
 		(assign, reg1, ":i"),
 	(try_end),
+	(display_message, "@Selected:{reg1}"),
 ]),
 
 #script_cf_is_troop_in_party_wounded 

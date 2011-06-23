@@ -1277,11 +1277,37 @@ animations = [
  ],
  
 
+  # ... INFO: next is unused anim 27...
+
+ # PLAYER CHEERING (mtarini) 
+ # ----------------------
+
+   
+  # on foot ( shorter versions than for ai)
+ ["cheer_player", acf_rotate_body|acf_enforce_rightside,
+   [6.0, "man_cheer",  12,  185, arf_blend_in_5],
+   [6.0, "man_cheer", 217, 397, arf_blend_in_5],
+   [6.0, "man_cheer", 338, 518, arf_blend_in_5],
+   #[3.0, "man_cheer", 465, 555, arf_blend_in_5],
+ ],
+
+	# mounted version 
+  ["cheer_player_ride", acf_rotate_body|acf_enforce_rightside,
+   [6.0, "ani_cheer_ride",  12, 185, arf_blend_in_5],
+   [6.0, "ani_cheer_ride", 217, 397, arf_blend_in_5],
+   [6.0, "ani_cheer_ride", 338, 518, arf_blend_in_5],
+   #[3.0, "ani_cheer_ride", 465, 555, arf_blend_in_5],
+ ],
  
- ["unused_human_anim_27", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_28", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_29", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_30", 0, [1.0, "anim_human", 0, 1, 0]],
+ # cancel ani... using thse two to cancel ongoin animations...
+ ["cancel_ani_stand", 0,
+   [0.25, "anim_human", 50, 50, arf_blend_in_15, 0, (0, 0, 0), 0],
+ ],
+ 
+ ["cancel_ani_ride", 0,
+   [0.25, "stand_onhorse", 0, 0, arf_blend_in_15, 0, (0, 0, 0), 0],
+ ],
+ 
  ["unused_human_anim_31", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_32", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_33", 0, [1.0, "anim_human", 0, 1, 0]],
@@ -1418,7 +1444,7 @@ animations = [
  ### Unused horse animations start from here.
 
  ### TLD (mtarini)
- # nazgul reactions for  the horses of panic-ed riders
+ # nazgul reactions for  the horses of panic-ed riders (mtarini)
  ["horse_rear_twice", acf_enforce_lowerbody | acf_ignore_slope,
    [4.0, "horse_rear_twice", 0, 83,  arf_blend_in_2],
  ],
@@ -1444,12 +1470,17 @@ animations = [
    [4.5, "anim_horse", 820, 908, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
  ],
 
+ # attempt, not used yet (mtarin)
  ["warg_jump", acf_enforce_lowerbody,
    [1.7, "warg_jump", 0, 20, arf_blend_in_4|arf_cyclic|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9],
    #[1.7, "warg_jump", 0, 20,  arf_blend_in_4,pack2f(0.4, 0.0), ( 0.0, 4.2,0), 3.5], #|arf_end_pos_0_25],
  ],
  
- ["unused_horse_anim_5", 0, [1.0, "anim_horse", 0, 1, 0]],
+  # to cancel ani...(mtarini)
+ ["horse_cancel_ani", 0,
+   [0.25, "anim_horse", 600, 601, arf_use_stand_progress|arf_blend_in_5, 0, (0, 0, 0), 0.0],
+  ],
+
  ["unused_horse_anim_6", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_7", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_8", 0, [1.0, "anim_horse", 0, 1, 0]],

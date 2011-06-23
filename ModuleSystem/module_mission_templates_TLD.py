@@ -40,34 +40,85 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 	]
 )
 
+#MV: commented out - not used and why not use built-in Ctrl-Shift-F4 like normal people? Really.
+# MT: because this is much more versatile... tap, and enemies just stop. Keep pressed, and they all die insatantly (instead of pressing Ctrl+F4 like mad, often getting killed anyway). Beside, I Alt+F4 too often instead of Ctrl+F4. 
+# No reasons to remove it...
+cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
+    (eq, "$cheat_mode",1),
+	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    (get_player_agent_no, ":player_agent"),
+	(agent_get_team, ":player_team", ":player_agent"),
+	(display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
+    (try_for_agents, ":agent"),
+        (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+		(agent_get_horse,":horse",":agent"),
+		(try_begin), (gt, ":horse", -1), 
+			(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
+			(agent_set_animation, ":horse", "anim_horse_rear"), 
+		(else_try),
+			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
+		(try_end),
+	(try_end),
+  ], [ 
+	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    (get_player_agent_no, ":player_agent"),
+	(agent_get_team, ":player_team", ":player_agent"),
+	(display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
+
+	(set_show_messages , 0),
+    (try_for_agents, ":agent"),
+       (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+	   (agent_set_hit_points , ":agent",0,1),
+	   (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
+	(try_end),
+	(set_show_messages , 1),
+
+	]
+)
+
+
+ # triggers to bow to lords  -- a set of triggers  (mtarini)
 custom_tld_bow_to_kings = [
-	# bow to lords (mtarini)
+	
+	# init: 
 	(ti_before_mission_start , 0, 0, [],[
-		(assign, "$agent_king", -1),]),
-	  
-		(ti_on_agent_spawn       , 0, 0, [],[ 
+		(assign, "$agent_king", -1),
+	]),
+
+	# on spawn: register lords
+	(ti_on_agent_spawn       , 0, 0, [],[ 
 	    (store_trigger_param_1, ":agent_no"), 
 		(agent_get_troop_id, ":troop_no", ":agent_no"),
 		(is_between, ":troop_no", kings_begin, kings_end),
 		(assign, "$agent_king", ":agent_no"),
 	]),
 	  
-	# push: go down up
-	(0, 0.6, 0, [ 
+	# push putton: go down
+	(0, 0.5, 0, [ 
 		(gt, "$agent_king", -1),
         (game_key_clicked, gk_jump), 
 		# (key_clicked, key_b),   # overrides jump key
 	    (get_player_agent_no, reg10),
+		(agent_get_horse, reg15, reg10), (eq, reg15, -1), # cancel if player mounted
 		(agent_get_position, pos1, "$agent_king"),
 		# see if facing the lord...
 		(agent_get_position, pos2, reg10),
 		(position_rotate_z,pos2,180-45),(position_is_behind_position, pos1, pos2),
 		(position_rotate_z,pos2,90),(position_is_behind_position, pos1, pos2),
+		
+		# see if same height..
+		(position_get_z,reg20,pos2),
+		(position_get_z,reg21,pos1),
+		(val_sub,reg20,reg21),(val_abs,reg20),(le,reg20,200.0),
 
 		#(agent_set_scripted_destination, reg10, pos1, 1), # hopefully, turn toward lord
 	    (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
 		(assign, "$player_is_bowing", 1),
 	],[ 
+		# after 1 sec, play sound
+		(game_key_is_down, gk_jump),
+		(get_player_agent_no, reg10),
+		(agent_play_sound, reg10, "snd_footstep_wood")
 	]),
 
 	# release: get up
@@ -119,6 +170,50 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   ]
 )
 
+# cheer instead of jump on space if battle is won  (mtarini)
+tld_cheer_on_space_when_battle_over_press = ( 
+  0,1.5,0,[
+    #(eq, "$battle_won",1),
+	(game_key_clicked, gk_jump),
+	(all_enemies_defeated, 2),
+
+    (get_player_agent_no, reg10),
+	(agent_is_alive, reg10),
+	(try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
+		(agent_set_animation, reg10, "anim_cheer_player_ride"),
+		(agent_set_animation, reg12, "anim_horse_cancel_ani"), # to remove horse jump
+	(else_try),
+		(agent_set_animation, reg10, "anim_cheer_player"),
+	(try_end),
+	(agent_get_troop_id, reg11, reg10),
+	(gt,reg1,-1),
+	(try_begin), 
+		(eq,"$player_cheering",0), # don't reshout if just shouted
+		(call_script, "script_troop_get_cheer_sound", reg11),
+		(agent_play_sound, reg10, reg1),    
+	(try_end),
+	(assign,"$player_cheering",1),
+  ],
+  [
+    (assign,"$player_cheering",2), # after 1 sec, can end ani
+  ],
+  
+)
+
+tld_cheer_on_space_when_battle_over_release = ( 
+  0,0,0,[	(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],
+  [
+	(get_player_agent_no, reg10),
+	(try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
+		(agent_set_animation, reg10, "anim_cancel_ani_ride"),
+	(else_try),
+		(agent_set_animation, reg10, "anim_cancel_ani_stand"),
+	(try_end),
+	
+	(assign,"$player_cheering",0),
+  ]
+
+)
 
 # custom TLD functions for special troops spawining
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
@@ -127,7 +222,6 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(agent_get_troop_id,":agent_trp",":agent"),
 	(agent_get_item_id, ":agent_item", ":agent"),
 	(agent_set_slot, ":agent", slot_agent_mount_side, -1),
-	
 	
 	#(str_store_troop_name, s11, ":agent_trp"),  
 	#(try_begin),
@@ -166,30 +260,25 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(try_begin),
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
 	    (assign, ":warg", "$warg_to_be_replaced"),
-
-		(try_begin),
-			(eq, "$warg_to_be_replaced", -1),
-			(agent_set_team, ":agent",  reg25),
-			#(display_message,"@DEBUG: new wargs rider team is now: {reg45}"),
-		(else_try),
-			(assign, "$warg_to_be_replaced", -1),
 		
-			(agent_get_look_position,pos4,":warg"),
-			
+		(try_begin),
+			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
+			(assign, "$warg_to_be_replaced", -1),
+	
 			# testing
 			#(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
 			#(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
 			
-			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
 
 			(store_agent_hit_points, reg12, ":warg",1),
 			(agent_set_hit_points, ":agent", reg12, 1),
 			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		
-			(call_script, "script_remove_agent", ":warg"),
-			
+			(agent_get_position,pos4,":warg"),
+			(call_script, "script_remove_agent", ":warg"),			
 			(agent_set_position, ":agent", pos4),
 		
+			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
 			(agent_set_team, ":agent",  reg25), # this was set just above
 			#(display_message,"@DEBUG: new wargs team is now: {reg45}"),
 		(try_end),
@@ -797,13 +886,13 @@ custom_lone_wargs_special_attack = (0,0,2, [
 
 
 # wargs without rider respawn
-custom_lone_wargs_are_agressive = (0,0,2, [],[
+custom_lone_wargs_are_aggressive = (0,0,2, [],[
+    
 	(try_for_agents,":warg"),
         (agent_is_alive, ":warg"), 
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
 		(agent_get_rider,":rider",":warg"),
-		
 		
 		(try_begin),
 			# rider not dead: record its original owner in a slot (1st time only)
@@ -815,9 +904,13 @@ custom_lone_wargs_are_agressive = (0,0,2, [],[
 		(try_end),
 		
 		(eq,":rider",-1),
+		#(display_message,"@warg without rider found!"),
+
 		# riderless rider found. spawn a new rider in its place
 		
 		(eq, "$warg_to_be_replaced", -1), # only spawn a new warg per "turn"
+		
+
 		(assign, "$warg_to_be_replaced", ":warg"),
 
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
@@ -827,6 +920,7 @@ custom_lone_wargs_are_agressive = (0,0,2, [],[
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		
+		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@respawn{reg1} {s12}..."),
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
 
 		#(display_message,"@DEBUG: Spawning ghost rider!"),

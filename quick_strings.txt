@@ -1,4 +1,4 @@
-897
+901
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -101,6 +101,7 @@ qstr_Short_of_Resource_Po Short_of_Resource_Points!!
 qstr_{s10}_will_soon_reas {s10}_will_soon_reassign_some_of_{s12}_troops_away_from_your_party!
 qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
+qstr_Selected:{reg1} Selected:{reg1}
 qstr_the_Steward the_Steward
 qstr_our our
 qstr_your your
@@ -381,8 +382,11 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
+qstr_respawn{reg1}_{s12}. respawn{reg1}_{s12}...
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_Your_horse_rears_ref Your_horse_rears,_refusing_to_obey_your_commands!
+qstr_CHEAT:_Mind_blast!!! CHEAT:_Mind_blast!!!_(ctrl+k)
+qstr_CHEAT:_everybody:_"A CHEAT:_everybody:_"A-a-a-a-argh!"_(ctrl+k)
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Cannot_leave_now. Cannot_leave_now.

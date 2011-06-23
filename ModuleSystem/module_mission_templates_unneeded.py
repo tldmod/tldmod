@@ -6,39 +6,6 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
-#MV: commented out - not used and why not use built-in Ctrl-Shift-F4 like normal people? Really.
-# cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
-    # (eq, "$cheat_mode",1),
-	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    # (get_player_agent_no, ":player_agent"),
-	# (agent_get_team, ":player_team", ":player_agent"),
-	# (display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
-    # (try_for_agents, ":agent"),
-        # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-		# (agent_get_horse,":horse",":agent"),
-		# (try_begin), (gt, ":horse", -1), 
-			# (agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
-			# (agent_set_animation, ":horse", "anim_horse_rear"), 
-		# (else_try),
-			# (agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
-		# (try_end),
-	# (try_end),
-  # ], [ 
-	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    # (get_player_agent_no, ":player_agent"),
-	# (agent_get_team, ":player_team", ":player_agent"),
-	# (display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
-
-	# (set_show_messages , 0),
-    # (try_for_agents, ":agent"),
-       # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-	   # (agent_set_hit_points , ":agent",0,1),
-	   # (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
-	# (try_end),
-	# (set_show_messages , 1),
-
-	# ]
-# )
 
 cheat_heal_self_on_ctrl_h = (0.5,0,2,[
     (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),

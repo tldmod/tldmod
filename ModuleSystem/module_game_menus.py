@@ -2894,6 +2894,7 @@ game_menus = [
 
 		#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
+		(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
         (set_jump_mission,"mt_fangorn_battle"),
         (jump_to_scene,"scn_random_scene_steppe_forest"),
         
@@ -5511,7 +5512,9 @@ game_menus = [
 #             (assign, "$talk_context", tc_castle_commander),
 #             (change_screen_map_conversation, reg(6))
 #             ]),
-	  ("moria_enter",[(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1)
+	  ("moria_enter",[
+				(eq, "$current_town", "p_town_moria"),
+				(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1)
 	        ], "Return into main hall of Moria trough the secret entrance",[
 			(modify_visitors_at_site,"scn_moria_center",),
 			(reset_visitors),
@@ -5520,8 +5523,7 @@ game_menus = [
             (jump_to_scene, "scn_moria_center"),
 			(assign, "$found_moria_entrance", 1),
             (change_screen_mission),
-	  ]
-	  ,"Enter Moria."),
+	  ],"Enter Moria."),
 	  
 	  #Enter dungeon in Moria begin (mtarini)
       ("moria_secret",[
@@ -5543,7 +5545,7 @@ game_menus = [
        ]),
       #Enter dungeon in Moria end (mtarini)
 	  
-	  ("moria_exit_scene",[(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
+	  ("moria_exit_scene",[(eq, "$current_town", "p_town_moria"),(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
 			(troop_add_item, "trp_player","itm_book_of_moria",0),
 			(jump_to_menu,"mnu_moria_must_escape"),
 			(finish_mission),

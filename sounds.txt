@@ -637,7 +637,7 @@ soundsfile version 2
  morgul02.wav 1153
  osgiliath01.wav 1153
  osgiliath03.wav 1153
-253
+256
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -809,6 +809,7 @@ snd_woman_hit 112 10 344 345 346 347 348 349 350 351 352 353
 snd_woman_die 160 2 354 355 
 snd_gondor_yell 2144 6 356 357 358 359 360 361 
 snd_gondor_victory 2640 6 362 363 364 365 366 367 
+snd_gondor_victory_player 2640 2 362 363 
 snd_rohan_yell 2144 14 368 369 370 371 372 373 374 375 376 377 378 379 380 381 
 snd_rohan_victory 2640 4 382 383 384 385 
 snd_dunlender_yell 2144 24 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 
@@ -836,12 +837,14 @@ snd_troll_yell 2144 2 515 516
 snd_troll_victory 2640 3 515 516 512 
 snd_dunedain_yell 2144 10 517 518 519 520 521 522 523 524 525 526 
 snd_dunedain_victory 2640 3 527 528 529 
+snd_dunedain_victory_player 2640 1 527 
 snd_lothlorien_yell 2144 13 530 531 532 533 534 535 536 537 538 539 540 541 542 
 snd_lothlorien_victory 2640 5 543 544 545 546 547 
 snd_rivendell_yell 2144 12 548 549 533 534 535 536 537 538 539 540 541 542 
 snd_rivendell_victory 2640 5 543 544 545 546 547 
 snd_mirkwood_yell 2144 12 550 551 533 534 535 536 537 538 539 540 541 542 
 snd_mirkwood_victory 2640 5 543 544 545 546 547 
+snd_mirkwood_victory_player 2640 2 543 544 
 snd_big_weapon_swing 2672 1 552 
 snd_thunder 2720 1 553 
 snd_pull_ballista 2048 1 554 

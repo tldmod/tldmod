@@ -697,13 +697,15 @@ tld_common_battle_scripts = [
  	custom_tld_spawn_troop,
 	custom_tld_init_battle,
 	custom_tld_horses_hate_trolls,
+	tld_cheer_on_space_when_battle_over_press,
+	tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
 	custom_troll_hitting,
 	custom_warg_sounds,
 	#custom_lone_wargs_special_attack,
-	custom_lone_wargs_are_agressive,
+	custom_lone_wargs_are_aggressive,
 	tld_player_cant_ride,
-#	cheat_kill_all_on_ctrl_k,  
+	cheat_kill_all_on_ctrl_k,  
 	cheat_kill_self_on_ctrl_s,  
 #	cheat_heal_self_on_ctrl_h
 ##        common_battle_kill_underwater,
@@ -799,7 +801,7 @@ mission_templates = [
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
-    [
+    custom_tld_bow_to_kings +[
         (1, 0, ti_once, [],
          [
            (try_begin),

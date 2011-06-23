@@ -199,6 +199,7 @@ sounds = [
 #tf_gondor		= 2
  ("gondor_yell",sf_priority_6|sf_vol_8, ["gondor_yell_1.wav","gondor_yell_2.wav","gondor_yell_3.wav","gondor_yell_4.wav","gondor_yell_5.wav","gondor_yell_6.wav"]),
  ("gondor_victory",sf_priority_5|sf_vol_10, ["gondor_victory_1.wav","gondor_victory_2.wav","gondor_victory_3.wav","gondor_victory_4.wav","gondor_victory_5.wav","gondor_victory_6.wav"]),
+ ("gondor_victory_player",sf_priority_5|sf_vol_10, ["gondor_victory_1.wav","gondor_victory_2.wav"]), # for the player, must sound like the same person
 #tf_rohan		= 3
  ("rohan_yell",sf_priority_6|sf_vol_8, ["rohan_yell_1.wav","rohan_yell_2.wav","rohan_yell_3.wav","rohan_yell_4.wav","rohan_yell_5.wav","rohan_yell_6.wav","rohan_yell_7.wav","rohan_yell_8.wav","rohan_yell_9.wav","rohan_yell_10.wav","rohan_yell_11.wav","rohan_yell_12.wav","rohan_yell_13.wav","rohan_yell_14.wav"]),
  ("rohan_victory",sf_priority_5|sf_vol_10, ["rohan_victory_1.wav","rohan_victory_2.wav","rohan_victory_3.wav","rohan_victory_4.wav"]),
@@ -236,6 +237,7 @@ sounds = [
 #tf_dunedain = 11
  ("dunedain_yell",sf_priority_6|sf_vol_8, ["dunedain_yell_1.wav","dunedain_yell_2.wav","dunedain_yell_3.wav","dunedain_yell_4.wav","dunedain_yell_5.wav","dunedain_yell_6.wav","dunedain_yell_7.wav","dunedain_yell_8.wav","dunedain_yell_9.wav","dunedain_yell_10.wav"]),
  ("dunedain_victory",sf_priority_5|sf_vol_10, ["dunedain_victory_1.wav","dunedain_victory_2.wav","dunedain_victory_3.wav"]),
+ ("dunedain_victory_player",sf_priority_5|sf_vol_10, ["dunedain_victory_1.wav",]),
 #tf_lorien = 12
  ("lothlorien_yell",sf_priority_6|sf_vol_8, ["elf_lothlorien_yell_1.wav","elf_lothlorien_yell_2.wav","elf_lothlorien_yell_3.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
  ("lothlorien_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
@@ -245,6 +247,7 @@ sounds = [
 #tf_woodelf = 14
  ("mirkwood_yell",sf_priority_6|sf_vol_8, ["elf_mirkwood_yell_1.wav","elf_mirkwood_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
  ("mirkwood_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
+ ("mirkwood_victory_player",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav",]),  
 #tf_evil_male = 15
 
  ("big_weapon_swing", sf_vol_10|sf_priority_7,["s_big_weaponSwing.wav"]),

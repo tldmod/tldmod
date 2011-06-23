@@ -710,14 +710,18 @@
   1.000000 hide_inside_warg 0 31 268435456 0 0.0 0.0 0.0 0.0 
  ride_warg_jump 257  1
   1.700000 hide_inside_warg 0 20 268435461 2829396006 0.000000 0.000000 0.000000  0.900000 
- unused_human_anim_27 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_28 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_29 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_30 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
+ cheer_player 8704  3
+  6.000000 man_cheer 12 185 6 0 0.0 0.0 0.0 0.0 
+  6.000000 man_cheer 217 397 6 0 0.0 0.0 0.0 0.0 
+  6.000000 man_cheer 338 518 6 0 0.0 0.0 0.0 0.0 
+ cheer_player_ride 8704  3
+  6.000000 ani_cheer_ride 12 185 6 0 0.0 0.0 0.0 0.0 
+  6.000000 ani_cheer_ride 217 397 6 0 0.0 0.0 0.0 0.0 
+  6.000000 ani_cheer_ride 338 518 6 0 0.0 0.0 0.0 0.0 
+ cancel_ani_stand 0  1
+  0.250000 anim_human 50 50 16 0 0.000000 0.000000 0.000000  0.000000 
+ cancel_ani_ride 0  1
+  0.250000 stand_onhorse 0 0 16 0 0.000000 0.000000 0.000000  0.000000 
  unused_human_anim_31 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_32 0  1
@@ -920,8 +924,8 @@
   4.500000 anim_horse 820 908 1342177280 0 0.000000 0.000000 0.000000  0.000000 
  warg_jump 256  1
   1.700000 warg_jump 0 20 805306373 2829396006 0.000000 0.000000 0.000000  0.900000 
- unused_horse_anim_5 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
+ horse_cancel_ani 0  1
+  0.250000 anim_horse 600 601 1073741830 0 0.000000 0.000000 0.000000  0.000000 
  unused_horse_anim_6 0  1
   1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_7 0  1
