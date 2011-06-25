@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1396
+ 1405
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2117,6 +2117,12 @@ spr_gon_ruined_warrior 0 0 statue_warrior_ruined bo_statue_ruined_warrior 0
 spr_gon_statue_warrior 0 0 statue_warrior_marble bo_statue_ruined_warrior 0
 
 
+spr_gon_statue_king_a 0 0 statue_gondor1 bo_statue_gondor1 0
+
+
+spr_gon_statue_king_b 0 0 statue_gondor2 bo_statue_gondor2 0
+
+
 spr_gondor_large_house_3 0 0 gondor_large_house_3 bo_gondor_large_house_3 0
 
 
@@ -2613,6 +2619,27 @@ spr_tree_destructible 629178368 600 tree_e_2 bo_tree_e_2 2
 
 
 spr_dwarf_statue 0 0 statue_dwarf bo_statue_dwarf 0
+
+
+spr_dwarf_statue_a 0 0 statue_dwarf1 bo_statue_dwarf1 0
+
+
+spr_dwarf_statue_b 0 0 statue_dwarf2 bo_statue_dwarf2 0
+
+
+spr_dwarf_statue_c 0 0 statue_dwarf3 bo_statue_dwarf3 0
+
+
+spr_dwarf_statue_d 0 0 statue_dwarf4 bo_statue_dwarf4 0
+
+
+spr_dwarf_statue_e 0 0 statue_dwarf5 bo_statue_dwarf5 0
+
+
+spr_dwarf_statue_hill_a 0 0 statue_dwarf_hill_a bo_statue_dwarf_hill_a 0
+
+
+spr_dwarf_statue_hill_b 0 0 statue_dwarf_hill_b bo_statue_dwarf_hill_b 0
 
 
 spr_mordor_clouds 69632 0 skybox_cloud_overlay 0 0

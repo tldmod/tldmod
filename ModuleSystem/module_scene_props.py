@@ -1246,7 +1246,8 @@ scene_props = [
   ("gon_statue_fem",0,"statue_female_marble","bo_statue_female_marble", []),
   ("gon_ruined_warrior",0,"statue_warrior_ruined","bo_statue_ruined_warrior", []),
   ("gon_statue_warrior",0,"statue_warrior_marble","bo_statue_ruined_warrior", []),
- 
+  ("gon_statue_king_a",0,"statue_gondor1","bo_statue_gondor1", []),
+  ("gon_statue_king_b",0,"statue_gondor2","bo_statue_gondor2", []),
   
   ###GONDOR - LLEW#####
   ("gondor_large_house_3",0,"gondor_large_house_3","bo_gondor_large_house_3", []),
@@ -1473,6 +1474,15 @@ scene_props = [
   
 ###DWARVEN PROPS###
 ("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
+("dwarf_statue_a",0,"statue_dwarf1","bo_statue_dwarf1", []),
+("dwarf_statue_b",0,"statue_dwarf2","bo_statue_dwarf2", []),
+("dwarf_statue_c",0,"statue_dwarf3","bo_statue_dwarf3", []),
+("dwarf_statue_d",0,"statue_dwarf4","bo_statue_dwarf4", []),
+("dwarf_statue_e",0,"statue_dwarf5","bo_statue_dwarf5", []),
+("dwarf_statue_hill_a",0,"statue_dwarf_hill_a","bo_statue_dwarf_hill_a", []),
+("dwarf_statue_hill_b",0,"statue_dwarf_hill_b","bo_statue_dwarf_hill_b", []),
+
+  
 #("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
 ("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
 ("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
