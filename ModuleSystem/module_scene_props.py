@@ -1248,6 +1248,11 @@ scene_props = [
   ("gon_statue_warrior",0,"statue_warrior_marble","bo_statue_ruined_warrior", []),
   ("gon_statue_king_a",0,"statue_gondor1","bo_statue_gondor1", []),
   ("gon_statue_king_b",0,"statue_gondor2","bo_statue_gondor2", []),
+  ("gon_statue_king_c",0,"gondor_king1","bo_gondor_king1", []),
+  ("gon_statue_king_d",0,"gondor_king2","bo_gondor_king2", []),
+  ("gon_statue_king_e",0,"gondor_king3","bo_gondor_king3", []),
+  
+  
   
   ###GONDOR - LLEW#####
   ("gondor_large_house_3",0,"gondor_large_house_3","bo_gondor_large_house_3", []),
