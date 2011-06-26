@@ -84,18 +84,13 @@ mayor_info_lord_told
 escort_merchant_caravan_mode
 qst_troublesome_bandits_eliminated
 qst_troublesome_bandits_eliminated_by_player
-stealth_general_b_tut_box
-troop_to_pick
-number_of_rescuers
-number_of_troop_type
-active_rescue
-rescue_stage
 bandit_tribute
 welfare_inquired
 rumors_inquired
 info_inquired
 start_phase_initialized
 found_moria_entrance
+current_player_region
 cheat_menu_add_troop_search_race
 cheat_menu_add_troop_search_tier
 cheat_menu_add_troop_search_fac
@@ -109,6 +104,7 @@ cbadvantage
 last_menu
 g_cheat_selected_faction
 g_player_icon_state
+number_of_combatants
 g_camp_mode
 cheat_mode
 relocated
@@ -119,7 +115,7 @@ tld_option_death
 capturer_party
 g_player_is_captive
 auto_menu
-last_lost_companion
+g_encountered_party
 g_next_menu
 g_mt_mode
 cant_leave_encounter
@@ -196,11 +192,16 @@ last_sneak_attempt_time
 player_ransom_amount
 faction_good
 faction_evil
+rescue_stage
+active_rescue
 trolls_in_battle
 wargs_in_battle
 warg_to_be_replaced
 nazgul_in_battle
 nazgul_team
+player_cheering
+agent_king
+player_is_bowing
 pin_player_fallen
 battle_won
 defender_reinforcement_stage
@@ -253,8 +254,6 @@ team3_default_formation
 team0_reinforcement_stage
 team1_reinforcement_stage
 tld_camera_on
-agent_king
-player_is_bowing
 defender_team
 attacker_team
 defender_team_2
@@ -341,8 +340,6 @@ battlemap_max_y
 trap_is_active
 atak
 player_is_inside_dungeon
-g_tld_intro_state
-alarm
 current_player_agent
 alarm_level
 sneak_tut
@@ -350,9 +347,9 @@ positions
 position_distance
 last_agent_position
 player_hiding
-hiding_tut
 spawn_cycle
 meta_alarm
+g_tld_intro_state
 g_presentation_credits_obj_1
 g_presentation_credits_obj_2
 g_presentation_credits_obj_3
@@ -478,7 +475,6 @@ wall_missile_troop5
 rescue_convo_troop
 wound_setting
 healing_setting
-g_encountered_party
 g_encountered_party_2
 g_encountered_party_faction
 g_encountered_party_relation
@@ -486,7 +482,6 @@ g_encountered_party_type
 g_encountered_party_template
 playerparty_prebattle_regulars
 qst_deliver_wine_debt
-number_of_combatants
 g_player_party_morale_modifier_party_size
 g_player_party_morale_modifier_leadership
 g_player_party_morale_modifier_food
@@ -548,7 +543,6 @@ current_companions_total
 meta_stealth
 stealth_results
 no_dead_companions
-pick_stage
 party_relative_strength
 ratio_of_prisoners
 pout_party
@@ -684,5 +678,3 @@ qst_scout_waypoints_wp_1_visited
 qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_is_quitting
-player_cheering
-current_player_region

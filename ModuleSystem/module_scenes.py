@@ -158,7 +158,7 @@ scenes = [
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
   ("elf_castle"         ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_castle"      ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
-  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_rohan_meduseld_int", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
+  ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_rohan_meduseld_int", (-200,-200),(200,200),-100,"0",["exit"],["player_chest"]),
 
   ("gondor_tavern" ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("rohan_tavern"  ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
@@ -316,8 +316,6 @@ scenes = [
 
   ("moria_deep_mines" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
 
-  ("pick_troops" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x30674c1b0003f90100001b70000067da00002878",[],[],"outer_terrain_forest"),
-  ("pick_troops_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc66d39c000489220000340c00007722000048c7",[],[]),
   
   ]
 

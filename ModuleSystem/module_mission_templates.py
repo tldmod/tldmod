@@ -4506,7 +4506,6 @@ mission_templates = [
   (try_for_range, reg10, 1, 32),
       (entry_point_get_position, reg10, reg10),
   (try_end),
-  (assign, "$alarm", 0),
   (get_player_agent_no, "$current_player_agent"),
   (assign, "$alarm_level", 0),
 ]),

@@ -2163,4 +2163,6 @@ scene_props = [
 	(set_spawn_position, pos1),(spawn_horse,":horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
 	
 ("mt_tirith_gate",0,"tirith_gate","bo_tirith_gate", []),
+("rohan_meduseld_table",0,"rohan_meduseld_int_table","bo_rohan_meduseld_int_table", []),
+
 ]

@@ -1,5 +1,5 @@
 scenesfile version 1
- 243
+ 241
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -476,7 +476,7 @@ scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100.00
   1  100000 
   1  784 
  0 
-scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200.000000 -200.000000 200.000000 200.000000 -100.000000 0 
   1  100000 
   1  784 
  0 
@@ -964,11 +964,3 @@ scn_moria_deep_mines moria_deep_mines 1280 none none 0.000000 0.000000 200.00000
   0 
   0 
  outer_terrain_plain 
-scn_pick_troops pick_troops 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x30674c1b0003f90100001b70000067da00002878 
-  0 
-  0 
- outer_terrain_forest 
-scn_pick_troops_b pick_troops_b 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0xbc66d39c000489220000340c00007722000048c7 
-  0 
-  0 
- 0 

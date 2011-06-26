@@ -2086,6 +2086,7 @@ scripts = [
 # WTF, night in TLD is primary WAR TIME =)! GA
 #             (neg|is_currently_night), #Don't fight at night
              (inflict_casualties_to_party_group, ":root_attacker_party", ":defender_strength", "p_temp_casualties"),
+			 (call_script, "script_map_hero_status_in_abstract_battle"), # TLD, check if heroes are killed
              (party_collect_attachments_to_party, ":root_attacker_party", "p_collective_enemy"),
            (try_end),
            (call_script, "script_party_count_fit_for_battle", "p_collective_enemy", 0),
@@ -2096,6 +2097,7 @@ scripts = [
 # WTF, night in TLD is primary WAR TIME =)! GA
 #             (neg|is_currently_night), #Don't fight at night
              (inflict_casualties_to_party_group, ":root_defender_party", ":attacker_strength", "p_temp_casualties"),
+			 (call_script, "script_map_hero_status_in_abstract_battle"), # TLD, check if heroes are killed
              (party_collect_attachments_to_party, ":root_defender_party", "p_collective_ally"),
            (try_end),
            (call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
@@ -20569,6 +20571,19 @@ scripts = [
 (party_set_slot, reg0, slot_mound_state, 1),
 (party_set_slot, reg0, slot_party_commander_party, ":hero"),
 ]),
+#script_map_hero_status_in_abstract_battle
+("map_hero_status_in_abstract_battle",[
+(try_begin),
+    (party_get_num_companion_stacks, ":numstacks", "p_temp_casualties"),
+    (try_for_range, ":stack", 0, ":numstacks"),
+        (party_stack_get_troop_id, ":hero", "p_temp_casualties", ":stack"),
+        (is_between, ":hero", "trp_knight_1_1", "trp_heroes_end"),
+        (party_stack_get_num_wounded, ":n", "p_temp_casualties", ":stack"),
+        (eq, ":n", 0),
+        (call_script, "script_hero_leader_killed_abstractly", ":hero"),
+    (try_end),
+(try_end),
+]), 
 #script_hero_leader_killed_abstractly
 ("hero_leader_killed_abstractly",[
 (store_script_param_1, ":hero"),
@@ -20590,6 +20605,7 @@ scripts = [
     (display_message, "@{s1}_is_logged_as_dead"),
 (try_end),
 ]),
+
 ############ HEALING AND DEATH FROM 808 ENDS ##############################################
 ############ RESCUE & STEALTH FROM 808 BEGINS##############################################
 
@@ -20623,15 +20639,6 @@ scripts = [
 ]), 
 #script_initialize_general_rescue
 ("initialize_general_rescue",[
-#(assign, "$rescue_companion_1", 0),
-#(assign, "$rescue_companion_2", 0),
-#(assign, "$rescue_companion_3", 0),
-#(assign, "$rescue_companion_4", 0),
-#(assign, "$rescue_companion_5", 0),
-#(assign, "$rescue_companion_6", 0),
-#(assign, "$rescue_companion_7", 0),
-#(assign, "$rescue_companion_8", 0),
-#(assign, "$rescue_companion_9", 0),
 ]),
 #script_initialize_sorcerer_quest
 ("initialize_sorcerer_quest",[
@@ -20649,16 +20656,6 @@ scripts = [
 (assign, "$guard_troop8", "trp_fell_orc_of_mordor"),
 (assign, "$guard_troop9", "trp_black_numenorean_renegade"),
 (assign, "$guard_troop10", "trp_orc_of_mordor"),
-# (assign, "$wall_missile_troop1", "trp_orc_archer_of_mordor"),
-# (assign, "$wall_missile_troop2", "trp_orc_archer_of_mordor"),
-# (assign, "$wall_missile_troop3", "trp_large_orc_archer_of_mordor"),
-# (assign, "$wall_missile_troop4", "trp_large_orc_archer_of_mordor"),
-# (assign, "$wall_missile_troop5", "trp_fell_orc_archer_of_mordor"),
-# (assign, "$wall_mounted_troop1", "trp_warg_rider_of_mirkwood"),
-# (assign, "$wall_mounted_troop2", "trp_wolf_rider_of_mirkwood"),
-# (assign, "$wall_mounted_troop3", "trp_wolf_rider_of_mirkwood"),
-# (assign, "$wall_mounted_troop4", "trp_wolf_rider_of_mirkwood"),
-# (assign, "$wall_mounted_troop5", "trp_wolf_rider_of_mirkwood"),
 ]), 
 #script_final_sorcerer_fight
 ("final_sorcerer_fight",[
@@ -20667,32 +20664,19 @@ scripts = [
 (reset_visitors),
 (modify_visitors_at_site, "$rescue_final_scene"),
 (call_script, "script_set_infiltration_companions"),
-    (try_begin),
+(set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
+(try_begin),
     (is_between, "$meta_alarm", 0, 4),
-    (set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
-    (set_visitor, 11, "$guard_troop2", 0),(set_visitor, 12, "$guard_troop2", 0),(set_visitor, 13, "$guard_troop3", 0),(set_visitor, 14, "$guard_troop3", 0),
-    (set_visitor, 15, "$guard_troop3", 0),(set_visitor, 16, "$guard_troop4", 0),(set_visitor, 17, "$guard_troop4", 0),(set_visitor, 18, "$guard_troop5", 0),
-    (set_visitor, 19, "$guard_troop5", 0),(set_visitor, 20, "$guard_troop6", 0),
+    (set_visitor, 11, "$guard_troop2", 0),(set_visitor, 12, "$guard_troop2", 0),(set_visitor, 13, "$guard_troop3", 0),(set_visitor, 14, "$guard_troop3", 0),(set_visitor, 15, "$guard_troop3", 0),(set_visitor, 16, "$guard_troop4", 0),(set_visitor, 17, "$guard_troop4", 0),(set_visitor, 18, "$guard_troop5", 0),(set_visitor, 19, "$guard_troop5", 0),(set_visitor, 20, "$guard_troop6", 0),
 (else_try),
     (is_between, "$meta_alarm", 4, 7),
-    (set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
-    (set_visitor, 11, "$guard_troop3", 0),(set_visitor, 12, "$guard_troop3", 0),(set_visitor, 13, "$guard_troop4", 0),(set_visitor, 14, "$guard_troop4", 0),
-    (set_visitor, 15, "$guard_troop4", 0),(set_visitor, 16, "$guard_troop5", 0),(set_visitor, 17, "$guard_troop5", 0),(set_visitor, 18, "$guard_troop6", 0),
-    (set_visitor, 19, "$guard_troop6", 0),(set_visitor, 20, "$guard_troop7", 0),
+    (set_visitor, 11, "$guard_troop3", 0),(set_visitor, 12, "$guard_troop3", 0),(set_visitor, 13, "$guard_troop4", 0),(set_visitor, 14, "$guard_troop4", 0),(set_visitor, 15, "$guard_troop4", 0),(set_visitor, 16, "$guard_troop5", 0),(set_visitor, 17, "$guard_troop5", 0),(set_visitor, 18, "$guard_troop6", 0),(set_visitor, 19, "$guard_troop6", 0),(set_visitor, 20, "$guard_troop7", 0),
 (else_try),
     (is_between, "$meta_alarm", 7, 9),
-    (set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
-    (set_visitor, 11, "$guard_troop4", 0),(set_visitor, 12, "$guard_troop4", 0),
-    (set_visitor, 13, "$guard_troop5", 0),(set_visitor, 14, "$guard_troop5", 0),
-    (set_visitor, 15, "$guard_troop5", 0),(set_visitor, 16, "$guard_troop6", 0),
-    (set_visitor, 17, "$guard_troop6", 0),(set_visitor, 18, "$guard_troop7", 0),
-    (set_visitor, 19, "$guard_troop7", 0),(set_visitor, 20, "$guard_troop8", 0),
-    (else_try),
+    (set_visitor, 11, "$guard_troop4", 0),(set_visitor, 12, "$guard_troop4", 0),(set_visitor, 13, "$guard_troop5", 0),(set_visitor, 14, "$guard_troop5", 0),(set_visitor, 15, "$guard_troop5", 0),(set_visitor, 16, "$guard_troop6", 0),(set_visitor, 17, "$guard_troop6", 0),(set_visitor, 18, "$guard_troop7", 0),(set_visitor, 19, "$guard_troop7", 0),(set_visitor, 20, "$guard_troop8", 0),
+(else_try),
     (ge, "$meta_alarm", 9),
-    (set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
-    (set_visitor, 11, "$guard_troop5", 0),(set_visitor, 12, "$guard_troop6", 0),(set_visitor, 13, "$guard_troop6", 0),(set_visitor, 14, "$guard_troop7", 0),
-    (set_visitor, 15, "$guard_troop7", 0),(set_visitor, 16, "$guard_troop8", 0),(set_visitor, 17, "$guard_troop8", 0),(set_visitor, 18, "$guard_troop9", 0),
-    (set_visitor, 19, "$guard_troop10",0),(set_visitor, 20, "$guard_troop10",0),
+    (set_visitor, 11, "$guard_troop5", 0),(set_visitor, 12, "$guard_troop6", 0),(set_visitor, 13, "$guard_troop6", 0),(set_visitor, 14, "$guard_troop7", 0),(set_visitor, 15, "$guard_troop7", 0),(set_visitor, 16, "$guard_troop8", 0),(set_visitor, 17, "$guard_troop8", 0),(set_visitor, 18, "$guard_troop9", 0),(set_visitor, 19, "$guard_troop10",0),(set_visitor, 20, "$guard_troop10",0),
 (try_end),
 ]),
 #script_set_infiltration_companions
@@ -21230,24 +21214,22 @@ scripts = [
     (eq, ":local1", 1),
     (display_message, "@Some_of_your_companions_are_suffering_from_old_wounds.", 4294901760),
 (try_end),
-]), 
+]),
+
 #script_set_hero_companion
 ("set_hero_companion",[
-(try_for_range, reg10, 0, "$number_of_troop_type"),
-    (try_begin),
-        (troop_is_hero, "$troop_to_pick"),
-        (store_troop_health, ":local0", "$troop_to_pick", 0),
-     (else_try),
-        (assign, ":local0", 100),
-    (try_end),
-    (store_add, ":comp", "fac_mission_companion_1", "$pick_stage"),
-#	(try_for_range, ":comp","fac_mission_companion_1", ":comp"), 
-#		(neg|faction_slot_eq, ":comp", slot_fcomp_troopid, 0),
-		(faction_set_slot, ":comp", slot_fcomp_troopid, "$troop_to_pick"),
-		(faction_set_slot, ":comp", slot_fcomp_hp, ":local0"),
-    (val_add, "$pick_stage", 1),
+(store_script_param_1, ":comp_troop"),
+(try_begin), # store horoes actual health
+	(troop_is_hero, ":comp_troop"),
+	(store_troop_health, ":hp", ":comp_troop", 0),
+(else_try),
+	(assign, ":hp", 100),
 (try_end),
-(assign, "$number_of_troop_type", 1),
+(store_add, ":comp", "fac_mission_companion_1", reg0), # reg0 traces total # of companions picked
+(faction_set_slot, ":comp", slot_fcomp_troopid, ":comp_troop"),
+(faction_set_slot, ":comp", slot_fcomp_hp, ":hp"),
+(faction_set_slot, ":comp", slot_fcomp_kia, 0),
+(val_add, reg0,1), # one more companion added
 ]), 
 
 #script_initialize_center_scene

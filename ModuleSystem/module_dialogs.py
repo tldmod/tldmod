@@ -8585,22 +8585,22 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 #[trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer0", [], "Woot!?", "lord_tell_mission_sorcerer",[]],
 # remove upper 2 & make lower follow "lord_tell_mission"
 [trp_elder_cgaladhon,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_mirkwood_sorcerer")],
-"Yes {playername}, I have an important task for you. \
-My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. \
-A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses.  \
-Though he is a mortal, he has become one of the enemies greatest pupils \
-in the use of arcane rituals and he represents a great threat to our people. \
+"Yes {playername}, I have an important task for you.\
+My power to defend and preserve Lothlorien has been diminished by the devices of the enemy.\
+A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses.\
+Though he is a mortal, he has become one of the enemies greatest pupils\
+in the use of arcane rituals and he represents a great threat to our people.\
 You must hunt him down and destroy him!", 
 "lord_mission_mirkwood_sorcerer",[]],
   
 [trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer", [], "Where can I find the sorcerer, my Lady?", "lord_mission_mirkwood_sorcerer_2",[]],
 
 [trp_elder_cgaladhon, "lord_mission_mirkwood_sorcerer_2", [], 
-"Search for him in Mirkwood forest, not far from Dol Guldur itself. \
-He is both a well guarded and a cautious foe so you will need to use stealth \
-to prevent the alarm from being raised. \
-If he escapes, he will relocate to other dark places that we know not of \
-and continue his wickedness unchallenged. There will be only one opportunity to defeat him. \
+"Search for him in Mirkwood forest, not far from Dol Guldur itself.\
+He is both a well guarded and a cautious foe so you will need to use stealth\
+to prevent the alarm from being raised.\
+If he escapes, he will relocate to other dark places that we know not of\
+and continue his wickedness unchallenged. There will be only one opportunity to defeat him.\
 Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_sorcerer_3",[]],
 
 [trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer_3", [], 
@@ -10012,14 +10012,14 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 ##  [party_tpl|pt_farmers,"start", [], "We are just simple farmers.", "close_window",[(assign, "$g_leave_encounter",1)]],
 ######################################################### pick troops
 
-[trp_barman, "start", [], "Who_would_you_like_to_take_on_a_mission_with_you?",  "pick_troops",  
-	[ (eq, "$stealth_general_b_tut_box", 0),
-	(tutorial_box, "@Stealth_capable_troops_may_be_brought_on_infiltration_missions._These_include_all_companion_heroes,_ranger_variants,_tracker_variants,_assassin_variants,_raider_variants_and_all_elven_units._The_pathfinding_scores_of_these_units_are_used_to_determine_your_groups_stealth_rating._Smaller_groups_get_a_bonus_and_larger_groups_get_a_penalty."),
-	(assign, "$stealth_general_b_tut_box", 1)]],
+# [trp_barman, "start", [], "Who_would_you_like_to_take_on_a_mission_with_you?",  "pick_troops",  
+	# [ (eq, "$stealth_general_b_tut_box", 0),
+	# (tutorial_box, "@Stealth_capable_troops_may_be_brought_on_infiltration_missions._These_include_all_companion_heroes,_ranger_variants,_tracker_variants,_assassin_variants,_raider_variants_and_all_elven_units._The_pathfinding_scores_of_these_units_are_used_to_determine_your_groups_stealth_rating._Smaller_groups_get_a_bonus_and_larger_groups_get_a_penalty."),
+	# (assign, "$stealth_general_b_tut_box", 1)]],
 
-[trp_barman|plyr,  "pick_troops",  [
-	(main_party_has_troop, "trp_npc1"),
-	(neg|ge, "$pick_stage", 9)],
+# [trp_barman|plyr,  "pick_troops",  [
+	# (main_party_has_troop, "trp_npc1"),
+	# (neg|ge, "$pick_stage", 9)],
 #	(neg|eq, "$rescue_companion_1", "trp_npc1"),
 #	(neg|eq, "$rescue_companion_2", "trp_npc1"),
 #	(neg|eq, "$rescue_companion_3", "trp_npc1"),
@@ -10029,82 +10029,76 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 #	(neg|eq, "$rescue_companion_7", "trp_npc1"),
 #	(neg|eq, "$rescue_companion_8", "trp_npc1"),
 #	(neg|eq, "$rescue_companion_9", "trp_npc1")],
-"Ulfas",  "pick_troops_number1",  [(assign, "$troop_to_pick", "trp_npc1"),(call_script, "script_set_hero_companion")]],
+# "Ulfas",  "pick_troops_number1",  [(assign, "$troop_to_pick", "trp_npc1"),(call_script, "script_set_hero_companion")]],
 
-[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")],"Done", "rescue_begins", [ 
-  #(assign, "$companions_picked", 1)
-]],
-[trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops")],"Done", "ruins_begin", [
-  #(assign, "$companions_picked", 1)
-]],
+# [trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")],"Done", "rescue_begins", []],
+# [trp_barman|plyr, "pick_troops",[(store_current_scene, reg10),(eq, reg10, "scn_pick_troops")],"Done", "ruins_begin", []],
 
-[trp_barman, "pick_troops_next", [(assign, reg5, "$pick_stage")], 
-"Who_else_would_you_like_to_take_on_a_rescue_mission_with_you?_You_currently_have_selected_{reg5}_companions_to_fill_your_available_slots.", "pick_troops",
-	[(assign, "$number_of_rescuers", 1)]],
+# [trp_barman, "pick_troops_next", [(assign, reg5, "$pick_stage")], 
+# "Who_else_would_you_like_to_take_on_a_rescue_mission_with_you?_You_currently_have_selected_{reg5}_companions_to_fill_your_available_slots.", "pick_troops",[(assign, "$number_of_rescuers", 1)]],
 
-[trp_barman, "pick_troops_number1", [
-(party_count_members_of_type, reg1, "p_main_party", "$troop_to_pick"),
-(assign, reg3, reg1),
-(assign, reg4, reg1),
-(assign, reg5, reg1),
-(assign, reg6, reg1),
-(assign, reg7, reg1)],
-"How_many_of_these_troops_will_you_bring?",  "pick_troops_number",  []],
+# [trp_barman, "pick_troops_number1", [
+# (party_count_members_of_type, reg1, "p_main_party", "$troop_to_pick"),
+# (assign, reg3, reg1),
+# (assign, reg4, reg1),
+# (assign, reg5, reg1),
+# (assign, reg6, reg1),
+# (assign, reg7, reg1)],
+# "How_many_of_these_troops_will_you_bring?",  "pick_troops_number",  []],
 
-[trp_barman|plyr, "pick_troops_number",  [(val_sub, reg3, reg2),(ge, reg3, 1),(neg|ge, "$pick_stage", 9)],
-"One",  "pick_troops_next", [(assign, "$number_of_troop_type", 1),(call_script, "script_set_hero_companion")]],
-[trp_barman|plyr, "pick_troops_number",  [(val_sub, reg4, reg2),(ge, reg4, 2),(neg|ge, "$pick_stage", 8)],
-"Two",  "pick_troops_next", [(assign, "$number_of_troop_type", 2),(call_script, "script_set_hero_companion")]],
-[trp_barman|plyr, "pick_troops_number",  [(val_sub, reg5, reg2),(ge, reg5, 3),(neg|ge, "$pick_stage", 7)],
-"Three","pick_troops_next", [(assign, "$number_of_troop_type", 3),(call_script, "script_set_hero_companion")]],
-[trp_barman|plyr, "pick_troops_number",  [(val_sub, reg6, reg2),(ge, reg6, 4),(neg|ge, "$pick_stage", 6)],
-"Four", "pick_troops_next", [(assign, "$number_of_troop_type", 4),(call_script, "script_set_hero_companion")]],
-[trp_barman|plyr, "pick_troops_number",  [(val_sub, reg7, reg2),(ge, reg7, 3),(neg|ge, "$pick_stage", 5)],
-"Five", "pick_troops_next", [(assign, "$number_of_troop_type", 5),(call_script, "script_set_hero_companion")]],
+# [trp_barman|plyr, "pick_troops_number",  [(val_sub, reg3, reg2),(ge, reg3, 1),(neg|ge, "$pick_stage", 9)],
+# "One",  "pick_troops_next", [(assign, "$number_of_troop_type", 1),(call_script, "script_set_hero_companion")]],
+# [trp_barman|plyr, "pick_troops_number",  [(val_sub, reg4, reg2),(ge, reg4, 2),(neg|ge, "$pick_stage", 8)],
+# "Two",  "pick_troops_next", [(assign, "$number_of_troop_type", 2),(call_script, "script_set_hero_companion")]],
+# [trp_barman|plyr, "pick_troops_number",  [(val_sub, reg5, reg2),(ge, reg5, 3),(neg|ge, "$pick_stage", 7)],
+# "Three","pick_troops_next", [(assign, "$number_of_troop_type", 3),(call_script, "script_set_hero_companion")]],
+# [trp_barman|plyr, "pick_troops_number",  [(val_sub, reg6, reg2),(ge, reg6, 4),(neg|ge, "$pick_stage", 6)],
+# "Four", "pick_troops_next", [(assign, "$number_of_troop_type", 4),(call_script, "script_set_hero_companion")]],
+# [trp_barman|plyr, "pick_troops_number",  [(val_sub, reg7, reg2),(ge, reg7, 3),(neg|ge, "$pick_stage", 5)],
+# "Five", "pick_troops_next", [(assign, "$number_of_troop_type", 5),(call_script, "script_set_hero_companion")]],
 
-[trp_barman|plyr, "pick_troops_number",  [], "Done",   "pick_troops_next", []], 
+# [trp_barman|plyr, "pick_troops_number",  [], "Done",   "pick_troops_next", []], 
 
-[trp_barman, "rescue_begins", [(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")], 
-"The_rescue_begins",  "close_window", [
-	(call_script, "script_set_meta_stealth"),
-	(call_script, "script_set_infiltration_player_record"),
-	(store_encountered_party, reg1),
-	(try_begin),(eq, reg1, "p_town_minas_tirith"),(assign, "$active_rescue", 1),
-	 (else_try),(eq, reg1, "p_town_hornburg"    ),(assign, "$active_rescue", 2),
-	 (else_try),(eq, reg1, "p_town_minas_morgul"),(assign, "$active_rescue", 3),
-	 (else_try),(eq, reg1, "p_town_morannon"    ),(assign, "$active_rescue", 4),
-	(try_end),
-	(call_script, "script_crunch_stealth_results"),
-	(try_begin),(eq, "$stealth_results", 4),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_battle_wall"),
-	 (else_try),(eq, "$stealth_results", 3),(assign, "$rescue_stage", 2),(call_script, "script_infiltration_combat_1"),
-		(display_message, "@You_have_been_discovered_before_scaling_the_wall."),
-	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
-		(display_message, "@You_slip_over_the_wall_and_advance_stealthily."),
-	 (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 3),(call_script, "script_infiltration_stealth_2"),
-		(display_message, "@You_slip_over_the_wall_and_advance_stealthily."),
-	(try_end),
-	(call_script, "script_rescue_information")]],
+# [trp_barman, "rescue_begins", [(store_current_scene, reg10),(eq, reg10, "scn_pick_troops_b")], 
+# "The_rescue_begins",  "close_window", [
+	# (call_script, "script_set_meta_stealth"),
+	# (call_script, "script_set_infiltration_player_record"),
+	# (store_encountered_party, reg1),
+	# (try_begin),(eq, reg1, "p_town_minas_tirith"),(assign, "$active_rescue", 1),
+	 # (else_try),(eq, reg1, "p_town_hornburg"    ),(assign, "$active_rescue", 2),
+	 # (else_try),(eq, reg1, "p_town_minas_morgul"),(assign, "$active_rescue", 3),
+	 # (else_try),(eq, reg1, "p_town_morannon"    ),(assign, "$active_rescue", 4),
+	# (try_end),
+	# (call_script, "script_crunch_stealth_results"),
+	# (try_begin),(eq, "$stealth_results", 4),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_battle_wall"),
+	 # (else_try),(eq, "$stealth_results", 3),(assign, "$rescue_stage", 2),(call_script, "script_infiltration_combat_1"),
+		# (display_message, "@You_have_been_discovered_before_scaling_the_wall."),
+	 # (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
+		# (display_message, "@You_slip_over_the_wall_and_advance_stealthily."),
+	 # (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 3),(call_script, "script_infiltration_stealth_2"),
+		# (display_message, "@You_slip_over_the_wall_and_advance_stealthily."),
+	# (try_end),
+	# (call_script, "script_rescue_information")]],
 
-[trp_barman, "ruins_begin",  [ (store_current_scene, reg10),(eq, reg10, "scn_pick_troops")], 
-"You_advance_on_the_ruins...",  "close_window", [ 
-	(assign, "$active_rescue", 5),
-#	(assign, "$sorcerer_quest", 3),
-	(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
-	(disable_party, "p_ancient_ruins"),
-	(call_script, "script_set_meta_stealth"),
-	(call_script, "script_crunch_stealth_results"),
-	(call_script, "script_set_infiltration_player_record"),
-	(try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
-		(display_message, "@You_are_quickly_discovered_by_the_enemy."),
-		(display_message, "@Eliminate_them_before_the_alarm_spreads!"),
-	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
-		(display_message, "@You_advance_stealthily_far_into_the_forest."),
-		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
-		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
-	 (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 2),(call_script, "script_final_sorcerer_fight"),
-		(display_message, "@You_have_evaded_the_patrols_and_crept_close_to_the_ruins!"),
-		(display_message, "@You_have_found_the_sorcerer!"),
-	(try_end)]],
+# [trp_barman, "ruins_begin",  [ (store_current_scene, reg10),(eq, reg10, "scn_pick_troops")], 
+# "You_advance_on_the_ruins...",  "close_window", [ 
+	# (assign, "$active_rescue", 5),
+	# (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+	# (disable_party, "p_ancient_ruins"),
+	# (call_script, "script_set_meta_stealth"),
+	# (call_script, "script_crunch_stealth_results"),
+	# (call_script, "script_set_infiltration_player_record"),
+	# (try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
+		# (display_message, "@You_are_quickly_discovered_by_the_enemy."),
+		# (display_message, "@Eliminate_them_before_the_alarm_spreads!"),
+	 # (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_1"),
+		# (display_message, "@You_advance_stealthily_far_into_the_forest."),
+		# (display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
+		# (display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
+	 # (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 2),(call_script, "script_final_sorcerer_fight"),
+		# (display_message, "@You_have_evaded_the_patrols_and_crept_close_to_the_ruins!"),
+		# (display_message, "@You_have_found_the_sorcerer!"),
+	# (try_end)]],
 
 # Ryan BEGIN
 [party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
