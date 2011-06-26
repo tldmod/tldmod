@@ -1492,6 +1492,9 @@ tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_s
 tld_siegable_never   = 4  # never siege
 
 
+str_fullname_region_begin = "str_fullname_region_gondor"
+str_shortname_region_begin = "str_shortname_region_gondor"
+
 ###########################################################################################
 # center scenes list, to assign subscenes and npcs to centers
 # instead of ordering scenes and npcs in module_troops, which is cumbersome
@@ -1823,84 +1826,6 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
             
 # foxyman
 cheat_switch = 1
-###### MV: commented out all tld_faction_ranks stuff from the code - not needed ######
-# titles for one's own starting faction
-#########################################################
-# TLD faction ranks
-#
-# Each faction with a list (enclosed in []) of ranks, each rank with (status points for rank, salary, list of positions in [])
-# Each position with (position name, list of troops[], list of items[], list of supplies[], condition script, renew troops cost, position description)
-# sort them in descend order of renown/influence value
-
-# tld_faction_ranks = [
-# #fac_gondor = 3
-# [],
-# #fac_dwarf = 4
-# [],
-# #fac_rohan = 5
-# [   (1450, 3000, [
-        # ("Captain of the Eorl Guard", 
-            # [("trp_eorl_guard_of_rohan", 10), ("trp_elite_rider_of_rohan", 30)], 
-            # [("itm_rohan_warhorse", 1), ("itm_rohan_armor_r", 1), ("itm_rohan_cav_helmet_c", 1), ("itm_rohan_shield_g", 1), ("itm_rohirrim_war_greaves", 1), ("itm_rohan_cav_sword", 1), ("itm_rohirrim_short_axe", 1)],
-            # [("itm_smoked_fish", 5), ("itm_dried_meat", 5)],
-            # "script_cf_can_be_captain_of_the_eorl_guard", 300, "str_captain_of_the_eorl_guard_dscpt"
-        # ),
-        # ("Captain of the Brego Guard",
-            # [("trp_brego_guard_of_rohan", 10), ("trp_elite_lancer_of_rohan", 30)], 
-            # [("itm_rohan_warhorse", 1), ("itm_rohan_armor_r", 1), ("itm_rohan_cav_helmet_c", 1), ("itm_rohan_shield_g", 1), ("itm_rohirrim_war_greaves", 1), ("itm_rohan_cav_sword", 1), ("itm_rohan_spear", 1), ("itm_heavy_throwing_spear", 1)],
-            # [("itm_smoked_fish", 5), ("itm_dried_meat", 5)],
-            # "script_cf_can_be_captain_of_the_brego_guard", 300, "str_captain_of_the_brego_guard_dscpt"            
-        # ),      ]),
-    # (1100, 1500, [
-        # ("Captain of Edoras",
-            # [("trp_dismounted_thengel_guard_of_rohan", 10), ("trp_dismounted_elite_skirmisher_of_rohan", 20), ("trp_dismounted_veteran_skirmisher_of_rohan", 20)],
-            # [],
-            # [],
-            # -1, 250, "str_captain_of_edoras_dscpt"
-        # ),       ]),
-# ],
-# #fac_mordor = 6
-# [],
-# #fac_isengard = 7
-# [],
-# #fac_lorien = 8
-# [],
-# #fac_imladris = 9
-# [],
-# #fac_woodelf = 10
-# [],
-# #fac_dale = 11
-# [],
-# #fac_harad = 12
-# [],
-# #fac_rhun = 13
-# [],
-# #fac_khand = 14
-# [],
-# #fac_umbar = 15
-# [],
-# #fac_moria = 16
-# [],
-# #fac_guldur = 17
-# [],
-# #fac_gundabad = 18
-# [],
-# #fac_dunland = 19
-# [],
-# #fac_northmen = 20
-# [],
-# #fac_beorn = 21
-# [],
-# ]
-# tfr_name_pos    = 0
-# tfr_soldiers_pos = 1
-# tfr_equipments_pos = 2
-# tfr_supplies_pos = 3
-# tfr_condition_pos = 4
-# tfr_con_sol_ex_pos  = 5
-# tfr_text_pos    = 6
-
-# tfr_name_strings_begin = "str_tfr_name_strings_begin"
 
 # TLD faction ranks end
 ###############################################

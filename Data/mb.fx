@@ -4248,44 +4248,18 @@ VS_OUTPUT vs_mtarini_main_skin_big (float4 vPosition : POSITION, float3 vNormal 
 }
 
 
-technique mtarini_skin_diffuse_big
-{
-	pass P0
-	{
-      VertexShader = compile vs_2_0 vs_mtarini_main_skin_big(PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
-	}
-}
-
-technique mtarini_skin_diffuse_big_SHDW
-{
-	pass P0
-	{
-      VertexShader = compile vs_2_0 vs_mtarini_main_skin_big(PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
-	}
-}
-
-technique mtarini_skin_diffuse_big_SHDWNVIDIA
-{
-	pass P0
-	{
-      VertexShader = compile vs_2_a vs_mtarini_main_skin_big(PCF_NVIDIA);
-      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
-	}
-}
 
 
 
 
 
-// WARGS
+// WARGS, OLIHPANT, PONIES 
 
-VS_OUTPUT vs_mtarini_main_skin_resize(float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES, uniform const float resize, uniform const int PcfMode)
+VS_OUTPUT vs_mtarini_main_skin_resize(float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES, uniform const float pre_resize,  uniform const float resize,  uniform const int PcfMode)
 {
    VS_OUTPUT Out = (VS_OUTPUT)0;
-   
-  
+
+   vPosition.xyz*=pre_resize;
    
    float4 vObjectPos = mul(matWorldArray[vBlendIndices.x], vPosition - matBoneOriginArray[vBlendIndices.x]) * vBlendWeights.x
    + mul(matWorldArray[vBlendIndices.y], vPosition - matBoneOriginArray[vBlendIndices.y]) * vBlendWeights.y
@@ -4355,25 +4329,75 @@ technique mtarini_skin_diffuse_95perc
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(0.95,PCF_NONE);
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_NONE);
       PixelShader = compile ps_2_0 ps_main(PCF_NONE);
 	}
 }
-
 technique mtarini_skin_diffuse_95perc_SHDW
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(0.95,PCF_DEFAULT);
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_DEFAULT);
       PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
 	}
 }
-
 technique mtarini_skin_diffuse_95perc_SHDWNVIDIA
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(0.95,PCF_NVIDIA);
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1,0.95,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+technique mtarini_skin_diffuse_78perc
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_78perc_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_78perc_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+
+
+technique mtarini_skin_diffuse_big
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_big_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_big_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_NVIDIA);
       PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
 	}
 }

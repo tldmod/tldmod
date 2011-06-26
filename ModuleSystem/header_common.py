@@ -38,15 +38,53 @@ tags_end            = 26
 
 # SUBFACTIONS
 ############
+
+subfac_regular = 0  # the capital (Gondor or Rohan)
+
 # of Gondor
-subfac_regular = 0
 subfac_pelargir = 1
 subfac_dol_amroth = 2
 subfac_ethring = 3
 subfac_lossarnach = 4
 subfac_pinnath_gelin = 5
-subfac_rangers = 6
-subfac_blackroot = 7
+subfac_blackroot = 6
+subfac_rangers = 7
+
+# of Rohan
+subfac_east_emnet = 1
+subfac_west_emnet = 2
+subfac_eastfold = 3
+subfac_westfold = 4
+subfac_hornburg = 5
+
+### REGIONS -- just geographical regions...
+#########################
+region_gondor = 0  # one subregion for each fiefdom 0..7  (eg. region_gondor+subfac_dol_amroth).
+region_n_ithilien = 7
+region_s_ithilien = 8
+
+region_druadan_forest = 9
+region_firien_wood = 10
+region_anorien = 11
+region_rohan = 12
+# one subregion for each 6 fiefdom: 12..17
+region_the_wold = 18
+region_entwash = 19
+region_wetwang = 20
+region_dead_marshes = 21
+region_isengard = 22
+region_fangorn = 23
+region_brown_lands = 24
+region_misty_mountains = 25
+region_lorien = 26
+region_anduin_banks = 27
+region_n_mirkwood = 28
+region_s_mirkwood = 29
+region_above_mirkwook = 30
+region_lonely_mountains = 31
+region_mordor = 32
+
+
 
 opmask_register             =  tag_register       << op_num_value_bits
 opmask_variable             =  tag_variable       << op_num_value_bits

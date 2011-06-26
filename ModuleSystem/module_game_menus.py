@@ -40,7 +40,7 @@ tmp_menu_max_fac = 21
 tmp_menu_max_tier = 4
 tmp_max_troop = 858 # troop_end
 
-magic_items = range(itm_ent_water, itm_witchking_helmet) + [itm_lembas]# first non magin item
+magic_items = [itm_lembas] + [itm_pony] +  [itm_warg_reward] + range(itm_ent_water, itm_witchking_helmet)  # first non magic item
 
 city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
@@ -50,7 +50,7 @@ code_to_set_city_background = [
   (set_background_mesh, ":mesh"),
 ]
 
-# (a code that is used twice, so I put it here) -- mtarini
+# (a common code snippet that is used twice in the add troop cheat menu... ) -- mtarini
 code_to_set_search_string = [
   (set_background_mesh, "mesh_ui_default_menu_window"),
   (try_begin), (ge,"$cheat_menu_add_troop_search_fac", tmp_menu_max_fac+1), 
@@ -107,40 +107,42 @@ game_menus = [
  play their part. What part, however, remains to be seen... ",
     "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
-   (set_show_messages,0),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
 	
-	##        (troop_add_item, "trp_player","itm_horn",0),
+		(set_show_messages,0),
 	
-#	(call_script,"script_TLD_troop_banner_slot_init"),
-	(call_script,"script_reward_system_init"),
-	(call_script,"script_init_player_map_icons"),
-	#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
-	(assign, "$found_moria_entrance", 0),
+		#(call_script,"script_TLD_troop_banner_slot_init"),
+		(call_script,"script_reward_system_init"),
+		(call_script,"script_init_player_map_icons"),
+		#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
+		
+		# variables initializations
+		(assign, "$found_moria_entrance", 0),
+		(assign, "$current_player_region", -1),
 
-	#  add a little money
-	(troop_add_gold, "trp_player", 50),
+		#  add a little money
+		(troop_add_gold, "trp_player", 50),
 	
-	# relocate party next to own capital
-	(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
-	(try_for_range, ":i", towns_begin, towns_end),
-		(gt, "$players_subkingdom", 0), # player has a subfaction
-		(party_slot_eq, ":i", slot_party_subfaction, "$players_subkingdom"), # i this is the  capital of the subfaction
-		(assign, reg20, ":i"), 
-		(assign, ":i", towns_end),  # break
-	(try_end),
-	(party_relocate_near_party, "p_main_party", reg20, 8),
+		# relocate party next to own capital
+		(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
+		(try_for_range, ":i", towns_begin, towns_end),
+			(gt, "$players_subkingdom", 0), # player has a subfaction
+			(party_slot_eq, ":i", slot_party_subfaction, "$players_subkingdom"), # i this is the  capital of the subfaction
+			(assign, reg20, ":i"), 
+			(assign, ":i", towns_end),  # break
+		(try_end),
+		(party_relocate_near_party, "p_main_party", reg20, 8),
 	
-	# initialization of "search troop" menu (only once)  mtarini
-	(assign, "$cheat_menu_add_troop_search_race", len(race_names)),  # any race
-	(assign, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1), # any tier
-	(assign, "$cheat_menu_add_troop_search_fac", "$players_kingdom"), # player's kingdo
-	(assign, "$cheat_menu_add_troop_search_hero", 0),	
+		# initialization of "search troop" menu (only once)  mtarini
+		(assign, "$cheat_menu_add_troop_search_race", len(race_names)),  # any race
+		(assign, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1), # any tier
+		(assign, "$cheat_menu_add_troop_search_fac", "$players_kingdom"), # player's kingdom
+		(assign, "$cheat_menu_add_troop_search_hero", 0),	
 
-	(assign, "$cheat_imposed_quest", -1),	
+		(assign, "$cheat_imposed_quest", -1),	
 
-	(call_script, "script_determine_what_player_looks_like"), # for drawings
-	(set_show_messages,1),
+		(call_script, "script_determine_what_player_looks_like"), # for drawings meshes
+		(set_show_messages,1),
 	(try_end),
     (call_script, "script_update_troop_notes", "trp_player"), #MV fixes
     (call_script, "script_update_faction_notes", "$players_kingdom"),
@@ -153,6 +155,8 @@ game_menus = [
         (party_set_morale, "p_main_party", reg0),
 		# TEMP: a spear for everyone
 		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
+		##   (troop_add_item, "trp_player","itm_horn",0),
+
 		
 		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
@@ -1533,11 +1537,17 @@ game_menus = [
   ),
 
   ("camp",0,
-   "You are in (insert-place-here). What do you want to do?",
+   "You are in {s1}.^^What do you want to do?",
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
-     #(set_background_mesh, "mesh_pic_camp"),
-	 (set_background_mesh, "mesh_ui_default_menu_window"),
+	  (party_get_position, pos1, "p_main_party"),
+	  (party_get_current_terrain, ":tt","p_main_party"),
+	  (call_script,"script_get_region_of_pos1", ":tt"),
+	  (assign, "$current_player_region", reg1),
+	  
+	  (store_add, reg2, reg1, str_fullname_region_begin),
+	  (str_store_string,s1,reg2),
+	  (set_background_mesh, "mesh_ui_default_menu_window"),
     ],
 	[
 	("camp_scene"      ,[],"Walk around."  ,[
@@ -3012,10 +3022,12 @@ game_menus = [
   
   ################################ CHEAT/MODDING MENU START ########################################
   # free magic item cheat (mtarini)   
-  ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],[
-    ("mi",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) for x in magic_items ]+[
-	("cheat_free_magic_item_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
-  ]),
+  ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
+   [ ("cheat_free_magic_item_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]), ]
+   +
+   [ ("mi",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) 
+	for x in magic_items ]
+  ),
   
   # choose quest cheat (mtarini)
   ("cheat_impose_quest",0,"Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)","none",[

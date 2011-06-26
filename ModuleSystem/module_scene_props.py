@@ -1719,11 +1719,12 @@ scene_props = [
   
 ("isen_isengard_throne", 0, "isengard_throne", "bo_isengard_throne", []),
   
-("dead_marshes_a", 0, "dead_a", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
+("dead_marshes_a", 0, "dead_a", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
 ("dead_marshes_b", 0, "dead_b", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
-("dead_marshes_c", 0, "dead_c", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_lamp_fire"         ),])]),
-("dead_marshes_d", 0, "dead_d", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_fire_glow_1"       ),])]),
-("dead_marshes_e", 0, "dead_e", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light"      ),])]),
+("dead_marshes_c", 0, "dead_c", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
+("dead_marshes_d", 0, "dead_d", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
+("dead_marshes_e", 0, "dead_e", "0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new, "psys_candle_light_small"),])]),
+
 ("isen_wood_construction_b", 0, "isen_wood_construction_b", "0", []),
 ("prop_cage_rusty", 0, "prop_cage_rusty", "0", []),
 ("wagon_c", 0, "wagon_c", "0", []),
@@ -1993,6 +1994,9 @@ scene_props = [
 ("horse_gondor_lam_horse",sokf_invisible,"lam_warhorse01","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_gondor_lam_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("horse_pony",sokf_invisible,"pony","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_pony", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
 ("harad_oliphant",sokf_invisible,"oliphant","bo_oliphant", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_oliphant", 0),

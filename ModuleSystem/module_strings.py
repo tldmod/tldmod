@@ -2751,4 +2751,96 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("tld_erebor_dungeon","The smell of death surrounds this place. I'd better be careful."),
 ("tld_spear_hit","Ouch!"),    
 
+
+("fullname_region_unknown", "[unkonwn region]"), # -1
+
+("fullname_region_gondor", "Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor"), #0
+("fullname_region_subfac_pelargir", "the Fiefdom of Lebennin, part of the Realm of Gondor"), # pelargir
+("fullname_region_subfac_dol_amroth", "Belfalas, the costal region in the Shouth of Gondor"), #subfac_dol_amroth
+("fullname_region_subfac_ethring", "Ringló Vale, a land part of the Realm of Gondor"), # subfac_ethring
+("fullname_region_subfac_lossarnach", "the Fiefdom of Lossarnach, also known as the Vale of Flowers, part of the Realm of Gondor"),
+("fullname_region_subfac_pinnath_gelin", "Pinnath Gelin (the Green Hills), a region of the Real of Gondor"),
+("fullname_region_subfac_blackroot", "the Fiefdom of Lamedon, part of the Realm of Gondor"), # subfac_blackroot
+("fullname_region_n_ithilien", "North Ithilien, easternmost province of the Realm of Gondor"),
+("fullname_region_s_ithilien", "South Ithilien, easternmost province of the Realm of Gondor"),
+
+("fullname_region_druadan_forest", "Drúadan Forest, the Gondor Forest of the Drúedain"), #9
+("fullname_region_firien_wood","Firien wood, the Whispering Wood, a Gondor forest of oaks"), #10
+
+("fullname_region_anorien", "Anórien, the Sun-land, a valley between the White Mountains and the Aduin river"), #11
+
+("fullname_region_rohan0", "the valley of Harrowdale, the region around Edoras, the Capital of Rohan, the Riddermark"), 
+("fullname_region_rohan1", "the Eastemnet, a part of Rohan, the Riddermark"), 
+("fullname_region_rohan2", "the Westemnet, a part of Rohan, the Riddermark"), 
+("fullname_region_rohan3", "the Eastfold, a part of Rohan, the Riddermark"), 
+("fullname_region_rohan4", "the Westfold, a part of Rohan, the Riddermark"), 
+("fullname_region_rohan5", "Helm's Deep, a valley of the White Mountains, in Rohan"), 
+("fullname_region_the_wold", "the Wold, the Northeastern area of the Riddermark of Rohan"), # region_the_wold
+
+("fullname_region_rohan0", "the Mouths of the Entwash, where the Rohan river Entwash joins the Aduin"), # region_entwash = 19
+("fullname_region_wetwang", "the Wetwang, the swamps of Nindalf"), # region_wetwang = 20
+
+("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagorlad, now a cursed place"), #region_dead_marshes = 21
+
+("fullname_region_isengard", "the plains around Isengard" ),#region_isengard = 22
+
+("fullname_region_fangorn", "the Fangorn forest, where trees are said to talk, known as Entwood." ),#region_fangorn
+
+("fullname_region_brown_lands", "The Brown Lands, covering the expanse between the Emyn Muil and Mirkwood" ),#region_brown_lands = 24
+("fullname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 25
+("fullname_region_lorien", "Lothlórien, the forest of the Sindar and Ñoldor elves, where the golden Marrons grow" ),#region_lorien = 26
+("fullname_region_anduin_banks", "the valley of Aduin, between Misty Mountains and Mirkwook" ),#region_anduin_banks = 27 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 28
+("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by several strange creatures" ),#region_s_mirkwood = 29
+("fullname_region_above_mirkwook", "the area between Mirkwood and the Lonely Mountains in the North" ),#region_above_mirkwook = 30  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_lonely_mountains", "the foot of Lonely Mountains, where Dwarves dwell" ),#region_lonely_mountains = 31
+("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 32
+
+
+
+("shortname_region_unknown", "[unkonwn region]"), # -1
+
+("shortname_region_gondor", "Pelennor Fields"), #0
+("shortname_region_subfac_pelargir", "Fiefdom of Lebennin"), # pelargir
+("shortname_region_subfac_dol_amroth", "Belfalas"), #subfac_dol_amroth
+("shortname_region_subfac_ethring", "Ringló Vale"), # subfac_ethring
+("shortname_region_subfac_lossarnach", "Fiefdom of Lossarnach"),
+("shortname_region_subfac_pinnath_gelin", "region of Pinnath Gelin"),
+("shortname_region_subfac_blackroot", "Fiefdom of Lamedon"), # subfac_blackroot
+("shortname_region_n_ithilien", "North Ithilien"),
+("shortname_region_s_ithilien", "South Ithilien"),
+
+("shortname_region_druadan_forest", "Drúadan Forest"), #9
+("shortname_region_firien_wood","Firien wood"), #10
+
+("shortname_region_anorien", "Anórien"), #11
+
+("shortname_region_rohan0", "the valley of Harrowdale"), 
+("shortname_region_rohan1", "Eastemnet"), 
+("shortname_region_rohan2", "Westemnet"), 
+("shortname_region_rohan3", "Eastfold"), 
+("shortname_region_rohan4", "Westfold"), 
+("shortname_region_rohan5", "Helm's Deep"), 
+("shortname_region_the_wold", "the Wold"), # region_the_wold
+
+("shortname_region_rohan0", "the Mouths of the Entwash"), # region_entwash = 19
+("shortname_region_wetwang", "the Wetwang"), # region_wetwang = 20
+
+("shortname_region_dead_marshes", "the Dead Marshes"), #region_dead_marshes = 21
+
+("shortname_region_isengard", "plains around Isengard" ),#region_isengard = 22
+
+("shortname_region_fangorn", "Fangorn" ),#region_fangorn
+
+("shortname_region_brown_lands", "The Brown Lands" ),#region_brown_lands = 24
+("shortname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 25
+("shortname_region_lorien ", "Lorien" ),#region_lorien = 26
+("shortname_region_anduin_banks ", "the valley of Aduin" ),#region_anduin_banks = 27
+("shortname_region_n_mirkwood ", "North Mirkwood" ),#region_n_mirkwood = 28
+("shortname_region_s_mirkwood ", "South Mirkwood" ),#region_s_mirkwood = 29
+("shortname_region_above_mirkwook", "North of Mirkwood" ),#region_above_mirkwook = 30
+("shortname_region_lonely_mountains", "foot of Lonely Mountains" ),#region_lonely_mountains = 31
+("shortname_region_mordor", "the Land of Mordor" ),#region_mordor = 32
+
+
 ]

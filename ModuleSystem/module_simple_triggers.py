@@ -205,6 +205,41 @@ simple_triggers = [
       (party_set_morale, "p_main_party", ":cur_morale"),
     ]),
   
+  # keep track of main party region ("$current_player_region"), 
+  # and display log messages keey player informed of what region is he in,   (mtarini)
+  (0.5,[
+    (party_get_position, pos1, "p_main_party"),
+	(party_get_current_terrain, ":tt","p_main_party"),
+	(call_script,"script_get_region_of_pos1", ":tt"),
+	(assign, ":new_region", reg1),
+	(neq, "$current_player_region", ":new_region"), # region change!
+	
+	(try_begin), 
+		# regions without a clear name
+		(this_or_next|eq, ":new_region", region_above_mirkwook), 
+		(this_or_next|eq, ":new_region", region_anduin_banks), 
+		(eq,":new_region",-1),
+		
+		(try_begin),
+			(gt, "$current_player_region", -1),
+			(store_add, reg2, str_shortname_region_begin , "$current_player_region"),
+			(str_store_string,s1,reg2),
+			(display_log_message, "@you have left {s1}"),
+		(try_end),
+    (else_try),
+		(store_add, reg2, str_shortname_region_begin, ":new_region"),
+		(str_store_string,s1,reg2),
+		(call_script, "script_region_get_faction", ":new_region"),
+		(try_begin), 
+			(gt, reg1, -1),
+			(str_store_faction_name, s2, reg1),
+			(display_log_message, "@you are entering {s1} ({s2})"),
+		(else_try),
+			(display_log_message, "@you are entering {s1}"),
+		(try_end),
+	(try_end),
+	(assign, "$current_player_region", ":new_region"),	
+  ]),
 
 #Party AI: pruning some of the prisoners in each center (once a week)
 (24*7,[(try_for_range, ":center_no", centers_begin, centers_end),

@@ -1,4 +1,4 @@
-902
+905
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -680,6 +680,9 @@ qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_rui
 qstr_You_have_found_the_s You_have_found_the_sorcerer!
 qstr_Kill_him_quickly_bef Kill_him_quickly_before_he_escapes!
 qstr_Breaking_camp... Breaking_camp...
+qstr_you_have_left_{s1} you_have_left_{s1}
+qstr_you_are_entering_{s1 you_are_entering_{s1}_({s2})
+qstr_you_are_entering_{s1} you_are_entering_{s1}
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_{reg1}_{s1}_{reg2?ha {reg1}_{s1}_{reg2?have:has}_escaped_from_your_party_during_the_night.

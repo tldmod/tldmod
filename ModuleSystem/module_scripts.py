@@ -10534,6 +10534,88 @@ scripts = [
   ]),
   
 
+  # regions... put results in reg1 (mtarini)
+  # Input: arg1 = terrain type
+  ("get_region_of_pos1", [
+	(store_script_param_1, ":terrain_type"),
+	
+	(position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	 
+	#(set_fixed_point_multiplier,100.0),(assign, reg5,":x"),(assign, reg6,":y"),(convert_to_fixed_point,reg5),(convert_to_fixed_point,reg6),(display_message,"@you are in ({reg5},{reg6})..."),
+	 
+	(assign, reg1, -1),
+	 
+	(try_begin),
+		# in mordor?
+		(is_between, ":x", -20800, -7784 ),(is_between, ":y", -3190, 8500), 
+		(assign, reg1, region_mordor),
+	(else_try),		
+		# dead marshes?
+		(ge, ":x", -6800), (ge, ":y", -4900),  (store_add,":h",":y",":x"), (lt, ":h", -8000),
+		(eq, ":terrain_type", rt_swamp),
+		(assign, reg1, region_dead_marshes),
+	(else_try),
+		# in ithilien (north or south)?
+		(is_between, ":x", -7084, -5890 ),(is_between, ":y", -2243, 6500), 
+		(try_begin),(ge,":y",2143),
+		 	(assign, reg1, region_s_ithilien),
+		(else_try),
+		 	(assign, reg1, region_n_ithilien),
+		(try_end),
+	(else_try),
+		# entwash or wetwand
+		(position_set_x,pos20,-3710),(position_set_y,pos20,-1570),(position_set_z,pos20,0.0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1900),
+		(try_begin),(ge,":x",-3779),
+			(assign, reg1, region_entwash),
+		(else_try),		
+			(assign, reg1, region_wetwang),
+		(try_end),
+	(else_try),
+		# lorien forest
+		(is_between, ":x", -1200, 2910),(is_between, ":y", -14100, -12143), 
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_lorien),
+	(else_try),
+		(position_set_x,pos20,-5306),(position_set_y,pos20,+2132),(position_set_z,pos20,0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
+		(assign, reg1, region_gondor), #plennor fields
+	(else_try),		
+		# determine on which side of the white mountains...
+		(store_mul,":k",":x",0.3684), (val_add,":k",":y"), 
+		(ge,":k",778.941),
+	    # or, south of white mountains
+		(assign, reg1, region_gondor+1),
+	(else_try),
+	    # north of white mountains...
+		(assign, reg1, region_rohan),
+	(try_end),
+	 
+  ]),
+  
+  # given a region, it return (in reg1) the "default faction" ruling in that region, if any (else, -1)   (matrini)
+  ("region_get_faction", [
+	(store_script_param_1, ":region_id"),
+	(try_begin), (is_between,":region_id", region_gondor, region_rohan), 
+		(assign, reg1, fac_gondor),
+	(else_try), (is_between, ":region_id", 	region_rohan, region_entwash),
+		(assign, reg1, fac_rohan),
+	(else_try), (eq, ":region_id", 	region_isengard),
+		(assign, reg1, fac_isengard),
+	(else_try), (eq, ":region_id", 	region_lorien),
+		(assign, reg1, fac_lorien),
+	(else_try), (eq, ":region_id", 	region_n_mirkwood),
+		(assign, reg1, fac_woodelf),
+	(else_try), (eq, ":region_id", 	region_s_mirkwood),
+		(assign, reg1, fac_guldur),
+	(else_try), (eq, ":region_id", 	region_mordor),
+		(assign, reg1, fac_mordor),
+	(else_try),
+		(assign, reg1, -1),
+	(try_end)
+  ]),
+
+  
   # script_setup_random_scene
   # Input: arg1 = center_no, arg2 = mission_template_no
   # Output: none
@@ -10580,7 +10662,7 @@ scripts = [
 #        (store_random_in_range, ":terrain", 0, 4), #randomness off
         (try_begin),
 		   (eq, ":terrain_type", rt_steppe),
-		   (assign, ":scene_to_use", "scn_random_scene_rohan_steppe"),           (display_message,"@SCENE: rohan steppe"),
+		   (assign, ":scene_to_use", "scn_random_scene_rohan_steppe"),     (display_message,"@SCENE: rohan steppe"),
 		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",":radius"),
         (else_try),
 		   (eq, ":terrain_type", rt_plain),
