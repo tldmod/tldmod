@@ -1035,17 +1035,17 @@ advcamps_end   = centers_end
 scenes_begin = "scn_minas_tirith_center"
 scenes_end = "scn_castle_1_exterior"
 
-spawn_points_begin = "p_zendar"
-spawn_points_end = "p_spawn_points_end"
+#spawn_points_begin = "p_town_minas_tirith"
+#spawn_points_end = "p_spawn_points_end"
 
 regular_troops_begin       = "trp_novice_fighter"
-regular_troops_end         = "trp_tournament_master"
+regular_troops_end         = "trp_Ramun_the_slave_trader"
 
-swadian_merc_parties_begin = "p_town_1_mercs"
-swadian_merc_parties_end   = "p_town_8_mercs"
+#swadian_merc_parties_begin = "p_town_1_mercs"
+#swadian_merc_parties_end   = "p_town_8_mercs"
 
-vaegir_merc_parties_begin  = "p_town_8_mercs"
-vaegir_merc_parties_end    = "p_zendar"
+#vaegir_merc_parties_begin  = "p_town_8_mercs"
+#vaegir_merc_parties_end    = "p_p_town_minas_tirith"
 
 
 # arena_masters_begin    = "trp_brigand_arena_master"
@@ -1168,7 +1168,7 @@ num_merchandise_goods = 3 #MV: was 40
 
 #num_max_river_pirates = 25
 #num_max_zendar_peasants = 25
-num_max_zendar_manhunters = 10
+#num_max_zendar_manhunters = 10
 
 #num_max_dp_bandits = 10
 #num_max_refugees = 10
@@ -1504,9 +1504,10 @@ center_list = [
 	#     [map banner], [shop: horses,1h,2h,pole,arrows,bolts,shield,bow,crossbow,thrown,goods,head,body,foot,hand],[arena:team#,size 123],
 	#     strength income, garrison limit, destroy-on-capture flag, siegability flag) 
     # -1 if no such subscene or npc
-	("p_zendar", ["scn_zendar_center", -1, -1,"scn_the_happy_boar","scn_zendar_arena",-1,"mesh_ui_default_menu_window" ],
-	    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_town_1_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"],
-		[0],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_never),
+	
+	#("p_zendar", ["scn_zendar_center", -1, -1,"scn_the_happy_boar","scn_zendar_arena",-1,"mesh_ui_default_menu_window" ],
+	#    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_town_1_horse_merchant", "trp_elder", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"],
+	#	[0],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_never),
 	("p_town_minas_tirith", ["scn_minas_tirith_center", "scn_minas_tirith_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_minas_tirith_siege","mesh_town_minas_tirith"],
 	    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_town_1_horse_merchant", "trp_elder_mtirith", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"], 
 		["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 0, tld_siegable_capital),
@@ -1758,8 +1759,13 @@ center_list = [
 	    [-1, "trp_town_36_weaponsmith", "trp_town_36_horse_merchant", -1, "pt_beorn_reinf_a", "trp_beorn_lord", "trp_beorning_carrock_berserker", "trp_beorning_sentinel", "trp_beorning_warrior", "trp_beorning_tolltacker"], 
 		["icon_mfc_northmen"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], 0, garrison_limit_med, 1, tld_siegable_always),
 ]
+
 # evil camps that will appear only when War starts
-centers_disabled_at_start =	["p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp","p_town_dunland_camp","p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_ne_outpost", "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_mirkwood_outpost"]		 
+centers_disabled_at_start =	[
+  "p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp",#"p_town_dunland_camp",
+  "p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_ne_outpost", 
+  "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_mirkwood_outpost"
+]		 
 #### end of center descriptions
 
 # forest tree seeding. 1-scene prop to use, 2-number of times to repeat, 3-displacement vector, 4-vector rotation angle, then repeat with other scene prop 

@@ -63,7 +63,7 @@ scenes = [
 
   #("salt_mine"    ,sf_generate,"none", "none", (-200,-200),(200,200),-100,"0x2a07b23200025896000023ee00007f9c000022a8", [],[], "outer_terrain_steppe"),
   ("novice_ground",sf_indoors,"training_house_a", "bo_training_house_a", (-100,-100),(100,100),-100,"0",    [],[]),
-  ("zendar_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",    [],[], "outer_terrain_plain"),
+  #"zendar_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",    [],[], "outer_terrain_plain"),
   ("dhorak_keep"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x33a7946000028ca300007f4a0000479400161992",    ["exit"],[]),
   ("reserved4"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"28791",    [],[]),
   ("reserved5"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"117828",    [],[]),
@@ -93,9 +93,9 @@ scenes = [
   ("training_ground_ranged_melee_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000012247dcba0005194a000041ef00005ae8000050af",[],[], "outer_terrain_steppe"),
   ("training_ground_ranged_melee_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000001324a9cba0005194a000041ef00005ae800003c55",[],[], "outer_terrain_plain"),
 
-  ("zendar_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x300bc5430001e0780000448a0000049f00007932", ["the_happy_boar","","zendar_merchant"],["bonus_chest_2"], "outer_terrain_plain"),
-  ("the_happy_boar" ,sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",   ["zendar_center"],["zendar_chest"]),
-  ("zendar_merchant",sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",  [],[]),
+  #("zendar_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x300bc5430001e0780000448a0000049f00007932", ["the_happy_boar","","zendar_merchant"],["bonus_chest_2"], "outer_terrain_plain"),
+  #("the_happy_boar" ,sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",   ["zendar_center"],["zendar_chest"]),
+  #("zendar_merchant",sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",  [],[]),
 
 # city centers
   ("minas_tirith_center"    ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
@@ -170,7 +170,7 @@ scenes = [
   ("mordor_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
   ("elf_prison"   ,sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
 
-  ("zendar_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
+  #("zendar_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("gondor_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_plain"),
   ("rohan_arena",sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000001324a9cba0005194a000041ef00005ae800003c55",[],[], "outer_terrain_rohan"),
   ("dale_arena",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_rohan"),

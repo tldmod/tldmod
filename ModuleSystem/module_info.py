@@ -3,4 +3,4 @@
 # Make sure you use forward slashes (/) and NOT backward slashes (\)
 
 
-export_dir = "E:/Jeux/mount&blade/Modules/TLD/"
+export_dir = "../"

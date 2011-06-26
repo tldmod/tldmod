@@ -1981,7 +1981,7 @@ scripts = [
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_ship       ),(jump_to_menu, "mnu_ship_reembark"),
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_village    ),(jump_to_menu, "mnu_village"),
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
-          (else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
+          #(else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
           #(else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
           #(else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
           (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
@@ -13264,7 +13264,7 @@ scripts = [
           (set_visitors, 28, ":bandit_troop", ":spawn_amount"),
           (val_add, "$num_center_bandits",  ":spawn_amount"),
         (try_end),
-        (assign, "$town_entered", 1),
+        #(assign, "$town_entered", 1),
         (assign, "$all_doors_locked", 1),
       (try_end),
       

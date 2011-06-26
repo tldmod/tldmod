@@ -156,7 +156,6 @@ all_doors_locked
 current_town
 entry_to_town_forbidden
 sneaked_into_town
-town_entered
 g_player_besiege_town
 cant_sneak_into_town
 castle_undefended

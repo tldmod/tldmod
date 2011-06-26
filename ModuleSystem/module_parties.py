@@ -68,7 +68,7 @@ parties = [
   # ] for x in range(150)) +  [
   
   ("town_merc_1","sargoth_mercs",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.9,-28.3),[]),
+  #("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.9,-28.3),[]),
 
 #TLD TOWNS
     # Gondor towns
