@@ -876,4 +876,5 @@ itm_corsair_trident = 874
 itm_crebain_reward = 875
 itm_miruvor_reward = 876
 itm_wheeled_cage = 877
-itm_witchking_helmet = 878
+itm_khamul_helm = 878
+itm_witchking_helmet = 879

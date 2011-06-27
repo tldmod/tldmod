@@ -92,8 +92,7 @@ items =[
 ["steppe_horse","Steppe_Horse",[("steppe_horse",0)],itp_type_horse|itp_shop,0,92,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(35)|horse_maneuver(41)|horse_charge(7),imodbits_horse_basic|0],
 ["courser","Courser",[("courser",0)],itp_type_horse|itp_shop,0,323,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(43)|horse_maneuver(37)|horse_charge(11),imodbits_horse_basic|imodbit_champion],
 ["hunter","Hunter",[("hunting_horse",0)],itp_type_horse|itp_shop,0,434,hit_points(90)|body_armor(20)|difficulty(3)|horse_speed(36)|horse_maneuver(34)|horse_charge(18),imodbits_horse_basic|imodbit_champion],
-#ARNOR MOUNTS########
-["pony","Pony",[("pony",0)],itp_type_horse|itp_unique,0,434,hit_points(40)|body_armor(5)|difficulty(0)|horse_speed(24)|horse_maneuver(34)|horse_charge(3),imodbits_horse_basic|imodbit_champion],
+["pony","Pony",[("pony",0)],itp_type_horse|itp_shop,0,300,hit_points(30)|body_armor(0)|difficulty(0)|horse_speed(30)|horse_maneuver(37)|horse_charge(1),imodbits_horse_basic|imodbits_horse_good],
 #ARNOR MOUNTS########
 ["arnor_warhorse","Arnorian_Warhorse",[("arnor_mail",0)],itp_type_horse|itp_shop,0,1500,hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(36)|horse_maneuver(34)|horse_charge(30),imodbits_horse_basic|imodbit_champion],
 ["dunedain_warhorse","Dunedain_Warhorse",[("arnor_leather",0)],itp_type_horse|itp_shop,0,1500,hit_points(140)|body_armor(65)|difficulty(4)|horse_speed(35)|horse_maneuver(32)|horse_charge(35),imodbits_horse_basic|imodbit_champion],
@@ -139,7 +138,7 @@ items =[
 ["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|0],
 ["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|0],
 ["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(150)|body_armor(40)|difficulty(5)|horse_speed(30)|horse_maneuver(60)|horse_charge(60),imodbits_horse_basic|imodbit_champion],
-["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
+["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
 #first non WARG item: troll_feet_boots (see in module_constants)
 
 #TROLL "ITEMS"#########
@@ -190,7 +189,7 @@ items =[
 ["corsair_arrows","Corsair_Arrows",[("corsair_arrow",0),("corsair_arrow_flying",ixmesh_flying_ammo),("corsair_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,350,weight(3)|thrust_damage(2,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
 ["ithilien_arrows","Ithilien_Arrows",[("ilithien_arrow",0),("ilithien_arrow_flying",ixmesh_flying_ammo),("ithilien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,350,weight(3)|thrust_damage(3,cut)|max_ammo(29)|weapon_length(91),imodbits_missile],
 ["woodelf_arrows","Woodelf_Arrows",[("mirkwood_arrow",0),("mirkwood_arrow_flying",ixmesh_flying_ammo),("mirkwood_quiver_new",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
-["elven_arrows","Elven_Arrows",[("white_elf_arrow",0),("white_elf_arrow_flying",ixmesh_flying_ammo),("loth_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
+["elven_arrows","Elven_Arrows",[("white_elf_arrow",0),("white_elf_arrow_flying",ixmesh_flying_ammo),("lothlorien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,350,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_missile],
 #["loth_arrows"    ,"Ghaladrim_Arrows",[("white_elf_arrow",0),("flying_missile",ixmesh_flying_ammo),("lothlorien_quiver", ixmesh_carry)],itp_type_arrows|itp_shop, itcf_carry_quiver_back_right ,350,weight(3.0)|abundance(50) |weapon_length(91)|thrust_damage(3,    pierce)|max_ammo(29),imodbits_missile],
 ["orc_hook_arrow","Orc_Hook_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(1,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
 ["isengard_arrow","Isengard_Arrows",[("isengard_arrow",0),("isengard_arrow_flying",ixmesh_flying_ammo),("isengard_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,72,weight(3)|thrust_damage(2,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile],
@@ -318,7 +317,7 @@ items =[
 ["riv_helm_b","Rivendell_Helm",[("rivendellarcherhelmet",0)],itp_type_head_armor|itp_shop,0,980,weight(1)|head_armor(40)|difficulty(0),imodbits_plate],
 ["riv_helm_c","Rivendell_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,980,weight(1.2)|head_armor(55)|difficulty(0),imodbits_plate],
 ["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_type_head_armor|0,0,3000,weight(1.2)|head_armor(65)|difficulty(0),imodbits_plate],
-["riv_tiara","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
+["riv_tiara","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,2755,weight(2.5)|head_armor(60)|difficulty(0),0],
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,318,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(85)|weapon_length(82),imodbits_shield,],
 ["riv_shield_b","Rivendell_Shield",[("riv_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,418,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
@@ -1216,9 +1215,10 @@ items =[
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
 ["explosive_reward","Isengard_Mine",[("reward_isenmine",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_cutting_spear|itcf_carry_axe_back,2000,weight(4.5)|difficulty(0)|spd_rtng(94)|weapon_length(166)|swing_damage(33,pierce)|thrust_damage(40,pierce),imodbits_polearm],
-["crebain_reward","Isengard_Crebain",[("reward_cebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
+["crebain_reward","Isengard_Crebain",[("reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
-["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),imodbits_plate],
+["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),0],
+["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ]

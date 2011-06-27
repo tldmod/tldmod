@@ -1,5 +1,5 @@
 itemsfile version 2
-879
+880
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -93,7 +93,7 @@ itemsfile version 2
  itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 434 110595670016 0.000000 100 0 20 0 3 90 34 36 0 0 18 0
 0
 
- itm_pony Pony Pony 1  pony 0  4097 0 434 110595670016 0.000000 100 0 5 0 0 40 34 24 0 0 3 0
+ itm_pony Pony Pony 1  pony 0  65537 0 300 41876193280 0.000000 100 0 0 0 0 30 37 30 0 0 1 0
 0
 
  itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_mail 0  65537 0 1500 110595670016 0.000000 100 0 52 0 4 135 34 36 0 0 30 0
@@ -213,7 +213,7 @@ itemsfile version 2
  itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 110595670016 0.000000 100 0 40 0 5 150 60 30 0 0 60 0
 0
 
- itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 400 41876193280 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
+ itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_3A 0  4097 0 400 41876193280 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
  itm_troll_feet_boots Troll_Feet Troll_Feet 1  troll_feet 0  4110 0 500 0 58.000000 100 40 55 55 40 0 0 0 0 0 0 0
@@ -300,7 +300,7 @@ itemsfile version 2
  itm_woodelf_arrows Woodelf_Arrows Woodelf_Arrows 3  mirkwood_arrow 0  mirkwood_arrow_flying 2305843009213693952  mirkwood_quiver_new 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
- itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  white_elf_arrow_flying 2305843009213693952  loth_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
+ itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  white_elf_arrow_flying 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 350 0 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
  itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 0 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
@@ -2640,13 +2640,16 @@ itemsfile version 2
  itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 4222129146954496 2000 0 4.500000 100 0 0 0 0 33792 94 0 166 0 296 289
 0
 
- itm_crebain_reward Isengard_Crebain Isengard_Crebain 1  reward_cebain 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_crebain_reward Isengard_Crebain Isengard_Crebain 1  reward_crebain 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_miruvor_reward Miruvor_Flask Miruvor_Flask 1  reward_miruvor 0  4107 0 1000 0 5.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_wheeled_cage Giant_wheeled_cage Giant_wheeled_cage 1  wheeled_cage 0  4107 0 1000 0 58.000000 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0

@@ -8,11 +8,11 @@ scn_conversation_scene conversation_scene 0 encounter_spot bo_encounter_spot -40
   0 
   0 
  0 
-scn_random_scene_rohan_steppe random_scene_rohan_steppe 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
+scn_random_scene_rohan_steppe random_scene_rohan_steppe 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
   0 
   0 
  outer_terrain_rohan 
-scn_random_scene_rohan_steppe_small random_scene_rohan_steppe_small 1792 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
+scn_random_scene_rohan_steppe_small random_scene_rohan_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_rohan 

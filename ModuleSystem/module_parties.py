@@ -206,10 +206,10 @@ parties = [
   ("legend_fangorn","Fangorn Entmoot",icon_tree_low|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[],180),
   
 # central positions in theaters used to calculate advance camp positions
-  ("theater_SE_center", "SE Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.14,21.12),[]), # West of West Osgiliath
-  ("theater_SW_center", "SW Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.36,-35.32),[]), # Nortwest of East Emnet
+  ("theater_SE_center", "SE Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53,21),[]), # West of West Osgiliath
+  ("theater_SW_center", "SW Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2,-43),[]), # Nortwest of East Emnet
   ("theater_C_center", "C Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.7,-194.0),[]), # Beorn's House
+  ("theater_N_center", "N Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19,-181),[]), # Beorn's House
 
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),
@@ -290,4 +290,21 @@ parties = [
   
   ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
 
+  # anorien places
+  ("camplace_S1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
+  ("camplace_S2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,0.75),[]),
+  ("camplace_S3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.41,0.88),[]),
+  ("camplace_S4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7,9.2),[]),
+  # east-from-fangorn places
+  ("camplace_M1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.6,-93),[]),
+  ("camplace_M2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
+  ("camplace_M3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.7,-72),[]),
+  ("camplace_M4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
+  # south-from-beorn places
+  ("camplace_N1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -8,-171),[]),
+  ("camplace_N2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
+  ("camplace_N3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18,-165),[]),
+  ("camplace_N4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.7,-166),[]),
+
+  
   ]
