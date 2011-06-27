@@ -234,3 +234,5 @@ scn_tld_sorcerer_forest_b = 232
 scn_tld_sorcerer_forest_c = 233
 scn_moria_secret_entry = 234
 scn_moria_deep_mines = 235
+scn_advcamp_good = 236
+scn_advcamp_bad = 237

@@ -1,5 +1,5 @@
 scenesfile version 1
- 236
+ 238
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -944,3 +944,11 @@ scn_moria_deep_mines moria_deep_mines 1280 none none 0.000000 0.000000 200.00000
   0 
   0 
  outer_terrain_plain 
+scn_advcamp_good advcamp_good 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_bad advcamp_bad 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
