@@ -1,4 +1,4 @@
-from header_common import *
+from header_common import *	
 from header_skills import *
 
 ####################################################################################################################
@@ -63,16 +63,16 @@ skills = [
   ("reserved_8","Reserved Skill 8",sf_base_att_int|sf_inactive,10,"This is a reserved skill."), 
   ("looting","Looting",sf_base_att_agi|sf_effects_party,10,"This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)"), 
   ("horse_archery","Mounted Archery",sf_base_att_agi,10,"Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)"),
-  ("riding","Riding",sf_base_att_agi,10,"Enables you to ride horses of higher difficulty levels and increases your riding speed and manuever. (Personal skill)"),
-  ("athletics","Athletics",sf_base_att_agi,10,"Improves your running speed. (Personal skill)"),
-  ("shield","Shield",sf_base_att_agi,10,"Reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)"),
-  ("weapon_master","Weapon Master",sf_base_att_agi,10,"Makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)"),
+  ("riding","Riding",sf_base_att_agi,10,"enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)"),
+  ("athletics","Athletics",sf_base_att_agi,10,"improves your running speed. (Personal skill)"),
+  ("shield","Shield",sf_base_att_agi,10,"reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)"),
+  ("weapon_master","Weapon Master",sf_base_att_agi,10,"makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)"),
   ("reserved_9","Reserved Skill 9",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_10","Reserved Skill 10",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_11","Reserved Skill 11",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_12","Reserved Skill 12",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_13","Reserved Skill 13",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
-  ("power_draw","Power Draw",sf_base_att_str,10,"Lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)"),
+  ("power_draw","Power Draw",sf_base_att_str,10,"lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)"),
   ("power_throw","Power Throw",sf_base_att_str,10,"Each point to this skill increases throwing damage by 10%%. (Personal skill)"),
   ("power_strike","Power Strike",sf_base_att_str,10,"Each point to this skill increases melee damage by 8%%. (Personal skill)"),
   ("ironflesh","Ironflesh",sf_base_att_str,10,"Each point to this skill increases hit points by +2. (Personal skill)"), 

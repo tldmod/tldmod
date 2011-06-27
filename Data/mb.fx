@@ -808,10 +808,9 @@ VS_OUTPUT_FLORA vs_flora(uniform const int PcfMode, float4 vPosition : POSITION,
    float3 P = mul(matWorldView, vPosition); //position in view space
    
    Out.Tex0 = tc;
-//   Out.Color = vColor * vMaterialColor;
+	//Out.Color = vColor * vMaterialColor;
    Out.Color = vColor * (vAmbientColor + vSunColor * 0.06f); //add some sun color to simulate sun passing through leaves.
-   
-//   Out.Color = vColor * vMaterialColor * (vAmbientColor + vSunColor * 0.15f);
+	//Out.Color = vColor * vMaterialColor * (vAmbientColor + vSunColor * 0.15f);
    	//shadow mapping variables
 	Out.SunLight = (vSunColor * 0.34f)* vMaterialColor * vColor;
 
@@ -824,6 +823,25 @@ VS_OUTPUT_FLORA vs_flora(uniform const int PcfMode, float4 vPosition : POSITION,
 		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
 	}
 	//shadow mapping variables end
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+VS_OUTPUT_FLORA_NO_SHADOW vs_flora_no_shadow(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FLORA_NO_SHADOW Out = (VS_OUTPUT_FLORA_NO_SHADOW)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+   Out.Color = vColor * vMaterialColor;
    
    //apply fog
    float d = length(P);
@@ -858,25 +876,6 @@ PS_OUTPUT ps_flora(PS_INPUT_FLORA In, uniform const int PcfMode)
     Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
 	
     return Output;
-}
-
-VS_OUTPUT_FLORA_NO_SHADOW vs_flora_no_shadow(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
-{
-   VS_OUTPUT_FLORA_NO_SHADOW Out = (VS_OUTPUT_FLORA_NO_SHADOW)0;
-
-   Out.Pos = mul(matWorldViewProj, vPosition);
-   float4 vWorldPos = (float4)mul(matWorld,vPosition);
-   
-   float3 P = mul(matWorldView, vPosition); //position in view space
-   
-   Out.Tex0 = tc;
-   Out.Color = vColor * vMaterialColor;
-   
-   //apply fog
-   float d = length(P);
-   Out.Fog = get_fog_amount(d);
-
-   return Out;
 }
 
 PS_OUTPUT ps_flora_no_shadow(PS_INPUT_FLORA_NO_SHADOW In) 
@@ -4001,7 +4000,6 @@ VS_OUTPUT_FLORA vs_mtarini_windy_flora(uniform const int PcfMode, uniform const 
    return Out;
 }
 
-
 VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPosition : POSITION, float4 vColor : COLOR,  float2 tc : TEXCOORD0)
 {
    VS_OUTPUT_FLORA Out = (VS_OUTPUT_FLORA)0;
@@ -4012,7 +4010,8 @@ VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPositi
                     vPosition.xy;
    float t2 = time_var + dot( treePos , float2(6.5,4.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-   vPosition.xy += float2(0.00018,0.00018)*(vPosition.z+50.0)*windPhase*(windAmount+0.2)
+   vPosition.xy += float2(0.18,0.18) // *(vPosition.z+50.0)
+				    *windPhase*(windAmount+0.2)
                    *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
    
    Out.Pos = mul(matWorldViewProj, vPosition);
@@ -4053,8 +4052,10 @@ VS_OUTPUT_FLORA_NO_SHADOW vs_mtarini_windy_grass_no_shadow(float4 vPosition : PO
    float2 treePos = float2 (matWorld._m03, matWorld._m13) + vPosition.xy;
    float t2 = time_var + dot( treePos , float2(2.5,1.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-   vPosition.xy += float2(0.00018,0.00018)*(vPosition.z+50.0)*windPhase*(windAmount+0.2);
-	
+	vPosition.xy += float2(0.18,0.18) // *(vPosition.z+50.0)
+				    *windPhase*(windAmount+0.2)
+                   *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
+   	
 	
    Out.Pos = mul(matWorldViewProj, vPosition);
    float4 vWorldPos = (float4)mul(matWorld,vPosition);
@@ -4069,6 +4070,7 @@ VS_OUTPUT_FLORA_NO_SHADOW vs_mtarini_windy_grass_no_shadow(float4 vPosition : PO
    Out.Fog = get_fog_amount(d);
    
    Out.Color.a = min(1.0f,(1.0f - (d / 50.0f)) * 2.0f);
+   Out.Color.r = 1; Out.Color.g = Out.Color.b = 1.0-vColor.w;
 
    return Out;
 }
@@ -4101,6 +4103,15 @@ technique mtarini_windy_flora_SHDWNVIDIA
 	}
 }
 
+technique mtarini_windy_flora_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.18);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
 technique mtarini_windy_flora_mild
 {
 	pass P0
@@ -4127,6 +4138,16 @@ technique mtarini_windy_flora_mild_SHDWNVIDIA
       PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
 	}
 }
+
+technique mtarini_windy_flora_mild_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
 
 
 technique mtarini_windy_grass

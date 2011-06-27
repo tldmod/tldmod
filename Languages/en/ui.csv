@@ -83,13 +83,13 @@ ui_str|STR
 ui_agi|AGI
 ui_int|INT
 ui_cha|CHA
-ui_at_learning_limit|(At learning limit)
-ui_not_enough_skill_points_to_learn|(Not enough skill points to learn)
+ui_at_learning_limit|(at learning limit for this race)
+ui_not_enough_skill_points_to_learn|(not enough skill points to learn)
 ui_strength|strength
 ui_agility|agility
 ui_intelligence|intelligence
 ui_charisma|charisma
-ui_not_enough_attributetype_to_learn_this_skill|(Not enough %s to learn this skill)
+ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
 ui_explanation_one_handed_weapon|Covers usage of one handed swords, axes and blunt weapons.
 ui_explanation_two_handed_weapon|Covers usage of two handed swords, great axes and mauls.
 ui_explanation_polearm|Covers usage of pole weapons like spears, lances, staffs, etc.

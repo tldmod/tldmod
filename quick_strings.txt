@@ -1,4 +1,4 @@
-903
+904
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -385,7 +385,8 @@ qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_respawn{reg1}_{s12}. respawn{reg1}_{s12}...
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
-qstr_Your_horse_rears_ref Your_horse_rears,_refusing_to_obey_your_commands!
+qstr_You_weight_too_much_ You_weight_too_much_for_a_pony!
+qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
 qstr_CHEAT:_Mind_blast!!! CHEAT:_Mind_blast!!!_(ctrl+k)
 qstr_CHEAT:_everybody:_"A CHEAT:_everybody:_"A-a-a-a-argh!"_(ctrl+k)
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)

@@ -89,6 +89,8 @@ game_menus = [
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
 	(set_show_messages,0),
+	(assign, "$disable_skill_modifiers", 0),
+
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),

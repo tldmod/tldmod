@@ -499,14 +499,23 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 	(agent_get_horse,":mount",":player_agent"),
     (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
-	(assign, ":is_warg", 0),
-	(assign, ":is_orc", 0),
+	(assign, ":mount_type", 0), # 0 = horse or huge warg,   1 = warg,   2 = pony
+	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
-	(neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
-	(try_begin), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":is_warg", 1),(try_end),
+	
+	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
+	
+	(try_begin), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
+	(else_try), (eq, ":mount_item", "itm_pony"),(assign, ":mount_type", 2),
+	(try_end),
+	
 #	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
-	(try_begin), (eq, ":race", tf_orc),(assign, ":is_orc" , 1),(try_end), # non-orcs (uruks & hai included) cannot ride ordinary wargs
-	(neq, ":is_warg", ":is_orc"), # non orc riding wargs, or orc riding non wargs
+
+	(try_begin), (eq, ":race", tf_orc),(assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
+	(else_try), (eq, ":race", tf_dwarf),(assign, ":rider_type" , 2),
+	(try_end),
+	
+	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
 	(store_random_in_range, ":rand",0,100),
 	(ge, ":rand", 20),
   ],
@@ -515,14 +524,23 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 	(agent_get_horse,":mount",":player"),
 	(ge, ":mount", 0),
 	(agent_get_item_id,":mount_item", ":mount"),
-	(agent_set_animation, ":mount", "anim_horse_rear"),
 	(try_begin), 
+		# wargs rear and byte
 		(is_between, ":mount_item", item_warg_begin, item_warg_end),
-		(agent_deliver_damage_to_agent, ":mount", ":player"), # warg bytes!
+		(agent_set_animation, ":mount", "anim_horse_rear"),
+		(agent_deliver_damage_to_agent, ":mount", ":player"), 
 		(display_message, "@Bitten by your own warg mount!"),
 		(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 	(else_try),
-		(display_message, "@Your horse rears, refusing to obey your commands!"),
+		# ponies stops
+		(eq, ":mount_item", "itm_pony"),
+		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
+		(display_message, "@You weight too much for a pony!"),
+		(agent_play_sound, ":mount", "snd_neigh"),
+	(else_try),
+		# other mount, rear
+		(agent_set_animation, ":mount", "anim_horse_rear"), 
+		(display_message, "@Your mount rears, refusing to obey your commands!"),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(try_end),
   ]

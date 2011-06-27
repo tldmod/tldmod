@@ -3326,8 +3326,8 @@ scripts = [
   #  GA: added wounds effect
   # INPUT: arg1 = troop_no, arg2 = skill_no
   # OUTPUT: trigger_result = modifier_value
-  ("game_get_skill_modifier_for_troop",
-   [(store_script_param, ":troop_no", 1),
+  ("game_get_skill_modifier_for_troop",[
+    (store_script_param, ":troop_no", 1),
     (store_script_param, ":skill_no", 2),
 	(troop_get_slot, ":wound_mask", ":troop_no", slot_troop_wound_mask),
     (assign, ":modifier_value", 0),
@@ -3365,6 +3365,12 @@ scripts = [
         (store_and, ":check" ,":wound_mask", wound_leg), #leg injury
 		(neq, ":check", 0),
         (val_sub, ":modifier_value", 1),
+	  (try_end),
+	  (try_begin),
+	    #dwarf MEANS no riding skils (mtarini)
+		(troop_get_type, ":race", ":troop_no"),
+		(eq, ":race", tf_dwarf),
+		(assign, ":modifier_value", -10),
 	  (try_end),
 	(else_try), #Power Draw
   	  (eq, ":skill_no", "skl_power_draw"),
@@ -3563,7 +3569,14 @@ scripts = [
         (val_sub, ":modifier_value", 1),
 	  (try_end),
     (try_end),
-    (set_trigger_result, ":modifier_value"),
+		
+	(try_begin),
+		(eq,"$disable_skill_modifiers",1),
+		(set_trigger_result, 0),
+	(else_try),
+		(set_trigger_result, ":modifier_value"),
+    (try_end),
+	
     ]),
 
 # Note to modders: Uncomment these if you'd like to use the following.
@@ -14755,11 +14768,13 @@ scripts = [
 	  #(assign, reg10, ":x"),(assign, reg11, ":i"),(display_message, "@Rising skill {reg11} to {reg10}"),
 	(try_end),
 	# copy stats: skills
+	(assign, "$disable_skill_modifiers", 1),
     (try_for_range, ":i", 0, 38 ),
 	  (store_skill_level, ":x", ":i", ":troop"),
 	  (troop_raise_skill,  "trp_player",":i",-1000), 	  
 	  (troop_raise_skill,  "trp_player",":i",":x"), 
 	(try_end),
+	(assign, "$disable_skill_modifiers", 0),
 	# copy stats: proficienceis
     (try_for_range, ":i", 0, 6),
 	  (store_proficiency_level, ":x", ":i", ":troop"),
