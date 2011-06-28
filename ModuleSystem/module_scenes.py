@@ -233,6 +233,7 @@ scenes = [
   ("gondor_castle_c"      ,sf_indoors,"interior_castle_gondor_c"      , "bo_interior_castle_gondor_c" , (-100,-100),(100,100),-100,"0",[],[]),
   ("cair_andros_castle"   ,sf_indoors,"interior_castle_gondor_d"      , "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],[]),
   ("west_osgiliath_castle",sf_indoors,"interior_castle_gondor_d"      , "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],[]),
+  ("east_osgiliath_castle",sf_indoors,"interior_castle_gondor_b"      , "bo_interior_castle_gondor_b" , (-100,-100),(100,100),-100,"0",[],[]),
   ("henneth_annun_castle" ,sf_indoors,"mesh_henneth_annun"            , "bo_henneth_annun"            , (-100,-100),(100,100),-100,"0",[],[]),
   ("rohan_castle_a"       ,sf_indoors,"interior_castle_rohan_a"       , "bo_interior_castle_i"        , (-100,-100),(100,100),-100,"0",[],[]),
   ("rohan_castle_b"       ,sf_indoors,"interior_castle_rohan_b"       , "bo_interior_castle_j"        , (-100,-100),(100,100),-100,"0",[],[]),

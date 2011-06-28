@@ -1650,7 +1650,7 @@ center_list = [
 	("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1, -1, "mesh_town_evilcamp"],
 	    [-1, "trp_smith_oscamp", "trp_town_26_horse_merchant", "trp_no_troop", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 1, tld_siegable_always),
-	("p_town_east_osgiliath", ["scn_east_osgiliath_center", "scn_west_osgiliath_castle", -1, -1, -1, -1, "mesh_town_osgilliath"],
+	("p_town_east_osgiliath", ["scn_east_osgiliath_center", "scn_east_osgiliath_castle", -1, -1, -1, -1, "mesh_town_osgilliath"],
 	    [-1, "trp_smith_eosgiliath", "trp_town_10_horse_merchant", "trp_no_troop", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 		["icon_mfc_mordor"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0, tld_siegable_normal),
 # Isengard centers
