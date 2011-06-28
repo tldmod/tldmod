@@ -10582,7 +10582,15 @@ scripts = [
   
 
 # regions... put results in reg1 (mtarini)
-# Input: arg1 = terrain type
+("get_region_of_party", [
+	(store_script_param_1, ":party"),
+	(party_get_current_terrain, ":t",":party"),
+    (party_get_position, pos1, "p_main_party"),
+	(call_script,"script_get_region_of_pos1", ":t"),
+]),
+
+# regions... of a pos: put results in reg1 (mtarini)
+# first parameter: terrain type
 ("get_region_of_pos1", [
 	(store_script_param_1, ":terrain_type"),
 	

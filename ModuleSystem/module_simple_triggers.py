@@ -208,9 +208,7 @@ simple_triggers = [
   # keep track of main party region ("$current_player_region"), 
   # and display log messages keey player informed of what region is he in,   (mtarini)
   (0.5,[
-    (party_get_position, pos1, "p_main_party"),
-	(party_get_current_terrain, ":tt","p_main_party"),
-	(call_script,"script_get_region_of_pos1", ":tt"),
+	(call_script,"script_get_region_of_party", "p_main_party"),
 	(assign, ":new_region", reg1),
 	(neq, "$current_player_region", ":new_region"), # region change!
 	
