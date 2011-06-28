@@ -702,7 +702,7 @@ tld_common_battle_scripts = [
 	nazgul_sweeps,
 	custom_troll_hitting,
 	custom_warg_sounds,
-	#custom_lone_wargs_special_attack,
+	#custom_lone_wargs_special_attack, # WIP, needs more work (mtarini)
 	custom_lone_wargs_are_aggressive,
 	tld_player_cant_ride,
 	cheat_kill_all_on_ctrl_k,  
@@ -710,6 +710,10 @@ tld_common_battle_scripts = [
 #	cheat_heal_self_on_ctrl_h
 ##        common_battle_kill_underwater,
 	]
+	
+tld_common_peacetime_scripts = [
+	tld_player_cant_ride,
+] + custom_tld_bow_to_kings
 
 
 mission_templates = [
@@ -801,8 +805,7 @@ mission_templates = [
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
-    custom_tld_bow_to_kings +[
-		tld_player_cant_ride +
+    tld_common_peacetime_scripts +[
         (1, 0, ti_once, [],
          [
            (try_begin),
@@ -1102,11 +1105,6 @@ mission_templates = [
     formations_triggers + AI_triggers +
     common_deathcam_triggers+
     tld_common_battle_scripts+[
-      (ti_on_agent_spawn, 0, 0, [],
-       [
-         (store_trigger_param_1, ":agent_no"),
-         (call_script, "script_agent_reassign_team", ":agent_no"),
-         ]),
 
       common_battle_tab_press,
 
@@ -1361,7 +1359,7 @@ mission_templates = [
      (16,mtef_visitor_source,af_castle_warlord,0,1,[]),(17,mtef_visitor_source,af_castle_warlord,0,1,[]),(18,mtef_visitor_source,af_castle_warlord,0,1,[]),(19,mtef_visitor_source,af_castle_warlord,0,1,[]),(20,mtef_visitor_source,af_castle_warlord,0,1,[]),(21,mtef_visitor_source,af_castle_warlord,0,1,[]),(22,mtef_visitor_source,af_castle_warlord,0,1,[]),(23,mtef_visitor_source,af_castle_warlord,0,1,[]),(24,mtef_visitor_source,af_castle_warlord,0,1,[]),
      (25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),(28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
-    custom_tld_bow_to_kings + [
+    tld_common_peacetime_scripts + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
       (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest"),]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
@@ -1696,11 +1694,6 @@ mission_templates = [
     formations_triggers + AI_triggers +
     common_deathcam_triggers+
     tld_common_battle_scripts+[
-      (ti_on_agent_spawn, 0, 0, [],
-       [
-         (store_trigger_param_1, ":agent_no"),
-         (call_script, "script_agent_reassign_team", ":agent_no"),
-         ]),
       
       (ti_before_mission_start, 0, 0, [],
        [

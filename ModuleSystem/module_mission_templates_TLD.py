@@ -321,9 +321,13 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(call_script, "script_remove_agent", ":warg"),			
 			(agent_set_position, ":agent", pos4),
 		
-		(try_end),
-
+		(else_try), 
+			(call_script, "script_agent_reassign_team", ":agent"), # normal team assignment
+		(try_end), 
+	(else_try), 
+		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
 	(try_end),
+         
 
 	
   ]

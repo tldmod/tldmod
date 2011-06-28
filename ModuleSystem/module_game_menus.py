@@ -7817,8 +7817,17 @@ game_menus = [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq,"$entry_to_town_forbidden",0),
           (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
+		  
+		  (try_begin),   # elder troop stores center common name in plural register
+		    (neg|party_slot_eq, "$current_town", slot_town_barman, "trp_no_troop"),
+			(party_get_slot, ":elder_troop", "$current_town", slot_town_barman),
+		    (str_store_troop_name_plural, s1, ":elder_troop"),
+		  (else_try),
+		    (str_store_string, s1, "@the_castle"),
+		  (try_end),
+		  
 #          (party_slot_eq, "$current_town", slot_castle_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
-          ],"Go to the castle.",
+          ],"Go to {s1}.",
        [
            (try_begin),
              (this_or_next|eq, "$all_doors_locked", 1),

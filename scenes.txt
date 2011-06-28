@@ -1,5 +1,5 @@
 scenesfile version 1
- 240
+ 239
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -669,10 +669,6 @@ scn_gondor_castle_a gondor_castle_a 1 interior_castle_gondor_a bo_interior_castl
   0 
  0 
 scn_gondor_castle_b gondor_castle_b 1 interior_castle_gondor_b bo_interior_castle_gondor_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
-  0 
-  0 
- 0 
-scn_gondor_castle_c gondor_castle_c 1 interior_castle_gondor_c bo_interior_castle_gondor_c -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
  0 

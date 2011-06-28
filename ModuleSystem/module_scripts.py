@@ -1611,6 +1611,12 @@ scripts = [
 	  (troop_set_slot, ":weaponsmith",      slot_troop_subfaction    , subfaction_data[x][0]),
 	  ]   for x in range(len(subfaction_data)) ])+[
 	
+	  # rohan towns subfaction assignment  (currently, for sake or geographical region identification  only)
+	  (party_set_slot, "p_town_east_emnet", slot_party_subfaction    , subfac_east_emnet),
+	  (party_set_slot, "p_town_west_emnet", slot_party_subfaction    , subfac_west_emnet),
+	  (party_set_slot, "p_town_eastfold", slot_party_subfaction      , subfac_eastfold),
+	  (party_set_slot, "p_town_westfold", slot_party_subfaction      , subfac_westfold),
+	  
 	  (party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
       (call_script, "script_update_village_market_towns"),
 
@@ -10625,16 +10631,16 @@ scripts = [
 	(else_try),
 		#plennor fields?
 		(position_set_x,pos20,-5306),(position_set_y,pos20,+2132),(position_set_z,pos20,0),
-		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",7.00),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
 		(assign, reg1, region_pelennor), 
 	(else_try),		
 		# determine on which side of the white mountains...
-		(store_mul,":k",":x",0.37442), (val_add,":k",":y"), 
-		(ge,":k",778),
+		(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
+		(ge,":k",725184),
 	    # SOUTH of white mountains... pick region by GONDOR subfaction town proximity of gondor
 		(assign, reg1, region_lebennin),
 		(assign, ":min_dist", 1000000),
-		(try_for_range, ":i", "p_town_pelargir" , "p_town_edoras" ), # scan all faction capitals!
+		(try_for_range, ":i", "p_town_pelargir" , "p_town_edoras" ), # scan all gondor fiefdom cityes
 			(party_get_slot, ":fief", ":i", slot_party_subfaction),
 			(gt, ":fief", 0),
 			(party_get_position,pos20,":i"),
@@ -10654,7 +10660,7 @@ scripts = [
 		(assign, reg1, region_druadan_forest),
 	(else_try),
 		# firien_wood?
-		(is_between, ":x", -1506, -3345),(is_between, ":y",   +80,    1449),
+		(is_between, ":x",  -3345, -1792),(is_between, ":y",   +80,    1449),
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_firien_wood),
 	(else_try),
@@ -10665,7 +10671,7 @@ scripts = [
 		(assign, reg1, region_hornburg),
 	(else_try),
 		# harrowdale? (valley where edoras is)
-		(is_between, ":x", 1948, 2515),(is_between, ":y",   -174, 1778),
+		(is_between, ":x", 1958, 2515),(is_between, ":y",   -1778, -501),
 		(assign, reg1, region_harrowdale),
 	(else_try),
 		# anorien? between entwash and white mountains
@@ -10679,7 +10685,7 @@ scripts = [
 		(assign, reg1, region_isengard),
 	(else_try),
 		# gap of rohan?
-		(is_between, ":x", 4856, 6269),(is_between, ":y",   -2812,    -4215),
+		(is_between, ":x", 4856, 6269),(is_between, ":y",   -4215,-2812),
 		(assign, reg1, region_gap_of_rohan),
 	(else_try),
 		# fangorn?
@@ -10697,9 +10703,61 @@ scripts = [
 		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
 		(assign, reg1, region_brown_lands),
 	(else_try),
-		# the wald?
-		#(is_between, ":x", -4190,2307 ),(is_between, ":y",   -9615,  6514),
-		#(assign, reg1, region_the_wald),
+		# evertything else, in a BIG region, is in rohan... 
+		(is_between, ":x", -3557,5893 ),(is_between, ":y",   -4782,  1057),
+		# pick emnet
+		(assign, reg1, region_east_emnet),
+		(assign, ":min_dist", 1000000),
+
+		(try_for_range, ":i", "p_town_east_emnet" , "p_town_morannon" ), # scan all rohan "emnet/fold" cityes
+			(party_get_slot, ":fief", ":i", slot_party_subfaction),
+			(gt, ":fief", 0),
+			(party_get_position,pos20,":i"),
+			(get_distance_between_positions, ":dist", pos20, pos1),
+			(try_begin), 
+				(le, ":dist", ":min_dist"),
+				(store_add, reg1, region_harrowdale, ":fief"),
+				(assign, ":min_dist", ":dist"),
+			(try_end),
+		(try_end),
+	(else_try),
+		# n.mirkwood?
+		(is_between, ":x",  -8041, -28),(is_between, ":y",   -29935,  -19881),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_n_mirkwood),
+	(else_try),
+		# s.mirkwood?
+		(is_between, ":x",  -9828,-1943),(is_between, ":y",  -19881,  -11829),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_s_mirkwood),
+	(else_try),
+		# s.mirkwood?, road is still mirkwood
+		(is_between, ":x",  -7500,-2000),(is_between, ":y",  -18581,  -19929),
+		(assign, reg1, region_s_mirkwood),
+	(else_try),
+		# s.mirkwood?, dol gundur is still mirkwood
+		(is_between, ":x", -4595,  -3750),(is_between, ":y",  -13519,  -12885),
+		(assign, reg1, region_s_mirkwood),
+	(else_try),
+		# near misty mountains...
+		(is_between, ":x", 4100, 6000),(is_between, ":y",  -10902, -18090),
+		(assign, reg1, region_misty_mountains),
+	(else_try),
+		# near misty mountains., 2nd chance..
+		(is_between, ":x", 1846,6000),(is_between, ":y",  -23809,-17336),
+		(assign, reg1, region_misty_mountains),
+	(else_try),
+		# near lonely mountains, far in the north
+		(lt,  ":y",  -25804),
+		(assign, reg1, region_lonely_mountains),
+	(else_try),
+		# else, "vague locations": 
+		(is_between, ":x", -3500,3500),(gt, ":y", -13400),
+		(assign, reg1, region_anduin_banks),
+	(else_try),
+		# else, "vague locations": 
+		(lt, ":x", 0),(lt,  ":y",  -23662),
+		(assign, reg1, region_above_mirkwook),
 	(try_end),
 ]),
   
@@ -15036,6 +15094,7 @@ scripts = [
         (agent_is_human, ":agent_no"),
         (agent_is_ally, ":agent_no"),
         (agent_get_party_id, ":party_no", ":agent_no"),
+		(gt, ":party_no",  -1),
         (neq, ":party_no", "p_main_party"),
         (assign, ":continue", 1),
         (store_faction_of_party, ":party_faction", ":party_no"),
