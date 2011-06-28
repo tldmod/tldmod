@@ -155,3 +155,4 @@ icon_mfc_gundabad = 153
 icon_mfc_dunland = 154
 icon_thranduil = 155
 icon_esgaroth = 156
+icon_debris = 157

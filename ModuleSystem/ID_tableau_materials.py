@@ -44,3 +44,4 @@ tableau_retired_troop = 42
 tableau_rohan_plain_shield = 43
 tableau_rohan_boss_shield = 44
 tableau_far_harad_shield = 45
+tableau_icon_burnable = 46

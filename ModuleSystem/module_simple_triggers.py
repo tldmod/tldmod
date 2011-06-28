@@ -2397,7 +2397,7 @@ simple_triggers = [
           (else_try),
             # Centers: destroy what you can, give the rest to the best enemy
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
-              (party_slot_eq, ":cur_party", slot_center_destroy_on_capture, 1),
+              (party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1),
               (call_script, "script_destroy_center", ":cur_party"),
             (else_try),
               (party_clear, ":cur_party"), # remove previous garrison

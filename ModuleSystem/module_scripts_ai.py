@@ -2718,12 +2718,15 @@ ai_scripts = [
 	    (disable_party, ":center"),
      (else_try),
        (party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
-       (party_set_slot, ":center", slot_party_type, spt_ruined_center),
        (party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),
-	   (party_set_banner_icon, ":center", "icon_mfp_northmen"),
+	   (party_set_banner_icon, ":center", "icon_debris"),
+	   (try_begin),
+	   	   (party_slot_eq, ":center", slot_center_destroy_on_capture,2),
+		   (party_set_icon, ":center", "icon_debris"),
+	   (try_end),
        (str_store_party_name, s1, ":center"),
        (party_set_name, ":center", "@____{s1} ruins____"),
-       (party_set_faction, ":center", "fac_neutral"), #purely defensive
+       (party_set_faction, ":center", "fac_neutral"),
      (try_end),
      
      # lose strength

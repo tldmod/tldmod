@@ -372,5 +372,10 @@ mesh_rohan_paint_4 = 370
 mesh_rohan_paint_5 = 371
 mesh_rohan_paint_6 = 372
 mesh_rohan_paint_7 = 373
+mesh_icon_burn_pattern = 374
+mesh_icon_gondor_town = 375
+mesh_icon_castle1 = 376
+mesh_icon_minastirith = 377
+mesh_icon_helmsdeep = 378
 
 

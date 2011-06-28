@@ -948,6 +948,14 @@ tableaus = [
        (init_position, pos1),(cur_tableau_add_mesh, "mesh_tableau_mesh_shield_harad", pos1, 0, 0),
        (init_position, pos1),(cur_tableau_add_mesh, "mesh_far_harad_shield_paint"   , pos1, 100, 0),
        (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
-       ]),	 
-   
+       ]),
+	   
+  ("icon_burnable", 0, "missiles", 512, 512, 0, 0, 0, 0,
+   [ (store_script_param, ":mesh", 1),
+     (set_fixed_point_multiplier, 100),
+     (init_position, pos1),(cur_tableau_add_mesh, ":mesh", pos1, 0, 0),
+     (init_position, pos1),(cur_tableau_add_mesh, "mesh_icon_burn_pattern", pos1, 0, 0),
+     (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+     ]),
+	 
 ]

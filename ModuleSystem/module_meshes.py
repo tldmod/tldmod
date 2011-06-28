@@ -417,17 +417,22 @@ meshes = [
 #### Far Harad shield paint
   ("far_harad_shield_paint", 0, "harad_tableau_paint_mesh", 0, 0, 0, 0, 0, 0, 10, 10, 10),
 #### Civilian clothes tableau
-  ("tableau_mesh_gondor_tunic_a", 0, "tableau_mesh_gondor_tunic_a", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("tableau_mesh_gondor_tunic_b", 0, "tableau_mesh_gondor_tunic_b", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("tableau_mesh_rohan_tunic"   , 0, "tableau_mesh_rohan_tunic"   , 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("tableau_mesh_dale_tunic"    , 0, "tableau_mesh_dale_tunic"    , 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("tableau_mesh_woodman_tunic" , 0, "tableau_mesh_woodman_tunic" , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_gondor_tunic_a",0, "tableau_mesh_gondor_tunic_a", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_gondor_tunic_b",0, "tableau_mesh_gondor_tunic_b", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_rohan_tunic"   ,0, "tableau_mesh_rohan_tunic"   , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_dale_tunic"    ,0, "tableau_mesh_dale_tunic"    , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_woodman_tunic" ,0, "tableau_mesh_woodman_tunic" , 0, 0, 0, 0, 0, 0, 10, 10, 10),
 #### TLD rohan shield paintings
-  ("rohan_paint_1", 0, "rohan_paint_mesh_a", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("rohan_paint_2", 0, "rohan_paint_mesh_b", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("rohan_paint_3", 0, "rohan_paint_mesh_f", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("rohan_paint_4", 0, "rohan_paint_mesh_g", 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  ("rohan_paint_5", 0, "rohan_paint_mesh_c", 0, 0, 0, 0, 0, 0, 10, 10, 10), # here start paitings suitable for bulb-centered shields
-  ("rohan_paint_6", 0, "rohan_paint_mesh_d", 0, 0, 0, 0, 0, 0, 10, 10, 10),  
-  ("rohan_paint_7", 0, "rohan_paint_mesh_e", 0, 0, 0, 0, 0, 0, 10, 10, 10),  
-]
+  ("rohan_paint_1",0, "rohan_paint_mesh_a", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("rohan_paint_2",0, "rohan_paint_mesh_b", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("rohan_paint_3",0, "rohan_paint_mesh_f", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("rohan_paint_4",0, "rohan_paint_mesh_g", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("rohan_paint_5",0, "rohan_paint_mesh_c", 0, 0, 0, 0, 0, 0, 10, 10, 10), # here start paitings suitable for bulb-centered shields
+  ("rohan_paint_6",0, "rohan_paint_mesh_d", 0, 0, 0, 0, 0, 0, 10, 10, 10),  
+  ("rohan_paint_7",0, "rohan_paint_mesh_e", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+### burned map icons
+  ("icon_burn_pattern",0, "tableau_mesh_burn_pattern", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("icon_gondor_town" ,0, "tableau_mesh_gondortown"  , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("icon_castle1"     ,0, "tableau_mesh_iconcastle1" , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("icon_minastirith" ,0, "tableau_mesh_mt"          , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("icon_helmsdeep"   ,0, "tableau_mesh_hd"          , 0, 0, 0, 0, 0, 0, 10, 10, 10),]

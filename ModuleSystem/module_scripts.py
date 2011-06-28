@@ -1970,11 +1970,13 @@ scripts = [
        (assign, "$new_encounter", 1), #check this in the menu.
        (try_begin),
          (lt, "$g_encountered_party_2",0), #Normal encounter. Not battle or siege.
-         (try_begin),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town       ),(jump_to_menu, "mnu_castle_outside"),
-          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_ruined_center),(jump_to_menu, "mnu_town_ruins"),
-          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_ship       ),(jump_to_menu, "mnu_ship_reembark"),
-          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_village    ),(jump_to_menu, "mnu_village"),
-          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
+         (try_begin),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town ),
+					 (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 0), (jump_to_menu, "mnu_castle_outside"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					 (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 1),	(jump_to_menu, "mnu_town_ruins"),
+          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_ship),(jump_to_menu, "mnu_ship_reembark"),
+#          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_village    ),(jump_to_menu, "mnu_village"),
+#          (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
           #(else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
           #(else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
           #(else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
@@ -2260,7 +2262,7 @@ scripts = [
                  (assign, ":news_color", color_bad_news),
                (try_end),
                (try_begin),
-                 (party_slot_eq, ":root_defeated_party", slot_center_destroy_on_capture, 1),
+                 (party_slot_ge, ":root_defeated_party", slot_center_destroy_on_capture, 1),
                  (display_log_message, "@{s2} have razed {s1}!", ":news_color"),
                (else_try),
                  (display_log_message, "str_center_captured", ":news_color"),
@@ -2293,7 +2295,7 @@ scripts = [
 
                (call_script, "script_lift_siege", ":root_defeated_party", 0),
                (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
-                 (party_slot_eq, ":root_defeated_party", slot_center_destroy_on_capture, 1),
+                 (party_slot_ge, ":root_defeated_party", slot_center_destroy_on_capture, 1),
                  (call_script, "script_destroy_center", ":root_defeated_party"),
                (else_try),
                  (call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),

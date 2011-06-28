@@ -7753,11 +7753,6 @@ game_menus = [
           (call_script, "script_describe_center_relation_to_s3", ":center_relation"),
           (assign, reg9, ":center_relation"),
           (str_store_string, s12, "@ {s3} ({reg9})."),
-		(else_try),
-          (party_slot_eq,"$current_town",slot_party_type, spt_ruined_center),
-		  (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
-		  (str_store_troop_name_plural, s1, ":elder_troop"),
-          (str_store_string, s12, "@The {s1} is destroyed, only smoldering ruins remain."),
 		(try_end),
 
         (str_clear, s13),
