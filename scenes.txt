@@ -1,5 +1,5 @@
 scenesfile version 1
- 239
+ 240
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -685,6 +685,10 @@ scn_cair_andros_castle cair_andros_castle 1 interior_castle_gondor_d bo_interior
   0 
  0 
 scn_west_osgiliath_castle west_osgiliath_castle 1 interior_castle_gondor_d bo_interior_castle_gondor_d -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 
+scn_east_osgiliath_castle east_osgiliath_castle 1 interior_castle_gondor_b bo_interior_castle_gondor_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
  0 
