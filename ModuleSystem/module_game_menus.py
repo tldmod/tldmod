@@ -2470,6 +2470,9 @@ game_menus = [
    "none",
    [], [
     ("spawnSW",[],"Spawn SW advance camps", [
+	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+	  (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2479,7 +2482,7 @@ game_menus = [
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SW),
           (disable_party, ":adv_camp"),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2487,6 +2490,9 @@ game_menus = [
       (display_message, "@SW advance camps spawned around a point northwest of East Emnet!", 0x30FFC8),
     ]),
     ("spawnSE",[],"Spawn SE advance camps", [
+	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+	  (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2496,7 +2502,7 @@ game_menus = [
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SE),
           (disable_party, ":adv_camp"),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2504,7 +2510,10 @@ game_menus = [
       (display_message, "@SE advance camps spawned around a point west of West Osgiliath!", 0x30FFC8),
     ]),
     ("spawnC",[],"Spawn C advance camps", [
-      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+	  (try_end),
+	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
         (faction_set_slot, ":faction_no", slot_faction_active_theater, theater_C),
@@ -2513,7 +2522,7 @@ game_menus = [
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_C),
           (disable_party, ":adv_camp"),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2521,6 +2530,9 @@ game_menus = [
       (display_message, "@C advance camps spawned around Cerin Amroth!", 0x30FFC8),
     ]),
     ("spawnN",[],"Spawn N advance camps", [
+	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+	  (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2530,7 +2542,7 @@ game_menus = [
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_N),
           (disable_party, ":adv_camp"),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2538,6 +2550,9 @@ game_menus = [
       (display_message, "@N advance camps spawned around Beorn's House!", 0x30FFC8),
     ]),
     ("disable",[],"Remove all advance camps", [
+	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		(party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+	  (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         #(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
         (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2561,8 +2576,13 @@ game_menus = [
         (try_begin),
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SW),
           (disable_party, ":adv_camp"),
+		  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		      (store_distance_to_party_from_party,":dist", ":adv_camp", ":camp_pointer"),
+		      (le, ":dist",1),
+		      (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+		  (try_end),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2583,8 +2603,13 @@ game_menus = [
         (try_begin),
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_SE),
           (disable_party, ":adv_camp"),
+		  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		      (store_distance_to_party_from_party,":dist", ":adv_camp", ":camp_pointer"),
+		      (le, ":dist",1),
+		      (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+		  (try_end),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2605,8 +2630,13 @@ game_menus = [
         (try_begin),
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_C),
           (disable_party, ":adv_camp"),
+		  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		      (store_distance_to_party_from_party,":dist", ":adv_camp", ":camp_pointer"),
+		      (le, ":dist",1),
+		      (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+		  (try_end),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),
@@ -2627,8 +2657,13 @@ game_menus = [
         (try_begin),
           (faction_slot_eq, ":faction_no", slot_faction_home_theater, theater_N),
           (disable_party, ":adv_camp"),
+		  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		      (store_distance_to_party_from_party,":dist", ":adv_camp", ":camp_pointer"),
+		      (le, ":dist",1),
+		      (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+		  (try_end),
         (else_try),        
-          (call_script, "script_get_advcamp_pos", ":faction_no"), #fills pos1
+          (call_script, "script_get_advcamp_pos_predefined", ":faction_no"), #fills pos1
           (party_set_position, ":adv_camp", pos1),
           (enable_party, ":adv_camp"),
         (try_end),

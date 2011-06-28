@@ -288,23 +288,25 @@ parties = [
   ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
   ("ford_moria2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
   
-  ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
-
-  # anorien places
-  ("camplace_S1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
-  ("camplace_S2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,0.75),[]),
-  ("camplace_S3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.41,0.88),[]),
-  ("camplace_S4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7,9.2),[]),
-  # east-from-fangorn places
-  ("camplace_M1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.6,-93),[]),
-  ("camplace_M2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
-  ("camplace_M3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.7,-72),[]),
-  ("camplace_M4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
+  # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places
-  ("camplace_N1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -8,-171),[]),
+  ("camplace_N1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.8,-170),[]),
   ("camplace_N2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
   ("camplace_N3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18,-165),[]),
   ("camplace_N4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.7,-166),[]),
-
+  ("camplace_N5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -8,-171),[]),
+  # east-from-fangorn places
+  ("camplace_M1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.2,-76.1),[]),
+  ("camplace_M2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
+  ("camplace_M3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.7,-72),[]),
+  ("camplace_M4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
+  ("camplace_M5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.6,-93),[]),
+  # anorien places
+  ("camplace_S1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.6,6.5),[]),
+  ("camplace_S2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,0.75),[]),
+  ("camplace_S3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.41,0.88),[]),
+  ("camplace_S4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7,9.2),[]),
+  ("camplace_S5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
+  ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
   
   ]

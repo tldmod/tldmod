@@ -16,18 +16,18 @@ from module_troops import *
 ai_scripts = [
 
 # script_recalculate_ais
-  ("recalculate_ais",
-   [(try_begin),
+("recalculate_ais",
+	[(try_begin),
 	  (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
 	  (call_script, "script_init_ai_calculation"),
-      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
-        (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
-        (neg|faction_slot_eq, ":faction_no",  slot_faction_marshall, "trp_player"),
-        (call_script, "script_decide_faction_ai", ":faction_no"),
-      (try_end),
-      (call_script, "script_decide_kingdom_party_ais"),               # recalculate AI for hero-led parties
+	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
+		(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+		(neg|faction_slot_eq, ":faction_no",  slot_faction_marshall, "trp_player"),
+		(call_script, "script_decide_faction_ai", ":faction_no"),
+	  (try_end),
+	  (call_script, "script_decide_kingdom_party_ais"),               # recalculate AI for hero-led parties
 	(try_end),
-   ]),
+]),
 
 # script_init_ai_calculation
 # sets own and combined nearby friends' strength into slots of hero and center parties
@@ -137,7 +137,7 @@ ai_scripts = [
        (assign, ":chance_attacking_enemy_army", 0),
        (assign, ":chance_attacking_enemies_around_center", 0),
        (assign, ":target_attacking_center", -1),
-#       (assign, ":target_raiding_village", -1),
+		#(assign, ":target_raiding_village", -1),
        (assign, ":target_attacking_enemy_army", -1),
        (assign, ":target_attacking_enemies_around_center", -1),
 
@@ -154,7 +154,7 @@ ai_scripts = [
          (store_mul, ":marshall_change_effect", ":marshall_changed", 300),
          (val_add, ":chance_defend", ":marshall_change_effect"),
        (try_end),
-## Gathering army
+		## Gathering army
        (try_begin),
          (eq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
@@ -171,12 +171,12 @@ ai_scripts = [
 
            #Number of walled centers (inversely related)
         #TLD: centers don't change hands in TLD frequently, take this
-#           (store_mul, ":center_value", ":num_towns", 2),
-#           (val_add, ":center_value", ":num_castles"),
-#           (val_mul, ":center_value", 10),
-#           (val_max, ":center_value", 5),
-#           (store_sub, ":num_centers_effect", "$g_average_center_value_per_faction", ":center_value"),
-#           (val_add, ":chance_gathering_army", ":num_centers_effect"),
+		#           (store_mul, ":center_value", ":num_towns", 2),
+		#           (val_add, ":center_value", ":num_castles"),
+		#           (val_mul, ":center_value", 10),
+		#           (val_max, ":center_value", 5),
+		#           (store_sub, ":num_centers_effect", "$g_average_center_value_per_faction", ":center_value"),
+		#           (val_add, ":chance_gathering_army", ":num_centers_effect"),
 
            #Number of armies (inversely related)
            (store_mul, ":num_armies_effect", ":num_armies", 4),
@@ -648,13 +648,13 @@ ai_scripts = [
            (str_store_faction_name, s1, ":faction_no"),
            (str_store_party_name, s2, ":target_attacking_enemy_army"),
            #(display_message, "@DEBUG: {s1} decided to attack {s2}."),
-  (assign, reg1, ":chance_defend"),
-  (assign, reg2, ":chance_gathering_army"),
-  (assign, reg3, ":chance_attacking_center"),
-  (assign, reg4, ":chance_attacking_enemy_army"),
-  (assign, reg5, ":chance_attacking_enemies_around_center"),
-  (str_store_faction_name, s1, ":faction_no"),
-  #(display_message, "@DEBUG: {s1} chances: D:{reg1} GA:{reg2} AC:{reg3} AEA:{reg4} AEAC:{reg5}.", 0x30FFC8), #mvdebug
+		  (assign, reg1, ":chance_defend"),
+		  (assign, reg2, ":chance_gathering_army"),
+		  (assign, reg3, ":chance_attacking_center"),
+		  (assign, reg4, ":chance_attacking_enemy_army"),
+		  (assign, reg5, ":chance_attacking_enemies_around_center"),
+		  (str_store_faction_name, s1, ":faction_no"),
+		  #(display_message, "@DEBUG: {s1} chances: D:{reg1} GA:{reg2} AC:{reg3} AEA:{reg4} AEAC:{reg5}.", 0x30FFC8), #mvdebug
          (try_end),
        (else_try),
          (val_sub, ":random_no", ":chance_attacking_enemies_around_center"),
@@ -681,10 +681,10 @@ ai_scripts = [
    (try_end),
   ]),
 
-  # script_party_calculate_and_set_nearby_friend_strength
-  # Input: party_no
-  # Output: none
-  ("party_calculate_and_set_nearby_friend_strength",
+# script_party_calculate_and_set_nearby_friend_strength
+# Input: party_no
+# Output: none
+("party_calculate_and_set_nearby_friend_strength",
     [ (store_script_param, ":party_no", 1),
       (assign, ":follower_strength", 0),
       (assign, ":friend_strength", 0),
@@ -781,10 +781,10 @@ ai_scripts = [
       (faction_set_slot, ":faction_no", slot_faction_num_towns, ":num_towns"),
     ]),  
   
-  # script_party_set_ai_state
-  # Input: arg1 = party_no, arg2 = new_ai_state, arg3 = action_object (if necessary)
-  # Output: none (Can fail)
-  ("party_set_ai_state",
+# script_party_set_ai_state
+# Input: arg1 = party_no, arg2 = new_ai_state, arg3 = action_object (if necessary)
+# Output: none (Can fail)
+("party_set_ai_state",
     [ (store_script_param, ":party_no", 1),
       (store_script_param, ":new_ai_state", 2),
       (store_script_param, ":new_ai_object", 3),
@@ -926,12 +926,12 @@ ai_scripts = [
       (try_end),
       (party_set_slot, ":party_no", slot_party_ai_state, ":new_ai_state"),
       (party_set_slot, ":party_no", slot_party_ai_object, ":new_ai_object"),
-  ]),
+]),
 
-  # script_party_decide_next_ai_state_under_command
-  # Input: arg1 = party_no
-  #called from triggers
-  ("party_decide_next_ai_state_under_command",
+# script_party_decide_next_ai_state_under_command
+# Input: arg1 = party_no
+#called from triggers
+("party_decide_next_ai_state_under_command",
     [ (store_script_param_1, ":party_no"),
       (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
       (try_begin),
@@ -989,12 +989,12 @@ ai_scripts = [
           (try_end),
         (try_end),
       (try_end),
-  ]),
+]),
 
-  # script_kingdom_hero_decide_next_ai_state_follow_or_not
-  # Input: arg1 = troop_no
-  #called from triggers
-  ("kingdom_hero_decide_next_ai_state_follow_or_not",
+# script_kingdom_hero_decide_next_ai_state_follow_or_not
+# Input: arg1 = troop_no
+#called from triggers
+("kingdom_hero_decide_next_ai_state_follow_or_not",
     [ (store_script_param_1, ":troop_no"),
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
       
@@ -1287,12 +1287,12 @@ ai_scripts = [
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
         (try_end),
       (try_end),
-  ]),
+]),
   
-  # script_kingdom_hero_decide_next_ai_state
-  # Input: arg1 = troop_no
-  #called from triggers
-  ("kingdom_hero_decide_next_ai_state",
+# script_kingdom_hero_decide_next_ai_state
+# Input: arg1 = troop_no
+#called from triggers
+("kingdom_hero_decide_next_ai_state",
     [ (store_script_param_1, ":troop_no"),
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
 
@@ -1865,14 +1865,14 @@ ai_scripts = [
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
         (try_end),
       (try_end),
-  ]),
+]),
   
-  # script_process_kingdom_parties_ai
-  # This is called more frequently than decide_kingdom_parties_ai
-  # Input: none
-  # Output: none
-  #called from triggers
-  ("process_kingdom_parties_ai",
+# script_process_kingdom_parties_ai
+# This is called more frequently than decide_kingdom_parties_ai
+# Input: none
+# Output: none
+#called from triggers
+("process_kingdom_parties_ai",
     [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),  # hero not prisoner and has party
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -1880,12 +1880,12 @@ ai_scripts = [
            (gt, ":party_no", 0),
              (call_script, "script_process_hero_ai", ":troop_no"),
        (try_end),
-  ]),
+]),
   
-  # script_process_hero_ai
-  # This is called more frequently than script_decide_kingdom_party_ais
-  #called from triggers
-  ("process_hero_ai",
+# script_process_hero_ai
+# This is called more frequently than script_decide_kingdom_party_ais
+#called from triggers
+("process_hero_ai",
     [   (store_script_param_1, ":troop_no"),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (store_faction_of_party, ":faction_no", ":party_no"),
@@ -2071,17 +2071,17 @@ ai_scripts = [
             (party_detach, ":party_no"),
           (try_end),
         (try_end),
-  ]),
+]),
     
-    ##########################################
-    # TLD War System Scripts (foxyman)
-    #
-    # script_find_closest_random_enemy_center_from_center
-    # Find the closest enemy center from current center
-    # Input: arg1 - center_no
-    # Output: reg0 - enemy_center_no
-    # Position registers used: pos1, pos2
-    ("find_closest_random_enemy_center_from_center", [
+##########################################
+# TLD War System Scripts (foxyman)
+#
+# script_find_closest_random_enemy_center_from_center
+# Find the closest enemy center from current center
+# Input: arg1 - center_no
+# Output: reg0 - enemy_center_no
+# Position registers used: pos1, pos2
+("find_closest_random_enemy_center_from_center", [
         (store_script_param, ":center_no", 1),
         (store_faction_of_party, ":faction", ":center_no"),
         (party_get_position, pos1, ":center_no"),
@@ -2105,13 +2105,13 @@ ai_scripts = [
             (assign, reg0, ":cur_center"),
             (assign, ":dist", ":cur_dist"),
         (try_end),
-    ]),
+]),
     
-    # script_calc_mid_point
-    # calculate the middle piont on the segment between pos1 and pos2
-    # Input: pos1, pos2
-    # Output: pos1 - middle point
-    ("calc_mid_point", [
+# script_calc_mid_point
+# calculate the middle piont on the segment between pos1 and pos2
+# Input: pos1, pos2
+# Output: pos1 - middle point
+("calc_mid_point", [
         (set_fixed_point_multiplier, 100),
         (position_get_x, ":x1", pos1),
         (position_get_y, ":y1", pos1),
@@ -2123,16 +2123,14 @@ ai_scripts = [
         (val_div, ":y1", 2),
         (position_set_x, pos1, ":x1"),
         (position_set_y, pos1, ":y1"),        
-    ]),
-    
-  # TLD War System Scripts end (foxyman)
-  ##########################################
+]),
+# TLD War System Scripts end (foxyman)
+##########################################
 
-
-  # script_calculate_troop_ai
-  # Input: troop_no
-  # Output: none
-  ("calculate_troop_ai",
+# script_calculate_troop_ai
+# Input: troop_no
+# Output: none
+("calculate_troop_ai",
     [ (store_script_param, ":troop_no", 1),
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
@@ -2172,12 +2170,12 @@ ai_scripts = [
         (party_slot_eq, ":party_no", slot_party_commander_party, -1),
         (call_script, "script_kingdom_hero_decide_next_ai_state", ":troop_no"),
       (try_end),
-      ]),
+]),
 
-  # script_calculate_troop_ai_under_command
-  # Input: troop_no
-  # Output: none
-  ("calculate_troop_ai_under_command",
+# script_calculate_troop_ai_under_command
+# Input: troop_no
+# Output: none
+("calculate_troop_ai_under_command",
     [ (store_script_param, ":troop_no", 1),
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
@@ -2188,43 +2186,33 @@ ai_scripts = [
           (party_set_ai_initiative, ":party_no", 30), #MV: review this number, was 50
           (call_script, "script_party_decide_next_ai_state_under_command", ":party_no"),
       (try_end),
-      ]),
+]),
   
-  # script_recalculate_ai_for_troop
-  # Input: troop id
-  ("recalculate_ai_for_troop",
-    [ (store_script_param, ":troop_no", 1),
-      (call_script, "script_init_ai_calculation"), (call_script, "script_calculate_troop_ai", ":troop_no"), (call_script, "script_calculate_troop_ai_under_command", ":troop_no"),
-    ]),
+# script_recalculate_ai_for_troop
+# Input: troop id
+("recalculate_ai_for_troop",
+	[ (store_script_param, ":troop_no", 1),
+	  (call_script, "script_init_ai_calculation"), (call_script, "script_calculate_troop_ai", ":troop_no"), (call_script, "script_calculate_troop_ai_under_command", ":troop_no"),
+]),
 
-  # script_faction_strength_string
-  # INPUT: faction ID
-  #OUTPUT: s23 contains name of faction strength
-  ("faction_strength_string",
+# script_faction_strength_string
+# INPUT: faction ID
+#OUTPUT: s23 contains name of faction strength
+("faction_strength_string",
     [ (store_script_param, ":faction_no", 1),
       (faction_get_slot,":strength",":faction_no",slot_faction_strength),
 	  (val_add,":strength",999),
 	  (val_div,":strength",1000),
 	  (store_sub,":total_strings","str_faction_strength_last","str_faction_strength_crushed"),
 	  (val_clamp,":strength",0,":total_strings"),
-
 	  (val_add,":strength","str_faction_strength_crushed"),
       (str_store_string,s23,":strength"),
-
-	  # (try_begin),(le,":strength",0),(str_store_string,s23,"str_faction_strength_crushed"),
-	  # (else_try) ,(eq,":strength",1),(str_store_string,s23,"str_faction_strength_spent_and_wavering"),
-	  # (else_try) ,(eq,":strength",2),(str_store_string,s23,"str_faction_strength_weakened"),
-	  # (else_try) ,(eq,":strength",3),(str_store_string,s23,"str_faction_strength_in_good_state"),
-	  # (else_try) ,(eq,":strength",4),(str_store_string,s23,"str_faction_strength_strong"),
-	  # (else_try) ,(eq,":strength",5),(str_store_string,s23,"str_faction_strength_very strong"),
-	  # (else_try) ,(ge,":strength",6),(str_store_string,s23,"str_faction_strength_unmatched"),
-	  # (try_end),
-    ]),
+]),
 	
-  # script_create_kingdom_hero_party
-  # Input: arg1 = troop_no, arg2 = center_no
-  # Output: $pout_party = party_no
-  ("create_kingdom_hero_party",
+# script_create_kingdom_hero_party
+# Input: arg1 = troop_no, arg2 = center_no
+# Output: $pout_party = party_no
+("create_kingdom_hero_party",
     [ (store_script_param, ":troop_no", 1),
       (store_script_param, ":center_no", 2),
       (store_troop_faction, ":troop_faction_no", ":troop_no"),
@@ -2253,13 +2241,13 @@ ai_scripts = [
         (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # kings get elite guards
       (try_end),
 	  (party_add_members,"$pout_party",":guard",10), 
-  ]),
+]),
 
 # script_decide_kingdom_party_ais
 # Input: none
 # Output: none
 #called from triggers
-  ("decide_kingdom_party_ais",
+("decide_kingdom_party_ais",
    [(try_begin),
       (ge,"$tld_war_began",1),  # party AI can change only if War started, GA
 	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -2383,14 +2371,14 @@ ai_scripts = [
        (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
          (call_script, "script_calculate_troop_ai_under_command", ":hero"),
        (try_end),
-    (try_end),
- ]),
+	(try_end),
+]),
  
 # script_update_active_theaters
 # Input: none
 # Output: none
 # updates active theaters for all factions, called after a faction defeat
-  ("update_active_theaters",
+("update_active_theaters",
    [        
         # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
         (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
@@ -2496,13 +2484,13 @@ ai_scripts = [
           (try_end), # end find another theater
           
         (try_end), # end update active theaters       
- ]),
+]),
  
 # script_find_next_theater
 # Input: faction, current theater
 # Output: reg0 = theater_SE, theater_SW, theater_C, theater_N or -1 for error
 # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
-  ("find_next_theater",
+("find_next_theater",
    [
      (store_script_param, ":faction", 1),
      (store_script_param, ":active_theater", 2),
@@ -2548,13 +2536,13 @@ ai_scripts = [
      (try_end),
      
      (assign, reg0, ":next_theater"),  
-   ]),
+]),
 
 
 # script_theater_name_to_s15
 # Input: theater
 # Output: s15
-  ("theater_name_to_s15",
+("theater_name_to_s15",
    [
      (store_script_param, ":theater", 1),
      (str_store_string, s15, "@ERROR"),
@@ -2567,7 +2555,7 @@ ai_scripts = [
      (else_try),
        (eq, ":theater", theater_N), (str_store_string, s15, "str_theater_N"),
      (try_end),
-   ]),
+]),
    
 
 # script_get_advcamp_pos
@@ -2575,7 +2563,7 @@ ai_scripts = [
 # Input: faction
 # Output: pos1
 # Uses pos2 and pos3
-  ("get_advcamp_pos",
+("get_advcamp_pos",
    [
      (store_script_param, ":faction", 1),
      
@@ -2687,18 +2675,15 @@ ai_scripts = [
          (eq, ":tries_mod", 4),
          (val_add, ":radius", 1),
        (try_end),
-     (try_end),
-     
-     # out comes pos1
-
-   ]),
+     (try_end),     # out comes pos1
+]),
 
 # script_destroy_center
 # Destroys a captured center (faction retreats if it's its last center in its active theater?)
 # Input: center
 # Output: none
 # Note: Depends on the destroyable flag being set for advance camps
-  ("destroy_center",
+("destroy_center",
    [
      (store_script_param, ":center", 1),
      (store_faction_of_party, ":center_faction", ":center"),
@@ -2719,6 +2704,11 @@ ai_scripts = [
        (faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
        (faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
        (party_set_slot, ":center", slot_center_theater, ":theater"), #reset advance camp theater, just in case
+		(try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
+		   (store_distance_to_party_from_party,":dist", ":center", ":camp_pointer"),
+		   (le, ":dist",1),
+		   (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+		(try_end),
      (else_try),
        (party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
        # replace with ruins
@@ -2740,13 +2730,13 @@ ai_scripts = [
      
      (disable_party, ":center"),
      (call_script, "script_update_center_notes", ":center"),
-   ]),
+]),
 
 # script_get_tld_distance
 # Store real walking distance between parties (to handle Gondor towns), because aerial distance across White Mountains can be way off
 # Input: party1, party2
 # Output: reg0 - distance
-  ("get_tld_distance",
+("get_tld_distance",
    [
      (store_script_param, ":party1", 1),
      (store_script_param, ":party2", 2),
@@ -2773,12 +2763,12 @@ ai_scripts = [
      (else_try),
        (store_distance_to_party_from_party, reg0, ":party1", ":party2"),
      (try_end),
-   ]),
+]),
 
 # script_cf_party_is_south_of_white_mountains
 # Party is south of White Mountains, i.e. south of the Hornburg-Minas Tirith line, west of Minas Tirith-Haradrim Camp line
 # Input: party
-  ("cf_party_is_south_of_white_mountains",
+("cf_party_is_south_of_white_mountains",
    [
      (store_script_param, ":party", 1),
      
@@ -2819,13 +2809,12 @@ ai_scripts = [
 # (assign, reg0, ":yline"),
 # (assign, reg1, ":yparty"),
 # (display_message, "@Debug: The party is west of Harad-MT line. (Line: {reg0}, Party: {reg1})"),
-     
-   ]),
+]),
 
 # script_cf_party_is_north_of_white_mountains
 # Party is north of White Mountains, i.e. north of the Hornburg-Minas Tirith line, west of Minas Tirith-Morannon line
 # Input: party
-  ("cf_party_is_north_of_white_mountains",
+("cf_party_is_north_of_white_mountains",
    [
      (store_script_param, ":party", 1),
      
@@ -2866,14 +2855,13 @@ ai_scripts = [
 # (assign, reg0, ":yline"),
 # (assign, reg1, ":yparty"),
 # (display_message, "@Debug: The party is west of Morannon-MT line. (Line: {reg0}, Party: {reg1})"),
-     
-   ]),
+]),
 
 # script_get_line_through_parties
 # Get a line y=Ax+B that passes through both input parties, where A=A_mul/A_div
 # Input: party1, party2
 # Output: reg0=A_mul, reg1=A_div, reg2=B
-  ("get_line_through_parties",
+("get_line_through_parties",
    [
      (store_script_param, ":party1", 1),
      (store_script_param, ":party2", 2),
@@ -2897,5 +2885,73 @@ ai_scripts = [
      (val_mul, reg2, -1),
      (val_add, reg2, ":y1"),
 # (display_message, "@Debug: script_get_line_through_parties: y = {reg0}/{reg1}*x + {reg2}"),
-   ]),
+]),
+
+# script_get_advcamp_pos_predefined
+# Gets a position of the advance camp in another theater (looks up faction active theater)
+# Input: faction
+# Output: pos1
+# Uses pos2 and pos3
+("get_advcamp_pos_predefined",
+   [(store_script_param, ":faction", 1),
+    (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
+    (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
+    (assign, ":camp", "p_camplace_M1"), # some default
+	(assign, ":campend", "p_camplace_S1"),
+    (try_begin),
+        (eq, ":active_theater", theater_N), (assign, ":camp", "p_camplace_N1"),(assign, ":campend", "p_camplace_M1"),
+    (else_try),
+        (eq, ":active_theater", theater_SE), (assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_ancient_ruins"),
+	(else_try),
+        (eq, ":active_theater", theater_C),(eq, ":home_theater", theater_N),(assign, ":camp", "p_camplace_N1"),(assign, ":campend", "p_camplace_M1"),
+	(else_try),
+        (eq, ":active_theater", theater_C),(neq, ":home_theater", theater_N),(assign, ":camp", "p_camplace_M1"),(assign, ":campend", "p_camplace_S1"),
+    (else_try),
+        (eq, ":active_theater", theater_SW),(eq, ":home_theater", theater_SE),(assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_ancient_ruins"),
+    (else_try),
+         (eq, ":active_theater", theater_SW),(neq, ":home_theater", theater_SE),(assign, ":camp", "p_camplace_M1"),(assign, ":campend", "p_camplace_S1"),
+    (try_end),
+     
+	(assign, ":continue", 1),
+	(try_for_range, ":cur_center", ":camp", ":campend"), # look for available predefined places
+		(eq, ":continue", 1), 
+		(party_slot_eq, ":cur_center", slot_camp_place_occupied, 0),
+		(party_set_slot,":cur_center", slot_camp_place_occupied, 1),
+		(party_get_position, pos1, ":cur_center"),
+		(assign, ":continue", 0),
+	(try_end),
+	
+	(party_get_position, pos2, ":camp"),
+    (try_begin),
+		(eq, ":continue", 1), # all predefined places occupied, spawn around camp begin
+		(assign, ":radius", 5),
+		(try_for_range, ":tries", 0, 1000),
+		   (eq, ":continue", 1),
+		   (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
+		   (assign, ":too_close", 0),
+		   (try_for_range, ":cur_center", centers_begin, centers_end),		   # check if too close to another center
+			 (eq, ":too_close", 0),
+			 (party_is_active, ":cur_center"), #TLD
+			 (store_faction_of_party, ":cur_faction", ":cur_center"),
+			 (store_relation, ":rel", ":cur_faction", ":faction"),
+			 (party_get_position, pos3, ":cur_center"),
+			 (get_distance_between_positions, ":cur_dist", pos1, pos3),
+			 (try_begin),
+			   (lt, ":cur_dist", 800), #at least 10(8 GA) clicks from enemy centers
+			   (this_or_next|lt, ":rel", 0),
+			   (lt, ":cur_dist", 400), #at least 5 (4 GA) clicks from friendly centers
+			   (assign, ":too_close", 1),
+			 (try_end),
+		   (try_end),
+		   (try_begin),
+			 (eq, ":too_close", 0),
+			 (assign, ":continue", 0),
+		   (else_try), # increase radius for every 5 unsuccessful tries
+			 (store_mod, ":tries_mod", ":tries", 5),
+			 (eq, ":tries_mod", 4),
+			 (val_add, ":radius", 1),
+		   (try_end),
+		(try_end),
+	(try_end),     # out comes pos1
+]),
 ]

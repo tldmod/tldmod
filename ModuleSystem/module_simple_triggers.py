@@ -2643,7 +2643,7 @@ simple_triggers = [
         
         # set up the advance camp
         (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
-        (call_script, "script_get_advcamp_pos", ":faction"), #fills pos1
+        (call_script, "script_get_advcamp_pos_predefined", ":faction"), #fills pos1
         (party_set_position, ":adv_camp", pos1), #teleport!
         (enable_party, ":adv_camp"), #enable.. works if it's enabled already too
         (call_script, "script_theater_name_to_s15", ":active_theater"),

@@ -230,6 +230,7 @@ slot_party_retreat_flag        = 2
 slot_party_ignore_player_until = 3
 slot_party_ai_state            = 4
 slot_mound_state               = 4  #TLD
+slot_camp_place_occupied       = 4  #TLD
 slot_party_ai_object           = 5
 slot_mound_killer_faction      = 5  #TLD
 
