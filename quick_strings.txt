@@ -1,4 +1,4 @@
-908
+909
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -356,7 +356,7 @@ qstr__{s7}_has_assumed_th _{s7}_has_assumed_the_command_of_a_{s5}_host!
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
-qstr_{s1}_ruins {s1}_ruins
+qstr_____{s1}_ruins____ ____{s1}_ruins____
 qstr_ranks ranks
 qstr_shield_wall shield_wall
 qstr_wedge wedge
@@ -665,6 +665,7 @@ qstr_Luckily_some_of_your Luckily_some_of_your_companions_come_to_search_for_you
 qstr_Luckily_some_passing Luckily_some_passing_townspeople_find_you_lying_by_the_side_of_the_road,_and_recognise_you_as_something_other_than_a_simple_beggar._They_carry_you_to_the_nearest_inn_and_dress_your_wounds.
 qstr_You_fail_to_steal_an You_fail_to_steal_any_cattle.
 qstr_You_drive_away_{reg1 You_drive_away_{reg17}_{reg12?heads:head}_of_cattle_from_the_village's_herd.
+qstr_The_{s1}_is_destroye The_{s1}_is_destroyed,_only_smoldering_ruins_remain.
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_pts._per_night)

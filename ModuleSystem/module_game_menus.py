@@ -127,11 +127,13 @@ game_menus = [
 	
 		# relocate party next to own capital
 		(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
-		(try_for_range, ":i", towns_begin, towns_end),
+		(try_for_range, ":i", centers_begin, centers_end),
+			(party_is_active, ":i"), #TLD
+		    (party_slot_eq, ":i", slot_center_destroyed, 0), #TLD
 			(gt, "$players_subkingdom", 0), # player has a subfaction
 			(party_slot_eq, ":i", slot_party_subfaction, "$players_subkingdom"), # i this is the  capital of the subfaction
 			(assign, reg20, ":i"), 
-			(assign, ":i", towns_end),  # break
+			(assign, ":i", centers_end),  # break
 		(try_end),
 		(party_relocate_near_party, "p_main_party", reg20, 8),
 	
@@ -2185,8 +2187,8 @@ game_menus = [
       (assign, ":faction_caravan", 0),
       
       # determine faction spawns (scouts, raiders, patrol, caravan) by looking at center spawns
-      (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
-        #(party_is_active, ":center_no"), #TLD
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":cur_kingdom"),
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
@@ -2315,8 +2317,9 @@ game_menus = [
       
       (str_store_faction_name, s4, ":cur_kingdom"),
       (str_store_string, s1, "@Daily strength income and garrisons for {s4}"),
-      (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+      (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":cur_kingdom"),
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
@@ -2782,13 +2785,14 @@ game_menus = [
 		(assign,"$capturer_party",1),
 		
 		#(troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
-		(assign,":end",walled_centers_end),#breaking control flow
-		(try_for_range,":center",walled_centers_begin,":end"),
+		(assign,":end",centers_end),#breaking control flow
+		(try_for_range,":center",centers_begin,":end"),
             (party_is_active, ":center"), #TLD
+	        (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
 			(party_get_slot,":owner",":center",slot_town_lord),
 			(eq,":owner",":leader"),
 			(assign,"$capturer_party",":center"),#prison for player
-			(assign,":end",walled_centers_begin),#ending control flow
+			(assign,":end",centers_begin),#ending control flow
 		(try_end),
 		
 		#freeing player's prisoners
@@ -2827,10 +2831,12 @@ game_menus = [
 			(store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
 			(troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
 			(troop_set_health, ":npc", 100),
-			#(store_random_in_range, ":rand_town", towns_begin, towns_end),
+			#(store_random_in_range, ":rand_town", centers_begin, centers_end),
 			#(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
 			(assign, ":nearest_town_dist", 1000),
-			(try_for_range, ":town_no", towns_begin, towns_end),
+			(try_for_range, ":town_no", centers_begin, centers_end),
+				(party_is_active,":town_no"),  #TLD
+			    (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
 				(store_faction_of_party, ":town_fac", ":town_no"),
 				(store_relation, ":reln", ":town_fac", "fac_player_faction"),
 				(ge, ":reln", 0),
@@ -4440,7 +4446,7 @@ game_menus = [
 			  (str_store_party_name, s3, ":impressed_party"),
 			  (store_faction_of_party, "$impressed_faction", ":impressed_party"),
 			  (try_begin),
-                (is_between, ":impressed_party", towns_begin, towns_end), 
+                (is_between, ":impressed_party", centers_begin, centers_end), 
                 (display_log_message, "@News of your victory against {s4} reach {s3}.", color_good_news),
                 
 			  (else_try), 
@@ -5480,7 +5486,7 @@ game_menus = [
         (else_try),
           (lt, "$g_encountered_party_relation", 0),
           (str_store_string, s3, "str_place_is_occupied_by_enemy"),
-        (else_try),
+#        (else_try),
 #          (str_store_string, s3, "str_place_is_occupied_by_friendly"),
         (try_end),
 
@@ -6393,7 +6399,7 @@ game_menus = [
         (try_end),
         (assign, reg2, 0),
         (try_begin),
-          (is_between, "$g_encountered_party", towns_begin, towns_end),
+          (is_between, "$g_encountered_party", centers_begin, centers_end),
           (assign, reg2, 1),
         (try_end),
     ],
@@ -7747,7 +7753,12 @@ game_menus = [
           (call_script, "script_describe_center_relation_to_s3", ":center_relation"),
           (assign, reg9, ":center_relation"),
           (str_store_string, s12, "@ {s3} ({reg9})."),
-        (try_end),
+		(else_try),
+          (party_slot_eq,"$current_town",slot_party_type, spt_ruined_center),
+		  (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
+		  (str_store_troop_name_plural, s1, ":elder_troop"),
+          (str_store_string, s12, "@The {s1} is destroyed, only smoldering ruins remain."),
+		(try_end),
 
         (str_clear, s13),
 
@@ -7777,7 +7788,7 @@ game_menus = [
         ],
     [
        # stub menus to make passage 2 lead to castle
-	   ("town_menu_0",[(eq,1,0)],"Go to some location.",
+	   ("town_menu_0",[(eq,0,1),],"Go to some location.",
        [], "Door to some location."),
 
        ("town_approach",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
@@ -7865,13 +7876,10 @@ game_menus = [
       (neg|party_slot_eq, "$current_town", slot_town_merchant, "trp_no_troop"),
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
        "Visit the {s61} Stables and Warehouse.",
-       [
-           (party_get_slot, ":merchant_troop", "$current_town", slot_town_merchant),
-           (change_screen_trade, ":merchant_troop"),
+       [  (party_get_slot, ":merchant_troop", "$current_town", slot_town_merchant),
+          (change_screen_trade, ":merchant_troop"),
         ]),
 
-
-       
 	   ("town_prison",
        [(eq, 1, 0)],"Never: Enter the prison.",
        [   (try_begin),
@@ -7889,7 +7897,7 @@ game_menus = [
 		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
-      ("dungeon_enter",[
+      ("dungeon_enter",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
         (eq, "$current_town", "p_town_erebor"),
         (eq,"$dungeon_access",1),
         ],"Enter the cellars.",[
@@ -7904,9 +7912,8 @@ game_menus = [
        ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)	  
 		
-		       ("talk_to_castle_commander",[
+	("talk_to_castle_commander",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	   	  (eq,"$entry_to_town_forbidden",0), 
-
           (party_get_num_companions, ":no_companions", "$g_encountered_party"),
           (ge, ":no_companions", 1),
        ],"Visit the {s61} Barracks.",[
@@ -7936,7 +7943,7 @@ game_menus = [
         ]),
 
 	  ("castle_wait",
-       [#   (party_slot_eq,"$current_town",slot_party_type, spt_castle),
+       [   (party_slot_eq,"$current_town",slot_party_type, spt_town),
 		   (eq,"$entry_to_town_forbidden",0),
            (this_or_next|ge, "$g_encountered_party_relation", 0),
            (eq,"$castle_undefended",1),
@@ -8417,10 +8424,12 @@ game_menus = [
         (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
         (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
         (troop_set_health, ":npc", 100),
-        #(store_random_in_range, ":rand_town", towns_begin, towns_end),
+        #(store_random_in_range, ":rand_town", centers_begin, centers_end),
         #(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
         (assign, ":nearest_town_dist", 1000),
-        (try_for_range, ":town_no", towns_begin, towns_end),
+        (try_for_range, ":town_no", centers_begin, centers_end),
+		  (party_is_active, ":town_no"), #TLD
+		  (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
           (store_faction_of_party, ":town_fac", ":town_no"),
           (store_relation, ":reln", ":town_fac", "fac_player_faction"),
           (ge, ":reln", 0),
@@ -9688,6 +9697,17 @@ game_menus = [
 	(store_faction_of_party, ":faction", ":mound"),
 	(str_store_faction_name, s2, ":faction")],[
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
+]),
+
+( "town_ruins",mnf_enable_hot_keys|city_menu_color,
+	"When you ride near, you see that {s1} is destroyed, only smoldering ruins remain.",
+    "none",[ (party_get_slot,":mesh","$g_encountered_party",slot_town_menu_background),
+		  (set_background_mesh, ":mesh"),
+		  (party_get_slot, ":elder_troop", "$g_encountered_party", slot_town_elder),
+		  (str_store_troop_name_plural, s1, ":elder_troop"),
+        ],
+    [("ruin_menu_0",[(eq,0,1)],"Go to some location.",[], "Door to some location."),
+     ("ruin_leave",[],"Leave...",[(change_screen_return)]),
 ]),
 
 ] 

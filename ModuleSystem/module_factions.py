@@ -50,7 +50,7 @@ factions = [
   ("tribal_orcs","Tribal Orcs",0,0.5,[("gondor",-0.5),("rohan",-0.5),("lorien",-0.5 ),("imladris",-0.5 ),("woodelf",-0.5 ),("mordor", -0.5),("harad", -0.5 ),("rhun",-0.5 ),("khand",-0.5 ),("dunland",-0.5 ),("umbar",-0.5 ),("isengard",-0.5 ),("moria",-0.5),("guldur",-0.5)                                                                    ], [], 0x414141),
 ##TLD FACTIONS END##########
 
-  ("neutral","Neutral",0, 0.1,[("player_faction",0.0)], [],0xFFFFFF),
+  ("neutral","ruins",ff_always_hide_label, 0.1,[("player_faction",0.0)], [],0x888888),
   ("innocents","Innocents", ff_always_hide_label, 0.5,[("outlaws",-0.05)], []),
   ("merchants","Merchants", ff_always_hide_label, 0.5,[("outlaws",-0.5),], []),
 

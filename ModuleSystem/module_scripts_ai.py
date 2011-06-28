@@ -39,11 +39,11 @@ ai_scripts = [
         (call_script, "script_party_calculate_strength", ":cur_party", 0), #will update slot_party_cached_strength for hero parties
       (try_end),
       (call_script, "script_party_calculate_strength", "p_main_party", 0), #will update slot_party_cached_strength for player party
-      (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+      (try_for_range, ":cur_center", centers_begin, centers_end),
         (call_script, "script_party_calculate_strength", ":cur_center", 0), #will update slot_party_cached_strength for centers
       (try_end),
 
-      (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+      (try_for_range, ":cur_center", centers_begin, centers_end),
         (store_faction_of_party, ":center_faction", ":cur_center"),
         (is_between, ":center_faction", kingdoms_begin, kingdoms_end),
         (call_script, "script_party_calculate_and_set_nearby_friend_strength", ":cur_center"),
@@ -185,7 +185,8 @@ ai_scripts = [
 
            #Number of walled centers under siege
            (assign, ":num_centers_under_siege", 0),
-           (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+           (try_for_range, ":cur_center", centers_begin, centers_end),
+		     (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
              (party_slot_ge, ":cur_center", slot_center_is_besieged_by, 0),
              (store_faction_of_party, ":center_faction", ":cur_center"),
              (eq, ":center_faction", ":faction_no"),
@@ -214,9 +215,9 @@ ai_scripts = [
          (try_end),
          (assign, ":best_besiege_center", -1),
          (assign, ":best_besiege_center_score", 0),
-         (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
+         (try_for_range, ":enemy_walled_center", centers_begin, centers_end),
            (party_is_active, ":enemy_walled_center"), #don't attack disabled centers
-           
+           (party_slot_eq, ":enemy_walled_center", slot_center_destroyed, 0), #TLD
            #MV: make sure the center is in the active theater
            (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
            
@@ -466,6 +467,7 @@ ai_scripts = [
          (assign, ":best_attack_army_score", 0),
          (try_for_range, ":center_no", centers_begin, centers_end),
            (party_is_active, ":center_no"), #TLD
+		   (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
            (store_faction_of_party, ":center_faction", ":center_no"),
            #TLD: factions helping allies
            (store_relation, ":fac_rln", ":center_faction", ":faction_no"),
@@ -765,6 +767,7 @@ ai_scripts = [
 
       (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":faction_no"),
         (try_begin),
@@ -1645,9 +1648,9 @@ ai_scripts = [
 
           (assign, ":best_besiege_center", -1),
           (assign, ":best_besiege_center_score", 0),
-          (try_for_range, ":enemy_walled_center", walled_centers_begin, walled_centers_end),
+          (try_for_range, ":enemy_walled_center", centers_begin, centers_end),
             (party_is_active, ":enemy_walled_center"), #TLD
-            
+            (party_slot_eq, ":enemy_walled_center", slot_center_destroyed, 0), #TLD
             #MV: make sure the center is in the active theater
             (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
             
@@ -1734,6 +1737,7 @@ ai_scripts = [
           (assign, ":best_patrol_target", -1),
           (try_for_range, ":center_no", centers_begin, centers_end), #find closest center that has spotted enemies.
             (party_is_active, ":center_no"), #TLD
+			(party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
             (store_faction_of_party, ":center_faction", ":center_no"),
             (eq, ":center_faction", ":faction_no"),
             #(store_distance_to_party_from_party, ":distance", ":party_no", ":center_no"),
@@ -2039,7 +2043,7 @@ ai_scripts = [
           (party_get_attached_to, ":cur_town", ":party_no"),
           # Make the party sortie outside, so that it will drive away any enemies??
           (try_begin),
-            (is_between, ":cur_town", walled_centers_begin, walled_centers_end),
+            (is_between, ":cur_town", centers_begin, centers_end),
             (assign, ":sortie_chance", 50),
             (try_begin),
               (party_get_attached_to, ":cur_town", ":party_no"),
@@ -2089,6 +2093,7 @@ ai_scripts = [
         (assign, reg0, -1),
         (try_for_range, ":cur_center", centers_begin, centers_end),
             (party_is_active, ":cur_center"), #TLD
+			(party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
             (store_faction_of_party, ":cur_faction", ":cur_center"),
             (store_relation, ":rel", ":cur_faction", ":faction"),
             (lt, ":rel", 0),
@@ -2650,6 +2655,7 @@ ai_scripts = [
        (try_for_range, ":cur_center", centers_begin, centers_end),
          (eq, ":too_close", 0),
          (party_is_active, ":cur_center"), #TLD
+		 (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
          (store_faction_of_party, ":cur_faction", ":cur_center"),
          (store_relation, ":rel", ":cur_faction", ":faction"),
          (party_get_position, pos3, ":cur_center"),
@@ -2709,17 +2715,14 @@ ai_scripts = [
 		   (le, ":dist",1),
 		   (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
 		(try_end),
+	    (disable_party, ":center"),
      (else_try),
        (party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
-       # replace with ruins
-       (set_spawn_radius, 0),
-       (spawn_around_party, ":center", "pt_ruins"),
-       (assign, ":ruin_party", reg0),
-       #(party_get_icon, ":map_icon", ":center"),
-       #(party_set_icon, ":ruin_party", ":map_icon"),
-       (party_set_flags, ":ruin_party", pf_is_static|pf_always_visible|pf_hide_defenders, 1),
+       (party_set_slot, ":center", slot_party_type, spt_ruined_center),
+       (party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),
+	   (party_set_banner_icon, ":center", "icon_mfp_northmen"),
        (str_store_party_name, s1, ":center"),
-       (party_set_name, ":ruin_party", "@{s1} ruins"),
+       (party_set_name, ":center", "@____{s1} ruins____"),
        (party_set_faction, ":center", "fac_neutral"), #purely defensive
      (try_end),
      
@@ -2727,8 +2730,7 @@ ai_scripts = [
      # (faction_get_slot, ":strength", ":center_faction", slot_faction_strength_tmp),
      # (val_sub, ":strength", ws_center_vp),
      # (faction_set_slot, ":center_faction", slot_faction_strength_tmp, ":strength"),
-     
-     (disable_party, ":center"),
+     # (disable_party, ":center"),
      (call_script, "script_update_center_notes", ":center"),
 ]),
 
@@ -2932,6 +2934,7 @@ ai_scripts = [
 		   (try_for_range, ":cur_center", centers_begin, centers_end),		   # check if too close to another center
 			 (eq, ":too_close", 0),
 			 (party_is_active, ":cur_center"), #TLD
+			 (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
 			 (store_faction_of_party, ":cur_faction", ":cur_center"),
 			 (store_relation, ":rel", ":cur_faction", ":faction"),
 			 (party_get_position, pos3, ":cur_center"),

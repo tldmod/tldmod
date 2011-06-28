@@ -244,6 +244,7 @@ simple_triggers = [
 #Party AI: pruning some of the prisoners in each center (once a week)
 (24*7,[(try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
+		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (party_get_num_prisoner_stacks, ":num_prisoner_stacks",":center_no"),
          (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
            (party_prisoner_stack_get_troop_id, ":stack_troop",":center_no",":stack_no"),
@@ -270,8 +271,9 @@ simple_triggers = [
         (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
         (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men up to lord-specific limit
       (try_end),
-       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+       (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
+		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (neg|party_slot_eq, ":center_no", slot_town_lord, "trp_player"), #center does not belong to player.
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
          (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
@@ -299,6 +301,7 @@ simple_triggers = [
   (24*15,
    [(try_for_range, ":center_no", centers_begin, centers_end),
       (party_is_active, ":center_no"), #TLD
+	  (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
       (call_script, "script_get_center_ideal_prosperity", ":center_no"),
       (assign, ":ideal_prosperity", reg0),
       (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
@@ -328,7 +331,7 @@ simple_triggers = [
       (neg|map_free),
       (ge, "$g_last_rest_center", 0),
       (this_or_next|party_slot_eq, "$g_last_rest_center", slot_center_has_manor, 1),
-      (is_between, "$g_last_rest_center", walled_centers_begin, walled_centers_end),
+      (is_between, "$g_last_rest_center", centers_begin, centers_end),
       (assign, ":resting_at_manor_or_walled_center", 1),
     (try_end),
     (eq, ":resting_at_manor_or_walled_center", 0),
@@ -349,8 +352,9 @@ simple_triggers = [
          (party_upgrade_with_xp, ":hero_party", ":xp_gain"),
        (try_end),
        
-       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+       (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
+		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (store_random_in_range, ":rand", 0, 100),
          (lt, ":rand", 10),
          (party_get_slot, ":center_lord", ":center_no", slot_town_lord),
@@ -386,6 +390,7 @@ simple_triggers = [
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
          (try_for_range, ":center_no", centers_begin, centers_end),
            (party_is_active, ":center_no"),
+		   (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
            (store_faction_of_party, ":center_faction", ":center_no"),
            (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
            (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant
@@ -477,7 +482,9 @@ simple_triggers = [
 
   # Process siege ai
   (3,[(store_current_hours, ":cur_hours"),
-      (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
+	    (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":besieger_party", ":center_no", slot_center_is_besieged_by),
         (gt, ":besieger_party", 0),
         (party_is_active, ":besieger_party"),
@@ -755,7 +762,7 @@ simple_triggers = [
 ##         (troop_get_slot, ":troop_center", ":troop_no", slot_troop_cur_center),
 ##         (assign, ":is_under_siege", 0),
 ##         (try_begin),
-##           (is_between, ":troop_center", walled_centers_begin, walled_centers_end),
+##           (is_between, ":troop_center", centers_begin, centers_end),
 ##           (party_get_battle_opponent, ":besieger_party", ":troop_center"),
 ##           (gt, ":besieger_party", 0),
 ##           (assign, ":is_under_siege", 1),
@@ -825,9 +832,10 @@ simple_triggers = [
   # Check escape chances of hero prisoners.
   (48,
    [   (call_script, "script_randomly_make_prisoner_heroes_escape_from_party", "p_main_party", 50),
-       (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+       (try_for_range, ":center_no", centers_begin, centers_end),
 ##         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
          (party_is_active, ":center_no"), #TLD
+		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (assign, ":chance", 30),
          (try_begin),
            (party_slot_eq, ":center_no", slot_center_has_prisoner_tower, 1),
@@ -959,7 +967,7 @@ simple_triggers = [
 
            (assign, ":can_leave", 1),
            (try_begin),
-             (is_between, ":cur_center", walled_centers_begin, walled_centers_end),
+             (is_between, ":cur_center", centers_begin, centers_end),
              (neg|party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
              (assign, ":can_leave", 0),
            (try_end),
@@ -987,7 +995,7 @@ simple_triggers = [
              (eq, ":target_center", -1),
              (remove_party, ":party_no"), #MV: no towns to travel to, remove
            #(try_end),
-           (is_between, ":target_center", towns_begin, towns_end),
+           (is_between, ":target_center", centers_begin, centers_end),
 #           (display_message, "@DEBUG: target", 0xff00fd33),
            (neg|party_is_in_town, ":party_no", ":target_center"),
 #            (display_message, "@DEBUG: set off", 0xff00fd33),
@@ -1015,7 +1023,7 @@ simple_triggers = [
 #
 #         (assign, ":can_leave", 1),
 #         (try_begin),
-#           (is_between, ":cur_center", walled_centers_begin, walled_centers_end),
+#           (is_between, ":cur_center", centers_begin, centers_end),
 #           (neg|party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
 #           (assign, ":can_leave", 0),
 #         (try_end),
@@ -1104,16 +1112,16 @@ simple_triggers = [
 #    ]),
 
  #Increase castle food stores
-  (2,[(try_for_range, ":center_no", castles_begin, castles_end),
-         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #castle is not under siege
-         (party_get_slot, ":center_food_store", ":center_no", slot_party_food_store),
-         (val_add, ":center_food_store", 100),
-         (call_script, "script_center_get_food_store_limit", ":center_no"),
-         (assign, ":food_store_limit", reg0),
-         (val_min, ":center_food_store", ":food_store_limit"),
-         (party_set_slot, ":center_no", slot_party_food_store, ":center_food_store"),
-       (try_end),
-    ]),
+  # (2,[(try_for_range, ":center_no", castles_begin, castles_end),
+         # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #castle is not under siege
+         # (party_get_slot, ":center_food_store", ":center_no", slot_party_food_store),
+         # (val_add, ":center_food_store", 100),
+         # (call_script, "script_center_get_food_store_limit", ":center_no"),
+         # (assign, ":food_store_limit", reg0),
+         # (val_min, ":center_food_store", ":food_store_limit"),
+         # (party_set_slot, ":center_no", slot_party_food_store, ":center_food_store"),
+       # (try_end),
+    # ]),
 
  #cache party strengths (to avoid re-calculating)
 ##  (2,[ (try_for_range, ":cur_troop", heroes_begin, heroes_end),
@@ -1124,13 +1132,13 @@ simple_triggers = [
 ##       (try_end),
 ##    ]),
 ##  
-##  (6,[ (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+##  (6,[ (try_for_range, ":cur_center", centers_begin, centers_end),
 ##         (call_script, "script_party_calculate_strength", ":cur_center", 0), #will update slot_party_cached_strength
 ##       (try_end),
 ##     ]),
 
 ##  (1,
-##   [   (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+##   [   (try_for_range, ":cur_center", centers_begin, centers_end),
 ##         (store_random_in_range, ":rand", 0, 100),
 ##         (lt, ":rand", 10),
 ##         (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -1183,8 +1191,9 @@ simple_triggers = [
              (try_end),
              (eq, ":continue", 1),
              (assign, ":done", 0),
-             (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
+             (try_for_range, ":cur_center", centers_begin, centers_end),
                (party_is_active, ":cur_center"), #TLD
+			   (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
                (eq, ":done", 0),
                (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
                (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -1229,6 +1238,7 @@ simple_triggers = [
      (eq, "$g_player_is_captive", 0),
      (try_for_range, ":cur_center", centers_begin, centers_end),
        (party_is_active, ":cur_center"), #TLD
+	   (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
        (store_faction_of_party, ":cur_faction", ":cur_center"),
        (store_relation, ":reln", ":cur_faction", "fac_player_supporters_faction"),
        (lt, ":reln", 0),
@@ -1437,8 +1447,8 @@ simple_triggers = [
 #   [(neq, "$g_ransom_offer_rejected", 1),
 #    (call_script, "script_offer_ransom_amount_to_player_for_prisoners_in_party", "p_main_party"),
 #    (eq, reg0, 0),#no prisoners offered
-#    (assign, ":end_cond", walled_centers_end),
-#    (try_for_range, ":center_no", walled_centers_begin, ":end_cond"),
+#    (assign, ":end_cond", centers_end),
+#    (try_for_range, ":center_no", centers_begin, ":end_cond"),
 #      (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
 #      (call_script, "script_offer_ransom_amount_to_player_for_prisoners_in_party", ":center_no"),
 #      (eq, reg0, 1),#a prisoner is offered
@@ -1450,7 +1460,7 @@ simple_triggers = [
 # no such thing in TLD, GA
 #  (72,
 #   [(assign, "$g_ransom_offer_rejected", 0),
-#    (try_for_range, ":center_no", walled_centers_begin, walled_centers_end),
+#    (try_for_range, ":center_no", centers_begin, centers_end),
 #      (party_get_slot, ":town_lord", ":center_no", slot_town_lord),
 #      (gt, ":town_lord", 0),
 #      (party_get_num_prisoner_stacks, ":num_stacks", ":center_no"),
@@ -1500,6 +1510,7 @@ simple_triggers = [
   (36,
    [(try_for_range, ":center_no", centers_begin, centers_end),
       (party_is_active, ":center_no"), #TLD
+	  (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
       (this_or_next|party_slot_eq, ":center_no", slot_party_type, spt_town),
       (             party_slot_eq, ":center_no", slot_party_type, spt_village),
       (call_script, "script_center_remove_walker_type_from_walkers", ":center_no", walkert_needs_money),
@@ -1518,6 +1529,7 @@ simple_triggers = [
   (12,
    [(try_for_range, ":center_no", centers_begin, centers_end),
       (party_is_active, ":center_no"), #TLD
+	  (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
       (party_get_slot, ":cur_improvement", ":center_no", slot_center_current_improvement),
       (gt, ":cur_improvement", 0),
       (party_get_slot, ":cur_improvement_end_time", ":center_no", slot_center_improvement_end_hour),
@@ -1711,6 +1723,8 @@ simple_triggers = [
      (ge, ":level", 8),
      (assign, ":cur_target_amount", 2),
      (try_for_range, ":cur_center", centers_begin, centers_end),
+	   (party_is_active, ":cur_center"), #TLD
+	   (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
        (party_slot_eq, ":cur_center", slot_town_lord, "trp_player"),
        (try_begin),
          (party_slot_eq, ":cur_center", slot_party_type, spt_town),
@@ -1782,7 +1796,7 @@ simple_triggers = [
              (try_begin),
                (faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_attacking_center),
                (faction_get_slot, ":ai_object", "$players_kingdom", slot_faction_ai_object),
-               (is_between, ":ai_object", walled_centers_begin, walled_centers_end),
+               (is_between, ":ai_object", centers_begin, centers_end),
                (party_get_battle_opponent, ":besieged_center", ":faction_marshall_party"),
                (eq, ":besieged_center", ":ai_object"),
                #army is assaulting the center

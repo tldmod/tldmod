@@ -96,7 +96,8 @@ triggers = [
     #(set_item_probability_in_merchandise,"itm_smoked_fish",400),
     #(troop_add_merchandise,"trp_salt_mine_merchant",itp_type_goods,num_merchandise_goods),
 					  
-    (try_for_range,":cur_center",towns_begin,towns_end),
+    (try_for_range,":cur_center",centers_begin, centers_end),
+		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
         (party_get_slot,":cur_merchant",":cur_center",slot_town_merchant),
         (neq, ":cur_merchant", "trp_no_troop"),
         (reset_item_probabilities,100),     
@@ -257,7 +258,7 @@ triggers = [
         #
       (try_for_range, ":center", centers_begin, centers_end),
         (party_is_active, ":center"),
-        
+        (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":center_scouts", ":center", slot_center_spawn_scouts),
         (party_get_slot, ":center_raiders", ":center", slot_center_spawn_raiders),
         (party_get_slot, ":center_patrol", ":center", slot_center_spawn_patrol),
