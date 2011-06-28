@@ -4010,7 +4010,7 @@ VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPositi
                     vPosition.xy;
    float t2 = time_var + dot( treePos , float2(6.5,4.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-   vPosition.xy += float2(0.18,0.18) // *(vPosition.z+50.0)
+   vPosition.xy += float2(0.018,0.018) // *(vPosition.z+50.0)
 				    *windPhase*(windAmount+0.2)
                    *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
    
@@ -4052,7 +4052,7 @@ VS_OUTPUT_FLORA_NO_SHADOW vs_mtarini_windy_grass_no_shadow(float4 vPosition : PO
    float2 treePos = float2 (matWorld._m03, matWorld._m13) + vPosition.xy;
    float t2 = time_var + dot( treePos , float2(2.5,1.5)) ;
    float windPhase = sin(t2*3.9)*cos(t2*2.3);
-	vPosition.xy += float2(0.18,0.18) // *(vPosition.z+50.0)
+	vPosition.xy += float2(0.018,0.018) // *(vPosition.z+50.0)
 				    *windPhase*(windAmount+0.2)
                    *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
    	
@@ -4070,7 +4070,7 @@ VS_OUTPUT_FLORA_NO_SHADOW vs_mtarini_windy_grass_no_shadow(float4 vPosition : PO
    Out.Fog = get_fog_amount(d);
    
    Out.Color.a = min(1.0f,(1.0f - (d / 50.0f)) * 2.0f);
-   Out.Color.r = 1; Out.Color.g = Out.Color.b = 1.0-vColor.w;
+   //Out.Color.r = 1; Out.Color.g = Out.Color.b = 1.0-vColor.w;
 
    return Out;
 }
@@ -4181,8 +4181,10 @@ technique mtarini_windy_grass_PRESHADED
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_grass_no_shadow();
-      PixelShader = compile ps_2_0 ps_grass_no_shadow();
+      VertexShader = compile vs_2_0 vs_mtarini_windy_grass(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_grass(PCF_NONE);
+      //VertexShader = compile vs_2_0 vs_mtarini_windy_grass_no_shadow();
+      //PixelShader = compile ps_2_0 ps_grass_no_shadow();
 	}
 }
 

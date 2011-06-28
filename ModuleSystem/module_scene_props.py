@@ -1696,7 +1696,7 @@ scene_props = [
     (position_move_y, pos1, 50),
     (position_rotate_z, pos1, 130),
     (prop_instance_animate_to_position, ":instance_no", pos1, 600), #animate in 4 second
-    (play_sound, "snd_dummy_destroyed"),
+    (play_sound, "snd_elf_song"), #dummy_destroyed"),
 	(display_message,"@Gate opens... You have reached the most sacred place in Middle Earth!"),   ]),
   ]),
 ## isengard props

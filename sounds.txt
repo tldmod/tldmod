@@ -577,6 +577,7 @@ soundsfile version 2
  horse_snort_4.ogg 1872
  horse_snort_5.ogg 1872
  spear_trap.wav 2416
+ elf_elfsong.wav 1921
  moria_loop.wav 899
  henneth_loop.wav 899
  good_forest_loop.wav 899
@@ -602,7 +603,6 @@ soundsfile version 2
  good_bird02.wav 1153
  good_bird03.wav 1153
  good_bird_wings.wav 1153
- elf_elfsong.wav 1153
  d_saw_short3.wav 1153
  d_carpenter1.wav 1153
  rohan01.wav 1153
@@ -637,7 +637,7 @@ soundsfile version 2
  morgul02.wav 1153
  osgiliath01.wav 1153
  osgiliath03.wav 1153
-256
+257
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -858,39 +858,40 @@ snd_horror_scream_orc 2720 1 565
 snd_warg_lone_woof 2656 5 566 567 568 569 570 
 snd_horse_snort_again 1872 5 571 572 573 574 575 
 snd_spear_trap 2416 1 576 
-snd_moria_ambiance 899 1 577 
-snd_henneth_ambiance 899 1 578 
-snd_goodforest_ambiance 899 1 579 
-snd_evilforest_ambiance 899 1 580 
-snd_water_waves_ambiance 899 1 581 
-snd_water_splash_ambiance 899 1 582 
-snd_water_wavesplash_ambiance 899 1 583 
-snd_wind_ambiance 899 1 584 
-snd_isengard_ambiance 899 1 585 
-snd_evilmen_ambiance 899 1 586 
-snd_orcs_ambiance 899 1 587 
-snd_morgul_ambiance 899 1 588 
-snd_gondor_ambiance 899 1 589 
-snd_rohan_ambiance 899 1 590 
-snd_dwarf_ambiance 899 1 591 
-snd_harad_ambiance 899 1 592 
-snd_gondor_occasional 1153 5 593 594 595 596 597 
-snd_elves_occasional 1153 4 598 599 600 601 
-snd_lorien_occasional 1153 5 602 598 599 600 601 
-snd_beorn_occasional 1153 7 598 599 600 596 603 597 604 
-snd_rohan_occasional 1153 10 605 606 607 608 596 593 598 595 597 609 
-snd_dwarf_occasional 1153 5 610 611 595 612 613 
-snd_dale_occasional 1153 9 598 599 600 596 603 595 597 609 614 
-snd_rhun_occasional 1153 8 605 606 607 608 615 603 595 597 
+snd_elf_song 1921 1 577 
+snd_moria_ambiance 899 1 578 
+snd_henneth_ambiance 899 1 579 
+snd_goodforest_ambiance 899 1 580 
+snd_evilforest_ambiance 899 1 581 
+snd_water_waves_ambiance 899 1 582 
+snd_water_splash_ambiance 899 1 583 
+snd_water_wavesplash_ambiance 899 1 584 
+snd_wind_ambiance 899 1 585 
+snd_isengard_ambiance 899 1 586 
+snd_evilmen_ambiance 899 1 587 
+snd_orcs_ambiance 899 1 588 
+snd_morgul_ambiance 899 1 589 
+snd_gondor_ambiance 899 1 590 
+snd_rohan_ambiance 899 1 591 
+snd_dwarf_ambiance 899 1 592 
+snd_harad_ambiance 899 1 593 
+snd_gondor_occasional 1153 5 594 595 596 597 598 
+snd_elves_occasional 1153 4 599 600 601 602 
+snd_lorien_occasional 1153 5 577 599 600 601 602 
+snd_beorn_occasional 1153 7 599 600 601 597 603 598 604 
+snd_rohan_occasional 1153 10 605 606 607 608 597 594 599 596 598 609 
+snd_dwarf_occasional 1153 5 610 611 596 612 613 
+snd_dale_occasional 1153 9 599 600 601 597 603 596 598 609 614 
+snd_rhun_occasional 1153 8 605 606 607 608 615 603 596 598 
 snd_harad_occasional 1153 10 609 606 607 608 615 603 616 617 618 619 
 snd_umbar_occasional 1153 3 620 621 622 
-snd_dunland_occasional 1153 7 615 593 623 624 625 597 604 
+snd_dunland_occasional 1153 7 615 594 623 624 625 598 604 
 snd_orc_occasional 1153 6 626 615 627 628 629 630 
 snd_guldur_occasional 1153 4 615 628 629 630 
 snd_moria_occasional 1153 4 620 620 631 632 
-snd_isengard_occasional 1153 12 632 615 628 629 630 603 627 595 610 611 614 604 
+snd_isengard_occasional 1153 12 632 615 628 629 630 603 627 596 610 611 614 604 
 snd_urukhai_occasional 1153 6 615 628 629 630 627 604 
-snd_seaside_occasional 1153 6 598 599 600 621 622 595 
+snd_seaside_occasional 1153 6 599 600 601 621 622 596 
 snd_morgul_occasional 1153 9 620 620 620 620 620 620 620 633 634 
 snd_eosgi_occasional 1153 8 628 629 630 635 613 636 614 612 
 snd_wosgi_occasional 1153 5 635 613 636 614 612 

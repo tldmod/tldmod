@@ -1,5 +1,5 @@
 scenesfile version 1
- 238
+ 239
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -463,6 +463,10 @@ scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100.00
 scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200.000000 -200.000000 200.000000 200.000000 -100.000000 0 
   1  100000 
   1  777 
+ 0 
+scn_erebor_castle erebor_castle 1 interior_gondor_training_room_b bo_interior_gondor_training_room_b -40.000000 -40.000000 40.000000 40.000000 -100.000000 0 
+  0 
+  0 
  0 
 scn_gondor_tavern gondor_tavern 1 interior_tavern_b bo_interior_tavern_b -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 

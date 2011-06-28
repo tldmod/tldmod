@@ -137,6 +137,43 @@ custom_tld_bow_to_kings = [
 	]),
 	  
 ]
+
+
+custom_tld_bow_always = [
+	
+	  
+	# push putton: go down
+	(0, 0.5, 0, [ 
+        (game_key_clicked, gk_jump), 
+		# (key_clicked, key_b),   # overrides jump key
+	    (get_player_agent_no, reg10),
+		(agent_get_horse, reg15, reg10), (eq, reg15, -1), # cancel if player mounted
+
+	    (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
+		(assign, "$player_is_bowing", 1),
+	],[ 
+		# after 1 sec, play sound
+		(game_key_is_down, gk_jump),
+		(get_player_agent_no, reg10),
+		(agent_play_sound, reg10, "snd_footstep_wood")
+	]),
+
+	# release: get up
+	(0, 0, 0, [],[ 
+	    (neq, "$player_is_bowing", 0 ),
+		(neg|game_key_is_down, gk_jump), # (key_is_down, key_b),  
+		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_get_up"),
+		(assign, "$player_is_bowing", 0 ),
+	]),
+	   
+	# keep pressed: stay down
+	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1 ), ],[ 
+		# (key_is_down, key_b),  
+		(game_key_is_down, gk_jump),
+		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
+	]),
+	  
+]
 	  
 	  
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
@@ -274,13 +311,16 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(agent_set_hit_points, ":agent", reg12, 1),
 			(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		
+			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
+			(agent_set_team, ":agent",  reg25), # this was set just above
+			(display_message,"@DEBUG: new wargs team is now: {reg25}"),
+			(agent_get_team,  reg25, ":agent"), # this was set just above
+			(display_message,"@DEBUG: double check: it is {reg25}"),
+
 			(agent_get_position,pos4,":warg"),
 			(call_script, "script_remove_agent", ":warg"),			
 			(agent_set_position, ":agent", pos4),
 		
-			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
-			(agent_set_team, ":agent",  reg25), # this was set just above
-			#(display_message,"@DEBUG: new wargs team is now: {reg45}"),
 		(try_end),
 
 	(try_end),
@@ -499,20 +539,22 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 	(agent_get_horse,":mount",":player_agent"),
     (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
-	(assign, ":mount_type", 0), # 0 = horse or huge warg,   1 = warg,   2 = pony
-	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = dwarf
+	(assign, ":mount_type", 0), # 0 = horse    1 = warg, 2 = huge warg  3 = pony
+	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk          3 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
 	
 	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
 	
-	(try_begin), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
-	(else_try), (eq, ":mount_item", "itm_pony"),(assign, ":mount_type", 2),
+	(try_begin), (eq,":mount_item", "itm_warg_reward"), (assign, ":mount_type", 2),
+	(else_try), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
+	(else_try), (eq, ":mount_item", "itm_pony"),(assign, ":mount_type", 3),
 	(try_end),
 	
 #	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
 
 	(try_begin), (eq, ":race", tf_orc),(assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
-	(else_try), (eq, ":race", tf_dwarf),(assign, ":rider_type" , 2),
+	(else_try), (is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
+	(else_try), (eq, ":race", tf_dwarf),(assign, ":rider_type" , 3),
 	(try_end),
 	
 	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
@@ -917,6 +959,7 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 			(neq,":rider",-1),
 			(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
 			(agent_get_team, reg10, ":rider"),
+			(display_message,"@warg rider has side {reg10}..."),
 			(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
 			#(display_message,"@DEBUG: This warg has side {reg10}"),
 		(try_end),
@@ -939,9 +982,7 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		
 		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@respawn{reg1} {s12}..."),
-		(add_visitors_to_current_scene,4,":warg_ghost_trp",1),
-		(add_visitors_to_current_scene,5,":warg_ghost_trp",1),
-		(add_visitors_to_current_scene,6,":warg_ghost_trp",1),
+		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
 
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),

@@ -2754,12 +2754,12 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("fullname_region_unknown", "[unkonwn region]"), # -1
 
-("fullname_region_gondor", "Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor"), #0
+("fullname_region_pelennor", "Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor"), #0
 ("fullname_region_subfac_pelargir", "the Fiefdom of Lebennin, part of the Realm of Gondor"), # pelargir
 ("fullname_region_subfac_dol_amroth", "Belfalas, the costal region in the Shouth of Gondor"), #subfac_dol_amroth
-("fullname_region_subfac_ethring", "Ringló Vale, a land part of the Realm of Gondor"), # subfac_ethring
+("fullname_region_subfac_ethring", "Ringló Vale, a valley of the Realm of Gondor"), # subfac_ethring
 ("fullname_region_subfac_lossarnach", "the Fiefdom of Lossarnach, also known as the Vale of Flowers, part of the Realm of Gondor"),
-("fullname_region_subfac_pinnath_gelin", "Pinnath Gelin (the Green Hills), a region of the Real of Gondor"),
+("fullname_region_subfac_pinnath_gelin", "the Green Hills of Pinnath Gelin, a region in the Realm of Gondor"),
 ("fullname_region_subfac_blackroot", "the Fiefdom of Lamedon, part of the Realm of Gondor"), # subfac_blackroot
 ("fullname_region_n_ithilien", "North Ithilien, easternmost province of the Realm of Gondor"),
 ("fullname_region_s_ithilien", "South Ithilien, easternmost province of the Realm of Gondor"),
@@ -2775,9 +2775,11 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_rohan3", "the Eastfold, a part of Rohan, the Riddermark"), 
 ("fullname_region_rohan4", "the Westfold, a part of Rohan, the Riddermark"), 
 ("fullname_region_rohan5", "Helm's Deep, a valley of the White Mountains, in Rohan"), 
-("fullname_region_the_wold", "the Wold, the Northeastern area of the Riddermark of Rohan"), # region_the_wold
 
-("fullname_region_rohan0", "the Mouths of the Entwash, where the Rohan river Entwash joins the Aduin"), # region_entwash = 19
+("fullname_region_the_wold", "the Wold, the Northeastern area of the Riddermark of Rohan"), # region_the_wold
+("fullname_region_gap_of_rohan","the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings."),
+
+("fullname_region_entwash", "the Mouths of the Entwash, where the Rohan river Entwash joins the Aduin"), # region_entwash = 19
 ("fullname_region_wetwang", "the Wetwang, the swamps of Nindalf"), # region_wetwang = 20
 
 ("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagorlad, now a cursed place"), #region_dead_marshes = 21
@@ -2800,7 +2802,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("shortname_region_unknown", "[unkonwn region]"), # -1
 
-("shortname_region_gondor", "Pelennor Fields"), #0
+("shortname_region_pelennor", "Pelennor Fields"), #0
 ("shortname_region_subfac_pelargir", "Fiefdom of Lebennin"), # pelargir
 ("shortname_region_subfac_dol_amroth", "Belfalas"), #subfac_dol_amroth
 ("shortname_region_subfac_ethring", "Ringló Vale"), # subfac_ethring
@@ -2822,8 +2824,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_rohan4", "Westfold"), 
 ("shortname_region_rohan5", "Helm's Deep"), 
 ("shortname_region_the_wold", "the Wold"), # region_the_wold
+("shortname_region_gap_of_rohan","the Gap of Rohan"),
 
-("shortname_region_rohan0", "the Mouths of the Entwash"), # region_entwash = 19
+("shortname_region_entwash", "the Mouths of the Entwash"), # region_entwash = 19
 ("shortname_region_wetwang", "the Wetwang"), # region_wetwang = 20
 
 ("shortname_region_dead_marshes", "the Dead Marshes"), #region_dead_marshes = 21

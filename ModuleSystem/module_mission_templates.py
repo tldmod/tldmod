@@ -802,6 +802,7 @@ mission_templates = [
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
     custom_tld_bow_to_kings +[
+		tld_player_cant_ride +
         (1, 0, ti_once, [],
          [
            (try_begin),
@@ -4424,6 +4425,32 @@ mission_templates = [
     ],
   ),
 ########################### end custom battle faction troops showoff
+
+( "aw_tomb",0,-1,
+    "silence...",
+    [(0,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons|af_override_head,0,1,() ),],
+    custom_tld_bow_always
+	 +
+	[
+	(ti_tab_pressed, 0, 0, [], [(question_box,"@Leave the place in silence?")]),
+	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	(0,0,ti_once,[],[(music_set_situation, 0),]),
+	],
+),
+
+
+( "dungeon_crawl_moria_entrance",0,-1,
+    "Explore around Moria",
+    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
+    [
+    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
+    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
+	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	dungeon_darkness_effect,
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), ]),
+  ],
+),
+
 
 # daungeon crawl
 ( "dungeon_crawl_moria_entrance",0,-1,

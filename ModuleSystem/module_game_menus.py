@@ -7804,6 +7804,16 @@ game_menus = [
        (change_screen_mission),
 	   ], "Door to the town center."),
 
+	          
+	   ("aw_chamber",
+       [(eq, 1, 0)],"Never: Enter the AW chamber.",
+       [ 
+	  	 (set_jump_mission,"mt_aw_tomb"),
+	     (jump_to_scene, "scn_aw_tomb"),
+         (change_screen_mission),
+       ],"Open the door."),
+
+		
 	  ("trade_with_arms_merchant",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
 	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
@@ -7825,23 +7835,7 @@ game_menus = [
            (change_screen_trade, ":merchant_troop"),
         ]),
 
-       ("talk_to_castle_commander",[
-	   	  (eq,"$entry_to_town_forbidden",0), 
 
-          (party_get_num_companions, ":no_companions", "$g_encountered_party"),
-          (ge, ":no_companions", 1),
-       ],"Visit the {s61} Barracks.",[
-             (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
-             (set_visitor,0,"trp_player"),
-			 (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
-             (party_stack_get_troop_id, reg(6),"$g_encountered_party",reg0),
-             (party_stack_get_troop_dna,reg(7),"$g_encountered_party",reg0),
-             (set_visitor,17,reg(6),reg(7)),
-             (set_jump_mission,"mt_conversation_encounter"),
-             (jump_to_scene,"scn_conversation_scene"),
-             (assign, "$talk_context", tc_hire_troops),
-             (change_screen_map_conversation, reg(6))
-             ]),
        
 	   ("town_prison",
        [(eq, 1, 0)],"Never: Enter the prison.",
@@ -7857,6 +7851,7 @@ game_menus = [
              (display_message,"str_door_locked",0xFFFFAAAA),
            (try_end),
         ],"Door to the prison."),
+		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
       ("dungeon_enter",[
@@ -7874,6 +7869,23 @@ game_menus = [
        ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)	  
 		
+		       ("talk_to_castle_commander",[
+	   	  (eq,"$entry_to_town_forbidden",0), 
+
+          (party_get_num_companions, ":no_companions", "$g_encountered_party"),
+          (ge, ":no_companions", 1),
+       ],"Visit the {s61} Barracks.",[
+             (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+             (set_visitor,0,"trp_player"),
+			 (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
+             (party_stack_get_troop_id, reg(6),"$g_encountered_party",reg0),
+             (party_stack_get_troop_dna,reg(7),"$g_encountered_party",reg0),
+             (set_visitor,17,reg(6),reg(7)),
+             (set_jump_mission,"mt_conversation_encounter"),
+             (jump_to_scene,"scn_conversation_scene"),
+             (assign, "$talk_context", tc_hire_troops),
+             (change_screen_map_conversation, reg(6))
+             ]),
 		
       ("speak_with_elder",[
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in

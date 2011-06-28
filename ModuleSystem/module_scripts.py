@@ -994,7 +994,7 @@ scripts = [
 		(ge,":target", 180), (store_add, ":target2", ":target", -360),
 	(try_end),
 	
-	(assign, reg1, 3),
+	(assign, reg1, 5),
 	(assign, ":best", 9999),
 	(try_for_range, ":i", 5, 64), # avoid 0..4
 		(entry_point_get_position,pos10,":i"),
@@ -10561,7 +10561,7 @@ scripts = [
 	(assign, reg1, -1),
 	 
 	(try_begin),
-		# in mordor?
+		#  mordor?
 		(is_between, ":x", -20800, -7784 ),(is_between, ":y", -3190, 8500), 
 		(assign, reg1, region_mordor),
 	(else_try),		
@@ -10570,7 +10570,7 @@ scripts = [
 		(eq, ":terrain_type", rt_swamp),
 		(assign, reg1, region_dead_marshes),
 	(else_try),
-		# in ithilien (north or south)?
+		# ithilien? (north or south)
 		(is_between, ":x", -7084, -5890 ),(is_between, ":y", -2243, 6500), 
 		(try_begin),(ge,":y",2143),
 		 	(assign, reg1, region_s_ithilien),
@@ -10578,7 +10578,12 @@ scripts = [
 		 	(assign, reg1, region_n_ithilien),
 		(try_end),
 	(else_try),
-		# entwash or wetwand
+		# s _ ithilien?  (second chance)
+		(position_set_x,pos20,-7070),(position_set_y,pos20,8003),(position_set_z,pos20,0.0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",3000),
+		(assign, reg1, region_s_ithilien),
+	(else_try),
+		# entwash? (delta entwash or wetwand)
 		(position_set_x,pos20,-3710),(position_set_y,pos20,-1570),(position_set_z,pos20,0.0),
 		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1900),
 		(try_begin),(ge,":x",-3779),
@@ -10587,33 +10592,99 @@ scripts = [
 			(assign, reg1, region_wetwang),
 		(try_end),
 	(else_try),
-		# lorien forest
+		# lorien forest?
 		(is_between, ":x", -1200, 2910),(is_between, ":y", -14100, -12143), 
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_lorien),
 	(else_try),
+		#plennor fields?
 		(position_set_x,pos20,-5306),(position_set_y,pos20,+2132),(position_set_z,pos20,0),
-		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
-		(assign, reg1, region_gondor), #plennor fields
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",7.00),
+		(assign, reg1, region_pelennor), 
 	(else_try),		
 		# determine on which side of the white mountains...
-		(store_mul,":k",":x",0.3684), (val_add,":k",":y"), 
-		(ge,":k",778.941),
-	    # or, south of white mountains
-		(assign, reg1, region_gondor+1),
+		(store_mul,":k",":x",0.37442), (val_add,":k",":y"), 
+		(ge,":k",778),
+	    # SOUTH of white mountains... pick region by GONDOR subfaction town proximity of gondor
+		(assign, reg1, region_lebennin),
+		(assign, ":min_dist", 1000000),
+		(try_for_range, ":i", "p_town_pelargir" , "p_town_edoras" ), # scan all faction capitals!
+			(party_get_slot, ":fief", ":i", slot_party_subfaction),
+			(gt, ":fief", 0),
+			(party_get_position,pos20,":i"),
+			(get_distance_between_positions, ":dist", pos20, pos1),
+			(try_begin), 
+				(le, ":dist", ":min_dist"),
+				(store_add, reg1, region_pelennor, ":fief"),
+				(assign, ":min_dist", ":dist"),
+			(try_end),
+		(try_end),
 	(else_try),
-	    # north of white mountains...
-		(assign, reg1, region_rohan),
+	    # NORTH of white mountains...
+		# ####
+		# drudan forsest?
+		(is_between, ":x", -4636, -3400),(is_between, ":y",   +941,    1997),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_druadan_forest),
+	(else_try),
+		# firien_wood?
+		(is_between, ":x", -1506, -3345),(is_between, ":y",   +80,    1449),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_firien_wood),
+	(else_try),
+		# helm's deep?
+		(party_get_position,pos20,"p_town_hornburg"),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 420),
+		(assign, reg1, region_hornburg),
+	(else_try),
+		# harrowdale? (valley where edoras is)
+		(is_between, ":x", 1948, 2515),(is_between, ":y",   -174, 1778),
+		(assign, reg1, region_harrowdale),
+	(else_try),
+		# anorien? between entwash and white mountains
+		(position_set_x,pos20,-4264),(position_set_y,pos20,+1520),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1956),
+		(assign, reg1, region_anorien),
+	(else_try),
+		# around isengard?
+		(is_between, ":x", 4498, 5867),(is_between, ":y",   -6480,    -4680),
+		(assign, reg1, region_isengard),
+	(else_try),
+		# gap of rohan?
+		(is_between, ":x", 4856, 6269),(is_between, ":y",   -2812,    -4215),
+		(assign, reg1, region_gap_of_rohan),
+	(else_try),
+		# fangorn?
+		(position_set_x,pos20,5105),(position_set_y,pos20,-8512),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 3050),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_fangorn),
+	(else_try),
+		# the wold?
+		(is_between, ":x", -4190,2307 ),(is_between, ":y",   -9615,  -6514),
+		(assign, reg1, region_the_wold),
+	(else_try),
+		# the brwon_lands?
+		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
+		(assign, reg1, region_brown_lands),
+	(else_try),
+		# the wald?
+		#(is_between, ":x", -4190,2307 ),(is_between, ":y",   -9615,  6514),
+		#(assign, reg1, region_the_wald),
 	(try_end),
+	 
 	 
   ]),
   
   # given a region, it return (in reg1) the "default faction" ruling in that region, if any (else, -1)   (matrini)
   ("region_get_faction", [
 	(store_script_param_1, ":region_id"),
-	(try_begin), (is_between,":region_id", region_gondor, region_rohan), 
+	(try_begin), (is_between,":region_id", region_pelennor, region_harrowdale), 
 		(assign, reg1, fac_gondor),
-	(else_try), (is_between, ":region_id", 	region_rohan, region_entwash),
+	(else_try), (is_between, ":region_id", 	region_harrowdale, region_entwash),
 		(assign, reg1, fac_rohan),
 	(else_try), (eq, ":region_id", 	region_isengard),
 		(assign, reg1, fac_isengard),

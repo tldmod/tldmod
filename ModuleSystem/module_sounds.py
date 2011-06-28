@@ -270,6 +270,9 @@ sounds = [
  ("horse_snort_again",sf_priority_5|sf_vol_7, ["horse_snort_1.ogg","horse_snort_2.ogg","horse_snort_3.ogg","horse_snort_4.ogg","horse_snort_5.ogg"]),
 
  ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
+ 
+ ("elf_song"   ,sf_2d|sf_priority_8|sf_vol_7,["elf_elfsong.wav"]), 
+
 
  ("moria_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["moria_loop.wav"]),
  ("henneth_ambiance"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["henneth_loop.wav"]),

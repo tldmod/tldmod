@@ -20,6 +20,73 @@ race_names = (
  "@man","@woman","@gondor","@rohan","@dunlander","@orc","@urukhai", "@uruk","@haradrim","@dwarf","@troll","@dunedain","@lothlorien","@rivendell","@mirkwood","@evil_man",
 )
 
+## SUBFACTIONS INDICES
+############
+
+subfac_regular = 0  # the capital (Gondor or Rohan)
+
+# of Gondor
+subfac_pelargir = 1
+subfac_dol_amroth = 2
+subfac_ethring = 3
+subfac_lossarnach = 4
+subfac_pinnath_gelin = 5
+subfac_blackroot = 6
+subfac_rangers = 7
+
+# of Rohan (used only for regions)
+subfac_east_emnet = 1
+subfac_west_emnet = 2
+subfac_eastfold = 3
+subfac_westfold = 4
+subfac_hornburg = 5
+
+
+## REGIONS INDICES -- just geographical regions...
+##############
+
+# six regions of Gondor, each linked to a fiefdom (same order as subfactions)
+region_pelennor = 0   # subfac_regular, i.e. minas thirit region,
+region_lebennin = 1 #subfac_pelargir = 1
+region_befalas = 2  #subfac_dol_amroth = 2
+region_ringlo = 3    #subfac_ethring = 3
+region_lossarnach = 4 # subfac_lossarnach = 4
+region_green_hills = 5  #subfac_pinnath_gelin = 5
+region_lamedon = 6  #subfac_blackroot = 6
+
+region_n_ithilien = 7   # subfac_rangers = 7
+region_s_ithilien = 8
+region_druadan_forest = 9
+region_firien_wood = 10
+region_anorien = 11
+
+# four Rohan regions, one for each "subfaction"
+region_harrowdale = 12   # subfac_regular, edoras region
+region_east_emnet = 13  # subfac_east_emnet
+region_west_emnet = 14  # subfac_west_emnet
+region_eastfold = 15 # subfac_estfold
+region_westfold = 16 # subfac_westfold
+region_hornburg = 17 # subfac_hornburg
+
+region_the_wold = 18
+region_gap_of_rohan = 19
+region_entwash = 20
+region_wetwang = 21
+region_dead_marshes = 22
+region_isengard = 23
+region_fangorn = 24
+region_brown_lands = 25
+region_misty_mountains = 26
+region_lorien = 27
+region_anduin_banks = 28
+region_n_mirkwood = 29
+region_s_mirkwood = 30
+region_above_mirkwook = 31
+region_lonely_mountains = 32
+region_mordor = 33
+
+
+
 slot_item_is_checked              = 0
 slot_item_food_bonus              = 1
 slot_item_book_reading_progress   = 2
@@ -1270,6 +1337,7 @@ tld_troops_begin = "trp_player"
 tld_troops_end = "trp_troops_end"
 tld_player_level_to_begin_war = 8
 tld_player_level_to_own_chest = 10
+
 ####################################################
 # TLD War System (foxyman and mtarini and MV) ######
 ####################################################
@@ -1492,8 +1560,8 @@ tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_s
 tld_siegable_never   = 4  # never siege
 
 
-str_fullname_region_begin = "str_fullname_region_gondor"
-str_shortname_region_begin = "str_shortname_region_gondor"
+str_fullname_region_begin = "str_fullname_region_pelennor"
+str_shortname_region_begin = "str_shortname_region_pelennor"
 
 ###########################################################################################
 # center scenes list, to assign subscenes and npcs to centers
@@ -1693,7 +1761,7 @@ center_list = [
 	("p_town_gundabad_mirkwood_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
 	    [-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_no_troop", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 		["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1, tld_siegable_always),
-	("p_town_erebor", ["scn_erebor_center", "scn_rohan_castle", "scn_rohan_prison",-1,"scn_dwarf_arena",-1, "mesh_town_erebor"],
+	("p_town_erebor", ["scn_erebor_center", "scn_erebor_castle", "scn_rohan_prison",-1,"scn_dwarf_arena",-1, "mesh_town_erebor"],
 	    ["trp_barman_erebor", "trp_town_40_weaponsmith", "trp_town_40_horse_merchant", "trp_elder_erebor", "pt_dwarf_reinf_a", "trp_dwarf_lord", "trp_dwarven_apprentice", "trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_miner"], 
 		["icon_mfc_dwarf"],[0,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 0, tld_siegable_never),
 	("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1,-1, "mesh_town_goodcamp"],
