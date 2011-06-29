@@ -191,8 +191,8 @@ map_icons = [
       [ (store_trigger_param_1, ":center"),(party_slot_eq, ":center", slot_center_destroyed,1),
         (cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_helmsdeep")])]),
   ("henneth_annun",mcn_no_shadow,"henneth_annun", 0.6,0),
-  ("isengard",mcn_no_shadow,"Isengard", 0.5,0),
-  ("minas_tirith",mcn_no_shadow,"Minas_Tirith", 0.8,0,  
+  ("isengard",mcn_no_shadow,"Isengard", 0.55,0,  1.8,1.8,0.0),
+  ("minas_tirith",mcn_no_shadow,"Minas_Tirith", 0.8,0,   0.0,-0.75,3.6, #-0.4,-0.4,3.5,
    [(ti_on_init_map_icon,
       [ (store_trigger_param_1, ":center"),(party_slot_eq, ":center", slot_center_destroyed,1),
         (cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_minastirith")])]),
@@ -293,4 +293,5 @@ map_icons = [
   ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
   ("debris",0,"debris", 0.6,0),
+  
 ]

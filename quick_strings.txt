@@ -1,4 +1,4 @@
-894
+886
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -377,11 +377,6 @@ qstr_You_have_reached_mai You_have_reached_main_square...
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
-qstr_DEBUG:_spawning_moun DEBUG:_spawning_mount_{s12}_of_{s11}
-qstr_DEBUG:_spawning_troo DEBUG:_spawning_troop_{s11}
-qstr_DEBUG:_new_wargs_has DEBUG:_new_wargs_has_{reg12}_hitpoints_left
-qstr_DEBUG:_new_wargs_tea DEBUG:_new_wargs_team_is_now:_{reg25}
-qstr_DEBUG:_double_check: DEBUG:_double_check:_it_is_{reg25}
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -393,15 +388,12 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
-qstr_warg_rider_has_side_ warg_rider_has_side_{reg10}...
-qstr_DEBUG:_trying_respaw DEBUG:_trying_respawn_{s12}_from_entry_{reg1}...
 qstr_CHEAT:_Mind_blast!!! CHEAT:_Mind_blast!!!_(ctrl+k)
 qstr_CHEAT:_everybody:_"A CHEAT:_everybody:_"A-a-a-a-argh!"_(ctrl+k)
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_Forming_ranks. Forming_ranks.
-qstr_TESTING TESTING
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F

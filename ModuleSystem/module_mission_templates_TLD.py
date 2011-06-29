@@ -258,16 +258,15 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
     (store_trigger_param_1, ":agent"),
 	(agent_get_troop_id,":agent_trp",":agent"),
 	(agent_get_item_id, ":agent_item", ":agent"),
-	(agent_set_slot, ":agent", slot_agent_mount_side, -1),
 	
-	(str_store_troop_name, s11, ":agent_trp"),  
-	(try_begin),
-		(ge,":agent_item",0),
-		(str_store_item_name, s12, ":agent_item"),  
-		(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
-	(else_try),
-		(display_message,"@DEBUG: spawning troop {s11}"),
-	(try_end),
+	#(str_store_troop_name, s11, ":agent_trp"),  
+	#(try_begin),
+	#	(ge,":agent_item",0),
+	#	(str_store_item_name, s12, ":agent_item"),  
+	#	(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
+	#(else_try),
+	#	(display_message,"@DEBUG: spawning troop {s11}"),
+	#(try_end),
 
     (try_begin),
 	  (assign, ":troll", ":agent"),
@@ -296,46 +295,37 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	# for ghost wargs: set it up to replace the unmounted warg
 	(try_begin),
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
-	    (assign, ":warg", "$warg_to_be_replaced"),
+		(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
 		
-
-		(try_begin),
-			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
+		# set position to match warg to be replaced...
+		(agent_get_position,pos4,"$warg_to_be_replaced"),
+		(agent_set_position, ":agent", pos4),
 			
-
-			# set position to match warg to be replaced...
-			(agent_get_position,pos4,":warg"),
-			(agent_set_position, ":agent", pos4),
-			
-			(try_begin),(neq,":agent_item",-1), 
-				# fisrt spawn:  mount: set hit points
-				(store_agent_hit_points, reg12, ":warg",1),
-				(agent_set_hit_points, ":agent", reg12, 1),
-				(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
-			(else_try), 
-				# second spawn: GHOST RIDER: set side
-				(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
-				(agent_set_team, ":agent",  reg25), # this was set just above
-				(display_message,"@DEBUG: new wargs team is now: {reg25}"),
-				(agent_get_team,  reg25, ":agent"), # this was set just above
-				(display_message,"@DEBUG: double check: it is {reg25}"),
-				
-				(call_script, "script_remove_agent", ":warg"),			
-				(assign, "$warg_to_be_replaced", -1),
-			(try_end), 
-	
-			# testing
-			#(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
-			#(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
-			
-		
+		(try_begin),(neq,":agent_item",-1), 
+			# fisrt spawn:  MOUTH set hit points
+			(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
+			(agent_set_hit_points, ":agent", reg12, 1),
+			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		(else_try), 
-			(call_script, "script_agent_reassign_team", ":agent"), # normal team assignment
+			# second spawn: GHOST RIDER: set side
+			(agent_get_slot, reg25, "$warg_to_be_replaced", slot_agent_mount_side),
+			(agent_set_team, ":agent",  reg25), # this was set just above
+			#(display_message,"@DEBUG: new wargs team is now: {reg25}"),
+				
+			(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
+			(assign, "$warg_to_be_replaced", -1),
 		(try_end), 
+		
 	(else_try), 
 		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
 	(try_end),
-         
+
+	# if we spawned a rider, let's make his mount remember what side it is
+	(agent_get_horse, ":horse", ":agent"),
+	(try_begin),(neq,":horse",-1), 
+		(agent_get_team,  reg25, ":agent"),
+		(agent_set_slot, ":horse", slot_agent_mount_side, reg25), 
+	(try_end),
 
 	
   ]
@@ -907,6 +897,8 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 		(try_end),
 ])
 
+
+# NOT USED YET (still WIP)
 custom_lone_wargs_special_attack = (0,0,2, [
 	(store_random_in_range,reg10,0,3), (eq,reg10,1) # once every three times
 ],[
@@ -958,23 +950,37 @@ custom_lone_wargs_special_attack = (0,0,2, [
 
 
 # wargs without rider respawn
-custom_lone_wargs_are_aggressive = (0,0,2, [],[
-    (set_show_messages,1),
+custom_lone_wargs_are_aggressive = (0.5,0,0, [
+    (set_show_messages,0),
+	
+	# self destruct any ghost rider which has no ride
+	(try_for_agents,":ghost"),
+        (agent_is_alive, ":ghost"), 
+		(agent_is_human,":ghost"),
+		(agent_get_troop_id,":trp_ghost",":ghost"),
+		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
+		 (agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
+		(agent_get_horse,":horse",":ghost"),
+		(eq,":horse",-1),
+		(call_script, "script_remove_agent", ":ghost"),
+	(try_end),
+
 	(try_for_agents,":warg"),
+
         (agent_is_alive, ":warg"), 
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
 		(agent_get_rider,":rider",":warg"),
 		
-		(try_begin),
-			# rider not dead: record its original owner in a slot (1st time only)
-			(neq,":rider",-1),
-			(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
-			(agent_get_team, reg10, ":rider"),
-			(display_message,"@warg rider has side {reg10}..."),
-			(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
-			#(display_message,"@DEBUG: This warg has side {reg10}"),
-		(try_end),
+		#(try_begin),
+		#	# rider not dead: record its original owner in a slot (1st time only)
+		#	(neq,":rider",-1),
+		#	(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
+		#	(agent_get_team, reg10, ":rider"),
+		#	(display_message,"@warg rider has side {reg10}..."),
+		#	(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
+		#	#(display_message,"@DEBUG: This warg has side {reg10}"),
+		#(try_end),
 
 		(eq,":rider",-1),
 		#(display_message,"@warg without rider found!"),
@@ -987,29 +993,16 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 		
 		(agent_get_position, pos10, ":warg"),
 		(position_get_rotation_around_z, reg1, pos10),
-		#(add_visitors_to_current_scene,5,":warg_ghost_trp",1),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
+		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
 		
-		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
-		#(store_current_scene, ":cur_scene"),
-        #(modify_visitors_at_site, ":cur_scene"),
-    	#(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-		(set_visitor,5,":warg_ghost_trp"),
-		(add_reinforcements_to_entry, 5, 1),
+		#(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),
+	(set_show_messages,1),
 
-	# self destruct any ghost rider which has no ride
-	(try_for_agents,":ghost"),
-        (agent_is_alive, ":ghost"), 
-		(agent_is_human,":ghost"),
-		(agent_get_troop_id,":trp_ghost",":ghost"),
-		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
-		 (agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
-		(agent_get_horse,":horse",":ghost"),
-		(eq,":horse",-1),
-		(call_script, "script_remove_agent", ":ghost"),
-	(try_end),
+
+	],[
 
 ])
 

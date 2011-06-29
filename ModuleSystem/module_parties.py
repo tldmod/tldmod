@@ -131,7 +131,7 @@ parties = [
 # Khand towns
     ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_khand,0,ai_bhvr_hold,0,(-74.2,-44.9),[],170),
 # Umbar towns
-    ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_umbar,0,ai_bhvr_hold,0,(-4.03,70.33),[],115),
+    ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_umbar,0,ai_bhvr_hold,0,(-4.03,70.33),[],129), # 129 V di 30
 # Imladris towns
     ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_imladris,0,ai_bhvr_hold,0,(21.5,-145.1),[],170),
 # Dol Guldur towns

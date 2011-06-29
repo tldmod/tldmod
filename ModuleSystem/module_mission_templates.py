@@ -1120,10 +1120,11 @@ mission_templates = [
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
 
-     (5,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (6,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (7,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (8,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
     formations_triggers + AI_triggers +
     common_deathcam_triggers+
@@ -1158,8 +1159,6 @@ mission_templates = [
                            (call_script, "script_combat_music_set_situation_with_culture"),
                            ]),
 
-	 (0, 0, ti_once, [], [(display_message, "@TESTING"),]),
-						   
       common_music_situation_update,
       common_battle_check_friendly_kills,
 

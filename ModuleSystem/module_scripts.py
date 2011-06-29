@@ -987,7 +987,7 @@ scripts = [
 	
 	(assign, reg1, 5),
 	(assign, ":best", 9999),
-	(try_for_range, ":i", 5, 64), # avoid 0..4
+	(try_for_range, ":i", 5, 9), # avoid 0..4
 		(entry_point_get_position,pos10,":i"),
 		(position_get_rotation_around_z, reg10, pos10),
 		#(try_begin),(assign,reg5,":i"),(le,reg5,20),(display_message, "@Pos N.{reg5}:{reg10}"),(try_end),
