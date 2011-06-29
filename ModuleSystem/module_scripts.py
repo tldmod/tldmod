@@ -1813,7 +1813,7 @@ scripts = [
    #initialize game option defaults (see camp menu)
       (assign, "$g_crossdressing_activated", 0),
       (assign, "$tld_option_formations", 1),
-#	  (assign, "$tld_option_town_entry", 1), #old system by default
+	  (assign, "$tld_option_town_menu_hidden", 0), #all town features accesible by default
 	  (assign, "$tld_option_death", 0), #permanent death for npcs
 	  (assign, "$wound_setting", 7), # rnd, 0-3 result in wounds
 	  (assign, "$healing_setting", 7), # rnd, 0-3 result in wounds

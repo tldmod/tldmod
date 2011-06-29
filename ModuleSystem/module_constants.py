@@ -268,6 +268,12 @@ slot_party_following_player    = 31
 slot_party_follow_player_until_time = 32
 slot_party_dont_follow_player_until_time = 33
 
+slot_weaponsmith_visited = 34 # TLD center visiting flags, overlap with unused village ones
+slot_merchant_visited    = 35
+slot_elder_visited       = 36
+slot_castle_visited      = 37
+slot_barracks_visited    = 38
+
 slot_village_raided_by        = 34
 slot_village_state            = 35 #svs_normal, svs_being_raided, svs_looted, svs_recovering, svs_deserted
 slot_village_raid_progress    = 36

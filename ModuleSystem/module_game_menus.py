@@ -2709,14 +2709,14 @@ game_menus = [
          (val_clamp, "$tld_option_formations", 0, 2),
         ]
        ),
-	  # ("game_options_town_entry",[
-	     # (try_begin),(neq, "$tld_option_town_entry", 0),(str_store_string, s7, "@M&B system"),
-          # (else_try),                                   (str_store_string, s7, "@TLD system"),
-         # (try_end),
-	    # ],"Spawning when entering towns: {s7}.",[
-	     # (store_sub, "$tld_option_town_entry", 1, "$tld_option_town_entry"),
-         # (val_clamp, "$tld_option_town_entry", 0, 2),
-		# ]),
+	  ("game_options_town_menu",[
+	     (try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
+          (else_try),                                         (str_store_string, s7, "@OFF"),
+         (try_end),
+	    ],"Find center features first for them to appear in menu: {s7}.",[
+	     (store_sub, "$tld_option_town_menu_hidden", 1, "$tld_option_town_menu_hidden"),
+         (val_clamp, "$tld_option_town_menu_hidden", 0, 2),
+		]),
 	  ("game_options_death",[
 	     (try_begin),(neq, "$tld_option_death", 0),(str_store_string, s7, "@ON"),
           (else_try),                              (str_store_string, s7, "@OFF"),
@@ -7803,7 +7803,6 @@ game_menus = [
 		  ],"Approach {s1}...",
        [(call_script, "script_initialize_center_scene"),
 		(assign, "$spawn_horse", 0),
-        #(assign, "$town_entered", 1),
 		(try_begin),(troop_is_mounted, "trp_player"),(set_jump_entry, 1),
 		 (else_try),                                 (set_jump_entry, 2),
 		(try_end),
@@ -7847,7 +7846,7 @@ game_menus = [
       
       ("town_center",[
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
-#		  (party_slot_eq,"$current_town",slot_center_visited, 1),
+		  (party_slot_eq,"$current_town",slot_center_visited, 1),
           (this_or_next|eq,"$entry_to_town_forbidden",0),
           (eq, "$sneaked_into_town",1),
 	   ], "Walk to the main square...",
@@ -7871,28 +7870,29 @@ game_menus = [
        ],"Open the door."),
 
 		
-	  ("trade_with_arms_merchant",[
+	  ("trade_with_arms_merchant",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
-	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
-      #(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
-      (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),],
-       "Visit the {s61} Smithy.",
-       [   (party_get_slot, ":merchant_troop", "$current_town", slot_town_weaponsmith),
-           (change_screen_trade, ":merchant_troop"),
+      (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+      (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),
+	  (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+	  (str_store_troop_name_plural, s40, ":troop"),],
+       "Visit the {s40}.",
+       [   (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+           (change_screen_trade, ":troop"),
         ]),
 		
-	  ("trade_with_horse_merchant",[
+	  ("trade_with_horse_merchant",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
-      #(party_slot_eq, "$current_town", slot_horse_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+      (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_merchant, "trp_no_troop"),
-	  (party_slot_eq,"$current_town",slot_party_type, spt_town),],
-       "Visit the {s61} Stables and Warehouse.",
-       [  (party_get_slot, ":merchant_troop", "$current_town", slot_town_merchant),
-          (change_screen_trade, ":merchant_troop"),
+	  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
+	  (str_store_troop_name_plural, s41, ":troop"),],
+       "Visit the {s41}.",
+       [  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
+          (change_screen_trade, ":troop"),
         ]),
 
-	   ("town_prison",
-       [(eq, 1, 0)],"Never: Enter the prison.",
+	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.",
        [   (try_begin),
              (eq,"$all_doors_locked",1),
              (display_message,"str_door_locked",0xFFFFAAAA),
@@ -7931,20 +7931,19 @@ game_menus = [
              (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
              (set_visitor,0,"trp_player"),
 			 (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
-             (party_stack_get_troop_id, reg(6),"$g_encountered_party",reg0),
-             (party_stack_get_troop_dna,reg(7),"$g_encountered_party",reg0),
-             (set_visitor,17,reg(6),reg(7)),
+             (party_stack_get_troop_id, reg6,"$g_encountered_party",reg0),
+             (party_stack_get_troop_dna,reg7,"$g_encountered_party",reg0),
+             (set_visitor,17,reg6,reg7),
              (set_jump_mission,"mt_conversation_encounter"),
              (jump_to_scene,"scn_conversation_scene"),
              (assign, "$talk_context", tc_hire_troops),
-             (change_screen_map_conversation, reg(6))
+             (change_screen_map_conversation, reg6)
              ]),
 		
-      ("speak_with_elder",[
+      ("speak_with_elder",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
-      #(party_slot_eq, "$current_town", slot_elder_merchant_visited, 1), #check if elder has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+      (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_elder_visited, 1), #check if elder has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
-	  (party_slot_eq,"$current_town",slot_party_type, spt_town),
 	  (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
 	  (str_store_troop_name, s6, ":elder_troop"),
 	  ],
