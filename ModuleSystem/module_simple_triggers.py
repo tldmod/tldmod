@@ -2688,7 +2688,23 @@ simple_triggers = [
 
     # TLD: update player attributes for rings and such
     (1, [(call_script, "script_apply_attribute_bonuses")]),
-    
+
+    # TLD: stop ruins from smoking as time passes
+    (6,[(try_for_range, ":ruin", centers_begin, centers_end),
+          (party_is_active, ":ruin"),
+		  (neg|party_slot_eq, ":ruin", slot_center_destroyed, 0),
+		  (neg|party_slot_eq, ":ruin", slot_village_smoke_added, 0),
+		  (party_get_slot, ":counter",":ruin", slot_village_smoke_added),
+		  (try_begin),
+		     (lt,":counter",1),
+             (party_clear_particle_systems, ":ruin"),	
+			 (party_set_slot, ":ruin", slot_village_smoke_added, 0),
+          (else_try),
+		     (val_sub,":counter",6),
+             (party_set_slot, ":ruin", slot_village_smoke_added, ":counter"),
+		  (try_end),
+		(try_end)]),             
+
     # # TLD Add some cheats for ease of testing
     # (0, [
         # (eq, cheat_switch, 1),

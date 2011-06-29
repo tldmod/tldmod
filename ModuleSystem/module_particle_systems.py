@@ -767,12 +767,12 @@ particle_systems = [
      0.3                        #rotation damping
     ),
     ("map_village_fire_smoke", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_smoke_1",
-     25, 2.5, 0.3, -0.15, 3.0, 3.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     25, 3, 0.3, -0.15, 2.0, 2.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.5, 0.15), (1, 0),       #alpha keys
      (0.2, 0.4), (1, 0.3),      #red keys
      (0.2, 0.4),(1, 0.3),       #green keys
      (0.2, 0.4), (1, 0.3),      #blue keys
-     (0, 0.6),   (1, 0.9),      #scale keys
+     (0, 0.6),   (1, 1.3),      #scale keys
      (0.2, 0.2, 0.1),           #emit box size
      (0, 0, 0.03),              #emit velocity
      0.0,                       #emit dir randomness
@@ -780,14 +780,14 @@ particle_systems = [
      0.1                        #rotation damping
     ), 
     ("map_village_looted_smoke", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_smoke_1",
-     20, 3, 0.3, -0.11, 3.0, 2.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     20, 5, 0.5, -0.05, 3.0, 2.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.5, 0.15), (1, 0),       #alpha keys
      (0.2, 0.5), (1, 0.5),      #red keys
      (0.2, 0.5),(1, 0.5),       #green keys
      (0.2, 0.5), (1, 0.5),      #blue keys
      (0, 0.7),   (1, 1.3),      #scale keys
      (0.2, 0.2, 0.1),           #emit box size
-     (0, 0, 0.015),             #emit velocity
+     (0, 0, 0.007),             #emit velocity
      0.0,                       #emit dir randomness
      0,                         #rotation speed
      0.1                        #rotation damping

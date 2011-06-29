@@ -2727,6 +2727,8 @@ ai_scripts = [
        (str_store_party_name, s1, ":center"),
        (party_set_name, ":center", "@____{s1} ruins____"),
        (party_set_faction, ":center", "fac_neutral"),
+       (party_add_particle_system, ":center", "psys_map_village_looted_smoke"),
+       (party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day
      (try_end),
      
      # lose strength
