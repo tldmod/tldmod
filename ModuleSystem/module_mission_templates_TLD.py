@@ -959,7 +959,7 @@ custom_lone_wargs_special_attack = (0,0,2, [
 
 # wargs without rider respawn
 custom_lone_wargs_are_aggressive = (0,0,2, [],[
-    
+    (set_show_messages,1),
 	(try_for_agents,":warg"),
         (agent_is_alive, ":warg"), 
 		(agent_get_item_id,":warg_itm",":warg"),
@@ -975,29 +975,27 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 			(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
 			#(display_message,"@DEBUG: This warg has side {reg10}"),
 		(try_end),
-		
+
 		(eq,":rider",-1),
 		#(display_message,"@warg without rider found!"),
 
 		# riderless rider found. spawn a new rider in its place
-		
 		(eq, "$warg_to_be_replaced", -1), # only spawn a new warg per "turn"
-		
-
 		(assign, "$warg_to_be_replaced", ":warg"),
-
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
 		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
 		
 		(agent_get_position, pos10, ":warg"),
 		(position_get_rotation_around_z, reg1, pos10),
+		#(add_visitors_to_current_scene,5,":warg_ghost_trp",1),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		
-		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: respawn {s12} from entry {reg1}..."),
-		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-		#(set_visitor,0,":warg_ghost_trp"),
-		#(add_reinforcements_to_entry, 0, 1),
-
+		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
+		#(store_current_scene, ":cur_scene"),
+        #(modify_visitors_at_site, ":cur_scene"),
+    	#(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
+		(set_visitor,5,":warg_ghost_trp"),
+		(add_reinforcements_to_entry, 5, 1),
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),
 

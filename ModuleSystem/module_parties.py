@@ -74,10 +74,10 @@ parties = [
     # Gondor towns
     ("town_minas_tirith"    ,"Minas_Tirith",icon_minas_tirith       |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-47.47, 24.28),[],205),
     ("town_pelargir"        ,"Pelargir",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-41.31, 61.0 ),[],240),
-    ("town_linhir"          ,"Linhir",      icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -0.83, 59.13),[],170),
-    ("town_dol_amroth"      ,"Dol_Amroth",  icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 46.24, 64.03),[],280),
+    ("town_linhir"          ,"Linhir",      icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -0.83, 59.13),[],170),
+    ("town_dol_amroth"      ,"Dol_Amroth",  icon_dolamroth          |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(  46.6, 64.6 ),[],280),
     ("town_edhellond"       ,"Edhellond",   icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 37.66, 46.14),[],170),
-    ("town_lossarnach"      ,"Lossarnach",  icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-39.85, 37.0 ),[],170),
+    ("town_lossarnach"      ,"Lossarnach",  icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-39.85, 37.0 ),[],170),
     ("town_tarnost"         ,"Tarnost",     icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 15.31, 63.94),[],170),
     ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 28.17,  9.34),[],170),
     ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 50.82, 30.82),[],170),
@@ -131,7 +131,7 @@ parties = [
 # Khand towns
     ("town_khand_camp","Khand_Camp",       icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_khand,0,ai_bhvr_hold,0,(-74.2,-44.9),[],170),
 # Umbar towns
-    ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_umbar,0,ai_bhvr_hold,0,(12.9,65.9),[],175),
+    ("town_umbar_camp","Corsair_Camp",     icon_corsaircamp|pf_tld_down, no_menu, pt_none, fac_umbar,0,ai_bhvr_hold,0,(-4.03,70.33),[],115),
 # Imladris towns
     ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_imladris,0,ai_bhvr_hold,0,(21.5,-145.1),[],170),
 # Dol Guldur towns

@@ -240,7 +240,8 @@ common_siege_init = (0, 0, ti_once, [],
 
 common_siege_ai_trigger_init = (0, 0, ti_once,
   [ (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
-    (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),], [])
+    (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
+	(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),], [])
 
 common_siege_ai_trigger_init_2 = (0, 0, ti_once,
   [ (set_show_messages, 0),

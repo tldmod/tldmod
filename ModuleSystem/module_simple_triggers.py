@@ -2519,11 +2519,11 @@ simple_triggers = [
         (assign, "$g_recalculate_ais", 1),
 
         (assign, ":faction_removed", 1),
-        (try_begin),
-          (eq, "$players_oath_renounced_against_kingdom", ":cur_kingdom"),
-          (assign, "$players_oath_renounced_against_kingdom", 0),
-          (call_script, "script_add_notification_menu", "mnu_notification_oath_renounced_faction_defeated", ":cur_kingdom", 0),
-        (try_end),
+        # (try_begin),
+          # (eq, "$players_oath_renounced_against_kingdom", ":cur_kingdom"),
+          # (assign, "$players_oath_renounced_against_kingdom", 0),
+          # (call_script, "script_add_notification_menu", "mnu_notification_oath_renounced_faction_defeated", ":cur_kingdom", 0),
+        # (try_end),
    #This menu must be at the end because faction banner will change after this menu if the player's supported pretender's original faction is cur_kingdom - but not in TLD!
         (call_script, "script_add_notification_menu", "mnu_notification_faction_defeated", ":cur_kingdom", 0),
         #If the player's home faction was defeated, offer the player to join another faction of the same side
