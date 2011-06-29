@@ -10757,9 +10757,9 @@ scripts = [
 		(is_between, ":x", 1846,6000),(is_between, ":y",  -23809,-17336),
 		(assign, reg1, region_misty_mountains),
 	(else_try),
-		# near lonely mountains, far in the north
+		# near grey mountains, far in the north
 		(lt,  ":y",  -25804),
-		(assign, reg1, region_lonely_mountains),
+		(assign, reg1, region_grey_mountains),
 	(else_try),
 		# else, "vague locations": 
 		(is_between, ":x", -3500,3500),(gt, ":y", -13400),
@@ -10889,6 +10889,8 @@ scripts = [
       (try_end),
   (try_end),
   
+	  (modify_visitors_at_site,":scene_to_use"), # to let warg respawing.
+	  (reset_visitors),
       (jump_to_scene,":scene_to_use"),
   ]),
 

@@ -163,8 +163,6 @@ castle_undefended
 g_leave_town_outside
 g_town_visit_after_rest
 g_last_defeated_bandits_town
-num_castle_meeting_troops
-castle_meeting_selected_troop
 g_siege_force_wait
 g_siege_method
 g_siege_sallied_out_once

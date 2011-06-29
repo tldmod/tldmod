@@ -260,14 +260,14 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(agent_get_item_id, ":agent_item", ":agent"),
 	(agent_set_slot, ":agent", slot_agent_mount_side, -1),
 	
-	#(str_store_troop_name, s11, ":agent_trp"),  
-	#(try_begin),
-	#	(ge,":agent_item",0),
-	#	(str_store_item_name, s12, ":agent_item"),  
-	#	(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
-	#(else_try),
-	#	#(display_message,"@DEBUG: spawning troop {s11}"),
-	#(try_end),
+	(str_store_troop_name, s11, ":agent_trp"),  
+	(try_begin),
+		(ge,":agent_item",0),
+		(str_store_item_name, s12, ":agent_item"),  
+		(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
+	(else_try),
+		(display_message,"@DEBUG: spawning troop {s11}"),
+	(try_end),
 
     (try_begin),
 	  (assign, ":troll", ":agent"),
@@ -298,28 +298,36 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
 	    (assign, ":warg", "$warg_to_be_replaced"),
 		
+
 		(try_begin),
 			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
-			(assign, "$warg_to_be_replaced", -1),
+			
+
+			# set position to match warg to be replaced...
+			(agent_get_position,pos4,":warg"),
+			(agent_set_position, ":agent", pos4),
+			
+			(try_begin),(neq,":agent_item",-1), 
+				# fisrt spawn:  mount: set hit points
+				(store_agent_hit_points, reg12, ":warg",1),
+				(agent_set_hit_points, ":agent", reg12, 1),
+				(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+			(else_try), 
+				# second spawn: GHOST RIDER: set side
+				(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
+				(agent_set_team, ":agent",  reg25), # this was set just above
+				(display_message,"@DEBUG: new wargs team is now: {reg25}"),
+				(agent_get_team,  reg25, ":agent"), # this was set just above
+				(display_message,"@DEBUG: double check: it is {reg25}"),
+				
+				(call_script, "script_remove_agent", ":warg"),			
+				(assign, "$warg_to_be_replaced", -1),
+			(try_end), 
 	
 			# testing
 			#(position_get_rotation_around_z, reg20, pos4), (display_message,"@DEBUG: wargs view orientation: {reg20}"),
 			#(agent_get_position,pos6,":warg"),(position_get_rotation_around_z, reg20, pos6), (display_message,"@DEBUG: wargs orientation: {reg20}"),
 			
-
-			(store_agent_hit_points, reg12, ":warg",1),
-			(agent_set_hit_points, ":agent", reg12, 1),
-			(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
-		
-			(agent_get_slot, reg25, ":warg", slot_agent_mount_side),
-			(agent_set_team, ":agent",  reg25), # this was set just above
-			(display_message,"@DEBUG: new wargs team is now: {reg25}"),
-			(agent_get_team,  reg25, ":agent"), # this was set just above
-			(display_message,"@DEBUG: double check: it is {reg25}"),
-
-			(agent_get_position,pos4,":warg"),
-			(call_script, "script_remove_agent", ":warg"),			
-			(agent_set_position, ":agent", pos4),
 		
 		(else_try), 
 			(call_script, "script_agent_reassign_team", ":agent"), # normal team assignment
@@ -985,8 +993,10 @@ custom_lone_wargs_are_aggressive = (0,0,2, [],[
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		
-		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@respawn{reg1} {s12}..."),
+		(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: respawn {s12} from entry {reg1}..."),
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
+		#(set_visitor,0,":warg_ghost_trp"),
+		#(add_reinforcements_to_entry, 0, 1),
 
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),

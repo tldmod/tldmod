@@ -82,7 +82,7 @@ region_anduin_banks = 28
 region_n_mirkwood = 29
 region_s_mirkwood = 30
 region_above_mirkwook = 31
-region_lonely_mountains = 32
+region_grey_mountains = 32
 region_mordor = 33
 
 
@@ -1666,10 +1666,10 @@ center_list = [
 	["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_town_31_horse_merchant", "trp_elder_cgaladhon", "pt_lorien_reinf_a", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 	["icon_mfc_lorien"],[3,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
 ("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1, -1, "mesh_ui_default_menu_window"],
-	[-1, "trp_smith_cdolen", "trp_town_32_horse_merchant", "trp_elder_cdolen", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
+	["trp_barman_cdolen", "trp_smith_cdolen", "trp_town_32_horse_merchant", "trp_elder_cdolen", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 	["icon_mfc_lorien"],[1,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 ("p_town_cerin_amroth", ["scn_cerin_amroth_center", -1, -1, -1, -1, -1, "mesh_ui_default_menu_window"],
-	[-1, "trp_smith_camroth", "trp_town_33_horse_merchant", "trp_elder_camroth", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
+	["trp_barman_camroth", "trp_smith_camroth", "trp_town_33_horse_merchant", "trp_elder_camroth", "pt_lorien_reinf_a",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 	["icon_mfc_lorien"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 
 ("p_town_thranduils_halls", ["scn_thranduils_halls_center", "scn_thranduil_hall_room", "scn_elf_prison","scn_elf_tavern","scn_elf_arena",-1,"mesh_town_thranduils"],

@@ -1,4 +1,4 @@
-909
+912
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -371,6 +371,8 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_DEBUG:_spawning_moun DEBUG:_spawning_mount_{s12}_of_{s11}
+qstr_DEBUG:_spawning_troo DEBUG:_spawning_troop_{s11}
 qstr_DEBUG:_new_wargs_has DEBUG:_new_wargs_has_{reg12}_hitpoints_left
 qstr_DEBUG:_new_wargs_tea DEBUG:_new_wargs_team_is_now:_{reg25}
 qstr_DEBUG:_double_check: DEBUG:_double_check:_it_is_{reg25}
@@ -386,7 +388,7 @@ qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_warg_rider_has_side_ warg_rider_has_side_{reg10}...
-qstr_respawn{reg1}_{s12}. respawn{reg1}_{s12}...
+qstr_DEBUG:_respawn_{s12} DEBUG:_respawn_{s12}_from_entry_{reg1}...
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weight_too_much_ You_weight_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
@@ -397,6 +399,7 @@ qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_Forming_ranks. Forming_ranks.
+qstr_TESTING TESTING
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_DEBUG:borders_Xmin:{ DEBUG:borders_Xmin:{reg1}_Xmax{reg0}
 qstr_DEBUG:borders_Ymin:{ DEBUG:borders_Ymin:{reg1}_Ymax{reg0}

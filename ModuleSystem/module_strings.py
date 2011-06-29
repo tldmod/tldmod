@@ -2790,12 +2790,12 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("fullname_region_brown_lands", "The Brown Lands, covering the expanse between the Emyn Muil and Mirkwood" ),#region_brown_lands = 24
 ("fullname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 25
-("fullname_region_lorien", "Lothlórien, the forest of the Sindar and Ñoldor elves, where the golden Marrons grow" ),#region_lorien = 26
-("fullname_region_anduin_banks", "the valley of Aduin, between Misty Mountains and Mirkwook" ),#region_anduin_banks = 27 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 26
+("fullname_region_anduin_banks", "the valley of Aduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 27 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 28
 ("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by several strange creatures" ),#region_s_mirkwood = 29
-("fullname_region_above_mirkwook", "the area between Mirkwood and the Lonely Mountains in the North" ),#region_above_mirkwook = 30  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
-("fullname_region_lonely_mountains", "the foot of Lonely Mountains, where Dwarves dwell" ),#region_lonely_mountains = 31
+("fullname_region_above_mirkwook", "the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 30  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_grey_mountains", "the foot of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 31
 ("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 32
 
 
@@ -2842,7 +2842,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_n_mirkwood ", "North Mirkwood" ),#region_n_mirkwood = 28
 ("shortname_region_s_mirkwood ", "South Mirkwood" ),#region_s_mirkwood = 29
 ("shortname_region_above_mirkwook", "North of Mirkwood" ),#region_above_mirkwook = 30
-("shortname_region_lonely_mountains", "foot of Lonely Mountains" ),#region_lonely_mountains = 31
+("shortname_region_grey_mountains", "foot of Grey Mountains" ),#region_grey_mountains = 31
 ("shortname_region_mordor", "the Land of Mordor" ),#region_mordor = 32
 
 

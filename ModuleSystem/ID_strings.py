@@ -2023,7 +2023,7 @@ str_fullname_region_anduin_banks = 2021
 str_fullname_region_n_mirkwood = 2022
 str_fullname_region_s_mirkwood = 2023
 str_fullname_region_above_mirkwook = 2024
-str_fullname_region_lonely_mountains = 2025
+str_fullname_region_grey_mountains = 2025
 str_fullname_region_mordor = 2026
 str_shortname_region_unknown = 2027
 str_shortname_region_pelennor = 2028
@@ -2058,7 +2058,7 @@ str_shortname_region_anduin_banks_ = 2056
 str_shortname_region_n_mirkwood_ = 2057
 str_shortname_region_s_mirkwood_ = 2058
 str_shortname_region_above_mirkwook = 2059
-str_shortname_region_lonely_mountains = 2060
+str_shortname_region_grey_mountains = 2060
 str_shortname_region_mordor = 2061
 
 
