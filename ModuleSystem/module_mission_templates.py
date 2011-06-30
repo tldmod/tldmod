@@ -173,6 +173,37 @@ common_battle_order_panel_tick = (0.1, 0, 0, [], [ (eq, "$g_presentation_battle_
 common_battle_inventory = (ti_inventory_key_pressed, 0, 0, [],[(display_message,"str_use_baggage_for_inventory")])
 common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_message, "str_cant_use_inventory_now")],[])
 
+common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV and MT
+    (assign, "$pin_player_fallen", 1),
+	#  check that battle still goes on MT
+  	(store_normalized_team_count,":a", 0), 
+	(store_normalized_team_count,":b", 1),
+	(gt,":b",0),(gt,":a",0),
+    (display_message, "str_player_down"), #MV
+	
+    #MV: not sure about this one, will see if it's needed
+	# (set_show_messages, 0), #stop messages JL
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_charge), #charges everyone JL
+	# (try_begin),
+	# (eq, "$tld_option_formations", 1), #if Formations is turned on JL
+	# (team_set_order_listener, "$fplayer_team_no", grc_everyone,-1), #clear listener for everyone JL
+	# (call_script, "script_player_order_formations", mordr_charge), #send formations order to charge JL
+	# (try_end),
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_fire_at_will), #JL PoP 3.3
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_use_any_weapon), #JL PoP 3.3
+	# (set_show_messages, 1), #show messages again JL
+	# (display_message, "@Your troops are charging!"), # display message JL
+              
+    #Native calc retreat on player death
+    # (str_store_string, s5, "str_retreat"),
+    # (call_script, "script_simulate_retreat", 10, 20),
+    # (assign, "$g_battle_result", -1),
+    # (set_mission_result,-1),
+    # (call_script, "script_count_mission_casualties_from_agents"),
+    # (finish_mission,0)
+])
+
+
 ## MadVader deathcam begin: this is a simple death camera from kt0, works by moving the player body so mouselook is automatic
 common_init_deathcam = (0, 0, ti_once, [], [(assign, "$tld_camera_on", 0)])
 
@@ -193,7 +224,7 @@ common_move_forward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, 10),
+      (position_move_y, pos1, 15),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -206,7 +237,7 @@ common_move_backward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, -10),
+      (position_move_y, pos1, -12),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -219,10 +250,11 @@ common_move_left_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, -10),
+      (position_move_x, pos1, -12),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
+
 
 common_move_right_deathcam = (
    0, 0, 0,
@@ -232,7 +264,7 @@ common_move_right_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, 10),
+      (position_move_x, pos1, 12),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -244,7 +276,7 @@ common_deathcam_triggers = [
 	common_move_backward_deathcam,
 	common_move_left_deathcam,
 	common_move_right_deathcam,
-	]
+]
 ## MadVader deathcam end
 
 #AI triggers v3 by motomataru
@@ -1184,41 +1216,7 @@ mission_templates = [
       
       common_battle_check_victory_condition,
       common_battle_victory_display,
-
-      (1, 4, ti_once, [(main_hero_fallen)],
-          [
-              (assign, "$pin_player_fallen", 1),
-			   # if was last man standing, don't  say your man continue (mtarini)
-			  (try_begin),
-				(store_normalized_team_count,":a", 0),
-				(store_normalized_team_count,":b", 0),
-				(this_or_next|gt,":a",0),
-				(gt,":b",0),
-				(display_message, "str_player_down"), #MV
-			  (try_end),
-              
-              #MV: not sure about this one, will see if it's needed
-			  # (set_show_messages, 0), #stop messages JL
-			  # (team_give_order, "$fplayer_team_no", grc_everyone, mordr_charge), #charges everyone JL
-			  # (try_begin),
-				  # (eq, "$tld_option_formations", 1), #if Formations is turned on JL
-				  # (team_set_order_listener, "$fplayer_team_no", grc_everyone,-1), #clear listener for everyone JL
-				  # (call_script, "script_player_order_formations", mordr_charge), #send formations order to charge JL
-			  # (try_end),
-			  # (team_give_order, "$fplayer_team_no", grc_everyone, mordr_fire_at_will), #JL PoP 3.3
-			  # (team_give_order, "$fplayer_team_no", grc_everyone, mordr_use_any_weapon), #JL PoP 3.3
-			  # (set_show_messages, 1), #show messages again JL
-			  # (display_message, "@Your troops are charging!"), # display message JL
-              
-              #Native calc retreat on player death
-              # (str_store_string, s5, "str_retreat"),
-              # (call_script, "script_simulate_retreat", 10, 20),
-              # (assign, "$g_battle_result", -1),
-              # (set_mission_result,-1),
-              # (call_script, "script_count_mission_casualties_from_agents"),
-              # (finish_mission,0)
-          ]),
-
+	  common_battle_on_player_down,
       common_battle_inventory,
 
       #AI Tiggers
@@ -1444,19 +1442,8 @@ mission_templates = [
             (finish_mission,1)]),
 
       common_battle_victory_display,
-
-      (1, 4, ti_once, [(main_hero_fallen)],
-          [
-              (assign, "$pin_player_fallen", 1),
-              (display_message, "str_player_down"), #MV
-              # (str_store_string, s5, "str_retreat"),
-              # (call_script, "script_simulate_retreat", 5, 20),
-              # (assign, "$g_battle_result", -1),
-              # (set_mission_result, -1),
-              # (call_script, "script_count_mission_casualties_from_agents"),
-              # (finish_mission,0)
-          ]),
-
+	  
+	  common_battle_on_player_down,
       common_battle_order_panel,
       common_battle_order_panel_tick,
       common_battle_inventory,
@@ -3198,19 +3185,7 @@ mission_templates = [
       common_battle_check_friendly_kills,
       common_battle_check_victory_condition,
       common_battle_victory_display,
-
-      (1, 4, ti_once, [(main_hero_fallen)],
-          [
-              (assign, "$pin_player_fallen", 1),
-              (display_message, "str_player_down"), #MV
-              # (str_store_string, s5, "str_retreat"),
-              # (call_script, "script_simulate_retreat", 5, 20),
-              # (assign, "$g_battle_result", -1),
-              # (set_mission_result,-1),
-              # (call_script, "script_count_mission_casualties_from_agents"),
-              # (finish_mission,0)
-              ]),
-      
+	  common_battle_on_player_down,
       common_battle_order_panel,
       common_battle_order_panel_tick,
       common_battle_inventory,
@@ -3262,19 +3237,7 @@ mission_templates = [
       common_battle_check_friendly_kills,
       common_battle_check_victory_condition,
       common_battle_victory_display,
-
-      (1, 4, ti_once, [(main_hero_fallen)],
-          [
-              (assign, "$pin_player_fallen", 1),
-              (display_message, "str_player_down"), #MV
-              # (str_store_string, s5, "str_retreat"),
-              # (call_script, "script_simulate_retreat", 5, 20),
-              # (assign, "$g_battle_result", -1),
-              # (set_mission_result,-1),
-              # (call_script, "script_count_mission_casualties_from_agents"),
-              # (finish_mission,0)
-              ]),
-
+	  common_battle_on_player_down,
       common_battle_order_panel,
       common_battle_order_panel_tick,
       common_battle_inventory,

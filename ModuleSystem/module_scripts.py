@@ -151,7 +151,7 @@ scripts = [
   ),
 
 # script_determine_what_player_looks_like  
-  # no input. Call me when player can have changed look
+  # no input. Call me when player can have changed look   (mtarini)
   ("determine_what_player_looks_like", [
     (troop_get_type, ":race","$g_player_troop"),
 	(try_begin),
@@ -974,7 +974,8 @@ scripts = [
     (eq,":a",":b"),
 ]),
 	 
-# script_get_entry_point_with_most_similar_facing
+# script_get_entry_point_with_most_similar_facing (mtarini)
+# used to make warg spawn from an entry point which will give it an appropriate facing
 # stores in reg1 the entry point  (in 0..64) with a facting more similar to 1st param 
 ("get_entry_point_with_most_similar_facing", 
  [
