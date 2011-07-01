@@ -1792,7 +1792,16 @@ scene_props = [
 ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
 ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
 ("erebor",0,"hallfini","bo_hallfini", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
+("LMH_ground_a",0,"LMH_ground_a","bo_LMH_ground_a",[]),
+("LMH_ground_b",0,"LMH_ground_b","bo_LMH_ground_b",[]),
+("LMH_ground_c",0,"LMH_ground_c","bo_LMH_ground_c",[]),
+("LMH_pillar_a",0,"LMH_pillar_a","bo_LMH_pillar_a",[]),
+("LMH_pillar_b",0,"LMH_pillar_b","bo_LMH_pillar_b",[]),
+("LMH_pillar_c",0,"LMH_pillar_c","bo_LMH_pillar_c",[]),
+("LMH_arch",0,"LMH_arch","bo_LMH_arch",[]),
+("LMH_base",0,"LMH_base","bo_LMH_base",[]),
 
+  
 ("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
 ("thranduil_helm1",0,"statuemirk_helm1","0",[]),
 ("thranduil_helm2",0,"statuemirk_helm2","0",[]),

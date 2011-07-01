@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1411
+ 1419
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3513,6 +3513,30 @@ spr_erebor_dungeon_01 0 0 dungeon_a bo_dungeon_a 0
 
 spr_erebor 0 0 hallfini bo_hallfini 1
 -40.000000  1 1798 2 110 65793 
+
+
+spr_LMH_ground_a 0 0 LMH_ground_a bo_LMH_ground_a 0
+
+
+spr_LMH_ground_b 0 0 LMH_ground_b bo_LMH_ground_b 0
+
+
+spr_LMH_ground_c 0 0 LMH_ground_c bo_LMH_ground_c 0
+
+
+spr_LMH_pillar_a 0 0 LMH_pillar_a bo_LMH_pillar_a 0
+
+
+spr_LMH_pillar_b 0 0 LMH_pillar_b bo_LMH_pillar_b 0
+
+
+spr_LMH_pillar_c 0 0 LMH_pillar_c bo_LMH_pillar_c 0
+
+
+spr_LMH_arch 0 0 LMH_arch bo_LMH_arch 0
+
+
+spr_LMH_base 0 0 LMH_base bo_LMH_base 0
 
 
 spr_thranduil_hall 0 0 thranduil_hall bo_thranduil_hall 1
