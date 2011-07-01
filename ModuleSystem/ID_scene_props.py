@@ -1408,3 +1408,4 @@ spr_gon_upper_apt_E = 1406
 spr_horse_player_horse = 1407
 spr_mt_tirith_gate = 1408
 spr_rohan_meduseld_table = 1409
+spr_handsign = 1410

@@ -197,7 +197,7 @@ parties = [
   #("four_ways_inn","Four_Ways_Inn",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.064327,1.070496),[]),
   ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
   ("battlefields","battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
-  ("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+  #("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
 
 # Legendary Places
   ("legend_amonhen","Amon Hen",icon_ancient_ruins|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-31.80,-47.71),[],180),
@@ -259,15 +259,19 @@ parties = [
   ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_looter,15,0)]),
  # pointers for scripting purposes
   ("pointer_player"           ,"_",pf_disabled|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+  ("pointer_z_0_begin"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_water = 0
+  ("pointer_z_0_mountain"     ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), 
   ("pointer_z_0_steppe"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]),
-  ("pointer_z_0_plain"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]),
+  ("pointer_z_0_plain"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]), # rt_snow
   ("pointer_z_0_snow"         ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 89.5),[]),
   ("pointer_z_0_desert"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]),
+  ("pointer_z_0_river"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]),
   ("pointer_z_0_steppe_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5,112.4),[]),
   ("pointer_z_0_plain_forest" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]),
+  ("pointer_z_0_forest"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]),
   ("pointer_z_0_snow_forest"  ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]),
   ("pointer_z_0_desert_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]),
-  
+
 #big rivers
   ("ford_cair_andros1"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
   ("ford_cair_andros2"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),

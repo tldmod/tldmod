@@ -2723,7 +2723,8 @@ ai_scripts = [
 		   (party_set_icon, ":center", "icon_debris"),
 	   (try_end),
        (str_store_party_name, s1, ":center"),
-       (party_set_name, ":center", "@____{s1} ruins____"),
+       (party_set_name, ":center", "@______{s1}______"), # spaces to make writings smaller (GA)
+	   (party_set_extra_text, ":center", "@in_ruins"),  
        (party_set_faction, ":center", "fac_neutral"),
        (party_add_particle_system, ":center", "psys_map_village_looted_smoke"),
        (party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day

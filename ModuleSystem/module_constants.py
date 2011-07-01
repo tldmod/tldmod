@@ -1093,6 +1093,9 @@ centers_begin = "p_town_minas_tirith"
 castles_begin = "p_castle_1"
 villages_begin = "p_castle_1" # changed from p_village_1
 
+landmark_begin = "p_town_minas_tirith"
+landmark_end = "p_test_scene"
+
 centers_end = castles_begin
 castles_end = villages_begin
 villages_end   = villages_begin # MV: no villages, was "p_salt_mine"
@@ -1711,7 +1714,7 @@ center_list = [
 ("p_town_dale", ["scn_dale_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_dale_arena", "scn_dale_siege", "mesh_ui_default_menu_window"],
 	["trp_barman_dale", "trp_town_38_weaponsmith", "trp_town_38_horse_merchant", "trp_elder_dale", "pt_dale_reinf_a", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_bowmen"], 
 	["icon_mfc_dale"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 0, tld_siegable_capital),
-("p_town_esgaroth", ["scn_esgaroth_center", "scn_rohan_castle_b", "scn_rohan_prison","scn_rohan_tavern","scn_dale_arena",-1,"mesh_town_esgaroth"],
+("p_town_esgaroth", ["scn_esgaroth_center", "scn_esgaroth_castle", "scn_rohan_prison","scn_rohan_tavern","scn_dale_arena",-1,"mesh_town_esgaroth"],
 	["trp_barman_esgaroth", "trp_town_39_weaponsmith", "trp_town_39_horse_merchant", "trp_elder_esgaroth", "pt_dale_reinf_a", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_archer"], 
 	["icon_mfc_dale"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 1, tld_siegable_always),
 

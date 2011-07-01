@@ -25,20 +25,32 @@ from module_constants import *
 scenes = [
   ("random_scene"              ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),(240,240),-0.5,"0x0000000329602800000691a400003efe00004b34000059be",[],[]),
   ("conversation_scene",0,"encounter_spot", "bo_encounter_spot", (-40,-40),(40,40),-100,"0",   [],[]),
-  ("random_scene_rohan_steppe"      ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000022c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-  ("random_scene_rohan_steppe_small",sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000012c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-  ("random_scene_steppe"       ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000022c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_rohan"),
+
+  # scenes from native terrain types...
+  ("random_scene_steppe"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000022c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_rohan"),
+  ("random_scene_plain"           ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+  ("random_scene_snow"            ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+  ("random_scene_desert"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  ("random_scene_river"           ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  ("random_scene_mountain_forest" ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  ("random_scene_steppe_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(140,140),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  ("random_scene_plain_forest"    ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  ("random_scene_snow_forest"     ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  ("random_scene_desert_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+
+  # ...small versions...
   ("random_scene_steppe_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000012c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-  ("random_scene_plain"        ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("random_scene_plain_small"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_snow"         ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
   ("random_scene_snow_small"   ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000014c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_desert"       ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
   ("random_scene_desert_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000015c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-  ("random_scene_steppe_forest",sf_generate|sf_randomize,"none","none",(0,0),(140,140),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
-  ("random_scene_plain_forest" ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
-  ("random_scene_snow_forest"  ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
-  ("random_scene_desert_forest",sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  ("random_scene_river_small"  ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  #("random_scene_mountain_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  #("random_scene_steppe_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  #("random_scene_plain_forest_small" ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  #("random_scene_snow_forest_small"  ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  #("random_scene_desert_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+
+  ("handsign" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-0.5,"0x314d060900036cd70000295300002ec9000025f3",[],[],"outer_terrain_rohan"),
 
   ("camp_scene",sf_generate,"none","none",(0,0),(100,100),-0.5,"0x000000003004cd26800354d70000618700003c3300007a8c",[],["camp_chest_faction","camp_chest_none"], "outer_terrain_plain"),
   #("camp_scene_horse_track"    ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(240,240),-0.5,"0x300028000003e8fa0000034e00004b34000059be",    [],[], "outer_terrain_plain"),
@@ -64,7 +76,7 @@ scenes = [
   #("salt_mine"    ,sf_generate,"none", "none", (-200,-200),(200,200),-100,"0x2a07b23200025896000023ee00007f9c000022a8", [],[], "outer_terrain_steppe"),
   ("novice_ground",sf_indoors,"training_house_a", "bo_training_house_a", (-100,-100),(100,100),-100,"0",    [],[]),
   #"zendar_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",    [],[], "outer_terrain_plain"),
-  ("dhorak_keep"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x33a7946000028ca300007f4a0000479400161992",    ["exit"],[]),
+  #("dhorak_keep"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x33a7946000028ca300007f4a0000479400161992",    ["exit"],[]),
   ("reserved4"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"28791",    [],[]),
   ("reserved5"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"117828",    [],[]),
   ("reserved6"    ,sf_generate,"none", "none", (0,0),(100,100),-100,"6849",    [],[]),
@@ -237,6 +249,7 @@ scenes = [
   ("henneth_annun_castle" ,sf_indoors,"mesh_henneth_annun"            , "bo_henneth_annun"            , (-100,-100),(100,100),-100,"0",[],[]),
   ("rohan_castle_a"       ,sf_indoors,"interior_castle_rohan_a"       , "bo_interior_castle_i"        , (-100,-100),(100,100),-100,"0",[],[]),
   ("rohan_castle_b"       ,sf_indoors,"interior_castle_rohan_b"       , "bo_interior_castle_j"        , (-100,-100),(100,100),-100,"0",[],[]),
+  ("esgaroth_castle"       ,sf_indoors,"interior_castle_rohan_b"       , "bo_interior_castle_j"        , (-100,-100),(100,100),-100,"0",[],[]),
   ("mordor_castle_a"      ,sf_indoors,"interior_castle_mordor_a"      , "bo_interior_castle_mordor_a" , (-100,-100),(100,100),-100,"0",[],[]),
   ("mordor_castle_b"      ,sf_indoors,"interior_castle_mordor_b"      , "bo_interior_castle_mordor_b" , (-100,-100),(100,100),-100,"0",[],["player_chest"]),
 
@@ -264,7 +277,7 @@ scenes = [
 
 # Legendary places  
   ("amon_hen"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
-  ("deadmarshes",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
+  ("deadmarshes",sf_generate|sf_auto_entry_points,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
   ("mirkwood"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
   ("fangorn"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 

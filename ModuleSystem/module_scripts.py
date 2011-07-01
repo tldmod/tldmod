@@ -1210,7 +1210,7 @@ scripts = [
   ("fangorn_fight_ents",[
         #(assign, ":ent_troop", "trp_ent"), # should be ents!
         (jump_to_scene, "scn_random_scene_plain_forest"),
-        (call_script, "script_setup_random_scene"),
+        #(call_script, "script_setup_random_scene"),
         (set_jump_mission,"mt_fangorn_battle"),
         (modify_visitors_at_site, "scn_random_scene_plain_forest"),
         (reset_visitors),
@@ -8026,6 +8026,26 @@ scripts = [
         (assign, reg0, ":center_no"),
       (try_end),
   ]),
+
+  
+  # script_get_closest_landmark (mtarini)
+  # a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
+  # Input: arg1 = party_no
+  # Output: reg0 = landmark no (closest, max dist 4),. Else -1
+  ("get_close_landmark",
+    [
+      (store_script_param_1, ":party_no"),
+      (assign, ":min_distance", 2),
+      (assign, reg0, -1),
+      (try_for_range, ":center_no", landmark_begin, landmark_end),
+        #(party_is_active, ":center_no"), #even unactive stuff are landmarks
+		#(party_slot_eq, ":center_no", slot_center_destroyed, 0), # even destroye stuff is
+        (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
+        (lt, ":party_distance", ":min_distance"),
+        (assign, ":min_distance", ":party_distance"),
+        (assign, reg0, ":center_no"),
+      (try_end),
+  ]),
   
   
   # script_get_closest_center_of_faction
@@ -8102,10 +8122,10 @@ scripts = [
     [
       (store_script_param, ":besiege_mode", 1),
       (store_script_param, ":dont_add_friends", 2),
-      (assign, ":join_distance", 5),
+      (assign, ":join_distance", 4),
       (try_begin),
         (is_currently_night),
-        (assign, ":join_distance", 3),
+        (assign, ":join_distance", 2),
       (try_end),
       (try_for_parties, ":party_no"),
         (party_is_active, ":party_no"), # Warband fix
@@ -9451,21 +9471,6 @@ scripts = [
       (try_end),
   ]),
 
-  # script_refresh_village_defenders
-  # Input: arg1 = village_no
-  # Output: none
-  ("refresh_village_defenders",
-    [
-      (store_script_param_1, ":village_no"),
-
-      (assign, ":ideal_size", 50),
-      (try_begin),
-        (party_get_num_companions, ":party_size", ":village_no"),
-        (lt, ":party_size", ":ideal_size"),
-        (party_add_template, ":village_no", "pt_village_defenders"),
-      (try_end),
-  ]),
-
   # script_village_set_state
   # Input: arg1 = center_no arg2:new_state
   # Output: reg0: food consumption (1 food item counts as 100 units)
@@ -10320,110 +10325,110 @@ scripts = [
   # script_diplomacy_start_war_between_kingdoms
   # Input: arg1 = kingdom_1, arg2 = kingdom_2, arg3 = initializing_war_peace_cond
   # Output: none
-  ("diplomacy_start_war_between_kingdoms", #sets relations between two kingdoms and their vassals.
-    [
-      (store_script_param, ":kingdom_a", 1),
-      (store_script_param, ":kingdom_b", 2),
-      (store_script_param, ":initializing_war_peace_cond", 3),
+  # ("diplomacy_start_war_between_kingdoms", #sets relations between two kingdoms and their vassals.
+    # [
+      # (store_script_param, ":kingdom_a", 1),
+      # (store_script_param, ":kingdom_b", 2),
+      # (store_script_param, ":initializing_war_peace_cond", 3),
       
-      (store_relation, ":relation", ":kingdom_a", ":kingdom_b"),
-      (val_min, ":relation", -10),
-      (val_add, ":relation", -30),
-      (set_relation, ":kingdom_a", ":kingdom_b", ":relation"),
+      # (store_relation, ":relation", ":kingdom_a", ":kingdom_b"),
+      # (val_min, ":relation", -10),
+      # (val_add, ":relation", -30),
+      # (set_relation, ":kingdom_a", ":kingdom_b", ":relation"),
 
-      (try_begin),
-        (eq, "$players_kingdom", ":kingdom_a"),
-        (store_relation, ":relation", "fac_player_supporters_faction", ":kingdom_b"),
-        (val_min, ":relation", -30),
-        (call_script, "script_set_player_relation_with_faction", ":kingdom_b", ":relation"),
-      (else_try),
-        (eq, "$players_kingdom", ":kingdom_b"),
-        (store_relation, ":relation", "fac_player_supporters_faction", ":kingdom_a"),
-        (val_min, ":relation", -30),
-        (call_script, "script_set_player_relation_with_faction", ":kingdom_a", ":relation"),
-      (try_end),
+      # (try_begin),
+        # (eq, "$players_kingdom", ":kingdom_a"),
+        # (store_relation, ":relation", "fac_player_supporters_faction", ":kingdom_b"),
+        # (val_min, ":relation", -30),
+        # (call_script, "script_set_player_relation_with_faction", ":kingdom_b", ":relation"),
+      # (else_try),
+        # (eq, "$players_kingdom", ":kingdom_b"),
+        # (store_relation, ":relation", "fac_player_supporters_faction", ":kingdom_a"),
+        # (val_min, ":relation", -30),
+        # (call_script, "script_set_player_relation_with_faction", ":kingdom_a", ":relation"),
+      # (try_end),
 
-      (try_begin),
-        (eq, ":initializing_war_peace_cond", 1),
-        (try_begin),
-          (store_random_in_range, ":random_no", 0, 2),
-          (this_or_next|eq, ":kingdom_a", "fac_player_supporters_faction"),
-          (eq, ":random_no", 0),
-          (assign, ":local_temp", ":kingdom_a"),
-          (assign, ":kingdom_a", ":kingdom_b"),
-          (assign, ":kingdom_b", ":local_temp"),
-        (try_end),
-        (str_store_faction_name_link, s1, ":kingdom_a"),
-        (str_store_faction_name_link, s2, ":kingdom_b"),
-        (display_log_message, "@{s1} has declared war against {s2}."),
+      # (try_begin),
+        # (eq, ":initializing_war_peace_cond", 1),
+        # (try_begin),
+          # (store_random_in_range, ":random_no", 0, 2),
+          # (this_or_next|eq, ":kingdom_a", "fac_player_supporters_faction"),
+          # (eq, ":random_no", 0),
+          # (assign, ":local_temp", ":kingdom_a"),
+          # (assign, ":kingdom_a", ":kingdom_b"),
+          # (assign, ":kingdom_b", ":local_temp"),
+        # (try_end),
+        # (str_store_faction_name_link, s1, ":kingdom_a"),
+        # (str_store_faction_name_link, s2, ":kingdom_b"),
+        # (display_log_message, "@{s1} has declared war against {s2}."),
 
-        (call_script, "script_add_notification_menu", "mnu_notification_war_declared", ":kingdom_a", ":kingdom_b"),
+        # (call_script, "script_add_notification_menu", "mnu_notification_war_declared", ":kingdom_a", ":kingdom_b"),
 
-        (call_script, "script_update_faction_notes", ":kingdom_a"),
-        (call_script, "script_update_faction_notes", ":kingdom_b"),
-        (assign, "$g_recalculate_ais", 1),
-      (try_end),
-  ]),
+        # (call_script, "script_update_faction_notes", ":kingdom_a"),
+        # (call_script, "script_update_faction_notes", ":kingdom_b"),
+        # (assign, "$g_recalculate_ais", 1),
+      # (try_end),
+  # ]),
   
   # script_event_kingdom_make_peace_with_kingdom
   # Input: arg1 = source_kingdom, arg2 = target_kingdom
   # Output: none
-  ("event_kingdom_make_peace_with_kingdom",
-    [
-      (store_script_param_1, ":source_kingdom"),
-      (store_script_param_2, ":target_kingdom"),
-      (try_begin),
-        (check_quest_active, "qst_capture_prisoners"),
-        (try_begin),
-          (eq, "$players_kingdom", ":source_kingdom"),
-          (quest_slot_eq, "qst_capture_prisoners", slot_quest_target_faction, ":target_kingdom"),
-          (call_script, "script_cancel_quest", "qst_capture_prisoners"),
-        (else_try),
-          (eq, "$players_kingdom", ":target_kingdom"),
-          (quest_slot_eq, "qst_capture_prisoners", slot_quest_target_faction, ":source_kingdom"),
-          (call_script, "script_cancel_quest", "qst_capture_prisoners"),
-        (try_end),
-      (try_end),
-  ]),
+  # ("event_kingdom_make_peace_with_kingdom",
+    # [
+      # (store_script_param_1, ":source_kingdom"),
+      # (store_script_param_2, ":target_kingdom"),
+      # (try_begin),
+        # (check_quest_active, "qst_capture_prisoners"),
+        # (try_begin),
+          # (eq, "$players_kingdom", ":source_kingdom"),
+          # (quest_slot_eq, "qst_capture_prisoners", slot_quest_target_faction, ":target_kingdom"),
+          # (call_script, "script_cancel_quest", "qst_capture_prisoners"),
+        # (else_try),
+          # (eq, "$players_kingdom", ":target_kingdom"),
+          # (quest_slot_eq, "qst_capture_prisoners", slot_quest_target_faction, ":source_kingdom"),
+          # (call_script, "script_cancel_quest", "qst_capture_prisoners"),
+        # (try_end),
+      # (try_end),
+  # ]),
 
 # script_exchange_prisoners_between_factions
 # Input: arg1 = faction_no_1, arg2 = faction_no_2
-  ("exchange_prisoners_between_factions",
-   [
-       (store_script_param_1, ":faction_no_1"),
-       (store_script_param_2, ":faction_no_2"),
-       (assign, ":faction_no_3", -1),
-       (assign, ":faction_no_4", -1),
-       (try_begin),
-         (this_or_next|eq, "$players_kingdom", ":faction_no_1"),
-         (eq, "$players_kingdom", ":faction_no_2"),
-         (assign, ":faction_no_3", "fac_player_faction"),
-         (assign, ":faction_no_4", "fac_player_supporters_faction"),
-       (try_end),
+  # ("exchange_prisoners_between_factions",
+   # [
+       # (store_script_param_1, ":faction_no_1"),
+       # (store_script_param_2, ":faction_no_2"),
+       # (assign, ":faction_no_3", -1),
+       # (assign, ":faction_no_4", -1),
+       # (try_begin),
+         # (this_or_next|eq, "$players_kingdom", ":faction_no_1"),
+         # (eq, "$players_kingdom", ":faction_no_2"),
+         # (assign, ":faction_no_3", "fac_player_faction"),
+         # (assign, ":faction_no_4", "fac_player_supporters_faction"),
+       # (try_end),
 
-       (try_for_parties, ":party_no"),
-         (store_faction_of_party, ":party_faction", ":party_no"),
-         (this_or_next|eq, ":party_faction", ":faction_no_1"),
-         (this_or_next|eq, ":party_faction", ":faction_no_2"),
-         (this_or_next|eq, ":party_faction", ":faction_no_3"),
-         (eq, ":party_faction", ":faction_no_4"),
-         (party_get_num_prisoner_stacks, ":num_stacks", ":party_no"),
-         (try_for_range_backwards, ":troop_iterator", 0, ":num_stacks"),
-           (party_prisoner_stack_get_troop_id, ":cur_troop_id", ":party_no", ":troop_iterator"),
-           (store_troop_faction, ":cur_faction", ":cur_troop_id"),
-           (this_or_next|eq, ":cur_faction", ":faction_no_1"),
-           (this_or_next|eq, ":cur_faction", ":faction_no_2"),
-           (this_or_next|eq, ":cur_faction", ":faction_no_3"),
-           (eq, ":cur_faction", ":faction_no_4"),
-           (try_begin),
-             (troop_is_hero, ":cur_troop_id"),
-             (call_script, "script_remove_troop_from_prison", ":cur_troop_id"),
-           (try_end),
-           (party_prisoner_stack_get_size, ":stack_size", ":party_no", ":troop_iterator"),
-           (party_remove_prisoners, ":party_no", ":cur_troop_id", ":stack_size"),
-         (try_end),
-       (try_end),
-    ]),
+       # (try_for_parties, ":party_no"),
+         # (store_faction_of_party, ":party_faction", ":party_no"),
+         # (this_or_next|eq, ":party_faction", ":faction_no_1"),
+         # (this_or_next|eq, ":party_faction", ":faction_no_2"),
+         # (this_or_next|eq, ":party_faction", ":faction_no_3"),
+         # (eq, ":party_faction", ":faction_no_4"),
+         # (party_get_num_prisoner_stacks, ":num_stacks", ":party_no"),
+         # (try_for_range_backwards, ":troop_iterator", 0, ":num_stacks"),
+           # (party_prisoner_stack_get_troop_id, ":cur_troop_id", ":party_no", ":troop_iterator"),
+           # (store_troop_faction, ":cur_faction", ":cur_troop_id"),
+           # (this_or_next|eq, ":cur_faction", ":faction_no_1"),
+           # (this_or_next|eq, ":cur_faction", ":faction_no_2"),
+           # (this_or_next|eq, ":cur_faction", ":faction_no_3"),
+           # (eq, ":cur_faction", ":faction_no_4"),
+           # (try_begin),
+             # (troop_is_hero, ":cur_troop_id"),
+             # (call_script, "script_remove_troop_from_prison", ":cur_troop_id"),
+           # (try_end),
+           # (party_prisoner_stack_get_size, ":stack_size", ":party_no", ":troop_iterator"),
+           # (party_remove_prisoners, ":party_no", ":cur_troop_id", ":stack_size"),
+         # (try_end),
+       # (try_end),
+    # ]),
 
   # script_add_notification_menu
   # Input: arg1 = menu_no, arg2 = menu_var_1, arg3 = menu_var_2
@@ -10770,8 +10775,10 @@ scripts = [
 	(try_end),
 ]),
   
-  # given a region, it return (in reg1) the "default faction" ruling in that region, if any (else, -1)   (matrini)
-  ("region_get_faction", [
+
+ #  script_region_get_faction:
+ # given a region, it return (in reg1) the "default faction" ruling in that region, if any (else, -1)   (matrini)
+("region_get_faction", [
 	(store_script_param_1, ":region_id"),
 	(try_begin), (is_between,":region_id", region_pelennor, region_harrowdale), 
 		(assign, reg1, fac_gondor),
@@ -10790,109 +10797,208 @@ scripts = [
 	(else_try),
 		(assign, reg1, -1),
 	(try_end)
-  ]),
+]),
 
-  
-  # script_setup_random_scene
-  # Input: arg1 = center_no, arg2 = mission_template_no
-  # Output: none
-("setup_random_scene",
-    [(party_get_current_terrain, ":terrain_type", "p_main_party"),
-     (assign, ":scene_to_use", 0),
+ 
+# script_setup_random_scene (GA and mtarini)
+# Input: arg1 = region  code
+# Input: arg2 = terrain type
+# Input: arg3 = visible landmark (if any, else -1)  
+# Input: arg4 =  road : 1, no-road : 0   # TODO
+# Output: none
+("jump_to_random_scene", [
+
+	(store_script_param, ":region",1),
+	(store_script_param, ":terrain",2),
+	(store_script_param, ":landmark",3),
+	#(assign, reg10, ":landmark"),(display_message,"@LANDMARK: {reg10}"),
 	
-# check if near small fords
-	 (try_for_range,":ford","p_ford_cerin_dolen","p_ford_moria2"),
-	    (store_distance_to_party_from_party,":dist","p_main_party",":ford"),
-	    (lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_01"), #placeholder scenes
-	 (try_end),
+	(assign,":small_scene",0),
+	(try_begin), (lt,"$number_of_combatants",70),
+	    (assign,":small_scene",1),  # small scene variations right after standard ones in module_scenes
+	(try_end),
 
-# check if near large fords
-  (try_begin),
-     (eq,":scene_to_use",0),
-	 (try_for_range,":ford","p_ford_cair_andros1","p_ford_cerin_dolen"),
-	   (store_distance_to_party_from_party,":dist","p_main_party",":ford"),
-	   (lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_02"), #placeholder scenes
-	 (try_end),
-  (try_end),
+	# in the following, according to region and terrain type, setup the first, the second, or both these variables:
+    (assign, ":native_terrain_to_use", -1), # this is you need random terrain generation using a ground level vanilla terrain
+    (assign, ":scene_to_use", -1),   # this if you want to use a specific scene
+	
+
+	(try_begin),
+		(assign, ":native_terrain_to_use", rt_steppe),
+		(eq,":landmark","p_hand_isen"),
+		#(store_add,":scene_to_use","scn_handsign",":small_scene"),  # small and big scenes?
+		(assign,":scene_to_use","scn_handsign"), 
+	(else_try),
+		(eq,":region",region_dead_marshes),
+		(assign,":scene_to_use","scn_deadmarshes"), 
+	(else_try),
+		(this_or_next|eq,":region",region_firien_wood),
+		(eq,":region",region_lorien),
+		(assign, ":native_terrain_to_use", rt_steppe_forest),
+	(else_try),
+		(eq,":region",region_fangorn),
+		(assign, ":native_terrain_to_use", rt_forest),
+	(else_try),
+		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
+		(assign, ":native_terrain_to_use", rt_desert_forest),
+	(else_try),
+		(eq,":region",region_druadan_forest),
+		(assign, ":native_terrain_to_use", rt_steppe_forest),
+	(else_try),
+		# if it is a forest terrain, use forest battlefield regardless of region
+		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
+		(assign, ":native_terrain_to_use", rt_steppe_forest),
+	(else_try),
+		(is_between,":region",region_pelennor, region_anorien+1),
+		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+	(else_try),
+		(this_or_next|eq,":region",region_the_wold),
+		(eq,":region",region_brown_lands),
+		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
+	(else_try),
+		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
+		(assign, ":native_terrain_to_use", rt_steppe),  # rhoan default
+	(else_try),
+		(this_or_next|eq,":region",region_misty_mountains),
+		(eq,":region",region_grey_mountains),
+		(assign, ":native_terrain_to_use", rt_snow),  # mountains
+	(else_try),
+		# anything else
+		(assign, ":native_terrain_to_use", rt_steppe),  
+	(try_end),
+	
+	# not set the terrain
+	(try_begin),(gt, ":native_terrain_to_use", -1), 
+		# use native terrain autogeneration
+		
+		(try_begin),(neq,"$relocated",1),
+			(assign,"$relocated",1),
+			# don't store current location if already relocated
+			(party_relocate_near_party,"p_pointer_player","p_main_party",0), #remember original player location 
+		(try_end),
+        (store_random_in_range, ":radius", 1, 5), # radius around base terrain Z=0 position for seed generation
+		(store_add, reg10, "p_pointer_z_0_begin", ":native_terrain_to_use"),
+		(party_relocate_near_party,"p_main_party",reg10,":radius"), # teleport to requested region
+		
+		(display_message,"@debug: teleporitng to party ID N. {reg10}"),
+		
+		(try_begin),(eq,":scene_to_use",-1),
+			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
+			(store_add, ":scene_to_use", ":native_terrain_to_use", "scn_random_scene_steppe" ),
+			(val_sub, ":scene_to_use", 2), # steppe is terrain 2
+			
+			(try_begin), (eq, ":small_scene", 1), 
+				# shring scene
+				(lt, ":native_terrain_to_use", rt_forest_begin), #  forest don't have a small version
+				(val_add, ":scene_to_use", 10), 
+			(try_end),
+		(try_end),
+		
+	(try_end),
+	
+	(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
+	(jump_to_scene,":scene_to_use"),
+	
+	# check if near small fords
+	#(try_for_range,":ford","p_ford_cerin_dolen","p_ford_moria2"),
+	#	(store_distance_to_party_from_party,":dist","p_main_party",":ford"),
+	#	(lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_01"), #placeholder scenes
+	#	(display_message,"@SCENE: small ford " ),
+	#(try_end),
+
+	# check if near large fords
+	#(try_begin),
+	#	(eq,":scene_to_use",0),
+	#	(try_for_range,":ford","p_ford_cair_andros1","p_ford_cerin_dolen"),
+	#		(store_distance_to_party_from_party,":dist","p_main_party",":ford"),
+	#		(lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_02"), #placeholder scenes
+	#	(try_end),
+	#(try_end),
   
-# check if near Gondor towns (farms and fields scenes)
-
-# check if in Lorien (elven forest scenes)
-
-# check if in Fangorn (Fangorn forest scenes)
 
 # checks depleted, completely random terrain generated
-  (try_begin),
-     (eq,":scene_to_use",0),	
-     (assign, ":scene_to_use", "scn_random_scene_plain"),
-  #  player party temporary relocation to map Z=0, anti-crazy-hills. GA
-     (assign,"$relocated",1),
-	 (party_relocate_near_party,"p_pointer_player","p_main_party",0), #remember original player location
+  # (try_begin),
+     # (eq,":scene_to_use",0),	
+     # (assign, ":scene_to_use", "scn_random_scene_plain"),
+  # #  player party temporary relocation to map Z=0, anti-crazy-hills. GA
+     # (assign,"$relocated",1),
+	 # (party_relocate_near_party,"p_pointer_player","p_main_party",0), #remember original player location
      
-	 (try_begin),
-        (store_random_in_range, ":radius", 1, 5), # radius around base terrain Z=0 position for seed generation
+	 # (try_begin),
         
-		(this_or_next|eq, ":terrain_type", rt_steppe),
-        (this_or_next|eq, ":terrain_type", rt_plain ),
-        (this_or_next|eq, ":terrain_type", rt_snow  ),
-        (             eq, ":terrain_type", rt_desert),
-#        (store_random_in_range, ":terrain", 0, 4), #randomness off
-        (try_begin),
-		   (eq, ":terrain_type", rt_steppe),
-		   (assign, ":scene_to_use", "scn_random_scene_rohan_steppe"),     (display_message,"@SCENE: rohan steppe"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_plain),
-		   (assign, ":scene_to_use", "scn_random_scene_plain" ),           (display_message,"@SCENE: plain"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain" ,":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_snow),
-		   (assign, ":scene_to_use", "scn_random_scene_snow"  ),           (display_message,"@SCENE: snow"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow"  ,":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_desert),
-		   (assign, ":scene_to_use", "scn_random_scene_desert"),           (display_message,"@SCENE: desert"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert",":radius"),
-        (try_end),
-	# get number of combatants (calculated in script_calculate_battle_advantage) and use small scene if too few. GA
-	    (try_begin), 
-	       (lt,"$number_of_combatants",70),
-	       (val_add,":scene_to_use",1),     # small scene variations right after standard ones in module_scenes
-		   (display_message,"@small scene used"),
-	    (try_end),
+		# (this_or_next|eq, ":terrain_type", rt_steppe),
+        # (this_or_next|eq, ":terrain_type", rt_plain ),
+        # (this_or_next|eq, ":terrain_type", rt_snow  ),
+        # (             eq, ":terrain_type", rt_desert),
+     # (try_end),
+	 
+	 
+	 
+# #        (store_random_in_range, ":terrain", 0, 4), #randomness off
+        # (try_begin),
+		   # (eq, ":terrain_type", rt_steppe),
+		   # (assign, ":scene_to_use", "scn_random_scene_rohan_steppe"),     (display_message,"@SCENE: rohan steppe"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe",":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_plain),
+		   # (assign, ":scene_to_use", "scn_random_scene_plain" ),           (display_message,"@SCENE: plain"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain" ,":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_snow),
+		   # (assign, ":scene_to_use", "scn_random_scene_snow"  ),           (display_message,"@SCENE: snow"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow"  ,":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_desert),
+		   # (assign, ":scene_to_use", "scn_random_scene_desert"),           (display_message,"@SCENE: desert"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert",":radius"),
+        # (try_end),
+	# # get number of combatants (calculated in script_calculate_battle_advantage) and use small scene if too few. GA
+	    # (try_begin), 
+	       # (lt,"$number_of_combatants",70),
+	       # (val_add,":scene_to_use",1),     # small scene variations right after standard ones in module_scenes
+		   # (display_message,"@small scene used"),
+	    # (try_end),
 	  
-	  (else_try),  # forest types randomly mashed for generation testing purposes, forests always small, for fps. GA
-        (this_or_next|eq, ":terrain_type", rt_steppe_forest),
-        (this_or_next|eq, ":terrain_type", rt_forest       ),
-        (this_or_next|eq, ":terrain_type", rt_snow_forest  ),
-        (             eq, ":terrain_type", rt_desert_forest),
+	  # (else_try),  # forest types randomly mashed for generation testing purposes, forests always small, for fps. GA
+        # (this_or_next|eq, ":terrain_type", rt_steppe_forest),
+        # (this_or_next|eq, ":terrain_type", rt_forest       ),
+        # (this_or_next|eq, ":terrain_type", rt_snow_forest  ),
+        # (             eq, ":terrain_type", rt_desert_forest),
 
-#        (store_random_in_range, ":terrain", 0, 4),
-        (try_begin),
-		   (eq, ":terrain_type", rt_steppe_forest),
-		   (assign, ":scene_to_use", "scn_random_scene_steppe_forest"),            (display_message,"@SCENE: steppe forest"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe_forest",":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_forest),
-		   (assign, ":scene_to_use", "scn_random_scene_plain_forest" ),            (display_message,"@SCENE: plain forest" ),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain_forest" ,":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_snow_forest),
-		   (assign, ":scene_to_use", "scn_random_scene_snow_forest"  ),            (display_message,"@SCENE: snow forest"  ),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow_forest"  ,":radius"),
-        (else_try),
-		   (eq, ":terrain_type", rt_desert_forest),
-		   (assign, ":scene_to_use", "scn_random_scene_desert_forest"),            (display_message,"@SCENE: desert forest"),
-		   (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert_forest",":radius"),
-        (try_end),
-      (try_end),
-  (try_end),
+        # (try_begin),
+		   # (eq, ":terrain_type", rt_steppe_forest),
+		   # (assign, ":scene_to_use", "scn_random_scene_steppe_forest"),            (display_message,"@SCENE: steppe forest"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_steppe_forest",":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_forest),
+		   # (assign, ":scene_to_use", "scn_random_scene_plain_forest" ),            (display_message,"@SCENE: plain forest" ),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_plain_forest" ,":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_snow_forest),
+		   # (assign, ":scene_to_use", "scn_random_scene_snow_forest"  ),            (display_message,"@SCENE: snow forest"  ),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_snow_forest"  ,":radius"),
+        # (else_try),
+		   # (eq, ":terrain_type", rt_desert_forest),
+		   # (assign, ":scene_to_use", "scn_random_scene_desert_forest"),            (display_message,"@SCENE: desert forest"),
+		   # (party_relocate_near_party,"p_main_party", "p_pointer_z_0_desert_forest",":radius"),
+        # (try_end),
+      # (try_end),
+	# (try_end),
   
-	  (modify_visitors_at_site,":scene_to_use"), # to let warg respawing.
-	  (reset_visitors),
-      (jump_to_scene,":scene_to_use"),
+	# #(modify_visitors_at_site,":scene_to_use"),  (reset_visitors), # to let warg respawing.
+    # (jump_to_scene,":scene_to_use"),
   ]),
 
+  # script_maybe_relocate_player_from_z0 (GA  and mtarini)
+  ("maybe_relocate_player_from_z0",[
+	 (try_begin), #if "walk around place" used
+	    (eq, "$relocated", 1),
+	    (assign, "$relocated", 0),
+        (party_relocate_near_party, "p_main_party", "p_pointer_player", 0),
+	(try_end),
+  ]),
+
+		
   # script_enter_dungeon
   # Input: arg1 = center_no, arg2 = mission_template_no
   # Output: none

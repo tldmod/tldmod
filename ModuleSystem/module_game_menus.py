@@ -1523,23 +1523,26 @@ game_menus = [
    "You are in {s1}.^^What do you want to do?",
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
-	  (party_get_position, pos1, "p_main_party"),
-	  (party_get_current_terrain, ":tt","p_main_party"),
-	  (call_script,"script_get_region_of_pos1", ":tt"),
-	  (assign, "$current_player_region", reg1),
+	
+	  (call_script,"script_maybe_relocate_player_from_z0"),
+	  (call_script, "script_get_region_of_party", "p_main_party"),(assign, "$current_player_region", reg1),
+	  (party_get_current_terrain, "$current_player_terrain","p_main_party"),
+	  (call_script, "script_get_region_of_party", "p_main_party"),
+	  (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
 	  
-	  (store_add, reg2, reg1, str_fullname_region_begin),
+	  
+	  (store_add, reg2, "$current_player_region", str_fullname_region_begin),
 	  (str_store_string,s1,reg2),
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
     ],
 	[
 	("camp_scene"      ,[],"Walk around."  ,[
 		(assign, "$number_of_combatants", 1), # add a scene as if a battle with one combatant...
-		(call_script, "script_setup_random_scene"), #    (jump_to_scene, "scn_camp_scene"),
+		(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
+		#    (jump_to_scene, "scn_camp_scene"),
 		(change_screen_mission)
 	]),
-     ("camp_action"     ,[],"Take an action."    ,[(jump_to_menu, "mnu_camp_action")]
-),
+     ("camp_action"     ,[],"More options."    ,[(jump_to_menu, "mnu_camp_action")]),
 
 #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
 ("camp_wait_here",[],"Camp here for some time.",
@@ -1610,12 +1613,7 @@ game_menus = [
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
 ## MadVader test end
      ("resume_travelling",[],"Resume travelling.",[
-     	 (try_begin), #if "walk around place" used
-	       (eq, "$relocated", 1),
-	       (assign, "$relocated", 0),
-           (party_relocate_near_party, "p_main_party", "p_pointer_player", 0),
-	    (try_end),
-	    (change_screen_return),]),
+     	 (change_screen_return),]),
     ]
 ),
   
@@ -3213,13 +3211,6 @@ game_menus = [
 	],
 	[
  	
-#      ("walk_around",   [],  #(eq,"$cheat_mode",1)], why walking around should be considered cheating?
-# 		"Walk around.",
-#	   [(set_jump_mission,"mt_ai_training"),
-#		(call_script, "script_setup_random_scene"),
-#		(change_screen_mission),
- #       ]),
-
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
@@ -3415,37 +3406,18 @@ game_menus = [
   #TLD end (Hokie)  
   
 ("camp_action",0,
-   "^^^^^^^^^     Choose an action:",
-   "none",
-    [(set_background_mesh, "mesh_ui_default_menu_window"),],
-    [ 
-     # ("camp_stop_orc_brew",
-	 # [
-	  # (player_has_item,"itm_orc_brew"),
-	 # ],
-	  # "Drink the water you got from the walking trees",
-	  # [
-	    # (troop_get_type,reg5,"trp_player"),
-	    # (troop_remove_item,"itm_ent_water"),
-		# (display_log_message,"@Drank Ent water"),
-		# (assign,"$g_ent_water_ever_drunk",1),
-		# (assign,"$g_ent_water_taking_effect",1),
-		# (try_begin),
-			# (neg|is_between,reg5,tf_orc_begin, tf_orc_end),
-			# (jump_to_menu,"mnu_drank_ent_water_human"),
-		# (else_try),
-			# (jump_to_menu,"mnu_drank_ent_water_orc"),
-		# (try_end),
-  # ]
-	 # ),
+  "^^^^^^^^^     Choose an action:", "none",
+ [(set_background_mesh, "mesh_ui_default_menu_window"),],
+ 
+ [ 
 
-     ("camp_drink_water",
-	 [
-	  (player_has_item,"itm_ent_water"),
-	  (eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
-	 ],
-	  "Drink the Ent Water!",
-	  [
+    ("camp_drink_water",
+		[
+			(player_has_item,"itm_ent_water"),
+			(eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
+		],
+		"Drink the Ent Water!",
+		[
 	    (troop_get_type,reg5,"trp_player"),
 	    (troop_remove_item,"itm_ent_water"),
 		(display_log_message,"@You drank the Ent Water..."),
@@ -3457,28 +3429,34 @@ game_menus = [
 		(else_try),
 			(jump_to_menu,"mnu_drank_ent_water_orc"),
 		(try_end),
-  ]
-	 ),
-     ("camp_recruit_prisoners",
-       [(troops_can_join, 1),
-        (store_current_hours, ":cur_time"),
-        (val_sub, ":cur_time", 24),
-        (gt, ":cur_time", "$g_prisoner_recruit_last_time"),
-        (try_begin),
-          (gt, "$g_prisoner_recruit_last_time", 0),
-          (assign, "$g_prisoner_recruit_troop_id", 0),
-          (assign, "$g_prisoner_recruit_size", 0),
-          (assign, "$g_prisoner_recruit_last_time", 0),
-        (try_end),
-        ], "Recruit some of your prisoners to your party.",[(jump_to_menu, "mnu_camp_recruit_prisoners"),],),
-      #("action_read_book",[],"Select a book to read.",[(jump_to_menu, "mnu_camp_action_read_book"),]),
-      #("action_modify_banner",[(eq, "$cheat_mode", 1)],"Cheat: Modify your banner.",
-      #                                               [(start_presentation, "prsnt_banner_selection"), #(start_presentation, "prsnt_custom_banner"),
-      #                                                ]),
-      #("action_retire",[],"Retire from adventuring.",[(jump_to_menu, "mnu_retirement_verify"),]),
-      ("camp_action_4",[],"Back to camp menu."      ,[(jump_to_menu, "mnu_camp"),]),
+		]
+	),
+	
+    # ("camp_recruit_prisoners",
+       # [(troops_can_join, 1),
+        # (store_current_hours, ":cur_time"),
+        # (val_sub, ":cur_time", 24),
+        # (gt, ":cur_time", "$g_prisoner_recruit_last_time"),
+        # (try_begin),
+          # (gt, "$g_prisoner_recruit_last_time", 0),
+          # (assign, "$g_prisoner_recruit_troop_id", 0),
+          # (assign, "$g_prisoner_recruit_size", 0),
+          # (assign, "$g_prisoner_recruit_last_time", 0),
+        # (try_end),
+        # ], "Recruit some of your prisoners to your party.",[(jump_to_menu, "mnu_camp_recruit_prisoners"),],
+	# ),
+	
+    #("action_read_book",[],"Select a book to read.",[(jump_to_menu, "mnu_camp_action_read_book"),]),
+	
+    #("action_modify_banner",[(eq, "$cheat_mode", 1)],"Cheat: Modify your banner.",
+    #                                               [(start_presentation, "prsnt_banner_selection"), #(start_presentation, "prsnt_custom_banner"),
+    #                                                ]),
+    #("action_retire",[],"Retire from adventuring.",[(jump_to_menu, "mnu_retirement_verify"),]),
+	
+    ("camp_action_4",[],"Back.",[(jump_to_menu, "mnu_camp"),]),
    ]
-  ),
+),
+
 
    # human player drank Ent water
    ("drank_ent_water_human",0,
@@ -3486,112 +3464,102 @@ game_menus = [
 	"none",[  (set_background_mesh, "mesh_draw_entdrink_human"),],[("ok_",[],"Continue.",[(change_screen_return,0),] ),]
    ),
    
-   # orc player drank Ent water
+   # orc player drank Ent water (mtarini)
    ("drank_ent_water_orc",0,
     "^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",
 	"none",[(display_log_message,"@HP lost from poisoning."),(troop_set_health,"trp_player",5),]
 	,[("ok_",[],"I... shall... survive!",[(change_screen_return,0),] ),]
    ),
   
-  ("camp_recruit_prisoners",0,
-   "You offer your prisoners freedom if they agree to join you as soldiers. {s18}",
-   "none",
-   [(assign, ":num_regular_prisoner_slots", 0),
-    (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
-    (try_for_range, ":cur_stack", 0, ":num_stacks"),
-      (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-      (neg|troop_is_hero, ":cur_troop_id"),
-      (val_add, ":num_regular_prisoner_slots", 1),
-    (try_end),
-    (try_begin),
-      (eq, ":num_regular_prisoner_slots", 0),
-      (jump_to_menu, "mnu_camp_no_prisoners"),
-    (else_try),
-      (eq, "$g_prisoner_recruit_troop_id", 0),
-      (store_current_hours, "$g_prisoner_recruit_last_time"),
-      (store_random_in_range, ":rand", 0, 100),
-      (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
-      (store_sub, ":reject_chance", 15, ":persuasion_level"),
-      (val_mul, ":reject_chance", 4),
-      (try_begin),
-        (lt, ":rand", ":reject_chance"),
-        (assign, "$g_prisoner_recruit_troop_id", -7),
-      (else_try),
-        (assign, ":num_regular_prisoner_slots", 0),
-        (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
-        (try_for_range, ":cur_stack", 0, ":num_stacks"),
-          (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-          (neg|troop_is_hero, ":cur_troop_id"),
-          (val_add, ":num_regular_prisoner_slots", 1),
-        (try_end),
-        (store_random_in_range, ":random_prisoner_slot", 0, ":num_regular_prisoner_slots"),
-        (try_for_range, ":cur_stack", 0, ":num_stacks"),
-          (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-          (neg|troop_is_hero, ":cur_troop_id"),
-          (val_sub, ":random_prisoner_slot", 1),
-          (lt, ":random_prisoner_slot", 0),
-          (assign, ":num_stacks", 0),
-          (assign, "$g_prisoner_recruit_troop_id", ":cur_troop_id"),
-          (party_prisoner_stack_get_size, "$g_prisoner_recruit_size", "p_main_party", ":cur_stack"),
-        (try_end),
-      (try_end),
+  # ("camp_recruit_prisoners",0,
+   # "You offer your prisoners freedom if they agree to join you as soldiers. {s18}",
+   # "none",
+   # [(assign, ":num_regular_prisoner_slots", 0),
+    # (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
+    # (try_for_range, ":cur_stack", 0, ":num_stacks"),
+      # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
+      # (neg|troop_is_hero, ":cur_troop_id"),
+      # (val_add, ":num_regular_prisoner_slots", 1),
+    # (try_end),
+    # (try_begin),
+      # (eq, ":num_regular_prisoner_slots", 0),
+      # (jump_to_menu, "mnu_camp_no_prisoners"),
+    # (else_try),
+      # (eq, "$g_prisoner_recruit_troop_id", 0),
+      # (store_current_hours, "$g_prisoner_recruit_last_time"),
+      # (store_random_in_range, ":rand", 0, 100),
+      # (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
+      # (store_sub, ":reject_chance", 15, ":persuasion_level"),
+      # (val_mul, ":reject_chance", 4),
+      # (try_begin),
+        # (lt, ":rand", ":reject_chance"),
+        # (assign, "$g_prisoner_recruit_troop_id", -7),
+      # (else_try),
+        # (assign, ":num_regular_prisoner_slots", 0),
+        # (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
+        # (try_for_range, ":cur_stack", 0, ":num_stacks"),
+          # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
+          # (neg|troop_is_hero, ":cur_troop_id"),
+          # (val_add, ":num_regular_prisoner_slots", 1),
+        # (try_end),
+        # (store_random_in_range, ":random_prisoner_slot", 0, ":num_regular_prisoner_slots"),
+        # (try_for_range, ":cur_stack", 0, ":num_stacks"),
+          # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
+          # (neg|troop_is_hero, ":cur_troop_id"),
+          # (val_sub, ":random_prisoner_slot", 1),
+          # (lt, ":random_prisoner_slot", 0),
+          # (assign, ":num_stacks", 0),
+          # (assign, "$g_prisoner_recruit_troop_id", ":cur_troop_id"),
+          # (party_prisoner_stack_get_size, "$g_prisoner_recruit_size", "p_main_party", ":cur_stack"),
+        # (try_end),
+      # (try_end),
 
-      (try_begin),
-        (gt, "$g_prisoner_recruit_troop_id", 0),
-        (party_get_free_companions_capacity, ":capacity", "p_main_party"),
-        (val_min, "$g_prisoner_recruit_size", ":capacity"),
-        (assign, reg1, "$g_prisoner_recruit_size"),
-        (gt, "$g_prisoner_recruit_size", 0),
-        (try_begin),
-          (gt, "$g_prisoner_recruit_size", 1),
-          (assign, reg2, 1),
-        (else_try),
-          (assign, reg2, 0),
-        (try_end),
-        (str_store_troop_name_by_count, s1, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        (str_store_string, s18, "@{reg1} {s1} {reg2?accept:accepts} the offer."),
-      (else_try),
-        (str_store_string, s18, "@No one accepts the offer."),
-      (try_end),
-    (try_end),
-    ],
-    [
-      ("camp_recruit_prisoners_accept",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Take them.",
-       [(remove_troops_from_prisoners, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        (party_add_members, "p_main_party", "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        (store_mul, ":morale_change", -3, "$g_prisoner_recruit_size"),
-        (call_script, "script_change_player_party_morale", ":morale_change"),
-        (jump_to_menu, "mnu_camp"),
-        ]
-       ),
-      ("camp_recruit_prisoners_reject",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Reject them.",
-       [(jump_to_menu, "mnu_camp"),
-        (assign, "$g_prisoner_recruit_troop_id", 0),
-        (assign, "$g_prisoner_recruit_size", 0),
-        ]
-       ),
-      ("continue",[(le, "$g_prisoner_recruit_troop_id", 0)],"Go back.",
-       [(jump_to_menu, "mnu_camp"),
-        ]
-       ),
-      ]
-  ),
+      # (try_begin),
+        # (gt, "$g_prisoner_recruit_troop_id", 0),
+        # (party_get_free_companions_capacity, ":capacity", "p_main_party"),
+        # (val_min, "$g_prisoner_recruit_size", ":capacity"),
+        # (assign, reg1, "$g_prisoner_recruit_size"),
+        # (gt, "$g_prisoner_recruit_size", 0),
+        # (try_begin),
+          # (gt, "$g_prisoner_recruit_size", 1),
+          # (assign, reg2, 1),
+        # (else_try),
+          # (assign, reg2, 0),
+        # (try_end),
+        # (str_store_troop_name_by_count, s1, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
+        # (str_store_string, s18, "@{reg1} {s1} {reg2?accept:accepts} the offer."),
+      # (else_try),
+        # (str_store_string, s18, "@No one accepts the offer."),
+      # (try_end),
+    # (try_end),
+    # ],
+    # [
+      # ("camp_recruit_prisoners_accept",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Take them.",
+       # [(remove_troops_from_prisoners, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
+        # (party_add_members, "p_main_party", "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
+        # (store_mul, ":morale_change", -3, "$g_prisoner_recruit_size"),
+        # (call_script, "script_change_player_party_morale", ":morale_change"),
+        # (jump_to_menu, "mnu_camp"),
+        # ]
+       # ),
+      # ("camp_recruit_prisoners_reject",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Reject them.",
+       # [(jump_to_menu, "mnu_camp"),
+        # (assign, "$g_prisoner_recruit_troop_id", 0),
+        # (assign, "$g_prisoner_recruit_size", 0),
+        # ]
+       # ),
+      # ("continue",[(le, "$g_prisoner_recruit_troop_id", 0)],"Go back.",
+       # [(jump_to_menu, "mnu_camp"),
+        # ]
+       # ),
+       # ]
+# ),
   
-  ("camp_no_prisoners",0,
-   "You have no prisoners to recruit from.",   "none",   [],
-   [("continue",[],"Continue...",[(jump_to_menu, "mnu_camp"),]),]
-  ),
+  # ("camp_no_prisoners",0,
+   # "You have no prisoners to recruit from.",   "none",   [],
+   # [("continue",[],"Continue...",[(jump_to_menu, "mnu_camp"),]),]
+  # ),
 
-
-  ("retirement_verify",0,
-   "You are at day {reg0}. Your current luck is {reg1}. Are you sure you want to retire?",
-   "none",
-   [ (store_current_day, reg0),
-     (assign, reg1, "$g_player_luck"),
-    ],
-   [ ("retire_yes",[],"Yes.",[ (start_presentation, "prsnt_retirement"), ]),
-     ("retire_no" ,[],"No." ,[ (jump_to_menu, "mnu_camp"), ]),
-    ]),
 
 ("end_game",0,
  "^^^^^The decision is made, and you resolve to give up your adventurer's\
@@ -3602,84 +3570,19 @@ game_menus = [
  [ ("end_game_bye",[],"Farewell.",[(change_screen_quit),]),]
 ),
 
-("cattle_herd",mnf_scale_picture,
-   "You encounter some people.",
-   "none",
-   [],
-    [ ("cattle_drive_away",[],"Order them to follow.",
-       [(party_set_slot, "$g_encountered_party", slot_cattle_driven_by_player, 1),
-        (party_set_ai_behavior, "$g_encountered_party", ai_bhvr_escort_party),
-        (party_set_ai_object,"$g_encountered_party", "p_main_party"),
-        (change_screen_return),
-        ]),
-      ("cattle_stop",[],"Bring them to a stop.",
-       [(party_set_slot, "$g_encountered_party", slot_cattle_driven_by_player, 0),
-        (party_set_ai_behavior, "$g_encountered_party", ai_bhvr_hold),
-        (change_screen_return),
-        ]),
-      ("leave",[],"Leave.",[(change_screen_return),]),
-    ]
-),
-
-("cattle_herd_kill",0,
-   "How many animals do you want to slaughter?",
-   "none",
-   [(party_get_num_companions, reg5, "$g_encountered_party")],
-    [
-      ("cattle_kill_1",[(ge, reg5, 1),],"One.",
-       [(call_script, "script_kill_cattle_from_herd", "$g_encountered_party", 1),
-        (jump_to_menu, "mnu_cattle_herd_kill_end"),
-        (change_screen_loot, "trp_temp_troop"),
-        (play_sound, "snd_cow_slaughter"),
-        ]
-       ),
-      ("cattle_kill_2",[(ge, reg5, 2),],"Two.",
-       [(call_script, "script_kill_cattle_from_herd", "$g_encountered_party", 2),
-        (jump_to_menu, "mnu_cattle_herd_kill_end"),
-        (change_screen_loot, "trp_temp_troop"),
-        (play_sound, "snd_cow_slaughter"),
-        ]
-       ),
-      ("cattle_kill_3",[(ge, reg5, 3),],"Three.",
-       [(call_script, "script_kill_cattle_from_herd", "$g_encountered_party", 3),
-        (jump_to_menu, "mnu_cattle_herd_kill_end"),
-        (change_screen_loot, "trp_temp_troop"),
-        (play_sound, "snd_cow_slaughter"),
-        ]
-       ),
-      ("cattle_kill_4",[(ge, reg5, 4),],"Four.",
-       [(call_script, "script_kill_cattle_from_herd", "$g_encountered_party", 4),
-        (jump_to_menu, "mnu_cattle_herd_kill_end"),
-        (change_screen_loot, "trp_temp_troop"),
-        (play_sound, "snd_cow_slaughter"),
-        ]
-       ),
-      ("cattle_kill_5",[(ge, reg5, 5),],"Five.",
-       [(call_script, "script_kill_cattle_from_herd", "$g_encountered_party", 5),
-        (jump_to_menu, "mnu_cattle_herd_kill_end"),
-        (change_screen_loot, "trp_temp_troop"),
-        (play_sound, "snd_cow_slaughter"),
-        ]
-       ),
-      ("go_back_dot",[],"Go back.",
-       [(jump_to_menu, "mnu_cattle_herd"),        ]
-       ),
-      ]
-),
-
-("cattle_herd_kill_end",0,
-   "You shouldn't be reading this.",    "none",   [(change_screen_return)],   []
-),
-
-("arena_duel_fight",0,
-   "You and your opponent prepare to fight for honour.",    "none",   [],
-   [ ("continue",[],"Continue...",[ (jump_to_menu, "mnu_simple_encounter"),(change_screen_mission),]),]
-),
-  
 ( "simple_encounter",mnf_enable_hot_keys,
-    "^^^^^{s2} ^You have {reg10} troops fit for battle against their {reg11}.",
+    "{s2}^^You have {reg10} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.",
     "none",
     [
+		
+		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
+		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
+		(store_add, reg2, str_shortname_region_begin, "$current_player_region",),
+		(str_store_string,s3,reg2),
+		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+
+
+		
         (assign, "$g_enemy_party", "$g_encountered_party"),
         (assign, "$g_ally_party", -1),
         (call_script, "script_encounter_calculate_fit"),
@@ -3729,7 +3632,8 @@ game_menus = [
           (try_end),
           (assign, "$talk_context", tc_party_encounter),
           (call_script, "script_setup_party_meeting", "$g_encountered_party"),
-        (else_try), #second or more turn
+        (else_try), 
+			#second or more turn
 #          (try_begin),
 #            (call_script, "script_encounter_calculate_morale_change"),
 #          (try_end),
@@ -3771,9 +3675,11 @@ game_menus = [
             (str_store_string, s2,"@You were caught by {s1} while your forces were raiding {s3}."),
           (try_end),
         (try_end),
+		
+		
         (try_begin),
           (call_script, "script_party_count_members_with_full_health", "p_collective_enemy"),
-          (assign, ":num_enemy_regulars_remaining", reg(0)),
+          (assign, ":num_enemy_regulars_remaining", reg0 ),
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
@@ -3792,11 +3698,11 @@ game_menus = [
         (else_try),
 #          (eq, "$encountered_party_hostile", 1),
           (call_script, "script_party_count_members_with_full_health","p_main_party"),
-          (assign, reg(3), reg(0)),
+          (assign, reg3, reg0),
           (assign, ":friends_finished",0),
           (try_begin),
             (eq, "$g_battle_result", -1),
-            (eq, reg(3), 0), #battle lost
+            (eq, reg3, 0), #battle lost
             (assign,  ":friends_finished",1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
@@ -3810,6 +3716,7 @@ game_menus = [
           (jump_to_menu, "mnu_total_defeat"),
         (try_end),
 
+		## set background mesh
 		(set_background_mesh, "mesh_ui_default_menu_window"),
         (try_begin),
           (eq, "$g_encountered_party_template", "pt_looters"  ),
@@ -3820,13 +3727,6 @@ game_menus = [
         (else_try),
           (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"        ),
 		  (set_background_mesh, "mesh_draw_wild_troll"),
-        #  (eq, "$g_encountered_party_template", "pt_steppe_bandits"  ),(set_background_mesh, "mesh_pic_steppe_bandits"),
-        #(else_try),
-        #  (eq, "$g_encountered_party_template", "pt_sea_raiders"     ),(set_background_mesh, "mesh_pic_sea_raiders"),
-        #(else_try),
-        #  (eq, "$g_encountered_party_template", "pt_forest_bandits"  ),(set_background_mesh, "mesh_pic_forest_bandits"),
-        #(else_try),
-        #  (eq, "$g_encountered_party_template", "pt_deserters"       ),(set_background_mesh, "mesh_pic_deserters"),
         (try_end),
     ],
 	
@@ -3859,7 +3759,7 @@ game_menus = [
                                   # (jump_to_scene, ":scene_to_use"),
                                 # (else_try),
                                   (set_jump_mission,"mt_lead_charge"),
-                                  (call_script, "script_setup_random_scene"),
+                                  (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
                                 (try_end),
                                 (assign, "$g_next_menu", "mnu_simple_encounter"),
                                 (jump_to_menu, "mnu_battle_debrief"),
@@ -4196,13 +4096,8 @@ game_menus = [
 (   "battle_debrief",mnf_disable_all_keys,
     "{s40}{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
-    [## terrain generation, relocate party back to map position, GA
-	 (try_begin),
-	   (eq,"$relocated",1),
-	     (assign,"$relocated",0),
-         (party_relocate_near_party, "p_main_party", "p_pointer_player",0),
-	 (try_end),
-	 ###############################################################
+    [
+	 (call_script,"script_maybe_relocate_player_from_z0"),
 
      (try_begin),
        (eq, "$g_battle_result", 1),
@@ -4792,7 +4687,7 @@ game_menus = [
     "none",
     [ (str_store_party_name, 1,"$g_encountered_party"),
       (str_store_party_name, 2,"$g_encountered_party_2"),
-     ],
+    ],
     [ ("pre_join_help_attackers",
 	  [   (store_faction_of_party, ":attacker_faction", "$g_encountered_party_2"),
           (store_relation, ":attacker_relation", ":attacker_faction", "fac_player_supporters_faction"),
@@ -4824,9 +4719,18 @@ game_menus = [
 ),
   
 ( "join_battle",mnf_enable_hot_keys,
-    "^^^^^^You are helping {s2} against {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.",
+    "^^^^^^You are helping {s2} against {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
     "none",
-    [   (str_store_party_name, 1,"$g_enemy_party"),
+    [
+	
+		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
+		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),	
+		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+		
+		(store_add, reg2, str_shortname_region_begin, "$current_player_region"),
+		(str_store_string,s3,reg2),
+		
+		(str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
         (assign, ":friends_left", reg10), #TLD fix
@@ -4907,7 +4811,8 @@ game_menus = [
                                 (set_battle_advantage, reg0),
                                 (set_party_battle_mode),
                                 (set_jump_mission,"mt_lead_charge"),
-                                (call_script, "script_setup_random_scene"),
+								
+                                (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
                                 (assign, "$g_next_menu", "mnu_join_battle"),
                                 (jump_to_menu, "mnu_battle_debrief"),
                                 (change_screen_mission),
@@ -7439,10 +7344,9 @@ game_menus = [
      ]
 ),
 
-( "notification_join_another_faction",0,
-    "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War - who would you like to join:",
+( "notification_your_faction_collapsed",0,
+    "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
     "none",
-    # $g_notification_menu_var1 - player side
     [ (str_store_faction_name, s11, "$players_kingdom"),
       (set_fixed_point_multiplier, 100),
       (position_set_x, pos0, 65),
@@ -7450,108 +7354,123 @@ game_menus = [
       (position_set_z, pos0, 170),
       (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$players_kingdom", pos0),
     ],
-  concatenate_scripts([[
-  (
-	"join_faction",
-	[(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
-     (faction_slot_eq, faction_init[y][0], slot_faction_side, "$g_notification_menu_var1"),
-     (str_store_faction_name, s10, faction_init[y][0]),],
-	"{s10}.",
-	[
-        (call_script, "script_player_join_faction", faction_init[y][0]),
-        (str_store_faction_name, s10, "$players_kingdom"),
-        (display_message, "@You have joined {s10}!"),
-		(change_screen_return),
-    ]
-  )
-  ]for y in range(len(faction_init)) ])
-  # +
-    # [ ("continue",[],"Continue...", [(change_screen_return)]),
+    [ ("continue",[],"Continue...", [(change_screen_return)]) ]
+),
+
+
+# ( "notification_join_another_faction",0,
+    # "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War - who would you like to join:",
+    # "none",
+    # # $g_notification_menu_var1 - player side
+    # [ (str_store_faction_name, s11, "$players_kingdom"),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 65),
+      # (position_set_y, pos0, 30),
+      # (position_set_z, pos0, 170),
+      # (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$players_kingdom", pos0),
+    # ],
+  # concatenate_scripts([[
+  # (
+	# "join_faction",
+	# [(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
+     # (faction_slot_eq, faction_init[y][0], slot_faction_side, "$g_notification_menu_var1"),
+     # (str_store_faction_name, s10, faction_init[y][0]),],
+	# "{s10}.",
+	# [
+        # (call_script, "script_player_join_faction", faction_init[y][0]),
+        # (str_store_faction_name, s10, "$players_kingdom"),
+        # (display_message, "@You have joined {s10}!"),
+		# (change_screen_return),
     # ]
-),
+  # )
+  # ]for y in range(len(faction_init)) ])
+  # # +
+    # # [ ("continue",[],"Continue...", [(change_screen_return)]),
+    # # ]
+# ),
 
-( "notification_center_lost",0,
-    "An Estate was Lost^^You have lost {s1} to {s2}.",
-    "none",
-    [ (str_store_party_name, s1, "$g_notification_menu_var1"),
-      (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 62),
-      (position_set_y, pos0, 30),
-      (position_set_z, pos0, 170),
-      (set_game_menu_tableau_mesh, "tableau_center_note_mesh", "$g_notification_menu_var1", pos0),
-      ],
-    [ ("continue",[],"Continue...",[(change_screen_return)])]
-),
+# ( "notification_center_lost",0,
+    # "An Estate was Lost^^You have lost {s1} to {s2}.",
+    # "none",
+    # [ (str_store_party_name, s1, "$g_notification_menu_var1"),
+      # (str_store_faction_name, s2, "$g_notification_menu_var2"),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 62),
+      # (position_set_y, pos0, 30),
+      # (position_set_z, pos0, 170),
+      # (set_game_menu_tableau_mesh, "tableau_center_note_mesh", "$g_notification_menu_var1", pos0),
+      # ],
+    # [ ("continue",[],"Continue...",[(change_screen_return)])]
+# ),
 
-( "notification_troop_left_players_faction",0,
-    "Betrayal!^^{s1} has left {s2} and joined {s3}.",
-    "none",
-    [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
-      (str_store_faction_name, s2, "$players_kingdom"),
-      (str_store_faction_name, s3, "$g_notification_menu_var2"),
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 55),
-      (position_set_y, pos0, 20),
-      (position_set_z, pos0, 100),
-      (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
-      ],
-    [ ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
-),
+# ( "notification_troop_left_players_faction",0,
+    # "Betrayal!^^{s1} has left {s2} and joined {s3}.",
+    # "none",
+    # [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
+      # (str_store_faction_name, s2, "$players_kingdom"),
+      # (str_store_faction_name, s3, "$g_notification_menu_var2"),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 55),
+      # (position_set_y, pos0, 20),
+      # (position_set_z, pos0, 100),
+      # (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
+      # ],
+    # [ ("continue",[],"Continue...",
+       # [(change_screen_return),
+        # ]),
+     # ]
+# ),
 
-( "notification_troop_joined_players_faction",0,
-    "Good news!^^ {s1} has left {s2} and joined {s3}.",
-    "none",
-    [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
-      (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      (str_store_faction_name, s3, "$players_kingdom"),
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 55),
-      (position_set_y, pos0, 20),
-      (position_set_z, pos0, 100),
-      (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
-      ],
-    [("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
-),
+# ( "notification_troop_joined_players_faction",0,
+    # "Good news!^^ {s1} has left {s2} and joined {s3}.",
+    # "none",
+    # [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
+      # (str_store_faction_name, s2, "$g_notification_menu_var2"),
+      # (str_store_faction_name, s3, "$players_kingdom"),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 55),
+      # (position_set_y, pos0, 20),
+      # (position_set_z, pos0, 100),
+      # (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
+      # ],
+    # [("continue",[],"Continue...",
+       # [(change_screen_return),
+        # ]),
+     # ]
+# ),
 
-( "notification_war_declared",0,
-    "Declaration of War^^{s1} has declared war against {s2}!",
-    "none",
-    [
-      (try_begin),
-        (eq, "$g_notification_menu_var1", "fac_player_supporters_faction"),
-        (str_store_faction_name, s1, "$g_notification_menu_var2"),
-        (str_store_string, s2, "@you"),
-      (else_try),
-        (eq, "$g_notification_menu_var2", "fac_player_supporters_faction"),
-        (str_store_faction_name, s1, "$g_notification_menu_var1"),
-        (str_store_string, s2, "@you"),
-      (else_try),
-        (str_store_faction_name, s1, "$g_notification_menu_var1"),
-        (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      (try_end),
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 65),
-      (position_set_y, pos0, 30),
-      (position_set_z, pos0, 170),
-      (store_sub, ":faction_1", "$g_notification_menu_var1", kingdoms_begin),
-      (store_sub, ":faction_2", "$g_notification_menu_var2", kingdoms_begin),
-      (val_mul, ":faction_1", 128),
-      (val_add, ":faction_1", ":faction_2"),
-      (set_game_menu_tableau_mesh, "tableau_2_factions_mesh", ":faction_1", pos0),
-      ],
-    [
-      ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
-),
+# ( "notification_war_declared",0,
+    # "Declaration of War^^{s1} has declared war against {s2}!",
+    # "none",
+    # [
+      # (try_begin),
+        # (eq, "$g_notification_menu_var1", "fac_player_supporters_faction"),
+        # (str_store_faction_name, s1, "$g_notification_menu_var2"),
+        # (str_store_string, s2, "@you"),
+      # (else_try),
+        # (eq, "$g_notification_menu_var2", "fac_player_supporters_faction"),
+        # (str_store_faction_name, s1, "$g_notification_menu_var1"),
+        # (str_store_string, s2, "@you"),
+      # (else_try),
+        # (str_store_faction_name, s1, "$g_notification_menu_var1"),
+        # (str_store_faction_name, s2, "$g_notification_menu_var2"),
+      # (try_end),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 65),
+      # (position_set_y, pos0, 30),
+      # (position_set_z, pos0, 170),
+      # (store_sub, ":faction_1", "$g_notification_menu_var1", kingdoms_begin),
+      # (store_sub, ":faction_2", "$g_notification_menu_var2", kingdoms_begin),
+      # (val_mul, ":faction_1", 128),
+      # (val_add, ":faction_1", ":faction_2"),
+      # (set_game_menu_tableau_mesh, "tableau_2_factions_mesh", ":faction_1", pos0),
+      # ],
+    # [
+      # ("continue",[],"Continue...",
+       # [(change_screen_return),
+        # ]),
+     # ]
+# ),
 
 ( "notification_faction_defeated",0,
     "{s1} Defeated!^^^^^^^{s1} is no more, defeated by the forces of {s13}!",

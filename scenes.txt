@@ -1,5 +1,5 @@
 scenesfile version 1
- 239
+ 241
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -8,19 +8,7 @@ scn_conversation_scene conversation_scene 0 encounter_spot bo_encounter_spot -40
   0 
   0 
  0 
-scn_random_scene_rohan_steppe random_scene_rohan_steppe 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_rohan 
-scn_random_scene_rohan_steppe_small random_scene_rohan_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_rohan 
 scn_random_scene_steppe random_scene_steppe 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_rohan 
-scn_random_scene_steppe_small random_scene_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_rohan 
@@ -28,15 +16,7 @@ scn_random_scene_plain random_scene_plain 768 none none 0.000000 0.000000 220.00
   0 
   0 
  outer_terrain_plain 
-scn_random_scene_plain_small random_scene_plain_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_plain 
 scn_random_scene_snow random_scene_snow 768 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x000000024c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_plain 
-scn_random_scene_snow_small random_scene_snow_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000014c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_plain 
@@ -44,7 +24,11 @@ scn_random_scene_desert random_scene_desert 768 none none 0.000000 0.000000 240.
   0 
   0 
  outer_terrain_steppe 
-scn_random_scene_desert_small random_scene_desert_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000015c60280000034cd300003efe00004b34000059be 
+scn_random_scene_river random_scene_river 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_random_scene_mountain_forest random_scene_mountain_forest 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
   0 
   0 
  outer_terrain_steppe 
@@ -64,6 +48,30 @@ scn_random_scene_desert_forest random_scene_desert_forest 768 none none 0.000000
   0 
   0 
  outer_terrain_forest 
+scn_random_scene_steppe_small random_scene_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_random_scene_plain_small random_scene_plain_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_snow_small random_scene_snow_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000014c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_desert_small random_scene_desert_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000015c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_random_scene_river_small random_scene_river_small 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_handsign handsign 1280 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x314d060900036cd70000295300002ec9000025f3 
+  0 
+  0 
+ outer_terrain_rohan 
 scn_camp_scene camp_scene 256 none none 0.000000 0.000000 100.000000 100.000000 -0.500000 0x000000003004cd26800354d70000618700003c3300007a8c 
   0 
   2  775  776 
@@ -122,10 +130,6 @@ scn_starting_quest starting_quest 256 none none 0.000000 0.000000 120.000000 120
  outer_terrain_plain 
 scn_novice_ground novice_ground 1 training_house_a bo_training_house_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
-  0 
- 0 
-scn_dhorak_keep dhorak_keep 256 none none 0.000000 0.000000 120.000000 120.000000 -100.000000 0x33a7946000028ca300007f4a0000479400161992 
-  1  100000 
   0 
  0 
 scn_reserved4 reserved4 256 none none 0.000000 0.000000 120.000000 120.000000 -100.000000 28791 
@@ -700,6 +704,10 @@ scn_rohan_castle_b rohan_castle_b 1 interior_castle_rohan_b bo_interior_castle_j
   0 
   0 
  0 
+scn_esgaroth_castle esgaroth_castle 1 interior_castle_rohan_b bo_interior_castle_j -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
+  0 
+  0 
+ 0 
 scn_mordor_castle_a mordor_castle_a 1 interior_castle_mordor_a bo_interior_castle_mordor_a -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   0 
   0 
@@ -780,7 +788,7 @@ scn_amon_hen amon_hen 256 none none 0.000000 0.000000 100.000000 100.000000 -100
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_deadmarshes deadmarshes 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_deadmarshes deadmarshes 1280 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_flat 

@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1410
+ 1411
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4314,5 +4314,8 @@ spr_mt_tirith_gate 0 0 tirith_gate bo_tirith_gate 0
 
 
 spr_rohan_meduseld_table 0 0 rohan_meduseld_int_table bo_rohan_meduseld_int_table 0
+
+
+spr_handsign 0 0 handsign bo_handsign 0
 
 

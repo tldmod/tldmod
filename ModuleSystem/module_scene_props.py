@@ -2164,5 +2164,6 @@ scene_props = [
 	
 ("mt_tirith_gate",0,"tirith_gate","bo_tirith_gate", []),
 ("rohan_meduseld_table",0,"rohan_meduseld_int_table","bo_rohan_meduseld_int_table", []),
+("handsign",0,"handsign","bo_handsign",[]),
 
 ]

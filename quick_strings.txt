@@ -1,4 +1,4 @@
-886
+874
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -184,7 +184,6 @@ qstr_You_gained_{reg12}_r You_gained_{reg12}_renown.
 qstr_You_lose_{reg12}_ren You_lose_{reg12}_renown.
 qstr_Your_relation_with_{ Your_relation_with_{s1}_has_improved.
 qstr_Your_relation_with_{s Your_relation_with_{s1}_has_deteriorated.
-qstr_{s1}_has_declared_wa {s1}_has_declared_war_against_{s2}.
 qstr_{s2}_{reg3?was:is_cu {s2}_{reg3?was:is_currently}_at_{s3}.
 qstr_{s2}_{reg3?was:is}_t {s2}_{reg3?was:is}_travelling_to_{s3}_and_{reg4?she:he}_{reg3?was:should_be}_close_to_{s4}{reg3?:_at_the_moment}.
 qstr_{s2}_{reg3?was:is}_i {s2}_{reg3?was:is}_in_wilderness_and_{reg4?she:he}_{reg3?was:should_be}_close_to_{s3}{reg3?:_at_the_moment}.
@@ -192,15 +191,8 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
-qstr_SCENE:_rohan_steppe SCENE:_rohan_steppe
-qstr_SCENE:_plain SCENE:_plain
-qstr_SCENE:_snow SCENE:_snow
-qstr_SCENE:_desert SCENE:_desert
-qstr_small_scene_used small_scene_used
-qstr_SCENE:_steppe_forest SCENE:_steppe_forest
-qstr_SCENE:_plain_forest SCENE:_plain_forest
-qstr_SCENE:_snow_forest SCENE:_snow_forest
-qstr_SCENE:_desert_forest SCENE:_desert_forest
+qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
+qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
 qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
 qstr_You_have_run_into_a_ You_have_run_into_a_trap!
@@ -354,7 +346,8 @@ qstr__{s7}_has_assumed_th _{s7}_has_assumed_the_command_of_a_{s5}_host!
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
-qstr_____{s1}_ruins____ ____{s1}_ruins____
+qstr_______{s1}______ ______{s1}______
+qstr_in_ruins in_ruins
 qstr_ranks ranks
 qstr_shield_wall shield_wall
 qstr_wedge wedge
@@ -580,8 +573,6 @@ qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
-qstr_{reg1}_{s1}_{reg2?ac {reg1}_{s1}_{reg2?accept:accepts}_the_offer.
-qstr_No_one_accepts_the_o No_one_accepts_the_offer.
 qstr_You_have_encountered You_have_encountered_{s1}.
 qstr_You_have_engaged_{s1 You_have_engaged_{s1}_while_they_were_raiding_{s3}.
 qstr_You_were_caught_by_{ You_were_caught_by_{s1}_while_your_forces_were_raiding_{s3}.
@@ -650,8 +641,6 @@ qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
 qstr_Forces_of_Good Forces_of_Good
 qstr_Forces_of_Mordor Forces_of_Mordor
 qstr_Forces_of_Isengard Forces_of_Isengard
-qstr_You_have_joined_{s10 You_have_joined_{s10}!
-qstr_you you
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
@@ -673,7 +662,6 @@ qstr_Troll_outside_{s2}_w Troll_outside_{s2}_was_killed._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_{s1}_is_scouted. {s1}_is_scouted.
-qstr_{s1}_has_switched_fr {s1}_has_switched_from_{s2}_to_{s3}.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
