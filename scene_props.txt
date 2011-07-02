@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1420
+ 1421
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1997,13 +1997,13 @@ spr_invisible_pillar 0 0 invisible_pillar bo_invisible_pillar 0
 spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a 0
 
 
-spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a 0
+spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a_tld 0
 
 
 spr_gon_castle_h_battlement_b 0 0 gon_castle_h_battlement_b bo_castle_h_battlement_b 0
 
 
-spr_gon_castle_h_battlement_a2 0 0 gon_castle_h_battlement_a2 bo_castle_h_battlement_a2 0
+spr_gon_castle_h_battlement_a2 0 0 gon_castle_h_battlement_a2 bo_castle_h_battlement_a_tld 0
 
 
 spr_gon_castle_h_battlement_b2 0 0 gon_castle_h_battlement_b2 bo_castle_h_battlement_b2 0
@@ -2012,13 +2012,13 @@ spr_gon_castle_h_battlement_b2 0 0 gon_castle_h_battlement_b2 bo_castle_h_battle
 spr_gon_castle_h_corner_a 0 0 gon_castle_h_corner_a bo_castle_h_corner_a 0
 
 
-spr_gon_castle_h_stairs_a 0 0 gon_castle_h_stairs_a bo_castle_h_stairs_a 0
+spr_gon_castle_h_stairs_a 0 0 gon_castle_h_stairs_a bo_castle_h_stairs_a_tld 0
 
 
 spr_gon_castle_h_stairs_b 0 0 gon_castle_h_stairs_b bo_castle_h_stairs_b 0
 
 
-spr_gon_castle_h_gatehouse_a 0 0 gon_castle_h_gatehouse_a bo_castle_h_gatehouse_a 0
+spr_gon_castle_h_gatehouse_a 0 0 gon_castle_h_gatehouse_a bo_castle_h_gatehouse_a_tld 0
 
 
 spr_gon_castle_h_keep_a 0 0 gon_castle_h_keep_a bo_castle_h_keep_a 0
@@ -2627,28 +2627,28 @@ spr_tree_destructible 629178368 600 tree_e_2 bo_tree_e_2 2
 -42.000000  2 600 1 1152921504606847124 1969 3 1008806316530991134 1 10 
 
 
-spr_dwarf_statue 0 0 statue_dwarf bo_statue_dwarf 0
+spr_dwarf_statue 0 0 statue_dwarf 0 0
 
 
-spr_dwarf_statue_a 0 0 statue_dwarf1 bo_statue_dwarf1 0
+spr_dwarf_statue_a 0 0 statue_dwarf1 0 0
 
 
-spr_dwarf_statue_b 0 0 statue_dwarf2 bo_statue_dwarf2 0
+spr_dwarf_statue_b 0 0 statue_dwarf2 0 0
 
 
-spr_dwarf_statue_c 0 0 statue_dwarf3 bo_statue_dwarf3 0
+spr_dwarf_statue_c 0 0 statue_dwarf3 0 0
 
 
-spr_dwarf_statue_d 0 0 statue_dwarf4 bo_statue_dwarf4 0
+spr_dwarf_statue_d 0 0 statue_dwarf4 0 0
 
 
-spr_dwarf_statue_e 0 0 statue_dwarf5 bo_statue_dwarf5 0
+spr_dwarf_statue_e 0 0 statue_dwarf5 0 0
 
 
-spr_dwarf_statue_hill_a 0 0 statue_dwarf_hill_a bo_statue_dwarf_hill_a 0
+spr_dwarf_statue_hill_a 0 0 statue_dwarf_hill_a 0 0
 
 
-spr_dwarf_statue_hill_b 0 0 statue_dwarf_hill_b bo_statue_dwarf_hill_b 0
+spr_dwarf_statue_hill_b 0 0 statue_dwarf_hill_b 0 0
 
 
 spr_mordor_clouds 69632 0 skybox_cloud_overlay 0 0
@@ -3511,8 +3511,7 @@ spr_spear_trap_1 0 0 spear_trap bo_spear_trap 0
 spr_erebor_dungeon_01 0 0 dungeon_a bo_dungeon_a 0
 
 
-spr_erebor 0 0 hallfini bo_hallfini 1
--40.000000  1 1798 2 110 65793 
+spr_barrier_cylinder 16384 0 cyl bo_cyl 0
 
 
 spr_LMH_ground_a 0 0 LMH_ground_a bo_LMH_ground_a 0
@@ -4344,5 +4343,8 @@ spr_rohan_meduseld_table 0 0 rohan_meduseld_int_table bo_rohan_meduseld_int_tabl
 
 
 spr_handsign 0 0 handsign bo_handsign 0
+
+
+spr_gondor_mt_wall_E 0 0 mt_wall 0 0
 
 

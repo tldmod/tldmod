@@ -1203,14 +1203,14 @@ scene_props = [
  
  ("gon_castle_h_battlement_a",0,"gon_castle_h_battlement_a","bo_castle_h_battlement_a", []),
 	##GONDOR#####
-  ("gon_castle_h_battlement_a",0,"gon_castle_h_battlement_a","bo_castle_h_battlement_a", []),
+  ("gon_castle_h_battlement_a",0,"gon_castle_h_battlement_a","bo_castle_h_battlement_a_tld", []),
   ("gon_castle_h_battlement_b",0,"gon_castle_h_battlement_b","bo_castle_h_battlement_b", []),
-  ("gon_castle_h_battlement_a2",0,"gon_castle_h_battlement_a2","bo_castle_h_battlement_a2", []),
+  ("gon_castle_h_battlement_a2",0,"gon_castle_h_battlement_a2","bo_castle_h_battlement_a_tld", []),
   ("gon_castle_h_battlement_b2",0,"gon_castle_h_battlement_b2","bo_castle_h_battlement_b2", []),
   ("gon_castle_h_corner_a",0,"gon_castle_h_corner_a","bo_castle_h_corner_a", []),
-  ("gon_castle_h_stairs_a",0,"gon_castle_h_stairs_a","bo_castle_h_stairs_a", []),
+  ("gon_castle_h_stairs_a",0,"gon_castle_h_stairs_a","bo_castle_h_stairs_a_tld", []),
   ("gon_castle_h_stairs_b",0,"gon_castle_h_stairs_b","bo_castle_h_stairs_b", []),
-  ("gon_castle_h_gatehouse_a",0,"gon_castle_h_gatehouse_a","bo_castle_h_gatehouse_a", []),
+  ("gon_castle_h_gatehouse_a",0,"gon_castle_h_gatehouse_a","bo_castle_h_gatehouse_a_tld", []),
   ("gon_castle_h_keep_a",0,"gon_castle_h_keep_a","bo_castle_h_keep_a", []),
   ("gon_castle_h_keep_b",0,"gon_castle_h_keep_b","bo_castle_h_keep_b", []),
   ("gon_castle_h_house_a",0,"gon_castle_h_house_a","bo_castle_h_house_a", []),
@@ -1478,14 +1478,14 @@ scene_props = [
 ]),
   
 ###DWARVEN PROPS###
-("dwarf_statue",0,"statue_dwarf","bo_statue_dwarf", []),
-("dwarf_statue_a",0,"statue_dwarf1","bo_statue_dwarf1", []),
-("dwarf_statue_b",0,"statue_dwarf2","bo_statue_dwarf2", []),
-("dwarf_statue_c",0,"statue_dwarf3","bo_statue_dwarf3", []),
-("dwarf_statue_d",0,"statue_dwarf4","bo_statue_dwarf4", []),
-("dwarf_statue_e",0,"statue_dwarf5","bo_statue_dwarf5", []),
-("dwarf_statue_hill_a",0,"statue_dwarf_hill_a","bo_statue_dwarf_hill_a", []),
-("dwarf_statue_hill_b",0,"statue_dwarf_hill_b","bo_statue_dwarf_hill_b", []),
+("dwarf_statue",0,"statue_dwarf","0", []),
+("dwarf_statue_a",0,"statue_dwarf1","0", []),
+("dwarf_statue_b",0,"statue_dwarf2","0", []),
+("dwarf_statue_c",0,"statue_dwarf3","0", []),
+("dwarf_statue_d",0,"statue_dwarf4","0", []),
+("dwarf_statue_e",0,"statue_dwarf5","0", []),
+("dwarf_statue_hill_a",0,"statue_dwarf_hill_a","0", []),
+("dwarf_statue_hill_b",0,"statue_dwarf_hill_b","0", []),
 
   
 #("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
@@ -1791,7 +1791,8 @@ scene_props = [
 # Kolba Erebor dungeon stuff  
 ("spear_trap_1",0,"spear_trap","bo_spear_trap", []),
 ("erebor_dungeon_01",0,"dungeon_a","bo_dungeon_a",[]),
-("erebor",0,"hallfini","bo_hallfini", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
+#("erebor",0,"hallfini","bo_hallfini_tld", [(ti_on_scene_prop_init,[(set_fog_distance,110,0x010101),]),]),
+("barrier_cylinder", sokf_invisible, "cyl","bo_cyl",[]), 
 ("LMH_ground_a",0,"LMH_ground_a","bo_LMH_ground_a",[]),
 ("LMH_ground_b",0,"LMH_ground_b","bo_LMH_ground_b",[]),
 ("LMH_ground_c",0,"LMH_ground_c","bo_LMH_ground_c",[]),
@@ -2174,5 +2175,8 @@ scene_props = [
 ("mt_tirith_gate",0,"tirith_gate","bo_tirith_gate", []),
 ("rohan_meduseld_table",0,"rohan_meduseld_int_table","bo_rohan_meduseld_int_table", []),
 ("handsign",0,"handsign","bo_handsign",[]),
+
+# empty collision meshes  
+("gondor_mt_wall_E",0,"mt_wall", "0", []),
 
 ]

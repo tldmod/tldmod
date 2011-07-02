@@ -60,19 +60,16 @@ dungeon_darkness_effect = (1, 0, 0, [], [
 	(try_begin), # setting fog thickness
 		(neq,":min_pointer",-1),
 		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
-		(else_try), (eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
-		(else_try), (eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
-		(else_try), (eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
-		(else_try), (eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
-		(else_try), (eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
+		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
+		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
+		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
+		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
 		(try_end),
 		(set_fog_distance,reg11,0x000001), 
 		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
-		(try_begin),
-			(eq, reg11, 10000),
-			(assign, "$player_is_inside_dungeon",0),
-		(else_try),
-			(assign, "$player_is_inside_dungeon",1),
+		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
+		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
 		(try_end),
 	(try_end),
  ])
@@ -224,7 +221,7 @@ common_move_forward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, 15),
+      (position_move_y, pos1, 10),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -237,7 +234,7 @@ common_move_backward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, -12),
+      (position_move_y, pos1, -10),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -250,7 +247,7 @@ common_move_left_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, -12),
+      (position_move_x, pos1, -10),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -264,7 +261,7 @@ common_move_right_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, 12),
+      (position_move_x, pos1, 10),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -569,64 +566,55 @@ formations_triggers = [
 		(try_end),
 		(set_show_messages, 1),
 	]),
-
 #form ranks command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_ranks)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_attempt_formation", grc_infantry, formation_ranks),
 		(call_script, "script_player_attempt_formation", grc_archers, formation_ranks)
 	]),
-
 #form shield wall command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_shield)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_attempt_formation", grc_infantry, formation_shield)
 	]),
-
 #form wedge command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_wedge)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_attempt_formation", grc_infantry, formation_wedge),
 		(call_script, "script_player_attempt_formation", grc_cavalry, formation_wedge)
 	]),
-
 #form square command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_square)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_attempt_formation", grc_infantry, formation_square)
 	]),
-
 #end formation command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_undo)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_charge)
 	]),
-
 #charge ends formation
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_charge)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_charge)
 	]),
-
 #dismount ends formation
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_dismount)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_dismount),
 	]),
-		
 #On hold, any formations reform in new location		
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_halt)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_hold)
 	]),
-		
 #Follow is hold	repeated frequently
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_follow)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_follow)
 	]),
-
-	(1, 0, 0, [	#attempt to avoid simultaneous formations function calls
+#attempt to avoid simultaneous formations function calls
+	(1, 0, 0, [	
         (eq, "$tld_option_formations", 1),
 		(call_script, "script_store_battlegroup_data"),
 		(neg|key_is_down, key_for_ranks),
@@ -773,15 +761,15 @@ mission_templates = [
 # 
   ( "conversation_encounter",0,-1,
     "Conversation_encounter",
-    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,af_override_fullhelm,0,1,[]),
-     ( 2,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 3,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 4,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 5,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 6,mtef_visitor_source,af_override_fullhelm,0,1,[]),
-     ( 7,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 8,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 9,mtef_visitor_source,af_override_fullhelm,0,1,[]),(10,mtef_visitor_source,af_override_fullhelm,0,1,[]),(11,mtef_visitor_source,af_override_fullhelm,0,1,[]),
+    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
+     ( 2,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 3,mtef_visitor_source,0,0,1,[]),( 4,mtef_visitor_source,0,0,1,[]),( 5,mtef_visitor_source,0,0,1,[]),( 6,mtef_visitor_source,0,0,1,[]),
+     ( 7,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 8,mtef_visitor_source,0,0,1,[]),( 9,mtef_visitor_source,0,0,1,[]),(10,mtef_visitor_source,0,0,1,[]),(11,mtef_visitor_source,0,0,1,[]),
     #prisoners now...
-     (12,mtef_visitor_source,af_override_fullhelm,0,1,[]),(13,mtef_visitor_source,af_override_fullhelm,0,1,[]),(14,mtef_visitor_source,af_override_fullhelm,0,1,[]),(15,mtef_visitor_source,af_override_fullhelm,0,1,[]),(16,mtef_visitor_source,af_override_fullhelm,0,1,[]),
+     (12,mtef_visitor_source,0,0,1,[]),(13,mtef_visitor_source,0,0,1,[]),(14,mtef_visitor_source,0,0,1,[]),(15,mtef_visitor_source,0,0,1,[]),(16,mtef_visitor_source,0,0,1,[]),
     #Other party
-     (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,af_override_fullhelm,0,1,[]),(20,mtef_visitor_source,af_override_fullhelm,0,1,[]),(21,mtef_visitor_source,af_override_fullhelm,0,1,[]),
-     (22,mtef_visitor_source,af_override_fullhelm,0,1,[]),(23,mtef_visitor_source,af_override_fullhelm,0,1,[]),(24,mtef_visitor_source,af_override_fullhelm,0,1,[]),(25,mtef_visitor_source,af_override_fullhelm,0,1,[]),(26,mtef_visitor_source,af_override_fullhelm,0,1,[]),
-     (27,mtef_visitor_source,af_override_fullhelm,0,1,[]),(28,mtef_visitor_source,af_override_fullhelm,0,1,[]),(29,mtef_visitor_source,af_override_fullhelm,0,1,[]),(30,mtef_visitor_source,af_override_fullhelm,0,1,[]),
+     (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),
+     (22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,0,0,1,[]),(24,mtef_visitor_source,0,0,1,[]),(25,mtef_visitor_source,0,0,1,[]),(26,mtef_visitor_source,0,0,1,[]),
+     (27,mtef_visitor_source,0,0,1,[]),(28,mtef_visitor_source,0,0,1,[]),(29,mtef_visitor_source,0,0,1,[]),(30,mtef_visitor_source,0,0,1,[]),
 # mob running towards you
 	 (31,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      ],
@@ -1151,6 +1139,30 @@ mission_templates = [
      (0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
 
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
@@ -1198,20 +1210,14 @@ mission_templates = [
                  (store_mission_timer_a,":mission_time"),
                  (ge,":mission_time",10),
                  (store_normalized_team_count,":num_defenders", 0),
-                 (lt,":num_defenders",6),
-#                 (assign, reg2, ":num_defenders"),
-#                 (display_message,"@num_defenders = {reg2}")
-                 ],
+                 (lt,":num_defenders",6)],
            [(add_reinforcements_to_entry,0,7),(val_add,"$defender_reinforcement_stage",1)]),
       
       (1, 0, 5, [(lt,"$attacker_reinforcement_stage",2),
                  (store_mission_timer_a,":mission_time"),
                  (ge,":mission_time",10),
                  (store_normalized_team_count,":num_attackers", 1),
-                 (lt,":num_attackers",6),
-#                 (assign, reg2, ":num_attackers"),
-#                 (display_message,"@num_attackers = {reg2}")
-                 ],
+                 (lt,":num_attackers",6)],
            [(add_reinforcements_to_entry,3,7),(val_add,"$attacker_reinforcement_stage",1)]),
       
       common_battle_check_victory_condition,
@@ -1227,10 +1233,7 @@ mission_templates = [
 #MV: commented out - why do this?? and key_u is "undo formation"
       #TLD horn blowing begin (Kolba)
 
-      # (0, 0, ti_once, [(key_clicked, key_u)], [
-# (display_message,"@Aure entuluva!",0x7ccd7c),
-# (play_sound, "snd_evil_horn"),
-         # ]),
+      # (0, 0, ti_once, [(key_clicked, key_u)], [(play_sound, "snd_evil_horn")]),
       #TLD horn blowing end (Kolba)
       
       (5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
@@ -1459,9 +1462,9 @@ mission_templates = [
      # Initial defender spawn point (was 11)
      (40,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,7,[]),
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
-     (42,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
-     (43,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     (41,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team left flank
+     (42,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team center
+     (43,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
      (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry
      (45,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
@@ -1472,31 +1475,140 @@ mission_templates = [
      (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
      
      # archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+
+	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team center
      (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
+	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      ],
     common_deathcam_triggers+
     tld_common_battle_scripts+[
-      common_battle_mission_start,
+
+ (ti_before_mission_start, 0, 0, [],
+  [ (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # TLD expand teams
+    (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
+    (call_script, "script_change_banners_and_chest"),
+    ]),
+	
       common_battle_tab_press,
-      common_siege_question_answered,
-      common_siege_init,
-      common_music_situation_update,
-      common_siege_ai_trigger_init,
-      common_siege_ai_trigger_init_2,
-      common_siege_ai_trigger_init_after_2_secs,
-      common_siege_defender_reinforcement_check,
-      common_siege_defender_reinforcement_archer_reposition,
-      common_siege_attacker_reinforcement_check,
-      common_siege_attacker_do_not_stall,
+  
+ (ti_question_answered, 0, 0, [],
+   [ (store_trigger_param_1,":answer"),
+     (eq,":answer",0),
+     (assign, "$pin_player_fallen", 0),
+     (get_player_agent_no, ":player_agent"),
+     (agent_get_team, ":agent_team", ":player_agent"),
+     (try_begin),
+       (neq, "$attacker_team", ":agent_team"),
+       (neq, "$attacker_team_2", ":agent_team"),
+       (neq, "$attacker_team_3", ":agent_team"), # TLD
+	   (str_store_string, s5, "str_siege_continues"),
+       (call_script, "script_simulate_retreat", 8, 15),
+     (else_try),
+       (str_store_string, s5, "str_retreat"),
+       (call_script, "script_simulate_retreat", 5, 20),
+     (try_end),
+     (call_script, "script_count_mission_casualties_from_agents"),
+     (finish_mission,0),
+   ]),
+ 
+ (0, 0, ti_once, [],
+   [(assign,"$battle_won",0),
+    (assign,"$defender_reinforcement_stage",0),
+    (assign,"$attacker_reinforcement_stage",0),
+    (assign,"$g_presentation_battle_active", 0),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
+ 
+    (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
+    (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
+	(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
+   
+    (set_show_messages, 0),
+    (entry_point_get_position, pos10, 41), #TLD, was 10
+    (team_give_order, "$defender_team", grc_infantry, mordr_hold),
+    (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team", grc_archers, mordr_stand_ground),
+    (team_set_order_position, "$defender_team", grc_everyone, pos10),
+	(team_set_order_position, "$attacker_team", grc_everyone, pos10),
+    
+	(entry_point_get_position, pos11, 42), #TLD
+    (team_give_order, "$defender_team_2", grc_infantry, mordr_hold),
+    (team_give_order, "$defender_team_2", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team_2", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team_2", grc_archers, mordr_stand_ground),
+    (team_set_order_position, "$defender_team_2", grc_everyone, pos11),
+	(team_set_order_position, "$attacker_team_2", grc_everyone, pos11),
+
+    (entry_point_get_position, pos12, 43), #TLD
+    (team_give_order, "$defender_team_3", grc_infantry, mordr_hold),
+    (team_give_order, "$defender_team_3", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team_3", grc_infantry, mordr_stand_closer),
+    (team_give_order, "$defender_team_3", grc_archers, mordr_stand_ground),
+    (team_set_order_position, "$defender_team_3", grc_everyone, pos12),
+	(team_set_order_position, "$attacker_team_3", grc_everyone, pos12),
+    (set_show_messages, 1),
+  ]),
+	
+    common_siege_ai_trigger_init_after_2_secs,
+
+  (3, 0, 5, [],
+    [(lt, "$defender_reinforcement_stage", 7),
+     (store_mission_timer_a,":mission_time"),
+     (ge,":mission_time",10),
+       (store_normalized_team_count,":num_defenders",0),
+       (lt,":num_defenders",10),
+       (add_reinforcements_to_entry, 5, 7), #TLD, was 4, 7
+       (val_add,"$defender_reinforcement_stage",1),
+   (try_begin),
+     (ge, "$defender_reinforcement_stage", 2),
+       (set_show_messages, 0),
+       (team_give_order, "$defender_team", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
+       (team_give_order, "$defender_team_2", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
+       (team_give_order, "$defender_team_3", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
+       (set_show_messages, 1),
+       (ge, "$defender_reinforcement_stage", 4),
+         (set_show_messages, 0),
+         (team_give_order, "$defender_team", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
+         (team_give_order, "$defender_team_2", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
+         (team_give_order, "$defender_team_3", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
+         (set_show_messages, 1),
+   (try_end),
+   ]),
+   common_siege_defender_reinforcement_archer_reposition,
+
+ (1, 0, 5,
+   [(lt,"$attacker_reinforcement_stage",15),
+#    (store_mission_timer_a,":mission_time"),(ge,":mission_time",10),
+    (store_normalized_team_count,":num_attackers",1),(lt,":num_attackers",6)],
+   [(add_reinforcements_to_entry, 8, 8),(val_add,"$attacker_reinforcement_stage", 1)]),
+ (1, 0, 5,
+   [(lt,"$attacker_reinforcement_stage",15),
+#    (store_mission_timer_a,":mission_time"),(ge,":mission_time",10),
+    (store_normalized_team_count,":num_attackers",3),(lt,":num_attackers",6)],
+   [(add_reinforcements_to_entry, 9, 8),(val_add,"$attacker_reinforcement_stage", 1)]),
+ (1, 0, 5,
+   [(lt,"$attacker_reinforcement_stage",15),
+#    (store_mission_timer_a,":mission_time"),(ge,":mission_time",10),
+    (store_normalized_team_count,":num_attackers",5),(lt,":num_attackers",6)],
+   [(add_reinforcements_to_entry,10, 8),(val_add,"$attacker_reinforcement_stage", 1)]),
+
+ (5, 0, 0, [], #Make sure attackers do not stall on the ladders...
+   [(try_for_agents, ":agent_no"),  
+      (agent_is_human, ":agent_no"),
+      (agent_is_alive, ":agent_no"),
+      (agent_get_team, ":agent_team", ":agent_no"),
+      (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
+      (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+    (try_end),
+   ]),
       common_battle_check_friendly_kills,
       common_battle_check_victory_condition,
       common_battle_victory_display,
@@ -1505,7 +1617,37 @@ mission_templates = [
       common_battle_order_panel,
       common_battle_order_panel_tick,
       common_inventory_not_available,
-
+   
+ (5, 0, 0,[], # distribute agents among teams
+   [(try_for_agents, ":agent"),
+		(agent_is_alive,":agent"),
+		(agent_is_human,":agent"),
+		(agent_slot_eq,":agent",slot_agent_arena_team_set,0),
+		(store_random_in_range, ":team", 0,3),
+		(val_mul, ":team", 2),
+		(try_begin),
+			(neg|agent_is_defender,":agent"),
+			(val_add,":team",1),
+		(try_end),
+		(agent_set_team, ":agent", ":team"),
+		(agent_set_slot,":agent",slot_agent_arena_team_set,1),
+	(try_end)]),
+ (20, 0, 0,[], # report attackers and defenders distribution
+   [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),
+	(try_for_agents, ":agent"),
+		(agent_is_alive,":agent"),
+		(agent_is_human,":agent"),
+		(agent_get_team, ":team", ":agent"),
+		(try_begin),(eq,":team",0),(val_add, reg0,1),
+		 (else_try),(eq,":team",1),(val_add, reg1,1),
+		 (else_try),(eq,":team",2),(val_add, reg2,1),
+		 (else_try),(eq,":team",3),(val_add, reg3,1),
+		 (else_try),(eq,":team",4),(val_add, reg4,1),
+		 (else_try),(eq,":team",5),(val_add, reg5,1),
+		(try_end),
+	(try_end),
+	(set_show_messages, 1),
+	(display_message, "@Attackers:{reg1}/{reg3}/{reg5} Defenders:{reg0}/{reg2}/{reg4}")]),
 ##      (15, 0, 0,
 ##       [
 ##         (get_player_agent_no, ":player_agent"),
@@ -1555,9 +1697,9 @@ mission_templates = [
 ##         ],
 ##       []),
     ],
-  ),
+),
   
-  ( "training_ground_training", mtf_arena_fight, -1,
+( "training_ground_training", mtf_arena_fight, -1,
     "Training.",
     [
       (0,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
@@ -1752,9 +1894,9 @@ mission_templates = [
          (finish_mission),
          ]),
     ],
-  ),
+),
 
-  ( "training_ground_trainer_talk", 0, -1,
+( "training_ground_trainer_talk", 0, -1,
     "Training.",
     [
       (0,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons,0,1,[]),

@@ -404,7 +404,7 @@ scn_esgaroth_center esgaroth_center 256 none none 0.000000 0.000000 200.000000 2
   0 
   0 
  outer_terrain_seaside_1 
-scn_erebor_center erebor_center 1 hallfini bo_hallfini -100.000000 -200.000000 100.000000 200.000000 -100.000000 0 
+scn_erebor_center erebor_center 1 hallfini bo_hallfini_inner_tld -100.000000 -200.000000 100.000000 200.000000 -100.000000 0 
   0 
   0 
  0 
