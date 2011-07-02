@@ -1800,7 +1800,7 @@ scene_props = [
 ("LMH_pillar_c",0,"LMH_pillar_c","bo_LMH_pillar_c",[]),
 ("LMH_arch",0,"LMH_arch","bo_LMH_arch",[]),
 ("LMH_base",0,"LMH_base","bo_LMH_base",[]),
-
+("LMH_wall_a",0,"LMH_wall_a","bo_LMH_wall_a",[]),
   
 ("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
 ("thranduil_helm1",0,"statuemirk_helm1","0",[]),

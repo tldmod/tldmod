@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1419
+ 1420
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3537,6 +3537,9 @@ spr_LMH_arch 0 0 LMH_arch bo_LMH_arch 0
 
 
 spr_LMH_base 0 0 LMH_base bo_LMH_base 0
+
+
+spr_LMH_wall_a 0 0 LMH_wall_a bo_LMH_wall_a 0
 
 
 spr_thranduil_hall 0 0 thranduil_hall bo_thranduil_hall 1
