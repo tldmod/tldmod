@@ -1776,7 +1776,7 @@ scene_props = [
 ("rohan_house3",0,"rohan_house3","bo_house3",[]),
 ("rohan_house4",0,"rohan_house4","bo_house4",[]),
 ("rohan_house5",0,"rohan_house5","bo_house5",[]),
-("rohan_stables1",0,"rohan_stables1","0",[]),
+("rohan_stables",0,"rohan_stables","bo_stables",[]),
 ("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
 ("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),
 ("rohan_fountain",0,"edoras_fountain","bo_edoras_fountain",[]), 
