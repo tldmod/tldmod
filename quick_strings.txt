@@ -1,4 +1,4 @@
-875
+876
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -120,6 +120,7 @@ qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
 qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
+qstr_Left_for_death_but_m Left_for_death_but_miracolously_survived:_{reg1?NEVER:{reg1}_time{reg2?s:}}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
 qstr_+30_to_Party_Morale +30_to_Party_Morale
@@ -191,6 +192,7 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
+qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
 qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
 qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
@@ -638,7 +640,7 @@ qstr_the_castle the_castle
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_pts._per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s1}_s_Ship {s1}'s_Ship
-qstr_You_enemy_takes_no_p You_enemy_takes_no_prisoners!^^
+qstr_times_passess... times_passess...
 qstr_Forces_of_Good Forces_of_Good
 qstr_Forces_of_Mordor Forces_of_Mordor
 qstr_Forces_of_Isengard Forces_of_Isengard
@@ -656,7 +658,6 @@ qstr_you_are_entering_{s1 you_are_entering_{s1}_({s2})
 qstr_you_are_entering_{s1} you_are_entering_{s1}
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
-qstr_{reg1}_{s1}_{reg2?ha {reg1}_{s1}_{reg2?have:has}_escaped_from_your_party_during_the_night.
 qstr_Building_of_{s0}_in_ Building_of_{s0}_in_{s4}_has_been_completed.
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_Troll_outside_{s2}_w Troll_outside_{s2}_was_killed._Mission_canceled.

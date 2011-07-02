@@ -126,14 +126,15 @@ game_menus = [
 		# relocate party next to own capital
 		(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
 		(try_for_range, ":i", centers_begin, centers_end),
-			(party_is_active, ":i"), #TLD
-		    (party_slot_eq, ":i", slot_center_destroyed, 0), #TLD
+			(party_is_active, ":i"), 
+		    (party_slot_eq, ":i", slot_center_destroyed, 0),
 			(gt, "$players_subkingdom", 0), # player has a subfaction
+			(store_faction_of_party, reg15, ":i"), (eq, reg15, "$players_kingdom"),
 			(party_slot_eq, ":i", slot_party_subfaction, "$players_subkingdom"), # i this is the  capital of the subfaction
 			(assign, reg20, ":i"), 
 			(assign, ":i", centers_end),  # break
 		(try_end),
-		(party_relocate_near_party, "p_main_party", reg20, 8),
+		(call_script, "script_tld_party_relocate_near_party", "p_main_party", reg20, 16),
 	
 		# initialization of "search troop" menu (only once)  mtarini
 		(assign, "$cheat_menu_add_troop_search_race", len(race_names)),  # any race
@@ -155,6 +156,7 @@ game_menus = [
 		(troop_add_item, "trp_player","itm_dried_meat",0),
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
+		(assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
 		# TEMP: a spear for everyone
 		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
 		##   (troop_add_item, "trp_player","itm_horn",0),
@@ -2732,17 +2734,18 @@ game_menus = [
 		 
   (
     "assasins_attack_player_defeated",mnf_scale_picture,
-    "You have been defeated and imprisoned.",
+    "You should not be reading this...",
     "none",
     [
 		
-		(troop_get_type, ":is_female", "trp_player"),
-		(try_begin),
-			(eq, ":is_female", 1),
-			(set_background_mesh, "mesh_pic_prisoner_fem"),
-		(else_try),
-			(set_background_mesh, "mesh_pic_prisoner_man"),
-		(try_end),
+		# (troop_get_type, ":is_female", "trp_player"),
+		# (try_begin),
+			# (eq, ":is_female", 1),
+			# (set_background_mesh, "mesh_pic_prisoner_fem"),
+		# (else_try),
+			# (set_background_mesh, "mesh_pic_prisoner_man"),
+		# (try_end),
+		
 		#consequences of defeat
 		(play_track,"track_captured",1),#music
 		
@@ -2817,54 +2820,58 @@ game_menus = [
 		(try_end),
 		#end NPC
 
-		(set_camera_follow_party,"$capturer_party"),#camera
-		(store_random_in_range,":random_hours",30,60),#random time of captivity
-		(call_script,"script_event_player_captured_as_prisoner"),
-		(call_script,"script_stay_captive_for_hours",":random_hours"),
-		(assign,"$auto_menu","mnu_assasins_attack_captivity_check"),
+		#(set_camera_follow_party,"$capturer_party"),#camera
+		#(store_random_in_range,":random_hours",30,60),#random time of captivity
+		#(call_script,"script_event_player_captured_as_prisoner"),
+		#(call_script,"script_stay_captive_for_hours",":random_hours"),
+		#(assign,"$auto_menu","mnu_assasins_attack_captivity_check"),
+		
+		(assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
+		(jump_to_menu, "mnu_tld_player_defeated"),
+		
 		],
     [
-      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
+      # ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
     ],
   ),
 		 
-  (
-    "assasins_attack_captivity_check",0,
-    "stub",
-    "none",
-    [(jump_to_menu,"mnu_assasins_attack_captivity_end")],
-    []
-  ),
-  (
-    "assasins_attack_captivity_end",mnf_scale_picture,
-    "After days in captivity you finally escape!",
-    "none",
-    [
-        (play_cue_track,"track_escape"),
-        (troop_get_type,":is_female","trp_player"),
-        (try_begin),
-          (eq,":is_female",1),
-          (set_background_mesh,"mesh_pic_escape_1_fem"),
-        (else_try),
-          (set_background_mesh,"mesh_pic_escape_1"),
-        (try_end),
-    ],
-    [
-      ("continue",[],"Continue...",
-       [
-           (assign,"$g_player_is_captive",0),
-           (try_begin),
-             (party_is_active,"$capturer_party"),
-             (party_relocate_near_party,"p_main_party","$capturer_party",2),
-           (try_end),
-           (call_script,"script_set_parties_around_player_ignore_player",2,4),
-           (assign,"$g_player_icon_state", pis_normal),
-           (set_camera_follow_party,"p_main_party"),
-           (rest_for_hours,0,0,0), #stop resting
-           (change_screen_return),
-        ]),
-    ]
-  ),
+  # (
+    # "assasins_attack_captivity_check",0,
+    # "stub",
+    # "none",
+    # [(jump_to_menu,"mnu_assasins_attack_captivity_end")],
+    # []
+  # ),
+  # (
+    # "assasins_attack_captivity_end",mnf_scale_picture,
+    # "After days in captivity you finally escape!",
+    # "none",
+    # [
+        # (play_cue_track,"track_escape"),
+        # (troop_get_type,":is_female","trp_player"),
+        # (try_begin),
+          # (eq,":is_female",1),
+          # (set_background_mesh,"mesh_pic_escape_1_fem"),
+        # (else_try),
+          # (set_background_mesh,"mesh_pic_escape_1"),
+        # (try_end),
+    # ],
+    # [
+      # ("continue",[],"Continue...",
+       # [
+           # (assign,"$g_player_is_captive",0),
+           # (try_begin),
+             # (party_is_active,"$capturer_party"),
+             # (party_relocate_near_party,"p_main_party","$capturer_party",2),
+           # (try_end),
+           # (call_script,"script_set_parties_around_player_ignore_player",2,4),
+           # (assign,"$g_player_icon_state", pis_normal),
+           # (set_camera_follow_party,"p_main_party"),
+           # (rest_for_hours,0,0,0), #stop resting
+           # (change_screen_return),
+        # ]),
+    # ]
+  # ),
 
   #TLD - assasination menus end (Kolba)
   
@@ -2917,7 +2924,7 @@ game_menus = [
        
         (set_visitor,0,"trp_player"),
 		(store_random_in_range,":n_ents",0,3),(val_max,":n_ents",1), #  2 ents once in three
-        (set_visitors,2,"trp_ent",":n_ents"), # just a ent to start with
+        (set_visitors,2,"trp_ent",":n_ents"), # add the (1 or 2) ent(s) to start with
 
 		#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
@@ -2954,25 +2961,18 @@ game_menus = [
 	 ]),
    ]
   ),
-  # player faced fangor dangers
+  # player faced fangor dangers. Did he win?
   ("fangorn_battle_debrief",0,
-    "^^^The light goes out.^^^When you wake up, the forest is still. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
+    "you shouldn't be reading this",
 	"none",[
-		(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_ent_attack"), (set_background_mesh, reg10),
 		(try_begin),
 			(eq, "$g_battle_result", 1),
 			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
+		(else_try),
+			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
+			(jump_to_menu, "mnu_tld_player_defeated"),
 		(try_end),
-	 ],[("ok_",[],"Continue...",[
-	(troop_set_health,"trp_player",0),
-	(try_begin),
-        (check_quest_active, "qst_investigate_fangorn"),
-		(neg|check_quest_succeeded, "qst_investigate_fangorn"),
-        (neg|check_quest_failed, "qst_investigate_fangorn"),
-		(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
-    (try_end),
-	(change_screen_map),
-	] ),]
+	 ],[]
   ),
    # player faced fangor dangers, and won!
    ("fangorn_battle_debrief_won",0,
@@ -3712,7 +3712,8 @@ game_menus = [
           (try_end),
           (this_or_next|eq,  ":friends_finished",1),
           (eq,"$g_player_surrenders",1),
-          (assign, "$g_next_menu", "mnu_captivity_avoid_wilderness"), # captured or survivor? mtarini
+		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
+          (assign, "$g_next_menu", "mnu_tld_player_defeated"),
           (jump_to_menu, "mnu_total_defeat"),
         (try_end),
 
@@ -4110,6 +4111,7 @@ game_menus = [
      (call_script, "script_party_count_fit_regulars", "p_main_party"),
      (assign, "$playerparty_postbattle_regulars", reg0),
 
+	 
 	 (try_begin), # set background picture for victory/defeat -- mtarini
 		(store_mul, ":tmp", "$g_enemy_fit_for_battle","$g_friend_fit_for_battle"),
 		(eq, ":tmp", 0 ), # battle is totally over: proceed!
@@ -4126,24 +4128,35 @@ game_menus = [
 			(assign, ":winning_side_race", "$enemy_side_race" ),
 			#(assign, ":losing_side_race",  "$player_side_race" ),
 		(try_end),
+		
 		(assign, ":fitting_image_found", 1),
-		(try_begin),
+		
+		(try_begin),	
 			(eq, ":winning_side_race_group", tf_orc ),
 			(eq, ":losing_side_race_group", tf_male ),
-			(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory image:  orcs VS humans
+			(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
 		(else_try),
 			(eq, "$g_battle_result", 1), 
 			(eq, ":winning_side_race", tf_dwarf ),
-			(set_background_mesh, "mesh_draw_victory_dwarf"),  
+			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
-			(assign, ":fitting_image_found", 0),
+			(assign, ":fitting_image_found", 0), # a generic image can do
 		(try_end),
+		
 		(try_begin),
-			(store_random_in_range, ":rand", 0, 100),
-			(this_or_next|eq, ":fitting_image_found", 0),
-			(lt, ":rand", 30),
-			(eq, "$g_battle_result", -1), # player beaten : 33% of time, show generic defeat.
+			#(store_random_in_range, ":rand", 0, 100),
+			#(this_or_next|eq, ":fitting_image_found", 0), # player beaten : 33% of time, show generic defeat.
+			#(lt, ":rand", 30),
+			(eq, ":fitting_image_found", 0),
+			(eq, "$g_battle_result", -1), 
 			(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
+		(try_end),
+		
+		(try_begin),  
+			(eq, "$g_encountered_party", "p_legend_fangorn"),
+			(eq, "$g_battle_result", -1),
+			# override vicotry-image with ent, image 
+			(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_ent_attack"), (set_background_mesh, reg10),
 		(try_end),
 	 (try_end),
 	 
@@ -5113,13 +5126,6 @@ game_menus = [
 	]
 ),
 
-( "moria_didnt_escape",city_menu_color,
-    "There are too many orcs around! You cry in despair, when, all of a sudden, a you feel a shattering pain on the back of your head and the world goes dark.^^^But this is not your end. You wake up lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
-    "none",[(set_background_mesh, "mesh_town_moria"),],[
-	  ("whatever",[], "Get up!",[ (jump_to_menu,"mnu_castle_outside"), ]),
-	]
-),
-  
  
 ( "castle_outside",city_menu_color,
     "You are outside {s2}.{s11} {s3} {s4}",
@@ -5453,13 +5459,7 @@ game_menus = [
 ("castle_besiege",mnf_enable_hot_keys|mnf_scale_picture,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
-    [   (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          #(set_background_mesh, "mesh_pic_siege_sighted_fem"),
-        (else_try),
-          #(set_background_mesh, "mesh_pic_siege_sighted"),
-        (try_end),
+    [   
         (assign, "$g_siege_force_wait", 0),
         (try_begin),
           (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
@@ -5577,10 +5577,12 @@ game_menus = [
           (assign, ":main_party_fit_regulars", reg(0)),
           (eq, "$g_battle_result", -1),
           (eq, ":main_party_fit_regulars", 0), #all lost
-          (assign, "$g_next_menu", "mnu_captivity_start_castle_defeat"),
+		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_town"),
+          (assign, "$g_next_menu", "mnu_tld_player_defeated"),
           (jump_to_menu, "mnu_total_defeat"),
         (try_end),
     ],
+	
     [ ("siege_request_meeting",[(eq, "$cant_talk_to_enemy", 0)],"Call for a meeting with the castle commander.", [
           (assign, "$cant_talk_to_enemy", 1),
           (assign, "$g_enemy_surrenders",0),
@@ -6093,7 +6095,8 @@ game_menus = [
             (try_end),
             (this_or_next|eq, ":battle_lost",1),
             (eq,"$g_player_surrenders",1),
-            (assign, "$g_next_menu", "mnu_captivity_start_under_siege_defeat"),
+			(assign, "$recover_after_death_menu", "mnu_recover_after_death_town"),
+            (assign, "$g_next_menu", "mnu_tld_player_defeated"),
             (jump_to_menu, "mnu_total_defeat"),
           (else_try),
             # Ordinary victory/defeat.
@@ -6846,7 +6849,8 @@ game_menus = [
  You must flee back through the gates before all the guards in the town come down on you!",
     "none",
      code_to_set_city_background + [
-       (assign,"$auto_menu","mnu_captivity_start_castle_surrender"),
+	 (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
+     #(assign,"$auto_menu","mnu_tld_player_defeated"),
     ],
     [
       ("sneak_caught_fight",[],"Try to fight your way out!",
@@ -6885,7 +6889,8 @@ game_menus = [
         ]),
       ("sneak_caught_surrender",[],"Surrender.",
        [
-           (jump_to_menu,"mnu_captivity_start_castle_surrender"),
+	       (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
+           (jump_to_menu,"mnu_tld_player_defeated"),
         ]),
     ]
 ),
@@ -6905,7 +6910,7 @@ game_menus = [
 ),
 
 ( "sneak_into_town_caught_ran_away",0,
-    "You make your way back through the gates and quickly retreat to the safety of the hills.",
+    "You make your way back through the gates and quickly retreat to the safety out of town.",
     "none",
     [],
     [("continue",[],"Continue...",
@@ -6934,330 +6939,407 @@ game_menus = [
     []
 ),
   
+## UNIFIED PLAYER DEFEATED MENUS... (mtarini)
+###########################
+
+ # player death scenario in TLD: no capture, only 
+ ( "tld_player_defeated",0,
+     "Suddenly a shattering pain explodes in the back of your head! You shiver, as all the world goes black around you...^^^Is this your end?",
+     "none",[
+	 
+	 (store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
+	 (val_add, "$number_of_player_deaths", 1),
+
+	 ],[      
+	    ("continue",[],"Continue...",
+        [
+			(assign, "$auto_menu", "$recover_after_death_menu"),
+            (rest_for_hours, 8, 8, 0),
+			#(jump_to_menu, "$recover_after_death_menu"),
+			(change_screen_return),
+			(display_message,"@times passess..."),
+         ]),
+	 ]
+ ),
+ 
+ ("recover_after_death_fangorn",0,
+    "You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
+	"none",[
+		(try_begin),
+			(eq, "$g_battle_result", 1),
+			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
+		(else_try),
+			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
+			(jump_to_menu, "mnu_tld_player_defeated"),
+		(try_end),
+	 ],[("ok_",[],"Continue...",[
+	(troop_set_health,"trp_player",0),
+	(try_begin),
+        (check_quest_active, "qst_investigate_fangorn"),
+		(neg|check_quest_succeeded, "qst_investigate_fangorn"),
+        (neg|check_quest_failed, "qst_investigate_fangorn"),
+		(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
+    (try_end),
+	(change_screen_map),
+	] ),]
+  ),
+  
+  ( "recover_after_death_moria",city_menu_color,
+    "You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
+    "none",[(set_background_mesh, "mesh_town_moria"),],[
+	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
+	]
+  ),
+  
+
+ ( "recover_after_death_default",0,
+     "You regain your conciousness. You are in the spot you fell.\
+  The enemies must have taken you up for dead and left you there.\
+  However, it seems that none of your wound were lethal,\
+  and altough you feel awful, you find out that can still walk.\
+  You get up and try to look for any other survivors from your party.",
+     "none",[ ],[      
+	 ("continue",[],"Continue...",
+        [
+            (change_screen_return),
+         ]),
+	 ]
+ ),
+ 
+  ( "recover_after_death_town",0,
+     "You regain your conciousness and find yourself near the town boundary. \
+  You are alive!\
+  Nobody is around and you take jour chance to drag yourself outside the town.\
+  It seems that none of your wound were lethal,\
+  and altough you feel awful, you find out that can still walk.",
+     "none",code_to_set_city_background,[      
+	 ("continue",[],"Continue...",
+        [
+		    (change_screen_map),
+            (jump_to_menu,"mnu_castle_outside"),
+         ]),
+	 ]
+ ),
+ 
+   ( "recover_after_death_town_alone",0,
+     "You regain your conciousness and find yourself near the town boundary. \
+  You are alive!\
+  Nobody is around and you take jour chance to drag yourself outside the town.\
+ Your companions find you.\
+It seems that none of your wound were lethal,\
+  and altough you feel awful, you find out that can still walk.",
+     "none",code_to_set_city_background,[      
+	 ("continue",[],"Continue...",
+        [
+		    (change_screen_map),
+            (jump_to_menu,"mnu_castle_outside"),
+         ]),
+	 ]
+ ),
 
 #####################################################################
 ## Captivity....
 #####################################################################
-( "captivity_avoid_wilderness",0,
-    "{s64}Suddenly all the world goes black around you.^\
- Many hours later you regain your conciousness and find yourself at the spot you fell.\
- Your enemies must have taken you up for dead and left you there.\
- However, it seems that none of your wound were lethal,\
- and altough you feel awful, you find out that can still walk.\
- You get up and try to look for any other survivors from your party.",
-    "none",[
-	(try_begin),
-	  (str_clear, s64),
-	  (eq,"$g_player_surrenders",1),
-	     (str_store_string,s64,"@You enemy takes no prisoners!^^"),  # todo: or... they do?
-	  (try_end),
-	],[      
-	   ("continue",[],"Continue...",
-       [
-           (rest_for_hours, 8, 8, 0),
-           (change_screen_return),
-        ]),
-	]
-),
 
-( "captivity_start_wilderness",0,
-    "Stub",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (try_begin),
-         (eq,"$g_player_surrenders",1),
-         (jump_to_menu, "mnu_captivity_start_wilderness_surrender"), 
-       (else_try),
-         (jump_to_menu, "mnu_captivity_start_wilderness_defeat"), 
-       (try_end),
-     ],
-    []
-),
-  
-( "captivity_start_wilderness_surrender",0,
-    "Stub",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (assign,"$auto_menu",-1), #We need this since we may come here by something other than auto_menu
-       (assign, "$capturer_party", "$g_encountered_party"),
-       (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
-    ],
-    []
-),
-  
-( "captivity_start_wilderness_defeat",0,
-    "Your enemies take you prisoner.",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (assign,"$auto_menu",-1),
-       (assign, "$capturer_party", "$g_encountered_party"),
-       (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
-    ],
-    []
-),
-  
-( "captivity_start_castle_surrender",0,
-    "Stub",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (assign,"$auto_menu",-1),
-       (assign, "$capturer_party", "$g_encountered_party"),
-       (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-      ],
-    []
-),
-  
-( "captivity_start_castle_defeat",0,
-    "Stub",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (assign,"$auto_menu",-1),
-       (assign, "$capturer_party", "$g_encountered_party"),
-       (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-      ],
-    []
-),
-  
-( "captivity_start_under_siege_defeat",0,
-    "Your enemies take you prisoner.",
-    "none",
-    [  (assign, "$g_player_is_captive", 1),
-       (assign,"$auto_menu",-1),
-       (assign, "$capturer_party", "$g_encountered_party"),
-       (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-    ],
-    []
-),
-  
-( "captivity_wilderness_taken_prisoner",mnf_scale_picture,
-    "Your enemies take you prisoner.",
-    "none",
-    [#(set_background_mesh, "mesh_pic_prisoner_wilderness"),
-	],
-    [("continue",[],"Continue...",
-       [(try_for_range, ":npc", companions_begin, companions_end),
-        (main_party_has_troop, ":npc"),
-        (store_random_in_range, ":rand", 0, 100),
-        (lt, ":rand", 30),
-        (remove_member_from_party, ":npc", "p_main_party"),
-        (troop_set_slot, ":npc", slot_troop_occupation, 0),
-        (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
-#        (assign, "$last_lost_companion", ":npc"),
-        (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
-        (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
-        (troop_set_health, ":npc", 100),
-        #(store_random_in_range, ":rand_town", centers_begin, centers_end),
-        #(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
-        (assign, ":nearest_town_dist", 1000),
-        (try_for_range, ":town_no", centers_begin, centers_end),
-		  (party_is_active, ":town_no"), #TLD
-		  (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
-          (store_faction_of_party, ":town_fac", ":town_no"),
-          (store_relation, ":reln", ":town_fac", "fac_player_faction"),
-          (ge, ":reln", 0),
-          (store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
-          (lt, ":dist", ":nearest_town_dist"),
-          (assign, ":nearest_town_dist", ":dist"),
-          #(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
-        (try_end),
-      (try_end),
 
-      (set_camera_follow_party, "$capturer_party"),
-      (assign, "$g_player_is_captive", 1),
-      (store_random_in_range, ":random_hours", 18, 30),
-      (call_script, "script_event_player_captured_as_prisoner"),
-      (call_script, "script_stay_captive_for_hours", ":random_hours"),
-      (assign,"$auto_menu","mnu_captivity_wilderness_check"),
-      (change_screen_return),
-      ]),
-    ]
-),
+# ( "captivity_start_wilderness",0,
+    # "Stub",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (try_begin),
+         # (eq,"$g_player_surrenders",1),
+         # (jump_to_menu, "mnu_captivity_start_wilderness_surrender"), 
+       # (else_try),
+         # (jump_to_menu, "mnu_captivity_start_wilderness_defeat"), 
+       # (try_end),
+     # ],
+    # []
+# ),
+  
+# ( "captivity_start_wilderness_surrender",0,
+    # "Stub",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (assign,"$auto_menu",-1), #We need this since we may come here by something other than auto_menu
+       # (assign, "$capturer_party", "$g_encountered_party"),
+       # (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
+    # ],
+    # []
+# ),
+  
+# ( "captivity_start_wilderness_defeat",0,
+    # "Your enemies take you prisoner.",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (assign,"$auto_menu",-1),
+       # (assign, "$capturer_party", "$g_encountered_party"),
+       # (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
+    # ],
+    # []
+# ),
+  
+# ( "captivity_start_castle_surrender",0,
+    # "Stub",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (assign,"$auto_menu",-1),
+       # (assign, "$capturer_party", "$g_encountered_party"),
+       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
+      # ],
+    # []
+# ),
+  
+# ( "captivity_start_castle_defeat",0,
+    # "Stub",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (assign,"$auto_menu",-1),
+       # (assign, "$capturer_party", "$g_encountered_party"),
+       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
+      # ],
+    # []
+# ),
+  
+# ( "captivity_start_under_siege_defeat",0,
+    # "Your enemies take you prisoner.",
+    # "none",
+    # [  (assign, "$g_player_is_captive", 1),
+       # (assign,"$auto_menu",-1),
+       # (assign, "$capturer_party", "$g_encountered_party"),
+       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
+    # ],
+    # []
+# ),
+  
+# ( "captivity_wilderness_taken_prisoner",mnf_scale_picture,
+    # "Your enemies take you prisoner.",
+    # "none",
+    # [#(set_background_mesh, "mesh_pic_prisoner_wilderness"),
+	# ],
+    # [("continue",[],"Continue...",
+       # [(try_for_range, ":npc", companions_begin, companions_end),
+        # (main_party_has_troop, ":npc"),
+        # (store_random_in_range, ":rand", 0, 100),
+        # (lt, ":rand", 30),
+        # (remove_member_from_party, ":npc", "p_main_party"),
+        # (troop_set_slot, ":npc", slot_troop_occupation, 0),
+        # (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
+# #        (assign, "$last_lost_companion", ":npc"),
+        # (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
+        # (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
+        # (troop_set_health, ":npc", 100),
+        # #(store_random_in_range, ":rand_town", centers_begin, centers_end),
+        # #(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
+        # (assign, ":nearest_town_dist", 1000),
+        # (try_for_range, ":town_no", centers_begin, centers_end),
+		  # (party_is_active, ":town_no"), #TLD
+		  # (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
+          # (store_faction_of_party, ":town_fac", ":town_no"),
+          # (store_relation, ":reln", ":town_fac", "fac_player_faction"),
+          # (ge, ":reln", 0),
+          # (store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
+          # (lt, ":dist", ":nearest_town_dist"),
+          # (assign, ":nearest_town_dist", ":dist"),
+          # #(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
+        # (try_end),
+      # (try_end),
 
-(  "captivity_wilderness_check",0,
-    "stub",
-    "none",
-    [(jump_to_menu,"mnu_captivity_end_wilderness_escape")],
-    []
-),
-  
-( "captivity_end_wilderness_escape",mnf_scale_picture,
-    "After painful days of being dragged about as a prisoner, you find a chance and escape from your captors!",
-    "none",
-    [
-        (play_cue_track, "track_escape"),
-        (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          (set_background_mesh, "mesh_pic_escape_1_fem"),
-        (else_try),
-          (set_background_mesh, "mesh_pic_escape_1"),
-        (try_end),
-    ],
-    [
-      ("continue",[],"Continue...",
-       [
-           (assign, "$g_player_is_captive", 0),
-           (try_begin),
-             (party_is_active, "$capturer_party"),
-             (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
-           (try_end),
-           (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
-           (assign, "$g_player_icon_state", pis_normal),
-           (set_camera_follow_party, "p_main_party"),
-           (rest_for_hours, 0, 0, 0), #stop resting
-           (change_screen_return),
-        ]),
-    ]
-),
-  
-( "captivity_castle_taken_prisoner",0,
-    "You are quickly surrounded by guards who take away your weapons. With curses and insults, they throw you into the dungeon where you must while away the miserable days of your captivity.",
-    "none",
-    [
-        (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          (set_background_mesh, "mesh_pic_prisoner_fem"),
-        (else_try),
-          (set_background_mesh, "mesh_pic_prisoner_man"),
-        (try_end),
-    ],
-    [ ("continue",[],"Continue...",
-       [
-           (assign, "$g_player_is_captive", 1),
-           (store_random_in_range, ":random_hours", 16, 22),
-           (call_script, "script_event_player_captured_as_prisoner"),
-           (call_script, "script_stay_captive_for_hours", ":random_hours"),
-           (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           (change_screen_return)
-        ]),
-    ]
-),
-  
-( "captivity_rescue_lord_taken_prisoner",0,
-    "You remain in disguise for as long as possible before revealing yourself.\
- The guards are outraged and beat you savagely before throwing you back into the cell for God knows how long...",
-    "none",
-    [
-        (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          (set_background_mesh, "mesh_pic_prisoner_fem"),
-        (else_try),
-          (set_background_mesh, "mesh_pic_prisoner_man"),
-        (try_end),
-   ],
-    [
-      ("continue",[],"Continue...",
-       [
-           (assign, "$g_player_is_captive", 1),
-           (store_random_in_range, ":random_hours", 16, 22),
-           (call_script, "script_event_player_captured_as_prisoner"),
-           (call_script, "script_stay_captive_for_hours", ":random_hours"),
-           (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           (change_screen_return),
-        ]),
-    ]
-),
-  
-( "captivity_castle_check",0,
-    "stub",
-    "none",
-    [   (store_random_in_range, reg(7), 0, 10),
-        (try_begin),
-          (lt, reg(7), 4),
-          (store_random_in_range, "$player_ransom_amount", 3, 6),
-          (val_mul, "$player_ransom_amount", 100),
-          (store_troop_gold, reg(3), "trp_player"),
-          (gt, reg(3), "$player_ransom_amount"),
-          (jump_to_menu,"mnu_captivity_end_propose_ransom"),
-        (else_try),
-          (lt, reg(7), 7),
-          (jump_to_menu,"mnu_captivity_end_exchanged_with_prisoner"),
-        (else_try),
-          (jump_to_menu,"mnu_captivity_castle_remain"),
-        (try_end),
-    ],
-    []
-),
-  
-( "captivity_end_exchanged_with_prisoner",0,
-    "After days of imprisonment, you are finally set free when your captors exchange you with another prisoner.",
-    "none",
-    [ (play_cue_track, "track_escape")],
-    [ ("continue",[],"Continue...",
-       [   (assign, "$g_player_is_captive", 0),
-           (try_begin),
-             (party_is_active, "$capturer_party"),
-             (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
-           (try_end),
-           (call_script, "script_set_parties_around_player_ignore_player", 2, 12),
-           (assign, "$g_player_icon_state", pis_normal),
-           (set_camera_follow_party, "p_main_party"),
-           (rest_for_hours, 0, 0, 0), #stop resting
-           (change_screen_return),
-        ]),
-    ]
-),
+      # (set_camera_follow_party, "$capturer_party"),
+      # (assign, "$g_player_is_captive", 1),
+      # (store_random_in_range, ":random_hours", 18, 30),
+      # (call_script, "script_event_player_captured_as_prisoner"),
+      # (call_script, "script_stay_captive_for_hours", ":random_hours"),
+      # (assign,"$auto_menu","mnu_captivity_wilderness_check"),
+      # (change_screen_return),
+      # ]),
+    # ]
+# ),
 
-( "captivity_end_propose_ransom",0,
-    "You spend long hours in the sunless dank of the dungeon, more than you can count.\
- Suddenly one of your captors enters your cell with an offer;\
- he proposes to free you in return for {reg5} denars of your hidden wealth. You decide to...",
-    "none",
-    [
-        (store_character_level, ":player_level", "trp_player"),
-        (store_mul, "$player_ransom_amount", ":player_level", 50),
-        (val_add, "$player_ransom_amount", 100),
-        (assign, reg5, "$player_ransom_amount"),
-    ],
-    [ ("captivity_end_ransom_accept",[(store_troop_gold,":player_gold", "trp_player"),
-                                      (ge, ":player_gold","$player_ransom_amount")],"Accept the offer.",
-       [   (play_cue_track, "track_escape"),
-           (assign, "$g_player_is_captive", 0),
-           (troop_remove_gold, "trp_player", "$player_ransom_amount"), 
-           (try_begin),
-             (party_is_active, "$capturer_party"),
-             (party_relocate_near_party, "p_main_party", "$capturer_party", 1),
-           (try_end),
-           (call_script, "script_set_parties_around_player_ignore_player", 2, 6),
-           (assign, "$g_player_icon_state", pis_normal),
-           (set_camera_follow_party, "p_main_party"),
-           (rest_for_hours, 0, 0, 0), #stop resting
-           (change_screen_return),
-        ]),
-      ("captivity_end_ransom_deny",[],"Refuse him, wait for something better.",
-       [
-           (assign, "$g_player_is_captive", 1),
-           (store_random_in_range, reg(8), 16, 22),
-           (call_script, "script_stay_captive_for_hours", reg8),
-           (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           (change_screen_return),
-        ]),
-    ]
-),
+# (  "captivity_wilderness_check",0,
+    # "stub",
+    # "none",
+    # [(jump_to_menu,"mnu_captivity_end_wilderness_escape")],
+    # []
+# ),
+  
+# ( "captivity_end_wilderness_escape",mnf_scale_picture,
+    # "After painful days of being dragged about as a prisoner, you find a chance and escape from your captors!",
+    # "none",
+    # [
+        # (play_cue_track, "track_escape"),
+        # (troop_get_type, ":is_female", "trp_player"),
+        # (try_begin),
+          # (eq, ":is_female", 1),
+          # (set_background_mesh, "mesh_pic_escape_1_fem"),
+        # (else_try),
+          # (set_background_mesh, "mesh_pic_escape_1"),
+        # (try_end),
+    # ],
+    # [
+      # ("continue",[],"Continue...",
+       # [
+           # (assign, "$g_player_is_captive", 0),
+           # (try_begin),
+             # (party_is_active, "$capturer_party"),
+             # (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
+           # (try_end),
+           # (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
+           # (assign, "$g_player_icon_state", pis_normal),
+           # (set_camera_follow_party, "p_main_party"),
+           # (rest_for_hours, 0, 0, 0), #stop resting
+           # (change_screen_return),
+        # ]),
+    # ]
+# ),
+  
+# ( "captivity_castle_taken_prisoner",0,
+    # "You are quickly surrounded by guards who take away your weapons. With curses and insults, they throw you into the dungeon where you must while away the miserable days of your captivity.",
+    # "none",
+    # [
+        # (troop_get_type, ":is_female", "trp_player"),
+        # (try_begin),
+          # (eq, ":is_female", 1),
+          # (set_background_mesh, "mesh_pic_prisoner_fem"),
+        # (else_try),
+          # (set_background_mesh, "mesh_pic_prisoner_man"),
+        # (try_end),
+    # ],
+    # [ ("continue",[],"Continue...",
+       # [
+           # (assign, "$g_player_is_captive", 1),
+           # (store_random_in_range, ":random_hours", 16, 22),
+           # (call_script, "script_event_player_captured_as_prisoner"),
+           # (call_script, "script_stay_captive_for_hours", ":random_hours"),
+           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
+           # (change_screen_return)
+        # ]),
+    # ]
+# ),
+  
+# ( "captivity_rescue_lord_taken_prisoner",0,
+    # "You remain in disguise for as long as possible before revealing yourself.\
+ # The guards are outraged and beat you savagely before throwing you back into the cell for God knows how long...",
+    # "none",
+    # [
+        # (troop_get_type, ":is_female", "trp_player"),
+        # (try_begin),
+          # (eq, ":is_female", 1),
+          # (set_background_mesh, "mesh_pic_prisoner_fem"),
+        # (else_try),
+          # (set_background_mesh, "mesh_pic_prisoner_man"),
+        # (try_end),
+   # ],
+    # [
+      # ("continue",[],"Continue...",
+       # [
+           # (assign, "$g_player_is_captive", 1),
+           # (store_random_in_range, ":random_hours", 16, 22),
+           # (call_script, "script_event_player_captured_as_prisoner"),
+           # (call_script, "script_stay_captive_for_hours", ":random_hours"),
+           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
+           # (change_screen_return),
+        # ]),
+    # ]
+# ),
+  
+# ( "captivity_castle_check",0,
+    # "stub",
+    # "none",
+    # [   (store_random_in_range, reg(7), 0, 10),
+        # (try_begin),
+          # (lt, reg(7), 4),
+          # (store_random_in_range, "$player_ransom_amount", 3, 6),
+          # (val_mul, "$player_ransom_amount", 100),
+          # (store_troop_gold, reg(3), "trp_player"),
+          # (gt, reg(3), "$player_ransom_amount"),
+          # (jump_to_menu,"mnu_captivity_end_propose_ransom"),
+        # (else_try),
+          # (lt, reg(7), 7),
+          # (jump_to_menu,"mnu_captivity_end_exchanged_with_prisoner"),
+        # (else_try),
+          # (jump_to_menu,"mnu_captivity_castle_remain"),
+        # (try_end),
+    # ],
+    # []
+# ),
+  
+# ( "captivity_end_exchanged_with_prisoner",0,
+    # "After days of imprisonment, you are finally set free when your captors exchange you with another prisoner.",
+    # "none",
+    # [ (play_cue_track, "track_escape")],
+    # [ ("continue",[],"Continue...",
+       # [   (assign, "$g_player_is_captive", 0),
+           # (try_begin),
+             # (party_is_active, "$capturer_party"),
+             # (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
+           # (try_end),
+           # (call_script, "script_set_parties_around_player_ignore_player", 2, 12),
+           # (assign, "$g_player_icon_state", pis_normal),
+           # (set_camera_follow_party, "p_main_party"),
+           # (rest_for_hours, 0, 0, 0), #stop resting
+           # (change_screen_return),
+        # ]),
+    # ]
+# ),
 
-( "captivity_castle_remain",mnf_scale_picture|mnf_disable_all_keys,
-    "More days pass in the darkness of your cell. You get through them as best you can,\
- enduring the kicks and curses of the guards, watching your underfed body waste away more and more...",
-    "none",
-    [   (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          (set_background_mesh, "mesh_pic_prisoner_fem"),
-        (else_try),
-          (set_background_mesh, "mesh_pic_prisoner_man"),
-        (try_end),
-        (store_random_in_range, ":random_hours", 16, 22),
-        (call_script, "script_stay_captive_for_hours", ":random_hours"),
-        (assign,"$auto_menu", "mnu_captivity_castle_check"),
-    ],
-    [ ("continue",[],"Continue...",
-       [   (assign, "$g_player_is_captive", 1),
-           (change_screen_return),
-        ]),
-    ]
-),
+# ( "captivity_end_propose_ransom",0,
+    # "You spend long hours in the sunless dank of the dungeon, more than you can count.\
+ # Suddenly one of your captors enters your cell with an offer;\
+ # he proposes to free you in return for {reg5} denars of your hidden wealth. You decide to...",
+    # "none",
+    # [
+        # (store_character_level, ":player_level", "trp_player"),
+        # (store_mul, "$player_ransom_amount", ":player_level", 50),
+        # (val_add, "$player_ransom_amount", 100),
+        # (assign, reg5, "$player_ransom_amount"),
+    # ],
+    # [ ("captivity_end_ransom_accept",[(store_troop_gold,":player_gold", "trp_player"),
+                                      # (ge, ":player_gold","$player_ransom_amount")],"Accept the offer.",
+       # [   (play_cue_track, "track_escape"),
+           # (assign, "$g_player_is_captive", 0),
+           # (troop_remove_gold, "trp_player", "$player_ransom_amount"), 
+           # (try_begin),
+             # (party_is_active, "$capturer_party"),
+             # (party_relocate_near_party, "p_main_party", "$capturer_party", 1),
+           # (try_end),
+           # (call_script, "script_set_parties_around_player_ignore_player", 2, 6),
+           # (assign, "$g_player_icon_state", pis_normal),
+           # (set_camera_follow_party, "p_main_party"),
+           # (rest_for_hours, 0, 0, 0), #stop resting
+           # (change_screen_return),
+        # ]),
+      # ("captivity_end_ransom_deny",[],"Refuse him, wait for something better.",
+       # [
+           # (assign, "$g_player_is_captive", 1),
+           # (store_random_in_range, reg(8), 16, 22),
+           # (call_script, "script_stay_captive_for_hours", reg8),
+           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
+           # (change_screen_return),
+        # ]),
+    # ]
+# ),
+
+# ( "captivity_castle_remain",mnf_scale_picture|mnf_disable_all_keys,
+    # "More days pass in the darkness of your cell. You get through them as best you can,\
+ # enduring the kicks and curses of the guards, watching your underfed body waste away more and more...",
+    # "none",
+    # [   (troop_get_type, ":is_female", "trp_player"),
+        # (try_begin),
+          # (eq, ":is_female", 1),
+          # (set_background_mesh, "mesh_pic_prisoner_fem"),
+        # (else_try),
+          # (set_background_mesh, "mesh_pic_prisoner_man"),
+        # (try_end),
+        # (store_random_in_range, ":random_hours", 16, 22),
+        # (call_script, "script_stay_captive_for_hours", ":random_hours"),
+        # (assign,"$auto_menu", "mnu_captivity_castle_check"),
+    # ],
+    # [ ("continue",[],"Continue...",
+       # [   (assign, "$g_player_is_captive", 1),
+           # (change_screen_return),
+        # ]),
+    # ]
+# ),
 
 (   "notification_center_under_siege",0,
     "{s1} has been besieged by {s2} of {s3}!",
@@ -7520,7 +7602,7 @@ game_menus = [
 ( "ruins",0,
     "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
-    [(set_background_mesh, "mesh_pic_looted_village"),
+    [#(set_background_mesh, "mesh_pic_looted_village"), # not a very fitting image,  no style uniformity
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
     [

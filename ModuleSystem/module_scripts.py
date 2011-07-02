@@ -1262,6 +1262,8 @@ scripts = [
       (troop_set_slot, "trp_player", slot_troop_custom_banner_map_flag_type, -1),
       #Assigning global constant
       (call_script, "script_store_average_center_value_per_faction"),
+	  
+	  (assign, "$number_of_player_deaths", 0),
 
       (troop_set_slot, "trp_player", slot_troop_custom_banner_bg_color_1, 0xFFFFFFFF),
       (troop_set_slot, "trp_player", slot_troop_custom_banner_bg_color_2, 0xFFFFFFFF),
@@ -2758,23 +2760,31 @@ scripts = [
   ("game_get_statistics_line",
     [
       (store_script_param_1, ":line_no"),
+	  
       (try_begin),
         (eq, ":line_no", 0),
+        (assign, reg1, "$number_of_player_deaths"),
+		(store_sub, reg2, reg1, 1),
+		(str_store_string, s1, "@Left for death but miracolously survived: {reg1?NEVER:{reg1} time{reg2?s:}}"),
+        (set_result_string, s1),
+	  # skip line 1, for a sspacer
+      (else_try),
+        (eq, ":line_no", 2),
         (get_player_agent_kill_count, reg1),
 		(str_store_string, s1, "str_number_of_troops_killed_reg1"),
         (set_result_string, s1),
       (else_try),
-        (eq, ":line_no", 1),
+        (eq, ":line_no", 3),
         (get_player_agent_kill_count, reg1, 1),
         (str_store_string, s1, "str_number_of_troops_wounded_reg1"),
         (set_result_string, s1),
       (else_try),
-        (eq, ":line_no", 2),
+        (eq, ":line_no", 4),
         (get_player_agent_own_troop_kill_count, reg1),
         (str_store_string, s1, "str_number_of_own_troops_killed_reg1"),
         (set_result_string, s1),
       (else_try),
-        (eq, ":line_no", 3),
+        (eq, ":line_no", 5),
         (get_player_agent_own_troop_kill_count, reg1, 1),
         (str_store_string, s1, "str_number_of_own_troops_wounded_reg1"),
         (set_result_string, s1),
@@ -10775,6 +10785,23 @@ scripts = [
 	(try_end),
 ]),
   
+("tld_party_relocate_near_party", [
+    (store_script_param_1, ":pa"),
+    (store_script_param_2, ":pb"),
+    (store_script_param, ":dist",3),
+	(call_script, "script_party_which_side_of_white_mountains", ":pb"), (assign, ":pb_is_south", reg0),
+	(try_for_range, ":i", 0, 40), # try 40 times
+		(party_relocate_near_party, ":pa", ":pb",":dist"),
+		(assign, ":pa_is_south", 0),
+		(call_script, "script_party_which_side_of_white_mountains", ":pa"), (assign, ":pa_is_south", reg0), 
+		(eq,":pa_is_south",":pb_is_south"),
+		(assign, ":i", 20), # break
+		(try_begin), 
+			(ge,":i",39), 
+			(display_message, "@TLD ERROR! could not spawn the party on the same side of the white mountains"),
+		(try_end),
+	(try_end),
+]),
 
  #  script_region_get_faction:
  # given a region, it return (in reg1) the "default faction" ruling in that region, if any (else, -1)   (matrini)
@@ -15068,6 +15095,7 @@ scripts = [
   # OUTPUT: none
   ("player_join_faction",
     [
+	  (set_show_messages,0),
       (store_script_param, ":faction_no", 1),
       (assign,"$players_kingdom",":faction_no"),
       (faction_set_slot, "fac_player_supporters_faction", slot_faction_ai_state, sfai_default),
@@ -15107,6 +15135,7 @@ scripts = [
       (call_script, "script_store_average_center_value_per_faction"),
       (call_script, "script_update_all_notes"),
       (assign, "$g_recalculate_ais", 1),
+	  (set_show_messages,1),
       ]),
 
   #script_player_leave_faction

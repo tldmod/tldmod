@@ -3405,7 +3405,9 @@ mission_templates = [
       (ti_tab_pressed, 0, 0, [],
        [(question_box,"str_do_you_wish_to_surrender")]),
       (ti_question_answered, 0, 0, [],
-       [(store_trigger_param_1,":answer"),(eq,":answer",0),(jump_to_menu,"mnu_captivity_start_castle_defeat"),(finish_mission,0),]),
+       [(store_trigger_param_1,":answer"),(eq,":answer",0),
+	   (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
+	   (jump_to_menu,"mnu_tld_player_defeated"),(finish_mission,0),]),
       
       (1, 0, ti_once, [],
        [
@@ -3413,7 +3415,7 @@ mission_templates = [
          (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
          ]),
       (0, 3, 0, [(main_hero_fallen,0)],
-       [(jump_to_menu,"mnu_captivity_start_castle_defeat"),(finish_mission,0)]),
+       [(assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),(jump_to_menu,"mnu_tld_player_defeated"),(finish_mission,0)]),
       (5, 1, ti_once, [(num_active_teams_le,1),(neg|main_hero_fallen)],
        [(assign,"$auto_menu",-1),(jump_to_menu,"mnu_sneak_into_town_caught_dispersed_guards"),(finish_mission,1)]),
       (ti_on_leave_area, 0, ti_once, [],
@@ -3933,7 +3935,7 @@ mission_templates = [
     [
     (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
 	(ti_question_answered, 0, 0, [], [ 
-		(troop_remove_item, "trp_player","itm_book_of_moria"),(store_trigger_param_1,":answer"), (eq,":answer",0), (jump_to_menu,"mnu_moria_didnt_escape"), (finish_mission), 
+		(troop_remove_item, "trp_player","itm_book_of_moria"),(store_trigger_param_1,":answer"), (eq,":answer",0), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission), 
 	]),
 	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001) ]),
   ],

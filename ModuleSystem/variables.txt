@@ -69,10 +69,6 @@ hero_requested_to_learn_relations
 lord_requested_to_talk_to
 g_permitted_to_center
 deserter_tribute
-buy_drinks_last_time
-ransom_broker_families_told
-ransom_broker_prices_told
-ransom_broker_ransom_me_told
 g_tld_training_mode
 g_tld_training_opponents
 g_tld_training_weapon
@@ -97,6 +93,7 @@ cheat_menu_add_troop_search_tier
 cheat_menu_add_troop_search_fac
 cheat_menu_add_troop_search_hero
 cheat_imposed_quest
+recover_after_death_menu
 g_custom_battle_scenario
 g_battle_result
 g_custom_battle_scene
@@ -105,10 +102,11 @@ cbadvantage
 last_menu
 g_cheat_selected_faction
 g_player_icon_state
+current_player_terrain
+current_player_landmark
 number_of_combatants
 g_camp_mode
 cheat_mode
-relocated
 g_mvtest_faction
 g_crossdressing_activated
 tld_option_formations
@@ -128,9 +126,6 @@ tmp_menu_skipped
 add_troop_menu_index
 players_kingdom
 g_ent_water_ever_drunk
-g_prisoner_recruit_troop_id
-g_prisoner_recruit_size
-g_prisoner_recruit_last_time
 g_enemy_party
 g_ally_party
 new_encounter
@@ -183,7 +178,7 @@ g_last_rest_payment_until
 g_main_ship_party
 last_sneak_attempt_town
 last_sneak_attempt_time
-player_ransom_amount
+number_of_player_deaths
 faction_good
 faction_evil
 rescue_stage
@@ -475,6 +470,7 @@ g_player_party_morale_modifier_party_size
 g_player_party_morale_modifier_leadership
 g_player_party_morale_modifier_food
 g_player_party_morale_modifier_no_food
+relocated
 ai_team_1_battle_tactic
 ai_team_1
 ai_team_2
@@ -534,15 +530,6 @@ no_dead_companions
 party_relative_strength
 ratio_of_prisoners
 pout_party
-g_tld_line_A1_mul
-g_tld_line_A1_div
-g_tld_line_B1
-g_tld_line_A2_mul
-g_tld_line_A2_div
-g_tld_line_B2
-g_tld_line_A3_mul
-g_tld_line_A3_div
-g_tld_line_B3
 formation_00_x
 formation_00_y
 formation_00_rot
@@ -666,5 +653,3 @@ qst_scout_waypoints_wp_1_visited
 qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_is_quitting
-current_player_terrain
-current_player_landmark

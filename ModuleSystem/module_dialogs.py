@@ -7273,10 +7273,10 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 #Tavernkeepers
 
-[anyone ,"start", [(store_conversation_troop,reg1),(ge,reg1,tavernkeepers_begin),(lt,reg1,tavernkeepers_end)],
-"Good day dear {sir/madam}. How can I help you?", "tavernkeeper_talk",[]],
+# [anyone ,"start", [(store_conversation_troop,reg1),(ge,reg1,tavernkeepers_begin),(lt,reg1,tavernkeepers_end)],
+# "Good day dear {sir/madam}. How can I help you?", "tavernkeeper_talk",[]],
   
-[anyone,"tavernkeeper_pretalk", [], "Anything else?", "tavernkeeper_talk",[]],
+# [anyone,"tavernkeeper_pretalk", [], "Anything else?", "tavernkeeper_talk",[]],
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
                                      (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
@@ -7286,9 +7286,9 @@ It's an important matter, so please make haste.", "caravan_help1",[
                                      (ge, ":item_count", ":quest_target_amount"),
                                      (assign, reg9, ":quest_target_amount"),
                                      (str_store_item_name, s4, ":quest_target_item")],
-"I was told to deliver you {reg9} units of {s4}.", "tavernkeeper_deliver_wine",[]],
+"I was told to deliver you {reg9} units of {s4}.", "mayor_deliver_wine",[]],
 
-[anyone,"tavernkeeper_deliver_wine", [],
+[anyone,"mayor_deliver_wine", [],
  "At last! Our stocks were almost depleted.\
  I had paid the cost of the {s4} in advance.\
  Here, take these {reg5} RPs. That should cover your pay.\
@@ -7321,9 +7321,9 @@ It's an important matter, so please make haste.", "caravan_help1",[
                                      (gt, ":item_count", 0),
                                      (assign, reg9, ":quest_target_amount"),
                                      (str_store_item_name, s4, ":quest_target_item")],
-"I was told to deliver you {reg9} units of {s4}, but I lost some of the cargo on the way.", "tavernkeeper_deliver_wine_incomplete",[]],
+"I was told to deliver you {reg9} units of {s4}, but I lost some of the cargo on the way.", "mayor_deliver_wine_incomplete",[]],
 
-[anyone,"tavernkeeper_deliver_wine_incomplete", [],
+[anyone,"mayor_deliver_wine_incomplete", [],
  "Attacked by bandits eh?\
  You are lucky they left you alive.\
  Anyway, I can pay you no more than {reg5} RPs for this.\
@@ -7361,17 +7361,17 @@ It's an important matter, so please make haste.", "caravan_help1",[
                                      (str_store_item_name, s4, ":quest_target_item")],
 "I was told to deliver you {reg9} units of {s4}, but I lost the cargo on the way.", "tavernkeeper_deliver_wine_lost",[]],
   
-[anyone,"tavernkeeper_deliver_wine_lost", [],
- "What? I was waiting for that {s4} for weeks!\
- And now you are telling me that you lost it?\
- You may rest assured that I will let {s1} know about this.", "mayor_pretalk",
-   [(add_xp_as_reward, 40),
-    (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
-    (quest_get_slot, ":quest_giver_troop", "qst_deliver_wine", slot_quest_giver_troop),
-    (str_store_item_name, s4, ":quest_target_item"),
-    (str_store_troop_name, s1, ":quest_giver_troop"),
-    (val_add, "$debt_to_merchants_guild", "$qst_deliver_wine_debt"),
-    (call_script, "script_end_quest", "qst_deliver_wine")]],
+# [anyone,"tavernkeeper_deliver_wine_lost", [],
+ # "What? I was waiting for that {s4} for weeks!\
+ # And now you are telling me that you lost it?\
+ # You may rest assured that I will let {s1} know about this.", "mayor_pretalk",
+   # [(add_xp_as_reward, 40),
+    # (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
+    # (quest_get_slot, ":quest_giver_troop", "qst_deliver_wine", slot_quest_giver_troop),
+    # (str_store_item_name, s4, ":quest_target_item"),
+    # (str_store_troop_name, s1, ":quest_giver_troop"),
+    # (val_add, "$debt_to_merchants_guild", "$qst_deliver_wine_debt"),
+    # (call_script, "script_end_quest", "qst_deliver_wine")]],
 
 ##[anyone|plyr,"tavernkeeper_talk", [], "I need to hire some soldiers. Can you help me?", "tavernkeeper_buy_peasants",[]],
 ##[anyone,"tavernkeeper_buy_peasants",
@@ -7420,55 +7420,55 @@ It's an important matter, so please make haste.", "caravan_help1",[
 ##   [(assign, reg(2), 28),(val_sub,reg(2),reg(1)),(assign, "$g_town_visit_after_rest", 1),(rest_for_hours, reg(2)),(troop_remove_gold, "trp_player","$tavern_rest_cost"),(call_script, "script_change_player_party_morale", 2)]],
 ##[anyone|plyr,"tavernkeeper_rest_2", [], "Forget it.", "close_window",[]],
 
-[anyone|plyr,"tavernkeeper_talk",[(store_current_hours,":cur_hours"),
-								  (val_sub, ":cur_hours", 24),
-								  (gt, ":cur_hours", "$buy_drinks_last_time")], 
-"I'd like to buy every man who comes in here tonight a jar of your best wine.", "tavernkeeper_buy_drinks",[]],
+# [anyone|plyr,"tavernkeeper_talk",[(store_current_hours,":cur_hours"),
+								  # (val_sub, ":cur_hours", 24),
+								  # (gt, ":cur_hours", "$buy_drinks_last_time")], 
+# "I'd like to buy every man who comes in here tonight a jar of your best wine.", "tavernkeeper_buy_drinks",[]],
 
-[anyone,"tavernkeeper_buy_drinks",[], 
-"Of course, {my lord/my lady}. I reckon {reg5} denars should be enough for that. What should I tell the lads?", "tavernkeeper_buy_drinks_2",[
-        (assign, "$temp", 1000),
-        (assign, reg5, "$temp")]],
+# [anyone,"tavernkeeper_buy_drinks",[], 
+# "Of course, {my lord/my lady}. I reckon {reg5} denars should be enough for that. What should I tell the lads?", "tavernkeeper_buy_drinks_2",[
+        # (assign, "$temp", 1000),
+        # (assign, reg5, "$temp")]],
 
-[anyone|plyr,"tavernkeeper_buy_drinks_2",  [(store_troop_gold, ":gold", "trp_player"),
-											(ge, ":gold", "$temp"),
-											(str_store_party_name, s10, "$current_town")], 
-"Let everyone know of the generosity of {playername} to the people of {s10}.", "tavernkeeper_buy_drinks_end",[]],
+# [anyone|plyr,"tavernkeeper_buy_drinks_2",  [(store_troop_gold, ":gold", "trp_player"),
+											# (ge, ":gold", "$temp"),
+											# (str_store_party_name, s10, "$current_town")], 
+# "Let everyone know of the generosity of {playername} to the people of {s10}.", "tavernkeeper_buy_drinks_end",[]],
 
-[anyone,"tavernkeeper_buy_drinks_end",[], 
-"Don't worry {sir/madam}. Your name will be cheered and toasted here all night.", "tavernkeeper_pretalk",[
-       (troop_remove_gold, "trp_player", "$temp"),
-       (call_script, "script_change_player_relation_with_center", "$current_town", 1),
-       (store_current_hours,":cur_hours"),
-       (assign, "$buy_drinks_last_time", ":cur_hours"),]],
+# [anyone,"tavernkeeper_buy_drinks_end",[], 
+# "Don't worry {sir/madam}. Your name will be cheered and toasted here all night.", "tavernkeeper_pretalk",[
+       # (troop_remove_gold, "trp_player", "$temp"),
+       # (call_script, "script_change_player_relation_with_center", "$current_town", 1),
+       # (store_current_hours,":cur_hours"),
+       # (assign, "$buy_drinks_last_time", ":cur_hours"),]],
 
-    #####################################################################################
+    # #####################################################################################
    # Test: Tavern recruitment and Ale Begin ############################################
    #####################################################################################
-[anyone|plyr,"tavernkeeper_talk",[(store_current_hours,":cur_hours"),
-								  (val_sub, ":cur_hours", 24),
-								  (gt, ":cur_hours", "$buy_drinks_last_time")], 
-"I'd like to buy me and my men a barrel of your best ale.", "tavernkeeper_buy_drinks_troops",[]],
+# [anyone|plyr,"tavernkeeper_talk",[(store_current_hours,":cur_hours"),
+								  # (val_sub, ":cur_hours", 24),
+								  # (gt, ":cur_hours", "$buy_drinks_last_time")], 
+# "I'd like to buy me and my men a barrel of your best ale.", "tavernkeeper_buy_drinks_troops",[]],
 
-[anyone,"tavernkeeper_buy_drinks_troops", [], 
-"Of course, {my lord/my lady}. I reckon {reg5} denars should be enough for that. What should I tell the lads?", "tavernkeeper_buy_drinks_troops_2",[
-        (assign, "$temp", 20),
-      (store_party_size_wo_prisoners, reg5, "p_main_party"),
-      (store_mul, "$temp", "$temp", reg5),
-        (assign, reg5, "$temp")]],
+# [anyone,"tavernkeeper_buy_drinks_troops", [], 
+# "Of course, {my lord/my lady}. I reckon {reg5} denars should be enough for that. What should I tell the lads?", "tavernkeeper_buy_drinks_troops_2",[
+        # (assign, "$temp", 20),
+      # (store_party_size_wo_prisoners, reg5, "p_main_party"),
+      # (store_mul, "$temp", "$temp", reg5),
+        # (assign, reg5, "$temp")]],
 
-[anyone|plyr,"tavernkeeper_buy_drinks_troops_2",[(store_troop_gold, ":gold", "trp_player"),
-												(ge, ":gold", "$temp"),
-												(str_store_party_name, s10, "$current_town")], 
-"The price is fair enough, let my men have at it.", "tavernkeeper_buy_drinks_troops_end",[]],
+# [anyone|plyr,"tavernkeeper_buy_drinks_troops_2",[(store_troop_gold, ":gold", "trp_player"),
+												# (ge, ":gold", "$temp"),
+												# (str_store_party_name, s10, "$current_town")], 
+# "The price is fair enough, let my men have at it.", "tavernkeeper_buy_drinks_troops_end",[]],
 
-[anyone,"tavernkeeper_buy_drinks_troops_end", [], 
-"Don't worry {sir/madam}. Your men will enjoy their pints.", "tavernkeeper_pretalk",[
-      (troop_remove_gold, "trp_player", "$temp"),
-      (call_script, "script_change_player_party_morale", 20),
-      (store_current_hours,":cur_hours"),
-      (assign, "$buy_drinks_last_time", ":cur_hours"),
-      (rest_for_hours, 2, 5, 0)]],
+# [anyone,"tavernkeeper_buy_drinks_troops_end", [], 
+# "Don't worry {sir/madam}. Your men will enjoy their pints.", "tavernkeeper_pretalk",[
+      # (troop_remove_gold, "trp_player", "$temp"),
+      # (call_script, "script_change_player_party_morale", 20),
+      # (store_current_hours,":cur_hours"),
+      # (assign, "$buy_drinks_last_time", ":cur_hours"),
+      # (rest_for_hours, 2, 5, 0)]],
 
 #[anyone|plyr,"tavernkeeper_buy_drinks_troops_2", [], "Actually, cancel that order.", "tavernkeeper_pretalk",[]],
    #####################################################################################
@@ -7481,8 +7481,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
 #[anyone, "companion_recruit_yes", [(neg|hero_can_join, "p_main_party"),], "I don't think can lead any more men than you do now.\
 # You need to release someone from service if you want me to join your party.", "close_window", []], 
 
-[anyone|plyr,"tavernkeeper_buy_drinks_2", [], "Actually, cancel that order.", "tavernkeeper_pretalk",[]],
-[anyone|plyr,"tavernkeeper_talk", [], "I guess I should leave now.", "close_window",[]],
+# [anyone|plyr,"tavernkeeper_buy_drinks_2", [], "Actually, cancel that order.", "tavernkeeper_pretalk",[]],
+# [anyone|plyr,"tavernkeeper_talk", [], "I guess I should leave now.", "close_window",[]],
 
 #Tavern Talk (with companions)
 #[anyone, "companion_recruit_yes", [(neg|hero_can_join, "p_main_party"),], "I don't think can lead any more men than you do now.\
@@ -7494,49 +7494,49 @@ It's an important matter, so please make haste.", "caravan_help1",[
 #Tavern Talk (with ransom brokers)
 
 
-[anyone,"start", [(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end),
-                    (eq, "$g_talk_troop_met", 0)],
-"Greetings to you, {sir/madam}. You look like someone who should get to know me.", "ransom_broker_intro",[]],
+# [anyone,"start", [(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end),
+                    # (eq, "$g_talk_troop_met", 0)],
+# "Greetings to you, {sir/madam}. You look like someone who should get to know me.", "ransom_broker_intro",[]],
 
-[anyone|plyr,"ransom_broker_intro",[], "Why is that?", "ransom_broker_intro_2",[]],
-[anyone, "ransom_broker_intro_2", [], 
-"I broker ransoms for the poor wretches who are captured in these endless wars.\
- Normally I travel between the salt mines and the slave markets on the coast, on commission from those whose relatives have gone missing.\
- But if I'm out on my errands of mercy, and I come across a fellow dragging around a captive or two,\
- well, there's no harm in a little speculative investment, is there?\
- And you look like the type who might have a prisoner to sell.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",0),
-                                                                                            (assign, "$ransom_broker_prices_told",0),
-                                                                                            (assign, "$ransom_broker_ransom_me_told",0)]],
+# [anyone|plyr,"ransom_broker_intro",[], "Why is that?", "ransom_broker_intro_2",[]],
+# [anyone, "ransom_broker_intro_2", [], 
+# "I broker ransoms for the poor wretches who are captured in these endless wars.\
+ # Normally I travel between the salt mines and the slave markets on the coast, on commission from those whose relatives have gone missing.\
+ # But if I'm out on my errands of mercy, and I come across a fellow dragging around a captive or two,\
+ # well, there's no harm in a little speculative investment, is there?\
+ # And you look like the type who might have a prisoner to sell.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",0),
+                                                                                            # (assign, "$ransom_broker_prices_told",0),
+                                                                                            # (assign, "$ransom_broker_ransom_me_told",0)]],
 
-[anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_families_told",0)], "What if their families can't pay?", "ransom_broker_families",[]],
-[anyone, "ransom_broker_families", [], "Oh, then I spin them a few heartwarming tales of life on the galleys.\
- You'd be surprised what sorts of treasures a peasant can dig out of his cowshed or wheedle out of his cousins,\
- assuming he's got the proper motivation!\
- And if in the end they cannot come up with the silver, then there are always slave merchants who are looking for galley slaves.\
- One cannot do Heaven's work with an empty purse, you see.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",1)]],
-[anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_prices_told",0)], "What can I get for a prisoner?", "ransom_broker_prices",[]],
-[anyone, "ransom_broker_prices", [], "It varies. I fancy that I have a fine eye for assessing a ransom.\
- There are a dozen little things about a man that will tell you whether he goes to bed hungry, or dines each night on soft dumplings and goose.\
- The real money of course is in the gentry, and if you ever want to do my job you'll want to learn about every landowning family in Calradia,\
- their estates, their heraldry, their offspring both lawful and bastard, and, of course, their credit with the merchants.", "ransom_broker_info_talk",[(assign, "$ransom_broker_prices_told",1)]],
-[anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_ransom_me_told",0)], "Would you be able to ransom me if I were taken?", "ransom_broker_ransom_me",[]],
-[anyone, "ransom_broker_ransom_me", [], "Of course. I'm welcome in every court in Calradia.\
- There's not many who can say that! So always be sure to keep a pot of denars buried somewhere,\
- and a loyal servant who can find it in a hurry.", "ransom_broker_info_talk",[(assign, "$ransom_broker_ransom_me_told",1)]],
-[anyone|plyr,"ransom_broker_info_talk",[], "That's all I need to know. Thanks.", "ransom_broker_pretalk",[]],
+# [anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_families_told",0)], "What if their families can't pay?", "ransom_broker_families",[]],
+# [anyone, "ransom_broker_families", [], "Oh, then I spin them a few heartwarming tales of life on the galleys.\
+ # You'd be surprised what sorts of treasures a peasant can dig out of his cowshed or wheedle out of his cousins,\
+ # assuming he's got the proper motivation!\
+ # And if in the end they cannot come up with the silver, then there are always slave merchants who are looking for galley slaves.\
+ # One cannot do Heaven's work with an empty purse, you see.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",1)]],
+# [anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_prices_told",0)], "What can I get for a prisoner?", "ransom_broker_prices",[]],
+# [anyone, "ransom_broker_prices", [], "It varies. I fancy that I have a fine eye for assessing a ransom.\
+ # There are a dozen little things about a man that will tell you whether he goes to bed hungry, or dines each night on soft dumplings and goose.\
+ # The real money of course is in the gentry, and if you ever want to do my job you'll want to learn about every landowning family in Calradia,\
+ # their estates, their heraldry, their offspring both lawful and bastard, and, of course, their credit with the merchants.", "ransom_broker_info_talk",[(assign, "$ransom_broker_prices_told",1)]],
+# [anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_ransom_me_told",0)], "Would you be able to ransom me if I were taken?", "ransom_broker_ransom_me",[]],
+# [anyone, "ransom_broker_ransom_me", [], "Of course. I'm welcome in every court in Calradia.\
+ # There's not many who can say that! So always be sure to keep a pot of denars buried somewhere,\
+ # and a loyal servant who can find it in a hurry.", "ransom_broker_info_talk",[(assign, "$ransom_broker_ransom_me_told",1)]],
+# [anyone|plyr,"ransom_broker_info_talk",[], "That's all I need to know. Thanks.", "ransom_broker_pretalk",[]],
 
-[anyone,"start", [(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end)],
-"Greetings. If you have any prisoners, I will be happy to buy them from you.", "ransom_broker_talk",[]],
-[anyone,"ransom_broker_pretalk", [],
-"Anyway, if you have any prisoners, I will be happy to buy them from you.", "ransom_broker_talk",[]],
+# [anyone,"start", [(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end)],
+# "Greetings. If you have any prisoners, I will be happy to buy them from you.", "ransom_broker_talk",[]],
+# [anyone,"ransom_broker_pretalk", [],
+# "Anyway, if you have any prisoners, I will be happy to buy them from you.", "ransom_broker_talk",[]],
 
-[anyone|plyr,"ransom_broker_talk", [(store_num_regular_prisoners,reg0),(ge,reg0,1)],
-"Then you'd better bring your purse. I have got prisoners to sell.", "ransom_broker_sell_prisoners",[]],
-[anyone|plyr,"ransom_broker_talk", [], "Tell me about what you do again.", "ransom_broker_intro_2",[]],
-[anyone|plyr,"ransom_broker_talk",[], "Not this time. Good-bye.", "close_window",[]],
-[anyone,"ransom_broker_sell_prisoners", [], "Let me see what you have...", "ransom_broker_sell_prisoners_2", [(change_screen_trade_prisoners)]],
-#[anyone, "ransom_broker_sell_prisoners_2", [], "You take more prisoners, bring them to me. I will pay well.", "close_window",[]],
-[anyone, "ransom_broker_sell_prisoners_2", [], "I will be staying here for a few days. Let me know if you need my services.", "close_window",[]],
+# [anyone|plyr,"ransom_broker_talk", [(store_num_regular_prisoners,reg0),(ge,reg0,1)],
+# "Then you'd better bring your purse. I have got prisoners to sell.", "ransom_broker_sell_prisoners",[]],
+# [anyone|plyr,"ransom_broker_talk", [], "Tell me about what you do again.", "ransom_broker_intro_2",[]],
+# [anyone|plyr,"ransom_broker_talk",[], "Not this time. Good-bye.", "close_window",[]],
+# [anyone,"ransom_broker_sell_prisoners", [], "Let me see what you have...", "ransom_broker_sell_prisoners_2", [(change_screen_trade_prisoners)]],
+# #[anyone, "ransom_broker_sell_prisoners_2", [], "You take more prisoners, bring them to me. I will pay well.", "close_window",[]],
+# [anyone, "ransom_broker_sell_prisoners_2", [], "I will be staying here for a few days. Let me know if you need my services.", "close_window",[]],
 
 
 #Tavern Talk (with travelers)
@@ -7627,19 +7627,19 @@ It's an important matter, so please make haste.", "caravan_help1",[
 # [anyone|plyr, "tavern_traveler_talk", [],
    # "Farewell.", "close_window", []],
 
-[anyone, "start", [(is_between, "$g_talk_troop", tavern_travelers_begin, tavern_travelers_end),
-                     (party_get_slot, ":info_faction", "$g_encountered_party", slot_center_traveler_info_faction),
-                     (str_store_faction_name, s17, ":info_faction")],
-"Greetings. They say you're the kind of {man/woman} who'd be interested to hear that I travel frequently to {s17}. I'll tell you all I know for a mere 100 denars.", "tavern_traveler_answer", []],
+# [anyone, "start", [(is_between, "$g_talk_troop", tavern_travelers_begin, tavern_travelers_end),
+                     # (party_get_slot, ":info_faction", "$g_encountered_party", slot_center_traveler_info_faction),
+                     # (str_store_faction_name, s17, ":info_faction")],
+# "Greetings. They say you're the kind of {man/woman} who'd be interested to hear that I travel frequently to {s17}. I'll tell you all I know for a mere 100 denars.", "tavern_traveler_answer", []],
 
-[anyone|plyr, "tavern_traveler_answer", [(store_troop_gold, ":cur_gold", "trp_player"),
-                                            (ge, ":cur_gold", 100)],
-"Here's 100 denars. Tell me what you know.", "tavern_traveler_continue", [(party_get_slot, ":info_faction", "$g_encountered_party", slot_center_traveler_info_faction),
-                                           (call_script, "script_update_faction_traveler_notes", ":info_faction"),
-                                           (change_screen_notes, 2, ":info_faction")]],
+# [anyone|plyr, "tavern_traveler_answer", [(store_troop_gold, ":cur_gold", "trp_player"),
+                                            # (ge, ":cur_gold", 100)],
+# "Here's 100 denars. Tell me what you know.", "tavern_traveler_continue", [(party_get_slot, ":info_faction", "$g_encountered_party", slot_center_traveler_info_faction),
+                                           # (call_script, "script_update_faction_traveler_notes", ":info_faction"),
+                                           # (change_screen_notes, 2, ":info_faction")]],
 
-[anyone|plyr, "tavern_traveler_answer", [], "Sorry friend. I am not interested.", "close_window", []],
-[anyone, "tavern_traveler_continue", [], "Well, that's all I can tell you. Good bye.", "close_window", [(troop_remove_gold, "trp_player", 100),]],
+# [anyone|plyr, "tavern_traveler_answer", [], "Sorry friend. I am not interested.", "close_window", []],
+# [anyone, "tavern_traveler_continue", [], "Well, that's all I can tell you. Good bye.", "close_window", [(troop_remove_gold, "trp_player", 100),]],
 
 
 
