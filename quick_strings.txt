@@ -1,4 +1,4 @@
-876
+871
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -576,9 +576,9 @@ qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
-qstr_You_have_encountered You_have_encountered_{s1}.
-qstr_You_have_engaged_{s1 You_have_engaged_{s1}_while_they_were_raiding_{s3}.
-qstr_You_were_caught_by_{ You_were_caught_by_{s1}_while_your_forces_were_raiding_{s3}.
+qstr_A_group_of_{s1}_will A_group_of_{s1}_will_be_upon_you_very_soon.
+qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
+qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.
 qstr_CHEAT:_healed!!! CHEAT:_healed!!!
 qstr_{s13}_asked_you_to_r {s13}_asked_you_to_report_to_him_with_at_least_{reg13}_troops.
 qstr_{s13}_ordered_you_to {s13}_ordered_you_to_join_the_assault_against_{s14}.
@@ -729,8 +729,11 @@ qstr_Well_just_look_aroun Well_just_look_around_you,_what_do_you_need_screenshot
 qstr_Say_cheese! Say_cheese!
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Hrrr!_Frresh_meat_an Hrrr!_Frresh_meat_and_shiny_things.
-qstr_Gharr!_Hand_over_all Gharr!_Hand_over_all_yerr_stuff,_and_we_might_spare_yourr_life.
+qstr_Gharr!_Kill!_Kill!_K Gharr!_Kill!_Kill!_Kill!
 qstr_Death_to_men! Death_to_men!
+qstr_Attack! Attack!
+qstr_Attack!! Attack!!
+qstr_We_are_attacked!! We_are_attacked!!
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
@@ -842,14 +845,6 @@ qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_o
 qstr_{s1}_Refugees {s1}_Refugees
 qstr_{s1}_Slaves {s1}_Slaves
 qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_people_to_{s13}._You_will_earn_{reg8}_RPs_in_return.
-qstr_I_can_smell_a_fat_pu I_can_smell_a_fat_purse_a_mile_away._Methinks_yours_could_do_with_some_lightening,_eh?
-qstr_Why_it_be_another_tr Why,_it_be_another_traveller,_chance_met_upon_the_road!_I_should_warn_you,_country_here's_a_mite_dangerous_for_a_good_{fellow/woman}_like_you._But_for_a_small_donation_my_boys_and_I'll_make_sure_you_get_rightways_to_your_destination,_eh?
-qstr_Well_well_look_at_th Well_well,_look_at_this!_You'd_best_start_coughing_up_some_silver,_friend,_or_me_and_my_boys'll_have_to_break_you.
-qstr_There_s_a_toll_for_p There's_a_toll_for_passin'_through_this_land,_payable_to_us,_so_if_you_don't_mind_we'll_just_be_collectin'_our_due_from_your_purse...
-qstr_Another_fool_come_to Another_fool_come_to_throw_{him/her}self_on_my_weapon,_eh?_Fine,_let's_fight!
-qstr_We_re_not_afraid_of_ We're_not_afraid_of_you,_{sirrah/wench}._Time_to_bust_some_heads!
-qstr_That_was_a_mistake._ That_was_a_mistake._Now_I'm_going_to_have_to_make_your_death_long_and_painful.
-qstr_Brave_words._Let_s_s Brave_words._Let's_see_you_back_them_up_with_deeds,_cur!
 qstr_This_is_the_{reg4?to This_is_the_{reg4?town:village}_of_{s5},_{sir/madam}.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_you_of_course,_my_{lord/lady}.
 qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.

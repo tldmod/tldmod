@@ -450,33 +450,90 @@ dialogs = [
  # [party_tpl|pt_manhunters|plyr,"manhunter_talk_b", [], "No, haven't seen any outlaws lately.", "manhunter_talk_b2",[]],
  # [party_tpl|pt_manhunters,"manhunter_talk_b2", [], "Bah. They're holed up in this country like rats, but we'll smoke them out yet. Sooner or later.", "close_window",[(assign, "$g_leave_encounter",1)]],
 
-[party_tpl|pt_looters|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "looters_1",[
+
+# [anyone,"bandit_introduce", [
+      # (store_random_in_range, ":rand", 11, 15),
+        # (str_store_string, s11, "@I can smell a fat purse a mile away. Methinks yours could do with some lightening, eh?"),
+        # (str_store_string, s12, "@Why, it be another traveller, chance met upon the road! I should warn you, country here's a mite dangerous for a good {fellow/woman} like you. But for a small donation my boys and I'll make sure you get rightways to your destination, eh?"),
+        # (str_store_string, s13, "@Well well, look at this! You'd best start coughing up some silver, friend, or me and my boys'll have to break you."),
+		# (str_store_string, s14, "@There's a toll for passin' through this land, payable to us, so if you don't mind we'll just be collectin' our due from your purse..."),
+        # (str_store_string_reg, s5, ":rand"),], 
+# "{s5}", "bandit_talk",[
+# ]],
+
+
+
+# [anyone|plyr,"bandit_meet", [], 
+# "Your luck has run out, wretch. Prepare to die!", "bandit_attack",[
+    # (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until, 0)]],
+  
+# [anyone,"bandit_attack", [
+      # (store_random_in_range, ":rand", 11, 15),
+        # (str_store_string, s11, "@Another fool come to throw {him/her}self on my weapon, eh? Fine, let's fight!"),
+        # (str_store_string, s12, "@We're not afraid of you, {sirrah/wench}. Time to bust some heads!"),
+        # (str_store_string, s13, "@That was a mistake. Now I'm going to have to make your death long and painful."),
+        # (str_store_string, s14, "@Brave words. Let's see you back them up with deeds, cur!"),
+        # (str_store_string_reg, s5, ":rand")], 
+# "{s5}", "close_window",[]],
+
+
+[party_tpl|pt_looters|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "hostile_dialog",[
 	(str_store_string, s11, "@Hrrr! Frresh meat and shiny things."),
-	(str_store_string, s12, "@Gharr! Hand over all yerr stuff, and we might spare yourr life."),
+	#(str_store_string, s12, "@Gharr! Hand over all yerr stuff, and we might spare yourr life."),
+	(str_store_string, s12, "@Gharr! Kill! Kill! Kill!"),
 	(str_store_string, s13, "@Death to men!"),
 	(store_random_in_range, ":random", 11, 14),
 	(str_store_string_reg, s4, ":random"),
-	(play_sound, "snd_encounter_looters")]],
+	
+	#(play_sound, "snd_encounter_looters")
+]],
 
-[party_tpl|pt_looters,"looters_1", [], "{s4}", "looters_2",[]],
-[party_tpl|pt_looters|plyr,"looters_2", [
-    (player_has_item, "itm_angmar_whip_reward"),
-    (party_can_join_party, "$g_encountered_party","p_main_party"),
-    (str_store_item_name, s4, "itm_angmar_whip_reward")],
-"Bow to the power of the {s4} and serve me!", "looters_2_join", []],
 
-[party_tpl|pt_looters,"looters_2_join", [], "We will obey, Master.", "close_window", [
-    (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-    (remove_party, "$g_encountered_party"),
-    (assign, "$g_leave_encounter", 1)]],
+#[anyone,"start", [(this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),(eq, "$g_encountered_party_template", "pt_forest_bandits")],
+# "Eh? What is it?", "bandit_meet",[]],
+
+[party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
+"Warning: This line should never display.", "hostile_dialog",[
+	(str_store_string, s4, "@Attack!"),
+]],
+
+[party_tpl|pt_forest_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
+"Warning: This line should never display.", "hostile_dialog",[
+	(str_store_string, s4, "@Attack!!"),
+]],
+
+[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
+"Warning: This line should never display.", "hostile_dialog",[
+	(str_store_string, s4, "@Attack!!"),
+]],
+[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(neg|encountered_party_is_attacker)],
+"Warning: This line should never display.", "hostile_dialog",[
+	(str_store_string, s4, "@We are attacked!!"),
+]],
+
+[anyone,"hostile_dialog", [], "{s4}", "close_window",[#(encounter_attack)
+]],
+
+
+
+# [party_tpl|pt_looters|plyr,"looters_2", [
+    # (player_has_item, "itm_angmar_whip_reward"),
+    # (party_can_join_party, "$g_encountered_party","p_main_party"),
+    # (str_store_item_name, s4, "itm_angmar_whip_reward")],
+# "Bow to the power of the {s4} and serve me!", "looters_2_join", []],
+
+# [party_tpl|pt_looters,"looters_2_join", [], "We will obey, Master.", "close_window", [
+    # (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
+    # (remove_party, "$g_encountered_party"),
+    # (assign, "$g_leave_encounter", 1)]],
   
-[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
-"I'm not afraid of you lot. Fight me if you dare!", "close_window", [(encounter_attack)]],
-[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(ge,reg1,4)], 
-"You'll have nothing of mine but cold steel, scum.", "close_window", [(encounter_attack)]],
+#[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
+#"I'm not afraid of you lot. Fight me if you dare!", "close_window", [(encounter_attack)]],
+# [party_tpl|pt_looters|plyr,"looters_2", [], 
+# "You'll have nothing of mine but cold steel, scum.", "close_window", [(call_script,"script_start_current_battle"),(encounter_attack)]],
 #####################################################################
 #TLD STUFFF
-#########################################################
+######################################################	`1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq###
 
 ### COMPANIONS
 [anyone,"start", [(troop_slot_eq,"$g_talk_troop", slot_troop_occupation, slto_player_companion),
@@ -6007,64 +6064,64 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Seneschal
 
-[anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal),
-                    (eq, "$talk_context", tc_siege_won_seneschal),
-                    (str_store_party_name, s1, "$g_encountered_party")],
-"I must congratulate you on your victory, my {lord/lady}. Welcome to {s1}.\
- We, the housekeepers of this castle, are at your service.", "siege_won_seneschal_1",[]],
-[anyone|plyr,"siege_won_seneschal_1", [], "Are you the seneschal?", "siege_won_seneschal_2",[]],
-[anyone,"siege_won_seneschal_2", [], "Indeed I am, my {lord/lady}.\
- I have always served the masters of {s1} to the best of my ability, whichever side they might be on.\
- Thus you may count on my utmost loyalty for as long as you are the {lord/lady} of this place.\
- Now, do you intend to keep me on as the seneschal? I promise you will not be disappointed.", "siege_won_seneschal_3",[]],
-[anyone|plyr,"siege_won_seneschal_3", [], "Very well, you may keep your post for the time being.", "siege_won_seneschal_4",[]],
-[anyone|plyr,"siege_won_seneschal_3", [], "You can stay, but I shall be keeping a close watch on you.", "siege_won_seneschal_4",[]],
-[anyone,"siege_won_seneschal_4", [], "Thank you, my {lord/lady}. If you do not mind my impudence,\
- may I inquire as to what you wish to do with the castle?", "siege_won_seneschal_5",[]],
+# [anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal),
+                    # (eq, "$talk_context", tc_siege_won_seneschal),
+                    # (str_store_party_name, s1, "$g_encountered_party")],
+# "I must congratulate you on your victory, my {lord/lady}. Welcome to {s1}.\
+ # We, the housekeepers of this castle, are at your service.", "siege_won_seneschal_1",[]],
+# [anyone|plyr,"siege_won_seneschal_1", [], "Are you the seneschal?", "siege_won_seneschal_2",[]],
+# [anyone,"siege_won_seneschal_2", [], "Indeed I am, my {lord/lady}.\
+ # I have always served the masters of {s1} to the best of my ability, whichever side they might be on.\
+ # Thus you may count on my utmost loyalty for as long as you are the {lord/lady} of this place.\
+ # Now, do you intend to keep me on as the seneschal? I promise you will not be disappointed.", "siege_won_seneschal_3",[]],
+# [anyone|plyr,"siege_won_seneschal_3", [], "Very well, you may keep your post for the time being.", "siege_won_seneschal_4",[]],
+# [anyone|plyr,"siege_won_seneschal_3", [], "You can stay, but I shall be keeping a close watch on you.", "siege_won_seneschal_4",[]],
+# [anyone,"siege_won_seneschal_4", [], "Thank you, my {lord/lady}. If you do not mind my impudence,\
+ # may I inquire as to what you wish to do with the castle?", "siege_won_seneschal_5",[]],
 
-[anyone|plyr,"siege_won_seneschal_5", [], "I will sell it to another lord.", "siege_won_seneschal_6",[]],
-[anyone|plyr,"siege_won_seneschal_5", [], "I intend to claim it for myself.", "siege_won_seneschal_6",[]],
+# [anyone|plyr,"siege_won_seneschal_5", [], "I will sell it to another lord.", "siege_won_seneschal_6",[]],
+# [anyone|plyr,"siege_won_seneschal_5", [], "I intend to claim it for myself.", "siege_won_seneschal_6",[]],
   
-[anyone|plyr,"siege_won_seneschal_5", [], "I haven't given it much thought. What are my options?", "siege_won_seneschal_list_options",[]],
+# [anyone|plyr,"siege_won_seneschal_5", [], "I haven't given it much thought. What are my options?", "siege_won_seneschal_list_options",[]],
 
-[anyone,"siege_won_seneschal_list_options", [], "According to our laws and traditions,\
- you can do one of several things.\
- First, you could station a garrison here to protect the castle from any immediate counterattacks,\
- then request an audience with some wealthy lord and ask him to make you an offer.\
- It would be worth a tidy sum, believe you me.\
- If you do not wish to sell, then you will have to find yourself a liege lord and protector who would accept homage from you.\
- Without a royal investiture and an army at your back, you would have a difficult time holding on to the castle.\
- Both you and {s1} would become great big targets for any man with a few soldiers and a scrap of ambition.", "siege_won_seneschal_list_options_2",[]],
+# [anyone,"siege_won_seneschal_list_options", [], "According to our laws and traditions,\
+ # you can do one of several things.\
+ # First, you could station a garrison here to protect the castle from any immediate counterattacks,\
+ # then request an audience with some wealthy lord and ask him to make you an offer.\
+ # It would be worth a tidy sum, believe you me.\
+ # If you do not wish to sell, then you will have to find yourself a liege lord and protector who would accept homage from you.\
+ # Without a royal investiture and an army at your back, you would have a difficult time holding on to the castle.\
+ # Both you and {s1} would become great big targets for any man with a few soldiers and a scrap of ambition.", "siege_won_seneschal_list_options_2",[]],
 
-[anyone|plyr,"siege_won_seneschal_list_options_2", [], "What do you mean, a liege lord and protector? I won this place by my own hand, I don't need anyone else!", "siege_won_seneschal_list_options_3",[]],
-[anyone,"siege_won_seneschal_list_options_3", [], "Of course you don't, my {lord/lady}.\
- However, no lord in the land will recognize your claim to the castle unless it is verified by royal decree.\
- They would call {s1} an outlaw stronghold and take it from you at the earliest opportunity.\
- Surely not even you could stand against a whole army.", "siege_won_seneschal_list_options_4",[]],
-[anyone|plyr,"siege_won_seneschal_list_options_4", [], "Hmm. I'll give it some thought.", "siege_won_seneschal_6",[]],
+# [anyone|plyr,"siege_won_seneschal_list_options_2", [], "What do you mean, a liege lord and protector? I won this place by my own hand, I don't need anyone else!", "siege_won_seneschal_list_options_3",[]],
+# [anyone,"siege_won_seneschal_list_options_3", [], "Of course you don't, my {lord/lady}.\
+ # However, no lord in the land will recognize your claim to the castle unless it is verified by royal decree.\
+ # They would call {s1} an outlaw stronghold and take it from you at the earliest opportunity.\
+ # Surely not even you could stand against a whole army.", "siege_won_seneschal_list_options_4",[]],
+# [anyone|plyr,"siege_won_seneschal_list_options_4", [], "Hmm. I'll give it some thought.", "siege_won_seneschal_6",[]],
 
-[anyone,"siege_won_seneschal_6", [], "I am very pleased to hear it, my {lord/lady}.\
- I am only trying to serve you to the best of my ability. Now,\
- if at any time you find you have further need of me,\
- I will be in the great hall arranging a smooth handover of the castle to your forces.", "close_window",[]],
+# [anyone,"siege_won_seneschal_6", [], "I am very pleased to hear it, my {lord/lady}.\
+ # I am only trying to serve you to the best of my ability. Now,\
+ # if at any time you find you have further need of me,\
+ # I will be in the great hall arranging a smooth handover of the castle to your forces.", "close_window",[]],
 
   
-[anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal),(eq,"$g_talk_troop_met",0),(str_store_party_name,s1,"$g_encountered_party")],
-   "Good day, {sir/madam}. I do nott believe I've seen you here before.\
- Let me extend my welcome to you as the seneschal of {s1}.", "seneschal_intro_1",[]],
+# [anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal),(eq,"$g_talk_troop_met",0),(str_store_party_name,s1,"$g_encountered_party")],
+   # "Good day, {sir/madam}. I do nott believe I've seen you here before.\
+ # Let me extend my welcome to you as the seneschal of {s1}.", "seneschal_intro_1",[]],
 
-[anyone|plyr,"seneschal_intro_1", [],  "A pleasure to meet you, {s65}.", "seneschal_intro_1a",[]],
-[anyone,"seneschal_intro_1a", [], "How can I help you?", "seneschal_talk",[]],
-[anyone|plyr,"seneschal_intro_1", [],  "What exactly do you do here?", "seneschal_intro_1b",[]],
-[anyone,"seneschal_intro_1b", [], "Ah, a seneschal's duties are many, good {sire/woman}.\
- For example, I collect the rents from my lord's estates, I manage the castle's storerooms,\
- I deal with the local peasantry, I take care of castle staff, I arrange supplies for the garrison...\
- All mundane matters on this fief are my responsibility, on behalf of my lord.\
- Everything except commanding the soldiers themselves.", "seneschal_talk",[]],
+# [anyone|plyr,"seneschal_intro_1", [],  "A pleasure to meet you, {s65}.", "seneschal_intro_1a",[]],
+# [anyone,"seneschal_intro_1a", [], "How can I help you?", "seneschal_talk",[]],
+# [anyone|plyr,"seneschal_intro_1", [],  "What exactly do you do here?", "seneschal_intro_1b",[]],
+# [anyone,"seneschal_intro_1b", [], "Ah, a seneschal's duties are many, good {sire/woman}.\
+ # For example, I collect the rents from my lord's estates, I manage the castle's storerooms,\
+ # I deal with the local peasantry, I take care of castle staff, I arrange supplies for the garrison...\
+ # All mundane matters on this fief are my responsibility, on behalf of my lord.\
+ # Everything except commanding the soldiers themselves.", "seneschal_talk",[]],
   
-[anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal)], "Good day, Commander.", "seneschal_talk",[]],
+# [anyone,"start", [(troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_seneschal)], "Good day, Commander.", "seneschal_talk",[]],
 
-[anyone,"seneschal_pretalk", [], "Anything else?", "seneschal_talk",[]],
+# [anyone,"seneschal_pretalk", [], "Anything else?", "seneschal_talk",[]],
 
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
@@ -6133,75 +6190,75 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##
 ##### TODO: QUESTS COMMENT OUT END
 
-[anyone|plyr,"seneschal_talk", [(store_relation, ":cur_rel", "fac_player_supporters_faction", "$g_encountered_party_faction"),(ge, ":cur_rel", 0)],
-"I would like to ask you a question...", "seneschal_ask_something",[]],
+# [anyone|plyr,"seneschal_talk", [(store_relation, ":cur_rel", "fac_player_supporters_faction", "$g_encountered_party_faction"),(ge, ":cur_rel", 0)],
+# "I would like to ask you a question...", "seneschal_ask_something",[]],
 
-[anyone|plyr,"seneschal_talk", [(store_relation, ":cur_rel", "fac_player_supporters_faction", "$g_encountered_party_faction"),(ge, ":cur_rel", 0)],
-"I wish to know more about someone...", "seneschal_ask_about_someone",[]],
+# [anyone|plyr,"seneschal_talk", [(store_relation, ":cur_rel", "fac_player_supporters_faction", "$g_encountered_party_faction"),(ge, ":cur_rel", 0)],
+# "I wish to know more about someone...", "seneschal_ask_about_someone",[]],
 
-[anyone,"seneschal_ask_about_someone", [], "Perhaps I may be able to help. Whom did you have in mind?", "seneschal_ask_about_someone_2",[]],
+# [anyone,"seneschal_ask_about_someone", [], "Perhaps I may be able to help. Whom did you have in mind?", "seneschal_ask_about_someone_2",[]],
 
-[anyone|plyr|repeat_for_troops,"seneschal_ask_about_someone_2", [(store_repeat_object, ":troop_no"),
-                                                                  (is_between, ":troop_no", heroes_begin, heroes_end),
-                                                                  (store_troop_faction, ":faction_no", ":troop_no"),
-                                                                  (eq, "$g_encountered_party_faction", ":faction_no"),
-                                                                  (str_store_troop_name, s1, ":troop_no")],
-"{s1}", "seneschal_ask_about_someone_3",[(store_repeat_object, "$hero_requested_to_learn_relations")]],
+# [anyone|plyr|repeat_for_troops,"seneschal_ask_about_someone_2", [(store_repeat_object, ":troop_no"),
+                                                                  # (is_between, ":troop_no", heroes_begin, heroes_end),
+                                                                  # (store_troop_faction, ":faction_no", ":troop_no"),
+                                                                  # (eq, "$g_encountered_party_faction", ":faction_no"),
+                                                                  # (str_store_troop_name, s1, ":troop_no")],
+# "{s1}", "seneschal_ask_about_someone_3",[(store_repeat_object, "$hero_requested_to_learn_relations")]],
 
-[anyone|plyr,"seneschal_ask_about_someone_2", [], "Never mind.", "seneschal_pretalk",[]],
+# [anyone|plyr,"seneschal_ask_about_someone_2", [], "Never mind.", "seneschal_pretalk",[]],
 
-[anyone, "seneschal_ask_about_someone_3", [(call_script, "script_troop_write_family_relations_to_s1", "$hero_requested_to_learn_relations"),
-                                           (call_script, "script_troop_write_owned_centers_to_s2", "$hero_requested_to_learn_relations")],
-"{s2}{s1}", "seneschal_ask_about_someone_4",[(add_troop_note_from_dialog, "$hero_requested_to_learn_relations", 2)]],
+# [anyone, "seneschal_ask_about_someone_3", [(call_script, "script_troop_write_family_relations_to_s1", "$hero_requested_to_learn_relations"),
+                                           # (call_script, "script_troop_write_owned_centers_to_s2", "$hero_requested_to_learn_relations")],
+# "{s2}{s1}", "seneschal_ask_about_someone_4",[(add_troop_note_from_dialog, "$hero_requested_to_learn_relations", 2)]],
   
-[anyone, "seneschal_ask_about_someone_relation", [(call_script, "script_troop_count_number_of_enemy_troops", "$hero_requested_to_learn_relations"),
-                                            (assign, ":no_enemies", reg0),
-                                            (try_begin),
-                                              (gt, ":no_enemies", 1),
-                                              (try_for_range, ":i_enemy", 1, ":no_enemies"),
-                                                (store_add, ":slot_no", slot_troop_enemies_begin, ":i_enemy"),
-                                                (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", ":slot_no"),
-                                                (str_store_troop_name_link, s50, ":cur_enemy"),
-                                                (try_begin),
-                                                  (eq, ":i_enemy", 1),
-                                                  (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", slot_troop_enemy_1),
-                                                  (str_store_troop_name_link, s51, ":cur_enemy"),
-                                                  (str_store_string, s51, "str_s50_and_s51"),
-                                                (else_try),
-                                                  (str_store_string, s51, "str_s50_comma_s51"),
-                                                (try_end),
-                                              (try_end),
-                                            (else_try),
-                                              (eq, ":no_enemies", 1),
-                                              (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", slot_troop_enemy_1),
-                                              (str_store_troop_name_link, s51, ":cur_enemy"),
-                                            (else_try),
-                                              (str_store_string, s51, "str_noone"),
-                                            (try_end),
-                                            (troop_get_type, reg1, "$hero_requested_to_learn_relations")],
-"{reg1?She:He} hates {s51}.", "seneschal_ask_about_someone_4",[(add_troop_note_from_dialog, "$hero_requested_to_learn_relations", 3)]],
-# Ryan END
+# [anyone, "seneschal_ask_about_someone_relation", [(call_script, "script_troop_count_number_of_enemy_troops", "$hero_requested_to_learn_relations"),
+                                            # (assign, ":no_enemies", reg0),
+                                            # (try_begin),
+                                              # (gt, ":no_enemies", 1),
+                                              # (try_for_range, ":i_enemy", 1, ":no_enemies"),
+                                                # (store_add, ":slot_no", slot_troop_enemies_begin, ":i_enemy"),
+                                                # (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", ":slot_no"),
+                                                # (str_store_troop_name_link, s50, ":cur_enemy"),
+                                                # (try_begin),
+                                                  # (eq, ":i_enemy", 1),
+                                                  # (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", slot_troop_enemy_1),
+                                                  # (str_store_troop_name_link, s51, ":cur_enemy"),
+                                                  # (str_store_string, s51, "str_s50_and_s51"),
+                                                # (else_try),
+                                                  # (str_store_string, s51, "str_s50_comma_s51"),
+                                                # (try_end),
+                                              # (try_end),
+                                            # (else_try),
+                                              # (eq, ":no_enemies", 1),
+                                              # (troop_get_slot, ":cur_enemy", "$hero_requested_to_learn_relations", slot_troop_enemy_1),
+                                              # (str_store_troop_name_link, s51, ":cur_enemy"),
+                                            # (else_try),
+                                              # (str_store_string, s51, "str_noone"),
+                                            # (try_end),
+                                            # (troop_get_type, reg1, "$hero_requested_to_learn_relations")],
+# "{reg1?She:He} hates {s51}.", "seneschal_ask_about_someone_4",[(add_troop_note_from_dialog, "$hero_requested_to_learn_relations", 3)]],
+# # Ryan END
 
-[anyone|plyr,"seneschal_ask_about_someone_4", [], "Where does {s1} stand with others?.", "seneschal_ask_about_someone_relation",[]],
-[anyone|plyr,"seneschal_ask_about_someone_4", [], "My thanks, that was helpful.", "seneschal_pretalk",[]],
-[anyone|plyr,"seneschal_talk", [], "I must take my leave of you now. Farewell.", "close_window",[]],
+# [anyone|plyr,"seneschal_ask_about_someone_4", [], "Where does {s1} stand with others?.", "seneschal_ask_about_someone_relation",[]],
+# [anyone|plyr,"seneschal_ask_about_someone_4", [], "My thanks, that was helpful.", "seneschal_pretalk",[]],
+# [anyone|plyr,"seneschal_talk", [], "I must take my leave of you now. Farewell.", "close_window",[]],
 
 
-[anyone,"seneschal_ask_something", [], "I'll do what I can to help, of course. What did you wish to ask?", "seneschal_ask_something_2",[]],
-[anyone|plyr,"seneschal_ask_something_2", [], "Perhaps you know where to find someone...", "seneschal_ask_location",[]],
-[anyone,"seneschal_ask_location", [], "Well, a man in my position does hear a lot of things. Of whom were you thinking?", "seneschal_ask_location_2",[]],
+# [anyone,"seneschal_ask_something", [], "I'll do what I can to help, of course. What did you wish to ask?", "seneschal_ask_something_2",[]],
+# [anyone|plyr,"seneschal_ask_something_2", [], "Perhaps you know where to find someone...", "seneschal_ask_location",[]],
+# [anyone,"seneschal_ask_location", [], "Well, a man in my position does hear a lot of things. Of whom were you thinking?", "seneschal_ask_location_2",[]],
 
-[anyone|plyr|repeat_for_troops,"seneschal_ask_location_2", [(store_repeat_object, ":troop_no"),
-                                                              (is_between, ":troop_no", heroes_begin, heroes_end),
-                                                              (store_troop_faction, ":faction_no", ":troop_no"),
-                                                              (eq, "$g_encountered_party_faction", ":faction_no"),
-                                                              (str_store_troop_name, s1, ":troop_no")],
-"{s1}", "seneschal_ask_location_3",[(store_repeat_object, "$hero_requested_to_learn_location")]],
+# [anyone|plyr|repeat_for_troops,"seneschal_ask_location_2", [(store_repeat_object, ":troop_no"),
+                                                              # (is_between, ":troop_no", heroes_begin, heroes_end),
+                                                              # (store_troop_faction, ":faction_no", ":troop_no"),
+                                                              # (eq, "$g_encountered_party_faction", ":faction_no"),
+                                                              # (str_store_troop_name, s1, ":troop_no")],
+# "{s1}", "seneschal_ask_location_3",[(store_repeat_object, "$hero_requested_to_learn_location")]],
 
-[anyone|plyr,"seneschal_ask_location_2", [], "Never mind.", "seneschal_pretalk",[]],
+# [anyone|plyr,"seneschal_ask_location_2", [], "Never mind.", "seneschal_pretalk",[]],
 
-[anyone,"seneschal_ask_location_3", [(call_script, "script_get_information_about_troops_position", "$hero_requested_to_learn_location", 0)],
-"{s1}", "seneschal_pretalk",[]],
+# [anyone,"seneschal_ask_location_3", [(call_script, "script_get_information_about_troops_position", "$hero_requested_to_learn_location", 0)],
+# "{s1}", "seneschal_pretalk",[]],
 
 
 
@@ -7218,32 +7275,34 @@ It's an important matter, so please make haste.", "caravan_help1",[
   
 
 #Deserters
-[party_tpl|pt_deserters, "start", [(eq,"$talk_context",tc_party_encounter),
-                                   (party_get_slot,":protected_until_hours", "$g_encountered_party",slot_party_ignore_player_until),
-                                   (store_current_hours,":cur_hours"),
-                                   (store_sub, ":protection_remaining",":protected_until_hours",":cur_hours"),
-                                   (gt, ":protection_remaining", 0)], 
-"What do you want? You want to pay us some more money?", "deserter_paid_talk",[]],
-[anyone|plyr,"deserter_paid_talk", [], "Sorry to trouble you. I'll be on my way now.", "deserter_paid_talk_2a",[]],
-[anyone,"deserter_paid_talk_2a", [], "Yeah. Stop fooling around and go make some money.\
- I want to see that purse full next time I see you.", "close_window",[(assign, "$g_leave_encounter",1)]],
-[anyone|plyr,"deserter_paid_talk", [], "No. It's your turn to pay me this time.", "deserter_paid_talk_2b",[]],
-[anyone,"deserter_paid_talk_2b", [], 
-"What nonsense are you talking about? You want trouble? You got it.", "close_window",[
-       (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,0),
-       (party_ignore_player, "$g_encountered_party", 0)]],
+# [party_tpl|pt_deserters, "start", [(eq,"$talk_context",tc_party_encounter),
+                                   # (party_get_slot,":protected_until_hours", "$g_encountered_party",slot_party_ignore_player_until),
+                                   # (store_current_hours,":cur_hours"),
+                                   # (store_sub, ":protection_remaining",":protected_until_hours",":cur_hours"),
+                                   # (gt, ":protection_remaining", 0)], 
+# "What do you want? You want to pay us some more money?", "deserter_paid_talk",[]],
+# [anyone|plyr,"deserter_paid_talk", [], "Sorry to trouble you. I'll be on my way now.", "deserter_paid_talk_2a",[]],
+# [anyone,"deserter_paid_talk_2a", [], "Yeah. Stop fooling around and go make some money.\
+ # I want to see that purse full next time I see you.", "close_window",[(assign, "$g_leave_encounter",1)]],
+# [anyone|plyr,"deserter_paid_talk", [], "No. It's your turn to pay me this time.", "deserter_paid_talk_2b",[]],
+# [anyone,"deserter_paid_talk_2b", [], 
+# "What nonsense are you talking about? You want trouble? You got it.", "close_window",[
+       # (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,0),
+       # (party_ignore_player, "$g_encountered_party", 0)]],
   
-[party_tpl|pt_deserters,"start", [(eq,"$talk_context",tc_party_encounter)], 
-"We are the free brothers.\
- We will fight only for ourselves from now on.\
- Now give us your gold or taste our steel.", "deserter_talk",[]],
+# [party_tpl|pt_deserters,"start", [(eq,"$talk_context",tc_party_encounter)], 
+# "We are the free brothers.\
+ # We will fight only for ourselves from now on.\
+ # Now give us your gold or taste our steel.", "deserter_talk",[]],
+ 
+ 
 ##[anyone|plyr,"deserter_talk", [(check_quest_active, "qst_bring_back_deserters"),
 ##                                 (quest_get_slot, ":target_deserter_troop", "qst_bring_back_deserters", slot_quest_target_troop),
 ##                                 (party_count_members_of_type, ":num_deserters", "$g_encountered_party",":target_deserter_troop"),
 ##                                 (gt, ":num_deserters", 1)],
 ##   "If you surrender to me now, you will rejoin the army of your kingdom without being punished. Otherwise you'll get a taste of my sword.", "deserter_join_as_prisoner",[]],
-[anyone|plyr,"deserter_talk", [], "When I'm done with you, you'll regret ever leaving your army.", "close_window",[]],
-[anyone|plyr,"deserter_talk", [], "There's no need to fight. I am ready to pay for free passage.", "deserter_barter",[]],
+#[anyone|plyr,"deserter_talk", [], "When I'm done with you, you'll regret ever leaving your army.", "close_window",[]],
+#[anyone|plyr,"deserter_talk", [], "There's no need to fight. I am ready to pay for free passage.", "deserter_barter",[]],
 
 ##[anyone,"deserter_join_as_prisoner", [(call_script, "script_party_calculate_strength", "p_main_party"),
 ##                                        (assign, ":player_strength", reg0),
@@ -7255,19 +7314,19 @@ It's an important matter, so please make haste.", "caravan_help1",[
 ##   "All right we join you then.", "close_window",[(assign, "$g_enemy_surrenders", 1)]],
 ##[anyone,"deserter_join_as_prisoner", [], "TODO: We will never surrender!", "close_window",[(encounter_attack)]],
 
-[anyone,"deserter_barter", [], "Good. You are clever. You pay us {reg5} RPs. Then you can go.", "deserter_barter_2",[(assign,"$deserter_tribute",150),(assign,reg5,"$deserter_tribute")]],
-[anyone|plyr,"deserter_barter_2", [(store_troop_gold,reg2),(ge,reg2,"$deserter_tribute"),(assign,reg5,"$deserter_tribute")],
-"All right here's your {reg5} RPs.", "deserter_barter_3a",[(troop_remove_gold, "trp_player","$deserter_tribute")]],
-[anyone|plyr,"deserter_barter_2", [], "I don't have that much money with me", "deserter_barter_3b",[]],
-[anyone,"deserter_barter_3b", [], "Too bad. Then we'll have to sell you to the slavers.", "close_window",[]],
+# [anyone,"deserter_barter", [], "Good. You are clever. You pay us {reg5} RPs. Then you can go.", "deserter_barter_2",[(assign,"$deserter_tribute",150),(assign,reg5,"$deserter_tribute")]],
+# [anyone|plyr,"deserter_barter_2", [(store_troop_gold,reg2),(ge,reg2,"$deserter_tribute"),(assign,reg5,"$deserter_tribute")],
+# "All right here's your {reg5} RPs.", "deserter_barter_3a",[(troop_remove_gold, "trp_player","$deserter_tribute")]],
+# [anyone|plyr,"deserter_barter_2", [], "I don't have that much money with me", "deserter_barter_3b",[]],
+# [anyone,"deserter_barter_3b", [], "Too bad. Then we'll have to sell you to the slavers.", "close_window",[]],
 
-[anyone,"deserter_barter_3a", [], 
-"Heh. That wasn't difficult now was it? All right. Go now.", "close_window",[
-    (store_current_hours,":protected_until"),
-    (val_add, ":protected_until", 72),
-    (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,":protected_until"),
-    (party_ignore_player, "$g_encountered_party", 72),
-    (assign, "$g_leave_encounter",1)]],
+# [anyone,"deserter_barter_3a", [], 
+# "Heh. That wasn't difficult now was it? All right. Go now.", "close_window",[
+    # (store_current_hours,":protected_until"),
+    # (val_add, ":protected_until", 72),
+    # (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,":protected_until"),
+    # (party_ignore_player, "$g_encountered_party", 72),
+    # (assign, "$g_leave_encounter",1)]],
 
 ##### TODO: QUESTS COMMENT OUT END
 
@@ -10102,63 +10161,37 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 	# (try_end)]],
 
 # Ryan BEGIN
-[party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-"Warning: This line should never display.", "bandit_introduce",[]],
-[party_tpl|pt_forest_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-"Warning: This line should never display.", "bandit_introduce",[]],
-[anyone,"bandit_introduce", [
-      (store_random_in_range, ":rand", 11, 15),
-        (str_store_string, s11, "@I can smell a fat purse a mile away. Methinks yours could do with some lightening, eh?"),
-        (str_store_string, s12, "@Why, it be another traveller, chance met upon the road! I should warn you, country here's a mite dangerous for a good {fellow/woman} like you. But for a small donation my boys and I'll make sure you get rightways to your destination, eh?"),
-        (str_store_string, s13, "@Well well, look at this! You'd best start coughing up some silver, friend, or me and my boys'll have to break you."),
-		(str_store_string, s14, "@There's a toll for passin' through this land, payable to us, so if you don't mind we'll just be collectin' our due from your purse..."),
-        (str_store_string_reg, s5, ":rand"),], 
-"{s5}", "bandit_talk",[(play_sound,"snd_encounter_bandits")]],
-[anyone|plyr,"bandit_talk", [], "I'll give you nothing but cold steel, you scum!", "close_window",[[encounter_attack]]],
-[anyone|plyr,"bandit_talk", [], "There's no need to fight. I can pay for free passage.", "bandit_barter",[]],
-[anyone,"bandit_barter",
-   [(store_relation, ":bandit_relation", "fac_player_faction", "$g_encountered_party_faction"),
-    (ge, ":bandit_relation", -50),
-    (store_mul, "$bandit_tribute", ":bandit_relation", ":bandit_relation"),
-    (val_div, "$bandit_tribute", 70),
-    (val_add, "$bandit_tribute", 100),
-    (val_mul, "$bandit_tribute", 10),
-    (assign, reg5, "$bandit_tribute")], 
-"Silver without blood, that's our favourite kind. Pay us {reg5} RPs and we'll let you be on your way.", "bandit_barter_2",[]],
-[anyone|plyr,"bandit_barter_2", [[store_troop_gold,reg(2)],[ge,reg(2),"$bandit_tribute"],[assign,reg(5),"$bandit_tribute"]],
-"Very well, take it.", "bandit_barter_3a",[[troop_remove_gold, "trp_player","$bandit_tribute"]]],
-[anyone|plyr,"bandit_barter_2", [], "I don't have that much money with me", "bandit_barter_3b",[]],
-[anyone,"bandit_barter_3b", [], "That's too bad. I guess we'll just have to sell you into slavery. Take {him/her}, lads!", "close_window",[[encounter_attack]]],
-[anyone,"bandit_barter", [],
-"Hey, I've heard of you! You slaughter us freebooters like dogs, and now you expect us to let you go for a few stinking coins?\
- Forget it. You gave us no quarter, and you'll get none from us.", "close_window",[]],
 
-[anyone,"bandit_barter_3a", [], 
-"Heh, that wasn't so hard, was it? All right, we'll let you go now. Be off.", "close_window",[
-    (store_current_hours,":protected_until"),
-    (val_add, ":protected_until", 72),
-    (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,":protected_until"),
-    (party_ignore_player, "$g_encountered_party", 72),
-    (assign, "$g_leave_encounter",1)]],
+#[anyone|plyr,"bandit_talk", [], "TEST", "close_window",[[encounter_attack]]],
+#[anyone|plyr,"bandit_talk", [], "I'll give you nothing but cold steel, you scum!", "close_window",[[encounter_attack]]],
+#[anyone|plyr,"bandit_talk", [], "There's no need to fight. I can pay for free passage.", "bandit_barter",[]],
+# [anyone,"bandit_barter",
+   # [(store_relation, ":bandit_relation", "fac_player_faction", "$g_encountered_party_faction"),
+    # (ge, ":bandit_relation", -50),
+    # (store_mul, "$bandit_tribute", ":bandit_relation", ":bandit_relation"),
+    # (val_div, "$bandit_tribute", 70),
+    # (val_add, "$bandit_tribute", 100),
+    # (val_mul, "$bandit_tribute", 10),
+    # (assign, reg5, "$bandit_tribute")], 
+# "Silver without blood, that's our favourite kind. Pay us {reg5} RPs and we'll let you be on your way.", "bandit_barter_2",[]],
+# [anyone|plyr,"bandit_barter_2", [[store_troop_gold,reg(2)],[ge,reg(2),"$bandit_tribute"],[assign,reg(5),"$bandit_tribute"]],
+# "Very well, take it.", "bandit_barter_3a",[[troop_remove_gold, "trp_player","$bandit_tribute"]]],
+# [anyone|plyr,"bandit_barter_2", [], "I don't have that much money with me", "bandit_barter_3b",[]],
+# [anyone,"bandit_barter_3b", [], "That's too bad. I guess we'll just have to sell you into slavery. Take {him/her}, lads!", "close_window",[[encounter_attack]]],
+# [anyone,"bandit_barter", [],
+# "Hey, I've heard of you! You slaughter us freebooters like dogs, and now you expect us to let you go for a few stinking coins?\
+ # Forget it. You gave us no quarter, and you'll get none from us.", "close_window",[]],
+
+# [anyone,"bandit_barter_3a", [], 
+# "Heh, that wasn't so hard, was it? All right, we'll let you go now. Be off.", "close_window",[
+    # (store_current_hours,":protected_until"),
+    # (val_add, ":protected_until", 72),
+    # (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until,":protected_until"),
+    # (party_ignore_player, "$g_encountered_party", 72),
+    # (assign, "$g_leave_encounter",1)]],
   
 
-[anyone,"start", [(this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),(eq, "$g_encountered_party_template", "pt_forest_bandits")],
-"Eh? What is it?", "bandit_meet",[]],
 
-[anyone|plyr,"bandit_meet", [], 
-"Your luck has run out, wretch. Prepare to die!", "bandit_attack",[
-    (party_set_slot,"$g_encountered_party",slot_party_ignore_player_until, 0)]],
-  
-[anyone,"bandit_attack", [
-      (store_random_in_range, ":rand", 11, 15),
-        (str_store_string, s11, "@Another fool come to throw {him/her}self on my weapon, eh? Fine, let's fight!"),
-        (str_store_string, s12, "@We're not afraid of you, {sirrah/wench}. Time to bust some heads!"),
-        (str_store_string, s13, "@That was a mistake. Now I'm going to have to make your death long and painful."),
-        (str_store_string, s14, "@Brave words. Let's see you back them up with deeds, cur!"),
-        (str_store_string_reg, s5, ":rand")], 
-"{s5}", "close_window",[]],
-
-[anyone|plyr,"bandit_meet", [], "Never mind, I have no business with you.", "close_window",[(assign, "$g_leave_encounter", 1)]],
 # Ryan END
   
 #Quest dialogs

@@ -1139,36 +1139,12 @@ mission_templates = [
      (0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
 
-     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 5th entry point, for WARGS
+     (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 5th entry point, for WARGS
+     (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 6th entry point, for WARGS
+     (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry point, for WARGS
+     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry point, for WARGS
      ],
     formations_triggers + AI_triggers +
     common_deathcam_triggers+

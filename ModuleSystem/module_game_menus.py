@@ -3571,24 +3571,30 @@ game_menus = [
 ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
-    "{s2}^^You have {reg10} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.",
+    "^{s2}^You have {reg10} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
     "none",
     [
 		
+		(try_begin), 
+			(eq, "$prebattle_talk_done",1),
+			(assign, "$prebattle_talk_done",0),
+			(call_script,"script_start_current_battle"),
+		(try_end),
+		
+		# get region + landmark (mtarini)
 		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
 		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region",),
 		(str_store_string,s3,reg2),
 		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
 
-
-		
         (assign, "$g_enemy_party", "$g_encountered_party"),
         (assign, "$g_ally_party", -1),
         (call_script, "script_encounter_calculate_fit"),
         (try_begin),
+		  # first turn...
           (eq, "$new_encounter", 1),
-          (assign, "$new_encounter", 0),
+          
           (assign, "$g_encounter_is_in_village", 0),
           (assign, "$g_encounter_type", 0),
           (try_begin),
@@ -3621,6 +3627,10 @@ game_menus = [
           (try_begin),
             (gt, "$g_encountered_party_relation", 0),
             (assign, "$encountered_party_friendly", 1),
+			# talk with non-hostile parties only
+			(assign, "$new_encounter", 0),
+			(assign, "$talk_context", tc_party_encounter),
+			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
           (try_end),
           (try_begin),
             (lt, "$g_encountered_party_relation", 0),
@@ -3630,13 +3640,11 @@ game_menus = [
               (assign, "$cant_leave_encounter", 1),
             (try_end),
           (try_end),
-          (assign, "$talk_context", tc_party_encounter),
-          (call_script, "script_setup_party_meeting", "$g_encountered_party"),
         (else_try), 
-			#second or more turn
-#          (try_begin),
-#            (call_script, "script_encounter_calculate_morale_change"),
-#          (try_end),
+		  #second or more wave
+		  #          (try_begin),
+		  #            (call_script, "script_encounter_calculate_morale_change"),
+		  #          (try_end),
           (try_begin),
             # We can leave battle only after some troops have been killed. 
             (eq, "$cant_leave_encounter", 1),
@@ -3663,16 +3671,19 @@ game_menus = [
           (party_is_active,"$g_encountered_party"),
           (str_store_party_name, s1,"$g_encountered_party"),
           (try_begin),
-            (eq, "$g_encounter_type", 0),
-            (str_store_string, s2,"@You have encountered {s1}."),
+			(eq, "$new_encounter", 1),
+			(eq, "$encountered_party_hostile", 1),
+			(encountered_party_is_attacker),
+            (str_store_string, s2,"@A group of {s1} will be upon you very soon."),
+			#(str_store_string, s2,"@A group of {s1}  are {reg10?riding:marching} toward you."),
           (else_try),
-            (eq, "$g_encounter_type", enctype_fighting_against_village_raid),
-            (str_store_party_name, s3, "$g_encounter_is_in_village"),
-            (str_store_string, s2,"@You have engaged {s1} while they were raiding {s3}."),
+			(eq, "$new_encounter", 1),
+			(eq, "$encountered_party_hostile", 1),
+			(neg|encountered_party_is_attacker),
+            (str_store_string, s2,"@You are attacking a group of {s1}."),
           (else_try),
-            (eq, "$g_encounter_type", enctype_catched_during_village_raid),
-            (str_store_party_name, s3, "$g_encounter_is_in_village"),
-            (str_store_string, s2,"@You were caught by {s1} while your forces were raiding {s3}."),
+			(eq, "$new_encounter", 0),
+            (str_store_string, s2,"@The battle against the group of {s1} continues."),
           (try_end),
         (try_end),
 		
@@ -3696,7 +3707,7 @@ game_menus = [
           (assign, "$g_next_menu", -1),
           (jump_to_menu, "mnu_total_victory"),
         (else_try),
-#          (eq, "$encountered_party_hostile", 1),
+		  #     (eq, "$encountered_party_hostile", 1),
           (call_script, "script_party_count_members_with_full_health","p_main_party"),
           (assign, reg3, reg0),
           (assign, ":friends_finished",0),
@@ -3710,8 +3721,9 @@ game_menus = [
             (le, "$g_friend_fit_for_battle",0),
             (assign,  ":friends_finished",1),
           (try_end),
-          (this_or_next|eq,  ":friends_finished",1),
-          (eq,"$g_player_surrenders",1),
+		  
+          (this_or_next|eq,"$g_player_surrenders",1),
+          (eq,  ":friends_finished",1),
 		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
           (assign, "$g_next_menu", "mnu_tld_player_defeated"),
           (jump_to_menu, "mnu_total_defeat"),
@@ -3729,73 +3741,74 @@ game_menus = [
           (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"        ),
 		  (set_background_mesh, "mesh_draw_wild_troll"),
         (try_end),
+		
+		
+		# set reg21, to change the options string in the menu
+		(try_begin), (encountered_party_is_attacker),
+			(assign, reg21, 0),
+		(else_try),
+			(assign, reg21, 1),
+		(try_end),
     ],
 	
     [
       ("encounter_attack",[
           (eq, "$encountered_party_friendly", 0),
-          (neg|troop_is_wounded, "trp_player"),
+          # (neg|troop_is_wounded, "trp_player"), a test: what happes if I let player partecipate?
 ##          (store_troop_health,reg(5)),
 ##          (ge,reg(5),5),
           ],
-                            "Charge the enemy.",[
-                                (assign, "$g_battle_result", 0),
-                                (assign, "$g_engaged_enemy", 1),
-                                (call_script, "script_calculate_renown_value"),
-                                (call_script, "script_calculate_battle_advantage"),
-                                (call_script, "script_calculate_battleside_races"),
-                                (set_battle_advantage, reg0),
-                                (set_party_battle_mode),
-                                (try_begin),
-                                  # (eq, "$g_encounter_type", enctype_fighting_against_village_raid),
-                                  # (assign, "$g_village_raid_evil", 0),
-                                  # (set_jump_mission,"mt_village_raid"),
-                                  # (party_get_slot, ":scene_to_use", "$g_encounter_is_in_village", slot_castle_exterior),
-                                  # (jump_to_scene, ":scene_to_use"),
-                                # (else_try),
-                                  # (eq, "$g_encounter_type", enctype_catched_during_village_raid),
-                                  # (assign, "$g_village_raid_evil", 0),
-                                  # (set_jump_mission,"mt_village_raid"),
-                                  # (party_get_slot, ":scene_to_use", "$g_encounter_is_in_village", slot_castle_exterior),
-                                  # (jump_to_scene, ":scene_to_use"),
-                                # (else_try),
-                                  (set_jump_mission,"mt_lead_charge"),
-                                  (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
-                                (try_end),
-                                (assign, "$g_next_menu", "mnu_simple_encounter"),
-                                (jump_to_menu, "mnu_battle_debrief"),
-                                (change_screen_mission),
-                                ]),
+         "{reg21?Charge_them:Prepare_to_face_them}.",[
+			(try_begin),
+				# talk with hostile troops after you have chose to attack
+				(eq, "$new_encounter", 1),
+				(assign, "$new_encounter", 0),
+				(assign, "$prebattle_talk_done",1),
+				(assign, "$talk_context", tc_party_encounter),
+				(call_script, "script_setup_party_meeting", "$g_encountered_party"),
+			(else_try),
+				(call_script,"script_start_current_battle"),
+			(try_end),
+
+      ]),
       ("encounter_order_attack",[
           (eq, "$encountered_party_friendly", 0),
           (call_script, "script_party_count_members_with_full_health", "p_main_party"),(ge, reg(0), 4),
           ],
-           "Order your troops to attack without you.",[(jump_to_menu,"mnu_order_attack_begin"),
+           "Order your troops to {reg21?attack:face_them} without you.",[
+		     (assign, "$new_encounter", 0),
+		     (jump_to_menu,"mnu_order_attack_begin"),
                                                             #(simulate_battle,3)
-                                                            ]),
+		]),
+      ("debug_leave",[
+          (eq,"$cant_leave_encounter", 1),
+		  (eq, "$cheat_mode", 1),
+          ],"DEBUG: avoid this battle.",[ (leave_encounter),(change_screen_return)]),
+
+                                                            
       ("encounter_leave",[
           (eq,"$cant_leave_encounter", 0),
           ],"Leave.",[
 
 ###NPC companion changes begin
-              (try_begin),
-                  (eq, "$encountered_party_friendly", 0),
-                  (encountered_party_is_attacker),
-                  (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
-              (try_end),
+              #(try_begin),
+              #    (eq, "$encountered_party_friendly", 0),
+              #    (encountered_party_is_attacker),
+              #    (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
+              #(try_end),
 ###NPC companion changes end
 #Troop commentary changes begin
-              (try_begin),
-                  (eq, "$encountered_party_friendly", 0),
-                  (encountered_party_is_attacker),
-                  (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
-                  (try_for_range, ":stack_no", 0, ":num_stacks"),
-                    (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-                    (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
-                    (store_troop_faction, ":victorious_faction", ":stack_troop"),
-                    (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
-                  (try_end),
-              (try_end),
+              # (try_begin),
+                  # (eq, "$encountered_party_friendly", 0),
+                  # (encountered_party_is_attacker),
+                  # (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
+                  # (try_for_range, ":stack_no", 0, ":num_stacks"),
+                    # (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
+                    # (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+                    # (store_troop_faction, ":victorious_faction", ":stack_troop"),
+                    # (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
+                  # (try_end),
+              # (try_end),
 #Troop commentary changes end
           	(leave_encounter),(change_screen_return)]),
       ("encounter_retreat",[
@@ -3815,9 +3828,11 @@ game_menus = [
          (assign, ":player_count", reg0),
          (ge, ":player_count", ":enemy_party_strength"),
          ],"Pull back, leaving some soldiers behind to cover your retreat.",[(jump_to_menu, "mnu_encounter_retreat_confirm"),]),
+		 
       ("encounter_surrender",[
          (eq,"$cant_leave_encounter", 1),
-          ],"Surrender.",[(assign,"$g_player_surrenders",1)]),
+		 (eq, "$cheat_mode", 1),
+          ],"DEBUG: surrender.",[(assign,"$g_player_surrenders",1)]),
 
 	  ("encounter_cheat_heal",[
          (eq, "$cheat_mode",1),
@@ -4160,6 +4175,7 @@ game_menus = [
 		(try_end),
 	 (try_end),
 	 
+	 (str_clear, s11),
      (try_begin),
        (eq, "$g_battle_result", 1),
        (eq, "$g_enemy_fit_for_battle", 0),

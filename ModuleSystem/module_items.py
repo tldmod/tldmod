@@ -1215,7 +1215,7 @@ items =[
 ["dale_bow_reward","Bow_of_Bard",[("mirkwood_bow",0),("mirkwood_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(67)|spd_rtng(95)|thrust_damage(30,pierce),imodbits_bow],
 ["explosive_reward","Isengard_Mine",[("reward_isenmine",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_cutting_spear|itcf_carry_axe_back,2000,weight(4.5)|difficulty(0)|spd_rtng(94)|weapon_length(166)|swing_damage(33,pierce)|thrust_damage(40,pierce),imodbits_polearm],
-["crebain_reward","Isengard_Crebain",[("reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
+["crebain_reward","Isengard_Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,2755,weight(2.5)|head_armor(60)|difficulty(0),0],

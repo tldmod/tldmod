@@ -1611,7 +1611,7 @@ center_list = [
 	[-1, "trp_smith_wosgiliath", "trp_town_11_horse_merchant","trp_no_troop" , "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
 	["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 0, tld_siegable_normal),
 ("p_town_henneth_annun", ["scn_henneth_annun_center", "scn_henneth_annun_castle", -1, -1, -1, -1, "mesh_town_henneth_annun"],
-	[-1, "trp_smith_hannun", "trp_no_troop", "trp_elder_henneth", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_ranger_of_ithilien","trp_ranger_of_ithilien","trp_veteran_ranger_of_ithilien","trp_master_ranger_of_ithilien"], 
+	["trp_barman_hannun", "trp_smith_hannun", "trp_no_troop", "trp_elder_henneth", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_ranger_of_ithilien","trp_ranger_of_ithilien","trp_veteran_ranger_of_ithilien","trp_master_ranger_of_ithilien"], 
 	["icon_mfc_gondor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_never),
 ("p_town_cair_andros", ["scn_cair_andros_center", "scn_cair_andros_castle", -1, -1, -1, "scn_cair_andros_siege", "mesh_town_cair_andros"],
 	[-1, "trp_smith_candros", "trp_no_troop", "trp_elder_cairandros", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
