@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1421
+ 1423
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2469,13 +2469,13 @@ spr_pelargir 0 0 pelargir bo_pelargir 0
 spr_pel_lighthouse 0 0 pel_lighthouse 0 0
 
 
-spr_gondor_tower_b 0 0 gondor_tower_b bo_gondor_tower_b 0
+spr_gondor_tower_b_vp_E 0 0 gondor_tower_b_color 0 0
 
 
 spr_gondor_tower_b_vp 0 0 gondor_tower_b_color bo_gondor_tower_b 0
 
 
-spr_gondor_ship 0 0 gondor_ship bo_gondor_ship 0
+spr_gondor_ship_vp_E 0 0 gondor_ship_color 0 0
 
 
 spr_gondor_ship_vp 0 0 gondor_ship_color bo_gondor_ship 0
@@ -2487,16 +2487,19 @@ spr_gondor_ship_oars 0 0 gondor_ship_oars 0 0
 spr_gondor_building_a_vp 0 0 gondor_building_a_color bo_gondor_building_a 0
 
 
-spr_gondor_building_b 0 0 gondor_building_b bo_gondor_building_b 0
+spr_gondor_building_b_vp_E 0 0 gondor_building_b_color 0 0
 
 
 spr_gondor_building_b_vp 0 0 gondor_building_b_color bo_gondor_building_b 0
 
 
-spr_gondor_building_c 0 0 gondor_building_c bo_gondor_building_c 0
+spr_gondor_building_c_vp_E 0 0 gondor_building_c_color 0 0
 
 
 spr_gondor_building_c_vp 0 0 gondor_building_c_color bo_gondor_building_c 0
+
+
+spr_gondor_building_a_vp_E 0 0 gondor_building_a_color 0 0
 
 
 spr_orc_cage 0 0 orc_cage bo_orc_cage 0
@@ -4346,5 +4349,8 @@ spr_handsign 0 0 handsign bo_handsign 0
 
 
 spr_gondor_mt_wall_E 0 0 mt_wall 0 0
+
+
+spr_gondor_building_a_vp_E 0 0 gondor_building_a_color 0 0
 
 

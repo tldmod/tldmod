@@ -1381,16 +1381,18 @@ scene_props = [
 ("pelargir",0,"pelargir","bo_pelargir", []),
 ("pel_lighthouse",0,"pel_lighthouse","0", []),
 ## octo gondor props
-("gondor_tower_b",0,"gondor_tower_b","bo_gondor_tower_b", []),
+("gondor_tower_b_vp_E",0,"gondor_tower_b_color","0", []),
 ("gondor_tower_b_vp",0,"gondor_tower_b_color","bo_gondor_tower_b", []),
-("gondor_ship",0,"gondor_ship","bo_gondor_ship", []),
+("gondor_ship_vp_E",0,"gondor_ship_color","0", []),
 ("gondor_ship_vp",0,"gondor_ship_color","bo_gondor_ship", []),
 ("gondor_ship_oars",0,"gondor_ship_oars","0", []),
 ("gondor_building_a_vp",0,"gondor_building_a_color","bo_gondor_building_a", []),
-("gondor_building_b",0,"gondor_building_b","bo_gondor_building_b", []),
+("gondor_building_b_vp_E",0,"gondor_building_b_color","0", []),
 ("gondor_building_b_vp",0,"gondor_building_b_color","bo_gondor_building_b", []),
-("gondor_building_c",0,"gondor_building_c","bo_gondor_building_c", []),
+("gondor_building_c_vp_E",0,"gondor_building_c_color","0", []),
 ("gondor_building_c_vp",0,"gondor_building_c_color","bo_gondor_building_c", []),
+
+("gondor_building_a_vp_E",0,"gondor_building_a_color","0", []),
 
 
 ### Orc contrievances by Llew
@@ -2178,5 +2180,5 @@ scene_props = [
 
 # empty collision meshes  
 ("gondor_mt_wall_E",0,"mt_wall", "0", []),
-
+("gondor_building_a_vp_E",0,"gondor_building_a_color","0", []),
 ]

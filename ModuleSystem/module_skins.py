@@ -457,13 +457,13 @@ skins = [
     ["beard_dwarf_1","beard_dwarf_2", "beard_dwarf_3", "beard_dwarf_4","beard_dwarf_5","beard_dwarf_6","beard_dwarf_7","beard_dwarf_8",], #beard meshes ,
     ["hair_blonde_dwarf"], #hair textures
     ["dwarf_beard_blonde"], #beard_materials
-    [("manface_young"   ,0xffcbe0e0,["hair_blonde"],[0xffb04717, 0xffb04717, 0xff502a19]),
-     ("manface_young_2" ,0xffdfefe1,["hair_blonde"],[0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("manface_7"       ,0xffd0e0e0,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("manface_midage"  ,0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("manface_midage_2",0xffdceded,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
-     ("manface_rugged"  ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
-     ], #man_face_textures,
+    [("manface_young"   ,0xffd0e0e0,["hair_blonde"],[0xffb04717, 0xffb04717, 0xff502a19]),
+     ("manface_young_2" ,0xffcbe0e0,["hair_blonde"],[0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
+     ("manface_7"       ,0xffc0c8c8,["hair_blonde"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("manface_midage"  ,0xffdfefe1,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
+     ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
+     ("manface_rugged"  ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
+	], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
     "skel_dwarf", 1.0,
     psys_game_blood,psys_game_blood_2,
