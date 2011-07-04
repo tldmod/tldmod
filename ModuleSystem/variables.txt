@@ -30,7 +30,6 @@ g_talk_troop_met
 g_enemy_strength
 g_ally_strength
 g_comment_found
-g_leave_encounter
 g_move_heroes
 map_talk_troop
 npc_with_grievance
@@ -43,6 +42,7 @@ cheapest_join
 g_enemy_surrenders
 g_castle_left_to_player
 g_player_surrenders
+g_leave_encounter
 temp
 prisoner_lord_to_buy
 g_ransom_offer_rejected
@@ -65,10 +65,8 @@ troop_to_restore_relations_with
 lady_restore_cost_1
 lady_restore_cost_2
 lady_restore_cost_3
-hero_requested_to_learn_relations
 lord_requested_to_talk_to
 g_permitted_to_center
-deserter_tribute
 g_tld_training_mode
 g_tld_training_opponents
 g_tld_training_weapon
@@ -80,7 +78,6 @@ mayor_info_lord_told
 escort_merchant_caravan_mode
 qst_troublesome_bandits_eliminated
 qst_troublesome_bandits_eliminated_by_player
-bandit_tribute
 welfare_inquired
 rumors_inquired
 info_inquired
@@ -126,12 +123,13 @@ tmp_menu_skipped
 add_troop_menu_index
 players_kingdom
 g_ent_water_ever_drunk
+prebattle_talk_done
 g_enemy_party
 g_ally_party
-new_encounter
 g_encounter_is_in_village
 g_encounter_type
 encountered_party_friendly
+new_encounter
 talk_context
 g_engaged_enemy
 no_soldiers_left
@@ -653,4 +651,3 @@ qst_scout_waypoints_wp_1_visited
 qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_is_quitting
-prebattle_talk_done

@@ -260,19 +260,19 @@ parties = [
  # pointers for scripting purposes
   ("pointer_player"           ,"_",pf_disabled|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
   ("pointer_z_0_begin"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_water = 0
-  ("pointer_z_0_mountain"     ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), 
-  ("pointer_z_0_steppe"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]),
-  ("pointer_z_0_plain"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]), # rt_snow
-  ("pointer_z_0_snow"         ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 89.5),[]),
-  ("pointer_z_0_desert"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]),
-  ("pointer_z_0_river"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]),
-  ("pointer_z_0_steppe_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5,112.4),[]),
-  ("pointer_z_0_plain_forest" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]),
-  ("pointer_z_0_forest"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]),
-  ("pointer_z_0_snow_forest"  ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]),
-  ("pointer_z_0_desert_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]),
+  ("pointer_z_0_mountain"     ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_mountain = 1
+  ("pointer_z_0_steppe"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_steppe = 2
+  ("pointer_z_0_plain"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]), # rt_plain = 3
+  ("pointer_z_0_snow"         ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 89.5),[]), # rt_swamp = rt_snow = 4  
+  ("pointer_z_0_desert"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_desert = 5
+  #("pointer_z_0_river"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_river  = 8
+  ("pointer_z_0_steppe_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5,112.4),[]), # rt_steppe_forest = 10
+  ("pointer_z_0_plain_forest" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]), # rt_forest = 10
+  ("pointer_z_0_snow_forest"  ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]), # rt_snow_forest = 12
+  ("pointer_z_0_desert_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]), # rt_desert_forest = 13
 
-#big rivers
+
+
   ("ford_cair_andros1"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
   ("ford_cair_andros2"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
   ("ford_caras_galadhon","_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),

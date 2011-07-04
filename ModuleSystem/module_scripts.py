@@ -10840,7 +10840,7 @@ scripts = [
 	
 	(assign,":small_scene",0),
 	(try_begin), (lt,"$number_of_combatants",70),
-	    (assign,":small_scene",1),  # small scene variations right after standard ones in module_scenes
+	    (assign,":small_scene",1),  # small scene variants are right after standard ones in module_scenes
 	(try_end),
 
 	# in the following, according to region and terrain type, setup the first, the second, or both these variables:
@@ -10849,41 +10849,62 @@ scripts = [
 	
 
 	(try_begin),
+		# landmark: hand sign
 		(assign, ":native_terrain_to_use", rt_steppe),
 		(eq,":landmark","p_hand_isen"),
-		#(store_add,":scene_to_use","scn_handsign",":small_scene"),  # small and big scenes?
 		(assign,":scene_to_use","scn_handsign"), 
 	(else_try),
+		# region: dead marshes
 		(eq,":region",region_dead_marshes),
 		(assign,":scene_to_use","scn_deadmarshes"), 
 	(else_try),
+		# region: lorien
 		(this_or_next|eq,":region",region_firien_wood),
 		(eq,":region",region_lorien),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),
+		# region: fangorn
 		(eq,":region",region_fangorn),
 		(assign, ":native_terrain_to_use", rt_forest),
 	(else_try),
+		# region: mirkwood
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
-		(assign, ":native_terrain_to_use", rt_desert_forest),
+		(assign, ":native_terrain_to_use", rt_snow_forest),
 	(else_try),
 		(eq,":region",region_druadan_forest),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),
-		# if it is a forest terrain, use forest battlefield regardless of region
+		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
-		(assign, ":native_terrain_to_use", rt_steppe_forest),
+		(is_between,":region",region_pelennor, region_anorien+1),
+		(assign, ":native_terrain_to_use", rt_forest),
+		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
 	(else_try),
+		# occasional forest terrain, in rohan: use forest battlefield regardless of region (but rohan outer terrain)
+		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
+		(is_between,":region",region_harrowdale, region_westfold+1),
+		(assign, ":native_terrain_to_use", rt_forest),
+		(assign,":scene_to_use","scn_random_scene_steppe_small"), # so that outer terrain of rohan is used
+	(else_try),
+		# occasional forest terrain, anywhere else: use forest battlefield regardless of region (but flat outer terrain)
+		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
+		(assign, ":native_terrain_to_use", rt_forest),
+		(assign,":scene_to_use","scn_random_scene_desert_small"), # so that outer terrain flat is used
+	(else_try),
+		# gondor regions
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 	(else_try),
+		# dry-brown regions
 		(this_or_next|eq,":region",region_the_wold),
 		(eq,":region",region_brown_lands),
 		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
 	(else_try),
+		# rohan regions
 		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
 		(assign, ":native_terrain_to_use", rt_steppe),  # rhoan default
 	(else_try),
+		# mountains regions
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
 		(assign, ":native_terrain_to_use", rt_snow),  # mountains
@@ -10896,6 +10917,8 @@ scripts = [
 	(try_begin),(gt, ":native_terrain_to_use", -1), 
 		# use native terrain autogeneration
 		
+		# make the terrain index SKIP the interval betweem desert (escluded) and mountain_forest (included) 
+		(try_begin),(gt	,":native_terrain_to_use",rt_desert),(val_sub,":native_terrain_to_use",rt_mountain_forest-rt_desert),(try_end),
 		(try_begin),(neq,"$relocated",1),
 			(assign,"$relocated",1),
 			# don't store current location if already relocated
@@ -10914,8 +10937,8 @@ scripts = [
 			
 			(try_begin), (eq, ":small_scene", 1), 
 				# shring scene
-				(lt, ":native_terrain_to_use", rt_forest_begin), #  forest don't have a small version
-				(val_add, ":scene_to_use", 10), 
+				(le, ":native_terrain_to_use", rt_desert), #  forest don't have a small version
+				(val_add, ":scene_to_use", 8),  # go to small scene index
 			(try_end),
 		(try_end),
 		

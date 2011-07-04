@@ -1,5 +1,5 @@
 scenesfile version 1
- 241
+ 238
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -19,20 +19,12 @@ scn_random_scene_plain random_scene_plain 768 none none 0.000000 0.000000 220.00
 scn_random_scene_snow random_scene_snow 768 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x000000024c602800000691a400003efe00004b34000059be 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_flat 
 scn_random_scene_desert random_scene_desert 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
   0 
   0 
- outer_terrain_steppe 
-scn_random_scene_river random_scene_river 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_steppe 
-scn_random_scene_mountain_forest random_scene_mountain_forest 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_steppe 
-scn_random_scene_steppe_forest random_scene_steppe_forest 768 none none 0.000000 0.000000 140.000000 140.000000 -0.500000 0x00000002ac6028000003e8fa0000034e00004b34000059be 
+ outer_terrain_flat 
+scn_random_scene_steppe_forest random_scene_steppe_forest 768 none none 0.000000 0.000000 120.000000 120.000000 -0.500000 0x00000002ac6028000003e8fa0000034e00004b34000059be 
   0 
   0 
  outer_terrain_forest 
@@ -59,15 +51,11 @@ scn_random_scene_plain_small random_scene_plain_small 768 none none 0.000000 0.0
 scn_random_scene_snow_small random_scene_snow_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000014c60280000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_flat 
 scn_random_scene_desert_small random_scene_desert_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000015c60280000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_steppe 
-scn_random_scene_river_small random_scene_river_small 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_steppe 
+ outer_terrain_flat 
 scn_handsign handsign 1280 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x314d060900036cd70000295300002ec9000025f3 
   0 
   0 

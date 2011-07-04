@@ -26,14 +26,13 @@ scenes = [
   ("random_scene"              ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),(240,240),-0.5,"0x0000000329602800000691a400003efe00004b34000059be",[],[]),
   ("conversation_scene",0,"encounter_spot", "bo_encounter_spot", (-40,-40),(40,40),-100,"0",   [],[]),
 
-  # scenes from native terrain types...
+  # scenes from native terrain types... (one for each terrain types)
   ("random_scene_steppe"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000022c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_rohan"),
   ("random_scene_plain"           ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_snow"            ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_desert"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-  ("random_scene_river"           ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-  ("random_scene_mountain_forest" ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-  ("random_scene_steppe_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(140,140),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+  ("random_scene_snow"            ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
+  ("random_scene_desert"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
+    # gap!!!
+  ("random_scene_steppe_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(120,120),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
   ("random_scene_plain_forest"    ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
   ("random_scene_snow_forest"     ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
   ("random_scene_desert_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
@@ -41,9 +40,8 @@ scenes = [
   # ...small versions...
   ("random_scene_steppe_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000012c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
   ("random_scene_plain_small"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_snow_small"   ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000014c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
-  ("random_scene_desert_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000015c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-  ("random_scene_river_small"  ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
+  ("random_scene_snow_small"   ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000014c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
+  ("random_scene_desert_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000015c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
   #("random_scene_mountain_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
   #("random_scene_steppe_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
   #("random_scene_plain_forest_small" ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
