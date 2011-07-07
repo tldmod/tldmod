@@ -956,6 +956,7 @@ tc_tavern_talk                = 14
 tc_rebel_thanks               = 15
 tc_hire_troops                = 16
 tc_starting_quest             = 17 #TLD
+tc_make_enemy_join_player     = 18 #TLD
 
 tld_max_quest_distance = 100 #TLD
 

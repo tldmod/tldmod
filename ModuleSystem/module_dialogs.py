@@ -477,13 +477,23 @@ dialogs = [
 # "{s5}", "close_window",[]],
 
 
-[party_tpl|pt_looters|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "hostile_dialog",[
-	(str_store_string, s11, "@Hrrr! Frresh meat and shiny things."),
+[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "hostile_dialog",[
+	(assign, ":defending", 1),
+	(try_begin),
+		(store_random_in_range, ":rand", 0,100),
+		(this_or_next|lt,":rand", 20),  # 20% of times, use attack battle cries even if defending
+		(encountered_party_is_attacker),
+		(assign, ":defending", 0),
+	(try_end),
+	
+	(call_script, "script_str_store_party_battle_cry_in_s4", "$g_encountered_party", ":defending" ),
+	
+	#(str_store_string, s11, "@Hrrr! Frresh meat and shiny things."),
 	#(str_store_string, s12, "@Gharr! Hand over all yerr stuff, and we might spare yourr life."),
-	(str_store_string, s12, "@Gharr! Kill! Kill! Kill!"),
-	(str_store_string, s13, "@Death to men!"),
-	(store_random_in_range, ":random", 11, 14),
-	(str_store_string_reg, s4, ":random"),
+	#(str_store_string, s12, "@Gharr! Kill! Kill! Kill!"),
+	#(str_store_string, s13, "@Death to men!"),
+	#(store_random_in_range, ":random", 11, 14),
+	#(str_store_string_reg, s4, ":random"),
 	
 	#(play_sound, "snd_encounter_looters")
 ]],
@@ -492,40 +502,43 @@ dialogs = [
 #[anyone,"start", [(this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),(eq, "$g_encountered_party_template", "pt_forest_bandits")],
 # "Eh? What is it?", "bandit_meet",[]],
 
-[party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-"Warning: This line should never display.", "hostile_dialog",[
-	(str_store_string, s4, "@Attack!"),
-]],
+# [party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
+# "Warning: This line should never display.", "hostile_dialog",[
+	# (str_store_string, s4, "@Attack 1!"),
+# ]],
 
-[party_tpl|pt_forest_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-"Warning: This line should never display.", "hostile_dialog",[
-	(str_store_string, s4, "@Attack!!"),
-]],
+# [party_tpl|pt_forest_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
+# "Warning: This line should never display.", "hostile_dialog",[
+	# (str_store_string, s4, "@Attack 2!!"),
+# ]],
 
-[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
-"Warning: This line should never display.", "hostile_dialog",[
-	(str_store_string, s4, "@Attack!!"),
-]],
-[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(neg|encountered_party_is_attacker)],
-"Warning: This line should never display.", "hostile_dialog",[
-	(str_store_string, s4, "@We are attacked!!"),
-]],
+# [anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
+# "Warning: This line should never display.", "hostile_dialog",[
+	# (str_store_string, s4, "@Attack!!"),
+# ]],
+
+# [anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
+# "Warning: This line should never display.", "hostile_dialog",[
+	# (str_store_string, s4, "@Attack!!"),
+# ]],
+
 
 [anyone,"hostile_dialog", [], "{s4}", "close_window",[#(encounter_attack)
 ]],
 
 
 
-# [party_tpl|pt_looters|plyr,"looters_2", [
-    # (player_has_item, "itm_angmar_whip_reward"),
-    # (party_can_join_party, "$g_encountered_party","p_main_party"),
-    # (str_store_item_name, s4, "itm_angmar_whip_reward")],
-# "Bow to the power of the {s4} and serve me!", "looters_2_join", []],
+ [anyone|plyr,"start", [ (eq,"$talk_context",tc_make_enemy_join_player),
+   (str_store_item_name, s4, "itm_angmar_whip_reward")
+ ],
+ "Bow to the power of the {s4} and serve me!", "looters_2_join", []],
 
-# [party_tpl|pt_looters,"looters_2_join", [], "We will obey, Master.", "close_window", [
-    # (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-    # (remove_party, "$g_encountered_party"),
-    # (assign, "$g_leave_encounter", 1)]],
+ [anyone,"looters_2_join", [], "We will obey, Master.", "close_window", [
+     (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
+     (remove_party, "$g_encountered_party"),
+	 (change_screen_return),
+     (assign, "$g_leave_encounter", 1)
+]],
   
 #[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
 #"I'm not afraid of you lot. Fight me if you dare!", "close_window", [(encounter_attack)]],

@@ -10,6 +10,7 @@ from header_common import *
 ####################################################
 #TLD start (Hokie)
 tf_male       = 0	# (Dale/Northmen/corsair/bandits)
+tf_human      = 0	# just a synonim
 tf_female     = 1	# all factions
 tf_gondor     = 2
 tf_rohan      = 3
@@ -139,7 +140,7 @@ str_27           = bignum | 0x0000001b
 str_28           = bignum | 0x0000001c
 str_29           = bignum | 0x0000001d
 str_30           = bignum | 0x0000001e
-str_255          = bignum | 0x000000ff
+str_255          = bignum | 0x000000ff  # mtarini
 
 agi_3            = bignum | 0x00000300
 agi_4            = bignum | 0x00000400

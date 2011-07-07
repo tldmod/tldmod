@@ -761,7 +761,7 @@ mission_templates = [
 # 
   ( "conversation_encounter",0,-1,
     "Conversation_encounter",
-    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
+    [( 0,mtef_visitor_source|mtef_team_0,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
      ( 2,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 3,mtef_visitor_source,0,0,1,[]),( 4,mtef_visitor_source,0,0,1,[]),( 5,mtef_visitor_source,0,0,1,[]),( 6,mtef_visitor_source,0,0,1,[]),
      ( 7,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 8,mtef_visitor_source,0,0,1,[]),( 9,mtef_visitor_source,0,0,1,[]),(10,mtef_visitor_source,0,0,1,[]),(11,mtef_visitor_source,0,0,1,[]),
     #prisoners now...
@@ -770,18 +770,38 @@ mission_templates = [
      (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),
      (22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,0,0,1,[]),(24,mtef_visitor_source,0,0,1,[]),(25,mtef_visitor_source,0,0,1,[]),(26,mtef_visitor_source,0,0,1,[]),
      (27,mtef_visitor_source,0,0,1,[]),(28,mtef_visitor_source,0,0,1,[]),(29,mtef_visitor_source,0,0,1,[]),(30,mtef_visitor_source,0,0,1,[]),
-# mob running towards you
+	# mob running towards you
 	 (31,mtef_visitor_source,0,aif_start_alarmed,1,[]),
+    #Hostile running towards you
+     (17,mtef_visitor_source|mtef_team_1,af_override_fullhelm,aif_start_alarmed,1,[]),
      ],
     [(1, 0, ti_once, [], [(add_reinforcements_to_entry,31,5),]),
-     (4, 0, ti_once, [], [ #attempt to show running orcs
-	         (entry_point_get_position,pos1,0),
-			 (try_for_agents,":agent"),
-			    (agent_get_entry_no,":e",":agent"),
-				(eq,":e",31),
-				(agent_set_scripted_destination,pos1,":agent",1),
-			 (try_end),
-			 ]),
+     # (4, 0, ti_once, [], [ 
+			# #attempt to show running orcs (what is this? where is it used? who did this? It is bugged anyway mtarini)
+	         # # (entry_point_get_position,pos1,0),
+			 # # (try_for_agents,":agent"),
+			    # # (agent_get_entry_no,":e",":agent"),
+				# # (this_or_next|eq,":e",32),
+				# # (eq,":e",31),
+				# # (agent_set_scripted_destination,":agent",pos1,1),
+			 # # (try_end),
+	 # ]),
+     # (0.8, 0, 0, [], [ 
+			 # (try_for_agents,":agent"),
+			    # (agent_get_entry_no,":e",":agent"),
+				# (eq,":e",32),
+				# (agent_set_animation,":agent","anim_run_forward_onehanded"),
+			 # (try_end),
+	 # ]),
+     # (0.8, 0, ti_once, [], [ 
+			 # (try_for_agents,":agent"),
+			    # (agent_get_entry_no,":e",":agent"),
+				# (eq,":e",32),
+				# (agent_set_animation,":agent","anim_equip_sword"),
+				# (agent_set_team, ":agent", 2),
+			 # (try_end),
+	 # ]),
+	 
 	],
   ),
   
@@ -789,6 +809,7 @@ mission_templates = [
 #mission templates before this point are hardwired into the game.
 #-----------------------------------------------------------------
 
+ 
  
   ( "town_center",0,-1,
     "Default town visit",

@@ -2763,7 +2763,7 @@ scripts = [
         (eq, ":line_no", 0),
         (assign, reg1, "$number_of_player_deaths"),
 		(store_sub, reg2, reg1, 1),
-		(str_store_string, s1, "@Left for death but miracolously survived: {reg1?NEVER:{reg1} time{reg2?s:}}"),
+		(str_store_string, s1, "@Left for death but miracolously survived: {reg1?{reg1} time{reg2?s:}:NEVER}"),
         (set_result_string, s1),
 	  # skip line 1, for a sspacer
       (else_try),
@@ -3116,6 +3116,59 @@ scripts = [
       (assign, reg0, ":limit"),
   ]),
 
+  # stores the dominant race of a party (somewhat random)  (mtarini)
+  # input: PARTY.  Output: reg0: dominant race
+  ("party_get_dominant_race",[
+	(store_script_param_1, ":party"),
+	(party_get_num_companion_stacks, ":num_stacks",":party"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_a",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(troop_get_type,":val_a",":tr"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_b",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(troop_get_type,":val_b",":tr"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_c",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(troop_get_type,":val_c",":tr"),
+	(try_begin),(eq,":val_a",":val_b"),(val_add,":size_a",":size_b"),(try_end),
+	(try_begin),(eq,":val_b",":val_c"),(val_add,":size_b",":size_c"),(try_end),
+	(try_begin),(eq,":val_c",":val_a"),(val_add,":size_c",":size_a"),(try_end),
+	
+	(try_begin),(ge,":size_a",":size_b"),(ge,":size_a",":size_c"),(assign, reg0, ":val_a"),
+	(else_try), (ge,":size_b",":size_a"),(ge,":size_b",":size_c"),(assign, reg0, ":val_b"),
+	(else_try), (assign, reg0, ":val_c"),
+	(try_end),
+  ]),
+
+  # stores the dominant race of a party (somewhat random)  (mtarini)
+  # input: PARTY.  Output: reg0: dominant race
+  ("party_get_dominant_faction",[
+	(store_script_param_1, ":party"),
+	(party_get_num_companion_stacks, ":num_stacks",":party"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_a",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(store_troop_faction,":val_a",":tr"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_b",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(store_troop_faction,":val_b",":tr"),
+    (store_random_in_range, ":i_stack", 0, ":num_stacks"),
+    (party_stack_get_size, ":size_c",":party",":i_stack"),
+	(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+	(store_troop_faction,":val_c",":tr"),
+	(try_begin),(eq,":val_a",":val_b"),(val_add,":size_a",":size_b"),(try_end),
+	(try_begin),(eq,":val_b",":val_c"),(val_add,":size_b",":size_c"),(try_end),
+	(try_begin),(eq,":val_c",":val_a"),(val_add,":size_c",":size_a"),(try_end),
+	
+	(try_begin),(ge,":size_a",":size_b"),(ge,":size_a",":size_c"),(assign, reg0, ":val_a"),
+	(else_try), (ge,":size_b",":size_a"),(ge,":size_b",":size_c"),(assign, reg0, ":val_b"),
+	(else_try), (assign, reg0, ":val_c"),
+	(try_end),
+  ]),
 
   #script_game_get_party_prisoner_limit:
   # This script is called from the game engine when the prisoner limit is needed for a party.
@@ -4303,6 +4356,23 @@ scripts = [
       (set_visitor,0,"trp_player"),
       (party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
       (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
+	  (troop_equip_items, ":meeting_troop"),
+      (set_visitor,17,":meeting_troop",":troop_dna"),
+      (set_jump_mission,"mt_conversation_encounter"),
+      (jump_to_scene,"scn_conversation_scene"),
+      (change_screen_map_conversation, ":meeting_troop"),
+  ]),
+  
+    #script_setup_party_meeting: TODO... currently, same as non_hostile version (mtarini)
+  # INPUT: param1: Party-id with which meeting will be made.
+  ("setup_hostile_party_meeting",
+    [
+      (store_script_param_1, ":meeting_party"),
+
+      (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+      (set_visitor,0,"trp_player"),
+      (party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
+      (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
       (set_visitor,17,":meeting_troop",":troop_dna"),
       (set_jump_mission,"mt_conversation_encounter"),
       (jump_to_scene,"scn_conversation_scene"),
@@ -5192,6 +5262,28 @@ scripts = [
         (val_sub, ":stack_size", ":num_wounded"),
         (val_add, reg0, ":stack_size"),
       (try_end),
+  ]),
+  
+   # small script, mtarini
+  ("cf_party_is_mostly_mounted",
+    [
+      (store_script_param_1, ":party"), #Party_id
+      (party_get_num_companion_stacks, ":num_stacks",":party"),
+      (assign, ":num_foot",0),
+      (assign, ":num_mounted",0),
+      (try_for_range, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id,     ":stack_troop",":party",":i_stack"),
+		(assign, ":x",1),
+		(try_begin),  (neg|troop_is_hero, ":stack_troop"),
+            (party_stack_get_size,":x",":party",":i_stack"),
+        (try_end),
+		(try_begin),(troop_is_mounted, ":stack_troop"),
+            (val_add, ":num_mounted",":x"),
+		(else_try),
+            (val_add, ":num_foot", ":x"),
+        (try_end),
+      (try_end),
+	  (ge, ":num_mounted",":num_foot"),
   ]),
   
   #script_party_count_fit_for_battle:
@@ -10595,6 +10687,182 @@ scripts = [
   ]),
   
 
+#  "script_str_store_party_movement_verb" (stringNo, PartyNo)  (mtarini)
+# stores "charging, riding, marching" etc
+("str_store_party_movement_verb", [
+	(store_script_param_1, ":stN"),
+	(store_script_param_2, ":party"),
+
+	(str_clear, ":stN"),
+	(try_begin),
+		(call_script, "script_cf_party_is_mostly_mounted", ":party"),
+		(str_store_string, ":stN", "@riding"), 
+	(else_try),
+		(store_faction_of_party, ":fac", ":party"),
+		(try_begin),
+			(is_between,":fac",kingdoms_begin,kingdoms_end),
+			(str_store_string, ":stN", "@marching"), 
+		(else_try),
+			(str_store_string, ":stN", "@charging"), # for bandits, desertes, civilians, etc.
+		(try_end),
+	(try_end),
+]),
+
+
+#  "script_str_store_battle_cry" (stringNo, PartyNo)  (mtarini)
+# used in prebattle dialog
+("str_store_party_battle_cry_in_s4", [
+	(store_script_param_1, ":partyA"),
+	(store_script_param_2, ":defending"),
+	
+	(store_faction_of_party, ":factionA",":partyA"),
+	# note: we get the *dominant* race of player party, so that he sees differnt things said to him according to who he is accompaning him
+	# note: we get the *dominant* race of player party, so that he sees differnt things said to him according to who he is accompaning him
+	(call_script, "script_party_get_dominant_faction", "p_main_party"),(assign,":factionB",reg0),
+	#(store_faction_of_party, ":facB","p_main_party"),
+	
+	(troop_get_type, ":raceA" , "$g_talk_troop"),
+	(call_script, "script_party_get_dominant_race", "p_main_party"),(assign,":raceB",reg0),
+	#(troop_get_type, ":raceB" , "trp_player"),
+
+	(faction_get_slot, ":sideA",":factionA", slot_faction_side),
+	(faction_get_slot, ":sideB",":factionB", slot_faction_side),	
+
+	# semplify all human races into "human"
+	(try_begin),
+		(neg|is_between, ":raceB", tf_orc_begin, tf_orc_end),
+		(neg|is_between, ":raceB", tf_elf_begin, tf_elf_end),
+		(neq, ":raceB", tf_dwarf),
+		(neq, ":raceB", tf_troll),
+		(assign, ":raceB", tf_human),
+	(try_end),
+	(try_begin),
+		(neg|is_between, ":raceA", tf_orc_begin, tf_orc_end),
+		(neg|is_between, ":raceA", tf_elf_begin, tf_elf_end),
+		(neq, ":raceA", tf_dwarf),
+		(assign, ":raceA", tf_human),
+	(try_end),
+
+	(str_clear, s4),
+	
+	(try_begin), (eq, ":defending", 1),  # DEFENCE WAR CRIES
+
+		(try_for_range, ":i", 0, 500),
+			(store_random_in_range, ":rand", 0,10),
+			(try_begin),(eq,":rand",0),
+				(neg|is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(is_between, ":raceB", tf_orc_begin, tf_orc_end),
+				(str_store_string, s4, "@ORCS! ORCS!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",1),
+				(neg|is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(neg|is_between, ":factionA", kingdoms_begin, kingdoms_end), # civilians
+				(is_between, ":raceB", tf_orc_begin, tf_orc_end),
+				(str_store_string, s4, "@ORCS! ORCS! Fight for your life!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",2),			(else_try),(eq,":rand",1),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(is_between, ":raceB", tf_elf_begin, tf_elf_end),
+				(str_store_string, s4, "@Elven ghosts!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",3),
+				(eq, ":sideA", faction_side_good),
+				(str_store_string, s4, "@Here they came! Hold ranks!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",4),
+				(str_store_string, s4, "@We are under attack!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",5),
+				(eq, ":factionB", fac_rohan),
+				(str_store_string, s4, "@Horse people! The horse people are attacking!"),
+				(assign, ":i", 1000),
+			(try_end),
+		(try_end),
+	
+	(else_try), # ATTACK WAR CRIES
+	
+		(try_for_range, ":i", 0, 500),
+			(store_random_in_range, ":rand", 0,13),
+			(try_begin),(eq,":rand",0),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(eq, ":raceB", tf_human),
+				(str_store_string, s4, "@Death to men!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",1),
+				(eq, ":sideB", faction_side_good),
+				(str_store_string, s4, "@Kill them all! Take no prisoners!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",2),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(is_between, ":raceB", tf_orc_begin, tf_orc_end),
+				(str_store_string, s4, "@Kill the moggots!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",3),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(str_store_string, s4, "@Death to traitors of the Eye!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",4),
+				(eq, ":sideA", faction_side_hand ),
+				(eq, ":sideB", faction_side_eye ),
+				(str_store_string, s4, "@Death to traitors of the White Hand!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",5),
+				(eq, ":sideB", faction_side_good),
+				(str_store_string, s4, "@Kill them all! Take no prisoners!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",6),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(eq, ":raceB", tf_human),
+				(str_store_string, s4, "@Tonight we feast on men flash!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",7),
+				(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+				(str_store_string, s4, "@Gharr! Kill! Kill! Kill!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",8),
+				(eq, ":raceB", tf_dwarf),
+				(str_store_string, s4, "@Slaughter these half men!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",9),
+				(is_between, ":raceB", tf_elf_begin, tf_elf_end),
+				(str_store_string, s4, "@Fear no elven !"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",10),
+				(eq, ":factionB", tf_dwarf),
+				(str_store_string, s4, "@Slaughter these half men!"),		
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",11),
+				(eq, ":sideB", faction_side_good),
+				(str_store_string, s4, "@Double rations to the one taking me the most heads!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",12),
+				(eq, ":factionA", fac_dunland),
+				(eq, ":factionB", fac_rohan),
+				(str_store_string, s4, "@Kill the horse thieves!"),
+				(assign, ":i", 1000),
+			(else_try),(eq,":rand",13),
+				(eq, ":factionA", fac_dunland),
+				(eq, ":factionB", fac_rohan),
+				(str_store_string, s4, "@Kill them all! Take back what is our!"),
+				(assign, ":i", 1000),
+			(try_end),
+		(try_end),
+	
+	(try_end),
+	
+	# default battle cries, if no good one found
+	(try_begin),(neq, ":i", 1000),
+		(try_begin),
+			(encountered_party_is_attacker),
+			(str_store_string, s4, "@Attack!"),
+		(else_try),
+			(str_store_string, s4, "@We are under attack!"),
+		(try_end),
+	(try_end),
+	
+
+]),
+
 # regions... put results in reg1 (mtarini)
 ("get_region_of_party", [
 	(store_script_param_1, ":party"),
@@ -13053,10 +13321,12 @@ scripts = [
   ]),
 
   
+
+  
 #script_calculate_battleside_races
-  # compute with rache each battle is (mtarini)
+  # compute with domiant race each side of a battle is (mtarini)
   # $player_side_race_group = humanoids or orchoids
-  # $player_side_race = humanoids or orchoids
+  # $player_side_race = eld, dwarves or men
   ("calculate_battleside_races", [
 	(assign, reg15, 0), # humanoids
 	(assign, reg16, 0), # orcoids
@@ -17217,52 +17487,52 @@ scripts = [
         (try_end),        
 ]),
 
-("post_battle_personality_clash_check",
- [
-#            (display_message, "@Post-victory personality clash check"),
-            (try_for_range, ":npc", companions_begin, companions_end),
-                (eq, "$disable_npc_complaints", 0),
+# ("post_battle_personality_clash_check",
+ # [
+# #            (display_message, "@Post-victory personality clash check"),
+            # (try_for_range, ":npc", companions_begin, companions_end),
+                # (eq, "$disable_npc_complaints", 0),
 
-                (main_party_has_troop, ":npc"),
-                (neg|troop_is_wounded, ":npc"),
+                # (main_party_has_troop, ":npc"),
+                # (neg|troop_is_wounded, ":npc"),
 
-                (troop_get_slot, ":other_npc", ":npc", slot_troop_personalityclash2_object),
-                (main_party_has_troop, ":other_npc"),
-                (neg|troop_is_wounded, ":other_npc"),
+                # (troop_get_slot, ":other_npc", ":npc", slot_troop_personalityclash2_object),
+                # (main_party_has_troop, ":other_npc"),
+                # (neg|troop_is_wounded, ":other_npc"),
 
-#                (store_random_in_range, ":random", 0, 3),
-                (try_begin),
-                    (troop_slot_eq, ":npc", slot_troop_personalityclash2_state, 0),
-                    (try_begin),
-#                        (eq, ":random", 0),
-                        (assign, "$npc_with_personality_clash_2", ":npc"),
-                    (try_end),
-                (try_end),
+# #                (store_random_in_range, ":random", 0, 3),
+                # (try_begin),
+                    # (troop_slot_eq, ":npc", slot_troop_personalityclash2_state, 0),
+                    # (try_begin),
+# #                        (eq, ":random", 0),
+                        # (assign, "$npc_with_personality_clash_2", ":npc"),
+                    # (try_end),
+                # (try_end),
 
-            (try_end),
+            # (try_end),
 
-            (try_for_range, ":npc", companions_begin, companions_end),
-                (troop_slot_eq, ":npc", slot_troop_personalitymatch_state, 0),
-                (eq, "$disable_npc_complaints", 0),
-                (main_party_has_troop, ":npc"),
-                (neg|troop_is_wounded, ":npc"),
-                (troop_get_slot, ":other_npc", ":npc", slot_troop_personalitymatch_object),
-                (main_party_has_troop, ":other_npc"),
-                (neg|troop_is_wounded, ":other_npc"),
-                (assign, "$npc_with_personality_match", ":npc"),
-            (try_end),
+            # (try_for_range, ":npc", companions_begin, companions_end),
+                # (troop_slot_eq, ":npc", slot_troop_personalitymatch_state, 0),
+                # (eq, "$disable_npc_complaints", 0),
+                # (main_party_has_troop, ":npc"),
+                # (neg|troop_is_wounded, ":npc"),
+                # (troop_get_slot, ":other_npc", ":npc", slot_troop_personalitymatch_object),
+                # (main_party_has_troop, ":other_npc"),
+                # (neg|troop_is_wounded, ":other_npc"),
+                # (assign, "$npc_with_personality_match", ":npc"),
+            # (try_end),
 
 
-            (try_begin),
-                (gt, "$npc_with_personality_clash_2", 0),
-                (assign, "$npc_map_talk_context", slot_troop_personalityclash2_state),
-                (start_map_conversation, "$npc_with_personality_clash_2"),
-            (else_try),
-                (gt, "$npc_with_personality_match", 0),
-                (assign, "$npc_map_talk_context", slot_troop_personalitymatch_state),
-                (start_map_conversation, "$npc_with_personality_match"),
-            (try_end),
-     ]),
+            # (try_begin),
+                # (gt, "$npc_with_personality_clash_2", 0),
+                # (assign, "$npc_map_talk_context", slot_troop_personalityclash2_state),
+                # (start_map_conversation, "$npc_with_personality_clash_2"),
+            # (else_try),
+                # (gt, "$npc_with_personality_match", 0),
+                # (assign, "$npc_map_talk_context", slot_troop_personalitymatch_state),
+                # (start_map_conversation, "$npc_with_personality_match"),
+            # (try_end),
+     # ]),
 
   #script_event_player_defeated_enemy_party
   # INPUT: none

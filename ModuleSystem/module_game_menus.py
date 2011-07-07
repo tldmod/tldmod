@@ -3571,7 +3571,7 @@ game_menus = [
 ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
-    "^{s2}^You have {reg10} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
+    "^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
     "none",
     [
 		
@@ -3591,6 +3591,7 @@ game_menus = [
         (assign, "$g_enemy_party", "$g_encountered_party"),
         (assign, "$g_ally_party", -1),
         (call_script, "script_encounter_calculate_fit"),
+		(assign, reg22, reg10),
         (try_begin),
 		  # first turn...
           (eq, "$new_encounter", 1),
@@ -3674,7 +3675,8 @@ game_menus = [
 			(eq, "$new_encounter", 1),
 			(eq, "$encountered_party_hostile", 1),
 			(encountered_party_is_attacker),
-            (str_store_string, s2,"@A group of {s1} will be upon you very soon."),
+			(call_script, "script_str_store_party_movement_verb", s10, "$g_encountered_party"),
+            (str_store_string, s2,"@A group of {s1} is {s10} toward you."),
 			#(str_store_string, s2,"@A group of {s1}  are {reg10?riding:marching} toward you."),
           (else_try),
 			(eq, "$new_encounter", 1),
@@ -3765,7 +3767,7 @@ game_menus = [
 				(assign, "$new_encounter", 0),
 				(assign, "$prebattle_talk_done",1),
 				(assign, "$talk_context", tc_party_encounter),
-				(call_script, "script_setup_party_meeting", "$g_encountered_party"),
+				(call_script, "script_setup_hostile_party_meeting", "$g_encountered_party"),
 			(else_try),
 				(call_script,"script_start_current_battle"),
 			(try_end),
@@ -3780,6 +3782,20 @@ game_menus = [
 		     (jump_to_menu,"mnu_order_attack_begin"),
                                                             #(simulate_battle,3)
 		]),
+		("special_whip",[
+			(eq, "$new_encounter", 1),
+		    (is_between, "$g_encountered_party_template", "pt_looters","pt_steppe_bandits"),
+		    (player_has_item, "itm_angmar_whip_reward"),
+			(str_store_item_name, s4, "itm_angmar_whip_reward"),
+			(party_can_join_party, "$g_encountered_party","p_main_party"),
+		],
+		"Rush forward toward them cracking the {s4}.",[
+			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
+			(assign,"$talk_context",tc_make_enemy_join_player),
+		]
+		),
+	 
+	 
       ("debug_leave",[
           (eq,"$cant_leave_encounter", 1),
 		  (eq, "$cheat_mode", 1),
@@ -3788,8 +3804,7 @@ game_menus = [
                                                             
       ("encounter_leave",[
           (eq,"$cant_leave_encounter", 0),
-          ],"Leave.",[
-
+          ],"Disengage.",[
 ###NPC companion changes begin
               #(try_begin),
               #    (eq, "$encountered_party_friendly", 0),
@@ -3811,6 +3826,7 @@ game_menus = [
               # (try_end),
 #Troop commentary changes end
           	(leave_encounter),(change_screen_return)]),
+			
       ("encounter_retreat",[
          (eq,"$cant_leave_encounter", 1),
          (call_script, "script_get_max_skill_of_player_party", "skl_tactics"),
@@ -4495,7 +4511,7 @@ game_menus = [
             (eq, "$g_next_menu", -1),
 
 #NPC companion changes begin
-           (call_script, "script_post_battle_personality_clash_check"),
+           #(call_script, "script_post_battle_personality_clash_check"),
 #NPC companion changes end
 
 #Post 0907 changes begin
@@ -4748,7 +4764,7 @@ game_menus = [
 ),
   
 ( "join_battle",mnf_enable_hot_keys,
-    "^^^^^^You are helping {s2} against {s1}.^ You have {reg10} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
+    "^^^^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
     "none",
     [
 	
@@ -4762,7 +4778,7 @@ game_menus = [
 		(str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
-        (assign, ":friends_left", reg10), #TLD fix
+        (assign, reg22, reg10), 
 
         (try_begin),
           (eq, "$new_encounter", 1),
@@ -4823,7 +4839,7 @@ game_menus = [
           (leave_encounter),
           (change_screen_return),
         (try_end),
-        (assign, reg10, ":friends_left"), #TLD fix
+        
       ],
     [ ("join_attack",[
 #          (neq, "$encountered_party_hostile", 0),
@@ -4858,10 +4874,10 @@ game_menus = [
 #      ("join_attack",[],"Lead a charge against the enemies",[(set_jump_mission,"mt_charge_with_allies"),
 #                                (call_script, "script_setup_random_scene"),
 #                                                             (change_screen_mission,0)]),
-      ("join_leave",[],"Leave.",[
+      ("join_leave",[],"Disengage.",[
         (try_begin),
            (neg|troop_is_wounded, "trp_player"),
-           (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
+           #(call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
            (party_stack_get_troop_id, ":enemy_leader","$g_enemy_party",0),
            (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":enemy_leader", -1),
            (display_message, "@You retreated from battle."),
@@ -6063,7 +6079,7 @@ game_menus = [
 
  
 ( "siege_started_defender",mnf_enable_hot_keys,
-    "{s1} is launching an assault against the walls of {s2}. You have {reg10} troops fit for battle against the enemy's {reg11}. You decide to...",
+    "{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...",
     "none",
     [
         (select_enemy,1),
@@ -6072,7 +6088,7 @@ game_menus = [
         (str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
-        (assign, ":friends_left", reg10), #TLD fix
+        (assign, reg22, reg10), #TLD fix
         (try_begin),
           (eq, "$g_siege_first_encounter", 1),
           (call_script, "script_let_nearby_parties_join_current_battle", 1, 1), #MV from 0, 1, so no enemies standing by would join
@@ -6163,7 +6179,6 @@ game_menus = [
         (try_end),
         (assign, "$g_siege_first_encounter", 0),
         (assign, "$new_encounter", 0),
-        (assign, reg10, ":friends_left"), #TLD fix
         ],
     [
       ("siege_defender_join_battle",
