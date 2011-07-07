@@ -7,8 +7,6 @@ qst_follow_spy_spy_back_in_town
 qst_follow_spy_partner_back_in_town
 qst_follow_spy_no_active_parties
 debt_to_merchants_guild
-npc_with_personality_clash
-personality_clash_after_24_hrs
 tld_war_began
 prev_day
 g_ent_water_taking_effect
@@ -30,10 +28,12 @@ g_talk_troop_met
 g_enemy_strength
 g_ally_strength
 g_comment_found
+g_leave_encounter
 g_move_heroes
 map_talk_troop
 npc_with_grievance
 npc_with_personality_clash_2
+npc_with_personality_clash
 npc_with_personality_match
 disable_local_histories
 hiring_from
@@ -42,7 +42,6 @@ cheapest_join
 g_enemy_surrenders
 g_castle_left_to_player
 g_player_surrenders
-g_leave_encounter
 temp
 prisoner_lord_to_buy
 g_ransom_offer_rejected
@@ -501,7 +500,6 @@ number_of_npc_slots
 npc_grievance_string
 npc_grievance_slot
 npc_praise_not_complaint
-npc_map_talk_context
 g_check_autos_at_hour
 g_average_center_value_per_faction
 num_log_entries
@@ -650,4 +648,5 @@ qst_scout_waypoints_wp_3
 qst_scout_waypoints_wp_1_visited
 qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
+npc_map_talk_context
 npc_is_quitting

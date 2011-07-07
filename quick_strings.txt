@@ -1,4 +1,4 @@
-871
+887
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -120,7 +120,7 @@ qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
 qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
-qstr_Left_for_death_but_m Left_for_death_but_miracolously_survived:_{reg1?NEVER:{reg1}_time{reg2?s:}}
+qstr_Left_for_death_but_m Left_for_death_but_miracolously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
 qstr_+30_to_Party_Morale +30_to_Party_Morale
@@ -192,6 +192,28 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
+qstr_riding riding
+qstr_marching marching
+qstr_charging charging
+qstr_ORCS!_ORCS! ORCS!_ORCS!
+qstr_ORCS!_ORCS!_Fight_fo ORCS!_ORCS!_Fight_for_your_life!
+qstr_Elven_ghosts! Elven_ghosts!
+qstr_Here_they_came!_Hold Here_they_came!_Hold_ranks!
+qstr_We_are_under_attack! We_are_under_attack!
+qstr_Horse_people!_The_ho Horse_people!_The_horse_people_are_attacking!
+qstr_Death_to_men! Death_to_men!
+qstr_Kill_them_all!_Take_ Kill_them_all!_Take_no_prisoners!
+qstr_Kill_the_moggots! Kill_the_moggots!
+qstr_Death_to_traitors_of Death_to_traitors_of_the_Eye!
+qstr_Death_to_traitors_of_ Death_to_traitors_of_the_White_Hand!
+qstr_Tonight_we_feast_on_ Tonight_we_feast_on_men_flash!
+qstr_Gharr!_Kill!_Kill!_K Gharr!_Kill!_Kill!_Kill!
+qstr_Slaughter_these_half Slaughter_these_half_men!
+qstr_Fear_no_elven_! Fear_no_elven_!
+qstr_Double_rations_to_th Double_rations_to_the_one_taking_me_the_most_heads!
+qstr_Kill_the_horse_thiev Kill_the_horse_thieves!
+qstr_Kill_them_all!_Take_b Kill_them_all!_Take_back_what_is_our!
+qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
 qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
 qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
@@ -576,7 +598,7 @@ qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
-qstr_A_group_of_{s1}_will A_group_of_{s1}_will_be_upon_you_very_soon.
+qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
 qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.
 qstr_CHEAT:_healed!!! CHEAT:_healed!!!
@@ -728,12 +750,6 @@ qstr_What_is_news?_Got_an What_is_news?_Got_any_screenshots?
 qstr_Well_just_look_aroun Well_just_look_around_you,_what_do_you_need_screenshots_for?
 qstr_Say_cheese! Say_cheese!
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
-qstr_Hrrr!_Frresh_meat_an Hrrr!_Frresh_meat_and_shiny_things.
-qstr_Gharr!_Kill!_Kill!_K Gharr!_Kill!_Kill!_Kill!
-qstr_Death_to_men! Death_to_men!
-qstr_Attack! Attack!
-qstr_Attack!! Attack!!
-qstr_We_are_attacked!! We_are_attacked!!
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
