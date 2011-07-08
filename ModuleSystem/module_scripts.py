@@ -1822,6 +1822,8 @@ scripts = [
 	  (assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 
 	   # PlayerRewardSystem: end
+	   (assign, "$gate_breached", 0),
+	   (assign, "$gate_aggravator_agent", 0),
 ]),    
 
 
@@ -4325,12 +4327,11 @@ scripts = [
   #script_setup_troop_meeting:
   # INPUT: param1: troop_id with which meeting will be made, param2: troop_dna (optional)
   ("setup_troop_meeting",
-    [
-      (store_script_param_1, ":meeting_troop"),
+    [ (store_script_param_1, ":meeting_troop"),
       (store_script_param_2, ":troop_dna"),
       (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
       (set_visitor,0,"trp_player"),
-      #       (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
+	  (troop_equip_items, ":meeting_troop"),
       (try_begin),
 #		(this_or_next|eq,":meeting_troop","trp_nazgul"),
 		(eq,":meeting_troop","trp_elder_cgaladhon"),
@@ -4348,35 +4349,33 @@ scripts = [
   ("setup_party_meeting",
     [
       (store_script_param_1, ":meeting_party"),
-      (try_begin),
+      (try_begin), # party_meeting used as an indicator that conversation is with party
         (lt, "$g_encountered_party_relation", 0), #hostile
+		(assign,"$party_meeting",-1),
+	  (else_try),
+	    (assign,"$party_meeting",1),
 #        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
       (try_end),
-      (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
-      (set_visitor,0,"trp_player"),
       (party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
       (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
-	  (troop_equip_items, ":meeting_troop"),
-      (set_visitor,17,":meeting_troop",":troop_dna"),
-      (set_jump_mission,"mt_conversation_encounter"),
-      (jump_to_scene,"scn_conversation_scene"),
-      (change_screen_map_conversation, ":meeting_troop"),
+	  (call_script,"script_setup_troop_meeting",":meeting_troop", ":troop_dna"), #GA: made it through troop meeting script as it should be
   ]),
   
-    #script_setup_party_meeting: TODO... currently, same as non_hostile version (mtarini)
+  #script_setup_hostile_party_meeting: TODO... currently, same as non_hostile version (mtarini)
   # INPUT: param1: Party-id with which meeting will be made.
   ("setup_hostile_party_meeting",
     [
       (store_script_param_1, ":meeting_party"),
-
-      (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
-      (set_visitor,0,"trp_player"),
+      (try_begin), # party_meeting used as an indicator that conversation is with party
+        (lt, "$g_encountered_party_relation", 0), #hostile
+		(assign,"$party_meeting",-1),
+	  (else_try),
+	    (assign,"$party_meeting",1),
+#        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
+      (try_end),
       (party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
       (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
-      (set_visitor,17,":meeting_troop",":troop_dna"),
-      (set_jump_mission,"mt_conversation_encounter"),
-      (jump_to_scene,"scn_conversation_scene"),
-      (change_screen_map_conversation, ":meeting_troop"),
+	  (call_script,"script_setup_troop_meeting",":meeting_troop", ":troop_dna"), #GA: made it through troop meeting script as it should be
   ]),
   
   #script_party_remove_all_companions:
@@ -14483,15 +14482,19 @@ scripts = [
    [
      (try_for_agents, ":agent_no"),
        (agent_is_alive, ":agent_no"),
-       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+#       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
        (agent_is_defender, ":agent_no"),
        (agent_get_class, ":agent_class", ":agent_no"),
        (agent_get_troop_id, ":agent_troop", ":agent_no"),
        (eq, ":agent_class", grc_archers),
        (try_begin),
          (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
-         (store_random_in_range, ":random_entry_point", 50, 60), #TLD, was 40, 44
-         (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":random_entry_point"),
+		 (agent_get_team, ":team", ":agent_no"),
+		 (try_begin),(eq,":team",0),(store_random_in_range, ":random_entry_point", 50, 54), #TLD, was 40, 44
+		  (else_try),(eq,":team",2),(store_random_in_range, ":random_entry_point", 54, 56), #TLD, was 40, 44
+		  (else_try),               (store_random_in_range, ":random_entry_point", 56, 60), #TLD, was 40, 44
+         (try_end),         
+		 (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":random_entry_point"),
        (try_end),
        (try_begin),
          (agent_get_position, pos0, ":agent_no"),
@@ -14500,9 +14503,9 @@ scripts = [
          (lt, ":dist", 300),
          (agent_clear_scripted_mode, ":agent_no"),
          (agent_set_slot, ":agent_no", slot_agent_is_in_scripted_mode, 0),
-         (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
-         (str_store_troop_name, s1, ":agent_troop"),
-         (assign, reg0, ":agent_no"),
+#         (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
+#         (str_store_troop_name, s1, ":agent_troop"),
+#         (assign, reg0, ":agent_no"),
 #         (display_message, "@{s1} ({reg0}) reached pos"),
        (else_try),
          (agent_get_simple_behavior, ":agent_sb", ":agent_no"),
@@ -14514,8 +14517,8 @@ scripts = [
            (agent_slot_eq, ":agent_no", slot_agent_is_in_scripted_mode, 0),
            (agent_set_scripted_destination, ":agent_no", pos1, 0),
            (agent_set_slot, ":agent_no", slot_agent_is_in_scripted_mode, 1),
-           (str_store_troop_name, s1, ":agent_troop"),
-           (assign, reg0, ":agent_no"),
+#           (str_store_troop_name, s1, ":agent_troop"),
+#           (assign, reg0, ":agent_no"),
 #           (display_message, "@{s1} ({reg0}) moving to pos"),
          (try_end),
        (else_try),

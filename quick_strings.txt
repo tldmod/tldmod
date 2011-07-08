@@ -1,4 +1,4 @@
-887
+890
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -411,6 +411,9 @@ qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_Forming_ranks. Forming_ranks.
+qstr_On_your_positions_bi On_your_positions,_bitches!!
+qstr_Defenders:_infantry_ Defenders:_infantry_CHARGE!!
+qstr_Defenders:_everyone_ Defenders:_everyone_CHARGE!!
 qstr_Attackers:{reg1}/{re Attackers:{reg1}/{reg3}/{reg5}_Defenders:{reg0}/{reg2}/{reg4}
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
@@ -550,7 +553,7 @@ qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capt
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
 qstr_Gothmog_besieges_Wes Gothmog_besieges_West_Osgiliath!
 qstr_Gothmog_besieges_Cai Gothmog_besieges_Cair_Andros!
-qstr_Saruman_besieges_Wes Saruman_besieges_West_Emnet!
+qstr_Saruman_besieges_Wes Saruman_besieges_Westfold!
 qstr_Partitava_besieges_D Partitava_besieges_Dale!
 qstr_{s10}_besieged! {s10}_besieged!
 qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_a_point_northwest_of_East_Emnet!

@@ -3328,6 +3328,9 @@ troops = [
 ["warg_rider_of_mirkwood","Warg_Rider_of_Mirkwood","Warg_Riders_of_Mirkwood",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_wargarmored_1c,],
       def_attrib|level(22),wp(135),knows_pathfinding_1|knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,orc_face1,orc_face2],
+["gate_aggravator","Gate_is_holding","_",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_mordor_orc_shield_d,itm_orc_coif,itm_orc_ragwrap,itm_orc_slasher,],
+      def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_3|knows_power_strike_2|knows_ironflesh_2,orc_face1,orc_face2],
  
  
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],

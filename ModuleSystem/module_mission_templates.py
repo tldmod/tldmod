@@ -761,7 +761,7 @@ mission_templates = [
 # 
   ( "conversation_encounter",0,-1,
     "Conversation_encounter",
-    [( 0,mtef_visitor_source|mtef_team_0,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
+    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
      ( 2,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 3,mtef_visitor_source,0,0,1,[]),( 4,mtef_visitor_source,0,0,1,[]),( 5,mtef_visitor_source,0,0,1,[]),( 6,mtef_visitor_source,0,0,1,[]),
      ( 7,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 8,mtef_visitor_source,0,0,1,[]),( 9,mtef_visitor_source,0,0,1,[]),(10,mtef_visitor_source,0,0,1,[]),(11,mtef_visitor_source,0,0,1,[]),
     #prisoners now...
@@ -770,38 +770,38 @@ mission_templates = [
      (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),
      (22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,0,0,1,[]),(24,mtef_visitor_source,0,0,1,[]),(25,mtef_visitor_source,0,0,1,[]),(26,mtef_visitor_source,0,0,1,[]),
      (27,mtef_visitor_source,0,0,1,[]),(28,mtef_visitor_source,0,0,1,[]),(29,mtef_visitor_source,0,0,1,[]),(30,mtef_visitor_source,0,0,1,[]),
-	# mob running towards you
-	 (31,mtef_visitor_source,0,aif_start_alarmed,1,[]),
-    #Hostile running towards you
-     (17,mtef_visitor_source|mtef_team_1,af_override_fullhelm,aif_start_alarmed,1,[]),
+# opponent troops cheering
+	 (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
-    [(1, 0, ti_once, [], [(add_reinforcements_to_entry,31,5),]),
-     # (4, 0, ti_once, [], [ 
-			# #attempt to show running orcs (what is this? where is it used? who did this? It is bugged anyway mtarini)
-	         # # (entry_point_get_position,pos1,0),
-			 # # (try_for_agents,":agent"),
-			    # # (agent_get_entry_no,":e",":agent"),
-				# # (this_or_next|eq,":e",32),
-				# # (eq,":e",31),
-				# # (agent_set_scripted_destination,":agent",pos1,1),
-			 # # (try_end),
-	 # ]),
-     # (0.8, 0, 0, [], [ 
-			 # (try_for_agents,":agent"),
-			    # (agent_get_entry_no,":e",":agent"),
-				# (eq,":e",32),
-				# (agent_set_animation,":agent","anim_run_forward_onehanded"),
-			 # (try_end),
-	 # ]),
-     # (0.8, 0, ti_once, [], [ 
-			 # (try_for_agents,":agent"),
-			    # (agent_get_entry_no,":e",":agent"),
-				# (eq,":e",32),
-				# (agent_set_animation,":agent","anim_equip_sword"),
-				# (agent_set_team, ":agent", 2),
-			 # (try_end),
-	 # ]),
-	 
+    [(1, 0, ti_once, [(neq,"$party_meeting",0)], [
+					(try_begin),(encountered_party_is_attacker),(add_reinforcements_to_entry,32,8),
+					 (else_try),								(add_reinforcements_to_entry,31,8),
+					(try_end),]),
+     (3, 2, 0, [], [ 
+#	         (entry_point_get_position,pos1,0),
+			(team_set_relation, 0, 1, 1),
+			(set_show_messages, 0),
+			(team_give_order, 1, grc_everyone, mordr_hold),
+			(team_give_order, 1, grc_archers, mordr_stand_ground),
+			(set_show_messages, 1),
+			(try_begin),
+				 (eq,"$party_meeting",-1),
+				 (try_for_agents,":agent"),
+					(agent_get_entry_no,":e",":agent"),
+					(this_or_next|neq,":e",0),(neq,":e",17),
+					(store_random_in_range,":rnd",0,10),
+					(lt,":rnd",5),
+					(agent_get_horse,":e",":agent"),
+					(try_begin),
+						(eq,":e",-1),
+						(agent_set_animation, ":agent", "anim_cheer"),
+					(else_try),
+						(agent_set_animation, ":agent", "anim_cheer_player_ride"),
+					(try_end),
+				 (try_end),
+			 (try_end),
+			 (assign,"$party_meeting",0),
+			 ]),
 	],
   ),
   
@@ -809,7 +809,6 @@ mission_templates = [
 #mission templates before this point are hardwired into the game.
 #-----------------------------------------------------------------
 
- 
  
   ( "town_center",0,-1,
     "Default town visit",
@@ -1452,38 +1451,35 @@ mission_templates = [
 
   ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
     "You attack the walls of the castle...",
-    [
-     # Attacker initial spawn point (was 0)
+    [# Attacker initial spawn point (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
-
      # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,7,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,12,[]),
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team left flank
-     (42,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team center
-     (43,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
+     (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
+     (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
-     (46,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]), #entry 8 for add_reinforcements_to_entry
      (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
      (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
-     
      # archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
+	 (53,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
 
-	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team center
-     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+	 (54,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,3,[]),
 
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
-	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+	 (57,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      ],
     common_deathcam_triggers+
     tld_common_battle_scripts+[
@@ -1521,19 +1517,23 @@ mission_templates = [
     (assign,"$defender_reinforcement_stage",0),
     (assign,"$attacker_reinforcement_stage",0),
     (assign,"$g_presentation_battle_active", 0),
+	(assign,"$telling_counter",0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
  
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
 	(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
-   
-    (set_show_messages, 0),
+  ]),
+  
+ (5, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
+    (val_add, "$telling_counter",1),
+	(set_show_messages, 0),
     (entry_point_get_position, pos10, 41), #TLD, was 10
     (team_give_order, "$defender_team", grc_infantry, mordr_hold),
     (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team", grc_archers, mordr_stand_ground),
-    (team_set_order_position, "$defender_team", grc_everyone, pos10),
+    (team_set_order_position, "$defender_team", grc_infantry, pos10),
 	(team_set_order_position, "$attacker_team", grc_everyone, pos10),
     
 	(entry_point_get_position, pos11, 42), #TLD
@@ -1541,7 +1541,7 @@ mission_templates = [
     (team_give_order, "$defender_team_2", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team_2", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team_2", grc_archers, mordr_stand_ground),
-    (team_set_order_position, "$defender_team_2", grc_everyone, pos11),
+    (team_set_order_position, "$defender_team_2", grc_infantry, pos11),
 	(team_set_order_position, "$attacker_team_2", grc_everyone, pos11),
 
     (entry_point_get_position, pos12, 43), #TLD
@@ -1549,35 +1549,70 @@ mission_templates = [
     (team_give_order, "$defender_team_3", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team_3", grc_infantry, mordr_stand_closer),
     (team_give_order, "$defender_team_3", grc_archers, mordr_stand_ground),
-    (team_set_order_position, "$defender_team_3", grc_everyone, pos12),
+    (team_set_order_position, "$defender_team_3", grc_infantry, pos12),
 	(team_set_order_position, "$attacker_team_3", grc_everyone, pos12),
     (set_show_messages, 1),
+	# put gate aggravator in place
+	# (entry_point_get_position, pos13, 39),
+	# (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
+	# (agent_set_position,"$gate_aggravator_agent",pos13),
+  ]),
+  
+  (0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
+   [(entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
+	(entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
+    (entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
+	(display_message,"@On your positions, bitches!!"),
   ]),
 	
     common_siege_ai_trigger_init_after_2_secs,
 
   (3, 0, 5, [],
-    [(lt, "$defender_reinforcement_stage", 7),
+    [(lt, "$defender_reinforcement_stage", 15),
      (store_mission_timer_a,":mission_time"),
      (ge,":mission_time",10),
-       (store_normalized_team_count,":num_defenders",0),
-       (lt,":num_defenders",10),
-       (add_reinforcements_to_entry, 5, 7), #TLD, was 4, 7
-       (val_add,"$defender_reinforcement_stage",1),
-   (try_begin),
-     (ge, "$defender_reinforcement_stage", 2),
-       (set_show_messages, 0),
-       (team_give_order, "$defender_team", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-       (team_give_order, "$defender_team_2", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-       (team_give_order, "$defender_team_3", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-       (set_show_messages, 1),
-       (ge, "$defender_reinforcement_stage", 4),
-         (set_show_messages, 0),
-         (team_give_order, "$defender_team", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-         (team_give_order, "$defender_team_2", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-         (team_give_order, "$defender_team_3", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-         (set_show_messages, 1),
-   (try_end),
+		(try_begin),
+		   (store_normalized_team_count,":num_defenders",0),
+		   (lt,":num_defenders",10),
+		   (add_reinforcements_to_entry, 5, 7), #TLD, was 4, 7
+		   (val_add,"$defender_reinforcement_stage",1),
+		(try_end),
+		(try_begin),
+		   (store_normalized_team_count,":num_defenders",2),
+		   (lt,":num_defenders",10),
+		   (add_reinforcements_to_entry, 6, 7), #TLD, was 4, 7
+		   (val_add,"$defender_reinforcement_stage",1),
+		(try_end),
+		(try_begin),
+		   (store_normalized_team_count,":num_defenders",4),
+		   (lt,":num_defenders",10),
+		   (add_reinforcements_to_entry, 7, 7), #TLD, was 4, 7
+		   (val_add,"$defender_reinforcement_stage",1),
+		(try_end),
+		(try_begin),
+		 (ge, "$defender_reinforcement_stage", 5),
+			(set_show_messages, 0),
+			(team_give_order, "$defender_team"  , grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
+			(team_give_order, "$defender_team_2", grc_infantry, mordr_charge),
+			(team_give_order, "$defender_team_3", grc_infantry, mordr_charge),
+			(set_show_messages, 1),
+			(display_message,"@Defenders: infantry CHARGE!!"),
+			(ge, "$defender_reinforcement_stage", 14),
+				(set_show_messages, 0),
+				(team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
+				(team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
+				(team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
+				(set_show_messages, 1),
+				(display_message,"@Defenders: everyone CHARGE!!"),
+	   (try_end),
+	
+	# put gate aggravator in place
+	(try_begin),
+		(eq, "$gate_breached",0),
+		(entry_point_get_position, pos13, 39),
+		(agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
+		(agent_set_position,"$gate_aggravator_agent",pos13),
+	(try_end),
    ]),
    common_siege_defender_reinforcement_archer_reposition,
 
@@ -1597,15 +1632,15 @@ mission_templates = [
     (store_normalized_team_count,":num_attackers",5),(lt,":num_attackers",6)],
    [(add_reinforcements_to_entry,10, 8),(val_add,"$attacker_reinforcement_stage", 1)]),
 
- (5, 0, 0, [], #Make sure attackers do not stall on the ladders...
-   [(try_for_agents, ":agent_no"),  
-      (agent_is_human, ":agent_no"),
-      (agent_is_alive, ":agent_no"),
-      (agent_get_team, ":agent_team", ":agent_no"),
-      (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
-      (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
-    (try_end),
-   ]),
+ # (5, 0, 0, [], #Make sure attackers do not stall on the ladders...
+   # [(try_for_agents, ":agent_no"),  
+      # (agent_is_human, ":agent_no"),
+      # (agent_is_alive, ":agent_no"),
+      # (agent_get_team, ":agent_team", ":agent_no"),
+      # (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
+      # (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+    # (try_end),
+   # ]),
       common_battle_check_friendly_kills,
       common_battle_check_victory_condition,
       common_battle_victory_display,
@@ -1629,6 +1664,7 @@ mission_templates = [
 		(agent_set_team, ":agent", ":team"),
 		(agent_set_slot,":agent",slot_agent_arena_team_set,1),
 	(try_end)]),
+
  (20, 0, 0,[], # report attackers and defenders distribution
    [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),
 	(try_for_agents, ":agent"),

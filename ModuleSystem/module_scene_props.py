@@ -1442,20 +1442,48 @@ scene_props = [
 ("throwing_stone",0,"throwing_stone","0",[]),
 ("Village_fire_big_no_smoke",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_village_fire_big"),]),]),
 
-("gate_destructible",sokf_destructible|spr_hit_points(1000),"door_e_left","bo_door_left",   [
-   (ti_on_scene_prop_destroy,
-    [(store_trigger_param_1, ":instance_no"),
-    (prop_instance_get_starting_position, pos1, ":instance_no"),
-    (position_rotate_z, pos1, 85),
-    (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
-    (play_sound, "snd_dummy_destroyed"),
-	(display_message,"@Gate is breached!"),
+#("horse_steppe_horse",sokf_invisible,"steppe_horse","0", [(ti_on_init_scene_prop,[
+#    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+#	(spawn_horse,"itm_steppe_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+
+("gate_destructible",sokf_destructible|spr_hit_points(2000),"door_e_left","bo_door_left",   [
+   (ti_on_scene_prop_init, [
+		(assign, "$gate_breached",0),
+		(entry_point_get_position,pos1,39),
+		(set_spawn_position, pos1),
+		(spawn_agent,"trp_gate_aggravator"),
+		(assign, "$gate_aggravator_agent", reg0),
+		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
+		(agent_set_team, "$gate_aggravator_agent", 2),
+	]),
+   (ti_on_scene_prop_destroy, [
+		(store_trigger_param_1, ":instance_no"),
+		(prop_instance_get_starting_position, pos1, ":instance_no"),
+		(position_rotate_z, pos1, 85),
+		(prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
+		(play_sound, "snd_dummy_destroyed"),
+		(display_message,"@Gate is breached!"),
+		(assign, "$gate_breached",1),
+		(call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator
     ]),
    (ti_on_scene_prop_hit,
-    [(play_sound, "snd_dummy_hit"),(particle_system_burst, "psys_dummy_smoke", pos1, 3),(particle_system_burst, "psys_dummy_straw", pos1, 10),
+    [(play_sound, "snd_dummy_hit"),
+	(particle_system_burst, "psys_dummy_smoke", pos1, 3),
+	(particle_system_burst, "psys_dummy_straw", pos1, 10),
+	(entry_point_get_position,pos1,39),
+	(agent_set_position, "$gate_aggravator_agent", pos1),
     ]),
 ]),
-("HD_gate_destructible",sokf_destructible|spr_hit_points(1000),"HD_gate_door","bo_HD_gate_door",   [
+("HD_gate_destructible",sokf_destructible|spr_hit_points(2000),"HD_gate_door","bo_HD_gate_door",   [
+   (ti_on_scene_prop_init, [
+		(assign, "$gate_breached",0),
+		(entry_point_get_position,pos1,39),
+		(set_spawn_position, pos1),
+		(spawn_agent,"trp_gate_aggravator"),
+		(assign, "$gate_aggravator_agent", reg0),
+		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
+		(agent_set_team, "$gate_aggravator_agent", 2),
+	]),
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
 	(prop_instance_get_starting_position, pos1, ":instance_no"),
@@ -1463,9 +1491,15 @@ scene_props = [
     (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
 	(display_message,"@Gate is breached!"),
+	(assign, "$gate_breached",1),
+	(call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator
     ]),
    (ti_on_scene_prop_hit,
-    [(play_sound, "snd_dummy_hit"),(particle_system_burst, "psys_dummy_smoke", pos1, 3),(particle_system_burst, "psys_dummy_straw", pos1, 10),
+    [(play_sound, "snd_dummy_hit"),
+	(particle_system_burst, "psys_dummy_smoke", pos1, 3),
+	(particle_system_burst, "psys_dummy_straw", pos1, 10),
+	(entry_point_get_position,pos1,39),
+	(agent_set_position, "$gate_aggravator_agent", pos1),
     ]),
 ]),
 ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
