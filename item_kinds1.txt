@@ -1149,13 +1149,13 @@ itemsfile version 2
  itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
 0
 
- itm_wood_staff Wood_Stuff Wood_Stuff 1  wood_staff 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 20480 95 0 60 0 256 532
+ itm_wood_staff Wooden_Staff Wooden_Staff 1  wood_staff 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 104 0 532 532
 0
 
- itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
+ itm_wood_club Wooden_Club Wooden_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
 0
 
- itm_twohand_wood_club Large_Wood_Club Large_Wood_Club 1  twohand_wood_club 0  342163459 9223635923965575392 500 0 3.500000 100 0 0 0 0 25600 90 0 79 0 256 537
+ itm_twohand_wood_club Large_Wooden_Club Large_Wooden_Club 1  twohand_wood_club 0  73728003 9223635923965575392 500 0 3.500000 100 0 0 0 0 25600 90 0 79 0 256 537
 0
 
  itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
