@@ -1,5 +1,5 @@
 itemsfile version 2
-880
+879
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -7,15 +7,6 @@ itemsfile version 2
 0
 
  itm_practice_sword Practice_Sword Practice_Sword 1  practice_sword 0  12976130 9223388529554358287 3 0 1.500000 100 0 0 0 0 16384 103 0 90 0 524 528
-0
-
- itm_arena_axe Axe Axe 1  arena_axe 0  79953922 9223388530091229198 137 0 1.500000 100 0 0 0 0 23552 100 0 69 0 529 535
-0
-
- itm_arena_sword Sword Sword 1  arena_sword_one_handed 0  4456450 9223388529822793743 243 0 1.500000 100 0 0 0 0 21504 99 0 95 0 529 533
-0
-
- itm_arena_sword_two_handed Two_Handed_Sword Two_Handed_Sword 1  arena_sword_two_handed 0  6553603 9223635924301119728 670 0 2.750000 100 0 0 0 0 29696 93 0 110 0 533 541
 0
 
  itm_arena_lance Lance Lance 1  arena_lance 0  138706948 4222124851990272 90 0 2.500000 100 0 0 0 0 20480 96 0 150 0 537 532
@@ -27,7 +18,7 @@ itemsfile version 2
  itm_practice_bow Practice_Bow Practice_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6291464 5905584128 0 0 1.500000 100 0 0 0 0 0 90 40 0 0 531 0
 0
 
- itm_practice_throwing_axe Practice_Throwing_Axes Practice_Throwing_Axes 1  rohan_throwing_axe 0  71303178 196608 241 0 1.500000 100 0 0 0 0 0 99 20 30 14 542 0
+ itm_wooden_javelin Wooden_Javelins Wooden_Javelins 1  wooden_javelin 0  71368714 262144 209 0 3.000000 100 0 0 0 0 0 89 27 65 2 537 0
 0
 
  itm_human_meat Human_Flesh Human_Flesh 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
@@ -1158,13 +1149,19 @@ itemsfile version 2
  itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
 0
 
+ itm_wood_staff Wood_Stuff Wood_Stuff 1  wood_staff 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 20480 95 0 60 0 256 532
+0
+
+ itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
+0
+
+ itm_twohand_wood_club Large_Wood_Club Large_Wood_Club 1  twohand_wood_club 0  342163459 9223635923965575392 500 0 3.500000 100 0 0 0 0 25600 90 0 79 0 256 537
+0
+
  itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
 0
 
  itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 55 0 256 527
-0
-
- itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
 0
 
  itm_orc_club_a Orc_Club Orc_Club 1  orc_club_a 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 62 0 256 527

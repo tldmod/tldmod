@@ -180,6 +180,7 @@ faction_good
 faction_evil
 rescue_stage
 active_rescue
+party_meeting
 agent_king
 player_is_bowing
 current_player_agent
@@ -241,6 +242,7 @@ team3_default_formation
 team0_reinforcement_stage
 team1_reinforcement_stage
 tld_camera_on
+telling_counter
 defender_team
 attacker_team
 defender_team_2
@@ -456,6 +458,8 @@ wall_missile_troop5
 rescue_convo_troop
 wound_setting
 healing_setting
+gate_breached
+gate_aggravator_agent
 g_encountered_party_2
 g_encountered_party_faction
 g_encountered_party_relation
@@ -650,7 +654,3 @@ qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_map_talk_context
 npc_is_quitting
-party_meeting
-telling_counter
-gate_breached
-gate_aggravator_agent

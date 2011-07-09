@@ -6400,11 +6400,12 @@ game_menus = [
         (party_get_slot, ":encountered_subfaction", "$g_encountered_party", slot_party_subfaction),
 
 		(try_begin),
-			(eq, ":encountered_subfaction", 0),
-			(str_store_faction_name, s61,":encountered_faction"), # non subfaction city get faction name in S61
-		(else_try),
+			(eq, ":encountered_faction", "fac_gondor"),
+			(neq, ":encountered_subfaction", 0),
 			(store_add, ":str_subfaction", ":encountered_subfaction", "str_subfaction_gondor_name_begin"),
 			(str_store_string, s61, ":str_subfaction"),
+		(else_try),
+			(str_store_faction_name, s61,":encountered_faction"), # non subfaction city get faction name in S61
 		(try_end),
 
         (store_relation, ":faction_relation", ":encountered_faction", "fac_player_supporters_faction"),

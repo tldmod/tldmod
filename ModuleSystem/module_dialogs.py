@@ -10811,25 +10811,25 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 
 
 #Enemy faction party
-[anyone,"start", [(eq,"$talk_context",tc_party_encounter),
-                    (eq,"$encountered_party_hostile",1),
-                    (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end)],
-"{s4}", "party_encounter_enemy",[
-     (store_sub, ":greet_str", "$g_encountered_party_faction", kingdoms_begin),
-     (val_mul, ":greet_str", 2),
-     (val_add, ":greet_str", "str_party_greet_enemy_gondor"),
-     (str_store_string, s4, ":greet_str"),
-     (try_begin),
-       (encountered_party_is_attacker),
-       (str_store_string, s4, "@{s4} Surrender or die!"),
-     (else_try),
-       (str_store_string, s4, "@{s4} Attack, and you will pay dearly!"),
-     (try_end)]],
+# [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
+                    # (eq,"$encountered_party_hostile",1),
+                    # (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end)],
+# "{s4}", "party_encounter_enemy",[
+     # (store_sub, ":greet_str", "$g_encountered_party_faction", kingdoms_begin),
+     # (val_mul, ":greet_str", 2),
+     # (val_add, ":greet_str", "str_party_greet_enemy_gondor"),
+     # (str_store_string, s4, ":greet_str"),
+     # (try_begin),
+       # (encountered_party_is_attacker),
+       # (str_store_string, s4, "@{s4} Surrender or die!"),
+     # (else_try),
+       # (str_store_string, s4, "@{s4} Attack, and you will pay dearly!"),
+     # (try_end)]],
 
-[anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)], "We will fight you to the end!", "close_window", []], #auto-attack
-[anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)], "Don't attack! We surrender.", "close_window", [(assign,"$g_player_surrenders",1)]],
-[anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Let's fight and see!", "close_window", [(encounter_attack)]],
-[anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Not this time. Begone.", "close_window", [(assign, "$g_leave_encounter",1)]],
+# [anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)], "We will fight you to the end!", "close_window", []], #auto-attack
+# [anyone|plyr,"party_encounter_enemy", [(encountered_party_is_attacker)], "Don't attack! We surrender.", "close_window", [(assign,"$g_player_surrenders",1)]],
+# [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Let's fight and see!", "close_window", [(encounter_attack)]],
+# [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Not this time. Begone.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
 
 ######################################
