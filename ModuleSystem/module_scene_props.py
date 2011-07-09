@@ -1816,7 +1816,7 @@ scene_props = [
 ("rohan_watchtower",0,"rohan_watchtower","bo_tourrohan",[]),
 ("rohan_stonebase",0,"rohan_stonebase","bo_rohan_stonebase",[]),
 ("rohan_fountain",0,"edoras_fountain","bo_edoras_fountain",[]), 
-  
+
 # Llew Rohan buildings
 ("rohan_palisade",0,"rohan_palisade_a","bo_rohan_palisade_a",[]),
 ("rohan_palisade_slope",0,"rohan_palisade_b","bo_rohan_palisade_b",[]),
