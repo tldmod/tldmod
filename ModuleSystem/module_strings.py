@@ -2190,7 +2190,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 # TLD party encounter greetings - depends on faction IDs staying in the same order
  ("party_greet_friend_gondor", "Hail, friend of the White Tree!"), 
- ("party_greet_enemy_gondor", "Draw your swords if you dare, enemies of Gondor!"), 
+ ("party_greet_enemy_gondor", "Draw your swords if you dare, enemies of Godor!"), 
  ("party_greet_friend_dwarf", "Hail from the Durin's folk, dwarf-friend!"), 
  ("party_greet_enemy_dwarf", "Baruk Khazâd! Khazâd ai-mênu!"), 
  ("party_greet_friend_rohan", "Hail and well met, Rohirrim friend!"), 
@@ -2224,6 +2224,25 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("party_greet_friend_dunland", "Hail, enemy of the horse-people!"), 
  ("party_greet_enemy_dunland", "Your homes will burn and your families shall be cut down!"), 
  ("party_greet_friend_beorn", "Hail, friend of Beorn!"), 
+ ("party_greet_enemy_beorn", "You will taste the fury of the bear people!"), 
+
+ ("party_greet_enemy_att_gondor", "Tonight there will be one less enemiy of Gondor!"), 
+ ("party_greet_enemy_att_dwarf", "Baruk Khazâd! Khazâd ai-mênu!"), 
+ ("party_greet_enemy_att_rohan", "Riders of Rohan! Remember what do you fight for!"), 
+ ("party_greet_enemy_mordor", "More heads to decorate the gates of Morannon!"), 
+ ("party_greet_enemy_isengard", "The Wise Master shall be pleased when I show him the bodies of {playername}!"), 
+ ("party_greet_enemy_lorien", "Foul thing, we will put an end to your suffering!"), 
+ ("party_greet_enemy_imladris", "Today we make battle, enemies of Imladris and all that is fair!"), 
+ ("party_greet_enemy_woodelf", "All who enter Mirkwood with malice shall never leave!"), 
+ ("party_greet_enemy_dale", "Draw your swords, we are the Men of Dale!"), 
+ ("party_greet_enemy_harad", "Your many bodies shall be ground into the sand!"), 
+ ("party_greet_enemy_rhun", "Dwarves and Men are no match for our fierceness!"), 
+ ("party_greet_enemy_khand", "Put on the masks of warriors, for today you shall meet your doom!"), 
+ ("party_greet_enemy_umbar", "If we were at sea, you would dance on a plank soon enough!"), 
+ ("party_greet_enemy_moria", "You shall have your throats cut by the orcs of Moria!"), 
+ ("party_greet_enemy_guldur", "The Elves and their friends shall fall under our blades!"), 
+ ("party_greet_enemy_gundabad", "We shall descend on you and feast on your entrails!"), 
+ ("party_greet_enemy_dunland", "Your homes will burn and your families shall be cut down!"), 
  ("party_greet_enemy_beorn", "You will taste the fury of the bear people!"), 
 
 

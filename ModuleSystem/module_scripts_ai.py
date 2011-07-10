@@ -2774,8 +2774,6 @@ ai_scripts = [
 # (str_store_party_name, s13, ":party1"),
 # (str_store_party_name, s14, ":party2"),
 # (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
-    (else_try),
-    (try_end),
 ]),
 
 # script_cf_party_is_south_of_white_mountains  (drastically simpler version -- mtarini)

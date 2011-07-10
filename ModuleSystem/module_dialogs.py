@@ -480,8 +480,6 @@ dialogs = [
 [anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "hostile_dialog",[
 	(assign, ":defending", 1),
 	(try_begin),
-		(store_random_in_range, ":rand", 0,100),
-		(this_or_next|lt,":rand", 20),  # 20% of times, use attack battle cries even if defending
 		(encountered_party_is_attacker),
 		(assign, ":defending", 0),
 	(try_end),

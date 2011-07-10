@@ -1350,7 +1350,8 @@ tld_player_level_to_own_chest = 10
 # three factions sides
 faction_side_good = 0  
 faction_side_eye = 1 
-faction_side_hand = 2     
+faction_side_hand = 2
+faction_side_noside = 3 # outlaws etc
 
 # four theaters
 theater_SE = 1<<0  

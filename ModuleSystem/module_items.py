@@ -58,7 +58,7 @@ items =[
 ["arena_lance","Lance",[("arena_lance",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield,itc_staff|itcf_carry_spear,90,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_polearm],
 ["practice_staff","Practice_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,9,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(12,blunt),imodbits_none],
 ["practice_bow","Practice_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_type_bow|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back,0,weight(1.5)|difficulty(0)|shoot_speed(40)|spd_rtng(90)|thrust_damage(19,blunt),imodbits_bow],
-["wooden_javelin","Wooden_Javelins",[("wooden_javelin",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin,209,weight(3)|difficulty(0)|shoot_speed(27)|spd_rtng(89)|weapon_length(65)|thrust_damage(25,blunt)|max_ammo(2),imodbits_thrown],
+["wooden_javelin","Wooden_Javelins",[("wooden_javelin",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin,209,weight(3)|difficulty(0)|shoot_speed(27)|spd_rtng(89)|weapon_length(65)|thrust_damage(25,blunt)|max_ammo(5),imodbits_thrown],
 
 #["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,241,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(30,blunt)|max_ammo(14),imodbits_thrown],
 #
