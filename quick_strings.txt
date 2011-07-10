@@ -1,4 +1,4 @@
-925
+926
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -214,10 +214,10 @@ qstr_We_are_under_attack! We_are_under_attack!
 qstr_Horse_people!_The_ho Horse_people!_The_horse_people_are_upon_us!
 qstr_Men_from_the_White_C Men_from_the_White_City?_Let_them_came,_to_their_death!
 qstr_Death_to_men! Death_to_men!
-qstr_Kill_them_all!_Take_ Kill_them_all!_Take_no_prisoners!
 qstr_Kill_the_moggots! Kill_the_moggots!
 qstr_Death_to_traitors_of Death_to_traitors_of_the_Eye!
 qstr_Death_to_traitors_of_ Death_to_traitors_of_the_White_Hand!
+qstr_{s14}Kill_them_all!_ {s14}Kill_them_all!_Take_no_prisoners!
 qstr_Tonight_we_feast_on_ Tonight_we_feast_on_{s15}_flash!
 qstr_Gharr!_Kill!_Kill!_K Gharr!_Kill!_Kill!_Kill!
 qstr_Slaughter_these_half Slaughter_these_half_men!
@@ -225,7 +225,7 @@ qstr_Fear_no_elven_ghosts Fear_no_elven_ghosts!
 qstr_{s14}Double_rations_ {s14}Double_rations_to_the_one_taking_me_the_most_heads!
 qstr_{s14}Double_rations_t {s14}Double_rations_to_the_one_taking_me_the_most_{s15}_heads!
 qstr_{s14}Kill_these_hors {s14}Kill_these_horse_thieves!
-qstr_Kill_them_all!_Take_b Kill_them_all!_Take_back_what_is_our!
+qstr_Kill_them_all!_Take_ Kill_them_all!_Take_back_what_is_our!
 qstr_Tonight_there_will_b Tonight_there_will_be_one_less_enemy_of_{s16}!
 qstr_Baruk_Khazâd!_Khazâd Baruk_Khazâd!_Khazâd_ai-mênu!
 qstr_{s14}Riders_of_Rohan {s14}Riders_of_Rohan!_Remember_what_do_you_fight_for!
@@ -237,13 +237,14 @@ qstr_All_who_enter_Mirkwo All_who_enter_Mirkwood_with_malice_shall_never_leave!
 qstr_Men_of_{s16}_the_ene Men_of_{s16},_the_enemy_is_here!_Fight_for_your_land!
 qstr_Men_of_{s16}_charge! Men_of_{s16},_charge!_Fight_for_your_land!
 qstr_{s14}Make_their_bodi {s14}Make_their_bodies_ground_into_the_sand!
-qstr_{s14}Dwarves_or_man_ {s14}Dwarves_or_man,_they_are_no_match_for_our_fierceness!
-qstr_{s14}Elves_or_man_th {s14}Elves_or_man,_they_are_no_match_for_our_fierceness!
+qstr_{s14}Dwarves_or_men_ {s14}Dwarves_or_men,_they_are_no_match_for_our_fierceness!
+qstr_{s14}Elves_or_men_th {s14}Elves_or_men,_they_are_no_match_for_our_fierceness!
 qstr_{s14}Flesh_to_shatte {s14}Flesh_to_shatter,_throats_to_cut,_blood_to_spill!
-qstr_Put_on_the_masks_of_ Put_on_the_masks_of_warriors,_men!_Today_the_doom_falls!
+qstr_Put_on_the_masks_of_ Put_on_the_masks_of_warriors,_men!_Today_the_doom_falls_upon_our_enemyes_from_{s18}!
 qstr_They_are_seeking_tem They_are_seeking_tempset,_and_they_shall_have_it!_Men,_prepare_to_fight!
 qstr_Draw_your_weapons_me Draw_your_weapons,_men,_for_tempests_is_falling_upon_our_enemies!
-qstr_Orcs_of_Moria!_Here_ Orcs_of_Moria!_Here_are_a_few_throats_for_you_to_cut!
+qstr_Orcs_of_{s16}_get_re Orcs_of_{s16},_get_ready!_Here_are_a_few_throats_for_you_to_cut!
+qstr_These_friend_of_elve These_friend_of_elves_will_fall_under_our_blades!
 qstr_These_Elves_will_fal These_Elves_will_fall_under_our_blades!
 qstr_Raahh!_Draw_your_wea Raahh!_Draw_your_weapons,_scum_of_{s16}!_Tonight_we_feast_on_{s15}_entrails!
 qstr_Rha!_{s14}More_{s15} Rha!_{s14}More_{s15}_bodies_to_disfigure_with_our_twisted_weapons!
