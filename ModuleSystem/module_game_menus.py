@@ -2688,6 +2688,14 @@ game_menus = [
 	     (store_sub, "$tld_option_town_menu_hidden", 1, "$tld_option_town_menu_hidden"),
          (val_clamp, "$tld_option_town_menu_hidden", 0, 2),
 		]),
+	  ("game_options_town_menu",[
+	     (try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
+          (else_try), (str_store_string, s7, "@OFF"),
+         (try_end),
+	    ],"Cutscenes: {s7}",[
+	     (store_sub, "$tld_option_cutscenes", 1, "$tld_option_cutscenes"),
+         (val_clamp, "$tld_option_cutscenes", 0, 2),
+		]),
 	  ("game_options_death",[
 	     (try_begin),(neq, "$tld_option_death", 0),(str_store_string, s7, "@ON"),
           (else_try),                              (str_store_string, s7, "@OFF"),

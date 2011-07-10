@@ -1840,6 +1840,7 @@ scripts = [
       (assign, "$tld_option_formations", 1),
 	  (assign, "$tld_option_town_menu_hidden", 0), #all town features accesible by default
 	  (assign, "$tld_option_death", 0), #permanent death for npcs
+	  (assign, "$tld_option_cutscenes", 0),
 	  (assign, "$wound_setting", 7), # rnd, 0-3 result in wounds
 	  (assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 
@@ -10928,7 +10929,7 @@ scripts = [
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(is_between, ":raceA", tf_orc_begin, tf_orc_end),
-			(str_store_string, s4, "@Tonight we feast on {s15} flash!"),
+			(str_store_string, s4, "@Tonight we feast on {s15} flesh!"),
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(is_between, ":raceA", tf_orc_begin, tf_orc_end),

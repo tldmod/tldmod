@@ -1494,7 +1494,10 @@ triggers = [
           (try_end),
 		(try_end),
         # start the intro cutscene sequence
-        (jump_to_menu, "mnu_auto_intro_rohan"),
+		(try_begin),
+			(eq, "$tld_option_cutscenes",1),
+			(jump_to_menu, "mnu_auto_intro_rohan"),
+		(try_end),
         ]
     ),
 	
