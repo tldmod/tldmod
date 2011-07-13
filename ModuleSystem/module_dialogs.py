@@ -477,7 +477,7 @@ dialogs = [
 # "{s5}", "close_window",[]],
 
 
-[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter)], "Warning: This line should never be displayed.", "hostile_dialog",[
+[anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq,"$encountered_party_hostile",1),], "Warning: This line should never be displayed.", "hostile_dialog",[
 	(assign, ":defending", 1),
 	(try_begin),
 		(encountered_party_is_attacker),
