@@ -1947,6 +1947,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     ("p_town_minas_morgul" ,0                     ,"snd_morgul_ambiance"          ,"snd_morgul_occasional"),
     ("p_town_gundabad_mirkwood_outpost","snd_orcs_ambiance","snd_evilforest_ambiance","snd_orc_occasional"),
     ("p_town_troll_cave"   ,0                     ,"snd_evilforest_ambiance"      ,"snd_orc_occasional"),
+    ("p_town_morannon"     ,0                     ,"snd_wind_ambiance"            ,0),
 ] 
 
 ## tableau meshes list for factions

@@ -1,5 +1,5 @@
 itemsfile version 2
-879
+880
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -18,7 +18,7 @@ itemsfile version 2
  itm_practice_bow Practice_Bow Practice_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6291464 5905584128 0 0 1.500000 100 0 0 0 0 0 90 40 0 0 531 0
 0
 
- itm_wooden_javelin Wooden_Javelins Wooden_Javelins 1  wooden_javelin 0  71368714 262144 209 0 3.000000 100 0 0 0 0 0 89 27 65 5 537 0
+ itm_wooden_javelin Wooden_javelin Wooden_javelin 1  wooden_javelin 0  71303178 262144 209 0 3.000000 100 0 0 0 0 0 89 27 65 5 537 0
 0
 
  itm_human_meat Human_Flesh Human_Flesh 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
@@ -318,25 +318,25 @@ itemsfile version 2
  itm_blackwhite_dress Lady_Dress Lady_Dress 1  gondor_dress_b 0  553713677 0 500 0 3.000000 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_white_tunic_a White_Tunic White_Tunic 1  generic_tunic_a 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_white_tunic_a White_Tunic White_Tunic 1  generic_tunic_a 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_white_tunic_b Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_white_tunic_b Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_white_tunic_c Tunic_Jacket Tunic_Jacket 1  generic_tunic_c 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_white_tunic_c Tunic_Jacket Tunic_Jacket 1  generic_tunic_c 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_blue_tunic Blue_Tunic Blue_Tunic 1  dale_tunic 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_blue_tunic Blue_Tunic Blue_Tunic 1  dale_tunic 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_black_tunic Black_Tunic Black_Tunic 1  gondor_tunic 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_black_tunic Black_Tunic Black_Tunic 1  gondor_tunic 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_green_tunic Green_Tunic Green_Tunic 1  rohan_tunic 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_green_tunic Green_Tunic Green_Tunic 1  rohan_tunic 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_red_tunic Red_Tunic Red_Tunic 1  haradrim_tunic 0  553713677 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_red_tunic Red_Tunic Red_Tunic 1  haradrim_tunic 0  553713677 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
  itm_leather_apron Leather_Apron Leather_Apron 1  smith_leather_apron 0  553713677 0 61 0 3.000000 100 0 8 7 0 0 0 0 0 0 0 0
@@ -351,7 +351,7 @@ itemsfile version 2
  itm_green_dress Green_Dress Green_Dress 1  rohan_dress 0  553713677 0 500 0 6.000000 100 0 13 6 0 0 0 0 0 0 0 0
 0
 
- itm_tld_tunic Tunic Tunic 1  tld_tunic 0  553648141 0 47 0 2.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_tld_tunic Tunic Tunic 1  tld_tunic 0  553648141 0 47 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063535 1729382256910270480 1224979098644774912 1224979098644774913 
 
@@ -803,7 +803,7 @@ itemsfile version 2
  itm_pelargir_greaves Pelargir_Greaves Pelargir_Greaves 1  pelargir_greaves 0  69390 0 760 0 3.000000 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_lossarnach_shirt Lossarnach_Shirt Lossarnach_Shirt 1  lossarnach_shirt 0  16842765 0 500 0 6.000000 100 0 12 4 0 0 0 0 0 0 0 0
+ itm_lossarnach_shirt Lossarnach_Shirt Lossarnach_Shirt 1  lossarnach_shirt 0  16842765 0 500 0 6.000000 100 0 8 4 0 0 0 0 0 0 0 0
 0
 
  itm_lossarnach_axeman Lossarnach_Axeman_Armor Lossarnach_Axeman_Armor 1  lossarnach_axeman 0  16842765 0 500 0 8.000000 100 0 23 4 0 0 0 0 0 0 0 0
@@ -981,13 +981,13 @@ itemsfile version 2
  itm_orc_furboot_tall Orc_Fur_Boots Orc_Fur_Boots 1  orc_furboot_tall 0  65550 0 200 0 3.000000 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_orc_tribal_a Untreated_Skin Untreated_Skin 1  orc_tribal_a 0  16781325 0 1 0 3.000000 100 0 5 0 0 0 0 0 0 0 0 0
+ itm_orc_tribal_a Untreated_Skin Untreated_Skin 1  orc_tribal_a 0  16781325 0 1 0 3.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_tribal_b Untreated_Skin Untreated_Skin 1  orc_tribal_b 0  16781325 0 1 0 3.000000 100 0 5 1 0 0 0 0 0 0 0 0
+ itm_orc_tribal_b Untreated_Skin Untreated_Skin 1  orc_tribal_b 0  16781325 0 1 0 3.000000 100 0 2 1 0 0 0 0 0 0 0 0
 0
 
- itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16781325 0 1 0 2.000000 100 0 5 3 0 0 0 0 0 0 0 0
+ itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16781325 0 1 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
  itm_evil_gauntlets_a Gauntlets Gauntlets 1  gauntlet_a_L 0  65551 0 1940 0 1.000000 100 0 5 0 0 0 0 0 0 0 0 0
@@ -1149,13 +1149,13 @@ itemsfile version 2
  itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 227 0 3.500000 100 0 1 0 0 600 76 0 81 0 0 0
 0
 
- itm_wood_staff Wooden_Staff Wooden_Staff 1  wood_staff 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 104 0 532 532
+ itm_wood_staff Wooden_stuff Wooden_stuff 1  harad_short_spear 0  138903556 4222129415393024 60 0 2.000000 100 0 0 0 0 20480 104 0 104 0 532 532
 0
 
- itm_wood_club Wooden_Club Wooden_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
+ itm_wood_club Wood_Club Wood_Club 1  wood_club 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 60 0 256 527
 0
 
- itm_twohand_wood_club Large_Wooden_Club Large_Wooden_Club 1  twohand_wood_club 0  73728003 9223635923965575392 500 0 3.500000 100 0 0 0 0 25600 90 0 79 0 256 537
+ itm_twohand_wood_club Large_Wooden_Club Large_Wooden_Club 1  twohand_wood_club 0  342163459 9223635923965575392 500 0 3.500000 100 0 0 0 0 25600 90 0 79 0 256 537
 0
 
  itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 30 0 2.500000 100 0 0 0 0 15360 95 0 53 0 256 527
@@ -1724,7 +1724,7 @@ itemsfile version 2
  itm_mirkwood_leather_greaves Mirkwood_Leather_Greaves Mirkwood_Leather_Greaves 1  mirkwood_boots 0  69390 0 760 0 3.000000 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
- itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 65 0 7.000000 100 0 10 0 0 0 0 0 0 0 0 0
+ itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 65 0 7.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
  itm_harad_padded Harondor_Padded_Armor Harondor_Padded_Armor 1  harad_padded 0  16842765 0 65 0 7.000000 100 0 18 4 0 0 0 0 0 0 0 0
@@ -2291,7 +2291,7 @@ itemsfile version 2
  itm_umbar_pike Umbar_Pike Umbar_Pike 1  corsair_pike 0  407207940 201326848 125 0 3.000000 100 0 0 0 0 16384 81 0 191 0 282 528
 0
 
- itm_woodman_tunic Woodman_Tunic Woodman_Tunic 1  woodman_tunic 0  16842765 0 152 0 15.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_woodman_tunic Woodman_Tunic Woodman_Tunic 1  woodman_tunic 0  16842765 0 152 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
  itm_woodman_scout Woodman_Scout_Cape Woodman_Scout_Cape 1  woodman_scout 0  16842765 0 152 0 15.000000 100 0 10 6 0 0 0 0 0 0 0 0
@@ -2300,7 +2300,7 @@ itemsfile version 2
  itm_woodman_padded Woodman_Padded_Armor Woodman_Padded_Armor 1  woodman_padded 0  16842765 0 152 0 15.000000 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_tunic Beorning_Tunic Beorning_Tunic 1  beorn_tunic 0  16842765 0 152 0 15.000000 100 0 3 6 0 0 0 0 0 0 0 0
+ itm_beorn_tunic Beorning_Tunic Beorning_Tunic 1  beorn_tunic 0  16842765 0 152 0 2.000000 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_padded Beorning_Padded_Armor Beorning_Padded_Armor 1  beorn_padded 0  16842765 0 152 0 15.000000 100 0 10 6 0 0 0 0 0 0 0 0
@@ -2647,6 +2647,9 @@ itemsfile version 2
 0
 
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_good_mace Mace Mace 1  good_mace 0  4653058 9223388532775583758 30 0 2.500000 100 0 0 0 0 25600 95 0 67 0 527 537
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 2755 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0

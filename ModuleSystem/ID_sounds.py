@@ -255,5 +255,7 @@ snd_seaside_occasional = 253
 snd_morgul_occasional = 254
 snd_eosgi_occasional = 255
 snd_wosgi_occasional = 256
+snd_tirith_occasional = 257
+snd_morannon_occasional = 258
 
 

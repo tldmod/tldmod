@@ -876,4 +876,5 @@ itm_crebain_reward = 874
 itm_miruvor_reward = 875
 itm_wheeled_cage = 876
 itm_khamul_helm = 877
-itm_witchking_helmet = 878
+itm_good_mace = 878
+itm_witchking_helmet = 879
