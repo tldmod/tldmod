@@ -2740,6 +2740,7 @@ game_menus = [
     ],
   ),
 		 
+  # what is this? a cut and paste version of defeat? plase merge code rather than cutting and pasting. --- mtarini
   (
     "assasins_attack_player_defeated",mnf_scale_picture,
     "You should not be reading this...",
@@ -2787,6 +2788,10 @@ game_menus = [
 		
 		(assign,"$g_move_heroes",0),
 		(party_clear, "p_temp_party"),
+		
+		(store_faction_of_party, ":fac","$g_enemy_party"),
+		(party_set_faction, "p_temp_party", ":fac"), # mtarini: need this 
+		
 		(call_script, "script_party_add_party_prisoners", "p_temp_party", "p_main_party"),
 		(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party"),
 		(distribute_party_among_party_group, "p_temp_party","$capturer_party"),
@@ -4284,6 +4289,8 @@ game_menus = [
 	],
 ),
 
+
+
 ( "total_victory",0,
     "You shouldn't be reading this... {s9}",
     "none",
@@ -4420,6 +4427,9 @@ game_menus = [
           (eq, "$capture_screen_shown", 0),
           (assign, "$capture_screen_shown", 1),
           (party_clear, "p_temp_party"),
+
+		  (party_set_faction, "p_temp_party", "$players_kingdom"),  # mtarini: need this to avoid to free enemyes
+		
           (assign, "$g_move_heroes", 0),
           (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_collective_enemy"),
           (call_script, "script_party_add_party_prisoners", "p_temp_party", "p_collective_enemy"),
@@ -4434,6 +4444,7 @@ game_menus = [
             # move ally_party_initial_strength/(player_party_initial_strength + ally_party_initial_strength) prisoners to ally party.
             # First we collect the share of prisoners of the ally party and distribute those among the allies.
             (store_sub, ":ally_party_initial_strength", ":total_initial_strength", ":player_party_initial_strength"),
+
 
 #            (call_script, "script_party_calculate_strength", "p_ally_party_backup"),
 #            (assign,":ally_party_initial_strength", reg(0)),
@@ -4451,12 +4462,15 @@ game_menus = [
             (try_end),
              #next if there's anything left, we'll open up the party exchange screen and offer them to the player.
           (try_end),
+
           
           (party_get_num_companions, ":num_rescued_prisoners", "p_temp_party"),
           (try_begin),
             (check_quest_active, "qst_rescue_prisoners"),
             (quest_set_slot, "qst_rescue_prisoners", slot_quest_target_center, ":num_rescued_prisoners"), #abusing a slot as a global
           (try_end),
+		  
+		  
           (party_get_num_prisoners,  ":num_captured_enemies", "p_temp_party"),
           (store_add, ":total_capture_size", ":num_rescued_prisoners", ":num_captured_enemies"),
           (gt, ":total_capture_size", 0),
@@ -4607,6 +4621,10 @@ game_menus = [
 
           (assign, "$g_move_heroes", 0),
           (party_clear, "p_temp_party"),
+		  
+		  (store_faction_of_party, ":fac","$g_enemy_party"),
+		  (party_set_faction, "p_temp_party", ":fac"),
+
           (call_script, "script_party_add_party_prisoners", "p_temp_party", "p_main_party"),
           (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party"),
           (distribute_party_among_party_group, "p_temp_party", "$g_enemy_party"),

@@ -1,4 +1,4 @@
-926
+925
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -252,7 +252,6 @@ qstr_Slaughter_these_puny Slaughter_these_puny_thieves_of_{s18}_now!_Then_we_bur
 qstr_Death_to_the_trespas Death_to_the_trespassers_of_the_land_of_{s16}!
 qstr_CHARGE!_Let_s_clean_ CHARGE!_Let's_clean_{s17}_from_the_{s19}scum_of_{s18}!
 qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bear_people!
-qstr_DEBUG:_{reg54}_attem DEBUG:_{reg54}_attempts!_({reg40},{reg41},{reg42},{reg43},{reg44},{reg45},{reg46},{reg47}...on_{reg55})
 qstr_DEBUG:_def:{reg40}_F DEBUG:_def:{reg40}_Fac:({reg41},{reg42},{reg43})._Sid:({reg44},{reg45})._Rac:({reg46},{reg47})._Region:{reg48}
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains

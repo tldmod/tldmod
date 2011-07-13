@@ -2160,6 +2160,9 @@ scripts = [
                 (ge, ":collective_casualties", 0),
                 (party_clear, "p_temp_party"),
                 (assign, "$g_move_heroes", 1), 
+				
+				(party_set_faction, "p_temp_party", ":faction_receiving_prisoners"),
+
                 (call_script, "script_party_add_party_prisoners", "p_temp_party", ":collective_casualties"),
                 (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", ":collective_casualties"),
              (try_end),
@@ -3199,6 +3202,9 @@ scripts = [
 	(else_try), (assign, reg0, ":val_c"),
 	(try_end),
   ]),
+  
+
+
 
   #script_game_get_party_prisoner_limit:
   # This script is called from the game engine when the prisoner limit is needed for a party.
@@ -4459,17 +4465,32 @@ scripts = [
   #script_party_add_party_prisoners:
   # INPUT: param1: Party-id to add the second party, param2: Party-id which will be added to the first one.
   # "$g_move_heroes" : controls if heroes will also be added.
+  # mtarini: in TLD remember to set faction of target party before calling this!
   ("party_add_party_prisoners",
     [
       (store_script_param_1, ":target_party"), #Target Party_id
       (store_script_param_2, ":source_party"), #Source Party_id
+	  
+	  (store_faction_of_party, ":fac_a",":target_party"), # mtarini: store faction of receiving party
+	  
       (party_get_num_prisoner_stacks, ":num_stacks",":source_party"),
       (try_for_range, ":stack_no", 0, ":num_stacks"),
         (party_prisoner_stack_get_troop_id,     ":stack_troop",":source_party",":stack_no"),
         (this_or_next|neg|troop_is_hero, ":stack_troop"),
         (eq, "$g_move_heroes", 1),
         (party_prisoner_stack_get_size,         ":stack_size",":source_party",":stack_no"),
-        (party_add_members, ":target_party", ":stack_troop", ":stack_size"),
+		
+		# mtarini for TLD: adding freed prisoners to prisoners or to companinons, according to if they are friend enemies
+		(try_begin),
+			(store_troop_faction,":fac_b",":stack_troop"),
+			(store_relation, ":rel" ,":fac_a" ,":fac_b"),
+			(gt, ":rel", 0), # receiving partyis friend with freed prisoner
+			(call_script, "script_cf_factions_are_allies", ":fac_b",":fac_a"),
+			(party_add_members, ":target_party", ":stack_troop", ":stack_size"), 
+		(else_try),
+			# receiving party is enemy with freed prisoners
+			(party_add_prisoners, ":target_party", ":stack_troop", ":stack_size"), 
+		(try_end),
       (try_end),
   ]),
   
@@ -10856,14 +10877,6 @@ scripts = [
 	(assign,  ":rand", -1), # first pass will fail
 	(try_for_range, ":i", 0, 2000),
 		(eq, ":done", 0), 
-		(try_begin),(eq,":i",0),(assign, reg40,":rand"),(try_end),
-		(try_begin),(eq,":i",1),(assign, reg41,":rand"),(try_end),
-		(try_begin),(eq,":i",2),(assign, reg42,":rand"),(try_end),
-		(try_begin),(eq,":i",3),(assign, reg43,":rand"),(try_end),
-		(try_begin),(eq,":i",4),(assign, reg44,":rand"),(try_end),
-		(try_begin),(eq,":i",5),(assign, reg45,":rand"),(try_end),
-		(try_begin),(eq,":i",6),(assign, reg46,":rand"),(try_end),
-		(try_begin),(eq,":i",7),(assign, reg47,":rand"),(try_end),
 		
 		(try_begin),(eq,":rand",first_count()),
 			(eq, ":defending", 1),
@@ -11094,7 +11107,6 @@ scripts = [
 	(try_end),
 	
 	(assign, reg55, curr_count() ),
-	(display_message, "@DEBUG: {reg54} attempts! ({reg40},{reg41},{reg42},{reg43},{reg44},{reg45},{reg46},{reg47}...on {reg55})"),
 	(assign, reg40, ":defending"),
 	(assign, reg41,":factionA"),
 	(assign, reg42,":factionB"),
