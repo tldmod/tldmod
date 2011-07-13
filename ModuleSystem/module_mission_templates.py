@@ -38,7 +38,7 @@ pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 
-# dynamic fog in dungeons, governed by player triggering scene props
+# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
 dungeon_darkness_effect = (1, 0, 0, [], [ 
 	(get_player_agent_no,":player"), 
     (agent_get_position,pos25,":player"),
@@ -221,7 +221,7 @@ common_move_forward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, 10),
+      (position_move_y, pos1, 18),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -234,7 +234,7 @@ common_move_backward_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_y, pos1, -10),
+      (position_move_y, pos1, -18),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -247,7 +247,7 @@ common_move_left_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, -10),
+      (position_move_x, pos1, -13),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -261,7 +261,7 @@ common_move_right_deathcam = (
    ],
    [  (get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
-      (position_move_x, pos1, 10),
+      (position_move_x, pos1, 13),
       (agent_set_position, ":player_agent", pos1),
    ]
 )
@@ -770,38 +770,81 @@ mission_templates = [
      (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),
      (22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,0,0,1,[]),(24,mtef_visitor_source,0,0,1,[]),(25,mtef_visitor_source,0,0,1,[]),(26,mtef_visitor_source,0,0,1,[]),
      (27,mtef_visitor_source,0,0,1,[]),(28,mtef_visitor_source,0,0,1,[]),(29,mtef_visitor_source,0,0,1,[]),(30,mtef_visitor_source,0,0,1,[]),
-# opponent troops cheering
+	# opponent troops cheering
 	 (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
-    [(1, 0, ti_once, [(neq,"$party_meeting",0)], [
-					(try_begin),(encountered_party_is_attacker),(add_reinforcements_to_entry,32,8),
-					 (else_try),								(add_reinforcements_to_entry,31,8),
-					(try_end),]),
+    [
+	  # other people in the backgroud
+	  (1, 0, ti_once, [(neq,"$party_meeting",0)], 
+	    [
+			# a small comment about the purpose of this? Position of enemy/freindly troops changes according to attacking/non attacking?
+			(try_begin),(encountered_party_is_attacker),
+				(add_reinforcements_to_entry,32,8),  
+		    (else_try),								
+				(add_reinforcements_to_entry,31,8),
+			(try_end),
+		]
+	   ),
+
+		# freindly greetings (after 0.2 secs)
+		(0, 0.2, ti_once, [], [ 
+			(eq,"$party_meeting",1), # feindly
+			(try_for_agents,":agent"),
+				
+				(agent_is_human, ":agent"),
+				(agent_get_entry_no,":e",":agent"),(eq,":e",17),
+				(agent_get_troop_id, ":trp", ":agent"),
+				(troop_get_type, ":race", ":trp"),
+				(store_troop_faction, ":fac", ":trp"),
+				(assign, ":greet_ani", -1),
+				(try_begin), (is_between,  ":race", tf_elf_begin, tf_elf_end), 
+					(assign, ":greet_ani", "anim_greet_elf"),
+				(else_try), (is_between,  ":race", tf_orc_begin, tf_orc_end), 
+					(assign, ":greet_ani", "anim_greet_orc"),
+				(else_try),
+					(this_or_next|eq, ":fac", "fac_gondor"),
+					(this_or_next|eq, ":fac", "fac_umbar"),
+					(eq, ":fac", "fac_rohan"),
+					(assign, ":greet_ani", "anim_greet_human"),
+				(try_end),
+				(try_begin),
+					(gt,":greet_ani",0), 
+					(agent_get_horse,":e",":agent"),					
+					(try_begin),(ge,":e",0), 
+						(val_add, ":greet_ani", 1),
+					(try_end),
+				
+					(agent_set_animation, ":agent", ":greet_ani"),
+				(try_end),
+			(try_end),
+			
+		]),
+	   
      (3, 2, 0, [], [ 
 #	         (entry_point_get_position,pos1,0),
-			(team_set_relation, 0, 1, 1),
-			(set_show_messages, 0),
-			(team_give_order, 1, grc_everyone, mordr_hold),
-			(team_give_order, 1, grc_archers, mordr_stand_ground),
-			(set_show_messages, 1),
-			(try_begin),
-				 (eq,"$party_meeting",-1),
-				 (try_for_agents,":agent"),
-					(agent_get_entry_no,":e",":agent"),
-					(this_or_next|neq,":e",0),(neq,":e",17),
-					(store_random_in_range,":rnd",0,10),
-					(lt,":rnd",5),
-					(agent_get_horse,":e",":agent"),
-					(try_begin),
-						(eq,":e",-1),
-						(agent_set_animation, ":agent", "anim_cheer"),
-					(else_try),
-						(agent_set_animation, ":agent", "anim_cheer_player_ride"),
-					(try_end),
-				 (try_end),
-			 (try_end),
-			 (assign,"$party_meeting",0),
-			 ]),
+		(team_set_relation, 0, 1, 1),
+		(set_show_messages, 0),
+		(team_give_order, 1, grc_everyone, mordr_hold),
+		(team_give_order, 1, grc_archers, mordr_stand_ground),
+		(set_show_messages, 1),
+		(try_begin),
+			 (eq,"$party_meeting",-1), # hostile, and only once
+			 (try_for_agents,":agent"),
+				(agent_get_entry_no,":e",":agent"),
+				(this_or_next|neq,":e",0),(neq,":e",17), # <== WARINING: this makes no sense (mtairni)
+				
+				(store_random_in_range,":rnd",0,10),(lt,":rnd",5), # 50% of times
+				
+				(agent_get_horse,":e",":agent"),					
+				(try_begin),(eq,":e",-1), 
+					(agent_set_animation, ":agent", "anim_cheer"),
+				(else_try),
+					(agent_set_animation, ":agent", "anim_cheer_player_ride"),
+				(try_end),
+			(try_end),
+		(try_end),
+		(assign,"$party_meeting",0),
+	  ]),
 	],
   ),
   

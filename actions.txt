@@ -722,18 +722,18 @@
   0.250000 anim_human 50 50 16 0 0.000000 0.000000 0.000000  0.000000 
  cancel_ani_ride 0  1
   0.250000 stand_onhorse 0 0 16 0 0.000000 0.000000 0.000000  0.000000 
- unused_human_anim_31 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_32 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_33 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_34 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_35 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_36 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
+ greet_elf 0  1
+  1.300000 anim_greet_elf 0 25 15 0 0.0 0.0 0.0 0.0 
+ greet_elf_mounted 0  1
+  1.300000 anim_greet_elf_mounted 0 25 15 0 0.0 0.0 0.0 0.0 
+ greet_human 0  1
+  1.800000 anim_greet_human 0 29 11 0 0.0 0.0 0.0 0.0 
+ greet_human_mounted 0  1
+  1.800000 anim_greet_human_mounted 0 29 11 0 0.0 0.0 0.0 0.0 
+ greet_orc 0  1
+  2.000000 anim_greet_orc 0 37 13 0 0.0 0.0 0.0 0.0 
+ greet_orc_mounted 0  1
+  2.000000 anim_greet_orc_mounted 0 37 13 0 0.0 0.0 0.0 0.0 
  unused_human_anim_37 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_38 0  1

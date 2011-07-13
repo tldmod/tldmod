@@ -1308,12 +1308,17 @@ animations = [
    [0.25, "stand_onhorse", 0, 0, arf_blend_in_15, 0, (0, 0, 0), 0],
  ],
  
- ["unused_human_anim_31", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_32", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_33", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_34", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_35", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_36", 0, [1.0, "anim_human", 0, 1, 0]],
+ # next is unused_human_anim_31
+ 
+ # greetings (mtarini)
+ ["greet_elf",           0, [1.3, "anim_greet_elf",          0, 25, arf_blend_in_14]],
+ ["greet_elf_mounted",   0, [1.3, "anim_greet_elf_mounted",  0, 25, arf_blend_in_14]],
+ ["greet_human",         0, [1.8, "anim_greet_human",        0, 29, arf_blend_in_10]],
+ ["greet_human_mounted", 0, [1.8, "anim_greet_human_mounted",0, 29, arf_blend_in_10]],
+ ["greet_orc",           0, [2.0, "anim_greet_orc",          0, 37, arf_blend_in_12]],
+ ["greet_orc_mounted",   0, [2.0, "anim_greet_orc_mounted",  0, 37, arf_blend_in_12]],
+ 
+ 
  ["unused_human_anim_37", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_38", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_39", 0, [1.0, "anim_human", 0, 1, 0]],
