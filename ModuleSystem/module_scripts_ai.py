@@ -2137,6 +2137,8 @@ ai_scripts = [
     [ (store_script_param, ":troop_no", 1),
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),		
+		
         #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -2151,7 +2153,7 @@ ai_scripts = [
         (try_end),
         (try_begin),
           (store_current_hours, ":cur_time"),
-          (party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"), # MV: don't calc if following orders
+          (party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"), # MV: don't calc if following orders by player
           (assign, ":continue", 0),
         (try_end),
         (eq, ":continue", 1),
@@ -2176,6 +2178,7 @@ ai_scripts = [
 ]),
 
 # script_calculate_troop_ai_under_command
+# this computes what a party lead (by a given troop) will do, if it is following the command of another party
 # Input: troop_no
 # Output: none
 ("calculate_troop_ai_under_command",
@@ -2183,6 +2186,9 @@ ai_scripts = [
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
+		
+		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),
+		
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (gt, ":party_no", 0),
           (party_slot_ge, ":party_no", slot_party_commander_party, 0),
@@ -2195,7 +2201,9 @@ ai_scripts = [
 # Input: troop id
 ("recalculate_ai_for_troop",
 	[ (store_script_param, ":troop_no", 1),
-	  (call_script, "script_init_ai_calculation"), (call_script, "script_calculate_troop_ai", ":troop_no"), (call_script, "script_calculate_troop_ai_under_command", ":troop_no"),
+	  (call_script, "script_init_ai_calculation"), 
+	  (call_script, "script_calculate_troop_ai", ":troop_no"), 
+	  (call_script, "script_calculate_troop_ai_under_command", ":troop_no"),
 ]),
 
 # script_faction_strength_string
@@ -2211,7 +2219,17 @@ ai_scripts = [
 	  (val_add,":strength","str_faction_strength_crushed"),
       (str_store_string,s23,":strength"),
 ]),
-	
+
+# a simple script: 	give a troop, fails if that troop is a sitting king, i.e. a faction leader with a different faction marshal
+("cf_fails_if_sitting_king", [
+	(store_script_param, ":troop_no", 1),
+	(troop_get_faction, ":faction_id", ":troop_no"),
+	# faction leaders who are not also marshalles are not "heroes" are SITTING KINGS.
+	# they don't leave the place
+	(this_or_next|faction_slot_eq,":faction_id",slot_faction_marshall,":troop_no"),
+	(neg|faction_slot_eq,":faction_id",slot_faction_leader,":troop_no"),
+]),
+
 # script_create_kingdom_hero_party
 # Input: arg1 = troop_no, arg2 = center_no
 # Output: $pout_party = party_no
@@ -2259,14 +2277,16 @@ ai_scripts = [
   # add bodyguards. Transformation of lord+guards to a host moved to simple triggers
 	  (faction_get_slot,":guard",":troop_faction_no",slot_faction_prison_guard_troop),
       (try_begin),
-        (faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"),
+        (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":troop_no"),
         (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # kings get elite guards
 		(le, ":troop_faction_no", "fac_lorien"), # else, no kings (mtarini)
-		(val_add, ":cur_banner", 1), # kings get king flags (mtarini)
+		(val_add, ":cur_banner", 1), # marshall get king flags (mtarini)
       (try_end),
 	  (party_add_members,"$pout_party",":guard",10), 
 	  
 	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
+	  
+	  (party_attach_to_party, "$pout_party", ":center_no")
 
 ]),
 

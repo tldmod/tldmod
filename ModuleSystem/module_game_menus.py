@@ -2409,7 +2409,7 @@ game_menus = [
   (
 	"siege_town",
 	[(party_is_active, center_list[y][0]),
-     (faction_get_slot, ":king", "$ambient_faction", slot_faction_leader),
+     (faction_get_slot, ":king", "$ambient_faction", slot_faction_marshall),
      (troop_get_slot, ":king_party", ":king", slot_troop_leaded_party),
      (party_is_active, ":king_party"),
      (store_faction_of_party, ":town_faction", center_list[y][0]),
@@ -2422,7 +2422,7 @@ game_menus = [
 	"{s10}.",
 	[
         #order ambient king to besiege
-        (faction_get_slot, ":king", "$ambient_faction", slot_faction_leader),
+        (faction_get_slot, ":king", "$ambient_faction", slot_faction_marshall),
         (troop_get_slot, ":king_party", ":king", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", center_list[y][0], 0),
@@ -6053,10 +6053,10 @@ game_menus = [
           (call_script, "script_order_best_besieger_party_to_guard_center", "$g_encountered_party", "fac_player_supporters_faction"),
           (str_store_party_name, s3, "$g_encountered_party"),
           (assign, reg1, 0),
-          (try_begin),
-            (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "trp_player"),
-            (assign, reg1, 1),
-          (try_end),
+          # (try_begin),
+            # (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "trp_player"),
+            # (assign, reg1, 1),
+          # (try_end),
         (try_end),
         (assign, reg2, 0),
         (try_begin),

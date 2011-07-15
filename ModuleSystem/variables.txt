@@ -60,10 +60,6 @@ g_leave_town
 qst_bring_back_runaway_serfs_party_1
 qst_bring_back_runaway_serfs_party_2
 qst_bring_back_runaway_serfs_party_3
-troop_to_restore_relations_with
-lady_restore_cost_1
-lady_restore_cost_2
-lady_restore_cost_3
 lord_requested_to_talk_to
 g_permitted_to_center
 g_tld_training_mode
@@ -107,6 +103,7 @@ g_mvtest_faction
 g_crossdressing_activated
 tld_option_formations
 tld_option_town_menu_hidden
+tld_option_cutscenes
 tld_option_death
 capturer_party
 g_player_is_captive
@@ -654,4 +651,3 @@ qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_map_talk_context
 npc_is_quitting
-tld_option_cutscenes

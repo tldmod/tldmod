@@ -754,6 +754,7 @@ store_random           = 2135	# deprecated, use store_random_in_range instead.
 store_random_in_range  = 2136	# gets random number in range [range_low,range_high] excluding range_high 
 				# (store_random_in_range,<destination>,<range_low>,<range_high>),
 store_troop_gold       = 2149	# (store_troop_gold,<destination>,<troop_id>),
+troop_get_gold = store_troop_gold
 
 store_num_free_stacks           = 2154 # (store_num_free_stacks,<destination>,<party_id>),
 store_num_free_prisoner_stacks  = 2155 # (store_num_free_prisoner_stacks,<destination>,<party_id>),
@@ -774,8 +775,10 @@ store_character_level           = 2171	# (store_character_level,<destination>,[t
 store_attribute_level           = 2172	# (store_attribute_level,<destination>,<troop_id>,<attribute_id>),
 
 store_troop_faction             = 2173	# (store_troop_faction,<destination>,<troop_id>),
+troop_get_faction = store_troop_faction
 store_troop_health              = 2175	# (store_troop_health,<destination>,<troop_id>,[absolute]),
                                         # set absolute to 1 to get actual health; otherwise this will return percentage health in range (0-100)
+troop_get_health = store_troop_health
 
 store_proficiency_level         = 2176	# (store_proficiency_level,<destination>,<troop_id>,<attribute_id>),
 
@@ -788,6 +791,8 @@ store_encountered_party         = 2202 # (store_encountered_party,<destination>)
 store_encountered_party2        = 2203 # (store_encountered_party2,<destination>),
 store_faction_of_party          = 2204 # (store_faction_of_party,<destination>),
 
+party_get_faction = store_faction_of_party  # a bit of name coherence, please 
+
 
 #store_current_town              = 2210 # deprecated, use store_current_scene instead
 #store_current_site              = 2211 # deprecated, use store_current_scene instead
@@ -795,6 +800,7 @@ store_current_scene             = 2211 # (store_current_scene,<destination>),
 
 store_item_value                = 2230 # (store_item_value,<destination>,<item_id>),
 store_troop_value               = 2231 # (store_troop_value,<destination>,<troop_id>),
+troop_get_value = store_troop_value
 
 store_partner_quest             = 2240 # (store_partner_quest,<destination>),
 store_random_quest_in_range     = 2250 # (store_random_quest_in_range,<destination>,<lower_bound>,<upper_bound>),

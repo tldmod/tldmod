@@ -1,4 +1,4 @@
-925
+923
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -180,7 +180,6 @@ qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
 qstr_{s3}_is_no_longer_un {s3}_is_no_longer_under_siege.
 qstr_Enemies_spotted_near Enemies_spotted_near_{s1}.
-qstr_{s1}_is_chosen_as_th {s1}_is_chosen_as_the_marshall_of_{s2}.
 qstr_You_gained_{reg12}_r You_gained_{reg12}_renown.
 qstr_You_lose_{reg12}_ren You_lose_{reg12}_renown.
 qstr_Your_relation_with_{ Your_relation_with_{s1}_has_improved.
@@ -293,8 +292,6 @@ qstr_This_quest_has_been_ This_quest_has_been_concluded._Talk_to_{s59}_to_finish
 qstr_This_quest_has_been_s This_quest_has_been_successfully_completed._Talk_to_{s59}_to_claim_your_reward.
 qstr_This_quest_has_faile This_quest_has_failed._Talk_to_{s59}_to_explain_the_situation.
 qstr_At_the_time_quest_wa At_the_time_quest_was_given:^{s1}
-qstr_{s4}_is_in_{s5} {s4}_is_in_{s5}
-qstr_no_holdings no_holdings
 qstr_{s7}_and_{s8} {s7}_and_{s8}
 qstr_{s7}_{s8} {s7},_{s8}
 qstr_noone noone
@@ -306,6 +303,7 @@ qstr_{s11}_{s12} {s11},_{s12}
 qstr_{s5}_is_ruled_by_{s6 {s5}_is_ruled_by_{s6}.^It_controls_{s8}.^Its_commanders_are_{s10}.^{s5}_is_at_war_with_{s12}.
 qstr_{s5}_has_been_defeat {s5}_has_been_defeated!
 qstr_{s5}_has_a_strength_ {s5}_has_a_strength_of_{reg1}_men_in_total.
+qstr_no_holdings no_holdings
 qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}

@@ -87,9 +87,12 @@ custom_tld_bow_to_kings = [
 
 	# on spawn: register lords
 	(ti_on_agent_spawn       , 0, 0, [],[ 
+		# to do: this way you bow to leaders OR to marshalls. Must both to both
 	    (store_trigger_param_1, ":agent_no"), 
 		(agent_get_troop_id, ":troop_no", ":agent_no"),
-		(is_between, ":troop_no", kings_begin, kings_end),
+		(store_troop_faction, ":faction_no", ":troop_no",),
+		#(this_or_next|faction_slot_eq,":faction_no",slot_faction_marshall,":troop_no"),
+		(faction_slot_eq,":faction_no",slot_faction_leader,":troop_no"),
 		(assign, "$agent_king", ":agent_no"),
 	]),
 	  

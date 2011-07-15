@@ -137,11 +137,6 @@ defeat_lord_answer_2
 party_encounter_lord_hostile_attacker
 party_encounter_lord_hostile_attacker_2
 party_encounter_offer_dont_fight
-lord_event_choose_friend
-lord_event_choose_friend_renounce
-lord_pretalk
-lord_event_choose_friend_defend
-lord_event_choose_friend_neutral
 lord_start
 lord_intro
 lord_meet_neutral
@@ -155,6 +150,7 @@ lord_capture_troll_completed_two_trolls_thankyou_info
 lord_capture_troll_completed_two_trolls_thankyou_accept
 lord_capture_troll_completed_two_trolls_thankyou_refuse
 lord_capture_troll_completed_two_trolls_thankyou_raise
+lord_pretalk
 lord_generic_mission_completed
 lord_follow_spy_completed
 lord_follow_spy_half_completed
@@ -293,16 +289,6 @@ lady_premeet
 lady_meet
 lady_meet_end
 lady_talk
-lady_restore_relation
-lady_pretalk
-lady_restore_relation_2
-lady_restore_relation_2b
-lady_restore_relation_3
-lady_restore_relation_4
-lady_restore_relation_5
-lady_restore_relation_cant_afford
-lady_restore_relation_6
-lady_leave
 prison_guard_players
 prison_guard_talk
 prison_guard_ask_prisoners
