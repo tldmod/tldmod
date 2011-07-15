@@ -1530,6 +1530,7 @@ mission_templates = [
  (ti_before_mission_start, 0, 0, [],
   [ (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # TLD expand teams
     (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
+	(team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team
     (call_script, "script_change_banners_and_chest"),
     ]),
 	

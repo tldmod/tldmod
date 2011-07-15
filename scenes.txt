@@ -4,10 +4,10 @@ scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.00
   0 
   0 
  0 
-scn_conversation_scene conversation_scene 0 encounter_spot bo_encounter_spot -40.000000 -40.000000 40.000000 40.000000 -100.000000 0 
+scn_conversation_scene conversation_scene 256 none none -40.000000 -40.000000 40.000000 40.000000 -100.000000 0x00000006300005000002308c00003005000018b300001d92 
   0 
   0 
- 0 
+ outer_terrain_plain 
 scn_random_scene_steppe random_scene_steppe 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022c602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -424,7 +424,7 @@ scn_north_rhun_camp_center north_rhun_camp_center 256 none none 0.000000 0.00000
   0 
   1  780 
  outer_terrain_flat 
-scn_gundabad_camp_center gundabad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
+scn_gundabad_camp_center gundabad_camp_center 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000240004d634005c96d0000734a00004b340000734a 
   0 
   1  780 
  outer_mountains2north 

@@ -24,7 +24,7 @@ from module_constants import *
 
 scenes = [
   ("random_scene"              ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),(240,240),-0.5,"0x0000000329602800000691a400003efe00004b34000059be",[],[]),
-  ("conversation_scene",0,"encounter_spot", "bo_encounter_spot", (-40,-40),(40,40),-100,"0",   [],[]),
+  ("conversation_scene",sf_generate,"none", "none", (-40,-40),(40,40),-100,"0x00000006300005000002308c00003005000018b300001d92",[],[],"outer_terrain_plain"),
 
   # scenes from native terrain types... (one for each terrain types)
   ("random_scene_steppe"          ,sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000022c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_rohan"),
@@ -158,7 +158,7 @@ scenes = [
   ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"),
   ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),
   ("north_rhun_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
-  ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],["player_chest"],"outer_mountains2north"),
+  ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000240004d634005c96d0000734a00004b340000734a",[],["player_chest"],"outer_mountains2north"),
   ("ironhill_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 
 ### GA stub scenes

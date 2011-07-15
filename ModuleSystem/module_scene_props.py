@@ -4,6 +4,7 @@ from header_operations import *
 from header_triggers import *
 from header_sounds import *
 from module_constants import *
+from header_mission_templates import *
 import string
 
 ####################################################################################################################
@@ -1454,7 +1455,10 @@ scene_props = [
 		(spawn_agent,"trp_gate_aggravator"),
 		(assign, "$gate_aggravator_agent", reg0),
 		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
-		(agent_set_team, "$gate_aggravator_agent", 2),
+		(agent_set_team, "$gate_aggravator_agent", 6),
+		(team_give_order, 6, grc_everyone, mordr_hold),
+		(team_give_order, 6, grc_everyone, mordr_stand_ground),
+		(team_set_order_position, 6, grc_everyone, pos1),
 	]),
    (ti_on_scene_prop_destroy, [
 		(store_trigger_param_1, ":instance_no"),
@@ -1482,7 +1486,10 @@ scene_props = [
 		(spawn_agent,"trp_gate_aggravator"),
 		(assign, "$gate_aggravator_agent", reg0),
 		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
-		(agent_set_team, "$gate_aggravator_agent", 2),
+		(agent_set_team, "$gate_aggravator_agent", 6),
+		(team_give_order, 6, grc_everyone, mordr_hold),
+		(team_give_order, 6, grc_everyone, mordr_stand_ground),
+		(team_set_order_position, 6, grc_everyone, pos1),		
 	]),
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
