@@ -249,25 +249,53 @@ map_icons = [
   #indication for fords
   ("ford_rocks",0,"ford_rocks", 0.6, 0),
 
-  # party map banners
-   ("mfp_gondor",0,"map_flag_gondor_lord", banner_scale,0),
-   ("mfp_rohan",0,"map_flag_rohan_lord", banner_scale,0),
-   ("mfp_isengard",0,"map_flag_isengard_lord", banner_scale,0),
-   ("mfp_mordor",0,"map_flag_mordor_lord", banner_scale,0),
-   ("mfp_harad",0,"map_flag_harad_lord", banner_scale,0),
-   ("mfp_khand",0,"map_flag_khand_lord", banner_scale,0),
-   ("mfp_rhun",0,"map_flag_rhun_lord", banner_scale,0),
-   ("mfp_umbar",0,"map_flag_umbar_lord", banner_scale,0),
-   ("mfp_lorien",0,"map_flag_lorien_lord", banner_scale,0),
-   ("mfp_woodelf",0,"map_flag_woodelf_lord", banner_scale,0),
-   ("mfp_guldur",0,"map_flag_guldur_lord", banner_scale,0),
-   ("mfp_imladris",0,"map_flag_imladris_lord", banner_scale,0),
-   ("mfp_moria",0,"map_flag_moria_lord", banner_scale,0),
-   ("mfp_dwarf",0,"map_flag_dwarf_lord", banner_scale,0),
-   ("mfp_northmen",0,"map_flag_northmen_lord", banner_scale,0),
-   ("mfp_dale",0,"map_flag_dale_lord", banner_scale,0),
-   ("mfp_gundabad",0,"map_flag_gundabad_lord", banner_scale,0),
-   ("mfp_dunland",0,"map_flag_dunland_lord", banner_scale,0),
+  # party map banners, each followed by king vesion
+   ("mfp_gondor",    0,"map_flag_gondor_lord", banner_scale,0),
+   ("mfp_gondor_k",  0,"map_flag_gondor_king", banner_scale,0),
+   ("mfp_rohan",     0,"map_flag_rohan_lord", banner_scale,0),
+   ("mfp_rohan_k",   0,"map_flag_rohan_king", banner_scale,0),
+   ("mfp_isengard",  0,"map_flag_isengard_lord", banner_scale,0),
+   ("mfp_isengard_k",0,"map_flag_isengard_king", banner_scale,0),
+   ("mfp_mordor",    0,"map_flag_mordor_lord", banner_scale,0),
+   ("mfp_mordor_k",  0,"map_flag_mordor_king", banner_scale,0),
+   ("mfp_harad",     0,"map_flag_harad_lord", banner_scale,0),
+   ("mfp_harad_k",   0,"map_flag_harad_king", banner_scale,0),
+   ("mfp_khand",     0,"map_flag_khand_lord", banner_scale,0),
+   ("mfp_khand_k",   0,"map_flag_khand_king", banner_scale,0),
+   ("mfp_rhun",      0,"map_flag_rhun_lord", banner_scale,0),
+   ("mfp_rhun_k",    0,"map_flag_rhun_king", banner_scale,0),
+   ("mfp_umbar",     0,"map_flag_umbar_lord", banner_scale,0),
+   ("mfp_umbar_k",   0,"map_flag_umbar_king", banner_scale,0),
+   ("mfp_lorien",    0,"map_flag_lorien_lord", banner_scale,0),
+   ("mfp_lorien_k",  0,"map_flag_lorien_king", banner_scale,0),
+
+   # no king flags from now on...
+   ("mfp_woodelf",   0,"map_flag_woodelf_lord", banner_scale,0),
+   ("mfp_guldur",    0,"map_flag_guldur_lord", banner_scale,0),
+   ("mfp_imladris",  0,"map_flag_imladris_lord", banner_scale,0),
+   ("mfp_moria",     0,"map_flag_moria_lord", banner_scale,0),
+   ("mfp_dwarf",     0,"map_flag_dwarf_lord", banner_scale,0),
+   ("mfp_northmen",  0,"map_flag_northmen_lord", banner_scale,0),
+   ("mfp_dale",      0,"map_flag_dale_lord", banner_scale,0),
+   ("mfp_gundabad",  0,"map_flag_gundabad_lord", banner_scale,0),
+   ("mfp_dunland",   0,"map_flag_dunland_lord", banner_scale,0),
+   
+   # alternative rohan lords (mtarini)
+   ("mfp_rohan_a",0,"map_flag_rohan_lord_a", banner_scale,0),
+   ("mfp_rohan_b",0,"map_flag_rohan_lord_b", banner_scale,0),
+   ("mfp_rohan_c",0,"map_flag_rohan_lord_c", banner_scale,0),
+   ("mfp_rohan_d",0,"map_flag_rohan_lord_d", banner_scale,0),
+   ("mfp_rohan_e",0,"map_flag_rohan_lord_e", banner_scale,0),
+
+   # gondor subfactions (same ordering as subfac_ constnant)
+   ("mfp_pelargir",0,"map_flag_pelargir_lord", banner_scale,0),
+   ("mfp_dol_amroth",0,"map_flag_dolamroth_lord", banner_scale,0),
+   ("mfp_ethring",0,"map_flag_ethring_lord", banner_scale,0),
+   ("mfp_lossarnach",0,"map_flag_lossarnach_lord", banner_scale,0),
+   ("mfp_pinnath",0,"map_flag_pinnath_lord", banner_scale,0),
+   ("mfp_erech",0,"map_flag_erech_lord", banner_scale,0),
+
+	  
   ("banner_126",0,"custom_map_banner_01", banner_scale,0), 
 
  # centers map banners
@@ -289,6 +317,15 @@ map_icons = [
    ("mfc_dale",0,"map_flag_dale_center", banner_scale,0),
    ("mfc_gundabad",0,"map_flag_gundabad_center", banner_scale,0),
    ("mfc_dunland",0,"map_flag_dunland_center", banner_scale,0),
+
+   
+ # for gondor subfactions,...
+   ("mfc_pelargir",0,"map_flag_pelargir_center", banner_scale,0),
+   ("mfc_dol_amroth",0,"map_flag_dolamroth_center", banner_scale,0),
+   ("mfc_erech",0,"map_flag_erech_center", banner_scale,0),
+   ("mfc_ethring",0,"map_flag_ethring_center", banner_scale,0),
+   ("mfc_lossarnach",0,"map_flag_lossarnach_center", banner_scale,0),
+   ("mfc_pinnath",0,"map_flag_pinnath_center", banner_scale,0),
 
   ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),

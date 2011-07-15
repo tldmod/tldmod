@@ -2224,11 +2224,30 @@ ai_scripts = [
       (spawn_around_party,":center_no", "pt_kingdom_hero_party"),
       (assign, "$pout_party", reg0),
       (party_set_faction, "$pout_party", ":troop_faction_no"),
-# TLD faction specific party banners
+	  
+		# TLD faction specific party banners
 	  (faction_get_slot,":cur_banner",":troop_faction_no",slot_faction_party_map_banner),
-	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
-# TODO: different banners for Rohan lords
-#
+	  
+	  # rohan gets somewhat random flags, for now (mtarini)
+	  (try_begin),(eq,  ":troop_faction_no", "fac_rohan"),
+		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
+		(store_mod, ":tmp", ":troop_no", 6),
+		(neq, ":tmp", 0),
+		(val_sub, ":tmp", 1),
+		(store_add, ":cur_banner", ":tmp", "icon_mfp_rohan_a"),  # alternative flag assigned( troopNO % 6 )
+	  (try_end),
+
+	  # gondor gets flags specific of subfactions  (mtarini)
+	  (try_begin),(eq,  ":troop_faction_no", "fac_gondor"),
+		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
+		(party_get_slot, ":fief", ":center_no", slot_party_subfaction),
+		(party_set_slot,"$pout_party", slot_party_subfaction, ":fief"), # assign subfaction of spawned party
+		(neq,  ":fief", 0), # not for regulars
+		(neq,  ":fief", subfac_rangers), # not for ithilien
+		(store_add, ":cur_banner", "icon_mfp_pelargir", ":fief"),
+		(val_sub, ":cur_banner", 1),  
+	  (try_end),
+
       (call_script, "script_party_set_ai_state", "$pout_party", spai_undefined, -1),
       (troop_set_slot, ":troop_no", slot_troop_leaded_party, "$pout_party"),
       (party_add_leader, "$pout_party", ":troop_no"),
@@ -2242,8 +2261,13 @@ ai_scripts = [
       (try_begin),
         (faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"),
         (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # kings get elite guards
+		(le, ":troop_faction_no", "fac_lorien"), # else, no kings (mtarini)
+		(val_add, ":cur_banner", 1), # kings get king flags (mtarini)
       (try_end),
 	  (party_add_members,"$pout_party",":guard",10), 
+	  
+	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
+
 ]),
 
 # script_decide_kingdom_party_ais

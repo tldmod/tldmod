@@ -45,11 +45,13 @@ def curr_count():
 # added subfactions (mtarini)
 def set_item_faction():
 	command_list = []
-	for i_troop in xrange(28,396 ): #regular troops here
+	for i_troop in xrange(29,430 ): #regular troops here
 		r = 0
+		
 		#for i_item in troops[i_troop][7]: 
+		# mtarini: assign troops to proper subfactions, according to name
 		for j in range(0,len(subfaction_data) ):
-			if troops[i_troop][1].find(subfaction_data[j][2])!=-1: # if there is, e.g.  "Lossarnach" in the name
+			if troops[i_troop][1].find(subfaction_data[j][2])!=-1: # if there is, e.g.  "Lossarnach" in the name  
 				r = subfaction_data[j][0]
 				command_list.append((troop_set_slot, "trp_"+troops[i_troop][0], slot_troop_subfaction, r))
 		#print troops[i_troop][0]
@@ -57,7 +59,7 @@ def set_item_faction():
 			command_list.append((item_get_slot , ":valA",i_item, slot_item_faction))
 			command_list.append((val_or, ":valA",1 << troops[i_troop][6]))       
 			command_list.append((item_set_slot, i_item, slot_item_faction,":valA"))
-			command_list.append((item_get_slot, ":valB",i_item, slot_item_subfaction))
+			command_list.append((item_get_slot, ":valB",i_item, slot_item_subfaction))  # mtarini:  subfactionize items
 			command_list.append((val_or, ":valB",1 << r ))
 			command_list.append((item_set_slot, i_item, slot_item_subfaction,":valB"))
 	return command_list [:]
@@ -11058,6 +11060,7 @@ scripts = [
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+			(is_between, ":factionA", kingdoms_begin, kingdoms_end),
 			(str_store_string, s4,"@Orcs of {s16}, get ready! Here are a few throats for you to cut!"), 
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
@@ -11071,6 +11074,7 @@ scripts = [
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(is_between, ":raceA", tf_orc_begin, tf_orc_end),
+			(is_between, ":factionA", kingdoms_begin, kingdoms_end),
 			(str_store_string, s4,"@Raahh! Draw your weapons, scum of {s16}! Tonight we feast on {s15} entrails!"), 
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
@@ -20503,7 +20507,11 @@ scripts = [
   ),
 
   # script_set_item_faction
-  ("set_item_faction",  set_item_faction()), 
+  ("set_item_faction",  set_item_faction()+[
+	# mtarini: make a few items all factions
+	(item_set_slot, "itm_wood_club", slot_item_faction,0xFFFF), 
+	(item_set_slot, "itm_twohand_wood_club", slot_item_faction,0xFFFF), 
+  ]), 
  
   # script_get_faction_mask
   # INPUT: faction

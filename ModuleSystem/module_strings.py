@@ -2268,8 +2268,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("subfaction_gondor_name3" , "Lamedon" ) ,
  ("subfaction_gondor_name4" , "Lossarnach" ),
  ("subfaction_gondor_name5" , "Pinnath Gelin" ),
- ("subfaction_gondor_name6" , "Ithilien" ), 
- ("subfaction_gondor_name7" , "Blackroot Vale" ) ,
+ ("subfaction_gondor_name6" , "Blackroot Vale" ) ,
+ ("subfaction_gondor_name7" , "Ithilien" ), 
  
 #### TLD shop/bar rumors
 ("default_rumor", "The War. Everybody is talking about the war."),

@@ -1,5 +1,5 @@
 map_icons_file version 1
-158
+184
 player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
 
 
@@ -366,28 +366,55 @@ ford_rocks 0 ford_rocks 0.600000 0 0 0 0 0
 mfp_gondor 0 map_flag_gondor_lord 0.300000 0 0 0 0 0
 
 
+mfp_gondor_k 0 map_flag_gondor_king 0.300000 0 0 0 0 0
+
+
 mfp_rohan 0 map_flag_rohan_lord 0.300000 0 0 0 0 0
+
+
+mfp_rohan_k 0 map_flag_rohan_king 0.300000 0 0 0 0 0
 
 
 mfp_isengard 0 map_flag_isengard_lord 0.300000 0 0 0 0 0
 
 
+mfp_isengard_k 0 map_flag_isengard_king 0.300000 0 0 0 0 0
+
+
 mfp_mordor 0 map_flag_mordor_lord 0.300000 0 0 0 0 0
+
+
+mfp_mordor_k 0 map_flag_mordor_king 0.300000 0 0 0 0 0
 
 
 mfp_harad 0 map_flag_harad_lord 0.300000 0 0 0 0 0
 
 
+mfp_harad_k 0 map_flag_harad_king 0.300000 0 0 0 0 0
+
+
 mfp_khand 0 map_flag_khand_lord 0.300000 0 0 0 0 0
+
+
+mfp_khand_k 0 map_flag_khand_king 0.300000 0 0 0 0 0
 
 
 mfp_rhun 0 map_flag_rhun_lord 0.300000 0 0 0 0 0
 
 
+mfp_rhun_k 0 map_flag_rhun_king 0.300000 0 0 0 0 0
+
+
 mfp_umbar 0 map_flag_umbar_lord 0.300000 0 0 0 0 0
 
 
+mfp_umbar_k 0 map_flag_umbar_king 0.300000 0 0 0 0 0
+
+
 mfp_lorien 0 map_flag_lorien_lord 0.300000 0 0 0 0 0
+
+
+mfp_lorien_k 0 map_flag_lorien_king 0.300000 0 0 0 0 0
 
 
 mfp_woodelf 0 map_flag_woodelf_lord 0.300000 0 0 0 0 0
@@ -415,6 +442,39 @@ mfp_gundabad 0 map_flag_gundabad_lord 0.300000 0 0 0 0 0
 
 
 mfp_dunland 0 map_flag_dunland_lord 0.300000 0 0 0 0 0
+
+
+mfp_rohan_a 0 map_flag_rohan_lord_a 0.300000 0 0 0 0 0
+
+
+mfp_rohan_b 0 map_flag_rohan_lord_b 0.300000 0 0 0 0 0
+
+
+mfp_rohan_c 0 map_flag_rohan_lord_c 0.300000 0 0 0 0 0
+
+
+mfp_rohan_d 0 map_flag_rohan_lord_d 0.300000 0 0 0 0 0
+
+
+mfp_rohan_e 0 map_flag_rohan_lord_e 0.300000 0 0 0 0 0
+
+
+mfp_pelargir 0 map_flag_pelargir_lord 0.300000 0 0 0 0 0
+
+
+mfp_dol_amroth 0 map_flag_dolamroth_lord 0.300000 0 0 0 0 0
+
+
+mfp_ethring 0 map_flag_ethring_lord 0.300000 0 0 0 0 0
+
+
+mfp_lossarnach 0 map_flag_lossarnach_lord 0.300000 0 0 0 0 0
+
+
+mfp_pinnath 0 map_flag_pinnath_lord 0.300000 0 0 0 0 0
+
+
+mfp_erech 0 map_flag_erech_lord 0.300000 0 0 0 0 0
 
 
 banner_126 0 custom_map_banner_01 0.300000 0 0 0 0 0
@@ -472,6 +532,24 @@ mfc_gundabad 0 map_flag_gundabad_center 0.300000 0 0 0 0 0
 
 
 mfc_dunland 0 map_flag_dunland_center 0.300000 0 0 0 0 0
+
+
+mfc_pelargir 0 map_flag_pelargir_center 0.300000 0 0 0 0 0
+
+
+mfc_dol_amroth 0 map_flag_dolamroth_center 0.300000 0 0 0 0 0
+
+
+mfc_erech 0 map_flag_erech_center 0.300000 0 0 0 0 0
+
+
+mfc_ethring 0 map_flag_ethring_center 0.300000 0 0 0 0 0
+
+
+mfc_lossarnach 0 map_flag_lossarnach_center 0.300000 0 0 0 0 0
+
+
+mfc_pinnath 0 map_flag_pinnath_center 0.300000 0 0 0 0 0
 
 
 thranduil 1 thranduilhall 1.000000 0 0 0 0 0
