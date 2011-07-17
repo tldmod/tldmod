@@ -2364,7 +2364,7 @@ game_menus = [
 	 ("order_siege_edhellond",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
-     ],"Order Gothmog to besiege Erech.",
+     ],"Order Gothmog to besiege Edhellond.",
       [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
