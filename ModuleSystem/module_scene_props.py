@@ -1247,11 +1247,11 @@ scene_props = [
   ("gon_statue_fem",0,"statue_female_marble","bo_statue_female_marble", []),
   ("gon_ruined_warrior",0,"statue_warrior_ruined","bo_statue_ruined_warrior", []),
   ("gon_statue_warrior",0,"statue_warrior_marble","bo_statue_ruined_warrior", []),
-  ("gon_statue_king_a",0,"statue_gondor1","bo_statue_gondor1", []),
-  ("gon_statue_king_b",0,"statue_gondor2","bo_statue_gondor2", []),
-  ("gon_statue_king_c",0,"gondor_king1","bo_gondor_king1", []),
-  ("gon_statue_king_d",0,"gondor_king2","bo_gondor_king2", []),
-  ("gon_statue_king_e",0,"gondor_king3","bo_gondor_king3", []),
+  ("gon_statue_king_a",0,"statue_gondor1","bo_statue_gondor", []),
+  ("gon_statue_king_b",0,"statue_gondor2","bo_statue_gondor", []),
+  ("gon_statue_king_c",0,"gondor_king1","bo_gondor_king", []),
+  ("gon_statue_king_d",0,"gondor_king2","bo_gondor_king", []),
+  ("gon_statue_king_e",0,"gondor_king3","bo_gondor_king", []),
   
   
   
@@ -1447,10 +1447,10 @@ scene_props = [
 #    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 #	(spawn_horse,"itm_steppe_horse", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
 
-("gate_destructible",sokf_destructible|spr_hit_points(2000),"door_e_left","bo_door_left",   [
+("gate_destructible",sokf_destructible|spr_hit_points(2000),"gate_tld","bo_gate_tld",   [
    (ti_on_scene_prop_init, [
 		(assign, "$gate_breached",0),
-		(entry_point_get_position,pos1,39),
+		(entry_point_get_position,pos1,39), # put aggravator agent for enemies to bash the gate prop
 		(set_spawn_position, pos1),
 		(spawn_agent,"trp_gate_aggravator"),
 		(assign, "$gate_aggravator_agent", reg0),
@@ -1463,7 +1463,7 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
 		(store_trigger_param_1, ":instance_no"),
 		(prop_instance_get_starting_position, pos1, ":instance_no"),
-		(position_rotate_z, pos1, 85),
+		(position_rotate_x, pos1, 85),
 		(prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
 		(play_sound, "snd_dummy_destroyed"),
 		(display_message,"@Gate is breached!"),
@@ -1481,15 +1481,15 @@ scene_props = [
 ("HD_gate_destructible",sokf_destructible|spr_hit_points(2000),"HD_gate_door","bo_HD_gate_door",   [
    (ti_on_scene_prop_init, [
 		(assign, "$gate_breached",0),
-		(entry_point_get_position,pos1,39),
-		(set_spawn_position, pos1),
-		(spawn_agent,"trp_gate_aggravator"),
-		(assign, "$gate_aggravator_agent", reg0),
-		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
-		(agent_set_team, "$gate_aggravator_agent", 6),
-		(team_give_order, 6, grc_everyone, mordr_hold),
-		(team_give_order, 6, grc_everyone, mordr_stand_ground),
-		(team_set_order_position, 6, grc_everyone, pos1),		
+		# (entry_point_get_position,pos1,39),
+		# (set_spawn_position, pos1),
+		# (spawn_agent,"trp_gate_aggravator"),
+		# (assign, "$gate_aggravator_agent", reg0),
+		# (agent_set_speed_limit, "$gate_aggravator_agent", 1),
+		# (agent_set_team, "$gate_aggravator_agent", 6),
+		# (team_give_order, 6, grc_everyone, mordr_hold),
+		# (team_give_order, 6, grc_everyone, mordr_stand_ground),
+		# (team_set_order_position, 6, grc_everyone, pos1),		
 	]),
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
@@ -1499,14 +1499,14 @@ scene_props = [
     (play_sound, "snd_dummy_destroyed"),
 	(display_message,"@Gate is breached!"),
 	(assign, "$gate_breached",1),
-	(call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator
+	# (call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator
     ]),
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),
 	(particle_system_burst, "psys_dummy_smoke", pos1, 3),
 	(particle_system_burst, "psys_dummy_straw", pos1, 10),
-	(entry_point_get_position,pos1,39),
-	(agent_set_position, "$gate_aggravator_agent", pos1),
+	# (entry_point_get_position,pos1,39),
+	# (agent_set_position, "$gate_aggravator_agent", pos1),
     ]),
 ]),
 ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [

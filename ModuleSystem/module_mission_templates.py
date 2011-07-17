@@ -731,6 +731,17 @@ tld_common_battle_scripts = [
 ##        common_battle_kill_underwater,
 	]
 	
+tld_siege_battle_scripts = [
+ 	custom_tld_spawn_troop,
+	custom_tld_init_battle,
+	tld_cheer_on_space_when_battle_over_press,
+	tld_cheer_on_space_when_battle_over_release,
+#	nazgul_sweeps,
+	custom_troll_hitting,
+	cheat_kill_all_on_ctrl_k,  
+	cheat_kill_self_on_ctrl_s,  
+	]
+
 tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
 ] + custom_tld_bow_to_kings
@@ -1515,26 +1526,25 @@ mission_templates = [
      (51,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
 	 (53,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
-
 	 (54,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,3,[]), # team center
      (55,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,3,[]),
-
      (56,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]), # team right flank
 	 (57,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (58,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      ],
     common_deathcam_triggers+
-    tld_common_battle_scripts+[
+    tld_siege_battle_scripts+[
 
  (ti_before_mission_start, 0, 0, [],
   [ (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # TLD expand teams
     (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
 	(team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team
+	(assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
     (call_script, "script_change_banners_and_chest"),
     ]),
 	
-      common_battle_tab_press,
+     common_battle_tab_press,
   
  (ti_question_answered, 0, 0, [],
    [ (store_trigger_param_1,":answer"),
@@ -1652,6 +1662,7 @@ mission_templates = [
 	
 	# put gate aggravator in place
 	(try_begin),
+		(neq, "$gate_aggravator_agent",-1),
 		(eq, "$gate_breached",0),
 		(entry_point_get_position, pos13, 39),
 		(agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
