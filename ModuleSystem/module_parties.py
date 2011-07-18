@@ -84,7 +84,7 @@ parties = [
     ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-58.19, 20.5 ),[],0),
     ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-63.81,-14.05),[],170),
     ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-56.48,  3.55),[],170),
-    ("town_ethring"         ,"Ethring",     icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -2.16, 30.86),[],50),
+    ("town_ethring"         ,"Calembel",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -2.16, 30.86),[],50),
 # Rohan towns
     ("town_edoras","Edoras",         icon_edoras     |pf_tld_down, no_menu, pt_none, fac_rohan,0,ai_bhvr_hold,0,( 22.8,-14.7),[],215),
     ("town_aldburg","Aldburg",       icon_rohantown1 |pf_tld_down, no_menu, pt_none, fac_rohan,0,ai_bhvr_hold,0,(  7.9, -8.3),[],170),
