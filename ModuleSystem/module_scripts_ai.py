@@ -2224,7 +2224,7 @@ ai_scripts = [
 ("cf_fails_if_sitting_king", [
 	(store_script_param, ":troop_no", 1),
 	(troop_get_faction, ":faction_id", ":troop_no"),
-	# faction leaders who are not also marshalles are not "heroes" are SITTING KINGS.
+	# leaders of factions which have a different marshal are SITTING KINGS.
 	# they don't leave the place
 	(this_or_next|faction_slot_eq,":faction_id",slot_faction_marshall,":troop_no"),
 	(neg|faction_slot_eq,":faction_id",slot_faction_leader,":troop_no"),
@@ -2278,9 +2278,9 @@ ai_scripts = [
 	  (faction_get_slot,":guard",":troop_faction_no",slot_faction_prison_guard_troop),
       (try_begin),
         (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":troop_no"),
-        (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # kings get elite guards
-		(le, ":troop_faction_no", "fac_lorien"), # else, no kings (mtarini)
-		(val_add, ":cur_banner", 1), # marshall get king flags (mtarini)
+        (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # marshalls get elite guards
+		(le, ":troop_faction_no", "fac_lorien"), # in all factions until lorien, no royal banners (mtarini)
+		(val_add, ":cur_banner", 1), # marshall get royal flags (mtarini)
       (try_end),
 	  (party_add_members,"$pout_party",":guard",10), 
 	  
@@ -2377,7 +2377,7 @@ ai_scripts = [
 			
             (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
 	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-            (str_store_faction_name_link, s5, ":troop_faction_no"), # TLD host naming after faction
+            (str_store_faction_name, s5, ":troop_faction_no"), # TLD host naming after faction
 			(str_store_troop_name, s6, ":hero"),
 			(str_store_troop_name_link, s7, ":hero"),
             #(party_set_name, ":party", "@Host of {s5}"),

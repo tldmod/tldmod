@@ -810,13 +810,17 @@ mission_templates = [
 				(assign, ":greet_ani", -1),
 				(try_begin), (is_between,  ":race", tf_elf_begin, tf_elf_end), 
 					(assign, ":greet_ani", "anim_greet_elf"),
-				(else_try), (is_between,  ":race", tf_orc_begin, tf_orc_end), 
+				(else_try), (eq,  ":race", tf_orc), 
 					(assign, ":greet_ani", "anim_greet_orc"),
 				(else_try),
 					(this_or_next|eq, ":fac", "fac_gondor"),
 					(this_or_next|eq, ":fac", "fac_umbar"),
 					(eq, ":fac", "fac_rohan"),
 					(assign, ":greet_ani", "anim_greet_human"),
+				(else_try), (is_between,  ":race", tf_orc_begin, tf_orc_end),  # other orcs
+					(assign, ":greet_ani", "anim_greet_goaway"),
+				(else_try), # all others
+					(assign, ":greet_ani", "anim_greet_simple"),
 				(try_end),
 				(try_begin),
 					(gt,":greet_ani",0), 

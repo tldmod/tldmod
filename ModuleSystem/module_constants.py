@@ -1392,17 +1392,18 @@ faction_init = [
 # 0) subfaction index,     
 # 1) city,    
 # 2) substring_present_in_all_troop_names ,     
-# 3)  [guard_troop,                prison_guard_troop,                   castle_guard_troop  ], 
-# 4)  [ reinforcements for garrisons], 
-# 5) [leaders...]
-subfaction_data= [      # center                              guard_troop,                   prison_guard_troop,                   castle_guard_troop  
- (subfac_pelargir,     "p_town_pelargir"     ,"Pelargir"  ,["trp_pelargir_watchman"       ,"trp_pelargir_infantry"               ,"trp_pelargir_vet_infantry"    ],["pt_pelargir_reinf_a"  ,"pt_pelargir_reinf_b"  ,"pt_pelargir_reinf_c"  ],["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
- (subfac_dol_amroth,   "p_town_dol_amroth"   ,"Amroth"    ,["trp_squire_of_dol_amroth"    ,"trp_veteran_squire_of_dol_amroth"   ,"trp_swan_knight_of_dol_amroth" ],["pt_dol_amroth_reinf_a","pt_dol_amroth_reinf_b","pt_dol_amroth_reinf_c"],["trp_dol_amroth_leader"]),
- (subfac_ethring,      "p_town_ethring"      ,"Lamedon"   ,["trp_clansman_of_lamedon"     ,"trp_footman_of_lamedon"             ,"trp_veteran_of_lamedon"        ],["pt_lamedon_reinf_a"   ,"pt_lamedon_reinf_b"   ,"pt_lamedon_reinf_c"   ],["trp_lamedon_leader"]),
- (subfac_lossarnach,   "p_town_lossarnach"   ,"Lossarnach",["trp_woodsman_of_lossarnach"  ,"trp_axeman_of_lossarnach"           ,"trp_axemaster_of_lossarnach"   ],["pt_lossarnach_reinf_a","pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
- (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,["trp_pinnath_gelin_plainsman","trp_pinnath_gelin_spearman","trp_warrior_of_pinnath_gelin"],["pt_pinnath_reinf_a"   ,"pt_pinnath_reinf_b"   ,"pt_pinnath_reinf_c"   ],["trp_pinnath_leader"]),
- (subfac_blackroot,    "p_town_erech"        ,"Blackroot" ,["trp_blackroot_vale_archer"   ,"trp_footman_of_blackroot_vale"    ,"trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a" ,"pt_blackroot_reinf_b" ,"pt_blackroot_reinf_c" ],["trp_blackroot_leader"]),
- (subfac_rangers,      "p_town_henneth_annun","Ithilien"  ,["trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"      ,"trp_master_ranger_of_ithilien"],["pt_ithilien_reinf_a"  ,"pt_ithilien_reinf_b"  ,"pt_ithilien_reinf_c"  ],["trp_ithilien_leader"]),
+# 3) leader
+# 4)  [guard_troop,                prison_guard_troop,                   castle_guard_troop  ], 
+# 5)  [ reinforcements for garrisons], 
+# 6) [leaders...]
+subfaction_data= [      
+ (subfac_pelargir     ,"p_town_pelargir"     ,"Pelargir"  ,["trp_pelargir_watchman"       ,"trp_pelargir_infantry"           ,"trp_pelargir_vet_infantry"       ],["pt_pelargir_reinf_a"  ,"pt_pelargir_reinf_b"  ,"pt_pelargir_reinf_c"  ],["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
+ (subfac_dol_amroth   ,"p_town_dol_amroth"   ,"Amroth"    ,["trp_squire_of_dol_amroth"    ,"trp_veteran_squire_of_dol_amroth","trp_swan_knight_of_dol_amroth"   ],["pt_dol_amroth_reinf_a","pt_dol_amroth_reinf_b","pt_dol_amroth_reinf_c"],["trp_dol_amroth_leader"]),
+ (subfac_ethring      ,"p_town_ethring"      ,"Lamedon"   ,["trp_clansman_of_lamedon"     ,"trp_footman_of_lamedon"          ,"trp_veteran_of_lamedon"          ],["pt_lamedon_reinf_a"   ,"pt_lamedon_reinf_b"   ,"pt_lamedon_reinf_c"   ],["trp_lamedon_leader"]),
+ (subfac_lossarnach   ,"p_town_lossarnach"   ,"Lossarnach",["trp_woodsman_of_lossarnach"  ,"trp_axeman_of_lossarnach"        ,"trp_axemaster_of_lossarnach"     ],["pt_lossarnach_reinf_a","pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
+ (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,["trp_pinnath_gelin_plainsman" ,"trp_pinnath_gelin_spearman"      ,"trp_warrior_of_pinnath_gelin"    ],["pt_pinnath_reinf_a"   ,"pt_pinnath_reinf_b"   ,"pt_pinnath_reinf_c"   ],["trp_pinnath_leader"]),
+ (subfac_blackroot    ,"p_town_erech"        ,"Blackroot" ,["trp_blackroot_vale_archer"   ,"trp_footman_of_blackroot_vale"   ,"trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a" ,"pt_blackroot_reinf_b" ,"pt_blackroot_reinf_c" ],["trp_blackroot_leader"]),
+ (subfac_rangers      ,"p_town_henneth_annun","Ithilien"  ,["trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"  ,"trp_master_ranger_of_ithilien"   ],["pt_ithilien_reinf_a"  ,"pt_ithilien_reinf_b"  ,"pt_ithilien_reinf_c"  ],["trp_ithilien_leader"]),
  
 ]
 

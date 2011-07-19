@@ -1729,10 +1729,16 @@ scripts = [
 		(faction_get_slot, ":town", ":fac",  slot_faction_capital ),
 		
 		(try_begin),(troop_slot_eq, ":king", slot_troop_leaded_party, 0),
-			(call_script, "script_create_kingdom_hero_party", ":king", ":town",0),
+			(str_store_troop_name, s15, ":king"),
+			(str_store_party_name, s16, ":town"),
+			#(display_message, "@deploying king {s15} in {s16}"),
+			(call_script, "script_create_kingdom_hero_party", ":king", ":town"),
 		(try_end),
 		(try_begin),(troop_slot_eq, ":marshal", slot_troop_leaded_party, 0),
-			(call_script, "script_create_kingdom_hero_party", ":marshal", ":town",0),
+			(str_store_troop_name, s15, ":marshal"),
+			(str_store_party_name, s16, ":town"),
+			#(display_message, "@deploying marshal {s15} in {s16}"),
+			(call_script, "script_create_kingdom_hero_party", ":marshal", ":town"),
 		(try_end),
 		
 	  (try_end),
@@ -1740,7 +1746,7 @@ scripts = [
 # spawn any other lord in random places, TLD
       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_slot_eq, ":hero", slot_troop_leaded_party, 0),
-	    (store_troop_faction, ":faction", ":hero"),
+	    (troop_get_faction, ":faction", ":hero"),
         (call_script,"script_cf_select_random_town_with_faction", ":faction"),(assign,":center",reg0),
         (call_script, "script_create_kingdom_hero_party", ":hero", ":center"),
         (party_set_slot, ":center", slot_town_player_odds, 1000),  
@@ -10837,7 +10843,7 @@ scripts = [
 	(str_clear, s14),(str_clear, s15),(str_clear, s16),(str_clear, s17),(str_clear, s18),(str_clear, s19),
 	(str_store_faction_name, s16, ":factionA"),
 	(call_script, "script_str_store_race_adj", s15, ":raceB"),
-	(try_begin), (eq, ":raceB", tf_human), (str_store_string, s19, "@s16 "), (try_end),
+	(try_begin), (eq, ":raceB", tf_human), (str_store_string, s19, "@{s15} "), (try_end),
 	(str_store_faction_name, s18, ":factionB"),
 
 	# s14: possible incipit for when speaker is attacked
@@ -10849,7 +10855,7 @@ scripts = [
 		(else_try),(eq,":rand", 1),
 			(str_store_string, s14, "@They are upon us! ^"),
 		(else_try),(eq,":rand", 3),
-			(str_store_string, s14, "@{playername} and {his/her} rabble from {s15} is upon us! ^"),
+			(str_store_string, s14, "@{playername} and {his/her} rabble from {s18} is upon us! ^"),
 		(try_end),
 	(try_end),
 

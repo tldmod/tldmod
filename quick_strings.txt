@@ -201,10 +201,10 @@ qstr_man man
 qstr_riding riding
 qstr_marching marching
 qstr_charging charging
-qstr_s16_ s16_
+qstr_{s15}_ {s15}_
 qstr_The_enemy_is_upon_us The_enemy_is_upon_us!_^
 qstr_They_are_upon_us!_^ They_are_upon_us!_^
-qstr_{playername}_and_{hi {playername}_and_{his/her}_rabble_from_{s15}_is_upon_us!_^
+qstr_{playername}_and_{hi {playername}_and_{his/her}_rabble_from_{s18}_is_upon_us!_^
 qstr_ORCS!_ORCS! ORCS!_ORCS!
 qstr_ORCS!_ORCS!_Fight_fo ORCS!_ORCS!_Fight_for_your_life!
 qstr_Elven_ghosts! Elven_ghosts!
