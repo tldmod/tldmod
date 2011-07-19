@@ -1465,7 +1465,18 @@ scene_props = [
 		(display_message,"@Gate is breached!"),
 		(assign, "$gate_breached",1),
 		(call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator agent
-    ]),
+		
+		(scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),	#move away all dependent barriers
+		(try_begin),
+			(gt, ":max_barriers",0),
+			(try_for_range,":count",0,":max_barriers"),
+				(scene_prop_get_instance,":instance_no", "spr_ballista_missile", ":count"),
+				(prop_instance_get_starting_position, pos1, ":instance_no"),
+				(position_move_z,pos1,-10000),
+				(prop_instance_set_position,":instance_no",pos1),
+			(try_end),
+		(try_end),
+   ]),
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),
 	(particle_system_burst, "psys_dummy_smoke", pos1, 3),
@@ -1473,7 +1484,7 @@ scene_props = [
 	(entry_point_get_position,pos1,39),
 	(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 1000), #1000 hit points
+], 500), #500 hit points
 ("HD_gate_destructible",sokf_destructible,"HD_gate_door","bo_HD_gate_door",   [
    (ti_on_scene_prop_destroy,
     [(store_trigger_param_1, ":instance_no"),
@@ -2202,4 +2213,5 @@ scene_props = [
 # empty collision meshes  
 ("gondor_mt_wall_E",0,"mt_wall", "0", []),
 ("gondor_building_a_vp_E",0,"gondor_building_a_color","0", []),
+("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # moved away when gate is breached
 ]

@@ -1421,3 +1421,4 @@ spr_rohan_meduseld_table = 1419
 spr_handsign = 1420
 spr_gondor_mt_wall_E = 1421
 spr_gondor_building_a_vp_E = 1422
+spr_ai_limiter_gate_breached = 1423

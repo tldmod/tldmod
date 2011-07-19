@@ -1715,6 +1715,12 @@ mission_templates = [
 		(agent_is_human,":agent"),
 		(agent_slot_eq,":agent",slot_agent_arena_team_set,0),
 		(store_random_in_range, ":team", 0,3),
+		(try_begin), # when gate breached assign more people to medium team (which is gate oriented)
+			(eq,"$gate_breached",1),
+			(store_random_in_range, ":x",0,2),
+			(eq, ":x",1),
+			(assign, ":team", 1),
+		(try_end),
 		(val_mul, ":team", 2),
 		(try_begin),
 			(neg|agent_is_defender,":agent"),

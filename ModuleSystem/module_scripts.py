@@ -1877,7 +1877,7 @@ scripts = [
 	(try_end),
 	(try_begin),
 		(eq, ":volunteers", 0),
-		(spawn_around_party, ":town"),  # Error here? Command takes TWO arguments -- mtarini
+		(spawn_around_party, ":town", "pt_none"),  # Error here? Command takes TWO arguments -- mtarini
 		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
 		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),

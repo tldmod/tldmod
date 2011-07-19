@@ -1,4 +1,4 @@
-924
+925
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -590,8 +590,9 @@ qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capt
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
 qstr_Gothmog_besieges_Wes Gothmog_besieges_West_Osgiliath!
 qstr_Gothmog_besieges_Ere Gothmog_besieges_Erech!
+qstr_Gothmog_besieges_Pin Gothmog_besieges_Pinnath_Gelin!
 qstr_Gothmog_besieges_Edh Gothmog_besieges_Edhellond!
-qstr_Gothmog_besieges_Cai Gothmog_besieges_Cair_Andros!
+qstr_Gothmog_besieges_Los Gothmog_besieges_Lossarnach!
 qstr_Saruman_besieges_Wes Saruman_besieges_Westfold!
 qstr_Partitava_besieges_D Partitava_besieges_Dale!
 qstr_{s10}_besieged! {s10}_besieged!
