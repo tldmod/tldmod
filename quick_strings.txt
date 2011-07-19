@@ -1,4 +1,4 @@
-925
+924
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -403,8 +403,7 @@ qstr_You_were_grievously_w You_were_grievously_wounded_in_battle._Your_men_manag
 qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured_and_dragged_to_{s2}.
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
-qstr_{s6}_s_Host {s6}'s_Host
-qstr__{s7}_has_assumed_th _{s7}_has_assumed_the_command_of_a_{s5}_host!
+qstr_{s7}_has_assumed_the {s7}_has_assumed_the_command_of_a_{s6}_host!
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR

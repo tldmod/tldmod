@@ -2377,12 +2377,12 @@ ai_scripts = [
 			
             (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
 	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-            (str_store_faction_name, s5, ":troop_faction_no"), # TLD host naming after faction
-			(str_store_troop_name, s6, ":hero"),
+            (str_store_faction_name_link, s6, ":troop_faction_no"), # TLD host naming after faction
+			(str_store_troop_name, s5, ":hero"),
 			(str_store_troop_name_link, s7, ":hero"),
             #(party_set_name, ":party", "@Host of {s5}"),
-            (party_set_name, ":party", "@{s6}'s Host"),
-			(display_message, "@ {s7} has assumed the command of a {s5} host!", 0x87D7FF),
+            (party_set_name, ":party", "str_s5_s_host"),
+			(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
 	     # hire troops to host, kings get more
             (assign, ":num_tries", 30),
             (try_begin),
