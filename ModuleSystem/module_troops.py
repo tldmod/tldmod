@@ -3134,7 +3134,7 @@ troops = [
 ["elder_moria","Moria_Chief","the_Mines",tf_hero| tf_randomize_face| tf_orc,0,0,fac_moria,
    [itm_moria_armor_c,itm_orc_ragwrap,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
-["elder_gunda","Chief_of_the_North_Camps","the_camp",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
+["elder_gunda","Mater_of_the_Caves","the_caves",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
    [itm_gundabad_armor_d,itm_orc_furboot_tall,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dale","Dale_Quartermaster","the_city",tf_hero| tf_randomize_face,0,0,fac_dale,

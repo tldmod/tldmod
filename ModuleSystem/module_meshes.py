@@ -64,6 +64,7 @@ meshes = [
   ("town_goodcamp"      , 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_evilcamp"      , 0, "town_evilcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_cair_andros"   , 0, "town_cair_andros", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_gundabad"      , 0, "town_gundabad", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   #("pic_prisoner_man", 0, "pic_prisoner_man", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   #("pic_prisoner_fem", 0, "pic_prisoner_fem", 0, 0, 0, 0, 0, 0, 1, 1, 1),

@@ -143,11 +143,11 @@ parties = [
     ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-73.02,-189.9),[],170),
     ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-68.63,-236.87),[],170),
 # Gundabad towns
-    ("town_gundabad_camp"       ,"Gundabad_Orc_Camp",        icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(30.4,-234.5),[],170),
-    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],170),
-    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],170),
-    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],170),
-    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(18.9,-194.8),[],170),
+    ("town_gundabad"            ,"Gundabad",                 icon_moria          |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(36.7,-241.5),[],165),
+    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],120),
+    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
+    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),
+    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(18.9,-194.8),[],140),
     ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-23.9,-217.0),[],170),
 # Dwarves towns
     ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-59.6,-226.4),[],130),

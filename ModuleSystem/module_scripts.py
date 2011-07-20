@@ -11412,6 +11412,7 @@ scripts = [
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
 		(assign, ":native_terrain_to_use", rt_snow_forest),
 	(else_try),
+		# small druadan forest in gondor
 		(eq,":region",region_druadan_forest),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),
@@ -11448,7 +11449,12 @@ scripts = [
 		# mountains regions
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
-		(assign, ":native_terrain_to_use", rt_snow),  # mountains
+		(assign, ":native_terrain_to_use", rt_desert),  # mountains
+	(else_try),
+		# marshes 
+		(this_or_next|eq,":region",region_entwash),
+		(eq,":region",region_wetwang),
+		(assign, ":native_terrain_to_use", rt_snow),  # marsh
 	(else_try),
 		# anything else
 		(assign, ":native_terrain_to_use", rt_steppe),  

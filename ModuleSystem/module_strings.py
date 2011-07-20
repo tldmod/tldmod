@@ -2771,7 +2771,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("fullname_region_anorien", "Anórien, the Sun-land, a valley between the White Mountains and the Aduin river"), #11
 
-("fullname_region_rohan0", "the valley of Harrowdale, the region around Edoras, the Capital of Rohan, the Riddermark"), 
+("fullname_region_rohan0", "the Folde, the heart of Rohan"), 
 ("fullname_region_rohan1", "the Eastemnet, a part of Rohan, the Riddermark"), 
 ("fullname_region_rohan2", "the Westemnet, a part of Rohan, the Riddermark"), 
 ("fullname_region_rohan3", "the Eastfold, a part of Rohan, the Riddermark"), 
@@ -2782,7 +2782,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_gap_of_rohan","the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings."),
 
 ("fullname_region_entwash", "the Mouths of the Entwash, where the Rohan river Entwash joins the Aduin"), # region_entwash = 19
-("fullname_region_wetwang", "the Wetwang, the swamps of Nindalf"), # region_wetwang = 20
+("fullname_region_wetwang", "Nindalf, the swamps of Wetwang"), # region_wetwang = 20
 
 ("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagorlad, now a cursed place"), #region_dead_marshes = 21
 
@@ -2819,7 +2819,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("shortname_region_anorien", "Anórien"), #11
 
-("shortname_region_rohan0", "the valley of Harrowdale"), 
+("shortname_region_rohan0", "the Folde"), 
 ("shortname_region_rohan1", "Eastemnet"), 
 ("shortname_region_rohan2", "Westemnet"), 
 ("shortname_region_rohan3", "Eastfold"), 
@@ -2829,7 +2829,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_gap_of_rohan","the Gap of Rohan"),
 
 ("shortname_region_entwash", "the Mouths of the Entwash"), # region_entwash = 19
-("shortname_region_wetwang", "the Wetwang"), # region_wetwang = 20
+("shortname_region_wetwang", "Nindalf"), # region_wetwang = 20
 
 ("shortname_region_dead_marshes", "the Dead Marshes"), #region_dead_marshes = 21
 
