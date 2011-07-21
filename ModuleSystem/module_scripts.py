@@ -1813,7 +1813,8 @@ scripts = [
 
       (call_script, "script_get_player_party_morale_values"),
       (party_set_morale, "p_main_party", reg0),
-   
+    
+	(assign,"$dungeons_in_scene",0), # flag for dungeon presence in a scene
    ################ 808 globals
     (assign, "$trait_captain_infantry_week", 0),
     (assign, "$trait_captain_archer_week", 0),
@@ -14762,11 +14763,12 @@ scripts = [
    [
      (try_for_agents, ":agent_no"),
        (agent_is_alive, ":agent_no"),
-#       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
-       (agent_is_defender, ":agent_no"),
        (agent_get_class, ":agent_class", ":agent_no"),
        (agent_get_troop_id, ":agent_troop", ":agent_no"),
        (eq, ":agent_class", grc_archers),
+	   #       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+	(try_begin),
+       (agent_is_defender, ":agent_no"), # defending archers go to their respective points
        (try_begin),
          (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
 		 (agent_get_team, ":team", ":agent_no"),
@@ -14810,8 +14812,27 @@ scripts = [
            (assign, reg0, ":agent_no"),
 #           (display_message, "@{s1} ({reg0}) seeing target or changed mode"),
          (try_end),
-       (try_end),
+       (else_try), # when archer is an attacker
+		 (agent_get_ammo,":ammo",":agent_no"),
+		 (try_begin),
+		   (lt,":ammo",5),
+		   (agent_clear_scripted_mode, ":agent_no"),
+		   (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+		 (try_end),
+	   (try_end),
      (try_end),
+	 
+	(set_show_messages, 0), # move attacker archers to firing positions unless target points are captured
+    (entry_point_get_position, pos10, 60), #TLD, was 10
+	(team_give_order, "$attacker_team", grc_archers, mordr_stand_ground),
+	(team_set_order_position, "$attacker_team", grc_archers, pos10),
+	  (entry_point_get_position, pos11, 61), #TLD, was 10
+	  (team_give_order, "$attacker_team_2", grc_archers, mordr_stand_ground),
+	  (team_set_order_position, "$attacker_team_2", grc_archers, pos11),
+	(entry_point_get_position, pos12, 62), #TLD, was 10
+	(team_give_order, "$attacker_team_3", grc_archers, mordr_stand_ground),
+	(team_set_order_position, "$attacker_team_3", grc_archers, pos12),
+    (set_show_messages, 1),
      ]),
 
   # script_store_movement_order_name_to_s1

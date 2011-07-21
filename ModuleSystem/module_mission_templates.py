@@ -39,7 +39,7 @@ af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 
 # dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
-dungeon_darkness_effect = (1, 0, 0, [], [ 
+dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
 	(get_player_agent_no,":player"), 
     (agent_get_position,pos25,":player"),
  	(assign,":min_dist",200), # cycle through fog triggers, find closest one
@@ -744,6 +744,7 @@ tld_siege_battle_scripts = [
 
 tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
+	dungeon_darkness_effect,
 ] + custom_tld_bow_to_kings
 
 
@@ -907,6 +908,13 @@ mission_templates = [
 				(this_or_next|eq,  ":cur_scene", "scn_east_osgiliath_center"),
 				(eq,  ":cur_scene", "scn_west_osgiliath_center"),
 				(replace_scene_props, "spr_osgiliath_broken_bridge_beams", "spr_empty"),
+			(try_end),
+			# check if dungeons are present in a scene
+			(assign, "$dungeons_in_scene", 0), 
+			(try_for_range,":cur_scene","spr_light_fog_black0","spr_moria_rock"),
+				(scene_prop_get_num_instances,":max_instance", ":cur_scene"),
+				(ge,":max_instance", 1),
+				(assign, "$dungeons_in_scene", 1), 
 			(try_end),
 		]),
         (ti_inventory_key_pressed, 0, 0,
@@ -1522,10 +1530,10 @@ mission_templates = [
      (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
      (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]), #entry 8 for add_reinforcements_to_entry
-     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
-     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]),
-     # archer target positions (was 40-43)
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]), #entry 8 for add_reinforcements_to_entry
+     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]),
+     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]),
+     # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
@@ -1536,7 +1544,11 @@ mission_templates = [
 	 (57,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (58,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first|mtef_use_exact_number,af_override_horse,aif_start_alarmed,2,[]),
-     ],
+	 # attacker archer target positions
+     (60,0,0,0,0,[]), 
+     (61,0,0,0,0,[]),
+     (62,0,0,0,0,[]),
+	],
     common_deathcam_triggers+
     tld_siege_battle_scripts+[
 
@@ -1593,6 +1605,9 @@ mission_templates = [
     (team_give_order, "$defender_team", grc_archers, mordr_stand_ground),
     (team_set_order_position, "$defender_team", grc_infantry, pos10),
 	(team_set_order_position, "$attacker_team", grc_everyone, pos10),
+    (entry_point_get_position, pos10, 60), #TLD, was 10
+	(team_give_order, "$attacker_team", grc_archers, mordr_stand_ground),
+	(team_set_order_position, "$attacker_team", grc_archers, pos10),
     
 	(entry_point_get_position, pos11, 42), #TLD
     (team_give_order, "$defender_team_2", grc_infantry, mordr_hold),
@@ -1601,6 +1616,9 @@ mission_templates = [
     (team_give_order, "$defender_team_2", grc_archers, mordr_stand_ground),
     (team_set_order_position, "$defender_team_2", grc_infantry, pos11),
 	(team_set_order_position, "$attacker_team_2", grc_everyone, pos11),
+	(entry_point_get_position, pos11, 61), #TLD, was 10
+	(team_give_order, "$attacker_team_2", grc_archers, mordr_stand_ground),
+	(team_set_order_position, "$attacker_team_2", grc_archers, pos11),
 
     (entry_point_get_position, pos12, 43), #TLD
     (team_give_order, "$defender_team_3", grc_infantry, mordr_hold),
@@ -1609,6 +1627,9 @@ mission_templates = [
     (team_give_order, "$defender_team_3", grc_archers, mordr_stand_ground),
     (team_set_order_position, "$defender_team_3", grc_infantry, pos12),
 	(team_set_order_position, "$attacker_team_3", grc_everyone, pos12),
+	(entry_point_get_position, pos12, 62), #TLD, was 10
+	(team_give_order, "$attacker_team_3", grc_archers, mordr_stand_ground),
+	(team_set_order_position, "$attacker_team_3", grc_archers, pos12),
     (set_show_messages, 1),
 	# put gate aggravator in place
 	# (entry_point_get_position, pos13, 39),
@@ -1623,7 +1644,7 @@ mission_templates = [
 	(display_message,"@On your positions, bitches!!"),
   ]),
 	
-    common_siege_ai_trigger_init_after_2_secs,
+  (0, 2, ti_once, [], [(try_for_agents, ":agent_no"),(agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),(try_end)]),
 
   (3, 0, 5, [],
     [(lt, "$defender_reinforcement_stage", 15),
@@ -1673,7 +1694,7 @@ mission_templates = [
 		(agent_set_position,"$gate_aggravator_agent",pos13),
 	(try_end),
    ]),
-   common_siege_defender_reinforcement_archer_reposition,
+   (2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
  (1, 0, 5,
    [(lt,"$attacker_reinforcement_stage",15),
@@ -1728,7 +1749,8 @@ mission_templates = [
 		(try_end),
 		(agent_set_team, ":agent", ":team"),
 		(agent_set_slot,":agent",slot_agent_arena_team_set,1),
-	(try_end)]),
+	(try_end),
+	]),
 
  (20, 0, 0,[], # report attackers and defenders distribution
    [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),
@@ -3871,7 +3893,8 @@ mission_templates = [
 	##  (1, 0, ti_once, [], [(tutorial_box,"str_tld_erebor_dungeon"),]),n, 5, "$agent_no_player"),
 	##            (entry_point_get_position, 2, 0),   (1, 0, 0, [],
 		
-	(ti_before_mission_start, 0, 0, [],[(assign, "$trap_is_active", 1),(assign, "$atak", 0),(team_set_relation, 0, 1, -1)]),
+	(ti_before_mission_start, 0, 0, [],[(assign, "$trap_is_active", 1),(assign, "$atak", 0),(team_set_relation, 0, 1, -1),(assign, "$dungeons_in_scene",1)]),
+	dungeon_darkness_effect,
 
 
 	(0, 0, 0, [(eq, "$trap_is_active", 1)],
@@ -3998,8 +4021,8 @@ mission_templates = [
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), (assign, "$dungeons_in_scene",1)]),
 	dungeon_darkness_effect,
-	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), ]),
   ],
 ),
 
@@ -4012,8 +4035,8 @@ mission_templates = [
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1)]),
 	dungeon_darkness_effect,
-	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0), ]),
   ],
 ),
 
@@ -4022,7 +4045,9 @@ mission_templates = [
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
     [
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
-	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
+	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1)]),
+	dungeon_darkness_effect,
   ],
 ),
 
@@ -4035,7 +4060,8 @@ mission_templates = [
 	(ti_question_answered, 0, 0, [], [ 
 		(troop_remove_item, "trp_player","itm_book_of_moria"),(store_trigger_param_1,":answer"), (eq,":answer",0), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission), 
 	]),
-	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001) ]),
+	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1)]),
+	dungeon_darkness_effect,
   ],
 ),
 
@@ -4044,7 +4070,7 @@ mission_templates = [
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),],
     [
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
-	
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1)]),	
 	dungeon_darkness_effect,
   ],
 ),
