@@ -1692,6 +1692,7 @@ mission_templates = [
 		(entry_point_get_position, pos13, 39),
 		(agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
 		(agent_set_position,"$gate_aggravator_agent",pos13),
+		(agent_set_hit_points,"$gate_aggravator_agent",100,0),
 	(try_end),
    ]),
    (2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),

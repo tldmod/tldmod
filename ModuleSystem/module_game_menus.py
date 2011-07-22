@@ -2412,6 +2412,23 @@ game_menus = [
         (display_message, "@Gothmog besieges Lossarnach!", 0x30FFC8),
         (change_screen_map),
       ]),
+	("order_siege_pelargir",[
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Gothmog to besiege Lossarnach.",
+      [
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_pelargir", 0),
+        (party_set_slot, "p_town_pelargir", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_pelargir"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_pelargir"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Gothmog besieges Pelargir!", 0x30FFC8),
+        (change_screen_map),
+      ]),
      ("order_siege_wemnet",[
         (troop_get_slot, ":king_party", "trp_isengard_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),

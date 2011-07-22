@@ -1470,7 +1470,7 @@ scene_props = [
 		(try_begin),
 			(gt, ":max_barriers",0),
 			(try_for_range,":count",0,":max_barriers"),
-				(scene_prop_get_instance,":instance_no", "spr_ballista_missile", ":count"),
+				(scene_prop_get_instance,":instance_no", "spr_ai_limiter_gate_breached", ":count"),
 				(prop_instance_get_starting_position, pos1, ":instance_no"),
 				(position_move_z,pos1,-10000),
 				(prop_instance_set_position,":instance_no",pos1),
