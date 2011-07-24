@@ -12,8 +12,8 @@ str_blank_s1 _{s1}
 str_reg1 {reg1}
 str_s50_comma_s51 {s50},_{s51}
 str_s50_and_s51 {s50}_and_{s51}
-str_s5_s_party {s5}'s_Party
-str_s5_s_host {s5}'s_Host
+str_s5_s_party _{s5}'s_Party
+str_s5_s_host _{s5}'s_Host
 str_given_by_s1_at_s2 Given_by_{s1}_at_{s2}
 str_given_by_s1_in_wilderness Given_by_{s1}_whilst_in_the_field
 str_s7_raiders {s7}_Raiders

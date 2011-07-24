@@ -82,8 +82,8 @@ ai_scripts = [
 #         (neg|faction_slot_eq, ":faction_no", slot_faction_marshall, ":faction_marshall"),
 #         (assign, ":marshall_changed", 1),
 #         (eq, "$players_kingdom", ":faction_no"),
-#         (str_store_troop_name_link, s1, ":faction_marshall"),
-#         (str_store_faction_name_link, s2, ":faction_no"),
+#         (str_store_troop_name, s1, ":faction_marshall"),
+#         (str_store_faction_name, s2, ":faction_no"),
 #         (display_message, "@{s1} is the new marshall of {s2}."),
 #         (call_script, "script_check_and_finish_active_army_quests_for_faction", ":faction_no"),
 #       (try_end),
@@ -2377,7 +2377,7 @@ ai_scripts = [
 			
             (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
 	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-            (str_store_faction_name_link, s6, ":troop_faction_no"), # TLD host naming after faction
+            (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
 			(str_store_troop_name, s5, ":hero"),
 			(str_store_troop_name_link, s7, ":hero"),
             #(party_set_name, ":party", "@Host of {s5}"),
@@ -2767,8 +2767,8 @@ ai_scripts = [
 		   (party_set_icon, ":center", "icon_debris"),
 	   (try_end),
        (str_store_party_name, s1, ":center"),
-       (party_set_name, ":center", "@______{s1}______"), # spaces to make writings smaller (GA)
-	   (party_set_extra_text, ":center", "@in_ruins"),  
+       (party_set_name, ":center", "@___Ruins_of_{s1}___"), # spaces to make writings smaller (GA)
+#	   (party_set_extra_text, ":center", "@in_ruins"),  
        (party_set_faction, ":center", "fac_neutral"),
        (party_add_particle_system, ":center", "psys_map_village_looted_smoke"),
        (party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day

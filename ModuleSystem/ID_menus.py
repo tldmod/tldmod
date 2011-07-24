@@ -167,5 +167,3 @@ menu_choose_scenes_169 = 165
 menu_choose_scenes_182 = 166
 menu_choose_scenes_195 = 167
 menu_choose_scenes_208 = 168
-menu_choose_scenes_221 = 169
-menu_choose_scenes_234 = 170

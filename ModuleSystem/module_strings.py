@@ -16,8 +16,8 @@ strings = [
   ("reg1", "{reg1}"),
   ("s50_comma_s51", "{s50}, {s51}"),
   ("s50_and_s51", "{s50} and {s51}"),
-  ("s5_s_party", "{s5}'s Party"),
-  ("s5_s_host", "{s5}'s Host"),
+  ("s5_s_party", "_{s5}'s Party"),
+  ("s5_s_host", "_{s5}'s Host"),
 
   ("given_by_s1_at_s2", "Given by {s1} at {s2}"),
   ("given_by_s1_in_wilderness", "Given by {s1} whilst in the field"),

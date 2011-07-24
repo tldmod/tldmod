@@ -16269,7 +16269,7 @@ scripts = [
        (str_store_faction_name, s5, ":faction_no"),
        (str_store_troop_name_link, s6, ":faction_leader"),
        (assign, ":num_centers", 0),
-       (str_store_string, s8, "@"),
+       (str_store_string, s8, "str_empty_string"),
        (try_for_range_backwards, ":cur_center", centers_begin, centers_end),
          (party_is_active, ":cur_center"), #TLD
 		 (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
@@ -16495,11 +16495,11 @@ scripts = [
        (try_begin),
          (party_slot_eq, ":center_no", slot_party_type, spt_town),
          (str_store_string, s51, "@The {s50}"), # "town of" stricken out
-       (else_try),
-         (party_slot_eq, ":center_no", slot_party_type, spt_village),
-         (party_get_slot, ":bound_center", ":center_no", slot_village_bound_center),
-         (str_store_party_name_link, s52, ":bound_center"),
-         (str_store_string, s51, "@The village of {s50} near {s52}"),
+       # (else_try),
+         # (party_slot_eq, ":center_no", slot_party_type, spt_village),
+         # (party_get_slot, ":bound_center", ":center_no", slot_village_bound_center),
+         # (str_store_party_name_link, s52, ":bound_center"),
+         # (str_store_string, s51, "@The village of {s50} near {s52}"),
        (else_try),
          (str_store_string, s51, "@{s50}"),
        (try_end),
