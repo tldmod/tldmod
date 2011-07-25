@@ -1,4 +1,4 @@
-922
+920
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -314,8 +314,6 @@ qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_{s50} The_{s50}
 qstr_{s50} {s50}
 qstr_{s50}_belongs_to_{s1 {s50}_belongs_to_{s1}_of_{s2}.^
-qstr_{s2}It_has_no_villag {s2}It_has_no_villages.^
-qstr_{s2}{reg0?Its_villag {s2}{reg0?Its_villages_are:Its_village_is}_{s8}.^
 qstr_{s2} {s2}
 qstr_Current_garrison_con Current_garrison_consists_of_{reg5}_men.^Has_food_stock_for_{reg6}_days.
 qstr_Very_Poor Very_Poor
