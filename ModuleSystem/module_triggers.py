@@ -213,13 +213,14 @@ triggers = [
                  # (store_num_parties_of_template, reg(2), "pt_manhunters"), (lt,reg(2),3)],
                 # [(set_spawn_radius,1),(spawn_around_party,"p_zendar","pt_manhunters")]),
 
-  (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_prisoner_train_party"),(party_is_in_any_town,reg(2)),],
-              [(store_faction_of_party, ":faction_no", reg(2)),
-               (call_script,"script_cf_select_random_walled_center_with_faction", ":faction_no", -1),
-               (party_set_ai_behavior,reg(2),ai_bhvr_travel_to_party),
-               (party_set_ai_object,reg(2),reg0),
-               (party_set_flags, reg(2), pf_default_behavior, 0),
-              ]),
+#GA: removed vanilla prisoner train check
+  # (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_prisoner_train_party"),(party_is_in_any_town,reg(2)),],
+              # [(store_faction_of_party, ":faction_no", reg(2)),
+               # (call_script,"script_cf_select_random_walled_center_with_faction", ":faction_no", -1),
+               # (party_set_ai_behavior,reg(2),ai_bhvr_travel_to_party),
+               # (party_set_ai_object,reg(2),reg0),
+               # (party_set_flags, reg(2), pf_default_behavior, 0),
+              # ]),
 
 ##  (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_kingdom_caravan_party"),
 ##               (party_is_in_any_town,reg(2)),

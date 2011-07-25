@@ -1613,11 +1613,11 @@ simple_triggers = [
       ]),
   
   # Reduce renown slightly by 0.5% every week
-  (7 * 24,[(troop_get_slot, ":player_renown", "trp_player", slot_troop_renown),
-           (store_div, ":renown_decrease", ":player_renown", 200),
-           (val_sub, ":player_renown", ":renown_decrease"),
-           (troop_set_slot, "trp_player", slot_troop_renown, ":player_renown"),
-          ]),
+  # (7 * 24,[(troop_get_slot, ":player_renown", "trp_player", slot_troop_renown),
+           # (store_div, ":renown_decrease", ":player_renown", 200),
+           # (val_sub, ":player_renown", ":renown_decrease"),
+           # (troop_set_slot, "trp_player", slot_troop_renown, ":player_renown"),
+          # ]),
 
 # Removing cattle herds if they are way out of range
   (12, [(try_for_parties, ":cur_party"),
@@ -2337,8 +2337,9 @@ simple_triggers = [
       #MV for TLD: faction defeat if capital captured
       (faction_get_slot, ":capital", ":cur_kingdom", slot_faction_capital),
       (store_faction_of_party, ":capital_faction", ":capital"),
-	  (this_or_next|neq, ":cur_kingdom", ":capital_faction"),
-	  (neg|faction_slot_ge, ":cur_kingdom", slot_faction_strength, 1), # TLD faction strength check, GA
+	  (this_or_next|neq, ":cur_kingdom", ":capital_faction"), # TLD capital captured
+	  (this_or_next|neg|party_slot_eq, ":capital", slot_center_destroyed,0), #TLD or capital destroyed
+	  (neg|faction_slot_ge, ":cur_kingdom", slot_faction_strength, 1), # TLD or faction strength down
       
       (assign, ":faction_removed", 0),
       (try_begin),
