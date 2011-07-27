@@ -1,4 +1,4 @@
-920
+908
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -49,7 +49,6 @@ qstr_Companions_Found:_{r Companions_Found:_{reg0}
 qstr_Companions_Lost/Depa Companions_Lost/Departed:_{reg0}
 qstr_Wealth:_{reg0}_denar Wealth:_{reg0}_denars
 qstr_Inventory:_{reg0}_de Inventory:_{reg0}_denars
-qstr_Renown:_{reg0} Renown:_{reg0}
 qstr_Experience:_{reg0} Experience:_{reg0}
 qstr_Days_Passed:_{reg0} Days_Passed:_{reg0}
 qstr_Difficulty:_{reg0}% Difficulty:_{reg0}%
@@ -90,7 +89,7 @@ qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
-qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
+qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg12}_influence_with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their
@@ -165,13 +164,6 @@ qstr_{s0}^{reg3?{reg3}:}_ {s0}^{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_None None
 qstr_^None ^None
-qstr_nothing nothing
-qstr_{reg0}_village{reg1? {reg0}_village{reg1?s:}
-qstr_{reg0}_castle{reg1?s {reg0}_castle{reg1?s:}
-qstr_{reg0}_castle{reg1?s: {reg0}_castle{reg1?s:}_and_{s0}
-qstr_{reg0}_town{reg1?s:} {reg0}_town{reg1?s:}
-qstr_{reg0}_town{reg1?s:}_ {reg0}_town{reg1?s:}_and_{s0}
-qstr_{reg0}_town{reg1?s:}_{ {reg0}_town{reg1?s:},_{s0}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
@@ -180,8 +172,6 @@ qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
 qstr_{s3}_is_no_longer_un {s3}_is_no_longer_under_siege.
 qstr_Enemies_spotted_near Enemies_spotted_near_{s1}.
-qstr_You_gained_{reg12}_r You_gained_{reg12}_renown.
-qstr_You_lose_{reg12}_ren You_lose_{reg12}_renown.
 qstr_Your_relation_with_{ Your_relation_with_{s1}_has_improved.
 qstr_Your_relation_with_{s Your_relation_with_{s1}_has_deteriorated.
 qstr_{s2}_{reg3?was:is_cu {s2}_{reg3?was:is_currently}_at_{s3}.
@@ -257,7 +247,6 @@ qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_
 qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
 qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
-qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
 qstr_You_have_run_into_a_ You_have_run_into_a_trap!
 qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_bandits!
 qstr_Holding Holding
@@ -477,7 +466,7 @@ qstr_Resource_Pts:^_{reg1 Resource_Pts:^_{reg12}_(in_{s16})
 qstr_{s11}_{s24}__{reg13} {s11},_{s24}_({reg13})
 qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
 qstr_{s15}_{reg12}__with_ {s15},_{reg12}_(with_{s16})
-qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.^^Renown:_{reg2}.
+qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
 qstr_They_came_here_after They_came_here_after_we_kicked_their_asses_5:0_in_the_first_round!_Let's_do_it_again.
 qstr_TEST:_troll_VS_infan TEST:_troll_VS_infantry
@@ -511,7 +500,7 @@ qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
 qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
 qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
-qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Renown:_{s4}{reg3}^TOTAL:__{reg5}
+qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^TOTAL:__{reg5}
 qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s23})
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Loyal Loyal
@@ -715,7 +704,6 @@ qstr_you_are_entering_{s1 you_are_entering_{s1}_({s2})
 qstr_you_are_entering_{s1} you_are_entering_{s1}
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
-qstr_Building_of_{s0}_in_ Building_of_{s0}_in_{s4}_has_been_completed.
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_Troll_outside_{s2}_w Troll_outside_{s2}_was_killed._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!

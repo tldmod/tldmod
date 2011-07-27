@@ -2214,4 +2214,6 @@ scene_props = [
 ("gondor_mt_wall_E",0,"mt_wall", "0", []),
 ("gondor_building_a_vp_E",0,"gondor_building_a_color","0", []),
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # moved away when gate is breached
+("barrier_cube" ,sokf_invisible|sokf_type_barrier,"collision_cube" ,"bo_collision_cube" , []), #a poli-efficient replacement for some colmeshes 
+
 ]

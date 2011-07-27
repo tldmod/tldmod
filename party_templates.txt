@@ -1,16 +1,14 @@
 partytemplatesfile version 1
-204
+192
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_hero_party Hero_Party 2 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_village_defenders Village_Defenders 6 0 1 7 25 10 20 0 446 0 4 0 -1 -1 -1 -1 
 pt_cattle_herd Cattle_Herd 2814749767106635 0 26 7 24 80 120 0 -1 -1 -1 -1 -1 
 pt_ruins Ruins 76 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_legendary_place Legendary_Place 70 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_mound Hero_Mound 2114672 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_pyre Hero_Pyre 2114672 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
-pt_manhunters Manhunters 2 0 31 238 443 9 40 0 -1 -1 -1 -1 -1 
 pt_wild_troll Wild_Troll 51 0 2 494 352 1 2 0 -1 -1 -1 -1 -1 
 pt_raging_trolls Raging_Trolls 51 0 2 494 352 1 3 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 2251799813685293 0 2 494 395 0 1 0 394 2 25 0 -1 -1 -1 -1 
@@ -29,16 +27,6 @@ pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 446 3 3 0 -1 -1
 pt_spy Lone_Rider 844424930459650 0 26 7 797 1 1 0 -1 -1 -1 -1 -1 
 pt_spy_evil Lone_Rider 844424930459650 0 26 7 798 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
-pt_forager_party Foraging_Party 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_scout_party Scouts 281474980904962 0 1 494 -1 -1 -1 -1 -1 -1 
-pt_patrol_party Patrol 562949957615618 0 1 238 -1 -1 -1 -1 -1 -1 
-pt_war_party War_Party 844424930131970 0 1 238 -1 -1 -1 -1 -1 -1 
-pt_messenger_party Messenger 4194306 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_raider_party Raiders 4503599627632642 0 1 494 -1 -1 -1 -1 -1 -1 
-pt_raider_captives Raider_Captives 0 0 1 0 446 6 30 1 -1 -1 -1 -1 -1 
-pt_kingdom_caravan_party Caravan 7036874421960778 0 1 7 447 1 1 0 448 12 40 0 -1 -1 -1 -1 
-pt_prisoner_train_party Prisoner_Train 1407374887747586 0 1 7 -1 -1 -1 -1 -1 -1 
-pt_default_prisoners Default_Prisoners 0 0 1 0 438 5 10 1 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904983 0 3 183 121 1 1 0 102 3 5 0 101 3 5 0 -1 -1 -1 
 pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904962 0 3 183 156 1 1 0 152 2 25 0 154 6 30 0 -1 -1 -1 
 pt_lamedon_auxila Lamedon_Auxilia 281474980904968 0 3 183 144 1 1 0 139 2 25 0 138 6 30 0 -1 -1 -1 
@@ -86,7 +74,7 @@ pt_lorien_patrol Lothlorien_Patrol 562949953421347 0 8 238 169 1 1 0 168 3 5 0 1
 pt_woodelf_patrol Mirkwood_Patrol 562949953421350 0 10 238 186 1 1 0 185 7 17 0 184 7 17 0 183 7 17 0 -1 -1 
 pt_dale_patrol Dale_Patrol 562949953421314 0 11 238 62 1 1 0 55 4 10 0 52 4 10 0 57 4 10 0 51 4 10 0 49 4 10 0 
 pt_dwarf_patrol Dwarven_Patrol 562949953421338 0 4 238 83 1 1 0 94 10 25 0 91 10 25 0 -1 -1 -1 
-pt_mordor_war_party Mordor_War_Party 844424930132018 0 6 238 351 2 3 0 354 1 2 0 399 5 40 0 398 15 30 0 360 20 50 0 368 13 36 0 
+pt_mordor_war_party Mordor_War_Party 844424930132018 0 6 238 351 2 3 0 346 5 15 0 345 5 20 0 360 5 30 0 359 5 30 0 368 10 20 0 
 pt_isengard_war_party Isengard_War_Party 844424930132035 0 7 238 340 10 30 0 338 13 36 0 320 5 30 0 335 10 40 0 353 1 2 0 343 1 2 0 
 pt_harad_war_party Harad_War_Party 844424930131989 0 12 238 247 20 50 0 254 15 30 0 250 13 36 0 257 5 30 0 259 5 40 0 262 5 20 0 
 pt_dunland_war_party Dunlending_Warband 844424930131984 0 19 238 267 20 50 0 270 15 30 0 268 13 36 0 271 5 30 0 -1 -1 
@@ -124,7 +112,7 @@ pt_lorien_p_train Lothlorien_Prisoner_Train 74 0 8 14 175 5 10 0 176 15 20 0 173
 pt_woodelf_p_train Mirkwood_Prisoner_Train 74 0 10 14 185 5 10 0 184 15 20 0 191 15 20 0 -1 -1 -1 
 pt_dale_p_train Dale_Prisoner_Train 74 0 11 14 61 5 10 0 54 15 20 0 51 15 20 0 -1 -1 -1 
 pt_dwarf_p_train Dwarven_Prisoner_Train 74 0 4 14 89 5 10 0 84 15 20 0 91 15 20 0 -1 -1 -1 
-pt_mordor_p_train Mordor_Prisoner_Train 562949953421368 0 6 14 369 10 15 0 354 0 2 0 360 10 15 0 346 10 15 0 -1 -1 
+pt_mordor_p_train Mordor_Prisoner_Train 562949953421368 0 6 14 369 10 15 0 360 10 15 0 346 10 15 0 -1 -1 -1 
 pt_isengard_p_train Isengard_Prisoner_Train 562949953421367 0 7 14 321 3 8 0 338 10 15 0 318 10 15 0 332 10 15 0 -1 -1 
 pt_kingdom_hero_party War_Party 4259844 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_reinf_d _ 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
@@ -159,7 +147,7 @@ pt_isengard_reinf_a _ 0 0 1 0 336 3 6 0 314 5 10 0 -1 -1 -1 -1
 pt_isengard_reinf_b _ 0 0 1 0 320 2 3 0 332 2 4 0 337 1 2 0 315 2 4 0 -1 -1 
 pt_isengard_reinf_c _ 0 0 1 0 321 1 2 0 338 1 2 0 341 1 2 0 316 1 2 0 318 1 2 0 -1 
 pt_mordor_reinf_a _ 0 0 1 0 344 3 6 0 358 5 10 0 -1 -1 -1 -1 
-pt_mordor_reinf_b _ 0 0 1 0 397 1 2 0 368 2 4 0 345 2 3 0 359 2 4 0 -1 -1 
+pt_mordor_reinf_b _ 0 0 1 0 368 2 4 0 369 2 4 0 345 2 3 0 359 2 4 0 -1 -1 
 pt_mordor_reinf_c _ 0 0 1 0 398 1 2 0 362 1 2 0 346 1 1 0 348 0 1 0 369 1 2 0 360 1 2 0 
 pt_harad_reinf_a _ 0 0 1 0 256 1 2 0 263 1 2 0 247 5 10 0 -1 -1 -1 
 pt_harad_reinf_b _ 0 0 1 0 260 1 2 0 253 2 4 0 248 1 2 0 263 1 2 0 -1 -1 

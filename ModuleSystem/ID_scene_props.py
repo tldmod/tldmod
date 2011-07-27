@@ -1422,3 +1422,4 @@ spr_handsign = 1420
 spr_gondor_mt_wall_E = 1421
 spr_gondor_building_a_vp_E = 1422
 spr_ai_limiter_gate_breached = 1423
+spr_barrier_cube = 1424

@@ -90,7 +90,6 @@ game_menus = [
 	(set_background_mesh, "mesh_relief01"),
 	(set_show_messages,0),
 	(assign, "$disable_skill_modifiers", 0),
-
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
@@ -98,7 +97,7 @@ game_menus = [
 	 ("go_back"   ,[],"Go Back",[(change_screen_quit              ),]), 
 	 ("quick"     ,[],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	 ("quick2"    ,[],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
-	 ]
+	]
 ),
 #This needs to be the second window!!!
 ( "start_phase_2",mnf_disable_all_keys,
@@ -108,22 +107,13 @@ game_menus = [
     "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
-	
 		(set_show_messages,0),
-	
 		#(call_script,"script_TLD_troop_banner_slot_init"),
 		(call_script,"script_reward_system_init"),
 		(call_script,"script_init_player_map_icons"),
 		#(call_script,"script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0),
-		
-		# variables initializations
-		(assign, "$found_moria_entrance", 0),
-		(assign, "$current_player_region", -1),
-
-		#  add a little money
-		(troop_add_gold, "trp_player", 50),
-	
-		# relocate party next to own capital
+		(troop_add_gold, "trp_player", 50),#  add a little money
+	# relocate party next to own capital
 		(faction_get_slot, reg20, "$players_kingdom", slot_faction_capital),
 		(try_for_range, ":i", centers_begin, centers_end),
 			(party_is_active, ":i"), 
@@ -141,7 +131,6 @@ game_menus = [
 		(assign, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1), # any tier
 		(assign, "$cheat_menu_add_troop_search_fac", "$players_kingdom"), # player's kingdom
 		(assign, "$cheat_menu_add_troop_search_hero", 0),	
-
 		(assign, "$cheat_imposed_quest", -1),	
 
 		(call_script, "script_determine_what_player_looks_like"), # for drawings meshes
@@ -151,25 +140,19 @@ game_menus = [
     (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
     [ ("continue",[],"Go forth upon you chosen path...",
-       [ 
-	     #  free food for everyone
-		(troop_add_item, "trp_player","itm_dried_meat",0),
+       [(troop_add_item, "trp_player","itm_dried_meat",0),#  free food for everyone
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
 		(assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
 		# TEMP: a spear for everyone
 		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
 		##   (troop_add_item, "trp_player","itm_horn",0),
-
-		
 		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
 		(set_show_messages, 1),
         (change_screen_map), #(change_screen_return),
-		
-        ]),
-		("spacer",[]," "  ,[]),
-		 
+       ]),
+	  ("spacer",[],"_",[]),
       ("cheat00",[(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
 	    ],"CHEAT: become a {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",0),
@@ -233,7 +216,7 @@ game_menus = [
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
 	("choose_scene",[],"** Scene Chooser **",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
-    ("go_back",[],".                 Go back",[(change_screen_quit),]),    ]
+    ("go_back",[],".                 Go back",[(change_screen_quit)])]
 ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
@@ -297,46 +280,22 @@ game_menus = [
            (set_visitor,4,"trp_gondor_swordsmen"),
            (set_jump_mission,"mt_tutorial_5"),
            (jump_to_scene,"scn_tutorial_5"),(change_screen_mission),]),
-
       ("go_back_dot",[],"Go back.",[(change_screen_quit),]),
     ]
 ),
 # This needs to be the fifth window!!!  
 ("reports",0,
    "{s9}", "none",
-   [
-    (set_background_mesh, "mesh_ui_default_menu_window"),
-
-    ###############################
-    # TLD faction ranks (old)
-    #
-    #(troop_get_slot, reg5, "trp_player", slot_troop_faction_rank),
-    #(store_and, ":rnk", reg5, stfr_rank_mask),
-    #(val_div, ":rnk", stfr_rank_unit),
-    #(store_and, ":name_str", reg5, stfr_name_string),
-    #(val_div, ":name_str", stfr_name_string_unit),
-    #(val_add, ":name_str", tfr_name_strings_begin),
-    #(str_store_string, s10, ":name_str"),
-    #(str_store_faction_name, s9, "$players_kingdom"),    
-    # TLD faction ranks end
-    ##################################
-
-	### BOOK READING: removed
-	### personal FRIENDS AND ENEMIES: removed
-
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 	# Player Reward System (mtarini)
 	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
-
-	(assign, ":fac","$players_kingdom"),
-	
-	(faction_get_slot, reg10, ":fac", slot_faction_rank),
-	(faction_get_slot, reg11, ":fac", slot_faction_influence),
-	(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
-	(str_store_faction_name, s16, ":fac"),
-	
-    (call_script, "script_get_faction_rank", ":fac"),
+	(faction_get_slot, reg10, "$players_kingdom", slot_faction_rank),
+	(faction_get_slot, reg11, "$players_kingdom", slot_faction_influence),
+	(faction_get_slot, reg12, "$players_kingdom", slot_faction_respoint ),
+	(str_store_faction_name, s16, "$players_kingdom"),
+    (call_script, "script_get_faction_rank", "$players_kingdom"),
     (assign, reg13, reg0),
-	(call_script, "script_get_own_rank_title_to_s24", ":fac", reg13),
+	(call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg13),
 	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
 	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
@@ -362,8 +321,8 @@ game_menus = [
 		(try_end),
 	(try_end),
 	(str_store_troop_name, s10, "$g_player_troop"),
-	(troop_get_slot, reg2, "trp_player", slot_troop_renown),
-	(str_store_string, s9, "@-={s10}=-^{s11}.^^{s13}.^^{s15}.^^Renown: {reg2}."),
+#	(troop_get_slot, reg2, "trp_player", slot_troop_renown),
+	(str_store_string, s9, "@-={s10}=-^{s11}.^^{s13}.^^{s15}."),
     ],
     [ ("cheat_faction_orders"  ,[(eq,"$cheat_mode",1)],"Cheat: Faction orders."   ,[(jump_to_menu, "mnu_faction_orders"   ),]),
       ("view_character_report" ,[                    ],"View upkeep costs."       ,[(jump_to_menu, "mnu_upkeep_report" ),]),
@@ -375,7 +334,7 @@ game_menus = [
       ("view_character_report_02" ,[(eq,"$cheat_mode",1)],"NPC status check.",
        [(try_for_range, ":npc", companions_begin, companions_end),
             (main_party_has_troop, ":npc"),
-            (str_store_troop_name, 4, ":npc"),
+            (str_store_troop_name, s4, ":npc"),
             (troop_get_slot, reg3, ":npc", slot_troop_morality_state),
             (troop_get_slot, reg4, ":npc", slot_troop_2ary_morality_state),
             (troop_get_slot, reg5, ":npc", slot_troop_personalityclash_state),    
@@ -396,12 +355,9 @@ game_menus = [
     "none",
     [(assign, "$g_battle_result", 0),
      (set_show_messages, 0),
-
      (troop_clear_inventory, "trp_player"),
      (troop_raise_attribute, "trp_player", ca_strength, -1000),
      (troop_raise_attribute, "trp_player", ca_agility, -1000),
-#     (troop_raise_attribute, "trp_player", ca_charisma, -1000),
-#     (troop_raise_attribute, "trp_player", ca_intelligence, -1000),
      (troop_raise_skill, "trp_player", skl_shield, -1000),
      (troop_raise_skill, "trp_player", skl_athletics, -1000),
      (troop_raise_skill, "trp_player", skl_riding, -1000),
@@ -464,13 +420,6 @@ game_menus = [
 		(set_visitors, 27, "trp_harad_archer",			3),
 		(set_visitors, 28, "trp_harad_eagle_guard",			3),
 		(set_visitors, 29, "trp_troll_of_moria",				1),
-#		(set_visitors, 20, "trp_black_snake_horse_archer",	3),
-#		(set_visitors, 20, "trp_gold_serpent_horse_archer",	3),
-#		(set_visitors, 16, "trp_troll_yellow",					6),
-#		(set_visitors, 17, "trp_troll_blue",					6),
-#		(set_visitors, 18, "trp_troll_yellow",					4),
-#		(set_visitors, 19, "trp_troll_yellow",					10),
-#		(set_visitors, 20, "trp_troll_blue",					6),
 		(str_store_string, s16, "str_custom_battle_1"),
 
 ############################################# "Elves kick ass"
@@ -1384,7 +1333,7 @@ game_menus = [
 
   
 ("character_report",0,
-   "^^^^^Character Renown: {reg5}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
+   "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
    "none",
    [
@@ -1392,8 +1341,8 @@ game_menus = [
 
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
-    (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
-    (assign, reg5, ":renown"),
+    #(troop_get_slot, ":renown", "trp_player", slot_troop_renown),
+    #(assign, reg5, ":renown"),
     #(assign, reg6, "$player_honor"),
     (assign, reg7, ":party_size_limit"),
     (party_get_morale, reg8, "p_main_party"),
@@ -1437,8 +1386,8 @@ game_menus = [
     (val_mul, ":leadership", 5),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
 
-    (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
-    (val_div, ":renown", 25),
+    # (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
+    # (val_div, ":renown", 25),
     (try_begin),
       (gt, ":leadership", 0),
       (str_store_string, s2, "@ +"),
@@ -1451,17 +1400,18 @@ game_menus = [
     (else_try),
       (str_store_string, s3, "@ "),
     (try_end),
-    (try_begin),
-      (gt, ":renown", 0),
-      (str_store_string, s4, "@ +"),
-    (else_try),
-      (str_store_string, s4, "@ "),
-    (try_end),
+    # (try_begin),
+      # (gt, ":renown", 0),
+      # (str_store_string, s4, "@ +"),
+    # (else_try),
+      # (str_store_string, s4, "@ "),
+    # (try_end),
     (assign, reg5, ":party_size_limit"),
     (assign, reg1, ":leadership"),
     (assign, reg2, ":charisma"),
-    (assign, reg3, ":renown"),
-    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Renown: {s4}{reg3}^TOTAL:  {reg5}"),
+    # (assign, reg3, ":renown"),
+    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^TOTAL:  {reg5}"),
+#    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Renown: {s4}{reg3}^TOTAL:  {reg5}"),
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
 ),
@@ -1625,8 +1575,7 @@ game_menus = [
    "none", [],
   [
   ("camp_mvtest_pimp",[],"Pimp me up first!",
-    [(call_script, "script_change_troop_renown", "trp_player" ,100),
-     (troop_raise_attribute, "trp_player",ca_strength,20),
+    [(troop_raise_attribute, "trp_player",ca_strength,20),
      (troop_raise_attribute, "trp_player",ca_agility,20),
      (troop_raise_attribute, "trp_player",ca_intelligence,20),
      (troop_raise_attribute, "trp_player",ca_charisma,20),
@@ -3300,23 +3249,11 @@ game_menus = [
 	  [(store_sub, "$g_crossdressing_activated", 1, "$g_crossdressing_activated"), (jump_to_menu, "mnu_camp_cheat"),]),
 
 	("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
- 
-      #("cheat_increase_renown",   [],
-	  #"Increase player renown by 100.",
-      # [(str_store_string, s1, "@Increased player renown by 100."),
-      #  (call_script, "script_change_troop_renown", "trp_player",100),
-      #  ]),	   
-	   
 	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
-
 	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town")]),
-	   
 	("camp_mod_4", [], "Add troops to player party.", [(jump_to_menu, "mnu_cheat_add_troops") ]),
-	  
 	("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
-
 	("cheat_add_xp", [], "Add 1000 experience to player.", [(add_xp_to_troop, 1000, "trp_player"), (display_message, "@Added 1000 experience to player."), ]),	  	
-	   
     ("camp_mod_2",    [],
       "Raise player's attributes, skills, and proficiencies.",
       [ #attributes
@@ -3848,7 +3785,7 @@ game_menus = [
 				(assign, "$new_encounter", 0),
 				(assign, "$prebattle_talk_done",1),
 				(assign, "$talk_context", tc_party_encounter),
-				(call_script, "script_setup_hostile_party_meeting", "$g_encountered_party"),
+				(call_script, "script_setup_party_meeting", "$g_encountered_party"),
 			(else_try),
 				(call_script,"script_start_current_battle"),
 			(try_end),
@@ -4209,14 +4146,7 @@ game_menus = [
 (   "battle_debrief",mnf_disable_all_keys,
     "{s40}{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
-    [
-	 (call_script,"script_maybe_relocate_player_from_z0"),
-
-     (try_begin),
-       (eq, "$g_battle_result", 1),
-       (call_script, "script_change_troop_renown", "trp_player", "$battle_renown_value"),
-     (try_end),
-	 
+    [(call_script,"script_maybe_relocate_player_from_z0"),
 	 (set_background_mesh, "mesh_ui_default_menu_window"),
 
      (call_script, "script_encounter_calculate_fit"),
@@ -4944,7 +4874,7 @@ game_menus = [
                             "Charge the enemy.",[
                                 (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
                                 (assign, "$g_battle_result", 0),
-                                (call_script, "script_calculate_renown_value"),
+ #                               (call_script, "script_calculate_renown_value"),
                                 (call_script, "script_calculate_battle_advantage"),
                                 (call_script, "script_calculate_battleside_races"),
                                 (set_battle_advantage, reg0),
@@ -6091,7 +6021,6 @@ game_menus = [
         (call_script, "script_change_center_prosperity", "$g_encountered_party", -5),
         (call_script, "script_give_center_to_faction", "$g_encountered_party", ":faction_no"),
         (call_script, "script_add_log_entry", logent_player_participated_in_siege, "trp_player",  "$g_encountered_party", 0, "$g_encountered_party_faction"),
-##        (call_script, "script_change_troop_renown", "trp_player", 1),
         (change_screen_return),
     ],
     [],
@@ -6108,7 +6037,6 @@ game_menus = [
         (party_set_slot, "$g_encountered_party", slot_center_last_taken_by_troop, "trp_player"),
         #Reduce prosperity of the center by 5
         (call_script, "script_change_center_prosperity", "$g_encountered_party", -5),
-        (call_script, "script_change_troop_renown", "trp_player", 5),
         (call_script, "script_add_log_entry", logent_castle_captured_by_player, "trp_player", "$g_encountered_party", -1, "$g_encountered_party_faction"),
         (try_begin),
           (is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
@@ -6462,7 +6390,6 @@ game_menus = [
     [
       (store_random_in_range, ":random_gold", 200, 500),
       (call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
-      (call_script, "script_change_troop_renown", "trp_player", 10),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),

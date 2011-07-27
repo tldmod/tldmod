@@ -30,15 +30,12 @@ from module_constants import *
 triggers = [
 # Tutorial:
 #  (0.1, 0, ti_once, [(map_free,0)], [(dialog_box,"str_tutorial_map1")]),
-
-#  (0.0, 0, ti_once, [(map_free,0)], [(call_script,"script_tld_war_system_init")] ),
 #  (1, 0, 0.0, [(key_is_down,key_h)],[(call_script,"script_tld_war_system_debug")] ),  
 #  (1, 0, 0.0, [(key_is_down,key_r)],[(call_script,"script_tld_war_system_init")] ),
-#  
-#  (1.0, 0, ti_once, [(map_free,0)], [(start_map_conversation,"trp_guide")]),
+#  (1, 0, ti_once, [(map_free,0)], [(start_map_conversation,"trp_guide")]),
 
 # Refresh Smiths
-  (0.0, 0, 24.0, [], 
+(0, 0, 24, [], 
  [(set_merchandise_modifier_quality,150),
   (try_for_range,":cur_merchant",weapon_merchants_begin,weapon_merchants_end),
     (reset_item_probabilities,100),     
@@ -70,7 +67,6 @@ triggers = [
 			(try_end),
    (try_end),
 
-
 	(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
 		(store_add,":slot",":itp_type",slot_troop_shop_horses-1), # itp_types and shop abundance slots in same order 
 		(troop_get_slot,":items",":cur_merchant",":slot"), # get item shop abundance
@@ -89,7 +85,7 @@ triggers = [
 ]),
 
 # Refresh Horse sellers
-  (0.0, 0, 24.0, [], [
+(0, 0, 24, [], [
     (set_merchandise_modifier_quality,150),
     #(store_sub, ":item_to_price_slot", slot_town_trade_good_prices_begin, trade_goods_begin),
 
@@ -154,17 +150,6 @@ triggers = [
     # Add trade goods to merchant inventories
         (reset_item_probabilities,100),
         (try_for_range, ":cur_goods", trade_goods_begin, trade_goods_end),
-#            (store_add, ":cur_production_slot", ":cur_goods", ":item_to_production_slot"),
-            # (store_add, ":cur_price_slot", ":cur_goods", ":item_to_price_slot"),
-#            (party_get_slot, ":cur_production", ":cur_center", ":cur_production_slot"),
-            # (party_get_slot, ":cur_price", ":cur_center", ":cur_price_slot"),
-                    
-            # (assign, ":cur_probability", 100),
-            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            # (val_mul, ":cur_probability", average_price_factor),(val_div, ":cur_probability", ":cur_price"),
-            
             #MV: no non-edible trade goods and some factional food
             (try_begin),
               (is_between, ":cur_goods", food_begin, food_end),
@@ -176,8 +161,7 @@ triggers = [
               (neq, ":cur_goods", "itm_maggoty_bread"),
               (this_or_next|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
               (neq, ":cur_goods", "itm_cram"),
-              
-			  ## food quest: 
+		  ## food quest: 
               (assign, ":quest_prevents", 0),
               (try_begin), # don't allow this food to generate if the quest says there is a shortage
                 (check_quest_active, "qst_deliver_food"),
@@ -186,18 +170,15 @@ triggers = [
                 (assign, ":quest_prevents", 1),
               (try_end),
               (eq, ":quest_prevents", 0),
-              
               (set_item_probability_in_merchandise,":cur_goods",100),
             (else_try),
               (set_item_probability_in_merchandise,":cur_goods",0),
             (try_end),
-            
             #(set_item_probability_in_merchandise,":cur_goods",":cur_probability"),
         (try_end),
         (store_div, ":num_goods", ":center_str_income", 5),
         (val_add, ":num_goods", num_merchandise_goods), #now 3-7
         (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
-        
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
         (troop_sort_inventory, ":cur_merchant"),
         (store_troop_gold, ":cur_gold",":cur_merchant"),
@@ -207,54 +188,9 @@ triggers = [
 	(try_end),
 ]),
 
-#MV: removed manhunters
-  # (5.7, 0, 0.0, [(store_num_parties_created,reg(3),"pt_manhunters"),
-                 # (lt,reg(3),num_max_zendar_manhunters),
-                 # (store_num_parties_of_template, reg(2), "pt_manhunters"), (lt,reg(2),3)],
-                # [(set_spawn_radius,1),(spawn_around_party,"p_zendar","pt_manhunters")]),
-
-#GA: removed vanilla prisoner train check
-  # (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_prisoner_train_party"),(party_is_in_any_town,reg(2)),],
-              # [(store_faction_of_party, ":faction_no", reg(2)),
-               # (call_script,"script_cf_select_random_walled_center_with_faction", ":faction_no", -1),
-               # (party_set_ai_behavior,reg(2),ai_bhvr_travel_to_party),
-               # (party_set_ai_object,reg(2),reg0),
-               # (party_set_flags, reg(2), pf_default_behavior, 0),
-              # ]),
-
-##  (2.0, 0, 0, [(store_random_party_of_template, reg(2), "pt_kingdom_caravan_party"),
-##               (party_is_in_any_town,reg(2)),
-##               ],
-##              [(store_faction_of_party, ":faction_no", reg(2)),
-##               (call_script,"script_cf_select_random_town_with_faction", ":faction_no"),
-##               (party_set_ai_behavior,reg(2),ai_bhvr_travel_to_party),
-##               (party_set_ai_object,reg(2),reg0),
-##               (party_set_flags, reg(2), pf_default_behavior, 0),
-##            ]),
-  
-  # (4, 0, 0, [(eq, "$caravan_escort_state", 1), #cancel caravan_escort_state if caravan leaves the destination
-             # (get_party_ai_object,reg(1),"$caravan_escort_party_id"),
-             # (neq,reg(1),"$caravan_escort_destination_town"),
-            # ],
-            # [(assign,"$caravan_escort_state",0),
-             # (add_xp_as_reward,100),
-            # ]),
-
-#  (1.5, 0, 0, [(store_random_party_of_template, reg(2), "pt_messenger_party"),
-#               (party_is_in_any_town,reg(2)),
-#               ],
-#   [(store_faction_of_party, ":faction_no", reg(2)),
-#    (call_script,"script_cf_select_random_walled_center_with_faction", ":faction_no", -1),
-#    (party_set_ai_behavior,reg(2),ai_bhvr_travel_to_party),
-#    (party_set_ai_object,reg(2),reg0),
-#    (party_set_flags, reg(2), pf_default_behavior, 0),
-#    ]),
-#  
-
 #Kingdom Parties
-  (24.0, 0, 0.0, [],
-   [
-        #############################################
+(24, 0, 0, [],
+   [    #############################################
         # TLD Parties spawn (foxyman)
         #
       (try_for_range, ":center", centers_begin, centers_end),
@@ -397,19 +333,15 @@ triggers = [
             (try_end),             
         (try_end),
       (try_end),
-        #
-        # 
-        #############################################
     ]
   ),
 
-   (0.1, 0, ti_once,
+(0.1, 0, ti_once,
    [ #(entering_town,":party"),
      (neq,"$ambient_faction","$players_kingdom"),
 	 (call_script, "script_cf_factions_are_allies", "$ambient_faction","$players_kingdom"),
    ],
-   [
-		(str_store_faction_name, s11, "$ambient_faction"),
+   [	(str_store_faction_name, s11, "$ambient_faction"),
 		(str_store_faction_name, s10, "$players_kingdom"),
 		(dialog_box,"@When dealing with people in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
 	]),
@@ -441,56 +373,6 @@ triggers = [
 ###########################################################################
 ### Random Governer Quest triggers
 ###########################################################################
-
-# Incriminate Loyal Advisor quest
-  # (0.2, 0.0, 0.0,
-   # [
-       # (check_quest_active, "qst_incriminate_loyal_commander"),
-       # (neg|check_quest_concluded, "qst_incriminate_loyal_commander"),
-       # (quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_current_state, 2),
-       # (quest_get_slot, ":quest_target_center", "qst_incriminate_loyal_commander", slot_quest_target_center),
-       # (quest_get_slot, ":quest_target_party", "qst_incriminate_loyal_commander", slot_quest_target_party),
-       # (try_begin),
-         # (neg|party_is_active, ":quest_target_party"),
-         # (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
-         # (call_script, "script_fail_quest", "qst_incriminate_loyal_commander"),
-       # (else_try),
-         # (party_is_in_town, ":quest_target_party", ":quest_target_center"),
-         # (remove_party, ":quest_target_party"),
-         # (quest_set_slot, "qst_incriminate_loyal_commander", slot_quest_current_state, 3),
-         # (quest_get_slot, ":quest_object_troop", "qst_incriminate_loyal_commander", slot_quest_object_troop),
-         # (assign, ":num_available_factions", 0),
-         # (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-           # (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
-           # (neq, ":faction_no", "fac_player_supporters_faction"),
-           # (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
-           # (val_add, ":num_available_factions", 1),
-         # (try_end),
-         # (try_begin),
-           # (gt, ":num_available_factions", 0),
-           # (store_random_in_range, ":random_faction", 0, ":num_available_factions"),
-           # (assign, ":target_faction", -1),
-           # (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-             # (eq, ":target_faction", -1),
-             # (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
-             # (neq, ":faction_no", "fac_player_supporters_faction"),
-             # (neg|quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_target_faction, ":faction_no"),
-             # (val_sub, ":random_faction", 1),
-             # (lt, ":random_faction", 0),
-             # (assign, ":target_faction", ":faction_no"),
-           # (try_end),
-         # (try_end),
-         # (try_begin),
-           # (gt, ":target_faction", 0),
-           # (call_script, "script_change_troop_faction", ":quest_object_troop", ":target_faction"),
-         # (else_try),
-           # (call_script, "script_change_troop_faction", ":quest_object_troop", "fac_outlaws"),
-         # (try_end),
-         # (call_script, "script_succeed_quest", "qst_incriminate_loyal_commander"),
-       # (try_end),
-    # ],
-   # []
-   # ),
 
 # Runaway Peasants quest
   (0.2, 0.0, 0.0,
@@ -996,12 +878,11 @@ triggers = [
 ##    ],
 ##   []
 ##   ),
+
 # Follow Spy quest
-  (0.5, 0.0, 0.0,
-   [
-       (check_quest_active, "qst_follow_spy"),
-       (eq, "$qst_follow_spy_no_active_parties", 0),
-       (quest_get_slot, ":quest_giver_center", "qst_follow_spy", slot_quest_giver_center),
+  (0.5, 0, 0,[	(check_quest_active, "qst_follow_spy"),
+				(eq, "$qst_follow_spy_no_active_parties", 0),
+    ],[(quest_get_slot, ":quest_giver_center", "qst_follow_spy", slot_quest_giver_center),
        (quest_get_slot, ":quest_object_center", "qst_follow_spy", slot_quest_object_center),
        (assign, ":abort_meeting", 0),
        (try_begin),
@@ -1088,10 +969,8 @@ triggers = [
          (gt, ":num_spies", 0),
          (gt, ":num_spy_partners", 0),
          (call_script, "script_succeed_quest", "qst_follow_spy"),
-       (try_end),
-    ],
-   []
-   ),
+       (try_end)]
+),
 ### Raiders quest
 ##  (0.95, 0.0, 0.2,
 ##   [
@@ -1155,13 +1034,12 @@ triggers = [
 # Random MERCHANT quest triggers
 ####################################  
  # Apply interest to merchants guild debt  1% per week
-  (24.0 * 7, 0.0, 0.0,
-   [],
-   [
-       (val_mul,"$debt_to_merchants_guild",101),
-       (val_div,"$debt_to_merchants_guild",100)
-    ]
-   ),
+  # (24 * 7, 0, 0,
+   # [],
+   # [   (val_mul,"$debt_to_merchants_guild",101),
+       # (val_div,"$debt_to_merchants_guild",100)
+    # ]
+   # ),
 # Escort merchant caravan:
   (0.1, 0.0, 0.1, [(check_quest_active, "qst_escort_merchant_caravan"),
                    (eq, "$escort_merchant_caravan_mode", 1)
@@ -1231,15 +1109,9 @@ triggers = [
    # []
    # ),
 
-
 #NPC system changes begin
 #Move unemployed NPCs around taverns
-   # (24 * 15, 0, 0,
-   # [
-    #(call_script, "script_update_companion_candidates_in_taverns"),
-    # ],
-   # []
-   # ),
+   # (24 * 15, 0, 0, [(call_script, "script_update_companion_candidates_in_taverns")],[]),
 
 #Process morale and determine personality clashes
   (0, 0, 24,
@@ -1385,13 +1257,7 @@ triggers = [
     
 
 # TLD initialization
-    (0, 0, ti_once, [
-        ], [
-### TLD variables initial assignment, GA		
-		(assign, "$tld_war_began",0),
-		#_(assign, "$g_center_to_give_to_player", "p_zendar"),
-        (assign, "$prev_day", 1),
-
+    (0, 0, ti_once, [], [
 ### TLD troop penalties initialization (foxyman)
         (try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
             (troop_get_type, ":troop_type", ":troop_id"),
@@ -1428,30 +1294,23 @@ triggers = [
             ])+[
             (try_end),
         (try_end),
-        
         ]
     ),
 	
 #TLD Info about magic items	in inventory! (mtarini)
-    (1, 0, ti_once, 
-	   [(player_has_item,"itm_ent_water"),
-	   ],[
+(1, 0, ti_once, [(player_has_item,"itm_ent_water")],[
 		(dialog_box,"@You came into a possession of a strange, oversized bowl of fresh-looking water. It smells a little like musk.","@Obtained: Ent water."),
 		(play_sound,"snd_quest_completed"),
-        ]
-    ),
+]),
 
 #TLD magic items stuff(mtarini)
-	(12, 12, ti_once, 
-	   [
-	     (eq,"$g_ent_water_taking_effect",1),
-		 (troop_get_type,reg5,"trp_player"),
-		 (store_troop_health,reg6, "trp_player"),
-		 (ge|this_or_next, reg6, 95), # takes effect only after you fully recovered...
-		 (neg|is_between,reg5,tf_orc_begin, tf_orc_end), # or regardless of health, if you are not an orc
+(12, 12,ti_once,[(eq,"$g_ent_water_taking_effect",1),
+				 (troop_get_type,reg5,"trp_player"),
+				 (store_troop_health,reg6, "trp_player"),
+				 (ge|this_or_next, reg6, 95), # takes effect only after you fully recovered...
+				 (neg|is_between,reg5,tf_orc_begin, tf_orc_end), # or regardless of health, if you are not an orc
 	   ],[
 	    (assign, "$g_ent_water_taking_effect", 0),
-		
 		(try_begin),
 		  (is_between,reg5,tf_orc_begin, tf_orc_end),
   		  (dialog_box,"@A little after you fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?","@Ent water effect."),
@@ -1463,14 +1322,12 @@ triggers = [
 		(display_log_message,"@Ent water effect: increase stature!"),
 		(display_log_message,"@ +1 to Strength (permanent)"),
 		(display_log_message,"@ +1 to Charisma (permanent)"),
-        ]
-    ),
+]),
 	
 # TLD War beginning condition (player level = 8 at the moment), GA
-    (1, 0, 0, 
-	   [(eq,"$tld_war_began",0),
-	    (store_character_level,":level","trp_player"),
-		(ge,":level",tld_player_level_to_begin_war),
+(1, 0, 0,[	(eq,"$tld_war_began",0),
+			(store_character_level,":level","trp_player"),
+			(ge,":level",tld_player_level_to_begin_war),
 	   ],[
 		(assign, "$tld_war_began",1),
 		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
@@ -1499,10 +1356,9 @@ triggers = [
 			(eq, "$tld_option_cutscenes",1),
 			(jump_to_menu, "mnu_auto_intro_rohan"),
 		(try_end),
-        ]
-    ),
+]),
 	
-  (0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[
+(0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[
 	(call_script,"script_party_is_in_fangorn","p_main_party"),
 	(assign,":inside_fangorn",reg0),
 	(try_begin),
@@ -1533,11 +1389,11 @@ triggers = [
 	  (val_sub,"$g_fangorn_rope_pulled", 5), # if outside fangorn, fangorn calms down (to 0).
 	  (val_max,"$g_fangorn_rope_pulled", 0),
 	(try_end),
-  ] ),
+]),
 
-    # Orc parties eat prisoners at night
-    (0, 18, 6, [(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], #MV: only affects good sides
-    [
+# Orc parties eat prisoners at night
+(0, 18, 6, [(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], #MV: only affects good sides
+[
 #        debug_point_4,
 #        (try_begin),
 #            (is_currently_night),
@@ -1597,8 +1453,7 @@ triggers = [
             (try_end),
             (party_set_morale, "p_main_party", ":morale"),
         (try_end),        
-        ]
-    ),
+]),
 
 ### war start movie sequence  
 #  (0.1, 0.04, ti_once, [(map_free,0),],[#(key_clicked,key_k)],[
@@ -1630,52 +1485,6 @@ triggers = [
 #   (assign,"$warmovie",5),
 #  ]), 
 
-####################################
-# TLD faction ranks
-#
-# Detect new rank
-  # (12, 0, 0, [], [
-    # (troop_get_slot, ":status", "trp_player", slot_troop_faction_status),
-    # (try_begin),
-    # ]+concatenate_scripts([
-        # [
-        # (store_add, ":kd", kd, kingdoms_begin),
-        # (eq, ":kd", "$players_kingdom"),
-        # (try_begin),
-        # ]+concatenate_scripts([
-            # [
-            # (ge, ":status", tld_faction_ranks[kd][rnk][0]),
-            # (troop_get_slot, ":ofc_pos", "trp_player", slot_troop_faction_rank),
-            # (store_and, ":rank", ":ofc_pos", stfr_rank_mask),
-            # (val_div, ":rank", stfr_rank_unit),
-            # (assign, ":continue", 0),
-            # (try_begin),
-                # (gt, ":rank", rnk),
-                # (str_store_string, s11, "str_promote"),
-# #            (else_try),
-# #                (lt, ":rank", rnk),
-# #                (str_store_string, s11, "str_demote"),
-            # (else_try),
-                # (assign, ":continue", 1),
-            # (try_end),
-            # (try_begin),
-                # (eq, ":continue", 0),
-                # (assign, "$tld_new_rank", rnk),
-                # (jump_to_menu, "mnu_faction_rank_change"),
-            # (try_end),
-        # (else_try),
-            # ] for rnk in range(len(tld_faction_ranks[kd]))
-        # ])+[
-        # (try_end),
-    # (else_try),
-        # ] for kd in range(len(tld_faction_ranks))
-    # ])+[
-    # (try_end),
-  # ]),
-
-#
-# TLD faction ranks end
-
 #################################################################################
 # starting quest WIP
 # (1, 0, ti_once, [(map_free,0)],[(jump_to_menu,"mnu_starting_quest_good"),]
@@ -1683,183 +1492,179 @@ triggers = [
 
 #################################################################################
 (1, 0, 168, [], [ #traits crunching
-(try_begin),
-    (eq,1,0), # traits effect on influence inflow
-    (assign, ":wage", 0),#"$weekly_wage"),
-#    (val_add, "$wages", "$weekly_wage"),
-    (assign, ":local1", 0),
+	(try_begin),
+		(eq,1,0), # traits effect on influence inflow
+		(assign, ":wage", 0),#"$weekly_wage"),
+	#    (val_add, "$wages", "$weekly_wage"),
+		(assign, ":local1", 0),
 
-    (try_begin),
-        (check_quest_active, "qst_trait_oathkeeper"),
-        (assign, reg2, ":wage"),
-        (val_mul, reg2, 10),
-        (val_div, reg2, 9),
-        (val_sub, reg2, ":wage"),
-        (val_max, reg2, 1),
-        (val_add, ":local1", reg2),
-    (else_try),
-        (check_quest_active, "qst_trait_oathbreaker"),
-        (assign, reg2, ":wage"),
-        (val_mul, reg2, 9),
-        (val_div, reg2, 10),
-        (val_sub, reg2, ":wage"),
-        (val_add, ":local1", reg2),
-    (try_end),
-    (try_begin),
-        (check_quest_active, "qst_trait_reverent"),
-        (assign, reg2, ":wage"),
-        (val_mul, reg2, 10),
-        (val_div, reg2, 19),
-        (val_sub, reg2, ":wage"),
-        (val_max, reg2, 1),
-        (val_add, ":local1", reg2),
-    (try_end),
-    (try_begin),
-        (check_quest_active, "qst_trait_merciful"),
-        (assign, reg2, ":wage"),
-        (val_mul, reg2, 10),
-        (val_div, reg2, 9),
-        (val_sub, reg2, ":wage"),
-        (val_max, reg2, 1),
-        (val_add, ":local1", reg2),
-    (try_end),
-
-    (val_add, ":wage", ":local1"),
-#    (call_script, "script_update_influence_count", ":wage"),
-#    (assign, reg1, "$faction_influence"),
-#    (assign, reg2, ":wage"),
-#    (display_message, "@Weekly_Influence:_{reg2}/{reg1}.", 4292863579),
-(try_end),
-# traits effect on party morale
-(try_begin),
-    (check_quest_active, "qst_trait_foe_hammer"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_mul, ":morale", 10),
-    (val_div, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-(try_begin),
-    (check_quest_active, "qst_trait_battle_scarred"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_mul, ":morale", 10),
-    (val_div, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-(try_begin),
-    (check_quest_active, "qst_trait_orc_pit_champion"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_mul, ":morale", 10),
-    (val_div, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-(try_begin),
-    (check_quest_active, "qst_trait_bravery"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_mul, ":morale", 10),
-    (val_div, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-(try_begin),
-    (check_quest_active, "qst_trait_accursed"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_div, ":morale", 10),
-    (val_mul, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-(try_begin),
-    (check_quest_active, "qst_trait_merciful"),
-    (party_get_morale, ":morale", "p_main_party"),
-    (val_div, ":morale", 10),
-    (val_mul, ":morale", 9),
-    (party_set_morale, "p_main_party", ":morale"), 
-(try_end),
-
-# gaining new traits
-(try_begin),
-    (call_script, "script_cf_check_trait_captain"),
-(try_end),
-(try_begin),
-    (neg|check_quest_active, "qst_trait_command_voice"),
-    (gt, "$trait_check_commands_issued", 0),
-    (store_skill_level, ":check", skl_leadership, "trp_player"),
-    (ge, ":check", 5),
-    (assign, ":check", "$trait_check_commands_issued"),
-    (val_mul, ":check", 7),
-    (assign, "$trait_check_commands_issued", 0),
-    (store_random, ":rnd", 100),
-    (neg|ge, ":rnd", ":check"),
-    (call_script, "script_cf_gain_trait_command_voice"),
-(try_end),
-(try_begin),
-    (neg|check_quest_active, "qst_trait_stealthy"),
-    (gt, "$trait_check_stealth_success", 0),
-    (store_skill_level, ":check", skl_pathfinding, "trp_player"),
-    (ge, ":check", 3),
-    (assign, ":check", "$trait_check_stealth_success"),
-    (val_mul, ":check", 10),
-    (assign, "$trait_check_stealth_success", 0),
-    (store_random, ":rnd", 100),
-    (neg|ge, ":rnd", ":check"),
-    (call_script, "script_cf_gain_trait_stealthy"),
-(try_end),
-(try_begin),
-    (neg|check_quest_active, "qst_trait_berserker"),
-    (gt, "$trait_check_unarmored_berserker", 0),
-    (assign, ":check", "$trait_check_unarmored_berserker"),
-    (val_mul, ":check", 5),
-    (assign, "$trait_check_unarmored_berserker", 0),
-    (store_random, ":rnd", 100),
-    (neg|ge, ":rnd", ":check"),
-    (store_skill_level, ":check", skl_ironflesh, "trp_player"),
-    (ge, ":check", 6),
-    (call_script, "script_cf_gain_trait_berserker"),
-(try_end),
-(try_begin),
-    (neg|check_quest_active, "qst_trait_battle_scarred"),
-    (gt, "$trait_check_battle_scarred", 0),
-    (assign, ":check", "$trait_check_battle_scarred"),
-    (val_mul, ":check", 3),
-    (assign, "$trait_check_battle_scarred", 0),
-    (gt, ":check", 15),
-    (store_random, ":rnd", 100),
-    (neg|ge, ":rnd", ":check"),
-    (call_script, "script_cf_gain_trait_battle_scarred"),
-(try_end),
-(try_begin),
-    (neg|check_quest_active, "qst_trait_foe_hammer"),
-    (assign, ":count", 0),
-    (store_troop_faction, ":tmp", "trp_player"),
-	(faction_get_slot, ":player_side", ":tmp", slot_faction_side),
-	(try_for_range, ":hero", heroes_begin, heroes_end), # count heroes brutally killed by player
-	    (troop_slot_eq, ":hero", slot_troop_wound_mask, wound_death),
-        # insert condition for being killed by player
-        (store_troop_faction, ":tmp", ":hero"),
-	    (faction_get_slot, ":hero_side", ":tmp", slot_faction_side),
-        (try_begin),
-             (eq, ":player_side", faction_side_good),
-             (neq, ":hero_side", faction_side_good),
-             (val_add, ":count", 1),
-        (else_try),
-             (eq, ":player_side", faction_side_eye),
-             (neq, ":hero_side", faction_side_eye),
-             (val_add, ":count", 1),
-        (else_try),
-             (eq, ":player_side", faction_side_hand),
-             (neq, ":hero_side", faction_side_hand),
-            (val_add, ":count", 1),
-        (try_end),
-    (try_end),
-    (ge, ":count", 2),
-    (val_mul, ":count", 8),
-    (store_random, ":rnd", 100),
-    (neg|ge, ":rnd", ":count"), 
-    (call_script, "script_cf_gain_trait_foe_hammer"),
-(try_end),
-
-#(assign, "$minas_tirith_healing", 0),
-#(assign, "$edoras_healing"      , 0),
-#(assign, "$isengard_healing"    , 0),
-#(assign, "$morannon_healing"    , 0),
-
+		(try_begin),
+			(check_quest_active, "qst_trait_oathkeeper"),
+			(assign, reg2, ":wage"),
+			(val_mul, reg2, 10),
+			(val_div, reg2, 9),
+			(val_sub, reg2, ":wage"),
+			(val_max, reg2, 1),
+			(val_add, ":local1", reg2),
+		(else_try),
+			(check_quest_active, "qst_trait_oathbreaker"),
+			(assign, reg2, ":wage"),
+			(val_mul, reg2, 9),
+			(val_div, reg2, 10),
+			(val_sub, reg2, ":wage"),
+			(val_add, ":local1", reg2),
+		(try_end),
+		(try_begin),
+			(check_quest_active, "qst_trait_reverent"),
+			(assign, reg2, ":wage"),
+			(val_mul, reg2, 10),
+			(val_div, reg2, 19),
+			(val_sub, reg2, ":wage"),
+			(val_max, reg2, 1),
+			(val_add, ":local1", reg2),
+		(try_end),
+		(try_begin),
+			(check_quest_active, "qst_trait_merciful"),
+			(assign, reg2, ":wage"),
+			(val_mul, reg2, 10),
+			(val_div, reg2, 9),
+			(val_sub, reg2, ":wage"),
+			(val_max, reg2, 1),
+			(val_add, ":local1", reg2),
+		(try_end),
+		(val_add, ":wage", ":local1"),
+	#    (call_script, "script_update_influence_count", ":wage"),
+	#    (assign, reg1, "$faction_influence"),
+	#    (assign, reg2, ":wage"),
+	#    (display_message, "@Weekly_Influence:_{reg2}/{reg1}.", 4292863579),
+	(try_end),
+	# traits effect on party morale
+	(try_begin),
+		(check_quest_active, "qst_trait_foe_hammer"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_mul, ":morale", 10),
+		(val_div, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+	(try_begin),
+		(check_quest_active, "qst_trait_battle_scarred"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_mul, ":morale", 10),
+		(val_div, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+	(try_begin),
+		(check_quest_active, "qst_trait_orc_pit_champion"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_mul, ":morale", 10),
+		(val_div, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+	(try_begin),
+		(check_quest_active, "qst_trait_bravery"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_mul, ":morale", 10),
+		(val_div, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+	(try_begin),
+		(check_quest_active, "qst_trait_accursed"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_div, ":morale", 10),
+		(val_mul, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+	(try_begin),
+		(check_quest_active, "qst_trait_merciful"),
+		(party_get_morale, ":morale", "p_main_party"),
+		(val_div, ":morale", 10),
+		(val_mul, ":morale", 9),
+		(party_set_morale, "p_main_party", ":morale"), 
+	(try_end),
+  # gaining new traits
+	(try_begin),
+		(call_script, "script_cf_check_trait_captain"),
+	(try_end),
+	(try_begin),
+		(neg|check_quest_active, "qst_trait_command_voice"),
+		(gt, "$trait_check_commands_issued", 0),
+		(store_skill_level, ":check", skl_leadership, "trp_player"),
+		(ge, ":check", 5),
+		(assign, ":check", "$trait_check_commands_issued"),
+		(val_mul, ":check", 7),
+		(assign, "$trait_check_commands_issued", 0),
+		(store_random, ":rnd", 100),
+		(neg|ge, ":rnd", ":check"),
+		(call_script, "script_cf_gain_trait_command_voice"),
+	(try_end),
+	(try_begin),
+		(neg|check_quest_active, "qst_trait_stealthy"),
+		(gt, "$trait_check_stealth_success", 0),
+		(store_skill_level, ":check", skl_pathfinding, "trp_player"),
+		(ge, ":check", 3),
+		(assign, ":check", "$trait_check_stealth_success"),
+		(val_mul, ":check", 10),
+		(assign, "$trait_check_stealth_success", 0),
+		(store_random, ":rnd", 100),
+		(neg|ge, ":rnd", ":check"),
+		(call_script, "script_cf_gain_trait_stealthy"),
+	(try_end),
+	(try_begin),
+		(neg|check_quest_active, "qst_trait_berserker"),
+		(gt, "$trait_check_unarmored_berserker", 0),
+		(assign, ":check", "$trait_check_unarmored_berserker"),
+		(val_mul, ":check", 5),
+		(assign, "$trait_check_unarmored_berserker", 0),
+		(store_random, ":rnd", 100),
+		(neg|ge, ":rnd", ":check"),
+		(store_skill_level, ":check", skl_ironflesh, "trp_player"),
+		(ge, ":check", 6),
+		(call_script, "script_cf_gain_trait_berserker"),
+	(try_end),
+	(try_begin),
+		(neg|check_quest_active, "qst_trait_battle_scarred"),
+		(gt, "$trait_check_battle_scarred", 0),
+		(assign, ":check", "$trait_check_battle_scarred"),
+		(val_mul, ":check", 3),
+		(assign, "$trait_check_battle_scarred", 0),
+		(gt, ":check", 15),
+		(store_random, ":rnd", 100),
+		(neg|ge, ":rnd", ":check"),
+		(call_script, "script_cf_gain_trait_battle_scarred"),
+	(try_end),
+	(try_begin),
+		(neg|check_quest_active, "qst_trait_foe_hammer"),
+		(assign, ":count", 0),
+		(store_troop_faction, ":tmp", "trp_player"),
+		(faction_get_slot, ":player_side", ":tmp", slot_faction_side),
+		(try_for_range, ":hero", heroes_begin, heroes_end), # count heroes brutally killed by player
+			(troop_slot_eq, ":hero", slot_troop_wound_mask, wound_death),
+			# insert condition for being killed by player
+			(store_troop_faction, ":tmp", ":hero"),
+			(faction_get_slot, ":hero_side", ":tmp", slot_faction_side),
+			(try_begin),
+				 (eq, ":player_side", faction_side_good),
+				 (neq, ":hero_side", faction_side_good),
+				 (val_add, ":count", 1),
+			(else_try),
+				 (eq, ":player_side", faction_side_eye),
+				 (neq, ":hero_side", faction_side_eye),
+				 (val_add, ":count", 1),
+			(else_try),
+				 (eq, ":player_side", faction_side_hand),
+				 (neq, ":hero_side", faction_side_hand),
+				(val_add, ":count", 1),
+			(try_end),
+		(try_end),
+		(ge, ":count", 2),
+		(val_mul, ":count", 8),
+		(store_random, ":rnd", 100),
+		(neg|ge, ":rnd", ":count"), 
+		(call_script, "script_cf_gain_trait_foe_hammer"),
+	(try_end),
+	#(assign, "$minas_tirith_healing", 0),
+	#(assign, "$edoras_healing"      , 0),
+	#(assign, "$isengard_healing"    , 0),
+	#(assign, "$morannon_healing"    , 0),
 ]),
 ]

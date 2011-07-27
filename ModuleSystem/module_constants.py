@@ -5,6 +5,7 @@ from ID_factions import *
 from header_item_modifiers import *
 from header_common import *
 from header_music import *
+from header_troops import *
 ##############################################################
 # These constants are used in various files.
 # If you need to define a value that will be used in those files,
@@ -2110,3 +2111,46 @@ Team3_Starting_Point	= 16	#pos16
 ### orc bonus for party headcount (each tf_orc in main party adds nom/denom to max party size)
 orc_bonus_nominator   = 2
 orc_bonus_denominator = 3
+
+# party player icons (mtarini)
+# for each faction: icon-mounted, icon-on-foot (melee), icon-on-foot (ranged)
+faction_player_icons = [
+    ("fac_gondor"  ,"icon_knight_gondor", "icon_footman_gondor", "icon_ithilien_ranger"),
+    ("fac_rohan"   ,"icon_knight_rohan", "icon_player", "icon_player"),
+    ("fac_isengard","icon_wargrider_run", "icon_uruk_isengard", "icon_uruk_isengard"), # assuming uruk orc (not uruk or evil man). Evil men will be deatl separately
+    ("fac_mordor"  ,"icon_wargrider_furshield_run", "icon_uruk", "icon_uruk"),         # same thing
+    ("fac_harad"   ,"icon_harad_horseman", "icon_player", "icon_player"),       
+    ("fac_rhun"    ,"icon_easterling_horseman", "icon_player", "icon_player"),
+    ("fac_khand"   ,"icon_easterling_horseman", "icon_player", "icon_player"),
+    ("fac_umbar"   ,"icon_umbar_captain", "icon_umbar_corsair", "icon_umbar_corsair"),
+    ("fac_lorien"  ,"icon_knight_rivendell", "icon_lorien_elf_b", "icon_lorien_elf_a"),
+    ("fac_imladris","icon_lamedon_horseman", "icon_mirkwood_elf", "icon_mirkwood_elf"),
+    ("fac_woodelf" ,"icon_player_horseman", "icon_mirkwood_elf", "icon_mirkwood_elf"),
+    ("fac_moria"   ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
+    ("fac_guldur"  ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
+    ("fac_gundabad","icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
+    ("fac_dale"    ,"icon_player_horseman", "icon_player", "icon_player"),
+    ("fac_dwarf"   ,"icon_player_horseman", "icon_dwarf",  "icon_dwarf"),
+    ("fac_dunland" ,"icon_dunland_captain", "icon_dunlander", "icon_dunlander"),
+    ("fac_beorn"   ,"icon_player_horseman", "icon_player", "icon_player"),
+]
+
+# Daytime/Nighttime penalties system (foxyman)
+Penalties_sys = [
+    (tf_male,    [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_female,  [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_gondor,  [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_rohan,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_dunland, [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_orc,     [("skl_athletics", -1),("skl_spotting", -1),("skl_pathfinding", -1)], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20),(wpt_archery, -20),(wpt_throwing, -20)]),
+    (tf_uruk,    [("skl_athletics", -1),("skl_spotting", -1),("skl_pathfinding", -1)], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20),(wpt_archery, -20),(wpt_throwing, -20)]),
+    (tf_urukhai, [        ], [        ]),
+    (tf_harad,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_dwarf,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_troll,   [("skl_athletics", -1)], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20)]),
+    (tf_dunedain,[        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_lorien,  [        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
+    (tf_imladris,[        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
+    (tf_woodelf, [        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
+    (tf_evil_man,[        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+]

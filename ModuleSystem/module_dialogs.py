@@ -404,7 +404,6 @@ dialogs = [
                                           (check_quest_succeeded, "qst_treebeard_kill_orcs")], 
 "(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'", "close_window",[
     (add_xp_as_reward, 2000),
-    (call_script, "script_change_troop_renown", "trp_player", 20),
     (troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the orcs
     (call_script, "script_end_quest", "qst_treebeard_kill_orcs"),
     (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1)]],
@@ -2687,8 +2686,7 @@ How could I expect someone like {playername} to be up to the challange. My serva
                          (assign, "$temp", reg6)],
 "I heard that you have captured our enemy {s3} and he is with you at the moment.\
  I can pay you {reg6} RPs for him if you want to get rid of him.\
- You can wait for his kingdom to pay his ransom of course, but there is no telling how long that will take, eh?\
-", "lord_buy_prisoner", []],
+ ", "lord_buy_prisoner", []],
 
 [anyone|plyr,"lord_buy_prisoner", [], "I accept your offer. I'll leave {s3} to you for {reg6} RPs.", "lord_buy_prisoner_accept", []],
 [anyone|plyr,"lord_buy_prisoner", [], "I fear I can't accept your offer.", "lord_buy_prisoner_deny", [(assign, "$g_ransom_offer_rejected", 1),]],
@@ -3673,11 +3671,6 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 [anyone,"party_encounter_lord_hostile_ultimatum_surrender", [],
 "{s43}", "close_window", [
        (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default"),
-       # (call_script, "script_make_kingdom_hostile_to_player", "$g_encountered_party_faction", -3),
-       # (try_begin),
-         # (gt, "$g_talk_troop_relation", -10),
-         # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
-       # (try_end),
        (assign,"$encountered_party_hostile",1)]],
 
 
@@ -4224,7 +4217,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
    [(eq, "$players_kingdom", 0),
     (ge, "$g_talk_troop_faction_relation", 0),
     (ge, "$g_talk_troop_relation", 0),
-    (troop_slot_ge, "trp_player", slot_troop_renown, 30),
+#    (troop_slot_ge, "trp_player", slot_troop_renown, 30),
     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
     (faction_get_slot, ":last_offer_time", "$g_talk_troop_faction", slot_faction_last_mercenary_offer_time),
     (assign, ":num_enemies", 0),
@@ -7663,7 +7656,6 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (add_xp_as_reward, ":xp_reward"),
       (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
       (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
-      (call_script, "script_change_troop_renown", "trp_player", 1),
       (call_script, "script_change_player_relation_with_center", "$current_town", 5),
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       (call_script, "script_end_quest", "qst_deal_with_looters"),
@@ -7758,7 +7750,6 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
       # (quest_get_slot,":gold_reward","qst_deal_with_looters",slot_quest_gold_reward),
       # (add_xp_as_reward, ":xp_reward"),
       # (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
-# #      (call_script, "script_change_troop_renown", "trp_player", 1),
       # (call_script, "script_change_player_relation_with_center", "$current_town", 3),
       # (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       # (call_script, "script_end_quest", "qst_deal_with_looters"),
@@ -7787,7 +7778,6 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
     # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
     # (store_div, ":xp_reward", ":quest_gold_reward", 3),
     # (add_xp_as_reward, ":xp_reward"),
-    (call_script, "script_change_troop_renown", "trp_player", 1),
     # (call_script, "script_change_player_relation_with_center", "$current_town", 3),    
     (call_script, "script_finish_quest", "qst_move_cattle_herd", 100),
     (assign, reg8, ":quest_gold_reward")]],
@@ -7823,7 +7813,6 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
     # (val_mul, ":xp_reward", 2),
     # (val_add, ":xp_reward", 100),
     # (add_xp_as_reward, ":xp_reward"),
-    # (call_script, "script_change_troop_renown", "trp_player", 3),
     # (call_script, "script_change_player_relation_with_center", "$current_town", 2),    
     # (call_script, "script_end_quest", "qst_kidnapped_girl"),
     # ]],
@@ -7840,7 +7829,6 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
                               # (val_mul, ":xp_reward", 7),
                               # (add_xp_as_reward, ":xp_reward"),
                               # (call_script, "script_change_player_relation_with_center", "$current_town", 2),
-                              (call_script, "script_change_troop_renown", "trp_player", 3),
                               (call_script, "script_finish_quest", "qst_troublesome_bandits", 100),
                               (assign, reg5, ":quest_gold_reward")]],
 
@@ -8185,7 +8173,6 @@ What do you say?", "merchant_quest_brief_deliver_iron",
                                                        (str_store_party_name, s21, ":quest_target_center"),
                                                        (quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 2),
                                                        (call_script, "script_finish_quest", "qst_escort_merchant_caravan", 100),
-                                                       (call_script, "script_change_troop_renown", "trp_player", 2),
                                                        (assign, reg14, ":quest_gold_reward"),
                                                        (assign, "$g_leave_encounter", 1)]],
   
@@ -8432,7 +8419,6 @@ What do you say?", "merchant_quest_brief_deliver_iron",
       # (party_remove_prisoners, ":cur_party", "trp_kidnapped_girl", 1),
     # (try_end),
     # (call_script, "script_end_quest", "qst_kidnapped_girl"),
-    # (call_script, "script_change_troop_renown", "trp_player", -5),
     # ]],
   #[anyone|plyr, "lost_kidnapped_girl_4", [(store_troop_gold,":gold"),
                                           # (quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
@@ -9796,7 +9782,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
                     (eq, "$players_kingdom", "$g_encountered_party_faction"),
-                    (troop_slot_ge, "trp_player", slot_troop_renown, 100),
+#                    (troop_slot_ge, "trp_player", slot_troop_renown, 100),
                     (str_store_party_name, s10, "$current_town")],
 "Good day, commander. It's good having you here in {s10}.", "close_window",[]],
 
