@@ -27,7 +27,7 @@ BreakPoints = 0
 	ModuleData2Data("Data\\","flora_kinds.txt");
 	ModuleData2Data("Data\\","Font_data.xml");
 	ModuleData2Data("Data\\","ground_specs.txt");
-	--ModuleData2Data("Data\\","item_modifiers.txt");
+	ModuleData2Data("Data\\","item_modifiers.txt");
 	--ModuleData2Data("Data\\","mission_types.txt");
 	ModuleData2Data("Data\\","skeleton_bodies.xml");
 	--ModuleData2Data("Data\\","skyboxes.txt");

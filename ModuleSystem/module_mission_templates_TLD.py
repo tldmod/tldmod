@@ -7,8 +7,7 @@ from header_music import *
 from module_constants import *
 
 cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
-[
-    (eq, "$cheat_mode",1),
+[   (eq, "$cheat_mode",1),
 	(key_is_down, key_s),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     (get_player_agent_no, ":player_agent"),
 	(agent_get_team, ":player_team", ":player_agent"),
@@ -28,7 +27,6 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
     (get_player_agent_no, ":player_agent"),
 	(agent_get_team, ":player_team", ":player_agent"),
 	(display_message, "@CHEAT: player team: \"A-a-a-a-argh!\" (ctrl+s)"),
-
 	(set_show_messages , 0),
     (try_for_agents, ":agent"),
        (agent_get_team, reg10, ":agent"), (neg|teams_are_enemies , reg10, ":player_team"),
@@ -36,50 +34,46 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 	   (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
 	(try_end),
 	(set_show_messages , 1),
-
-	]
-)
+])
 
 #MV: commented out - not used and why not use built-in Ctrl-Shift-F4 like normal people? Really.
 # MT: because this is much more versatile... tap, and enemies just stop. Keep pressed, and they all die insatantly (instead of pressing Ctrl+F4 like mad, often getting killed anyway). Beside, I Alt+F4 too often instead of Ctrl+F4. 
 # No reasons to remove it...
-cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
-    (eq, "$cheat_mode",1),
-	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    (get_player_agent_no, ":player_agent"),
-	(agent_get_team, ":player_team", ":player_agent"),
-	(display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
-    (try_for_agents, ":agent"),
-        (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-		(agent_get_horse,":horse",":agent"),
-		(try_begin), (gt, ":horse", -1), 
-			(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
-			(agent_set_animation, ":horse", "anim_horse_rear"), 
-		(else_try),
-			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
-		(try_end),
-	(try_end),
-  ], [ 
-	(key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    (get_player_agent_no, ":player_agent"),
-	(agent_get_team, ":player_team", ":player_agent"),
-	(display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
+#GA: use Ctrl+Shift+F4. commented to not use CPU cycles
+# cheat_kill_all_on_ctrl_k = (1,1.5,1.5,[
+    # (eq, "$cheat_mode",1),
+	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    # (get_player_agent_no, ":player_agent"),
+	# (agent_get_team, ":player_team", ":player_agent"),
+	# (display_message, "@CHEAT: Mind blast!!! (ctrl+k)"),
+    # (try_for_agents, ":agent"),
+        # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+		# (agent_get_horse,":horse",":agent"),
+		# (try_begin), (gt, ":horse", -1), 
+			# (agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"), 
+			# (agent_set_animation, ":horse", "anim_horse_rear"), 
+		# (else_try),
+			# (agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
+		# (try_end),
+	# (try_end),
+  # ], [ 
+	# (key_is_down, key_k),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    # (get_player_agent_no, ":player_agent"),
+	# (agent_get_team, ":player_team", ":player_agent"),
+	# (display_message, "@CHEAT: everybody: \"A-a-a-a-argh!\" (ctrl+k)"),
 
-	(set_show_messages , 0),
-    (try_for_agents, ":agent"),
-       (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
-	   (agent_set_hit_points , ":agent",0,1),
-	   (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
-	(try_end),
-	(set_show_messages , 1),
-
-	]
-)
+	# (set_show_messages , 0),
+    # (try_for_agents, ":agent"),
+       # (agent_get_team, reg10, ":agent"), (teams_are_enemies , reg10, ":player_team"),
+	   # (agent_set_hit_points , ":agent",0,1),
+	   # (agent_deliver_damage_to_agent, ":player_agent", ":agent"),
+	# (try_end),
+	# (set_show_messages , 1),
+# ])
 
 
  # triggers to bow to lords  -- a set of triggers  (mtarini)
 custom_tld_bow_to_kings = [
-	
 	# init: 
 	(ti_before_mission_start , 0, 0, [],[
 		(assign, "$agent_king", -1),
@@ -138,13 +132,10 @@ custom_tld_bow_to_kings = [
 		(game_key_is_down, gk_jump),
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
 	]),
-	  
 ]
 
 
 custom_tld_bow_always = [
-	
-	  
 	# push putton: go down
 	(0, 0.5, 0, [ 
         (game_key_clicked, gk_jump), 
@@ -175,13 +166,11 @@ custom_tld_bow_always = [
 		(game_key_is_down, gk_jump),
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
 	]),
-	  
 ]
 	  
 	  
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
-  [
-	(assign,"$trolls_in_battle",0),	
+  [ (assign,"$trolls_in_battle",0),	
 	(assign,"$nazgul_in_battle",0),	
 	(assign,"$wargs_in_battle",0),	
 	
@@ -236,9 +225,7 @@ tld_cheer_on_space_when_battle_over_press = (
   ],
   [
     (assign,"$player_cheering",2), # after 1 sec, can end ani
-  ],
-  
-)
+])
 
 tld_cheer_on_space_when_battle_over_release = ( 
   0,0,0,[	(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],
@@ -251,9 +238,7 @@ tld_cheer_on_space_when_battle_over_release = (
 	(try_end),
 	
 	(assign,"$player_cheering",0),
-  ]
-
-)
+])
 
 # custom TLD functions for special troops spawining
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
@@ -329,10 +314,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(agent_get_team,  reg25, ":agent"),
 		(agent_set_slot, ":horse", slot_agent_mount_side, reg25), 
 	(try_end),
-
-	
-  ]
-)
+])
 
 # mtarini nazgul sweeps 
 nazgul_sweeps = (2,1.2,5,
@@ -471,9 +453,7 @@ nazgul_sweeps = (2,1.2,5,
 	(store_random_in_range,":die_roll",1,4),
 	(ge,":die_roll",2), # twice in 2 there is will an attack!
   ],
-  [
-	# physical attack on random agent
-	  
+  [	# physical attack on random agent
 	(assign,":random_agent",-1), # he will suffer a physical attack!
 	(assign,":random_agent_score",99999),
 	(mission_cam_get_position, 2),
@@ -533,8 +513,7 @@ nazgul_sweeps = (2,1.2,5,
 	(str_store_agent_name, s11, ":random_agent"),
 	(display_log_message, "@Nazgul diving attack on {s11}!"),
 	(display_log_message, "@{s11} is {s10} in the Nazgul attack!",":text_color"),
-  ]
-)
+])
 
 # if player attempts to ride non matching mount, mount rebels (mtarini)
 tld_player_cant_ride = (1.90,1.5,0.5,
@@ -590,8 +569,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 		(display_message, "@Your mount rears, refusing to obey your commands!"),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(try_end),
-  ]
-)
+])
 
 custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
   [
@@ -605,23 +583,19 @@ custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
 		#(display_message,"@warg says: 'woof, woof!'"),
 		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
 	(try_end),
-  ]
-)
+])
 
 #MV: inserted troll "charging" (going haead not following orders)
 custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
-  [
-	(try_for_agents,":troll"),
+  [ (try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
 		(agent_get_troop_id,reg0,":troll"), # is it a troll?
 		(troop_get_type, reg0, reg0),
 		(eq, reg0, tf_troll),
-		
 		# TEST...
 		#(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
 	    #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
-
 
         #Trolls charging - begin
         (agent_get_team, ":troll_team", ":troll"),
@@ -858,13 +832,12 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 			(try_end),
 		(try_end),
 	(try_end),
-	]
- )
+])
 
 custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
         (get_player_agent_no, ":player_agent"),
 		(try_for_agents,":troll"),										# horse rearing near troll
-            (agent_is_alive, ":troll"), #MV
+#            (agent_is_alive, ":troll"), #GA: horses hate dead trolls too
 			(agent_get_troop_id,reg0,":troll"),
 			(troop_get_type, reg0, reg0),
 			(try_begin),
@@ -882,12 +855,9 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 					(get_distance_between_positions,":dist",1,2),
 					(lt,":dist",700),
 					(store_random_in_range, reg0, 0, 12),
-					(try_begin),
-						(eq,reg0,0),(agent_set_animation, ":horse", "anim_horse_rear"),(agent_play_sound,":horse","snd_neigh"),
-					(else_try),
-						(eq,reg0,1),(agent_set_animation, ":horse", "anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
-					(else_try),
-						(eq,reg0,2),(agent_set_animation, ":horse", "anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
+					(try_begin),(eq,reg0,0),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
+					 (else_try),(eq,reg0,1),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
+					 (else_try),(eq,reg0,2),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
 					(try_end),
                     # let the player know what happened
 					(try_begin),
@@ -899,7 +869,6 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 			(try_end),
 		(try_end),
 ])
-
 
 # NOT USED YET (still WIP)
 custom_lone_wargs_special_attack = (0,0,2, [
@@ -948,15 +917,13 @@ custom_lone_wargs_special_attack = (0,0,2, [
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
         
 	(try_end),
-
 ])
 
 
 # wargs without rider respawn
 custom_lone_wargs_are_aggressive = (0.5,0,0, [
     (set_show_messages,0),
-	
-	# self destruct any ghost rider which has no ride
+ # self destruct any ghost rider which has no ride
 	(try_for_agents,":ghost"),
         (agent_is_alive, ":ghost"), 
 		(agent_is_human,":ghost"),
@@ -969,12 +936,10 @@ custom_lone_wargs_are_aggressive = (0.5,0,0, [
 	(try_end),
 
 	(try_for_agents,":warg"),
-
         (agent_is_alive, ":warg"), 
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
 		(agent_get_rider,":rider",":warg"),
-		
 		#(try_begin),
 		#	# rider not dead: record its original owner in a slot (1st time only)
 		#	(neq,":rider",-1),
@@ -1003,10 +968,7 @@ custom_lone_wargs_are_aggressive = (0.5,0,0, [
 		#(display_message,"@DEBUG: Spawning ghost rider!"),
 	(try_end),
 	(set_show_messages,1),
-
-
 	],[
-
 ])
 
 	
@@ -1016,13 +978,10 @@ HD_ladders_init = (0,0,ti_once,[],[
 			 (prop_instance_get_position,pos1,":ladder"),					###### saves the hassle of aligning props with wall
 			 (position_rotate_x,pos1,120),
 			 (prop_instance_set_position,":ladder",pos1),
-
 			 (scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 1),
 			 (prop_instance_get_position,pos1,":ladder"),
 			 (position_rotate_x,pos1,120),
-			 (prop_instance_set_position,":ladder",pos1),
-#			 (play_sound, "snd_evil_horn"),
-			])
+			 (prop_instance_set_position,":ladder",pos1)])
 HD_ladders_rise = (0,25,ti_once, [],[(scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 0),	###### raise siege ladders after 25 sec into battle
 			 (prop_instance_get_position,pos1,":ladder"),
 			 (position_rotate_x,pos1,-120),
@@ -1034,12 +993,12 @@ HD_ladders_rise = (0,25,ti_once, [],[(scene_prop_get_instance,":ladder", "spr_si
 			 (position_rotate_x,pos1,-120),
 			 (prop_instance_animate_to_position,":ladder",pos1,1100),
 			 (play_sound, "snd_evil_horn"),
-			 (display_message,"@The ladders on Deeping Wall! Watch out!"),
-			])
+			 (display_message,"@The ladders on Deeping Wall! Watch out!")])
 ################## SIEGE LADDERS END #########################################
 
 #################################################################
-################ BALLISTA BEGIN #################################     
+################ BALLISTA BEGIN #################################
+# Ibanez code heavily modified by GA
 ballista_init = (0, 0, ti_once, [],[
 			(assign,"$ballista_action",0),								###### 0 out of action, 1 is in action, 2 fired, 3 reloading
 			(assign,"$ballista_fire",0),								###### arrow is not burning initially
@@ -1066,9 +1025,7 @@ ballista_init = (0, 0, ti_once, [],[
 #			(display_message,"@They are coming... Man the walls, Rohirrim!!"),
 			])
 			
-ballista_operate = (0, 0, 1,	[(key_clicked, key_e),  								###### initiate ballista
-			 (eq,"$ballista_action",0),
-			],
+ballista_operate = (0, 0, 1,	[(key_clicked, key_e),(eq,"$ballista_action",0)],
 			[(try_begin),(ge,"$missile_count","$missile_max"),
 				(display_message,"@Ballista: out of ammo!"),
 			 (else_try),
@@ -1084,13 +1041,9 @@ ballista_operate = (0, 0, 1,	[(key_clicked, key_e),  								###### initiate bal
 				 	(mission_cam_animate_to_position, pos1, 500,100),
 					(display_message,"@Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F"),
 					(assign,"$ballista_action",1),
-			 (try_end),
-			])
-			
+			 (try_end)])
 ballista_disengage = (0, 0, 1, 	[(key_clicked, key_f),(eq,"$ballista_action",1),],		###### disengage ballista
-			[(mission_cam_set_mode,0),(assign,"$ballista_action",0),
-			])
-			
+			[(mission_cam_set_mode,0),(assign,"$ballista_action",0)])
 ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1),(eq,"$missile_flying",0),],	###### fire in the hole!
 			[#(display_message,"@Ballista: shooting"),
 			 (assign,"$ballista_action",2),
@@ -1101,13 +1054,8 @@ ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1)
 			 (position_move_y,pos1,300),
 			 (position_rotate_z,pos1,180),
 			 (mission_cam_animate_to_position, pos1, 500, 0),
-			 (play_sound,"snd_release_crossbow"),
-			])
-
-ballista_reload_pause = (0, 2, 0, 	[(eq,"$ballista_action",2),], 							###### reloading pause
-			[(assign,"$ballista_action",3),
-			])
-
+			 (play_sound,"snd_release_crossbow")])
+ballista_reload_pause = (0, 2, 0, 	[(eq,"$ballista_action",2),],[(assign,"$ballista_action",3)])
 ballista_reload = (0, 0.1, 0, [(eq,"$ballista_action",3),],
 			[(try_begin),(lt,"$missile_count","$missile_max"),
 				(val_add,"$missile_count",1),								###### ammo count
@@ -1131,9 +1079,7 @@ ballista_reload = (0, 0.1, 0, [(eq,"$ballista_action",3),],
 				(mission_cam_set_mode,0),
 				(assign,"$ballista_action",0),
 				(display_message,"@Ballista: out of ammo"),
-			 (try_end),
-			])
-			
+			 (try_end)])
 ballista_fly_missile = (0, 0, 0,   [(eq,"$missile_flying",1),],  
 			[(prop_instance_get_position,pos1,"$missile_flying_instance"),		###### missile flight and killing
 			 (copy_position,pos2,pos1),(position_get_z,":z_missile",pos1),
@@ -1182,15 +1128,11 @@ ballista_fly_missile = (0, 0, 0,   [(eq,"$missile_flying",1),],
 				(position_move_y,pos1,100),
 				(eq,"$ballista_fire",1),
 					(particle_system_burst,"psys_torch_fire_sparks",pos1,70),
-			(try_end),
-			])
-			
+			(try_end)])
 ballista_toggle_fire_arrow = (0, 0.1,0.5,[(key_clicked, key_t),(eq,"$ballista_action",1),(eq,"$missile_flying",0)], ### toggle fire on missile
 			[(try_begin),(eq,"$ballista_fire",1),(assign,"$ballista_fire",0),
 			 (else_try),				 (assign,"$ballista_fire",1),
-			 (try_end),
-			])
-
+			 (try_end)])
 ballista_missile_illumination = (0, 0, 0, 	[(eq,"$ballista_fire",1),],   							###### missile illumination
 			[(scene_prop_get_instance,":missile_instance", "spr_ballista_missile", "$missile_count"),
 			 (prop_instance_get_position,pos1,":missile_instance"),
@@ -1203,9 +1145,7 @@ ballista_missile_illumination = (0, 0, 0, 	[(eq,"$ballista_fire",1),],   							
 				(position_move_y,pos1,-100),
 				(particle_system_burst, "psys_torch_fire",pos1,10),
 #				(particle_system_burst, "psys_torch_smoke",pos1,10),
-				(particle_system_burst, "psys_torch_fire_sparks",pos1,10),
-			])
-
+				(particle_system_burst, "psys_torch_fire_sparks",pos1,10)])
 ballista_camera_alignment = (0, 0, 0, 	[(eq,"$ballista_action",1),], 							###### camera and loaded missile alignment
 			[(prop_instance_get_position,pos1,"$ballista_instance"),
 			 (scene_prop_get_instance,":missile_instance", "spr_ballista_missile", "$missile_count"),
@@ -1216,28 +1156,24 @@ ballista_camera_alignment = (0, 0, 0, 	[(eq,"$ballista_action",1),], 							####
 			 (position_rotate_z,pos1,180),
 		 	 (mission_cam_animate_to_position, pos1, 5,0),
 			 (get_player_agent_no,":player_agent"),
-			 (agent_set_animation,":player_agent", "anim_ready_crossbow"),
-			])
-																		###### turning ballista mesh and aiming
-ballista_turn_up =		(0, 0, 0, 	[(key_is_down, key_up),   (eq,"$ballista_action",1),],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_x,pos5,1), (prop_instance_animate_to_position,"$ballista_instance",pos5,3),])
-ballista_turn_down =	(0, 0, 0, 	[(key_is_down, key_down), (eq,"$ballista_action",1),],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_x,pos5,-1),(prop_instance_animate_to_position,"$ballista_instance",pos5,3),])
-ballista_turn_left =	(0, 0, 0, 	[(key_is_down, key_left), (eq,"$ballista_action",1),],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_z,pos5,1), (prop_instance_animate_to_position,"$ballista_instance",pos5,3),])
-ballista_turn_right =	(0, 0, 0, 	[(key_is_down, key_right),(eq,"$ballista_action",1),],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_z,pos5,-1),(prop_instance_animate_to_position,"$ballista_instance",pos5,3),])
-ballista_aim =			(0, 0, 0, 	[(key_is_down, key_left_shift),(eq,"$ballista_action",1),],[(prop_instance_get_position,pos6,"$ballista_instance"),(position_move_y,pos6,60),(position_move_z,pos6,15),(position_rotate_z,pos6,180),(mission_cam_animate_to_position,pos6,100,1),])
+			 (agent_set_animation,":player_agent", "anim_ready_crossbow")])
+		###### turning ballista mesh and aiming
+ballista_turn_up    =(0,0,0,[(key_is_down,key_up        ),(eq,"$ballista_action",1)],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_x,pos5,1), (prop_instance_animate_to_position,"$ballista_instance",pos5,3)])
+ballista_turn_down  =(0,0,0,[(key_is_down,key_down      ),(eq,"$ballista_action",1)],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_x,pos5,-1),(prop_instance_animate_to_position,"$ballista_instance",pos5,3)])
+ballista_turn_left  =(0,0,0,[(key_is_down,key_left      ),(eq,"$ballista_action",1)],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_z,pos5,1), (prop_instance_animate_to_position,"$ballista_instance",pos5,3)])
+ballista_turn_right =(0,0,0,[(key_is_down,key_right     ),(eq,"$ballista_action",1)],[(prop_instance_get_position,pos5,"$ballista_instance"),(position_rotate_z,pos5,-1),(prop_instance_animate_to_position,"$ballista_instance",pos5,3)])
+ballista_aim        =(0,0,0,[(key_is_down,key_left_shift),(eq,"$ballista_action",1)],[(prop_instance_get_position,pos6,"$ballista_instance"),(position_move_y,pos6,60),(position_move_z,pos6,15),(position_rotate_z,pos6,180),(mission_cam_animate_to_position,pos6,100,1),])
 ################## BALLISTA END ##############################################
 
 ################## STONELOBBING BEGIN ########################################
 ################## uses spr_stoneball and spr_throwing_stone  ################
 ################## pos49 is used globally for stone tracking! ################
-																		######
 stonelobbing_init_stone = (0, 0, ti_once, [],[(assign,"$stonelobbing_state",0),				###### 0 no stones, 1 stone picked, 2,3,4 stone flying & bouncing
 						(assign,"$stone_horizontal_velocity",0),
 						(assign,"$stone_vertical_velocity",0),
 						(assign,"$stone_rotation_x",20),				###### stone rotation speed in flight
 						(assign,"$stone_rotation_y",30),
-						(assign,"$stone_rotation_z",30),	
-						])
-						
+						(assign,"$stone_rotation_z",30)])
 stonelobbing_pick_stone = (0,0,1, [(key_clicked, key_e),										###### picking up a stone
 			(eq,"$stonelobbing_state",0),
 			(get_player_agent_no,":player_agent"),
@@ -1273,11 +1209,8 @@ stonelobbing_pick_stone = (0,0,1, [(key_clicked, key_e),										###### picking
 					(assign,"$stone_picked_instance",":stone_instance"),
 					(agent_set_animation,":player_agent", "anim_reload_crossbow"),
 					(play_sound, "snd_man_grunt"),
-			(try_end),
-			])
-			
-stonelobbing_throw_stone = (0,0,5, [(key_clicked, key_f),(eq,"$stonelobbing_state",1),			###### throwing a stone
-			],
+			(try_end)])
+stonelobbing_throw_stone = (0,0,5, [(key_clicked, key_f),(eq,"$stonelobbing_state",1)],
 			[(get_player_agent_no,":player_agent"),
 			(agent_get_position,pos1,":player_agent"),
 			(agent_get_look_position,pos2,":player_agent"),
@@ -1292,11 +1225,8 @@ stonelobbing_throw_stone = (0,0,5, [(key_clicked, key_f),(eq,"$stonelobbing_stat
 			(prop_instance_set_position,"$stone_picked_instance",pos49),
 			(agent_set_animation,":player_agent","anim_release_overswing_twohanded"),
 			(play_sound, "snd_man_grunt"),
-			(assign,"$stonelobbing_state",2),
-			])
-			
-stonelobbing_fly_stone = (0,0,0, [(ge,"$stonelobbing_state",2),								###### stone flight
-			],
+			(assign,"$stonelobbing_state",2)])
+stonelobbing_fly_stone = (0,0,0, [(ge,"$stonelobbing_state",2)],
 			[(prop_instance_get_position,pos1,"$stone_picked_instance"),
 			(copy_position,pos2,pos49),
 			(position_set_z_to_ground_level, pos2),
@@ -1366,11 +1296,8 @@ stonelobbing_fly_stone = (0,0,0, [(ge,"$stonelobbing_state",2),								###### st
 #					(display_message,"@DEBUG:STONE: missile hit final ground"),
 					(assign,"$stonelobbing_state",0),
 				(try_end),	
-			(try_end),
-			])
-			
-stonelobbing_carry_stone = (0,0,0, [(eq,"$stonelobbing_state",1),								###### carrying stone sync
-			],
+			(try_end)])
+stonelobbing_carry_stone = (0,0,0, [(eq,"$stonelobbing_state",1)],
 			[(get_player_agent_no,":player_agent"), (agent_get_position,pos6,":player_agent"),
 			(position_move_z,pos6,170),
 			(position_move_x,pos6,25), 
@@ -1381,8 +1308,7 @@ stonelobbing_carry_stone = (0,0,0, [(eq,"$stonelobbing_state",1),								###### 
 
 ################## FLORA BEGIN ###########################################
 scene_set_flora_init = (ti_before_mission_start,0,0,[],
-	[
-	(try_for_range,":pointer",0,20),
+	[(try_for_range,":pointer",0,20),
 		(store_random_in_range,":object","spr_tree0_yellow_flower","spr_trees_end"),	# assign type of tree
 		(troop_set_slot,"trp_temp_array_a",":pointer",":object"),
 		(assign,":num",1),
@@ -1392,9 +1318,7 @@ scene_set_flora_init = (ti_before_mission_start,0,0,[],
 		(troop_set_slot,"trp_temp_array_b",":pointer",":num"),
 		(store_add,":spr_pointer","spr_zz_pointer00",":pointer"),
 		(replace_scene_props,":spr_pointer",":object"),
-	(try_end),
-	])
-##########################################################################
+	(try_end)])
 scene_set_flora_army_spawn = (0, 0, ti_once,[
 	(get_scene_boundaries,pos1,pos2),
 	(position_get_x,"$battlemap_min_x",pos1),
@@ -1456,7 +1380,7 @@ scene_set_flora_army_spawn = (0, 0, ti_once,[
 		(store_random_in_range,":ny",3,30),(store_mul,":y0",":min_b",":ny"),(position_set_y, pos48,":y0"),		
 		(store_random_in_range,":ro",0,180),								(position_rotate_z, pos48,":ro"),
 
-		(troop_get_slot,":spr_pointer","trp_temp_array_a",":pointer"),	# poiting towards repeating trees
+		(troop_get_slot,":spr_pointer","trp_temp_array_a",":pointer"),	# pointing towards repeating trees
 		(troop_get_slot,":num","trp_temp_array_b",":pointer"),
 		(store_mul,":n_max",20,":num"),
 		(store_sub,":n_min",20,":n_max"),
@@ -1493,16 +1417,15 @@ scene_set_flora_army_spawn = (0, 0, ti_once,[
 	(try_end),
 	(assign,reg0,"$battlemap_max_x"),
 	(assign,reg1,"$battlemap_max_y"),	 
-	(display_message,"@max X {reg0} max Y {reg1}"),
-    ],[])
+	(display_message,"@max X {reg0} max Y {reg1}")],[
+])
  
 
 ################# whistle for horse
-horse_whistle_init = (0.2,0,ti_once,[],[(get_player_agent_no,":agent"),(agent_get_horse,"$player_horse",":agent"),])
-horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m),],
+horse_whistle_init = (0.2,0,ti_once,[],[(get_player_agent_no,":agent"),(agent_get_horse,"$player_horse",":agent")])
+horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m)],
     [ (get_player_agent_no,":player"),(agent_play_sound,":player","snd_man_warcry"),(display_message,"@You yell for your horse."),
-      (agent_is_alive, "$player_horse"),(agent_get_position, pos1, ":player"),(agent_set_scripted_destination, "$player_horse", pos1, 0),
-    ])
+      (agent_is_alive, "$player_horse"),(agent_get_position, pos1, ":player"),(agent_set_scripted_destination, "$player_horse", pos1, 0)])
 
 ##common_battle_kill_underwater = (
 ##  5, 0, 0, [],

@@ -4964,8 +4964,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_bring_back_runaway_serfs")],
- "Well, some of the slaves working my fields in {s4} have run away. The ungrateful swine,\
- I let them plough my fields and rent my cottages, and this is how they repay me!\
+ "Well, some of the slaves working in {s4} have run away. The ungrateful swine,\
+ whose lives we spared! \
  From what I've been hearing, they're running to {s3} as fast as they can,\
  and have split up into three groups to try and avoid capture.\
  I want you to capture all three groups and fetch them back to {s4} by whatever means necessary.\
@@ -7351,7 +7351,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 ##
 ##[anyone ,"start", [(is_between,"$g_talk_troop",crooks_begin,crooks_end),(eq,"$g_talk_troop_met",0),(eq,"$sneaked_into_town",1),(str_store_troop_name,s1,"$g_talk_troop")],
 ##   "{s1} is at your service {sir/madam}. If you want to know what's really going on in this town, or arrange a meeting in secret, then come to me. I can help you.", "crook_talk",[]],
-##
+
 ##[anyone ,"start", [(is_between,"$g_talk_troop",crooks_begin,crooks_end),(store_character_level, ":cur_level", "trp_player"),(lt,":cur_level",8)],
 ##   "{You again?/Delighted to see you again my pretty.}", "crook_talk",[]],
 ##[anyone ,"start", [(is_between,"$g_talk_troop",crooks_begin,crooks_end)],
@@ -7367,26 +7367,17 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 
 
-#[anyone,"crook_enter_dungeon", [],
-#   "Alright but this will cost you 50 denars.", "crook_enter_dungeon_2", []],
-
-#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),
-#                                            (ge, ":cur_gold", 50)],
-#   "TODO: Here it is. 50 denars.", "crook_enter_dungeon_3_1",[(troop_remove_gold, "trp_player", 50)]],
-
-#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),
-#                                            (ge, ":cur_gold", 50)],
-#   "Never mind then.", "crook_pretalk",[]],
-
-#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),
-#                                            (lt, ":cur_gold", 50)],
-#   "TODO: I don't have that much money.", "crook_enter_dungeon_3_2",[]],
-
+#[anyone,"crook_enter_dungeon", [], "Alright but this will cost you 50 denars.", "crook_enter_dungeon_2", []],
+#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),(ge, ":cur_gold", 50)],
+#"TODO: Here it is. 50 denars.", "crook_enter_dungeon_3_1",[(troop_remove_gold, "trp_player", 50)]],
+#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),(ge, ":cur_gold", 50)],
+#"Never mind then.", "crook_pretalk",[]],
+#[anyone|plyr, "crook_enter_dungeon_2", [(store_troop_gold, ":cur_gold", "trp_player"),(lt, ":cur_gold", 50)],
+#"TODO: I don't have that much money.", "crook_enter_dungeon_3_2",[]],
 #[anyone,"crook_enter_dungeon_3_1", [],
-#   "TODO: There you go.", "close_window", [(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
-
+#"TODO: There you go.", "close_window", [(call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle")]],
 #[anyone,"crook_enter_dungeon_3_2", [],
-#   "TODO: Come back later then.", "crook_pretalk",[]],
+#"TODO: Come back later then.", "crook_pretalk",[]],
  
 
 ##[anyone, "crook_request_meeting", [],
@@ -7416,8 +7407,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 ##                                            (ge, ":cur_gold", 50)],
 ##   "Never mind then.", "crook_pretalk",[]],
 ##
-##[anyone|plyr, "crook_request_meeting_4", [(store_troop_gold, ":cur_gold", "trp_player"),
-##                                            (lt, ":cur_gold", 50)],
+##[anyone|plyr, "crook_request_meeting_4", [(store_troop_gold, ":cur_gold", "trp_player"),(lt, ":cur_gold", 50)],
 ##   "TODO: I don't have that much money.", "crook_search_person_5_2",[]],
 ##
 ##[anyone, "crook_search_person_5_1", [],
@@ -7430,56 +7420,36 @@ It's an important matter, so please make haste.", "caravan_help1",[
 ##                                (assign, "$talk_context", tc_back_alley),
 ##                                (change_screen_map_conversation, "$selected_troop")]],
 ##
-##[anyone, "crook_search_person_5_2", [],
-##   "TODO: Come back later then.", "crook_pretalk",[]],
-##
-##[anyone, "crook_search_person", [],
-##   "TODO: Who are you searching for?", "crook_search_person_2",[]],
+##[anyone, "crook_search_person_5_2", [],"TODO: Come back later then.", "crook_pretalk",[]],
+##[anyone, "crook_search_person"    , [],"TODO: Who are you searching for?", "crook_search_person_2",[]],
 ##[anyone|plyr|repeat_for_factions,"crook_search_person_2", [(store_repeat_object, ":faction_no"),
 ##                                                             (is_between, ":faction_no", kingdoms_begin, kingdoms_end),
 ##                                                             (str_store_faction_name, s1, ":faction_no")],
-##   "TODO: I'm looking for a {s1}.", "crook_search_person_3", [(store_repeat_object, "$selected_faction")]],
+##"TODO: I'm looking for a {s1}.", "crook_search_person_3", [(store_repeat_object, "$selected_faction")]],
 ##
 ##[anyone|plyr,"crook_search_person_2", [], "Never mind.", "crook_pretalk", []],
-##
-##  
-##[anyone, "crook_search_person_3", [],
-##   "TODO: Who?", "crook_search_person_4",[]],
-##  
+##[anyone, "crook_search_person_3", [],"TODO: Who?", "crook_search_person_4",[]],
 ##[anyone|plyr|repeat_for_troops,"crook_search_person_4", [(store_repeat_object, ":troop_no"),
 ##                                                           (is_between, ":troop_no", heroes_begin, heroes_end),
 ##                                                           (store_troop_faction, ":faction_no", ":troop_no"),
 ##                                                           (eq, ":faction_no", "$selected_faction"),
 ##                                                           (str_store_troop_name, s1, ":troop_no")],
-##   "{s1}", "crook_search_person_5", [(store_repeat_object, "$selected_troop")]],
-##
+##"{s1}", "crook_search_person_5", [(store_repeat_object, "$selected_troop")]],
 ##[anyone|plyr,"crook_search_person_4", [], "Never mind.", "crook_pretalk", []],
-##
 ##[anyone, "crook_search_person_5", [(call_script, "script_get_information_about_troops_position", "$selected_troop", 0),
 ##                                     (eq, reg0, 1),
 ##                                     (str_store_troop_name, s1, "$selected_troop")],
-##   "TODO: I know where {s1} is at the moment, but hearing it will cost you 50 denars.", "crook_search_person_6",[]],
-##
-##[anyone, "crook_search_person_5", [],
-##   "TODO: Sorry I don't know anything.", "crook_pretalk",[]],
-##
-##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),
-##                                          (ge, ":cur_gold", 50)],
-##   "TODO: Here it is. 50 denars.", "crook_search_person_7_1",[(troop_remove_gold, "trp_player", 50)]],
-##
-##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),
-##                                          (ge, ":cur_gold", 50)],
-##   "Never mind then.", "crook_pretalk",[]],
-##
-##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),
-##                                          (lt, ":cur_gold", 50)],
-##   "TODO: I don't have that much money.", "crook_search_person_7_2",[]],
-##
+##"TODO: I know where {s1} is at the moment, but hearing it will cost you 50 denars.", "crook_search_person_6",[]],
+##[anyone, "crook_search_person_5", [],"TODO: Sorry I don't know anything.", "crook_pretalk",[]],
+##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),(ge, ":cur_gold", 50)],
+##"TODO: Here it is. 50 denars.", "crook_search_person_7_1",[(troop_remove_gold, "trp_player", 50)]],
+##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),(ge, ":cur_gold", 50)],
+##"Never mind then.", "crook_pretalk",[]],
+##[anyone|plyr, "crook_search_person_6", [(store_troop_gold, ":cur_gold", "trp_player"),(lt, ":cur_gold", 50)],
+##"TODO: I don't have that much money.", "crook_search_person_7_2",[]],
 ##[anyone, "crook_search_person_7_1", [(call_script, "script_get_information_about_troops_position", "$selected_troop", 0)],
-##   "{s1}", "crook_pretalk",[]],
-##
-##[anyone, "crook_search_person_7_2", [],
-##   "TODO: Come back later then.", "crook_pretalk",[]],
+##"{s1}", "crook_pretalk",[]],
+##[anyone, "crook_search_person_7_2", [],"TODO: Come back later then.", "crook_pretalk",[]],
 ##  
 
 #Mayor talk (town elder)
@@ -7578,7 +7548,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 "Here's your metal supply, {reg9} units of {s4}.", "mayor_deliver_iron",[]],
    
 [anyone,"mayor_deliver_iron", [],
-"Very nice work, {playername}. Our smiths and armourers will find ways to put everything they are given to good use.", "mayor_deliver_iron_completed",
+"Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.", "mayor_deliver_iron_completed",
     [ (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
       (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
       (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
@@ -7665,8 +7635,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
       (try_end)],
 "And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.\
- If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of our people!\
- I think that concludes your contract, {playername}. Please accept this RPs as a token of my gratitude. Thank you, and farewell.", "close_window",[]],
+ If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!\
+ I think that concludes your task, {playername}. I'll pass a word to our warehouse, they will reward you. Thank you, and farewell.", "close_window",[]],
 
 [anyone,"mayor_looters_quest_destroyed_2", [], "Anything else you need?", "mayor_looters_quest_response",[]],
 
@@ -7872,13 +7842,12 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[]],
 
 [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
-"I am the guildmaster of {s9}. You can say I am the leader of the good people of {s9}.\
- I can help you find a job if you are looking for some honest work.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
+"I am the guildmaster of {s9}. You can say I am in charge of internal tasks here.\
+ I can help you find a job if you are looking for some work.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
 
 [anyone|plyr,"mayor_info_talk",[(eq, "$mayor_info_lord_told",0)], "Who rules this town?", "mayor_info_lord",[]],
 [anyone, "mayor_info_lord", [(party_get_slot, ":town_lord","$current_town",slot_town_lord),(str_store_troop_name, s10, ":town_lord")],
-"Our town's lord and protector is {s10}. He owns the castle and sometimes resides there, and collects taxes from the town.\
- However we regulate ourselves in most of the matters that concern ourselves.\
+"Our town's lord is {s10}.\
  As the town's guildmaster I have the authority to decide those things.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
   
 [anyone|plyr,"mayor_info_talk",[], "That's all I need to know. Thanks.", "mayor_pretalk",[]],
@@ -7959,8 +7928,8 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
        (str_store_string,s5,"@village"),
      (try_end)],
 "We've had some fighting near the {s5} lately, with all the chaos that comes with it,\
- and that's attracted a few bands of tribal orcs to raid the surrounding farms during the confusion.\
- Valuable crops were destroyed and farmers are fleeing to {s5}. I need somebody to teach those orcs a lesson.\
+ and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion.\
+ I need somebody to teach those orcs a lesson.\
  Sound like your kind of work?", "merchant_quest_looters_choice", []],
 
 [anyone|plyr,"merchant_quest_looters_choice", [], "Aye, I'll do it.", "merchant_quest_looters_brief", []],
@@ -7996,7 +7965,7 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
    (assign, "$g_leave_encounter",1)],
 "Excellent! You'll find the tribal orcs roaming around the countryside, probably looking to raid more farms.\
  Kill the tribal orcs, and rid us of their presence.\
- I'll pay you a bounty of 40 RPs on every band of tribal orcs you destroy,\
+ I'll pass a word to our supply chief, and you will get rewarded for every band of tribal orcs you destroy,\
  until all the orcs are dealt with.", "close_window",[]],
 # Ryan END
 
@@ -8077,7 +8046,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 									(neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),], 
 "A task, you say?\
 Master demands more troops everyday, and it is never battleworthy enough for Him... but armours don't just grow on skins, you know?\
-The moggots which are supposed to bring us ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.\
+The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.\
 Are we supposed to protect ourselves with mud dried on our skin, like snagas?\
 But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to the lowest born of them ... \
 Scavenge their corpses and bring me the metal, {playername}. With an ounce of that iron, our smelter can make enough material to cover an entire pack of warriors."
@@ -8208,9 +8177,9 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_troublesome_bandits")],
  "Actually, I was looking for an able commander like you.\
  There's this group of particularly troublesome goblins.\
- They have infested the vicinity of our town and are preying on our supply trains.\
+ They have infested the neighbourhood and are preying on supply trains and stray warriors.\
  They have avoided all our patrols up to now.\
- If someone doesn't stop them soon, we are going to have a serious supply shortage...", "merchant_quest_brief",[]],
+ If someone doesn't stop them soon, I would need to request serious military action...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no", "qst_troublesome_bandits")],
   "I will pay you {reg8} RPs if you hunt down those troublesome goblins.\
@@ -8548,7 +8517,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 
 #deal with night bandits
 [anyone,"merchant_quest_requested",[(eq, "$random_merchant_quest_no", "qst_deal_with_night_bandits")],
-"Do I indeed! There's a group of rogue goblins infesting the town, and I'm at the end of my rope as to how to deal with them.\
+"Do I indeed! There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them.\
  They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
@@ -8556,7 +8525,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
  Are you up to the task?", "merchant_quest_deal_with_night_bandits",[]],
 
 [anyone,"merchant_quest_brief",[(eq,"$random_merchant_quest_no","qst_deal_with_night_bandits")],
-"There's a group of rogue goblins infesting the town, and I'm at the end of my rope as to how to deal with them.\
+"There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them.\
  They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
@@ -8581,15 +8550,15 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_move_cattle_herd"),
                                        (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
                                        (str_store_party_name,s13,":target_center"),],
-"The garrison commander here is looking for a resourceful warrior to take a group of people to {s13}.", "merchant_quest_brief",[]],
+"The garrison commander here is looking for a resourceful warrior to take a group of guys to {s13}.", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief",[
     (eq,"$random_merchant_quest_no","qst_move_cattle_herd"),
     (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
     (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
     (str_store_party_name, s13, ":target_center")],
-"These people must arrive at {s13} within 30 days. Sooner is better, much better,\
- but it must be absolutely no later than 30 days.\
+"The group must arrive at {s13} within 30 days. Sooner is better, much better, \
+ but it must be absolutely no later than 30 days. \
  If you can do that, I'd be willing to pay you {reg8} RPs for your trouble. Interested?", "move_cattle_herd_quest_brief",[]],
 
 #MV: remove when quest dialogs are done, or bugs are fixed   
