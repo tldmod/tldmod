@@ -46,15 +46,13 @@ party_templates = [
 # ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-  ("wild_troll"      ,"Wild Troll"        ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,2),]),
-  ("raging_trolls"   ,"Raging Trolls"     ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
-
-  ("looters"         ,"Tribal Orcs"       ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
-  
-  ("forest_bandits"  ,"Orc Stragglers"    ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
-  ("mountain_bandits","Wild Goblins"      ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
-  ("steppe_bandits"  ,"Dunlending Raiders",icon_khergit   |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_raven_rider,3,48)]),
-  ("sea_raiders"     ,"Corsair Raiders"   ,icon_axeman    |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_marauder,3,50)]),
+  ("wild_troll"      ,"Wild Troll"     ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,2),]),
+  ("raging_trolls"   ,"Raging Trolls"  ,icon_wild_troll|carries_goods(0),0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
+  ("looters"         ,"Tribal Orcs"    ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
+  ("forest_bandits"  ,"Orc Stragglers" ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
+  ("mountain_bandits","Wild Goblins"   ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
+  ("steppe_bandits"  ,"Dun Renegades"  ,icon_khergit   |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_raven_rider,3,35)]),
+  ("sea_raiders"     ,"Corsair Raiders",icon_axeman    |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_marauder,3,50)]),
 
   ("deserters","Deserters",icon_vaegir_knight|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 
@@ -75,25 +73,8 @@ party_templates = [
   ("spy", "Lone Rider", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy,1,1)]),
   ("spy_evil", "Lone Rider", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_evil,1,1)]),
   ("sacrificed_messenger", "Sacrificed Messenger", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[]),
-##  ("conspirator", "Conspirators", icon_gray_knight|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_conspirator,3,4)]),
-##  ("conspirator_leader", "Conspirator Leader", icon_gray_knight|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_conspirator_leader,1,1)]),
-##  ("peasant_rebels", "Peasant Rebels", icon_peasant,0,fac_peasant_rebels,bandit_personality,[(trp_peasant_rebel,33,97)]),
-##  ("noble_refugees", "Noble Refugees", icon_gray_knight|carries_goods(12)|pf_quest_party,0,fac_noble_refugees,merchant_personality,[(trp_noble_refugee,3,5),(trp_noble_refugee_woman,5,7)]),
-
-#  ("forager_party","Foraging Party",icon_gray_knight|carries_goods(5)|pf_show_faction,0,fac_commoners,merchant_personality,[]),
-#  ("scout_party","Scouts",icon_gray_knight|carries_goods(1)|pf_show_faction,0,fac_commoners,bandit_personality,[]),
-#  ("patrol_party","Patrol",icon_gray_knight|carries_goods(2)|pf_show_faction,0,fac_commoners,soldier_personality,[]),
-#  ("war_party", "War Party",icon_gray_knight|carries_goods(3),0,fac_commoners,soldier_personality,[]),
-#  ("messenger_party","Messenger",icon_gray_knight|pf_show_faction,0,fac_commoners,merchant_personality,[]),
-#  ("raider_party","Raiders",icon_gray_knight|carries_goods(16)|pf_quest_party,0,fac_commoners,bandit_personality,[]),
-#  ("raider_captives","Raider Captives",0,0,fac_commoners,0,[(trp_peasant_woman,6,30,pmf_is_prisoner)]),
-#  ("kingdom_caravan_party","Caravan",icon_mule|carries_goods(25)|pf_show_faction,0,fac_commoners,merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,12,40)]),
-#  ("prisoner_train_party","Prisoner Train",icon_gray_knight|carries_goods(5)|pf_show_faction,0,fac_commoners,merchant_personality,[]),
-#  ("default_prisoners","Default Prisoners",0,0,fac_commoners,0,[(trp_brigand,5,10,pmf_is_prisoner)]),
-
 
 #TLD Scouts
-
 ("gondor_scouts"       ,"Gondorian Scouts" ,icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_ranger_of_ithilien,1,1),(trp_gondor_militiamen,3,5),(trp_gondor_commoner,3,5)]),
 ("blackroot_auxila"    ,"Blackroot_Vale Auxilia",icon_gray_knight|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_blackroot_leader,1,1),(trp_veteran_blackroot_vale_archer,2,25),(trp_footman_of_blackroot_vale,6,30)]),
 ("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_axeman         |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_lamedon_leader,1,1),(trp_footman_of_lamedon,2,25),(trp_clansman_of_lamedon,6,30)]),
@@ -116,7 +97,7 @@ party_templates = [
 ("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_corsair_veteran_marauder,3,6),(trp_corsair_veteran_raider,3,6)]),
 ("khand_scouts"     ,"Easterling Scouts"   ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_elite_skirmisher,3,6),(trp_easterling_horseman,3,6)]),
 ("moria_scouts"     ,"Moria Scouts"        ,icon_orc                |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_fell_goblin_archer_of_moria,1,1),(trp_warg_rider_of_moria,3,6),(trp_goblin_of_moria,3,5)]),
-("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc_tribal         |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_fell_morgul_orc,1,1),(trp_orc_archer_of_mordor,3,6),(trp_goblin_of_moria,3,5)]),
+("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc_tribal         |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_fell_morgul_orc,1,1),(trp_orc_archer_of_mordor,3,6),(trp_morgul_orc,3,5)]),
 ("gundabad_scouts"  ,"Gundabad Scouts"     ,icon_orc_tribal         |carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_goblin_north_clan_rider,1,1),(trp_keen_eyed_goblin_archer_gundabad,3,5),(trp_orc_gundabad,3,6)]),
 ("rhun_scouts"      ,"Rhun Scouts"         ,icon_vaegir_knight      |carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,1),(trp_rhun_swift_horseman,3,6),(trp_rhun_horse_scout,3,5)]),
  

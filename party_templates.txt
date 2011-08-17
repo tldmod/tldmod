@@ -14,18 +14,18 @@ pt_raging_trolls Raging_Trolls 51 0 2 494 352 1 3 0 -1 -1 -1 -1 -1
 pt_looters Tribal_Orcs 2251799813685293 0 2 494 395 0 1 0 394 2 25 0 -1 -1 -1 -1 
 pt_forest_bandits Orc_Stragglers 562949953421357 0 2 494 396 0 1 0 395 0 8 0 394 3 40 0 393 1 30 0 -1 -1 
 pt_mountain_bandits Wild_Goblins 562949953421357 0 2 494 393 2 40 0 -1 -1 -1 -1 -1 
-pt_steppe_bandits Dunlending_Raiders 562949953421319 0 2 494 271 3 48 0 -1 -1 -1 -1 -1 
+pt_steppe_bandits Dun_Renegades 562949953421319 0 2 494 271 3 35 0 -1 -1 -1 -1 -1 
 pt_sea_raiders Corsair_Raiders 562949953421320 0 2 494 305 3 50 0 -1 -1 -1 -1 -1 
 pt_deserters Deserters 844424930131971 0 32 494 -1 -1 -1 -1 -1 -1 
 pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 447 1 1 0 448 5 25 0 -1 -1 -1 -1 
 pt_troublesome_bandits Troublesome_Goblins 2533274790658056 0 2 494 393 14 55 0 -1 -1 -1 -1 -1 
 pt_fangorn_orcs Tree-chopping_Orcs 2533274790658056 0 26 494 340 1 1 0 338 3 8 0 333 8 13 0 336 12 24 0 -1 -1 
 pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 446 3 8 0 -1 -1 -1 -1 
-pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 799 1 1 0 158 5 11 0 -1 -1 -1 -1 
-pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 800 1 1 0 271 5 11 0 -1 -1 -1 -1 
+pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 800 1 1 0 158 5 11 0 -1 -1 -1 -1 
+pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 801 1 1 0 271 5 11 0 -1 -1 -1 -1 
 pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 446 3 3 0 -1 -1 -1 -1 
-pt_spy Lone_Rider 844424930459650 0 26 7 797 1 1 0 -1 -1 -1 -1 -1 
-pt_spy_evil Lone_Rider 844424930459650 0 26 7 798 1 1 0 -1 -1 -1 -1 -1 
+pt_spy Lone_Rider 844424930459650 0 26 7 798 1 1 0 -1 -1 -1 -1 -1 
+pt_spy_evil Lone_Rider 844424930459650 0 26 7 799 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904983 0 3 183 121 1 1 0 102 3 5 0 101 3 5 0 -1 -1 -1 
 pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904962 0 3 183 156 1 1 0 152 2 25 0 154 6 30 0 -1 -1 -1 
@@ -47,7 +47,7 @@ pt_dunland_scouts Dunlending_Scouts 281474980904975 0 19 183 271 3 6 0 269 3 6 0
 pt_umbar_scouts Corsair_Scouts 281474980905023 0 15 183 306 3 6 0 299 3 6 0 -1 -1 -1 -1 
 pt_khand_scouts Easterling_Scouts 281474980904977 0 15 183 294 3 6 0 283 3 6 0 -1 -1 -1 -1 
 pt_moria_scouts Moria_Scouts 281474980905001 0 16 183 380 1 1 0 372 3 6 0 375 3 5 0 -1 -1 -1 
-pt_guldur_scouts Dol_Guldur_Scouts 281474980905005 0 17 183 365 1 1 0 368 3 6 0 375 3 5 0 -1 -1 -1 
+pt_guldur_scouts Dol_Guldur_Scouts 281474980905005 0 17 183 365 1 1 0 368 3 6 0 364 3 5 0 -1 -1 -1 
 pt_gundabad_scouts Gundabad_Scouts 281474980905005 0 18 183 391 1 1 0 387 3 5 0 383 3 6 0 -1 -1 -1 
 pt_rhun_scouts Rhun_Scouts 281474980904963 0 13 183 66 1 1 0 69 3 6 0 65 3 5 0 -1 -1 -1 
 pt_gondor_raiders Gondor_Foragers 281474976710684 0 3 238 111 1 1 0 103 10 15 0 116 10 15 0 -1 -1 -1 

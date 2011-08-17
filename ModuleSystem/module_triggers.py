@@ -190,9 +190,7 @@ triggers = [
 
 #Kingdom Parties
 (24, 0, 0, [],
-   [    #############################################
-        # TLD Parties spawn (foxyman)
-        #
+   [  # TLD Parties spawn (foxyman)
       (try_for_range, ":center", centers_begin, centers_end),
         (party_is_active, ":center"),
         (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
@@ -340,10 +338,9 @@ triggers = [
    [ #(entering_town,":party"),
      (neq,"$ambient_faction","$players_kingdom"),
 	 (call_script, "script_cf_factions_are_allies", "$ambient_faction","$players_kingdom"),
-   ],
-   [	(str_store_faction_name, s11, "$ambient_faction"),
+   ],[	(str_store_faction_name, s11, "$ambient_faction"),
 		(str_store_faction_name, s10, "$players_kingdom"),
-		(dialog_box,"@When dealing with people in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
+		(dialog_box,"@When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
 	]),
 
 #Companion quests

@@ -1618,7 +1618,7 @@ center_list = [
 	[-1, "trp_smith_candros", "trp_no_troop", "trp_elder_cairandros", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
 	["icon_mfc_gondor"],[6,1,1,1,1,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_normal),
 ("p_town_ethring", ["scn_ethring_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena", "scn_ethring_siege", "mesh_town_ethring"],
-	["trp_barman_ethring", "trp_smith_ethring", "trp_no_troop", "trp_elder_ethring", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
+	["trp_barman_ethring", "trp_smith_ethring", "trp_merchant_calembel", "trp_elder_ethring", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
 	["icon_mfc_ethring"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 # Rohan centers
 ("p_town_edoras", ["scn_edoras_center", "scn_edoras_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_edoras_siege","mesh_town_edoras"],

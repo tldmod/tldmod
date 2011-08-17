@@ -2439,26 +2439,39 @@ scripts = [
   # OUTPUT: trigger_result and reg0 = price_factor
   ("game_get_item_sell_price_factor",
     [ (store_script_param_1, ":item_kind_id"),
-      (assign, ":price_factor", 100),
-      (call_script, "script_get_trade_penalty", ":item_kind_id"),
-      (assign, ":trade_penalty", reg0),
-      (try_begin),
-        (is_between, "$g_encountered_party", centers_begin, centers_end),
-        (is_between, ":item_kind_id", trade_goods_begin, trade_goods_end),
-        (store_sub, ":item_slot_no", ":item_kind_id", trade_goods_begin),
-        (val_add, ":item_slot_no", slot_town_trade_good_prices_begin),
-        (party_get_slot, ":price_factor", "$g_encountered_party", ":item_slot_no"),
-        (val_mul, ":price_factor", 100),#normalize price factor to range 0..100
-        (val_div, ":price_factor", average_price_factor),
-      (else_try),
-        #increase trade penalty while selling
-        (val_mul, ":trade_penalty", 4),
-      (try_end),
-      (store_add, ":penalty_divisor", 100, ":trade_penalty"),
-      (val_mul, ":price_factor", 100),
-      (val_div, ":price_factor", ":penalty_divisor"),
-      (assign, reg0, ":price_factor"),
-      (set_trigger_result, reg0),
+#      (assign, ":price_factor", 100),
+#      (call_script, "script_get_trade_penalty", ":item_kind_id"),
+#      (assign, ":trade_penalty", reg0),
+    # (try_begin),
+      # (is_between, "$g_encountered_party", centers_begin, centers_end),
+      # (is_between, ":item_kind_id", trade_goods_begin, trade_goods_end),
+      # (store_sub, ":item_slot_no", ":item_kind_id", trade_goods_begin),
+      # (val_add, ":item_slot_no", slot_town_trade_good_prices_begin),
+      # (party_get_slot, ":price_factor", "$g_encountered_party", ":item_slot_no"),
+      # (val_mul, ":price_factor", 100),#normalize price factor to range 0..100
+      # (val_div, ":price_factor", average_price_factor),
+    # (else_try),
+      # (val_mul, ":trade_penalty", 4),        #increase trade penalty while selling
+    # (try_end),
+    # (store_add, ":penalty_divisor", 100, ":trade_penalty"),
+    # (val_mul, ":price_factor", 100),
+    # (val_div, ":price_factor", ":penalty_divisor"),
+	  
+	(party_get_skill_level, ":trade_skill", "p_main_party", skl_trade), #trade skill adds 5% per level up to 100% price
+	(val_mul, ":trade_skill", 5),
+    (store_add, reg0, 50, ":trade_skill"),
+	  
+#	(store_faction_of_party,":faction","$g_encountered_party"), 
+	(call_script,"script_get_faction_mask","$ambient_faction"), # items of wrong faction are less valuable when selling
+	(assign,":faction_mask",reg30),
+	(item_get_slot,":item_faction_mask",":item_kind_id",slot_item_faction),
+    (val_and,":item_faction_mask",":faction_mask"),
+	(try_begin),
+		(eq,":item_faction_mask",0),
+		(val_div, reg0,5), # discount for wrong faction items 80%
+	(try_end),
+	(val_min, reg0, 100),
+    (set_trigger_result, reg0),
   ]),
   
   # script_get_trade_penalty
