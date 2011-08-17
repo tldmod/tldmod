@@ -54,7 +54,7 @@ meshes = [
   ("town_edhellond"     , 0, "town_edhellond", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_erebor"        , 0, "town_erebor", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_erech"         , 0, "town_erech", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("town_ethring"       , 0, "town_ethring", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("town_calembel"      , 0, "town_ethring", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_harad"         , 0, "town_harad", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_lossarnach"    , 0, "town_lossarnach", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_rhun_north"    , 0, "town_rhun_north", 0, 0, 0, 0, 0, 0, 1, 1, 1),

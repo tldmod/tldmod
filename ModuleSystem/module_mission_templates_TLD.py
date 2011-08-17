@@ -6,6 +6,650 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
+dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
+	(get_player_agent_no,":player"), 
+    (agent_get_position,pos25,":player"),
+ 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
+	(assign,":min_pointer",-1),
+    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
+		(scene_prop_get_num_instances,":max_instance", ":pointer"),
+		(ge,":max_instance", 1),
+		(try_for_range,":instance_no",0,":max_instance"), # checking distance to player
+			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
+			(ge, ":i", 0),
+            (prop_instance_get_position,pos1,":i"),
+            (get_distance_between_positions,":dist",pos1,pos25),
+	        (le,":dist",":min_dist"),
+			(assign, ":min_dist", ":dist"), 
+			(assign, ":min_pointer", ":pointer"), 
+        (try_end),
+    (try_end),
+	(try_begin), # setting fog thickness
+		(neq,":min_pointer",-1),
+		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
+		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
+		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
+		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
+		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
+		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		(try_end),
+		(set_fog_distance,reg11,0x000001), 
+		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
+		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
+		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
+		(try_end),
+	(try_end),
+ ])
+  
+common_battle_mission_start = (ti_before_mission_start, 0, 0, [],
+  [ (team_set_relation, 0, 2, 1),
+    (team_set_relation, 1, 3, 1),
+    (call_script, "script_change_banners_and_chest"),
+    ])
+
+common_battle_tab_press = (ti_tab_pressed, 0, 0, [],
+  [ (try_begin),
+      (eq, "$battle_won", 1),
+      (call_script, "script_count_mission_casualties_from_agents"),
+      (finish_mission,0),
+    (else_try), #MV added this section
+       (main_hero_fallen),
+       (assign, "$pin_player_fallen", 1),
+       (str_store_string, s5, "str_retreat"),
+       (call_script, "script_simulate_retreat", 10, 20),
+       (assign, "$g_battle_result", -1),
+       (set_mission_result,-1),
+       (call_script, "script_count_mission_casualties_from_agents"),
+       (finish_mission,0),
+    (else_try),
+      (call_script, "script_cf_check_enemies_nearby"),
+      (question_box,"str_do_you_want_to_retreat"),
+    (else_try),
+      (display_message,"str_can_not_retreat"),
+    (try_end),
+    ])
+
+common_arena_fight_tab_press = (ti_tab_pressed, 0, 0, [],[(question_box,"str_give_up_fight")])
+
+common_custom_battle_tab_press = (ti_tab_pressed, 0, 0, [],
+  [ (try_begin),
+      (neq, "$g_battle_result", 0),
+      (call_script, "script_custom_battle_end"),
+      (finish_mission),
+    (else_try),
+      (question_box,"str_give_up_fight"),
+    (try_end),
+    ])
+
+custom_battle_check_victory_condition = (1, 60, ti_once,
+  [ (store_mission_timer_a,reg1),
+    (ge,reg1,10),
+    (all_enemies_defeated, 2),
+    (neg|main_hero_fallen, 0),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign, "$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    ],
+  [ (call_script, "script_custom_battle_end"),
+    (finish_mission, 1),
+    ])
+
+custom_battle_check_defeat_condition = (1, 4, ti_once,
+  [ (main_hero_fallen),
+    (assign,"$g_battle_result",-1),
+    ],
+  [ (call_script, "script_custom_battle_end"),
+    (finish_mission),
+    ])
+
+common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
+
+common_custom_battle_question_answered = (ti_question_answered, 0, 0, [],
+   [ (store_trigger_param_1,":answer"),
+     (eq,":answer",0),
+     (assign, "$g_battle_result", -1),
+     (call_script, "script_custom_battle_end"),
+     (finish_mission),
+   ])
+
+common_music_situation_update = (30, 0, 0, [],[(call_script, "script_combat_music_set_situation_with_culture")])
+common_battle_check_friendly_kills = (2, 0, 0, [],[ (call_script, "script_check_friendly_kills")])
+
+common_battle_check_victory_condition = (1, 60, ti_once,
+  [ (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 5),
+    #(neg|main_hero_fallen, 0), #MV
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_play_victorious_sound"),
+    ],
+  [ (call_script, "script_count_mission_casualties_from_agents"),
+    (finish_mission, 1),
+    ])
+
+common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
+common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(start_presentation, "prsnt_battle")])
+common_battle_order_panel_tick = (0.1, 0, 0, [], [ (eq, "$g_presentation_battle_active", 1),(call_script, "script_update_order_panel_statistics_and_map")])
+common_battle_inventory = (ti_inventory_key_pressed, 0, 0, [],[(display_message,"str_use_baggage_for_inventory")])
+common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_message, "str_cant_use_inventory_now")],[])
+
+common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV and MT
+    (assign, "$pin_player_fallen", 1),
+	#  check that battle still goes on MT
+  	(store_normalized_team_count,":a", 0), 
+	(store_normalized_team_count,":b", 1),
+	(gt,":b",0),(gt,":a",0),
+    (display_message, "str_player_down"), #MV
+	
+    #MV: not sure about this one, will see if it's needed
+	# (set_show_messages, 0), #stop messages JL
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_charge), #charges everyone JL
+	# (try_begin),
+	# (eq, "$tld_option_formations", 1), #if Formations is turned on JL
+	# (team_set_order_listener, "$fplayer_team_no", grc_everyone,-1), #clear listener for everyone JL
+	# (call_script, "script_player_order_formations", mordr_charge), #send formations order to charge JL
+	# (try_end),
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_fire_at_will), #JL PoP 3.3
+	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_use_any_weapon), #JL PoP 3.3
+	# (set_show_messages, 1), #show messages again JL
+	# (display_message, "@Your troops are charging!"), # display message JL
+              
+    #Native calc retreat on player death
+    # (str_store_string, s5, "str_retreat"),
+    # (call_script, "script_simulate_retreat", 10, 20),
+    # (assign, "$g_battle_result", -1),
+    # (set_mission_result,-1),
+    # (call_script, "script_count_mission_casualties_from_agents"),
+    # (finish_mission,0)
+])
+
+
+## MadVader deathcam begin: this is a simple death camera from kt0, works by moving the player body so mouselook is automatic
+common_init_deathcam = (0, 0, ti_once, [], [(assign, "$tld_camera_on", 0)])
+common_start_deathcam = (0, 4, ti_once, # 4 seconds delay before the camera activates
+   [(main_hero_fallen),(eq, "$tld_camera_on", 0)],[(assign, "$tld_camera_on", 1)])
+common_move_forward_deathcam = (0, 0, 0,
+   [  (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_forward),
+      (game_key_is_down, gk_move_forward),
+   ],[(get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_y, pos1, 18),
+      (agent_set_position, ":player_agent", pos1)])
+common_move_backward_deathcam = (0, 0, 0,
+   [  (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_backward),
+      (game_key_is_down, gk_move_backward),
+   ],[(get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_y, pos1, -18),
+      (agent_set_position, ":player_agent", pos1)])
+common_move_left_deathcam = (0, 0, 0,
+   [  (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_left),
+      (game_key_is_down, gk_move_left),
+   ],[(get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_x, pos1, -13),
+      (agent_set_position, ":player_agent", pos1)])
+common_move_right_deathcam = (0, 0, 0,
+   [  (eq, "$tld_camera_on", 1),
+      (this_or_next|game_key_clicked, gk_move_right),
+      (game_key_is_down, gk_move_right),
+   ],[(get_player_agent_no, ":player_agent"),
+      (agent_get_look_position, pos1, ":player_agent"),
+      (position_move_x, pos1, 13),
+      (agent_set_position, ":player_agent", pos1)])
+
+common_deathcam_triggers = [
+ 	common_init_deathcam,
+	common_start_deathcam,
+	common_move_forward_deathcam,
+	common_move_backward_deathcam,
+	common_move_left_deathcam,
+	common_move_right_deathcam,
+]
+## MadVader deathcam end
+
+#AI triggers v3 by motomataru
+AI_triggers = [  
+	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
+		(assign, "$cur_casualties", 0),
+		(assign, "$prev_casualties", 0),
+		(assign, "$prev_casualties2", 0), #adeed by JL to use for checking every second
+		(assign, "$ranged_clock", 1),
+		(assign, "$battle_phase", BP_Setup),
+		(assign, "$clock_reset", 0),
+		(assign, "$charge_activated", 0), # added for cav charge control -JL
+		(assign, "$charge_ongoing",0), # added for cav charge control -JL
+		(assign, "$inf_charge_activated", 0), # added for inf charge control -JL
+		(assign, "$inf_charge_ongoing", 0), # added for inf charge control -JL
+		(assign, "$arc_charge_activated", 0), # added for archer charge control -JL
+		(assign, "$att_reinforcements_arrived",0), #added for seeing if reinforcements have arrived -JL
+		(assign, "$def_reinforcements_arrived",0), #added for seeing if reinforcements have arrived -JL
+		(assign, "$att_reinforcements_needed", 0), #added for seeing if reinforcements are needed -JL
+		(assign, "$def_reinforcements_needed", 0), #added for seeing if reinforcements are needed -JL
+		(assign, "$formai_disengage", 0), #added for controlling cavalry disengagement -JL
+		(assign, "$formai_patrol_mode", 0), #added for controlling patrol mode -JL
+	##JL code for assigning random local variables:
+		(store_random_in_range, "$formai_rand0", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range randomness
+		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
+		(store_random_in_range, "$formai_rand1", 0, 501), #JL close hold position to archers for cavalry
+		(store_random_in_range, "$formai_rand3", AI_charge_distance, 3001), # JL main charge distance randomness
+		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 3001), #JL alternative charge range randomness
+		(store_random_in_range, "$formai_rand5", -1000, 0), #JL retreat range randomness
+		(store_random_in_range, "$formai_rand6", 4000, 5001), #JL grand charge distance and firing distance range randomness
+		(store_random_in_range, "$formai_rand7", 55, 66), #JL random decision comparative number (that partly decides when AI strives to execute a grand charge). A value of 30 = Patrol Mode. A value of 35 = enemy has >40% archers/others
+		(store_random_in_range, "$formai_rand8", -100, 101), #JL random very short range positioning for inf around archers in x pos.			
+		(assign, "$team0_default_formation", formation_default),
+		(assign, "$team1_default_formation", formation_default),
+		(assign, "$team2_default_formation", formation_default),
+		(assign, "$team3_default_formation", formation_default),
+		(init_position, Team0_Cavalry_Destination),
+		(init_position, Team1_Cavalry_Destination),
+		(init_position, Team2_Cavalry_Destination),
+		(init_position, Team3_Cavalry_Destination),
+		(assign, "$team0_reinforcement_stage", 0),
+		(assign, "$team1_reinforcement_stage", 0),
+	]),
+
+	(0, AI_Delay_For_Spawn, ti_once, [(eq, "$tld_option_formations", 1)], [
+		(set_fixed_point_multiplier, 100),
+		(call_script, "script_battlegroup_get_position", Team0_Starting_Point, 0, grc_everyone),
+		(call_script, "script_battlegroup_get_position", Team1_Starting_Point, 1, grc_everyone),
+		(call_script, "script_battlegroup_get_position", Team2_Starting_Point, 2, grc_everyone),
+		(call_script, "script_battlegroup_get_position", Team3_Starting_Point, 3, grc_everyone),
+		(call_script, "script_field_tactics", 1)
+	]),
+    
+	#JL new trigger for assigning randoms:
+	(60, 0, 0, [(eq, "$tld_option_formations", 1)], [
+	##JL code for assigning random local variables:
+		(store_random_in_range, "$formai_rand0", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range randomness
+		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
+		(store_random_in_range, "$formai_rand1", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range 2
+		(store_random_in_range, "$formai_rand3", AI_charge_distance, 3001), # JL main charge distance randomness
+		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 3001), #JL alternative charge range randomness
+		(store_random_in_range, "$formai_rand5", -1000, 0), #JL retreat range randomness
+		(store_random_in_range, "$formai_rand6", 4000, 5001), #JL grand charge distance and firing distance range randomness
+		(store_random_in_range, "$formai_rand7", 55, 66), #JL random decision comparative number (that partly decides when AI strives to execute a grand charge).
+		(store_random_in_range, "$formai_rand8", -100, 101), #JL random very short range positioning for inf around archers in x pos.	
+		#(display_message, "@Randoms  have been updated"),
+	]), #End JL
+
+	(1, .5, 0, [(eq, "$tld_option_formations", 1)], [	#delay to offset half a second from formations trigger
+		(try_begin),
+			(assign, "$prev_casualties2", "$cur_casualties"), #added by JL
+			(call_script, "script_cf_count_casualties"),
+			(assign, "$cur_casualties", reg0),
+			(assign, "$battle_phase", BP_Fight),
+		(try_end),
+		
+		(set_fixed_point_multiplier, 100),
+		(call_script, "script_store_battlegroup_data"),
+		(try_begin),	#reassess ranged position when fighting starts
+			(eq, "$battle_phase", BP_Fight), #changed from ge to eq -JL
+			(eq, "$clock_reset", 0),
+			(call_script, "script_field_tactics", 1),
+			(assign, "$ranged_clock", 0),
+			(assign, "$clock_reset", 1),
+		(else_try),	#reassess ranged position every five seconds after setup
+			(ge, "$battle_phase", BP_Jockey),
+			(store_mod, reg0, "$ranged_clock", 5),		
+			(eq, reg0, 0),
+			(call_script, "script_field_tactics", 1),
+			(assign, "$team0_reinforcement_stage", "$defender_reinforcement_stage"),
+			(assign, "$team1_reinforcement_stage", "$attacker_reinforcement_stage"),
+		(else_try),
+			(call_script, "script_field_tactics", 0),
+		(try_end),
+
+		(try_begin),
+			(eq, "$battle_phase", BP_Setup),
+			(assign, ":not_in_setup_position", 0),
+			(try_for_range, ":bgteam", 0, 4),
+				(neq, ":bgteam", "$fplayer_team_no"),
+				(call_script, "script_battlegroup_get_size", ":bgteam", grc_everyone),
+				(gt, reg0, 0),
+				(call_script, "script_battlegroup_get_position", pos1, ":bgteam", grc_archers),
+				(team_get_order_position, pos0, ":bgteam", grc_archers),
+				(get_distance_between_positions, reg0, pos0, pos1),
+				(gt, reg0, 500),
+				(assign, ":not_in_setup_position", 1),
+			(try_end),
+			(eq, ":not_in_setup_position", 0),	#all AI reached setup position?
+			(assign, "$battle_phase", BP_Jockey),
+		(try_end),
+		
+		(val_add, "$ranged_clock", 1),
+	]),
+]
+
+# Formations triggers v3 by motomataru
+# Global variables	*_formation_type holds type of formation: see "Formation modes" in module_constants
+#					*_formation_move_order hold the current move order for the formation
+#					*_space hold the multiplier of extra space ordered into formation by the player
+
+formations_triggers = [
+	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
+		(assign, "$autorotate_at_player", formation_autorotate_at_player),
+		(assign, "$infantry_formation_type", formation_default),	#type set by first call; depends on faction
+		(assign, "$archer_formation_type", formation_default),
+		(assign, "$cavalry_formation_type", formation_wedge),
+		(assign, "$infantry_space", formation_start_spread_out),	#give a little extra space for ease of forming up
+		(assign, "$archer_space", formation_start_spread_out),
+		(assign, "$cavalry_space", 0),
+		(assign, "$fclock", 1)
+	]),
+    
+#JL: Simple start player troops in formations, when formations is disabled	
+	(0, 1, ti_once, [(eq, "$tld_option_formations", 0)], [
+		#(display_message, "@Forming up to meet the enemy at your command ..."),
+		(get_player_agent_no, "$fplayer_agent_no"),
+		(agent_get_team, "$fplayer_team_no", "$fplayer_agent_no"),
+		(agent_get_position, pos1, "$fplayer_agent_no"),
+		(set_show_messages, 0),
+		(team_give_order, "$fplayer_team_no", grc_everyone, mordr_hold),
+		(position_move_x, pos1, 1500),		#cavalry set up 15m RIGHT of leader
+		(position_move_y, pos1, 500),		#cavalry set up 5m IN FRONT of leader
+		(team_set_order_position, "$fplayer_team_no", grc_cavalry, pos1),
+		(agent_get_position, pos1, "$fplayer_agent_no"),
+		(position_move_x, pos1, -1500),		#infantry set up 15m LEFT of leader
+		(position_move_y, pos1, 500),
+		(team_set_order_position, "$fplayer_team_no", grc_infantry, pos1),
+		(agent_get_position, pos1, "$fplayer_agent_no"),
+		(position_move_y, pos1, 2000),		#archers set up 20m FRONT of leader
+		(team_set_order_position, "$fplayer_team_no", grc_archers, pos1),
+		(set_show_messages, 1),
+	]),	 #End of standard start formations
+
+# Start troops in formation
+	(0, formation_delay_for_spawn, ti_once, [(eq, "$tld_option_formations", 1)], [
+		(get_player_agent_no, "$fplayer_agent_no"),
+		(agent_get_team, "$fplayer_team_no", "$fplayer_agent_no"),
+		(call_script, "script_store_battlegroup_data"),
+		
+		#get team fixed data
+		(assign, ":team0_avg_faction", 0),
+		(assign, ":team1_avg_faction", 0),
+		(assign, ":team2_avg_faction", 0),
+		(assign, ":team3_avg_faction", 0),
+		(try_for_agents, ":cur_agent"),
+			(agent_is_human, ":cur_agent"),
+			(agent_get_team, ":cur_team", ":cur_agent"),
+			(agent_get_troop_id, ":cur_troop", ":cur_agent"),
+			(store_troop_faction, ":cur_faction", ":cur_troop"),
+			(try_begin),
+				(eq, ":cur_team", 0),
+				(val_add, ":team0_avg_faction", ":cur_faction"),
+			(else_try),
+				(eq, ":cur_team", 1),
+				(val_add, ":team1_avg_faction", ":cur_faction"),
+			(else_try),
+				(eq, ":cur_team", 2),
+				(val_add, ":team2_avg_faction", ":cur_faction"),
+			(else_try),
+				(eq, ":cur_team", 3),
+				(val_add, ":team3_avg_faction", ":cur_faction"),
+			(try_end),
+		(try_end),
+		(try_begin),
+			(gt, "$team0_size", 0),
+			(team_get_leader, ":fleader", 0),
+			(try_begin),
+				(ge, ":fleader", 0),
+				(agent_get_troop_id, ":fleader_troop", ":fleader"),
+				(store_troop_faction, "$team0_faction", ":fleader_troop"),
+			(else_try),
+				(store_mul, "$team0_faction", ":team0_avg_faction", 10),
+				(val_div, "$team0_faction", "$team0_size"),
+				(val_add, "$team0_faction", 5),
+				(val_div, "$team0_faction", 10),
+			(try_end),
+		(try_end),
+		(try_begin),
+			(gt, "$team1_size", 0),
+			(team_get_leader, ":fleader", 1),
+			(try_begin),
+				(ge, ":fleader", 0),
+				(agent_get_troop_id, ":fleader_troop", ":fleader"),
+				(store_troop_faction, "$team1_faction", ":fleader_troop"),
+			(else_try),
+				(store_mul, "$team1_faction", ":team1_avg_faction", 10),
+				(val_div, "$team1_faction", "$team1_size"),
+				(val_add, "$team1_faction", 5),
+				(val_div, "$team1_faction", 10),
+			(try_end),
+		(try_end),
+		(try_begin),
+			(gt, "$team2_size", 0),
+			(team_get_leader, ":fleader", 2),
+			(try_begin),
+				(ge, ":fleader", 0),
+				(agent_get_troop_id, ":fleader_troop", ":fleader"),
+				(store_troop_faction, "$team2_faction", ":fleader_troop"),
+			(else_try),
+				(store_mul, "$team2_faction", ":team2_avg_faction", 10),
+				(val_div, "$team2_faction", "$team2_size"),
+				(val_add, "$team2_faction", 5),
+				(val_div, "$team2_faction", 10),
+			(try_end),
+		(try_end),
+		(try_begin),
+			(gt, "$team3_size", 0),
+			(team_get_leader, ":fleader", 3),
+			(try_begin),
+				(ge, ":fleader", 0),
+				(agent_get_troop_id, ":fleader_troop", ":fleader"),
+				(store_troop_faction, "$team3_faction", ":fleader_troop"),
+			(else_try),
+				(store_mul, "$team3_faction", ":team3_avg_faction", 10),
+				(val_div, "$team3_faction", "$team3_size"),
+				(val_add, "$team3_faction", 5),
+				(val_div, "$team3_faction", 10),
+			(try_end),
+		(try_end),
+		
+		(display_message, "@Forming ranks."),
+		#keep cavalry on the map
+		(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_cavalry),
+		(val_mul, reg0, 2),
+		(convert_to_fixed_point, reg0),
+		(store_sqrt, ":depth_cavalry", reg0),
+		(convert_from_fixed_point, ":depth_cavalry"),
+		(val_sub, ":depth_cavalry", 1),
+		(store_mul, reg0, "$cavalry_space", 50),
+		(val_add, reg0, 250),
+		(val_mul, ":depth_cavalry", reg0),
+		(store_mul, reg0, "$infantry_space", 50),
+		(val_add, reg0, formation_minimum_spacing),
+		(val_mul, reg0, 2),
+		(val_sub, ":depth_cavalry", reg0),
+		(try_begin),
+			(gt, ":depth_cavalry", 0),
+			(agent_get_position, pos49, "$fplayer_agent_no"),
+			(copy_position, pos2, pos49),
+			(call_script, "script_team_get_position_of_enemies", pos60, "$fplayer_team_no", grc_everyone),
+			(call_script, "script_point_y_toward_position", pos2, pos60),
+			(position_move_y, pos2, ":depth_cavalry"),
+			(agent_set_position, "$fplayer_agent_no", pos2),	#fake out script_cf_formation
+		(try_end),
+
+		(call_script, "script_get_default_formation", "$fplayer_team_no"),
+		(call_script, "script_player_attempt_formation", grc_infantry, reg0),
+		(call_script, "script_player_attempt_formation", grc_cavalry, formation_wedge),
+		(call_script, "script_player_attempt_formation", grc_archers, formation_default),
+		(try_begin),
+			(gt, ":depth_cavalry", 0),
+			(agent_set_position, "$fplayer_agent_no", pos49),
+		(try_end),
+
+		(set_show_messages, 0),
+		(try_for_range, reg0, 3, 9),
+			(team_give_order, "$fplayer_team_no", reg0, mordr_hold),
+		(try_end),
+
+		#init troops for when formation ends
+		(try_for_range, reg0, 0, "$infantry_space"),
+			(team_give_order, "$fplayer_team_no", grc_infantry, mordr_spread_out),
+		(try_end),
+		(try_for_range, reg0, 0, "$archer_space"),
+			(team_give_order, "$fplayer_team_no", grc_archers, mordr_spread_out),
+		(try_end),
+		(try_for_range, reg0, 0, "$cavalry_space"),
+			(team_give_order, "$fplayer_team_no", grc_cavalry, mordr_spread_out),
+		(try_end),
+		(set_show_messages, 1),
+	]),
+#form ranks command
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_ranks)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_attempt_formation", grc_infantry, formation_ranks),
+		(val_max, "$archer_space", 2),
+		(call_script, "script_player_attempt_formation", grc_archers, formation_ranks)
+	]),
+#form shield wall command
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_shield)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_attempt_formation", grc_infantry, formation_shield)
+	]),
+#form wedge command
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_wedge)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_attempt_formation", grc_infantry, formation_wedge),
+		(call_script, "script_player_attempt_formation", grc_cavalry, formation_wedge)
+	]),
+#form square command
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_square)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_attempt_formation", grc_infantry, formation_square)
+	]),
+#end formation command
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_undo)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_charge)
+	]),
+#charge ends formation
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_charge)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_charge)
+	]),
+#dismount ends formation
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_dismount)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_dismount),
+	]),
+#On hold, any formations reform in new location		
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_halt)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_hold)
+	]),
+#Follow is hold	repeated frequently
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_follow)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_follow)
+	]),
+#attempt to avoid simultaneous formations function calls
+	(1, 0, 0, [	
+        (eq, "$tld_option_formations", 1),
+		(call_script, "script_store_battlegroup_data"),
+		(neg|key_is_down, key_for_ranks),
+		(neg|key_is_down, key_for_shield),
+		(neg|key_is_down, key_for_wedge),
+		(neg|key_is_down, key_for_square),
+		(neg|key_is_down, key_for_undo),
+		(neg|game_key_is_down, gk_order_charge),
+		(neg|game_key_is_down, gk_order_dismount),
+		(neg|game_key_is_down, gk_order_halt),
+		(neg|game_key_is_down, gk_order_follow),
+		(neg|game_key_is_down, gk_order_advance),
+		(neg|game_key_is_down, gk_order_fall_back),
+		(neg|game_key_is_down, gk_order_spread_out),
+		(neg|game_key_is_down, gk_order_stand_closer)
+	  ], [
+		(set_fixed_point_multiplier, 100),
+		(store_mod, ":fifth_second", "$fclock", 5),
+		(call_script, "script_team_get_position_of_enemies", pos60, "$fplayer_team_no", grc_everyone),
+		(try_begin),
+			(eq, reg0, 0),	#no more enemies?
+			(call_script, "script_formation_end", "$fplayer_team_no", grc_everyone),
+		(else_try),
+			(assign, "$autorotate_at_player", 0),
+			(try_begin),
+				(neq, "$infantry_formation_type", formation_none),
+				(try_begin),
+					(eq, "$infantry_formation_move_order", mordr_follow),
+					(call_script, "script_cf_formation", "$fplayer_team_no", grc_infantry, "$infantry_space", "$infantry_formation_type"),
+				(else_try),	#periodically reform
+					(eq, ":fifth_second", 0),
+					(team_get_movement_order, reg0, "$fplayer_team_no", grc_infantry),
+					(neq, reg0, mordr_stand_ground),
+					(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_infantry),
+					(position_move_y, pos1, -2000),
+					(call_script, "script_point_y_toward_position", pos1, pos60),
+					(position_move_y, pos1, 2000),
+					(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos1),					
+					(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_infantry),
+					(assign, ":troop_count", reg0),
+					(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
+					(position_move_x, pos1, reg0),
+					(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),		
+				(try_end),
+			(try_end),
+			(try_begin),
+				(neq, "$cavalry_formation_type", formation_none),
+				(try_begin),
+					(eq, "$cavalry_formation_move_order", mordr_follow),
+					(call_script, "script_cf_formation", "$fplayer_team_no", grc_cavalry, "$cavalry_space", "$cavalry_formation_type"),
+				(else_try),	#periodically reform
+					(eq, ":fifth_second", 0),
+					(team_get_movement_order, reg0, "$fplayer_team_no", grc_cavalry),
+					(neq, reg0, mordr_stand_ground),
+					(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_cavalry),
+					(call_script, "script_point_y_toward_position", pos1, pos60),
+					(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos1),
+					(call_script, "script_form_cavalry", "$fplayer_team_no", "$fplayer_agent_no", "$cavalry_space"),
+				(try_end),
+			(try_end),
+			(try_begin),
+				(neq, "$archer_formation_type", formation_none),
+				(try_begin),
+					(eq, "$archer_formation_move_order", mordr_follow),
+					(call_script, "script_cf_formation", "$fplayer_team_no", grc_archers, "$archer_space", "$archer_formation_type"),
+				(else_try),	#periodically reform
+					(eq, ":fifth_second", 0),
+					(team_get_movement_order, reg0, "$fplayer_team_no", grc_archers),
+					(neq, reg0, mordr_stand_ground),
+					(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_archers),
+					(position_move_y, pos1, -2000),
+					(call_script, "script_point_y_toward_position", pos1, pos60),
+					(position_move_y, pos1, 2000),
+					(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos1),
+					(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_archers),
+					(assign, ":troop_count", reg0),
+					(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
+					(val_mul, reg0, -1),
+					(position_move_x, pos1, reg0),
+					(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),		
+				(try_end),
+			(try_end),
+			(assign, "$autorotate_at_player", formation_autorotate_at_player),
+		(try_end),
+		(val_add, "$fclock", 1),
+	]),
+	
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_advance     )],[(call_script,"script_player_order_formations",mordr_advance)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_fall_back   )],[(call_script,"script_player_order_formations",mordr_fall_back)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_spread_out  )],[(call_script,"script_player_order_formations",mordr_spread_out)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_stand_closer)],[(call_script,"script_player_order_formations",mordr_stand_closer)]),
+]
+#end formations triggers
+
 cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 [   (eq, "$cheat_mode",1),
 	(key_is_down, key_s),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),

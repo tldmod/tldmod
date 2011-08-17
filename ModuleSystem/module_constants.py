@@ -1400,7 +1400,7 @@ faction_init = [
 subfaction_data= [      
  (subfac_pelargir     ,"p_town_pelargir"     ,"Pelargir"  ,["trp_pelargir_watchman"       ,"trp_pelargir_infantry"           ,"trp_pelargir_vet_infantry"       ],["pt_pelargir_reinf_a"  ,"pt_pelargir_reinf_b"  ,"pt_pelargir_reinf_c"  ],["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
  (subfac_dol_amroth   ,"p_town_dol_amroth"   ,"Amroth"    ,["trp_squire_of_dol_amroth"    ,"trp_veteran_squire_of_dol_amroth","trp_swan_knight_of_dol_amroth"   ],["pt_dol_amroth_reinf_a","pt_dol_amroth_reinf_b","pt_dol_amroth_reinf_c"],["trp_dol_amroth_leader"]),
- (subfac_ethring      ,"p_town_ethring"      ,"Lamedon"   ,["trp_clansman_of_lamedon"     ,"trp_footman_of_lamedon"          ,"trp_veteran_of_lamedon"          ],["pt_lamedon_reinf_a"   ,"pt_lamedon_reinf_b"   ,"pt_lamedon_reinf_c"   ],["trp_lamedon_leader"]),
+ (subfac_ethring      ,"p_town_calembel"     ,"Lamedon"   ,["trp_clansman_of_lamedon"     ,"trp_footman_of_lamedon"          ,"trp_veteran_of_lamedon"          ],["pt_lamedon_reinf_a"   ,"pt_lamedon_reinf_b"   ,"pt_lamedon_reinf_c"   ],["trp_lamedon_leader"]),
  (subfac_lossarnach   ,"p_town_lossarnach"   ,"Lossarnach",["trp_woodsman_of_lossarnach"  ,"trp_axeman_of_lossarnach"        ,"trp_axemaster_of_lossarnach"     ],["pt_lossarnach_reinf_a","pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
  (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,["trp_pinnath_gelin_plainsman" ,"trp_pinnath_gelin_spearman"      ,"trp_warrior_of_pinnath_gelin"    ],["pt_pinnath_reinf_a"   ,"pt_pinnath_reinf_b"   ,"pt_pinnath_reinf_c"   ],["trp_pinnath_leader"]),
  (subfac_blackroot    ,"p_town_erech"        ,"Blackroot" ,["trp_blackroot_vale_archer"   ,"trp_footman_of_blackroot_vale"   ,"trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a" ,"pt_blackroot_reinf_b" ,"pt_blackroot_reinf_c" ],["trp_blackroot_leader"]),
@@ -1617,8 +1617,8 @@ center_list = [
 ("p_town_cair_andros", ["scn_cair_andros_center", "scn_cair_andros_castle", -1, -1, -1, "scn_cair_andros_siege", "mesh_town_cair_andros"],
 	[-1, "trp_smith_candros", "trp_no_troop", "trp_elder_cairandros", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
 	["icon_mfc_gondor"],[6,1,1,1,1,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_normal),
-("p_town_ethring", ["scn_ethring_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena", "scn_ethring_siege", "mesh_town_ethring"],
-	["trp_barman_ethring", "trp_smith_ethring", "trp_merchant_calembel", "trp_elder_ethring", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
+("p_town_calembel", ["scn_ethring_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena", "scn_ethring_siege", "mesh_town_calembel"],
+	["trp_barman_calembel", "trp_smith_calembel", "trp_merchant_calembel", "trp_elder_ethring", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
 	["icon_mfc_ethring"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 # Rohan centers
 ("p_town_edoras", ["scn_edoras_center", "scn_edoras_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_edoras_siege","mesh_town_edoras"],
@@ -1649,7 +1649,7 @@ center_list = [
 ("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", -1, "mesh_ui_default_menu_window"],
 	["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_town_23_horse_merchant", "trp_elder_mmorgul", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_mordor"],[6,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_never),
-("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern", -1, -1, "mesh_ui_default_menu_window"],
+("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern", -1, -1, "mesh_town_evilcamp"],
 	["trp_barman_cungol", "trp_smith_cungol", "trp_town_25_horse_merchant", "trp_elder_cungol", "pt_mordor_reinf_a", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_mordor"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
 ("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1, -1, "mesh_town_evilcamp"],

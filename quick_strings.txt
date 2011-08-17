@@ -1,4 +1,4 @@
-907
+906
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -467,7 +467,6 @@ qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
 qstr_{s15}_{reg12}__with_ {s15},_{reg12}_(with_{s16})
 qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
-qstr_They_came_here_after They_came_here_after_we_kicked_their_asses_5:0_in_the_first_round!_Let's_do_it_again.
 qstr_TEST:_troll_VS_infan TEST:_troll_VS_infantry
 qstr_TEST:_troll_VS_arche TEST:_troll_VS_archers
 qstr_TEST:_troll_VS_chava TEST:_troll_VS_chavalry

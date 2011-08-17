@@ -51,8 +51,8 @@ party_templates = [
   ("looters"         ,"Tribal Orcs"    ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
   ("forest_bandits"  ,"Orc Stragglers" ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
   ("mountain_bandits","Wild Goblins"   ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
-  ("steppe_bandits"  ,"Dun Renegades"  ,icon_khergit   |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_raven_rider,3,35)]),
-  ("sea_raiders"     ,"Corsair Raiders",icon_axeman    |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_marauder,3,50)]),
+  ("steppe_bandits"  ,"Dunland Bandits",icon_dunlander |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_warrior,3,10), (trp_dunnish_wildman,5,35)]),
+  ("sea_raiders"     ,"Corsair Raiders",icon_axeman    |carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_warrior,3,30),(trp_marksman_of_umbar,3,20)]),
 
   ("deserters","Deserters",icon_vaegir_knight|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 
@@ -65,7 +65,6 @@ party_templates = [
 ##  ("farmers","Farmers",icon_peasant,0,fac_innocents,merchant_personality,[(trp_farmer,11,22),(trp_peasant_woman,16,44)]),
   ("village_farmers","Village Farmers",icon_peasant,0,fac_innocents,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
 ##  ("refugees","Refugees",icon_woman_b,0,fac_innocents,merchant_personality,[(trp_refugee,19,48)]),
-##  ("dark_hunters","Dark Hunters",icon_gray_knight,0,fac_dark_knights,soldier_personality,[(trp_dark_knight,4,42),(trp_dark_hunter,13,25)]),
 
   ("spy_partners", "Suspicious Travellers", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner,1,1),(trp_squire_of_dol_amroth,5,11)]),
   ("spy_partners_evil", "Suspicious Travellers", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner_evil,1,1),(trp_dunnish_raven_rider,5,11)]),

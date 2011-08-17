@@ -1442,29 +1442,28 @@ scripts = [
         (faction_get_slot, ":tmp", ":faction", slot_faction_occasional_sound1_day),
 		(party_set_slot, ":town_no", slot_center_occasional_sound1_day, ":tmp"),
       (try_end),
-	  
-	  ]+[
-      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_a, subfaction_data[x][4][0])  for x in range(len(subfaction_data)) ]+[
-      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_b, subfaction_data[x][4][1])  for x in range(len(subfaction_data)) ]+[
-      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_c, subfaction_data[x][4][2])  for x in range(len(subfaction_data)) ]+[
-	  
-	  (party_add_members, subfaction_data[x][1], subfaction_data[x][5][y],1)  for x in range(len(subfaction_data)) for y in range(len(subfaction_data[x][5])) ]+[
+	]+[
 # specific centers ambient sounds
       (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_day   , center_sounds[x][1])  for x in range(len(center_sounds)) ]+[
       (party_set_slot, center_sounds[x][0], slot_center_ambient_sound_always, center_sounds[x][2])  for x in range(len(center_sounds)) ]+[
       (party_set_slot, center_sounds[x][0], slot_center_occasional_sound1_day,center_sounds[x][3])  for x in range(len(center_sounds)) ]+[
 
+      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_a, subfaction_data[x][4][0])  for x in range(len(subfaction_data)) ]+[
+      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_b, subfaction_data[x][4][1])  for x in range(len(subfaction_data)) ]+[
+      (party_set_slot, subfaction_data[x][1], slot_town_reinforcements_c, subfaction_data[x][4][2])  for x in range(len(subfaction_data)) ]+[
+	  
+	  (party_add_members, subfaction_data[x][1], subfaction_data[x][5][y],1)  for x in range(len(subfaction_data)) for y in range(len(subfaction_data[x][5])) ]+[
+
 #Initialize walkers
       (try_for_range, ":center_no", centers_begin, centers_end),
         (party_slot_eq, ":center_no", slot_party_type, spt_town),
-#                     (party_slot_eq, ":center_no", slot_party_type, spt_village),
         (try_for_range, ":walker_no", 0, num_town_walkers),
           (call_script, "script_center_set_walker_to_type", ":center_no", ":walker_no", walkert_default),
         (try_end),
       (try_end),
 # TLD banner assignment		
 # assign main faction banners to lords
-      ]+[
+    ]+[
 	   (troop_set_slot, faction_init[x][3][1], slot_troop_banner_scene_prop, faction_init[x][6]) for x in range(len(faction_init)) ]+[   
       
      (try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
@@ -1643,12 +1642,6 @@ scripts = [
       (try_for_range, ":unused", 0, 25),
         (spawn_around_party,"p_main_party","pt_looters"),
       (try_end),
-
-      # (try_for_range, ":unused", 0, 6),
-        # (call_script, "script_update_trade_good_prices"),
-      # (try_end),
-      
-      #(call_script, "script_assign_lords_to_empty_centers"),  # no need, in TLD -- mtarini
 
 # generating notes
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -1837,7 +1830,6 @@ scripts = [
   #  called by troll weapon hitting 
   # ("troll_hit", [ (display_message,"@DEBUG: Troll hit!!!"),]),
   
-
   # script_game_event_party_encounter:
   # This script is called from the game engine whenever player party encounters another party or a battle on the world map
   # INPUT:
@@ -1868,7 +1860,6 @@ scripts = [
 #NPC companion changes begin
        (call_script, "script_party_count_fit_regulars", "p_main_party"),
        (assign, "$playerparty_prebattle_regulars", reg0),
-
        (assign, "$g_last_rest_center", -1),
        (assign, "$talk_context", 0),
        (assign,"$g_player_surrenders",0),
@@ -12224,20 +12215,19 @@ scripts = [
 		   (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
 		 (try_end),
 	   (try_end),
-     (try_end),
+    (try_end),
 	 
 	(set_show_messages, 0), # move attacker archers to firing positions unless target points are captured
-    (entry_point_get_position, pos10, 60), #TLD, was 10
-	(team_give_order, "$attacker_team", grc_archers, mordr_stand_ground),
-	(team_set_order_position, "$attacker_team", grc_archers, pos10),
-	  (entry_point_get_position, pos11, 61), #TLD, was 10
-	  (team_give_order, "$attacker_team_2", grc_archers, mordr_stand_ground),
-	  (team_set_order_position, "$attacker_team_2", grc_archers, pos11),
-	(entry_point_get_position, pos12, 62), #TLD, was 10
-	(team_give_order, "$attacker_team_3", grc_archers, mordr_stand_ground),
-	(team_set_order_position, "$attacker_team_3", grc_archers, pos12),
+    (try_for_range, ":slot",0,3),
+		(neg|troop_slot_eq,"trp_no_troop",":slot",-1), #if flank not captured yet
+		(store_mul,":atkteam",":slot",2),(val_add,":atkteam",1),
+		(store_add,":random_entry_point",":slot",60),
+		(entry_point_get_position, pos10, ":random_entry_point"),
+		(team_give_order, ":atkteam", grc_archers, mordr_stand_ground),
+		(team_set_order_position,":atkteam", grc_archers, pos10),
+    (try_end),
     (set_show_messages, 1),
-     ]),
+  ]),
 
   # script_store_movement_order_name_to_s1
   # Input: arg1 = team_no, arg2 = class_no
