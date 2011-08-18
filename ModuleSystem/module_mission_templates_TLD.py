@@ -817,9 +817,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   [ (assign,"$trolls_in_battle",0),	
 	(assign,"$nazgul_in_battle",0),	
 	(assign,"$wargs_in_battle",0),	
-	
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
-	
 	(assign, "$nazgul_team", -1), # will be found when needed
 	
 	(try_begin),
@@ -880,14 +878,12 @@ tld_cheer_on_space_when_battle_over_release = (
 	(else_try),
 		(agent_set_animation, reg10, "anim_cancel_ani_stand"),
 	(try_end),
-	
 	(assign,"$player_cheering",0),
 ])
 
 # custom TLD functions for special troops spawining
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
-  [
-    (store_trigger_param_1, ":agent"),
+  [ (store_trigger_param_1, ":agent"),
 	(agent_get_troop_id,":agent_trp",":agent"),
 	(agent_get_item_id, ":agent_item", ":agent"),
 	
@@ -1189,8 +1185,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,
 	(store_random_in_range, ":rand",0,100),
 	(ge, ":rand", 20),
   ],
-  [
-	(get_player_agent_no, ":player"),
+  [ (get_player_agent_no, ":player"),
 	(agent_get_horse,":mount",":player"),
 	(ge, ":mount", 0),
 	(agent_get_item_id,":mount_item", ":mount"),
@@ -1230,17 +1225,13 @@ custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
 ])
 
 #MV: inserted troll "charging" (going haead not following orders)
-custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
+custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],
   [ (try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
 		(agent_get_troop_id,reg0,":troll"), # is it a troll?
 		(troop_get_type, reg0, reg0),
 		(eq, reg0, tf_troll),
-		# TEST...
-		#(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
-	    #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
-
         #Trolls charging - begin
         (agent_get_team, ":troll_team", ":troll"),
         (agent_get_position, pos1, ":troll"),
@@ -1480,8 +1471,8 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0),],
 
 custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
         (get_player_agent_no, ":player_agent"),
-		(try_for_agents,":troll"),										# horse rearing near troll
-#            (agent_is_alive, ":troll"), #GA: horses hate dead trolls too
+		(try_for_agents,":troll"),									# horse rearing near troll
+			#(agent_is_alive, ":troll"), #GA: horses hate dead trolls too
 			(agent_get_troop_id,reg0,":troll"),
 			(troop_get_type, reg0, reg0),
 			(try_begin),
@@ -1507,7 +1498,7 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 					(try_begin),
                         (eq, ":rider", ":player_agent"),
                         (is_between, reg0, 0, 3),
-                        (display_message, "@Your mount is scared by the troll!"),
+                        (display_message, "@Your mount is scared by the troll!",color_bad_news),
 					(try_end),
 				(try_end),
 			(try_end),
@@ -1559,13 +1550,10 @@ custom_lone_wargs_special_attack = (0,0,2, [
 		(eq,":wants_to_jump",1),
 		(agent_set_walk_forward_animation, ":warg_mount", "anim_warg_jump"),
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
-        
 	(try_end),
 ])
 
-
-# wargs without rider respawn
-custom_lone_wargs_are_aggressive = (0.5,0,0, [
+custom_lone_wargs_are_aggressive = (0.5,0,0, [  # wargs without rider respawn
     (set_show_messages,0),
  # self destruct any ghost rider which has no ride
 	(try_for_agents,":ghost"),
@@ -1615,10 +1603,9 @@ custom_lone_wargs_are_aggressive = (0.5,0,0, [
 	],[
 ])
 
-	
 ################## SIEGE LADDERS BEGIN #######################################
 HD_ladders_init = (0,0,ti_once,[],[
-			 (scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 0),		###### lower siege ladders at battle start
+			 (scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 0),###### lower siege ladders at battle start
 			 (prop_instance_get_position,pos1,":ladder"),					###### saves the hassle of aligning props with wall
 			 (position_rotate_x,pos1,120),
 			 (prop_instance_set_position,":ladder",pos1),
@@ -1640,7 +1627,6 @@ HD_ladders_rise = (0,25,ti_once, [],[(scene_prop_get_instance,":ladder", "spr_si
 			 (display_message,"@The ladders on Deeping Wall! Watch out!")])
 ################## SIEGE LADDERS END #########################################
 
-#################################################################
 ################ BALLISTA BEGIN #################################
 # Ibanez code heavily modified by GA
 ballista_init = (0, 0, ti_once, [],[
@@ -1686,9 +1672,9 @@ ballista_operate = (0, 0, 1,	[(key_clicked, key_e),(eq,"$ballista_action",0)],
 					(display_message,"@Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F"),
 					(assign,"$ballista_action",1),
 			 (try_end)])
-ballista_disengage = (0, 0, 1, 	[(key_clicked, key_f),(eq,"$ballista_action",1),],		###### disengage ballista
+ballista_disengage = (0, 0, 1, 	[(key_clicked, key_f),(eq,"$ballista_action",1)],		###### disengage ballista
 			[(mission_cam_set_mode,0),(assign,"$ballista_action",0)])
-ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1),(eq,"$missile_flying",0),],	###### fire in the hole!
+ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1),(eq,"$missile_flying",0)],	###### fire in the hole!
 			[#(display_message,"@Ballista: shooting"),
 			 (assign,"$ballista_action",2),
 			 (assign,"$missile_flying",1),
@@ -1700,7 +1686,7 @@ ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1)
 			 (mission_cam_animate_to_position, pos1, 500, 0),
 			 (play_sound,"snd_release_crossbow")])
 ballista_reload_pause = (0, 2, 0, 	[(eq,"$ballista_action",2),],[(assign,"$ballista_action",3)])
-ballista_reload = (0, 0.1, 0, [(eq,"$ballista_action",3),],
+ballista_reload = (0, 0.1, 0, [(eq,"$ballista_action",3)],
 			[(try_begin),(lt,"$missile_count","$missile_max"),
 				(val_add,"$missile_count",1),								###### ammo count
 				(play_sound,"snd_pull_ballista"),
@@ -1724,7 +1710,7 @@ ballista_reload = (0, 0.1, 0, [(eq,"$ballista_action",3),],
 				(assign,"$ballista_action",0),
 				(display_message,"@Ballista: out of ammo"),
 			 (try_end)])
-ballista_fly_missile = (0, 0, 0,   [(eq,"$missile_flying",1),],  
+ballista_fly_missile = (0, 0, 0,   [(eq,"$missile_flying",1)],  
 			[(prop_instance_get_position,pos1,"$missile_flying_instance"),		###### missile flight and killing
 			 (copy_position,pos2,pos1),(position_get_z,":z_missile",pos1),
 			 (position_set_z_to_ground_level, pos2),(position_get_z,":z_ground",pos2),
@@ -1775,9 +1761,9 @@ ballista_fly_missile = (0, 0, 0,   [(eq,"$missile_flying",1),],
 			(try_end)])
 ballista_toggle_fire_arrow = (0, 0.1,0.5,[(key_clicked, key_t),(eq,"$ballista_action",1),(eq,"$missile_flying",0)], ### toggle fire on missile
 			[(try_begin),(eq,"$ballista_fire",1),(assign,"$ballista_fire",0),
-			 (else_try),				 (assign,"$ballista_fire",1),
+			  (else_try),				         (assign,"$ballista_fire",1),
 			 (try_end)])
-ballista_missile_illumination = (0, 0, 0, 	[(eq,"$ballista_fire",1),],   							###### missile illumination
+ballista_missile_illumination = (0, 0, 0, 	[(eq,"$ballista_fire",1)],   							###### missile illumination
 			[(scene_prop_get_instance,":missile_instance", "spr_ballista_missile", "$missile_count"),
 			 (prop_instance_get_position,pos1,":missile_instance"),
 			 (position_move_y,pos1,-100),
@@ -1790,7 +1776,7 @@ ballista_missile_illumination = (0, 0, 0, 	[(eq,"$ballista_fire",1),],   							
 				(particle_system_burst, "psys_torch_fire",pos1,10),
 #				(particle_system_burst, "psys_torch_smoke",pos1,10),
 				(particle_system_burst, "psys_torch_fire_sparks",pos1,10)])
-ballista_camera_alignment = (0, 0, 0, 	[(eq,"$ballista_action",1),], 							###### camera and loaded missile alignment
+ballista_camera_alignment = (0, 0, 0, 	[(eq,"$ballista_action",1)], 							###### camera and loaded missile alignment
 			[(prop_instance_get_position,pos1,"$ballista_instance"),
 			 (scene_prop_get_instance,":missile_instance", "spr_ballista_missile", "$missile_count"),
 			 (position_move_z,pos1,5),
@@ -1963,7 +1949,7 @@ scene_set_flora_init = (ti_before_mission_start,0,0,[],
 		(store_add,":spr_pointer","spr_zz_pointer00",":pointer"),
 		(replace_scene_props,":spr_pointer",":object"),
 	(try_end)])
-scene_set_flora_army_spawn = (0, 0, ti_once,[
+scene_set_flora_army_spawn = (0, 0, ti_once, [], [
 	(get_scene_boundaries,pos1,pos2),
 	(position_get_x,"$battlemap_min_x",pos1),
 	(position_get_y,"$battlemap_min_y",pos1),
@@ -2061,7 +2047,7 @@ scene_set_flora_army_spawn = (0, 0, ti_once,[
 	(try_end),
 	(assign,reg0,"$battlemap_max_x"),
 	(assign,reg1,"$battlemap_max_y"),	 
-	(display_message,"@max X {reg0} max Y {reg1}")],[
+	(display_message,"@max X {reg0} max Y {reg1}"),
 ])
  
 

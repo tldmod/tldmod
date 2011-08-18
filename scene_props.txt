@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1425
+ 1473
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -120,9 +120,6 @@ spr_carpet_with_pillows_a 0 0 carpet_with_pillows_a bo_carpet_with_pillows 0
 spr_carpet_with_pillows_b 0 0 carpet_with_pillows_b bo_carpet_with_pillows 0
 
 
-spr_table_round_a 0 0 table_round_a bo_table_round_a 0
-
-
 spr_table_round_b 0 0 table_round_b bo_table_round_b 0
 
 
@@ -130,9 +127,6 @@ spr_fireplace_b 0 0 fireplace_b bo_fireplace_b 0
 
 
 spr_fireplace_c 0 0 fireplace_c bo_fireplace_c 0
-
-
-spr_sofa_a 0 0 sofa_a bo_sofa 0
 
 
 spr_sofa_b 0 0 sofa_b bo_sofa 0
@@ -207,9 +201,6 @@ spr_destroy_b 0 0 destroy_b 0 0
 spr_bridge_wooden 0 0 bridge_wooden bo_bridge_wooden 0
 
 
-spr_bridge_wooden_snowy 0 0 bridge_wooden_snowy bo_bridge_wooden 0
-
-
 spr_grave_a 0 0 grave_a bo_grave_a 0
 
 
@@ -237,6 +228,30 @@ spr_village_wall_a 0 0 village_wall_a bo_village_wall_a 0
 spr_village_wall_b 0 0 village_wall_b bo_village_wall_b 0
 
 
+spr_village_house_e_E 0 0 village_house_e 0 0
+
+
+spr_village_house_f_E 0 0 village_house_f 0 0
+
+
+spr_village_house_g_E 0 0 village_house_g 0 0
+
+
+spr_village_house_h_E 0 0 village_house_h 0 0
+
+
+spr_village_house_i_E 0 0 village_house_i 0 0
+
+
+spr_village_house_j_E 0 0 village_house_j 0 0
+
+
+spr_village_wall_a_E 0 0 village_wall_a 0 0
+
+
+spr_village_wall_b_E 0 0 village_wall_b 0 0
+
+
 spr_village_snowy_house_a 0 0 village_snowy_house_a bo_village_snowy_house_a 0
 
 
@@ -255,37 +270,10 @@ spr_village_snowy_house_e 0 0 village_snowy_house_e bo_village_snowy_house_e 0
 spr_village_snowy_house_f 0 0 village_snowy_house_f bo_village_snowy_house_f 0
 
 
-spr_carpet_a 0 0 carpet_a 0 0
-
-
-spr_carpet_b 0 0 carpet_b 0 0
-
-
-spr_carpet_c 0 0 carpet_c 0 0
-
-
-spr_carpet_d 0 0 carpet_d 0 0
-
-
-spr_carpet_e 0 0 carpet_e 0 0
-
-
 spr_carpet_f 0 0 carpet_f 0 0
 
 
-spr_awning_a 0 0 awning_a bo_awning 0
-
-
 spr_awning_b 0 0 awning_b bo_awning 0
-
-
-spr_awning_c 0 0 awning_c bo_awning 0
-
-
-spr_awning_long 0 0 awning_long bo_awning_long 0
-
-
-spr_awning_long_b 0 0 awning_long_b bo_awning_long 0
 
 
 spr_awning_d 0 0 awning_d bo_awning_d 0
@@ -429,21 +417,6 @@ spr_tunnel_salt 0 0 tunnel_salt bo_tunnel_salt 0
 spr_salt_a 0 0 salt_a bo_salt_a 0
 
 
-spr_tutorial_door_a 65536 0 tutorial_door_a bo_tutorial_door_a 0
-
-
-spr_tutorial_door_b 65536 0 tutorial_door_b bo_tutorial_door_b 0
-
-
-spr_tutorial_flag_yellow 65536 0 tutorial_flag_yellow 0 0
-
-
-spr_tutorial_flag_red 65536 0 tutorial_flag_red 0 0
-
-
-spr_tutorial_flag_blue 65536 0 tutorial_flag_blue 0 0
-
-
 spr_interior_prison_a 0 0 interior_prison_a bo_interior_prison_a 0
 
 
@@ -464,11 +437,11 @@ spr_archery_butt_a 0 0 archery_butt bo_archery_butt 1
 
 
 spr_archery_target_with_hit_a 0 0 arena_archery_target_a bo_arena_archery_target_a 1
--42.000000  24 2071 1 1224979098644774912 1850 2 2 1224979098644774912 1700 1 1224979098644774913 1710 2 3 1224979098644774913 710 3 1224979098644774914 3 2 716 3 4 2 1 730 2 4 0 729 2 2 0 730 2 2 0 731 2 2 0 710 3 1224979098644774915 4 2 2133 2 1224979098644774916 43 2106 2 1224979098644774916 1224979098644774915 2107 2 1224979098644774916 1299 2108 2 1224979098644774916 4300 4 0 2147483678 2 1224979098644774916 0 2133 2 1224979098644774916 0 3 0 2108 2 1224979098644774914 91 2133 2 144115188075856131 1224979098644774916 2133 2 72057594037927996 1224979098644774916 2133 2 72057594037927997 1224979098644774914 1106 1 216172782113783920 
+-42.000000  23 2071 1 1224979098644774912 1850 2 2 1224979098644774912 1700 1 1224979098644774913 1710 2 3 1224979098644774913 710 3 1224979098644774914 3 2 716 3 4 2 1 730 2 4 0 729 2 2 0 730 2 2 0 731 2 2 0 710 3 1224979098644774915 4 2 2133 2 1224979098644774916 43 2106 2 1224979098644774916 1224979098644774915 2107 2 1224979098644774916 1299 2108 2 1224979098644774916 4300 4 0 2147483678 2 1224979098644774916 0 2133 2 1224979098644774916 0 3 0 2108 2 1224979098644774914 91 2133 2 72057594037927996 1224979098644774916 2133 2 72057594037927997 1224979098644774914 1106 1 216172782113783920 
 
 
 spr_dummy_a 98304 0 arena_archery_target_b bo_arena_archery_target_b 2
--43.000000  13 2071 1 1224979098644774912 1851 2 1 1224979098644774912 1700 1 1224979098644774913 1710 2 2 1224979098644774913 2133 2 1224979098644774914 80 4 0 713 2 2 1 2107 2 1224979098644774914 -1 3 0 723 2 1 1224979098644774914 1860 3 1224979098644774912 1 70 2105 2 144115188075856129 1 600 1 1152921504606847125 
+-43.000000  12 2071 1 1224979098644774912 1851 2 1 1224979098644774912 1700 1 1224979098644774913 1710 2 2 1224979098644774913 2133 2 1224979098644774914 80 4 0 713 2 2 1 2107 2 1224979098644774914 -1 3 0 723 2 1 1224979098644774914 1860 3 1224979098644774912 1 70 600 1 1152921504606847125 
 -42.000000  17 2071 1 1224979098644774912 2072 1 1224979098644774913 2133 2 72057594037927996 1224979098644774913 2108 2 1224979098644774913 8 1850 2 2 1224979098644774912 1700 1 1224979098644774914 1710 2 3 1224979098644774914 4 0 713 2 3 2 2107 2 1224979098644774913 -1 3 0 723 2 2 1224979098644774913 1106 1 216172782113783919 1860 3 1224979098644774912 2 30 600 1 1152921504606847124 1969 3 1008806316530991133 1 3 1969 3 1008806316530991134 1 10 
 
 
@@ -520,6 +493,48 @@ spr_castle_h_house_c 0 0 castle_h_house_c bo_castle_h_house_b 0
 spr_castle_h_battlement_barrier 0 0 castle_h_battlement_barrier bo_castle_h_battlement_barrier 0
 
 
+spr_castle_h_battlement_a_E 0 0 castle_h_battlement_a 0 0
+
+
+spr_castle_h_battlement_b_E 0 0 castle_h_battlement_b 0 0
+
+
+spr_castle_h_battlement_a2_E 0 0 castle_h_battlement_a2 0 0
+
+
+spr_castle_h_battlement_b2_E 0 0 castle_h_battlement_b2 0 0
+
+
+spr_castle_h_corner_a_E 0 0 castle_h_corner_a 0 0
+
+
+spr_castle_h_stairs_a_E 0 0 castle_h_stairs_a 0 0
+
+
+spr_castle_h_stairs_b_E 0 0 castle_h_stairs_b 0 0
+
+
+spr_castle_h_gatehouse_a_E 0 0 castle_h_gatehouse_a 0 0
+
+
+spr_castle_h_keep_a_E 0 0 castle_h_keep_a 0 0
+
+
+spr_castle_h_keep_b_E 0 0 castle_h_keep_b 0 0
+
+
+spr_castle_h_house_a_E 0 0 castle_h_house_a 0 0
+
+
+spr_castle_h_house_b_E 0 0 castle_h_house_b 0 0
+
+
+spr_castle_h_house_c_E 0 0 castle_h_house_c 0 0
+
+
+spr_castle_h_battlement_barrier_E 0 0 castle_h_battlement_barrier 0 0
+
+
 spr_castle_f_keep_a 0 0 castle_f_keep_a bo_castle_f_keep_a 0
 
 
@@ -559,39 +574,60 @@ spr_castle_f_wall_way_b 0 0 castle_f_wall_way_b bo_castle_f_wall_way_b 0
 spr_castle_f_gatehouse_a 0 0 castle_f_gatehouse_a bo_castle_f_gatehouse_a 0
 
 
-spr_mosque_a 0 0 mosque_a bo_mosque_a 0
+spr_castle_f_keep_a_E 0 0 castle_f_keep_a 0 0
+
+
+spr_castle_f_battlement_a_E 0 0 castle_f_battlement_a 0 0
+
+
+spr_castle_f_battlement_a_destroyed_E 0 0 castle_f_battlement_a_destroyed 0 0
+
+
+spr_castle_f_battlement_b_E 0 0 castle_f_battlement_b 0 0
+
+
+spr_castle_f_battlement_corner_a_E 0 0 castle_f_battlement_corner_a 0 0
+
+
+spr_castle_f_battlement_corner_b_E 0 0 castle_f_battlement_corner_b 0 0
+
+
+spr_castle_f_stairs_a_E 0 0 castle_f_stairs_a 0 0
+
+
+spr_castle_f_tower_a_E 0 0 castle_f_tower_a 0 0
+
+
+spr_castle_f_wall_stairs_a_E 0 0 castle_f_wall_stairs_a 0 0
+
+
+spr_castle_f_wall_stairs_b_E 0 0 castle_f_wall_stairs_b 0 0
+
+
+spr_castle_f_wall_way_a_E 0 0 castle_f_wall_way_a 0 0
+
+
+spr_castle_f_wall_way_b_E 0 0 castle_f_wall_way_b 0 0
+
+
+spr_castle_f_gatehouse_a_E 0 0 castle_f_gatehouse_a 0 0
 
 
 spr_stone_minaret_a 0 0 stone_minaret_a bo_stone_minaret_a 0
 
 
-spr_stone_house_a 0 0 stone_house_a bo_stone_house_a 0
-
-
-spr_stone_house_b 0 0 stone_house_b bo_stone_house_b 0
-
-
-spr_stone_house_c 0 0 stone_house_c bo_stone_house_c 0
-
-
-spr_stone_house_d 0 0 stone_house_d bo_stone_house_d 0
-
-
-spr_stone_house_e 0 0 stone_house_e bo_stone_house_e 0
-
-
-spr_stone_house_f 0 0 stone_house_f bo_stone_house_f 0
+spr_stone_minaret_a_E 0 0 stone_minaret_a 0 0
 
 
 spr_banner_pole 0 0 banner_pole bo_banner_pole 0
 
 
 spr_custom_banner_01 0 0 custom_banner_01 0 1
--40.000000  6 521 3 1224979098644774912 144115188075855982 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270495 1224979098644774913 3 0 
+-40.000000  6 521 3 1224979098644774912 144115188075855980 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270495 1224979098644774913 3 0 
 
 
 spr_custom_banner_02 0 0 custom_banner_02 0 1
--40.000000  6 521 3 1224979098644774912 144115188075855982 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270495 1224979098644774913 3 0 
+-40.000000  6 521 3 1224979098644774912 144115188075855980 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 1729382256910270495 1224979098644774913 3 0 
 
 
 spr_banner_a 0 0 banner_a01 0 0
@@ -876,9 +912,6 @@ spr_bowl_wood 0 0 bowl_wood 0 0
 spr_chandelier_table 0 0 chandelier_table 0 0
 
 
-spr_chandelier_tavern 0 0 chandelier_tavern 0 0
-
-
 spr_chest_gothic 0 0 chest_gothic bochest_gothic 0
 
 
@@ -1077,19 +1110,19 @@ spr_battlement_a 0 0 battlement_a bo_battlement_a 0
 spr_battlement_a_destroyed 0 0 battlement_a_destroyed bo_battlement_a_destroyed 0
 
 
+spr_battlement_a_E 0 0 battlement_a 0 0
+
+
+spr_battlement_a_destroyed_E 0 0 battlement_a_destroyed 0 0
+
+
 spr_round_tower_a 0 0 round_tower_a bo_round_tower_a 0
 
 
 spr_small_round_tower_a 0 0 small_round_tower_a bo_small_round_tower_a 0
 
 
-spr_small_round_tower_roof_a 0 0 small_round_tower_roof_a bo_small_round_tower_roof_a 0
-
-
 spr_square_keep_a 0 0 square_keep_a bo_square_keep_a 0
-
-
-spr_square_tower_roof_a 0 0 square_tower_roof_a 0 0
 
 
 spr_gate_house_a 0 0 gate_house_a bo_gate_house_a 0
@@ -1099,9 +1132,6 @@ spr_gate_house_b 0 0 gate_house_b bo_gate_house_b 0
 
 
 spr_small_wall_a 0 0 small_wall_a bo_small_wall_a 0
-
-
-spr_small_wall_b 0 0 small_wall_b bo_small_wall_b 0
 
 
 spr_small_wall_c 0 0 small_wall_c bo_small_wall_c 0
@@ -1164,7 +1194,52 @@ spr_town_house_p 0 0 town_house_p bo_town_house_p 0
 spr_town_house_q 0 0 town_house_q bo_town_house_q 0
 
 
-spr_passage_house_a 0 0 passage_house_a bo_passage_house_a 0
+spr_town_house_a_E 0 0 town_house_a 0 0
+
+
+spr_town_house_b_E 0 0 town_house_b 0 0
+
+
+spr_town_house_c_E 0 0 town_house_c 0 0
+
+
+spr_town_house_d_E 0 0 town_house_d 0 0
+
+
+spr_town_house_e_E 0 0 town_house_e 0 0
+
+
+spr_town_house_f_E 0 0 town_house_f 0 0
+
+
+spr_town_house_g_E 0 0 town_house_g 0 0
+
+
+spr_town_house_h_E 0 0 town_house_h 0 0
+
+
+spr_town_house_i_E 0 0 town_house_i 0 0
+
+
+spr_town_house_j_E 0 0 town_house_j 0 0
+
+
+spr_town_house_l_E 0 0 town_house_l 0 0
+
+
+spr_town_house_m_E 0 0 town_house_m 0 0
+
+
+spr_town_house_n_E 0 0 town_house_n 0 0
+
+
+spr_town_house_o_E 0 0 town_house_o 0 0
+
+
+spr_town_house_p_E 0 0 town_house_p 0 0
+
+
+spr_town_house_q_E 0 0 town_house_q 0 0
 
 
 spr_passage_house_b 0 0 passage_house_b bo_passage_house_b 0
@@ -1173,19 +1248,22 @@ spr_passage_house_b 0 0 passage_house_b bo_passage_house_b 0
 spr_passage_house_c 0 0 passage_house_c bo_passage_house_c 0
 
 
+spr_passage_house_b_E 0 0 passage_house_b 0 0
+
+
+spr_passage_house_c_E 0 0 passage_house_c 0 0
+
+
 spr_passage_house_c_door 0 0 passage_house_c_door bo_passage_house_c_door 0
 
 
-spr_house_extension_a 0 0 house_extension_a bo_house_extension_a 0
-
-
-spr_house_extension_b 0 0 house_extension_b bo_house_extension_b 0
+spr_passage_house_c_door_E 0 0 passage_house_c_door 0 0
 
 
 spr_house_extension_c 0 0 house_extension_c bo_house_extension_a 0
 
 
-spr_house_extension_d 0 0 house_extension_d bo_house_extension_d 0
+spr_house_extension_c_E 0 0 house_extension_c 0 0
 
 
 spr_house_roof_door 0 0 house_roof_door bo_house_roof_door 0
@@ -1221,7 +1299,28 @@ spr_town_house_y 0 0 town_house_y bo_town_house_y 0
 spr_town_house_z 0 0 town_house_z bo_town_house_z 0
 
 
-spr_town_house_za 0 0 town_house_za bo_town_house_za 0
+spr_town_house_r_E 0 0 town_house_r 0 0
+
+
+spr_town_house_s_E 0 0 town_house_s 0 0
+
+
+spr_town_house_t_E 0 0 town_house_t 0 0
+
+
+spr_town_house_u_E 0 0 town_house_u 0 0
+
+
+spr_town_house_v_E 0 0 town_house_v 0 0
+
+
+spr_town_house_w_E 0 0 town_house_w 0 0
+
+
+spr_town_house_y_E 0 0 town_house_y 0 0
+
+
+spr_town_house_z_E 0 0 town_house_z 0 0
 
 
 spr_windmill 0 0 windmill bo_windmill 0
@@ -1236,16 +1335,7 @@ spr_windmill_fan 0 0 windmill_fan bo_windmill_fan 0
 spr_earth_wall_a 0 0 earth_wall_a bo_earth_wall_a 0
 
 
-spr_earth_wall_a2 0 0 earth_wall_a2 bo_earth_wall_a2 0
-
-
-spr_earth_wall_b 0 0 earth_wall_b bo_earth_wall_b 0
-
-
-spr_earth_wall_b2 0 0 earth_wall_b2 bo_earth_wall_b2 0
-
-
-spr_earth_stairs_a 0 0 earth_stairs_a bo_earth_stairs_a 0
+spr_earth_wall_a_E 0 0 earth_wall_a 0 0
 
 
 spr_earth_stairs_b 0 0 earth_stairs_b bo_earth_stairs_b 0
@@ -1275,25 +1365,37 @@ spr_earth_house_c 0 0 earth_house_c bo_earth_house_c 0
 spr_earth_house_d 0 0 earth_house_d bo_earth_house_d 0
 
 
-spr_village_steppe_a 0 0 village_steppe_a bo_village_steppe_a 0
+spr_earth_stairs_b_E 0 0 earth_stairs_b 0 0
 
 
-spr_village_steppe_b 0 0 village_steppe_b bo_village_steppe_b 0
+spr_earth_tower_small_a_E 0 0 earth_tower_small_a 0 0
 
 
-spr_village_steppe_c 0 0 village_steppe_c bo_village_steppe_c 0
+spr_earth_gate_house_a_E 0 0 earth_gate_house_a 0 0
 
 
-spr_village_steppe_d 0 0 village_steppe_d bo_village_steppe_d 0
+spr_earth_gate_a_E 0 0 earth_gate_a 0 0
 
 
-spr_village_steppe_e 0 0 village_steppe_e bo_village_steppe_e 0
+spr_earth_square_keep_a_E 0 0 earth_square_keep_a 0 0
 
 
-spr_village_steppe_f 0 0 village_steppe_f bo_village_steppe_f 0
+spr_earth_house_a_E 0 0 earth_house_a 0 0
+
+
+spr_earth_house_b_E 0 0 earth_house_b 0 0
+
+
+spr_earth_house_c_E 0 0 earth_house_c 0 0
+
+
+spr_earth_house_d_E 0 0 earth_house_d 0 0
 
 
 spr_town_house_aa 0 0 town_house_aa bo_town_house_aa 0
+
+
+spr_town_house_aa_E 0 0 town_house_aa 0 0
 
 
 spr_snowy_house_a 0 0 snowy_house_a bo_snowy_house_a 0
@@ -1332,25 +1434,10 @@ spr_snowy_heap_a 0 0 snowy_heap_a bo_snowy_heap_a 0
 spr_snowy_trunks_a 0 0 snowy_trunks_a bo_snowy_trunks_a 0
 
 
-spr_square_keep_b 0 0 square_keep_b bo_square_keep_b 0
-
-
-spr_square_keep_c 0 0 square_keep_c bo_square_keep_c 0
-
-
-spr_square_keep_d 0 0 square_keep_d bo_square_keep_d 0
-
-
-spr_square_keep_e 0 0 square_keep_e bo_square_keep_e 0
-
-
-spr_square_keep_f 0 0 square_keep_f bo_square_keep_f 0
-
-
-spr_square_extension_a 0 0 square_extension_a bo_square_extension_a 0
-
-
 spr_square_stairs_a 0 0 square_stairs_a bo_square_stairs_a 0
+
+
+spr_square_stairs_a_E 0 0 square_stairs_a 0 0
 
 
 spr_castle_courtyard_house_a 0 0 castle_courtyard_house_a bo_castle_courtyard_house_a 0
@@ -1365,85 +1452,61 @@ spr_castle_courtyard_house_c 0 0 castle_courtyard_house_c bo_castle_courtyard_ho
 spr_castle_courtyard_a 0 0 castle_courtyard_a bo_castle_courtyard_a 0
 
 
+spr_castle_courtyard_house_a_E 0 0 castle_courtyard_house_a 0 0
+
+
+spr_castle_courtyard_house_b_E 0 0 castle_courtyard_house_b 0 0
+
+
+spr_castle_courtyard_house_c_E 0 0 castle_courtyard_house_c 0 0
+
+
+spr_castle_courtyard_a_E 0 0 castle_courtyard_a 0 0
+
+
 spr_gatehouse_b 0 0 gatehouse_b bo_gatehouse_b 0
 
 
 spr_castle_gaillard 0 0 castle_gaillard bo_castle_gaillard 0
 
 
-spr_castle_e_battlement_a 0 0 castle_e_battlement_a bo_castle_e_battlement_a 0
+spr_gatehouse_b_E 0 0 gatehouse_b 0 0
 
 
-spr_castle_e_battlement_a_destroyed 0 0 castle_e_battlement_a_destroyed bo_castle_e_battlement_a_destroyed 0
-
-
-spr_castle_e_corner 0 0 castle_e_corner bo_castle_e_corner 0
-
-
-spr_castle_e_stairs_a 0 0 castle_e_stairs_a bo_castle_e_stairs_a 0
+spr_castle_gaillard_E 0 0 castle_gaillard 0 0
 
 
 spr_castle_e_tower 0 0 castle_e_tower bo_castle_e_tower 0
 
 
-spr_castle_e_gate_house_a 0 0 castle_e_gate_house_a bo_castle_e_gate_house_a 0
-
-
-spr_castle_e_keep_a 0 0 castle_e_keep_a bo_castle_e_keep_a 0
+spr_castle_e_tower_E 0 0 castle_e_tower 0 0
 
 
 spr_stand_thatched 0 0 stand_thatched bo_stand_thatched 0
 
 
-spr_stand_cloth 0 0 stand_cloth bo_stand_cloth 0
-
-
-spr_castle_e_house_a 0 0 castle_e_house_a bo_castle_e_house_a 0
-
-
-spr_castle_e_house_b 0 0 castle_e_house_b bo_castle_e_house_b 0
-
-
-spr_castle_e_corner_b 0 0 castle_e_corner_b bo_castle_e_corner_b 0
-
-
-spr_arena_block_a 0 0 arena_block_a bo_arena_block_ab 0
-
-
-spr_arena_block_b 0 0 arena_block_b bo_arena_block_ab 0
-
-
 spr_arena_block_c 0 0 arena_block_c bo_arena_block_c 0
 
 
-spr_arena_block_d 0 0 arena_block_d bo_arena_block_def 0
-
-
-spr_arena_block_e 0 0 arena_block_e bo_arena_block_def 0
+spr_arena_block_c_E 0 0 arena_block_c 0 0
 
 
 spr_arena_block_f 0 0 arena_block_f bo_arena_block_def 0
 
 
-spr_arena_block_g 0 0 arena_block_g bo_arena_block_ghi 0
-
-
-spr_arena_block_h 0 0 arena_block_h bo_arena_block_ghi 0
+spr_arena_block_f_E 0 0 arena_block_f 0 0
 
 
 spr_arena_block_i 0 0 arena_block_i bo_arena_block_ghi 0
 
 
-spr_arena_block_j_awning 0 0 arena_block_j_awning bo_arena_block_j_awning 0
+spr_arena_block_i_E 0 0 arena_block_i 0 0
 
 
 spr_arena_palisade_a 0 0 arena_palisade_a bo_arena_palisade_a 0
 
 
-spr_arena_wall_a 0 0 arena_wall_a bo_arena_wall_ab 0
-
-
-spr_arena_wall_b 0 0 arena_wall_b bo_arena_wall_ab 0
+spr_arena_palisade_a_E 0 0 arena_palisade_a 0 0
 
 
 spr_arena_barrier_a 0 0 arena_barrier_a bo_arena_barrier_a 0
@@ -1452,16 +1515,16 @@ spr_arena_barrier_a 0 0 arena_barrier_a bo_arena_barrier_a 0
 spr_arena_barrier_b 0 0 arena_barrier_b bo_arena_barrier_bc 0
 
 
-spr_arena_barrier_c 0 0 arena_barrier_c bo_arena_barrier_bc 0
+spr_arena_barrier_a_E 0 0 arena_barrier_a 0 0
 
 
-spr_arena_tower_a 0 0 arena_tower_a bo_arena_tower_abc 0
-
-
-spr_arena_tower_b 0 0 arena_tower_b bo_arena_tower_abc 0
+spr_arena_barrier_b_E 0 0 arena_barrier_b 0 0
 
 
 spr_arena_tower_c 0 0 arena_tower_c bo_arena_tower_abc 0
+
+
+spr_arena_tower_c_E 0 0 arena_tower_c 0 0
 
 
 spr_arena_spectator_a 0 0 arena_spectator_a 0 0
@@ -1480,21 +1543,6 @@ spr_arena_spectator_sitting_b 0 0 arena_spectator_sitting_b 0 0
 
 
 spr_arena_spectator_sitting_c 0 0 arena_spectator_sitting_c 0 0
-
-
-spr_courtyard_gate_a 0 0 courtyard_entry_a bo_courtyard_entry_a 0
-
-
-spr_courtyard_gate_b 0 0 courtyard_entry_b bo_courtyard_entry_b 0
-
-
-spr_courtyard_gate_c 0 0 courtyard_entry_c bo_courtyard_entry_c 0
-
-
-spr_courtyard_gate_snowy 0 0 courtyard_entry_snowy bo_courtyard_entry_a 0
-
-
-spr_castle_tower_a 0 0 castle_tower_a bo_castle_tower_a 0
 
 
 spr_castle_battlement_a 0 0 castle_battlement_a bo_castle_battlement_a 0
@@ -1548,9 +1596,6 @@ spr_spike_a 0 0 spike_a bo_spike_a 0
 spr_belfry_a 65536 0 belfry_a bo_belfry_a 0
 
 
-spr_belfry_old 0 0 belfry_a bo_belfry_a 0
-
-
 spr_belfry_platform_a 65536 0 belfry_platform_a bo_belfry_platform_a 0
 
 
@@ -1567,9 +1612,6 @@ spr_belfry_wheel_old 0 0 belfry_wheel 0 0
 
 
 spr_mangonel 0 0 mangonel bo_mangonel 0
-
-
-spr_trebuchet_old 0 0 trebuchet_old bo_trebuchet_old 0
 
 
 spr_trebuchet_new 0 0 trebuchet_new bo_trebuchet_old 0
@@ -1617,6 +1659,45 @@ spr_crude_fence_small 0 0 crude_fence_small bo_crude_fence_small 0
 spr_crude_fence_small_b 0 0 crude_fence_small_b bo_crude_fence_small_b 0
 
 
+spr_village_house_a_E 0 0 village_house_a 0 0
+
+
+spr_village_house_b_E 0 0 village_house_b 0 0
+
+
+spr_village_house_c_E 0 0 village_house_c 0 0
+
+
+spr_village_house_d_E 0 0 village_house_d 0 0
+
+
+spr_farm_house_a_E 0 0 farm_house_a 0 0
+
+
+spr_farm_house_b_E 0 0 farm_house_b 0 0
+
+
+spr_farm_house_c_E 0 0 farm_house_c 0 0
+
+
+spr_mountain_house_a_E 0 0 mountain_house_a 0 0
+
+
+spr_mountain_house_b_E 0 0 mountain_house_b 0 0
+
+
+spr_village_hut_a_E 0 0 village_hut_a 0 0
+
+
+spr_crude_fence_E 0 0 fence 0 0
+
+
+spr_crude_fence_small_E 0 0 crude_fence_small 0 0
+
+
+spr_crude_fence_small_b_E 0 0 crude_fence_small_b 0 0
+
+
 spr_ramp_12m 0 0 ramp_12m bo_ramp_12m 0
 
 
@@ -1630,6 +1711,9 @@ spr_siege_ladder_14m 0 0 siege_leadder_14m bo_siege_leadder_14m 0
 
 
 spr_portcullis 0 0 portcullis_a bo_portcullis_a 0
+
+
+spr_portcullis_E 0 0 portcullis_a 0 0
 
 
 spr_bed_a 0 0 bed_a bo_bed_a 0
@@ -1722,6 +1806,12 @@ spr_bridge_modular_a 0 0 bridge_modular_a bo_bridge_modular_a 0
 spr_bridge_modular_b 0 0 bridge_modular_b bo_bridge_modular_b 0
 
 
+spr_bridge_modular_a_E 0 0 bridge_modular_a 0 0
+
+
+spr_bridge_modular_b_E 0 0 bridge_modular_b 0 0
+
+
 spr_stone_step_a 0 0 floor_stone_a bo_floor_stone_a 0
 
 
@@ -1735,12 +1825,6 @@ spr_stone_heap 0 0 stone_heap bo_stone_heap 0
 
 
 spr_stone_heap_b 0 0 stone_heap_b bo_stone_heap 0
-
-
-spr_panel_door_a 0 0 house_door_a bo_house_door_a 0
-
-
-spr_panel_door_b 0 0 house_door_b bo_house_door_a 0
 
 
 spr_smoke_stain 0 0 soot_a 0 0
@@ -1992,9 +2076,6 @@ spr_obstacle_fallen_tree_b 0 0 destroy_tree_b bo_destroy_tree_b 0
 
 
 spr_invisible_pillar 0 0 invisible_pillar bo_invisible_pillar 0
-
-
-spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a 0
 
 
 spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a_tld 0
@@ -2301,7 +2382,7 @@ spr_evil_gondor_gate_tower 0 0 mt_gate_tower_evil bo_mt_tower 0
 
 
 spr_evil_gondor_gate_house 0 0 mt_gate_house_evil bo_mt_gate_house 1
--40.000000  5 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 5091469 
+-40.000000  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 5091469 3 0 
 
 
 spr_gondor_mt_bridge_modular_a 0 0 mt_bridge_modular_a bo_bridge_modular_a 0
@@ -2596,6 +2677,24 @@ spr_rohan_long_stair 0 0 rohan_long_stair bo_rohan_long_stair 0
 spr_rohan_wall 0 0 rohan_wall bo_rohan_wall 0
 
 
+spr_rohan_gate_E 0 0 rohan_gate 0 0
+
+
+spr_rohan_tower2_E 0 0 rohan_tower2 0 0
+
+
+spr_rohan_tower3_E 0 0 rohan_tower3 0 0
+
+
+spr_rohan_wall_stair_E 0 0 rohan_wall_stair 0 0
+
+
+spr_rohan_long_stair_E 0 0 rohan_long_stair 0 0
+
+
+spr_rohan_wall_E 0 0 rohan_wall 0 0
+
+
 spr_HD 0 0 HD bo_HD 0
 
 
@@ -2616,9 +2715,9 @@ spr_Village_fire_big_no_smoke 0 0 0 0 1
 
 
 spr_gate_destructible 32768 500 gate_tld bo_gate_tld 3
--40.000000  10 2133 2 144115188075856329 0 1780 2 1 39 1970 1 1 1972 1 360287970189640522 2133 2 144115188075856330 72057594037927936 1736 2 144115188075856330 1 1771 2 144115188075856330 6 1790 3 6 10 0 1790 3 6 10 11 1791 3 6 10 1 
--43.000000  18 2071 1 1224979098644774912 1851 2 1 1224979098644774912 723 2 1 85 1860 3 1224979098644774912 1 400 600 1 1152921504606847125 1106 1 1585267068834414592 2133 2 144115188075856329 1 1 2 936748722493063357 144115188075856330 1810 2 1224979098644774913 1080863910568920463 4 0 32 2 1224979098644774913 0 6 3 1224979098644774914 0 1224979098644774913 1811 3 1224979098644774912 1080863910568920463 1224979098644774914 1851 2 1 1224979098644774912 722 2 1 -10000 1855 2 1224979098644774912 1 3 0 3 0 
--42.000000  5 600 1 1152921504606847124 1969 3 1008806316530991133 1 3 1969 3 1008806316530991134 1 10 1780 2 1 39 1711 2 144115188075856330 1 
+-40.000000  10 2133 2 144115188075856265 0 1780 2 1 39 1970 1 1 1972 1 360287970189640521 2133 2 144115188075856114 72057594037927936 1736 2 144115188075856114 1 1771 2 144115188075856114 6 1790 3 6 10 0 1790 3 6 10 11 1791 3 6 10 1 
+-43.000000  18 2071 1 1224979098644774912 1851 2 1 1224979098644774912 723 2 1 85 1860 3 1224979098644774912 1 400 600 1 1152921504606847125 1106 1 1585267068834414592 2133 2 144115188075856265 1 1 2 936748722493063357 144115188075856114 1810 2 1224979098644774913 1080863910568920511 4 0 32 2 1224979098644774913 0 6 3 1224979098644774914 0 1224979098644774913 1811 3 1224979098644774912 1080863910568920511 1224979098644774914 1851 2 1 1224979098644774912 722 2 1 -10000 1855 2 1224979098644774912 1 3 0 3 0 
+-42.000000  5 600 1 1152921504606847124 1969 3 1008806316530991133 1 3 1969 3 1008806316530991134 1 10 1780 2 1 39 1711 2 144115188075856114 1 
 
 
 spr_HD_gate_destructible 32768 1000 HD_gate_door bo_HD_gate_door 2
@@ -2966,15 +3065,15 @@ spr_minas_tirith_copy 0 0 minas_tirith_copy 0 0
 
 
 spr_troop_guard 16384 0 cabbage_b 0 1
--40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856331 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856017 250 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
+-40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856283 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856015 250 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
 
 
 spr_troop_prison_guard 16384 0 cabbage_b 0 1
--40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856331 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856017 251 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
+-40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856283 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856015 251 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
 
 
 spr_troop_castle_guard 16384 0 cabbage_b 0 1
--40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856331 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856017 252 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
+-40.000000  8 2071 1 1224979098644774912 2147483678 2 144115188075856283 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856015 252 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 1801439850948198697 
 
 
 spr_ZT_mb_chestnut 0 0 chestnut bosimple_tree 0
@@ -3497,6 +3596,39 @@ spr_rohan_stonebase 0 0 rohan_stonebase bo_rohan_stonebase 0
 spr_rohan_fountain 0 0 edoras_fountain bo_edoras_fountain 0
 
 
+spr_rohan_birdhouse_E 0 0 rohan_birdhouse 0 0
+
+
+spr_rohan_platform_E 0 0 rohan_platform 0 0
+
+
+spr_rohan_meduseld_E 0 0 rohan_meduseld 0 0
+
+
+spr_rohan_house1_E 0 0 rohan_house1 0 0
+
+
+spr_rohan_house2_E 0 0 rohan_house2 0 0
+
+
+spr_rohan_house3_E 0 0 rohan_house3 0 0
+
+
+spr_rohan_house4_E 0 0 rohan_house4 0 0
+
+
+spr_rohan_house5_E 0 0 rohan_house5 0 0
+
+
+spr_rohan_stables_E 0 0 rohan_stables 0 0
+
+
+spr_rohan_watchtower_E 0 0 rohan_watchtower 0 0
+
+
+spr_rohan_stonebase_E 0 0 rohan_stonebase 0 0
+
+
 spr_rohan_palisade 0 0 rohan_palisade_a bo_rohan_palisade_a 0
 
 
@@ -3507,6 +3639,18 @@ spr_rohan_house6 0 0 rohan_house6 bo_house6 0
 
 
 spr_rohan_house7 0 0 rohan_house7 bo_house7 0
+
+
+spr_rohan_palisade_E 0 0 rohan_palisade_a 0 0
+
+
+spr_rohan_palisade_slope_E 0 0 rohan_palisade_b 0 0
+
+
+spr_rohan_house6_E 0 0 rohan_house6 0 0
+
+
+spr_rohan_house7_E 0 0 rohan_house7 0 0
 
 
 spr_spear_trap_1 0 0 spear_trap bo_spear_trap 0
@@ -4337,7 +4481,7 @@ spr_gon_upper_apt_E 0 0 gon_upper_apt_a 0 0
 
 
 spr_horse_player_horse 16384 0 mearh 0 1
--40.000000  8 31 2 144115188075856040 1 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1541 3 1224979098644774913 360287970189639680 8 32 2 1224979098644774913 1 1970 1 1 1973 2 1224979098644774913 0 1741 2 72057594037927936 1801439850948198806 
+-40.000000  8 31 2 144115188075856039 1 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1541 3 1224979098644774913 360287970189639680 8 32 2 1224979098644774913 1 1970 1 1 1973 2 1224979098644774913 0 1741 2 72057594037927936 1801439850948198806 
 
 
 spr_mt_tirith_gate 0 0 tirith_gate bo_tirith_gate 0

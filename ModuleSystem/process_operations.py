@@ -456,6 +456,13 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     if (local_var_uses[i] == 0 and not(local_vars[i].startswith("unused"))):
       print "WARNING: Local variable never used: " + local_vars[i]
     i = i + 1
+  if current_depth != 0:
+    if current_depth > 0:
+      missing = " missing"
+    else:
+      missing = " extra"
+      current_depth *= -1
+    print "WARNING: " + `current_depth` + missing + " try_end: " + str(statement_name)
 
 def compile_global_vars(statement_block,variable_list, variable_uses):
   for statement in statement_block:
@@ -469,3 +476,4 @@ def save_simple_triggers(ofile,triggers,variable_list, variable_uses,tag_uses,qu
     save_statement_block(ofile,0,1,trigger[1]  , variable_list, variable_uses,tag_uses,quick_strings)
     ofile.write("\n")
   ofile.write("\n")
+  

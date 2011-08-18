@@ -220,68 +220,10 @@ game_menus = [
 ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
-    "You approach a field where the locals are training with weapons. You can practice here to improve your combat skills.",
+    "TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
     "none",
-    [(set_passage_menu, "mnu_tutorial"),
-     (try_begin),(eq, "$tutorial_1_finished", 1),(str_store_string, s1, "str_finished"),
-     (else_try),                                 (str_store_string, s1, "str_empty_string"),
-     (try_end),
-     (try_begin),(eq, "$tutorial_2_finished", 1),(str_store_string, s2, "str_finished"),
-     (else_try),                                 (str_store_string, s2, "str_empty_string"),
-     (try_end),
-     (try_begin),(eq, "$tutorial_3_finished", 1),(str_store_string, s3, "str_finished"),
-     (else_try),                                 (str_store_string, s3, "str_empty_string"),
-     (try_end),
-     (try_begin),(eq, "$tutorial_4_finished", 1),(str_store_string, s4, "str_finished"),
-     (else_try),                                 (str_store_string, s4, "str_empty_string"),
-     (try_end),
-     (try_begin),(eq, "$tutorial_5_finished", 1),(str_store_string, s5, "str_finished"),
-     (else_try),                                 (str_store_string, s5, "str_empty_string"),
-     (try_end),
-    ],
-    [ ("tutorial_1",[],"Tutorial #1: Basic movement and weapon selection. {s1}",[
-           (modify_visitors_at_site,"scn_tutorial_1"),(reset_visitors,0),
-           (set_jump_mission,"mt_tutorial_1"),
-           (jump_to_scene,"scn_tutorial_1"),(change_screen_mission),]),
-      ("tutorial_2",[],"Tutorial #2: Fighting with a shield. {s2}",[
-           (modify_visitors_at_site,"scn_tutorial_2"),(reset_visitors,0),
-           (set_visitor,1,"trp_tutorial_maceman"),
-           (set_visitor,2,"trp_tutorial_archer"),
-           (set_jump_mission,"mt_tutorial_2"),
-           (jump_to_scene,"scn_tutorial_2"),(change_screen_mission),]),
-      ("tutorial_3",[],"Tutorial #3: Fighting without a shield. {s3}",[
-           (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
-           (set_visitor,1,"trp_tutorial_maceman"),
-           (set_visitor,2,"trp_tutorial_swordsman"),
-           (set_jump_mission,"mt_tutorial_3"),
-           (jump_to_scene,"scn_tutorial_3"),(change_screen_mission),]),
-      ("tutorial_3b",[(eq,0,1)],"Tutorial 3 b",[
-	       (try_begin),
-              (ge, "$tutorial_3_state", 12),
-              (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
-              (set_visitor,1,"trp_tutorial_maceman"),
-              (set_visitor,2,"trp_tutorial_swordsman"),
-              (set_jump_mission,"mt_tutorial_3_2"),
-              (jump_to_scene,"scn_tutorial_3"),
-              (change_screen_mission),
-           (else_try),
-              (display_message,"str_door_locked",0xFFFFAAAA),
-           (try_end),], "next level"),
-      ("tutorial_4",[],"Tutorial #4: Riding a horse. {s4}",[
-           (modify_visitors_at_site,"scn_tutorial_4"),(reset_visitors,0),
-           (set_jump_mission,"mt_tutorial_4"),
-           (jump_to_scene,"scn_tutorial_4"),(change_screen_mission),]),
-      ("tutorial_5",[(eq,1,0)],"Tutorial #5: Commanding a band of soldiers. {s5}",[
-           (modify_visitors_at_site,"scn_tutorial_5"),(reset_visitors,0),
-           (set_visitor,0,"trp_player"),
-           (set_visitor,1,"trp_gondor_swordsmen"),
-           (set_visitor,2,"trp_gondor_swordsmen"),
-           (set_visitor,3,"trp_gondor_swordsmen"),
-           (set_visitor,4,"trp_gondor_swordsmen"),
-           (set_jump_mission,"mt_tutorial_5"),
-           (jump_to_scene,"scn_tutorial_5"),(change_screen_mission),]),
-      ("go_back_dot",[],"Go back.",[(change_screen_quit),]),
-    ]
+    [],
+    [("go_back_dot",[],"Go back.",[(change_screen_quit)])]
 ),
 # This needs to be the fifth window!!!  
 ("reports",0,
@@ -2092,8 +2034,7 @@ game_menus = [
 ("mvtest_faction_casualties",0,
    "{s1}",
    "none",
-   [
-      (try_begin),
+   [  (try_begin),
 	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
 	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
 	  (try_end),
@@ -2116,7 +2057,6 @@ game_menus = [
         (store_faction_of_party, ":center_faction", ":center_no"),
         (eq, ":center_faction", ":cur_kingdom"),
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
-        
         (party_get_slot, ":center_scouts", ":center_no", slot_center_spawn_scouts),
         (party_get_slot, ":center_raiders", ":center_no", slot_center_spawn_raiders),
         (party_get_slot, ":center_patrol", ":center_no", slot_center_spawn_patrol),
@@ -2230,8 +2170,7 @@ game_menus = [
 ("mvtest_town_wealth_report",0,
    "{s1}",
    "none",
-   [
-      (try_begin),
+   [  (try_begin),
 	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
 	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
 	  (try_end),
@@ -2282,8 +2221,7 @@ game_menus = [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege West Osgiliath.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_west_osgiliath", 0),
         (party_set_slot, "p_town_west_osgiliath", slot_center_is_besieged_by, ":king_party"),
@@ -2299,8 +2237,7 @@ game_menus = [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege Erech.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_erech", 0),
         (party_set_slot, "p_town_erech", slot_center_is_besieged_by, ":king_party"),
@@ -2316,8 +2253,7 @@ game_menus = [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege Pinnath Gelin.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_pinnath_gelin", 0),
         (party_set_slot, "p_town_pinnath_gelin", slot_center_is_besieged_by, ":king_party"),
@@ -2333,8 +2269,7 @@ game_menus = [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege Edhellond.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_edhellond", 0),
         (party_set_slot, "p_town_edhellond", slot_center_is_besieged_by, ":king_party"),
@@ -2350,8 +2285,7 @@ game_menus = [
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege Lossarnach.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_lossarnach", 0),
         (party_set_slot, "p_town_lossarnach", slot_center_is_besieged_by, ":king_party"),
@@ -2366,9 +2300,8 @@ game_menus = [
 	("order_siege_pelargir",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
-     ],"Order Gothmog to besiege Lossarnach.",
-      [
-        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+     ],"Order Gothmog to besiege Pelargir.",
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_detach, ":king_party"),
         (party_relocate_near_party, ":king_party", "p_town_pelargir", 0),
         (party_set_slot, "p_town_pelargir", slot_center_is_besieged_by, ":king_party"),
@@ -4327,10 +4260,10 @@ game_menus = [
 			  (else_try), 
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end), 
-              (store_div, ":rank_increase", "$battle_renown_value", 5), # MV: give some rank increase according to renown (should be small 1-10)
+              (store_div, ":rank_increase", "$battle_renown_value", 4), # MV: give some rank increase according to renown (should be small 1-10)
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
-			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
+			  (display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		  (try_end),
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
 #TLD end
@@ -6073,7 +6006,7 @@ game_menus = [
         (faction_get_slot, ":faction_leader", "$players_kingdom", slot_faction_leader),
         (str_store_troop_name, s9, ":faction_leader"),
         (try_begin),
-          (eq, "$player_has_homage", 0),
+#          (eq, "$player_has_homage", 0),
           (assign, reg8, 0),
           (try_begin),
             (party_slot_eq, "$g_encountered_party", spt_town),

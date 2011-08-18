@@ -1,4 +1,4 @@
-906
+908
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -388,6 +388,7 @@ qstr_You_were_grievously_ You_were_grievously_wounded_and_your_body_piled_with_t
 qstr_You_were_grievously_w You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort.
 qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured_and_dragged_to_{s2}.
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
+qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_{s7}_has_assumed_the {s7}_has_assumed_the_command_of_a_{s6}_host!
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
@@ -634,6 +635,7 @@ qstr_You_have_retreated_f You_have_retreated_from_the_fight.
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
 qstr_{s3}_witnesses_your_ {s3}_witnesses_your_victory_against_{s4}.
+qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
 qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}

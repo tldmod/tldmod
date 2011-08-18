@@ -267,7 +267,7 @@ itemsfile version 2
  itm_arrows Arrows Arrows 3  plain_arrow 0  plain_arrow_flying 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_gondor_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  gondor_arrow_flying 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 100 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
+ itm_gondor_arrows Gondor_Arrows Gondor_Arrows 3  gondor_arrow 0  gondor_arrow_flying 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 100 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
  itm_gondor_auxila_arrows Gondorian_Arrows Gondorian_Arrows 3  gondor_arrow 0  gondor_arrow_flying 2305843009213693952  gondor_quiver 3458764513820540928  65541 1342177280 100 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
@@ -279,10 +279,10 @@ itemsfile version 2
  itm_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  rohan_arrow1_flying 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 300 4398046520456 3.500000 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
- itm_harad_arrows Haradrim_Arrows Haradrim_Arrows 3  harad_arrow 0  harad_arrow_flying 2305843009213693952  harad_quiver 3458764513820540928  65541 1342177280 300 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 2 0
+ itm_harad_arrows Haradrim_Arrows Haradrim_Arrows 3  harad_arrow 0  harad_arrow_flying 2305843009213693952  harad_quiver 3458764513820540928  65541 1342177280 300 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
 0
 
- itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  corsair_arrow_flying 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 300 4398046520456 3.000000 100 0 0 0 0 0 0 0 91 29 2 0
+ itm_corsair_arrows Corsair_Arrows Corsair_Arrows 3  corsair_arrow 0  corsair_arrow_flying 2305843009213693952  corsair_quiver 3458764513820540928  65541 1342177280 300 4398046520456 3.000000 100 0 0 0 0 0 0 0 91 29 1 0
 0
 
  itm_ithilien_arrows Ithilien_Arrows Ithilien_Arrows 3  ilithien_arrow 0  ilithien_arrow_flying 2305843009213693952  ithilien_quiver 3458764513820540928  65541 1610612736 500 4398046520320 3.000000 100 0 0 0 0 0 0 0 91 29 3 0
@@ -294,10 +294,10 @@ itemsfile version 2
  itm_elven_arrows Elven_Arrows Elven_Arrows 3  white_elf_arrow 0  white_elf_arrow_flying 2305843009213693952  lothlorien_quiver 3458764513820540928  65541 2147483648 500 4398046520320 3.000000 100 0 0 0 0 0 0 0 91 29 260 0
 0
 
- itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 72 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
+ itm_orc_hook_arrow Orc_Hook_Arrows Orc_Hook_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  65541 1610612736 100 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 256 0
 0
 
- itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  isengard_arrow_flying 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 72 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 258 0
+ itm_isengard_arrow Isengard_Arrows Isengard_Arrows 3  isengard_arrow 0  isengard_arrow_flying 2305843009213693952  isengard_quiver 3458764513820540928  65541 1610612736 200 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 257 0
 0
 
  itm_pilgrim_disguise Pilgrim_Disguise Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 123731968 2.000000 100 0 14 8 0 0 0 0 0 0 0 0
@@ -434,7 +434,7 @@ itemsfile version 2
  itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 500 656522 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
 0
 
- itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 500 656522 1.250000 100 0 0 0 0 0 94 57 0 0 33 0
+ itm_uruk_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 500 656522 1.250000 100 0 0 0 0 0 94 57 0 0 25 0
 0
 
  itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  274792456 5905584128 1000 656384 1.500000 100 0 0 0 3 0 93 65 0 0 281 0
@@ -587,13 +587,13 @@ itemsfile version 2
  itm_riv_boots Rivendell_Boots Rivendell_Boots 1  rivendell_boots 0  536940302 0 1200 234881024 1.000000 100 0 0 23 0 0 0 0 0 0 0 0
 0
 
- itm_gon_footman Gondor_Mail_Shirt Gondor_Mail_Shirt 1  gondor_footman 0  16842765 0 800 704643072 13.000000 100 0 16 8 0 0 0 0 0 0 0 0
+ itm_gon_footman Gondor_Mail_Shirt Gondor_Mail_Shirt 1  gondor_footman 0  16842765 0 800 704643072 13.000000 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
  itm_gon_jerkin Gondor_Jerkin Gondor_Jerkin 1  gondor_jerkin 0  16842765 0 400 234881024 6.000000 100 0 10 4 0 0 0 0 0 0 0 0
 0
 
- itm_gon_regular Gondor_Heavy_Mail Gondor_Heavy_Mail 1  gondor_regular 0  16842765 0 1400 704643072 18.000000 100 0 23 8 0 0 0 0 0 0 0 0
+ itm_gon_regular Gondor_Heavy_Mail Gondor_Heavy_Mail 1  gondor_regular 0  16842765 0 1400 704643072 18.000000 100 0 33 8 0 0 0 0 0 0 0 0
 0
 
  itm_gon_bowman Gondor_Gambeson Gondor_Gambeson 1  gondor_bowman 0  553713677 0 800 123731968 12.000000 100 0 22 8 0 0 0 0 0 0 0 0
@@ -602,13 +602,13 @@ itemsfile version 2
  itm_gon_archer Gondor_Gambeson_with_Cloak Gondor_Gambeson_with_Cloak 1  gondor_archer 0  553713677 0 900 123731968 13.000000 100 0 24 9 0 0 0 0 0 0 0 0
 0
 
- itm_gon_noble_cloak Gondor_Noble's_Jerkin Gondor_Noble's_Jerkin 1  gondor_noble_cloak 0  16842765 0 900 234881024 8.000000 100 0 15 5 0 0 0 0 0 0 0 0
+ itm_gon_noble_cloak Gondor_Noble's_Jerkin Gondor_Noble's_Jerkin 1  gondor_noble_cloak 0  16842765 0 900 234881024 8.000000 100 0 18 5 0 0 0 0 0 0 0 0
 0
 
- itm_gon_squire Gondor_Mail_with_Cloak Gondor_Mail_with_Cloak 1  gondor_squire 0  16842765 0 1000 704643072 15.000000 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_gon_squire Gondor_Mail_with_Cloak Gondor_Mail_with_Cloak 1  gondor_squire 0  16842765 0 1000 704643072 15.000000 100 0 28 8 0 0 0 0 0 0 0 0
 0
 
- itm_gon_knight Gondor_Heavy_Mail_and_Cloak Gondor_Heavy_Mail_and_Cloak 1  gondor_knight 0  16842765 0 1500 704643072 20.000000 100 0 25 8 0 0 0 0 0 0 0 0
+ itm_gon_knight Gondor_Heavy_Mail_and_Cloak Gondor_Heavy_Mail_and_Cloak 1  gondor_knight 0  16842765 0 1500 704643072 20.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
  itm_gon_ranger_cloak Gondor_Ranger_Cloak Gondor_Ranger_Cloak 1  gondor_ranger_cloak 0  16842765 0 1000 234881024 8.000000 100 0 18 7 0 0 0 0 0 0 0 0
@@ -626,7 +626,7 @@ itemsfile version 2
  itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gon_tower_knight 0  16777229 0 5000 704643072 25.000000 100 0 45 15 0 0 0 0 0 0 0 0
 0
 
- itm_gon_leader_surcoat_cloak Gondor_Leader's_Surcoat Gondor_Leader's_Surcoat 1  gon_leader_surcoat_cloak 0  16842765 0 3000 704643072 22.000000 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_gon_leader_surcoat_cloak Gondor_Leader's_Surcoat Gondor_Leader's_Surcoat 1  gon_leader_surcoat_cloak 0  16842765 0 3000 704643072 22.000000 100 0 38 10 0 0 0 0 0 0 0 0
 0
 
  itm_gondor_ranger_hood Green_Hood Green_Hood 1  gondor_ranger_hood 0  1073807372 0 100 123731968 0.500000 100 13 0 0 0 0 0 0 0 0 0 0
@@ -767,22 +767,22 @@ itemsfile version 2
  itm_pinnath_warrior Pinnath_Gelin_Warrior_Armor Pinnath_Gelin_Warrior_Armor 1  pinnath_warrior 0  16842765 0 1000 704643072 20.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_pel_footman Pelargir_Footman_Armor Pelargir_Footman_Armor 1  pelargir_footman 0  16842765 0 1000 704643072 20.000000 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_pel_footman Pelargir_Footman_Armor Pelargir_Footman_Armor 1  pelargir_footman 0  16842765 0 1000 704643072 20.000000 100 0 25 8 0 0 0 0 0 0 0 0
 0
 
  itm_pel_jerkin Pelargir_Jerkin Pelargir_Jerkin 1  pelargir_jerkin 0  16842765 0 500 234881024 12.000000 100 0 12 6 0 0 0 0 0 0 0 0
 0
 
- itm_pel_leader Pelargir_Leader_Armor Pelargir_Leader_Armor 1  pelargir_leader 0  16842765 0 1300 704643072 22.000000 100 0 25 8 0 0 0 0 0 0 0 0
+ itm_pel_leader Pelargir_Leader_Armor Pelargir_Leader_Armor 1  pelargir_leader 0  16842765 0 1300 704643072 22.000000 100 0 35 8 0 0 0 0 0 0 0 0
 0
 
  itm_pel_marine Pelargir_Marine Pelargir_Marine 1  pelargir_marine 0  16842765 0 1200 704643072 20.000000 100 0 23 6 0 0 0 0 0 0 0 0
 0
 
- itm_pelargir_marine_leader Pelargir_Marine_Leader Pelargir_Marine_Leader 1  pelargir_marine_leader 0  16842765 0 1300 704643072 21.000000 100 0 25 6 0 0 0 0 0 0 0 0
+ itm_pelargir_marine_leader Pelargir_Marine_Leader Pelargir_Marine_Leader 1  pelargir_marine_leader 0  16842765 0 1300 704643072 21.000000 100 0 33 6 0 0 0 0 0 0 0 0
 0
 
- itm_pelargir_regular Pelargir_Regular Pelargir_Regular 1  pelargir_regular 0  16842765 0 1200 704643072 22.000000 100 0 23 8 0 0 0 0 0 0 0 0
+ itm_pelargir_regular Pelargir_Regular Pelargir_Regular 1  pelargir_regular 0  16842765 0 1200 704643072 22.000000 100 0 30 8 0 0 0 0 0 0 0 0
 0
 
  itm_pelargir_hood Pelargir_Hood Pelargir_Hood 1  pelargir_hood 0  536936460 0 100 123731968 1.000000 100 10 0 0 0 0 0 0 0 0 0 0
@@ -1086,10 +1086,10 @@ itemsfile version 2
  itm_uruk_pike_b Uruk_Pike Uruk_Pike 1  uruk_skull_spear 0  275087364 4222124851987200 400 271496 3.000000 100 0 0 0 0 16384 81 0 176 0 282 528
 0
 
- itm_uruk_falchion_a Uruk_Falchion_a Uruk_Falchion_a 1  uruk_falchion_a 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 25600 85 0 72 0 256 25
+ itm_uruk_falchion_a Uruk_Falchion_a Uruk_Falchion_a 1  uruk_falchion_a 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 85 0 72 0 256 25
 0
 
- itm_uruk_falchion_b Uruk_Falchion_b Uruk_Falchion_b 1  uruk_falchion_b 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 256 25
+ itm_uruk_falchion_b Uruk_Falchion_b Uruk_Falchion_b 1  uruk_falchion_b 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 256 25
 0
 
  itm_uruk_spear Uruk_Spear Uruk_Spear 1  uruk_spear 0  6651908 4222124851990272 300 271496 2.500000 100 0 0 0 0 20480 96 0 168 0 283 532
@@ -1203,7 +1203,7 @@ itemsfile version 2
  itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 0 5.000000 100 0 0 0 0 0 99 20 53 7 40 0
 0
 
- itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 656522 1.250000 100 0 0 0 0 0 86 53 0 0 33 0
+ itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 656522 1.250000 100 0 0 0 0 0 86 53 0 0 20 0
 0
 
  itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3.000000 100 0 1 0 0 200 96 0 40 0 0 0
@@ -1970,7 +1970,7 @@ itemsfile version 2
  itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  342163460 9223635923965575392 300 286870 4.500000 100 0 0 0 0 35840 87 0 109 0 256 35
 0
 
- itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  342163460 9223635923965575392 300 286870 4.500000 100 0 0 0 0 35840 93 0 96 0 256 35
+ itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  342163460 9223635923965575392 300 286870 3.000000 100 0 0 0 0 35840 93 0 96 0 256 35
 0
 
  itm_khand_halberd Khand_Halberd Khand_Halberd 1  Khand_Weapon_Halberd 0  275087364 4222129146954496 800 286870 4.500000 100 0 0 0 0 38912 88 0 164 0 277 38
@@ -2102,7 +2102,7 @@ itemsfile version 2
  itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  73728004 9223635923965575392 300 286870 5.000000 100 0 0 0 0 44032 89 0 115 0 256 43
 0
 
- itm_rhun_battleaxe Rhun_Battle_Axe Rhun_Battle_Axe 1  rhun_battle_axe 0  73728004 9223635923965575392 300 286870 5.000000 100 0 0 0 0 44032 86 0 108 0 256 43
+ itm_rhun_battleaxe Rhun_Battle_Axe Rhun_Battle_Axe 1  rhun_battle_axe 0  73728004 9223635923965575392 300 286870 4.000000 100 0 0 0 0 44032 86 0 108 0 256 43
 0
 
  itm_rhun_falchion Rhun_Falchion Rhun_Falchion 1  rhun_falchion 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 77 0 256 30
@@ -2330,7 +2330,7 @@ itemsfile version 2
  itm_beorn_staff Woodman's_Staff Woodman's_Staff 1  woodman_staff 0  138903556 4222129415393024 50 271496 2.000000 100 0 0 0 0 20480 104 0 104 0 532 532
 0
 
- itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  73728004 9223635923965575392 300 156672 5.000000 100 0 0 0 0 41984 88 0 71 0 256 41
+ itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  342163460 9223635923965575392 300 156672 5.000000 100 0 0 0 0 41984 88 0 71 0 256 41
 0
 
  itm_dwarf_shield_a Dwarven_Shield Dwarven_Shield 1  dwarf_shield_a 0  327687 4831838208 400 771751936 3.000000 100 0 10 0 0 700 82 0 60 0 0 0
