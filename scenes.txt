@@ -1,5 +1,5 @@
 scenesfile version 1
- 200
+ 201
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -724,6 +724,10 @@ scn_eastfold_siege eastfold_siege 256 none none 0.000000 0.000000 100.000000 100
   0 
   0 
  outer_mountains2south 
+scn_east_osgiliath_siege east_osgiliath_siege 256 none none 0.000000 0.000000 200.000000 200.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_terrain_osgiliath_9 
 scn_battlefield1 battlefield1 1280 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000240004d634005c96d0000734a00004b340000734a 
   0 
   0 

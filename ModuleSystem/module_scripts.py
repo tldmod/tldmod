@@ -1358,10 +1358,10 @@ scripts = [
         (party_set_slot, center_list[x][0], slot_center_walker_8_troop, center_list[x][2][6]) for x in range(len(center_list)) ]+[
         (party_set_slot, center_list[x][0], slot_center_walker_9_troop, center_list[x][2][7]) for x in range(len(center_list)) ]+[
 		(party_set_banner_icon,             center_list[x][0],          center_list[x][3][0]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_center_strength_income,    center_list[x][6]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_center_garrison_limit,     center_list[x][7]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_center_destroy_on_capture, center_list[x][8]) for x in range(len(center_list)) ]+[
-        (party_set_slot, center_list[x][0], slot_center_siegability,        center_list[x][9]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_strength_income,   center_list[x][6]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_garrison_limit,    center_list[x][7]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_destroy_on_capture,center_list[x][8]) for x in range(len(center_list)) ]+[
+        (party_set_slot, center_list[x][0], slot_center_siegability,       center_list[x][9]) for x in range(len(center_list)) ]+[
 #item abundancy in center shops
         (troop_set_slot, center_list[x][2][2], slot_troop_shop_horses  ,center_list[x][4][0] ) for x in range(len(center_list)) ]+[
         (troop_set_slot, center_list[x][2][1], slot_troop_shop_1h      ,center_list[x][4][1] ) for x in range(len(center_list)) ]+[
@@ -11507,15 +11507,25 @@ scripts = [
   # script_init_town_walkers
   ("init_town_walkers",
     [(try_begin),
-       (eq, "$town_nighttime", 0),
-       (try_for_range, ":walker_no", 0, num_town_walkers),
-         (store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
-         (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
-         (gt, ":walker_troop_id", 0),
-         (store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
-         (set_visitor, ":entry_no", ":walker_troop_id"), #entry points 32-39
-       (try_end),
-     (try_end),
+		(this_or_next|eq, "$town_nighttime", 0),
+		(this_or_next|eq, "$current_town", "p_town_west_osgiliath"), # walkers there in osgiliaths
+		(this_or_next|eq, "$current_town", "p_town_east_osgiliath"), # walkers there in osgiliaths
+		(this_or_next|eq, "$current_town", "p_town_cair_andros"), # walkers there in osgiliaths
+		(neq, "$g_defending_against_siege", 0), # walkers there when siege
+		(try_for_range, ":walker_no", 0, num_town_walkers),
+			(store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
+			(try_begin),
+				(eq, "$g_defending_against_siege", 0),
+				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+			(else_try),
+				# TODO: put military walkers when siege
+				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+			(try_end),
+			(gt, ":walker_troop_id", 0),
+			(store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
+			(set_visitor, ":entry_no", ":walker_troop_id"), #entry points 32-39
+		(try_end),
+	(try_end),
   ]),
 
   # script_cf_enter_center_location_bandit_check
@@ -11732,7 +11742,8 @@ scripts = [
        (agent_set_scripted_destination, ":agent_no", pos1, 0),
 	   (try_begin),
 			(neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
-			(neq, "$g_defending_against_siege", 0), # guys run when siege
+			(neq, "$current_town", "p_town_east_osgiliath"),
+#			(neq, "$g_defending_against_siege", 0), # guys run when siege
 			(agent_set_speed_limit, ":agent_no", 4),
 	   (try_end),
 	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
@@ -11740,7 +11751,7 @@ scripts = [
 	   (try_begin),
             (this_or_next|eq,":try_limit",tf_orc),
 			(eq,":try_limit",tf_dwarf),
-			(agent_set_speed_limit, ":agent_no", 3),
+			(agent_set_speed_limit, ":agent_no", 2),
 	   (try_end),   
      (try_end),
   ]),
@@ -18202,7 +18213,7 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_polearm, -15),
 			(val_or, ":wound_mask", wound_leg),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, ":wound_mask"),
-			(display_message, "@{s1}_has_suffered_a_serious_wound.", 4294901760),
+			(display_message, "@{s1}_has_suffered_a_serious_wound.", color_bad_news),
 			(display_message, "@His_leg_has_been_badly_maimed_in_battle."),
 			(display_message, "@(-2_athletics,_-1_riding,_-2_agility,_-15_melee_skill)"),
 		(else_try),
@@ -18219,7 +18230,7 @@ scripts = [
 			(troop_raise_attribute, ":npc", ca_strength, -2),
 			(val_or, ":wound_mask", wound_arm),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, ":wound_mask"),
-			(display_message, "@{s1}_has_suffered_a_serious_wound.", 4294901760),
+			(display_message, "@{s1}_has_suffered_a_serious_wound.", color_bad_news),
 			(display_message, "@His_arm_has_been_badly_maimed_in_battle."),
 			(display_message, "@(-20_weapon_skill,_-2_strength,_-1_power_attacks)"),
 		(else_try),
@@ -18238,9 +18249,9 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_throwing, -15),
 			(val_or, ":wound_mask", wound_head),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, ":wound_mask"),
-			(display_message, "@{s1}_has_suffered_a_serious_wound.", 4294901760),
-			(display_message, "@He_has_suffered_a_heavy_blow_to_the_head.", 0),
-			(display_message, "@(-1_intelligence_skills,_-15_missile_skill)", 0),
+			(display_message, "@{s1}_has_suffered_a_serious_wound.", color_bad_news),
+			(display_message, "@He_has_suffered_a_heavy_blow_to_the_head."),
+			(display_message, "@(-1_intelligence_skills,_-15_missile_skill)"),
 		(else_try),
 			(eq, ":rnd", 3),
 			(store_and, ":x", ":wound_mask", wound_chest), (eq, ":x", 0),
@@ -18251,9 +18262,9 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_throwing, -20),
 			(val_or, ":wound_mask", wound_chest),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, ":wound_mask"),
-			(display_message, "@{s1}_has_suffered_a_serious_wound.", 4294901760),
-			(display_message, "@His_chest_has_suffered_some_cracked_ribs.", 0),
-			(display_message, "@(-20_weapon_skill)", 0),
+			(display_message, "@{s1}_has_suffered_a_serious_wound.", color_bad_news),
+			(display_message, "@His_chest_has_suffered_some_cracked_ribs."),
+			(display_message, "@(-20_weapon_skill)"),
 		(else_try),
 			(eq, ":rnd", 4),
 			(eq, "$tld_option_death", 1),
@@ -18265,7 +18276,7 @@ scripts = [
 			(val_mul, ":wounds", 10),
 			(store_random, ":rnd", 100),
 			(neg|ge, ":rnd", ":wounds"),
-			(display_message, "@{s1}_has_been_killed.", 4294901760),
+			(display_message, "@{s1}_has_been_killed.", color_bad_news),
 	#        (assign, "$hero_killed_in_battle", 1),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, wound_death),
 			(call_script, "script_build_mound_for_dead_hero", ":npc"),
@@ -18290,7 +18301,7 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_two_handed_weapon, 15),
 			(troop_raise_proficiency_linear, ":npc", wpt_polearm, 15),
 			(val_sub, ":wound_mask", wound_leg),
-			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", 4284901119),
+			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", color_good_news),
 			(display_message, "@His_leg_wound_has_healed."),
 			(display_message, "@(+2_athletics,_+1_riding,_+2_agility,_+15_melee_skill)"),
 		(else_try),
@@ -18306,9 +18317,9 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_throwing, 20),
 			(troop_raise_attribute, ":npc", ca_strength, 2),
 			(val_sub, ":wound_mask", wound_arm),
-			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", 4284901119),
-			(display_message, "@His_arm_wound_has_healed.", 0),
-			(display_message, "@(+20_weapon_skill,_+2_strength,_+1_power_attacks)", 0),
+			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", color_good_news),
+			(display_message, "@His_arm_wound_has_healed."),
+			(display_message, "@(+20_weapon_skill,_+2_strength,_+1_power_attacks)"),
 		(else_try),
 			(eq, ":rnd", 2),
 			(store_and, ":check", ":wound_mask", wound_head), (neq, ":check", 0),
@@ -18324,9 +18335,9 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_archery, 15),
 			(troop_raise_proficiency_linear, ":npc", wpt_throwing, 15),
 			(val_sub, ":wound_mask", wound_head),
-			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", 4284901119),
-			(display_message, "@His_head_wound_has_healed.", 0),
-			(display_message, "@(+1_intelligence_skills,_+15_missile_skill)", 0),
+			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", color_good_news),
+			(display_message, "@His_head_wound_has_healed."),
+			(display_message, "@(+1_intelligence_skills,_+15_missile_skill)"),
 		(else_try),
 			(eq, ":rnd", 3),
 			(store_and, ":check", ":wound_mask", wound_chest), (neq, ":check", 0),
@@ -18336,9 +18347,9 @@ scripts = [
 			(troop_raise_proficiency_linear, ":npc", wpt_archery, 20),
 			(troop_raise_proficiency_linear, ":npc", wpt_throwing, 20),
 			(val_sub, ":wound_mask", wound_chest),
-			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", 4284901119),
-			(display_message, "@His_cracked_ribs_have_healed.", 0),
-			(display_message, "@(+20_weapon_skill)", 0),
+			(display_message, "@{s1}_has_recovered_from_a_serious_wound.", color_good_news),
+			(display_message, "@His_cracked_ribs_have_healed."),
+			(display_message, "@(+20_weapon_skill)"),
 		(try_end),
 		(troop_set_slot, ":npc", slot_troop_wound_mask, ":wound_mask"),
 		(store_troop_health, ":x", ":npc", 0),
@@ -18430,7 +18441,7 @@ scripts = [
 	(store_script_param_1, ":hero"),
 	(troop_set_slot, ":hero", slot_troop_wound_mask, wound_death),
 	(str_store_troop_name, s1, ":hero"),
-	(display_message, "@News_has_arrived_that_{s1}_was_killed_in_battle!", 4294901760),
+	(display_message, "@News_has_arrived_that_{s1}_was_killed_in_battle!", color_bad_news),
 	#(val_sub, "$map_hero_root_defender_party", 1),
 	(troop_get_slot, ":party", ":hero", slot_troop_leaded_party),
 	(spawn_around_party, ":party", "pt_mound"),
@@ -18454,28 +18465,28 @@ scripts = [
 ("rescue_information",[
 	(try_begin),
 		(eq, "$rescue_stage", 0),
-		(display_message, "@You_have_been_discovered_before_scaling_the_wall.", 4294901760),
-		(display_message, "@The_enemy_is_coming_in_force,_you_must_flee!", 4294901760),
+		(display_message, "@You_have_been_discovered_before_scaling_the_wall.", color_bad_news),
+		(display_message, "@The_enemy_is_coming_in_force,_you_must_flee!", color_bad_news),
 	  (else_try),
 		(eq, "$rescue_stage", 1),
-		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!", 4294901760),
-		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!", 4294901760),
+		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
+		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
 	  (else_try),
 		(eq, "$rescue_stage", 2),
-		(display_message, "@You_are_spotted_by_a_patrol!", 4294901760),
-		(display_message, "@Eliminate_them_before_the_alarm_spreads!", 4294901760),
+		(display_message, "@You_are_spotted_by_a_patrol!", color_bad_news),
+		(display_message, "@Eliminate_them_before_the_alarm_spreads!", color_bad_news),
 	  (else_try),
 		(eq, "$rescue_stage", 3),
-		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!", 4294901760),
-		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!", 4294901760),
+		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
+		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
 	  (else_try),
 		(eq, "$rescue_stage", 4),
-		(display_message, "@You_are_spotted_by_a_patrol!", 4294901760),
-		(display_message, "@Eliminate_them_before_the_alarm_spreads!", 4294901760),
+		(display_message, "@You_are_spotted_by_a_patrol!", color_bad_news),
+		(display_message, "@Eliminate_them_before_the_alarm_spreads!", color_bad_news),
 	  (else_try),
 		(eq, "$rescue_stage", 5),
-		(display_message, "@You_have_reached_the_dungeons!", 0),
-		(display_message, "@Eliminate_the_guards_and_free_your_men!", 0),
+		(display_message, "@You_have_reached_the_dungeons!"),
+		(display_message, "@Eliminate_the_guards_and_free_your_men!"),
 	(try_end),
 ]), 
 #script_initialize_general_rescue

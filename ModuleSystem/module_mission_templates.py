@@ -196,8 +196,8 @@ mission_templates = [ # not used in game
              (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
            (else_try),
              (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
-           (try_end),
-          ]),
+           (try_end)]),
+		  
         (ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
 			(try_begin),# remove beam bridges in osgiliath (for non battle scenes)
@@ -213,6 +213,7 @@ mission_templates = [ # not used in game
 				(ge,":max_instance", 1),
 				(assign, "$dungeons_in_scene", 1), 
 			(try_end)]),
+
         (ti_inventory_key_pressed, 0, 0, [],[
 			(try_begin),
 				(eq, "$g_mt_mode", tcm_default),
@@ -223,6 +224,7 @@ mission_templates = [ # not used in game
 			(else_try),
 				(display_message, "str_cant_use_inventory_now"),
 			(try_end)]),
+
         (ti_tab_pressed, 0, 0,[],[
           (try_begin),
              (this_or_next|eq, "$g_mt_mode", tcm_default),
@@ -282,9 +284,11 @@ mission_templates = [ # not used in game
             #(call_script, "script_change_player_relation_with_center", "$current_town", -2),
             (call_script, "script_succeed_quest", "qst_hunt_down_fugitive"),
           (try_end)]),
-		 	  # check for different checkpoints reach (merchants, center of town etc)
-	  (2, 0, 0, [],
-       [(agent_get_position, pos1, "$current_player_agent"),
+		 	
+	
+	(2, 0, 0, [],     # check for different checkpoints reach (merchants, center of town etc)
+       [(get_player_agent_no, "$current_player_agent"),
+	    (agent_get_position, pos1, "$current_player_agent"),
 		(try_begin),
 			(party_slot_eq, "$current_town", slot_center_visited, 0),
 			(entry_point_get_position, pos2, 0),
