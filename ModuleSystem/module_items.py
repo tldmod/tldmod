@@ -518,9 +518,9 @@ items =[
 ["lorien_helm_c","Lorien_Infantry_Helm",[("lorienhelmetinf",0)],itp_type_head_armor|itp_shop,0,1900,weight(1.2)|head_armor(42)|difficulty(0),imodbits_elf_armor],
 #["lorien_helm_e", "Lorien Hood"         ,[("elven_cloth_hood_blue" ,0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ########GENERIC ORC ITEMS#####
-["orc_chain_greaves","Chain_Greaves",[("orc_chain_greaves_lr",0)],itp_type_foot_armor|itp_shop,0,700,weight(3)|leg_armor(15)|difficulty(0),imodbits_orc_armor],
+["orc_chain_greaves","Orc_Greaves",[("orc_chain_greaves_lr",0)],itp_type_foot_armor|itp_shop,0,700,weight(3)|leg_armor(15)|difficulty(0),imodbits_orc_armor],
 ["orc_coif","Orc_Coif",[("orc_coif",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,200,weight(2.3)|head_armor(12)|difficulty(0),imodbits_orc_armor],
-["orc_greaves","Orc_Greaves",[("orc_chain_greaves_lr",0)],itp_type_foot_armor|itp_shop,0,400,weight(3)|leg_armor(12)|difficulty(0),imodbits_orc_armor],
+["orc_greaves","Orc_Chain_Boots",[("old_orc_chain_greave_lr",0)],itp_type_foot_armor|itp_shop,0,400,weight(3)|leg_armor(12)|difficulty(0),imodbits_orc_armor],
 ["orc_ragwrap","Orc_Ragwrap",[("orc_ragwrap_lr",0)],itp_type_foot_armor|itp_shop,0,10,weight(1)|leg_armor(3)|difficulty(0),imodbits_orc_cloth],
 ["orc_furboots","Orc_Fur_Boots",[("orc_furboot_lr",0)],itp_type_foot_armor|itp_shop,0,200,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ["orc_furboot_tall","Orc_Fur_Boots",[("orc_furboot_tall",0)],itp_type_foot_armor|itp_shop,0,200,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],

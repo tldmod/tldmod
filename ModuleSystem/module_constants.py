@@ -1405,7 +1405,6 @@ subfaction_data= [
  (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,["trp_pinnath_gelin_plainsman" ,"trp_pinnath_gelin_spearman"      ,"trp_warrior_of_pinnath_gelin"    ],["pt_pinnath_reinf_a"   ,"pt_pinnath_reinf_b"   ,"pt_pinnath_reinf_c"   ],["trp_pinnath_leader"]),
  (subfac_blackroot    ,"p_town_erech"        ,"Blackroot" ,["trp_blackroot_vale_archer"   ,"trp_footman_of_blackroot_vale"   ,"trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a" ,"pt_blackroot_reinf_b" ,"pt_blackroot_reinf_c" ],["trp_blackroot_leader"]),
  (subfac_rangers      ,"p_town_henneth_annun","Ithilien"  ,["trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"  ,"trp_master_ranger_of_ithilien"   ],["pt_ithilien_reinf_a"  ,"pt_ithilien_reinf_b"  ,"pt_ithilien_reinf_c"  ],["trp_ithilien_leader"]),
- 
 ]
 
 
@@ -1417,95 +1416,96 @@ subfaction_data= [
 ws_party_spawns_list = [
 #   ("p_town_name"            ,"pt_faction_scouts",       "pt_faction_raiders",    "pt_faction_patrol",   "pt_faction_caravan"),
 #Gondor    
-	("p_town_minas_tirith"    ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_company",   "pt_gondor_caravan"),
-    ("p_town_pinnath_gelin"   ,"pt_pinnath_gelin_auxila", -1,                      "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_pelargir"        ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_linhir"          ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_dol_amroth"      ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_edhellond"       ,"pt_lamedon_auxila",       "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_lossarnach"      ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_tarnost"         ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_erech"           ,"pt_blackroot_auxila",     "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-    ("p_town_west_osgiliath"  ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    -1),
-    ("p_town_henneth_annun"   ,"pt_gondor_scouts",        "pt_gondor_raiders",     -1,                    -1),
+("p_town_minas_tirith"    ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_gondor_company",   "pt_gondor_caravan"),
+("p_town_pinnath_gelin","pt_pinnath_gelin_auxila",-1,                  "pt_pinnath_patrol",   "pt_gondor_caravan"),
+("p_town_pelargir"        ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_pelargir_patrol",  "pt_gondor_caravan"),
+("p_town_linhir"          ,"pt_lamedon_auxila",   "pt_gondor_raiders", "pt_lamedon_patrol",   "pt_gondor_caravan"),
+("p_town_calembel"        ,"pt_lamedon_auxila",   "pt_gondor_raiders", "pt_lamedon_patrol",   "pt_gondor_caravan"),
+("p_town_dol_amroth"      ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_amroth_patrol",    "pt_gondor_caravan"),
+("p_town_edhellond"       ,"pt_gondor_scouts",    -1,				   "pt_gondor_patrol",    "pt_gondor_caravan"),
+("p_town_lossarnach"      ,"pt_lossarnach_auxila","pt_gondor_raiders", "pt_lossarnach_patrol","pt_gondor_caravan"),
+("p_town_tarnost"         ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_gondor_patrol",    "pt_gondor_caravan"),
+("p_town_erech"           ,"pt_blackroot_auxila", "pt_gondor_raiders", "pt_brv_patrol",       "pt_gondor_caravan"),
+("p_town_west_osgiliath"  ,"pt_ranger_scouts",    "pt_gondor_raiders", "pt_gondor_patrol",    -1),
+("p_town_henneth_annun"   ,"pt_ranger_scouts",    "pt_ranger_raiders", "pt_ranger_patrol",    -1),
 #Rohan    
-	("p_town_edoras"          ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
- 	("p_town_aldburg"         ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_town_hornburg"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_town_east_emnet"      ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_town_westfold"        ,"pt_rohan_scouts",         -1,                      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_town_west_emnet"      ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_town_eastfold"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_edoras"          ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_aldburg"         ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_hornburg"        ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_east_emnet"      ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_westfold"        ,"pt_rohan_scouts",     -1,                  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_west_emnet"      ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_town_eastfold"        ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
 #Mordor   
-	("p_town_minas_morgul"    ,"pt_mordor_scouts",        "pt_mordor_raiders",     "pt_mordor_war_party", "pt_mordor_caravan"),
-	("p_town_morannon"        ,"pt_mordor_scouts",        "pt_mordor_raiders",     "pt_mordor_war_party", "pt_mordor_caravan"),
-	("p_town_east_osgiliath"  ,"pt_mordor_scouts",        "pt_mordor_raiders",     -1,                    -1),
-	("p_town_orc_sentry_camp" ,"pt_mordor_scouts",        "pt_mordor_raiders",     -1,                    -1),
+("p_town_minas_morgul"    ,"pt_mordor_scouts",    "pt_morgul_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
+("p_town_morannon"        ,"pt_mordor_scouts",    "pt_mordor_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
+("p_town_east_osgiliath"  ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
+("p_town_orc_sentry_camp" ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
 #Isengard
-	("p_town_isengard"        ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-	("p_town_urukhai_outpost" ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-	("p_town_urukhai_h_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                    "pt_isengard_caravan"),
-	("p_town_urukhai_r_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                    "pt_isengard_caravan"),
+("p_town_isengard"        ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
+("p_town_urukhai_outpost" ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
+("p_town_urukhai_h_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                     "pt_isengard_caravan"),
+("p_town_urukhai_r_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                     "pt_isengard_caravan"),
 #Others good
-    ("p_town_caras_galadhon"  ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
-	("p_town_cerin_dolen"     ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    "pt_lorien_caravan"),
-	("p_town_cerin_amroth"    ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    -1),
-	("p_town_imladris_camp"   ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
+("p_town_caras_galadhon"  ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
+("p_town_cerin_dolen"     ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    "pt_lorien_caravan"),
+("p_town_cerin_amroth"    ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    -1),
+("p_town_imladris_camp"   ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
 
-	("p_town_thranduils_halls","pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-	("p_town_woodelf_camp"    ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-	("p_town_woodelf_west_camp","pt_woodelf_scouts",      "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+("p_town_thranduils_halls","pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+("p_town_woodelf_camp"    ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+("p_town_woodelf_west_camp","pt_woodelf_scouts",      "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
 
-	("p_town_woodsmen_village","pt_beorn_scouts",         -1,                      -1,                    -1),
-	("p_town_beorning_village","pt_beorn_scouts",         -1,                      -1,                    -1),
-	("p_town_beorn_house"     ,"pt_beorn_scouts",         -1,                      -1,                    -1),
+("p_town_woodsmen_village","pt_woodmen_scouts",       -1,                      -1,                    -1),
+("p_town_beorning_village","pt_beorn_scouts",         -1,                      -1,                    -1),
+("p_town_beorn_house"     ,"pt_beorn_scouts",         -1,                      -1,                    -1),
 
-	("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
-	("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
-	("p_town_erebor"          ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
-	("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
+("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
+("p_town_erebor"          ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     -1),
 #Others evil
-	("p_town_moria"           ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
-	("p_town_troll_cave"      ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
+("p_town_moria"           ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
+("p_town_troll_cave"      ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
 
-	("p_town_dol_guldur"      ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
-	("p_town_dol_guldur_north_outpost","pt_guldur_scouts","pt_guldur_raiders",     "pt_mordor_war_party", -1),
+("p_town_dol_guldur"      ,"pt_guldur_scouts",        "pt_guldur_raiders",  "pt_mordor_war_party", -1),
+("p_town_dol_guldur_north_outpost","pt_guldur_scouts","pt_guldur_raiders",  "pt_mordor_war_party", -1),
 
-	("p_town_dunland_camp"    ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
-	("p_town_harad_camp"      ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
-	("p_town_khand_camp"      ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
+("p_town_dunland_camp"    ,"pt_dunland_scouts",       "pt_dunland_raiders", "pt_dunland_war_party",-1),
+("p_town_harad_camp"      ,"pt_harad_scouts",         "pt_harad_raiders",   "pt_harad_war_party",  -1),
+("p_town_khand_camp"      ,"pt_khand_scouts",         "pt_khand_raiders",   "pt_khand_war_party",  -1),
 
-	("p_town_north_rhun_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
-	("p_town_rhun_south_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
-	("p_town_rhun_north_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+("p_town_north_rhun_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
+("p_town_rhun_south_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
+("p_town_rhun_north_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
 
-	("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
- 
-	("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-	("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-	("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-	("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-	("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-	("p_town_gundabad_mirkwood_outpost","pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",   -1,                    -1),
+
+("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_mirkwood_outpost","pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 #Advance camps   
-    ("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-	("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-	("p_advcamp_isengard"     ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-	("p_advcamp_mordor"       ,"pt_mordor_scouts",        "pt_mordor_raiders",     "pt_mordor_war_party", "pt_mordor_caravan"),
-	("p_advcamp_harad"        ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
-	("p_advcamp_rhun"         ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
-	("p_advcamp_khand"        ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
-	("p_advcamp_umbar"        ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
-    ("p_advcamp_lorien"       ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
-	("p_advcamp_imladris"     ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
-	("p_advcamp_woodelf"      ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-	("p_advcamp_moria"        ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
-	("p_advcamp_guldur"       ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
-	("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   -1,                    -1),
-	("p_advcamp_dale"         ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
-	("p_advcamp_dwarf"        ,"pt_dwarf_scouts",         "pt_dwarf_raiders",      "pt_dwarf_patrol",     "pt_dwarf_caravan"),
-	("p_advcamp_dunland"      ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
-	("p_advcamp_beorn"        ,"pt_beorn_scouts",         -1,                      -1,                    -1),
+("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
+("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
+("p_advcamp_isengard"     ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
+("p_advcamp_mordor"       ,"pt_mordor_scouts",        "pt_mordor_raiders",     "pt_mordor_war_party", "pt_mordor_caravan"),
+("p_advcamp_harad"        ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
+("p_advcamp_rhun"         ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
+("p_advcamp_khand"        ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
+("p_advcamp_umbar"        ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
+("p_advcamp_lorien"       ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
+("p_advcamp_imladris"     ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
+("p_advcamp_woodelf"      ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+("p_advcamp_moria"        ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
+("p_advcamp_guldur"       ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
+("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   -1,                    -1),
+("p_advcamp_dale"         ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
+("p_advcamp_dwarf"        ,"pt_dwarf_scouts",         -1,				       "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+("p_advcamp_dunland"      ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
+("p_advcamp_beorn"        ,"pt_beorn_scouts",         -1,                      -1,                    -1),
 	
 ]
 
@@ -1536,12 +1536,9 @@ ws_raider_vp  = 40
 ws_patrol_vp  = 100
 ws_caravan_vp = 100
 ws_alone_vp   = 80  # for hero-led parties (alone).
-ws_host_vp    = 120  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
+ws_host_vp    = 200  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
 ws_p_train_vp = 40
-ws_center_vp  = 200  # loss of center
-
-# TLD faction restoration speed (added each 2 hours to faction strength)
-#ws_faction_restoration = 1 #MV: not used anymore
+ws_center_vp  = 500  # loss of center
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_low  = 5
@@ -1884,8 +1881,7 @@ lords_spawn = [ ("trp_gondor_lord","p_town_minas_tirith"),
 				("trp_mordor_lord","p_town_minas_morgul"),
 				("trp_lorien_lord","p_town_caras_galadhon"),
 ]
-			 # TLD constants end
-#####################################
+
 #### banner colors #0-130
 color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF82362d, 0xFF793329, 0xFF262521, 0xFFd9dad1, 0xFF524563, 
                0xFF91312c, 0xFFafa231, 0xFF706d3c, 0xFFd6d3ce, 0xFF912929, 0xFF394584, 0xFF42662e, 0xFFdfded6, 0xFF292724, 0xFF58611b, 
@@ -1905,9 +1901,7 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
             
 # foxyman
 cheat_switch = 1
-
 # TLD faction ranks end
-###############################################
 
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)
  ("fac_gondor"  ,"str_gondor_rumor_begin"  ,"str_dwarf_rumor_begin"   ,"snd_gondor_ambiance" ,"snd_wind_ambiance"      ,"snd_gondor_occasional"),
@@ -2115,24 +2109,24 @@ orc_bonus_denominator = 3
 # party player icons (mtarini)
 # for each faction: icon-mounted, icon-on-foot (melee), icon-on-foot (ranged)
 faction_player_icons = [
-    ("fac_gondor"  ,"icon_knight_gondor", "icon_footman_gondor", "icon_ithilien_ranger"),
-    ("fac_rohan"   ,"icon_knight_rohan", "icon_player", "icon_player"),
-    ("fac_isengard","icon_wargrider_run", "icon_uruk_isengard", "icon_uruk_isengard"), # assuming uruk orc (not uruk or evil man). Evil men will be deatl separately
-    ("fac_mordor"  ,"icon_wargrider_furshield_run", "icon_uruk", "icon_uruk"),         # same thing
-    ("fac_harad"   ,"icon_harad_horseman", "icon_player", "icon_player"),       
-    ("fac_rhun"    ,"icon_easterling_horseman", "icon_player", "icon_player"),
-    ("fac_khand"   ,"icon_easterling_horseman", "icon_player", "icon_player"),
-    ("fac_umbar"   ,"icon_umbar_captain", "icon_umbar_corsair", "icon_umbar_corsair"),
-    ("fac_lorien"  ,"icon_knight_rivendell", "icon_lorien_elf_b", "icon_lorien_elf_a"),
-    ("fac_imladris","icon_lamedon_horseman", "icon_mirkwood_elf", "icon_mirkwood_elf"),
-    ("fac_woodelf" ,"icon_player_horseman", "icon_mirkwood_elf", "icon_mirkwood_elf"),
-    ("fac_moria"   ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
-    ("fac_guldur"  ,"icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
-    ("fac_gundabad","icon_wargrider_furshield_run", "icon_orc", "icon_orc"),
-    ("fac_dale"    ,"icon_player_horseman", "icon_player", "icon_player"),
-    ("fac_dwarf"   ,"icon_player_horseman", "icon_dwarf",  "icon_dwarf"),
-    ("fac_dunland" ,"icon_dunland_captain", "icon_dunlander", "icon_dunlander"),
-    ("fac_beorn"   ,"icon_player_horseman", "icon_player", "icon_player"),
+    ("fac_gondor"  ,"icon_knight_gondor"			,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    ("fac_rohan"   ,"icon_knight_rohan"				,"icon_player"			,"icon_player"),
+    ("fac_isengard","icon_wargrider_run"			,"icon_uruk_isengard"	,"icon_uruk_isengard"), # assuming uruk orc (not uruk or evil man). Evil men will be deatl separately
+    ("fac_mordor"  ,"icon_wargrider_furshield_run"	,"icon_uruk"			,"icon_uruk"),         # same thing
+    ("fac_harad"   ,"icon_harad_horseman"			,"icon_player"			,"icon_player"),       
+    ("fac_rhun"    ,"icon_easterling_horseman"		,"icon_player"			,"icon_player"),
+    ("fac_khand"   ,"icon_easterling_horseman"		,"icon_player"			,"icon_player"),
+    ("fac_umbar"   ,"icon_umbar_captain"			,"icon_umbar_corsair"	,"icon_umbar_corsair"),
+    ("fac_lorien"  ,"icon_knight_rivendell"			,"icon_lorien_elf_b"	,"icon_lorien_elf_a"),
+    ("fac_imladris","icon_lamedon_horseman"			,"icon_mirkwood_elf"	,"icon_mirkwood_elf"),
+    ("fac_woodelf" ,"icon_player_horseman"			,"icon_mirkwood_elf"	,"icon_mirkwood_elf"),
+    ("fac_moria"   ,"icon_wargrider_furshield_run"	,"icon_orc"				,"icon_orc"),
+    ("fac_guldur"  ,"icon_wargrider_furshield_run"	,"icon_orc"				,"icon_orc"),
+    ("fac_gundabad","icon_wargrider_furshield_run"	,"icon_orc"				,"icon_orc"),
+    ("fac_dale"    ,"icon_player_horseman"			,"icon_player"			,"icon_player"),
+    ("fac_dwarf"   ,"icon_player_horseman"			,"icon_dwarf"			,"icon_dwarf"),
+    ("fac_dunland" ,"icon_dunland_captain"			,"icon_dunlander"		,"icon_dunlander"),
+    ("fac_beorn"   ,"icon_player_horseman"			,"icon_player"			,"icon_player"),
 ]
 
 # Daytime/Nighttime penalties system (foxyman)

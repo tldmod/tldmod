@@ -1111,7 +1111,7 @@ scripts = [
 # (display_message,"@Distance from Fangorn: {reg0}, terrain: {reg1}"),
     
     (try_begin),
-      (lt, ":dist", 2500), #MV: was 3200
+      (lt, ":dist", 2400), #MV: was 3200
       (this_or_next|eq, ":terrain_type", rt_steppe_forest),
       (this_or_next|eq, ":terrain_type", rt_forest),
       (eq, ":terrain_type", rt_snow_forest),
@@ -5227,8 +5227,7 @@ scripts = [
   # INPUT: arg1 = faction_no
   #OUTPUT: reg0 = town_no, this script may return false if there is no matching town.
   ("cf_select_random_town_with_faction",
-    [
-      (store_script_param_1, ":faction_no"),
+    [ (store_script_param_1, ":faction_no"),
       (assign, ":result", -1),
       # First count num matching spawn points
       (assign, ":no_towns", 0),
@@ -5261,8 +5260,7 @@ scripts = [
   # INPUT: arg1 = faction_no
   #OUTPUT: reg0 = town_no, this script may return false if there is no matching town. reg1 = distance
   ("cf_select_random_town_allied",
-    [
-      (store_script_param_1, ":faction_no"),
+    [ (store_script_param_1, ":faction_no"),
       (assign, ":result", -1),
       (assign, ":dist", 0),
       # First count num matching spawn points
@@ -5306,39 +5304,39 @@ scripts = [
   # such that faction of the town is equal to given_faction
   # INPUT: arg1 = faction_no, arg2 = preferred_center_no
   #OUTPUT: reg0 = town_no, This script may return false if there is no matching town.
-  ("cf_select_random_walled_center_with_faction",
-    [ (store_script_param, ":faction_no", 1),
-      (store_script_param, ":preferred_center_no", 2),
-      (assign, ":result", -1),
-      # First count num matching spawn points
-      (assign, ":no_centers", 0),
-      (try_for_range,":cur_center", centers_begin, centers_end),
-        (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
-        (store_faction_of_party, ":cur_faction", ":cur_center"),
-        (eq, ":cur_faction", ":faction_no"),
-        (val_add, ":no_centers", 1),
-        (eq, ":cur_center", ":preferred_center_no"),
-        (val_add, ":no_centers", 99),
-      (try_end),
-      (gt, ":no_centers", 0), #Fail if there are no centers
-      (store_random_in_range, ":random_center", 0, ":no_centers"),
-      (try_for_range,":cur_center", centers_begin, centers_end),
-        (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
-        (eq, ":result", -1),
-        (store_faction_of_party, ":cur_faction", ":cur_center"),
-        (eq, ":cur_faction", ":faction_no"),
-        (val_sub, ":random_center", 1),
-        (try_begin),
-          (eq, ":cur_center", ":preferred_center_no"),
-          (val_sub, ":random_center", 99),
-        (try_end),
-        (lt, ":random_center", 0),
-        (assign, ":result", ":cur_center"),
-      (try_end),
-      (assign, reg0, ":result"),
-  ]),
+  # ("cf_select_random_walled_center_with_faction",
+    # [ (store_script_param, ":faction_no", 1),
+      # (store_script_param, ":preferred_center_no", 2),
+      # (assign, ":result", -1),
+
+      # (assign, ":no_centers", 0), #  First count num matching spawn points
+      # (try_for_range,":cur_center", centers_begin, centers_end),
+        # (party_is_active, ":cur_center"), #TLD
+		# (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        # (store_faction_of_party, ":cur_faction", ":cur_center"),
+        # (eq, ":cur_faction", ":faction_no"),
+        # (val_add, ":no_centers", 1),
+        # (eq, ":cur_center", ":preferred_center_no"),
+        # (val_add, ":no_centers", 99),
+      # (try_end),
+      # (gt, ":no_centers", 0), #Fail if there are no centers
+      # (store_random_in_range, ":random_center", 0, ":no_centers"),
+      # (try_for_range,":cur_center", centers_begin, centers_end),
+        # (party_is_active, ":cur_center"), #TLD
+		# (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        # (eq, ":result", -1),
+        # (store_faction_of_party, ":cur_faction", ":cur_center"),
+        # (eq, ":cur_faction", ":faction_no"),
+        # (val_sub, ":random_center", 1),
+        # (try_begin),
+          # (eq, ":cur_center", ":preferred_center_no"),
+          # (val_sub, ":random_center", 99),
+        # (try_end),
+        # (lt, ":random_center", 0),
+        # (assign, ":result", ":cur_center"),
+      # (try_end),
+      # (assign, reg0, ":result"),
+  # ]),
 
   #script_cf_select_random_walled_center_with_faction_and_owner_priority_no_siege:
   # INPUT: arg1 = faction_no, arg2 = owner_troop_no
@@ -5391,7 +5389,6 @@ scripts = [
     [ (store_script_param, ":faction_no", 1),
       (store_script_param, ":preferred_center_no", 2),
       (assign, ":result", -1),
-
 #TLD begin
       (faction_get_slot, ":faction_theater", ":faction_no", slot_faction_active_theater),
       # TLD: First try to find a center in the active theater, if that fails, go anywhere as normal
@@ -5429,9 +5426,7 @@ scripts = [
         (lt, ":random_center", 0),
         (assign, ":result", ":cur_center"),
       (try_end),
-      
 #TLD end
-
       # First count num matching spawn points
       (assign, ":no_centers", 0),
       (try_for_range, ":cur_center", centers_begin, centers_end),
@@ -5599,11 +5594,6 @@ scripts = [
           (assign, ":quests_begin", enemy_lord_quests_begin),
           (assign, ":quests_end", enemy_lord_quests_end),
         (try_end),
-# GA: no villages
-#      (else_try),
-#        (is_between, ":giver_troop", village_elders_begin, village_elders_end),
-#        (assign, ":quests_begin", village_elder_quests_begin),
-#        (assign, ":quests_end", village_elder_quests_end),
       (else_try),
         (is_between, ":giver_troop", mayors_begin, mayors_end),
         (assign, ":quests_begin", mayor_quests_begin),
@@ -6370,35 +6360,28 @@ scripts = [
 ##            (assign, ":result", ":quest_no"),
 ##          (try_end),
 
-        # (else_try),
-          # (eq, ":quest_no", "qst_deal_with_bandits_at_lords_village"),
-          # (try_begin),
-            # (neq, ":giver_reputation", lrep_debauched),
-            # (neq, ":giver_reputation", lrep_quarrelsome),
-            # (ge, "$g_talk_troop_faction_relation", 0),
-            # (assign, ":end_cond", villages_end),
-            # (assign, ":cur_target_center", -1),
-            # (try_for_range, ":cur_village", villages_begin, ":end_cond"),
-              # (party_slot_eq, ":cur_village", slot_town_lord, ":giver_troop"),
-              # (party_slot_eq, ":cur_village", slot_village_infested_by_bandits, 1),
-              # (assign, ":cur_target_center", ":cur_village"),
-              # (assign, ":end_cond", 0),
-            # (try_end),
-            # (ge, ":cur_target_center", 0),
-            # (neg|check_quest_active, "qst_eliminate_bandits_infesting_village"),
-            # (assign, ":quest_target_center", ":cur_target_center"),
-            # (assign, ":result", ":quest_no"),
-            # (assign, ":quest_expiration_days", 30),
-          # (try_end),
+	# (else_try), #GA: quest to defend refugees caravan from raiders
+		# (eq, ":quest_no", "qst_deal_with_bandits_at_lords_village"),
+		# (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
+		# (neg|is_between, ":giver_faction_no", fac_lorien,fac_dale), #elves and dwarves do not give such quests
+		# (neq, ":giver_faction_no", fac_dwarf),
+		# (ge, "$g_talk_troop_faction_relation", 0),
+		# (ge, ":player_level", 5),
+		# (gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		# (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
+
+		# (assign, ":quest_target_party", ":cur_target_center"),
+		# (assign, ":result", ":quest_no"),
+		# (assign, ":quest_expiration_days", 1),
+		   
+		   
         (else_try),
           (eq, ":quest_no", "qst_raise_troops"),
           (try_begin),
-            #(neq, ":giver_reputation", lrep_martial),
             (neq, ":giver_faction_no", "fac_player_supporters_faction"), #we need tier_1_troop a valid value
             (ge, "$g_talk_troop_faction_relation", 0),
             (store_character_level, ":cur_level", "trp_player"),
             (gt, ":cur_level", 5),
-#            (troop_slot_ge, "trp_player", slot_troop_renown, 100),
              
             (store_random_in_range, ":quest_target_amount", 5, 8),
             (assign, ":quest_importance", ":quest_target_amount"),
@@ -6647,7 +6630,7 @@ scripts = [
             #(assign, ":quest_target_faction", reg0),
             (assign, ":quest_gold_reward", 2000),
             (assign, ":quest_xp_reward", 2500),
-            (assign, ":quest_rank_reward", 15),
+            (assign, ":quest_rank_reward", 200),
             (assign, ":quest_importance", 12),
             (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 80),
@@ -7546,25 +7529,25 @@ scripts = [
   # Output: reg0 = battle advantage
   ("calculate_battle_advantage",
     [ (call_script, "script_party_count_fit_for_battle", "p_collective_friends"),
-      (assign, ":friend_count", reg(0)),
+      (assign, ":friend_count", reg0),
       (party_get_skill_level, ":player_party_tactics",  "p_main_party", skl_tactics),
       (party_get_skill_level, ":ally_party_tactics",  "p_collective_friends", skl_tactics),
       (val_max, ":player_party_tactics", ":ally_party_tactics"),
       (call_script, "script_party_count_fit_for_battle", "p_collective_enemy"),
-      (assign, ":enemy_count", reg(0)),
+      (assign, "$enemy_count1", reg0), ## of enemies also for scenes
   ## TLD, total number of combatants, needed for random scene generation, GA
-	  (store_add, "$number_of_combatants", ":friend_count",":enemy_count"),
+	  (store_add, "$number_of_combatants", ":friend_count","$enemy_count1"),
       (party_get_skill_level, ":enemy_party_tactics",  "p_collective_enemy", skl_tactics),
       (val_add, ":friend_count", 1),
-      (val_add, ":enemy_count", 1),
+      (val_add, "$enemy_count1", 1),
       (try_begin),
-        (ge, ":friend_count", ":enemy_count"),
+        (ge, ":friend_count", "$enemy_count1"),
         (val_mul, ":friend_count", 100),
-        (store_div, ":ratio", ":friend_count", ":enemy_count"),
+        (store_div, ":ratio", ":friend_count", "$enemy_count1"),
         (store_sub, ":raw_advantage", ":ratio", 100),
       (else_try),
-        (val_mul, ":enemy_count", 100),
-        (store_div, ":ratio", ":enemy_count", ":friend_count"),
+        (val_mul, "$enemy_count1", 100),
+        (store_div, ":ratio", "$enemy_count1", ":friend_count"),
         (store_sub, ":raw_advantage", 100, ":ratio"),
       (try_end),
       (val_mul, ":raw_advantage", 2),
@@ -9583,21 +9566,19 @@ scripts = [
 # Input: arg4 =  road : 1, no-road : 0   # TODO
 # Output: none
 ("jump_to_random_scene", [
-
 	(store_script_param, ":region",1),
 	(store_script_param, ":terrain",2),
 	(store_script_param, ":landmark",3),
 	#(assign, reg10, ":landmark"),(display_message,"@LANDMARK: {reg10}"),
 	
 	(assign,":small_scene",0),
-	(try_begin), (lt,"$number_of_combatants",70),
-	    (assign,":small_scene",1),  # small scene variants are right after standard ones in module_scenes
+	(try_begin),(lt,"$number_of_combatants",70),(assign,":small_scene",1), # small scene variants are right after standard ones in module_scenes
+	 (else_try),(lt,"$enemy_count1",30),			(assign,":small_scene",1), # no point in walking half an hour to stomp couple orcs
 	(try_end),
 
 	# in the following, according to region and terrain type, setup the first, the second, or both these variables:
     (assign, ":native_terrain_to_use", -1), # this is you need random terrain generation using a ground level vanilla terrain
     (assign, ":scene_to_use", -1),   # this if you want to use a specific scene
-	
 
 	(try_begin),
 		# landmark: hand sign
@@ -9685,7 +9666,7 @@ scripts = [
 		(store_add, reg10, "p_pointer_z_0_begin", ":native_terrain_to_use"),
 		(party_relocate_near_party,"p_main_party",reg10,":radius"), # teleport to requested region
 		
-		(display_message,"@debug: teleporitng to party ID N. {reg10}"),
+		#(display_message,"@debug: teleporitng to party ID N. {reg10}"),
 		
 		(try_begin),(eq,":scene_to_use",-1),
 			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
@@ -9698,10 +9679,8 @@ scripts = [
 				(val_add, ":scene_to_use", 8),  # go to small scene index
 			(try_end),
 		(try_end),
-		
 	(try_end),
-	
-	(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
+	(assign, reg10,":scene_to_use"), #(display_message,"@debug: using scene ID N. {reg10}"),
 	(jump_to_scene,":scene_to_use"),
 	
 	# check if near small fords
@@ -9794,7 +9773,7 @@ scripts = [
     # (jump_to_scene,":scene_to_use"),
   ]),
 
-  # script_maybe_relocate_player_from_z0 (GA  and mtarini)
+  # script_maybe_relocate_player_from_z0 (GA and mtarini)
   ("maybe_relocate_player_from_z0",[
 	 (try_begin), #if "walk around place" used
 	    (eq, "$relocated", 1),
@@ -9861,13 +9840,6 @@ scripts = [
         (set_visitor, ":cur_pos", ":stack_troop"),
         (val_add,":cur_pos", 1),
       (try_end),
-      # (try_for_range, ":cur_troop", heroes_begin, heroes_end),
-        # (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_lady),
-        # (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
-        # (lt, ":cur_pos", 32), # spawn up to entry point 32
-        # (set_visitor, ":cur_pos", ":cur_troop"),
-        # (val_add,":cur_pos", 1),
-      # (try_end),
       #TLD NPC companions
       (val_max, ":cur_pos", 17), #if no one else in court, skip 16 (could be a throne)
       (try_for_range, ":cur_troop", companions_begin, companions_end),
@@ -9951,8 +9923,8 @@ scripts = [
       (try_end),
   ]),
   
-  # script_remove_agent (mtarini)
-  ("remove_agent", [
+# script_remove_agent (mtarini)
+("remove_agent", [
 	(store_script_param, ":agent", 1),
 	(init_position, pos5),  # send agent to Pluto ;)
 	(agent_set_position,":agent", pos5), 				
@@ -9960,41 +9932,35 @@ scripts = [
 	(set_show_messages,0),
 	(agent_deliver_damage_to_agent, ":agent", ":agent"), 
 	(set_show_messages,1),
-  ]),
+]),
   
-  # script_select_battle_tactic
-  # Input: none
-  # Output: none
-  ("select_battle_tactic",
-    [ (assign, "$ai_team_1_battle_tactic", 0),
-      (get_player_agent_no, ":player_agent"),
-      (agent_get_team, ":player_team", ":player_agent"),
-      (try_begin),
-        (num_active_teams_le, 2),
-        (try_begin),
-          (eq, ":player_team", 0),
-          (assign, "$ai_team_1", 1),
-        (else_try),
-          (assign, "$ai_team_1", 0),
-        (try_end),
-        (assign, "$ai_team_2", -1),
-      (else_try),
-        (try_begin),
-          (eq, ":player_team", 0),
-          (assign, "$ai_team_1", 1),
-        (else_try),
-          (assign, "$ai_team_1", 0),
-        (try_end),
-        (store_add, "$ai_team_2", ":player_team", 2),
-      (try_end),
-      (call_script, "script_select_battle_tactic_aux", "$ai_team_1"),
-      (assign, "$ai_team_1_battle_tactic", reg0),
-      (try_begin),
-        (ge, "$ai_team_2", 0),
-        (call_script, "script_select_battle_tactic_aux", "$ai_team_2"),
-        (assign, "$ai_team_2_battle_tactic", reg0),
-      (try_end),
-  ]),
+# script_select_battle_tactic
+# Input: none
+# Output: none
+("select_battle_tactic", [
+	(assign, "$ai_team_1_battle_tactic", 0),
+	(get_player_agent_no, ":player_agent"),
+	(agent_get_team, ":player_team", ":player_agent"),
+	(try_begin),
+		(num_active_teams_le, 2),
+		(try_begin),(eq, ":player_team", 0),(assign, "$ai_team_1", 1),
+		 (else_try),						(assign, "$ai_team_1", 0),
+		(try_end),
+		(assign, "$ai_team_2", -1),
+	(else_try),
+		(try_begin),(eq, ":player_team", 0),(assign, "$ai_team_1", 1),
+		 (else_try),						(assign, "$ai_team_1", 0),
+		(try_end),
+		(store_add, "$ai_team_2", ":player_team", 2),
+	(try_end),
+	(call_script, "script_select_battle_tactic_aux", "$ai_team_1"),
+	(assign, "$ai_team_1_battle_tactic", reg0),
+	(try_begin),
+		(ge, "$ai_team_2", 0),
+		(call_script, "script_select_battle_tactic_aux", "$ai_team_2"),
+		(assign, "$ai_team_2_battle_tactic", reg0),
+	(try_end),
+]),
 
   # script_select_battle_tactic_aux
   # Input: team_no

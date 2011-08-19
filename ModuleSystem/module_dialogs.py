@@ -4290,7 +4290,7 @@ We need fresh monstrous blood and flesh. We need it to twist it and bend it and 
 
 	
 [anyone,"lord_tell_mission_kill_troll", [],
-"Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I dont know what whitchery has caused this, but I need that thing to be dispatched.", "lord_mission_told",
+"Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what whitchery has caused this, but I need that thing to be dispatched.", "lord_mission_told",
     [  (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
        (str_store_party_name_link,3,":quest_object_center")]],
 
@@ -4298,14 +4298,14 @@ We need fresh monstrous blood and flesh. We need it to twist it and bend it and 
 "How can those beasts be fought?", "lord_mission_kill_troll_info_a",[]],
 
 [anyone,"lord_mission_kill_troll_info_a", [],
-"A troll is a dangerous creature indeed. A giant monster ehich possesses an incredible strenght in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wileded in their hands. A single troll, is rumored, can esily best a group of half a dozen of well armed and trained men, wasting them all with a single blow. Not only men but horses fear trolls. Be careful if you plan to charge one while mounted.", "lord_mission_told",[]],
+"A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can esily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.", "lord_mission_told",[]],
 
 [anyone|plyr,"lord_mission_told", [(eq,"$random_quest_no","qst_kill_troll")],
 "Do you think it comes from Mordor, or Isengard?", "lord_mission_kill_troll_info_b",[]],
 
 [anyone,"lord_mission_kill_troll_info_b",  [(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
 											(str_store_party_name_link,3,":quest_object_center")],
-"No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.", "lord_mission_told",[]],
+"No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.", "lord_mission_told",[]],
 
 	
    # TLD mission: investigate fangorn (mtarini) -- begin 
@@ -4324,7 +4324,7 @@ Nonsense! Puny excuses for their own cowardice or ineptitude!", "lord_mission_in
 [anyone,"lord_mission_investigate_fangorn_1", [],
 "Maybe it is just that my other servants are unable to prevent the most cowardly worms in their troops from deserting.\
   Fools, blinded by superstitions. \
-  Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they do. \
+  Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they usually do. \
   It could even be lowborn traitors from Rohan.\
   Or who knows what else. I want you to find out, {playername}.", "lord_mission_investigate_fangorn_2", []],
   
@@ -4350,35 +4350,33 @@ I expect to see you back with news before {reg1} dawns are passed.", "lord_preta
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_find_lost_spears")],
 "Here is a mission for a trusted and brave commander like you, {playername}.\
-We are ill equipped to fight off the Easterling hordes.\
+We are ill equipped to fight off the Rhun hordes.\
 Our armies are losing battles one by one.\
-A legend tells that once upon a time, the spears that were made for the armies of the great King Bladorthin (long since dead),\
+A legend tells that once upon a time, the spears were made by Dwarves for the armies of the great King Bladorthin (long since dead),\
 each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..", "lord_mission_find_lost_spears", []],
 
 [anyone|plyr,"lord_mission_find_lost_spears",[],
 "What do you command me to do about it, my lord?","lord_mission_find_lost_spears_1",[]],
 
 [anyone,"lord_mission_find_lost_spears_1",[],
-  "These weapons would increase the effectiveness of our armies and let them be somewhat superior to the Easterlings. You'll have to find these spears.\
-   You'll have to go ask the dwarves for permission to search for the spears in the deep of the Lonely Mountain.\
-   Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?","lord_mission_find_lost_spears_2",[]],
+"These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears.\
+You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain.\
+Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?","lord_mission_find_lost_spears_2",[]],
 
-[anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my king.","lord_mission_find_lost_spears_accepted",[]],
+[anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my lord.","lord_mission_find_lost_spears_accepted",[]],
 [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I'm afraid I can't help you, my lord.","lord_mission_find_lost_spears_rejected",[]],
 
 [anyone,"lord_mission_find_lost_spears_rejected", [], "I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.", "lord_pretalk",
    [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
    (assign, "$g_leave_encounter",1)]],
 
-[anyone,"lord_mission_find_lost_spears_accepted", [], "Good luck, then!","lord_pretalk",
+[anyone,"lord_mission_find_lost_spears_accepted", [], "Good luck then!","lord_pretalk",
      [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
-
   #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
 
   #TLD mission: nowy quest (Kolba) -- begin
-
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
 "I need to send a letter to {s13} who should be currently at {s4}.\
 If you will be heading towards there, would you deliver it to him?\
@@ -4399,7 +4397,7 @@ The letter needs to be in his hands in 30 days.", "lord_mission_deliver_message"
 
 [anyone|plyr,"lord_mission_deliver_message", [], "Certainly, I intend to pass by {s4} and it would be no trouble.", "lord_mission_deliver_message_accepted",[]],
 [anyone|plyr,"lord_mission_deliver_message", [], "I doubt I'll be seeing {s13} anytime soon, {s65}. You'd best send it with someone else.", "lord_mission_deliver_message_rejected",[]],
-  #[anyone|plyr,"lord_mission_deliver_message", [], "I am no errand boy, sir. Hire a courier for your trivialities.", "lord_mission_deliver_message_rejected_rudely",[]],
+#[anyone|plyr,"lord_mission_deliver_message", [], "I am no errand boy, sir. Hire a courier for your trivialities.", "lord_mission_deliver_message_rejected_rudely",[]],
 
 [anyone,"lord_mission_deliver_message_accepted", [], 
 "I appreciate it, {playername}. Here's the letter,\
@@ -4619,41 +4617,26 @@ and make sure he arrives safe and sound.", "lord_mission_told", [
 ##
 
 
-# # Deal with bandits
-  #[anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deal_with_bandits_at_lords_village")],
-   # "A group of bandits have taken refuge in my village of {s1}.\
- # They are plundering nearby farms, and getting rich and fat stealing my taxes and feasting on my cattle.\
-# I'd like nothing better than to go out there and teach them a lesson,\
- # but I have my hands full at the moment, so I can't do anything about it.", "lord_mission_deal_with_bandits_told",
-   # [
-     # (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
-     # (str_store_party_name_link,s15,":quest_target_center"),
-     # (str_store_troop_name_link,s13,"$g_talk_troop"),
-     # (setup_quest_text,"$random_quest_no"),
-     # (str_store_string, s2, "@{s13} asked you to deal with the bandits who are occupying the village of {s15} and then report back to him."),
-   # ]],
+# GA: Deal with raiders
+# [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deal_with_bandits_at_lords_village")],
+# "A group of enemy raiders is bound to one of the nearby hamlets. \
+# We have few spare soldiers here at the moment, and your help is urgently needed, {playername}.", "lord_mission_deal_with_bandits_told",
+	# [(quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+	# (str_store_party_name_link,s15,":quest_target_center"),
+	# (str_store_troop_name_link,s13,"$g_talk_troop"),
+	# (setup_quest_text,"$random_quest_no"),
+	# (str_store_string, s2, "@{s13} asked you to dedend the village from raiders and then report back to him.")]],
 
-  #[anyone|plyr,"lord_mission_deal_with_bandits_told", [],
-   # "Worry not, I can go to {s1} and deal with these scum for you.", "lord_mission_deal_with_bandits_accepted",[]],
-  #[anyone|plyr,"lord_mission_deal_with_bandits_told", [], "You shall have to find help elsewhere, I am too busy.", "lord_mission_deal_with_bandits_rejected",[]],
+# [anyone|plyr,"lord_mission_deal_with_bandits_told", [],"Worry not, I will go and defend the people.", "lord_mission_deal_with_bandits_accepted",[]],
+# [anyone|plyr,"lord_mission_deal_with_bandits_told", [],"You shall have to find help elsewhere, I am too busy.", "lord_mission_deal_with_bandits_rejected",[]],
 
-  #[anyone,"lord_mission_deal_with_bandits_accepted", [], "Will you do that?\
- # Know that, I will be grateful to you. Here is some money for the expenses of your campaign.\
- # Make an example of those {s44}s.", "close_window",
-   # [
-
-    # (troop_get_slot, ":insult_string", "$g_talk_troop", slot_lord_reputation_type),
-    # (val_add, ":insult_string", "str_lord_insult_default"),
-    # (str_store_string, 44, ":insult_string"),
-
-    # (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-    # (call_script, "script_troop_add_gold", "trp_player", 200),
-    # (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3),
-    # (assign, "$g_leave_encounter",1),
-   # ]],
-
-  #[anyone,"lord_mission_deal_with_bandits_rejected", [], "Ah... Very well then, forget I brought it up.", "lord_pretalk",
-   # [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+# [anyone,"lord_mission_deal_with_bandits_accepted", [], "Hurry and pay those scum in their own blood", "close_window",
+    # [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+     # (call_script, "script_troop_add_gold", "trp_player", 200),
+     # (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3),
+     # (assign, "$g_leave_encounter",1)]],
+# [anyone,"lord_mission_deal_with_bandits_rejected", [], "Ah... Very well then, forget I brought it up.", "lord_pretalk",
+	# [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 
 # Raise troops
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_raise_troops")],
@@ -4750,10 +4733,9 @@ and make sure he arrives safe and sound.", "lord_mission_told", [
 #Hunt down fugitive
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_hunt_down_fugitive")],
 "I have something you could help with, an issue with the lawless villain known as {s4}. \
- He murdered one of my men and has been on the run from his judgment ever since.\
- I can't let him get away with avoiding justice, so I've put a bounty of 300 RPs on his head.\
- Friends of the murdered man reckon that this assassin may have taken refuge with his kinsmen at {s3}.\
- You might be able to hunt him down and give him what he deserves, and claim the bounty for yourself.", "lord_mission_hunt_down_fugitive_told", [
+ He murdered one of my bodyguards and has been on the run from his judgment ever since.\
+ There were news recently that the fugitive has been seen at {s3}.\
+ You might be able to hunt him down and bring him to me for the justice, and I'll reward you in turn", "lord_mission_hunt_down_fugitive_told", [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
      (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
@@ -4768,9 +4750,8 @@ and make sure he arrives safe and sound.", "lord_mission_told", [
 [anyone|plyr,"lord_mission_hunt_down_fugitive_told", [], "I am too busy to go after him at the moment.", "lord_mission_hunt_down_fugitive_rejected",[]],
 
 [anyone,"lord_mission_hunt_down_fugitive_accepted", [], 
-"That's excellent, {playername}.\
- I will be grateful to you and so will the family of the man he murdered.\
- And of course the bounty on his head will be yours if you can get him.\
+"That's excellent, {playername}. \
+ I will be grateful, and of course your prowess wil be duly noted. \
  Well, good hunting to you.", "close_window",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3),
@@ -4964,12 +4945,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_bring_back_runaway_serfs")],
- "Well, some of the slaves working in {s4} have run away. The ungrateful swine,\
- whose lives we spared! \
+ "Well, some of the slaves working in {s4} have run away. \
+ The ungrateful swine, whose lives we spared! \
  From what I've been hearing, they're running to {s3} as fast as they can,\
  and have split up into three groups to try and avoid capture.\
  I want you to capture all three groups and fetch them back to {s4} by whatever means necessary.\
- I should really have them hanged for attempting to escape, but we need hands for the upcoming harvest,\
+ I should really have them hanged for attempting to escape, but we need hands now,\
  so I'll let them go off this time with a good beating.", "lord_mission_told", [
        (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
        (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),

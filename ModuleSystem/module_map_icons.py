@@ -29,10 +29,10 @@ map_icons = [
   ("flagbearer_a",0,"flagbearer_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("flagbearer_b",0,"flagbearer_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("peasant",0,"peasant_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
-  ("khergit",0,"khergit_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),
+  #("khergit",0,"khergit_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),
   #("khergit_horseman_b",0,"khergit_horseman_b", avatar_scale,snd_gallop, 0.15, 0.173, 0),
   ("axeman",0,"bandit_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
-  ("woman",0,"woman_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
+  #("woman",0,"woman_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   #("woman_b",0,"woman_b", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
 #TLD army icons begin
   ("brigand",0,"brigand", avatar_scale, snd_gallop, 0.15, 0.173, 0),
