@@ -1,5 +1,5 @@
 soundsfile version 2
-636
+629
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -42,33 +42,35 @@ soundsfile version 2
  s_footstep_horse_2f.wav 48
  s_footstep_horse_3f.wav 48
  s_footstep_horse_4f.wav 48
- jump_begin.ogg 1936
- jump_end.ogg 1424
- jump_begin_water.ogg 1168
- jump_end_water.ogg 1168
- horse_jump_begin.ogg 1936
- horse_jump_end.ogg 1936
- release_bow_1.ogg 1280
+ jump_begin.wav 1936
+ jump_end.wav 1424
+ jump_begin_water.wav 1168
+ jump_end_water.wav 1168
+ horse_jump_begin.wav 1936
+ horse_jump_end.wav 1936
+ release_bow_1.wav 1280
  release_crossbow_1.ogg 1792
  throw_javelin_2.wav 1280
  throw_axe_1.wav 1792
  throw_knife_1.wav 1280
  throw_stone_1.wav 1792
  reload_crossbow_1.ogg 768
- put_back_dagger.ogg 1536
+ put_back_dagger.wav 1536
  pull_bow_1.wav 1024
  pull_arrow.wav 1280
  arrow_pass_by_1.wav 0
  arrow_pass_by_2.wav 0
  arrow_pass_by_3.wav 0
  arrow_pass_by_4.wav 0
- bolt_pass_by_1.wav 0
+ bolt_pass_by_1.ogg 0
  javelin_pass_by_1.wav 0
  javelin_pass_by_2.wav 0
  stone_pass_by_1.wav 2304
  axe_pass_by_1.wav 0
+ axe_pass_by_2.wav 0
  knife_pass_by_1.wav 0
  arrow_whoosh_1.wav 0
+ arrow_hit_ground.wav 1904
  arrow_hit_ground_2.wav 1904
  arrow_hit_ground_3.wav 1904
  incoming_bullet_hit_ground_1.wav 1904
@@ -86,7 +88,6 @@ soundsfile version 2
  draw_crossbow.wav 64
  draw_from_holster.wav 64
  draw_dagger.wav 64
- put_back_dagger.wav 64
  draw_bow.wav 64
  draw_shield.wav 1856
  put_back_shield.wav 1856
@@ -99,7 +100,6 @@ soundsfile version 2
  body_fall_3.wav 2656
  horse_body_fall_begin_1.wav 2656
  horse_body_fall_end_1.wav 2656
- body_fall_very_big_1.wav 2656
  hit_wood_wood_1.wav 2672
  hit_wood_wood_2.wav 2672
  hit_wood_wood_3.wav 2672
@@ -168,7 +168,7 @@ soundsfile version 2
  blunt_hit_high_1.wav 2384
  blunt_hit_high_2.wav 2384
  blunt_hit_high_3.wav 2384
- wooden_hit_high_armor_low_damage.wav 2384
+ wooden_hit_high_armor_low_damage_1.wav 2384
  wooden_hit_high_armor_low_damage_2.wav 2384
  punch_1.wav 2384
  punch_4.wav 2384
@@ -595,16 +595,12 @@ soundsfile version 2
  dwarf_men_loop.wav 899
  harad_loop.wav 899
  good_eagle01.wav 1153
- d_blacksmith2.wav 1153
  good_workshop.wav 1153
- d_dog7.wav 1153
  silence.wav 1153
  good_bird01.wav 1153
  good_bird02.wav 1153
  good_bird03.wav 1153
  good_bird_wings.wav 1153
- d_saw_short3.wav 1153
- d_carpenter1.wav 1153
  rohan01.wav 1153
  rohan02.wav 1153
  rohan03.wav 1153
@@ -621,9 +617,6 @@ soundsfile version 2
  harad03.wav 1153
  sea_seagulls.wav 1153
  sea_seaside.wav 1153
- d_dog1.wav 1153
- d_dog2.wav 1153
- d_dog3.wav 1153
  evil_flies_loop.wav 1153
  orc_warg.wav 1153
  orc_beast01.wav 1153
@@ -690,49 +683,49 @@ snd_arrow_pass_by 0 4 58 59 60 61
 snd_bolt_pass_by 0 1 62 
 snd_javelin_pass_by 0 2 63 64 
 snd_stone_pass_by 2304 1 65 
-snd_axe_pass_by 0 1 66 
-snd_knife_pass_by 0 1 67 
-snd_bullet_pass_by 0 1 68 
-snd_incoming_arrow_hit_ground 1904 3 69 70 71 
-snd_incoming_bolt_hit_ground 1904 3 69 70 71 
-snd_incoming_javelin_hit_ground 1904 1 72 
-snd_incoming_stone_hit_ground 1904 1 73 
-snd_incoming_axe_hit_ground 1904 1 72 
-snd_incoming_knife_hit_ground 1904 1 73 
-snd_incoming_bullet_hit_ground 1904 1 71 
-snd_outgoing_arrow_hit_ground 1904 1 74 
-snd_outgoing_bolt_hit_ground 1904 1 74 
-snd_outgoing_javelin_hit_ground 2672 1 74 
-snd_outgoing_stone_hit_ground 1904 1 73 
-snd_outgoing_axe_hit_ground 1904 1 72 
-snd_outgoing_knife_hit_ground 1904 1 73 
-snd_outgoing_bullet_hit_ground 1904 1 71 
-snd_draw_sword 64 1 75 
-snd_put_back_sword 64 1 76 
-snd_draw_greatsword 64 1 77 
-snd_put_back_greatsword 64 1 76 
-snd_draw_axe 64 1 78 
-snd_put_back_axe 64 1 79 
-snd_draw_greataxe 64 1 80 
-snd_put_back_greataxe 64 1 81 
-snd_draw_spear 64 1 82 
-snd_put_back_spear 64 1 81 
-snd_draw_crossbow 64 1 83 
-snd_put_back_crossbow 64 1 81 
-snd_draw_revolver 64 1 84 
-snd_put_back_revolver 64 1 79 
-snd_draw_dagger 64 1 85 
-snd_put_back_dagger 64 1 86 
-snd_draw_bow 64 1 87 
-snd_put_back_bow 64 1 79 
-snd_draw_shield 1856 1 88 
-snd_put_back_shield 1856 1 89 
-snd_draw_other 64 1 90 
-snd_put_back_other 64 1 91 
-snd_body_fall_small 2656 2 92 93 
-snd_body_fall_big 2656 3 94 95 96 
-snd_horse_body_fall_begin 2656 1 97 
-snd_horse_body_fall_end 2656 3 98 95 99 
+snd_axe_pass_by 0 2 66 67 
+snd_knife_pass_by 0 1 68 
+snd_bullet_pass_by 0 1 69 
+snd_incoming_arrow_hit_ground 1904 4 70 71 72 73 
+snd_incoming_bolt_hit_ground 1904 3 71 72 73 
+snd_incoming_javelin_hit_ground 1904 1 74 
+snd_incoming_stone_hit_ground 1904 1 75 
+snd_incoming_axe_hit_ground 1904 1 74 
+snd_incoming_knife_hit_ground 1904 1 75 
+snd_incoming_bullet_hit_ground 1904 1 73 
+snd_outgoing_arrow_hit_ground 1904 1 76 
+snd_outgoing_bolt_hit_ground 1904 1 76 
+snd_outgoing_javelin_hit_ground 2672 1 76 
+snd_outgoing_stone_hit_ground 1904 1 75 
+snd_outgoing_axe_hit_ground 1904 1 74 
+snd_outgoing_knife_hit_ground 1904 1 75 
+snd_outgoing_bullet_hit_ground 1904 1 73 
+snd_draw_sword 64 1 77 
+snd_put_back_sword 64 1 78 
+snd_draw_greatsword 64 1 79 
+snd_put_back_greatsword 64 1 78 
+snd_draw_axe 64 1 80 
+snd_put_back_axe 64 1 81 
+snd_draw_greataxe 64 1 82 
+snd_put_back_greataxe 64 1 83 
+snd_draw_spear 64 1 84 
+snd_put_back_spear 64 1 83 
+snd_draw_crossbow 64 1 85 
+snd_put_back_crossbow 64 1 83 
+snd_draw_revolver 64 1 86 
+snd_put_back_revolver 64 1 81 
+snd_draw_dagger 64 1 87 
+snd_put_back_dagger 64 1 55 
+snd_draw_bow 64 1 88 
+snd_put_back_bow 64 1 81 
+snd_draw_shield 1856 1 89 
+snd_put_back_shield 1856 1 90 
+snd_draw_other 64 1 91 
+snd_put_back_other 64 1 92 
+snd_body_fall_small 2656 2 93 94 
+snd_body_fall_big 2656 3 95 96 97 
+snd_horse_body_fall_begin 2656 1 98 
+snd_horse_body_fall_end 2656 3 99 96 97 
 snd_hit_wood_wood 2672 7 100 101 102 103 104 105 106 
 snd_hit_metal_metal 2672 10 107 108 109 110 111 112 113 114 115 116 
 snd_hit_wood_metal 2672 3 117 118 119 
@@ -806,10 +799,10 @@ snd_man_yell 2144 22 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329
 snd_man_warcry 96 7 337 338 339 340 341 342 343 
 snd_woman_hit 112 10 344 345 346 347 348 349 350 351 352 353 
 snd_woman_die 160 2 354 355 
-snd_gondor_yell 2144 6 356 357 358 359 360 361 
+snd_gondor_yell 2144 22 356 357 358 359 360 361 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
 snd_gondor_victory 2640 6 362 363 364 365 366 367 
 snd_gondor_victory_player 2640 2 362 363 
-snd_rohan_yell 2144 14 368 369 370 371 372 373 374 375 376 377 378 379 380 381 
+snd_rohan_yell 2144 30 368 369 370 371 372 373 374 375 376 377 378 379 380 381 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
 snd_rohan_victory 2640 4 382 383 384 385 
 snd_dunlender_yell 2144 24 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 
 snd_dunlender_victory 2640 9 410 411 412 413 414 415 416 417 418 
@@ -834,7 +827,7 @@ snd_troll_grunt 1120 2 514 515
 snd_troll_grunt_long 2128 2 515 516 
 snd_troll_yell 2144 2 515 516 
 snd_troll_victory 2640 3 515 516 512 
-snd_dunedain_yell 2144 10 517 518 519 520 521 522 523 524 525 526 
+snd_dunedain_yell 2144 26 517 518 519 520 521 522 523 524 525 526 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
 snd_dunedain_victory 2640 3 527 528 529 
 snd_dunedain_victory_player 2640 1 527 
 snd_lothlorien_yell 2144 13 530 531 532 533 534 535 536 537 538 539 540 541 542 
@@ -874,25 +867,25 @@ snd_gondor_ambiance 899 1 590
 snd_rohan_ambiance 899 1 591 
 snd_dwarf_ambiance 899 1 592 
 snd_harad_ambiance 899 1 593 
-snd_gondor_occasional 1153 6 594 595 596 597 598 598 
-snd_elves_occasional 1153 4 599 600 601 602 
-snd_lorien_occasional 1153 5 577 599 600 601 602 
-snd_beorn_occasional 1153 7 599 600 601 596 603 597 604 
-snd_rohan_occasional 1153 10 605 606 607 608 596 594 599 595 597 609 
-snd_dwarf_occasional 1153 5 610 611 595 612 613 
-snd_dale_occasional 1153 9 599 600 601 596 603 595 597 609 614 
-snd_rhun_occasional 1153 8 605 606 607 608 615 603 595 597 
-snd_harad_occasional 1153 10 606 607 608 615 616 617 618 616 617 618 
-snd_umbar_occasional 1153 3 598 619 620 
-snd_dunland_occasional 1153 7 615 594 621 622 623 597 604 
-snd_orc_occasional 1153 6 624 615 625 626 627 628 
-snd_guldur_occasional 1153 4 615 626 627 628 
-snd_moria_occasional 1153 4 598 598 629 630 
-snd_isengard_occasional 1153 12 630 615 626 627 628 603 625 595 610 611 614 604 
-snd_urukhai_occasional 1153 6 615 626 627 628 625 604 
-snd_seaside_occasional 1153 6 599 600 601 619 620 595 
-snd_morgul_occasional 1153 9 598 598 598 598 598 598 598 631 632 
-snd_eosgi_occasional 1153 8 626 627 628 633 613 634 614 612 
-snd_wosgi_occasional 1153 5 633 613 634 614 612 
-snd_tirith_occasional 1153 5 594 635 595 598 598 
-snd_morannon_occasional 1153 1 598 
+snd_gondor_occasional 1153 6 594 267 595 259 596 596 
+snd_elves_occasional 1153 4 597 598 599 600 
+snd_lorien_occasional 1153 5 577 597 598 599 600 
+snd_beorn_occasional 1153 7 597 598 599 595 266 259 265 
+snd_rohan_occasional 1153 10 601 602 603 604 595 594 597 267 259 605 
+snd_dwarf_occasional 1153 5 606 607 267 608 609 
+snd_dale_occasional 1153 9 597 598 599 595 266 267 259 263 610 
+snd_rhun_occasional 1153 8 601 602 603 604 611 266 267 259 
+snd_harad_occasional 1153 10 602 603 604 611 612 613 614 612 613 614 
+snd_umbar_occasional 1153 3 596 615 616 
+snd_dunland_occasional 1153 7 611 594 256 257 258 259 265 
+snd_orc_occasional 1153 6 617 611 618 619 620 621 
+snd_guldur_occasional 1153 4 611 619 620 621 
+snd_moria_occasional 1153 4 596 596 622 623 
+snd_isengard_occasional 1153 12 623 611 619 620 621 266 618 267 606 607 610 265 
+snd_urukhai_occasional 1153 6 611 619 620 621 618 265 
+snd_seaside_occasional 1153 6 597 598 599 615 616 267 
+snd_morgul_occasional 1153 9 596 596 596 596 596 596 596 624 625 
+snd_eosgi_occasional 1153 8 619 620 621 626 609 627 610 608 
+snd_wosgi_occasional 1153 5 626 609 627 610 608 
+snd_tirith_occasional 1153 5 594 628 267 596 596 
+snd_morannon_occasional 1153 1 596 

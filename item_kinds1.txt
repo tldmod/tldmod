@@ -960,7 +960,7 @@ itemsfile version 2
  itm_orc_chain_greaves Chain_Greaves Chain_Greaves 1  orc_chain_greaves_lr 0  65550 0 700 1099679400102 3.000000 100 0 0 15 0 0 0 0 0 0 0 0
 0
 
- itm_orc_coif Orc_Coif Orc_Coif 1  orc_coif 0  1073807372 0 200 1099679400102 2.250000 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_orc_coif Orc_Coif Orc_Coif 1  orc_coif 0  1073807372 0 200 1099679400102 2.250000 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_orc_greaves Orc_Greaves Orc_Greaves 1  orc_chain_greaves_lr 0  65550 0 400 1099679400102 3.000000 100 0 0 12 0 0 0 0 0 0 0 0
@@ -1011,34 +1011,34 @@ itemsfile version 2
  itm_isen_orc_armor_g Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_g 0  16842765 0 1500 1099679400102 25.000000 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_a Isengard_Light_Harness Isengard_Light_Harness 1  urukhai_isen_a 0  16842765 0 200 1099635359744 4.000000 100 0 8 3 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 1  urukhai_isen_a 0  16842765 0 200 1099635359744 4.000000 100 0 8 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_b Isengard_Leather_Armor Isengard_Leather_Armor 1  urukhai_isen_b 0  16842765 0 500 1099635359744 10.000000 100 0 13 6 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_b Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_b 0  16842765 0 500 1099635359744 10.000000 100 0 13 6 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_c Isengard_Leather_Armor Isengard_Leather_Armor 1  urukhai_isen_c 0  16842765 0 700 1099635359744 12.000000 100 0 13 9 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_c Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_c 0  16842765 0 700 1099635359744 12.000000 100 0 13 9 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_d Isengard_Mail_and_Leather Isengard_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2000 1099679400102 22.000000 100 0 19 13 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2000 1099679400102 22.000000 100 0 19 13 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_e Isengard_Mail_Harness Isengard_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1500 1099679400102 20.000000 100 0 17 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1500 1099679400102 20.000000 100 0 17 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_a Isengard_Mail_and_Leather Isengard_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2000 1099679400102 22.000000 100 0 20 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2000 1099679400102 22.000000 100 0 20 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_b Isengard_Heavy_Armor Isengard_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2800 1099679400102 25.000000 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2800 1099679400102 25.000000 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_c Isengard_Heavy_Armor Isengard_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3000 1099679400102 26.000000 100 0 25 14 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3000 1099679400102 26.000000 100 0 25 14 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_d Isengard_Tracker_Leather Isengard_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 690 1099635359744 14.000000 100 0 18 10 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 690 1099635359744 14.000000 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_e Isengard_Tracker_Leather Isengard_Tracker_Leather 1  urukhai_isen_tracker_b 0  16842765 0 790 1099635359744 15.000000 100 0 18 10 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_e Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_b 0  16842765 0 790 1099635359744 15.000000 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
  itm_uruk_tracker_boots Uruk_Tracker_Boots Uruk_Tracker_Boots 1  uruk_furboot_lr 0  65550 0 300 1099635359744 2.000000 100 0 0 12 0 0 0 0 0 0 0 0
@@ -1053,13 +1053,13 @@ itemsfile version 2
  itm_uruk_ragwrap Uruk_Ragwrap Uruk_Ragwrap 1  uruk_ragwrap_lr 0  65550 0 10 1099679400102 1.000000 100 0 0 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_a Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_a 0  65548 0 300 1099679400102 2.000000 100 20 0 0 0 0 0 0 0 0 0 0
+ itm_isen_orc_helm_a Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_a 0  65548 0 300 1099679400102 2.000000 100 20 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_b Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_b 0  1073807372 0 350 1099679400102 2.000000 100 21 0 0 0 0 0 0 0 0 0 0
+ itm_isen_orc_helm_b Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_b 0  1073807372 0 350 1099679400102 2.000000 100 21 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_c Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_c 0  65548 0 600 1099679400102 3.000000 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_isen_orc_helm_c Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_c 0  65548 0 600 1099679400102 3.000000 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_a 0  65548 0 600 1099679400102 3.000000 100 25 0 0 0 0 0 0 0 0 0 0
@@ -1248,37 +1248,37 @@ itemsfile version 2
  itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4.000000 100 0 20 0 0 1600 96 0 40 0 0 1
 0
 
- itm_orc_helm_a Orc_Skullcap Orc_Skullcap 1  orc_helm_a 0  65548 0 300 1099679400102 2.000000 100 20 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_a Orc_Longnosehelm Orc_Longnosehelm 1  orc_helm_a 0  65548 0 300 1099679400102 2.000000 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_b Orc_Nasal_Cap Orc_Nasal_Cap 1  orc_helm_b 0  65548 0 350 1099635359744 2.500000 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_b Orc_Gratehelm Orc_Gratehelm 1  orc_helm_b 0  65548 0 350 1099635359744 2.500000 100 22 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_c Orc_Kettle_Cap Orc_Kettle_Cap 1  orc_helm_c 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_c Orc_Buckethelm Orc_Buckethelm 1  orc_helm_c 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_d Orc_Grill_Cap Orc_Grill_Cap 1  orc_helm_d 0  65548 0 350 1099679400102 2.500000 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_d Orc_Grillhelm Orc_Grillhelm 1  orc_helm_d 0  65548 0 350 1099679400102 2.500000 100 22 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_e Orc_Grill_Scullcap Orc_Grill_Scullcap 1  orc_helm_e 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_e Orc_Beakhelm Orc_Beakhelm 1  orc_helm_e 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_f Orc_Beak_Cap Orc_Beak_Cap 1  orc_helm_f 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_f Orc_Bughelm Orc_Bughelm 1  orc_helm_f 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_g Orc_Grill_Beak_Cap Orc_Grill_Beak_Cap 1  orc_helm_g 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_g Orc_Crowhelm Orc_Crowhelm 1  orc_helm_g 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_h Orc_Jagged_Helm Orc_Jagged_Helm 1  orc_helm_h 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_h Orc_Jawhelm Orc_Jawhelm 1  orc_helm_h 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_i Orc_Helm Orc_Helm 1  orc_helm_i 0  65548 0 600 1099679400102 3.000000 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_i Orc_Snouthelm Orc_Snouthelm 1  orc_helm_i 0  65548 0 600 1099679400102 3.000000 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_j Orc_Grill_Beak_Cap Orc_Grill_Beak_Cap 1  orc_helm_j 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_j Orc_Lizardhelm Orc_Lizardhelm 1  orc_helm_j 0  65548 0 400 1099679400102 3.000000 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_k Orc_Grill_Potcap Orc_Grill_Potcap 1  orc_helm_k 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_orc_helm_k Orc_Vulturehelm Orc_Vulturehelm 1  orc_helm_k 0  65548 0 500 1099679400102 3.000000 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_m_orc_light_a Mordor_Orc_Light_Armor Mordor_Orc_Light_Armor 1  orc_mordor_a 0  16842765 0 100 1099635359744 1.500000 100 0 5 3 0 0 0 0 0 0 0 0
@@ -1302,46 +1302,46 @@ itemsfile version 2
  itm_m_orc_heavy_b Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_g 0  16842765 0 1000 1099679400102 17.000000 100 0 18 7 0 0 0 0 0 0 0 0
 0
 
- itm_m_orc_heavy_c Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_h 0  16842765 0 1000 1099679400102 14.000000 100 0 18 8 0 0 0 0 0 0 0 0
+ itm_m_orc_heavy_c Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_h 0  16842765 0 1000 1099679400102 18.000000 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_m_orc_heavy_d Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_i 0  16842765 0 1500 1099679400102 19.000000 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_m_orc_heavy_d Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_i 0  16842765 0 1500 1099679400102 22.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_m_orc_heavy_e Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_j 0  16842765 0 2000 1099679400102 19.000000 100 0 20 10 0 0 0 0 0 0 0 0
+ itm_m_orc_heavy_e Mordor_Orc_Heavy_Armor Mordor_Orc_Heavy_Armor 1  orc_mordor_j 0  16842765 0 2000 1099679400102 22.000000 100 0 20 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_light_a Mordor_Uruk_Harness Mordor_Uruk_Harness 1  uruk_mordor_a 0  16842765 0 400 1099635359744 10.000000 100 0 9 3 0 0 0 0 0 0 0 0
+ itm_m_uruk_light_a Uruk_Harness Uruk_Harness 1  uruk_mordor_a 0  16842765 0 400 1099635359744 10.000000 100 0 9 3 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_light_b Mordor_Uruk_Thick_Harness Mordor_Uruk_Thick_Harness 1  uruk_mordor_b 0  16842765 0 500 1099635359744 12.000000 100 0 12 5 0 0 0 0 0 0 0 0
+ itm_m_uruk_light_b Uruk_Thick_Harness Uruk_Thick_Harness 1  uruk_mordor_b 0  16842765 0 500 1099635359744 12.000000 100 0 12 5 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_c Mordor_Uruk_Leather_Armor Mordor_Uruk_Leather_Armor 1  uruk_mordor_c 0  16842765 0 800 1099635359744 15.000000 100 0 15 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_c Uruk_Leather_Armor Uruk_Leather_Armor 1  uruk_mordor_c 0  16842765 0 800 1099635359744 15.000000 100 0 15 6 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_d Mordor_Uruk_Bolted_Armor Mordor_Uruk_Bolted_Armor 1  uruk_mordor_d 0  16842765 0 600 1099635359744 15.000000 100 0 12 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_d Uruk_Segmented_Armor Uruk_Segmented_Armor 1  uruk_mordor_d 0  16842765 0 600 1099635359744 15.000000 100 0 12 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_e Mordor_Uruk_Mail Mordor_Uruk_Mail 1  uruk_mordor_e 0  16842765 0 1500 1099679400102 22.000000 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_e Uruk_Mail Uruk_Mail 1  uruk_mordor_e 0  16842765 0 1500 1099679400102 22.000000 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_f Mordor_Uruk_Mail Mordor_Uruk_Mail 1  uruk_mordor_f 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_f Uruk_Mail Uruk_Mail 1  uruk_mordor_f 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_g Mordor_Uruk_Mail Mordor_Uruk_Mail 1  uruk_mordor_g 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_g Uruk_Mail Uruk_Mail 1  uruk_mordor_g 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_h Mordor_Uruk_Scale Mordor_Uruk_Scale 1  uruk_mordor_h 0  16842765 0 1500 1099679400102 21.000000 100 0 22 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_h Uruk_Scale Uruk_Scale 1  uruk_mordor_h 0  16842765 0 1500 1099679400102 21.000000 100 0 22 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_i Mordor_Uruk_Thick_Scale Mordor_Uruk_Thick_Scale 1  uruk_mordor_i 0  16842765 0 2000 704643072 24.000000 100 0 24 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_i Uruk_Thick_Scale Uruk_Thick_Scale 1  uruk_mordor_i 0  16842765 0 2000 704643072 24.000000 100 0 24 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_j Mordor_Uruk_Heavy_Armor Mordor_Uruk_Heavy_Armor 1  uruk_mordor_j 0  16842765 0 2000 704643072 26.000000 100 0 24 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_j Uruk_Heavy_Armor Uruk_Heavy_Armor 1  uruk_mordor_j 0  16842765 0 2000 704643072 26.000000 100 0 24 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_k Mordor_Uruk_Guard_Armor Mordor_Uruk_Guard_Armor 1  uruk_mordor_k 0  16842765 0 2500 704643072 28.000000 100 0 26 12 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_k 0  16842765 0 2500 704643072 28.000000 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
  itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 3000 704643072 30.000000 100 0 40 18 0 0 0 0 0 0 0 0
@@ -1359,22 +1359,22 @@ itemsfile version 2
  itm_evil_light_armor Sinister_Garb Sinister_Garb 1  evil_light_armor 0  16842765 0 500 1099635359744 10.000000 100 0 15 10 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_a Mordor_Uruk_Helm Mordor_Uruk_Helm 1  uruk_helm_a 0  65548 0 700 1099679400102 3.000000 100 27 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_a Uruk_Helm Uruk_Helm 1  uruk_helm_a 0  65548 0 700 1099679400102 3.000000 100 27 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_b Mordor_Uruk_Helm Mordor_Uruk_Helm 1  uruk_helm_b 0  65548 0 800 1099679400102 3.000000 100 29 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_b Uruk_Helm Uruk_Helm 1  uruk_helm_b 0  65548 0 800 1099679400102 3.000000 100 29 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_c Mordor_Uruk_Beak_Helm Mordor_Uruk_Beak_Helm 1  uruk_helm_c 0  65548 0 700 1099679400102 3.000000 100 27 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_c Uruk_Beak_Helm Uruk_Beak_Helm 1  uruk_helm_c 0  65548 0 700 1099679400102 3.000000 100 27 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_d Mordor_Uruk_Grill_Helm Mordor_Uruk_Grill_Helm 1  uruk_helm_d 0  65548 0 750 1099679400102 3.000000 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_d Uruk_Grill_Helm Uruk_Grill_Helm 1  uruk_helm_d 0  65548 0 750 1099679400102 3.000000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_e Mordor_Uruk_Mask_Helm Mordor_Uruk_Mask_Helm 1  uruk_helm_e 0  65548 0 900 1099679400102 4.000000 100 32 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_e Uruk_Mask_Helm Uruk_Mask_Helm 1  uruk_helm_e 0  65548 0 900 1099679400102 4.000000 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_helm_f Mordor_Uruk_Helm Mordor_Uruk_Helm 1  uruk_helm_f 0  65548 0 800 1099679400102 3.500000 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_uruk_helm_f Uruk_Helm Uruk_Helm 1  uruk_helm_f 0  65548 0 800 1099679400102 3.500000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mordor_cap_helm Mordor_Captain_Helm Mordor_Captain_Helm 1  mordor_captain_helmet 0  65548 0 2000 704643072 3.000000 100 37 0 0 0 0 0 0 0 0 0 0
@@ -2447,25 +2447,25 @@ itemsfile version 2
  itm_dwarf_helm_x Dwarf_Masked_Sallet Dwarf_Masked_Sallet 1  DwarfHelmSalletSargeant 0  65548 0 1200 704643072 2.000000 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_a Dwarven_Tunic_over_Mail Dwarven_Tunic_over_Mail 1  dwarf_tunicmail 0  16842765 0 2000 704643072 16.000000 100 0 28 13 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_a Dwarven_Tunic_over_Mail Dwarven_Tunic_over_Mail 1  dwarf_tunicmail 0  16842765 0 1000 704643072 16.000000 100 0 28 13 0 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor Dwarven_Pad_over_Mail Dwarven_Pad_over_Mail 1  dwarf_padmail 0  16842765 0 2200 704643072 16.000000 100 0 29 13 0 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor Dwarven_Pad_over_Mail Dwarven_Pad_over_Mail 1  dwarf_padmail 0  16842765 0 1100 704643072 16.000000 100 0 29 13 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_vest Dwarven_Archer_Armor Dwarven_Archer_Armor 1  dwarf_tunicmailarcher 0  16842765 0 2300 704643072 14.000000 100 0 28 14 0 0 0 0 0 0 0 0
+ itm_dwarf_vest Dwarven_Archer_Armor Dwarven_Archer_Armor 1  dwarf_tunicmailarcher 0  16842765 0 1100 704643072 14.000000 100 0 28 14 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_b Dwarven_Pad_over_Tunic Dwarven_Pad_over_Tunic 1  dwarf_padtunic 0  16842765 0 1800 234881024 10.000000 100 0 18 8 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_b Dwarven_Pad_over_Tunic Dwarven_Pad_over_Tunic 1  dwarf_padtunic 0  16842765 0 900 234881024 10.000000 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_c Dwarven_Scale_over_Mail Dwarven_Scale_over_Mail 1  dwarf_scalemail 0  16842765 0 4000 704643072 18.000000 100 2 40 13 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_c Dwarven_Scale_over_Mail Dwarven_Scale_over_Mail 1  dwarf_scalemail 0  16842765 0 2000 704643072 18.000000 100 2 40 13 0 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor_b Dwarven_Tunic Dwarven_Tunic 1  dwarf_tunic_erebor 0  16842765 0 500 234881024 5.000000 100 0 14 6 0 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor_b Dwarven_Tunic Dwarven_Tunic 1  dwarf_tunic_erebor 0  16842765 0 250 234881024 5.000000 100 0 14 6 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_vest_b Iron_Hills_Tunic Iron_Hills_Tunic 1  dwarf_tunic_ironhills 0  16842765 0 600 234881024 5.000000 100 0 15 6 0 0 0 0 0 0 0 0
+ itm_dwarf_vest_b Iron_Hills_Tunic Iron_Hills_Tunic 1  dwarf_tunic_ironhills 0  16842765 0 300 234881024 5.000000 100 0 15 6 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_pad_boots Dwarven_Padded_Boots Dwarven_Padded_Boots 1  dwarf_pad_boots 0  69390 0 700 234881024 1.000000 100 0 0 15 0 0 0 0 0 0 0 0
