@@ -3276,35 +3276,10 @@ game_menus = [
       "Fill merchants with faction stuff",
       [(call_script,"script_fill_merchants_cheat"),(display_message,"@DEBUG: Smiths just got stuffed!"),(jump_to_menu, "mnu_camp"),]),
 
-#      ("cheat_build_upgrades",   [(eq,"$cheat_mode",1)],
-#	  "Build all village upgrades.",
-#       [(try_for_range, ":cur_place", villages_begin, villages_end),
-#			(party_set_slot, ":cur_place", slot_center_has_manor, 1),
-#			(party_set_slot, ":cur_place", slot_center_has_fish_pond, 1),
-#			(party_set_slot, ":cur_place", slot_center_has_watch_tower, 1),
-#			(party_set_slot, ":cur_place", slot_center_has_school, 1),
-#			(party_set_slot, ":cur_place", slot_center_has_messenger_post, 1),
- #       (try_end),
-	#	(display_message, "@All villages have now been upgraded."),
-     #   ]),	  
-
-#      ("cheat_infest_planet",   [(eq,"$cheat_mode",1)],
-#	  "Infest all villages with bandits.",
-#       [(try_for_range, ":cur_place", villages_begin, villages_end),
-#			(party_set_slot, ":cur_place", slot_village_infested_by_bandits, "trp_bandit"),
-#        (try_end),
-#		(display_message, "@All villages are now infested by bandits."),
-#        ]),	   
-
 	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
-
 	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
-	 
 	 ("cheat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),	 
-	 
-
-    ]
-  ),
+]),
   
 ("camp_chest_fill",0,
  "^^^^^^^^Please choose faction to get items from.",
@@ -3558,22 +3533,10 @@ game_menus = [
             (try_begin),
               (lt, ":dist", raid_distance),
               (assign, "$g_encounter_is_in_village", ":village_no"),
-              (assign, "$g_encounter_type", enctype_fighting_against_village_raid),
+#              (assign, "$g_encounter_type", enctype_fighting_against_village_raid),
             (try_end),
           (try_end),
-          # (try_begin),
-            # (gt, "$g_player_raiding_village", 0),
-            # (assign, "$g_encounter_is_in_village", "$g_player_raiding_village"),
-            # (assign, "$g_encounter_type", enctype_catched_during_village_raid),
-            # (party_quick_attach_to_current_battle, "$g_encounter_is_in_village", 1), #attach as enemy
-            # (str_store_string, s1, "@Villagers"),
-            # (display_message, "str_s1_joined_battle_enemy", color_bad_news),
-          # (else_try),
-            # (eq, "$g_encounter_type", enctype_fighting_against_village_raid),
-            # (party_quick_attach_to_current_battle, "$g_encounter_is_in_village", 0), #attach as friend
-            # (str_store_string, s1, "@Villagers"),
-            # (display_message, "str_s1_joined_battle_friend", color_good_news),# Let village party join battle at your side
-          # (try_end),
+
           (call_script, "script_let_nearby_parties_join_current_battle", 0, 0),
           (call_script, "script_encounter_init_variables"),
           (assign, "$encountered_party_hostile", 0),

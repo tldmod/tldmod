@@ -575,8 +575,7 @@ slot_scene_belfry_props_begin   = 10
 ########################################################
 ##  TROOP SLOTS            #############################
 ########################################################
-#slot_troop_role         = 0  # 10=Kingdom Lord
-#slot_troop_player_start_char   = 1  #TLD starting char
+
 slot_troop_wound_mask          = 1 # TLD heroes wounds and death system
 wound_arm   = 0x001
 wound_leg   = 0x002
@@ -585,20 +584,25 @@ wound_chest = 0x008
 wound_death = 0x010
 
 slot_troop_occupation          = 2  # 0 = free, 1 = merchant
-#slot_troop_duty               = 3  # Kingdom duty, 0 = free
+### Troop occupations slot_troop_occupation
+slto_kingdom_hero      = 2
+slto_player_companion  = 3
+#slto_kingdom_lady      = 4
+slto_kingdom_seneschal = 5
+slto_robber_knight     = 6
+slto_retirement        = 11
+stl_unassigned          = -1
+stl_reserved_for_player = -2
+stl_rejected_by_player  = -3
+
+
+
 slot_troop_state               = 3  
 slot_troop_last_talk_time      = 4
 slot_troop_met                 = 5
 slot_troop_party_template      = 6
-#slot_troop_kingdom_rank        = 7
-
 slot_troop_renown              = 7
-
-##slot_troop_is_prisoner         = 8  # important for heroes only
 slot_troop_prisoner_of_party   = 8  # important for heroes only
-#slot_troop_is_player_companion = 9  # important for heroes only:::USE  slot_troop_occupation = slto_player_companion
-
-
 
 slot_troop_leaded_party        = 10 # important for kingdom heroes only
 slot_troop_wealth              = 11 # important for kingdom heroes only
@@ -611,31 +615,17 @@ slot_troop_loyalty              = 15
 slot_troop_player_order_state   = 16
 slot_troop_player_order_object  = 17
 slot_troop_rumor_check          = 18 # TLD if 1: troop already told player a rumor this day
-
-#slot_troop_present_at_event    = 19 #defined below
-
+slot_troop_present_at_event    = 19
 slot_troop_does_not_give_quest = 20
 slot_troop_player_debt         = 21
 slot_troop_player_relation     = 22
-#slot_troop_player_favor        = 23
+
 slot_troop_last_quest          = 24
 slot_troop_last_quest_betrayed = 25
 slot_troop_last_persuasion_time= 26
 slot_troop_last_comment_time   = 27
 slot_troop_spawned_before      = 28
-
-#Post 0907 changes begin
 slot_troop_last_comment_slot   = 29
-slot_troop_present_at_event    = 19
-#Post 0907 changes end
-
-slot_troop_spouse              = 30
-slot_troop_father              = 31
-slot_troop_mother              = 32
-slot_troop_daughter            = 33
-slot_troop_son                 = 34
-slot_troop_sibling             = 35
-slot_troop_lover               = 36
 
 slot_troop_trainer_met                       = 30
 slot_troop_trainer_waiting_for_result        = 31 #used in TLD
@@ -645,79 +635,81 @@ slot_troop_trainer_num_opponents_to_beat     = 34 #used in TLD
 slot_troop_trainer_opponent_troop            = 35
 slot_troop_trainer_training_difficulty       = 36
 
+slot_lord_reputation_type     = 37
+slot_troop_change_to_faction          = 38
+slot_troop_readiness_to_join_army     = 39
+slot_troop_readiness_to_follow_orders = 40
 
-slot_troop_family_begin        = 30
-slot_troop_family_end          = 36
-
-slot_troop_enemy_1             = 40
-slot_troop_enemy_2             = 41
-slot_troop_enemy_3             = 42
-slot_troop_enemy_4             = 43
-slot_troop_enemy_5             = 44
-
-slot_troop_enemies_begin       = 40
-slot_troop_enemies_end         = 45
-
-slot_troop_honorable          = 50
-#slot_troop_merciful          = 51
-slot_lord_reputation_type     = 52
-
-slot_troop_change_to_faction          = 55
-slot_troop_readiness_to_join_army     = 57
-slot_troop_readiness_to_follow_orders = 58
+#TLD number of items in a shop: body,head,foot,hand,gold,1h,2h,pole,shield,bow,thrown,arrows,horses,food,goods
+# same order as itp_type flags!! 
+slot_troop_shop_horses = 41
+slot_troop_shop_1h     = 42
+slot_troop_shop_2h     = 43
+slot_troop_shop_pole   = 44
+slot_troop_shop_arrows = 45
+slot_troop_shop_bolts  = 46
+slot_troop_shop_shield = 47
+slot_troop_shop_bow    = 48
+slot_troop_shop_crossbow = 49
+slot_troop_shop_thrown = 50
+slot_troop_shop_goods  = 51
+slot_troop_shop_head   = 52
+slot_troop_shop_body   = 53
+slot_troop_shop_foot   = 54
+slot_troop_shop_hand   = 55
+slot_troop_shop_gold   = 56
+slot_troop_shop_food   = 57
 
 # NPC-related constants
+slot_troop_first_encountered          = 58
+slot_troop_home                       = 59
 
-#NPC companion changes begin
-slot_troop_first_encountered          = 59
-slot_troop_home                       = 60
-
-slot_troop_morality_state       = 61
+slot_troop_morality_state       = 60
 tms_no_problem         = 0
 tms_acknowledged       = 1
 tms_dismissed          = 2
 
-slot_troop_morality_type = 62
+slot_troop_morality_type = 61
 tmt_aristocratic = 1
 tmt_egalitarian = 2
 tmt_humanitarian = 3
 tmt_honest = 4
 tmt_pious = 5
+slot_troop_morality_value = 62
+slot_troop_2ary_morality_type  = 63
+slot_troop_2ary_morality_state = 64
+slot_troop_2ary_morality_value = 65
+slot_troop_morality_penalties =  66 ### accumulated grievances from morality conflicts
 
-slot_troop_morality_value = 63
-
-slot_troop_2ary_morality_type  = 64
-slot_troop_2ary_morality_state = 65
-slot_troop_2ary_morality_value = 66
-
-slot_troop_morality_penalties =  69 ### accumulated grievances from morality conflicts
-
-
-slot_troop_personalityclash_object     = 71
+slot_troop_personalityclash_object     = 67
 #(0 - they have no problem, 1 - they have a problem)
-slot_troop_personalityclash_state    = 72 #1 = pclash_penalty_to_self, 2 = pclash_penalty_to_other, 3 = pclash_penalty_to_other,
+slot_troop_personalityclash_state    = 68 #1 = pclash_penalty_to_self, 2 = pclash_penalty_to_other, 3 = pclash_penalty_to_other,
 pclash_penalty_to_self  = 1
 pclash_penalty_to_other = 2
 pclash_penalty_to_both  = 3
 #(a string)
-slot_troop_personalityclash2_object   = 73
-slot_troop_personalityclash2_state    = 74
+slot_troop_personalityclash2_object   = 69
+slot_troop_personalityclash2_state    = 70
 
-slot_troop_personalitymatch_object   =  75
-slot_troop_personalitymatch_state   =  76
+slot_troop_personalitymatch_object   =  71
+slot_troop_personalitymatch_state   =  72
 
-slot_troop_personalityclash_penalties = 77 ### accumulated grievances from personality clash
+slot_troop_personalityclash_penalties = 73 ### accumulated grievances from personality clash
 
-slot_troop_home_speech_delivered = 78
+slot_troop_home_speech_delivered = 74
 
-slot_troop_last_complaint_hours = 79 #TLD: last time complained about his faction being demolished
+slot_troop_last_complaint_hours = 75 #TLD: last time complained about his faction being demolished
+
+# TLD Player Reward system
+slot_troop_upkeep_not_paid = 76 # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
+slot_troop_subfaction      = 77 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
+slot_troop_player_reserve_party = 78
 
 #NPC history slots
+slot_troop_met_previously      = 80
+slot_troop_turned_down_twice   = 81
 
-slot_troop_met_previously        = 80
-slot_troop_turned_down_twice     = 81
-slot_troop_playerparty_history   = 82
-
+slot_troop_playerparty_history = 82
 pp_history_scattered         = 1
 pp_history_dismissed         = 2
 pp_history_quit              = 3
@@ -784,115 +776,10 @@ slot_troop_strings_end = 131
 slot_troop_payment_request = 132
 slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
-#Rebellion changes begin
-slot_troop_discussed_rebellion = 140
-slot_troop_support_base = 141
-
 ## TLD Penalties system slot(foxyman)
-slot_troop_prof_night_penalties_begin = 142
+slot_troop_prof_night_penalties_begin = 134
 slot_troop_prof_night_penalties_end   = slot_troop_prof_night_penalties_begin+6
 
-#TLD number of items in a shop: body,head,foot,hand,gold,1h,2h,pole,shield,bow,thrown,arrows,horses,food,goods
-# same order as itp_type flags!! 
-slot_troop_shop_horses = 150
-slot_troop_shop_1h     = 151
-slot_troop_shop_2h     = 152
-slot_troop_shop_pole   = 153
-slot_troop_shop_arrows = 154
-slot_troop_shop_bolts  = 155
-slot_troop_shop_shield = 156
-slot_troop_shop_bow    = 157
-slot_troop_shop_crossbow = 158
-slot_troop_shop_thrown = 159
-slot_troop_shop_goods  = 160
-slot_troop_shop_head   = 161
-slot_troop_shop_body   = 162
-slot_troop_shop_foot   = 163
-slot_troop_shop_hand   = 164
-slot_troop_shop_gold   = 165
-slot_troop_shop_food   = 166
-
-
-# TLD faction ranks
-# slot_troop_faction_rank = 167
-# stfr_position_mask      =        0x7
-# stfr_position_unit      =        0x1
-# stfr_rank_mask          =       0xF8
-# stfr_rank_unit          =       0x08
-# stfr_equipments_permit  =     0xF800
-# stfr_equipment_unit     =     0x0800
-# stfr_soldiers_permit    =    0x10000
-# stfr_supplies_permit   =     0x20000
-# stfr_garrison_permit    =    0x40000
-# stfr_grand_general      =    0x80000
-# stfr_in_command         =   0x100000
-# stfr_reinforcement      =   0x200000
-# stfr_name_string        = 0xff000000
-# stfr_name_string_unit   = 0x01000000
-
-# slot_troop_faction_status = 168
-
-# TLD Player Reward system
-slot_troop_upkeep_not_paid = 169   # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
-slot_troop_subfaction      = 170 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
-
-slot_troop_player_reserve_party      = 171
-
-#######################
-
-#Rebellion changes end
-# character backgrounds
-cb_noble = 1
-cb_merchant = 2
-cb_guard = 3
-cb_forester = 4
-cb_nomad = 5
-cb_thief = 6
-cb_priest = 7
-
-cb2_page = 0
-cb2_apprentice = 1
-cb2_urchin  = 2
-cb2_steppe_child = 3
-cb2_merchants_helper = 4
-
-cb3_poacher = 3
-cb3_craftsman = 4
-cb3_peddler = 5
-cb3_troubadour = 7
-cb3_squire = 8
-cb3_lady_in_waiting = 9
-cb3_student = 10
-
-cb4_revenge = 1
-cb4_loss    = 2
-cb4_wanderlust =  3
-cb4_disown  = 5
-cb4_greed  = 6
-
-#NPC system changes end
-#Encounter types
-enctype_fighting_against_village_raid = 1
-enctype_catched_during_village_raid   = 2
-
-
-### Troop occupations slot_troop_occupation
-##slto_merchant           = 1
-slto_kingdom_hero       = 2
-slto_player_companion   = 3
-slto_kingdom_lady       = 4
-slto_kingdom_seneschal  = 5
-slto_robber_knight      = 6
-
-stl_unassigned          = -1
-stl_reserved_for_player = -2
-stl_rejected_by_player  = -3
-
-#NPC changes begin
-slto_retirement      = 11
-#slto_retirement_medium    = 12
-#slto_retirement_short     = 13
-#NPC changes end
 
 ########################################################
 ##  QUEST SLOTS            #############################
@@ -1017,7 +904,6 @@ merchant_toll_duration        = 72 #Tolls are valid for 72 hours
 
 hero_escape_after_defeat_chance = 100 #MV: was 80
 
-
 raid_distance = 4
 
 surnames_begin = "str_surname_1"
@@ -1060,44 +946,26 @@ tavern_minstrels_end   = companions_begin
 tavern_travelers_begin = "trp_tavern_traveler_1"
 tavern_travelers_end   = tavern_minstrels_begin
 
-ransom_brokers_begin = "trp_ransom_broker_1"
-ransom_brokers_end   = tavern_travelers_begin
-
-mercenary_troops_begin = "trp_watchman"
-mercenary_troops_end = "trp_mercenaries_end"
-
 lord_quests_begin = "qst_deliver_message"
 lord_quests_end   = "qst_follow_army"
 
 enemy_lord_quests_begin = lord_quests_end #no enemy lord quests at present in TLD, was "qst_lend_surgeon"
 enemy_lord_quests_end   = lord_quests_end
 
-village_elder_quests_begin = lord_quests_end #no village elder quests in TLD, was "qst_deliver_grain"
-village_elder_quests_end = lord_quests_end #no village elder quests in TLD, was "qst_eliminate_bandits_infesting_village"
-
 mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = "qst_tld_introduction"
 
-lady_quests_begin = mayor_quests_begin  #no lady quests in TLD, was "qst_rescue_lord_by_replace"
-lady_quests_end   = mayor_quests_begin
-
 army_quests_begin = "qst_deliver_cattle_to_army"
-army_quests_end   = lady_quests_begin
-
+army_quests_end   = mayor_quests_begin
 
 all_quests_begin = 0
 all_quests_end = "qst_quests_end"
 
 centers_begin = "p_town_minas_tirith"
-castles_begin = "p_castle_1"
-villages_begin = "p_castle_1" # changed from p_village_1
+centers_end = "p_centers_end"
 
-landmark_begin = "p_town_minas_tirith"
+landmark_begin = centers_begin
 landmark_end = "p_test_scene"
-
-centers_end = castles_begin
-castles_end = villages_begin
-villages_end   = villages_begin # MV: no villages, was "p_salt_mine"
 
 advcamps_begin = "p_advcamp_gondor"
 advcamps_end   = centers_end
@@ -1105,39 +973,14 @@ advcamps_end   = centers_end
 scenes_begin = "scn_minas_tirith_center"
 scenes_end = "scn_castle_1_exterior"
 
-#spawn_points_begin = "p_town_minas_tirith"
-#spawn_points_end = "p_spawn_points_end"
-
 regular_troops_begin       = "trp_novice_fighter"
 regular_troops_end         = "trp_Ramun_the_slave_trader"
-
-#swadian_merc_parties_begin = "p_town_1_mercs"
-#swadian_merc_parties_end   = "p_town_8_mercs"
-
-#vaegir_merc_parties_begin  = "p_town_8_mercs"
-#vaegir_merc_parties_end    = "p_p_town_minas_tirith"
-
-
-# arena_masters_begin    = "trp_brigand_arena_master"
-# arena_masters_end      = "trp_troops_end"
 
 training_ground_trainers_begin    = "trp_trainer_gondor"
 training_ground_trainers_end      = "trp_ransom_broker_1"
 
-# town_walkers_begin = "trp_town_walker_1"
-# town_walkers_end = "trp_village_walker_1"
-
-# village_walkers_begin = "trp_village_walker_1"
-# village_walkers_end   = "trp_spy_walker_1"
-
 spy_walkers_begin = "trp_spy_walker_1"
 spy_walkers_end = "trp_tournament_master"
-
-# walkers_begin = town_walkers_begin
-# walkers_end   = spy_walkers_end
-
-armor_merchants_begin  = "trp_smith_mtirith"
-armor_merchants_end    = "trp_barman_mtirith"
 
 weapon_merchants_begin = "trp_smith_mtirith"
 weapon_merchants_end   = "trp_barman_mtirith"
@@ -1145,25 +988,15 @@ weapon_merchants_end   = "trp_barman_mtirith"
 tavernkeepers_begin    = "trp_barman_mtirith"
 tavernkeepers_end      = "trp_town_1_horse_merchant"
 
-goods_merchants_begin  = "trp_town_1_horse_merchant"
-goods_merchants_end    = "trp_elder_mtirith"
-
 horse_merchants_begin  = "trp_town_1_horse_merchant"
 horse_merchants_end    = "trp_elder_mtirith"
 
 mayors_begin           = "trp_elder_mtirith"
 mayors_end             = "trp_village_1_elder"
 
-village_elders_begin   = "trp_village_1_elder"
-village_elders_end     = "trp_merchants_end"
-
-
 average_price_factor = 1000
 minimum_price_factor = 100
 maximum_price_factor = 10000
-
-village_prod_min = -5
-village_prod_max = 18
 
 item_warg_begin = "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"
@@ -1180,25 +1013,7 @@ food_end = "itm_grain"
 scraps_begin = "itm_metal_scraps_bad"
 scraps_end = "itm_sumpter_horse" #"itm_metal_scraps_good"+1
 
-#reference_books_begin = "itm_book_wound_treatment_reference"
-#reference_books_end   = trade_goods_begin
-#readable_books_begin = "itm_book_tactics"
-#readable_books_end   = reference_books_begin
-#books_begin = readable_books_begin
-#books_end = reference_books_end
-#horses_begin = "itm_sumpter_horse"
-#horses_end = "itm_arrows"
-#weapons_begin = "itm_one_handed_war_axe_a"
-#weapons_end = "itm_tab_shield_small_round_b"
-#ranged_weapons_begin = "itm_javelin"
-#ranged_weapons_end = "itm_corsair_bow"
-#armors_begin = "itm_leather_gloves"
-#armors_end = "itm_tab_shield_small_round_b"
-#shields_begin = "itm_tab_shield_small_round_b"
-#shields_end = "itm_javelin"
-
 # Banner constants
-
 banner_meshes_begin = "mesh_banner_a01"
 banner_meshes_end_minus_one = "mesh_banner_f21"
 
@@ -1229,29 +1044,9 @@ banner_map_icons_end_minus_one = "icon_banner_126"
 banner_scene_props_begin = "spr_banner_a"
 banner_scene_props_end_minus_one = "spr_banner_f21"
 
-khergit_banners_begin_offset = 63
-khergit_banners_end_offset = 84
-
 # Some constants for merchant invenotries
 merchant_inventory_space = 30
 num_merchandise_goods = 3 #MV: was 40
-
-#num_max_river_pirates = 25
-#num_max_zendar_peasants = 25
-#num_max_zendar_manhunters = 10
-
-#num_max_dp_bandits = 10
-#num_max_refugees = 10
-#num_max_deserters = 10
-
-#num_max_militia_bands = 15
-#num_max_armed_bands = 12
-
-#num_max_vaegir_punishing_parties = 20
-#num_max_rebel_peasants = 25
-
-#num_max_frightened_farmers = 50
-#num_max_undead_messengers  = 20
 
 num_forest_bandit_spawn_points = 5
 num_mountain_bandit_spawn_points = 5
@@ -1486,7 +1281,7 @@ ws_party_spawns_list = [
 ("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 ("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 ("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-("p_town_gundabad_mirkwood_outpost","pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_m_outpost","pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 #Advance camps   
 ("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
 ("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
@@ -1760,7 +1555,7 @@ center_list = [
 ("p_town_goblin_south_outpost", ["scn_goblin_south_outpost_center", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
 	[-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_no_troop", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_gundabad_mirkwood_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
+("p_town_gundabad_m_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
 	[-1, "trp_town_48_weaponsmith", "trp_town_48_horse_merchant", "trp_no_troop", "pt_gundabad_reinf_a", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[2,2,2,2,2,0,4,2,0,2,4,4,4,2,1,900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 ("p_town_erebor", ["scn_erebor_center", "scn_erebor_castle", "scn_rohan_prison",-1,"scn_dwarf_arena",-1, "mesh_town_erebor"],
@@ -1834,7 +1629,7 @@ center_list = [
 centers_disabled_at_start =	[
   "p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp",#"p_town_dunland_camp",
   "p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_ne_outpost", 
-  "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_mirkwood_outpost"
+  "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost"
 ]		 
 #### end of center descriptions
 
@@ -1939,7 +1734,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     ("p_town_pinnath_gelin","snd_gondor_ambiance" ,"snd_goodforest_ambiance"      ,"snd_elves_occasional"),
     ("p_town_erebor"       ,"snd_town_ambiance"   ,"snd_moria_ambiance"           ,"snd_dwarf_occasional"),
     ("p_town_minas_morgul" ,0                     ,"snd_morgul_ambiance"          ,"snd_morgul_occasional"),
-    ("p_town_gundabad_mirkwood_outpost","snd_orcs_ambiance","snd_evilforest_ambiance","snd_orc_occasional"),
+    ("p_town_gundabad_m_outpost","snd_orcs_ambiance","snd_evilforest_ambiance","snd_orc_occasional"),
     ("p_town_troll_cave"   ,0                     ,"snd_evilforest_ambiance"      ,"snd_orc_occasional"),
     ("p_town_morannon"     ,0                     ,"snd_wind_ambiance"            ,0),
 ] 

@@ -2569,7 +2569,6 @@ scripts = [
     [ (store_script_param_1, ":troop_id"),
       (assign, reg0, 50),
       (try_begin),
-        #(is_between, "$g_talk_troop", ransom_brokers_begin, ransom_brokers_end),
         (store_character_level, ":troop_level", ":troop_id"),
         (assign, ":ransom_amount", ":troop_level"),
         (val_add, ":ransom_amount", 10), 
@@ -3640,8 +3639,7 @@ scripts = [
         (try_for_range, ":other_center", centers_begin, centers_end),
           (party_is_active, ":other_center"), #TLD
           (party_slot_eq, ":other_center", slot_center_destroyed, 0), #TLD - not destroyed
-          (this_or_next|is_between, ":center_no", centers_begin, centers_end),
-          (is_between, ":center_no", villages_begin, villages_end),
+          (is_between, ":center_no", centers_begin, centers_end),
           (neq, ":other_center", ":center_no"),
           (store_distance_to_party_from_party, ":cur_distance", ":center_no", ":other_center"),
           (lt, ":cur_distance", 110),
@@ -3692,8 +3690,7 @@ scripts = [
         (try_for_range, ":center_no", centers_begin, centers_end),
           (party_is_active, ":center_no"), #TLD
           (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
-          (this_or_next|is_between, ":center_no", centers_begin, centers_end),
-          (is_between, ":center_no", villages_begin, villages_end),
+          (is_between, ":center_no", centers_begin, centers_end),
           (party_get_slot, ":center_production", ":center_no", ":cur_good_slot"),
           (val_sub, ":center_production", ":new_production_difference"),
           (party_set_slot, ":center_no", ":cur_good_slot", ":center_production"),
@@ -3704,17 +3701,12 @@ scripts = [
   #script_update_trade_good_prices
   # INPUT: none
   ("update_trade_good_prices",
-    [
-      (try_for_range, ":center_no", centers_begin, centers_end),
+    [ (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed
-        (this_or_next|is_between, ":center_no", centers_begin, centers_end),
-        (is_between, ":center_no", villages_begin, villages_end),
+        (is_between, ":center_no", centers_begin, centers_end),
         (call_script, "script_update_trade_good_price_for_party", ":center_no"),
       (try_end),
-#      (call_script, "script_update_trade_good_price_for_party", "p_zendar"),
-#      (call_script, "script_update_trade_good_price_for_party", "p_salt_mine"),
-#      (call_script, "script_update_trade_good_price_for_party", "p_four_ways_inn"),
   ]),
 
   #script_update_trade_good_price_for_party
@@ -4523,11 +4515,8 @@ scripts = [
        (try_end),
        (str_store_string, s0, "@{s0}^TOTAL: {reg3} ({s2})"),
      (else_try),
-       (try_begin),
-         (eq, ":use_comma", 1),
-         (str_store_string, s0, "@None"),
-       (else_try),
-         (str_store_string, s0, "@^None"),
+       (try_begin),(eq, ":use_comma", 1),(str_store_string, s0, "@None"),
+        (else_try),                      (str_store_string, s0, "@^None"),
        (try_end),
      (try_end),
   ]),
@@ -4715,20 +4704,11 @@ scripts = [
          # choose opponent based on player level and random number
          (store_random_in_range, ":random_no", 0, 100),
          (val_add, ":random_no", ":player_level_bias"), #-14..+113
-         (try_begin),
-           (lt, ":random_no", 20),
-           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_1_troop),
-         (else_try),
-           (lt, ":random_no", 40),
-           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_2_troop),
-         (else_try),
-           (lt, ":random_no", 60),
-           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_3_troop),
-         (else_try),
-           (lt, ":random_no", 80),
-           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_4_troop),
-         (else_try),
-           (faction_get_slot, ":opponent", "$g_encountered_party_faction", slot_faction_tier_5_troop),
+         (try_begin),(lt,":random_no",20),(faction_get_slot,":opponent","$g_encountered_party_faction",slot_faction_tier_1_troop),
+          (else_try),(lt,":random_no",40),(faction_get_slot,":opponent","$g_encountered_party_faction",slot_faction_tier_2_troop),
+          (else_try),(lt,":random_no",60),(faction_get_slot,":opponent","$g_encountered_party_faction",slot_faction_tier_3_troop),
+          (else_try),(lt,":random_no",80),(faction_get_slot,":opponent","$g_encountered_party_faction",slot_faction_tier_4_troop),
+          (else_try),                     (faction_get_slot,":opponent","$g_encountered_party_faction",slot_faction_tier_5_troop),
          (try_end),
          
          # arm the opponent randomly
@@ -4771,86 +4751,56 @@ scripts = [
      #(set_visitor, ":entry_point", ":troop"),
      (mission_tpl_entry_clear_override_items, "mt_training_ground_training", ":entry_point"),
          
-	 (try_begin),(eq, "$g_talk_troop", "trp_trainer_gondor"),
-         (assign, ":shield_item" , "itm_gon_tab_shield_a"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_rohan"),
-         (assign, ":shield_item" , "itm_rohan_shield_c"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_elf"),
-         (assign, ":shield_item" , "itm_mirkwood_spear_shield_c"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_dwarf"),
-         (assign, ":shield_item" , "itm_beorn_shield"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_dale"),
+	 (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(assign, ":shield_item" , "itm_gon_tab_shield_a"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(assign, ":shield_item" , "itm_rohan_shield_c"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(assign, ":shield_item" , "itm_mirkwood_spear_shield_c"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(assign, ":shield_item" , "itm_beorn_shield"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),
 		 (try_begin),(eq, ":team", 0),
 			(assign, ":shield_item" , "itm_dale_shield_a"),
 		 (else_try),
 			(assign, ":shield_item" , "itm_dale_shield_b"),
 		 (try_end),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_harad"),
-         (assign, ":shield_item" , "itm_harad_shield_a"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_rhun"),
-         (assign, ":shield_item" , "itm_rhun_shield"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_khand"),
-         (assign, ":shield_item" , "itm_tab_shield_small_round_b"),
-     (else_try),(eq, "$g_talk_troop", "trp_trainer_beorn"),
-         (assign, ":shield_item" , "itm_beorn_shield"),
-     (else_try), (eq, "$g_talk_troop", "trp_trainer_umbar"),
-         (assign, ":shield_item" , "itm_umb_shield_b"),
-     (else_try),#(eq, "$g_talk_troop", "trp_trainer_mordor"), #or isengard - for all orcs
+      (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),(assign, ":shield_item" , "itm_harad_shield_a"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),(assign, ":shield_item" , "itm_rhun_shield"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(assign, ":shield_item" , "itm_tab_shield_small_round_b"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(assign, ":shield_item" , "itm_beorn_shield"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),(assign, ":shield_item" , "itm_umb_shield_b"),
+      (else_try),#(eq, "$g_talk_troop", "trp_trainer_mordor"), #or isengard - for all orcs
          (assign, ":shield_item" , "itm_orc_shield_a"),
      (try_end),
   # clothes 
      (try_begin),
        (eq, ":team", 0), #player team
-       (try_begin),(eq, "$g_talk_troop", "trp_trainer_gondor"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_b"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_rohan"),
-         #(mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_green_tunic"), #naked
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_elf"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_b"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_dwarf"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_red_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_dale"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_b"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_harad"),
-         #(mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_red_tunic"), # naked
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_rhun"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_black_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_khand"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_b"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_beorn"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_beorn_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_umbar"),
-         #(mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_beorn_tunic"), # naked
-       (else_try),#(eq, "$g_talk_troop", "trp_trainer_mordor"), #or isengard - for all orcs
-         #(mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_white_tunic_b"), #naked
+       (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_b"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_green_tunic"), #naked
+        (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_b"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_red_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_b"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_red_tunic"), # naked
+        (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_b"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_beorn_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_beorn_tunic"), # naked
+        (else_try),                                          #(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_b"), #naked
        (try_end),
      (else_try),  #opponents
-       (try_begin),(eq, "$g_talk_troop", "trp_trainer_gondor"),
-		 (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_black_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_rohan"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_green_tunic"), 
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_elf"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_green_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_dwarf"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_blue_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_dale"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_blue_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_harad"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_red_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_rhun"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_rhun_armor_a"), 
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_khand"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_khand_light"), 
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_beorn"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_woodman_tunic"),
-       (else_try), (eq, "$g_talk_troop", "trp_trainer_umbar"),
-         (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_black_tunic"),
-       (else_try), #(eq, "$g_talk_troop", "trp_trainer_mordor"), #or isengard - for all orcs
-		 (try_begin),(eq, ":race", tf_orc),
-           (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_orc_tribal_a"),
-		 (else_try),
-		   (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_black_tunic"),
-		 (try_end),
+       (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_green_tunic"), 
+        (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_green_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_blue_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_blue_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_red_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_rhun_armor_a"), 
+        (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_khand_light"), 
+        (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_woodman_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
+        (else_try),#(eq,"$g_talk_troop","trp_trainer_mordor"), #or isengard - for all orcs
+		 # (try_begin),(eq, ":race", tf_orc),
+           # (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_orc_tribal_a"),
+		 # (else_try),
+		   # (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", "itm_black_tunic"),
+		 # (try_end),
        (try_end),
 	 (try_end),
      # proper boots
@@ -4892,9 +4842,10 @@ scripts = [
        (eq, "$g_tld_training_mode", abm_mass_melee),
        (assign, ":is_mounted", 0),
      (try_end),
-     # overrides: no horses for dwarves, always horses for rohan
+     # overrides: no horses for dwarves and big orcs, always horses for rohan
      (try_begin),
-       (eq, "$g_talk_troop", "trp_trainer_dwarf"),
+       (this_or_next|eq, "$g_talk_troop", "trp_trainer_dwarf"),
+	   (is_between, ":race", tf_urukhai, tf_orc_end),  
        (assign, ":is_mounted", 0),
      (else_try),
        (eq, "$g_talk_troop", "trp_trainer_rohan"),
@@ -4947,23 +4898,11 @@ scripts = [
      (try_end),
 
      #...and equip
-     (try_begin),
-       (ge, ":item_1", 0),
-       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_1"),
-     (try_end),
-     (try_begin),
-       (ge, ":item_2", 0),
-       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_2"),
-     (try_end),
-     (try_begin),
-       (ge, ":item_3", 0),
-       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_3"),
-     (try_end),
-     (try_begin),
-       (ge, ":item_4", 0),
-       (mission_tpl_entry_add_override_item, "mt_training_ground_training", ":entry_point", ":item_4"),
-     (try_end),
-   ]),
+	(try_begin),(ge,":item_1",0),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point",":item_1"),(try_end),
+	(try_begin),(ge,":item_2",0),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point",":item_2"),(try_end),
+	(try_begin),(ge,":item_3",0),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point",":item_3"),(try_end),
+	(try_begin),(ge,":item_4",0),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point",":item_4"),(try_end),
+]),
 
   #script_get_random_melee_training_weapon
   # INPUT: none
@@ -5594,8 +5533,8 @@ scripts = [
         (assign, ":quests_begin", mayor_quests_begin),
         (assign, ":quests_end", mayor_quests_end),
       (else_try),
-        (assign, ":quests_begin", lady_quests_begin),
-        (assign, ":quests_end", lady_quests_end),
+        (assign, ":quests_begin", mayor_quests_begin),
+        (assign, ":quests_end", mayor_quests_end),
       (try_end),
       (assign, ":result", -1),
       (try_for_range, ":unused", 0, 30), #Repeat trial twenty times - MV: changed to 30
@@ -5707,47 +5646,7 @@ scripts = [
 			(assign, ":quest_rank_reward", 50),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
-# Village Elder quests
-        # (else_try),
-          # (eq, ":quest_no", "qst_deliver_grain"),
-          # (try_begin),
-            # (is_between, ":giver_center_no", villages_begin, villages_end),
-            # #The quest giver is the village elder
-            # (call_script, "script_get_troop_item_amount", ":giver_troop", "itm_grain"),
-            # (eq, reg0, 0),
-            # (neg|party_slot_ge, ":giver_center_no", slot_town_prosperity, 40),
-            # (assign, ":quest_target_center", ":giver_center_no"),
-            # (store_random_in_range, ":quest_target_amount", 4, 8),
-            # (assign, ":quest_expiration_days", 30),
-            # (assign, ":quest_dont_give_again_period", 20),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
-        # (else_try),
-          # (eq, ":quest_no", "qst_deliver_cattle"),
-          # (try_begin),
-            # (is_between, ":giver_center_no", villages_begin, villages_end),
-            # #The quest giver is the village elder
-            # (party_get_slot, ":num_cattle", ":giver_center_no", slot_village_number_of_cattle),
-            # (lt, ":num_cattle", 50),
-            # (assign, ":quest_target_center", ":giver_center_no"),
-            # (store_random_in_range, ":quest_target_amount", 5, 10),
-            # (assign, ":quest_expiration_days", 30),
-            # (assign, ":quest_dont_give_again_period", 20),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
-        # (else_try),
-          # (eq, ":quest_no", "qst_train_peasants_against_bandits"),
-          # (try_begin),
-            # (is_between, ":giver_center_no", villages_begin, villages_end),
-            # #The quest giver is the village elder
-            # (store_skill_level, ":player_trainer", "skl_trainer", "trp_player"),
-            # (gt, ":player_trainer", 0),
-            # (store_random_in_range, ":quest_target_amount", 5, 8),
-            # (assign, ":quest_target_center", ":giver_center_no"),
-            # (assign, ":quest_expiration_days", 20),
-            # (assign, ":quest_dont_give_again_period", 40),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
+
 # Mayor quests
         (else_try),
           (eq, ":quest_no", "qst_escort_merchant_caravan"),
@@ -5953,69 +5852,7 @@ scripts = [
            (assign, ":quest_expiration_days", 10),
            (assign, ":quest_dont_give_again_period", 15),
            (assign, ":result", ":quest_no"),
-# Lady quests
-        # (else_try),
-          # (eq, ":quest_no", "qst_rescue_lord_by_replace"),
-          # (try_begin),
-            # (ge, "$g_talk_troop_faction_relation", 0),
-            # (is_between, ":player_level", 5, 25),
-            # (troop_get_slot, ":cur_target_troop", ":giver_troop", slot_troop_father),
-            # (try_begin),
-              # (eq, ":cur_target_troop", 0),
-              # (troop_get_slot, ":cur_target_troop", ":giver_troop", slot_troop_spouse),
-            # (try_end),
-            # #(troop_slot_eq, ":cur_target_troop", slot_troop_is_prisoner, 1),#Skip if the lady's father/husband is not in prison
-            # (troop_slot_ge, ":cur_target_troop", slot_troop_prisoner_of_party, 0),
-            # (call_script, "script_search_troop_prisoner_of_party", ":cur_target_troop"),
-            # (assign, ":cur_target_center", reg0),
-            # (is_between, ":cur_target_center", centers_begin, centers_end),#Skip if he is not in a town
-            # (assign, ":quest_target_center", ":cur_target_center"),
-            # (assign, ":quest_target_troop", ":cur_target_troop"),
-            # (assign, ":quest_expiration_days", 30),
-            # (assign, ":quest_dont_give_again_period", 73),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
-        # (else_try),
-          # (eq, ":quest_no", "qst_deliver_message_to_prisoner_lord"),
-          # (try_begin),
-            # (ge, "$g_talk_troop_faction_relation", 0),
-            # (is_between, ":player_level", 5, 25),
-            # (troop_get_slot, ":cur_target_troop", ":giver_troop", slot_troop_father),
-            # (try_begin),
-              # (eq, ":cur_target_troop", 0),
-              # (troop_get_slot, ":cur_target_troop", ":giver_troop", slot_troop_spouse),
-            # (try_end),
-            # #(troop_slot_eq, ":cur_target_troop", slot_troop_is_prisoner, 1),#Skip if the lady's father/husband is not in prison
-            # (troop_slot_ge, ":cur_target_troop", slot_troop_prisoner_of_party, 0),
-            # (call_script, "script_search_troop_prisoner_of_party", ":cur_target_troop"),
-            # (assign, ":cur_target_center", reg0),
-            # (is_between, ":cur_target_center", centers_begin, centers_end),#Skip if he is not in a town
-            # (assign, ":quest_target_center", ":cur_target_center"),
-            # (assign, ":quest_target_troop", ":cur_target_troop"),
-            # (assign, ":quest_expiration_days", 30),
-            # (assign, ":quest_dont_give_again_period", 30),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
-        # (else_try),
-          # (eq, ":quest_no", "qst_duel_for_lady"),
-          # (try_begin),
-            # (ge, "$g_talk_troop_faction_relation", 0),
-            # (ge, ":player_level", 10),
-            # (call_script, "script_cf_troop_get_random_enemy_troop_with_occupation", ":giver_troop", slto_kingdom_hero),#Can fail
-            # (assign, ":cur_target_troop", reg0),
-            # (neg|troop_slot_eq, ":giver_troop", slot_troop_spouse, ":cur_target_troop"), #must not be in the family
-            # (neg|troop_slot_eq, ":giver_troop", slot_troop_father, ":cur_target_troop"),
-            # #(troop_slot_eq, ":cur_target_troop", slot_troop_is_prisoner, 0),
-            # (neg|troop_slot_ge, ":cur_target_troop", slot_troop_prisoner_of_party, 0),
-            # (troop_slot_ge, ":cur_target_troop", slot_troop_leaded_party, 0),
-            # (neg|troop_slot_eq, ":cur_target_troop", slot_lord_reputation_type, lrep_goodnatured),
-            # (neg|troop_slot_eq, ":cur_target_troop", slot_lord_reputation_type, lrep_upstanding),
-            # (assign, ":quest_target_troop", ":cur_target_troop"),
-            # (assign, ":quest_expiration_days", 30),
-            # (assign, ":quest_dont_give_again_period", 50),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
-          
+        
 # Enemy Lord Quests
         # (else_try),
           # (eq, ":quest_no", "qst_lend_surgeon"),
@@ -6129,20 +5966,7 @@ scripts = [
             (hero_can_join, "p_main_party"), #Skip if player has no available slots
             (ge, "$g_talk_troop_faction_relation", 0),
             (ge, ":player_level", 10),
-            # (troop_get_slot, ":cur_object_troop", ":giver_troop", slot_troop_daughter),
-            # (store_random_in_range, ":random_no", 0, 2),
-            # (try_begin),
-              # (this_or_next|eq,  ":cur_object_troop", 0),
-              # (eq, ":random_no", 0),
-              # (troop_get_slot, ":cur_object_troop_2", ":giver_troop", slot_troop_spouse),
-              # (gt, ":cur_object_troop_2", 0),
-              # (assign, ":cur_object_troop", ":cur_object_troop_2"),
-            # (try_end),
-            # (gt, ":cur_object_troop", 0),#Skip lords without a lady
-            # (troop_get_type, ":cur_troop_gender", ":cur_object_troop"),
-            # (eq, ":cur_troop_gender", 1),#Skip if it is not female
-            # (gt, ":giver_center_no", 0),#Skip if lord is outside the center
-            # (troop_slot_eq, ":cur_object_troop", slot_troop_cur_center, ":giver_center_no"),#Skip if the lady is not at the same center
+
             
             # TLD: Choose messenger of appropriate race
             (try_begin),
@@ -6238,49 +6062,7 @@ scripts = [
 ##            (assign, ":quest_gold_reward", 300),
 ##            (assign, ":result", ":quest_no"),
 ##          (try_end),
-##        (else_try),
-##          (eq, ":quest_no", "qst_rescue_lady_under_siege"),
-##          (try_begin),
-##            (gt, ":player_level", 15),
-##            (troop_get_slot, ":cur_object_troop", ":giver_troop", slot_troop_daughter),
-##            (store_random_in_range, ":random_no", 0, 2),
-##            (try_begin),
-##              (this_or_next|eq,  ":cur_object_troop", 0),
-##              (eq, ":random_no", 0),
-##              (troop_get_slot, ":cur_object_troop_2", ":giver_troop", slot_troop_spouse),
-##              (gt, ":cur_object_troop_2", 0),
-##              (assign, ":cur_object_troop", ":cur_object_troop_2"),
-##            (try_end),
-##            (gt, ":cur_object_troop", 0),#Skip lords without a lady
-##            (troop_get_type, ":cur_troop_gender", ":cur_object_troop"),
-##            (eq, ":cur_troop_gender", 1),#Skip if lady is not female
-##            (troop_get_slot, ":cur_target_center", ":cur_object_troop", slot_troop_cur_center),
-##            (is_between, ":cur_target_center", centers_begin, centers_end),#Skip if she is not in a center
-##            (neq,":giver_center_no", ":cur_target_center"),#Skip current center
-##            (call_script, "script_cf_get_random_siege_location_with_faction", ":giver_faction_no"),#Can fail
-##            (assign, ":cur_target_center", reg0),
-##            (troop_set_slot, ":cur_object_troop", slot_troop_cur_center, ":cur_target_center"),#Move lady to the siege location
-##            (assign, ":quest_object_troop", ":cur_object_troop"),
-##            (assign, ":quest_target_center", ":cur_target_center"),
-##            (assign, ":quest_target_troop", ":giver_troop"),
-##            (assign, ":quest_importance", 1),
-##            (assign, ":quest_xp_reward", 200),
-##            (assign, ":quest_gold_reward", 750),
-##            (assign, ":result", ":quest_no"),
-##          (try_end),
-##        (else_try),
-##          (eq, ":quest_no", "qst_deliver_message_to_lover"),
-##          (try_begin),
-##            (is_between, ":player_level", 5, 30),
-##            (troop_get_slot, ":cur_target_troop", ":giver_troop", slot_troop_lover),
-##            (gt, ":cur_target_troop", 0),#Skip lords without a lover
-##            (troop_get_slot, ":cur_target_center", ":cur_target_troop", slot_troop_cur_center),
-##            (is_between, ":cur_target_center", centers_begin, centers_end),#Skip if she is not in a center
-##            (neq,":giver_center_no", ":cur_target_center"),#Skip current center
-##            (assign, ":quest_target_troop", ":cur_target_troop"),
-##            (assign, ":quest_target_center", ":cur_target_center"),
-##            (assign, ":result", ":quest_no"),
-##          (try_end),
+
 ##        (else_try),
 ##          (eq, ":quest_no", "qst_bring_reinforcements_to_siege"),
 ##          (try_begin),
@@ -6519,15 +6301,6 @@ scripts = [
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
       
-            # (assign, ":cur_object_center", -1),
-            # (try_for_range, ":cur_village", villages_begin, villages_end),
-              # (party_slot_eq, ":cur_village", slot_town_lord, ":giver_troop"),
-              # (store_distance_to_party_from_party, ":dist", ":cur_village", ":giver_center_no"),
-              # (lt, ":dist", 25),
-              # (assign, ":cur_object_center", ":cur_village"),
-            # (try_end),
-            # (ge, ":cur_object_center", 0),#Skip if the quest giver is not the owner of any villages around the center
-            
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             #(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -7147,36 +6920,7 @@ scripts = [
       (assign, reg0, ":result"),
   ]),  
   
-  # script_cf_troop_get_random_enemy_troop_with_occupation
-  # Input: arg1 = troop_no,
-  # Output: reg0 = enemy_troop_no (Can fail)
-  ("cf_troop_get_random_enemy_troop_with_occupation",
-    [ (store_script_param_1, ":troop_no"),
-      (store_script_param_2, ":occupation"),
-      
-      (assign, ":result", -1),
-      (assign, ":count_enemies", 0),
-      (try_for_range, ":cur_slot", slot_troop_enemies_begin, slot_troop_enemies_end),
-        (troop_get_slot, ":cur_enemy", ":troop_no", ":cur_slot"),
-        (gt, ":cur_enemy", 0),
-        (troop_slot_eq, ":cur_enemy", slot_troop_occupation, ":occupation"),
-        (val_add, ":count_enemies", 1),
-      (try_end),
-      (store_random_in_range,":random_enemy",0,":count_enemies"),
-      (assign, ":count_enemies", 0),
-      (try_for_range, ":cur_slot", slot_troop_enemies_begin, slot_troop_enemies_end),
-        (eq, ":result", -1),
-        (troop_get_slot, ":cur_enemy", ":troop_no", ":cur_slot"),
-        (gt, ":cur_enemy", 0),
-        (troop_slot_eq, ":cur_enemy", slot_troop_occupation, ":occupation"),
-        (val_add, ":count_enemies", 1),
-        (gt, ":count_enemies", ":random_enemy"),
-        (assign, ":result", ":cur_enemy"),
-      (try_end),
-      (neq, ":result", -1),
-      (assign, reg0, ":result"),
-  ]),
-  
+ 
   # script_cf_get_random_lord_in_a_center_with_faction
   # INPUT: arg1 = faction_no
   #OUTPUT: reg0 = troop_no, Can Fail! reg1 = distance
@@ -8200,15 +7944,13 @@ scripts = [
         (assign, reg0, ":party"),
         (assign, ":min_dis", ":dis"),
     (try_end),
-    ]
-  ),
+]),
 
   # script_get_percentage_with_randomized_round
   # Input: arg1 = value, arg2 = percentage
   # Output: none
   ("get_percentage_with_randomized_round",
-    [
-      (store_script_param, ":value", 1),
+    [ (store_script_param, ":value", 1),
       (store_script_param, ":percentage", 2),
 
       (store_mul, ":result", ":value", ":percentage"),
@@ -8224,34 +7966,34 @@ scripts = [
         (val_add, ":result", 1),
       (try_end),
       (assign, reg0, ":result"),
-      ]),
+]),
   
   #script_kill_cattle_from_herd
   # Input: arg1 = party_no, arg2 = amount
   # Output: none (fills trp_temp_troop's inventory)
-  ("kill_cattle_from_herd",
-    [ (store_script_param_1, ":party_no"),
-      (store_script_param_2, ":amount"),
+  # ("kill_cattle_from_herd",
+    # [ (store_script_param_1, ":party_no"),
+      # (store_script_param_2, ":amount"),
 
-      (troop_clear_inventory, "trp_temp_troop"),
-      (store_mul, ":meat_amount", ":amount", 2),
-      (troop_add_items, "trp_temp_troop", "itm_cattle_meat", ":meat_amount"),
+      # (troop_clear_inventory, "trp_temp_troop"),
+      # (store_mul, ":meat_amount", ":amount", 2),
+      # (troop_add_items, "trp_temp_troop", "itm_cattle_meat", ":meat_amount"),
 
-      (troop_get_inventory_capacity, ":inv_size", "trp_temp_troop"),
-      (try_for_range, ":i_slot", 0, ":inv_size"),
-        (troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
-        (eq, ":item_id", "itm_cattle_meat"),
-        (troop_set_inventory_slot_modifier, "trp_temp_troop", ":i_slot", imod_fresh),
-      (try_end),
+      # (troop_get_inventory_capacity, ":inv_size", "trp_temp_troop"),
+      # (try_for_range, ":i_slot", 0, ":inv_size"),
+        # (troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
+        # (eq, ":item_id", "itm_cattle_meat"),
+        # (troop_set_inventory_slot_modifier, "trp_temp_troop", ":i_slot", imod_fresh),
+      # (try_end),
 
-      (party_get_num_companions, ":num_cattle", ":party_no"),
-      (try_begin),
-        (ge, ":amount", ":num_cattle"),
-        (remove_party, ":party_no"),
-      (else_try),
-        (party_remove_members, ":party_no", "trp_cattle", ":amount"),
-      (try_end),
-      ]),
+      # (party_get_num_companions, ":num_cattle", ":party_no"),
+      # (try_begin),
+        # (ge, ":amount", ":num_cattle"),
+        # (remove_party, ":party_no"),
+      # (else_try),
+        # (party_remove_members, ":party_no", "trp_cattle", ":amount"),
+      # (try_end),
+      # ]),
   
   # script_get_troop_attached_party
   # Input: arg1 = troop_no
@@ -10887,33 +10629,6 @@ scripts = [
       (try_end),
   ]),
   
-  # script_troop_count_number_of_enemy_troops
-  # Input: arg1 = troop_no
-  # Output: reg0 = number_of_enemy_troops
-  ("troop_count_number_of_enemy_troops",
-    [ (store_script_param_1, ":troop_no"),
-      (assign, ":enemy_count", 0),
-      (try_for_range, ":i_enemy_slot", slot_troop_enemies_begin, slot_troop_enemies_end),
-        (troop_slot_ge, ":troop_no", ":i_enemy_slot", 1),
-        (val_add, ":enemy_count", 1),
-      (try_end),
-      (assign, reg0, ":enemy_count"),
-  ]),
-  
-  # script_cf_troop_check_troop_is_enemy
-  # Input: arg1 = troop_no, arg2 = checked_troop_no
-  # Output: none (Can fail)
-  ("cf_troop_check_troop_is_enemy",
-    [ (store_script_param_1, ":troop_no"),
-      (store_script_param_2, ":checked_troop_no"),
-      (assign, ":result", 0),
-      (try_for_range, ":i_enemy_slot", slot_troop_enemies_begin, slot_troop_enemies_end),
-        (troop_slot_eq, ":troop_no", ":i_enemy_slot", ":checked_troop_no"),
-        (assign, ":result", 1),
-      (try_end),
-      (eq, ":result", 1),
-  ]),
-  
   # script_troop_get_leaded_center_with_index
   # Input: arg1 = troop_no, arg2 = center index within range between zero and the number of centers that troop owns
   # Output: reg0 = center_no
@@ -11550,7 +11265,7 @@ scripts = [
       (assign, ":stand_animation", -1),
 	  
       (try_begin),
-        (this_or_next|is_between, ":troop_no", armor_merchants_begin, armor_merchants_end),
+#        (this_or_next|is_between, ":troop_no", armor_merchants_begin, armor_merchants_end),
         (is_between, ":troop_no", weapon_merchants_begin, weapon_merchants_end),
         (try_begin),
           (troop_get_type, ":cur_troop_gender", ":troop_no"),
@@ -13171,60 +12886,6 @@ scripts = [
      (try_end),
     ]),
 
-  #script_update_villages_infested_by_bandits - TLD: or don't
-  # ("update_villages_infested_by_bandits",
-    # [
-     # (try_for_range, ":village_no", villages_begin, villages_end),
-       # (try_begin),
-         # (check_quest_active, "qst_eliminate_bandits_infesting_village"),
-         # (quest_slot_eq, "qst_eliminate_bandits_infesting_village", slot_quest_target_center, ":village_no"),
-         # (quest_get_slot, ":cur_state", "qst_eliminate_bandits_infesting_village", slot_quest_current_state),
-         # (val_add, ":cur_state", 1),
-         # (try_begin),
-           # (lt, ":cur_state", 3),
-           # (quest_set_slot, "qst_eliminate_bandits_infesting_village", slot_quest_current_state, ":cur_state"),
-         # (else_try),
-           # (party_set_slot, ":village_no", slot_village_infested_by_bandits, 0),
-           # (call_script, "script_abort_quest", "qst_eliminate_bandits_infesting_village", 2),
-         # (try_end),
-       # (else_try),
-         # (check_quest_active, "qst_deal_with_bandits_at_lords_village"),
-         # (quest_slot_eq, "qst_deal_with_bandits_at_lords_village", slot_quest_target_center, ":village_no"),
-         # (quest_get_slot, ":cur_state", "qst_deal_with_bandits_at_lords_village", slot_quest_current_state),
-         # (val_add, ":cur_state", 1),
-         # (try_begin),
-           # (lt, ":cur_state", 3),
-           # (quest_set_slot, "qst_deal_with_bandits_at_lords_village", slot_quest_current_state, ":cur_state"),
-         # (else_try),
-           # (party_set_slot, ":village_no", slot_village_infested_by_bandits, 0),
-           # (call_script, "script_abort_quest", "qst_deal_with_bandits_at_lords_village", 2),
-         # (try_end),
-       # (else_try),
-         # (party_set_slot, ":village_no", slot_village_infested_by_bandits, 0),
-         # (store_random_in_range, ":random_no", 0, 100),
-         # (lt, ":random_no", 3),
-         # (store_random_in_range, ":random_no", 0, 3),
-         # (try_begin),
-           # (eq, ":random_no", 0),
-           # (assign, ":bandit_troop", "trp_bandit"),
-         # (else_try),
-           # (eq, ":random_no", 1),
-           # (assign, ":bandit_troop", "trp_mountain_bandit"),
-         # (else_try),
-           # (assign, ":bandit_troop", "trp_forest_bandit"),
-         # (try_end),
-         # (party_set_slot, ":village_no", slot_village_infested_by_bandits, ":bandit_troop"),
-         # #Reduce prosperity of the village by 3
-         # (call_script, "script_change_center_prosperity", ":village_no", -3),
-         # (try_begin),
-           # (eq, "$cheat_mode", 1),
-           # (str_store_party_name, s1, ":village_no"),
-           # (display_message, "@{s1} is infested by bandits."),
-         # (try_end),
-       # (try_end),
-     # (try_end),
-     # ]),
-
   #script_update_faction_notes
   # INPUT: faction_no
   ("update_faction_notes",
@@ -13474,34 +13135,7 @@ scripts = [
      (else_try),
        (str_clear, s2),
      (try_end),
-     # (try_begin),
-       # (is_between, ":center_no", villages_begin, villages_end),
-     # (else_try),
-       # (eq, 0, 1), #TLD: no villages
-       # (assign, ":num_villages", 0),
-       # (try_for_range_backwards, ":village_no", villages_begin, villages_end),
-         # (party_slot_eq, ":village_no", slot_village_bound_center, ":center_no"),
-         # (try_begin),
-           # (eq, ":num_villages", 0),
-           # (str_store_party_name_link, s8, ":village_no"),
-         # (else_try),
-           # (eq, ":num_villages", 1),
-           # (str_store_party_name_link, s7, ":village_no"),
-           # (str_store_string, s8, "@{s7} and {s8}"),
-         # (else_try),
-           # (str_store_party_name_link, s7, ":village_no"),
-           # (str_store_string, s8, "@{s7}, {s8}"),
-         # (try_end),
-         # (val_add, ":num_villages", 1),
-       # (try_end),
-       # (try_begin),
-         # (eq, ":num_villages", 0),
-         # (str_store_string, s2, "@{s2}It has no villages.^"),
-       # (else_try),
-         # (store_sub, reg0, ":num_villages", 1),
-         # (str_store_string, s2, "@{s2}{reg0?Its villages are:Its village is} {s8}.^"),
-       # (try_end),
-     # (try_end),
+
      (call_script, "script_get_prosperity_text_to_s50", ":center_no"),
      (try_begin), #TLD: if party is disabled, clear all text so there will be no wiki entry
        (this_or_next|party_slot_eq, ":center_no", slot_center_destroyed, 1), # TLD
@@ -13519,8 +13153,7 @@ scripts = [
   ("update_center_recon_notes",
     [(store_script_param, ":center_no", 1),
      (try_begin),
-       (this_or_next|is_between, ":center_no", centers_begin, centers_end),
-       (is_between, ":center_no", castles_begin, castles_end),
+       (is_between, ":center_no", centers_begin, centers_end),
        (party_get_slot, ":center_food_store", ":center_no", slot_party_food_store),
        (call_script, "script_center_get_food_consumption", ":center_no"),
        (assign, ":food_consumption", reg0),
@@ -13717,8 +13350,7 @@ scripts = [
   # INPUT: troop_no
   # OUTPUT: none
   ("add_troop_to_cur_tableau_for_character",
-    [
-       (store_script_param, ":troop_no",1),
+    [  (store_script_param, ":troop_no",1),
 
        (set_fixed_point_multiplier, 100),
 
@@ -13771,8 +13403,7 @@ scripts = [
   # INPUT: troop_no
   # OUTPUT: none
   ("add_troop_to_cur_tableau_for_inventory",
-    [
-       (store_script_param, ":troop_no",1),
+    [  (store_script_param, ":troop_no",1),
        (store_mod, ":side", ":troop_no", 4), #side flag is inside troop_no value
        (val_div, ":troop_no", 4), #removing the flag bit
        (val_mul, ":side", 90), #to degrees
@@ -13827,8 +13458,7 @@ scripts = [
   # INPUT: troop_no
   # OUTPUT: none
   ("add_troop_to_cur_tableau_for_party",
-    [
-       (store_script_param, ":troop_no",1),
+    [  (store_script_param, ":troop_no",1),
        (store_mod, ":hide_weapons", ":troop_no", 2), #hide_weapons flag is inside troop_no value
        (val_div, ":troop_no", 2), #removing the flag bit
 
@@ -14079,40 +13709,40 @@ scripts = [
   #script_get_improvement_details
   # INPUT: arg1 = improvement
   # OUTPUT: reg0 = base_cost
-  ("get_improvement_details",
-    [(store_script_param, ":improvement_no", 1),
-     (try_begin),
-       (eq, ":improvement_no", slot_center_has_manor),
-       (str_store_string, s0, "@Manor"),
-       (str_store_string, s1, "@A manor lets you rest at the village and pay your troops half wages while you rest."),
-       (assign, reg0, 8000),
-     (else_try),
-       (eq, ":improvement_no", slot_center_has_fish_pond),
-       (str_store_string, s0, "@Mill"),
-       (str_store_string, s1, "@A mill increases village prosperity by 5%."),
-       (assign, reg0, 6000),
-     (else_try),
-       (eq, ":improvement_no", slot_center_has_watch_tower),
-       (str_store_string, s0, "@Watch Tower"),
-       (str_store_string, s1, "@A watch tower lets the villagers raise alarm earlier. The time it takes for enemies to loot the village increases by 25%."),
-       (assign, reg0, 5000),
-     (else_try),
-       (eq, ":improvement_no", slot_center_has_school),
-       (str_store_string, s0, "@School"),
-       (str_store_string, s1, "@A shool increases the loyality of the villagers to you by +1 every month."),
-       (assign, reg0, 9000),
-     (else_try),
-       (eq, ":improvement_no", slot_center_has_messenger_post),
-       (str_store_string, s0, "@Messenger Post"),
-       (str_store_string, s1, "@A messenger post lets the inhabitants send you a message whenever enemies are nearby, even if you are far away from here."),
-       (assign, reg0, 4000),
-     (else_try),
-       (eq, ":improvement_no", slot_center_has_prisoner_tower),
-       (str_store_string, s0, "@Prison Tower"),
-       (str_store_string, s1, "@A prison tower reduces the chance of captives held here running away successfully."),
-       (assign, reg0, 7000),
-     (try_end),
-     ]),
+  # ("get_improvement_details",
+    # [(store_script_param, ":improvement_no", 1),
+     # (try_begin),
+       # (eq, ":improvement_no", slot_center_has_manor),
+       # (str_store_string, s0, "@Manor"),
+       # (str_store_string, s1, "@A manor lets you rest at the village and pay your troops half wages while you rest."),
+       # (assign, reg0, 8000),
+     # (else_try),
+       # (eq, ":improvement_no", slot_center_has_fish_pond),
+       # (str_store_string, s0, "@Mill"),
+       # (str_store_string, s1, "@A mill increases village prosperity by 5%."),
+       # (assign, reg0, 6000),
+     # (else_try),
+       # (eq, ":improvement_no", slot_center_has_watch_tower),
+       # (str_store_string, s0, "@Watch Tower"),
+       # (str_store_string, s1, "@A watch tower lets the villagers raise alarm earlier. The time it takes for enemies to loot the village increases by 25%."),
+       # (assign, reg0, 5000),
+     # (else_try),
+       # (eq, ":improvement_no", slot_center_has_school),
+       # (str_store_string, s0, "@School"),
+       # (str_store_string, s1, "@A shool increases the loyality of the villagers to you by +1 every month."),
+       # (assign, reg0, 9000),
+     # (else_try),
+       # (eq, ":improvement_no", slot_center_has_messenger_post),
+       # (str_store_string, s0, "@Messenger Post"),
+       # (str_store_string, s1, "@A messenger post lets the inhabitants send you a message whenever enemies are nearby, even if you are far away from here."),
+       # (assign, reg0, 4000),
+     # (else_try),
+       # (eq, ":improvement_no", slot_center_has_prisoner_tower),
+       # (str_store_string, s0, "@Prison Tower"),
+       # (str_store_string, s1, "@A prison tower reduces the chance of captives held here running away successfully."),
+       # (assign, reg0, 7000),
+     # (try_end),
+     # ]),
   
   #script_cf_troop_agent_is_alive
   # INPUT: arg1 = troop_id
@@ -14126,44 +13756,6 @@ scripts = [
        (val_add, ":alive_count", 1),
      (try_end),
      (gt, ":alive_count", 0),
-     ]),
-
-  #script_cf_village_recruit_volunteers_cond
-  # INPUT: none
-  # OUTPUT: none
-  ("cf_village_recruit_volunteers_cond",
-    [(neg|party_slot_eq, "$current_town", slot_village_state, svs_looted),
-     (neg|party_slot_eq, "$current_town", slot_village_state, svs_being_raided),
-     # (neg|party_slot_ge, "$current_town", slot_village_infested_by_bandits, 1),
-     (store_faction_of_party, ":village_faction", "$current_town"),
-     (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
-     (store_relation, ":village_faction_relation", ":village_faction", "fac_player_faction"),
-     (ge, ":center_relation", 0),
-     (this_or_next|ge, ":center_relation", 5),
-     (this_or_next|eq, ":village_faction", "$players_kingdom"),
-     (this_or_next|ge, ":village_faction_relation", 0),
-     (             eq, "$players_kingdom", 0),
-     (party_slot_ge, "$current_town", slot_center_volunteer_troop_amount, 0),
-     (party_slot_ge, "$current_town", slot_center_volunteer_troop_type, 1),
-     (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
-     (ge, ":free_capacity", 1),
-     ]),
-
-  #script_village_recruit_volunteers_recruit
-  # INPUT: none
-  # OUTPUT: none
-  ("village_recruit_volunteers_recruit",
-    [(party_get_slot, ":volunteer_troop", "$current_town", slot_center_volunteer_troop_type),
-     (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
-     (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
-     (val_min, ":volunteer_amount", ":free_capacity"),
-     (store_troop_gold, ":gold", "trp_player"),
-     (store_div, ":gold_capacity", ":gold", 10),#10 denars per man
-     (val_min, ":volunteer_amount", ":gold_capacity"),
-     (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
-     (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
-     (store_mul, ":cost", ":volunteer_amount", 10),#10 denars per man
-     (troop_remove_gold, "trp_player", ":cost"),
      ]),
 
   #script_get_troop_item_amount
@@ -14338,46 +13930,8 @@ scripts = [
   ("get_center_ideal_prosperity",
     [#(store_script_param, ":center_no", 1),
      (assign, ":ideal", 40),
-     # (try_begin),
-       # (is_between, ":center_no", villages_begin, villages_end),
-       # (try_begin),
-         # (party_slot_eq, ":center_no", slot_center_has_fish_pond, 1),
-         # (val_add, ":ideal", 5),
-       # (try_end),
-       # (party_get_slot, ":land_quality", ":center_no", slot_village_land_quality),
-       # (val_mul, ":land_quality", 3),
-       # (val_add, ":ideal", ":land_quality"),
-       # (party_get_slot, ":num_cattle", ":center_no", slot_village_number_of_cattle),
-       # (val_div, ":num_cattle", 20),
-       # (val_add, ":ideal", ":num_cattle"),
-     # (else_try),
-       # (try_for_range, ":village_no", villages_begin, villages_end),
-         # (party_slot_eq, ":village_no", slot_village_bound_center, ":center_no"),
-         # (party_get_slot, ":prosperity", ":village_no", slot_town_prosperity),
-         # (val_div, ":prosperity", 20),
-         # (val_add, ":ideal", ":prosperity"),
-       # (try_end),
-     # (try_end),
      (assign, reg0, ":ideal"),
      ]),
-
-  #script_get_poorest_village_of_faction
-  # INPUT: arg1 = center_no
-  # OUTPUT: reg0 = ideal_prosperity
-  # ("get_poorest_village_of_faction",
-    # [(store_script_param, ":faction_no", 1),
-     # (assign, ":min_prosperity_village", -1),
-     # (assign, ":min_prosperity", 101),
-     # (try_for_range, ":village_no", villages_begin, villages_end),
-       # (store_faction_of_party, ":village_faction", ":village_no"),
-       # (eq, ":village_faction", ":faction_no"),
-       # (party_get_slot, ":prosperity", ":village_no", slot_town_prosperity),
-       # (lt, ":prosperity", ":min_prosperity"),
-       # (assign, ":min_prosperity", ":prosperity"),
-       # (assign, ":min_prosperity_village", ":village_no"),
-     # (try_end),
-     # (assign, reg0, ":min_prosperity_village"),
-     # ]),
 
   #script_troop_add_gold_faction (MV for TLD)
   # INPUT: arg1 = troop_no, arg2 = amount, arg3 = faction
@@ -15791,9 +15345,7 @@ scripts = [
   # Input: none
   # Output: none (sets $g_average_center_value_per_faction)
   ("store_average_center_value_per_faction",
-    [
-      (store_sub, ":num_towns", centers_end, centers_begin),
-      (store_sub, ":num_castles", castles_end, castles_begin),
+    [ (store_sub, ":num_towns", centers_end, centers_begin),
       (assign, ":num_factions", 0),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
@@ -15801,7 +15353,6 @@ scripts = [
       (try_end),
       (val_max, ":num_factions", 1),
       (store_mul, "$g_average_center_value_per_faction", ":num_towns", 2),
-      (val_add, "$g_average_center_value_per_faction", ":num_castles"),
       (val_mul, "$g_average_center_value_per_faction", 10),
       (val_div, "$g_average_center_value_per_faction", ":num_factions"),
      ]),

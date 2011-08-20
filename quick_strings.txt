@@ -1,4 +1,4 @@
-906
+894
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -308,18 +308,6 @@ qstr_Poor Poor
 qstr_Average Average
 qstr_Rich Rich
 qstr_Very_Rich Very_Rich
-qstr_Manor Manor
-qstr_A_manor_lets_you_res A_manor_lets_you_rest_at_the_village_and_pay_your_troops_half_wages_while_you_rest.
-qstr_Mill Mill
-qstr_A_mill_increases_vil A_mill_increases_village_prosperity_by_5%.
-qstr_Watch_Tower Watch_Tower
-qstr_A_watch_tower_lets_t A_watch_tower_lets_the_villagers_raise_alarm_earlier._The_time_it_takes_for_enemies_to_loot_the_village_increases_by_25%.
-qstr_School School
-qstr_A_shool_increases_th A_shool_increases_the_loyality_of_the_villagers_to_you_by_+1_every_month.
-qstr_Messenger_Post Messenger_Post
-qstr_A_messenger_post_let A_messenger_post_lets_the_inhabitants_send_you_a_message_whenever_enemies_are_nearby,_even_if_you_are_far_away_from_here.
-qstr_Prison_Tower Prison_Tower
-qstr_A_prison_tower_reduc A_prison_tower_reduces_the_chance_of_captives_held_here_running_away_successfully.
 qstr_{s50}_Caves {s50}_Caves
 qstr_{s50}_Mines {s50}_Mines
 qstr_{s50}_Woods {s50}_Woods

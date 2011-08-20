@@ -283,12 +283,7 @@ lord_leave_prison
 lord_leave
 lord_leave_give_quest
 enemy_lord_tell_mission
-lady_journey_1
 lady_escort_lady_succeeded
-lady_premeet
-lady_meet
-lady_meet_end
-lady_talk
 prison_guard_players
 prison_guard_talk
 prison_guard_ask_prisoners
@@ -422,9 +417,9 @@ merchant_quest_deal_with_night_bandits
 deal_with_night_bandits_quest_taken
 move_cattle_herd_quest_brief
 move_cattle_herd_quest_taken
-goods_merchant_talk
 goods_trade_requested
 goods_trade_completed
+goods_merchant_talk
 troublesome_bandits_intro_1
 troublesome_bandits_intro_2
 fangorn_orcs_intro_1

@@ -124,7 +124,7 @@ simple_triggers = [
 	 (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
          (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
      (try_end),
-	 (try_for_range, ":troop_no", armor_merchants_begin, village_elders_end), # TLD clear rumors in merchants/elders
+	 (try_for_range, ":troop_no", weapon_merchants_begin, mayors_end), # TLD clear rumors in merchants/elders
          (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
      (try_end),
    ]),
@@ -720,18 +720,6 @@ simple_triggers = [
 		(try_end),
 	(try_end),
     ]),
-
- #Increase castle food stores
-  # (2,[(try_for_range, ":center_no", castles_begin, castles_end),
-         # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #castle is not under siege
-         # (party_get_slot, ":center_food_store", ":center_no", slot_party_food_store),
-         # (val_add, ":center_food_store", 100),
-         # (call_script, "script_center_get_food_store_limit", ":center_no"),
-         # (assign, ":food_store_limit", reg0),
-         # (val_min, ":center_food_store", ":food_store_limit"),
-         # (party_set_slot, ":center_no", slot_party_food_store, ":center_food_store"),
-       # (try_end),
-    # ]),
 
  #cache party strengths (to avoid re-calculating)
 ##  (2,[ (try_for_range, ":cur_troop", heroes_begin, heroes_end),
