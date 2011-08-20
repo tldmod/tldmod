@@ -25,16 +25,9 @@ from ID_menus import *
 #   11.3) Member flags. Use pmf_is_prisoner to note that this member is a prisoner.
 # 12) Party direction in degrees [optional]
 ####################################################################################################################
-
 no_menu = 0
-#pf_tld_down = pf_is_static|pf_always_visible|pf_hide_defenders|pf_show_faction
-#pf_tld_down    = pf_is_static|pf_always_visible|pf_show_faction
 pf_tld_down  = pf_is_static|pf_always_visible|pf_show_faction|pf_label_large
-pf_village = pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small
-#pf_tld_down = pf_is_static|pf_always_visible|pf_show_faction|pf_hide_defenders|pf_label_large
 
-#sample_party = [(trp_veteran_knight_of_gondor,1,0), (trp_swadian_peasant,10,0), (trp_archer_of_gondor,1,0), (trp_knight_of_the_citadel, 1, 0), (trp_footmen_of_gondor, 1, 0), (trp_gondor_militiamen,1,0)]
-#!
 parties = [
   ("main_party","Main_Party",icon_player|pf_limit_members, no_menu, pt_none,fac_player_faction,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_player,1,0)]),
   ("temp_party","temp_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
@@ -59,12 +52,6 @@ parties = [
   ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   
-  #  volunteers parties (one per city)
-  # ] +concatenate_scripts([
-  #		("volunteers_"+str(x), "_+_",   pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[],0)
-  # ] for x in range(150)) +  [
-  
-  ("town_merc_1","sargoth_mercs",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
   #("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.9,-28.3),[]),
 
 #TLD TOWNS
@@ -100,7 +87,7 @@ parties = [
     ("town_isengard","Isengard",                   icon_isengard|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(52.8,-57.7),[],170),
     ("town_urukhai_outpost","Uruk_Hai_Outpost",    icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(23.7,-52.4),[],170),
     ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(16.8,-78.7),[],170),
-    ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(-0.39,-54.2),[],170),
+    ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(5.9,-54.9),[],170),
 # Lothlorien towns
     ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,( -5.7,-131.3),[],350),
     ("town_cerin_dolen"   ,"Cerin_Dolen",   icon_tree  |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,( 20.2,-135.7),[],170),
@@ -172,7 +159,7 @@ parties = [
 
 ("centers_end","_",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
 # stuff from native
- ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
+# ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
 
 ### TLD map icons
    ("Argonath","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.883472,-51.047958),[],180),
@@ -205,13 +192,12 @@ parties = [
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),
 
-
-  ("training_ground"  ,"Training_Ground", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.189980,-6.471909),[]),
-  ("training_ground_1","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(39.999908,62.778122),[],100),
-  ("training_ground_2","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.935398,57.532211),[],100),
-  ("training_ground_3","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.349197,18.407715),[],100),
-  ("training_ground_4","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.176975,-68.801270),[],100),
-  ("training_ground_5","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-16.855721,-30.506454),[],100),
+#  ("training_ground"  ,"Training_Ground", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.189980,-6.471909),[]),
+#  ("training_ground_1","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(39.999908,62.778122),[],100),
+#  ("training_ground_2","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.935398,57.532211),[],100),
+#  ("training_ground_3","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.349197,18.407715),[],100),
+#  ("training_ground_4","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.176975,-68.801270),[],100),
+#  ("training_ground_5","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-16.855721,-30.506454),[],100),
 
 #  bridge_a
   ("looter_spawn_point"   ,"looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(29.273674,79.890099),[(trp_looter,15,0)]),

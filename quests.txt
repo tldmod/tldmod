@@ -1,5 +1,5 @@
 questsfile version 1
-58
+59
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him. 
@@ -19,6 +19,7 @@ qst_rescue_prisoners Rescue_{reg1}_Prisoners 2 {s9}_wanted_you_to_rescue_{reg1}_
 qst_scout_enemy_town Scout_Enemy_Town 2 {s9}_asked_you_to_scout_around_{s13}. 
 qst_dispatch_scouts Dispatch_a_Scout_Party 2 {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}. 
 qst_eliminate_patrols Eliminate_{reg1}_Enemy_Parties 2 {s9}_asked_you_to_eliminate_{reg1}_{s13}_enemy_parties. 
+qst_lend_surgeon Lend_Your_Surgeon_{s3}_to_{s1} 2 Lend_your_experienced_surgeon_{s3}_to_{s1}. 
 qst_follow_army Follow_{s9}'s_Army 2 None 
 qst_report_to_army Report_to_{s13} 2 None 
 qst_deliver_cattle_to_army Deliver_{reg3}_units_of_food_to_{s13} 2 None 

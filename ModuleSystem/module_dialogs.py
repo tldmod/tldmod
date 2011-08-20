@@ -1775,16 +1775,13 @@ dialogs = [
        (try_end),
        (assign, "$g_comment_found", 0)]],  
 
-  
-  #[anyone,"lord_start", [(store_partner_quest,":lords_quest"),
-                         # (eq,":lords_quest","qst_lend_surgeon"),
-                         # (quest_slot_eq, "qst_lend_surgeon", slot_quest_giver_troop, "$g_talk_troop")],
-   # "Your surgeon managed to convince my friend and made the operation.  The matter is in God's hands now,, and all we can do is pray for his recovery.\
- # Anyway, I thank you for lending your surgeon to me {sir/madam}. You have a noble spirit. I will not forget it.", "lord_generic_mission_completed",
-   # [
-     # (call_script, "script_finish_quest", "qst_lend_surgeon", 100),
-     # (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
-     # ]],
+[anyone,"lord_start", [(store_partner_quest,":lords_quest"),
+                       (eq,":lords_quest","qst_lend_surgeon"),
+                       (quest_slot_eq, "qst_lend_surgeon", slot_quest_giver_troop, "$g_talk_troop")],
+"Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery.\
+ Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.", "lord_generic_mission_completed",
+	[(call_script, "script_finish_quest", "qst_lend_surgeon", 100),
+	(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
 ##
@@ -4263,8 +4260,7 @@ We need fresh monstrous blood and flesh. We need it to twist it and bend it and 
 											(str_store_party_name_link,3,":quest_object_center")],
 "No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.", "lord_mission_told",[]],
 
-	
-   # TLD mission: investigate fangorn (mtarini) -- begin 
+# TLD mission: investigate fangorn (mtarini) -- begin 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
 "Here is a mission for a trusted and brave servant like you, {playername}.\
 The strangest rumors reach my ears from the forest of Fangorn. \
@@ -4299,10 +4295,9 @@ I expect to see you back with news before {reg1} dawns are passed.", "lord_preta
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
+# TLD mission: investigate fangorn (mtarini) -- end
 
-  # TLD mission: investigate fangorn (mtarini) -- end
-
-  # TLD mission: Find the lost spears of king Bladorthin (Kolba) -- begin
+# TLD mission: Find the lost spears of king Bladorthin (Kolba) -- begin
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_find_lost_spears")],
 "Here is a mission for a trusted and brave commander like you, {playername}.\
@@ -4330,9 +4325,9 @@ Beware, you may encounter some orcs or trolls in the tunnels. Are you available 
      [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
-  #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
+#TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
 
-  #TLD mission: nowy quest (Kolba) -- begin
+#TLD mission: nowy quest (Kolba) -- begin
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
 "I need to send a letter to {s13} who should be currently at {s4}.\
 If you will be heading towards there, would you deliver it to him?\
@@ -4521,6 +4516,26 @@ and make sure he arrives safe and sound.", "lord_mission_told", [
 ##    ]],
 ##
 
+[anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_lend_surgeon")],
+"I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,\
+and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},\
+but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.\
+I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,\
+{reg3?she:he} may be able to convince him to give his consent to an operation.\
+Please, I will be deeply indebted to you if you grant me this request.", "lord_mission_told",[
+	(quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
+	(str_store_troop_name_link,s1,"$g_talk_troop"),
+	(str_store_party_name,s2,"$g_encountered_party"),
+	(str_store_troop_name,s3,":quest_object_troop"),
+	(troop_get_type, reg3, ":quest_object_troop"),(try_begin),(gt,reg3,1),(assign,reg3,0),(try_end), #MV: non-humans are male
+	(setup_quest_text,"$random_quest_no"),
+	(try_begin),
+		(is_between, "$g_encountered_party", centers_begin, centers_end),
+		(setup_quest_giver, "$random_quest_no", "str_given_by_s1_at_s2"),
+	(else_try),
+		(setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
+	(try_end),
+	(str_store_string, s2, "@Lend your experienced surgeon {s3} to {s1}.")]],
 
 # GA: Deal with raiders
 # [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deal_with_bandits_at_lords_village")],
@@ -5415,17 +5430,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##          (assign, "$qst_defend_nobles_against_peasants_noble_party_8", reg0),
 ##        (try_end),
 ##      (try_end),
-    (try_end),
-    (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-    # (try_begin),
-      # (eq, "$random_quest_no", "qst_lend_surgeon"),
-      # (assign, "$g_leave_town_outside", 1),
-      # (assign,"$auto_enter_town","$g_encountered_party"),
-# #      (store_current_hours, "$quest_given_time"),
-      # (rest_for_hours, 4),
-      # (assign, "$lord_requested_to_talk_to", "$g_talk_troop"),
-    # (try_end),
-    ]],
+	(try_end),
+	(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+	(try_begin),
+		(eq, "$random_quest_no", "qst_lend_surgeon"),
+		(assign, "$g_leave_town_outside", 1),
+		(assign,"$auto_enter_town","$g_encountered_party"),
+		(store_current_hours, "$quest_given_time"),
+		(rest_for_hours, 4),
+		(assign, "$lord_requested_to_talk_to", "$g_talk_troop"),
+	(try_end)]],
 	
 [anyone,"lord_mission_rejected", [], 
 "Is that so? Well, I suppose you're just not up to the task.\
@@ -5446,50 +5460,22 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"lord_talk", [(lt, "$g_talk_troop_faction_relation", 0)], "This little chat is over. I leave now.", "lord_leave",[]],
 [anyone|plyr,"lord_talk", [(ge, "$g_talk_troop_faction_relation", 0)], "I must beg my leave.", "lord_leave",[]],
 
-[anyone,"lord_leave", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-      (lt, "$g_talk_troop_faction_relation", 0),
-      (store_partner_quest,":enemy_lord_quest"),
-      (lt, ":enemy_lord_quest", 0),
-      (troop_slot_eq, "$g_talk_troop", slot_troop_does_not_give_quest, 0),      
-      (call_script, "script_get_random_quest", "$g_talk_troop"),
-      (assign, "$random_quest_no", reg0),
-      (ge, "$random_quest_no", 0)],
-"Before you go, {playername}, I have something to ask of you... We may be enemies in this war,\
- but I pray that you believe, as I do, that we can still be civil towards each other.\
- Thus I hoped that you would be kind enough to assist me in something important to me.", "lord_leave_give_quest",[]],
+# [anyone,"lord_leave", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+      # (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+      # (lt, "$g_talk_troop_faction_relation", 0),
+      # (store_partner_quest,":enemy_lord_quest"),
+      # (lt, ":enemy_lord_quest", 0),
+      # (troop_slot_eq, "$g_talk_troop", slot_troop_does_not_give_quest, 0),      
+      # (call_script, "script_get_random_quest", "$g_talk_troop"),
+      # (assign, "$random_quest_no", reg0),
+      # (ge, "$random_quest_no", 0)],
+# "Before you go, {playername}, I have something to ask of you... We may be enemies in this war,\
+ # but I pray that you believe, as I do, that we can still be civil towards each other.\
+ # Thus I hoped that you would be kind enough to assist me in something important to me.", "lord_leave_give_quest",[]],
 
-[anyone|plyr,"lord_leave_give_quest", [], "I am listening.", "enemy_lord_tell_mission",[]],
+# [anyone|plyr,"lord_leave_give_quest", [], "I am listening.", "enemy_lord_tell_mission",[]],
 
-
-  #[anyone,"enemy_lord_tell_mission", [(eq,"$random_quest_no","qst_lend_surgeon")],
-   # "I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,\
- # and unless he is seen to by a surgeon soon,  he will surely die. This man is dear to me, {playername},\
- # but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.\
- # I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,\
- # {reg3?she:he} may be able to convince him to give his consent to an operation.\
- # Please, I will be deeply indebted to you if you grant me this request.", "lord_mission_told",
-   # [
-     # (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
-     # (str_store_troop_name_link,1,"$g_talk_troop"),
-# ##     (str_store_party_name,2,"$g_encountered_party"),
-     # (str_store_troop_name,3,":quest_object_troop"),
-     # (troop_get_type, reg3, ":quest_object_troop"),
-     # (try_begin),
-       # (gt, reg3, 1), #MV: non-humans are male
-       # (assign, reg3, 0),
-     # (try_end),
-     # (setup_quest_text,"$random_quest_no"),
-# ##     (try_begin),
-# ##       (is_between, "$g_encountered_party", centers_begin, centers_end),
-# ##       (setup_quest_giver, "$random_quest_no", "str_given_by_s1_at_s2"),
-# ##     (else_try),
-# ##       (setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
-# ##     (try_end),
-     # (str_store_string, s2, "@Lend your experienced surgeon {s3} to {s1}."),
-   # ]],
-
-[anyone,"enemy_lord_tell_mission", [(str_store_quest_name, s7, "$random_quest_no")], "ERROR: Enemy lord quest not handled: {s7}.", "close_window", []],
+#[anyone,"enemy_lord_tell_mission", [(str_store_quest_name, s7, "$random_quest_no")], "ERROR: Enemy lord quest not handled: {s7}.", "close_window", []],
 
 [anyone,"lord_leave_prison", [], "We'll meet again.", "close_window",[]],
 

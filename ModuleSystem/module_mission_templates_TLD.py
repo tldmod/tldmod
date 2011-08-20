@@ -6,131 +6,82 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
-# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
-dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
-	(get_player_agent_no,":player"), 
-    (agent_get_position,pos25,":player"),
- 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
-	(assign,":min_pointer",-1),
-    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
-		(scene_prop_get_num_instances,":max_instance", ":pointer"),
-		(ge,":max_instance", 1),
-		(try_for_range,":instance_no",0,":max_instance"), # checking distance to player
-			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
-			(ge, ":i", 0),
-            (prop_instance_get_position,pos1,":i"),
-            (get_distance_between_positions,":dist",pos1,pos25),
-	        (le,":dist",":min_dist"),
-			(assign, ":min_dist", ":dist"), 
-			(assign, ":min_pointer", ":pointer"), 
-        (try_end),
-    (try_end),
-	(try_begin), # setting fog thickness
-		(neq,":min_pointer",-1),
-		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
-		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
-		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
-		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
-		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
-		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
-		(try_end),
-		(set_fog_distance,reg11,0x000001), 
-		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
-		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
-		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
-		(try_end),
-	(try_end),
- ])
-  
-common_battle_mission_start = (ti_before_mission_start, 0, 0, [],
-  [ (team_set_relation, 0, 2, 1),
-    (team_set_relation, 1, 3, 1),
-    (call_script, "script_change_banners_and_chest"),
-    ])
+common_battle_mission_start = (ti_before_mission_start, 0, 0, [],[
+	(team_set_relation, 0, 2, 1),
+	(team_set_relation, 1, 3, 1),
+	(call_script, "script_change_banners_and_chest")])
 
-common_battle_tab_press = (ti_tab_pressed, 0, 0, [],
-  [ (try_begin),
-      (eq, "$battle_won", 1),
-      (call_script, "script_count_mission_casualties_from_agents"),
-      (finish_mission,0),
-    (else_try), #MV added this section
-       (main_hero_fallen),
-       (assign, "$pin_player_fallen", 1),
-       (str_store_string, s5, "str_retreat"),
-       (call_script, "script_simulate_retreat", 10, 20),
-       (assign, "$g_battle_result", -1),
-       (set_mission_result,-1),
-       (call_script, "script_count_mission_casualties_from_agents"),
-       (finish_mission,0),
-    (else_try),
-      (call_script, "script_cf_check_enemies_nearby"),
-      (question_box,"str_do_you_want_to_retreat"),
-    (else_try),
-      (display_message,"str_can_not_retreat"),
-    (try_end),
-    ])
+common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
+	(try_begin),
+		(eq, "$battle_won", 1),
+		(call_script, "script_count_mission_casualties_from_agents"),
+		(finish_mission,0),
+	(else_try), #MV added this section
+		(main_hero_fallen),
+		(assign, "$pin_player_fallen", 1),
+		(str_store_string, s5, "str_retreat"),
+		(call_script, "script_simulate_retreat", 10, 20),
+		(assign, "$g_battle_result", -1),
+		(set_mission_result,-1),
+		(call_script, "script_count_mission_casualties_from_agents"),
+		(finish_mission,0),
+	(else_try),
+		(call_script, "script_cf_check_enemies_nearby"),
+		(question_box,"str_do_you_want_to_retreat"),
+	(else_try),
+		(display_message,"str_can_not_retreat"),
+	(try_end)])
 
 common_arena_fight_tab_press = (ti_tab_pressed, 0, 0, [],[(question_box,"str_give_up_fight")])
 
-common_custom_battle_tab_press = (ti_tab_pressed, 0, 0, [],
-  [ (try_begin),
-      (neq, "$g_battle_result", 0),
-      (call_script, "script_custom_battle_end"),
-      (finish_mission),
-    (else_try),
-      (question_box,"str_give_up_fight"),
-    (try_end),
-    ])
+common_custom_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
+	(try_begin),
+		(neq, "$g_battle_result", 0),
+		(call_script, "script_custom_battle_end"),
+		(finish_mission),
+	(else_try),
+		(question_box,"str_give_up_fight"),
+	(try_end)])
 
-custom_battle_check_victory_condition = (1, 60, ti_once,
-  [ (store_mission_timer_a,reg1),
-    (ge,reg1,10),
-    (all_enemies_defeated, 2),
-    (neg|main_hero_fallen, 0),
-    (set_mission_result,1),
-    (display_message,"str_msg_battle_won"),
-    (assign, "$battle_won",1),
-    (assign, "$g_battle_result", 1),
-    ],
-  [ (call_script, "script_custom_battle_end"),
-    (finish_mission, 1),
-    ])
+custom_battle_check_victory_condition = (1, 60, ti_once,[
+	(store_mission_timer_a,reg1),
+	(ge,reg1,10),
+	(all_enemies_defeated, 2),
+	(neg|main_hero_fallen, 0),
+	(set_mission_result,1),
+	(display_message,"str_msg_battle_won"),
+	(assign, "$battle_won",1),
+	(assign, "$g_battle_result", 1),
+	],[
+	(call_script, "script_custom_battle_end"),
+	(finish_mission, 1)])
 
-custom_battle_check_defeat_condition = (1, 4, ti_once,
-  [ (main_hero_fallen),
-    (assign,"$g_battle_result",-1),
-    ],
-  [ (call_script, "script_custom_battle_end"),
-    (finish_mission),
-    ])
-
-common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
+custom_battle_check_defeat_condition = (1, 4, ti_once, [(main_hero_fallen),(assign,"$g_battle_result",-1)],[
+	(call_script, "script_custom_battle_end"),
+	(finish_mission)])
 
 common_custom_battle_question_answered = (ti_question_answered, 0, 0, [],
    [ (store_trigger_param_1,":answer"),
      (eq,":answer",0),
      (assign, "$g_battle_result", -1),
      (call_script, "script_custom_battle_end"),
-     (finish_mission),
-   ])
+     (finish_mission)])
 
 common_music_situation_update = (30, 0, 0, [],[(call_script, "script_combat_music_set_situation_with_culture")])
 common_battle_check_friendly_kills = (2, 0, 0, [],[ (call_script, "script_check_friendly_kills")])
-
-common_battle_check_victory_condition = (1, 60, ti_once,
-  [ (store_mission_timer_a,reg(1)),
-    (ge,reg(1),10),
-    (all_enemies_defeated, 5),
-    #(neg|main_hero_fallen, 0), #MV
-    (set_mission_result,1),
-    (display_message,"str_msg_battle_won"),
-    (assign,"$battle_won",1),
-    (assign, "$g_battle_result", 1),
-    (call_script, "script_play_victorious_sound"),
-    ],
-  [ (call_script, "script_count_mission_casualties_from_agents"),
-    (finish_mission, 1),
-    ])
+common_battle_check_victory_condition = (1, 60, ti_once,[
+	(store_mission_timer_a,reg(1)),
+	(ge,reg(1),10),
+	(all_enemies_defeated, 5),
+	#(neg|main_hero_fallen, 0), #MV
+	(set_mission_result,1),
+	(display_message,"str_msg_battle_won"),
+	(assign,"$battle_won",1),
+	(assign, "$g_battle_result", 1),
+	(call_script, "script_play_victorious_sound"),
+    ],[
+	(call_script, "script_count_mission_casualties_from_agents"),
+	(finish_mission, 1)])
 
 common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
 common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(start_presentation, "prsnt_battle")])
@@ -140,12 +91,10 @@ common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_messa
 
 common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV and MT
     (assign, "$pin_player_fallen", 1),
-	#  check that battle still goes on MT
-  	(store_normalized_team_count,":a", 0), 
+  	(store_normalized_team_count,":a", 0), 	#  check that battle still goes on MT
 	(store_normalized_team_count,":b", 1),
 	(gt,":b",0),(gt,":a",0),
     (display_message, "str_player_down"), #MV
-	
     #MV: not sure about this one, will see if it's needed
 	# (set_show_messages, 0), #stop messages JL
 	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_charge), #charges everyone JL
@@ -642,7 +591,6 @@ formations_triggers = [
 		(try_end),
 		(val_add, "$fclock", 1),
 	]),
-	
 	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_advance     )],[(call_script,"script_player_order_formations",mordr_advance)]),
 	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_fall_back   )],[(call_script,"script_player_order_formations",mordr_fall_back)]),
 	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_spread_out  )],[(call_script,"script_player_order_formations",mordr_spread_out)]),
@@ -666,7 +614,7 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"), 
 		(try_end),
 	(try_end),
-  ], [ 
+	], [ 
 	(key_is_down, key_s),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     (get_player_agent_no, ":player_agent"),
 	(agent_get_team, ":player_team", ":player_agent"),
@@ -718,24 +666,18 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
 
  # triggers to bow to lords  -- a set of triggers  (mtarini)
 custom_tld_bow_to_kings = [
-	# init: 
 	(ti_before_mission_start , 0, 0, [],[
 		(assign, "$agent_king", -1),
-	]),
-
-	# on spawn: register lords
-	(ti_on_agent_spawn       , 0, 0, [],[ 
+		(assign, "$player_is_bowing", 0),]),
+	(ti_on_agent_spawn       , 0, 0, [],[ # on spawn: register lords
 		# to do: this way you bow to leaders OR to marshalls. Must both to both
 	    (store_trigger_param_1, ":agent_no"), 
 		(agent_get_troop_id, ":troop_no", ":agent_no"),
 		(store_troop_faction, ":faction_no", ":troop_no",),
 		#(this_or_next|faction_slot_eq,":faction_no",slot_faction_marshall,":troop_no"),
 		(faction_slot_eq,":faction_no",slot_faction_leader,":troop_no"),
-		(assign, "$agent_king", ":agent_no"),
-	]),
-	  
-	# push putton: go down
-	(0, 0.5, 0, [ 
+		(assign, "$agent_king", ":agent_no")]),
+ 	(0, 0.5, 0, [ # push putton: go down
 		(gt, "$agent_king", -1),
         (game_key_clicked, gk_jump), 
 		# (key_clicked, key_b),   # overrides jump key
@@ -746,36 +688,27 @@ custom_tld_bow_to_kings = [
 		(agent_get_position, pos2, reg10),
 		(position_rotate_z,pos2,180-45),(position_is_behind_position, pos1, pos2),
 		(position_rotate_z,pos2,90),(position_is_behind_position, pos1, pos2),
-		
 		# see if same height..
 		(position_get_z,reg20,pos2),
 		(position_get_z,reg21,pos1),
 		(val_sub,reg20,reg21),(val_abs,reg20),(le,reg20,200.0),
-
 		#(agent_set_scripted_destination, reg10, pos1, 1), # hopefully, turn toward lord
 	    (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
 		(assign, "$player_is_bowing", 1),
-	],[ 
+		],[ 
 		# after 1 sec, play sound
 		(game_key_is_down, gk_jump),
 		(get_player_agent_no, reg10),
-		(agent_play_sound, reg10, "snd_footstep_wood")
-	]),
-
-	# release: get up
-	(0, 0, 0, [],[ 
-	    (neq, "$player_is_bowing", 0 ),
+		(agent_play_sound, reg10, "snd_footstep_wood")]),
+	(0, 0, 0, [],[ # release: get up
+	    (neq, "$player_is_bowing", 0),
 		(neg|game_key_is_down, gk_jump), # (key_is_down, key_b),  
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_get_up"),
-		(assign, "$player_is_bowing", 0 ),
-	]),
-	   
-	# keep pressed: stay down
-	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1 ), ],[ 
+		(assign, "$player_is_bowing", 0)]),
+	(0.0, 1.0, 1.0, [(eq, "$player_is_bowing", 1)],[ # keep pressed: stay down
 		# (key_is_down, key_b),  
 		(game_key_is_down, gk_jump),
-		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
-	]),
+		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down")]),
 ]
 
 
@@ -797,7 +730,7 @@ custom_tld_bow_always = [
 	]),
 
 	# release: get up
-	(0, 0, 0, [],[ 
+	(0, 0, 0, [],[
 	    (neq, "$player_is_bowing", 0 ),
 		(neg|game_key_is_down, gk_jump), # (key_is_down, key_b),  
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_get_up"),
@@ -805,7 +738,7 @@ custom_tld_bow_always = [
 	]),
 	   
 	# keep pressed: stay down
-	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1 ), ],[ 
+	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1)],[ 
 		# (key_is_down, key_b),  
 		(game_key_is_down, gk_jump),
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
@@ -818,7 +751,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$nazgul_in_battle",0),	
 	(assign,"$wargs_in_battle",0),	
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
-	(assign, "$nazgul_team", -1), # will be found when needed
+	(assign,"$nazgul_team", -1), # will be found when needed
 	
 	(try_begin),
 		(this_or_next|eq, "$g_encountered_party", "pt_mordor_war_party"),
@@ -838,16 +771,12 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 			(display_log_message, "@A Nazgul is circling in the sky above the battlefield!"),
 		(try_end),
 	(try_end),
-  ]
-)
+])
 
 # cheer instead of jump on space if battle is won  (mtarini)
-tld_cheer_on_space_when_battle_over_press = ( 
-  0,1.5,0,[
-    #(eq, "$battle_won",1),
+tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
 	(game_key_clicked, gk_jump),
 	(all_enemies_defeated, 2),
-
     (get_player_agent_no, reg10),
 	(agent_is_alive, reg10),
 	(try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
@@ -865,18 +794,14 @@ tld_cheer_on_space_when_battle_over_press = (
 	(try_end),
 	(assign,"$player_cheering",1),
   ],
-  [
-    (assign,"$player_cheering",2), # after 1 sec, can end ani
+  [(assign,"$player_cheering",2), # after 1 sec, can end ani
 ])
 
-tld_cheer_on_space_when_battle_over_release = ( 
-  0,0,0,[	(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],
-  [
+tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],[
 	(get_player_agent_no, reg10),
-	(try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
-		(agent_set_animation, reg10, "anim_cancel_ani_ride"),
-	(else_try),
-		(agent_set_animation, reg10, "anim_cancel_ani_stand"),
+	(agent_get_horse, reg12, reg10),
+	(try_begin),(ge, reg12, 0),(agent_set_animation, reg10, "anim_cancel_ani_ride"),
+	 (else_try),               (agent_set_animation, reg10, "anim_cancel_ani_stand"),
 	(try_end),
 	(assign,"$player_cheering",0),
 ])
@@ -886,49 +811,29 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   [ (store_trigger_param_1, ":agent"),
 	(agent_get_troop_id,":agent_trp",":agent"),
 	(agent_get_item_id, ":agent_item", ":agent"),
-	
-	#(str_store_troop_name, s11, ":agent_trp"),  
-	#(try_begin),
-	#	(ge,":agent_item",0),
-	#	(str_store_item_name, s12, ":agent_item"),  
-	#	(display_message,"@DEBUG: spawning mount {s12} of {s11}"),
-	#(else_try),
-	#	(display_message,"@DEBUG: spawning troop {s11}"),
-	#(try_end),
 
-    (try_begin),
+    (try_begin), # when trolls in battle
 	  (assign, ":troll", ":agent"),
 	  (troop_get_type, reg0, ":agent_trp"),
 	  (eq, reg0, tf_troll),
 	  (agent_set_speed_limit,":troll",4),	# trolls go 4 km/h max <GA>
 	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
-	  # troll gets x4 hp
-	  #(store_agent_hit_points,reg0,":troll",1),
-	  #(store_mul,":hp",4,":hp"),
-	  #(agent_set_hit_points ,":troll",":hp",1),
-	  #(assign, reg0, ":hp"),
-	  #(display_message,"@DEBUG: troll spawned with {reg0} hitpoints!"),
-	  
-	  # a failed test: set custom troll walking/standing animations... why wouldn't this work?
+	# a failed test: set custom troll walking/standing animations... why wouldn't this work?
 	  #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
 	  #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
 	(try_end),
 	
-	(try_begin),
+	(try_begin), # when wargs in battle
 		(is_between, ":agent_item", item_warg_begin , item_warg_end),
 		# keep warg count up to date...
 		(val_add,"$wargs_in_battle",1),
 	(try_end),
 	
-	# for ghost wargs: set it up to replace the unmounted warg
-	(try_begin),
+	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
 		(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
-		
-		# set position to match warg to be replaced...
-		(agent_get_position,pos4,"$warg_to_be_replaced"),
+		(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
 		(agent_set_position, ":agent", pos4),
-			
 		(try_begin),(neq,":agent_item",-1), 
 			# fisrt spawn:  MOUTH set hit points
 			(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
@@ -938,18 +843,15 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			# second spawn: GHOST RIDER: set side
 			(agent_get_slot, reg25, "$warg_to_be_replaced", slot_agent_mount_side),
 			(agent_set_team, ":agent",  reg25), # this was set just above
-			#(display_message,"@DEBUG: new wargs team is now: {reg25}"),
-				
+			(set_show_messages,0),(display_message,"@DEBUG: new wargs team is now: {reg25}"),
 			(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
 			(assign, "$warg_to_be_replaced", -1),
 		(try_end), 
-		
 	(else_try), 
 		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
 	(try_end),
 
-	# if we spawned a rider, let's make his mount remember what side it is
-	(agent_get_horse, ":horse", ":agent"),
+	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is
 	(try_begin),(neq,":horse",-1), 
 		(agent_get_team,  reg25, ":agent"),
 		(agent_set_slot, ":horse", slot_agent_mount_side, reg25), 
@@ -957,17 +859,13 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 ])
 
 # mtarini nazgul sweeps 
-nazgul_sweeps = (2,1.2,5,
-  [  
+nazgul_sweeps = (2,1.2,5,[
 	(this_or_next|key_is_down, key_n),
 	(gt,"$nazgul_in_battle",0),
 	(store_random_in_range,reg0,1,51),
-   
 	(this_or_next|key_is_down, key_n),
 	(le,reg0,"$nazgul_in_battle"), # 2% chance every 2 seconds, for each nazgul present
-
 	(display_log_message, "@Nazgul sweep!"),
-			
 	# if nazgul team is not computed, compute it
 	(try_begin),
 		(eq, "$nazgul_team", -1), 
@@ -978,50 +876,31 @@ nazgul_sweeps = (2,1.2,5,
 			(agent_get_team, "$nazgul_team",":agent"),
 		(try_end),
 	(try_end),
-	
-	# choose long or short skretch
 	(store_random_in_range, ":long_skretch", 0,2),
-	
 	# play sound
-	(try_begin),
-		(ge,":long_skretch",1),
-		(play_sound, "snd_nazgul_skreech_long"),
-		#(display_log_message, "@Debug: LONG sweep!"),
-	(else_try), 
-		(play_sound, "snd_nazgul_skreech_short"),
-		#(display_log_message, "@Debug: SHORT sweep!"),
+	(try_begin),(ge,":long_skretch",1),(play_sound, "snd_nazgul_skreech_long" ),#(display_log_message, "@Debug: LONG sweep!"),
+	 (else_try),                       (play_sound, "snd_nazgul_skreech_short"),#(display_log_message, "@Debug: SHORT sweep!"),
 	(try_end), 
-	 
 	(get_player_agent_no, ":player_agent"), #for messages
-			
-	# psycological effect:
-	(try_for_agents,":victim"),
+	(try_for_agents,":victim"), # psycological effect:
 		(agent_is_alive,":victim"),
 		(agent_get_team, reg1, ":victim"),
-		
 		(this_or_next|eq, "$nazgul_team", -1),
 		(teams_are_enemies, reg1, "$nazgul_team"),
-		
 		(agent_is_human,":victim"),
-
-		# long skretch can make the horse rage twice (but only 66% of times)
-		(try_begin), 
+		(try_begin), # long skretch can make the horse rage twice (but only 66% of times)
 			(assign, ":horse_rage_twice",":long_skretch"),
 			(store_random_in_range,":die_roll",1,4),
 			(eq,":die_roll",1),		
 		(try_end), 
-		
+
 		(agent_get_troop_id, ":trp_victim", ":victim"),
 		(agent_get_horse,":horse",":victim"),
 		(store_attribute_level, ":int", ":trp_victim", ca_intelligence),
 		(store_skill_level, ":riding", "skl_riding", ":trp_victim"),
 		(store_random_in_range,":die_roll_int",1,26),
-        
-		# (assign, ":human_resisted", 0),
-		# (assign, ":horse_resisted", 0),
 
-		# the horses couldrear
-		(try_begin), 
+		(try_begin), 		# the horses couldrear
 			(ge,":horse",0), # there's an horse being riden
 			(try_begin), 
 				# if rider failed intelligece test: both horse and rider panic
@@ -1051,8 +930,7 @@ nazgul_sweeps = (2,1.2,5,
 			(try_end), 
 		(try_end), 
 		
-		# the guys can go nuts
-		(try_begin), 
+		(try_begin), # the guys can go nuts
 			(ge, ":die_roll_int" , ":int"), # it is a victim if 1d25 rolled under intelligence	  
 			(try_begin), 
 				# mounted characters panic
@@ -1076,10 +954,7 @@ nazgul_sweeps = (2,1.2,5,
                 (eq, ":player_agent", ":victim"),
                 (display_log_message, "@You cower in terror, the Nazgul cries are unbearable!"),
             (try_end), 
-		# (else_try), 
-			# (assign, ":human_resisted", 1),				
 		(try_end), 
-		
 		# show message?
         # MV: commented out - resistance not important, it's the other way around, effects are important
 		# (get_player_agent_no, ":player_agent"),
@@ -1089,16 +964,13 @@ nazgul_sweeps = (2,1.2,5,
 		# (eq,":horse_resisted", 1),
 		# (display_log_message,"@Horse panic avoided!"),
     (try_end),
-	
 	(store_random_in_range,":die_roll",1,4),
 	(ge,":die_roll",2), # twice in 2 there is will an attack!
-  ],
-  [	# physical attack on random agent
+  ],[ # physical attack on random agent
 	(assign,":random_agent",-1), # he will suffer a physical attack!
 	(assign,":random_agent_score",99999),
 	(mission_cam_get_position, 2),
 	(get_player_agent_no, ":player_agent"),
-	
 	(try_for_agents,":victim"),
 		(agent_is_alive,":victim"),
 		(agent_is_human,":victim"),
@@ -1119,7 +991,6 @@ nazgul_sweeps = (2,1.2,5,
     (try_end),
 
 	(gt, ":random_agent", -1),
-
 	(agent_get_troop_id, reg1, ":random_agent"),
 	(troop_get_type, reg2, reg1),
 	# make it scream like a pig
@@ -1156,63 +1027,54 @@ nazgul_sweeps = (2,1.2,5,
 ])
 
 # if player attempts to ride non matching mount, mount rebels (mtarini)
-tld_player_cant_ride = (1.90,1.5,0.5,
-  [
-    (eq, "$g_crossdressing_activated", 0),
+tld_player_cant_ride = (1.90,1.5,0.5,[
+	(eq, "$g_crossdressing_activated", 0),
 	(get_player_agent_no, ":player_agent"),
 	(agent_get_horse,":mount",":player_agent"),
     (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
-	(assign, ":mount_type", 0), # 0 = horse    1 = warg, 2 = huge warg  3 = pony
+	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
 	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk          3 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
-	
 	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
-	
-	(try_begin), (eq,":mount_item", "itm_warg_reward"), (assign, ":mount_type", 2),
-	(else_try), (is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
-	(else_try), (eq, ":mount_item", "itm_pony"),(assign, ":mount_type", 3),
+	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
+	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),(assign,"$wargs_in_battle",1),
+	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
 	(try_end),
-	
 #	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
-
-	(try_begin), (eq, ":race", tf_orc),(assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
-	(else_try), (is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
-	(else_try), (eq, ":race", tf_dwarf),(assign, ":rider_type" , 3),
+	(try_begin),(eq, ":race", tf_orc),                          (assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
+	 (else_try),(is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
+	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 3),
 	(try_end),
 	
 	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
 	(store_random_in_range, ":rand",0,100),
 	(ge, ":rand", 20),
-  ],
-  [ (get_player_agent_no, ":player"),
+	],[
+	(get_player_agent_no, ":player"),
 	(agent_get_horse,":mount",":player"),
 	(ge, ":mount", 0),
 	(agent_get_item_id,":mount_item", ":mount"),
-	(try_begin), 
-		# wargs rear and byte
+	(try_begin), # wargs rear and byte
 		(is_between, ":mount_item", item_warg_begin, item_warg_end),
 		(agent_set_animation, ":mount", "anim_horse_rear"),
 		(agent_deliver_damage_to_agent, ":mount", ":player"), 
-		(display_message, "@Bitten by your own warg mount!"),
+		(display_message, "@Bitten by your own warg mount!",color_bad_news),
 		(agent_play_sound, ":mount", "snd_warg_lone_woof"),
-	(else_try),
-		# ponies stops
+	(else_try), # ponies stops
 		(eq, ":mount_item", "itm_pony"),
 		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
-		(display_message, "@You weight too much for a pony!"),
+		(display_message, "@You weight too much for a pony!",color_bad_news),
 		(agent_play_sound, ":mount", "snd_neigh"),
-	(else_try),
-		# other mount, rear
+	(else_try), # other mount, rear
 		(agent_set_animation, ":mount", "anim_horse_rear"), 
-		(display_message, "@Your mount rears, refusing to obey your commands!"),
+		(display_message, "@Your mount rears, refusing to obey your commands!",color_bad_news),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(try_end),
 ])
 
-custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
-  [
-    (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
+custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],[
+	(assign, "$wargs_in_battle", 0), # recount them, to account for deaths
     (try_for_agents, ":warg"),
 		(agent_get_item_id, ":warg_item", ":warg"),
 		(is_between, ":warg_item", item_warg_begin ,item_warg_end),
@@ -1225,8 +1087,8 @@ custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],
 ])
 
 #MV: inserted troll "charging" (going haead not following orders)
-custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],
-  [ (try_for_agents,":troll"),
+custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
+	(try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
 		(agent_get_troop_id,reg0,":troll"), # is it a troll?
@@ -1506,10 +1368,8 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 ])
 
 # NOT USED YET (still WIP)
-custom_lone_wargs_special_attack = (0,0,2, [
-	(store_random_in_range,reg10,0,3), (eq,reg10,1) # once every three times
-],[
-	(try_for_agents,":warg"),										# horse rearing near troll
+custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_random_in_range,reg10,0,3), (eq,reg10,1)],[ # once every three times
+	(try_for_agents,":warg"),	  # horse rearing near troll
         (agent_is_alive, ":warg"), #MV
 		(agent_get_troop_id,reg0,":warg"),
 		(agent_is_human, ":warg"),
@@ -1553,7 +1413,7 @@ custom_lone_wargs_special_attack = (0,0,2, [
 	(try_end),
 ])
 
-custom_lone_wargs_are_aggressive = (0.5,0,0, [  # wargs without rider respawn
+custom_lone_wargs_are_aggressive = (0.5,0,0, [(gt,"$wargs_in_battle",0)],[  # wargs without rider respawn
     (set_show_messages,0),
  # self destruct any ghost rider which has no ride
 	(try_for_agents,":ghost"),
@@ -1594,14 +1454,15 @@ custom_lone_wargs_are_aggressive = (0.5,0,0, [  # wargs without rider respawn
 		(agent_get_position, pos10, ":warg"),
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
+		(val_sub,reg1,1), # translate entry point prop number into entry number in mission template
+		(store_current_scene, ":cur_scene"),
+		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-		
-		#(str_store_troop_name, s12, ":warg_ghost_trp"), (display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
-		#(display_message,"@DEBUG: Spawning ghost rider!"),
+		(str_store_troop_name, s12, ":warg_ghost_trp"), 
+		(set_show_messages,1),
+		(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
 	(try_end),
-	(set_show_messages,1),
-	],[
-])
+	(set_show_messages,1)])
 
 ################## SIEGE LADDERS BEGIN #######################################
 HD_ladders_init = (0,0,ti_once,[],[
@@ -1932,8 +1793,7 @@ stonelobbing_carry_stone = (0,0,0, [(eq,"$stonelobbing_state",1)],
 			(position_move_z,pos6,170),
 			(position_move_x,pos6,25), 
 			(prop_instance_animate_to_position,"$stone_picked_instance",pos6,3),
-			(agent_set_walk_forward_animation,":player_agent","anim_ready_carrystone"),#    dont know how to assign upperbody animation yet :(
-			])			
+			(agent_set_walk_forward_animation,":player_agent","anim_ready_carrystone")])			
 ################## STONELOBBING END ########################################
 
 ################## FLORA BEGIN ###########################################
@@ -2059,8 +1919,7 @@ horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m)],
 
 ##common_battle_kill_underwater = (
 ##  5, 0, 0, [],
-##   [   
-##      (try_for_agents,":agent"),
+##   [  (try_for_agents,":agent"),
 ##         (agent_is_alive,":agent"),
 ##         (agent_get_position,pos1,":agent"),
 ##         (position_get_z, ":pos_z", pos1),
@@ -2081,3 +1940,39 @@ horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m)],
 ##         (try_end),
 ##      (try_end),
 ##   ])
+
+
+# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
+dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
+	(get_player_agent_no,":player"), 
+    (agent_get_position,pos25,":player"),
+ 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
+	(assign,":min_pointer",-1),
+    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
+		(scene_prop_get_num_instances,":max_instance", ":pointer"),
+		(ge,":max_instance", 1),
+		(try_for_range,":instance_no",0,":max_instance"), # checking distance to player
+			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
+			(ge, ":i", 0),
+            (prop_instance_get_position,pos1,":i"),
+            (get_distance_between_positions,":dist",pos1,pos25),
+	        (le,":dist",":min_dist"),
+			(assign, ":min_dist", ":dist"), 
+			(assign, ":min_pointer", ":pointer"), 
+        (try_end),
+    (try_end),
+	(try_begin), # setting fog thickness
+		(neq,":min_pointer",-1),
+		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
+		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
+		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
+		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
+		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
+		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		(try_end),
+		(set_fog_distance,reg11,0x000001), 
+		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
+		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
+		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
+		(try_end),
+	(try_end)])

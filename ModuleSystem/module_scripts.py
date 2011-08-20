@@ -901,9 +901,7 @@ scripts = [
 # used to make warg spawn from an entry point which will give it an appropriate facing
 # stores in reg1 the entry point  (in 0..64) with a facting more similar to 1st param 
 ("get_entry_point_with_most_similar_facing", 
- [
-	(store_script_param_1, ":target"),
-	
+ [  (store_script_param_1, ":target"),
 	(store_add, ":target2", ":target", 360),
 	(try_begin),
 		(ge,":target", 180), (store_add, ":target2", ":target", -360),
@@ -924,7 +922,8 @@ scripts = [
 		(assign, ":best", reg12),
 		(assign, reg1, ":i"),
 	(try_end),
-	(display_message, "@Selected:{reg1}"),
+	#(set_show_messages,1),
+	#(display_message, "@Selected:{reg1}"),
 ]),
 
 #script_cf_is_troop_in_party_wounded 
@@ -1389,7 +1388,6 @@ scripts = [
         (try_end),
         (party_set_slot, ":town_no", slot_town_store, "scn_town_store"),
         (party_set_slot, ":town_no", slot_town_alley, "scn_town_alley"),
-        #(party_set_slot, ":town_no", slot_town_mercs, "p_town_merc_1"),
       (try_end),
 
 # Centers spawns init from ws_party_spawns_list in module_constants.py      
@@ -1400,23 +1398,27 @@ scripts = [
         (party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_caravan, ws_party_spawns_list[x][4]) for x in range(len(ws_party_spawns_list)) ]+[
  # disable some evil centers at start
        ]+[   (disable_party, centers_disabled_at_start[x]) for x in range(len(centers_disabled_at_start)) ]+[
-
-      (try_for_range, ":center_no", centers_begin, centers_end),
-        (party_set_slot, ":center_no", slot_center_last_spotted_enemy, -1),
-        (party_set_slot, ":center_no", slot_center_is_besieged_by, -1),
-        (party_set_slot, ":center_no", slot_center_last_taken_by_troop, -1),
-        #Assigning random prosperity
-        (store_random_in_range, ":random_prosperity_adder", -25, 15),
-        (call_script, "script_get_center_ideal_prosperity", ":center_no"),
-        (assign, ":prosperity", reg0),
-        (val_add, ":prosperity", ":random_prosperity_adder"),
-        (try_begin),
-          (party_slot_eq, ":center_no", slot_party_type, spt_town),
-          (val_add, ":prosperity", 20),
-        (try_end),
-        (val_clamp, ":prosperity", 0, 100),
-        (party_set_slot, ":center_no", slot_town_prosperity, ":prosperity"),
-      (try_end),
+ # make henneth hardly visible when player is evil
+	(try_begin),
+		(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+		(party_set_flags, "p_town_henneth_annun", pf_always_visible, 0),
+	(try_end),
+	(try_for_range, ":center_no", centers_begin, centers_end),
+		(party_set_slot, ":center_no", slot_center_last_spotted_enemy, -1),
+		(party_set_slot, ":center_no", slot_center_is_besieged_by, -1),
+		(party_set_slot, ":center_no", slot_center_last_taken_by_troop, -1),
+		#Assigning random prosperity
+		(store_random_in_range, ":random_prosperity_adder", -25, 15),
+		(call_script, "script_get_center_ideal_prosperity", ":center_no"),
+		(assign, ":prosperity", reg0),
+		(val_add, ":prosperity", ":random_prosperity_adder"),
+		(try_begin),
+			(party_slot_eq, ":center_no", slot_party_type, spt_town),
+			(val_add, ":prosperity", 20),
+		(try_end),
+		(val_clamp, ":prosperity", 0, 100),
+		(party_set_slot, ":center_no", slot_town_prosperity, ":prosperity"),
+	(try_end),
 	  
 	  (try_for_range, ":town_no", centers_begin, centers_end),
 	  	(store_faction_of_party, ":faction", ":town_no"),
@@ -1875,18 +1877,16 @@ scripts = [
 					 (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 0), (jump_to_menu, "mnu_castle_outside"),
           (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					 (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 1),	(jump_to_menu, "mnu_town_ruins"),
-          #(else_try),(eq, "$g_encountered_party", "p_zendar"         ),(jump_to_menu, "mnu_zendar"),
-          #(else_try),(eq, "$g_encountered_party", "p_salt_mine"      ),(jump_to_menu, "mnu_salt_mine"),
-          #(else_try),(eq, "$g_encountered_party", "p_four_ways_inn"  ),(jump_to_menu, "mnu_four_ways_inn"),
           (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
           (else_try),(eq, "$g_encountered_party", "p_battlefields"   ),(jump_to_menu, "mnu_battlefields"),
-          (else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),
+#          (else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),
           (else_try),(eq, "$g_encountered_party", "p_camp_bandits"   ),(jump_to_menu, "mnu_camp"),
 		  (else_try),(eq, "$g_encountered_party", "p_ancient_ruins"  ),(jump_to_menu, "mnu_ancient_ruins"), #TLD sorcerer
           (else_try),(eq, "$g_encountered_party_template", "pt_ruins"),(jump_to_menu, "mnu_ruins"), #TLD ruins
           (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
           (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
           (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
+#          (else_try),(eq, "$g_encountered_party_template", "pt_defend_refugees"),(jump_to_menu, "mnu_defend_refugees"), #TODO
 		  (else_try),(jump_to_menu, "mnu_simple_encounter"),
          (try_end),
        (else_try), #Battle or siege
@@ -3495,17 +3495,27 @@ scripts = [
     ]),
 
 # Note to modders: Uncomment these if you'd like to use the following.
-  
-##  #script_game_check_party_sees_party
-##  # This script is called from the game engine when a party is inside the range of another party
-##  # INPUT: arg1 = party_no_seer, arg2 = party_no_seen
-##  # OUTPUT: trigger_result = true or false (1 = true, 0 = false)
-##  ("game_check_party_sees_party",
-##   [
-##     (store_script_param, ":party_no_seer", 1),
-##     (store_script_param, ":party_no_seen", 2),
-##     (set_trigger_result, 1),
-##    ]),
+#script_game_check_party_sees_party
+# This script is called from the game engine when a party is inside the range of another party
+# INPUT: arg1 = party_no_seer, arg2 = party_no_seen
+# OUTPUT: trigger_result = true or false (1 = true, 0 = false)
+("game_check_party_sees_party",
+	[(store_script_param, ":party_no_seer", 1),
+	(store_script_param, ":party_no_seen", 2),
+	(try_begin),
+		(eq, ":party_no_seer", "p_main_party"), 
+		(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+		(party_get_skill_level, ":spot", "p_main_party", "skl_spotting"),
+		(lt,":spot",8), # rangers are invis unless high spotting
+		(party_get_template_id,":spot",":party_no_seen"),
+		(this_or_next|eq, ":spot", "pt_ranger_scouts"),# evil player does not see rangers x_x
+		(this_or_next|eq, ":spot", "pt_ranger_raiders"),
+		(eq, ":party_no_seen", "p_town_henneth_annun"),# evil player does not see henneth
+		(set_trigger_result, 0),
+	(else_try),
+		(set_trigger_result, 1),
+	(try_end),
+]),
 ##
 ##  #script_game_get_party_speed_multiplier
 ##  # This script is called from the game engine when a skill's modifiers are needed
@@ -4751,21 +4761,21 @@ scripts = [
      #(set_visitor, ":entry_point", ":troop"),
      (mission_tpl_entry_clear_override_items, "mt_training_ground_training", ":entry_point"),
          
-	 (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(assign, ":shield_item" , "itm_gon_tab_shield_a"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(assign, ":shield_item" , "itm_rohan_shield_c"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(assign, ":shield_item" , "itm_mirkwood_spear_shield_c"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(assign, ":shield_item" , "itm_beorn_shield"),
+	 (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(assign,":shield_item","itm_gon_tab_shield_a"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(assign,":shield_item","itm_rohan_shield_c"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(assign,":shield_item","itm_mirkwood_spear_shield_c"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(assign,":shield_item","itm_beorn_shield"),
       (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),
 		 (try_begin),(eq, ":team", 0),
 			(assign, ":shield_item" , "itm_dale_shield_a"),
 		 (else_try),
 			(assign, ":shield_item" , "itm_dale_shield_b"),
 		 (try_end),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),(assign, ":shield_item" , "itm_harad_shield_a"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),(assign, ":shield_item" , "itm_rhun_shield"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(assign, ":shield_item" , "itm_tab_shield_small_round_b"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(assign, ":shield_item" , "itm_beorn_shield"),
-      (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),(assign, ":shield_item" , "itm_umb_shield_b"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),(assign,":shield_item","itm_harad_shield_a"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),(assign,":shield_item","itm_rhun_shield"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(assign,":shield_item","itm_tab_shield_small_round_b"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(assign,":shield_item","itm_beorn_shield"),
+      (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),(assign,":shield_item","itm_umb_shield_b"),
       (else_try),#(eq, "$g_talk_troop", "trp_trainer_mordor"), #or isengard - for all orcs
          (assign, ":shield_item" , "itm_orc_shield_a"),
      (try_end),
@@ -4890,10 +4900,10 @@ scripts = [
        #(eq, ":weapon_type", itp_type_polearm),
        (try_begin),
          (eq, ":is_mounted", 1),
-         (assign, ":item_1", "itm_wood_staff"),
+         (assign, ":item_1", "itm_practice_staff"),
          (assign, ":item_2", ":shield_item"),
        (else_try),
-         (assign, ":item_1", "itm_wood_staff"),
+         (assign, ":item_1", "itm_practice_staff"),
        (try_end),
      (try_end),
 
@@ -4911,10 +4921,8 @@ scripts = [
    [ (assign, ":weapon_1", -1),
      (assign, ":weapon_2", -1),
      (store_random_in_range, ":random_no", 0, 3),
-     (try_begin),
-       (eq, ":random_no", 0),
-     (else_try),
-       (eq, ":random_no", 1),
+     (try_begin),(eq, ":random_no", 0),
+      (else_try),(eq, ":random_no", 1),
      (else_try),
      (try_end),
      (assign, reg0, ":weapon_1"),
@@ -5852,39 +5860,35 @@ scripts = [
            (assign, ":quest_expiration_days", 10),
            (assign, ":quest_dont_give_again_period", 15),
            (assign, ":result", ":quest_no"),
-        
-# Enemy Lord Quests
-        # (else_try),
-          # (eq, ":quest_no", "qst_lend_surgeon"),
-          # (try_begin),
-            # (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
-            # (neq, ":giver_reputation", lrep_quarrelsome),
-            # (neq, ":giver_reputation", lrep_debauched),
-            # (assign, ":max_surgery_level", 0),
-            # (assign, ":best_surgeon", -1),
-            # (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
-            # (try_for_range, ":i_stack", 1, ":num_stacks"),
-              # (party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
-              # (troop_is_hero, ":stack_troop"),
-              # (store_skill_level, ":cur_surgery_skill", skl_surgery, ":stack_troop"),
-              # (gt, ":cur_surgery_skill", ":max_surgery_level"),
-              # (assign, ":max_surgery_level", ":cur_surgery_skill"),
-              # (assign, ":best_surgeon", ":stack_troop"),
-            # (try_end),
-            
-            # (store_character_level, ":cur_level", "trp_player"),
-            # (assign, ":required_skill", 5),
-            # (val_div, ":cur_level", 10),
-            # (val_add, ":required_skill", ":cur_level"),
-            # (ge, ":max_surgery_level", ":required_skill"), #Skip if party skill level is less than the required value
-            
-            # (assign, ":quest_object_troop", ":best_surgeon"),
-            # (assign, ":quest_importance", 1),
-            # (assign, ":quest_xp_reward", 10),
-            # (assign, ":quest_gold_reward", 10),
-            # (assign, ":quest_dont_give_again_period", 50),
-            # (assign, ":result", ":quest_no"),
-          # (try_end),
+		(else_try),
+			(eq, ":quest_no", "qst_lend_surgeon"),
+			(try_begin),
+				(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
+				#(neq, ":giver_reputation", lrep_quarrelsome),
+				#(neq, ":giver_reputation", lrep_debauched),
+				(assign, ":max_surgery_level", 0),
+				(assign, ":best_surgeon", -1),
+				(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+				(try_for_range, ":i_stack", 1, ":num_stacks"),
+					(party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
+					(troop_is_hero, ":stack_troop"),
+					(store_skill_level, ":cur_surgery_skill", skl_surgery, ":stack_troop"),
+					(gt, ":cur_surgery_skill", ":max_surgery_level"),
+					(assign, ":max_surgery_level", ":cur_surgery_skill"),
+					(assign, ":best_surgeon", ":stack_troop"),
+				(try_end),
+            	(store_character_level, ":cur_level", "trp_player"),
+				(assign, ":required_skill", 5),
+				(val_div, ":cur_level", 10),
+				(val_add, ":required_skill", ":cur_level"),
+				(ge, ":max_surgery_level", ":required_skill"), #Skip if party skill level is less than the required value
+				(assign, ":quest_object_troop", ":best_surgeon"),
+				(assign, ":quest_importance", 1),
+				(assign, ":quest_xp_reward", 100),
+				(assign, ":quest_gold_reward", 200),
+				(assign, ":quest_dont_give_again_period", 30),
+				(assign, ":result", ":quest_no"),
+			(try_end),
 
 # Lord Quests
         # (else_try),
@@ -10222,7 +10226,11 @@ scripts = [
         (eq, ":quest_no", "qst_dispatch_scouts"),
         (assign, ":quest_return_penalty", -2),
         (assign, ":quest_expire_penalty", -3),
-##      (else_try),
+#Enemy lord quests
+      (else_try),
+        (eq, ":quest_no", "qst_lend_surgeon"),
+
+		##      (else_try),
 ##        (eq, ":quest_no", "qst_lend_companion"),
 ##        (quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),
 ##        (party_add_members, "p_main_party", ":quest_target_troop", 1),
@@ -10238,10 +10246,6 @@ scripts = [
 ##        (eq, ":quest_no", "qst_hunt_down_raiders"),
 ##      (else_try),
 ##        (eq, ":quest_no", "qst_capture_prisoners"),
-
-#Enemy lord quests
-      # (else_try),
-        # (eq, ":quest_no", "qst_lend_surgeon"),
 
 #Kingdom lady quests
       # (else_try),
@@ -10274,8 +10278,7 @@ scripts = [
         (eq, ":quest_no", "qst_scout_waypoints"),
         (assign, ":quest_return_penalty", -1),
         (assign, ":quest_expire_penalty", -2),
-      
-      #Village Elder quests
+    #Village Elder quests
       # (else_try),
         # (eq, ":quest_no", "qst_deliver_grain"),
         # (assign, ":quest_return_penalty", -6),
@@ -10289,7 +10292,7 @@ scripts = [
         # (assign, ":quest_return_penalty", -4),
         # (assign, ":quest_expire_penalty", -5),
 
-      #Mayor quests
+    #Mayor quests
       (else_try),
         (eq, ":quest_no", "qst_deliver_wine"),
         (assign, ":quest_return_penalty", -1),
@@ -11275,12 +11278,17 @@ scripts = [
           (agent_set_animation, ":agent_no", "anim_stand_townguard"),
         (try_end),
       (else_try),
-        (this_or_next|eq, ":troop_no", "trp_gondor_lord" ),
-        (this_or_next|eq, ":troop_no", "trp_isengard_lord" ),
-		(eq, ":troop_no", "trp_woodelf_lord"),
-        (assign, ":stand_animation", "anim_sit_on_throne"), # mtarini: let sire denethor sit. GA: as well as Saruman and Thranduil
+        (this_or_next|eq, ":troop_no", "trp_gondor_lord"), # mtarini: let sire Denethor sit. GA: as well as Saruman. Them are always in capitals
+        (eq, ":troop_no", "trp_isengard_lord"),
+        (assign, ":stand_animation", "anim_sit_on_throne"),
       (else_try),
-        (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+		(eq, ":troop_no", "trp_woodelf_lord"),(eq, "$current_town", "p_town_thranduils_halls"),
+        (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Thranduil, but only in his halls
+      (else_try),
+		(eq, ":troop_no", "trp_gundabad_lord"),(eq, "$current_town", "p_town_gundabad"),
+        (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Burza, but only in his cave
+      (else_try),
+		(is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":stand_animation", "anim_stand_lord"),
       (else_try),
         (is_between, ":troop_no", soldiers_begin, soldiers_end),

@@ -1,4 +1,4 @@
-894
+896
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -100,7 +100,6 @@ qstr_Short_of_Resource_Po Short_of_Resource_Points!!
 qstr_{s10}_will_soon_reas {s10}_will_soon_reassign_some_of_{s12}_troops_away_from_your_party!
 qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
-qstr_Selected:{reg1} Selected:{reg1}
 qstr_the_Steward the_Steward
 qstr_our our
 qstr_your your
@@ -402,6 +401,7 @@ qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
+qstr_DEBUG:_new_wargs_tea DEBUG:_new_wargs_team_is_now:_{reg25}
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -413,6 +413,7 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
+qstr_DEBUG:_trying_respaw DEBUG:_trying_respawn_{s12}_from_entry_{reg1}...
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
@@ -824,6 +825,7 @@ qstr_Well_you_may_do_as_y Well,_you_may_do_as_you_please._My_companions_and_I_ca
 qstr_{s9}_asked_you_to_ta {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_believed_to_be_at_{s4}_when_you_were_given_this_quest.
 qstr_{s9}_asked_you_to_tak {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_believed_to_be_at_{s4}_when_you_were_given_this_quest.
 qstr_{s11}_asked_you_to_e {s11}_asked_you_to_escort_his_messenger_to_{s14}.
+qstr_Lend_your_experience Lend_your_experienced_surgeon_{s3}_to_{s1}.
 qstr_No_commander_should_ No_commander_should_have_to_admit_this,_{playername},_but_I_was_inspecting_my_soldiers_the_other_day_and_there_are_such_here_who_don't_know_which_end_of_a_sword_to_hold._They_need_someone_to_show_them_the_meaning_of_valor._You_are_a_warrior_of_renown,_{playername}._Will_you_train_some_troops_for_me?_I_would_be_grateful_to_you.
 qstr_No_commander_should_h No_commander_should_have_to_admit_this,_{playername},_but_I_was_inspecting_my_soldiers_the_other_day_and_executed_some_of_them_for_incompetence._They_need_someone_with_steel_in_his_back_to_flog_some_courage_into_them,_or_kill_them_trying._You_are_a_warrior_of_renown,_{playername}._Will_you_train_some_troops_for_me?_I_can_make_it_worthwhile_for_you.
 qstr_{s9}_asked_you_to_ra {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him.

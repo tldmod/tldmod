@@ -141,6 +141,7 @@ lord_start
 lord_intro
 lord_meet_neutral
 lord_meet_enemy
+lord_generic_mission_completed
 lord_investigate_fangorn_completed0
 lord_investigate_fangorn_completed1
 lord_capture_troll_completed_two_trolls
@@ -151,7 +152,6 @@ lord_capture_troll_completed_two_trolls_thankyou_accept
 lord_capture_troll_completed_two_trolls_thankyou_refuse
 lord_capture_troll_completed_two_trolls_thankyou_raise
 lord_pretalk
-lord_generic_mission_completed
 lord_follow_spy_completed
 lord_follow_spy_half_completed
 lord_follow_spy_failed
@@ -281,8 +281,6 @@ lord_mission_accepted
 lord_mission_rejected
 lord_leave_prison
 lord_leave
-lord_leave_give_quest
-enemy_lord_tell_mission
 lady_escort_lady_succeeded
 prison_guard_players
 prison_guard_talk
