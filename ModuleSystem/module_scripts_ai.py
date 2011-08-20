@@ -620,22 +620,6 @@ ai_scripts = [
            (str_store_party_name, s2, ":target_attacking_center"),
            #(display_message, "@DEBUG: {s1} decided to besiege {s2}."),
          (try_end),
-#TLD: no raiding villages        
-#       (else_try),
-#         (val_sub, ":random_no", ":chance_raiding_village"),
-#         (lt, ":random_no", 0),
-#         (faction_set_slot, ":faction_no", slot_faction_ai_state, sfai_raiding_village),
-#         (faction_set_slot, ":faction_no", slot_faction_ai_object, ":target_raiding_village"),
-#         (try_begin),
-#           (gt, ":faction_marshall_num_followers", ":marshall_num_old_followers"),
-#           (faction_set_slot, ":faction_no", slot_faction_ai_offensive_max_followers, ":faction_marshall_num_followers"),
-#         (try_end),
-#         (try_begin),
-#           (eq, cheat_switch, 1),
-#           (str_store_faction_name, s1, ":faction_no"),
-#           (str_store_party_name, s2, ":target_raiding_village"),
-#           (display_message, "@DEBUG: {s1} decided to raid {s2}."),
-#         (try_end),
        (else_try),
          (val_sub, ":random_no", ":chance_attacking_enemy_army"),
          (lt, ":random_no", 0),
@@ -1305,7 +1289,6 @@ ai_scripts = [
         (party_get_slot, ":our_follower_strength", ":party_no", slot_party_follower_strength),
 
         (store_troop_faction, ":faction_no", ":troop_no"),
-        
         (faction_get_slot, ":faction_theater", ":faction_no", slot_faction_active_theater), #TLD
 
         #find current center
@@ -1376,7 +1359,7 @@ ai_scripts = [
           (try_end),
           (try_begin),
             (is_between, ":cur_center_no", centers_begin, centers_end), #already in our center
-            (party_slot_eq,  ":cur_center_no", slot_town_lord, ":troop_no"),
+#            (party_slot_eq,  ":cur_center_no", slot_town_lord, ":troop_no"), #only kings are town lords in TLD
             (assign, ":target_move_to_home_center", ":cur_center_no"),
             (assign, ":chance_move_to_home_center", 100),
           (try_end),
@@ -2243,10 +2226,10 @@ ai_scripts = [
       (assign, "$pout_party", reg0),
       (party_set_faction, "$pout_party", ":troop_faction_no"),
 	  
-		# TLD faction specific party banners
+	# TLD faction specific party banners
 	  (faction_get_slot,":cur_banner",":troop_faction_no",slot_faction_party_map_banner),
 	  
-	  # rohan gets somewhat random flags, for now (mtarini)
+	# rohan gets somewhat random flags, for now (mtarini)
 	  (try_begin),(eq,  ":troop_faction_no", "fac_rohan"),
 		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
 		(store_mod, ":tmp", ":troop_no", 6),
@@ -2282,10 +2265,9 @@ ai_scripts = [
 		(le, ":troop_faction_no", "fac_lorien"), # in all factions until lorien, no royal banners (mtarini)
 		(val_add, ":cur_banner", 1), # marshall get royal flags (mtarini)
       (try_end),
-	  (party_add_members,"$pout_party",":guard",10), 
-	  
+	  (store_random_in_range,":tmp",9,17),
+	  (party_add_members,"$pout_party",":guard",":tmp"), 
 	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
-	  
 	  (party_attach_to_party, "$pout_party", ":center_no")
 
 ]),

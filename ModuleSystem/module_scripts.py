@@ -1165,8 +1165,11 @@ scripts = [
 	  #(assign, "$g_ent_seen", 0),
 	  (assign, "$g_ent_water_ever_drunk", 0),
 	  (assign, "$g_ent_water_taking_effect", 0),
-      (faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
+	  (assign, "$number_of_player_deaths", 0),      
       (assign, "$g_player_luck", 200),
+      (assign, "$disable_npc_complaints", 0), #MV: back to 0
+
+	  (faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
       (troop_set_slot, "trp_player", slot_troop_occupation, slto_kingdom_hero),
       (troop_set_slot, "trp_player", slot_troop_prisoner_of_party, -1),
       (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
@@ -1178,8 +1181,6 @@ scripts = [
       (troop_set_slot, "trp_player", slot_troop_custom_banner_map_flag_type, -1),
       #Assigning global constant
       (call_script, "script_store_average_center_value_per_faction"),
-	  
-	  (assign, "$number_of_player_deaths", 0),
 
       (troop_set_slot, "trp_player", slot_troop_custom_banner_bg_color_1, 0xFFFFFFFF),
       (troop_set_slot, "trp_player", slot_troop_custom_banner_bg_color_2, 0xFFFFFFFF),
@@ -1213,14 +1214,10 @@ scripts = [
       (item_set_slot, "itm_maggoty_bread", slot_item_food_bonus, 2),
       (item_set_slot, "itm_cram", slot_item_food_bonus, 3),
 
-#NPC companion changes begin
       (call_script, "script_initialize_npcs"),
-      (assign, "$disable_npc_complaints", 0), #MV: back to 0
-#NPC companion changes end
 
 # Setting book intelligence requirements
       #(item_set_slot, "itm_book_tactics", slot_item_intelligence_requirement, 9),
-      #(item_set_slot, "itm_book_wound_treatment_reference", slot_item_intelligence_requirement, 10),
       
 # Setting the random town sequence:
       (store_sub, ":num_towns", centers_end, centers_begin),
@@ -1601,11 +1598,9 @@ scripts = [
 		(faction_get_slot,":strength",":faction",slot_faction_strength),
         (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),      
       (try_end),
-	# spawn kings in capitals, TLD  (no need, every town lord spawned in his own city already
-     # ]+concatenate_scripts([  [
-	   # (call_script, "script_create_kingdom_hero_party", faction_init[x][3][0], faction_init[x][9]),
-       # (troop_slot_eq, ":hero", slot_troop_leaded_party, 0),
-	 # ]  for x in range(len(faction_init)) ])+[
+# spawn some lords in distinct towns, TLD
+    ]+[
+	   (call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn)) ]+[  
 
 # spawn other specific location lords
       (try_for_range, ":fac", kingdoms_begin, kingdoms_end),

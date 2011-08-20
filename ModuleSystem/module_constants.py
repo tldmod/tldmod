@@ -1875,11 +1875,12 @@ routes_list = [
  ("p_town_erebor"       , "p_town_dale","p_town_esgaroth"),
 ]
 
-lords_spawn = [ ("trp_gondor_lord","p_town_minas_tirith"),
-                ("trp_rohan_lord","p_town_edoras"),
-				("trp_isengard_lord","p_town_isengard"),
-				("trp_mordor_lord","p_town_minas_morgul"),
-				("trp_lorien_lord","p_town_caras_galadhon"),
+lords_spawn = [ ("trp_knight_1_1","p_town_linhir"),
+				("trp_knight_1_3","p_town_dol_amroth"),
+				("trp_knight_1_5","p_town_erech"),
+                ("trp_knight_1_6","p_town_pinnath_gelin"),
+				("trp_knight_1_7","p_town_west_osgiliath"),
+				("trp_knight_1_8","p_town_lossarnach"),
 ]
 
 #### banner colors #0-130

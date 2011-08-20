@@ -50,7 +50,6 @@ parties = [
   ("temp_killed","enemies_killed"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("main_party_backup","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("encountered_party_backup","_"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-#  ("ally_party_backup","_",  pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_friends_backup","_" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("player_casualties","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("enemy_casualties","_"          ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
@@ -60,8 +59,6 @@ parties = [
   ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   
-#  ("village_reinforcements","village_reinforcements",pf_is_static|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-
   #  volunteers parties (one per city)
   # ] +concatenate_scripts([
   #		("volunteers_"+str(x), "_+_",   pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[],0)
@@ -82,7 +79,7 @@ parties = [
     ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 28.17,  9.34),[],170),
     ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 50.82, 30.82),[],170),
     ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-58.19, 20.5 ),[],0),
-    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun      |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-63.81,-14.05),[],170),
+    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun|pf_is_static|pf_show_faction, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-63.81,-14.05),[],170),
     ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-56.48,  3.55),[],170),
     ("town_calembel"        ,"Calembel",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -2.16, 30.86),[],50),
 # Rohan towns
@@ -112,7 +109,6 @@ parties = [
     ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-30.8,-223.0),[],170),
     ("town_woodelf_camp"     ,"Woodelf_Camp",        icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-42.3,-155.1),[],170),
     ("town_woodelf_west_camp","Woodelf_West_Camp",   icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,( -6.2,-215.4),[],170),
-#    ("town_woodelf_north_camp","Woodelf_North_Camp",icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-50.3,-227.1),[],170),
 # Woodmen and Beorning towns   
     ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_beorn,0,ai_bhvr_hold,0,(-35.4,-175.1),[],170),
     ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_beorn,0,ai_bhvr_hold,0,(-4.4,-184.7),[],170),
@@ -123,9 +119,8 @@ parties = [
 # Dale towns
     ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_dale,0,ai_bhvr_hold,0,(-61.1,-223.9),[],170),
     ("town_esgaroth","Esgaroth",     icon_esgaroth |pf_tld_down, no_menu, pt_none, fac_dale,0,ai_bhvr_hold,0,(-61.89,-216.83),[],150),
-#    ("town_dale_town","Dale Town",   icon_town     |pf_tld_down, no_menu, pt_none, fac_dale,0,ai_bhvr_hold,0,(-79.9,-204.6),[],170),
 # Dunlanders towns
-    ("town_dunland_camp","Dunlander_Camp", icon_nomadcamp_b|pf_tld_down, no_menu, pt_none, fac_dunland,0,ai_bhvr_hold,0,(45.9,-43.5),[],350),
+    ("town_dunland_camp","Dunlander_Camp", icon_nomadcamp_b|pf_tld_down, no_menu, pt_none, fac_dunland,0,ai_bhvr_hold,0,(49.9,-48.5),[],350),# pos changes to (45.9,-43.5) after war starts
 # Haradrim towns
     ("town_harad_camp","Haradrim_Camp",    icon_haradcamp  |pf_tld_down, no_menu, pt_none, fac_harad,0,ai_bhvr_hold,0,(-55.9,67.7),[],170),
 # Khand towns
@@ -139,7 +134,6 @@ parties = [
     ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-46.6,-188.0),[],170),
 # Rhun towns
     ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-71.2,-223.1),[],170),
-#    ("town_rhun_encampment","Rhun_Encampment",        icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-94.09,-365.12),[],170),
     ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-73.02,-189.9),[],170),
     ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-68.63,-236.87),[],170),
 # Gundabad towns
@@ -148,13 +142,10 @@ parties = [
     ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
     ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),
     ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower       |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(18.9,-194.8),[],140),
-    ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-23.9,-217.0),[],170),
+    ("town_gundabad_mirkwood_outpost","Gundabad_Mirkwood_Outpost", icon_orctower |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-13.9,-224.0),[],170),
 # Dwarves towns
     ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-59.6,-226.4),[],130),
-#    ("town_erebor_mining_camp","Erebor Mining Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-66.4,-229.0),[],170),
     ("town_ironhill_camp","Iron_Hills_Quarry",icon_camp  |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-49.6,-239.9),[],170),
-
-#    ("town_pelargir_port","Port",            icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-40.48,59.15),[],240),
 
 ####DONE TLD TOWNS
 
@@ -180,7 +171,6 @@ parties = [
 
 # stuff from native
  ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
-# ("village_1", "Yaragar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15,0),[], 100),
 
 ### TLD map icons
    ("Argonath","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.883472,-51.047958),[],180),
@@ -197,7 +187,6 @@ parties = [
   #("four_ways_inn","Four_Ways_Inn",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.064327,1.070496),[]),
   ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
   ("battlefields","battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
-  #("dhorak_keep","Dhorak_Keep",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
 
 # Legendary Places
   ("legend_amonhen","Amon Hen",icon_ancient_ruins|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-31.80,-47.71),[],180),

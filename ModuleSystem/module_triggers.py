@@ -1329,14 +1329,19 @@ triggers = [
 		(assign, "$tld_war_began",1),
 		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
 		(play_sound,"snd_evil_horn"),
-#	reveal evil camps through the land
+	# move Dun camp across Isen
+		(party_get_position, pos1, "p_town_dunland_camp"),
+		(position_move_x,pos1,-400),
+		(position_move_y,pos1,500),
+		(party_set_position, "p_town_dunland_camp", pos1),
+	#	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),
           (neg|party_is_active,":center"),
           (store_faction_of_party, ":cur_faction", ":center"),
           (neg|faction_slot_eq, ":cur_faction", slot_faction_advance_camp, ":center"), # don't reveal advance camps
 		  (enable_party,":center"),
           (call_script, "script_update_center_notes", ":center"),
-          # and reinforce
+    # and reinforce
           (assign, ":garrison_strength", 13),
           (party_get_slot, ":garrison_limit", ":center", slot_center_garrison_limit),
           (try_for_range, ":unused", 0, ":garrison_strength"),
@@ -1348,7 +1353,7 @@ triggers = [
             (try_end),
           (try_end),
 		(try_end),
-        # start the intro cutscene sequence
+    # start the intro cutscene sequence
 		(try_begin),
 			(eq, "$tld_option_cutscenes",1),
 			(jump_to_menu, "mnu_auto_intro_rohan"),
