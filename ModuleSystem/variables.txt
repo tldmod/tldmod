@@ -58,6 +58,8 @@ g_leave_town
 qst_bring_back_runaway_serfs_party_1
 qst_bring_back_runaway_serfs_party_2
 qst_bring_back_runaway_serfs_party_3
+g_leave_town_outside
+auto_enter_town
 lord_requested_to_talk_to
 g_permitted_to_center
 debt_to_merchants_guild
@@ -147,7 +149,6 @@ sneaked_into_town
 g_player_besiege_town
 cant_sneak_into_town
 castle_undefended
-g_leave_town_outside
 g_town_visit_after_rest
 found_moria_entrance
 g_last_defeated_bandits_town
@@ -157,7 +158,6 @@ g_siege_sallied_out_once
 cant_talk_to_enemy
 auto_besiege_town
 g_siege_method_finish_hours
-auto_enter_town
 g_battle_simulation_cancel_for_party
 g_battle_simulation_auto_enter_town_after_battle
 g_siege_first_encounter
@@ -177,13 +177,13 @@ faction_evil
 rescue_stage
 active_rescue
 party_meeting
+wargs_in_battle
 player_is_inside_dungeon
 agent_king
 player_is_bowing
 current_player_agent
 dungeons_in_scene
 trolls_in_battle
-wargs_in_battle
 warg_to_be_replaced
 nazgul_in_battle
 nazgul_team
@@ -388,8 +388,8 @@ player_looks_like_an_orc
 ambient_faction
 g_cur_week_half_daily_wage_payments
 g_player_luck
-g_player_party_icon
 disable_npc_complaints
+g_player_party_icon
 prev_day
 gate_breached
 trait_captain_infantry_week
@@ -603,4 +603,3 @@ qst_scout_waypoints_wp_2_visited
 qst_scout_waypoints_wp_3_visited
 npc_map_talk_context
 npc_is_quitting
-quest_given_time

@@ -629,9 +629,9 @@ simple_triggers = [
 (24,  # changed from 48 to 24 in TLD, GA
    [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
-         #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
          (neg|troop_slot_ge, ":troop_no", slot_troop_leaded_party, 1),
+		 (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
 
          (store_troop_faction, ":cur_faction", ":troop_no"),
          (try_begin),
@@ -656,7 +656,7 @@ simple_triggers = [
        (try_end),
     ]),
   
-(72,[(call_script, "script_update_trade_good_prices")]),
+#(72,[(call_script, "script_update_trade_good_prices")]),
 
 #Troop AI: Merchants thinking
 (8,[(try_for_parties, ":party_no"),

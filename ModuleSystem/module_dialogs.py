@@ -1714,7 +1714,7 @@ dialogs = [
                           (str_store_troop_name, s4, "$g_talk_troop"),
                           (try_begin),
                             (eq, ":faction_leader", "$g_talk_troop"),
-                            (call_script, "script_store_faction_king_in_s15", "$g_talk_troop_faction"),
+                            (str_store_troop_name_plural, s15,"$g_talk_troop"), #GA: plural name for kings contains referral to them
                             (str_store_string, s9, "@I am {s4}, {s15} of {s6}", 0),
                           (else_try),
                             (str_store_string, s9, "@I am {s4}, a commander of {s6}", 0),
@@ -2688,7 +2688,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
           (else_try),
             (str_store_string, s12, "@we are not fighting anyone at the moment"),
           (try_end),
-          (call_script, "script_store_faction_king_in_s15", "$players_kingdom"),
+          (str_store_troop_name_plural, s15,"$g_talk_troop"), #GA: plural name for kings contains referral to them
           (call_script, "script_get_rank_title_to_s24", "$players_kingdom"), #in s24
           (try_begin),
             (eq, "$player_looks_like_an_orc",1),
@@ -5436,7 +5436,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 		(eq, "$random_quest_no", "qst_lend_surgeon"),
 		(assign, "$g_leave_town_outside", 1),
 		(assign,"$auto_enter_town","$g_encountered_party"),
-		(store_current_hours, "$quest_given_time"),
+#		(store_current_hours, "$quest_given_time"),
 		(rest_for_hours, 4),
 		(assign, "$lord_requested_to_talk_to", "$g_talk_troop"),
 	(try_end)]],
@@ -8705,8 +8705,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
     (str_store_faction_name, s12, reg10)],
 "Shall I leave your command, and go back home to defend {s12}?^^[you will gain {reg15} Resource Pts ({s12})]", "disband_regular_member_confirm_yn",[]],
 
-[anyone|plyr,"disband_regular_member_confirm_yn", [
-     (call_script,"script_store_troop_king_in_s15","$g_talk_troop")],
+[anyone|plyr,"disband_regular_member_confirm_yn", [(str_store_troop_name_plural, s15,"$g_talk_troop")],
 "Yes, go there and wait further orders from {s15}. Good luck, soldier!", "close_window",[ 
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),
 	(assign, ":gain", reg15),

@@ -78,7 +78,7 @@ common_battle_check_victory_condition = (1, 60, ti_once,[
 	(display_message,"str_msg_battle_won"),
 	(assign,"$battle_won",1),
 	(assign, "$g_battle_result", 1),
-	(call_script, "script_play_victorious_sound"),
+	(call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
     ],[
 	(call_script, "script_count_mission_casualties_from_agents"),
 	(finish_mission, 1)])

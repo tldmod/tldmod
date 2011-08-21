@@ -68,8 +68,10 @@ triggers = [
    (try_end),
 
 	(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
-		(store_add,":slot",":itp_type",slot_troop_shop_horses-1), # itp_types and shop abundance slots in same order 
-		(troop_get_slot,":items",":cur_merchant",":slot"), # get item shop abundance
+#		(store_add,":slot",":itp_type",slot_troop_shop_horses-1), # itp_types and shop abundance slots in same order 
+#		(troop_get_slot,":items",":cur_merchant",":slot"), # get item shop abundance
+		(troop_get_slot,":skill","trp_skill2item_type",":itp_type"),
+		(store_skill_level,":items",":skill",":cur_merchant"), 
         (try_begin),
 			(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",":items"),
         (try_end),
@@ -141,8 +143,10 @@ triggers = [
 			(try_end),
         (try_end),
     # horses inventory
-        (troop_get_slot,":items",":cur_merchant",slot_troop_shop_horses),
-        (try_begin),
+ #       (troop_get_slot,":items",":cur_merchant",slot_troop_shop_horses),
+		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse),
+		(store_skill_level,":items",":skill",":cur_merchant"),         
+		(try_begin),
             (gt,":items",0),
             (troop_add_merchandise,":cur_merchant",itp_type_horse,":items"),
         (try_end),

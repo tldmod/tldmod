@@ -1938,10 +1938,8 @@ ai_scripts = [
       (spawn_around_party,":center_no", "pt_kingdom_hero_party"),
       (assign, "$pout_party", reg0),
       (party_set_faction, "$pout_party", ":troop_faction_no"),
-	  
 	# TLD faction specific party banners
 	  (faction_get_slot,":cur_banner",":troop_faction_no",slot_faction_party_map_banner),
-	  
 	# rohan gets somewhat random flags, for now (mtarini)
 	  (try_begin),(eq,  ":troop_faction_no", "fac_rohan"),
 		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
@@ -1950,8 +1948,7 @@ ai_scripts = [
 		(val_sub, ":tmp", 1),
 		(store_add, ":cur_banner", ":tmp", "icon_mfp_rohan_a"),  # alternative flag assigned( troopNO % 6 )
 	  (try_end),
-
-	  # gondor gets flags specific of subfactions  (mtarini)
+	# gondor gets flags specific of subfactions  (mtarini)
 	  (try_begin),(eq,  ":troop_faction_no", "fac_gondor"),
 		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
 		(party_get_slot, ":fief", ":center_no", slot_party_subfaction),
@@ -1982,7 +1979,6 @@ ai_scripts = [
 	  (party_add_members,"$pout_party",":guard",":tmp"), 
 	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
 	  (party_attach_to_party, "$pout_party", ":center_no")
-
 ]),
 
 # script_decide_kingdom_party_ais
@@ -2077,7 +2073,7 @@ ai_scripts = [
 			(str_store_troop_name_link, s7, ":hero"),
             #(party_set_name, ":party", "@Host of {s5}"),
             (party_set_name, ":party", "str_s5_s_host"),
-			(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
+		#	(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
 	     # hire troops to host, kings get more
             (assign, ":num_tries", 30),
             (try_begin),
@@ -2120,8 +2116,7 @@ ai_scripts = [
 # Input: none
 # Output: none
 # updates active theaters for all factions, called after a faction defeat
-("update_active_theaters",
-   [        
+("update_active_theaters", [        
         # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
         (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
           (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
@@ -2222,9 +2217,7 @@ ai_scripts = [
                 #(display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
               (try_end),
             (try_end), # try_for_range, ":unused"
-            
           (try_end), # end find another theater
-          
         (try_end), # end update active theaters       
 ]),
  
@@ -2232,8 +2225,7 @@ ai_scripts = [
 # Input: faction, current theater
 # Output: reg0 = theater_SE, theater_SW, theater_C, theater_N or -1 for error
 # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
-("find_next_theater",
-   [
+("find_next_theater", [
      (store_script_param, ":faction", 1),
      (store_script_param, ":active_theater", 2),
      (assign, ":next_theater", -1),
@@ -2241,86 +2233,61 @@ ai_scripts = [
      #hardcoded theater sequences
      (try_begin),
        (eq, ":home_theater", theater_SE), # SE-SW-C-N
-       (try_begin),
-         (eq, ":active_theater", theater_SE), (assign, ":next_theater", theater_SW),
-       (else_try),
-         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_C),
-       (else_try),
-         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_N),
+       (try_begin),(eq, ":active_theater", theater_SE),(assign, ":next_theater", theater_SW),
+        (else_try),(eq, ":active_theater", theater_SW),(assign, ":next_theater", theater_C),
+        (else_try),(eq, ":active_theater", theater_C ),(assign, ":next_theater", theater_N),
        (try_end),
      (else_try),
        (eq, ":home_theater", theater_SW), # SW-SE-C-N
-       (try_begin),
-         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_SE),
-       (else_try),
-         (eq, ":active_theater", theater_SE), (assign, ":next_theater", theater_C),
-       (else_try),
-         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_N),
+       (try_begin),(eq, ":active_theater", theater_SW),(assign, ":next_theater", theater_SE),
+        (else_try),(eq, ":active_theater", theater_SE),(assign, ":next_theater", theater_C),
+        (else_try),(eq, ":active_theater", theater_C ),(assign, ":next_theater", theater_N),
        (try_end),
      (else_try),
        (eq, ":home_theater", theater_C), # C-SW-N-SE
-       (try_begin),
-         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_SW),
-       (else_try),
-         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_N),
-       (else_try),
-         (eq, ":active_theater", theater_N), (assign, ":next_theater", theater_SE),
+       (try_begin),(eq, ":active_theater", theater_C ),(assign, ":next_theater", theater_SW),
+        (else_try),(eq, ":active_theater", theater_SW),(assign, ":next_theater", theater_N),
+        (else_try),(eq, ":active_theater", theater_N ),(assign, ":next_theater", theater_SE),
        (try_end),
      (else_try),
        (eq, ":home_theater", theater_N), # N-C-SW-SE
-       (try_begin),
-         (eq, ":active_theater", theater_N), (assign, ":next_theater", theater_C),
-       (else_try),
-         (eq, ":active_theater", theater_C), (assign, ":next_theater", theater_SW),
-       (else_try),
-         (eq, ":active_theater", theater_SW), (assign, ":next_theater", theater_SE),
+       (try_begin),(eq, ":active_theater", theater_N ),(assign, ":next_theater", theater_C),
+        (else_try),(eq, ":active_theater", theater_C ),(assign, ":next_theater", theater_SW),
+        (else_try),(eq, ":active_theater", theater_SW),(assign, ":next_theater", theater_SE),
        (try_end),
      (try_end),
-     
      (assign, reg0, ":next_theater"),  
 ]),
-
 
 # script_theater_name_to_s15
 # Input: theater
 # Output: s15
-("theater_name_to_s15",
-   [
+("theater_name_to_s15",[
      (store_script_param, ":theater", 1),
      (str_store_string, s15, "@ERROR"),
-     (try_begin),
-       (eq, ":theater", theater_SE), (str_store_string, s15, "str_theater_SE"),
-     (else_try),
-       (eq, ":theater", theater_SW), (str_store_string, s15, "str_theater_SW"),
-     (else_try),
-       (eq, ":theater", theater_C), (str_store_string, s15, "str_theater_C"),
-     (else_try),
-       (eq, ":theater", theater_N), (str_store_string, s15, "str_theater_N"),
+     (try_begin),(eq, ":theater", theater_SE),(str_store_string, s15, "str_theater_SE"),
+      (else_try),(eq, ":theater", theater_SW),(str_store_string, s15, "str_theater_SW"),
+      (else_try),(eq, ":theater", theater_C ),(str_store_string, s15, "str_theater_C"),
+      (else_try),(eq, ":theater", theater_N ),(str_store_string, s15, "str_theater_N"),
      (try_end),
 ]),
    
-
 # script_get_advcamp_pos
 # Gets a position of the advance camp in another theater (looks up faction active theater)
 # Input: faction
 # Output: pos1
 # Uses pos2 and pos3
-("get_advcamp_pos",
-   [
+("get_advcamp_pos",[
      (store_script_param, ":faction", 1),
      
      (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
      (faction_get_slot, ":capital", ":faction", slot_faction_capital),
      
      (assign, ":center_party", "p_town_east_emnet"), # some default
-     (try_begin),
-         (eq, ":active_theater", theater_N), (assign, ":center_party", "p_theater_N_center"),
-     (else_try),
-         (eq, ":active_theater", theater_C), (assign, ":center_party", "p_theater_C_center"),
-     (else_try),
-         (eq, ":active_theater", theater_SW), (assign, ":center_party", "p_theater_SW_center"),
-     (else_try),
-         (eq, ":active_theater", theater_SE), (assign, ":center_party", "p_theater_SE_center"),
+     (try_begin),(eq, ":active_theater", theater_N ),(assign, ":center_party", "p_theater_N_center"),
+      (else_try),(eq, ":active_theater", theater_C ),(assign, ":center_party", "p_theater_C_center"),
+      (else_try),(eq, ":active_theater", theater_SW),(assign, ":center_party", "p_theater_SW_center"),
+      (else_try),(eq, ":active_theater", theater_SE),(assign, ":center_party", "p_theater_SE_center"),
      (try_end),
      
      (party_get_position, pos2, ":capital"),
@@ -2426,8 +2393,7 @@ ai_scripts = [
 # Input: center
 # Output: none
 # Note: Depends on the destroyable flag being set for advance camps
-("destroy_center",
-   [
+("destroy_center",[
      (store_script_param, ":center", 1),
      (store_faction_of_party, ":center_faction", ":center"),
      
@@ -2481,8 +2447,7 @@ ai_scripts = [
 # Store real walking distance between parties (to handle Gondor towns), because aerial distance across White Mountains can be way off
 # Input: party1, party2
 # Output: reg0 - distance
-("get_tld_distance",
-   [
+("get_tld_distance", [
      (store_script_param, ":party1", 1),
      (store_script_param, ":party2", 2),
      # (try_begin), # one is south of WM, the other north of WM
@@ -2731,4 +2696,5 @@ ai_scripts = [
 		(try_end),
 	(try_end),     # out comes pos1
 ]),
+
 ]

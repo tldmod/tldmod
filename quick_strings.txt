@@ -1,4 +1,4 @@
-896
+888
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -100,15 +100,6 @@ qstr_Short_of_Resource_Po Short_of_Resource_Points!!
 qstr_{s10}_will_soon_reas {s10}_will_soon_reassign_some_of_{s12}_troops_away_from_your_party!
 qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
-qstr_the_Steward the_Steward
-qstr_our our
-qstr_your your
-qstr_{s13}_King {s13}_King
-qstr_{s13}_Master {s13}_Master
-qstr_Steward Steward
-qstr_Lieutenant Lieutenant
-qstr_King King
-qstr_Master Master
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
 qstr_Volunteers Volunteers
@@ -354,7 +345,9 @@ qstr_His_cracked_ribs_hav His_cracked_ribs_have_healed.
 qstr__+20_weapon_skill_ (+20_weapon_skill)
 qstr_{s1}_has_had_his_hea {s1}_has_had_his_health_boosted
 qstr_{s1}_s_mound {s1}'s_mound
-qstr_News_has_arrived_tha News_has_arrived_that_{s1}_was_killed_in_battle!
+qstr_News_has_arrived_tha News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!
+qstr_{s1}_s_Burial_Mound {s1}'s_Burial_Mound
+qstr_{s1}_s_Funeral_Pyre {s1}'s_Funeral_Pyre
 qstr_{s1}_is_logged_as_de {s1}_is_logged_as_dead
 qstr_You_have_been_discov You_have_been_discovered_before_scaling_the_wall.
 qstr_The_enemy_is_coming_ The_enemy_is_coming_in_force,_you_must_flee!
@@ -375,7 +368,6 @@ qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_mana
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
 qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
-qstr_{s7}_has_assumed_the {s7}_has_assumed_the_command_of_a_{s6}_host!
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
