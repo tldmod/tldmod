@@ -193,92 +193,7 @@ dialogs = [
                      (str_store_string_reg,s65,s64),
                      (eq, 1, 0)],  
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
-
-   
-   #[trp_antler, "start", [], "Hello. Can you find the mythical Salt Mine?", "antler1",[]],
-   #[trp_antler|trp_player, "antler1",[],"HOPEFULLY!.", "close_window",[
-    #  (enable_party, "p_salt_mine")]],
-   #mtarini: commented abovr
-#[trp_ramun_the_slave_trader, "start", [], "Hello. Can you find the mythical Salt Mine?", "antler1",[]],
-#[trp_ramun_the_slave_trader|trp_player, "antler1",[],"HOPEFULLY!.", "close_window",[(enable_party, "p_salt_mine")]],
-   
-
-[trp_ramun_the_slave_trader, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0)],
-"Good day to you, {young man/lassie}.", "ramun_introduce_1",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_1", [], "Forgive me, you look like a trader, but I see none of your merchandise.", "ramun_introduce_2",[
-   (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1)]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_1", [], "Never mind.", "close_window",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_2", [], "A trader? Oh, aye, I certainly am that.\
- My merchandise is a bit different from most, however. It has to be fed and watered twice a day and tries to run away if I turn my back.", "ramun_introduce_3",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_3", [], "Livestock?", "ramun_introduce_4",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_4", [], "Close enough. I like to call myself the man who keeps every boat on this ocean moving.\
- Boats are driven by oars, you see, and oars need men to pull them or they stop. That's where I come in.", "ramun_introduce_5",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_5", [], "Galley slaves.", "ramun_introduce_6",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_6", [], "Now you're catching on! A trading port like this couldn't survive without them.\
- The ships lose a few hands on every voyage, so there's always a high demand. The captains come to me and they pay well.", "ramun_introduce_7",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_7", [], "Where do the slaves come from?", "ramun_introduce_8",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_8", [], "Mostly I deal in convicted criminals bought from the authorities.\
- Others are prisoners of war from various nations, brought to me because I offer the best prices.\
- However, on occasion I'll buy from privateers and other . . . 'individuals'. You can't be picky about your suppliers in this line of work.\
- You wouldn't happen to have any prisoners with you, would you?", "ramun_introduce_9",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_9", [], "Me? ", "ramun_introduce_10",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_10", [], "Why not? If you intend to set foot outside this town,\
- you're going to cross swords with someone sooner or later. And, God willing, you'll come out on top.\
- Why not make some extra money off the whole thing? Take them alive, bring them back to me, and I'll pay you fifty denars for each head.\
- Don't much care who they are or where they come from.", "ramun_introduce_11",[]],
-[trp_ramun_the_slave_trader|plyr, "ramun_introduce_11", [], "Hmm. I'll think about it.", "ramun_introduce_12",[]],
-[trp_ramun_the_slave_trader, "ramun_introduce_12", [], "Do think about it!\
- There's a lot of silver to be made, no mistake. More than enough for the both of us.", "close_window",[]],
-
-[trp_ramun_the_slave_trader,"start", [], "Hello, {playername}.", "ramun_talk",[]],
-[trp_ramun_the_slave_trader,"ramun_pre_talk", [], "Anything else?", "ramun_talk",[]],
-
-[trp_ramun_the_slave_trader|plyr,"ramun_talk",[(store_num_regular_prisoners,reg0),(ge,reg0,1)],
-"I've brought you some prisoners, Ramun. Would you like a look?", "ramun_sell_prisoners",[]],
-[trp_ramun_the_slave_trader,"ramun_sell_prisoners", [],"Let me see what you have...", "ramun_sell_prisoners_2",[(change_screen_trade_prisoners)]],
-[trp_ramun_the_slave_trader, "ramun_sell_prisoners_2", [], "A pleasure doing business with you.", "close_window",[]],
-
-[trp_ramun_the_slave_trader|plyr,"ramun_talk", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)], "How do I take somebody as prisoner?", "ramun_ask_about_capturing",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_talk", [(troop_slot_ge,"$g_talk_troop", slot_troop_met_previously, 1)], "Can you tell me again about capturing prisoners?", "ramun_ask_about_capturing",[(troop_set_slot,"$g_talk_troop", slot_troop_met_previously, 2)]],
-
-[trp_ramun_the_slave_trader,"ramun_ask_about_capturing", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)],
-"You're new to this, aren't you? Let me explain it in simple terms.\
- The basic rule of taking someone prisoner is knocking him down with a blunt weapon, like a mace or a club,\
- rather than cutting him open with a sword. That way he goes to sleep for a little while rather than bleeding to death, you see?\
- I'm assuming you have a blunt weapon with you . . .", "ramun_have_blunt_weapon",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon", [], "Of course.", "ramun_have_blunt_weapon_yes",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon", [], "As a matter of fact, I don't.", "ramun_have_blunt_weapon_no",[]],
-[trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_yes", [],
- "Good. Then all you need to do is beat the bugger down with your weapon, and when the fighting's over you clap him in irons.\
- It's a bit different for nobles and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
- but your average rabble-rouser will bleed like a stuck pig if you get him with something sharp. I don't have many requirements in my merchandise,\
- but I do insist they be breathing when I buy them.", "ramun_ask_about_capturing_2",[]],
-[trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_no", [],
-"No? Heh, well, this must be your lucky day. I've got an old club lying around that I was going to throw away.\
- It a bit battered, but still good enough bash someone until he stops moving.\
- Here, have it.","ramun_have_blunt_weapon_no_2",[(troop_add_item, "trp_player","itm_wood_club",imod_cracked)]],
-[trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon_no_2", [], "Thanks, Ramun. Perhaps I may try my hand at it.", "ramun_have_blunt_weapon_yes",[]],
-[trp_ramun_the_slave_trader,"ramun_ask_about_capturing", [],
-"Alright, I'll try and expain it again in simple terms. The basic rule of taking someone prisoner is knocking him down with a blunt weapon, like a mace or a club,\
- rather than cutting him open with a sword. That way he goes to sleep for a little while rather than bleeding to death, you see?\
- It's a bit different for nobles and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
- but your average rabble-rouser will bleed like a stuck pig if you get him with something sharp.", "ramun_ask_about_capturing_2",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_2", [], "Alright, I think I understand. Anything else?", "ramun_ask_about_capturing_3",[]],
-[trp_ramun_the_slave_trader,"ramun_ask_about_capturing_3", [],
-"Well, it's not as simple as all that. Blunt weapons don't do as much damage as sharp ones, so they won't bring your enemies down as quickly.\
- And trust me, given the chance, most of the scum you run across would just as soon kill you as look at you, so don't expect any courtesy when you pull out a club instead of a sword.\
- Moreover, having to drag prisoners to and fro will slow down your party, which is why some people simply set their prisoners free after the fighting's done.\
- It's madness. How could anyone turn down all that silver, eh?", "ramun_ask_about_capturing_4",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_4", [], "Is that everything?", "ramun_ask_about_capturing_5",[]],
-[trp_ramun_the_slave_trader,"ramun_ask_about_capturing_5", [],
-"Just one final thing. Managing prisoners safely is not an easy thing to do, you could call it a skill in itself.\
- If you want to capture a lot of prisoners, you should try and learn the tricks of it yourself,\
- or you won't be able to hang on to a single man you catch.", "ramun_ask_about_capturing_7",[]],
-[trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_7", [], "Thanks, I'll keep it in mind.", "ramun_pre_talk",[]],
-
-[trp_ramun_the_slave_trader|plyr,"ramun_talk", [], "I'd better be going.", "ramun_leave",[]],
-[trp_ramun_the_slave_trader,"ramun_leave", [], "Remember, any prisoners you've got, bring them to me. I'll pay you good silver for every one.", "close_window",[]],
-
+  
 #MV: Easter Egg Troll dialogs
 [trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0)], "Problem?", "troll_introduce_1",[]],
 [trp_easter_egg_troll, "start", [], "U mad?", "troll_talk_1",[]],
@@ -482,60 +397,19 @@ dialogs = [
 		(encountered_party_is_attacker),
 		(assign, ":defending", 0),
 	(try_end),
-	
-	(call_script, "script_str_store_party_battle_cry_in_s4", "$g_encountered_party", ":defending" ),
-	
-	#(str_store_string, s11, "@Hrrr! Frresh meat and shiny things."),
-	#(str_store_string, s12, "@Gharr! Hand over all yerr stuff, and we might spare yourr life."),
-	#(str_store_string, s12, "@Gharr! Kill! Kill! Kill!"),
-	#(str_store_string, s13, "@Death to men!"),
-	#(store_random_in_range, ":random", 11, 14),
-	#(str_store_string_reg, s4, ":random"),
-	
-	#(play_sound, "snd_encounter_looters")
-]],
+	(call_script, "script_str_store_party_battle_cry_in_s4", "$g_encountered_party", ":defending" )]],
 
+[anyone,"hostile_dialog", [], "{s4}", "close_window",[]],
 
-#[anyone,"start", [(this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),(eq, "$g_encountered_party_template", "pt_forest_bandits")],
-# "Eh? What is it?", "bandit_meet",[]],
+[anyone|plyr,"start", [ (eq,"$talk_context",tc_make_enemy_join_player),
+						(str_store_item_name, s4, "itm_angmar_whip_reward")],
+"Bow to the power of the {s4} and serve me!", "looters_2_join", []],
 
-# [party_tpl|pt_mountain_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-# "Warning: This line should never display.", "hostile_dialog",[
-	# (str_store_string, s4, "@Attack 1!"),
-# ]],
-
-# [party_tpl|pt_forest_bandits|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(encountered_party_is_attacker)],
-# "Warning: This line should never display.", "hostile_dialog",[
-	# (str_store_string, s4, "@Attack 2!!"),
-# ]],
-
-# [anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
-# "Warning: This line should never display.", "hostile_dialog",[
-	# (str_store_string, s4, "@Attack!!"),
-# ]],
-
-# [anyone|auto_proceed,"start", [(eq,"$talk_context",tc_party_encounter),(eq, "$encountered_party_hostile", 1),(encountered_party_is_attacker)],
-# "Warning: This line should never display.", "hostile_dialog",[
-	# (str_store_string, s4, "@Attack!!"),
-# ]],
-
-
-[anyone,"hostile_dialog", [], "{s4}", "close_window",[#(encounter_attack)
-]],
-
-
-
- [anyone|plyr,"start", [ (eq,"$talk_context",tc_make_enemy_join_player),
-   (str_store_item_name, s4, "itm_angmar_whip_reward")
- ],
- "Bow to the power of the {s4} and serve me!", "looters_2_join", []],
-
- [anyone,"looters_2_join", [], "We will obey, Master.", "close_window", [
+[anyone,"looters_2_join", [], "We will obey, Master.", "close_window", [
      (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
      (remove_party, "$g_encountered_party"),
 	 (change_screen_return),
-     (assign, "$g_leave_encounter", 1)
-]],
+     (assign, "$g_leave_encounter", 1)]],
   
 #[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
 #"I'm not afraid of you lot. Fight me if you dare!", "close_window", [(encounter_attack)]],
@@ -697,11 +571,9 @@ dialogs = [
 "Yes, {s5}?", "member_talk",[]],
 
 [anyone|plyr,"member_talk", [],"Let me see your equipment.", "member_trade",[]],
-
 [anyone,"member_trade",[(store_character_level, ":talk_troop_level", "$g_talk_troop"),
 						(ge, ":talk_troop_level", 40)],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
-      
 [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(change_screen_equip_other)]],
 
 #[anyone,"do_member_trade", [], "Anything else?", "member_talk",[]],
@@ -723,11 +595,6 @@ dialogs = [
           (str_store_string, s4, "@my home town"),
         (try_end)],
 "Oh really? Well, I'm not just going to wait around here. I'm going to go back to {s4}. Is that what you want?", "member_separate_confirm",[]],
-
-#[anyone,"member_separate", [
-#      ], "Well, actually, there was something I needed to tell you.", "companion_quitting",
-#   [ ]],
-
 [anyone|plyr,"member_separate_confirm", [], "That's right. We need to part ways.", "member_separate_yes",[]],
 [anyone|plyr,"member_separate_confirm", [], "No, I'd rather have you at my side.", "do_member_trade",[]],
 
@@ -741,6 +608,7 @@ dialogs = [
 [anyone,"member_question", [], "Very well. What did you want to ask?", "member_question_2",[]],
 
 [anyone|plyr,"member_question_2", [], "How do you feel about the way things are going in this company?", "member_morale",[]],
+[anyone|plyr,"member_question_2", [], "How is your health?", "member_health",[]],
 [anyone|plyr,"member_question_2", [], "Tell me your story again.", "member_background_recap",[]],
 
 [anyone,"member_morale", [(call_script, "script_npc_morale", "$g_talk_troop"),], "{s21}", "do_member_trade",[]],
@@ -751,19 +619,27 @@ dialogs = [
           #(troop_get_slot, ":home", "$g_talk_troop", slot_troop_home),
           #(str_store_party_name, 21, ":home"),
           (troop_get_slot, ":recap", "$g_talk_troop", slot_troop_home_recap),
-          (str_store_string, 5, ":recap"),
-      ], "{s5}", "member_background_recap_2",[]],
+          (str_store_string, 5, ":recap")],
+"{s5}", "member_background_recap_2",[]],
 
 [anyone,"member_background_recap_2", [
           (str_clear, 19),
           (troop_get_slot, ":background", "$g_talk_troop", slot_troop_backstory_b),
-          (str_store_string, 5, ":background"),
-      ], "{s5}", "member_background_recap_3",[]],
+          (str_store_string, 5, ":background")],
+"{s5}", "member_background_recap_3",[]],
 
 [anyone,"member_background_recap_3", [], "Then shortly after, I joined up with you.", "do_member_trade",[]],
-
 [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
+[anyone,"member_health", [
+	(troop_get_slot, ":wound_mask", "$g_talk_troop", slot_troop_wound_mask),
+	(try_begin),
+		(neq, ":wound_mask", 0),
+		(str_store_string, s12, "@I'm seriously injured. Please be gentle."),
+	(else_try),
+		(str_store_string, s12, "@I don't have serious injuries, thank you"),
+	(try_end)],
+"Here is a description of my health in short: {s12}", "do_member_trade",[]],
 
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -771,27 +647,26 @@ dialogs = [
                      (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
                      (eq, "$talk_context", tc_tavern_talk),
                      (main_party_has_troop, "$g_talk_troop")],
-   "Let's leave whenever you are ready.", "close_window", []],
+"Let's leave whenever you are ready.", "close_window", []],
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1),
-   ],
-   "Please do not waste any more of my time today. Perhaps we shall meet again.", "close_window", []],
+                     (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1)],
+"Please do not waste any more of my time today. Perhaps we shall meet again.", "close_window", []],
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (eq, "$g_talk_troop_met", 0),
                      (troop_get_slot, ":intro", "$g_talk_troop", slot_troop_intro),
                      (str_store_string, 5, ":intro"),
-                     (str_store_party_name, 20, "$g_encountered_party"),
-    ],"{s5}", "companion_recruit_intro_response", [(troop_set_slot, "$g_talk_troop", slot_troop_first_encountered, "$g_encountered_party"),]],
+                     (str_store_party_name, 20, "$g_encountered_party")],
+"{s5}", "companion_recruit_intro_response", [(troop_set_slot, "$g_talk_troop", slot_troop_first_encountered, "$g_encountered_party"),]],
 
 
 [anyone|plyr, "companion_recruit_intro_response", [
                      (troop_get_slot, ":intro_response", "$g_talk_troop", slot_troop_intro_response_1),
-                     (str_store_string, 6, ":intro_response")
-    ], "{s6}", "companion_recruit_backstory_a", []],
+                     (str_store_string, 6, ":intro_response")], 
+"{s6}", "companion_recruit_backstory_a", []],
 
 [anyone|plyr, "companion_recruit_intro_response", [
                      (troop_get_slot, ":intro_response", "$g_talk_troop", slot_troop_intro_response_2),
@@ -954,7 +829,6 @@ dialogs = [
 "It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?",
    "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),]],
 
-
 ### If the player and the companion parted on bad terms
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
@@ -963,7 +837,6 @@ dialogs = [
                      (troop_get_slot, ":speech", "$g_talk_troop", slot_troop_rehire_speech),
                      (str_store_string, 5, ":speech")],
 "{s5}", "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)]],
-
 
 ###If the player and the companion parted on good terms
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),

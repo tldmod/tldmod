@@ -600,7 +600,7 @@ slot_troop_met                 = 5
 slot_troop_party_template      = 6
 slot_troop_renown              = 7
 slot_troop_prisoner_of_party   = 8  # important for heroes only
-
+slot_troop_wounded             = 9  # TLD, for tracking wounded in current battle 
 slot_troop_leaded_party        = 10 # important for kingdom heroes only
 slot_troop_wealth              = 11 # important for kingdom heroes only
 slot_troop_cur_center          = 12 # important for royal family members only (non-kingdom heroes)
@@ -616,7 +616,7 @@ slot_troop_present_at_event    = 19
 slot_troop_does_not_give_quest = 20
 slot_troop_player_debt         = 21
 slot_troop_player_relation     = 22
-
+slot_companion_agent_id        = 23 #TLD, tracks companion agent in battle 
 slot_troop_last_quest          = 24
 slot_troop_last_quest_betrayed = 25
 slot_troop_last_persuasion_time= 26
@@ -1286,18 +1286,11 @@ ws_party_spawns_list = [
 ]
 
 # TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
-ws_scout_chance = 60
-ws_raider_chance = 45
-ws_patrol_chance = 30 # no chance below str. 500
-ws_caravan_chance = 25 # no chance below str. 1000
+ws_scout_chance = 40
+ws_raider_chance = 25
+ws_patrol_chance = 20 # no chance below str. 500
+ws_caravan_chance = 15 # no chance below str. 1000
 #ws_host_chance = 35
-
-#MV: removed these because of unnecessarily obscure meaning, replaced by ws_*_chance
-# ws_scout_freq_multiplier = 3.5
-# ws_raider_freq_multiplier = 2.5
-# ws_patrol_freq_multiplier = 1.5
-# ws_caravan_freq_multiplier = 2.5
-# ws_host_freq_multiplier = 1
 
 # TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
 ws_scout_limit_multiplier = 14

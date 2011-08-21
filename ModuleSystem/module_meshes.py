@@ -16,7 +16,7 @@ from header_meshes import *
 #  12) Mesh z scale: Will be done automatically when the mesh is loaded
 ####################################################################################################################
 
-meshes = [
+meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("ui_default_menu_window", 0, "ui_default_menu_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   #("pic_bandits", 0, "pic_bandits", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_mb_warrior_1", 0, "pic_mb_warrior_1", 0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -30,10 +30,15 @@ meshes = [
   ("draw_ent_attack_orc", 0, "draw_ent_attack_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_entdrink_human", 0, "draw_entdrink_human", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_orc", 0, "draw_victory_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_uruk", 0, "draw_victory_uruk", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_dwarf", 0, "draw_victory_dwarf", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_defeat_human", 0, "draw_defeat_human", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_defeat_orc", 0, "draw_defeat_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-
+  ("draw_victory_gondor", 0, "draw_victory_gondor", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_rohan", 0, "draw_victory_rohan", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_orc_orc", 0, "draw_victory_orc_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_lorien_arrows", 0, "draw_lorien_arrows", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  
   ("town_west_emnet"    , 0, "town_west_emnet", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_dol_guldur"    , 0, "town_dol_guldur", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_isengard"      , 0, "town_isengard", 0, 0, 0, 0, 0, 0, 1, 1, 1),

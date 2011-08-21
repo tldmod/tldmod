@@ -222,8 +222,7 @@ game_menus = [
 ( "tutorial",mnf_disable_all_keys,
     "TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
     "none",
-    [],
-    [("go_back_dot",[],"Go back.",[(change_screen_quit)])]
+    [],[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
 ),
 # This needs to be the fifth window!!!  
 ("reports",0,
@@ -291,7 +290,6 @@ game_menus = [
       ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_return),]),
     ]
 ),
-  
 ( "custom_battle_2",mnf_disable_all_keys,
     "^^^^^^{s16}",
     "none",
@@ -912,7 +910,6 @@ game_menus = [
       ("leave_custom_battle_2",[],"Cancel.", [(jump_to_menu, "mnu_start_game_3"), ]),
     ]
 ),
-
 ( "custom_battle_end",mnf_disable_all_keys,
     "^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.",
     "none",
@@ -934,8 +931,6 @@ game_menus = [
 
 ######################################
 #TLD Troll quick battle choser
-###################################### 
-
 ( "quick_battle_troll",mnf_disable_all_keys,
     "^^^^^^^^Choose your troll scenario:",
     "none",
@@ -955,7 +950,6 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 15),(jump_to_menu, "mnu_custom_battle_2"),]),
     ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
 ),
-  
 ( "quick_battle_wargs",mnf_disable_all_keys,
     "^^^^^^^^Choose your TEST Warg scenario:",
     "none",
@@ -975,10 +969,8 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 25),(jump_to_menu, "mnu_custom_battle_2"),]),
     ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
 ),
-  
 ######################################
 #TLD Character creation menus CONTINUE
-###################################### 
 ("start_good",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your race:", "none",[(set_show_messages,0),],[
   ("start_01",[],"MAN",                 [(jump_to_menu,"mnu_start_good_man"),]),
@@ -1099,24 +1091,19 @@ game_menus = [
   ("spacer",[],"_",[]),
   ("go_back"     ,[],"Go back",[(jump_to_menu,"$last_menu")]),    ]
 ),
-( "choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
-    "^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...","none",[
+("choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
+ "^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...","none",[
 	 # (jump_to_menu, "mnu_auto_return"), # comment this line to let devs skip skill/face editing
 	],
-	[
-	  ("skip",[],"SKIP THAT: let me playtest now",[(jump_to_menu, "mnu_start_phase_2"),]),
-	  ("continue",[],"Proceed as normal",[(jump_to_menu, "mnu_auto_return"),]),
-    ]
+	[ ("skip",[],"SKIP THAT: let me playtest now",[(jump_to_menu, "mnu_start_phase_2"),]),
+	  ("continue",[],"Proceed as normal",[(jump_to_menu, "mnu_auto_return"),])]
 ),
 ############################################### 
 #OLD START 
-###############################################
-
 ( "auto_return",0,
     "This menu automatically returns to caller.",
     "none",
-    [(change_screen_return, 0)],
-    []
+    [(change_screen_return, 0)],[]
 ),
 
 ("morale_report",0,
@@ -1184,7 +1171,6 @@ game_menus = [
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-
 ("faction_orders",0,
    "{s9}", "none",
    [ 
@@ -1274,14 +1260,11 @@ game_menus = [
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-
-  
 ("character_report",0,
    "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
    "none",
-   [
-    (set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
@@ -1293,8 +1276,8 @@ game_menus = [
    ],
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
 ),
-  
-("upkeep_report", 0, "{s12}", "none",[
+("upkeep_report", 0,
+ "{s12}", "none",[
     (assign, reg5, 0),
     #(set_background_mesh, "mesh_ui_default_menu_window"),
     (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
@@ -1320,7 +1303,6 @@ game_menus = [
    ],
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
 ),
-
 ("party_size_report",0,
    "^^^^{s1}", "none",
    [(call_script, "script_game_get_party_companion_limit"),
@@ -1359,7 +1341,6 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
 ),
-
 ("faction_strengths_report",0,
    "{s1}",
    "none",
@@ -1377,7 +1358,6 @@ game_menus = [
     [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-
 ("faction_relations_report",0,
    "{s1}",
    "none",
@@ -1713,21 +1693,28 @@ game_menus = [
          (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
          (change_screen_return),
    ]), 
-   ("camp_mvtest_notes",[],"Update lord locations.",[
-     (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
-       (call_script, "script_update_troop_location_notes", ":troop_no", 0),
-     (try_end),
-     (display_message, "@Lord locations updated - see wiki!", 0x30FFC8),
-   ]),            
+   # ("camp_mvtest_notes",[],"Update lord locations.",[
+     # (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+       # (call_script, "script_update_troop_location_notes", ":troop_no", 0),
+     # (try_end),
+     # (display_message, "@Lord locations updated - see wiki!", 0x30FFC8),
+   # ]),            
    # ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
      # (set_spawn_radius, 0),
      # (spawn_around_party, "p_main_party", "pt_looters"),
      # (party_add_prisoners, reg0, "trp_peasant_woman", 10),
      # (display_message, "@Tribal orcs with women spawned!", 0x30FFC8),
-   # ]),            
+   #]),
+   ("camp_mvtest_npcs",[],"Get all good npcs.",[
+    (try_for_range, ":npc", companions_begin, companions_end),
+		(store_troop_faction, ":fac", ":npc"),
+		(faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
+		(party_add_members,"p_main_party",":npc",1),
+	(try_end),
+    (display_message, "@You got them all, pardner!", 0x30FFC8),
+   ]),
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])]            
 ),
-
 ("mvtest_destroy_faction",0,
    "Choose a faction to defeat:",
    "none",
@@ -1749,7 +1736,6 @@ game_menus = [
   )
   ]for y in range(len(faction_init)) ])      
 ),
-
 ("mvtest_facstr_report",0,
    "{s1}",
    "none",
@@ -1770,7 +1756,6 @@ game_menus = [
     [("continue",[],"Back to test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
-  
 ("mvtest_facai_report",0,
    "{s1}",
    "none",
@@ -1861,7 +1846,6 @@ game_menus = [
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
-
 ("mvtest_facai_details",0,
    "{s1}",
    "none",
@@ -2030,7 +2014,6 @@ game_menus = [
      ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
     ]
 ),
-
 ("mvtest_faction_casualties",0,
    "{s1}",
    "none",
@@ -2166,7 +2149,6 @@ game_menus = [
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
-
 ("mvtest_town_wealth_report",0,
    "{s1}",
    "none",
@@ -2211,7 +2193,6 @@ game_menus = [
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
-  
 ("mvtest_sieges",0,
    "Test sieges",
    "none",
@@ -2350,7 +2331,6 @@ game_menus = [
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
-  
 ("mvtest_order_siege",0,
    "Order {s1} to besiege...",
    "none",
@@ -2391,9 +2371,7 @@ game_menus = [
   )
   ]for y in range(len(center_list)) ])      
 ),
-
-  
-  ("mvtest_advcamps",0,
+("mvtest_advcamps",0,
    "Test advance camps",
    "none",
    [], [
@@ -2605,63 +2583,148 @@ game_menus = [
     ]
   ),
 ## MadVader test end
-
-("game_options",0,"Click on an option to toggle:","none",[],
+("game_options",0,"^^^^^^^^Click on an option to toggle:","none",[],
     [
-      ("game_options_restrict_items",[
-         (try_begin),
-           (neq, "$g_crossdressing_activated", 0),
-           (str_store_string, s7, "@OFF"),
-         (else_try),
-           (str_store_string, s7, "@ON"),
-         (try_end),
+    ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@OFF"),
+									(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Item restrictions: {s7}",[
-         (store_sub, "$g_crossdressing_activated", 1, "$g_crossdressing_activated"),
-         (val_clamp, "$g_crossdressing_activated", 0, 2),
-        ]
-       ),
-      ("game_options_formations",[
-         (try_begin),
-           (neq, "$tld_option_formations", 0),
-           (str_store_string, s7, "@ON"),
-         (else_try),
-           (str_store_string, s7, "@OFF"),
-         (try_end),
-        ],"Battle formations and AI: {s7}",[
-         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),
-         (val_clamp, "$tld_option_formations", 0, 2),
-        ]
-       ),
-	  ("game_options_town_menu",[
-	     (try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
-          (else_try),                                         (str_store_string, s7, "@OFF"),
-         (try_end),
-	    ],"Find center features first for them to appear in menu: {s7}",[
-	     (store_sub, "$tld_option_town_menu_hidden", 1, "$tld_option_town_menu_hidden"),
-         (val_clamp, "$tld_option_town_menu_hidden", 0, 2),
-		]),
-	  ("game_options_town_menu",[
-	     (try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
-          (else_try), (str_store_string, s7, "@OFF"),
-         (try_end),
-	    ],"Cutscenes: {s7}",[
-	     (store_sub, "$tld_option_cutscenes", 1, "$tld_option_cutscenes"),
-         (val_clamp, "$tld_option_cutscenes", 0, 2),
-		]),
-	  ("game_options_death",[
-	     (try_begin),(neq, "$tld_option_death", 0),(str_store_string, s7, "@ON"),
-          (else_try),                              (str_store_string, s7, "@OFF"),
-         (try_end),
-	    ],"Permanent death for npcs: {s7}.",[
-	     (store_sub, "$tld_option_death", 1, "$tld_option_death"),
-         (val_clamp, "$tld_option_death", 0, 2),
-		]),
-      ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
-    ]
-),
+        (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2)]),
 
-  ##     #TLD - assasination menus begin (Kolba)
- (  "assasins_attack_player_won",mnf_disable_all_keys,
+    ("game_options_formations",[(try_begin),(neq, "$tld_option_formations", 0),(str_store_string, s7, "@ON"),
+								(else_try),(str_store_string, s7, "@OFF"),(try_end),
+        ],"Battle formations and AI: {s7}",[
+        (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2)]),
+
+	("game_options_town_menu",[(try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
+								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Find center features first for them to appear in menu: {s7}",[
+	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
+
+	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
+								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Cutscenes: {s7}",[
+	    (store_sub,"$tld_option_cutscenes",1,"$tld_option_cutscenes"),(val_clamp, "$tld_option_cutscenes",0,2)]),
+
+	("game_options_injuries",[(try_begin),(neq, "$tld_option_injuries", 0),(str_store_string, s7, "@ON"),
+                                  (else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Injuries for companions: {s7}.",[
+		(store_sub,"$tld_option_injuries",1,"$tld_option_injuries"),(val_clamp,"$tld_option_injuries",0,2)]),
+ 
+	("game_options_death",[(try_begin),(neq, "$tld_option_death_npc", 0),(str_store_string, s7, "@ON"),
+							(else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Permanent death for lords and companions: {s7}.",[
+	     (store_sub, "$tld_option_death_npc", 1, "$tld_option_death_npc"),(val_clamp, "$tld_option_death_npc", 0, 2)]),
+
+	("game_options_death2",[(try_begin),(neq, "$tld_option_death_player", 0),(str_store_string, s7, "@ON"),
+							(else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Permanent death for player (that is YOU!): {s7}.",[
+	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2)]),
+
+    ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+]),
+("camp_chest_fill",0,
+ "^^^^^^^^Please choose faction to get items from.",
+ "none",
+ [],
+ [("f_gondor"  ,[],"Gondor items"    ,[(call_script,"script_fill_camp_chests","fac_gondor"  ),(jump_to_menu, "mnu_camp"),]),
+  ("f_rohan"   ,[],"Rohan items"     ,[(call_script,"script_fill_camp_chests","fac_rohan"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_isengard",[],"Isengard items"  ,[(call_script,"script_fill_camp_chests","fac_isengard"),(jump_to_menu, "mnu_camp"),]),
+  ("f_mordor"  ,[],"Mordor items"    ,[(call_script,"script_fill_camp_chests","fac_mordor"  ),(jump_to_menu, "mnu_camp"),]),
+  ("f_dwarf"   ,[],"Dwarf items"     ,[(call_script,"script_fill_camp_chests","fac_dwarf"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_lorien"  ,[],"Lothlorien items",[(call_script,"script_fill_camp_chests","fac_lorien"  ),(jump_to_menu, "mnu_camp"),]),
+  ("f_woodelf" ,[],"Mirkwood items"  ,[(call_script,"script_fill_camp_chests","fac_woodelf" ),(jump_to_menu, "mnu_camp"),]),
+  ("f_imladris",[],"Imladris items"  ,[(call_script,"script_fill_camp_chests","fac_imladris"),(jump_to_menu, "mnu_camp"),]),	   
+  ("f_harad"   ,[],"Harad items"     ,[(call_script,"script_fill_camp_chests","fac_harad"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_khand"   ,[],"Khand items"     ,[(call_script,"script_fill_camp_chests","fac_khand"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_rhun"    ,[],"Rhun items"      ,[(call_script,"script_fill_camp_chests","fac_rhun"    ),(jump_to_menu, "mnu_camp"),]),	   
+  ("f_dale"    ,[],"Dale items"      ,[(call_script,"script_fill_camp_chests","fac_dale"    ),(jump_to_menu, "mnu_camp"),]),
+  ("f_umbar"   ,[],"Umbar items"     ,[(call_script,"script_fill_camp_chests","fac_umbar"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_moria"   ,[],"Moria items"     ,[(call_script,"script_fill_camp_chests","fac_moria"   ),(jump_to_menu, "mnu_camp"),]),
+  ("f_gundabad",[],"Gundabad items"  ,[(call_script,"script_fill_camp_chests","fac_gundabad"),(jump_to_menu, "mnu_camp"),]),
+  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]),	   
+  ("go_back"   ,[],"Go back"         ,[(jump_to_menu, "mnu_camp"),]),
+ ]
+),
+("cheat_change_race",0,
+ "^^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
+ "none",
+ [],
+ [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
+  ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
+  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"), (jump_to_menu, "mnu_camp"),]),
+  ("race_rohan"     ,[],"Rohan"     ,[(troop_set_type,"trp_player", 3), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
+  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
+  ("race_orc"       ,[],"Orc"       ,[(troop_set_type,"trp_player", 5), (jump_to_menu, "mnu_camp"),]),
+  ("race_uruk"      ,[],"Uruk"      ,[(troop_set_type,"trp_player", 6), (jump_to_menu, "mnu_camp"),]),
+  ("race_haradrim"  ,[],"Haradrim"  ,[(troop_set_type,"trp_player", 7), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_easterling",[],"Easterling",[(troop_set_type,"trp_player", 8), (jump_to_menu, "mnu_camp"),]),
+  ("race_dwarf"     ,[],"Dwarf"     ,[(troop_set_type,"trp_player", 9), (jump_to_menu, "mnu_camp"),]),
+  ("race_troll"     ,[],"Troll"     ,[(troop_set_type,"trp_player",10), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_dunedain"  ,[],"Dunedain"  ,[(troop_set_type,"trp_player",11), (jump_to_menu, "mnu_camp"),]),
+  ("race_lothlorien",[],"Lothlorien",[(troop_set_type,"trp_player",12), (jump_to_menu, "mnu_camp"),]),
+  ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13), (jump_to_menu, "mnu_camp"),]),
+  ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
+  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),	   
+  ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
+ ]
+),  
+#TLD end (Hokie)  
+("camp_action",0,
+  "^^^^^^^^^     Choose an action:", "none",
+ [(set_background_mesh, "mesh_ui_default_menu_window"),],
+ 
+ [ 
+
+    ("camp_drink_water",
+		[
+			(player_has_item,"itm_ent_water"),
+			(eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
+		],
+		"Drink the Ent Water!",
+		[
+	    (troop_get_type,reg5,"trp_player"),
+	    (troop_remove_item,"itm_ent_water"),
+		(display_log_message,"@You drank the Ent Water..."),
+		(assign,"$g_ent_water_ever_drunk",1),
+		(assign,"$g_ent_water_taking_effect",1),
+		(try_begin),
+			(neg|is_between,reg5,tf_orc_begin, tf_orc_end),
+			(jump_to_menu,"mnu_drank_ent_water_human"),
+		(else_try),
+			(jump_to_menu,"mnu_drank_ent_water_orc"),
+		(try_end),
+		]
+	),
+	
+    # ("camp_recruit_prisoners",
+       # [(troops_can_join, 1),
+        # (store_current_hours, ":cur_time"),
+        # (val_sub, ":cur_time", 24),
+        # (gt, ":cur_time", "$g_prisoner_recruit_last_time"),
+        # (try_begin),
+          # (gt, "$g_prisoner_recruit_last_time", 0),
+          # (assign, "$g_prisoner_recruit_troop_id", 0),
+          # (assign, "$g_prisoner_recruit_size", 0),
+          # (assign, "$g_prisoner_recruit_last_time", 0),
+        # (try_end),
+        # ], "Recruit some of your prisoners to your party.",[(jump_to_menu, "mnu_camp_recruit_prisoners"),],
+	# ),
+	
+    #("action_read_book",[],"Select a book to read.",[(jump_to_menu, "mnu_camp_action_read_book"),]),
+	
+    #("action_modify_banner",[(eq, "$cheat_mode", 1)],"Cheat: Modify your banner.",
+    #                                               [(start_presentation, "prsnt_banner_selection"), #(start_presentation, "prsnt_custom_banner"),
+    #                                                ]),
+    #("action_retire",[],"Retire from adventuring.",[(jump_to_menu, "mnu_retirement_verify"),]),
+	
+    ("camp_action_4",[],"Back.",[(jump_to_menu, "mnu_camp"),]),
+   ]
+),
+################################ CHEAT/MODDING MENU END ########################################  
+
+##     #TLD - assasination menus begin (Kolba)
+( "assasins_attack_player_won",mnf_disable_all_keys,
     "You have successfully defeated assassins from {s2}, sent by {s3}.",
     "none",
     [
@@ -2674,27 +2737,17 @@ game_menus = [
 		(faction_get_slot,":leader",":faction",slot_faction_leader),#get faction leader
 		(str_store_troop_name,s3,":leader"),#save faction leader name
 		],
-    [
-      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
-    ],
-  ),
-		
-		
-  (
-    "assasins_attack_player_retreat",mnf_disable_all_keys,
-    "You escaped with your life!",
+    [("continue",[],"Continue...",[(leave_encounter),(change_screen_return)])],
+),
+( "assasins_attack_player_retreat",mnf_disable_all_keys,
+  "You escaped with your life!",
     "none",
-    [
-		#add here any consequences of retreat
-		],
-    [
-      ("continue",[],"Continue...",[(leave_encounter),(change_screen_return)]),
-    ],
-  ),
-		 
-  # what is this? a cut and paste version of defeat? plase merge code rather than cutting and pasting. --- mtarini
-  (
-    "assasins_attack_player_defeated",mnf_scale_picture,
+    [#add here any consequences of retreat
+	],
+    [("continue",[],"Continue...",[(leave_encounter),(change_screen_return)])],
+),
+# what is this? a cut and paste version of defeat? plase merge code rather than cutting and pasting. --- mtarini
+(   "assasins_attack_player_defeated",mnf_scale_picture,
     "You should not be reading this...",
     "none",
     [
@@ -3180,8 +3233,8 @@ game_menus = [
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
 	
-	("crossdressing", [(assign,reg6, "$g_crossdressing_activated"), ], "Crossdressing: {reg6?Enabled:Disabled}", 
-	  [(store_sub, "$g_crossdressing_activated", 1, "$g_crossdressing_activated"), (jump_to_menu, "mnu_camp_cheat"),]),
+	("crossdressing", [(assign,reg6, "$tld_option_crossdressing"), ], "Crossdressing: {reg6?Enabled:Disabled}", 
+	  [(store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"), (jump_to_menu, "mnu_camp_cheat"),]),
 
 	("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
 	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
@@ -3280,214 +3333,18 @@ game_menus = [
 	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
 	 ("cheat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),	 
 ]),
-  
-("camp_chest_fill",0,
- "^^^^^^^^Please choose faction to get items from.",
- "none",
- [],
- [("f_gondor"  ,[],"Gondor items"    ,[(call_script,"script_fill_camp_chests","fac_gondor"  ),(jump_to_menu, "mnu_camp"),]),
-  ("f_rohan"   ,[],"Rohan items"     ,[(call_script,"script_fill_camp_chests","fac_rohan"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_isengard",[],"Isengard items"  ,[(call_script,"script_fill_camp_chests","fac_isengard"),(jump_to_menu, "mnu_camp"),]),
-  ("f_mordor"  ,[],"Mordor items"    ,[(call_script,"script_fill_camp_chests","fac_mordor"  ),(jump_to_menu, "mnu_camp"),]),
-  ("f_dwarf"   ,[],"Dwarf items"     ,[(call_script,"script_fill_camp_chests","fac_dwarf"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_lorien"  ,[],"Lothlorien items",[(call_script,"script_fill_camp_chests","fac_lorien"  ),(jump_to_menu, "mnu_camp"),]),
-  ("f_woodelf" ,[],"Mirkwood items"  ,[(call_script,"script_fill_camp_chests","fac_woodelf" ),(jump_to_menu, "mnu_camp"),]),
-  ("f_imladris",[],"Imladris items"  ,[(call_script,"script_fill_camp_chests","fac_imladris"),(jump_to_menu, "mnu_camp"),]),	   
-  ("f_harad"   ,[],"Harad items"     ,[(call_script,"script_fill_camp_chests","fac_harad"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_khand"   ,[],"Khand items"     ,[(call_script,"script_fill_camp_chests","fac_khand"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_rhun"    ,[],"Rhun items"      ,[(call_script,"script_fill_camp_chests","fac_rhun"    ),(jump_to_menu, "mnu_camp"),]),	   
-  ("f_dale"    ,[],"Dale items"      ,[(call_script,"script_fill_camp_chests","fac_dale"    ),(jump_to_menu, "mnu_camp"),]),
-  ("f_umbar"   ,[],"Umbar items"     ,[(call_script,"script_fill_camp_chests","fac_umbar"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_moria"   ,[],"Moria items"     ,[(call_script,"script_fill_camp_chests","fac_moria"   ),(jump_to_menu, "mnu_camp"),]),
-  ("f_gundabad",[],"Gundabad items"  ,[(call_script,"script_fill_camp_chests","fac_gundabad"),(jump_to_menu, "mnu_camp"),]),
-  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]),	   
-  ("go_back"   ,[],"Go back"         ,[(jump_to_menu, "mnu_camp"),]),
- ]
-),  
-  ################################ CHEAT/MODDING MENU END ########################################  
-  ################################ CHANGE RACE START ########################################  
-("cheat_change_race",0,
- "^^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
- "none",
- [],
- [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
-  ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
-  ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
-  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"), (jump_to_menu, "mnu_camp"),]),
-  ("race_rohan"     ,[],"Rohan"     ,[(troop_set_type,"trp_player", 3), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
-  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
-  ("race_orc"       ,[],"Orc"       ,[(troop_set_type,"trp_player", 5), (jump_to_menu, "mnu_camp"),]),
-  ("race_uruk"      ,[],"Uruk"      ,[(troop_set_type,"trp_player", 6), (jump_to_menu, "mnu_camp"),]),
-  ("race_haradrim"  ,[],"Haradrim"  ,[(troop_set_type,"trp_player", 7), (jump_to_menu, "mnu_camp"),]),	   
-  ("race_easterling",[],"Easterling",[(troop_set_type,"trp_player", 8), (jump_to_menu, "mnu_camp"),]),
-  ("race_dwarf"     ,[],"Dwarf"     ,[(troop_set_type,"trp_player", 9), (jump_to_menu, "mnu_camp"),]),
-  ("race_troll"     ,[],"Troll"     ,[(troop_set_type,"trp_player",10), (jump_to_menu, "mnu_camp"),]),	   
-  ("race_dunedain"  ,[],"Dunedain"  ,[(troop_set_type,"trp_player",11), (jump_to_menu, "mnu_camp"),]),
-  ("race_lothlorien",[],"Lothlorien",[(troop_set_type,"trp_player",12), (jump_to_menu, "mnu_camp"),]),
-  ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13), (jump_to_menu, "mnu_camp"),]),
-  ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
-  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),	   
-  ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
- ]
-),  
-  ################################ CHANGE RACE END ########################################  
-  #TLD end (Hokie)  
-  
-("camp_action",0,
-  "^^^^^^^^^     Choose an action:", "none",
- [(set_background_mesh, "mesh_ui_default_menu_window"),],
- 
- [ 
 
-    ("camp_drink_water",
-		[
-			(player_has_item,"itm_ent_water"),
-			(eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
-		],
-		"Drink the Ent Water!",
-		[
-	    (troop_get_type,reg5,"trp_player"),
-	    (troop_remove_item,"itm_ent_water"),
-		(display_log_message,"@You drank the Ent Water..."),
-		(assign,"$g_ent_water_ever_drunk",1),
-		(assign,"$g_ent_water_taking_effect",1),
-		(try_begin),
-			(neg|is_between,reg5,tf_orc_begin, tf_orc_end),
-			(jump_to_menu,"mnu_drank_ent_water_human"),
-		(else_try),
-			(jump_to_menu,"mnu_drank_ent_water_orc"),
-		(try_end),
-		]
-	),
-	
-    # ("camp_recruit_prisoners",
-       # [(troops_can_join, 1),
-        # (store_current_hours, ":cur_time"),
-        # (val_sub, ":cur_time", 24),
-        # (gt, ":cur_time", "$g_prisoner_recruit_last_time"),
-        # (try_begin),
-          # (gt, "$g_prisoner_recruit_last_time", 0),
-          # (assign, "$g_prisoner_recruit_troop_id", 0),
-          # (assign, "$g_prisoner_recruit_size", 0),
-          # (assign, "$g_prisoner_recruit_last_time", 0),
-        # (try_end),
-        # ], "Recruit some of your prisoners to your party.",[(jump_to_menu, "mnu_camp_recruit_prisoners"),],
-	# ),
-	
-    #("action_read_book",[],"Select a book to read.",[(jump_to_menu, "mnu_camp_action_read_book"),]),
-	
-    #("action_modify_banner",[(eq, "$cheat_mode", 1)],"Cheat: Modify your banner.",
-    #                                               [(start_presentation, "prsnt_banner_selection"), #(start_presentation, "prsnt_custom_banner"),
-    #                                                ]),
-    #("action_retire",[],"Retire from adventuring.",[(jump_to_menu, "mnu_retirement_verify"),]),
-	
-    ("camp_action_4",[],"Back.",[(jump_to_menu, "mnu_camp"),]),
-   ]
-),
-
-
-   # human player drank Ent water
-   ("drank_ent_water_human",0,
+# human player drank Ent water
+("drank_ent_water_human",0,
     "^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.",
 	"none",[  (set_background_mesh, "mesh_draw_entdrink_human"),],[("ok_",[],"Continue.",[(change_screen_return,0),] ),]
-   ),
-   
-   # orc player drank Ent water (mtarini)
-   ("drank_ent_water_orc",0,
-    "^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",
+),
+# orc player drank Ent water (mtarini)
+("drank_ent_water_orc",0,
+	"^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",
 	"none",[(display_log_message,"@HP lost from poisoning."),(troop_set_health,"trp_player",5),]
 	,[("ok_",[],"I... shall... survive!",[(change_screen_return,0),] ),]
-   ),
-  
-  # ("camp_recruit_prisoners",0,
-   # "You offer your prisoners freedom if they agree to join you as soldiers. {s18}",
-   # "none",
-   # [(assign, ":num_regular_prisoner_slots", 0),
-    # (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
-    # (try_for_range, ":cur_stack", 0, ":num_stacks"),
-      # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-      # (neg|troop_is_hero, ":cur_troop_id"),
-      # (val_add, ":num_regular_prisoner_slots", 1),
-    # (try_end),
-    # (try_begin),
-      # (eq, ":num_regular_prisoner_slots", 0),
-      # (jump_to_menu, "mnu_camp_no_prisoners"),
-    # (else_try),
-      # (eq, "$g_prisoner_recruit_troop_id", 0),
-      # (store_current_hours, "$g_prisoner_recruit_last_time"),
-      # (store_random_in_range, ":rand", 0, 100),
-      # (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
-      # (store_sub, ":reject_chance", 15, ":persuasion_level"),
-      # (val_mul, ":reject_chance", 4),
-      # (try_begin),
-        # (lt, ":rand", ":reject_chance"),
-        # (assign, "$g_prisoner_recruit_troop_id", -7),
-      # (else_try),
-        # (assign, ":num_regular_prisoner_slots", 0),
-        # (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
-        # (try_for_range, ":cur_stack", 0, ":num_stacks"),
-          # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-          # (neg|troop_is_hero, ":cur_troop_id"),
-          # (val_add, ":num_regular_prisoner_slots", 1),
-        # (try_end),
-        # (store_random_in_range, ":random_prisoner_slot", 0, ":num_regular_prisoner_slots"),
-        # (try_for_range, ":cur_stack", 0, ":num_stacks"),
-          # (party_prisoner_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":cur_stack"),
-          # (neg|troop_is_hero, ":cur_troop_id"),
-          # (val_sub, ":random_prisoner_slot", 1),
-          # (lt, ":random_prisoner_slot", 0),
-          # (assign, ":num_stacks", 0),
-          # (assign, "$g_prisoner_recruit_troop_id", ":cur_troop_id"),
-          # (party_prisoner_stack_get_size, "$g_prisoner_recruit_size", "p_main_party", ":cur_stack"),
-        # (try_end),
-      # (try_end),
-
-      # (try_begin),
-        # (gt, "$g_prisoner_recruit_troop_id", 0),
-        # (party_get_free_companions_capacity, ":capacity", "p_main_party"),
-        # (val_min, "$g_prisoner_recruit_size", ":capacity"),
-        # (assign, reg1, "$g_prisoner_recruit_size"),
-        # (gt, "$g_prisoner_recruit_size", 0),
-        # (try_begin),
-          # (gt, "$g_prisoner_recruit_size", 1),
-          # (assign, reg2, 1),
-        # (else_try),
-          # (assign, reg2, 0),
-        # (try_end),
-        # (str_store_troop_name_by_count, s1, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        # (str_store_string, s18, "@{reg1} {s1} {reg2?accept:accepts} the offer."),
-      # (else_try),
-        # (str_store_string, s18, "@No one accepts the offer."),
-      # (try_end),
-    # (try_end),
-    # ],
-    # [
-      # ("camp_recruit_prisoners_accept",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Take them.",
-       # [(remove_troops_from_prisoners, "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        # (party_add_members, "p_main_party", "$g_prisoner_recruit_troop_id", "$g_prisoner_recruit_size"),
-        # (store_mul, ":morale_change", -3, "$g_prisoner_recruit_size"),
-        # (call_script, "script_change_player_party_morale", ":morale_change"),
-        # (jump_to_menu, "mnu_camp"),
-        # ]
-       # ),
-      # ("camp_recruit_prisoners_reject",[(gt, "$g_prisoner_recruit_troop_id", 0)],"Reject them.",
-       # [(jump_to_menu, "mnu_camp"),
-        # (assign, "$g_prisoner_recruit_troop_id", 0),
-        # (assign, "$g_prisoner_recruit_size", 0),
-        # ]
-       # ),
-      # ("continue",[(le, "$g_prisoner_recruit_troop_id", 0)],"Go back.",
-       # [(jump_to_menu, "mnu_camp"),
-        # ]
-       # ),
-       # ]
-# ),
-  
-  # ("camp_no_prisoners",0,
-   # "You have no prisoners to recruit from.",   "none",   [],
-   # [("continue",[],"Continue...",[(jump_to_menu, "mnu_camp"),]),]
-  # ),
-
+),
 
 ("end_game",0,
  "^^^^^The decision is made, and you resolve to give up your adventurer's\
@@ -3495,14 +3352,13 @@ game_menus = [
  all your money, and ride off into the sunset....",
  "none",
  [],
- [ ("end_game_bye",[],"Farewell.",[(change_screen_quit),]),]
+ [ ("end_game_bye",[],"Farewell.",[(change_screen_quit)]),]
 ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
     "^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
     "none",
-    [
-		
+    [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(try_begin), 
 			(eq, "$prebattle_talk_done",1),
 			(assign, "$prebattle_talk_done",0),
@@ -3708,16 +3564,13 @@ game_menus = [
 		"Rush forward toward them cracking the {s4}.",[
 			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
 			(assign,"$talk_context",tc_make_enemy_join_player),
-		]
-		),
-	 
+		]),
 	 
       ("debug_leave",[
           (eq,"$cant_leave_encounter", 1),
 		  (eq, "$cheat_mode", 1),
           ],"DEBUG: avoid this battle.",[ (leave_encounter),(change_screen_return)]),
 
-                                                            
       ("encounter_leave",[
           (eq,"$cant_leave_encounter", 0),
           ],"Disengage.",[
@@ -3776,13 +3629,13 @@ game_menus = [
 		]),
     ]
 ),
-  
 ( "encounter_retreat_confirm",0,
     "^^^^^As the party member with the highest tactics skill,\
    ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,\
    but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.",
     "none",
-    [(call_script, "script_get_max_skill_of_player_party", "skl_tactics"),
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
+	 (call_script, "script_get_max_skill_of_player_party", "skl_tactics"),
      (assign, ":max_skill", reg0),
      (assign, ":max_skill_owner", reg1),
      (assign, reg2, ":max_skill"),
@@ -3818,15 +3671,12 @@ game_menus = [
           ]),
       ("dont_leave_behind",[],"No. We leave no one behind.",[(jump_to_menu, "mnu_simple_encounter"),]),
     ]
-  ),
-
+),
 ( "encounter_retreat",0,
     "^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.",
     "none",
-    [
-     ],
-    [
-      ("continue",[],"Continue...",[
+    [(set_background_mesh, "mesh_ui_default_menu_window"),],
+    [("continue",[],"Continue...",[
 ###Troop commentary changes begin
           (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
           (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
@@ -3841,98 +3691,79 @@ game_menus = [
           (leave_encounter),(change_screen_return)]),
     ]
 ),
-
 ( "order_attack_begin",0,
     "Your troops prepare to attack the enemy.",
     "none",
-    [],
-    [ ("order_attack_begin",[],"Order the attack to begin.", [
-                                    (assign, "$g_engaged_enemy", 1),
-                                    (jump_to_menu,"mnu_order_attack_2"),
-                                    ]),
+    [(set_background_mesh, "mesh_ui_default_menu_window"),],
+    [ ("order_attack_begin",[],"Order the attack to begin.", [(assign, "$g_engaged_enemy", 1),(jump_to_menu,"mnu_order_attack_2")]),
       ("call_back",[],"Call them back.",[(jump_to_menu,"mnu_simple_encounter")]),
     ]
 ),
-  
 ( "order_attack_2",mnf_disable_all_keys,
     "^^^^^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
-    [
-                                    (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
-                                    (assign, ":player_party_strength", reg0),
-                                    (val_div, ":player_party_strength", 5),
-                                    (call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
-                                    (assign, ":enemy_party_strength", reg0),
-                                    (val_div, ":enemy_party_strength", 5),
-                                    
-#                                    (call_script,"script_inflict_casualties_to_party", "p_main_party", ":enemy_party_strength"),
-                                    (inflict_casualties_to_party_group, "p_main_party", ":enemy_party_strength", "p_temp_casualties"),
-                                    (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
-                                    (str_store_string_reg, s8, s0),
-                                    
-####                                    (call_script,"script_inflict_casualties_to_party", "$g_encountered_party", ":player_party_strength"),
-                                    (inflict_casualties_to_party_group, "$g_encountered_party", ":player_party_strength", "p_temp_casualties"),
-                                    (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
-                                    (str_store_string_reg, s9, s0),
-
-                                    (party_collect_attachments_to_party, "$g_encountered_party", "p_collective_enemy"),
-
-
- #                                   (assign, "$cant_leave_encounter", 0),
-
-                                    (assign, "$no_soldiers_left", 0),
-                                    (try_begin),
-                                      (call_script, "script_party_count_members_with_full_health","p_main_party"),
-                                      (le, reg(0), 0),
-                                      (assign, "$no_soldiers_left", 1),
-                                      (str_store_string, s4, "str_order_attack_failure"),
-                                    (else_try),
-                                      (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
-                                      (le, reg(0), 0),
-                                      (assign, ":continue", 0),
-                                      (party_get_num_companion_stacks, ":party_num_stacks", "p_collective_enemy"),
-                                      (try_begin),
-                                        (eq, ":party_num_stacks", 0),
-                                        (assign, ":continue", 1),
-                                      (else_try),
-                                        (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
-                                        (try_begin),
-                                          (neg|troop_is_hero, ":party_leader"),
-                                          (assign, ":continue", 1),
-                                        (else_try),
-                                          (troop_is_wounded, ":party_leader"),
-                                          (assign, ":continue", 1),
-                                        (try_end),
-                                      (try_end),
-                                      (eq, ":continue", 1),
-                                      (assign, "$g_battle_result", 1),
-                                      (assign, "$no_soldiers_left", 1),
-                                      (str_store_string, s4, "str_order_attack_success"),
-                                    (else_try),
-                                      (str_store_string, s4, "str_order_attack_continue"),
-                                    (try_end),
+    [	(set_background_mesh, "mesh_ui_default_menu_window"),
+		(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
+		(assign, ":player_party_strength", reg0),
+		(val_div, ":player_party_strength", 5),
+		(call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
+		(assign, ":enemy_party_strength", reg0),
+		(val_div, ":enemy_party_strength", 5),
+		#(call_script,"script_inflict_casualties_to_party", "p_main_party", ":enemy_party_strength"),
+		(inflict_casualties_to_party_group, "p_main_party", ":enemy_party_strength", "p_temp_casualties"),
+		(call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+		(str_store_string_reg, s8, s0),
+		#(call_script,"script_inflict_casualties_to_party", "$g_encountered_party", ":player_party_strength"),
+		(inflict_casualties_to_party_group, "$g_encountered_party", ":player_party_strength", "p_temp_casualties"),
+		(call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+		(str_store_string_reg, s9, s0),
+		(party_collect_attachments_to_party, "$g_encountered_party", "p_collective_enemy"),
+		#(assign, "$cant_leave_encounter", 0),
+		(assign, "$no_soldiers_left", 0),
+		(try_begin),
+		  (call_script, "script_party_count_members_with_full_health","p_main_party"),
+		  (le, reg(0), 0),
+		  (assign, "$no_soldiers_left", 1),
+		  (str_store_string, s4, "str_order_attack_failure"),
+		(else_try),
+		  (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
+		  (le, reg(0), 0),
+		  (assign, ":continue", 0),
+		  (party_get_num_companion_stacks, ":party_num_stacks", "p_collective_enemy"),
+		  (try_begin),
+			(eq, ":party_num_stacks", 0),
+			(assign, ":continue", 1),
+		  (else_try),
+			(party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+			(try_begin),
+			  (neg|troop_is_hero, ":party_leader"),
+			  (assign, ":continue", 1),
+			(else_try),
+			  (troop_is_wounded, ":party_leader"),
+			  (assign, ":continue", 1),
+			(try_end),
+		  (try_end),
+		  (eq, ":continue", 1),
+		  (assign, "$g_battle_result", 1),
+		  (assign, "$no_soldiers_left", 1),
+		  (str_store_string, s4, "str_order_attack_success"),
+		(else_try),
+		  (str_store_string, s4, "str_order_attack_continue"),
+		(try_end),
     ],
-    [ ("order_attack_continue",[(eq, "$no_soldiers_left", 0)],"Order your soldiers to continue the attack.",[
-          (jump_to_menu,"mnu_order_attack_2"),
-          ]),
-      ("order_retreat",[(eq, "$no_soldiers_left", 0)],"Call your soldiers back.",[
-          (jump_to_menu,"mnu_simple_encounter"),
-          ]),
-      ("continue",[(eq, "$no_soldiers_left", 1)],"Continue...",[
-          (jump_to_menu,"mnu_simple_encounter"),
-          ]),
+    [("order_attack_continue",[(eq, "$no_soldiers_left", 0)],"Order your soldiers to continue the attack.",[(jump_to_menu,"mnu_order_attack_2")]),
+     ("order_retreat",[(eq, "$no_soldiers_left", 0)],"Call your soldiers back.",[(jump_to_menu,"mnu_simple_encounter")]),
+     ("continue",[(eq, "$no_soldiers_left", 1)],"Continue...",[(jump_to_menu,"mnu_simple_encounter")]),
     ]
 ),
 
-  
 # remove us - MV: reintroduced from Native
 (  "kingdom_army_quest_report_to_army",mnf_scale_picture,
    "{s8} sends word that he wishes you to join his new military campaign.\
    You need to bring at least {reg13} troops to the army,\
-   and are instructed to raise more men with all due haste if you do not have enough.",
+   and are instructed to raise more warriors with all due haste if you do not have enough.",
     "none",
-    [
-        #(set_background_mesh, "mesh_pic_messenger"),
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
         (set_fixed_point_multiplier, 100),
         (position_set_x, pos0, 65),
         (position_set_y, pos0, 30),
@@ -3952,13 +3783,11 @@ game_menus = [
       ],
     [
       ("reject",[],"Send a message you are too busy.",
-       [
-           (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 5),
+       [  (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 5),
            (change_screen_return),
         ]),
       ("continue",[],"Send word you'll join him shortly.",
-       [
-           (quest_get_slot, ":quest_target_troop", "qst_report_to_army", slot_quest_target_troop),
+       [   (quest_get_slot, ":quest_target_troop", "qst_report_to_army", slot_quest_target_troop),
            (quest_get_slot, ":quest_target_amount", "qst_report_to_army", slot_quest_target_amount),
            (str_store_troop_name_link, s13, ":quest_target_troop"),
            (assign, reg13, ":quest_target_amount"),
@@ -3970,13 +3799,11 @@ game_menus = [
         ]),
      ]
 ),
-
 (  "kingdom_army_quest_messenger",mnf_scale_picture,
    "{s8} sends word that he wishes to speak with you about a task he needs performed.\
    He requests you to come and see him as soon as possible.",
     "none",
-    [
-        #(set_background_mesh, "mesh_pic_messenger"),
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
         (set_fixed_point_multiplier, 100),
         (position_set_x, pos0, 65),
         (position_set_y, pos0, 30),
@@ -3985,19 +3812,13 @@ game_menus = [
         (faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),
         (str_store_troop_name, s8, ":faction_marshall"),
       ],
-    [
-      ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
+    [("continue",[],"Continue...",[(change_screen_return)])]
 ),
-
 (   "kingdom_army_quest_join_siege_order",mnf_scale_picture,
     "{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.\
     Your troops are to take {s9} at all costs.",
     "none",
-    [
-        #(set_background_mesh, "mesh_pic_messenger"),
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
         (set_fixed_point_multiplier, 100),
         (position_set_x, pos0, 65),
         (position_set_y, pos0, 30),
@@ -4010,8 +3831,7 @@ game_menus = [
       ],
     [
       ("continue",[],"Continue...",
-       [
-           (call_script, "script_end_quest", "qst_follow_army"),
+       [   (call_script, "script_end_quest", "qst_follow_army"),
            (quest_get_slot, ":quest_target_center", "qst_join_siege_with_army", slot_quest_target_center),
            (faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),
            (str_store_troop_name_link, s13, ":faction_marshall"),
@@ -4023,11 +3843,10 @@ game_menus = [
         ]),
      ]
 ),
-
 (   "kingdom_army_follow_failed",mnf_scale_picture,
     "You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.",
     "none",
-    [   #(set_background_mesh, "mesh_pic_messenger"),
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
         (set_fixed_point_multiplier, 100),
         (position_set_x, pos0, 65),
         (position_set_y, pos0, 30),
@@ -4044,15 +3863,14 @@ game_menus = [
 (   "battle_debrief",mnf_disable_all_keys,
     "{s40}{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
-    [(call_script,"script_maybe_relocate_player_from_z0"),
-	 (set_background_mesh, "mesh_ui_default_menu_window"),
-
-     (call_script, "script_encounter_calculate_fit"),
-     (call_script, "script_party_count_fit_regulars", "p_main_party"),
-     (assign, "$playerparty_postbattle_regulars", reg0),
-
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
+	(call_script, "script_maybe_relocate_player_from_z0"),
+	(call_script, "script_encounter_calculate_fit"),
 	 
-	 (try_begin), # set background picture for victory/defeat -- mtarini
+	(call_script, "script_party_count_fit_regulars", "p_main_party"),
+    (assign, "$playerparty_postbattle_regulars", reg0),
+
+	(try_begin), # set background picture for victory/defeat -- mtarini
 		(store_mul, ":tmp", "$g_enemy_fit_for_battle","$g_friend_fit_for_battle"),
 		(eq, ":tmp", 0 ), # battle is totally over: proceed!
 		
@@ -4068,21 +3886,35 @@ game_menus = [
 			(assign, ":winning_side_race", "$enemy_side_race" ),
 			#(assign, ":losing_side_race",  "$player_side_race" ),
 		(try_end),
-		
 		(assign, ":fitting_image_found", 1),
 		
-		(try_begin),	
+		(try_begin),
 			(eq, ":winning_side_race_group", tf_orc ),
-			(eq, ":losing_side_race_group", tf_male ),
-			(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+			(neq, ":losing_side_race_group", tf_orc ),
+			(store_random_in_range,":rnd",0,2),
+			(try_begin),(eq,":rnd",0),(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+			 (else_try),(set_background_mesh, "mesh_draw_victory_uruk"),
+			(try_end),
+		(else_try),	
+			(eq, ":winning_side_race_group", tf_orc ),
+			(eq, ":losing_side_race_group", tf_orc ),
+			(set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
 		(else_try),
-			(eq, "$g_battle_result", 1), 
 			(eq, ":winning_side_race", tf_dwarf ),
 			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
+			(eq, "$g_battle_result", 1), 
+			(eq, ":winning_side_race", tf_male),
+			(store_faction_of_party,":fac","p_main_party"), # temporary patchwork to distinguish between factions not only races
+			(try_begin),(eq,":fac","fac_gondor"),(set_background_mesh, "mesh_draw_victory_gondor"),
+			 (else_try),(eq,":fac","fac_rohan" ),(set_background_mesh, "mesh_draw_victory_rohan"),
+			(try_end),
+		(else_try),
+			(eq, ":winning_side_race", tf_elf_begin),
+			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS anything
+		(else_try),
 			(assign, ":fitting_image_found", 0), # a generic image can do
 		(try_end),
-		
 		(try_begin),
 			#(store_random_in_range, ":rand", 0, 100),
 			#(this_or_next|eq, ":fitting_image_found", 0), # player beaten : 33% of time, show generic defeat.
@@ -4091,7 +3923,6 @@ game_menus = [
 			(eq, "$g_battle_result", -1), 
 			(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
 		(try_end),
-		
 		(try_begin),  
 			(eq, "$g_encountered_party", "p_legend_fangorn"),
 			(eq, "$g_battle_result", -1),
@@ -4175,8 +4006,7 @@ game_menus = [
 	 #options for players:
 	 # capture troll quest troll quest (mtarini)
 	 ("inspect_troll",
-	  [
-	   (eq, "$g_battle_result", 1),
+	  [(eq, "$g_battle_result", 1),
 	   (check_quest_active, "qst_capture_troll"),
 	   (party_get_template_id, ":j", "$g_enemy_party"),(eq,":j","pt_wild_troll"),
 	  ],"Inspect downed troll",[ (jump_to_menu, "mnu_can_capture_troll")]) ,
@@ -4184,8 +4014,6 @@ game_menus = [
      ("continue",[],"Continue...",[(jump_to_menu, "$g_next_menu"),]),
 	],
 ),
-
-
 
 ( "total_victory",0,
     "You shouldn't be reading this... {s9}",
@@ -4489,23 +4317,33 @@ game_menus = [
         (try_end),
 		
 		(call_script, "script_set_ambient_faction",":ambient_faction_backup"),
-
+		
+		# TLD injure your KO-ed companions
+		(try_begin),
+			(eq, "$tld_option_injuries",1),
+			(try_for_range, ":npc",companions_begin,companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+				(main_party_has_troop,":npc"),
+				(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
+				(troop_set_slot,":npc", slot_troop_wounded, 0),
+				(store_random_in_range, reg12,0,2),
+				(eq,reg12,1),
+				(call_script,"script_injury_routine", ":npc"), # chances to get injury halved when victory
+			(try_end),
+		(try_end),
       ],
     [("continue",[],"Continue...",[]),]
 ),
-
 ( "enemy_slipped_away",0,
     "^^^^^^^^{s17}",
     "none",
     [],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
 ),
-
 ( "total_defeat",0,
     "You shouldn't be reading this...",
     "none",
     [     (play_track, "track_captured", 1),
-           # Free prisoners
+          # Free prisoners
           (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
           (try_for_range, ":stack_no", 0, ":num_prisoner_stacks"),
             (party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
@@ -4514,10 +4352,8 @@ game_menus = [
           (try_end),
 
           (call_script, "script_loot_player_items", "$g_enemy_party"),
-
           (assign, "$g_move_heroes", 0),
           (party_clear, "p_temp_party"),
-		  
 		  (store_faction_of_party, ":fac","$g_enemy_party"),
 		  (party_set_faction, "p_temp_party", ":fac"),
 
@@ -4556,7 +4392,7 @@ game_menus = [
             (call_script, "script_party_wound_all_members", "$g_ally_party"),
           (try_end),
 
-#Troop commentary changes begin
+	#Troop commentary changes begin
           (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
           (try_for_range, ":stack_no", 0, ":num_stacks"),
             (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
@@ -4564,8 +4400,17 @@ game_menus = [
             (store_troop_faction, ":victorious_faction", ":stack_troop"),
             (call_script, "script_add_log_entry", logent_player_defeated_by_lord, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
-#Troop commentary changes end
-
+	#Troop commentary changes end
+			# TLD injure your KO-ed companions
+			(try_begin),
+				(eq, "$tld_option_injuries",1),
+				(try_for_range, ":npc",companions_begin,companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+					(main_party_has_troop,":npc"),
+					(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
+					(troop_set_slot,":npc", slot_troop_wounded, 0),
+					(call_script, "script_injury_routine", ":npc"),
+				(try_end),
+			(try_end),
       ],
     []
 ),
@@ -4573,8 +4418,7 @@ game_menus = [
 ( "permanent_damage",mnf_disable_all_keys,
     "{s0}",
     "none",
-    [
-      (assign, ":end_cond", 1),
+    [ (assign, ":end_cond", 1),
       (try_for_range, ":unused", 0, ":end_cond"),
         (store_random_in_range, ":random_attribute", 0, 4),
         (store_attribute_level, ":attr_level", "trp_player", ":random_attribute"),
@@ -4684,11 +4528,10 @@ game_menus = [
       ("pre_join_leave",[],"Don't get involved.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-  
 ( "join_battle",mnf_enable_hot_keys,
     "^^^^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
     "none",
-    [
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
 	
 		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
 		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),	
@@ -4817,11 +4660,11 @@ game_menus = [
 
     ]
 ),
-
 ( "join_order_attack",mnf_disable_all_keys,
     "^^^^^{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
-    [	(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
+    [	(set_background_mesh, "mesh_ui_default_menu_window"),
+	    (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 		(assign, ":player_party_strength", reg0),
 		(val_div, ":player_party_strength", 5),
 		(call_script, "script_party_calculate_strength", "p_collective_friends", 0),
@@ -4883,7 +4726,7 @@ game_menus = [
 ),
 
 ( "battlefields",0,
-    "Select a field...",
+    "^^^^^^^^^Select a field...",
     "none",
     [],
     [ ("enter_f1",[],"Field 1",[[set_jump_mission,"mt_ai_training"],[jump_to_scene,"scn_field_1"],[change_screen_mission]]),
@@ -4898,15 +4741,9 @@ game_menus = [
 ( "join_siege_outside",mnf_scale_picture,
     "{s1} has come under siege by {s2}.",
     "none",
-    [   (str_store_party_name, s1, "$g_encountered_party"),
+    code_to_set_city_background + [ 
+	    (str_store_party_name, s1, "$g_encountered_party"),
         (str_store_party_name, s2, "$g_encountered_party_2"),
-        (troop_get_type, ":is_female", "trp_player"),
-        (try_begin),
-          (eq, ":is_female", 1),
-          #(set_background_mesh, "mesh_pic_siege_sighted_fem"),
-        (else_try),
-          #(set_background_mesh, "mesh_pic_siege_sighted"),
-        (try_end),
     ],
     [ ("approach_besiegers",[(store_faction_of_party, ":faction_no", "$g_encountered_party_2"),
                              (store_relation, ":relation", ":faction_no", "fac_player_supporters_faction"),
@@ -4927,11 +4764,10 @@ game_menus = [
       ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-  
 ( "cut_siege_without_fight",0,
     "The besiegers let you approach the gates without challenge.",
     "none",
-    [],
+    [(set_background_mesh, "mesh_ui_default_menu_window"),],
     [
       ("continue",[],"Continue...",[(try_begin),
                                    (this_or_next|eq, "$g_encountered_party_faction", "fac_player_supporters_faction"),
@@ -4942,12 +4778,11 @@ game_menus = [
                                  (try_end)]),
       ]
 ),
-  
 ( "besiegers_camp_with_allies",mnf_enable_hot_keys,
     "{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,\
     where you and your men are welcomed.",
     "none",
-    [
+    code_to_set_city_background + [
         (str_store_party_name, s1, "$g_encountered_party"),
         (str_store_party_name, s2, "$g_encountered_party_2"),
         (assign, "$g_enemy_party", "$g_encountered_party"),
@@ -5408,7 +5243,6 @@ game_menus = [
 
     ]
 ),
-  
 ("castle_besiege",mnf_enable_hot_keys|mnf_scale_picture,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
@@ -5643,12 +5477,10 @@ game_menus = [
          (change_screen_return)]),
     ]
 ),
-  
 ( "siege_attack_meets_sally",0,
     "The defenders sally out to meet your assault.",    "none",    [],
     [("continue",[], "Continue...", [(jump_to_menu, "mnu_battle_debrief"),(change_screen_mission),]),]
 ),
-
 ("castle_besiege_inner_battle",mnf_scale_picture,
     "{s1}",
     "none",
@@ -5736,7 +5568,6 @@ game_menus = [
        ]),
     ]
 ),
-
 ( "construct_ladders",0,
     "As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take\
  {reg4} hours to build enough scaling ladders for the assault.",
@@ -5773,7 +5604,6 @@ game_menus = [
            ]),
       ("go_back",[],"Go back.", [(jump_to_menu,"mnu_castle_besiege")]),],
 ),
-
 ("castle_attack_walls_simulate",mnf_scale_picture|mnf_disable_all_keys,
     "{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}",
     "none",
@@ -5833,7 +5663,6 @@ game_menus = [
       ("continue",[],"Continue...",[(jump_to_menu,"mnu_castle_besiege")]),
     ]
 ),
-  
 ("castle_attack_walls_with_allies_simulate",mnf_scale_picture|mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
@@ -5906,7 +5735,6 @@ game_menus = [
      ],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_besiegers_camp_with_allies")]),]
 ),
-
 ( "castle_taken_by_friends",0,
     "Nothing to see here.",
     "none",
@@ -5922,7 +5750,6 @@ game_menus = [
     ],
     [],
 ),
-
 ( "castle_taken",mnf_disable_all_keys,
     "{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.\
   {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}",# Only visible when castle is taken without being a vassal of a kingdom.
@@ -5959,7 +5786,6 @@ game_menus = [
     ],
     [ ("continue",[],"Continue...",[(assign, "$auto_enter_town", "$g_encountered_party"),(change_screen_return),]),],
 ),
-  
 ( "castle_taken_2",mnf_disable_all_keys,
     "{s3} has fallen to your troops, and you now have full control of the castle.\
  It is time to send word to {s9} about your victory. {s5}",
@@ -5995,12 +5821,11 @@ game_menus = [
         ]),
     ],
 ),
-
  
 ( "siege_started_defender",mnf_enable_hot_keys,
     "{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...",
     "none",
-    [
+    code_to_set_city_background + [
         (select_enemy,1),
         (assign, "$g_enemy_party", "$g_encountered_party_2"),
         (assign, "$g_ally_party", "$g_encountered_party"),
@@ -6152,11 +5977,10 @@ game_menus = [
 ##                     (jump_to_menu,"mnu_under_siege_attacked_continue")]),
     ]
 ),
-
 ( "siege_join_defense",mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
-    [
+    code_to_set_city_background + [
         (try_begin),
           (eq, "$g_siege_join", 1),
           (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
@@ -6243,7 +6067,6 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
-
 ( "town_bandits_succeeded",mnf_disable_all_keys,
     "The goblins fall before you as wheat to a scythe! Soon you stand alone\
  while most of your attackers lie unconscious, dead or dying.\
@@ -6280,7 +6103,6 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
-
 ( "town_brawl_won",mnf_disable_all_keys,
     "You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.",
     "none",
@@ -6511,7 +6333,7 @@ game_menus = [
 
 		
 	  ("trade_with_arms_merchant",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
-	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
+	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),
 	  (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
@@ -6522,7 +6344,7 @@ game_menus = [
         ]),
 		
 	  ("trade_with_horse_merchant",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
-	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
+	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_merchant, "trp_no_troop"),
 	  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
@@ -6581,7 +6403,7 @@ game_menus = [
              ]),
 		
       ("speak_with_elder",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
-	  (this_or_next|eq,"$g_crossdressing_activated", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
+	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_elder_visited, 1), #check if elder has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
 	  (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
@@ -6733,7 +6555,6 @@ game_menus = [
         ]),
     ]
 ),
-
 ( "ship_reembark",0,
     "Do you wish to embark?",
     "none",
@@ -6793,7 +6614,6 @@ game_menus = [
         ]),
     ]
 ),
-
 (  "sneak_into_town_caught",city_menu_color,
     "As you try to sneak in, one of the guards recognizes you and raises the alarm!\
  You must flee back through the gates before all the guards in the town come down on you!",
@@ -6844,7 +6664,6 @@ game_menus = [
         ]),
     ]
 ),
-
 ( "sneak_into_town_caught_dispersed_guards",city_menu_color,
     "You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.",
     "none",
@@ -6858,7 +6677,6 @@ game_menus = [
         ]),
     ]
 ),
-
 ( "sneak_into_town_caught_ran_away",0,
     "You make your way back through the gates and quickly retreat to the safety out of town.",
     "none",
@@ -6892,27 +6710,23 @@ game_menus = [
 ## UNIFIED PLAYER DEFEATED MENUS... (mtarini)
 ###########################
 
- # player death scenario in TLD: no capture, only 
- ( "tld_player_defeated",0,
+# player death scenario in TLD: no capture, only 
+( "tld_player_defeated",0,
      "Suddenly a shattering pain explodes in the back of your head! You shiver, as all the world goes black around you...^^^Is this your end?",
      "none",[
-	 
 	 (store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
 	 (val_add, "$number_of_player_deaths", 1),
-
 	 ],[      
 	    ("continue",[],"Continue...",
-        [
-			(assign, "$auto_menu", "$recover_after_death_menu"),
+        [	(assign, "$auto_menu", "$recover_after_death_menu"),
             (rest_for_hours, 8, 8, 0),
 			#(jump_to_menu, "$recover_after_death_menu"),
 			(change_screen_return),
 			(display_message,"@times passess..."),
          ]),
 	 ]
- ),
- 
- ("recover_after_death_fangorn",0,
+),
+("recover_after_death_fangorn",0,
     "You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
 	"none",[
 		(try_begin),
@@ -6932,31 +6746,24 @@ game_menus = [
     (try_end),
 	(change_screen_map),
 	] ),]
-  ),
-  
-  ( "recover_after_death_moria",city_menu_color,
+),
+( "recover_after_death_moria",city_menu_color,
     "You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
 	]
-  ),
-  
-
- ( "recover_after_death_default",0,
+),
+( "recover_after_death_default",0,
      "You regain your conciousness. You are in the spot you fell.\
   The enemies must have taken you up for dead and left you there.\
   However, it seems that none of your wound were lethal,\
   and altough you feel awful, you find out that can still walk.\
   You get up and try to look for any other survivors from your party.",
-     "none",[ ],[      
-	 ("continue",[],"Continue...",
-        [
-            (change_screen_return),
-         ]),
-	 ]
- ),
- 
-  ( "recover_after_death_town",0,
+     "none",
+	 [(set_background_mesh, "mesh_ui_default_menu_window")],[      
+	 ("continue",[],"Continue...",[(change_screen_return)])]
+),
+( "recover_after_death_town",0,
      "You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
@@ -6969,14 +6776,13 @@ game_menus = [
             (jump_to_menu,"mnu_castle_outside"),
          ]),
 	 ]
- ),
- 
-   ( "recover_after_death_town_alone",0,
+),
+( "recover_after_death_town_alone",0,
      "You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
  Your companions find you.\
-It seems that none of your wound were lethal,\
+ It seems that none of your wound were lethal,\
   and altough you feel awful, you find out that can still walk.",
      "none",code_to_set_city_background,[      
 	 ("continue",[],"Continue...",
@@ -6985,316 +6791,12 @@ It seems that none of your wound were lethal,\
             (jump_to_menu,"mnu_castle_outside"),
          ]),
 	 ]
- ),
-
-#####################################################################
-## Captivity....
-#####################################################################
-
-
-# ( "captivity_start_wilderness",0,
-    # "Stub",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (try_begin),
-         # (eq,"$g_player_surrenders",1),
-         # (jump_to_menu, "mnu_captivity_start_wilderness_surrender"), 
-       # (else_try),
-         # (jump_to_menu, "mnu_captivity_start_wilderness_defeat"), 
-       # (try_end),
-     # ],
-    # []
-# ),
-  
-# ( "captivity_start_wilderness_surrender",0,
-    # "Stub",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (assign,"$auto_menu",-1), #We need this since we may come here by something other than auto_menu
-       # (assign, "$capturer_party", "$g_encountered_party"),
-       # (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
-    # ],
-    # []
-# ),
-  
-# ( "captivity_start_wilderness_defeat",0,
-    # "Your enemies take you prisoner.",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (assign,"$auto_menu",-1),
-       # (assign, "$capturer_party", "$g_encountered_party"),
-       # (jump_to_menu, "mnu_captivity_wilderness_taken_prisoner"),
-    # ],
-    # []
-# ),
-  
-# ( "captivity_start_castle_surrender",0,
-    # "Stub",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (assign,"$auto_menu",-1),
-       # (assign, "$capturer_party", "$g_encountered_party"),
-       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-      # ],
-    # []
-# ),
-  
-# ( "captivity_start_castle_defeat",0,
-    # "Stub",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (assign,"$auto_menu",-1),
-       # (assign, "$capturer_party", "$g_encountered_party"),
-       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-      # ],
-    # []
-# ),
-  
-# ( "captivity_start_under_siege_defeat",0,
-    # "Your enemies take you prisoner.",
-    # "none",
-    # [  (assign, "$g_player_is_captive", 1),
-       # (assign,"$auto_menu",-1),
-       # (assign, "$capturer_party", "$g_encountered_party"),
-       # (jump_to_menu, "mnu_captivity_castle_taken_prisoner"),
-    # ],
-    # []
-# ),
-  
-# ( "captivity_wilderness_taken_prisoner",mnf_scale_picture,
-    # "Your enemies take you prisoner.",
-    # "none",
-    # [#(set_background_mesh, "mesh_pic_prisoner_wilderness"),
-	# ],
-    # [("continue",[],"Continue...",
-       # [(try_for_range, ":npc", companions_begin, companions_end),
-        # (main_party_has_troop, ":npc"),
-        # (store_random_in_range, ":rand", 0, 100),
-        # (lt, ":rand", 30),
-        # (remove_member_from_party, ":npc", "p_main_party"),
-        # (troop_set_slot, ":npc", slot_troop_occupation, 0),
-        # (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
-# #        (assign, "$last_lost_companion", ":npc"),
-        # (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
-        # (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
-        # (troop_set_health, ":npc", 100),
-        # #(store_random_in_range, ":rand_town", centers_begin, centers_end),
-        # #(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
-        # (assign, ":nearest_town_dist", 1000),
-        # (try_for_range, ":town_no", centers_begin, centers_end),
-		  # (party_is_active, ":town_no"), #TLD
-		  # (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
-          # (store_faction_of_party, ":town_fac", ":town_no"),
-          # (store_relation, ":reln", ":town_fac", "fac_player_faction"),
-          # (ge, ":reln", 0),
-          # (store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
-          # (lt, ":dist", ":nearest_town_dist"),
-          # (assign, ":nearest_town_dist", ":dist"),
-          # #(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
-        # (try_end),
-      # (try_end),
-
-      # (set_camera_follow_party, "$capturer_party"),
-      # (assign, "$g_player_is_captive", 1),
-      # (store_random_in_range, ":random_hours", 18, 30),
-      # (call_script, "script_event_player_captured_as_prisoner"),
-      # (call_script, "script_stay_captive_for_hours", ":random_hours"),
-      # (assign,"$auto_menu","mnu_captivity_wilderness_check"),
-      # (change_screen_return),
-      # ]),
-    # ]
-# ),
-
-# (  "captivity_wilderness_check",0,
-    # "stub",
-    # "none",
-    # [(jump_to_menu,"mnu_captivity_end_wilderness_escape")],
-    # []
-# ),
-  
-# ( "captivity_end_wilderness_escape",mnf_scale_picture,
-    # "After painful days of being dragged about as a prisoner, you find a chance and escape from your captors!",
-    # "none",
-    # [
-        # (play_cue_track, "track_escape"),
-        # (troop_get_type, ":is_female", "trp_player"),
-        # (try_begin),
-          # (eq, ":is_female", 1),
-          # (set_background_mesh, "mesh_pic_escape_1_fem"),
-        # (else_try),
-          # (set_background_mesh, "mesh_pic_escape_1"),
-        # (try_end),
-    # ],
-    # [
-      # ("continue",[],"Continue...",
-       # [
-           # (assign, "$g_player_is_captive", 0),
-           # (try_begin),
-             # (party_is_active, "$capturer_party"),
-             # (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
-           # (try_end),
-           # (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
-           # (assign, "$g_player_icon_state", pis_normal),
-           # (set_camera_follow_party, "p_main_party"),
-           # (rest_for_hours, 0, 0, 0), #stop resting
-           # (change_screen_return),
-        # ]),
-    # ]
-# ),
-  
-# ( "captivity_castle_taken_prisoner",0,
-    # "You are quickly surrounded by guards who take away your weapons. With curses and insults, they throw you into the dungeon where you must while away the miserable days of your captivity.",
-    # "none",
-    # [
-        # (troop_get_type, ":is_female", "trp_player"),
-        # (try_begin),
-          # (eq, ":is_female", 1),
-          # (set_background_mesh, "mesh_pic_prisoner_fem"),
-        # (else_try),
-          # (set_background_mesh, "mesh_pic_prisoner_man"),
-        # (try_end),
-    # ],
-    # [ ("continue",[],"Continue...",
-       # [
-           # (assign, "$g_player_is_captive", 1),
-           # (store_random_in_range, ":random_hours", 16, 22),
-           # (call_script, "script_event_player_captured_as_prisoner"),
-           # (call_script, "script_stay_captive_for_hours", ":random_hours"),
-           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           # (change_screen_return)
-        # ]),
-    # ]
-# ),
-  
-# ( "captivity_rescue_lord_taken_prisoner",0,
-    # "You remain in disguise for as long as possible before revealing yourself.\
- # The guards are outraged and beat you savagely before throwing you back into the cell for God knows how long...",
-    # "none",
-    # [
-        # (troop_get_type, ":is_female", "trp_player"),
-        # (try_begin),
-          # (eq, ":is_female", 1),
-          # (set_background_mesh, "mesh_pic_prisoner_fem"),
-        # (else_try),
-          # (set_background_mesh, "mesh_pic_prisoner_man"),
-        # (try_end),
-   # ],
-    # [
-      # ("continue",[],"Continue...",
-       # [
-           # (assign, "$g_player_is_captive", 1),
-           # (store_random_in_range, ":random_hours", 16, 22),
-           # (call_script, "script_event_player_captured_as_prisoner"),
-           # (call_script, "script_stay_captive_for_hours", ":random_hours"),
-           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           # (change_screen_return),
-        # ]),
-    # ]
-# ),
-  
-# ( "captivity_castle_check",0,
-    # "stub",
-    # "none",
-    # [   (store_random_in_range, reg(7), 0, 10),
-        # (try_begin),
-          # (lt, reg(7), 4),
-          # (store_random_in_range, "$player_ransom_amount", 3, 6),
-          # (val_mul, "$player_ransom_amount", 100),
-          # (store_troop_gold, reg(3), "trp_player"),
-          # (gt, reg(3), "$player_ransom_amount"),
-          # (jump_to_menu,"mnu_captivity_end_propose_ransom"),
-        # (else_try),
-          # (lt, reg(7), 7),
-          # (jump_to_menu,"mnu_captivity_end_exchanged_with_prisoner"),
-        # (else_try),
-          # (jump_to_menu,"mnu_captivity_castle_remain"),
-        # (try_end),
-    # ],
-    # []
-# ),
-  
-# ( "captivity_end_exchanged_with_prisoner",0,
-    # "After days of imprisonment, you are finally set free when your captors exchange you with another prisoner.",
-    # "none",
-    # [ (play_cue_track, "track_escape")],
-    # [ ("continue",[],"Continue...",
-       # [   (assign, "$g_player_is_captive", 0),
-           # (try_begin),
-             # (party_is_active, "$capturer_party"),
-             # (party_relocate_near_party, "p_main_party", "$capturer_party", 2),
-           # (try_end),
-           # (call_script, "script_set_parties_around_player_ignore_player", 2, 12),
-           # (assign, "$g_player_icon_state", pis_normal),
-           # (set_camera_follow_party, "p_main_party"),
-           # (rest_for_hours, 0, 0, 0), #stop resting
-           # (change_screen_return),
-        # ]),
-    # ]
-# ),
-
-# ( "captivity_end_propose_ransom",0,
-    # "You spend long hours in the sunless dank of the dungeon, more than you can count.\
- # Suddenly one of your captors enters your cell with an offer;\
- # he proposes to free you in return for {reg5} denars of your hidden wealth. You decide to...",
-    # "none",
-    # [
-        # (store_character_level, ":player_level", "trp_player"),
-        # (store_mul, "$player_ransom_amount", ":player_level", 50),
-        # (val_add, "$player_ransom_amount", 100),
-        # (assign, reg5, "$player_ransom_amount"),
-    # ],
-    # [ ("captivity_end_ransom_accept",[(store_troop_gold,":player_gold", "trp_player"),
-                                      # (ge, ":player_gold","$player_ransom_amount")],"Accept the offer.",
-       # [   (play_cue_track, "track_escape"),
-           # (assign, "$g_player_is_captive", 0),
-           # (troop_remove_gold, "trp_player", "$player_ransom_amount"), 
-           # (try_begin),
-             # (party_is_active, "$capturer_party"),
-             # (party_relocate_near_party, "p_main_party", "$capturer_party", 1),
-           # (try_end),
-           # (call_script, "script_set_parties_around_player_ignore_player", 2, 6),
-           # (assign, "$g_player_icon_state", pis_normal),
-           # (set_camera_follow_party, "p_main_party"),
-           # (rest_for_hours, 0, 0, 0), #stop resting
-           # (change_screen_return),
-        # ]),
-      # ("captivity_end_ransom_deny",[],"Refuse him, wait for something better.",
-       # [
-           # (assign, "$g_player_is_captive", 1),
-           # (store_random_in_range, reg(8), 16, 22),
-           # (call_script, "script_stay_captive_for_hours", reg8),
-           # (assign,"$auto_menu", "mnu_captivity_castle_check"),
-           # (change_screen_return),
-        # ]),
-    # ]
-# ),
-
-# ( "captivity_castle_remain",mnf_scale_picture|mnf_disable_all_keys,
-    # "More days pass in the darkness of your cell. You get through them as best you can,\
- # enduring the kicks and curses of the guards, watching your underfed body waste away more and more...",
-    # "none",
-    # [   (troop_get_type, ":is_female", "trp_player"),
-        # (try_begin),
-          # (eq, ":is_female", 1),
-          # (set_background_mesh, "mesh_pic_prisoner_fem"),
-        # (else_try),
-          # (set_background_mesh, "mesh_pic_prisoner_man"),
-        # (try_end),
-        # (store_random_in_range, ":random_hours", 16, 22),
-        # (call_script, "script_stay_captive_for_hours", ":random_hours"),
-        # (assign,"$auto_menu", "mnu_captivity_castle_check"),
-    # ],
-    # [ ("continue",[],"Continue...",
-       # [   (assign, "$g_player_is_captive", 1),
-           # (change_screen_return),
-        # ]),
-    # ]
-# ),
+),
 
 (   "notification_center_under_siege",0,
     "{s1} has been besieged by {s2} of {s3}!",
     "none",
-    [
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
       (str_store_party_name, s1, "$g_notification_menu_var1"),
       (str_store_troop_name, s2, "$g_notification_menu_var2"),
       (store_troop_faction, ":troop_faction", "$g_notification_menu_var2"),
@@ -7311,7 +6813,6 @@ It seems that none of your wound were lethal,\
         ]),
      ]
 ),  
-
 ( "notification_one_side_left",0,
     "The War of the Ring is over!^^^^^^^The {s1} have defeated all their enemies and stand victorious!",
     "none",
@@ -7343,7 +6844,6 @@ It seems that none of your wound were lethal,\
         ]),
      ]
 ),
-
 ( "notification_total_defeat",0,
     "The War of the Ring is over for you!^^^^^^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
     "none",
@@ -7375,7 +6875,6 @@ It seems that none of your wound were lethal,\
         ]),
      ]
 ),
-
 ( "notification_your_faction_collapsed",0,
     "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
     "none",
@@ -7552,7 +7051,7 @@ It seems that none of your wound were lethal,\
 ( "ruins",0,
     "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
-    [#(set_background_mesh, "mesh_pic_looted_village"), # not a very fitting image,  no style uniformity
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
     [
@@ -7562,11 +7061,10 @@ It seems that none of your wound were lethal,\
        ]),
     ]
 ),
-
 ( "legendary_place",0,
     "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
     "none",
-    [#(set_background_mesh, "mesh_pic_looted_village"),
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
     [
@@ -7615,7 +7113,6 @@ It seems that none of your wound were lethal,\
     ],
     []
 ),
-  
 ( "auto_player_garrison_2",0,"stub","none",
     [(jump_to_menu, "mnu_town"),
      
@@ -7658,7 +7155,6 @@ It seems that none of your wound were lethal,\
     ],
     []
 ),
-  
 ( "auto_intro_gondor",0,"stub","none",
     [
        (assign, "$current_town", "p_town_minas_tirith"), #for the cabbage guards 
@@ -7671,7 +7167,6 @@ It seems that none of your wound were lethal,\
     ],
     []
 ),
-
 ( "auto_intro_mordor",0,"stub","none",
     [
        (assign, "$current_town", "p_town_minas_morgul"), #for the cabbage guards 
@@ -7684,7 +7179,6 @@ It seems that none of your wound were lethal,\
     ],
     []
 ),
-
 ( "auto_intro_joke",0,"stub","none",
     [
        (modify_visitors_at_site, "scn_minas_tirith_castle"),
@@ -7726,7 +7220,6 @@ It seems that none of your wound were lethal,\
       ]),
    ("go_your_way",[],"Leave them alone",[(change_screen_map),]),
 ]),
-
 ("starting_quest_victory",0,"null","none",
     [(call_script, "script_setup_troop_meeting","trp_start_quest_caravaneer", 255),
 #     (leave_encounter),
@@ -7774,7 +7267,7 @@ It seems that none of your wound were lethal,\
 
 ######################### TLD808 menus ##########################
 ( "ancient_ruins", 0,
-  "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_relief01")],
+  "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak_into_the_sorcerer's_lair under the night's cover.",
 						[(try_begin),
@@ -7856,11 +7349,11 @@ It seems that none of your wound were lethal,\
 							(call_script, "script_infiltration_mission_final_casualty_tabulation")]),
 	]
 ),
-
 ( "pick_troops", 0, 
   "Whom would you take with you into the stealth mission? \
    Currently you picked {reg0} companions. You can take up to 10 troops with you", "none",
-   [], [ #reg0 counts total # of companions picked
+   [(set_background_mesh, "mesh_ui_default_menu_window")], [ 
+   #reg0 counts total # of companions picked
   ("troop1", [(troop_get_slot,":troop","trp_temp_array_a",1),(gt,":troop",0),(str_store_troop_name, s1, ":troop")],
    "{s1}: {reg1}", [(troop_get_slot,":troop","trp_temp_array_a",1),
                     (party_count_members_of_type, ":n", "p_main_party",":troop"),
@@ -7923,10 +7416,10 @@ It seems that none of your wound were lethal,\
 					(try_end),
 					(jump_to_menu, "mnu_ancient_ruins")]),  
 ]),  
-
 ( "burial_mound", 0, 
   "You_approach_the_burial_mound_of_{s3}_of_{s2}._It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
-   [	(store_encountered_party, ":mound"),
+   [	(set_background_mesh, "mesh_ui_default_menu_window"),
+		(store_encountered_party, ":mound"),
 #		(str_store_party_name, s1, ":mound"),
 		(store_faction_of_party, ":local1", ":mound"),
 #		(store_relation, ":local2", ":local1", "fac_player_faction"),
@@ -7956,11 +7449,11 @@ It seems that none of your wound were lethal,\
    "Desecrate_the_site",  [(jump_to_menu, "mnu_burial_mound_despoil")]),  
   ("leave",        [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-
 ( "burial_mound_respects", 0, 
   "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.\
   There is nothing left to be done here.", "none",
-					[(store_encountered_party, ":mound"),
+					[(set_background_mesh, "mesh_ui_default_menu_window"),
+					(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(str_store_troop_name, s1, ":hero"),
 					(party_set_slot, ":mound", slot_mound_state, 2),
@@ -7970,11 +7463,11 @@ It seems that none of your wound were lethal,\
 					(try_end)],[
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-
 ( "burial_mound_oath", 0, 
   "You loudly swear an oath of vengeance for the death of {s1}.\
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
-	[(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
+	[(set_background_mesh, "mesh_ui_default_menu_window"),
+	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
 	(party_get_slot, ":target", ":mound", slot_mound_killer_faction),
 	(store_current_day, ":day"),
 	(val_add, ":day", 3),
@@ -7988,11 +7481,11 @@ It seems that none of your wound were lethal,\
 	(start_quest, "qst_oath_of_vengeance")],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
-
 ( "burial_mound_despoil", 0, 
   "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.\
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
-	[(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
+	[(set_background_mesh, "mesh_ui_default_menu_window"),
+	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
 	 (store_random, ":rnd", 100),
 	 (try_begin),(is_between, ":rnd", 5, 10),(call_script, "script_cf_gain_trait_despoiler"),
 	  (else_try),    (neg|ge, ":rnd", 5),    (call_script, "script_cf_gain_trait_accursed"),
@@ -8001,24 +7494,24 @@ It seems that none of your wound were lethal,\
 	 (disable_party, ":mound")],[
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
- 
 ( "funeral_pyre", 0, 
   "You approach the charred remnants of the funeral pyre of {s3} of {s2}.\
   Here his corpse was ceremoniously burned by the evil men\
   who served as his personal guard. Nothing of value remains.", "none", 
-   [(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s3, ":hero"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+   (store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s3, ":hero"),
 	(store_faction_of_party, ":faction", ":mound"),
 	(str_store_faction_name, s2, ":faction")],[
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
-]),
-
+ ]
+),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,
 	"When you approach, you see that {s1} is destroyed. Only smoldering ruins remain.",
-    "none",[ (party_get_slot,":mesh","$g_encountered_party",slot_town_menu_background),
-		  (set_background_mesh, ":mesh"),
-		  (party_get_slot, ":elder_troop", "$g_encountered_party", slot_town_elder),
-		  (str_store_troop_name_plural, s1, ":elder_troop"),
-        ],
+    "none",
+	code_to_set_city_background + [
+	(party_get_slot, ":elder_troop", "$g_encountered_party", slot_town_elder),
+	(str_store_troop_name_plural, s1, ":elder_troop"),
+    ],
     [("ruin_menu_0",[(eq,0,1)],"Go to some location.",[], "Door to some location."),
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
 ]),

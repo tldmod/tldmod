@@ -1,4 +1,4 @@
-888
+890
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -324,27 +324,29 @@ qstr_Elapsed_hours:_{reg7 Elapsed_hours:_{reg7}
 qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_A_new_location_is_no A_new_location_is_now_available_on_the_map!
-qstr_{s1}_has_suffered_a_ {s1}_has_suffered_a_serious_wound.
-qstr_His_leg_has_been_bad His_leg_has_been_badly_maimed_in_battle.
+qstr_You_have You_have
+qstr_{s1}_has {s1}_has
+qstr_{s11}_suffered_a_ser {s11}_suffered_a_serious_wound.
+qstr_The_leg_has_been_bad The_leg_has_been_badly_maimed_in_battle.
 qstr___2_athletics__1_rid (-2_athletics,_-1_riding,_-2_agility,_-15_melee_skill)
-qstr_His_arm_has_been_bad His_arm_has_been_badly_maimed_in_battle.
+qstr_The_arm_has_been_bad The_arm_has_been_badly_maimed_in_battle.
 qstr___20_weapon_skill__2 (-20_weapon_skill,_-2_strength,_-1_power_attacks)
-qstr_He_has_suffered_a_he He_has_suffered_a_heavy_blow_to_the_head.
+qstr_The_head_has_suffere The_head_has_suffered_a_heavy_blow.
 qstr___1_intelligence_ski (-1_intelligence_skills,_-15_missile_skill)
-qstr_His_chest_has_suffer His_chest_has_suffered_some_cracked_ribs.
+qstr_The_chest_has_suffer The_chest_has_suffered_some_cracked_ribs.
 qstr___20_weapon_skill_ (-20_weapon_skill)
 qstr_{s1}_has_been_killed {s1}_has_been_killed.
-qstr_{s1}_has_recovered_f {s1}_has_recovered_from_a_serious_wound.
-qstr_His_leg_wound_has_he His_leg_wound_has_healed.
+qstr_You_were_killed. You_were_killed.
+qstr_{s1}_recovered_from_ {s1}_recovered_from_a_serious_wound.
+qstr_The_leg_wound_has_he The_leg_wound_has_healed.
 qstr__+2_athletics_+1_rid (+2_athletics,_+1_riding,_+2_agility,_+15_melee_skill)
-qstr_His_arm_wound_has_he His_arm_wound_has_healed.
+qstr_The_arm_wound_has_he The_arm_wound_has_healed.
 qstr__+20_weapon_skill_+2 (+20_weapon_skill,_+2_strength,_+1_power_attacks)
-qstr_His_head_wound_has_h His_head_wound_has_healed.
+qstr_The_head_wound_has_h The_head_wound_has_healed.
 qstr__+1_intelligence_ski (+1_intelligence_skills,_+15_missile_skill)
-qstr_His_cracked_ribs_hav His_cracked_ribs_have_healed.
+qstr_The_cracked_ribs_hav The_cracked_ribs_have_healed.
 qstr__+20_weapon_skill_ (+20_weapon_skill)
 qstr_{s1}_has_had_his_hea {s1}_has_had_his_health_boosted
-qstr_{s1}_s_mound {s1}'s_mound
 qstr_News_has_arrived_tha News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!
 qstr_{s1}_s_Burial_Mound {s1}'s_Burial_Mound
 qstr_{s1}_s_Funeral_Pyre {s1}'s_Funeral_Pyre
@@ -393,7 +395,7 @@ qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
-qstr_DEBUG:_new_wargs_tea DEBUG:_new_wargs_team_is_now:_{reg25}
+qstr_Forming_ranks. Forming_ranks.
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -405,11 +407,9 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconsciuos knocked_unconsciuos
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
-qstr_DEBUG:_trying_respaw DEBUG:_trying_respawn_{s12}_from_entry_{reg1}...
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
-qstr_Forming_ranks. Forming_ranks.
 qstr_On_your_positions_bi On_your_positions,_bitches!!
 qstr_Defenders:_infantry_ Defenders:_infantry_CHARGE!!
 qstr_Defenders:_everyone_ Defenders:_everyone_CHARGE!!
@@ -509,7 +509,7 @@ qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
 qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
-qstr_Lord_locations_updat Lord_locations_updated_-_see_wiki!
+qstr_You_got_them_all_par You_got_them_all,_pardner!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s2 {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
@@ -569,6 +569,7 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_OFF OFF
 qstr_ON ON
+qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
 qstr_A_second_troll_is_ca A_second_troll_is_caged_in_wheeled_cage.
@@ -598,7 +599,6 @@ qstr_Attributes_skills_an Attributes,_skills_and_proficiencies_raised.
 qstr_Items_added_to_playe Items_added_to_player_inventory.
 qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
-qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
 qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
@@ -754,6 +754,8 @@ qstr_Say_cheese! Say_cheese!
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
+qstr_I_m_seriously_injure I'm_seriously_injured._Please_be_gentle.
+qstr_I_don_t_have_serious I_don't_have_serious_injuries,_thank_you
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.

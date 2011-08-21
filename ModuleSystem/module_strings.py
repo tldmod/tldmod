@@ -2337,6 +2337,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("mordor_rumor_19", "Come not between the Nazgûl and his prey!"), #Nazgul quote
 ("mordor_rumor_20", "Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant."),
 ("mordor_rumor_21", "Mirkwood is in our hands already, but the elves don't know it yet."),
+("mordor_rumor_22", "Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods..."),
+("mordor_rumor_23", "Where there's a whip there's a way."),
 #Isengard
 #general idea= confidence in technology and wise leadership
 ("isengard_rumor_begin", "Sharkû commands!"),
@@ -2358,12 +2360,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("isengard_rumor_17", "I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!"),
 ("isengard_rumor_18", "There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark."),
 ("isengard_rumor_19", "We're cutting down the forest, but many orcs that go in, never come out."),
-#Rhun
-#general idea= ok barbarian types, actually, not evil, just mislead
+("isengard_rumor_20", "Where there's a whip there's a way."),
+#[b]Rhun[/b]
+#[i]general idea= ok barbarian types, actually, not evil, just mislead[/i]
 ("rhun_rumor_begin", "Ride like the wind of the steppes!"),
 ("rhun_rumor_2", "The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us."),
 ("rhun_rumor_3", "Three wizards came to our lands a while ago. I wonder what they are up to."),
-("rhun_rumor_4", "Our lands are vast and sparsely populated. But we know how to survive there."),
+("rhun_rumor_4", "Our lands are vast and scarcely populated. But we know how to survive there."),
 ("rhun_rumor_5", "We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!"),
 ("rhun_rumor_6", "Our cousins from Khand prefer to fight on foot, but we know being on a horse is better."),
 ("rhun_rumor_7", "We have defeated Gondor legions before, and we will do it again!"),
@@ -2372,7 +2375,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rhun_rumor_10", "Elven women? Nah. Too fragile!"),
 ("rhun_rumor_11", "Each of my sons has already brought me a head of an enemy. And my daughter the testicles of one. Ha ha ha!"),
 ("rhun_rumor_12", "Orcs are filthy beasts with no skill or courage. They have no place on the field of battle."),
-("rhun_rumor_13", "What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women."), #Conan quote
+("rhun_rumor_13", "What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women."), #[color=green]#Conan quote[/color]
 #Dunlendings
 #general idea= Rohirrim pissed in their cereal
 ("dunland_rumor_begin", "We won't rest until we are avenged and the strawheads are on their knees!"),
@@ -2402,59 +2405,60 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
 ("beorn_rumor_13", "*GROWLS*   Do you have any honey?"),
-#Lothlorien
-#general idea= Merl? Marco? - slight depression about shit that's going down, thoughts about leaving this goddamn continent mixed with semi-confident feeling of safety in the woods.
-("lorien_rumor_begin", "O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. "), #Galadriel's Song of Eldamar
-("lorien_rumor_2", "Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!"), #Aragorn quote of Galadriel
-("lorien_rumor_3", "The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater."), #Haldir quote
-("lorien_rumor_4", "Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house."), #Aragorn quote
-("lorien_rumor_5", "Often does hatred hurt itself!"), #Gandalf quote
+#[b]Lothlorien[/b]
+#[i]general idea= Merl? Marco? - slight depression about shit that's going down, thoughts about leaving this goddamn continent mixed with semi-confident feeling of safety in the woods.[/i]
+("lorien_rumor_begin", "O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. "), #[color=red]Galadriel's Song of Eldamar[/color]
+("lorien_rumor_2", "Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!"), #[color=red]Aragorn quote of Galadriel[/color]
+("lorien_rumor_3", "The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater."), #[color=red]Haldir quote[/color]
+("lorien_rumor_4", "Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house."), #[color=red]Aragorn quote[/color]
+("lorien_rumor_5", "Often does hatred hurt itself!"), #[color=red]Gandalf quote[/color]
 ("lorien_rumor_6", "Ancient magic protects Lothlórien, so powerful the Darkness does not yet dare challenge it."),
 ("lorien_rumor_7", "Nathlo i nathal! You are safe within the golden woods. Posto vae - rest now, eat and drink. If you must leave then, carry with you a memory of how Lorien once was."),
 ("lorien_rumor_8", "It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. "),
 ("lorien_rumor_9", "Av-'osto - do not be afraid! More than our grey cloaks protect us from the enemy here."),
-#Rivendell a.k.a. Imladris
-#general idea= Merl? Marco? - feeling of a tiresome, ancient watch they keep, but pride of culture and heritage - a duty that bids them take up dusty arms and join the battlefield again .
-("imladris_rumor_begin", "May the blessing of Elves and Men and all Free Folk go with you."), #Elrond quote
-("imladris_rumor_2", "May the stars shine upon your faces!"), #Elrond quote
-("imladris_rumor_3", "He that breaks a thing to find out what it is has left the path of wisdom."), #Gandalf at council of Elrond.
-("imladris_rumor_4", "We must take a hard road, a road unforeseen. There lies our hope, if hope it be."), #Elrond at council of Elrond.
-("imladris_rumor_5", "Despair is only for those who see the end beyond all doubt. We do not."), #Gandalf at council of Elrond.
+#[b]Rivendell a.k.a. Imladris[/b]
+#[i]general idea= Merl? Marco? - feeling of a tiresome, ancient watch they keep, but pride of culture and heritage - a duty that bids them take up dusty arms and join the battlefield again .[/i]
+("imladris_rumor_begin", "May the blessing of Elves and Men and all Free Folk go with you."), #[color=red]Elrond quote[/color]
+("imladris_rumor_2", "May the stars shine upon your faces!"), #[color=red]Elrond quote[/color]
+("imladris_rumor_3", "He that breaks a thing to find out what it is has left the path of wisdom."), #[color=red]Gandalf at council of Elrond.[/color]
+("imladris_rumor_4", "We must take a hard road, a road unforeseen. There lies our hope, if hope it be."), #[color=red]Elrond at council of Elrond.[/color]
+("imladris_rumor_5", "Despair is only for those who see the end beyond all doubt. We do not."), #[color=red]Gandalf at council of Elrond.[/color]
 ("imladris_rumor_6", "Even after the coldest winter flowers do spring. And after the longest night, comes a new dawn."),
 ("imladris_rumor_7", "So many had gathered when last I rode to war. The light of the drawing of our swords was like a fire in a field of reeds. So few have left Imladris now. "),
 ("imladris_rumor_8", "Áva rucë! The Eldar have taken arms to fight the enemy alongside brave Edain once more.  Perhaps for the last time, who knows? We sing of war, of fire and the end of the Night."),
 ("imladris_rumor_9", "I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours."),
-#Mirkwood Elves
-#general idea= Merl? Marco? - quite paranoid, slightly bigheaded about their own importance, secretly enjoying the fruits of their trade with Dale and dwarves.
-("woodelf_rumor_begin", "Edain of Dale make entertaining toys! They've learnt much from the Naugrim."),
-("woodelf_rumor_2", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."), #Song of Nimrodel sung by Legolas
-("woodelf_rumor_3", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #Legolas quote
-("woodelf_rumor_4", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."),
+#[b]Mirkwood Elves[/b]
+#[i]general idea= Merl? Marco? - quite paranoid, slightly bigheaded about their own importance, secretly enjoying the fruits of their trade with Dale and dwarves.[/i]
+("woodelf_rumor_begin", " "), 
+("woodelf_rumor_2", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."), #[color=red]Song of Nimrodel sung by Legolas[/color]
+("woodelf_rumor_3", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #[color=red]Legolas quote[/color]
+("woodelf_rumor_4", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."), 
 ("woodelf_rumor_5", "Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?"),
 ("woodelf_rumor_6", "Shhh, no dhínen! There may be orcs lurking around. We must be on guard!"),
-("woodelf_rumor_7", "*stares at you, obviously annoyed by your presence*"), #removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign
+("woodelf_rumor_7", "*stares at you, obviously annoyed by your presence*"), #[color=red]removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign[/color]
 ("woodelf_rumor_8", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
-#Dale
-#general idea= fearful because of the assault from several fronts
-("dale_rumor_begin", "First there was the dragon, now this..."),
-("dale_rumor_2", "As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!"),
-("dale_rumor_3", "Ever since the defeat of the dragon, we know how to look for the enemy's weak spot."),
-("dale_rumor_4", "Easterlings will never make it past us and our dwarven allies."),
-("dale_rumor_5", "Have you ever seen the sun rise over the Long lake? The colours used to make my heart sing. But now all I see is a red dawn. A bad omen."),
+("woodelf_rumor_9", "Edain of Dale make such amazing toys! They've learnt much from the Naugrim."),
+#[b]Dale[/b]
+#[i]general idea= fearful because of the assault from several fronts[/i]
+("dale_rumor_begin", "First there was the dragon, now this..."), 
+("dale_rumor_2", "As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!"), 
+("dale_rumor_3", "Ever since the defeat of the dragon, we know how to look for the enemy's weak spot."), 
+("dale_rumor_4", "Easterlings will never make it past us and our dwarven allies."), 
+("dale_rumor_5", "Have you ever seen the sun rise over the Long lake? The colours used to make my heart sing. But now all I see is a red dawn. A bad omen."), 
 ("dale_rumor_6", "Dwarves are a bit too attached to treasures. We still don't know what to think of Thorin Oakenshield."),
 ("dale_rumor_7", "The men of Rohan are our cousins and our own language is very similar to theirs."),
 ("dale_rumor_8", "Esgaroth got its name from an Elven word for reeds, because of its reed banks. Did you know that?"),
 ("dale_rumor_9", "The dragon was a sort of a monster noone wants to see ever again."),
 ("dale_rumor_10", "Our prosperity comes from trade with the Dwarves and the Elves. But it's hard to bargain with Dwarves. Very little profit there."),
-#Harad
-#general idea= Merl? This should be Merl's forte.
-("harad_rumor_begin", "The Black Snake strike is swift and deadly."),
-("harad_rumor_2", "By the Serpent! Our beasts will trample Gondorians into the dirt."),
-("harad_rumor_3", "Odum vermajál otí verthaba av daranaja-e-jatánus!"),
+#[b]Harad[/b]
+#[i]general idea= Merl? This should be Merl's forte.[/i]
+("harad_rumor_begin", "The Black Snake will strike swift and deadly."), 
+("harad_rumor_2", "By the Serpent! Our beasts will trample Gondorians into the dirt."), 
+("harad_rumor_3", "Odum vermajál otí verthaba av daranaja-e-jatánus!"), 
 ("harad_rumor_4", "There is much gold and gems in Gondor. And even more in the lands beyond."),
 ("harad_rumor_5", "We will catch many western weaklings and sacrifice them to the Serpent God."),
 ("harad_rumor_6", "Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour."),
-("harad_rumor_7", "I'd never set my foot on a ship. Corsairs can have all the seas for themselves, it does not bother me the slightest."),
+("harad_rumor_7", "I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned."),
 ("harad_rumor_8", "Warriors of Khand are fierce and fearless, but their strategy is too simple."),
 ("harad_rumor_9", "I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace."),
 ("harad_rumor_10", "Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant."),
@@ -2463,8 +2467,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("harad_rumor_13", "My blood brother signed up with the Karka - he's a scout now. Riders of 'The Fang' lead a dangerous life, but it is good experience for young hot-headed boys."),
 ("harad_rumor_14", "Don't ever pick a fight with the Lion brotherhood! Their reputation is well earned."),
 ("harad_rumor_15", "I wish we had more weapons made of black iron. Many still have to manage with bronze, some even with wooden clubs and javelins of black glass, running into battle naked."),
-#Mt.Gundabad
-# orcs from cold north in search for warmer places?
+#[b]Mt.Gundabad[/b]
+# [color=green]orcs from cold north in search for warmer places?[/color]
 ("gunda_rumor_begin", "Take warm lands from men we come!"),
 ("gunda_rumor_2", "Sharkû promised warm caves."),
 ("gunda_rumor_3", "Enough hiding in the cold mountains! Now we march into warm lands of men."),
@@ -2476,8 +2480,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("gunda_rumor_9", "Dwarf-flesh is tough and stringy. Man-flesh is better."),
 ("gunda_rumor_10", "Bear-men came from the woods and ate Boldush. Bad luck for Boldush! Ha ha ha!"),
 ("gunda_rumor_11", "Some moved to Moria, much room there. But also Ghâsh in the deep. Best stay away!"),
-#Moria
-#terror from the deep?
+#[b]Moria[/b]
+#[color=green]terror from the deep?[/color]
 ("moria_rumor_begin", "When you hear drums - run and hide!"),
 ("moria_rumor_2", "Ghâsh is in the deep!"),
 ("moria_rumor_3", "Doom! Doom! Doom! Drums of the deep."),
@@ -2489,8 +2493,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("moria_rumor_9", "When we gather enough troops, we will go and burn down woods of elves."),
 ("moria_rumor_10", "Not much food in Moria. We're hungry. Must catch men and elves!"),
 ("moria_rumor_11", "Some go to the forest in the south. None come out."),
-#Umbar
-#general idea= Pirates and the old grudge against Gondor
+#[b]Umbar[/b]
+#[i]general idea= Pirates and the old grudge against Gondor[/i]
 ("umbar_rumor_begin", "All the seas will belong to the black sails!"),
 ("umbar_rumor_2", "There's no Gondor ships left to sink, now we go plunder inland."),
 ("umbar_rumor_3", "Umbar is our fate! And it will be Gondor's too."),
@@ -2501,10 +2505,10 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("umbar_rumor_8", "We will spill over Gondor like a giant wave and reclaim our long lost lands."),
 ("umbar_rumor_9", "Haradrim don't drink rum. Did you know that? We like some, to steady the harpoon hand."),
 ("umbar_rumor_10", "I saw some Variags of Khand figting. I wouldn't want to be facing them in battle. It is a good thing they are on our side."),
-#Khand
-#general idea= More hardcore Easterling types
+#[b]Khand[/b]
+#[i]general idea= More hardcore Easterling types[/i]
 ("khand_rumor_begin", "A fight is a fight, no matter how bloody. But retreat is the greatest shame!"),
-("khand_rumor_2", "Our swords once drawn, must taste blood!"),
+("khand_rumor_2", "Our swords once drawn, must have blood!"),
 ("khand_rumor_3", "The ground trembles under our heavy cataphract cavalry, but our enemies tremble at the mere mention of us!"),
 ("khand_rumor_4", "This time we left the Wainriders behind, our attack will catch the enemies off guard."),
 ("khand_rumor_5", "We are the Variags of Khand, the fiercest warriors anywhere!"),
@@ -2515,37 +2519,41 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("khand_rumor_10", "The men of the West are arrogant, they do not know what might they are facing!"),
 ("khand_rumor_11", "We trade with Rhun, Mordor and Harad. And sometimes we fight them too. It is the way of our people."),
 ("khand_rumor_12", "Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you."),
+#[b]Dol Guldur[/b]
+#[color=green]same as Mordor for the time being[/color]
+#[b]Other[/b]
+#[i]We must also have the "hints and tips" category that all good on one, and all bad on the other side will use. These should be general enough to transcend race and faction.[/i]
 
-("good_rumor_begin", "From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king."), #Gandalf quote
+("good_rumor_begin", "From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king."), #[color=red]Gandalf quote[/color]
 ("good_rumor_2", "Orcs fight better at night but are weaker by day."),
 ("good_rumor_3", "Urukhai are a different breed of orc that doesn't fear sunlight!"),
-("good_rumor_4", "Always after a defeat and a respite, the Shadow takes another shape and grows again."), #Gandalf quote
-("good_rumor_5", "The Dead Marshes... a land defiled, diseased beyond all healing."), #Chapter 'The Passage of the Marshes'.
-("good_rumor_6", "The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them."), #Frodo quote
+("good_rumor_4", "Always after a defeat and a respite, the Shadow takes another shape and grows again."), #[color=red]Gandalf quote[/color]
+("good_rumor_5", "The Dead Marshes... a land defiled, diseased beyond all healing."), #[color=red]Chapter 'The Passage of the Marshes'.[/color]
+("good_rumor_6", "The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them."), #[color=red]Frodo quote[/color]
 ("good_rumor_7", "Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures."),
 ("good_rumor_8", "The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor."),
+("good_rumor_9", "Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel."),
 
 ("neutral_rumor_begin", "Tomorrow everything could change..."),
-("neutral_rumor_2", "Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel."),
-("neutral_rumor_3", "Dead Marshes... a place defiled and diseased."), #Chapter 'The Passage of the Marshes'.
-("neutral_rumor_4", "The land used to be much different once."),
-("neutral_rumor_5", "Stay clear of Fangorn forest."),
+("neutral_rumor_2", "Dead Marshes... a place defiled and diseased."), #[color=red]Chapter 'The Passage of the Marshes'.[/color]
+("neutral_rumor_3", "The land used to be much different once."),
+("neutral_rumor_4", "Stay clear of Fangorn forest."),
 
-("evil_rumor_begin", "Orcs fight better at night, men say they fight better by day. But they don't! Ha ha ha!"),
+("evil_rumor_begin", "Orcs fight better at night, men fight better by day."),
 ("evil_rumor_2", "Fight horseman with pike, footman with arrow and archer with shield!"),
 ("evil_rumor_3", "Large statues of weaklings on the big river will not stand much longer."),
 
-("legendary_rumor_begin", "Fangorn is a forest best avoided. Unusual things happen there."),
+("legendary_rumor_begin", "Legend says that trees meet to talk in Fangorn."),
 ("legendary_rumor_amonhen", "They say there is a special place on the Anduin, somewhere where the big statues stand."),
 ("legendary_rumor_deadmarshes", "It is rumoured all dead seems alive in the middle of Dead Marshes."),
 ("legendary_rumor_mirkwood", "Creatures other than orcs crawl around Mirkwood."),
-("legendary_rumor_fangorn", "Legend has it trees meet to talk in Fangorn. What nonsense!"),
+("legendary_rumor_fangorn", "Fangorn is a forest best avoided. Unusual things happen there."),
 
 ("last_rumor", "I haven't heard anything interesting lately."),
-
-("ent_rumor_begin", "Do not be hasty now..."),
-("ent_rumor_2", "Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses."), #The Long List of the Ents from Treebeard
-("ent_rumor_3", "The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to."), #Treebeard quote
+#[i]For good player only we should make an Entmoot location in Fangorn, and a wee chat with the Ents. We have Ent brew planned and ready as reward for +STR, good player should be able to make permanent peace with Ents so Fangorn no longer attacks, etc...[/i]
+("ent_rumor_begin", "Do not be hasty now..."), 
+("ent_rumor_2", "Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses."), #[color=red]The Long List of the Ents from Treebeard[/color]
+("ent_rumor_3", "The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to."), #[color=red]Treebeard quote[/color]
 
 ### TLD home faction ranks - faction order must be kept 
 ("gondor_rank_0", "Commoner of Gondor"),

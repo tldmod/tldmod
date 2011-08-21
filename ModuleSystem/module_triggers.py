@@ -35,20 +35,20 @@ triggers = [
 #  (1, 0, ti_once, [(map_free,0)], [(start_map_conversation,"trp_guide")]),
 
 # Refresh Smiths
-(0, 0, 24, [], 
- [(set_merchandise_modifier_quality,150),
-  (try_for_range,":cur_merchant",weapon_merchants_begin,weapon_merchants_end),
-    (reset_item_probabilities,100),     
-    (troop_clear_inventory,":cur_merchant"),
-	(store_troop_faction,":faction",":cur_merchant" ),
-    (call_script,"script_get_faction_mask",":faction"),(assign,":faction_mask",reg30),          
-    (troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
-    (call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
-    (store_add,":last_item_plus_one","itm_ent_body",1),
+(0, 0, 24, [], [
+	(set_merchandise_modifier_quality,150),
+	(try_for_range,":cur_merchant",weapon_merchants_begin,weapon_merchants_end),
+		(reset_item_probabilities,100),     
+		(troop_clear_inventory,":cur_merchant"),
+		(store_troop_faction,":faction",":cur_merchant" ),
+		(call_script,"script_get_faction_mask",":faction"),(assign,":faction_mask",reg30),          
+		(troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
+		(call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
+		(store_add,":last_item_plus_one","itm_ent_body",1),
 
-    (try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
-            (item_get_slot,":item_faction_mask",":item",slot_item_faction),
-            (val_and,":item_faction_mask",":faction_mask"),
+		(try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
+			(item_get_slot,":item_faction_mask",":item",slot_item_faction),
+			(val_and,":item_faction_mask",":faction_mask"),
 			(try_begin),
 				(eq,":item_faction_mask",0), # faction mismatch
 				(set_item_probability_in_merchandise,":item",0),
@@ -56,34 +56,31 @@ triggers = [
 				(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
 				(store_and,":and_sub_faction",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
 				(eq,":and_sub_faction",0),
-				#(store_or , ":or_sub_faction",":subfaction_mask",":item_subfaction_mask"),
-				#(val_and,   ":or_sub_faction",1),
-				#(try_begin),
-				#	(val_and,  ":or_sub_faction",1), # at last one of the two subfaction is regular (either regular item in special town, or viceversa)
-				#	(set_item_probability_in_merchandise,":item",10), #   prob reduced to 10 %
-				#(else_try),
-					(set_item_probability_in_merchandise,":item",0),  #  prob reduced to 0 %
-				#(try_end),
+				(set_item_probability_in_merchandise,":item",0),  #  prob reduced to 0 %
+			(else_try),
+				(store_item_value,":value",":item"),
+				(try_begin), # somewhat fewer expensive items in store
+					(gt,":value",1500),
+					(set_item_probability_in_merchandise,":item",50),
+				(try_end),
 			(try_end),
-   (try_end),
+		(try_end),
 
-	(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
-#		(store_add,":slot",":itp_type",slot_troop_shop_horses-1), # itp_types and shop abundance slots in same order 
-#		(troop_get_slot,":items",":cur_merchant",":slot"), # get item shop abundance
-		(troop_get_slot,":skill","trp_skill2item_type",":itp_type"),
-		(store_skill_level,":items",":skill",":cur_merchant"), 
-        (try_begin),
-			(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",":items"),
-        (try_end),
+		(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
+			(troop_get_slot,":skill","trp_skill2item_type",":itp_type"), #abundance stored in merchant skills values
+			(store_skill_level,":items",":skill",":cur_merchant"), 
+			(try_begin),
+				(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",":items"),
+			(try_end),
+		(try_end),
+		
+		(troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space),
+		(troop_sort_inventory, ":cur_merchant"),
+		(store_troop_gold, ":gold",":cur_merchant"),
+		(lt, ":gold",900),
+		(store_random_in_range,":new_gold",200,400),
+		(call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
 	(try_end),
-	
-	(troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space),
-    (troop_sort_inventory, ":cur_merchant"),
-    (store_troop_gold, ":gold",":cur_merchant"),
-    (lt, ":gold",900),
-      (store_random_in_range,":new_gold",200,400),
-      (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
-  (try_end),
 ]),
 
 # Refresh Horse sellers
@@ -143,8 +140,7 @@ triggers = [
 			(try_end),
         (try_end),
     # horses inventory
- #       (troop_get_slot,":items",":cur_merchant",slot_troop_shop_horses),
-		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse),
+		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance ststored in merchant skills values
 		(store_skill_level,":items",":skill",":cur_merchant"),         
 		(try_begin),
             (gt,":items",0),
@@ -193,8 +189,7 @@ triggers = [
 ]),
 
 #Kingdom Parties
-(24, 0, 0, [],
-   [  # TLD Parties spawn (foxyman)
+(12, 0, 0, [],[  # TLD Parties spawn (foxyman)
       (try_for_range, ":center", centers_begin, centers_end),
         (party_is_active, ":center"),
         (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
@@ -202,6 +197,7 @@ triggers = [
         (party_get_slot, ":center_raiders", ":center", slot_center_spawn_raiders),
         (party_get_slot, ":center_patrol", ":center", slot_center_spawn_patrol),
         (party_get_slot, ":center_caravan", ":center", slot_center_spawn_caravan),
+	 #(display_message, "@DEBUG: Attempt to spawn parties", 0xFF00fd33),
         (try_begin),
             (store_faction_of_party, ":faction_no", ":center"),
             (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active), # faction lives
@@ -227,7 +223,7 @@ triggers = [
                 (set_spawn_radius, 1),
                 (spawn_around_party, ":center", ":center_scouts"),
                 (assign, ":scout_party", reg0),
-#                (display_message, "@DEBUG: Party spawn: {reg0}", 0xFF00fd33),
+        #(display_message, "@DEBUG: Party spawn scouts: {reg0}", 0xFF00fd33),
                 (party_set_slot, ":scout_party", slot_party_type, spt_scout),
                 (party_set_slot, ":scout_party", slot_party_home_center, ":center"),
 				(party_set_slot, ":scout_party", slot_party_victory_value, ws_scout_vp), # victory points for party kill

@@ -14,6 +14,6 @@ variables =
 	"$g_player_icon_foot_melee", 
 	"$g_player_icon_foot_archer",
 	
-	"$g_crossdressing_activated", 
+	"$tld_option_crossdressing", 
 
 ]

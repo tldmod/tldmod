@@ -283,6 +283,7 @@ items =[
 ["harad_bow","Harad_Curved_Bow",[("harad_bow",0),("harad_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_back,300,weight(1.3)|difficulty(0)|shoot_speed(56)|spd_rtng(95)|thrust_damage(31,cut),imodbits_bow],
 ["lg_bow","Eagle_Guard_Bow",[("lg_bow",0),("lg_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_back,500,weight(1.3)|difficulty(0)|shoot_speed(56)|spd_rtng(95)|thrust_damage(31,cut),imodbits_bow],
 ["riv_bow","Rivendell_Bow",[("rivendellbow",0),("rivendellbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,1000,weight(1.8)|difficulty(3)|shoot_speed(65)|spd_rtng(93)|thrust_damage(25,pierce),imodbits_good_bow],
+["glorfi_bow","Glorfindeil_Bow",[("rivendellbow",0),("rivendellbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,1000,weight(1.8)|difficulty(3)|shoot_speed(65)|spd_rtng(93)|thrust_damage(25,pierce),imodbits_good_bow],
 ["lorien_bow","Galadhrim_Bow",[("Elfbow",0),("Elfbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,1000,weight(1.5)|difficulty(3)|shoot_speed(65)|spd_rtng(93)|thrust_damage(25,pierce),imodbits_good_bow],
 ["isengard_large_bow","Isengard_Large_Bow",[("isengard_large_bow",0),("isengard_large_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,600,weight(1.5)|difficulty(0)|shoot_speed(58)|spd_rtng(87)|thrust_damage(23,pierce),imodbits_bow],
 ["dale_bow","Dale_Bow",[("dale_bow",0),("dale_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,500,weight(1.5)|difficulty(0)|shoot_speed(58)|spd_rtng(93)|thrust_damage(35,cut),imodbits_bow],
@@ -332,7 +333,7 @@ items =[
 ["riv_helm_a","Rivendell_Coif",[("rivendell_coif_new",0)],itp_type_head_armor|itp_shop,0,800,weight(1)|head_armor(24)|difficulty(0),imodbits_elf_armor],
 ["riv_helm_b","Rivendell_Archer_Helm",[("rivendellarcherhelmet",0)],itp_type_head_armor|itp_shop,0,1300,weight(1)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["riv_helm_c","Rivendell_Infantry_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,1800,weight(1.2)|head_armor(40)|difficulty(0),imodbits_elf_armor],
-["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_type_head_armor|0,0,3000,weight(1.2)|head_armor(70)|difficulty(0),0],
+["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_type_head_armor|itp_unique,0,3000,weight(1.2)|head_armor(70)|difficulty(0),0],
 ["riv_tiara","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,3000,weight(2.5)|head_armor(60)|difficulty(0),0],
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,600,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(85)|weapon_length(82),imodbits_shield_good,],

@@ -100,11 +100,13 @@ number_of_combatants
 g_camp_mode
 cheat_mode
 g_mvtest_faction
-g_crossdressing_activated
+tld_option_crossdressing
 tld_option_formations
 tld_option_town_menu_hidden
 tld_option_cutscenes
-tld_option_death
+tld_option_injuries
+tld_option_death_npc
+tld_option_death_player
 capturer_party
 g_player_is_captive
 auto_menu

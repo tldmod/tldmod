@@ -91,6 +91,7 @@ common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_messa
 
 common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV and MT
     (assign, "$pin_player_fallen", 1),
+	(try_begin),(eq, "$tld_option_injuries",1),(call_script, "script_injury_routine", "trp_player"),(try_end), #GA: player injury or death?
   	(store_normalized_team_count,":a", 0), 	#  check that battle still goes on MT
 	(store_normalized_team_count,":b", 1),
 	(gt,":b",0),(gt,":a",0),
@@ -710,8 +711,6 @@ custom_tld_bow_to_kings = [
 		(game_key_is_down, gk_jump),
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down")]),
 ]
-
-
 custom_tld_bow_always = [
 	# push putton: go down
 	(0, 0.5, 0, [ 
@@ -728,7 +727,6 @@ custom_tld_bow_always = [
 		(get_player_agent_no, reg10),
 		(agent_play_sound, reg10, "snd_footstep_wood")
 	]),
-
 	# release: get up
 	(0, 0, 0, [],[
 	    (neq, "$player_is_bowing", 0 ),
@@ -736,7 +734,6 @@ custom_tld_bow_always = [
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_get_up"),
 		(assign, "$player_is_bowing", 0 ),
 	]),
-	   
 	# keep pressed: stay down
 	(0.0, 1.0, 1.0, [ (eq, "$player_is_bowing", 1)],[ 
 		# (key_is_down, key_b),  
@@ -744,7 +741,6 @@ custom_tld_bow_always = [
 		(get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_stay_down"),
 	]),
 ]
-	  
 	  
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   [ (assign,"$trolls_in_battle",0),	
@@ -771,6 +767,11 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 			(display_log_message, "@A Nazgul is circling in the sky above the battlefield!"),
 		(try_end),
 	(try_end),
+	
+	(try_for_range, ":npc",companions_begin,companions_end), #reset KO tracking for companions
+		(troop_set_slot,":npc",slot_companion_agent_id,0),
+		(troop_set_slot,":npc",slot_troop_wounded,0),
+	(try_end),
 ])
 
 # cheer instead of jump on space if battle is won  (mtarini)
@@ -796,7 +797,6 @@ tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
   ],
   [(assign,"$player_cheering",2), # after 1 sec, can end ani
 ])
-
 tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],[
 	(get_player_agent_no, reg10),
 	(agent_get_horse, reg12, reg10),
@@ -813,10 +813,9 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(agent_get_item_id, ":agent_item", ":agent"),
 
     (try_begin), # when trolls in battle
-	  (assign, ":troll", ":agent"),
-	  (troop_get_type, reg0, ":agent_trp"),
-	  (eq, reg0, tf_troll),
-	  (agent_set_speed_limit,":troll",4),	# trolls go 4 km/h max <GA>
+	  (troop_get_type, reg12, ":agent_trp"),
+	  (eq, reg12, tf_troll),
+	  (agent_set_speed_limit,":agent", 4),	# trolls go 4 km/h max <GA>
 	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
 	# a failed test: set custom troll walking/standing animations... why wouldn't this work?
 	  #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
@@ -826,7 +825,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(try_begin), # when wargs in battle
 		(is_between, ":agent_item", item_warg_begin , item_warg_end),
 		# keep warg count up to date...
-		(val_add,"$wargs_in_battle",1),
+		(assign,"$wargs_in_battle",1),
 	(try_end),
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
@@ -834,28 +833,35 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
 		(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
 		(agent_set_position, ":agent", pos4),
-		(try_begin),(neq,":agent_item",-1), 
+		(try_begin),
+			(neq,":agent_item",-1), 
 			# fisrt spawn:  MOUTH set hit points
 			(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
 			(agent_set_hit_points, ":agent", reg12, 1),
 			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		(else_try), 
 			# second spawn: GHOST RIDER: set side
-			(agent_get_slot, reg25, "$warg_to_be_replaced", slot_agent_mount_side),
-			(agent_set_team, ":agent",  reg25), # this was set just above
-			(set_show_messages,0),(display_message,"@DEBUG: new wargs team is now: {reg25}"),
+			(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
+			(agent_set_team, ":agent", reg12), # this was set just above
+			#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
 			(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
 			(assign, "$warg_to_be_replaced", -1),
 		(try_end), 
 	(else_try), 
 		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
 	(try_end),
-
+	
 	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is
 	(try_begin),(neq,":horse",-1), 
 		(agent_get_team,  reg25, ":agent"),
 		(agent_set_slot, ":horse", slot_agent_mount_side, reg25), 
 	(try_end),
+	
+	(try_begin),(is_between, ":agent_trp",companions_begin,companions_end), # track companion injuries in battle
+		(troop_set_slot, ":agent_trp", slot_troop_wounded, 0),
+		(troop_set_slot, ":agent_trp", slot_companion_agent_id, ":agent"),
+	(try_end),
+	(set_show_messages,1),
 ])
 
 # mtarini nazgul sweeps 
@@ -1028,7 +1034,7 @@ nazgul_sweeps = (2,1.2,5,[
 
 # if player attempts to ride non matching mount, mount rebels (mtarini)
 tld_player_cant_ride = (1.90,1.5,0.5,[
-	(eq, "$g_crossdressing_activated", 0),
+	(eq, "$tld_option_crossdressing", 0),
 	(get_player_agent_no, ":player_agent"),
 	(agent_get_horse,":mount",":player_agent"),
     (troop_get_type, ":race", "$g_player_troop"),
@@ -1073,20 +1079,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(try_end),
 ])
 
-custom_warg_sounds = (0.65,0,0,  [(gt,"$wargs_in_battle",0)],[
-	(assign, "$wargs_in_battle", 0), # recount them, to account for deaths
-    (try_for_agents, ":warg"),
-		(agent_get_item_id, ":warg_item", ":warg"),
-		(is_between, ":warg_item", item_warg_begin ,item_warg_end),
-		(agent_is_alive, ":warg"),
-		(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
-		(store_random_in_range, ":random", 1, 101), (le, ":random", 7),  # 7% of time
-		#(display_message,"@warg says: 'woof, woof!'"),
-		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
-	(try_end),
-])
-
-#MV: inserted troll "charging" (going haead not following orders)
+#MV: inserted troll "charging" (going ahead not following orders)
 custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 	(try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
@@ -1412,41 +1405,31 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
-
-custom_lone_wargs_are_aggressive = (0.5,0,0, [(gt,"$wargs_in_battle",0)],[  # wargs without rider respawn
-    (set_show_messages,0),
- # self destruct any ghost rider which has no ride
-	(try_for_agents,":ghost"),
+custom_lone_wargs_are_aggressive = (0.5,0,0, [],[
+	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
         (agent_is_alive, ":ghost"), 
 		(agent_is_human,":ghost"),
 		(agent_get_troop_id,":trp_ghost",":ghost"),
 		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
-		 (agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
+		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
 		(agent_get_horse,":horse",":ghost"),
 		(eq,":horse",-1),
 		(call_script, "script_remove_agent", ":ghost"),
-	(try_end),
-
-	(try_for_agents,":warg"),
-        (agent_is_alive, ":warg"), 
+	(try_end)])
+custom_lone_wargs_are_aggressive2 = (0.51,0,0, [(gt,"$wargs_in_battle",0)],[  # wargs without rider respawn (need to make it separate to have condition
+    (assign, "$wargs_in_battle", 0), # recount
+	(try_for_agents,":warg"), 
+        (agent_is_alive, ":warg"),
+		(neg|agent_is_human,":warg"),
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
+		(assign, "$wargs_in_battle", 1), #  wargs_in_battle
+		# make warg sounds while we are at it
+		(store_random_in_range,reg12,0,100),(try_begin),(le,reg12,7),(agent_play_sound,":warg","snd_warg_lone_woof"),(try_end),
+		
 		(agent_get_rider,":rider",":warg"),
-		#(try_begin),
-		#	# rider not dead: record its original owner in a slot (1st time only)
-		#	(neq,":rider",-1),
-		#	(agent_slot_eq, ":warg", slot_agent_mount_side, -1),
-		#	(agent_get_team, reg10, ":rider"),
-		#	(display_message,"@warg rider has side {reg10}..."),
-		#	(agent_set_slot, ":warg", slot_agent_mount_side, reg10),
-		#	#(display_message,"@DEBUG: This warg has side {reg10}"),
-		#(try_end),
-
-		(eq,":rider",-1),
-		#(display_message,"@warg without rider found!"),
-
-		# riderless rider found. spawn a new rider in its place
-		(eq, "$warg_to_be_replaced", -1), # only spawn a new warg per "turn"
+		(eq,":rider",-1), #(display_message,"@warg without rider found!"),
+		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
 		(assign, "$warg_to_be_replaced", ":warg"),
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
 		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
@@ -1454,15 +1437,21 @@ custom_lone_wargs_are_aggressive = (0.5,0,0, [(gt,"$wargs_in_battle",0)],[  # wa
 		(agent_get_position, pos10, ":warg"),
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
-		(val_sub,reg1,1), # translate entry point prop number into entry number in mission template
+		(val_sub,reg1,1), # translate entry point number into mission entry
 		(store_current_scene, ":cur_scene"),
 		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
 		(str_store_troop_name, s12, ":warg_ghost_trp"), 
-		(set_show_messages,1),
-		(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
-	(try_end),
-	(set_show_messages,1)])
+		#(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
+	(try_end)])
+
+custom_track_companion_casualties = (0.5,0,0, [],[ 
+	(try_for_range, ":npc",companions_begin,companions_end),
+		(troop_get_slot,":agent",":npc",slot_companion_agent_id),
+		(gt,":agent",0),
+		(neg|agent_is_alive, ":agent"),
+		(troop_set_slot, ":npc", slot_troop_wounded, 1),
+	(try_end)])
 
 ################## SIEGE LADDERS BEGIN #######################################
 HD_ladders_init = (0,0,ti_once,[],[
@@ -1976,3 +1965,47 @@ dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [
 		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
 		(try_end),
 	(try_end)])
+	
+	
+# ( "custom_battle_football",mtf_battle_mode,-1,
+    # "The match starts in a minute!",
+    # [
+		# (0, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (1, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (2, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (3, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (4, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (5, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (6, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a,itm_lossarnach_cloth_cap]),
+		# (7, mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+
+		# (16,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a,itm_lossarnach_cloth_cap]),
+		# (17,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (18,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (19,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (20,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (21,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+		# (22,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_leather_boots,itm_white_tunic_a]),
+
+     # ],
+    # [
+      # common_custom_battle_tab_press,
+      # common_custom_battle_question_answered,
+      # common_inventory_not_available,
+      # common_music_situation_update,
+      # custom_battle_check_victory_condition,
+      # common_battle_victory_display,
+      # custom_battle_check_defeat_condition,
+
+    # (0, 0, ti_once,
+       # [ (assign, "$defender_team", 0),
+         # (assign, "$attacker_team", 1), # (display_message,"@DEBUG: mission template football"),
+#         (assign, "$defender_team_2", 3),
+#         (assign, "$attacker_team_2", 2),
+       # ], []),
+################## FOOTBALL BEGIN ############################################
+		# football_init,
+		# football_kick_ball,
+		# football_fly_ball,				
+	# ],
+# ),

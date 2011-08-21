@@ -16,8 +16,6 @@ from module_constants import *
 # 2) Operation block: This must be a valid operation block. See header_operations.py for reference. 
 ####################################################################################################################
 
-
-
 simple_triggers = [
 
 # This trigger is deprecated. Use "script_game_event_party_encounter" in module_scripts.py instead  
@@ -160,11 +158,9 @@ simple_triggers = [
   
 # keep track of main party region ("$current_player_region"), 
 # and display log messages keey player informed of what region is he in,   (mtarini)
-(0.5,[
-	(call_script,"script_get_region_of_party", "p_main_party"),
+(0.5,[(call_script,"script_get_region_of_party", "p_main_party"),
 	(assign, ":new_region", reg1),
 	(neq, "$current_player_region", ":new_region"), # region change!
-	
 	(try_begin), 
 		# regions without a clear name
 		(this_or_next|eq, ":new_region", region_above_mirkwook), 
@@ -209,8 +205,7 @@ simple_triggers = [
     ]),
 
 #Hiring men with center wealths (once a day)
-(24,[
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+(24,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (ge, ":party_no", 1),
         (party_is_active, ":party_no"), #MV
@@ -578,8 +573,7 @@ simple_triggers = [
      ]),
 
 # Attach Lord Parties to the town they are in
-(0.1,
-   [  (try_for_range, ":troop_no", heroes_begin, heroes_end),
+(0.1,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (troop_get_slot, ":troop_party_no", ":troop_no", slot_troop_leaded_party),
          (ge, ":troop_party_no", 1),
@@ -932,8 +926,7 @@ simple_triggers = [
 	]),
   
 # Updating player icon in every frame
-(0,
-   [(troop_get_inventory_slot, ":cur_horse", "trp_player", ek_horse), #horse slot
+(0,[(troop_get_inventory_slot, ":cur_horse", "trp_player", ek_horse), #horse slot
 	# determine if archer or not
 	(try_begin),
 		(troop_get_inventory_slot, reg5, "trp_player", ek_item_0),(val_max, reg5, 0),(item_get_type, reg5,reg5),
@@ -2090,9 +2083,18 @@ simple_triggers = [
 	(try_end)
 	]),             
 
+(1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
+		(eq, "$tld_option_injuries",1),
+		(try_for_range, ":npc",companions_begin,companions_end),
+			(call_script, "script_healing_routine", ":npc"),
+		(try_end),
+		(call_script, "script_healing_routine", "trp_player"),
+	(try_end),
+]),   
+
 ##############################################
 #trigger reserved for future save game compartibility
-(999,[]),   
+
 #trigger reserved for future save game compartibility
 (999,[]),   
 #trigger reserved for future save game compartibility
