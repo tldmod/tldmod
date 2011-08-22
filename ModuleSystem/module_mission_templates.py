@@ -41,7 +41,7 @@ tld_common_battle_scripts = [
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
-	custom_lone_wargs_are_aggressive,custom_lone_wargs_are_aggressive2,#custom_lone_wargs_special_attack, # WIP, needs more work (mtarini)
+	custom_warg_sounds,custom_lone_wargs_are_aggressive,#custom_lone_wargs_special_attack, # WIP, needs more work (mtarini)
 	tld_player_cant_ride,
 	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,

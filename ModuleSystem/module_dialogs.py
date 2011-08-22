@@ -639,7 +639,7 @@ dialogs = [
 	(else_try),
 		(str_store_string, s12, "@I don't have serious injuries, thank you"),
 	(try_end)],
-"Here is a description of my health in short: {s12}", "do_member_trade",[]],
+"Here is a description of my health in short (more will be added later):^{s12}", "do_member_trade",[]],
 
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),

@@ -824,8 +824,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	
 	(try_begin), # when wargs in battle
 		(is_between, ":agent_item", item_warg_begin , item_warg_end),
-		# keep warg count up to date...
-		(assign,"$wargs_in_battle",1),
+		(val_add,"$wargs_in_battle",1),# keep warg count up to date...
 	(try_end),
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
@@ -835,12 +834,12 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(agent_set_position, ":agent", pos4),
 		(try_begin),
 			(neq,":agent_item",-1), 
-			# fisrt spawn:  MOUTH set hit points
+			# fisrt spawn:  MOUNT set hit points
 			(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
 			(agent_set_hit_points, ":agent", reg12, 1),
 			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 		(else_try), 
-			# second spawn: GHOST RIDER: set side
+			# second spawn: GHOST RIDER set side
 			(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
 			(agent_set_team, ":agent", reg12), # this was set just above
 			#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
@@ -853,8 +852,8 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	
 	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is
 	(try_begin),(neq,":horse",-1), 
-		(agent_get_team,  reg25, ":agent"),
-		(agent_set_slot, ":horse", slot_agent_mount_side, reg25), 
+		(agent_get_team,  reg12, ":agent"),
+		(agent_set_slot, ":horse", slot_agent_mount_side, reg12), 
 	(try_end),
 	
 	(try_begin),(is_between, ":agent_trp",companions_begin,companions_end), # track companion injuries in battle
@@ -1040,11 +1039,11 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
     (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
 	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
-	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk          3 = dwarf
+	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
 	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
-	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),(assign,"$wargs_in_battle",1),
+	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
 	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
 	(try_end),
 #	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
@@ -1405,28 +1404,39 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
-custom_lone_wargs_are_aggressive = (0.5,0,0, [],[
+
+custom_warg_sounds = (1.65,0,0,  [(gt,"$wargs_in_battle",0)],
+  [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
+    (try_for_agents, ":warg"),
+		(neg|agent_is_human, ":warg"),
+		(agent_is_alive, ":warg"),
+		(agent_get_item_id, ":warg_item", ":warg"),
+		(is_between, ":warg_item", item_warg_begin ,item_warg_end),
+		(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
+		(store_random_in_range, ":random", 1, 101), (le, ":random", 7),  # 7% of time
+		#(display_message,"@warg says: 'woof, woof!'"),
+		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
+	(try_end),
+])
+
+custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
 	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
         (agent_is_alive, ":ghost"), 
 		(agent_is_human,":ghost"),
 		(agent_get_troop_id,":trp_ghost",":ghost"),
 		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
 		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
+		(store_random_in_range, ":random", 0,100),(try_begin),(lt,":random",7),(agent_play_sound, ":ghost", "snd_warg_lone_woof"),(try_end), # should be brutal GRRR of attacking warg here
 		(agent_get_horse,":horse",":ghost"),
 		(eq,":horse",-1),
 		(call_script, "script_remove_agent", ":ghost"),
-	(try_end)])
-custom_lone_wargs_are_aggressive2 = (0.51,0,0, [(gt,"$wargs_in_battle",0)],[  # wargs without rider respawn (need to make it separate to have condition
-    (assign, "$wargs_in_battle", 0), # recount
+	(try_end),
+
 	(try_for_agents,":warg"), 
         (agent_is_alive, ":warg"),
 		(neg|agent_is_human,":warg"),
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
-		(assign, "$wargs_in_battle", 1), #  wargs_in_battle
-		# make warg sounds while we are at it
-		(store_random_in_range,reg12,0,100),(try_begin),(le,reg12,7),(agent_play_sound,":warg","snd_warg_lone_woof"),(try_end),
-		
 		(agent_get_rider,":rider",":warg"),
 		(eq,":rider",-1), #(display_message,"@warg without rider found!"),
 		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
@@ -1441,9 +1451,10 @@ custom_lone_wargs_are_aggressive2 = (0.51,0,0, [(gt,"$wargs_in_battle",0)],[  # 
 		(store_current_scene, ":cur_scene"),
 		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-		(str_store_troop_name, s12, ":warg_ghost_trp"), 
+		#(str_store_troop_name, s12, ":warg_ghost_trp"), 
 		#(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
-	(try_end)])
+	(try_end),
+	(set_show_messages,1)])
 
 custom_track_companion_casualties = (0.5,0,0, [],[ 
 	(try_for_range, ":npc",companions_begin,companions_end),

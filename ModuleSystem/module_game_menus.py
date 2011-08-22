@@ -100,7 +100,7 @@ game_menus = [
 	]
 ),
 #This needs to be the second window!!!
-( "start_phase_2",mnf_disable_all_keys,
+( "start_phase_2",mnf_disable_all_keys|mnf_scale_picture,
     "^^^^^^Middle Earth. A shadow is growing in the East, and dark things come forth that have long been hidden.\
  The free peoples prapare for war, the like of which has not been seen for an age. Men, Elves, Dwarves and Orcs; all will\
  play their part. What part, however, remains to be seen... ",
@@ -219,13 +219,14 @@ game_menus = [
     ("go_back",[],".                 Go back",[(change_screen_quit)])]
 ),
 # This needs to be the fourth window!!!
-( "tutorial",mnf_disable_all_keys,
+( "tutorial",mnf_disable_all_keys|mnf_scale_picture,
     "TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
     "none",
-    [],[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
+    [(set_background_mesh, "mesh_ui_default_menu_window")],
+	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
 ),
 # This needs to be the fifth window!!!  
-("reports",0,
+("reports",mnf_scale_picture,
    "{s9}", "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
 	# Player Reward System (mtarini)
@@ -1106,7 +1107,7 @@ game_menus = [
     [(change_screen_return, 0)],[]
 ),
 
-("morale_report",0,
+("morale_report",mnf_scale_picture,
    "{s1}",
    "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -1171,7 +1172,7 @@ game_menus = [
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-("faction_orders",0,
+("faction_orders",mnf_scale_picture,
    "{s9}", "none",
    [ 
      (set_background_mesh, "mesh_ui_default_menu_window"),
@@ -1260,7 +1261,7 @@ game_menus = [
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-("character_report",0,
+("character_report",mnf_scale_picture,
    "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
    "none",
@@ -1420,8 +1421,8 @@ game_menus = [
 	]),
      ("camp_action"     ,[],"More options."    ,[(jump_to_menu, "mnu_camp_action")]),
 
-#TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
-("camp_wait_here",[],"Camp here for some time.",
+  #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
+  ("camp_wait_here",[],"Camp here for some time.",
       [
 			(store_random_in_range,":r",0,10),#random number
 			(try_begin),
@@ -1472,8 +1473,7 @@ game_menus = [
 				(rest_for_hours_interactive, 24 * 365, 5, 1), #rest while attackable
 				(change_screen_return),
 			(try_end), #end trying
-		 ]
-		),
+	]),
 	
 	
 	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
@@ -2747,12 +2747,10 @@ game_menus = [
     [("continue",[],"Continue...",[(leave_encounter),(change_screen_return)])],
 ),
 # what is this? a cut and paste version of defeat? plase merge code rather than cutting and pasting. --- mtarini
-(   "assasins_attack_player_defeated",mnf_scale_picture,
+( "assasins_attack_player_defeated",0,
     "You should not be reading this...",
     "none",
-    [
-		
-		# (troop_get_type, ":is_female", "trp_player"),
+    [	# (troop_get_type, ":is_female", "trp_player"),
 		# (try_begin),
 			# (eq, ":is_female", 1),
 			# (set_background_mesh, "mesh_pic_prisoner_fem"),
@@ -3629,7 +3627,7 @@ game_menus = [
 		]),
     ]
 ),
-( "encounter_retreat_confirm",0,
+( "encounter_retreat_confirm",mnf_scale_picture,
     "^^^^^As the party member with the highest tactics skill,\
    ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,\
    but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.",
@@ -3675,7 +3673,7 @@ game_menus = [
 ( "encounter_retreat",0,
     "^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.",
     "none",
-    [(set_background_mesh, "mesh_ui_default_menu_window"),],
+    [],
     [("continue",[],"Continue...",[
 ###Troop commentary changes begin
           (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
@@ -3687,19 +3685,18 @@ game_menus = [
               (call_script, "script_add_log_entry", logent_player_retreated_from_lord_cowardly, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
 ###Troop commentary changes end          
-
           (leave_encounter),(change_screen_return)]),
     ]
 ),
 ( "order_attack_begin",0,
-    "Your troops prepare to attack the enemy.",
+    "^^^^^^__________Your troops prepare to attack the enemy.",
     "none",
-    [(set_background_mesh, "mesh_ui_default_menu_window"),],
+    [],
     [ ("order_attack_begin",[],"Order the attack to begin.", [(assign, "$g_engaged_enemy", 1),(jump_to_menu,"mnu_order_attack_2")]),
       ("call_back",[],"Call them back.",[(jump_to_menu,"mnu_simple_encounter")]),
     ]
 ),
-( "order_attack_2",mnf_disable_all_keys,
+( "order_attack_2",mnf_disable_all_keys|mnf_scale_picture,
     "^^^^^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -3860,7 +3857,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)])]
 ),
 
-(   "battle_debrief",mnf_disable_all_keys,
+(   "battle_debrief",mnf_disable_all_keys|mnf_scale_picture,
     "{s40}{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -4334,7 +4331,7 @@ game_menus = [
     [("continue",[],"Continue...",[]),]
 ),
 ( "enemy_slipped_away",0,
-    "^^^^^^^^{s17}",
+    "^^^^^{s17}",
     "none",
     [],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
@@ -4416,7 +4413,7 @@ game_menus = [
 ),
 
 ( "permanent_damage",mnf_disable_all_keys,
-    "{s0}",
+    "^^^^^{s0}",
     "none",
     [ (assign, ":end_cond", 1),
       (try_for_range, ":unused", 0, ":end_cond"),
@@ -4528,8 +4525,8 @@ game_menus = [
       ("pre_join_leave",[],"Don't get involved.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-( "join_battle",mnf_enable_hot_keys,
-    "^^^^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
+( "join_battle",mnf_enable_hot_keys|mnf_scale_picture,
+    "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	
@@ -4660,8 +4657,8 @@ game_menus = [
 
     ]
 ),
-( "join_order_attack",mnf_disable_all_keys,
-    "^^^^^{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
+( "join_order_attack",mnf_disable_all_keys|mnf_scale_picture,
+    "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
 	    (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
@@ -4739,7 +4736,7 @@ game_menus = [
 ),
 
 ( "join_siege_outside",mnf_scale_picture,
-    "{s1} has come under siege by {s2}.",
+    "^^^^^^{s1} has come under siege by {s2}.",
     "none",
     code_to_set_city_background + [ 
 	    (str_store_party_name, s1, "$g_encountered_party"),
@@ -4764,7 +4761,7 @@ game_menus = [
       ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-( "cut_siege_without_fight",0,
+( "cut_siege_without_fight",mnf_scale_picture,
     "The besiegers let you approach the gates without challenge.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),],
@@ -4778,7 +4775,7 @@ game_menus = [
                                  (try_end)]),
       ]
 ),
-( "besiegers_camp_with_allies",mnf_enable_hot_keys,
+( "besiegers_camp_with_allies",mnf_enable_hot_keys|mnf_scale_picture,
     "{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,\
     where you and your men are welcomed.",
     "none",
@@ -4901,7 +4898,7 @@ game_menus = [
 ),
 
 # dungeon crawl: way out of moira
-( "moria_must_escape",city_menu_color,
+( "moria_must_escape",city_menu_color|mnf_scale_picture,
     "^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
@@ -4916,7 +4913,7 @@ game_menus = [
 ),
 
  
-( "castle_outside",city_menu_color,
+( "castle_outside",city_menu_color|mnf_scale_picture,
     "You are outside {s2}.{s11} {s3} {s4}",
     "none",
     code_to_set_city_background + [
@@ -5246,8 +5243,7 @@ game_menus = [
 ("castle_besiege",mnf_enable_hot_keys|mnf_scale_picture,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
-    [   
-        (assign, "$g_siege_force_wait", 0),
+    code_to_set_city_background + [   (assign, "$g_siege_force_wait", 0),
         (try_begin),
           (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
           (party_set_slot, "$g_encountered_party", slot_center_is_besieged_by, "p_main_party"),
@@ -5478,7 +5474,7 @@ game_menus = [
     ]
 ),
 ( "siege_attack_meets_sally",0,
-    "The defenders sally out to meet your assault.",    "none",    [],
+    "^^^^^^The defenders sally out to meet your assault.",    "none",    [],
     [("continue",[], "Continue...", [(jump_to_menu, "mnu_battle_debrief"),(change_screen_mission),]),]
 ),
 ("castle_besiege_inner_battle",mnf_scale_picture,
@@ -5822,7 +5818,7 @@ game_menus = [
     ],
 ),
  
-( "siege_started_defender",mnf_enable_hot_keys,
+( "siege_started_defender",mnf_scale_picture|mnf_enable_hot_keys,
     "{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...",
     "none",
     code_to_set_city_background + [
@@ -5977,7 +5973,7 @@ game_menus = [
 ##                     (jump_to_menu,"mnu_under_siege_attacked_continue")]),
     ]
 ),
-( "siege_join_defense",mnf_disable_all_keys,
+( "siege_join_defense",mnf_scale_picture|mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
     code_to_set_city_background + [
@@ -6034,7 +6030,7 @@ game_menus = [
 ),
 
 ( "village_hunt_down_fugitive_defeated",0,
-    "A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark.\
+    "^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark.\
  Time passes. When you open your eyes again you find yourself battered and bloody,\
  but luckily none of the wounds appear to be lethal.",
     "none",
@@ -6043,7 +6039,7 @@ game_menus = [
 ),
 
 ( "town_bandits_failed",mnf_disable_all_keys,
-    "{s4} {s5}",
+    "^^^^^{s4} {s5}",
     "none",
     [
 #      (call_script, "script_loot_player_items", 0),
@@ -6068,7 +6064,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
 ( "town_bandits_succeeded",mnf_disable_all_keys,
-    "The goblins fall before you as wheat to a scythe! Soon you stand alone\
+    "^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone\
  while most of your attackers lie unconscious, dead or dying.\
  Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes.\
  Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.",
@@ -6091,10 +6087,9 @@ game_menus = [
 ),
 
 ( "town_brawl_lost",mnf_disable_all_keys,
-    "You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.",
+    "^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.",
     "none",
-    [
-      (store_troop_gold, ":total_gold", "trp_player"),
+    [ (store_troop_gold, ":total_gold", "trp_player"),
       (store_div, ":gold_loss", ":total_gold", 30),
       (store_random_in_range, ":random_loss", 40, 100),
       (val_add, ":gold_loss", ":random_loss"),
@@ -6104,10 +6099,9 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
 ( "town_brawl_won",mnf_disable_all_keys,
-    "You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.",
+    "^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.",
     "none",
-    [
-      (store_random_in_range, ":random_gold", 200, 500),
+    [ (store_random_in_range, ":random_gold", 200, 500),
       (call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
@@ -6120,7 +6114,7 @@ game_menus = [
     [],
 ),
 
-( "town",mnf_enable_hot_keys|city_menu_color,
+( "town",mnf_scale_picture|mnf_enable_hot_keys|city_menu_color,
 	"You arrived in {s60}.{s12}{s13}",
     "none",
     code_to_set_city_background + [   
@@ -6575,7 +6569,7 @@ game_menus = [
     ]
 ),
 
-( "center_reports",city_menu_color,
+( "center_reports",mnf_scale_picture|city_menu_color,
     "Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days",
     "none",
     code_to_set_city_background + [
@@ -6602,19 +6596,13 @@ game_menus = [
     ]
 ),
 
-( "sneak_into_town_suceeded",city_menu_color,
+( "sneak_into_town_suceeded",mnf_scale_picture|city_menu_color,
     "Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.",
     "none",
      code_to_set_city_background +  [	],
-    [
-      ("continue",[],"Continue...",
-       [
-           (assign, "$sneaked_into_town",1),
-           (jump_to_menu,"mnu_town"),
-        ]),
-    ]
+    [("continue",[],"Continue...",[(assign, "$sneaked_into_town",1),(jump_to_menu,"mnu_town")])]
 ),
-(  "sneak_into_town_caught",city_menu_color,
+(  "sneak_into_town_caught",mnf_scale_picture|city_menu_color,
     "As you try to sneak in, one of the guards recognizes you and raises the alarm!\
  You must flee back through the gates before all the guards in the town come down on you!",
     "none",
@@ -6622,10 +6610,8 @@ game_menus = [
 	 (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
      #(assign,"$auto_menu","mnu_tld_player_defeated"),
     ],
-    [
-      ("sneak_caught_fight",[],"Try to fight your way out!",
-       [
-           (assign,"$all_doors_locked",1),
+    [("sneak_caught_fight",[],"Try to fight your way out!",
+       [   (assign,"$all_doors_locked",1),
            (party_get_slot, ":sneak_scene", "$current_town",slot_town_center), # slot_town_gate),
            (modify_visitors_at_site,":sneak_scene"),(reset_visitors),
            (set_visitor,0,"trp_player"),
@@ -6658,24 +6644,16 @@ game_menus = [
            (change_screen_mission),
         ]),
       ("sneak_caught_surrender",[],"Surrender.",
-       [
-	       (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
+       [   (assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
            (jump_to_menu,"mnu_tld_player_defeated"),
         ]),
     ]
 ),
-( "sneak_into_town_caught_dispersed_guards",city_menu_color,
+( "sneak_into_town_caught_dispersed_guards",mnf_scale_picture|city_menu_color,
     "You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.",
     "none",
     code_to_set_city_background + [],
-     [
-      ("continue",[],"Continue...",
-       [
-           (assign, "$sneaked_into_town",1),
-           #(assign, "$town_entered", 1),
-           (jump_to_menu,"mnu_town"),
-        ]),
-    ]
+     [("continue",[],"Continue...",[(assign, "$sneaked_into_town",1),(jump_to_menu,"mnu_town")])]
 ),
 ( "sneak_into_town_caught_ran_away",0,
     "You make your way back through the gates and quickly retreat to the safety out of town.",
@@ -6691,18 +6669,16 @@ game_menus = [
 ),
 
 ("auto_training_ground_trainer", 0, "stub", "none",
-    [
-         (jump_to_menu, "mnu_town"),
-         (assign, "$talk_context", tc_town_talk),
-    
-         (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
-         (set_jump_mission, "mt_training_ground_trainer_talk"),
-         (modify_visitors_at_site, ":training_scene"),
-         (reset_visitors),
-         (set_visitor, 0, "trp_player"),
-         (jump_to_scene, ":training_scene"),
-         (change_screen_mission),
-         (music_set_situation, 0),
+	[	(jump_to_menu, "mnu_town"),
+		(assign, "$talk_context", tc_town_talk),
+		(party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+		(set_jump_mission, "mt_training_ground_trainer_talk"),
+		(modify_visitors_at_site, ":training_scene"),
+		(reset_visitors),
+		(set_visitor, 0, "trp_player"),
+		(jump_to_scene, ":training_scene"),
+		(change_screen_mission),
+		(music_set_situation, 0),
     ],
     []
 ),
@@ -6712,7 +6688,7 @@ game_menus = [
 
 # player death scenario in TLD: no capture, only 
 ( "tld_player_defeated",0,
-     "Suddenly a shattering pain explodes in the back of your head! You shiver, as all the world goes black around you...^^^Is this your end?",
+     "^^^^^Suddenly a shattering pain explodes in the back of your head! \ You shiver, as all the world goes black around you...^Is this your end?",
      "none",[
 	 (store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
 	 (val_add, "$number_of_player_deaths", 1),
@@ -6728,33 +6704,32 @@ game_menus = [
 ),
 ("recover_after_death_fangorn",0,
     "You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?",
-	"none",[
+	"none",[(try_begin),
+				(eq, "$g_battle_result", 1),
+				(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
+			(else_try),
+				(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
+				(jump_to_menu, "mnu_tld_player_defeated"),
+			(try_end),
+	 ],[
+	 ("ok_",[],"Continue...",[
+		(troop_set_health,"trp_player",0),
 		(try_begin),
-			(eq, "$g_battle_result", 1),
-			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
-		(else_try),
-			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
-			(jump_to_menu, "mnu_tld_player_defeated"),
+			(check_quest_active, "qst_investigate_fangorn"),
+			(neg|check_quest_succeeded, "qst_investigate_fangorn"),
+			(neg|check_quest_failed, "qst_investigate_fangorn"),
+			(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
 		(try_end),
-	 ],[("ok_",[],"Continue...",[
-	(troop_set_health,"trp_player",0),
-	(try_begin),
-        (check_quest_active, "qst_investigate_fangorn"),
-		(neg|check_quest_succeeded, "qst_investigate_fangorn"),
-        (neg|check_quest_failed, "qst_investigate_fangorn"),
-		(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
-    (try_end),
-	(change_screen_map),
-	] ),]
+		(change_screen_map)])]
 ),
-( "recover_after_death_moria",city_menu_color,
-    "You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
+( "recover_after_death_moria",mnf_scale_picture|city_menu_color,
+    "^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
 	]
 ),
-( "recover_after_death_default",0,
-     "You regain your conciousness. You are in the spot you fell.\
+( "recover_after_death_default",mnf_scale_picture,
+     "^^^^^You regain your conciousness. You are in the spot you fell.\
   The enemies must have taken you up for dead and left you there.\
   However, it seems that none of your wound were lethal,\
   and altough you feel awful, you find out that can still walk.\
@@ -6763,21 +6738,16 @@ game_menus = [
 	 [(set_background_mesh, "mesh_ui_default_menu_window")],[      
 	 ("continue",[],"Continue...",[(change_screen_return)])]
 ),
-( "recover_after_death_town",0,
-     "You regain your conciousness and find yourself near the town boundary. \
+( "recover_after_death_town",mnf_scale_picture,
+     "^^^^You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
   It seems that none of your wound were lethal,\
   and altough you feel awful, you find out that can still walk.",
-     "none",code_to_set_city_background,[      
-	 ("continue",[],"Continue...",
-        [
-		    (change_screen_map),
-            (jump_to_menu,"mnu_castle_outside"),
-         ]),
-	 ]
+     "none",code_to_set_city_background,
+	 [("continue",[],"Continue...",[(change_screen_map),(jump_to_menu,"mnu_castle_outside")])]
 ),
-( "recover_after_death_town_alone",0,
+( "recover_after_death_town_alone",mnf_scale_picture,
      "You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
@@ -6793,7 +6763,7 @@ game_menus = [
 	 ]
 ),
 
-(   "notification_center_under_siege",0,
+( "notification_center_under_siege",mnf_scale_picture,
     "{s1} has been besieged by {s2} of {s3}!",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -6814,11 +6784,10 @@ game_menus = [
      ]
 ),  
 ( "notification_one_side_left",0,
-    "The War of the Ring is over!^^^^^^^The {s1} have defeated all their enemies and stand victorious!",
+    "^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!",
     "none",
     # $g_notification_menu_var1 - faction_side_*
     [ (assign, ":side", "$g_notification_menu_var1"),
-      
       (try_begin),
         (eq, ":side", faction_side_good),
         (assign, ":faction", "fac_gondor"),
@@ -6845,7 +6814,7 @@ game_menus = [
      ]
 ),
 ( "notification_total_defeat",0,
-    "The War of the Ring is over for you!^^^^^^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
+    "^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
     "none",
     # $g_notification_menu_var1 - faction_side_*
     [ (assign, ":side", "$g_notification_menu_var1"),
@@ -6876,7 +6845,7 @@ game_menus = [
      ]
 ),
 ( "notification_your_faction_collapsed",0,
-    "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
+    "^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
     "none",
     [ (str_store_faction_name, s11, "$players_kingdom"),
       (set_fixed_point_multiplier, 100),
@@ -7004,7 +6973,7 @@ game_menus = [
 # ),
 
 ( "notification_faction_defeated",0,
-    "{s1} Defeated!^^^^^^^{s1} is no more, defeated by the forces of {s13}!",
+    "^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!",
     "none",
     [ (str_store_faction_name, s1, "$g_notification_menu_var1"),
     
@@ -7048,7 +7017,7 @@ game_menus = [
      ]
 ),
 
-( "ruins",0,
+( "ruins",mnf_scale_picture,
     "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7061,16 +7030,14 @@ game_menus = [
        ]),
     ]
 ),
-( "legendary_place",0,
+( "legendary_place",mnf_scale_picture,
     "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
-    [
-     ("explore",[],"Explore this place.",
-       [
-        (set_jump_mission, "mt_legendary_place_visit"),
+    [("explore",[],"Explore this place.",
+       [(set_jump_mission, "mt_legendary_place_visit"),
         (try_begin),
           (eq, "$g_encountered_party", "p_legend_amonhen"),
           (assign, ":lp_scene", "scn_amon_hen"),
@@ -7091,10 +7058,7 @@ game_menus = [
         (jump_to_scene,":lp_scene"),
         (change_screen_mission),
        ]),
-     ("continue",[],"Leave.",
-       [
-         (change_screen_return),
-       ]),
+     ("continue",[],"Leave.",[(change_screen_return)]),
     ]
 ),
 
@@ -7193,7 +7157,7 @@ game_menus = [
 
 ###################### starting quest, GA ##############################  
 ("starting_quest_good",0,
-   "^^^^^^^^ You spot a small caravan under attack from a band of orcs. What will you do?",
+   "^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?",
    "none",[],
    [("help",[], "Help the strangers!",
      [(modify_visitors_at_site,"scn_starting_quest"),
@@ -7266,7 +7230,7 @@ game_menus = [
 ),
 
 ######################### TLD808 menus ##########################
-( "ancient_ruins", 0,
+( "ancient_ruins",mnf_scale_picture,
   "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak_into_the_sorcerer's_lair under the night's cover.",
@@ -7349,7 +7313,7 @@ game_menus = [
 							(call_script, "script_infiltration_mission_final_casualty_tabulation")]),
 	]
 ),
-( "pick_troops", 0, 
+( "pick_troops", mnf_scale_picture, 
   "Whom would you take with you into the stealth mission? \
    Currently you picked {reg0} companions. You can take up to 10 troops with you", "none",
    [(set_background_mesh, "mesh_ui_default_menu_window")], [ 
@@ -7416,7 +7380,7 @@ game_menus = [
 					(try_end),
 					(jump_to_menu, "mnu_ancient_ruins")]),  
 ]),  
-( "burial_mound", 0, 
+( "burial_mound", mnf_scale_picture, 
   "You_approach_the_burial_mound_of_{s3}_of_{s2}._It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(store_encountered_party, ":mound"),
@@ -7449,7 +7413,7 @@ game_menus = [
    "Desecrate_the_site",  [(jump_to_menu, "mnu_burial_mound_despoil")]),  
   ("leave",        [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-( "burial_mound_respects", 0, 
+( "burial_mound_respects", mnf_scale_picture, 
   "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.\
   There is nothing left to be done here.", "none",
 					[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7463,7 +7427,7 @@ game_menus = [
 					(try_end)],[
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-( "burial_mound_oath", 0, 
+( "burial_mound_oath", mnf_scale_picture, 
   "You loudly swear an oath of vengeance for the death of {s1}.\
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7481,7 +7445,7 @@ game_menus = [
 	(start_quest, "qst_oath_of_vengeance")],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
-( "burial_mound_despoil", 0, 
+( "burial_mound_despoil", mnf_scale_picture, 
   "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.\
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7494,7 +7458,7 @@ game_menus = [
 	 (disable_party, ":mound")],[
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
-( "funeral_pyre", 0, 
+( "funeral_pyre", mnf_scale_picture, 
   "You approach the charred remnants of the funeral pyre of {s3} of {s2}.\
   Here his corpse was ceremoniously burned by the evil men\
   who served as his personal guard. Nothing of value remains.", "none", 
@@ -7505,7 +7469,7 @@ game_menus = [
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
  ]
 ),
-( "town_ruins",mnf_enable_hot_keys|city_menu_color,
+( "town_ruins",mnf_scale_picture|mnf_enable_hot_keys|city_menu_color,
 	"When you approach, you see that {s1} is destroyed. Only smoldering ruins remain.",
     "none",
 	code_to_set_city_background + [
