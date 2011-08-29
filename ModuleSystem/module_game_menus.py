@@ -100,12 +100,10 @@ game_menus = [
 	]
 ),
 #This needs to be the second window!!!
-( "start_phase_2",mnf_disable_all_keys|mnf_scale_picture,
-    "^^^^^^Middle Earth. A shadow is growing in the East, and dark things come forth that have long been hidden.\
- The free peoples prapare for war, the like of which has not been seen for an age. Men, Elves, Dwarves and Orcs; all will\
- play their part. What part, however, remains to be seen... ",
+( "start_phase_2",mnf_disable_all_keys,
+    "^^^^^______________Middle Earth. A shadow is growing in the East, ^______________and dark things come forth that have long been hidden. ^______________The free people prapare for war, the like of which has not been seen for an age. ^______________Men, Elves, Dwarves and Orcs; all will play their part. ^^______________What part, however, remains to be seen... ",
     "none",
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
+   [#(set_background_mesh, "mesh_ui_default_menu_window"),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
 		(set_show_messages,0),
 		#(call_script,"script_TLD_troop_banner_slot_init"),
@@ -139,7 +137,7 @@ game_menus = [
     (call_script, "script_update_troop_notes", "trp_player"), #MV fixes
     (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
-    [ ("continue",[],"Go forth upon you chosen path...",
+    [ ("continue",[],"__________Go forth upon you chosen path...",
        [(troop_add_item, "trp_player","itm_dried_meat",0),#  free food for everyone
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
@@ -190,45 +188,45 @@ game_menus = [
       (troop_set_slot, "trp_banner_background_color_array", 130, 0xFF394608),
 #	  (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
       ],
-   [("custom_battle_scenario_1",[], "                       Skirmish, Gondor factions vs Harad",
+   [("custom_battle_scenario_1" ,[], "___________Skirmish, Gondor factions vs Harad_____.",
 		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_12",[],"                           Choose factions for battle",
+	("custom_battle_scenario_12",[],"____________Choose factions for battle_____________.",
 		[(assign, "$g_custom_battle_scenario",16),(jump_to_menu, "mnu_custom_battle_choose_faction1"),]),
-	("custom_battle_scenario_3",[],"         Skirmish, Elves vs Bandits",
+	("custom_battle_scenario_3" ,[],"____________Skirmish, Elves vs Bandits_____________.",
 		[(assign, "$g_custom_battle_scenario", 2),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_4",[],"                             Helms Deep Defense, Rohan vs Isengard",
+	("custom_battle_scenario_4" ,[],"____________Helms Deep Defense, Rohan vs Isengard__.",
 		[(assign, "$g_custom_battle_scenario", 3),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_5",[],"                  Skirmish, North factions vs Rhun",
+	("custom_battle_scenario_5" ,[],"____________Skirmish, North factions vs Rhun_______.",
 		[(assign, "$g_custom_battle_scenario", 4),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_6",[],"               Siege Attack, Orcs vs Dwarves",
+	("custom_battle_scenario_6" ,[],"____________Siege Attack, Orcs vs Dwarves__________.",
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_7",[],"            Ambush, Orcs vs Mirkwood",
+	("custom_battle_scenario_7" ,[],"____________Ambush, Orcs vs Mirkwood_______________.",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_10",[],"          Scenery test battle",
+	("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_11",[],"          Test Troll Battle",
+	("custom_battle_scenario_11",[],"____________Test Troll Battle______________________.",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("custom_battle_scenario_11",[],"          Test Warg Battle",
+	("custom_battle_scenario_11",[],"____________Test Warg Battle_______________________.",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
-	("choose_scene",[],"** Scene Chooser **",
+	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
-    ("go_back",[],".                 Go back",[(change_screen_quit)])]
+    ("go_back"                  ,[],"______________________________Go back______________.",[(change_screen_quit)])]
 ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys|mnf_scale_picture,
-    "TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
+    "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window")],
 	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
 ),
 # This needs to be the fifth window!!!  
-("reports",mnf_scale_picture,
-   "{s9}", "none",
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
+("reports",0,
+   "^^^{s9}", "none",
+   [#(set_background_mesh, "mesh_ui_default_menu_window"),
 	# Player Reward System (mtarini)
 	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
 	(faction_get_slot, reg10, "$players_kingdom", slot_faction_rank),
@@ -865,7 +863,7 @@ game_menus = [
 		
 		# determine player and enemy faction
 		(try_begin),(gt,"$cbadvantage",0),(assign,":ally_faction","$faction_good"),(assign,":enemy_faction","$faction_evil"),
-        (else_try) ,                    (assign,":ally_faction","$faction_evil"),(assign,":enemy_faction","$faction_good"),(val_mul,"$cbadvantage",-1),
+         (else_try),                      (assign,":ally_faction","$faction_evil"),(assign,":enemy_faction","$faction_good"),(val_mul,"$cbadvantage",-1),
         (try_end),
 
 		#spawn all ally and enemy faction troops 
@@ -1107,26 +1105,20 @@ game_menus = [
     [(change_screen_return, 0)],[]
 ),
 
-("morale_report",mnf_scale_picture,
-   "{s1}",
+("morale_report",0,
+   "^^^^^{s1}",
    "none",
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
+   [#(set_background_mesh, "mesh_ui_default_menu_window"),
     (call_script, "script_get_player_party_morale_values"),
     (assign, ":target_morale", reg0),
     (assign, reg1, "$g_player_party_morale_modifier_party_size"),
-    (try_begin),
-      (gt, reg1, 0),
-      (str_store_string, s2, "@ -"),
-    (else_try),
-      (str_store_string, s2, "@ "),
+    (try_begin),(gt, reg1, 0),(str_store_string, s2, "@ -"),
+     (else_try),              (str_store_string, s2, "@ "),
     (try_end),
 
     (assign, reg2, "$g_player_party_morale_modifier_leadership"),
-    (try_begin),
-      (gt, reg2, 0),
-      (str_store_string, s3, "@ +"),
-    (else_try),
-      (str_store_string, s3, "@ "),
+    (try_begin),(gt, reg2, 0),(str_store_string, s3, "@ +"),
+     (else_try),              (str_store_string, s3, "@ "),
     (try_end),
 
     (try_begin),
@@ -1137,11 +1129,8 @@ game_menus = [
       (str_store_string, s5, "@ "),
     (try_end),
     (assign, reg3, "$g_player_party_morale_modifier_food"),
-    (try_begin),
-      (gt, reg3, 0),
-      (str_store_string, s4, "@ +"),
-    (else_try),
-      (str_store_string, s4, "@ "),
+    (try_begin),(gt, reg3, 0),(str_store_string, s4, "@ +"),
+     (else_try),              (str_store_string, s4, "@ "),
     (try_end),
     
     # TLD morale-boosting items (non-cumulative)
@@ -1161,16 +1150,12 @@ game_menus = [
 
     (party_get_morale, reg5, "p_main_party"),
     (store_sub, reg4, reg5, ":target_morale"),
-    (try_begin),
-      (gt, reg4, 0),
-      (str_store_string, s7, "@ +"),
-    (else_try),
-      (str_store_string, s7, "@ "),
+    (try_begin),(gt, reg4, 0),(str_store_string, s7, "@ +"),
+     (else_try),              (str_store_string, s7, "@ "),
     (try_end),
     (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
     ],
-    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),
-    ]
+    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])]
 ),
 ("faction_orders",mnf_scale_picture,
    "{s9}", "none",
@@ -1261,11 +1246,11 @@ game_menus = [
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
-("character_report",mnf_scale_picture,
+("character_report",0,
    "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
    "none",
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
+   [#(set_background_mesh, "mesh_ui_default_menu_window"),
 
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
@@ -1278,9 +1263,8 @@ game_menus = [
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
 ),
 ("upkeep_report", 0,
- "{s12}", "none",[
+ "{s12}", "none",[ #(set_background_mesh, "mesh_ui_default_menu_window"),
     (assign, reg5, 0),
-    #(set_background_mesh, "mesh_ui_default_menu_window"),
     (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
       (neq, ":faction_no", "fac_player_supporters_faction"),
   	  (call_script, "script_compute_wage_per_faction", ":faction_no"),
@@ -1302,10 +1286,10 @@ game_menus = [
 	  (str_store_string, s12, "@No upkeep costs"),
     (try_end),
    ],
-   [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
+   [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])]
 ),
 ("party_size_report",0,
-   "^^^^{s1}", "none",
+   "^^^^^{s1}", "none",
    [(call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
 
@@ -1315,23 +1299,14 @@ game_menus = [
 
     # (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
     # (val_div, ":renown", 25),
-    (try_begin),
-      (gt, ":leadership", 0),
-      (str_store_string, s2, "@ +"),
-    (else_try),
-      (str_store_string, s2, "@ "),
+    (try_begin),(gt, ":leadership", 0),(str_store_string, s2, "@ +"),
+     (else_try),                       (str_store_string, s2, "@ "),
     (try_end),
-    (try_begin),
-      (gt, ":charisma", 0),
-      (str_store_string, s3, "@ +"),
-    (else_try),
-      (str_store_string, s3, "@ "),
+    (try_begin),(gt, ":charisma", 0),(str_store_string, s3, "@ +"),
+     (else_try),                     (str_store_string, s3, "@ "),
     (try_end),
-    # (try_begin),
-      # (gt, ":renown", 0),
-      # (str_store_string, s4, "@ +"),
-    # (else_try),
-      # (str_store_string, s4, "@ "),
+    # (try_begin),(gt, ":renown", 0),(str_store_string, s4, "@ +"),
+    #  (else_try),                   (str_store_string, s4, "@ "),
     # (try_end),
     (assign, reg5, ":party_size_limit"),
     (assign, reg1, ":leadership"),
@@ -1352,12 +1327,11 @@ game_menus = [
       (call_script, "script_faction_strength_string", ":cur_kingdom"),
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
-      (str_store_string, s2, "@{s2}^{s4}: {reg1} ({s23})"),
+      (str_store_string, s2, "@{s2}^_________{s4}: {reg1} ({s23})"),
     (try_end),
     (str_store_string, s1, "@Faction strengths report:^{s2}"),
     ],
-    [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports"),]),
-    ]
+    [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports")])]
 ),
 ("faction_relations_report",0,
    "{s1}",
@@ -1397,34 +1371,28 @@ game_menus = [
 ),
 
 ("camp",0,
-   "You are in {s1}.^^What do you want to do?",
+   "^^^^^^You are in {s1}.^^What do you want to do?",
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
-	
 	  (call_script,"script_maybe_relocate_player_from_z0"),
 	  (call_script, "script_get_region_of_party", "p_main_party"),(assign, "$current_player_region", reg1),
 	  (party_get_current_terrain, "$current_player_terrain","p_main_party"),
 	  (call_script, "script_get_region_of_party", "p_main_party"),
 	  (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
-	  
-	  
 	  (store_add, reg2, "$current_player_region", str_fullname_region_begin),
 	  (str_store_string,s1,reg2),
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
-    ],
-	[
-	("camp_scene"      ,[],"Walk around."  ,[
-		(assign, "$number_of_combatants", 1), # add a scene as if a battle with one combatant...
-		(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
-		#    (jump_to_scene, "scn_camp_scene"),
-		(change_screen_mission)
-	]),
-     ("camp_action"     ,[],"More options."    ,[(jump_to_menu, "mnu_camp_action")]),
+    ],[
+		("camp_scene"      ,[],"Walk around."  ,[
+			(assign, "$number_of_combatants", 1), # add a scene as if a battle with one combatant...
+			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
+			#    (jump_to_scene, "scn_camp_scene"),
+			(change_screen_mission)]),
+		("camp_action"     ,[],"More options."    ,[(jump_to_menu, "mnu_camp_action")]),
 
   #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
-  ("camp_wait_here",[],"Camp here for some time.",
-      [
-			(store_random_in_range,":r",0,10),#random number
+		("camp_wait_here",[],"Camp here for some time.",
+      [		(store_random_in_range,":r",0,10),#random number
 			(try_begin),
 				(ge,":r",8),#if 8 or higher, we are attacked
 				#clearing temporary slots
@@ -1477,19 +1445,15 @@ game_menus = [
 	
 	
 	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],
-		"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),	(jump_to_menu, "mnu_camp"),]),
-				
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
 
-     ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat"),]),
+     ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
      
-     ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options"),]),
-     
+     ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
 ## MadVader test end
-     ("resume_travelling",[],"Resume travelling.",[
-     	 (change_screen_return),]),
+     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
 ),
   
@@ -2583,7 +2547,8 @@ game_menus = [
     ]
   ),
 ## MadVader test end
-("game_options",0,"^^^^^^^^Click on an option to toggle:","none",[],
+("game_options",0,
+	"^^^^^^^^Click on an option to toggle:","none",[],
     [
     ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@OFF"),
 									(else_try),(str_store_string, s7, "@ON"),(try_end),
@@ -2646,15 +2611,15 @@ game_menus = [
  ]
 ),
 ("cheat_change_race",0,
- "^^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
+ "^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
  "none",
  [],
  [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
   ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
   ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
-  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"), (jump_to_menu, "mnu_camp"),]),
+  ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"),(jump_to_menu, "mnu_camp"),]),
   ("race_rohan"     ,[],"Rohan"     ,[(troop_set_type,"trp_player", 3), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
-  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4), (assign,"$players_kingdom","fac_rohan"),(jump_to_menu, "mnu_camp"),]),
+  ("race_dunlander" ,[],"Dunlander" ,[(troop_set_type,"trp_player", 4), (assign,"$players_kingdom","fac_dunland"),(jump_to_menu, "mnu_camp"),]),
   ("race_orc"       ,[],"Orc"       ,[(troop_set_type,"trp_player", 5), (jump_to_menu, "mnu_camp"),]),
   ("race_uruk"      ,[],"Uruk"      ,[(troop_set_type,"trp_player", 6), (jump_to_menu, "mnu_camp"),]),
   ("race_haradrim"  ,[],"Haradrim"  ,[(troop_set_type,"trp_player", 7), (jump_to_menu, "mnu_camp"),]),	   
@@ -2673,12 +2638,9 @@ game_menus = [
 ("camp_action",0,
   "^^^^^^^^^     Choose an action:", "none",
  [(set_background_mesh, "mesh_ui_default_menu_window"),],
- 
  [ 
-
     ("camp_drink_water",
-		[
-			(player_has_item,"itm_ent_water"),
+		[	(player_has_item,"itm_ent_water"),
 			(eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
 		],
 		"Drink the Ent Water!",
@@ -3341,22 +3303,22 @@ game_menus = [
 ("drank_ent_water_orc",0,
 	"^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",
 	"none",[(display_log_message,"@HP lost from poisoning."),(troop_set_health,"trp_player",5),]
-	,[("ok_",[],"I... shall... survive!",[(change_screen_return,0),] ),]
+	,[("ok_",[],"I... shall... survive!",[(change_screen_return,0)])]
 ),
 
 ("end_game",0,
  "^^^^^The decision is made, and you resolve to give up your adventurer's\
  life and settle down. You sell off your weapons and armour, gather up\
- all your money, and ride off into the sunset....",
+ all your belongings, and ride off into the sunset....",
  "none",
  [],
- [ ("end_game_bye",[],"Farewell.",[(change_screen_quit)]),]
+ [("end_game_bye",[],"Farewell.",[(change_screen_quit)])]
 ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
-    "^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
+    "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
     "none",
-    [	(set_background_mesh, "mesh_ui_default_menu_window"),
+    [	#(set_background_mesh, "mesh_ui_default_menu_window"),
 		(try_begin), 
 			(eq, "$prebattle_talk_done",1),
 			(assign, "$prebattle_talk_done",0),
@@ -3378,15 +3340,15 @@ game_menus = [
 		  # first turn...
           (eq, "$new_encounter", 1),
           
-          (assign, "$g_encounter_is_in_village", 0),
-          (assign, "$g_encounter_type", 0),
+          #(assign, "$g_encounter_is_in_village", 0),
+          #(assign, "$g_encounter_type", 0),
           (try_begin),
             (party_slot_eq, "$g_enemy_party", slot_party_ai_state, spai_raiding_around_center),
             (party_get_slot, ":village_no", "$g_enemy_party", slot_party_ai_object),
             (store_distance_to_party_from_party, ":dist", ":village_no", "$g_enemy_party"),
             (try_begin),
               (lt, ":dist", raid_distance),
-              (assign, "$g_encounter_is_in_village", ":village_no"),
+              #(assign, "$g_encounter_is_in_village", ":village_no"),
 #              (assign, "$g_encounter_type", enctype_fighting_against_village_raid),
             (try_end),
           (try_end),
@@ -5312,7 +5274,7 @@ game_menus = [
             (party_get_slot, ":attached_party_type", ":attached_party", slot_party_type),
             (eq, ":attached_party_type", spt_kingdom_hero_party),
             (store_faction_of_party, ":attached_party_faction", ":attached_party"),
-            (call_script, "script_get_closest_walled_center_of_faction", ":attached_party", ":attached_party_faction"),
+            (call_script, "script_get_closest_center_of_faction", ":attached_party", ":attached_party_faction"),
             (try_begin),
               (gt, reg0, 0),
               (call_script, "script_party_set_ai_state", ":attached_party", spai_holding_center, reg0),
@@ -6114,10 +6076,12 @@ game_menus = [
     [],
 ),
 
-( "town",mnf_scale_picture|mnf_enable_hot_keys|city_menu_color,
+( "town",mnf_enable_hot_keys|city_menu_color,
 	"You arrived in {s60}.{s12}{s13}",
     "none",
     code_to_set_city_background + [   
+		
+		(call_script, "script_unequip_items", "trp_player"), # after a shop, player returns to this menu so check here
 		
 		(try_begin),
           (eq, "$sneaked_into_town", 1),
@@ -6333,9 +6297,7 @@ game_menus = [
 	  (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
 	  (str_store_troop_name_plural, s40, ":troop"),],
        "Visit the {s40}.",
-       [   (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
-           (change_screen_trade, ":troop"),
-        ]),
+       [(party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),(change_screen_trade, ":troop")]),
 		
 	  ("trade_with_horse_merchant",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
@@ -6344,9 +6306,7 @@ game_menus = [
 	  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
 	  (str_store_troop_name_plural, s41, ":troop"),],
        "Visit the {s41}.",
-       [  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
-          (change_screen_trade, ":troop"),
-        ]),
+       [(party_get_slot, ":troop", "$current_town", slot_town_merchant),(change_screen_trade, ":troop")]),
 
 	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.",
        [   (try_begin),
@@ -6569,7 +6529,7 @@ game_menus = [
     ]
 ),
 
-( "center_reports",mnf_scale_picture|city_menu_color,
+( "center_reports",city_menu_color,
     "Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days",
     "none",
     code_to_set_city_background + [
@@ -6596,13 +6556,13 @@ game_menus = [
     ]
 ),
 
-( "sneak_into_town_suceeded",mnf_scale_picture|city_menu_color,
+( "sneak_into_town_suceeded",city_menu_color,
     "Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.",
     "none",
      code_to_set_city_background +  [	],
     [("continue",[],"Continue...",[(assign, "$sneaked_into_town",1),(jump_to_menu,"mnu_town")])]
 ),
-(  "sneak_into_town_caught",mnf_scale_picture|city_menu_color,
+(  "sneak_into_town_caught",city_menu_color,
     "As you try to sneak in, one of the guards recognizes you and raises the alarm!\
  You must flee back through the gates before all the guards in the town come down on you!",
     "none",
@@ -6649,7 +6609,7 @@ game_menus = [
         ]),
     ]
 ),
-( "sneak_into_town_caught_dispersed_guards",mnf_scale_picture|city_menu_color,
+( "sneak_into_town_caught_dispersed_guards",city_menu_color,
     "You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.",
     "none",
     code_to_set_city_background + [],
@@ -6723,12 +6683,12 @@ game_menus = [
 		(change_screen_map)])]
 ),
 ( "recover_after_death_moria",mnf_scale_picture|city_menu_color,
-    "^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thorwn you in some murky pit.^By who knows what underground river, you must have surfraced.",
+    "^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
 	]
 ),
-( "recover_after_death_default",mnf_scale_picture,
+( "recover_after_death_default",0,
      "^^^^^You regain your conciousness. You are in the spot you fell.\
   The enemies must have taken you up for dead and left you there.\
   However, it seems that none of your wound were lethal,\
@@ -6738,7 +6698,7 @@ game_menus = [
 	 [(set_background_mesh, "mesh_ui_default_menu_window")],[      
 	 ("continue",[],"Continue...",[(change_screen_return)])]
 ),
-( "recover_after_death_town",mnf_scale_picture,
+( "recover_after_death_town",0,
      "^^^^You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
@@ -6747,7 +6707,7 @@ game_menus = [
      "none",code_to_set_city_background,
 	 [("continue",[],"Continue...",[(change_screen_map),(jump_to_menu,"mnu_castle_outside")])]
 ),
-( "recover_after_death_town_alone",mnf_scale_picture,
+( "recover_after_death_town_alone",0,
      "You regain your conciousness and find yourself near the town boundary. \
   You are alive!\
   Nobody is around and you take jour chance to drag yourself outside the town.\
@@ -6763,7 +6723,7 @@ game_menus = [
 	 ]
 ),
 
-( "notification_center_under_siege",mnf_scale_picture,
+( "notification_center_under_siege",0,
     "{s1} has been besieged by {s2} of {s3}!",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),

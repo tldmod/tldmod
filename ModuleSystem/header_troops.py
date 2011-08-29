@@ -9,9 +9,8 @@ from header_common import *
 #Troop flags
 ####################################################
 #TLD start (Hokie)
-tf_male       = 0	# (Dale/Northmen/corsair/bandits)
-tf_human      = 0	# just a synonim
-tf_female     = 1	# all factions
+tf_male       = 0 # (Dale/Northmen/corsair/bandits)
+tf_female     = 1 # all factions
 tf_gondor     = 2
 tf_rohan      = 3
 tf_dunland    = 4

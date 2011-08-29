@@ -2191,7 +2191,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 # TLD party encounter greetings - depends on faction IDs staying in the same order
  ("party_greet_friend_gondor", "Hail, friend of the White Tree!"), 
- ("party_greet_enemy_gondor", "Draw your swords if you dare, enemies of Godor!"), 
+ ("party_greet_enemy_gondor", "Draw your swords if you dare, enemies of Gondor!"), 
  ("party_greet_friend_dwarf", "Hail from the Durin's folk, dwarf-friend!"), 
  ("party_greet_enemy_dwarf", "Baruk Khazâd! Khazâd ai-mênu!"), 
  ("party_greet_friend_rohan", "Hail and well met, Rohirrim friend!"), 
@@ -2366,7 +2366,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rhun_rumor_begin", "Ride like the wind of the steppes!"),
 ("rhun_rumor_2", "The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us."),
 ("rhun_rumor_3", "Three wizards came to our lands a while ago. I wonder what they are up to."),
-("rhun_rumor_4", "Our lands are vast and scarcely populated. But we know how to survive there."),
+("rhun_rumor_4", "Our lands are vast and sparsely populated. But we know how to survive there."),
 ("rhun_rumor_5", "We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!"),
 ("rhun_rumor_6", "Our cousins from Khand prefer to fight on foot, but we know being on a horse is better."),
 ("rhun_rumor_7", "We have defeated Gondor legions before, and we will do it again!"),

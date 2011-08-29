@@ -128,10 +128,11 @@ slot_agent_mount_side		      = 16 # a mount has the side as its rider
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################
-slot_faction_ai_state                 = 4
-slot_faction_ai_object                = 5
-slot_faction_ai_last_offensive_time   = 6
-slot_faction_marshall                 = 7
+slot_faction_mask                   = 3 #bitmask
+slot_faction_ai_state               = 4
+slot_faction_ai_object              = 5
+slot_faction_ai_last_offensive_time = 6
+slot_faction_marshall               = 7
 slot_faction_ai_offensive_max_followers = 8
 
 slot_faction_culture              = 9
@@ -608,6 +609,7 @@ slot_troop_cur_center          = 12 # important for royal family members only (n
 slot_troop_banner_scene_prop   = 13 # important for kingdom heroes and player only
 
 slot_troop_original_faction    = 14 # for pretenders
+
 slot_troop_loyalty              = 15
 slot_troop_player_order_state   = 16
 slot_troop_player_order_object  = 17
@@ -645,6 +647,10 @@ slot_troop_prof_night_penalties_end   = slot_troop_prof_night_penalties_begin+6 
 slot_troop_upkeep_not_paid = 48 # if 1: player didn't pay upkeep for troops of this type in his party: (mtarini)
 slot_troop_subfaction      = 49 # parties and troops and items can have one subfaction -- gondor fiefdoms(mtarini)
 slot_troop_player_reserve_party = 50
+
+#TLD equipment tracking
+slot_troop_armor_type = 51
+slot_troop_boots_type = 52
 
 #TLD number of items in a shop:food,goods
 slot_troop_shop_gold   = 56

@@ -65,7 +65,8 @@ common_custom_battle_question_answered = (ti_question_answered, 0, 0, [],
      (eq,":answer",0),
      (assign, "$g_battle_result", -1),
      (call_script, "script_custom_battle_end"),
-     (finish_mission)])
+     (finish_mission)]
+)
 
 common_music_situation_update = (30, 0, 0, [],[(call_script, "script_combat_music_set_situation_with_culture")])
 common_battle_check_friendly_kills = (2, 0, 0, [],[ (call_script, "script_check_friendly_kills")])
@@ -599,8 +600,8 @@ formations_triggers = [
 ]
 #end formations triggers
 
-cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,
-[   (eq, "$cheat_mode",1),
+cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,[
+	(eq, "$cheat_mode",1),
 	(key_is_down, key_s),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     (get_player_agent_no, ":player_agent"),
 	(agent_get_team, ":player_team", ":player_agent"),
@@ -748,7 +749,8 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$wargs_in_battle",0),	
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
-	
+	(call_script, "script_check_agent_armor"), # check for berserker trait
+
 	(try_begin),
 		(this_or_next|eq, "$g_encountered_party", "pt_mordor_war_party"),
 		(eq, "$g_encountered_party_2", "pt_mordor_war_party"),
@@ -1404,7 +1406,6 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
-
 custom_warg_sounds = (1.65,0,0,  [(gt,"$wargs_in_battle",0)],
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
     (try_for_agents, ":warg"),
@@ -1418,7 +1419,6 @@ custom_warg_sounds = (1.65,0,0,  [(gt,"$wargs_in_battle",0)],
 		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
 	(try_end),
 ])
-
 custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
 	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
         (agent_is_alive, ":ghost"), 

@@ -1,4 +1,4 @@
-890
+889
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -306,9 +306,6 @@ qstr_{s4}_looks_upset. {s4}_looks_upset.
 qstr_your_party your_party
 qstr_{reg0?One_of_your_pr {reg0?One_of_your_prisoners,_:}{s1}_of_{s3}_has_escaped_from_captivity!
 qstr_You_brought_{reg3}_h You_brought_{reg3}_heads_of_cattle_to_{s1}.
-qstr_I_heard_that_there_w I_heard_that_there_will_be_a_tournament_in_{s62}_soon.
-qstr_I_heard_that_one_can I_heard_that_one_can_buy_{s62}_very_cheap_at_{s63}.
-qstr_I_heard_that_they_pa I_heard_that_they_pay_a_very_high_price_for_{s62}_at_{s63}.
 qstr_Log_entry_{reg3}:_ty Log_entry_{reg3}:_type_{reg4}
 qstr_Center:_{s4} Center:_{s4}
 qstr_Troop:_{s4} Troop:_{s4}
@@ -369,6 +366,8 @@ qstr_You_were_grievously_w You_were_grievously_wounded_in_battle._Your_men_manag
 qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured_and_dragged_to_{s2}.
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
 qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
+qstr_Item_you_just_equipp Item_you_just_equipped_does_not_fit_characters_of_this_race_and_will_be_removed_into_player_inventory_shortly^^Make_sure_your_equipment_has_space_for_the_item,_or_it_will_be_lost
+qstr_Inappropriate_equipm Inappropriate_equipment
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
@@ -479,7 +478,7 @@ qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
 qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^TOTAL:__{reg5}
-qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s23})
+qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Loyal Loyal
 qstr_Devoted Devoted
@@ -499,7 +498,7 @@ qstr_Angry Angry
 qstr_Hateful Hateful
 qstr_Revengeful Revengeful
 qstr_Vengeful Vengeful
-qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s3})
+qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
@@ -511,7 +510,7 @@ qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
 qstr_You_got_them_all_par You_got_them_all,_pardner!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
-qstr_{s2}^{s4}:_{reg1}__{s2 {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
+qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
 qstr_Unknown_{reg3}_ Unknown({reg3})
 qstr_SE SE

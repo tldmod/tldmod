@@ -85,7 +85,7 @@ num_weapon_proficiencies = 7
 cut    = 0
 pierce = 1
 blunt  = 2
-bow_damage = cut  # in TLDm bows do cutting damage!
+bow_damage = cut  # in TLD most bows do cutting damage!
 
 
 ibf_armor_mask           = 0x00000000000000000000000ff
@@ -351,4 +351,11 @@ itc_ghost_lance = itcf_thrust_onehanded_lance_horseback
 ixmesh_inventory   = 0x1000000000000000
 ixmesh_flying_ammo = 0x2000000000000000
 ixmesh_carry       = 0x3000000000000000
+
+#bitmask for races who can use items (mask is stuffed into the last digit of item value)
+r_man   = 0 # also includes all elves and women
+r_orc   = 1
+r_uruk  = 2
+r_hai   = 4
+r_dwarf = 8 
 

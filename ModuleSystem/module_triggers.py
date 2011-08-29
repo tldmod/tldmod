@@ -41,9 +41,10 @@ triggers = [
 		(reset_item_probabilities,100),     
 		(troop_clear_inventory,":cur_merchant"),
 		(store_troop_faction,":faction",":cur_merchant" ),
-		(call_script,"script_get_faction_mask",":faction"),(assign,":faction_mask",reg30),          
+		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
 		(troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
-		(call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
+		(assign, ":subfaction_mask", 1),
+		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end),
 		(store_add,":last_item_plus_one","itm_ent_body",1),
 
 		(try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
@@ -98,9 +99,10 @@ triggers = [
         (reset_item_probabilities,100),     
         (troop_clear_inventory,":cur_merchant"),
         (store_troop_faction,":faction",":cur_merchant"),
-        (call_script,"script_get_faction_mask",":faction"),(assign,":faction_mask",reg30),          
+		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
         (troop_get_slot,":subfaction",":cur_center", slot_troop_subfaction),
-        (call_script,"script_get_faction_mask",":subfaction"),(assign,":subfaction_mask",reg30),          
+		(assign, ":subfaction_mask", 1),
+		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end),
 
         (assign, ":is_orc_faction", 0),
         (try_begin),

@@ -16,7 +16,7 @@ import string
 ####################################################################################################################
 
 presentations = [
-  ("game_credits",prsntf_read_only,mesh_load_window,[
+("game_credits",prsntf_read_only,mesh_load_window,[
       (ti_on_presentation_load,
        [(assign, "$g_presentation_credits_obj_1", -1),
         (assign, "$g_presentation_credits_obj_2", -1),
@@ -271,9 +271,9 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-      ]),
-  
-  ("banner_selection",0,mesh_load_window,[
+]),
+
+("banner_selection",0,mesh_load_window,[
       (ti_on_presentation_load,
        [(set_fixed_point_multiplier, 1000),
         (str_store_string, s1, "str_banner_selection_text"),
@@ -359,10 +359,8 @@ presentations = [
         (try_end),
 
         ]),
-      ]),
-
-  ("custom_banner", 0, mesh_load_window,
-   [
+]),
+("custom_banner", 0, mesh_load_window, [
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -901,10 +899,8 @@ presentations = [
 ##         (presentation_set_duration, 0),
 ##       (try_end),
 ##       ]),
-     ]),
-
-  ("banner_charge_positioning", 0, mesh_load_window,
-   [
+]),
+("banner_charge_positioning", 0, mesh_load_window,  [
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -947,10 +943,8 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-
-  ("banner_charge_selection", 0, mesh_load_window,
-   [
+]),
+("banner_charge_selection", 0, mesh_load_window, [
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -997,10 +991,8 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-
-  ("banner_background_selection", 0, mesh_load_window,
-   [
+]),
+("banner_background_selection", 0, mesh_load_window, [
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -1043,10 +1035,8 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-
-  ("banner_flag_type_selection", 0, mesh_load_window,
-   [
+]),
+("banner_flag_type_selection", 0, mesh_load_window,[
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -1089,10 +1079,8 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-
-  ("banner_flag_map_type_selection", 0, mesh_load_window,
-   [
+]),
+("banner_flag_map_type_selection", 0, mesh_load_window,[
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -1144,10 +1132,8 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-
-  ("color_selection", 0, mesh_load_window,
-   [
+]),
+("color_selection", 0, mesh_load_window,[
      (ti_on_presentation_load,
       [
         (set_fixed_point_multiplier, 1000),
@@ -1201,9 +1187,9 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-     ]),
-  
-  ("battle",0,0,[
+]),
+
+("battle",0,0,[
       (ti_on_presentation_load,
        [(set_fixed_point_multiplier, 1000),
         (assign, "$g_formation_infantry_selected", 0),
@@ -1777,10 +1763,9 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
         ]),
-      ]),
+]),
 
-
-    ("sliders",0,0,[
+("sliders",0,0,[
       (ti_on_presentation_load,
        [(set_fixed_point_multiplier, 1000),
         (create_slider_overlay, "$g_presentation_obj_1", 0, 100),
@@ -1823,8 +1808,7 @@ presentations = [
         (overlay_set_size, "$g_presentation_obj_3", pos1),
         ]),
       (ti_on_presentation_run,
-       [
-        ]),
+       []),
       (ti_on_presentation_event_state_change,
        [(store_trigger_param_1, ":object"),
         (store_trigger_param_2, ":value"),
@@ -1934,9 +1918,9 @@ presentations = [
         (str_store_string, s1, "str_reg1"),
         (overlay_set_text, "$g_presentation_obj_8", s1),
         ]),
-      ]),
+]),
 
-  ("arena_training", prsntf_read_only, 0, [
+("arena_training", prsntf_read_only, 0, [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
@@ -1972,9 +1956,8 @@ presentations = [
         (str_store_string, s1, "@Opponents Remaining: {reg1}"),
         (overlay_set_text, "$g_presentation_obj_2", s1),
         ]),
-      ]),
-
-  ("gauntlet", prsntf_read_only, 0, [
+]),
+("gauntlet", prsntf_read_only, 0, [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
@@ -1991,10 +1974,9 @@ presentations = [
         (str_store_string, s1, "@Gauntlet wave: {reg1}"),
         (overlay_set_text, "$g_presentation_obj_1", s1),
         ]),
-      ]),
+]),
 
-  ("retirement", 0, mesh_load_window,
-   [
+("retirement", 0, mesh_load_window,[
      (ti_on_presentation_load,
       [
         (presentation_set_duration, 999999),
@@ -2646,9 +2628,9 @@ presentations = [
           (change_screen_return),
         (try_end),
         ]),
-     ]),
-     
-  ("intro_titles", prsntf_read_only, 0, [
+]),
+
+("intro_titles", prsntf_read_only, 0, [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
@@ -2706,6 +2688,6 @@ presentations = [
         (try_end),
         (overlay_set_text, "$g_presentation_obj_1", s1),
         ]),
-      ]),
+]),
 
 ]
