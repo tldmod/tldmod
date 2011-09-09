@@ -2157,6 +2157,7 @@ PS_OUTPUT ps_character_shadow(uniform const int PcfMode, PS_INPUT_CHARACTER_SHAD
 }
 
 
+
 VS_OUTPUT_SPECULAR_ALPHA vs_specular_alpha_skin (uniform const int PcfMode, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES)
 {
    VS_OUTPUT_SPECULAR_ALPHA Out = (VS_OUTPUT_SPECULAR_ALPHA)0;
@@ -2297,41 +2298,6 @@ VS_OUTPUT_SPECULAR_ALPHA vs_specular_alpha (uniform const int PcfMode, float4 vP
    return Out;
 }
 
-
-// added by mtarini
-PS_OUTPUT ps_specular_alpha_one_quarter(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
-{
-    PS_OUTPUT Output;
-    
- // Compute half vector for specular lighting
- //   float3 vHalf = normalize(normalize(-ViewPos) + normalize(g_vLight - ViewPos));
- 
-
-	float4 outColor = tex2D(MeshTextureSampler, In.Tex0);
-    outColor.rgb = pow(outColor.rgb, input_gamma);
-	
-	float3 vHalf = normalize(normalize(vCameraPos - In.worldPos) - vSunDir);
-	// Compute normal dot half for specular light
-	float4 fSpecular = vSpecularColor * pow( saturate( dot( vHalf, normalize( In.worldNormal) ) ), fMaterialPower) * outColor.a;
-	
-	fSpecular = (In.Tex0.x<0.25)?0.0f:fSpecular;
-	
-	if ((PcfMode != PCF_NONE))
-    {
-		float sun_amount = 0.15f + GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
-//		sun_amount *= sun_amount;
-		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular) * sun_amount)));
-    }
-    else
-    {
-		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular * 0.5f))));
-    }
-    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
-    
-	Output.RGBColor.a = (In.Tex0.x<0.25)?outColor.a:1.0f;
-    return Output;
-}
-
 PS_OUTPUT ps_specular_alpha(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
 {
     PS_OUTPUT Output;
@@ -2361,6 +2327,8 @@ PS_OUTPUT ps_specular_alpha(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMod
 	Output.RGBColor.a = 1.0f;
     return Output;
 }
+
+
 
 PS_OUTPUT ps_specular(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
 {
@@ -3176,16 +3144,6 @@ technique specular_alpha
    }
 }
 
-// shader that uses 1st quarter of texture as transparency, rest as sepcular.
-// added by Marco Tarini, mtarini
-technique specular_alpha_one_quarter
-{
-   pass P0
-   {
-      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_NONE);
-      PixelShader = compile ps_2_0 ps_specular_alpha_one_quarter(PCF_NONE);
-   }
-}
 
 technique specular_alpha_SHDW
 {
@@ -4276,7 +4234,7 @@ VS_OUTPUT vs_mtarini_main_skin_big (float4 vPosition : POSITION, float3 vNormal 
 
 
 
-// WARGS, OLIHPANT, PONIES 
+// WARGS, OLIHPANT, PONIES : rescaled skeletons for creatures
 
 VS_OUTPUT vs_mtarini_main_skin_resize(float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES, uniform const float pre_resize,  uniform const float resize,  uniform const int PcfMode)
 {
@@ -4424,4 +4382,75 @@ technique mtarini_skin_diffuse_big_SHDWNVIDIA
       PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
 	}
 }
+
+
+
+
+
+// specular and transparency trick
+
+PS_OUTPUT ps_mtarini_specular_alpha_top(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
+{
+    PS_OUTPUT Output;
+    
+ // Compute half vector for specular lighting
+ //   float3 vHalf = normalize(normalize(-ViewPos) + normalize(g_vLight - ViewPos));
+ 
+
+	float4 outColor = tex2D(MeshTextureSampler, In.Tex0);
+    outColor.rgb = pow(outColor.rgb, input_gamma);
+	
+	float3 vHalf = normalize(normalize(vCameraPos - In.worldPos) - vSunDir);
+	// Compute normal dot half for specular light
+	float4 fSpecular = vSpecularColor * pow( saturate( dot( vHalf, normalize( In.worldNormal) ) ), fMaterialPower) * outColor.a;
+	
+	fSpecular = (In.Tex0.y< 171.0/1024.0 )?0.0f:fSpecular;
+	
+	if ((PcfMode != PCF_NONE))
+    {
+		float sun_amount = 0.15f + GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
+//		sun_amount *= sun_amount;
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular) * sun_amount)));
+    }
+    else
+    {
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular * 0.5f))));
+    }
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+    
+	Output.RGBColor.a = (In.Tex0.y< 171.0/1024.0 )?outColor.a:1.0f;
+    return Output;
+}
+
+// shader that uses top part of texture as transparency, rest as sepcular.
+
+
+
+
+technique mtarini_specular_alpha_top
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_mtarini_specular_alpha_top(PCF_NONE);
+   }
+}
+
+technique mtarini_specular_alpha_top_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_mtarini_specular_alpha_top(PCF_DEFAULT);
+   }
+}
+technique mtarini_specular_alpha_top_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_specular_alpha(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_mtarini_specular_alpha_top(PCF_NVIDIA);
+   }
+}
+
 
