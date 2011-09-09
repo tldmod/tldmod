@@ -2074,10 +2074,10 @@ ai_scripts = [
             #(party_set_name, ":party", "@Host of {s5}"),
             (party_set_name, ":party", "str_s5_s_host"),
 		#	(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
-	     # hire troops to host, kings get more
+	     # hire troops to host, marshals (kings) get more
             (assign, ":num_tries", 30),
             (try_begin),
-               (faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":hero"),
+               (faction_slot_eq, ":troop_faction_no", slot_faction_marshal, ":hero"),
                (assign, ":num_tries", 50),
             (try_end),
             (try_for_range, ":unused", 0, ":num_tries"),
