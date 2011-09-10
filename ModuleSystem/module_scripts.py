@@ -454,8 +454,8 @@ scripts = [
             (assign, reg1, 0),
             (assign, ":news_color", color_bad_news),
           (try_end),
-          (display_message, "@{reg1?Earned:Lost} {reg12} influence with {s11}.", ":news_color"),
-#          (display_message, "@{reg1?Earned:Lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
+#          (display_message, "@{reg1?Earned:Lost} {reg12} influence with {s11}.", ":news_color"), # MV: why do this??
+          (display_message, "@{reg1?Earned:Lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
           
           # rank increased?
           (try_begin),
@@ -1351,9 +1351,9 @@ scripts = [
 		(try_end),
 	(try_end),
 # TLD banner assignment		
-# assign main faction banners to lords
+# assign main faction banners to kings, then lords
     ]+[
-	(troop_set_slot, faction_init[x][3][1], slot_troop_banner_scene_prop, faction_init[x][6]) for x in range(len(faction_init)) ]+[   
+	(troop_set_slot, faction_init[x][3][0], slot_troop_banner_scene_prop, faction_init[x][6]) for x in range(len(faction_init)) ]+[   
 
 	(try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
 		(troop_add_gold,":kingdom_hero",100000),
@@ -1498,7 +1498,7 @@ scripts = [
 # spawn any other lord in random places, TLD
       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_slot_eq, ":hero", slot_troop_leaded_party, 0),
-	    (troop_get_faction, ":faction", ":hero"),
+	    (store_troop_faction, ":faction", ":hero"),
         (call_script,"script_cf_select_random_town_with_faction", ":faction"),(assign,":center",reg0),
         (call_script, "script_create_kingdom_hero_party", ":hero", ":center"),
         (party_set_slot, ":center", slot_town_player_odds, 1000),  
@@ -1563,7 +1563,7 @@ scripts = [
 	(assign, "$spawn_horse", 1),
 	(assign, "$gate_breached", 0),# destructible gate variables
 	(assign, "$gate_aggravator_agent", 0),
-    (assign, "$equip_needs_checking", 1),
+#    (assign, "$equip_needs_checking", 1),
    ################ 808 globals
     (assign, "$trait_captain_infantry_week", 0),
     (assign, "$trait_captain_archer_week", 0),
@@ -2397,7 +2397,7 @@ scripts = [
         (val_min, ":multiplier", maximum_price_factor),
         (party_set_slot, "$g_encountered_party", ":item_slot_no", ":multiplier"),
       (try_end),
-	  (assign, "$equip_needs_checking", 1), #TLD, need to check
+#	  (assign, "$equip_needs_checking", 1), #TLD, need to check
 ]),
 
 #script_game_event_sell_item:
@@ -7409,6 +7409,7 @@ scripts = [
       (party_get_slot, ":party_type",":party_no", slot_party_type),
       (try_begin),
         (eq, ":party_no", "p_main_party"), #for testing, but doesn't hurt
+        (assign, ":party_type", spt_kingdom_hero_party),
         (assign, ":party_faction", "$players_kingdom"),
       (else_try),
         (eq, ":party_faction", "fac_player_supporters_faction"),
@@ -8719,7 +8720,7 @@ scripts = [
 	(assign, reg46,":raceA"),
 	(assign, reg47,":raceB"),
 	(assign, reg48,":region"),
-	(display_message, "@DEBUG: def:{reg40} Fac:({reg41},{reg42},{reg43}). Sid:({reg44},{reg45}). Rac:({reg46},{reg47}). Region:{reg48}"),
+#	(display_message, "@DEBUG: def:{reg40} Fac:({reg41},{reg42},{reg43}). Sid:({reg44},{reg45}). Rac:({reg46},{reg47}). Region:{reg48}"),
   # default battle cries, if no good one found
 	(try_begin),(eq, ":done", 0),
 		(try_begin),
@@ -12494,8 +12495,8 @@ scripts = [
      (str_store_troop_name, s54, ":troop_no"),
      (try_begin),
        (eq, ":troop_no", "trp_player"),
-       (this_or_next|eq, 0, 1), # "$player_has_homage" is always 0 in TLD
-       (             eq, "$players_kingdom", "fac_player_supporters_faction"),
+       # (this_or_next|eq, 0, 1), # "$player_has_homage" is always 0 in TLD
+       # (             eq, "$players_kingdom", "fac_player_supporters_faction"),
        (assign, ":troop_faction", "$players_kingdom"),
      (else_try),
        (store_troop_faction, ":troop_faction", ":troop_no"),
@@ -12544,7 +12545,7 @@ scripts = [
          (gt, reg3, 1), #MV: non-humans are male
          (assign, reg3, 0),
        (try_end),
-       (troop_get_slot, reg5, ":troop_no", slot_troop_renown),
+#       (troop_get_slot, reg5, ":troop_no", slot_troop_renown),
        (str_clear, s59),
        (try_begin),
 #         (troop_get_slot, ":relation", ":troop_no", slot_troop_player_relation),
@@ -12561,7 +12562,8 @@ scripts = [
          (str_store_string, s59, "@^{s59}"),
        (try_end),
        (assign, reg9, ":num_centers"),
-       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
+       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
+#       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
      (try_end),
 ]),
@@ -13777,51 +13779,52 @@ scripts = [
         (try_end),        
 ]),
 
-#("post_battle_personality_clash_check",
-# [      (display_message, "@Post-victory personality clash check"),
-            # (try_for_range, ":npc", companions_begin, companions_end),
-                # (eq, "$disable_npc_complaints", 0),
+("post_battle_personality_clash_check",
+[
+#            (display_message, "@Post-victory personality clash check"),
+            (try_for_range, ":npc", companions_begin, companions_end),
+                (eq, "$disable_npc_complaints", 0),
 
-                # (main_party_has_troop, ":npc"),
-                # (neg|troop_is_wounded, ":npc"),
+                (main_party_has_troop, ":npc"),
+                (neg|troop_is_wounded, ":npc"),
 
-                # (troop_get_slot, ":other_npc", ":npc", slot_troop_personalityclash2_object),
-                # (main_party_has_troop, ":other_npc"),
-                # (neg|troop_is_wounded, ":other_npc"),
+                (troop_get_slot, ":other_npc", ":npc", slot_troop_personalityclash2_object),
+                (main_party_has_troop, ":other_npc"),
+                (neg|troop_is_wounded, ":other_npc"),
 
-# #                (store_random_in_range, ":random", 0, 3),
-                # (try_begin),
-                    # (troop_slot_eq, ":npc", slot_troop_personalityclash2_state, 0),
-                    # (try_begin),
-# #                        (eq, ":random", 0),
-                        # (assign, "$npc_with_personality_clash_2", ":npc"),
-                    # (try_end),
-                # (try_end),
+#                (store_random_in_range, ":random", 0, 3),
+                (try_begin),
+                    (troop_slot_eq, ":npc", slot_troop_personalityclash2_state, 0),
+                    (try_begin),
+#                        (eq, ":random", 0),
+                        (assign, "$npc_with_personality_clash_2", ":npc"),
+                    (try_end),
+                (try_end),
 
-            # (try_end),
+            (try_end),
 
-            # (try_for_range, ":npc", companions_begin, companions_end),
-                # (troop_slot_eq, ":npc", slot_troop_personalitymatch_state, 0),
-                # (eq, "$disable_npc_complaints", 0),
-                # (main_party_has_troop, ":npc"),
-                # (neg|troop_is_wounded, ":npc"),
-                # (troop_get_slot, ":other_npc", ":npc", slot_troop_personalitymatch_object),
-                # (main_party_has_troop, ":other_npc"),
-                # (neg|troop_is_wounded, ":other_npc"),
-                # (assign, "$npc_with_personality_match", ":npc"),
-            # (try_end),
+            (try_for_range, ":npc", companions_begin, companions_end),
+                (troop_slot_eq, ":npc", slot_troop_personalitymatch_state, 0),
+                (eq, "$disable_npc_complaints", 0),
+                (main_party_has_troop, ":npc"),
+                (neg|troop_is_wounded, ":npc"),
+                (troop_get_slot, ":other_npc", ":npc", slot_troop_personalitymatch_object),
+                (main_party_has_troop, ":other_npc"),
+                (neg|troop_is_wounded, ":other_npc"),
+                (assign, "$npc_with_personality_match", ":npc"),
+            (try_end),
 
 
-            # (try_begin),
-                # (gt, "$npc_with_personality_clash_2", 0),
-                # (assign, "$npc_map_talk_context", slot_troop_personalityclash2_state),
-                # (start_map_conversation, "$npc_with_personality_clash_2"),
-            # (else_try),
-                # (gt, "$npc_with_personality_match", 0),
-                # (assign, "$npc_map_talk_context", slot_troop_personalitymatch_state),
-                # (start_map_conversation, "$npc_with_personality_match"),
-            # (try_end),
-#]),
+            (try_begin),
+                (gt, "$npc_with_personality_clash_2", 0),
+                (assign, "$npc_map_talk_context", slot_troop_personalityclash2_state),
+                (start_map_conversation, "$npc_with_personality_clash_2"),
+            (else_try),
+                (gt, "$npc_with_personality_match", 0),
+                (assign, "$npc_map_talk_context", slot_troop_personalitymatch_state),
+                (start_map_conversation, "$npc_with_personality_match"),
+            (try_end),
+]),
 
 #script_event_player_defeated_enemy_party
 ("event_player_defeated_enemy_party",
@@ -17835,7 +17838,7 @@ scripts = [
       (store_sqrt, "$battle_renown_value", "$battle_renown_value"),
       (convert_from_fixed_point, "$battle_renown_value"),
       (assign, reg8, "$battle_renown_value"),
-      (display_message, "@Renown value for this battle is {reg8}.",0xFFFFFFFF),
+      #(display_message, "@Renown value for this battle is {reg8}.",0xFFFFFFFF),
 ]),
   
 # script_injure_companions

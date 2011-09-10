@@ -2562,7 +2562,7 @@ game_menus = [
 
 	("game_options_town_menu",[(try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
 								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Find center features first for them to appear in menu: {s7}",[
+	    ],"Unlock town menus by visiting town NPCs: {s7}",[
 	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
 
 	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
@@ -3820,7 +3820,7 @@ game_menus = [
 ),
 
 (   "battle_debrief",mnf_disable_all_keys|mnf_scale_picture,
-    "{s40}{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
+    "{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(call_script, "script_maybe_relocate_player_from_z0"),
@@ -4013,7 +4013,7 @@ game_menus = [
               (store_div, ":rank_increase", "$battle_renown_value", 4), # MV: give some rank increase according to renown (should be small 1-10)
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
-			  (display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
+			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		  (try_end),
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
 #TLD end
@@ -4216,7 +4216,7 @@ game_menus = [
             (eq, "$g_next_menu", -1),
 
 #NPC companion changes begin
-           #(call_script, "script_post_battle_personality_clash_check"),
+           (call_script, "script_post_battle_personality_clash_check"),
 #NPC companion changes end
 
 #Post 0907 changes begin
@@ -4601,7 +4601,7 @@ game_menus = [
       ("join_leave",[],"Disengage.",[
         (try_begin),
            (neg|troop_is_wounded, "trp_player"),
-           #(call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
+           (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
            (party_stack_get_troop_id, ":enemy_leader","$g_enemy_party",0),
            (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":enemy_leader", -1),
            (display_message, "@You retreated from battle."),

@@ -434,7 +434,8 @@ dialogs = [
 [anyone|plyr,"member_castellan_talk", [], "I want to review the castle garrison.", "member_review_castle_garrison",[]],
 [anyone,"member_review_castle_garrison", [], "Of course. Here are our lists, let me know of any changes you require...", "member_castellan_pretalk",[(change_screen_exchange_members,0)]],
 [anyone|plyr,"member_castellan_talk", [], "Let me see your equipment.", "member_review_castellan_equipment",[]],
-[anyone,"member_review_castellan_equipment", [], "Very well, it's all here...", "member_castellan_pretalk",[(assign, "$equip_needs_checking", 1),(change_screen_equip_other),(call_script, "script_check_equipped_items","$g_talk_troop")]],
+[anyone,"member_review_castellan_equipment", [], "Very well, it's all here...", "member_castellan_pretalk",[#(assign, "$equip_needs_checking", 1),
+  (change_screen_equip_other),(call_script, "script_check_equipped_items","$g_talk_troop")]],
 [anyone|plyr,"member_castellan_talk", [], "I want you to abandon the castle and join my party.", "member_castellan_join",[]],
 [anyone,"member_castellan_join", [(party_can_join_party,"$g_encountered_party","p_main_party")],
 "I've grown quite fond of the place... But if it is your wish, {playername}, I'll come with you.", "close_window", [
@@ -8148,7 +8149,8 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 #[anyone,"goods_merchant_pretalk", [], "Anything else?", "goods_merchant_talk",[]],
 
 [anyone|plyr,"goods_merchant_talk", [(call_script, "script_check_equipped_items", "trp_player")], "I want to buy a few items... and perhaps sell some.", "goods_trade_requested",[]],
-[anyone,"goods_trade_requested", [], "Sure, sure... Here, have a look at my stock...", "goods_trade_completed",[(assign, "$equip_needs_checking", 1),(change_screen_trade)]],
+[anyone,"goods_trade_requested", [], "Sure, sure... Here, have a look at my stock...", "goods_trade_completed",[#(assign, "$equip_needs_checking", 1),
+  (change_screen_trade)]],
 [anyone,"goods_trade_completed", [], "Anything else?", "goods_merchant_talk",[]],
 [anyone|plyr,"goods_merchant_talk", [], "Nothing. Thanks.", "close_window",[]],
   
@@ -8206,8 +8208,10 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",horse_merchants_begin,horse_merchants_end),(call_script, "script_check_equipped_items", "trp_player")],
 "I am thinking of getting a mount.", "trade_requested_horse",[]],
 
-[anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[(assign, "$equip_needs_checking", 1),(change_screen_trade)]],
-[anyone,"trade_requested_horse", [], "You have a fine eye for horses, commander. You won't find better beasts than these anywhere else.", "merchant_trade",[(assign, "$equip_needs_checking", 1),(change_screen_trade)]],
+[anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
+  (change_screen_trade)]],
+[anyone,"trade_requested_horse", [], "You have a fine eye for horses, commander. You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
+                  (change_screen_trade)]],
 
 [anyone,"merchant_trade", [], "Anything else?", "town_merchant_talk",[]],
 [anyone|plyr,"town_merchant_talk", [], "Tell me. What are people talking about these days?", "merchant_gossip",[]],

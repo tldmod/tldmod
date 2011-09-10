@@ -1919,7 +1919,7 @@ ai_scripts = [
 # a simple script: 	give a troop, fails if that troop is a sitting king, i.e. a faction leader with a different faction marshal
 ("cf_fails_if_sitting_king", [
 	(store_script_param, ":troop_no", 1),
-	(troop_get_faction, ":faction_id", ":troop_no"),
+	(store_troop_faction, ":faction_id", ":troop_no"),
 	# leaders of factions which have a different marshal are SITTING KINGS.
 	# they don't leave the place
 	(this_or_next|faction_slot_eq,":faction_id",slot_faction_marshall,":troop_no"),
@@ -2077,7 +2077,7 @@ ai_scripts = [
 	     # hire troops to host, marshals (kings) get more
             (assign, ":num_tries", 30),
             (try_begin),
-               (faction_slot_eq, ":troop_faction_no", slot_faction_marshal, ":hero"),
+               (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
                (assign, ":num_tries", 50),
             (try_end),
             (try_for_range, ":unused", 0, ":num_tries"),

@@ -1,4 +1,4 @@
-889
+886
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -89,7 +89,7 @@ qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
-qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg12}_influence_with_{s11}.
+qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their
@@ -231,7 +231,6 @@ qstr_Slaughter_these_puny Slaughter_these_puny_thieves_of_{s18}_now!_Then_we_bur
 qstr_Death_to_the_trespas Death_to_the_trespassers_of_the_land_of_{s16}!
 qstr_CHARGE!_Let_s_clean_ CHARGE!_Let's_clean_{s17}_from_the_{s19}scum_of_{s18}!
 qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bear_people!
-qstr_DEBUG:_def:{reg40}_F DEBUG:_def:{reg40}_Fac:({reg41},{reg42},{reg43})._Sid:({reg44},{reg45})._Rac:({reg46},{reg47})._Region:{reg48}
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
@@ -285,7 +284,7 @@ qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
 qstr_^{s59} ^{s59}
-qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_serves_{s55}_of_{s56}.^}}Renown:_{reg5}.{reg9?^{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:}{s59}
+qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_serves_{s55}_of_{s56}.^}}{reg9?{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:}{s59}
 qstr_The_last_time_you_sa The_last_time_you_saw_{reg1?her:him},_{s1}
 qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_{s50} The_{s50}
@@ -365,7 +364,6 @@ qstr_You_were_grievously_ You_were_grievously_wounded_and_your_body_piled_with_t
 qstr_You_were_grievously_w You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort.
 qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_managed_to_drag_you_away_but_took_horrific_casualties_in_the_effort._Unfortunately,_some_of_your_companions_have_been_captured_and_dragged_to_{s2}.
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
-qstr_Renown_value_for_thi Renown_value_for_this_battle_is_{reg8}.
 qstr_Item_you_just_equipp Item_you_just_equipped_does_not_fit_characters_of_this_race_and_will_be_removed_into_player_inventory_shortly^^Make_sure_your_equipment_has_space_for_the_item,_or_it_will_be_lost
 qstr_Inappropriate_equipm Inappropriate_equipment
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
@@ -613,7 +611,6 @@ qstr_You_have_retreated_f You_have_retreated_from_the_fight.
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
 qstr_{s3}_witnesses_your_ {s3}_witnesses_your_victory_against_{s4}.
-qstr_DEBUG:_nobody_direct DEBUG:_nobody_directly_interested_witnesses_your_victory.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
 qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}
@@ -677,9 +674,9 @@ qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_rui
 qstr_You_have_found_the_s You_have_found_the_sorcerer!
 qstr_Kill_him_quickly_bef Kill_him_quickly_before_he_escapes!
 qstr_Breaking_camp... Breaking_camp...
-qstr_you_have_left_{s1} you_have_left_{s1}
-qstr_you_are_entering_{s1 you_are_entering_{s1}_({s2})
-qstr_you_are_entering_{s1} you_are_entering_{s1}
+qstr_You_have_left_{s1}. You_have_left_{s1}.
+qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
+qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.
