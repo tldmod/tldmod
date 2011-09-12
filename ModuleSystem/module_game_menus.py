@@ -286,6 +286,7 @@ game_menus = [
 #NPC companion changes end
       ("view_faction_strengths_report",[],"View faction strengths report.",[(jump_to_menu, "mnu_faction_strengths_report"),]),
       ("view_faction_relations_report",[],"View faction relations report.",[(jump_to_menu, "mnu_faction_relations_report"),]),
+      ("view_traits_report",[],"View traits.",[(jump_to_menu, "mnu_traits_report"),]),
       ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_return),]),
     ]
 ),
@@ -1297,6 +1298,16 @@ game_menus = [
     (val_mul, ":leadership", 5),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
 
+    (assign, ":ranks", 0),
+    (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+      (call_script, "script_get_faction_rank", ":faction"),
+      (val_add, ":ranks", reg0),
+      (try_begin),
+		(eq, ":faction", "$players_kingdom"),
+        (val_add, ":ranks", reg0), # double for home faction
+      (try_end),
+    (try_end),
+
     # (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
     # (val_div, ":renown", 25),
     (try_begin),(gt, ":leadership", 0),(str_store_string, s2, "@ +"),
@@ -1305,14 +1316,19 @@ game_menus = [
     (try_begin),(gt, ":charisma", 0),(str_store_string, s3, "@ +"),
      (else_try),                     (str_store_string, s3, "@ "),
     (try_end),
+    (try_begin),(gt, ":ranks", 0),(str_store_string, s4, "@ +"),
+     (else_try),                   (str_store_string, s4, "@ "),
+    (try_end),
     # (try_begin),(gt, ":renown", 0),(str_store_string, s4, "@ +"),
     #  (else_try),                   (str_store_string, s4, "@ "),
     # (try_end),
     (assign, reg5, ":party_size_limit"),
     (assign, reg1, ":leadership"),
     (assign, reg2, ":charisma"),
+    (assign, reg3, ":ranks"),
     # (assign, reg3, ":renown"),
-    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^TOTAL:  {reg5}"),
+    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^TOTAL:  {reg5}"),
+#    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^TOTAL:  {reg5}"),
 #    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Renown: {s4}{reg3}^TOTAL:  {reg5}"),
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
@@ -1368,6 +1384,27 @@ game_menus = [
     ],
     [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports"),]),
     ]
+),
+("traits_report",0,
+   "{s1}",
+   "none",
+   [(str_clear, s2),
+    (try_for_range, ":trait", slot_trait_elf_friend, slot_trait_fell_beast+1),
+      (troop_slot_eq, "trp_traits", ":trait", 1),
+      
+      # Title string = First title string + 2*(slot-1)
+      (store_sub, ":title_string", ":trait", 1),
+      (val_add, ":title_string", ":title_string"),
+      (val_add, ":title_string", tld_first_trait_string),
+      (str_store_string, s5, ":title_string"),
+      (val_add, ":title_string", 1),
+      (str_store_string, s6, ":title_string"), #description string
+    
+      (str_store_string, s2, "@{s2}^^{s5}^{s6}"),
+    (try_end),
+    (str_store_string, s1, "@Traits gained:^{s2}"),
+    ],
+    [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports")])]
 ),
 
 ("camp",0,

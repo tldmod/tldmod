@@ -2643,6 +2643,17 @@ scripts = [
       # (troop_get_slot, ":troop_renown", "trp_player", slot_troop_renown),
       # (store_div, ":renown_bonus", ":troop_renown", 25),
       # (val_add, ":limit", ":renown_bonus"),
+      
+      # MV: Add ranks bonus - note that it also counts ranks with dead and turned-hostile factions
+      (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+        (call_script, "script_get_faction_rank", ":faction"),
+        (val_add, ":limit", reg0),
+        (try_begin),
+		  (eq, ":faction", "$players_kingdom"),
+          (val_add, ":limit", reg0), # double for home faction
+        (try_end),
+      (try_end),
+      
       (assign, reg0, ":limit"),
       (set_trigger_result, reg0),
 ]),
@@ -16511,13 +16522,29 @@ scripts = [
 ]),
 
 ##### TLD 808 TRAITS ###############################################################3
+
+#script_gain_trait
+#input: trait number - see slot_trait_*
+("gain_trait",[
+    (store_script_param, ":trait", 1),
+    
+    (troop_set_slot, "trp_traits", ":trait", 1),
+    
+    # Title string = First title string + 2*(slot-1)
+    (store_sub, ":title_string", ":trait", 1),
+    (val_add, ":title_string", ":title_string"),
+    (val_add, ":title_string", tld_first_trait_string),
+    (str_store_string, s5, ":title_string"),
+    (display_log_message, "@New trait gained: {s5}.", color_good_news),
+    (play_sound, "snd_gong"),
+]),
+
 #script_gain_trait_blessed
 ("cf_gain_trait_blessed",[
-	(check_quest_active|neg, "qst_trait_blessed"),
+    (troop_slot_eq, "trp_traits", slot_trait_blessed, 0),
 	(troop_get_type, ":race","$g_player_troop"),
 	(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
-	(setup_quest_text, "qst_trait_blessed"),
-	(start_quest, "qst_trait_blessed"),
+    (call_script, "script_gain_trait", slot_trait_blessed),
 	(troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 20),
 	(troop_raise_proficiency_linear, "trp_player", wpt_two_handed_weapon, 20),
 	(troop_raise_proficiency_linear, "trp_player", wpt_polearm, 20),
@@ -16529,125 +16556,107 @@ scripts = [
 ]), 
 #script_gain_trait_reverent
 ("cf_gain_trait_reverent",[
-	(check_quest_active|neg, "qst_trait_reverent"),
-	(setup_quest_text, "qst_trait_reverent"),
-	(start_quest, "qst_trait_reverent"),
+    (troop_slot_eq, "trp_traits", slot_trait_reverent, 0),
+    (call_script, "script_gain_trait", slot_trait_reverent),
 ]), 
 #script_gain_trait_merciful
 ("cf_gain_trait_merciful",[
-	(check_quest_active|neg, "qst_trait_merciful"),
-	(setup_quest_text, "qst_trait_merciful"),
-	(start_quest, "qst_trait_merciful"),
+    (troop_slot_eq, "trp_traits", slot_trait_merciful, 0),
+    (call_script, "script_gain_trait", slot_trait_merciful),
 ]), 
 #script_gain_trait_elf_friend
 ("cf_gain_trait_elf_friend",[
-	(check_quest_active|neg, "qst_trait_elf_friend"),
-	(setup_quest_text, "qst_trait_elf_friend"),
-	(start_quest, "qst_trait_elf_friend"),
+    (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 0),
+    (call_script, "script_gain_trait", slot_trait_elf_friend),
 ]), 
 #script_gain_trait_kings_man
 ("cf_gain_trait_kings_man",[
-	(check_quest_active|neg, "qst_trait_rohan_friend"),
-	(setup_quest_text, "qst_trait_rohan_friend"),
-	(start_quest, "qst_trait_rohan_friend"),
+    (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 0),
+    (call_script, "script_gain_trait", slot_trait_rohan_friend),
 ]), 
 #script_gain_trait_stewarts_blessing
 ("cf_gain_trait_stewarts_blessing",[
-	(check_quest_active|neg, "qst_trait_gondor_friend"),
-	(setup_quest_text, "qst_trait_gondor_friend"),
-	(start_quest, "qst_trait_gondor_friend"),
+    (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 0),
+    (call_script, "script_gain_trait", slot_trait_gondor_friend),
 ]), 
 #script_gain_trait_brigand_friend
 ("cf_gain_trait_brigand_friend",[
-	(check_quest_active|neg, "qst_trait_brigand_friend"),
-	(setup_quest_text, "qst_trait_brigand_friend"),
-	(start_quest, "qst_trait_brigand_friend"),
+    (troop_slot_eq, "trp_traits", slot_trait_brigand_friend, 0),
+    (call_script, "script_gain_trait", slot_trait_brigand_friend),
 ]), 
 #script_gain_trait_oathkeeper
 ("cf_gain_trait_oathkeeper",[
-	(check_quest_active|neg, "qst_trait_oathkeeper"),
+    (troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 0),
 	(try_begin),
-		(check_quest_active, "qst_trait_oathbreaker"),
-		(cancel_quest, "qst_trait_oathbreaker"),
+        (troop_slot_eq, "trp_traits", slot_trait_oathbreaker, 1),
+        (troop_set_slot, "trp_traits", slot_trait_oathbreaker, 0),
 	(try_end),
-	(setup_quest_text, "qst_trait_oathkeeper"),
-	(start_quest, "qst_trait_oathkeeper"),
+    (call_script, "script_gain_trait", slot_trait_oathkeeper),
 ]), 
 #script_gain_trait_oathbreaker
 ("cf_gain_trait_oathbreaker",[
-	(check_quest_active|neg, "qst_trait_oathbreaker"),
+    (troop_slot_eq, "trp_traits", slot_trait_oathbreaker, 0),
 	(try_begin),
-		(check_quest_active, "qst_trait_oathkeeper"),
-		(cancel_quest, "qst_trait_oathkeeper"),
+        (troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 1),
+        (troop_set_slot, "trp_traits", slot_trait_oathkeeper, 0),
 	(try_end),
-	(setup_quest_text, "qst_trait_oathbreaker"),
-	(start_quest, "qst_trait_oathbreaker"),
+    (call_script, "script_gain_trait", slot_trait_oathbreaker),
 ]), 
 #script_gain_trait_orc_pit_champion
 ("cf_gain_trait_orc_pit_champion",[
-	(check_quest_active|neg, "qst_trait_orc_pit_champion"),
-	(setup_quest_text, "qst_trait_orc_pit_champion"),
-	(start_quest, "qst_trait_orc_pit_champion"),
+    (troop_slot_eq, "trp_traits", slot_trait_orc_pit_champion, 0),
+    (call_script, "script_gain_trait", slot_trait_orc_pit_champion),
 ]), 
 #script_gain_trait_despoiler
 ("cf_gain_trait_despoiler",[
-	(check_quest_active|neg, "qst_trait_despoiler"),
-	(setup_quest_text, "qst_trait_despoiler"),
-	(start_quest, "qst_trait_despoiler"),
+    (troop_slot_eq, "trp_traits", slot_trait_despoiler, 0),
+    (call_script, "script_gain_trait", slot_trait_despoiler),
 ]), 
 #script_gain_trait_accursed
 ("cf_gain_trait_accursed",[
-	(check_quest_active|neg, "qst_trait_accursed"),
-	(setup_quest_text, "qst_trait_accursed"),
-	(start_quest, "qst_trait_accursed"),
+    (troop_slot_eq, "trp_traits", slot_trait_accursed, 0),
+    (call_script, "script_gain_trait", slot_trait_accursed),
 ]), 
 #script_gain_trait_berserker
 ("cf_gain_trait_berserker",[
-	(check_quest_active|neg, "qst_trait_berserker"),
+    (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
 	(troop_raise_attribute, "trp_player", ca_strength, 2),
-	(setup_quest_text, "qst_trait_berserker"),
-	(start_quest, "qst_trait_berserker"),
+    (call_script, "script_gain_trait", slot_trait_berserker),
 ]), 
 #script_gain_trait_stealthy
 ("cf_gain_trait_stealthy",[
-	(check_quest_active|neg, "qst_trait_stealthy"),
-	(setup_quest_text, "qst_trait_stealthy"),
-	(start_quest, "qst_trait_stealthy"),
+    (troop_slot_eq, "trp_traits", slot_trait_stealthy, 0),
+    (call_script, "script_gain_trait", slot_trait_stealthy),
 ]), 
 #script_gain_trait_infantry_captain
 ("cf_gain_trait_infantry_captain",[
-	(check_quest_active|neg, "qst_trait_infantry_captain"),
-	(setup_quest_text, "qst_trait_infantry_captain"),
-	(start_quest, "qst_trait_infantry_captain"),
+    (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 0),
+    (call_script, "script_gain_trait", slot_trait_infantry_captain),
 ]), 
 #script_gain_trait_archer_captain
 ("cf_gain_trait_archer_captain",[
-	(check_quest_active|neg, "qst_trait_archer_captain"),
-	(setup_quest_text, "qst_trait_archer_captain"),
-	(start_quest, "qst_trait_archer_captain"),
+    (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 0),
+    (call_script, "script_gain_trait", slot_trait_archer_captain),
 ]), 
 #script_gain_trait_cavalry_captain
 ("cf_gain_trait_cavalry_captain",[
-	(check_quest_active|neg, "qst_trait_cavalry_captain"),
-	(setup_quest_text, "qst_trait_cavalry_captain"),
-	(start_quest, "qst_trait_cavalry_captain"),
+    (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 0),
+    (call_script, "script_gain_trait", slot_trait_cavalry_captain),
 ]), 
 #script_gain_trait_command_voice
 ("cf_gain_trait_command_voice",[
-	(check_quest_active|neg, "qst_trait_command_voice"),
+    (troop_slot_eq, "trp_traits", slot_trait_command_voice, 0),
 	(troop_get_type, ":race","$g_player_troop"),
 	(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
 	(troop_raise_attribute, "trp_player", ca_charisma, 2),
-	(setup_quest_text, "qst_trait_command_voice"),
-	(start_quest, "qst_trait_command_voice"),
+    (call_script, "script_gain_trait", slot_trait_command_voice),
 ]), 
 #script_gain_trait_battle_scarred
 ("cf_gain_trait_battle_scarred",[
-	(check_quest_active|neg, "qst_trait_battle_scarred"),
+    (troop_slot_eq, "trp_traits", slot_trait_battle_scarred, 0),
 	(troop_get_type, ":race","$g_player_troop"),
 	(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
-	(setup_quest_text, "qst_trait_battle_scarred"),
-	(start_quest, "qst_trait_battle_scarred"),
+    (call_script, "script_gain_trait", slot_trait_battle_scarred),
 	(troop_raise_attribute, "trp_player", ca_charisma, -1),
 	(store_skill_level, ":skill", skl_ironflesh, "trp_player"),
 	(neg|ge, ":skill", 10),
@@ -16655,7 +16664,7 @@ scripts = [
 ]), 
 #script_gain_trait_fell_beast
 ("cf_gain_trait_fell_beast",[
-	(check_quest_active|neg, "qst_trait_fell_beast"),
+    (troop_slot_eq, "trp_traits", slot_trait_fell_beast, 0),
 	(troop_get_type, ":race","$g_player_troop"),
 	(is_between, ":race", tf_orc_begin, tf_orc_end),
 	(troop_raise_attribute, "trp_player", ca_strength, 5),
@@ -16669,28 +16678,26 @@ scripts = [
 	(troop_raise_proficiency_linear, "trp_player", wpt_polearm, 10),
 	(troop_raise_proficiency_linear, "trp_player", wpt_archery, 10),
 	(troop_raise_proficiency_linear, "trp_player", wpt_throwing, 10),
-	(setup_quest_text, "qst_trait_fell_beast"),
-	(start_quest, "qst_trait_fell_beast"),
+    (call_script, "script_gain_trait", slot_trait_fell_beast),
 ]), 
 #script_gain_trait_foe_hammer
 ("cf_gain_trait_foe_hammer",[
-		(check_quest_active|neg, "qst_trait_foe_hammer"),
+        (troop_slot_eq, "trp_traits", slot_trait_foe_hammer, 0),
 		(troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 10),
 		(troop_raise_proficiency_linear, "trp_player", wpt_two_handed_weapon, 10),
 		(troop_raise_proficiency_linear, "trp_player", wpt_polearm, 10),
 		(troop_raise_proficiency_linear, "trp_player", wpt_archery, 10),
 		(troop_raise_proficiency_linear, "trp_player", wpt_throwing, 10),
-		(setup_quest_text, "qst_trait_foe_hammer"),
-		(start_quest, "qst_trait_foe_hammer"),
+        (call_script, "script_gain_trait", slot_trait_foe_hammer),
 		(store_skill_level, ":skill", skl_tactics, "trp_player"),
 		(neg|ge, ":skill", 10),
 		(troop_raise_skill, "trp_player", skl_tactics, 1),
 ]), 
 #script_check_trait_captain
 ("cf_check_trait_captain",[
-		(check_quest_active|neg, "qst_trait_archer_captain"),
-		(check_quest_active|neg, "qst_trait_infantry_captain"),
-		(check_quest_active|neg, "qst_trait_cavalry_captain"),
+        (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 0),
+        (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 0),
+        (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 0),
 		(party_get_num_companion_stacks, ":numstacks", "p_main_party"),
 		(assign, ":inf_count", 0),
 		(assign, ":arc_count", 0),
@@ -16755,7 +16762,7 @@ scripts = [
 #script_check_agent_armor
 ("check_agent_armor",[
 	(try_begin),
-		(check_quest_active|neg, "qst_trait_berserker", 1),
+        (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
 		(troop_get_inventory_slot, ":armor", "trp_player", ek_body),
 		(try_begin),
 		  (neg|ge, ":armor", 1),
@@ -17322,7 +17329,7 @@ scripts = [
 		(val_min, "$meta_stealth", 10),
 	(try_end),
 	(try_begin),
-		(check_quest_active, "qst_trait_stealthy", 1),
+        (troop_slot_eq, "trp_traits", slot_trait_stealthy, 1),
 		(try_begin),(    eq, "$current_companions_total", 0),(val_add, "$meta_stealth", 3),
 		 (else_try),(neg|eq, "$current_companions_total", 0),(val_add, "$meta_stealth", 1),
 		(try_end),

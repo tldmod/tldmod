@@ -20,7 +20,7 @@ default_kingdom_relations = [("outlaws",-0.1),("deserters", -0.1),("mountain_ban
 factions = [
   ("no_faction","No Faction",0, 0.9, [], []),
   ("commoners","Commoners",0, 0.1,[("player_faction",0.1)], []),
-  ("outlaws","Savages", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x888888),
+  ("outlaws","Savages and Bandits", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x888888),
 # Factions before this point are hardwired into the game end their order should not be changed.
 #
 ##TLD FACTIONS BEGIN##########

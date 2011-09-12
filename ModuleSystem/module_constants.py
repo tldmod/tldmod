@@ -767,6 +767,31 @@ slot_troop_strings_end = 131
 slot_troop_payment_request = 132
 slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
+# TRAIT SLOTS (=troop slots)
+tld_first_trait_string = "str_trait_title_elf_friend"
+
+slot_trait_elf_friend        = 1
+slot_trait_gondor_friend     = 2
+slot_trait_rohan_friend      = 3
+slot_trait_brigand_friend    = 4
+slot_trait_blessed           = 5
+slot_trait_reverent          = 6
+slot_trait_merciful          = 7
+slot_trait_bravery           = 8
+slot_trait_oathkeeper        = 9
+slot_trait_oathbreaker       = 10
+slot_trait_orc_pit_champion  = 11
+slot_trait_despoiler         = 12
+slot_trait_accursed          = 13
+slot_trait_stealthy          = 14
+slot_trait_berserker         = 15
+slot_trait_infantry_captain  = 16
+slot_trait_archer_captain    = 17
+slot_trait_cavalry_captain   = 18
+slot_trait_command_voice     = 19
+slot_trait_foe_hammer        = 20
+slot_trait_battle_scarred    = 21
+slot_trait_fell_beast        = 22
 
 ########################################################
 ##  QUEST SLOTS            #############################
@@ -1151,7 +1176,7 @@ fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can 
 
 # faction ,initial strength, culture,  faction lord,   faction marshall,   [5 tiers of troops],                                                                                                                                           [reinforcement templates, prisoner trains],                                               main banner,     map party banner,   [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                               faction capital           side              home theater, advance camp
 faction_init = [
-("fac_gondor"  ,4500,mtf_culture_1,["trp_gondor_lord"  ,"trp_gondor_marshall"],["trp_gondor_commoner",      "trp_gondor_militiamen",        "trp_footmen_of_gondor",         "trp_gondor_swordsmen",           "trp_veteran_knight_of_gondor"  ],["pt_gondor_reinf_a",  "pt_gondor_reinf_b",  "pt_gondor_reinf_c",  "pt_gondor_p_train"],  "spr_banner_a",  "icon_mfp_gondor",  [-1,                        "trp_gondor_militiamen",         "trp_ranger_of_ithilien",       "trp_gondor_swordsmen",           "trp_swordsmen_of_the_tower_guard"],"p_town_minas_tirith",    faction_side_good,theater_SE,"p_advcamp_gondor"),
+("fac_gondor"  ,4500,mtf_culture_1,["trp_gondor_lord"  ,"trp_knight_1_3"     ],["trp_gondor_commoner",      "trp_gondor_militiamen",        "trp_footmen_of_gondor",         "trp_gondor_swordsmen",           "trp_veteran_knight_of_gondor"  ],["pt_gondor_reinf_a",  "pt_gondor_reinf_b",  "pt_gondor_reinf_c",  "pt_gondor_p_train"],  "spr_banner_a",  "icon_mfp_gondor",  [-1,                        "trp_gondor_militiamen",         "trp_ranger_of_ithilien",       "trp_gondor_swordsmen",           "trp_swordsmen_of_the_tower_guard"],"p_town_minas_tirith",    faction_side_good,theater_SE,"p_advcamp_gondor"),
 ("fac_rohan"   ,4500,mtf_culture_2,["trp_rohan_lord"   ,"trp_rohan_lord"     ],["trp_rohan_youth",          "trp_squire_of_rohan",          "trp_rider_of_rohan",            "trp_veteran_rider_of_rohan",     "trp_eorl_guard_of_rohan"       ],["pt_rohan_reinf_a",   "pt_rohan_reinf_b",   "pt_rohan_reinf_c",   "pt_rohan_p_train"],   "spr_banner_b",  "icon_mfp_rohan",   [-1,                        "trp_footman_of_rohan",          "trp_thengel_guard_of_rohan",   "trp_veteran_footman_of_rohan",   "trp_king_s_man_of_rohan"],         "p_town_edoras",          faction_side_good,theater_SW,"p_advcamp_rohan"),
 ("fac_isengard",5500,mtf_culture_3,["trp_isengard_lord","trp_knight_1_17"    ],["trp_orc_snaga_of_isengard","trp_uruk_hai_of_isengard",     "trp_large_uruk_hai_of_isengard","trp_fighting_uruk_hai_warrior",  "trp_white_hand_rider"          ],["pt_isengard_reinf_a","pt_isengard_reinf_b","pt_isengard_reinf_c","pt_isengard_p_train"],"spr_banner_s",  "icon_mfp_isengard",["trp_orc_of_isengard",     "trp_uruk_hai_of_isengard",      "trp_uruk_hai_tracker",         "trp_fighting_uruk_hai_champion", "trp_fighting_uruk_hai_pikeman"],   "p_town_isengard",        faction_side_hand,theater_SW,"p_advcamp_isengard"),
 ("fac_mordor"  ,7900,mtf_culture_3,["trp_mordor_lord"  ,"trp_mordor_lord"    ],["trp_orc_snaga_of_mordor",  "trp_orc_of_mordor",            "trp_large_orc_of_mordor",       "trp_fell_morgul_orc",            "trp_great_warg_rider_of_mordor"],["pt_mordor_reinf_a",  "pt_mordor_reinf_b",  "pt_mordor_reinf_c",  "pt_mordor_p_train"],  "spr_banner_c",  "icon_mfp_mordor",  ["trp_orc_snaga_of_mordor", "trp_large_orc_archer_of_mordor","trp_warg_rider_of_gorgoroth",  "trp_black_uruk_of_barad_dur",    "trp_uruk_slayer_of_mordor"],       "p_town_minas_morgul",    faction_side_eye ,theater_SE,"p_advcamp_mordor"),

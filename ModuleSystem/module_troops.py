@@ -2406,9 +2406,9 @@ troops = [
    [itm_mearas_reward,itm_lorien_armor_c,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_trainer_4,0x00000008120000024b146a491440e12400000000001cc4ad0000000000000000],
 
-["gondor_marshall","Gondor Marshall","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
-   [itm_gondor_warhorse,itm_pel_leader,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword,itm_gondor_bow,itm_gondor_arrows,],
-      attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_1|knows_trainer_3,0x00000006ff003004225b8ac89c62d2f400000000001ec8f90000000000000000],
+# ["gondor_marshall","Gondor Marshall","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+   # [itm_gondor_warhorse,itm_pel_leader,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword,itm_gondor_bow,itm_gondor_arrows,],
+      # attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_1|knows_trainer_3,0x00000006ff003004225b8ac89c62d2f400000000001ec8f90000000000000000],
 	  
  
   #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
@@ -3285,6 +3285,7 @@ troops = [
 ["troops_end","troops_end","troops_end",tf_hero,no_scene,reserved,fac_commoners,[],0,0,0,0,0],
 ["no_troop","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0],
 ["skill2item_type","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array for working with merchant skills as indicator of quantity of items in shop
+["traits","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array of traits (0/1)
 #Player history array
 ["log_array_entry_type","_","_",0,0,0,fac_commoners,   [],      0,0,0,0],
 ["log_array_entry_time","_","_",0,0,0,fac_commoners,   [],      0,0,0,0],
