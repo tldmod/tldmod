@@ -3614,8 +3614,13 @@ scripts = [
       (val_mul, reg0, reg0),
       (val_sub, reg0, 27),
       (val_div, reg0, 100),
-	  (troop_get_type,":troop",":troop"),
-	  (try_begin),(eq, ":troop", tf_orc),(val_div, reg0, 2),(try_end), #GA: plain orcs get strength halved
+	  #(troop_get_type,":troop",":troop"),
+	  #(try_begin),(eq, ":troop", tf_orc),(val_div, reg0, 2),(try_end), #GA: plain orcs get strength halved - MV: NO. They already have lower strength because of their levels - see below how low-tier orcs are inferior. If you want orc parties to be weaker in AI battles, change their party templates to have less high-tier and more low-tier troops. And do the math to make sure you don't go too far.
+      # Here's the output
+      # Humans (tiers 1-7): 2,4,6, 9,16,25,31 (Uruks use these too)
+      # Elves (T1-6):       2,5,7,10,19,29
+      # Dwarves (T1-6):     2,4,7, 9,18,28
+      # Orcs (T1-6):        1,3,5, 8,14,22
 ]),
 
 #script_party_calculate_regular_strength:
@@ -6124,7 +6129,7 @@ scripts = [
             #(assign, ":quest_target_faction", reg0),
             (assign, ":quest_gold_reward", 2000),
             (assign, ":quest_xp_reward", 2500),
-            (assign, ":quest_rank_reward", 200),
+            (assign, ":quest_rank_reward", 20),
             (assign, ":quest_importance", 12),
             (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 80),

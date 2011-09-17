@@ -1107,7 +1107,7 @@ game_menus = [
 ),
 
 ("morale_report",0,
-   "^^^^^{s1}",
+   "^^^{s1}",
    "none",
    [#(set_background_mesh, "mesh_ui_default_menu_window"),
     (call_script, "script_get_player_party_morale_values"),
@@ -1290,7 +1290,7 @@ game_menus = [
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])]
 ),
 ("party_size_report",0,
-   "^^^^^{s1}", "none",
+   "^^^^{s1}", "none",
    [(call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
 
@@ -1345,7 +1345,7 @@ game_menus = [
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
       (str_store_string, s2, "@{s2}^_________{s4}: {reg1} ({s23})"),
     (try_end),
-    (str_store_string, s1, "@Faction strengths report:^{s2}"),
+    (str_store_string, s1, "@_________Faction strengths report:^{s2}"),
     ],
     [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports")])]
 ),
@@ -1552,11 +1552,15 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_rank",[],"Increase ambient faction rank points by 100.",[
+   ("camp_mvtest_rank",[],"Give me local money, rank and influence.",[
+    (troop_add_gold, "trp_player", 10000),
     (call_script, "script_increase_rank", "$ambient_faction", 100),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
+    (faction_get_slot, reg1, "$ambient_faction", slot_faction_influence),
+    (val_add, reg1, 100),
+    (faction_set_slot, "$ambient_faction", slot_faction_influence, reg1),
     (str_store_faction_name, s1, "$ambient_faction"),
-    (display_message, "@{s1} rank points increased to {reg0}!", 0x30FFC8),
+    (display_message, "@{s1} rank points increased to {reg0}, influence to {reg1}!", 0x30FFC8),
    ]),
    # ("camp_mvtest_rankfunc",[],"Test rank functions.",[
     # (try_for_range, ":rank_index", 0, 13),
@@ -1580,13 +1584,13 @@ game_menus = [
     # (try_end),
     # (display_message, "@Evil factions defeated! Now wait for it...", 0x30FFC8),
    # ]),
-   ("camp_mvtest_influence",[],"Increase ambient faction influence by 100.",[
-    (faction_get_slot, reg0, "$ambient_faction", slot_faction_influence),
-    (val_add, reg0, 100),
-    (faction_set_slot, "$ambient_faction", slot_faction_influence, reg0),
-    (str_store_faction_name, s1, "$ambient_faction"),
-    (display_message, "@{s1} influence increased to {reg0}!", 0x30FFC8),
-   ]),
+   # ("camp_mvtest_influence",[],"Increase ambient faction influence by 100.",[
+    # (faction_get_slot, reg0, "$ambient_faction", slot_faction_influence),
+    # (val_add, reg0, 100),
+    # (faction_set_slot, "$ambient_faction", slot_faction_influence, reg0),
+    # (str_store_faction_name, s1, "$ambient_faction"),
+    # (display_message, "@{s1} influence increased to {reg0}!", 0x30FFC8),
+   # ]),
    ("camp_mvtest_reinf",[],"Reinforce me!",[
     (party_get_num_companions, ":old_size", "p_main_party"),
     (try_for_range, ":unused", 0, 10),
@@ -1651,7 +1655,7 @@ game_menus = [
    ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
    ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
    ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
-#   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
    # ("camp_mvtest_wm",[],"Where is my party?",[
     # (try_begin),
       # (call_script, "script_cf_party_is_south_of_white_mountains", "p_main_party"),
@@ -1706,14 +1710,14 @@ game_menus = [
      # (party_add_prisoners, reg0, "trp_peasant_woman", 10),
      # (display_message, "@Tribal orcs with women spawned!", 0x30FFC8),
    #]),
-   ("camp_mvtest_npcs",[],"Get all good npcs.",[
-    (try_for_range, ":npc", companions_begin, companions_end),
-		(store_troop_faction, ":fac", ":npc"),
-		(faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
-		(party_add_members,"p_main_party",":npc",1),
-	(try_end),
-    (display_message, "@You got them all, pardner!", 0x30FFC8),
-   ]),
+   # ("camp_mvtest_npcs",[],"Get all good npcs.",[
+    # (try_for_range, ":npc", companions_begin, companions_end),
+		# (store_troop_faction, ":fac", ":npc"),
+		# (faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
+		# (party_add_members,"p_main_party",":npc",1),
+	# (try_end),
+    # (display_message, "@You got them all, pardner!", 0x30FFC8),
+   # ]),
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])]            
 ),
 ("mvtest_destroy_faction",0,

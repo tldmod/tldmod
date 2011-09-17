@@ -69,9 +69,10 @@ party_templates = [
 ("sacrificed_messenger", "Sacrificed Messenger", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[]),
 
 #TLD Scouts
-("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_squire_of_gondor,1,1),(trp_gondor_militiamen,3,5),(trp_bowmen_of_gondor,3,5)]),
-("blackroot_auxila","Blackroot Vale Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_master_blackroot_vale_archer,1,1),(trp_veteran_blackroot_vale_archer,2,12),(trp_blackroot_vale_archer,2,15)]),
-("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_axeman     |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_knight_of_lamedon,1,1),(trp_footman_of_lamedon,2,25),(trp_veteran_of_lamedon,0,10),(trp_warrior_of_lamedon,0,10)]),
+#MV: in general, average strength should be 20-60 (except Beornings who have scouts only)
+("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_squire_of_gondor,1,1),(trp_bowmen_of_gondor,3,7),(trp_gondor_militiamen,3,7)]), #34-74
+("blackroot_auxila","Blackroot Vale Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_master_blackroot_vale_archer,1,1),(trp_veteran_blackroot_vale_archer,1,3),(trp_blackroot_vale_archer,2,7)]), #33-71
+("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_axeman     |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_warrior_of_lamedon,1,1),(trp_veteran_of_lamedon,1,5),(trp_footman_of_lamedon,4,8)]), #31-71
 ("lossarnach_auxila"   ,"Lossarnach Auxilia",icon_axeman     |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_axemaster_of_lossarnach,1,1),(trp_axeman_of_lossarnach,2,25),(trp_woodsman_of_lossarnach,0,10),(trp_vet_axeman_of_lossarnach,0,10)]),
 ("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_axeman  |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_gelin_archer,0,8),(trp_pinnath_gelin_spearman,2,15),(trp_warrior_of_pinnath_gelin,0,9),(trp_pinnath_gelin_plainsman,6,30)]),
 ("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_master_ranger_of_ithilien,1,1),(trp_veteran_ranger_of_ithilien,3,5),(trp_ranger_of_ithilien,3,5)]),
@@ -180,29 +181,39 @@ party_templates = [
 #("dwarven_legion","Dwarven Legion",icon_|carries_goods(2),0,fac_,soldier_personality,[(trp_,0,0)]),
 
 ####TLD Caravans
-("gondor_caravan"  ,"Gondor Caravan"    ,icon_supply_gondor|carries_goods(2),0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,1,6),(trp_gondor_swordsmen,10,20),(trp_gondor_spearmen,10,20),(trp_archer_of_gondor,10,20)]),
-("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(2),0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,15,15),(trp_veteran_skirmisher_of_rohan,15,15),(trp_veteran_footman_of_rohan,15,15)]),
-("imladris_caravan","Rivendell Caravan" ,icon_mule         |carries_goods(2),0,fac_imladris,prisoner_train_personality,[(trp_knight_of_rivendell,10,10),(trp_rivendell_veteran_infantry,20,20),(trp_rivendell_veteran_sentinel,20,20)]),
-("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(2),0,fac_lorien  ,prisoner_train_personality,[(trp_galadhrim_royal_swordsman,10,10),(trp_lothlorien_warden,20,20),(trp_lothlorien_veteran_infantry,20,20)]),
-("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(2),0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_master_archer,10,10),(trp_greenwood_veteran_archer,20,20),(trp_greenwood_veteran_spearman,20,20)]),
-("dale_caravan"    ,"Dale Caravan"      ,icon_mule         |carries_goods(2),0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,10,10),(trp_dale_veteran_warrior,20,20),(trp_laketown_archer,20,20)]),
-("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(2),0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_expert_axeman,10,10),(trp_dwarven_lookout,20,20),(trp_dwarven_hardened_warrior,20,20)]),
+# MV guidelines:
+# - make good caravans stronger than evil (allegedly good guys care more about supplies)
+# - favor guard and militia units, no elite troops should be tied down to escort duty (tiers 2-4)
+# - in general, caravans are stronger than raiders, but weaker than patrols
+# - aim for strength from 150-300 to 300-600
+("gondor_caravan"  ,"Gondor Caravan"    ,icon_supply_gondor|carries_goods(2),0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,1,4),(trp_squire_of_gondor,4,10),(trp_gondor_swordsmen,4,10),(trp_gondor_spearmen,4,10),(trp_archer_of_gondor,7,14),(trp_gondor_militiamen,30,50)]), # strength 280-582
+("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(2),0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,1,4),(trp_squire_of_rohan,4,10),(trp_veteran_skirmisher_of_rohan,7,14),(trp_veteran_footman_of_rohan,6,14),(trp_guardsman_of_rohan,26,42)]), # strength 246-496
+("imladris_caravan","Rivendell Caravan" ,icon_mule         |carries_goods(2),0,fac_imladris,prisoner_train_personality,[(trp_rivendell_cavalry,1,4),(trp_rivendell_veteran_sentinel,4,10),(trp_rivendell_sentinel,12,24),(trp_rivendell_veteran_scout,10,16),(trp_rivendell_infantry,14,24)]), # strength 254-508
+("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(2),0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_veteran_warden,2,6),(trp_lothlorien_elite_infantry,4,10),(trp_lothlorien_archer,14,30),(trp_lothlorien_warden,12,18),(trp_lothlorien_veteran_infantry,16,28)]), # strength 298-600
+("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(2),0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_vet_sentinel,1,4),(trp_greenwood_royal_spearman,4,10),(trp_greenwood_sentinel,12,24),(trp_greenwood_veteran_scout,10,16),(trp_greenwood_spearman,14,24)]), # strength 254-508
+("dale_caravan"    ,"Dale Caravan"      ,icon_mule         |carries_goods(2),0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,1,5),(trp_laketown_archer,5,10),(trp_merchant_guard_of_dale,4,8),(trp_dale_warrior,8,16),(trp_laketown_scout,18,30)]), # strength 198-399
+("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(2),0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_axeman,2,6),(trp_dwarven_bowman,2,4),(trp_dwarven_hardened_warrior,12,24),(trp_dwarven_lookout,16,24),(trp_dwarven_warrior,20,40)]), # strength 264-514
 
-("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(2),0,fac_mordor  ,prisoner_train_personality, [(trp_large_orc_archer_of_mordor, 10, 15), (trp_large_orc_of_mordor, 10, 15), (trp_large_uruk_of_mordor, 10, 15), (trp_olog_hai, 0, 2)]),
-("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(2),0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 10, 15), (trp_large_orc_despoiler, 10, 15), (trp_uruk_hai_tracker, 10, 15)]),
+("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(2),0,fac_mordor  ,prisoner_train_personality, [(trp_large_uruk_of_mordor, 4, 12), (trp_large_orc_archer_of_mordor, 8, 18), (trp_large_orc_of_mordor, 8, 18), (trp_orc_archer_of_mordor, 14, 22), (trp_orc_of_mordor, 18, 30)]), # strength 200-408
+("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(2),0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 6, 16), (trp_uruk_hai_of_isengard, 6, 10), (trp_uruk_hai_tracker, 6, 10), (trp_orc_of_isengard, 20, 40)]), # strength 159-324
 
 
 ####TLD Prisoner Trains
-("gondor_p_train"  ,"Gondor Prisoner Train"    ,icon_supply_gondor,0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,5,10), (trp_gondor_swordsmen,10,15), (trp_gondor_spearmen,10,15), (trp_archer_of_gondor,10,15)]),
-("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan ,0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,10,15), (trp_veteran_skirmisher_of_rohan,10,15), (trp_veteran_footman_of_rohan,10,15)]),
-("imladris_p_train","Rivendell Prisoner Train" ,icon_mule         ,0,fac_imladris,prisoner_train_personality,[(trp_knight_of_rivendell,5,10), (trp_rivendell_veteran_infantry,15,20), (trp_rivendell_veteran_sentinel,15,20)]),
-("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         ,0,fac_lorien  ,prisoner_train_personality,[(trp_galadhrim_royal_swordsman,5,10), (trp_lothlorien_warden,15,20), (trp_lothlorien_veteran_infantry,15,20)]),
-("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         ,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_master_archer,5,10), (trp_greenwood_veteran_archer,15,20), (trp_greenwood_veteran_spearman,15,20)]),
-("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         ,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,5,10), (trp_dale_veteran_warrior,15,20), (trp_laketown_archer,15,20)]),
-("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         ,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_expert_axeman,5,10), (trp_dwarven_hardened_warrior,15,20), (trp_dwarven_lookout,15,20)]),
+# MV guidelines:
+# - make evil prisoner trains stronger than good (allegedly evil guys care more about guarding slaves/prisoners)
+# - as for caravans: favor guard and militia units, no elite troops should be tied down to escort duty (tiers 1-3)
+# - prisoner trains should be about half the size of caravans, but slow and interceptable, so give them more slow tier 1 troops and no/less cavalry
+# - aim for strength from 100-200 to 150-300
+("gondor_p_train"  ,"Gondor Prisoner Train"    ,icon_supply_gondor,0,fac_gondor  ,prisoner_train_personality,[(trp_footmen_of_gondor,1,2), (trp_bowmen_of_gondor,4,6), (trp_gondor_militiamen,15,25), (trp_gondor_commoner,30,45)]), # strength 150-238
+("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan ,0,fac_rohan   ,prisoner_train_personality,[(trp_footman_of_rohan,2,4), (trp_dismounted_skirmisher_of_rohan,4,6), (trp_squire_of_rohan,4,6), (trp_guardsman_of_rohan,8,12), (trp_rohan_youth,24,30)]), # strength 130-200
+("imladris_p_train","Rivendell Prisoner Train" ,icon_mule         ,0,fac_imladris,prisoner_train_personality,[(trp_rivendell_veteran_infantry,2,4), (trp_rivendell_sentinel,2,4), (trp_rivendell_infantry,6,10), (trp_rivendell_veteran_scout,6,8), (trp_rivendell_scout,25,35)]), # strength 138-216
+("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         ,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_archer,6,10), (trp_lothlorien_veteran_infantry,6,10), (trp_lothlorien_warden,6,10), (trp_lothlorien_infantry,25,35)]), # strength 152-240
+("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         ,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_sentinel,2,4), (trp_greenwood_veteran_spearman,2,4), (trp_greenwood_spearman,6,10), (trp_greenwood_veteran_scout,6,8), (trp_greenwood_scout,25,35)]), # strength 138-216
+("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         ,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_guard_of_dale,1,2), (trp_dale_warrior,1,2), (trp_laketown_bowmen,1,2), (trp_dale_man_at_arms,4,6), (trp_laketown_scout,6,10), (trp_dale_militia,21,25)]), # strength 100-150
+("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         ,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_hardened_warrior,2,4), (trp_dwarven_scout,4,6), (trp_dwarven_warrior,4,6), (trp_dwarven_lookout,8,14), (trp_dwarven_apprentice,25,35)]), # strength 140-220
 
-("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2),0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_archer_of_mordor,10,15), (trp_large_orc_of_mordor,10,15), (trp_large_uruk_of_mordor,10,15)]),
-("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2),0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,3,8), (trp_large_uruk_hai_of_isengard,10,15), (trp_large_orc_despoiler,10,15), (trp_uruk_hai_tracker,10,15)]),
+("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2),0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_of_mordor,6,8), (trp_orc_tracker_of_mordor,6,10), (trp_orc_of_mordor,16,24), (trp_orc_archer_of_mordor,16,24), (trp_orc_snaga_of_mordor,40,60)]), # strength 196-294
+("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2),0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,4,6), (trp_large_orc_of_isengard,10,14), (trp_orc_of_isengard,24,36), (trp_orc_snaga_of_isengard,40,60)]), # strength 182-268
 
 ("kingdom_hero_party","War Party",icon_flagbearer_a|pf_show_faction|pf_default_behavior,0,fac_commoners,soldier_personality,[]),
 

@@ -1,4 +1,4 @@
-889
+888
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -478,7 +478,7 @@ qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^TOTAL:__{reg5}
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
-qstr_Faction_strengths_re Faction_strengths_report:^{s2}
+qstr__________Faction_str _________Faction_strengths_report:^{s2}
 qstr_Loyal Loyal
 qstr_Devoted Devoted
 qstr_Fond Fond
@@ -505,13 +505,12 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
-qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0}!
-qstr_{s1}_influence_incre {s1}_influence_increased_to_{reg0}!
+qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0},_influence_to_{reg1}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_place_enabled!
-qstr_You_got_them_all_par You_got_them_all,_pardner!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
+qstr_Faction_strengths_re Faction_strengths_report:^{s2}
 qstr_Attacking_enemy_part Attacking_enemy_party_{s11}
 qstr_Unknown_{reg3}_ Unknown({reg3})
 qstr_SE SE

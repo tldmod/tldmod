@@ -1334,11 +1334,11 @@ ws_caravan_limit_multiplier = 5
 ws_scout_vp   = 20
 ws_raider_vp  = 40
 ws_patrol_vp  = 100
-ws_caravan_vp = 100
+ws_caravan_vp = 100 # strength 150-300 (up to 300-600); valued more because they represent logistics
 ws_alone_vp   = 80  # for hero-led parties (alone).
-ws_host_vp    = 200  # for hero-led parties (hosts). Not done: Only those killed can flip faction strength to lower level
+ws_host_vp    = 120  # for hero-led parties (hosts). 
 ws_p_train_vp = 40
-ws_center_vp  = 500  # loss of center
+ws_center_vp  = 300  # loss of center
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_low  = 5
@@ -1355,7 +1355,7 @@ garrison_limit_evil_low  = garrison_limit_low*120/100
 garrison_limit_evil_med  = garrison_limit_med*120/100
 garrison_limit_evil_high = garrison_limit_high*120/100
 
-# Siegabilty flag values
+# Siegability flag values
 tld_siegable_always  = 1  # siege if attstr>fac_str_ok
 tld_siegable_normal  = 2  # siege if attstr>fac_str_ok and defstr<fac_str_weak
 tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_str_very_weak; may be redundant, but gives some flexibility
