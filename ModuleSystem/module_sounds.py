@@ -292,7 +292,7 @@ sounds = [
 ("elves_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
 ("lorien_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["elf_elfsong.wav", "good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
 ("beorn_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.ogg","d_dog7.ogg","d_carpenter1.ogg"]), 
-("rohan_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","good_workshop.wav", "good_eagle01.wav","good_bird01.wav","d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.wav"]),
+("rohan_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","good_workshop.wav", "good_eagle01.wav","good_bird01.wav","d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg"]),
 ("dwarf_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["dwarves01.wav", "dwarves02.wav","d_blacksmith2.ogg","osgiliath05.wav","osgiliath02.wav"]),
 ("dale_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.ogg", "d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg","osgiliath04.wav"]),
 ("rhun_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","evil_crow.wav", "d_saw_short3.ogg","d_blacksmith2.ogg","d_dog7.ogg"]),
