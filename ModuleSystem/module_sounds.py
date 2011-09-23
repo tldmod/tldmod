@@ -226,6 +226,9 @@ sounds = [
 ("haradrim_die",sf_priority_10,  ["wilhelm.wav","man_death_8.wav","man_death_8b.wav","man_death_11.wav","man_death_14.wav","man_death_16.wav","man_death_18.wav","man_death_21.wav","man_death_29.wav","man_death_40.wav","man_death_44.wav","man_death_46.wav","man_death_48.wav","man_death_64.wav"]),# ["man_fall_1.wav","man_fall_2.wav","man_fall_3.wav","man_fall_4.wav"]),
 #tf_easterling	= 8 #(Rhun/khand)
 #tf_dwarf = 9
+("dwarf_yell",sf_priority_6|sf_vol_8, ["dwarf1.wav","dwarf10.wav","dwarf11.wav","dwarf12.wav","dwarf2.wav","dwarf4.wav","dwarf5.wav","dwarf7.wav","dwarf9.wav","dwarf_01.wav","dwarf_02.wav","dwarf_04.wav","dwarf_05.wav","dwarf_06.wav","dwarf_07.wav",
+                        "dwarf_09.wav","man_shortyell_6.wav","man_shortyell_5.wav","man_shortyell_4.wav","man_yell_b_23.wav","man_yell_16.wav","man_yell_4_2.wav","man_yell_13.wav"]),
+("dwarf_victory",sf_priority_5|sf_vol_10, ["silence.wav","silence.wav","silence.wav","dwarf8.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
 #tf_troll = 10
 ("troll_die",sf_priority_10,  ["troll_death_1.wav"]),
 ("troll_hit",sf_priority_7|sf_vol_10, ["troll_hit_1.wav","troll_hit_1.wav","troll_hit_1.wav"]), 

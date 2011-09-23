@@ -10503,6 +10503,19 @@ scripts = [
 			(assign, "$enemy_side_race", tf_male),
 		(try_end),
 	(try_end),
+
+	# ugly fix: remove riderless wargs from essential parties before battle
+	(try_for_range,":warg",warg_ghost_begin,warg_ghost_end),
+		(party_count_companions_of_type, ":num", "p_collective_friends", ":warg"),
+		(try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_friends"),(try_end),
+		(party_remove_members, "p_collective_friends", ":warg",  ":num"),
+		(party_count_companions_of_type, ":num", "p_collective_ally", ":warg"),
+		(try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_ally"),(try_end),
+		(party_remove_members, "p_collective_ally", ":warg",  ":num"),
+		(party_count_companions_of_type, ":num", "p_collective_enemy", ":warg"),
+		(try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_enemy"),(try_end),
+		(party_remove_members, "p_collective_enemy", ":warg",  ":num"),
+	(try_end),
 ]),
 
 # script_get_first_agent_with_troop_id

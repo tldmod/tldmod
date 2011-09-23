@@ -464,7 +464,7 @@ skins = [
      ("manface_midage_2",0xfde4c8d8,["hair_blonde"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ("manface_rugged"  ,0xffb0aab5,["hair_blonde"],[0xff171313, 0xff07080c]),
 	], #man_face_textures,
-    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
+    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_dwarf_yell"),(voice_victory,"snd_dwarf_victory")], #voice sounds
     "skel_dwarf", 1.0,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)

@@ -311,7 +311,7 @@ dwarf 1
  1  hair_blonde_dwarf 
  1  dwarf_beard_blonde 
  6  manface_young 4291879136 1 3  hair_blonde  4289742615  4289742615  4283443737  manface_young_2 4291551456 1 4  hair_blonde  4289742615  4284689944  4283443737  4279832588  manface_7 4290824392 1 4  hair_blonde  4286787610  4283443737  4279832588  4278979865  manface_midage 4292866017 1 3  hair_blonde  4281276430  4279702291  4278650892  manface_midage_2 4259629272 1 3  hair_blonde  4281276430  4279702291  4278650892  manface_rugged 4289768117 1 2  hair_blonde  4279702291  4278650892 
- 6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_man_yell  6 snd_man_victory 
+ 6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_dwarf_yell  6 snd_dwarf_victory 
  skel_dwarf 1.000000 
 2 3
 8

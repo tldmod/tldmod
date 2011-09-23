@@ -1,4 +1,4 @@
-888
+891
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -234,6 +234,9 @@ qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bea
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
+qstr_WARGS_FOUND_IN_p_col WARGS_FOUND_IN_p_collective_friends
+qstr_WARGS_FOUND_IN_p_coll WARGS_FOUND_IN_p_collective_ally
+qstr_WARGS_FOUND_IN_p_colle WARGS_FOUND_IN_p_collective_enemy
 qstr_You_have_run_into_a_ You_have_run_into_a_trap!
 qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_bandits!
 qstr_Holding Holding

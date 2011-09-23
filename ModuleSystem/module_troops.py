@@ -537,7 +537,7 @@ troops = [
    [itm_dale_billhook,itm_dale_shield_c,itm_dale_sword,itm_dale_armor_f,itm_leather_boots,itm_dale_helmet_b,itm_dale_helmet_a,],
       attr_tier_4,wp_tier_4,knows_athletics_2|knows_ironflesh_2|knows_power_strike_2|knows_shield_2,vaegir_face_young_1,vaegir_face_older_2],
 ["dale_bill_master","Dale_Bill_Master","Dale_Bill_Masters",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,
-   [itm_dale_billhook,itm_dale_shield_b,itm_dale_sword,itm_dale_armor_h,itm_dale_armor_i,itm_dale_armor_j,itm_leather_boots,],
+   [itm_dale_billhook,itm_dale_armor_h,itm_dale_armor_i,itm_dale_armor_j,itm_leather_boots,],
       attr_tier_5,wp_tier_5,knows_athletics_3|knows_shield_2|knows_ironflesh_3|knows_power_strike_2,vaegir_face_middle_1,vaegir_face_older_2],
 ["merchant_squire_or_dale","Merchant_Squire_of_Dale","Merchant_Squires_of_Dale",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,
    [itm_dale_pike,itm_dale_sword_long,itm_dale_armor_b,itm_leather_boots,itm_dale_shield_d,itm_dale_helmet_e,],
