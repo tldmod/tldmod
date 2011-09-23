@@ -284,7 +284,7 @@ qstr_{s57}_and_{s58} {s57}_and_{s58}
 qstr_{s57}_{s58} {s57},_{s58}
 qstr_{reg3?She:He} {reg3?She:He}
 qstr_^{s59} ^{s59}
-qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_serves_{s55}_of_{s56}.^}}{reg9?{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:}{s59}
+qstr_{reg6?:{reg4?{s54}_i {reg6?:{reg4?{s54}_is_the_ruler_of_{s56}.^:{s54}_serves_{s55}_of_{s56}.^}}{reg9?{reg3?She:He}_is_the_{reg3?lady:lord}_of_{s58}.:}{s59}{reg10?^{reg3?She:He}_died_on_the_battlefield!:}
 qstr_The_last_time_you_sa The_last_time_you_saw_{reg1?her:him},_{s1}
 qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_{s50} The_{s50}

@@ -122,7 +122,7 @@ game_menus = [
 			(assign, reg20, ":i"), 
 			(assign, ":i", centers_end),  # break
 		(try_end),
-		(call_script, "script_tld_party_relocate_near_party", "p_main_party", reg20, 16),
+		(call_script, "script_tld_party_relocate_near_party", "p_main_party", reg20, 5), # MV: was 16km - too far
 	
 		# initialization of "search troop" menu (only once)  mtarini
 		(assign, "$cheat_menu_add_troop_search_race", len(race_names)),  # any race
@@ -1107,7 +1107,7 @@ game_menus = [
 ),
 
 ("morale_report",0,
-   "^^^{s1}",
+   "^^{s1}",
    "none",
    [#(set_background_mesh, "mesh_ui_default_menu_window"),
     (call_script, "script_get_player_party_morale_values"),

@@ -1950,6 +1950,24 @@ scripts = [
 						(try_begin),
 							(lt,":rnd",5), # die with 5% prob when lost a battle
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+                            (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
+                            (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
+                            # MV: additional random chance to survive if there are too few lords in the faction
+                            (assign, ":total_lords", 0), # exclude non-active kings, but count himself
+                            (try_for_range, ":some_lord", kingdom_heroes_begin, kingdom_heroes_end),
+                                (store_troop_faction, ":some_lord_faction", ":some_lord"),
+                                (eq, ":some_lord_faction", ":cur_troop_faction"),
+                                # is not a king OR is a marshall (=don't count non-active kings)
+                                (this_or_next|neg|faction_slot_eq, ":some_lord_faction", slot_faction_leader, ":some_lord"),
+                                (faction_slot_eq, ":some_lord_faction", slot_faction_marshall, ":some_lord"),
+                                (neg|troop_slot_eq, ":some_lord", slot_troop_wound_mask, wound_death), #not dead
+                                (val_add, ":total_lords", 1),
+                            (try_end),
+                            # 1 lord left (him) 0%, 2 lords left 10% (some small factions),... 6 lords left 50% chance to die
+                            (store_random_in_range,":rnd_last_chance",0,100),
+                            (store_sub, ":last_chance", ":total_lords", 1),
+                            (val_mul, ":last_chance", 10),
+                            (lt, ":rnd_last_chance", ":last_chance"), # die for real?
 							(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id",":nonempty_winner_party"),
 						(try_end),
 					(try_end),
@@ -12578,7 +12596,12 @@ scripts = [
          (str_store_string, s59, "@^{s59}"),
        (try_end),
        (assign, reg9, ":num_centers"),
-       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
+       (assign, reg10, 0), #alive
+       (try_begin),
+         (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #dead
+         (assign, reg10, 1),
+       (try_end),
+       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}", 0),
 #       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
      (try_end),
@@ -17039,8 +17062,15 @@ scripts = [
 	(str_store_troop_name, s1, ":hero"),
 	(store_troop_faction,":fac",":hero"),
 	(str_store_faction_name, s2, ":fac"),
-	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!", color_bad_news),
+    (assign, ":news_color", color_bad_news),
+    (try_begin),
+        (store_relation, ":rel", "$players_kingdom", ":fac"),
+        (lt, ":rel", 0),
+        (assign, ":news_color", color_good_news),
+	(try_end),
+	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!", ":news_color"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
+    (call_script, "script_update_troop_notes", ":hero"),
 ]),
 #script_build_mound_for_dead_hero
 ("build_mound_for_dead_hero",[
@@ -17049,6 +17079,7 @@ scripts = [
 	(troop_set_slot, ":hero", slot_troop_wound_mask, wound_death),
 	(str_store_troop_name, s1, ":hero"),
 	(store_troop_faction,":fac",":hero"),
+    (set_spawn_radius, 0),
 	(try_begin),
 		(faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
 		(spawn_around_party, ":place", "pt_mound"),

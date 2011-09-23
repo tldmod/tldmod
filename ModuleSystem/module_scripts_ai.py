@@ -1778,32 +1778,33 @@ ai_scripts = [
 # Find the closest enemy center from current center
 # Input: arg1 - center_no
 # Output: reg0 - enemy_center_no
-# Position registers used: pos1, pos2
 ("find_closest_random_enemy_center_from_center", [
         (store_script_param, ":center_no", 1),
         (store_faction_of_party, ":faction", ":center_no"),
-        (party_get_position, pos1, ":center_no"),
+        (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
         (assign, ":dist", 1000000000),
-        (assign, reg0, -1),
+        (assign, ":result", -1),
         (try_for_range, ":cur_center", centers_begin, centers_end),
             (party_is_active, ":cur_center"), #TLD
 			(party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
             (store_faction_of_party, ":cur_faction", ":cur_center"),
             (store_relation, ":rel", ":cur_faction", ":faction"),
             (lt, ":rel", 0),
-            (party_get_position, pos2, ":cur_center"),
-            (get_distance_between_positions, ":cur_dist", pos1, pos2),
+            (party_slot_eq, ":cur_center", slot_center_theater, ":faction_theater"), #MV: must be in the active theater to make sense
+            (call_script, "script_get_tld_distance", ":center_no", ":cur_center"),
+            (assign, ":cur_dist", reg0),
             (lt, ":cur_dist", ":dist"),
-            (store_random_in_range, ":rand", 1, 5),
-            (le, ":rand", 1),
+            (store_random_in_range, ":rand", 0, 100),
+            (lt, ":rand", 50), # 50% to not ignore (was 25%)
             (assign, ":dist", ":cur_dist"),
-            (assign, reg0, ":cur_center"),
+            (assign, ":result", ":cur_center"),
         (else_try),
             (lt, ":rel", 0),
-            (eq, reg0, -1),
-            (assign, reg0, ":cur_center"),
+            (eq, ":result", -1),
+            (assign, ":result", ":cur_center"),
             (assign, ":dist", ":cur_dist"),
         (try_end),
+        (assign, reg0, ":result"),
 ]),
     
 # script_calc_mid_point

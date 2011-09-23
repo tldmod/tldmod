@@ -1331,14 +1331,14 @@ ws_caravan_limit_multiplier = 5
 #ws_host_limit_multiplier = 4
 
 # TLD Party victory points. Faction strength decreased by these when party is killed, winner gets half of it.
-ws_scout_vp   = 20
-ws_raider_vp  = 40
-ws_patrol_vp  = 100
-ws_caravan_vp = 100 # strength 150-300 (up to 300-600); valued more because they represent logistics
+ws_scout_vp   = 20  # strength 30-60
+ws_raider_vp  = 40  # strength 80-160
+ws_patrol_vp  = 100 # strength 300-600
+ws_caravan_vp = 100 # strength 250-500; valued more because they represent logistics
 ws_alone_vp   = 80  # for hero-led parties (alone).
-ws_host_vp    = 120  # for hero-led parties (hosts). 
-ws_p_train_vp = 40
-ws_center_vp  = 300  # loss of center
+ws_host_vp    = 120 # for hero-led parties (hosts). 
+ws_p_train_vp = 40  # strength 150-250
+ws_center_vp  = 300 # loss of center
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_low  = 5
