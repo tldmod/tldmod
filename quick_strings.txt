@@ -538,11 +538,11 @@ qstr_{s1}engaging_{s7} {s1}engaging_{s7}
 qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
 qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
-qstr_Faction_spawn_losses Faction_spawn_losses_for_{s4}_after_{reg1}_days^
-qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
-qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
-qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
-qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}_(Party_Str:_{reg4})
+qstr_{s4}_spawn_losses_af {s4}_spawn_losses_after_{reg1}_days^
+qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
+qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
 qstr_{s1}^P._trains_lost_ {s1}^P._trains_lost-arrived:_{reg1}_Strength_loss:_0{reg2?-{reg2}:}_Active:_{reg3}
 qstr_{s1}^^Total_strength {s1}^^Total_strength_loss_from_spawns:_{reg1}^
 qstr_{s1}^Total_strength_ {s1}^Total_strength_gain:_{reg1}

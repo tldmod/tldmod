@@ -655,7 +655,7 @@ simple_triggers = [
 #Troop AI: Merchants thinking
 (8,[(try_for_parties, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan),
-		(assign, reg0, ":party_no"),
+		#(assign, reg0, ":party_no"),
 		#(display_message, "@DEBUG: Caravan {reg0}", 0xff00fd33),
 		(party_is_in_any_town, ":party_no"),
 		#(display_message, "@DEBUG: Point 1", 0xff00fd33),
@@ -688,16 +688,17 @@ simple_triggers = [
 			(try_end),
 			(assign, ":target_center", -1),
 
-			#(try_begin), #Make sure escorted caravan continues to its original destination.
+			(try_begin), #Make sure escorted caravan continues to its original destination.
 			#	(eq, "$caravan_escort_party_id", ":party_no"),
 			#	(neg|party_is_in_town, ":party_no", "$caravan_escort_destination_town"),
 			#	(assign, ":target_center", "$caravan_escort_destination_town"),
 			#(else_try),
-			(call_script, "script_cf_select_random_town_at_peace_with_faction_in_trade_route", ":cur_center", ":merchant_faction"),
-			(assign, ":target_center", reg0),
-			(eq, ":target_center", -1),
-			(remove_party, ":party_no"), #MV: no towns to travel to, remove
-		#(try_end),
+			  (call_script, "script_cf_select_random_town_at_peace_with_faction_in_trade_route", ":cur_center", ":merchant_faction"),
+			  (assign, ":target_center", reg0),
+			  (eq, ":target_center", -1),
+			  (remove_party, ":party_no"), #MV: no towns to travel to, remove
+		    (try_end),
+            
 			(is_between, ":target_center", centers_begin, centers_end),
 			#(display_message, "@DEBUG: target", 0xff00fd33),
 			(neg|party_is_in_town, ":party_no", ":target_center"),
@@ -1995,12 +1996,14 @@ simple_triggers = [
 	(try_end),
 	]),
 
-# TLD deal with prisoner trains reached destination
-(8,[(try_for_parties, ":party_no"),
+# TLD deal with prisoner trains reached destination (MV: shortened trigger from 8 to 3, so prisoners would update sooner)
+(3,[(try_for_parties, ":party_no"),
 		(party_is_active, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
 		(party_is_in_any_town, ":party_no"),
 		(party_get_cur_town, ":cur_center", ":party_no"),
+# (str_store_party_name, s22, ":cur_center"),
+# (display_message, "@DEBUG: Prisoner train arrives in {s22}"),
 		(assign, "$g_move_heroes", 1),
 		(party_detach, ":party_no"),
 		#(party_get_position, pos1, ":party_no"),
