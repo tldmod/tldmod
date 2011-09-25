@@ -544,9 +544,9 @@ qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Str_loss:_{reg2}_Active:_{re
 qstr_{s1}^Patrols_lost:_{ {s1}^Patrols_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
 qstr_{s1}^Caravans_lost:_ {s1}^Caravans_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
 qstr_{s1}^P._trains_lost_ {s1}^P._trains_lost-arrived:_{reg1}_Strength_loss:_0{reg2?-{reg2}:}_Active:_{reg3}
-qstr_{s1}^^Total_strength {s1}^^Total_strength_loss_from_spawns:_{reg1}^
-qstr_{s1}^Total_strength_ {s1}^Total_strength_gain:_{reg1}
-qstr_{s1}^Total_strength_l {s1}^Total_strength_loss:_{reg2}
+qstr_{s1}^^Total_strength {s1}^^Total_strength_gain:_{reg1}
+qstr_{s1}^Total_strength_ {s1}^Total_strength_loss:_{reg2}
+qstr_{s1}^_Strength_loss_ {s1}^(Strength_loss_from_spawns:_{reg3})
 qstr_{s1}^Difference:_{re {s1}^Difference:_{reg1}
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}

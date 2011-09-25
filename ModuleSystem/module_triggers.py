@@ -220,6 +220,10 @@ triggers = [
                 (lt, ":rand", ":chance"), # 60% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000),
                 (val_div, ":limit", 3500*1000), #14 for fac.str. 3500; 28 for 7000
+                # also limit by number of centers = 4+4*centers (8,12,16,20,..), to prevent minor factions map overcrowding 
+                (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_town),
+                (store_mul, ":center_limit", reg0, 4), (val_add, ":center_limit", 4),
+                (val_min, ":limit", ":center_limit"),
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_scout),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
@@ -256,6 +260,10 @@ triggers = [
                 (lt, ":rand", ":chance"), # 45% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_raider_limit_multiplier*1000),
                 (val_div, ":limit", 3500*1000), #9 for fac.str. 3500
+                # also limit by number of centers = 2+3*centers (5,8,11,14,..), to prevent minor factions map overcrowding 
+                (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_town),
+                (store_mul, ":center_limit", reg0, 3), (val_add, ":center_limit", 2),
+                (val_min, ":limit", ":center_limit"),
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_raider),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
@@ -288,6 +296,10 @@ triggers = [
                 (lt, ":rand", ":chance"), # 30% for fac.str. 3500
                 (store_mul, ":limit", ":strength", ws_patrol_limit_multiplier*1000),
                 (val_div, ":limit", 3500*1000), #6 for fac.str. 3500
+                # also limit by number of centers = 1+2*centers (3,5,7,9,..), to prevent minor factions map overcrowding 
+                (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_town),
+                (store_mul, ":center_limit", reg0, 2), (val_add, ":center_limit", 1),
+                (val_min, ":limit", ":center_limit"),
                 (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_patrol),
                 (lt, reg0, ":limit"),
                 (set_spawn_radius, 1),
