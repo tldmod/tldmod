@@ -3117,7 +3117,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      (try_end),
      (eq, ":item_exists", 1),
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
-     (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
+     (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
      (ge, ":influence", ":price"), # player has enough influence to buy?
 	 (try_begin),
 	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
@@ -3154,7 +3154,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      (call_script, "script_apply_attribute_bonuses"), # update player attributes for rings and such
      (call_script, "script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
-     (store_mul, ":price", ":rank_index", 10), # reward item price = 10*rank
+     (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
      (val_sub, ":influence", ":price"),
      (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
      (str_store_faction_name, s1, "$g_talk_troop_faction"),
@@ -3173,7 +3173,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #can't give orders to kings
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
-     (ge, ":influence", 10)], #the lowest cost among the actions below
+     (ge, ":influence", 5)], #the lowest cost among the actions below
 "I have a new task for you.", "lord_give_order_ask",[]],
 
 [anyone,"lord_give_order_ask", [], "Yes?", "lord_give_order",[]],
@@ -3181,18 +3181,18 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 
 [anyone|plyr,"lord_give_order", [
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 30)], 
-"Follow me. [Costs 30/{reg2} influence]", "lord_give_order_answer", [
+    (ge, reg2, 20)], 
+"Follow me. [Costs 20/{reg2} influence]", "lord_give_order_answer", [
      (assign, "$temp", spai_accompanying_army),
      (assign, "$temp_2", "p_main_party"),
-     (assign, "$tld_action_cost", 30)]],
+     (assign, "$tld_action_cost", 20)]],
 
 [anyone|plyr,"lord_give_order", [
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 10)], 
-"Go to... [Costs 10/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, 5)], 
+"Go to... [Costs 5/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_holding_center),
-     (assign, "$tld_action_cost", 10)]],
+     (assign, "$tld_action_cost", 5)]],
 
   #[anyone|plyr,"lord_give_order", [],
    # "Raid around the village of...", "lord_give_order_details_ask",
@@ -3202,17 +3202,17 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 
 [anyone|plyr,"lord_give_order", [
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 15)],  
-"Patrol around... [Costs 15/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, 10)],  
+"Patrol around... [Costs 10/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_patrolling_around_center),
-     (assign, "$tld_action_cost", 15)]],
+     (assign, "$tld_action_cost", 10)]],
 
 [anyone|plyr,"lord_give_order", [
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 40)], 
-"Engage enemies around... [Costs 40/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, 25)], 
+"Engage enemies around... [Costs 25/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_raiding_around_center), #not really, changed later to spai_patrolling_around_center
-     (assign, "$tld_action_cost", 40)]],
+     (assign, "$tld_action_cost", 25)]],
 
 [anyone|plyr,"lord_give_order", [(neg|troop_slot_eq, "$g_talk_troop", slot_troop_player_order_state, spai_undefined)],
    "I won't need you for some time. You are free to do as you like.", "lord_give_order_stop", []],

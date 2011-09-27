@@ -301,18 +301,11 @@ scripts = [
 
 # script_rank_income_to_player
 # PlayerRewardSystem: rank_income (mtarini)
-# gives to player the income of his rank MV: and adds influence too
+# gives to player the income of his rank
 # messes up s24
 ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
-	#	(faction_get_slot, ":rank_points", ":fac", slot_faction_rank),
-    #MV: gain (daily) influence = rank_points/50
-	#GA: no influence income stream
-        # (faction_get_slot, ":influence", ":fac", slot_faction_influence),
-        # (store_div, ":inf_increase", ":rank_points", 50),
-        # (val_add, ":influence", ":inf_increase"),
-        # (faction_set_slot, ":fac", slot_faction_influence, ":influence"),
 		(call_script, "script_get_faction_rank", ":fac"),
 		(assign, ":rank", reg0),
 		(gt, ":rank", 0),
@@ -433,9 +426,10 @@ scripts = [
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":new_rank", reg0),
           
-        # gain influence = 1/10 rank points. 
+        # gain influence = 1/10 rank points gain (rounded). 
           (faction_get_slot, ":val", ":fac", slot_faction_influence),
-          (store_div, ":inf_dif", ":difference", 10),
+          (store_add, ":inf_dif", ":difference", 5),
+          (val_div, ":inf_dif", 10),
           (val_add, ":val", ":inf_dif"),
           (faction_set_slot, ":fac", slot_faction_influence, ":val"),
 
@@ -4227,7 +4221,7 @@ scripts = [
         (party_get_num_attached_parties, ":num_attached_parties", ":root_party"),
         (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
           (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
-          (call_script, "script_clear_party_group", ":attached_party", ":winner_faction"),
+          (call_script, "script_clear_party_group", ":attached_party", ":winner_faction"), # TLD bug here: this will give str loss/gain twice in player battles
         (try_end),
 	  (try_end),
 ]),
