@@ -343,7 +343,7 @@ simple_triggers = [
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
          (try_end),
-         (val_min, ":strength", 9999), #limit max strength
+         (val_min, ":strength", 9995), #limit max strength
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
          (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"), #debug
 	  (try_end),

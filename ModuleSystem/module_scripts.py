@@ -3659,6 +3659,14 @@ scripts = [
         (val_mul, ":stack_strength", ":stack_size"),
         (val_add, ":strength", ":stack_strength"),
       (try_end),
+      # Evil handicap when evil player
+      (try_begin),
+        (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+        (store_faction_of_party, ":party_faction", ":party"),
+        (neg|faction_slot_eq, ":party_faction", slot_faction_side, faction_side_good),
+        (val_mul, ":strength", evil_party_str_handicap),
+        (val_div, ":strength", 100),
+      (try_end),
       (assign, reg0, ":strength"),
 ]),
 
@@ -3692,6 +3700,14 @@ scripts = [
         (val_add, ":strength", ":stack_strength"),
       (try_end),
       (party_set_slot, ":party", slot_party_cached_strength, ":strength"),
+      # Evil handicap when evil player
+      (try_begin),
+        (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+        (store_faction_of_party, ":party_faction", ":party"),
+        (neg|faction_slot_eq, ":party_faction", slot_faction_side, faction_side_good),
+        (val_mul, ":strength", evil_party_str_handicap),
+        (val_div, ":strength", 100),
+      (try_end),
       (assign, reg0, ":strength"),
 ]),
 
@@ -4182,7 +4198,7 @@ scripts = [
             (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
 		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
 		    (val_add, ":winner_strength", ":win_value"),
-            (val_min, ":winner_strength", 9999), #limit max strength
+            (val_min, ":winner_strength", 9995), #limit max strength
 	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
             #debug stuff
             (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),

@@ -184,7 +184,7 @@ slot_faction_num_towns               = 82
 slot_faction_debug_str_gain         = 148
 slot_faction_debug_str_loss         = 149
 
-slot_faction_strength               = 150 # strength 0-9999
+slot_faction_strength               = 150 # strength 0-9995
 slot_faction_party_map_banner		= 151
 slot_faction_hosts                  = 152 # number of alive hosts
 slot_faction_strength_tmp           = 153 # strength changes from killed parties enter here first, then processed through onmap trigger each hour (to make messages work ok)
@@ -1164,14 +1164,13 @@ theater_SW = 1<<1
 theater_C =  1<<2  
 theater_N =  1<<3
 
+evil_party_str_handicap = 50 # if the player is evil, evil parties and garrisons have this % of regular party strength (used in AI battles)
+
 # MV: some constants for faction strength as used in the faction AI
 fac_str_dying = 300 # less than this, go for the kill by sieging the capital
 fac_str_very_weak = 1000 # less than this, faction capital can be sieged and faction can be destroyed by capturing the capital
 fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
-#fac_str_strong = 5000 # can siege enemy centers
-#fac_str_ratio_can_attack_mul = 3 # used to determine if a faction can take aggresive stance like attacking around enemy centers or sieging
-#fac_str_ratio_can_attack_div = 2 # ...depends on enemy faction strength too, currently +50% superiority needed
 
 
 # faction ,initial strength, culture,  faction lord,   faction marshall,   [5 tiers of troops],                                                                                                                                           [reinforcement templates, prisoner trains],                                               main banner,     map party banner,   [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                               faction capital           side              home theater, advance camp
@@ -1414,7 +1413,7 @@ center_list = [
 	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_never),
 ("p_town_cair_andros", ["scn_cair_andros_center", "scn_cair_andros_castle", -1, -1, -1, "scn_cair_andros_siege", "mesh_town_cair_andros"],
 	[-1, "trp_smith_candros", "trp_no_troop", "trp_elder_cairandros", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
-	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_normal),
+	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always),
 ("p_town_calembel", ["scn_ethring_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena", "scn_ethring_siege", "mesh_town_calembel"],
 	["trp_barman_calembel", "trp_smith_calembel", "trp_merchant_calembel", "trp_elder_ethring", "pt_gondor_reinf_a", "trp_gondor_lord", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
 	["icon_mfc_ethring"],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
@@ -1569,7 +1568,7 @@ center_list = [
 	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
 ("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1,-1, "mesh_town_goodcamp"],
 	[-1, "trp_smith_ironhill", "trp_merchant_ironhill", "trp_no_troop", "pt_dwarf_reinf_a", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
-	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 2, tld_siegable_always),
+	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
 	
 # Advance camps
 # Note that scenes are borrowed from other camps where possible, or from Ironhill Camp
