@@ -486,7 +486,7 @@ items =[
 ["gondor_tower_spear","Gondorian_Tower_Spear",[("gondor_tower_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_staff,600,weight(2.35)|difficulty(0)|spd_rtng(99)|weapon_length(166)|swing_damage(23,cut)|thrust_damage(37,pierce),imodbits_weapon_good],
 ["gondor_lance","Gondor_Lance",[("amroth_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_staff,400,weight(2.35)|difficulty(0)|spd_rtng(89)|weapon_length(204)|swing_damage(20,blunt)|thrust_damage(34,pierce),imodbits_weapon_good],
 ["loss_axe","Lossarnach_Fighting_Axe",[("loss_axe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(97)|weapon_length(46)|swing_damage(40,cut)|thrust_damage(0,pierce),imodbits_weapon],
-["loss_war_axe","Lossarnach_War_Axe",[("loss_axe_2h",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry,itc_nodachi|itcf_carry_axe_back,300,weight(4.5)|difficulty(0)|spd_rtng(87)|weapon_length(75)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["loss_war_axe","Lossarnach_War_Axe",[("loss_axe_2h",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(4.5)|difficulty(0)|spd_rtng(87)|weapon_length(75)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 #
 ###########TLD LORIEN ITEMS##########
 #######LORIEN WEAPONS########

@@ -2100,8 +2100,8 @@ scene_props = [
 ("treeline_b",0,"treeline_b","0",[]),
 ("treeline_c",0,"treeline_c","0",[]),
 
-("ruins_amon_hen",0,"ruins_amon_hen","0",[]),
-("ruins_tower",0,"ruins_tower","0",[]),
+("ruins_amon_hen",0,"ruins_amon_hen","bo_ruins_amon_hen",[]),
+("ruins_tower",0,"ruins_tower","bo_ruins_tower",[]),
 
 ###TLD Tunnel System###
 ("tunnel_short",0,"tunnel_short","bo_tunnel_short", []),

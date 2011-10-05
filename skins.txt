@@ -112,20 +112,24 @@ rohan 0
  male_head 28 skinkey_chin_size 20 0 0.700000 -0.600000 Chin_Size skinkey_chin_shape 260 0 -0.600000 1.400000 Chin_Shape skinkey_chin_forward 10 0 -0.500000 0.900000 Chin_Forward skinkey_jaw_width 240 0 0.900000 -0.800000 Jaw_Width skinkey_jaw_position 210 0 -0.500000 1.000000 Jaw_Position skinkey_mouth_nose_distance 250 0 0.800000 -1.000000 Mouth-Nose_Distance skinkey_mouth_width 200 0 -0.300000 1.000000 Mouth_Width skinkey_cheeks 50 0 -1.500000 1.000000 Cheeks skinkey_nose_height 60 0 -0.400000 1.350000 Nose_Height skinkey_nose_width 70 0 -0.600000 0.700000 Nose_Width skinkey_nose_size 80 0 1.000000 -0.100000 Nose_Size skinkey_nose_shape 270 0 -0.500000 1.000000 Nose_Shape skinkey_nose_bridge 90 0 -0.200000 1.400000 Nose_Bridge skinkey_cheek_bones 100 0 -0.300000 1.500000 Cheek_Bones skinkey_eye_width 150 0 -0.200000 3.000000 Eye_Width skinkey_eye_to_eye_dist 110 0 1.500000 -0.900000 Eye_to_Eye_Dist skinkey_eye_shape 120 0 1.900000 -1.000000 Eye_Shape skinkey_eye_depth 130 0 -0.500000 1.100000 Eye_Depth skinkey_eyelids 140 0 1.000000 -1.200000 Eyelids skinkey_eyebrow_position 160 0 1.300000 -0.200000 Eyebrow_Position skinkey_eyebrow_height 170 0 -0.100000 1.900000 Eyebrow_Height skinkey_eyebrow_depth 220 0 -0.100000 0.900000 Eyebrow_Depth skinkey_eyebrow_shape 180 0 -1.100000 1.600000 Eyebrow_Shape skinkey_temple_width 230 0 1.200000 -0.700000 Temple_Width skinkey_face_depth 30 0 -0.600000 0.900000 Face_Depth skinkey_face_ratio 40 0 0.900000 -0.600000 Face_Ratio skinkey_face_width 190 0 0.000000 0.950000 Face_Width skinkey_post_edit 280 0 0.000000 1.000000 Post-Edit 
 5
  man_hair_o  man_hair_n  man_hair_q  man_hair_r  man_hair_p 
- 9
-  beard_h
-  beard_t
+ 13
+  beard_i
   beard_r
   beard_q
+  beard_b
+  beard_u
+  beard_c
   beard_e
+  beard_h
+  beard_m
+  beard_n
   beard_o
-  beard_i
-  beard_l
-  beard_j
+  beard_v
+  beard_y
 
  1  hair_blonde 
  1  beard_blonde 
- 8  rohan_face_a 4291551456 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_b 4292866017 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_c 4291879136 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_d 4292668909 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_e 4292668909 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_f 4292668909 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_g 4292668909 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_h 4292668909 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110 
+ 5  manface_young 4291879136 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  manface_young_2 4291551456 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_a 4291551456 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  rohan_face_b 4292866017 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110  manface_midage 4292866017 1 6  hair_blonde  4294967295  4294966191  4294965646  4294964863  4294957465  4294953110 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_rohan_yell  6 snd_rohan_victory 
  skel_human 1.000000 
 2 3

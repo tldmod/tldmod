@@ -288,17 +288,20 @@ skins = [
     "man_body", "man_calf_l", "m_handL",
     "male_head", rohan_face_keys,
     ["man_hair_o", "man_hair_n","man_hair_q","man_hair_r", "man_hair_p"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-    ["beard_h","beard_t","beard_r","beard_q","beard_e","beard_o","beard_i","beard_l","beard_j"], #beard meshes ,"beard_q"
+    ["beard_i","beard_r","beard_q","beard_b","beard_u","beard_c","beard_e","beard_h","beard_m","beard_n","beard_o","beard_v","beard_y"], #beard meshes
     ["hair_blonde"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("rohan_face_a",0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
-     ("rohan_face_b",0xffdfefe1,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
-     ("rohan_face_c",0xffd0e0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),     
-     ("rohan_face_d",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
-     ("rohan_face_e",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
-     ("rohan_face_f",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
-     ("rohan_face_g",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
-     ("rohan_face_h",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
+	[("manface_young"   ,0xffd0e0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),     
+	 ("manface_young_2" ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
+     ("rohan_face_a"    ,0xffcbe0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
+     ("rohan_face_b"    ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
+     ("manface_midage"  ,0xffdfefe1,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),
+#     ("rohan_face_c",0xffd0e0e0,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),     
+#     ("rohan_face_d",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
+#     ("rohan_face_e",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
+#     ("rohan_face_f",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
+#     ("rohan_face_g",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
+#     ("rohan_face_h",0xffdceded,["hair_blonde"],[0xffffffff, 0xfffffbaf, 0xfffff98e, 0xfffff67f, 0xffffd999, 0xffffc896]),    
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_rohan_yell"),(voice_victory,"snd_rohan_victory")], #voice sounds
     "skel_human", 1.0,

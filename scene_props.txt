@@ -4291,10 +4291,10 @@ spr_treeline_b 0 0 treeline_b 0 0
 spr_treeline_c 0 0 treeline_c 0 0
 
 
-spr_ruins_amon_hen 0 0 ruins_amon_hen 0 0
+spr_ruins_amon_hen 0 0 ruins_amon_hen bo_ruins_amon_hen 0
 
 
-spr_ruins_tower 0 0 ruins_tower 0 0
+spr_ruins_tower 0 0 ruins_tower bo_ruins_tower 0
 
 
 spr_tunnel_short 0 0 tunnel_short bo_tunnel_short 0

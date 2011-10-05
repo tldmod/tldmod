@@ -831,22 +831,26 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
-		(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
-		(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
-		(agent_set_position, ":agent", pos4),
 		(try_begin),
-			(neq,":agent_item",-1), 
-			# fisrt spawn:  MOUNT set hit points
-			(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
-			(agent_set_hit_points, ":agent", reg12, 1),
-			#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
-		(else_try), 
-			# second spawn: GHOST RIDER set side
-			(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
-			(agent_set_team, ":agent", reg12), # this was set just above
-			#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
-			(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
-			(assign, "$warg_to_be_replaced", -1),
+			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
+			(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
+			(agent_set_position, ":agent", pos4),
+			(try_begin),
+				(neq,":agent_item",-1), 
+				# fisrt spawn:  MOUNT set hit points
+				(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
+				(agent_set_hit_points, ":agent", reg12, 1),
+				#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+			(else_try), 
+				# second spawn: GHOST RIDER set side
+				(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
+				(agent_set_team, ":agent", reg12), # this was set just above
+				#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
+				(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
+				(assign, "$warg_to_be_replaced", -1),
+			(try_end),
+		(else_try), # UGLY FIX FOR CARRYOVER WARGS, KILL THOSE SPAWNED AT START. GA
+			(call_script, "script_remove_agent", ":agent"),
 		(try_end), 
 	(else_try), 
 		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement

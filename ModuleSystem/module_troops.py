@@ -150,7 +150,7 @@ swadian_face_young_1   = 0x0000000400000001124000000020000000000000001c008000000
 swadian_face_middle_1  = 0x0000000800000001124000000020000000000000001c00800000000000000000
 swadian_face_old_1     = 0x0000000d00000001124000000020000000000000001c00800000000000000000
 swadian_face_older_1   = 0x0000000fc0000001124000000020000000000000001c00800000000000000000
- 
+
 swadian_face_younger_2 = 0x00000000000062c76ddcdf7feefbffff00000000001efdbc0000000000000000
 swadian_face_young_2   = 0x00000003c00062c76ddcdf7feefbffff00000000001efdbc0000000000000000
 swadian_face_middle_2  = 0x00000007c00062c76ddcdf7feefbffff00000000001efdbc0000000000000000
@@ -237,30 +237,32 @@ bandit_face1   = man_face_young_1
 bandit_face2   = man_face_older_2
  
 # Many troops have these faces
-gondor_face1           = 0x000000087f00218722dc71b96c8cb6e300000000001d45330000000000000000
+gondor_face1           = 0x000000017f00018122dc71b96c8cb6e300000000001d45330000000000000000
 gondor_face2           = 0x00000009bf00200942ec7096e3a9b69c00000000001d47330000000000000000
-gondor_face3           = 0x000000002400200142ec7096e3a9b49c00000000001d47330000000000000000
+gondor_face3           = 0x000000002400200942ec7096e3a9b49c00000000001d47330000000000000000
 gondor_younger_1       = 0x00000004ef00200f070c6a374b40452c00000000001cc6690000000000000000 
 gondor_older_1         = 0x000000072e002585209c6e399260532c00000000001cd6720000000000000000 
+#TEXTUR_BIT_remind     = 0x0000000000001000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the texture bit -- mtarini
+#HAIR_BIT_remind       = 0x0000000000000001000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the hair bit -- GA
+#BEARD_BIT_remind      = 0x0000000000000110000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the beard bit -- GA
+#AGE_BITS_remind       = 0x0000000fc0000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
+#HAIR_COLOR_BITS_remind= 0x000000003f000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
 
 #MV: default Rohan face (blond, beard+moustache)
-rohan_face_younger_0   = 0x000000000000004136db6db6db6db6db00000000001db6db0000000000000000
-rohan_face_young_0     = 0x00000003c000004136db6db6db6db6db00000000001db6db0000000000000000
-rohan_face_middle_0    = 0x00000007c000004136db6db6db6db6db00000000001db6db0000000000000000
-rohan_face_old_0       = 0x0000000bc000004136db6db6db6db6db00000000001db6db0000000000000000
-rohan_face_older_0     = 0x0000000fc000004136db6db6db6db6db00000000001db6db0000000000000000
+rohan_face_younger_1   = 0x0000000000000001124000000020000000000000001c00800000000000000000
+rohan_face_young_1     = 0x0000000400000001124000000020000000000000001c00800000000000000000
+rohan_face_middle_1    = 0x0000000800000141124000000020000000000000001c00800000000000000000
+rohan_face_old_1       = 0x0000000d00000180124000000020000000000000001c00800000000000000000
+rohan_face_older_1     = 0x0000000fc00001c0124000000020000000000000001c00800000000000000000
 
-rohan_face1            = 0x000000000000020114ec6dc59280d4ec00000000001d47330000000000000000
-rohan_face2            = 0x00000009c000034114ed6ca663a9d6db00000000001d52780000000000000000
-rohan_face3            = 0x000000000000218744dc6ca463a9d6db00000000001d47250000000000000000
-rohan_middle_1         = 0x00000009c000030104ed6ca663a9d6db00000000001d47330000000000000000
-rohan_middle_2         = 0x00000003a100134704ed6ca663a9d6db00000000001d47330000000000000000
-rohan_old_1            = 0x000000078c00024114ec6dc59280d4ec00000000001d52780000000000000000
-rohan_old_2            = 0x000000058000130618a464d76384f72e00000000001d50b80000000000000000
-rohan_older_1          = 0x0000000cc9002003140000000000000000000000001c80400000000000000000 #bad facecode?
-rohan_older_2          = 0x0000000400000001124000000020000000000000001c00800000000000000000
-beorn_face1 = rohan_face1
-beorn_face2 = rohan_face2
+rohan_face_younger_2   = 0x00000000310031c24deeffffffffffff00000000001efff90000000000000000
+rohan_face_young_2     = 0x00000003b10031c34deeffffffffffff00000000001efff90000000000000000
+rohan_face_middle_2    = 0x00000008310031c54deeffffffffffff00000000001efff90000000000000000
+rohan_face_old_2       = 0x0000000cf10033054deeffffffffffff00000000001efff90000000000000000
+rohan_face_older_2     = 0x0000000ff10033054deeffffffffffff00000000001efff90000000000000000
+ 
+beorn_face1 = rohan_face_young_1
+beorn_face2 = rohan_face_old_2
 arnor_face_middle_1    = 0x00000001bd00214748ed6e47238dd70d00000000001d36f30000000000000000
 arnor_face_middle_2    = 0x000000054000418744ec6e47238dd70d00000000001d38f10000000000000000
  
@@ -270,13 +272,8 @@ arnor_face_older_2     = 0x0000000df200214814ed6e45238e498e00000000001d38e100000
 rivendell_elf_face_1   = 0x000000000d00000754d44da9148d272400000000001d36f00000000000000000
 rivendell_elf_face_2   = 0x000000008e00200905553159146da68300000000001d36b00000000000000000
 
-#TEXTUR_BIT_remind     = 0x0000000000001000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the texture bit -- mtarini
-#HAIR_BIT_remind       = 0x0000000000000001000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the hair bit -- GA
- 
 lorien_elf_face_1      = 0x0000000ec0001007256d3159348da69300000000001d36b40000000000000000
 lorien_elf_face_2      = 0x000000001400000836dd51589c88a69300000000001cd9340000000000000000
-# mirkwood_elf_face_1  = 0x000000000000300136dd51589c89c2cc00000000001ca9340000000000000000
-# mirkwood_elf_face_2  = 0x000000017f00100b368532d8aca9c2c400000000001d36a00000000000000000
 mirkwood_elf_face_1    = 0x000000000000014148ed6e47238dd70d00000000001d36f30000000000000000
 mirkwood_elf_face_2    = 0x0000000df200314914ed6e45238e498e00000000001d38e10000000000000000
 haradrim_face_1        = 0x0000000239000008209072d1708d38ab00000000001d37240000000000000000
@@ -292,10 +289,8 @@ dwarf_face_5           = 0x00000005ff002204069a936d2c6dbada00000000001d295100000
 dwarf_face_6           = 0x0000000fff0020c3069a936d2c6dbada00000000001d29510000000000000000
 dwarf_face_7           = 0x0000000fff002004069a936d2c6dbada00000000001d29510000000000000000
  
-orc_face_young_a       = 0x000000018000000236db6db6db6db6db00000000001db6db0000000000000000
-orc_face_young_b       = 0x000000018000200f36db6db6db6db6db00000000001db6db0000000000000000
-orc_face1              = orc_face_young_a
-orc_face2              = orc_face_young_b
+orc_face1              = 0x000000018000000236db6db6db6db6db00000000001db6db0000000000000000
+orc_face2              = 0x000000018000200f36db6db6db6db6db00000000001db6db0000000000000000
  
 urukhai_face_low1      = 0x0000000180000001003b6db6db6db6db00000000000000000000000000000000
 urukhai_face_low2      = 0x00000001932021c3003a8e53356a271200000000000000000000000000000000
@@ -317,11 +312,6 @@ rhun_man1              = 0x000000020000318723acb7639104bbb600000000001e447200000
 rhun_man2              = 0x0000000ebf00734d39fefff7db52ffff00000000001ee6bb0000000000000000
 khand_man1             = 0x00000009bf00838a242ea7515044d37e00000000001d54b80000000000000000
 khand_man2             = 0x0000000fff00d4cd6bf7d3f5fb9179ff00000000001de6f90000000000000000
-pirate_face2           = man_face_older_2
- 
-undead_face1   = 0x00000000002000000000000000000000
-undead_face2   = 0x000000000020010000001fffffffffff
- 
 mordor_man1            = 0x000000013f00000013045438c402929200000000001d4ab00000000000000000
 mordor_man2            = 0x0000000fff00200429cd7d495667732e00000000001d5cf90000000000000000
 
@@ -1047,83 +1037,83 @@ troops = [
 #ROHAN
 ["rohan_youth","Rohan_Youth","Rohan_Youths",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_rohan_armor_a,itm_rohan_armor_b,itm_rohirrim_short_axe,itm_spear,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
-      attr_tier_1,wp_tier_1,knows_common,rohan_face1,rohan_face2],
+      attr_tier_1,wp_tier_1,knows_common,rohan_face_younger_1,rohan_face_middle_2],
 ["guardsman_of_rohan","Guardsman_of_Rohan","Guardsmen_of_Rohan",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_light_helmet_a,itm_rohan_light_helmet_b,itm_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_good_mace,],
-      attr_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_power_strike_1,rohan_face1,rohan_face2],
+      attr_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_power_strike_1,rohan_face_young_1,rohan_face_old_2],
 ["footman_of_rohan","Footman_of_Rohan","Footmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_d,itm_rohan_armor_e,itm_rohan_armor_f,itm_rohan_light_helmet_b,itm_rohan_inf_helmet_a,itm_rohirrim_short_axe,itm_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,],
-      attr_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_2|knows_ironflesh_1,rohan_face1,rohan_face2],
+      attr_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_2|knows_ironflesh_1,rohan_face_young_1,rohan_face_old_2],
 ["veteran_footman_of_rohan","Veteran_Footman_of_Rohan","Veteran_Footmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_j,itm_rohan_armor_k,itm_rohan_armor_l,itm_rohan_inf_helmet_b,itm_rohirrim_short_axe,itm_heavy_throwing_spear,itm_rohan_spear,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_3|knows_ironflesh_2,rohan_face1,rohan_face2],
+      attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_3|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
 ["elite_footman_of_rohan","Elite_Footman_of_Rohan","Elite_Footmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_rohan_armor_m,itm_rohan_armor_n,itm_rohan_armor_o,itm_rohan_inf_helmet_b,itm_rohirrim_long_hafted_axe,itm_rohirrim_short_axe,itm_heavy_throwing_spear,itm_rohan_spear,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_2,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
 ["folcwine_guard_of_rohan","Folcwine_Guard_of_Rohan","Folcwine_Guards_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_rohan_armor_s,itm_rohan_inf_helmet_b,itm_rohirrim_long_hafted_axe,itm_rohirrim_short_axe,itm_heavy_throwing_spear,itm_rohirrim_throwing_axe,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_6,wp_tier_6,knows_common|knows_athletics_4|knows_shield_2|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_5,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_athletics_4|knows_shield_2|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_5,rohan_face_middle_1,rohan_face_old_2],
 ["raider_of_rohan","Frealaf_Raider","Frealaf_Raiders",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_o,itm_rohan_armor_n,itm_rohan_armor_m,itm_rohirrim_long_hafted_axe,itm_rohirrim_short_axe,itm_rohirrim_throwing_axe,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,],
-      attr_tier_6,wp_tier_6,knows_common|knows_athletics_7|knows_shield_3|knows_power_throw_2|knows_power_strike_6|knows_ironflesh_5,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_athletics_7|knows_shield_3|knows_power_throw_2|knows_power_strike_6|knows_ironflesh_5,rohan_face_middle_1,rohan_face_old_2],
 ["heavy_swordsman_of_rohan","Heavy_Swordsman_of_Rohan","Heavy_Swordsmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_m,itm_rohan_armor_n,itm_rohan_armor_o,itm_rohan_inf_helmet_b,itm_rohan_sword_c,],
-      attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_strike_4|knows_ironflesh_2,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_strike_4|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
 ["warden_of_methuseld","Warden_of_Methuseld","Wardens_of_Methuseld",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_rohan_armor_p,itm_rohan_armor_q,itm_rohan_armor_r,itm_rohan_inf_helmet_b,itm_rohan_sword_c,itm_rohan_shield_g,],
-      attr_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_shield_2|knows_power_strike_6|knows_ironflesh_6,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_shield_2|knows_power_strike_6|knows_ironflesh_6,rohan_face_old_1,rohan_face_older_2],
 ["skirmisher_of_rohan","Skirmisher_of_Rohan","Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_light_helmet_a,itm_rohan_light_helmet_b,itm_nomad_bow,itm_khergit_arrows,itm_heavy_throwing_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_rohirrim_courser,itm_rohirrim_courser2,],
-      attr_tier_3,wp_tier_3,knows_horse_archery_2|knows_riding_3|knows_power_draw_2|knows_power_throw_2,rohan_face1,rohan_face2],
+      attr_tier_3,wp_tier_3,knows_horse_archery_2|knows_riding_3|knows_power_draw_2|knows_power_throw_2,rohan_face_young_1,rohan_face_middle_2],
 ["veteran_skirmisher_of_rohan","Veteran_Skirmisher_of_Rohan","Veteran_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_j,itm_rohan_armor_k,itm_rohan_armor_l,itm_rohan_archer_helmet_a,itm_rohan_archer_helmet_b,itm_nomad_bow,itm_khergit_arrows,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohirrim_courser,itm_rohirrim_courser2,],
-      attr_tier_4,wp_tier_4,knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1|knows_power_throw_3,rohan_face1,rohan_face2],
+      attr_tier_4,wp_tier_4,knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1|knows_power_throw_3,rohan_face_middle_1,rohan_face_old_2],
 ["elite_skirmisher_of_rohan","Elite_Skirmisher_of_Rohan","Elite_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_m,itm_rohan_armor_o,itm_rohan_archer_helmet_b,itm_rohan_archer_helmet_c,itm_strong_bow,itm_khergit_arrows,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohan_warhorse,],
-      attr_tier_5,wp_tier_5,knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2|knows_power_throw_4,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2|knows_power_throw_4,rohan_face_middle_1,rohan_face_old_2],
 ["thengel_guard_of_rohan","Thengel_Guard_of_Rohan","Thengel_Guards_of_Rohan",tf_rohan| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_rohan_armor_s,itm_rohan_archer_helmet_c,itm_strong_bow,itm_khergit_arrows,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_thengel_warhorse,],
-      attr_tier_6,wp_tier_6,knows_horse_archery_7|knows_riding_7|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_5,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_horse_archery_7|knows_riding_7|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_5,rohan_face_middle_1,rohan_face_old_2],
 ["lancer_of_rohan","Lancer_of_Rohan","Lancers_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_j,itm_rohan_armor_k,itm_rohan_armor_l,itm_rohan_cav_helmet_b,itm_rohan_spear,itm_rohan_lance,itm_rohan_cav_sword,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_rohirrim_courser,itm_rohirrim_courser2,itm_rohirrim_hunter,],
-      attr_tier_4,wp_tier_4,knows_common|knows_riding_4|knows_shield_1|knows_power_strike_4|knows_ironflesh_2,rohan_face1,rohan_face2],
+      attr_tier_4,wp_tier_4,knows_common|knows_riding_4|knows_shield_1|knows_power_strike_4|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
 ["elite_lancer_of_rohan","Elite_Lancer_of_Rohan","Elite_Lancers_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_m,itm_rohan_armor_n,itm_rohan_armor_o,itm_rohan_cav_helmet_b,itm_rohan_cav_helmet_c,itm_rohan_lance,itm_rohan_lance,itm_rohan_lance_banner_horse,itm_rohan_cav_sword,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohan_warhorse,],
-      attr_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_2|knows_power_strike_5|knows_ironflesh_3,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_2|knows_power_strike_5|knows_ironflesh_3,rohan_face_middle_1,rohan_face_old_2],
 ["brego_guard_of_rohan","Brego_Guard_of_Rohan","Brego_Guards_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_s,itm_rohan_cav_helmet_c,itm_rohan_lance_banner_sun,itm_rohan_lance_banner_horse,itm_rohan_cav_sword,itm_rohan_warhorse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_6|knows_ironflesh_6,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_6|knows_ironflesh_6,rohan_face_middle_1,rohan_face_old_2],
 ["king_s_man_of_rohan","King's_Guard","King's_Guards",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_p,itm_rohan_armor_q,itm_rohan_armor_r,itm_rohan_cav_helmet_c,itm_rohan_spear,itm_rohan_inf_sword,itm_rohan_cav_sword,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,itm_rohan_shield_g,itm_rohan_warhorse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_7|knows_ironflesh_6,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_7|knows_ironflesh_6,rohan_face_old_1,rohan_face_older_2],
 ["squire_of_rohan","Squire_of_Rohan","Squires_of_Rohan",tf_rohan| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_shoes,itm_leather_gloves,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_light_helmet_a,itm_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_saddle_horse,],
-      attr_tier_2,wp_tier_2,knows_common|knows_shield_1|knows_power_strike_1,rohan_face1,rohan_face2],
+      attr_tier_2,wp_tier_2,knows_common|knows_shield_1|knows_power_strike_1,rohan_face_young_1,rohan_face_old_2],
 ["rider_of_rohan","Rider_of_Rohan","Riders_of_Rohan",tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_leather_gloves,itm_rohan_armor_d,itm_rohan_armor_e,itm_rohan_armor_f,itm_rohan_light_helmet_a,itm_rohan_light_helmet_b,itm_rohan_spear,itm_rohan_spear,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,itm_spear,itm_rohan_lance,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,itm_rohirrim_courser,itm_rohirrim_courser2,],
-      attr_tier_3,wp_tier_3,knows_common|knows_riding_3|knows_shield_1|knows_power_strike_2,rohan_face1,rohan_face2],
+      attr_tier_3,wp_tier_3,knows_common|knows_riding_3|knows_shield_1|knows_power_strike_2,rohan_face_young_1,rohan_face_old_2],
 ["veteran_rider_of_rohan","Veteran_Rider_of_Rohan","Veteran_Riders_of_Rohan",tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_mail_mittens,itm_rohan_armor_j,itm_rohan_armor_k,itm_rohan_armor_l,itm_rohan_cav_helmet_a,itm_rohan_cav_helmet_b,itm_rohan_spear,itm_rohan_cav_sword,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,itm_rohirrim_long_hafted_axe,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohirrim_courser,itm_rohirrim_courser2,itm_rohirrim_hunter,],
-      attr_tier_4,wp_tier_4,knows_common|knows_riding_4|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,rohan_face1,rohan_face2],
+      attr_tier_4,wp_tier_4,knows_common|knows_riding_4|knows_shield_3|knows_power_strike_3|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
 ["elite_rider_of_rohan","Elite_Rider_of_Rohan","Elite_Riders_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_m,itm_rohan_armor_n,itm_rohan_armor_o,itm_rohan_cav_helmet_b,itm_rohan_cav_helmet_c,itm_rohan_spear,itm_rohan_cav_sword,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohirrim_courser2,itm_rohirrim_hunter,],
-      attr_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_2|knows_ironflesh_3,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_2|knows_ironflesh_3,rohan_face_middle_1,rohan_face_old_2],
 ["eorl_guard_of_rohan","Eorl_Guard_of_Rohan","Eorl_Guards_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_armor_s,itm_rohan_captain_helmet,itm_rohan_lance_banner_sun,itm_rohan_lance_banner_horse,itm_rohan_inf_sword,itm_rohan_inf_sword,itm_rohan_cav_sword,itm_rohirrim_long_hafted_axe,itm_rohirrim_long_hafted_axe,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,itm_rohan_warhorse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_6|knows_ironflesh_6,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_riding_7|knows_shield_3|knows_power_strike_6|knows_ironflesh_6,rohan_face_middle_1,rohan_face_old_2],
 #Rohan Siege battle dismounted troops
 ["dismounted_skirmisher_of_rohan","Skirmisher_of_Rohan","Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_armor| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_g,itm_rohan_armor_h,itm_rohan_armor_i,itm_rohan_light_helmet_a,itm_rohan_light_helmet_b,itm_nomad_bow,itm_khergit_arrows,itm_heavy_throwing_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,],
-      attr_tier_3,wp_tier_3,knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1|knows_power_throw_3,rohan_face1,rohan_face2],
+      attr_tier_3,wp_tier_3,knows_horse_archery_3|knows_riding_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1|knows_power_throw_3,rohan_face_young_1,rohan_face_middle_2],
 ["dismounted_veteran_skirmisher_of_rohan","Veteran_Skirmisher_of_Rohan","Veteran_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_j,itm_rohan_armor_k,itm_rohan_armor_l,itm_rohan_archer_helmet_a,itm_rohan_archer_helmet_b,itm_nomad_bow,itm_khergit_arrows,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_4,wp_tier_4,knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2|knows_power_throw_4,rohan_face1,rohan_face2],
+      attr_tier_4,wp_tier_4,knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2|knows_power_throw_4,rohan_face_young_1,rohan_face_old_2],
 ["dismounted_elite_skirmisher_of_rohan","Elite_Skirmisher_of_Rohan","Elite_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_m,itm_rohan_armor_o,itm_rohan_archer_helmet_b,itm_rohan_archer_helmet_c,itm_strong_bow,itm_khergit_arrows,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_5,wp_tier_5,knows_horse_archery_7|knows_riding_7|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_5,rohan_face1,rohan_face2],
+      attr_tier_5,wp_tier_5,knows_horse_archery_7|knows_riding_7|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_5,rohan_face_middle_1,rohan_face_old_2],
 ["dismounted_thengel_guard_of_rohan","Thengel_Guard_of_Rohan","Thengel_Guards_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_rohan_armor_s,itm_rohan_archer_helmet_c,itm_strong_bow,itm_khergit_arrows,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],
-      attr_tier_6,wp_tier_6,knows_horse_archery_5|knows_riding_7|knows_power_draw_5|knows_power_throw_5|knows_power_strike_3|knows_ironflesh_3,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_horse_archery_5|knows_riding_7|knows_power_draw_5|knows_power_throw_5|knows_power_strike_3|knows_ironflesh_3,rohan_face_middle_1,rohan_face_old_2],
 #HARAD
 ["harad_desert_warrior","Harad_Levy","Harad_Levies",tf_harad| tfg_armor,0,0,fac_harad,
    [itm_desert_boots,itm_harad_tunic,itm_harad_javelin,itm_harad_short_spear,],
@@ -1668,13 +1658,13 @@ troops = [
       attr_elf_tier_6,wp_elf_tier_6,knows_riding_3|knows_athletics_4|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["lieutenant_of_rohan","Lieutenant_of_Rohan","Lieutenants_of_Rohan",tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_armor_l,itm_rohan_captain_helmet,itm_rohan_shield_g,itm_mail_mittens,itm_leather_boots,itm_rohan_inf_sword,itm_rohirrim_courser,itm_rohirrim_hunter,itm_rohan_lance_banner_sun,itm_rohan_lance_banner_horse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_tactics_2|knows_riding_3|knows_athletics_2|knows_shield_1|knows_power_strike_4,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_tactics_2|knows_riding_3|knows_athletics_2|knows_shield_1|knows_power_strike_4,rohan_face_middle_1,rohan_face_older_2],
 ["captain_of_rohan","Captain_of_Rohan","Captains_of_Rohan",tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_long_hafted_axe,itm_rohan_armor_l,itm_rohan_captain_helmet,itm_rohan_shield_g,itm_mail_mittens,itm_rohirrim_war_greaves,itm_rohan_inf_sword,itm_rohan_warhorse,itm_rohan_lance_banner_sun,itm_rohan_lance_banner_horse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_tactics_3|knows_riding_5|knows_athletics_3|knows_shield_2|knows_power_strike_5|knows_ironflesh_6,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_tactics_3|knows_riding_5|knows_athletics_3|knows_shield_2|knows_power_strike_5|knows_ironflesh_6,rohan_face_middle_1,rohan_face_older_2],
 ["high_captain_of_rohan","High_Captain_of_Rohan","High_Captains_of_Rohan",tf_rohan| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_long_hafted_axe,itm_rohan_armor_l,itm_rohan_captain_helmet,itm_rohan_shield_g,itm_mail_mittens,itm_rohirrim_war_greaves,itm_rohan_inf_sword,itm_rohan_warhorse,itm_rohan_lance_banner_sun,itm_rohan_lance_banner_horse,],
-      attr_tier_6,wp_tier_6,knows_common|knows_tactics_4|knows_riding_7|knows_athletics_3|knows_shield_4|knows_power_strike_7|knows_ironflesh_7,rohan_face1,rohan_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_tactics_4|knows_riding_7|knows_athletics_3|knows_shield_4|knows_power_strike_7|knows_ironflesh_7,rohan_face_middle_1,rohan_face_older_2],
 ["lieutenant_of_isengard","Lieutenant_of_Isengard","Lieutenants_of_Isengard",tf_urukhai| tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
    [itm_isen_uruk_helm_d,itm_isen_uruk_heavy_c,itm_leather_gloves,itm_uruk_greaves,itm_isen_uruk_shield_b,itm_isengard_sword,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_3|knows_power_strike_2,uruk_hai_face1,uruk_hai_face2],
@@ -1757,7 +1747,7 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common|knows_riding_5|knows_ironflesh_3,gondor_face1,gondor_face2],
 ["rohan_agent","Rohan_Agent","Rohan_Agents",tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_leather_jerkin,itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common|knows_riding_5|knows_ironflesh_3,rohan_face1,rohan_face2],
+      attr_tier_1,wp_tier_1,knows_common|knows_riding_5|knows_ironflesh_3,rohan_face_middle_1,rohan_face_older_2],
 ["mordor_agent","Mordor_Agent","Mordor_Agents",tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_5|knows_ironflesh_3,gondor_face1,gondor_face2],
@@ -2112,10 +2102,10 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
 ["walker_man_rohan_t","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_tld_tunic,itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common,rohan_face1,rohan_face2],
+      attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_man_rohan_d","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,],
-      attr_tier_1,wp_tier_1,knows_common,rohan_middle_1,rohan_middle_2],
+      attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_woman_rohan_t","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_tld_tunic,itm_rohan_shoes,],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
@@ -2187,7 +2177,7 @@ troops = [
       0,0,0,gondor_face2],
 ["trainer_rohan","Trainer","_",tf_hero| tf_rohan| tfg_armor| tfg_boots, scn_rohan_arena|entry(1),0,fac_commoners,
    [itm_rohan_light_greaves,itm_mail_mittens,itm_rohan_armor_j,itm_rohan_spear,],
-      0,0,0,rohan_old_2],
+      0,0,0,rohan_face_old_2],
 ["trainer_dale","Trainer","_",tf_hero| tfg_armor| tfg_boots, scn_dale_arena|entry(1),0,fac_commoners,
    [itm_blue_tunic,itm_leather_boots,],
       0,0,0,gondor_face2],
@@ -2310,7 +2300,7 @@ troops = [
    [itm_leather_dwarf_armor,itm_dwarf_pad_boots,itm_dwarf_helm_a,itm_dwarf_sword_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_shield_f,],
       str_14|agi_8|int_7|cha_6|level(7),wp_one_handed(100)|wp_two_handed(115)|wp_polearm(70)|wp_archery(50)|wp_throwing(115),knows_riding_10|knows_athletics_2|knows_power_strike_3|knows_power_throw_3|knows_ironflesh_3|knows_weapon_master_2|knows_trainer_1|knows_engineer_4|knows_looting_4|knows_trade_3,0x00000001c000110336db6db6db6db6db00000000001db6db0000000000000000],
 ["npc8","Faniul","_",tf_female| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_dale,
-   [itm_blackwhite_dress,itm_leather_boots,itm_wimple_with_veil,],
+   [itm_rohan_fine_outfit_dale_dress,itm_leather_boots,itm_wimple_with_veil,],
       str_7|agi_6|int_11|cha_5|level(1),wp(40),knows_ironflesh_1|knows_wound_treatment_2|knows_first_aid_3|knows_surgery_2|knows_trade_1,0x0000000712003004589dae38ad69a64900000000001ec6cc0000000000000000],
 ["npc9","Gulm","_",tf_urukhai| tf_hero| tf_unmoveable_in_party_window,0,0,fac_isengard,
    [itm_isen_uruk_light_a,itm_uruk_chain_greaves,itm_isengard_mallet,itm_evil_gauntlets_a,],
@@ -2801,7 +2791,7 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,woman_face_1,woman_face_2],
 ["barman_calembel","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_female,0,0,fac_commoners, [],
       def_attrib|level(2),wp(20),knows_common,woman_face_1,woman_face_2],
-["barman_edoras","Tavern_Keeper","the_King_Palace",tf_hero| tf_randomize_face,0,0,fac_commoners, [],
+["barman_edoras","Tavern_Keeper","Meduseld,_the_Golden_Hall",tf_hero| tf_randomize_face,0,0,fac_commoners, [],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["barman_aldburg","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_female,0,0,fac_commoners, [],
       def_attrib|level(2),wp(20),knows_common,woman_face_1,woman_face_2],
@@ -2817,9 +2807,9 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["barman_baraddur","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["barman_morannon","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
+["barman_morannon","Tavern_Keeper","the_Leader's_Cave",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["barman_mmorgul","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
+["barman_mmorgul","Tavern_Keeper","the_Tower",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
       def_attrib|level(2),wp(20),knows_common,woman_face_1,woman_face_2],
 ["barman_cungol","Tavern_Keeper","the_Castle",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_commoners,[],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],

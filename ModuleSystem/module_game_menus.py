@@ -4577,7 +4577,7 @@ game_menus = [
       ("pre_join_leave",[],"Don't get involved.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-( "join_battle",mnf_enable_hot_keys|mnf_scale_picture,
+( "join_battle",mnf_enable_hot_keys,
     "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -4709,7 +4709,7 @@ game_menus = [
 
     ]
 ),
-( "join_order_attack",mnf_disable_all_keys|mnf_scale_picture,
+( "join_order_attack",mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -4827,7 +4827,7 @@ game_menus = [
                                  (try_end)]),
       ]
 ),
-( "besiegers_camp_with_allies",mnf_enable_hot_keys|mnf_scale_picture,
+( "besiegers_camp_with_allies",mnf_enable_hot_keys,
     "{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,\
     where you and your men are welcomed.",
     "none",
@@ -4950,7 +4950,7 @@ game_menus = [
 ),
 
 # dungeon crawl: way out of moira
-( "moria_must_escape",city_menu_color|mnf_scale_picture,
+( "moria_must_escape",city_menu_color,
     "^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
@@ -4965,7 +4965,7 @@ game_menus = [
 ),
 
  
-( "castle_outside",city_menu_color|mnf_scale_picture,
+( "castle_outside",city_menu_color,
     "You are outside {s2}.{s11} {s3} {s4}",
     "none",
     code_to_set_city_background + [
@@ -5292,7 +5292,7 @@ game_menus = [
 
     ]
 ),
-("castle_besiege",mnf_enable_hot_keys|mnf_scale_picture,
+("castle_besiege",mnf_enable_hot_keys,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
     code_to_set_city_background + [   (assign, "$g_siege_force_wait", 0),
@@ -5652,7 +5652,7 @@ game_menus = [
            ]),
       ("go_back",[],"Go back.", [(jump_to_menu,"mnu_castle_besiege")]),],
 ),
-("castle_attack_walls_simulate",mnf_scale_picture|mnf_disable_all_keys,
+("castle_attack_walls_simulate",mnf_disable_all_keys,
     "{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}",
     "none",
     [   (troop_get_type, ":is_female", "trp_player"),
@@ -5711,7 +5711,7 @@ game_menus = [
       ("continue",[],"Continue...",[(jump_to_menu,"mnu_castle_besiege")]),
     ]
 ),
-("castle_attack_walls_with_allies_simulate",mnf_scale_picture|mnf_disable_all_keys,
+("castle_attack_walls_with_allies_simulate",mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
     [
@@ -6772,7 +6772,7 @@ game_menus = [
 		(try_end),
 		(change_screen_map)])]
 ),
-( "recover_after_death_moria",mnf_scale_picture|city_menu_color,
+( "recover_after_death_moria",city_menu_color,
     "^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
@@ -7067,7 +7067,7 @@ game_menus = [
      ]
 ),
 
-( "ruins",mnf_scale_picture,
+( "ruins",0,
     "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7080,7 +7080,7 @@ game_menus = [
        ]),
     ]
 ),
-( "legendary_place",mnf_scale_picture,
+( "legendary_place",0,
     "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7280,7 +7280,7 @@ game_menus = [
 ),
 
 ######################### TLD808 menus ##########################
-( "ancient_ruins",mnf_scale_picture,
+( "ancient_ruins",0,
   "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak_into_the_sorcerer's_lair under the night's cover.",
@@ -7363,7 +7363,7 @@ game_menus = [
 							(call_script, "script_infiltration_mission_final_casualty_tabulation")]),
 	]
 ),
-( "pick_troops", mnf_scale_picture, 
+( "pick_troops", 0, 
   "Whom would you take with you into the stealth mission? \
    Currently you picked {reg0} companions. You can take up to 10 troops with you", "none",
    [(set_background_mesh, "mesh_ui_default_menu_window")], [ 
@@ -7430,7 +7430,7 @@ game_menus = [
 					(try_end),
 					(jump_to_menu, "mnu_ancient_ruins")]),  
 ]),  
-( "burial_mound", mnf_scale_picture, 
+( "burial_mound", 0, 
   "You_approach_the_burial_mound_of_{s3}_of_{s2}._It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(store_encountered_party, ":mound"),
@@ -7463,7 +7463,7 @@ game_menus = [
    "Desecrate_the_site",  [(jump_to_menu, "mnu_burial_mound_despoil")]),  
   ("leave",        [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-( "burial_mound_respects", mnf_scale_picture, 
+( "burial_mound_respects", 0, 
   "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.\
   There is nothing left to be done here.", "none",
 					[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7477,7 +7477,7 @@ game_menus = [
 					(try_end)],[
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
-( "burial_mound_oath", mnf_scale_picture, 
+( "burial_mound_oath", 0, 
   "You loudly swear an oath of vengeance for the death of {s1}.\
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7495,7 +7495,7 @@ game_menus = [
 	(start_quest, "qst_oath_of_vengeance")],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
-( "burial_mound_despoil", mnf_scale_picture, 
+( "burial_mound_despoil", 0, 
   "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.\
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7508,7 +7508,7 @@ game_menus = [
 	 (disable_party, ":mound")],[
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
-( "funeral_pyre", mnf_scale_picture, 
+( "funeral_pyre", 0, 
   "You approach the charred remnants of the funeral pyre of {s3} of {s2}.\
   Here his corpse was ceremoniously burned by the evil men\
   who served as his personal guard. Nothing of value remains.", "none", 
@@ -7519,7 +7519,7 @@ game_menus = [
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
  ]
 ),
-( "town_ruins",mnf_scale_picture|mnf_enable_hot_keys|city_menu_color,
+( "town_ruins",mnf_enable_hot_keys|city_menu_color,
 	"When you approach, you see that {s1} is destroyed. Only smoldering ruins remain.",
     "none",
 	code_to_set_city_background + [
