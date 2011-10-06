@@ -146,36 +146,23 @@ rohan 0
 dunland 0
  man_body man_calf_l m_handL
  male_head 28 skinkey_chin_size 20 0 0.700000 -0.600000 Chin_Size skinkey_chin_shape 260 0 -0.600000 1.400000 Chin_Shape skinkey_chin_forward 10 0 -0.500000 0.900000 Chin_Forward skinkey_jaw_width 240 0 0.900000 -0.800000 Jaw_Width skinkey_jaw_position 210 0 -0.500000 1.000000 Jaw_Position skinkey_mouth_nose_distance 250 0 0.800000 -1.000000 Mouth-Nose_Distance skinkey_mouth_width 200 0 -0.300000 1.000000 Mouth_Width skinkey_cheeks 50 0 -1.500000 1.000000 Cheeks skinkey_nose_height 60 0 -0.400000 1.350000 Nose_Height skinkey_nose_width 70 0 -0.600000 0.700000 Nose_Width skinkey_nose_size 80 0 1.000000 -0.100000 Nose_Size skinkey_nose_shape 270 0 -0.500000 1.000000 Nose_Shape skinkey_nose_bridge 90 0 -0.200000 1.400000 Nose_Bridge skinkey_cheek_bones 100 0 -0.300000 1.500000 Cheek_Bones skinkey_eye_width 150 0 -0.200000 3.000000 Eye_Width skinkey_eye_to_eye_dist 110 0 1.500000 -0.900000 Eye_to_Eye_Dist skinkey_eye_shape 120 0 1.900000 -1.000000 Eye_Shape skinkey_eye_depth 130 0 -0.500000 1.100000 Eye_Depth skinkey_eyelids 140 0 1.000000 -1.200000 Eyelids skinkey_eyebrow_position 160 0 1.300000 -0.200000 Eyebrow_Position skinkey_eyebrow_height 170 0 -0.100000 1.900000 Eyebrow_Height skinkey_eyebrow_depth 220 0 -0.100000 0.900000 Eyebrow_Depth skinkey_eyebrow_shape 180 0 -1.100000 1.600000 Eyebrow_Shape skinkey_temple_width 230 0 1.200000 -0.700000 Temple_Width skinkey_face_depth 30 0 -0.600000 0.900000 Face_Depth skinkey_face_ratio 40 0 0.900000 -0.600000 Face_Ratio skinkey_face_width 190 0 0.000000 0.950000 Face_Width skinkey_post_edit 280 0 0.000000 1.000000 Post-Edit 
-20
- man_hair_s  man_hair_m  man_hair_n  man_hair_o  man_hair_y10  man_hair_y12  man_hair_p  man_hair_r  man_hair_q  man_hair_v  man_hair_t  man_hair_y6  man_hair_y3  man_hair_y7  man_hair_y9  man_hair_y11  man_hair_u  man_hair_y  man_hair_y2  man_hair_y4 
- 23
-  beard_e
-  beard_d
-  beard_k
-  beard_l
-  beard_i
-  beard_j
-  beard_z
-  beard_m
-  beard_n
-  beard_y
-  beard_p
-  beard_o
-  beard_v
-  beard_f
-  beard_b
-  beard_c
-  beard_t
-  beard_u
+7
+ man_hair_s  man_hair_m  man_hair_n  man_hair_o  man_hair_p  man_hair_r  man_hair_q 
+ 10
   beard_r
-  beard_s
-  beard_a
-  beard_h
+  beard_n
+  beard_m
+  beard_j
+  beard_i
   beard_g
+  beard_e
+  beard_z
+  beard_y
+  beard_v
 
  1  hair_blonde 
  1  beard_blonde 
- 7  manface_midage 4292866017 1 5  hair_blonde  4294967295  4289742615  4284689944  4283443737  4279832588  manface_rugged 4289768117 1 2  hair_blonde  4279702291  4278650892  berserker_face_a 4291551456 1 3  hair_blonde  4294967295  4289742615  4283443737  berserker_face_b 4292866017 1 5  hair_blonde  4294967295  4289742615  4284689944  4283443737  4279832588  berserker_face_c 4291879136 1 4  hair_blonde  4286787610  4283443737  4279832588  4278979865  wildman_face_a 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  wildman_face_b 4290824392 1 2  hair_blonde  4279702291  4278650892 
+ 7  manface_midage 4292866017 1 5  hair_blonde  4294967295  4289742615  4284689944  4283443737  4279832588  manface_rugged 4289768117 1 2  hair_blonde  4279702291  4278650892  east_bandit_face_a 4259629272 1 3  hair_blonde  4283443737  4279832588  4278979865  east_bandit_face_b 4289768117 1 2  hair_blonde  4279702291  4278650892  east_bandit_face_c 4286610570 1 2  hair_blonde  4279371784  4278650892  wildman_face_a 4292668909 1 3  hair_blonde  4281276430  4279702291  4278650892  wildman_face_b 4290824392 1 2  hair_blonde  4279702291  4278650892 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_dunlender_yell  6 snd_dunlender_victory 
  skel_human 0.800000 
 2 3

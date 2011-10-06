@@ -1674,7 +1674,7 @@ mission_templates = [ # not used in game
 # daungeon crawl
 ( "dungeon_crawl_moria_entrance",0,-1,
     "Explore around Moria",
-    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
+    [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
 	],[
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
@@ -1684,21 +1684,21 @@ mission_templates = [ # not used in game
 ]),
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
-    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
+    [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
 	],[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
-	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1)]),
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), (play_sound, "snd_moria_ambiance", sf_looping), ]),
 	dungeon_darkness_effect,
 ]),
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
     "Lost in Moria! Orcs are everywhere! You must find a way out!",
-    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
+    [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
 	],[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
 	(ti_question_answered, 0, 0, [], [ 
 		(troop_remove_item, "trp_player","itm_book_of_moria"),(store_trigger_param_1,":answer"), (eq,":answer",0), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission)]),
-	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1)]),
+	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1),(play_sound, "snd_moria_ambiance", sf_looping),]),
 	dungeon_darkness_effect,
 ]),
 
