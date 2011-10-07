@@ -57,16 +57,16 @@ particle_systems = [
      0.5                        #rotation damping
     ),
     ("game_snow", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_snow_fall_1",
-     150, 2, 0.2, 0.1, 30, 20,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
-     (0.2, 1), (1, 1),        #alpha keys
+     50, 3, 0.7, 0.01, 10, 10,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.2, 0.3), (1, 0.05),        #alpha keys
      (1.0, 1.0), (1, 1.0),      #red keys
      (1.0, 1.0), (1, 1.0),      #green keys
-     (1.0, 1.0), (1, 1.0),      #blue keys
+     (1.0, 0.0), (1, 0.0),      #blue keys
      (1.0, 1.0),   (1.0, 1.0),   #scale keys
      (10, 10, 0.5),           #emit box size
-     (0, 0, -5.0),               #emit velocity
+     (0, 0, -0.1),               #emit velocity
      1,                       #emit dir randomness
-     200,                       #rotation speed
+     20,                       #rotation speed
      0.5                        #rotation damping
     ),
     

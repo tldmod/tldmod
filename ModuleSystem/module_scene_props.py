@@ -2291,4 +2291,9 @@ scene_props = [
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # all instances moved away when gate_destructible is destroyed
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
 
+("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,
+            [(try_begin),(is_currently_night),(set_fog_distance,1700,0xeFFF3D),
+			 (else_try),                      (set_fog_distance,1500,0xeFFF3D),
+			 (try_end)])]),
+
 ]

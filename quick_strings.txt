@@ -1,4 +1,4 @@
-891
+892
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -421,6 +421,7 @@ qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fi
 qstr_Ballista:_out_of_ammo Ballista:_out_of_ammo
 qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
+qstr_FOG:R_{reg0}_G_{reg1 FOG:R_{reg0}_G_{reg1}_B{reg2}_dist_{reg3}
 qstr_max_X_{reg0}_max_Y_{ max_X_{reg0}_max_Y_{reg1}
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
 qstr_Leave_the_place_in_s Leave_the_place_in_silence?

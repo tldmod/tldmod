@@ -606,3 +606,8 @@ npc_is_quitting
 remove_item
 personality_clash_after_24_hrs
 temp_action_cost
+fog_red
+fog_green
+fog_blue
+fog_dist
+fog_color

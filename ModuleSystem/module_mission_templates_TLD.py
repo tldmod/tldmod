@@ -9,7 +9,9 @@ from module_constants import *
 common_battle_mission_start = (ti_before_mission_start, 0, 0, [],[
 	(team_set_relation, 0, 2, 1),
 	(team_set_relation, 1, 3, 1),
-	(call_script, "script_change_banners_and_chest")])
+	(call_script, "script_change_banners_and_chest"),
+	(set_rain, 0,100), # switch off ingame weather
+	])
 
 common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
 	(try_begin),
@@ -750,6 +752,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
 	(call_script, "script_check_agent_armor"), # check for berserker trait
+	(set_rain, 0,100), #switch off vanilla rain and snow
 
 	(try_begin),
 		(this_or_next|eq, "$g_encountered_party", "pt_mordor_war_party"),

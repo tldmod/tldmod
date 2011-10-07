@@ -1519,3 +1519,4 @@ spr_rohan_meduseld_table = 1517
 spr_handsign = 1518
 spr_ai_limiter_gate_breached = 1519
 spr_barrier_cube = 1520
+spr_fog_elven_settlement = 1521
