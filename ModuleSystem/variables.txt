@@ -605,3 +605,4 @@ npc_map_talk_context
 npc_is_quitting
 remove_item
 personality_clash_after_24_hrs
+temp_action_cost

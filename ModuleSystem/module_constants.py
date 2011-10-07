@@ -792,6 +792,8 @@ slot_trait_command_voice     = 19
 slot_trait_foe_hammer        = 20
 slot_trait_battle_scarred    = 21
 slot_trait_fell_beast        = 22
+slot_trait_first             = slot_trait_elf_friend
+slot_trait_last              = slot_trait_fell_beast
 
 ########################################################
 ##  QUEST SLOTS            #############################
@@ -1147,6 +1149,12 @@ tld_troops_begin = "trp_player"
 tld_troops_end = "trp_troops_end"
 tld_player_level_to_begin_war = 8
 tld_player_level_to_own_chest = 10
+
+# TLD: influence costs for orders to lords
+tld_command_cost_follow = 20
+tld_command_cost_goto   = 5
+tld_command_cost_patrol = 10
+tld_command_cost_engage = 25
 
 ####################################################
 # TLD War System (foxyman and mtarini and MV) ######

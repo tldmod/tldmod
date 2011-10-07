@@ -3168,31 +3168,74 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      
 
 # TLD: give orders to lords
+
 [anyone|plyr,"lord_talk",
    [ # TLD: give orders if you have some minimum faction influence
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #can't give orders to kings
+     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"), #can't give orders to marshalls
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
-     (ge, ":influence", 5)], #the lowest cost among the actions below
+     (assign, ":min_command_cost", tld_command_cost_goto),
+     (try_begin),
+       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+       (val_mul, ":min_command_cost", 2),
+       (val_div, ":min_command_cost", 3), # min_command_cost is 3 now (for tld_command_cost_goto=5)
+     (try_end),
+     (ge, ":influence", ":min_command_cost"), #the lowest cost among the actions below
+     # check if traits are needed
+     (assign, ":trait_check_passed", 1),
+     (try_begin),
+       (eq, "$g_talk_troop_faction", "fac_gondor"),
+       (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 0),
+       (assign, ":trait_check_passed", 0),
+     (try_end),
+     (try_begin),
+       (eq, "$g_talk_troop_faction", "fac_rohan"),
+       (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 0),
+       (assign, ":trait_check_passed", 0),
+     (try_end),
+     (try_begin),
+       (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
+       (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
+       (eq, "$g_talk_troop_faction", "fac_woodelf"),
+       (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 0),
+       (assign, ":trait_check_passed", 0),
+     (try_end),
+     (eq, ":trait_check_passed", 1),
+   ],
 "I have a new task for you.", "lord_give_order_ask",[]],
 
 [anyone,"lord_give_order_ask", [], "Yes?", "lord_give_order",[]],
 
 
 [anyone|plyr,"lord_give_order", [
+    (assign, "$temp_action_cost", tld_command_cost_follow),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 13 for tld_command_cost_follow=20
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 20)], 
-"Follow me. [Costs 20/{reg2} influence]", "lord_give_order_answer", [
+    (ge, reg2, "$temp_action_cost")], 
+"Follow me. [Costs {reg1}/{reg2} influence]", "lord_give_order_answer", [
      (assign, "$temp", spai_accompanying_army),
      (assign, "$temp_2", "p_main_party"),
-     (assign, "$tld_action_cost", 20)]],
+     (assign, "$tld_action_cost", "$temp_action_cost")]],
 
 [anyone|plyr,"lord_give_order", [
+    (assign, "$temp_action_cost", tld_command_cost_goto),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 3 for tld_command_cost_goto=5
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 5)], 
-"Go to... [Costs 5/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, "$temp_action_cost")], 
+"Go to... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_holding_center),
-     (assign, "$tld_action_cost", 5)]],
+     (assign, "$tld_action_cost", "$temp_action_cost")]],
 
   #[anyone|plyr,"lord_give_order", [],
    # "Raid around the village of...", "lord_give_order_details_ask",
@@ -3201,18 +3244,32 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      # ]],
 
 [anyone|plyr,"lord_give_order", [
+    (assign, "$temp_action_cost", tld_command_cost_patrol),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 6 for tld_command_cost_patrol=10
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 10)],  
-"Patrol around... [Costs 10/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, "$temp_action_cost")],  
+"Patrol around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_patrolling_around_center),
-     (assign, "$tld_action_cost", 10)]],
+     (assign, "$tld_action_cost", "$temp_action_cost")]],
 
 [anyone|plyr,"lord_give_order", [
+    (assign, "$temp_action_cost", tld_command_cost_engage),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 16 for tld_command_cost_engage=25
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, 25)], 
-"Engage enemies around... [Costs 25/{reg2} influence]", "lord_give_order_details_ask",[
+    (ge, reg2, "$temp_action_cost")], 
+"Engage enemies around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_raiding_around_center), #not really, changed later to spai_patrolling_around_center
-     (assign, "$tld_action_cost", 25)]],
+     (assign, "$tld_action_cost", "$temp_action_cost")]],
 
 [anyone|plyr,"lord_give_order", [(neg|troop_slot_eq, "$g_talk_troop", slot_troop_player_order_state, spai_undefined)],
    "I won't need you for some time. You are free to do as you like.", "lord_give_order_stop", []],
@@ -3322,7 +3379,8 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      (assign, reg0, "$tld_action_cost"),
      (assign, reg1, ":influence"),
      (str_store_faction_name, s1, "$g_talk_troop_faction"),
-     (display_message, "@You spent {reg0} of your influence with {s1}, with {reg1} remaining.")]],
+     (display_message, "@You spent {reg0} of your influence with {s1}, with {reg1} remaining."),
+     (val_add, "$trait_check_commands_issued", 1),]],
 
 [anyone,"lord_give_order_answer_2", [],#Meaning that the AI decision function did not follow the order.
 "I am sorry, it is not possible for me to do that.", "lord_pretalk",[ 
@@ -3867,7 +3925,19 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
      # (call_script, "script_troop_add_gold", "trp_player", ":reward"),
      # (add_xp_as_reward, 2500),
      # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 4),
-     (call_script, "script_finish_quest", "qst_capture_enemy_hero", 100)]],
+     (call_script, "script_finish_quest", "qst_capture_enemy_hero", 100),
+     (try_begin),
+       (eq, "$g_talk_troop_faction", "fac_gondor"),
+       (call_script, "script_cf_gain_trait_stewards_blessing"),
+     (try_end),
+     (try_begin),
+       (eq, "$g_talk_troop_faction", "fac_rohan"),
+       (call_script, "script_cf_gain_trait_kings_man"),
+     (try_end),
+     (try_begin),
+       (eq, "$g_talk_troop_faction", "fac_lorien"),
+       (call_script, "script_cf_gain_trait_elf_friend"),
+     (try_end),]],
 
 [anyone|plyr,"capture_enemy_hero_thank_2", [], "Certainly, {s65}.", "lord_pretalk",[]],
 [anyone|plyr,"capture_enemy_hero_thank_2", [], "It was nothing.", "lord_pretalk",[]],
@@ -6682,6 +6752,21 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (else_try),
         (str_store_string, s4, "@Heh."),
       (try_end),
+      #Trait gain checks
+      (try_begin),
+        (ge, ":wave_reached", 5),
+        (try_begin),
+          (this_or_next|eq, "$g_talk_troop", "trp_trainer_mordor"), #used instead of faction check.. bad style?
+          (eq, "$g_talk_troop", "trp_trainer_isengard"),
+          (call_script, "script_cf_gain_trait_orc_pit_champion"),
+        (try_end),
+        (try_begin),
+          (this_or_next|eq, "$g_talk_troop", "trp_trainer_khand"),
+          (this_or_next|eq, "$g_talk_troop", "trp_trainer_rhun"),
+          (eq, "$g_talk_troop", "trp_trainer_harad"),
+          (call_script, "script_cf_gain_trait_brigand_friend"),
+        (try_end),
+      (try_end),
       (assign, reg2, ":wave_reached")]],
 
 [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
@@ -7177,7 +7262,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
 "Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. \
 You have performed a great service for your people and as such you are entitled to a gift. Take this.... ", "lord_generic_mission_completed",[
 	  (call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 100),
-	  (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5)]],
+	  (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+      (call_script, "script_cf_gain_trait_elf_friend"),]],
 	  #(assign, "$galadriel_power", 100)]],
 
 [trp_elder_cgaladhon|plyr, "mayor_begin",[
@@ -8344,7 +8430,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
                                       (party_slot_eq, "$current_town", slot_party_type, spt_town),
                                       (assign, reg4, 1),
                                     (try_end),
-                                    (str_store_string, s6, "@This is the {s5}, Commander."),
+                                    (str_store_string, s6, "@This is {s5}, Commander."),
                                     (str_clear, s10),
                                     (try_begin),
                                       (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),

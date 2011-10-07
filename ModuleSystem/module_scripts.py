@@ -533,14 +533,49 @@ scripts = [
 	 (assign, reg1, ":dist"),
 ]),
   
-# script_game_get_join_cost  (mtarini)
+# script_game_get_join_cost
 # This script is called from the game engine for calculating troop join cost.
 # Input:   param1: troop_id,
 # Output: reg0: join cost
 ("game_get_join_cost",
   [ (store_script_param_1, ":troop_id"),
 	(call_script, "script_game_get_troop_wage", ":troop_id",0),
-	(val_mul, reg0, 3), # to join, twice than day upkeep x 3
+	(store_mul, ":join_cost", reg0, 3), # to join, twice than day upkeep x 3
+    
+    # trait discounts: 75% of the original price
+    (store_troop_faction, ":troop_faction", ":troop_id"),
+    (assign, ":apply_discount", 0),
+    (try_begin),
+      (eq, ":troop_faction", "fac_gondor"),
+      (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 1),
+      (assign, ":apply_discount", 1),
+    (try_end),
+    (try_begin),
+      (eq, ":troop_faction", "fac_rohan"),
+      (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 1),
+      (assign, ":apply_discount", 1),
+    (try_end),
+    (try_begin),
+      (this_or_next|eq, ":troop_faction", "fac_lorien"),
+      (this_or_next|eq, ":troop_faction", "fac_imladris"),
+      (eq, ":troop_faction", "fac_woodelf"),
+      (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 1),
+      (assign, ":apply_discount", 1),
+    (try_end),
+    (try_begin),
+      (this_or_next|eq, ":troop_faction", "fac_harad"),
+      (this_or_next|eq, ":troop_faction", "fac_rhun"),
+      (eq, ":troop_faction", "fac_khand"),
+      (troop_slot_eq, "trp_traits", slot_trait_brigand_friend, 1),
+      (assign, ":apply_discount", 1),
+    (try_end),
+    (try_begin),
+      (eq, ":apply_discount", 1),
+      (val_mul, ":join_cost", 3),
+      (val_div, ":join_cost", 4),
+    (try_end),
+     
+    (assign, reg0, ":join_cost"),
 	(set_trigger_result, reg0),
 ]),
   
@@ -16590,7 +16625,7 @@ scripts = [
     (play_sound, "snd_gong"),
 ]),
 
-#script_gain_trait_blessed
+#script_cf_gain_trait_blessed
 ("cf_gain_trait_blessed",[
     (troop_slot_eq, "trp_traits", slot_trait_blessed, 0),
 	(troop_get_type, ":race","$g_player_troop"),
@@ -16605,37 +16640,37 @@ scripts = [
 	(troop_raise_attribute, "trp_player", ca_agility , 1),
 	(troop_raise_attribute, "trp_player", ca_charisma, 1),
 ]), 
-#script_gain_trait_reverent
+#script_cf_gain_trait_reverent
 ("cf_gain_trait_reverent",[
     (troop_slot_eq, "trp_traits", slot_trait_reverent, 0),
     (call_script, "script_gain_trait", slot_trait_reverent),
 ]), 
-#script_gain_trait_merciful
+#script_cf_gain_trait_merciful
 ("cf_gain_trait_merciful",[
     (troop_slot_eq, "trp_traits", slot_trait_merciful, 0),
     (call_script, "script_gain_trait", slot_trait_merciful),
 ]), 
-#script_gain_trait_elf_friend
+#script_cf_gain_trait_elf_friend
 ("cf_gain_trait_elf_friend",[
     (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 0),
     (call_script, "script_gain_trait", slot_trait_elf_friend),
 ]), 
-#script_gain_trait_kings_man
+#script_cf_gain_trait_kings_man
 ("cf_gain_trait_kings_man",[
     (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 0),
     (call_script, "script_gain_trait", slot_trait_rohan_friend),
 ]), 
-#script_gain_trait_stewarts_blessing
-("cf_gain_trait_stewarts_blessing",[
+#script_cf_gain_trait_stewards_blessing
+("cf_gain_trait_stewards_blessing",[
     (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 0),
     (call_script, "script_gain_trait", slot_trait_gondor_friend),
 ]), 
-#script_gain_trait_brigand_friend
+#script_cf_gain_trait_brigand_friend
 ("cf_gain_trait_brigand_friend",[
     (troop_slot_eq, "trp_traits", slot_trait_brigand_friend, 0),
     (call_script, "script_gain_trait", slot_trait_brigand_friend),
 ]), 
-#script_gain_trait_oathkeeper
+#script_cf_gain_trait_oathkeeper
 ("cf_gain_trait_oathkeeper",[
     (troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 0),
 	(try_begin),
@@ -16644,7 +16679,7 @@ scripts = [
 	(try_end),
     (call_script, "script_gain_trait", slot_trait_oathkeeper),
 ]), 
-#script_gain_trait_oathbreaker
+#script_cf_gain_trait_oathbreaker
 ("cf_gain_trait_oathbreaker",[
     (troop_slot_eq, "trp_traits", slot_trait_oathbreaker, 0),
 	(try_begin),
@@ -16653,48 +16688,48 @@ scripts = [
 	(try_end),
     (call_script, "script_gain_trait", slot_trait_oathbreaker),
 ]), 
-#script_gain_trait_orc_pit_champion
+#script_cf_gain_trait_orc_pit_champion
 ("cf_gain_trait_orc_pit_champion",[
     (troop_slot_eq, "trp_traits", slot_trait_orc_pit_champion, 0),
     (call_script, "script_gain_trait", slot_trait_orc_pit_champion),
 ]), 
-#script_gain_trait_despoiler
+#script_cf_gain_trait_despoiler
 ("cf_gain_trait_despoiler",[
     (troop_slot_eq, "trp_traits", slot_trait_despoiler, 0),
     (call_script, "script_gain_trait", slot_trait_despoiler),
 ]), 
-#script_gain_trait_accursed
+#script_cf_gain_trait_accursed
 ("cf_gain_trait_accursed",[
     (troop_slot_eq, "trp_traits", slot_trait_accursed, 0),
     (call_script, "script_gain_trait", slot_trait_accursed),
 ]), 
-#script_gain_trait_berserker
+#script_cf_gain_trait_berserker
 ("cf_gain_trait_berserker",[
     (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
 	(troop_raise_attribute, "trp_player", ca_strength, 2),
     (call_script, "script_gain_trait", slot_trait_berserker),
 ]), 
-#script_gain_trait_stealthy
+#script_cf_gain_trait_stealthy
 ("cf_gain_trait_stealthy",[
     (troop_slot_eq, "trp_traits", slot_trait_stealthy, 0),
     (call_script, "script_gain_trait", slot_trait_stealthy),
 ]), 
-#script_gain_trait_infantry_captain
+#script_cf_gain_trait_infantry_captain
 ("cf_gain_trait_infantry_captain",[
     (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 0),
     (call_script, "script_gain_trait", slot_trait_infantry_captain),
 ]), 
-#script_gain_trait_archer_captain
+#script_cf_gain_trait_archer_captain
 ("cf_gain_trait_archer_captain",[
     (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 0),
     (call_script, "script_gain_trait", slot_trait_archer_captain),
 ]), 
-#script_gain_trait_cavalry_captain
+#script_cf_gain_trait_cavalry_captain
 ("cf_gain_trait_cavalry_captain",[
     (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 0),
     (call_script, "script_gain_trait", slot_trait_cavalry_captain),
 ]), 
-#script_gain_trait_command_voice
+#script_cf_gain_trait_command_voice
 ("cf_gain_trait_command_voice",[
     (troop_slot_eq, "trp_traits", slot_trait_command_voice, 0),
 	(troop_get_type, ":race","$g_player_troop"),
@@ -16702,7 +16737,7 @@ scripts = [
 	(troop_raise_attribute, "trp_player", ca_charisma, 2),
     (call_script, "script_gain_trait", slot_trait_command_voice),
 ]), 
-#script_gain_trait_battle_scarred
+#script_cf_gain_trait_battle_scarred
 ("cf_gain_trait_battle_scarred",[
     (troop_slot_eq, "trp_traits", slot_trait_battle_scarred, 0),
 	(troop_get_type, ":race","$g_player_troop"),
@@ -16713,7 +16748,7 @@ scripts = [
 	(neg|ge, ":skill", 10),
 	(troop_raise_skill, "trp_player", skl_ironflesh, 1),
 ]), 
-#script_gain_trait_fell_beast
+#script_cf_gain_trait_fell_beast
 ("cf_gain_trait_fell_beast",[
     (troop_slot_eq, "trp_traits", slot_trait_fell_beast, 0),
 	(troop_get_type, ":race","$g_player_troop"),
@@ -16731,7 +16766,7 @@ scripts = [
 	(troop_raise_proficiency_linear, "trp_player", wpt_throwing, 10),
     (call_script, "script_gain_trait", slot_trait_fell_beast),
 ]), 
-#script_gain_trait_foe_hammer
+#script_cf_gain_trait_foe_hammer
 ("cf_gain_trait_foe_hammer",[
         (troop_slot_eq, "trp_traits", slot_trait_foe_hammer, 0),
 		(troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 10),
@@ -16744,11 +16779,13 @@ scripts = [
 		(neg|ge, ":skill", 10),
 		(troop_raise_skill, "trp_player", skl_tactics, 1),
 ]), 
-#script_check_trait_captain
+#script_cf_check_trait_captain
 ("cf_check_trait_captain",[
         (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 0),
         (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 0),
         (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 0),
+        (party_get_num_companions, ":party_size", "p_main_party"),
+		(ge, ":party_size", 50), #MV: has to command a sizable party to be called Captain
 		(party_get_num_companion_stacks, ":numstacks", "p_main_party"),
 		(assign, ":inf_count", 0),
 		(assign, ":arc_count", 0),

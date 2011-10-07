@@ -1389,7 +1389,7 @@ game_menus = [
    "{s1}",
    "none",
    [(str_clear, s2),
-    (try_for_range, ":trait", slot_trait_elf_friend, slot_trait_fell_beast+1),
+    (try_for_range, ":trait", slot_trait_first, slot_trait_last+1),
       (troop_slot_eq, "trp_traits", ":trait", 1),
       
       # Title string = First title string + 2*(slot-1)
