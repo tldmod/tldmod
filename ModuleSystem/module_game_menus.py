@@ -1968,39 +1968,18 @@ game_menus = [
         (try_end),
         
         # AI string
-        (try_begin),
-          (eq, ":party_ai_state", spai_undefined),
-          (str_store_string, s1, "@{s1}doing nothing"),
-        (else_try),
-          (eq, ":party_ai_state", spai_accompanying_army),
-          (str_store_string, s1, "@{s1}escorting {s7}"),
-        (else_try),
-          (eq, ":party_ai_state", spai_besieging_center),
-          (str_store_string, s1, "@{s1}besieging {s7}"),
-        (else_try),
-          (eq, ":party_ai_state", spai_holding_center),
-          (str_store_string, s1, "@{s1}defending {s7}"),
-        (else_try),
-          (eq, ":party_ai_state", spai_patrolling_around_center),
-          (str_store_string, s1, "@{s1}patrolling around {s7}"),
-        (else_try),
-          (eq, ":party_ai_state", spai_recruiting_troops),
-          (str_store_string, s1, "@{s1}recruiting in {s7} - INVALID"),
-        (else_try),
-          (eq, ":party_ai_state", spai_raiding_around_center),
-          (str_store_string, s1, "@{s1}raiding around {s7} - INVALID"),
-        (else_try),
-          (eq, ":party_ai_state", spai_engaging_army),
-          (str_store_string, s1, "@{s1}engaging {s7}"),
-        (else_try),
-          (eq, ":party_ai_state", spai_retreating_to_center),
-          (str_store_string, s1, "@{s1}retreating to {s7}"),
-        (else_try),
-          (assign, reg3, ":party_ai_state"), (str_store_string, s1, "@{s1}unknown({reg3})"),
+        (try_begin),(eq, ":party_ai_state", spai_undefined),               (str_store_string, s1, "@{s1}doing nothing"),
+         (else_try),(eq, ":party_ai_state", spai_accompanying_army),       (str_store_string, s1, "@{s1}escorting {s7}"),
+         (else_try),(eq, ":party_ai_state", spai_besieging_center),        (str_store_string, s1, "@{s1}besieging {s7}"),
+         (else_try),(eq, ":party_ai_state", spai_holding_center),          (str_store_string, s1, "@{s1}defending {s7}"),
+         (else_try),(eq, ":party_ai_state", spai_patrolling_around_center),(str_store_string, s1, "@{s1}patrolling around {s7}"),
+         (else_try),(eq, ":party_ai_state", spai_recruiting_troops),       (str_store_string, s1, "@{s1}recruiting in {s7} - INVALID"),
+         (else_try),(eq, ":party_ai_state", spai_raiding_around_center),   (str_store_string, s1, "@{s1}raiding around {s7} - INVALID"),
+         (else_try),(eq, ":party_ai_state", spai_engaging_army),           (str_store_string, s1, "@{s1}engaging {s7}"),
+         (else_try),(eq, ":party_ai_state", spai_retreating_to_center),    (str_store_string, s1, "@{s1}retreating to {s7}"),
+         (else_try),                    (assign, reg3, ":party_ai_state"), (str_store_string, s1, "@{s1}unknown({reg3})"),
         (try_end),
-        
 	  (try_end),
-      
     ],
     [("change",[
         (str_store_faction_name, s7, "$g_mvtest_faction"),
@@ -2722,8 +2701,7 @@ game_menus = [
   ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
   ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),	   
   ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
- ]
-),  
+]),  
 #TLD end (Hokie)  
 ("camp_action",0,
   "^^^^^^^^^     Choose an action:", "none",
@@ -2779,8 +2757,7 @@ game_menus = [
 ( "assasins_attack_player_won",mnf_disable_all_keys,
     "You have successfully defeated assassins from {s2}, sent by {s3}.",
     "none",
-    [
-		#add prize
+    [#add prize
 		(call_script,"script_troop_add_gold","trp_player",100),#add gold
 		(add_xp_to_troop,1000,"trp_player"),#add exp
 		
@@ -3679,7 +3656,7 @@ game_menus = [
 		]),
     ]
 ),
-( "encounter_retreat_confirm",mnf_scale_picture,
+( "encounter_retreat_confirm",0,
     "^^^^^As the party member with the highest tactics skill,\
    ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,\
    but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.",
@@ -3748,7 +3725,7 @@ game_menus = [
       ("call_back",[],"Call them back.",[(jump_to_menu,"mnu_simple_encounter")]),
     ]
 ),
-( "order_attack_2",mnf_disable_all_keys|mnf_scale_picture,
+( "order_attack_2",mnf_disable_all_keys,
     "^^^^^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
@@ -3807,7 +3784,7 @@ game_menus = [
 ),
 
 # remove us - MV: reintroduced from Native
-(  "kingdom_army_quest_report_to_army",mnf_scale_picture,
+(  "kingdom_army_quest_report_to_army",0,
    "{s8} sends word that he wishes you to join his new military campaign.\
    You need to bring at least {reg13} troops to the army,\
    and are instructed to raise more warriors with all due haste if you do not have enough.",
@@ -3848,7 +3825,7 @@ game_menus = [
         ]),
      ]
 ),
-(  "kingdom_army_quest_messenger",mnf_scale_picture,
+(  "kingdom_army_quest_messenger",0,
    "{s8} sends word that he wishes to speak with you about a task he needs performed.\
    He requests you to come and see him as soon as possible.",
     "none",
@@ -3863,7 +3840,7 @@ game_menus = [
       ],
     [("continue",[],"Continue...",[(change_screen_return)])]
 ),
-(   "kingdom_army_quest_join_siege_order",mnf_scale_picture,
+(   "kingdom_army_quest_join_siege_order",0,
     "{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.\
     Your troops are to take {s9} at all costs.",
     "none",
@@ -3892,7 +3869,7 @@ game_menus = [
         ]),
      ]
 ),
-(   "kingdom_army_follow_failed",mnf_scale_picture,
+(   "kingdom_army_follow_failed",0,
     "You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.",
     "none",
     [   (set_background_mesh, "mesh_ui_default_menu_window"),
@@ -7472,9 +7449,12 @@ game_menus = [
 					(str_store_troop_name, s1, ":hero"),
 					(party_set_slot, ":mound", slot_mound_state, 2),
 					(store_random, ":rnd", 100),
-					(try_begin),(is_between, ":rnd", 5, 15),(call_script, "script_cf_gain_trait_reverent"),
-					 (else_try),		(neg|ge, ":rnd", 5),(call_script, "script_cf_gain_trait_blessed"),
-					(try_end)],[
+#					(try_begin),(is_between, ":rnd", 5, 15),
+					(call_script, "script_cf_gain_trait_reverent"),
+#					 (else_try),		(neg|ge, ":rnd", 5),
+					 (call_script, "script_cf_gain_trait_blessed"),
+#					(try_end)
+					],[
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
 ( "burial_mound_oath", 0, 
@@ -7501,9 +7481,11 @@ game_menus = [
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
 	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
 	 (store_random, ":rnd", 100),
-	 (try_begin),(is_between, ":rnd", 5, 10),(call_script, "script_cf_gain_trait_despoiler"),
-	  (else_try),    (neg|ge, ":rnd", 5),    (call_script, "script_cf_gain_trait_accursed"),
-	 (try_end),
+#	 (try_begin),(is_between, ":rnd", 5, 10),
+	 (call_script, "script_cf_gain_trait_despoiler"),
+#	  (else_try),    (neg|ge, ":rnd", 5),    
+	  (call_script, "script_cf_gain_trait_accursed"),
+#	 (try_end),
 	 (party_set_slot, ":mound", slot_mound_state, 4),
 	 (disable_party, ":mound")],[
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
@@ -7517,8 +7499,7 @@ game_menus = [
 	(store_faction_of_party, ":faction", ":mound"),
 	(str_store_faction_name, s2, ":faction")],[
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
- ]
-),
+]),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,
 	"When you approach, you see that {s1} is destroyed. Only smoldering ruins remain.",
     "none",
