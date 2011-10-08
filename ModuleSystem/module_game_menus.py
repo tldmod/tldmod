@@ -4083,6 +4083,16 @@ game_menus = [
 			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
 		  (try_end),
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
+          
+          # Bravery trait check (chance greater if outnumbered; uses battle_renown_value=0-50 to figure it out)
+		  (try_begin),
+            (ge, "$battle_renown_value", 20), #minimum renown for being outnumbered
+            (troop_slot_eq, "trp_traits", slot_trait_bravery, 0),
+            (store_random_in_range, ":random", 0, 100),
+            (ge, "$battle_renown_value", ":random"),
+            (call_script, "script_gain_trait", slot_trait_bravery),
+		  (try_end),
+          
 #TLD end
           
           (gt, "$g_ally_party", 0),
@@ -7448,7 +7458,7 @@ game_menus = [
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(str_store_troop_name, s1, ":hero"),
 					(party_set_slot, ":mound", slot_mound_state, 2),
-					(store_random, ":rnd", 100),
+#					(store_random, ":rnd", 100),
 #					(try_begin),(is_between, ":rnd", 5, 15),
 					(call_script, "script_cf_gain_trait_reverent"),
 #					 (else_try),		(neg|ge, ":rnd", 5),
@@ -7480,7 +7490,7 @@ game_menus = [
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
 	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
-	 (store_random, ":rnd", 100),
+#	 (store_random, ":rnd", 100),
 #	 (try_begin),(is_between, ":rnd", 5, 10),
 	 (call_script, "script_cf_gain_trait_despoiler"),
 #	  (else_try),    (neg|ge, ":rnd", 5),    

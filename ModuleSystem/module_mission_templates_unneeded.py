@@ -6,14 +6,14 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
-
-cheat_heal_self_on_ctrl_h = (0.5,0,2,[
-    (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
-    (get_player_agent_no, ":player_agent"),
-	(agent_set_hit_points , ":player_agent",100,0),
-	(display_message, "@CHEAT: healed!!! (ctrl+h)"),
-  ], [ ]
-)
+#MV: commented out - not used and ctrl-h already works this way (standard MB cheat)
+# cheat_heal_self_on_ctrl_h = (0.5,0,2,[
+    # (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
+    # (get_player_agent_no, ":player_agent"),
+	# (agent_set_hit_points , ":player_agent",100,0),
+	# (display_message, "@CHEAT: healed!!! (ctrl+h)"),
+  # ], [ ]
+# )
 
 #MV: commented out - not used and if used will interfere with formation keys
 ################################ set up fog on a scene

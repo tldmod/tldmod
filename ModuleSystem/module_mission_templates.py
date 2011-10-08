@@ -45,6 +45,7 @@ tld_common_battle_scripts = [
 	tld_player_cant_ride,
 	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,
+	common_battle_healing,
 	#common_battle_kill_underwater,
 	]
 
@@ -52,6 +53,7 @@ tld_siege_battle_scripts = [
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	custom_track_companion_casualties,
+	common_battle_healing,
 	#common_battle_kill_underwater,
 	]
 

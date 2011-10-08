@@ -1984,6 +1984,7 @@ dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [
 		(try_end),
 	(try_end)])
 	
+common_battle_healing = (0, 0, ti_once, [(key_clicked, key_h)], [(call_script, "script_battle_health_management")])
 	
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",

@@ -18001,6 +18001,94 @@ scripts = [
 	(try_end),
 ]),
 
+#script_battle_health_management
+#MV: copied over from 808 for use in a trigger for berserker and inf/arch/cav captain traits
+("battle_health_management",[
+
+#don't do this, we want to heal only player troops on his command
+# (try_for_agents, ":agent"), # berserkers heal
+    # (agent_is_alive, ":agent"),
+    # (agent_get_troop_id, ":troop", ":agent"),
+    # (this_or_next|eq, ":troop", "trp_dunnish_wolf_warrior"),
+    # (this_or_next|eq, ":troop", "trp_dunnish_berserker"),
+    # (this_or_next|eq, ":troop", "trp_fighting_uruk_hai_berserker"),
+    # (this_or_next|eq, ":troop", "trp_variag_pitfighter"),
+                 # (eq, ":troop", "trp_variag_gladiator"),
+    # (store_agent_hit_points, ":hp", ":agent", 0),
+    # (neg|ge, ":hp", 50),
+    # (val_mul, ":hp", 10),
+    # (val_div, ":hp", 8),
+    # (agent_set_hit_points, ":agent", ":hp", 0),
+    # (assign, reg1, ":hp"),
+    # (str_store_troop_name, 1, ":troop"),
+# (try_end),
+
+(try_begin), # player heal when berserker or has torque #MV: berserker only
+    (get_player_agent_no, ":player"),
+    #(player_has_item|this_or_next, "itm_dunlending_torque"),
+    (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+    (store_agent_hit_points, ":hp", ":player", 0),
+    (val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
+    (val_min, ":hp", 100),
+    (agent_set_hit_points, ":player", ":hp", 0),
+    (str_store_string, s24, "str_trait_title_berserker"),
+    (display_message, "@{s24}: Some of your wounds healed!"),
+(try_end),
+
+(try_begin), # heal classes acc to captainship
+    (this_or_next|troop_slot_eq, "trp_traits", slot_trait_archer_captain, 1),
+    (this_or_next|troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 1),
+                 (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 1),
+    (get_player_agent_no, ":player"),
+    (agent_get_team, ":player_team", ":player"),
+    (try_for_agents, ":agent"),
+        #(agent_is_ally, ":agent"), #MV: replaced with player team check, makes more sense
+        (agent_is_alive, ":agent"),
+        (agent_is_human, ":agent"),
+        (neq, ":agent", ":player"),
+        (agent_get_team, ":agent_team", ":agent"),
+        (eq, ":agent_team", ":player_team"),
+        (agent_get_class, ":class", ":agent"),
+        (assign, ":heal_agent", 0),
+        (try_begin),
+            (eq, ":class", grc_infantry),
+            (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 1),
+            (assign, ":heal_agent", 1),
+         (else_try),
+            (eq, ":class", grc_archers),
+            (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 1),
+            (assign, ":heal_agent", 1),
+		 (else_try),
+            (eq, ":class", grc_cavalry),
+            (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 1),
+            (assign, ":heal_agent", 1),
+        (try_end),
+        (eq, ":heal_agent", 1),
+        #(agent_slot_eq, ":agent", 6, 0), #MV: hm, what's this slot? marking which agents received healing? unneeded if done once per battle
+        (store_agent_hit_points, ":hp", ":agent", 0),
+        (val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
+        (val_min, ":hp", 100),
+        (agent_set_hit_points, ":agent", ":hp", 0),
+        #(agent_set_slot, ":agent", 6, 1),
+    (try_end),
+    (try_begin),
+        (troop_slot_eq, "trp_traits", slot_trait_infantry_captain, 1),
+        (str_store_string, s24, "str_trait_title_infantry_captain"),
+        (display_message, "@{s24}: Your infantry feels better!"),
+    (try_end),
+    (try_begin),
+        (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 1),
+        (str_store_string, s24, "str_trait_title_archer_captain"),
+        (display_message, "@{s24}: Your archers feel better!"),
+    (try_end),
+    (try_begin),
+        (troop_slot_eq, "trp_traits", slot_trait_cavalry_captain, 1),
+        (str_store_string, s24, "str_trait_title_cavalry_captain"),
+        (display_message, "@{s24}: Your cavalry feels better!"),
+    (try_end),    
+(try_end),
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts

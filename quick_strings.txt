@@ -1,4 +1,4 @@
-892
+896
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -370,6 +370,10 @@ qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_mana
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
 qstr_Item_you_just_equipp Item_you_just_equipped_does_not_fit_characters_of_this_race_and_will_be_removed_into_player_inventory_shortly^^Make_sure_your_equipment_has_space_for_the_item,_or_it_will_be_lost
 qstr_Inappropriate_equipm Inappropriate_equipment
+qstr_{s24}:_Some_of_your_ {s24}:_Some_of_your_wounds_healed!
+qstr_{s24}:_Your_infantry {s24}:_Your_infantry_feels_better!
+qstr_{s24}:_Your_archers_ {s24}:_Your_archers_feel_better!
+qstr_{s24}:_Your_cavalry_ {s24}:_Your_cavalry_feels_better!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
