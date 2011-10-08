@@ -2295,5 +2295,10 @@ scene_props = [
             [(try_begin),(is_currently_night),(set_fog_distance,1700,0xeFFF3D),
 			 (else_try),                      (set_fog_distance,1500,0xeFFF3D),
 			 (try_end)])]),
+("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
+("isen_wall",0,"isen_wall","bo_isen_wall", []),
+("isen_sink",0,"isen_sink","bo_isen_sink", []),
+("isen_forge",0,"isen_forge","bo_isen_forge", []),
+("isen_metal",0,"isen_metal","0", []),
 
 ]

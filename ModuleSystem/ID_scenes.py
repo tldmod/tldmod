@@ -199,3 +199,4 @@ scn_moria_secret_entry = 197
 scn_moria_deep_mines = 198
 scn_advcamp_good = 199
 scn_advcamp_bad = 200
+scn_isengard_underground = 201

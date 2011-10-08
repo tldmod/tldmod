@@ -21,11 +21,11 @@ pt_merchant_caravan Merchant_Caravan 5629499534606338 0 1 11 447 1 1 0 448 5 25 
 pt_troublesome_bandits Troublesome_Goblins 2533274790658055 0 2 494 393 14 55 0 -1 -1 -1 -1 -1 
 pt_fangorn_orcs Tree-chopping_Orcs 2533274790658055 0 26 494 340 1 1 0 338 3 8 0 333 8 13 0 336 12 24 0 -1 -1 
 pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 446 3 8 0 -1 -1 -1 -1 
-pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 798 1 1 0 158 5 11 0 -1 -1 -1 -1 
-pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 799 1 1 0 271 5 11 0 -1 -1 -1 -1 
+pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 800 1 1 0 158 5 11 0 -1 -1 -1 -1 
+pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 801 1 1 0 271 5 11 0 -1 -1 -1 -1 
 pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 446 3 3 0 -1 -1 -1 -1 
-pt_spy Lone_Rider 844424930459650 0 26 7 796 1 1 0 -1 -1 -1 -1 -1 
-pt_spy_evil Lone_Rider 844424930459650 0 26 7 797 1 1 0 -1 -1 -1 -1 -1 
+pt_spy Lone_Rider 844424930459650 0 26 7 798 1 1 0 -1 -1 -1 -1 -1 
+pt_spy_evil Lone_Rider 844424930459650 0 26 7 799 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904977 0 3 183 111 1 1 0 116 3 7 0 102 3 7 0 -1 -1 -1 
 pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904981 0 3 183 153 1 1 0 152 0 3 0 151 4 7 0 -1 -1 -1 
@@ -106,8 +106,8 @@ pt_rohan_elite_company Rohan_Elite_Company 29 0 5 238 242 10 20 0 233 10 20 0 22
 pt_imladris_elite_company Rivendell_Elite_Company 27 0 9 238 206 25 50 0 208 25 50 0 409 1 1 0 -1 -1 -1 
 pt_lorien_elite_company Lothlorien_Elite_Company 34 0 8 238 170 13 25 0 175 13 25 0 169 13 25 0 178 13 25 0 404 1 1 0 -1 
 pt_woodelf_elite_company Mirkwood_Elite_Company 37 0 10 238 192 20 40 0 186 20 40 0 407 0 0 0 -1 -1 -1 
-pt_dale_elite_company Dale_Elite_Company 2 0 11 238 58 13 25 0 55 13 25 0 62 13 25 0 52 13 25 0 588 13 25 0 -1 
-pt_dwarf_elite_company Dwarven_Elite_Company 25 0 4 238 83 18 34 0 89 18 34 0 94 18 34 0 589 1 1 0 -1 -1 
+pt_dale_elite_company Dale_Elite_Company 2 0 11 238 58 13 25 0 55 13 25 0 62 13 25 0 52 13 25 0 590 13 25 0 -1 
+pt_dwarf_elite_company Dwarven_Elite_Company 25 0 4 238 83 18 34 0 89 18 34 0 94 18 34 0 591 1 1 0 -1 -1 
 pt_gondor_caravan Gondor_Caravan 2814749771300919 0 3 14 113 1 4 0 111 4 10 0 107 4 10 0 104 4 10 0 117 7 14 0 102 30 50 0 
 pt_rohan_caravan Rohan_Caravan 2814749771300920 0 5 14 240 1 4 0 238 4 10 0 231 7 14 0 224 6 14 0 222 26 42 0 -1 
 pt_imladris_caravan Rivendell_Caravan 2814749771300936 0 9 14 207 1 4 0 200 4 10 0 199 12 24 0 198 10 16 0 203 14 24 0 -1 

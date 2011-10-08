@@ -328,7 +328,7 @@ mission_templates = [ # not used in game
      ],
     tld_common_peacetime_scripts + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
-      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest"),]),
+      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1)]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
       (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
 	  (0, 0, ti_once, [], [#(set_fog_distance, 150, 0xFF736252)
