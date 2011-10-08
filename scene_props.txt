@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1527
+ 1529
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4666,5 +4666,12 @@ spr_isen_forge 0 0 isen_forge bo_isen_forge 0
 
 
 spr_isen_metal 0 0 isen_metal 0 0
+
+
+spr_isen_cave 0 0 isen_cave bo_isen_cave 0
+
+
+spr_isen_chasm 0 0 isen_chasm bo_isen_chasm 0
+
 
 
