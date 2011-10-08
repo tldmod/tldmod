@@ -1525,3 +1525,5 @@ spr_isen_wall = 1523
 spr_isen_sink = 1524
 spr_isen_forge = 1525
 spr_isen_metal = 1526
+spr_isen_cave = 1527
+spr_isen_chasm = 1528

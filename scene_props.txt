@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1527
+ 1529
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3870,7 +3870,7 @@ spr_isen_crane 0 0 isen_crane bo_isen_crane 0
 spr_isen_awning 0 0 isen_awning 0 0
 
 
-spr_isen_tower_a 0 0 isen_tower_a 0 0
+spr_isen_tower_a 0 0 isen_tower_a bo_isen_tower_a 0
 
 
 spr_isen_tower_b 0 0 isen_tower_b bo_isen_tower_b 0
@@ -4557,22 +4557,22 @@ spr_tunnel_spiderweb2 0 0 spiderweb2 0 0
 spr_tunnel_spiderweb3 0 0 spiderweb3 0 0
 
 
-spr_tunnel_crystal1 0 0 crystal1 0 0
+spr_tunnel_crystal1 0 0 crystal1 bo_crystal134 0
 
 
-spr_tunnel_crystal2 0 0 crystal2 0 0
+spr_tunnel_crystal2 0 0 crystal2 bo_crystal256 0
 
 
-spr_tunnel_crystal3 0 0 crystal3 0 0
+spr_tunnel_crystal3 0 0 crystal3 bo_crystal134 0
 
 
-spr_tunnel_crystal4 0 0 crystal4 0 0
+spr_tunnel_crystal4 0 0 crystal4 bo_crystal134 0
 
 
-spr_tunnel_crystal5 0 0 crystal5 0 0
+spr_tunnel_crystal5 0 0 crystal5 bo_crystal256 0
 
 
-spr_tunnel_crystal6 0 0 crystal6 0 0
+spr_tunnel_crystal6 0 0 crystal6 bo_crystal256 0
 
 
 spr_smith_anvil 0 0 anvil 0 0
@@ -4666,5 +4666,11 @@ spr_isen_forge 0 0 isen_forge bo_isen_forge 0
 
 
 spr_isen_metal 0 0 isen_metal 0 0
+
+
+spr_isen_cave 0 0  isen_cave bo_isen_cave 0
+
+
+spr_isen_chasm 0 0 isen_chasm bo_isen_chasm 0
 
 
