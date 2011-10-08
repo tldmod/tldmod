@@ -806,7 +806,7 @@ dlga_start:town_merchant_talk.1 4095 0  2 1073741857 3 144115188075855887 360287
 dlga_town_merchant_talk:trade_requested_weapons 69631 403  2 33 3 144115188075855887 360287970189640274 360287970189640325 1 2 936748722493063559 360287970189639680 I_want_to_request_new_equipment._Show_me_what_you_have_in_your_warehouse.  404  0 
 dlga_town_merchant_talk:trade_requested_horse 69631 403  2 33 3 144115188075855887 360287970189640358 360287970189640411 1 2 936748722493063559 360287970189639680 I_am_thinking_of_getting_a_mount.  405  0 
 dlga_trade_requested_weapons:merchant_trade 4095 404  0 Ah,_yes_commander._These_wares_are_the_best_you'll_find_anywhere.  406  1 2042 0 
-dlga_trade_requested_horse:merchant_trade 4095 405  0 You_have_a_fine_eye_for_horses,_commander._You_won't_find_better_beasts_than_these_anywhere_else.  406  1 2042 0 
+dlga_trade_requested_horse:merchant_trade 4095 405  0 You_have_a_fine_eye,_Commander._You_won't_find_better_beasts_than_these_anywhere_else.  406  1 2042 0 
 dlga_merchant_trade:town_merchant_talk 4095 406  0 Anything_else?  403  0 
 dlga_town_merchant_talk:merchant_gossip 69631 403  0 Tell_me._What_are_people_talking_about_these_days?  407  0 
 dlga_merchant_gossip:town_merchant_talk 4095 407  1 1 4 936748722493063498 144115188075855887 144115188075856017 144115188075855888 {s61}  403  0 

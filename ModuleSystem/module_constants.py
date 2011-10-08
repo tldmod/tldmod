@@ -1683,7 +1683,7 @@ routes_list = [
  ("p_town_erebor"       , "p_town_dale","p_town_esgaroth"),
 ]
 
-lords_spawn = [ ("trp_knight_1_1","p_town_linhir"),
+lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
 				("trp_knight_1_3","p_town_dol_amroth"),
 				("trp_knight_1_5","p_town_erech"),
                 ("trp_knight_1_6","p_town_pinnath_gelin"),

@@ -2504,7 +2504,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("umbar_rumor_7", "Nothing the sea can throw at us frightens a corsair. But we heard some disturbing rumours about abominations on land."),
 ("umbar_rumor_8", "We will spill over Gondor like a giant wave and reclaim our long lost lands."),
 ("umbar_rumor_9", "Haradrim don't drink rum. Did you know that? We like some, to steady the harpoon hand."),
-("umbar_rumor_10", "I saw some Variags of Khand figting. I wouldn't want to be facing them in battle. It is a good thing they are on our side."),
+("umbar_rumor_10", "I saw some Variags of Khand fighting. I wouldn't want to be facing them in battle. It is a good thing they are on our side."),
 #[b]Khand[/b]
 #[i]general idea= More hardcore Easterling types[/i]
 ("khand_rumor_begin", "A fight is a fight, no matter how bloody. But retreat is the greatest shame!"),

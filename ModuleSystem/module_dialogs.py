@@ -8296,7 +8296,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 
 [anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
   (change_screen_trade)]],
-[anyone,"trade_requested_horse", [], "You have a fine eye for horses, commander. You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
+[anyone,"trade_requested_horse", [], "You have a fine eye, Commander. You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
                   (change_screen_trade)]],
 
 [anyone,"merchant_trade", [], "Anything else?", "town_merchant_talk",[]],

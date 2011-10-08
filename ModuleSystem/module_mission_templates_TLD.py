@@ -1078,7 +1078,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(else_try), # ponies stops
 		(eq, ":mount_item", "itm_pony"),
 		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
-		(display_message, "@You weight too much for a pony!",color_bad_news),
+		(display_message, "@You weigh too much for a pony!",color_bad_news),
 		(agent_play_sound, ":mount", "snd_neigh"),
 	(else_try), # other mount, rear
 		(agent_set_animation, ":mount", "anim_horse_rear"), 
