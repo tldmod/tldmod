@@ -7453,13 +7453,12 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[]],
 
 [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
-"I am the guildmaster of {s9}. You can say I am in charge of internal tasks here.\
- I can help you find a job if you are looking for some work.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
+"I am the guildmaster of {s9}. You can say I am in charge of everyday tasks here.\
+ I can help you find a job if you are looking for something.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
 
 [anyone|plyr,"mayor_info_talk",[(eq, "$mayor_info_lord_told",0)], "Who rules this town?", "mayor_info_lord",[]],
 [anyone, "mayor_info_lord", [(party_get_slot, ":town_lord","$current_town",slot_town_lord),(str_store_troop_name, s10, ":town_lord")],
-"Our town's lord is {s10}.\
- As the town's guildmaster I have the authority to decide those things.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
+"Our lord is {s10}.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
   
 [anyone|plyr,"mayor_info_talk",[], "That's all I need to know. Thanks.", "mayor_pretalk",[]],
   

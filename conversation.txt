@@ -711,9 +711,9 @@ dlga_mayor_talk:merchant_quest_requested 69631 341  3 2240 1 1224979098644774912
 dlga_mayor_talk:merchant_quest_last_offered_job 69631 341  4 2240 1 1224979098644774912 2147483678 2 1224979098644774912 0 31 2 144115188075855941 144115188075855887 30 2 144115188075855943 0 About_that_task_you_needed_me_to_do...  360  0 
 dlga_mayor_talk:merchant_quest_about_job 69631 341  2 2240 1 72057594037927938 30 2 72057594037927938 0 About_the_task_you_appointed_to_me...  361  0 
 dlga_mayor_talk:close_window 69631 341  0 [Leave]  6  0 
-dlga_mayor_info_begin:mayor_info_talk 4095 358  1 2330 2 9 144115188075856017 I_am_the_guildmaster_of_{s9}._You_can_say_I_am_in_charge_of_internal_tasks_here._I_can_help_you_find_a_job_if_you_are_looking_for_some_work.  362  1 2133 2 144115188075855944 0 
+dlga_mayor_info_begin:mayor_info_talk 4095 358  1 2330 2 9 144115188075856017 I_am_the_guildmaster_of_{s9}._You_can_say_I_am_in_charge_of_everyday_tasks_here._I_can_help_you_find_a_job_if_you_are_looking_for_something.  362  1 2133 2 144115188075855944 0 
 dlga_mayor_info_talk:mayor_info_lord 69631 362  1 31 2 144115188075855944 0 Who_rules_this_town?  363  0 
-dlga_mayor_info_lord:mayor_info_talk 4095 363  2 521 3 1224979098644774912 144115188075856017 7 2322 2 10 1224979098644774912 Our_town's_lord_is_{s10}._As_the_town's_guildmaster_I_have_the_authority_to_decide_those_things.  362  1 2133 2 144115188075855944 1 
+dlga_mayor_info_lord:mayor_info_talk 4095 363  2 521 3 1224979098644774912 144115188075856017 7 2322 2 10 1224979098644774912 Our_lord_is_{s10}.  362  1 2133 2 144115188075855944 1 
 dlga_mayor_info_talk:mayor_pretalk 69631 362  0 That's_all_I_need_to_know._Thanks.  310  0 
 dlga_merchant_quest_about_job:merchant_quest_about_job_2 4095 361  0 What_about_it?  364  0 
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail 69631 364  0 What_if_I_can't_finish_it?  365  0 

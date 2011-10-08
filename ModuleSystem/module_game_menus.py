@@ -6546,6 +6546,12 @@ game_menus = [
         (assign, "$g_main_ship_party", -1),
         (change_screen_return),
         ]),
+	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
+        (eq, "$current_town", "p_town_isengard"),
+		(eq,"$entry_to_town_forbidden",0),], "Go to the Isengard underground caverns",
+       [(set_jump_mission, "mt_town_center"),
+        (jump_to_scene, "scn_isengard_underground"),
+        (change_screen_mission)]),
     ]
 ),
 
