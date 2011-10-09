@@ -587,7 +587,7 @@ skins = [
     "man_body", "man_calf_l", "m_handL",
     "male_head", mirkwood_face_keys,
     ["elf_hair_1","elf_hair_2","elf_hair_3","elf_hair_4","man_hair_p","elf_hair_5", "elf_hair_6","man_hair_r","man_hair_q","elf_hair_7","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-    ["beard_q"], #beard meshes ,"beard_q"
+    [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
     [], #beard_materials"beard_blonde"
     [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19]),

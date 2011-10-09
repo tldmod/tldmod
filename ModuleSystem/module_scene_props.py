@@ -532,29 +532,29 @@ scene_props = [
         (try_end),
 	])]),
 
-("banner_a",0,"banner_a01","0", []),
-("banner_b",0,"banner_a02","0", []),
-("banner_c",0,"banner_a03","0", []),
-("banner_d",0,"banner_a04","0", []),
-("banner_e",0,"banner_a05","0", []),
-("banner_f",0,"banner_a06","0", []),
-("banner_g",0,"banner_a07","0", []),
-("banner_h",0,"banner_a08","0", []),
-("banner_i",0,"banner_a09","0", []),
-("banner_j",0,"banner_a10","0", []),
-("banner_k",0,"banner_a11","0", []),
-("banner_l",0,"banner_a12","0", []),
-("banner_m",0,"banner_a13","0", []),
-("banner_n",0,"banner_a14","0", []),
-("banner_o",0,"banner_f21","0", []),
-("banner_p",0,"banner_a16","0", []),
-("banner_q",0,"banner_a17","0", []),
-("banner_r",0,"banner_a18","0", []),
-("banner_s",0,"banner_a19","0", []),
-("banner_t",0,"banner_a20","0", []),
-("banner_u",0,"banner_a21","0", []),
+("banner_a",0,"banner_a01","0", []), #gondor
+("banner_b",0,"banner_a02","0", []), #rohan
+("banner_c",0,"banner_a03","0", []), #mordor
+("banner_d",0,"banner_a04","0", []), #harad
+("banner_e",0,"banner_a05","0", []), #khand
+("banner_f",0,"banner_a06","0", []), #rhun
+("banner_g",0,"banner_a07","0", []), #umbar
+("banner_h",0,"banner_a08","0", []), #lorien
+("banner_i",0,"banner_a09","0", []), #imladris
+("banner_j",0,"banner_a10","0", []), #woodelf
+("banner_k",0,"banner_a11","0", []), #moria
+("banner_l",0,"banner_a12","0", []), #guldur
+("banner_m",0,"banner_a13","0", []), #beorn
+("banner_n",0,"banner_f15","0", []), #gunda
+("banner_o",0,"banner_f21","0", []), #dale
+("banner_p",0,"banner_a16","0", []), #erebor
+#("banner_q",0,"banner_a13","0", []), #beorn
+("banner_r",0,"banner_a17","0", []), #dunland
+("banner_s",0,"banner_a19","0", []), #isengard
+("banner_t",0,"banner_a20","0", []), #
+#("banner_u",0,"banner_a21","0", []), #
 # banners B and C not used
-("banner_da",0,"banner_d01","0", []),
+("banner_da",0,"banner_d01","0", []), 
 ("banner_db",0,"banner_d02","0", []),
 ("banner_dc",0,"banner_d03","0", []),
 ("banner_dd",0,"banner_d04","0", []),
@@ -617,7 +617,7 @@ scene_props = [
 ("banner_f18", 0, "banner_f18", "0", []),
 ("banner_f19", 0, "banner_f19", "0", []),
 ("banner_f20", 0, "banner_f20", "0", []),
-("banner_f21", 0, "banner_a15", "0", []),
+("banner_f21", 0, "banner_a21", "0", []),
 
 ("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
 ("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),
@@ -2291,10 +2291,8 @@ scene_props = [
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # all instances moved away when gate_destructible is destroyed
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
 
-("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,
-            [(try_begin),(is_currently_night),(set_fog_distance,1700,0xeFFF3D),
-			 (else_try),                      (set_fog_distance,1500,0xeFFF3D),
-			 (try_end)])]),
+("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
+	(try_begin),(is_currently_night),(set_fog_distance,1700,0xeFFF3D),(else_try),(set_fog_distance,1500,0xeFFF3D),(try_end)])]),
 ("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
 ("isen_wall",0,"isen_wall","bo_isen_wall", []),
 ("isen_sink",0,"isen_sink","bo_isen_sink", []),

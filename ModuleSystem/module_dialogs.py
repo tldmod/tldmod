@@ -1604,7 +1604,7 @@ dialogs = [
                             (val_add, ":num_centers", 1),
                           (try_end),
                           (assign, reg5, ":num_centers"),
-                          (str_store_string, s11, "@{s9}{reg5? and the lord of {s8}.:.", 0)]],
+                          (str_store_string, s11, "@{s9}{reg5? and the ruler of {s8}.:.", 0)]],
 
 #[anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
 #                     (eq, "$g_talk_troop_met", 0),
@@ -7244,8 +7244,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
         (eq, ":cur_party_template", ":looter_template"),
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
       (try_end)],
-"And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.\
- If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!\
+"And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now. \
+ If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place! \
  I think that concludes your task, {playername}. I'll pass a word to our warehouse, they will reward you. Thank you, and farewell.", "close_window",[]],
 
 [anyone,"mayor_looters_quest_destroyed_2", [], "Anything else you need?", "mayor_looters_quest_response",[]],
@@ -7352,8 +7352,8 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone,"mayor_begin", [(check_quest_active, "qst_move_cattle_herd"),
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_succeeded, "qst_move_cattle_herd")],
-"Good to see you again {playername}. I have heard that you have delivered the people successfully.\
- I will tell our commander how reliable you are.\
+"Good to see you again {playername}. I have heard that you have delivered the people successfully. \
+ I will tell our commander how reliable you are. \
  And here is your pay, {reg8} RPs.", "close_window",
    [(quest_get_slot, ":quest_gold_reward", "qst_move_cattle_herd", slot_quest_gold_reward),
     # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
@@ -7366,16 +7366,16 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone,"mayor_begin", [(check_quest_active, "qst_move_cattle_herd"),
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_failed, "qst_move_cattle_herd")],
-"I heard that you have lost the people on your way to {s9}.\
- I had a very difficult time explaining your failure to the commander here.\
+"I heard that you have lost the people on your way to {s9}. \
+ I had a very difficult time explaining your failure to the commander here. \
  Do you have anything to say?", "move_cattle_herd_failed",[]],
 
 [anyone|plyr ,"move_cattle_herd_failed", [], "I am sorry. But I was attacked on the way.", "move_cattle_herd_failed_2",[]],
 [anyone|plyr ,"move_cattle_herd_failed", [], "I am sorry. Those people wandered off during the night.", "move_cattle_herd_failed_2",[]],
 
 [anyone,"move_cattle_herd_failed_2", [],
-"Well, it was your responsibility to deliver them safely, no matter what.\
- You should know that the commander demanded to be compensated for this, and I had to pay him 1000 RPs.\
+"Well, it was your responsibility to deliver them safely, no matter what. \
+ You should know that the commander demanded to be compensated for this, and I had to pay him 1000 RPs. \
  So you now owe me that.", "merchant_ask_for_debts",
    [(assign, "$debt_to_merchants_guild", 1000),
     (call_script, "script_end_quest", "qst_move_cattle_herd"),]],
@@ -7401,8 +7401,8 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone,"mayor_begin", [(check_quest_active, "qst_troublesome_bandits"),
                           (check_quest_succeeded, "qst_troublesome_bandits"),
                           (quest_slot_eq, "qst_troublesome_bandits", slot_quest_giver_troop, "$g_talk_troop")],
-"I have heard about your deeds. You have given those goblins the punishment they deserved.\
- You are really as good as they say.\
+"I have heard about your deeds. You have given those goblins the punishment they deserved. \
+ You are really as good as they say. \
  Here is your reward: {reg5} RPs.",
    "mayor_friendly_pretalk", [(quest_get_slot, ":quest_gold_reward", "qst_troublesome_bandits", slot_quest_gold_reward),
                               # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
@@ -7422,9 +7422,9 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 
 [anyone, "merchant_debts_paid", [], "Excellent. I'll let my fellow merchants know that you are clear of any debts.", "mayor_pretalk",[]],
 [anyone|plyr, "merchant_ask_for_debts", [], "I'm afraid I can't pay that sum now.", "merchant_debts_not_paid",[]],
-[anyone, "merchant_debts_not_paid", [(assign,reg1,"$debt_to_merchants_guild")], "In that case, I am afraid, I can't deal with you. Guild rules...\
- Come back when you can pay the {reg1} RPs.\
- And know that we'll be charging an interest to your debt.\
+[anyone, "merchant_debts_not_paid", [(assign,reg1,"$debt_to_merchants_guild")], "In that case, I am afraid, I can't deal with you. Guild rules... \
+ Come back when you can pay the {reg1} RPs. \
+ And know that we'll be charging an interest to your debt. \
  So the sooner you pay it, the better.", "close_window",[]],
 
 [anyone,"mayor_begin", [], "What can I do for you?", "mayor_talk", []],
@@ -7490,22 +7490,22 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 #[trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer0", [], "Woot!?", "lord_tell_mission_sorcerer",[]],
 # remove upper 2 & make lower follow "lord_tell_mission"
 [trp_elder_cgaladhon,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_mirkwood_sorcerer")],
-"Yes {playername}, I have an important task for you.\
-My power to defend and preserve Lothlorien has been diminished by the devices of the enemy.\
-A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses.\
-Though he is a mortal, he has become one of the enemies greatest pupils\
-in the use of arcane rituals and he represents a great threat to our people.\
+"Yes {playername}, I have an important task for you. \
+My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. \
+A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. \
+Though he is a mortal, he has become one of the enemies greatest pupils \
+in the use of arcane rituals and he represents a great threat to our people. \
 You must hunt him down and destroy him!", 
 "lord_mission_mirkwood_sorcerer",[]],
   
 [trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer", [], "Where can I find the sorcerer, my Lady?", "lord_mission_mirkwood_sorcerer_2",[]],
 
 [trp_elder_cgaladhon, "lord_mission_mirkwood_sorcerer_2", [], 
-"Search for him in Mirkwood forest, not far from Dol Guldur itself.\
-He is both a well guarded and a cautious foe so you will need to use stealth\
-to prevent the alarm from being raised.\
-If he escapes, he will relocate to other dark places that we know not of\
-and continue his wickedness unchallenged. There will be only one opportunity to defeat him.\
+"Search for him in Mirkwood forest, not far from Dol Guldur itself. \
+He is both a well guarded and a cautious foe so you will need to use stealth \
+to prevent the alarm from being raised. \
+If he escapes, he will relocate to other dark places that we know not of \
+and continue his wickedness unchallenged. There will be only one opportunity to defeat him. \
 Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_sorcerer_3",[]],
 
 [trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer_3", [], 
@@ -8463,7 +8463,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
                                     (try_end),
                                     (str_store_string, s11, "@{reg20?We mostly produce {s5} here:We don't produce much here these days}.\
  If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there."),],
-"{s10}", "close_window",[]], #was "{s10} {s11}"
+"{s10}", "town_dweller_talk",[]], #was "{s10} {s11}"
 
 [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_village),
                                      (eq, "$welfare_inquired", 0)], 

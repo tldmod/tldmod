@@ -2429,15 +2429,14 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("imladris_rumor_9", "I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours."),
 #[b]Mirkwood Elves[/b]
 #[i]general idea= Merl? Marco? - quite paranoid, slightly bigheaded about their own importance, secretly enjoying the fruits of their trade with Dale and dwarves.[/i]
-("woodelf_rumor_begin", " "), 
-("woodelf_rumor_2", "An Elven-maid there was of old, A shining star by day: Her mantle white was hemmed with gold, Her shoes of silver-grey."), #[color=red]Song of Nimrodel sung by Legolas[/color]
-("woodelf_rumor_3", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #[color=red]Legolas quote[/color]
-("woodelf_rumor_4", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."), 
-("woodelf_rumor_5", "Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?"),
-("woodelf_rumor_6", "Shhh, no dhínen! There may be orcs lurking around. We must be on guard!"),
-("woodelf_rumor_7", "*stares at you, obviously annoyed by your presence*"), #[color=red]removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign[/color]
-("woodelf_rumor_8", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
-("woodelf_rumor_9", "Edain of Dale make such amazing toys! They've learnt much from the Naugrim."),
+("woodelf_rumor_begin", "An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey."), #[color=red]Song of Nimrodel sung by Legolas[/color]
+("woodelf_rumor_2", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #[color=red]Legolas quote[/color]
+("woodelf_rumor_3", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."), 
+("woodelf_rumor_4", "Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?"),
+("woodelf_rumor_5", "Shhh, no dhínen! There may be orcs lurking around. We must be on guard!"),
+("woodelf_rumor_6", "*stares at you, obviously annoyed by your presence*"), #[color=red]removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign[/color]
+("woodelf_rumor_7", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
+("woodelf_rumor_8", "Edain of Dale make intricate toys these days! They've learnt much from the Naugrim."),
 #[b]Dale[/b]
 #[i]general idea= fearful because of the assault from several fronts[/i]
 ("dale_rumor_begin", "First there was the dragon, now this..."), 
@@ -2801,7 +2800,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_brown_lands", "The Brown Lands, covering the expanse between the Emyn Muil and Mirkwood" ),#region_brown_lands = 24
 ("fullname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 25
 ("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 26
-("fullname_region_anduin_banks", "the valley of Aduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 27 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_anduin_banks", "the valley of Anduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 27 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 28
 ("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by several strange creatures" ),#region_s_mirkwood = 29
 ("fullname_region_above_mirkwook", "the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 30  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
