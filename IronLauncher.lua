@@ -50,10 +50,12 @@ BreakPoints = 0
 	ModuleRoot2CommonRoot("Data\\","man_basic.pp")
 	ModuleRoot2CommonRoot("Data\\","man_flora.pp")
 	ModuleRoot2CommonRoot("Data\\","man_plain.pp")
+	ModuleRoot2CommonRoot("Data\\","binkplay.exe")  //new binkplayer to play our intro must be added from our Data folder
 
 --videos (wb & orig)
 	--ModuleRoot2CommonRoot("Data\\","taleworlds_intro.bik")
-	--ModuleRoot2CommonRoot("Data\","paradox.bik")
+	--ModuleRoot2CommonRoot("Data\\","paradox.bik")
+	
 
 -- hide the other modules
 	--HideOtherModules()
@@ -66,6 +68,8 @@ Window.Hide(Application.GetWndHandle()); --> Useful
 --#@> start the game
 --------------------------------------------------------------------
 WriteLogFile("["..System.GetTime(TIME_FMT_AMPM).."] Starting the game at "..MBexec.." ["..Game.."] \r\n     >Waiting for M&B close...\r\n")
+
+Shell.Execute(current_folder.."\\..\\..\\binkplay.exe", "open", "MerlPorn.bik /P /I2 /J /Z2 /R /U1 /W-1 /H-1 /C /B2", "Data", SW_SHOWNORMAL, true) // our intro. Don't change parameters without knowing what they do!
 
 
 find_exec = File.Find(current_folder.."\\..\\..", "m*b*a*d*.exe", false, false, nil, nil); --> dynamic exe loader
@@ -116,6 +120,7 @@ WriteLogFile("["..System.GetTime(TIME_FMT_AMPM).."] "..Game.." has closed, Undoi
 --videos (wb & orig)
 	--CommonRoot2trash("taleworlds_intro.bik")
 	--CommonRoot2trash("paradox.bik")
+	
 
 --restaurar la visibilidad del resto de módulos...
     --UnhideOtherModules()
