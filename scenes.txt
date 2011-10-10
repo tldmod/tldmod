@@ -334,7 +334,7 @@ scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100.000000 -
  0 
 scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100.000000 -100.000000 100.000000 100.000000 -100.000000 0 
   1  100000 
-  1  796 
+  0 
  0 
 scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200.000000 -200.000000 200.000000 200.000000 -100.000000 0 
   1  100000 
@@ -626,7 +626,7 @@ scn_hornburg_castle hornburg_castle 256 none none 0.000000 0.000000 100.000000 1
  0 
 scn_morannon_castle morannon_castle 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
-  0 
+  1  796 
  outer_mountains2west_mordor 
 scn_amon_hen amon_hen 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000630000500000c2304000003ce000047ca0000794b 
   0 

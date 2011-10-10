@@ -6481,42 +6481,36 @@ game_menus = [
           ],"Leave Area"),
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
 
-     ("town_cheat_alley",
-       [(party_slot_eq,"$current_town",slot_party_type, spt_town),
-        (eq, "$cheat_mode", 1),
-           ],
-       "CHEAT: Go to the alley.",
-       [
-           (party_get_slot, reg(11), "$current_town", slot_town_alley),
-           (set_jump_mission,"mt_ai_training"),
-           (jump_to_scene,reg(11)),
-           (change_screen_mission),
-        ]),
+     ("town_cheat_alley",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
+							(party_get_slot, reg(11), "$current_town", slot_town_alley),
+							(set_jump_mission,"mt_ai_training"),
+							(jump_to_scene,reg(11)),
+							(change_screen_mission)]),
       ("castle_cheat_interior",[(eq, "$cheat_mode", 1)], "CHEAT: Interior.",[
-                                                       (set_jump_mission,"mt_ai_training"),
-                                                       (party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
-                                                       (jump_to_scene,":castle_scene"),
-                                                       (change_screen_mission)]),
+							(set_jump_mission,"mt_ai_training"),
+							(party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
+							(jump_to_scene,":castle_scene"),
+							(change_screen_mission)]),
       ("castle_cheat_town_exterior",[(eq, "$cheat_mode", 1)], "CHEAT: Exterior.",[
-                                                       (try_begin),
-                                                         (party_slot_eq,"$current_town",slot_party_type, spt_castle),
-                                                         (party_get_slot, ":scene", "$current_town", slot_castle_exterior),
-                                                       (else_try),
-                                                         (party_get_slot, ":scene", "$current_town", slot_town_center),
-                                                       (try_end),
-                                                       (set_jump_mission,"mt_ai_training"),
-                                                       (jump_to_scene,":scene"),
-                                                       (change_screen_mission)]),
+							(try_begin),
+								(party_slot_eq,"$current_town",slot_party_type, spt_castle),
+								(party_get_slot, ":scene", "$current_town", slot_castle_exterior),
+							(else_try),
+								(party_get_slot, ":scene", "$current_town", slot_town_center),
+							(try_end),
+							(set_jump_mission,"mt_ai_training"),
+							(jump_to_scene,":scene"),
+							(change_screen_mission)]),
       ("castle_cheat_dungeon",[(eq, "$cheat_mode", 1)], "CHEAT: Prison.",[
-                                                       (set_jump_mission,"mt_ai_training"),
-                                                       (party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
-                                                       (jump_to_scene,":castle_scene"),
-                                                       (change_screen_mission)]),
+							(set_jump_mission,"mt_ai_training"),
+							(party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
+							(jump_to_scene,":castle_scene"),
+							(change_screen_mission)]),
       ("castle_cheat_town_walls",[(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",[
-                                                       (party_get_slot, ":scene", "$current_town", slot_town_walls),
-                                                       (set_jump_mission,"mt_ai_training"),
-                                                       (jump_to_scene,":scene"),
-                                                       (change_screen_mission)]),
+							(party_get_slot, ":scene", "$current_town", slot_town_walls),
+							(set_jump_mission,"mt_ai_training"),
+							(jump_to_scene,":scene"),
+							(change_screen_mission)]),
       ("cheat_town_start_siege",[(eq, "$cheat_mode", 1),
 								(party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
 								(lt, "$g_encountered_party_2", 1),
@@ -6533,25 +6527,26 @@ game_menus = [
 					   (jump_to_menu, "mnu_castle_besiege"),
 					   ]),
       ("center_reports",[(eq, "$cheat_mode", 1),], "CHEAT: Show reports.",
-       [(jump_to_menu,"mnu_center_reports")]),
-      ("sail_from_port",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
-                         (eq, "$cheat_mode", 1),
-#                         (party_slot_eq,"$current_town",slot_town_near_shore, 1),
-                         ], "CHEAT: Sail from port.",
-       [(assign, "$g_player_icon_state", pis_ship),
-        (party_set_flags, "p_main_party", pf_is_ship, 1),
-        (party_get_position, pos1, "p_main_party"),
-        (map_get_water_position_around_position, pos2, pos1, 6),
-        (party_set_position, "p_main_party", pos2),
-        (assign, "$g_main_ship_party", -1),
-        (change_screen_return),
-        ]),
-	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
-        (eq, "$current_town", "p_town_isengard"),
-		(eq,"$entry_to_town_forbidden",0),], "Go to the Isengard underground caverns",
-       [(set_jump_mission, "mt_town_center"),
-        (jump_to_scene, "scn_isengard_underground"),
-        (change_screen_mission)]),
+						[(jump_to_menu,"mnu_center_reports")]),
+      ("sail_from_port",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
+                        ], "CHEAT: Sail from port.",
+						[(assign, "$g_player_icon_state", pis_ship),
+						(party_set_flags, "p_main_party", pf_is_ship, 1),
+						(party_get_position, pos1, "p_main_party"),
+						(map_get_water_position_around_position, pos2, pos1, 6),
+						(party_set_position, "p_main_party", pos2),
+						(assign, "$g_main_ship_party", -1),
+						(change_screen_return)]),
+	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
+						], "Go to the Isengard underground caverns",
+						[(set_jump_mission, "mt_town_center"),
+						(jump_to_scene, "scn_isengard_underground"),
+						(change_screen_mission)]),
+	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
+						], "Go to the Minas Tirith top level",
+						[(set_jump_mission, "mt_town_center"),
+						(jump_to_scene, "scn_minas_tirith_center_top"),
+						(change_screen_mission)]),
     ]
 ),
 
@@ -6799,8 +6794,7 @@ game_menus = [
   and altough you feel awful, you find out that can still walk.",
      "none",code_to_set_city_background,[      
 	 ("continue",[],"Continue...",
-        [
-		    (change_screen_map),
+        [   (change_screen_map),
             (jump_to_menu,"mnu_castle_outside"),
          ]),
 	 ]
@@ -6820,11 +6814,7 @@ game_menus = [
       (position_set_z, pos0, 170),
       (set_game_menu_tableau_mesh, "tableau_center_note_mesh", "$g_notification_menu_var1", pos0),
       ],
-    [
-      ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
+    [("continue",[],"Continue...",[(change_screen_return)])]
 ),  
 ( "notification_one_side_left",0,
     "^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!",
@@ -6851,10 +6841,7 @@ game_menus = [
       (position_set_z, pos0, 170),
       (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
     ],
-    [ ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
+    [("continue",[],"Continue...",[(change_screen_return)])]
 ),
 ( "notification_total_defeat",0,
     "^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
@@ -6882,10 +6869,7 @@ game_menus = [
       (position_set_z, pos0, 170),
       (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
     ],
-    [ ("continue",[],"Continue...",
-       [(change_screen_return),
-        ]),
-     ]
+    [("continue",[],"Continue...",[(change_screen_return)])]
 ),
 ( "notification_your_faction_collapsed",0,
     "^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
@@ -6897,7 +6881,7 @@ game_menus = [
       (position_set_z, pos0, 170),
       (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$players_kingdom", pos0),
     ],
-    [ ("continue",[],"Continue...", [(change_screen_return)]) ]
+    [("continue",[],"Continue...", [(change_screen_return)])]
 ),
 
 
@@ -7053,25 +7037,16 @@ game_menus = [
         (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$g_notification_menu_var1", pos0),
       # (try_end),
       ],
-    [("continue",[],"Continue...",
-       [
-         (change_screen_return),
-        ]),
-     ]
+    [("continue",[],"Continue...",[(change_screen_return)])]
 ),
 
-( "ruins",0,
-    "^^^^You visit the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
+( "ruins", 0,
+    "^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
-    [
-     ("continue",[],"Leave.",
-       [
-         (change_screen_return),
-       ]),
-    ]
+    [("continue",[],"Leave.",[(change_screen_return)])]
 ),
 ( "legendary_place",0,
     "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
@@ -7424,7 +7399,8 @@ game_menus = [
 					(jump_to_menu, "mnu_ancient_ruins")]),  
 ]),  
 ( "burial_mound", 0, 
-  "You_approach_the_burial_mound_of_{s3}_of_{s2}._It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
+  "You_approach_the_burial_mound_of_{s3}_of_{s2}._\
+  It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(store_encountered_party, ":mound"),
 #		(str_store_party_name, s1, ":mound"),
@@ -7487,7 +7463,7 @@ game_menus = [
 	(assign,":count",1000000),  # choose nearest enemy capital as target faction
 	(assign,":target", 0),
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(store_relation, ":dist", ":fac", "fac_player_supporters_faction"),
+		(store_relation, ":dist", ":fac", "fac_player_faction"),
 		(lt, ":dist", 0), #enemies only
 		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
 		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
@@ -7532,13 +7508,21 @@ game_menus = [
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
 ( "funeral_pyre", 0, 
-  "You approach the charred remnants of the funeral pyre of {s3} of {s2}.\
-  Here his corpse was ceremoniously burned by the evil men\
-  who served as his personal guard. Nothing of value remains.", "none", 
+  "You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
+  Here his corpse was ceremoniously burned by his personal bodyguards. \
+  Nothing of value remains.", "none", 
    [(set_background_mesh, "mesh_ui_default_menu_window"),
-   (store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s3, ":hero"),
+    (store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s3, ":hero"),
 	(store_faction_of_party, ":faction", ":mound"),
 	(str_store_faction_name, s2, ":faction")],[
+ ("swear_oath",   [(store_encountered_party, ":mound"),
+					(store_faction_of_party, ":faction", ":mound"),
+					(store_relation, ":local2", ":faction", "fac_player_faction"),
+					(gt, ":local2", 0),
+					(party_get_slot, ":state", ":mound", slot_mound_state),
+					(eq, ":state", 1),
+					(check_quest_active|neg, "qst_oath_of_vengeance")],
+   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_burial_mound_oath")]),  
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
 ]),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,

@@ -744,7 +744,9 @@ dialogs = [
       (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_held"), #end vile hackery
       (store_sub, reg3, ":rank_points_needed", ":rank_points_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0)], # not enough?
-"It seems that you have not helped my people enough, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. Let's talk again when you are more accomplished in this realm.", "close_window", []],
+"It seems that you have not helped my people enough, {playername}. \
+You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. \
+Let's talk again when you are more accomplished in this realm.", "close_window", []],
 
 # rank ok
 [anyone, "companion_recruit_rank", [],"I'm glad to see you have become {s29}, and I'm looking forward to joining you.", "companion_recruit_payment", []],
@@ -5728,7 +5730,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                #(troop_get_slot, ":castle_lord_relation", ":castle_lord", slot_troop_player_relation),
                                (ge, ":castle_lord_relation", -19),
                                (str_store_troop_name, s2, ":castle_lord")],
-"Come on in. But make sure your men behave sensibly within the walls.\
+"Come on in. But make sure your men behave sensibly within the walls. \
  My lord {s2} does not want trouble here.", "close_window", [(assign,"$g_permitted_to_center",1)]],
  
 [anyone,"castle_gate_open", [(party_get_slot, ":castle_lord", "$g_encountered_party", slot_town_lord),

@@ -166,7 +166,7 @@ scenes = [
   ("minas_tirith_castle",sf_indoors|sf_force_skybox, "throne_room", "bo_throne_room", (-1000,-1000),(1000,1000),-100,"0",["exit"],["player_chest"]),
   ("rohan_castle"       ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
   ("elf_castle"         ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
-  ("mordor_castle"      ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
+  ("mordor_castle"      ,sf_indoors, "interior_castle_t", "bo_interior_castle_t", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("edoras_castle"      ,sf_indoors, "rohan_meduseld_int", "bo_rohan_meduseld_int", (-200,-200),(200,200),-100,"0",["exit"],["player_chest"]),
   ("erebor_castle",sf_indoors ,"interior_gondor_training_room_b", "bo_interior_gondor_training_room_b", (-40,-40),(40,40),-100,"0",[],[]),
 
@@ -270,7 +270,7 @@ scenes = [
 ("beorn_castle",sf_indoors,"interior_castle_rohan_b","bo_interior_castle_j",(-100,-100),(100,100),-100,"0",[],["player_chest"]),
 ("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
 ("hornburg_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000240002800000691a400003efe00004b34000059be",[],[]),
-("morannon_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
+("morannon_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["player_chest"],"outer_mountains2west_mordor"),
 
 # Legendary places  
 ("amon_hen"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),

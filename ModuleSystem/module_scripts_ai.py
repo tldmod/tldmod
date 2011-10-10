@@ -2395,53 +2395,58 @@ ai_scripts = [
 # Output: none
 # Note: Depends on the destroyable flag being set for advance camps
 ("destroy_center",[
-     (store_script_param, ":center", 1),
-     (store_faction_of_party, ":center_faction", ":center"),
-     
-     # first detach all attached parties, in case there are parties in the camp
-     (party_get_num_attached_parties, ":num_attached_parties", ":center"),
-     (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
-       (party_get_attached_party_with_rank, ":attached_party", ":center", ":attached_party_rank"),
-       (gt, ":attached_party", 0),
-       (party_is_active, ":attached_party"),
-       (party_detach, ":attached_party"),
-     (try_end),
-     
-     (try_begin),
-       (is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
-       #reestablish the advance camp in 3+ days     
-       (store_current_hours, ":cur_hours"),
-       (faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
-       (faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
-       (party_set_slot, ":center", slot_center_theater, ":theater"), #reset advance camp theater, just in case
+	(store_script_param, ":center", 1),
+	(store_faction_of_party, ":center_faction", ":center"),
+
+	# first detach all attached parties, in case there are parties in the camp
+	(party_get_num_attached_parties, ":num_attached_parties", ":center"),
+	(try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+		(party_get_attached_party_with_rank, ":attached_party", ":center", ":attached_party_rank"),
+		(gt, ":attached_party", 0),
+		(party_is_active, ":attached_party"),
+		(party_detach, ":attached_party"),
+	(try_end),
+
+	(try_begin),
+		(is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
+		#reestablish the advance camp in 3+ days     
+		(store_current_hours, ":cur_hours"),
+		(faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+		(faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
+		(party_set_slot, ":center", slot_center_theater, ":theater"), #reset advance camp theater, just in case
 		(try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
-		   (store_distance_to_party_from_party,":dist", ":center", ":camp_pointer"),
-		   (le, ":dist",1),
-		   (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+			(store_distance_to_party_from_party,":dist", ":center", ":camp_pointer"),
+			(le, ":dist",1),
+			(party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
 		(try_end),
-	    (disable_party, ":center"),
-     (else_try),
-       (party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
-       (party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),
-	   (party_set_banner_icon, ":center", "icon_debris"),
-	   (try_begin),
-	   	   (party_slot_eq, ":center", slot_center_destroy_on_capture,2),
-		   (party_set_icon, ":center", "icon_debris"),
-	   (try_end),
-       (str_store_party_name, s1, ":center"),
-       (party_set_name, ":center", "@___Ruins_of_{s1}___"), # spaces to make writings smaller (GA)
-#	   (party_set_extra_text, ":center", "@in_ruins"),  
-       (party_set_faction, ":center", "fac_neutral"),
-       (party_add_particle_system, ":center", "psys_map_village_looted_smoke"),
-       (party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day
-     (try_end),
-     
-     # lose strength
-     # (faction_get_slot, ":strength", ":center_faction", slot_faction_strength_tmp),
-     # (val_sub, ":strength", ws_center_vp),
-     # (faction_set_slot, ":center_faction", slot_faction_strength_tmp, ":strength"),
-     # (disable_party, ":center"),
-     (call_script, "script_update_center_notes", ":center"),
+		(disable_party, ":center"),
+	(else_try),
+		(party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
+		(party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),
+
+		(try_begin),
+			(party_slot_eq, ":center", slot_center_destroy_on_capture,2),
+			(party_set_icon, ":center", "icon_debris"),
+		(else_try),
+			(try_begin),
+				(neq,":center","p_town_minas_tirith"), # minas tirith has an elevated flag
+				(party_set_banner_icon, ":center", "icon_debris"),
+			(try_end),
+		(try_end),
+		(str_store_party_name, s1, ":center"),
+		(party_set_name, ":center", "@___Ruins_of_{s1}___"), # spaces to make writings smaller (GA)
+		#	   (party_set_extra_text, ":center", "@in_ruins"),  
+		(party_set_faction, ":center", "fac_neutral"),
+		(party_add_particle_system, ":center", "psys_map_village_looted_smoke"),
+		(party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day
+	(try_end),
+
+	# lose strength
+	# (faction_get_slot, ":strength", ":center_faction", slot_faction_strength_tmp),
+	# (val_sub, ":strength", ws_center_vp),
+	# (faction_set_slot, ":center_faction", slot_faction_strength_tmp, ":strength"),
+	# (disable_party, ":center"),
+	(call_script, "script_update_center_notes", ":center"),
 ]),
 
 # script_get_tld_distance
