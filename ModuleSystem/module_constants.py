@@ -1684,6 +1684,7 @@ routes_list = [
 
 lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
 				("trp_knight_1_3","p_town_dol_amroth"),
+				("trp_knight_1_4","p_town_pelargir"),
 				("trp_knight_1_5","p_town_erech"),
                 ("trp_knight_1_6","p_town_pinnath_gelin"),
 				("trp_knight_1_7","p_town_west_osgiliath"),
@@ -1692,6 +1693,7 @@ lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
 				("trp_knight_5_3","p_town_esgaroth"),
 				("trp_knight_5_1","p_town_dale"),
 				("trp_knight_5_2","p_town_dale"),
+
 ]
 
 #### banner colors #0-130

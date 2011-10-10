@@ -1052,7 +1052,6 @@ game_menus = [
 ("start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
  ("start_1",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("start_2",[],"in the cliffs of Mount GUNDABAD", [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
  ("start_3",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"go back",[(jump_to_menu, "mnu_start_eye")]),    ]
@@ -1061,6 +1060,7 @@ game_menus = [
  "^^^^^^^^^^Where do you lurk?", "none",[],[
  ("start_1",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
  ("start_2",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_3",[],"in the cliffs of Mount GUNDABAD", [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
  ("spacer" ,[],"_",[]),
  ("go_back",[],"go back",[(jump_to_menu, "mnu_start_hand")]),    ]
 ),
@@ -1075,7 +1075,7 @@ game_menus = [
  "^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[
  ("start_1",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_harad_desert_warrior"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("start_2",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
- ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),
+# ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"go back",[(jump_to_menu, "mnu_start_eye_man")]),    ]
 ),
