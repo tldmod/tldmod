@@ -7474,19 +7474,44 @@ game_menus = [
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
 ( "burial_mound_oath", 0, 
-  "You loudly swear an oath of vengeance for the death of {s1}.\
+  "You loudly swear an oath of vengeance for the death of {s1}. \
+  You would relentlessly seek out the forces of {s2} and destroy them. \
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
-	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
-	(party_get_slot, ":target", ":mound", slot_mound_killer_faction),
+	(store_encountered_party, ":mound"),
+	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
+	(str_store_troop_name, s1, ":hero"),
+	(store_troop_faction, ":target", ":hero"),
+	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
+	
+	(assign,":count",1000000),  # choose nearest enemy capital as target faction
+	(assign,":target", 0),
+	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+		(store_relation, ":dist", ":fac", "fac_player_supporters_faction"),
+		(lt, ":dist", 0), #enemies only
+		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
+		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
+		(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
+		(lt, ":dist", ":count"),
+			(assign,":count",":dist"),
+			(assign,":target", ":fac"),
+	(try_end),
+	
+	(str_store_faction_name, s2, ":target"),
 	(store_current_day, ":day"),
-	(val_add, ":day", 3),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
-	(quest_set_slot, "qst_oath_of_vengeance", 3, 0), # counter for destroyed parties of target faction
-	(party_set_slot, ":mound", slot_mound_state, 3),
-#	(str_store_faction_name, s2, ":target"),
-#	(assign, "$vengeance_quest_active", 1),
+	(assign,":count", 0), # count and store initial killcount of target faction' parties
+	(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+		(spawn_around_party,"p_main_party",":ptemplate"),
+		(store_faction_of_party,":fac", reg0),
+		(remove_party, reg0),
+		(eq, ":fac", ":target"),
+		(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+		(val_add,":count",":n"),
+	(try_end),
+	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
 	(setup_quest_text, "qst_oath_of_vengeance"),
 	(start_quest, "qst_oath_of_vengeance")],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),

@@ -1703,4 +1703,44 @@ triggers = [
 	#(assign, "$isengard_healing"    , 0),
 	#(assign, "$morannon_healing"    , 0),
 ]),
+
+#check progress on oath quest
+(24, 0, 0, [(check_quest_active, "qst_oath_of_vengeance", 1)],[
+	(quest_get_slot, ":start_killcount", "qst_oath_of_vengeance", 3),
+	(quest_get_slot, ":target", "qst_oath_of_vengeance", 2),
+	(quest_get_slot, ":start_day", "qst_oath_of_vengeance", 1),
+	(quest_get_slot, ":source_fac", "qst_oath_of_vengeance", 4),
+	(store_current_day, ":day"), 
+	(val_sub, ":day", 5), #checks start after 5 days under oath
+	(gt, ":day", ":start_day"),
+	
+	(assign,":count", 0), #count current killcount for target faction
+	(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+		(spawn_around_party,"p_main_party",":ptemplate"),
+		(store_faction_of_party,":fac", reg0),
+		(remove_party, reg0),
+		(eq, ":fac", ":target"),
+		(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+		(val_add,":count",":n"),
+	(try_end),
+	(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
+
+	(try_begin),
+		(neg|ge, ":count", ":start_killcount"),
+		(fail_quest, "qst_oath_of_vengeance"),
+		(cancel_quest, "qst_oath_of_vengeance"),
+		(call_script, "script_cf_gain_trait_oathbreaker"),
+	(else_try),
+		(ge, ":count", ":start_killcount"),
+		(complete_quest, "qst_oath_of_vengeance"),
+		(call_script, "script_cf_gain_trait_oathkeeper"),
+		(val_sub, ":start_killcount", 3),
+		(val_sub, ":count", ":start_killcount"),
+		(store_mul, reg1, ":count", 4),
+		(str_store_faction_name, s1, ":source_fac"),
+		(display_message, "@You fulfilled your oath of vengeance for {s1}'s hero death!", color_good_news),
+		(call_script, "script_increase_rank", ":source_fac", reg1),
+	(try_end),
+]),
+
 ]

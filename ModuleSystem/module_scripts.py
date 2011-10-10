@@ -1975,9 +1975,8 @@ scripts = [
 						(display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
 						#(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
 						######################## map heroes injuries and deaths
-						(store_random_in_range,":rnd",0,100),
+						(eq, "$tld_option_death_npc", 1), # if death option is available
 						(try_begin),
-							(lt,":rnd",5), # die with 5% prob when lost a battle
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
@@ -17173,6 +17172,7 @@ scripts = [
         (assign, ":news_color", color_good_news),
 	(try_end),
 	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!", ":news_color"),
+	(play_sound, "snd_gong"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
 ]),
