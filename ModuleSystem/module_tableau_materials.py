@@ -310,7 +310,6 @@ tableaus = [
        (cur_tableau_set_ambient_light, 10,11,15),
        (call_script, "script_add_troop_to_cur_tableau_for_party", ":troop_no"),
 ]),
-
 ("troop_note_mesh", 0, "tableau_with_transparency", 1024, 1024, 0, 0, 350, 350,
    [   (store_script_param, ":troop_no", 1),
        (cur_tableau_set_background_color, 0xFF888888),
@@ -322,6 +321,7 @@ tableaus = [
        (position_set_z, pos1, 100),
        (position_set_x, pos1, -20),
        (position_set_y, pos1, -20),
+
        (cur_tableau_add_tableau_mesh, "tableau_troop_note_color", ":troop_no", pos1, 0, 0),
        (position_set_z, pos1, 200),
        (cur_tableau_add_tableau_mesh, "tableau_troop_note_alpha_mask", ":troop_no", pos1, 0, 0),
@@ -482,14 +482,12 @@ tableaus = [
      (cur_tableau_add_mesh_with_vertex_color, "mesh_white_plane", pos1, 200, 0, ":color"),
      (cur_tableau_set_camera_parameters, 0, 20, 20, 0, 100000),
 ]),
-
 ("custom_banner_square_no_mesh", 0, "missiles", 512, 512, 0, 0, 300, 300,
    [ (store_script_param, ":troop_no", 1),
      (set_fixed_point_multiplier, 100),
      (call_script, "script_draw_banner_to_region", ":troop_no", 0, 0, 10000, 10000, 9800, 9800, 10000, 10000, 0),
      (cur_tableau_set_camera_parameters, 0, 100, 100, 0, 100000),
- ]),
-
+]),
 ("custom_banner_default", 0, "missiles", 512, 256, 0, 0, 0, 0,
    [ (store_script_param, ":troop_no", 1),
      (set_fixed_point_multiplier, 100),
@@ -498,8 +496,7 @@ tableaus = [
      (position_set_z, pos1, 10),
      (cur_tableau_add_mesh, "mesh_tableau_mesh_custom_banner", pos1, 0, 0),
      (cur_tableau_set_camera_parameters, 0, 100, 200, 0, 100000),
- ]),
-
+]),
 ("custom_banner_tall", 0, "missiles", 512, 256, 0, 0, 0, 0,
    [ (store_script_param, ":troop_no", 1),
      (set_fixed_point_multiplier, 100),
@@ -508,8 +505,7 @@ tableaus = [
      (position_set_z, pos1, 10),
      (cur_tableau_add_mesh, "mesh_tableau_mesh_custom_banner", pos1, 0, 0),
      (cur_tableau_set_camera_parameters, 0, 100, 200, 0, 100000),
- ]),
-
+]),
 ("custom_banner_square", 0, "missiles", 256, 256, 0, 0, 0, 0,
    [ (store_script_param, ":troop_no", 1),
      (set_fixed_point_multiplier, 100),
@@ -519,7 +515,6 @@ tableaus = [
      (cur_tableau_add_mesh, "mesh_tableau_mesh_custom_banner_square", pos1, 0, 0),
      (cur_tableau_set_camera_parameters, 0, 100, 100, 0, 100000),
 ]),
-
 ("custom_banner_short", 0, "missiles", 256, 512, 0, 0, 0, 0,
    [ (store_script_param, ":troop_no", 1),
      (set_fixed_point_multiplier, 100),
@@ -687,7 +682,6 @@ tableaus = [
      (position_rotate_z, pos5, 180),
      (cur_tableau_set_camera_position, pos5),
 ]),
-
 ("retired_troop_alpha_mask", 0, "mat_troop_portrait_mask", 512, 512, 0, 0, 400, 400,
    [   (store_script_param, ":troop_no", 1),
        (cur_tableau_set_background_color, 0x00888888),
