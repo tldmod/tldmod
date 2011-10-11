@@ -1,4 +1,4 @@
-915
+921
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -814,6 +814,12 @@ qstr_Beautiful_work_{play Beautiful_work,_{playername}!_You_captured_both_the_sp
 qstr_Your_mission_is_comp Your_mission_is_complete,_{s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_units_of_{s4}_and_deliver_them_back_to_him.
 qstr_{s9}_asked_you_to_sc {s9}_asked_you_to_scout_{s13},_{s14}_and_{s15},_then_report_back.
+qstr_You_have_been_most_h You_have_been_most_helpful,_{playername}._My_thanks.
+qstr_You_are_a_good_serva You_are_a_good_servant,_{playername}._Carry_on.
+qstr_Superb_work_{playern Superb_work,_{playername}._I_admire_your_attitude.
+qstr_Your_efficiency_is_p Your_efficiency_is_pleasing,_{playername}._Continue_and_you_will_go_far.
+qstr_It_was_an_honour_to_ It_was_an_honour_to_serve.
+qstr_Your_wish_is_my_comm Your_wish_is_my_command.
 qstr_we_are_fighting_agai we_are_fighting_against_{s13}
 qstr_we_are_not_fighting_ we_are_not_fighting_anyone_at_the_moment
 qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_you_to_bring_me_this,_{playername}._Take_my_seal_as_proof_that_I've_received_it,_and_give_my_regards_to_{s9}_when_you_see_him_again.

@@ -2452,9 +2452,36 @@ How could I expect someone like {playername} to be up to the challange. My serva
 ##    ]],
 ##
 ##### TODO: QUESTS COMMENT OUT END
-[anyone,"lord_generic_mission_thank", [], "You have been most helpful, {playername}. My thanks.", "lord_generic_mission_completed",[]],
 
-[anyone|plyr,"lord_generic_mission_completed", [], "It was an honour to serve.", "lord_pretalk",[]],
+[anyone,"lord_generic_mission_thank", [
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (str_store_string, s4, "@You have been most helpful, {playername}. My thanks."),
+    (else_try),
+      (str_store_string, s4, "@You are a good servant, {playername}. Carry on."),
+    (try_end),
+    ],
+"{s4}", "lord_generic_mission_completed",[]],
+[anyone,"lord_generic_mission_thank_extra", [
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1), # bonus goodwill
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (str_store_string, s4, "@Superb work, {playername}. I admire your attitude."),
+    (else_try),
+      (str_store_string, s4, "@Your efficiency is pleasing, {playername}. Continue and you will go far."),
+    (try_end),
+    ],
+"{s4}", "lord_generic_mission_completed",[]],
+
+[anyone|plyr,"lord_generic_mission_completed", [
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (str_store_string, s4, "@It was an honour to serve."),
+    (else_try),
+      (str_store_string, s4, "@Your wish is my command."),
+    (try_end),
+    ],
+"{s4}", "lord_pretalk",[]],
 
 ##[anyone|plyr,"lord_generic_mission_failed", [],
 ##   "I'm sorry I failed you sir. It won't happen again.", "lord_pretalk",
@@ -3839,6 +3866,59 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 "Indeed. I brought you {reg1} prisoners.", "lord_generic_mission_thank",
    [(quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
     #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
+    #MV: remove the last X prisoners
+    (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
+    (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
+      (gt, ":quest_target_amount", 0),
+      (party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
+      (neg|troop_is_hero, ":stack_troop"), #no heroes
+      (store_troop_faction, ":troop_faction", ":stack_troop"),
+      (is_between, ":troop_faction", kingdoms_begin, kingdoms_end), #no bandits
+      (store_relation, ":relation", ":troop_faction", "$g_talk_troop_faction"),
+      (lt, ":relation", 0), #no friendly bandits, like deserters
+      (party_prisoner_stack_get_size, ":stack_size","p_main_party",":stack_no"),
+      (try_begin),
+        (ge, ":quest_target_amount", ":stack_size"),
+        (assign, ":to_remove", ":stack_size"),
+      (else_try),
+        (assign, ":to_remove", ":quest_target_amount"),
+      (try_end),
+      (val_sub, ":quest_target_amount", ":to_remove"),
+      (party_remove_prisoners, "p_main_party", ":stack_troop", ":to_remove"),
+    (try_end),
+    #(party_remove_prisoners, "p_main_party", ":quest_target_troop", ":quest_target_amount"),
+    #(party_add_prisoners, "$g_encountered_party", ":quest_target_troop", ":quest_target_amount"),
+    (call_script, "script_finish_quest", "qst_capture_prisoners", 100)]],
+
+[anyone|plyr,"lord_active_mission_2",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+                            (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+                            (check_quest_active,"qst_capture_prisoners"),
+                            (quest_slot_eq, "qst_capture_prisoners", slot_quest_giver_troop, "$g_talk_troop"),
+                            (quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
+                            #(quest_get_slot, ":quest_target_troop", "qst_capture_prisoners", slot_quest_target_troop),
+                            #(party_count_prisoners_of_type, ":count_prisoners", "p_main_party", ":quest_target_troop"),
+                            (assign, ":count_prisoners", 0),
+                            (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
+                            (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
+                              (party_prisoner_stack_get_troop_id, ":stack_troop","p_main_party",":stack_no"),
+                              (neg|troop_is_hero, ":stack_troop"), #no heroes
+                              (store_troop_faction, ":troop_faction", ":stack_troop"),
+                              (is_between, ":troop_faction", kingdoms_begin, kingdoms_end), #no bandits
+                              (store_relation, ":relation", ":troop_faction", "$g_talk_troop_faction"),
+                              (lt, ":relation", 0), #no friendly bandits, like deserters
+                              (party_prisoner_stack_get_size, ":stack_size","p_main_party",":stack_no"),
+                              (val_add, ":count_prisoners", ":stack_size"),
+                            (try_end),
+                            (gt, ":count_prisoners", ":quest_target_amount"),
+                            (store_mul, ":max_prisoners", ":quest_target_amount", 2),
+                            (val_min, ":max_prisoners", ":count_prisoners"),
+                            (assign, "$temp", ":max_prisoners"),
+                            (assign, reg2, ":max_prisoners"),
+                            (assign, reg1, ":quest_target_amount")],
+"Why, I have brought you {reg2} prisoners, in case {reg1} are not enough.", "lord_generic_mission_thank_extra",
+   [#(quest_get_slot, ":quest_target_amount", "qst_capture_prisoners", slot_quest_target_amount),
+    (assign, ":quest_target_amount", "$temp"),
+    (quest_set_slot, "qst_capture_prisoners", slot_quest_rank_reward, ":quest_target_amount"), #only increase rank reward, leave gold/xp the same (too much trouble)
     #MV: remove the last X prisoners
     (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
     (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
@@ -7176,7 +7256,27 @@ It's an important matter, so please make haste.", "caravan_help1",[
                               (ge, ":item_count", ":quest_target_amount"),
                               (assign, reg9, ":quest_target_amount"),
                               (str_store_item_name, s4, ":quest_target_item")],
-"Here's your metal supply, {reg9} units of {s4}.", "mayor_deliver_iron",[]],
+"Here's your metal supply, {reg9} units of {s4}.", "mayor_deliver_iron",[(assign, "$temp", 0)]],
+
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
+                              (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
+                              (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+                              (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+                              (store_item_kind_count, ":item_count", ":quest_target_item"),
+                              (gt, ":item_count", ":quest_target_amount"),
+                              (store_mul, ":max_count", ":quest_target_amount", 2),
+                              (val_min, ":max_count", ":item_count"),
+                              (assign, "$temp", ":max_count"),
+                              (assign, reg8, ":max_count"),
+                              (assign, reg9, ":quest_target_amount"),
+                              (str_store_item_name, s4, ":quest_target_item")],
+"I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.", "mayor_deliver_iron",[
+        #reset quest amount and rank reward
+        (quest_set_slot, "qst_deliver_iron", slot_quest_target_amount, "$temp"),
+        (store_div, ":quest_rank_reward", "$temp", 2),
+        (quest_set_slot, "qst_deliver_iron", slot_quest_rank_reward, ":quest_rank_reward"), #only increase rank reward, leave gold/xp the same (too much trouble)
+        ]],
+
    
 [anyone,"mayor_deliver_iron", [],
 "Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.", "mayor_deliver_iron_completed",

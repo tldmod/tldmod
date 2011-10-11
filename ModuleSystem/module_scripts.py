@@ -5370,7 +5370,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_kill_troll"),
+		#(assign, ":quest_no", "qst_deliver_iron"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -5446,6 +5446,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
+(eq, 1, 0), #Disabled: not finished
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
@@ -5635,16 +5636,16 @@ scripts = [
           (try_end),
           (assign, ":quest_target_center", ":giver_center_no"),
           (store_item_value, ":item_value", ":quest_target_item"),
-          (val_mul, ":item_value", 500), (val_div, ":item_value", 100), #400% profit
+          (val_mul, ":item_value", 2), #2x profit
           (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
           (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
-          (store_div, ":quest_rank_reward", ":quest_target_amount", 3),
+          (store_div, ":quest_rank_reward", ":quest_target_amount", 2), #1-3
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
          (else_try),
            (eq, ":quest_no", "qst_deliver_food"),
-           (store_random_in_range, ":quest_target_amount", 3, 8),
+           (store_random_in_range, ":quest_target_amount", 3, 10),
            #(store_random_in_range, ":quest_target_item", normal_food_begin, food_end),
           ###empty merchant store of all food - done here and not in dialogs to prevent exploit
            (party_get_slot, ":center_merchant", ":giver_center_no", slot_town_merchant), #horse+goods guy
@@ -5656,10 +5657,10 @@ scripts = [
              (troop_sort_inventory, ":center_merchant"),
            (try_end),
            (assign, ":quest_target_center", ":giver_center_no"),
-           (store_item_value, ":item_value", 100), # an average
+           (assign, ":item_value", 80), # an average
            (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
            (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
-           (store_div, ":quest_rank_reward", ":quest_target_amount", 3),
+           (store_div, ":quest_rank_reward", ":quest_target_amount", 3), #1-3
            (assign, ":quest_expiration_days", 10),
            (assign, ":quest_dont_give_again_period", 15),
            (assign, ":result", ":quest_no"),
@@ -6447,11 +6448,11 @@ scripts = [
             #(assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_importance", 1),
             #(store_character_level, ":quest_gold_reward", ":cur_target_troop"),
-            (assign, ":quest_gold_reward", 5),
-            (val_mul, ":quest_gold_reward", ":quest_gold_reward"),
-            (val_div, ":quest_gold_reward", 5),
-            (val_mul, ":quest_gold_reward", ":quest_target_amount"),
+            (store_mul, ":quest_gold_reward", ":quest_target_amount", 20),
+            (val_add, ":quest_gold_reward", 50), # 90-250
             (assign, ":quest_xp_reward", ":quest_gold_reward"),
+            (val_mul, ":quest_xp_reward", 5),
+            (val_div, ":quest_xp_reward", 7),
             (assign, ":quest_rank_reward", ":quest_target_amount"),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 90),
