@@ -1025,7 +1025,7 @@ normal_food_begin = "itm_smoked_fish"
 food_end = "itm_grain"
 
 scraps_begin = "itm_metal_scraps_bad"
-scraps_end = "itm_sumpter_horse" #"itm_metal_scraps_good"+1
+scraps_end = "itm_oliphant" #"itm_metal_scraps_good"+1
 
 # Banner constants
 banner_meshes_begin = "mesh_banner_gondor"

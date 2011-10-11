@@ -573,7 +573,11 @@ dialogs = [
 
 [anyone|plyr,"member_talk", [(call_script, "script_unequip_items", "$g_talk_troop")],"Let me see your equipment.", "member_trade",[]],
 [anyone,"member_trade",[(store_character_level, ":talk_troop_level", "$g_talk_troop"),
-						(ge, ":talk_troop_level", 40)],
+						(ge, ":talk_troop_level", 40),
+                        (store_character_level, ":player_level", "trp_player"),
+                        (val_add, ":player_level", 10),
+						(ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
+                        ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
 [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(change_screen_equip_other)]],
 
@@ -2284,7 +2288,8 @@ How could I expect someone like {playername} to be up to the challange. My serva
      (store_item_value, ":item_value", ":quest_target_item"),
      (val_mul, ":item_value", 150), (val_div, ":item_value", 100), #50% profit
      (store_mul, ":reward", ":quest_target_amount", ":item_value"),
-     (call_script, "script_troop_add_gold", "trp_player", ":reward"),
+     #(call_script, "script_troop_add_gold", "trp_player", ":reward"),
+     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":reward"),
      (val_div, ":reward", 5),
      (add_xp_as_reward, ":reward"),
      (call_script, "script_increase_rank", "$g_talk_troop_faction", 8),
@@ -2516,7 +2521,8 @@ How could I expect someone like {playername} to be up to the challange. My serva
 "Excellent! Here's your {reg6} RPs.\
  I'll send some men to take him to our prison with due haste.", "lord_pretalk", [
      (remove_troops_from_prisoners,  "$prisoner_lord_to_buy", 1),
-     (call_script, "script_troop_add_gold", "trp_player", "$temp"),
+     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$temp"),
+     #(call_script, "script_troop_add_gold", "trp_player", "$temp"),
      (party_add_prisoners, "$g_encountered_party", "$prisoner_lord_to_buy", 1),
      #(troop_set_slot, "$prisoner_lord_to_buy", slot_troop_is_prisoner, 1),
      (troop_set_slot, "$prisoner_lord_to_buy", slot_troop_prisoner_of_party, "$g_encountered_party")]],
@@ -2803,6 +2809,8 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
  Hrmph! Good that you brought me this, {playername}, you are a useful servant. If you see {s9} again tell him to employ you more often."),
      (try_end),
      #(call_script, "script_change_player_relation_with_troop", ":quest_giver", 1),
+     (quest_get_slot, ":reward", "qst_deliver_message", slot_quest_gold_reward),
+     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":reward"),
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1)]],
 
 [anyone|plyr,"lord_talk",[(check_quest_active,"qst_deliver_message_to_enemy_lord"),
@@ -3063,7 +3071,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
         (else_try),
           (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (try_end)], # party decreased size 
-"{s4}", "lord_give_troops_check_2", [(call_script, "script_troop_add_gold_faction", "trp_player", reg11, "$g_talk_troop_faction")]],
+"{s4}", "lord_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", reg11)]],
 
 [anyone|plyr,"lord_give_troops_check_2", 
 	[ (try_begin),
@@ -4021,7 +4029,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 "And we'll all be a lot better off without him! Thank you, {playername},\
  for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things\
  with an appropriate level of tactfulness.\
- A bounty I promised, and a bounty you shall have!", "lord_hunt_down_fugitive_success_2", [(add_xp_as_reward, 300)]],
+ A bounty I promised, and a bounty you shall have!", "lord_hunt_down_fugitive_success_2", []],
   
 [anyone|plyr,"lord_hunt_down_fugitive_success_2", [],
 "Let me take the money, {s65}. Thank you.", "lord_hunt_down_fugitive_reward_accept",[]],
@@ -4141,7 +4149,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
     # TLD mission: capture troll (mtarini) -- begin 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_troll")],
 "You are a brave servant, {playername}, and we will give you a glimpse of our plans.\
-We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", "lord_mission_capture_troll_1", []],
+ We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", "lord_mission_capture_troll_1", []],
   
 [anyone|plyr,"lord_mission_capture_troll_1", [], "How can I serve, Master?", "lord_mission_capture_troll_2",[]],
 
@@ -4180,9 +4188,9 @@ We need fresh monstrous blood and flesh. We need it to twist it and bend it and 
 
 	
 [anyone,"lord_tell_mission_kill_troll", [],
-"Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what whitchery has caused this, but I need that thing to be dispatched.", "lord_mission_told",
+"Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what witchery has caused this, but I need that thing to be dispatched.", "lord_mission_told",
     [  (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-       (str_store_party_name_link,3,":quest_object_center")]],
+       (str_store_party_name_link, s3, ":quest_object_center")]],
 
 [anyone|plyr,"lord_mission_told", [(eq,"$random_quest_no","qst_kill_troll")],
 "How can those beasts be fought?", "lord_mission_kill_troll_info_a",[]],
@@ -4194,17 +4202,17 @@ We need fresh monstrous blood and flesh. We need it to twist it and bend it and 
 "Do you think it comes from Mordor, or Isengard?", "lord_mission_kill_troll_info_b",[]],
 
 [anyone,"lord_mission_kill_troll_info_b",  [(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-											(str_store_party_name_link,3,":quest_object_center")],
+											(str_store_party_name_link,s3,":quest_object_center")],
 "No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.", "lord_mission_told",[]],
 
 # TLD mission: investigate fangorn (mtarini) -- begin 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_investigate_fangorn")],
 "Here is a mission for a trusted and brave servant like you, {playername}.\
-The strangest rumors reach my ears from the forest of Fangorn. \
-Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return.\
-Other times, they report of mysterious losses among their troops.\
-They blame ghosts, spirits of the wood, ancient curses... \
-Nonsense! Puny excuses for their own cowardice or ineptitude!", "lord_mission_investigate_fangorn_0", []],
+ The strangest rumors reach my ears from the forest of Fangorn.\
+ Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return.\
+ Other times, they report of mysterious losses among their troops.\
+ They blame ghosts, spirits of the wood, ancient curses...\
+ Nonsense! Puny excuses for their own cowardice or ineptitude!", "lord_mission_investigate_fangorn_0", []],
 
 [anyone|plyr,"lord_mission_investigate_fangorn_0", [], "What do you command me to do about it, Master?", "lord_mission_investigate_fangorn_1",[]],
   
@@ -4227,8 +4235,8 @@ Nonsense! Puny excuses for their own cowardice or ineptitude!", "lord_mission_in
  
 [anyone,"lord_mission_investigate_fangorn_accepted", [], 
 "Good.\
-Go there and shed some light on this matter. Then return to me and report.\
-I expect to see you back with news before {reg1} dawns are passed.", "lord_pretalk",
+ Go there and shed some light on this matter. Then return to me and report.\
+ I expect to see you back with news before {reg1} dawns are passed.", "lord_pretalk",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
@@ -4238,18 +4246,18 @@ I expect to see you back with news before {reg1} dawns are passed.", "lord_preta
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_find_lost_spears")],
 "Here is a mission for a trusted and brave commander like you, {playername}.\
-We are ill equipped to fight off the Rhun hordes.\
-Our armies are losing battles one by one.\
-A legend tells that once upon a time, the spears were made by Dwarves for the armies of the great King Bladorthin (long since dead),\
-each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..", "lord_mission_find_lost_spears", []],
+ We are ill equipped to fight off the Rhun hordes.\
+ Our armies are losing battles one by one.\
+ A legend tells that once upon a time, the spears were made by Dwarves for the armies of the great King Bladorthin (long since dead),\
+ each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..", "lord_mission_find_lost_spears", []],
 
 [anyone|plyr,"lord_mission_find_lost_spears",[],
 "What do you command me to do about it, my lord?","lord_mission_find_lost_spears_1",[]],
 
 [anyone,"lord_mission_find_lost_spears_1",[],
 "These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears.\
-You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain.\
-Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?","lord_mission_find_lost_spears_2",[]],
+ You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain.\
+ Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?","lord_mission_find_lost_spears_2",[]],
 
 [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I fear no orcs nor trolls! I will find these spears for you, my lord.","lord_mission_find_lost_spears_accepted",[]],
 [anyone|plyr,"lord_mission_find_lost_spears_2", [], "I'm afraid I can't help you, my lord.","lord_mission_find_lost_spears_rejected",[]],
@@ -4267,8 +4275,8 @@ Beware, you may encounter some orcs or trolls in the tunnels. Are you available 
 #TLD mission: nowy quest (Kolba) -- begin
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
 "I need to send a letter to {s13} who should be currently at {s4}.\
-If you will be heading towards there, would you deliver it to him?\
-The letter needs to be in his hands in 30 days.", "lord_mission_deliver_message",
+ If you will be heading towards there, would you deliver it to him?\
+ The letter needs to be in his hands in 30 days.", "lord_mission_deliver_message",
    [ (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (str_store_troop_name_link,s9,"$g_talk_troop"),
@@ -4289,9 +4297,10 @@ The letter needs to be in his hands in 30 days.", "lord_mission_deliver_message"
 
 [anyone,"lord_mission_deliver_message_accepted", [], 
 "I appreciate it, {playername}. Here's the letter,\
-and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
+ and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-    (call_script, "script_troop_add_gold", "trp_player", 20),
+    #(call_script, "script_troop_add_gold", "trp_player", 20),
+    (call_script, "script_add_faction_rps", "$g_talk_troop_faction", 20),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (assign, "$g_leave_encounter",1)]],
 
@@ -4314,7 +4323,7 @@ and a small sum to cover your travel expenses. Give my regards to {s13} when you
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message_to_enemy_lord")],
 "I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently.\
-If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.", "lord_mission_deliver_message", [
+ If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.", "lord_mission_deliver_message", [
      (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (str_store_troop_name_link,s9,"$g_talk_troop"),
@@ -4356,10 +4365,10 @@ If you are going towards there, would you deliver my letter to him? The letter n
 ##
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_escort_messenger")],
 "There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}.\
-His trip has been postponed several times already with all the trouble on the roads,\
-but this time he must get through. So, I want to at least make sure he's well-guarded.\
-I trust you well, {playername} so I would be very grateful if you could escort him to {s14}\
-and make sure he arrives safe and sound.", "lord_mission_told", [
+ His trip has been postponed several times already with all the trouble on the roads,\
+ but this time he must get through. So, I want to at least make sure he's well-guarded.\
+ I trust you well, {playername} so I would be very grateful if you could escort him to {s14}\
+ and make sure he arrives safe and sound.", "lord_mission_told", [
      #(quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (str_store_troop_name_link, s11, "$g_talk_troop"),
@@ -4533,7 +4542,9 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
  Also, I'll advance you some money to help with expenses. Here, this purse should do it.\
  Thank you for your help.", "close_window",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-    (call_script, "script_troop_add_gold", "trp_player",100),
+    #(call_script, "script_troop_add_gold", "trp_player",100),
+    (call_script, "script_add_faction_rps", "$g_talk_troop_faction", 100),
+    
     (quest_get_slot, ":recruit_troop", "$random_quest_no", slot_quest_object_troop),
     (quest_get_slot, ":num_recruits", "$random_quest_no", slot_quest_target_amount),
     (party_add_members, "p_main_party", ":recruit_troop", ":num_recruits"),
@@ -4592,7 +4603,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 "I have something you could help with, an issue with the lawless villain known as {s4}. \
  He murdered one of my bodyguards and has been on the run from his judgment ever since.\
  There were news recently that the fugitive has been seen at {s3}.\
- You might be able to hunt him down and bring him to me for the justice, and I'll reward you in turn", "lord_mission_hunt_down_fugitive_told", [
+ You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.", "lord_mission_hunt_down_fugitive_told", [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
      (quest_get_slot, ":quest_object_troop", "$random_quest_no", slot_quest_object_troop),
@@ -5204,21 +5215,22 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 	  (set_spawn_radius, 3),
 	  (spawn_around_party,":quest_object_center","pt_raging_trolls"),
 	  (assign, ":quest_target_party", reg0),
-	  (party_relocate_near_party, reg0, ":quest_object_center"),
+	  (party_relocate_near_party, ":quest_target_party", ":quest_object_center"),
 	  (quest_set_slot, "$random_quest_no", slot_quest_target_party, ":quest_target_party"),
 	  (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
-	  (str_store_troop_name,1,"$g_talk_troop"),
-	  (str_store_party_name,2,"$g_encountered_party"),
-	  (str_store_troop_name,s9,"$g_talk_troop"),
-      (str_store_party_name,s13,":quest_object_center"),
+	  # (str_store_troop_name,s1,"$g_talk_troop"),
+	  # (str_store_party_name,s2,"$g_encountered_party"),
+	  (str_store_troop_name_link,s9,"$g_talk_troop"),
+      (str_store_party_name_link,s13,":quest_object_center"),
 	 
-      (setup_quest_text,"$random_quest_no"),
-      (try_begin),
-        (is_between, "$g_encountered_party", centers_begin, centers_end),
-        (setup_quest_giver, "$random_quest_no", "str_given_by_s1_at_s2"),
-      (else_try),
-        (setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
-      (try_end),
+      # (try_begin),
+        # (is_between, "$g_encountered_party", centers_begin, centers_end),
+        # (setup_quest_giver, "$random_quest_no", "str_given_by_s1_at_s2"),
+      # (else_try),
+        # (setup_quest_giver,"$random_quest_no", "str_given_by_s1_in_wilderness"),
+      # (try_end),
+      (setup_quest_text, "qst_kill_troll"),
+      (str_store_string, s2, "@{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts."),
 
 ##    (else_try),
 ##      (eq, "$random_quest_no", "qst_hunt_down_raiders"),
@@ -5260,7 +5272,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##      (party_add_prisoners, "p_main_party", ":quest_object_troop", ":quest_target_amount"),
     (else_try),
       (eq, "$random_quest_no", "qst_deliver_message_to_enemy_lord"),
-      (call_script, "script_troop_add_gold", "trp_player",10),
+      #(call_script, "script_troop_add_gold", "trp_player",10),
+      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", 10),
     (else_try),
       (eq, "$random_quest_no", "qst_bring_back_runaway_serfs"),
       (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
@@ -6376,8 +6389,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
  "Attacked by bandits eh?\
  You are lucky they left you alive.\
  Anyway, I can pay you no more than {reg5} RPs for this.\
- And I will let {s1} know that my order was delivered less than completely,\
- so you will probably be charged for this loss.", "mayor_pretalk",
+ And I will let {s1} know that my order was delivered less than completely.", "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
@@ -6386,17 +6398,18 @@ It's an important matter, so please make haste.", "caravan_help1",[
     (troop_remove_items, "trp_player", ":quest_target_item", ":item_count"),
     (val_mul, ":quest_gold_reward", ":item_count"),
     (val_div, ":quest_gold_reward", ":quest_target_amount"),
-    (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+    #(call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
+    (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":quest_gold_reward"),
     (assign, reg5, ":quest_gold_reward"),
     (assign, ":xp_reward", ":quest_gold_reward"),
     (val_mul, ":xp_reward", 4),
     (add_xp_as_reward, ":xp_reward"),
     (str_store_troop_name, s1, ":quest_giver_troop"),
-    (assign, ":debt", "$qst_deliver_wine_debt"),
-    (store_sub, ":item_left", ":quest_target_amount", ":item_count"),
-    (val_mul, ":debt", ":item_left"),
-    (val_div, ":debt", ":quest_target_amount"),
-    (val_add, "$debt_to_merchants_guild", ":debt"),
+    # (assign, ":debt", "$qst_deliver_wine_debt"),
+    # (store_sub, ":item_left", ":quest_target_amount", ":item_count"),
+    # (val_mul, ":debt", ":item_left"),
+    # (val_div, ":debt", ":quest_target_amount"),
+    # (val_add, "$debt_to_merchants_guild", ":debt"),
     (quest_get_slot, ":giver_town", "qst_deliver_wine", slot_quest_giver_center),
     (call_script, "script_change_player_relation_with_center", ":giver_town", 1),
     (call_script, "script_end_quest", "qst_deliver_wine")]],
@@ -6741,7 +6754,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (store_mul, ":reward_gold", ":reward_xp", 30), #30,60,..
       (val_mul, ":reward_xp", 50), #50,100,..
       (add_xp_as_reward, ":reward_xp"),
-      (call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
+      #(call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
+      (call_script, "script_add_faction_rps", "$ambient_faction", ":reward_gold"),
       (try_begin),
         (ge, ":wave_reached", 10),
         (str_store_string, s4, "@What an amazing feat of arms!"),
@@ -6794,7 +6808,9 @@ It's an important matter, so please make haste.", "caravan_help1",[
         (val_mul, ":reward_xp", 30), #0-60
 		(add_xp_as_reward, ":reward_xp"),
       (try_end), # no rewards for mass melee
-      (call_script, "script_troop_add_gold", "trp_player", ":reward_gold")]],
+      (call_script, "script_add_faction_rps", "$ambient_faction", ":reward_gold"),
+      #(call_script, "script_troop_add_gold", "trp_player", ":reward_gold"),
+      ]],
      
 [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end),
       (troop_slot_eq, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 1),
@@ -7225,7 +7241,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (store_sub,":looter_bounty",":num_looters_destroyed",":looters_paid_for"),
       (val_mul,":looter_bounty",40),
       (assign,reg1,":looter_bounty"),
-      (call_script, "script_troop_add_gold","trp_player",":looter_bounty"),
+      #(call_script, "script_troop_add_gold","trp_player",":looter_bounty"),
+      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":looter_bounty"),
       (assign,":looters_paid_for",":num_looters_destroyed"),
       (quest_set_slot,"qst_deal_with_looters",slot_quest_current_state,":looters_paid_for")]],
 	  
@@ -7236,7 +7253,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (quest_get_slot,":gold_reward","qst_deal_with_looters",slot_quest_gold_reward),
       (quest_get_slot,":rank_reward","qst_deal_with_looters",slot_quest_rank_reward),
       (add_xp_as_reward, ":xp_reward"),
-      (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+      #(call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":gold_reward"),
       (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
       (call_script, "script_change_player_relation_with_center", "$current_town", 5),
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
@@ -7354,21 +7372,21 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone,"mayor_begin", [(check_quest_active, "qst_move_cattle_herd"),
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_succeeded, "qst_move_cattle_herd")],
-"Good to see you again {playername}. I have heard that you have delivered the people successfully. \
+"Good to see you again {playername}. I have heard that you have delivered those people successfully. \
  I will tell our commander how reliable you are. \
  And here is your pay, {reg8} RPs.", "close_window",
    [(quest_get_slot, ":quest_gold_reward", "qst_move_cattle_herd", slot_quest_gold_reward),
     # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
     # (store_div, ":xp_reward", ":quest_gold_reward", 3),
     # (add_xp_as_reward, ":xp_reward"),
-    # (call_script, "script_change_player_relation_with_center", "$current_town", 3),    
+    #(call_script, "script_change_player_relation_with_center", "$current_town", 3),    
     (call_script, "script_finish_quest", "qst_move_cattle_herd", 100),
     (assign, reg8, ":quest_gold_reward")]],
   
 [anyone,"mayor_begin", [(check_quest_active, "qst_move_cattle_herd"),
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_failed, "qst_move_cattle_herd")],
-"I heard that you have lost the people on your way to {s9}. \
+"I heard that you have lost those people on your way to {s9}. \
  I had a very difficult time explaining your failure to the commander here. \
  Do you have anything to say?", "move_cattle_herd_failed",[]],
 
@@ -7377,9 +7395,10 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 
 [anyone,"move_cattle_herd_failed_2", [],
 "Well, it was your responsibility to deliver them safely, no matter what. \
- You should know that the commander demanded to be compensated for this, and I had to pay him 1000 RPs. \
- So you now owe me that.", "merchant_ask_for_debts",
-   [(assign, "$debt_to_merchants_guild", 1000),
+ You should know that the commander demanded to know who is responsible for this failure. \
+ So I told him it was you.", "close_window",
+   [#(assign, "$debt_to_merchants_guild", 1000),
+    (call_script, "script_change_player_relation_with_center", "$current_town", -2),
     (call_script, "script_end_quest", "qst_move_cattle_herd"),]],
 
   #[anyone,"mayor_begin", [(check_quest_active, "qst_kidnapped_girl"),
@@ -7450,7 +7469,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 "About that task you needed me to do...", "merchant_quest_last_offered_job",[]],
 
 [anyone|plyr,"mayor_talk", [(store_partner_quest,reg2),(ge,reg2,0)],
-"About the task you appointed to me...", "merchant_quest_about_job",[]],
+"About the task you gave me...", "merchant_quest_about_job",[]],
 
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[]],
 
@@ -7591,20 +7610,21 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_wine")],
    "I have a cargo of {s6} that needs to be delivered to the {s10} in {s4}.\
- If you can take {reg5} units of {s6} to {s4} in 7 days, you may earn {reg8} RPs.\
+ If you can take {reg5} units of {s6} to {s4} in {reg6} days, you may earn {reg8} RPs.\
  What do you say?", "merchant_quest_brief_deliver_wine",
    [(quest_get_slot, reg5, "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, reg8, "qst_deliver_wine", slot_quest_gold_reward),
     (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_center", "qst_deliver_wine", slot_quest_target_center),
     (quest_get_slot, ":quest_target_troop", "qst_deliver_wine", slot_quest_target_troop),
+    (quest_get_slot, reg6, "qst_deliver_wine", slot_quest_expiration_days),
     (str_store_troop_name, s9, "$g_talk_troop"),
     (str_store_troop_name, s10, ":quest_target_troop"),
     (str_store_party_name_link, s3, "$g_encountered_party"),
     (str_store_party_name_link, s4, ":quest_target_center"),
     (str_store_item_name, s6, ":quest_target_item"),
     (setup_quest_text,"qst_deliver_wine"),
-    (str_store_string, s2, "@{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in 7 days."),
+    (str_store_string, s2, "@{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in {reg6} days."),
     #s2 should not be changed until the decision is made
    ]],
   
@@ -7627,15 +7647,16 @@ Perhaps you can do that...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_food")],
 "Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.\
-I need someone to bring us {reg5} units of food in 10 days, or we'll begin to starve.\
+I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.\
 Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",[
      (quest_get_slot, reg5, "qst_deliver_food", slot_quest_target_amount),
+     (quest_get_slot, reg6, "qst_deliver_food", slot_quest_expiration_days),
      #(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
      (str_store_troop_name, s9, "$g_talk_troop"),
      (str_store_party_name_link, s3, "$g_encountered_party"),
 	 (str_clear, s6), 
      (setup_quest_text,"qst_deliver_food"),
-     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.")]], #s2 should not be changed until the decision is made
+     (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.")]], #s2 should not be changed until the decision is made
 
 [anyone|plyr,"merchant_quest_brief_deliver_food", [],
 "Alright. I will find the food and bring it to you.", "merchant_quest_taken",[
@@ -7648,20 +7669,19 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 									(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),], 
 "A task, you say?\
  Actually I am looking for someone to supply us with ore and metals.\
- Mines and roads are not safe anymore, and getting resupplied of raw materials is more and more difficult.\
- The enemy must have its own obscure, but efficient ways of extracting ore, as we see even orcs and other lowly beasts in their ranks go around covered with metal.\
+ Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult.\
+ The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal.\
  Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times.\
  But in these times our smelters learnt how to deal with poor materials too, if necessary.\
- Every little helps.", "merchant_quest_brief",[]],
+ Every little bit helps.", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_iron"),
 									(neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),], 
 "A task, you say?\
-Master demands more troops everyday, and it is never battleworthy enough for Him... but armours don't just grow on skins, you know?\
-The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.\
-Are we supposed to protect ourselves with mud dried on our skin, like snagas?\
-But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to the lowest born of them ... \
-Scavenge their corpses and bring me the metal, {playername}. With an ounce of that iron, our smelter can make enough material to cover an entire pack of warriors."
+ The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?\
+^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.\
+ But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...\
+^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors."
 , "merchant_quest_brief",[]],
 
    
@@ -7672,13 +7692,15 @@ Scavenge their corpses and bring me the metal, {playername}. With an ounce of th
 	 (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
 	 (str_clear, s6),  (str_store_item_name, s6, ":quest_target_item"),
 	 (quest_get_slot, reg5, "qst_deliver_iron", slot_quest_target_amount),
-     (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good)],
-"We need {reg5} units of {s6} in 14 days, before our weaponsmiths run out of raw materials.\
-What do you say?", "merchant_quest_brief_deliver_iron",
+     (quest_get_slot, reg6, "qst_deliver_iron", slot_quest_expiration_days),
+     ],
+"We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials.\
+ What do you say?", "merchant_quest_brief_deliver_iron",
    [
     
     (setup_quest_text,"qst_deliver_iron"),
-    (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in 10 days.")]],#s2 should not be changed until the decision is made
+    (quest_get_slot, reg0, "qst_deliver_iron", slot_quest_expiration_days),
+    (str_store_string, s2, "@The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.")]],#s2 should not be changed until the decision is made
    
 [anyone|plyr,"merchant_quest_brief_deliver_iron", [],
 "Alright. I will get the metal scraps and bring them to you.", "merchant_quest_taken", [
@@ -7694,10 +7716,11 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 [anyone,"merchant_quest_brief", [(eq, "$random_merchant_quest_no", "qst_escort_merchant_caravan")],
 "I am going to send a supply train to {s8}.\
  However with all those enemy patrols on the roads, I don't want to send them out without an escort.\
- If you can lead that supply train to {s8} in 15 days, you will earn {reg8} RPs.\
+ If you can lead that supply train to {s8} in 7 days, you will earn {reg8} RPs.\
  Of course your party needs to be at least {reg4} strong to offer them any protection.", "escort_merchant_caravan_quest_brief",
    [(quest_get_slot, reg8, "qst_escort_merchant_caravan", slot_quest_gold_reward),
     (quest_get_slot, reg4, "qst_escort_merchant_caravan", slot_quest_target_amount),
+    #(quest_get_slot, reg6, "qst_escort_merchant_caravan", slot_quest_expiration_days),
     (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
     (str_store_party_name, s8, ":quest_target_center")]],
   
@@ -8160,17 +8183,24 @@ What do you say?", "merchant_quest_brief_deliver_iron",
 
 #move cattle herd
 [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_move_cattle_herd"),
-                                       (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
-                                       (str_store_party_name,s13,":target_center"),],
-"The garrison commander here is looking for a resourceful warrior to take a group of guys to {s13}.", "merchant_quest_brief",[]],
+                                     (try_begin),
+                                       (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+                                       (str_store_string, s12, "@refugees"),
+                                     (else_try),
+                                       (str_store_string, s12, "@slaves"),
+                                     (try_end),
+                                     (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
+                                     (str_store_party_name,s13,":target_center"),],
+"The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief",[
     (eq,"$random_merchant_quest_no","qst_move_cattle_herd"),
     (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
+    (quest_get_slot, reg6, "qst_move_cattle_herd", slot_quest_expiration_days),
     (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
     (str_store_party_name, s13, ":target_center")],
-"The group must arrive at {s13} within 30 days. Sooner is better, much better, \
- but it must be absolutely no later than 30 days. \
+"The group must arrive at {s13} within {reg6} days. Sooner is better, much better, \
+ but it must be absolutely no later than {reg6} days. \
  If you can do that, I'd be willing to pay you {reg8} RPs for your trouble. Interested?", "move_cattle_herd_quest_brief",[]],
 
 #MV: remove when quest dialogs are done, or bugs are fixed   
@@ -8187,13 +8217,18 @@ What do you say?", "merchant_quest_brief_deliver_iron",
      (try_begin),
        (faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
        (party_set_name, ":herd_party", "@{s1} Refugees"),
+       (str_store_string, s12, "@refugees"),
      (else_try),
        (party_set_name, ":herd_party", "@{s1} Slaves"),
+       (str_store_string, s12, "@slaves"),
      (try_end),
      (party_set_faction, ":herd_party", "$g_encountered_party_faction"),
      (party_set_slot, ":herd_party", slot_party_type, spt_cattle_herd),
      (party_set_slot, ":herd_party", slot_party_ai_state, spai_undefined),
-     (party_set_ai_behavior, ":herd_party", ai_bhvr_hold),
+     (party_set_slot, ":herd_party", slot_cattle_driven_by_player, 1),
+     (party_set_ai_behavior, ":herd_party", ai_bhvr_escort_party), #make it easy on the player
+     (party_set_ai_object, ":herd_party", "p_main_party"),
+     #(party_set_ai_behavior, ":herd_party", ai_bhvr_hold),
      (party_set_slot, ":herd_party", slot_party_commander_party, -1),
      (quest_set_slot, "qst_move_cattle_herd", slot_quest_target_party, ":herd_party"),
      (str_store_party_name_link, s10, "$g_encountered_party"),
@@ -8202,7 +8237,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
      (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
      (setup_quest_text, "qst_move_cattle_herd"),
      (str_store_troop_name, s11, "$g_talk_troop"),
-     (str_store_string, s2, "@The {s11} of {s10} asked you to escort some people to {s13}. You will earn {reg8} RPs in return."),
+     (str_store_string, s2, "@The {s11} of {s10} asked you to escort some {s12} to {s13}. You will earn {reg8} RPs in return."),
      (call_script, "script_start_quest", "qst_move_cattle_herd", "$g_talk_troop")]],
 	 
 [anyone|plyr,"move_cattle_herd_quest_brief", [],"I am sorry, but no.", "merchant_quest_stall",[]],
@@ -8667,7 +8702,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
     #(party_remove_members_wounded_first,"p_main_party","$g_talk_troop",1),
 	(remove_member_from_party,"$g_talk_troop"),
 	(store_partner_faction, reg10),
-	(call_script, "script_add_faction_respoint", reg10, ":gain")]],
+	(call_script, "script_add_faction_rps", reg10, ":gain")]],
 
 [anyone|plyr,"disband_regular_member_confirm_yn", [(troop_slot_eq, "$g_talk_troop", slot_troop_upkeep_not_paid,0)],
 "Not yet, I still need you here.", "close_window",[ ]],
@@ -8825,7 +8860,7 @@ What do you say?", "merchant_quest_brief_deliver_iron",
         (else_try),
           (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (try_end)], # party decreased size 
-"{s4}", "party_reinforce_check_2", [(call_script, "script_troop_add_gold_faction", "trp_player", reg11, "$g_encountered_party_faction")]],
+"{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", reg11)]],
 
 [anyone|plyr,"party_reinforce_check_2", 
 	[ (try_begin),

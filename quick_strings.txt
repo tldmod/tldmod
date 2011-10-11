@@ -1,4 +1,4 @@
-912
+915
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -67,8 +67,8 @@ qstr___What_business_do_y _'What_business_do_you_have_here,_supplicants?'
 qstr___Your_Stewardship_w _'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr___Enough_of_this_mad _'Enough_of_this_madness!_Guards!!'
 qstr___I_ve_had_enough_of _'I've_had_enough_of_these_pranks..._The_next_ones_would_have_to_kneel!'
-qstr_You_gain_{reg10}_Res You_gain_{reg10}_Resource_Pts._of_{s10}.
-qstr_You_used_{reg10}_Res You_used_{reg10}_Resource_Pts._of_{s10}.
+qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
+qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
 qstr_Great_Hope_of_{s5} Great_Hope_of_{s5}
 qstr_Hope_of_{s5} Hope_of_{s5}
@@ -89,7 +89,7 @@ qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
-qstr_{reg1?Earned:Lost}_{ {reg1?Earned:Lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
+qstr_You_{reg1?earned:los You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
 qstr_their their
@@ -684,7 +684,7 @@ qstr_the_castle the_castle
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_pts._per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s1}_s_Ship {s1}'s_Ship
-qstr_times_passess... times_passess...
+qstr_Time_passes... Time_passes...
 qstr_Forces_of_Good Forces_of_Good
 qstr_Forces_of_Mordor Forces_of_Mordor
 qstr_Forces_of_Isengard Forces_of_Isengard
@@ -863,6 +863,7 @@ qstr_{s9}_asked_you_to_di {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}.^O
 qstr_We_need_to_take_the_ We_need_to_take_the_battle_to_the_enemy,_{playername}._At_this_moment,_we_can_do_this_by_striking_at_his_patrols_and_communications._I_want_you_to_eliminate_{reg1}_{s13}_parties,_that_would_help_us_regain_initiative.
 qstr_We_need_to_grind_dow We_need_to_grind_down_our_worthless_enemies,_{playername}._Their_patrols_and_supply_trains_are_growing_too_bold_for_my_liking._I_want_you_to_eliminate_{reg1}_{s13}_parties,_so_they'll_learn_to_fear_what's_coming.
 qstr_{s9}_asked_you_to_el {s9}_asked_you_to_eliminate_{reg1}_{s13}_parties.
+qstr_{s9}_asked_you_to_fr {s9}_asked_you_to_free_{s13}_from_the_menace_of_a_Troll_raging_in_its_outskirts.
 qstr_You_chose_well_{sir/ You_chose_well,_{sir/madam}._My_lads_know_how_to_keep_their_word_and_earn_their_pay.
 qstr_Well_done_{sir/madam Well_done,_{sir/madam}._Keep_the_money_and_wine_coming_our_way,_and_there's_no_foe_in_Calradia_you_need_fear.
 qstr_We_are_at_your_servi We_are_at_your_service,_{sir/madam}._Point_us_in_the_direction_of_those_who_need_hurting,_and_we'll_do_the_rest.
@@ -879,15 +880,17 @@ qstr_Lady_Galadriel_has_a Lady_Galadriel_has_asked_you_to_slay_the_Dol_Guldur_so
 qstr_town town
 qstr_village village
 qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
-qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_7_days.
-qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_10_days.
-qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_10_days.
+qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_{reg6}_days.
+qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_{reg6}_days.
+qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_{reg0}_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.
 qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town.
 qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_of_goblins_making_trouble_in_{s14}._They_only_come_out_at_night,_and_only_attack_lone_people_on_the_streets.
+qstr_refugees refugees
+qstr_slaves slaves
 qstr_{s1}_Refugees {s1}_Refugees
 qstr_{s1}_Slaves {s1}_Slaves
-qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_people_to_{s13}._You_will_earn_{reg8}_RPs_in_return.
+qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_{s12}_to_{s13}._You_will_earn_{reg8}_RPs_in_return.
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_you_of_course,_my_{lord/lady}.
 qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.

@@ -2758,7 +2758,8 @@ game_menus = [
     "You have successfully defeated assassins from {s2}, sent by {s3}.",
     "none",
     [#add prize
-		(call_script,"script_troop_add_gold","trp_player",100),#add gold
+		#(call_script,"script_troop_add_gold","trp_player",100),#add gold
+        (call_script, "script_add_faction_rps", "$ambient_faction", 100),
 		(add_xp_to_troop,1000,"trp_player"),#add exp
 		
 		(troop_get_slot,":faction","trp_temp_array_a",0),#get number of enemy faction, which organised assasination
@@ -3382,6 +3383,26 @@ game_menus = [
  [("end_game_bye",[],"Farewell.",[(change_screen_quit)])]
 ),
 
+#MV: DON'T REMOVE THIS AGAIN - IT'S USED IN A QUEST
+  ("cattle_herd",mnf_scale_picture,
+   "You encounter some people.",
+   "none",
+   [],
+    [ ("cattle_drive_away",[],"Order them to follow.",
+       [(party_set_slot, "$g_encountered_party", slot_cattle_driven_by_player, 1),
+        (party_set_ai_behavior, "$g_encountered_party", ai_bhvr_escort_party),
+        (party_set_ai_object,"$g_encountered_party", "p_main_party"),
+        (change_screen_return),
+        ]),
+      ("cattle_stop",[],"Bring them to a stop.",
+       [(party_set_slot, "$g_encountered_party", slot_cattle_driven_by_player, 0),
+        (party_set_ai_behavior, "$g_encountered_party", ai_bhvr_hold),
+        (change_screen_return),
+        ]),
+      ("leave",[],"Leave.",[(change_screen_return),]),
+    ]
+  ),
+
 ( "simple_encounter",mnf_enable_hot_keys,
     "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
     "none",
@@ -3424,10 +3445,19 @@ game_menus = [
           (call_script, "script_encounter_init_variables"),
           (assign, "$encountered_party_hostile", 0),
           (assign, "$encountered_party_friendly", 0),
+          
+          #MV: Quest exceptions
+          (assign, ":is_quest_party", 0),
           (try_begin),
-            (gt, "$g_encountered_party_relation", 0),
+            (eq, "$g_encountered_party_template", "pt_runaway_serfs"),
+            (assign, ":is_quest_party", 1),
+          (try_end),
+          
+          (try_begin),
+            (this_or_next|gt, "$g_encountered_party_relation", 0),
+            (eq, ":is_quest_party", 1),
             (assign, "$encountered_party_friendly", 1),
-			# talk with non-hostile parties only
+			# talk with non-hostile parties OR quest parties
 			(assign, "$new_encounter", 0),
 			(assign, "$talk_context", tc_party_encounter),
 			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
@@ -6120,7 +6150,10 @@ game_menus = [
       (store_mul, ":xp_reward", "$num_center_bandits", 117),
       (add_xp_to_troop, ":xp_reward", "trp_player"),
       (store_mul, ":gold_reward", "$num_center_bandits", 50),
-      (call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+      (quest_get_slot, ":quest_giver", "qst_deal_with_night_bandits", slot_quest_giver_troop),
+      (store_troop_faction, ":quest_faction", ":quest_giver"),
+      #(call_script, "script_troop_add_gold","trp_player",":gold_reward"),
+      (call_script, "script_add_faction_rps", ":quest_faction", ":gold_reward"),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
@@ -6133,7 +6166,8 @@ game_menus = [
       (store_random_in_range, ":random_loss", 40, 100),
       (val_add, ":gold_loss", ":random_loss"),
       (val_min, ":gold_loss", ":total_gold"),
-      (troop_remove_gold, "trp_player",":gold_loss"),
+      #(troop_remove_gold, "trp_player",":gold_loss"),
+      (call_script, "script_add_faction_rps", "$ambient_faction", ":gold_loss"),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
@@ -6141,7 +6175,8 @@ game_menus = [
     "^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.",
     "none",
     [ (store_random_in_range, ":random_gold", 200, 500),
-      (call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
+      #(call_script, "script_troop_add_gold", "trp_player", ":random_gold"),
+      (call_script, "script_add_faction_rps", "$ambient_faction", ":random_gold"),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
@@ -6736,7 +6771,7 @@ game_menus = [
             (rest_for_hours, 8, 8, 0),
 			#(jump_to_menu, "$recover_after_death_menu"),
 			(change_screen_return),
-			(display_message,"@times passess..."),
+			(display_message,"@Time passes..."),
          ]),
 	 ]
 ),

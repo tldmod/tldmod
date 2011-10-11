@@ -100,7 +100,7 @@ quests = [
    "{s9} asked you to bring back a savage troll for use in his army."
   ),
 ("kill_troll", "Dispatch raging Troll", qf_random_quest,
-   "{s9} asked you free {s13} from the manace of a Troll raging in its outskirts."
+   "{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts."
   ),
 ("mirkwood_sorcerer", "Slay_a_sorcerer_in_Mirkwood.", qf_random_quest,
   "Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him."
@@ -155,8 +155,8 @@ quests = [
 # Mayor quests
 ##################
 # Note : This is defined as the first mayor quest in module_constants.py: 
-( "move_cattle_herd", "Move People to {s13}", qf_random_quest,
-  "The Elder of {s10} asked you to move some people to {s13}."
+( "move_cattle_herd", "Move {s12} to {s13}", qf_random_quest,
+  "The Elder of {s10} asked you to move some {s12} to {s13}."
   ),
 ( "escort_merchant_caravan", "Escort Supply Train to {s8}", qf_random_quest,
   "Escort the supply train to {s8}."

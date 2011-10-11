@@ -205,10 +205,10 @@ scripts = [
 	(try_end),
 ]),
 
-# script_add_faction_respoint  
+# script_add_faction_rps  
 # PlayerRewardSystem:  adds / removes (if neg) some respoints (parameter2) to a given faction (parameter1)  (mtarini)
-# messes up s10
-("add_faction_respoint",[
+# messes up s0, reg0
+("add_faction_rps",[
 	(store_script_param_1, ":fac"),
 	(store_script_param_2, ":diff"),
 	(store_mul,  ":diff_neg",  ":diff", -1), # diff = - diff
@@ -228,13 +228,13 @@ scripts = [
 		(faction_set_slot, ":fac", slot_faction_respoint, ":rp"),
 	(try_end),
 	
-	(str_store_faction_name, s10, ":fac"),
+	(str_store_faction_name, s0, ":fac"),
 	(try_begin),(gt, ":diff", 0),
-		(assign, reg10, ":diff"),
-		(display_message, "@You gain {reg10} Resource Pts. of {s10}."),
+		(assign, reg0, ":diff"),
+		(display_message, "@You gained {reg0} Resource Points of {s0}."),
 	(else_try),(gt, ":diff_neg", 0),
-		(assign, reg10, ":diff_neg"),
-		(display_message, "@You used {reg10} Resource Pts. of {s10}."),
+		(assign, reg0, ":diff_neg"),
+		(display_message, "@You lost {reg0} Resource Points of {s0}."),
 	(try_end),
 ]),
 
@@ -315,7 +315,7 @@ scripts = [
 		(store_mul, ":rank10", ":rank", 10), 
 		(val_mul, ":income", 5),  #  ( rank^2 *5 +rank * 10) =  0,  15 , 30, 55, 90 , 135, 190, 255, ... per day.
 		(val_add, ":income", ":rank10"),
-		(call_script, "script_add_faction_respoint", ":fac", ":income"),
+		(call_script, "script_add_faction_rps", ":fac", ":income"),
 	(try_end),
 ]),
 
@@ -449,7 +449,7 @@ scripts = [
             (assign, ":news_color", color_bad_news),
           (try_end),
 #          (display_message, "@{reg1?Earned:Lost} {reg12} influence with {s11}.", ":news_color"), # MV: why do this??
-          (display_message, "@{reg1?Earned:Lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
+          (display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
           
           # rank increased?
           (try_begin),
@@ -794,7 +794,7 @@ scripts = [
 		
 		(gt,  ":spending", 0),
 		(store_mul, reg10, ":spending", -1),
-		(call_script, "script_add_faction_respoint", ":fac", reg10),
+		(call_script, "script_add_faction_rps", ":fac", reg10),
 	(try_end),  # end of for each faction
 
 	(try_begin),(eq,  ":tot_spending", 0 ),(eq,  ":n_tot_unpaid_troops", 0 ), 
@@ -880,7 +880,7 @@ scripts = [
 		
 		(neq,  ":spending", 0),
 		(store_mul, reg10, ":spending", -1),
-		(call_script, "script_add_faction_respoint", ":fac", reg10),
+		(call_script, "script_add_faction_rps", ":fac", reg10),
 	(try_end),  # end of for each faction
 ]),
 	
@@ -1783,6 +1783,7 @@ scripts = [
 				    (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 0), (jump_to_menu, "mnu_castle_outside"),
 		 (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 				    (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 1),	(jump_to_menu, "mnu_town_ruins"),
+         (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"), #MV: DON'T REMOVE
 		 (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
 		 (else_try),(eq, "$g_encountered_party", "p_battlefields"   ),(jump_to_menu, "mnu_battlefields"),
 		#(else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),
@@ -1976,7 +1977,9 @@ scripts = [
 						#(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
 						######################## map heroes injuries and deaths
 						(eq, "$tld_option_death_npc", 1), # if death option is available
+						(store_random_in_range,":rnd",0,100),
 						(try_begin),
+							(lt,":rnd",5), # die with 5% prob when lost a battle
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
@@ -5367,7 +5370,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_move_cattle_herd"),
+		#(assign, ":quest_no", "qst_kill_troll"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -5393,7 +5396,7 @@ scripts = [
 			(eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 10),
-			(assign, ":quest_dont_give_again_period", 10),
+			(assign, ":quest_dont_give_again_period", 30),
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
@@ -5421,6 +5424,8 @@ scripts = [
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
 			(assign, ":quest_rank_reward", 70),
+			(assign, ":quest_expiration_days", 10),
+			(assign, ":quest_dont_give_again_period", 30),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),
@@ -5472,6 +5477,7 @@ scripts = [
           (val_add, ":quest_xp_reward", 100),
           (store_random_in_range, ":quest_target_amount", 6, 12),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
+          #(assign, ":quest_expiration_days", 7),
           (assign, "$escort_merchant_caravan_mode", 0),
           (assign, ":result", ":quest_no"),
         (else_try),
@@ -5615,6 +5621,7 @@ scripts = [
           (assign, ":result", ":quest_no"),
         (else_try),
           (eq, ":quest_no", "qst_deliver_iron"),
+          (eq, "$tld_option_crossdressing", 0), #only if Item Restriction is ON, so loot produces scraps
           (store_random_in_range, ":quest_target_amount", 3, 8),
           (store_random_in_range, ":quest_target_item", scraps_begin, scraps_end),
           #empty merchant store of that food - done here and not in dialogs to prevent exploit
@@ -5632,7 +5639,7 @@ scripts = [
           (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
           (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 3),
-          (assign, ":quest_expiration_days", 14),
+          (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
          (else_try),
@@ -6041,7 +6048,7 @@ scripts = [
             
             (assign, ":quest_importance", 4),
             (assign, ":quest_gold_reward", 300),
-            (assign, ":quest_xp_reward", 100),
+            (assign, ":quest_xp_reward", 300),
             (assign, ":quest_rank_reward", 13),
             
             (store_random_in_range, ":quest_target_dna", 0, 1000000),
@@ -6432,7 +6439,10 @@ scripts = [
             #(store_random_in_range, ":random_tier_no", slot_faction_tier_2_troop, ":max_tier_no"),
             #(faction_get_slot, ":cur_target_troop", ":cur_target_faction", ":random_tier_no"),
             #(gt, ":cur_target_troop", 0),
-            (store_random_in_range, ":quest_target_amount", 5, 10),
+            (store_character_level, ":quest_target_amount", "trp_player"),
+            (gt, ":quest_target_amount", 5),
+            (val_clamp, ":quest_target_amount", 6, 31),
+            (val_div, ":quest_target_amount", 3), #2-10
             #(assign, ":quest_target_troop", ":cur_target_troop"),
             #(assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_importance", 1),
@@ -8311,6 +8321,12 @@ scripts = [
       (quest_get_slot, ":quest_gold_reward", ":quest_no", slot_quest_gold_reward),
       (quest_get_slot, ":quest_rank_reward", ":quest_no", slot_quest_rank_reward),
       
+      #Exceptions
+      (try_begin),
+        (eq, ":quest_no", "qst_deliver_message"),
+        (assign, ":quest_gold_reward", 0), #already paid in target currency
+      (try_end),
+      
       (try_begin),
         (lt, ":finish_percentage", 100),
         (val_mul, ":quest_xp_reward", ":finish_percentage"),
@@ -8338,7 +8354,7 @@ scripts = [
       (try_end),
       
       (add_xp_as_reward, ":quest_xp_reward"),
-      (call_script, "script_troop_add_gold_faction", "trp_player", ":quest_gold_reward", ":quest_faction"),
+      (call_script, "script_add_faction_rps", ":quest_faction", ":quest_gold_reward"),
       (call_script, "script_increase_rank", ":quest_faction", ":quest_rank_reward"),
       (call_script, "script_end_quest", ":quest_no"),
 ]),
@@ -13534,22 +13550,6 @@ scripts = [
      (assign, ":ideal", 40),
      (assign, reg0, ":ideal"),
 ]),
-
-#script_troop_add_gold_faction (MV for TLD)
-# INPUT: arg1 = troop_no, arg2 = amount, arg3 = faction
-("troop_add_gold_faction",
-    [(store_script_param, ":troop_no", 1),
-     (store_script_param, ":amount", 2),
-     (store_script_param, ":faction", 3),
-     (assign, ":faction_backup", "$ambient_faction"),
-     (assign, "$ambient_faction", ":faction"),
-     (troop_add_gold, ":troop_no", ":amount"),
-     (assign, "$ambient_faction", ":faction_backup"),
-     (try_begin),
-       (eq, ":troop_no", "trp_player"),
-       #(play_sound, "snd_money_received"),
-     (try_end),
-]),     
 
 #script_troop_add_gold
 # INPUT: arg1 = troop_no, arg2 = amount

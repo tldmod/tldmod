@@ -144,7 +144,7 @@ ui_retreated_battle|%s has fled from the battlefield.
 ui_retreat|Retreat
 ui_talk|Talk
 ui_mount|Mount
-ui_riding_skill_not_adequate_to_mount|(Riding skill not adequate to mount)
+ui_riding_skill_not_adequate_to_mount|(Riding skill too low)
 ui_dismount|Dismount
 ui_exit|Exit
 ui_door_to|Door to 
