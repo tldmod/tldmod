@@ -9247,6 +9247,14 @@ scripts = [
         (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
         (lt, ":cur_pos", 32), # spawn up to entry point 31
         (set_visitor, ":cur_pos", ":stack_troop"),
+		(try_begin),
+			(this_or_next|eq, ":stack_troop", "trp_knight_3_11"), #imladris elves all in helms
+			(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
+			(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
+			(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
+						 (eq, ":stack_troop", "trp_mordor_lord"), #Mouth in hood
+			(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":cur_pos", af_override_horse|af_override_weapons),
+		(try_end),
         (val_add,":cur_pos", 1),
       (try_end),
       #TLD NPC companions
@@ -9269,11 +9277,6 @@ scripts = [
         (set_visitor, ":cur_pos", ":cur_troop"),
         (val_add,":cur_pos", 1),
       (try_end),
-	  	
-	(try_begin), #TLD:  always hooded mouth of sauron
-		(eq, "$current_town", "p_town_morannon"),
-		(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", 16, af_override_horse|af_override_weapons),
-	(try_end),
 	
 	(jump_to_scene,":castle_scene"),
 	(scene_set_slot, ":castle_scene", slot_scene_visited, 1),
@@ -17923,6 +17926,13 @@ scripts = [
 			(party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
 			(lt, ":cur_pos", 23), # spawn up to entry point 22
 			(set_visitor, ":cur_pos", ":stack_troop"),
+			(try_begin),
+				(this_or_next|eq, ":stack_troop", "trp_knight_3_11"), #imladris elves all in helms
+				(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
+				(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
+							 (eq, ":stack_troop", "trp_lorien_lord"), #Galadriel in her invis peryphery
+				(mission_tpl_entry_set_override_flags, "mt_town_center", ":cur_pos", af_override_horse|af_override_weapons),
+			(try_end),
 			(val_add,":cur_pos", 1),
 		(try_end),
 	(try_end),
@@ -17956,17 +17966,6 @@ scripts = [
 	(mission_tpl_entry_set_override_flags, "mt_town_center", 5, ":override_state"),
 	(mission_tpl_entry_set_override_flags, "mt_town_center", 6, ":override_state"),
 	(mission_tpl_entry_set_override_flags, "mt_town_center", 7, ":override_state"),
-	
-	(try_begin),
-		(this_or_next|eq, "$current_town", "p_town_caras_galadhon"), #lorien elves all in helms
-		(this_or_next|eq, "$current_town", "p_town_imladris_camp"),
-		(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
-		(eq, "$current_town", "p_town_cerin_dolen"),
-		(try_for_range, ":entry", 16,23),
-			(mission_tpl_entry_set_override_flags, "mt_town_center", ":entry", af_override_horse|af_override_weapons),
-		(try_end),
-	(try_end),
-
 ]),
 
 # script_calculate_renown_value
