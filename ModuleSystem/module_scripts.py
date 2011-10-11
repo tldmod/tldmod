@@ -17957,7 +17957,7 @@ scripts = [
 	(mission_tpl_entry_set_override_flags, "mt_town_center", 7, ":override_state"),
 	
 	(try_begin),
-		(this_or_next|eq, "$current_town", "p_town_caras_galadhon"), #harad lords w/o helpmets
+		(this_or_next|eq, "$current_town", "p_town_caras_galadhon"), #lorien elves all in helms
 		(this_or_next|eq, "$current_town", "p_town_imladris_camp"),
 		(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
 		(eq, "$current_town", "p_town_cerin_dolen"),

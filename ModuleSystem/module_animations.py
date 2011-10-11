@@ -1323,8 +1323,10 @@ animations = [
  ["greet_goaway_mounted",0, [1.8, "anim_greet_goaway_mounted",0, 33, arf_blend_in_12]],
 
 
- ["unused_human_anim_41", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_42", 0, [1.0, "anim_human", 0, 1, 0]],
+ ["troll_or_ent_bend_continue", 0, [6.0, "troll_or_ent_bend", 0, 75, arf_blend_in_64|arf_cyclic]],
+ ["troll_or_ent_bend_rise", 0, [6.0, "troll_or_ent_bend", 1, 2, arf_blend_in_2]],
+ ["lean_from_camera", acf_enforce_all,[1, "death", 5, 50, arf_blend_in_64, pack2f(0.47, 0.82), (0,0,0), 1]],
+
  ["unused_human_anim_43", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_44", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_45", 0, [1.0, "anim_human", 0, 1, 0]],

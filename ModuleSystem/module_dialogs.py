@@ -121,7 +121,10 @@ dialogs = [
                      (try_end),
                      (str_store_string_reg,s65,s64),
                      (str_store_string_reg,s67,s66), #bug fix
-                     (eq, 1, 0)],
+                     # put orc/uruk heads out of the way
+					 (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
+					 
+					 (eq, 1, 0)],
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
 [anyone ,"member_chat", [(store_conversation_troop, "$g_talk_troop"),
@@ -195,14 +198,14 @@ dialogs = [
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
   
 #MV: Easter Egg Troll dialogs
-[trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0)], "Problem?", "troll_introduce_1",[]],
-[trp_easter_egg_troll, "start", [], "U mad?", "troll_talk_1",[]],
+[trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Problem?", "troll_introduce_1",[]],
+[trp_easter_egg_troll, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "U mad?", "troll_talk_1",[]],
   
 [trp_easter_egg_troll|plyr, "troll_introduce_1", [], "Whoa! A talking troll?!", "troll_goodbye",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1)]],
-[trp_easter_egg_troll|plyr, "troll_introduce_1", [], "I own a horse.", "close_window",[]],
+[trp_easter_egg_troll|plyr, "troll_introduce_1", [], "I own a horse.", "close_window",[(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")]],
   
 [trp_easter_egg_troll|plyr, "troll_talk_1", [], "Troll me, troll.", "troll_talk_2",[]],
-[trp_easter_egg_troll|plyr, "troll_talk_1", [], "I own a horse.", "close_window",[]],
+[trp_easter_egg_troll|plyr, "troll_talk_1", [], "I own a horse.", "close_window",[(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")]],
   
 [trp_easter_egg_troll, "troll_talk_2", [
     (store_random_in_range, ":random", 0, 10),
@@ -268,12 +271,12 @@ dialogs = [
     (le, ":int", 12)],
 "{s5}", "troll_goodbye",[]],
   
-[trp_easter_egg_troll, "troll_beaten", [], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
-[trp_easter_egg_troll, "troll_goodbye", [], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
+[trp_easter_egg_troll, "troll_beaten", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
+[trp_easter_egg_troll, "troll_goodbye", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[]],
   
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
-[trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0)],
+[trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
 "(You find that you are looking at a most extraordinary creature. He is very tall and stiff-limbed with bark-like skin and leafy hair. Moss is also covering parts of his body. But at the moment you are noting little but the eyes. The deep eyes are surveying you, slow and solemn but very sharp and penetrating. You think they are brown, shot with green light, as if there is an enormous well behind them, filled up with ages of memory and long, slow, steady thinking. But on the surface his eyes are sparkling with the present... like the sun shimmering on the outer leaves of a vast tree, or the ripples of a very deep lake.)", "treebeard_introduce_1", []],
 [trp_treebeard, "treebeard_introduce_1", [], "(You are about to say something but a strange stifling feeling falls upon you, as if the air is too thin or too scanty for breathing... with an almost desperate inhale of air you manage to shake loose the feeling and the huge tree-like creature drops the intensity of his gaze a little bit. The creature continues to look at you and you notice the other huge tree creatures are watching you too, as if expecting you to speak...)", "treebeard_introduce_2",[]],
 [trp_treebeard|plyr, "treebeard_introduce_2", [], "Pardon my intrusion... I'm but a weary traveler seeking refuge from recent events... my name is {playername}. Might I ask who you are?", "treebeard_introduce_3",[]],
@@ -333,7 +336,7 @@ dialogs = [
 [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me more about you.", "treebeard_about_himself",[]],
 [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me about the Entwives.", "treebeard_about_entwives",[]],
 [trp_treebeard|plyr, "treebeard_talk_response", [], "Tell me about the Ents.", "treebeard_about_ents",[]],
-[trp_treebeard|plyr, "treebeard_talk_response", [], "Never mind, goodbye.", "close_window",[]],
+[trp_treebeard|plyr, "treebeard_talk_response", [], "Never mind, goodbye.", "close_window",[(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")]],
   
 [trp_treebeard, "treebeard_about_himself", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_current_state, 0)],
 "(The Ent leader looks distant and solemn. After a while he slowly says:)^'Don't be hasty... we can talk more about this when the woods are safe from the orcs.'", "treebeard_pretalk",[]],
@@ -346,7 +349,7 @@ dialogs = [
 "Ahummm... the beautiful Entwives... they like to plant and grow... we should have listened more to them... Hrooom... then they left to the Brown Lands to plant gardens and they taught mortals about making the lands fertile... we used to visit them... until... Sauron attacked... the Entwives are now lost... Hummm... Fimbrethil... her hue of ripe grain... we have looked for them... but not found them... yet...", "treebeard_pretalk",[]],
     
 [trp_treebeard, "treebeard_about_ents", [],
-"Hrooom... We are shephards of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.", "treebeard_pretalk",[]],
+"Hrooom... We are shepherds of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.", "treebeard_pretalk",[]],
 
 #  [trp_treebeard|plyr, "treebeard_talk_1", [], "Troll me, troll.", "treebeard_talk_2",[]],
   # [trp_treebeard|plyr, "treebeard_talk_1", [], "Likewise.", "close_window",[]],

@@ -1388,7 +1388,8 @@ game_menus = [
 ("traits_report",0,
    "{s1}",
    "none",
-   [(str_clear, s2),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+    (str_clear, s2),
     (try_for_range, ":trait", slot_trait_first, slot_trait_last+1),
       (troop_slot_eq, "trp_traits", ":trait", 1),
       
@@ -3756,7 +3757,7 @@ game_menus = [
     ]
 ),
 ( "order_attack_2",mnf_disable_all_keys,
-    "^^^^^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
+    "^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
@@ -4804,7 +4805,7 @@ game_menus = [
     ]
 ),
 
-( "join_siege_outside",mnf_scale_picture,
+( "join_siege_outside",0,
     "^^^^^^{s1} has come under siege by {s2}.",
     "none",
     code_to_set_city_background + [ 
@@ -4830,7 +4831,7 @@ game_menus = [
       ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
     ]
 ),
-( "cut_siege_without_fight",mnf_scale_picture,
+( "cut_siege_without_fight",0,
     "The besiegers let you approach the gates without challenge.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),],
@@ -6919,121 +6920,6 @@ game_menus = [
     [("continue",[],"Continue...", [(change_screen_return)])]
 ),
 
-
-# ( "notification_join_another_faction",0,
-    # "Your {s11} homeland was defeated!^^^^^Still, other allies remain in the War - who would you like to join:",
-    # "none",
-    # # $g_notification_menu_var1 - player side
-    # [ (str_store_faction_name, s11, "$players_kingdom"),
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 65),
-      # (position_set_y, pos0, 30),
-      # (position_set_z, pos0, 170),
-      # (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "$players_kingdom", pos0),
-    # ],
-  # concatenate_scripts([[
-  # (
-	# "join_faction",
-	# [(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
-     # (faction_slot_eq, faction_init[y][0], slot_faction_side, "$g_notification_menu_var1"),
-     # (str_store_faction_name, s10, faction_init[y][0]),],
-	# "{s10}.",
-	# [
-        # (call_script, "script_player_join_faction", faction_init[y][0]),
-        # (str_store_faction_name, s10, "$players_kingdom"),
-        # (display_message, "@You have joined {s10}!"),
-		# (change_screen_return),
-    # ]
-  # )
-  # ]for y in range(len(faction_init)) ])
-  # # +
-    # # [ ("continue",[],"Continue...", [(change_screen_return)]),
-    # # ]
-# ),
-
-# ( "notification_center_lost",0,
-    # "An Estate was Lost^^You have lost {s1} to {s2}.",
-    # "none",
-    # [ (str_store_party_name, s1, "$g_notification_menu_var1"),
-      # (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 62),
-      # (position_set_y, pos0, 30),
-      # (position_set_z, pos0, 170),
-      # (set_game_menu_tableau_mesh, "tableau_center_note_mesh", "$g_notification_menu_var1", pos0),
-      # ],
-    # [ ("continue",[],"Continue...",[(change_screen_return)])]
-# ),
-
-# ( "notification_troop_left_players_faction",0,
-    # "Betrayal!^^{s1} has left {s2} and joined {s3}.",
-    # "none",
-    # [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
-      # (str_store_faction_name, s2, "$players_kingdom"),
-      # (str_store_faction_name, s3, "$g_notification_menu_var2"),
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 55),
-      # (position_set_y, pos0, 20),
-      # (position_set_z, pos0, 100),
-      # (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
-      # ],
-    # [ ("continue",[],"Continue...",
-       # [(change_screen_return),
-        # ]),
-     # ]
-# ),
-
-# ( "notification_troop_joined_players_faction",0,
-    # "Good news!^^ {s1} has left {s2} and joined {s3}.",
-    # "none",
-    # [ (str_store_troop_name, s1, "$g_notification_menu_var1"),
-      # (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      # (str_store_faction_name, s3, "$players_kingdom"),
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 55),
-      # (position_set_y, pos0, 20),
-      # (position_set_z, pos0, 100),
-      # (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$g_notification_menu_var1", pos0),
-      # ],
-    # [("continue",[],"Continue...",
-       # [(change_screen_return),
-        # ]),
-     # ]
-# ),
-
-# ( "notification_war_declared",0,
-    # "Declaration of War^^{s1} has declared war against {s2}!",
-    # "none",
-    # [
-      # (try_begin),
-        # (eq, "$g_notification_menu_var1", "fac_player_supporters_faction"),
-        # (str_store_faction_name, s1, "$g_notification_menu_var2"),
-        # (str_store_string, s2, "@you"),
-      # (else_try),
-        # (eq, "$g_notification_menu_var2", "fac_player_supporters_faction"),
-        # (str_store_faction_name, s1, "$g_notification_menu_var1"),
-        # (str_store_string, s2, "@you"),
-      # (else_try),
-        # (str_store_faction_name, s1, "$g_notification_menu_var1"),
-        # (str_store_faction_name, s2, "$g_notification_menu_var2"),
-      # (try_end),
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 65),
-      # (position_set_y, pos0, 30),
-      # (position_set_z, pos0, 170),
-      # (store_sub, ":faction_1", "$g_notification_menu_var1", kingdoms_begin),
-      # (store_sub, ":faction_2", "$g_notification_menu_var2", kingdoms_begin),
-      # (val_mul, ":faction_1", 128),
-      # (val_add, ":faction_1", ":faction_2"),
-      # (set_game_menu_tableau_mesh, "tableau_2_factions_mesh", ":faction_1", pos0),
-      # ],
-    # [
-      # ("continue",[],"Continue...",
-       # [(change_screen_return),
-        # ]),
-     # ]
-# ),
-
 ( "notification_faction_defeated",0,
     "^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!",
     "none",
@@ -7434,7 +7320,7 @@ game_menus = [
 					(jump_to_menu, "mnu_ancient_ruins")]),  
 ]),  
 ( "burial_mound", 0, 
-  "You_approach_the_burial_mound_of_{s3}_of_{s2}._\
+  "You_approach_the_burial_mound_of_{s1}_of_{s2}._\
   It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_ui_default_menu_window"),
 		(store_encountered_party, ":mound"),
@@ -7443,7 +7329,7 @@ game_menus = [
 #		(store_relation, ":local2", ":local1", "fac_player_faction"),
 		(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 		(str_store_faction_name, s2, ":local1"),
-		(str_store_troop_name, s3, ":hero")], [
+		(str_store_troop_name, s1, ":hero")], [
   ("pay_respects", [(store_encountered_party, ":mound"),
 					(store_faction_of_party, ":faction", ":mound"),
 					(store_relation, ":local2", ":faction", "fac_player_faction"),
