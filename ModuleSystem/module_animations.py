@@ -1323,11 +1323,10 @@ animations = [
  ["greet_goaway_mounted",0, [1.8, "anim_greet_goaway_mounted",0, 33, arf_blend_in_12]],
 
 
- ["troll_or_ent_bend_continue", 0, [6.0, "troll_or_ent_bend", 0, 75, arf_blend_in_64|arf_cyclic]],
- ["troll_or_ent_bend_rise", 0, [6.0, "troll_or_ent_bend", 1, 2, arf_blend_in_2]],
- ["lean_from_camera", acf_enforce_all,[1, "death", 5, 50, arf_blend_in_64, pack2f(0.47, 0.82), (0,0,0), 1]],
+ ["troll_or_ent_bend_continue", acf_enforce_all, [6.0, "troll_or_ent_bend", 0, 79, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["troll_or_ent_bend_rise", 0, [2.0, "troll_or_end_getUp", 0, 15, arf_blend_in_12]],
+ ["lean_from_camera", acf_enforce_all,[6, "bow_to_lord", 8, 28, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
 
- ["unused_human_anim_43", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_44", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_45", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_46", 0, [1.0, "anim_human", 0, 1, 0]],
@@ -1478,7 +1477,7 @@ animations = [
  ],
 
  # attempt, not used yet (mtarin)
- ["warg_jump", acf_enforce_lowerbody,
+ ["warg_jump", acf_enforce_lowerbody|acf_displace_position,
    [1.7, "warg_jump", 0, 20, arf_blend_in_4|arf_cyclic|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9],
    #[1.7, "warg_jump", 0, 20,  arf_blend_in_4,pack2f(0.4, 0.0), ( 0.0, 4.2,0), 3.5], #|arf_end_pos_0_25],
  ],
@@ -1488,7 +1487,9 @@ animations = [
    [0.25, "anim_horse", 600, 601, arf_use_stand_progress|arf_blend_in_5, 0, (0, 0, 0), 0.0],
   ],
 
- ["unused_horse_anim_6", 0, [1.0, "anim_horse", 0, 1, 0]],
+ ["warg_leapattack", acf_enforce_lowerbody|acf_displace_position, 
+	[1.0, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
+  ],
  ["unused_horse_anim_7", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_8", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_9", 0, [1.0, "anim_horse", 0, 1, 0]],

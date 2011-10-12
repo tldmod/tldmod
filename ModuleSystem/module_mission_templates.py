@@ -85,30 +85,27 @@ mission_templates = [ # not used in game
     #prisoners now...
      (12,mtef_visitor_source,0,0,1,[]),(13,mtef_visitor_source,0,0,1,[]),(14,mtef_visitor_source,0,0,1,[]),(15,mtef_visitor_source,0,0,1,[]),(16,mtef_visitor_source,0,0,1,[]),
     #Other party
-     (17,mtef_visitor_source,af_override_fullhelm,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),
-     (22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,0,0,1,[]),(24,mtef_visitor_source,0,0,1,[]),(25,mtef_visitor_source,0,0,1,[]),(26,mtef_visitor_source,0,0,1,[]),
-     (27,mtef_visitor_source,0,0,1,[]),(28,mtef_visitor_source,0,0,1,[]),(29,mtef_visitor_source,0,0,1,[]),(30,mtef_visitor_source,0,0,1,[]),
+     (17,mtef_visitor_source,0,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,aif_start_alarmed,1,[]),(20,mtef_visitor_source,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source,0,aif_start_alarmed,1,[]),
+     (22,mtef_visitor_source,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source,0,aif_start_alarmed,1,[]),(24,mtef_visitor_source,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source,0,aif_start_alarmed,1,[]),(26,mtef_visitor_source,0,aif_start_alarmed,1,[]),
+     (27,mtef_visitor_source,0,aif_start_alarmed,1,[]),(28,mtef_visitor_source,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source,0,aif_start_alarmed,1,[]),(30,mtef_visitor_source,0,aif_start_alarmed,1,[]),
 	# opponent troops cheering
-	 (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+	# (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
     [ # other people in the backgroud
-		(1, 0, ti_once, [(neq,"$party_meeting",0)], 
-	    [   # a small comment about the purpose of this? Position of enemy/freindly troops changes according to attacking/non attacking?
+		# (1, 0, ti_once, [(neq,"$party_meeting",0)], 
+	    # [   # a small comment about the purpose of this? Position of enemy/freindly troops changes according to attacking/non attacking?
 			# GA: encountered party can be either attacker or defender, and those spawn in different entries
-			(try_begin),(encountered_party_is_attacker),(add_reinforcements_to_entry,32,8),  
-		     (else_try),								(add_reinforcements_to_entry,31,8),
-			(try_end)]),
+			# (try_begin),(encountered_party_is_attacker),(add_reinforcements_to_entry,32,8),  
+		     # (else_try),								(add_reinforcements_to_entry,31,8),
+			# (try_end)]),
 		# freindly greetings (after 0.2 secs)
 		(0, 0.2, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
 			(try_for_agents,":agent"),
 				(agent_is_human, ":agent"),
-				(agent_get_party_id,reg12,":agent"),
+				(agent_get_entry_no,":e",":agent"),
 				(try_begin),
-					(eq,reg12,"p_main_party"), # GA: terrible workaround to remove inappropriate troops from screen :)
-					(call_script,"script_remove_agent",":agent"),
-				(else_try),
-					(agent_get_entry_no,":e",":agent"),(eq,":e",17),
+					(eq,":e",17),
 					(agent_get_troop_id, ":trp", ":agent"),
 					(troop_get_type, ":race", ":trp"),
 					(store_troop_faction, ":fac", ":trp"),
@@ -129,34 +126,51 @@ mission_templates = [ # not used in game
 					(try_end),
 					(try_begin),
 						(gt,":greet_ani",0), 
-						(agent_get_horse,":e",":agent"),					
-						(try_begin),(ge,":e",0), 
+						(agent_get_horse,reg1,":agent"),					
+						(try_begin),(ge,reg1,0), 
 							(val_add, ":greet_ani", 1),
 						(try_end),
 						(agent_set_animation, ":agent", ":greet_ani"),
 					(try_end),
+				(else_try),
+					(agent_set_animation, ":agent", "anim_stand"),
+					(store_random_in_range,reg0,0,100),
+					(agent_set_animation_progress, ":agent", reg0),
 				(try_end),
 			(try_end)]),
 	   
-     (3, 2, 0, [], [ #	         (entry_point_get_position,pos1,0),
-		(team_set_relation, 0, 1, 1),
-		(set_show_messages, 0),
-		(team_give_order, 1, grc_everyone, mordr_hold),
-		(team_give_order, 1, grc_archers, mordr_stand_ground),
-		(set_show_messages, 1),
+     (0.3, 0, 2, [], [ #	         (entry_point_get_position,pos1,0),
+		# (team_set_relation, 0, 1, 1),
+		# (set_show_messages, 0),
+		# (team_give_order, 1, grc_everyone, mordr_hold),
+		# (team_give_order, 1, grc_archers, mordr_stand_ground),
+		# (set_show_messages, 1),
 		(try_begin),
-			 (eq,"$party_meeting",-1), # hostile, and only once
-			 (try_for_agents,":agent"),
-				(agent_get_entry_no,":e",":agent"),
-				(neq,":e",0),(neq,":e",17), # main guys do not cheer
-				(store_random_in_range,":rnd",0,10),(lt,":rnd",5), # 50% of times
-				(agent_get_horse,":e",":agent"),					
-				(try_begin),(eq,":e",-1),(agent_set_animation, ":agent", "anim_cheer"),
+			(eq,"$party_meeting",-1), # hostile, and only once
+			(try_for_agents,":agent"),
+			(agent_is_human, ":agent"),
+				(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,17),(neq,reg1,18), # main guys do not cheer
+				(store_random_in_range,reg1,0,100),(lt,reg1,3), # 3% of times
+				(agent_get_horse,reg1,":agent"),					
+				(try_begin),(eq,reg1,-1),(agent_set_animation, ":agent", "anim_cheer"),
 				 (else_try),			 (agent_set_animation, ":agent", "anim_cheer_player_ride"),
 				(try_end),
+				(agent_get_troop_id,":troop", ":agent"),
+				(troop_get_type,reg1,":troop"),
+				(try_begin),
+					(is_between, reg1, tf_urukhai, tf_orc_end),
+					(agent_play_sound, ":agent", "snd_meeting_uruk"),
+				(else_try),
+					(eq, reg1, tf_orc),
+					(agent_play_sound, ":agent", "snd_meeting_orc"),
+				(else_try),
+					(is_between, reg1, tf_elf_begin, tf_elf_end),
+					(agent_play_sound, ":agent", "snd_meeting_elf"),
+				(else_try),				
+					(agent_play_sound, ":agent", "snd_meeting_man"),
+				(try_end),
 			(try_end),
-		(try_end),
-		(assign,"$party_meeting",0)]),
+		(try_end)]),
 ]),
 #----------------------------------------------------------------
 #mission templates before this point are hardwired into the game.

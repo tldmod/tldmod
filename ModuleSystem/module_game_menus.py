@@ -3917,7 +3917,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)])]
 ),
 
-(   "battle_debrief",mnf_disable_all_keys|mnf_scale_picture,
+(   "battle_debrief",mnf_disable_all_keys,
     "{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),

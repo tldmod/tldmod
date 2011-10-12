@@ -4027,8 +4027,8 @@ scripts = [
       (set_visitor,0,"trp_player"),
 	  (troop_equip_items, ":meeting_troop"),
       (try_begin),
-#		(this_or_next|eq,":meeting_troop","trp_nazgul"),
-		(eq,":meeting_troop","trp_elder_cgaladhon"),
+		(this_or_next|eq,":meeting_troop","trp_mordor_lord"),
+		(eq,":meeting_troop","trp_lorien_lord"),
 		(set_visitor,18,":meeting_troop",":troop_dna"),
 	  (else_try),
 		(set_visitor,17,":meeting_troop",":troop_dna"),
@@ -4040,18 +4040,48 @@ scripts = [
 
 #script_setup_party_meeting:
 # INPUT: param1: Party-id with which meeting will be made.
-("setup_party_meeting",
-    [ (store_script_param_1, ":meeting_party"),
-      (try_begin), # party_meeting used as an indicator that conversation is with party
-        (lt, "$g_encountered_party_relation", 0), #hostile
+("setup_party_meeting", [
+	(store_script_param_1, ":meeting_party"),
+	(try_begin), # party_meeting used as an indicator that conversation is with party
+		(lt, "$g_encountered_party_relation", 0), #hostile
 		(assign,"$party_meeting",-1),
-	  (else_try),
-	    (assign,"$party_meeting",1),
-#        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
-      (try_end),
-      (party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
-      (party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
-	  (call_script,"script_setup_troop_meeting",":meeting_troop", ":troop_dna"), #GA: made it through troop meeting script as it should be
+	(else_try),
+		(assign,"$party_meeting",1),
+		#        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
+	(try_end),
+
+	(modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+	(set_visitor,0,"trp_player"),
+	(party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
+	(party_stack_get_troop_dna,":troop_dna",":meeting_party",0),
+	(troop_equip_items, ":meeting_troop"),
+	(try_begin),
+		(this_or_next|eq,":meeting_troop","trp_mordor_lord"),
+		(eq,":meeting_troop","trp_lorien_lord"),
+		(set_visitor,18,":meeting_troop",":troop_dna"),
+	(else_try),
+		(set_visitor,17,":meeting_troop",":troop_dna"),
+	(try_end),
+
+	#add company to an opponent talker
+	(store_party_size_wo_prisoners,":size",":meeting_party"),
+	(val_add, ":size", 18),
+	(party_get_num_companion_stacks, ":num_stacks",":meeting_party"),
+	(try_for_range, ":entry", 19, 30),
+		(try_for_range, ":stack", 0, ":num_stacks"), # one from each stack, then repeat
+			(lt, ":entry", 30),
+			(lt, ":entry", ":size"),
+			(party_stack_get_troop_id, ":meeting_troop",":meeting_party",":stack"),
+			(neg|troop_is_hero, ":meeting_troop"), #heroes not shown (usually one hero, and he's a leader/talker already
+			(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
+			(set_visitor,":entry",":meeting_troop",":rnd"),
+			(val_add, ":entry", 1),
+		(try_end),	
+	(try_end),
+	
+	(set_jump_mission,"mt_conversation_encounter"),
+	(jump_to_scene,"scn_conversation_scene"),
+	(change_screen_map_conversation, ":meeting_troop"),
 ]),
 
 #script_party_remove_all_companions:

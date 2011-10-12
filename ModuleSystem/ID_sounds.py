@@ -259,5 +259,9 @@ snd_eosgi_occasional = 257
 snd_wosgi_occasional = 258
 snd_tirith_occasional = 259
 snd_morannon_occasional = 260
+snd_meeting_elf = 261
+snd_meeting_uruk = 262
+snd_meeting_man = 263
+snd_meeting_orc = 264
 
 

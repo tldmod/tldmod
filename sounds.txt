@@ -645,7 +645,7 @@ soundsfile version 2
  osgiliath01.wav 1153
  osgiliath03.wav 1153
  gondor_army.wav 1153
-261
+265
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -885,25 +885,29 @@ snd_gondor_ambiance 899 1 608
 snd_rohan_ambiance 899 1 609 
 snd_dwarf_ambiance 899 1 610 
 snd_harad_ambiance 899 1 611 
-snd_gondor_occasional 1153 6 612 267 613 259 528 528 
-snd_elves_occasional 1153 4 614 615 616 617 
+snd_gondor_occasional 1153 6 528 528 612 267 613 259 
+snd_elves_occasional 1153 6 528 528 614 615 616 617 
 snd_lorien_occasional 1153 5 595 614 615 616 617 
 snd_beorn_occasional 1153 7 614 615 616 613 266 259 265 
 snd_rohan_occasional 1153 10 618 619 620 621 613 612 614 267 259 263 
 snd_dwarf_occasional 1153 5 622 623 267 624 625 
 snd_dale_occasional 1153 9 614 615 616 613 266 267 259 263 626 
 snd_rhun_occasional 1153 8 618 619 620 621 627 266 267 259 
-snd_harad_occasional 1153 10 619 620 621 627 628 629 630 628 629 630 
-snd_umbar_occasional 1153 3 528 631 632 
-snd_dunland_occasional 1153 7 627 612 256 257 258 259 265 
-snd_orc_occasional 1153 6 633 627 634 635 636 637 
-snd_guldur_occasional 1153 4 627 635 636 637 
-snd_moria_occasional 1153 4 528 528 638 639 
-snd_isengard_occasional 1153 12 639 627 635 636 637 266 634 267 622 623 626 265 
+snd_harad_occasional 1153 11 528 619 620 621 627 628 629 630 628 629 630 
+snd_umbar_occasional 1153 5 528 528 528 631 632 
+snd_dunland_occasional 1153 8 528 627 612 256 257 258 259 265 
+snd_orc_occasional 1153 7 528 633 627 634 635 636 637 
+snd_guldur_occasional 1153 8 528 528 528 528 627 635 636 637 
+snd_moria_occasional 1153 5 528 528 528 638 639 
+snd_isengard_occasional 1153 14 528 528 639 627 635 636 637 266 634 267 622 623 626 265 
 snd_urukhai_occasional 1153 6 627 635 636 637 634 265 
 snd_seaside_occasional 1153 6 614 615 616 631 632 267 
 snd_morgul_occasional 1153 9 528 528 528 528 528 528 528 640 641 
 snd_eosgi_occasional 1153 8 635 636 637 642 625 643 626 624 
-snd_wosgi_occasional 1153 5 642 625 643 626 624 
-snd_tirith_occasional 1153 5 612 644 267 528 528 
+snd_wosgi_occasional 1153 7 528 528 642 625 643 626 624 
+snd_tirith_occasional 1153 6 528 612 644 267 528 528 
 snd_morannon_occasional 1153 1 528 
+snd_meeting_elf 1120 12 566 567 551 552 553 554 555 556 557 558 559 560 
+snd_meeting_uruk 1120 7 460 461 462 463 464 465 466 
+snd_meeting_man 1120 7 327 326 325 335 322 316 320 
+snd_meeting_orc 1120 4 435 436 437 438 
