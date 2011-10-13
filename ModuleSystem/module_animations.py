@@ -1325,7 +1325,7 @@ animations = [
 
  ["troll_or_ent_bend_continue", acf_enforce_all, [6.0, "troll_or_ent_bend", 0, 79, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
  ["troll_or_ent_bend_rise", 0, [2.0, "troll_or_end_getUp", 0, 15, arf_blend_in_12]],
- ["lean_from_camera", acf_enforce_all,[6, "bow_to_lord", 8, 28, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["lean_from_camera", acf_enforce_all,[12, "leaningBack", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
 
  ["unused_human_anim_44", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_45", 0, [1.0, "anim_human", 0, 1, 0]],

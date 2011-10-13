@@ -328,5 +328,10 @@ scenes = [
 ("advcamp_bad" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("isengard_underground" ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000640002800000691a400003efe00004b34000059be",[],[]),
 
+("forest1"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest2"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest3"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest4"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+
 ]
 

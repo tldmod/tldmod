@@ -200,3 +200,7 @@ scn_moria_deep_mines = 198
 scn_advcamp_good = 199
 scn_advcamp_bad = 200
 scn_isengard_underground = 201
+scn_forest1 = 202
+scn_forest2 = 203
+scn_forest3 = 204
+scn_forest4 = 205
