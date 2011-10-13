@@ -331,7 +331,8 @@ party_templates = [
 #  - A mix of T1 (tier 1) troops, size 2-5 (if there are no T1, use fewer T2)
 #  - Ideally the starting troops from each faction subtree
 
-("gondor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_gondor_commoner,1,4),(trp_gondor_noblemen,1,1)]),
+("gondor_cap_recruits","_",0,0,fac_commoners,0,[(trp_gondor_commoner,2,5),(trp_gondor_noblemen,1,1)]),
+("gondor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_gondor_commoner,1,4),(trp_gondor_noblemen,0,1)]),
 ("pelargir_recruits"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_watchman,1,4)]), #T2
 ("dol_amroth_recruits","_",0,0,fac_commoners,0,[(trp_dol_amroth_youth,2,4)]), #Cavalry line nerf
 ("lamedon_recruits"   ,"_",0,0,fac_commoners,0,[(trp_clansman_of_lamedon,2,5)]),
@@ -340,23 +341,28 @@ party_templates = [
 ("ithilien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_ranger_of_ithilien,1,2)]), #T4! nerf
 ("blackroot_recruits" ,"_",0,0,fac_commoners,0,[(trp_blackroot_vale_archer,1,4)]), #T2
 
-("rohan_recruits"   ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,5)]),
-("isengard_recruits","_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
-("mordor_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3)]), #two T1
-("harad_recruits"   ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,1,1),(trp_far_harad_tribesman,1,1)]), #three T1
-("rhun_recruits"    ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
-("khand_recruits"   ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
-("umbar_recruits"   ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,2,5)]),
-("lorien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,2)]), #two T1
-("imladris_recruits","_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,3),(trp_dunedain_scout,1,2)]), #two T1
-("woodelf_recruits" ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,2,5)]),
-("moria_recruits"   ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,2,5)]),
-("guldur_recruits"  ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,2,5)]),
-("beorn_recruits"   ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,1,3),(trp_woodmen_youth,1,2)]), #two T1
-("gundabad_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,2,5)]),
-("dale_recruits"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
-("dwarf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,1,3),(trp_iron_hills_miner,1,2)]), #T1 and T2
-("dunland_recruits" ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,2,5)]),
+("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,4)]),
+("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,6)]),
+("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
+("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3),(trp_black_numenorean_renegade,0,1),]), #two T1 & prize
+("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3)]), #two T1
+("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_mordor,1,3),(trp_morgul_orc,0,2)]), #T1 T2
+("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,1,1),(trp_far_harad_tribesman,1,2)]), #three T1
+("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
+("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
+("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,2,5)]),
+("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,2)]), #two T1
+("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,3),(trp_dunedain_scout,1,2)]), #two T1
+("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,2,5)]),
+("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,2,5)]),
+("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,2,5)]),
+("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,1,3),(trp_woodmen_youth,1,2)]), #two T1
+("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_goblin_gundabad,2,5)]),
+("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,3,8)]),
+("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
+("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,5)]), #T1 and T2
+("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,4)]), #T1 and T2
+("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,2,5)]),
 
 
 ("caravan_survivors","Caravan Survivors",icon_gray_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),

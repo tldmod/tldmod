@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-229
+235
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -203,7 +203,8 @@ pt_dwarf_reinf_c _ 0 0 1 0 93 1 2 0 88 1 2 0 85 1 2 0 97 1 2 0 -1 -1
 pt_dunland_reinf_a _ 0 0 1 0 268 3 6 0 267 4 8 0 -1 -1 -1 -1 
 pt_dunland_reinf_b _ 0 0 1 0 272 3 6 0 269 2 4 0 -1 -1 -1 -1 
 pt_dunland_reinf_c _ 0 0 1 0 271 1 2 0 273 2 4 0 270 1 2 0 -1 -1 -1 
-pt_gondor_recruits _ 0 0 1 0 101 1 4 0 110 1 1 0 -1 -1 -1 -1 
+pt_gondor_cap_recruits _ 0 0 1 0 101 2 5 0 110 1 1 0 -1 -1 -1 -1 
+pt_gondor_recruits _ 0 0 1 0 101 1 4 0 110 0 1 0 -1 -1 -1 -1 
 pt_pelargir_recruits _ 0 0 1 0 131 1 4 0 -1 -1 -1 -1 -1 
 pt_dol_amroth_recruits _ 0 0 1 0 157 2 4 0 -1 -1 -1 -1 -1 
 pt_lamedon_recruits _ 0 0 1 0 138 2 5 0 -1 -1 -1 -1 -1 
@@ -211,10 +212,13 @@ pt_lossarnach_recruits _ 0 0 1 0 125 2 5 0 -1 -1 -1 -1 -1
 pt_pinnath_recruits _ 0 0 1 0 145 1 4 0 -1 -1 -1 -1 -1 
 pt_ithilien_recruits _ 0 0 1 0 121 1 2 0 -1 -1 -1 -1 -1 
 pt_blackroot_recruits _ 0 0 1 0 151 1 4 0 -1 -1 -1 -1 -1 
-pt_rohan_recruits _ 0 0 1 0 221 2 5 0 -1 -1 -1 -1 -1 
+pt_rohan_recruits _ 0 0 1 0 221 2 4 0 -1 -1 -1 -1 -1 
+pt_rohan_cap_recruits _ 0 0 1 0 221 2 6 0 -1 -1 -1 -1 -1 
 pt_isengard_recruits _ 0 0 1 0 336 1 2 0 314 1 3 0 -1 -1 -1 -1 
+pt_morannon_recruits _ 0 0 1 0 344 1 2 0 358 1 3 0 397 0 1 0 -1 -1 -1 
 pt_mordor_recruits _ 0 0 1 0 344 1 2 0 358 1 3 0 -1 -1 -1 -1 
-pt_harad_recruits _ 0 0 1 0 247 1 3 0 256 1 1 0 263 1 1 0 -1 -1 -1 
+pt_morgul_recruits _ 0 0 1 0 358 1 3 0 364 0 2 0 -1 -1 -1 -1 
+pt_harad_recruits _ 0 0 1 0 247 1 3 0 256 1 1 0 263 1 2 0 -1 -1 -1 
 pt_rhun_recruits _ 0 0 1 0 64 1 4 0 76 1 1 0 -1 -1 -1 -1 
 pt_khand_recruits _ 0 0 1 0 277 2 5 0 -1 -1 -1 -1 -1 
 pt_umbar_recruits _ 0 0 1 0 296 2 5 0 -1 -1 -1 -1 -1 
@@ -225,7 +229,9 @@ pt_moria_recruits _ 0 0 1 0 374 2 5 0 -1 -1 -1 -1 -1
 pt_guldur_recruits _ 0 0 1 0 356 2 5 0 -1 -1 -1 -1 -1 
 pt_beorn_recruits _ 0 0 1 0 38 1 3 0 29 1 2 0 -1 -1 -1 -1 
 pt_gundabad_recruits _ 0 0 1 0 382 2 5 0 -1 -1 -1 -1 -1 
+pt_gundabad_cap_recruits _ 0 0 1 0 382 3 8 0 -1 -1 -1 -1 -1 
 pt_dale_recruits _ 0 0 1 0 47 1 4 0 59 1 1 0 -1 -1 -1 -1 
-pt_dwarf_recruits _ 0 0 1 0 82 1 3 0 96 1 2 0 -1 -1 -1 -1 
+pt_dwarf_recruits _ 0 0 1 0 82 2 5 0 -1 -1 -1 -1 -1 
+pt_dwarf_iron_recruits _ 0 0 1 0 96 1 4 0 -1 -1 -1 -1 -1 
 pt_dunland_recruits _ 0 0 1 0 267 2 5 0 -1 -1 -1 -1 -1 
 pt_caravan_survivors Caravan_Survivors 562949953421314 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 

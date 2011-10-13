@@ -1386,7 +1386,7 @@ center_list = [
 	#    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_merchant_mtirith", "trp_elder", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"],
 	#	[0],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_never),
 ("p_town_minas_tirith", ["scn_minas_tirith_center", "scn_minas_tirith_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_minas_tirith_siege","mesh_town_minas_tirith"],
-	["trp_barman_mtirith", "trp_smith_mtirith", "trp_merchant_mtirith", "trp_elder_mtirith", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"], 
+	["trp_barman_mtirith", "trp_smith_mtirith", "trp_merchant_mtirith", "trp_elder_mtirith", "pt_gondor_cap_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"], 
 	["icon_mfc_gondor"],[2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
 ("p_town_pelargir", ["scn_pelargir_center", "scn_gondor_castle_a", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_pelargir_siege","mesh_town_pelargir"],
 	["trp_barman_pelargir", "trp_smith_pelargir", "trp_merchant_pelargir", "trp_elder_pelargir", "pt_pelargir_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_b"], 
@@ -1426,7 +1426,7 @@ center_list = [
 	["icon_mfc_ethring"],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 # Rohan centers
 ("p_town_edoras", ["scn_edoras_center", "scn_edoras_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_edoras_siege","mesh_town_edoras"],
-	["trp_barman_edoras", "trp_smith_edoras", "trp_merchant_edoras", "trp_elder_edoras", "pt_rohan_recruits", "trp_rohan_lord", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
+	["trp_barman_edoras", "trp_smith_edoras", "trp_merchant_edoras", "trp_elder_edoras", "pt_rohan_cap_recruits", "trp_rohan_lord", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
 	["icon_mfc_rohan"],[900],[2,8,3,4,3,6], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
 ("p_town_aldburg", ["scn_aldburg_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_aldburg_siege", "mesh_ui_default_menu_window"],
 	["trp_barman_aldburg", "trp_smith_aldburg", "trp_merchant_aldburg", "trp_elder_aldburg", "pt_rohan_recruits", "trp_knight_1_9", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
@@ -1448,10 +1448,10 @@ center_list = [
 	["icon_mfc_rohan"],[900],[3,8,4,6,4,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
 # Mordor centers
 ("p_town_morannon", ["scn_morannon_center", "scn_morannon_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", -1,"mesh_town_morannon"],
-	["trp_barman_morannon", "trp_smith_morannon", "trp_merchant_morannon", "trp_elder_morannon", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
+	["trp_barman_morannon", "trp_smith_morannon", "trp_merchant_morannon", "trp_elder_morannon", "pt_morannon_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_mordor"],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_evil_high*2, 1, tld_siegable_capital),
 ("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", -1, "mesh_ui_default_menu_window"],
-	["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_merchant_mmorgul", "trp_elder_mmorgul", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
+	["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_merchant_mmorgul", "trp_elder_mmorgul", "pt_morgul_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_mordor"],[900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_never),
 ("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern", -1, -1, "mesh_town_evilcamp"],
 	["trp_barman_cungol", "trp_smith_orc_patrol", "trp_merchant_orc_patrol", "trp_elder_cungol", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
@@ -1553,7 +1553,7 @@ center_list = [
 	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 # Gundabad camp
 ("p_town_gundabad",     ["scn_gundabad_camp_center", -1, -1,-1, "scn_mordor_arena",-1, "mesh_town_gundabad"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_elder_gunda", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
+	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_elder_gunda", "pt_gundabad_cap_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_capital),
 ("p_town_gundabad_ne_outpost", ["scn_gundabad_ne_outpost_center", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
 	[-1, "trp_no_troop", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
@@ -1574,7 +1574,7 @@ center_list = [
 	["trp_barman_erebor", "trp_smith_erebor", "trp_merchant_erebor", "trp_elder_erebor", "pt_dwarf_recruits", "trp_dwarf_lord", "trp_dwarven_apprentice", "trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_miner"], 
 	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
 ("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1,-1, "mesh_town_goodcamp"],
-	[-1, "trp_smith_ironhill", "trp_merchant_ironhill", "trp_no_troop", "pt_dwarf_recruits", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
+	[-1, "trp_smith_ironhill", "trp_merchant_ironhill", "trp_no_troop", "pt_dwarf_iron_recruits", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
 	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
 	
 # Advance camps
