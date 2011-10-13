@@ -299,11 +299,17 @@ simple_triggers = [
      (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
 		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+         # TLD: Always upgrade volunteers in friendly towns (slowly!)
+         (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
+         (gt, ":volunteers", 0),
+         (party_is_active, ":volunteers"),
+         (party_upgrade_with_xp, ":volunteers", 100),
+         # Town garrison
          (store_random_in_range, ":rand", 0, 100),
-         (lt, ":rand", 10),
+         (lt, ":rand", 10), # 10% chance every two days
          (party_get_slot, ":center_lord", ":center_no", slot_town_lord),
          (neq, ":center_lord", "trp_player"),
-         #(party_upgrade_with_xp, ":center_no", 3000),
+         (party_upgrade_with_xp, ":center_no", 3000),
      (try_end),
     ]),
 
@@ -1091,8 +1097,8 @@ simple_triggers = [
 	(quest_get_slot, ":quest_target_party", "qst_kill_troll", slot_quest_target_party),
 	(neg|party_is_active, ":quest_target_party"),
 	(quest_get_slot, ":quest_object_center", "qst_kill_troll", slot_quest_object_center),
-	(str_store_party_name,2,":quest_object_center"),
-	(display_message, "@Troll outside {s2} was killed. Mission canceled."),
+	(str_store_party_name,s2,":quest_object_center"),
+	(display_message, "@The troll outside {s2} was killed. Mission canceled."),
 	(cancel_quest, "qst_kill_troll"),
 ]),
 	

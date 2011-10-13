@@ -4050,14 +4050,14 @@ game_menus = [
        (call_script, "script_print_casualties_to_s0", "p_ally_casualties", 0),
        (str_store_string, s10, "@^^Ally Casualties:{s0}"),
      (try_end),
-	 # kill troll quest (mtarini)
-     (try_begin),
-       (check_quest_active, "qst_kill_troll"),
-       (eq, "$g_battle_result", 1),
-	   (quest_get_slot, ":quest_object_troop","qst_kill_troll", slot_quest_target_party),
-	   (eq, ":quest_object_troop", "$g_enemy_party"),
-	   (call_script, "script_succeed_quest", "qst_kill_troll"),
-     (try_end),
+	 # # kill troll quest (mtarini)
+     # (try_begin),
+       # (check_quest_active, "qst_kill_troll"),
+       # (eq, "$g_battle_result", 1),
+	   # (quest_get_slot, ":quest_object_troop","qst_kill_troll", slot_quest_target_party),
+	   # (eq, ":quest_object_troop", "$g_enemy_party"),
+	   # (call_script, "script_succeed_quest", "qst_kill_troll"),
+     # (try_end),
     ],
 	[
 	 #options for players:
@@ -4374,6 +4374,23 @@ game_menus = [
               (eq, ":amount", 0),
               (call_script, "script_abort_quest", "qst_escort_messenger", 1),
               #(call_script, "script_change_player_honor", -5),
+            (try_end),
+            
+            # kill troll quest
+            (try_begin),
+              (check_quest_active, "qst_kill_troll"),
+              (quest_get_slot, ":troll_party", "qst_kill_troll", slot_quest_target_party),
+              (try_begin),
+                (eq, ":troll_party", "$g_enemy_party"),
+                (call_script, "script_succeed_quest", "qst_kill_troll"),
+              (else_try),
+                (party_get_num_attached_parties, ":num_attached_parties",  "$g_enemy_party"),
+                (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
+                  (party_get_attached_party_with_rank, ":attached_party", "$g_enemy_party", ":attached_party_rank"),
+                  (eq, ":troll_party", ":attached_party"),
+                  (call_script, "script_succeed_quest", "qst_kill_troll"),
+                (try_end),
+              (try_end),
             (try_end),
             
             (leave_encounter),

@@ -5347,6 +5347,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 	  (party_relocate_near_party, ":quest_target_party", ":quest_object_center"),
 	  (quest_set_slot, "$random_quest_no", slot_quest_target_party, ":quest_target_party"),
 	  (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
+      (party_set_slot, ":quest_target_party", slot_party_ai_object, ":quest_object_center"),
+      (party_set_slot, ":quest_target_party", slot_party_ai_state, spai_undefined),
+      (party_set_ai_behavior, ":quest_target_party", ai_bhvr_patrol_location),
+      (party_set_ai_patrol_radius, ":quest_target_party", 10),
 	  # (str_store_troop_name,s1,"$g_talk_troop"),
 	  # (str_store_party_name,s2,"$g_encountered_party"),
 	  (str_store_troop_name_link,s9,"$g_talk_troop"),
@@ -8957,7 +8961,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" )]],
 
 [anyone|plyr,"party_encounter_friend", [
-        (gt,"$tld_war_began",0),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
           (str_store_string, s4, "@Greetings, do you need reinforcements?"),
@@ -8986,6 +8989,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (try_end)],
 "{s4}", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)]],
 
+[anyone,"party_reinforce", [
+     #War not started
+     (eq,"$tld_war_began",0),],
+"We haven't seen much enemy activity yet. Maybe later, thanks.", "party_reinforce_end", []],
 [anyone,"party_reinforce", [
      #prevent some exploitation by placing caps on party size
      (assign, ":party_limit", 80),

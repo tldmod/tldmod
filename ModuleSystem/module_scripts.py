@@ -1272,7 +1272,7 @@ scripts = [
 	(party_set_slot, center_list[x][0], slot_town_barman          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_weaponsmith     , center_list[x][2][1]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_merchant        , center_list[x][2][2]) for x in range(len(center_list)) ]+[
-	(party_set_slot, center_list[x][0], slot_town_reinf_pt        , center_list[x][2][4]) for x in range(len(center_list)) ]+[
+	(party_set_slot, center_list[x][0], slot_town_recruits_pt     , center_list[x][2][4]) for x in range(len(center_list)) ]+[
 	#walker types
 	(party_set_slot, center_list[x][0], slot_center_walker_0_troop, center_list[x][2][6]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_center_walker_1_troop, center_list[x][2][7]) for x in range(len(center_list)) ]+[
@@ -1694,27 +1694,41 @@ scripts = [
 	(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
 	(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
 	(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
+    (store_add, ":target_size", ":vol_total", ":to_add"),
 
+    (party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
 	(try_begin),
 		(gt, ":to_add", 0), # add volunteers!
-		(try_for_range, ":unused", 0, ":to_add"),
-			# select three potential volunteers
-			(call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol0", reg0),  # can fail
-			(call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol1", reg0),  # can fail
-			(call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol2", reg0),  # can fail
-			# select lower in grade
-			(store_character_level, ":lvl0", ":vol0"),
-			(store_character_level, ":lvl1", ":vol1"),
-			(store_character_level, ":lvl2", ":vol2"),
-			(try_begin), (lt, ":lvl1",":lvl0"), (assign,":vol0",":vol1"),(assign,":lvl0",":lvl1"),  (try_end),
-			(try_begin), (store_random_in_range, ":tmp", 1,101), (le, ":tmp", 66),
-			   (lt, ":lvl2",":lvl0"), (assign,":vol0",":vol2"),(try_end), 
-			# move the guy from garrison to volunteers
-			(party_remove_members_wounded_first, ":town", ":vol0", 1),
-			(party_add_members, ":volunteers", ":vol0", 1),
+        # this is to simulate slower growth for smaller templates (e.g. rangers)
+        (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
+		(try_for_range, ":unused", 0, ":reinf_rounds"),
+            (try_begin),
+              (store_party_size, ":current_size", ":volunteers"),
+              (le, ":target_size", ":current_size"),
+              (assign, ":reinf_rounds", 0), #stop reinforcing if already too many
+            (else_try),
+              (party_add_template, ":volunteers", ":recruit_template"),
+            (try_end),
+
+            #old code using garrison troops
+			# # select three potential volunteers
+			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol0", reg0),  # can fail
+			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol1", reg0),  # can fail
+			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol2", reg0),  # can fail
+			# # select lower in grade
+			# (store_character_level, ":lvl0", ":vol0"),
+			# (store_character_level, ":lvl1", ":vol1"),
+			# (store_character_level, ":lvl2", ":vol2"),
+			# (try_begin), (lt, ":lvl1",":lvl0"), (assign,":vol0",":vol1"),(assign,":lvl0",":lvl1"),  (try_end),
+			# (try_begin), (store_random_in_range, ":tmp", 1,101), (le, ":tmp", 66),
+			   # (lt, ":lvl2",":lvl0"), (assign,":vol0",":vol2"),(try_end), 
+			# # move the guy from garrison to volunteers
+			# (party_remove_members_wounded_first, ":town", ":vol0", 1),
+			# (party_add_members, ":volunteers", ":vol0", 1),
 		(try_end),
+        (store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
 	(else_try),
-		(lt, ":to_add", 0), # remove volunteers!
+		(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison
 		(val_mul, ":to_add", -1),
 		(try_for_range, ":unused", 0, ":to_add"),
 			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
@@ -1729,7 +1743,7 @@ scripts = [
       (gt, ":ideal_size", ":vol_total"), #only if needed
       (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
       (gt, ":puny_orc", 0),
-      (party_add_members, ":volunteers", ":puny_orc", 4),
+      (party_add_members, ":volunteers", ":puny_orc", 2),
 	(try_end),
    (try_end),
 ]),
@@ -5400,7 +5414,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_deliver_iron"),
+		#(assign, ":quest_no", "qst_kill_troll"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -7263,8 +7277,8 @@ scripts = [
       (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_merchant),
       (party_set_slot, ":center_no", slot_town_merchant, ":value"),
-      (party_get_slot, ":value", ":capital", slot_town_reinf_pt),
-      (party_set_slot, ":center_no", slot_town_reinf_pt, ":value"),
+      (party_get_slot, ":value", ":capital", slot_town_recruits_pt),
+      (party_set_slot, ":center_no", slot_town_recruits_pt, ":value"),
       (party_get_slot, ":value", ":capital", slot_center_walker_0_troop),
       (party_set_slot, ":center_no", slot_center_walker_0_troop, ":value"),
       (party_get_slot, ":value", ":capital", slot_center_walker_1_troop),

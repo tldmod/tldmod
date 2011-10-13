@@ -43,7 +43,7 @@ party_templates = [
 # ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-("wild_troll"      ,"Wild Troll"     ,icon_wild_troll|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,2),]),
+("wild_troll"      ,"Wild Troll"     ,icon_wild_troll|pf_quest_party,0,fac_commoners,bandit_personality,[(trp_troll_of_moria,1,2),]),
 ("raging_trolls"   ,"Raging Trolls"  ,icon_wild_troll|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
 ("looters"         ,"Tribal Orcs"    ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
 ("forest_bandits"  ,"Orc Stragglers" ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
@@ -325,6 +325,39 @@ party_templates = [
 ("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_dunnish_warrior,3,6),(trp_dunnish_wildman,4,8),]),
 ("dunland_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_dunnish_vet_warrior,3,6),(trp_dunnish_pikeman,2,4),]),
 ("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_dunnish_raven_rider,1,2),(trp_dunnish_wolf_warrior,2,4),(trp_dunnish_veteran_pikeman,1,2),]),
+
+#Volunteer templates
+#MV guidelines:
+#  - A mix of T1 (tier 1) troops, size 2-5 (if there are no T1, use fewer T2)
+#  - Ideally the starting troops from each faction subtree
+
+("gondor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_gondor_commoner,1,4),(trp_gondor_noblemen,1,1)]),
+("pelargir_recruits"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_watchman,1,4)]), #T2
+("dol_amroth_recruits","_",0,0,fac_commoners,0,[(trp_dol_amroth_youth,2,4)]), #Cavalry line nerf
+("lamedon_recruits"   ,"_",0,0,fac_commoners,0,[(trp_clansman_of_lamedon,2,5)]),
+("lossarnach_recruits","_",0,0,fac_commoners,0,[(trp_woodsman_of_lossarnach,2,5)]),
+("pinnath_recruits"   ,"_",0,0,fac_commoners,0,[(trp_pinnath_gelin_plainsman,1,4)]), #T2
+("ithilien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_ranger_of_ithilien,1,2)]), #T4! nerf
+("blackroot_recruits" ,"_",0,0,fac_commoners,0,[(trp_blackroot_vale_archer,1,4)]), #T2
+
+("rohan_recruits"   ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,5)]),
+("isengard_recruits","_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
+("mordor_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3)]), #two T1
+("harad_recruits"   ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,1,1),(trp_far_harad_tribesman,1,1)]), #three T1
+("rhun_recruits"    ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
+("khand_recruits"   ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
+("umbar_recruits"   ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,2,5)]),
+("lorien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,2)]), #two T1
+("imladris_recruits","_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,3),(trp_dunedain_scout,1,2)]), #two T1
+("woodelf_recruits" ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,2,5)]),
+("moria_recruits"   ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,2,5)]),
+("guldur_recruits"  ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,2,5)]),
+("beorn_recruits"   ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,1,3),(trp_woodmen_youth,1,2)]), #two T1
+("gundabad_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,2,5)]),
+("dale_recruits"    ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
+("dwarf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,1,3),(trp_iron_hills_miner,1,2)]), #T1 and T2
+("dunland_recruits" ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,2,5)]),
+
 
 ("caravan_survivors","Caravan Survivors",icon_gray_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
 ]
