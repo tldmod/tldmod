@@ -1,5 +1,5 @@
 itemsfile version 2
-881
+882
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -1509,10 +1509,13 @@ itemsfile version 2
  itm_dunnish_war_axe Dunnish_War_Axe Dunnish_War_Axe 1  dunland_axe_a 0  80019460 9223388530091229198 500 286870 2.000000 100 0 0 0 0 40960 97 0 47 0 256 40
 0
 
- itm_dunnish_axe Dunnish_Battle_Axe Dunnish_Battle_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 500 286870 2.000000 100 0 0 0 0 35840 100 0 34 0 256 35
+ itm_dunnish_axe Dunnish_Axe Dunnish_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 500 286870 2.000000 100 0 0 0 0 35840 100 0 34 0 256 35
 0
 
- itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 201326848 125 271496 3.000000 100 0 0 0 0 16384 95 0 205 0 282 528
+ itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  138772484 4222124851986688 125 271496 2.000000 100 0 0 0 0 12288 95 0 150 0 276 524
+0
+
+ itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 201326848 400 271496 3.000000 100 0 0 0 0 16384 85 0 205 0 282 528
 0
 
  itm_rohan_armor_a Rohan_Shirt Rohan_Shirt 1  L_roh_shirt_M1 0  16842765 0 200 123731968 2.000000 100 0 3 2 0 0 0 0 0 0 0 0
@@ -1823,7 +1826,7 @@ itemsfile version 2
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 286870 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
 0
 
- itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  138772484 4222124851987200 300 271496 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  138772484 4222124851987200 200 271496 2.000000 100 0 0 0 0 10240 100 0 132 0 276 522
 0
 
  itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  138772484 4222124851987200 300 271496 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
@@ -1832,37 +1835,37 @@ itemsfile version 2
  itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 6442450944 500 251658402 3.000000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  327687 6442450944 800 251658402 4.000000 100 0 10 0 0 900 80 0 90 0 0 0
 0
 
- itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
+ itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
  itm_harad_shield_a Harondor_Shield Harondor_Shield 1  harad_shield_a 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
 0
 
- itm_harad_shield_b Harondor_Buckler Harondor_Buckler 1  harad_shield_b 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_shield_b Harondor_Buckler Harondor_Buckler 1  harad_shield_b 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 40 0 0 0
 0
 
- itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 40 0 0 0
 0
 
- itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
 0
 
- itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
 0
 
- itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 500 251658402 2.500000 100 0 8 0 0 600 82 0 50 0 0 0
 0
 
  itm_desert_boots Desert_Boots Desert_Boots 1  desert_boots 0  69390 0 200 123731968 1.000000 100 0 0 10 0 0 0 0 0 0 0 0

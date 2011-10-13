@@ -53,9 +53,9 @@ party_templates = [
 
 ("deserters","Deserters",icon_axeman|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 
-("merchant_caravan","Merchant Caravan",icon_gray_knight|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
-("troublesome_bandits","Troublesome Goblins",icon_axeman|carries_goods(9)|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,14,55)]),
-("fangorn_orcs","Tree-chopping Orcs",icon_axeman|carries_goods(9)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_tracker,8,13),(trp_uruk_snaga_of_isengard,12,24)]),
+("merchant_caravan","Merchant Caravan",icon_mule|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
+("troublesome_bandits","Troublesome Goblins",icon_orc_tribal|carries_goods(9)|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,14,55)]),
+("fangorn_orcs","Tree-chopping Orcs",icon_orc_x4|carries_goods(9)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_tracker,8,13),(trp_uruk_snaga_of_isengard,12,24)]),
 # ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_brigand,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
 # ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
 
@@ -72,9 +72,9 @@ party_templates = [
 #MV: in general, average strength should be 30-60 (except Beornings who have scouts only)
 ("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_squire_of_gondor,1,1),(trp_bowmen_of_gondor,3,7),(trp_gondor_militiamen,3,7)]), #34-74
 ("blackroot_auxila","Blackroot Vale Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_master_blackroot_vale_archer,1,1),(trp_veteran_blackroot_vale_archer,0,3),(trp_blackroot_vale_archer,4,7)]), #32-71
-("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_axeman     |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_warrior_of_lamedon,1,1),(trp_veteran_of_lamedon,1,5),(trp_footman_of_lamedon,4,8)]), #31-71
-("lossarnach_auxila"   ,"Lossarnach Auxilia",icon_axeman     |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_heavy_lossarnach_axeman,1,1),(trp_vet_axeman_of_lossarnach,0,3),(trp_axeman_of_lossarnach,2,6),(trp_woodsman_of_lossarnach,4,10)]), #25-71
-("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_axeman  |carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_gelin_bowman,1,3),(trp_pinnath_gelin_spearman,1,2),(trp_pinnath_gelin_plainsman,3,6)]), #30-69
+("lamedon_auxila"      ,"Lamedon Auxilia"   ,icon_footman_lamedon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_warrior_of_lamedon,1,1),(trp_veteran_of_lamedon,1,5),(trp_footman_of_lamedon,4,8)]), #31-71
+("lossarnach_auxila"   ,"Lossarnach Auxilia",icon_lossarnach_axeman_icon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_heavy_lossarnach_axeman,1,1),(trp_vet_axeman_of_lossarnach,0,3),(trp_axeman_of_lossarnach,2,6),(trp_woodsman_of_lossarnach,4,10)]), #25-71
+("pinnath_gelin_auxila","Pinnath Gelin Auxilia",  icon_lalala|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_gelin_bowman,1,3),(trp_pinnath_gelin_spearman,1,2),(trp_pinnath_gelin_plainsman,3,6)]), #30-69
 ("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_veteran_ranger_of_ithilien,1,3),(trp_ranger_of_ithilien,3,6)]), #43-102 more punch for rangers, elites operating in enemy territory
 
 ("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_elite_skirmisher_of_rohan,1,1),(trp_veteran_skirmisher_of_rohan,1,4),(trp_skirmisher_of_rohan,3,5)]), #43-82 rohan good at scouting
@@ -93,11 +93,11 @@ party_templates = [
 ("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_black_snake_horse_archer,1,1),(trp_harad_horse_archer,1,4),(trp_harondor_scout,4,8)]), #31-65
 ("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_dunnish_raven_rider,5,10)]), #20-40 fast weaklings
 ("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_corsair_veteran_raider,1,1),(trp_marksman_of_umbar,2,4),(trp_militia_of_umbar,3,7)]), #33-61
-("khand_scouts"     ,"Easterling Scouts",icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_veteran_skirmisher,1,1),(trp_easterling_horseman,2,4),(trp_easterling_rider,3,6)]), #33-57 fast and capable
+("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_veteran_skirmisher,1,1),(trp_easterling_horseman,2,4),(trp_easterling_rider,3,6)]), #33-57 fast and capable
 ("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_bolg_clan_rider,1,1),(trp_warg_rider_of_moria,2,5),(trp_wolf_rider_of_moria,3,6)]), #27-51 fast
 ("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_fell_morgul_orc,1,2),(trp_morgul_orc,8,15)]), #32-61
 ("gundabad_scouts"  ,"Gundabad Scouts"     ,icon_orc_tribal      |carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_goblin_north_clan_rider,1,1),(trp_warg_rider_gundabad,2,5),(trp_goblin_rider_gundabad,4,7)]), #30-54 fast
-("rhun_scouts"      ,"Rhun Scouts"         ,icon_vaegir_knight   |carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,1),(trp_rhun_swift_horseman,2,5),(trp_rhun_horse_scout,4,7)]), #34-64 fast and capable
+("rhun_scouts"      ,"Rhun Scouts"         ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,1),(trp_rhun_swift_horseman,2,5),(trp_rhun_horse_scout,4,7)]), #34-64 fast and capable
  
 ####TLD Raiders
 #MV: in general, average strength should be 80-160, good sides weaker, evil stronger (foraging vs. raiding)
@@ -121,7 +121,7 @@ party_templates = [
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_fell_goblin_archer_of_moria,1,1),(trp_large_goblin_archer_of_moria,3,9),(trp_large_goblin_of_moria,5,15),(trp_archer_snaga_of_moria,8,16)]), #72-176
 ("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,4,10),(trp_orc_of_guldur,8,16),(trp_orc_archer_of_mordor,8,16),(trp_orc_snaga_of_guldur,15,30)]), #91-184
 ("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_goblin_north_clan_rider,1,1),(trp_keen_eyed_goblin_archer_gundabad,5,10),(trp_goblin_bowmen_gundabad,10,15),(trp_orc_gundabad,10,20)]), #93-163
-("rhun_raiders"    ,"Rhun Raiders"      ,icon_gray_knight   |carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_rhun_heavy_noble_cavalry,1,1),(trp_rhun_horse_archer,6,12),(trp_rhun_light_cavalry,8,16)]), #100-184
+("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_rhun_heavy_noble_cavalry,1,1),(trp_rhun_horse_archer,6,12),(trp_rhun_light_cavalry,8,16)]), #100-184
 
 
 ####TLD Patrols
@@ -139,11 +139,11 @@ party_templates = [
 ("pelargir_patrol","Gondor Patrol"    ,icon_footman_gondor |carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_pelargir_leader,1,1),(trp_pelargir_vet_marine,3,8),(trp_pelargir_vet_infantry,3,8),(trp_pelargir_marine,6,14),(trp_pelargir_infantry,6,14)]), #229-533
 ("lossarnach_patrol","Gondor Patrol",icon_lossarnach_axeman_icon|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_lossarnach_leader,1,1),(trp_axemaster_of_lossarnach,3,8),(trp_heavy_lossarnach_axeman,4,10),(trp_archer_of_gondor,8,20),(trp_axeman_of_lossarnach,8,20)]), #213-503
 ("brv_patrol"     ,"Gondor Patrol"    ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_blackroot_leader,1,1),(trp_master_blackroot_vale_archer,4,8),(trp_veteran_blackroot_vale_archer,6,12),(trp_footman_of_blackroot_vale,8,16),(trp_blackroot_vale_archer,10,20)]), #255-485
-("pinnath_patrol" ,"Gondor Patrol"    ,icon_footman_gondor |carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_pinnath_leader,1,1),(trp_pinnath_gelin_archer,3,6),(trp_warrior_of_pinnath_gelin,3,6),(trp_pinnath_gelin_bowman,6,16),(trp_pinnath_gelin_spearman,8,20)]), #247-541
+("pinnath_patrol" ,"Gondor Patrol"    ,icon_lalala         |carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_pinnath_leader,1,1),(trp_pinnath_gelin_archer,3,6),(trp_warrior_of_pinnath_gelin,3,6),(trp_pinnath_gelin_bowman,6,16),(trp_pinnath_gelin_spearman,8,20)]), #247-541
 ("lamedon_patrol" ,"Gondor Patrol"   ,icon_lamedon_horseman|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_lamedon_leader,1,1),(trp_knight_of_lamedon,3,6),(trp_champion_of_lamedon,3,6),(trp_warrior_of_lamedon,8,20),(trp_veteran_of_lamedon,10,24)]), #253-541
 
 # Used as patrols, except Dale 
-("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x6          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,1,2),(trp_large_uruk_of_mordor,10,22),(trp_large_orc_archer_of_mordor,10,22),(trp_uruk_of_mordor,16,36),(trp_orc_of_mordor,20,40),(trp_orc_archer_of_mordor,20,40)]), #310-658
+("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,1,2),(trp_large_uruk_of_mordor,10,22),(trp_large_orc_archer_of_mordor,10,22),(trp_uruk_of_mordor,16,36),(trp_orc_of_mordor,20,40),(trp_orc_archer_of_mordor,20,40)]), #310-658
 ("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_urukhai_standard_bearer,1,2),(trp_fighting_uruk_hai_berserker,2,4),(trp_fighting_uruk_hai_champion,2,4),(trp_fighting_uruk_hai_tracker,10,20),(trp_large_uruk_hai_of_isengard,15,30),(trp_wolf_rider_of_isengard,5,10)]), #275-550
 ("harad_war_party"   ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,2,4),(trp_fang_heavy_cavalry,2,4),(trp_gold_serpent_horse_archer,2,4),(trp_harad_archer,8,16),(trp_harondor_rider,10,20),(trp_harad_desert_warrior,20,40)]), #268-536
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_dunnish_wolf_guard,2,4),(trp_dunnish_veteran_pikeman,6,12),(trp_dunnish_warrior,12,24),(trp_dunnish_raven_rider,10,20),(trp_dunnish_wildman,20,50)]), #214-448 weak
