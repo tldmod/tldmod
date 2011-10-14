@@ -301,9 +301,11 @@ simple_triggers = [
 		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          # TLD: Always upgrade volunteers in friendly towns (slowly!)
          (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
-         (gt, ":volunteers", 0),
-         (party_is_active, ":volunteers"),
-         (party_upgrade_with_xp, ":volunteers", 100),
+         (try_begin),
+           (gt, ":volunteers", 0),
+           (party_is_active, ":volunteers"),
+           (party_upgrade_with_xp, ":volunteers", 100), #negotiable
+         (try_end),
          # Town garrison
          (store_random_in_range, ":rand", 0, 100),
          (lt, ":rand", 10), # 10% chance every two days
