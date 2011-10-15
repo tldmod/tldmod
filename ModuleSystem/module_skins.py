@@ -237,8 +237,7 @@ skins = [
   ( "woman", skf_use_morph_key_30,
     "woman_body",  "woman_calf_l", "f_handL",
     "female_head", woman_face_keys,
-    ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s"], #woman_hair_meshes
-#    ["woman_hair_a","woman_hair_b","woman_hair_c","woman_hair_d","woman_hair_e","woman_hair_f","woman_hair_g"], #woman_hair_meshes
+    ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s","elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","elf_hair_6", "elf_hair_7","elf_hair_5","elf_hair_8"], #woman_hair_meshes
     [],
     ["hair_blonde"], #hair textures
     [],
@@ -334,7 +333,7 @@ skins = [
      ("wildman_face_b"    ,0xffc0c8c8,["hair_blonde"],[0xff171313, 0xff07080c]),
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_dunlender_yell"),(voice_victory,"snd_dunlender_victory")], #voice sounds
-    "skel_human", 0.8,
+    "skel_human", 0.9,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)
      [0.3, comp_less_than, (1.0,face_width), (1.0,temple_width)],
@@ -643,7 +642,7 @@ skins = [
 
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
-    "skel_human", 1.0,
+    "skel_human", 0.95,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)
      [0.3, comp_less_than, (1.0,face_width), (1.0,temple_width)],
