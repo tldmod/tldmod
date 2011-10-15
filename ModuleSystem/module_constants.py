@@ -124,6 +124,7 @@ slot_agent_troll_swing_status     = 13
 slot_agent_troll_swing_move       = 14
 slot_agent_last_hp		          = 15
 slot_agent_mount_side		      = 16 # a mount has the side as its rider
+slot_agent_mount_dead			  = 17
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -1011,6 +1012,9 @@ mayors_end             = "trp_village_1_elder"
 average_price_factor = 1000
 minimum_price_factor = 100
 maximum_price_factor = 10000
+
+item_horse_begin = "itm_sumpter_horse"
+item_horse_end = "itm_warg_1b"
 
 item_warg_begin = "itm_warg_1b"
 item_warg_end = "itm_troll_feet_boots"

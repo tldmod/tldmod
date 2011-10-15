@@ -263,5 +263,9 @@ snd_meeting_elf = 261
 snd_meeting_uruk = 262
 snd_meeting_man = 263
 snd_meeting_orc = 264
+snd_neigh1 = 265
+snd_horse_snort1 = 266
+snd_horse_low_whinny1 = 267
+snd_mount_death = 268
 
 

@@ -120,7 +120,7 @@ sounds = [
 
 ("hide",0, ["s_hide.wav"]),
 ("unhide",0, ["s_unhide.wav"]),
-("neigh",0, ["horse_exterior_whinny_01.wav","horse_exterior_whinny_02.wav","horse_exterior_whinny_03.wav","horse_exterior_whinny_04.wav","horse_exterior_whinny_05.wav","horse_whinny.wav"]),
+("neigh",0, ["silence.wav"]),
 ("gallop",sf_vol_3, ["horse_gallop_3.wav","horse_gallop_4.wav","horse_gallop_5.wav"]),
 ("battle",sf_vol_4, ["battle.ogg"]),
 ("arrow_hit_body",sf_priority_4, ["arrow_hit_body_1.wav","arrow_hit_body_2.wav","arrow_hit_body_3.wav"]),
@@ -152,8 +152,8 @@ sounds = [
 ("horse_canter",sf_priority_3|sf_vol_6, ["horse_canter_1.wav","horse_canter_2.wav","horse_canter_3.wav","horse_canter_4.wav"]),
 ("horse_gallop",sf_priority_3|sf_vol_8, ["horse_gallop_6.wav","horse_gallop_7.wav","horse_gallop_8.wav","horse_gallop_9.wav"]),
 ("horse_breath",sf_priority_3|sf_vol_10,["horse_breath_4.wav","horse_breath_5.wav","horse_breath_6.wav","horse_breath_7.wav"]),
-("horse_snort" ,sf_priority_5|sf_vol_7, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
-("horse_low_whinny",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
+("horse_snort" ,sf_priority_5|sf_vol_7, ["silence.wav"]),
+("horse_low_whinny",          sf_vol_9, ["silence.wav"]),
 ("block_fist",0, ["block_fist_3.ogg","block_fist_4.ogg"]),
 ("man_hit_blunt_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_blunt_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
@@ -320,4 +320,8 @@ sounds = [
 ("meeting_man",sf_priority_6|sf_vol_4, ["man_shortyell_6.wav","man_shortyell_5.wav","man_shortyell_4.wav","man_yell_b_23.wav","man_yell_16.wav","man_yell_4_2.wav","man_yell_13.wav"]),
 ("meeting_orc",sf_priority_6|sf_vol_4, ["orc_grunt_1.wav", "orc_grunt_long_1.wav", "orc_yell_1.wav","orc_yell_2.wav"]),
  ##TLD end 
+("neigh1",0, ["horse_exterior_whinny_01.wav","horse_exterior_whinny_02.wav","horse_exterior_whinny_03.wav","horse_exterior_whinny_04.wav","horse_exterior_whinny_05.wav","horse_whinny.wav"]),
+("horse_snort1" ,sf_priority_5|sf_vol_7, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
+("horse_low_whinny1",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
+("mount_death", sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
 ]

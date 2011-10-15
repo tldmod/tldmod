@@ -137,12 +137,7 @@ soundsfile version 2
  shield_broken.wav 144
  s_hide.wav 0
  s_unhide.wav 0
- horse_exterior_whinny_01.wav 0
- horse_exterior_whinny_02.wav 0
- horse_exterior_whinny_03.wav 0
- horse_exterior_whinny_04.wav 0
- horse_exterior_whinny_05.wav 0
- horse_whinny.wav 0
+ silence.wav 0
  horse_gallop_3.wav 768
  horse_gallop_4.wav 768
  horse_gallop_5.wav 768
@@ -229,13 +224,6 @@ soundsfile version 2
  horse_breath_5.wav 2608
  horse_breath_6.wav 2608
  horse_breath_7.wav 2608
- horse_snort_1.wav 1872
- horse_snort_2.wav 1872
- horse_snort_3.wav 1872
- horse_snort_4.wav 1872
- horse_snort_5.wav 1872
- horse_whinny-1.wav 2304
- horse_whinny-2.wav 2304
  block_fist_3.ogg 0
  block_fist_4.ogg 0
  man_hit_13.wav 2640
@@ -528,7 +516,6 @@ soundsfile version 2
  dwarf_06.wav 2144
  dwarf_07.wav 2144
  dwarf_09.wav 2144
- silence.wav 2640
  dwarf8.wav 2640
  troll_death_1.wav 160
  troll_hit_1.wav 2672
@@ -645,7 +632,20 @@ soundsfile version 2
  osgiliath01.wav 1153
  osgiliath03.wav 1153
  gondor_army.wav 1153
-265
+ horse_exterior_whinny_01.wav 0
+ horse_exterior_whinny_02.wav 0
+ horse_exterior_whinny_03.wav 0
+ horse_exterior_whinny_04.wav 0
+ horse_exterior_whinny_05.wav 0
+ horse_whinny.wav 0
+ horse_snort_1.wav 1872
+ horse_snort_2.wav 1872
+ horse_snort_3.wav 1872
+ horse_snort_4.wav 1872
+ horse_snort_5.wav 1872
+ horse_whinny-1.wav 2304
+ horse_whinny-2.wav 2304
+269
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -752,162 +752,166 @@ snd_shield_hit_metal_wood 2672 3 131 132 133
 snd_shield_broken 144 1 134 
 snd_hide 0 1 135 
 snd_unhide 0 1 136 
-snd_neigh 0 6 137 138 139 140 141 142 
-snd_gallop 768 3 143 144 145 
-snd_battle 1024 1 146 
-snd_arrow_hit_body 64 3 147 148 149 
-snd_metal_hit_low_armor_low_damage 2384 3 150 151 152 
-snd_metal_hit_low_armor_high_damage 2384 3 153 154 155 
-snd_metal_hit_high_armor_low_damage 2384 3 156 157 158 
-snd_metal_hit_high_armor_high_damage 2384 3 159 160 161 
-snd_wooden_hit_low_armor_low_damage 2384 3 162 163 164 
-snd_wooden_hit_low_armor_high_damage 2384 3 165 166 167 
-snd_wooden_hit_high_armor_low_damage 2384 2 168 169 
-snd_wooden_hit_high_armor_high_damage 2384 3 165 166 167 
-snd_blunt_hit 2384 4 170 171 171 172 
-snd_player_hit_by_arrow 2720 1 173 
-snd_pistol_shot 2720 1 174 
-snd_encounter_looters 1281 5 175 176 177 178 179 
-snd_encounter_bandits 1281 7 180 181 182 183 184 185 186 
-snd_encounter_farmers 1281 4 187 188 189 190 
-snd_encounter_sea_raiders 1281 4 191 192 193 194 
-snd_encounter_steppe_bandits 1281 5 195 196 197 198 199 
-snd_encounter_nobleman 1281 1 200 
-snd_encounter_vaegirs_ally 1281 2 201 202 
-snd_encounter_vaegirs_neutral 1281 4 203 204 205 206 
-snd_encounter_vaegirs_enemy 1281 4 203 204 205 206 
-snd_sneak_town_halt 1 2 207 208 
-snd_horse_walk 2352 4 209 210 211 212 
-snd_horse_trot 1072 4 213 214 215 216 
-snd_horse_canter 1584 4 217 218 219 220 
-snd_horse_gallop 2096 4 221 222 223 224 
-snd_horse_breath 2608 4 225 226 227 228 
-snd_horse_snort 1872 5 229 230 231 232 233 
-snd_horse_low_whinny 2304 2 234 235 
-snd_block_fist 0 2 236 237 
-snd_man_hit_blunt_weak 2640 5 238 239 240 241 242 
-snd_man_hit_blunt_strong 2640 5 238 239 240 241 242 
-snd_man_hit_pierce_weak 2640 5 238 239 240 241 242 
-snd_man_hit_pierce_strong 2640 5 238 239 240 241 242 
-snd_man_hit_cut_weak 2640 5 238 239 240 241 242 
-snd_man_hit_cut_strong 2640 5 238 239 240 241 242 
-snd_man_victory 2640 10 243 244 245 246 247 248 249 250 251 252 
-snd_fire_loop 1174 1 253 
-snd_torch_loop 1174 1 253 
+snd_neigh 0 1 137 
+snd_gallop 768 3 138 139 140 
+snd_battle 1024 1 141 
+snd_arrow_hit_body 64 3 142 143 144 
+snd_metal_hit_low_armor_low_damage 2384 3 145 146 147 
+snd_metal_hit_low_armor_high_damage 2384 3 148 149 150 
+snd_metal_hit_high_armor_low_damage 2384 3 151 152 153 
+snd_metal_hit_high_armor_high_damage 2384 3 154 155 156 
+snd_wooden_hit_low_armor_low_damage 2384 3 157 158 159 
+snd_wooden_hit_low_armor_high_damage 2384 3 160 161 162 
+snd_wooden_hit_high_armor_low_damage 2384 2 163 164 
+snd_wooden_hit_high_armor_high_damage 2384 3 160 161 162 
+snd_blunt_hit 2384 4 165 166 166 167 
+snd_player_hit_by_arrow 2720 1 168 
+snd_pistol_shot 2720 1 169 
+snd_encounter_looters 1281 5 170 171 172 173 174 
+snd_encounter_bandits 1281 7 175 176 177 178 179 180 181 
+snd_encounter_farmers 1281 4 182 183 184 185 
+snd_encounter_sea_raiders 1281 4 186 187 188 189 
+snd_encounter_steppe_bandits 1281 5 190 191 192 193 194 
+snd_encounter_nobleman 1281 1 195 
+snd_encounter_vaegirs_ally 1281 2 196 197 
+snd_encounter_vaegirs_neutral 1281 4 198 199 200 201 
+snd_encounter_vaegirs_enemy 1281 4 198 199 200 201 
+snd_sneak_town_halt 1 2 202 203 
+snd_horse_walk 2352 4 204 205 206 207 
+snd_horse_trot 1072 4 208 209 210 211 
+snd_horse_canter 1584 4 212 213 214 215 
+snd_horse_gallop 2096 4 216 217 218 219 
+snd_horse_breath 2608 4 220 221 222 223 
+snd_horse_snort 1872 1 137 
+snd_horse_low_whinny 2304 1 137 
+snd_block_fist 0 2 224 225 
+snd_man_hit_blunt_weak 2640 5 226 227 228 229 230 
+snd_man_hit_blunt_strong 2640 5 226 227 228 229 230 
+snd_man_hit_pierce_weak 2640 5 226 227 228 229 230 
+snd_man_hit_pierce_strong 2640 5 226 227 228 229 230 
+snd_man_hit_cut_weak 2640 5 226 227 228 229 230 
+snd_man_hit_cut_strong 2640 5 226 227 228 229 230 
+snd_man_victory 2640 10 231 232 233 234 235 236 237 238 239 240 
+snd_fire_loop 1174 1 241 
+snd_torch_loop 1174 1 241 
 snd_dummy_hit 144 2 127 129 
 snd_dummy_destroyed 144 1 134 
 snd_gourd_destroyed 144 1 134 
-snd_cow_moo 2193 1 254 
-snd_cow_slaughter 2193 1 255 
-snd_distant_dog_bark 2177 4 256 257 258 259 
-snd_distant_owl 2433 3 260 261 262 
-snd_distant_chicken 2177 2 263 264 
-snd_distant_carpenter 897 2 265 266 
-snd_distant_blacksmith 1153 1 267 
-snd_arena_ambiance 899 1 268 
-snd_town_ambiance 899 1 269 
-snd_man_hit 2672 20 270 271 272 273 274 275 276 277 238 278 279 280 281 282 283 239 240 241 242 284 
-snd_man_die 160 14 285 286 287 288 289 290 291 292 293 294 295 296 297 298 
-snd_man_grunt 1120 3 299 300 301 
-snd_man_breath_hard 2096 7 302 303 304 305 306 307 308 
-snd_man_grunt_long 2128 6 309 310 311 312 313 314 
-snd_man_yell 2144 22 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 
-snd_man_warcry 96 7 337 338 339 340 341 342 343 
-snd_woman_hit 112 10 344 345 346 347 348 349 350 351 352 353 
-snd_woman_die 160 2 354 355 
-snd_gondor_yell 2144 22 356 357 358 359 360 361 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
-snd_gondor_victory 2640 6 362 363 364 365 366 367 
-snd_gondor_victory_player 2640 2 362 363 
-snd_rohan_yell 2144 30 368 369 370 371 372 373 374 375 376 377 378 379 380 381 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
-snd_rohan_victory 2640 4 382 383 384 385 
-snd_dunlender_yell 2144 24 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 
-snd_dunlender_victory 2640 9 410 411 412 413 414 415 416 417 418 
-snd_orc_die 160 8 419 420 421 422 423 424 425 426 
-snd_orc_hit 2672 8 427 428 429 430 431 432 433 434 
-snd_orc_grunt 1120 1 435 
-snd_orc_grunt_long 2128 1 436 
-snd_orc_yell 2144 2 437 438 
-snd_orc_victory 2640 6 439 440 441 442 443 444 
-snd_uruk_die 160 6 445 446 447 448 449 450 
-snd_uruk_hit 2672 9 451 452 453 454 455 456 457 458 459 
-snd_uruk_grunt 1120 1 435 
-snd_uruk_grunt_long 2128 7 460 461 462 463 464 465 466 
-snd_uruk_yell 2144 12 467 468 469 470 471 472 473 474 475 476 477 478 
-snd_uruk_victory 2640 17 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 
-snd_haradrim_yell 2144 10 496 497 498 499 500 501 502 503 504 505 
-snd_haradrim_victory 2640 5 506 507 508 509 510 
-snd_haradrim_die 160 14 511 286 287 288 289 290 291 292 293 294 295 296 297 298 
-snd_dwarf_yell 2144 23 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 327 326 325 335 322 316 320 
-snd_dwarf_victory 2640 7 528 528 528 529 250 251 252 
-snd_troll_die 160 1 530 
-snd_troll_hit 2672 3 531 531 531 
-snd_troll_grunt 1120 2 532 533 
-snd_troll_grunt_long 2128 2 533 534 
-snd_troll_yell 2144 2 533 534 
-snd_troll_victory 2640 3 533 534 530 
-snd_dunedain_yell 2144 26 535 536 537 538 539 540 541 542 543 544 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 
-snd_dunedain_victory 2640 3 545 546 547 
-snd_dunedain_victory_player 2640 1 545 
-snd_lothlorien_yell 2144 13 548 549 550 551 552 553 554 555 556 557 558 559 560 
-snd_lothlorien_victory 2640 5 561 562 563 564 565 
-snd_rivendell_yell 2144 12 566 567 551 552 553 554 555 556 557 558 559 560 
-snd_rivendell_victory 2640 5 561 562 563 564 565 
-snd_mirkwood_yell 2144 12 568 569 551 552 553 554 555 556 557 558 559 560 
-snd_mirkwood_victory 2640 5 561 562 563 564 565 
-snd_mirkwood_victory_player 2640 2 561 562 
-snd_big_weapon_swing 2672 1 570 
-snd_thunder 2720 1 571 
-snd_pull_ballista 2048 1 572 
-snd_evil_orders 768 1 573 
-snd_evil_horn 2560 1 574 
-snd_nazgul_skreech_long 2720 1 575 
-snd_nazgul_skreech_short 2720 1 576 
-snd_horror_scream_man 2720 5 577 578 579 580 581 
-snd_horror_scream_woman 2720 1 582 
-snd_horror_scream_orc 2720 1 583 
-snd_warg_lone_woof 2656 5 584 585 586 587 588 
-snd_horse_snort_again 1872 5 589 590 591 592 593 
-snd_spear_trap 2416 1 594 
-snd_elf_song 1921 1 595 
-snd_moria_ambiance 899 1 596 
-snd_henneth_ambiance 899 1 597 
-snd_goodforest_ambiance 899 1 598 
-snd_evilforest_ambiance 899 1 599 
-snd_water_waves_ambiance 899 1 600 
-snd_water_splash_ambiance 899 1 601 
-snd_water_wavesplash_ambiance 899 1 602 
-snd_wind_ambiance 899 1 603 
-snd_isengard_ambiance 899 1 604 
-snd_evilmen_ambiance 899 1 605 
-snd_orcs_ambiance 899 1 606 
-snd_morgul_ambiance 899 1 607 
-snd_gondor_ambiance 899 1 608 
-snd_rohan_ambiance 899 1 609 
-snd_dwarf_ambiance 899 1 610 
-snd_harad_ambiance 899 1 611 
-snd_gondor_occasional 1153 6 528 528 612 267 613 259 
-snd_elves_occasional 1153 6 528 528 614 615 616 617 
-snd_lorien_occasional 1153 5 595 614 615 616 617 
-snd_beorn_occasional 1153 7 614 615 616 613 266 259 265 
-snd_rohan_occasional 1153 10 618 619 620 621 613 612 614 267 259 263 
-snd_dwarf_occasional 1153 5 622 623 267 624 625 
-snd_dale_occasional 1153 9 614 615 616 613 266 267 259 263 626 
-snd_rhun_occasional 1153 8 618 619 620 621 627 266 267 259 
-snd_harad_occasional 1153 11 528 619 620 621 627 628 629 630 628 629 630 
-snd_umbar_occasional 1153 5 528 528 528 631 632 
-snd_dunland_occasional 1153 8 528 627 612 256 257 258 259 265 
-snd_orc_occasional 1153 7 528 633 627 634 635 636 637 
-snd_guldur_occasional 1153 8 528 528 528 528 627 635 636 637 
-snd_moria_occasional 1153 5 528 528 528 638 639 
-snd_isengard_occasional 1153 14 528 528 639 627 635 636 637 266 634 267 622 623 626 265 
-snd_urukhai_occasional 1153 6 627 635 636 637 634 265 
-snd_seaside_occasional 1153 6 614 615 616 631 632 267 
-snd_morgul_occasional 1153 9 528 528 528 528 528 528 528 640 641 
-snd_eosgi_occasional 1153 8 635 636 637 642 625 643 626 624 
-snd_wosgi_occasional 1153 7 528 528 642 625 643 626 624 
-snd_tirith_occasional 1153 6 528 612 644 267 528 528 
-snd_morannon_occasional 1153 1 528 
-snd_meeting_elf 1120 12 566 567 551 552 553 554 555 556 557 558 559 560 
-snd_meeting_uruk 1120 7 460 461 462 463 464 465 466 
-snd_meeting_man 1120 7 327 326 325 335 322 316 320 
-snd_meeting_orc 1120 4 435 436 437 438 
+snd_cow_moo 2193 1 242 
+snd_cow_slaughter 2193 1 243 
+snd_distant_dog_bark 2177 4 244 245 246 247 
+snd_distant_owl 2433 3 248 249 250 
+snd_distant_chicken 2177 2 251 252 
+snd_distant_carpenter 897 2 253 254 
+snd_distant_blacksmith 1153 1 255 
+snd_arena_ambiance 899 1 256 
+snd_town_ambiance 899 1 257 
+snd_man_hit 2672 20 258 259 260 261 262 263 264 265 226 266 267 268 269 270 271 227 228 229 230 272 
+snd_man_die 160 14 273 274 275 276 277 278 279 280 281 282 283 284 285 286 
+snd_man_grunt 1120 3 287 288 289 
+snd_man_breath_hard 2096 7 290 291 292 293 294 295 296 
+snd_man_grunt_long 2128 6 297 298 299 300 301 302 
+snd_man_yell 2144 22 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 
+snd_man_warcry 96 7 325 326 327 328 329 330 331 
+snd_woman_hit 112 10 332 333 334 335 336 337 338 339 340 341 
+snd_woman_die 160 2 342 343 
+snd_gondor_yell 2144 22 344 345 346 347 348 349 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 
+snd_gondor_victory 2640 6 350 351 352 353 354 355 
+snd_gondor_victory_player 2640 2 350 351 
+snd_rohan_yell 2144 30 356 357 358 359 360 361 362 363 364 365 366 367 368 369 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 
+snd_rohan_victory 2640 4 370 371 372 373 
+snd_dunlender_yell 2144 24 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 
+snd_dunlender_victory 2640 9 398 399 400 401 402 403 404 405 406 
+snd_orc_die 160 8 407 408 409 410 411 412 413 414 
+snd_orc_hit 2672 8 415 416 417 418 419 420 421 422 
+snd_orc_grunt 1120 1 423 
+snd_orc_grunt_long 2128 1 424 
+snd_orc_yell 2144 2 425 426 
+snd_orc_victory 2640 6 427 428 429 430 431 432 
+snd_uruk_die 160 6 433 434 435 436 437 438 
+snd_uruk_hit 2672 9 439 440 441 442 443 444 445 446 447 
+snd_uruk_grunt 1120 1 423 
+snd_uruk_grunt_long 2128 7 448 449 450 451 452 453 454 
+snd_uruk_yell 2144 12 455 456 457 458 459 460 461 462 463 464 465 466 
+snd_uruk_victory 2640 17 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 
+snd_haradrim_yell 2144 10 484 485 486 487 488 489 490 491 492 493 
+snd_haradrim_victory 2640 5 494 495 496 497 498 
+snd_haradrim_die 160 14 499 274 275 276 277 278 279 280 281 282 283 284 285 286 
+snd_dwarf_yell 2144 23 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 315 314 313 323 310 304 308 
+snd_dwarf_victory 2640 7 137 137 137 516 238 239 240 
+snd_troll_die 160 1 517 
+snd_troll_hit 2672 3 518 518 518 
+snd_troll_grunt 1120 2 519 520 
+snd_troll_grunt_long 2128 2 520 521 
+snd_troll_yell 2144 2 520 521 
+snd_troll_victory 2640 3 520 521 517 
+snd_dunedain_yell 2144 26 522 523 524 525 526 527 528 529 530 531 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 
+snd_dunedain_victory 2640 3 532 533 534 
+snd_dunedain_victory_player 2640 1 532 
+snd_lothlorien_yell 2144 13 535 536 537 538 539 540 541 542 543 544 545 546 547 
+snd_lothlorien_victory 2640 5 548 549 550 551 552 
+snd_rivendell_yell 2144 12 553 554 538 539 540 541 542 543 544 545 546 547 
+snd_rivendell_victory 2640 5 548 549 550 551 552 
+snd_mirkwood_yell 2144 12 555 556 538 539 540 541 542 543 544 545 546 547 
+snd_mirkwood_victory 2640 5 548 549 550 551 552 
+snd_mirkwood_victory_player 2640 2 548 549 
+snd_big_weapon_swing 2672 1 557 
+snd_thunder 2720 1 558 
+snd_pull_ballista 2048 1 559 
+snd_evil_orders 768 1 560 
+snd_evil_horn 2560 1 561 
+snd_nazgul_skreech_long 2720 1 562 
+snd_nazgul_skreech_short 2720 1 563 
+snd_horror_scream_man 2720 5 564 565 566 567 568 
+snd_horror_scream_woman 2720 1 569 
+snd_horror_scream_orc 2720 1 570 
+snd_warg_lone_woof 2656 5 571 572 573 574 575 
+snd_horse_snort_again 1872 5 576 577 578 579 580 
+snd_spear_trap 2416 1 581 
+snd_elf_song 1921 1 582 
+snd_moria_ambiance 899 1 583 
+snd_henneth_ambiance 899 1 584 
+snd_goodforest_ambiance 899 1 585 
+snd_evilforest_ambiance 899 1 586 
+snd_water_waves_ambiance 899 1 587 
+snd_water_splash_ambiance 899 1 588 
+snd_water_wavesplash_ambiance 899 1 589 
+snd_wind_ambiance 899 1 590 
+snd_isengard_ambiance 899 1 591 
+snd_evilmen_ambiance 899 1 592 
+snd_orcs_ambiance 899 1 593 
+snd_morgul_ambiance 899 1 594 
+snd_gondor_ambiance 899 1 595 
+snd_rohan_ambiance 899 1 596 
+snd_dwarf_ambiance 899 1 597 
+snd_harad_ambiance 899 1 598 
+snd_gondor_occasional 1153 6 137 137 599 255 600 247 
+snd_elves_occasional 1153 6 137 137 601 602 603 604 
+snd_lorien_occasional 1153 5 582 601 602 603 604 
+snd_beorn_occasional 1153 7 601 602 603 600 254 247 253 
+snd_rohan_occasional 1153 10 605 606 607 608 600 599 601 255 247 251 
+snd_dwarf_occasional 1153 5 609 610 255 611 612 
+snd_dale_occasional 1153 9 601 602 603 600 254 255 247 251 613 
+snd_rhun_occasional 1153 8 605 606 607 608 614 254 255 247 
+snd_harad_occasional 1153 11 137 606 607 608 614 615 616 617 615 616 617 
+snd_umbar_occasional 1153 5 137 137 137 618 619 
+snd_dunland_occasional 1153 8 137 614 599 244 245 246 247 253 
+snd_orc_occasional 1153 7 137 620 614 621 622 623 624 
+snd_guldur_occasional 1153 8 137 137 137 137 614 622 623 624 
+snd_moria_occasional 1153 5 137 137 137 625 626 
+snd_isengard_occasional 1153 14 137 137 626 614 622 623 624 254 621 255 609 610 613 253 
+snd_urukhai_occasional 1153 6 614 622 623 624 621 253 
+snd_seaside_occasional 1153 6 601 602 603 618 619 255 
+snd_morgul_occasional 1153 9 137 137 137 137 137 137 137 627 628 
+snd_eosgi_occasional 1153 8 622 623 624 629 612 630 613 611 
+snd_wosgi_occasional 1153 7 137 137 629 612 630 613 611 
+snd_tirith_occasional 1153 6 137 599 631 255 137 137 
+snd_morannon_occasional 1153 1 137 
+snd_meeting_elf 1120 12 553 554 538 539 540 541 542 543 544 545 546 547 
+snd_meeting_uruk 1120 7 448 449 450 451 452 453 454 
+snd_meeting_man 1120 7 315 314 313 323 310 304 308 
+snd_meeting_orc 1120 4 423 424 425 426 
+snd_neigh1 0 6 632 633 634 635 636 637 
+snd_horse_snort1 1872 5 638 639 640 641 642 
+snd_horse_low_whinny1 2304 2 643 644 
+snd_mount_death 2304 2 641 642 

@@ -1413,17 +1413,38 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
-custom_warg_sounds = (1.65,0,0,  [(gt,"$wargs_in_battle",0)],
+custom_warg_sounds = (1,0,0, [], # warg and horse sounds
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
-    (try_for_agents, ":warg"),
-		(neg|agent_is_human, ":warg"),
-		(agent_is_alive, ":warg"),
-		(agent_get_item_id, ":warg_item", ":warg"),
-		(is_between, ":warg_item", item_warg_begin ,item_warg_end),
-		(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
-		(store_random_in_range, ":random", 1, 101), (le, ":random", 7),  # 7% of time
-		#(display_message,"@warg says: 'woof, woof!'"),
-		(agent_play_sound, ":warg", "snd_warg_lone_woof"),
+    (try_for_agents, ":mount"),
+		(neg|agent_is_human, ":mount"),
+		(agent_get_item_id, ":item", ":mount"),
+		(try_begin),
+			(is_between, ":item", item_horse_begin ,item_horse_end),
+			(try_begin), 						#sounds for alive horses
+				(agent_is_alive, ":mount"),
+				(store_random_in_range, ":random", 1, 101), 
+				(try_begin),(le, ":random", 3),(agent_play_sound, ":mount", "snd_neigh1"),
+				 (else_try),(le, ":random", 7),(agent_play_sound, ":mount", "snd_horse_snort1"),
+				(try_end),
+			(else_try), 						#sounds for dying horses
+				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
+				(agent_play_sound, ":mount", "snd_neigh1"),
+				(agent_set_slot,":mount",slot_agent_mount_dead,1),
+			(try_end),
+		(else_try),
+			(try_begin),						#sounds for alive wargs
+				(agent_is_alive, ":mount"),
+				(is_between, ":item", item_warg_begin ,item_warg_end),
+				(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
+				(store_random_in_range, ":random", 1, 101), (le, ":random", 4),  # 4% of time
+				#(display_message,"@warg says: 'woof, woof!'"),
+				(agent_play_sound, ":mount", "snd_warg_lone_woof"),
+			(else_try), 						#sounds for dying wargs
+				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
+				(agent_play_sound, ":mount", "snd_uruk_die"),
+				(agent_set_slot,":mount",slot_agent_mount_dead,1),
+			(try_end),
+		(try_end),
 	(try_end),
 ])
 custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
