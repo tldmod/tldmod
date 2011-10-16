@@ -13721,14 +13721,14 @@ scripts = [
 
 #evil companions
         # Gulm
-        (troop_set_slot, "trp_npc9", slot_troop_morality_type, -1),
-        (troop_set_slot, "trp_npc9", slot_troop_morality_value, 0),
+        (troop_set_slot, "trp_npc9", slot_troop_morality_type, tmt_aristocratic),
+        (troop_set_slot, "trp_npc9", slot_troop_morality_value, 4),
         (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_type, -1),
         (troop_set_slot, "trp_npc9", slot_troop_2ary_morality_value, 0),
         (troop_set_slot, "trp_npc9", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc9", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc9", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
-        (troop_set_slot, "trp_npc9", slot_troop_home, -1), #no "home" speeches
+        (troop_set_slot, "trp_npc9", slot_troop_home, "p_town_hornburg"),
         (troop_set_slot, "trp_npc9", slot_troop_payment_request, 2000),
         (troop_set_slot, "trp_npc9", slot_troop_cur_center, "p_town_urukhai_h_camp"),  #TLD
         (troop_set_slot, "trp_npc9", slot_troop_rank_request, 3),  #TLD
@@ -13772,7 +13772,7 @@ scripts = [
         (troop_set_slot, "trp_npc12", slot_troop_cur_center, "p_town_minas_morgul"),  #TLD
         (troop_set_slot, "trp_npc12", slot_troop_rank_request, 3),  #TLD
 
-        # Badharkân
+        # Lykyada
         (troop_set_slot, "trp_npc13", slot_troop_morality_type, -1),
         (troop_set_slot, "trp_npc13", slot_troop_morality_value, 0),
         (troop_set_slot, "trp_npc13", slot_troop_2ary_morality_type, -1),

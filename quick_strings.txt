@@ -1,4 +1,4 @@
-921
+925
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -776,8 +776,12 @@ qstr_Say_cheese! Say_cheese!
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
-qstr_I_m_seriously_injure I'm_seriously_injured._Please_be_gentle.
-qstr_I_don_t_have_serious I_don't_have_serious_injuries,_thank_you
+qstr_I_m_seriously_injure I'm_seriously_injured._I_need_healing.
+qstr_I_don_t_have_serious I_don't_have_serious_injuries,_thank_you.
+qstr_Good_day_to_you. Good_day_to_you.
+qstr_Ah_it_s_you_again._G Ah,_it's_you_again._Goodbye.
+qstr_My_apologies_if_I_wa My_apologies_if_I_was_rude,_earlier._What_was_your_story_again?
+qstr_I_was_reconsidering_ I_was_reconsidering_our_last_conversation._What_was_your_story_again?
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.

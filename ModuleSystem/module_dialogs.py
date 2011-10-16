@@ -628,7 +628,8 @@ dialogs = [
 [anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 [anyone,"member_question", [], "Very well. What did you want to ask?", "member_question_2",[]],
 
-[anyone|plyr,"member_question_2", [], "How do you feel about the way things are going in this company?", "member_morale",[]],
+#MV: disabled - useless info, companions don't leave if their morale drops
+[anyone|plyr,"member_question_2", [(eq,1,0)], "How do you feel about the way things are going in this company?", "member_morale",[]],
 [anyone|plyr,"member_question_2", [], "How is your health?", "member_health",[]],
 [anyone|plyr,"member_question_2", [], "Tell me your story again.", "member_background_recap",[]],
 
@@ -656,11 +657,11 @@ dialogs = [
 	(troop_get_slot, ":wound_mask", "$g_talk_troop", slot_troop_wound_mask),
 	(try_begin),
 		(neq, ":wound_mask", 0),
-		(str_store_string, s12, "@I'm seriously injured. Please be gentle."),
+		(str_store_string, s12, "@I'm seriously injured. I need healing."),
 	(else_try),
-		(str_store_string, s12, "@I don't have serious injuries, thank you"),
+		(str_store_string, s12, "@I don't have serious injuries, thank you."),
 	(try_end)],
-"Here is a description of my health in short (more will be added later):^{s12}", "do_member_trade",[]],
+"{s12}", "do_member_trade",[]],
 
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -764,9 +765,9 @@ dialogs = [
       (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_held"), #end vile hackery
       (store_sub, reg3, ":rank_points_needed", ":rank_points_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0)], # not enough?
-"It seems that you have not helped my people enough, {playername}. \
-You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed]. \
-Let's talk again when you are more accomplished in this realm.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+"It seems that you are not esteemed enough by my people, {playername}. \
+You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^\
+Let's speak again when you are more accomplished.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 # rank ok
 [anyone, "companion_recruit_rank", [],"I'm glad to see you have become {s29}, and I'm looking forward to joining you.", "companion_recruit_payment", []],
@@ -810,7 +811,14 @@ Let's talk again when you are more accomplished in this realm.", "close_window",
 "We meet again.", "companion_recruit_meet_again", [(troop_set_slot, "$g_talk_troop", slot_troop_turned_down_twice, 1)]],
 
 [anyone|plyr, "companion_recruit_meet_again", [], "So... What have you been doing since our last encounter?", "companion_recruit_backstory_delayed", []],
-[anyone|plyr, "companion_recruit_meet_again", [],  "Good day to you.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+[anyone|plyr, "companion_recruit_meet_again", [
+   (try_begin),
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+     (str_store_string, s4, "@Good day to you."),
+   (else_try),
+     (str_store_string, s4, "@Ah, it's you again. Goodbye."),
+   (try_end)],
+"{s4}", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -819,7 +827,14 @@ Let's talk again when you are more accomplished in this realm.", "close_window",
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0)],
 "Yes?", "companion_recruit_secondchance", [(troop_set_slot, "$g_talk_troop", slot_troop_turned_down_twice, 1)]],
 
-[anyone|plyr, "companion_recruit_secondchance", [], "My apologies if I was rude, earlier. What was your story again?", "companion_recruit_backstory_b", []],
+[anyone|plyr, "companion_recruit_secondchance", [
+   (try_begin),
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+     (str_store_string, s4, "@My apologies if I was rude, earlier. What was your story again?"),
+   (else_try),
+     (str_store_string, s4, "@I was reconsidering our last conversation. What was your story again?"),
+   (try_end)],
+"{s4}", "companion_recruit_backstory_b", []],
 [anyone|plyr, "companion_recruit_secondchance", [],  "Never mind.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 [anyone, "companion_recruit_backstory_delayed",
@@ -850,7 +865,7 @@ Let's talk again when you are more accomplished in this realm.", "close_window",
                      (str_store_string, 6, ":battle_fate"),
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                      (str_store_string, 5, ":honorific")],
-"It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?",
+"It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been waiting here since then, looking for news of your fate. Shall I get my gear together and rejoin your company?",
    "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),]],
 
 ### If the player and the companion parted on bad terms

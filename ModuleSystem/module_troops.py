@@ -2016,7 +2016,7 @@ troops = [
 ["npc12","Gorbag","_",tf_uruk| tf_hero| tf_unmoveable_in_party_window,0,0,fac_mordor,
    [itm_m_uruk_heavy_e,itm_uruk_tracker_boots,itm_orc_two_handed_axe,itm_uruk_pike_a,itm_uruk_helm_b,],
       str_21|agi_16|int_7|cha_4|level(20),wp(175),knows_riding_1|knows_athletics_5|knows_power_strike_5|knows_ironflesh_6|knows_weapon_master_5,uruk_hai_face2],
-["npc13","Badharkan","_",tf_harad| tfg_ranged| tf_mounted| tf_hero| tf_unmoveable_in_party_window,0,0,fac_harad,
+["npc13","Lykyada","_",tf_harad| tfg_ranged| tf_mounted| tf_hero| tf_unmoveable_in_party_window,0,0,fac_harad,
    [itm_black_snake_armor,itm_harad_leather_greaves,itm_leather_gloves,itm_black_snake_helm,itm_harad_bow,itm_harad_arrows,itm_black_snake_sword,itm_harad_warhorse,],
       str_24|agi_20|int_18|cha_15|level(40),wp(400),knows_horse_archery_5|knows_riding_6|knows_power_strike_5|knows_ironflesh_7|knows_athletics_3|knows_weapon_master_6|knows_tactics_5|knows_trainer_6,0x000000051f00000b372571b8ed79a6ac00000000001db6360000000000000000],
 ["npc14","Fuldimir","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_umbar,
