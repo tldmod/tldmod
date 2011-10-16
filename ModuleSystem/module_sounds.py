@@ -292,6 +292,8 @@ sounds = [
 ("harad_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["harad_loop.wav"]),
 ("deadmarshes_ambiance"     ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_flies_loop.wav"]),
 ("night_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["night_loop.wav"]),
+("neutralforest_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["neutral_forest_loop.wav"]),
+("fangorn_ambiance"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["fangorn_loop.wav"]),
 
 ("gondor_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_eagle01.wav","d_blacksmith2.ogg","good_workshop.wav","d_dog7.ogg"]),
 ("elves_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 

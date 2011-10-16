@@ -9144,38 +9144,47 @@ scripts = [
 		(this_or_next|eq,":region",region_firien_wood),
 					 (eq,":region",region_lorien),
 		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1"),
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":region",region_fangorn),
 		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),
+		(assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
 		(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_end"),
+		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(is_between,":region",region_n_ithilien,region_s_ithilien+1),
 		(store_random_in_range, reg1, 0,5),
-		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_end"),(assign, "$bs_night_sound", "snd_night_ambiance"),
+		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", "scn_forest_lorien1"),
 		 (else_try),              (assign, ":native_terrain_to_use", rt_steppe_forest),
 		(try_end),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":region",region_druadan_forest),
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 	(else_try),		# occasional forest terrain, in rohan: use forest battlefield regardless of region (but rohan outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_harrowdale, region_westfold+1),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_steppe_small"), # so that outer terrain of rohan is used
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 	(else_try),		# occasional forest terrain, anywhere else: use forest battlefield regardless of region (but flat outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_desert_small"), # so that outer terrain flat is used
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 	(else_try),		# gondor regions
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
