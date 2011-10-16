@@ -237,7 +237,7 @@ skins = [
   ( "woman", skf_use_morph_key_30,
     "woman_body",  "woman_calf_l", "f_handL",
     "female_head", woman_face_keys,
-    ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s","elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","elf_hair_6", "elf_hair_7","elf_hair_5","elf_hair_8"], #woman_hair_meshes
+    ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s","welf_hair_1","welf_hair_2","welf_hair_3","welf_hair_4","welf_hair_5","welf_hair_6", "welf_hair_7","welf_hair_8"], #woman_hair_meshes
     [],
     ["hair_blonde"], #hair textures
     [],
