@@ -1295,7 +1295,7 @@ scripts = [
 	#battlegear and horses numbers stored in merchant troop skills
 	(troop_set_slot, "trp_skill2item_type", x ,skill2item_list[x]) for x in range(len(skill2item_list)) ]+[
 
-	# give centers to lords, put siad lord there
+	# give centers to lords, put said lord there
 	(call_script, "script_give_center_to_lord", center_list[x][0], center_list[x][2][5], 0) for x in range(len(center_list)) ]+[ 
 	# center fixed info filling
 	(try_for_range, ":town_no", centers_begin, centers_end),
@@ -1387,7 +1387,7 @@ scripts = [
 	(try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
 		(troop_add_gold,":kingdom_hero",100000),
 		(store_troop_faction, ":kingdom_hero_faction", ":kingdom_hero"),
-	# other heroes get banners like lords, except Rohan (which will be overwritten later)
+	# other heroes get banners like lords, except Rohan & Gondor vassals (which will be overwritten later)
 		(faction_get_slot,":kingdom_leader",":kingdom_hero_faction",slot_faction_leader),
 		(troop_get_slot, ":banner_id", ":kingdom_leader", slot_troop_banner_scene_prop),
 		(troop_set_slot, ":kingdom_hero", slot_troop_banner_scene_prop, ":banner_id"),
@@ -1418,6 +1418,14 @@ scripts = [
 		(troop_set_slot, ":rohan_hero", slot_troop_banner_scene_prop, ":rohan_banner_id"),
 		(val_add,":rohan_banner_id",1),
 	(try_end),
+# Gondor vassals lord banners
+	(troop_set_slot, "trp_knight_1_1", slot_troop_banner_scene_prop, "spr_banner_ek"), #lamedon
+	(troop_set_slot, "trp_knight_1_3", slot_troop_banner_scene_prop, "spr_banner_er"), #dol amroth
+	(troop_set_slot, "trp_knight_1_4", slot_troop_banner_scene_prop, "spr_banner_en"), #pelargir
+	(troop_set_slot, "trp_knight_1_5", slot_troop_banner_scene_prop, "spr_banner_ed"), #blackroot vale
+	(troop_set_slot, "trp_knight_1_6", slot_troop_banner_scene_prop, "spr_banner_eg"), #pinnath gelin
+	(troop_set_slot, "trp_knight_1_8", slot_troop_banner_scene_prop, "spr_banner_eu"), #lossarnach
+
 # fill center slots	
 	(try_for_range, ":center_no", centers_begin, centers_end),
 		(store_faction_of_party, ":original_faction", ":center_no"),
@@ -1450,7 +1458,6 @@ scripts = [
 	(party_set_slot, "p_town_westfold", slot_party_subfaction      , subfac_westfold),
 
 	(party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
-	#(call_script, "script_update_village_market_towns"),
 
 # set kingdom_heros status and wealth of heroes and kings
 	(try_for_range, ":troop_id", kingdom_heroes_begin, kingdom_heroes_end),
@@ -1630,7 +1637,7 @@ scripts = [
 	(assign, "$tld_option_formations", 1),# ON by default
 	(assign, "$tld_option_town_menu_hidden", 0), #all town features accesible by default
 	(assign, "$tld_option_injuries", 1), #injuries for npcs and player ON by default
-	(assign, "$tld_option_death_npc", 0), #permanent death for npcs OFF by default
+	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 0),# OFF by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds

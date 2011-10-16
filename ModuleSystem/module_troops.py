@@ -2974,7 +2974,7 @@ troops = [
 
 # Troops for scripting purpose. Make sure these are the last troops. (by foxyman)
 ["troops_end","troops_end","troops_end",tf_hero,no_scene,reserved,fac_commoners,[],0,0,0,0,0],
-["no_troop","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0],
+["no_troop","_","the place",tf_hero,0,0,fac_commoners,[],0,0,0,0,0],
 ["skill2item_type","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array for working with merchant skills as indicator of quantity of items in shop
 ["traits","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array of traits (0/1)
 #Player history array

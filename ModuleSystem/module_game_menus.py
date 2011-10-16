@@ -7464,13 +7464,25 @@ game_menus = [
  ("leave", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
 ]),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,
-	"When you approach, you see that {s1} is destroyed. Only smoldering ruins remain.",
+	"When you approach, you see that {s1} is {s2}",
     "none",
 	code_to_set_city_background + [
+	(try_begin),
+		(eq, "$g_encountered_party", "p_town_isengard"),
+		(str_store_string, s2, "@flooded. Somebody or something must have ruined the Isen dams."),
+	(else_try),
+		(str_store_string, s2, "@destroyed. Only smoldering ruins remain."),
+	(try_end),
 	(party_get_slot, ":elder_troop", "$g_encountered_party", slot_town_elder),
-	(str_store_troop_name_plural, s1, ":elder_troop"),
+	(str_store_troop_name_plural, s1, ":elder_troop"), # elders store place referral, "trp_no_troop" stores "the_place"
     ],
-    [("ruin_menu_0",[(eq,0,1)],"Go to some location.",[], "Door to some location."),
+    [("ruin_menu_0",[(eq, "$g_encountered_party", "p_town_isengard")],"Explore the place.",[
+	    (modify_visitors_at_site,"scn_isengard_center_flooded"),
+        (reset_visitors),
+        (set_visitor, 1, "trp_player"),
+        (jump_to_menu, "mnu_town_ruins"),
+        (jump_to_scene,"scn_isengard_center_flooded"),
+        (change_screen_mission),], "_"),
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
 ]),
 

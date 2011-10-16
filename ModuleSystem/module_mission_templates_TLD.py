@@ -830,6 +830,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(try_begin), # when wargs in battle
 		(is_between, ":agent_item", item_warg_begin , item_warg_end),
 		(val_add,"$wargs_in_battle",1),# keep warg count up to date...
+		(agent_set_slot,":agent",slot_agent_mount_dead,0),
 	(try_end),
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
@@ -859,10 +860,11 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
 	(try_end),
 	
-	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is
+	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is. GA: and remember that it's alive
 	(try_begin),(neq,":horse",-1), 
 		(agent_get_team,  reg12, ":agent"),
-		(agent_set_slot, ":horse", slot_agent_mount_side, reg12), 
+		(agent_set_slot, ":horse", slot_agent_mount_side, reg12),
+		(agent_set_slot, ":horse", slot_agent_mount_dead,0),
 	(try_end),
 	
 	(try_begin),(is_between, ":agent_trp",companions_begin,companions_end), # track companion injuries in battle
@@ -1413,8 +1415,9 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
-custom_warg_sounds = (1,0,0, [], # warg and horse sounds
+custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg and horse sounds
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
+    
     (try_for_agents, ":mount"),
 		(neg|agent_is_human, ":mount"),
 		(agent_get_item_id, ":item", ":mount"),
@@ -1423,13 +1426,11 @@ custom_warg_sounds = (1,0,0, [], # warg and horse sounds
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
-				(try_begin),(le, ":random", 3),(agent_play_sound, ":mount", "snd_neigh1"),
-				 (else_try),(le, ":random", 7),(agent_play_sound, ":mount", "snd_horse_snort1"),
-				(try_end),
+				(try_begin),(le, ":random", 7),(agent_play_sound, ":mount", "snd_horse_snort1"),(try_end),
 			(else_try), 						#sounds for dying horses
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_neigh1"),
-				(agent_set_slot,":mount",slot_agent_mount_dead,1),
+				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
 		(else_try),
 			(try_begin),						#sounds for alive wargs
@@ -1441,8 +1442,8 @@ custom_warg_sounds = (1,0,0, [], # warg and horse sounds
 				(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 			(else_try), 						#sounds for dying wargs
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
-				(agent_play_sound, ":mount", "snd_uruk_die"),
-				(agent_set_slot,":mount",slot_agent_mount_dead,1),
+				(agent_play_sound, ":mount", "snd_troll_die"),
+				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
 		(try_end),
 	(try_end),

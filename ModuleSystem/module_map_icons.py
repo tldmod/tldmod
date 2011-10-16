@@ -335,5 +335,5 @@ map_icons = [
   ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
   ("debris",0,"debris", 0.6,0),
-  
+  ("empty",0,"0", 0.6,0),
 ]

@@ -182,3 +182,4 @@ icon_mfc_pinnath = 180
 icon_thranduil = 181
 icon_esgaroth = 182
 icon_debris = 183
+icon_empty = 184

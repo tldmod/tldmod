@@ -599,7 +599,7 @@ scene_props = [
 
 ("banner_f01", 0, "banner_f01", "0", []),
 ("banner_f02", 0, "banner_f02", "0", []),
-("banner_f03", 0, "banner_f03", "0", []),
+#("banner_f03", 0, "banner_f03", "0", []), #bad banner. others are better and enough for Rohan lords
 ("banner_f04", 0, "banner_f04", "0", []),
 ("banner_f05", 0, "banner_f05", "0", []),
 ("banner_f06", 0, "banner_f06", "0", []),

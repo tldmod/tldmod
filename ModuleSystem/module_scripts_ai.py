@@ -2431,6 +2431,8 @@ ai_scripts = [
 			(try_begin),
 				(neq,":center","p_town_minas_tirith"), # minas tirith has an elevated flag
 				(party_set_banner_icon, ":center", "icon_debris"),
+			(else_try),
+				(party_set_banner_icon, ":center", "icon_empty"),
 			(try_end),
 		(try_end),
 		(str_store_party_name, s1, ":center"),
