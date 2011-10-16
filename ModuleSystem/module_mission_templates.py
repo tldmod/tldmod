@@ -370,6 +370,9 @@ mission_templates = [ # not used in game
     formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts +[
 	common_battle_tab_press,
 	common_music_situation_update,
+	(0,0,ti_once,[],[(try_begin),(is_currently_night),  (play_sound, "$bs_night_sound", sf_looping),
+					  (else_try),						(play_sound, "$bs_day_sound",   sf_looping),
+					 (try_end)]),
 	common_battle_check_friendly_kills,
 	common_battle_check_victory_condition,
 	common_battle_victory_display,

@@ -290,6 +290,8 @@ sounds = [
 ("rohan_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["rohan_people_loop.wav"]),
 ("dwarf_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["dwarf_men_loop.wav"]),
 ("harad_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["harad_loop.wav"]),
+("deadmarshes_ambiance"     ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_flies_loop.wav"]),
+("night_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["night_loop.wav"]),
 
 ("gondor_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_eagle01.wav","d_blacksmith2.ogg","good_workshop.wav","d_dog7.ogg"]),
 ("elves_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
@@ -302,7 +304,7 @@ sounds = [
 ("harad_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","rohan02.wav","rohan03.wav","rohan04.wav","evil_crow.wav","harad01.wav","harad02.wav","harad03.wav","harad01.wav","harad02.wav","harad03.wav"]),
 ("umbar_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","sea_seagulls.wav", "sea_seaside.wav"]),
 ("dunland_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "good_eagle01.wav","d_dog1.ogg","d_dog2.ogg","d_dog3.ogg","d_dog7.ogg","d_carpenter1.ogg"]),
-("orc_occasional"     ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_flies_loop.wav","evil_crow.wav", "orc_warg.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
+("orc_occasional"     ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "orc_warg.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
 ("guldur_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","silence.wav","evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
 ("moria_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","moria01.wav","moria02.wav"]),
 ("isengard_occasional",sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","moria02.wav", "evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "d_saw_short3.ogg","orc_warg.wav","d_blacksmith2.ogg","dwarves01.wav","dwarves02.wav","osgiliath04.wav","d_carpenter1.ogg"]),
@@ -319,9 +321,11 @@ sounds = [
 ("meeting_uruk",sf_priority_6|sf_vol_4, ["uruk_shortyell_01.wav","uruk_shortyell_02.wav","uruk_shortyell_03.wav","uruk_shortyell_04.wav","uruk_shortyell_05.wav", "uruk_shortyell_06.wav", "uruk_shortyell_07.wav",]),
 ("meeting_man",sf_priority_6|sf_vol_4, ["man_shortyell_6.wav","man_shortyell_5.wav","man_shortyell_4.wav","man_yell_b_23.wav","man_yell_16.wav","man_yell_4_2.wav","man_yell_13.wav"]),
 ("meeting_orc",sf_priority_6|sf_vol_4, ["orc_grunt_1.wav", "orc_grunt_long_1.wav", "orc_yell_1.wav","orc_yell_2.wav"]),
- ##TLD end 
+#doubles for muted hardcoded sounds
 ("neigh1",0, ["horse_exterior_whinny_01.wav","horse_exterior_whinny_02.wav","horse_exterior_whinny_03.wav","horse_exterior_whinny_04.wav","horse_exterior_whinny_05.wav","horse_whinny.wav"]),
 ("horse_snort1" ,sf_priority_5|sf_vol_7, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 ("horse_low_whinny1",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
 ("mount_death", sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
+
+
 ]

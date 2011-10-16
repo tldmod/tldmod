@@ -2292,7 +2292,14 @@ scene_props = [
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
 
 ("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
-	(try_begin),(is_currently_night),(set_fog_distance,1700,0xeFFF3D),(else_try),(set_fog_distance,1500,0xeFFF3D),(try_end)])]),
+	(try_begin),(is_currently_night),(set_fog_distance,3000,0xeFFF3D),(else_try),(set_fog_distance,1500,0xeFFF3D),(try_end)])]),
+("fog_darkish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
+	(try_begin),(is_currently_night),(set_fog_distance,1000,0x010101),(else_try),(set_fog_distance,1500,0x010101),(try_end)])]),
+("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
+	(try_begin),(is_currently_night),(set_fog_distance,3000,0x911101),(else_try),(set_fog_distance,1500,0x911101),(try_end)])]),
+("fog_greenish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
+	(try_begin),(is_currently_night),(set_fog_distance,3000,0x911101),(else_try),(set_fog_distance,1500,0x911101),(try_end)])]),
+	
 ("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
 ("isen_wall",0,"isen_wall","bo_isen_wall", []),
 ("isen_sink",0,"isen_sink","bo_isen_sink", []),

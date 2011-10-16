@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1526
+ 1529
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4641,7 +4641,19 @@ spr_barrier_cube 16384 0 collision_cube bo_collision_cube 0
 
 
 spr_fog_elven_settlement 16384 0 collision_cube 0 1
--40.000000  6 4 0 2273 0 1798 2 1700 15728445 5 0 1798 2 1500 15728445 3 0 
+-40.000000  6 4 0 2273 0 1798 2 3000 15728445 5 0 1798 2 1500 15728445 3 0 
+
+
+spr_fog_darkish_glow 16384 0 collision_cube 0 1
+-40.000000  6 4 0 2273 0 1798 2 1000 65793 5 0 1798 2 1500 65793 3 0 
+
+
+spr_fog_reddish_glow 16384 0 collision_cube 0 1
+-40.000000  6 4 0 2273 0 1798 2 3000 9507073 5 0 1798 2 1500 9507073 3 0 
+
+
+spr_fog_greenish_glow 16384 0 collision_cube 0 1
+-40.000000  6 4 0 2273 0 1798 2 3000 9507073 5 0 1798 2 1500 9507073 3 0 
 
 
 spr_isen_furnace 0 0 isen_furnace bo_isen_furnace 0

@@ -9109,7 +9109,7 @@ scripts = [
 ]),
 
  
-# script_setup_random_scene (GA and mtarini)
+# script_jump_to_random_scene (GA and mtarini)
 # Input: arg1 = region  code
 # Input: arg2 = terrain type
 # Input: arg3 = visible landmark (if any, else -1)  
@@ -9129,25 +9129,37 @@ scripts = [
 	# in the following, according to region and terrain type, setup the first, the second, or both these variables:
     (assign, ":native_terrain_to_use", -1), # this is you need random terrain generation using a ground level vanilla terrain
     (assign, ":scene_to_use", -1),   # this if you want to use a specific scene
-
-	(try_begin),	# landmark: hand sign
-		(assign, ":native_terrain_to_use", rt_steppe),
+	(assign, "$bs_day_sound", "snd_wind_ambiance"), # default ambience
+	(assign, "$bs_night_sound", "snd_wind_ambiance"),
+	
+	(try_begin),
 		(eq,":landmark","p_hand_isen"),
 		(assign,":scene_to_use","scn_handsign"), 
-	(else_try),		# region: dead marshes
+	(else_try),
 		(eq,":region",region_dead_marshes),
-		(assign,":scene_to_use","scn_deadmarshes"), 
-	(else_try),		# region: lorien
+		(assign,":scene_to_use","scn_deadmarshes"),
+		(assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
+		(assign, "$bs_night_sound", "snd_deadmarshes_ambiance"),
+	(else_try),
 		(this_or_next|eq,":region",region_firien_wood),
-		(eq,":region",region_lorien),
-		(assign, ":native_terrain_to_use", rt_steppe_forest),
-	(else_try),		# region: fangorn
+					 (eq,":region",region_lorien),
+		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
 		(eq,":region",region_fangorn),
-		(assign, ":native_terrain_to_use", rt_forest),
-	(else_try),		# region: mirkwood
+		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
-		(assign, ":native_terrain_to_use", rt_snow_forest),
-	(else_try),		# small druadan forest in gondor
+		(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_end"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
+		(is_between,":region",region_n_ithilien,region_s_ithilien+1),
+		(store_random_in_range, reg1, 0,5),
+		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_end"),(assign, "$bs_night_sound", "snd_night_ambiance"),
+		 (else_try),              (assign, ":native_terrain_to_use", rt_steppe_forest),
+		(try_end),
+	(else_try),
 		(eq,":region",region_druadan_forest),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
@@ -9173,7 +9185,7 @@ scripts = [
 		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
 	(else_try),		# rohan regions
 		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
-		(assign, ":native_terrain_to_use", rt_steppe),  # rhoan default
+		(assign, ":native_terrain_to_use", rt_steppe),  # rohan default
 	(else_try),		# mountains regions
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
