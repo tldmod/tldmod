@@ -238,8 +238,8 @@ triggers = [
                 (try_begin),
                     (neq, reg0, -1),
                     (assign, ":enemy_center", reg0),
-                    (party_get_position, pos1, ":enemy_center"),
-                    (party_get_position, pos2, ":center"),
+                    (party_get_position, pos1, ":center"),
+                    (party_get_position, pos2, ":enemy_center"),
                     (call_script, "script_calc_quarter_point"), # closer to home
                     #(call_script, "script_calc_mid_point"),
                 (else_try),
