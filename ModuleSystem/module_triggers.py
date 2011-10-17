@@ -240,7 +240,8 @@ triggers = [
                     (assign, ":enemy_center", reg0),
                     (party_get_position, pos1, ":enemy_center"),
                     (party_get_position, pos2, ":center"),
-                    (call_script, "script_calc_mid_point"),
+                    (call_script, "script_calc_quarter_point"), # closer to home
+                    #(call_script, "script_calc_mid_point"),
                 (else_try),
                     (party_get_position, pos1, ":center"),
                 (try_end),
@@ -248,7 +249,7 @@ triggers = [
                 (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
                 (party_set_ai_target_position, ":scout_party", pos1),
-                (party_set_ai_patrol_radius, ":scout_party", 30),
+                (party_set_ai_patrol_radius, ":scout_party", 10),
             (try_end),
             (try_begin),
                 (ge,"$tld_war_began",1), # No raiders before war
@@ -272,7 +273,7 @@ triggers = [
                 (party_set_slot, ":raider_party", slot_party_home_center, ":center"),
                 (party_set_faction, ":raider_party", ":faction_no"),
                 (party_set_ai_behavior, ":raider_party", ai_bhvr_patrol_party),
-                (party_set_ai_patrol_radius, ":raider_party", 30),
+                (party_set_ai_patrol_radius, ":raider_party", 10),
                 (party_set_slot, ":raider_party", slot_party_ai_state, spai_undefined),
                 (party_set_slot, ":raider_party", slot_party_type, spt_raider),
 				(party_set_slot, ":raider_party", slot_party_victory_value, ws_raider_vp), # victory points for party kill
@@ -313,7 +314,7 @@ triggers = [
                 (party_set_slot, ":patrol_party", slot_party_ai_state, spai_undefined),
                 (party_set_ai_behavior, ":patrol_party", ai_bhvr_patrol_party),
                 (party_set_ai_object, ":patrol_party", ":center"),
-                (party_set_ai_patrol_radius, ":patrol_party", 30),
+                (party_set_ai_patrol_radius, ":patrol_party", 15),
             (try_end),
             (try_begin),
                 (gt, ":center_caravan", 0),

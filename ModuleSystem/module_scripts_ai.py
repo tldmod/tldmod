@@ -1824,6 +1824,27 @@ ai_scripts = [
         (position_set_x, pos1, ":x1"),
         (position_set_y, pos1, ":y1"),        
 ]),
+
+# script_calc_quarter_point
+# calculate the quarter point on the segment between pos1 and pos2 (closer to pos1)
+# Input: pos1, pos2
+# Output: pos1 - quarter point
+("calc_quarter_point", [
+        (set_fixed_point_multiplier, 100),
+        (position_get_x, ":x1", pos1),
+        (position_get_y, ":y1", pos1),
+        (position_get_x, ":x2", pos2),
+        (position_get_y, ":y2", pos2),
+        (store_sub, ":xdiff", ":x2", ":x1"),
+        (store_sub, ":ydiff", ":y2", ":y1"),
+        (val_div, ":xdiff", 4),
+        (val_div, ":ydiff", 4),
+        (val_add, ":x1", ":xdiff"),
+        (val_add, ":y1", ":ydiff"),
+        (position_set_x, pos1, ":x1"),
+        (position_set_y, pos1, ":y1"),        
+]),
+
 # TLD War System Scripts end (foxyman)
 ##########################################
 

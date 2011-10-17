@@ -1197,7 +1197,7 @@ strings = [
   ("npc6_morality_speech", "[No primary moral code]"),
   ("npc7_morality_speech", "I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?"),
   ("npc8_morality_speech", "Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake."),
-  ("npc9_morality_speech", "The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without ones one night. Gulm has spoken."), #run from battle
+  ("npc9_morality_speech", "The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken."), #run from battle
   ("npc10_morality_speech", "[No primary moral code]"),
   ("npc11_morality_speech", "[No primary moral code]"),
   ("npc12_morality_speech", "[No primary moral code]"),
@@ -1420,7 +1420,7 @@ strings = [
   ("npc6_home_description_2", "I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them."),
   ("npc7_home_description_2", "If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches."),
   ("npc8_home_description_2", "I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment."),
-  ("npc9_home_description_2", "There's no use trudging around here unless we are backed by a large horde of Uruks. Unless you want to make faces to the lookouts on the wall, that is."),
+  ("npc9_home_description_2", "There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is."),
   ("npc10_home_description_2", "Minas Morgul, where Nazguls drink all day, har-har!"),
   ("npc11_home_description_2", "Doesn't Orthanc look like a giant... something?"),
   ("npc12_home_description_2", "Doesn't Orthanc look like a giant... something?"),
