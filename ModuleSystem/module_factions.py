@@ -51,7 +51,7 @@ factions = [
 ##TLD FACTIONS END##########
 
   ("neutral","ruins",ff_always_hide_label, 0.1,[("player_faction",0.0)], [],0x888888),
-  ("innocents","Innocents", ff_always_hide_label, 0.5,[("outlaws",-0.05)], []),
+  ("gandalf","Lone_rider", ff_always_hide_label, 0.5,[("gondor",1),("rohan",1),("lorien",1),("imladris",1),("woodelf",1),("mordor",1),("harad",1),("rhun",1),("khand",1),("dunland",1),("umbar",1),("isengard",1),("moria",1),("guldur",1),("gundabad",1),("dale",1),("dwarf",1),("beorn",1),("tribal_orcs",1),("outlaws",1),("player_faction",1)], []),
   ("merchants","Merchants", ff_always_hide_label, 0.5,[("outlaws",-0.5),], []),
 #########################
 #TLD UNCOMMENTED

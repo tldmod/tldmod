@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-237
+240
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -20,7 +20,7 @@ pt_deserters Deserters 844424930131975 0 30 494 -1 -1 -1 -1 -1 -1
 pt_merchant_caravan Merchant_Caravan 5629499534606410 0 1 11 447 1 1 0 448 5 25 0 -1 -1 -1 -1 
 pt_troublesome_bandits Troublesome_Goblins 2533274790658100 0 2 494 393 14 55 0 -1 -1 -1 -1 -1 
 pt_fangorn_orcs Tree-chopping_Orcs 2533274790658098 0 26 494 340 1 1 0 338 3 8 0 333 8 13 0 336 12 24 0 -1 -1 
-pt_village_farmers Village_Farmers 6 0 27 7 25 5 10 0 446 3 8 0 -1 -1 -1 -1 
+pt_village_farmers Village_Farmers 6 0 1 7 25 5 10 0 446 3 8 0 -1 -1 -1 -1 
 pt_spy_partners Suspicious_Travellers 844424930459650 0 26 7 846 1 1 0 158 5 11 0 -1 -1 -1 -1 
 pt_spy_partners_evil Suspicious_Travellers 844424930459650 0 26 7 847 1 1 0 271 5 11 0 -1 -1 -1 -1 
 pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 446 3 3 0 -1 -1 -1 -1 
@@ -229,11 +229,14 @@ pt_imladris_recruits _ 0 0 1 0 197 1 3 0 210 1 2 0 -1 -1 -1 -1
 pt_woodelf_recruits _ 0 0 1 0 181 2 5 0 -1 -1 -1 -1 -1 
 pt_moria_recruits _ 0 0 1 0 374 2 5 0 -1 -1 -1 -1 -1 
 pt_guldur_recruits _ 0 0 1 0 356 2 5 0 -1 -1 -1 -1 -1 
-pt_beorn_recruits _ 0 0 1 0 38 1 3 0 29 1 2 0 -1 -1 -1 -1 
+pt_beorn_recruits _ 0 0 1 0 38 2 5 0 -1 -1 -1 -1 -1 
+pt_woodman_recruits _ 0 0 1 0 29 2 5 0 -1 -1 -1 -1 -1 
 pt_gundabad_recruits _ 0 0 1 0 382 2 5 0 -1 -1 -1 -1 -1 
 pt_gundabad_cap_recruits _ 0 0 1 0 382 3 8 0 -1 -1 -1 -1 -1 
 pt_dale_recruits _ 0 0 1 0 47 1 4 0 59 1 1 0 -1 -1 -1 -1 
 pt_dwarf_recruits _ 0 0 1 0 82 2 5 0 -1 -1 -1 -1 -1 
 pt_dwarf_iron_recruits _ 0 0 1 0 96 1 4 0 -1 -1 -1 -1 -1 
 pt_dunland_recruits _ 0 0 1 0 267 2 5 0 -1 -1 -1 -1 -1 
+pt_gandalf Lone_rider 2097337 0 27 238 853 1 1 0 -1 -1 -1 -1 -1 
+pt_nazgul Lone_rider 2097338 0 27 238 854 1 1 0 -1 -1 -1 -1 -1 
 pt_caravan_survivors Caravan_Survivors 562949953421314 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 

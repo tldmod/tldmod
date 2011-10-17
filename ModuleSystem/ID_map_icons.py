@@ -183,3 +183,5 @@ icon_thranduil = 181
 icon_esgaroth = 182
 icon_debris = 183
 icon_empty = 184
+icon_gandalf = 185
+icon_nazgul = 186

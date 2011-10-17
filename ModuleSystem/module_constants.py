@@ -1504,7 +1504,7 @@ center_list = [
 	["icon_mfc_imladris"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_capital),
 
 ("p_town_woodsmen_village", ["scn_woodsmen_village2_center", -1, -1,-1,-1,-1, "mesh_ui_default_menu_window"],
-	[-1, "trp_no_troop", "trp_merchant_woodmen", "trp_elder_wvillage", "pt_beorn_recruits", "trp_beorn_lord", "trp_woodmen_youth", "trp_woodmen_tracker", "trp_woodmen_forester", "trp_woodmen_axemen"], 
+	[-1, "trp_no_troop", "trp_merchant_woodmen", "trp_elder_wvillage", "pt_woodman_recruits", "trp_beorn_lord", "trp_woodmen_youth", "trp_woodmen_tracker", "trp_woodmen_forester", "trp_woodmen_axemen"], 
 	["icon_mfc_northmen"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_always),
 ("p_town_beorning_village", ["scn_beorning_village_center", -1, -1,-1,-1,-1, "mesh_ui_default_menu_window"],
 	[-1, "trp_no_troop", "trp_merchant_beorn", "trp_no_troop", "pt_beorn_recruits", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_sentinel", "trp_beorning_warrior", "trp_beorning_tolltacker"], 

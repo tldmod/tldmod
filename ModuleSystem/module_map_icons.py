@@ -250,7 +250,7 @@ map_icons = [
         (try_end),
         ]),
      ]),
-
+		
   #indication for fords
   ("ford_rocks",0,"ford_rocks", 0.6, 0),
 
@@ -336,4 +336,7 @@ map_icons = [
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
   ("debris",0,"debris", 0.6,0),
   ("empty",0,"0", 0.6,0),
+  ("gandalf", 0, "white_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("nazgul" , 0, "black_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+
 ]

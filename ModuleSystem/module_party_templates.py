@@ -59,7 +59,7 @@ party_templates = [
 # ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_brigand,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
 # ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
 
-("village_farmers","Village Farmers",icon_peasant,0,fac_innocents,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
+("village_farmers","Village Farmers",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
 
 ("spy_partners", "Suspicious Travellers", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner,1,1),(trp_squire_of_dol_amroth,5,11)]),
 ("spy_partners_evil", "Suspicious Travellers", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner_evil,1,1),(trp_dunnish_raven_rider,5,11)]),
@@ -358,7 +358,8 @@ party_templates = [
 ("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,2,5)]),
 ("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,2,5)]),
 ("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,2,5)]),
-("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,1,3),(trp_woodmen_youth,1,2)]), #two T1
+("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,2,5)]),
+("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_woodmen_youth,2,5)]),
 ("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_goblin_gundabad,2,5)]),
 ("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,3,8)]),
 ("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
@@ -366,6 +367,8 @@ party_templates = [
 ("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,4)]), #T1 and T2
 ("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,2,5)]),
 
+("gandalf","Lone_rider",icon_gandalf|pf_hide_defenders|pf_label_small, 0, fac_gandalf, soldier_personality,[(trp_gandalf,1,1)]), #icon_gandalf
+("nazgul" ,"Lone_rider",icon_nazgul |pf_hide_defenders|pf_label_small, 0, fac_gandalf, soldier_personality,[(trp_nazgul,1,1)]), #icon_nazgul
 
 ("caravan_survivors","Caravan Survivors",icon_gray_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
 ]
