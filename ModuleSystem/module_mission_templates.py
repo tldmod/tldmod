@@ -71,7 +71,11 @@ mission_templates = [ # not used in game
      (25,mtef_visitor_source,af_override_horse,0,1,[]),(26,mtef_visitor_source,af_override_horse,0,1,[]),(27,mtef_visitor_source,af_override_horse,0,1,[]),(28,mtef_visitor_source,af_override_horse,0,1,[]),(29,mtef_visitor_source,af_override_horse,0,1,[]),(30,mtef_visitor_source,af_override_horse,0,1,[]),(31,mtef_visitor_source,af_override_horse,0,1,[]),
      ],
     [ (ti_on_agent_spawn, 0, 0, [],[(store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
-      (1, 0, ti_once, [], [(store_current_scene, ":cur_scene"),(scene_set_slot, ":cur_scene", slot_scene_visited, 1)]),
+      (1, 0, ti_once, [], [			# ambience sounds
+			(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
+			 (else_try),					 (play_sound, "$bs_day_sound",   sf_looping),
+			(try_end),
+			(store_current_scene, ":cur_scene"),(scene_set_slot, ":cur_scene", slot_scene_visited, 1)]),
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)],[]),
       (ti_tab_pressed, 0, 0, [(set_trigger_result,1)],[]),
