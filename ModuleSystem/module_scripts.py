@@ -1903,7 +1903,6 @@ scripts = [
 				# night in TLD is primary WAR TIME =)! GA
 				#             (neg|is_currently_night), #Don't fight at night
 				(inflict_casualties_to_party_group, ":root_attacker_party", ":defender_strength", "p_temp_casualties"),
-				#(call_script, "script_map_hero_status_in_abstract_battle"), # TLD, check if heroes are killed
 				(party_collect_attachments_to_party, ":root_attacker_party", "p_collective_enemy"),
 			(try_end),
 			(call_script, "script_party_count_fit_for_battle", "p_collective_enemy", 0),
@@ -1914,7 +1913,6 @@ scripts = [
 				# night in TLD is primary WAR TIME =)! GA
 				#             (neg|is_currently_night), #Don't fight at night
 				(inflict_casualties_to_party_group, ":root_defender_party", ":attacker_strength", "p_temp_casualties"),
-				#(call_script, "script_map_hero_status_in_abstract_battle"), # TLD, check if heroes are killed
 				(party_collect_attachments_to_party, ":root_defender_party", "p_collective_ally"),
 			(try_end),
 			(call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),

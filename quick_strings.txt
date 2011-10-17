@@ -1,4 +1,4 @@
-927
+928
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -406,6 +406,7 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!

@@ -2115,7 +2115,7 @@ scene_props = [
   
 ("rohan_burial_mound",0,"roh_burial_mound","0", []), 
 ("tree_huorn",0,"tree_huorn","0", []), 
-("waterfall_stream",0,"waterfall_stream","0", []),
+("waterfall_stream",0,"waterfall_stream","0", [(ti_on_init_scene_prop,[(play_sound, "snd_waterfall")])]),
 ("waterfall",0,"waterfall","bo_waterfall", []),
 ("tunnel_cave",0,"tunnel_cave","bo_tunnel_cave", []), 
 

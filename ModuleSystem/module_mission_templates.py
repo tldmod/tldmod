@@ -132,10 +132,10 @@ mission_templates = [ # not used in game
 						(try_end),
 						(agent_set_animation, ":agent", ":greet_ani"),
 					(try_end),
-				(else_try),
-					(agent_set_animation, ":agent", "anim_stand"),
-					(store_random_in_range,reg0,0,100),
-					(agent_set_animation_progress, ":agent", reg0),
+				# (else_try),
+					# (agent_set_animation, ":agent", "anim_stand"),
+					# (store_random_in_range,reg0,0,100),
+					# (agent_set_animation_progress, ":agent", reg0),
 				(try_end),
 			(try_end)]),
 	   
@@ -370,9 +370,7 @@ mission_templates = [ # not used in game
     formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts +[
 	common_battle_tab_press,
 	common_music_situation_update,
-	(0,0,ti_once,[],[(try_begin),(is_currently_night),  (play_sound, "$bs_night_sound", sf_looping),
-					  (else_try),						(play_sound, "$bs_day_sound",   sf_looping),
-					 (try_end)]),
+	(0,0,ti_once,[],[]),
 	common_battle_check_friendly_kills,
 	common_battle_check_victory_condition,
 	common_battle_victory_display,
@@ -397,7 +395,14 @@ mission_templates = [ # not used in game
 			(assign,"$attacker_reinforcement_stage",0),
 			(assign,"$g_presentation_battle_active", 0),
 			(call_script, "script_place_player_banner_near_inventory"),
-			(call_script, "script_combat_music_set_situation_with_culture")]),
+			(call_script, "script_combat_music_set_situation_with_culture"),
+			# ambience sounds
+			(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
+			 (else_try),					 (play_sound, "$bs_day_sound",   sf_looping),
+			(try_end),
+			(troop_get_inventory_slot,"$horse_type","trp_player",8), #checks for horse lameness in mission
+			(troop_get_inventory_slot_modifier,"$horse_mod","trp_player",8),
+			]),
 	(1, 0, 5,  [
 			(lt,"$defender_reinforcement_stage",2),
 			(store_mission_timer_a,":mission_time"),

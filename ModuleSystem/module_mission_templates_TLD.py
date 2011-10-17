@@ -850,10 +850,12 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 				(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
 				(agent_set_team, ":agent", reg12), # this was set just above
 				#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
+				(agent_set_slot,"$warg_to_be_replaced", slot_agent_mount_dead, 1),
 				(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
 				(assign, "$warg_to_be_replaced", -1),
 			(try_end),
 		(else_try), # UGLY FIX FOR CARRYOVER WARGS, KILL THOSE SPAWNED AT START. GA
+			(agent_set_slot,":agent", slot_agent_mount_dead, 1), #silently
 			(call_script, "script_remove_agent", ":agent"),
 		(try_end), 
 	(else_try), 
@@ -1044,6 +1046,7 @@ nazgul_sweeps = (2,1.2,5,[
 
 # if player attempts to ride non matching mount, mount rebels (mtarini)
 tld_player_cant_ride = (1.90,1.5,0.5,[
+
 	(eq, "$tld_option_crossdressing", 0),
 	(get_player_agent_no, ":player_agent"),
 	(agent_get_horse,":mount",":player_agent"),
@@ -1052,6 +1055,16 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
 	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
+	
+	(try_begin), # lame horses can stall
+		(eq, "$horse_mod", imodbit_lame),
+		(eq, ":mount_item","$horse_type"),
+		(store_random_in_range, reg1 ,0,20),
+		(ge, reg1, 1),
+		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
+		(display_message, "@Your mount stumbles! It seems to be lame.",color_bad_news),
+	(try_end),
+		
 	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),

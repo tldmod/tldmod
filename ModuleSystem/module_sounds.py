@@ -329,5 +329,6 @@ sounds = [
 ("horse_low_whinny1",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
 ("mount_death", sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
 
+("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["henneth_loop.wav"]),
 
 ]

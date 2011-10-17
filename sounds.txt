@@ -648,7 +648,7 @@ soundsfile version 2
  horse_snort_5.wav 1872
  horse_whinny-1.wav 2304
  horse_whinny-2.wav 2304
-273
+274
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -922,3 +922,4 @@ snd_neigh1 0 6 635 636 637 638 639 640
 snd_horse_snort1 1872 5 641 642 643 644 645 
 snd_horse_low_whinny1 2304 2 646 647 
 snd_mount_death 2304 2 644 645 
+snd_waterfall 1174 1 584 
