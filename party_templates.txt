@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-235
+237
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -27,6 +27,8 @@ pt_runaway_serfs Runaway_Slaves 2251799814012934 0 26 7 25 6 7 0 446 3 3 0 -1 -1
 pt_spy Lone_Rider 844424930459650 0 26 7 813 1 1 0 -1 -1 -1 -1 -1 
 pt_spy_evil Lone_Rider 844424930459650 0 26 7 814 1 1 0 -1 -1 -1 -1 -1 
 pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 -1 -1 
+pt_gandalf Lone_Rider 2424834 0 26 7 822 1 1 0 -1 -1 -1 -1 -1 
+pt_nazgul Lone_Rider 2424834 0 26 7 823 1 1 0 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904982 0 3 183 111 1 1 0 116 3 7 0 102 3 7 0 -1 -1 -1 
 pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904986 0 3 183 153 1 1 0 152 0 3 0 151 4 7 0 -1 -1 -1 
 pt_lamedon_auxila Lamedon_Auxilia 281474980904983 0 3 183 141 1 1 0 140 1 5 0 139 4 8 0 -1 -1 -1 

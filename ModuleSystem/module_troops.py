@@ -2900,6 +2900,15 @@ troops = [
 ["ent_3","Fladrif","_",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive| tf_hero,scn_fangorn|entry(19),0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head_helm2,itm_ent_water,],
       str_255| agi_3| int_30| cha_30|level(30),wp(200),knows_power_strike_10|knows_ironflesh_10,orc_face1,orc_face2],
+
+# Gandalf and Nazgul for conversations
+["gandalf","Gandalf","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
+   [itm_courser,itm_whiterobe,itm_leather_boots,itm_beorn_staff,itm_gondor_citadel_sword,],
+      attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_6|knows_power_strike_10|knows_ironflesh_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
+["nazgul","Nazgul","Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
+   [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_mordor_helm,itm_nazgul_sword,itm_mordor_warhorse,],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_6|knows_power_strike_10|knows_ironflesh_10,mercenary_face_2],
+
 ["quick_battle_6_player","quick_battle_6_player","_",tf_hero,0,0,fac_player_faction,
    [itm_leather_jerkin,itm_leather_boots,itm_corsair_bow,itm_corsair_arrows,],
       knight_attrib_1,wp(130),knight_skills_1,0x000000000008010b01f041a9249f65fd],
