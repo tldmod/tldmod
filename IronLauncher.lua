@@ -40,6 +40,7 @@ BreakPoints = 0
 	CoreResources2CommonRes("Data\\","shaders.brf")
 	CoreResources2CommonRes("Data\\","textures.brf")
 	CoreResources2CommonRes("Data\\","ui_meshes.brf")
+	CoreResources2CommonRes("Data\\","pictures.brf")
 
 -- // Module Root
 
@@ -107,6 +108,7 @@ WriteLogFile("["..System.GetTime(TIME_FMT_AMPM).."] "..Game.." has closed, Undoi
 	CommonRes2trash("shaders.brf")
 	CommonRes2trash("textures.brf")
 	CommonRes2trash("ui_meshes.brf")
+	CommonRes2trash("pictures.brf")
 
 -- // Shader file
 	CommonRoot2trash("mb.fx")
