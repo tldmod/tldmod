@@ -1619,12 +1619,9 @@ game_menus = [
     (enable_party, "p_legend_deadmarshes"),
     (enable_party, "p_legend_mirkwood"),
     (enable_party, "p_legend_fangorn"),
-    (display_message, "@All four legendary place enabled!", 0x30FFC8),
+    (display_message, "@All four legendary places enabled!", 0x30FFC8),
    ]),
-   ("camp_mvtest_intro",[],"Test intro.",[
-    (jump_to_menu, "mnu_auto_intro_rohan"),
-#    (change_screen_map),
-   ]),
+   ("camp_mvtest_intro",[],"Test cutscenes...",[(jump_to_menu, "mnu_mvtest_cutscenes"),]),
    # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
     # (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
     # (try_begin),
@@ -2616,6 +2613,24 @@ game_menus = [
     ("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
+("mvtest_cutscenes",0,
+   "Choose an option:",
+   "none",
+   [],
+    [("intro",[], "Play intro.", [(jump_to_menu, "mnu_auto_intro_rohan"),]),
+     ("joke",[],  "Play GA joke.", [(jump_to_menu, "mnu_auto_intro_joke"),]),
+     ("joke",[],  "Play Gandalf encounter.", [(jump_to_menu, "mnu_auto_convo"),]),
+     ("justatest",[], "Enter conversation scene.", [
+                                (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+                                (set_visitor,0,"trp_player"),
+                                (set_visitor,1,"trp_gandalf"),
+                                (set_jump_mission,"mt_test_gandalf"),
+                                (jump_to_scene,"scn_conversation_scene"),
+                                (change_screen_mission),
+                                ]),
+     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+    ]
+),
 ## MadVader test end
 ("game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
@@ -7106,6 +7121,18 @@ game_menus = [
        (set_visitor, 1, "trp_player"),
        (set_jump_mission, "mt_intro_joke"),
        (jump_to_scene, "scn_minas_tirith_castle"),
+       (change_screen_mission),
+    ],
+    []
+),
+
+( "auto_convo",0,"stub","none",
+    [
+       (modify_visitors_at_site, "scn_conversation_scene"),
+       (reset_visitors),
+       (set_visitor, 0, "trp_player"),
+       (set_jump_mission, "mt_test_gandalf"),
+       (jump_to_scene, "scn_conversation_scene"),
        (change_screen_mission),
     ],
     []

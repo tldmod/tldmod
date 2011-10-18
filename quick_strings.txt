@@ -1,4 +1,4 @@
-928
+931
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -66,7 +66,10 @@ qstr_Adventurers_at_audie Adventurers_at_audience_with_Steward_Denethor...
 qstr___What_business_do_y _'What_business_do_you_have_here,_supplicants?'
 qstr___Your_Stewardship_w _'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr___Enough_of_this_mad _'Enough_of_this_madness!_Guards!!'
-qstr___I_ve_had_enough_of _'I've_had_enough_of_these_pranks..._The_next_ones_would_have_to_kneel!'
+qstr___I_ve_had_enough_of _'I've_had_enough_of_these_pranks..._The_next_bunch_would_have_to_kneel!'
+qstr_Ah_what_a_coincidenc Ah,_what_a_coincidence,_running_into_you_{playername}!_You_might_not_know_me,_but_are_not_unknown_to_me._I_am_on_my_way_to_King_Theoden_of_Rohan,_but_I_have_just_come_from_Steward_Denethor_and_your_name_has_come_up._Steward_Denethor_is_counting_on_you_in_these_perilous_times_and_if_you_had_thought_to_pursue_some_distracting_course_of_action,_you_might_wish_to_reconsider_it_and_focus_on_aiding_Steward_Denethor_to_your_utmost_capabilities.
+qstr_Who_are_you? Who_are_you?
+qstr_A_friend_of_Steward_ A_friend_of_Steward_Denethor_and_the_people_of_Gondor._Now_hurry!_Mordor_draws_all_wicked_things,_and_the_Dark_Power_is_bending_all_its_will_to_gather_them_there._Time_is_running_out_for_all_that_is_good_in_this_world,_lest_we_make_count_our_every_action_to_oppose_it!
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -529,7 +532,7 @@ qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0},_influence_to_{reg1}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
-qstr_All_four_legendary_p All_four_legendary_place_enabled!
+qstr_All_four_legendary_p All_four_legendary_places_enabled!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}

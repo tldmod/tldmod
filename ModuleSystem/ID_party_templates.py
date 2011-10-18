@@ -235,6 +235,4 @@ pt_dale_recruits = 233
 pt_dwarf_recruits = 234
 pt_dwarf_iron_recruits = 235
 pt_dunland_recruits = 236
-pt_gandalf = 237
-pt_nazgul = 238
-pt_caravan_survivors = 239
+pt_caravan_survivors = 237

@@ -13,3 +13,4 @@ prsnt_arena_training = 11
 prsnt_gauntlet = 12
 prsnt_retirement = 13
 prsnt_intro_titles = 14
+prsnt_conversation_titles = 15

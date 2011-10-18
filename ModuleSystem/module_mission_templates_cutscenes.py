@@ -73,7 +73,14 @@ mission_templates_cutscenes = [
          (set_fixed_point_multiplier, 100),
          # make player agent static
          (get_player_agent_no, ":player_agent"),
-         (agent_set_animation, ":player_agent", "anim_stand"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
          
          # peasants run!
          (init_position, pos1),
@@ -222,7 +229,14 @@ mission_templates_cutscenes = [
          (set_fixed_point_multiplier, 100),
          # make player agent static
          (get_player_agent_no, ":player_agent"),
-         (agent_set_animation, ":player_agent", "anim_stand"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
          
          (try_begin),
            (eq, "$g_tld_intro_state", 11), #start with looking at the gate
@@ -411,7 +425,14 @@ mission_templates_cutscenes = [
          (set_fixed_point_multiplier, 100),
          # make player agent static
          (get_player_agent_no, ":player_agent"),
-         (agent_set_animation, ":player_agent", "anim_stand"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
          
          (try_begin),
            (eq, "$g_tld_intro_state", 31), #start with looking at the city
@@ -593,7 +614,14 @@ mission_templates_cutscenes = [
          (set_fixed_point_multiplier, 100),
          # make player agent static
          (get_player_agent_no, ":player_agent"),
-         (agent_set_animation, ":player_agent", "anim_stand"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
          
          (try_begin),
            (eq, "$g_tld_intro_state", 101), #look at the throne
@@ -712,5 +740,151 @@ mission_templates_cutscenes = [
          ], []),
     ],
 ),
+
+("test_gandalf", 0, -1,
+    "Gandalf cutscene mission",
+    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+     (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    ],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
+    
+    (ti_before_mission_start, 0, 0, [],
+      [ 
+        (assign, "$g_tld_conversation_state", 0),
+        
+        (music_set_situation, 0), (music_set_culture, 0),
+        # (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
+        # (music_set_situation, mtf_sit_siege),
+      ]),
+      
+      (0, 0, ti_once,
+       [(start_presentation, "prsnt_conversation_titles"),
+        
+        #spawn Gandalf behind the little hill
+        (set_fixed_point_multiplier, 100),
+        (init_position, pos1),
+        (position_set_x, pos1, 7800),
+        (position_set_y, pos1, 8000),
+        (position_rotate_z, pos1, 0),
+        (set_spawn_position, pos1),
+        (spawn_agent, "trp_gandalf"), #has to be in a condition block, or it will crash
+        #immediately have him ride over the hill to meet the player
+        (position_set_x, pos1, 7550),
+        (position_set_y, pos1, 11700),
+        (agent_set_scripted_destination, reg0, pos1, 1),
+       ],[]),
+
+      # detect player camera init
+      (0, 0, ti_once,
+        [
+         (mission_cam_get_position, pos1),
+         (position_get_z, ":z_pos", pos1),
+         (neq, ":z_pos", 0),       
+        ],
+        [
+         (assign, "$g_tld_conversation_state", 1),
+        ]),
+        
+      (0, 0, 0,
+       [
+         (set_show_messages, 0),
+         (store_mission_timer_a, ":cur_time"),
+         (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
+         
+         (try_begin),
+           (eq, "$g_tld_conversation_state", 1), #start with looking at Gandalf while he rides to meet the player
+           (mission_cam_set_mode, 1),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 1500),
+           (mission_cam_set_position, pos1),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 600),
+           (mission_cam_animate_to_position, pos1, 5000, 0),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 2), #waiting for Gandalf to come
+           (ge, ":cur_time", 6),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 3), #
+           (ge, ":cur_time", 16),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 0),
+           (position_set_x, pos1, 7550),
+           (position_set_y, pos1, 11500),
+           (position_set_z, pos1, 600),
+           (mission_cam_set_position, pos1),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 4), #
+           (ge, ":cur_time", 18),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 600),
+           (mission_cam_set_position, pos1),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 5), #
+           (ge, ":cur_time", 25),
+           # (init_position, pos1),
+           # (position_rotate_z, pos1, 0),
+           # (position_set_x, pos1, 7600),
+           # (position_set_y, pos1, 11400),
+           # (position_set_z, pos1, 600),
+           # (mission_cam_set_position, pos1),
+           (try_for_agents, ":agent_no"), # find Gandalf and send him on his way
+             (agent_get_troop_id, ":agent_troop", ":agent_no"),
+             (eq, ":agent_troop", "trp_gandalf"),
+             (init_position, pos1),
+             (position_set_x, pos1, 7800),
+             (position_set_y, pos1, 8000),
+             (position_rotate_z, pos1, 0),
+             (set_spawn_position, pos1),
+             (agent_set_scripted_destination, ":agent_no", pos1, 1),
+           (try_end),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 6), #wait a sec
+           (ge, ":cur_time", 26),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 1500),
+           (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes up again
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 7), #end mission
+           (ge, ":cur_time", 32),
+           (val_add, "$g_tld_conversation_state", 1),
+           (finish_mission, 0),
+           # finish chain
+           (change_screen_return),
+        (try_end),
+       ], []),
+    ],
+),
+    
 
 ]

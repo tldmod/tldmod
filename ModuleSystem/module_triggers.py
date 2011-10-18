@@ -1744,43 +1744,4 @@ triggers = [
 	(try_end),
 ]),
 
-# triggers for Gandalf and nazgul parties running amok 
-# flavor parties on the map, not catchable or interactable, unless so scripted
-(1,0,0,[(eq,"$tld_gn_at_large",0),
-		(store_character_level,":level","trp_player"),
-		(ge,":level", 5), # after lev5 nazgul and gandalf start running on the map
-	],[
-	(assign, "$tld_gn_at_large",1),
-	(try_begin),
-		(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-		#if side=good - spawn gandalf outside FOV, target player / spawn nazgul at morannon, target minas morgul
-		(set_spawn_radius,10),
-		(spawn_around_party,"p_main_party","pt_gandalf"),
-		(party_set_ai_behavior, reg0, ai_bhvr_travel_to_party),
-		(party_set_ai_object, reg0, "p_main_party"),
-		
-		(set_spawn_radius,0),
-		(spawn_around_party,"p_town_morannon","pt_nazgul"),
-		(party_set_ai_behavior, reg0, ai_bhvr_travel_to_party),
-		(party_set_ai_object, reg0, "p_town_minas_morgul"),
-	(else_try),
-		#if side=evil - spawn nazgul outside FOV, target player / spawn gandalf at lorien, target edoras
-		(set_spawn_radius,10),
-		(spawn_around_party,"p_main_party","pt_nazgul"),
-		(party_set_ai_behavior, reg0, ai_bhvr_travel_to_party),
-		(party_set_ai_object, reg0, "p_main_party"),
-		(set_spawn_radius,0),
-		(spawn_around_party,"p_town_caras_galadhon","pt_gandalf"),
-		(party_set_ai_behavior, reg0, ai_bhvr_travel_to_party),
-		(party_set_ai_object, reg0, "p_town_edoras"),
-	(try_end),
-]),
-(1, 0, 0,[(eq,"$tld_gn_at_large",1), # if gandalf or nazgul arrived to current destination, set another destination center and go-go-go
-	   ],[ 
-		#if gandalf at center, target random good center not far away
-		#if nazgul at center, target random evil center not far away
-]),
-
-	
-
 ]
