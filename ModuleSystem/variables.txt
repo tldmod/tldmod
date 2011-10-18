@@ -616,3 +616,10 @@ bs_night_sound
 g_tld_conversation_state
 horse_type
 horse_mod
+g_tld_conversation_space_pressed
+g_tld_convo_talker
+g_tld_convo_lines
+g_tld_conversations_done
+g_tld_gandalf_state
+g_tld_nazgul_state
+g_tld_convo_subject

@@ -243,6 +243,8 @@ mission_templates_cutscenes = [
            (mission_cam_set_mode, 1),
            (entry_point_get_position, pos1, 0),
            (position_move_z, pos1, 300),
+           (position_set_x, pos1, 17522),
+           (position_set_y, pos1, 30724),
            (mission_cam_set_position, pos1),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -752,6 +754,7 @@ mission_templates_cutscenes = [
     (ti_before_mission_start, 0, 0, [],
       [ 
         (assign, "$g_tld_conversation_state", 0),
+        (assign, "$g_tld_conversation_space_pressed", 1),
         
         (music_set_situation, 0), (music_set_culture, 0),
         # (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
@@ -786,6 +789,17 @@ mission_templates_cutscenes = [
          (assign, "$g_tld_conversation_state", 1),
         ]),
         
+      # detect Space pressed
+      (0, 0, 0,
+        [
+         (eq, "$g_tld_conversation_space_pressed", 0),
+         (key_clicked, key_space),
+         # (key_is_down, key_space),
+        ],
+        [
+         (assign, "$g_tld_conversation_space_pressed", 1),
+        ]),
+        
       (0, 0, 0,
        [
          (set_show_messages, 0),
@@ -812,60 +826,86 @@ mission_templates_cutscenes = [
            (position_set_y, pos1, 12300),
            (position_set_z, pos1, 1500),
            (mission_cam_set_position, pos1),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 180),
-           (position_set_x, pos1, 7500),
-           (position_set_y, pos1, 12300),
-           (position_set_z, pos1, 600),
-           (mission_cam_animate_to_position, pos1, 5000, 0),
+           (agent_get_position, pos1, ":player_agent"),
+           (position_move_x, pos1, -50),
+           (position_move_y, pos1, -200),
+           (position_move_z, pos1, 180),
+           (try_begin),
+             (neq, ":horse_agent", -1),
+             (position_move_z, pos1, 140),
+           (try_end),
+           # (mission_cam_set_position, pos1),
+           # (init_position, pos1),
+           # (position_rotate_z, pos1, 180),
+           # (position_set_x, pos1, 7500),
+           # (position_set_y, pos1, 12300),
+           # (position_set_z, pos1, 600),
+           (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes down and ends up behind player facing Gandalf
+           (str_store_string, s1, "str_empty_string"),
            (val_add, "$g_tld_conversation_state", 1),
          (else_try),
            (eq, "$g_tld_conversation_state", 2), #waiting for Gandalf to come
            (ge, ":cur_time", 6),
+           (overlay_set_color, "$g_presentation_obj_1", 0x80FF80),
+           (str_store_string, s1, "@Look at my over-the-shoulder shot, {playername}! I'm so beautiful from a distance!"),
            (val_add, "$g_tld_conversation_state", 1),
+           (assign, "$g_tld_conversation_space_pressed", 0),
          (else_try),
-           (eq, "$g_tld_conversation_state", 3), #
-           (ge, ":cur_time", 16),
+           (eq, "$g_tld_conversation_state", 3), #camera behind Gandalf facing player
+           (eq, "$g_tld_conversation_space_pressed", 1),
+#           (ge, ":cur_time", 16),
            (init_position, pos1),
            (position_rotate_z, pos1, 0),
-           (position_set_x, pos1, 7550),
-           (position_set_y, pos1, 11500),
-           (position_set_z, pos1, 600),
-           (mission_cam_set_position, pos1),
-           (val_add, "$g_tld_conversation_state", 1),
-         (else_try),
-           (eq, "$g_tld_conversation_state", 4), #
-           (ge, ":cur_time", 18),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 180),
            (position_set_x, pos1, 7500),
-           (position_set_y, pos1, 12300),
-           (position_set_z, pos1, 600),
+           (position_set_y, pos1, 11500),
+           (position_set_z, pos1, 560),
            (mission_cam_set_position, pos1),
+           (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
+           (str_store_string, s1, "@You wish, old man, my over-the-shoulder view is much prettier!"),
            (val_add, "$g_tld_conversation_state", 1),
+           (assign, "$g_tld_conversation_space_pressed", 0),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 4), #camera behind player facing Gandalf
+           (eq, "$g_tld_conversation_space_pressed", 1),
+#           (ge, ":cur_time", 18),
+           # (init_position, pos1),
+           # (position_rotate_z, pos1, 180),
+           # (position_set_x, pos1, 7500),
+           # (position_set_y, pos1, 12300),
+           # (position_set_z, pos1, 600),
+           (agent_get_position, pos1, ":player_agent"),
+           (position_move_x, pos1, -50),
+           (position_move_y, pos1, -200),
+           (position_move_z, pos1, 180),
+           (try_begin),
+             (neq, ":horse_agent", -1),
+             (position_move_z, pos1, 140),
+           (try_end),
+           (mission_cam_set_position, pos1),
+           (overlay_set_color, "$g_presentation_obj_1", 0x80FF80),
+           (str_store_string, s1, "@You should really see Steward Denetor's Facebook photos, he's amazing!"),
+           (val_add, "$g_tld_conversation_state", 1),
+           (assign, "$g_tld_conversation_space_pressed", 0),
          (else_try),
            (eq, "$g_tld_conversation_state", 5), #
-           (ge, ":cur_time", 25),
-           # (init_position, pos1),
-           # (position_rotate_z, pos1, 0),
-           # (position_set_x, pos1, 7600),
-           # (position_set_y, pos1, 11400),
-           # (position_set_z, pos1, 600),
-           # (mission_cam_set_position, pos1),
+           (eq, "$g_tld_conversation_space_pressed", 1),
+#           (ge, ":cur_time", 25),
            (try_for_agents, ":agent_no"), # find Gandalf and send him on his way
              (agent_get_troop_id, ":agent_troop", ":agent_no"),
              (eq, ":agent_troop", "trp_gandalf"),
              (init_position, pos1),
              (position_set_x, pos1, 7800),
-             (position_set_y, pos1, 8000),
+             (position_set_y, pos1, 7500),
              (position_rotate_z, pos1, 0),
              (set_spawn_position, pos1),
              (agent_set_scripted_destination, ":agent_no", pos1, 1),
            (try_end),
+           (str_store_string, s1, "str_empty_string"),
            (val_add, "$g_tld_conversation_state", 1),
+           (reset_mission_timer_a),
          (else_try),
-           (eq, "$g_tld_conversation_state", 6), #wait a sec
-           (ge, ":cur_time", 26),
+           (eq, "$g_tld_conversation_state", 6), #wait a sec for Gandalf to turn around and ride off, then camera up
+           (ge, ":cur_time", 1),
            (init_position, pos1),
            (position_rotate_z, pos1, 180),
            (position_rotate_x, pos1, -20),
@@ -876,12 +916,241 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
          (else_try),
            (eq, "$g_tld_conversation_state", 7), #end mission
-           (ge, ":cur_time", 32),
+           (ge, ":cur_time", 7),
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain
            (change_screen_return),
-        (try_end),
+         (try_end),
+         
+         #presentation
+         (overlay_set_text, "$g_presentation_obj_1", s1),
+         (str_store_string, s2, "str_empty_string"),
+         (try_begin),
+           (eq, "$g_tld_conversation_space_pressed", 0),
+           (str_store_string, s2, "@Press Space to continue..."),
+         (try_end),
+         (overlay_set_text, "$g_presentation_obj_2", s2),
+       ], []),
+    ],
+),
+    
+("conversation_cutscene", 0, -1,
+    "Gandalf/Nazgul conversation cutscene mission",
+    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+     (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    ],
+    [
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
+    
+    (ti_before_mission_start, 0, 0, [],
+      [ 
+        (assign, "$g_tld_conversation_state", 0),
+        (assign, "$g_tld_conversation_space_pressed", 1),
+        
+        (music_set_situation, 0), (music_set_culture, 0),
+        # (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
+        # (music_set_situation, mtf_sit_siege),
+      ]),
+      
+      (0, 0, ti_once,
+       [(start_presentation, "prsnt_conversation_titles"),
+        
+        #spawn Gandalf/Nazgul behind the little hill
+        (set_fixed_point_multiplier, 100),
+        (init_position, pos1),
+        (position_set_x, pos1, 7800),
+        (position_set_y, pos1, 8000),
+        (position_rotate_z, pos1, 0),
+        (set_spawn_position, pos1),
+        (spawn_agent, "$g_tld_convo_talker"), #has to be in a condition block, or it will crash
+        #immediately have him ride over the hill to meet the player
+        (position_set_x, pos1, 7550),
+        (position_set_y, pos1, 11700),
+        (agent_set_scripted_destination, reg0, pos1, 1),
+       ],[]),
+
+      # detect player camera init
+      (0, 0, ti_once,
+        [
+         (mission_cam_get_position, pos1),
+         (position_get_z, ":z_pos", pos1),
+         (neq, ":z_pos", 0),       
+        ],
+        [
+         (assign, "$g_tld_conversation_state", 1),
+        ]),
+        
+      # detect Space pressed
+      (0, 0, 0,
+        [
+         (eq, "$g_tld_conversation_space_pressed", 0),
+         (key_clicked, key_space),
+         # (key_is_down, key_space),
+        ],
+        [
+         (assign, "$g_tld_conversation_space_pressed", 1),
+        ]),
+        
+      (0, 0, 0,
+       [
+         (set_show_messages, 0),
+         (store_mission_timer_a, ":cur_time"),
+         (set_fixed_point_multiplier, 100),
+         # make player agent static
+         (get_player_agent_no, ":player_agent"),
+         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (try_begin),
+           (eq, ":horse_agent", -1),
+           (agent_set_animation, ":player_agent", "anim_stand"),
+         (else_try),
+           (agent_set_animation, ":player_agent", "anim_ride_0"),
+           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         (try_end),
+         
+         (try_begin),
+           (eq, "$g_tld_conversation_state", 1), #start with looking at Gandalf while he rides to meet the player
+           (mission_cam_set_mode, 1),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 1500),
+           (mission_cam_set_position, pos1),
+           (agent_get_position, pos1, ":player_agent"),
+           (position_move_x, pos1, -50),
+           (position_move_y, pos1, -200),
+           (position_move_z, pos1, 180),
+           (try_begin),
+             (neq, ":horse_agent", -1),
+             (position_move_z, pos1, 140),
+           (try_end),
+           # (mission_cam_set_position, pos1),
+           # (init_position, pos1),
+           # (position_rotate_z, pos1, 180),
+           # (position_set_x, pos1, 7500),
+           # (position_set_y, pos1, 12300),
+           # (position_set_z, pos1, 600),
+           (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes down and ends up behind player facing the talker
+           (str_store_string, s1, "str_empty_string"),
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 2), #waiting for the talker to come
+           (ge, ":cur_time", 6),
+           #Set text color
+           (try_begin),
+             (eq, "$g_tld_convo_talker", "trp_gandalf"),
+             (overlay_set_color, "$g_presentation_obj_1", 0x80FF80), #Gandalf: green
+           (else_try),
+             (overlay_set_color, "$g_presentation_obj_1", 0xFF8080), #Nazgul: red
+           (try_end),
+           (str_store_string_reg, s1, s50), #first dialog line
+           (val_sub, "$g_tld_convo_lines", 1),
+           (val_add, "$g_tld_conversation_state", 1),
+           (assign, "$g_tld_conversation_space_pressed", 0),
+         (else_try),
+           (is_between, "$g_tld_conversation_state", 3, 100), 
+           (eq, "$g_tld_conversation_space_pressed", 1),
+           
+           (store_mod, ":player_speaks", "$g_tld_conversation_state", 2),
+           (try_begin),
+             (eq, ":player_speaks", 0),
+             #Talker speaks: camera behind player facing the talker
+             (agent_get_position, pos1, ":player_agent"),
+             (position_move_x, pos1, -50),
+             (position_move_y, pos1, -200),
+             (position_move_z, pos1, 170),
+             (try_begin),
+               (neq, ":horse_agent", -1),
+               (position_move_z, pos1, 140),
+             (try_end),
+             (mission_cam_set_position, pos1),
+             #Set text color
+             (try_begin),
+               (eq, "$g_tld_convo_talker", "trp_gandalf"),
+               (overlay_set_color, "$g_presentation_obj_1", 0x80FF80), #Gandalf: green
+             (else_try),
+               (overlay_set_color, "$g_presentation_obj_1", 0xFF8080), #Nazgul: red
+             (try_end),
+           (else_try),
+             #Player speaks: camera behind the talker facing player
+             (init_position, pos1),
+             #(position_rotate_x, pos1, 5),
+             (position_set_x, pos1, 7500),
+             (position_set_y, pos1, 11450),
+             (position_set_z, pos1, 580),
+             (mission_cam_set_position, pos1),
+             (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF), #Player: white
+           (try_end),
+           
+           #find the next dialog line
+           (store_sub, ":next_line_reg", "$g_tld_conversation_state", 2),
+           (val_add, ":next_line_reg", s50), #MV=1337 h4x0r
+           (str_store_string_reg, s1, ":next_line_reg"),
+           
+           (val_sub, "$g_tld_convo_lines", 1),
+           (val_add, "$g_tld_conversation_state", 1),
+           (try_begin),
+             (eq, "$g_tld_convo_lines", 0), #no lines left, end the conversation
+             (assign, "$g_tld_conversation_state", 100),
+           (try_end),
+           (assign, "$g_tld_conversation_space_pressed", 0),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 100), #
+           (eq, "$g_tld_conversation_space_pressed", 1),
+           #Place the camera behind the player in case he was the last to speak
+           (agent_get_position, pos1, ":player_agent"),
+           (position_move_x, pos1, -50),
+           (position_move_y, pos1, -200),
+           (position_move_z, pos1, 180),
+           (try_begin),
+             (neq, ":horse_agent", -1),
+             (position_move_z, pos1, 140),
+           (try_end),
+           (mission_cam_set_position, pos1),
+           # find Gandalf/Nazgul and send him on his way
+           (try_for_agents, ":agent_no"), 
+             (agent_get_troop_id, ":agent_troop", ":agent_no"),
+             (eq, ":agent_troop", "$g_tld_convo_talker"),
+             (init_position, pos1),
+             (position_set_x, pos1, 7800),
+             (position_set_y, pos1, 7500),
+             (position_rotate_z, pos1, 0),
+             (set_spawn_position, pos1),
+             (agent_set_scripted_destination, ":agent_no", pos1, 1),
+           (try_end),
+           (str_store_string, s1, "str_empty_string"),
+           (val_add, "$g_tld_conversation_state", 1),
+           (reset_mission_timer_a),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 101), #wait a sec for the talker to turn around and ride off, then camera up
+           (ge, ":cur_time", 1),
+           (init_position, pos1),
+           (position_rotate_z, pos1, 180),
+           (position_rotate_x, pos1, -20),
+           (position_set_x, pos1, 7500),
+           (position_set_y, pos1, 12300),
+           (position_set_z, pos1, 1500),
+           (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes up again
+           (val_add, "$g_tld_conversation_state", 1),
+         (else_try),
+           (eq, "$g_tld_conversation_state", 102), #end mission
+           (ge, ":cur_time", 7),
+           (val_add, "$g_tld_conversation_state", 1),
+           (finish_mission, 0),
+           # finish chain
+           (change_screen_return),
+         (try_end),
+         
+         #presentation
+         (overlay_set_text, "$g_presentation_obj_1", s1),
+         (str_store_string, s2, "str_empty_string"),
+         (try_begin),
+           (eq, "$g_tld_conversation_space_pressed", 0),
+           (str_store_string, s2, "@Press Space to continue..."),
+         (try_end),
+         (overlay_set_text, "$g_presentation_obj_2", s2),
        ], []),
     ],
 ),

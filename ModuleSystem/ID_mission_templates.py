@@ -41,3 +41,4 @@ mst_intro_gondor = 39
 mst_intro_mordor = 40
 mst_intro_joke = 41
 mst_test_gandalf = 42
+mst_conversation_cutscene = 43

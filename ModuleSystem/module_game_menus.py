@@ -2619,14 +2619,33 @@ game_menus = [
    [],
     [("intro",[], "Play intro.", [(jump_to_menu, "mnu_auto_intro_rohan"),]),
      ("joke",[],  "Play GA joke.", [(jump_to_menu, "mnu_auto_intro_joke"),]),
-     ("joke",[],  "Play Gandalf encounter.", [(jump_to_menu, "mnu_auto_convo"),]),
-     ("justatest",[], "Enter conversation scene.", [
+     #("test",[],  "Play Gandalf test encounter.", [(jump_to_menu, "mnu_auto_convo"),]),
+     ("gandalf_1",[], "Play Gandalf advice.", [(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_advice),]),
+     ("gandalf_2",[], "Play Gandalf ally down.", [(assign, "$g_tld_convo_subject", "fac_dale"),(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_ally_down),]),
+     ("gandalf_3",[], "Play Gandalf enemy down.", [(assign, "$g_tld_convo_subject", "fac_gundabad"),(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_enemy_down),]),
+     ("gandalf_4",[], "Play Gandalf victory.", [(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_victory),]),
+     ("nazgul_1",[], "Play Nazgul Baggins.", [(call_script, "script_start_conversation_cutscene", tld_cc_nazgul_baggins),]),
+     ("nazgul_2",[], "Play Nazgul evil war.", [(call_script, "script_start_conversation_cutscene", tld_cc_nazgul_evil_war),]),
+     ("nazgul_3",[], "Play Nazgul victory.", [(call_script, "script_start_conversation_cutscene", tld_cc_nazgul_victory),]),
+     ("scenetest",[], "Enter conversation scene.", [
                                 (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
                                 (set_visitor,0,"trp_player"),
                                 (set_visitor,1,"trp_gandalf"),
                                 (set_jump_mission,"mt_test_gandalf"),
                                 (jump_to_scene,"scn_conversation_scene"),
                                 (change_screen_mission),
+                                ]),
+     ("partytest",[], "Create a Gandalf party following you.", [
+                                (set_spawn_radius, 5),
+                                (spawn_around_party, "p_main_party", "pt_gandalf"),
+                                (assign, ":party", reg0),
+                                (party_set_ai_behavior, ":party", ai_bhvr_attack_party),
+                                (party_set_ai_object, ":party", "p_main_party"),
+                                (party_set_flags, ":party", pf_default_behavior, 0),
+                                (party_set_slot, ":party", slot_party_ai_state, spai_undefined),
+                                (troop_set_slot, "trp_gandalf", slot_troop_leaded_party, ":party"),
+                                (assign, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
+                                (display_message, "@Gandalf would like to have a little chat!", 0x30FFC8),
                                 ]),
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
@@ -3465,6 +3484,8 @@ game_menus = [
           #MV: Quest exceptions
           (assign, ":is_quest_party", 0),
           (try_begin),
+            (this_or_next|eq, "$g_encountered_party_template", "pt_gandalf"),
+            (this_or_next|eq, "$g_encountered_party_template", "pt_nazgul"),
             (eq, "$g_encountered_party_template", "pt_runaway_serfs"),
             (assign, ":is_quest_party", 1),
           (try_end),
@@ -3476,7 +3497,17 @@ game_menus = [
 			# talk with non-hostile parties OR quest parties
 			(assign, "$new_encounter", 0),
 			(assign, "$talk_context", tc_party_encounter),
-			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
+            (try_begin), #cutscene dialogs
+              (eq, "$g_encountered_party_template", "pt_gandalf"),
+              (gt, "$g_tld_gandalf_state", 0),
+              (call_script, "script_start_conversation_cutscene", "$g_tld_gandalf_state"),
+            (else_try), 
+              (eq, "$g_encountered_party_template", "pt_nazgul"),
+              (gt, "$g_tld_nazgul_state", 0),
+              (call_script, "script_start_conversation_cutscene", "$g_tld_nazgul_state"),
+            (else_try), #normal dialogs
+			  (call_script, "script_setup_party_meeting", "$g_encountered_party"),
+            (try_end),
           (try_end),
           (try_begin),
             (lt, "$g_encountered_party_relation", 0),
@@ -3855,7 +3886,14 @@ game_menus = [
       ],
     [
       ("reject",[],"Send a message you are too busy.",
-       [  (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 5),
+       [   (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 7),
+           #Send Gandalf on a little chat
+           (try_begin),
+             (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+             (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
+             (eq, ":already_done", 0),
+             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
+           (try_end),
            (change_screen_return),
         ]),
       ("continue",[],"Send word you'll join him shortly.",
@@ -7137,6 +7175,19 @@ game_menus = [
     ],
     []
 ),
+
+( "auto_conversation_cutscene",0,"stub","none",
+    [
+       (modify_visitors_at_site, "scn_conversation_scene"),
+       (reset_visitors),
+       (set_visitor, 0, "trp_player"),
+       (set_jump_mission, "mt_conversation_cutscene"),
+       (jump_to_scene, "scn_conversation_scene"),
+       (change_screen_mission),
+    ],
+    []
+),
+
 
 ###################### starting quest, GA ##############################  
 ("starting_quest_good",0,

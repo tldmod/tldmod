@@ -1968,3 +1968,22 @@ Penalties_sys = [
 ]
 
 skill2item_list = [0,"skl_riding","skl_leadership","skl_power_strike","skl_persuasion","skl_horse_archery","skl_first_aid","skl_shield","skl_power_draw","skl_surgery","skl_power_throw","skl_trade","skl_tactics","skl_ironflesh","skl_athletics","skl_looting"]
+
+#conversation cutscenes codes; also mission codes for the travelling Gandalf/Nazgul ($g_tld_gandalf_state, $g_tld_nazgul_state)
+# special values 0=travelling for flavor; -1=inactive
+tld_cc_gandalf_advice     = 1
+tld_cc_gandalf_ally_down  = 2
+tld_cc_gandalf_enemy_down = 3
+tld_cc_gandalf_victory    = 4
+tld_cc_nazgul_baggins     = 5
+tld_cc_nazgul_evil_war    = 6
+tld_cc_nazgul_victory     = 7
+
+#conversation bit masks for $g_tld_conversations_done
+tld_conv_bit_gandalf_advice     = 0x01
+tld_conv_bit_gandalf_ally_down  = 0x02
+tld_conv_bit_gandalf_enemy_down = 0x04
+tld_conv_bit_gandalf_victory    = 0x08
+tld_conv_bit_nazgul_baggins     = 0x10
+tld_conv_bit_nazgul_evil_war    = 0x20
+tld_conv_bit_nazgul_victory     = 0x40

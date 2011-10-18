@@ -2694,12 +2694,12 @@ presentations = [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
-        (str_store_string, s1, "@______"),
-        (create_text_overlay, "$g_presentation_obj_1", s1, tf_center_justify),
+        (str_store_string, s1, "str_empty_string"),
+        (create_text_overlay, "$g_presentation_obj_1", s1, tf_center_justify), #subtitles
         (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
         
         (position_set_x, pos1, 500),
-        (position_set_y, pos1, 50),
+        (position_set_y, pos1, 80),
         (overlay_set_position, "$g_presentation_obj_1", pos1),
         # (position_set_x, pos1, 1200),
         # (position_set_y, pos1, 1200),
@@ -2707,25 +2707,18 @@ presentations = [
         # (position_set_x, pos1, 880),
         # (position_set_y, pos1, 90),
         # (overlay_set_area_size, "$g_presentation_obj_1", pos1),
+        
+        (create_text_overlay, "$g_presentation_obj_2", s1, tf_center_justify), #Press Space to continue...
+        (overlay_set_color, "$g_presentation_obj_2", 0x808080),
+        
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 20),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+        (position_set_x, pos1, 700),
+        (position_set_y, pos1, 700),
+        (overlay_set_size, "$g_presentation_obj_2", pos1),
         ]),
-      (ti_on_presentation_run,
-       [
-        (str_store_string, s1, "@______"),
-        (try_begin),
-          (eq, "$g_tld_conversation_state", 3),
-          (overlay_set_color, "$g_presentation_obj_1", 0x80FF80),
-          (str_store_string, s1, "@Ah, what a coincidence, running into you {playername}! You might not know me, but are not unknown to me. I am on my way to King Theoden of Rohan, but I have just come from Steward Denethor and your name has come up. Steward Denethor is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding Steward Denethor to your utmost capabilities."),
-        (else_try),
-          (eq, "$g_tld_conversation_state", 4),
-          (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
-          (str_store_string, s1, "@Who are you?"),
-        (else_try),
-          (eq, "$g_tld_conversation_state", 5),
-          (overlay_set_color, "$g_presentation_obj_1", 0x80FF80),
-          (str_store_string, s1, "@A friend of Steward Denethor and the people of Gondor. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!"),
-        (try_end),
-        (overlay_set_text, "$g_presentation_obj_1", s1),
-        ]),
+
 ]),
 
 ]

@@ -1600,6 +1600,12 @@ scripts = [
 	(assign, "$gate_breached", 0),# destructible gate variables
 	(assign, "$gate_aggravator_agent", 0),
 #    (assign, "$equip_needs_checking", 1),
+	(assign, "$g_tld_conversations_done", 0),
+	(assign, "$g_tld_gandalf_state", -1),
+	(assign, "$g_tld_nazgul_state", -1),
+
+
+
    ################ 808 globals
     (assign, "$trait_captain_infantry_week", 0),
     (assign, "$trait_captain_archer_week", 0),
@@ -18213,6 +18219,279 @@ scripts = [
 		(try_end),    
 	(try_end),
 ]),
+
+#script_start_conversation_cutscene (MV)
+#Input: conversation number
+#Starts a cutscene according to the conversation number
+("start_conversation_cutscene",[
+    (store_script_param_1, ":convo_code"),
+    
+    #determine talker
+    (try_begin),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_advice),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_ally_down),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_enemy_down),
+      (eq, ":convo_code", tld_cc_gandalf_victory),
+      (assign, "$g_tld_convo_talker", "trp_gandalf"),
+    (else_try),
+      (assign, "$g_tld_convo_talker", "trp_nazgul"),
+    (try_end),
+    
+    #fill up dialog lines in strings s50, s51... and set number of lines
+    (try_begin),
+      (eq, ":convo_code", tld_cc_gandalf_advice),
+      
+      # find closest good faction
+      (faction_get_slot, ":player_capital", "$players_kingdom", slot_faction_capital),
+      (assign, ":min_distance", 9999999),
+      (assign, ":nearest_faction", -1),
+      (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+        (neq, ":faction", "$players_kingdom"),
+        (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+        (faction_get_slot, ":capital", ":faction", slot_faction_capital),
+        (call_script, "script_get_tld_distance", ":player_capital", ":capital"),
+        (assign, ":party_distance", reg0),
+        (lt, ":party_distance", ":min_distance"),
+        (assign, ":min_distance", ":party_distance"),
+        (assign, ":nearest_faction", ":faction"),
+      (try_end),
+      
+      (str_store_faction_name, s2, "$players_kingdom"),
+      (faction_get_slot, ":player_king", "$players_kingdom", slot_faction_leader),
+      (str_store_troop_name, s3, ":player_king"),
+      (faction_get_slot, ":nearest_king", ":nearest_faction", slot_faction_leader),
+      (str_store_troop_name, s4, ":nearest_king"),
+      
+      (str_store_string, s50, "@Ah, what a coincidence, running into you {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities."),
+      (str_store_string, s51, "@Who are you?"),
+      (str_store_string, s52, "@A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!"),
+      (str_store_string, s53, "@What should I do?"),
+      (str_store_string, s54, "@Find {s3}'s whereabouts immediately and speak with him. Good luck!"),
+      (assign, "$g_tld_convo_lines", 5),
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
+    (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_ally_down),
+      
+      (assign, ":best_strength", -1),
+      (assign, ":best_faction", -1),
+      (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+        (faction_get_slot, ":strength", ":faction", slot_faction_strength),
+        (gt, ":strength", ":best_strength"),
+        (assign, ":best_strength", ":strength"),
+        (assign, ":best_faction", ":faction"),
+      (try_end),
+      
+      (str_store_faction_name, s2, "$players_kingdom"),
+      (str_store_faction_name, s3, "$g_tld_convo_subject"),
+      (faction_get_slot, ":dead_king", "$g_tld_convo_subject", slot_faction_leader),
+      (str_store_troop_name, s4, ":dead_king"),
+      (str_store_faction_name, s5, ":best_faction"),
+      
+      (str_store_string, s50, "@Good to see the Shadow has not yet managed to defeat you {playername}."),
+      (str_store_string, s51, "@You are the one they call Gandalf or Mithrandir."),
+      (str_store_string, s52, "@That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all."),
+      (str_store_string, s53, "@What do you mean?"),
+      (str_store_string, s54, "@In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more."),
+      (str_store_string, s55, "@You bring dismal news, wizard."),
+      (str_store_string, s56, "@But I also bring a message of hope. The people of {s5} are still holding firm. Their warriors are fearless and their leaders resolute."),
+      (str_store_string, s57, "@What should I do?"),
+      (str_store_string, s58, "@Help them fight the enemy as best as you can. Never relent! But be on your guard! There are older and fouler things than Orcs in the world."),
+      (assign, "$g_tld_convo_lines", 9),
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_ally_down),
+    (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_enemy_down),
+      
+      (str_store_faction_name, s3, "$g_tld_convo_subject"),
+      (faction_get_slot, ":dead_king", "$g_tld_convo_subject", slot_faction_leader),
+      (str_store_troop_name, s4, ":dead_king"),
+      
+      (str_store_string, s50, "@Beware {playername}, the might of Darkness crumbles. {s3} has fallen, as has its leader {s4}."),
+      (str_store_string, s51, "@What do you want of me, old man?"),
+      (str_store_string, s52, "@Just know that a Dawn is coming. It is inevitable. And should you still be alive to see it, consider what you shall have to say for yourself then."),
+      (assign, "$g_tld_convo_lines", 3),
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_enemy_down),
+    (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_victory),
+      
+      (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),
+      (call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg0),
+      
+      (str_store_string, s50, "@Well met {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!"),
+      (str_store_string, s51, "@Thank you, Mithrandir!"),
+      (str_store_string, s52, "@The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!"),
+      (str_store_string, s53, "@It was a long and bloody war and many of our close friends are also no longer with us."),
+      (str_store_string, s54, "@There is much to regret and mourn, and even more to rebuild and mend in the coming days. But for now, let us be jubilant with those of our friends that are with us still and celebrate all we have achieved in The Last Days Of The Third Age."),
+      (assign, "$g_tld_convo_lines", 5),
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_victory),
+    (else_try),
+      (eq, ":convo_code", tld_cc_nazgul_baggins),
+      
+      (str_store_string, s50, "@Bagginsssss... Sssshhhire..."),
+      (str_store_string, s51, "@I... don't know!"),
+      (str_store_string, s52, "@It... beckonsssssss..."),
+      (assign, "$g_tld_convo_lines", 3),      
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_baggins),
+    (else_try),
+      (eq, ":convo_code", tld_cc_nazgul_evil_war),
+      
+      (str_store_string, s50, "@Treachery... Unforgiven..."),
+      (str_store_string, s51, "@But I..."),
+      (str_store_string, s52, "@Noone... oppossssses... Barad Dur... and livessss!"),
+      (assign, "$g_tld_convo_lines", 3),      
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_evil_war),
+    (else_try),
+      (eq, ":convo_code", tld_cc_nazgul_victory),
+      
+      (str_store_string, s50, "@All... must... submit... and... serve..."),
+      (str_store_string, s51, "@I serve the Eye!"),
+      (assign, "$g_tld_convo_lines", 2),      
+      (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_victory),
+    (try_end),
+
+    #start the cutscene
+    (jump_to_menu, "mnu_auto_conversation_cutscene"),
+    
+    #send the conversation party back immediately
+    (call_script, "script_send_from_conversation_mission", "$g_tld_convo_talker"),
+]),
+
+#script_send_on_conversation_mission (MV)
+#Input: mission/conversation code
+#Reroutes or spawns Gandalf/Nazgul party and sends it to meet the player for a specific conversation
+("send_on_conversation_mission",[
+    (store_script_param_1, ":mission_code"),
+    
+    #determine mission troop and its data
+    (try_begin),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_advice),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_ally_down),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_enemy_down),
+      (eq, ":mission_code", tld_cc_gandalf_victory),
+      (assign, ":mission_troop", "trp_gandalf"),
+      (assign, ":party_template", "pt_gandalf"),
+      (assign, ":mission_troop_side", faction_side_good),
+      (assign, ":state", "$g_tld_gandalf_state"),
+    (else_try),
+      (assign, ":mission_troop", "trp_nazgul"),
+      (assign, ":party_template", "pt_nazgul"),
+      (assign, ":mission_troop_side", faction_side_eye),
+      (assign, ":state", "$g_tld_nazgul_state"),
+    (try_end),
+    
+    # check if party is missing when it shouldn't be; recover by creating it (this should never happen, but we handle it anyway)
+    (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
+    (assign, ":party_missing_bug", 0),
+    (try_begin),
+      (gt, ":party", 0),
+      (neg|party_is_active, ":party"),
+      (assign, ":party_missing_bug", 1),
+    (try_end),
+    
+    #if it's not spawned, spawn it
+    (try_begin),
+      (this_or_next|eq, ":state", -1), #mission troop inactive
+      (eq, ":party_missing_bug", 1), #...or a missing party
+      
+      #find nearest mission troop-friendly town
+      (assign, ":min_distance", 9999999),
+      (assign, ":nearest_town", -1),
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+        (store_faction_of_party, ":center_faction", ":center_no"),
+        (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul spawns in the nearest Eye town
+        (call_script, "script_get_tld_distance", "p_main_party", ":center_no"),
+        (assign, ":party_distance", reg0),
+        (lt, ":party_distance", ":min_distance"),
+        (assign, ":min_distance", ":party_distance"),
+        (assign, ":nearest_town", ":center_no"),
+      (try_end),
+      #this should never happen, but it's handled
+      (try_begin),
+        (eq, ":nearest_town", -1),
+        (assign, ":nearest_town", "p_main_party"),
+      (try_end),
+      
+      #spawn the party
+      (set_spawn_radius, 0),
+      (spawn_around_party, ":nearest_town", ":party_template"),
+      (assign, ":party", reg0),
+      (troop_set_slot, ":mission_troop", slot_troop_leaded_party, ":party"), #this is how we know it has a party
+    (try_end),
+    
+    #find the party and send it to meet the player
+    (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
+    (try_begin),
+      #(party_is_active, ":party"), #no need, we guarantee this
+      (party_set_ai_behavior, ":party", ai_bhvr_attack_party),
+      (party_set_ai_object, ":party", "p_main_party"),
+      (party_set_flags, ":party", pf_default_behavior, 0),
+    (try_end),
+    
+    (assign, ":state", ":mission_code"), #this overwrites any previous mission, even if it was a conversation - more recent news are more important
+    
+    (try_begin),
+      (eq, ":mission_troop", "trp_gandalf"),
+      (assign, "$g_tld_gandalf_state", ":state"),
+    (else_try),
+      (assign, "$g_tld_nazgul_state", ":state"),
+    (try_end),
+]),
+
+#script_send_from_conversation_mission (MV)
+#Input: mission troop
+#Send a Gandalf/Nazgul party after the conversation to some town
+("send_from_conversation_mission",[
+    (store_script_param_1, ":mission_troop"),
+    
+    #determine mission troop data
+    (try_begin),
+      (eq, ":mission_troop", "trp_gandalf"),
+      (assign, ":mission_troop_side", faction_side_good),
+    (else_try),
+      (assign, ":mission_troop_side", faction_side_eye),
+    (try_end),
+    
+      #find nearest mission troop-friendly town
+      (assign, ":min_distance", 9999999),
+      (assign, ":nearest_town", -1),
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (party_is_active, ":center_no"), #TLD
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+        (store_faction_of_party, ":center_faction", ":center_no"),
+        (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul spawns in the nearest Eye town
+        (call_script, "script_get_tld_distance", "p_main_party", ":center_no"),
+        (assign, ":party_distance", reg0),
+        (lt, ":party_distance", ":min_distance"),
+        (assign, ":min_distance", ":party_distance"),
+        (assign, ":nearest_town", ":center_no"),
+      (try_end),
+      #this should never happen, but it's handled
+      (try_begin),
+        (eq, ":nearest_town", -1),
+        (assign, ":nearest_town", "p_town_west_osgiliath"),
+      (try_end),
+          
+    #find the party and send it to the town
+    (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
+    (try_begin),
+      #(party_is_active, ":party"), #no need, we guarantee this
+      (party_set_ai_behavior, ":party", ai_bhvr_travel_to_party),
+      (party_set_ai_object, ":party", ":nearest_town"),
+      (party_set_flags, ":party", pf_default_behavior, 0),
+    (try_end),
+    
+    (assign, ":state", 0), # we are done, but the party still exists
+    
+    (try_begin),
+      (eq, ":mission_troop", "trp_gandalf"),
+      (assign, "$g_tld_gandalf_state", ":state"),
+    (else_try),
+      (assign, "$g_tld_nazgul_state", ":state"),
+    (try_end),
+]),
+
 
 ]
 

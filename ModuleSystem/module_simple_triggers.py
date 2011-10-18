@@ -1747,6 +1747,24 @@ simple_triggers = [
         #(neq, "$players_kingdom", ":cur_kingdom"), #TLD: player kingdom can be defeated!
         (faction_set_slot, ":cur_kingdom", slot_faction_state, sfs_defeated),
         
+        #Send Gandalf on a little chat
+        (try_begin), #first good faction falls - good player
+          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+          (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+          (assign, "$g_tld_convo_subject", ":cur_kingdom"),
+          (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_ally_down),
+          (eq, ":already_done", 0),
+          (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_ally_down),
+        (try_end),
+        (try_begin), #first evil faction falls - evil player
+          (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+          (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+          (assign, "$g_tld_convo_subject", ":cur_kingdom"),
+          (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_enemy_down),
+          (eq, ":already_done", 0),
+          (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_enemy_down),
+        (try_end),
+        
         #TLD: find the strongest enemy faction in the current or home theather, it will receive the centers
         (assign, ":best_strength", 0),
         (assign, ":best_faction", "fac_mordor"), #if no other, Mordor gets all :)
@@ -1876,6 +1894,14 @@ simple_triggers = [
             #(faction_slot_eq, "fac_mordor", slot_faction_state, sfs_active),
             #(faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
             
+            #Nazgul chat with the evil player
+            (try_begin),
+              (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+              (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_nazgul_evil_war),
+              (eq, ":already_done", 0),
+              (call_script, "script_send_on_conversation_mission", tld_cc_nazgul_evil_war),
+            (try_end),
+            
             # make sides hostile
             (try_for_range, ":mordor_ally", kingdoms_begin, kingdoms_end),
               (faction_slot_eq, ":mordor_ally", slot_faction_side, faction_side_eye),
@@ -1965,6 +1991,23 @@ simple_triggers = [
 	(try_begin),
 		(eq, ":game_over", 1),
 		(call_script, "script_add_notification_menu", "mnu_notification_one_side_left", ":living_side", 0),
+        
+        #Send Gandalf on a victory chat - good player
+        (try_begin),
+          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+          (eq, ":living_side", faction_side_good),
+          (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_victory),
+          (eq, ":already_done", 0),
+          (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_victory),
+        (try_end),
+        #Send Nazgul on a victory chat - evil player
+        (try_begin),
+          (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+          (neq, ":living_side", faction_side_good),
+          (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_nazgul_victory),
+          (eq, ":already_done", 0),
+          (call_script, "script_send_on_conversation_mission", tld_cc_nazgul_victory),
+        (try_end),
 	(try_end),
     # TLD: replaced by the above
     # (try_begin),
@@ -2103,6 +2146,83 @@ simple_triggers = [
 		(try_end),
 		(call_script, "script_healing_routine", "trp_player"),
 	(try_end),
+]),   
+
+#Control Gandalf and Nazgul states 
+(1,[
+  #Send Nazgul to look for Baggins - evil player
+  (try_begin),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_nazgul_baggins),
+    (eq, ":already_done", 0),
+    (store_character_level, ":level", "trp_player"),
+    (ge, ":level", 4),
+    (call_script, "script_send_on_conversation_mission", tld_cc_nazgul_baggins),
+  (try_end),
+        
+  (try_for_range, ":celebrity", 0, 2), #process Gandalf, then the Nazgul in the same way
+    (try_begin),
+      (eq, ":celebrity", 0),
+      (assign, ":mission_troop", "trp_gandalf"),
+      (assign, ":mission_troop_side", faction_side_good),
+      (assign, ":state", "$g_tld_gandalf_state"),
+    (else_try),
+      (assign, ":mission_troop", "trp_nazgul"),
+      (assign, ":mission_troop_side", faction_side_eye),
+      (assign, ":state", "$g_tld_nazgul_state"),
+    (try_end),
+    
+    #Gandalf
+    (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
+    (try_begin),
+      (eq, ":state", 0), #active, not on a mission
+      (party_is_active, ":party"), #should always be true here
+      # when in town, randomly make him travel to some nearby random town not too far from the player
+      (try_begin),
+        (party_is_in_any_town, ":party"),
+        (store_random_in_range, ":rand", 0, 100),
+        (eq, ":rand", 0), # every hour 1% chance
+        
+        #find random mission troop-friendly town close to the player
+        (assign, ":min_distance", 9999999),
+        (assign, ":nearest_town", -1),
+        (try_for_range, ":center_no", centers_begin, centers_end),
+          (party_is_active, ":center_no"), #TLD
+	      (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+          (store_faction_of_party, ":center_faction", ":center_no"),
+          (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul spawns in the nearest Eye town
+          (call_script, "script_get_tld_distance", "p_main_party", ":center_no"),
+          (assign, ":party_distance", reg0),
+          (lt, ":party_distance", ":min_distance"),
+          (store_random_in_range, ":rand2", 0, 100),
+          (this_or_next|eq, ":nearest_town", -1),
+          (ge, ":rand2", 50), #ignore 50% of the towns randomly
+          (assign, ":min_distance", ":party_distance"),
+          (assign, ":nearest_town", ":center_no"),
+        (try_end),
+        
+        (neq, ":nearest_town", -1), #failing is no problem
+        
+        (party_set_ai_behavior, ":party", ai_bhvr_travel_to_party),
+        (party_set_ai_object, ":party", ":nearest_town"),
+        (party_set_flags, ":party", pf_default_behavior, 0),
+
+# old party removal code        
+#        (assign, ":state", -1),
+#        (troop_set_slot, ":mission_troop", slot_troop_leaded_party, -1),
+#(display_message, "@DEBUG: Party arrived and removed", 0xff00fd33),
+      (try_end), 
+    (try_end),
+    
+    # (try_begin),
+      # (eq, ":celebrity", 0),
+      # (assign, "$g_tld_gandalf_state", ":state"),
+    # (else_try),
+      # (assign, "$g_tld_nazgul_state", ":state"),
+    # (try_end),
+        
+    #random spawning and travel here
+  (try_end), # try_for_range
 ]),   
 
 ##############################################
