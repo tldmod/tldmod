@@ -1,5 +1,5 @@
 itemsfile version 2
-882
+884
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2656,6 +2656,12 @@ itemsfile version 2
 0
 
  itm_good_mace Mace Mace 1  good_mace 0  4653058 9223388532775583758 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 527 537
+0
+
+ itm_gandstaff Wizards_Staff Wizards_Staff 1  gandstaff 0  138838020 4222129415393024 1 0 2.500000 100 0 0 0 0 51200 103 0 118 0 552 562
+0
+
+ itm_sarustaff Wizards_Staff Wizards_Staff 1  sarustaff 0  138838020 4222129415393024 1 0 2.500000 100 0 0 0 0 51200 103 0 118 0 552 562
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 3000 0 2.500000 100 50 0 0 0 0 0 0 0 0 0 0

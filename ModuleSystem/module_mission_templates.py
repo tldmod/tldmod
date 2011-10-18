@@ -404,7 +404,8 @@ mission_templates = [ # not used in game
 			(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
 			 (else_try),					 (play_sound, "$bs_day_sound",   sf_looping),
 			(try_end),
-			(troop_get_inventory_slot,"$horse_type","trp_player",8), #checks for horse lameness in mission
+			(get_player_agent_no, "$current_player_agent"),
+			(agent_get_horse,"$horse_player","$current_player_agent"), #checks for horse lameness in mission
 			(troop_get_inventory_slot_modifier,"$horse_mod","trp_player",8),
 			]),
 	(1, 0, 5,  [
@@ -1652,6 +1653,9 @@ mission_templates = [ # not used in game
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
      ],[
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+	(0,0,ti_once,[],[(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
+					  (else_try),					  (play_sound, "$bs_day_sound",   sf_looping),
+					 (try_end)]),
 ]),
 ( "tld_erebor_dungeon",0,-1,"Default town visit",
     [(0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),

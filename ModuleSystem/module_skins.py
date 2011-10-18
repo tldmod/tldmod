@@ -642,7 +642,7 @@ skins = [
      ("east_bandit_face_c",0xff807c8a,["hair_blonde"],[0xff120808, 0xff07080c]),     
 
      ], #man_face_textures,
-    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_victory,"snd_man_victory")], #voice sounds
+    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_warcry"),(voice_victory,"snd_man_victory")], #voice sounds
     "skel_human", 0.95,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)

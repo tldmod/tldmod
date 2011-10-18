@@ -1048,8 +1048,8 @@ nazgul_sweeps = (2,1.2,5,[
 tld_player_cant_ride = (1.90,1.5,0.5,[
 
 	(eq, "$tld_option_crossdressing", 0),
-	(get_player_agent_no, ":player_agent"),
-	(agent_get_horse,":mount",":player_agent"),
+	(get_player_agent_no, "$current_player_agent"),
+	(agent_get_horse,":mount","$current_player_agent"),
     (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
 	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
@@ -1057,8 +1057,8 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(agent_get_item_id,":mount_item", ":mount"),
 	
 	(try_begin), # lame horses can stall
-		(eq, "$horse_mod", imodbit_lame),
-		(eq, ":mount_item","$horse_type"),
+		(eq, "$horse_mod", imod_lame),
+		(eq, ":mount","$horse_player"),
 		(store_random_in_range, reg1 ,0,20),
 		(ge, reg1, 1),
 		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 

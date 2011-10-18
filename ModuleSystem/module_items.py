@@ -1245,6 +1245,8 @@ items =[
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,3000,weight(3)|head_armor(50)|difficulty(0),0],
 ["good_mace","Mace",[("good_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
+["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
+["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff|itcf_carry_sword_back,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ]

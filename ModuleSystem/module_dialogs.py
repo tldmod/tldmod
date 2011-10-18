@@ -123,8 +123,10 @@ dialogs = [
                      (str_store_string_reg,s67,s66), #bug fix
                      # put orc/uruk heads out of the way
 					 (get_player_agent_no, "$current_player_agent"),
-					 (agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
-					 
+					 (agent_get_horse,reg1,"$current_player_agent"),
+					 (try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+					  (else_try),               (agent_set_animation, "$current_player_agent", "anim_lean_from_camera_mounted"),
+					 (try_end),
 					 (eq, 1, 0)],
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
@@ -162,7 +164,10 @@ dialogs = [
                      (str_store_string_reg,s65,s64),
                      # put orc/uruk heads out of the way
 					 (get_player_agent_no, "$current_player_agent"),
-					 (agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+					 (agent_get_horse,reg1,"$current_player_agent"),
+					 (try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+					  (else_try),               (agent_set_animation, "$current_player_agent", "anim_lean_from_camera_mounted"),
+					 (try_end),
 					 (eq, 1, 0)],  
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
@@ -200,7 +205,10 @@ dialogs = [
                      (str_store_string_reg,s65,s64),
                      # put orc/uruk heads out of the way
 					 (get_player_agent_no, "$current_player_agent"),
-					 (agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+					 (agent_get_horse,reg1,"$current_player_agent"),
+					 (try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+					  (else_try),               (agent_set_animation, "$current_player_agent", "anim_lean_from_camera_mounted"),
+					 (try_end),
 					 (eq, 1, 0)],  
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
   

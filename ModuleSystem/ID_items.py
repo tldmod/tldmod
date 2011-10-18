@@ -879,4 +879,6 @@ itm_miruvor_reward = 877
 itm_wheeled_cage = 878
 itm_khamul_helm = 879
 itm_good_mace = 880
-itm_witchking_helmet = 881
+itm_gandstaff = 881
+itm_sarustaff = 882
+itm_witchking_helmet = 883
