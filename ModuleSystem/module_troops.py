@@ -2041,7 +2041,7 @@ troops = [
    [itm_gondor_warhorse,itm_gondor_fine_outfit_dress,itm_gon_leader_surcoat_cloak,itm_leather_boots,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],
 ["rohan_lord","King_Theoden","King",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
-   [itm_mearas_reward,itm_rohan_fine_outfit_dale_dress,itm_rohan_armor_l,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
+   [itm_mearas_reward,itm_rohan_fine_outfit_dale_dress,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
 ["isengard_lord","Saruman","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_isengard,
    [itm_courser,itm_whiterobe,itm_leather_boots,itm_sarustaff,],
@@ -2138,7 +2138,7 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_5,0x0000000dbf00334521c0723588aacd3700000000001c96db0000000000000000],
 ["knight_1_11","Elfhelm","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_warhorse,itm_rohan_armor_s,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
-      attr_tier_6,wp_tier_6,knight_skills_1,0x0000000bd000408415ec8ec6a9f25b2d00000000001fca780000000000000000],
+      attr_tier_6,wp_tier_6,knight_skills_1,0x0000000d8e002282211a8ce5aafd4eff00000000001cb45b0000000000000000],
 ["knight_1_12","Hama","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_warhorse,itm_rohan_armor_s,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
       attr_tier_6,wp_tier_6,knight_skills_2,0x0000000aa500124421188e67da1fcf3f00000000001cb4730000000000000000],
@@ -3000,7 +3000,7 @@ troops = [
 
 # Gandalf and Nazgul for conversations
 ["gandalf","Gandalf","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
-   [itm_mearas_reward,itm_whiterobe,itm_leather_boots,itm_gandstaff,itm_gondor_citadel_sword,],
+   [itm_mearas_reward,itm_whiterobe,itm_leather_boots,itm_gandstaff,itm_sword_of_arathorn,],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
 ["nazgul","Nazgul","Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],

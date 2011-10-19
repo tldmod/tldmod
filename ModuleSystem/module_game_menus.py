@@ -4014,7 +4014,7 @@ game_menus = [
 			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
 			(eq, "$g_battle_result", 1), 
-			(eq, ":winning_side_race", tf_male),
+			#(eq, ":winning_side_race", tf_male),
 			(store_faction_of_party,":fac","p_main_party"), # temporary patchwork to distinguish between factions not only races
 			(try_begin),(eq,":fac","fac_gondor"),(set_background_mesh, "mesh_draw_victory_gondor"),
 			 (else_try),(eq,":fac","fac_rohan" ),(set_background_mesh, "mesh_draw_victory_rohan"),

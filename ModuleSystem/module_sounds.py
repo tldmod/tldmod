@@ -48,13 +48,13 @@ sounds = [
 ("throw_knife",sf_vol_5, ["throw_knife_1.wav"]),
 ("throw_stone",sf_vol_7, ["throw_stone_1.wav"]),
 
-("reload_crossbow",sf_vol_3, ["reload_crossbow_1.ogg"]),
+("reload_crossbow",sf_vol_3, ["pull_bow_1.wav"]), #"reload_crossbow_1.ogg"
 ("reload_crossbow_continue",sf_vol_6, ["put_back_dagger.wav"]),
 ("pull_bow",sf_vol_4, ["pull_bow_1.wav"]),
 ("pull_arrow",sf_vol_5, ["pull_arrow.wav"]),
 
 ("arrow_pass_by",0, ["arrow_pass_by_1.wav","arrow_pass_by_2.wav","arrow_pass_by_3.wav","arrow_pass_by_4.wav"]),
-("bolt_pass_by",0, ["bolt_pass_by_1.ogg"]),
+("bolt_pass_by",0, ["arrow_pass_by_1.wav"]),#"bolt_pass_by_1.ogg"
 ("javelin_pass_by",0, ["javelin_pass_by_1.wav","javelin_pass_by_2.wav"]),
 ("stone_pass_by",sf_vol_9, ["stone_pass_by_1.wav"]),
 ("axe_pass_by",0, ["axe_pass_by_1.wav","axe_pass_by_2.wav"]),
@@ -122,7 +122,7 @@ sounds = [
 ("unhide",0, ["s_unhide.wav"]),
 ("neigh",0, ["silence.wav"]),
 ("gallop",sf_vol_3, ["horse_gallop_3.wav","horse_gallop_4.wav","horse_gallop_5.wav"]),
-("battle",sf_vol_4, ["battle.ogg"]),
+("battle",sf_vol_4, ["battle.wav"]),
 ("arrow_hit_body",sf_priority_4, ["arrow_hit_body_1.wav","arrow_hit_body_2.wav","arrow_hit_body_3.wav"]),
 ("metal_hit_low_armor_low_damage",sf_priority_5|sf_vol_9, ["sword_hit_lo_armor_lo_dmg_1.wav","sword_hit_lo_armor_lo_dmg_2.wav","sword_hit_lo_armor_lo_dmg_3.wav"]),
 ("metal_hit_low_armor_high_damage",sf_priority_5|sf_vol_9, ["sword_hit_lo_armor_hi_dmg_1.wav","sword_hit_lo_armor_hi_dmg_2.wav","sword_hit_lo_armor_hi_dmg_3.wav"]),
@@ -136,15 +136,15 @@ sounds = [
 ("player_hit_by_arrow",sf_priority_10|sf_vol_10, ["player_hit_by_arrow.wav"]),
 ("pistol_shot",sf_priority_10|sf_vol_10, ["fl_pistol.wav"]),
 
-("encounter_looters",sf_2d|sf_vol_5, ["encounter_river_pirates_5.ogg","encounter_river_pirates_6.ogg","encounter_river_pirates_9.ogg","encounter_river_pirates_10.ogg","encounter_river_pirates_4.ogg"]),
-("encounter_bandits",sf_2d|sf_vol_5, ["encounter_bandit_2.ogg","encounter_bandit_9.ogg","encounter_bandit_12.ogg","encounter_bandit_13.ogg","encounter_bandit_15.ogg","encounter_bandit_16.ogg","encounter_bandit_10.ogg",]),
-("encounter_farmers",sf_2d|sf_vol_5, ["encounter_farmer_2.ogg","encounter_farmer_5.ogg","encounter_farmer_7.ogg","encounter_farmer_9.ogg"]),
+#("encounter_looters",sf_2d|sf_vol_5, ["encounter_river_pirates_5.ogg","encounter_river_pirates_6.ogg","encounter_river_pirates_9.ogg","encounter_river_pirates_10.ogg","encounter_river_pirates_4.ogg"]),
+#("encounter_bandits",sf_2d|sf_vol_5, ["encounter_bandit_2.ogg","encounter_bandit_9.ogg","encounter_bandit_12.ogg","encounter_bandit_13.ogg","encounter_bandit_15.ogg","encounter_bandit_16.ogg","encounter_bandit_10.ogg",]),
+#("encounter_farmers",sf_2d|sf_vol_5, ["encounter_farmer_2.ogg","encounter_farmer_5.ogg","encounter_farmer_7.ogg","encounter_farmer_9.ogg"]),
 ("encounter_sea_raiders",sf_2d|sf_vol_5, ["encounter_sea_raider_5.ogg","encounter_sea_raider_9.ogg","encounter_sea_raider_9b.ogg","encounter_sea_raider_10.ogg"]),
 ("encounter_steppe_bandits",sf_2d|sf_vol_5, ["encounter_steppe_bandit_3.ogg","encounter_steppe_bandit_3b.ogg","encounter_steppe_bandit_8.ogg","encounter_steppe_bandit_10.ogg","encounter_steppe_bandit_12.ogg"]),
-("encounter_nobleman",sf_2d|sf_vol_5, ["encounter_nobleman_1.ogg"]),
-("encounter_vaegirs_ally",sf_2d|sf_vol_5, ["encounter_vaegirs_ally.ogg","encounter_vaegirs_ally_2.ogg"]),
-("encounter_vaegirs_neutral",sf_2d|sf_vol_5, ["encounter_vaegirs_neutral.ogg","encounter_vaegirs_neutral_2.ogg","encounter_vaegirs_neutral_3.ogg","encounter_vaegirs_neutral_4.ogg"]),
-("encounter_vaegirs_enemy",sf_2d|sf_vol_5, ["encounter_vaegirs_neutral.ogg","encounter_vaegirs_neutral_2.ogg","encounter_vaegirs_neutral_3.ogg","encounter_vaegirs_neutral_4.ogg"]),
+#("encounter_nobleman",sf_2d|sf_vol_5, ["encounter_nobleman_1.ogg"]),
+#("encounter_vaegirs_ally",sf_2d|sf_vol_5, ["encounter_vaegirs_ally.ogg","encounter_vaegirs_ally_2.ogg"]),
+#("encounter_vaegirs_neutral",sf_2d|sf_vol_5, ["encounter_vaegirs_neutral.ogg","encounter_vaegirs_neutral_2.ogg","encounter_vaegirs_neutral_3.ogg","encounter_vaegirs_neutral_4.ogg"]),
+#("encounter_vaegirs_enemy",sf_2d|sf_vol_5, ["encounter_vaegirs_neutral.ogg","encounter_vaegirs_neutral_2.ogg","encounter_vaegirs_neutral_3.ogg","encounter_vaegirs_neutral_4.ogg"]),
 ("sneak_town_halt",sf_2d, ["sneak_halt_1.ogg","sneak_halt_2.ogg"]),
  
 ("horse_walk"  ,sf_priority_3|sf_vol_9, ["horse_walk_1.wav","horse_walk_2.wav","horse_walk_3.wav","horse_walk_4.wav"]),
@@ -154,7 +154,7 @@ sounds = [
 ("horse_breath",sf_priority_3|sf_vol_10,["horse_breath_4.wav","horse_breath_5.wav","horse_breath_6.wav","horse_breath_7.wav"]),
 ("horse_snort" ,sf_priority_5|sf_vol_7, ["silence.wav"]),
 ("horse_low_whinny",          sf_vol_9, ["silence.wav"]),
-("block_fist",0, ["block_fist_3.ogg","block_fist_4.ogg"]),
+("block_fist",0, ["block_fist_3.ogg","block_fist_4.ogg"]), #"block_fist_3.ogg","block_fist_4.ogg"
 ("man_hit_blunt_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_blunt_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_pierce_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
@@ -162,13 +162,13 @@ sounds = [
 ("man_hit_cut_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_cut_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","man_victory_15.wav","man_victory_49.wav","man_victory_52.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
-("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg"]),
+("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg"]), #"Fire_Torch_Loop3.ogg"
 ("torch_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg"]),
 ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
 ("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
-("cow_moo", sf_2d|sf_priority_9|sf_vol_8, ["cow_moo_1.ogg"]),
-("cow_slaughter", sf_2d|sf_priority_9|sf_vol_8, ["cow_slaughter.ogg"]),
+#("cow_moo", sf_2d|sf_priority_9|sf_vol_8, ["cow_moo_1.ogg"]),
+#("cow_slaughter", sf_2d|sf_priority_9|sf_vol_8, ["cow_slaughter.ogg"]),
 ("distant_dog_bark", sf_2d|sf_priority_8|sf_vol_8, ["d_dog1.ogg","d_dog2.ogg","d_dog3.ogg","d_dog7.ogg"]),
 ("distant_owl", sf_2d|sf_priority_8|sf_vol_9, ["d_owl2.ogg","d_owl3.ogg","d_owl4.ogg"]),
 ("distant_chicken", sf_2d|sf_priority_8|sf_vol_8, ["d_chicken1.ogg","d_chicken2.ogg"]),
@@ -268,7 +268,7 @@ sounds = [
 ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
 
 ("warg_lone_woof",sf_priority_6|sf_vol_10, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav"]),#,"warg_howl02.mp3","warg_howl03.mp3"
-("horse_snort_again",sf_priority_5|sf_vol_7, ["horse_snort_1.ogg","horse_snort_2.ogg","horse_snort_3.ogg","horse_snort_4.ogg","horse_snort_5.ogg"]),
+("horse_snort_again",sf_priority_5|sf_vol_7, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 
 ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
  

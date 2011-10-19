@@ -1878,7 +1878,7 @@ scene_props = [
 ("ZT_pl_aspen_yg1", 0, "PW_tree_f_1", "bo_pw_tree_f_1", []), ("ZT_pl_aspen_yg2", 0, "PW_tree_f_2", "bo_pw_tree_f_2", []), ("ZT_pl_aspen_yg3", 0, "PW_tree_f_3", "bo_pw_tree_f_3", []), 
 ("ZT_pl_aspen_yb1", 0, "PL_aspen_yellowbush1", "0", []), ("ZT_pl_aspen_yb2", 0, "PL_aspen_yellowbush2", "0", []), ("ZT_pl_aspen_yb3", 0, "PL_aspen_yellowbush3", "0", []), 
 
-("ZT_pl_oak_gr1", 0, "PL_oak_group1", "0", []), ("ZT_pl_oak_gr2", 0, "PL_oak_group2", "0", []), ("ZT_pl_oak_gr3", 0, "PL_oak_group3", "0", []), 
+("ZT_pl_oak_gr1", 0, "PL_oak_group1", "bo_pl_oak_group1", []), ("ZT_pl_oak_gr2", 0, "PL_oak_group2", "bo_pl_oak_group2", []), ("ZT_pl_oak_gr3", 0, "PL_oak_group3", "bo_pl_oak_group3", []), 
 ("ZT_pl_willow_b1", 0, "PW_bushes02_a", "bo_pw_bushes02_a", []), ("ZT_pl_willow_b2", 0, "PW_bushes02_b", "bo_pw_bushes02_a", []), ("ZT_pl_willow_b3", 0, "PW_bushes02_c", "bo_pw_bushes02_a", []), 
 
 ("ZT_pl_shalebush1", 0, "PW_bushes11_a", "0", []), ("ZT_pl_shalebush2", 0, "PW_bushes11_b", "0", []), ("ZT_pl_shalebush3", 0, "PW_bushes11_c", "0", []), 
