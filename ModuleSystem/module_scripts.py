@@ -1413,11 +1413,12 @@ scripts = [
 		(troop_set_slot, ":kingdom_hero", slot_troop_player_order_object, -1),
 	(try_end),
 # Rohan lord banners
-	(assign, ":rohan_banner_id", "spr_banner_f01"), #first rohan banner in a list
-	(try_for_range, ":rohan_hero", "trp_knight_1_9", "trp_knight_1_15"),
-		(troop_set_slot, ":rohan_hero", slot_troop_banner_scene_prop, ":rohan_banner_id"),
-		(val_add,":rohan_banner_id",1),
-	(try_end),
+	(troop_set_slot, "trp_knight_1_9", slot_troop_banner_scene_prop, "spr_banner_f01"), #westfold
+	(troop_set_slot, "trp_knight_1_10", slot_troop_banner_scene_prop, "spr_banner_f05"), #westemnet
+	(troop_set_slot, "trp_knight_1_11", slot_troop_banner_scene_prop, "spr_banner_f02"), #aldburg
+#	(troop_set_slot, "trp_knight_1_12", slot_troop_banner_scene_prop, "spr_banner_ed"), # hama is kings man
+	(troop_set_slot, "trp_knight_1_13", slot_troop_banner_scene_prop, "spr_banner_f06"), #eastfold
+	(troop_set_slot, "trp_knight_1_14", slot_troop_banner_scene_prop, "spr_banner_f07"), #eastemnet
 # Gondor vassals lord banners
 	(troop_set_slot, "trp_knight_1_1", slot_troop_banner_scene_prop, "spr_banner_ek"), #lamedon
 	(troop_set_slot, "trp_knight_1_3", slot_troop_banner_scene_prop, "spr_banner_er"), #dol amroth
