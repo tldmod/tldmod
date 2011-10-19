@@ -2184,11 +2184,13 @@ simple_triggers = [
         (eq, ":rand", 0), # every hour 1% chance
         
         #find random mission troop-friendly town close to the player
+        (party_get_cur_town, ":cur_center", ":party"),
         (assign, ":min_distance", 9999999),
         (assign, ":nearest_town", -1),
         (try_for_range, ":center_no", centers_begin, centers_end),
           (party_is_active, ":center_no"), #TLD
 	      (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+          (neq, ":center_no", ":cur_center"),
           (store_faction_of_party, ":center_faction", ":center_no"),
           (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul spawns in the nearest Eye town
           (call_script, "script_get_tld_distance", "p_main_party", ":center_no"),
@@ -2202,7 +2204,10 @@ simple_triggers = [
         (try_end),
         
         (neq, ":nearest_town", -1), #failing is no problem
-        
+
+# (str_store_party_name, s4, ":nearest_town"),
+# (display_message, "@DEBUG: Celebrity departing to {s4}!", 0xff00ff),
+       
         (party_set_ai_behavior, ":party", ai_bhvr_travel_to_party),
         (party_set_ai_object, ":party", ":nearest_town"),
         (party_set_flags, ":party", pf_default_behavior, 0),

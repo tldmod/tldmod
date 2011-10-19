@@ -992,6 +992,32 @@ mission_templates_cutscenes = [
          (assign, "$g_tld_conversation_space_pressed", 1),
         ]),
         
+      # ambience sounds
+      (1, 0, ti_once, [], [			
+         (try_begin),
+           (eq, "$g_tld_convo_talker", "trp_gandalf"),
+           (play_sound, "snd_wind_ambiance", sf_looping),
+         (else_try),
+           (play_sound, "snd_morgul_ambiance", sf_looping),
+         (try_end),
+        ]),
+        
+      # agent noise
+      (1, 1, ti_once, [(eq, "$g_tld_conversation_state", 102),], [	#as the talker rides off		
+         # find Gandalf/Nazgul and make him screech
+         (try_for_agents, ":agent_no"), 
+           (agent_get_troop_id, ":agent_troop", ":agent_no"),
+           (eq, ":agent_troop", "$g_tld_convo_talker"),
+           (try_begin),
+             (eq, "$g_tld_convo_talker", "trp_nazgul"),
+             (agent_play_sound, ":agent_no", "snd_nazgul_skreech_short"),
+           # (else_try),
+             # (agent_play_sound, ":agent_no", "snd_nazgul_skreech_short"), #no Gandalf noise yet
+           (try_end),
+         (try_end),
+        ]),
+      
+      #Positions used: pos50-52 talker views, pos53-55 player views (only pos53 done), pos60 bird's eye talker view
       (0, 0, 0,
        [
          (set_show_messages, 0),
@@ -1009,7 +1035,7 @@ mission_templates_cutscenes = [
          (try_end),
          
          (try_begin),
-           (eq, "$g_tld_conversation_state", 1), #start with looking at Gandalf while he rides to meet the player
+           (eq, "$g_tld_conversation_state", 1), #start with looking at Gandalf/Nazgul while he rides to meet the player
            (mission_cam_set_mode, 1),
            (init_position, pos1),
            (position_rotate_z, pos1, 180),
@@ -1017,6 +1043,7 @@ mission_templates_cutscenes = [
            (position_set_x, pos1, 7500),
            (position_set_y, pos1, 12300),
            (position_set_z, pos1, 1500),
+           (copy_position, pos60, pos1), #pos60 - bird's eye talker view
            (mission_cam_set_position, pos1),
            (agent_get_position, pos1, ":player_agent"),
            (position_move_x, pos1, -50),
@@ -1024,20 +1051,41 @@ mission_templates_cutscenes = [
            (position_move_z, pos1, 180),
            (try_begin),
              (neq, ":horse_agent", -1),
-             (position_move_z, pos1, 140),
+             (position_move_z, pos1, 120),
+             #(position_rotate_x, pos1, 5),
            (try_end),
-           # (mission_cam_set_position, pos1),
-           # (init_position, pos1),
-           # (position_rotate_z, pos1, 180),
-           # (position_set_x, pos1, 7500),
-           # (position_set_y, pos1, 12300),
-           # (position_set_z, pos1, 600),
+           (copy_position, pos50, pos1), #pos50 - over-the-shoulder talker view
            (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes down and ends up behind player facing the talker
+           #initialize more positions we use later
+           (copy_position, pos51, pos50),
+           (position_move_y, pos51, 250), #pos51 - wide shot talker view
+           (position_rotate_z, pos51, 7),           
+           (init_position, pos53),
+           (position_rotate_x, pos53, -5),
+           (try_begin),
+             (eq, ":horse_agent", -1),
+             (position_rotate_x, pos53, -10),
+           (try_end),
+           (position_set_x, pos53, 7500),
+           (position_set_y, pos53, 11450),
+           (position_set_z, pos53, 600), #pos53 - over-the-shoulder player view
+           #end positions init
            (str_store_string, s1, "str_empty_string"),
            (val_add, "$g_tld_conversation_state", 1),
          (else_try),
            (eq, "$g_tld_conversation_state", 2), #waiting for the talker to come
-           (ge, ":cur_time", 6),
+           (ge, ":cur_time", 7),
+           
+           # find Gandalf/Nazgul and calculate pos52 for later use
+           (try_for_agents, ":agent_no"), 
+             (agent_get_troop_id, ":agent_troop", ":agent_no"),
+             (eq, ":agent_troop", "$g_tld_convo_talker"),
+             (agent_get_position, pos52, ":agent_no"),
+             (position_move_z, pos52, 260),
+             (position_move_y, pos52, 200),
+             (position_rotate_z, pos52, 180), #pos52 - medium close up talker view
+           (try_end),
+
            #Set text color
            (try_begin),
              (eq, "$g_tld_convo_talker", "trp_gandalf"),
@@ -1057,14 +1105,9 @@ mission_templates_cutscenes = [
            (try_begin),
              (eq, ":player_speaks", 0),
              #Talker speaks: camera behind player facing the talker
-             (agent_get_position, pos1, ":player_agent"),
-             (position_move_x, pos1, -50),
-             (position_move_y, pos1, -200),
-             (position_move_z, pos1, 170),
-             (try_begin),
-               (neq, ":horse_agent", -1),
-               (position_move_z, pos1, 140),
-             (try_end),
+             #(copy_position, pos1, pos50), #OTS talker
+             (store_random_in_range, ":pos", pos50, pos53),
+             (copy_position, pos1, ":pos"),
              (mission_cam_set_position, pos1),
              #Set text color
              (try_begin),
@@ -1075,11 +1118,7 @@ mission_templates_cutscenes = [
              (try_end),
            (else_try),
              #Player speaks: camera behind the talker facing player
-             (init_position, pos1),
-             #(position_rotate_x, pos1, 5),
-             (position_set_x, pos1, 7500),
-             (position_set_y, pos1, 11450),
-             (position_set_z, pos1, 580),
+             (copy_position, pos1, pos53), #OTS player
              (mission_cam_set_position, pos1),
              (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF), #Player: white
            (try_end),
@@ -1100,14 +1139,7 @@ mission_templates_cutscenes = [
            (eq, "$g_tld_conversation_state", 100), #
            (eq, "$g_tld_conversation_space_pressed", 1),
            #Place the camera behind the player in case he was the last to speak
-           (agent_get_position, pos1, ":player_agent"),
-           (position_move_x, pos1, -50),
-           (position_move_y, pos1, -200),
-           (position_move_z, pos1, 180),
-           (try_begin),
-             (neq, ":horse_agent", -1),
-             (position_move_z, pos1, 140),
-           (try_end),
+           (copy_position, pos1, pos50), #OTS talker
            (mission_cam_set_position, pos1),
            # find Gandalf/Nazgul and send him on his way
            (try_for_agents, ":agent_no"), 
@@ -1116,7 +1148,6 @@ mission_templates_cutscenes = [
              (init_position, pos1),
              (position_set_x, pos1, 7800),
              (position_set_y, pos1, 7500),
-             (position_rotate_z, pos1, 0),
              (set_spawn_position, pos1),
              (agent_set_scripted_destination, ":agent_no", pos1, 1),
            (try_end),
@@ -1126,13 +1157,7 @@ mission_templates_cutscenes = [
          (else_try),
            (eq, "$g_tld_conversation_state", 101), #wait a sec for the talker to turn around and ride off, then camera up
            (ge, ":cur_time", 1),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 180),
-           (position_rotate_x, pos1, -20),
-           (position_set_x, pos1, 7500),
-           (position_set_y, pos1, 12300),
-           (position_set_z, pos1, 1500),
-           (mission_cam_animate_to_position, pos1, 5000, 0), #camera goes up again
+           (mission_cam_animate_to_position, pos60, 5000, 0), #camera goes up again - same pos where it started in the scene
            (val_add, "$g_tld_conversation_state", 1),
          (else_try),
            (eq, "$g_tld_conversation_state", 102), #end mission

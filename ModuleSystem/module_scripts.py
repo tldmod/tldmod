@@ -18345,7 +18345,12 @@ scripts = [
       (eq, ":convo_code", tld_cc_nazgul_victory),
       
       (str_store_string, s50, "@All... must... submit... and... serve..."),
-      (str_store_string, s51, "@I serve the Eye!"),
+      (try_begin),
+        (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_eye),
+        (str_store_string, s51, "@I serve the Eye!"),
+      (else_try),
+        (str_store_string, s51, "@I shall serve the Eye!"),
+      (try_end),
       (assign, "$g_tld_convo_lines", 2),      
       (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_victory),
     (try_end),
