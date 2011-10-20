@@ -244,18 +244,27 @@ gondor_younger_1       = 0x00000004ef00200f070c6a374b40452c00000000001cc66900000
 gondor_older_1         = 0x000000072e002585209c6e399260532c00000000001cd6720000000000000000 
 
 #MV: default Rohan face (blond, beard+moustache)
-rohan_face_younger_1   = 0x0000000000000001124000000020000000000000001c00800000000000000000
-rohan_face_young_1     = 0x0000000400000001124000000020000000000000001c00800000000000000000
-rohan_face_middle_1    = 0x0000000800000141124000000020000000000000001c00800000000000000000
-rohan_face_old_1       = 0x0000000d00000180124000000020000000000000001c00800000000000000000
-rohan_face_older_1     = 0x0000000fc00001c0124000000020000000000000001c00800000000000000000
+rohan_face_younger_1   = 0x0000000000000001124000000025120900000000001c00800000000000000000
+rohan_face_young_1     = 0x0000000400000001124000000025120900000000001c00800000000000000000
+rohan_face_middle_1    = 0x0000000800000141124000000025120900000000001c00800000000000000000
+rohan_face_old_1       = 0x0000000d00000180124000000025120900000000001c00800000000000000000
+rohan_face_older_1     = 0x0000000fc00001c0124000000025120900000000001c00800000000000000000
 
 rohan_face_younger_2   = 0x00000000310031c24deeffffffffffff00000000001efff90000000000000000
 rohan_face_young_2     = 0x00000003b10031c34deeffffffffffff00000000001efff90000000000000000
 rohan_face_middle_2    = 0x00000008310031c54deeffffffffffff00000000001efff90000000000000000
 rohan_face_old_2       = 0x0000000cf10033054deeffffffffffff00000000001efff90000000000000000
 rohan_face_older_2     = 0x0000000ff10033054deeffffffffffff00000000001efff90000000000000000
- 
+
+rohan_woman_face_1     = 0x0000000000000001000000000000000000000000001c00000000000000000000
+rohan_woman_face_2     = 0x00000004040020087ff7fbffefff6dff00000000001f6dbf0000000000000000
+#TEXTUR_BIT_remind     = 0x0000000000001000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the texture bit -- mtarini
+#HAIR_BIT_remind       = 0x0000000000000001000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the hair bit -- GA
+#BEARD_BIT_remind      = 0x0000000000000110000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the beard bit -- GA
+#AGE_BITS_remind       = 0x0000000fc0000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
+#HAIR_COLOR_BITS_remind= 0x000000003f000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
+						 
+
 beorn_face1 = rohan_face_young_1
 beorn_face2 = rohan_face_old_2
 arnor_face_middle_1    = 0x00000001bd00214748ed6e47238dd70d00000000001d36f30000000000000000
@@ -302,12 +311,6 @@ dunland_face1          = 0x000000001f001001124161829880300200000000001c008000000
 dunland_face2          = 0x0000000dff0062875d7fd3ffffffffff00000000001edffe0000000000000000
 nord_face_younger_1    = 0x0000000000000001124000000020000000000000001c00800000000000000000
 
-#TEXTUR_BIT_remind     = 0x0000000000001000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the texture bit -- mtarini
-#HAIR_BIT_remind       = 0x0000000000000001000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the hair bit -- GA
-#BEARD_BIT_remind      = 0x0000000000000110000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the beard bit -- GA
-#AGE_BITS_remind       = 0x0000000fc0000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
-#HAIR_COLOR_BITS_remind= 0x000000003f000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
-						 
 
 easterling_face1       = khergit_face_middle_2
 easterling_face2       = khergit_face_middle_1
@@ -1810,10 +1813,10 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_woman_rohan_t","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_tld_tunic,itm_rohan_shoes,],
-      attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+      attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
 ["walker_woman_rohan_d","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_green_dress,itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+      attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
 ["walker_woman_gondor_b","Gondor_Woman","_",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_gondor,
    [itm_black_dress,itm_wimple_a,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
