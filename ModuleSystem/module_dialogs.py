@@ -3599,7 +3599,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 	(try_end),
 	(try_begin),
 		(eq, ":num_enemies", 0),
-		(str_store_string, s12, "@We are not at war with anyone."),
+		(str_store_string, s12, "@The War is over, {playername}, haven't you heard?"),
 		(else_try),
 		(try_begin),
 		  (gt, ":num_theater_enemies", 0),

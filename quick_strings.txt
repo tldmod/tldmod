@@ -415,7 +415,7 @@ qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
 qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
-qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_on_{s15}!
+qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
 qstr____Ruins_of_{s1}___ ___Ruins_of_{s1}___
@@ -874,7 +874,7 @@ qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
 qstr_You_spent_{reg10}_of You_spent_{reg10}_of_your_influence_with_{s1},_with_{reg11}_remaining.
 qstr_You_spent_{reg0}_of_ You_spent_{reg0}_of_your_influence_with_{s1},_with_{reg1}_remaining.
-qstr_We_are_not_at_war_wi We_are_not_at_war_with_anyone.
+qstr_The_War_is_over_{pla The_War_is_over,_{playername},_haven't_you_heard?
 qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fighting_against_{s13}.
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.
 qstr_we_are_not_too_conce we_are_not_too_concerned_with_them_at_the_moment,_since_we_are_fighting_other_enemies_closer_to_home

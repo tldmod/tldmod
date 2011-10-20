@@ -2634,6 +2634,20 @@ presentations = [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
+        
+        # cover up the HP bar
+        (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
+        (position_set_x, pos1, 0),
+        (position_set_y, pos1, 0),
+        (overlay_set_position, ":black_strip", pos1),
+        (position_set_x, pos1, 50000),
+        (position_set_y, pos1, 2400),
+        (overlay_set_size, ":black_strip", pos1),
+        (overlay_set_alpha, ":black_strip", 0xFF),
+        (overlay_set_color, ":black_strip", 0x000000),
+        (get_player_agent_no, ":player_agent"),
+        (agent_set_hit_points, ":player_agent", 0, 1), #restored automatically at the end of mission
+        
         (str_store_string, s1, "@______"),
         (create_text_overlay, "$g_presentation_obj_1", s1, tf_center_justify),
         (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
@@ -2694,6 +2708,20 @@ presentations = [
       (ti_on_presentation_load,
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
+        
+        # cover up the HP bar
+        (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
+        (position_set_x, pos1, 0),
+        (position_set_y, pos1, 0),
+        (overlay_set_position, ":black_strip", pos1),
+        (position_set_x, pos1, 50000),
+        (position_set_y, pos1, 2400),
+        (overlay_set_size, ":black_strip", pos1),
+        (overlay_set_alpha, ":black_strip", 0xFF),
+        (overlay_set_color, ":black_strip", 0x000000),
+        (get_player_agent_no, ":player_agent"),
+        (agent_set_hit_points, ":player_agent", 0, 1), #restored automatically at the end of mission
+        
         (str_store_string, s1, "str_empty_string"),
         (create_text_overlay, "$g_presentation_obj_1", s1, tf_center_justify), #subtitles
         (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
@@ -2701,12 +2729,6 @@ presentations = [
         (position_set_x, pos1, 500),
         (position_set_y, pos1, 80),
         (overlay_set_position, "$g_presentation_obj_1", pos1),
-        # (position_set_x, pos1, 1200),
-        # (position_set_y, pos1, 1200),
-        # (overlay_set_size, "$g_presentation_obj_1", pos1),
-        # (position_set_x, pos1, 880),
-        # (position_set_y, pos1, 90),
-        # (overlay_set_area_size, "$g_presentation_obj_1", pos1),
         
         (create_text_overlay, "$g_presentation_obj_2", s1, tf_center_justify), #Press Space to continue...
         (overlay_set_color, "$g_presentation_obj_2", 0x808080),

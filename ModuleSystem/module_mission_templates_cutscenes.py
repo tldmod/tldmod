@@ -1060,6 +1060,10 @@ mission_templates_cutscenes = [
            (copy_position, pos51, pos50),
            (position_move_y, pos51, 250), #pos51 - wide shot talker view
            (position_rotate_z, pos51, 7),           
+           (try_begin),
+             (neq, ":horse_agent", -1),
+             (position_move_z, pos51, -50),
+           (try_end),
            (init_position, pos53),
            (position_rotate_x, pos53, -5),
            (try_begin),

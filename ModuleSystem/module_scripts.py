@@ -2215,7 +2215,7 @@ scripts = [
 			(try_end),
 			(eq, ":continue", 1),
 			(try_begin),
-#				(eq, "$cheat_mode", 1),
+				(eq, "$cheat_mode", 1),
 				(str_store_troop_name, s1, ":cur_troop"),
 				(display_message, "@DEBUG: {s1} no longer leads a party."),
 			(try_end),
@@ -4097,10 +4097,10 @@ scripts = [
 		(try_for_range, ":stack", 0, ":num_stacks"), # one from each stack, then repeat
 			(lt, ":entry", 30),
 			(lt, ":entry", ":size"),
-			(party_stack_get_troop_id, ":meeting_troop",":meeting_party",":stack"),
-			(neg|troop_is_hero, ":meeting_troop"), #heroes not shown (usually one hero, and he's a leader/talker already
+			(party_stack_get_troop_id, ":stack_troop",":meeting_party",":stack"),
+			(neg|troop_is_hero, ":stack_troop"), #heroes not shown (usually one hero, and he's a leader/talker already
 			(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
-			(set_visitor,":entry",":meeting_troop",":rnd"),
+			(set_visitor,":entry",":stack_troop",":rnd"),
 			(val_add, ":entry", 1),
 		(try_end),	
 	(try_end),

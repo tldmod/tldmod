@@ -2185,7 +2185,7 @@ ai_scripts = [
                   (else_try),
                     (assign, ":news_color", color_bad_news),
                   (try_end),
-                  (display_log_message, "@The forces of {s2} march on {s15}!", ":news_color"),
+                  (display_log_message, "@The forces of {s2} march to {s15}!", ":news_color"),
                   
                   (store_current_hours, ":cur_hours"),
                   (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation

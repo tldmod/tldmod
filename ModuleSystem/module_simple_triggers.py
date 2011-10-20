@@ -1813,6 +1813,14 @@ simple_triggers = [
             (remove_party, ":cur_party"),
           (else_try),
             # Centers: destroy what you can, give the rest to the best enemy
+            
+            #remove any volunteer parties
+            (party_get_slot, ":volunteers", ":cur_party", slot_town_volunteer_pt),
+            (try_begin),
+              (gt, ":volunteers", 0),
+              (party_is_active, ":volunteers"),
+              (remove_party, ":volunteers"),
+            (try_end),
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
               (party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1),
               (call_script, "script_destroy_center", ":cur_party"),
@@ -2172,7 +2180,6 @@ simple_triggers = [
       (assign, ":state", "$g_tld_nazgul_state"),
     (try_end),
     
-    #Gandalf
     (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
     (try_begin),
       (eq, ":state", 0), #active, not on a mission
@@ -2192,7 +2199,7 @@ simple_triggers = [
 	      (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
           (neq, ":center_no", ":cur_center"),
           (store_faction_of_party, ":center_faction", ":center_no"),
-          (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul spawns in the nearest Eye town
+          (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul travels to the Eye town closest to player
           (call_script, "script_get_tld_distance", "p_main_party", ":center_no"),
           (assign, ":party_distance", reg0),
           (lt, ":party_distance", ":min_distance"),
@@ -2226,7 +2233,6 @@ simple_triggers = [
       # (assign, "$g_tld_nazgul_state", ":state"),
     # (try_end),
         
-    #random spawning and travel here
   (try_end), # try_for_range
 ]),   
 
