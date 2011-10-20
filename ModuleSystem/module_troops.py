@@ -2038,10 +2038,10 @@ troops = [
       lord_attrib,0,0,0],
 #governors (lural contains how player refers to the guy
 ["gondor_lord","Steward_Denethor","the Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
-   [itm_gondor_warhorse,itm_gondor_fine_outfit_dress,itm_gon_leader_surcoat_cloak,itm_leather_boots,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
+   [itm_gondor_warhorse,itm_denethor_robe,itm_gondor_light_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],
 ["rohan_lord","King_Theoden","King",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
-   [itm_mearas_reward,itm_rohan_fine_outfit_dale_dress,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
+   [itm_mearas_reward,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
 ["isengard_lord","Saruman","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_isengard,
    [itm_courser,itm_whiterobe,itm_leather_boots,itm_sarustaff,],

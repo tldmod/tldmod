@@ -882,4 +882,5 @@ itm_good_mace = 880
 itm_gandstaff = 881
 itm_sarustaff = 882
 itm_rohan_armor_th = 883
-itm_witchking_helmet = 884
+itm_denethor_robe = 884
+itm_witchking_helmet = 885

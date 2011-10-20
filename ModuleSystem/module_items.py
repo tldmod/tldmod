@@ -1247,7 +1247,8 @@ items =[
 ["good_mace","Mace",[("good_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
 ["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
-["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["denethor_robe","Stewards_Robe",[("denethor_robe",0)],itp_type_body_armor|itp_covers_legs,0,1000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ]
