@@ -147,15 +147,15 @@ items =[
 #########WARGS#########
 
 #first farg in list: warg_1b (see in module_constants)
-["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(100)|body_armor(15)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(47),imodbits_horse_basic|imodbits_warg],
-["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(100)|body_armor(15)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(47),imodbits_horse_basic|imodbits_warg],
-["warg_1d","Warg",[("warg_1D",0)],itp_type_horse|itp_shop,0,600,hit_points(100)|body_armor(15)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(47),imodbits_horse_basic|imodbits_warg],
-["wargarmored_1b","Armored_Warg",[("wargArmored_1B",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|imodbits_warg],
-["wargarmored_1c","Armored_Warg",[("wargArmored_1C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|imodbits_warg],
-["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|imodbits_warg],
-["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(56),imodbits_horse_basic|imodbits_warg],
-["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(150)|body_armor(40)|difficulty(5)|horse_speed(30)|horse_maneuver(60)|horse_charge(60),imodbits_horse_basic|imodbits_warg],
-["warg_reward","Huge_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
+["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg],
+["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg],
+["warg_1d","Warg",[("warg_1D",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg],
+["wargarmored_1b","Armored_Warg",[("wargArmored_1B",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(50),imodbits_horse_basic|imodbits_warg],
+["wargarmored_1c","Armored_Warg",[("wargArmored_1C",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(50),imodbits_horse_basic|imodbits_warg],
+["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(110)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(50),imodbits_horse_basic|imodbits_warg],
+["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(30)|horse_maneuver(61)|horse_charge(50),imodbits_horse_basic|imodbits_warg],
+["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(130)|body_armor(40)|difficulty(5)|horse_speed(29)|horse_maneuver(60)|horse_charge(55),imodbits_horse_basic|imodbits_warg],
+["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse|itp_unique,0,3000,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic|0],
 #first non WARG item: troll_feet_boots (see in module_constants)
 
 #TROLL "ITEMS"#########
