@@ -18255,6 +18255,7 @@ scripts = [
         (lt, ":party_distance", ":min_distance"),
         (assign, ":min_distance", ":party_distance"),
         (assign, ":nearest_faction", ":faction"),
+        (assign, "$g_tld_convo_subject", ":capital"), #remember where to send Gandalf next
       (try_end),
       
       (str_store_faction_name, s2, "$players_kingdom"),
@@ -18476,7 +18477,12 @@ scripts = [
       #this should never happen, but it's handled
       (try_begin),
         (eq, ":nearest_town", -1),
-        (assign, ":nearest_town", "p_town_west_osgiliath"),
+        (assign, ":nearest_town", "p_town_minas_tirith"),
+      (try_end),
+      (try_begin),
+        (eq, ":mission_troop", "trp_gandalf"),
+        (eq, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
+        (assign, ":nearest_town", "$g_tld_convo_subject"), #special case
       (try_end),
           
     #find the party and send it to the town
