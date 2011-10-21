@@ -289,6 +289,24 @@ dialogs = [
 [trp_easter_egg_troll, "troll_beaten", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
 [trp_easter_egg_troll, "troll_goodbye", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
   
+ 
+ #### HOBBITS CHATS... prelimintaries (mtarini)
+[trp_merry, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),], "Hello, {sir/madam}! My name is Meriadoc Brandybuck but you can call me Merry!","hobbit_merry_talk",[] ],
+[trp_pippin, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),], "Hello, {sir/madam}! My name is Peregrin Took but you can call me Pippin!","hobbit_pippin_talk",[] ],
+
+[anyone|plyr, "hobbit_pippin_talk", [], "Hello, messer Pippin. I never seen the likes of you!","hobbit_hobbit_talk_2",[] ],
+[anyone|plyr, "hobbit_merry_talk", [], "Hello, messer Merry. I never seen the likes of you!","hobbit_hobbit_talk_2",[] ],
+
+[anyone,  "hobbit_hobbit_talk_2", [], "I know. I came from a long way! I'm an Hobbit, from the Shire!","hobbit_hobbit_talk_3",[] ],
+
+[anyone|plyr,  "hobbit_hobbit_talk_3", [(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),], "Well, goodbye now.","close_window",[ ] ],
+
+[trp_merry, "start", [], "Welcome back, {playername}!","hobbit_merry_talk_met",[] ],
+[trp_pippin, "start", [], "Welcome back, {playername}!","hobbit_pippin_talk_met",[] ],
+
+[anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[] ],
+[anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[] ],
+
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
 [trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],

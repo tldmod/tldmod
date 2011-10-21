@@ -9316,6 +9316,13 @@ scripts = [
       (try_end),
       (set_visitor, 6, ":guard_troop"),
       (set_visitor, 7, ":guard_troop"),
+	  
+	  # place the two hobbits
+	  (try_begin),(eq, ":castle_scene", "scn_minas_tirith_castle"),
+		(set_visitor, 8, "trp_pippin"),
+	  (else_try), (eq, ":castle_scene", "scn_edoras_castle"),
+		(set_visitor, 8, "trp_merry"),
+	  (try_end),
 
       (assign, ":cur_pos", 16),
       (call_script, "script_get_heroes_attached_to_center", ":center_no", "p_temp_party"),

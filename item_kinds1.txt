@@ -1,5 +1,5 @@
 itemsfile version 2
-886
+888
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -180,31 +180,31 @@ itemsfile version 2
  itm_variag_kataphrakt Easterling_Warhorse Easterling_Warhorse 1  easterling_warhorse01 0  65537 0 2000 16139943936 0.000000 100 0 52 0 4 135 34 36 0 0 35 0
 0
 
- itm_warg_1b Warg Warg 1  warg_1B 0  65537 0 600 16274161664 0.000000 100 0 15 0 2 100 64 33 0 0 47 0
+ itm_warg_1b Warg Warg 1  warg_1B 0  65537 0 600 16274161664 0.000000 100 0 10 0 2 80 64 33 0 0 45 0
 0
 
- itm_warg_1c Warg Warg 1  warg_1C 0  65537 0 600 16274161664 0.000000 100 0 15 0 2 100 64 33 0 0 47 0
+ itm_warg_1c Warg Warg 1  warg_1C 0  65537 0 600 16274161664 0.000000 100 0 10 0 2 80 64 33 0 0 45 0
 0
 
- itm_warg_1d Warg Warg 1  warg_1D 0  65537 0 600 16274161664 0.000000 100 0 15 0 2 100 64 33 0 0 47 0
+ itm_warg_1d Warg Warg 1  warg_1D 0  65537 0 600 16274161664 0.000000 100 0 10 0 2 80 64 33 0 0 45 0
 0
 
- itm_wargarmored_1b Armored_Warg Armored_Warg 1  wargArmored_1B 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 120 61 30 0 0 56 0
+ itm_wargarmored_1b Armored_Warg Armored_Warg 1  wargArmored_1B 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 100 61 30 0 0 50 0
 0
 
- itm_wargarmored_1c Armored_Warg Armored_Warg 1  wargArmored_1C 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 120 61 30 0 0 56 0
+ itm_wargarmored_1c Armored_Warg Armored_Warg 1  wargArmored_1C 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 100 61 30 0 0 50 0
 0
 
- itm_wargarmored_2b Armored_Warg Armored_Warg 1  wargArmored_2B 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 120 61 30 0 0 56 0
+ itm_wargarmored_2b Armored_Warg Armored_Warg 1  wargArmored_2B 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 110 61 30 0 0 50 0
 0
 
- itm_wargarmored_2c Armored_Warg Armored_Warg 1  wargArmored_2C 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 120 61 30 0 0 56 0
+ itm_wargarmored_2c Armored_Warg Armored_Warg 1  wargArmored_2C 0  65537 0 1200 16274161664 0.000000 100 0 30 0 4 120 61 30 0 0 50 0
 0
 
- itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 16274161664 0.000000 100 0 40 0 5 150 60 30 0 0 60 0
+ itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 16274161664 0.000000 100 0 40 0 5 130 60 29 0 0 55 0
 0
 
- itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_3A 0  4097 0 400 16139943936 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
+ itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 3000 16139943936 0.000000 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
  itm_troll_feet_boots Troll_Feet Troll_Feet 1  troll_feet 0  4110 0 1 0 58.000000 100 0 55 55 70 0 0 0 0 0 0 0
@@ -2515,6 +2515,12 @@ itemsfile version 2
 0
 
  itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  138772484 4222124717768960 1000 156672 3.000000 100 0 0 0 0 0 90 0 120 0 291 0
+0
+
+ itm_merry_outfit hobbit_outfit hobbit_outfit 1  merry 0  16781325 0 1 0 1.000000 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_pippin_outfit hobbit_outfit hobbit_outfit 1  pippin 0  16781325 0 1 0 1.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_ent_body Ent_Body Ent_Body 1  ent_body 0  16781325 0 1 0 58.000000 100 0 65 0 70 0 0 0 0 0 0 0

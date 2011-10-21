@@ -1196,6 +1196,9 @@ items =[
 ["rohan_lance_banner_sun","Rohan_Lance_With_Sun_Banner",[("banner_lance_rohan_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
 #
+["merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
+["pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
+#
 ["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(65)|leg_armor(0)|difficulty(70),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
 ["ent_head_helm2","Ent_Head",[("ent_head2",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
