@@ -554,7 +554,7 @@ scene_props = [
 ("banner_t",0,"banner_a20","0", []), #
 #("banner_u",0,"banner_a21","0", []), #
 # banners B and C not used
-("banner_da",0,"banner_d01","0", []), 
+# ("banner_da",0,"banner_d01","0", []), 
 # ("banner_db",0,"banner_d02","0", []),
 # ("banner_dc",0,"banner_d03","0", []),
 # ("banner_dd",0,"banner_d04","0", []),

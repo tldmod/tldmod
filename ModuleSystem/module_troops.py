@@ -3048,7 +3048,7 @@ troops = [
 #   [itm_leather_jerkin,itm_leather_boots,],
 #      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["dorwinion_bandit","Dorwinion_Bandit","Dorwinion_Bandits",tfg_armor|tfg_shield,0,0,fac_outlaws,
-   [itm_rhun_sword,itm_leather_boots,itm_white_tunic_a,itm_white_tunic_b,itm_javelin,itm_shortened_spear,itm_spear,itm_blue_tunic,itm_leather_boots,],
+   [itm_rhun_sword,itm_leather_boots,itm_white_tunic_b,itm_white_tunic_c,itm_javelin,itm_shortened_spear,itm_spear,itm_blue_tunic,itm_leather_boots,],
          def_attrib|level(12),wp(100),knows_common,mercenary_face_1,mercenary_face_2],
 ["dorwinion_raider","Dorwinion_Raider","Dorwinion_Raiders",tfg_armor|tfg_shield|tfg_boots|tfg_helm,0,0,fac_outlaws,
    [itm_rhun_shortsword,itm_rhun_sword,itm_rhun_sword,itm_rhun_helm_g,itm_rhun_helm_h,itm_rhun_armor_b,itm_rhun_armor_a,itm_rhun_armor_d,itm_javelin,itm_rhun_shield,itm_leather_boots,],

@@ -137,7 +137,7 @@ map_icons = [
 #  ("castle_snow_a",mcn_no_shadow,"map_castle_snow_a", 0.35,0),
 #  ("castle_snow_b",mcn_no_shadow,"map_castle_snow_b", 0.35,0),
   ("mule",0,"icon_mule", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
-  ("cattle",0,"icon_cow", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
+#  ("cattle",0,"icon_cow", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
 #  ("training_ground",mcn_no_shadow,"training", 0.35,0),
 
   #("bridge_a",mcn_no_shadow,"map_river_bridge_a", 1.27,0),
