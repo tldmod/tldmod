@@ -184,3 +184,4 @@ icon_debris = 182
 icon_empty = 183
 icon_gandalf = 184
 icon_nazgul = 185
+icon_shrubbery = 186

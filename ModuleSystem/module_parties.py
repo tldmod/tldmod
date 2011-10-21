@@ -289,5 +289,6 @@ parties = [
   ("camplace_S4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7,9.2),[]),
   ("camplace_S5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
   ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
-  
+# mirkwood forest adornments 
+  ("shrubbery" ,"shrubbery" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
   ]

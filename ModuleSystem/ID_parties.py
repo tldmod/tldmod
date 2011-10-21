@@ -184,3 +184,4 @@ p_camplace_s3 = 182
 p_camplace_s4 = 183
 p_camplace_s5 = 184
 p_ancient_ruins = 185
+p_shrubbery = 186
