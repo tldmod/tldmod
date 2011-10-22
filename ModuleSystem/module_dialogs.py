@@ -8547,8 +8547,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [party_tpl|pt_enemy|plyr,"enemy_talk_1", [], "You don't have a chance against me. Give up.", "enemy_talk_2",[]],
 [party_tpl|pt_enemy,"enemy_talk_2", [], "I will give up when you are dead!", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 
-[anyone|plyr,"prisoner_chat", [], "Do not try running away or trying something stupid. I will be watching you.", "prisoner_chat_2",[]],
-[anyone,"prisoner_chat_2", [], "No, I swear I won't.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+[anyone|plyr,"prisoner_chat", [], "I will be watching you, scum.", "prisoner_chat_2",[]],
+[anyone|plyr,"prisoner_chat", [(eq,1,0)], "You happen to be the next dinner for my orcs. Guards, slaughter him!", "prisoner_slaughter",[]],
+
+[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+[anyone,"prisoner_slaughter", [], "There would come a day, when you will pay.... Aaa-ghgllr!...", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 [anyone,"start", [(this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     #(this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),
@@ -8560,7 +8563,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                     (this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     #(this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),
                     (             is_between,"$g_talk_troop",horse_merchants_begin, horse_merchants_end)],
-"Greetings, commander. How can I serve you today?", "town_merchant_talk",[]],
+"Greetings, Commander. How can I serve you today?", "town_merchant_talk",[]],
 
 [anyone,"start", [(this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     #(this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),

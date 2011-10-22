@@ -550,7 +550,7 @@ scene_props = [
 ("banner_p",0,"b_arms_erebor","0", []), #erebor
 ("banner_r",0,"b_dunland","0", []), #dunland
 ("banner_s",0,"b_isengard","0", []), #isengard
-# banners B C Dnot used
+# banners B C D not used
 
 ("banner_ea",0,"banner_e01","0", []),
 ("banner_eb",0,"banner_e02","0", []),
@@ -2287,6 +2287,12 @@ scene_props = [
 ("isen_metal",0,"isen_metal","0", []),
 ("isen_cave",0," isen_cave","bo_isen_cave", []),
 ("isen_chasm",0,"isen_chasm","bo_isen_chasm", []),
+("horse_warg_1C",sokf_invisible,"warg_1C","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_warg_1c", 0),(agent_set_stand_animation, reg0, "anim_horse_stand")])]),
+("horse_warg_1D",sokf_invisible,"warg_1D","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_warg_1d", 0),(agent_set_stand_animation, reg0, "anim_horse_stand")])]),
 
 
 ]

@@ -1508,3 +1508,5 @@ spr_isen_forge = 1506
 spr_isen_metal = 1507
 spr_isen_cave = 1508
 spr_isen_chasm = 1509
+spr_horse_warg_1C = 1510
+spr_horse_warg_1D = 1511
