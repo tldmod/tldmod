@@ -14,6 +14,8 @@ variables =
 	"$g_player_icon_foot_melee", 
 	"$g_player_icon_foot_archer",
 	
+	"$hobbit_seen", # number of hobbit seen
+	
 	"$tld_option_crossdressing", 
 
 ]

@@ -1119,6 +1119,7 @@ scripts = [
 # This script is called when a new game is started
 # INPUT: none
 ("game_start",[
+	(assign, "$hobbit_seen",0),
 	(faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
 	(troop_set_slot, "trp_player", slot_troop_occupation, slto_kingdom_hero),
 	(troop_set_slot, "trp_player", slot_troop_prisoner_of_party, -1),
@@ -9317,11 +9318,19 @@ scripts = [
       (set_visitor, 6, ":guard_troop"),
       (set_visitor, 7, ":guard_troop"),
 	  
-	  # place the two hobbits
+	  # place the two hobbits; USE ENTRY POINT 8 !!! (mtarini)
 	  (try_begin),(eq, ":castle_scene", "scn_minas_tirith_castle"),
-		(set_visitor, 8, "trp_pippin"),
+		(try_begin), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 0),
+			(set_visitor, 8, "trp_pippin_notmet"), # a "halfling"
+		(else_try),
+			(set_visitor, 8, "trp_pippin"),
+		(try_end),
 	  (else_try), (eq, ":castle_scene", "scn_edoras_castle"),
-		(set_visitor, 8, "trp_merry"),
+		(try_begin), (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 0),
+			(set_visitor, 8, "trp_merry_notmet"),  # a "halfling"
+		(else_try),
+			(set_visitor, 8, "trp_merry"),
+		(try_end),
 	  (try_end),
 
       (assign, ":cur_pos", 16),

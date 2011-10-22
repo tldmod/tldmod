@@ -2105,11 +2105,21 @@ troops = [
    # [itm_gondor_warhorse,itm_pel_leader,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword,itm_gondor_bow,itm_gondor_arrows,],
       # attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_1|knows_trainer_3,0x00000006ff003004225b8ac89c62d2f400000000001ec8f90000000000000000],
 
-["pippin","strange_half_man","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+## hobbits: two versions: for when you didn't meet them, and for when you did meet them (I wish there was a way to RENAME a Troop. str_set_troop_name FTW)  mtarini
+
+["pippin_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["merry","strange_half_man","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["merry_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
+
+["pippin","Pippin","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
+
+["merry","Merry","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
