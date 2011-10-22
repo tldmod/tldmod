@@ -4358,6 +4358,34 @@ technique mtarini_skin_diffuse_78perc_SHDWNVIDIA
 
 
 
+technique mtarini_skin_diffuse_73perc
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_73perc_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_73perc_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+
+
+
 technique mtarini_skin_diffuse_big
 {
 	pass P0

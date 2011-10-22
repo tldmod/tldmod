@@ -1119,7 +1119,6 @@ scripts = [
 # This script is called when a new game is started
 # INPUT: none
 ("game_start",[
-	(assign, "$hobbit_seen",0),
 	(faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
 	(troop_set_slot, "trp_player", slot_troop_occupation, slto_kingdom_hero),
 	(troop_set_slot, "trp_player", slot_troop_prisoner_of_party, -1),

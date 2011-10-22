@@ -293,19 +293,21 @@ dialogs = [
  #### HOBBITS CHATS... prelimintaries (mtarini)
  
  # phase 1: first time talk
+
+[trp_merry_notmet, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),], "Hello again, {playername}!","hobbit_merry_talk_met",[] ],
+[trp_pippin_notmet, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),], "Hello again, {playername}!","hobbit_pippin_talk_met",[] ],
  
-[trp_merry_notmet, "start", [], "Hello, {sir/madam}! My name is Meriadoc Brandybuck but you can call me Merry!","hobbit_merry_talk_1",[] ],
-[trp_pippin_notmet, "start", [], "Hello, {sir/madam}! My name is Peregrin Took but you can call me Pippin!","hobbit_pippin_talk_1",[] ],
+[trp_merry_notmet, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),], "Hello, {sir/madam}! My name is Meriadoc Brandybuck but you can call me Merry!","hobbit_general_talk_1",[] ],
+[trp_pippin_notmet, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),], "Hello, {sir/madam}! My name is Peregrin Took but you can call me Pippin!","hobbit_general_talk_1",[] ],
 
-[anyone|plyr, "hobbit_pippin_talk_1", [], "Hello, messer Pippin!","hobbit_general_talk_1",[] ],
-[anyone|plyr, "hobbit_merry_talk_1", [], "Hello, messer Merry!","hobbit_general_talk_1",[] ],
+[anyone|plyr, "hobbit_general_talk_1", [], "I don't have time now.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"), ], ],
 
+[anyone|plyr, "hobbit_general_talk_1", [(troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 0),(troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 0),], 
+	"Say. I think I never seen one of your kind.","hobbit_general_talk_first_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
-[anyone|plyr, "hobbit_general_talk_1", [], "I don't have time now.","close_window",[], ],
+[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_pippin_notmet"), (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Edoras.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
-[anyone|plyr, "hobbit_general_talk_1", [(eq, "$hobbit_seen",0) ], "Say. I think I never seen one of your kind.","hobbit_general_talk_first_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),(val_add, "$hobbit_seen", 1)] ],
-
-[anyone|plyr, "hobbit_general_talk_1", [(eq, "$hobbit_seen", 1)], "Say. I think I've met another one like you.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
+[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_merry_notmet"), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Minas Thirit.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
 [anyone,  "hobbit_general_talk_first_met", [], "I know. I came from a long way! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
 
@@ -313,14 +315,14 @@ dialogs = [
 
 [trp_pippin_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing, back in Edoras.","hobbit_general_talk_3",[] ],
 
-[anyone|plyr,  "hobbit_general_talk_3", [], "Well, goodbye now.","close_window",[  ] ],
+[anyone|plyr,  "hobbit_general_talk_3", [], "Well, goodbye now.","close_window",[  (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"), ] ],
 
 # phase 2: any other time
 [trp_merry, "start", [], "Welcome back, {playername}!","hobbit_merry_talk_met",[] ],
 [trp_pippin, "start", [], "Welcome back, {playername}!","hobbit_pippin_talk_met",[] ],
 
-[anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[] ],
-[anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[] ],
+[anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
+[anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
