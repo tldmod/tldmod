@@ -1308,11 +1308,11 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 [anyone|plyr,"player_hire_troop", 
 	[(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)], # player has someone to give away 
 	"Some of the soldiers in my group would be more useful here, to defend {s21}.", "player_hire_troop_give", [
-        (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
-		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
-		
-		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
-		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value (after removing troops ...)
+        #GA: changed into trade as a whole main party, then return given non-faction troops back to player
+		#(call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
+		#(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
+		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size
+		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value
 	]],
 
 # Player reserves - no upkeep for now - exploitable!
@@ -1405,9 +1405,9 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 [anyone,"player_hire_troop_give", 
 	 [  (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@Strenghten defences in {s21}? This is surely welcome."),
+          (str_store_string, s4, "@Strenghten defences in {s21}? This is surely welcome. Note that we can only accept our own people."),
         (else_try),
-          (str_store_string, s4, "@Strenghten defences in {s21}? Well, as long as they are not crippled, why not."),
+          (str_store_string, s4, "@Strenghten defences in {s21}? Well, as long as they are not crippled, why not. Just be sure you give away our own troops, for we have no use for outsiders here."),
         (try_end)],
 "{s4}", "player_hire_troop_reunite", [(change_screen_give_members)]],
 
@@ -1415,7 +1415,7 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 "Let me check the troop roster...", "player_hire_troop_pre_nextcycle", []],
 
 [anyone,"player_hire_troop_pre_nextcycle", 
-	 [ (party_get_num_companions, reg10, "p_main_party"), (eq, reg10, reg27),], # party didn't change size 
+	 [ (party_get_num_companions, reg10, "p_main_party"), (eq, reg10, reg27),],
 "So you've changed your mind...^I see.", "player_hire_troop_nextcycle", []],
 
 [anyone,"player_hire_troop_pre_nextcycle", 
@@ -1427,17 +1427,20 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
         (try_end)], # party increased size 
 "{s4}", "player_hire_troop_nextcycle", []],
 
-[anyone,"player_hire_troop_reunite", [], "Let me check the troop roster...", "player_hire_troop_reunite_1", []],
+[anyone,"player_hire_troop_reunite", [], 
+"Let me check the troop roster...", "player_hire_troop_reunite_1", []],
 
-[anyone,"player_hire_troop_reunite_1", 
-	 [ (party_get_num_companions, reg0, "p_main_party"), 
-	   (eq, reg28, reg0), # player didn't give anyone (party size unchanged)
-	 ],
-"So you've changed your mind...^I see.", "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]],
+[anyone,"player_hire_troop_reunite_1", [
+		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "$g_encountered_party_faction"), # put unfitting guys back at once, reg46 = number of them
+		(party_get_num_companions, reg0, "p_main_party"),
+		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
+"So you've changed your mind...^I see.", "player_hire_troop_nextcycle", []],
 
-[anyone,"player_hire_troop_reunite_1", 
-	 [  (party_get_num_companions, reg0, "p_main_party"),
-        (store_sub, reg10, reg28, reg0), 
+[anyone,"player_hire_troop_reunite_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
+"We don't have use for those troops here...^Take them back.", "player_hire_troop_nextcycle", []],
+
+[anyone,"player_hire_troop_reunite_1", 	# player gave fittings too (party size)
+	 [  (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
@@ -1453,6 +1456,10 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
           (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (else_try),
           (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us hold {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+        (try_end),
+		(try_begin), # if nonfittings were given
+          (gt, reg46, 0),
+          (str_store_string, s4, "@{s4} ^Oh, and take back those of your soldiers, that are not our kin."),
         (try_end)],
 "{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", reg11),]],
 
@@ -1466,14 +1473,15 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 	   (else_try),
 		 (str_store_string, s31, "@It is my duty to protect our allies."),
 	   (try_end)], 
-"{s31}", "player_hire_troop_nextcycle", [(call_script, "script_reconstruct_main_party")]],
+"{s31}", "player_hire_troop_nextcycle", []],
 
 [anyone,"player_hire_troop_nextcycle", [],
 "Anything else?", "player_hire_troop", [
 		(party_get_num_companions, reg27, "p_main_party"), # refresh reg27
 		# prepare troops which can be given away (others are in moved in temp party)
-		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
-		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party","$g_encountered_party_faction")]],
+		#(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+		#(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party","$g_encountered_party_faction"),
+		]],
 
 		
 
@@ -3141,26 +3149,29 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 [anyone,"lord_give_troops", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
 	 "Reinforce my party? I can always use a few more soldiers.", 
 	 "lord_give_troops_check", [
-        (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
-		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_talk_troop_faction"),
-		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
-		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value (after removing troops ...)
+		#GA: chamged to exchange from whole party then return non-faction guys to player
+        #(call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
+		#(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_talk_troop_faction"),
+		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size
+		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value
         # (troop_get_slot, ":party", "$g_talk_troop", slot_troop_leaded_party),
         # (assign, "$g_encountered_party_backup", "$g_encountered_party"), 
         # (assign, "$g_encountered_party", ":party"), # change_screen_give_members works with $g_encountered_party
         (change_screen_give_members)]],
 [anyone,"lord_give_troops", [], "Unfortunately you don't have any {s22} soldiers to reinforce me with.", "lord_pretalk", []],
-     
+
 [anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", []],
 
 [anyone,"lord_give_troops_check_1", [
-	   # (assign, "$g_encountered_party", "$g_encountered_party_backup"), #restore $g_encountered_party
-	   (party_get_num_companions, reg0, "p_main_party"), 
-	   (eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
-"So you've changed your mind...^I see.", "lord_pretalk", [(call_script, "script_reconstruct_main_party")]],
+		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "$g_encountered_party_faction"),
+		(party_get_num_companions, reg0, "p_main_party"),
+		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
+"So you've changed your mind...^I see.", "lord_pretalk", []],
+
+[anyone,"lord_give_troops_check_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
+"I don't have use for those troops here...^Take them back.", "lord_pretalk", []],
 
 [anyone,"lord_give_troops_check_1", [
-	    (party_get_num_companions, reg0, "p_main_party"),
         (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
@@ -3178,7 +3189,11 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
           (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (else_try),
           (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
-        (try_end)], # party decreased size 
+        (try_end), 
+		(try_begin), # if nonfittings were given
+          (gt, reg46, 0),
+          (str_store_string, s4, "@{s4} ^Oh, and take back those soldiers who are not my kin, I have no use for them."),
+        (try_end)],
 "{s4}", "lord_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", reg11)]],
 
 [anyone|plyr,"lord_give_troops_check_2", 
@@ -3191,7 +3206,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 	  (else_try),
 		(str_store_string, s31, "@It is my duty to help our allies."),
 	  (try_end)],
-"{s31}", "lord_pretalk", [(call_script, "script_reconstruct_main_party")]],
+"{s31}", "lord_pretalk", []],
 
 #[anyone,"lord_give_troops", [],
    # "Well, I could use some good soldiers. Thank you.", "lord_pretalk",
@@ -9019,7 +9034,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(party_get_num_companions, reg27, "p_main_party"), # reg27: initial party size
 		# just to see if someone can be given away: backup party, then see if troops which can be given away 
 		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
-		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction")]],
+		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction")
+		]],
 
 [anyone|plyr,"party_encounter_friend", [
         (try_begin),
@@ -9037,50 +9053,47 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"party_reinforce", [
      #prevent some exploitation by placing caps on party size
      (assign, ":party_limit", 80),
-     (try_begin),
-       (eq, "$g_encountered_party_type", spt_scout),
-       (assign, ":party_limit", 20),
-     (else_try),
-       (eq, "$g_encountered_party_type", spt_raider),
-       (assign, ":party_limit", 50),
-     (else_try),
-       (eq, "$g_encountered_party_type", spt_patrol),
-       (assign, ":party_limit", 80),
-     (else_try),
-       (eq, "$g_encountered_party_type", spt_kingdom_caravan),
-       (assign, ":party_limit", 100),
-     (else_try),
-       (eq, "$g_encountered_party_type", spt_prisoner_train),
-       (assign, ":party_limit", 80),
+     (try_begin),(eq, "$g_encountered_party_type", spt_scout          ),(assign, ":party_limit", 20),
+      (else_try),(eq, "$g_encountered_party_type", spt_raider         ),(assign, ":party_limit", 50),
+      (else_try),(eq, "$g_encountered_party_type", spt_patrol         ),(assign, ":party_limit", 80),
+      (else_try),(eq, "$g_encountered_party_type", spt_kingdom_caravan),(assign, ":party_limit", 100),
+      (else_try),(eq, "$g_encountered_party_type", spt_prisoner_train ),(assign, ":party_limit", 80),
      (try_end),
      (party_get_num_companions, ":party_size", "$g_encountered_party"),
      (ge, ":party_size", ":party_limit")],
 "We don't need any more soldiers, thank you.", "party_reinforce_end", []],
 #Reinforcement code from town garrison reinforcement, register init above
 [anyone,"party_reinforce", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
-	 "Reinforce our party? We can always use a few more soldiers.", 
+	 "Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.", 
 	 "party_reinforce_check", [
-        (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
-		(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
+        #GA: allowed player to transfer whatever troops in exchange screen. Unfitting ones will be returned to him later
+		#(call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"), #keep this backup for later
+		#(call_script, "script_party_split_by_faction", "p_main_party", "p_temp_party", "$g_encountered_party_faction"),
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
 		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign,reg29,reg0), # reg29: initial party total value (after removing troops ...)
-        (change_screen_give_members)]],
-
+        (change_screen_give_members),
+		]],
 [anyone,"party_reinforce", [], "Unfortunately you don't have any {s22} soldiers to reinforce us with.", "party_reinforce_end", []],
-[anyone,"party_reinforce_check", [], "Let me check the soldier roster...", "party_reinforce_check_1", []],
 
-[anyone,"party_reinforce_check_1", [ 
-	   (party_get_num_companions, reg0, "p_main_party"), 
-	   (eq, reg28, reg0),], # player didn't give anyone (party size unchanged)
-"So you've changed your mind...^I see.", "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]],
+[anyone,"party_reinforce_check", [], 
+"Let me check the soldier roster... ", "party_reinforce_check_1", []], 
+
+[anyone,"party_reinforce_check_1", [ # only 1st condition needs party script
+		(call_script, "script_party_eject_nonfaction", "$g_encountered_party", "p_main_party", "$g_encountered_party_faction"),# put unfitting guys back at once, reg46 = number of them
+		(party_get_num_companions, reg0, "p_main_party"),
+		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
+"So you've changed your mind...^I see.", "party_reinforce_end", []],
+
+[anyone,"party_reinforce_check_1", [
+		(gt, reg46, 0),(eq, reg28, reg0)], # player gave only unfitting troops (party size unchanged)
+"Those soldiers are of no use to us, sorry. ^Take them back.", "party_reinforce_end", []],
 
 [anyone,"party_reinforce_check_1", 
-	 [  (party_get_num_companions, reg0, "p_main_party"),
-        (store_sub, reg10, reg28, reg0), 
+	 [  (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (store_sub, reg11, reg29, reg0), 
+        (store_sub, reg11, reg29, reg0), # earned
 		(str_clear, s31), (str_clear, s32),
 		(try_begin),
           (eq, reg26, 1), #player is in own faction
@@ -9093,7 +9106,12 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
           (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (else_try),
           (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
-        (try_end)], # party decreased size 
+        (try_end),
+		(try_begin), 
+          (gt, reg46, 0), #player gave unfitting troops too
+		  (str_store_string, s4, "@{s4} ^Oh, and take back those who are not our people."),
+		(try_end),
+		], # party decreased size 
 "{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", reg11)]],
 
 [anyone|plyr,"party_reinforce_check_2", 
@@ -9106,7 +9124,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	  (else_try),
 		(str_store_string, s31, "@It is my duty to help our allies."),
 	  (try_end)],
-"{s31}", "party_reinforce_end", [(call_script, "script_reconstruct_main_party")]],
+"{s31}", "party_reinforce_end", []],
 
 [anyone,"party_reinforce_end", [
         (try_begin),

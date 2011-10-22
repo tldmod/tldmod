@@ -1033,7 +1033,7 @@ scraps_end = "itm_oliphant" #"itm_metal_scraps_good"+1
 
 # Banner constants
 banner_meshes_begin = "mesh_banner_gondor"
-banner_meshes_end_minus_one = "mesh_banner_f21"
+banner_meshes_end_minus_one = "mesh_banner_f20"
 
 arms_meshes_begin = "mesh_arms_a01"
 arms_meshes_end_minus_one = "mesh_arms_f21"
@@ -1060,7 +1060,7 @@ banner_map_icons_begin = "icon_mfp_gondor"
 banner_map_icons_end_minus_one = "icon_banner_126"
 
 banner_scene_props_begin = "spr_banner_a"
-banner_scene_props_end_minus_one = "spr_banner_f21"
+banner_scene_props_end_minus_one = "spr_banner_f20"
 
 # Some constants for merchant invenotries
 merchant_inventory_space = 30

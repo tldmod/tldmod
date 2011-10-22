@@ -532,49 +532,26 @@ scene_props = [
         (try_end),
 	])]),
 
-("banner_a",0,"banner_a01","0", []), #gondor
-("banner_b",0,"banner_a02","0", []), #rohan
-("banner_c",0,"banner_a03","0", []), #mordor
-("banner_d",0,"banner_a04","0", []), #harad
-("banner_e",0,"banner_a05","0", []), #khand
-("banner_f",0,"banner_a06","0", []), #rhun
-("banner_g",0,"banner_a07","0", []), #umbar
-("banner_h",0,"banner_a08","0", []), #lorien
-("banner_i",0,"banner_a09","0", []), #imladris
-("banner_j",0,"banner_a10","0", []), #woodelf
-("banner_k",0,"banner_a11","0", []), #moria
-("banner_l",0,"banner_a12","0", []), #guldur
-("banner_m",0,"banner_a13","0", []), #beorn
-("banner_n",0,"banner_f15","0", []), #gunda
-("banner_o",0,"banner_f21","0", []), #dale
-("banner_p",0,"banner_a16","0", []), #erebor
-#("banner_q",0,"banner_a13","0", []), #beorn
-("banner_r",0,"banner_a17","0", []), #dunland
-("banner_s",0,"banner_a19","0", []), #isengard
-("banner_t",0,"banner_a20","0", []), #
-#("banner_u",0,"banner_a21","0", []), #
-# banners B and C not used
-# ("banner_da",0,"banner_d01","0", []), 
-# ("banner_db",0,"banner_d02","0", []),
-# ("banner_dc",0,"banner_d03","0", []),
-# ("banner_dd",0,"banner_d04","0", []),
-# ("banner_de",0,"banner_d05","0", []),
-# ("banner_df",0,"banner_d06","0", []),
-# ("banner_dg",0,"banner_d07","0", []),
-# ("banner_dh",0,"banner_d08","0", []),
-# ("banner_di",0,"banner_d09","0", []),
-# ("banner_dj",0,"banner_d10","0", []),
-# ("banner_dk",0,"banner_d11","0", []),
-# ("banner_dl",0,"banner_d12","0", []),
-# ("banner_dm",0,"banner_d13","0", []),
-# ("banner_dn",0,"banner_d14","0", []),
-# ("banner_do",0,"banner_d15","0", []),
-# ("banner_dp",0,"banner_d16","0", []),
-# ("banner_dq",0,"banner_d17","0", []),
-# ("banner_dr",0,"banner_d18","0", []),
-# ("banner_ds",0,"banner_d19","0", []),
-# ("banner_dt",0,"banner_d20","0", []),
-# ("banner_du",0,"banner_d21","0", []),
+("banner_a",0,"b_arms_gondor","0", []), #gondor
+("banner_b",0,"b_arms_rohan","0", []), #rohan
+("banner_c",0,"b_mordor","0", []), #mordor
+("banner_d",0,"b_harad","0", []), #harad
+("banner_e",0,"b_arms_khand","0", []), #khand
+("banner_f",0,"b_rhun","0", []), #rhun
+("banner_g",0,"b_arms_umbar","0", []), #umbar
+("banner_h",0,"b_arms_lorien","0", []), #lorien
+("banner_i",0,"b_arms_imladris","0", []), #imladris
+("banner_j",0,"b_arms_woodelf","0", []), #woodelf
+("banner_k",0,"b_moria","0", []), #moria
+("banner_l",0,"b_guldur","0", []), #guldur
+("banner_m",0,"b_beorn","0", []), #beorn
+("banner_n",0,"b_gundabad","0", []), #gunda
+("banner_o",0,"b_arms_dale","0", []), #dale
+("banner_p",0,"b_arms_erebor","0", []), #erebor
+("banner_r",0,"b_dunland","0", []), #dunland
+("banner_s",0,"b_isengard","0", []), #isengard
+# banners B C Dnot used
+
 ("banner_ea",0,"banner_e01","0", []),
 ("banner_eb",0,"banner_e02","0", []),
 ("banner_ec",0,"banner_e03","0", []),
@@ -617,7 +594,6 @@ scene_props = [
 ("banner_f18", 0, "banner_f18", "0", []),
 ("banner_f19", 0, "banner_f19", "0", []),
 ("banner_f20", 0, "banner_f20", "0", []),
-("banner_f21", 0, "banner_a21", "0", []),
 
 ("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
 ("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),

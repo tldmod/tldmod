@@ -2792,7 +2792,7 @@ scripts = [
 ]),
 
 # script_party_split_by_faction (mtarini)
-# Input: arg1 = party_A, retains only the player and troops of given faction, except heroes
+# Input: arg1 = party_A, retains only the player and troops of given faction
 # Input: arg2 = party_B, receives the rest, old A = new A + new B
 # Input: arg3 = faction
 ("party_split_by_faction",
@@ -2805,9 +2805,9 @@ scripts = [
       (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop", ":partyA", ":i_stack"),
         (store_troop_faction, ":fac_t", ":stack_troop"),
-		(this_or_next|troop_is_hero, ":stack_troop"),
+		(neq,  ":stack_troop", "trp_player"), # player stays in A
+		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A (for hosts and stuff)
 		(neq, ":fac_t", ":fac"),
-		(neq,  ":stack_troop", "$g_player_troop"), # player stays in A
         (party_stack_get_size,  ":stack_size",":partyA",":i_stack"),
         (party_remove_members, ":partyA", ":stack_troop",  ":stack_size"),
 		(party_add_members, ":partyB", ":stack_troop",  ":stack_size"),
@@ -5502,7 +5502,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
-(eq, 1, 0), #Disabled: not finished
+ (eq, 1, 0), #Disabled: not finished
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
@@ -7075,7 +7075,7 @@ scripts = [
       (try_end),
 ]),
 
-# script_party_wound_all_members_aux
+# script_party_wound_all_members
 # Input: arg1 = party_no
 ("party_wound_all_members_aux",
     [ (store_script_param_1, ":party_no"),
@@ -7093,15 +7093,15 @@ scripts = [
       (party_get_num_attached_parties, ":num_attached_parties", ":party_no"),
       (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
         (party_get_attached_party_with_rank, ":attached_party", ":party_no", ":attached_party_rank"),
-        (call_script, "script_party_wound_all_members_aux", ":attached_party"),
+        (call_script, "script_party_wound_all_members", ":attached_party"),
       (try_end),
 ]),
 
-# script_party_wound_all_members. identical to script_party_wound_all_members_aux
+# script_party_wound_all_members. identical to script_party_wound_all_members
 # Input: arg1 = party_no
 ("party_wound_all_members",
     [ (store_script_param_1, ":party_no"),
-      (call_script, "script_party_wound_all_members_aux", ":party_no"),
+      (call_script, "script_party_wound_all_members", ":party_no"),
 ]),
 
 # script_calculate_battle_advantage
@@ -18511,6 +18511,29 @@ scripts = [
     (try_end),
 ]),
 
+# script_party_eject_nonfaction (GA)
+# Input: arg1 = party_A, source, retains target faction and heroes
+# Input: arg2 = party_B, gets all non-faction troops (usually p_main_party)
+# Input: arg3 = faction
+#Output: reg46 stores # of troops transferred
+("party_eject_nonfaction",[
+	(store_script_param_1, ":source"),
+	(store_script_param_2, ":recipient"),
+	(store_script_param, ":fac", 3),
+	(assign, reg46, 0),
+	(party_get_num_companion_stacks, ":num_stacks", ":source"),
+	(try_for_range, ":i_stack", 0, ":num_stacks"),
+		(party_stack_get_troop_id, ":stack_troop", ":source", ":i_stack"),
+		(neq,  ":stack_troop", "trp_player"), # player stays in A
+		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A
+		(store_troop_faction, ":fac_t", ":stack_troop"),
+		(neq, ":fac_t", ":fac"), # non-factions outta here
+		(party_stack_get_size, ":stack_size",":source",":i_stack"),
+		(val_add, reg46,  ":stack_size"),
+		(party_remove_members, ":source", ":stack_troop", ":stack_size"),
+		(party_add_members, ":recipient", ":stack_troop", ":stack_size"),
+	(try_end),
+]),
 
 ]
 

@@ -2040,7 +2040,7 @@ troops = [
    [],
       lord_attrib,0,0,0],
 #governors (lural contains how player refers to the guy
-["gondor_lord","Steward_Denethor","the Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+["gondor_lord","Steward_Denethor","Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_denethor_robe,itm_gondor_light_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],
 ["rohan_lord","King_Theoden","King",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
@@ -2061,7 +2061,7 @@ troops = [
 ["khand_lord","Shibh_Krukmahur","Shibh",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_khand,
    [itm_variag_kataphrakt,itm_khand_noble_lam,itm_variag_greaves,itm_evil_gauntlets_a,itm_khand_lance,itm_khand_tulwar,itm_variag_gladiator_shield,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4,0x0000000f3f00b38712065fd3287f731c00000000001c53780000000000000000],
-["umbar_lord","Captain_Tulmir","Captain",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
+["umbar_lord","Admiral_Tulmir","Admiral",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
    [itm_umb_armor_h,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_f,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_6,0x0000000e3b004244365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female,0,0,fac_lorien,
