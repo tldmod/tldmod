@@ -4221,10 +4221,10 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
 "I'm afraid he got away.", "lord_hunt_down_fugitive_fail", []],
 
 [anyone,"lord_hunt_down_fugitive_success", [],
-"And we'll all be a lot better off without him! Thank you, {playername},\
- for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things\
- with an appropriate level of tactfulness.\
- A bounty I promised, and a bounty you shall have!", "lord_hunt_down_fugitive_success_2", []],
+"And we'll all be a lot better off without him! Thank you, {playername}, \
+ for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things \
+ with an appropriate level of tactfulness. \
+ I've sent a note to our intendants already, and you can count on additional supplies from us.", "lord_hunt_down_fugitive_success_2", []],
   
 [anyone|plyr,"lord_hunt_down_fugitive_success_2", [],
 "Thank you, {s65}.", "lord_hunt_down_fugitive_reward_accept",[]],
