@@ -1256,7 +1256,7 @@ ws_party_spawns_list = [
 ("p_town_west_emnet"      ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
 ("p_town_eastfold"        ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
 #Mordor   
-("p_town_minas_morgul"    ,"pt_mordor_scouts",    "pt_morgul_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
+("p_town_minas_morgul"    ,"pt_morgul_scouts",    "pt_morgul_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
 ("p_town_morannon"        ,"pt_mordor_scouts",    "pt_mordor_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
 ("p_town_east_osgiliath"  ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
 ("p_town_orc_sentry_camp" ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
@@ -1280,7 +1280,7 @@ ws_party_spawns_list = [
 ("p_town_beorn_house"     ,"pt_beorn_scouts",         -1,                      -1,                    -1),
 
 ("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
-("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
+("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_esgaroth_patrol",  "pt_dale_caravan"),
 ("p_town_erebor"          ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
 ("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     -1),
 #Others evil

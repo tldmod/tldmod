@@ -12348,25 +12348,36 @@ scripts = [
         (troop_get_inventory_slot, ":item_id", ":troop", ":i_slot"),
         (ge, ":item_id", 0),
 		(item_get_type,  ":type", ":item_id"),
-		(neg|eq, ":type", itp_type_horse),#never give mount
-		(neg|eq, ":type", itp_type_bow),#never give bow
-		(neg|eq, ":type", itp_type_arrows),#never give ammo
-		(neg|eq, ":type", itp_type_thrown),#never give thrown
-		(neg|eq, ":type", itp_type_head_armor),#never give helms
-		(neg|eq, ":type", itp_type_goods),#never give goodies
+		(neg|is_between, ":type", itp_type_horse, itp_type_body_armor),#never give mounts, weapons
 		(try_begin), # only one item per type! (one armor, one weapon,,,)
 			(store_random_in_range, ":die_roll", 0, 2), 
 			(this_or_next|neq, ":type", ":prev_type"), # if first item of that type... (relies on items ordered inside tier 1 troops' inventories)
 			(lt, ":die_roll", 1), # 50% of time, replace old item with new item 
-			(troop_set_inventory_slot, "trp_player", ":i_slot",":item_id"),
-			(try_begin),(eq, ":type", itp_type_shield        ), (troop_set_inventory_slot_modifier,  "trp_player", ":i_slot", imod_battered), #fuckup starting items a bit
-			 (else_try),(eq, ":type", itp_type_one_handed_wpn), (troop_set_inventory_slot_modifier,  "trp_player", ":i_slot", imod_chipped),
-			 (else_try),(eq, ":type", itp_type_two_handed_wpn), (troop_set_inventory_slot_modifier,  "trp_player", ":i_slot", imod_chipped),
-			 (else_try),(eq, ":type", itp_type_body_armor    ), (troop_set_inventory_slot_modifier,  "trp_player", ":i_slot", imod_battered),
-			 (else_try),(eq, ":type", itp_type_foot_armor    ), (troop_set_inventory_slot_modifier,  "trp_player", ":i_slot", imod_ragged),
+			(try_begin),
+				(eq, ":type", itp_type_body_armor),
+				(troop_set_inventory_slot, "trp_player", ek_body,":item_id"),
+				(troop_set_inventory_slot_modifier,"trp_player", ek_body, imod_battered), #fuckup starting items a bit
+			 (else_try),
+				(eq, ":type", itp_type_foot_armor),
+				(troop_set_inventory_slot, "trp_player", ek_foot,":item_id"),
+				(troop_set_inventory_slot_modifier,  "trp_player", ek_foot, imod_ragged),
+			 (else_try),
+				(troop_set_inventory_slot, "trp_player", ":i_slot", ":item_id"),
 			(try_end),
 		(try_end),
 		(assign,":prev_type",":type"), #store previous item type
+	(try_end),
+	# give basic weapon
+	(try_begin), 
+		(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+		(troop_add_item, "trp_player", "itm_shortened_spear", imod_bent),
+	(else_try),
+		(troop_add_item, "trp_player", "itm_wood_club", imod_cracked),
+	(try_end),
+	(troop_equip_items, "trp_player"),
+	# clear nonequipped inventory
+	(try_for_range, ":i_slot", 9, ":inv_cap"), 
+		(troop_set_inventory_slot, "trp_player", -1, 0),
 	(try_end),
 	# copy stats: attrib
     (try_for_range, ":i", 0, 4),

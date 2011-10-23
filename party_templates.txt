@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-238
+240
 pt_none none 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 2 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 2 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -30,7 +30,7 @@ pt_sacrificed_messenger Sacrificed_Messenger 844424930459650 0 26 7 -1 -1 -1 -1 
 pt_gandalf Lone_Rider 2425009 0 26 7 857 1 1 0 -1 -1 -1 -1 -1 
 pt_nazgul Lone_Rider 2425010 0 26 7 858 1 1 0 -1 -1 -1 -1 -1 
 pt_gondor_scouts Gondorian_Scouts 281474980904980 0 3 183 111 1 1 0 116 3 7 0 102 3 7 0 -1 -1 -1 
-pt_blackroot_auxila Blackroot_Vale_Auxilia 281474980904984 0 3 183 153 1 1 0 152 0 3 0 151 4 7 0 -1 -1 -1 
+pt_blackroot_auxila Blackroot_Auxilia 281474980904984 0 3 183 153 1 1 0 152 0 3 0 151 4 7 0 -1 -1 -1 
 pt_lamedon_auxila Lamedon_Auxilia 281474980904981 0 3 183 141 1 1 0 140 1 5 0 139 4 8 0 -1 -1 -1 
 pt_lossarnach_auxila Lossarnach_Auxilia 281474980904983 0 3 183 128 1 1 0 127 0 3 0 126 2 6 0 125 4 10 0 -1 -1 
 pt_pinnath_gelin_auxila Pinnath_Gelin_Auxilia 281474980904982 0 3 183 148 1 3 0 146 1 2 0 145 3 6 0 -1 -1 -1 
@@ -45,6 +45,7 @@ pt_dwarf_scouts Dwarven_Lookouts 562949957615649 0 4 183 94 1 1 0 84 1 3 0 91 4 
 pt_beorn_scouts Beorning_Scouts 281474980904965 0 20 183 45 1 1 0 41 3 5 0 39 3 8 0 -1 -1 -1 
 pt_woodmen_scouts Woodmen_Scouts 281474980904965 0 20 183 37 1 1 0 35 2 3 0 31 3 6 0 -1 -1 -1 
 pt_mordor_scouts Mordor_Scouts 281474980905005 0 6 183 367 1 1 0 360 1 3 0 366 2 5 0 359 2 6 0 -1 -1 
+pt_morgul_scouts Morgul_Scouts 281474980905005 0 6 183 367 1 1 0 365 1 2 0 366 2 5 0 364 3 5 0 -1 -1 
 pt_isengard_scouts Isengard_Scouts 281474980905006 0 7 183 334 1 1 0 333 2 6 0 332 3 7 0 -1 -1 -1 
 pt_isengard_scouts_warg Isengard_Warg_Riders 281474980905011 0 7 183 322 1 1 0 321 3 6 0 320 3 6 0 -1 -1 -1 
 pt_harad_scouts Haradrim_Scouts 281474980904974 0 12 183 261 1 1 0 260 1 4 0 256 4 8 0 -1 -1 -1 
@@ -52,11 +53,11 @@ pt_dunland_scouts Dunlending_Scouts 281474980904968 0 19 183 271 5 10 0 -1 -1 -1
 pt_umbar_scouts Corsair_Scouts 281474980904978 0 15 183 299 1 1 0 302 2 4 0 301 3 7 0 -1 -1 -1 
 pt_khand_scouts Easterling_Scouts 281474980904972 0 15 183 293 1 1 0 283 2 4 0 282 3 6 0 -1 -1 -1 
 pt_moria_scouts Moria_Scouts 281474980905005 0 16 183 373 1 1 0 372 2 5 0 371 3 6 0 -1 -1 -1 
-pt_guldur_scouts Dol_Guldur_Scouts 281474980905005 0 17 183 365 1 2 0 364 8 15 0 -1 -1 -1 -1 
+pt_guldur_scouts Dol_Guldur_Scouts 281474980905005 0 17 183 357 3 4 0 356 8 12 0 -1 -1 -1 -1 
 pt_gundabad_scouts Gundabad_Scouts 281474980905010 0 18 183 391 1 1 0 390 2 5 0 389 4 7 0 -1 -1 -1 
 pt_rhun_scouts Rhun_Scouts 281474980904970 0 13 183 66 1 1 0 69 2 5 0 65 4 7 0 -1 -1 -1 
 pt_gondor_raiders Gondor_Foragers 281474980904987 0 3 238 112 1 1 0 103 6 12 0 116 6 12 0 -1 -1 -1 
-pt_rohan_raiders Rohan_Foragers 281474980904990 0 5 238 241 1 1 0 239 3 8 0 230 3 8 0 238 5 10 0 -1 -1 
+pt_rohan_raiders Rohirrim_Foragers 281474980904990 0 5 238 241 1 1 0 239 3 8 0 230 3 8 0 238 5 10 0 -1 -1 
 pt_imladris_raiders Rivendell_Foragers 562949957615657 0 9 238 206 1 1 0 199 6 12 0 203 6 12 0 -1 -1 -1 
 pt_lorien_raiders Lothlorien_Foragers 562949957615651 0 8 238 177 1 1 0 166 7 16 0 172 6 15 0 -1 -1 -1 
 pt_woodelf_raiders Mirkwood_Foragers 562949957615654 0 10 238 192 1 1 0 191 4 10 0 183 5 10 0 -1 -1 -1 
@@ -75,19 +76,20 @@ pt_guldur_raiders Dol_Guldur_Raiders 562949957615664 0 17 238 367 1 1 0 360 4 10
 pt_gundabad_raiders Gundabad_Raiders 562949957615664 0 18 238 391 1 1 0 387 5 10 0 386 10 15 0 383 10 20 0 -1 -1 
 pt_rhun_raiders Rhun_Raiders 281474980904970 0 13 238 79 1 1 0 66 6 12 0 77 8 16 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615636 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
-pt_rohan_patrol Rohan_Patrol 562949957615646 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
+pt_rohan_patrol Rohirrim_Patrol 562949957615646 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
 pt_imladris_patrol Dunedain_Patrol 4194345 0 9 238 216 1 1 0 215 4 10 0 214 3 5 0 213 8 20 0 212 8 20 0 -1 
 pt_lorien_patrol Lothlorien_Patrol 562949957615652 0 8 238 169 1 1 0 168 3 6 0 167 4 10 0 174 8 16 0 166 8 16 0 173 10 20 0 
 pt_woodelf_patrol Mirkwood_Patrol 562949957615654 0 10 238 186 1 1 0 185 3 6 0 184 4 10 0 192 4 10 0 191 4 10 0 183 8 16 0 
-pt_dale_patrol Dale_Patrol 562949957615618 0 11 238 62 1 1 0 55 4 8 0 52 3 8 0 57 4 10 0 51 6 12 0 49 6 12 0 
+pt_dale_patrol Dale_Patrol 562949957615618 0 11 238 62 1 1 0 55 4 8 0 58 3 8 0 57 4 10 0 51 6 12 0 48 6 12 0 
+pt_esgaroth_patrol Esgaroth_Patrol 562949957615640 0 11 238 62 1 1 0 52 6 10 0 57 4 10 0 51 10 15 0 49 6 12 0 -1 
 pt_dwarf_patrol Dwarven_Patrol 562949957615649 0 4 238 90 1 1 0 93 8 16 0 85 5 10 0 88 8 20 0 91 10 25 0 -1 
 pt_ranger_patrol Ranger_Patrol 4194328 0 3 238 124 1 1 0 123 4 8 0 122 6 12 0 121 8 20 0 -1 -1 
-pt_amroth_patrol Gondor_Patrol 562949957615641 0 3 238 163 1 1 0 162 2 6 0 160 6 14 0 159 8 20 0 158 16 30 0 -1 
-pt_pelargir_patrol Gondor_Patrol 562949957615636 0 3 238 136 1 1 0 133 3 8 0 135 3 8 0 132 6 14 0 134 6 14 0 -1 
-pt_lossarnach_patrol Gondor_Patrol 562949957615639 0 3 238 130 1 1 0 129 3 8 0 128 4 10 0 117 8 20 0 126 8 20 0 -1 
-pt_brv_patrol Gondor_Patrol 562949957615640 0 3 238 156 1 1 0 153 4 8 0 152 6 12 0 154 8 16 0 151 10 20 0 -1 
-pt_pinnath_patrol Gondor_Patrol 562949957615638 0 3 238 150 1 1 0 149 3 6 0 147 3 6 0 148 6 16 0 146 8 20 0 -1 
-pt_lamedon_patrol Gondor_Patrol 562949957615644 0 3 238 144 1 1 0 143 3 6 0 142 3 6 0 141 8 20 0 140 10 24 0 -1 
+pt_amroth_patrol Dol_Amroth_Patrol 562949957615641 0 3 238 163 1 1 0 162 2 6 0 160 6 14 0 159 8 20 0 158 16 30 0 -1 
+pt_pelargir_patrol Pelargir_Patrol 562949957615636 0 3 238 136 1 1 0 133 3 8 0 135 3 8 0 132 6 14 0 134 6 14 0 -1 
+pt_lossarnach_patrol Lossarnach_Patrol 562949957615639 0 3 238 130 1 1 0 129 3 8 0 128 4 10 0 117 8 20 0 126 8 20 0 -1 
+pt_brv_patrol Blackroot_Patrol 562949957615640 0 3 238 156 1 1 0 153 4 8 0 152 6 12 0 154 8 16 0 151 10 20 0 -1 
+pt_pinnath_patrol Pinnath_Patrol 562949957615638 0 3 238 150 1 1 0 149 3 6 0 147 3 6 0 148 6 16 0 146 8 20 0 -1 
+pt_lamedon_patrol Lamedon_Patrol 562949957615644 0 3 238 144 1 1 0 143 3 6 0 142 3 6 0 141 8 20 0 140 10 24 0 -1 
 pt_mordor_war_party Mordor_War_Party 844424934326327 0 6 238 351 1 2 0 346 10 22 0 369 10 22 0 345 16 36 0 359 20 40 0 368 20 40 0 
 pt_isengard_war_party Isengard_War_Party 844424934326324 0 7 238 343 1 2 0 335 2 4 0 340 2 4 0 334 10 20 0 338 15 30 0 320 5 10 0 
 pt_harad_war_party Harad_War_Party 844424934326287 0 12 238 250 2 4 0 259 2 4 0 262 2 4 0 254 8 16 0 257 10 20 0 247 20 40 0 
