@@ -8999,6 +8999,24 @@ scripts = [
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_fangorn),
 	(else_try),
+		# the region_emyn_muil?
+		(position_set_x,pos20,-4593),(position_set_y,pos20,-4645),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 4593-3341),
+		(assign, reg1, region_emyn_muil),
+	(else_try),
+		# the dagorlad?
+		(is_between, ":x",-9371, -3474),(is_between, ":y",-6081 , -2932),
+		(assign, reg1, region_dagorlad),
+	(else_try),
+		# the s updeep?
+		(is_between, ":x",-4960, -3400),(is_between, ":y",-9335 , -5270),
+		(assign, reg1, region_s_undeep),
+	(else_try),
+		# the n updeep?
+		(is_between, ":x",-5000, -3400),(is_between, ":y",-10998 , -9022),
+		(assign, reg1, region_n_undeep),
+	(else_try),
 		# the wold?
 		(is_between, ":x", -4190,2307 ),(is_between, ":y",   -9615,  -6514),
 		(assign, reg1, region_the_wold),
@@ -9052,7 +9070,7 @@ scripts = [
 		(assign, reg1, region_misty_mountains),
 	(else_try),
 		# near grey mountains, far in the north
-		(lt,  ":y",  -25804),
+		(lt,  ":y",  -23220),
 		(assign, reg1, region_grey_mountains),
 	(else_try),
 		# else, "vague locations": 
@@ -9188,9 +9206,12 @@ scripts = [
 		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 	(else_try),		# dry-brown regions
 		(this_or_next|eq,":region",region_the_wold),
+		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
+		(this_or_next|eq,":region",region_dagorlad),
 		(eq,":region",region_brown_lands),
 		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
 	(else_try),		# rohan regions
+		(this_or_next|eq,":region",region_emyn_muil),
 		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
 		(assign, ":native_terrain_to_use", rt_steppe),  # rohan default
 	(else_try),		# mountains regions

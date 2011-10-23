@@ -22,9 +22,9 @@ dlga_hobbit_general_talk_1:close_window 69631 23  0 I_don't_have_time_now.  6  1
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met 69631 23  2 540 3 360287970189640228 80 0 540 3 360287970189640229 80 0 Say._I_think_I_never_seen_one_of_your_kind.  24  1 500 3 144115188075855889 80 1 
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met 69631 23  2 31 2 144115188075855889 360287970189640228 540 3 360287970189640229 80 1 Say._I_think_I've_met_another_one_like_you,_in_Edoras.  25  1 500 3 144115188075855889 80 1 
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1 69631 23  2 31 2 144115188075855889 360287970189640229 540 3 360287970189640228 80 1 Say._I_think_I've_met_another_one_like_you,_in_Minas_Thirit.  25  1 500 3 144115188075855889 80 1 
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3 4095 24  0 I_know._I_came_from_a_long_way!_I'm_a_Hobbit,_{sir/madam},_from_the_Shire.  26  0 
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3 549 25  0 Oh,_that_must_have_been_my_dear_cousin!_Peregrin_Took,_or_Pippin,_how_they_call_him._We_are_Hobbits,_and_we_come_from_the_Shire,_both_of_us!_Good_old_Pippin,_I_wonder_how_he_is_doing,_in_Minas_Tirith.  26  0 
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1 548 25  0 Oh,_that_must_have_been_my_dear_cousin!_Meriadoc_Brandybuck,_or_Merry,_how_they_call_him._We_are_Hobbits,_and_we_come_from_the_Shire,_both_of_us!_Good_old_Merry,_I_wonder_how_he_is_doing,_back_in_Edoras.  26  0 
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3 4095 24  0 I_know._I_came_from_afar!_I'm_a_Hobbit,_{sir/madam},_from_the_Shire.  26  0 
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3 549 25  0 Oh,_that_must_have_been_my_dear_cousin!_Peregrin_Took,_or_Pippin,_how_they_call_him._We_are_Hobbits,_{sir/madam},_and_we_come_from_the_Shire,_both_of_us!_Good_old_Pippin,_I_wonder_how_he_is_doing,_in_Minas_Tirith.  26  0 
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1 548 25  0 Oh,_that_must_have_been_my_dear_cousin!_Meriadoc_Brandybuck,_or_Merry,_how_they_call_him._We_are_Hobbits,_{sir/madam},_and_we_come_from_the_Shire,_both_of_us!_Good_old_Merry,_I_wonder_how_he_is_doing,_back_in_Edoras.  26  0 
 dlga_hobbit_general_talk_3:close_window 69631 26  0 Well,_goodbye_now.  6  1 1740 2 144115188075855902 1801439850948198734 
 dlga_start:hobbit_merry_talk_met.1 551 0  0 Welcome_back,_{playername}!  21  0 
 dlga_start:hobbit_pippin_talk_met.1 550 0  0 Welcome_back,_{playername}!  22  0 

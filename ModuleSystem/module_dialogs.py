@@ -309,11 +309,11 @@ dialogs = [
 
 [anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_merry_notmet"), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Minas Thirit.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
-[anyone,  "hobbit_general_talk_first_met", [], "I know. I came from a long way! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
+[anyone,  "hobbit_general_talk_first_met", [], "I know. I came from afar! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
 
-[trp_merry_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Peregrin Took, or Pippin, how they call him. We are Hobbits, and we come from the Shire, both of us! Good old Pippin, I wonder how he is doing, in Minas Tirith.","hobbit_general_talk_3",[] ],
+[trp_merry_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Peregrin Took, or Pippin, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Pippin, I wonder how he is doing, in Minas Tirith.","hobbit_general_talk_3",[] ],
 
-[trp_pippin_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing, back in Edoras.","hobbit_general_talk_3",[] ],
+[trp_pippin_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing, back in Edoras.","hobbit_general_talk_3",[] ],
 
 [anyone|plyr,  "hobbit_general_talk_3", [], "Well, goodbye now.","close_window",[  (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"), ] ],
 

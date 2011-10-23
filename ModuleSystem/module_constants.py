@@ -77,14 +77,18 @@ region_dead_marshes = 22
 region_isengard = 23
 region_fangorn = 24
 region_brown_lands = 25
-region_misty_mountains = 26
-region_lorien = 27
-region_anduin_banks = 28
-region_n_mirkwood = 29
-region_s_mirkwood = 30
-region_above_mirkwook = 31
-region_grey_mountains = 32
-region_mordor = 33
+region_dagorlad = 26
+region_n_undeep = 27
+region_s_undeep = 28
+region_emyn_muil = 29 
+region_misty_mountains = 30
+region_lorien = 31
+region_anduin_banks = 32
+region_n_mirkwood = 33
+region_s_mirkwood = 34
+region_above_mirkwook = 35
+region_grey_mountains = 36
+region_mordor = 37
 
 
 
