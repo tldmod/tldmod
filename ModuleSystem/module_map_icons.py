@@ -4,6 +4,8 @@ from header_operations import *
 from header_triggers import *
 from ID_sounds import *
 
+from module_map_icons_mapscribbler import *
+
 ####################################################################################################################
 #  Each map icon record contains the following fields:
 #  1) Map icon id: used for referencing map icons in other files.
@@ -21,7 +23,7 @@ banner_scale = 0.3
 avatar_scale = 0.15
 tld_scale = 0.5
 
-map_icons = [
+map_icons = map_icons_scribbler + [
   ("player",0,"player", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("player_horseman",0,"player_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("gray_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),

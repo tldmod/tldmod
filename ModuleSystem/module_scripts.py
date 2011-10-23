@@ -10870,15 +10870,15 @@ scripts = [
 # script_describe_center_relation_to_s3
 # Input: arg1 = relation (-100 .. 100)
 # Output: none
-("describe_center_relation_to_s3",
-    [(store_script_param_1, ":relation"),
-      (store_add, ":normalized_relation", ":relation", 100),
-      (val_add, ":normalized_relation", 5),
-      (store_div, ":str_offset", ":normalized_relation", 10),
-      (val_clamp, ":str_offset", 0, 20),
-      (store_add, ":str_id", "str_center_relation_mnus_100",  ":str_offset"),
-      (str_store_string, s3, ":str_id"),
-]),
+# ("describe_center_relation_to_s3",
+    # [(store_script_param_1, ":relation"),
+      # (store_add, ":normalized_relation", ":relation", 100),
+      # (val_add, ":normalized_relation", 5),
+      # (store_div, ":str_offset", ":normalized_relation", 10),
+      # (val_clamp, ":str_offset", 0, 20),
+      # (store_add, ":str_id", "str_center_relation_mnus_100",  ":str_offset"),
+      # (str_store_string, s3, ":str_id"),
+# ]),
 
 # script_center_ambiance_sounds
 # to be called every two seconds. TODO for TLD centers

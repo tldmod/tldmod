@@ -6,6 +6,9 @@ from ID_party_templates import *
 from ID_map_icons import *
 from module_constants import *
 from ID_menus import *
+
+from module_parties_mapscribbler import *
+
 ####################################################################################################################
 #  Each party record contains the following fields:
 #  1) Party id: used for referencing parties in other files.
@@ -291,4 +294,4 @@ parties = [
   ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
 # mirkwood forest adornments 
   ("shrubbery" ,"shrubbery" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
-  ]
+  ] + parties_scribbler 
