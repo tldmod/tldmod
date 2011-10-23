@@ -880,7 +880,12 @@ simple_triggers = [
     (try_for_range, ":i_stack", 0, ":num_stacks"),
       (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
       (val_add, ":num_men", ":stack_size"),
-    (try_end),
+	  # GA: orcs eat twice as much, mean little bastards
+      (party_stack_get_troop_id, reg1, "p_main_party",":i_stack"),
+	  (troop_get_type, reg1, reg1),
+	  (eq, reg1, tf_orc),
+	  (val_add, ":num_men", ":stack_size"),
+	(try_end),
     (val_div, ":num_men", 3),
     (try_begin),
       (eq, ":num_men", 0),

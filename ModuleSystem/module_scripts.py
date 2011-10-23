@@ -4088,21 +4088,14 @@ scripts = [
 	(else_try),
 		(set_visitor,17,":meeting_troop",":troop_dna"),
 	(try_end),
-
-	#add company to an opponent talker
-	(store_party_size_wo_prisoners,":size",":meeting_party"),
-	(val_add, ":size", 18),
-	(party_get_num_companion_stacks, ":num_stacks",":meeting_party"),
+	(call_script, "script_party_copy", "p_encountered_party_backup", ":meeting_party"),
+	(party_remove_members,"p_encountered_party_backup",":meeting_troop",1),
+	
+	#add company to an opponent talker cf_party_remove_random_regular_troop
 	(try_for_range, ":entry", 19, 30),
-		(try_for_range, ":stack", 0, ":num_stacks"), # one from each stack, then repeat
-			(lt, ":entry", 30),
-			(lt, ":entry", ":size"),
-			(party_stack_get_troop_id, ":stack_troop",":meeting_party",":stack"),
-			(neg|troop_is_hero, ":stack_troop"), #heroes not shown (usually one hero, and he's a leader/talker already
-			(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
-			(set_visitor,":entry",":stack_troop",":rnd"),
-			(val_add, ":entry", 1),
-		(try_end),	
+		(call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
+		(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
+		(set_visitor,":entry",reg0,":rnd"),
 	(try_end),
 	
 	(set_jump_mission,"mt_conversation_encounter"),

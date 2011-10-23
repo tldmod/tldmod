@@ -2607,7 +2607,7 @@ How could I expect someone like {playername} to be up to the challange. My serva
 	(troop_set_slot, "$g_talk_troop", slot_troop_player_debt, 0)]],
 
 [anyone|plyr, "lord_pay_debt_2", [], "Alas, I don't have sufficient funds, {s65}. But I'll pay you soon enough.", "lord_pay_debt_3_2", []],
-[anyone, "lord_pay_debt_3_1", [], "Ah, excellent. You are a {man/woman} of honour, {playername}. I am satisfied, yopur debt to me has been paid in full.", "lord_pretalk", []],
+[anyone, "lord_pay_debt_3_1", [], "Ah, excellent. You are a {man/woman} of honour, {playername}. I am satisfied, your debt to me has been paid in full.", "lord_pretalk", []],
 [anyone, "lord_pay_debt_3_2", [], "Well, don't keep me waiting much longer.", "lord_pretalk", []],
    
 [anyone,"lord_start", [(party_slot_eq, "$g_encountered_party",slot_town_lord, "$g_talk_troop"),#we are talking to Town's Lord.
@@ -2643,15 +2643,15 @@ How could I expect someone like {playername} to be up to the challange. My serva
                          (val_div, reg6, 2),
                          (assign, "$temp", reg6)],
 "I heard that you have captured our enemy {s3} and he is with you at the moment.\
- I can pay you {reg6} RPs for him if you want to get rid of him.\
+ I can give you {reg6} RPs for him if you want to get rid of him.\
  ", "lord_buy_prisoner", []],
 
 [anyone|plyr,"lord_buy_prisoner", [], "I accept your offer. I'll leave {s3} to you for {reg6} RPs.", "lord_buy_prisoner_accept", []],
 [anyone|plyr,"lord_buy_prisoner", [], "I fear I can't accept your offer.", "lord_buy_prisoner_deny", [(assign, "$g_ransom_offer_rejected", 1),]],
 
 [anyone,"lord_buy_prisoner_accept", [],
-"Excellent! Here's your {reg6} RPs.\
- I'll send some men to take him to our prison with due haste.", "lord_pretalk", [
+"Excellent! I'll tell our intendants to fork off a pack of supplies for you right now as a reward. \
+ I'll send my men to take him to our prison with due haste.", "lord_pretalk", [
      (remove_troops_from_prisoners,  "$prisoner_lord_to_buy", 1),
      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$temp"),
      #(call_script, "script_troop_add_gold", "trp_player", "$temp"),
@@ -2938,7 +2938,7 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
  and give my regards to {s9} when you see him again."),
      (else_try),
        (str_store_string, s4, "@Give me that!\
- Hrmph! Good that you brought me this, {playername}, you are a useful servant. If you see {s9} again tell him to employ you more often."),
+ Hrmph! Good that you brought me this, {playername}, you are a useful servant. Tell {s9} to employ you more often."),
      (try_end),
      #(call_script, "script_change_player_relation_with_troop", ":quest_giver", 1),
      (quest_get_slot, ":reward", "qst_deliver_message", slot_quest_gold_reward),
@@ -8552,7 +8552,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [party_tpl|pt_fangorn_orcs,"start", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_target_party, "$g_encountered_party")],
    "Eh? The Old Man won't be happy if you interrupt the work of his servants.", "fangorn_orcs_intro_1",[]],
 [anyone|plyr,"fangorn_orcs_intro_1", [], "Stop harming this forest and leave, or you'll regret it!", "fangorn_orcs_intro_2", []],
-[anyone,"fangorn_orcs_intro_2", [], "Har-har! We'll cut and burn as we please! After we are done with you...", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
+[anyone,"fangorn_orcs_intro_2", [], "Har-har! We'll cut and burn as we please! After we are done with you...", "close_window",[(encounter_attack)]],
  
 [party_tpl|pt_rescued_prisoners,"start", [(eq,"$talk_context",tc_party_encounter)], "Do you want us to follow you?", "disbanded_troop_ask",[]],
 [anyone|plyr,"disbanded_troop_ask", [], "Yes. Let us ride together.", "disbanded_troop_join",[]],
@@ -8564,11 +8564,28 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [party_tpl|pt_enemy|plyr,"enemy_talk_1", [], "You don't have a chance against me. Give up.", "enemy_talk_2",[]],
 [party_tpl|pt_enemy,"enemy_talk_2", [], "I will give up when you are dead!", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 
-[anyone|plyr,"prisoner_chat", [], "I will be watching you, scum.", "prisoner_chat_2",[]],
-[anyone|plyr,"prisoner_chat", [(eq,1,0)], "You happen to be the next dinner for my orcs. Guards, slaughter him!", "prisoner_slaughter",[]],
+[anyone|plyr,"prisoner_chat", [], "Guards, bring me that one!", "prisoner_chat_2",[
+	# need some code for removing weapons from the prisoner troop, else kinda stupid. I forsee some problems with returning the weapons though...
+	]],
+[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 
-[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
-[anyone,"prisoner_slaughter", [], "There would come a day, when you will pay.... Aaa-ghgllr!...", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+[anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
+[anyone|plyr,"prisoner_chat_3", [(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], 
+"You happen to be our next dinner! Guards, slaughter him!", "prisoner_slaughter",[]],
+[anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[]],
+[anyone,"prisoner_slaughter", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
+	(mission_cam_set_mode, 1, 1, 0),
+	(play_sound,"snd_man_die"),
+	(get_player_agent_no, reg1),
+	(try_for_agents, ":agent"), # make a prisoner die in conversation window
+		(neq, ":agent", reg1),
+		(agent_is_human, ":agent"),
+		(agent_get_troop_id, "$g_talk_troop", ":agent"), #apparently prisoner talk defines $g_talk_troop incorrectly. MB bug
+		(agent_set_hit_points,":agent",0,0),
+		(agent_deliver_damage_to_agent, reg1, ":agent"),
+	(try_end),
+	(party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
+	(troop_add_item,"trp_player", "itm_human_meat",imod_fresh)]],
 
 [anyone,"start", [(this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     #(this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),

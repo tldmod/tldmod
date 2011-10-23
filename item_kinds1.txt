@@ -2480,6 +2480,9 @@ itemsfile version 2
  itm_dwarf_scale_boots Dwarven_Scale_Boots Dwarven_Scale_Boots 1  dwarf_scale_boots 0  69390 0 1508 704643072 2.000000 100 0 0 30 0 0 0 0 0 0 0 0
 0
 
+ itm_good_mace Mace Mace 1  good_mace 0  4653058 9223388532775583758 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 527 537
+0
+
  itm_far_harad_shield_paint Wicker_Shield Wicker_Shield 1  far_harad_c_giles 0  327687 4831838208 200 251658402 2.500000 100 0 1 0 0 480 82 0 90 0 0 0
 1
 -50.000000  1 1981 2 1729382256910270507 0 
@@ -2659,9 +2662,6 @@ itemsfile version 2
 0
 
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small 0  4108 0 3000 0 3.000000 100 50 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_good_mace Mace Mace 1  good_mace 0  4653058 9223388532775583758 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 527 537
 0
 
  itm_gandstaff Wizards_Staff Wizards_Staff 1  gandstaff 0  138838020 4222124851990272 1 0 2.500000 100 0 0 0 0 51200 103 0 118 0 552 562
