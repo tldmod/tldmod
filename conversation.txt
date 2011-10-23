@@ -819,7 +819,7 @@ dlga_disbanded_troop_join:close_window.1 4095 406  0 We_are_at_your_command.  6 
 dlga_start:enemy_talk_1 131074 0  1 31 2 144115188075856005 2 You_will_not_capture_me_again._Not_this_time.  407  0 
 dlga_enemy_talk_1:enemy_talk_2 196610 407  0 You_don't_have_a_chance_against_me._Give_up.  408  0 
 dlga_enemy_talk_2:close_window 131074 408  0 I_will_give_up_when_you_are_dead!  6  2 1740 2 144115188075855902 1801439850948198734 1302 0 
-dlga_prisoner_chat:prisoner_chat_2 69631 14  0 Guards,_bring_me_that_one!  409  0 
+dlga_prisoner_chat:prisoner_chat_2 69631 14  1 2133 2 144115188075856005 19 Guards,_bring_me_that_one!  409  0 
 dlga_prisoner_chat_2:prisoner_chat_3 4095 409  0 You_put_me_in_chains_already,_what_more_do_you_want?  410  0 
 dlga_prisoner_chat_3:prisoner_chat_4 69631 410  0 Don't_try_anything,_you_scum!  411  0 
 dlga_prisoner_chat_3:prisoner_slaughter 69631 410  1 2147484190 3 144115188075855986 158 0 You_happen_to_be_our_next_dinner!_Guards,_slaughter_him!  412  0 

@@ -8564,7 +8564,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [party_tpl|pt_enemy|plyr,"enemy_talk_1", [], "You don't have a chance against me. Give up.", "enemy_talk_2",[]],
 [party_tpl|pt_enemy,"enemy_talk_2", [], "I will give up when you are dead!", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 
-[anyone|plyr,"prisoner_chat", [], "Guards, bring me that one!", "prisoner_chat_2",[
+[anyone|plyr,"prisoner_chat", [(assign,"$talk_context",tc_prisoner_talk)], "Guards, bring me that one!", "prisoner_chat_2",[
 	# need some code for removing weapons from the prisoner troop, else kinda stupid. I forsee some problems with returning the weapons though...
 	]],
 [anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],

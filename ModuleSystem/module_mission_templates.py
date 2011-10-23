@@ -96,12 +96,6 @@ mission_templates = [ # not used in game
 	# (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
     [ # other people in the backgroud
-		# (1, 0, ti_once, [(neq,"$party_meeting",0)], 
-	    # [   # a small comment about the purpose of this? Position of enemy/freindly troops changes according to attacking/non attacking?
-			# GA: encountered party can be either attacker or defender, and those spawn in different entries
-			# (try_begin),(encountered_party_is_attacker),(add_reinforcements_to_entry,32,8),  
-		     # (else_try),								(add_reinforcements_to_entry,31,8),
-			# (try_end)]),
 		# freindly greetings (after 0.2 secs)
 		(0, 0.2, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
@@ -154,6 +148,7 @@ mission_templates = [ # not used in game
 			(try_for_agents,":agent"),
 			(agent_is_human, ":agent"),
 				(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,17),(neq,reg1,18), # main guys do not cheer
+				(neq,"$talk_context", tc_prisoner_talk), # prisoners do not cheer
 				(store_random_in_range,reg1,0,100),(lt,reg1,3), # 3% of times
 				(agent_get_horse,reg1,":agent"),					
 				(try_begin),(eq,reg1,-1),(agent_set_animation, ":agent", "anim_cheer"),
