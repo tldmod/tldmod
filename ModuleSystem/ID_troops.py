@@ -895,4 +895,5 @@ trp_black_numenorean_acolyte = 893
 trp_wolf_rider_of_mirkwood = 894
 trp_warg_rider_of_mirkwood = 895
 trp_gate_aggravator = 896
-trp_last = 897
+trp_orc_pretender = 897
+trp_last = 898

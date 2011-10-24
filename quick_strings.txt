@@ -1,4 +1,4 @@
-962
+965
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -730,6 +730,9 @@ qstr_You_have_found_the_s You_have_found_the_sorcerer!
 qstr_Kill_him_quickly_bef Kill_him_quickly_before_he_escapes!
 qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Isen_dams.
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
+qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_agains_the_mutinee!_^Seems_like_your_orcs_have_a_new_commander_now.
+qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
+qstr_^^^There_is_a_sudden ^^^There_is_a_sudden_uproar_in_the_ranks_of_your_orcs,_and_the_largest_one_of_them_approaches_you!_^^Hey,_{playername}._We_tell_you_what.._Lads_here_are_not_happy,_not_happy_at_all._Not_enough_manflesh,_not_enough_fun._Lads_here_are_talking_that_you_are_not_good_enough_commander!_We_tell_you_what.._Lads_here_think_I_be_better_commander,_when_I_KILL_YOU!
 qstr_Breaking_camp... Breaking_camp...
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).

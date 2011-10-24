@@ -1352,15 +1352,38 @@ mission_templates = [ # not used in game
     ],
     tournament_triggers
 ),
-( "arena_challenge_fight",mtf_arena_fight|mtf_commit_casualties,-1,
-  "You enter a melee fight in the arena.",
-    [ (56, mtef_visitor_source|mtef_team_0, 0, aif_start_alarmed, 1, []),(58, mtef_visitor_source|mtef_team_2, 0, aif_start_alarmed, 1, []),
+( "arena_challenge_fight",mtf_team_fight, -1, # used for 
+  "You enter a melee fight.",
+    [ (0, mtef_visitor_source|mtef_team_0, af_override_horse, aif_start_alarmed, 1, []),
+	  (1, mtef_visitor_source|mtef_team_1, af_override_horse, aif_start_alarmed, 1, []),
+	  (2, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(3, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(4, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(5, mtef_visitor_source|mtef_team_2, 4, 0, 1, []), #spectators
+	  (6, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(7, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(8, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(9, mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
+	  (10,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(11,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(12,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(13,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
+	  (14,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(15,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(16,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(17,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
+	  (18,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(19,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(20,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(21,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
+	  (22,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(23,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(24,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(25,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
+	  (26,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
     ],[
 	common_inventory_not_available,
 	(ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
-	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
+	(ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
 	(0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
-    (1, 4, ti_once, [(this_or_next|main_hero_fallen),(num_active_teams_le,1)],[(finish_mission)]),
+    #(1, 4, ti_once, [(this_or_next|main_hero_fallen),(num_active_teams_le,2)],[(finish_mission)]),
+	(0.3, 0, 2, [], [ # spectators cheer
+		(try_for_agents,":agent"),
+			(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
+			(store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
+			(agent_set_animation, ":agent", "anim_cheer"),
+			(agent_get_troop_id,":troop", ":agent"),
+			(troop_get_type,reg1,":troop"),
+			(try_begin),(is_between, reg1, tf_urukhai, tf_orc_end),(agent_play_sound, ":agent", "snd_uruk_yell"),
+			 (else_try),(eq, reg1, tf_orc),(agent_play_sound, ":agent", "snd_orc_yell"),
+			 (else_try),(agent_play_sound, ":agent", "snd_man_yell"),
+			(try_end),
+		(try_end)]),
+		
+	(1, 3, ti_once, [(all_enemies_defeated, 1),(neg|main_hero_fallen, 0)],[(assign, "$party_meeting", 1),(finish_mission)]),
+	(2, 3, ti_once, [(main_hero_fallen)],[(assign, "$party_meeting", -1),(finish_mission)]),    
 ]),
 
 ( "custom_battle",mtf_battle_mode,-1,

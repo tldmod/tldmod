@@ -77,7 +77,7 @@ items =[
 #["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,100,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(25,blunt)|max_ammo(14),imodbits_thrown],
 #
 #foods (first one is smoked_fish)
-["human_meat","Human_Flesh",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(70),imodbits_none],
+["human_meat","Human_Flesh",[("human_flesh",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(30),imodbits_none],
 ["maggoty_bread","Maggoty_Bread",[("maggoty_bread",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["cram","Cram_Ration",[("cram",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique,0,200,weight(1.3)|abundance(10)|0,imodbits_none],
@@ -817,7 +817,7 @@ items =[
 ["mirkwood_armor_c","Light_Scale_over_Mail",[("mirkwood_scaleovermaille_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(37)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
 ["mirkwood_armor_d","Light_Quilted_Surcoat",[("mirkwood_quiltedsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(13)|head_armor(0)|body_armor(44)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
 ["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(15)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-#["mirkwood_armor_f", "Light Archer's Tabard",[("mirkwood_archer_cloth",0)], itp_shop|itp_type_body_armor  |itp_covers_legs ,0, 500 , weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(8) ,imodbits_armor ],
+["mirkwood_armor_f","Royal_Woodelf_Armor",[("mirkwood_royal",0)], itp_type_body_armor  |itp_covers_legs ,0, 500 , weight(20)|abundance(100)|head_armor(3)|body_armor(55)|leg_armor(18)|difficulty(0) ,imodbits_elf_armor ],
 #WEAPONS##########
 ["mirkwood_great_spear","Mirkwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_wooden_parry|itp_cant_use_on_horseback,itc_staff,900,weight(2.5)|difficulty(0)|spd_rtng(101)|weapon_length(148)|swing_damage(20,blunt)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["mirkwood_war_spear","Mirkwood_War_Spear",[("mirkwood_war_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_cutting_spear,500,weight(2.5)|difficulty(0)|spd_rtng(99)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(31,pierce),imodbits_weapon_good],
@@ -1145,7 +1145,7 @@ items =[
 ["dwarf_war_pick","Dwarf_War_Pick",[("dwarf_war_pick",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,400,weight(2)|difficulty(0)|spd_rtng(98)|weapon_length(94)|swing_damage(28,pierce)|thrust_damage(26,pierce),imodbits_weapon_good],
 ["dwarf_mattock","Dwarf_Mattock",[("dwarf_mattock",0)],itp_type_polearm|itp_shop|itp_primary|itp_wooden_parry|itp_cant_use_on_horseback,itc_scimitar|itcf_carry_axe_left_hip,500,weight(3)|difficulty(0)|spd_rtng(96)|weapon_length(99)|swing_damage(19,pierce)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["dwarf_hand_axe","Dwarf_Short_Axe",[("dwarf_1h_axe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(97)|weapon_length(54)|swing_damage(40,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
-["dwarf_throwing_axe","Dwarf_Throwing_Axe",[("dwarf_throw_axe",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,300,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(65,cut)|max_ammo(4),imodbits_thrown],
+["dwarf_throwing_axe","Dwarf_Throwing_Axe",[("dwarf_throw_axe",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,300,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(33)|thrust_damage(65,cut)|max_ammo(4),imodbits_thrown],
 ["dwarf_spear","Dwarf_Spear",[("dwarf_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_staff,400,weight(2.25)|difficulty(0)|spd_rtng(98)|weapon_length(140)|swing_damage(20,blunt)|thrust_damage(26,pierce),imodbits_weapon_good],
 #HELMS#########
 ["dwarf_helm_a","Dwarf_Coif",[("DwarfHelmCoif",0)],itp_type_head_armor|itp_shop,0,500,weight(1)|head_armor(20)|difficulty(0),imodbits_elf_armor],

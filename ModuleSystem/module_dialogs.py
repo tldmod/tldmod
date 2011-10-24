@@ -211,7 +211,28 @@ dialogs = [
 					 (try_end),
 					 (eq, 1, 0)],  
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
-  
+
+#GA: orc pretender dialogs
+[trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
+[trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
+[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
+	# (assign, "$g_leave_encounter", 1),
+	# (assign, "$party_meeting", 0),
+    # (modify_visitors_at_site, "scn_duel_scene"),
+    # (reset_visitors),
+    # (set_visitor, 0, "trp_player"),
+    # (set_visitor, 1, "$g_talk_troop"),
+	# (party_remove_members, "p_encountered_party_backup", "trp_player", 1),
+	# (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"),
+	# (try_for_range, ":entry", 2, 12), # populate spectators
+		# (call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
+		# (store_random_in_range, ":rnd",1, 100000), #rnd dna
+		# (set_visitor,":entry",reg0,":rnd"),
+	# (try_end),
+    # (set_jump_mission, "mt_arena_challenge_fight"),
+    # (jump_to_scene, "scn_duel_scene")
+	]],
+
 #MV: Easter Egg Troll dialogs
 [trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Problem?", "troll_introduce_1",[]],
 [trp_easter_egg_troll, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "U mad?", "troll_talk_1",[]],
@@ -307,7 +328,7 @@ dialogs = [
 
 [anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_pippin_notmet"), (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Edoras.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
-[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_merry_notmet"), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Minas Thirit.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
+[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_merry_notmet"), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Minas Tirith.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
 [anyone,  "hobbit_general_talk_first_met", [], "I know. I came from afar! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
 

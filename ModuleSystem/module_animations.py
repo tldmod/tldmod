@@ -1043,7 +1043,7 @@ animations = [
  ],
  ["fall_chest_front", acf_enforce_all|acf_align_with_ground|acf_lock_camera,
    [1.0, "death_chest", 4, 37, arf_blend_in_16|arf_make_custom_sound, pack2f(0.9, 0.0), (0,0,0), 0.5],
-   [1.8, "anim_human", 45400, 45422, arf_blend_in_16|arf_make_custom_sound, pack2f(0.9, 0.0), (0,0,0), 0.5],
+   [1.8, "anim_human", 45400, 45417, arf_blend_in_16|arf_make_custom_sound, pack2f(0.9, 0.0), (0,0,0), 0.5],
  ],
  ["fall_abdomen_hold_front", acf_enforce_all|acf_align_with_ground|acf_lock_camera,
    [2.7, "death_abdomen", 5, 96, arf_blend_in_16|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],

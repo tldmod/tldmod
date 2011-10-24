@@ -2071,7 +2071,7 @@ troops = [
    [itm_mearas_reward,itm_riv_armor_leader,itm_riv_boots,itm_leather_gloves,itm_riv_tiara,itm_riv_bow,itm_elven_arrows,itm_riv_bas_sword,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_trainer_5,0x0000000bff002001379b74b75346d08d00000000001d969b0000000000000000],
 ["woodelf_lord","King_Thranduil","King",tf_hero| tf_woodelf| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_woodelf,
-   [itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
+   [itm_mirkwood_armor_f,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_trainer_5,0x0000000c00003002189d6e454c6465a500000000001c68f20000000000000000],
 ["moria_lord","Master_Bolg_the_Lesser","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_wargarmored_3a,itm_moria_armor_e,itm_leather_boots,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
@@ -2264,10 +2264,10 @@ troops = [
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_2|knows_power_draw_4,0x00000008a400224736db6db75b6db6db00000000001db6db0000000000000000],
 #Woodelves
 ["knight_3_16","Miriel","_",tf_hero| tf_female| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
-   [itm_riv_tiara,itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
+   [itm_riv_tiara,itm_mirkwood_armor_f,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_power_draw_4,0x0000000fc000400c055d7066cb87e08300000000001d44c30000000000000000],
 ["knight_3_17","Gladvaethor","_",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
-   [itm_riv_tiara,itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
+   [itm_riv_tiara,itm_mirkwood_armor_f,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_spear_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_power_draw_4,0x0000000fc00030023fc36db75b6ab6db00000000001d36db0000000000000000],
 #Moria
 ["knight_4_1","Whip_Snog","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
@@ -3139,6 +3139,9 @@ troops = [
 ["gate_aggravator","Gate_is_holding","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
    [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
+["orc_pretender","Orc_Pretender","_",tf_orc| tf_hero | tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_neutral,
+   [itm_orc_slasher,itm_orc_sabre,itm_moria_orc_shield_b,itm_moria_orc_shield_a,itm_moria_armor_e,itm_orc_helm_g,itm_orc_helm_j,itm_orc_helm_k,itm_orc_greaves,],
+      attr_orc_tier_4,wp_tier_6,knows_athletics_5|knows_power_strike_4,orc_face1,orc_face2],
  
  
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],

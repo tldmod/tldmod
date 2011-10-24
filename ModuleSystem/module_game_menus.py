@@ -7572,6 +7572,51 @@ game_menus = [
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
 ]),
 
+("mutiny",0,"{s1}","none",
+   [(try_begin),
+		(eq, "$party_meeting", -1),
+		(str_store_string, s1, "@^^^You lost your fight agains the mutinee! ^Seems like your orcs have a new commander now."),
+		(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+		(try_for_range, ":stack_no", 0, ":num_stacks"), # remove all orcs
+			(party_stack_get_troop_id, ":stack_troop", "p_main_party" ,":stack_no"),
+			(neg|troop_is_hero, ":stack_troop"),
+			(troop_get_type, reg1, ":stack_troop"),
+			(eq, reg1, tf_orc),
+			(party_stack_get_size, reg1, "p_main_party",":stack_no"),
+			(party_remove_members, "p_main_party", ":stack_troop", reg1),
+		(try_end),
+    (else_try),
+       (eq, "$party_meeting", 1),
+       (str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
+    (else_try),
+       (str_store_string, s1, "@^^^There is a sudden uproar in the ranks of your orcs, and the largest one of them approaches you! ^^Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander! We tell you what.. Lads here think I be better commander, when I KILL YOU!"),
+	(try_end),
+    ],[
+    ("start_fight",[(eq, "$party_meeting", 0)],"Confront the mutinee!",[
+		(modify_visitors_at_site, "scn_duel_scene"),
+		(reset_visitors),
+		(set_jump_entry, 0), 
+		(set_visitor, 0, "trp_player"),
+		(set_visitor, 1, "trp_orc_pretender"),
+		(call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"),
+		(party_remove_members, "p_encountered_party_backup", "trp_player", 1),
+		(try_for_range, ":entry", 2, 29), # populate spectators
+			(call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
+			(store_random_in_range, ":rnd",1, 100000), #rnd dna
+			(set_visitor,":entry",reg0,":rnd"),
+		(try_end),
+		(set_jump_mission, "mt_arena_challenge_fight"),
+		(jump_to_scene, "scn_duel_scene"),
+		(change_screen_mission)]),
+	("leave",[(neq, "$party_meeting", 0)],"Leave.",[(change_screen_map)])]
+),
+
+
+##############################  # End of Duel Mod  ##############################
+
+
+
+   
 ] 
 
 

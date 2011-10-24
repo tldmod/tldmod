@@ -1311,4 +1311,36 @@ triggers = [
 	(try_end),
 ]),
 
+# check for mutiny when orcs in party
+(2, 0, 2, [
+	(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+	(val_sub, "$mutiny_counter",2),
+	(le, "$mutiny_counter",0),
+	(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+	(assign, ":orcs", 0),
+	(try_for_range, ":stack_no", 0, ":num_stacks"), # count number of orcs and max level
+		(party_stack_get_troop_id, ":stack_troop", "p_main_party" ,":stack_no"),
+		(neg|troop_is_hero, ":stack_troop"),
+		(troop_get_type, reg1, ":stack_troop"),
+		(eq, reg1, tf_orc),
+		(party_stack_get_size, reg1, "p_main_party",":stack_no"),
+		(val_add, ":orcs", reg1),
+	(try_end),
+	(store_skill_level, reg1, "skl_persuasion", "trp_player"), # persuasion neutralizes 5*skill orcs
+	(val_mul, reg1, 5),
+	(val_sub, ":orcs", reg1),
+	(troop_get_type, reg1, "trp_player"),
+	(try_begin),(eq, reg1, tf_orc),(val_sub, ":orcs", 10),(try_end), # player being an orc himself neutralizes 10 orcs
+	(val_max, ":orcs", 1),
+	(party_get_num_companions, reg1, "p_main_party"),
+	(gt, reg1, 15), # for big enough party
+	(val_div, reg1, ":orcs"),
+	(lt, reg1, 2), # more than 50% of "adjusted orcs" in party?
+	(store_random_in_range, reg1, 0, 10),(lt, reg1, 5), #50% mutiny chance
+	],[
+	(assign, "$mutiny_counter",36), # 36 hours between uprisings
+	(assign, "$party_meeting", 0),
+    (jump_to_menu,"mnu_mutiny"),
+   ]),
+
 ]

@@ -1,5 +1,5 @@
 itemsfile version 2
-888
+889
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -21,7 +21,7 @@ itemsfile version 2
  itm_wooden_javelin Wooden_javelin Wooden_javelin 1  wooden_javelin 0  71303178 262144 100 0 3.000000 100 0 0 0 0 0 89 27 65 5 537 0
 0
 
- itm_human_meat Human_Flesh Human_Flesh 1  raw_meat 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 70 0 0
+ itm_human_meat Human_Flesh Human_Flesh 1  human_flesh 0  34144267 0 103 0 20.000000 50 80 0 0 0 0 0 0 0 30 0 0
 0
 
  itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  maggoty_bread 0  34144267 0 32 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
@@ -1688,6 +1688,9 @@ itemsfile version 2
  itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 500 704643072 15.000000 100 0 52 16 0 0 0 0 0 0 0 0
 0
 
+ itm_mirkwood_armor_f Royal_Woodelf_Armor Royal_Woodelf_Armor 1  mirkwood_royal 0  16777229 0 500 704643072 20.000000 100 3 55 18 0 0 0 0 0 0 0 0
+0
+
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  272990212 4222124851990272 900 156672 2.500000 100 0 0 0 0 20480 101 0 148 0 291 532
 0
 
@@ -2399,7 +2402,7 @@ itemsfile version 2
  itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2.000000 100 0 0 0 0 40960 97 0 54 0 256 40
 0
 
- itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 1  dwarf_throw_axe 0  71368714 196608 300 0 5.000000 100 0 0 0 0 0 99 20 53 4 65 0
+ itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 1  dwarf_throw_axe 0  71368714 196608 300 0 5.000000 100 0 0 0 0 0 99 20 33 4 65 0
 0
 
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 4222124851990272 400 156672 2.250000 100 0 0 0 0 20480 98 0 140 0 282 532

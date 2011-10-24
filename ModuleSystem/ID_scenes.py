@@ -228,3 +228,4 @@ scn_forest2 = 226
 scn_forest3 = 227
 scn_forest4 = 228
 scn_forest5 = 229
+scn_duel_scene = 230
