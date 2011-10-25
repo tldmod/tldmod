@@ -664,9 +664,9 @@ items =[
 ["m_uruk_heavy_f","Uruk_Mail",[("uruk_mordor_f",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1502,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
 ["m_uruk_heavy_g","Uruk_Mail",[("uruk_mordor_g",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1502,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
 ["m_uruk_heavy_h","Uruk_Scale",[("uruk_mordor_h",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1502,weight(21)|head_armor(0)|body_armor(22)|leg_armor(10)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_heavy_i","Uruk_Thick_Scale",[("uruk_mordor_i",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2002,weight(24)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["m_uruk_heavy_j","Uruk_Heavy_Armor",[("uruk_mordor_j",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2002,weight(26)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["m_uruk_heavy_k","Uruk_Guard_Armor",[("uruk_mordor_k",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2502,weight(28)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
+["m_uruk_heavy_i","Uruk_Thick_Scale",[("uruk_mordor_i",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(24)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
+["m_uruk_heavy_j","Uruk_Heavy_Armor",[("uruk_mordor_j",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
+["m_uruk_heavy_k","Uruk_Guard_Armor",[("uruk_mordor_k",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(28)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
 ["m_cap_armor","Mordor_Captain_Armor",[("mordor_captain_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(30)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(0),imodbits_elf_armor,],
 ["black_num_armor","Black_Numenorean_Armor",[("black_numenor_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000,weight(30)|head_armor(0)|body_armor(42)|leg_armor(18)|difficulty(0),imodbits_elf_armor,],
 ["m_armor_a","Mordor_Armor",[("mordor_armor_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(15)|head_armor(0)|body_armor(30)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
@@ -1045,7 +1045,7 @@ items =[
 ["dale_sword_long","Dale_Longsword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(95)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon],
 ["dale_sword_broad","Dale_Broadsword",[("dale_sword_c",0),("scab_dale_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(77)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon],
 ["dale_pike","Dale_Spear",[("dale_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_penalty_with_shield|itp_wooden_parry,itc_pike,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(171)|swing_damage(0,blunt)|thrust_damage(30,pierce),imodbits_weapon_wood],
-["dale_billhook","Dale_Billhook",[("dale_billhook",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_cutting_spear,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(185)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
+["dale_billhook","Dale_Billhook",[("dale_billhook",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_penalty_with_shield|itp_wooden_parry,itc_cutting_spear,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(185)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
 #####SHIELDS##########
 ["dale_shield_a","Dale_Shield",[("dwarf_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(90)|weapon_length(60),imodbits_shield,],
 ["dale_shield_b","Dale_Shield",[("dwarf_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(90)|weapon_length(60),imodbits_shield,],
@@ -1252,6 +1252,7 @@ items =[
 ["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["denethor_robe","Stewards_Robe",[("denethor_robe",0)],itp_type_body_armor|itp_covers_legs,0,1000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_shop|itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ]

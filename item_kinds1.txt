@@ -1,5 +1,5 @@
 itemsfile version 2
-889
+890
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -1335,13 +1335,13 @@ itemsfile version 2
  itm_m_uruk_heavy_h Uruk_Scale Uruk_Scale 1  uruk_mordor_h 0  16842765 0 1502 1099679400102 21.000000 100 0 22 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_i Uruk_Thick_Scale Uruk_Thick_Scale 1  uruk_mordor_i 0  16842765 0 2002 704643072 24.000000 100 0 24 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_i Uruk_Thick_Scale Uruk_Thick_Scale 1  uruk_mordor_i 0  16842765 0 2000 704643072 24.000000 100 0 24 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_j Uruk_Heavy_Armor Uruk_Heavy_Armor 1  uruk_mordor_j 0  16842765 0 2002 704643072 26.000000 100 0 24 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_j Uruk_Heavy_Armor Uruk_Heavy_Armor 1  uruk_mordor_j 0  16842765 0 2000 704643072 26.000000 100 0 24 10 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_k 0  16842765 0 2502 704643072 28.000000 100 0 26 12 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_k 0  16842765 0 2500 704643072 28.000000 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
  itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 3000 704643072 30.000000 100 0 40 18 0 0 0 0 0 0 0 0
@@ -2198,7 +2198,7 @@ itemsfile version 2
  itm_dale_pike Dale_Spear Dale_Spear 1  dale_spear 0  407207940 201326848 125 271496 3.000000 100 0 0 0 0 0 95 0 171 0 286 512
 0
 
- itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  138772484 4222124851987200 125 271496 3.000000 100 0 0 0 0 16384 95 0 185 0 282 528
+ itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  407207940 4222124851987200 125 271496 3.000000 100 0 0 0 0 16384 95 0 185 0 282 528
 0
 
  itm_dale_shield_a Dale_Shield Dale_Shield 1  dwarf_shield_n 0  327687 5100273664 200 251658402 2.000000 100 0 1 0 0 360 90 0 60 0 0 0
@@ -2677,6 +2677,9 @@ itemsfile version 2
 0
 
  itm_denethor_robe Stewards_Robe Stewards_Robe 1  denethor_robe 0  16777229 0 1000 704643072 20.000000 100 0 44 15 0 0 0 0 0 0 0 0
+0
+
+ itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16842764 0 10 0 10.000000 100 2 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_witchking_helmet Wicked_Helmet Wicked_Helmet 1  witchking_helmet 0  4108 0 3000 0 2.500000 100 50 0 0 0 0 0 0 0 0 0 0

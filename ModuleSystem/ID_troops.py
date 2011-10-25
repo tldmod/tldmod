@@ -896,4 +896,5 @@ trp_wolf_rider_of_mirkwood = 894
 trp_warg_rider_of_mirkwood = 895
 trp_gate_aggravator = 896
 trp_orc_pretender = 897
-trp_last = 898
+trp_human_prisoner = 898
+trp_last = 899

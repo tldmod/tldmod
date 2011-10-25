@@ -2293,6 +2293,9 @@ scene_props = [
 ("horse_warg_1D",sokf_invisible,"warg_1D","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(spawn_horse,"itm_warg_1d", 0),(agent_set_stand_animation, reg0, "anim_horse_stand")])]),
-
+("troop_human_prisoner",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
 
 ]

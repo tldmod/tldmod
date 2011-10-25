@@ -886,4 +886,5 @@ itm_gandstaff = 884
 itm_sarustaff = 885
 itm_rohan_armor_th = 886
 itm_denethor_robe = 887
-itm_witchking_helmet = 888
+itm_prisoner_coll_chain = 888
+itm_witchking_helmet = 889
