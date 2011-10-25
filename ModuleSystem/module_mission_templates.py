@@ -108,6 +108,7 @@ mission_templates = [ # not used in game
 					(troop_get_type, ":race", ":trp"),
 					(store_troop_faction, ":fac", ":trp"),
 					(assign, ":greet_ani", -1),
+					(this_or_next|is_between,  ":race", tf_orc_begin, tf_orc_end),(neg|faction_slot_eq, ":fac", slot_faction_rank, 0),
 					(try_begin), (is_between,  ":race", tf_elf_begin, tf_elf_end), 
 						(assign, ":greet_ani", "anim_greet_elf"),
 					(else_try), (eq,  ":race", tf_orc), 

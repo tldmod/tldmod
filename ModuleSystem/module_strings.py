@@ -2171,6 +2171,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ^Paradox Scandinavian Distribution (Scandinavia)\
 "),
 
+
 ### TLD strings
  ("faction_strength_crushed"           , "crushed"),
  ("faction_strength_spent_and_wavering", "spent and wavering"),
@@ -2189,6 +2190,10 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("theater_C", "South Rhovanion"),
  ("theater_N", "North Rhovanion"), 
 
+ ("faction_side_name",  "the Free People"),
+ ("faction_side_name1", "the Naked Eye"),
+ ("faction_side_name2", "the White Hand"),
+ 
 # TLD party encounter greetings - depends on faction IDs staying in the same order
  ("party_greet_friend_gondor", "Hail, friend of the White Tree!"), 
  ("party_greet_enemy_gondor", "Draw your swords if you dare, enemies of Gondor!"), 
@@ -2803,13 +2808,13 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_s_undeep", "the South Undeep, the lesser of the two large Anduin bends"), # = 28
 ("fullname_region_emyn_muil", "Emyn Muil, the rocky hills above the inflow of the Entwash"), # = 29 
 
-("fullname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 30
+("fullname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
 ("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 31
 ("fullname_region_anduin_banks", "the valley of Anduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 32 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 33
 ("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by several strange creatures" ),#region_s_mirkwood = 34
-("fullname_region_above_mirkwook", "the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
-("fullname_region_grey_mountains", "the foot of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36
+("fullname_region_above_mirkwook", "Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_grey_mountains", "the foothills of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36
 ("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 37
 
 
@@ -2821,8 +2826,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_subfac_dol_amroth", "Belfalas"), #subfac_dol_amroth
 ("shortname_region_subfac_ethring", "Ringló Vale"), # subfac_ethring
 ("shortname_region_subfac_lossarnach", "Fiefdom of Lossarnach"),
-("shortname_region_subfac_pinnath_gelin", "region of Pinnath Gelin"),
-("shortname_region_subfac_blackroot", "Fiefdom of Lamedon"), # subfac_blackroot
+("shortname_region_subfac_pinnath_gelin", "the region of Pinnath Gelin"),
+("shortname_region_subfac_blackroot", "the Fiefdom of Lamedon"), # subfac_blackroot
 ("shortname_region_n_ithilien", "North Ithilien"),
 ("shortname_region_s_ithilien", "South Ithilien"),
 
@@ -2845,23 +2850,23 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("shortname_region_dead_marshes", "the Dead Marshes"), #region_dead_marshes = 21
 
-("shortname_region_isengard", "plains around Isengard" ),#region_isengard = 22
+("shortname_region_isengard", "the plains around Isengard" ),#region_isengard = 22
 
 ("shortname_region_fangorn", "Fangorn" ),#region_fangorn
 
 ("shortname_region_brown_lands", "the Brown Lands" ),#region_brown_lands = 25
-("fullname_region_dagorlad", "the Dagorlad"), # = 26
+("fullname_region_dagorlad", "Dagorlad"), # = 26
 ("fullname_region_n_undeep", "the North Undeep"), # = 27
 ("fullname_region_s_undeep", "the South Undeep"), # = 28
 ("fullname_region_emyn_muil", "Emyn Muil"), # = 29 
 
-("shortname_region_misty_mountains", "the foot of Misty Mountains" ),#region_misty_mountains = 30
+("shortname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
 ("shortname_region_lorien ", "Lorien" ),#region_lorien = 31
 ("shortname_region_anduin_banks ", "the valley of Aduin" ),#region_anduin_banks = 32
 ("shortname_region_n_mirkwood ", "North Mirkwood" ),#region_n_mirkwood = 33
 ("shortname_region_s_mirkwood ", "South Mirkwood" ),#region_s_mirkwood = 34
-("shortname_region_above_mirkwook", "North of Mirkwood" ),#region_above_mirkwook = 35
-("shortname_region_grey_mountains", "foot of Grey Mountains" ),#region_grey_mountains = 36
+("shortname_region_above_mirkwook", "Northen Rhovanion" ),#region_above_mirkwook = 35
+("shortname_region_grey_mountains", "the foothills of Grey Mountains" ),#region_grey_mountains = 36
 ("shortname_region_mordor", "the Land of Mordor" ),#region_mordor = 37
 
 

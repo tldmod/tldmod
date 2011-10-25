@@ -8547,6 +8547,94 @@ scripts = [
 	(try_end),
 ]),
 
+# script_str_store_distrusting_friend_dialog_in_s14_to_18
+# used to set dialog when party A (player) meets friendlty party B, but it is not trusted by them
+# parameters: three factions (see below)
+# output: 4 lines of dialogs
+# s14 party B: first line,
+# s15 party A: response 1:  (used to quit dialog) 
+# s16 party B: answer  1
+# s17 party A: response 2: (used to get an answer)
+# s18 party B: answer  2
+( "str_store_distrusting_friend_dialog_in_s14_to_18", [
+	(store_script_param_1, ":facA"), # of party A (usually, player)
+	(store_script_param_2, ":facB"), # of party B (other party)
+	(store_script_param, ":facC", 3), # of the place of meeting, or -1 if no man land
+	(str_store_faction_name, s20, ":facA"),
+	(str_store_faction_name, s21, ":facB"),
+	(faction_get_slot, ":sideA", ":facA", slot_faction_side),
+	(faction_get_slot, ":sideB", ":facB", slot_faction_side),
+	(store_add, ":tmp", "str_faction_side_name", ":sideA"),(str_store_string, s22, ":tmp"),
+	(store_add, ":tmp", "str_faction_side_name", ":sideB"),(str_store_string, s23, ":tmp"),
+	
+	(try_begin),
+		(eq, ":facA", ":facC"), # situation 1: partyB is traspassing!
+		(try_begin), 
+		    (eq, ":sideA", faction_side_good),
+			(str_store_string, s14, "@We know we are trespassing in your land, {playername}.^Trust us, this is for the worse of our common Enemy."),
+			(str_store_string, s15, "@I trust you. {s20} and {s21} should be friends and trust each other."),
+			(str_store_string, s16, "@There is wisdom in your words, {playername}."),
+			(str_store_string, s17, "@Why should I? Begone from the land of {s20}."),
+			(str_store_string, s18, "@Yes, we will go, and in peace, as soon as we have fulfilled our mission, of which, I'm afraid, we cannot tell you."),
+		(else_try),
+		    (eq, ":sideA", ":sideB"), # eye vs eye, or hand vs hand
+			(str_store_string, s14, "@Quiet, {playername}, quiet.^We are following orders by our common Master."),
+			(str_store_string, s15, "@Yes, go on, do whatever {s22} says."),
+			(str_store_string, s16, "@Of course."),
+			(str_store_string, s17, "@I don't like this. Stay in {s21}. What are you doing here, in {s20}?"),
+			(str_store_string, s18, "@Do you fear us, {playername} from {s20}? Mmm, what are you hiding from {s22}?^^Leave us alone, and everything will go smooth."),
+		(else_try),  # eye vs hand, or hand vs eye
+			(str_store_string, s14, "@Hail, servant of {s22}. Fear {s23}!"),
+			(str_store_string, s15, "@So you are our allies, huh? I guess you can pass."),
+			(str_store_string, s16, "@And we shall not kill you, for now."),
+			(str_store_string, s17, "@This land belongs to {s20}. The {s23} has no business here."),
+			(str_store_string, s18, "@We will stay as long as it takes to fulfill our mission. Thank your fate that we didn't came for you."),
+		(try_end),
+	(else_try),
+		(eq, ":facB", ":facC"), # situation 2: partyA is trespassing!
+		(try_begin),
+			(eq, ":sideB", faction_side_good), # good guys
+			(str_store_string, s14, "@You wear the colors of {s20}. What is your business in {s21}?^^Speak quickly!"),
+			(str_store_string, s15, "@We are chasing our enemies, who are also your enemies!"),
+			(str_store_string, s16, "@Maybe. Or maybe you are spies.^Go back where you belong, soldier of {s20}."),
+			(str_store_string, s17, "@We are friends of {s21}."),
+			(str_store_string, s18, "@Maybe. It is difficult to tell friends from foes, these days."),
+		(else_try),
+			# any bad guys
+			(eq, ":sideA", ":sideB"), # eye vs eye, or hand vs hand
+			(str_store_string, s14, "@What are you doing here in {s21}, scum from {s20}? This is our place, not yours!"),
+			(str_store_string, s15, "@You dare question direct orders from {s23}?"),
+			(str_store_string, s16, "@No, I guess I don't. But I don't like having you around. I don't trust you, {playername}."),
+			(str_store_string, s17, "@I have my own business here."),
+			(str_store_string, s18, "@You should be glad you fight for our Master, otherwise you would not get away with this trespassing."),
+		(else_try),
+			# any bad guys
+			# eye vs hand, or hand vs eye
+			(str_store_string, s14, "@What are you doing so far from home, slave of {s22}? Around here, {s23} is the Master!"),
+			(str_store_string, s15, "@Stay calm: I didn't came for you. This time."),
+			(str_store_string, s16, "@No, you stay calm: I've order to let you pass, for now."),
+			(str_store_string, s17, "@None of your business."),
+			(str_store_string, s18, "@You slaves of {s22} are weak! You are fortunate that we consider you to be allies..."),
+		(try_end),
+	(else_try), # situation 3: common ground
+		(try_begin),
+			(eq, ":sideA", faction_side_good),
+			(str_store_string, s14, "@Look whom we meet so far from home: soldiers of {s20}! Is this good news, or bad news?"),
+			(str_store_string, s15, "@{s20} and {s21} fight a common cause. We should cooperate in hostile lands."),
+			(str_store_string, s16, "@In these dark times, it is everybody for itself, {playername}.^But I wish you a safe journey home."),
+			(str_store_string, s17, "@Neither good or bad. We have no business with you."),
+			(str_store_string, s18, "@Everybody on his road, then."),
+		(else_try),
+			# bad guys
+			(str_store_string, s14, "@What are you trying to do, scum from of {s20}? Steal our spoils?"),
+			(str_store_string, s15, "@Don't worry, there will be spoils for everybody."),
+			(str_store_string, s16, "@Yes. Unless you get killed first."),
+			(str_store_string, s17, "@You don't get any spoils if you get killed, scum of {s21}."),
+			(str_store_string, s18, "@Is that a threat? Be thankful that we have enemies around to slaughter before it is your turn."),
+		(try_end),
+	(try_end),
+]),
+
 #  "script_str_store_battle_cry" (stringNo, PartyNo)  (mtarini)
 # used in prebattle dialog
 ("str_store_party_battle_cry_in_s4", [
@@ -9205,12 +9293,12 @@ scripts = [
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 	(else_try),		# dry-brown regions
-		(this_or_next|eq,":region",region_the_wold),
 		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
 		(this_or_next|eq,":region",region_dagorlad),
 		(eq,":region",region_brown_lands),
 		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
 	(else_try),		# rohan regions
+		(this_or_next|eq,":region",region_the_wold),
 		(this_or_next|eq,":region",region_emyn_muil),
 		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
 		(assign, ":native_terrain_to_use", rt_steppe),  # rohan default

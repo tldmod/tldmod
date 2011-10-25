@@ -8119,316 +8119,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"merchant_quest_taken_bandits", [], "You will? I am so happy to hear that. Good luck to you.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 [anyone|plyr,"troublesome_bandits_quest_brief", [], "Sorry. I don't have time for this right now.", "merchant_quest_stall",[]],
 
-# Kidnapped girl:
-  #[anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_kidnapped_girl")],
- # "Actually, I was looking for a reliable {man/helper} that can undertake an important mission.\
- # A group of bandits have kidnapped the daughter of a friend of mine and are holding her for ransom.\
- # My friend is ready to pay them, but we still need\
- # someone to take the money to those rascals and bring the girl back to safety.", "merchant_quest_brief",
-   # []],
-
-  #[anyone,"merchant_quest_brief", [(eq, "$random_merchant_quest_no", "qst_kidnapped_girl")],
-  # "The amount the bandits ask as ransom is {reg12} denars.\
- # I will give you that money once you accept to take the quest.\
- # You have 15 days to take the money to the bandits who will be waiting near the village of {s4}.\
- # Those bastards said that they are going to kill the poor girl if they don't get the money by that time.\
- # You will get your pay of {reg8} denars when you bring the girl safely back here.",
-   # "kidnapped_girl_quest_brief",[(quest_get_slot, ":quest_target_center", "qst_kidnapped_girl", slot_quest_target_center),
-                                 # (str_store_party_name, s4, ":quest_target_center"),
-                                 # (quest_get_slot, reg8, "qst_kidnapped_girl", slot_quest_gold_reward),
-                                 # (quest_get_slot, reg12, "qst_kidnapped_girl", slot_quest_target_amount),
-                                 # ]],
-
-  #[anyone|plyr,"kidnapped_girl_quest_brief", [],
-      # "Alright. I will take the ransom money to the bandits and bring back the girl.",
-   # "kidnapped_girl_quest_taken",[(set_spawn_radius, 4),
-                                 # (quest_get_slot, ":quest_target_center", "qst_kidnapped_girl", slot_quest_target_center),
-                                 # (quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                                 # (spawn_around_party,":quest_target_center","pt_bandits_awaiting_ransom"),
-                                 # (assign, ":quest_target_party", reg0),
-                                 # (quest_set_slot, "qst_kidnapped_girl", slot_quest_target_party, ":quest_target_party"),
-                                 # (party_set_ai_behavior, ":quest_target_party", ai_bhvr_hold),
-                                 # (party_set_ai_object, ":quest_target_party", "p_main_party"),
-                                 # (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
-                                 # (call_script, "script_troop_add_gold", "trp_player", ":quest_target_amount"),
-                                 # (assign, reg12, ":quest_target_amount"),
-                                 # (str_store_troop_name, s1, "$g_talk_troop"),
-                                 # (str_store_party_name_link, s4, "$g_encountered_party"),
-                                 # (str_store_party_name_link, s3, ":quest_target_center"),
-                                 # (setup_quest_text, "qst_kidnapped_girl"),
-                                 # (str_store_string, s2, "@Guildmaster of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
- # You are to meet the bandits near {s3} and pay them the ransom fee.\
- # After that you are to bring the girl back to {s4}."),
-                                 # (call_script, "script_start_quest", "qst_kidnapped_girl", "$g_talk_troop"),
-                                 # ]],
-  
-  #[anyone,"kidnapped_girl_quest_taken", [], "Good. I knew we could trust you at this.\
- # Here is the ransom money, {reg12} denars.\
- # Count it before taking it.\
- # And please, don't attempt to do anything rash.\
- # Keep in mind that the girl's well being is more important than anything else...", "close_window",
-   # []],
-  
-  #[anyone|plyr,"kidnapped_girl_quest_brief", [],
-   # "Sorry. I don't have time for this right now.", "merchant_quest_stall",[]],
-
-
-  # [trp_kidnapped_girl,"start",
-   # [
-     # (eq, "$talk_context", tc_entering_center_quest_talk),
-     # ],
-   # "Thank you so much for bringing me back!\
-  # I can't wait to see my family. Good-bye.",
-   # "close_window",
-   # [(remove_member_from_party, "trp_kidnapped_girl"),
-    # (quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 4),
-    # ]],
-
-
-
-  # [trp_kidnapped_girl|plyr,"kidnapped_girl_liberated_map", [], "Yes. Come with me. We are going home.", "kidnapped_girl_liberated_map_2a",[]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_map_2a", [(neg|party_can_join)], "Unfortunately. You do not have room in your party for me.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_map_2a", [], "Oh really? Thank you so much!",
-   # "close_window", [(party_join),
-                    # (quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 3),
-                    # (assign, "$g_leave_encounter",1)]],
-  # [trp_kidnapped_girl|plyr,"kidnapped_girl_liberated_map", [], "Wait here a while longer. I'll come back for you.", "kidnapped_girl_liberated_map_2b",[]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_map_2b", [], "Oh, please {sir/madam}, do not leave me here all alone!", "close_window",[(assign, "$g_leave_encounter",1)]],
-
-
-  # [trp_kidnapped_girl,"start", [],
-   # "Oh {sir/madam}. Thank you so much for rescuing me. Will you take me to my family now?", "kidnapped_girl_liberated_map",[]],
-  
-  # [trp_kidnapped_girl|plyr,"kidnapped_girl_liberated_battle", [], "Yes. Come with me. We are going home.", "kidnapped_girl_liberated_battle_2a",[]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_battle_2a", [(neg|hero_can_join, "p_main_party")], "Unfortunately. You do not have room in your party for me.", "kidnapped_girl_liberated_battle_2b",[]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_battle_2a", [], "Oh really? Thank you so much!",
-   # "close_window",[(party_add_members, "p_main_party","trp_kidnapped_girl",1),
-                   # (quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 3),
-                   # ]],
-  # [trp_kidnapped_girl|plyr,"kidnapped_girl_liberated_battle", [], "Wait here a while longer. I'll come back for you.", "kidnapped_girl_liberated_battle_2b",[]],
-  # [trp_kidnapped_girl,"kidnapped_girl_liberated_battle_2b", [], "Oh, please {sir/madam}, do not leave me here all alone!",
-   # "close_window", [(add_companion_party,"trp_kidnapped_girl"),
-                    # (assign, "$g_leave_encounter",1)]],
-
-  # [trp_kidnapped_girl,"start", [], "Can I come with you now?", "kidnapped_girl_liberated_map",[]],
-
-
-  # [party_tpl|pt_bandits_awaiting_ransom,"start", [(quest_slot_eq, "qst_kidnapped_girl", slot_quest_current_state, 0),],
-   # "Are you the one that brought the ransom?\
- # Quick, give us the money now.", "bandits_awaiting_ransom_intro_1",[(quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 1),]],
-  # [party_tpl|pt_bandits_awaiting_ransom,"start", [(quest_slot_eq, "qst_kidnapped_girl", slot_quest_current_state, 1),],
-   # "You came back?\
- # Quick, give us the money now.", "bandits_awaiting_ransom_intro_1",[]],
-  # [party_tpl|pt_bandits_awaiting_ransom|plyr, "bandits_awaiting_ransom_intro_1", [(store_troop_gold, ":cur_gold"),
-                                                                                  # (quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                                                                                  # (ge, ":cur_gold", ":quest_target_amount")
-                                                                                  # ],
-   # "Here, take the money. Just set the girl free.", "bandits_awaiting_ransom_pay",[]],
-  # [party_tpl|pt_bandits_awaiting_ransom, "bandits_awaiting_ransom_pay", [],
-   # "Heh. You've brought the money all right.\
- # You can take the girl now.\
- # It was a pleasure doing business with you...", "close_window",
-   # [(quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-    # (quest_get_slot, ":quest_target_party", "qst_kidnapped_girl", slot_quest_target_party),
-    # (quest_get_slot, ":quest_target_center", "qst_kidnapped_girl", slot_quest_target_center),
-    # (troop_remove_gold, "trp_player", ":quest_target_amount"),
-    # (remove_member_from_party, "trp_kidnapped_girl", ":quest_target_party"),
-    # (set_spawn_radius, 1),
-    # (spawn_around_party, ":quest_target_party", "pt_kidnapped_girl"),
-    # (assign, ":girl_party", reg0),
-    # (party_set_ai_behavior, ":girl_party", ai_bhvr_hold),
-    # (party_set_flags, ":girl_party", pf_default_behavior, 0),
-    # (quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 2),
-    # (party_set_ai_behavior, ":quest_target_party", ai_bhvr_travel_to_party),
-    # (party_set_ai_object, ":quest_target_party", ":quest_target_center"),
-    # (party_set_flags, ":quest_target_party", pf_default_behavior, 0),
-    # (add_gold_to_party, ":quest_target_amount", ":quest_target_party"),
-    # (assign, "$g_leave_encounter",1),
-    # ]],
-  
-  #[anyone|plyr, "bandits_awaiting_ransom_intro_1", [],
-   # "No way! You release the girl first.", "bandits_awaiting_ransom_b",[]],
-  #[anyone, "bandits_awaiting_ransom_b", [],
-   # "You fool! Stop playing games and give us the money! ", "bandits_awaiting_ransom_b2",[]],
-  #[anyone|plyr, "bandits_awaiting_ransom_b2", [(store_troop_gold, ":cur_gold"),
-                                               # (quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                                               # (ge, ":cur_gold", ":quest_target_amount")],
-   # "All right. Here's your money. Let the girl go now.", "bandits_awaiting_ransom_pay",[]],
-  #[anyone|plyr, "bandits_awaiting_ransom_b2", [],
-   # "I had left the money in a safe place. Let me go fetch it.", "bandits_awaiting_ransom_no_money",[]],
-  #[anyone, "bandits_awaiting_ransom_no_money", [],
-   # "Are you testing our patience or something?  Go and bring that money here quickly.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  #[anyone|plyr, "bandits_awaiting_ransom_b2", [],
-   # "I have no intention to pay you anything. I demand that you release the girl now!", "bandits_awaiting_ransom_fight",[]],
-  #[anyone, "bandits_awaiting_ransom_fight", [],
-   # "You won't be demanding anything when you're dead.", "close_window",[(encounter_attack),]],
-
-  # [party_tpl|pt_bandits_awaiting_ransom,"start", [(quest_slot_ge, "qst_kidnapped_girl", slot_quest_current_state, 2),],
-   # "What's it? You have given us the money. We have no more business.", "bandits_awaiting_remeet",[]],
-  #[anyone|plyr,"bandits_awaiting_remeet", [],
-   # "Sorry to bother you. I'll be on my way now.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  #[anyone|plyr,"bandits_awaiting_remeet", [],
-   # "We have one more business. You'll give the money back to me.", "bandits_awaiting_remeet_2",[]],
-  #[anyone,"bandits_awaiting_remeet_2", [],
-   # "Oh, that business! Of course. Let us get down to it.", "close_window",[(encounter_attack)]],
-
-  # [party_tpl|pt_kidnapped_girl,"start", [],
-   # "Oh {sir/madam}. Thank you so much for rescuing me. Will you take me to my family now?", "kidnapped_girl_encounter_1",[]],
-  #[anyone|plyr,"kidnapped_girl_encounter_1", [], "Yes. Come with me. I'll take you home.", "kidnapped_girl_join",[]],
-  #[anyone,"kidnapped_girl_join", [(neg|party_can_join)], "Unfortunately. You do not have room in your party for me.", "close_window",[(assign, "$g_leave_encounter",1)]],
-  #[anyone,"kidnapped_girl_join", [], "Oh, thank you so much!",
-   # "close_window",[(party_join),
-                   # (quest_set_slot, "qst_kidnapped_girl", slot_quest_current_state, 3),
-                   # (assign, "$g_leave_encounter",1)]],
-  #[anyone|plyr,"kidnapped_girl_encounter_1", [], "Wait here a while longer. I'll come back for you.", "kidnapped_girl_wait",[]],
-  #[anyone,"kidnapped_girl_wait", [], "Oh, please {sir/madam}, do not leave me here all alone!", "close_window",[(assign, "$g_leave_encounter",1)]],
-
-  #[anyone|plyr,"merchant_quest_about_job_2", [(store_partner_quest, ":partner_quest"),
-                                              # (eq, ":partner_quest", "qst_kidnapped_girl"),
-                                              # (quest_slot_eq, "qst_kidnapped_girl", slot_quest_current_state, 3),
-                                              # (neg|main_party_has_troop, "trp_kidnapped_girl")],
-   # "Unfortunately I lost the girl on the way here...", "lost_kidnapped_girl",[]],
-  #[anyone,"lost_kidnapped_girl", [],
-   # "Oh no! How am I going to tell this to my friend?", "lost_kidnapped_girl_2",[]],
-  #[anyone|plyr,"lost_kidnapped_girl_2", [],
-   # "I'm sorry. I could do nothing about it.", "lost_kidnapped_girl_3",[]],
-  #[anyone,"lost_kidnapped_girl_3", [],
-   # "You let me down {playername}. I had trusted you.\
- # I will let people know of your incompetence at this task.\
- # Also, I want back that {reg8} denars I gave you as the ransom fee.", "lost_kidnapped_girl_4",
-   # [(quest_get_slot, reg8, "qst_kidnapped_girl", slot_quest_target_amount),
-    # (try_for_parties, ":cur_party"),
-      # (party_count_members_of_type, ":num_members", ":cur_party", "trp_kidnapped_girl"),
-      # (gt, ":num_members", 0),
-      # (party_remove_members, ":cur_party", "trp_kidnapped_girl", 1),
-      # (party_remove_prisoners, ":cur_party", "trp_kidnapped_girl", 1),
-    # (try_end),
-    # (call_script, "script_end_quest", "qst_kidnapped_girl"),
-    # ]],
-  #[anyone|plyr, "lost_kidnapped_girl_4", [(store_troop_gold,":gold"),
-                                          # (quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                                          # (ge,":gold",":quest_target_amount"),
-                                          # ],
-   # "Of course. Here you are...", "merchant_quest_about_job_5a",[(quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                                                                # (troop_remove_gold, "trp_player",":quest_target_amount"),
-                                                                # ]],
-  #[anyone,"merchant_quest_about_job_5a", [],
-   # "At least you have the decency to return the money.", "close_window",[]],
-  #[anyone|plyr,"lost_kidnapped_girl_4", [],
-   # "Sorry. I don't have that amount with me.", "merchant_quest_about_job_5b",[]],
-  #[anyone,"merchant_quest_about_job_5b", [],
-   # "Do you expect me to believe that? You are going to pay that ransom fee back! Go and bring the money now!",
-   # "close_window",[(quest_get_slot, ":quest_target_amount", "qst_kidnapped_girl", slot_quest_target_amount),
-                   # (val_add, "$debt_to_merchants_guild", ":quest_target_amount"),
-                   # ]],
-
-
-#  Give us the money now. Quick.
-# Here, take the money. Just set the girl free.
-# Heh, It was a pleasure doing business with you. 
-  
-# You set the girl free first. You'll have the money afterwards.
-# Stop playing games.  
-
-#persuade_lords_to_make_peace
-  #[anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_persuade_lords_to_make_peace"),
-                                       # (quest_get_slot, ":quest_target_faction", "qst_persuade_lords_to_make_peace", slot_quest_target_faction),
-                                       # (quest_get_slot, ":quest_object_troop", "qst_persuade_lords_to_make_peace", slot_quest_object_troop),
-                                       # (quest_get_slot, ":quest_target_troop", "qst_persuade_lords_to_make_peace", slot_quest_target_troop),
-                                       # (str_store_troop_name_link, s12, ":quest_object_troop"),
-                                       # (str_store_troop_name_link, s13, ":quest_target_troop"),
-                                       # (str_store_faction_name_link, s14, ":quest_target_faction"),
-                                       # (str_store_faction_name_link, s15, "$g_encountered_party_faction"),],
-   # "This war between {s15} and {s14} has brought our town to the verge of ruin.\
- # Our caravans get raided before they can reach their destination.\
- # Our merchants are afraid to leave the safety of the town walls.\
- # And as if those aren't enough, the taxes to maintain the war take away the last bits of our savings.\
- # If peace does not come soon, we can not hold on for much longer.", "merchant_quest_persuade_peace_1",
-   # []],
-
-  #[anyone|plyr,"merchant_quest_persuade_peace_1", [], "You are right. But who can stop this madness called war?", "merchant_quest_brief",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_1", [], "It is your duty to help the nobles in their war effort. You shouldn't complain about it.", "merchant_quest_persuade_peace_reject",[]],
-
-  #[anyone,"merchant_quest_persuade_peace_reject", [], "Hah. The nobles fight their wars for their greed and their dreams of glory.\
- # And it is poor honest folk like us who have to bear the real burden.\
- # But you obviously don't want to hear about that.", "close_window",[]],
-
-  #[anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_persuade_lords_to_make_peace")],
-   # "There have been attempts to reconcile the two sides and reach a settlement.\
- # However, there are powerful lords on both sides whose interests lie in continuing the war.\
- # These men urge all others not to heed to the word of sensible men, but to keep fighting.\
- # While these leaders remain influential, no peace settlement can be reached.", "merchant_quest_persuade_peace_3",[]],
-
-  #[anyone|plyr,"merchant_quest_persuade_peace_3", [], "Who are these warmongers who block the way of peace?", "merchant_quest_persuade_peace_4",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_3", [], "Who are these lords you speak of?", "merchant_quest_persuade_peace_4",[]],
-
-  #[anyone,"merchant_quest_persuade_peace_4", [], "They are {s12} from {s15} and {s13} from {s14}. Until they change their mind or lose their influence,\
- # there will be no chance of having peace between the two sides.", "merchant_quest_persuade_peace_5",[
-       # (quest_get_slot, ":quest_target_faction", "qst_persuade_lords_to_make_peace", slot_quest_target_faction),
-       # (quest_get_slot, ":quest_object_troop", "qst_persuade_lords_to_make_peace", slot_quest_object_troop),
-       # (quest_get_slot, ":quest_target_troop", "qst_persuade_lords_to_make_peace", slot_quest_target_troop),
-       # (str_store_troop_name_link, s12, ":quest_object_troop"),
-       # (str_store_troop_name_link, s13, ":quest_target_troop"),
-       # (str_store_faction_name_link, s14, ":quest_target_faction"),
-       # (str_store_faction_name_link, s15, "$g_encountered_party_faction"),     
-     # ]],
-
-  #[anyone|plyr,"merchant_quest_persuade_peace_5", [], "What can be done about this?", "merchant_quest_persuade_peace_6",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_5", [], "Alas, it seems nothing can be done about it.", "merchant_quest_persuade_peace_6",[]],
-
-  #[anyone,"merchant_quest_persuade_peace_6", [], "There is a way to resolve the issue.\
- # A particularly determined person can perhaps persuade one or both of these lords to accept making peace.\
- # And even if that fails, it can be possible to see that these lords are defeated by force and taken prisoner.\
- # If they are captive, they will lose their influence and they can no longer oppose a settlement... What do you think? Can you do it?",
-   # "merchant_quest_persuade_peace_7",[]],
-
-  #[anyone|plyr,"merchant_quest_persuade_peace_7", [], "It seems difficult. But I will try.", "merchant_quest_persuade_peace_8",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_7", [], "If the price is right, I may.", "merchant_quest_persuade_peace_8",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_7", [], "Forget it. This is not my problem.", "merchant_quest_persuade_peace_8",[]],
-
-  #[anyone,"merchant_quest_persuade_peace_8", [], "Most of the merchants in the town will gladly open up their purses to support such a plan.\
- # I think we can collect {reg12} denars between ourselves.\
- # We will be happy to reward you with that sum, if you can work this out.\
- # Convince {s12} and {s13} to accept a peace settlement,\
- # and if either of them proves too stubborn, make sure he falls captive and can not be ransomed until a peace deal is settled.",
-   # "merchant_quest_persuade_peace_9",[
-       # (quest_get_slot, ":quest_object_troop", "qst_persuade_lords_to_make_peace", slot_quest_object_troop),
-       # (quest_get_slot, ":quest_target_troop", "qst_persuade_lords_to_make_peace", slot_quest_target_troop),
-       # (str_store_troop_name_link, s12, ":quest_object_troop"),
-       # (str_store_troop_name_link, s13, ":quest_target_troop"),
-       # (quest_get_slot, ":quest_reward", "qst_persuade_lords_to_make_peace", slot_quest_gold_reward),
-       # (assign, reg12, ":quest_reward")]],
-  
-  #[anyone|plyr,"merchant_quest_persuade_peace_9", [], "All right. I will do my best.", "merchant_quest_persuade_peace_10",[]],
-  #[anyone|plyr,"merchant_quest_persuade_peace_9", [], "Sorry. I can not do this.", "merchant_quest_persuade_peace_no",[]],
-  
-  #[anyone,"merchant_quest_persuade_peace_10", [], "Excellent. You will have our blessings.\
- # I hope you can deal with those two old goats.\
- # We will be waiting and hoping for the good news.", "close_window",[
-     # (str_store_party_name_link, s4, "$g_encountered_party"),
-     # (quest_get_slot, ":quest_target_faction", "qst_persuade_lords_to_make_peace", slot_quest_target_faction),
-     # (quest_get_slot, ":quest_object_troop", "qst_persuade_lords_to_make_peace", slot_quest_object_troop),
-     # (quest_get_slot, ":quest_target_troop", "qst_persuade_lords_to_make_peace", slot_quest_target_troop),
-     # (quest_get_slot, ":quest_reward", "qst_persuade_lords_to_make_peace", slot_quest_gold_reward),
-     # (assign, reg12, ":quest_reward"),
-     # (str_store_troop_name_link, s12, ":quest_object_troop"),
-     # (str_store_troop_name_link, s13, ":quest_target_troop"),
-     # (str_store_faction_name_link, s14, ":quest_target_faction"),
-     # (str_store_faction_name_link, s15, "$g_encountered_party_faction"),     
-     # (setup_quest_text,"qst_persuade_lords_to_make_peace"),
-     # (str_store_string, s2, "@Guildmaster of {s4} promised you {reg12} denars if you can make sure that\
- # {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.\
- # In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made."),
-     # (call_script, "script_start_quest", "qst_persuade_lords_to_make_peace", "$g_talk_troop"),
-     # (quest_get_slot, ":quest_object_troop", "qst_persuade_lords_to_make_peace", slot_quest_object_troop),
-     # (quest_get_slot, ":quest_target_troop", "qst_persuade_lords_to_make_peace", slot_quest_target_troop),
-     # (call_script, "script_report_quest_troop_positions", "qst_persuade_lords_to_make_peace", ":quest_object_troop", 3),
-     # (call_script, "script_report_quest_troop_positions", "qst_persuade_lords_to_make_peace", ":quest_target_troop", 4),
-     # ]],
-  
-  #[anyone,"merchant_quest_persuade_peace_no", [], "Don't say no right away. Think about this for some time.\
- # If there is a {man/lady} who can manage to do this, it is you.",
-   # "close_window",[]],
 
 
 #deal with night bandits
@@ -9020,7 +8710,32 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #TLD: faction specific non-lord party encounter dialogs for friends and enemies
 # (note: depends on lord dialogs coming before this; also bandits are not handled here)
 
-#Friendly faction party
+#Friendly faction party: they don't trust you
+[anyone,"start", 
+	[
+		(eq,"$talk_context",tc_party_encounter),
+		(eq,"$encountered_party_hostile",0),
+		(is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end),
+		(faction_slot_eq, "$g_encountered_party_faction", slot_faction_rank, 0),
+	],
+	"{s14}","party_encounter_distrusted_friend_1",
+	[ 
+		(call_script, "script_get_region_of_party", "$g_encountered_party"), (assign, ":encounter_region", reg1), 
+		(call_script, "script_region_get_faction", ":encounter_region"), (assign, ":encounter_faction", reg1), 
+		(call_script, "script_str_store_distrusting_friend_dialog_in_s14_to_18", "$players_kingdom", "$g_encountered_party_faction",  ":encounter_faction"),
+	]
+],
+
+[anyone|plyr, "party_encounter_distrusted_friend_1",  [], "{s15}",  "party_encounter_distrusted_friend_2a", [] ],
+
+[anyone, "party_encounter_distrusted_friend_2a",  [], "{s16}",  "close_window", [ (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)] ],
+
+[anyone|plyr, "party_encounter_distrusted_friend_1",  [], "{s17}",  "party_encounter_distrusted_friend_2b", [] ],
+
+[anyone, "party_encounter_distrusted_friend_2b",  [], "{s18}",  "close_window", [ (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)] ],
+		
+
+#Friendly faction party: they trust you.
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
                     (eq,"$encountered_party_hostile",0),
                     (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end)],
