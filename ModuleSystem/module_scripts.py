@@ -8509,16 +8509,16 @@ scripts = [
 		(eq,":race",tf_dwarf),
 		(str_store_string, ":stN", "@dwarven"),
 	(else_try),
-		(is_between,":race",tf_orc),
+		(eq,":race",tf_orc),
 		(str_store_string, ":stN", "@orc"), # also an adjective
 	(else_try),
-		(is_between,":race",tf_uruk),
+		(eq,":race",tf_uruk),
 		(str_store_string, ":stN", "@uruk"), # also an adjective
 	(else_try),
-		(is_between,":race",tf_urukhai),
+		(eq,":race",tf_urukhai),
 		(str_store_string, ":stN", "@uruk-hai"), # also an adjective
 	(else_try),
-		(is_between,":race",tf_troll),
+		(eq,":race",tf_troll),
 		(str_store_string, ":stN", "@trollish"), 
 	(else_try),
 		(eq,":race",tf_dwarf),
