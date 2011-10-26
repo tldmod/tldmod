@@ -7574,6 +7574,16 @@ game_menus = [
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
 ]),
 
+("premutiny",0,"none","none", #dummy menu for showing orc pretender pre-mutiny dialog
+   [(try_begin),
+		(eq, "$party_meeting", 3),
+		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
+	(else_try),
+		(assign, "$party_meeting", 0),
+		(change_screen_map),
+	(try_end),
+    ],[]
+),
 ("mutiny",0,"{s1}","none",
    [(try_begin),
 		(eq, "$party_meeting", -1),

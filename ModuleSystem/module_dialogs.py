@@ -213,10 +213,18 @@ dialogs = [
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
 #GA: orc pretender dialogs
-[trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
-[trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
-[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
+[trp_orc_pretender, "start", [(eq,"$mutiny_stage",0)], "Hey, {playername}. We tell you what.. ^Lads here grumbling! Want more fun, less marching around.", "mutiny_pretalk_1",[]],
+[trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "Fall back in line, maggot! We are at war and I'm your commander.", "mutiny_pretalk_2",[]],
+[trp_orc_pretender, "mutiny_pretalk_2", [], "As you wish, commander. As you wish...", "close_window",[
+	(assign,"$mutiny_stage",1),
+	(assign, "$party_meeting", 3),
+    (jump_to_menu, "mnu_premutiny")]],
+
+[trp_orc_pretender, "start", [(eq,"$mutiny_stage",1)], "Hey, commander. We tell you what.. Lads here are not happy, not happy at all. ^Not enough manflesh, not enough fun. ^Lads here talk you not good enough, commander!", "mutiny_talk_1",[]],
+[trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? ^This is punishable by death, maggot!", "mutiny_talk_2",[]],
+[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. ^Lads here think I be better commander for them when I KILL YOU!", "close_window",[
 	(assign, "$party_meeting", 2),
+	(assign,"$mutiny_stage",0),
     (jump_to_menu, "mnu_mutiny")]],
 
 #MV: Easter Egg Troll dialogs
