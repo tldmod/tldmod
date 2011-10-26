@@ -2776,6 +2776,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_subfac_pinnath_gelin", "the Green Hills of Pinnath Gelin, a region in the Realm of Gondor"),
 ("fullname_region_subfac_blackroot", "the Fiefdom of Lamedon, part of the Realm of Gondor"), # subfac_blackroot
 ("fullname_region_n_ithilien", "North Ithilien, easternmost province of the Realm of Gondor"),
+("fullname_region_c_ithilien", "Emyn Arnen, a range of hills in the central regions of Ithilien, across the Great River from Minas Tirith"),
 ("fullname_region_s_ithilien", "South Ithilien, easternmost province of the Realm of Gondor"),
 
 ("fullname_region_druadan_forest", "Drúadan Forest, the Gondor Forest of the Drúedain"), #9
@@ -2829,6 +2830,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_subfac_pinnath_gelin", "the region of Pinnath Gelin"),
 ("shortname_region_subfac_blackroot", "the Fiefdom of Lamedon"), # subfac_blackroot
 ("shortname_region_n_ithilien", "North Ithilien"),
+("shortname_region_c_ithilien", "Emyn Arnen"),
 ("shortname_region_s_ithilien", "South Ithilien"),
 
 ("shortname_region_druadan_forest", "Drúadan Forest"), #9

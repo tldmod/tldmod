@@ -8711,7 +8711,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #TLD: faction specific non-lord party encounter dialogs for friends and enemies
 # (note: depends on lord dialogs coming before this; also bandits are not handled here)
 
-#Friendly faction party: they don't trust you
+#Friendly faction party: they don't trust you (rank 0 with them)
 [anyone,"start", 
 	[
 		(eq,"$talk_context",tc_party_encounter),
@@ -8722,7 +8722,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	"{s14}","party_encounter_distrusted_friend_1",
 	[ 
 		(call_script, "script_get_region_of_party", "$g_encountered_party"), (assign, ":encounter_region", reg1), 
-		(call_script, "script_region_get_faction", ":encounter_region"), (assign, ":encounter_faction", reg1), 
+		(faction_get_slot, ":encountered_side", "$g_encountered_party_faction", slot_faction_side),
+		(call_script, "script_region_get_faction", ":encounter_region",  ":encountered_side"), (assign, ":encounter_faction", reg1), 
 		(call_script, "script_str_store_distrusting_friend_dialog_in_s14_to_18", "$players_kingdom", "$g_encountered_party_faction",  ":encounter_faction"),
 	]
 ],
@@ -8735,6 +8736,23 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone, "party_encounter_distrusted_friend_2b",  [], "{s18}",  "close_window", [ (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)] ],
 		
+# even with distrusted friends, you can hand troops of their faction
+[anyone|plyr, "party_encounter_distrusted_friend_1",  
+	[
+		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction"),
+		(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1), # you have troop of their faction
+		(try_begin),
+			(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+			(str_store_string, s37, "@I have some of your people with me. I'll let them join you, to help your cause."),
+		(else_try),
+			(str_store_string, s37, "@Some of your stinky kin are with me. I'm sure they'd rather go with you."),
+		(try_end),
+	], 
+	"{s37}",  "party_reinforce", [] ],
+
+		
+
 
 #Friendly faction party: they trust you.
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
@@ -8868,6 +8886,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
         (store_sub, reg11, reg29, reg0), # earned
+		(str_store_faction_name, s22, "$g_encountered_party_faction"),
 		(str_clear, s31), (str_clear, s32),
 		(try_begin),
           (eq, reg26, 1), #player is in own faction

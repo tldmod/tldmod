@@ -162,8 +162,8 @@ simple_triggers = [
 	(assign, ":new_region", reg1),
 	(neq, "$current_player_region", ":new_region"), # region change!
 	(try_begin), 
-		# regions without a clear name
-		(this_or_next|eq, ":new_region", region_above_mirkwook), 
+		# entering a region without a clear name
+		#(this_or_next|eq, ":new_region", region_above_mirkwook), 
 		(this_or_next|eq, ":new_region", region_anduin_banks), 
 		(eq,":new_region",-1),
 		(try_begin),
@@ -175,7 +175,7 @@ simple_triggers = [
     (else_try),
 		(store_add, reg2, str_shortname_region_begin, ":new_region"),
 		(str_store_string,s1,reg2),
-		(call_script, "script_region_get_faction", ":new_region"),
+		(call_script, "script_region_get_faction", ":new_region", -1), # unbiased
 		(try_begin), 
 			(gt, reg1, -1),
 			(str_store_faction_name, s2, reg1),

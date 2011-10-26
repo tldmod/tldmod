@@ -56,39 +56,40 @@ region_green_hills = 5  #subfac_pinnath_gelin = 5
 region_lamedon = 6  #subfac_blackroot = 6
 
 region_n_ithilien = 7   # subfac_rangers = 7
-region_s_ithilien = 8
-region_druadan_forest = 9
-region_firien_wood = 10
-region_anorien = 11
+region_c_ithilien = 8 
+region_s_ithilien = 9
+region_druadan_forest = 10
+region_firien_wood = 11
+region_anorien = 12
 
 # four Rohan regions, one for each "subfaction"
-region_harrowdale = 12   # subfac_regular, edoras region
-region_east_emnet = 13  # subfac_east_emnet
-region_west_emnet = 14  # subfac_west_emnet
-region_eastfold = 15 # subfac_estfold
-region_westfold = 16 # subfac_westfold
-region_hornburg = 17 # subfac_hornburg
+region_harrowdale = 13   # subfac_regular, edoras region
+region_east_emnet = 14  # subfac_east_emnet
+region_west_emnet = 15  # subfac_west_emnet
+region_eastfold = 16 # subfac_estfold
+region_westfold = 17 # subfac_westfold
+region_hornburg = 18 # subfac_hornburg
 
-region_the_wold = 18
-region_gap_of_rohan = 19
-region_entwash = 20
-region_wetwang = 21
-region_dead_marshes = 22
-region_isengard = 23
-region_fangorn = 24
-region_brown_lands = 25
-region_dagorlad = 26
-region_n_undeep = 27
-region_s_undeep = 28
-region_emyn_muil = 29 
-region_misty_mountains = 30
-region_lorien = 31
-region_anduin_banks = 32
-region_n_mirkwood = 33
-region_s_mirkwood = 34
-region_above_mirkwook = 35
-region_grey_mountains = 36
-region_mordor = 37
+region_the_wold = 19
+region_gap_of_rohan = 20
+region_entwash = 21
+region_wetwang = 22
+region_dead_marshes = 23
+region_isengard = 24
+region_fangorn = 25
+region_brown_lands = 26
+region_dagorlad = 27
+region_n_undeep = 28
+region_s_undeep = 29
+region_emyn_muil = 30 
+region_misty_mountains = 31
+region_lorien = 32
+region_anduin_banks = 33
+region_n_mirkwood = 34
+region_s_mirkwood = 35
+region_above_mirkwook = 36
+region_grey_mountains = 37
+region_mordor = 38
 
 
 
