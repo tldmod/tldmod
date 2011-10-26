@@ -6581,10 +6581,6 @@ game_menus = [
            (change_screen_return),
           ]),
 
-      ("town_leave",[],"Leave...",[
-            (assign, "$g_permitted_to_center",0),
-            (change_screen_return,0),
-          ],"Leave Area"),
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
 
      ("town_cheat_alley",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
@@ -6644,15 +6640,21 @@ game_menus = [
 						(assign, "$g_main_ship_party", -1),
 						(change_screen_return)]),
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
-						], "Go to the Isengard underground caverns",
+						], "Go to the underground caverns.",
 						[(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_isengard_underground"),
 						(change_screen_mission)]),
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
-						], "Go to the Minas Tirith top level",
+						], "Climb up to the top level.",
 						[(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_minas_tirith_center_top"),
 						(change_screen_mission)]),
+						
+      ("town_leave",[],"Leave...",[
+            (assign, "$g_permitted_to_center",0),
+            (change_screen_return,0),
+          ],"Leave Area"),
+
     ]
 ),
 

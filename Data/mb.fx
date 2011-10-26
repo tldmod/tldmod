@@ -1149,6 +1149,7 @@ VS_OUTPUT vs_main_skin (float4 vPosition : POSITION, float3 vNormal : NORMAL, fl
    
    float4 vWorldPos = mul(matWorld,vObjectPos);
    Out.Pos = mul(matViewProj, vWorldPos);
+   
    float3 vWorldN = normalize(mul((float3x3)matWorld, vObjectN)); //normal in world space
    
    float3 P = mul(matView, vWorldPos); //position in view space
@@ -1197,6 +1198,7 @@ VS_OUTPUT vs_main_skin (float4 vPosition : POSITION, float3 vNormal : NORMAL, fl
    float d = length(P);
    Out.Fog = get_fog_amount(d);
    
+   Out.Pos = (d<0.15)?float4(0,0,-1,1):Out.Pos ; // FIX ORC
    return Out;
 }
 
@@ -2225,9 +2227,12 @@ VS_OUTPUT_SPECULAR_ALPHA vs_specular_alpha_skin (uniform const int PcfMode, floa
 		//shadow mapping variables end
 	}
 	
+	
    //apply fog
    float d = length(P);
    Out.Fog = get_fog_amount(d);
+
+   Out.Pos = (d<0.15)?float4(0,0,-1,1):Out.Pos ; // FIX ORC
 
    return Out;
 }
