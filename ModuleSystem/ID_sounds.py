@@ -263,5 +263,6 @@ snd_horse_snort1 = 261
 snd_horse_low_whinny1 = 262
 snd_mount_death = 263
 snd_waterfall = 264
+snd_orc_cheer = 265
 
 

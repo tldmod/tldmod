@@ -1336,9 +1336,9 @@ triggers = [
 	(gt, reg1, 15), # for big enough party
 	(val_div, reg1, ":orcs"),
 	(lt, reg1, 2), # more than 50% of "adjusted orcs" in party?
-	(store_random_in_range, reg1, 0, 10),(lt, reg1, 5), #50% mutiny chance
+	(store_random_in_range, reg1, 0, 10),(lt, reg1, 3), #50% mutiny chance
 	],[
-	(assign, "$mutiny_counter",36), # 36 hours between uprisings
+	(assign, "$mutiny_counter",108), # 4.3 days between uprisings
 	(assign, "$party_meeting", 0),
     (jump_to_menu,"mnu_mutiny"),
    ]),

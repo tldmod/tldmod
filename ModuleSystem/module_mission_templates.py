@@ -1373,7 +1373,7 @@ mission_templates = [ # not used in game
     ],
     tournament_triggers
 ),
-( "arena_challenge_fight",mtf_team_fight, -1, # used for 
+( "arena_challenge_fight",mtf_team_fight, -1, # used for orc mutiny
   "You enter a melee fight.",
     [ (0, mtef_visitor_source|mtef_team_0, af_override_horse, aif_start_alarmed, 1, []),
 	  (1, mtef_visitor_source|mtef_team_1, af_override_horse, aif_start_alarmed, 1, []),
@@ -1386,33 +1386,52 @@ mission_templates = [ # not used in game
 	  (26,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, 4, 0, 1, []),
     ],[
 	common_inventory_not_available,
-	(ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
+#	(ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
+			
+	(ti_tab_pressed,0,0,[],[
+		(try_begin),#If the battle is won, missions ends.
+			(num_active_teams_le,2),
+			(neg|main_hero_fallen, 0),
+			(assign, "$party_meeting", 1),
+			(finish_mission),
+		(else_try),
+			(main_hero_fallen),
+			(assign, "$party_meeting", -1),
+			(finish_mission),
+		(else_try),
+			(display_message, "@Cannot leave now."),
+		(try_end)]),
+			
 	(ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
 	(0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
-    #(1, 4, ti_once, [(this_or_next|main_hero_fallen),(num_active_teams_le,2)],[(finish_mission)]),
-	(0.3, 0, 2, [], [ # spectators cheer
+    (0.3, 0, 0, [], [ # spectators cheer
 		(try_for_agents,":agent"),
 			(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
-			(store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
-			(agent_set_animation, ":agent", "anim_cheer"),
-			(agent_get_troop_id,":troop", ":agent"),
-			(troop_get_type,reg1,":troop"),
-			(try_begin),(is_between, reg1, tf_urukhai, tf_orc_end),(agent_play_sound, ":agent", "snd_uruk_yell"),
-			 (else_try),(eq, reg1, tf_orc),(agent_play_sound, ":agent", "snd_orc_yell"),
-			 (else_try),(agent_play_sound, ":agent", "snd_man_yell"),
+			(agent_get_slot,":counter",":agent",slot_agent_is_in_scripted_mode),
+			(try_begin),
+				(gt, ":counter", 0), (val_sub,":counter", 1),(agent_set_slot,":agent",slot_agent_is_in_scripted_mode,":counter"), # pass cheering cycles
+			(else_try),
+				(store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
+				(agent_set_slot,":agent",slot_agent_is_in_scripted_mode,13), # remember that the guy is cheering now, pass 13 cycles after that
+				(agent_set_animation, ":agent", "anim_cheer"),
+				(agent_get_troop_id,":troop", ":agent"),
+				(troop_get_type,reg1,":troop"),
+				(try_begin),(is_between, reg1, tf_urukhai, tf_orc_end),(agent_play_sound, ":agent", "snd_uruk_yell"),
+				 (else_try),(eq, reg1, tf_orc),(agent_play_sound, ":agent", "snd_orc_cheer"),
+				 (else_try),(agent_play_sound, ":agent", "snd_man_yell"),
+				(try_end),
 			(try_end),
 		(try_end)]),
-	(1, 60, ti_once,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
+		tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+	(1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
 		(try_begin),
 			(main_hero_fallen),
 			(assign, "$party_meeting", -1),
 			(finish_mission),
 		(else_try),
-			(all_enemies_defeated, 1),
-			(neg|main_hero_fallen, 0),
+			(num_active_teams_le,2),
 			(assign, "$party_meeting", 1),
 			(display_message,"str_msg_battle_won"),
-			(finish_mission),
 		(try_end)]),
 	
 ]),

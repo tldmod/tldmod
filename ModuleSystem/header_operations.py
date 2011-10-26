@@ -217,7 +217,7 @@ get_average_game_difficulty = 990 # (get_average_game_difficulty, <destination>)
 #-------------------------
 # Mission Condition types
 #-------------------------
-all_enemies_defeated      = 1003 # (all_enemies_defeated),
+all_enemies_defeated      = 1003 # (all_enemies_defeated, <time>), # time refers to # of seconds to wait until making a check
 race_completed_by_player  = 1004 # (race_completed_by_player),
 num_active_teams_le       = 1005 # (num_active_teams_le,<value>),
 main_hero_fallen          = 1006 # (main_hero_fallen),

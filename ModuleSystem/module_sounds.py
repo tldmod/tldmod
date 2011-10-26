@@ -330,5 +330,6 @@ sounds = [
 ("mount_death", sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
 
 ("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["henneth_loop.wav"]),
+("orc_cheer",sf_priority_5|sf_vol_10, ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
 
 ]
