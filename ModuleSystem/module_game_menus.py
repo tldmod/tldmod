@@ -7588,13 +7588,13 @@ game_menus = [
 			(party_remove_members, "p_main_party", ":stack_troop", reg1),
 		(try_end),
     (else_try),
-       (eq, "$party_meeting", 1),
-       (str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
+		(eq, "$party_meeting", 1),
+		(str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
     (else_try),
-       (str_store_string, s1, "@^^^There is a sudden uproar in the ranks of your orcs, and the largest one of them approaches you! ^^Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander! We tell you what.. Lads here think I be better commander, when I KILL YOU!"),
-	(try_end),
-    ],[
-    ("start_fight",[(eq, "$party_meeting", 0)],"Confront the mutinee!",[
+		(eq, "$party_meeting", 0),
+		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
+	(else_try),
+		(eq, "$party_meeting", 2),
 		(modify_visitors_at_site, "scn_duel_scene"),
 		(reset_visitors),
 		(set_jump_entry, 0), 
@@ -7609,28 +7609,42 @@ game_menus = [
 		(try_end),
 		(set_jump_mission, "mt_arena_challenge_fight"),
 		(jump_to_scene, "scn_duel_scene"),
-		(change_screen_mission)]),
+		(change_screen_mission),
+	(try_end),
+    ],[
+    # ("start_fight",[(eq, "$party_meeting", 0), (eq, 1,0),],"Confront the mutinee!",[
+		# (modify_visitors_at_site, "scn_duel_scene"),
+		# (reset_visitors),
+		# (set_jump_entry, 0), 
+		# (set_visitor, 0, "trp_player"),
+		# (set_visitor, 1, "trp_orc_pretender"),
+		# (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"),
+		# (party_remove_members, "p_encountered_party_backup", "trp_player", 1),
+		# (try_for_range, ":entry", 2, 29), # populate spectators
+			# (call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"), #returns reg0
+			# (store_random_in_range, reg1,1, 100000), #rnd dna
+			# (set_visitor,":entry",reg0, reg1),
+		# (try_end),
+		# (set_jump_mission, "mt_arena_challenge_fight"),
+		# (jump_to_scene, "scn_duel_scene"),
+		# (change_screen_mission)]),
 	("leave",[(neq, "$party_meeting", 0)],"Leave.",[(change_screen_map)])]
 ),
 
-
-( "prisoner_talk_hook", 0,
-	"menu for bypassing hardcoded prisoner talk",
-    "none",
-	[#(change_screen_quit),
-	#(change_screen_return),
-	#(change_screen_map),
-	(try_begin),
-		(eq, "$talk_context", tc_prisoner_talk),
-		(mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
-		(mission_tpl_entry_add_override_item,  "mt_conversation_encounter", 17, "itm_prisoner_coll_chain"),
-	 (try_end),
-	 (store_random_in_range, reg1,1, 100000), #rnd dna
-	 (call_script, "script_setup_troop_meeting", "$g_talk_troop", reg1),
-	 (change_screen_map),
-    ],
-    [("ruin_leave",[],"Leave...",[(change_screen_return)]),
-]),
+# ( "prisoner_talk_hook", 0,
+	# "menu for bypassing hardcoded prisoner talk",
+    # "none",
+	# [(try_begin),
+		# (eq, "$talk_context", tc_prisoner_talk),
+		# (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
+		# (mission_tpl_entry_add_override_item,  "mt_conversation_encounter", 17, "itm_prisoner_coll_chain"),
+	 # (try_end),
+	 # (store_random_in_range, reg1,1, 100000), #rnd dna
+	 # (call_script, "script_setup_troop_meeting", "$g_talk_troop", reg1),
+	 # (change_screen_map),
+    # ],
+    # [("ruin_leave",[],"Leave...",[(change_screen_return)]),
+# ]),
 
 
 

@@ -951,10 +951,27 @@ mission_templates_cutscenes = [
         (music_set_situation, 0), (music_set_culture, 0),
         # (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
         # (music_set_situation, mtf_sit_siege),
+		(try_begin), #GA: menacing ambiance for nazgul :)
+			(eq, "$g_tld_convo_talker", "trp_nazgul"),
+			(set_rain,1,100),
+		(try_end),
       ]),
-      
+	################## THUNDER AND LIGHTNING BEGIN ###############################
+	(3, 0.2, 6, [(eq, "$g_tld_convo_talker", "trp_nazgul"),(store_random_in_range,":rnd",1,5),(eq,":rnd",1),(set_fog_distance, 300, 0xaaaaaa),],
+				[(set_fog_distance, 400, 0x010101),(play_sound,"snd_thunder"),(assign, "$lightning_cycle",1),]),
+	(0.4,0.1, 6,[(eq, "$g_tld_convo_talker", "trp_nazgul"),(eq,"$lightning_cycle",1),(set_fog_distance, 300, 0x777777),],		###### Lightning afterflashes 
+				[(set_fog_distance, 400, 0x010101),(assign,"$lightning_cycle",2),]),
+	(0.5,0.1, 6,[(eq, "$g_tld_convo_talker", "trp_nazgul"),(eq,"$lightning_cycle",2),(set_fog_distance, 300, 0x555555),],
+				[(set_fog_distance, 400, 0x010101),(assign,"$lightning_cycle",0),]),
+	################## THUNDER AND LIGHTNING END #################################      
       (0, 0, ti_once,
-       [(start_presentation, "prsnt_conversation_titles"),
+       [
+	    (try_begin), #GA: menacing ambiance for nazgul :)
+			(eq, "$g_tld_convo_talker", "trp_nazgul"),
+			(set_fog_distance,400,0x010101),
+		(try_end),
+		
+	    (start_presentation, "prsnt_conversation_titles"),
         
         #spawn Gandalf/Nazgul behind the little hill
         (set_fixed_point_multiplier, 100),
@@ -1181,6 +1198,7 @@ mission_templates_cutscenes = [
          (try_end),
          (overlay_set_text, "$g_presentation_obj_2", s2),
        ], []),
+
     ],
 ),
     

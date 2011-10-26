@@ -213,25 +213,11 @@ dialogs = [
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
 #GA: orc pretender dialogs
-# [trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
-# [trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
-# [trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
-	# (assign, "$g_leave_encounter", 1),
-	# (assign, "$party_meeting", 0),
-    # (modify_visitors_at_site, "scn_duel_scene"),
-    # (reset_visitors),
-    # (set_visitor, 0, "trp_player"),
-    # (set_visitor, 1, "$g_talk_troop"),
-	# (party_remove_members, "p_encountered_party_backup", "trp_player", 1),
-	# (call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"),
-	# (try_for_range, ":entry", 2, 12), # populate spectators
-		# (call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
-		# (store_random_in_range, ":rnd",1, 100000), #rnd dna
-		# (set_visitor,":entry",reg0,":rnd"),
-	# (try_end),
-    # (set_jump_mission, "mt_arena_challenge_fight"),
-    # (jump_to_scene, "scn_duel_scene")
-	# ]],
+[trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
+[trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
+[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
+	(assign, "$party_meeting", 2),
+    (jump_to_menu, "mnu_mutiny")]],
 
 #MV: Easter Egg Troll dialogs
 [trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Problem?", "troll_introduce_1",[]],
@@ -6600,8 +6586,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone,"mayor_deliver_wine", [],
  "At last! Our stocks were almost depleted.\
- I had paid the cost of the {s4} in advance.\
- Here, take these {reg5} RPs. That should cover your pay.\
+ I had arranged for the delivery of the {s4} in advance.\
+ You are entitled to a bonus of {reg5} RPs. That should cover your troubles.\
  And give {s9} my regards.\
  I'll put in a good word for you next time I deal with him.", "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
