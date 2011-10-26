@@ -1,5 +1,5 @@
 scenesfile version 1
- 231
+ 237
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -39,7 +39,7 @@ scn_random_scene_snow_forest random_scene_snow_forest 768 none none 0.000000 0.0
 scn_random_scene_desert_forest random_scene_desert_forest 768 none none 0.000000 0.000000 150.000000 150.000000 -0.500000 0x00000001dc6028000003e8fa0000034e00004b34000059be 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_flat 
 scn_random_scene_steppe_small random_scene_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
   0 
   0 
@@ -921,6 +921,30 @@ scn_forest5 forest5 256 none none 0.000000 0.000000 100.000000 100.000000 -100.0
   0 
  outer_terrain_forest 
 scn_duel_scene duel_scene 256 none none -40.000000 -40.000000 40.000000 40.000000 -100.000000 0x00000006300005000002308c00003005000018b300001d92 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_big1 ford_big1 768 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000140002800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_big2 ford_big2 768 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000140002800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_big3 ford_big3 768 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x0000000140002800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_small1 ford_small1 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_small2 ford_small2 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_ford_small3 ford_small3 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_plain 

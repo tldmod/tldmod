@@ -7601,9 +7601,9 @@ game_menus = [
 		(call_script, "script_party_copy", "p_encountered_party_backup", "p_main_party"),
 		(party_remove_members, "p_encountered_party_backup", "trp_player", 1),
 		(try_for_range, ":entry", 2, 29), # populate spectators
-			(call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
-			(store_random_in_range, ":rnd",1, 100000), #rnd dna
-			(set_visitor,":entry",reg0,":rnd"),
+			(call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"), #returns reg0
+			(store_random_in_range, reg1,1, 100000), #rnd dna
+			(set_visitor,":entry",reg0, reg1),
 		(try_end),
 		(set_jump_mission, "mt_arena_challenge_fight"),
 		(jump_to_scene, "scn_duel_scene"),
@@ -7612,7 +7612,23 @@ game_menus = [
 ),
 
 
-##############################  # End of Duel Mod  ##############################
+( "prisoner_talk_hook", 0,
+	"menu for bypassing hardcoded prisoner talk",
+    "none",
+	[#(change_screen_quit),
+	#(change_screen_return),
+	#(change_screen_map),
+	(try_begin),
+		(eq, "$talk_context", tc_prisoner_talk),
+		(mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
+		(mission_tpl_entry_add_override_item,  "mt_conversation_encounter", 17, "itm_prisoner_coll_chain"),
+	 (try_end),
+	 (store_random_in_range, reg1,1, 100000), #rnd dna
+	 (call_script, "script_setup_troop_meeting", "$g_talk_troop", reg1),
+	 (change_screen_map),
+    ],
+    [("ruin_leave",[],"Leave...",[(change_screen_return)]),
+]),
 
 
 

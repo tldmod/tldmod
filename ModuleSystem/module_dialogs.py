@@ -213,9 +213,9 @@ dialogs = [
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
 #GA: orc pretender dialogs
-[trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
-[trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
-[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
+# [trp_orc_pretender, "start", [], "Hey, {playername}. We tell you what.. Lads here are not happy, not happy at all. Not enough manflesh, not enough fun. Lads here are talking that you are not good enough commander!", "mutiny_talk_1",[]],
+# [trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? This is punishable by death, maggot!", "mutiny_talk_2",[]],
+# [trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. Lads here think I be better commander for them when I kill you!", "close_window",[
 	# (assign, "$g_leave_encounter", 1),
 	# (assign, "$party_meeting", 0),
     # (modify_visitors_at_site, "scn_duel_scene"),
@@ -231,7 +231,7 @@ dialogs = [
 	# (try_end),
     # (set_jump_mission, "mt_arena_challenge_fight"),
     # (jump_to_scene, "scn_duel_scene")
-	]],
+	# ]],
 
 #MV: Easter Egg Troll dialogs
 [trp_easter_egg_troll, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Problem?", "troll_introduce_1",[]],
@@ -8275,11 +8275,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [party_tpl|pt_enemy|plyr,"enemy_talk_1", [], "You don't have a chance against me. Give up.", "enemy_talk_2",[]],
 [party_tpl|pt_enemy,"enemy_talk_2", [], "I will give up when you are dead!", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 
-[anyone|plyr,"prisoner_chat", [(assign,"$talk_context",tc_prisoner_talk)], "Guards, bring me that one!", "prisoner_chat_2",[
-	# need some code for removing weapons from the prisoner troop, else kinda stupid. I forsee some problems with returning the weapons though...
-	]],
-[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 
+# prisoner talk
+[anyone|plyr,"prisoner_chat", [(assign,"$talk_context",tc_prisoner_talk),], "Guards, bring me that one!", "prisoner_chat_2",[]],
+
+[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
 [anyone|plyr,"prisoner_chat_3", [(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], 
 "You happen to be our next dinner! Guards, slaughter him!", "prisoner_slaughter",[]],
@@ -8292,6 +8292,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(neq, ":agent", reg1),
 		(agent_is_human, ":agent"),
 		(agent_get_troop_id, "$g_talk_troop", ":agent"), #apparently prisoner talk defines $g_talk_troop incorrectly. MB bug
+		(agent_set_animation, ":agent", "anim_fall_body_back"), 
 		(agent_set_hit_points,":agent",0,0),
 		(agent_deliver_damage_to_agent, reg1, ":agent"),
 	(try_end),

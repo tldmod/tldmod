@@ -83,7 +83,7 @@ mission_templates = [ # not used in game
 # This template is used in party encounters and such.
 ( "conversation_encounter",0,-1,
   "Conversation_encounter",
-    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,0,0,1,[]),
+    [( 0,mtef_visitor_source,af_override_fullhelm,0,1,[]),( 1,mtef_visitor_source,af_override_horse|af_override_weapons|af_override_head,0,1,[]),
      ( 2,mtef_visitor_source,0,0,1,[]),( 3,mtef_visitor_source,0,0,1,[]),( 4,mtef_visitor_source,0,0,1,[]),( 5,mtef_visitor_source,0,0,1,[]),( 6,mtef_visitor_source,0,0,1,[]),
      ( 7,mtef_visitor_source,0,0,1,[]),( 8,mtef_visitor_source,0,0,1,[]),( 9,mtef_visitor_source,0,0,1,[]),(10,mtef_visitor_source,0,0,1,[]),(11,mtef_visitor_source,0,0,1,[]),
     #prisoners now...
@@ -92,10 +92,30 @@ mission_templates = [ # not used in game
      (17,mtef_visitor_source,0,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,aif_start_alarmed,1,[]),(20,mtef_visitor_source,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      (22,mtef_visitor_source,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source,0,aif_start_alarmed,1,[]),(24,mtef_visitor_source,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source,0,aif_start_alarmed,1,[]),(26,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      (27,mtef_visitor_source,0,aif_start_alarmed,1,[]),(28,mtef_visitor_source,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source,0,aif_start_alarmed,1,[]),(30,mtef_visitor_source,0,aif_start_alarmed,1,[]),
-	# opponent troops cheering
-	# (31,mtef_defenders|mtef_team_1,0,aif_start_alarmed,1,[]),(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+	 (31,mtef_visitor_source,af_override_all,0,1,[itm_prisoner_coll_chain]),#(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
-    [ # other people in the backgroud
+    [ # other people in the backgroud (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
+		# (ti_on_agent_spawn, 0, 0, [], [
+			# (store_trigger_param_1, ":agent"),
+			# (agent_is_human, ":agent"),
+			# (agent_get_entry_no,reg1,":agent"),
+			# (eq, reg1, 1), # only those at entry point 1
+			# (agent_get_troop_id, reg42, ":agent"),
+			# (neq, reg42, "trp_player"),
+			# (store_troop_faction, reg2, reg42),
+			# (store_relation,reg1,reg2,"$players_kingdom"),
+			# (display_message, "@Relations to player: {reg1}"),
+			# (lt, reg1, 0),
+				# (assign,"$talk_context",tc_prisoner_talk),
+				# (assign, reg41, ":agent"), 
+			    # (display_message, "@ATTEMPT REMEMBERING PRISONER AGENT!"),
+				# (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 1, af_override_all),
+				# (mission_tpl_entry_add_override_item,  "mt_conversation_encounter", 1, "itm_prisoner_coll_chain")
+				# ]),
+		# (0,0, ti_once, [],[ #(eq,"$talk_context",tc_prisoner_talk)
+			# (call_script, "script_remove_agent", reg41),
+			# (add_visitors_to_current_scene,31, "trp_knight_2_11",1),
+			# (display_message, "@ATTEMPT SPAWNING!"),]),
 		# freindly greetings (after 0.2 secs)
 		(0, 0.2, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
@@ -1382,9 +1402,19 @@ mission_templates = [ # not used in game
 			 (else_try),(agent_play_sound, ":agent", "snd_man_yell"),
 			(try_end),
 		(try_end)]),
-		
-	(1, 3, ti_once, [(all_enemies_defeated, 1),(neg|main_hero_fallen, 0)],[(assign, "$party_meeting", 1),(finish_mission)]),
-	(2, 3, ti_once, [(main_hero_fallen)],[(assign, "$party_meeting", -1),(finish_mission)]),    
+	(1, 60, ti_once,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
+		(try_begin),
+			(main_hero_fallen),
+			(assign, "$party_meeting", -1),
+			(finish_mission),
+		(else_try),
+			(all_enemies_defeated, 1),
+			(neg|main_hero_fallen, 0),
+			(assign, "$party_meeting", 1),
+			(display_message,"str_msg_battle_won"),
+			(finish_mission),
+		(try_end)]),
+	
 ]),
 
 ( "custom_battle",mtf_battle_mode,-1,

@@ -2298,4 +2298,6 @@ scene_props = [
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
 
+("distant_outer_tirith",sokf_place_at_origin|sokf_moveable,"outer_tirith","0",[]),
+
 ]

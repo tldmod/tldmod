@@ -35,17 +35,12 @@ scenes = [
 ("random_scene_steppe_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(120,120),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
 ("random_scene_plain_forest"    ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
 ("random_scene_snow_forest"     ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
-("random_scene_desert_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+("random_scene_desert_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_flat"),
 # ...small versions...
 ("random_scene_steppe_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000012c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("random_scene_plain_small"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("random_scene_snow_small"   ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000014c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
 ("random_scene_desert_small" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000015c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
-#("random_scene_mountain_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(240,240),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_steppe"),
-#("random_scene_steppe_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
-#("random_scene_plain_forest_small" ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
-#("random_scene_snow_forest_small"  ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
-#("random_scene_desert_forest_small",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
 
 ("handsign" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-0.5,"0x314d060900036cd70000295300002ec9000025f3",[],[],"outer_terrain_rohan"),
 
@@ -67,44 +62,6 @@ scenes = [
 #("town_1_arena_football",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c"        ,[],[], "outer_terrain_plain"),
 ("quick_battle_random"  ,sf_generate|sf_randomize,"none", "none", (0,0),(300,300),-100,"0x000000033c64cb1e0006d5b50000307900001e7500004547", [],[], "outer_terrain_plain"),
 ("starting_quest"       ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x30401ee300059966000001bf0000299a0000638f",[],[], "outer_terrain_plain"),
-######## END TLD
-#("quick_battle_TEST_TROLL",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(200,200),-100,"0x000000003a0a8fb24002308c000006660000120c00005627",[],[], "outer_terrain_plain"),
-
-#("salt_mine"    ,sf_generate,"none", "none", (-200,-200),(200,200),-100,"0x2a07b23200025896000023ee00007f9c000022a8", [],[], "outer_terrain_steppe"),
-#("novice_ground",sf_indoors,"training_house_a", "bo_training_house_a", (-100,-100),(100,100),-100,"0",    [],[]),
-#"zendar_arena" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c",    [],[], "outer_terrain_plain"),
-#("dhorak_keep"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x33a7946000028ca300007f4a0000479400161992",    ["exit"],[]),
-#("reserved4"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"28791",    [],[]),
-#("reserved5"    ,sf_generate,"none", "none", (0,0),(120,120),-100,"117828",    [],[]),
-#("reserved6"    ,sf_generate,"none", "none", (0,0),(100,100),-100,"6849",    [],[]),
-#("reserved7"    ,sf_generate,"none", "none", (0,0),(100,100),-100,"6849",    [],[]),
-#("reserved8"    ,sf_generate,"none", "none", (0,0),(100,100),-100,"13278",    [],[]),
-#("reserved9"    ,sf_indoors,"none", "none", (-100,-100),(100,100),-100,"0",    [],[]),
-#("reserved10"   ,0,"none", "none", (-100,-100),(100,100),-100,"0",    [],[]),
-#("reserved11"   ,0,"none", "none", (-100,-100),(100,100),-100,"0",    [],[]),
-#("reserved12"   ,sf_indoors,"none", "none", (-100,-100),(100,100),-100,"0",    [],[]),
-#("training_ground",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",    [],["tutorial_chest_1", "tutorial_chest_2"], "outer_terrain_plain"),
-#("tutorial_1"   ,sf_indoors,"tutorial_1_scene", "bo_tutorial_1_scene", (-100,-100),(100,100),-100,"0",    [],[]),
-#("tutorial_2"   ,sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",    [],[]),
-#("tutorial_3"   ,sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",    [],[]),
-#("tutorial_4"   ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",    [],[], "outer_terrain_plain"),
-#("tutorial_5"   ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a06dca80005715c0000537400001377000011fe",    [],[], "outer_terrain_plain"),
-
-
-#  ("training_ground_horse_track_1" ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000000337553240004d53700000c0500002a0f80006267",[],[], "outer_terrain_plain"),
-#  ("training_ground_horse_track_2" ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000000301553240004d5370000466000002a0f800073f1",[],[], "outer_terrain_plain"),
-#  ("training_ground_horse_track_3" ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000000400c12b2000515470000216b0000485e00006928",[],[], "outer_terrain_snow"),
-#  ("training_ground_horse_track_4" ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000000200b60320004a5290000180d0000452f00000e90",[],[], "outer_terrain_steppe"),
-#  ("training_ground_horse_track_5" ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000003008208e0006419000000f730000440f00003c86",[],[], "outer_terrain_plain"),
-#  ("training_ground_ranged_melee_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000001350455c20005194a000041cb00005ae800000ff5",[],[], "outer_terrain_plain"),
-#  ("training_ground_ranged_melee_2",sf_generate,"none", "none", (0,0),(120,120),-100,"0x0000000532c8dccb0005194a000041cb00005ae800001bdd",[],[], "outer_terrain_plain"),
-#  ("training_ground_ranged_melee_3",sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000054327dcba0005194a00001b1d00005ae800004d63",[],[], "outer_terrain_snow"),
-#  ("training_ground_ranged_melee_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000012247dcba0005194a000041ef00005ae8000050af",[],[], "outer_terrain_steppe"),
-#  ("training_ground_ranged_melee_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000001324a9cba0005194a000041ef00005ae800003c55",[],[], "outer_terrain_plain"),
-
-  #("zendar_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x300bc5430001e0780000448a0000049f00007932", ["the_happy_boar","","zendar_merchant"],["bonus_chest_2"], "outer_terrain_plain"),
-  #("the_happy_boar" ,sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",   ["zendar_center"],["zendar_chest"]),
-  #("zendar_merchant",sf_indoors,"interior_town_house_i", "bo_interior_town_house_i", (-100,-100),(100,100),-100,"0",  [],[]),
 
 # city centers
   ("minas_tirith_center"    ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
@@ -130,10 +87,8 @@ scenes = [
   ("westfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
   ("west_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
   ("eastfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_mountains2south"),
-#  ("barad_dur_center"       ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
   ("morannon_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
   ("minas_morgul_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
-#  ("mount_doom_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("cirith_ungol_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_plain"),
   ("orc_sentry_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
   ("isengard_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
@@ -206,22 +161,12 @@ scenes = [
 #!!Villages !!#
 ("village_1" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030081763000589620000338e00004f2c00005cfb",   [],[],"outer_terrain_plain"),
 ("village_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003007a21c0003ecfe000001f0000073b100000fd2",    [],[],"outer_terrain_plain"),
-#  ("village_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000023003dc4e0006118b000029f8000034670000105f",    [],[],"outer_terrain_plain"),
-#  ("village_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000230079732000651a00000044c0000177200000234",    [],[],"outer_terrain_plain"),
-#  ("village_5",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001ce100006097d0000134c000016d8000042a2",    [],[],"outer_terrain_plain"),
-#  ("village_6",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000230035598000761df000058ea000006f3000005e7",    [],[],"outer_terrain_plain"),
-#  ("village_7",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000031059a0d0004792000005c3a00004df500000dbc",    [],[],"outer_terrain_plain"),
-#  ("village_8",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000002300798320006499200002acc000040d70000421d",    [],[],"outer_terrain_plain"),
-#  ("village_9",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000004300005008005b57000004e31800017d80000754b",    [],[],"outer_terrain_plain"),
-#  ("village_10",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000013005dad40005f57b0000543e0000279d000052b4",    [],[],"outer_terrain_plain"),
 
 ("field_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000033a059a5a0009525600002005000060e300001175",    [],[],"outer_terrain_plain"),
 ("field_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000033a079a3f000a3a8000006dfd000030a100006522",    [],[],"outer_terrain_steppe"),
 ("field_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b",    [],[],"outer_terrain_steppe"),
 ("field_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b",    [],[],"outer_terrain_steppe"),
 ("field_5",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b",    [],[],"outer_terrain_steppe"),
-
-#  ("rivercross_kazzan",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030081763000589620000338e00004f2c00005cfb",    [],[],"outer_terrain_plain"),
 
 ## Abhuva TLD Battlefield Scenes
 ## Plain Battle Field with a small farm and a road crossing the map
@@ -363,6 +308,14 @@ scenes = [
 ("forest5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 
 ("duel_scene",sf_generate,"none", "none", (-40,-40),(40,40),-100,"0x00000006300005000002308c00003005000018b300001d92",[],[],"outer_terrain_plain"),
+
+("ford_big1" ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x0000000140002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("ford_big2" ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x0000000140002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("ford_big3" ,sf_generate|sf_randomize,"none","none",(0,0),(200,200),-0.5,"0x0000000140002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+
+("ford_small1"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("ford_small2"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("ford_small3"  ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_plain"),
 
 ]
 

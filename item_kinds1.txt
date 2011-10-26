@@ -1023,19 +1023,19 @@ itemsfile version 2
  itm_isen_uruk_light_c Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_c 0  16842765 0 704 1099635359744 12.000000 100 0 13 9 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2004 1099679400102 22.000000 100 0 19 13 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2000 1099679400102 22.000000 100 0 19 13 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1504 1099679400102 20.000000 100 0 17 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1500 1099679400102 20.000000 100 0 17 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2004 1099679400102 22.000000 100 0 20 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2000 1099679400102 22.000000 100 0 20 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2804 1099679400102 25.000000 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2800 1099679400102 25.000000 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3004 1099679400102 26.000000 100 0 25 14 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3000 1099679400102 26.000000 100 0 25 14 0 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 694 1099635359744 14.000000 100 0 18 10 0 0 0 0 0 0 0 0
@@ -1326,13 +1326,13 @@ itemsfile version 2
  itm_m_uruk_heavy_e Uruk_Mail Uruk_Mail 1  uruk_mordor_e 0  16842765 0 1502 1099679400102 22.000000 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_f Uruk_Mail Uruk_Mail 1  uruk_mordor_f 0  16842765 0 1502 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_f Uruk_Mail Uruk_Mail 1  uruk_mordor_f 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_g Uruk_Mail Uruk_Mail 1  uruk_mordor_g 0  16842765 0 1502 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_g Uruk_Mail Uruk_Mail 1  uruk_mordor_g 0  16842765 0 1500 1099679400102 22.000000 100 0 22 6 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_h Uruk_Scale Uruk_Scale 1  uruk_mordor_h 0  16842765 0 1502 1099679400102 21.000000 100 0 22 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_h Uruk_Scale Uruk_Scale 1  uruk_mordor_h 0  16842765 0 1500 1099679400102 21.000000 100 0 22 10 0 0 0 0 0 0 0 0
 0
 
  itm_m_uruk_heavy_i Uruk_Thick_Scale Uruk_Thick_Scale 1  uruk_mordor_i 0  16842765 0 2000 704643072 24.000000 100 0 24 10 0 0 0 0 0 0 0 0
