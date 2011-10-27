@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-240
+241
 pt_none none 63 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 63 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 63 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -121,6 +121,7 @@ pt_dale_caravan Dale_Caravan 2814749771300993 0 11 14 61 1 5 0 51 5 10 0 60 4 8 
 pt_dwarf_caravan Dwarven_Caravan 2814749771300993 0 4 14 88 2 6 0 93 2 4 0 84 12 24 0 91 16 24 0 83 20 40 0 -1 
 pt_mordor_caravan Mordor_Supply_Train 2814749771300986 0 6 14 346 4 12 0 369 8 18 0 360 8 18 0 368 14 22 0 359 18 30 0 -1 
 pt_isengard_caravan Isengard_Supply_Train 2814749771300985 0 7 14 321 3 8 0 338 6 16 0 337 6 10 0 332 6 10 0 315 20 40 0 -1 
+pt_gunda_caravan Gundabad_Supply_Train 2814749771300985 0 18 14 391 1 2 0 387 6 16 0 386 6 10 0 383 20 30 0 -1 -1 
 pt_gondor_p_train Gondor_Prisoner_Train 4194423 0 3 14 103 1 2 0 116 4 6 0 102 15 25 0 101 30 45 0 -1 -1 
 pt_rohan_p_train Rohan_Prisoner_Train 4194424 0 5 14 223 2 4 0 243 4 6 0 238 4 6 0 222 8 12 0 221 24 30 0 -1 
 pt_imladris_p_train Rivendell_Prisoner_Train 4194433 0 9 14 204 2 4 0 199 2 4 0 203 6 10 0 198 6 8 0 197 25 35 0 -1 

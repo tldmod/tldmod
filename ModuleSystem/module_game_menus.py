@@ -5312,7 +5312,7 @@ game_menus = [
          (try_end)
          ]),
       ("castle_start_siege",
-       [
+       [ (eq, 0, 1), #MV: player can't start a sieg
            (this_or_next|party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
            (             party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, "p_main_party"),
            (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
@@ -6252,11 +6252,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),],
 ),
   
-( "close",0,
-    "Nothing.",
-    "none",
-    [(change_screen_return),],
-    [],
+( "close",0,"Nothing.", "none",[(change_screen_return)],[],
 ),
 
 ( "town",mnf_enable_hot_keys|city_menu_color,
@@ -7081,11 +7077,7 @@ game_menus = [
     ]
 ),
 
-( "auto_return_to_map",0,
-    "stub",
-    "none",
-    [(change_screen_map)],
-    []
+( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]
 ),
 
 #MV: hackery to get around change_screen_exchange_with_party limitations

@@ -235,3 +235,6 @@ scn_ford_big3 = 233
 scn_ford_small1 = 234
 scn_ford_small2 = 235
 scn_ford_small3 = 236
+scn_erebor_siege = 237
+scn_gundabad_siege = 238
+scn_dol_guldur_siege = 239

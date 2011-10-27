@@ -202,7 +202,7 @@ party_templates = [
 
 ("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(10)|pf_show_faction,0,fac_mordor  ,prisoner_train_personality, [(trp_large_uruk_of_mordor, 4, 12), (trp_large_orc_archer_of_mordor, 8, 18), (trp_large_orc_of_mordor, 8, 18), (trp_orc_archer_of_mordor, 14, 22), (trp_orc_of_mordor, 18, 30)]), # strength 200-408
 ("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 6, 16), (trp_uruk_hai_of_isengard, 6, 10), (trp_uruk_hai_tracker, 6, 10), (trp_orc_of_isengard, 20, 40)]), # strength 159-336
-
+("gunda_caravan"   ,"Gundabad Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_gundabad,prisoner_train_personality, [(trp_goblin_north_clan_rider, 1, 2), (trp_keen_eyed_goblin_archer_gundabad, 6, 16), (trp_goblin_bowmen_gundabad, 6, 10), (trp_orc_gundabad, 20, 30)]),
 
 ####TLD Prisoner Trains
 # MV guidelines:

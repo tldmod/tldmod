@@ -1425,7 +1425,7 @@ scripts = [
 	(troop_set_slot, "trp_knight_1_4", slot_troop_banner_scene_prop, "spr_banner_en"), #pelargir
 	(troop_set_slot, "trp_knight_1_5", slot_troop_banner_scene_prop, "spr_banner_ed"), #blackroot vale
 	(troop_set_slot, "trp_knight_1_6", slot_troop_banner_scene_prop, "spr_banner_eg"), #pinnath gelin
-	(troop_set_slot, "trp_knight_1_8", slot_troop_banner_scene_prop, "spr_banner_eu"), #lossarnach
+	(troop_set_slot, "trp_knight_1_8", slot_troop_banner_scene_prop, "spr_banner_f21"), #lossarnach
 
 # fill center slots	
 	(try_for_range, ":center_no", centers_begin, centers_end),

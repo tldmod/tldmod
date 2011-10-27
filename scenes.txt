@@ -1,5 +1,5 @@
 scenesfile version 1
- 237
+ 240
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -948,3 +948,15 @@ scn_ford_small3 ford_small3 768 none none 0.000000 0.000000 90.000000 90.000000 
   0 
   0 
  outer_terrain_plain 
+scn_erebor_siege erebor_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2north 
+scn_gundabad_siege gundabad_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2north 
+scn_dol_guldur_siege dol_guldur_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+  0 
+  0 
+ outer_terrain_forest 

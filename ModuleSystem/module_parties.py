@@ -293,5 +293,12 @@ parties = [
   ("camplace_S5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
   ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
 # mirkwood forest adornments 
-  ("shrubbery" ,"shrubbery" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
+  ("shrubbery1" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
+  ("shrubbery2" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.5,-132.5),[],185),
+  ("shrubbery3" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.6,-128.1),[],185),
+  ("shrubbery4" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.54,-136.2),[],185),
+  ("shrubbery5" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-45.75,-141.8),[],185),
+  ("shrubbery6" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-48.4,-149.05),[],135),
+  ("shrubbery7" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.14,-154.45),[],195),
+  ("shrubbery8" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.52,-159.83),[],195),
   ] + parties_scribbler 

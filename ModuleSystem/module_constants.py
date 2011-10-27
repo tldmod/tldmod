@@ -1305,7 +1305,7 @@ ws_party_spawns_list = [
 
 ("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",   -1,                    -1),
 
-("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
 ("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 ("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 ("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
@@ -1545,7 +1545,7 @@ center_list = [
 ("p_town_umbar_camp", ["scn_umbar_camp_center", -1, -1,-1, "scn_umbar_arena",-1, "mesh_town_evilcamp"],
 	[-1, "trp_smith_umbar", "trp_merchant_umbar", "trp_elder_umbar", "pt_umbar_recruits", "trp_umbar_lord", "trp_corsair_youth", "trp_corsair_warrior", "trp_assassin_of_umbar","trp_militia_of_umbar"], 
 	["icon_mfc_umbar"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1, tld_siegable_capital),
-("p_town_dol_guldur", ["scn_dol_guldur_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena",-1,"mesh_town_dol_guldur"],
+("p_town_dol_guldur", ["scn_dol_guldur_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena","scn_dol_guldur_siege","mesh_town_dol_guldur"],
 	["trp_barman_dolguldur", "trp_smith_dolguldur", "trp_merchant_dolguldur", "trp_elder_dolguldur", "pt_guldur_recruits", "trp_guldur_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_guldur"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital),
 ("p_town_dol_guldur_north_outpost", ["scn_dol_guldur_north_outpost_center", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
@@ -1562,7 +1562,7 @@ center_list = [
 	[-1, "trp_no_troop", "trp_merchant_north_rhun", "trp_no_troop", "pt_rhun_recruits",  "trp_rhun_lord", "trp_rhun_noble_cavalry", "trp_rhun_vet_infantry", "trp_rhun_tribesman", "trp_rhun_tribal_warrior", ], 
 	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 # Gundabad camp
-("p_town_gundabad",     ["scn_gundabad_camp_center", -1, -1,-1, "scn_mordor_arena",-1, "mesh_town_gundabad"],
+("p_town_gundabad",     ["scn_gundabad_camp_center", -1, -1,-1, "scn_mordor_arena","scn_gundabad_siege", "mesh_town_gundabad"],
 	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_elder_gunda", "pt_gundabad_cap_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_capital),
 ("p_town_gundabad_ne_outpost", ["scn_gundabad_ne_outpost_center", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
@@ -1580,7 +1580,7 @@ center_list = [
 ("p_town_gundabad_m_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1,-1, "mesh_town_evilcamp"],
 	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_erebor", ["scn_erebor_center", "scn_erebor_castle", "scn_rohan_prison",-1,"scn_dwarf_arena",-1, "mesh_town_erebor"],
+("p_town_erebor", ["scn_erebor_center", "scn_erebor_castle", "scn_rohan_prison",-1,"scn_dwarf_arena","scn_erebor_siege", "mesh_town_erebor"],
 	["trp_barman_erebor", "trp_smith_erebor", "trp_merchant_erebor", "trp_elder_erebor", "pt_dwarf_recruits", "trp_dwarf_lord", "trp_dwarven_apprentice", "trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_miner"], 
 	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
 ("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1,-1, "mesh_town_goodcamp"],
