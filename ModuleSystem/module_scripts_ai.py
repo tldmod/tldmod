@@ -1960,6 +1960,20 @@ ai_scripts = [
       (spawn_around_party,":center_no", "pt_kingdom_hero_party"),
       (assign, "$pout_party", reg0),
       (party_set_faction, "$pout_party", ":troop_faction_no"),
+	  
+	  # make it use the icon of the corresponding host (mtarini)
+	  (store_sub, ":icon", ":troop_faction_no", "fac_gondor"),
+	  (val_add, ":icon", "icon_knight_gondo_trot_x3"),  # exlpoit ordering of combined icons, with a few exception below:
+	  (try_begin),(eq, ":troop_faction_no", "fac_beorn"),
+		(assign, ":icon", "icon_generic_knight_x3"),
+	  (else_try), (eq, ":troop_faction_no", "fac_gundabad"),
+		(assign, ":icon", "icon_orc_tribal_x4"),
+	  (else_try), (eq, ":troop_no", "trp_rohan_lord"),
+		(assign, ":icon", "icon_theoden_x3"),
+	  (try_end),
+	  (party_set_icon, "$pout_party", ":icon"),
+	    
+	  
 	# TLD faction specific party banners
 	  (faction_get_slot,":cur_banner",":troop_faction_no",slot_faction_party_map_banner),
 	# rohan gets somewhat random flags, for now (mtarini)

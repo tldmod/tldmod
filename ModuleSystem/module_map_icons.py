@@ -24,11 +24,12 @@ avatar_scale = 0.15
 tld_scale = 0.5
 
 map_icons = map_icons_scribbler + [
+
   ("player",0,"player", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("player_horseman",0,"player_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("gray_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("generic_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 #  ("vaegir_knight",0,"knight_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("flagbearer_a",0,"flagbearer_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  #("flagbearer_a",0,"flagbearer_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 #  ("flagbearer_b",0,"flagbearer_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("peasant",0,"peasant_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   #("khergit",0,"khergit_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),
@@ -39,21 +40,42 @@ map_icons = map_icons_scribbler + [
 #TLD army icons begin
   ("brigand",0,"brigand", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 
-  ("dunland_captain",0,"dunland_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("dunlander",0,"dunlander", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  # combined icons: used for HOSTS and WAR PARTIES 
+  # ATTENTION: please keep them in the same order as factions! 
+  ("knight_gondo_trot_x3",0,"knight_gondo_trot_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("dwarf_x3",0,"dwarf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("knight_rohan_x3",0,"knight_rohan_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("uruk_x4",0,"uruk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),  # moria
+  ("wargrider_walk_x4",0,"wargrider_walk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("lorien_elf_b_x3",0,"lorien_elf_b_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("rivendell_elf_x3",0,"rivendell_elf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("mirkwood_elf_x3",0,"mirkwood_elf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("generic_knight_x3",0,"generic_knight_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0), # dale: TODO: better icon needed
+  ("harad_horseman_x3",0,"harad_horseman_x3", avatar_scale,snd_gallop, 0.15, 0.173, 0),
+  ("easterling_horseman_x3",0,"easterling_horseman_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0), # rhur  TODO: better icon needed
+  ("cataphract_x3",0,"cataphract_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0), # easeterlings ( khand)
+  ("umbar_corsair_x3",0,"umbar_corsair_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("orc_tribal_x4",0,"orc_tribal_x4", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0), # moria
+  ("orc_x4",0,"orc_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),  # guldur 
+  ("theoden_x3",0,"theoden_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),  # gundabad (**ordeirng exception** -- will use tribal orc x4)
   ("dunlander_x3",0,"dunlander_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("dunlander",0,"dunlander", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0), # beorn (**ordering exception**-- will use generic x3) , TODO: better icon needed
+  # combined icons end
+  
+   # unused combined icons!
+   
+  #  ("uruk_x6",0,"uruk_x6", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  
+  
+  ("dunland_captain",0,"dunland_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 
   ("easterling_horseman",0,"easterling_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("easterling_horseman_x3",0,"easterling_horseman_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("cataphract",0,"cataphract", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("cataphract_x3",0,"cataphract_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("harad_horseman",0,"harad_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),
-  ("harad_horseman_x3",0,"harad_horseman_x3", avatar_scale,snd_gallop, 0.15, 0.173, 0),
   ("isengard_captain",0,"isengard_captain", avatar_scale,snd_gallop, 0.15, 0.173, 0),
   
   ("umbar_captain",0,"umbar_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("umbar_corsair",0,"umbar_corsair", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("umbar_corsair_x3",0,"umbar_corsair_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
  
   ("footman_gondor",0,"footman_gondor", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("footman_lamedon",0,"footman_lamedon", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
@@ -63,45 +85,33 @@ map_icons = map_icons_scribbler + [
 
   ("knight_dolamroth",0,"knight_dolamroth", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   #("knight_gondo_trot",0,"knight_gondo_trot", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("knight_gondo_trot_x3",0,"knight_gondo_trot_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("knight_gondor",0,"knight_gondor", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("lamedon_horseman",0,"lamedon_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("knight_rivendell",0,"knight_rivendell", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("knight_rohan",0,"knight_rohan", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("knight_rohan_x3",0,"knight_rohan_x3", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 #  ("knight_rohan_x5",0,"knight_rohan_x5", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("theoden_x5",0,"theoden_x5", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 
   ("dwarf",0,"dwarf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("dwarf_x3",0,"dwarf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
   ("lorien_elf_a",0,"lorien_elf_a", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("lorien_elf_b",0,"lorien_elf_b", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("lorien_elf_b_x3",0,"lorien_elf_b_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("mirkwood_elf",0,"mirkwood_elf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("mirkwood_elf_x3",0,"mirkwood_elf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("dunadan_horseman",0,"dunadan_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("rivendell_elf",0,"rivendell_elf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("rivendell_elf_x3",0,"rivendell_elf_x3", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
   ("mordor_captain",0,"mordor_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("pikeman_isengard",0,"pikeman_isengard", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
 
   ("orc",0,"orc", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_isengard",0,"orc_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("orc_x4",0,"orc_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 #  ("orc_x6",0,"orc_x6", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_tribal",0,"orc_tribal", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
-  ("orc_tribal_x4",0,"orc_tribal_x4", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   #("wargrider_furshield_run",0,"wargrider_furshield_run", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("wargrider_run",0,"wargrider_run", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   #("wargrider_walk",0,"wargrider_walk", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0), # no need
-  ("wargrider_walk_x4",0,"wargrider_walk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  
+                          
   ("uruk",0,"uruk", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("uruk_isengard",0,"uruk_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("uruk_x4",0,"uruk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-#  ("uruk_x6",0,"uruk_x6", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
   ("wild_troll",0,"wild_troll", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 

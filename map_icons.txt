@@ -189,10 +189,7 @@ player 0 player 0.150000 17 0.150000 0.173000 0.000000 0
 player_horseman 0 player_horseman 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-gray_knight 0 knight_a 0.150000 107 0.150000 0.173000 0.000000 0
-
-
-flagbearer_a 0 flagbearer_a 0.150000 107 0.150000 0.173000 0.000000 0
+generic_knight 0 knight_a 0.150000 107 0.150000 0.173000 0.000000 0
 
 
 peasant 0 peasant_a 0.150000 17 0.150000 0.173000 0.000000 0
@@ -204,31 +201,70 @@ axeman 0 bandit_a 0.150000 17 0.150000 0.173000 0.000000 0
 brigand 0 brigand 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-dunland_captain 0 dunland_captain 0.150000 107 0.150000 0.173000 0.000000 0
+knight_gondo_trot_x3 0 knight_gondo_trot_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-dunlander 0 dunlander 0.150000 17 0.150000 0.173000 0.000000 0
+dwarf_x3 0 dwarf_x3 0.150000 17 0.150000 0.173000 0.000000 0
 
 
-dunlander_x3 0 dunlander_x3 0.150000 17 0.150000 0.173000 0.000000 0
+knight_rohan_x3 0 knight_rohan_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-easterling_horseman 0 easterling_horseman 0.150000 107 0.150000 0.173000 0.000000 0
+uruk_x4 0 uruk_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+wargrider_walk_x4 0 wargrider_walk_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+lorien_elf_b_x3 0 lorien_elf_b_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+rivendell_elf_x3 0 rivendell_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+mirkwood_elf_x3 0 mirkwood_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+generic_knight_x3 0 generic_knight_x3 0.150000 107 0.150000 0.173000 0.000000 0
+
+
+harad_horseman_x3 0 harad_horseman_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
 easterling_horseman_x3 0 easterling_horseman_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-cataphract 0 cataphract 0.150000 107 0.150000 0.173000 0.000000 0
-
-
 cataphract_x3 0 cataphract_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
+umbar_corsair_x3 0 umbar_corsair_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_tribal_x4 0 orc_tribal_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+orc_x4 0 orc_x4 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+theoden_x3 0 theoden_x3 0.150000 107 0.150000 0.173000 0.000000 0
+
+
+dunlander_x3 0 dunlander_x3 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+dunlander 0 dunlander 0.150000 17 0.150000 0.173000 0.000000 0
+
+
+dunland_captain 0 dunland_captain 0.150000 107 0.150000 0.173000 0.000000 0
+
+
+easterling_horseman 0 easterling_horseman 0.150000 107 0.150000 0.173000 0.000000 0
+
+
+cataphract 0 cataphract 0.150000 107 0.150000 0.173000 0.000000 0
+
+
 harad_horseman 0 harad_horseman 0.150000 107 0.150000 0.173000 0.000000 0
-
-
-harad_horseman_x3 0 harad_horseman_x3 0.150000 107 0.150000 0.173000 0.000000 0
 
 
 isengard_captain 0 isengard_captain 0.150000 107 0.150000 0.173000 0.000000 0
@@ -238,9 +274,6 @@ umbar_captain 0 umbar_captain 0.150000 107 0.150000 0.173000 0.000000 0
 
 
 umbar_corsair 0 umbar_corsair 0.150000 17 0.150000 0.173000 0.000000 0
-
-
-umbar_corsair_x3 0 umbar_corsair_x3 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 footman_gondor 0 footman_gondor 0.150000 17 0.150000 0.173000 0.000000 0
@@ -261,9 +294,6 @@ ithilien_ranger 0 ithilien_ranger 0.150000 17 0.150000 0.173000 0.000000 0
 knight_dolamroth 0 knight_dolamroth 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-knight_gondo_trot_x3 0 knight_gondo_trot_x3 0.150000 107 0.150000 0.173000 0.000000 0
-
-
 knight_gondor 0 knight_gondor 0.150000 107 0.150000 0.173000 0.000000 0
 
 
@@ -276,16 +306,7 @@ knight_rivendell 0 knight_rivendell 0.150000 107 0.150000 0.173000 0.000000 0
 knight_rohan 0 knight_rohan 0.150000 107 0.150000 0.173000 0.000000 0
 
 
-knight_rohan_x3 0 knight_rohan_x3 0.150000 107 0.150000 0.173000 0.000000 0
-
-
-theoden_x5 0 theoden_x5 0.150000 107 0.150000 0.173000 0.000000 0
-
-
 dwarf 0 dwarf 0.150000 17 0.150000 0.173000 0.000000 0
-
-
-dwarf_x3 0 dwarf_x3 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 lorien_elf_a 0 lorien_elf_a 0.150000 17 0.150000 0.173000 0.000000 0
@@ -294,22 +315,13 @@ lorien_elf_a 0 lorien_elf_a 0.150000 17 0.150000 0.173000 0.000000 0
 lorien_elf_b 0 lorien_elf_b 0.150000 17 0.150000 0.173000 0.000000 0
 
 
-lorien_elf_b_x3 0 lorien_elf_b_x3 0.150000 17 0.150000 0.173000 0.000000 0
-
-
 mirkwood_elf 0 mirkwood_elf 0.150000 17 0.150000 0.173000 0.000000 0
-
-
-mirkwood_elf_x3 0 mirkwood_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 dunadan_horseman 0 dunadan_horseman 0.150000 107 0.150000 0.173000 0.000000 0
 
 
 rivendell_elf 0 rivendell_elf 0.150000 17 0.150000 0.173000 0.000000 0
-
-
-rivendell_elf_x3 0 rivendell_elf_x3 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 mordor_captain 0 mordor_captain 0.150000 107 0.150000 0.173000 0.000000 0
@@ -324,28 +336,16 @@ orc 0 orc 0.150000 17 0.150000 0.173000 0.000000 0
 orc_isengard 0 orc_isengard 0.150000 17 0.150000 0.173000 0.000000 0
 
 
-orc_x4 0 orc_x4 0.150000 17 0.150000 0.173000 0.000000 0
-
-
 orc_tribal 0 orc_tribal 0.150000 17 0.150000 0.173000 0.000000 0
 
 
-orc_tribal_x4 0 orc_tribal_x4 0.150000 17 0.150000 0.173000 0.000000 0
-
-
 wargrider_run 0 wargrider_run 0.150000 107 0.150000 0.173000 0.000000 0
-
-
-wargrider_walk_x4 0 wargrider_walk_x4 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 uruk 0 uruk 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 uruk_isengard 0 uruk_isengard 0.150000 17 0.150000 0.173000 0.000000 0
-
-
-uruk_x4 0 uruk_x4 0.150000 17 0.150000 0.173000 0.000000 0
 
 
 wild_troll 0 wild_troll 0.150000 17 0.150000 0.173000 0.000000 0
