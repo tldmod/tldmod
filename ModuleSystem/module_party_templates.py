@@ -99,7 +99,7 @@ party_templates = [
 ("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_veteran_skirmisher,1,1),(trp_easterling_horseman,2,4),(trp_easterling_rider,3,6)]), #33-57 fast and capable
 ("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_bolg_clan_rider,1,1),(trp_warg_rider_of_moria,2,5),(trp_wolf_rider_of_moria,3,6)]), #27-51 fast
 ("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_orc_of_guldur,3,4),(trp_orc_snaga_of_guldur,8,12)]), #32-61
-("gundabad_scouts","Gundabad Scouts",icon_wargrider_furshield_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_goblin_north_clan_rider,1,1),(trp_warg_rider_gundabad,2,5),(trp_goblin_rider_gundabad,4,7)]), #30-54 fast
+("gundabad_scouts","Gundabad Scouts",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_goblin_north_clan_rider,1,1),(trp_warg_rider_gundabad,2,5),(trp_goblin_rider_gundabad,4,7)]), #30-54 fast
 ("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,1),(trp_rhun_swift_horseman,2,5),(trp_rhun_horse_scout,4,7)]), #34-64 fast and capable
  
 ####TLD Raiders

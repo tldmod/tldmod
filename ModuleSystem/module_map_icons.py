@@ -93,7 +93,7 @@ map_icons = map_icons_scribbler + [
 #  ("orc_x6",0,"orc_x6", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_tribal",0,"orc_tribal", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_tribal_x4",0,"orc_tribal_x4", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
-  ("wargrider_furshield_run",0,"wargrider_furshield_run", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  #("wargrider_furshield_run",0,"wargrider_furshield_run", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("wargrider_run",0,"wargrider_run", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   #("wargrider_walk",0,"wargrider_walk", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0), # no need
   ("wargrider_walk_x4",0,"wargrider_walk_x4", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
