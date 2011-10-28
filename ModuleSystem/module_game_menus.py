@@ -7662,17 +7662,16 @@ game_menus = [
 
 ("premutiny",0,"none","none", #dummy menu for showing orc pretender pre-mutiny dialog
    [(try_begin),
-		(eq, "$party_meeting", 3),
+		(eq,"$mutiny_stage",0), # warning
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
 	(else_try),
-		(assign, "$party_meeting", 0),
 		(change_screen_map),
 	(try_end),
     ],[]
 ),
 ("mutiny",0,"{s1}","none",
    [(try_begin),
-		(eq, "$party_meeting", -1),
+		(eq,"$mutiny_stage",5), # fight lost
 		(str_store_string, s1, "@^^^You lost your fight agains the mutinee! ^Seems like your orcs have a new commander now."),
 		(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
 		(try_for_range, ":stack_no", 0, ":num_stacks"), # remove all orcs
@@ -7683,14 +7682,16 @@ game_menus = [
 			(party_stack_get_size, reg1, "p_main_party",":stack_no"),
 			(party_remove_members, "p_main_party", ":stack_troop", reg1),
 		(try_end),
+		(assign,"$mutiny_stage",0),
     (else_try),
-		(eq, "$party_meeting", 1),
+		(eq,"$mutiny_stage",4), #fight won
 		(str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
+		(assign,"$mutiny_stage",0),
     (else_try),
-		(eq, "$party_meeting", 0),
+		(eq,"$mutiny_stage",2), # pre-fight dialog begin
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
 	(else_try),
-		(eq, "$party_meeting", 2),
+		(eq,"$mutiny_stage",3), # pre-fight dialog ended and fight on the way
 		(modify_visitors_at_site, "scn_duel_scene"),
 		(reset_visitors),
 		(set_jump_entry, 0), 

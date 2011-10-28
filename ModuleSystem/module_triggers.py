@@ -1326,7 +1326,7 @@ triggers = [
 		(party_stack_get_size, reg1, "p_main_party",":stack_no"),
 		(val_add, ":orcs", reg1),
 	(try_end),
-	(store_skill_level, reg1, "skl_persuasion", "trp_player"), # persuasion neutralizes 5*skill orcs
+	(store_skill_level, reg1, "skl_persuasion", "trp_player"), # persuasion neutralizes 5 orcs per level
 	(val_mul, reg1, 5),
 	(val_sub, ":orcs", reg1),
 	(troop_get_type, reg1, "trp_player"),
@@ -1336,11 +1336,16 @@ triggers = [
 	(gt, reg1, 15), # for big enough party
 	(val_div, reg1, ":orcs"),
 	(lt, reg1, 2), # more than 50% of "adjusted orcs" in party?
-	(store_random_in_range, reg1, 0, 10),(lt, reg1, 3), #50% mutiny chance
+	(store_random_in_range, reg1, 0, 10),(lt, reg1, 2), #20% mutiny chance
 	],[
 	(assign, "$mutiny_counter",108), # 4.3 days between uprisings
-	(assign, "$party_meeting", 0),
-    (jump_to_menu,"mnu_mutiny"),
+	(try_begin),
+		(eq,"$mutiny_stage",0),
+	    (jump_to_menu,"mnu_premutiny"), #fire up warning dialog
+	(else_try),
+		(assign,"$mutiny_stage",2), #fire up pre_fight dialog
+	    (jump_to_menu,"mnu_mutiny"),
+	(try_end),
    ]),
 
 ]

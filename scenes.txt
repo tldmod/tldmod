@@ -1,5 +1,5 @@
 scenesfile version 1
- 240
+ 241
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -960,3 +960,7 @@ scn_dol_guldur_siege dol_guldur_siege 256 none none 0.000000 0.000000 100.000000
   0 
   0 
  outer_terrain_forest 
+scn_umbar_camp_siege umbar_camp_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000         0x3002898a80051d440000154e000026f300004e2d 
+  0 
+  0 
+ 0 

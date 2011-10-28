@@ -238,3 +238,4 @@ scn_ford_small3 = 236
 scn_erebor_siege = 237
 scn_gundabad_siege = 238
 scn_dol_guldur_siege = 239
+scn_umbar_camp_siege = 240

@@ -1392,11 +1392,11 @@ mission_templates = [ # not used in game
 		(try_begin),#If the battle is won, missions ends.
 			(num_active_teams_le,2),
 			(neg|main_hero_fallen, 0),
-			(assign, "$party_meeting", 1),
+			(assign, "$mutiny_stage", 4),
 			(finish_mission),
 		(else_try),
 			(main_hero_fallen),
-			(assign, "$party_meeting", -1),
+			(assign, "$mutiny_stage", 5),
 			(finish_mission),
 		(else_try),
 			(display_message, "@Cannot leave now."),
@@ -1426,11 +1426,11 @@ mission_templates = [ # not used in game
 	(1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
 		(try_begin),
 			(main_hero_fallen),
-			(assign, "$party_meeting", -1),
+			(assign, "$mutiny_stage", 5),
 			(finish_mission),
 		(else_try),
 			(num_active_teams_le,2),
-			(assign, "$party_meeting", 1),
+			(assign, "$mutiny_stage", 4),
 			(display_message,"str_msg_battle_won"),
 		(try_end)]),
 	
