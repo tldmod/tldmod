@@ -918,25 +918,25 @@ itemsfile version 2
  itm_lorien_sword_c Lorien_War_Sword Lorien_War_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4259843 9223635954298781951 394 156672 1.500000 100 0 0 0 0 30720 99 0 92 0 277 30
 0
 
- itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 1  lorien_archer 0  16842765 0 454 234881024 8.000000 100 0 22 10 0 0 0 0 0 0 0 0
+ itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 1  lorien_archer 0  16842765 0 500 234881024 8.000000 100 0 22 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_a Lorien_Infantry_Armor Lorien_Infantry_Armor 1  lorien_infantry_01 0  16842765 0 454 234881024 12.000000 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_a Lorien_Infantry_Armor Lorien_Infantry_Armor 1  lorien_infantry_01 0  16842765 0 800 234881024 12.000000 100 0 30 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_b Lorien_Heavy_Infantry_Armor Lorien_Heavy_Infantry_Armor 1  lorien_vetinfantry_01 0  16842765 0 454 234881024 12.000000 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_b Lorien_Heavy_Infantry_Armor Lorien_Heavy_Infantry_Armor 1  lorien_vetinfantry_01 0  16842765 0 1000 234881024 12.000000 100 0 30 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_c Lorien_Royal_Archer_Armor Lorien_Royal_Archer_Armor 1  lorien_royalarcher_01 0  16842765 0 454 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_c Lorien_Royal_Archer_Armor Lorien_Royal_Archer_Armor 1  lorien_royalarcher_01 0  16842765 0 1500 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_royalswordsman_01 0  16842765 0 454 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_royalswordsman_01 0  16842765 0 1500 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_warden_cloak 0  16842765 0 454 234881024 12.000000 100 0 28 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_warden_cloak 0  16842765 0 700 234881024 12.000000 100 0 28 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_eliteinfantry_01 0  16842765 0 454 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_eliteinfantry_01 0  16842765 0 2000 234881024 12.000000 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 1500 234881024 1.000000 100 0 0 28 0 0 0 0 0 0 0 0
@@ -1829,10 +1829,10 @@ itemsfile version 2
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 286870 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
 0
 
- itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  140869634 4222124851987200 200 271496 2.000000 100 0 0 0 0 10240 100 0 132 0 276 522
+ itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  140869636 4222124851987200 200 271496 2.000000 100 0 0 0 0 10240 100 0 132 0 276 522
 0
 
- itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  407207940 4222124851987200 300 271496 3.000000 100 0 0 0 0 16384 81 0 190 0 282 528
+ itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  138772484 4222124851987200 300 271496 3.000000 100 0 0 0 0 16384 81 0 190 0 282 528
 0
 
  itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528

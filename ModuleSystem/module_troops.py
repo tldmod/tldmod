@@ -737,7 +737,7 @@ troops = [
    [itm_gondor_ranger_sword,itm_ithilien_arrows,itm_gondor_bow,itm_gon_ranger_cloak,itm_gondor_ranger_hood,itm_gondor_light_greaves,],
       attr_tier_5,wp_tier_5,knows_common|knows_pathfinding_2|knows_riding_1|knows_athletics_5|knows_power_draw_3|knows_power_strike_4|knows_ironflesh_4,gondor_face1,gondor_face2],
 ["master_ranger_of_ithilien","Master_Ranger_of_Ithilien","Master_Rangers_of_Ithilien",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
-   [itm_ithilien_arrows,itm_gondor_bow,itm_gon_ranger_skirt,itm_gondor_ranger_hood_mask,itm_gondor_light_greaves,],
+   [itm_gondor_ranger_sword,itm_ithilien_arrows,itm_gondor_bow,itm_gon_ranger_skirt,itm_gondor_ranger_hood_mask,itm_gondor_light_greaves,],
       attr_tier_6,wp_tier_6,knows_common|knows_pathfinding_3|knows_riding_1|knows_athletics_6|knows_power_draw_4|knows_power_strike_5|knows_ironflesh_4,gondor_face1,gondor_face3],
 ["ithilien_leader","Captain_of_Ithilien_Rangers","Captains_of_Ithilien_Rangers",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_boots,0,0,fac_gondor,
    [itm_gondor_ranger_sword,itm_ithilien_arrows,itm_gondor_bow,itm_gon_ranger_skirt,itm_gondor_light_greaves,],
