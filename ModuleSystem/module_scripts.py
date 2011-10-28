@@ -12509,16 +12509,16 @@ scripts = [
 		(assign, ":problem", 0),
 		(try_begin),(eq, ":type", itp_type_body_armor), (assign, ":problem", imod_battered),
 		(else_try), (eq, ":type", itp_type_foot_armor), (assign, ":problem", imod_ragged),
-		(else_try), (eq, ":type", itp_type_head_armor), (assign, ":problem", imod_battered),
-		(else_try), (eq, ":type", itp_type_hand_armor), (assign, ":problem", imod_battered),
-		(else_try), (eq, ":type", itp_type_horse  )   , (assign, ":problem", imod_swaybacked),
+		(else_try), (eq, ":type", itp_type_head_armor), (assign, ":problem", imod_battered), #WTF?
+		(else_try), (eq, ":type", itp_type_hand_armor), (assign, ":problem", imod_battered), #WTF?
+		(else_try), (eq, ":type", itp_type_horse  )   , (assign, ":problem", imod_swaybacked), #WTF?
 		(else_try), (eq, ":type", itp_type_one_handed_wpn), (assign, ":problem", imod_cracked),
 		(else_try), (eq, ":type", itp_type_two_handed_wpn), (assign, ":problem", imod_cracked),
 		(else_try), (eq, ":type", itp_type_polearm), (assign, ":problem", imod_cracked),
-		(else_try), (eq, ":type", itp_type_arrows), (assign, ":problem", imod_bent),
-		(else_try), (eq, ":type", itp_type_bolts), (assign, ":problem", imod_bent),
+		(else_try), (eq, ":type", itp_type_arrows), (assign, ":problem", imod_bent), #WTF?
+		(else_try), (eq, ":type", itp_type_bolts), (assign, ":problem", imod_bent), #WTF?
 		(else_try), (eq, ":type", itp_type_shield), (assign, ":problem", imod_battered),
-		(else_try), (eq, ":type", itp_type_bow), (assign, ":problem", imod_cracked),
+		(else_try), (eq, ":type", itp_type_bow), (assign, ":problem", imod_cracked), #WTF?
 		(else_try), (eq, ":type", itp_type_thrown), (assign, ":problem", imod_bent),
 		(try_end),
 		(troop_add_item, "trp_player", ":item_id", ":problem"),

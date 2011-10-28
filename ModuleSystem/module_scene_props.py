@@ -593,8 +593,9 @@ scene_props = [
 ("banner_f17", 0, "banner_f17", "0", []),
 ("banner_f18", 0, "banner_f18", "0", []),
 ("banner_f19", 0, "banner_f19", "0", []),
-("banner_f20", 0, "banner_f20", "0", []),
 ("banner_f21", 0, "b_arms_los", "0", []), #lossarnach
+("banner_f20", 0, "banner_f20", "0", []),
+
 
 ("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
 ("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),

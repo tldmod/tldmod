@@ -291,6 +291,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("banner_f17", 0, "banner_f17", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_f18", 0, "banner_f18", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_f19", 0, "banner_f19", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_f21", 0, "b_arms_los", 0, 0, 0, -90, 0, 0, 1, 1, 1), # lossarnach
   ("banner_f20", 0, "banner_f20", 0, 0, 0, -90, 0, 0, 1, 1, 1),
 
 
@@ -355,6 +356,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("arms_f17", 0, "banner_f17", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("arms_f18", 0, "banner_f18", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("arms_f19", 0, "banner_f19", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("arms_f21", 0, "b_arms_los", 0, 0, 0, -90, 0, 0, 1, 1, 1), # lossarnach
   ("arms_f20", 0, "banner_f20", 0, 0, 0, -90, 0, 0, 1, 1, 1),
 
   ("banners_default_a", 0, "banners_default_a", 0, 0, 0, -90, 0, 0, 1, 1, 1),
