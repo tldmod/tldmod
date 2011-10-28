@@ -12464,6 +12464,7 @@ scripts = [
 # script to start the game as one... troop -- mtarini
 # (copys that troop stats, items, factions, race, etc, into player)
 ("start_as_one",[
+	(set_show_messages, 0),
     (store_script_param, ":troop", 1),
 	(assign, "$player_current_troop_type", ":troop"),
 	# copy faction
@@ -12482,42 +12483,53 @@ scripts = [
 	# copy items
 	(troop_clear_inventory, "trp_player"),
 	(troop_get_inventory_capacity, ":inv_cap", ":troop"),
-	(assign,":prev_type",itp_type_horse),
+	#(assign,":prev_type",itp_type_horse),
     (try_for_range, ":i_slot", 0, ":inv_cap"),
         (troop_get_inventory_slot, ":item_id", ":troop", ":i_slot"),
         (ge, ":item_id", 0),
 		(item_get_type,  ":type", ":item_id"),
-		(neg|is_between, ":type", itp_type_horse, itp_type_body_armor),#never give mounts, weapons
-		(try_begin), # only one item per type! (one armor, one weapon,,,)
-			(store_random_in_range, ":die_roll", 0, 2), 
-			(this_or_next|neq, ":type", ":prev_type"), # if first item of that type... (relies on items ordered inside tier 1 troops' inventories)
-			(lt, ":die_roll", 1), # 50% of time, replace old item with new item 
-			(try_begin),
-				(eq, ":type", itp_type_body_armor),
-				(troop_set_inventory_slot, "trp_player", ek_body,":item_id"),
-				(troop_set_inventory_slot_modifier,"trp_player", ek_body, imod_battered), #fuckup starting items a bit
-			 (else_try),
-				(eq, ":type", itp_type_foot_armor),
-				(troop_set_inventory_slot, "trp_player", ek_foot,":item_id"),
-				(troop_set_inventory_slot_modifier,  "trp_player", ek_foot, imod_ragged),
-			 (else_try),
-				(troop_set_inventory_slot, "trp_player", ":i_slot", ":item_id"),
-			(try_end),
+		#(neg|is_between, ":type", itp_type_horse, itp_type_body_armor),#never give mounts, weapons
+		# (try_begin), # only one item per type! (one armor, one weapon,,,)
+			
+			#(this_or_next|neq, ":type", ":prev_type"), # if first item of that type... (relies on items ordered inside tier 1 troops' inventories)
+			#(store_random_in_range, ":die_roll", 0, 2),  (lt, ":die_roll", 1), # 50% of time, replace old item with new item 
+			# (try_begin),
+				# (eq, ":type", itp_type_body_armor),
+				# (troop_set_inventory_slot, "trp_player", ek_body,":item_id"),
+				# (troop_set_inventory_slot_modifier,"trp_player", ek_body, imod_battered), #fuckup starting items a bit
+			# (else_try),
+				# (eq, ":type", itp_type_foot_armor),
+				# (troop_set_inventory_slot, "trp_player", ek_foot,":item_id"),
+				# (troop_set_inventory_slot_modifier,  "trp_player", ek_foot, imod_ragged),
+			# (else_try),
+				# (troop_set_inventory_slot, "trp_player", ":i_slot", ":item_id"),
+			# (try_end),
+		# (try_end),
+		# (assign,":prev_type",":type"), #store previous item type
+		(assign, ":problem", 0),
+		(try_begin),(eq, ":type", itp_type_body_armor), (assign, ":problem", imod_battered),
+		(else_try), (eq, ":type", itp_type_foot_armor), (assign, ":problem", imod_ragged),
+		(else_try), (eq, ":type", itp_type_head_armor), (assign, ":problem", imod_battered),
+		(else_try), (eq, ":type", itp_type_hand_armor), (assign, ":problem", imod_battered),
+		(else_try), (eq, ":type", itp_type_horse  )   , (assign, ":problem", imod_swaybacked),
+		(else_try), (eq, ":type", itp_type_one_handed_wpn), (assign, ":problem", imod_cracked),
+		(else_try), (eq, ":type", itp_type_two_handed_wpn), (assign, ":problem", imod_cracked),
+		(else_try), (eq, ":type", itp_type_polearm), (assign, ":problem", imod_cracked),
+		(else_try), (eq, ":type", itp_type_arrows), (assign, ":problem", imod_bent),
+		(else_try), (eq, ":type", itp_type_bolts), (assign, ":problem", imod_bent),
+		(else_try), (eq, ":type", itp_type_shield), (assign, ":problem", imod_battered),
+		(else_try), (eq, ":type", itp_type_bow), (assign, ":problem", imod_cracked),
+		(else_try), (eq, ":type", itp_type_thrown), (assign, ":problem", imod_bent),
 		(try_end),
-		(assign,":prev_type",":type"), #store previous item type
+		(troop_add_item, "trp_player", ":item_id", ":problem"),
 	(try_end),
 	# give basic weapon
-	(try_begin), 
-		(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-		(troop_add_item, "trp_player", "itm_shortened_spear", imod_bent),
-	(else_try),
-		(troop_add_item, "trp_player", "itm_wood_club", imod_cracked),
-	(try_end),
-	(troop_equip_items, "trp_player"),
-	# clear nonequipped inventory
-	(try_for_range, ":i_slot", 9, ":inv_cap"), 
-		(troop_set_inventory_slot, "trp_player", -1, 0),
-	(try_end),
+	# (try_begin), 
+		# (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+		# (troop_add_item, "trp_player", "itm_shortened_spear", imod_bent),
+	# (else_try),
+		# (troop_add_item, "trp_player", "itm_wood_club", imod_cracked),
+	# (try_end),
 	# copy stats: attrib
     (try_for_range, ":i", 0, 4),
 	  (store_attribute_level, ":x",":troop",":i"),
@@ -12540,6 +12552,40 @@ scripts = [
 	  #(val_div, ":x", 4), # weapon proficiencies are too high!
 	  #(val_min, ":x", 60),
 	  (troop_raise_proficiency,  "trp_player",":i",":x"), 
+	(try_end),
+
+	(troop_equip_items, "trp_player"),
+	# clear nonequipped inventory
+	(try_for_range, ":i_slot", 9, ":inv_cap"), 
+		(troop_set_inventory_slot, "trp_player", ":i_slot", -1),
+	(try_end),
+	
+	# clear any H2H weapon except one
+	(store_random_in_range, ":die_roll", 0, 2),
+	(assign, ":weapon_found",0),
+	(try_for_range, ":i", 0, 9), 
+		(try_begin),(lt, ":die_roll", 1), (store_sub, ":j", 8, ":i"),(else_try), (assign,":j",":i"),(end_try), #50% chance of reverse order
+		(troop_get_inventory_slot, ":item_id", "trp_player", ":j"),
+		(ge, ":item_id", 0),
+		(item_get_type,  ":type", ":item_id"),
+		(this_or_next|eq, ":type", itp_type_one_handed_wpn), 
+		(this_or_next|eq, ":type", itp_type_two_handed_wpn), 
+		(eq, ":type", itp_type_polearm), 
+		(try_begin),(eq,":weapon_found",1),(troop_set_inventory_slot, "trp_player", ":j", -1),(try_end),
+		(assign, ":weapon_found",1),
+	(try_end),
+	
+	# give appropriate food for race/faction
+	(try_begin),(is_between, ":race", tf_orc_begin, tf_orc_end),
+		(troop_add_item, "trp_player", "itm_maggoty_bread"),
+	(else_try),(is_between,  ":race", tf_elf_begin, tf_elf_end), 
+		(troop_add_item, "trp_player", "itm_lembas"),
+	(else_try),(this_or_next|eq,":fac", "fac_dale"),(this_or_next|eq,":fac","fac_umbar"),(eq,":fac","fac_beorn"), 
+		(troop_add_item, "trp_player", "itm_smoked_fish"),
+	(else_try),(faction_slot_eq,":fac", slot_faction_side, faction_side_good),
+		(troop_add_item, "trp_player", "itm_cram"),
+	(else_try),
+		(troop_add_item, "trp_player", "itm_dried_meat"),
 	(try_end),
 ]),
 

@@ -53,29 +53,29 @@ code_to_set_city_background = [
 # (a common code snippet that is used twice in the add troop cheat menu... ) -- mtarini
 code_to_set_search_string = [
   (set_background_mesh, "mesh_ui_default_menu_window"),
-  (try_begin), (ge,"$cheat_menu_add_troop_search_fac", tmp_menu_max_fac+1), 
+  (try_begin), (ge,"$menu_select_any_troop_search_fac", tmp_menu_max_fac+1), 
 	(str_store_string, s10, "@any"), 
   (else_try),
-	(str_store_faction_name, s10, "$cheat_menu_add_troop_search_fac"), 
+	(str_store_faction_name, s10, "$menu_select_any_troop_search_fac"), 
   (try_end),
   (try_begin)
   ]+concatenate_scripts([[
-	(eq,"$cheat_menu_add_troop_search_race",x),
+	(eq,"$menu_select_any_troop_search_race",x),
 	(str_store_string, s13, race_names[x]),
   (else_try),
   ]for x in range(len(race_names)) ])+[ 
 	(str_store_string, s13, "@any"), 
   (try_end),
-  (try_begin), (eq,"$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1), 
+  (try_begin), (eq,"$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), 
 	(str_store_string, s11, "@any"), 
   (else_try),
-	(assign, reg11, "$cheat_menu_add_troop_search_tier"),
+	(assign, reg11, "$menu_select_any_troop_search_tier"),
 	(str_store_string, s11, "@{reg11}0 - {reg11}9"), 
   (try_end),
   
-  (try_begin), (eq,"$cheat_menu_add_troop_search_hero", 0), 
+  (try_begin), (eq,"$menu_select_any_troop_search_hero", 0), 
 	(str_store_string, s12, "@Regular troops only"), 
-  (else_try),  (eq,"$cheat_menu_add_troop_search_hero", 1), 
+  (else_try),  (eq,"$menu_select_any_troop_search_hero", 1), 
 	(str_store_string, s12, "@Heroes only"), 
   (else_try),  
 	(str_store_string, s12, "@Regulars and Heroes"), 
@@ -125,10 +125,11 @@ game_menus = [
 		(call_script, "script_tld_party_relocate_near_party", "p_main_party", reg20, 5), # MV: was 16km - too far
 	
 		# initialization of "search troop" menu (only once)  mtarini
-		(assign, "$cheat_menu_add_troop_search_race", len(race_names)),  # any race
-		(assign, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1), # any tier
-		(assign, "$cheat_menu_add_troop_search_fac", "$players_kingdom"), # player's kingdom
-		(assign, "$cheat_menu_add_troop_search_hero", 0),	
+		(assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race
+		(assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
+		(assign, "$menu_select_any_troop_search_fac", "$players_kingdom"), # player's kingdom
+		(assign, "$menu_select_any_troop_search_hero", 0),	
+
 		(assign, "$cheat_imposed_quest", -1),	
 
 		(call_script, "script_determine_what_player_looks_like"), # for drawings meshes
@@ -138,7 +139,7 @@ game_menus = [
     (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
     [ ("continue",[],"__________Go forth upon you chosen path...",
-       [(troop_add_item, "trp_player","itm_dried_meat",0),#  free food for everyone
+       [#(troop_add_item, "trp_player","itm_dried_meat",0),#  free food for everyone
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
 		(assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
@@ -186,6 +187,15 @@ game_menus = [
       (troop_set_slot, "trp_banner_background_color_array", 128, 0xFF2E3B10),
       (troop_set_slot, "trp_banner_background_color_array", 129, 0xFF425D7B),
       (troop_set_slot, "trp_banner_background_color_array", 130, 0xFF394608),
+	  
+	  # initailization (mtarini)
+      (assign, "$testbattle_team_a_num", 40),(assign, "$testbattle_team_a_troop", "trp_orc_of_isengard"),
+      (assign, "$testbattle_team_b_num", 10),(assign, "$testbattle_team_b_troop", "trp_gondor_swordsmen"),
+      (assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race
+	  (assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
+	  (assign, "$menu_select_any_troop_search_fac", "fac_gondor"), # player's kingdom
+	  (assign, "$menu_select_any_troop_search_hero", 0),	
+
 #	  (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
       ],
    [("custom_battle_scenario_1" ,[], "___________Skirmish, Gondor factions vs Harad_____.",
@@ -206,11 +216,15 @@ game_menus = [
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
+
+	("custom_battle_scenario_11",[],"____________Test Battles (Tune Balancing!)________.",
+		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
+
+		("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_11",[],"____________Test Troll Battle______________________.",
+	("custom_battle_scenario_11",[],"____________Test Troll Battles_____________________.",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("custom_battle_scenario_11",[],"____________Test Warg Battle_______________________.",
+	("custom_battle_scenario_11",[],"____________Test Warg Battles______________________.",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
 	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
@@ -796,6 +810,26 @@ game_menus = [
 	   #(set_visitors, 18, "trp_orc_snaga_of_isengard",				4),
 	   (str_store_string, s16, "@TEST: play wargs, many VS many"),
    (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
+		(eq, "$g_custom_battle_scenario", 26),
+		#(assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
+		#(assign, "$g_custom_battle_scene", "scn_random_scene_plain_small"),
+		(assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
+		#(modify_visitors_at_site, "$g_custom_battle_scene"),
+		#(assign, "$g_player_troop", "$testbattle_team_a_troop"),
+		#(set_player_troop, "$g_player_troop"),
+		
+	   (assign, "$g_player_troop", "trp_knight_3_6"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+	   
+		#(set_visitor, 0, "$g_player_troop"),
+
+		
+		(set_visitors, 5,"$testbattle_team_a_troop","$testbattle_team_a_num"),
+		(set_visitors, 16,"$testbattle_team_b_troop","$testbattle_team_b_num"),
+		(str_store_string, s16, "@TEST BATTLE: {reg10} {s10} vs {reg11} {s11}"),
+   (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
 		(eq, "$g_custom_battle_scenario", 9),
 		(assign, "$g_custom_battle_scene", "scn_quick_battle_random"),
 
@@ -926,10 +960,63 @@ game_menus = [
        (str_store_string, s1, "str_battle_lost"),
      (try_end),
 	],
-    [("continue",[],"Continue.",[(change_screen_quit),]),]
+    [("continue",[],"Continue.",[(try_begin),(eq,"$g_custom_battle_scenario",26),(jump_to_menu, "mnu_quick_battle_general_test"),(else_try),(change_screen_quit),(try_end)]),]
 ),
 
+
 ######################################
+#TLD Troll quick battle choser
+( "quick_battle_general_test",mnf_disable_all_keys,
+    "^^^Current battle: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}",
+    "none",
+    [ #(set_background_mesh, "mesh_draw_wild_troll"),
+	  (assign, reg10, "$testbattle_team_a_num"),
+	  (assign, reg11, "$testbattle_team_b_num"),
+	  (str_store_troop_name_by_count, s10, "$testbattle_team_a_troop",reg10),
+	  (str_store_troop_name_by_count, s11, "$testbattle_team_b_troop",reg11),
+	],
+   [
+	("A",[],"        +5 Team A", [(val_add, "$testbattle_team_a_num", 5),(val_clamp, "$testbattle_team_a_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
+	("B",[],"        -5 Team A", [(val_sub, "$testbattle_team_a_num", 5),(val_clamp, "$testbattle_team_a_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
+	("C",[],"        Select Troop A", [
+	   (store_troop_faction, "$menu_select_any_troop_search_fac", "$testbattle_team_a_troop"),
+	   (troop_get_type, "$menu_select_any_troop_search_race", "$testbattle_team_a_troop"),
+	   (assign, "$select_any_troop_nextmenu","mnu_quick_battle_general_test_select_a" ), 
+	   (assign, "$select_any_troop_add_selected_troops",0 ), 
+	   (jump_to_menu, "mnu_select_any_troop"),
+	]),
+	#("B",[],"_", []),
+	("A",[],"        +5 Team B", [(val_add, "$testbattle_team_b_num", 5),(val_clamp, "$testbattle_team_b_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
+	("B",[],"        -5 Team B", [(val_sub, "$testbattle_team_b_num", 5),(val_clamp, "$testbattle_team_b_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
+	("C",[],"        Select Troop B", [
+	   (store_troop_faction, "$menu_select_any_troop_search_fac", "$testbattle_team_b_troop"),
+	   (troop_get_type, "$menu_select_any_troop_search_race", "$testbattle_team_b_troop"),
+	   (assign, "$select_any_troop_nextmenu","mnu_quick_battle_general_test_select_b" ), 
+	   (assign, "$select_any_troop_add_selected_troops",0 ), 
+	   (jump_to_menu, "mnu_select_any_troop"),
+	]),
+	#("B",[],"_", []),
+	("B",[],"         Preset 1", [
+	          (assign, "$testbattle_team_b_num", 40),(assign, "$testbattle_team_b_troop", "trp_orc_of_isengard"),
+	          (assign, "$testbattle_team_a_num", 10),(assign, "$testbattle_team_a_troop", "trp_gondor_swordsmen")
+	]),
+	#("B",[],"_", []),
+	("F",[],"          START FIGHT!",
+		[(assign, "$g_custom_battle_scenario", 26),(jump_to_menu, "mnu_custom_battle_2"),]),
+    ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
+),
+
+("quick_battle_general_test_select_a",0,"_","none",[
+  (try_begin),(ge, "$select_any_troop_result", 0), (assign, "$testbattle_team_a_troop", "$select_any_troop_result"),(try_end),
+  (jump_to_menu, "mnu_quick_battle_general_test"),],[],
+),
+
+("quick_battle_general_test_select_b",0,"_","none",[
+  (try_begin),(ge, "$select_any_troop_result", 0), (assign, "$testbattle_team_b_troop", "$select_any_troop_result"),(try_end),
+  (jump_to_menu, "mnu_quick_battle_general_test"),],[],
+),
+
+
 #TLD Troll quick battle choser
 ( "quick_battle_troll",mnf_disable_all_keys,
     "^^^^^^^^Choose your troll scenario:",
@@ -3189,11 +3276,11 @@ game_menus = [
   ]),
   
 
-
   
-  ### ADD TROOPS CHEAT PART 1 (mtarini)
-  ("cheat_add_troops",0,
-  "Add troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}","none",
+  
+  ### A MENU TO SELECT ANY TROOP (mtarini)
+  ("select_any_troop",0,
+  "Select troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}","none",
   code_to_set_search_string+[
   (assign,"$tmp_menu_entry_n",0),
   (assign,"$tmp_menu_skipped",0),
@@ -3205,24 +3292,24 @@ game_menus = [
 		
 		(store_character_level, reg11, y),
 		(store_div, reg14, reg11, 10),
-		(this_or_next|eq, reg14, "$cheat_menu_add_troop_search_tier"),
-		(eq, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+1),
+		(this_or_next|eq, reg14, "$menu_select_any_troop_search_tier"),
+		(eq, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1),
 		
 		(assign, ":ok", 1),
-		(try_begin), (eq,"$cheat_menu_add_troop_search_hero", 0), 
+		(try_begin), (eq,"$menu_select_any_troop_search_hero", 0), 
 			(try_begin),(troop_is_hero, y), (assign, ":ok", 0),(try_end),	
-		(else_try),  (eq,"$cheat_menu_add_troop_search_hero", 1), 
+		(else_try),  (eq,"$menu_select_any_troop_search_hero", 1), 
 			(try_begin),(neg|troop_is_hero, y), (assign, ":ok", 0),(try_end),	
 		(try_end),		
 		(eq, ":ok", 1),
 		
 		(store_troop_faction, reg12, y),
-		(this_or_next|eq, reg12, "$cheat_menu_add_troop_search_fac"),
-		(eq, "$cheat_menu_add_troop_search_fac", tmp_menu_max_fac+1),
+		(this_or_next|eq, reg12, "$menu_select_any_troop_search_fac"),
+		(eq, "$menu_select_any_troop_search_fac", tmp_menu_max_fac+1),
 		
 		(troop_get_type, reg13, y),
-		(this_or_next|eq, reg13, "$cheat_menu_add_troop_search_race"),
-		(eq, "$cheat_menu_add_troop_search_race", len(race_names)),
+		(this_or_next|eq, reg13, "$menu_select_any_troop_search_race"),
+		(eq, "$menu_select_any_troop_search_race", len(race_names)),
 		
 		
 		(val_add,"$tmp_menu_skipped",1),
@@ -3231,56 +3318,59 @@ game_menus = [
 		(str_store_troop_name, s11, y),
 	 ],
 	 "{s11} (lvl:{reg11})",
-	 [(troop_join, y )]
+	 [ (try_begin), (eq, "$select_any_troop_add_selected_troops",1), (troop_join, y ),
+	   (else_try), (assign, "$select_any_troop_result" , y), (jump_to_menu, "$select_any_troop_nextmenu"), (try_end),
+	 ]
 	 )
   ]for y in range(5,tmp_max_troop+1) ])
   +[
-  ("prev_page" ,[],"[Prev Page]" ,[(val_sub, "$add_troop_menu_index", tmp_menu_steps),(val_max,  "$add_troop_menu_index", 0),(jump_to_menu, "mnu_cheat_add_troops"),]), 
-  ("next_page" ,[],"[Next Page]" ,[(val_add, "$add_troop_menu_index", tmp_menu_steps), (jump_to_menu, "mnu_cheat_add_troops"),]), 
-  ("opt" ,[],"[Search Option]" ,[(jump_to_menu, "mnu_cheat_add_troops_setup_search"),]), 
-  ("go_back"   ,[],"[Done]" ,[(jump_to_menu, "mnu_camp_cheat"),]), 
+  ("prev_page" ,[],"[Prev Page]" ,[(val_sub, "$add_troop_menu_index", tmp_menu_steps),(val_max,  "$add_troop_menu_index", 0),(jump_to_menu, "mnu_select_any_troop"),]), 
+  ("next_page" ,[],"[Next Page]" ,[(val_add, "$add_troop_menu_index", tmp_menu_steps), (jump_to_menu, "mnu_select_any_troop"),]), 
+  ("opt" ,[],"[Search Option]" ,[(jump_to_menu, "mnu_select_any_troop_setup_search"),]), 
+  ("go_back"   ,[ (eq, "$select_any_troop_add_selected_troops",1) ],"[Done]" ,[(jump_to_menu, "$select_any_troop_nextmenu"),]), 
+  ("go_back"   ,[ (eq, "$select_any_troop_add_selected_troops",0) ],"[Cancel]" ,[(assign, "$select_any_troop_result" , -1), (jump_to_menu, "$select_any_troop_nextmenu"),]), 
   ]),
   
   ### ADD TROOPS CHEAT PART 2 (mtarini)
-  ("cheat_add_troops_setup_search",0,
+  ("select_any_troop_setup_search",0,
   "Add troops: setup search parameters^^^Current parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}","none",
   code_to_set_search_string,
   [
   ("one" ,[],"[Change Tier]" ,[
-    (val_add, "$cheat_menu_add_troop_search_tier", 1),
-	(try_begin) , (ge, "$cheat_menu_add_troop_search_tier", tmp_menu_max_tier+2), (assign, "$cheat_menu_add_troop_search_tier", 0), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_add, "$menu_select_any_troop_search_tier", 1),
+	(try_begin) , (ge, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+2), (assign, "$menu_select_any_troop_search_tier", 0), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
   ("facup" ,[],"[Prev Faction]" ,[
-    (val_sub, "$cheat_menu_add_troop_search_fac", 1),
-	(try_begin) , (eq, "$cheat_menu_add_troop_search_fac", -1), (assign,"$cheat_menu_add_troop_search_fac", tmp_menu_max_fac+1), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_sub, "$menu_select_any_troop_search_fac", 1),
+	(try_begin) , (eq, "$menu_select_any_troop_search_fac", -1), (assign,"$menu_select_any_troop_search_fac", tmp_menu_max_fac+1), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
   ("facdown" ,[],"[Next Faction]" ,[
-    (val_add, "$cheat_menu_add_troop_search_fac", 1),
-	(try_begin) , (ge, "$cheat_menu_add_troop_search_fac", tmp_menu_max_fac+2), (assign,"$cheat_menu_add_troop_search_fac", 0), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_add, "$menu_select_any_troop_search_fac", 1),
+	(try_begin) , (ge, "$menu_select_any_troop_search_fac", tmp_menu_max_fac+2), (assign,"$menu_select_any_troop_search_fac", 0), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
 
   ("raceup" ,[],"[Prev Race]" ,[
-    (val_sub, "$cheat_menu_add_troop_search_race", 1),
-	(try_begin) , (eq, "$cheat_menu_add_troop_search_race", -1), (assign,"$cheat_menu_add_troop_search_race", len(race_names)), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_sub, "$menu_select_any_troop_search_race", 1),
+	(try_begin) , (eq, "$menu_select_any_troop_search_race", -1), (assign,"$menu_select_any_troop_search_race", len(race_names)), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
   ("racedown" ,[],"[Next Race]" ,[
-    (val_add, "$cheat_menu_add_troop_search_race", 1),
-	(try_begin) , (ge, "$cheat_menu_add_troop_search_race", len(race_names)+1), (assign,"$cheat_menu_add_troop_search_race", 0), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_add, "$menu_select_any_troop_search_race", 1),
+	(try_begin) , (ge, "$menu_select_any_troop_search_race", len(race_names)+1), (assign,"$menu_select_any_troop_search_race", 0), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
   
   
   ("three" ,[],"[Regulars or Heroes]" ,[
-    (val_add, "$cheat_menu_add_troop_search_hero", 1),
-	(try_begin) , (eq, "$cheat_menu_add_troop_search_hero", 3), (assign,"$cheat_menu_add_troop_search_hero", 0), (try_end),
-    (jump_to_menu, "mnu_cheat_add_troops_setup_search"),
+    (val_add, "$menu_select_any_troop_search_hero", 1),
+	(try_begin) , (eq, "$menu_select_any_troop_search_hero", 3), (assign,"$menu_select_any_troop_search_hero", 0), (try_end),
+    (jump_to_menu, "mnu_select_any_troop_setup_search"),
   ]), 
 
-  ("go_back"   ,[],"[Done]" ,[(assign, "$add_troop_menu_index", 0),(jump_to_menu, "mnu_cheat_add_troops"),]), 
+  ("go_back"   ,[],"[Done]" ,[(assign, "$add_troop_menu_index", 0),(jump_to_menu, "mnu_select_any_troop"),]), 
   ]),
   
   
@@ -3302,7 +3392,11 @@ game_menus = [
 	("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
 	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
 	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town")]),
-	("camp_mod_4", [], "Add troops to player party.", [(jump_to_menu, "mnu_cheat_add_troops") ]),
+	("camp_mod_4", [], "Add troops to player party.", [
+	   (assign, "$select_any_troop_nextmenu","mnu_camp_cheat" ), 
+	   (assign, "$select_any_troop_add_selected_troops",1 ), 
+	   (jump_to_menu, "mnu_select_any_troop") 
+	 ]),
 	("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
 	("cheat_add_xp", [], "Add 1000 experience to player.", [(add_xp_to_troop, 1000, "trp_player"), (display_message, "@Added 1000 experience to player."), ]),	  	
     ("camp_mod_2",    [],

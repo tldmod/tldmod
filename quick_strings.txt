@@ -1,4 +1,4 @@
-1006
+1007
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -551,6 +551,7 @@ qstr_TEST:_warg_test_many TEST:_warg_test_many_VS_many
 qstr_TEST:_play_warg_test TEST:_play_warg,_test_1_VS_1
 qstr_TEST:_play_wargs_tes TEST:_play_wargs,_test_2_VS_3
 qstr_TEST:_play_wargs_man TEST:_play_wargs,_many_VS_many
+qstr_TEST_BATTLE:_{reg10} TEST_BATTLE:_{reg10}_{s10}_vs_{reg11}_{s11}
 qstr_TEST_SCENE TEST_SCENE
 qstr_FACTION_SHOWOFF FACTION_SHOWOFF
 qstr___ _-
