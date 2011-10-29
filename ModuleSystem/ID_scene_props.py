@@ -1512,4 +1512,5 @@ spr_isen_chasm = 1510
 spr_horse_warg_1C = 1511
 spr_horse_warg_1D = 1512
 spr_troop_human_prisoner = 1513
-spr_distant_outer_tirith = 1514
+spr_troop_guard_sitting = 1514
+spr_distant_outer_tirith = 1515

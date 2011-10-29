@@ -2299,6 +2299,13 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
+("troop_guard_sitting",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
+
 
 ("distant_outer_tirith",sokf_place_at_origin|sokf_moveable,"outer_tirith","0",[]),
 

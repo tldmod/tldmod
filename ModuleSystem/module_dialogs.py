@@ -8981,6 +8981,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #post 0907 changes end
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)]],
+[trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[]],
 [anyone,"start", [], "Surrender or die. Make your choice.", "battle_reason_stated",[]],
 [anyone|plyr,"battle_reason_stated", [], "I am not afraid of you. I will fight.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 [anyone,"start", [], "Hello. What can I do for you?", "free",[]],

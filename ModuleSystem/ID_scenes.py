@@ -239,3 +239,6 @@ scn_erebor_siege = 237
 scn_gundabad_siege = 238
 scn_dol_guldur_siege = 239
 scn_umbar_camp_siege = 240
+scn_advcamp_good_siege = 241
+scn_moria_siege = 242
+scn_minas_morgul_siege = 243

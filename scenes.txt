@@ -1,5 +1,5 @@
 scenesfile version 1
- 241
+ 244
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -964,3 +964,15 @@ scn_umbar_camp_siege umbar_camp_siege 256 none none 0.000000 0.000000 100.000000
   0 
   0 
  0 
+scn_advcamp_good_siege advcamp_good_siege 256 none none 0.000000 0.000000 200.000000 200.000000 -0.500000 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_moria_siege moria_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005000004a92a00000f768000576c00001d2c 
+  0 
+  0 
+ 0 
+scn_minas_morgul_siege minas_morgul_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2west_mordor 
