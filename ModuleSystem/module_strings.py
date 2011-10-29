@@ -2766,7 +2766,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("tld_spear_hit","Ouch!"),    
 
 
-("fullname_region_unknown", "[unknown region]"), # -1
+("fullname_region_unknown", "an unnamed region, somewhere in Middle Earth"), # -1
 
 ("fullname_region_pelennor", "Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor"), #0
 ("fullname_region_subfac_pelargir", "the Fiefdom of Lebennin, part of the Realm of Gondor"), # pelargir
@@ -2820,7 +2820,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 
 
-("shortname_region_unknown", "[unknown region]"), # -1
+("shortname_region_unknown", "an unnamed region"), # -1
 
 ("shortname_region_pelennor", "Pelennor Fields"), #0
 ("shortname_region_subfac_pelargir", "Fiefdom of Lebennin"), # pelargir

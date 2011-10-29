@@ -48,6 +48,9 @@ def set_item_faction():
 	for i_troop in xrange(29,430 ): #regular troops here
 		r = 0
 		
+		# mtarini: store all flags in a slot, for later use
+		command_list.append((troop_set_slot, "trp_"+troops[i_troop][0], slot_troop_flags, troops[i_troop][3]))
+		
 		#for i_item in troops[i_troop][7]: 
 		# mtarini: assign troops to proper subfactions, according to name
 		for j in range(0,len(subfaction_data) ):
@@ -12460,6 +12463,36 @@ scripts = [
       (assign, reg0, ":total_change"),
 ]),
 
+
+# script_find_cheapest_item_in_inv_of_type
+#  puts in reg0 the cheapest item in an given troop invetory,  of a given type
+# param1: troop id
+# param2: object type MIN
+# param3: object type MAX, or 0 if only one object type
+("find_cheapest_item_in_inv_of_type",[
+	(store_script_param_1, ":troop"),
+	(store_script_param_2, ":item_type_min"),
+	(store_script_param, ":item_type_max",3),
+	
+	(try_begin), (eq, ":item_type_max",0), 
+		(store_add, ":item_type_max",":item_type_min", 1),
+	(try_end),
+	
+	(assign, reg0, -1),
+	(assign,  ":min_value", 1<<15 ),
+	(troop_get_inventory_capacity, ":max", ":troop"),
+	(try_for_range, ":i_slot", 0, ":max"),
+        (troop_get_inventory_slot, ":item", ":troop", ":i_slot"),
+        (ge, ":item", 0),
+		(item_get_type,  ":type", ":item"),
+		(is_between, ":type", ":item_type_min", ":item_type_max"),
+		(store_item_value, ":value", ":item"),
+		(lt, ":value", ":min_value"),
+		(assign, ":min_value", ":value"),
+		(assign, reg0, ":item"),
+	(try_end),
+]),
+
 # script_start_as_one
 # script to start the game as one... troop -- mtarini
 # (copys that troop stats, items, factions, race, etc, into player)
@@ -12483,53 +12516,90 @@ scripts = [
 	# copy items
 	(troop_clear_inventory, "trp_player"),
 	(troop_get_inventory_capacity, ":inv_cap", ":troop"),
-	#(assign,":prev_type",itp_type_horse),
-    (try_for_range, ":i_slot", 0, ":inv_cap"),
-        (troop_get_inventory_slot, ":item_id", ":troop", ":i_slot"),
-        (ge, ":item_id", 0),
-		(item_get_type,  ":type", ":item_id"),
-		#(neg|is_between, ":type", itp_type_horse, itp_type_body_armor),#never give mounts, weapons
-		# (try_begin), # only one item per type! (one armor, one weapon,,,)
-			
-			#(this_or_next|neq, ":type", ":prev_type"), # if first item of that type... (relies on items ordered inside tier 1 troops' inventories)
-			#(store_random_in_range, ":die_roll", 0, 2),  (lt, ":die_roll", 1), # 50% of time, replace old item with new item 
-			# (try_begin),
-				# (eq, ":type", itp_type_body_armor),
-				# (troop_set_inventory_slot, "trp_player", ek_body,":item_id"),
-				# (troop_set_inventory_slot_modifier,"trp_player", ek_body, imod_battered), #fuckup starting items a bit
-			# (else_try),
-				# (eq, ":type", itp_type_foot_armor),
-				# (troop_set_inventory_slot, "trp_player", ek_foot,":item_id"),
-				# (troop_set_inventory_slot_modifier,  "trp_player", ek_foot, imod_ragged),
-			# (else_try),
-				# (troop_set_inventory_slot, "trp_player", ":i_slot", ":item_id"),
-			# (try_end),
+
+
+	# option 1 add everything he has
+    # (try_for_range, ":i_slot", 0, ":inv_cap"),
+        # (troop_get_inventory_slot, ":item_id", ":troop", ":i_slot"),
+        # (ge, ":item_id", 0),
+		# (item_get_type,  ":type", ":item_id"),
+
+		# (assign, ":problem", 0),
+		# (try_begin),(eq, ":type", itp_type_body_armor), (assign, ":problem", imod_battered),
+		# (else_try), (eq, ":type", itp_type_foot_armor), (assign, ":problem", imod_ragged),
+		# (else_try), (eq, ":type", itp_type_head_armor), (assign, ":problem", imod_battered),
+		# (else_try), (eq, ":type", itp_type_hand_armor), (assign, ":problem", imod_battered),
+		# (else_try), (eq, ":type", itp_type_horse  )   , (assign, ":problem", imod_swaybacked), 
+		# (else_try), (eq, ":type", itp_type_one_handed_wpn), (assign, ":problem", imod_cracked),
+		# (else_try), (eq, ":type", itp_type_two_handed_wpn), (assign, ":problem", imod_cracked),
+		# (else_try), (eq, ":type", itp_type_polearm), (assign, ":problem", imod_cracked),
+		# (else_try), (eq, ":type", itp_type_arrows), (assign, ":problem", imod_bent), 
+		# (else_try), (eq, ":type", itp_type_bolts), (assign, ":problem", imod_bent), 
+		# (else_try), (eq, ":type", itp_type_shield), (assign, ":problem", imod_battered),
+		# (else_try), (eq, ":type", itp_type_bow), (assign, ":problem", imod_cracked),
+		# (else_try), (eq, ":type", itp_type_thrown), (assign, ":problem", imod_bent),
 		# (try_end),
-		# (assign,":prev_type",":type"), #store previous item type
-		(assign, ":problem", 0),
-		(try_begin),(eq, ":type", itp_type_body_armor), (assign, ":problem", imod_battered),
-		(else_try), (eq, ":type", itp_type_foot_armor), (assign, ":problem", imod_ragged),
-		(else_try), (eq, ":type", itp_type_head_armor), (assign, ":problem", imod_battered), #WTF?
-		(else_try), (eq, ":type", itp_type_hand_armor), (assign, ":problem", imod_battered), #WTF?
-		(else_try), (eq, ":type", itp_type_horse  )   , (assign, ":problem", imod_swaybacked), #WTF?
-		(else_try), (eq, ":type", itp_type_one_handed_wpn), (assign, ":problem", imod_cracked),
-		(else_try), (eq, ":type", itp_type_two_handed_wpn), (assign, ":problem", imod_cracked),
-		(else_try), (eq, ":type", itp_type_polearm), (assign, ":problem", imod_cracked),
-		(else_try), (eq, ":type", itp_type_arrows), (assign, ":problem", imod_bent), #WTF?
-		(else_try), (eq, ":type", itp_type_bolts), (assign, ":problem", imod_bent), #WTF?
-		(else_try), (eq, ":type", itp_type_shield), (assign, ":problem", imod_battered),
-		(else_try), (eq, ":type", itp_type_bow), (assign, ":problem", imod_cracked), #WTF?
-		(else_try), (eq, ":type", itp_type_thrown), (assign, ":problem", imod_bent),
-		(try_end),
-		(troop_add_item, "trp_player", ":item_id", ":problem"),
-	(try_end),
-	# give basic weapon
-	# (try_begin), 
-		# (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-		# (troop_add_item, "trp_player", "itm_shortened_spear", imod_bent),
-	# (else_try),
-		# (troop_add_item, "trp_player", "itm_wood_club", imod_cracked),
+		# (troop_add_item, "trp_player", ":item_id", ":problem"),
 	# (try_end),
+	
+	# option 2 for each category, add one object per category, onlg if required, and the cheapest!
+	(troop_get_slot, ":flags", ":troop", slot_troop_flags),
+
+	(try_begin),(store_and,reg13,":flags",tfg_boots),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_foot_armor,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_ragged),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_armor),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_body_armor,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_battered),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_helm),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_head_armor,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_battered),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_gloves),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_hand_armor,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_battered),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_horse),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_horse,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_swaybacked),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_shield),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_shield,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_battered),
+	(try_end),
+
+	(try_begin),(store_and,reg13,":flags",tfg_ranged),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_bow,itp_type_thrown+1),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_bent),
+
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_arrows,0),(assign,":item",reg0),
+		(gt,":item",0),
+		(troop_add_item, "trp_player", ":item", imod_bent),
+	(try_end),
+
+	# assign weapon
+	(try_begin),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm+1),(assign,":item",reg0),
+		(gt,":item",0),
+		(assign,":problem", imod_cracked),  
+		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
+		(troop_add_item, "trp_player", ":item", ":problem"),
+	(try_end),
+
 	# copy stats: attrib
     (try_for_range, ":i", 0, 4),
 	  (store_attribute_level, ":x",":troop",":i"),

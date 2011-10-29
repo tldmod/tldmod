@@ -648,6 +648,7 @@ troops = [
 ["marksman_of_ravenhill","Marks-dwarf_of_Ravenhill","Marks-dwarves_of_Ravenhill",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_leather_dwarf_armor,itm_dwarf_helm_a,itm_dwarf_horn_bow,itm_arrows,itm_dwarf_sword_a,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
+
 ["iron_hills_miner","Iron_Hills_Miner","Iron_Hills_Miners",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_dwarf_vest_b,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_c,itm_dwarf_shield_d,],
       attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_3|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],

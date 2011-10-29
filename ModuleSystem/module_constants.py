@@ -667,6 +667,9 @@ slot_troop_first_encountered          = 58
 slot_troop_home                       = 59
 
 slot_troop_morality_state       = 60
+
+
+
 tms_no_problem         = 0
 tms_acknowledged       = 1
 tms_dismissed          = 2
@@ -772,6 +775,8 @@ slot_troop_honorific   = 130
 slot_troop_strings_end = 131
 slot_troop_payment_request = 132
 slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
+
+slot_troop_flags       = 134 # the original flags defined for troops, including item guarantees (mtarini)
 
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
