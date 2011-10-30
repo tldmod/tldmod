@@ -180,3 +180,4 @@ menu_choose_scenes_195 = 178
 menu_choose_scenes_208 = 179
 menu_choose_scenes_221 = 180
 menu_choose_scenes_234 = 181
+menu_choose_scenes_247 = 182

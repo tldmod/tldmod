@@ -1,5 +1,5 @@
 scenesfile version 1
- 247
+ 251
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -24,6 +24,10 @@ scn_random_scene_desert random_scene_desert 768 none none 0.000000 0.000000 240.
   0 
   0 
  outer_terrain_flat 
+scn_random_scene_north random_scene_north 768 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
 scn_random_scene_steppe_forest random_scene_steppe_forest 768 none none 0.000000 0.000000 120.000000 120.000000 -0.500000 0x00000002ac6028000003e8fa0000034e00004b34000059be 
   0 
   0 
@@ -40,6 +44,10 @@ scn_random_scene_desert_forest random_scene_desert_forest 768 none none 0.000000
   0 
   0 
  outer_terrain_flat 
+scn_random_scene_north_forest random_scene_north_forest 768 none none 0.000000 0.000000 150.000000 150.000000 -0.500000 0x00000001dc6028000003e8fa0000034e00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
 scn_random_scene_steppe_small random_scene_steppe_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000012c60280000034cd300003efe00004b34000059be 
   0 
   0 
@@ -56,6 +64,10 @@ scn_random_scene_desert_small random_scene_desert_small 768 none none 0.000000 0
   0 
   0 
  outer_terrain_flat 
+scn_random_scene_north_small random_scene_north_small 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000015c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
 scn_handsign handsign 1280 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x314d060900036cd70000295300002ec9000025f3 
   0 
   0 
@@ -985,6 +997,10 @@ scn_moria_siege moria_siege 256 none none 0.000000 0.000000 100.000000 100.00000
   0 
  0 
 scn_minas_morgul_siege minas_morgul_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2west_mordor 
+scn_morannon_siege morannon_siege 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
   0 
  outer_mountains2west_mordor 

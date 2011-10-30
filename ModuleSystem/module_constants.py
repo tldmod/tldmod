@@ -1462,7 +1462,7 @@ center_list = [
 	["trp_barman_eastfold", "trp_smith_eastfold", "trp_merchant_eastfold", "trp_elder_eastfold", "pt_rohan_recruits", "trp_knight_1_13", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
 	["icon_mfc_rohan"],[900],[3,8,4,6,4,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
 # Mordor centers
-("p_town_morannon", ["scn_morannon_center", "scn_morannon_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", "scn_morannon_center","mesh_town_morannon"],
+("p_town_morannon", ["scn_morannon_center", "scn_morannon_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", "scn_morannon_siege","mesh_town_morannon"],
 	["trp_barman_morannon", "trp_smith_morannon", "trp_merchant_morannon", "trp_elder_morannon", "pt_morannon_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
 	["icon_mfc_mordor"],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_evil_high*2, 1, tld_siegable_capital),
 ("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", "scn_minas_morgul_siege", "mesh_ui_default_menu_window"],
