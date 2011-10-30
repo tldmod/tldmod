@@ -8,6 +8,7 @@ from module_constants import *
 from ID_menus import *
 
 from module_parties_mapscribbler import *
+#parties_scribbler = []
 
 ####################################################################################################################
 #  Each party record contains the following fields:

@@ -4083,7 +4083,7 @@ technique mtarini_windy_flora_mild
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.025,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.1,1);
       PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
 	}
 }
@@ -4092,7 +4092,7 @@ technique mtarini_windy_flora_mild_SHDW
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.025,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.1,1);
       PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
 	}
 }
@@ -4101,7 +4101,7 @@ technique mtarini_windy_flora_mild_SHDWNVIDIA
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.025,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.1,1);
       PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
 	}
 }
@@ -4110,11 +4110,43 @@ technique mtarini_windy_flora_mild_PRESHADED
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.025,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.1,1);
       PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
 	}
 }
 
+technique mtarini_windy_flora_mild_one_sheet
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.018,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+technique mtarini_windy_flora_mild_one_sheet_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.018,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
+	}
+}
+technique mtarini_windy_flora_mild_one_sheet_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.018,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
+	}
+}
+technique mtarini_windy_flora_mild_one_sheet_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.018,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
 
 
 technique mtarini_windy_grass
