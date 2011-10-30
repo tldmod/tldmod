@@ -1645,13 +1645,24 @@ scripts = [
    #initialize game option defaults (see camp menu)
 	(assign, "$tld_option_crossdressing", 0), # item restrictions ON by default
 	(assign, "$tld_option_formations", 1),# ON by default
-	(assign, "$tld_option_town_menu_hidden", 0), #all town features accesible by default
+	(assign, "$tld_option_town_menu_hidden", 1), #town features hidden by default
 	(assign, "$tld_option_injuries", 1), #injuries for npcs and player ON by default
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 0),# OFF by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
+	
+	# savegame compartibillity globals. USE THOSE in code if need be
+	(assign, "$g_variable1", 0),
+	(assign, "$g_variable2", 0),
+	(assign, "$g_variable3", 0),
+	(assign, "$g_variable4", 0),
+	(assign, "$g_variable5", 0),
+	(assign, "$g_variable6", 0),
+	(assign, "$g_variable7", 0),
+	(assign, "$g_variable8", 0),
+	(assign, "$g_variable9", 0),
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -9263,6 +9274,13 @@ scripts = [
 		(eq,":landmark","p_hand_isen"),
 		(assign,":scene_to_use","scn_handsign"), 
 	(else_try),
+		(is_between,":landmark","p_ford_cair_andros1","p_ford_cerin_dolen"), # Anduin fords
+		(store_random_in_range, ":scene_to_use", "scn_ford_big1", "scn_ford_small1"),
+	(else_try),
+		(is_between,":landmark","p_ford_cerin_dolen","p_camplace_N1"), # small fords
+		(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
 		(eq,":region",region_dead_marshes),
 		(assign,":scene_to_use","scn_deadmarshes"),
 		(assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
@@ -10639,6 +10657,11 @@ scripts = [
 	(call_script, "script_calculate_renown_value"),
 	(call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
 	(call_script, "script_calculate_battleside_races"),
+	(troop_get_type, reg1, "trp_player"),
+	(try_begin), #TLD: dwarves are always on foot
+		(eq, reg1, tf_dwarf),
+		(mission_tpl_entry_set_override_flags, "mt_lead_charge", 3, af_override_horse),	
+	(try_end),	
 	(set_party_battle_mode),
 	(set_jump_mission,"mt_lead_charge"),
 	(call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
@@ -18393,6 +18416,33 @@ scripts = [
 			(troop_set_slot,":npc",":item_slot", ":item"),	#remember new equipment
 		(try_end),
 	(try_end),
+	
+	# check for mount, issue warning if wrong
+	(troop_get_inventory_slot, ":item", ":npc", ek_horse),
+	(assign,"$remove_item", 0),
+	(try_begin),
+		(neg|troop_slot_eq,":npc",slot_troop_horse_type,":item"), # mount changed from previous?
+		#(display_message, "@WOAH, MOUNT CHANGED!!"),
+		(troop_set_slot,":npc",slot_troop_horse_type, ":item"), # remember new mount (it's not removed)
+		(try_begin),
+			(this_or_next|eq,":race",tf_dwarf),
+			(is_between,":race",tf_urukhai, tf_orc_end),
+			(is_between,":item",item_horse_begin, "itm_warg_reward"),
+			(assign,"$remove_item",1), # dwarves and uruks cant ride at all
+		(else_try),
+			(is_between,":race",tf_orc_begin,tf_orc_end ),
+			(is_between,":item",item_horse_begin, item_horse_end),
+			(assign,"$remove_item",1), # orcs cant ride horses
+		(else_try),
+			(neq,":race",tf_orc),
+			(is_between,":item",item_warg_begin, "itm_warg_reward"),
+			(assign,"$remove_item",1), # non-orcs cant ride wargs
+		(try_end),
+		(try_begin),
+			(eq,"$remove_item",1),
+			(dialog_box,"@Mount you just equipped does not fit characters of this race. Be warned that there will be problems with mount's behaviour on the battlefield, if you leave it as this","@Inappropriate equipment"),
+		(try_end),
+	(try_end),
 ]),
 ("unequip_items",[
 	(store_script_param_1, ":npc"),
@@ -18408,6 +18458,8 @@ scripts = [
 			(troop_set_inventory_slot, ":npc", ":inv_slot", -1),	# remove item from equipment
 			(troop_add_item, "trp_player", ":item", ":mod"),		# move item into player's inventory
 		(try_end),
+		(troop_get_inventory_slot, ":item", ":npc", ek_horse),
+		(troop_set_slot,":npc",slot_troop_horse_type, ":item"),
 		(assign,"$remove_item", 0),
 	(try_end),
 ]),

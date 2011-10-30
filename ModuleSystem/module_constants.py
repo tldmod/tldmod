@@ -657,7 +657,7 @@ slot_troop_player_reserve_party = 50
 #TLD equipment tracking
 slot_troop_armor_type = 51
 slot_troop_boots_type = 52
-
+slot_troop_horse_type = 53
 #TLD number of items in a shop:food,goods
 slot_troop_shop_gold   = 56
 slot_troop_shop_food   = 57

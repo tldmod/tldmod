@@ -5669,7 +5669,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone,"start", [  (check_quest_active, "qst_escort_messenger"),
                     (eq, "$talk_context", tc_entering_center_quest_talk),
                     (quest_slot_eq, "qst_escort_messenger", slot_quest_object_troop, "$g_talk_troop")],
-"Thank you for escorting me here, {playername}. Here's your payment for ensuring my safe passage.", "lady_escort_lady_succeeded",
+"Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. ", "lady_escort_lady_succeeded",
    [ #(quest_get_slot, ":cur_center", "qst_escort_messenger", slot_quest_target_center),
      #(add_xp_as_reward, 300),
      #(quest_get_slot, ":quest_giver", "qst_escort_messenger", slot_quest_giver_troop),
@@ -8981,7 +8981,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #post 0907 changes end
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(assign, "$g_leave_encounter",1)]],
-[trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[]],
+[trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")]],
 [anyone,"start", [], "Surrender or die. Make your choice.", "battle_reason_stated",[]],
 [anyone|plyr,"battle_reason_stated", [], "I am not afraid of you. I will fight.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),(encounter_attack)]],
 [anyone,"start", [], "Hello. What can I do for you?", "free",[]],

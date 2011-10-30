@@ -109,7 +109,7 @@ items =[
 ["steppe_horse","Steppe_Horse",[("steppe_horse",0)],itp_type_horse|itp_shop,0,92,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(35)|horse_maneuver(41)|horse_charge(7),imodbits_horse_basic|imodbits_horse_basic],
 ["courser","Courser",[("courser",0)],itp_type_horse|itp_shop,0,323,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(43)|horse_maneuver(37)|horse_charge(11),imodbits_horse_basic|imodbits_horse_basic],
 ["hunter","Hunter",[("hunting_horse",0)],itp_type_horse|itp_shop,0,434,hit_points(90)|body_armor(20)|difficulty(3)|horse_speed(36)|horse_maneuver(34)|horse_charge(18),imodbits_horse_basic|imodbits_horse_basic],
-["pony","Pony",[("pony",0)],itp_type_horse|itp_shop,0,300,hit_points(30)|body_armor(0)|difficulty(0)|horse_speed(30)|horse_maneuver(37)|horse_charge(1),imodbits_horse_basic|imodbits_horse_good],
+["pony","Pony",[("pony",0)],itp_type_horse|itp_shop,0,300,hit_points(30)|body_armor(0)|difficulty(0)|horse_speed(20)|horse_maneuver(40)|horse_charge(1),imodbits_horse_basic|imodbits_horse_good],
 #ARNOR MOUNTS########
 ["arnor_warhorse","Arnorian_Warhorse",[("arnor_mail",0)],itp_type_horse|itp_shop,0,1500,hit_points(135)|body_armor(52)|difficulty(4)|horse_speed(36)|horse_maneuver(34)|horse_charge(30),imodbits_horse_basic|imodbits_horse_good],
 ["dunedain_warhorse","Dunedain_Warhorse",[("arnor_leather",0)],itp_type_horse|itp_shop,0,1500,hit_points(140)|body_armor(65)|difficulty(4)|horse_speed(35)|horse_maneuver(32)|horse_charge(35),imodbits_horse_basic|imodbits_horse_good],
