@@ -12595,7 +12595,8 @@ scripts = [
 	(try_begin),
 		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm+1),(assign,":item",reg0),
 		(gt,":item",0),
-		(assign,":problem", imod_cracked),  
+		(assign,":problem", imod_cracked), 
+		(try_begin),(eq, ":troop", "trp_dunnish_wildman"), (assign, ":item", "itm_dunland_spear"), (try_end), # exception!   Otherwie they get "orc club"
 		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
 		(troop_add_item, "trp_player", ":item", ":problem"),
 	(try_end),

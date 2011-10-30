@@ -606,7 +606,7 @@ troops = [
    [itm_saddle_horse,itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sumpter_horse,itm_short_bow,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
 ########################## DWARVES #############################
-["dwarven_apprentice","Apprentice-dwarf","Apprentice-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_boots,0,0,fac_dwarf,
+["dwarven_apprentice","Apprentice-dwarf","Apprentice-dwarves",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_leather_dwarf_armor_b,itm_lamedon_hood,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_hand_axe,itm_dwarf_shield_a,itm_dwarf_shield_b,],
       attr_dwarf_tier_1,wp_dwarf_tier_1,knows_common_dwarf|knows_power_draw_2|knows_ironflesh_1|knows_power_throw_2,dwarf_face_2,dwarf_face_3],
 ["dwarven_warrior","Warrior-dwarf","Warrior-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
@@ -763,7 +763,7 @@ troops = [
    [itm_lossarnach_leader,itm_gondor_cav_sword,itm_loss_axe,itm_lossarnach_greaves,itm_gondor_hunter,itm_gon_tab_shield_a,itm_mail_mittens,itm_gondor_leader_helm,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3],
 ####PELARGIR
-["pelargir_watchman","Pelargir_Watchman","Pelargir_Watchmen",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+["pelargir_watchman","Pelargir_Watchman","Pelargir_Watchmen",tf_gondor| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
    [itm_pel_jerkin,itm_gondor_auxila_arrows,itm_short_bow,itm_gondor_light_greaves,itm_shortened_spear,itm_gondor_javelin,],
       attr_tier_2,wp_tier_2,knows_common|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_1,gondor_face1,gondor_face2],
 ["pelargir_marine","Pelargir_Marine","Pelargir_Marines",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
@@ -826,7 +826,7 @@ troops = [
    [itm_pinnath_leader,itm_gondor_cav_sword,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondor_leader_helm,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3],
 #####Black Root Vale#####
-["blackroot_vale_archer","Hunter_of_Blackroot_Vale","Hunter_of_Blackroot_Vale",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+["blackroot_vale_archer","Hunter_of_Blackroot_Vale","Hunter_of_Blackroot_Vale",tf_gondor|  tfg_armor|  tfg_boots,0,0,fac_gondor,
    [itm_blackroot_footman,itm_spear,itm_short_bow,itm_gondor_auxila_arrows,itm_gondor_light_greaves,],
       attr_tier_2,wp_tier_2,knows_common|knows_power_draw_3|knows_ironflesh_1,gondor_face1,gondor_face2],
 ["veteran_blackroot_vale_archer","Bowman_of_Blackroot_Vale","Bowmen_of_Blackroot_Vale",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
