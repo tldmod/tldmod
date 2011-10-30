@@ -1,5 +1,5 @@
 scenesfile version 1
- 244
+ 247
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -885,6 +885,18 @@ scn_forest_mirkwood4 forest_mirkwood4 256 none none 0.000000 0.000000 100.000000
   0 
  outer_terrain_forest 
 scn_forest_mirkwood5 forest_mirkwood5 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000000bc62c90d0002308c000048850000786900001ef5 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_firien1 forest_firien1 256 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_firien2 forest_firien2 256 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_firien3 forest_firien3 256 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
