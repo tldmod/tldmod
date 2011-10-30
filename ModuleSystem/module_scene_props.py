@@ -2306,7 +2306,32 @@ scene_props = [
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
 	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
 
+("sound_waterfall"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_waterfall", 0)])]),
+("sound_water_wavesplash",sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_water_wavesplash_source", 0)])]),
+("sound_water_waves"     ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_water_waves_source", 0)])]),
+("sound_water_splash"    ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_water_splash_source", 0)])]),
 
 ("distant_outer_tirith",sokf_place_at_origin|sokf_moveable,"outer_tirith","0",[]),
+
+("save_compartibility1",0,"0","0", []),
+("save_compartibility2",0,"0","0", []),
+("save_compartibility3",0,"0","0", []),
+("save_compartibility4",0,"0","0", []),
+("save_compartibility5",0,"0","0", []),
+("save_compartibility6",0,"0","0", []),
+("save_compartibility7",0,"0","0", []),
+("save_compartibility8",0,"0","0", []),
+("save_compartibility9",0,"0","0", []),
+("save_compartibility10",0,"0","0", []),
+("save_compartibility11",0,"0","0", []),
+("save_compartibility12",0,"0","0", []),
+("save_compartibility13",0,"0","0", []),
+("save_compartibility14",0,"0","0", []),
+("save_compartibility15",0,"0","0", []),
+("save_compartibility16",0,"0","0", []),
+("save_compartibility17",0,"0","0", []),
+("save_compartibility18",0,"0","0", []),
+("save_compartibility19",0,"0","0", []),
+("save_compartibility20",0,"0","0", []),
 
 ]

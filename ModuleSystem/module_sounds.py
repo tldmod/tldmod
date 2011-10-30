@@ -4,16 +4,16 @@ sounds = [
 ("click", sf_2d|sf_vol_1,["drum_3.wav"]),
 ("tutorial_1", sf_2d|sf_vol_7,["tutorial_1.ogg"]),
 ("tutorial_2", sf_2d|sf_vol_7,["tutorial_2.ogg"]),
-("gong", sf_2d|sf_priority_9|sf_vol_7, ["s_cymbals.ogg"]),
+("gong", sf_2d|sf_priority_9|sf_vol_7, ["s_cymbals.wav"]),
 ("quest_taken", sf_2d|sf_priority_9|sf_vol_7, []),
-("quest_completed", sf_2d|sf_priority_9|sf_vol_7, ["quest_completed.ogg"]),
-("quest_succeeded", sf_2d|sf_priority_9|sf_vol_7, ["quest_succeeded.ogg"]),
+("quest_completed", sf_2d|sf_priority_9|sf_vol_7, ["quest_completed.wav"]),
+("quest_succeeded", sf_2d|sf_priority_9|sf_vol_7, ["quest_succeeded.wav"]),
 ("quest_concluded", sf_2d|sf_priority_9|sf_vol_7, ["quest_concluded.ogg"]),
-("quest_failed", sf_2d|sf_priority_9|sf_vol_7, ["quest_failed.ogg"]),
-("quest_cancelled", sf_2d|sf_priority_9|sf_vol_7, ["quest_cancelled.ogg"]),
+("quest_failed", sf_2d|sf_priority_9|sf_vol_7, ["quest_failed.wav"]),
+("quest_cancelled", sf_2d|sf_priority_9|sf_vol_7, ["quest_cancelled.wav"]),
 ("rain",sf_2d|sf_priority_10|sf_vol_4|sf_looping, ["rain_1.wav"]),
-("money_received",sf_priority_10|sf_vol_6, ["coins_dropped_1.ogg"]),
-("money_paid",sf_priority_10|sf_vol_10, ["coins_dropped_2.ogg"]),
+("money_received",sf_priority_10|sf_vol_6, ["coins_dropped_1.wav"]),
+("money_paid",sf_priority_10|sf_vol_10, ["coins_dropped_2.wav"]),
 ("sword_clash_1", 0,["sword_clank_metal_09.wav","sword_clank_metal_09b.wav","sword_clank_metal_10.wav","sword_clank_metal_10b.wav","sword_clank_metal_12.wav","sword_clank_metal_12b.wav","sword_clank_metal_13.wav","sword_clank_metal_13b.wav"]),
 ("sword_clash_2", 0,["s_swordClash2.wav"]),
 ("sword_clash_3", 0,["s_swordClash3.wav"]),
@@ -154,7 +154,7 @@ sounds = [
 ("horse_breath",sf_priority_3|sf_vol_10,["horse_breath_4.wav","horse_breath_5.wav","horse_breath_6.wav","horse_breath_7.wav"]),
 ("horse_snort" ,sf_priority_5|sf_vol_7, ["silence.wav"]),
 ("horse_low_whinny",          sf_vol_9, ["silence.wav"]),
-("block_fist",0, ["block_fist_3.ogg","block_fist_4.ogg"]), #"block_fist_3.ogg","block_fist_4.ogg"
+("block_fist",0, ["block_fist_3.wav","block_fist_4.wav"]),
 ("man_hit_blunt_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_blunt_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_pierce_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
@@ -162,18 +162,18 @@ sounds = [
 ("man_hit_cut_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_cut_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","man_victory_15.wav","man_victory_49.wav","man_victory_52.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
-("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg"]), #"Fire_Torch_Loop3.ogg"
-("torch_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg"]),
+("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
+("torch_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
 ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
 ("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
 #("cow_moo", sf_2d|sf_priority_9|sf_vol_8, ["cow_moo_1.ogg"]),
 #("cow_slaughter", sf_2d|sf_priority_9|sf_vol_8, ["cow_slaughter.ogg"]),
-("distant_dog_bark", sf_2d|sf_priority_8|sf_vol_8, ["d_dog1.ogg","d_dog2.ogg","d_dog3.ogg","d_dog7.ogg"]),
-("distant_owl", sf_2d|sf_priority_8|sf_vol_9, ["d_owl2.ogg","d_owl3.ogg","d_owl4.ogg"]),
-("distant_chicken", sf_2d|sf_priority_8|sf_vol_8, ["d_chicken1.ogg","d_chicken2.ogg"]),
-("distant_carpenter", sf_2d|sf_priority_8|sf_vol_3, ["d_carpenter1.ogg","d_saw_short3.ogg"]),
-("distant_blacksmith", sf_2d|sf_priority_8|sf_vol_4, ["d_blacksmith2.ogg"]),
+("distant_dog_bark", sf_2d|sf_priority_8|sf_vol_8, ["d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav"]),
+("distant_owl", sf_2d|sf_priority_8|sf_vol_9, ["d_owl2.wav","d_owl3.wav","d_owl4.wav"]),
+("distant_chicken", sf_2d|sf_priority_8|sf_vol_8, ["d_chicken1.wav","d_chicken2.wav"]),
+("distant_carpenter", sf_2d|sf_priority_8|sf_vol_3, ["d_carpenter1.wav","d_saw_short3.wav"]),
+("distant_blacksmith", sf_2d|sf_priority_8|sf_vol_4, ["d_blacksmith2.wav"]),
 ("arena_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["arena_loop11.ogg"]),
 ("town_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["town_loop_3.ogg"]),
 
@@ -192,17 +192,17 @@ sounds = [
 ("man_warcry",sf_priority_6, ["man_insult_2.wav","man_insult_3.wav","man_insult_7.wav","man_insult_9.wav","man_insult_13.wav","man_insult_15.wav","man_insult_16.wav"]),
 
 #tf_female       = 1	# all factions
-("woman_hit",sf_priority_7, ["woman_hit_2.ogg","woman_hit_3.ogg",
-						  "woman_hit_b_2.ogg","woman_hit_b_4.ogg","woman_hit_b_6.ogg","woman_hit_b_7.ogg","woman_hit_b_8.ogg",
-						  "woman_hit_b_11.ogg","woman_hit_b_14.ogg","woman_hit_b_16.ogg"]),
-("woman_die",sf_priority_10, ["woman_fall_1.ogg","woman_hit_b_5.ogg"]),
+("woman_hit",sf_priority_7, ["woman_hit_2.wav","woman_hit_3.wav",
+						  "woman_hit_b_2.wav","woman_hit_b_4.wav","woman_hit_b_6.wav","woman_hit_b_7.wav","woman_hit_b_8.wav",
+						  "woman_hit_b_11.wav","woman_hit_b_14.wav","woman_hit_b_16.wav"]),
+("woman_die",sf_priority_10, ["woman_fall_1.wav","woman_hit_b_5.wav"]),
 #tf_gondor		= 2
 ("gondor_yell",sf_priority_6|sf_vol_8, ["gondor_yell_1.wav","gondor_yell_2.wav","gondor_yell_3.wav","gondor_yell_4.wav","gondor_yell_5.wav","gondor_yell_6.wav","man_yell_4.wav","man_yell_4_2.wav","man_yell_7.wav","man_yell_9.wav","man_yell_11.wav","man_yell_13.wav","man_yell_15.wav","man_yell_16.wav","man_yell_17.wav","man_yell_20.wav","man_shortyell_4.wav","man_shortyell_5.wav","man_shortyell_6.wav","man_shortyell_9.wav","man_shortyell_11.wav","man_shortyell_11b.wav",]),
-("gondor_victory",sf_priority_5|sf_vol_10, ["gondor_victory_1.wav","gondor_victory_2.wav","gondor_victory_3.wav","gondor_victory_4.wav","gondor_victory_5.wav","gondor_victory_6.wav"]),
+("gondor_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","gondor_victory_1.wav","gondor_victory_2.wav","gondor_victory_3.wav","gondor_victory_4.wav","gondor_victory_5.wav","gondor_victory_6.wav"]),
 ("gondor_victory_player",sf_priority_5|sf_vol_10, ["gondor_victory_1.wav","gondor_victory_2.wav"]), # for the player, must sound like the same person
 #tf_rohan		= 3
 ("rohan_yell",sf_priority_6|sf_vol_8, ["rohan_yell_1.wav","rohan_yell_2.wav","rohan_yell_3.wav","rohan_yell_4.wav","rohan_yell_5.wav","rohan_yell_6.wav","rohan_yell_7.wav","rohan_yell_8.wav","rohan_yell_9.wav","rohan_yell_10.wav","rohan_yell_11.wav","rohan_yell_12.wav","rohan_yell_13.wav","rohan_yell_14.wav","man_yell_4.wav","man_yell_4_2.wav","man_yell_7.wav","man_yell_9.wav","man_yell_11.wav","man_yell_13.wav","man_yell_15.wav","man_yell_16.wav","man_yell_17.wav","man_yell_20.wav","man_shortyell_4.wav","man_shortyell_5.wav","man_shortyell_6.wav","man_shortyell_9.wav","man_shortyell_11.wav","man_shortyell_11b.wav"]),
-("rohan_victory",sf_priority_5|sf_vol_10, ["rohan_victory_1.wav","rohan_victory_2.wav","rohan_victory_3.wav","rohan_victory_4.wav"]),
+("rohan_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","rohan_victory_1.wav","rohan_victory_2.wav","rohan_victory_3.wav","rohan_victory_4.wav"]),
 #tf_dunland	= 4
 ("dunlender_yell",sf_priority_6|sf_vol_8, ["dun_yell_1.wav","dun_yell_2.wav","dun_yell_3.wav","dun_yell_4.wav","dun_yell_5.wav","dun_yell_6.wav","dun_yell_7.wav","dun_yell_8.wav","dun_yell_9.wav","dun_yell_10.wav","dun_yell_11.wav","dun_yell_12.wav","dun_yell_13.wav","dun_yell_14.wav","dun_yell_15.wav","dun_yell_16.wav","dun_yell_17.wav","dun_yell_18.wav","dun_yell_19.wav","dun_yell_20.wav","dun_yell_21.wav","dun_yell_22.wav","dun_yell_23.wav","dun_yell_24.wav"]),
 ("dunlender_victory",sf_priority_5|sf_vol_10, ["dun_victory_1.wav","dun_victory_2.wav","dun_victory_3.wav","dun_victory_4.wav","dun_victory_5.wav","dun_victory_6.wav","dun_victory_7.wav","dun_victory_8.wav","dun_victory_9.wav"]),
@@ -239,17 +239,17 @@ sounds = [
 #troll_grunt_long = grunt, yell = grunt, 
 #tf_dunedain = 11
 ("dunedain_yell",sf_priority_6|sf_vol_8, ["dunedain_yell_1.wav","dunedain_yell_2.wav","dunedain_yell_3.wav","dunedain_yell_4.wav","dunedain_yell_5.wav","dunedain_yell_6.wav","dunedain_yell_7.wav","dunedain_yell_8.wav","dunedain_yell_9.wav","dunedain_yell_10.wav","man_yell_4.wav","man_yell_4_2.wav","man_yell_7.wav","man_yell_9.wav","man_yell_11.wav","man_yell_13.wav","man_yell_15.wav","man_yell_16.wav","man_yell_17.wav","man_yell_20.wav","man_shortyell_4.wav","man_shortyell_5.wav","man_shortyell_6.wav","man_shortyell_9.wav","man_shortyell_11.wav","man_shortyell_11b.wav"]),
-("dunedain_victory",sf_priority_5|sf_vol_10, ["dunedain_victory_1.wav","dunedain_victory_2.wav","dunedain_victory_3.wav"]),
+("dunedain_victory",sf_priority_5|sf_vol_10, ["man_victory_71.wav","man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","dunedain_victory_1.wav","dunedain_victory_2.wav","dunedain_victory_3.wav"]),
 ("dunedain_victory_player",sf_priority_5|sf_vol_10, ["dunedain_victory_1.wav",]),
 #tf_lorien = 12
-("lothlorien_yell",sf_priority_6|sf_vol_8, ["elf_lothlorien_yell_1.wav","elf_lothlorien_yell_2.wav","elf_lothlorien_yell_3.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
-("lothlorien_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
+("lothlorien_yell",sf_priority_6|sf_vol_8, ["man_ugh_17.wav","elf_lothlorien_yell_1.wav","elf_lothlorien_yell_2.wav","elf_lothlorien_yell_3.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
+("lothlorien_victory",sf_priority_5|sf_vol_10, ["man_victory_15.wav","elf_basic_yell_1.wav","elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
 #tf_imladris = 13
-("rivendell_yell",sf_priority_6|sf_vol_8, ["elf_rivendell_yell_1.wav","elf_rivendell_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
-("rivendell_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
+("rivendell_yell",sf_priority_6|sf_vol_8, ["man_ugh_17.wav","elf_rivendell_yell_1.wav","elf_rivendell_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
+("rivendell_victory",sf_priority_5|sf_vol_10, ["man_victory_15.wav","elf_basic_yell_1.wav","elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
 #tf_woodelf = 14
-("mirkwood_yell",sf_priority_6|sf_vol_8, ["elf_mirkwood_yell_1.wav","elf_mirkwood_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
-("mirkwood_victory",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
+("mirkwood_yell",sf_priority_6|sf_vol_8, ["man_ugh_17.wav","elf_mirkwood_yell_1.wav","elf_mirkwood_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
+("mirkwood_victory",sf_priority_5|sf_vol_10, ["man_victory_15.wav","elf_basic_yell_1.wav","elf_basic_victory_1.wav","elf_basic_victory_2.wav","elf_basic_victory_3.wav","elf_basic_victory_4.wav","elf_basic_victory_5.wav"]),  
 ("mirkwood_victory_player",sf_priority_5|sf_vol_10, ["elf_basic_victory_1.wav","elf_basic_victory_2.wav",]),  
 #tf_evil_male = 15
 
@@ -295,28 +295,29 @@ sounds = [
 ("neutralforest_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["neutral_forest_loop.wav"]),
 ("fangorn_ambiance"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["fangorn_loop.wav"]),
 
-("gondor_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_eagle01.wav","d_blacksmith2.ogg","good_workshop.wav","d_dog7.ogg"]),
+("gondor_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_eagle01.wav","d_blacksmith2.wav","good_workshop.wav","d_dog7.wav"]),
 ("elves_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
 ("lorien_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["elf_elfsong.wav", "good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
-("beorn_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.ogg","d_dog7.ogg","d_carpenter1.ogg"]), 
-("rohan_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","good_workshop.wav", "good_eagle01.wav","good_bird01.wav","d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg"]),
-("dwarf_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["dwarves01.wav", "dwarves02.wav","d_blacksmith2.ogg","osgiliath05.wav","osgiliath02.wav"]),
-("dale_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.ogg", "d_blacksmith2.ogg","d_dog7.ogg","d_chicken1.ogg","osgiliath04.wav"]),
-("rhun_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","evil_crow.wav", "d_saw_short3.ogg","d_blacksmith2.ogg","d_dog7.ogg"]),
+("beorn_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.wav","d_dog7.wav","d_carpenter1.wav"]), 
+("rohan_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","good_workshop.wav", "good_eagle01.wav","good_bird01.wav","d_blacksmith2.wav","d_dog7.wav","d_chicken1.wav"]),
+("dwarf_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["dwarves01.wav", "dwarves02.wav","d_blacksmith2.wav","osgiliath05.wav","osgiliath02.wav"]),
+("dale_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","good_workshop.wav","d_saw_short3.wav", "d_blacksmith2.wav","d_dog7.wav","d_chicken1.wav","osgiliath04.wav"]),
+("rhun_occasional"    ,sf_2d|sf_priority_8|sf_vol_4,["rohan01.wav", "rohan02.wav","rohan03.wav","rohan04.wav","evil_crow.wav", "d_saw_short3.wav","d_blacksmith2.wav","d_dog7.wav"]),
 ("harad_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","rohan02.wav","rohan03.wav","rohan04.wav","evil_crow.wav","harad01.wav","harad02.wav","harad03.wav","harad01.wav","harad02.wav","harad03.wav"]),
 ("umbar_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","sea_seagulls.wav", "sea_seaside.wav"]),
-("dunland_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "good_eagle01.wav","d_dog1.ogg","d_dog2.ogg","d_dog3.ogg","d_dog7.ogg","d_carpenter1.ogg"]),
+("dunland_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "good_eagle01.wav","d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav","d_carpenter1.wav"]),
 ("orc_occasional"     ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "orc_warg.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
 ("guldur_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","silence.wav","evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
 ("moria_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","moria01.wav","moria02.wav"]),
-("isengard_occasional",sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","moria02.wav", "evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "d_saw_short3.ogg","orc_warg.wav","d_blacksmith2.ogg","dwarves01.wav","dwarves02.wav","osgiliath04.wav","d_carpenter1.ogg"]),
-("urukhai_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "orc_warg.wav","d_carpenter1.ogg"]),
-("seaside_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","sea_seagulls.wav", "sea_seaside.wav", "d_blacksmith2.ogg"]),
+("isengard_occasional",sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","moria02.wav", "evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "d_saw_short3.wav","orc_warg.wav","d_blacksmith2.wav","dwarves01.wav","dwarves02.wav","osgiliath04.wav","d_carpenter1.wav"]),
+("urukhai_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "orc_warg.wav","d_carpenter1.wav"]),
+("seaside_occasional" ,sf_2d|sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","sea_seagulls.wav", "sea_seaside.wav", "d_blacksmith2.wav"]),
 ("morgul_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","silence.wav","silence.wav","silence.wav","silence.wav","morgul01.wav","morgul02.wav"]),
 ("eosgi_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["orc_beast01.wav","orc_beast02.wav","orc_beast03.wav","osgiliath01.wav","osgiliath02.wav","osgiliath03.wav","osgiliath04.wav","osgiliath05.wav"]),
 ("wosgi_occasional"   ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","silence.wav","osgiliath01.wav","osgiliath02.wav","osgiliath03.wav","osgiliath04.wav","osgiliath05.wav"]),
-("tirith_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","good_eagle01.wav","gondor_army.wav","d_blacksmith2.ogg","silence.wav","silence.wav"]),
+("tirith_occasional"  ,sf_2d|sf_priority_8|sf_vol_4,["silence.wav","good_eagle01.wav","gondor_army.wav","d_blacksmith2.wav","silence.wav","silence.wav"]),
 ("morannon_occasional",sf_2d|sf_priority_8|sf_vol_4,["silence.wav"]),
+("tirith_top_occasional",sf_2d|sf_priority_8|sf_vol_4,["silence.wav","good_eagle01.wav","silence.wav","silence.wav","silence.wav","silence.wav"]),
 
 #yelling in a dialog window
 ("meeting_elf",sf_priority_6|sf_vol_4, ["elf_rivendell_yell_1.wav","elf_rivendell_yell_2.wav","elf_basic_yell_1.wav","elf_basic_yell_2.wav","elf_basic_yell_3.wav","elf_basic_yell_4.wav","elf_basic_yell_5.wav","elf_basic_yell_6.wav","elf_basic_yell_7.wav","elf_basic_yell_8.wav","elf_basic_yell_9.wav","elf_basic_yell_10.wav"]),
@@ -331,5 +332,11 @@ sounds = [
 
 ("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["henneth_loop.wav"]),
 ("orc_cheer",sf_priority_5|sf_vol_10, ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
+# directional sounds for props
+("water_wavesplash_source",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_wavesplash_loop.wav"]),
+("water_waves_source"     ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]),
+("water_splash_source"    ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_splash_loop.wav"]),
+#("fire_loop"             ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
+#("torch_loop"            ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
 
 ]

@@ -18803,6 +18803,17 @@ scripts = [
 	(try_end),
 ]),
 
+("save_compartibility_script1",[]),
+("save_compartibility_script2",[]),
+("save_compartibility_script3",[]),
+("save_compartibility_script4",[]),
+("save_compartibility_script5",[]),
+("save_compartibility_script6",[]),
+("save_compartibility_script7",[]),
+("save_compartibility_script8",[]),
+("save_compartibility_script9",[]),
+("save_compartibility_script10",[]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts

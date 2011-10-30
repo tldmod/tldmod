@@ -1491,7 +1491,7 @@ center_list = [
 	[-1, "trp_smith_urcamp", "trp_merchant_urcamp", "trp_no_troop", "pt_isengard_recruits",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_tracker","trp_uruk_hai_of_isengard"], 
 	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 # Elf centers
-("p_town_caras_galadhon", ["scn_caras_galadhon_center", -1, "scn_elf_prison","scn_elf_tavern","scn_elf_arena",-1,"mesh_town_caras_galadhon"],
+("p_town_caras_galadhon", ["scn_caras_galadhon_center", -1, "scn_elf_prison","scn_elf_tavern","scn_elf_arena","scn_forest_lorien2","mesh_town_caras_galadhon"],
 	["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_merchant_cgaladhon", "trp_elder_cgaladhon", "pt_lorien_recruits", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
 	["icon_mfc_lorien"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
 ("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1, "scn_cerin_dolen_center", "mesh_ui_default_menu_window"],

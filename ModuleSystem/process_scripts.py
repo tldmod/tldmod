@@ -14,11 +14,20 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   list_type = type(temp_list)
   for i_script in xrange(len(scripts)):
     func = scripts[i_script]
+    # Dunde 's protection ##########################################
+    script_name = convert_to_identifier(func[0])
+    if (not((script_name.startswith("game_")) or (script_name.startswith("multiplayer_")))):
+       script_name = "scrip"  
+  for i_script in xrange(len(scripts)):
+    func = scripts[i_script]
     if (type(func[1]) == list_type):
-      file.write("%s -1\n"%(convert_to_identifier(func[0])))
+      #file.write("%s -1\n"%(convert_to_identifier(func[0])))
+      file.write("%s -1\n"%script_name)
       save_statement_block(file,convert_to_identifier(func[0]), 0,func[1], variable_list,variable_uses,tag_uses,quick_strings)
     else:
-      file.write("%s %f\n"%(convert_to_identifier(func[0]), func[1]))
+      #file.write("%s %f\n"%(convert_to_identifier(func[0]), func[1]))
+      file.write("%s %f\n"%(script_name, func[1]))
+      ###############################################################
       save_statement_block(file,convert_to_identifier(func[0]), 0,func[2], variable_list,variable_uses,tag_uses,quick_strings)
     file.write("\n")
   file.close()

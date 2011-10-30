@@ -1347,5 +1347,17 @@ triggers = [
 	    (jump_to_menu,"mnu_mutiny"),
 	(try_end),
    ]),
+   
+# save game compartibility triggers. replace those if you add new ones
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
 
 ]

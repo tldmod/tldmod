@@ -1255,4 +1255,17 @@ items =[
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
 ["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
+["save_compartibility_item1","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item2","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item3","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item4","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item5","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item6","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item7","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item8","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item9","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["save_compartibility_item10","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+
+
+
 ]

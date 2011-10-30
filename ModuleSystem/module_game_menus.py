@@ -95,8 +95,8 @@ game_menus = [
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
 	 ("spacer"    ,[]," "  ,[]),
 	 ("go_back"   ,[],"Go Back",[(change_screen_quit              ),]), 
-	 ("quick"     ,[],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
-	 ("quick2"    ,[],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	]
 ),
 #This needs to be the second window!!!
@@ -152,19 +152,19 @@ game_menus = [
         (change_screen_map), #(change_screen_return),
        ]),
 	  ("spacer",[],"_",[]),
-      ("cheat00",[(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
+      ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
 	    ],"CHEAT: become a {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",0),
 	    (call_script,"script_start_as_one",":t"),
 		(jump_to_menu,"mnu_start_phase_2" ),
 	  ]),
-      ("cheat01",[(troop_get_upgrade_troop,":t","$player_current_troop_type",1),(gt,":t",0),(str_store_troop_name,s21,":t"),
+      ("cheat01",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",1),(gt,":t",0),(str_store_troop_name,s21,":t"),
 	    ],"CHEAT: become a  {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",1),
 	    (call_script,"script_start_as_one",":t"),
 		(jump_to_menu,"mnu_start_phase_2" ),
 	  ]),
-      ("cheat03",[(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party",
+      ("cheat03",[(eq, cheat_switch, 1),(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party",
 	  [(party_add_members, "p_main_party", "$player_current_troop_type", 10),	  
 	  ]),
       #("cheat02",[],"CHEAT!",
@@ -208,7 +208,7 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 3),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_5" ,[],"____________Skirmish, North factions vs Rhun_______.",
 		[(assign, "$g_custom_battle_scenario", 4),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_6" ,[],"____________Siege Attack, Orcs vs Dwarves__________.",
+	("custom_battle_scenario_6" ,[(eq, cheat_switch, 1),],"____________Siege Attack, Orcs vs Dwarves__________.",
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_7" ,[],"____________Ambush, Orcs vs Mirkwood_______________.",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
@@ -217,22 +217,22 @@ game_menus = [
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
 
-	("custom_battle_scenario_11",[],"____________Test Battles (Tune Balancing!)________.",
+	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Battles (Tune Balancing!)________.",
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
 
-		("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
+		("custom_battle_scenario_10",[(eq, cheat_switch, 1),],"____________Scenery test battle____________________.",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_11",[],"____________Test Troll Battles_____________________.",
+	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Troll Battles_____________________.",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("custom_battle_scenario_11",[],"____________Test Warg Battles______________________.",
+	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Warg Battles______________________.",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
-	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
+	("choose_scene"             ,[(eq, cheat_switch, 1),],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
     ("go_back"                  ,[],"______________________________Go back______________.",[(change_screen_quit)])]
 ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
-    "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. ^For tutorial on basic game mechanics please use Native module",
+    "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. For tutorial on basic game mechanics please use Native module",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window")],
 	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
@@ -1180,7 +1180,7 @@ game_menus = [
 ),
 ("choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
  "^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...","none",[
-	 # (jump_to_menu, "mnu_auto_return"), # comment this line to let devs skip skill/face editing
+	 (jump_to_menu, "mnu_auto_return"), # comment this line to let devs skip skill/face editing
 	],
 	[ ("skip",[],"SKIP THAT: let me playtest now",[(jump_to_menu, "mnu_start_phase_2"),]),
 	  ("continue",[],"Proceed as normal",[(jump_to_menu, "mnu_auto_return"),])]
@@ -1245,7 +1245,7 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])]
 ),
-("faction_orders",mnf_scale_picture,
+("faction_orders",0,
    "{s9}", "none",
    [ 
      (set_background_mesh, "mesh_ui_default_menu_window"),
@@ -1570,9 +1570,9 @@ game_menus = [
 	
 	
 	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
+	 ("Cheat_enable",[(eq, cheat_switch, 1),(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
 
-     ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
+     ("camp_cheat_option", [(eq, cheat_switch, 1),(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
      
      ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 ## MadVader test begin
@@ -1631,8 +1631,8 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...", 0x30FFC8),]),
-   ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
+   ("camp_mvtest_expwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...", 0x30FFC8),]),
+   ("camp_mvtest_evilwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
        (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
@@ -1640,7 +1640,7 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_rank",[],"Give me local money, rank and influence.",[
+   ("camp_mvtest_rank",[(eq, cheat_switch, 1),],"Give me local money, rank and influence.",[
     (troop_add_gold, "trp_player", 10000),
     (call_script, "script_increase_rank", "$ambient_faction", 100),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
@@ -1679,7 +1679,7 @@ game_menus = [
     # (str_store_faction_name, s1, "$ambient_faction"),
     # (display_message, "@{s1} influence increased to {reg0}!", 0x30FFC8),
    # ]),
-   ("camp_mvtest_reinf",[],"Reinforce me!",[
+   ("camp_mvtest_reinf",[(eq, cheat_switch, 1),],"Reinforce me!",[
     (party_get_num_companions, ":old_size", "p_main_party"),
     (try_for_range, ":unused", 0, 10),
       (call_script, "script_cf_reinforce_party", "p_main_party"),
@@ -1688,7 +1688,7 @@ game_menus = [
     (assign, reg0, ":old_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
    ]),
-   ("camp_mvtest_sieges",[],"Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
+   ("camp_mvtest_sieges",[(eq, cheat_switch, 1),],"Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
    # ("camp_mvtest_trolls",[],"Test trolls in battle.",[
      # (party_add_members, "p_main_party", "trp_troll_of_moria", 3),
      # (set_spawn_radius, 0),
@@ -1701,14 +1701,14 @@ game_menus = [
      # (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
      # (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
    # ]),            
-   ("camp_mvtest_legend",[],"Enable legendary places.",[
+   ("camp_mvtest_legend",[(eq, cheat_switch, 1),],"Enable legendary places.",[
     (enable_party, "p_legend_amonhen"),
     (enable_party, "p_legend_deadmarshes"),
     (enable_party, "p_legend_mirkwood"),
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary places enabled!", 0x30FFC8),
    ]),
-   ("camp_mvtest_intro",[],"Test cutscenes...",[(jump_to_menu, "mnu_mvtest_cutscenes"),]),
+   ("camp_mvtest_intro",[(eq, cheat_switch, 1),],"Test cutscenes...",[(jump_to_menu, "mnu_mvtest_cutscenes"),]),
    # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
     # (store_sub, ":faction_index", "$ambient_faction", kingdoms_begin),
     # (try_begin),
@@ -1737,10 +1737,10 @@ game_menus = [
       # (position_get_y, reg3, pos13),
       # (display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
    # ]),
-   ("camp_mvtest_facstr",[],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
-   ("camp_mvtest_killed",[],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
-   ("camp_mvtest_facai",[],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
-   ("camp_mvtest_towns",[],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
+   ("camp_mvtest_facstr",[(eq, cheat_switch, 1),],"View faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_report")]),
+   ("camp_mvtest_killed",[(eq, cheat_switch, 1),],"View faction casualties.",[(jump_to_menu, "mnu_mvtest_faction_casualties")]),
+   ("camp_mvtest_facai",[(eq, cheat_switch, 1),],"View faction AI.",[(jump_to_menu, "mnu_mvtest_facai_report")]),
+   ("camp_mvtest_towns",[(eq, cheat_switch, 1),],"View center strength income.",[(jump_to_menu, "mnu_mvtest_town_wealth_report")]),
    # ("camp_mvtest_wm",[],"Where is my party?",[
     # (try_begin),
       # (call_script, "script_cf_party_is_south_of_white_mountains", "p_main_party"),
@@ -1760,8 +1760,8 @@ game_menus = [
     # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
     # (display_message, "@Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
    # ]),
-   ("camp_mvtest_defeat",[],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
-   ("camp_mvtest_advcamps",[],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
+   ("camp_mvtest_defeat",[(eq, cheat_switch, 1),],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
+   ("camp_mvtest_advcamps",[(eq, cheat_switch, 1),],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),
      # (party_set_slot, ":root_defeated_party", slot_center_destroyed, 1), # DESTROY!
@@ -1777,7 +1777,7 @@ game_menus = [
      # (party_set_name, ":ruin_party", "@{s1} ruins"),
      # (display_message, "@Hornburg razed - check map!", 0x30FFC8),
    # ]),
-   ("camp_mvtest_wait",[],"Fast forward for 30 days.",[
+   ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
          (assign, "$g_camp_mode", 1),
          (assign, "$g_player_icon_state", pis_camping),
          (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
@@ -5381,7 +5381,8 @@ game_menus = [
 # ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    # ]),
 	  
-      ("town_sneak",[(party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
+      ("town_sneak",[(eq, cheat_switch, 1),
+					 (party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
                      (eq,"$cant_sneak_into_town",0)],
        "TEST: Disguise yourself and try to sneak into the town.",
@@ -5406,7 +5407,7 @@ game_menus = [
          (try_end)
          ]),
       ("castle_start_siege",
-       [ (eq, 0, 1), #MV: player can't start a sieg
+       [ (eq, cheat_switch, 1),(eq, 0, 1), #MV: player can't start a sieg
            (this_or_next|party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
            (             party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, "p_main_party"),
            (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
@@ -5433,7 +5434,7 @@ game_menus = [
          ]),
 
       ("cheat_castle_start_siege",
-       [
+       [ (eq, cheat_switch, 1),
          (eq, "$cheat_mode", 1),
          (this_or_next|party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
          (             party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, "p_main_party"),
@@ -5450,7 +5451,7 @@ game_menus = [
          (try_end),
            ],
        "CHEAT: Besiege the {reg6?town:castle}...",
-       [
+       [   
            (assign,"$g_player_besiege_town","$g_encountered_party"),
            (jump_to_menu, "mnu_castle_besiege"),
            ]),
@@ -5460,12 +5461,12 @@ game_menus = [
                                                        (party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
                                                        (jump_to_scene,":castle_scene"),
                                                        (change_screen_mission)]),
-      ("castle_cheat_exterior",[(eq, "$cheat_mode", 1)], "CHEAT! Exterior.",[
+      ("castle_cheat_exterior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT! Exterior.",[
                                                        (set_jump_mission,"mt_ai_training"),
                                                        (party_get_slot, ":castle_scene", "$current_town", slot_castle_exterior),
                                                        (jump_to_scene,":castle_scene"),
                                                        (change_screen_mission)]),
-      ("castle_cheat_town_walls",[(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",
+      ("castle_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",
        [
          (party_get_slot, ":scene", "$current_town", slot_town_walls),
          (set_jump_mission,"mt_ai_training"),
@@ -6597,7 +6598,8 @@ game_menus = [
 		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
-      ("dungeon_enter",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
+      ("dungeon_enter",[(eq, cheat_switch, 1), # not done yet
+	    (party_slot_eq,"$current_town",slot_party_type, spt_town),
         (eq, "$current_town", "p_town_erebor"),
         (eq,"$dungeon_access",1),
         ],"Enter the cellars.",[
@@ -6673,17 +6675,17 @@ game_menus = [
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
 
-     ("town_cheat_alley",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
+     ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
 							(party_get_slot, reg(11), "$current_town", slot_town_alley),
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,reg(11)),
 							(change_screen_mission)]),
-      ("castle_cheat_interior",[(eq, "$cheat_mode", 1)], "CHEAT: Interior.",[
+      ("castle_cheat_interior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT: Interior.",[
 							(set_jump_mission,"mt_ai_training"),
 							(party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
 							(jump_to_scene,":castle_scene"),
 							(change_screen_mission)]),
-      ("castle_cheat_town_exterior",[(eq, "$cheat_mode", 1)], "CHEAT: Exterior.",[
+      ("castle_cheat_town_exterior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT: Exterior.",[
 							(try_begin),
 								(party_slot_eq,"$current_town",slot_party_type, spt_castle),
 								(party_get_slot, ":scene", "$current_town", slot_castle_exterior),
@@ -6693,17 +6695,17 @@ game_menus = [
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,":scene"),
 							(change_screen_mission)]),
-      ("castle_cheat_dungeon",[(eq, "$cheat_mode", 1)], "CHEAT: Prison.",[
+      ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT: Prison.",[
 							(set_jump_mission,"mt_ai_training"),
 							(party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
 							(jump_to_scene,":castle_scene"),
 							(change_screen_mission)]),
-      ("castle_cheat_town_walls",[(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",[
+      ("castle_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",[
 							(party_get_slot, ":scene", "$current_town", slot_town_walls),
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,":scene"),
 							(change_screen_mission)]),
-      ("cheat_town_start_siege",[(eq, "$cheat_mode", 1),
+      ("cheat_town_start_siege",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),
 								(party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
 								(lt, "$g_encountered_party_2", 1),
 								(call_script, "script_party_count_fit_for_battle","p_main_party"),
@@ -6720,7 +6722,7 @@ game_menus = [
 					   ]),
       ("center_reports",[(eq, "$cheat_mode", 1),], "CHEAT: Show reports.",
 						[(jump_to_menu,"mnu_center_reports")]),
-      ("sail_from_port",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
+      ("sail_from_port",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
                         ], "CHEAT: Sail from port.",
 						[(assign, "$g_player_icon_state", pis_ship),
 						(party_set_flags, "p_main_party", pf_is_ship, 1),
@@ -7081,7 +7083,6 @@ game_menus = [
     ],
     [("continue",[],"Continue...", [(change_screen_return)])]
 ),
-
 ( "notification_faction_defeated",0,
     "^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!",
     "none",
@@ -7259,7 +7260,6 @@ game_menus = [
     ],
     []
 ),
-
 ( "auto_convo",0,"stub","none",
     [
        (modify_visitors_at_site, "scn_conversation_scene"),
@@ -7271,7 +7271,6 @@ game_menus = [
     ],
     []
 ),
-
 ( "auto_conversation_cutscene",0,"stub","none",
     [
        (modify_visitors_at_site, "scn_conversation_scene"),
@@ -7743,7 +7742,11 @@ game_menus = [
     # [("ruin_leave",[],"Leave...",[(change_screen_return)]),
 # ]),
 
-
+("taunt",0,
+ "You taunted the defenders, shouting insults and parading a good distance away for some time. There was no reaction apart from several arrows which fell well short of your ranks. ^Looks like there is nothing to do here",
+ "none",
+   [],[("leave",[],"Back...",[(change_screen_return)])],
+),
 
    
 ] 
