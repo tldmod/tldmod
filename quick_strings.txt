@@ -1,4 +1,4 @@
-1008
+1014
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -154,6 +154,10 @@ qstr_{s0}^{reg3?{reg3}:}_ {s0}^{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_None None
 qstr_^None ^None
+qstr_the_Hand_shaped_sign the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc
+qstr_the_Old_Ford_where_t the_Old_Ford,_where_the_Old_Forest_Road_crosses_the_River_Anduin
+qstr_a_big_ford_crossing_ a_big_ford_crossing_the_River_{s15}
+qstr_a_small_ford_crossin a_small_ford_crossing_the_River_{s15}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
@@ -596,6 +600,7 @@ qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s3})
 qstr_Your_relation_with_t Your_relation_with_the_factions_are:^{s2}
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
+qstr_^^You_are_in_proximi ^^You_are_in_proximity_of_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
@@ -695,6 +700,7 @@ qstr_Items_added_to_playe Items_added_to_player_inventory.
 qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
 qstr_DEBUG:_Smiths_just_g DEBUG:_Smiths_just_got_stuffed!
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
+qstr__nearby_{s17}. ,_nearby_{s17}.
 qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
 qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.

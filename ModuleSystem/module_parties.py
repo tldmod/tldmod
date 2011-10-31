@@ -105,7 +105,7 @@ parties = [
     ("town_beorning_village","Beorning_Village", icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_beorn,0,ai_bhvr_hold,0,(-4.4,-184.7),[],170),
     ("town_beorn_house"     ,"Beorn's House",    icon_smallvillage |pf_tld_down, no_menu, pt_none, fac_beorn,0,ai_bhvr_hold,0,(-19.7,-194.0),[],170),
 # Moria towns
-    ("town_moria","Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_moria,0,ai_bhvr_hold,0,(55.33,-150.7),[],200),
+    ("town_moria","Gates_of_Moria",           icon_moria      |pf_tld_down, no_menu, pt_none, fac_moria,0,ai_bhvr_hold,0,(55.33,-150.7),[],200),
     ("town_troll_cave","Troll_Cave", icon_orctower   |pf_tld_down, no_menu, pt_none, fac_moria,0,ai_bhvr_hold,0,(49.6,-120),[],170),
 # Dale towns
     ("town_dale","Dale",             icon_town     |pf_tld_down, no_menu, pt_none, fac_dale,0,ai_bhvr_hold,0,(-61.1,-223.9),[],170),
@@ -166,13 +166,13 @@ parties = [
 # ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
 
 ### TLD map icons
-   ("Argonath","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.883472,-51.047958),[],180),
-   ("Argonath2","argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.795536,-51.047958),[],180),
+   ("Argonath","Argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.883472,-51.047958),[],180),
+   ("Argonath2","Argonath",icon_argonath|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.795536,-51.047958),[],180),
    #("Hand1","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(64.8,-59.1),[],75),
    #("Hand2","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(65.4,-57.3),[],75),
    #("Hand3","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(68.5,-64.5),[],5),
    #("Hand4","hand_isen",icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.4,-64.5),[],5),
-   ("hand_isen" ,"hand_isen" ,icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.886200,-52.610794),[],185),
+   ("hand_isen" ,"Handsign_of_Isengard" ,icon_hand_isen|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.886200,-52.610794),[],185),
    ("mount_doom","Mount_Doom",icon_orodruin |pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-109.411041,1.567230),[],170),
    ("town_barad_dur","Barad_Dur",icon_baraddur|pf_is_static|pf_always_visible          , no_menu, pt_none, fac_mordor ,0,ai_bhvr_hold,0,(-100.048325,-3.573029),[],170),
 
@@ -254,24 +254,24 @@ parties = [
 
 
 
-  ("ford_cair_andros1"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
-  ("ford_cair_andros2"  ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
-  ("ford_caras_galadhon","_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),
-  ("ford_brown_lands"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -18.7,-109.76),[], 30),
-  ("ford_rauros"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.27, -32.95),[],145),
-  ("ford_pelargir"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.91,  64.37),[],145),
-  ("ford_edhellond"     ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 36.59,  48.24),[],145),
+  ("ford_cair_andros1"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
+  ("ford_cair_andros2"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
+  ("ford_caras_galadhon","Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),
+  ("ford_brown_lands"   ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -18.7,-109.76),[], 30),
+  ("ford_rauros"        ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.27, -32.95),[],145),
+  ("ford_pelargir"      ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.91,  64.37),[],145),
+  ("ford_edhellond"     ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 36.59,  48.24),[],145),
+  ("old_ford"           ,"_Old_Ford_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
 #small rivers
-  ("ford_cerin_dolen"   ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.46,-130.72),[],220),
-  ("ford_erech"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.74,  31.75),[],145),
-  ("ford_isen1"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.35, -43.6),[],145),
-  ("ford_isen2"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.73, -47.21),[],145),
-  ("ford_rohan"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7.70, -53.44),[],145),
-  ("ford_rohan2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.66, -12.31),[],145),
-  ("ford_fangorn"       ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
-  ("ford_fangorn2"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
-  ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
-  ("ford_moria2"        ,"_Old_Ford_",icon_ford_rocks|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
+  ("ford_cerin_dolen"   ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.46,-130.72),[],220),
+  ("ford_erech"         ,"Ringlo",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.74,  31.75),[],145),
+  ("ford_isen1"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.35, -43.6),[],145),
+  ("ford_isen2"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.73, -47.21),[],145),
+  ("ford_rohan"         ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7.70, -53.44),[],145),
+  ("ford_rohan2"        ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.66, -12.31),[],145),
+  ("ford_fangorn"       ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
+  ("ford_fangorn2"      ,"Limlight",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
+  ("ford_moria"         ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
   
   # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places

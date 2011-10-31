@@ -1498,7 +1498,7 @@ game_menus = [
 ),
 
 ("camp",0,
-   "^^^^^^You are in {s1}.^^What do you want to do?",
+   "^^^^You are in {s1}.{s2}^^What do you want to do?",
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
 	  (call_script,"script_maybe_relocate_player_from_z0"),
@@ -1506,6 +1506,13 @@ game_menus = [
 	  (party_get_current_terrain, "$current_player_terrain","p_main_party"),
 	  (call_script, "script_get_region_of_party", "p_main_party"),
 	  (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+	  
+	  (str_clear, s2),
+	  (try_begin), 
+		(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
+		(str_store_string,s2,"@^^You are in proximity of {s17}."), 
+	  (try_end),
+	  
 	  (store_add, reg2, "$current_player_region", str_fullname_region_begin),
 	  (str_store_string,s1,reg2),
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
@@ -3535,7 +3542,7 @@ game_menus = [
   ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
-    "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}.^^Your orders?",
+    "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?",
     "none",
     [	#(set_background_mesh, "mesh_ui_default_menu_window"),
 		(try_begin), 
@@ -3550,6 +3557,11 @@ game_menus = [
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region",),
 		(str_store_string,s3,reg2),
 		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+		(str_clear, s4),
+		(try_begin), 
+			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
+			(str_store_string,s4,"@, nearby {s17}."), 
+		(try_end),
 
         (assign, "$g_enemy_party", "$g_encountered_party"),
         (assign, "$g_ally_party", -1),
@@ -4762,7 +4774,7 @@ game_menus = [
     ]
 ),
 ( "join_battle",mnf_enable_hot_keys,
-    "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}.",
+    "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	
@@ -4772,6 +4784,12 @@ game_menus = [
 		
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region"),
 		(str_store_string,s3,reg2),
+		
+		(str_clear, s4),
+		(try_begin), 
+			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
+			(str_store_string,s4,"@, nearby {s17}."), 
+		(try_end),
 		
 		(str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),

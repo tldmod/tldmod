@@ -1849,6 +1849,7 @@ scripts = [
 		 (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
 		 (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
 		 (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
+		 (else_try),(eq, "$g_encountered_party", "p_old_ford"   ),(jump_to_menu, "mnu_camp"),
 		#(else_try),(eq, "$g_encountered_party_template", "pt_defend_refugees"),(jump_to_menu, "mnu_defend_refugees"), #TODO
 		(else_try),(jump_to_menu, "mnu_simple_encounter"),
 		(try_end),
@@ -6979,14 +6980,42 @@ scripts = [
     [ (store_script_param_1, ":party_no"),
       (assign, ":min_distance", 2),
       (assign, reg0, -1),
+	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
-        #(party_is_active, ":center_no"), #even unactive stuff are landmarks
-		#(party_slot_eq, ":center_no", slot_center_destroyed, 0), # even destroye stuff is
+        #(party_is_active, ":center_no"), 
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # even destroye stuff are landmarks
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
         (lt, ":party_distance", ":min_distance"),
         (assign, ":min_distance", ":party_distance"),
         (assign, reg0, ":center_no"),
       (try_end),
+]),
+
+# script_get_closest_landmark (mtarini)
+# a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
+# Output: s17: the string
+("cf_store_landmark_description_in_s17", [
+	(store_script_param_1, ":landmark"),
+	(ge, ":landmark", 0),
+	(str_store_party_name, s15, ":landmark"),
+	
+	(assign, ":ok", 1),
+	(try_begin),
+		(eq,":landmark","p_hand_isen"),	
+		(str_store_string, s17, "@the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc"),
+	(else_try),
+		(eq,":landmark","p_old_ford"),
+		(str_store_string, s17, "@the Old Ford, where the Old Forest Road crosses the River Anduin"),
+	(else_try),
+		(is_between,":landmark","p_ford_cair_andros1","p_ford_cerin_dolen"), # Anduin fords
+		(str_store_string, s17, "@a big ford crossing the River {s15}"),
+	(else_try),
+		(is_between,":landmark","p_ford_cerin_dolen","p_camplace_N1"), # small fords
+		(str_store_string, s17, "@a small ford crossing the River {s15}"),
+	(else_try),
+		(assign, ":ok", 0), # no good description found
+	(try_end),
+	(eq, ":ok", 1),
 ]),
 
 # script_get_closest_walled_center_of_faction
@@ -9008,6 +9037,9 @@ scripts = [
 	(store_script_param_1, ":terrain_type"),
 	
 	(position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	
+	#(store_add,":sum", ":x",":y"),
+	(store_sub,":diff", ":x",":y"),
 	 
 	(set_fixed_point_multiplier,100.0),
 	#(assign, reg5,":x"),(assign, reg6,":y"),(convert_to_fixed_point,reg5),(convert_to_fixed_point,reg6),(display_message,"@you are in ({reg5},{reg6})..."),
@@ -9026,7 +9058,7 @@ scripts = [
 	(else_try),
 		# ithilien? (north or south)
 		(is_between, ":x", -7084, -5890 ),(is_between, ":y", -2243, 6500), 
-		(try_begin),(ge,":y",4143),
+		(try_begin),(ge,":y",5546),
 		 	(assign, reg1, region_s_ithilien),
 		(else_try),(ge,":y",1143),
 		 	(assign, reg1, region_c_ithilien),
@@ -9035,9 +9067,13 @@ scripts = [
 		(try_end),
 	(else_try),
 		# s _ ithilien?  (second chance)
-		(position_set_x,pos20,-7070),(position_set_y,pos20,8003),(position_set_z,pos20,0.0),
-		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",3000),
+		(is_between, ":x", -8000, -3400 ),(is_between, ":y", 6000,8500), (lt, ":diff", -1065),
 		(assign, reg1, region_s_ithilien),
+	(else_try),
+		# c_ ithilien?  (second chance)
+		(is_between, ":x", -7800, -4700 ),(is_between, ":y", -3500,6500), 
+		(position_set_x,pos20,-3215),(position_set_y,pos20,4185),(position_set_z,pos20,0.0),(get_distance_between_positions,":dist",pos1,pos20), (gt,":dist",850),
+		(assign, reg1, region_c_ithilien),
 	(else_try),
 		# entwash? (delta entwash or wetwand)
 		(position_set_x,pos20,-3710),(position_set_y,pos20,-1570),(position_set_z,pos20,0.0),
@@ -9197,7 +9233,9 @@ scripts = [
 		(is_between, ":x", -3500,3500),(gt, ":y", -13400),
 		(assign, reg1, region_anduin_banks),
 	(else_try),
-		# else, "vague locations": 
+		(is_between, ":x", -3900,1800),
+		(assign, reg1, region_anduin_banks),
+	(else_try),	
 		(lt, ":x", 0),(lt,  ":y",  -23662),
 		(assign, reg1, region_above_mirkwook),
 	(try_end),

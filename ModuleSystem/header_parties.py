@@ -28,6 +28,14 @@ pf_limit_members             = 0x00100000
 pf_hide_defenders            = 0x00200000
 pf_show_faction              = 0x00400000
 
+### parties name prefixes (mtarini)
+pf_nameprefix_nul            = 0x00000000
+pf_nameprefix_town           = 0x01000000
+pf_nameprefix_city           = 0x02000000
+pf_nameprefix_the            = 0x03000000
+pf_nameprefix_a              = 0x04000000
+pf_nameprefix_an             = 0x05000000
+
 pf_carry_goods_bits    = 48
 pf_carry_gold_bits     = 56
 pf_carry_gold_multiplier = 20

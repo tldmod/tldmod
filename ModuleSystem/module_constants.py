@@ -991,7 +991,7 @@ centers_begin = "p_town_minas_tirith"
 centers_end = "p_centers_end"
 
 landmark_begin = centers_begin
-landmark_end = "p_town_barad_dur" #MV: was p_test_scene, but got script error for p_town_barad_dur on faction defeat.
+landmark_end = "p_camplace_N1" 
 
 advcamps_begin = "p_advcamp_gondor"
 advcamps_end   = centers_end

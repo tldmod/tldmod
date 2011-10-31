@@ -77,6 +77,7 @@ simple_triggers = [
     (else_try),(eq, "$g_encountered_party", "p_pyre_of_duessa"),(jump_to_menu, "menu_funeral_pyre_female"),
     (else_try),(is_between, "$g_encountered_party", "p_start_pyres", "p_end_pyres"),(jump_to_menu, "menu_funeral_pyre"),
     (else_try),(eq, "$g_encountered_party", "p_barad_dur"),(jump_to_menu, "menu_barad-dur"),
+	(else_try),(eq, "$g_encountered_party", "p_old_ford"),(jump_to_menu, "menu_camp"),
     (else_try),(jump_to_menu, "menu_simple_encounter"),
     (try_end),
 (else_try),
