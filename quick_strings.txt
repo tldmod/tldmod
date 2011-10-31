@@ -1,4 +1,4 @@
-974
+978
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -540,7 +540,7 @@ qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})
 qstr_Resource_Pts:^_{reg1 Resource_Pts:^_{reg12}_(in_{s16})
 qstr_{s11}_{s24}__{reg13} {s11},_{s24}_({reg13})
 qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
-qstr_{s15}_{reg12}__with_ {s15},_{reg12}_(with_{s16})
+qstr_{s15}_{reg12}__in_{s {s15},_{reg12}_(in_{s16})
 qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
 qstr___ _-
@@ -627,8 +627,12 @@ qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
 qstr_{s10}_besieged! {s10}_besieged!
-qstr_OFF OFF
+qstr_Unrestricted__cheat_ Unrestricted_(cheat)
+qstr_Avoid_Unappropriate Avoid_Unappropriate
 qstr_ON ON
+qstr_OFF OFF
+qstr_Always Always
+qstr_Only_after_finding_t Only_after_finding_them
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.

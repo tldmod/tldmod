@@ -95,9 +95,10 @@ mission_templates = [ # not used in game
 	 (31,mtef_visitor_source,af_override_all,0,1,[itm_prisoner_coll_chain]),#(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
     [ # other people in the backgroud (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
-		# (ti_on_agent_spawn, 0, 0, [], [
-			# (store_trigger_param_1, ":agent"),
-			# (agent_is_human, ":agent"),
+		(ti_on_agent_spawn, 0, 0, [], [
+			(store_trigger_param_1, ":agent"),
+			(agent_is_human, ":agent"),
+			(store_random_in_range,reg0,0,100),(agent_set_animation_progress, ":agent", reg0), # break sincrony of people on background
 			# (agent_get_entry_no,reg1,":agent"),
 			# (eq, reg1, 1), # only those at entry point 1
 			# (agent_get_troop_id, reg42, ":agent"),
@@ -111,13 +112,13 @@ mission_templates = [ # not used in game
 			    # (display_message, "@ATTEMPT REMEMBERING PRISONER AGENT!"),
 				# (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 1, af_override_all),
 				# (mission_tpl_entry_add_override_item,  "mt_conversation_encounter", 1, "itm_prisoner_coll_chain")
-				# ]),
+		]),
 		# (0,0, ti_once, [],[ #(eq,"$talk_context",tc_prisoner_talk)
 			# (call_script, "script_remove_agent", reg41),
 			# (add_visitors_to_current_scene,31, "trp_knight_2_11",1),
 			# (display_message, "@ATTEMPT SPAWNING!"),]),
-		# freindly greetings (after 0.2 secs)
-		(0, 0.2, ti_once, [], [ 
+		# freindly greetings (after 0.35 secs)
+		(0, 0.35, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
 			(try_for_agents,":agent"),
 				(agent_is_human, ":agent"),

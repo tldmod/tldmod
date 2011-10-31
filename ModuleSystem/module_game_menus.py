@@ -280,7 +280,7 @@ game_menus = [
 			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13}, {reg11} (with {s16})"),  # finf
 		(try_end),
 		(try_begin), 
-			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15}, {reg12} (with {s16})"),  # first rp
+			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15}, {reg12} (in {s16})"),  # first rp
 		(try_end),
 	(try_end),
 	(str_store_troop_name, s10, "$g_player_troop"),
@@ -2781,9 +2781,9 @@ game_menus = [
 ("game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
-    ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@OFF"),
-									(else_try),(str_store_string, s7, "@ON"),(try_end),
-        ],"Item restrictions: {s7}",[
+    ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@Unrestricted (cheat)"),
+									(else_try),(str_store_string, s7, "@Avoid Unappropriate"),(try_end),
+        ],"Player's equipment: {s7}",[
         (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2)]),
 
     ("game_options_formations",[(try_begin),(neq, "$tld_option_formations", 0),(str_store_string, s7, "@ON"),
@@ -2791,9 +2791,9 @@ game_menus = [
         ],"Battle formations and AI: {s7}",[
         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2)]),
 
-	("game_options_town_menu",[(try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
-								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Unlock town menus by visiting town NPCs: {s7}",[
+	("game_options_town_menu",[(try_begin),(neq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@Always"),
+								 (else_try),(str_store_string, s7, "@Only after finding them"),(try_end),
+	    ],"Town places accessible from Menus: {s7}",[
 	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
 
 	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
