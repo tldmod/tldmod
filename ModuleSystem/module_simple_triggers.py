@@ -942,19 +942,21 @@ simple_triggers = [
 # Updating player icon in every frame
 (0,[(troop_get_inventory_slot, ":cur_horse", "trp_player", ek_horse), #horse slot
 	# determine if archer or not
+	
 	(try_begin),
 		(troop_get_inventory_slot, reg5, "trp_player", ek_item_0),(val_max, reg5, 0),(item_get_type, reg5,reg5),
-		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_one_handed_wpn+1), 
+		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_polearm +1), 
 		(assign, ":archer", 1),(neg|is_between, reg5, itp_type_bow, itp_type_crossbow+1),
 		(troop_get_inventory_slot, reg5, "trp_player", ek_item_1),(val_max, reg5, 0),(item_get_type, reg5,reg5),
-		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_one_handed_wpn+1), 
+		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_polearm +1), 
 		(assign, ":archer", 1),(neg|is_between, reg5, itp_type_bow, itp_type_crossbow+1),
 		(troop_get_inventory_slot, reg5, "trp_player", ek_item_2),(val_max, reg5, 0),(item_get_type, reg5,reg5),
-		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_one_handed_wpn+1), 
+		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_polearm +1), 
 		(assign, ":archer", 1),(neg|is_between, reg5, itp_type_bow, itp_type_crossbow+1),
 		(troop_get_inventory_slot, reg5, "trp_player", ek_item_3),(val_max, reg5, 0),(item_get_type, reg5,reg5),
-		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_one_handed_wpn+1), 
+		(assign, ":archer", 0),(neg|is_between, reg5, itp_type_one_handed_wpn, itp_type_polearm +1), 
 		(assign, ":archer", 1),(neg|is_between, reg5, itp_type_bow, itp_type_crossbow+1),
+		(assign, ":archer", 0),
 	(try_end),
     (assign, ":new_icon", -1),
 	

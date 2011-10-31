@@ -102,6 +102,8 @@ scripts = [
 
 	(assign, ":fac","$players_kingdom"),
 	(troop_get_type, ":race","$g_player_troop"),
+	(assign, ":subfac","$players_subkingdom"),
+	(assign, ":subfac","$players_subkingdom"),
 
 	(try_begin),
 		(eq,0,1),
@@ -113,6 +115,20 @@ scripts = [
 		(assign, "$g_player_icon_foot_archer",faction_player_icons[y][3]),
 	]for y in range(len(faction_player_icons)) ) +[
 	(try_end),
+	# overrite choice for gondor subfaction
+	(try_begin),(eq, ":fac", "fac_gondor"), 
+	(try_begin),
+		(eq,0,1),
+	]+concatenate_scripts([
+	(else_try),
+		(eq, ":subfac", subfaction_gondor_player_icons[y][0]),
+		(assign, "$g_player_icon_mounted",    subfaction_gondor_player_icons[y][1]),
+		(assign, "$g_player_icon_foot_melee", subfaction_gondor_player_icons[y][2]),
+		(assign, "$g_player_icon_foot_archer",subfaction_gondor_player_icons[y][3]),
+	]for y in range(len(subfaction_gondor_player_icons)) ) +[
+	(try_end),
+	(try_end),
+		
 	# fix mordor and isengard NON orcs
 	(try_begin),
 		(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
@@ -1170,8 +1186,6 @@ scripts = [
 	# Setting book intelligence requirements
 	#(item_set_slot, "itm_book_tactics", slot_item_intelligence_requirement, 9),
 	  
-	# item faction slots
-	(call_script,"script_set_item_faction"),	  
 
 	]+[
 	# Faction init from data in module_constants.py
@@ -9286,12 +9300,13 @@ scripts = [
 		(assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
 		(assign, "$bs_night_sound", "snd_deadmarshes_ambiance"),
 	(else_try),
-     	(eq,":region",region_lorien),
+     	(this_or_next|eq,":region",region_firien_wood),
+		(eq,":region",region_druadan_forest),
 		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1"),
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
-		(eq,":region",region_firien_wood),
+		(eq,":region",region_lorien),
 		(store_random_in_range, ":scene_to_use", "scn_forest_firien1", "scn_forest_end"),
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
@@ -9312,11 +9327,6 @@ scripts = [
 		 (else_try),              (assign, ":native_terrain_to_use", rt_steppe_forest),
 		(try_end),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
-	(else_try),
-		(eq,":region",region_druadan_forest),
-		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
-		(assign, "$bs_night_sound", "snd_night_ambiance"),
-		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_pelennor, region_anorien+1),

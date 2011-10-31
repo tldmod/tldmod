@@ -89,6 +89,8 @@ game_menus = [
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
 	(set_show_messages,0),
+	# item faction slots
+	(call_script,"script_set_item_faction"),
 	(assign, "$disable_skill_modifiers", 0),
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
@@ -133,7 +135,7 @@ game_menus = [
 		(assign, "$cheat_imposed_quest", -1),	
 
 		(call_script, "script_determine_what_player_looks_like"), # for drawings meshes
-		(set_show_messages,1),
+		#(set_show_messages,1),
 	(try_end),
     (call_script, "script_update_troop_notes", "trp_player"), #MV fixes
     (call_script, "script_update_faction_notes", "$players_kingdom"),
@@ -148,7 +150,7 @@ game_menus = [
 		##   (troop_add_item, "trp_player","itm_horn",0),
 		(troop_equip_items, "trp_player"),
         (troop_sort_inventory, "trp_player"),
-		(set_show_messages, 1),
+		#(set_show_messages, 1),
         (change_screen_map), #(change_screen_return),
        ]),
 	  ("spacer",[],"_",[]),

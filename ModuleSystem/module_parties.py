@@ -271,7 +271,7 @@ parties = [
   ("ford_fangorn"       ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
   ("ford_fangorn2"      ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
   ("ford_moria"         ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
-  ("ford_moria2"        ,"_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
+  ("ford_moria2"        ,"_Old_Ford_",icon_ford_rocks|pf_is_static|pf_always_visible, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
   
   # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places

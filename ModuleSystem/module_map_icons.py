@@ -79,7 +79,7 @@ map_icons = map_icons_scribbler + [
  
   ("footman_gondor",0,"footman_gondor", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("footman_lamedon",0,"footman_lamedon", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("lalala",0,"footman_pinnath", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("footman_pinnath",0,"footman_pinnath", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("lossarnach_axeman_icon",0,"lossarnach_axeman_icon", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("ithilien_ranger",0,"ithilien_ranger", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
 

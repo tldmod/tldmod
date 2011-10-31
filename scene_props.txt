@@ -4258,7 +4258,7 @@ spr_tunnel_crossing 0 0 tunnel_crossing bo_tunnel_crossing 0
 spr_tunnel_chasm 0 0 chasm bo_chasm 0
 
 
-spr_rohan_burial_mound 0 0 roh_burial_mound 0 0
+spr_rohan_burial_mound 0 0 roh_burial_mound bo_roh_burial_mound 0
 
 
 spr_tree_huorn 0 0 tree_huorn 0 0

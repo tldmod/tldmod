@@ -1986,7 +1986,7 @@ ai_scripts = [
 	  (try_end),
 	# gondor gets flags specific of subfactions  (mtarini)
 	  (try_begin),(eq,  ":troop_faction_no", "fac_gondor"),
-		(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
+		#(neg|faction_slot_eq, ":troop_faction_no", slot_faction_leader, ":troop_no"), # not for kings
 		(party_get_slot, ":fief", ":center_no", slot_party_subfaction),
 		(party_set_slot,"$pout_party", slot_party_subfaction, ":fief"), # assign subfaction of spawned party
 		(neq,  ":fief", 0), # not for regulars
@@ -2009,6 +2009,7 @@ ai_scripts = [
         (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":troop_no"),
         (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # marshalls get elite guards
 		(le, ":troop_faction_no", "fac_lorien"), # in all factions until lorien, no royal banners (mtarini)
+		(neq,  ":troop_faction_no", "fac_gondor"), # not gondors
 		(val_add, ":cur_banner", 1), # marshall get royal flags (mtarini)
       (try_end),
 	  (store_random_in_range,":tmp",9,17),

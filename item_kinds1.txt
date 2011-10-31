@@ -1200,7 +1200,7 @@ itemsfile version 2
  itm_orc_two_handed_axe Orc_Double_Handed_Axe Orc_Double_Handed_Axe 1  orc_twohanded_axe 0  341917699 9223635923965575392 500 286870 4.500000 100 0 0 0 0 40960 90 0 84 0 256 40
 0
 
- itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 0 5.000000 100 0 0 0 0 0 99 20 33 7 40 0
+ itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 150 0 5.000000 100 0 0 0 0 0 99 20 33 3 30 0
 0
 
  itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 656522 1.250000 100 0 0 0 0 0 86 53 0 0 20 0

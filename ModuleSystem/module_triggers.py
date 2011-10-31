@@ -34,6 +34,11 @@ triggers = [
 #  (1, 0, 0.0, [(key_is_down,key_r)],[(call_script,"script_tld_war_system_init")] ),
 #  (1, 0, ti_once, [(map_free,0)], [(start_map_conversation,"trp_guide")]),
 
+( 0, 0.5, ti_once, [], [
+ (set_show_messages, 1), # all initial menu is done without messages. Putthem back only here!
+ #(display_message, "@New game started!"),
+]),
+
 # Refresh Smiths
 (0, 0, 24, [], [
 	(try_for_range,":cur_merchant",weapon_merchants_begin,weapon_merchants_end),

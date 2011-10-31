@@ -2675,11 +2675,13 @@ How could I expect someone like {playername} to be up to the challange. My serva
 [anyone,"lord_buy_prisoner_deny", [], "Mmm. As you wish, {playername}, but you'll not get a better offer. Take it from me.", "lord_pretalk", []],
 
 #TLD: your king gives you a faction intro and a horse when you first meet him
+# removed for now
 [anyone,"lord_start", [
         (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
         (eq, "$g_talk_troop_met", 0)],
 "Ah, welcome, {s24}.^You should already know that {s12}. \
-Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a simple mount to help you in your travels. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to a chest.", "lord_pretalk",[
+Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant you a simple mount to help you in your travels. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to a chest."
+		, "lord_pretalk",[
           (assign, ":num_theater_enemies", 0),
           (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
           (try_for_range_backwards, ":cur_faction", kingdoms_begin, kingdoms_end),
@@ -2708,12 +2710,12 @@ Your duty is to help in our struggle, {playername}.^As your {s15}, I grant you a
           (try_end),
           (str_store_troop_name_plural, s15,"$g_talk_troop"), #GA: plural name for kings contains referral to them
           (call_script, "script_get_rank_title_to_s24", "$players_kingdom"), #in s24
-          (try_begin),
-            (eq, "$player_looks_like_an_orc",1),
-            (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
-          (else_try),
-            (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
-          (try_end),
+          # (try_begin),
+            # (eq, "$player_looks_like_an_orc",1),
+            # (troop_add_item, "trp_player", "itm_warg_1b", imod_swaybacked),
+          # (else_try),
+            # (troop_add_item, "trp_player", "itm_sumpter_horse", imod_swaybacked),
+          # (try_end),
           (assign, reg1, tld_player_level_to_own_chest)]],
 
 [anyone,"lord_start", [], "What is it?", "lord_talk",[]],
@@ -8682,7 +8684,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "Shall I leave your command, and go back home to defend {s12}?^^[you will gain {reg15} Resource Pts ({s12})]", "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"disband_regular_member_confirm_yn", [(str_store_troop_name_plural, s15,"$g_talk_troop")],
-"Yes, go there and wait further orders from {s15}. Good luck, soldier!", "close_window",[
+"Yes, go there and wait further orders from {s12}. Good luck, soldier!", "close_window",[
 	(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),
 	(assign, ":gain", reg15),

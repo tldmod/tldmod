@@ -1956,6 +1956,19 @@ faction_player_icons = [
     ("fac_dunland" ,"icon_dunland_captain"			,"icon_dunlander"		,"icon_dunlander"),
     ("fac_beorn"   ,"icon_player_horseman"			,"icon_player"			,"icon_player"),
 ]
+subfac_regular = 0  # the capital (Gondor or Rohan)
+
+
+subfaction_gondor_player_icons = [
+    (subfac_regular  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    (subfac_pelargir  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    (subfac_dol_amroth,		"icon_knight_dolamroth" ,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    (subfac_ethring ,		"icon_lamedon_horseman"	,"icon_footman_lamedon"	,"icon_ithilien_ranger"),
+    (subfac_lossarnach ,	"icon_knight_gondor"	,"icon_lossarnach_axeman_icon"	,"icon_ithilien_ranger"),
+    (subfac_pinnath_gelin ,	"icon_knight_gondor"	,"icon_footman_pinnath"	,"icon_ithilien_ranger"),
+    (subfac_blackroot  ,	"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    (subfac_rangers  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+]
 
 # Daytime/Nighttime penalties system (foxyman)
 Penalties_sys = [
