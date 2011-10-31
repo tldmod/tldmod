@@ -6978,7 +6978,7 @@ scripts = [
 # Output: reg0 = landmark no (closest, max dist 4),. Else -1
 ("get_close_landmark",
     [ (store_script_param_1, ":party_no"),
-      (assign, ":min_distance", 2),
+      (assign, ":min_distance", 3),
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
@@ -7007,10 +7007,10 @@ scripts = [
 		(eq,":landmark","p_old_ford"),
 		(str_store_string, s17, "@the Old Ford, where the Old Forest Road crosses the River Anduin"),
 	(else_try),
-		(is_between,":landmark","p_ford_cair_andros1","p_ford_cerin_dolen"), # Anduin fords
+		(is_between,":landmark",fords_big_begin, fords_big_end), # Anduin fords
 		(str_store_string, s17, "@a big ford crossing the River {s15}"),
 	(else_try),
-		(is_between,":landmark","p_ford_cerin_dolen","p_camplace_N1"), # small fords
+		(is_between,":landmark",fords_small_begin, fords_small_end), # small fords
 		(str_store_string, s17, "@a small ford crossing the River {s15}"),
 	(else_try),
 		(assign, ":ok", 0), # no good description found
@@ -9326,10 +9326,17 @@ scripts = [
 		(eq,":landmark","p_hand_isen"),
 		(assign,":scene_to_use","scn_handsign"), 
 	(else_try),
-		(is_between,":landmark","p_ford_cair_andros1","p_ford_cerin_dolen"), # Anduin fords
+		(is_between,":landmark", fords_big_begin, fords_big_end), # Anduin fords
+		(store_mod, ":tmp", ":landmark", 3), #3  big fords scenes
+		(store_add, ":scene_to_use", "scn_ford_big1", ":tmp"),
+
 		(store_random_in_range, ":scene_to_use", "scn_ford_big1", "scn_ford_small1"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
-		(is_between,":landmark","p_ford_cerin_dolen","p_camplace_N1"), # small fords
+		(is_between,":landmark", fords_small_begin, fords_small_end), # Anduin fords
+		(store_mod, ":tmp", ":landmark", 3), #3  small fords scenes
+		(store_add, ":scene_to_use", "scn_ford_small1", ":tmp"),
+		
 		(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
@@ -9435,23 +9442,7 @@ scripts = [
 	(try_end),
 	(assign, reg10,":scene_to_use"), #(display_message,"@debug: using scene ID N. {reg10}"),
 	(jump_to_scene,":scene_to_use"),
-	
-	# check if near small fords
-	#(try_for_range,":ford","p_ford_cerin_dolen","p_ford_moria2"),
-	#	(store_distance_to_party_from_party,":dist","p_main_party",":ford"),
-	#	(lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_01"), #placeholder scenes
-	#	(display_message,"@SCENE: small ford " ),
-	#(try_end),
 
-	# check if near large fords
-	#(try_begin),
-	#	(eq,":scene_to_use",0),
-	#	(try_for_range,":ford","p_ford_cair_andros1","p_ford_cerin_dolen"),
-	#		(store_distance_to_party_from_party,":dist","p_main_party",":ford"),
-	#		(lt,":dist",3), (assign,":scene_to_use","scn_battle_scene_plain_02"), #placeholder scenes
-	#	(try_end),
-	#(try_end),
- 
 ]),
 
 # script_maybe_relocate_player_from_z0 (GA and mtarini)

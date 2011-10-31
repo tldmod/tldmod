@@ -4119,7 +4119,7 @@ technique mtarini_windy_flora_mild_one_sheet
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.018,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.00625,0);
       PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
 	}
 }
@@ -4127,7 +4127,7 @@ technique mtarini_windy_flora_mild_one_sheet_SHDW
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.018,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.00625,0);
       PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
 	}
 }
@@ -4135,7 +4135,7 @@ technique mtarini_windy_flora_mild_one_sheet_SHDWNVIDIA
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.018,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.00625,0);
       PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
 	}
 }
@@ -4143,7 +4143,7 @@ technique mtarini_windy_flora_mild_one_sheet_PRESHADED
 {
 	pass P0
 	{
-      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.018,0);
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.00625,0);
       PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
 	}
 }

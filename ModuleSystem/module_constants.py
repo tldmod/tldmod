@@ -993,6 +993,13 @@ centers_end = "p_centers_end"
 landmark_begin = centers_begin
 landmark_end = "p_camplace_N1" 
 
+fords_big_begin = "p_ford_cair_andros1" 
+fords_big_end = "p_ford_cerin_dolen"
+fords_small_begin = "p_ford_cerin_dolen"
+fords_small_end = "p_camplace_N1" 
+
+# landmark_
+
 advcamps_begin = "p_advcamp_gondor"
 advcamps_end   = centers_end
 
