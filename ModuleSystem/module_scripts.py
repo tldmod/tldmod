@@ -9405,10 +9405,10 @@ scripts = [
 	(else_try),		# mountains regions
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
-		(assign, ":native_terrain_to_use", rt_desert),  # mountains
+		(assign, ":native_terrain_to_use", rt_steppe),  # mountains
 	(else_try),		# marshes 
 		(this_or_next|eq,":region",region_entwash),
-		(eq,":region",region_wetwang),
+		(eq,":region",region_wetwang), 
 		(assign, ":native_terrain_to_use", rt_snow),  # marsh
 	(else_try),		# anything else
 		(assign, ":native_terrain_to_use", rt_steppe),  
