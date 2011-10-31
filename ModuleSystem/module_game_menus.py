@@ -97,8 +97,10 @@ game_menus = [
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
 	 ("spacer"    ,[]," "  ,[]),
 	 ("go_back"   ,[],"Go Back",[(change_screen_quit              ),]), 
+]+concatenate_scripts([[
 	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+] for ct in range(cheat_switch)])+[	
 	]
 ),
 #This needs to be the second window!!!
@@ -154,6 +156,7 @@ game_menus = [
         (change_screen_map), #(change_screen_return),
        ]),
 	  ("spacer",[],"_",[]),
+]+concatenate_scripts([[
       ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
 	    ],"CHEAT: become a {s21}",[
 		(troop_get_upgrade_troop,":t","$player_current_troop_type",0),
@@ -169,7 +172,8 @@ game_menus = [
       ("cheat03",[(eq, cheat_switch, 1),(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party",
 	  [(party_add_members, "p_main_party", "$player_current_troop_type", 10),	  
 	  ]),
-      #("cheat02",[],"CHEAT!",
+] for ct in range(cheat_switch)])+[	
+      #("cheat02",[],"CHEAT!",    ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[	
       # [
          #(try_for_range, ":cur_place", scenes_begin, scenes_end),
          #  (scene_set_slot, ":cur_place", slot_scene_visited, 1),
@@ -202,9 +206,11 @@ game_menus = [
       ],
    [("custom_battle_scenario_1" ,[], "___________Skirmish, Gondor factions vs Harad_____.",
 		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
+]+concatenate_scripts([[
 	("custom_battle_scenario_12",[],"____________Choose factions for battle_____________.",
 		[(assign, "$g_custom_battle_scenario",16),(jump_to_menu, "mnu_custom_battle_choose_faction1"),]),
-	("custom_battle_scenario_3" ,[],"____________Skirmish, Elves vs Bandits_____________.",
+] for ct in range(cheat_switch)])+[	
+	("custom_battle_scenario_3" ,[],"____________Skirmish, Elves vs Black_Numenoreans___.",
 		[(assign, "$g_custom_battle_scenario", 2),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_4" ,[],"____________Helms Deep Defense, Rohan vs Isengard__.",
 		[(assign, "$g_custom_battle_scenario", 3),(jump_to_menu, "mnu_custom_battle_2"),]),
@@ -218,23 +224,24 @@ game_menus = [
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
-
-	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Battles (Tune Balancing!)________.",
+]+concatenate_scripts([[
+	("custom_battle_scenario_11",[],"____________Test Battles (Tune Balancing!)________.",
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
-
-		("custom_battle_scenario_10",[(eq, cheat_switch, 1),],"____________Scenery test battle____________________.",
+	("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Troll Battles_____________________.",
+	("custom_battle_scenario_11",[],"____________Test Troll Battles_____________________.",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("custom_battle_scenario_11",[(eq, cheat_switch, 1),],"____________Test Warg Battles______________________.",
+	("custom_battle_scenario_11",[],"____________Test Warg Battles______________________.",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
-	("choose_scene"             ,[(eq, cheat_switch, 1),],"____________** Scene Chooser **____________________.",
+	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
+] for ct in range(cheat_switch)])+[
+
     ("go_back"                  ,[],"______________________________Go back______________.",[(change_screen_quit)])]
 ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
-    "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail below. For tutorial on basic game mechanics please use Native module",
+    "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window")],
 	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
@@ -280,7 +287,10 @@ game_menus = [
 #	(troop_get_slot, reg2, "trp_player", slot_troop_renown),
 	(str_store_string, s9, "@-={s10}=-^{s11}.^^{s13}.^^{s15}."),
     ],
-    [ ("cheat_faction_orders"  ,[(eq,"$cheat_mode",1)],"Cheat: Faction orders."   ,[(jump_to_menu, "mnu_faction_orders"   ),]),
+    [ 
+]+concatenate_scripts([[		
+	  ("cheat_faction_orders"  ,[(eq,"$cheat_mode",1)],"Cheat: Faction orders."   ,[(jump_to_menu, "mnu_faction_orders"   ),]),
+ ] for ct in range(cheat_switch)])+[
       ("view_character_report" ,[                    ],"View upkeep costs."       ,[(jump_to_menu, "mnu_upkeep_report" ),]),
       ("view_character_report" ,[                    ],"View character report."   ,[(jump_to_menu, "mnu_character_report" ),]),
       ("view_party_size_report",[                    ],"View party size report."  ,[(jump_to_menu, "mnu_party_size_report"),]),
@@ -375,7 +385,7 @@ game_menus = [
 		(set_visitors, 26, "trp_harad_skirmisher",					3),
 		(set_visitors, 27, "trp_harad_archer",			3),
 		(set_visitors, 28, "trp_harad_eagle_guard",			3),
-		(set_visitors, 29, "trp_troll_of_moria",				1),
+		#(set_visitors, 29, "trp_troll_of_moria",				1),
 		(str_store_string, s16, "str_custom_battle_1"),
 
 ############################################# "Elves kick ass"
@@ -646,7 +656,8 @@ game_menus = [
 		(set_visitors, 27, "trp_corsair_elite_marauder",		2),
 		(set_visitors, 28, "trp_assassin_of_umbar",				2),
 		(str_store_string, s16, "str_custom_battle_7"),
-     (else_try),
+]+concatenate_scripts([[
+	(else_try),
 ########################################## FOOTBALL  
        # (eq, "$g_custom_battle_scenario", 8),
        # (assign, "$g_custom_battle_scene", "scn_town_1_arena_football"),
@@ -671,6 +682,7 @@ game_menus = [
 		# (set_visitors, 21, "trp_townsman", 1),
 		# (str_store_string, s16, "@They came here after we kicked their asses 5:0 in the first round! Let's do it again."),
       # (else_try),
+
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 10),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
@@ -927,6 +939,7 @@ game_menus = [
 		(try_end),
 
 		(str_store_string, s16, "@FACTION SHOWOFF"),
+] for ct in range(cheat_switch)])+[
 	(try_end),
 	(set_show_messages, 1),
 	],
@@ -978,6 +991,7 @@ game_menus = [
 	  (str_store_troop_name_by_count, s11, "$testbattle_team_b_troop",reg11),
 	],
    [
+]+concatenate_scripts([[
 	("A",[],"        +5 Team A", [(val_add, "$testbattle_team_a_num", 5),(val_clamp, "$testbattle_team_a_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
 	("B",[],"        -5 Team A", [(val_sub, "$testbattle_team_a_num", 5),(val_clamp, "$testbattle_team_a_num", 1,101),(jump_to_menu, "mnu_quick_battle_general_test"),]),
 	("C",[],"        Select Troop A", [
@@ -1005,6 +1019,7 @@ game_menus = [
 	#("B",[],"_", []),
 	("F",[],"          START FIGHT!",
 		[(assign, "$g_custom_battle_scenario", 26),(jump_to_menu, "mnu_custom_battle_2"),]),
+] for ct in range(cheat_switch)])+[
     ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
 ),
 
@@ -1025,6 +1040,7 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_draw_wild_troll"),],
    [
+]+concatenate_scripts([[ 
 	("custom_battle_scenario_10",[],"          Test: Troll VS Infantry",
 		[(assign, "$g_custom_battle_scenario", 10),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_11",[],"          Test: Troll VS Archers",
@@ -1037,6 +1053,7 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 14),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_15",[],"          Toy-Test: player controlled Troll",
 		[(assign, "$g_custom_battle_scenario", 15),(jump_to_menu, "mnu_custom_battle_2"),]),
+] for ct in range(cheat_switch)])+[
     ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
 ),
 ( "quick_battle_wargs",mnf_disable_all_keys,
@@ -1044,6 +1061,7 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_draw_orc_raiders"),],
    [
+]+concatenate_scripts([[
 	("custom_battle_scenario_10",[],"          Against Wargs: 1 vs 1",
 		[(assign, "$g_custom_battle_scenario", 20),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_11",[],"          Against Wargs: 2 vs 3",
@@ -1056,6 +1074,7 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 24),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_12",[],"          Play Wargs: many vs many",
 		[(assign, "$g_custom_battle_scenario", 25),(jump_to_menu, "mnu_custom_battle_2"),]),
+] for ct in range(cheat_switch)])+[
     ("go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
 ),
 ######################################
@@ -1300,7 +1319,9 @@ game_menus = [
      (str_store_faction_name, s10, "$g_cheat_selected_faction"),
      (str_store_string, s9, "@Selected faction is: {s10}^^{s9}"),
     ],
-    [ ("faction_orders_next_faction", [],"Select next faction.",
+    [ 
+]+concatenate_scripts([[	
+	("faction_orders_next_faction", [],"Select next faction.",
        [ (call_script, "script_get_next_active_kingdom", "$g_cheat_selected_faction"),
          (assign, "$g_cheat_selected_faction", reg0),
          (jump_to_menu, "mnu_faction_orders"),
@@ -1333,6 +1354,7 @@ game_menus = [
        [ (call_script, "script_recalculate_ais"),
          (jump_to_menu, "mnu_faction_orders"),
         ]),
+] for ct in range(cheat_switch)])+[
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "mnu_reports"),]),
     ]
 ),
@@ -1576,17 +1598,17 @@ game_menus = [
 				(change_screen_return),
 			(try_end), #end trying
 	]),
+
+    ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 	
-	
+]+concatenate_scripts([[ 
 	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
 	 ("Cheat_enable",[(eq, cheat_switch, 1),(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
-
      ("camp_cheat_option", [(eq, cheat_switch, 1),(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
-     
-     ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
-## MadVader test begin
+  ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
-## MadVader test end
+  ## MadVader test end
+] for ct in range(cheat_switch)])+[
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
 ),
@@ -1596,6 +1618,7 @@ game_menus = [
    "What do you want to test today?",
    "none", [],
   [
+]+concatenate_scripts([[ 
   ("camp_mvtest_pimp",[],"Pimp me up first!",
     [(troop_raise_attribute, "trp_player",ca_strength,20),
      (troop_raise_attribute, "trp_player",ca_agility,20),
@@ -1812,6 +1835,7 @@ game_menus = [
 	# (try_end),
     # (display_message, "@You got them all, pardner!", 0x30FFC8),
    # ]),
+] for ct in range(cheat_switch)])+[
    ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])]            
 ),
 ("mvtest_destroy_faction",0,
@@ -2324,7 +2348,9 @@ game_menus = [
    "Test sieges",
    "none",
    [],
-    [("order_siege",[],"Order ambient faction to besiege...", [(jump_to_menu, "mnu_mvtest_order_siege")]),
+    [
+]+concatenate_scripts([[ 
+	("order_siege",[],"Order ambient faction to besiege...", [(jump_to_menu, "mnu_mvtest_order_siege")]),
      ("order_siege_wo",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
@@ -2455,6 +2481,7 @@ game_menus = [
         (display_message, "@Partitava besieges Dale!", 0x30FFC8),
         (change_screen_map),
       ]),
+] for ct in range(cheat_switch)])+[
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
@@ -2502,6 +2529,7 @@ game_menus = [
    "Test advance camps",
    "none",
    [], [
+]+concatenate_scripts([[ 
     ("spawnSW",[],"Spawn SW advance camps", [
 	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
 		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
@@ -2706,6 +2734,7 @@ game_menus = [
       (position_get_y, reg3, pos13),
       (display_message, "@N advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
     ]),
+] for ct in range(cheat_switch)])+[
     ("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
@@ -2715,6 +2744,7 @@ game_menus = [
    [],
     [("intro",[], "Play intro.", [(jump_to_menu, "mnu_auto_intro_rohan"),]),
      ("joke",[],  "Play GA joke.", [(jump_to_menu, "mnu_auto_intro_joke"),]),
+]+concatenate_scripts([[ 
      #("test",[],  "Play Gandalf test encounter.", [(jump_to_menu, "mnu_auto_convo"),]),
      ("gandalf_1",[], "Play Gandalf advice.", [(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_advice),]),
      ("gandalf_2",[], "Play Gandalf ally down.", [(assign, "$g_tld_convo_subject", "fac_dale"),(call_script, "script_start_conversation_cutscene", tld_cc_gandalf_ally_down),]),
@@ -2743,6 +2773,7 @@ game_menus = [
                                 (assign, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
                                 (display_message, "@Gandalf would like to have a little chat!", 0x30FFC8),
                                 ]),
+] for ct in range(cheat_switch)])+[
      ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
 ),
@@ -2791,7 +2822,9 @@ game_menus = [
  "^^^^^^^^Please choose faction to get items from.",
  "none",
  [],
- [("f_gondor"  ,[],"Gondor items"    ,[(call_script,"script_fill_camp_chests","fac_gondor"  ),(jump_to_menu, "mnu_camp"),]),
+ [
+]+concatenate_scripts([[  
+ ("f_gondor"  ,[],"Gondor items"    ,[(call_script,"script_fill_camp_chests","fac_gondor"  ),(jump_to_menu, "mnu_camp"),]),
   ("f_rohan"   ,[],"Rohan items"     ,[(call_script,"script_fill_camp_chests","fac_rohan"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_isengard",[],"Isengard items"  ,[(call_script,"script_fill_camp_chests","fac_isengard"),(jump_to_menu, "mnu_camp"),]),
   ("f_mordor"  ,[],"Mordor items"    ,[(call_script,"script_fill_camp_chests","fac_mordor"  ),(jump_to_menu, "mnu_camp"),]),
@@ -2806,7 +2839,8 @@ game_menus = [
   ("f_umbar"   ,[],"Umbar items"     ,[(call_script,"script_fill_camp_chests","fac_umbar"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_moria"   ,[],"Moria items"     ,[(call_script,"script_fill_camp_chests","fac_moria"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_gundabad",[],"Gundabad items"  ,[(call_script,"script_fill_camp_chests","fac_gundabad"),(jump_to_menu, "mnu_camp"),]),
-  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]),	   
+  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]),
+] for ct in range(cheat_switch)])+[  
   ("go_back"   ,[],"Go back"         ,[(jump_to_menu, "mnu_camp"),]),
  ]
 ),
@@ -2814,7 +2848,9 @@ game_menus = [
  "^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.",
  "none",
  [],
- [("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
+ [
+]+concatenate_scripts([[ 
+ ("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
   ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
   ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
   ("race_gondor"    ,[],"Gondor"    ,[(troop_set_type,"trp_player", 2), (assign,"$players_kingdom","fac_gondor"),(jump_to_menu, "mnu_camp"),]),
@@ -2830,7 +2866,8 @@ game_menus = [
   ("race_lothlorien",[],"Lothlorien",[(troop_set_type,"trp_player",12), (jump_to_menu, "mnu_camp"),]),
   ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13), (jump_to_menu, "mnu_camp"),]),
   ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
-  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),	   
+  ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),
+] for ct in range(cheat_switch)])+[
   ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
 ]),  
 #TLD end (Hokie)  
@@ -3777,11 +3814,13 @@ game_menus = [
 			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
 			(assign,"$talk_context",tc_make_enemy_join_player),
 		]),
-	 
+
+]+concatenate_scripts([[	 
       ("debug_leave",[
           (eq,"$cant_leave_encounter", 1),
 		  (eq, "$cheat_mode", 1),
           ],"DEBUG: avoid this battle.",[ (leave_encounter),(change_screen_return)]),
+] for ct in range(cheat_switch)])+[
 
       ("encounter_leave",[
           (eq,"$cant_leave_encounter", 0),
@@ -3825,7 +3864,8 @@ game_menus = [
          (assign, ":player_count", reg0),
          (ge, ":player_count", ":enemy_party_strength"),
          ],"Pull back, leaving some soldiers behind to cover your retreat.",[(jump_to_menu, "mnu_encounter_retreat_confirm"),]),
-		 
+
+]+concatenate_scripts([[		 
       ("encounter_surrender",[
          (eq,"$cant_leave_encounter", 1),
 		 (eq, "$cheat_mode", 1),
@@ -3839,6 +3879,7 @@ game_menus = [
 	        (display_message, "@CHEAT: healed!!!"),
 			(jump_to_menu, "mnu_simple_encounter"),
 		]),
+] for ct in range(cheat_switch)])+[
     ]
 ),
 ( "encounter_retreat_confirm",0,
@@ -5453,6 +5494,7 @@ game_menus = [
          (jump_to_menu, "mnu_castle_besiege"),
          ]),
 
+]+concatenate_scripts([[
       ("cheat_castle_start_siege",
        [ (eq, cheat_switch, 1),
          (eq, "$cheat_mode", 1),
@@ -5475,8 +5517,15 @@ game_menus = [
            (assign,"$g_player_besiege_town","$g_encountered_party"),
            (jump_to_menu, "mnu_castle_besiege"),
            ]),
+] for ct in range(cheat_switch)])+[
+	   
+]+concatenate_scripts([[
+	  ("castle_siege",[(eq,0,1)],"Dont.",[]),
+] for ct in range(1-cheat_switch)])+[
 
       ("castle_leave",[],"Leave.",[(change_screen_return,0)]),
+
+]+concatenate_scripts([[
       ("castle_cheat_interior",[(eq, "$cheat_mode", 1)], "CHEAT! Interior.",[(set_jump_mission,"mt_ai_training"),
                                                        (party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
                                                        (jump_to_scene,":castle_scene"),
@@ -5492,7 +5541,7 @@ game_menus = [
          (set_jump_mission,"mt_ai_training"),
          (jump_to_scene,":scene"),
          (change_screen_mission)]),
-
+] for ct in range(cheat_switch)])+[
     ]
 ),
 ("castle_besiege",mnf_enable_hot_keys,
@@ -6491,7 +6540,10 @@ game_menus = [
           (gt,"$entry_to_town_forbidden",0),
           (str_store_string, s13, "@{s13}^^You have successfully sneaked in."),
         (try_end),
-
+		
+		(assign, "$bs_day_sound", 0), # specific ambiance?
+		(assign, "$bs_night_sound", 0),
+	
         #(assign,"$castle_undefended",0),
         #(party_get_num_companions, ":castle_garrison_size", "p_collective_enemy"),
         #(try_begin),
@@ -6694,7 +6746,7 @@ game_menus = [
           ]),
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
-
+]+concatenate_scripts([[ 
      ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
 							(party_get_slot, reg(11), "$current_town", slot_town_alley),
 							(set_jump_mission,"mt_ai_training"),
@@ -6751,6 +6803,18 @@ game_menus = [
 						(party_set_position, "p_main_party", pos2),
 						(assign, "$g_main_ship_party", -1),
 						(change_screen_return)]),
+] for ct in range(cheat_switch)])+[
+]+concatenate_scripts([[ 
+      ("town_cheat_alley",[(eq, 0, 1),], "CHEAT",[]),
+	  ("castle_cheat_interior",[(eq, 0, 1),], "CHEAT",[]),
+	  ("castle_cheat_town_exterior",[(eq, 0, 1),], "CHEAT",[]),
+	  ("castle_cheat_dungeon",[(eq, 0, 1),], "CHEAT",[]),
+	  ("castle_cheat_town_walls",[(eq, 0, 1),], "CHEAT",[]),
+	  ("cheat_town_start_siege",[(eq, 0, 1),], "CHEAT",[]),
+	  ("center_reports",[(eq, 0, 1),], "CHEAT",[]),
+	  ("sail_from_port",[(eq, 0, 1),], "CHEAT",[]),
+] for ct in range(1-cheat_switch)])+[
+
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
 						], "Go to the underground caverns.",
 						[(set_jump_mission, "mt_town_center"),
@@ -6758,9 +6822,11 @@ game_menus = [
 						(change_screen_mission)]),
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
 						], "Climb up to the top level.",
-						[(set_jump_mission, "mt_town_center"),
-						(jump_to_scene, "scn_minas_tirith_center_top"),
-						(change_screen_mission)]),
+						[(assign, "$bs_day_sound", "snd_wind_ambiance"),
+						 (assign, "$bs_night_sound", "snd_wind_ambiance"),
+						 (set_jump_mission, "mt_town_center"),
+						 (jump_to_scene, "scn_minas_tirith_center_top"),
+						 (change_screen_mission)]),
 						
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
@@ -7342,18 +7408,23 @@ game_menus = [
 
 ( "custom_battle_choose_faction1",0,
     "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],
-    [#("good_2xmore",[],"Good faction, 2x advantage",[(assign,"$cbadvantage", 3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
+    [
+]+concatenate_scripts([[ 	
+	#("good_2xmore",[],"Good faction, 2x advantage",[(assign,"$cbadvantage", 3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
      ("good_equal" ,[],"Good faction"         ,[(assign,"$cbadvantage", 2),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
 	 #("good_2xless",[],"Good faction, 2x handicap" ,[(assign,"$cbadvantage", 1),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
      #("bad_2xmore" ,[],"Evil faction, 2x advantage",[(assign,"$cbadvantage",-3),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
      ("bad_equal"  ,[],"Evil faction"         ,[(assign,"$cbadvantage",-2),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
 	 #("bad_2xless" ,[],"Evil faction, 2x handicap" ,[(assign,"$cbadvantage",-1),(jump_to_menu,"mnu_custom_battle_choose_faction2"),]),
 	 ("previous"   ,[],"Replay previous setup",[(jump_to_menu,"mnu_custom_battle_2"),]),
+] for ct in range(cheat_switch)])+[
      ("go_back"    ,[],"Go back"              ,[(jump_to_menu,"mnu_start_game_3")]),
 ]),
 ( "custom_battle_choose_faction2",0,
     "^^^^^^^^^^Choose good faction", "none", [(set_background_mesh, "mesh_relief01")],
-    [("cb_mordor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+    [
+]+concatenate_scripts([[	
+	("cb_mordor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor1"   ,[],"Rohan"     ,[(assign,"$faction_good",fac_rohan   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor2"   ,[],"Lothlorien",[(assign,"$faction_good",fac_lorien  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor3"   ,[],"Rivendell" ,[(assign,"$faction_good",fac_imladris),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
@@ -7361,11 +7432,14 @@ game_menus = [
      ("cb_mordor5"   ,[],"Dwarves"   ,[(assign,"$faction_good",fac_dwarf   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor6"   ,[],"Dale"      ,[(assign,"$faction_good",fac_dale    ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
      ("cb_mordor7"   ,[],"Beornings" ,[(assign,"$faction_good",fac_beorn   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+] for ct in range(cheat_switch)])+[
      ("go_back"      ,[],"Go back"   ,[(jump_to_menu,"mnu_custom_battle_choose_faction1")]),
 ]),
 ( "custom_battle_choose_faction3",0,
     "^^^^^^^^^^Choose evil faction", "none", [(set_background_mesh, "mesh_relief01")],
-    [("cb_mordor"    ,[],"Mordor"     ,[(assign,"$faction_evil",fac_mordor  ),(jump_to_menu,"mnu_custom_battle_2"),]),
+    [
+]+concatenate_scripts([[	
+	("cb_mordor"    ,[],"Mordor"     ,[(assign,"$faction_evil",fac_mordor  ),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor1"   ,[],"Isengard"   ,[(assign,"$faction_evil",fac_isengard),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor2"   ,[],"Dunland"    ,[(assign,"$faction_evil",fac_dunland ),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor3"   ,[],"Haradrim"   ,[(assign,"$faction_evil",fac_harad   ),(jump_to_menu,"mnu_custom_battle_2"),]),
@@ -7374,6 +7448,7 @@ game_menus = [
      ("cb_mordor6"   ,[],"Gundabad"   ,[(assign,"$faction_evil",fac_gundabad),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor7"   ,[],"Rhun"       ,[(assign,"$faction_evil",fac_rhun    ),(jump_to_menu,"mnu_custom_battle_2"),]),
      ("cb_mordor8"   ,[],"Corsairs"   ,[(assign,"$faction_evil",fac_umbar   ),(jump_to_menu,"mnu_custom_battle_2"),]),
+] for ct in range(cheat_switch)])+[
      ("go_back"      ,[],"Go back"    ,[(jump_to_menu,"mnu_custom_battle_choose_faction2")]),
 	 ]
 ),
@@ -7571,12 +7646,12 @@ game_menus = [
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(str_store_troop_name, s1, ":hero"),
 					(party_set_slot, ":mound", slot_mound_state, 2),
-#					(store_random, ":rnd", 100),
-#					(try_begin),(is_between, ":rnd", 5, 15),
+					(store_random, ":rnd", 100),
+					(try_begin),(is_between, ":rnd", 5, 15),
 					(call_script, "script_cf_gain_trait_reverent"),
-#					 (else_try),		(neg|ge, ":rnd", 5),
+					 (else_try),		(neg|ge, ":rnd", 5),
 					 (call_script, "script_cf_gain_trait_blessed"),
-#					(try_end)
+					(try_end)
 					],[
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
 ]),  
@@ -7628,12 +7703,12 @@ game_menus = [
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
 	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
-#	 (store_random, ":rnd", 100),
-#	 (try_begin),(is_between, ":rnd", 5, 10),
+	 (store_random, ":rnd", 100),
+	 (try_begin),(is_between, ":rnd", 5, 10),
 	 (call_script, "script_cf_gain_trait_despoiler"),
-#	  (else_try),    (neg|ge, ":rnd", 5),    
+	  (else_try),    (neg|ge, ":rnd", 5),    
 	  (call_script, "script_cf_gain_trait_accursed"),
-#	 (try_end),
+	 (try_end),
 	 (party_set_slot, ":mound", slot_mound_state, 4),
 	 (disable_party, ":mound")],[
  ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),

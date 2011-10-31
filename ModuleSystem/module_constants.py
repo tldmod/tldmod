@@ -1728,7 +1728,7 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
 			   0xFF212221, 0xFF212221, 0xFF2E3B10, 0xFF425D7B, 0xFF394608 ]
             
 # foxyman
-cheat_switch = 1
+cheat_switch = 0
 # TLD faction ranks end
 
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)
@@ -1751,7 +1751,7 @@ faction_strings =[    #shop rumors begin     shop rumors end           loop_ambi
  ("fac_dunland" ,"str_dunland_rumor_begin" ,"str_beorn_rumor_begin"   ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_dunland_occasional"),
  ("fac_beorn"   ,"str_beorn_rumor_begin"   ,"str_lorien_rumor_begin"  ,"snd_rohan_ambiance"  ,"snd_goodforest_ambiance","snd_beorn_occasional"),
 ]
-# specific ambient sounds for selected centers
+# specific ambient sounds for selected centers  ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[
 center_sounds=[#center      specific day ambiance , specific always ambiance      , occasional sounds (later to be divided into occasional nature and occasional faction)
     ("p_town_dol_amroth"   ,"snd_gondor_ambiance" ,"snd_water_waves_ambiance"     ,"snd_seaside_occasional"),
     ("p_town_pelargir"     ,"snd_gondor_ambiance" ,"snd_water_wavesplash_ambiance","snd_seaside_occasional"),
