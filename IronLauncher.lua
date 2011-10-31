@@ -32,8 +32,7 @@ BreakPoints = 0
 	ModuleData2Data("Data\\","skeleton_bodies.xml");
 	--ModuleData2Data("Data\\","skyboxes.txt");
 	--ModuleData2Data("Data\\","sound_samples1.txt");
-
-
+	
 -- // Core Resource
 	CoreResources2CommonRes("Data\\","materials.brf")
 	--CoreResources2CommonRes("Data\\","pictures.brf")
@@ -51,7 +50,7 @@ BreakPoints = 0
 	ModuleRoot2CommonRoot("Data\\","man_basic.pp")
 	ModuleRoot2CommonRoot("Data\\","man_flora.pp")
 	ModuleRoot2CommonRoot("Data\\","man_plain.pp")
-	  
+
 
 --videos (wb & orig)
 	--ModuleRoot2CommonRoot("Data\\","taleworlds_intro.bik")
