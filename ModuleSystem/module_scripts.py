@@ -1663,7 +1663,7 @@ scripts = [
 	(assign, "$tld_option_injuries", 1), #injuries for npcs and player ON by default
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
-	(assign, "$tld_option_cutscenes", 0),# OFF by default
+	(assign, "$tld_option_cutscenes", 1),# ON by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 	
@@ -9436,7 +9436,9 @@ scripts = [
 			(try_begin), (eq, ":small_scene", 1), 
 				# shring scene
 				(le, ":native_terrain_to_use", rt_desert), #  forest don't have a small version
-				(val_add, ":scene_to_use", 8),  # go to small scene index
+				
+				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"),
+				(val_sub, ":scene_to_use", "scn_random_scene_steppe"),  # go to small scene index
 			(try_end),
 		(try_end),
 	(try_end),

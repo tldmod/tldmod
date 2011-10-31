@@ -1686,7 +1686,7 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 "Do I know you?", "lord_meet_neutral", []],
   
 [anyone|plyr ,"lord_meet_neutral", [],  "I am {playername}.", "lord_intro", []],
-[anyone|plyr ,"lord_meet_neutral", [],  "My name is {playername}. At your service sir.", "lord_intro", []],
+[anyone|plyr ,"lord_meet_neutral", [],  "My name is {playername}. At your service.", "lord_intro", []],
 
 [anyone ,"lord_intro", [],
 "{s11}", "lord_start",   [(faction_get_slot, ":faction_leader", "$g_talk_troop_faction", slot_faction_leader),
@@ -8585,9 +8585,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"start", [(eq, "$talk_context", 0),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (party_slot_eq,"$current_town",slot_town_lord, "trp_player")],
-"Yes {sir/madam}?", "player_castle_guard_talk",[]],
+"Yes, Commander?", "player_castle_guard_talk",[]],
 [anyone|plyr,"player_castle_guard_talk", [], "How goes the watch, soldier?", "player_castle_guard_talk_2",[]],
-[anyone,"player_castle_guard_talk_2", [], "All is quiet {sir/madam}. Nothing to report.", "player_castle_guard_talk_3",[]],
+[anyone,"player_castle_guard_talk_2", [], "All is quiet Commander. Nothing to report.", "player_castle_guard_talk_3",[]],
 [anyone|plyr,"player_castle_guard_talk_3", [], "Good. Keep your eyes open.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
@@ -8596,7 +8596,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                     (eq, "$players_kingdom", "$g_encountered_party_faction"),
 #                    (troop_slot_ge, "trp_player", slot_troop_renown, 100),
                     (str_store_party_name, s10, "$current_town")],
-"Good day, commander. It's good having you here in {s10}.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+"Good day, Commander. It's good having you here in {s10}.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
@@ -8618,17 +8618,17 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
                     (party_slot_eq,"$current_town",slot_town_lord, "trp_player")],
-"Your orders, {my lord/my lady}?", "hall_guard_talk",[]],
+"Your orders, Commander?", "hall_guard_talk",[]],
 
 [anyone,"start", [(eq, "$talk_context", tc_court_talk),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end)],
-"We are not supposed to talk while on guard, {sir/madam}.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+"We are not supposed to talk while on guard, Commander.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
                      
 [anyone|plyr,"hall_guard_talk", [], "Stay on duty and let me know if anyone comes to see me.", "hall_guard_duty",[]],
-[anyone,"hall_guard_duty", [], "Yes, {my lord/my lady}. As you wish.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
+[anyone,"hall_guard_duty", [], "Yes, Commander. As you wish.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 [anyone|plyr,"hall_guard_talk", [], "I want you to arrest this man immediately!", "hall_guard_arrest",[]],
-[anyone,"hall_guard_arrest", [], "Who do you want arrested {sir/madam}?", "hall_guard_arrest_2",[]],
+[anyone,"hall_guard_arrest", [], "Who do you want arrested, Commander?", "hall_guard_arrest_2",[]],
 [anyone|plyr,"hall_guard_arrest_2", [], "Ah, never mind my high spirits lads.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 [anyone|plyr,"hall_guard_arrest_2", [], "Forget it. I will find another way to deal with this.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
 [anyone,"enemy_defeated", [], "Arggh! I hate this.", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),]],
