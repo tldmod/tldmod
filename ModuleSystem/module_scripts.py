@@ -8637,10 +8637,10 @@ scripts = [
 			(str_store_string, s18, "@We will go in peace, as soon as we have completed our mission, of which, I'm afraid, we cannot tell you."),
 		(else_try),
 		    (eq, ":sideA", ":sideB"), # eye vs eye, or hand vs hand
-			(str_store_string, s14, "@Quiet, {playername}, quiet.^We are following orders by our common Master."),
+			(str_store_string, s14, "@Is this your land, {playername}? This place stinks.^But stay calm, we are in {s20} only to follow orders by our common Master."),
 			(str_store_string, s15, "@Yes, go on, do whatever {s22} says."),
 			(str_store_string, s16, "@Of course."),
-			(str_store_string, s17, "@I don't like this. You should be in {s21}. What are you doing here, in {s20}?"),
+			(str_store_string, s17, "@I don't like this. What brings your lot here, all the way from {s21}?"),
 			(str_store_string, s18, "@Do you fear us, {playername} from {s20}? Mmm, what are you hiding from {s22}?^^Leave us alone, and noone gets hurt."),
 		(else_try),  # eye vs hand, or hand vs eye
 			(str_store_string, s14, "@It's a servant of {s22}. Fear {s23}, {playername}!"),

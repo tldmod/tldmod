@@ -190,10 +190,10 @@ qstr_I_trust_you._{s20}_a I_trust_you._{s20}_and_{s21}_should_be_friends_and_tru
 qstr_There_is_wisdom_in_y There_is_wisdom_in_your_words,_{playername}.
 qstr_Why_should_I?_Better Why_should_I?_Better_leave_the_land_of_{s20}.
 qstr_We_will_go_in_peace_ We_will_go_in_peace,_as_soon_as_we_have_completed_our_mission,_of_which,_I'm_afraid,_we_cannot_tell_you.
-qstr_Quiet_{playername}_q Quiet,_{playername},_quiet.^We_are_following_orders_by_our_common_Master.
+qstr_Is_this_your_land_{p Is_this_your_land,_{playername}?_This_place_stinks.^But_stay_calm,_we_are_in_{s20}_only_to_follow_orders_by_our_common_Master.
 qstr_Yes_go_on_do_whateve Yes,_go_on,_do_whatever_{s22}_says.
 qstr_Of_course. Of_course.
-qstr_I_don_t_like_this._Y I_don't_like_this._You_should_be_in_{s21}._What_are_you_doing_here,_in_{s20}?
+qstr_I_don_t_like_this._W I_don't_like_this._What_brings_your_lot_here,_all_the_way_from_{s21}?
 qstr_Do_you_fear_us_{play Do_you_fear_us,_{playername}_from_{s20}?_Mmm,_what_are_you_hiding_from_{s22}?^^Leave_us_alone,_and_noone_gets_hurt.
 qstr_It_s_a_servant_of_{s It's_a_servant_of_{s22}._Fear_{s23},_{playername}!
 qstr_Our_allies_are_you?_ Our_allies,_are_you?_I_guess_you_can_pass._
