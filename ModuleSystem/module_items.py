@@ -80,7 +80,7 @@ items =[
 ["human_meat","Human_Flesh",[("human_flesh",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(30),imodbits_none],
 ["maggoty_bread","Maggoty_Bread",[("maggoty_bread",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["cram","Cram_Ration",[("cram",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
-["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique,0,200,weight(1.3)|abundance(10)|0,imodbits_none],
+["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique|itp_consumable,0,200,weight(1.3)|abundance(10)|food_quality(80)|max_ammo(30),imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(60)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(70)|max_ammo(70),imodbits_none],
