@@ -30,7 +30,7 @@ itemsfile version 2
  itm_cram Cram_Ration Cram_Ration 1  cram 0  34144267 0 44 0 10.000000 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  4107 0 200 0 1.250000 10 0 0 0 0 0 0 0 0 0 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  33558539 0 200 0 1.250000 10 80 0 0 0 0 0 0 0 30 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15.000000 110 50 0 0 0 0 0 0 0 50 0 0
@@ -482,10 +482,10 @@ itemsfile version 2
  itm_dunedain_helm_b Arnor_Decorated_Helm Arnor_Decorated_Helm 1  arnor_helm_a 0  65548 0 1300 704643072 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_blue 0  16842765 0 2854 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
+ itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_blue 0  16842765 0 2300 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_b Arnorian_Armor Arnorian_Armor 1  arnor_brown 0  16842765 0 2854 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
+ itm_arnor_armor_b Arnorian_Armor Arnorian_Armor 1  arnor_brown 0  16842765 0 2300 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_c Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger 0  16842765 0 1530 704643072 19.000000 100 0 14 8 0 0 0 0 0 0 0 0
@@ -494,7 +494,7 @@ itemsfile version 2
  itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 1930 704643072 19.000000 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 2710 234881024 23.000000 100 0 20 10 0 0 0 0 0 0 0 0
+ itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 2700 234881024 23.000000 100 0 20 10 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_f Arnorian_High_Armor Arnorian_High_Armor 1  arnor_knight 0  16842765 0 3100 704643072 24.000000 100 0 42 15 0 0 0 0 0 0 0 0
@@ -563,25 +563,25 @@ itemsfile version 2
  itm_riv_spear Rivendell_Spear Rivendell_Spear 1  elf_spear_2 0  4554756 4222124851990272 700 156672 2.250000 100 0 0 0 0 20480 102 0 171 0 286 532
 0
 
- itm_riv_armor_light Rivendell_Armor Rivendell_Armor 1  rivendellrecruitarcher 0  16842765 0 1259 234881024 6.000000 100 0 10 8 0 0 0 0 0 0 0 0
+ itm_riv_armor_light Rivendell_Armor Rivendell_Armor 1  rivendellrecruitarcher 0  16842765 0 1200 234881024 6.000000 100 0 10 8 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_light_inf Rivendell_Armor Rivendell_Armor 1  rivendellrecruitswordfighter 0  16842765 0 1259 704643072 6.000000 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_riv_armor_light_inf Rivendell_Armor Rivendell_Armor 1  rivendellrecruitswordfighter 0  16842765 0 1200 704643072 6.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_archer Rivendell_Armor Rivendell_Armor 1  rivendellnormalarcher 0  16842765 0 1259 704643072 8.000000 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_riv_armor_archer Rivendell_Armor Rivendell_Armor 1  rivendellnormalarcher 0  16842765 0 1200 704643072 8.000000 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_m_archer Rivendell_Armor Rivendell_Armor 1  rivendellelitearcher 0  16842765 0 1259 704643072 8.000000 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_riv_armor_m_archer Rivendell_Armor Rivendell_Armor 1  rivendellelitearcher 0  16842765 0 1200 704643072 8.000000 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_med Rivendell_Armor Rivendell_Armor 1  rivendellnormalswordfighter 0  16842765 0 1259 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
+ itm_riv_armor_med Rivendell_Armor Rivendell_Armor 1  rivendellnormalswordfighter 0  16842765 0 1200 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_heavy Rivendell_Armor Rivendell_Armor 1  rivendelleliteswordfighter 0  16842765 0 1259 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
+ itm_riv_armor_heavy Rivendell_Armor Rivendell_Armor 1  rivendelleliteswordfighter 0  16842765 0 1200 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  rivendellmountedarcher 0  16842765 0 1259 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
+ itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  rivendellmountedarcher 0  16842765 0 1200 704643072 12.000000 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
  itm_riv_armor_leader Rivendell_Leader_Armor Rivendell_Leader_Armor 1  rivendellleader 0  16842765 0 3000 704643072 12.000000 100 0 44 20 0 0 0 0 0 0 0 0

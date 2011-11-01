@@ -1299,7 +1299,7 @@ ws_party_spawns_list = [
 ("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
 ("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_esgaroth_patrol",  "pt_dale_caravan"),
 ("p_town_erebor"          ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
-("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     -1),
+("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
 #Others evil
 ("p_town_moria"           ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
 ("p_town_troll_cave"      ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
@@ -1318,11 +1318,11 @@ ws_party_spawns_list = [
 ("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",   -1,                    -1),
 
 ("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
-("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
+("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
 ("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 ("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-("p_town_gundabad_m_outpost","pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+("p_town_gundabad_m_outpost"       ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
 #Advance camps   
 ("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
 ("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
@@ -1337,7 +1337,7 @@ ws_party_spawns_list = [
 ("p_advcamp_woodelf"      ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
 ("p_advcamp_moria"        ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
 ("p_advcamp_guldur"       ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
-("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   -1,                    -1),
+("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   -1,                    "pt_gunda_caravan"),
 ("p_advcamp_dale"         ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
 ("p_advcamp_dwarf"        ,"pt_dwarf_scouts",         -1,				       "pt_dwarf_patrol",     "pt_dwarf_caravan"),
 ("p_advcamp_dunland"      ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
@@ -1735,7 +1735,7 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
 			   0xFF212221, 0xFF212221, 0xFF2E3B10, 0xFF425D7B, 0xFF394608 ]
             
 # foxyman
-cheat_switch = 0
+cheat_switch = 1
 # TLD faction ranks end
 
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)

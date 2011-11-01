@@ -9330,14 +9330,14 @@ scripts = [
 		(store_mod, ":tmp", ":landmark", 3), #3  big fords scenes
 		(store_add, ":scene_to_use", "scn_ford_big1", ":tmp"),
 
-		(store_random_in_range, ":scene_to_use", "scn_ford_big1", "scn_ford_small1"),
+		#(store_random_in_range, ":scene_to_use", "scn_ford_big1", "scn_ford_small1"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(is_between,":landmark", fords_small_begin, fords_small_end), # Anduin fords
 		(store_mod, ":tmp", ":landmark", 3), #3  small fords scenes
 		(store_add, ":scene_to_use", "scn_ford_small1", ":tmp"),
 		
-		(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
+		#(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":region",region_dead_marshes),
@@ -11043,25 +11043,18 @@ scripts = [
 ]),
 
 # script_remove_siege_objects
-("remove_siege_objects",
-    [ (replace_scene_props, "spr_battlement_a_destroyed", "spr_battlement_a"),
-#      (replace_scene_props, "spr_snowy_castle_battlement_a_destroyed", "spr_snowy_castle_battlement_a"),
-#      (replace_scene_props, "spr_castle_e_battlement_a_destroyed", "spr_castle_e_battlement_a"),
-      (replace_scene_props, "spr_castle_battlement_a_destroyed", "spr_castle_battlement_a"),
-      (replace_scene_props, "spr_castle_battlement_b_destroyed", "spr_castle_battlement_b"),
-#      (replace_scene_props, "spr_earth_wall_a2", "spr_earth_wall_a"),
-#      (replace_scene_props, "spr_earth_wall_b2", "spr_earth_wall_b"),
-      (replace_scene_props, "spr_belfry_platform_b", "spr_empty"),
-      (replace_scene_props, "spr_belfry_platform_a", "spr_empty"),
-      (replace_scene_props, "spr_belfry_a", "spr_empty"),
-      (replace_scene_props, "spr_belfry_wheel", "spr_empty"),
-      (replace_scene_props, "spr_siege_ladder_12m", "spr_empty"),
-      (replace_scene_props, "spr_siege_ladder_14m", "spr_empty"),
-      (replace_scene_props, "spr_mangonel", "spr_empty"),
-#      (replace_scene_props, "spr_trebuchet_old", "spr_empty"),
-      (replace_scene_props, "spr_trebuchet_new", "spr_empty"),
-      (replace_scene_props, "spr_stone_ball", "spr_empty"),
-      (replace_scene_props, "spr_Village_fire_big", "spr_empty"),
+# removes all objects inappropriate for siege scene (all troop/mount spawners etc)
+("remove_siege_objects",[ 
+	(try_for_range, ":prop", "spr_troop_guard", "spr_ZT_mb_chestnut"),
+		(replace_scene_props, ":prop", "spr_empty"),
+	(try_end),
+	(try_for_range, ":prop", "spr_horse_riv_warhorse", "spr_spiderweb"),
+		(replace_scene_props, ":prop", "spr_empty"),
+	(try_end),
+	(replace_scene_props, "spr_horse_player_horse", "spr_empty"),
+	(try_for_range, ":prop", "spr_horse_warg_1C", "spr_sound_waterfall"),
+		(replace_scene_props, ":prop", "spr_empty"),
+	(try_end),
 ]),
 
 # script_describe_relation_to_s63

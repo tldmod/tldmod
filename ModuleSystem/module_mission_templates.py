@@ -610,7 +610,7 @@ mission_templates = [ # not used in game
 ]),
 ( "assasins_attack",mtf_battle_mode,-1,#TLD - assasins attack begin (Kolba)
   "assasins",
-	[(0,mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+	[(0,mtef_visitor_source,af_override_horse,aif_start_alarmed,1,[]),
 	 (1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
 	],
 	tld_common_battle_scripts+[
@@ -618,7 +618,7 @@ mission_templates = [ # not used in game
 	common_battle_check_friendly_kills,
 	common_battle_victory_display,
 	common_battle_inventory,
-			
+	(ti_before_mission_start,0,0,[],[(call_script, "script_remove_siege_objects")]),	
 	#if we are going to escape
 	(ti_question_answered,0,0,[],[
 			(store_trigger_param_1,":answer"),
@@ -705,7 +705,8 @@ mission_templates = [ # not used in game
        [ (team_set_relation, 0, 2, 1),
          (team_set_relation, 1, 3, 1),
          (call_script, "script_change_banners_and_chest"),
-         (call_script, "script_remove_siege_objects")]),
+         (call_script, "script_remove_siege_objects"),
+		 ]),
       common_battle_tab_press,
       (ti_question_answered, 0, 0, [],
        [(store_trigger_param_1,":answer"),
@@ -777,7 +778,8 @@ mission_templates = [ # not used in game
 		(team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
 		(team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team
 		(assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
-		(call_script, "script_change_banners_and_chest")]),
+		(call_script, "script_change_banners_and_chest"),
+		(call_script, "script_remove_siege_objects")]),
 	(0, 0, ti_once, [],[
 		(assign,"$battle_won",0),
 		(assign,"$defender_reinforcement_stage",0),

@@ -1,4 +1,4 @@
-978
+1019
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -543,6 +543,22 @@ qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
 qstr_{s15}_{reg12}__in_{s {s15},_{reg12}_(in_{s16})
 qstr__={s10}=_^{s11}.^^{s -={s10}=-^{s11}.^^{s13}.^^{s15}.
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
+qstr_TEST:_troll_VS_infan TEST:_troll_VS_infantry
+qstr_TEST:_troll_VS_arche TEST:_troll_VS_archers
+qstr_TEST:_troll_VS_chava TEST:_troll_VS_chavalry
+qstr_TEST:_troll_VS_lance TEST:_troll_VS_lancers
+qstr_TEST:_Troll_vs_Troll TEST:_Troll_vs_Troll
+qstr_TEST:_Troll_by_playe TEST:_Troll_by_player
+qstr_TROLL_TEST TROLL_TEST
+qstr_TEST:_warg_test_1_VS TEST:_warg_test_1_VS_1
+qstr_TEST:_warg_test_2_VS TEST:_warg_test_2_VS_3
+qstr_TEST:_warg_test_many TEST:_warg_test_many_VS_many
+qstr_TEST:_play_warg_test TEST:_play_warg,_test_1_VS_1
+qstr_TEST:_play_wargs_tes TEST:_play_wargs,_test_2_VS_3
+qstr_TEST:_play_wargs_man TEST:_play_wargs,_many_VS_many
+qstr_TEST_BATTLE:_{reg10} TEST_BATTLE:_{reg10}_{s10}_vs_{reg11}_{s11}
+qstr_TEST_SCENE TEST_SCENE
+qstr_FACTION_SHOWOFF FACTION_SHOWOFF
 qstr___ _-
 qstr__ _
 qstr__+ _+
@@ -586,6 +602,12 @@ qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_in_proximi ^^You_are_in_proximity_of_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
+qstr_You_have_been_pimped You_have_been_pimped_up!
+qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
+qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
+qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0},_influence_to_{reg1}!
+qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
+qstr_All_four_legendary_p All_four_legendary_places_enabled!
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{s {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}
@@ -626,7 +648,25 @@ qstr_{s1}^Difference:_{re {s1}^Difference:_{reg1}
 qstr_Daily_strength_incom Daily_strength_income_and_garrisons_for_{s4}
 qstr_{s1}^{s7}:_{reg1}__G {s1}^{s7}:_{reg1}__Garrison:_{reg3}/{reg2}{reg4?:_Capturable}
 qstr_{s1}^^Total:_{reg1} {s1}^^Total:_{reg1}
+qstr_Gothmog_besieges_Wes Gothmog_besieges_West_Osgiliath!
+qstr_Gothmog_besieges_Ere Gothmog_besieges_Erech!
+qstr_Gothmog_besieges_Pin Gothmog_besieges_Pinnath_Gelin!
+qstr_Gothmog_besieges_Edh Gothmog_besieges_Edhellond!
+qstr_Gothmog_besieges_Edo Gothmog_besieges_Edoras!
+qstr_Gothmog_besieges_Pel Gothmog_besieges_Pelargir!
+qstr_Saruman_besieges_Edo Saruman_besieges_Edoras!
+qstr_Partitava_besieges_D Partitava_besieges_Dale!
 qstr_{s10}_besieged! {s10}_besieged!
+qstr_SW_advance_camps_spa SW_advance_camps_spawned_around_a_point_northwest_of_East_Emnet!
+qstr_SE_advance_camps_spa SE_advance_camps_spawned_around_a_point_west_of_West_Osgiliath!
+qstr_C_advance_camps_spaw C_advance_camps_spawned_around_Cerin_Amroth!
+qstr_N_advance_camps_spaw N_advance_camps_spawned_around_Beorn's_House!
+qstr_Advance_camps_disabl Advance_camps_disabled,_theaters_restored!
+qstr_SW_advance_camps_spaw SW_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_SE_advance_camps_spaw SE_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
+qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Unrestricted__cheat_ Unrestricted_(cheat)
 qstr_Avoid_Unappropriate Avoid_Unappropriate
 qstr_ON ON
@@ -668,6 +708,7 @@ qstr__nearby_{s17}. ,_nearby_{s17}.
 qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
 qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.
+qstr_CHEAT:_healed!!! CHEAT:_healed!!!
 qstr_{s13}_asked_you_to_r {s13}_asked_you_to_report_to_him_with_at_least_{reg13}_troops.
 qstr_{s13}_ordered_you_to {s13}_ordered_you_to_join_the_assault_against_{s14}.
 qstr_You_were_victorious! You_were_victorious!
@@ -694,7 +735,6 @@ qstr_No_matter!_I_will_pe No_matter!_I_will_persevere!
 qstr_What_did_I_do_to_des What_did_I_do_to_deserve_this?
 qstr_I_suppose_it_ll_make I_suppose_it'll_make_for_a_good_story,_at_least...
 qstr_You_retreated_from_b You_retreated_from_battle.
-qstr_CHEAT:_healed!!! CHEAT:_healed!!!
 qstr_{s9}_wants_you_to_fo {s9}_wants_you_to_follow_his_army_until_further_notice.
 qstr_{s8}_of_{s9} {s8}_of_{s9}
 qstr__Your_own_banner_fli _Your_own_banner_flies_over_the_castle_gate.
@@ -703,8 +743,9 @@ qstr__This_castle_seems_t _This_castle_seems_to_belong_to_no_one.
 qstr__Your_own_banner_flie _Your_own_banner_flies_over_the_town_gates.
 qstr__You_see_the_banner_o _You_see_the_banner_of_{s7}_over_the_town_gates.
 qstr__The_townsfolk_here_ _The_townsfolk_here_have_declared_their_independence.
-qstr_Go_at_the_secret_ent Go_at_the_secret_entrance_to_Moria
+qstr_Go_to_the_secret_ent Go_to_the_secret_entrance_to_Moria
 qstr_Search_for_a_secret_ Search_for_a_secret_entrance_to_Moria
+qstr_Get_book. Get_book.
 qstr_The_{reg6?town_s:cas The_{reg6?town's:castle's}_food_stores_should_last_for_{reg3}_more_days.
 qstr_The_{reg6?town_s:cast The_{reg6?town's:castle's}_food_stores_have_run_out_and_the_defenders_are_starving.
 qstr_You_re_preparing_to_ You're_preparing_to_attack_the_walls,_the_work_should_finish_in_{reg9}_hours.
@@ -719,9 +760,9 @@ qstr_The_remaining_defend The_remaining_defenders_have_retreated_to_the_castle_a
 qstr_However_since_you_ar However,_since_you_are_not_a_sworn_{man/follower}_of_{s9},_there_is_no_chance_he_would_recognize_you_as_the_{lord/lady}_of_this_{reg8?town:castle}.
 qstr_The_enemy_has_been_f The_enemy_has_been_forced_to_retreat._The_assault_is_over,_but_the_siege_continues.
 qstr_The_assasins_beat_yo The_assasins_beat_you_down_and_leave_you_for_dead._.
-qstr_You_have_fallen._The You_have_fallen._The_bandits_quickly_search_your_body_for_every_coin_they_can_find,_then_vanish_into_the_night._They_have_left_you_alive,_if_only_barely.
-qstr_Luckily_some_of_your Luckily_some_of_your_companions_come_to_search_for_you_when_you_do_not_return,_and_find_you_lying_by_the_side_of_the_road._They_hurry_you_to_safety_and_dress_your_wounds.
-qstr_Luckily_some_passing Luckily_some_passing_townspeople_find_you_lying_by_the_side_of_the_road,_and_recognise_you_as_something_other_than_a_simple_beggar._They_carry_you_to_the_nearest_inn_and_dress_your_wounds.
+qstr_You_have_fallen._The You_have_fallen._The_bandits_quickly_search_your_body_for_valuables_they_can_find,_then_vanish_into_the_night._They_have_left_you_alive,_if_only_barely.
+qstr_Luckily_some_of_your Luckily_some_of_your_companions_came_to_search_for_you_when_you_did_not_return,_and_find_you_lying_in_the_ditch._They_carried_you_to_safety_and_dressed_your_wounds.
+qstr_Luckily_some_passing Luckily_some_passing_locals_found_you_lying_in_the_ditch,_and_recognised_you_as_someone_other_than_a_simple_beggar._They_carried_you_to_safety_and_dressed_your_wounds.
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
 qstr_the_castle the_castle

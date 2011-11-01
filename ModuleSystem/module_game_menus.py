@@ -1550,7 +1550,7 @@ game_menus = [
 		("camp_wait_here",[],"Camp here for some time.",
       [		(store_random_in_range,":r",0,10),#random number
 			(try_begin),
-				(ge,":r",8),#if 8 or higher, we are attacked
+				(lt,":r",1),#10% of time we are attacked
 				#clearing temporary slots
 				(try_for_range,":slot",0,10),
 					(troop_set_slot,"trp_temp_array_a",":slot",-1),
@@ -5192,9 +5192,15 @@ game_menus = [
     ]
 ),
 
-# dungeon crawl: way out of moira
+# dungeon crawl: way out of moria
 ( "moria_must_escape",city_menu_color,
-    "^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.",
+ "^^The book seems to describe the history of the last attempt of dwarves to resettle in Moria.\
+ Attempt which apparently ended with gruesome death for all involved. Perusing the book, \
+ you stumble on the words 'true silver'! Studying the pages you suddenly understand \
+ that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah! \
+ Would not it be cool to uncover the long lost dwarven mithril!? \
+ ^You eagerly follow the directions, into a narrow winding tunnel and down... \
+ After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
 			(modify_visitors_at_site,"scn_moria_deep_mines"),
@@ -5204,8 +5210,7 @@ game_menus = [
             (jump_to_scene, "scn_moria_deep_mines"),
             (change_screen_mission),
 	  ]),
-	]
-),
+]),
 
  
 ( "castle_outside",city_menu_color,
@@ -5404,7 +5409,7 @@ game_menus = [
         (eq, "$current_town", "p_town_moria"),
 	  	(eq,"$entry_to_town_forbidden",1), 
 		(try_begin), (eq, "$found_moria_entrance", 1),
-			(str_store_string, s12, "@Go at the secret entrance to Moria" ),
+			(str_store_string, s12, "@Go to the secret entrance to Moria" ),
 		(else_try),
 			(str_store_string, s12, "@Search for a secret entrance to Moria" ),
 		(try_end),
@@ -5421,10 +5426,16 @@ game_menus = [
 	  
 	  ("moria_exit_scene",[(eq, "$current_town", "p_town_moria"),(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
 			(troop_add_item, "trp_player","itm_book_of_moria",0),
-			(jump_to_menu,"mnu_moria_must_escape"),
-			(finish_mission),
+			(try_begin),
+				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+				(str_store_string, s12, "@Get book." ),
+				(jump_to_menu,"mnu_moria_must_escape"),
+				(finish_mission),
+			(else_try),
+				(str_store_string, s12, "str_empty_string"),
+			(try_end),
 	  ]
-	  ,"Get book."),
+	  ,"{s12}"),
 
 	  
       # ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
@@ -5441,7 +5452,7 @@ game_menus = [
 # ##                                                   (assign, "$talk_context", tc_castle_gate),
 # ##                                                   (change_screen_map_conversation, ":cur_guard")
                                                    # ]),
-	  
+]+concatenate_scripts([[	  
       ("town_sneak",[(eq, cheat_switch, 1),
 					 (party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
@@ -5494,7 +5505,7 @@ game_menus = [
          (jump_to_menu, "mnu_castle_besiege"),
          ]),
 
-]+concatenate_scripts([[
+
       ("cheat_castle_start_siege",
        [ (eq, cheat_switch, 1),
          (eq, "$cheat_mode", 1),
@@ -5513,14 +5524,15 @@ game_menus = [
          (try_end),
            ],
        "CHEAT: Besiege the {reg6?town:castle}...",
-       [   
-           (assign,"$g_player_besiege_town","$g_encountered_party"),
+       [   (assign,"$g_player_besiege_town","$g_encountered_party"),
            (jump_to_menu, "mnu_castle_besiege"),
            ]),
 ] for ct in range(cheat_switch)])+[
 	   
 ]+concatenate_scripts([[
-	  ("castle_siege",[(eq,0,1)],"Dont.",[]),
+	  ("town_sneak",[(eq,0,1)],"Dont.",[]),
+	  ("castle_start_siege",[(eq,0,1)],"Dont.",[]),
+	  ("cheat_castle_start_siege",[(eq,0,1)],"Dont.",[]),
 ] for ct in range(1-cheat_switch)])+[
 
       ("castle_leave",[],"Leave.",[(change_screen_return,0)]),
@@ -6356,13 +6368,13 @@ game_menus = [
       (party_set_slot, "$current_town", slot_center_has_bandits, 0),
       (party_get_num_companions, ":num_companions", "p_main_party"),
       (str_store_string, s4, "@The assasins beat you down and leave you for dead. ."),
-      (str_store_string, s4, "@You have fallen. The bandits quickly search your body for every coin they can find,\
+      (str_store_string, s4, "@You have fallen. The bandits quickly search your body for valuables they can find,\
  then vanish into the night. They have left you alive, if only barely."),
       (try_begin),
         (gt, ":num_companions", 2),
-        (str_store_string, s5, "@Luckily some of your companions come to search for you when you do not return, and find you lying by the side of the road. They hurry you to safety and dress your wounds."),
+        (str_store_string, s5, "@Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds."),
       (else_try),
-        (str_store_string, s5, "@Luckily some passing townspeople find you lying by the side of the road, and recognise you as something other than a simple beggar. They carry you to the nearest inn and dress your wounds."),
+        (str_store_string, s5, "@Luckily some passing locals found you lying in the ditch, and recognised you as someone other than a simple beggar. They carried you to safety and dressed your wounds."),
       (try_end),
     ],
     [("continue",[],"Continue...",[(change_screen_return)]),],
@@ -6370,8 +6382,7 @@ game_menus = [
 ( "town_bandits_succeeded",mnf_disable_all_keys,
     "^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone\
  while most of your attackers lie unconscious, dead or dying.\
- Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes.\
- Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.",
+ Surely the locals would be very grateful that you saved them from this menace.",
     "none",
     [
       (party_set_slot, "$current_town", slot_center_has_bandits, 0),
@@ -6746,7 +6757,7 @@ game_menus = [
           ]),
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
-]+concatenate_scripts([[ 
+ ]+concatenate_scripts([[ 
      ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
 							(party_get_slot, reg(11), "$current_town", slot_town_alley),
 							(set_jump_mission,"mt_ai_training"),
@@ -6803,8 +6814,9 @@ game_menus = [
 						(party_set_position, "p_main_party", pos2),
 						(assign, "$g_main_ship_party", -1),
 						(change_screen_return)]),
-] for ct in range(cheat_switch)])+[
-]+concatenate_scripts([[ 
+ ] for ct in range(cheat_switch)])+[
+
+ ]+concatenate_scripts([[ 
       ("town_cheat_alley",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_interior",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_town_exterior",[(eq, 0, 1),], "CHEAT",[]),
@@ -6813,7 +6825,7 @@ game_menus = [
 	  ("cheat_town_start_siege",[(eq, 0, 1),], "CHEAT",[]),
 	  ("center_reports",[(eq, 0, 1),], "CHEAT",[]),
 	  ("sail_from_port",[(eq, 0, 1),], "CHEAT",[]),
-] for ct in range(1-cheat_switch)])+[
+ ] for ct in range(1-cheat_switch)])+[
 
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
 						], "Go to the underground caverns.",
@@ -6926,7 +6938,7 @@ game_menus = [
      code_to_set_city_background +  [	],
     [("continue",[],"Continue...",[(assign, "$sneaked_into_town",1),(jump_to_menu,"mnu_town")])]
 ),
-(  "sneak_into_town_caught",city_menu_color,
+( "sneak_into_town_caught",city_menu_color,
     "As you try to sneak in, one of the guards recognizes you and raises the alarm!\
  You must flee back through the gates before all the guards in the town come down on you!",
     "none",
@@ -7021,7 +7033,7 @@ game_menus = [
         [	(assign, "$auto_menu", "$recover_after_death_menu"),
             (rest_for_hours, 8, 8, 0),
 			#(jump_to_menu, "$recover_after_death_menu"),
-			(change_screen_return),
+			(change_screen_map),
 			(display_message,"@Time passes..."),
          ]),
 	 ]
@@ -7060,7 +7072,7 @@ game_menus = [
   You get up and try to look for any other survivors from your party.",
      "none",
 	 [(set_background_mesh, "mesh_ui_default_menu_window")],[      
-	 ("continue",[],"Continue...",[(change_screen_return)])]
+	 ("continue",[],"Continue...",[(change_screen_map)])]
 ),
 ( "recover_after_death_town",0,
      "^^^^You regain your conciousness and find yourself near the town boundary. \
@@ -7069,7 +7081,9 @@ game_menus = [
   It seems that none of your wound were lethal,\
   and altough you feel awful, you find out that can still walk.",
      "none",code_to_set_city_background,
-	 [("continue",[],"Continue...",[(change_screen_map),(jump_to_menu,"mnu_castle_outside")])]
+	 [("continue",[],"Continue...",[(change_screen_map),
+	 #(jump_to_menu,"mnu_castle_outside"),
+	 ])]
 ),
 ( "recover_after_death_town_alone",0,
      "You regain your conciousness and find yourself near the town boundary. \
@@ -7081,7 +7095,7 @@ game_menus = [
      "none",code_to_set_city_background,[      
 	 ("continue",[],"Continue...",
         [   (change_screen_map),
-            (jump_to_menu,"mnu_castle_outside"),
+            #(jump_to_menu,"mnu_castle_outside"),
          ]),
 	 ]
 ),

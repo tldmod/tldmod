@@ -229,17 +229,17 @@ strings = [
 
   ("custom_battle_1", "Captain Malvogil and his Gondor company intercepted Harad reinforcement group.\
  Shouting out his warcry, he spurs his horse forward, and leads his loyal men to a fierce battle."),
-  ("custom_battle_2", "Lord Mleza is leading a patrol of horsemen and archers\
- in search of a group of bandits who plundered a caravan and ran away to the hills.\
- Unfortunately the bandits have recently met two other large groups who want a share of their booty,\
- and spotting the new threat, they decide to combine their forces."),
+  ("custom_battle_2", "Celeborn from Lorien is leading a patrol of horsemen and archers\
+ when forward lookout brings a warning of a force of ash-faced evil men approaching.\
+ It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages,\
+ but now they must be driven back to the neverworld."),
   ("custom_battle_3", "Lord Grimbold of Rohan is leading the last defence of the walls against an army if Isengard.\
  Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel."),
   ("custom_battle_4", "When the scouts inform Lord Grainwad of the approach of an Rhun war band,\
  he decides to quickly prepare the defences of his camp and try to hold against superior numbers."),
-  ("custom_battle_5", "Captain Ugluk has brought his fierce orksies into the west with the promise of plunder.\
+  ("custom_battle_5", "Ugluk has brought his fierce orksies into the west with the promise of plunder.\
  If he can make this dwarf stronghold fall to him today, his masters in Barad-Dur will be mightily pleased."),
-  ("custom_battle_6", "Grishnakh and his orc raider squad were as keen as possible in escaping Elven patrols.\
+  ("custom_battle_6", "Ugluk and his orc raider squad were as keen as possible in escaping Elven patrols.\
  But one's good fortunes may not last forever, and it seems like filthy paleskins will have their share now."),
   ("custom_battle_7", "Cosairs have set up their camp on the shores of Gondor! How dare they.\
  Let us strike them before they get reinforcements and drive them off into the sea, where they belong."),
@@ -2782,7 +2782,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_druadan_forest", "Drúadan Forest, the Gondor Forest of the Drúedain"), #9
 ("fullname_region_firien_wood","Firien wood, the Whispering Wood, a Gondor forest of oaks"), #10
 
-("fullname_region_anorien", "Anórien, the Sun-land, a valley between the White Mountains and the Aduin river"), #11
+("fullname_region_anorien", "Anórien, the Sun-land, a valley between the White Mountains and the Anduin river"), #11
 
 ("fullname_region_rohan0", "the Folde, the heart of Rohan"), 
 ("fullname_region_rohan1", "the Eastemnet, a part of Rohan, the Riddermark"), 
@@ -2794,14 +2794,14 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_the_wold", "the Wold, the Northeastern area of the Riddermark of Rohan"), # region_the_wold
 ("fullname_region_gap_of_rohan","the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings."),
 
-("fullname_region_entwash", "the Mouths of the Entwash, where the Rohan river Entwash joins the Aduin"), # region_entwash = 20
+("fullname_region_entwash", "the Mouths of the Entwash, where the Rohan river Entwash joins the Anduin"), # region_entwash = 20
 ("fullname_region_wetwang", "Nindalf, the swamps of Wetwang"), # region_wetwang = 21
 
-("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagorlad, now a cursed place"), #region_dead_marshes = 22
+("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagor Dagorlad, now a cursed place"), #region_dead_marshes = 22
 
 ("fullname_region_isengard", "the plains around Isengard" ),#region_isengard = 23
 
-("fullname_region_fangorn", "the Fangorn forest, where trees are said to talk, known as Entwood." ),#region_fangorn
+("fullname_region_fangorn", "the Fangorn forest, where trees are said to talk." ),#region_fangorn
 
 ("fullname_region_brown_lands", "the Brown Lands, covering the expanse between the Emyn Muil and Mirkwood" ),#region_brown_lands = 25
 ("fullname_region_dagorlad", "the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor"), # = 26
@@ -2813,7 +2813,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 31
 ("fullname_region_anduin_banks", "the valley of Anduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 32 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 33
-("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by several strange creatures" ),#region_s_mirkwood = 34
+("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by strange creatures" ),#region_s_mirkwood = 34
 ("fullname_region_above_mirkwook", "Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_grey_mountains", "the foothills of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36
 ("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 37
@@ -2864,7 +2864,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("shortname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
 ("shortname_region_lorien ", "Lorien" ),#region_lorien = 31
-("shortname_region_anduin_banks ", "the valley of Aduin" ),#region_anduin_banks = 32
+("shortname_region_anduin_banks ", "the valley of Anduin" ),#region_anduin_banks = 32
 ("shortname_region_n_mirkwood ", "North Mirkwood" ),#region_n_mirkwood = 33
 ("shortname_region_s_mirkwood ", "South Mirkwood" ),#region_s_mirkwood = 34
 ("shortname_region_above_mirkwook", "Northen Rhovanion" ),#region_above_mirkwook = 35
