@@ -1469,8 +1469,9 @@ Let's speak again when you are more accomplished.", "close_window", [(agent_set_
 [anyone,"player_hire_troop_reunite_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
 "We don't have use for those troops here...^Take them back.", "player_hire_troop_nextcycle", []],
 
-[anyone,"player_hire_troop_reunite_1", 	# player gave fittings too (party size)
-	 [  (store_sub, reg10, reg28, reg0), 
+[anyone,"player_hire_troop_reunite_1", 	
+	 [  (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
+	    (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
@@ -3204,7 +3205,8 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 "I don't have use for those troops here...^Take them back.", "lord_pretalk", []],
 
 [anyone,"lord_give_troops_check_1", [
-        (store_sub, reg10, reg28, reg0), 
+        (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
+		(store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
@@ -8875,7 +8877,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "Those soldiers are of no use to us, sorry. ^Take them back.", "party_reinforce_end", []],
 
 [anyone,"party_reinforce_check_1", 
-	 [  (store_sub, reg10, reg28, reg0), 
+	 [  (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
+	    (store_sub, reg10, reg28, reg0), 
 		#(gt, reg10, 0), # player did give someone 
 		(store_sub, reg9, reg10, 1),
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
