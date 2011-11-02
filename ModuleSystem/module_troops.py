@@ -1310,7 +1310,7 @@ troops = [
 ["corsair_veteran_marauder","Veteran_Swordsman_of_Umbar","Veteran_Swordsmen_of_Umbar",tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_f,itm_umb_armor_h,itm_umb_helm_e,itm_umb_helm_f,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_throw_1|knows_power_strike_3,bandit_face1,bandit_face2],
-["corsair_elite_marauder","Corsair_Swordmaster","Corsair_Swordmasters",tfg_gloves| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
+["corsair_elite_marauder","Corsair_Swordmaster","Corsair_Swordmasters",tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
    [itm_corsair_boots,itm_umb_armor_g,itm_umb_helm_a,itm_umb_helm_b,itm_umb_shield_c,itm_kraken,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_throw_2|knows_power_strike_6|knows_ironflesh_3,bandit_face1,bandit_face2],
 ["assassin_of_umbar","Assassin_of_Umbar","Assassins_of_Umbar",tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
@@ -1332,7 +1332,7 @@ troops = [
    [itm_leather_boots,itm_leather_gloves,itm_short_bow,itm_sumpter_horse,itm_saddle_horse,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
 #Isengard
-["orc_snaga_of_isengard","Orc_Snaga_of_Isengard","Orc_Snagas_of_Isengard",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
+["orc_snaga_of_isengard","Orc_Snaga_of_Isengard","Orc_Snagas_of_Isengard",tf_orc| tf_no_capture_alive,0,0,fac_isengard,
    [itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_isengard_axe,itm_isengard_axe,itm_orc_club_a,itm_orc_club_b,itm_orc_club_c,itm_orc_club_d,itm_orc_simple_spear,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_throw_1|knows_power_strike_1,orc_face1,orc_face2],
 ["orc_of_isengard","Orc_of_Isengard","Orcs_of_Isengard",tf_orc| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,

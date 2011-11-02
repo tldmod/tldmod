@@ -584,6 +584,7 @@ simple_triggers = [
 (0.1,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (troop_get_slot, ":troop_party_no", ":troop_no", slot_troop_leaded_party),
+		 (party_is_active, ":troop_party_no"), #GA. when hero loses battles slot is not emptied, can cause errors
          (ge, ":troop_party_no", 1),
          (party_get_attached_to, ":cur_attached_town", ":troop_party_no"),
          (lt, ":cur_attached_town", 1),
