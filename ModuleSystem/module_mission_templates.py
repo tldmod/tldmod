@@ -744,21 +744,21 @@ mission_templates = [ # not used in game
 ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
     [# Attacker initial spawn point (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
      # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,12,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
      (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
      (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]), #entry 8 for add_reinforcements_to_entry
-     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]),
-     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,6,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
+     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
+     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
      # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),

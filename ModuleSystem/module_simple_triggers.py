@@ -1627,6 +1627,7 @@ simple_triggers = [
 	(try_begin),
 		(neg|is_currently_night),
 		(assign, "$prev_day", 1),
+		(play_sound, "snd_reload_crossbow_continue"), # rooster at dawn
 		(try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
 			(troop_get_type, ":troop_type", ":troop_id"),
 			(try_begin),
@@ -1666,6 +1667,7 @@ simple_triggers = [
 	(else_try),
 		#debug_point_1,
 		(assign, "$prev_day", 0),
+		(play_sound, "snd_release_crossbow"), # wolf at dusk
 		(try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
 			(troop_get_type, ":troop_type", ":troop_id"),
 			(try_begin),

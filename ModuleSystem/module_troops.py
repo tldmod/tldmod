@@ -55,7 +55,7 @@ def wp_melee(x):
  
 #Skills
 knows_common = knows_riding_1|knows_trade_1|knows_inventory_management_2|knows_prisoner_management_1|knows_leadership_1
-knows_common_dwarf = knows_riding_10|knows_trade_2|knows_inventory_management_4|knows_prisoner_management_1|knows_leadership_1
+knows_common_dwarf = knows_riding_10|knows_horse_archery_10|knows_trade_2|knows_inventory_management_4|knows_prisoner_management_1|knows_leadership_1
 def_attrib = str_7| agi_5| int_4| cha_4
  
 itm_hunting_bow = itm_short_bow
@@ -118,11 +118,11 @@ wp_tier_5 = wp(200)
 wp_tier_6 = wp(300)
 wp_tier_7 = wp(400)
 
-wp_elf_tier_1 = wp(280)
-wp_elf_tier_2 = wp(320)
-wp_elf_tier_3 = wp(350)
-wp_elf_tier_4 = wp(400)
-wp_elf_tier_5 = wp(450)
+wp_elf_tier_1 = wp(240)
+wp_elf_tier_2 = wp(280)
+wp_elf_tier_3 = wp(310)
+wp_elf_tier_4 = wp(360)
+wp_elf_tier_5 = wp(410)
 wp_elf_tier_6 = wp(500)
 
 wp_dwarf_tier_1 = wp(100)
@@ -613,25 +613,25 @@ troops = [
    [itm_dwarf_pad_boots,itm_leather_dwarf_armor,itm_dwarf_helm_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_hand_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],
       attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_3|knows_power_draw_4|knows_power_strike_5|knows_power_throw_3|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
 ["dwarven_hardened_warrior","Hardened_Warrior-dwarf","Hardened_Warrior-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_chain_boots,itm_dwarf_armor_a,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_g,itm_dwarf_shield_k,],
+   [itm_dwarf_chain_boots,itm_dwarf_armor_a,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_g,itm_dwarf_shield_k,],
       attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
 ["dwarven_spearman","Spear-dwarf","Spear-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_dwarf_helm_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_hand_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],
+   [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_dwarf_helm_a,itm_dwarf_throwing_axe,itm_dwarf_spear,itm_dwarf_shield_f,itm_dwarf_shield_j,],
       attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_3|knows_power_draw_4|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
 ["dwarven_pikeman","Pike-dwarf","Pike-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_pad_boots,itm_mail_mittens,itm_dwarf_armor_a,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_g,itm_dwarf_shield_k,],
+   [itm_dwarf_pad_boots,itm_mail_mittens,itm_dwarf_armor_a,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_sword_a,itm_dwarf_spear,],
       attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
-["dwarven_halberdier","Halberdier-dwarf","Halberdier-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,
+["dwarven_halberdier","Halberd-dwarf","Halberd-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_chain_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_axe,itm_dwarf_great_mattock,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
 ["dwarven_axeman","Axedwarf","Axedwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_leather_dwarf_armor,itm_dwarf_helm_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],
       attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_3|knows_power_draw_4|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
 ["dwarven_expert_axeman","Expert_Axedwarf","Expert_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_chain_boots,itm_mail_mittens,itm_dwarf_armor_b,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_shield_g,itm_dwarf_shield_k,],
+   [itm_dwarf_chain_boots,itm_mail_mittens,itm_dwarf_armor_b,itm_dwarf_helm_c,itm_dwarf_helm_h,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_shield_g,itm_dwarf_shield_k,],
       attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_4|knows_power_draw_1|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
 ["longbeard_axeman","Longbeard_Axedwarf","Longbeard_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,itm_dwarf_great_axe,],
+   [itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_armor_c,itm_dwarf_helm_p,itm_dwarf_helm_u,itm_dwarf_helm_x,itm_dwarf_throwing_axe,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,itm_dwarf_great_axe,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_draw_1|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
 ["dwarven_lookout","Lookout-dwarf","Lookout-dwarves",tf_dwarf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_pad_boots,itm_dwarf_armor_b,itm_lamedon_hood,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],
@@ -889,7 +889,7 @@ troops = [
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_a,itm_lorien_boots,itm_lorien_sword_b,itm_lorien_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 ["noldorin_mounted_archer","Noldorin_Mounted_Archer","Noldorin_Mounted_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_warhorse,itm_lorien_sword_a,itm_lorien_round_shield,],
+   [itm_glorfi_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_warhorse,itm_lorien_sword_a,itm_lorien_round_shield,],
       attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_horse_archery_7|knows_riding_7|knows_athletics_5|knows_power_draw_9|knows_power_strike_6|knows_ironflesh_6,lorien_elf_face_1,lorien_elf_face_2],
 ["lothlorien_infantry","Lothlorien_Infantry","Lothlorien_Infantry",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
    [itm_lorien_helm_c,itm_lorien_armor_a,itm_lorien_boots,itm_leather_gloves,itm_lorien_sword_a,itm_lorien_shield_c,],
@@ -953,7 +953,7 @@ troops = [
    [itm_mirkwood_war_spear,itm_mirkwood_spear_shield_a,itm_leather_gloves,itm_mirkwood_armor_b,itm_mirkwood_leather_greaves,itm_mirkwood_helm_b,itm_mirkwood_sword,],
       attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_6|knows_power_draw_3|knows_power_strike_6|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["greenwood_royal_spearman","Greenwood_Elite_Infantry","Greenwood_Elite_Infantry",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
-   [itm_mirkwood_war_spear,itm_mirkwood_spear_shield_b,itm_leather_gloves,itm_mirkwood_armor_c,itm_mirkwood_leather_greaves,itm_mirkwood_helm_b,itm_mirkwood_sword,],
+   [itm_mirkwood_war_spear,itm_mirkwood_spear_shield_b,itm_leather_gloves,itm_mirkwood_armor_c,itm_mirkwood_leather_greaves,itm_mirkwood_helm_b,],
       attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_7|knows_power_draw_3|knows_power_strike_6|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["thranduils_royal_swordsman","Thranduil's_Royal_Swordsman","Thranduil's_Royal_Swordsmen",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
    [itm_mirkwood_spear_shield_c,itm_leather_gloves,itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_mirkwood_helm_b,itm_mirkwood_sword,],
@@ -2171,22 +2171,22 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_4,0x0000000033001045055d5db565a9c73500000000001db6f90000000000000000],
 #Isengard
 ["knight_1_15","Ugluk","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_3,0x0000000026000004003da293b938671800000000000000000000000000000000],
 ["knight_1_16","Mauhur","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_3,0x0000000026000143003f171a07063a1300000000000000000000000000000000],
 ["knight_1_17","Mog_the_Seven-fingered","_",tf_hero| tf_urukhai |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_2,0x0000000740000140003f9f9a3fdad74d00000000000000000000000000000000],
 ["knight_1_18","Hushnak_Longshanks","_",tf_hero| tf_urukhai |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_3|knows_trainer_4,0x00000004c400120300384eb95df2446200000000000000000000000000000000],
 ["knight_1_19","Gridash the Tree-biter","_",tf_hero| tf_urukhai |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_6,0x00000004fa000046003e72470fba445400000000000000000000000000000000],
 ["knight_1_20","Gronk the Man-eater","_",tf_hero| tf_urukhai |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
-   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,],
+   [itm_isen_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_d,itm_isengard_hammer,itm_isen_uruk_shield_b,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x00000004f2001185003a4e4b5475450200000000000000000000000000000000],
 #Mordor
 ["knight_2_1","Captain_Mortakh","_",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,

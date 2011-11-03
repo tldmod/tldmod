@@ -42,14 +42,14 @@ sounds = [
 ("horse_jump_end_water", sf_vol_4|sf_priority_9,["jump_end_water.wav"]),
 
 ("release_bow",sf_vol_5, ["release_bow_1.wav"]),
-("release_crossbow",sf_vol_7, ["release_crossbow_1.ogg"]),
+("release_crossbow",sf_vol_5, ["wolf_short.wav"]), # to use temporarily to preserve save compartibility
 ("throw_javelin",sf_vol_5, ["throw_javelin_2.wav"]),
 ("throw_axe",sf_vol_7, ["throw_axe_1.wav"]),
 ("throw_knife",sf_vol_5, ["throw_knife_1.wav"]),
 ("throw_stone",sf_vol_7, ["throw_stone_1.wav"]),
 
 ("reload_crossbow",sf_vol_3, ["pull_bow_1.wav"]), #"reload_crossbow_1.ogg"
-("reload_crossbow_continue",sf_vol_6, ["put_back_dagger.wav"]),
+("reload_crossbow_continue",sf_vol_5, ["rooster.wav"]), # to use temporarily to preserve save compartibility
 ("pull_bow",sf_vol_4, ["pull_bow_1.wav"]),
 ("pull_arrow",sf_vol_5, ["pull_arrow.wav"]),
 
