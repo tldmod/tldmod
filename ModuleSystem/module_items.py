@@ -102,7 +102,7 @@ items =[
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.
 # scraps_end in constants points here
-["oliphant","Oliphant",[("oliphant",0)],itp_type_horse,0,64,hit_points(255)|body_armor(255)|difficulty(255)|horse_speed(1)|horse_maneuver(1)|horse_charge(500),imodbits_horse_basic|0],
+["oliphant","Oliphaunt",[("oliphant",0)],itp_type_horse,0,64,hit_points(255)|body_armor(255)|difficulty(255)|horse_speed(1)|horse_maneuver(1)|horse_charge(500),imodbits_horse_basic|0],
 
 ["sumpter_horse","Sumpter_Horse",[("sumpter_horse",0)],itp_type_horse|itp_shop,0,64,hit_points(40)|body_armor(1)|difficulty(1)|horse_speed(28)|horse_maneuver(33)|horse_charge(5),imodbits_horse_basic|imodbits_horse_basic],
 ["saddle_horse","Saddle_Horse",[("saddle_horse",0)],itp_type_horse|itp_shop,0,112,hit_points(60)|body_armor(7)|difficulty(1)|horse_speed(39)|horse_maneuver(36)|horse_charge(8),imodbits_horse_basic|imodbits_horse_basic],

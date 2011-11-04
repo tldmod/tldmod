@@ -1424,7 +1424,7 @@ troops = [
 ["uruk_hai_of_isengard","Uruk_Hai_of_Isengard","Uruk_Hai_of_Isengard",tf_urukhai| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_ragwrap,itm_isen_uruk_helm_a,itm_isen_uruk_light_a,itm_isengard_axe,itm_isengard_spear,itm_isengard_sword,],
       attr_tier_2,wp_tier_2,knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
-["large_uruk_hai_of_isengard","Large_Iruk_Hai_of_Isengard","Large_Uruk_Hai_of_Isengard",tf_urukhai| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["large_uruk_hai_of_isengard","Large_Uruk_Hai_of_Isengard","Large_Uruk_Hai_of_Isengard",tf_urukhai| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_isen_uruk_helm_b,itm_isen_uruk_heavy_a,itm_isengard_spear,itm_isengard_heavy_axe,itm_isengard_sword,],
       attr_tier_3,wp_tier_3,knows_athletics_3|knows_power_strike_3|knows_ironflesh_4,uruk_hai_face1,uruk_hai_face2],
 ["fighting_uruk_hai_warrior","Fighting_Uruk_Hai_Warrior","Fighting_Uruk_Hai_Warriors",tf_urukhai| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,

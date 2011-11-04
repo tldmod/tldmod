@@ -1149,7 +1149,7 @@ game_menus = [
 ),
 ("start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
- ("start_1",[],"HARADRIMS, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
+ ("start_1",[],"HARADRIM, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_choose_gender"),]),
  ("start_3",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
  ("start_4",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
@@ -5194,13 +5194,13 @@ game_menus = [
 
 # dungeon crawl: way out of moria
 ( "moria_must_escape",city_menu_color,
- "^^The book seems to describe the history of the last attempt of dwarves to resettle in Moria.\
+ "^^The book seems to give the account of the last attempt of dwarves to resettle in Moria.\
  Attempt which apparently ended with gruesome death for all involved. Perusing the book, \
  you stumble on the words 'true silver'! Studying the pages you suddenly understand \
  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah! \
  Would not it be cool to uncover the long lost dwarven mithril!? \
  ^You eagerly follow the directions, into a narrow winding tunnel and down... \
- After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.",
+ ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
 			(modify_visitors_at_site,"scn_moria_deep_mines"),
@@ -5208,8 +5208,13 @@ game_menus = [
             (set_visitor,0,"trp_player"),
 			(set_jump_mission,"mt_dungeon_crawl_moria_deep"),
             (jump_to_scene, "scn_moria_deep_mines"),
+			(jump_to_menu, "mnu_auto_return_to_map"),
             (change_screen_mission),
 	  ]),
+	  # ("moria_exit_found",[(eq,1,0)], "Exit is here!",[
+			# (jump_to_menu, "mnu_auto_return_to_map"),
+            # (change_screen_map),
+	  # ], "Fresh air behind this door!"),
 ]),
 
  
@@ -7708,8 +7713,8 @@ game_menus = [
 	(try_end),
 	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
-	(setup_quest_text, "qst_oath_of_vengeance"),
-	(start_quest, "qst_oath_of_vengeance")],[
+	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
+	],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
 ]),
 ( "burial_mound_despoil", 0, 
