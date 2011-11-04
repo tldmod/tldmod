@@ -85,6 +85,42 @@ man_face_keys = [
 (280,0,0.0,1.0, "Post-Edit"),
 ]
 
+orc_face_keys = [
+(20,0, 0.7,-0.6, "Chin Size"),
+(260,0, -0.6,1.4, "Chin Shape"),
+(10,0,-0.5,0.9, "Chin Forward"),
+(240,0,0.9,-0.8, "Jaw Width"),
+(210,0,-0.5,1.0, "Jaw Position"),
+(250,0,0.8,-1.0, "Mouth-Nose Distance"),
+(200,0,-0.3,1.0, "Mouth Width"),
+(50,0,-1.5,1.0, "Cheeks"),
+
+(60,0,-0.4,1.35, "Snout Height"),
+(70,0,-0.6,0.7, "Snout Width"),
+(80,0,1.0,-1.0, "Snout Size"),
+(270,0,-0.5,1.0, "Snout Shape"),
+(90,0,-0.2,1.4, "Nose Bridge"),
+
+(100,0,-0.3,1.5, "Cheek Bones"),
+(150,0,-0.2,3.0, "Eye Width"),
+(110,0,1.5,-0.9, "Eye to Eye Dist"),
+(120,0,1.9,-1.0, "Eye Shape"),
+(130,0,-0.5, 1.1, "Eye Depth"),
+(140,0,1.0,-1.2, "Eyelids"),
+
+(160,0,1.3,-0.2, "Eyebrow Position"),
+(170,0,-0.1,1.9, "Eyebrow Height"),
+(220,0,-0.1,0.9, "Eyebrow Depth"),
+(180,0,-1.1,1.6, "Eyebrow Shape"),
+(230,0,1.2,-0.7, "Temple Width"),
+
+(30,0,-0.6,0.9, "Face Depth"),
+(40,0,0.9,-0.6, "Face Ratio"),
+(190,0,0.0,0.95, "Face Width"),
+
+(280,0,0.0,1.0, "Post-Edit"),
+]
+
 dwarf_face_keys = [
 (20,0, 0.7,-0.6, "Chin Size"),
 (260,0, -0.6,1.4, "Chin Shape"),
@@ -163,7 +199,6 @@ woman_face_keys = [
 gondor_face_keys = man_face_keys
 rohan_face_keys = man_face_keys
 dunlander_face_keys = man_face_keys
-orc_face_keys = man_face_keys
 haradrim_face_keys = man_face_keys
 easterling_face_keys = man_face_keys
 troll_face_keys = []
