@@ -278,9 +278,9 @@ party_templates = [
 ("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_harad_horse_archer,1,2),(trp_harad_skirmisher,2,4),(trp_harad_infantry,1,2),(trp_far_harad_tribesman,1,2),]),
 ("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_black_snake_horse_archer,1,2),(trp_harondor_light_cavalry,1,2),(trp_far_harad_champion,1,2),(trp_harad_swordsman,1,1),(trp_harad_veteran_infantry,0,1),]),
 #Rhun
-("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_rhun_light_horseman,1,2),(trp_rhun_horse_scout,1,2),(trp_rhun_tribesman,5,10),]),
-("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_rhun_horse_archer,2,4),(trp_rhun_light_cavalry,1,2),(trp_rhun_tribal_infantry,2,4),]),
-("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_rhun_noble_cavalry,2,4),(trp_rhun_veteran_swift_horseman,1,2),(trp_rhun_veteran_horse_archer,1,2),]),
+("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_rhun_light_horseman,1,2),(trp_rhun_horse_scout,2,3),(trp_rhun_tribesman,5,10),]),
+("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_rhun_horse_archer,3,5),(trp_rhun_light_cavalry,1,2),(trp_rhun_tribal_infantry,2,4),]),
+("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_rhun_noble_cavalry,2,4),(trp_rhun_veteran_swift_horseman,1,2),(trp_rhun_veteran_horse_archer,2,4),]),
 #Khand
 ("khand_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_easterling_rider,1,2),(trp_easterling_warrior,2,4),(trp_easterling_youth,4,8),]),
 ("khand_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_easterling_skirmisher,2,4),(trp_easterling_horseman,0,1),(trp_easterling_axeman,2,3),(trp_khand_glaive_whirler,1,2),]),
@@ -315,8 +315,8 @@ party_templates = [
 ("beorn_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_beorning_sentinel,1,3),(trp_beorning_carrock_fighter,2,3),(trp_woodmen_axemen,1,2),]),
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
 ("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,8,16)]),
-("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_goblin_bowmen_gundabad,4,7),(trp_orc_gundabad,3,6),]),
-("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_goblin_rider_gundabad,3,6),(trp_orc_fighter_gundabad,1,2),(trp_keen_eyed_goblin_archer_gundabad,1,2),]),
+("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_goblin_bowmen_gundabad,4,7),(trp_orc_gundabad,4,7),]),
+("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_goblin_rider_gundabad,2,5),(trp_orc_fighter_gundabad,2,3),(trp_keen_eyed_goblin_archer_gundabad,1,3),]),
 #Dale (7-14, 5-10, 4-8)
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_dale_man_at_arms,1,2),(trp_laketown_scout,1,2),(trp_dale_militia,5,10),]),
 ("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_merchant_squire_or_dale,0,1),(trp_laketown_bowmen,3,5),(trp_dale_pikeman,1,2),(trp_dale_warrior,1,2),]),
@@ -348,26 +348,26 @@ party_templates = [
 ("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,4)]),
 ("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,6)]),
 ("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
-("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3),(trp_black_numenorean_renegade,0,1),]), #two T1 & prize
-("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,1,3)]), #two T1
+("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,0,1),]), #two T1 & prize
+("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
 ("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_mordor,1,3),(trp_morgul_orc,0,2)]), #T1 T2
-("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,1,1),(trp_far_harad_tribesman,1,2)]), #three T1
+("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,0,2),(trp_far_harad_tribesman,1,2)]), #three T1
 ("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
-("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,2,5)]),
-("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,2)]), #two T1
-("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,3),(trp_dunedain_scout,1,2)]), #two T1
-("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,2,5)]),
-("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,2,5)]),
-("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,2,5)]),
+("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,3,6)]),
+("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,0,1)]), #two T1
+("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,2),(trp_dunedain_scout,1,2)]), #two T1
+("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,1,4)]),
+("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,5,10)]),
+("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,5,10)]),
 ("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_beorning_vale_man,2,5)]),
 ("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_woodmen_youth,2,5)]),
-("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_goblin_gundabad,2,5)]),
-("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,3,8)]),
+("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_goblin_gundabad,3,6)]),
+("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,3,7)]),
 ("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
-("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,5)]), #T1 and T2
-("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,4)]), #T1 and T2
-("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,2,5)]),
+("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,4)]), #T1 and T2
+("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,3)]), #T1 and T2
+("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,3,7)]),
 
 
 ("caravan_survivors","Caravan Survivors",icon_generic_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),

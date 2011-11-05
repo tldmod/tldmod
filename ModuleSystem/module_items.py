@@ -306,13 +306,13 @@ items =[
 ["arnor_helm_b","Arnor_Helm",[("dunedain_helm_b",0)],itp_type_head_armor|itp_shop,0,1000,weight(1.5)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 ["arnor_helm_c","Arnor_Helm",[("dunedain_helm_c",0)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["dunedain_helm_a","Dunedain_Hood",[("arnor_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,300,weight(1)|head_armor(14)|difficulty(0),imodbits_elf_cloth],
-["dunedain_helm_b","Arnor_Decorated_Helm",[("arnor_helm_a",0)],itp_type_head_armor|itp_shop,0,1300,weight(2)|head_armor(38)|difficulty(0),imodbits_elf_armor],
+["dunedain_helm_b","Arnor_Decorated_Helm",[("arnor_helm_a",0)],itp_type_head_armor|itp_shop,0,1500,weight(2)|head_armor(38)|difficulty(0),imodbits_elf_armor],
 #ARNOR ARMORS########
 ["arnor_armor_a","Arnorian_Armor",[("arnor_blue",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2300,weight(20)|head_armor(0)|body_armor(40)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
 ["arnor_armor_b","Arnorian_Armor",[("arnor_brown",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2300,weight(20)|head_armor(0)|body_armor(40)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
-["arnor_armor_c","Dunedain_Ranger_Leather",[("arnor_ranger",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1530,weight(19)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["arnor_armor_d","Dunedain_Ranger_Leather",[("arnor_ranger_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1930,weight(19)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["arnor_armor_e","Arnorian_Reinforced_Jerkin",[("arnor_reinf_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2700,weight(23)|head_armor(0)|body_armor(20)|leg_armor(10)|difficulty(0),imodbits_elf_cloth,],
+["arnor_armor_c","Dunedain_Ranger_Leather",[("arnor_ranger",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(12)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["arnor_armor_d","Dunedain_Ranger_Leather",[("arnor_ranger_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(12)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["arnor_armor_e","Arnorian_Reinforced_Jerkin",[("arnor_reinf_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(15)|head_armor(0)|body_armor(20)|leg_armor(10)|difficulty(0),imodbits_elf_cloth,],
 ["arnor_armor_f","Arnorian_High_Armor",[("arnor_knight",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3100,weight(24)|head_armor(0)|body_armor(42)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["arnor_greaves","Arnorian_Greaves",[("arnor_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,800,weight(3)|leg_armor(24)|difficulty(0),imodbits_elf_armor],
 ["arnor_splinted","Arnorian_Splinted_Greaves",[("arnor_splinted",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(3.5)|leg_armor(28)|difficulty(0),imodbits_elf_armor],
@@ -510,8 +510,8 @@ items =[
 ########LORIEN SHIELDS#####
 #["lorien_shield_a", "Lorien Shield",[("loth_long_shield_a" ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 ["lorien_shield_b","Lorien_Tower_Shield",[("lorien_kite",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,700,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
-["lorien_shield_c","Lorien_Kite_Shield",[("lorien_kite_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,500,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(70),imodbits_shield_good,],
-["lorien_round_shield","Lorien_Round_Shield",[("lorien_round_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,400,weight(1)|hit_points(1000)|body_armor(20)|spd_rtng(96)|weapon_length(50),imodbits_shield_good,],
+["lorien_shield_c","Lorien_Kite_Shield",[("lorien_kite_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,500,weight(2)|hit_points(800)|body_armor(18)|spd_rtng(92)|weapon_length(70),imodbits_shield_good,],
+["lorien_round_shield","Lorien_Round_Shield",[("lorien_round_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,400,weight(1)|hit_points(700)|body_armor(15)|spd_rtng(96)|weapon_length(50),imodbits_shield_good,],
 # 
 ########LORIEN HELMS#######
 ["lorien_helm_a","Lorien_Archer_Helm",[("lorienhelmetarcherlow",0)],itp_type_head_armor|itp_shop,0,1300,weight(1)|head_armor(35)|difficulty(0),imodbits_elf_armor],
@@ -571,8 +571,8 @@ items =[
 ########Uruk Weapons
 ["uruk_pike_a","Uruk_Pike",[("isengard_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_two_handed|itp_wooden_parry,itc_cutting_spear,400,weight(3)|difficulty(0)|spd_rtng(81)|weapon_length(227)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
 ["uruk_pike_b","Uruk_Pike",[("uruk_skull_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_two_handed|itp_wooden_parry,itc_cutting_spear,400,weight(3)|difficulty(0)|spd_rtng(81)|weapon_length(176)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
-["uruk_falchion_a","Uruk_Falchion_a",[("uruk_falchion_a",0)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(72)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
-["uruk_falchion_b","Uruk_Falchion_b",[("uruk_falchion_b",0)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
+["uruk_falchion_a","Uruk_Falchion",[("uruk_falchion_a",0)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(72)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
+["uruk_falchion_b","Uruk_Falchion",[("uruk_falchion_b",0)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["uruk_spear","Uruk_Spear",[("uruk_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry,itc_staff,300,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(168)|swing_damage(20,blunt)|thrust_damage(27,pierce),imodbits_weapon_wood],
 ["uruk_skull_spear","Uruk_Skull_Spear",[("uruk_skull_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry,itc_staff,300,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(176)|swing_damage(20,blunt)|thrust_damage(27,pierce),imodbits_weapon_bad],
 ["uruk_voulge","Uruk_Voulge",[("uruk_voulge",0)],itp_type_polearm|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,400,weight(4.5)|difficulty(0)|spd_rtng(87)|weapon_length(108)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
@@ -769,12 +769,12 @@ items =[
 ["rohan_armor_p","Rohan_Armor",[("E_roh_hauberk_a_cape_M13",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(20)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["rohan_armor_q","Rohan_Armor",[("E_roh_hauberk_b_cape_M14",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(20)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["rohan_armor_r","Rohan_Armor",[("E_roh_hauberk_c_cape_M15",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(20)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
-["rohan_armor_s","Rohan_Heraldric_Mail",[("VH_heraldic_rohan_armor_M16",0)],itp_type_body_armor|itp_covers_legs|0,0,6000,weight(22)|head_armor(0)|body_armor(40)|leg_armor(17)|difficulty(0),imodbits_elf_armor,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_armor_b", ":agent_no", ":troop_no")])]],
+["rohan_armor_s","Rohan_Heraldric_Mail",[("VH_heraldic_rohan_armor_M16",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(22)|head_armor(0)|body_armor(40)|leg_armor(17)|difficulty(0),imodbits_elf_armor,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_armor_b", ":agent_no", ":troop_no")])]],
 ##HELMS##########
 ["rohan_light_helmet_a","Rohan_Light_Helm",[("rohan_light_helmet_a",0)],itp_type_head_armor|itp_shop,0,500,weight(1)|head_armor(23)|difficulty(0),imodbits_cloth],
 ["rohan_light_helmet_b","Rohan_Light_Helmet",[("rohan_light_helmet_b",0)],itp_type_head_armor|itp_shop,0,600,weight(1)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rohan_inf_helmet_a","Rohan_Infantry_Helmet",[("rohan_inf_helmet_a",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rohan_inf_helmet_b","Rohan_Infantry_Helmet",[("rohan_inf_helmet_b",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
+["rohan_inf_helmet_a","Rohan_Infantry_Helm",[("rohan_inf_helmet_a",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
+["rohan_inf_helmet_b","Rohan_Infantry_Helm",[("rohan_inf_helmet_b",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["rohan_archer_helmet_a","Rohan_Archer_Helmet",[("rohan_archer_helmet_a",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["rohan_archer_helmet_b","Rohan_Archer_Helmet",[("rohan_archer_helmet_b",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["rohan_archer_helmet_c","Rohan_Horse_Archer_Helmet",[("rohan_archer_helmet_c",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(32)|difficulty(0),imodbits_armor | imodbit_cracked],
@@ -811,13 +811,13 @@ items =[
 ["rohan_2h_sword","Rohan_War_Sword",[("rohan_sword_a_2h",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itc_greatsword|itcf_carry_sword_back,524,weight(3)|difficulty(0)|spd_rtng(94)|weapon_length(101)|swing_damage(40,cut)|thrust_damage(31,pierce),imodbits_weapon],
 ###TLD WOODELF ITEMS##########
 #ARMORS##########
-["mirkwood_light_scale","Light_Woodelf_Scale",[("mirkwood_light_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(30)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_light_scale","Light_Woodelf_Scale",[("mirkwood_light_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(30)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
 ["mirkwood_armor_a","Light_Leather",[("mirkwood_leather",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(10)|head_armor(0)|body_armor(28)|leg_armor(12)|difficulty(0),imodbits_elf_cloth,],
-["mirkwood_armor_b","Light_Quilted_and_Scale_Armor",[("mirkwood_scalequilted_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(32)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_c","Light_Scale_over_Mail",[("mirkwood_scaleovermaille_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(37)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_d","Light_Quilted_Surcoat",[("mirkwood_quiltedsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(13)|head_armor(0)|body_armor(44)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(15)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_f","Royal_Woodelf_Armor",[("mirkwood_royal",0)], itp_type_body_armor  |itp_covers_legs ,0, 500 , weight(20)|abundance(100)|head_armor(3)|body_armor(55)|leg_armor(18)|difficulty(0) ,imodbits_elf_armor ],
+["mirkwood_armor_b","Light_Quilted_and_Scale_Armor",[("mirkwood_scalequilted_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(12)|head_armor(0)|body_armor(32)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_c","Light_Scale_over_Mail",[("mirkwood_scaleovermaille_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(12)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_d","Light_Quilted_Surcoat",[("mirkwood_quiltedsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(13)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(15)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_f","Royal_Woodelf_Armor",[("mirkwood_royal",0)], itp_type_body_armor  |itp_covers_legs ,0, 4000, weight(20)|abundance(100)|head_armor(3)|body_armor(50)|leg_armor(16)|difficulty(0) ,imodbits_elf_armor ],
 #WEAPONS##########
 ["mirkwood_great_spear","Mirkwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_pike,900,weight(2.5)|difficulty(0)|spd_rtng(101)|weapon_length(148)|swing_damage(0,blunt)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["mirkwood_war_spear","Mirkwood_War_Spear",[("mirkwood_war_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_cutting_spear,500,weight(2.5)|difficulty(0)|spd_rtng(99)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(31,pierce),imodbits_weapon_good],
@@ -827,8 +827,8 @@ items =[
 #["elf_war_spear", "Elf War Spear",[("elf_spear_1",0)], itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_staff|itcf_carry_spear,390 , weight(2.5)|difficulty(0)|spd_rtng(97) | weapon_length(185)|swing_damage(20 , cut) | thrust_damage(27 ,  pierce),imodbits_polearm ],
 ["mirkwood_sword","Mirkwood_Sword",[("mirkwood_longsword",0),("scab_mirkwood_longsword",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,700,weight(1.25)|difficulty(0)|spd_rtng(96)|weapon_length(92)|swing_damage(30,cut)|thrust_damage(25,pierce),imodbits_weapon_good],
 #SHIELDS##########
-["mirkwood_spear_shield_a","Mirkwood_Spearman_Shield",[("mirkwood_spear_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
-["mirkwood_spear_shield_b","Mirkwood_War_Shield",[("mirkwood_med_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
+["mirkwood_spear_shield_a","Mirkwood_Spearman_Shield",[("mirkwood_spear_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(3)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
+["mirkwood_spear_shield_b","Mirkwood_War_Shield",[("mirkwood_med_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2)|hit_points(800)|body_armor(15)|spd_rtng(90)|weapon_length(60),imodbits_shield_good,],
 ["mirkwood_spear_shield_c","Mirkwood_Swordsman_Shield",[("mirkwood_royal_round",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,1000,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
 #["mirkwood_spear_shield_d", "Mirkwood Spearman Shield",[("elven_oval_a"         ,0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #HELMETS##########

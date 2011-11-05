@@ -1700,8 +1700,11 @@ routes_list = [
  ("p_town_edoras"       , "p_town_hornburg", "p_town_east_emnet", "p_town_westfold", "p_town_eastfold"),
  ("p_town_hornburg"     , "p_town_east_emnet", "p_town_eastfold"),
  ("p_town_eastfold"     , "p_town_east_emnet", "p_town_west_emnet"),
- ("p_town_morannon"     , "p_town_minas_morgul"),
+ ("p_town_morannon"     , "p_town_minas_morgul", "p_town_cirith_ungol","p_town_east_osgiliath"),
  ("p_town_erebor"       , "p_town_dale","p_town_esgaroth"),
+ ("p_town_isengard"     , "p_town_urukhai_outpost","p_town_urukhai_h_camp","p_town_urukhai_r_camp"),
+ ("p_town_gundabad"     , "p_town_gundabad_ne_outpost","p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost"),
+ ("p_town_dol_guldur"   , "p_town_dol_guldur_north_outpost"),
 ]
 
 lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
@@ -1804,7 +1807,7 @@ fac_tableau_list = [
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
-[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4,"itm_gondor_hunter", imod_heavy), (5, "itm_gon_tower_knight", imod_reinforced), (6, "itm_ring_a_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_westernesse1h_reward", 0), (9, "itm_horn_gondor_reward", 0)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4,"itm_gondor_hunter", imod_lordly), (5, "itm_gon_tower_knight", imod_reinforced), (6, "itm_ring_a_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_westernesse1h_reward", 0), (9, "itm_horn_gondor_reward", 0)],
 #fac_dwarf
 [(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_dwarf_shield_j", imod_reinforced), (5, "itm_scroll_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_dwarf_armor_c", imod_lordly), (8, "itm_dwarf_great_axe", imod_masterwork), (9, "itm_dwarf_helm_p", imod_lordly)],
 #fac_rohan
@@ -1824,7 +1827,7 @@ fac_reward_items_list = [
 #fac_harad
 [(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_lg_bow", imod_masterwork), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_westernesse2h_reward", 0), (8, "itm_harad_lion_scale", imod_lordly), (9, "itm_harad_totem_reward", 0)],
 #fac_rhun
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_rhun_helm_h", imod_reinforced), (5, "itm_rhun_sword", imod_balanced), (6, "itm_herbarium_reward", 0), (7, "itm_rhun_greatsword", imod_masterwork), (8, "itm_rhun_armor_k", imod_lordly), (9, "itm_rhun_horse_h", imod_champion)],
+[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_rhun_helm_n", imod_reinforced), (5, "itm_rhun_sword", imod_balanced), (6, "itm_herbarium_reward", 0), (7, "itm_rhun_greatsword", imod_masterwork), (8, "itm_rhun_armor_k", imod_lordly), (9, "itm_rhun_horse_h", imod_champion)],
 #fac_khand
 [(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_khand_voulge", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_khand_heavy_lam", imod_lordly), (8, "itm_variag_kataphrakt", imod_champion), (9, "itm_khand_knife_reward", 0)],
 #fac_umbar

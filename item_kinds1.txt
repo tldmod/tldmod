@@ -479,7 +479,7 @@ itemsfile version 2
  itm_dunedain_helm_a Dunedain_Hood Dunedain_Hood 1  arnor_hood 0  1073807372 0 300 234881024 1.000000 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dunedain_helm_b Arnor_Decorated_Helm Arnor_Decorated_Helm 1  arnor_helm_a 0  65548 0 1300 704643072 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_dunedain_helm_b Arnor_Decorated_Helm Arnor_Decorated_Helm 1  arnor_helm_a 0  65548 0 1500 704643072 2.000000 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_blue 0  16842765 0 2300 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
@@ -488,13 +488,13 @@ itemsfile version 2
  itm_arnor_armor_b Arnorian_Armor Arnorian_Armor 1  arnor_brown 0  16842765 0 2300 704643072 20.000000 100 0 40 13 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_c Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger 0  16842765 0 1530 704643072 19.000000 100 0 14 8 0 0 0 0 0 0 0 0
+ itm_arnor_armor_c Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger 0  16842765 0 800 704643072 12.000000 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 1930 704643072 19.000000 100 0 14 8 0 0 0 0 0 0 0 0
+ itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 800 704643072 12.000000 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 2700 234881024 23.000000 100 0 20 10 0 0 0 0 0 0 0 0
+ itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 1200 234881024 15.000000 100 0 20 10 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_f Arnorian_High_Armor Arnorian_High_Armor 1  arnor_knight 0  16842765 0 3100 704643072 24.000000 100 0 42 15 0 0 0 0 0 0 0 0
@@ -945,10 +945,10 @@ itemsfile version 2
  itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  327687 4831838208 700 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0
 0
 
- itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 5100273664 500 771751936 2.000000 100 0 20 0 0 1000 82 0 70 0 0 0
+ itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 5100273664 500 771751936 2.000000 100 0 18 0 0 800 92 0 70 0 0 0
 0
 
- itm_lorien_round_shield Lorien_Round_Shield Lorien_Round_Shield 1  lorien_round_shield 0  327687 5100273664 400 771751936 1.000000 100 0 20 0 0 1000 96 0 50 0 0 0
+ itm_lorien_round_shield Lorien_Round_Shield Lorien_Round_Shield 1  lorien_round_shield 0  327687 5100273664 400 771751936 1.000000 100 0 15 0 0 700 96 0 50 0 0 0
 0
 
  itm_lorien_helm_a Lorien_Archer_Helm Lorien_Archer_Helm 1  lorienhelmetarcherlow 0  65548 0 1300 704643072 1.000000 100 35 0 0 0 0 0 0 0 0 0 0
@@ -1089,10 +1089,10 @@ itemsfile version 2
  itm_uruk_pike_b Uruk_Pike Uruk_Pike 1  uruk_skull_spear 0  275087364 4222124851987200 400 271496 3.000000 100 0 0 0 0 16384 81 0 176 0 282 528
 0
 
- itm_uruk_falchion_a Uruk_Falchion_a Uruk_Falchion_a 1  uruk_falchion_a 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 85 0 72 0 256 25
+ itm_uruk_falchion_a Uruk_Falchion Uruk_Falchion 1  uruk_falchion_a 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 85 0 72 0 256 25
 0
 
- itm_uruk_falchion_b Uruk_Falchion_b Uruk_Falchion_b 1  uruk_falchion_b 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 256 25
+ itm_uruk_falchion_b Uruk_Falchion Uruk_Falchion 1  uruk_falchion_b 0  4259843 9223652412613460206 200 286870 2.500000 100 0 0 0 0 25600 90 0 67 0 256 25
 0
 
  itm_uruk_spear Uruk_Spear Uruk_Spear 1  uruk_spear 0  6651908 4222124851990272 300 271496 2.500000 100 0 0 0 0 20480 96 0 168 0 283 532
@@ -1572,7 +1572,7 @@ itemsfile version 2
  itm_rohan_armor_r Rohan_Armor Rohan_Armor 1  E_roh_hauberk_c_cape_M15 0  16842765 0 2000 704643072 20.000000 100 0 33 15 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_s Rohan_Heraldric_Mail Rohan_Heraldric_Mail 1  VH_heraldic_rohan_armor_M16 0  16777229 0 6000 704643072 22.000000 100 0 40 17 0 0 0 0 0 0 0 0
+ itm_rohan_armor_s Rohan_Heraldric_Mail Rohan_Heraldric_Mail 1  VH_heraldic_rohan_armor_M16 0  16842765 0 3000 704643072 22.000000 100 0 40 17 0 0 0 0 0 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063435 1729382256910270479 1224979098644774912 1224979098644774913 
 
@@ -1582,10 +1582,10 @@ itemsfile version 2
  itm_rohan_light_helmet_b Rohan_Light_Helmet Rohan_Light_Helmet 1  rohan_light_helmet_b 0  65548 0 600 704643238 1.000000 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_a Rohan_Infantry_Helmet Rohan_Infantry_Helmet 1  rohan_inf_helmet_a 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_a Rohan_Infantry_Helm Rohan_Infantry_Helm 1  rohan_inf_helmet_a 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_b Rohan_Infantry_Helmet Rohan_Infantry_Helmet 1  rohan_inf_helmet_b 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_b Rohan_Infantry_Helm Rohan_Infantry_Helm 1  rohan_inf_helmet_b 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_archer_helmet_a Rohan_Archer_Helmet Rohan_Archer_Helmet 1  rohan_archer_helmet_a 0  65548 0 900 704643238 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
@@ -1670,25 +1670,25 @@ itemsfile version 2
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3.000000 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
- itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 500 704643072 12.000000 100 0 30 14 0 0 0 0 0 0 0 0
+ itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 1000 704643072 12.000000 100 0 30 14 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_armor_a Light_Leather Light_Leather 1  mirkwood_leather 0  16842765 0 500 234881024 10.000000 100 0 28 12 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 500 704643072 12.000000 100 0 32 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 1100 704643072 12.000000 100 0 32 16 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_c Light_Scale_over_Mail Light_Scale_over_Mail 1  mirkwood_scaleovermaille_01 0  16842765 0 500 704643072 12.000000 100 0 37 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_c Light_Scale_over_Mail Light_Scale_over_Mail 1  mirkwood_scaleovermaille_01 0  16842765 0 2000 704643072 12.000000 100 0 40 16 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 500 704643072 13.000000 100 0 44 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 1500 704643072 13.000000 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 500 704643072 15.000000 100 0 52 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 1500 704643072 15.000000 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_f Royal_Woodelf_Armor Royal_Woodelf_Armor 1  mirkwood_royal 0  16777229 0 500 704643072 20.000000 100 3 55 18 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_f Royal_Woodelf_Armor Royal_Woodelf_Armor 1  mirkwood_royal 0  16777229 0 4000 704643072 20.000000 100 3 50 16 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  275087364 201326848 900 156672 2.500000 100 0 0 0 0 0 101 0 148 0 291 512
@@ -1706,10 +1706,10 @@ itemsfile version 2
  itm_mirkwood_sword Mirkwood_Sword Mirkwood_Sword 2  mirkwood_longsword 0  scab_mirkwood_longsword 3458764513820540928  4259842 9223388564182532111 700 156672 1.250000 100 0 0 0 0 30720 96 0 92 0 281 30
 0
 
- itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  327687 4831838208 1000 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  327687 4831838208 1000 771751936 3.000000 100 0 20 0 0 1000 82 0 90 0 0 0
 0
 
- itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2.000000 100 0 15 0 0 800 90 0 60 0 0 0
 0
 
  itm_mirkwood_spear_shield_c Mirkwood_Swordsman_Shield Mirkwood_Swordsman_Shield 1  mirkwood_royal_round 0  327687 4831838208 1000 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0

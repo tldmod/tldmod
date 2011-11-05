@@ -2602,7 +2602,7 @@ scripts = [
         (eq, ":line_no", 0),
         (assign, reg1, "$number_of_player_deaths"),
 		(store_sub, reg2, reg1, 1),
-		(str_store_string, s1, "@Left for death but miracolously survived: {reg1?{reg1} time{reg2?s:}:NEVER}"),
+		(str_store_string, s1, "@Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}"),
         (set_result_string, s1),
 	  # skip line 1, for a sspacer
       (else_try),
@@ -17619,6 +17619,7 @@ scripts = [
 		(spawn_around_party, ":place", "pt_pyre"),
 		(party_set_name, reg0, "@{s1}'s_Funeral_Pyre"),
 	(try_end),
+	#(party_set_faction,reg0,":fac"),
 	(party_set_slot, reg0, slot_mound_state, 1),
 	(party_set_slot, reg0, slot_party_commander_party, ":hero"),
 ]),

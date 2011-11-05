@@ -109,7 +109,7 @@ qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
 qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
-qstr_Left_for_death_but_m Left_for_death_but_miracolously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
+qstr_Left_for_dead_but_mi Left_for_dead_but_miraculously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
 qstr_+30_to_Party_Morale +30_to_Party_Morale
