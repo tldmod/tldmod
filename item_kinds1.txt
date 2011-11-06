@@ -407,7 +407,7 @@ itemsfile version 2
  itm_elven_bow Elven_Bow Elven_Bow 2  elven_bow 0  elven_bow_carry 3458764513820540928  274792456 5905584128 1000 656384 1.500000 100 0 0 0 3 0 93 65 0 0 281 0
 0
 
- itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  6357000 5905584128 500 656522 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
+ itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  274792456 5905584128 500 656522 1.500000 100 0 0 0 0 0 93 58 0 0 35 0
 0
 
  itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 500 656384 1.250000 100 0 0 0 0 0 95 56 0 0 31 0
@@ -542,10 +542,10 @@ itemsfile version 2
  itm_riv_tiara Elf_Lord_Tiara Elf_Lord_Tiara 1  tiara 0  16781324 0 3000 0 2.500000 100 60 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_riv_shield_a Rivendell_Shield Rivendell_Shield 1  riv_inf_shield 0  327687 4831838208 600 771751936 2.500000 100 0 20 0 0 1000 85 0 82 0 0 0
+ itm_riv_shield_a Rivendell_Shield Rivendell_Shield 1  riv_inf_shield 0  268763143 4831838208 700 771751936 2.500000 100 0 20 0 0 1000 85 0 82 0 0 0
 0
 
- itm_riv_shield_b Rivendell_Shield Rivendell_Shield 1  riv_cav_shield 0  327687 5100273664 600 771751936 2.500000 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_riv_shield_b Rivendell_Shield Rivendell_Shield 1  riv_cav_shield 0  327687 5100273664 600 771751936 2.000000 100 0 13 0 0 800 92 0 60 0 0 0
 0
 
  itm_riv_bas_sword Rivendell_Bastard_Sword Rivendell_Bastard_Sword 2  rivendell_handandahalf1 0  scab_rivendell_handandahalf1 3458764513820540928  4259843 9223635954298781951 294 156672 2.250000 100 0 0 0 0 37888 98 0 106 0 282 37
@@ -830,26 +830,26 @@ itemsfile version 2
  itm_lossarnach_greaves Lossarnach_Greaves Lossarnach_Greaves 1  lossarnach_greaves 0  69390 0 800 704643072 3.000000 100 0 0 23 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_shield_a Gondor_Square_Shield Gondor_Square_Shield 1  gondor_square_shield 0  327687 4831838208 600 251658402 3.000000 100 0 12 0 0 480 82 0 90 0 0 0
+ itm_gondor_shield_a Gondor_Square_Shield Gondor_Square_Shield 1  gondor_square_shield 0  268763143 4831838208 600 251658402 3.000000 100 0 12 0 0 480 82 0 90 0 0 0
 0
 
  itm_gondor_shield_b Gondor_Kite_Shield Gondor_Kite_Shield 1  gondor_point_shield 0  327687 4831838208 400 251658402 2.500000 100 0 12 0 0 480 82 0 70 0 0 0
 0
 
- itm_gondor_shield_c Gondor_Tower_Shield Gondor_Tower_Shield 1  gondor_tower_shield 0  327687 4831838208 500 251658402 3.000000 100 0 12 0 0 480 82 0 90 0 0 0
+ itm_gondor_shield_c Gondor_Tower_Shield Gondor_Tower_Shield 1  gondor_tower_shield 0  268763143 4831838208 500 251658402 3.000000 100 0 12 0 0 480 82 0 90 0 0 0
 0
 
  itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.500000 100 0 12 0 0 480 82 0 70 0 0 0
 0
 
- itm_gondor_shield_e Gondor_Royal_Shield Gondor_Royal_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.500000 100 0 12 0 0 480 82 0 90 0 0 0
+ itm_gondor_shield_e Gondor_Royal_Shield Gondor_Royal_Shield 1  denethor_shield 0  268697607 4831838208 1000 771751936 2.500000 100 0 12 0 0 480 82 0 90 0 0 0
 0
 
  itm_gon_tab_shield_a Heraldic_Gondor_Round_Shield Heraldic_Gondor_Round_Shield 1  tableau_shield_round 0  327687 5100273664 200 251658402 2.000000 100 0 3 0 0 310 105 0 40 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063495 1729382256910270475 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_b Heraldic_Gondor_Square_Shield Heraldic_Gondor_Square_Shield 1  tableau_shield_square 0  327687 6442450944 200 251658402 4.500000 100 0 2 0 0 760 81 0 84 0 0 0
+ itm_gon_tab_shield_b Heraldic_Gondor_Square_Shield Heraldic_Gondor_Square_Shield 1  tableau_shield_square 0  268763143 6442450944 200 251658402 4.500000 100 0 2 0 0 760 81 0 84 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063498 1729382256910270476 1224979098644774912 1224979098644774913 
 
@@ -857,7 +857,7 @@ itemsfile version 2
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063496 1729382256910270477 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_d Heraldic_Gondor_Tower_Shield Heraldic_Gondor_Tower_Shield 1  tableau_shield_tower 0  327687 4831838208 300 251658402 3.500000 100 0 9 0 0 510 87 0 90 0 0 0
+ itm_gon_tab_shield_d Heraldic_Gondor_Tower_Shield Heraldic_Gondor_Tower_Shield 1  tableau_shield_tower 0  268763143 4831838208 300 251658402 3.500000 100 0 9 0 0 510 87 0 90 0 0 0
 1
 -50.000000  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 936748722493063497 1729382256910270478 1224979098644774912 1224979098644774913 
 
@@ -942,7 +942,7 @@ itemsfile version 2
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 1500 234881024 1.000000 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  327687 4831838208 700 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  268763143 4831838208 700 771751936 2.000000 100 0 20 0 0 1000 82 0 90 0 0 0
 0
 
  itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 5100273664 500 771751936 2.000000 100 0 18 0 0 800 92 0 70 0 0 0
@@ -1146,7 +1146,7 @@ itemsfile version 2
  itm_wood_club Wooden_Club Wooden_Club 1  wood_club 0  4653058 9223388532775583758 5 271496 2.500000 100 0 0 0 0 15360 90 0 60 0 512 527
 0
 
- itm_twohand_wood_club Large_Wooden_Club Large_Wooden_Club 1  twohand_wood_club 0  73859075 9223635923965575392 10 271496 3.500000 100 0 0 0 0 25600 85 0 79 0 512 537
+ itm_twohand_wood_club Large_Wooden_Club Large_Wooden_Club 1  twohand_wood_club 0  342294531 9223635923965575392 10 271496 3.500000 100 0 0 0 0 25600 85 0 79 0 512 537
 0
 
  itm_bone_cudgel Bone_Cudgel Bone_Cudgel 1  bone_cudgel 0  4407298 9223388532775583758 5 271496 2.500000 100 0 0 0 0 15360 90 0 53 0 256 527
@@ -1230,13 +1230,13 @@ itemsfile version 2
  itm_mordor_orc_shield_e Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_e 0  327687 5100273664 100 251658402 3.000000 100 0 1 0 0 200 96 0 40 0 0 0
 0
 
- itm_mordor_uruk_shield_a Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_a 0  327687 5100273664 100 251658402 4.000000 100 0 3 0 0 310 96 0 40 0 0 0
+ itm_mordor_uruk_shield_a Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_a 0  268763143 5100273664 100 251658402 4.000000 100 0 3 0 0 310 96 0 40 0 0 0
 0
 
- itm_mordor_uruk_shield_b Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_b 0  327687 5100273664 100 251658402 4.000000 100 0 4 0 0 310 96 0 40 0 0 0
+ itm_mordor_uruk_shield_b Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_b 0  268763143 5100273664 100 251658402 4.000000 100 0 4 0 0 310 96 0 40 0 0 0
 0
 
- itm_mordor_uruk_shield_c Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_c 0  327687 5100273664 100 251658402 4.000000 100 0 3 0 0 310 96 0 40 0 0 0
+ itm_mordor_uruk_shield_c Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_c 0  268763143 5100273664 100 251658402 4.000000 100 0 3 0 0 310 96 0 40 0 0 0
 0
 
  itm_mordor_man_shield_a Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_a 0  327687 5100273664 100 251658402 3.000000 100 0 3 0 0 310 96 0 40 0 0 0
@@ -1706,7 +1706,7 @@ itemsfile version 2
  itm_mirkwood_sword Mirkwood_Sword Mirkwood_Sword 2  mirkwood_longsword 0  scab_mirkwood_longsword 3458764513820540928  4259842 9223388564182532111 700 156672 1.250000 100 0 0 0 0 30720 96 0 92 0 281 30
 0
 
- itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  327687 4831838208 1000 771751936 3.000000 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3.000000 100 0 20 0 0 1000 82 0 90 0 0 0
 0
 
  itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2.000000 100 0 15 0 0 800 90 0 60 0 0 0
@@ -1838,19 +1838,19 @@ itemsfile version 2
  itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
 0
 
- itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  327687 6442450944 500 251658402 3.000000 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  268763143 6442450944 500 251658402 3.000000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  327687 6442450944 800 251658402 4.000000 100 0 10 0 0 900 80 0 90 0 0 0
+ itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  268763143 6442450944 800 251658402 4.000000 100 0 10 0 0 900 80 0 90 0 0 0
 0
 
  itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  268763143 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
- itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  327687 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  268763143 6442450944 200 251658402 2.500000 100 0 5 0 0 600 82 0 90 0 0 0
 0
 
  itm_harad_shield_a Harondor_Shield Harondor_Shield 1  harad_shield_a 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 50 0 0 0
@@ -1862,10 +1862,10 @@ itemsfile version 2
  itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 5100273664 200 251658402 2.500000 100 0 1 0 0 480 82 0 40 0 0 0
 0
 
- itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
+ itm_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  268763143 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
 0
 
- itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  327687 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
+ itm_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  268763143 6442450944 200 251658402 2.500000 100 0 0 0 0 480 82 0 80 0 0 0
 0
 
  itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 500 251658402 2.500000 100 0 8 0 0 600 82 0 50 0 0 0

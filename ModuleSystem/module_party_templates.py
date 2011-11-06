@@ -45,11 +45,11 @@ party_templates = [
 
 ("wild_troll"      ,"Wild Troll"     ,icon_wild_troll|pf_quest_party,0,fac_commoners,bandit_personality,[(trp_troll_of_moria,1,2),]),
 ("raging_trolls"   ,"Raging Trolls"  ,icon_wild_troll|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_troll_of_moria,1,3),]),
-("looters"         ,"Tribal Orcs"    ,icon_orc_tribal|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
-("forest_bandits"  ,"Orc Stragglers" ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
-("mountain_bandits","Wild Goblins"   ,icon_orc_tribal|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
-("steppe_bandits"  ,"Dunland Outcasts",icon_dunlander|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_dunnish_warrior,3,10), (trp_dunnish_wildman,5,35)]),
-("sea_raiders"     ,"Corsair Renegades",icon_umbar_corsair|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_corsair_warrior,3,30),(trp_marksman_of_umbar,3,20)]),
+("looters"         ,"Tribal Orcs"    ,icon_orc_tribal|carries_goods(4),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
+("forest_bandits"  ,"Orc Stragglers" ,icon_orc_tribal|carries_goods(4),0,fac_outlaws,bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
+("mountain_bandits","Wild Goblins"   ,icon_orc_tribal|carries_goods(4),0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,2,40)]),
+("steppe_bandits"  ,"Dunland Outcasts",icon_dunlander|carries_goods(4),0,fac_outlaws,bandit_personality,[(trp_dunnish_warrior,3,10), (trp_dunnish_wildman,5,35)]),
+("sea_raiders"     ,"Corsair Renegades",icon_umbar_corsair|carries_goods(4),0,fac_outlaws,bandit_personality,[(trp_corsair_warrior,3,30),(trp_marksman_of_umbar,3,20)]),
 
 ("deserters","Deserters",icon_axeman|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 

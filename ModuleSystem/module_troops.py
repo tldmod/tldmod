@@ -577,7 +577,7 @@ troops = [
 ["rhun_veteran_horse_archer","Rhun_Veteran_Horse_Archer","Rhun_Veteran_Horse_Archers",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_ranged| tfg_horse| tfg_shield|tfg_helm,0,0,fac_rhun,
    [itm_furry_boots,itm_rhun_armor_j,itm_rhun_armor_n,itm_rhun_armor_m,itm_rhun_helm_k,itm_rhun_helm_l,itm_rhun_helm_m,itm_rhun_horse_a,itm_rhun_horse_b,itm_rhun_sword,itm_arrows,itm_nomad_bow,],
       attr_tier_4,wp_tier_4,knows_riding_6|knows_power_draw_4|knows_ironflesh_2|knows_horse_archery_5|knows_power_throw_3,rhun_man1,rhun_man2],
-["fell_balchoth_horse_archer","Fell_Balchoth_Horse_Archer","Fell_Balchoth_Horse_Archers",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_ranged| tfg_shield|tfg_helm,0,0,fac_rhun,
+["fell_balchoth_horse_archer","Balchoth_Horse_Archer","Balchoth_Horse_Archers",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_horse| tfg_ranged| tfg_shield|tfg_helm,0,0,fac_rhun,
    [itm_furry_boots,itm_rhun_armor_o,itm_rhun_armor_n,itm_rhun_armor_m,itm_rhun_helm_l,itm_rhun_helm_i,itm_rhun_helm_j,itm_rhun_horse_d,itm_rhun_horse_b,itm_rhun_sword,itm_arrows,itm_nomad_bow,itm_rhun_bull1_shield,itm_rhun_bull2_shield,],
       attr_tier_5,wp_tier_5,knows_riding_6|knows_power_strike_2|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_2|knows_horse_archery_1,rhun_man1,rhun_man2],
 ["rhun_swift_horseman","Rhun_Swift_Horseman","Rhun_Swift_Horsemen",tf_evil_man| tf_mounted| tfg_boots| tfg_armor| tfg_ranged| tfg_horse,0,0,fac_rhun,

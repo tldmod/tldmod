@@ -13695,6 +13695,8 @@ scripts = [
      (assign, "$any_allies_at_the_last_battle", 0),
      (try_for_agents, ":cur_agent"),
        (agent_is_human, ":cur_agent"),
+       (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
+	   (neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end), # dont count riderless wargs
        (agent_get_party_id, ":agent_party", ":cur_agent"),
        (try_begin),
          (neq, ":agent_party", "p_main_party"),
@@ -13702,7 +13704,6 @@ scripts = [
          (assign, "$any_allies_at_the_last_battle", 1),
        (try_end),
        (neg|agent_is_alive, ":cur_agent"),
-       (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
        (try_begin),
          (eq, ":agent_party", "p_main_party"),
          (party_add_members, "p_player_casualties", ":agent_troop_id", 1),
@@ -18882,29 +18883,49 @@ scripts = [
 
 # script_party_eject_nonfaction (GA)
 # Input: arg1 = party_A, source, retains target faction and heroes
-# Input: arg2 = party_B, gets all non-faction troops (usually p_main_party)
+# Input: arg2 = party_B, gets non-faction troops it had initially according to arg4 (usually p_main_party)
 # Input: arg3 = faction
-#Output: reg46 stores # of troops transferred
+# Input: arg4 = initial composition of party_B
+#Output: arg4 stores troops returned back to recipient
 ("party_eject_nonfaction",[
 	(store_script_param_1, ":source"),
 	(store_script_param_2, ":recipient"),
 	(store_script_param, ":fac", 3),
-	(assign, reg46, 0),
-	(party_get_num_companion_stacks, ":num_stacks", ":source"),
+	(store_script_param, ":recipient_initial", 4),
+	#subtract recipient from recipient_initial, relies on recipient being subset of recipient_initial!
+	(party_get_num_companion_stacks, ":num_stacks", ":recipient"),
 	(try_for_range, ":i_stack", 0, ":num_stacks"),
-		(party_stack_get_troop_id, ":stack_troop", ":source", ":i_stack"),
-		(neq,  ":stack_troop", "trp_player"), # player stays in A
-		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A
+		(party_stack_get_troop_id, ":stack_troop", ":recipient", ":i_stack"),
+		(party_stack_get_size, ":stack_size",":recipient",":i_stack"),
+		(party_remove_members, ":recipient_initial", ":stack_troop", ":stack_size"),
+	(try_end),	
+	#subtract faction from recipient_initial and nonfaction from source, add nonfaction to recipient
+	(party_get_num_companion_stacks, ":num_stacks", ":recipient_initial"),
+	(try_for_range, ":i_stack", 0, ":num_stacks"),
+		(party_stack_get_size, ":stack_size",":recipient_initial",":i_stack"),
+		(party_stack_get_troop_id, ":stack_troop", ":recipient_initial", ":i_stack"),
 		(store_troop_faction, ":fac_t", ":stack_troop"),
-		(neq, ":fac_t", ":fac"), # non-factions outta here
-		(party_stack_get_size, ":stack_size",":source",":i_stack"),
-		(val_add, reg46,  ":stack_size"),
-		(party_remove_members, ":source", ":stack_troop", ":stack_size"),
-		(party_add_members, ":recipient", ":stack_troop", ":stack_size"),
+		(try_begin),
+			(eq, ":fac_t", ":fac"), # factions outta recipient_initial, stay in source
+			(party_remove_members, ":recipient_initial", ":stack_troop", ":stack_size"),
+		(else_try), # nonfactions outta source, stay in recipient
+			(party_remove_members, ":source", ":stack_troop", ":stack_size"),
+			(party_add_members, ":recipient", ":stack_troop", ":stack_size"),
+		(try_end),
 	(try_end),
 ]),
 
-("save_compartibility_script1",[]),
+("stand_back",[ # reset leaning animaton after dialog ends
+	(get_player_agent_no, "$current_player_agent"),
+	(agent_get_horse,reg1,"$current_player_agent"),
+	(troop_get_type, ":race", "$player_current_troop_type"),
+	(try_begin),
+		(is_between, ":race", tf_orc_begin, tf_orc_end),
+		(try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),
+		 (else_try),               (agent_set_animation, "$current_player_agent", "anim_cancel_ani_ride"),
+		(try_end),
+	(try_end),
+]),
 ("save_compartibility_script2",[]),
 ("save_compartibility_script3",[]),
 ("save_compartibility_script4",[]),
