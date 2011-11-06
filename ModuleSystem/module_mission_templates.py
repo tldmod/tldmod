@@ -800,15 +800,15 @@ mission_templates = [ # not used in game
 		(try_begin),
 			(neq, "$attacker_team", ":agent_team"),
 			(neq, "$attacker_team_2", ":agent_team"),
-			(neq, "$attacker_team_3", ":agent_team"), # TLD
-			(str_store_string, s5, "str_siege_continues"),
-			(call_script, "script_simulate_retreat", 8, 15),
+			(neq, "$attacker_team_3", ":agent_team"), # if defender - cannot retreat
+			(str_store_string, s5, "str_can_not_retreat"),
+			#(call_script, "script_simulate_retreat", 8, 15),
 		(else_try),
 			(str_store_string, s5, "str_retreat"),
 			(call_script, "script_simulate_retreat", 5, 20),
-		(try_end),
-		(call_script, "script_count_mission_casualties_from_agents"),
-		(finish_mission,0)]),
+			(call_script, "script_count_mission_casualties_from_agents"),
+			(finish_mission,0),
+		(try_end)]),
 	(3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
 		(val_add, "$telling_counter",1),
 		(set_show_messages, 0),
@@ -835,7 +835,7 @@ mission_templates = [ # not used in game
 		[(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
 		(entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
 		(entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
-		(display_message,"@On your positions, bitches!!")]),
+		(display_message,"@On your positions, bitchez!!")]),
 	(0, 2, ti_once, [], [(try_for_agents, ":agent_no"),(agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),(try_end)]),
 	(1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
 		(assign,":atkteam","$attacker_team"),
