@@ -94,7 +94,12 @@ common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_messa
 
 common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV and MT
     (assign, "$pin_player_fallen", 1),
-	(try_begin),(eq, "$tld_option_injuries",1),(call_script, "script_injury_routine", "trp_player"),(try_end), #GA: player injury or death?
+	(try_begin), #GA: player injury or death?
+		(store_random_in_range, reg12,0,5),
+		(eq,reg12,0), #20% chance for injury
+		(eq, "$tld_option_injuries",1),
+		(call_script, "script_injury_routine", "trp_player"),
+	(try_end),
   	(store_normalized_team_count,":a", 0), 	#  check that battle still goes on MT
 	(store_normalized_team_count,":b", 1),
 	(gt,":b",0),(gt,":a",0),
@@ -123,7 +128,13 @@ common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV 
 
 
 ## MadVader deathcam begin: this is a simple death camera from kt0, works by moving the player body so mouselook is automatic
-common_init_deathcam = (0, 0, ti_once, [], [(assign, "$tld_camera_on", 0)])
+common_init_deathcam = (0, 0, ti_once, [], [
+	(assign, "$tld_camera_on", 0),	
+	(get_scene_boundaries,pos1,pos2), # restrictions on movement or crash happens
+	(position_get_x,"$battlemap_min_x",pos1),
+	(position_get_y,"$battlemap_min_y",pos1),
+	(position_get_x,"$battlemap_max_x",pos2),
+	(position_get_y,"$battlemap_max_y",pos2),])
 common_start_deathcam = (0, 4, ti_once, # 4 seconds delay before the camera activates
    [(main_hero_fallen),(eq, "$tld_camera_on", 0)],[(assign, "$tld_camera_on", 1)])
 common_move_forward_deathcam = (0, 0, 0,
@@ -133,7 +144,14 @@ common_move_forward_deathcam = (0, 0, 0,
    ],[(get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_y, pos1, 18),
-      (agent_set_position, ":player_agent", pos1)])
+	  (position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	  (try_begin),
+		(is_between, ":x", "$battlemap_min_x", "$battlemap_max_x"),
+		(is_between, ":y", "$battlemap_min_y", "$battlemap_max_y"),		
+		(agent_set_position, ":player_agent", pos1),
+	 (else_try),
+		(position_move_y, pos1, -18),
+	(try_end)])
 common_move_backward_deathcam = (0, 0, 0,
    [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_backward),
@@ -141,7 +159,14 @@ common_move_backward_deathcam = (0, 0, 0,
    ],[(get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_y, pos1, -18),
-      (agent_set_position, ":player_agent", pos1)])
+	  (position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	  (try_begin),
+		(is_between, ":x", "$battlemap_min_x", "$battlemap_max_x"),
+		(is_between, ":y", "$battlemap_min_y", "$battlemap_max_y"),		
+		(agent_set_position, ":player_agent", pos1),
+	 (else_try),
+		(position_move_y, pos1, 18),
+	(try_end)])
 common_move_left_deathcam = (0, 0, 0,
    [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_left),
@@ -149,7 +174,14 @@ common_move_left_deathcam = (0, 0, 0,
    ],[(get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_x, pos1, -13),
-      (agent_set_position, ":player_agent", pos1)])
+      (position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	  (try_begin),
+		(is_between, ":x", "$battlemap_min_x", "$battlemap_max_x"),
+		(is_between, ":y", "$battlemap_min_y", "$battlemap_max_y"),		
+		(agent_set_position, ":player_agent", pos1),
+	 (else_try),
+		(position_move_y, pos1, 13),
+	(try_end)])
 common_move_right_deathcam = (0, 0, 0,
    [  (eq, "$tld_camera_on", 1),
       (this_or_next|game_key_clicked, gk_move_right),
@@ -157,7 +189,14 @@ common_move_right_deathcam = (0, 0, 0,
    ],[(get_player_agent_no, ":player_agent"),
       (agent_get_look_position, pos1, ":player_agent"),
       (position_move_x, pos1, 13),
-      (agent_set_position, ":player_agent", pos1)])
+	  (position_get_x,":x",pos1),(position_get_y,":y",pos1),
+	  (try_begin),
+		(is_between, ":x", "$battlemap_min_x", "$battlemap_max_x"),
+		(is_between, ":y", "$battlemap_min_y", "$battlemap_max_y"),		
+		(agent_set_position, ":player_agent", pos1),
+	 (else_try),
+		(position_move_y, pos1, -13),
+	(try_end)])
 
 common_deathcam_triggers = [
  	common_init_deathcam,

@@ -3268,7 +3268,8 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], 
 "I want to request a special item.", "lord_get_reward_item_ask",[]],
 
-[anyone,"lord_get_reward_item_ask", [], "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],
+# [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(eq, reg1,0)], "Seems like you have no place in your inventory for any rewards. Make some room then return", "lord_talk",[]],
+[anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player")], "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],
    
 [anyone|plyr|repeat_for_100,"lord_get_reward_item", [
      (store_repeat_object, ":rank_index"),
@@ -3629,10 +3630,11 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 
 [anyone|plyr|repeat_for_troops,"lord_talk_ask_location_2", [(store_repeat_object, ":troop_no"),
                                                               (neq, "$g_talk_troop", ":troop_no"),
+															  (store_troop_faction, ":talk_faction", "$g_talk_troop"),
                                                               (is_between, ":troop_no", heroes_begin, heroes_end),
                                                               (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
                                                               (store_troop_faction, ":faction_no", ":troop_no"),
-                                                              (eq, "$g_encountered_party_faction", ":faction_no"),
+                                                              (eq, ":talk_faction", ":faction_no"),
                                                               (str_store_troop_name, s1, ":troop_no")],
 "{s1}", "lord_talk_ask_location_3",[(store_repeat_object, "$hero_requested_to_learn_location")]],
 

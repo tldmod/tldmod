@@ -240,12 +240,13 @@ scripts = [
 			(troop_remove_gold, "$g_player_troop", ":diff_neg"),
 		(try_end),
 		(set_show_messages, 1),
-	(else_try), 
-		# rise res. points of that faction
-		(faction_get_slot,  ":rp", ":fac", slot_faction_respoint),
-		(store_add,":rp",":rp",":diff"),
-		(faction_set_slot, ":fac", slot_faction_respoint, ":rp"),
 	(try_end),
+	# rise res. points of that faction
+	(faction_get_slot,  ":rp", ":fac", slot_faction_respoint),
+	(store_add,":rp",":rp",":diff"),
+	(faction_set_slot, ":fac", slot_faction_respoint, ":rp"),
+	(try_begin),(eq, ":fac", "fac_mordor"), (faction_set_slot, "fac_guldur", slot_faction_respoint, ":rp"),(try_end), # mordor and guldur common currency
+	(try_begin),(eq, ":fac", "fac_guldur"), (faction_set_slot, "fac_mordor", slot_faction_respoint, ":rp"),(try_end),
 	
 	(str_store_faction_name, s0, ":fac"),
 	(try_begin),(gt, ":diff", 0),
@@ -262,6 +263,8 @@ scripts = [
 ("update_respoint",[
 	(store_troop_gold, ":cur_gold", "$g_player_troop"),
 	(faction_set_slot, "$ambient_faction", slot_faction_respoint, ":cur_gold"),
+	(try_begin),(eq, "$ambient_faction", "fac_mordor"), (faction_set_slot, "fac_guldur", slot_faction_respoint, ":cur_gold"),(try_end), # mordor and guldur common currency
+	(try_begin),(eq, "$ambient_faction", "fac_guldur"), (faction_set_slot, "fac_mordor", slot_faction_respoint, ":cur_gold"),(try_end),
 ]),
 
 # script_reward_system_init
@@ -7635,6 +7638,7 @@ scripts = [
 	  # For Gondor subfaction garrisons, no harm for others (town_reinf=faction_reinf)
 	  (try_begin),
         (eq, ":party_type", spt_town),
+		(eq, ":party_faction", "fac_gondor"),
         (party_get_slot, ":party_template_a", ":party_no", slot_town_reinforcements_a),
         (party_get_slot, ":party_template_b", ":party_no", slot_town_reinforcements_b),
         (party_get_slot, ":party_template_c", ":party_no", slot_town_reinforcements_c),
@@ -17208,7 +17212,7 @@ scripts = [
 	(neg|ge, ":skill", 10),
 	(troop_raise_skill, "trp_player", skl_ironflesh, 1),
     (display_log_message, "@Gained permanent +1 to Ironflesh.", color_good_news),
-]), 
+ ]), 
 #script_cf_gain_trait_fell_beast
 ("cf_gain_trait_fell_beast",[
     (troop_slot_eq, "trp_traits", slot_trait_fell_beast, 0),
@@ -17231,7 +17235,7 @@ scripts = [
 	(troop_raise_proficiency_linear, "trp_player", wpt_throwing, 10),
     (display_log_message, "@Gained permanent +10 to weapon proficiencies.", color_good_news),
     (call_script, "script_gain_trait", slot_trait_fell_beast),
-]), 
+ ]), 
 #script_cf_gain_trait_foe_hammer
 ("cf_gain_trait_foe_hammer",[
         (troop_slot_eq, "trp_traits", slot_trait_foe_hammer, 0),
@@ -17246,7 +17250,7 @@ scripts = [
 		(neg|ge, ":skill", 10),
 		(troop_raise_skill, "trp_player", skl_tactics, 1),
         (display_log_message, "@Gained permanent +1 to Tactics.", color_good_news),
-]), 
+ ]), 
 #script_cf_check_trait_captain
 ("cf_check_trait_captain",[
         (troop_slot_eq, "trp_traits", slot_trait_archer_captain, 0),
@@ -17316,7 +17320,7 @@ scripts = [
 			(neg|ge, ":rnd", ":accumulated_captain"),
 			(call_script, "script_cf_gain_trait_cavalry_captain"),
 		(try_end),
-]),
+ ]),
 #script_check_agent_armor
 ("check_agent_armor",[
 	(try_begin),
@@ -17328,7 +17332,7 @@ scripts = [
 		  (val_add, "$trait_check_unarmored_berserker", ":x"),
 		(try_end),
 	(try_end),
-]),
+ ]),
 ############### HEALING AND DEATH FROM 808 modified by GA ############################
 #script_injury_routine
 #Input: npc to injure
@@ -17432,7 +17436,7 @@ scripts = [
 			(jump_to_menu, "mnu_tutorial"), #should be mnu_death here
 		(try_end),
 	(try_end),
-]), 
+ ]), 
 #script_healing_routine
 ("healing_routine",[
 	(store_script_param_1, ":npc"),
@@ -17447,7 +17451,7 @@ scripts = [
 	(try_begin),
 		(neq, ":wound_mask", 0), # only injured heroes apply
 		(neq, ":wound_mask", wound_death),# only alive heroes apply
-		(store_random, ":rnd", "$healing_setting"),
+		(store_random_in_range, ":rnd", 0, "$healing_setting"),
 		(str_store_troop_name, s1, ":npc"),
 		(try_begin),
 			(eq, ":rnd", 0),
@@ -17514,7 +17518,7 @@ scripts = [
 		(val_add, ":x", 10),
 		(troop_set_health, ":npc", ":x"),
 	(try_end),
-]), 
+ ]), 
 #script_heal_party
 ("heal_party",[
 	(store_random, ":rnd", 4),
@@ -17535,7 +17539,7 @@ scripts = [
 		(val_div, ":hp", 7),
 		(troop_set_health, "trp_player", ":hp"),
 	(try_end),
-]), 
+ ]), 
 #script_optional_healing_boost
 ("cf_optional_healing_boost",[
 	#(neg|eq, "$healing_boost_setting", 0),
@@ -17570,21 +17574,7 @@ scripts = [
 		(str_store_troop_name, s1, ":troop"),
 		(display_message, "@{s1}_has_had_his_health_boosted", 0),
 	(try_end),
-]), 
-#script_map_hero_status_in_abstract_battle
-#GA: not used for now, heroes can die only when losing a battle, and they are always injured there
-# ("map_hero_status_in_abstract_battle",[
-	# (try_begin),
-		# (party_get_num_companion_stacks, ":numstacks", "p_temp_casualties"),
-		# (try_for_range, ":stack", 0, ":numstacks"),
-			# (party_stack_get_troop_id, ":hero", "p_temp_casualties", ":stack"),
-			# (is_between, ":hero", "trp_knight_1_1", "trp_heroes_end"),
-			# (party_stack_get_num_wounded, ":n", "p_temp_casualties", ":stack"),
-			# (eq, ":n", 0),
-			# (call_script, "script_hero_leader_killed_abstractly", ":hero"),
-		# (try_end),
-	# (try_end),
-# ]), 
+ ]), 
 #script_hero_leader_killed_abstractly
 ("hero_leader_killed_abstractly",[
 	(store_script_param_1, ":hero"),
@@ -17603,7 +17593,7 @@ scripts = [
 	(play_sound, "snd_gong"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
-]),
+ ]),
 #script_build_mound_for_dead_hero
 ("build_mound_for_dead_hero",[
 	(store_script_param_1, ":hero"),
@@ -17623,7 +17613,7 @@ scripts = [
 	#(party_set_faction,reg0,":fac"),
 	(party_set_slot, reg0, slot_mound_state, 1),
 	(party_set_slot, reg0, slot_party_commander_party, ":hero"),
-]),
+ ]),
 #script_display_dead_heroes
 ("display_dead_heroes",[
 	(try_for_range, ":hero", heroes_begin, heroes_end),
@@ -17631,7 +17621,7 @@ scripts = [
 		(str_store_troop_name, s1, ":hero"),
 		(display_message, "@{s1}_is_logged_as_dead"),
 	(try_end),
-]),
+ ]),
 
 ############ HEALING AND DEATH FROM 808 ENDS ##############################################
 ############ RESCUE & STEALTH FROM 808 BEGINS##############################################
@@ -17663,10 +17653,10 @@ scripts = [
 		(display_message, "@You_have_reached_the_dungeons!"),
 		(display_message, "@Eliminate_the_guards_and_free_your_men!"),
 	(try_end),
-]), 
+ ]), 
 #script_initialize_general_rescue
 ("initialize_general_rescue",[
-]),
+ ]),
 #script_initialize_sorcerer_quest
 ("initialize_sorcerer_quest",[
 	(store_random, "$meta_alarm", 10),
@@ -17683,7 +17673,7 @@ scripts = [
 	(assign, "$guard_troop8", "trp_fell_orc_of_mordor"),
 	(assign, "$guard_troop9", "trp_black_numenorean_renegade"),
 	(assign, "$guard_troop10", "trp_orc_of_mordor"),
-]), 
+ ]), 
 #script_final_sorcerer_fight
 ("final_sorcerer_fight",[
 	(set_jump_mission, "mt_sorcerer_mission"),
@@ -17705,7 +17695,7 @@ scripts = [
 		(ge, "$meta_alarm", 9),
 		(set_visitor, 11, "$guard_troop5", 0),(set_visitor, 12, "$guard_troop6", 0),(set_visitor, 13, "$guard_troop6", 0),(set_visitor, 14, "$guard_troop7", 0),(set_visitor, 15, "$guard_troop7", 0),(set_visitor, 16, "$guard_troop8", 0),(set_visitor, 17, "$guard_troop8", 0),(set_visitor, 18, "$guard_troop9", 0),(set_visitor, 19, "$guard_troop10",0),(set_visitor, 20, "$guard_troop10",0),
 	(try_end),
-]),
+ ]),
 #script_set_infiltration_companions
 ("set_infiltration_companions",[
 	(set_visitor, 0, "trp_player", 0),
