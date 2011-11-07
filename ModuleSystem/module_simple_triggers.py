@@ -1329,15 +1329,31 @@ simple_triggers = [
 	(try_end),
     ]),
 
-# Move cattle herd
-(0.5,[(check_quest_active,"qst_move_cattle_herd"),
-	(neg|check_quest_concluded,"qst_move_cattle_herd"),
-	(quest_get_slot, ":target_party", "qst_move_cattle_herd", slot_quest_target_party),
-	(quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
-	(store_distance_to_party_from_party, ":dist",":target_party", ":target_center"),
-	(lt, ":dist", 3),
-	(remove_party, ":target_party"),
-	(call_script, "script_succeed_quest", "qst_move_cattle_herd"),
+# Move cattle herd + update eliminate patrols quest
+(0.5,[
+    (try_begin),
+      (check_quest_active,"qst_move_cattle_herd"),
+      (neg|check_quest_concluded,"qst_move_cattle_herd"),
+      (quest_get_slot, ":target_party", "qst_move_cattle_herd", slot_quest_target_party),
+      (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
+      (store_distance_to_party_from_party, ":dist",":target_party", ":target_center"),
+      (lt, ":dist", 3),
+      (remove_party, ":target_party"),
+      (call_script, "script_succeed_quest", "qst_move_cattle_herd"),
+    (try_end),
+  
+    #eliminate patrols quest - keep the count in the quest notes
+    #not in the victory menus because parties are still not defeated then
+    (try_begin),
+      (check_quest_active, "qst_eliminate_patrols"),
+      (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
+      (store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
+      (party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
+      (store_sub, reg1, ":num_destroyed", ":previous_num_destroyed"),
+      (str_store_string, s2, "@Parties defeated: {reg1}"),
+      (add_quest_note_from_sreg, "qst_eliminate_patrols", 3, s2, 0),
+    (try_end),
+            
     ]),
 
 (2,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),

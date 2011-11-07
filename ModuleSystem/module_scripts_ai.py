@@ -1910,7 +1910,7 @@ ai_scripts = [
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (gt, ":party_no", 0),
           (party_slot_ge, ":party_no", slot_party_commander_party, 0),
-          (party_set_ai_initiative, ":party_no", 30), #MV: review this number, was 50
+          (party_set_ai_initiative, ":party_no", 10), #MV: review this number, was 50
           (call_script, "script_party_decide_next_ai_state_under_command", ":party_no"),
       (try_end),
 ]),
@@ -2049,7 +2049,7 @@ ai_scripts = [
          (else_try),
            (eq, ":faction_ai_state", sfai_attacking_center),
            (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_besieging_center, ":faction_ai_object"),
-           (party_set_ai_initiative, ":faction_marshall_party", 50),
+           (party_set_ai_initiative, ":faction_marshall_party", 0), #MV: was 50, but too much chasing breaks sieges
 #         (else_try),
 #           (eq, ":faction_ai_state", sfai_raiding_village),
 #           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_raiding_around_center, ":faction_ai_object"),

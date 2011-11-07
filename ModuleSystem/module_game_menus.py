@@ -2778,7 +2778,7 @@ game_menus = [
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
     ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@Unrestricted (cheat)"),
-									(else_try),(str_store_string, s7, "@Avoid Unappropriate"),(try_end),
+									(else_try),(str_store_string, s7, "@Matching only"),(try_end),
         ],"Player's equipment: {s7}",[
         (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2)]),
 
@@ -2789,7 +2789,7 @@ game_menus = [
 
 	("game_options_town_menu",[(try_begin),(eq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@Always"),
 								 (else_try),(str_store_string, s7, "@Only after finding them"),(try_end),
-	    ],"Town places accessible from Menus: {s7}",[
+	    ],"Town NPCs accessible from Menus: {s7}",[
 	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
 
 	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
@@ -3001,34 +3001,6 @@ game_menus = [
 		(assign,"$g_player_is_captive",1),
 		(assign,"$auto_menu",-1),
 		
-		#for NPC who had been in party
-		(try_for_range, ":npc", companions_begin, companions_end),
-			(main_party_has_troop, ":npc"),
-			(store_random_in_range, ":rand", 0, 100),
-			(lt, ":rand", 30),
-			(remove_member_from_party, ":npc", "p_main_party"),
-			(troop_set_slot, ":npc", slot_troop_occupation, 0),
-			(troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
-#			(assign, "$last_lost_companion", ":npc"),
-			(store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
-			(troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
-			(troop_set_health, ":npc", 100),
-			#(store_random_in_range, ":rand_town", centers_begin, centers_end),
-			#(troop_set_slot, ":npc", slot_troop_cur_center, ":rand_town"),
-			(assign, ":nearest_town_dist", 1000),
-			(try_for_range, ":town_no", centers_begin, centers_end),
-				(party_is_active,":town_no"),  #TLD
-			    (party_slot_eq, ":town_no", slot_center_destroyed, 0), #TLD
-				(store_faction_of_party, ":town_fac", ":town_no"),
-				(store_relation, ":reln", ":town_fac", "fac_player_faction"),
-				(ge, ":reln", 0),
-				(store_distance_to_party_from_party, ":dist", ":town_no", "p_main_party"),
-				(lt, ":dist", ":nearest_town_dist"),
-				(assign, ":nearest_town_dist", ":dist"),
-				#(troop_set_slot, ":npc", slot_troop_cur_center, ":town_no"),
-				(try_end),
-		(try_end),
-		#end NPC
 
 		#(set_camera_follow_party,"$capturer_party"),#camera
 		#(store_random_in_range,":random_hours",30,60),#random time of captivity
@@ -6969,6 +6941,20 @@ game_menus = [
         [	(assign, "$auto_menu", "$recover_after_death_menu"),
             (rest_for_hours, 8, 8, 0),
 			#(jump_to_menu, "$recover_after_death_menu"),
+            
+            #MV: lose some of your companions
+            (try_for_range, ":npc", companions_begin, companions_end),
+              (main_party_has_troop, ":npc"),
+              (store_random_in_range, ":rand", 0, 100),
+              (lt, ":rand", 30),
+              (remove_member_from_party, ":npc", "p_main_party"),
+              (troop_set_slot, ":npc", slot_troop_occupation, 0),
+              (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
+              (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
+              (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
+              (troop_set_health, ":npc", 100),
+            (try_end),
+            
 			(change_screen_map),
 			(display_message,"@Time passes..."),
          ]),
@@ -6995,39 +6981,39 @@ game_menus = [
 		(change_screen_map)])]
  ),
 ( "recover_after_death_moria",city_menu_color,
-    "^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.",
+    "^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
 	]
  ),
 ( "recover_after_death_default",0,
-     "^^^^^You regain your conciousness. You are in the spot you fell.\
+     "^^^^^You regain your conciousness. You lie on the spot you fell.\
   The enemies must have taken you up for dead and left you there.\
-  However, it seems that none of your wound were lethal,\
-  and altough you feel awful, you find out that can still walk.\
+  However, it seems that none of your wounds were lethal,\
+  and although you feel awful, you find out you can still walk.\
   You get up and try to look for any other survivors from your party.",
      "none",
 	 [(set_background_mesh, "mesh_ui_default_menu_window")],[      
 	 ("continue",[],"Continue...",[(change_screen_map)])]
  ),
 ( "recover_after_death_town",0,
-     "^^^^You regain your conciousness and find yourself near the town boundary. \
+     "^^^^You regain your conciousness and find yourself at the town outskirts. \
   You are alive!\
-  Nobody is around and you take jour chance to drag yourself outside the town.\
-  It seems that none of your wound were lethal,\
-  and altough you feel awful, you find out that can still walk.",
+  Nobody is around and you take your chance to drag yourself outside the town.\
+  It seems that none of your wounds were lethal,\
+  and although you feel awful, you can still walk.",
      "none",code_to_set_city_background,
 	 [("continue",[],"Continue...",[(change_screen_map),
 	 #(jump_to_menu,"mnu_castle_outside"),
 	 ])]
  ),
 ( "recover_after_death_town_alone",0,
-     "You regain your conciousness and find yourself near the town boundary. \
+     "You regain your conciousness and find yourself at the town outskirts. \
   You are alive!\
-  Nobody is around and you take jour chance to drag yourself outside the town.\
- Your companions find you.\
- It seems that none of your wound were lethal,\
-  and altough you feel awful, you find out that can still walk.",
+  Nobody is around and you take your chance to drag yourself outside the town.\
+ Your companions found you.\
+ It seems that none of your wounds were lethal,\
+  and although you feel awful, you can still walk.",
      "none",code_to_set_city_background,[      
 	 ("continue",[],"Continue...",
         [   (change_screen_map),

@@ -1347,9 +1347,9 @@ ws_party_spawns_list = [
 
 # TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
 ws_scout_chance = 40
-ws_raider_chance = 25
-ws_patrol_chance = 20 # no chance below str. 500
-ws_caravan_chance = 15 # no chance below str. 1000
+ws_raider_chance = 30 # no chance below str. 500
+ws_patrol_chance = 20 # no chance below str. 1500
+ws_caravan_chance = 15 # no chance below str. 2000
 #ws_host_chance = 35
 
 # TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
@@ -1579,13 +1579,13 @@ center_list = [
 	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_capital),
 ("p_town_gundabad_ne_outpost", ["scn_gundabad_ne_outpost_center", -1, -1,-1,-1,"scn_gundabad_ne_outpost_center", "mesh_town_evilcamp"],
 	[-1, "trp_no_troop", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_low, 2, tld_siegable_always),
+	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
 ("p_town_gundabad_nw_outpost", ["scn_gundabad_nw_outpost_center", -1, -1,-1,-1,"scn_gundabad_nw_outpost_center", "mesh_town_evilcamp"],
 	[-1, "trp_smith_gundabad", "trp_no_troop", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_low, 2, tld_siegable_always),
+	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
 ("p_town_goblin_north_outpost", ["scn_goblin_north_outpost_center", -1, -1,-1,-1,"scn_goblin_north_outpost_center", "mesh_town_evilcamp"],
 	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
 ("p_town_goblin_south_outpost", ["scn_goblin_south_outpost_center", -1, -1,-1,-1,"scn_goblin_south_outpost_center", "mesh_town_evilcamp"],
 	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
 	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
