@@ -66,22 +66,22 @@ itemsfile version 2
  itm_metal_scraps_good Good_quality_metal_scraps Good_quality_metal_scraps 1  weapon_scraps_c 0  11 0 250 0 40.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_oliphant Oliphaunt Oliphaunt 1  oliphant 0  1 0 64 16139943936 0.000000 100 0 255 0 255 255 1 1 0 0 244 0
+ itm_oliphant Oliphaunt Oliphaunt 1  oliphant 0  1 0 1 16139943936 0.000000 100 0 255 0 255 255 1 1 0 0 244 0
 0
 
- itm_sumpter_horse Sumpter_Horse Sumpter_Horse 1  sumpter_horse 0  65537 0 64 16139943936 0.000000 100 0 1 0 1 40 33 28 0 0 5 0
+ itm_sumpter_horse Sumpter_Horse Sumpter_Horse 1  sumpter_horse 0  65537 0 50 16139943936 0.000000 100 0 1 0 1 40 33 28 0 0 5 0
 0
 
- itm_saddle_horse Saddle_Horse Saddle_Horse 1  saddle_horse 0  65537 0 112 16139943936 0.000000 100 0 7 0 1 60 36 39 0 0 8 0
+ itm_saddle_horse Saddle_Horse Saddle_Horse 1  saddle_horse 0  65537 0 120 16139943936 0.000000 100 0 7 0 1 60 36 39 0 0 8 0
 0
 
- itm_steppe_horse Steppe_Horse Steppe_Horse 1  steppe_horse 0  65537 0 92 16139943936 0.000000 100 0 10 0 2 70 41 35 0 0 7 0
+ itm_steppe_horse Steppe_Horse Steppe_Horse 1  steppe_horse 0  65537 0 120 16139943936 0.000000 100 0 10 0 2 70 41 35 0 0 7 0
 0
 
- itm_courser Courser Courser 1  courser 0  65537 0 323 16139943936 0.000000 100 0 10 0 2 70 37 43 0 0 11 0
+ itm_courser Courser Courser 1  courser 0  65537 0 400 16139943936 0.000000 100 0 10 0 2 70 37 43 0 0 11 0
 0
 
- itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 434 16139943936 0.000000 100 0 20 0 3 90 34 36 0 0 18 0
+ itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 500 16139943936 0.000000 100 0 20 0 3 90 34 36 0 0 18 0
 0
 
  itm_pony Pony Pony 1  pony 0  65537 0 300 119890247680 0.000000 100 0 0 0 0 30 40 20 0 0 1 0
@@ -162,19 +162,19 @@ itemsfile version 2
  itm_gondor_warhorse Gondor_Warhorse Gondor_Warhorse 1  gondor_warhorse01 0  65537 0 1500 16139943936 0.000000 100 0 52 0 4 135 34 36 0 0 26 0
 0
 
- itm_gondor_lam_horse Gondor_Armored_Horse Gondor_Armored_Horse 1  lam_warhorse01 0  65537 0 1500 16139943936 0.000000 100 0 35 0 4 135 34 36 0 0 26 0
+ itm_gondor_lam_horse Lamedon_Armored_Horse Lamedon_Armored_Horse 1  lam_warhorse01 0  65537 0 1500 16139943936 0.000000 100 0 35 0 4 135 34 36 0 0 26 0
 0
 
  itm_lorien_warhorse Lothlorien_Warhorse Lothlorien_Warhorse 1  loth_warhorse01 0  65537 0 1500 119890247680 0.000000 100 0 52 0 4 135 34 36 0 0 32 0
 0
 
- itm_harad_horse Harad_Horse Harad_Horse 1  harad_horse01 0  65537 0 724 16139943936 0.000000 100 0 10 0 2 80 34 36 0 0 10 0
+ itm_harad_horse Harad_Horse Harad_Horse 1  harad_horse01 0  65537 0 900 16139943936 0.000000 100 0 10 0 2 80 34 36 0 0 10 0
 0
 
  itm_harad_warhorse Harad_Warhorse Harad_Warhorse 1  harad_horse02 0  65537 0 1500 16139943936 0.000000 100 0 40 0 4 135 34 36 0 0 23 0
 0
 
- itm_variag_pony Variag_Pony Variag_Pony 1  horse_c 0  65537 0 724 16139943936 0.000000 100 0 10 0 2 70 34 36 0 0 10 0
+ itm_variag_pony Variag_Pony Variag_Pony 1  horse_c 0  65537 0 900 16139943936 0.000000 100 0 10 0 2 70 34 36 0 0 10 0
 0
 
  itm_variag_kataphrakt Easterling_Warhorse Easterling_Warhorse 1  easterling_warhorse01 0  65537 0 2000 16139943936 0.000000 100 0 52 0 4 135 34 36 0 0 35 0
@@ -1512,7 +1512,7 @@ itemsfile version 2
  itm_dunnish_axe Dunnish_Axe Dunnish_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 500 286870 2.000000 100 0 0 0 0 35840 100 0 50 0 256 35
 0
 
- itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  140869634 4222124851986688 125 271496 2.000000 100 0 0 0 0 12288 95 0 150 0 276 524
+ itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  140869636 4222124851986688 125 271496 2.000000 100 0 0 0 0 12288 95 0 150 0 276 524
 0
 
  itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 201326848 400 271496 3.000000 100 0 0 0 0 16384 85 0 205 0 282 528

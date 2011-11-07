@@ -45,26 +45,23 @@ def curr_count():
 # added subfactions (mtarini)
 def set_item_faction():
 	command_list = []
-	for i_troop in xrange(29,430 ): #regular troops here
-		r = 0
-		
+	for i_troop in xrange(29,430): #regular troops here
 		# mtarini: store all flags in a slot, for later use
-		command_list.append((troop_set_slot, "trp_"+troops[i_troop][0], slot_troop_flags, troops[i_troop][3]))
-		
-		#for i_item in troops[i_troop][7]: 
-		# mtarini: assign troops to proper subfactions, according to name
-		for j in range(0,len(subfaction_data) ):
-			if troops[i_troop][1].find(subfaction_data[j][2])!=-1: # if there is, e.g.  "Lossarnach" in the name  
-				r = subfaction_data[j][0]
-				command_list.append((troop_set_slot, "trp_"+troops[i_troop][0], slot_troop_subfaction, r))
-		#print troops[i_troop][0]
-		for i_item in troops[i_troop][7]:   
-			command_list.append((item_get_slot , ":valA",i_item, slot_item_faction))
-			command_list.append((val_or, ":valA",1 << troops[i_troop][6]))       
-			command_list.append((item_set_slot, i_item, slot_item_faction,":valA"))
-			command_list.append((item_get_slot, ":valB",i_item, slot_item_subfaction))  # mtarini:  subfactionize items
-			command_list.append((val_or, ":valB",1 << r ))
-			command_list.append((item_set_slot, i_item, slot_item_subfaction,":valB"))
+		command_list.append((troop_set_slot, i_troop, slot_troop_flags, troops[i_troop][3]))
+	for i_troop in xrange(29,823): #all troops
+		#GA assign troops to proper subfactions acc to troops[i_troop][5]
+		troopsub = troops[i_troop][5]
+		if troopsub > 0: command_list.append((troop_set_slot, i_troop, slot_troop_subfaction, troopsub))
+	for i_item in xrange(23,825): #regular items here
+		faction = 0
+		sfaction = 0
+		for i_troop in xrange(29,430): # search items inside troop inventory
+			if i_item in troops[i_troop][7]:
+				faction = faction | (1 << troops[i_troop][6])
+				troopsub = troops[i_troop][5]
+				if troopsub > 0: sfaction = sfaction | (1 << troops[i_troop][5])
+		if faction > 0: command_list.append((item_set_slot, i_item, slot_item_faction, faction))
+		if sfaction > 0: command_list.append((item_set_slot, i_item, slot_item_subfaction, sfaction))
 	return command_list [:]
 
 scripts = [
@@ -7930,20 +7927,20 @@ scripts = [
       (try_begin),
         (eq, ":new_state", 0),
         (party_set_extra_text, ":village_no", "str_empty_string"),
-        (party_set_slot, ":village_no", slot_village_raided_by, -1),
+        #(party_set_slot, ":village_no", slot_village_raided_by, -1),
       (else_try),
         (eq, ":new_state", svs_being_raided),
         (party_set_extra_text, ":village_no", "@(Being Raided)"),
       (else_try),
         (eq, ":new_state", svs_looted),
         (party_set_extra_text, ":village_no", "@(Looted)"),
-        (party_set_slot, ":village_no", slot_village_raided_by, -1),
+        #(party_set_slot, ":village_no", slot_village_raided_by, -1),
         (call_script, "script_change_center_prosperity", ":village_no", -30),
       (else_try),
         (eq, ":new_state", svs_under_siege),
         (party_set_extra_text, ":village_no", "@(Under Siege)"),
       (try_end),
-      (party_set_slot, ":village_no", slot_village_state, ":new_state"),
+      #(party_set_slot, ":village_no", slot_village_state, ":new_state"),
 ]),
 
 # script_process_sieges

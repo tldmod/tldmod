@@ -2173,14 +2173,14 @@ simple_triggers = [
 	(try_end)
 	]),             
 
-(11,[(try_begin), # npc and player healing from wounds (should be 25 hours)
+(1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
 		(eq, "$tld_option_injuries",1),
 		(try_for_range, ":npc",companions_begin,companions_end),
-			(store_random_in_range, reg12,0,10),
+			(store_random_in_range, reg12,0,70),
 			(eq,reg12,0), #10% chance for healing
 			(call_script, "script_healing_routine", ":npc"),
 		(try_end),
-		(store_random_in_range, reg12,0,5),
+		(store_random_in_range, reg12,0,35),
 		(eq,reg12,0), #20% chance for healing
 		(call_script, "script_healing_routine", "trp_player"),
 	(try_end),

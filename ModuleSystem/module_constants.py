@@ -264,7 +264,8 @@ slot_town_merchant      = 23
 slot_town_elder         = 25
 slot_center_player_relation = 26
 
-slot_center_siege_with_belfry = 27
+slot_center_siege_with_belfry = 27 #unused in TLD
+slot_barracks_visited    = 27
 slot_center_last_taken_by_troop = 28
 
 # party will follow this party if set:
@@ -279,11 +280,11 @@ slot_elder_visited       = 36
 slot_castle_visited      = 37
 slot_barracks_visited    = 38
 
-slot_village_raided_by        = 34
-slot_village_state            = 35 #svs_normal, svs_being_raided, svs_looted, svs_recovering, svs_deserted
-slot_village_raid_progress    = 36
-slot_village_recover_progress = 37
-slot_village_smoke_added      = 38
+slot_village_raided_by        = 34 #unused in TLD
+slot_village_state            = 35 #unused in TLD, svs_normal, svs_being_raided, svs_looted, svs_recovering, svs_deserted
+slot_village_raid_progress    = 36 #unused in TLD
+slot_village_recover_progress = 37 #unused in TLD
+slot_village_smoke_added      = 38 # used for ruins smoking after destruction
 slot_village_infested_by_bandits   = 39 #TLD: not used
 
 slot_town_menu_background     = 40 #TLD menu background picture

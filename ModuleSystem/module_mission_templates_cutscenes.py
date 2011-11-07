@@ -184,7 +184,7 @@ mission_templates_cutscenes = [
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
-           (jump_to_menu, "mnu_auto_intro_mordor"), #GA: temporarily switched off Minas Tirith cause crashes for many people
+           (jump_to_menu, "mnu_auto_intro_gondor"), #GA: Minas Tirith causes crashes for many people
          (try_end),
          ], []),
     ],

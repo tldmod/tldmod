@@ -1,4 +1,4 @@
-1022
+1019
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -278,8 +278,7 @@ qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bea
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
 qstr_You_now_owe_{reg2}_R You_now_owe_{reg2}_RPs_to_{s1}.
-qstr_You_have_run_into_a_ You_have_run_into_a_trap!
-qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_bandits!
+qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_goblins!
 qstr_Holding Holding
 qstr_Following Following
 qstr_Charging Charging
@@ -667,12 +666,9 @@ qstr_SE_advance_camps_spaw SE_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
-qstr_Unrestricted__cheat_ Unrestricted_(cheat)
-qstr_Avoid_Unappropriate Avoid_Unappropriate
 qstr_ON ON
+qstr_OFF__cheat_ OFF_(cheat)
 qstr_OFF OFF
-qstr_Always Always
-qstr_Only_after_finding_t Only_after_finding_them
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
@@ -795,6 +791,7 @@ qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
+qstr_Parties_defeated:_{r Parties_defeated:_{reg1}
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!

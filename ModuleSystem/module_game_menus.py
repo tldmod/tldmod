@@ -1546,7 +1546,7 @@ game_menus = [
 		("camp_wait_here",[],"Camp here for some time.",
       [		(store_random_in_range,":r",0,10),#random number
 			(try_begin),
-				(lt,":r",1),#10% of time we are attacked
+				(gt,":r",10),#NEVER! 10% of time we are attacked
 				#clearing temporary slots
 				(try_for_range,":slot",0,10),
 					(troop_set_slot,"trp_temp_array_a",":slot",-1),
@@ -2777,39 +2777,39 @@ game_menus = [
 ( "game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
-    ("game_options_restrict_items",[(try_begin),(neq,"$tld_option_crossdressing",0),(str_store_string, s7, "@Unrestricted (cheat)"),
-									(else_try),(str_store_string, s7, "@Matching only"),(try_end),
-        ],"Player's equipment: {s7}",[
+    ("game_options_restrict_items",[(try_begin),(eq,"$tld_option_crossdressing",0),(str_store_string, s7, "@ON"),
+									(else_try),(str_store_string, s7, "@OFF (cheat)"),(try_end),
+        ],"Restricted player equipment:  {s7}",[
         (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2)]),
 
     ("game_options_formations",[(try_begin),(neq, "$tld_option_formations", 0),(str_store_string, s7, "@ON"),
 								(else_try),(str_store_string, s7, "@OFF"),(try_end),
-        ],"Battle formations and AI: {s7}",[
+        ],"Battle formations and AI:  {s7}",[
         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2)]),
 
-	("game_options_town_menu",[(try_begin),(eq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@Always"),
-								 (else_try),(str_store_string, s7, "@Only after finding them"),(try_end),
-	    ],"Town NPCs accessible from Menus: {s7}",[
+	("game_options_town_menu",[(try_begin),(eq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
+								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Town NPCs always accessible from Menus:  {s7}",[
 	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
 
 	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
 								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Cutscenes: {s7}",[
+	    ],"Cutscenes:  {s7}",[
 	    (store_sub,"$tld_option_cutscenes",1,"$tld_option_cutscenes"),(val_clamp, "$tld_option_cutscenes",0,2)]),
 
 	("game_options_injuries",[(try_begin),(neq, "$tld_option_injuries", 0),(str_store_string, s7, "@ON"),
                                   (else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Injuries for companions: {s7}.",[
+	    ],"Injuries for companions:  {s7}.",[
 		(store_sub,"$tld_option_injuries",1,"$tld_option_injuries"),(val_clamp,"$tld_option_injuries",0,2)]),
  
 	("game_options_death",[(try_begin),(neq, "$tld_option_death_npc", 0),(str_store_string, s7, "@ON"),
 							(else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Permanent death for lords and companions: {s7}.",[
+	    ],"Permanent death for lords and companions:  {s7}.",[
 	     (store_sub, "$tld_option_death_npc", 1, "$tld_option_death_npc"),(val_clamp, "$tld_option_death_npc", 0, 2)]),
 
 	("game_options_death2",[(try_begin),(neq, "$tld_option_death_player", 0),(str_store_string, s7, "@ON"),
 							(else_try),(str_store_string, s7, "@OFF"),(try_end),
-	    ],"Permanent death for player (that is YOU!): {s7}.",[
+	    ],"Permanent death for player (that is YOU!):  {s7}.",[
 	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2)]),
 
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),

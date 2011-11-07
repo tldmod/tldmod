@@ -47,8 +47,6 @@ triggers = [
 		(store_troop_faction,":faction",":cur_merchant" ),
 		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
 		(troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
-		(assign, ":subfaction_mask", 1),
-		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end),
 		(store_add,":last_item_plus_one","itm_ent_body",1),
 		
 		(try_begin), # bad guys have shitty quality shops
@@ -65,10 +63,13 @@ triggers = [
 				(eq,":item_faction_mask",0), # faction mismatch
 				(set_item_probability_in_merchandise,":item",0),
 			(else_try),
+				(gt, ":subfaction", 0),
+				(assign, ":subfaction_mask", 1),
+				(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end), # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
 				(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
-				(store_and,":and_sub_faction",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
-				(eq,":and_sub_faction",0),
-				(set_item_probability_in_merchandise,":item",0),  #  prob reduced to 0 %
+				(store_and,reg1,":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
+				(eq,reg1,0),
+				(set_item_probability_in_merchandise, ":item", 0),  #  prob reduced to 1 %
 			(else_try),
 				(store_item_value,":value",":item"),
 				(try_begin), # somewhat fewer expensive items in store
@@ -108,7 +109,7 @@ triggers = [
 		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
         (troop_get_slot,":subfaction",":cur_center", slot_troop_subfaction),
 		(assign, ":subfaction_mask", 1),
-		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end),
+		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end), #":subfaction_mask" = 2,4,8,16... if subfactions here
 
         (assign, ":is_orc_faction", 0),
         (try_begin),
@@ -128,27 +129,25 @@ triggers = [
         # (try_end),
         (party_get_slot, ":center_str_income", ":cur_center", slot_center_strength_income),
 
-        (try_for_range,":item","itm_sumpter_horse", "itm_dale_pike"),
+        (try_for_range,":item","itm_sumpter_horse", "itm_warg_reward"),
             (item_get_slot,":item_faction_mask",":item",slot_item_faction),
             (val_and,":item_faction_mask",":faction_mask"),
 			(try_begin),
 				(eq,":item_faction_mask",0), # faction mismatch
 				(set_item_probability_in_merchandise,":item",0),
 			(else_try),
-				(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
-				(store_and,":and_sub_faction",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
-				(eq,":and_sub_faction",0),
-				#(try_begin),
-				#	(val_or,   ":item_subfaction_mask",1),
-				#	(eq,"item_subfaction_mask",1), # regular object
-				#	(set_item_probability_in_merchandise,":item",10), #   prob reduced to 10 %
-				#(else_try),
-					(set_item_probability_in_merchandise,":item",0),  #  prob reduced to 0 %
-				#(try_end),
+				(try_begin), # faction match but what about subfactions?
+					(neq, ":subfaction", 0),
+					(val_div, ":subfaction_mask", 2), #shift back
+					(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
+					(store_and,":subfaction_mask",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
+					(eq,":subfaction_mask",0),
+					(set_item_probability_in_merchandise,":item", 0),  #  prob reduced to 0 %
+				(try_end),
 			(try_end),
         (try_end),
     # horses inventory
-		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance ststored in merchant skills values
+		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance stored in merchant skills values
 		(store_skill_level,":items",":skill",":cur_merchant"),         
 		(try_begin),
             (gt,":items",0),
