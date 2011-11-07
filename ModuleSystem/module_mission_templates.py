@@ -467,8 +467,8 @@ mission_templates = [ # not used in game
 ( "bandits_at_night",0,-1,
   "Default town visit",
     [(0,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #MV: player set to team 2
-     (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
-     (2,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+     (1,mtef_scene_source|mtef_team_2,0,0,1,[]),
+     (2,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
      (3,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
      (4,mtef_visitor_source|mtef_team_0,af_override_horse, aif_start_alarmed, 1, []),
      (5,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
