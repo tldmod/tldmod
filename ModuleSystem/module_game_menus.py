@@ -3106,7 +3106,8 @@ game_menus = [
 			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
 		(else_try),
 			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
-			(jump_to_menu, "mnu_tld_player_defeated"),
+		#	(jump_to_menu, "mnu_tld_player_defeated"),
+			(jump_to_menu, "mnu_auto_return_to_map"),
 		(try_end),
 	 ],[]
  ),
@@ -3127,17 +3128,17 @@ game_menus = [
 ( "fangorn_killed_player_only",0, # player only was killed by fangorn
    "^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
-		[("ok_0",[],"Ouch! Let's get out of this cursed place!",[(change_screen_map)] ),]
+		[("leave",[],"Ouch! Let's get out of this cursed place!",[(jump_to_menu,"mnu_auto_return_to_map")] ),]
  ),
 ( "fangorn_killed_troop_and_player",0, # player and troops were killed by fangorn
-   "^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were that lucky.^^",
+   "^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
-   [("ok_1",[],"Ouch! Let's get out of this cursed place!",[(change_screen_map)] ),]
+   [("leave",[],"Ouch! Let's get out of this cursed place!",[(jump_to_menu,"mnu_auto_return_to_map")] ),]
  ),
 ( "fangorn_killed_troop_only",0, # troops were killed by fangorn
    "^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...",
    "none",[(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),],
-   [("ok_2",[],"Let's get out of this cursed place!",[(change_screen_map)] ),]
+   [("leave",[],"Let's get out of this cursed place!",[(jump_to_menu,"mnu_auto_return_to_map")] ),]
  ),
 
 #### CAPTURE TROLL MENU
@@ -7792,4 +7793,5 @@ choose_scene_template = Game_Menu_Template(
   ]
 )
 
-game_menus += choose_scene_template.generate_menus(sorted_scenes)
+if cheat_switch: 
+  game_menus += choose_scene_template.generate_menus(sorted_scenes)
