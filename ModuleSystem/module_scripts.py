@@ -42,7 +42,7 @@ def curr_count():
   return ___val
 
   
-# added subfactions (mtarini)
+# added subfactions (mtarini, GA)
 def set_item_faction():
 	command_list = []
 	for i_troop in xrange(29,430): #regular troops here
@@ -1974,11 +1974,13 @@ scripts = [
 					(assign, ":root_defeated_party",  ":root_defender_party"),
 					(assign, ":collective_casualties",  "p_collective_ally"),
 				(try_end),
-
+				
+				(party_clear, "p_temp_party"),
 				(try_begin),
 					(ge, ":root_winner_party", 0),
 					(call_script, "script_get_nonempty_party_in_group", ":root_winner_party"),
 					(assign, ":nonempty_winner_party", reg0),
+					(call_script, "script_remove_empty_parties_in_group", ":root_winner_party"), #GA: purge all empty winner parties, stash prisoners to p_temp_party
 					(store_faction_of_party, ":faction_receiving_prisoners", ":nonempty_winner_party"),
 					(store_faction_of_party, ":defeated_faction", ":root_defeated_party"),
 				(else_try),
@@ -1987,7 +1989,6 @@ scripts = [
 
 				(try_begin),
 					(ge, ":collective_casualties", 0),
-					(party_clear, "p_temp_party"),
 					(assign, "$g_move_heroes", 1), 
 					(party_set_faction, "p_temp_party", ":faction_receiving_prisoners"),
 					(call_script, "script_party_add_party_prisoners", "p_temp_party", ":collective_casualties"),
@@ -18912,7 +18913,29 @@ scripts = [
 		(try_end),
 	(try_end),
 ]),
-("save_compartibility_script2",[]),
+# script_remove_empty_parties_in_group
+# stashes prisoners into p_temp_party
+("remove_empty_parties_in_group",[
+	(store_script_param_1, ":root_party"),
+	(party_get_num_attached_parties, ":num_attached_parties",  ":root_party"),
+	(try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
+		(party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
+		(party_get_num_companions, ":troops", ":attached_party"),
+		(try_begin),
+			(eq, ":troops",0), # no more soldiers here?
+			(party_get_num_prisoners,reg1, ":attached_party"),
+			(try_begin), # transfer prisoners
+				(gt, reg1, 0),
+				(call_script, "script_party_add_party_prisoners", "p_temp_party", ":attached_party"),
+			(try_end),
+		(try_end),
+		(call_script, "script_remove_empty_parties_in_group", ":attached_party"),
+		(try_begin),
+			(eq, ":troops", 0),
+			(remove_party,":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
+		(try_end),
+	(try_end),
+ ]),
 ("save_compartibility_script3",[]),
 ("save_compartibility_script4",[]),
 ("save_compartibility_script5",[]),
