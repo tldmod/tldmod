@@ -1688,7 +1688,7 @@ centers_disabled_at_start =	[
 
 # trade routes structure. 1st town in line connected with all others in line. Repeat for each line. 
 routes_list = [ 
- ("p_town_minas_tirith" , "p_town_pelargir", "p_town_dol_amroth", "p_town_erech", "p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold"),
+ ("p_town_minas_tirith" , "p_town_pelargir", "p_town_dol_amroth", "p_town_erech", "p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold", "p_advcamp_gondor"),
  ("p_town_pelargir"     , "p_town_dol_amroth", "p_town_lossarnach", "p_town_erech", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold"),
  ("p_town_linhir"       , "p_town_dol_amroth", "p_town_edhellond", "p_town_lossarnach", "p_town_tarnost", "p_town_westfold", "p_town_west_emnet", "p_town_minas_morgul"),
  ("p_town_dol_amroth"   , "p_town_lossarnach", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold"),
@@ -1698,14 +1698,18 @@ routes_list = [
  ("p_town_erech"        , "p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_eastfold"),
  ("p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_eastfold"),
  ("p_town_aldburg"      , "p_town_edoras", "p_town_westfold"),
- ("p_town_edoras"       , "p_town_hornburg", "p_town_east_emnet", "p_town_westfold", "p_town_eastfold"),
+ ("p_town_edoras"       , "p_town_hornburg", "p_town_east_emnet", "p_town_westfold", "p_town_eastfold", "p_advcamp_rohan"),
  ("p_town_hornburg"     , "p_town_east_emnet", "p_town_eastfold"),
  ("p_town_eastfold"     , "p_town_east_emnet", "p_town_west_emnet"),
- ("p_town_morannon"     , "p_town_minas_morgul", "p_town_cirith_ungol","p_town_east_osgiliath"),
- ("p_town_erebor"       , "p_town_dale","p_town_esgaroth"),
- ("p_town_isengard"     , "p_town_urukhai_outpost","p_town_urukhai_h_camp","p_town_urukhai_r_camp"),
- ("p_town_gundabad"     , "p_town_gundabad_ne_outpost","p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost"),
- ("p_town_dol_guldur"   , "p_town_dol_guldur_north_outpost"),
+ ("p_town_morannon"     , "p_town_minas_morgul", "p_town_cirith_ungol","p_town_east_osgiliath", "p_advcamp_mordor"),
+ ("p_town_erebor"       , "p_town_dale","p_town_esgaroth", "p_town_ironhill_camp", "p_advcamp_dwarf"),
+ ("p_town_dale"         , "p_advcamp_dale"),
+ ("p_town_isengard"     , "p_town_urukhai_outpost","p_town_urukhai_h_camp","p_town_urukhai_r_camp", "p_advcamp_isengard"),
+ ("p_town_gundabad"     , "p_town_gundabad_ne_outpost","p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost", "p_advcamp_gundabad"),
+ ("p_town_dol_guldur"   , "p_town_dol_guldur_north_outpost", "p_advcamp_guldur"),
+ ("p_town_caras_galadhon", "p_town_thranduils_halls", "p_town_imladris_camp", "p_town_cerin_dolen", "p_town_cerin_amroth", "p_advcamp_lorien"),
+ ("p_town_thranduils_halls", "p_town_imladris_camp", "p_town_woodelf_camp", "p_town_woodelf_west_camp", "p_advcamp_woodelf"),
+ ("p_town_imladris_camp", "p_advcamp_imladris"),
 ]
 
 lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
