@@ -201,7 +201,7 @@ ai_scripts = [
 #         (lt, ":faction_marshall_num_followers", 4),
         #TLD: not many hosts in TLD
             (lt, ":offensive_hours", 60),
-         (assign, ":chance_gathering_army", 3000),
+         (assign, ":chance_gathering_army", 300), #was 3000, caused too much waiting
        (try_end),
 ## Attacking center
        (try_begin),
@@ -275,7 +275,7 @@ ai_scripts = [
 #MV test code end
            (store_mul, ":center_score", 1000, ":faction_marshall_army_strength"),
            (val_div, ":center_score", ":center_str"),
-           (gt, ":center_score", 1500),
+           (gt, ":center_score", 1200), #siege attacks more likely with worse odds (down to +20% advantage), was 1500 (+50%)
            (val_min, ":center_score", 20000),#20 times stronger means an easy victory, distance is more important
            (try_begin),
              (party_slot_eq, ":enemy_walled_center", slot_town_lord, "trp_player"),
