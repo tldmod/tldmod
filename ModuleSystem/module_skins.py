@@ -85,6 +85,43 @@ man_face_keys = [
 (280,0,0.0,1.0, "Post-Edit"),
 ]
 
+elf_face_keys = [
+(20,0, 0.7,-0.6, "Chin Size"),
+(260,0, -0.6,1.4, "Chin Shape"),
+(10,0,-0.5,0.9, "Chin Forward"),
+(240,0,0.9,-0.3, "Jaw Width"),
+(210,0,-0.5,0.5, "Jaw Position"),
+(250,0,0.8,-1.0, "Mouth-Nose Distance"),
+(200,0,-0.3,0.4, "Mouth Width"),
+(50,0,-1.5,0.5, "Cheeks"),
+
+(60,0,-0.4,1.35, "Nose Height"),
+(70,0,-0.6,-0.2, "Nose Width"),
+(80,0,1.0,0.2, "Nose Size"),
+(270,0,-0.5,1.0, "Nose Shape"),
+(90,0,-0.2,1.4, "Nose Bridge"),
+
+(100,0,-0.3,1.5, "Cheek Bones"),
+(150,0,-0.2,3.0, "Eye Width"),
+(110,0,1.1,-0.5, "Eye to Eye Dist"),
+(120,0,0.9,-1.0, "Eye Shape"),
+(130,0,-0.5, 1.1, "Eye Depth"),
+(140,0,1.0,-1.2, "Eyelids"),
+
+(160,0,1.0,-0.2, "Eyebrow Position"),
+(170,0,-0.1,1.9, "Eyebrow Height"),
+(220,0,-0.1,0.9, "Eyebrow Depth"),
+(180,0,-0.5,1.6, "Eyebrow Shape"),
+(230,0,1.2,-0.7, "Temple Width"),
+
+(30,0,-0.6,0.9, "Face Depth"),
+(40,0,0.9,-0.6, "Face Ratio"),
+(190,0,0.0,0.95, "Face Width"),
+
+(280,0,0.0,1.0, "Post-Edit"),
+]
+
+
 orc_face_keys = [
 (20,0, 0.7,-0.6, "Chin Size"),
 (260,0, -0.6,1.4, "Chin Shape"),
@@ -203,9 +240,9 @@ haradrim_face_keys = man_face_keys
 easterling_face_keys = man_face_keys
 troll_face_keys = []
 dunedain_face_keys = man_face_keys
-lothlorien_face_keys = man_face_keys
-rivendell_face_keys = man_face_keys
-mirkwood_face_keys = man_face_keys
+lothlorien_face_keys = elf_face_keys
+rivendell_face_keys = elf_face_keys
+mirkwood_face_keys = elf_face_keys
 evil_male_face_keys = man_face_keys
 
 chin_size = 0
@@ -566,7 +603,7 @@ skins = [
 #12
   ( "lorien", 0,
     "man_body", "man_calf_l", "m_handL",
-    "male_head", lothlorien_face_keys,
+    "elf_head", lothlorien_face_keys,
     ["elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","man_hair_p","elf_hair_6", "elf_hair_7","man_hair_r","man_hair_q","elf_hair_5","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
@@ -593,7 +630,7 @@ skins = [
 #13
   ( "imladris", 0,
     "man_body", "man_calf_l", "m_handL",
-    "male_head", rivendell_face_keys,
+    "elf_head", rivendell_face_keys,
     ["elf_hair_4","elf_hair_3","elf_hair_1","elf_hair_2","man_hair_p","elf_hair_6", "elf_hair_7","man_hair_r","man_hair_q","elf_hair_5","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
@@ -620,7 +657,7 @@ skins = [
 #14
  (  "woodelf", 0,
     "man_body", "man_calf_l", "m_handL",
-    "male_head", mirkwood_face_keys,
+    "elf_head", mirkwood_face_keys,
     ["elf_hair_1","elf_hair_2","elf_hair_3","elf_hair_4","man_hair_p","elf_hair_5", "elf_hair_6","man_hair_r","man_hair_q","elf_hair_7","elf_hair_8"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
