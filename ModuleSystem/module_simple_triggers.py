@@ -18,12 +18,13 @@ from module_constants import *
 
 simple_triggers = [
 
-# This trigger is deprecated. Use "script_game_event_party_encounter" in module_scripts.py instead  
+# (0)This trigger is deprecated. Use "script_game_event_party_encounter" in module_scripts.py instead  
 (ti_on_party_encounter,[]),
 
-# This trigger is deprecated. Use "script_game_event_simulate_battle" in module_scripts.py instead 
+# (1)This trigger is deprecated. Use "script_game_event_simulate_battle" in module_scripts.py instead 
 (ti_simulate_battle,[]),
 
+# (2)
 (1,[  (gt,"$auto_besiege_town",0),
       (gt,"$g_player_besiege_town", 0),
       (ge, "$g_siege_method", 1),
@@ -33,14 +34,14 @@ simple_triggers = [
 			  (neg|is_currently_night),
 			  (rest_for_hours, 0, 0, 0), #stop resting
     ]),
-
+# (3)
 (0,[(eq,"$g_player_is_captive",1),
       (gt, "$capturer_party", 0),
       (party_is_active, "$capturer_party"),
       (party_relocate_near_party, "p_main_party", "$capturer_party", 0),
     ]),
 
-#Auto-menu
+# (4) Auto-menu
 (0,[(try_begin),
        (ge, "$g_last_rest_center", 0),
        (party_get_battle_opponent, ":besieger_party", "$g_last_rest_center"),
@@ -84,7 +85,7 @@ simple_triggers = [
      ]),
 
 
-#Notification menus
+# (5) Notification menus
 (0,[ (troop_slot_ge, "trp_notification_menu_types", 0, 1),
      (troop_get_slot, ":menu_type", "trp_notification_menu_types", 0),
      (troop_get_slot, "$g_notification_menu_var1", "trp_notification_menu_var1", 0),
@@ -106,12 +107,12 @@ simple_triggers = [
      (try_end),
     ]),
 
-#Music,
+# (6) Music,
 (1,[(map_free),(call_script, "script_music_set_situation_with_culture", mtf_sit_travel),]),
 
-#Pay day, every four days here
+# (7) Pay day, every four days here
 (24.1 * 4,[ (call_script, "script_make_player_pay_upkeep")]),
-   
+# (8)   
 (24,[(call_script, "script_rank_income_to_player"),
 	 (try_for_range, ":center_no", centers_begin, centers_end),               # TLD clear rumors in centers
 	   (try_for_range, ":walker", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
@@ -126,17 +127,17 @@ simple_triggers = [
          (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
      (try_end),
    ]),
-
+# (9)
 (4.15,[(try_begin),
 			(store_random_in_range, ":dieroll", 1,101), (lt,":dieroll",10),
 			(call_script, "script_make_unpaid_troop_go"),
        (try_end),
    ]),
 
-# Reducing luck by 1 in every 180 hours
+# (10) Reducing luck by 1 in every 180 hours
 (180,[(val_sub, "$g_player_luck", 1),(val_max, "$g_player_luck", 0),]),
 
-# Party Morale: Move morale towards target value.
+# (11)Party Morale: Move morale towards target value.
 (24,[(call_script, "script_get_player_party_morale_values"),
       (assign, ":target_morale", reg0),
       (party_get_morale, ":cur_morale", "p_main_party"),
@@ -156,7 +157,7 @@ simple_triggers = [
       (party_set_morale, "p_main_party", ":cur_morale"),
     ]),
   
-# keep track of main party region ("$current_player_region"), 
+# (12) keep track of main party region ("$current_player_region"), 
 # and display log messages keey player informed of what region is he in,   (mtarini)
 (0.5,[(call_script,"script_get_region_of_party", "p_main_party"),
 	(assign, ":new_region", reg1),
@@ -187,7 +188,7 @@ simple_triggers = [
 	(assign, "$current_player_region", ":new_region"),	
   ]),
 
-#Party AI: pruning some of the prisoners in each center (once a week)
+# (13) Party AI: pruning some of the prisoners in each center (once a week)
 (24*7,[(try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
 		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
@@ -204,7 +205,7 @@ simple_triggers = [
        (try_end),
     ]),
 
-#Hiring men with center wealths (once a day)
+# (14) Hiring men with center wealths (once a day)
 (24,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (ge, ":party_no", 1),
@@ -241,7 +242,7 @@ simple_triggers = [
       (try_end),
     ]),
 
-#Converging center prosperity to ideal prosperity once in every 15 days
+# (15) Converging center prosperity to ideal prosperity once in every 15 days
 (24*15,
    [(try_for_range, ":center_no", centers_begin, centers_end),
       (party_is_active, ":center_no"), #TLD
@@ -259,7 +260,7 @@ simple_triggers = [
     (try_end),
     ]),
 
-#Checking if the troops are resting at a half payment point (this has to stay, in TLD!)
+# (16) Checking if the troops are resting at a half payment point (this has to stay, in TLD!)
 (6,[(store_current_day, ":cur_day"),
     (try_begin),
       (neq, ":cur_day", "$g_last_half_payment_check_day"),
@@ -283,7 +284,7 @@ simple_triggers = [
     ]),
 
 
-# Give some xp to hero parties
+# (17) Give some xp to hero parties
 (48,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (store_random_in_range, ":rand", 0, 100),
          (lt, ":rand", 30),
@@ -315,16 +316,16 @@ simple_triggers = [
      (try_end),
     ]),
 
-# MAIN AI STARTING POINT
+# (18) MAIN AI STARTING POINT
 # Decide faction ai by default every 36 hours
 (36,[(assign, "$g_recalculate_ais", 1)]),
 
-# Decide faction ai whenever flag is set
+# (19) Decide faction ai whenever flag is set
 (0,[(eq, "$g_recalculate_ais", 1),(ge,"$tld_war_began",1),
      (assign, "$g_recalculate_ais", 0),
      (call_script, "script_recalculate_ais"),
     ]),
-# Count faction armies
+# (20) Count faction armies
 (24,[(try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":faction_no"),
       (try_end),
@@ -356,7 +357,7 @@ simple_triggers = [
          (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"), #debug
 	  (try_end),
     ]),
-# Decide vassal ai
+# (21) Decide vassal ai
 # 7 hours in vanilla
 ( 3,[(try_begin),
         (ge,"$tld_war_began",1),  # vassal AI can change only if War started, GA
@@ -364,12 +365,12 @@ simple_triggers = [
         (call_script, "script_decide_kingdom_party_ais"), # TLD, script modified to also decide if a lord spawns a host
 	 (try_end),
     ]),
-# Process vassal ai
+# (22) Process vassal ai
 ( 2,[(call_script, "script_process_kingdom_parties_ai")]),
-# Process sieges
+# (23) Process sieges
 (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end)]),
 
-# Changing readiness to join army
+# (24) Changing readiness to join army
 (10,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":modifier", 1),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -420,10 +421,10 @@ simple_triggers = [
       (try_end),
       ]),
   
-# Process alarms
+# (25) Process alarms
 (3,[(call_script, "script_process_alarms")]),
 
-# Process siege ai
+# (26) Process siege ai
 (3,[(store_current_hours, ":cur_hours"),
       (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
@@ -570,7 +571,7 @@ simple_triggers = [
       (try_end),
     ]),
 
-# Reset hero quest status
+# (27) Reset hero quest status
 # Change hero relation
 (12,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
         (troop_set_slot, ":troop_no", slot_troop_does_not_give_quest, 0),
@@ -580,7 +581,7 @@ simple_triggers = [
       (try_end),
      ]),
 
-# Attach Lord Parties to the town they are in
+# (28) Attach Lord Parties to the town they are in
 (0.1,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (troop_get_slot, ":troop_party_no", ":troop_no", slot_troop_leaded_party),
@@ -613,7 +614,7 @@ simple_triggers = [
       (try_end),
     ]),
 
-# Check escape chances of hero prisoners.
+# (29) Check escape chances of hero prisoners.
 (48,[  (call_script, "script_randomly_make_prisoner_heroes_escape_from_party", "p_main_party", 50),
        (try_for_range, ":center_no", centers_begin, centers_end),
 ##         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
@@ -628,7 +629,7 @@ simple_triggers = [
        (try_end),
     ]),
 
-# Respawn hero party after kingdom hero is released from captivity.
+# (30) Respawn hero party after kingdom hero is released from captivity.
 (24,  # changed from 48 to 24 in TLD, GA
    [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
@@ -661,7 +662,7 @@ simple_triggers = [
   
 #(72,[(call_script, "script_update_trade_good_prices")]),
 
-#Troop AI: Merchants thinking
+# (31) Troop AI: Merchants thinking
 (8,[(try_for_parties, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan),
 		#(assign, reg0, ":party_no"),
@@ -763,7 +764,7 @@ simple_triggers = [
 ##       (try_end),
 ##    ]),
 
-# Make heroes running away from someone retreat to friendly centers
+# (32) Make heroes running away from someone retreat to friendly centers
 (0.5,[(try_for_range, ":cur_troop", heroes_begin, heroes_end),
          (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
          (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
@@ -815,7 +816,7 @@ simple_triggers = [
        (try_end),
     ]),
 
-# Centers give alarm if the player is around
+# (33) Centers give alarm if the player is around
 (0.5,[(store_current_hours, ":cur_hours"),
      (store_mod, ":cur_hours_mod", ":cur_hours", 11),
      (store_sub, ":hour_limit", ":cur_hours", 5),
@@ -865,7 +866,7 @@ simple_triggers = [
      (try_end),
     ]),
 
-# consuming orc brew if wounded -- mtarini
+# (34) consuming orc brew if wounded -- mtarini
 (5,[ #(eq, "$orc_brew_activated", 1),
 	(call_script,"script_party_count_wounded", "p_main_party"),(assign, ":n_drinks",reg0),
 	#(display_message, "@DEBUG: {reg0} drinks of orc brew"),
@@ -874,7 +875,7 @@ simple_triggers = [
 	(call_script,"script_consume_orc_brew",":n_drinks"),
 	]),
   
-# Consuming food at every 14 hours
+# (35) Consuming food at every 14 hours
 (14,[(eq, "$g_player_is_captive", 0),
     (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
     (assign, ":num_men", 0),
@@ -922,7 +923,7 @@ simple_triggers = [
     (try_end),
     ]),
 
-# Setting item modifiers for food
+# (36) Setting item modifiers for food
 (24,[(troop_get_inventory_capacity, ":inv_size", "trp_player"),
 	(try_for_range, ":i_slot", 0, ":inv_size"),
 		(troop_get_inventory_slot, ":item_id", "trp_player", ":i_slot"),
@@ -940,7 +941,7 @@ simple_triggers = [
 	(try_end),
 	]),
   
-# Updating player icon in every frame
+# (37) Updating player icon in every frame
 (0,[(troop_get_inventory_slot, ":cur_horse", "trp_player", ek_horse), #horse slot
 	# determine if archer or not
 	
@@ -981,7 +982,7 @@ simple_triggers = [
     (party_set_icon, "p_main_party", ":new_icon"),
     ]),
   
-#Update how good a target player is for bandits
+# (38) Update how good a target player is for bandits
 (2,[(store_troop_gold, ":total_value", "trp_player"),
 	(store_div, ":bandit_attraction", ":total_value", (10000/100)), #10000 gold = excellent_target
 
@@ -999,7 +1000,7 @@ simple_triggers = [
 	(party_set_bandit_attraction, "p_main_party", ":bandit_attraction"),
     ]),
 
-# Setting random walker types
+# (39) Setting random walker types
 (36,[(try_for_range, ":center_no", centers_begin, centers_end),
 		(party_is_active, ":center_no"), #TLD
 		(party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
@@ -1038,7 +1039,7 @@ simple_triggers = [
     # (try_end),
     # ]),
 
-# Taking denars from player while resting in not owned centers
+# (40) Taking denars from player while resting in not owned centers
 (1,[(neg|map_free),
 	(is_currently_night),
 	(ge, "$g_last_rest_center", 0),
@@ -1060,13 +1061,13 @@ simple_triggers = [
 	(try_end),
 	]),
 
-#Spawn some bandits.
+# (41) Spawn some bandits.
 (36,[(call_script, "script_spawn_bandits")]),
 
-# Make parties larger as game progresses.
+# (42) Make parties larger as game progresses.
 (24,[(call_script, "script_update_party_creation_random_limits")]),
   
-# Removing cattle herds if they are way out of range
+# (43) Removing cattle herds if they are way out of range
 (12,[(try_for_parties, ":cur_party"),
 		(party_slot_eq, ":cur_party", slot_party_type, spt_cattle_herd),
 		(store_distance_to_party_from_party, ":dist",":cur_party", "p_main_party"),
@@ -1090,7 +1091,7 @@ simple_triggers = [
     
 # Quest triggers:
 
-# capture troll quest (mtarini)
+# (44) capture troll quest (mtarini)
 # if the quest is active, add a wild troll party every now and then, up to two.
 (10,[(check_quest_active, "qst_capture_troll"),
     (neg|check_quest_concluded, "qst_capture_troll"),
@@ -1101,7 +1102,7 @@ simple_triggers = [
 	(spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
 	]),
 
-# kill troll quest: if troll dies on its own, cancel quest (mtarini)
+# (45) kill troll quest: if troll dies on its own, cancel quest (mtarini)
 (5,[(check_quest_active, "qst_kill_troll"),
     (neg|check_quest_concluded, "qst_kill_troll"),
 	(quest_get_slot, ":quest_target_party", "qst_kill_troll", slot_quest_target_party),
@@ -1113,7 +1114,7 @@ simple_triggers = [
 ]),
 	
  
-# Remaining days text update
+# (46) Remaining days text update
 (24,[(try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
 		(try_begin),
 			(check_quest_active, ":cur_quest"),
@@ -1140,7 +1141,7 @@ simple_triggers = [
 	(try_end),
 	]),
 
-# Report to army quest #MV: make it more rare?, was 6
+# (47) Report to army quest #MV: make it more rare?, was 6
 (12,[(is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
 	(eq, "$g_player_is_captive", 0),
 	(neg|faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default),
@@ -1191,7 +1192,7 @@ simple_triggers = [
 	]),
 
 
-# Army quest initializer
+# (48) Army quest initializer
 (3,[(assign, "$g_random_army_quest", -1),
 	(check_quest_active, "qst_follow_army", 1),
 	(is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
@@ -1329,7 +1330,7 @@ simple_triggers = [
 	(try_end),
     ]),
 
-# Move cattle herd + update eliminate patrols quest
+# (49) Move cattle herd + update eliminate patrols quest
 (0.5,[
     (try_begin),
       (check_quest_active,"qst_move_cattle_herd"),
@@ -1355,7 +1356,7 @@ simple_triggers = [
     (try_end),
             
     ]),
-
+# (50)
 (2,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
 		(troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
 		(ge, ":party_no", 1),
@@ -1427,7 +1428,7 @@ simple_triggers = [
      # (jump_to_menu, "mnu_train_peasants_against_bandits_ready"),
      # ]),
 
-# Scout waypoints
+# (51) Scout waypoints
 (1,[(try_begin),
 		(check_quest_active,"qst_scout_waypoints"),
 		(neg|check_quest_succeeded, "qst_scout_waypoints"),
@@ -1481,7 +1482,7 @@ simple_triggers = [
 	]),
   
 
-#NPC changes begin
+# (52) NPC changes begin
 #Resolve one issue each hour
 (1,[(assign, "$npc_map_talk_context", 0),
 	(try_begin),
@@ -1634,7 +1635,7 @@ simple_triggers = [
     # (try_end),
     # ]),
 
-# Calculate day/night penalties
+# (53) Calculate day/night penalties
 (1,[(this_or_next|is_currently_night),
 	(eq, "$prev_day", 0),
 	(this_or_next|neg|is_currently_night),
@@ -1712,7 +1713,7 @@ simple_triggers = [
     # TLD triggers end
     #####################################
 
-## question box (yes/no) on global map
+## (54) question box (yes/no) on global map
 (ti_question_answered, 
    [(store_trigger_param_1,":answer"),
     (try_begin),
@@ -1749,7 +1750,7 @@ simple_triggers = [
 	(try_end),
 	]),
 
-# Check if a faction is defeated every 12 hours
+# (55) Check if a faction is defeated every 12 hours
 # TLD modified to check for faction strength instead, GA
 (12,[(assign, ":num_active_factions", 0),
      (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
@@ -2053,7 +2054,7 @@ simple_triggers = [
     # (try_end),
 	]),
 
-# TLD Messages about faction strength changes
+# (56) TLD Messages about faction strength changes
 (5,[(try_for_range,":faction",kingdoms_begin,kingdoms_end),
 		(faction_get_slot,":strength",":faction",slot_faction_strength),
 		(faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
@@ -2083,7 +2084,7 @@ simple_triggers = [
 	(try_end),
 	]),
 
-# TLD deal with prisoner trains reached destination (MV: shortened trigger from 8 to 3, so prisoners would update sooner)
+# (57) TLD deal with prisoner trains reached destination (MV: shortened trigger from 8 to 3, so prisoners would update sooner)
 (3,[(try_for_parties, ":party_no"),
 		(party_is_active, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
@@ -2106,7 +2107,7 @@ simple_triggers = [
 	(try_end),
    ]),
 
-# TLD: establish advance camps in active, non-home theaters 
+# (58) TLD: establish advance camps in active, non-home theaters 
 (6,[(store_current_hours, ":cur_hours"),
 	(try_for_range, ":faction", kingdoms_begin, kingdoms_end),
 		(faction_slot_eq, ":faction", slot_faction_state, sfs_active),
@@ -2153,10 +2154,10 @@ simple_triggers = [
 	(try_end), #try_for_range ":faction"
 	]),
 
-# TLD: update player attributes for rings and such
+# (59) TLD: update player attributes for rings and such
 (1,[(call_script, "script_apply_attribute_bonuses")]),
 
-# TLD: stop ruins from smoking as time passes
+# (60) TLD: stop ruins from smoking as time passes
 (6,[(try_for_range, ":ruin", centers_begin, centers_end),
 		(party_is_active, ":ruin"),
 		(neg|party_slot_eq, ":ruin", slot_center_destroyed, 0),
@@ -2172,7 +2173,7 @@ simple_triggers = [
 		(try_end),
 	(try_end)
 	]),             
-
+# (61)
 (1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
 		(eq, "$tld_option_injuries",1),
 		(try_for_range, ":npc",companions_begin,companions_end),
@@ -2186,7 +2187,7 @@ simple_triggers = [
 	(try_end),
 ]),   
 
-#Control Gandalf and Nazgul states 
+# (62) Control Gandalf and Nazgul states 
 (1,[
   #Send Nazgul to look for Baggins - evil player
   (try_begin),

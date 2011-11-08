@@ -1,7 +1,17 @@
-from ID_items import *
-from ID_quests import *
 from ID_factions import *
-#from ID_strings import *
+from ID_items import *
+from ID_map_icons import *
+from ID_meshes import *
+from ID_parties import *
+from ID_party_templates import *
+from ID_quests import *
+from ID_scenes import *
+from ID_scene_props import *
+from ID_sounds import *
+from ID_strings import *
+from ID_tableau_materials import *
+from ID_troops import *
+
 from header_item_modifiers import *
 from header_common import *
 from header_music import *
@@ -933,13 +943,13 @@ hero_escape_after_defeat_chance = 100 #MV: was 80
 
 raid_distance = 4
 
-surnames_begin = "str_surname_1"
-surnames_nickname_begin = "str_surname_21"
-surnames_end = "str_surnames_end"
-names_begin = "str_name_1"
-names_elf_begin = "str_name_elf_1"
-names_dwarf_begin = "str_name_dwarf_1"
-names_orc_begin = "str_name_orc_1"
+surnames_begin = str_surname_1
+surnames_nickname_begin = str_surname_21
+surnames_end = str_surnames_end
+names_begin = str_name_1
+names_elf_begin = str_name_elf_1
+names_dwarf_begin = str_name_dwarf_1
+names_orc_begin = str_name_orc_1
 names_end = names_elf_begin
 names_elf_end = names_dwarf_begin
 names_dwarf_end = names_orc_begin
@@ -950,27 +960,27 @@ names_orc_end = surnames_begin
 #secret_signs_begin = "str_secret_sign_1"
 #secret_signs_end = countersigns_begin
 
-kingdoms_begin = "fac_gondor"
+kingdoms_begin = fac_gondor
 kingdoms_begin_i = fac_gondor
-kingdoms_end = "fac_kingdoms_end"
+kingdoms_end = fac_kingdoms_end
 kingdoms_end_i = fac_kingdoms_end
 
-kingdom_heroes_begin = "trp_gondor_lord"
-kingdom_heroes_end = "trp_heroes_end"
+kingdom_heroes_begin = trp_gondor_lord
+kingdom_heroes_end = trp_heroes_end
 
 heroes_begin = kingdom_heroes_begin
 heroes_end = kingdom_heroes_end
 
-companions_begin = "trp_npc1"
-companions_end = "trp_kingdom_heroes_including_player_begin"
+companions_begin = trp_npc1
+companions_end = trp_kingdom_heroes_including_player_begin
 
-soldiers_begin = "trp_farmer"
-soldiers_end = "trp_town_walker_1"
+soldiers_begin = trp_farmer
+soldiers_end = trp_town_walker_1
 
-tavern_minstrels_begin = "trp_tavern_minstrel_1"
+tavern_minstrels_begin = trp_tavern_minstrel_1
 tavern_minstrels_end   = companions_begin
 
-tavern_travelers_begin = "trp_tavern_traveler_1"
+tavern_travelers_begin = trp_tavern_traveler_1
 tavern_travelers_end   = tavern_minstrels_begin
 
 lord_quests_begin = "qst_deliver_message"
@@ -988,98 +998,98 @@ army_quests_end   = mayor_quests_begin
 all_quests_begin = 0
 all_quests_end = "qst_quests_end"
 
-centers_begin = "p_town_minas_tirith"
-centers_end = "p_centers_end"
+centers_begin = p_town_minas_tirith
+centers_end = p_centers_end
 
 landmark_begin = centers_begin
-landmark_end = "p_camplace_N1" 
+landmark_end = p_camplace_n1 
 
-fords_big_begin = "p_ford_cair_andros1" 
-fords_big_end = "p_ford_cerin_dolen"
-fords_small_begin = "p_ford_cerin_dolen"
-fords_small_end = "p_camplace_N1" 
+fords_big_begin = p_ford_cair_andros1 
+fords_big_end = p_ford_cerin_dolen
+fords_small_begin = p_ford_cerin_dolen
+fords_small_end = p_camplace_n1 
 
 # landmark_
 
-advcamps_begin = "p_advcamp_gondor"
+advcamps_begin = p_advcamp_gondor
 advcamps_end   = centers_end
 
-scenes_begin = "scn_minas_tirith_center"
-scenes_end = "scn_castle_1_exterior"
+scenes_begin = scn_minas_tirith_center
+scenes_end = scn_castle_1_exterior
 
-regular_troops_begin       = "trp_novice_fighter"
-regular_troops_end         = "trp_Ramun_the_slave_trader"
+regular_troops_begin       = trp_novice_fighter
+regular_troops_end         = trp_ramun_the_slave_trader
 
-training_ground_trainers_begin    = "trp_trainer_gondor"
-training_ground_trainers_end      = "trp_ransom_broker_1"
+training_ground_trainers_begin    = trp_trainer_gondor
+training_ground_trainers_end      = trp_ransom_broker_1
 
-spy_walkers_begin = "trp_spy_walker_1"
-spy_walkers_end = "trp_tournament_master"
+spy_walkers_begin = trp_spy_walker_1
+spy_walkers_end = trp_walker_man_gondor_black
 
-weapon_merchants_begin = "trp_smith_mtirith"
-weapon_merchants_end   = "trp_barman_mtirith"
+weapon_merchants_begin = trp_smith_mtirith
+weapon_merchants_end   = trp_barman_mtirith
 
-tavernkeepers_begin    = "trp_barman_mtirith"
-tavernkeepers_end      = "trp_merchant_mtirith"
+tavernkeepers_begin    = trp_barman_mtirith
+tavernkeepers_end      = trp_merchant_mtirith
 
-horse_merchants_begin  = "trp_merchant_mtirith"
-horse_merchants_end    = "trp_elder_mtirith"
+horse_merchants_begin  = trp_merchant_mtirith
+horse_merchants_end    = trp_elder_mtirith
 
-mayors_begin           = "trp_elder_mtirith"
-mayors_end             = "trp_village_1_elder"
+mayors_begin           = trp_elder_mtirith
+mayors_end             = trp_village_1_elder
 
 average_price_factor = 1000
 minimum_price_factor = 100
 maximum_price_factor = 10000
 
-item_horse_begin = "itm_sumpter_horse"
-item_horse_end = "itm_warg_1b"
+item_horse_begin = itm_sumpter_horse
+item_horse_end = itm_warg_1b
 
-item_warg_begin = "itm_warg_1b"
-item_warg_end = "itm_troll_feet_boots"
+item_warg_begin = itm_warg_1b
+item_warg_end = itm_troll_feet_boots
 
-warg_ghost_begin = "trp_warg_ghost_1b"
-warg_ghost_end = "trp_uruk_hai_tracker"
+warg_ghost_begin = trp_warg_ghost_1b
+warg_ghost_end = trp_uruk_hai_tracker
 
-trade_goods_begin = "itm_human_meat" #MV: was itm_smoked_fish
-trade_goods_end = "itm_siege_supply"
-food_begin = "itm_human_meat"
-normal_food_begin = "itm_smoked_fish"
-food_end = "itm_grain"
+trade_goods_begin = itm_human_meat #MV: was itm_smoked_fish
+trade_goods_end = itm_siege_supply
+food_begin = itm_human_meat
+normal_food_begin = itm_smoked_fish
+food_end = itm_grain
 
-scraps_begin = "itm_metal_scraps_bad"
-scraps_end = "itm_oliphant" #"itm_metal_scraps_good"+1
+scraps_begin = itm_metal_scraps_bad
+scraps_end = itm_oliphant #itm_metal_scraps_good+1
 
 # Banner constants
-banner_meshes_begin = "mesh_banner_gondor"
-banner_meshes_end_minus_one = "mesh_banner_f20"
+banner_meshes_begin = mesh_banner_gondor
+banner_meshes_end_minus_one = mesh_banner_f20
 
-arms_meshes_begin = "mesh_arms_a01"
-arms_meshes_end_minus_one = "mesh_arms_f21"
+arms_meshes_begin = mesh_arms_a01
+arms_meshes_end_minus_one = mesh_arms_f21
 
-custom_banner_charges_begin = "mesh_custom_banner_charge_01"
-custom_banner_charges_end = "mesh_tableau_mesh_custom_banner"
+custom_banner_charges_begin = mesh_custom_banner_charge_01
+custom_banner_charges_end = mesh_tableau_mesh_custom_banner
 
-custom_banner_backgrounds_begin = "mesh_custom_banner_bg"
+custom_banner_backgrounds_begin = mesh_custom_banner_bg
 custom_banner_backgrounds_end = custom_banner_charges_begin
 
-custom_banner_flag_types_begin = "mesh_custom_banner_01"
+custom_banner_flag_types_begin = mesh_custom_banner_01
 custom_banner_flag_types_end = custom_banner_backgrounds_begin
 
-custom_banner_flag_map_types_begin = "mesh_custom_map_banner_01"
+custom_banner_flag_map_types_begin = mesh_custom_map_banner_01
 custom_banner_flag_map_types_end = custom_banner_flag_types_begin
 
-custom_banner_flag_scene_props_begin = "spr_custom_banner_01"
-custom_banner_flag_scene_props_end = "spr_banner_a"
+custom_banner_flag_scene_props_begin = spr_custom_banner_01
+custom_banner_flag_scene_props_end = spr_banner_a
 
-custom_banner_map_icons_begin = "icon_custom_banner_01"
-custom_banner_map_icons_end = "icon_banner_01"
+custom_banner_map_icons_begin = icon_custom_banner_01
+custom_banner_map_icons_end = icon_banner_126
 
-banner_map_icons_begin = "icon_mfp_gondor"
-banner_map_icons_end_minus_one = "icon_banner_126"
+banner_map_icons_begin = icon_mfp_gondor
+banner_map_icons_end_minus_one = icon_banner_126
 
-banner_scene_props_begin = "spr_banner_a"
-banner_scene_props_end_minus_one = "spr_banner_f20"
+banner_scene_props_begin = spr_banner_a
+banner_scene_props_end_minus_one = spr_banner_f20
 
 # Some constants for merchant invenotries
 merchant_inventory_space = 30
@@ -1168,8 +1178,8 @@ def concatenate_scripts(block_list):
         result += block
     return result
 
-tld_troops_begin = "trp_player"
-tld_troops_end = "trp_troops_end"
+tld_troops_begin = trp_player
+tld_troops_end = trp_troops_end
 tld_player_level_to_begin_war = 8
 tld_player_level_to_own_chest = 10
 
@@ -1204,26 +1214,26 @@ fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" 
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 
 
-# faction ,initial strength, culture,  faction lord,   faction marshall,   [5 tiers of troops],                                                                                                                                           [reinforcement templates, prisoner trains],                                               main banner,     map party banner,   [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                               faction capital           side              home theater, advance camp
+# faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
 faction_init = [
-("fac_gondor"  ,4500,mtf_culture_1,["trp_gondor_lord"  ,"trp_knight_1_3"     ],["trp_gondor_commoner",      "trp_gondor_militiamen",        "trp_footmen_of_gondor",         "trp_gondor_swordsmen",           "trp_veteran_knight_of_gondor"  ],["pt_gondor_reinf_a",  "pt_gondor_reinf_b",  "pt_gondor_reinf_c",  "pt_gondor_p_train"],  "spr_banner_a", "icon_mfp_gondor",  [-1,                        "trp_gondor_militiamen",         "trp_ranger_of_ithilien",       "trp_gondor_swordsmen",           "trp_swordsmen_of_the_tower_guard"],"p_town_minas_tirith",    faction_side_good,theater_SE,"p_advcamp_gondor"),
-("fac_rohan"   ,4500,mtf_culture_2,["trp_rohan_lord"   ,"trp_rohan_lord"     ],["trp_rohan_youth",          "trp_squire_of_rohan",          "trp_rider_of_rohan",            "trp_veteran_rider_of_rohan",     "trp_eorl_guard_of_rohan"       ],["pt_rohan_reinf_a",   "pt_rohan_reinf_b",   "pt_rohan_reinf_c",   "pt_rohan_p_train"],   "spr_banner_b", "icon_mfp_rohan",   [-1,                        "trp_footman_of_rohan",          "trp_thengel_guard_of_rohan",   "trp_veteran_footman_of_rohan",   "trp_king_s_man_of_rohan"],         "p_town_edoras",          faction_side_good,theater_SW,"p_advcamp_rohan"),
-("fac_isengard",5500,mtf_culture_3,["trp_isengard_lord","trp_knight_1_17"    ],["trp_orc_snaga_of_isengard","trp_uruk_hai_of_isengard",     "trp_large_uruk_hai_of_isengard","trp_fighting_uruk_hai_warrior",  "trp_white_hand_rider"          ],["pt_isengard_reinf_a","pt_isengard_reinf_b","pt_isengard_reinf_c","pt_isengard_p_train"],"spr_banner_s", "icon_mfp_isengard",["trp_orc_of_isengard",     "trp_uruk_hai_of_isengard",      "trp_uruk_hai_tracker",         "trp_fighting_uruk_hai_champion", "trp_fighting_uruk_hai_pikeman"],   "p_town_isengard",        faction_side_hand,theater_SW,"p_advcamp_isengard"),
-("fac_mordor"  ,6900,mtf_culture_3,["trp_mordor_lord"  ,"trp_knight_2_51"    ],["trp_orc_snaga_of_mordor",  "trp_orc_of_mordor",            "trp_large_orc_of_mordor",       "trp_fell_morgul_orc",            "trp_great_warg_rider_of_mordor"],["pt_mordor_reinf_a",  "pt_mordor_reinf_b",  "pt_mordor_reinf_c",  "pt_mordor_p_train"],  "spr_banner_c", "icon_mfp_mordor",  ["trp_orc_snaga_of_mordor", "trp_large_orc_archer_of_mordor","trp_warg_rider_of_gorgoroth",  "trp_black_uruk_of_barad_dur",    "trp_uruk_slayer_of_mordor"],       "p_town_morannon",        faction_side_eye ,theater_SE,"p_advcamp_mordor"),
-("fac_harad"   ,3500,mtf_culture_5,["trp_harad_lord"   ,"trp_harad_lord"     ],["trp_harad_desert_warrior", "trp_harad_infantry",           "trp_harondor_rider",            "trp_black_snake_horse_archer",   "trp_fang_heavy_cavalry"        ],["pt_harad_reinf_a",   "pt_harad_reinf_b",   "pt_harad_reinf_c",   -1],                   "spr_banner_d", "icon_mfp_harad",   ["trp_harad_desert_warrior","trp_fang_heavy_cavalry",        "trp_fang_heavy_cavalry",       "trp_harad_tiger_guard",          "trp_harad_veteran_infantry"],      "p_town_harad_camp",      faction_side_eye ,theater_SE,"p_advcamp_harad"),
-("fac_rhun"    ,3500,mtf_culture_6,["trp_rhun_lord"    ,"trp_rhun_lord"      ],["trp_rhun_tribesman",       "trp_rhun_horse_scout",         "trp_rhun_swift_horseman",       "trp_rhun_veteran_horse_archer",  "trp_dorwinion_noble_of_rhun"   ],["pt_rhun_reinf_a",    "pt_rhun_reinf_b",    "pt_rhun_reinf_c",    -1],                   "spr_banner_f", "icon_mfp_rhun",    ["trp_rhun_tribesman",      "trp_rhun_veteran_horse_archer", "trp_rhun_light_horseman",      "trp_rhun_vet_infantry",          "trp_dorwinion_noble_of_rhun"],     "p_town_north_rhun_camp", faction_side_eye ,theater_N ,"p_advcamp_rhun"),
-("fac_khand"   ,3500,mtf_culture_6,["trp_khand_lord"   ,"trp_khand_lord"     ],["trp_easterling_youth",     "trp_easterling_warrior",       "trp_easterling_axeman",         "trp_variag_pitfighter",          "trp_easterling_horsemaster"    ],["pt_khand_reinf_a",   "pt_khand_reinf_b",   "pt_khand_reinf_c",   -1],                   "spr_banner_e", "icon_mfp_khand",   ["trp_easterling_warrior",  "trp_easterling_axe_master",     "trp_easterling_rider",         "trp_easterling_rider",           "trp_easterling_horseman"],         "p_town_khand_camp",      faction_side_eye ,theater_SE,"p_advcamp_khand"),
-("fac_umbar"   ,3500,mtf_culture_6,["trp_umbar_lord"   ,"trp_umbar_lord"     ],["trp_corsair_youth",        "trp_corsair_warrior",          "trp_corsair_marauder",          "trp_corsair_veteran_marauder",   "trp_corsair_elite_marauder"    ],["pt_umbar_reinf_a",   "pt_umbar_reinf_b",   "pt_umbar_reinf_c",   -1],                   "spr_banner_g", "icon_mfp_umbar",   ["trp_corsair_warrior",     "trp_corsair_night_raider",      "trp_marksman_of_umbar",        "trp_veteran_marksman_of_umbar",  "trp_corsair_elite_marauder"],      "p_town_umbar_camp",      faction_side_eye ,theater_SE,"p_advcamp_umbar"),
-("fac_lorien"  ,4500,mtf_culture_4,["trp_lorien_lord"  ,"trp_lorien_marshall"],["trp_lothlorien_scout",     "trp_lothlorien_veteran_scout", "trp_lothlorien_archer",         "trp_lothlorien_veteran_archer",  "trp_lothlorien_master_archer"  ],["pt_lorien_reinf_a",  "pt_lorien_reinf_b",  "pt_lorien_reinf_c",  "pt_lorien_p_train"],  "spr_banner_h", "icon_mfp_lorien",  [-1,                        "trp_lothlorien_infantry",       "trp_lothlorien_veteran_scout", "trp_lothlorien_veteran_infantry","trp_galadhrim_royal_swordsman"],   "p_town_caras_galadhon",  faction_side_good,theater_C ,"p_advcamp_lorien"),
-("fac_imladris",3500,mtf_culture_4,["trp_imladris_lord","trp_imladris_lord"  ],["trp_rivendell_scout",      "trp_rivendell_veteran_scout",  "trp_rivendell_sentinel",        "trp_rivendell_veteran_sentinel", "trp_knight_of_rivendell"       ],["pt_imladris_reinf_a","pt_imladris_reinf_b","pt_imladris_reinf_c","pt_imladris_p_train"],"spr_banner_i", "icon_mfp_imladris",[-1,                        "trp_rivendell_infantry",        "trp_rivendell_scout",          "trp_rivendell_sentinel",         "trp_knight_of_rivendell"],         "p_town_imladris_camp",   faction_side_good,theater_C ,"p_advcamp_imladris"),
-("fac_woodelf" ,3500,mtf_culture_4,["trp_woodelf_lord" ,"trp_woodelf_lord"   ],["trp_greenwood_scout",      "trp_greenwood_veteran_scout",  "trp_greenwood_archer",          "trp_greenwood_veteran_archer",   "trp_thranduils_royal_swordsman"],["pt_woodelf_reinf_a", "pt_woodelf_reinf_b", "pt_woodelf_reinf_c", "pt_woodelf_p_train"], "spr_banner_j", "icon_mfp_woodelf", [-1,                        "trp_greenwood_sentinel",        "trp_greenwood_scout",          "trp_greenwood_veteran_spearman", "trp_greenwood_royal_spearman"],    "p_town_thranduils_halls",faction_side_good,theater_N ,"p_advcamp_woodelf"),
-("fac_moria"   ,2500,mtf_culture_3,["trp_moria_lord"   ,"trp_moria_lord"     ],["trp_snaga_of_moria",       "trp_goblin_of_moria",          "trp_large_goblin_of_moria",     "trp_fell_goblin_of_moria",       "trp_bolg_clan_rider"           ],["pt_moria_reinf_a",   "pt_moria_reinf_b",   "pt_moria_reinf_c",   -1],                   "spr_banner_k", "icon_mfp_moria",   ["trp_snaga_of_moria",      "trp_goblin_of_moria",           "trp_large_goblin_of_moria",    "trp_fell_goblin_of_moria",       "trp_fell_goblin_of_moria"],        "p_town_moria",           faction_side_hand,theater_C ,"p_advcamp_moria"),
-("fac_guldur"  ,4500,mtf_culture_3,["trp_guldur_lord"  ,"trp_guldur_lord"    ],["trp_orc_snaga_of_guldur",  "trp_orc_of_guldur",            "trp_large_orc_of_mordor",       "trp_fell_orc_of_mordor",         "trp_great_warg_rider_of_mordor"],["pt_guldur_reinf_a",  "pt_guldur_reinf_b",  "pt_guldur_reinf_c",  -1],                   "spr_banner_l", "icon_mfp_guldur",  ["trp_orc_snaga_of_guldur", "trp_orc_of_guldur",             "trp_orc_of_guldur",            "trp_orc_tracker_of_mordor",      "trp_fell_orc_tracker_of_mordor"],  "p_town_dol_guldur",      faction_side_eye ,theater_C ,"p_advcamp_guldur"),
-("fac_gundabad",3500,mtf_culture_3,["trp_gundabad_lord","trp_gundabad_lord"  ],["trp_goblin_gundabad",      "trp_orc_gundabad",             "trp_orc_fighter_gundabad",      "trp_fell_goblin_archer_gundabad","trp_goblin_north_clan_rider"   ],["pt_gundabad_reinf_a","pt_gundabad_reinf_b","pt_gundabad_reinf_c",-1],                   "spr_banner_n", "icon_mfp_gundabad",["trp_goblin_gundabad",     "trp_orc_gundabad",              "trp_fell_orc_warrior_gundabad","trp_goblin_bowmen_gundabad",     "trp_goblin_rider_gundabad"],       "p_town_gundabad",        faction_side_hand,theater_N ,"p_advcamp_gundabad"),
-("fac_dale"    ,3500,mtf_culture_2,["trp_dale_lord"    ,"trp_dale_lord"      ],["trp_dale_militia",         "trp_laketown_scout",           "trp_laketown_bowmen",           "trp_laketown_archer",            "trp_girions_guard_of_dale"     ],["pt_dale_reinf_a",    "pt_dale_reinf_b",    "pt_dale_reinf_c",    "pt_dale_p_train"],    "spr_banner_o", "icon_mfp_dale",    [-1,                        "trp_dale_man_at_arms",          "trp_laketown_archer",          "trp_dale_warrior",               "trp_dale_marchwarden"],            "p_town_dale",            faction_side_good,theater_N ,"p_advcamp_dale"),
-("fac_dwarf"   ,3500,mtf_culture_2,["trp_dwarf_lord"   ,"trp_dwarf_lord"     ],["trp_dwarven_apprentice",   "trp_dwarven_warrior",          "trp_dwarven_hardened_warrior",  "trp_dwarven_axeman",             "trp_grors_guard"               ],["pt_dwarf_reinf_a",   "pt_dwarf_reinf_b",   "pt_dwarf_reinf_c",   "pt_dwarf_p_train"],   "spr_banner_p", "icon_mfp_dwarf",   [-1,                        "trp_dwarven_warrior",           "trp_dwarven_spearman",         "trp_dwarven_lookout",            "trp_dwarven_bowman"],              "p_town_erebor",          faction_side_good,theater_N ,"p_advcamp_dwarf"),
-("fac_dunland" ,3500,mtf_culture_6,["trp_dunland_lord" ,"trp_dunland_lord"   ],["trp_dunnish_wildman",      "trp_dunnish_warrior",          "trp_dunnish_vet_warrior",       "trp_dunnish_wolf_warrior",       "trp_dunnish_wolf_guard"        ],["pt_dunland_reinf_a", "pt_dunland_reinf_b", "pt_dunland_reinf_c", -1],                   "spr_banner_r", "icon_mfp_dunland", ["trp_dunnish_warrior",     "trp_dunnish_pikeman",           "trp_dunnish_pikeman",          "trp_dunnish_pikeman",            "trp_dunnish_pikeman"],             "p_town_dunland_camp",    faction_side_hand,theater_SW,"p_advcamp_dunland"),
-("fac_beorn"   ,2500,mtf_culture_2,["trp_beorn_lord"   ,"trp_beorn_lord"     ],["trp_beorning_vale_man",    "trp_beorning_warrior",         "trp_beorning_carrock_lookout",  "trp_beorning_carrock_fighter",   "trp_beorning_carrock_berserker"],["pt_beorn_reinf_a",   "pt_beorn_reinf_b",   "pt_beorn_reinf_c",   -1],                   "spr_banner_m", "icon_mfp_northmen",[-1,                        "trp_beorning_warrior",          "trp_beorning_carrock_fighter", "trp_woodmen_scout",              "trp_woodmen_master_axemen"],       "p_town_beorn_house",     faction_side_good,theater_N ,"p_advcamp_beorn"),
+(fac_gondor  ,4500,mtf_culture_1,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_gondor_commoner,     trp_gondor_militiamen,       trp_footmen_of_gondor,       trp_gondor_swordsmen,          trp_veteran_knight_of_gondor  ],[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_gondor_militiamen,         trp_ranger_of_ithilien,       trp_gondor_swordsmen,           trp_swordsmen_of_the_tower_guard],p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),
+(fac_rohan   ,4500,mtf_culture_2,[trp_rohan_lord   ,trp_rohan_lord    ],[trp_rohan_youth,         trp_squire_of_rohan,         trp_rider_of_rohan,          trp_veteran_rider_of_rohan,    trp_eorl_guard_of_rohan       ],[pt_rohan_reinf_a,   pt_rohan_reinf_b,   pt_rohan_reinf_c,   pt_rohan_p_train],   spr_banner_b, icon_mfp_rohan,   [-1,                      trp_footman_of_rohan,          trp_thengel_guard_of_rohan,   trp_veteran_footman_of_rohan,   trp_king_s_man_of_rohan],         p_town_edoras,          faction_side_good,theater_SW,p_advcamp_rohan),
+(fac_isengard,5500,mtf_culture_3,[trp_isengard_lord,trp_knight_1_17   ],[trp_orc_snaga_of_isengard,trp_uruk_hai_of_isengard, trp_large_uruk_hai_of_isengard,trp_fighting_uruk_hai_warrior, trp_white_hand_rider          ],[pt_isengard_reinf_a,pt_isengard_reinf_b,pt_isengard_reinf_c,pt_isengard_p_train],spr_banner_s, icon_mfp_isengard,[trp_orc_of_isengard,     trp_uruk_hai_of_isengard,      trp_uruk_hai_tracker,         trp_fighting_uruk_hai_champion, trp_fighting_uruk_hai_pikeman],   p_town_isengard,        faction_side_hand,theater_SW,p_advcamp_isengard),
+(fac_mordor  ,6900,mtf_culture_3,[trp_mordor_lord  ,trp_knight_2_51   ],[trp_orc_snaga_of_mordor, trp_orc_of_mordor,           trp_large_orc_of_mordor,     trp_fell_morgul_orc,           trp_great_warg_rider_of_mordor],[pt_mordor_reinf_a,  pt_mordor_reinf_b,  pt_mordor_reinf_c,  pt_mordor_p_train],  spr_banner_c, icon_mfp_mordor,  [trp_orc_snaga_of_mordor, trp_large_orc_archer_of_mordor,trp_warg_rider_of_gorgoroth,  trp_black_uruk_of_barad_dur,    trp_uruk_slayer_of_mordor],       p_town_morannon,        faction_side_eye ,theater_SE,p_advcamp_mordor),
+(fac_harad   ,3500,mtf_culture_5,[trp_harad_lord   ,trp_harad_lord    ],[trp_harad_desert_warrior,trp_harad_infantry,          trp_harondor_rider,          trp_black_snake_horse_archer,  trp_fang_heavy_cavalry        ],[pt_harad_reinf_a,   pt_harad_reinf_b,   pt_harad_reinf_c,   -1],                 spr_banner_d, icon_mfp_harad,   [trp_harad_desert_warrior,trp_fang_heavy_cavalry,        trp_fang_heavy_cavalry,       trp_harad_tiger_guard,          trp_harad_veteran_infantry],      p_town_harad_camp,      faction_side_eye ,theater_SE,p_advcamp_harad),
+(fac_rhun    ,3500,mtf_culture_6,[trp_rhun_lord    ,trp_rhun_lord     ],[trp_rhun_tribesman,      trp_rhun_horse_scout,        trp_rhun_swift_horseman,     trp_rhun_veteran_horse_archer, trp_dorwinion_noble_of_rhun   ],[pt_rhun_reinf_a,    pt_rhun_reinf_b,    pt_rhun_reinf_c,    -1],                 spr_banner_f, icon_mfp_rhun,    [trp_rhun_tribesman,      trp_rhun_veteran_horse_archer, trp_rhun_light_horseman,      trp_rhun_vet_infantry,          trp_dorwinion_noble_of_rhun],     p_town_north_rhun_camp, faction_side_eye ,theater_N ,p_advcamp_rhun),
+(fac_khand   ,3500,mtf_culture_6,[trp_khand_lord   ,trp_khand_lord    ],[trp_easterling_youth,    trp_easterling_warrior,      trp_easterling_axeman,       trp_variag_pitfighter,         trp_easterling_horsemaster    ],[pt_khand_reinf_a,   pt_khand_reinf_b,   pt_khand_reinf_c,   -1],                 spr_banner_e, icon_mfp_khand,   [trp_easterling_warrior,  trp_easterling_axe_master,     trp_easterling_rider,         trp_easterling_rider,           trp_easterling_horseman],         p_town_khand_camp,      faction_side_eye ,theater_SE,p_advcamp_khand),
+(fac_umbar   ,3500,mtf_culture_6,[trp_umbar_lord   ,trp_umbar_lord    ],[trp_corsair_youth,       trp_corsair_warrior,         trp_corsair_marauder,        trp_corsair_veteran_marauder,  trp_corsair_elite_marauder    ],[pt_umbar_reinf_a,   pt_umbar_reinf_b,   pt_umbar_reinf_c,   -1],                 spr_banner_g, icon_mfp_umbar,   [trp_corsair_warrior,     trp_corsair_night_raider,      trp_marksman_of_umbar,        trp_veteran_marksman_of_umbar,  trp_corsair_elite_marauder],      p_town_umbar_camp,      faction_side_eye ,theater_SE,p_advcamp_umbar),
+(fac_lorien  ,4500,mtf_culture_4,[trp_lorien_lord ,trp_lorien_marshall],[trp_lothlorien_scout,    trp_lothlorien_veteran_scout,trp_lothlorien_archer,       trp_lothlorien_veteran_archer, trp_lothlorien_master_archer  ],[pt_lorien_reinf_a,  pt_lorien_reinf_b,  pt_lorien_reinf_c,  pt_lorien_p_train],  spr_banner_h, icon_mfp_lorien,  [-1,                      trp_lothlorien_infantry,       trp_lothlorien_veteran_scout, trp_lothlorien_veteran_infantry,trp_galadhrim_royal_swordsman],   p_town_caras_galadhon,  faction_side_good,theater_C ,p_advcamp_lorien),
+(fac_imladris,3500,mtf_culture_4,[trp_imladris_lord,trp_imladris_lord ],[trp_rivendell_scout,     trp_rivendell_veteran_scout, trp_rivendell_sentinel,      trp_rivendell_veteran_sentinel,trp_knight_of_rivendell       ],[pt_imladris_reinf_a,pt_imladris_reinf_b,pt_imladris_reinf_c,pt_imladris_p_train],spr_banner_i, icon_mfp_imladris,[-1,                      trp_rivendell_infantry,        trp_rivendell_scout,          trp_rivendell_sentinel,         trp_knight_of_rivendell],         p_town_imladris_camp,   faction_side_good,theater_C ,p_advcamp_imladris),
+(fac_woodelf ,3500,mtf_culture_4,[trp_woodelf_lord ,trp_woodelf_lord  ],[trp_greenwood_scout,     trp_greenwood_veteran_scout, trp_greenwood_archer,        trp_greenwood_veteran_archer,  trp_thranduils_royal_swordsman],[pt_woodelf_reinf_a, pt_woodelf_reinf_b, pt_woodelf_reinf_c, pt_woodelf_p_train], spr_banner_j, icon_mfp_woodelf, [-1,                      trp_greenwood_sentinel,        trp_greenwood_scout,          trp_greenwood_veteran_spearman, trp_greenwood_royal_spearman],    p_town_thranduils_halls,faction_side_good,theater_N ,p_advcamp_woodelf),
+(fac_moria   ,2500,mtf_culture_3,[trp_moria_lord   ,trp_moria_lord    ],[trp_snaga_of_moria,      trp_goblin_of_moria,         trp_large_goblin_of_moria,   trp_fell_goblin_of_moria,      trp_bolg_clan_rider           ],[pt_moria_reinf_a,   pt_moria_reinf_b,   pt_moria_reinf_c,   -1],                 spr_banner_k, icon_mfp_moria,   [trp_snaga_of_moria,      trp_goblin_of_moria,           trp_large_goblin_of_moria,    trp_fell_goblin_of_moria,       trp_fell_goblin_of_moria],        p_town_moria,           faction_side_hand,theater_C ,p_advcamp_moria),
+(fac_guldur  ,4500,mtf_culture_3,[trp_guldur_lord  ,trp_guldur_lord   ],[trp_orc_snaga_of_guldur, trp_orc_of_guldur,           trp_large_orc_of_mordor,     trp_fell_orc_of_mordor,        trp_great_warg_rider_of_mordor],[pt_guldur_reinf_a,  pt_guldur_reinf_b,  pt_guldur_reinf_c,  -1],                 spr_banner_l, icon_mfp_guldur,  [trp_orc_snaga_of_guldur, trp_orc_of_guldur,             trp_orc_of_guldur,            trp_orc_tracker_of_mordor,      trp_fell_orc_tracker_of_mordor],  p_town_dol_guldur,      faction_side_eye ,theater_C ,p_advcamp_guldur),
+(fac_gundabad,3500,mtf_culture_3,[trp_gundabad_lord,trp_gundabad_lord ],[trp_goblin_gundabad,     trp_orc_gundabad,            trp_orc_fighter_gundabad,    trp_fell_goblin_archer_gundabad,trp_goblin_north_clan_rider  ],[pt_gundabad_reinf_a,pt_gundabad_reinf_b,pt_gundabad_reinf_c,-1],                 spr_banner_n, icon_mfp_gundabad,[trp_goblin_gundabad,     trp_orc_gundabad,              trp_fell_orc_warrior_gundabad,trp_goblin_bowmen_gundabad,     trp_goblin_rider_gundabad],       p_town_gundabad,        faction_side_hand,theater_N ,p_advcamp_gundabad),
+(fac_dale    ,3500,mtf_culture_2,[trp_dale_lord    ,trp_dale_lord     ],[trp_dale_militia,        trp_laketown_scout,          trp_laketown_bowmen,         trp_laketown_archer,           trp_girions_guard_of_dale     ],[pt_dale_reinf_a,    pt_dale_reinf_b,    pt_dale_reinf_c,    pt_dale_p_train],    spr_banner_o, icon_mfp_dale,    [-1,                      trp_dale_man_at_arms,          trp_laketown_archer,          trp_dale_warrior,               trp_dale_marchwarden],            p_town_dale,            faction_side_good,theater_N ,p_advcamp_dale),
+(fac_dwarf   ,3500,mtf_culture_2,[trp_dwarf_lord   ,trp_dwarf_lord    ],[trp_dwarven_apprentice,  trp_dwarven_warrior,         trp_dwarven_hardened_warrior,trp_dwarven_axeman,            trp_grors_guard               ],[pt_dwarf_reinf_a,   pt_dwarf_reinf_b,   pt_dwarf_reinf_c,   pt_dwarf_p_train],   spr_banner_p, icon_mfp_dwarf,   [-1,                      trp_dwarven_warrior,           trp_dwarven_spearman,         trp_dwarven_lookout,            trp_dwarven_bowman],              p_town_erebor,          faction_side_good,theater_N ,p_advcamp_dwarf),
+(fac_dunland ,3500,mtf_culture_6,[trp_dunland_lord ,trp_dunland_lord  ],[trp_dunnish_wildman,     trp_dunnish_warrior,         trp_dunnish_vet_warrior,     trp_dunnish_wolf_warrior,      trp_dunnish_wolf_guard        ],[pt_dunland_reinf_a, pt_dunland_reinf_b, pt_dunland_reinf_c, -1],                 spr_banner_r, icon_mfp_dunland, [trp_dunnish_warrior,     trp_dunnish_pikeman,           trp_dunnish_pikeman,          trp_dunnish_pikeman,            trp_dunnish_pikeman],             p_town_dunland_camp,    faction_side_hand,theater_SW,p_advcamp_dunland),
+(fac_beorn   ,2500,mtf_culture_2,[trp_beorn_lord   ,trp_beorn_lord    ],[trp_beorning_vale_man,   trp_beorning_warrior,        trp_beorning_carrock_lookout,trp_beorning_carrock_fighter,  trp_beorning_carrock_berserker],[pt_beorn_reinf_a,   pt_beorn_reinf_b,   pt_beorn_reinf_c,   -1],                 spr_banner_m, icon_mfp_northmen,[-1,                      trp_beorning_warrior,          trp_beorning_carrock_fighter, trp_woodmen_scout,              trp_woodmen_master_axemen],       p_town_beorn_house,     faction_side_good,theater_N ,p_advcamp_beorn),
 ]
 
 # feudal troops guarding some Gondor centers
@@ -1235,13 +1245,13 @@ faction_init = [
 # 5)  [ reinforcements for garrisons], 
 # 6) [leaders...]
 subfaction_data= [      
- (subfac_pelargir     ,"p_town_pelargir"     ,"Pelargir"  ,["trp_pelargir_watchman"       ,"trp_pelargir_infantry"           ,"trp_pelargir_vet_infantry"       ],["pt_pelargir_reinf_a"  ,"pt_pelargir_reinf_b"  ,"pt_pelargir_reinf_c"  ],["trp_pelargir_leader", "trp_pelargir_marine_leader",]),
- (subfac_dol_amroth   ,"p_town_dol_amroth"   ,"Amroth"    ,["trp_squire_of_dol_amroth"    ,"trp_veteran_squire_of_dol_amroth","trp_swan_knight_of_dol_amroth"   ],["pt_dol_amroth_reinf_a","pt_dol_amroth_reinf_b","pt_dol_amroth_reinf_c"],["trp_dol_amroth_leader"]),
- (subfac_ethring      ,"p_town_calembel"     ,"Lamedon"   ,["trp_clansman_of_lamedon"     ,"trp_footman_of_lamedon"          ,"trp_veteran_of_lamedon"          ],["pt_lamedon_reinf_a"   ,"pt_lamedon_reinf_b"   ,"pt_lamedon_reinf_c"   ],["trp_lamedon_leader"]),
- (subfac_lossarnach   ,"p_town_lossarnach"   ,"Lossarnach",["trp_woodsman_of_lossarnach"  ,"trp_axeman_of_lossarnach"        ,"trp_axemaster_of_lossarnach"     ],["pt_lossarnach_reinf_a","pt_lossarnach_reinf_b","pt_lossarnach_reinf_c"],["trp_lossarnach_leader"]),
- (subfac_pinnath_gelin,"p_town_pinnath_gelin","Pinnath"   ,["trp_pinnath_gelin_plainsman" ,"trp_pinnath_gelin_spearman"      ,"trp_warrior_of_pinnath_gelin"    ],["pt_pinnath_reinf_a"   ,"pt_pinnath_reinf_b"   ,"pt_pinnath_reinf_c"   ],["trp_pinnath_leader"]),
- (subfac_blackroot    ,"p_town_erech"        ,"Blackroot" ,["trp_blackroot_vale_archer"   ,"trp_footman_of_blackroot_vale"   ,"trp_master_blackroot_vale_archer"],["pt_blackroot_reinf_a" ,"pt_blackroot_reinf_b" ,"pt_blackroot_reinf_c" ],["trp_blackroot_leader"]),
- (subfac_rangers      ,"p_town_henneth_annun","Ithilien"  ,["trp_ranger_of_ithilien"      ,"trp_veteran_ranger_of_ithilien"  ,"trp_master_ranger_of_ithilien"   ],["pt_ithilien_reinf_a"  ,"pt_ithilien_reinf_b"  ,"pt_ithilien_reinf_c"  ],["trp_ithilien_leader"]),
+ (subfac_pelargir     ,p_town_pelargir     ,"Pelargir"  ,[trp_pelargir_watchman       ,trp_pelargir_infantry           ,trp_pelargir_vet_infantry       ],[pt_pelargir_reinf_a  ,pt_pelargir_reinf_b  ,pt_pelargir_reinf_c  ],[trp_pelargir_leader, trp_pelargir_marine_leader,]),
+ (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_squire_of_dol_amroth    ,trp_veteran_squire_of_dol_amroth,trp_swan_knight_of_dol_amroth   ],[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_dol_amroth_leader]),
+ (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_clansman_of_lamedon     ,trp_footman_of_lamedon          ,trp_veteran_of_lamedon          ],[pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_lamedon_leader]),
+ (subfac_lossarnach   ,p_town_lossarnach   ,"Lossarnach",[trp_woodsman_of_lossarnach  ,trp_axeman_of_lossarnach        ,trp_axemaster_of_lossarnach     ],[pt_lossarnach_reinf_a,pt_lossarnach_reinf_b,pt_lossarnach_reinf_c],[trp_lossarnach_leader]),
+ (subfac_pinnath_gelin,p_town_pinnath_gelin,"Pinnath"   ,[trp_pinnath_gelin_plainsman ,trp_pinnath_gelin_spearman      ,trp_warrior_of_pinnath_gelin    ],[pt_pinnath_reinf_a   ,pt_pinnath_reinf_b   ,pt_pinnath_reinf_c   ],[trp_pinnath_leader]),
+ (subfac_blackroot    ,p_town_erech        ,"Blackroot" ,[trp_blackroot_vale_archer   ,trp_footman_of_blackroot_vale   ,trp_master_blackroot_vale_archer],[pt_blackroot_reinf_a ,pt_blackroot_reinf_b ,pt_blackroot_reinf_c ],[trp_blackroot_leader]),
+ (subfac_rangers      ,p_town_henneth_annun,"Ithilien"  ,[trp_ranger_of_ithilien      ,trp_veteran_ranger_of_ithilien  ,trp_master_ranger_of_ithilien   ],[pt_ithilien_reinf_a  ,pt_ithilien_reinf_b  ,pt_ithilien_reinf_c  ],[trp_ithilien_leader]),
 ]
 
 
@@ -1253,96 +1263,96 @@ subfaction_data= [
 ws_party_spawns_list = [
 #   ("p_town_name"            ,"pt_faction_scouts",       "pt_faction_raiders",    "pt_faction_patrol",   "pt_faction_caravan"),
 #Gondor    
-("p_town_minas_tirith"    ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_gondor_company",   "pt_gondor_caravan"),
-("p_town_pinnath_gelin","pt_pinnath_gelin_auxila",-1,                  "pt_pinnath_patrol",   "pt_gondor_caravan"),
-("p_town_pelargir"        ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_pelargir_patrol",  "pt_gondor_caravan"),
-("p_town_linhir"          ,"pt_lamedon_auxila",   "pt_gondor_raiders", "pt_lamedon_patrol",   "pt_gondor_caravan"),
-("p_town_calembel"        ,"pt_lamedon_auxila",   "pt_gondor_raiders", "pt_lamedon_patrol",   "pt_gondor_caravan"),
-("p_town_dol_amroth"      ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_amroth_patrol",    "pt_gondor_caravan"),
-("p_town_edhellond"       ,"pt_gondor_scouts",    -1,				   "pt_gondor_patrol",    "pt_gondor_caravan"),
-("p_town_lossarnach"      ,"pt_lossarnach_auxila","pt_gondor_raiders", "pt_lossarnach_patrol","pt_gondor_caravan"),
-("p_town_tarnost"         ,"pt_gondor_scouts",    "pt_gondor_raiders", "pt_gondor_patrol",    "pt_gondor_caravan"),
-("p_town_erech"           ,"pt_blackroot_auxila", "pt_gondor_raiders", "pt_brv_patrol",       "pt_gondor_caravan"),
-("p_town_west_osgiliath"  ,"pt_ranger_scouts",    "pt_gondor_raiders", "pt_gondor_patrol",    -1),
-("p_town_henneth_annun"   ,"pt_ranger_scouts",    "pt_ranger_raiders", "pt_ranger_patrol",    -1),
+(p_town_minas_tirith    ,pt_gondor_scouts,    pt_gondor_raiders, pt_gondor_company,   pt_gondor_caravan),
+(p_town_pinnath_gelin,pt_pinnath_gelin_auxila,-1,                  pt_pinnath_patrol,   pt_gondor_caravan),
+(p_town_pelargir        ,pt_gondor_scouts,    pt_gondor_raiders, pt_pelargir_patrol,  pt_gondor_caravan),
+(p_town_linhir          ,pt_lamedon_auxila,   pt_gondor_raiders, pt_lamedon_patrol,   pt_gondor_caravan),
+(p_town_calembel        ,pt_lamedon_auxila,   pt_gondor_raiders, pt_lamedon_patrol,   pt_gondor_caravan),
+(p_town_dol_amroth      ,pt_gondor_scouts,    pt_gondor_raiders, pt_amroth_patrol,    pt_gondor_caravan),
+(p_town_edhellond       ,pt_gondor_scouts,    -1,				   pt_gondor_patrol,    pt_gondor_caravan),
+(p_town_lossarnach      ,pt_lossarnach_auxila,pt_gondor_raiders, pt_lossarnach_patrol,pt_gondor_caravan),
+(p_town_tarnost         ,pt_gondor_scouts,    pt_gondor_raiders, pt_gondor_patrol,    pt_gondor_caravan),
+(p_town_erech           ,pt_blackroot_auxila, pt_gondor_raiders, pt_brv_patrol,       pt_gondor_caravan),
+(p_town_west_osgiliath  ,pt_ranger_scouts,    pt_gondor_raiders, pt_gondor_patrol,    -1),
+(p_town_henneth_annun   ,pt_ranger_scouts,    pt_ranger_raiders, pt_ranger_patrol,    -1),
 #Rohan    
-("p_town_edoras"          ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_aldburg"         ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_hornburg"        ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_east_emnet"      ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_westfold"        ,"pt_rohan_scouts",     -1,                  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_west_emnet"      ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_town_eastfold"        ,"pt_rohan_scouts",     "pt_rohan_raiders",  "pt_rohan_patrol",     "pt_rohan_caravan"),
+(p_town_edoras          ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_aldburg         ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_hornburg        ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_east_emnet      ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_westfold        ,pt_rohan_scouts,     -1,                  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_west_emnet      ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
+(p_town_eastfold        ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
 #Mordor   
-("p_town_minas_morgul"    ,"pt_morgul_scouts",    "pt_morgul_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
-("p_town_morannon"        ,"pt_mordor_scouts",    "pt_mordor_raiders", "pt_mordor_war_party", "pt_mordor_caravan"),
-("p_town_east_osgiliath"  ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
-("p_town_orc_sentry_camp" ,"pt_mordor_scouts",    "pt_mordor_raiders", -1,                    -1),
+(p_town_minas_morgul    ,pt_morgul_scouts,    pt_morgul_raiders, pt_mordor_war_party, pt_mordor_caravan),
+(p_town_morannon        ,pt_mordor_scouts,    pt_mordor_raiders, pt_mordor_war_party, pt_mordor_caravan),
+(p_town_east_osgiliath  ,pt_mordor_scouts,    pt_mordor_raiders, -1,                    -1),
+(p_town_orc_sentry_camp ,pt_mordor_scouts,    pt_mordor_raiders, -1,                    -1),
 #Isengard
-("p_town_isengard"        ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-("p_town_urukhai_outpost" ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-("p_town_urukhai_h_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                     "pt_isengard_caravan"),
-("p_town_urukhai_r_camp"  ,"pt_isengard_scouts_warg", "pt_isengard_raiders",   -1,                     "pt_isengard_caravan"),
+(p_town_isengard        ,pt_isengard_scouts,      pt_isengard_raiders,   pt_isengard_war_party,pt_isengard_caravan),
+(p_town_urukhai_outpost ,pt_isengard_scouts,      pt_isengard_raiders,   pt_isengard_war_party,pt_isengard_caravan),
+(p_town_urukhai_h_camp  ,pt_isengard_scouts_warg, pt_isengard_raiders,   -1,                     pt_isengard_caravan),
+(p_town_urukhai_r_camp  ,pt_isengard_scouts_warg, pt_isengard_raiders,   -1,                     pt_isengard_caravan),
 #Others good
-("p_town_caras_galadhon"  ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
-("p_town_cerin_dolen"     ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    "pt_lorien_caravan"),
-("p_town_cerin_amroth"    ,"pt_lorien_scouts",        -1,                      "pt_lorien_patrol",    -1),
-("p_town_imladris_camp"   ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
+(p_town_caras_galadhon  ,pt_lorien_scouts,        pt_lorien_raiders,     pt_lorien_patrol,    pt_lorien_caravan),
+(p_town_cerin_dolen     ,pt_lorien_scouts,        -1,                      pt_lorien_patrol,    pt_lorien_caravan),
+(p_town_cerin_amroth    ,pt_lorien_scouts,        -1,                      pt_lorien_patrol,    -1),
+(p_town_imladris_camp   ,pt_imladris_scouts,      pt_imladris_raiders,   pt_imladris_patrol,  pt_imladris_caravan),
 
-("p_town_thranduils_halls","pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-("p_town_woodelf_camp"    ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-("p_town_woodelf_west_camp","pt_woodelf_scouts",      "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
+(p_town_thranduils_halls,pt_woodelf_scouts,       pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
+(p_town_woodelf_camp    ,pt_woodelf_scouts,       pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
+(p_town_woodelf_west_camp,pt_woodelf_scouts,      pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
 
-("p_town_woodsmen_village","pt_woodmen_scouts",       -1,                      -1,                    -1),
-("p_town_beorning_village","pt_beorn_scouts",         -1,                      -1,                    -1),
-("p_town_beorn_house"     ,"pt_beorn_scouts",         -1,                      -1,                    -1),
+(p_town_woodsmen_village,pt_woodmen_scouts,       -1,                      -1,                    -1),
+(p_town_beorning_village,pt_beorn_scouts,         -1,                      -1,                    -1),
+(p_town_beorn_house     ,pt_beorn_scouts,         -1,                      -1,                    -1),
 
-("p_town_dale"            ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_dale_patrol",      "pt_dale_caravan"),
-("p_town_esgaroth"        ,"pt_dale_scouts",          "pt_dale_raiders",    "pt_esgaroth_patrol",  "pt_dale_caravan"),
-("p_town_erebor"          ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
-("p_town_ironhill_camp"   ,"pt_dwarf_scouts",         -1,				    "pt_dwarf_patrol",     "pt_dwarf_caravan"),
+(p_town_dale            ,pt_dale_scouts,          pt_dale_raiders,    pt_dale_patrol,      pt_dale_caravan),
+(p_town_esgaroth        ,pt_dale_scouts,          pt_dale_raiders,    pt_esgaroth_patrol,  pt_dale_caravan),
+(p_town_erebor          ,pt_dwarf_scouts,         -1,				    pt_dwarf_patrol,     pt_dwarf_caravan),
+(p_town_ironhill_camp   ,pt_dwarf_scouts,         -1,				    pt_dwarf_patrol,     pt_dwarf_caravan),
 #Others evil
-("p_town_moria"           ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
-("p_town_troll_cave"      ,"pt_moria_scouts",         "pt_moria_raiders",   "pt_moria_war_party",  -1),
+(p_town_moria           ,pt_moria_scouts,         pt_moria_raiders,   pt_moria_war_party,  -1),
+(p_town_troll_cave      ,pt_moria_scouts,         pt_moria_raiders,   pt_moria_war_party,  -1),
 
-("p_town_dol_guldur"      ,"pt_guldur_scouts",        "pt_guldur_raiders",  "pt_mordor_war_party", -1),
-("p_town_dol_guldur_north_outpost","pt_guldur_scouts","pt_guldur_raiders",  "pt_mordor_war_party", -1),
+(p_town_dol_guldur      ,pt_guldur_scouts,        pt_guldur_raiders,  pt_mordor_war_party, -1),
+(p_town_dol_guldur_north_outpost,pt_guldur_scouts,pt_guldur_raiders,  pt_mordor_war_party, -1),
 
-("p_town_dunland_camp"    ,"pt_dunland_scouts",       "pt_dunland_raiders", "pt_dunland_war_party",-1),
-("p_town_harad_camp"      ,"pt_harad_scouts",         "pt_harad_raiders",   "pt_harad_war_party",  -1),
-("p_town_khand_camp"      ,"pt_khand_scouts",         "pt_khand_raiders",   "pt_khand_war_party",  -1),
+(p_town_dunland_camp    ,pt_dunland_scouts,       pt_dunland_raiders, pt_dunland_war_party,-1),
+(p_town_harad_camp      ,pt_harad_scouts,         pt_harad_raiders,   pt_harad_war_party,  -1),
+(p_town_khand_camp      ,pt_khand_scouts,         pt_khand_raiders,   pt_khand_war_party,  -1),
 
-("p_town_north_rhun_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
-("p_town_rhun_south_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
-("p_town_rhun_north_camp" ,"pt_rhun_scouts",          "pt_rhun_raiders",    "pt_rhun_war_party",   -1),
+(p_town_north_rhun_camp ,pt_rhun_scouts,          pt_rhun_raiders,    pt_rhun_war_party,   -1),
+(p_town_rhun_south_camp ,pt_rhun_scouts,          pt_rhun_raiders,    pt_rhun_war_party,   -1),
+(p_town_rhun_north_camp ,pt_rhun_scouts,          pt_rhun_raiders,    pt_rhun_war_party,   -1),
 
-("p_town_umbar_camp"      ,"pt_umbar_scouts",         "pt_umbar_raiders",   -1,                    -1),
+(p_town_umbar_camp      ,pt_umbar_scouts,         pt_umbar_raiders,   -1,                    -1),
 
-("p_town_gundabad"                 ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
-("p_town_gundabad_ne_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
-("p_town_gundabad_nw_outpost"      ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    "pt_gunda_caravan"),
-("p_town_goblin_north_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-("p_town_goblin_south_outpost"     ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
-("p_town_gundabad_m_outpost"       ,"pt_gundabad_scouts","pt_gundabad_raiders",-1,                    -1),
+(p_town_gundabad                 ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
+(p_town_gundabad_ne_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
+(p_town_gundabad_nw_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
+(p_town_goblin_north_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
+(p_town_goblin_south_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
+(p_town_gundabad_m_outpost       ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
 #Advance camps   
-("p_advcamp_gondor"       ,"pt_gondor_scouts",        "pt_gondor_raiders",     "pt_gondor_patrol",    "pt_gondor_caravan"),
-("p_advcamp_rohan"        ,"pt_rohan_scouts",         "pt_rohan_raiders",      "pt_rohan_patrol",     "pt_rohan_caravan"),
-("p_advcamp_isengard"     ,"pt_isengard_scouts",      "pt_isengard_raiders",   "pt_isengard_war_party","pt_isengard_caravan"),
-("p_advcamp_mordor"       ,"pt_mordor_scouts",        "pt_mordor_raiders",     "pt_mordor_war_party", "pt_mordor_caravan"),
-("p_advcamp_harad"        ,"pt_harad_scouts",         "pt_harad_raiders",      "pt_harad_war_party",  -1),
-("p_advcamp_rhun"         ,"pt_rhun_scouts",          "pt_rhun_raiders",       "pt_rhun_war_party",   -1),
-("p_advcamp_khand"        ,"pt_khand_scouts",         "pt_khand_raiders",      "pt_khand_war_party",  -1),
-("p_advcamp_umbar"        ,"pt_umbar_scouts",         "pt_umbar_raiders",      -1,                    -1),
-("p_advcamp_lorien"       ,"pt_lorien_scouts",        "pt_lorien_raiders",     "pt_lorien_patrol",    "pt_lorien_caravan"),
-("p_advcamp_imladris"     ,"pt_imladris_scouts",      "pt_imladris_raiders",   "pt_imladris_patrol",  "pt_imladris_caravan"),
-("p_advcamp_woodelf"      ,"pt_woodelf_scouts",       "pt_woodelf_raiders",    "pt_woodelf_patrol",   "pt_woodelf_caravan"),
-("p_advcamp_moria"        ,"pt_moria_scouts",         "pt_moria_raiders",      "pt_moria_war_party",  -1),
-("p_advcamp_guldur"       ,"pt_guldur_scouts",        "pt_guldur_raiders",     "pt_mordor_war_party", -1),
-("p_advcamp_gundabad"     ,"pt_gundabad_scouts",      "pt_gundabad_raiders",   -1,                    "pt_gunda_caravan"),
-("p_advcamp_dale"         ,"pt_dale_scouts",          "pt_dale_raiders",       "pt_dale_patrol",      "pt_dale_caravan"),
-("p_advcamp_dwarf"        ,"pt_dwarf_scouts",         -1,				       "pt_dwarf_patrol",     "pt_dwarf_caravan"),
-("p_advcamp_dunland"      ,"pt_dunland_scouts",       "pt_dunland_raiders",    "pt_dunland_war_party",-1),
-("p_advcamp_beorn"        ,"pt_beorn_scouts",         -1,                      -1,                    -1),
+(p_advcamp_gondor       ,pt_gondor_scouts,        pt_gondor_raiders,     pt_gondor_patrol,    pt_gondor_caravan),
+(p_advcamp_rohan        ,pt_rohan_scouts,         pt_rohan_raiders,      pt_rohan_patrol,     pt_rohan_caravan),
+(p_advcamp_isengard     ,pt_isengard_scouts,      pt_isengard_raiders,   pt_isengard_war_party,pt_isengard_caravan),
+(p_advcamp_mordor       ,pt_mordor_scouts,        pt_mordor_raiders,     pt_mordor_war_party, pt_mordor_caravan),
+(p_advcamp_harad        ,pt_harad_scouts,         pt_harad_raiders,      pt_harad_war_party,  -1),
+(p_advcamp_rhun         ,pt_rhun_scouts,          pt_rhun_raiders,       pt_rhun_war_party,   -1),
+(p_advcamp_khand        ,pt_khand_scouts,         pt_khand_raiders,      pt_khand_war_party,  -1),
+(p_advcamp_umbar        ,pt_umbar_scouts,         pt_umbar_raiders,      -1,                    -1),
+(p_advcamp_lorien       ,pt_lorien_scouts,        pt_lorien_raiders,     pt_lorien_patrol,    pt_lorien_caravan),
+(p_advcamp_imladris     ,pt_imladris_scouts,      pt_imladris_raiders,   pt_imladris_patrol,  pt_imladris_caravan),
+(p_advcamp_woodelf      ,pt_woodelf_scouts,       pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
+(p_advcamp_moria        ,pt_moria_scouts,         pt_moria_raiders,      pt_moria_war_party,  -1),
+(p_advcamp_guldur       ,pt_guldur_scouts,        pt_guldur_raiders,     pt_mordor_war_party, -1),
+(p_advcamp_gundabad     ,pt_gundabad_scouts,      pt_gundabad_raiders,   -1,                    pt_gunda_caravan),
+(p_advcamp_dale         ,pt_dale_scouts,          pt_dale_raiders,       pt_dale_patrol,      pt_dale_caravan),
+(p_advcamp_dwarf        ,pt_dwarf_scouts,         -1,				       pt_dwarf_patrol,     pt_dwarf_caravan),
+(p_advcamp_dunland      ,pt_dunland_scouts,       pt_dunland_raiders,    pt_dunland_war_party,-1),
+(p_advcamp_beorn        ,pt_beorn_scouts,         -1,                      -1,                    -1),
 	
 ]
 
@@ -1393,8 +1403,8 @@ tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_s
 tld_siegable_never   = 4  # never siege
 
 
-str_fullname_region_begin = "str_fullname_region_pelennor"
-str_shortname_region_begin = "str_shortname_region_pelennor"
+str_fullname_region_begin = str_fullname_region_pelennor
+str_shortname_region_begin = str_shortname_region_pelennor
 
 ###########################################################################################
 # center scenes list, to assign subscenes and npcs to centers
@@ -1408,263 +1418,263 @@ center_list = [
 	#("p_zendar", ["scn_zendar_center", -1, -1,"scn_the_happy_boar","scn_zendar_arena",-1,"mesh_ui_default_menu_window" ],
 	#    ["trp_barman_mtirith", "trp_smith_mtirith", "trp_merchant_mtirith", "trp_elder", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"],
 	#	[0],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_never),
-("p_town_minas_tirith", ["scn_minas_tirith_center", "scn_minas_tirith_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_minas_tirith_siege","mesh_town_minas_tirith"],
-	["trp_barman_mtirith", "trp_smith_mtirith", "trp_merchant_mtirith", "trp_elder_mtirith", "pt_gondor_cap_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_w"], 
-	["icon_mfc_gondor"],[2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
-("p_town_pelargir", ["scn_pelargir_center", "scn_gondor_castle_a", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_pelargir_siege","mesh_town_pelargir"],
-	["trp_barman_pelargir", "trp_smith_pelargir", "trp_merchant_pelargir", "trp_elder_pelargir", "pt_pelargir_recruits", "trp_knight_1_4", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_white","trp_walker_woman_gondor_b"], 
-	["icon_mfc_pelargir"],[900],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_normal),
-("p_town_linhir", ["scn_linhir_center", "scn_gondor_castle_b", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_linhir_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_linhir", "trp_smith_linhir", "trp_merchant_linhir", "trp_elder_linhir", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_gondor"],[900],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_dol_amroth", ["scn_dol_amroth_center", "scn_dol_amroth_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_dol_amroth_siege","mesh_town_dol_amroth"],
-	["trp_barman_dolamroth", "trp_smith_dolamroth", "trp_merchant_dolamroth", "trp_elder_dolamroth", "pt_dol_amroth_recruits", "trp_knight_1_3", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_white","trp_walker_man_gondor_blue","trp_walker_woman_gondor_b"], 
-	["icon_mfc_dol_amroth"],[900],[2,8,3,8,2,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_edhellond", ["scn_edhellond_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_edhellond_siege", "mesh_town_edhellond"],
-	["trp_barman_edhellond", "trp_smith_edhellond", "trp_merchant_edhellond", "trp_elder_edhellond", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_gondor"],[900],[2,3,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_lossarnach", ["scn_lossarnach_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_lossarnach_siege", "mesh_town_lossarnach"],
-	["trp_barman_lossarnach", "trp_smith_lossarnach", "trp_merchant_lossarnach", "trp_elder_lossarnach", "pt_lossarnach_recruits", "trp_knight_1_8", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_blue","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_lossarnach"],[900],[2,4,3,4,3,6], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_tarnost", ["scn_tarnost_center", "scn_gondor_castle_c", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_tarnost_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_tarnost", "trp_smith_tarnost", "trp_merchant_tarnost", "trp_elder_tarnost", "pt_gondor_recruits", "trp_gondor_lord", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_gondor"],[900],[4,4,4,6,4,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_erech", ["scn_erech_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_erech_siege", "mesh_town_erech"],
-	["trp_barman_erech", "trp_smith_erech", "trp_merchant_erech", "trp_elder_erech", "pt_blackroot_recruits", "trp_knight_1_5", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_erech"],[900],[3,1,3,3,3,7], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_pinnath_gelin", ["scn_pinnath_gelin_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena","scn_pinnath_gelin_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_pinnath", "trp_smith_pinnath", "trp_merchant_pinnath", "trp_elder_pinnath", "pt_pinnath_recruits", "trp_knight_1_6", "trp_walker_woman_gondor_bw","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_pinnath"],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_west_osgiliath", ["scn_west_osgiliath_center", "scn_west_osgiliath_castle", -1, -1, -1, "scn_west_osgiliath_siege","mesh_town_osgilliath"],
-	[-1, "trp_smith_wosgiliath", "trp_merchant_wosgiliath","trp_no_troop" , "pt_gondor_recruits", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
-	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 0, tld_siegable_normal),
-("p_town_henneth_annun", ["scn_henneth_annun_center", "scn_henneth_annun_castle", -1, -1, -1, -1, "mesh_town_henneth_annun"],
-	["trp_barman_hannun", "trp_smith_hannun", "trp_no_troop", "trp_elder_henneth", "pt_ithilien_recruits", "trp_gondor_lord", "trp_ranger_of_ithilien","trp_ranger_of_ithilien","trp_veteran_ranger_of_ithilien","trp_master_ranger_of_ithilien"], 
-	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_never),
-("p_town_cair_andros", ["scn_cair_andros_center", "scn_cair_andros_castle", -1, -1, -1, "scn_cair_andros_siege", "mesh_town_cair_andros"],
-	[-1, "trp_smith_candros", "trp_no_troop", "trp_elder_cairandros", "pt_gondor_recruits", "trp_gondor_lord", "trp_gondor_commoner","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
-	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always),
-("p_town_calembel", ["scn_ethring_center", "scn_gondor_castle", "scn_gondor_prison","scn_gondor_tavern","scn_gondor_arena", "scn_ethring_siege", "mesh_town_calembel"],
-	["trp_barman_calembel", "trp_smith_calembel", "trp_merchant_calembel", "trp_elder_ethring", "pt_lamedon_recruits", "trp_knight_1_1", "trp_gondor_commoner","trp_walker_man_gondor_black","trp_walker_man_gondor_green","trp_walker_woman_gondor_b"], 
-	["icon_mfc_ethring"],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_minas_tirith, [scn_minas_tirith_center, scn_minas_tirith_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_minas_tirith_siege,mesh_town_minas_tirith],
+	[trp_barman_mtirith, trp_smith_mtirith, trp_merchant_mtirith, trp_elder_mtirith, pt_gondor_cap_recruits, trp_gondor_lord, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_white,trp_walker_woman_gondor_w], 
+	[icon_mfc_gondor],[2000],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
+(p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
+	[trp_barman_pelargir, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_white,trp_walker_woman_gondor_b], 
+	[icon_mfc_pelargir],[900],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_normal),
+(p_town_linhir, [scn_linhir_center, scn_gondor_castle_b, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_linhir_siege, mesh_ui_default_menu_window],
+	[trp_barman_linhir, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_gondor],[900],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_dol_amroth, [scn_dol_amroth_center, scn_dol_amroth_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_dol_amroth_siege,mesh_town_dol_amroth],
+	[trp_barman_dolamroth, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_woman_gondor_bw,trp_walker_man_gondor_white,trp_walker_man_gondor_blue,trp_walker_woman_gondor_b], 
+	[icon_mfc_dol_amroth],[900],[2,8,3,8,2,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_edhellond, [scn_edhellond_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_edhellond_siege, mesh_town_edhellond],
+	[trp_barman_edhellond, trp_smith_edhellond, trp_merchant_edhellond, trp_elder_edhellond, pt_gondor_recruits, trp_gondor_lord, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_gondor],[900],[2,3,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_lossarnach, [scn_lossarnach_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_lossarnach_siege, mesh_town_lossarnach],
+	[trp_barman_lossarnach, trp_smith_lossarnach, trp_merchant_lossarnach, trp_elder_lossarnach, pt_lossarnach_recruits, trp_knight_1_8, trp_walker_woman_gondor_bw,trp_walker_man_gondor_blue,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_lossarnach],[900],[2,4,3,4,3,6], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_tarnost, [scn_tarnost_center, scn_gondor_castle_c, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_tarnost_siege, mesh_ui_default_menu_window],
+	[trp_barman_tarnost, trp_smith_tarnost, trp_merchant_tarnost, trp_elder_tarnost, pt_gondor_recruits, trp_gondor_lord, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_gondor],[900],[4,4,4,6,4,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_erech, [scn_erech_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_erech_siege, mesh_town_erech],
+	[trp_barman_erech, trp_smith_erech, trp_merchant_erech, trp_elder_erech, pt_blackroot_recruits, trp_knight_1_5, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_erech],[900],[3,1,3,3,3,7], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_pinnath_gelin, [scn_pinnath_gelin_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pinnath_gelin_siege, mesh_ui_default_menu_window],
+	[trp_barman_pinnath, trp_smith_pinnath, trp_merchant_pinnath, trp_elder_pinnath, pt_pinnath_recruits, trp_knight_1_6, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_pinnath],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_west_osgiliath, [scn_west_osgiliath_center, scn_west_osgiliath_castle, -1, -1, -1, scn_west_osgiliath_siege,mesh_town_osgilliath],
+	[-1, trp_smith_wosgiliath, trp_merchant_wosgiliath,trp_no_troop , pt_gondor_recruits, trp_gondor_lord, trp_gondor_commoner,trp_gondor_militiamen,trp_gondor_spearmen,trp_gondor_swordsmen], 
+	[icon_mfc_gondor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 0, tld_siegable_normal),
+(p_town_henneth_annun, [scn_henneth_annun_center, scn_henneth_annun_castle, -1, -1, -1, -1, mesh_town_henneth_annun],
+	[trp_barman_hannun, trp_smith_hannun, trp_no_troop, trp_elder_henneth, pt_ithilien_recruits, trp_gondor_lord, trp_ranger_of_ithilien,trp_ranger_of_ithilien,trp_veteran_ranger_of_ithilien,trp_master_ranger_of_ithilien], 
+	[icon_mfc_gondor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_never),
+(p_town_cair_andros, [scn_cair_andros_center, scn_cair_andros_castle, -1, -1, -1, scn_cair_andros_siege, mesh_town_cair_andros],
+	[-1, trp_smith_candros, trp_no_troop, trp_elder_cairandros, pt_gondor_recruits, trp_gondor_lord, trp_gondor_commoner,trp_gondor_militiamen,trp_gondor_spearmen,trp_gondor_swordsmen], 
+	[icon_mfc_gondor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always),
+(p_town_calembel, [scn_ethring_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena, scn_ethring_siege, mesh_town_calembel],
+	[trp_barman_calembel, trp_smith_calembel, trp_merchant_calembel, trp_elder_ethring, pt_lamedon_recruits, trp_knight_1_1, trp_gondor_commoner,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[icon_mfc_ethring],[900],[2,2,2,5,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 # Rohan centers
-("p_town_edoras", ["scn_edoras_center", "scn_edoras_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_edoras_siege","mesh_town_edoras"],
-	["trp_barman_edoras", "trp_smith_edoras", "trp_merchant_edoras", "trp_elder_edoras", "pt_rohan_cap_recruits", "trp_rohan_lord", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[2,8,3,4,3,6], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
-("p_town_aldburg", ["scn_aldburg_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_aldburg_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_aldburg", "trp_smith_aldburg", "trp_merchant_aldburg", "trp_elder_aldburg", "pt_rohan_recruits", "trp_knight_1_11", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[2,3,2,5,2,8], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
-("p_town_hornburg", ["scn_hornburg_center", "scn_hornburg_castle", "scn_rohan_prison","scn_rohan_tavern", -1, "scn_hornburg_siege","mesh_town_hornburg"],
-	["trp_barman_hornburg", "trp_smith_hornburg", "trp_merchant_hornburg", "trp_elder_hornburg", "pt_rohan_recruits", "trp_rohan_lord", "trp_rohan_youth", "trp_walker_man_rohan_t", "trp_guardsman_of_rohan", "trp_footman_of_rohan"], 
-	["icon_mfc_rohan"],[900],[3,8,4,6,4,5], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
-("p_town_east_emnet", ["scn_east_emnet_center", "scn_rohan_castle_a", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_east_emnet_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_eastemnet", "trp_smith_eastemnet", "trp_merchant_eastemnet", "trp_elder_eastemnet", "pt_rohan_recruits", "trp_knight_1_14", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_low, 1, tld_siegable_always),
-("p_town_westfold", ["scn_westfold_center", "scn_rohan_castle_b", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_westfold_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_westfold", "trp_smith_westfold", "trp_merchant_westfold", "trp_elder_westfold", "pt_rohan_recruits", "trp_knight_1_9", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[2,4,2,5,2,6], str_income_med, garrison_limit_low, 1, tld_siegable_always),
-("p_town_west_emnet", ["scn_west_emnet_center", "scn_rohan_castle_a", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_west_emnet_siege", "mesh_town_west_emnet"],
-	["trp_barman_westemnet", "trp_smith_westemnet", "trp_merchant_westemnet", "trp_elder_westemnet", "pt_rohan_recruits", "trp_knight_1_10", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[2,8,3,4,3,6], str_income_med, garrison_limit_low, 1, tld_siegable_always),
-("p_town_eastfold", ["scn_eastfold_center", "scn_rohan_castle_b", "scn_rohan_prison","scn_rohan_tavern","scn_rohan_arena", "scn_eastfold_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_eastfold", "trp_smith_eastfold", "trp_merchant_eastfold", "trp_elder_eastfold", "pt_rohan_recruits", "trp_knight_1_13", "trp_walker_woman_rohan_d", "trp_walker_man_rohan_t", "trp_walker_man_rohan_d", "trp_walker_woman_rohan_t"], 
-	["icon_mfc_rohan"],[900],[3,8,4,6,4,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_edoras, [scn_edoras_center, scn_edoras_castle, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_edoras_siege,mesh_town_edoras],
+	[trp_barman_edoras, trp_smith_edoras, trp_merchant_edoras, trp_elder_edoras, pt_rohan_cap_recruits, trp_rohan_lord, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[2,8,3,4,3,6], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
+(p_town_aldburg, [scn_aldburg_center, scn_rohan_castle, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_aldburg_siege, mesh_ui_default_menu_window],
+	[trp_barman_aldburg, trp_smith_aldburg, trp_merchant_aldburg, trp_elder_aldburg, pt_rohan_recruits, trp_knight_1_11, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[2,3,2,5,2,8], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
+(p_town_hornburg, [scn_hornburg_center, scn_hornburg_castle, scn_rohan_prison,scn_rohan_tavern, -1, scn_hornburg_siege,mesh_town_hornburg],
+	[trp_barman_hornburg, trp_smith_hornburg, trp_merchant_hornburg, trp_elder_hornburg, pt_rohan_recruits, trp_rohan_lord, trp_rohan_youth, trp_walker_man_rohan_t, trp_guardsman_of_rohan, trp_footman_of_rohan], 
+	[icon_mfc_rohan],[900],[3,8,4,6,4,5], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
+(p_town_east_emnet, [scn_east_emnet_center, scn_rohan_castle_a, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_east_emnet_siege, mesh_ui_default_menu_window],
+	[trp_barman_eastemnet, trp_smith_eastemnet, trp_merchant_eastemnet, trp_elder_eastemnet, pt_rohan_recruits, trp_knight_1_14, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_low, 1, tld_siegable_always),
+(p_town_westfold, [scn_westfold_center, scn_rohan_castle_b, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_westfold_siege, mesh_ui_default_menu_window],
+	[trp_barman_westfold, trp_smith_westfold, trp_merchant_westfold, trp_elder_westfold, pt_rohan_recruits, trp_knight_1_9, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[2,4,2,5,2,6], str_income_med, garrison_limit_low, 1, tld_siegable_always),
+(p_town_west_emnet, [scn_west_emnet_center, scn_rohan_castle_a, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_west_emnet_siege, mesh_town_west_emnet],
+	[trp_barman_westemnet, trp_smith_westemnet, trp_merchant_westemnet, trp_elder_westemnet, pt_rohan_recruits, trp_knight_1_10, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[2,8,3,4,3,6], str_income_med, garrison_limit_low, 1, tld_siegable_always),
+(p_town_eastfold, [scn_eastfold_center, scn_rohan_castle_b, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_eastfold_siege, mesh_ui_default_menu_window],
+	[trp_barman_eastfold, trp_smith_eastfold, trp_merchant_eastfold, trp_elder_eastfold, pt_rohan_recruits, trp_knight_1_13, trp_walker_woman_rohan_d, trp_walker_man_rohan_t, trp_walker_man_rohan_d, trp_walker_woman_rohan_t], 
+	[icon_mfc_rohan],[900],[3,8,4,6,4,5], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
 # Mordor centers
-("p_town_morannon", ["scn_morannon_center", "scn_morannon_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", "scn_morannon_siege","mesh_town_morannon"],
-	["trp_barman_morannon", "trp_smith_morannon", "trp_merchant_morannon", "trp_elder_morannon", "pt_morannon_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_evil_high*2, 1, tld_siegable_capital),
-("p_town_minas_morgul", ["scn_minas_morgul_center", "scn_mordor_castle_b", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena", "scn_minas_morgul_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_mmorgul", "trp_smith_mmorgul", "trp_merchant_mmorgul", "trp_elder_mmorgul", "pt_morgul_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_never),
-("p_town_cirith_ungol", ["scn_cirith_ungol_center", -1, "scn_mordor_prison","scn_mordor_tavern", -1, "scn_cirith_ungol_center", "mesh_town_evilcamp"],
-	["trp_barman_cungol", "trp_smith_orc_patrol", "trp_merchant_orc_patrol", "trp_elder_cungol", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
-("p_town_orc_sentry_camp", ["scn_orc_sentry_camp_center", -1, -1, -1, -1, "scn_orc_sentry_camp_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_oscamp", "trp_no_troop", "trp_no_troop", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,1,4,1,4,1], str_income_none, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_east_osgiliath", ["scn_east_osgiliath_center", "scn_east_osgiliath_castle", -1, -1, -1, "scn_east_osgiliath_siege", "mesh_town_osgilliath"],
-	[-1, "trp_smith_eosgiliath", "trp_merchant_eosgiliath", "trp_no_troop", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0, tld_siegable_normal),
+(p_town_morannon, [scn_morannon_center, scn_morannon_castle, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena, scn_morannon_siege,mesh_town_morannon],
+	[trp_barman_morannon, trp_smith_morannon, trp_merchant_morannon, trp_elder_morannon, pt_morannon_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_evil_high*2, 1, tld_siegable_capital),
+(p_town_minas_morgul, [scn_minas_morgul_center, scn_mordor_castle_b, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena, scn_minas_morgul_siege, mesh_ui_default_menu_window],
+	[trp_barman_mmorgul, trp_smith_mmorgul, trp_merchant_mmorgul, trp_elder_mmorgul, pt_morgul_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_never),
+(p_town_cirith_ungol, [scn_cirith_ungol_center, -1, scn_mordor_prison,scn_mordor_tavern, -1, scn_cirith_ungol_center, mesh_town_evilcamp],
+	[trp_barman_cungol, trp_smith_orc_patrol, trp_merchant_orc_patrol, trp_elder_cungol, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
+(p_town_orc_sentry_camp, [scn_orc_sentry_camp_center, -1, -1, -1, -1, scn_orc_sentry_camp_center, mesh_town_evilcamp],
+	[-1, trp_smith_oscamp, trp_no_troop, trp_no_troop, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_none, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_east_osgiliath, [scn_east_osgiliath_center, scn_east_osgiliath_castle, -1, -1, -1, scn_east_osgiliath_siege, mesh_town_osgilliath],
+	[-1, trp_smith_eosgiliath, trp_merchant_eosgiliath, trp_no_troop, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0, tld_siegable_normal),
 # Isengard centers
-("p_town_isengard", ["scn_isengard_center", "scn_isengard_castle", "scn_mordor_prison","scn_mordor_tavern", "scn_isengard_arena", -1,"mesh_town_isengard"],
-	["trp_barman_isengard", "trp_smith_isengard", "trp_merchant_isengard", "trp_elder_isengard", "pt_isengard_recruits",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_tracker","trp_uruk_hai_of_isengard"], 
-	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 1, tld_siegable_never),
-("p_town_urukhai_outpost", ["scn_uruk_hai_outpost_center", -1, -1, -1, "scn_isengard_arena", "scn_uruk_hai_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_uoutpost", "trp_merchant_uoutpost", "trp_no_troop", "pt_isengard_recruits",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_tracker","trp_uruk_hai_of_isengard"], 
-	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
-("p_town_urukhai_h_camp", ["scn_uruk_hai_h_camp_center", -1, -1, -1, "scn_isengard_arena", "scn_uruk_hai_h_camp_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_uhcamp", "trp_merchant_uhcamp","trp_no_troop", "pt_isengard_recruits",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_tracker","trp_uruk_hai_of_isengard"], 
-	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_urukhai_r_camp", ["scn_uruk_hai_r_camp_center", -1, -1, -1, "scn_isengard_arena", "scn_uruk_hai_r_camp_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_urcamp", "trp_merchant_urcamp", "trp_no_troop", "pt_isengard_recruits",  "trp_isengard_lord","trp_orc_of_isengard","trp_large_orc_of_isengard","trp_uruk_hai_tracker","trp_uruk_hai_of_isengard"], 
-	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_isengard, [scn_isengard_center, scn_isengard_castle, scn_mordor_prison,scn_mordor_tavern, scn_isengard_arena, -1,mesh_town_isengard],
+	[trp_barman_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 1, tld_siegable_never),
+(p_town_urukhai_outpost, [scn_uruk_hai_outpost_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_outpost_center, mesh_town_evilcamp],
+	[-1, trp_smith_uoutpost, trp_merchant_uoutpost, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
+(p_town_urukhai_h_camp, [scn_uruk_hai_h_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_h_camp_center, mesh_town_evilcamp],
+	[-1, trp_smith_uhcamp, trp_merchant_uhcamp,trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_urukhai_r_camp, [scn_uruk_hai_r_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_r_camp_center, mesh_town_evilcamp],
+	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 # Elf centers
-("p_town_caras_galadhon", ["scn_caras_galadhon_center", -1, "scn_elf_prison","scn_elf_tavern","scn_elf_arena","scn_forest_lorien2","mesh_town_caras_galadhon"],
-	["trp_barman_cgaladhon", "trp_smith_cgaladhon", "trp_merchant_cgaladhon", "trp_elder_cgaladhon", "pt_lorien_recruits", "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-	["icon_mfc_lorien"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
-("p_town_cerin_dolen", ["scn_cerin_dolen_center", -1, -1, -1, -1, "scn_cerin_dolen_center", "mesh_ui_default_menu_window"],
-	["trp_barman_cdolen", "trp_smith_cdolen", "trp_merchant_cdolen", "trp_elder_cdolen", "pt_lorien_recruits",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-	["icon_mfc_lorien"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
-("p_town_cerin_amroth", ["scn_cerin_amroth_center", -1, -1, -1, -1, "scn_cerin_amroth_center", "mesh_ui_default_menu_window"],
-	["trp_barman_camroth", "trp_smith_camroth", "trp_merchant_camroth", "trp_elder_camroth", "pt_lorien_recruits",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-	["icon_mfc_lorien"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
+(p_town_caras_galadhon, [scn_caras_galadhon_center, -1, scn_elf_prison,scn_elf_tavern,scn_elf_arena,scn_forest_lorien2,mesh_town_caras_galadhon],
+	[trp_barman_cgaladhon, trp_smith_cgaladhon, trp_merchant_cgaladhon, trp_elder_cgaladhon, pt_lorien_recruits, trp_lorien_lord, trp_lothlorien_scout, trp_lothlorien_archer, trp_lothlorien_infantry, trp_lothlorien_warden], 
+	[icon_mfc_lorien],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
+(p_town_cerin_dolen, [scn_cerin_dolen_center, -1, -1, -1, -1, scn_cerin_dolen_center, mesh_ui_default_menu_window],
+	[trp_barman_cdolen, trp_smith_cdolen, trp_merchant_cdolen, trp_elder_cdolen, pt_lorien_recruits,  trp_lorien_lord, trp_lothlorien_scout, trp_lothlorien_archer, trp_lothlorien_infantry, trp_lothlorien_warden], 
+	[icon_mfc_lorien],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
+(p_town_cerin_amroth, [scn_cerin_amroth_center, -1, -1, -1, -1, scn_cerin_amroth_center, mesh_ui_default_menu_window],
+	[trp_barman_camroth, trp_smith_camroth, trp_merchant_camroth, trp_elder_camroth, pt_lorien_recruits,  trp_lorien_lord, trp_lothlorien_scout, trp_lothlorien_archer, trp_lothlorien_infantry, trp_lothlorien_warden], 
+	[icon_mfc_lorien],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 
-("p_town_thranduils_halls", ["scn_thranduils_halls_center", "scn_thranduil_hall_room", "scn_elf_prison","scn_elf_tavern","scn_elf_arena","scn_thranduils_halls_center","mesh_town_thranduils"],
-	["trp_barman_thalls", "trp_smith_thranduils_halls", "trp_merchant_thranduils_halls", "trp_elder_thalls", "pt_woodelf_recruits", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
-	["icon_mfc_woodelf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_never),
-("p_town_woodelf_camp", ["scn_woodelf_camp_center", -1, -1,-1,-1,"scn_woodelf_camp_center", "mesh_town_goodcamp"],
-	[-1, "trp_smith_woodelf_camp", "trp_merchant_woodelf_camp", "trp_no_troop", "pt_woodelf_recruits", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
-	["icon_mfc_woodelf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 2, tld_siegable_always),
-("p_town_woodelf_west_camp", ["scn_woodelf_west_camp_center", -1, -1,-1,-1,"scn_woodelf_west_camp_center", "mesh_town_goodcamp"],
-	[-1, "trp_smith_woodelf_camp", "trp_merchant_woodelf_camp", "trp_no_troop", "pt_woodelf_recruits", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
-	["icon_mfc_woodelf"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
-("p_town_imladris_camp", ["scn_rivendell_camp_center", -1, -1,-1,-1,"scn_rivendell_camp_center","mesh_town_rivendell_camp"],
-	[-1, "trp_smith_imladris", "trp_merchant_imladris", "trp_elder_imladris", "pt_imladris_recruits", "trp_imladris_lord", "trp_rivendell_scout","trp_rivendell_infantry", "trp_rivendell_sentinel","trp_dunedain_scout"], 
-	["icon_mfc_imladris"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_capital),
+(p_town_thranduils_halls, [scn_thranduils_halls_center, scn_thranduil_hall_room, scn_elf_prison,scn_elf_tavern,scn_elf_arena,scn_thranduils_halls_center,mesh_town_thranduils],
+	[trp_barman_thalls, trp_smith_thranduils_halls, trp_merchant_thranduils_halls, trp_elder_thalls, pt_woodelf_recruits, trp_woodelf_lord, trp_greenwood_archer, trp_greenwood_scout, trp_greenwood_archer, trp_greenwood_spearman], 
+	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_never),
+(p_town_woodelf_camp, [scn_woodelf_camp_center, -1, -1,-1,-1,scn_woodelf_camp_center, mesh_town_goodcamp],
+	[-1, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_no_troop, pt_woodelf_recruits, trp_woodelf_lord, trp_greenwood_archer, trp_greenwood_scout, trp_greenwood_archer, trp_greenwood_spearman], 
+	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 2, tld_siegable_always),
+(p_town_woodelf_west_camp, [scn_woodelf_west_camp_center, -1, -1,-1,-1,scn_woodelf_west_camp_center, mesh_town_goodcamp],
+	[-1, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_no_troop, pt_woodelf_recruits, trp_woodelf_lord, trp_greenwood_archer, trp_greenwood_scout, trp_greenwood_archer, trp_greenwood_spearman], 
+	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
+(p_town_imladris_camp, [scn_rivendell_camp_center, -1, -1,-1,-1,scn_rivendell_camp_center,mesh_town_rivendell_camp],
+	[-1, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris, pt_imladris_recruits, trp_imladris_lord, trp_rivendell_scout,trp_rivendell_infantry, trp_rivendell_sentinel,trp_dunedain_scout], 
+	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_capital),
 
-("p_town_woodsmen_village", ["scn_woodsmen_village2_center", -1, -1,-1,-1,"scn_woodsmen_village2_center", "mesh_ui_default_menu_window"],
-	[-1, "trp_no_troop", "trp_merchant_woodmen", "trp_elder_wvillage", "pt_woodman_recruits", "trp_beorn_lord", "trp_woodmen_youth", "trp_woodmen_tracker", "trp_woodmen_forester", "trp_woodmen_axemen"], 
-	["icon_mfc_northmen"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_always),
-("p_town_beorning_village", ["scn_beorning_village_center", -1, -1,-1,-1,"scn_beorning_village_center", "mesh_ui_default_menu_window"],
-	[-1, "trp_no_troop", "trp_merchant_beorn", "trp_no_troop", "pt_beorn_recruits", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_sentinel", "trp_beorning_warrior", "trp_beorning_tolltacker"], 
-	["icon_mfc_northmen"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_always),
-("p_town_beorn_house", ["scn_woodsmen_village_center", "scn_beorn_castle", -1,-1, "scn_beorn_arena","scn_woodsmen_village_center","mesh_town_beorns_house"],
-	["trp_barman_beorn", "trp_smith_beorn", "trp_no_troop", "trp_elder_beorn", "pt_beorn_recruits", "trp_beorn_lord", "trp_beorning_vale_man", "trp_beorning_carrock_berserker", "trp_beorning_warrior", "trp_beorning_carrock_fighter"], 
-	["icon_mfc_northmen"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_capital),
+(p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_center, mesh_ui_default_menu_window],
+	[-1, trp_no_troop, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_woodmen_youth, trp_woodmen_tracker, trp_woodmen_forester, trp_woodmen_axemen], 
+	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_always),
+(p_town_beorning_village, [scn_beorning_village_center, -1, -1,-1,-1,scn_beorning_village_center, mesh_ui_default_menu_window],
+	[-1, trp_no_troop, trp_merchant_beorn, trp_no_troop, pt_beorn_recruits, trp_beorn_lord, trp_beorning_vale_man, trp_beorning_sentinel, trp_beorning_warrior, trp_beorning_tolltacker], 
+	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_always),
+(p_town_beorn_house, [scn_woodsmen_village_center, scn_beorn_castle, -1,-1, scn_beorn_arena,scn_woodsmen_village_center,mesh_town_beorns_house],
+	[trp_barman_beorn, trp_smith_beorn, trp_no_troop, trp_elder_beorn, pt_beorn_recruits, trp_beorn_lord, trp_beorning_vale_man, trp_beorning_carrock_berserker, trp_beorning_warrior, trp_beorning_carrock_fighter], 
+	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 1, tld_siegable_capital),
 
-("p_town_moria", ["scn_moria_center", -1, "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena","scn_moria_siege","mesh_town_moria"],
-	["trp_barman_moria", "trp_smith_moria", "trp_merchant_moria", "trp_elder_moria", "pt_moria_recruits", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
-	["icon_mfc_moria"],[900],[2,1,4,1,4,1], str_income_very_high, garrison_limit_evil_high, 1, tld_siegable_never),
-("p_town_troll_cave", ["scn_troll_cave_center", -1, -1,-1,-1,"scn_troll_cave_center", "mesh_ui_default_menu_window"],
-	[-1, "trp_no_troop", "trp_no_troop", "trp_no_troop", "pt_moria_recruits", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
-	["icon_mfc_moria"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_normal),
+(p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
+	[trp_barman_moria, trp_smith_moria, trp_merchant_moria, trp_elder_moria, pt_moria_recruits, trp_moria_lord,trp_snaga_of_moria,trp_goblin_of_moria,trp_wolf_rider_of_moria,trp_large_goblin_of_moria], 
+	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_very_high, garrison_limit_evil_high, 1, tld_siegable_never),
+(p_town_troll_cave, [scn_troll_cave_center, -1, -1,-1,-1,scn_troll_cave_center, mesh_ui_default_menu_window],
+	[-1, trp_no_troop, trp_no_troop, trp_no_troop, pt_moria_recruits, trp_moria_lord,trp_snaga_of_moria,trp_goblin_of_moria,trp_wolf_rider_of_moria,trp_large_goblin_of_moria], 
+	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_normal),
 
-("p_town_dale", ["scn_dale_center", "scn_rohan_castle", "scn_rohan_prison","scn_rohan_tavern","scn_dale_arena", "scn_dale_siege", "mesh_ui_default_menu_window"],
-	["trp_barman_dale", "trp_smith_dale", "trp_merchant_dale", "trp_elder_dale", "pt_dale_recruits", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_bowmen"], 
-	["icon_mfc_dale"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_capital),
-("p_town_esgaroth", ["scn_esgaroth_center", "scn_esgaroth_castle", "scn_rohan_prison","scn_rohan_tavern","scn_dale_arena","scn_esgaroth_center","mesh_town_esgaroth"],
-	["trp_barman_esgaroth", "trp_smith_esgaroth", "trp_merchant_esgaroth", "trp_elder_esgaroth", "pt_dale_recruits", "trp_dale_lord","trp_townsman","trp_watchman","trp_dale_militia","trp_laketown_archer"], 
-	["icon_mfc_dale"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_always),
+(p_town_dale, [scn_dale_center, scn_rohan_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena, scn_dale_siege, mesh_ui_default_menu_window],
+	[trp_barman_dale, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_dale_militia,trp_laketown_bowmen], 
+	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_capital),
+(p_town_esgaroth, [scn_esgaroth_center, scn_esgaroth_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena,scn_esgaroth_center,mesh_town_esgaroth],
+	[trp_barman_esgaroth, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_dale_militia,trp_laketown_archer], 
+	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_always),
 
-("p_town_dunland_camp", ["scn_dunland_camp_center", -1, -1,-1,-1,"scn_dunland_camp_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_dunland", "trp_merchant_dunland", "trp_elder_dunland", "pt_dunland_recruits", "trp_dunland_lord", "trp_dunnish_wildman","trp_dunnish_warrior", "trp_dunnish_pikeman", "trp_dunnish_wolf_guard"], 
-	["icon_mfc_dunland"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
-("p_town_harad_camp", ["scn_harad_camp_center", -1, -1,-1, "scn_harad_arena","scn_harad_camp_center", "mesh_town_harad"],
-	[-1, "trp_smith_harad", "trp_merchant_harad", "trp_elder_harad", "pt_harad_recruits", "trp_harad_lord","trp_harad_desert_warrior","trp_harad_desert_warrior","trp_harad_infantry","trp_harondor_rider"], 
-	["icon_mfc_harad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
-("p_town_khand_camp", ["scn_khand_camp_center", -1, -1,-1, "scn_khand_arena", "scn_khand_camp_center", "mesh_town_khand"],
-	[-1, "trp_smith_khand", "trp_merchant_khand", "trp_elder_khand", "pt_khand_recruits", "trp_khand_lord", "trp_easterling_youth", "trp_easterling_axeman","trp_khand_glaive_whirler","trp_variag_pitfighter"], 
-	["icon_mfc_khand"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
-("p_town_umbar_camp", ["scn_umbar_camp_center", -1, -1,-1, "scn_umbar_arena","scn_umbar_camp_siege", "mesh_town_evilcamp"],
-	[-1, "trp_smith_umbar", "trp_merchant_umbar", "trp_elder_umbar", "pt_umbar_recruits", "trp_umbar_lord", "trp_corsair_youth", "trp_corsair_warrior", "trp_assassin_of_umbar","trp_militia_of_umbar"], 
-	["icon_mfc_umbar"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1, tld_siegable_capital),
-("p_town_dol_guldur", ["scn_dol_guldur_center", "scn_mordor_castle", "scn_mordor_prison","scn_mordor_tavern","scn_mordor_arena","scn_dol_guldur_siege","mesh_town_dol_guldur"],
-	["trp_barman_dolguldur", "trp_smith_dolguldur", "trp_merchant_dolguldur", "trp_elder_dolguldur", "pt_guldur_recruits", "trp_guldur_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_guldur"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital),
-("p_town_dol_guldur_north_outpost", ["scn_dol_guldur_north_outpost_center", -1, -1,-1,-1,"scn_dol_guldur_north_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_dolguldur", "trp_merchant_dolguldur", "trp_no_troop", "pt_guldur_recruits", "trp_guldur_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_guldur"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_dunland_camp, [scn_dunland_camp_center, -1, -1,-1,-1,scn_dunland_camp_center, mesh_town_evilcamp],
+	[-1, trp_smith_dunland, trp_merchant_dunland, trp_elder_dunland, pt_dunland_recruits, trp_dunland_lord, trp_dunnish_wildman,trp_dunnish_warrior, trp_dunnish_pikeman, trp_dunnish_wolf_guard], 
+	[icon_mfc_dunland],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
+(p_town_harad_camp, [scn_harad_camp_center, -1, -1,-1, scn_harad_arena,scn_harad_camp_center, mesh_town_harad],
+	[-1, trp_smith_harad, trp_merchant_harad, trp_elder_harad, pt_harad_recruits, trp_harad_lord,trp_harad_desert_warrior,trp_harad_desert_warrior,trp_harad_infantry,trp_harondor_rider], 
+	[icon_mfc_harad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
+(p_town_khand_camp, [scn_khand_camp_center, -1, -1,-1, scn_khand_arena, scn_khand_camp_center, mesh_town_khand],
+	[-1, trp_smith_khand, trp_merchant_khand, trp_elder_khand, pt_khand_recruits, trp_khand_lord, trp_easterling_youth, trp_easterling_axeman,trp_khand_glaive_whirler,trp_variag_pitfighter], 
+	[icon_mfc_khand],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
+(p_town_umbar_camp, [scn_umbar_camp_center, -1, -1,-1, scn_umbar_arena,scn_umbar_camp_siege, mesh_town_evilcamp],
+	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_assassin_of_umbar,trp_militia_of_umbar], 
+	[icon_mfc_umbar],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 1, tld_siegable_capital),
+(p_town_dol_guldur, [scn_dol_guldur_center, scn_mordor_castle, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_dol_guldur_siege,mesh_town_dol_guldur],
+	[trp_barman_dolguldur, trp_smith_dolguldur, trp_merchant_dolguldur, trp_elder_dolguldur, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital),
+(p_town_dol_guldur_north_outpost, [scn_dol_guldur_north_outpost_center, -1, -1,-1,-1,scn_dol_guldur_north_outpost_center, mesh_town_evilcamp],
+	[-1, trp_smith_dolguldur, trp_merchant_dolguldur, trp_no_troop, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 
-("p_town_north_rhun_camp", ["scn_north_rhun_camp_center", -1, -1,-1, "scn_rhun_arena","scn_north_rhun_camp_center", "mesh_town_rhun_north"],
-	[-1, "trp_smith_north_rhun", "trp_merchant_north_rhun", "trp_elder_rhun", "pt_rhun_recruits",  "trp_rhun_lord", "trp_rhun_noble_cavalry", "trp_rhun_vet_infantry", "trp_rhun_tribesman", "trp_rhun_tribal_warrior", ], 
-	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
-("p_town_rhun_south_camp", ["scn_rhun_south_camp_center", -1, -1,-1,-1,"scn_rhun_south_camp_center", "mesh_town_rhun"],
-	[-1, "trp_smith_north_rhun", "trp_merchant_south_rhun", "trp_no_troop", "pt_rhun_recruits",  "trp_rhun_lord", "trp_rhun_noble_cavalry", "trp_rhun_vet_infantry", "trp_rhun_tribesman", "trp_rhun_tribal_warrior", ], 
-	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_rhun_north_camp", ["scn_rhun_north_camp_center", -1, -1,-1,-1,"scn_rhun_north_camp_center", "mesh_town_rhun"],
-	[-1, "trp_no_troop", "trp_merchant_north_rhun", "trp_no_troop", "pt_rhun_recruits",  "trp_rhun_lord", "trp_rhun_noble_cavalry", "trp_rhun_vet_infantry", "trp_rhun_tribesman", "trp_rhun_tribal_warrior", ], 
-	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_north_rhun_camp, [scn_north_rhun_camp_center, -1, -1,-1, scn_rhun_arena,scn_north_rhun_camp_center, mesh_town_rhun_north],
+	[-1, trp_smith_north_rhun, trp_merchant_north_rhun, trp_elder_rhun, pt_rhun_recruits,  trp_rhun_lord, trp_rhun_noble_cavalry, trp_rhun_vet_infantry, trp_rhun_tribesman, trp_rhun_tribal_warrior, ], 
+	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_capital),
+(p_town_rhun_south_camp, [scn_rhun_south_camp_center, -1, -1,-1,-1,scn_rhun_south_camp_center, mesh_town_rhun],
+	[-1, trp_smith_north_rhun, trp_merchant_south_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_rhun_noble_cavalry, trp_rhun_vet_infantry, trp_rhun_tribesman, trp_rhun_tribal_warrior, ], 
+	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_rhun_north_camp, [scn_rhun_north_camp_center, -1, -1,-1,-1,scn_rhun_north_camp_center, mesh_town_rhun],
+	[-1, trp_no_troop, trp_merchant_north_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_rhun_noble_cavalry, trp_rhun_vet_infantry, trp_rhun_tribesman, trp_rhun_tribal_warrior, ], 
+	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 # Gundabad camp
-("p_town_gundabad",     ["scn_gundabad_camp_center", -1, -1,-1, "scn_mordor_arena","scn_gundabad_siege", "mesh_town_gundabad"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_elder_gunda", "pt_gundabad_cap_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_capital),
-("p_town_gundabad_ne_outpost", ["scn_gundabad_ne_outpost_center", -1, -1,-1,-1,"scn_gundabad_ne_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_no_troop", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
-("p_town_gundabad_nw_outpost", ["scn_gundabad_nw_outpost_center", -1, -1,-1,-1,"scn_gundabad_nw_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_gundabad", "trp_no_troop", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
-("p_town_goblin_north_outpost", ["scn_goblin_north_outpost_center", -1, -1,-1,-1,"scn_goblin_north_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
-("p_town_goblin_south_outpost", ["scn_goblin_south_outpost_center", -1, -1,-1,-1,"scn_goblin_south_outpost_center", "mesh_town_evilcamp"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_gundabad_m_outpost", ["scn_gundabad_mirkwood_outpost", -1, -1,-1,-1,"scn_gundabad_mirkwood_outpost", "mesh_town_evilcamp"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_no_troop", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-("p_town_erebor", ["scn_erebor_center", "scn_erebor_castle", "scn_rohan_prison",-1,"scn_dwarf_arena","scn_erebor_siege", "mesh_town_erebor"],
-	["trp_barman_erebor", "trp_smith_erebor", "trp_merchant_erebor", "trp_elder_erebor", "pt_dwarf_recruits", "trp_dwarf_lord", "trp_dwarven_apprentice", "trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_miner"], 
-	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
-("p_town_ironhill_camp", ["scn_ironhill_camp_center", -1, -1,-1,-1,"scn_ironhill_camp_center", "mesh_town_goodcamp"],
-	[-1, "trp_smith_ironhill", "trp_merchant_ironhill", "trp_no_troop", "pt_dwarf_iron_recruits", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
-	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
+(p_town_gundabad,     [scn_gundabad_camp_center, -1, -1,-1, scn_mordor_arena,scn_gundabad_siege, mesh_town_gundabad],
+	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda, pt_gundabad_cap_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_capital),
+(p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center, mesh_town_evilcamp],
+	[-1, trp_no_troop, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
+(p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center, mesh_town_evilcamp],
+	[-1, trp_smith_gundabad, trp_no_troop, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 2, tld_siegable_always),
+(p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center, mesh_town_evilcamp],
+	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
+(p_town_goblin_south_outpost, [scn_goblin_south_outpost_center, -1, -1,-1,-1,scn_goblin_south_outpost_center, mesh_town_evilcamp],
+	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_gundabad_m_outpost, [scn_gundabad_mirkwood_outpost, -1, -1,-1,-1,scn_gundabad_mirkwood_outpost, mesh_town_evilcamp],
+	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
+(p_town_erebor, [scn_erebor_center, scn_erebor_castle, scn_rohan_prison,-1,scn_dwarf_arena,scn_erebor_siege, mesh_town_erebor],
+	[trp_barman_erebor, trp_smith_erebor, trp_merchant_erebor, trp_elder_erebor, pt_dwarf_recruits, trp_dwarf_lord, trp_dwarven_apprentice, trp_dwarven_lookout, trp_dwarven_bowman, trp_iron_hills_miner], 
+	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
+(p_town_ironhill_camp, [scn_ironhill_camp_center, -1, -1,-1,-1,scn_ironhill_camp_center, mesh_town_goodcamp],
+	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_no_troop, pt_dwarf_iron_recruits, trp_dwarf_lord,trp_dwarven_lookout, trp_dwarven_bowman, trp_iron_hills_infantry, trp_iron_hills_miner], 
+	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),
 	
 # Advance camps
 # Note that scenes are borrowed from other camps where possible, or from Ironhill Camp
 # NPCs are borrowed from other faction locations - this should be changed
 # There is no income, and the garrison strength should be respectable, so they are not easily destroyed
-("p_advcamp_gondor", ["scn_advcamp_good", -1, -1, -1, -1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_wosgiliath", "trp_merchant_wosgiliath", "trp_elder_gondor_ac", "pt_gondor_recruits", "trp_gondor_lord", "trp_ranger_of_ithilien","trp_gondor_militiamen","trp_gondor_spearmen","trp_gondor_swordsmen"], 
-	["icon_mfc_gondor"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_rohan", ["scn_advcamp_good", -1, -1, -1, -1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_eastfold", "trp_merchant_eastfold", "trp_elder_rohan_ac", "pt_rohan_recruits", "trp_rohan_lord", "trp_skirmisher_of_rohan", "trp_lancer_of_rohan", "trp_guardsman_of_rohan", "trp_footman_of_rohan"], 
-	["icon_mfc_rohan"],[900],[3,8,4,6,4,5], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_isengard", ["scn_advcamp_bad", -1, -1, -1, -1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_urcamp", "trp_merchant_urcamp", -1, "pt_isengard_recruits", "trp_isengard_lord", "trp_orc_of_isengard","trp_large_orc_of_isengard", "trp_uruk_hai_tracker", "trp_uruk_hai_of_isengard"], 
-	["icon_mfc_isengard"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_mordor", ["scn_advcamp_bad", -1, -1, -1, -1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_oscamp", "trp_merchant_isengard", "trp_elder_mordor_ac", "pt_mordor_recruits", "trp_mordor_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_mordor"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_harad", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_harad"],
-	[-1, "trp_smith_harad", "trp_merchant_harad", "trp_elder_harad_ac", "pt_harad_recruits", "trp_harad_lord","trp_harad_desert_warrior","trp_harad_desert_warrior","trp_harad_infantry","trp_harondor_rider"], 
-	["icon_mfc_harad"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_rhun", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_rhun_north"],
-	[-1, "trp_smith_north_rhun", "trp_merchant_north_rhun", "trp_elder_rhun_ac", "pt_rhun_recruits",  "trp_rhun_lord", "trp_rhun_noble_cavalry", "trp_rhun_vet_infantry", "trp_rhun_tribesman", "trp_rhun_tribal_warrior", ], 
-	["icon_mfc_rhun"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_khand", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_khand", "trp_merchant_khand", "trp_elder_khand_ac", "pt_khand_recruits", "trp_khand_lord", "trp_easterling_youth", "trp_easterling_axeman","trp_khand_glaive_whirler","trp_variag_pitfighter"], 
-	["icon_mfc_khand"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_umbar", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_umbar", "trp_merchant_umbar", "trp_elder_umbar_ac", "pt_umbar_recruits", "trp_umbar_lord", "trp_corsair_youth", "trp_corsair_warrior", "trp_assassin_of_umbar","trp_militia_of_umbar"], 
-	["icon_mfc_umbar"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_lorien", ["scn_advcamp_good", -1, -1, -1, -1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_camroth", "trp_merchant_camroth", "trp_elder_lorien_ac", "pt_lorien_recruits",  "trp_lorien_lord", "trp_lothlorien_scout", "trp_lothlorien_archer", "trp_lothlorien_infantry", "trp_lothlorien_warden"], 
-	["icon_mfc_lorien"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_imladris", ["scn_advcamp_good", -1, -1,-1,-1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_imladris", "trp_merchant_imladris", "trp_elder_imladris_ac", "pt_imladris_recruits", "trp_imladris_lord", "trp_rivendell_scout","trp_rivendell_infantry", "trp_rivendell_sentinel","trp_dunedain_scout"], 
-	["icon_mfc_imladris"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_woodelf", ["scn_advcamp_good", -1, -1,-1,-1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_woodelf_camp", "trp_merchant_woodelf_camp", "trp_elder_woodelf_ac", "pt_woodelf_recruits", "trp_woodelf_lord", "trp_greenwood_archer", "trp_greenwood_scout", "trp_greenwood_archer", "trp_greenwood_spearman"], 
-	["icon_mfc_woodelf"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_moria", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_moria", "trp_merchant_moria", "trp_elder_moria_ac", "pt_moria_recruits", "trp_moria_lord","trp_snaga_of_moria","trp_goblin_of_moria","trp_wolf_rider_of_moria","trp_large_goblin_of_moria"], 
-	["icon_mfc_moria"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_guldur", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_dolguldur", "trp_merchant_dolguldur", "trp_elder_guldur_ac", "pt_guldur_recruits", "trp_guldur_lord", "trp_uruk_of_mordor", "trp_orc_of_mordor", "trp_large_orc_of_mordor", "trp_orc_tracker_of_mordor"], 
-	["icon_mfc_guldur"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_gundabad", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_gundabad", "trp_merchant_gundabad", "trp_elder_gunda_ac", "pt_gundabad_recruits", "trp_gundabad_lord","trp_goblin_gundabad","trp_orc_gundabad","trp_orc_fighter_gundabad","trp_goblin_rider_gundabad"], 
-	["icon_mfc_gundabad"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_dale", ["scn_advcamp_good", -1, -1, -1, -1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_esgaroth", "trp_merchant_esgaroth", "trp_elder_dale_ac", "pt_dale_recruits", "trp_dale_lord","trp_dale_warrior","trp_dale_billman","trp_dale_marchwarden","trp_laketown_archer"], 
-	["icon_mfc_dale"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_dwarf", ["scn_advcamp_good", -1, -1,-1,-1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_ironhill", "trp_merchant_ironhill", "trp_elder_dwarf_ac", "pt_dwarf_recruits", "trp_dwarf_lord","trp_dwarven_lookout", "trp_dwarven_bowman", "trp_iron_hills_infantry", "trp_iron_hills_miner"], 
-	["icon_mfc_dwarf"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
-("p_advcamp_dunland", ["scn_advcamp_bad", -1, -1,-1,-1, "scn_advcamp_bad", "mesh_town_evilcamp"],
-	[-1, "trp_smith_dunland", "trp_merchant_dunland", "trp_elder_dunland_ac", "pt_dunland_recruits", "trp_dunland_lord", "trp_dunnish_wildman","trp_dunnish_warrior", "trp_dunnish_pikeman", "trp_dunnish_wolf_guard"], 
-	["icon_mfc_dunland"],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
-("p_advcamp_beorn", ["scn_advcamp_good", -1, -1,-1,-1, "scn_advcamp_good_siege", "mesh_town_goodcamp"],
-	[-1, "trp_smith_beorn", "trp_merchant_woodmen", "trp_elder_beorn_ac", "pt_beorn_recruits", "trp_beorn_lord", "trp_beorning_carrock_berserker", "trp_beorning_sentinel", "trp_beorning_warrior", "trp_beorning_tolltacker"], 
-	["icon_mfc_northmen"],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_gondor, [scn_advcamp_good, -1, -1, -1, -1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_wosgiliath, trp_merchant_wosgiliath, trp_elder_gondor_ac, pt_gondor_recruits, trp_gondor_lord, trp_ranger_of_ithilien,trp_gondor_militiamen,trp_gondor_spearmen,trp_gondor_swordsmen], 
+	[icon_mfc_gondor],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_rohan, [scn_advcamp_good, -1, -1, -1, -1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_eastfold, trp_merchant_eastfold, trp_elder_rohan_ac, pt_rohan_recruits, trp_rohan_lord, trp_skirmisher_of_rohan, trp_lancer_of_rohan, trp_guardsman_of_rohan, trp_footman_of_rohan], 
+	[icon_mfc_rohan],[900],[3,8,4,6,4,5], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_isengard, [scn_advcamp_bad, -1, -1, -1, -1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_urcamp, trp_merchant_urcamp, -1, pt_isengard_recruits, trp_isengard_lord, trp_orc_of_isengard,trp_large_orc_of_isengard, trp_uruk_hai_tracker, trp_uruk_hai_of_isengard], 
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_mordor, [scn_advcamp_bad, -1, -1, -1, -1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_oscamp, trp_merchant_isengard, trp_elder_mordor_ac, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_mordor],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_harad, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_harad],
+	[-1, trp_smith_harad, trp_merchant_harad, trp_elder_harad_ac, pt_harad_recruits, trp_harad_lord,trp_harad_desert_warrior,trp_harad_desert_warrior,trp_harad_infantry,trp_harondor_rider], 
+	[icon_mfc_harad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_rhun, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_rhun_north],
+	[-1, trp_smith_north_rhun, trp_merchant_north_rhun, trp_elder_rhun_ac, pt_rhun_recruits,  trp_rhun_lord, trp_rhun_noble_cavalry, trp_rhun_vet_infantry, trp_rhun_tribesman, trp_rhun_tribal_warrior, ], 
+	[icon_mfc_rhun],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_khand, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_khand, trp_merchant_khand, trp_elder_khand_ac, pt_khand_recruits, trp_khand_lord, trp_easterling_youth, trp_easterling_axeman,trp_khand_glaive_whirler,trp_variag_pitfighter], 
+	[icon_mfc_khand],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_umbar, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar_ac, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_assassin_of_umbar,trp_militia_of_umbar], 
+	[icon_mfc_umbar],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_lorien, [scn_advcamp_good, -1, -1, -1, -1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_camroth, trp_merchant_camroth, trp_elder_lorien_ac, pt_lorien_recruits,  trp_lorien_lord, trp_lothlorien_scout, trp_lothlorien_archer, trp_lothlorien_infantry, trp_lothlorien_warden], 
+	[icon_mfc_lorien],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_imladris, [scn_advcamp_good, -1, -1,-1,-1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris_ac, pt_imladris_recruits, trp_imladris_lord, trp_rivendell_scout,trp_rivendell_infantry, trp_rivendell_sentinel,trp_dunedain_scout], 
+	[icon_mfc_imladris],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_woodelf, [scn_advcamp_good, -1, -1,-1,-1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_elder_woodelf_ac, pt_woodelf_recruits, trp_woodelf_lord, trp_greenwood_archer, trp_greenwood_scout, trp_greenwood_archer, trp_greenwood_spearman], 
+	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_moria, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_moria, trp_merchant_moria, trp_elder_moria_ac, pt_moria_recruits, trp_moria_lord,trp_snaga_of_moria,trp_goblin_of_moria,trp_wolf_rider_of_moria,trp_large_goblin_of_moria], 
+	[icon_mfc_moria],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_guldur, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_dolguldur, trp_merchant_dolguldur, trp_elder_guldur_ac, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
+	[icon_mfc_guldur],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_gundabad, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda_ac, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_dale, [scn_advcamp_good, -1, -1, -1, -1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_dale_ac, pt_dale_recruits, trp_dale_lord,trp_dale_warrior,trp_dale_billman,trp_dale_marchwarden,trp_laketown_archer], 
+	[icon_mfc_dale],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_dwarf, [scn_advcamp_good, -1, -1,-1,-1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_elder_dwarf_ac, pt_dwarf_recruits, trp_dwarf_lord,trp_dwarven_lookout, trp_dwarven_bowman, trp_iron_hills_infantry, trp_iron_hills_miner], 
+	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
+(p_advcamp_dunland, [scn_advcamp_bad, -1, -1,-1,-1, scn_advcamp_bad, mesh_town_evilcamp],
+	[-1, trp_smith_dunland, trp_merchant_dunland, trp_elder_dunland_ac, pt_dunland_recruits, trp_dunland_lord, trp_dunnish_wildman,trp_dunnish_warrior, trp_dunnish_pikeman, trp_dunnish_wolf_guard], 
+	[icon_mfc_dunland],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
+(p_advcamp_beorn, [scn_advcamp_good, -1, -1,-1,-1, scn_advcamp_good_siege, mesh_town_goodcamp],
+	[-1, trp_smith_beorn, trp_merchant_woodmen, trp_elder_beorn_ac, pt_beorn_recruits, trp_beorn_lord, trp_beorning_carrock_berserker, trp_beorning_sentinel, trp_beorning_warrior, trp_beorning_tolltacker], 
+	[icon_mfc_northmen],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
 ]
 
 # evil camps that will appear only when War starts
 centers_disabled_at_start =	[
-  "p_town_orc_sentry_camp","p_town_urukhai_outpost","p_town_urukhai_r_camp",#"p_town_dunland_camp",
-  "p_town_dol_guldur_north_outpost","p_town_rhun_south_camp","p_town_rhun_north_camp","p_town_gundabad_ne_outpost", 
-  "p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost"
+  p_town_orc_sentry_camp, p_town_urukhai_outpost, p_town_urukhai_r_camp,#p_town_dunland_camp,
+  p_town_dol_guldur_north_outpost, p_town_rhun_south_camp, p_town_rhun_north_camp, p_town_gundabad_ne_outpost, 
+  p_town_gundabad_nw_outpost, p_town_goblin_north_outpost, p_town_goblin_south_outpost, p_town_gundabad_m_outpost
 ]		 
 #### end of center descriptions
 
@@ -1688,41 +1698,41 @@ centers_disabled_at_start =	[
 
 # trade routes structure. 1st town in line connected with all others in line. Repeat for each line. 
 routes_list = [ 
- ("p_town_minas_tirith" , "p_town_pelargir", "p_town_dol_amroth", "p_town_erech", "p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold", "p_advcamp_gondor"),
- ("p_town_pelargir"     , "p_town_dol_amroth", "p_town_lossarnach", "p_town_erech", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold"),
- ("p_town_linhir"       , "p_town_dol_amroth", "p_town_edhellond", "p_town_lossarnach", "p_town_tarnost", "p_town_westfold", "p_town_west_emnet", "p_town_minas_morgul"),
- ("p_town_dol_amroth"   , "p_town_lossarnach", "p_town_hornburg", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold"),
- ("p_town_edhellond"    , "p_town_lossarnach", "p_town_tarnost", "p_town_westfold", "p_town_west_emnet"),
- ("p_town_lossarnach"   , "p_town_tarnost", "p_town_edoras", "p_town_east_emnet", "p_town_west_emnet", "p_town_eastfold", "p_town_morannon"),
- ("p_town_tarnost"      , "p_town_aldburg", "p_town_edoras", "p_town_east_emnet", "p_town_westfold", "p_town_west_emnet", "p_town_eastfold"),
- ("p_town_erech"        , "p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_eastfold"),
- ("p_town_pinnath_gelin", "p_town_edoras", "p_town_hornburg", "p_town_east_emnet", "p_town_eastfold"),
- ("p_town_aldburg"      , "p_town_edoras", "p_town_westfold"),
- ("p_town_edoras"       , "p_town_hornburg", "p_town_east_emnet", "p_town_westfold", "p_town_eastfold", "p_advcamp_rohan"),
- ("p_town_hornburg"     , "p_town_east_emnet", "p_town_eastfold"),
- ("p_town_eastfold"     , "p_town_east_emnet", "p_town_west_emnet"),
- ("p_town_morannon"     , "p_town_minas_morgul", "p_town_cirith_ungol","p_town_east_osgiliath", "p_advcamp_mordor"),
- ("p_town_erebor"       , "p_town_dale","p_town_esgaroth", "p_town_ironhill_camp", "p_advcamp_dwarf"),
- ("p_town_dale"         , "p_advcamp_dale"),
- ("p_town_isengard"     , "p_town_urukhai_outpost","p_town_urukhai_h_camp","p_town_urukhai_r_camp", "p_advcamp_isengard"),
- ("p_town_gundabad"     , "p_town_gundabad_ne_outpost","p_town_gundabad_nw_outpost","p_town_goblin_north_outpost","p_town_goblin_south_outpost","p_town_gundabad_m_outpost", "p_advcamp_gundabad"),
- ("p_town_dol_guldur"   , "p_town_dol_guldur_north_outpost", "p_advcamp_guldur"),
- ("p_town_caras_galadhon", "p_town_thranduils_halls", "p_town_imladris_camp", "p_town_cerin_dolen", "p_town_cerin_amroth", "p_advcamp_lorien"),
- ("p_town_thranduils_halls", "p_town_imladris_camp", "p_town_woodelf_camp", "p_town_woodelf_west_camp", "p_advcamp_woodelf"),
- ("p_town_imladris_camp", "p_advcamp_imladris"),
+ (p_town_minas_tirith , p_town_pelargir, p_town_dol_amroth, p_town_erech, p_town_pinnath_gelin, p_town_edoras, p_town_hornburg, p_town_east_emnet, p_town_west_emnet, p_town_eastfold, p_advcamp_gondor),
+ (p_town_pelargir     , p_town_dol_amroth, p_town_lossarnach, p_town_erech, p_town_hornburg, p_town_east_emnet, p_town_west_emnet, p_town_eastfold),
+ (p_town_linhir       , p_town_dol_amroth, p_town_edhellond, p_town_lossarnach, p_town_tarnost, p_town_westfold, p_town_west_emnet, p_town_minas_morgul),
+ (p_town_dol_amroth   , p_town_lossarnach, p_town_hornburg, p_town_east_emnet, p_town_west_emnet, p_town_eastfold),
+ (p_town_edhellond    , p_town_lossarnach, p_town_tarnost, p_town_westfold, p_town_west_emnet),
+ (p_town_lossarnach   , p_town_tarnost, p_town_edoras, p_town_east_emnet, p_town_west_emnet, p_town_eastfold, p_town_morannon),
+ (p_town_tarnost      , p_town_aldburg, p_town_edoras, p_town_east_emnet, p_town_westfold, p_town_west_emnet, p_town_eastfold),
+ (p_town_erech        , p_town_pinnath_gelin, p_town_edoras, p_town_hornburg, p_town_east_emnet, p_town_eastfold),
+ (p_town_pinnath_gelin, p_town_edoras, p_town_hornburg, p_town_east_emnet, p_town_eastfold),
+ (p_town_aldburg      , p_town_edoras, p_town_westfold),
+ (p_town_edoras       , p_town_hornburg, p_town_east_emnet, p_town_westfold, p_town_eastfold, p_advcamp_rohan),
+ (p_town_hornburg     , p_town_east_emnet, p_town_eastfold),
+ (p_town_eastfold     , p_town_east_emnet, p_town_west_emnet),
+ (p_town_morannon     , p_town_minas_morgul, p_town_cirith_ungol,p_town_east_osgiliath, p_advcamp_mordor),
+ (p_town_erebor       , p_town_dale,p_town_esgaroth, p_town_ironhill_camp, p_advcamp_dwarf),
+ (p_town_dale         , p_advcamp_dale),
+ (p_town_isengard     , p_town_urukhai_outpost,p_town_urukhai_h_camp,p_town_urukhai_r_camp, p_advcamp_isengard),
+ (p_town_gundabad     , p_town_gundabad_ne_outpost,p_town_gundabad_nw_outpost,p_town_goblin_north_outpost,p_town_goblin_south_outpost,p_town_gundabad_m_outpost, p_advcamp_gundabad),
+ (p_town_dol_guldur   , p_town_dol_guldur_north_outpost, p_advcamp_guldur),
+ (p_town_caras_galadhon, p_town_thranduils_halls, p_town_imladris_camp, p_town_cerin_dolen, p_town_cerin_amroth, p_advcamp_lorien),
+ (p_town_thranduils_halls, p_town_imladris_camp, p_town_woodelf_camp, p_town_woodelf_west_camp, p_advcamp_woodelf),
+ (p_town_imladris_camp, p_advcamp_imladris),
 ]
 
-lords_spawn = [ ("trp_knight_1_1","p_town_calembel"),
-				("trp_knight_1_3","p_town_dol_amroth"),
-				("trp_knight_1_4","p_town_pelargir"),
-				("trp_knight_1_5","p_town_erech"),
-                ("trp_knight_1_6","p_town_pinnath_gelin"),
-				("trp_knight_1_7","p_town_west_osgiliath"),
-				("trp_knight_1_8","p_town_lossarnach"),
-				("trp_knight_2_51","p_town_minas_morgul"),
-				("trp_knight_5_3","p_town_esgaroth"),
-				("trp_knight_5_1","p_town_dale"),
-				("trp_knight_5_2","p_town_dale"),
+lords_spawn = [ (trp_knight_1_1,p_town_calembel),
+				(trp_knight_1_3,p_town_dol_amroth),
+				(trp_knight_1_4,p_town_pelargir),
+				(trp_knight_1_5,p_town_erech),
+                (trp_knight_1_6,p_town_pinnath_gelin),
+				(trp_knight_1_7,p_town_west_osgiliath),
+				(trp_knight_1_8,p_town_lossarnach),
+				(trp_knight_2_51,p_town_minas_morgul),
+				(trp_knight_5_3,p_town_esgaroth),
+				(trp_knight_5_1,p_town_dale),
+				(trp_knight_5_2,p_town_dale),
 ]
 
 #### banner colors #0-130
@@ -1747,56 +1757,56 @@ cheat_switch = 1
 # TLD faction ranks end
 
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)
- ("fac_gondor"  ,"str_gondor_rumor_begin"  ,"str_dwarf_rumor_begin"   ,"snd_gondor_ambiance" ,"snd_wind_ambiance"      ,"snd_gondor_occasional"),
- ("fac_rohan"   ,"str_rohan_rumor_begin"   ,"str_gondor_rumor_begin"  ,"snd_rohan_ambiance"  ,"snd_wind_ambiance"      ,"snd_rohan_occasional"),
- ("fac_isengard","str_isengard_rumor_begin","str_rhun_rumor_begin"    ,"snd_orcs_ambiance"   ,"snd_wind_ambiance"      ,"snd_urukhai_occasional"),
- ("fac_mordor"  ,"str_mordor_rumor_begin"  ,"str_isengard_rumor_begin",0                     ,"snd_wind_ambiance"      ,"snd_orc_occasional"),
- ("fac_harad"   ,"str_harad_rumor_begin"   ,"str_gunda_rumor_begin"   ,"snd_harad_ambiance"  ,"snd_wind_ambiance"      ,"snd_harad_occasional"),
- ("fac_rhun"    ,"str_rhun_rumor_begin"    ,"str_dunland_rumor_begin" ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
- ("fac_khand"   ,"str_khand_rumor_begin"   ,"str_good_rumor_begin"    ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_rhun_occasional"),
- ("fac_umbar"   ,"str_umbar_rumor_begin"   ,"str_khand_rumor_begin"   ,"snd_evilmen_ambiance","snd_water_waves_ambiance","snd_umbar_occasional"),
- ("fac_lorien"  ,"str_lorien_rumor_begin"  ,"str_imladris_rumor_begin",0                     ,"snd_goodforest_ambiance","snd_lorien_occasional"),
- ("fac_imladris","str_imladris_rumor_begin","str_woodelf_rumor_begin" ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
- ("fac_woodelf" ,"str_woodelf_rumor_begin" ,"str_dale_rumor_begin"    ,0                     ,"snd_goodforest_ambiance","snd_elves_occasional"),
- ("fac_moria"   ,"str_moria_rumor_begin"   ,"str_umbar_rumor_begin"   ,0                     ,"snd_moria_ambiance"     ,"snd_moria_occasional"),
- ("fac_guldur"  ,"str_mordor_rumor_begin"  ,"str_isengard_rumor_begin","snd_orcs_ambiance"   ,"snd_evilforest_ambiance","snd_orc_occasional"),
- ("fac_gundabad","str_gunda_rumor_begin"   ,"str_moria_rumor_begin"   ,"snd_orcs_ambiance"   ,"snd_wind_ambiance"      ,"snd_orc_occasional"),
- ("fac_dale"    ,"str_dale_rumor_begin"    ,"str_harad_rumor_begin"   ,"snd_rohan_ambiance"  ,"snd_wind_ambiance"      ,"snd_dale_occasional"),
- ("fac_dwarf"   ,"str_dwarf_rumor_begin"   ,"str_mordor_rumor_begin"  ,"snd_dwarf_ambiance"  ,"snd_wind_ambiance"      ,"snd_dwarf_occasional"),
- ("fac_dunland" ,"str_dunland_rumor_begin" ,"str_beorn_rumor_begin"   ,"snd_evilmen_ambiance","snd_wind_ambiance"      ,"snd_dunland_occasional"),
- ("fac_beorn"   ,"str_beorn_rumor_begin"   ,"str_lorien_rumor_begin"  ,"snd_rohan_ambiance"  ,"snd_goodforest_ambiance","snd_beorn_occasional"),
+ (fac_gondor  ,str_gondor_rumor_begin  ,str_dwarf_rumor_begin   ,snd_gondor_ambiance ,snd_wind_ambiance      ,snd_gondor_occasional),
+ (fac_rohan   ,str_rohan_rumor_begin   ,str_gondor_rumor_begin  ,snd_rohan_ambiance  ,snd_wind_ambiance      ,snd_rohan_occasional),
+ (fac_isengard,str_isengard_rumor_begin,str_rhun_rumor_begin    ,snd_orcs_ambiance   ,snd_wind_ambiance      ,snd_urukhai_occasional),
+ (fac_mordor  ,str_mordor_rumor_begin  ,str_isengard_rumor_begin,0                   ,snd_wind_ambiance      ,snd_orc_occasional),
+ (fac_harad   ,str_harad_rumor_begin   ,str_gunda_rumor_begin   ,snd_harad_ambiance  ,snd_wind_ambiance      ,snd_harad_occasional),
+ (fac_rhun    ,str_rhun_rumor_begin    ,str_dunland_rumor_begin ,snd_evilmen_ambiance,snd_wind_ambiance      ,snd_rhun_occasional),
+ (fac_khand   ,str_khand_rumor_begin   ,str_good_rumor_begin    ,snd_evilmen_ambiance,snd_wind_ambiance      ,snd_rhun_occasional),
+ (fac_umbar   ,str_umbar_rumor_begin   ,str_khand_rumor_begin   ,snd_evilmen_ambiance,snd_water_waves_ambiance,snd_umbar_occasional),
+ (fac_lorien  ,str_lorien_rumor_begin  ,str_imladris_rumor_begin,0                   ,snd_goodforest_ambiance,snd_lorien_occasional),
+ (fac_imladris,str_imladris_rumor_begin,str_woodelf_rumor_begin ,0                   ,snd_goodforest_ambiance,snd_elves_occasional),
+ (fac_woodelf ,str_woodelf_rumor_begin ,str_dale_rumor_begin    ,0                   ,snd_goodforest_ambiance,snd_elves_occasional),
+ (fac_moria   ,str_moria_rumor_begin   ,str_umbar_rumor_begin   ,0                   ,snd_moria_ambiance     ,snd_moria_occasional),
+ (fac_guldur  ,str_mordor_rumor_begin  ,str_isengard_rumor_begin,snd_orcs_ambiance   ,snd_evilforest_ambiance,snd_orc_occasional),
+ (fac_gundabad,str_gunda_rumor_begin   ,str_moria_rumor_begin   ,snd_orcs_ambiance   ,snd_wind_ambiance      ,snd_orc_occasional),
+ (fac_dale    ,str_dale_rumor_begin    ,str_harad_rumor_begin   ,snd_rohan_ambiance  ,snd_wind_ambiance      ,snd_dale_occasional),
+ (fac_dwarf   ,str_dwarf_rumor_begin   ,str_mordor_rumor_begin  ,snd_dwarf_ambiance  ,snd_wind_ambiance      ,snd_dwarf_occasional),
+ (fac_dunland ,str_dunland_rumor_begin ,str_beorn_rumor_begin   ,snd_evilmen_ambiance,snd_wind_ambiance      ,snd_dunland_occasional),
+ (fac_beorn   ,str_beorn_rumor_begin   ,str_lorien_rumor_begin  ,snd_rohan_ambiance  ,snd_goodforest_ambiance,snd_beorn_occasional),
 ]
 # specific ambient sounds for selected centers  ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[
 center_sounds=[#center      specific day ambiance , specific always ambiance      , occasional sounds (later to be divided into occasional nature and occasional faction)
-    ("p_town_dol_amroth"   ,"snd_gondor_ambiance" ,"snd_water_waves_ambiance"     ,"snd_seaside_occasional"),
-    ("p_town_pelargir"     ,"snd_gondor_ambiance" ,"snd_water_wavesplash_ambiance","snd_seaside_occasional"),
-    ("p_town_edhellond"    ,"snd_gondor_ambiance" ,"snd_water_waves_ambiance"     ,"snd_seaside_occasional"),
-    ("p_town_cair_andros"  ,0                     ,"snd_water_splash_ambiance"    ,"snd_elves_occasional"),
-    ("p_town_henneth_annun",0                     ,"snd_henneth_ambiance"         ,"snd_elves_occasional"),
-    ("p_town_isengard"     ,"snd_orcs_ambiance"   ,"snd_isengard_ambiance"        ,"snd_isengard_occasional"),
-    ("p_town_west_osgiliath",0                    ,0         					  ,"snd_wosgi_occasional"),
-    ("p_town_east_osgiliath",0                    ,0 		           			  ,"snd_eosgi_occasional"),
-    ("p_town_esgaroth"     ,"snd_town_ambiance"   ,"snd_water_splash_ambiance"    ,"snd_dale_occasional"),
-    ("p_town_lossarnach"   ,"snd_gondor_ambiance" ,"snd_goodforest_ambiance"      ,"snd_elves_occasional"),
-    ("p_town_pinnath_gelin","snd_gondor_ambiance" ,"snd_goodforest_ambiance"      ,"snd_elves_occasional"),
-    ("p_town_erebor"       ,"snd_town_ambiance"   ,"snd_moria_ambiance"           ,"snd_dwarf_occasional"),
-    ("p_town_minas_morgul" ,0                     ,"snd_morgul_ambiance"          ,"snd_morgul_occasional"),
-    ("p_town_gundabad_m_outpost","snd_orcs_ambiance","snd_evilforest_ambiance","snd_orc_occasional"),
-    ("p_town_troll_cave"   ,0                     ,"snd_evilforest_ambiance"      ,"snd_orc_occasional"),
-    ("p_town_morannon"     ,0                     ,"snd_wind_ambiance"            ,0),
+    (p_town_dol_amroth   ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
+    (p_town_pelargir     ,snd_gondor_ambiance ,snd_water_wavesplash_ambiance,snd_seaside_occasional),
+    (p_town_edhellond    ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
+    (p_town_cair_andros  ,0                   ,snd_water_splash_ambiance    ,snd_elves_occasional),
+    (p_town_henneth_annun,0                   ,snd_henneth_ambiance         ,snd_elves_occasional),
+    (p_town_isengard     ,snd_orcs_ambiance   ,snd_isengard_ambiance        ,snd_isengard_occasional),
+    (p_town_west_osgiliath,0                  ,0         					,snd_wosgi_occasional),
+    (p_town_east_osgiliath,0                  ,0 		           			,snd_eosgi_occasional),
+    (p_town_esgaroth     ,snd_town_ambiance   ,snd_water_splash_ambiance    ,snd_dale_occasional),
+    (p_town_lossarnach   ,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
+    (p_town_pinnath_gelin,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
+    (p_town_erebor       ,snd_town_ambiance   ,snd_moria_ambiance           ,snd_dwarf_occasional),
+    (p_town_minas_morgul ,0                   ,snd_morgul_ambiance          ,snd_morgul_occasional),
+    (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance,snd_orc_occasional),
+    (p_town_troll_cave   ,0                   ,snd_evilforest_ambiance      ,snd_orc_occasional),
+    (p_town_morannon     ,0                   ,snd_wind_ambiance            ,0),
 ] 
 
 ## tableau meshes list for factions
 fac_tableau_list = [
-[("tableau_tld_tunic", ["mesh_tableau_mesh_gondor_tunic_a", "mesh_tableau_mesh_gondor_tunic_b"]),],#fac_gondor = 3
+[(tableau_tld_tunic, [mesh_tableau_mesh_gondor_tunic_a, mesh_tableau_mesh_gondor_tunic_b]),],#fac_gondor = 3
 [],#fac_dwarf = 4
-[("tableau_tld_tunic", ["mesh_tableau_mesh_rohan_tunic"]),],#fac_rohan = 5
+[(tableau_tld_tunic, [mesh_tableau_mesh_rohan_tunic]),],#fac_rohan = 5
 [],#fac_mordor = 6
 [],#fac_isengard = 7
 [],#fac_lorien = 8
 [],#fac_imladris = 9
 [],#fac_woodelf = 10
-[("tableau_tld_tunic", ["mesh_tableau_mesh_dale_tunic"]),],#fac_dale = 11
+[(tableau_tld_tunic, [mesh_tableau_mesh_dale_tunic]),],#fac_dale = 11
 [],#fac_harad = 12
 [],#fac_rhun = 13
 [],#fac_khand = 14
@@ -1805,48 +1815,48 @@ fac_tableau_list = [
 [],#fac_guldur = 17
 [],#fac_gundabad = 18
 [],#fac_dunland = 19
-[("tableau_tld_tunic", ["mesh_tableau_mesh_woodman_tunic"]),],#fac_beorn = 20
+[(tableau_tld_tunic, [mesh_tableau_mesh_woodman_tunic]),],#fac_beorn = 20
 ]
 
 ## Reward items (rank number 0-9, item id, item modifier)
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
-[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4,"itm_gondor_hunter", imod_lordly), (5, "itm_gon_tower_knight", imod_reinforced), (6, "itm_ring_a_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_westernesse1h_reward", 0), (9, "itm_horn_gondor_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4,itm_gondor_hunter, imod_lordly), (5, itm_gon_tower_knight, imod_reinforced), (6, itm_ring_a_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
 #fac_dwarf
-[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_dwarf_shield_j", imod_reinforced), (5, "itm_scroll_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_dwarf_armor_c", imod_lordly), (8, "itm_dwarf_great_axe", imod_masterwork), (9, "itm_dwarf_helm_p", imod_lordly)],
+[(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_dwarf_shield_j, imod_reinforced), (5, itm_scroll_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe, imod_masterwork), (9, itm_dwarf_helm_p, imod_lordly)],
 #fac_rohan
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_scroll_reward", 0), (5, "itm_rohan_spear", imod_balanced), (6, "itm_eorl_cavalry_sword", 0), (7, "itm_rohan_saddle", 0), (8, "itm_rohan_armor_s", imod_lordly), (9, "itm_mearas_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_scroll_reward, 0), (5, itm_rohan_spear, imod_balanced), (6, itm_eorl_cavalry_sword, 0), (7, itm_rohan_saddle, 0), (8, itm_rohan_armor_s, imod_lordly), (9, itm_mearas_reward, 0)],
 #fac_mordor
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_mordor_warhorse2", imod_heavy), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_m_cap_armor", imod_lordly), (8, "itm_nazgul_sword", 0), (9, "itm_witchking_helmet", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_warhorse2, imod_heavy), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_m_cap_armor, imod_lordly), (8, itm_nazgul_sword, 0), (9, itm_witchking_helmet, 0)],
 #fac_isengard
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_crebain_reward", 0), (5, "itm_warg_reward", 0), (6, "itm_torque_reward", 0), (7, "itm_silmarillion_reward", 0), (8, "itm_isen_uruk_heavy_c", imod_lordly), (9, "itm_explosive_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_crebain_reward, 0), (5, itm_warg_reward, 0), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_c, imod_lordly), (9, itm_explosive_reward, 0)],
 #fac_lorien
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_lorien_bow", imod_strong), (6, "itm_silmarillion_reward", 0), (7, "itm_lorien_sword_c", imod_masterwork), (8, "itm_lorien_armor_f", imod_lordly), (9, "itm_phial_reward", 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_lorien_bow, imod_strong), (6, itm_silmarillion_reward, 0), (7, itm_lorien_sword_c, imod_masterwork), (8, itm_lorien_royal_armor, imod_lordly), (9, itm_phial_reward, 0)],
 #fac_imladris
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_miruvor_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_riv_warhorse2", imod_champion), (8, "itm_sword_of_arathorn", 0), (9, "itm_riv_armor_reward", 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_riv_warhorse2, imod_champion), (8, itm_sword_of_arathorn, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
-[(2,"itm_lembas"          ,0),(3,"itm_athelas_reward",0),(4,"itm_elven_amulet_reward", 0), (5, "itm_scroll_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_mirkwood_great_spear", imod_balanced), (8, "itm_mirkwood_armor_e", imod_lordly), (9, "itm_mirkwood_sword_reward", 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_scroll_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_mirkwood_great_spear, imod_balanced), (8, itm_mirkwood_armor_e, imod_lordly), (9, itm_mirkwood_sword_reward, 0)],
 #fac_dale
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_dale_horse", imod_spirited), (5, "itm_scroll_reward", 0), (6, "itm_herbarium_reward", 0), (7, "itm_dale_sword_long", imod_masterwork), (8, "itm_dale_armor_l", imod_lordly), (9, "itm_dale_bow_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_dale_horse, imod_spirited), (5, itm_scroll_reward, 0), (6, itm_herbarium_reward, 0), (7, itm_dale_sword_long, imod_masterwork), (8, itm_dale_armor_l, imod_lordly), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_lg_bow", imod_masterwork), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_westernesse2h_reward", 0), (8, "itm_harad_lion_scale", imod_lordly), (9, "itm_harad_totem_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_masterwork), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_westernesse2h_reward, 0), (8, itm_harad_lion_scale, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4,"itm_rhun_helm_n", imod_reinforced), (5, "itm_rhun_sword", imod_balanced), (6, "itm_herbarium_reward", 0), (7, "itm_rhun_greatsword", imod_masterwork), (8, "itm_rhun_armor_k", imod_lordly), (9, "itm_rhun_horse_h", imod_champion)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_rhun_helm_n, imod_reinforced), (5, itm_rhun_sword, imod_balanced), (6, itm_herbarium_reward, 0), (7, itm_rhun_greatsword, imod_masterwork), (8, itm_rhun_armor_k, imod_lordly), (9, itm_rhun_horse_h, imod_champion)],
 #fac_khand
-[(2,"itm_cooking_cauldron",0),(3,"itm_hammer_reward" ,0),(4,"itm_khand_voulge", imod_balanced), (5, "itm_torque_reward", 0), (6, "itm_ring_a_reward", 0), (7, "itm_khand_heavy_lam", imod_lordly), (8, "itm_variag_kataphrakt", imod_champion), (9, "itm_khand_knife_reward", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_khand_voulge, imod_balanced), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_khand_heavy_lam, imod_lordly), (8, itm_variag_kataphrakt, imod_champion), (9, itm_khand_knife_reward, 0)],
 #fac_umbar
-[(2,"itm_cooking_cauldron",0),(3,"itm_map"           ,0),(4,"itm_corsair_throwing_dagger", imod_large_bag), (5, "itm_umb_helm_f", imod_reinforced), (6, "itm_ring_b_reward", 0), (7, "itm_umbar_pike", imod_masterwork), (8, "itm_umb_armor_h", imod_lordly), (9, "itm_corsair_trident", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger, imod_large_bag), (5, itm_umb_helm_f, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_umbar_pike, imod_masterwork), (8, itm_umb_armor_h, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4,"itm_moria_orc_shield_c", imod_reinforced), (5, "itm_warg_reward", 0), (6, "itm_ring_b_reward", 0), (7, "itm_orc_two_handed_axe", imod_masterwork), (8, "itm_moria_armor_e", imod_lordly), (9, "itm_orc_bow", imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_orc_two_handed_axe, imod_masterwork), (8, itm_moria_armor_e, imod_lordly), (9, itm_orc_bow, imod_masterwork)],
 #fac_guldur
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0), (7,"itm_angmar_whip_reward", 0), (9, "itm_witchking_helmet", 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0), (7,itm_angmar_whip_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
-[(2,"itm_cooking_cauldron",0),(3,"itm_orc_brew"      ,0),(4, "itm_orc_throwing_axes", imod_large_bag), (5, "itm_warg_reward", 0), (6, "itm_angmar_whip_reward", 0), (7, "itm_gundabad_helm_e", imod_lordly), (8, "itm_gundabad_armor_e", imod_lordly), (9, "itm_angmar_shield", imod_reinforced)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes, imod_large_bag), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_angmar_shield, imod_reinforced)],
 #fac_dunland
-[(2,"itm_cooking_cauldron",0),(3,"itm_garlic_reward" ,0),(4, "itm_dun_shield_b", imod_reinforced), (5, "itm_torque_reward", 0), (6, "itm_dunnish_pike", imod_balanced), (7, "itm_dun_helm_e", imod_lordly), (8, "itm_dunland_armor_k", imod_lordly), (9, "itm_dun_berserker", imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_dun_shield_b, imod_reinforced), (5, itm_torque_reward, 0), (6, itm_dunnish_pike, imod_balanced), (7, itm_dun_helm_e, imod_lordly), (8, itm_dunland_armor_k, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
-[(2,"itm_cooking_cauldron",0),(3,"itm_athelas_reward",0),(4, "itm_leather_gloves", imod_reinforced), (5, "itm_beorn_shield", imod_reinforced), (6, "itm_herbarium_reward", 0), (7, "itm_beorn_staff", imod_balanced), (8, "itm_beorn_heavy", imod_lordly), (9, "itm_beorn_battle_axe", imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4, itm_leather_gloves, imod_reinforced), (5, itm_beorn_shield, imod_reinforced), (6, itm_herbarium_reward, 0), (7, itm_beorn_staff, imod_balanced), (8, itm_beorn_heavy, imod_lordly), (9, itm_beorn_battle_axe, imod_masterwork)],
 ]
 
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)
@@ -1952,37 +1962,37 @@ orc_bonus_denominator = 3
 # party player icons (mtarini)
 # for each faction: icon-mounted, icon-on-foot (melee), icon-on-foot (ranged)
 faction_player_icons = [
-    ("fac_gondor"  ,"icon_knight_gondor"			,"icon_footman_gondor"	,"icon_ithilien_ranger"),
-    ("fac_rohan"   ,"icon_knight_rohan"				,"icon_player"			,"icon_player"),
-    ("fac_isengard","icon_wargrider_run"			,"icon_uruk_isengard"	,"icon_uruk_isengard"), # assuming uruk orc (not uruk or evil man). Evil men will be deatl separately
-    ("fac_mordor"  ,"icon_wargrider_run"         	,"icon_uruk"			,"icon_uruk"),         # same thing
-    ("fac_harad"   ,"icon_harad_horseman"			,"icon_player"			,"icon_player"),       
-    ("fac_rhun"    ,"icon_easterling_horseman"		,"icon_player"			,"icon_player"),
-    ("fac_khand"   ,"icon_easterling_horseman"		,"icon_player"			,"icon_player"),
-    ("fac_umbar"   ,"icon_umbar_captain"			,"icon_umbar_corsair"	,"icon_umbar_corsair"),
-    ("fac_lorien"  ,"icon_knight_rivendell"			,"icon_lorien_elf_b"	,"icon_lorien_elf_a"),
-    ("fac_imladris","icon_lamedon_horseman"			,"icon_mirkwood_elf"	,"icon_mirkwood_elf"),
-    ("fac_woodelf" ,"icon_player_horseman"			,"icon_mirkwood_elf"	,"icon_mirkwood_elf"),
-    ("fac_moria"   ,"icon_wargrider_run"		    ,"icon_orc"				,"icon_orc"),
-    ("fac_guldur"  ,"icon_wargrider_run"		    ,"icon_orc"				,"icon_orc"),
-    ("fac_gundabad","icon_wargrider_run"		    ,"icon_orc"				,"icon_orc"),
-    ("fac_dale"    ,"icon_player_horseman"			,"icon_player"			,"icon_player"),
-    ("fac_dwarf"   ,"icon_player_horseman"			,"icon_dwarf"			,"icon_dwarf"),
-    ("fac_dunland" ,"icon_dunland_captain"			,"icon_dunlander"		,"icon_dunlander"),
-    ("fac_beorn"   ,"icon_player_horseman"			,"icon_player"			,"icon_player"),
+    (fac_gondor  ,icon_knight_gondor			,icon_footman_gondor,icon_ithilien_ranger),
+    (fac_rohan   ,icon_knight_rohan				,icon_player		,icon_player),
+    (fac_isengard,icon_wargrider_run			,icon_uruk_isengard	,icon_uruk_isengard), # assuming uruk orc (not uruk or evil man). Evil men will be deatl separately
+    (fac_mordor  ,icon_wargrider_run         	,icon_uruk			,icon_uruk),         # same thing
+    (fac_harad   ,icon_harad_horseman			,icon_player		,icon_player),       
+    (fac_rhun    ,icon_easterling_horseman		,icon_player		,icon_player),
+    (fac_khand   ,icon_easterling_horseman		,icon_player		,icon_player),
+    (fac_umbar   ,icon_umbar_captain			,icon_umbar_corsair	,icon_umbar_corsair),
+    (fac_lorien  ,icon_knight_rivendell			,icon_lorien_elf_b	,icon_lorien_elf_a),
+    (fac_imladris,icon_lamedon_horseman			,icon_mirkwood_elf	,icon_mirkwood_elf),
+    (fac_woodelf ,icon_player_horseman			,icon_mirkwood_elf	,icon_mirkwood_elf),
+    (fac_moria   ,icon_wargrider_run		    ,icon_orc			,icon_orc),
+    (fac_guldur  ,icon_wargrider_run		    ,icon_orc			,icon_orc),
+    (fac_gundabad,icon_wargrider_run		    ,icon_orc			,icon_orc),
+    (fac_dale    ,icon_player_horseman			,icon_player		,icon_player),
+    (fac_dwarf   ,icon_player_horseman			,icon_dwarf			,icon_dwarf),
+    (fac_dunland ,icon_dunland_captain			,icon_dunlander		,icon_dunlander),
+    (fac_beorn   ,icon_player_horseman			,icon_player		,icon_player),
 ]
 subfac_regular = 0  # the capital (Gondor or Rohan)
 
 
 subfaction_gondor_player_icons = [
-    (subfac_regular  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
-    (subfac_pelargir  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
-    (subfac_dol_amroth,		"icon_knight_dolamroth" ,"icon_footman_gondor"	,"icon_ithilien_ranger"),
-    (subfac_ethring ,		"icon_lamedon_horseman"	,"icon_footman_lamedon"	,"icon_ithilien_ranger"),
-    (subfac_lossarnach ,	"icon_knight_gondor"	,"icon_lossarnach_axeman_icon"	,"icon_ithilien_ranger"),
-    (subfac_pinnath_gelin ,	"icon_knight_gondor"	,"icon_footman_pinnath"	,"icon_ithilien_ranger"),
-    (subfac_blackroot  ,	"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
-    (subfac_rangers  ,		"icon_knight_gondor"	,"icon_footman_gondor"	,"icon_ithilien_ranger"),
+    (subfac_regular  ,		icon_knight_gondor	,icon_footman_gondor	,icon_ithilien_ranger),
+    (subfac_pelargir  ,		icon_knight_gondor	,icon_footman_gondor	,icon_ithilien_ranger),
+    (subfac_dol_amroth,		icon_knight_dolamroth,icon_footman_gondor	,icon_ithilien_ranger),
+    (subfac_ethring ,		icon_lamedon_horseman,icon_footman_lamedon	,icon_ithilien_ranger),
+    (subfac_lossarnach ,	icon_knight_gondor	,icon_lossarnach_axeman_icon,icon_ithilien_ranger),
+    (subfac_pinnath_gelin ,	icon_knight_gondor	,icon_footman_pinnath	,icon_ithilien_ranger),
+    (subfac_blackroot  ,	icon_knight_gondor	,icon_footman_gondor	,icon_ithilien_ranger),
+    (subfac_rangers  ,		icon_knight_gondor	,icon_footman_gondor	,icon_ithilien_ranger),
 ]
 
 # Daytime/Nighttime penalties system (foxyman)

@@ -1846,7 +1846,7 @@ troops = [
 # end TLD walkers
 
 # Ryan BEGIN
-["Ramun_the_slave_trader","Ramun_the_slave_trader","_",tf_hero,0,0,fac_commoners,
+["ramun_the_slave_trader","Ramun_the_slave_trader","_",tf_hero,0,0,fac_commoners,
    [],
       attr_tier_1,wp_tier_1,knows_common,merchant_face_1,merchant_face_2],
 ["guide","Quick_Jimmy","_",tf_hero,0,0,fac_commoners,
@@ -1854,7 +1854,7 @@ troops = [
       attr_tier_1,wp_tier_1,knows_inventory_management_10,merchant_face_1,merchant_face_2],
 # Ryan END
 
-["Galeas","Galeas","_",tf_hero,0,0,fac_commoners,
+["galeas","Galeas","_",tf_hero,0,0,fac_commoners,
    [],
       attr_tier_1,wp_tier_1,knows_common,merchant_face_1,merchant_face_2],
 ["farmer_from_bandit_village","Farmer","Farmers",tfg_armor,0,0,fac_commoners,
@@ -2095,7 +2095,7 @@ troops = [
 
  # marshalls which are not also leaders
 ["lorien_marshall","Celeborn","_",tf_hero| tf_lorien| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_mearas_reward,itm_lorien_armor_c,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_mearas_reward,itm_lorien_royal_armor,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_trainer_4,0x00000008120000024b146a491440e12400000000001cc4ad0000000000000000],
 
 # ["gondor_marshall","Gondor Marshall","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
@@ -2244,10 +2244,10 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_2|knows_power_draw_4,0x000000093f004045300251e9b3e2f7df00000000001dbaab0000000000000000],
 #Lothlorien
 ["knight_3_6","Haldir","_",tf_hero| tf_lorien| tf_mounted| tfg_ranged |tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_warhorse,itm_lorien_armor_c,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_lorien_warhorse,itm_lorien_royal_armor,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_power_draw_4,0x00000006470010023b1d6e351240e36d00000000001cd8ec0000000000000000],
 ["knight_3_7","Orophin","_",tf_hero| tf_lorien| tf_mounted| tfg_ranged |tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_warhorse,itm_lorien_armor_c,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_lorien_warhorse,itm_lorien_royal_armor,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_power_draw_4,0x00000006470010023b1d6e351240e36d00000000001cd8ec0000000000000000],
 #Imladris
 ["knight_3_11","Elladan","_",tf_hero| tf_imladris| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
