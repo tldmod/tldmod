@@ -5460,7 +5460,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_eliminate_patrols"),
+		#(assign, ":quest_no", "qst_deal_with_night_bandits"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -11211,7 +11211,7 @@ scripts = [
           (lt, ":random_no", ":level"),
           (assign, ":spawn_amount", 2),
         (try_end),
-        (set_visitors, 27, ":bandit_troop", ":spawn_amount"),
+        (set_visitors, 10, ":bandit_troop", ":spawn_amount"),
         (val_add, "$num_center_bandits",  ":spawn_amount"),
         (try_begin),
           (gt, ":level", 9),
@@ -11222,7 +11222,7 @@ scripts = [
             (lt, ":random_no", ":level"),
             (assign, ":spawn_amount", 2),
           (try_end),
-          (set_visitors, 28, ":bandit_troop", ":spawn_amount"),
+          (set_visitors, 12, ":bandit_troop", ":spawn_amount"),
           (val_add, "$num_center_bandits",  ":spawn_amount"),
         (try_end),
         #(assign, "$town_entered", 1),
@@ -18918,23 +18918,27 @@ scripts = [
 # stashes prisoners into p_temp_party
 ("remove_empty_parties_in_group",[
 	(store_script_param_1, ":root_party"),
-	(party_get_num_attached_parties, ":num_attached_parties",  ":root_party"),
-	(try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
-		(party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
-		(party_get_num_companions, ":troops", ":attached_party"),
-		(try_begin),
-			(eq, ":troops",0), # no more soldiers here?
-			(party_get_num_prisoners,reg1, ":attached_party"),
-			(try_begin), # transfer prisoners
-				(gt, reg1, 0),
-				(call_script, "script_party_add_party_prisoners", "p_temp_party", ":attached_party"),
-			(try_end),
-		(try_end),
-		(call_script, "script_remove_empty_parties_in_group", ":attached_party"),
-		(try_begin),
-			(eq, ":troops", 0),
-			(remove_party,":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
-		(try_end),
+    (try_begin),
+        (gt, ":root_party", 0),
+        (party_get_num_attached_parties, ":num_attached_parties",  ":root_party"),
+        (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
+            (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
+            (gt, ":attached_party", 0),
+            (party_get_num_companions, ":troops", ":attached_party"),
+            (try_begin),
+                (eq, ":troops",0), # no more soldiers here?
+                (party_get_num_prisoners,reg1, ":attached_party"),
+                (try_begin), # transfer prisoners
+                    (gt, reg1, 0),
+                    (call_script, "script_party_add_party_prisoners", "p_temp_party", ":attached_party"),
+                (try_end),
+            (try_end),
+            (call_script, "script_remove_empty_parties_in_group", ":attached_party"),
+            (try_begin),
+                (eq, ":troops", 0),
+                (remove_party,":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
+            (try_end),
+        (try_end),
 	(try_end),
  ]),
 ("save_compartibility_script3",[]),

@@ -487,7 +487,12 @@ mission_templates = [ # not used in game
 								(agent_get_troop_id, ":troop_no", ":agent_no"),
 								(neq, ":troop_no", "trp_player"),
 								(agent_set_team, ":agent_no", 1)]),
-      (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0)]), #MV: both player and bandits neutral to guards
+      (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0),  #MV: both player and bandits neutral to guards
+        #remove cabbage guard spawn points
+        (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_guard", "spr_empty"),
+      ]),
       common_inventory_not_available,
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
       (ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)], []),
@@ -495,7 +500,7 @@ mission_templates = [ # not used in game
       (1,4,ti_once,[(store_mission_timer_a,":cur_time"),
 					(ge, ":cur_time", 5),
 					(this_or_next|main_hero_fallen),
-					(num_active_teams_le,2) #MV: was 1
+					(num_active_teams_le, 1) #MV: was 2
 					],
        [ (try_begin),
            (main_hero_fallen),
