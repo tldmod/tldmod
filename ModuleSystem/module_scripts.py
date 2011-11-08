@@ -12704,7 +12704,7 @@ scripts = [
 		(troop_set_inventory_slot, "trp_player", ":i_slot", -1),
 	(try_end),
 	
-	# clear any H2H weapon except one
+	# clear any non-ranged weapon except one
 	(store_random_in_range, ":die_roll", 0, 2),
 	(assign, ":weapon_found",0),
 	(try_for_range, ":i", 0, 9), 
@@ -12720,17 +12720,9 @@ scripts = [
 	(try_end),
 	
 	# give appropriate food for race/faction
-	(try_begin),(is_between, ":race", tf_orc_begin, tf_orc_end),
-		(troop_add_item, "trp_player", "itm_maggoty_bread"),
-	(else_try),(is_between,  ":race", tf_elf_begin, tf_elf_end), 
-		(troop_add_item, "trp_player", "itm_lembas"),
-	(else_try),(this_or_next|eq,":fac", "fac_dale"),(this_or_next|eq,":fac","fac_umbar"),(eq,":fac","fac_beorn"), 
-		(troop_add_item, "trp_player", "itm_smoked_fish"),
-	(else_try),(faction_slot_eq,":fac", slot_faction_side, faction_side_good),
-		(troop_add_item, "trp_player", "itm_cram"),
-	(else_try),
-		(troop_add_item, "trp_player", "itm_dried_meat"),
-	(try_end),
+	(call_script, "script_get_food_of_race_and_faction", ":race", ":fac"),
+	(troop_add_item, "trp_player", reg0 ),
+	
 ]),
 
 #script_player_join_faction
@@ -18941,7 +18933,26 @@ scripts = [
         (try_end),
 	(try_end),
  ]),
-("save_compartibility_script3",[]),
+
+	
+#  script_get_food_of_race_and_faction (mtarini)
+# puts resulting item in reg0
+("get_food_of_race_and_faction",[
+	(store_script_param_1, ":race"),
+	(store_script_param_2, ":fac"),
+	(try_begin),(is_between, ":race", tf_orc_begin, tf_orc_end),
+		(assign, reg0, "itm_maggoty_bread"),
+	(else_try),(is_between,  ":race", tf_elf_begin, tf_elf_end), 
+		(assign, reg0, "itm_lembas"),
+	(else_try),(this_or_next|eq,":fac", "fac_dale"),(this_or_next|eq,":fac","fac_umbar"),(eq,":fac","fac_beorn"), 
+		(assign, reg0, "itm_smoked_fish"),
+	(else_try),(faction_slot_eq,":fac", slot_faction_side, faction_side_good),
+		(assign, reg0, "itm_cram"),
+	(else_try),
+		(assign, reg0, "itm_dried_meat"),
+	(try_end),
+]),
+ 
 ("save_compartibility_script4",[]),
 ("save_compartibility_script5",[]),
 ("save_compartibility_script6",[]),
