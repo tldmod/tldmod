@@ -951,7 +951,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 ###If the player and the companion parted on good terms
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
+                     #(troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                      (str_store_string, 21, ":honorific"),
                      (troop_get_slot, ":speech", "$g_talk_troop", slot_troop_backstory_delayed),
