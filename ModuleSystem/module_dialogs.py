@@ -3330,11 +3330,16 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
             ] for x in range(len(fac_reward_items_list))
         ])+[
      (try_end),
+     (party_get_morale, ":recent_events_morale", "p_main_party"), #for later
+     (call_script, "script_get_player_party_morale_values"),
+     (val_sub, ":recent_events_morale", reg0),
      # and give it away
      (troop_add_item, "trp_player", ":item", ":modifier"),
      (item_set_slot, ":item", slot_item_given_as_reward, 1), # can't give more then one
      (call_script, "script_apply_attribute_bonuses"), # update player attributes for rings and such
-     (call_script, "script_get_player_party_morale_values"), (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
+     (call_script, "script_get_player_party_morale_values"),
+     (val_add, reg0, ":recent_events_morale"),
+     (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
      (val_sub, ":influence", ":price"),
