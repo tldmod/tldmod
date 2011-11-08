@@ -882,6 +882,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 				(neq,":agent_item",-1), 
 				# fisrt spawn:  MOUNT set hit points
 				(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
+				(store_div, reg12, 3), # nerf riderlass wargs: redue HP to 1/3
 				(agent_set_hit_points, ":agent", reg12, 1),
 				#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 			(else_try), 
