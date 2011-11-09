@@ -7644,24 +7644,30 @@ scripts = [
 
       (store_random_in_range, ":rand", 0, 100), # A, B, or C
 
-	  (assign, ":bonus", 0), 
+	  (assign, ":offset", 0), 
 	  # (MV: did) uncomment the following block to make a 8% of mixing between gondor subfactions
 	  (try_begin), 
 	  	(eq, ":party_faction", "fac_gondor"), # only in gondor....
 		(store_random_in_range, ":rand2", 0, 100),
-        (le, ":rand2", 8), # 8% of times...
+        (le, ":rand2", 20), # 20% of times... was 8%
+        (party_get_slot, ":subfac", ":party_no", slot_party_subfaction),
 		(try_begin),
-			#non regular Gondor parties gets a regular reinforement...
-			(neg|party_slot_eq, ":party_no", slot_party_subfaction, 0), 
-			(faction_get_slot, ":party_template_a", ":party_faction", slot_faction_reinforcements_a),
-			(faction_get_slot, ":party_template_b", ":party_faction", slot_faction_reinforcements_b),
-			(faction_get_slot, ":party_template_c", ":party_faction", slot_faction_reinforcements_c),
+			#Gondor subfaction lords get subfaction reinforcements, subfaction towns get Gondor reinforcements...
+			(neq, ":subfac", 0),
+            (try_begin),
+              (eq, ":party_type", spt_town),
+			  (faction_get_slot, ":party_template_a", ":party_faction", slot_faction_reinforcements_a),
+			  (faction_get_slot, ":party_template_b", ":party_faction", slot_faction_reinforcements_b),
+			  (faction_get_slot, ":party_template_c", ":party_faction", slot_faction_reinforcements_c),
+            (else_try),
+              (store_mul, ":offset", ":subfac", 3), 
+            (try_end),
 		(else_try),
-			#regular Gondor parties gets a subfaction reinforement...
-			(store_random_in_range, ":bonus", 1, len(subfaction_data)+1 ),
-			(val_mul, ":bonus", 3), 
-		(try_end),
-		(val_mul,":rand",75),(val_div,":rand",100),  # but cannot pick "C"
+			#regular Gondor parties get a random subfaction reinforcement...
+			(store_random_in_range, ":offset", 1, len(subfaction_data)+1 ),
+			(val_mul, ":offset", 3),
+            #(val_mul,":rand",75),(val_div,":rand",100),  # but cannot pick "C" - MV: let them anyway
+		(try_end),		
 	  (try_end),
 
       (assign, ":party_template", 0),
@@ -7671,23 +7677,23 @@ scripts = [
         (eq, ":party_type", spt_town),
         (try_begin),
           (lt, ":rand", 60),
-          (store_add, ":party_template", ":party_template_a", ":bonus"), # base tier 1 and 2 troops
+          (store_add, ":party_template", ":party_template_a", ":offset"), # base tier 1 and 2 troops
         (else_try),
           (lt, ":rand", 95),
-          (store_add, ":party_template", ":party_template_b", ":bonus"), # tier 3 archers mixed with other tier 3 troops and tier 2 archers
+          (store_add, ":party_template", ":party_template_b", ":offset"), # tier 3 archers mixed with other tier 3 troops and tier 2 archers
         (else_try),
-          (store_add, ":party_template", ":party_template_c", ":bonus"), # tier 4 troop mix
+          (store_add, ":party_template", ":party_template_c", ":offset"), # tier 4 troop mix
         (try_end),
       (else_try),
         (eq, ":party_type", spt_kingdom_hero_party),
         (try_begin),
           (lt, ":rand", 50),
-          (store_add, ":party_template", ":party_template_a", ":bonus"), # base tier 1 and 2 troops
+          (store_add, ":party_template", ":party_template_a", ":offset"), # base tier 1 and 2 troops
         (else_try),
           (lt, ":rand", 80),
-          (store_add, ":party_template", ":party_template_b", ":bonus"), # tier 3 archers mixed with other tier 3 troops and tier 2 archers
+          (store_add, ":party_template", ":party_template_b", ":offset"), # tier 3 archers mixed with other tier 3 troops and tier 2 archers
         (else_try),
-          (store_add, ":party_template", ":party_template_c", ":bonus"), # tier 4 troop mix
+          (store_add, ":party_template", ":party_template_c", ":offset"), # tier 4 troop mix
         (try_end),
       (else_try),
       (try_end),

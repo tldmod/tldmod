@@ -218,6 +218,16 @@ triggers = [
             
             (try_begin),
                 (gt, ":center_scouts", 0),
+                #no warg scouts before the war starts
+                (assign, ":early_wargs", 0),
+                (try_begin),
+                  (eq, "$tld_war_began", 0),
+                  (this_or_next|eq, ":center_scouts", "pt_moria_scouts"),
+                  (this_or_next|eq, ":center_scouts", "pt_gundabad_scouts"),
+                  (eq, ":center_scouts", "pt_isengard_scouts_warg"),
+                  (assign, ":early_wargs", 1),
+                (try_end),
+                (eq, ":early_wargs", 0),
                 # (store_random_in_range, ":rand", 0, int(15000/ws_scout_freq_multiplier)), # 0-4285
                 # (le, ":rand", ":strength"), # 81% for fac.str. 3500
                 (store_add, ":chance", ws_scout_chance, ":chance_modifier"),
