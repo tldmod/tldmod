@@ -831,10 +831,10 @@ tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
 		(agent_set_animation, reg10, "anim_cheer_player"),
 	(try_end),
 	(agent_get_troop_id, reg11, reg10),
-	(gt,reg1,-1),
 	(try_begin), 
 		(eq,"$player_cheering",0), # don't reshout if just shouted
 		(call_script, "script_troop_get_cheer_sound", reg11),
+        (gt, reg1, -1), #MV fix
 		(agent_play_sound, reg10, reg1),    
 	(try_end),
 	(assign,"$player_cheering",1),
