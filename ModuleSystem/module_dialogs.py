@@ -1354,7 +1354,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 	[(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)], # player has someone to give away 
 	"Some of the soldiers in my group would be more useful here, to defend {s21}.", "player_hire_troop_give", [
         #GA: changed into trade as a whole main party, then return given non-faction troops back to player
-		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"), #keep this backup for later
+		(party_clear, "p_main_party_backup"),
+		(assign, "$g_move_heroes", 0),
+        (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size
 		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$g_variable1", reg0), # initial party total value
 	]],
@@ -3199,7 +3201,9 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 	 "Reinforce my party? I can always use a few more soldiers.", 
 	 "lord_give_troops_check", [
 		#GA: changed to exchange from whole party then return non-faction guys to player
-        (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"), #keep this backup for later
+		(party_clear, "p_main_party_backup"),
+		(assign, "$g_move_heroes", 0),
+        (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (assign, "$g_variable1", reg0), # initial party total value
         (change_screen_give_members)]],
@@ -8876,7 +8880,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	 "Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.", 
 	 "party_reinforce_check", [
         #GA: allowed player to transfer whatever troops in exchange screen. Unfitting ones will be returned to him later
-		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"), #keep this backup for later
+		(party_clear, "p_main_party_backup"),
+		(assign, "$g_move_heroes", 0),
+        (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
 		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$g_variable1", reg0), # initial party total value (after removing troops ...)
         (change_screen_give_members),
