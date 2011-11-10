@@ -1652,8 +1652,10 @@ ai_scripts = [
 # This is called more frequently than script_decide_kingdom_party_ais
 #called from triggers
 ("process_hero_ai",
-    [   (store_script_param_1, ":troop_no"),
-        (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+    [ (store_script_param_1, ":troop_no"),
+      (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+      (try_begin),
+        (party_is_active, ":party_no"),
         (store_faction_of_party, ":faction_no", ":party_no"),
         (party_get_slot, ":ai_state", ":party_no", slot_party_ai_state),
         (party_get_slot, ":ai_object", ":party_no", slot_party_ai_object),
@@ -1769,6 +1771,7 @@ ai_scripts = [
             (party_detach, ":party_no"),
           (try_end),
         (try_end),
+      (try_end),
 ]),
     
 ##########################################
