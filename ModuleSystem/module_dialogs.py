@@ -1924,7 +1924,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",
 	[(party_add_members, "p_main_party", "trp_armoured_troll", 1),
 	 (faction_get_slot, ":val", "$g_talk_troop_faction", slot_faction_influence),
-	 (store_sub, ":val", 10),
+	 (val_sub, ":val", 10),
 	 (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":val")]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
