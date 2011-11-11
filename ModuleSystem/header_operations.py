@@ -288,7 +288,7 @@ troop_join                      = 1203		# (troop_join,<troop_id>),
 troop_join_as_prisoner          = 1204	# (troop_join_as_prisoner,<troop_id>),
 
 remove_member_from_party        = 1210	# (remove_member_from_party,<troop_id>,[party_id]),
-remove_regular_prisoners        = 1211	# (remove_regular_prisoners,<party_id>),
+remove_regular_prisoners        = 1211	# (remove_regular_prisoners,<party_id>), #BUGGED, removes from p_main_party always
 remove_troops_from_companions   = 1215	# (remove_troops_from_companions,<troop_id>,<value>),
 remove_troops_from_prisoners    = 1216  # (remove_troops_from_prisoners,<troop_id>,<value>),
 

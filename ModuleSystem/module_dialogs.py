@@ -1477,7 +1477,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "Let me check the troop roster...", "player_hire_troop_reunite_1", []],
 
 [anyone,"player_hire_troop_reunite_1", [
-		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "$g_encountered_party_faction", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
+		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
 		(party_get_num_companions, reg0, "p_main_party"),
 		(party_get_num_companions, reg46, "p_main_party_backup"),
 		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
@@ -1487,24 +1487,19 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "We don't have use for those troops here...^Take them back.", "player_hire_troop_nextcycle", []],
 
 [anyone,"player_hire_troop_reunite_1", 	
-	 [  (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
-	    
-		(store_sub, reg10, reg28, reg0),(store_sub, reg9, reg10, 1), #calculate how many troops given (minus 1)
+	 [  (gt, reg28, reg0),# player gave fittings too (party size decreased)
+		(val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (store_sub, "$g_variable1", "$g_variable1", reg0), #calculate how much monetary value given
-		
-		(str_clear, s31), (str_clear, s32),
-		(try_begin),(eq, reg26, 1), #player is in own faction
-			(str_store_string, s31, "@Thank you, commander.^"),
-		(else_try),
-			(str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),
+        (val_sub, "$g_variable1", reg0), #calculate how much monetary value given
+		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32), #player is in own faction
+		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),(str_clear, s31),
 		(try_end),
 		(assign, reg11, "$g_variable1"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (else_try),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us hold {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (try_end),
 		(try_begin), # if nonfittings were given
           (gt, reg46, 0),
@@ -1513,14 +1508,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", "$g_variable1"),]],
 
 [anyone|plyr,"player_hire_troop_reunite_2", 
-	 [ (try_begin),
-         (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-		 (str_store_string, s31, "@I don't need them anyway, so save it."),
-	   (else_try),
-         (eq, reg26, 1), #player is of the same faction
-		 (str_store_string, s31, "@It is my duty to protect our people."),
-	   (else_try),
-		 (str_store_string, s31, "@It is my duty to protect our allies."),
+	 [ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		                          (str_store_string, s31, "@I don't need them anyway, so save it."),
+	    (else_try),(eq, reg26, 1),(str_store_string, s31, "@It is my duty to protect our people."), #player is of the same faction
+	    (else_try),               (str_store_string, s31, "@It is my duty to protect our allies."),
 	   (try_end)], 
 "{s31}", "player_hire_troop_nextcycle", []],
 
@@ -3200,8 +3191,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone,"lord_give_troops", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
 	 "Reinforce my party? I can always use a few more soldiers.", 
 	 "lord_give_troops_check", [
-		#GA: changed to exchange from whole party then return non-faction guys to player
-		(party_clear, "p_main_party_backup"),
+		(party_clear, "p_main_party_backup"),#GA: changed to exchange from whole party then return non-faction guys to player
 		(assign, "$g_move_heroes", 0),
         (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
@@ -3212,7 +3202,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", []],
 
 [anyone,"lord_give_troops_check_1", [
-		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "$g_encountered_party_faction", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
+		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
 		(party_get_num_companions, reg0, "p_main_party"),
 		(party_get_num_companions, reg46, "p_main_party_backup"),
 		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
@@ -3221,42 +3211,31 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone,"lord_give_troops_check_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
 "I don't have use for those troops here...^Take them back.", "lord_pretalk", []],
 
-[anyone,"lord_give_troops_check_1", [
-        (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
-		
-		(store_sub, reg10, reg28, reg0),(store_sub, reg9, reg10, 1), #calculate how many troops given (minus 1)
+[anyone,"lord_give_troops_check_1", [(gt, reg28, reg0),# player gave fittings too (party size decreased)
+        (val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (store_sub, "$g_variable1", "$g_variable1", reg0), #calculate how much monetary value given
-		
-		(str_clear, s31), (str_clear, s32),
-		(try_begin),
-          (eq, reg26, 1), #player is in own faction
-		  (str_store_string, s31, "@Thank you, commander.^"),
-		(else_try),
-		  (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
+        (val_sub, "$g_variable1", reg0), #calculate how much monetary value given
+		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32),
+		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),(str_clear, s31),
 		(try_end),
 		(assign, reg11, "$g_variable1"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (else_try),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
         (try_end), 
 		(try_begin), # if nonfittings were given
           (gt, reg46, 0),
-          (str_store_string, s4, "@{s4} ^Oh, and take back those soldiers who are not my kin, I have no use for them."),
+          (str_store_string, s4, "@{s4} ^Oh, and take back those soldiers who are not our kin, I have no use for them."),
         (try_end)],
 "{s4}", "lord_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$g_variable1")]],
 
 [anyone|plyr,"lord_give_troops_check_2", 
-	[ (try_begin),
-        (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-		(str_store_string, s31, "@I don't need them anyway, so save it."),
-	  (else_try),
-        (eq, reg26, 1), #player is of same faction
-		(str_store_string, s31, "@It is my duty to help our people."),
-	  (else_try),
-		(str_store_string, s31, "@It is my duty to help our allies."),
+	[ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		                         (str_store_string, s31, "@I don't need them anyway, so save it."),
+	   (else_try),(eq, reg26, 1),(str_store_string, s31, "@It is my duty to help our people."),
+	   (else_try),               (str_store_string, s31, "@It is my duty to help our allies."),
 	  (try_end)],
 "{s31}", "lord_pretalk", []],
 
@@ -8885,62 +8864,49 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
 		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$g_variable1", reg0), # initial party total value (after removing troops ...)
-        (change_screen_give_members),
-		]],
+        (change_screen_give_members)]],
 [anyone,"party_reinforce", [], "Unfortunately you don't have any {s22} soldiers to reinforce us with.", "party_reinforce_end", []],
 
-[anyone,"party_reinforce_check", [], 
-"Let me check the soldier roster... ", "party_reinforce_check_1", []], 
+[anyone,"party_reinforce_check", [], "Let me check the soldier roster... ", "party_reinforce_check_1", []], 
 
 [anyone,"party_reinforce_check_1", [ # only 1st condition needs party script
-		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "$g_encountered_party_faction", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
-		(party_get_num_companions, reg0, "p_main_party"),
+		#script restores main party, "p_main_party_backup" contains nonfaction troops returned to main party
+		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"),
+		(party_get_num_companions, reg10, "p_main_party"),
 		(party_get_num_companions, reg46, "p_main_party_backup"),
-		(eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
+		#(display_message, "@TROOPS:{reg10} in main party, {reg46} nonfaction, {reg28} initially in main party"),
+		(eq, reg46, 0),(eq, reg28, reg10)], # player didn't give anyone (party size unchanged)
 "So you've changed your mind...^I see.", "party_reinforce_end", []],
 
-[anyone,"party_reinforce_check_1", [
-		(gt, reg46, 0),(eq, reg28, reg0)], # player gave only unfitting troops (party size unchanged)
-"Those soldiers are of no use to us, sorry. ^Take them back.", "party_reinforce_end", []],
+[anyone,"party_reinforce_check_1", [(gt, reg46, 0),(eq, reg28, reg10)], # player gave only unfitting troops (party size unchanged)
+"Those soldiers are of no use to us. ^Take them back.", "party_reinforce_end", []],
 
 [anyone,"party_reinforce_check_1", 
-	 [  (gt, reg46, 0),(gt, reg28, reg0),# player gave fittings too (party size decreased)
-	    (store_sub, reg10, reg28, reg0), 
-		#(gt, reg10, 0), # player did give someone 
-		(store_sub, reg9, reg10, 1),
-		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (store_sub, "$g_variable1", "$g_variable1", reg0), # earned
+	 [  (gt, reg28, reg10),# player gave fittings too (party size decreased)
+	    (val_sub, reg28, reg10),(val_sub, reg28, 1), # calculate # of soldiers transferred -1
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1),(val_sub, "$g_variable1", reg0), # calculate value transferred
 		(str_store_faction_name, s22, "$g_encountered_party_faction"),
 		(str_clear, s31), (str_clear, s32),
-		(try_begin),
-          (eq, reg26, 1), #player is in own faction
-		  (str_store_string, s31, "@Thank you, commander.^"),
-		(else_try),
-		  (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
+		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),
+		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
 		(try_end),
 		(assign, reg11, "$g_variable1"),
-        (try_begin),
-          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} brave {reg9?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
-        (else_try),
-          (str_store_string, s4, "@{s31}{reg9?Those:That} useful {reg9?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
-        (try_end),
-		(try_begin), 
-          (gt, reg46, 0), #player gave unfitting troops too
-		  (str_store_string, s4, "@{s4} ^Oh, and take back those who are not our people."),
+        (try_begin),(gt, reg46, 0),(str_store_string, s23, "@ ^Oh, and take back those who are not our people."), #if gave unfitting troops
+		 (else_try),               (str_store_string, s23, "str_empty_string"),
 		(try_end),
-		], # party decreased size 
+		(try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}] {s23}"),
+        (else_try),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}] {s23}"),
+        (try_end)],
 "{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", "$g_variable1")]],
 
 [anyone|plyr,"party_reinforce_check_2", 
-	[ (try_begin),
-        (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-		(str_store_string, s31, "@I don't need them anyway, so save it."),
-	  (else_try),
-        (eq, reg26, 1), #player is of same faction
-		(str_store_string, s31, "@It is my duty to help our people."),
-	  (else_try),
-		(str_store_string, s31, "@It is my duty to help our allies."),
+	[ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		                         (str_store_string, s31, "@I don't need them anyway, so save it."),
+	   (else_try),(eq, reg26, 1),(str_store_string, s31, "@It is my duty to help our people."),
+	   (else_try),               (str_store_string, s31, "@It is my duty to help our allies."),
 	  (try_end)],
 "{s31}", "party_reinforce_end", []],
 

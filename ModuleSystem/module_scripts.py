@@ -18868,49 +18868,44 @@ scripts = [
 ]),
 
 # script_party_eject_nonfaction (GA)
-# returns nonfaction troops given from ":recipient_initial" to ":source", back to ":recipient"
+# troops nonfaction for ":source" & given from ":recipient_initial" to ":source" - are returned back to ":recipient"
 # Input: arg1 = party_A, source, retains target faction and heroes
 # Input: arg2 = party_B, gets non-faction troops it had initially according to arg4 (usually p_main_party)
-# Input: arg3 = faction
-# Input: arg4 = initial composition of party_B
-#Output: arg4 stores troops returned back to recipient
+# Input: arg3 = initial composition of party_B
+#Output: arg3 stores troops returned back to recipient
 ("party_eject_nonfaction",[
 	(store_script_param_1, ":source"),
 	(store_script_param_2, ":recipient"),
-	(store_script_param, ":fac", 3),
-	(store_script_param, ":recipient_initial", 4),
-	
+	(store_script_param, ":recipient_initial", 3),
+
 	#subtract recipient from recipient_initial, relies on recipient being subset of recipient_initial!
 	(party_get_num_companion_stacks, ":num_stacks", ":recipient"),
 	(try_for_range, ":i_stack", 0, ":num_stacks"),
-		(party_stack_get_troop_id, ":stack_troop", ":recipient", ":i_stack"),
-		(party_stack_get_size, ":stack_size",":recipient",":i_stack"),
-		(party_remove_members, ":recipient_initial", ":stack_troop", ":stack_size"),
+		(party_stack_get_troop_id, ":st", ":recipient", ":i_stack"),
+		(party_stack_get_size, ":ss",":recipient",":i_stack"),
+		(party_remove_members, ":recipient_initial", ":st", ":ss"),
 	(try_end),	
 	
 	#clear recipient_initial from any hero troops and prisoners
-	(remove_regular_prisoners, ":recipient_initial"),
 	(try_for_range, ":hero", heroes_begin, heroes_end),
 		(remove_troops_from_prisoners, ":hero",":recipient_initial"),
 		(remove_member_from_party, ":hero",":recipient_initial"),
 	(try_end),
+	(remove_member_from_party, "trp_player",":recipient_initial"),
 	
 	#remove faction from recipient_initial and nonfaction from source, add nonfaction to recipient
-	(party_get_num_companion_stacks, ":num_stacks", ":recipient_initial"),
+	(store_faction_of_party, ":fac", ":source"),
+	(call_script, "script_party_copy", "p_temp_party", ":recipient_initial"), #needs a copy to iterate through, since member removing fucks up stacks order
+	(party_get_num_companion_stacks, ":num_stacks", "p_temp_party"),
 	(try_for_range, ":i_stack", 0, ":num_stacks"),
-		(party_stack_get_size, ":stack_size",":recipient_initial",":i_stack"),
-		(party_stack_get_troop_id, ":stack_troop", ":recipient_initial", ":i_stack"),
-		(store_troop_faction, ":fac_t", ":stack_troop"),
-		(try_begin),
-			(eq, ":fac_t", ":fac"), # factions outta recipient_initial, stay in source
-			(party_remove_members, ":recipient_initial", ":stack_troop", ":stack_size"),
-		(else_try), # nonfactions outta source, stay in recipient
-			(party_add_members, ":recipient", ":stack_troop", ":stack_size"),
-			(party_stack_get_num_wounded, ":num_wounded", ":source", ":i_stack"),
-			(party_wound_members, ":recipient", ":stack_troop", ":num_wounded"),
-			(party_remove_members, ":source", ":stack_troop", ":stack_size"),
+		(party_stack_get_size    , ":ss", "p_temp_party", ":i_stack"),
+		(party_stack_get_troop_id, ":st", "p_temp_party", ":i_stack"),
+		(store_troop_faction, ":ft", ":st"),
+		(try_begin),(eq, ":ft", ":fac"),(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		 (else_try),                    (party_remove_members, ":source"           , ":st", ":ss"),# nonfactions outta source, stay in recipient_initial
 		(try_end),
 	(try_end),
+	(call_script, "script_party_add_party_companions", ":recipient", ":recipient_initial"), #transfer nonfactions to recipient
 ]),
 
 # script_stand_back (GA)
