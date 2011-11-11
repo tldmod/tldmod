@@ -348,14 +348,14 @@ party_templates = [
 ("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,4)]),
 ("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,6)]),
 ("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
-("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,0,1),]), #two T1 & prize
+("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,1,1),]), #two T1 & prize
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
 ("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_mordor,1,3),(trp_morgul_orc,0,2)]), #T1 T2
 ("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,0,2),(trp_far_harad_tribesman,1,2)]), #three T1
 ("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
 ("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_corsair_youth,3,6)]),
-("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,0,1)]), #two T1
+("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,1)]), #two T1
 ("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,2),(trp_dunedain_scout,1,2)]), #two T1
 ("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_greenwood_scout,1,4)]),
 ("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,5,10)]),
