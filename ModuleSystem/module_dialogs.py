@@ -1955,7 +1955,7 @@ How could I expect someone like {playername} to be up to the challange. My serva
 	  (store_partner_quest,":lords_quest"),
 	  (eq,":lords_quest","qst_kill_troll"),
 	  (check_quest_succeeded, "qst_kill_troll"),
-	  (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+	  (quest_get_slot, ":quest_object_center", "qst_kill_troll", slot_quest_object_center),
 	  (str_store_party_name,12,":quest_object_center")],
 "News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.", "lord_generic_mission_completed",[
 	  (call_script, "script_finish_quest", "qst_kill_troll", 100),
