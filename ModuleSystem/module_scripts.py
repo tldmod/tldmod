@@ -6085,7 +6085,7 @@ scripts = [
             (val_mul, ":quest_xp_reward", 3),
             (val_div, ":quest_xp_reward", 10),
             (assign, ":quest_rank_reward", ":quest_xp_reward"),
-            (val_div, ":quest_rank_reward", 2),
+            (val_div, ":quest_rank_reward", 7),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 120),
             (assign, ":quest_dont_give_again_period", 15),
