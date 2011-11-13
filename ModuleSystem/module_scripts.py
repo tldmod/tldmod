@@ -5460,7 +5460,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_deal_with_night_bandits"),
+		#(assign, ":quest_no", "qst_capture_troll"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -5484,9 +5484,10 @@ scripts = [
           (eq, ":quest_no", "qst_capture_troll"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
-			(ge, ":player_level", 4),
-			(assign, ":quest_expiration_days", 10),
-			(assign, ":quest_dont_give_again_period", 30),
+			(ge, ":player_level", 3),
+			(assign, ":quest_expiration_days", 15),
+			(assign, ":quest_dont_give_again_period", 20),
+			(store_free_inventory_capacity,":tmp"),(gt,":tmp",0), # otherwise,  no room for cage
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),

@@ -1094,11 +1094,11 @@ simple_triggers = [
 
 # (44) capture troll quest (mtarini)
 # if the quest is active, add a wild troll party every now and then, up to two.
-(10,[(check_quest_active, "qst_capture_troll"),
+(2,[(check_quest_active, "qst_capture_troll"),
     (neg|check_quest_concluded, "qst_capture_troll"),
-	(assign,":count",0), # count active wild troll parties (*45)
-	(try_for_parties,":i"),(party_is_active, ":i"),(party_get_template_id, ":j", ":i"),(eq,":j","pt_wild_troll"),(val_add,":count",45),(try_end),
-	(store_random_in_range,":die_roll",0,100),(ge,":die_roll",":count"), # if (die_roll(100)>numtrolls*45)
+	(store_distance_to_party_from_party, reg10, "p_town_troll_cave", "p_main_party"), (lt, reg10, 20),
+	(store_num_parties_of_template, ":count", "pt_wild_troll"), (val_mul,":count",85),
+	(store_random_in_range,":die_roll",0,100),(ge,":die_roll",":count"), # if (die_roll(100)>numtrolls*85)
 	(set_spawn_radius,1),
 	(spawn_around_party,"p_town_troll_cave","pt_wild_troll"),
 	]),

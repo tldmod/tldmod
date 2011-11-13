@@ -105,7 +105,7 @@ game_menus = [
  ),
 #This needs to be the second window!!!
 ( "start_phase_2",mnf_disable_all_keys,
-    "^^^^^______________Middle Earth. A shadow is growing in the East, ^______________and dark things come forth that have long been hidden. ^______________The free people prapare for war, the like of which has not been seen for an age. ^______________Men, Elves, Dwarves and Orcs; all will play their part. ^^______________What part, however, remains to be seen... ",
+    "^^^^^______________Middle Earth. A shadow is growing in the East, ^______________and dark things come forth that have long been hidden. ^______________The free people prepare for war, the like of which has not been seen for an age. ^______________Men, Elves, Dwarves and Orcs; all will play their part. ^^______________What part, however, remains to be seen... ",
     "none",
    [#(set_background_mesh, "mesh_ui_default_menu_window"),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
@@ -3058,7 +3058,8 @@ game_menus = [
 	  (try_begin),
 	    (lt,":chance",60),
 		(call_script,"script_fangorn_fight_ents"),
-		(modify_visitors_at_site,"scn_random_scene_steppe_forest"),
+		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),
+		(modify_visitors_at_site,":scene_to_use"),
         (reset_visitors),
        
         (set_visitor,0,"trp_player"),
@@ -3069,7 +3070,7 @@ game_menus = [
 		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
 		(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
         (set_jump_mission,"mt_fangorn_battle"),
-        (jump_to_scene,"scn_random_scene_steppe_forest"),
+        (jump_to_scene,":scene_to_use", ),
         
 		(set_battle_advantage, 0),
         (assign, "$g_battle_result", 0),

@@ -503,6 +503,9 @@ dialogs = [
 #TLD STUFFF
 ######################################################	`1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq###
 
+[pt_wild_troll|party_tpl, "start", [], "^^GROOOOOWLE^^", "close_window",[] ],
+
+
 ### COMPANIONS
 [anyone,"start", [(troop_slot_eq,"$g_talk_troop", slot_troop_occupation, slto_player_companion),
                     (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
@@ -1877,16 +1880,19 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
    #  ]],
 	 
 [anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
-										(ge, ":num_trolls", 2)],	
+										(ge, ":num_trolls", 2), 
+										(store_partner_quest,":lords_quest"),(eq,":lords_quest","qst_capture_troll"),],	
 "Master, I hereby give you not one, but a pair of beasts!","lord_capture_troll_completed_two_trolls",[]],
 
 [anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
-										(eq, ":num_trolls", 1)],	
+										(eq, ":num_trolls", 1), 
+										(store_partner_quest,":lords_quest"),(eq,":lords_quest","qst_capture_troll"),
+										],	
 "Master, I subjugated the beast you have asked for!","lord_capture_troll_completed_one_troll",[]],
 	
 	
 [anyone, "lord_capture_troll_completed_two_trolls",[],
-"Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. Your command, {playername}.",
+"Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. We mean YOUR command, {playername}.",
 	"lord_capture_troll_completed_two_trolls_thankyou",
 	[ (call_script, "script_finish_quest", "qst_capture_troll", 100),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
@@ -1905,7 +1911,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].","lord_capture_troll_completed_two_trolls_thankyou_raise",[]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_info",[],
-"Are you questioning the abilities of your Master, {playername}? This beast is trained to follow every command on the battlefield. It will wrack havock over Our enemies. But, you and your warriors keep at due distance from the beast when it fights, and never stand between its arms and its victims.","lord_capture_troll_completed_two_trolls_thankyou",[]],
+"Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.","lord_capture_troll_completed_two_trolls_thankyou",[]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[],
 "Now bring havoc to my enemies with your new gift","lord_pretalk",[(party_add_members, "p_main_party", "trp_troll_of_moria", 1)]],
@@ -1936,7 +1942,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "Too long ago, I asked you to take me one troll alive. But I should have known. \
 How could I expect someone like {playername} to be up to the challange. My servant was not skilled or faithful enough.", "close_window",[
    (call_script,"script_stand_back"),
-   (call_script, "script_end_quest", "qst_investigate_fangorn"),
+   (call_script, "script_end_quest", "qst_capture_troll"),
    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5)]],
   
     # CAPTURE TROLL QUEST END
@@ -8941,7 +8947,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Let's fight and see!", "close_window", [(encounter_attack)]],
 # [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Not this time. Begone.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
-
 [anyone,"start", [(eq, "$talk_context", tc_party_encounter),
                   (eq, "$g_encountered_party_template", "pt_gandalf"),
                   (eq, "$g_tld_gandalf_state", 0),], #not willing to talk
@@ -9002,6 +9007,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #[anyone|plyr,"employ_mercenary_2", [[player_gold_ge,reg(0)],[hero_can_join]], "That's fine. Here's the {reg0} denars. From now on you work for me.", "employ_mercenary_commit",[[troop_remove_gold, "trp_player",reg(0)],[recruit_mercenary]]],
 #[anyone,"employ_mercenary_giveup", [], "Suits me.", "free",[]],
 #[anyone,"employ_mercenary_commit", [], "You got yourself the best fighter in the land.", "end",[]],
+
 
 [anyone|plyr,"free", [[in_meta_mission]], " Good-bye.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone|plyr,"free", [[neg|in_meta_mission]], " [Leave]", "close_window",[(call_script,"script_stand_back"),]],
