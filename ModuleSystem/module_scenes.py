@@ -163,7 +163,8 @@ scenes = [
 
 #!!Villages !!#
 ("village_1" ,sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030081763000589620000338e00004f2c00005cfb",   [],[],"outer_terrain_plain"),
-("village_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003007a21c0003ecfe000001f0000073b100000fd2",    [],[],"outer_terrain_plain"),
+# put this instead of village2 to preserve number of scenes
+("esgaroth_old_ruins",sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"outer_terrain_seaside_1"),
 
 ("field_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000033a059a5a0009525600002005000060e300001175",    [],[],"outer_terrain_plain"),
 ("field_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000033a079a3f000a3a8000006dfd000030a100006522",    [],[],"outer_terrain_steppe"),
@@ -251,18 +252,18 @@ scenes = [
 
 
 # various battlefield scenes
-("battlefield1" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
-("battlefield2" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield3" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield4" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield5" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield6" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield7" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield8" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield9" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield10",sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("small_ford"   ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
-("rivercross",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",   [],[],"outer_terrain_plain"),
+("battlefield1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
+("battlefield2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield9" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
+("rivercross"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",[],[],"outer_terrain_plain"),
 
 ("tld_sorcerer_forest_a" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc675123800409020000424b0000206b000043ce",[],[],"outer_terrain_forest"),
 ("tld_sorcerer_forest_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc6759230002c8b000000f6e00006f7d00001e9c",[],[],"outer_terrain_forest"),

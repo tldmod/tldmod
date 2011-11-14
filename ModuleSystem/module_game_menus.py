@@ -236,7 +236,8 @@ game_menus = [
 	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
 	] for ct in range(cheat_switch)])+[
-
+    ("build_your_own_scene"     ,[],"____________** Build your own scene for TLD **_____.",
+		[                                         (jump_to_menu, "mnu_build_your_scene"),]),
     ("go_back"                  ,[],"______________________________Go back______________.",[(change_screen_quit)])]
  ),
 # This needs to be the fourth window!!!
@@ -7760,14 +7761,33 @@ game_menus = [
 	("leave",[(neq, "$party_meeting", 0)],"Leave.",[(change_screen_map)])]
  ),
 
-("taunt",0,
- "You taunted the defenders, shouting insults and parading a good distance away for some time. There was no reaction apart from several arrows which fell well short of your ranks. ^Looks like there is nothing to do here",
+# ("taunt",0,
+ # "You taunted the defenders, shouting insults and parading a good distance away for some time. There was no reaction apart from several arrows which fell well short of your ranks. ^Looks like there is nothing to do here",
+ # "none",
+   # [],[("leave",[],"Back...",[(change_screen_return)])],
+ # ),
+
+("build_your_scene",0,
+ "You can build your own battlescene here, using one of the slots provided below and game Edit mode \
+ (you need to switch edit mode ON in M&B lauching screen Options first). \
+ You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder) \
+ to the dev team of TLD, and if your scene is good, \
+ it can appear in later releases as one of random battlegrounds!^^\
+ Try to specify which region on map you want your scene to appear.^\
+ Couple hints: avoid deep water, steep mountains and other impassable places, \
+ unless you are experienced scene-maker and know how to bar AI troops \
+ from walking where you don't want them, and make AI mesh in other places.^\
+ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8",
  "none",
-   [],[("leave",[],"Back...",[(change_screen_return)])],
+   [(set_background_mesh, "mesh_ui_default_menu_window")],[
+   ("scene1",[],"Battlefield5 (file scn_battlefield5.sco)",[(1261,"scn_battlefield5"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield5"),(2048)]),
+   ("scene2",[],"Battlefield6 (file scn_battlefield6.sco)",[(1261,"scn_battlefield6"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield6"),(2048)]),
+   ("scene3",[],"Battlefield7 (file scn_battlefield7.sco)",[(1261,"scn_battlefield7"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield7"),(2048)]),
+   ("scene4",[],"Battlefield8 (file scn_battlefield8.sco)",[(1261,"scn_battlefield8"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield8"),(2048)]),
+   ("scene5",[],"Battlefield9 (file scn_battlefield9.sco)",[(1261,"scn_battlefield9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield9"),(2048)]),
+   ("leave" ,[],"Back...",[(change_screen_quit)])],
  ),
-
 ] 
-
 
 ## quick scene chooser
 import header_scenes

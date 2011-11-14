@@ -1,4 +1,4 @@
-1021
+1022
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -822,6 +822,7 @@ qstr_Your_companions__mor Your_companions'_morale_has_risen_from_hatred.
 qstr_Your_companions__mora Your_companions'_morale_has_dropped_from_fear.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
+qstr_You_failed_to_fulfil You_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_hero_death!
 qstr_You_fulfilled_your_o You_fulfilled_your_oath_of_vengeance_for_{s1}'s_hero_death!
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}

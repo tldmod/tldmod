@@ -2444,6 +2444,9 @@ ai_scripts = [
 		(gt, ":attached_party", 0),
 		(party_is_active, ":attached_party"),
 		(party_detach, ":attached_party"),
+		(party_get_template_id,":pt", ":attached_party"), # (GA fix) delete volunteers party
+		(is_between, ":pt", "pt_gondor_cap_recruits", "pt_caravan_survivors"),
+		(remove_party, ":attached_party"),
 	(try_end),
 
 	(try_begin),
