@@ -8287,7 +8287,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
-[anyone|plyr,"prisoner_chat_3", [(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good)], 
+[anyone|plyr,"prisoner_chat_3", [(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop")], 
 "You happen to be our next dinner! Guards, slaughter him!", "prisoner_slaughter",[]],
 [anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[]],
 [anyone,"prisoner_slaughter", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
@@ -8298,6 +8298,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(neq, ":agent", reg1),
 		(agent_is_human, ":agent"),
 		(agent_get_troop_id, "$g_talk_troop", ":agent"), #apparently prisoner talk defines $g_talk_troop incorrectly. MB bug
+		(neg|troop_is_hero, "$g_talk_troop"),
 		(agent_set_animation, ":agent", "anim_fall_body_back"), 
 		(agent_set_hit_points,":agent",0,0),
 		(agent_deliver_damage_to_agent, reg1, ":agent"),
