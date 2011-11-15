@@ -5,7 +5,7 @@
 
 !define PRODUCT_NAME "The Last Days"     #The title of your mod goes here
 !define PRODUCT_FOLDER_NAME "The Last Days"  #The folder name for your mod; spaces are fine, just mind Windows restrictions (no /\:*?"<>| )
-!define PRODUCT_VERSION "1.0"                #The mod version
+!define PRODUCT_VERSION "3.02"                #The mod version
 
 !define MB_VERSION "1011"                   #The version of M&B the mod was created for, ex. "808" is version 0.808 of M&B.
             #The above line is used to warn people trying to install to a different M&B version that it probably won't work.
@@ -286,8 +286,8 @@ Section "MainSection" SEC01                   #Once the actual install process s
   SetOutPath "$INSTDIR\Music"
   File /nonfatal /x *.bak /x *.orig /x *.lnk Music\*.*
 
-  SetOutPath "$INSTDIR\Languages"                #note the "/r" switch on the line below, it makes the files include all files and subfolders recursively
-  File /nonfatal /r /x *.bak /x *.orig /x ".*" /x *.lnk Languages\*.*
+  #SetOutPath "$INSTDIR\Languages"                #note the "/r" switch on the line below, it makes the files include all files and subfolders recursively
+  #File /nonfatal /r /x *.bak /x *.orig /x ".*" /x *.lnk Languages\*.*
   SetOutPath "$INSTDIR\Data"                     #TLD specific
   File /nonfatal /x *.bak /x *.orig /x *.lnk Data\*.*
 
