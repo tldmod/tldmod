@@ -391,6 +391,100 @@ mission_templates = [ # not used in game
         (try_end)]),	  
 ]),
 
+# review troops (mtarini)
+("review_troops",0,-1,"You review your troops",
+[(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]),
+ (1,mtef_attackers|mtef_team_1,0,0,1,[]),(4,mtef_attackers|mtef_team_1,0,0,0,[]),
+ #(5,mtef_visitor_source,0,0,50,[]),  
+ #(6,mtef_visitor_source,0,0,50,[]),  
+ #(7,mtef_visitor_source,0,0,50,[]),  
+ #(8,mtef_visitor_source,0,0,50,[]),  
+ #(9,mtef_visitor_source,0,0,50,[]),  
+ #(10,mtef_visitor_source,0,0,50,[]),  
+],tld_common_peacetime_scripts +
+  [  
+  (ti_on_agent_spawn, 0, 0, [],[
+     (store_trigger_param_1, ":agent_no"),
+	 
+	 (get_player_agent_no, ":player_no"),
+	 (agent_get_position, pos1, ":agent_no"),
+	 
+	 (try_begin),
+	    (eq,":player_no", ":agent_no"), # player
+		# player was spawned at a distant entry point so that it faces his troops (MaB bug: set poistion doesn't affect ... move back to his troops
+		(entry_point_get_position,pos1,4),
+		(position_move_y, pos1, 700, 0), # move player in front
+		(position_move_x, pos1, 750, 0),# center player
+		#(position_rotate_z, pos1, 180), # rotate player to face troops ... if only this worked... sigh 
+		(agent_set_position, ":agent_no", pos1),
+		(try_begin),
+			(agent_get_horse, reg12, ":agent_no" ),(ge, reg12, 0),
+			(agent_set_position, reg12, pos1),
+		(try_end),
+	 (else_try),
+		(store_random_in_range,":speed_limit",2,6),
+		
+		(try_begin),
+			(agent_get_horse, reg12, ":agent_no" ),(ge, reg12, 0),
+			(agent_set_animation, ":agent_no", "anim_pause_mounted"),
+			(val_add,":speed_limit",4),
+			(store_random_in_range, reg6, 50, 100),(agent_set_animation_progress, ":agent_no", reg6),
+			#(agent_set_animation, reg12, "anim_horse_stand"),
+		(else_try),
+			(agent_is_human,":agent_no"),
+			(agent_set_animation, ":agent_no", "anim_pause"),
+			(store_random_in_range, reg6, 90, 100),(agent_set_animation_progress, ":agent_no", reg6),
+		(try_end),
+		
+		(agent_set_speed_limit,":agent_no",":speed_limit"),
+		
+		(copy_position, pos2, pos1),
+		(store_random_in_range,":start_pos",-460,-330),
+		(position_move_y, pos2, ":start_pos", 0), # ten steps backward plese
+		(store_random_in_range,":start_drift",-50,+50),
+		(position_move_x, pos2, ":start_drift", 0), 
+		
+		(position_move_y, pos1, 200, 0), # ten steps backward plese
+		
+		# (position_get_x, reg10, pos1),
+		# (position_get_y, reg11, pos1),
+		# (position_get_x, reg12, pos2),
+		# (position_get_y, reg13, pos2),
+		# (agent_get_troop_id, reg16,  ":agent_no"), (str_store_troop_name, s3, reg16),
+		# (display_message, "@{reg10},{reg11} to {reg12},{reg13} ({s3})"),
+		(agent_set_position, ":agent_no", pos2),
+		(agent_set_scripted_destination, ":agent_no", pos1, 0),
+		#(agent_set_slot, ":agent_no", 1, 1),
+	 (try_end),
+  ]),
+  (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
+  (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
+  tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+  (0,0,ti_once,[],[
+	# spawn all party
+	(reset_visitors),
+	(set_battle_advantage, 0),
+	(add_reinforcements_to_entry,3,30),
+	#(display_message, "@Your troops are behind you"),
+	# (assign, ":p", "p_main_party"),
+	# (party_get_num_companion_stacks, ":n",":p"),
+	# (val_min, ":n", 10), # max 10 staks
+	# (try_for_range, ":i",0,":n"),
+		# (party_stack_get_troop_id,   ":trp_id",":p",":i" ),
+		# (party_stack_get_size, ":trp_no",":p",":i" ),
+		# (val_min, ":trp_no", 10),
+		# #(store_add, ":entry", ":i", 5),
+		# #(add_visitors_to_current_scene,2,":trp_id",":trp_no"),
+	# (try_end),
+  ],),
+  (0,6,ti_once,[],[  # after X secs, cancel all scripted destinations
+	(try_for_agents,":i"),
+	(agent_clear_scripted_mode, ":i"),
+	(try_end),
+  ],),
+  ]
+),
+
 ( "lead_charge",mtf_battle_mode,charge,
   "You lead your men to battle.",
 	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,12,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),

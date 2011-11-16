@@ -387,7 +387,7 @@ lorien 0
  1  beard_blonde 
  4  elfface_young 4291551456 1 3  hair_blonde_elf  4294967295  4289742615  4283443737  elfface_young_2 4292866017 1 5  hair_blonde_elf  4294967295  4289742615  4284689944  4283443737  4279832588  elfface_young_4 4291879136 1 4  hair_blonde_elf  4286787610  4283443737  4279832588  4278979865  elfface_young_3 4292668909 1 3  hair_blonde_elf  4281276430  4279702291  4278650892 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_lothlorien_yell  6 snd_lothlorien_victory 
- skel_human 1.000000 
+ skel_elf 1.000000 
 2 3
 8
 
@@ -410,7 +410,7 @@ imladris 0
  1  beard_blonde 
  4  elfface_young 4291551456 1 3  hair_blonde_elf  4294967295  4289742615  4283443737  elfface_young_2 4292866017 1 5  hair_blonde_elf  4294967295  4289742615  4284689944  4283443737  4279832588  elfface_young_4 4291879136 1 4  hair_blonde_elf  4286787610  4283443737  4279832588  4278979865  elfface_young_3 4292668909 1 3  hair_blonde_elf  4281276430  4279702291  4278650892 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_rivendell_yell  6 snd_rivendell_victory 
- skel_human 1.000000 
+ skel_elf 1.000000 
 2 3
 8
 
@@ -433,7 +433,7 @@ woodelf 0
  0 
  4  elfface_young 4291551456 1 3  hair_blonde_elf  4294967295  4289742615  4283443737  elfface_young_2 4292866017 1 5  hair_blonde_elf  4294967295  4289742615  4284689944  4283443737  4279832588  elfface_young_4 4291879136 1 4  hair_blonde_elf  4286787610  4283443737  4279832588  4278979865  elfface_young_3 4292668909 1 3  hair_blonde_elf  4281276430  4279702291  4278650892 
  6  0 snd_man_die  1 snd_man_hit  2 snd_man_grunt  3 snd_man_grunt_long  4 snd_mirkwood_yell  6 snd_mirkwood_victory 
- skel_human 1.000000 
+ skel_elf 1.000000 
 2 3
 8
 

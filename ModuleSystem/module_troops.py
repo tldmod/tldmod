@@ -312,15 +312,15 @@ orc_face9              = 0x00000001be000000251b74b761cea75300000000001edd3300000
 troll_face1        = 0x000000018000000236db6db6db6db6db00000000001db6db0000000000000000  # no effects
 troll_face2        = 0x000000018000000236db6db6db6db6db00000000001db6db0000000000000000  # no effects
  
-urukhai_face_low1      = 0x0000000180000001003b6db6db6db6db00000000000000000000000000000000
-urukhai_face_low2      = 0x00000001932021c3003a8e53356a271200000000000000000000000000000000
-urukhai_face_mid1      = 0x0000000193000205003a8e53356a271a00000000000000000000000000000000
-urukhai_face_mid2      = 0x0000000193202046003a8fd31d0a2f1a00000000000000000000000000000000
-urukhai_face_high1     = 0x000000003f000084003a8ff32e6a7f0200000000000000000000000000000000
-urukhai_face_high2     = 0x0000000193202205003a8e53356a271a00000000000000000000000000000000
-uruk_hai_face1         = 0x0000000193000205003a8e53356a271a00000000000000000000000000000000
-uruk_hai_face2         = 0x0000000193202205003a8e53356a271a00000000000000000000000000000000
- 
+#urukhai_face_low1      = 0x0000000180000001003b6db6db6db6db00000000000000000000000000000000
+#urukhai_face_low2      = 0x00000001932021c3003a8e53356a271200000000000000000000000000000000
+#urukhai_face_mid1      = 0x0000000193000205003a8e53356a271a00000000000000000000000000000000
+#urukhai_face_mid2      = 0x0000000193202046003a8fd31d0a2f1a00000000000000000000000000000000
+#urukhai_face_high1     = 0x000000003f000084003a8ff32e6a7f0200000000000000000000000000000000
+#urukhai_face_high2     = 0x0000000193202205003a8e53356a271a00000000000000000000000000000000
+uruk_hai_face1         = 0x0000000400000000003800000000000000000000000000000000000000000000
+uruk_hai_face2         = 0x0000000400002207003fffffffffffff00000000000000000000000000000000
+
 evil_man_face1         = man_face_young_1
 evil_man_face2         = man_face_older_2
 dunland_face1          = 0x000000001f001001124161829880300200000000001c00800000000000000000
@@ -1410,10 +1410,10 @@ troops = [
 # first non ghost-warg
 ["uruk_hai_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_ragwrap,itm_isen_uruk_heavy_d,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],
-      attr_tier_2,wp_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,urukhai_face_low1,urukhai_face_low2],
+      attr_tier_2,wp_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,uruk_hai_face1,uruk_hai_face2],
 ["large_uruk_hai_tracker","Large_Uruk_Hai_Tracker","Large_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_tracker_boots,itm_isen_uruk_helm_e,itm_isen_uruk_heavy_d,itm_isen_uruk_heavy_e,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],
-      attr_tier_3,wp_tier_3,knows_athletics_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,urukhai_face_low1,urukhai_face_low2],
+      attr_tier_3,wp_tier_3,knows_athletics_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
 ["fighting_uruk_hai_tracker","Fighting_Uruk_Hai_Tracker","Fighting_Uruk_Hai_Trackers",tf_urukhai| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
    [itm_uruk_tracker_boots,itm_isen_uruk_helm_f,itm_isen_uruk_heavy_e,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_sword,],
       attr_tier_4,wp_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],

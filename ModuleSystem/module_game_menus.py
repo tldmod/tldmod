@@ -1537,11 +1537,17 @@ game_menus = [
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
     ],[
 		("camp_scene"      ,[],"Walk around."  ,[
-			(assign, "$number_of_combatants", 1), # add a scene as if a battle with one combatant...
+			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),
 			(change_screen_mission)]),
-		("camp_action"     ,[],"More options."    ,[(jump_to_menu, "mnu_camp_action")]),
+		("camp_troop"      ,[(party_get_num_companions,reg10,"p_main_party"),(gt,reg10,1)],"Review troops."  ,[
+			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...
+			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
+			#    (jump_to_scene, "scn_camp_scene"),
+			(set_jump_mission,"mt_review_troops"),
+			(change_screen_mission)]),
+		("camp_action"     ,[],"Use an object."    ,[(jump_to_menu, "mnu_camp_action")]),
 
   #TLD - modified rest menu, added chance of being attacked by assasins (Kolba)
 		("camp_wait_here",[],"Camp here for some time.",
@@ -2869,7 +2875,7 @@ game_menus = [
  ]),  
  
 ("camp_action",0,
-  "^^^^^^^^^     Choose an action:", "none",
+  "^^^^^^^^^     Which object?", "none",
  [(set_background_mesh, "mesh_ui_default_menu_window"),],
  [ 
     ("camp_drink_water",
@@ -4826,9 +4832,9 @@ game_menus = [
                                 (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
                                 (assign, "$g_battle_result", 0),
  #                               (call_script, "script_calculate_renown_value"),
-                                (call_script, "script_calculate_battle_advantage"),
+                                (call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
                                 (call_script, "script_calculate_battleside_races"),
-                                (set_battle_advantage, reg0),
+                                
                                 (set_party_battle_mode),
                                 (set_jump_mission,"mt_lead_charge"),
 								

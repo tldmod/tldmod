@@ -752,10 +752,10 @@
   12.000000 leaning_back_mounted 0 94 1342177283 0 0.000000 0.000000 0.000000  0.000000 
  sit_on_ground 0  1
   20.000000 sitting 0 199 1342177280 0 0.000000 0.000000 0.000000  0.000000 
- unused_human_anim_46 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_47 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
+ pause 0  1
+  1.000000 anim_human 50 52 1025 0 0.000000 0.000000 0.000000  0.250000 
+ pause_mounted 0  1
+  1.000000 stand_onhorse 0 30 1025 0 0.000000 0.000000 0.000000  0.250000 
  unused_human_anim_48 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_49 0  1

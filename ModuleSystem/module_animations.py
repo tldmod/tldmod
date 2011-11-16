@@ -1329,8 +1329,18 @@ animations = [
  ["lean_from_camera_mounted", 0,[12, "leaning_back_mounted", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
 
  ["sit_on_ground", 0, [20, "sitting", 0, 199, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
- ["unused_human_anim_46", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_47", 0, [1.0, "anim_human", 0, 1, 0]],
+ 
+ # next is unused_human_anim_46
+ 
+ ["pause", 0,
+#   [3.0, "myanim", 0, 50, arf_cyclic|arf_loop_pos_0_25],
+   [1.0, "anim_human", 50, 52, acf_enforce_all|arf_blend_in_0 , 0, (0, 0, 0), 0.25],
+ ],
+ ["pause_mounted", 0,
+   [1.0, "stand_onhorse", 0, 30, acf_enforce_all|arf_blend_in_0, 0, (0, 0, 0), 0.25],
+ ],
+
+ 
  ["unused_human_anim_48", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_49", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_50", 0, [1.0, "anim_human", 0, 1, 0]],

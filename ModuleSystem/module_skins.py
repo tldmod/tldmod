@@ -614,7 +614,7 @@ skins = [
      ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ], #elf_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_lothlorien_yell"),(voice_victory,"snd_lothlorien_victory")], #voice sounds
-    "skel_human", 1.0,
+    "skel_elf", 1.0,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)
      [0.3, comp_less_than, (1.0,face_width), (1.0,temple_width)],
@@ -641,7 +641,7 @@ skins = [
      ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_rivendell_yell"),(voice_victory,"snd_rivendell_victory")], #voice sounds
-    "skel_human", 1.0,
+    "skel_elf", 1.0,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)
      [0.3, comp_less_than, (1.0,face_width), (1.0,temple_width)],
@@ -668,7 +668,7 @@ skins = [
      ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff07080c]),
      ], #man_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_mirkwood_yell"),(voice_victory,"snd_mirkwood_victory")], #voice sounds
-    "skel_human", 1.0,
+    "skel_elf", 1.0,
     psys_game_blood,psys_game_blood_2,
     [[1.7, comp_greater_than, (1.0,face_width), (1.0,temple_width)], #constraints: ex: 1.7 > (face_width + temple_width)
      [0.3, comp_less_than, (1.0,face_width), (1.0,temple_width)],
