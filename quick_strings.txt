@@ -1,4 +1,4 @@
-1027
+1028
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -504,6 +504,7 @@ qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
+qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
 qstr_Defenders:_infantry_ Defenders:_infantry_CHARGE!!

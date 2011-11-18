@@ -9115,7 +9115,7 @@ scripts = [
 	(else_try),
 		# c_ ithilien?  (second chance)
 		(is_between, ":x", -7800, -4700 ),(is_between, ":y", -3500,6500), 
-		(position_set_x,pos20,-3215),(position_set_y,pos20,4185),(position_set_z,pos20,0.0),(get_distance_between_positions,":dist",pos1,pos20), (gt,":dist",850),
+		(position_set_x,pos20,-3215),(position_set_y,pos20,4185),(position_set_z,pos20,0.0),(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",850),
 		(assign, reg1, region_c_ithilien),
 	(else_try),
 		# entwash? (delta entwash or wetwand)
@@ -19025,7 +19025,21 @@ scripts = [
 	#(assign, reg51, ":debug_count"), (display_message, "@debug: copyed {reg51} items"),
 ]),
 
-("save_compartibility_script5",[]),
+ # another useful self explainatory script... (mtarini)
+("store_random_scene_position_in_pos10",[
+	(get_scene_boundaries,pos1,pos2),
+	(position_get_x,":min_x",pos1),(position_get_y,":min_y",pos1),
+	(position_get_x,":max_x",pos2),(position_get_y,":max_y",pos2),
+	(val_add, ":min_x", 100),(val_sub, ":max_x", 100),
+	(val_add, ":min_y", 100),(val_sub, ":min_y", 100),
+	(store_random_in_range, ":x", ":min_x", ":max_x"),
+	(store_random_in_range, ":y", ":min_y", ":max_y"),
+	(init_position, pos10),
+	(position_set_x, pos10, ":x"),
+	(position_set_y, pos10, ":y"),
+	(position_set_z_to_ground_level, pos10),
+]),
+
 ("save_compartibility_script6",[]),
 ("save_compartibility_script7",[]),
 ("save_compartibility_script8",[]),

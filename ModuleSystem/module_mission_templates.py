@@ -440,6 +440,7 @@ mission_templates = [ # not used in game
   ],
   #tld_common_peacetime_scripts +
   [  
+  # make friend, prisoners, players, etc appear at the rigth locations and with scripted short starting walks
   (ti_on_agent_spawn, 0, 0, [],[
      (store_trigger_param_1, ":agent_no"),
 	 
@@ -555,7 +556,6 @@ mission_templates = [ # not used in game
 	]),
   (0,0,ti_once,[],[
 	# spawn all party
-	(reset_visitors),
 	(set_battle_advantage, 0),
 	#(add_reinforcements_to_entry,3,30),
 	
@@ -567,6 +567,7 @@ mission_templates = [ # not used in game
 	(assign, ":max_pris", 10),
 	(store_current_scene, ":cur_scene"),
 	(modify_visitors_at_site, ":cur_scene"), 
+	(reset_visitors),
 	(try_for_range, ":i",0,":n"),
 	  (party_prisoner_stack_get_troop_id,   ":trp_id",":p",":i" ),
 	  (party_prisoner_stack_get_size, ":trp_no",":p",":i" ),
@@ -761,40 +762,77 @@ mission_templates = [ # not used in game
 			(try_end),
 			(finish_mission)]),
 ]),
-( "fangorn_battle",mtf_battle_mode,charge, # battle against random ents (MT)
+( "fangorn_battle",0,-1, # battle against random ents (mtarini)
     "You lead your men to battle Ents!",
-    [(1,mtef_team_1,0,aif_start_alarmed,12,[]),
-     (0,mtef_team_1,0,aif_start_alarmed,0,[]),
-     (2,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),
-     (3,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),
+    [(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]), # not used
+	 (4,mtef_attackers|mtef_team_1,0,0,1,[]), (4,mtef_attackers|mtef_team_1,0,0,12,[]), # troops
+	 #(1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),(0,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
+     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
+     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
+     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
     ],
+	
+
 	tld_common_battle_scripts+[   
 	common_battle_tab_press,
 	common_inventory_not_available, 
+	common_music_situation_update,
+	common_battle_check_friendly_kills,
+	common_battle_check_victory_condition,
+	common_battle_victory_display,
+	common_battle_order_panel,
+	common_battle_order_panel_tick,
+	
+	#  make ent spawn at random
+    (ti_on_agent_spawn, 0, 0, [],[
+     (store_trigger_param_1, ":agent"),
+	 (agent_get_troop_id, ":trp", ":agent"), 
+	 (eq, ":trp", "trp_ent"), # a ent is spawned!
+	 
+	 (mission_cam_get_position, pos11), 
+	 # spawn it at random pos
+	 (try_for_range, ":unused", 0, 50),
+	     (call_script, "script_store_random_scene_position_in_pos10" ),
+		 (position_is_behind_position, pos10, pos11), # ent appear always out of view >:-)
+		 (assign, ":unused", 50), # ends for loop
+	 (end_try),
+	 (agent_set_position, ":agent", pos10),
+	]),
+
+	# initial conditions: 1 or 2 ents
 	(0, 0, ti_once,[],[
 			(assign,"$battle_won",0),
 			(assign,"$defender_reinforcement_stage",0),
 			(assign,"$attacker_reinforcement_stage",0),
 			(assign,"$g_presentation_battle_active", 0),
+			
+			# start with 1 or 2 ents
+			(store_current_scene, ":cur_scene"),
+			(modify_visitors_at_site, ":cur_scene"), 
+			(reset_visitors),
+			#(set_visitor,0,"trp_player"),
+			
+			(store_random_in_range,":n_ents",-1,3),(val_max,":n_ents",1), #  2 ents once in four
+			(add_visitors_to_current_scene,4,"trp_ent",":n_ents"), # add the (1 or 2) ent(s) to start with
 			#(call_script, "script_place_player_banner_near_inventory"),
-			(call_script, "script_combat_music_set_situation_with_culture")]),
-	common_music_situation_update,
-	common_battle_check_friendly_kills,
-			(ti_before_mission_start, 0, 0, [],
+			(call_script, "script_combat_music_set_situation_with_culture"),
+			(display_message, "@You have a clear perception of great imminent danger, from all around you!",color_bad_news),
+			
+			]),
+	(ti_before_mission_start, 0, 0, [],
 			[(team_set_relation, 1, 0, -1),
 			(team_set_relation, 1, 2, -1)]),
-	(35,0,0, [], [
+	# add new ents from time to time
+	(30,0,0, [], [
 			(store_random_in_range,":d100",1,101),
-			(lt,":d100",35), # 35% of the times...
+			(lt,":d100", 10), #  5% of the times...
 			(this_or_next|lt,":d100",8), # 8%: every 35 secs an ent appears anyway
 			(gt,"$g_fangorn_rope_pulled",10), # or an ent appears at cost of 10 points of 
 			(val_sub,"$g_fangorn_rope_pulled",10),
 			(val_max,"$g_fangorn_rope_pulled",0),
-			(store_random_in_range,":entry_point",2,5),
-			(add_visitors_to_current_scene, ":entry_point", "trp_ent", 1),
+			#(store_random_in_range,":entry_point",2,5),
+			(add_visitors_to_current_scene, 4, "trp_ent", 1),
 			(display_message, "@New ent reached battle scene...")]),
-	common_battle_check_victory_condition,
-	common_battle_victory_display,
 	(1, 4, ti_once, [(main_hero_fallen)],[
 			(assign, "$pin_player_fallen", 1),
 			(str_store_string, s5, "str_retreat"),
@@ -804,8 +842,6 @@ mission_templates = [ # not used in game
 			(call_script, "script_count_mission_casualties_from_agents"),
 			(finish_mission,0)]),
 	#common_battle_inventory,
-	common_battle_order_panel,
-	common_battle_order_panel_tick,
 ]),
 ( "assasins_attack",mtf_battle_mode,-1,#TLD - assasins attack begin (Kolba)
   "assasins",

@@ -1142,6 +1142,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(try_end),
 ])
 
+# mtarini: troll fights by scripts
 #MV: inserted troll "charging" (going ahead not following orders)
 custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 	(try_for_agents,":troll"),
@@ -1423,7 +1424,7 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 		(try_end),
 ])
 
-# NOT USED YET (still WIP)
+# matrini: warg attacks.... NOT USED YET (still WIP)
 custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_random_in_range,reg10,0,3), (eq,reg10,1)],[ # once every three times
 	(try_for_agents,":warg"),	  # horse rearing near troll
         (agent_is_alive, ":warg"), #MV
@@ -1468,6 +1469,8 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
 	(try_end),
 ])
+
+# make mount sound by scripts (bypasses MaB limit to customize mount sounds)
 custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg and horse sounds
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
     
@@ -1501,6 +1504,8 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 		(try_end),
 	(try_end),
 ])
+
+# mtarini: wargs attack even if they are not mounted
 custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
 	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
         (agent_is_alive, ":ghost"), 
