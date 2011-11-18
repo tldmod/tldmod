@@ -1123,7 +1123,7 @@ animations = [
    [3.0, "poses", 8, 8, arf_cyclic],
  ],
 
-
+ 
  
  ### Unused human animations start from here.
  
@@ -1332,18 +1332,39 @@ animations = [
  
  # next is unused_human_anim_46
  
- ["pause", 0,
+ ["pause",acf_enforce_all,
 #   [3.0, "myanim", 0, 50, arf_cyclic|arf_loop_pos_0_25],
-   [1.0, "anim_human", 50, 52, acf_enforce_all|arf_blend_in_0 , 0, (0, 0, 0), 0.25],
+   [1.0, "anim_human", 50, 52, arf_blend_in_0 , 0, (0, 0, 0), 0.25],
  ],
- ["pause_mounted", 0,
-   [1.0, "stand_onhorse", 0, 30, acf_enforce_all|arf_blend_in_0, 0, (0, 0, 0), 0.25],
+ ["pause_mounted", acf_enforce_all,
+   [1.0, "stand_onhorse", 0, 30, arf_blend_in_0, 0, (0, 0, 0), 0.25],
  ],
 
+ #TIED PRISONERS (mtarini) 
+ # ----------------------
+ # tied prisoners  (mtarini)
+ ["stay_tied", acf_enforce_all,
+   [6.2, "tied_stand_walk", 24, 54, arf_blend_in_10|arf_cyclic], 
+   [6.2, "tied_stand_walk", 14, 44, arf_blend_in_10|arf_cyclic], 
+   [6.2, "tied_stand_walk",  4, 34, arf_blend_in_10|arf_cyclic], 
+ ],
+
+ ["walk_tied", acf_enforce_all|acf_displace_position,
+#   [stand a arando time, then walk (arrive at the same instant)
+   [5.6, "tied_stand_walk", 55,152, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 50,148, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 45,142, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 40,138, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 35,138, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 30,138, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+   [5.6, "tied_stand_walk", 45,138, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
+ ],
  
- ["unused_human_anim_48", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_49", 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_50", 0, [1.0, "anim_human", 0, 1, 0]],
+ ["fall_tied", acf_enforce_all|acf_align_with_ground, 
+   [2.3, "tied_fall_rise", 0, 91, arf_blend_in_1|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],
+ ],
+
+  ["unused_human_anim_50", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_51", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_52", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_53", 0, [1.0, "anim_human", 0, 1, 0]],

@@ -1541,7 +1541,11 @@ game_menus = [
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),
 			(change_screen_mission)]),
-		("camp_troop"      ,[(party_get_num_companions,reg10,"p_main_party"),(gt,reg10,1)],"Review troops."  ,[
+		("camp_troop"      ,[
+		    (party_get_num_companions,reg10,"p_main_party"),(val_sub,reg10,1),
+		    (party_get_num_prisoners,reg11,"p_main_party"),(this_or_next|gt,reg10,0),(gt,reg11,0),
+			(store_mul, reg12, reg10,reg11),
+		],"Review{reg10?_troops:}{reg12?_and:}{reg11?_prisoners:}."  ,[
 			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),

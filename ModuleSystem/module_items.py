@@ -95,9 +95,9 @@ items =[
 ["quest_wine","Wine",[("amphora_slim",0)],itp_type_goods,0,46,weight(40)|abundance(60)|max_ammo(50),imodbits_none],
 ["quest_ale","Ale",[("ale_barrel",0)],itp_type_goods,0,31,weight(40)|abundance(70)|max_ammo(50),imodbits_none],
 
-["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,10,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,50,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_c",0)],itp_type_goods,0,250,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,scrap_bad_value,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,scrap_medium_value,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_c",0)],itp_type_goods,0,scrap_good_value,weight(40)|abundance(0)|0,imodbits_none],
 # 
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.
@@ -1236,16 +1236,17 @@ items =[
 ["crebain_reward","Isengard_Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
+
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,3000,weight(3)|head_armor(50)|difficulty(12),0],
 ["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
 ["denethor_robe","Stewards_Robe",[("denethor_robe",0)],itp_type_body_armor|itp_covers_legs,0,1000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
-["witchking_helmet","Wicked_Helmet",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
+["witchking_helmet","Wicked_Helm",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,5000,weight(19)|head_armor(0)|body_armor(45)|leg_armor(17)|difficulty(15),imodbits_elf_armor,],
-["save_compartibility_item2","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["save_compartibility_item3","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["save_compartibility_item4","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["save_compartibility_item5","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],

@@ -1,4 +1,4 @@
-1022
+1027
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -145,6 +145,10 @@ qstr_View_notes View_notes
 qstr_Debug_str:_{reg0} Debug_str:_{reg0}
 qstr__{s61} _{s61}
 qstr_ERROR:_More_than_15_ ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
+qstr_nothing nothing
+qstr_Good Good
+qstr_Med Med
+qstr_Bad Bad
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded
 qstr_killed killed
 qstr_wounded wounded
@@ -485,6 +489,7 @@ qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
+qstr_debug:_spawning_{reg debug:_spawning_{reg3}_{s3}_as_prisoners
 qstr_Forming_ranks. Forming_ranks.
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!

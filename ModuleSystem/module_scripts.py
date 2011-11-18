@@ -3883,8 +3883,7 @@ scripts = [
       (val_div, ":loot_probability", 10),
       (val_div, ":loot_probability", ":num_player_party_shares"),
 
-	  (assign, ":dest", "trp_temp_troop"), (try_begin),(eq,"$tld_option_crossdressing", 0),(assign, ":dest", "trp_temp_troop_2"),(try_end),
-	  (troop_clear_inventory,"trp_temp_troop_2"),
+	  (assign, ":dest", "trp_temp_troop"), #(try_begin),(eq,"$tld_option_crossdressing", 0),(assign, ":dest", "trp_temp_troop_2"),(try_end),
 	  (troop_clear_inventory,"trp_temp_troop"),
 
       (party_get_num_companion_stacks, ":num_stacks",":enemy_party"),
@@ -3896,14 +3895,24 @@ scripts = [
           (troop_loot_troop,":dest",":stack_troop",":loot_probability"),
         (try_end),
       (try_end),
-	# substitute forbidden items  with "metal scraps" 
+	  
+	  #  substitute forbidden items  with "metal scraps"   (mtarini)
+	  # ##################################
 	  (try_begin),
-		(eq,"$tld_option_crossdressing", 0),
+
+	  (eq,"$tld_option_crossdressing", 0),
+
+		(call_script,"script_troop_copy_all_items_from_troop", "trp_temp_troop_2","trp_temp_troop"),
+	  
+	    (troop_clear_inventory,"trp_temp_troop"),
 		(troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop_2"),
+		
+		#(assign, reg10, ":inv_cap"), (display_message,"@debug: starting scrapization over {reg10} objects..."),
 		
 		(try_for_range, ":i_slot", 0, ":inv_cap"),
 			(troop_get_inventory_slot, ":item_id", "trp_temp_troop_2", ":i_slot"),
 			(ge, ":item_id", 0),
+			#(display_message,"@debug: non zero obj..."),
 			(try_begin),
 				(item_get_type, ":it", ":item_id"),
 				(eq, ":it", itp_type_horse),
@@ -3934,16 +3943,32 @@ scripts = [
 				(troop_add_item, "trp_temp_troop", ":item_id"),
 			(else_try),
 				# replace item with scrap
-				(store_random_in_range, ":rand", 0, 100), (ge, ":rand", 75),
+				#(store_random_in_range, ":rand", 0, 100), (ge, ":rand", 75),
 				(store_item_value, ":val", ":item_id"),
-				(try_begin), (ge,":val",150), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_good"),
-				(else_try), (ge,":val",30), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),
-				(else_try), (ge,":val",5), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),
+				
+				(assign, reg20, ":val"),
+				(str_store_item_name,s20,":item_id"),
+				
+				# random rounding of values (so that average total values is kept the same)
+				(assign, ":rounding", 0),
+				(try_begin), (lt,":val",scrap_bad_value),   (store_random_in_range, ":rounding", 0, scrap_bad_value),
+				(else_try),  (lt,":val",scrap_medium_value),(store_random_in_range, ":rounding", 0, scrap_medium_value - scrap_bad_value),
+				(else_try),  (lt,":val",scrap_good_value),  (store_random_in_range, ":rounding", 0, scrap_good_value - scrap_medium_value),
 				(try_end),
+				(val_add, ":val", ":rounding"), 
+				(assign, reg21, ":rounding"),
+				
+				(str_store_string, s22, "@nothing"),
+				(try_begin),(ge,":val",scrap_good_value),   (troop_add_item, "trp_temp_troop", "itm_metal_scraps_good"),  (str_store_string,s22,"@Good"),
+				(else_try), (ge,":val",scrap_medium_value), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),(str_store_string,s22,"@Med"),
+				(else_try), (ge,":val",scrap_bad_value),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@Bad"),
+				(try_end),
+				#(display_message,"@debug: turned a {s20} {reg20} (+{reg21}) into {reg22}..."),
 			(try_end),	  
 		(try_end),	  
       (try_end),	  
-	# adding any special loot from party "looted item" slots (item that where stolen by the party)
+	  
+	  # adding any special loot from party "looted item" slots (item that where stolen by the party)
       (try_for_range, ":i_loot", 0, num_party_loot_slots),
         (store_add, ":cur_loot_slot", ":i_loot", slot_party_looted_item_1),
         (party_get_slot, ":item_no", "$g_enemy_party", ":cur_loot_slot"),
@@ -11413,19 +11438,21 @@ scripts = [
          (position_transform_position_to_parent, pos1, pos1, pos2),
        (try_end),
        (agent_set_scripted_destination, ":agent_no", pos1, 0),
+
+	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
+	   (troop_get_type,":try_limit",":troop_no"),
 	   (try_begin),
 			(neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
 			(neq, "$current_town", "p_town_east_osgiliath"),
 #			(neq, "$g_defending_against_siege", 0), # guys run when siege
-			(agent_set_speed_limit, ":agent_no", 4),
+			(try_begin),
+				(this_or_next|eq,":try_limit",tf_orc),
+				(eq,":try_limit",tf_dwarf),
+				(store_random_in_range,reg10,2,4), (agent_set_speed_limit, ":agent_no", reg10), # orc dwarf walk slower
+			(else_try),
+				(store_random_in_range,reg10,3,6), (agent_set_speed_limit, ":agent_no", reg10), # humans
+			(try_end),   
 	   (try_end),
-	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
-	   (troop_get_type,":try_limit",":troop_no"),
-	   (try_begin),
-            (this_or_next|eq,":try_limit",tf_orc),
-			(eq,":try_limit",tf_dwarf),
-			(agent_set_speed_limit, ":agent_no", 2),
-	   (try_end),   
      (try_end),
 ]),
 
@@ -18978,7 +19005,26 @@ scripts = [
 	(try_end),
 ]),
  
-("save_compartibility_script4",[]),
+ # another useful self explainatory script... (mtarini)
+("troop_copy_all_items_from_troop",[
+	(store_script_param_1, ":dest"),
+	(store_script_param_2, ":source"),
+	(troop_get_inventory_capacity, ":n", ":source"),
+	(troop_ensure_inventory_space,":dest",":n"),
+	
+	#(assign, ":debug_count", 0), # for debug
+	(troop_clear_inventory,":dest"),
+	(try_for_range, ":i", 0, ":n"),
+		(troop_get_inventory_slot, ":item_id", ":source", ":i"),
+		(ge, ":item_id", 0),
+		(troop_get_inventory_slot_modifier, ":item_mod", ":source", ":i"),
+		(troop_add_item, ":dest", ":item_id",":item_mod",),
+		#(val_add, ":debug_count", 1), # for debug
+	(try_end),
+
+	#(assign, reg51, ":debug_count"), (display_message, "@debug: copyed {reg51} items"),
+]),
+
 ("save_compartibility_script5",[]),
 ("save_compartibility_script6",[]),
 ("save_compartibility_script7",[]),

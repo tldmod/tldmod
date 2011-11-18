@@ -117,6 +117,7 @@ mission_templates = [ # not used in game
 			# (call_script, "script_remove_agent", reg41),
 			# (add_visitors_to_current_scene,31, "trp_knight_2_11",1),
 			# (display_message, "@ATTEMPT SPAWNING!"),]),
+			
 		# freindly greetings (after 0.35 secs)
 		(0, 0.35, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
@@ -393,15 +394,51 @@ mission_templates = [ # not used in game
 
 # review troops (mtarini)
 ("review_troops",0,-1,"You review your troops",
-[(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]),
- (1,mtef_attackers|mtef_team_1,0,0,1,[]),(4,mtef_attackers|mtef_team_1,0,0,0,[]),
- #(5,mtef_visitor_source,0,0,50,[]),  
- #(6,mtef_visitor_source,0,0,50,[]),  
- #(7,mtef_visitor_source,0,0,50,[]),  
- #(8,mtef_visitor_source,0,0,50,[]),  
- #(9,mtef_visitor_source,0,0,50,[]),  
- #(10,mtef_visitor_source,0,0,50,[]),  
-],tld_common_peacetime_scripts +
+[(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]), # not used
+ (1,mtef_attackers|mtef_team_1,0,0,1,[]), # player 
+ (4,mtef_attackers|mtef_team_2,0,0,30,[]), # troops
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  # prisoners
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+ (4,mtef_visitor_source,
+    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
+	0,0,[itm_feet_chains]
+  ),  
+  ],
+  #tld_common_peacetime_scripts +
   [  
   (ti_on_agent_spawn, 0, 0, [],[
      (store_trigger_param_1, ":agent_no"),
@@ -414,7 +451,10 @@ mission_templates = [ # not used in game
 		# player was spawned at a distant entry point so that it faces his troops (MaB bug: set poistion doesn't affect ... move back to his troops
 		(entry_point_get_position,pos1,4),
 		(position_move_y, pos1, 700, 0), # move player in front
-		(position_move_x, pos1, 750, 0),# center player
+		
+		(party_get_num_companions, ":nc","p_main_party"),
+		(val_mul, ":nc", 50), (val_sub, ":nc", 50), (val_min, ":nc", 750),
+		(position_move_x, pos1, ":nc", 0),# center player on X
 		#(position_rotate_z, pos1, 180), # rotate player to face troops ... if only this worked... sigh 
 		(agent_set_position, ":agent_no", pos1),
 		(try_begin),
@@ -422,6 +462,8 @@ mission_templates = [ # not used in game
 			(agent_set_position, reg12, pos1),
 		(try_end),
 	 (else_try),
+	 
+		# NPCS...
 		(store_random_in_range,":speed_limit",2,6),
 		
 		(try_begin),
@@ -435,47 +477,105 @@ mission_templates = [ # not used in game
 			(agent_set_animation, ":agent_no", "anim_pause"),
 			(store_random_in_range, reg6, 90, 100),(agent_set_animation_progress, ":agent_no", reg6),
 		(try_end),
-		
-		(agent_set_speed_limit,":agent_no",":speed_limit"),
+
 		
 		(copy_position, pos2, pos1),
 		(store_random_in_range,":start_pos",-460,-330),
 		(position_move_y, pos2, ":start_pos", 0), # ten steps backward plese
 		(store_random_in_range,":start_drift",-50,+50),
-		(position_move_x, pos2, ":start_drift", 0), 
-		
+		(position_move_x, pos2, ":start_drift", 0), 		
 		(position_move_y, pos1, 200, 0), # ten steps backward plese
 		
 		# (position_get_x, reg10, pos1),
 		# (position_get_y, reg11, pos1),
 		# (position_get_x, reg12, pos2),
 		# (position_get_y, reg13, pos2),
-		# (agent_get_troop_id, reg16,  ":agent_no"), (str_store_troop_name, s3, reg16),
-		# (display_message, "@{reg10},{reg11} to {reg12},{reg13} ({s3})"),
-		(agent_set_position, ":agent_no", pos2),
-		(agent_set_scripted_destination, ":agent_no", pos1, 0),
+		 (agent_get_troop_id, reg16,  ":agent_no"), (str_store_troop_name, s3, reg16),
+		 #(display_message, "@{reg10},{reg11} to {reg12},{reg13} ({s3})"),
+		(try_begin),
+			(agent_has_item_equipped, ":agent_no", itm_feet_chains),
+			(store_random_in_range,":speed_limit",1,2),
+			(position_move_y, pos2, -600, 0),
+			(position_move_y, pos1, -600, 0), # prisoners, stay back
+			
+			(agent_set_animation, ":agent_no", "anim_stay_tied"),
+		    #(display_message, "@Spawn pris: ({s3})"),
+			(agent_set_position, ":agent_no", pos2),
+			(store_agent_hit_points,":cur_hp",":agent_no",1),
+			(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
+			(agent_set_slot, ":agent_no", slot_agent_troll_swing_status, 0),
+			(agent_set_animation_progress, ":agent_no", 20),
+			(agent_set_team, ":agent_no", 3),
+		(else_try),
+			(agent_set_team, ":agent_no", 2),
+			(agent_set_position, ":agent_no", pos2),
+			(agent_set_scripted_destination, ":agent_no", pos1, 0),
+		(try_end),
+		(agent_set_speed_limit,":agent_no",":speed_limit"),
 		#(agent_set_slot, ":agent_no", 1, 1),
 	 (try_end),
   ]),
+  
   (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
   (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
   tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+  (ti_before_mission_start,0,0,[],[
+    (set_battle_advantage, 0),
+	(team_set_relation,1,2,0), # plater neuter with troops
+	(team_set_relation,2,3,0), # troops neuter with pris
+	(team_set_relation,1,3,-1), # player can kill pris!
+	]),
+  
+  # keep them tied...
+  (0,0.5,0,[],[
+	(try_for_agents,":agent_no"),
+		(agent_has_item_equipped, ":agent_no", itm_feet_chains),
+		(agent_get_slot, reg10,      ":agent_no", slot_agent_troll_swing_status), 
+		(agent_get_slot, ":last_hp", ":agent_no", slot_agent_last_hp), 
+		(store_agent_hit_points,":cur_hp",":agent_no",1),
+		(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
+		(try_begin),
+			(store_mod, reg11, reg10, 10),(this_or_next|eq, reg11, 0), # one turn every 10...
+			(neq,":cur_hp",":last_hp"),
+			(try_begin),
+				(neq,":cur_hp",":last_hp"), # hit: fall
+				(agent_set_animation, ":agent_no", "anim_fall_tied"),
+				(assign, reg10, 6),
+			(else_try),
+				(eq,reg10,0), # first time: walk
+				(agent_set_animation, ":agent_no", "anim_walk_tied"),
+			(else_try),
+				(agent_set_animation, ":agent_no", "anim_stay_tied"),
+			(try_end),
+		(try_end),
+		(val_add, reg10, 1),
+		(agent_set_slot, ":agent_no", slot_agent_troll_swing_status, reg10),
+		(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
+	(try_end),
+	]),
   (0,0,ti_once,[],[
 	# spawn all party
 	(reset_visitors),
 	(set_battle_advantage, 0),
-	(add_reinforcements_to_entry,3,30),
+	#(add_reinforcements_to_entry,3,30),
+	
 	#(display_message, "@Your troops are behind you"),
-	# (assign, ":p", "p_main_party"),
-	# (party_get_num_companion_stacks, ":n",":p"),
-	# (val_min, ":n", 10), # max 10 staks
-	# (try_for_range, ":i",0,":n"),
-		# (party_stack_get_troop_id,   ":trp_id",":p",":i" ),
-		# (party_stack_get_size, ":trp_no",":p",":i" ),
-		# (val_min, ":trp_no", 10),
-		# #(store_add, ":entry", ":i", 5),
-		# #(add_visitors_to_current_scene,2,":trp_id",":trp_no"),
-	# (try_end),
+	
+	# spawn prisoners...
+	(assign, ":p", "p_main_party"),
+	(party_get_num_prisoner_stacks, ":n",":p"),
+	(assign, ":max_pris", 10),
+	(store_current_scene, ":cur_scene"),
+	(modify_visitors_at_site, ":cur_scene"), 
+	(try_for_range, ":i",0,":n"),
+	  (party_prisoner_stack_get_troop_id,   ":trp_id",":p",":i" ),
+	  (party_prisoner_stack_get_size, ":trp_no",":p",":i" ),
+	  (val_min, ":trp_no", ":max_pris"),
+	  (store_add, ":entry", ":i", 4),
+	  (add_visitors_to_current_scene,":entry",":trp_id",":trp_no"),
+	  (val_sub,":max_pris",":trp_no"), 
+	  (str_store_troop_name, s3, ":trp_id"),(assign, reg3,":trp_no"),(display_message,"@debug: spawning {reg3} {s3} as prisoners"),
+	(try_end),
   ],),
   (0,6,ti_once,[],[  # after X secs, cancel all scripted destinations
 	(try_for_agents,":i"),
