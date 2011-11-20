@@ -134,7 +134,14 @@ dialogs = [
 					(eq, 1, 0)],
 "Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
-[anyone ,"member_chat", [(store_conversation_troop, "$g_talk_troop"),
+# unified chat for review or access from party window (mtarini)
+[anyone|auto_proceed,"start", [(eq, "$talk_context", tc_troop_review_talk),(agent_has_item_equipped, "$g_talk_agent", "itm_feet_chains")], "___", "prisoner_chat_00",[]],
+[anyone|auto_proceed ,"prisoner_chat", [], "___", "prisoner_chat_00",[]],
+[anyone|auto_proceed,"start", [(eq, "$talk_context", tc_troop_review_talk),], "___", "member_chat_00",[]],
+[anyone|auto_proceed ,"member_chat", [], "___", "member_chat_00",[]],
+
+
+[anyone ,"member_chat_00", [(store_conversation_troop, "$g_talk_troop"),
                            (try_begin),
                                (is_between, "$g_talk_troop", companions_begin, companions_end),
                                (talk_info_show, 1),
@@ -550,7 +557,7 @@ dialogs = [
   # [trp_kidnapped_girl|plyr,"kidnapped_girl_chat_1", [], "Not yet.", "kidnapped_girl_chat_2",[]],
   # [trp_kidnapped_girl,"kidnapped_girl_chat_2", [], "I can't wait to get back. I've missed my family so much, I'd give anything to see them again.", "close_window",[]],
 
-[anyone,"member_chat",[
+[anyone,"member_chat_00",[
     (check_quest_active, "qst_escort_messenger"),
     (this_or_next|eq, "$g_talk_troop", "trp_messenger_dwarf"),
     (this_or_next|eq, "$g_talk_troop", "trp_messenger_elf"),
@@ -560,7 +567,7 @@ dialogs = [
 [anyone|plyr, "member_lady_1", [],  "We still have a long way ahead of us.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone|plyr, "member_lady_1", [],  "Very soon. We're almost there.", "close_window", [(call_script,"script_stand_back"),]],
 
-[anyone,"member_chat", [
+[anyone,"member_chat_00", [
     (check_quest_active, "qst_dispatch_scouts"),
     (quest_slot_eq, "qst_dispatch_scouts", slot_quest_object_troop, "$g_talk_troop"),
     # count if enough troops
@@ -654,7 +661,7 @@ dialogs = [
 [anyone|plyr, "member_scout_1", [],  "Wait a minute, not just yet.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone,"do_member_trade", [], "Anything else?", "member_talk",[]],
 
-[anyone,"member_chat", [(store_conversation_troop,"$g_talk_troop"),
+[anyone,"member_chat_00", [(store_conversation_troop,"$g_talk_troop"),
                           (troop_is_hero,"$g_talk_troop"),
                           (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                           (str_store_string, s5, ":honorific")],
@@ -1361,7 +1368,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 		(assign, "$g_move_heroes", 0),
         (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size
-		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$g_variable1", reg0), # initial party total value
+		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$initial_party_value", reg0), # initial party total value
 	]],
 
 # Player reserves - no upkeep for now - exploitable!
@@ -1493,11 +1500,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 	 [  (gt, reg28, reg0),# player gave fittings too (party size decreased)
 		(val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (val_sub, "$g_variable1", reg0), #calculate how much monetary value given
+        (val_sub, "$initial_party_value", reg0), #calculate how much monetary value given
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32), #player is in own faction
 		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),(str_clear, s31),
 		(try_end),
-		(assign, reg11, "$g_variable1"),
+		(assign, reg11, "$initial_party_value"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
           (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
@@ -1508,7 +1515,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
           (gt, reg46, 0),
           (str_store_string, s4, "@{s4} ^Oh, and take back those of your soldiers, that are not our kin."),
         (try_end)],
-"{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", "$g_variable1"),]],
+"{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", "$initial_party_value"),]],
 
 [anyone|plyr,"player_hire_troop_reunite_2", 
 	 [ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -3201,7 +3208,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 		(assign, "$g_move_heroes", 0),
         (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
-		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (assign, "$g_variable1", reg0), # initial party total value
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (assign, "$initial_party_value", reg0), # initial party total value
         (change_screen_give_members)]],
 [anyone,"lord_give_troops", [], "Unfortunately you don't have any {s22} soldiers to reinforce me with.", "lord_pretalk", []],
 
@@ -3220,11 +3227,11 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone,"lord_give_troops_check_1", [(gt, reg28, reg0),# player gave fittings too (party size decreased)
         (val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
-        (val_sub, "$g_variable1", reg0), #calculate how much monetary value given
+        (val_sub, "$initial_party_value", reg0), #calculate how much monetary value given
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32),
 		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),(str_clear, s31),
 		(try_end),
-		(assign, reg11, "$g_variable1"),
+		(assign, reg11, "$initial_party_value"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
           (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
@@ -3235,7 +3242,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
           (gt, reg46, 0),
           (str_store_string, s4, "@{s4} ^Oh, and take back those soldiers who are not our kin, I have no use for them."),
         (try_end)],
-"{s4}", "lord_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$g_variable1")]],
+"{s4}", "lord_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$initial_party_value")]],
 
 [anyone|plyr,"lord_give_troops_check_2", 
 	[ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -8283,13 +8290,23 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 
 # prisoner talk
-[anyone|plyr,"prisoner_chat", [(assign,"$talk_context",tc_prisoner_talk),], "Guards, bring me that one!", "prisoner_chat_2",[]],
+#[anyone|plyr,"prisoner_chat_00", [], "Guards, bring me that one!", "prisoner_chat_2",[]],
 
-[anyone,"prisoner_chat_2", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
+[anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
-[anyone|plyr,"prisoner_chat_3", [(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop")], 
-"You happen to be our next dinner! Guards, slaughter him!", "prisoner_slaughter",[]],
-[anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[]],
+[anyone|plyr,"prisoner_chat_3", [
+  (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop"),
+  (str_clear, s20),(try_begin),(neq, "$talk_context", tc_troop_review_talk ),(str_store_string, s20, "@_Guards, slaughter him!"), (try_end),
+], 
+"You happen to be our next dinner!{s20}", "prisoner_slaughter",[]],
+[anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[(call_script,"script_stand_back"),]],
+
+[anyone,"prisoner_slaughter", [(eq, "$talk_context", tc_troop_review_talk )], "One day you will pay!", "prisoner_slaughter_02",[]],
+
+[anyone|auto_proceed,"prisoner_slaughter_02", [], "_", "close_window",[
+	(call_script,"script_stand_back"),(display_message, "@Slaughter him for fresh human meat !",),
+]],
+
 [anyone,"prisoner_slaughter", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
 	(mission_cam_set_mode, 1, 1, 0),
 	(play_sound,"snd_man_die"),
@@ -8653,9 +8670,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ######################################
 # GENERIC MEMBER CHAT
 ######################################
-
    
-[anyone,"member_chat", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
+[anyone,"member_chat_00", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
 "Your orders, Commander?", "regular_member_talk",[]],
 
 [anyone|plyr,"regular_member_talk", [], "Tell me about yourself", "view_regular_char_requested",[]],
@@ -8664,7 +8680,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 # TLD: can disband members for Res Point (mtarini)
   
-[anyone,"member_chat", [
+[anyone,"member_chat_00", [
       (neg|troop_slot_eq, reg11, "$g_talk_troop", slot_troop_upkeep_not_paid,0), # if the troop wasn't paid last time, and it is on the leave
      (store_partner_faction, reg10),
     (str_store_faction_name, s12, reg10),
@@ -8870,7 +8886,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(assign, "$g_move_heroes", 0),
         (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
-		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$g_variable1", reg0), # initial party total value (after removing troops ...)
+		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$initial_party_value", reg0), # initial party total value (after removing troops ...)
         (change_screen_give_members)]],
 [anyone,"party_reinforce", [], "Unfortunately you don't have any {s22} soldiers to reinforce us with.", "party_reinforce_end", []],
 
@@ -8891,13 +8907,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"party_reinforce_check_1", 
 	 [  (gt, reg28, reg10),# player gave fittings too (party size decreased)
 	    (val_sub, reg28, reg10),(val_sub, reg28, 1), # calculate # of soldiers transferred -1
-		(call_script, "script_get_party_disband_cost", "p_main_party", 1),(val_sub, "$g_variable1", reg0), # calculate value transferred
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1),(val_sub, "$initial_party_value", reg0), # calculate value transferred
 		(str_store_faction_name, s22, "$g_encountered_party_faction"),
 		(str_clear, s31), (str_clear, s32),
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),
 		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
 		(try_end),
-		(assign, reg11, "$g_variable1"),
+		(assign, reg11, "$initial_party_value"),
         (try_begin),(gt, reg46, 0),(str_store_string, s23, "@ ^Oh, and take back those who are not our people."), #if gave unfitting troops
 		 (else_try),               (str_store_string, s23, "str_empty_string"),
 		(try_end),
@@ -8907,7 +8923,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (else_try),
           (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}] {s23}"),
         (try_end)],
-"{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", "$g_variable1")]],
+"{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", "$initial_party_value")]],
 
 [anyone|plyr,"party_reinforce_check_2", 
 	[ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),

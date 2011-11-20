@@ -1364,7 +1364,6 @@ animations = [
    [2.3, "tied_fall_rise", 0, 91, arf_blend_in_1|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],
  ],
 
-  ["unused_human_anim_50", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_51", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_52", 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_53", 0, [1.0, "anim_human", 0, 1, 0]],

@@ -26,23 +26,20 @@ from module_scripts_form import *
 
 ### a crude code to insert an increasing number (mtarini)
 ___val = 0 
-
 def next_count(): 
   global ___val
   ___val=___val+1
   return ___val
-
 def first_count(): 
   global ___val
   ___val=0
   return ___val
-
 def curr_count(): 
   global ___val
   return ___val
 
   
-# added subfactions (mtarini, GA)
+### TLD item factionization, with subfactions (mtarini, GA)
 def set_item_faction():
 	command_list = []
 	for i_troop in xrange(29,430): #regular troops here
@@ -1667,11 +1664,12 @@ scripts = [
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 	
+	(assign, "$initial_party_value", 0),   
+	(assign, "$player_side_faction", 0),
+	(assign, "$enemy_side_faction", 0),
+	(assign, "$inital_player_xp", 0),
 	# savegame compartibillity globals. USE THOSE in code if need be
-	(assign, "$g_variable1", 0),
-	(assign, "$g_variable2", 0),
-	(assign, "$g_variable3", 0),
-	(assign, "$g_variable4", 0),
+	# Feel free to rename them... BUT if so rename then if variables.txt BEFORE you compile your code!!!
 	(assign, "$g_variable5", 0),
 	(assign, "$g_variable6", 0),
 	(assign, "$g_variable7", 0),
@@ -10758,7 +10756,7 @@ scripts = [
 	(set_party_battle_mode),
 	(set_jump_mission,"mt_lead_charge"),
 	(call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
-	(assign, "$g_next_menu", "mnu_simple_encounter"), # this menu
+	(assign, "$g_next_menu", "mnu_simple_encounter"), 
 	(jump_to_menu, "mnu_battle_debrief"),
 	(change_screen_mission),
 ]),
@@ -10847,17 +10845,37 @@ scripts = [
 ]),
 
 #script_party_vote_race
-# each party member "votes" his race,. Votes go in reg15 and reg16 -- mtarini
+# each party member "votes" his race,. Votes accumulate in reg15 and reg16 (races groups)   17,18,19 (races) and tmp_slots (factions) -- mtarini
+# outputs: reg20:  majority race group (tf_male: humans+elves+dwarf    OR    tf_orc: beasts)
+# outputs: reg21:  majority race (beasts VS humans VS dwarf VS elves)
+# outputs: reg22:  majority faction (or: NO FACTION for the rest)
 ("party_vote_race",
-    [ (store_script_param_1, ":party"), #Party_id
-      (party_get_num_companion_stacks, ":num_stacks",":party"),
-      (try_for_range, ":i_stack", 0, ":num_stacks"),
+    [ 
+	(store_script_param_1, ":party"), #Party_id
+	# zero all voting
+	(assign, reg15, 0), # humanoids
+	(assign, reg16, 0), # orcoids
+	(assign, reg17, 0), # humans
+	(assign, reg18, 0), # dwarves
+	(assign, reg19, 0), # elves
+	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+		(faction_set_slot,":fac", slot_faction_temp_value, 0),
+	(try_end),
+	(assign, ":no_fac_votes", 0),
+	
+	# 
+    (party_get_num_companion_stacks, ":num_stacks",":party"),
+    (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_size, ":n",":party",":i_stack"),
 		(party_stack_get_troop_id, ":tr",":party",":i_stack"),
+		(troop_get_type,":race",":tr"),
+		(store_troop_faction,":fac",":tr"),
+		
         (try_begin),(eq, ":tr", "trp_player"),
 			(val_mul, ":n", 8), # player "vote" counts for 8!
+			(assign, ":fac", "$players_kingdom"),
 		(try_end),
-		(troop_get_type,":race",":tr"),
+		
 		(try_begin),(is_between, ":race", tf_orc_begin, tf_orc_end),
 			(val_add, reg15, ":n"),
 		(else_try), 
@@ -10870,7 +10888,40 @@ scripts = [
 				(val_add, reg17, ":n"),
 			(try_end),
 		(try_end),
-      (try_end),
+		(try_begin),(is_between, ":fac", kingdoms_begin, kingdoms_end),
+		   (faction_get_slot, ":tmp", ":fac", slot_faction_temp_value),
+		   (val_add, ":tmp",":n"),
+		   (faction_set_slot,  ":fac", slot_faction_temp_value,":tmp"),
+		(else_try),
+		   (val_add, ":no_fac_votes", ":n"),
+		(try_end),
+    (try_end),
+	  
+	# count votes
+	(try_begin), (gt, reg15, reg16),
+		(assign, reg20, tf_orc),     # RACE GROUP
+		(assign, reg21, tf_orc),     # RACE
+	(else_try), 
+		(assign, reg20, tf_male), # RACE GROUP
+		(try_begin), (gt, reg19, reg18),(gt, reg19, reg17),
+			(assign, reg21, tf_elf_begin), # RACE
+		(else_try), (gt, reg18, reg17),
+			(assign, reg21, tf_dwarf),# RACE
+		(else_try), 
+			(assign, reg21, tf_male),# RACE
+		(try_end),
+	(try_end),
+	
+	(assign, reg22, fac_no_faction ), # a random default
+	(assign, ":max", ":no_fac_votes"),
+	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+		(faction_get_slot,":votes", ":fac", slot_faction_temp_value ),
+		(gt, ":votes",  ":max"),
+		(assign, ":max", ":votes"),
+		(assign, reg22, ":fac"),
+	(try_end),
+	
+	
 ]),
 
 #script_calculate_battleside_races
@@ -10878,61 +10929,19 @@ scripts = [
 # $player_side_race_group = humanoids or orchoids
 # $player_side_race = eld, dwarves or men
 ("calculate_battleside_races", [
-	(assign, reg15, 0), # humanoids
-	(assign, reg16, 0), # orcoids
-	(assign, reg17, 0), # humans
-	(assign, reg18, 0), # dwarves
-	(assign, reg19, 0), # elves
-#	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-#		(faction_set_slot,":fac", slot_faction_voting_us, 0),
-#		(faction_set_slot,":fac", slot_faction_voting_them, 0),
-#	(try_end),
-	(call_script, "script_party_vote_race", "p_main_party"),
-	(call_script, "script_party_vote_race", "p_collective_friends"),
-	(try_begin), (gt, reg15, reg16),
-		(assign, "$player_side_race_group", tf_orc),
-	(else_try), 
-		(assign, "$player_side_race_group", tf_male),
-		(try_begin), (gt, reg19, reg18),(gt, reg19, reg17),
-			(assign, "$player_side_race", tf_elf_begin),
-		(else_try), (gt, reg18, reg17),
-			(assign, "$player_side_race", tf_dwarf),
-		(else_try), 
-			(assign, "$player_side_race", tf_male),
-		(try_end),
-	(try_end),
-	(assign, reg15, 0), # humanoids 
-	(assign, reg16, 0), # orcoids
-	(assign, reg17, 0), # humans
-	(assign, reg18, 0), # dwarves
-	(assign, reg19, 0), # elves
-	(call_script, "script_party_vote_race", "p_collective_enemy"),
-	(try_begin), (gt, reg15, reg16),
-		(assign, "$enemy_side_race_group", tf_orc),
-	(else_try), 
-		(assign, "$enemy_side_race_group", tf_male),
-		
-		(try_begin), (gt, reg19, reg18),(gt, reg19, reg17),
-			(assign, "$enemy_side_race", tf_elf_begin),
-		(else_try), (gt, reg18, reg17),
-			(assign, "$enemy_side_race", tf_dwarf),
-		(else_try), 
-			(assign, "$enemy_side_race", tf_male),
-		(try_end),
-	(try_end),
 
-	# ugly fix: remove riderless wargs from essential parties before battle
-	# (try_for_range,":warg",warg_ghost_begin,warg_ghost_end),
-		# (party_count_companions_of_type, ":num", "p_collective_friends", ":warg"),
-		# (try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_friends"),(try_end),
-		# (party_remove_members, "p_collective_friends", ":warg",  ":num"),
-		# (party_count_companions_of_type, ":num", "p_collective_ally", ":warg"),
-		# (try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_ally"),(try_end),
-		# (party_remove_members, "p_collective_ally", ":warg",  ":num"),
-		# (party_count_companions_of_type, ":num", "p_collective_enemy", ":warg"),
-		# (try_begin),(gt,":num",0),(display_message,"@WARGS FOUND IN p_collective_enemy"),(try_end),
-		# (party_remove_members, "p_collective_enemy", ":warg",  ":num"),
-	# (try_end),
+	# fcount friends
+	(call_script, "script_party_vote_race", "p_collective_friends"),
+	(assign, "$player_side_race_group", reg20),    
+	(assign, "$player_side_race", reg21),     
+	(assign, "$player_side_faction", reg22),   
+	
+	(call_script, "script_party_vote_race", "p_collective_enemy"),
+	(assign, "$enemy_side_race_group", reg20),    
+	(assign, "$enemy_side_race", reg21),     
+	(assign, "$enemy_side_faction", reg22),   
+	
+
 ]),
 
 # script_get_first_agent_with_troop_id
@@ -19040,7 +19049,29 @@ scripts = [
 	(position_set_z_to_ground_level, pos10),
 ]),
 
-("save_compartibility_script6",[]),
+# utility scropt (mtarini)
+# removes from party A the prisoners, as dictated from party B (except wonded)
+# returns removed number in reg0
+("party_remove_party_from_prisoners",[
+
+	(store_script_param_1, ":dest"),
+	(store_script_param_2, ":remove_list"),
+
+	(assign, ":removed", 0),
+	
+    (party_get_num_companion_stacks, ":num_stacks", ":remove_list"),
+    (try_for_range, ":i_stack", 0, ":num_stacks"),
+      (party_stack_get_troop_id, ":trp", ":remove_list", ":i_stack"),
+	  (party_stack_get_size, ":n", ":remove_list", ":i_stack"),
+	  (party_stack_get_num_wounded, ":w", ":remove_list", ":i_stack"),
+	  (val_sub, ":n", ":w"),
+	  (party_remove_prisoners, ":dest",  ":trp",  ":n"),
+	  (val_add, ":removed", reg0),
+    (try_end),
+	(assign, reg0, ":removed"),
+]),
+
+	 
 ("save_compartibility_script7",[]),
 ("save_compartibility_script8",[]),
 ("save_compartibility_script9",[]),

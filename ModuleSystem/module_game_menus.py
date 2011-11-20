@@ -4049,24 +4049,28 @@ game_menus = [
     (assign, "$playerparty_postbattle_regulars", reg0),
 
 	(try_begin), # set background picture for victory/defeat -- mtarini
-		(store_mul, ":tmp", "$g_enemy_fit_for_battle","$g_friend_fit_for_battle"),
-		(eq, ":tmp", 0 ), # battle is totally over: proceed!
+
+		(this_or_next|eq, "$g_enemy_fit_for_battle",0),(eq, "$g_friend_fit_for_battle", 0 ), # battle is totally over: proceed!
 		
 		(try_begin),
 			(eq, "$g_battle_result", 1),
 			(assign, ":winning_side_race_group", "$player_side_race_group" ),
 			(assign, ":losing_side_race_group",  "$enemy_side_race_group" ),
 			(assign, ":winning_side_race", "$player_side_race" ),
-			#(assign, ":losing_side_race",  "$enemy_side_race" ),
+			#(assign, ":losing_side_race",  "$enemy_side_race" ), # not used... yet
+			(assign, ":winning_side_faction", "$player_side_faction" ),
+			#(assign, ":losing_side_faction",  "$enemy_side_faction" ), # not used... yet
 		(else_try),
 			(assign, ":winning_side_race_group", "$enemy_side_race_group" ),
 			(assign, ":losing_side_race_group",  "$player_side_race_group" ),
 			(assign, ":winning_side_race", "$enemy_side_race" ),
-			#(assign, ":losing_side_race",  "$player_side_race" ),
+			#(assign, ":losing_side_race",  "$player_side_race" ),   # not used... yet
+			(assign, ":winning_side_faction", "$enemy_side_faction" ),
+			#(assign, ":losing_side_faction",  "$player_side_faction" ), # not used... yet
 		(try_end),
-		(assign, ":fitting_image_found", 1),
 		
 		(try_begin),
+			# orc VS anything not orc
 			(eq, ":winning_side_race_group", tf_orc ),
 			(neq, ":losing_side_race_group", tf_orc ),
 			(store_random_in_range,":rnd",0,2),
@@ -4074,33 +4078,36 @@ game_menus = [
 			 (else_try),(set_background_mesh, "mesh_draw_victory_uruk"),
 			(try_end),
 		(else_try),	
+			# orc VS orc
 			(eq, ":winning_side_race_group", tf_orc ),
 			(eq, ":losing_side_race_group", tf_orc ),
+			(neq, ":winning_side_faction", fac_no_faction), # not good for winning tribals etc.
 			(set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
 		(else_try),
+			# dwarf VS anything
 			(eq, ":winning_side_race", tf_dwarf ),
 			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
-			(eq, "$g_battle_result", 1), 
-			#(eq, ":winning_side_race", tf_male),
-			(store_faction_of_party,":fac","p_main_party"), # temporary patchwork to distinguish between factions not only races
-			(try_begin),(eq,":fac","fac_gondor"),(set_background_mesh, "mesh_draw_victory_gondor"),
-			 (else_try),(eq,":fac","fac_rohan" ),(set_background_mesh, "mesh_draw_victory_rohan"),
-			(try_end),
+			(eq, ":winning_side_faction", "fac_gondor" ),
+			(set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: rohan VS anything
+		(else_try),
+			(eq, ":winning_side_faction", "fac_rohan" ),
+			(set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: gondor VS anything
 		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
-			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS anything
+			(eq, ":losing_side_race_group", tf_orc ),
+			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS orcs 
 		(else_try),
-			(assign, ":fitting_image_found", 0), # a generic image can do
+			# generic  defeat image: orcs....
+			(eq, "$g_battle_result", -1), (eq, "$player_looks_like_an_orc", 1),
+			(set_background_mesh,  "mesh_draw_defeat_orc"), 
+		(else_try),
+			# generic  defeat image: anybody else....
+			(eq, "$g_battle_result", -1), (eq, "$player_looks_like_an_orc", 1),
+			(set_background_mesh,  "mesh_draw_defeat_human"), 
 		(try_end),
-		(try_begin),
-			#(store_random_in_range, ":rand", 0, 100),
-			#(this_or_next|eq, ":fitting_image_found", 0), # player beaten : 33% of time, show generic defeat.
-			#(lt, ":rand", 30),
-			(eq, ":fitting_image_found", 0),
-			(eq, "$g_battle_result", -1), 
-			(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
-		(try_end),
+		
+		# special case ovveride: ent image 
 		(try_begin),  
 			(eq, "$g_encountered_party", "p_legend_fangorn"),
 			(eq, "$g_battle_result", -1),
@@ -5353,7 +5360,7 @@ game_menus = [
 				(str_store_string, s12, "str_empty_string"),
 			(try_end),
 	  ]
-	  ,"{s12}"),
+	  ,"Get book"),
 
 	  
       # ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),

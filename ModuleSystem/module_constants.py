@@ -227,6 +227,8 @@ slot_faction_occasional_sound1_night = 176
 slot_faction_occasional_sound2_night = 177
 slot_faction_occasional_sound3_night = 178
 
+slot_faction_temp_value = 179 # temp values used for various scripts
+
 # slots for stealth missions companion tracking
 slot_fcomp_troopid = 1
 slot_fcomp_agentid = 2
@@ -881,7 +883,8 @@ tc_rebel_thanks               = 15
 tc_hire_troops                = 16
 tc_starting_quest             = 17 #TLD
 tc_make_enemy_join_player     = 18 #TLD
-tc_prisoner_talk              = 19 #TLD
+###tc_prisoner_talk              = 19 #TLD not used anymore
+tc_troop_review_talk          = 20 #TLD
 
 tld_max_quest_distance = 100 #TLD
 

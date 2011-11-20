@@ -35,8 +35,10 @@ from module_mission_templates_cutscenes import *
 pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
+af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
 
 tld_common_battle_scripts = [
+	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
@@ -50,6 +52,7 @@ tld_common_battle_scripts = [
 	]
 
 tld_siege_battle_scripts = [
+	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	custom_track_companion_casualties,
@@ -58,6 +61,7 @@ tld_siege_battle_scripts = [
 	]
 
 tld_common_peacetime_scripts = [
+	#tld_fix_viewpoint,
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
 ] + custom_tld_bow_to_kings
@@ -92,13 +96,14 @@ mission_templates = [ # not used in game
      (17,mtef_visitor_source,0,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,aif_start_alarmed,1,[]),(20,mtef_visitor_source,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      (22,mtef_visitor_source,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source,0,aif_start_alarmed,1,[]),(24,mtef_visitor_source,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source,0,aif_start_alarmed,1,[]),(26,mtef_visitor_source,0,aif_start_alarmed,1,[]),
      (27,mtef_visitor_source,0,aif_start_alarmed,1,[]),(28,mtef_visitor_source,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source,0,aif_start_alarmed,1,[]),(30,mtef_visitor_source,0,aif_start_alarmed,1,[]),
-	 (31,mtef_visitor_source,af_override_all,0,1,[itm_prisoner_coll_chain]),#(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
+	 (31,mtef_visitor_source,af_override_all,0,1,[itm_feet_chains]),#(32,mtef_attackers|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
     [ # other people in the backgroud (mission_tpl_entry_set_override_flags, "mt_conversation_encounter", 17, af_override_all),
 		(ti_on_agent_spawn, 0, 0, [], [
 			(store_trigger_param_1, ":agent"),
 			(agent_is_human, ":agent"),
-			(store_random_in_range,reg0,0,100),(agent_set_animation_progress, ":agent", reg0), # break sincrony of people on background
+			(store_random_in_range,reg0,0,100),(agent_set_animation_progress, ":agent", reg0), # break sincrony of people on background (mtarini)
+			
 			# (agent_get_entry_no,reg1,":agent"),
 			# (eq, reg1, 1), # only those at entry point 1
 			# (agent_get_troop_id, reg42, ":agent"),
@@ -160,18 +165,13 @@ mission_templates = [ # not used in game
 				(try_end),
 			(try_end)]),
 	   
-     (0.3, 0, 2, [], [ #	         (entry_point_get_position,pos1,0),
-		# (team_set_relation, 0, 1, 1),
-		# (set_show_messages, 0),
-		# (team_give_order, 1, grc_everyone, mordr_hold),
-		# (team_give_order, 1, grc_archers, mordr_stand_ground),
-		# (set_show_messages, 1),
+     (0.3, 0, 2, [], [ 
 		(try_begin),
 			(eq,"$party_meeting",-1), # hostile, and only once
 			(try_for_agents,":agent"),
 			(agent_is_human, ":agent"),
 				(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,17),(neq,reg1,18), # main guys do not cheer
-				(neq,"$talk_context", tc_prisoner_talk), # prisoners do not cheer
+				(neq,reg1,31), # prisoners do not cheer
 				(store_random_in_range,reg1,0,100),(lt,reg1,3), # 3% of times
 				(agent_get_horse,reg1,":agent"),					
 				(try_begin),(eq,reg1,-1),(agent_set_animation, ":agent", "anim_cheer"),
@@ -397,46 +397,17 @@ mission_templates = [ # not used in game
 [(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]), # not used
  (1,mtef_attackers|mtef_team_1,0,0,1,[]), # player 
  (4,mtef_attackers|mtef_team_2,0,0,30,[]), # troops
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  # prisoners
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
- (4,mtef_visitor_source,
-    af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot,
-	0,0,[itm_feet_chains]
-  ),  
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
   ],
   #tld_common_peacetime_scripts +
   [  
@@ -517,16 +488,48 @@ mission_templates = [ # not used in game
 	 (try_end),
   ]),
   
-  (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
   (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
   tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
   (ti_before_mission_start,0,0,[],[
     (set_battle_advantage, 0),
-	(team_set_relation,1,2,0), # plater neuter with troops
+	(team_set_relation,1,2,1), # plater friend with troops
 	(team_set_relation,2,3,0), # troops neuter with pris
-	(team_set_relation,1,3,-1), # player can kill pris!
+	(assign, "$talk_context", tc_troop_review_talk),
+	(troop_get_xp, "$inital_player_xp", "trp_player"), 
 	]),
-  
+  (ti_tab_pressed          , 0, 0, [], [   #(ti_on_leave_area,0,0,[],[]),
+	(assign, "$talk_context", 0),
+	(call_script, "script_count_mission_casualties_from_agents"),
+	(party_get_num_companions, reg20, "p_enemy_casualties"),
+	#(display_message, "@(killed {reg20} prisoners)!"),
+	(try_begin),
+		(gt, reg20, 0),
+		
+		(call_script, "script_party_remove_party_from_prisoners", "p_main_party", "p_enemy_casualties"), # remove pris
+		
+		(try_begin), # add as many human meats as number of removef prid
+			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # unless good
+			(try_for_range, ":unused", 0, reg0), 
+				(troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
+			(try_end),
+		(try_end),
+		
+		# remove undue XP gained from killing pris...
+		(troop_get_xp, ":xp", "trp_player"), 
+		(gt,":xp","$inital_player_xp"),
+		(store_sub,":diff","$inital_player_xp",":xp"),
+		(add_xp_to_troop, ":diff","trp_player"), # diff is neg: removes XP 
+		(store_mul, reg10,":diff", -1),
+		(display_message, "@(cancelled the {reg10} exp pts earned from killing prisoners)"),
+	(try_end),
+	(reset_visitors),
+	(set_trigger_result,1),
+  ]),
+
+  (0,0,0,[(game_key_clicked,gk_attack)], [	(team_set_relation,1,3,-1) ]), # payer pressed attack: he can now hit/kill pris! 
+  #(0,0,0,[(game_key_clicked,gk_action)], [	(team_set_relation,1,3,0) ]), # player pressed talk
+  (2,2,2,[(neg|game_key_is_down,gk_attack)], [	(neg|game_key_is_down,gk_attack),(team_set_relation,1,3,0) ]), # player wasn't aggressive for 2 secs: he can  now talk to pris!
+	
   # keep them tied...
   (0,0.5,0,[],[
 	(try_for_agents,":agent_no"),
@@ -575,7 +578,7 @@ mission_templates = [ # not used in game
 	  (store_add, ":entry", ":i", 4),
 	  (add_visitors_to_current_scene,":entry",":trp_id",":trp_no"),
 	  (val_sub,":max_pris",":trp_no"), 
-	  (str_store_troop_name, s3, ":trp_id"),(assign, reg3,":trp_no"),(display_message,"@debug: spawning {reg3} {s3} as prisoners"),
+	  #(str_store_troop_name, s3, ":trp_id"),(assign, reg3,":trp_no"),(display_message,"@debug: spawning {reg3} {s3} as prisoners"),
 	(try_end),
   ],),
   (0,6,ti_once,[],[  # after X secs, cancel all scripted destinations

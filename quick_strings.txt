@@ -1,4 +1,4 @@
-1028
+1030
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -489,7 +489,7 @@ qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
-qstr_debug:_spawning_{reg debug:_spawning_{reg3}_{s3}_as_prisoners
+qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
@@ -999,6 +999,8 @@ qstr_slaves slaves
 qstr_{s1}_Refugees {s1}_Refugees
 qstr_{s1}_Slaves {s1}_Slaves
 qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_{s12}_to_{s13}._You_will_earn_{reg8}_RPs_in_return.
+qstr__Guards_slaughter_hi _Guards,_slaughter_him!
+qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat_!
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_you_of_course,_my_{lord/lady}.
 qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.

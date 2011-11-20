@@ -6,6 +6,39 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+
+# a trigger to fix viewpoint... not used. Too many drawback (mtarini)
+tld_fix_viewpoint = (0,0,0,[],[
+  (try_begin),
+    #(this_or_next|game_key_clicked, gk_view_char),
+    (this_or_next|key_clicked, key_t),
+    (game_key_clicked, gk_cam_toggle),
+	
+	#(mission_cam_set_mode,1,
+	(store_sub, reg55, 1, reg55), # toggle reg 55
+	(mission_cam_set_mode,reg55,0.55),
+	(display_message,"@camera mode: {reg55?custom:natural}"),
+  (try_end),
+
+  (try_begin),
+    (eq, reg55, 1),
+	(get_player_agent_no, ":player_agent"),
+	(agent_get_look_position, pos40, ":player_agent"),
+	
+	(agent_get_horse, ":horse_agent", ":player_agent"),
+    (try_begin),(ge, ":horse_agent", 0),
+      (position_move_z, pos40, 80,1), # lift for mounted players
+    (try_end),
+	
+	(try_begin),
+		#(agent_get_class, ":race", ":player_agent"),
+		(position_move_z, pos40, 180, 1),
+		(position_move_y, pos40, 10, 0), # move camera forward a bit
+	(try_end),
+	(mission_cam_set_position, pos40),
+  (try_end),
+])
+
 common_battle_mission_start = (ti_before_mission_start, 0, 0, [],[
 	(team_set_relation, 0, 2, 1),
 	(team_set_relation, 1, 3, 1),

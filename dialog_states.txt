@@ -13,6 +13,8 @@ view_char
 training
 member_chat
 prisoner_chat
+prisoner_chat_00
+member_chat_00
 mutiny_pretalk_1
 mutiny_pretalk_2
 mutiny_talk_1
@@ -411,10 +413,10 @@ disbanded_troop_ask
 disbanded_troop_join
 enemy_talk_1
 enemy_talk_2
-prisoner_chat_2
 prisoner_chat_3
 prisoner_chat_4
 prisoner_slaughter
+prisoner_slaughter_02
 town_merchant_talk
 trade_requested_weapons
 trade_requested_horse
