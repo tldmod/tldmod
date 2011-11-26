@@ -1794,8 +1794,26 @@ scripts = [
 # param1: encountered_party
 # param2: second encountered_party (if this was a battle
 ("game_event_party_encounter", [
+
 	(store_script_param_1, "$g_encountered_party"),
 	(store_script_param_2, "$g_encountered_party_2"),# encountered_party2 is set when we come across a battle or siege, otherwise it's a negative value
+
+	(party_get_current_terrain, "$current_player_terrain","p_main_party"),
+	(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
+	(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+
+
+	# if camping very close to a town, enter town instead...
+	(try_begin),
+		(eq, "$g_encountered_party", "p_camp_bandits"   ),
+		(lt, "$g_encountered_party_2", 0  ),
+	    (is_between, "$current_player_landmark", centers_begin, centers_end),
+	  	(store_distance_to_party_from_party, ":party_distance", "p_main_party", "$current_player_landmark"),
+	  	(lt, ":party_distance", 1),
+	    (assign, "$g_encountered_party", "$current_player_landmark" ),
+	(try_end),	
+	
+	#(str_store_party_name, s15, "$g_encountered_party"),(display_message, "@event_party_encounter: {s15}"),
 	(call_script, "script_player_meets_party","$g_encountered_party"),  # to set resource points (mtarini)
 	#(store_encountered_party, "$g_encountered_party"),
 	#(store_encountered_party2,"$g_encountered_party_2"), # encountered_party2 is set when we come across a battle or siege, otherwise it's a minus value
@@ -7012,17 +7030,38 @@ scripts = [
 # Output: reg0 = landmark no (closest, max dist 4),. Else -1
 ("get_close_landmark",
     [ (store_script_param_1, ":party_no"),
-      (assign, ":min_distance", 3),
+      (assign, ":min_distance", 6), # max range of landmarks
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
-        #(party_is_active, ":center_no"), 
-		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # even destroye stuff are landmarks
+		(this_or_next|eq, ":center_no", "p_town_isengard"), # iseengard looks the same if destroyed
+		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # destroyed stuff are not landmarks
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
         (lt, ":party_distance", ":min_distance"),
         (assign, ":min_distance", ":party_distance"),
         (assign, reg0, ":center_no"),
       (try_end),
+	  
+	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 4),
+	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
+	  (else_try), (assign, ":sight_range", 2.5),(try_end), # default
+	  
+	  (try_begin),
+		(gt, ":min_distance", ":sight_range"), # smaller sigth range of everything but minas thirit
+		(assign, reg0, -1),
+	  (try_end),
+	  
+	  (try_begin),(eq, reg0, -1), # no landmark found
+		(set_fixed_point_multiplier,100.0),
+		(party_get_position, pos10, ":party_no"),
+	    (position_get_x,":x",pos10),(position_get_y,":y",pos10),
+		(is_between, ":y", -19130, -18800),
+		(try_begin), (gt, ":x", -2072),
+			(assign, reg0, landmark_great_east_road ),
+		(else_try),
+			(assign, reg0, landmark_old_forest_road  ),
+		(try_end),
+	  (try_end),
 ]),
 
 # script_get_closest_landmark (mtarini)
@@ -7031,21 +7070,33 @@ scripts = [
 ("cf_store_landmark_description_in_s17", [
 	(store_script_param_1, ":landmark"),
 	(ge, ":landmark", 0),
-	(str_store_party_name, s15, ":landmark"),
 	
 	(assign, ":ok", 1),
 	(try_begin),
+		(eq, ":landmark", landmark_great_east_road ),
+		(str_store_string, s17, "@nearby the Great East Road, the abandoned old road"),
+	(else_try),
+		(eq, ":landmark", landmark_old_forest_road ),
+		(str_store_string, s17, "@nearby what is left of the Old Forest Road, the anjcient dwarven path that used to cross the thick forest"),
+	(else_try),
+		(str_store_party_name, s15, ":landmark"),
 		(eq,":landmark","p_hand_isen"),	
-		(str_store_string, s17, "@the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc"),
+		(str_store_string, s17, "@in proximity of the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc"),
+	(else_try),
+		(eq,":landmark","p_town_minas_tirith"),	
+		(str_store_string, s17, "@in sight of the majestic City Walls of Minas Tirith, the White City"),
+	(else_try),
+		(eq,":landmark","p_town_isengard"),	
+		(str_store_string, s17, "@in sight of the dark Tower of Orthanc"),
 	(else_try),
 		(eq,":landmark","p_old_ford"),
-		(str_store_string, s17, "@the Old Ford, where the Old Forest Road crosses the River Anduin"),
+		(str_store_string, s17, "@nearby the Old Ford, where the Old Forest Road crosses the River Anduin"),
 	(else_try),
 		(is_between,":landmark",fords_big_begin, fords_big_end), # Anduin fords
-		(str_store_string, s17, "@a big ford crossing the River {s15}"),
+		(str_store_string, s17, "@nearby a big ford crossing the River {s15}"),
 	(else_try),
 		(is_between,":landmark",fords_small_begin, fords_small_end), # small fords
-		(str_store_string, s17, "@a small ford crossing the River {s15}"),
+		(str_store_string, s17, "@nearby a small ford crossing the River {s15}"),
 	(else_try),
 		(assign, ":ok", 0), # no good description found
 	(try_end),
@@ -9344,7 +9395,6 @@ scripts = [
 # Input: arg1 = region  code
 # Input: arg2 = terrain type
 # Input: arg3 = visible landmark (if any, else -1)  
-# Input: arg4 =  road : 1, no-road : 0   # TODO
 # Output: none
 ("jump_to_random_scene", [
 	(store_script_param, ":region",1),
@@ -9362,10 +9412,16 @@ scripts = [
     (assign, ":scene_to_use", -1),   # this if you want to use a specific scene
 	(assign, "$bs_day_sound", "snd_wind_ambiance"), # default ambience
 	(assign, "$bs_night_sound", "snd_wind_ambiance"),
-	
 	(try_begin),
-		(eq,":landmark","p_hand_isen"),
-		(assign,":scene_to_use","scn_handsign"), 
+		(eq,":landmark","p_town_minas_tirith"),
+		(assign,":scene_to_use","scn_minas_tirith_outside"), 
+	(else_try),
+		(eq,":landmark","p_town_isengard"),
+		(assign, ":native_terrain_to_use", rt_steppe), 
+		(assign,":scene_to_use","scn_isengard_outside"), 
+	(else_try),
+		(eq,":landmark","p_hand_isen"),		
+		(assign,":scene_to_use","scn_handsign"), # randomize this scene 
 	(else_try),
 		(is_between,":landmark", fords_big_begin, fords_big_end), # Anduin fords
 		(store_mod, ":tmp", ":landmark", 3), #3  big fords scenes
@@ -9376,10 +9432,16 @@ scripts = [
 	(else_try),
 		(is_between,":landmark", fords_small_begin, fords_small_end), # Anduin fords
 		(store_mod, ":tmp", ":landmark", 3), #3  small fords scenes
-		(store_add, ":scene_to_use", "scn_ford_small1", ":tmp"),
-		
+		(store_add, ":scene_to_use", "scn_ford_small1", ":tmp"),		
 		#(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
+		(eq,":landmark", landmark_great_east_road ), # Anduin fords
+		(assign, ":native_terrain_to_use", rt_steppe), 
+		(assign,":scene_to_use","scn_great_east_road"),
+	(else_try),
+		(eq,":landmark", landmark_old_forest_road ), # Anduin fords
+		(assign,":scene_to_use","scn_old_forest_road"),
 	(else_try),
 		(eq,":region",region_dead_marshes),
 		(assign,":scene_to_use","scn_deadmarshes"),

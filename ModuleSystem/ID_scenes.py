@@ -249,3 +249,7 @@ scn_advcamp_good_siege = 247
 scn_moria_siege = 248
 scn_minas_morgul_siege = 249
 scn_morannon_siege = 250
+scn_minas_tirith_outside = 251
+scn_isengard_outside = 252
+scn_old_forest_road = 253
+scn_great_east_road = 254

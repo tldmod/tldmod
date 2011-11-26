@@ -1004,15 +1004,31 @@ all_quests_end = "qst_quests_end"
 centers_begin = p_town_minas_tirith
 centers_end = p_centers_end
 
-landmark_begin = centers_begin
-landmark_end = p_camplace_n1 
+# LANDMARKS (mtarini)
 
+# Rationale: landmarks are small places  on the map determining the battlefield . 
+# In a give moment, the player is inside  a "region", and he  *can* be near a landmark (or, none). 
+# Both things affect battlefield.
+# Both things are described in the Action Menu
+
+# special landmark ID(unlike all ather landmarks ID, they are not ID of parties  on the map)
+landmark_great_east_road = 1001;
+landmark_old_forest_road  = 1002;  # where it crosses mirkwook
+
+# fords are landmarks
+fords_begin = p_ford_cair_andros1 
 fords_big_begin = p_ford_cair_andros1 
 fords_big_end = p_ford_cerin_dolen
 fords_small_begin = p_ford_cerin_dolen
-fords_small_end = p_camplace_n1 
+fords_small_end = p_test_scene
+fords_end = p_test_scene
 
-# landmark_
+# many landmarks are parties (e.g. the hand sign and minas titith outside)
+landmark_begin = centers_begin
+landmark_end = fords_end
+
+# end of landmark
+
 
 advcamps_begin = p_advcamp_gondor
 advcamps_end   = centers_end

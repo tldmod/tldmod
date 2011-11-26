@@ -1521,15 +1521,13 @@ game_menus = [
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
 	  (call_script,"script_maybe_relocate_player_from_z0"),
-	  (call_script, "script_get_region_of_party", "p_main_party"),(assign, "$current_player_region", reg1),
-	  (party_get_current_terrain, "$current_player_terrain","p_main_party"),
-	  (call_script, "script_get_region_of_party", "p_main_party"),
-	  (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+
+	  #(assign, reg0, "$current_player_landmark",), (display_message, "@DEBUG: LANDMARK ID {reg0}"),
 	  
 	  (str_clear, s2),
 	  (try_begin), 
 		(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
-		(str_store_string,s2,"@^^You are in proximity of {s17}."), 
+		(str_store_string,s2,"@^^You are {s17}."), 
 	  (try_end),
 	  
 	  (store_add, reg2, "$current_player_region", str_fullname_region_begin),
@@ -3507,15 +3505,17 @@ game_menus = [
 		(try_end),
 		
 		# get region + landmark (mtarini)
-		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
-		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
+		#(party_get_current_terrain, "$current_player_terrain","p_main_party"),
+		#(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
+		#(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+		
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region",),
 		(str_store_string,s3,reg2),
-		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+		
 		(str_clear, s4),
 		(try_begin), 
 			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
-			(str_store_string,s4,"@, nearby {s17}."), 
+			(str_store_string,s4,"@, {s17}."), 
 		(try_end),
 
         (assign, "$g_enemy_party", "$g_encountered_party"),
@@ -4748,9 +4748,9 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	
-		(party_get_current_terrain, "$current_player_terrain","p_main_party"),
-		(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),	
-		(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
+		#(party_get_current_terrain, "$current_player_terrain","p_main_party"),
+		#(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),	
+		#(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
 		
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region"),
 		(str_store_string,s3,reg2),
@@ -4758,7 +4758,7 @@ game_menus = [
 		(str_clear, s4),
 		(try_begin), 
 			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
-			(str_store_string,s4,"@, nearby {s17}."), 
+			(str_store_string,s4,"@, {s17}"), 
 		(try_end),
 		
 		(str_store_party_name, 1,"$g_enemy_party"),
@@ -5148,6 +5148,8 @@ game_menus = [
         (str_store_party_name, s2,"$g_encountered_party"),
         (call_script, "script_encounter_calculate_fit"),
         (assign,"$all_doors_locked",1),
+		#(str_store_party_name, s15, "$g_encountered_party"),(display_message, "@castle_outside_menu: {s15}"),
+
         (assign, "$current_town","$g_encountered_party"),
         (try_begin),
           (eq, "$new_encounter", 1),
@@ -6367,7 +6369,8 @@ game_menus = [
         (else_try),
           (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
         (try_end),
-        (store_encountered_party,"$current_town"),
+		(assign, "$current_town","$g_encountered_party"),   # mtarini...  was:(store_encountered_party,"$current_town"),
+		
         (call_script, "script_update_center_recon_notes", "$current_town"),
         (assign, "$g_defending_against_siege", 0),
         (str_clear, s3),

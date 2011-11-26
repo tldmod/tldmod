@@ -321,9 +321,9 @@ scenes = [
 ("ford_big2" ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_anduin"),
 ("ford_big3" ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_anduin"),
 
-("ford_small1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
-("ford_small2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
-("ford_small3"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
+("ford_small1"  ,sf_generate,"none","none",(0,0),( 40, 40),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
+("ford_small2"  ,sf_generate,"none","none",(0,0),( 40, 40),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
+("ford_small3"  ,sf_generate,"none","none",(0,0),( 40, 40),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
 
 ("erebor_siege"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
 ("gundabad_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
@@ -334,6 +334,12 @@ scenes = [
 ("moria_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],[]),
 ("minas_morgul_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 ("morannon_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
+
+("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
+("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
+
+("old_forest_road"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("great_east_road"  ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
 
 ]
 

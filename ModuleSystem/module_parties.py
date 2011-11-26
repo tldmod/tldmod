@@ -176,6 +176,27 @@ parties = [
    ("mount_doom","Mount_Doom",icon_orodruin |pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-109.411041,1.567230),[],170),
    ("town_barad_dur","Barad_Dur",icon_baraddur|pf_is_static|pf_always_visible          , no_menu, pt_none, fac_mordor ,0,ai_bhvr_hold,0,(-100.048325,-3.573029),[],170),
 
+   #fords _big BEGIN
+  ("ford_cair_andros1"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
+  ("ford_cair_andros2"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
+  ("ford_caras_galadhon","Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),
+  ("ford_brown_lands"   ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -18.7,-109.76),[], 30),
+  ("ford_rauros"        ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.27, -32.95),[],145),
+  ("ford_pelargir"      ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.91,  64.37),[],145),
+  ("ford_edhellond"     ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 36.59,  48.24),[],145),
+#fords_small  BEGIN
+  ("ford_cerin_dolen"   ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.46,-130.72),[],220),
+  ("old_ford"           ,"_Old_Ford_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
+  ("ford_erech"         ,"Ringlo",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.74,  31.75),[],145),
+  ("ford_isen1"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.35, -43.6),[],145),
+  ("ford_isen2"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.73, -47.21),[],145),
+  ("ford_rohan"         ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7.70, -53.44),[],145),
+  ("ford_rohan2"        ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.66, -12.31),[],145),
+  ("ford_fangorn"       ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
+  ("ford_fangorn2"      ,"Limlight",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
+  ("ford_moria"         ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
+#fords_small END
+
   #("salt_mine","Salt_Mine",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.004257,-11.482468),[]),
   #("four_ways_inn","Four_Ways_Inn",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.064327,1.070496),[]),
   ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
@@ -252,27 +273,6 @@ parties = [
   ("pointer_z_0_snow_forest"  ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]), # rt_snow_forest = 12
   ("pointer_z_0_desert_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]), # rt_desert_forest = 13
 
-
-#fords _big BEGIN
-  ("ford_cair_andros1"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.69,   1.67),[], 90),
-  ("ford_cair_andros2"  ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.36,   5.32),[],170),
-  ("ford_caras_galadhon","Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.26,-129.55),[],220),
-  ("ford_brown_lands"   ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -18.7,-109.76),[], 30),
-  ("ford_rauros"        ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.27, -32.95),[],145),
-  ("ford_pelargir"      ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.91,  64.37),[],145),
-  ("ford_edhellond"     ,"Anduin",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 36.59,  48.24),[],145),
-#fords_small  BEGIN
-  ("ford_cerin_dolen"   ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.46,-130.72),[],220),
-  ("old_ford"           ,"_Old_Ford_",icon_ford_rocks|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.46,-189.36),[],145),
-  ("ford_erech"         ,"Ringlo",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 0.74,  31.75),[],145),
-  ("ford_isen1"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.35, -43.6),[],145),
-  ("ford_isen2"         ,"Isen",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.73, -47.21),[],145),
-  ("ford_rohan"         ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7.70, -53.44),[],145),
-  ("ford_rohan2"        ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.66, -12.31),[],145),
-  ("ford_fangorn"       ,"Entwash",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.89, -66.35),[],145),
-  ("ford_fangorn2"      ,"Limlight",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 19.6, -96.0),[],145),
-  ("ford_moria"         ,"Silverlode",icon_ford_rocks|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 37.5,-142.13),[],145),
-#fords_small END
 
   # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places

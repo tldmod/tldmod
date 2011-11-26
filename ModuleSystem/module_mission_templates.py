@@ -397,6 +397,7 @@ mission_templates = [ # not used in game
 [(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]), # not used
  (1,mtef_attackers|mtef_team_1,0,0,1,[]), # player 
  (4,mtef_attackers|mtef_team_2,0,0,30,[]), # troops
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners (4)
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
@@ -406,8 +407,17 @@ mission_templates = [ # not used in game
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
- (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
- (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains] ),  # prisoners
+
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners  (dwarf)(4)
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+ (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
   ],
   #tld_common_peacetime_scripts +
   [  
@@ -465,7 +475,9 @@ mission_templates = [ # not used in game
 		 (agent_get_troop_id, reg16,  ":agent_no"), (str_store_troop_name, s3, reg16),
 		 #(display_message, "@{reg10},{reg11} to {reg12},{reg13} ({s3})"),
 		(try_begin),
-			(agent_has_item_equipped, ":agent_no", itm_feet_chains),
+			(this_or_next|agent_has_item_equipped, ":agent_no", itm_feet_chains),
+			(agent_has_item_equipped, ":agent_no", itm_feet_chains_dwarf),
+
 			(store_random_in_range,":speed_limit",1,2),
 			(position_move_y, pos2, -600, 0),
 			(position_move_y, pos1, -600, 0), # prisoners, stay back
@@ -533,7 +545,8 @@ mission_templates = [ # not used in game
   # keep them tied...
   (0,0.5,0,[],[
 	(try_for_agents,":agent_no"),
-		(agent_has_item_equipped, ":agent_no", itm_feet_chains),
+		(this_or_next|agent_has_item_equipped, ":agent_no", itm_feet_chains),
+		(agent_has_item_equipped, ":agent_no", itm_feet_chains_dwarf),
 		(agent_get_slot, reg10,      ":agent_no", slot_agent_troll_swing_status), 
 		(agent_get_slot, ":last_hp", ":agent_no", slot_agent_last_hp), 
 		(store_agent_hit_points,":cur_hp",":agent_no",1),
@@ -576,6 +589,8 @@ mission_templates = [ # not used in game
 	  (party_prisoner_stack_get_size, ":trp_no",":p",":i" ),
 	  (val_min, ":trp_no", ":max_pris"),
 	  (store_add, ":entry", ":i", 4),
+	  (troop_get_type, ":race", ":trp_id"),
+	  (try_begin), (eq, ":race", tf_dwarf),(val_add, ":entry", 10), (try_end), # dwarf must be born with their chains
 	  (add_visitors_to_current_scene,":entry",":trp_id",":trp_no"),
 	  (val_sub,":max_pris",":trp_no"), 
 	  #(str_store_troop_name, s3, ":trp_id"),(assign, reg3,":trp_no"),(display_message,"@debug: spawning {reg3} {s3} as prisoners"),
