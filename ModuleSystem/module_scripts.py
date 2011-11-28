@@ -965,20 +965,26 @@ scripts = [
 
 
 # 
-("cf_player_cant_ride_item", [
-	(store_script_param_1, ":mount_item"),
-    (troop_get_type, ":race", "$g_player_troop"),
-	(assign, ":mount_type", -1), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
-	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
+("cf_troop_cant_ride_item", [
+
+	(store_script_param_1, ":trp"),
+	(store_script_param_2, ":mount_item"),
+    (troop_get_type, ":race", ":trp"),
+	
+	
+	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
 	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
 	(try_end),
 
+	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
 	(try_begin),(eq, ":race", tf_orc),                          (assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
 	 (else_try),(is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
 	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 3),
 	(try_end),
+	
+	#(assign, reg10,":rider_type"),(assign, reg12,":mount_item"),(assign, reg11,":mount_type"), (display_message, "@cazz {reg10} {reg11} (itm: {reg12})"),
 	
 	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
 ]),
@@ -5678,10 +5684,6 @@ scripts = [
           (store_mul, ":quest_xp_reward", ":quest_gold_reward", 4),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
 		  (assign, ":quest_importance", 4),
-          (store_item_value,"$qst_deliver_wine_debt",":quest_target_item"),
-          (val_mul,"$qst_deliver_wine_debt",":quest_target_amount"),
-          (val_mul,"$qst_deliver_wine_debt", 6),
-          (val_div,"$qst_deliver_wine_debt",5),
           (assign, ":quest_expiration_days", 7),
           (assign, ":quest_dont_give_again_period", 20),
           (assign, ":result", ":quest_no"),
@@ -18593,28 +18595,15 @@ scripts = [
 	
 	# check for mount, issue warning if wrong
 	(troop_get_inventory_slot, ":item", ":npc", ek_horse),
-	(assign,"$remove_item", 0),
 	(try_begin),
 		(neg|troop_slot_eq,":npc",slot_troop_horse_type,":item"), # mount changed from previous?
 		#(display_message, "@WOAH, MOUNT CHANGED!!"),
 		(troop_set_slot,":npc",slot_troop_horse_type, ":item"), # remember new mount (it's not removed)
 		(try_begin),
-			(this_or_next|eq,":race",tf_dwarf),
-			(is_between,":race",tf_urukhai, tf_orc_end),
-			(is_between,":item",item_horse_begin, "itm_warg_reward"),
-			(assign,"$remove_item",1), # dwarves and uruks cant ride at all
-		(else_try),
-			(is_between,":race",tf_orc_begin,tf_orc_end ),
-			(is_between,":item",item_horse_begin, item_horse_end),
-			(assign,"$remove_item",1), # orcs cant ride horses
-		(else_try),
-			(neq,":race",tf_orc),
-			(is_between,":item",item_warg_begin, "itm_warg_reward"),
-			(assign,"$remove_item",1), # non-orcs cant ride wargs
-		(try_end),
-		(try_begin),
-			(eq,"$remove_item",1),
-			(dialog_box,"@Mount you just equipped does not fit characters of this race. Be warned that there will be problems with mount's behaviour on the battlefield, if you leave it as this","@Inappropriate equipment"),
+			(ge, ":item", 0),
+			(call_script, "script_cf_troop_cant_ride_item",  ":npc", ":item"),
+			(assign,"$remove_item", 1),
+			(dialog_box,"@Mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this","@Inappropriate mount"),
 		(try_end),
 	(try_end),
 ]),

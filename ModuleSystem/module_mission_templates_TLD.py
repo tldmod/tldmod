@@ -1137,7 +1137,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	
 	(store_random_in_range, ":rand",0,100),(ge, ":rand", 20), # 20% of times...
 	
-	(call_script, "script_cf_player_cant_ride_item", ":mount_item"), 
+	(call_script, "script_cf_troop_cant_ride_item", "$g_player_troop", ":mount_item"), 
 		
 	],[
 	(get_player_agent_no, ":player"),

@@ -3303,7 +3303,18 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
      (ge, ":influence", ":price"), # player has enough influence to buy?
-	 (neg|call_script, "script_cf_player_cant_ride_item"), # don't let player but something which he cannot ride personally
+	 
+	 
+	 # don't let player buy something which he cannot ride personally
+	 (assign, ":cant_ride", 0),
+	 (try_begin),
+		(item_get_type, ":it", ":item"),
+		(eq, ":it", itp_type_horse),
+		(call_script, "script_cf_troop_cant_ride_item","$g_player_troop",":item"), 
+		(assign, ":cant_ride", 1),
+	 (try_end),
+	 (neq,":cant_ride",1),
+	 
 	 (try_begin),
 	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
 	   (call_script, "script_get_own_rank_title_to_s24", "$g_talk_troop_faction", ":rank_index"),
