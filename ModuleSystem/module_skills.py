@@ -39,7 +39,7 @@ from header_skills import *
 # If you want to add a new skill, use the reserved skills or use non-hardcoded skills.
 
 skills = [
-  ("trade","Bargainer",sf_base_att_cha|sf_effects_party,10,"Levels of this skill make it possible to claim more equipment for lesser Resource Pts. (Party skill)"),
+  ("trade","Bargainer",sf_base_att_cha|sf_effects_party,10,"Levels of this skill make it possible to claim more equipment for less Resource Points. (Party skill)"),
   ("leadership","Leadership",sf_base_att_cha,10,"Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. (Leader skill)"),
   ("prisoner_management", "Prisoner Management",sf_base_att_cha,10,"Every level of this skill increases maximum number of prisoners by %d. (Leader skill)"), 
   ("reserved_1","Reserved Skill 1",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 

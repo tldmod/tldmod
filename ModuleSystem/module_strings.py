@@ -255,8 +255,8 @@ strings = [
   ("cant_use_inventory_arena","Can't access inventory in the arena."),
   ("cant_use_inventory_disguised","Can't access inventory while you're disguised."),
   ("cant_use_inventory_tutorial","Can't access inventory in the training camp."),
-  ("1_denar", "1 Resource Pts."),
-  ("reg1_denars", "{reg1} Resource Pts."),
+  ("1_denar", "1 Resource Point."),
+  ("reg1_denars", "{reg1} Resource Points."),
 
   # Eglish calendar TLD -- mtarini
 #  ("january_reg1_reg2", "T.A. {reg2}, January {reg1}"),

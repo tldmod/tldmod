@@ -6667,7 +6667,7 @@ game_menus = [
              (val_add, reg1, 1),
              (store_troop_gold, ":gold", "trp_player"),
              (ge, ":gold", reg1),
-             (str_store_string, s1, "@Stay indoors for some time ({reg1} Resource pts. per night)"),
+             (str_store_string, s1, "@Stay indoors for some time ({reg1} Resource points per night)"),
            (else_try),
 		     # not enough money... can rest anyway (but no health bonus)
              (str_store_string, s1, "@Camp outside for some time (free)"),

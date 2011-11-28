@@ -2437,16 +2437,22 @@ ai_scripts = [
 	(store_script_param, ":center", 1),
 	(store_faction_of_party, ":center_faction", ":center"),
 
-	# first detach all attached parties, in case there are parties in the camp
+    # first remove any volunteers
+    (party_get_slot, ":volunteers", ":center", slot_town_volunteer_pt),
+    (try_begin),
+        (gt, ":volunteers", 0),
+        (party_is_active, ":volunteers"),
+        (party_detach, ":volunteers"),
+        (remove_party, ":volunteers"),
+	(try_end),
+    
+	# detach all attached parties, in case there are parties in the camp
 	(party_get_num_attached_parties, ":num_attached_parties", ":center"),
 	(try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
 		(party_get_attached_party_with_rank, ":attached_party", ":center", ":attached_party_rank"),
 		(gt, ":attached_party", 0),
 		(party_is_active, ":attached_party"),
 		(party_detach, ":attached_party"),
-		(party_get_template_id,":pt", ":attached_party"), # (GA fix) delete volunteers party
-		(is_between, ":pt", "pt_gondor_cap_recruits", "pt_caravan_survivors"),
-		(remove_party, ":attached_party"),
 	(try_end),
 
 	(try_begin),
