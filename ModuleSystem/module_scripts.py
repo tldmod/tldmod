@@ -550,7 +550,8 @@ scripts = [
 	 (assign, reg1, ":dist"),
 ]),
 
-("spend_influece_of",[
+#script_spend_influence_of
+("spend_influence_of",[
 	(store_script_param_1, ":price"),
 	(store_script_param_2, ":fac"),
 	
@@ -7110,14 +7111,14 @@ scripts = [
 	(assign, ":ok", 1),
 	(try_begin),
 		(eq, ":landmark", landmark_great_east_road ),
-		(str_store_string, s17, "@nearby the Great East Road, the abandoned old road"),
+		(str_store_string, s17, "@near the Great East Road, the abandoned old road"),
 	(else_try),
 		(eq, ":landmark", landmark_old_forest_road ),
-		(str_store_string, s17, "@nearby what is left of the Old Forest Road, the anjcient dwarven path that used to cross the thick forest"),
+		(str_store_string, s17, "@near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest"),
 	(else_try),
 		(str_store_party_name, s15, ":landmark"),
 		(eq,":landmark","p_hand_isen"),	
-		(str_store_string, s17, "@in proximity of the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc"),
+		(str_store_string, s17, "@close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc"),
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),	
 		(str_store_string, s17, "@in sight of the majestic City Walls of Minas Tirith, the White City"),
@@ -7126,13 +7127,13 @@ scripts = [
 		(str_store_string, s17, "@in sight of the dark Tower of Orthanc"),
 	(else_try),
 		(eq,":landmark","p_old_ford"),
-		(str_store_string, s17, "@nearby the Old Ford, where the Old Forest Road crosses the River Anduin"),
+		(str_store_string, s17, "@near the Old Ford, where the Old Forest Road crosses the River Anduin"),
 	(else_try),
 		(is_between,":landmark",fords_big_begin, fords_big_end), # Anduin fords
-		(str_store_string, s17, "@nearby a big ford crossing the River {s15}"),
+		(str_store_string, s17, "@near a big ford crossing the River {s15}"),
 	(else_try),
 		(is_between,":landmark",fords_small_begin, fords_small_end), # small fords
-		(str_store_string, s17, "@nearby a small ford crossing the River {s15}"),
+		(str_store_string, s17, "@near a small ford crossing the River {s15}"),
 	(else_try),
 		(assign, ":ok", 0), # no good description found
 	(try_end),
@@ -18603,7 +18604,7 @@ scripts = [
 			(ge, ":item", 0),
 			(call_script, "script_cf_troop_cant_ride_item",  ":npc", ":item"),
 			(assign,"$remove_item", 1),
-			(dialog_box,"@Mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this","@Inappropriate mount"),
+			(dialog_box,"@The mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this","@Inappropriate mount"),
 		(try_end),
 	(try_end),
 ]),

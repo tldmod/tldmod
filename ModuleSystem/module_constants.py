@@ -31,11 +31,11 @@ race_names = (
  "@man","@woman","@gondor","@rohan","@dunlander","@orc","@urukhai", "@uruk","@haradrim","@dwarf","@troll","@dunedain","@lothlorien","@rivendell","@mirkwood","@evil_man",
 )
 
-not_enough_rp = "^^[not enought Resource Pts]"
-earned_reg14_rp_of_s14 = "^^[earned {reg14} Resource Pts of {s14}]"
-earned_reg14_times_reg15_rp_of_s14 = "^^[earned {reg14}x{reg15} Resource Pts of {s14}]"
-promise_reg14_rp_of_s14 = "^^[you will earn {reg14} Resource Pts of {s14}]"
-spend_reg14_inf_on_reg15 = " [{reg14}/{reg15} Influence Pts]"
+not_enough_rp = "^^[not enough Resource Points]"
+earned_reg14_rp_of_s14 = "^^[earned {reg14} Resource Points of {s14}]"
+earned_reg14_times_reg15_rp_of_s14 = "^^[earned {reg14}x{reg15} Resource Points of {s14}]"
+promise_reg14_rp_of_s14 = "^^[you will earn {reg14} Resource Points of {s14}]"
+spend_reg14_inf_on_reg15 = " [costs {reg14}/{reg15} Influence]"
 ## SUBFACTIONS INDICES
 ############
 

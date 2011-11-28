@@ -370,7 +370,7 @@ triggers = [
 	 (call_script, "script_cf_factions_are_allies", "$ambient_faction","$players_kingdom"),
    ],[	(str_store_faction_name, s11, "$ambient_faction"),
 		(str_store_faction_name, s10, "$players_kingdom"),
-		(dialog_box,"@When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                      (the Resource Pts. which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
+		(dialog_box,"@When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                      (the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)","@Info"),
 	]),
 
 #Companion quests
@@ -1310,7 +1310,7 @@ triggers = [
 	(try_begin),
 		(neg|ge, ":count", ":start_killcount"),
 		(call_script, "script_fail_quest", "qst_oath_of_vengeance"),
-		(display_message, "@You failed to fulfill your oath of vengeance for {s1}'s hero death!", color_bad_news),
+		(display_message, "@You failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
 		(call_script, "script_cf_gain_trait_oathbreaker"),
 	(else_try),
 		(ge, ":count", ":start_killcount"),
