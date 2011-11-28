@@ -62,6 +62,8 @@ dialogs = [
                        (troop_slot_ge, "$g_talk_troop", slot_troop_leaded_party, 1),
                        (troop_get_slot, "$g_talk_troop_party", "$g_talk_troop", slot_troop_leaded_party),
                      (try_end),
+  				 	(str_store_faction_name, s14, "$ambient_faction"),
+
 #                     (assign, "$g_talk_troop_kingdom_relation", 0),
 #                     (try_begin),
 #                       (gt, "$players_kingdom", 0),
@@ -860,30 +862,32 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone, "companion_recruit_payment", [
       (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
       (store_add, ":dialog_line", "str_npc1_payment", ":npc_offset"),
-      (troop_get_slot, reg3, "$g_talk_troop", slot_troop_payment_request),
+      #(troop_get_slot, reg3, "$g_talk_troop", slot_troop_payment_request),
       (str_store_party_name, s20, "$g_encountered_party"),
       (str_store_string, s5, ":dialog_line")],
 "{s5}", "companion_recruit_payment_response", []],
 
 [anyone|plyr, "companion_recruit_payment_response", [
                     (hero_can_join, "p_main_party"),
+					(store_troop_faction, ":fac", "$g_talk_troop"),
+                    (faction_get_slot, ":inf", ":fac", slot_faction_influence),#
                     (troop_get_slot, ":amount_requested", "$g_talk_troop", slot_troop_payment_request),#
-                    (store_troop_gold, ":gold", "trp_player"),#
-                    (ge, ":gold", ":amount_requested"),#
-                    (assign, reg3, ":amount_requested"),
+                    (ge, ":inf", ":amount_requested"),#
+                    (assign, reg14, ":amount_requested"),
+					(assign, reg15, ":inf"),
                     (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
                     (store_add, ":dialog_line", "str_npc1_payment_response", ":npc_offset"),
                     (str_store_string, s6, ":dialog_line")],
 "{s6}", "companion_recruit_signup_confirm", [
                     (troop_get_slot, ":amount_requested", "$g_talk_troop", slot_troop_payment_request),#
-                    (gt, ":amount_requested", 0),#
-                    (troop_remove_gold, "trp_player", ":amount_requested"),  #                  
+                    (gt, ":amount_requested", 0),
+					(call_script, "script_spend_influece_of", ":amount_requested", "$g_talk_troop_faction"),
                     (troop_set_slot, "$g_talk_troop", slot_troop_payment_request, 0)]],
 
 [anyone|plyr, "companion_recruit_payment_response", [
                      (troop_get_slot, ":signup_response", "$g_talk_troop", slot_troop_signup_response_2),
                      (str_store_string, s7, ":signup_response")],
-"Sorry. I can't afford that at the moment.", "close_window", [(call_script,"script_stand_back"),]],
+"Well, there little I can do then.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
@@ -1317,7 +1321,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    [    (eq, "$talk_context", tc_hire_troops), 
 		# prepare strings useful in the folowing dialog
 		(str_store_party_name, s21, "$g_encountered_party"), # s21: CITY NAME
-		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: City faction name
+		(str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: faction name
+		(str_store_faction_name, s14, "$g_encountered_party_faction"), # s14:  faction name
 		(str_store_troop_name, s23, "$g_player_troop"), # s23: Player name
 		(call_script, "script_get_rank_title_to_s24", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player TITLE  (among own faction)
 		(call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" ), # s24: player TITLE  (among city faction)
@@ -1440,9 +1445,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   [(store_troop_gold, ":cur_gold", "$g_player_troop"), (gt,"$cheapest_join",":cur_gold"),
    (try_begin),
      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-     (str_store_string, s4, "@There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^Let us discuss this when you can make good their loss by contributing resources to our cause."),
+     (str_store_string, s4, "@There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^"+not_enough_rp),
    (else_try),
-     (str_store_string, s4, "@We have some spare troops, but we can't afford to lose them to the likes of you. Go and earn us some resources, and I may change my mind."),
+     (str_store_string, s4, "@We have some spare troops, but we can't afford to lose them to the likes of you.^"+not_enough_rp),
    (try_end)], # these who want to join cost too much
 "{s4}", "player_hire_troop_nextcycle", []],
 
@@ -1504,12 +1509,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32), #player is in own faction
 		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {s23}, {s29}^"),(str_clear, s31),
 		(try_end),
-		(assign, reg11, "$initial_party_value"),
+		(assign, reg14, "$initial_party_value"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}"+earned_reg14_rp_of_s14),
         (else_try),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}"+earned_reg14_rp_of_s14),
         (try_end),
 		(try_begin), # if nonfittings were given
           (gt, reg46, 0),
@@ -1905,14 +1910,17 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
 	  (party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 2)]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
 "Can a savage beast be made to obey commands?","lord_capture_troll_completed_two_trolls_thankyou_info",[]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
 "Thank you, Master. You will be pleased by the way this troll will be put in good use.","lord_capture_troll_completed_two_trolls_thankyou_accept",[]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[],
-"Thank you, master. But I'm not worth your great gift. It is too dangerous for me.","lord_capture_troll_completed_two_trolls_thankyou_refuse",[]],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
+"Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.","lord_capture_troll_completed_two_trolls_thankyou_refuse",[]],
+
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(neg|party_can_join),],
+"Thank you, master. But I'm not worth of your great gift. [no room in party!]","lord_capture_troll_completed_two_trolls_thankyou_refuse",[]],
 
 [anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence)],
 "Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].","lord_capture_troll_completed_two_trolls_thankyou_raise",[]],
@@ -1929,9 +1937,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
 "You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",
 	[(party_add_members, "p_main_party", "trp_armoured_troll", 1),
-	 (faction_get_slot, ":val", "$g_talk_troop_faction", slot_faction_influence),
-	 (val_sub, ":val", 10),
-	 (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":val")]],
+	 (call_script, "script_spend_influece_of", 10, "$g_talk_troop_faction"),]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
 "How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.","lord_capture_troll_completed_two_trolls_thankyou",[]],
@@ -2627,27 +2633,28 @@ How could I expect someone like {playername} to be up to the challange. My serva
 ##    (call_script, "script_finish_quest", ":lords_quest"),
 ##    ]],
   
-[anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-                         (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-                         (troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
-                         (gt, ":cur_debt", 0),
-                         (assign, reg1, ":cur_debt")],
-"I think you owe me {reg1} RPs, {playername}. Do you intend to pay your debt anytime soon?", "lord_pay_debt_2",[]],
+# [anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+                         # (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+                         # (troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
+                         # (gt, ":cur_debt", 0),
+                         # (assign, reg1, ":cur_debt")],
+# "I think you owe me {reg1} RPs, {playername}. Do you intend to pay your debt anytime soon?", "lord_pay_debt_2",[]],
 
-[anyone|plyr, "lord_pay_debt_2", [(troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
-                                    (store_troop_gold, ":cur_gold", "trp_player"),
-                                    (le, ":cur_debt", ":cur_gold")],
-"That is why I came, {s65}. Here it is, every denar I owe you.", "lord_pay_debt_3_1", [
-	(troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
-	(troop_remove_gold, "trp_player", ":cur_debt"),
-	(troop_set_slot, "$g_talk_troop", slot_troop_player_debt, 0)]],
+# [anyone|plyr, "lord_pay_debt_2", [(troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
+                                    # (store_troop_gold, ":cur_gold", "trp_player"),
+                                    # (le, ":cur_debt", ":cur_gold")],
+# "That is why I came, {s65}. Here it is, every denar I owe you.", "lord_pay_debt_3_1", [
+	# (troop_get_slot, ":cur_debt", "$g_talk_troop", slot_troop_player_debt),
+	# (troop_remove_gold, "trp_player", ":cur_debt"),
+	# (troop_set_slot, "$g_talk_troop", slot_troop_player_debt, 0)]],
 
-[anyone|plyr, "lord_pay_debt_2", [], "Alas, I don't have sufficient funds, {s65}. But I'll pay you soon enough.", "lord_pay_debt_3_2", []],
-[anyone, "lord_pay_debt_3_1", [], "Ah, excellent. You are a {man/woman} of honour, {playername}. I am satisfied, your debt to me has been paid in full.", "lord_pretalk", []],
-[anyone, "lord_pay_debt_3_2", [], "Well, don't keep me waiting much longer.", "lord_pretalk", []],
+# [anyone|plyr, "lord_pay_debt_2", [], "Alas, I don't have sufficient funds, {s65}. But I'll pay you soon enough.", "lord_pay_debt_3_2", []],
+# [anyone, "lord_pay_debt_3_1", [], "Ah, excellent. You are a {man/woman} of honour, {playername}. I am satisfied, your debt to me has been paid in full.", "lord_pretalk", []],
+# [anyone, "lord_pay_debt_3_2", [], "Well, don't keep me waiting much longer.", "lord_pretalk", []],
    
 [anyone,"lord_start", [(party_slot_eq, "$g_encountered_party",slot_town_lord, "$g_talk_troop"),#we are talking to Town's Lord.
                          (ge,"$g_talk_troop_faction_relation",0),
+						 (str_store_faction_name, s14, "$g_talk_troop_faction"),
                          (neq, "$g_ransom_offer_rejected", 1),
                          (lt, "$g_encountered_party_2", 0), #town is not under siege
                          (hero_can_join_as_prisoner, "$g_encountered_party"),
@@ -2675,19 +2682,18 @@ How could I expect someone like {playername} to be up to the challange. My serva
                          (str_store_troop_name, s3, "$prisoner_lord_to_buy"),
                          (assign, reg5, "$prisoner_lord_to_buy"),
                          (call_script, "script_calculate_ransom_amount_for_troop", "$prisoner_lord_to_buy"),
-                         (assign, reg6, reg0),
-                         (val_div, reg6, 2),
-                         (assign, "$temp", reg6)],
-"I heard that you have captured our enemy {s3} and he is with you at the moment.\
- I can give you {reg6} RPs for him if you want to get rid of him.\
- ", "lord_buy_prisoner", []],
+                         (assign, reg14, reg0),
+                         (val_div, reg14, 2),
+                         (assign, "$temp", reg14)],
+"I heard that you have captured our enemy {s3} and he is with you at the moment. Good job!^\
+ Leave him to us, there is a lot of information which we need to extract from him..."+promise_reg14_rp_of_s14 , "lord_buy_prisoner", []],
 
-[anyone|plyr,"lord_buy_prisoner", [], "I accept your offer. I'll leave {s3} to you for {reg6} RPs.", "lord_buy_prisoner_accept", []],
-[anyone|plyr,"lord_buy_prisoner", [], "I fear I can't accept your offer.", "lord_buy_prisoner_deny", [(assign, "$g_ransom_offer_rejected", 1),]],
+[anyone|plyr,"lord_buy_prisoner", [], "Ok, he is all yours.", "lord_buy_prisoner_accept", []],
+[anyone|plyr,"lord_buy_prisoner", [], "I fear have other plans for him.", "lord_buy_prisoner_deny", [(assign, "$g_ransom_offer_rejected", 1),]],
 
 [anyone,"lord_buy_prisoner_accept", [],
-"Excellent! I'll tell our intendants to fork off a pack of supplies for you right now as a reward. \
- I'll send my men to take him to our prison with due haste.", "lord_pretalk", [
+"Excellent!\
+ I'll send my men to take him to our prison with due haste. This will sure help our cause.", "lord_pretalk", [
      (remove_troops_from_prisoners,  "$prisoner_lord_to_buy", 1),
      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$temp"),
      #(call_script, "script_troop_add_gold", "trp_player", "$temp"),
@@ -2695,10 +2701,9 @@ How could I expect someone like {playername} to be up to the challange. My serva
      #(troop_set_slot, "$prisoner_lord_to_buy", slot_troop_is_prisoner, 1),
      (troop_set_slot, "$prisoner_lord_to_buy", slot_troop_prisoner_of_party, "$g_encountered_party")]],
 
-[anyone,"lord_buy_prisoner_deny", [], "Mmm. As you wish, {playername}, but you'll not get a better offer. Take it from me.", "lord_pretalk", []],
+[anyone,"lord_buy_prisoner_deny", [], "Too bad, he would have been precious for us, {playername}.", "lord_pretalk", []],
 
-#TLD: your king gives you a faction intro and a horse when you first meet him
-# removed for now
+#TLD: your king gives you a faction intro when you first meet him
 [anyone,"lord_start", [
         (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
         (eq, "$g_talk_troop_met", 0)],
@@ -3094,17 +3099,18 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
                              (ge,":lords_quest",0)],
 "About the task you gave me...", "lord_active_mission_1",[]],
 
-[anyone|plyr,"lord_talk", [(faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader, "$g_talk_troop"),
-                             (eq, "$players_kingdom", "$g_talk_troop_faction"),
-#                             (eq, "$player_has_homage", 0),
-                             (gt, "$mercenary_service_accumulated_pay", 0)],
-"{s67}, I humbly request the weekly payment for my service.", "lord_pay_mercenary",[]],
+# [anyone|plyr,"lord_talk", [(faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader, "$g_talk_troop"),
+                             # (eq, "$players_kingdom", "$g_talk_troop_faction"),
+                             # (gt, "$mercenary_service_accumulated_pay", 0)],
+# "{s67}, I humbly request the weekly payment for my service.", "lord_pay_mercenary",[]],
 
-[anyone,"lord_pay_mercenary", [(assign, reg8, "$mercenary_service_accumulated_pay")],
-"Hmm, let me see... According to my ledgers, we owe you {reg8} RPs for your work. Here you are.", "lord_pay_mercenary_2",
-   [(troop_add_gold, "trp_player", "$mercenary_service_accumulated_pay"),
-    (assign, "$mercenary_service_accumulated_pay", 0)]],
-[anyone|plyr,"lord_pay_mercenary_2", [], "Thank you, sir.", "lord_pretalk", []],
+# [anyone,"lord_pay_mercenary", [(assign, reg8, "$mercenary_service_accumulated_pay")],
+# "Hmm, let me see... According to my ledgers, we owe you {reg8} RPs for your work. Here you are.", "lord_pay_mercenary_2",
+   # [(troop_add_gold, "trp_player", "$mercenary_service_accumulated_pay"),
+    # (assign, "$mercenary_service_accumulated_pay", 0)]],
+# [anyone|plyr,"lord_pay_mercenary_2", [], "Thank you, sir.", "lord_pretalk", []],
+
+
 [anyone|plyr,"lord_talk", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                              (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                              (ge, "$g_talk_troop_faction_relation", 0),
@@ -3191,7 +3197,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 "{s4}", "lord_give_troops",[
    #init from TLD recruiting in city - modified, copy of party_encounter_friend dialog code
 		# prepare strings useful in the folowing dialog
-		(str_store_faction_name, s22, "$g_talk_troop_faction"), # s22: Party faction name
+		(str_store_faction_name, s14, "$g_talk_troop_faction"), # s22: Party faction name
 		(call_script, "script_get_rank_title_to_s24", "$players_kingdom" ),(str_store_string_reg, s29, s24), # s29: player rank title with own faction
 		(call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction" ), # s24: player rank title with this faction
 		(assign, reg26, 0),(try_begin),(eq,"$players_kingdom","$g_talk_troop_faction"),(assign,reg26,1),(try_end), # reg26: 1 if party of player faction
@@ -3210,7 +3216,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (assign, "$initial_party_value", reg0), # initial party total value
         (change_screen_give_members)]],
-[anyone,"lord_give_troops", [], "Unfortunately you don't have any {s22} soldiers to reinforce me with.", "lord_pretalk", []],
+[anyone,"lord_give_troops", [], "Unfortunately you don't have any {s14} soldiers to reinforce me with.", "lord_pretalk", []],
 
 [anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", []],
 
@@ -3229,14 +3235,14 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
         (val_sub, "$initial_party_value", reg0), #calculate how much monetary value given
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32),
-		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),(str_clear, s31),
+		 (else_try),               (str_store_string, s32, "@^{s14} is grateful to you, {playername}, {s29}^"),(str_clear, s31),
 		(try_end),
-		(assign, reg11, "$initial_party_value"),
+		(assign, reg14, "$initial_party_value"),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}"+earned_reg14_rp_of_s14),
         (else_try),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}]"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}"+earned_reg14_rp_of_s14),
         (try_end), 
 		(try_begin), # if nonfittings were given
           (gt, reg46, 0),
@@ -3264,14 +3270,14 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], 
 "I want to request a special item.", "lord_get_reward_item_ask",[]],
 
-[anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(eq, reg1,0)], "Seems like you have no place in your inventory for any rewards. Make some room then return", "lord_talk",[]],
+[anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(eq, reg1,0)], "Seems like you have no place in your inventory for anything else. Make some room then return.", "lord_talk",[]],
 [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(gt, reg1,0)], "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],
    
 [anyone|plyr|repeat_for_100,"lord_get_reward_item", [
      (store_repeat_object, ":rank_index"),
      (is_between, ":rank_index", 0, 10),
-     (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), #rank points to rank number 0-9
-     (assign, ":rank", reg0),
+     (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),(assign, ":rank", reg0), #rank points to rank number 0-9
+     
      (ge, ":rank", ":rank_index"), #player of sufficient rank?
      (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
      (assign, ":item_exists", 0),    #find a reward item for specified rank if it exists
@@ -3297,6 +3303,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
      (ge, ":influence", ":price"), # player has enough influence to buy?
+	 (neg|call_script, "script_cf_player_cant_ride_item"), # don't let player but something which he cannot ride personally
 	 (try_begin),
 	   (eq, "$g_talk_troop_faction", "$players_kingdom"),
 	   (call_script, "script_get_own_rank_title_to_s24", "$g_talk_troop_faction", ":rank_index"),
@@ -3304,9 +3311,9 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 	   (call_script, "script_get_allied_rank_title_to_s24", "$g_talk_troop_faction", ":rank_index"),
 	 (try_end),
      #required rank title in s24
-     (assign, reg10, ":price"),
-     (assign, reg11, ":influence")],
-"{s24}: {s20}. [Costs {reg10}/{reg11} influence]", "lord_get_reward_item_answer",[
+     (assign, reg14, ":price"),
+     (assign, reg15, ":influence")],
+"{s24}: {s20}"+spend_reg14_inf_on_reg15, "lord_get_reward_item_answer",[
      (store_repeat_object, ":rank_index"),
      (store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
      #find it again
@@ -3336,14 +3343,9 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (call_script, "script_get_player_party_morale_values"),
      (val_add, reg0, ":recent_events_morale"),
      (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
-     (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
-     (val_sub, ":influence", ":price"),
-     (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
-     (str_store_faction_name, s1, "$g_talk_troop_faction"),
-     (assign, reg10, ":price"),
-     (assign, reg11, ":influence"),
-     (display_message, "@You spent {reg10} of your influence with {s1}, with {reg11} remaining."),]],
+	 (call_script, "script_spend_influece_of", ":price", "$g_talk_troop_faction")
+,]],
         
 [anyone|plyr,"lord_get_reward_item", [], "Never mind then.", "lord_pretalk", []],
 [anyone,"lord_get_reward_item_answer", [], "Very well. May you use it to vanquish our enemies.", "lord_pretalk", []],
@@ -3571,47 +3573,47 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_state, spai_undefined),
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_object, -1)]],
 
-[anyone|plyr,"lord_talk",
-   [ (eq, "$g_talk_troop_faction", "$players_kingdom"),
-     (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
-     #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-     (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-     (faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default)], 
-"I want to start a new campaign. Let us assemble the army here.", "lord_give_order_call_to_arms_verify",[]],
+# [anyone|plyr,"lord_talk",
+   # [ (eq, "$g_talk_troop_faction", "$players_kingdom"),
+     # (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+     # #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+     # (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+     # (faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default)], 
+# "I want to start a new campaign. Let us assemble the army here.", "lord_give_order_call_to_arms_verify",[]],
 
-[anyone,"lord_give_order_call_to_arms_verify", [], "You wish to summon all lords for a new campaign?", "lord_give_order_call_to_arms_verify_2",[]],
+# [anyone,"lord_give_order_call_to_arms_verify", [], "You wish to summon all lords for a new campaign?", "lord_give_order_call_to_arms_verify_2",[]],
 
-[anyone|plyr,"lord_give_order_call_to_arms_verify_2", [], "Yes. We must gather all our forces before we march on the enemy.", "lord_give_order_call_to_arms",[]],
-[anyone|plyr,"lord_give_order_call_to_arms_verify_2", [], "On second thought, it won't be necessary to summon everyone.", "lord_pretalk",[]],
+# [anyone|plyr,"lord_give_order_call_to_arms_verify_2", [], "Yes. We must gather all our forces before we march on the enemy.", "lord_give_order_call_to_arms",[]],
+# [anyone|plyr,"lord_give_order_call_to_arms_verify_2", [], "On second thought, it won't be necessary to summon everyone.", "lord_pretalk",[]],
 
-[anyone,"lord_give_order_call_to_arms",[],
-"All right then. I will send messengers and tell everyone to come here.", "lord_pretalk",[
-     (faction_set_slot, "$players_kingdom", slot_faction_ai_state, sfai_gathering_army),
-     (assign, "$g_recalculate_ais", 1)]],
+# [anyone,"lord_give_order_call_to_arms",[],
+# "All right then. I will send messengers and tell everyone to come here.", "lord_pretalk",[
+     # (faction_set_slot, "$players_kingdom", slot_faction_ai_state, sfai_gathering_army),
+     # (assign, "$g_recalculate_ais", 1)]],
 
-[anyone|plyr,"lord_talk",
-   [ (eq, "$g_talk_troop_faction", "$players_kingdom"),
-     (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
-     #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-     (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-     (neg|faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default)], 
-"I want to end the campaign and let everyone return home.", "lord_give_order_disband_army_verify", []],
+# [anyone|plyr,"lord_talk",
+   # [ (eq, "$g_talk_troop_faction", "$players_kingdom"),
+     # (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+     # #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+     # (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+     # (neg|faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default)], 
+# "I want to end the campaign and let everyone return home.", "lord_give_order_disband_army_verify", []],
 
-[anyone,"lord_give_order_disband_army_verify", [], "You want to end the current campaign and release all lords from duty?", "lord_give_order_disband_army_2",[]],
-[anyone|plyr,"lord_give_order_disband_army_2", [], "Yes. We no longer need all our forces here.", "lord_give_order_disband_army",[]],
-[anyone|plyr,"lord_give_order_disband_army_2", [], "On second thought, it will be better to stay together for now.", "lord_pretalk",[]],
+# [anyone,"lord_give_order_disband_army_verify", [], "You want to end the current campaign and release all lords from duty?", "lord_give_order_disband_army_2",[]],
+# [anyone|plyr,"lord_give_order_disband_army_2", [], "Yes. We no longer need all our forces here.", "lord_give_order_disband_army",[]],
+# [anyone|plyr,"lord_give_order_disband_army_2", [], "On second thought, it will be better to stay together for now.", "lord_pretalk",[]],
 
-[anyone,"lord_give_order_disband_army", [],
-"All right. I will let everyone know that they are released from duty.", "lord_pretalk",
-   [ (faction_set_slot, "$players_kingdom", slot_faction_ai_state, sfai_default),
-     (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
-       (troop_get_slot, ":party_no", ":cur_troop", slot_troop_leaded_party),
-       (gt, ":party_no", 0),
-       (party_slot_eq, ":party_no", slot_party_commander_party, "p_main_party"),
-       (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),
-       (party_set_slot, ":party_no", slot_party_commander_party, -1),
-     (try_end),
-     (assign, "$g_recalculate_ais", 1)]],
+# [anyone,"lord_give_order_disband_army", [],
+# "All right. I will let everyone know that they are released from duty.", "lord_pretalk",
+   # [ (faction_set_slot, "$players_kingdom", slot_faction_ai_state, sfai_default),
+     # (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
+       # (troop_get_slot, ":party_no", ":cur_troop", slot_troop_leaded_party),
+       # (gt, ":party_no", 0),
+       # (party_slot_eq, ":party_no", slot_party_commander_party, "p_main_party"),
+       # (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),
+       # (party_set_slot, ":party_no", slot_party_commander_party, -1),
+     # (try_end),
+     # (assign, "$g_recalculate_ais", 1)]],
 
 [anyone|plyr,"lord_talk", [(ge, "$g_talk_troop_faction_relation", 0)], "I wish to ask you something.", "lord_talk_ask_something",[]],
 [anyone,"lord_talk_ask_something", [], "Aye? What is it?", "lord_talk_ask_something_2",[]],
@@ -4147,7 +4149,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 "Oh, indeed. I've captured an enemy commander for you.", "capture_enemy_hero_thank", []],
 
 [anyone,"capture_enemy_hero_thank", [],
-"Many thanks, my friend. He will serve very well for questioning. You've done a fine work here. Please accept these {reg5} RPs for your help.", "capture_enemy_hero_thank_2",
+"Many thanks, my friend. He will serve very well for questioning. You've done a fine work here.", "capture_enemy_hero_thank_2",
    [(quest_get_slot, ":quest_target_troop", "qst_capture_enemy_hero", slot_quest_target_troop),
      # (quest_get_slot, ":quest_target_faction", "qst_capture_enemy_hero", slot_quest_target_faction),
      (party_remove_prisoners, "p_main_party", ":quest_target_troop", 1),
@@ -4367,10 +4369,10 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 
  
 [anyone,"lord_request_mission_ask", [(store_partner_quest,":lords_quest"),(ge,":lords_quest",0)],
-"You still haven't finished the last job I gave you, {playername}. You should be working on that, not asking me for other things to do.", "lord_pretalk",[]],
+"You still haven't finished the last task I gave you, {playername}. You should be working on that, not asking me for other things to do.", "lord_pretalk",[]],
 
 [anyone,"lord_request_mission_ask", [(troop_slot_eq, "$g_talk_troop", slot_troop_does_not_give_quest, 1)],
-"I don't have any other jobs for you right now.", "lord_pretalk",[]],
+"I don't have any other task for you right now.", "lord_pretalk",[]],
 [anyone|auto_proceed,"lord_request_mission_ask", [], "A task?", "lord_tell_mission",
    [ (call_script, "script_get_random_quest", "$g_talk_troop"),
      (assign, "$random_quest_no", reg0)]],
@@ -4525,8 +4527,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 #[anyone|plyr,"lord_mission_deliver_message", [], "I am no errand boy, sir. Hire a courier for your trivialities.", "lord_mission_deliver_message_rejected_rudely",[]],
 
 [anyone,"lord_mission_deliver_message_accepted", [], 
-"I appreciate it, {playername}. Here's the letter,\
- and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
+"I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.", "close_window",
    [(call_script,"script_stand_back"),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     #(call_script, "script_troop_add_gold", "trp_player", 20),
@@ -5141,7 +5142,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_lend_companion")],
-"I don't have a job for you right now, but your companion {s3} is a skilled {reg3?lass:fellow}\
+"I don't have a task for you right now, but your companion {s3} is a skilled {reg3?lass:fellow}\
  and I need someone with {reg3?her:his} talents. Will you lend {reg3?her:him} to me for a while?", "lord_tell_mission_lend_companion", [
        (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
        (quest_get_slot, ":quest_target_amount", "$random_quest_no", slot_quest_target_amount),
@@ -6614,9 +6615,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 [anyone,"mayor_deliver_wine", [],
  "At last! Our stocks were almost depleted.\
  I had arranged for the delivery of the {s4} in advance.\
- You are entitled to a bonus of {reg5} RPs. That should cover your troubles.\
- And give {s9} my regards.\
- I'll put in a good word for you next time I deal with him.", "mayor_pretalk",
+ And give {s9} my regards."+earned_reg14_rp_of_s14, "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
@@ -6626,7 +6625,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
     # (assign, ":xp_reward", ":quest_gold_reward"),
     # (val_mul, ":xp_reward", 4),
     # (add_xp_as_reward, ":xp_reward"),
-    (assign, reg5, ":quest_gold_reward"),
+    (assign, reg14, ":quest_gold_reward"),
+	(str_store_faction_name, s14, "$ambient_faction"),
     (str_store_item_name, s4, ":quest_target_item"),
     (str_store_troop_name, s9, ":quest_giver_troop"),
     # (quest_get_slot, ":giver_town", "qst_deliver_wine", slot_quest_giver_center),
@@ -6644,13 +6644,12 @@ It's an important matter, so please make haste.", "caravan_help1",[
                                      (gt, ":item_count", 0),
                                      (assign, reg9, ":quest_target_amount"),
                                      (str_store_item_name, s4, ":quest_target_item")],
-"I was told to deliver you {reg9} units of {s4}, but I lost some of the cargo on the way.", "mayor_deliver_wine_incomplete",[]],
+"I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.", "mayor_deliver_wine_incomplete",[]],
 
 [anyone,"mayor_deliver_wine_incomplete", [],
- "Attacked by bandits eh?\
- You are lucky they left you alive.\
- Anyway, I can pay you no more than {reg5} RPs for this.\
- And I will let {s1} know that my order was delivered less than completely.", "mayor_pretalk",
+ "They will pay for this!\
+ Well, at least we have some {s4}.\
+ Thank you anyway."+earned_reg14_rp_of_s14, "mayor_pretalk",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_wine", slot_quest_target_amount),
     (quest_get_slot, ":quest_gold_reward", "qst_deliver_wine", slot_quest_gold_reward),
@@ -6661,7 +6660,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
     (val_div, ":quest_gold_reward", ":quest_target_amount"),
     #(call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":quest_gold_reward"),
-    (assign, reg5, ":quest_gold_reward"),
+    (assign, reg14, ":quest_gold_reward"),
+	(str_store_faction_name, s14, "$ambient_faction"),
     (assign, ":xp_reward", ":quest_gold_reward"),
     (val_mul, ":xp_reward", 4),
     (add_xp_as_reward, ":xp_reward"),
@@ -7421,9 +7421,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone,"mayor_begin", [(check_quest_active, "qst_deal_with_night_bandits"),
                           (quest_slot_eq, "qst_deal_with_night_bandits", slot_quest_giver_troop, "$g_talk_troop"),
-                          (check_quest_succeeded, "qst_deal_with_night_bandits")],
-"Very nice work, {playername}, you made short work of those lawless curs.\
- And here's a nice reward of 150 RPs.", "lord_deal_with_night_bandits_completed",[
+                          (check_quest_succeeded, "qst_deal_with_night_bandits"), (assign, reg14, 150),(str_store_faction_name, s14, "$ambient_faction"),],
+"Very nice work, {playername}, you made short work of those lawless curs!"+earned_reg14_rp_of_s14, "lord_deal_with_night_bandits_completed",[
     (call_script, "script_finish_quest", "qst_deal_with_night_bandits", 100)]],
 
 [anyone|plyr,"lord_deal_with_night_bandits_completed", [], "They had it coming.", "close_window",[(call_script,"script_stand_back"),]],
@@ -7514,16 +7513,15 @@ It's an important matter, so please make haste.", "caravan_help1",[
 [anyone|plyr,"mayor_looters_quest_response", [], "Not yet, sir. Farewell.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"mayor_looters_quest_destroyed", [],
-"Aye, my scouts saw the whole thing. That should make any tribal orcs think twice before raiding our countryside!\
- The bounty is 40 RPs for every band, so that makes {reg1} in total. Here is your money, as promised.", "mayor_looters_quest_destroyed_2",[
+"Aye, my scouts saw the whole thing. That will help keeping these tribal orcs at bay!"+earned_reg14_times_reg15_rp_of_s14, "mayor_looters_quest_destroyed_2",[
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
       (party_template_get_slot,":previous_looters_destroyed",":looter_template",slot_party_template_num_killed),
       (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
       (quest_get_slot,":looters_paid_for","qst_deal_with_looters",slot_quest_current_state),
       (store_sub,":looter_bounty",":num_looters_destroyed",":looters_paid_for"),
+      (assign,reg14,":looter_bounty"),(assign,reg15,40),
       (val_mul,":looter_bounty",40),
-      (assign,reg1,":looter_bounty"),
       #(call_script, "script_troop_add_gold","trp_player",":looter_bounty"),
       (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":looter_bounty"),
       (assign,":looters_paid_for",":num_looters_destroyed"),
@@ -7549,7 +7547,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
       (try_end)],
 "And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now. \
  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place! \
- I think that concludes your task, {playername}. I'll pass a word to our warehouse, they will reward you. Thank you, and farewell.", "close_window",[(call_script,"script_stand_back"),]],
+ I think that concludes your task, {playername}. Thank you, and farewell.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"mayor_looters_quest_destroyed_2", [], "Anything else you need?", "mayor_looters_quest_response",[]],
 
@@ -7657,8 +7655,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
                           (check_quest_succeeded, "qst_move_cattle_herd")],
 "Good to see you again {playername}. I have heard that you have delivered those people successfully. \
- I will tell our commander how reliable you are. \
- And here is your pay, {reg8} RPs.", "close_window",
+ I will tell our commander how reliable you are."+earned_reg14_rp_of_s14, "close_window",
    [(call_script,"script_stand_back"),
     (quest_get_slot, ":quest_gold_reward", "qst_move_cattle_herd", slot_quest_gold_reward),
     # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
@@ -7666,7 +7663,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
     # (add_xp_as_reward, ":xp_reward"),
     #(call_script, "script_change_player_relation_with_center", "$current_town", 3),    
     (call_script, "script_finish_quest", "qst_move_cattle_herd", 100),
-    (assign, reg8, ":quest_gold_reward")]],
+    (assign, reg14, ":quest_gold_reward")]],
   
 [anyone,"mayor_begin", [(check_quest_active, "qst_move_cattle_herd"),
                           (quest_slot_eq, "qst_move_cattle_herd", slot_quest_giver_troop, "$g_talk_troop"),
@@ -7709,8 +7706,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
                           (check_quest_succeeded, "qst_troublesome_bandits"),
                           (quest_slot_eq, "qst_troublesome_bandits", slot_quest_giver_troop, "$g_talk_troop")],
 "I have heard about your deeds. You have given those goblins the punishment they deserved. \
- You are really as good as they say. \
- Here is your reward: {reg5} RPs.",
+ You are really as good as they say."+earned_reg14_rp_of_s14,
    "mayor_friendly_pretalk", [(quest_get_slot, ":quest_gold_reward", "qst_troublesome_bandits", slot_quest_gold_reward),
                               # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
                               # (assign, ":xp_reward", ":quest_gold_reward"),
@@ -7718,21 +7714,21 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
                               # (add_xp_as_reward, ":xp_reward"),
                               # (call_script, "script_change_player_relation_with_center", "$current_town", 2),
                               (call_script, "script_finish_quest", "qst_troublesome_bandits", 100),
-                              (assign, reg5, ":quest_gold_reward")]],
+                              (assign, reg14, ":quest_gold_reward")]],
 
-[anyone,"mayor_begin", [(ge, "$debt_to_merchants_guild", 50)],
-"According to my accounts, you owe the merchants guild {reg1} RPs.\
- I'd better collect that now.", "merchant_ask_for_debts",[(assign,reg1,"$debt_to_merchants_guild")]],
-[anyone|plyr,"merchant_ask_for_debts", [[store_troop_gold,reg5,"trp_player"],[ge,reg5,"$debt_to_merchants_guild"]],
-"Alright. I'll pay my debt to you.", "merchant_debts_paid",[[troop_remove_gold, "trp_player","$debt_to_merchants_guild"],
-                                                                [assign,"$debt_to_merchants_guild",0]]],
+# [anyone,"mayor_begin", [(ge, "$debt_to_merchants_guild", 50)],
+# "According to my accounts, you owe the merchants guild {reg1} RPs.\
+ # I'd better collect that now.", "merchant_ask_for_debts",[(assign,reg1,"$debt_to_merchants_guild")]],
+# [anyone|plyr,"merchant_ask_for_debts", [[store_troop_gold,reg5,"trp_player"],[ge,reg5,"$debt_to_merchants_guild"]],
+# "Alright. I'll pay my debt to you.", "merchant_debts_paid",[[troop_remove_gold, "trp_player","$debt_to_merchants_guild"],
+                                                                # [assign,"$debt_to_merchants_guild",0]]],
 
-[anyone, "merchant_debts_paid", [], "Excellent. I'll let my fellow merchants know that you are clear of any debts.", "mayor_pretalk",[]],
-[anyone|plyr, "merchant_ask_for_debts", [], "I'm afraid I can't pay that sum now.", "merchant_debts_not_paid",[]],
-[anyone, "merchant_debts_not_paid", [(assign,reg1,"$debt_to_merchants_guild")], "In that case, I am afraid, I can't deal with you. Guild rules... \
- Come back when you can pay the {reg1} RPs. \
- And know that we'll be charging an interest to your debt. \
- So the sooner you pay it, the better.", "close_window",[(call_script,"script_stand_back"),]],
+# [anyone, "merchant_debts_paid", [], "Excellent. I'll let my fellow merchants know that you are clear of any debts.", "mayor_pretalk",[]],
+# [anyone|plyr, "merchant_ask_for_debts", [], "I'm afraid I can't pay that sum now.", "merchant_debts_not_paid",[]],
+# [anyone, "merchant_debts_not_paid", [(assign,reg1,"$debt_to_merchants_guild")], "In that case, I am afraid, I can't deal with you. Guild rules... \
+ # Come back when you can pay the {reg1} RPs. \
+ # And know that we'll be charging an interest to your debt. \
+ # So the sooner you pay it, the better.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"mayor_begin", [], "What can I do for you?", "mayor_talk", []],
 [anyone,"mayor_friendly_pretalk", [], "Now... What else may I do for you?", "mayor_talk",[]],
@@ -7742,7 +7738,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 [anyone|plyr,"mayor_talk", [(store_partner_quest, ":partner_quest"),
                               (lt, ":partner_quest", 0),
                               (neq, "$merchant_quest_last_offerer", "$g_talk_troop")],
-"Do you happen to have a job for me?", "merchant_quest_requested",[
+"How can I serve our cause?", "merchant_quest_requested",[
      (assign,"$merchant_quest_last_offerer", "$g_talk_troop"),
      (call_script, "script_get_random_quest", "$g_talk_troop"),
      (assign, "$random_merchant_quest_no", reg0),
@@ -7761,7 +7757,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 
 [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
 "I am the guildmaster of {s9}. You can say I am in charge of everyday tasks here.\
- I can help you find a job if you are looking for something.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
+ There is always plenty of hairy problems to be solved, so if you can help let me know.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
 
 [anyone|plyr,"mayor_info_talk",[(eq, "$mayor_info_lord_told",0)], "Who rules this town?", "mayor_info_lord",[]],
 [anyone, "mayor_info_lord", [(party_get_slot, ":town_lord","$current_town",slot_town_lord),(str_store_troop_name, s10, ":town_lord")],
@@ -7781,7 +7777,7 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 
 
 [anyone,"merchant_quest_what_if_fail", [(store_partner_quest,":partner_quest"),(eq,":partner_quest","qst_deliver_wine")],
-   "I hope you don't fail. In that case, I'll have to ask for the price of the cargo you were carrying.", "mayor_pretalk",[]],
+   "I hope you don't fail. We cannot afford to lose the cargo you were carrying.", "mayor_pretalk",[]],
 [anyone,"merchant_quest_what_if_fail", [], "Well, just do your best to finish it.", "mayor_pretalk",[]],
 
 [anyone,"merchant_quest_taken", [], "Excellent. I am counting on you then. Good luck.", "mayor_pretalk",[]],
@@ -7850,7 +7846,7 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
  Sound like your kind of work?", "merchant_quest_looters_choice", []],
 
 [anyone|plyr,"merchant_quest_looters_choice", [], "Aye, I'll do it.", "merchant_quest_looters_brief", []],
-[anyone|plyr,"merchant_quest_looters_choice", [], "I'm afraid I can't take the job at the moment.", "merchant_quest_stall",[]],
+[anyone|plyr,"merchant_quest_looters_choice", [], "I'm afraid you have to find someone else for that.", "merchant_quest_stall",[]],
 
 [anyone,"merchant_quest_looters_brief", [
    (try_begin),
@@ -7888,7 +7884,7 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
 
   # deliver wine:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_wine"),], 
-"You're looking for a job?\
+"Thanks for offereing your help.\
  Actually I was looking for someone to deliver some {s4}.\
  Perhaps you can do that...", "merchant_quest_brief",
    [(quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
@@ -7896,10 +7892,10 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_wine")],
    "I have a cargo of {s6} that needs to be delivered to the {s10} in {s4}.\
- If you can take {reg5} units of {s6} to {s4} in {reg6} days, you may earn {reg8} RPs.\
- What do you say?", "merchant_quest_brief_deliver_wine",
+ We need {reg5} units of {s6} to reach {s4} before {reg6} days.\
+ Can you do that?" + promise_reg14_rp_of_s14, "merchant_quest_brief_deliver_wine",
    [(quest_get_slot, reg5, "qst_deliver_wine", slot_quest_target_amount),
-    (quest_get_slot, reg8, "qst_deliver_wine", slot_quest_gold_reward),
+    (quest_get_slot, reg14, "qst_deliver_wine", slot_quest_gold_reward),
     (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
     (quest_get_slot, ":quest_target_center", "qst_deliver_wine", slot_quest_target_center),
     (quest_get_slot, ":quest_target_troop", "qst_deliver_wine", slot_quest_target_troop),
@@ -7927,7 +7923,7 @@ Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_so
   
 # deliver_food:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], 
-"You're looking for a job?\
+"Thanks for offering your help.\
 Actually I was looking for someone to supply us with Food.\
 Perhaps you can do that...", "merchant_quest_brief",[]],
 
@@ -7948,7 +7944,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "Alright. I will find the food and bring it to you.", "merchant_quest_taken",[
     (call_script, "script_start_quest", "qst_deliver_food", "$g_talk_troop")]],
 
-[anyone|plyr,"merchant_quest_brief_deliver_food", [], "I am sorry, I'm too busy to carry around food.", "merchant_quest_stall",[]],
+[anyone|plyr,"merchant_quest_brief_deliver_food", [], "I am sorry, you'll need to find someone else for that.", "merchant_quest_stall",[]],
 
 # deliver_iron:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_iron"),
@@ -7995,17 +7991,18 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"merchant_quest_brief_deliver_iron", [], "I am too busy to deal with that.", "merchant_quest_stall",[]],
 
 #escort merchant caravan:
-[anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_escort_merchant_caravan")], "You're looking for a job?\
+[anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_escort_merchant_caravan")], "Thanks for offering your help.\
  Actually I was looking for someone to escort a supply train.\
  Perhaps you can do that...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq, "$random_merchant_quest_no", "qst_escort_merchant_caravan")],
 "I am going to send a supply train to {s8}.\
- However with all those enemy patrols on the roads, I don't want to send them out without an escort.\
- If you can lead that supply train to {s8} in 7 days, you will earn {reg8} RPs.\
- Of course your party needs to be at least {reg4} strong to offer them any protection.", "escort_merchant_caravan_quest_brief",
+ However with all those enemy patrols out there, I don't want to send them without an extra escort.\
+ A group at least {reg4} would offer them adequate protection.\
+ Can lead that supply train to {s8} in 7 days?"+promise_reg14_rp_of_s14
+ , "escort_merchant_caravan_quest_brief",
    [(quest_get_slot, reg8, "qst_escort_merchant_caravan", slot_quest_gold_reward),
-    (quest_get_slot, reg4, "qst_escort_merchant_caravan", slot_quest_target_amount),
+    (quest_get_slot, reg14, "qst_escort_merchant_caravan", slot_quest_target_amount),
     #(quest_get_slot, reg6, "qst_escort_merchant_caravan", slot_quest_expiration_days),
     (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
     (str_store_party_name, s8, ":quest_target_center")]],
@@ -8055,8 +8052,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                       (lt,":dist",4),
                       (quest_slot_eq, "qst_escort_merchant_caravan", slot_quest_current_state, 1)],
 "Well, we have almost reached {s21}. We can cover the rest of the way ourselves.\
- Here's your pay... {reg14} Resources.\
- Thanks for escorting us. Good luck.", "close_window",[
+ Thanks for escorting us. Good luck."+earned_reg14_rp_of_s14, "close_window",[
 		(call_script,"script_stand_back"),
 		(quest_get_slot, ":quest_target_party", "qst_escort_merchant_caravan", slot_quest_target_party),
 		(quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
@@ -8068,6 +8064,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 2),
 		(call_script, "script_finish_quest", "qst_escort_merchant_caravan", 100),
 		(assign, reg14, ":quest_gold_reward"),
+		(str_store_faction_name, s14, "$ambient_faction"),
 		(assign, "$g_leave_encounter", 1)]],
   
 [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),
@@ -8111,12 +8108,12 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
  If someone doesn't stop them soon, I would need to request serious military action...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no", "qst_troublesome_bandits")],
-  "I will pay you {reg8} RPs if you hunt down those troublesome goblins.\
+  "I need someone to hunt down those troublesome goblins.\
  It's dangerous work. But I believe that you are the one for it.\
- What do you say?", "troublesome_bandits_quest_brief",[(quest_get_slot, reg8, "qst_troublesome_bandits", slot_quest_gold_reward)]],
+ What do you say?"+promise_reg14_rp_of_s14, "troublesome_bandits_quest_brief",[(quest_get_slot, reg14, "qst_troublesome_bandits", slot_quest_gold_reward)]],
 
 [anyone|plyr,"troublesome_bandits_quest_brief", [],
-"Alright. I will hunt down those goblins.", "merchant_quest_taken_bandits",
+"Alright. I will hunt down the goblins.", "merchant_quest_taken_bandits",
    [(set_spawn_radius,7),
     (quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
     (spawn_around_party,":quest_giver_center","pt_troublesome_bandits"),
@@ -8179,15 +8176,15 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"merchant_quest_brief",[
     (eq,"$random_merchant_quest_no","qst_move_cattle_herd"),
-    (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
+    (quest_get_slot, reg14, "qst_move_cattle_herd", slot_quest_gold_reward),
     (quest_get_slot, reg6, "qst_move_cattle_herd", slot_quest_expiration_days),
     (quest_get_slot, ":target_center", "qst_move_cattle_herd", slot_quest_target_center),
     (str_store_party_name, s13, ":target_center")],
 "The group must arrive at {s13} within {reg6} days. Sooner is better, much better, \
  but it must be absolutely no later than {reg6} days. \
- If you can do that, I'd be willing to pay you {reg8} RPs for your trouble. Interested?", "move_cattle_herd_quest_brief",[]],
+ Can you can do that?"+promise_reg14_rp_of_s14, "move_cattle_herd_quest_brief",[]],
 
-#MV: remove when quest dialogs are done, or bugs are fixed   
+#MV: remove when quest dialogs are done, or bugs are fixed . No, DON'T REMOVE, ever (MT).
 [anyone,"merchant_quest_brief", [(str_store_quest_name,s4,"$random_merchant_quest_no")],
 "DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.", "mayor_pretalk",[]],
   
@@ -8221,7 +8218,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
      (setup_quest_text, "qst_move_cattle_herd"),
      (str_store_troop_name, s11, "$g_talk_troop"),
-     (str_store_string, s2, "@The {s11} of {s10} asked you to escort some {s12} to {s13}. You will earn {reg8} RPs in return."),
+     (str_store_string, s2, "@The {s11} of {s10} asked you to escort some {s12} to {s13}."),
      (call_script, "script_start_quest", "qst_move_cattle_herd", "$g_talk_troop")]],
 	 
 [anyone|plyr,"move_cattle_herd_quest_brief", [],"I am sorry, but no.", "merchant_quest_stall",[]],
@@ -8233,7 +8230,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ################################################# 
 #################### Random merchant quests end
 
-[anyone,"merchant_quest_requested", [], "I am afraid I can't offer you a job right now.", "mayor_pretalk",[]],
+[anyone,"merchant_quest_requested", [], "Thanks, commander, but we don't need anything else right now. I'll let you know.", "mayor_pretalk",[]],
 
 
 #Village elders
@@ -8389,87 +8386,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone ,"town_dweller_ask_fugitive", [],"Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.", "close_window",[(call_script,"script_stand_back"),]],
 
-# Ryan BEGIN
-  #[anyone|plyr,"town_dweller_talk",
-   # [
-     # (eq, 1, 0),
-     # (check_quest_active, "qst_meet_spy_in_enemy_town"),
-     # (neg|check_quest_succeeded, "qst_meet_spy_in_enemy_town"),
-     # (quest_slot_eq, "qst_meet_spy_in_enemy_town", slot_quest_target_center, "$current_town"),
-     # (str_store_item_name,s5,"$spy_item_worn"),
-     # ],
-   # "Pardon me, but is that a {s5} you're wearing?", "town_dweller_quest_meet_spy_in_enemy_town_ask_item",
-   # [
-     # ]],
-  #[anyone, "town_dweller_quest_meet_spy_in_enemy_town_ask_item", [
-     # (str_store_item_name,s5,"$spy_item_worn"),
-
-     # (try_begin),
-     # (troop_has_item_equipped,"$g_talk_troop","$spy_item_worn"),
-     # (str_store_string,s6,"@A {s5}? Well... Yes, I suppose it is. What a strange thing to ask."),
-     # (else_try),
-     # (str_store_string,s6,"@Eh? No, it most certainly is not a {s5}. I'd start questioning my eyesight if I were you."),
-     # (try_end),
-  # ],
-   # "{s6}", "town_dweller_talk",[]],
-
-  #[anyone|plyr|repeat_for_100,"town_dweller_talk",
-   # [
-     # (store_repeat_object,":object"),
-     # (lt,":object",4), # repeat only 4 times
-
-     # (check_quest_active, "qst_meet_spy_in_enemy_town"),
-     # (neg|check_quest_succeeded, "qst_meet_spy_in_enemy_town"),
-     # (quest_slot_eq, "qst_meet_spy_in_enemy_town", slot_quest_target_center, "$current_town"),
-
-     # (store_add,":string",":object","str_secret_sign_1"),
-     # (str_store_string, s4, ":string"),
-     # ],
-   # "{s4}", "town_dweller_quest_meet_spy_in_enemy_town",
-   # [
-     # (store_repeat_object,":object"),
-     # (assign, "$temp", ":object"),
-     # ]],
-
-  #[anyone ,"town_dweller_quest_meet_spy_in_enemy_town",
-   # [
-     # (call_script, "script_agent_get_town_walker_details", "$g_talk_agent"),
-     # (assign, ":walker_type", reg0),
-     # (eq, ":walker_type", walkert_spy),
-     # (quest_get_slot, ":secret_sign", "qst_meet_spy_in_enemy_town", slot_quest_target_amount),
-     # (val_sub, ":secret_sign", secret_signs_begin),
-     # (eq, ":secret_sign", "$temp"),
-     # (store_add, ":countersign", ":secret_sign", countersigns_begin),
-     # (str_store_string, s4, ":countersign"),
-     # ],
-   # "{s4}", "town_dweller_quest_meet_spy_in_enemy_town_know",[]],
-
-  #[anyone, "town_dweller_quest_meet_spy_in_enemy_town", [],
-   # "Eh? What kind of gibberish is that?", "town_dweller_quest_meet_spy_in_enemy_town_dont_know",[]],
-
-  #[anyone|plyr, "town_dweller_quest_meet_spy_in_enemy_town_dont_know", [],
-   # "Never mind.", "close_window",[]],
-
-  #[anyone|plyr, "town_dweller_quest_meet_spy_in_enemy_town_know", [
-     # (quest_get_slot, ":quest_giver", "qst_meet_spy_in_enemy_town", slot_quest_giver_troop),
-     # (str_store_troop_name, s4, ":quest_giver"),
-  # ],
-   # "{s4} sent me to collect your reports. Do you have them with you?", "town_dweller_quest_meet_spy_in_enemy_town_chat",[]],
-
-  #[anyone, "town_dweller_quest_meet_spy_in_enemy_town_chat", [
-     # (quest_get_slot, ":quest_giver", "qst_meet_spy_in_enemy_town", slot_quest_giver_troop),
-     # (str_store_troop_name, s4, ":quest_giver"),
-  # ],
-   # "I've been expecting you. Here they are, make sure they reach {s4} intact and without delay.", "town_dweller_quest_meet_spy_in_enemy_town_chat_2",[
-     # (call_script, "script_succeed_quest", "qst_meet_spy_in_enemy_town"),
-     # (call_script, "script_center_remove_walker_type_from_walkers", "$current_town", walkert_spy),
-   # ]],
-
-  #[anyone|plyr, "town_dweller_quest_meet_spy_in_enemy_town_chat_2", [],
-   # "Farewell.", "close_window",
-   # [
-     # ]],
-# Ryan END  
 
 [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_village),
                                      (eq, "$info_inquired", 0)], "What can you tell me about this village?", "town_dweller_ask_info",[(assign, "$info_inquired", 1)]],
@@ -8682,10 +8598,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
   
 [anyone,"member_chat_00", [
       (neg|troop_slot_eq, reg11, "$g_talk_troop", slot_troop_upkeep_not_paid,0), # if the troop wasn't paid last time, and it is on the leave
-     (store_partner_faction, reg10),
-    (str_store_faction_name, s12, reg10),
-	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0)],
-"It has been an honour to serve {s12} under your command, {sir/madam}.^^Now, as you know, I've been reassigned to home defence.^I shall soon leave.^^^[you will gain {reg15} Resource Pts. ({s12})]", 
+     (store_partner_faction, reg14),
+    (str_store_faction_name, s14, reg14),
+	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, reg14, reg0),],
+"It has been an honour to serve {s12} under your command, {sir/madam}.^^Now, as you know, I've been reassigned to home defence.^I shall soon leave."+promise_reg14_rp_of_s14, 
   "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"regular_member_talk", [
@@ -8707,16 +8623,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"regular_member_talk", [], "Nothing. Keep moving.", "close_window",[(call_script,"script_stand_back"),]],
   
 [anyone,"disband_regular_member_confirm", [
-	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),
-    (store_partner_faction, reg10),
-    (str_store_faction_name, s12, reg10)],
-"Shall I leave your command, and go back home to defend {s12}?^^[you will gain {reg15} Resource Pts ({s12})]", "disband_regular_member_confirm_yn",[]],
+	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, reg14, reg0),
+    (store_partner_faction, reg10),(str_store_faction_name, s14, reg10)],
+"Shall I leave your command, and go back home to defend my hometown?"+promise_reg14_rp_of_s14, "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"disband_regular_member_confirm_yn", [(str_store_troop_name_plural, s15,"$g_talk_troop")],
 "Yes, go there and wait further orders from {s12}. Good luck, soldier!", "close_window",[
 	(call_script,"script_stand_back"),
-	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),
-	(assign, ":gain", reg15),
+	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, ":gain", reg0),
     #(party_remove_members_wounded_first,"p_main_party","$g_talk_troop",1),
 	(remove_member_from_party,"$g_talk_troop"),
 	(store_partner_faction, reg10),
@@ -8908,20 +8822,20 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	 [  (gt, reg28, reg10),# player gave fittings too (party size decreased)
 	    (val_sub, reg28, reg10),(val_sub, reg28, 1), # calculate # of soldiers transferred -1
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),(val_sub, "$initial_party_value", reg0), # calculate value transferred
-		(str_store_faction_name, s22, "$g_encountered_party_faction"),
+		(str_store_faction_name, s14, "$g_encountered_party_faction"),
 		(str_clear, s31), (str_clear, s32),
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),
-		 (else_try),               (str_store_string, s32, "@^{s22} is grateful to you, {playername}, {s29}^"),
+		 (else_try),               (str_store_string, s32, "@^{s14} is grateful to you, {playername}, {s29}^"),
 		(try_end),
-		(assign, reg11, "$initial_party_value"),
+		(assign, reg14, "$initial_party_value"),
         (try_begin),(gt, reg46, 0),(str_store_string, s23, "@ ^Oh, and take back those who are not our people."), #if gave unfitting troops
 		 (else_try),               (str_store_string, s23, "str_empty_string"),
 		(try_end),
 		(try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^[earned {reg11} Res.Points of {s22}] {s23}"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32} {s23}"+earned_reg14_rp_of_s14),
         (else_try),
-          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^[earned {reg11} Res.Points of {s22}] {s23}"),
+          (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^{s23}"+earned_reg14_rp_of_s14),
         (try_end)],
 "{s4}", "party_reinforce_check_2", [(call_script, "script_add_faction_rps", "$g_encountered_party_faction", "$initial_party_value")]],
 

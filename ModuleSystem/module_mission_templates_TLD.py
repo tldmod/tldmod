@@ -1123,10 +1123,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(eq, "$tld_option_crossdressing", 0),
 	(get_player_agent_no, "$current_player_agent"),
 	(agent_get_horse,":mount","$current_player_agent"),
-    (troop_get_type, ":race", "$g_player_troop"),
 	(ge, ":mount", 0),
-	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
-	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
 	(agent_get_item_id,":mount_item", ":mount"),
 	
 	(try_begin), # lame horses can stall
@@ -1137,21 +1134,11 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
 		(display_message, "@Your mount stumbles! It seems to be lame.",color_bad_news),
 	(try_end),
-		
-	# (neq,":mount_item", "itm_warg_reward"),  ## reward warg can be rode by anyone
-	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
-	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
-	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
-	(try_end),
-#	(try_begin), (is_between, ":race"      , tf_orc_begin   , tf_orc_end   ),(assign, ":is_orc" , 1),(try_end),
-	(try_begin),(eq, ":race", tf_orc),                          (assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
-	 (else_try),(is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
-	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 3),
-	(try_end),
 	
-	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
-	(store_random_in_range, ":rand",0,100),
-	(ge, ":rand", 20),
+	(store_random_in_range, ":rand",0,100),(ge, ":rand", 20), # 20% of times...
+	
+	(call_script, "script_cf_player_cant_ride_item", ":mount_item"), 
+		
 	],[
 	(get_player_agent_no, ":player"),
 	(agent_get_horse,":mount",":player"),

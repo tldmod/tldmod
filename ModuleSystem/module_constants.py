@@ -31,6 +31,11 @@ race_names = (
  "@man","@woman","@gondor","@rohan","@dunlander","@orc","@urukhai", "@uruk","@haradrim","@dwarf","@troll","@dunedain","@lothlorien","@rivendell","@mirkwood","@evil_man",
 )
 
+not_enough_rp = "^^[not enought Resource Pts]"
+earned_reg14_rp_of_s14 = "^^[earned {reg14} Resource Pts of {s14}]"
+earned_reg14_times_reg15_rp_of_s14 = "^^[earned {reg14}x{reg15} Resource Pts of {s14}]"
+promise_reg14_rp_of_s14 = "^^[you will earn {reg14} Resource Pts of {s14}]"
+spend_reg14_inf_on_reg15 = " [{reg14}/{reg15} Influence Pts]"
 ## SUBFACTIONS INDICES
 ############
 
@@ -635,7 +640,7 @@ slot_troop_player_order_object  = 17
 slot_troop_rumor_check          = 18 # TLD if 1: troop already told player a rumor this day
 slot_troop_present_at_event    = 19
 slot_troop_does_not_give_quest = 20
-slot_troop_player_debt         = 21
+#@ slot_troop_player_debt         = 21   # NOT USED in TLD
 slot_troop_player_relation     = 22
 slot_companion_agent_id        = 23 #TLD, tracks companion agent in battle 
 slot_troop_last_quest          = 24
@@ -769,7 +774,7 @@ slot_troop_signup_response_1 = 112
 slot_troop_signup_response_2 = 113
 
 slot_troop_mentions_payment = 114
-slot_troop_payment_response = 115
+#slot_troop_payment_response = 115
 slot_troop_morality_speech   = 116
 slot_troop_2ary_morality_speech = 117
 slot_troop_personalityclash_speech = 118

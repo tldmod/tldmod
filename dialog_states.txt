@@ -155,9 +155,6 @@ lord_report_to_army_continue
 lord_mission_told_scout_waypoints
 lord_mission_told_scout_waypoints_accepted
 lord_mission_told_scout_waypoints_rejected
-lord_pay_debt_2
-lord_pay_debt_3_1
-lord_pay_debt_3_2
 lord_buy_prisoner
 lord_buy_prisoner_accept
 lord_buy_prisoner_deny
@@ -166,8 +163,6 @@ lord_lend_companion_end
 lord_message_delivered
 lord_message_delivered_enemy
 lord_active_mission_1
-lord_pay_mercenary
-lord_pay_mercenary_2
 lord_request_mission_ask
 find_lost_spears_permission
 find_lost_spears_permission_yes
@@ -187,12 +182,6 @@ lord_give_order_details_ask
 lord_give_order_stop
 lord_give_order_details
 lord_give_order_answer_2
-lord_give_order_call_to_arms_verify
-lord_give_order_call_to_arms_verify_2
-lord_give_order_call_to_arms
-lord_give_order_disband_army_verify
-lord_give_order_disband_army_2
-lord_give_order_disband_army
 lord_talk_ask_something
 lord_talk_ask_something_2
 lord_talk_ask_location
@@ -366,9 +355,6 @@ lord_mission_sorcerer_failed
 move_cattle_herd_failed
 move_cattle_herd_failed_2
 mayor_friendly_pretalk
-merchant_ask_for_debts
-merchant_debts_paid
-merchant_debts_not_paid
 mayor_info_begin
 merchant_quest_requested
 merchant_quest_last_offered_job
