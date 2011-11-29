@@ -223,7 +223,7 @@ mission_templates = [ # not used in game
 			(try_end),
 			(call_script, "script_init_town_walker_agents"),
 			(try_begin),(eq, "$sneaked_into_town", 1),(call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
-			 (else_try),                              (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+			 (else_try),                              (call_script, "script_music_set_situation_with_culture", mtf_sit_town), #MV: was mtf_sit_travel
 			(try_end),
 
 			(try_begin),
