@@ -1,4 +1,4 @@
-1015
+1016
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -159,14 +159,14 @@ qstr_{s0}^{reg3?{reg3}:}_ {s0}^{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_None None
 qstr_^None ^None
-qstr_nearby_the_Great_Eas nearby_the_Great_East_Road,_the_abandoned_old_road
-qstr_nearby_what_is_left_ nearby_what_is_left_of_the_Old_Forest_Road,_the_anjcient_dwarven_path_that_used_to_cross_the_thick_forest
-qstr_in_proximity_of_the_ in_proximity_of_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc
+qstr_near_the_Great_East_ near_the_Great_East_Road,_the_abandoned_old_road
+qstr_near_what_is_left_of near_what_is_left_of_the_Old_Forest_Road,_the_ancient_dwarven_path_that_used_to_cross_the_thick_forest
+qstr_close_to_the_Hand_sh close_to_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc
 qstr_in_sight_of_the_maje in_sight_of_the_majestic_City_Walls_of_Minas_Tirith,_the_White_City
 qstr_in_sight_of_the_dark in_sight_of_the_dark_Tower_of_Orthanc
-qstr_nearby_the_Old_Ford_ nearby_the_Old_Ford,_where_the_Old_Forest_Road_crosses_the_River_Anduin
-qstr_nearby_a_big_ford_cr nearby_a_big_ford_crossing_the_River_{s15}
-qstr_nearby_a_small_ford_ nearby_a_small_ford_crossing_the_River_{s15}
+qstr_near_the_Old_Ford_wh near_the_Old_Ford,_where_the_Old_Forest_Road_crosses_the_River_Anduin
+qstr_near_a_big_ford_cros near_a_big_ford_crossing_the_River_{s15}
+qstr_near_a_small_ford_cr near_a_small_ford_crossing_the_River_{s15}
 qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
@@ -431,7 +431,7 @@ qstr_You_were_grievously_wo You_were_grievously_wounded_in_battle._Your_men_mana
 qstr_Some_of_your_compani Some_of_your_companions_are_suffering_from_old_wounds.
 qstr_Item_you_just_equipp Item_you_just_equipped_does_not_fit_characters_of_this_race_and_will_be_removed_into_player_inventory_shortly^^Make_sure_your_equipment_has_space_for_the_item,_or_it_will_be_lost
 qstr_Inappropriate_equipm Inappropriate_equipment
-qstr_Mount_you_just_equip Mount_you_just_equipped_does_not_fit_characters_of_this_race._Be_warned_that_there_will_be_problems_with_the_animal_behaviour_on_the_battlefield,_if_you_leave_it_as_this
+qstr_The_mount_you_just_e The_mount_you_just_equipped_does_not_fit_characters_of_this_race._Be_warned_that_there_will_be_problems_with_the_animal_behaviour_on_the_battlefield,_if_you_leave_it_as_this
 qstr_Inappropriate_mount Inappropriate_mount
 qstr_{s24}:_Some_of_your_ {s24}:_Some_of_your_wounds_healed!
 qstr_{s24}:_Your_infantry {s24}:_Your_infantry_feels_better!
@@ -547,7 +547,7 @@ qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photo
 qstr_Press_Space_to_conti Press_Space_to_continue...
 qstr_{s24}__{reg13}_ {s24}_({reg13})
 qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})
-qstr_Resource_Pts:^_{reg1 Resource_Pts:^_{reg12}_(in_{s16})
+qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})
 qstr_{s11}_{s24}__{reg13} {s11},_{s24}_({reg13})
 qstr_{s13}_{reg11}__with_ {s13},_{reg11}_(with_{s16})
 qstr_{s15}_{reg12}__in_{s {s15},_{reg12}_(in_{s16})
@@ -583,9 +583,10 @@ qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
 qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
-qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_pts_({reg5})
+qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_points_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
-qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^Orc_hiring_bonus:_+2/3_for_each_orc^TOTAL:__{reg5}
+qstr_Orc_hiring_bonus:_+2 Orc_hiring_bonus:_+2/3_for_each_orc^
+qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^{s5}TOTAL:__{reg5}
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr__________Faction_str _________Faction_strengths_report:^{s2}
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
@@ -754,7 +755,7 @@ qstr_Luckily_some_passing Luckily_some_passing_locals_found_you_lying_in_the_dit
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
 qstr_the_castle the_castle
-qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_pts._per_night)
+qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_Time_passes... Time_passes...
@@ -792,7 +793,7 @@ qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_{s1}_from_{s2} {s1}_from_{s2}
-qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.______________________________________________________________________________________________________________________(the_Resource_Pts._which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
+qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.______________________________________________________________________________________________________________________(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
 qstr_You_came_into_a_poss You_came_into_a_possession_of_a_strange,_oversized_bowl_of_fresh-looking_water._It_smells_a_little_like_musk.
 qstr_Obtained:_Ent_water. Obtained:_Ent_water.
@@ -814,7 +815,7 @@ qstr_Your_companions__mor Your_companions'_morale_has_risen_from_hatred.
 qstr_Your_companions__mora Your_companions'_morale_has_dropped_from_fear.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
-qstr_You_failed_to_fulfil You_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_hero_death!
+qstr_You_failed_to_fulfil You_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
 qstr_You_fulfilled_your_o You_fulfilled_your_oath_of_vengeance_for_{s1}'s_hero_death!
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
@@ -877,8 +878,8 @@ qstr_The_more_you_capture The_more_you_capture,_the_better,_{s23}.
 qstr_Caught_a_few_straggl Caught_a_few_stragglers,_{s23}?
 qstr_I_am_sorry_no_one_el I_am_sorry,_no_one_else_is_ready_to_go.^They_will_serve_{s22}_by_holding_the_defences_here.
 qstr_Tough_luck_but_we_do Tough_luck,_but_we_don't_have_any._Come_back_later.
-qstr_There_are_brave_sold There_are_brave_soldiers_willing_to_risk_their_life,_but_in_these_dark_times_I_cannot_afford_to_let_them_leave_the_defences_here.^^^[not_enought_Resource_Pts]
-qstr_We_have_some_spare_t We_have_some_spare_troops,_but_we_can't_afford_to_lose_them_to_the_likes_of_you.^^^[not_enought_Resource_Pts]
+qstr_There_are_brave_sold There_are_brave_soldiers_willing_to_risk_their_life,_but_in_these_dark_times_I_cannot_afford_to_let_them_leave_the_defences_here.^^^[not_enough_Resource_Points]
+qstr_We_have_some_spare_t We_have_some_spare_troops,_but_we_can't_afford_to_lose_them_to_the_likes_of_you.^^^[not_enough_Resource_Points]
 qstr_There_are_brave_soldi There_are_brave_soldiers_here_volunteering_for_field_duty.^^I_think_I_can_let_a_few_of_them_go_with_you.
 qstr_There_are_spare_troo There_are_spare_troops_here_that_wouldn't_mind_a_little_blood-letting.^^I_can_let_a_few_of_them_go_with_you.
 qstr_Strenghten_defences_ Strenghten_defences_in_{s21}?_This_is_surely_welcome._Note_that_we_can_only_accept_our_own_people.
@@ -887,8 +888,8 @@ qstr_Please_return_them_i Please_return_them_in_one_piece._I_personally_know_the
 qstr_Don_t_let_them_all_d Don't_let_them_all_die_in_one_place._Except_the_cowards._Put_those_in_your_front_ranks,_you_know_the_drill_by_now.
 qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
-qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^^[earned_{reg14}_Resource_Pts_of_{s14}]
-qstr_{s31}{reg28?Those:Tha {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_hold_{s21}.{s32}^^[earned_{reg14}_Resource_Pts_of_{s14}]
+qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s31}{reg28?Those:Tha {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_hold_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s4}_^Oh_and_take_ba {s4}_^Oh,_and_take_back_those_of_your_soldiers,_that_are_not_our_kin.
 qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
@@ -916,8 +917,8 @@ qstr_Give_me_that!_Hrmph!_ Give_me_that!_Hrmph!_You_are_a_useful_servant_to_your
 qstr_Do_you_need_reinforc Do_you_need_reinforcements?
 qstr_You_don_t_look_too_s You_don't_look_too_strong,_do_you_need_troops?
 qstr_^{s14}_is_grateful_t ^{s14}_is_grateful_to_you,_{playername},_{s29}^
-qstr_{s31}{reg28?Those:That {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^^[earned_{reg14}_Resource_Pts_of_{s14}]
-qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^^[earned_{reg14}_Resource_Pts_of_{s14}]
+qstr_{s31}{reg28?Those:That {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
 qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
@@ -985,7 +986,7 @@ qstr_{s1}_Refugees {s1}_Refugees
 qstr_{s1}_Slaves {s1}_Slaves
 qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_{s12}_to_{s13}.
 qstr__Guards_slaughter_hi _Guards,_slaughter_him!
-qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat_!
+qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat!
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_you_of_course,_my_{lord/lady}.
 qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
@@ -1010,7 +1011,7 @@ qstr_Greetings_do_you_nee Greetings,_do_you_need_reinforcements?
 qstr_Goodbye_friends. Goodbye,_friends.
 qstr_See_you_later_if_you See_you_later_if_you_don't_get_killed.
 qstr__^Oh_and_take_back_t _^Oh,_and_take_back_those_who_are_not_our_people.
-qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}_{s23}^^[earned_{reg14}_Resource_Pts_of_{s14}]
-qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Pts_of_{s14}]
+qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}_{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
 qstr_Try_not_getting_your Try_not_getting_yourself_killed.
