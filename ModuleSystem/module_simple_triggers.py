@@ -331,7 +331,7 @@ simple_triggers = [
       (try_end),
     #TLD, grow faction strength with time from center income
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
-	     (faction_slot_ge,":faction_no",slot_faction_strength,1),
+	     (faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_dying), #was 1: no annoying regen for dying factions (<300)
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
          (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain), #debug
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
@@ -340,14 +340,13 @@ simple_triggers = [
 		   (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
            (store_faction_of_party, ":center_faction", ":center_no"),
            (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
-           (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
            (try_begin),
              (eq, "$tld_war_began", 0),
              (val_div, ":strength_income", 2), #halve income before the War
              (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
-             (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it increments of 5
+             (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
            (try_end),
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
@@ -370,21 +369,22 @@ simple_triggers = [
 # (23) Process sieges
 (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end)]),
 
-# (24) Changing readiness to join army
+# (24) Changing readiness to join army - MV: might remove all "readiness" calculations (including this trigger), so we have maximum lord participation in campaigns
 (10,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":modifier", 1),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (try_begin),
           (gt, ":party_no", 0),
-          (party_is_active,":party_no"),
+          (party_is_active, ":party_no"),
           (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
           (ge, ":commander_party", 0),
+          (party_is_active, ":commander_party"),
           (store_faction_of_party, ":faction_no", ":party_no"),
           (faction_get_slot, ":faction_marshall", ":faction_no", slot_faction_marshall),
           (ge, ":faction_marshall", 0),
           (troop_get_slot, ":marshall_party", ":faction_marshall", slot_troop_leaded_party),
           (eq, ":commander_party", ":marshall_party"),
-          (assign, ":modifier", -1),
+          (assign, ":modifier", 0), #MV: was -1, no readiness decrease when on campaign ("weariness")
         (try_end),
         (troop_get_slot, ":readiness", ":troop_no", slot_troop_readiness_to_join_army),
         (val_add, ":readiness", ":modifier"),
@@ -433,6 +433,7 @@ simple_triggers = [
         (gt, ":besieger_party", 0),
         (party_is_active, ":besieger_party"),
         (store_faction_of_party, ":besieger_faction", ":besieger_party"),
+        (store_faction_of_party, ":center_faction", ":center_no"),
         (party_slot_ge, ":center_no", slot_center_is_besieged_by, 1),
         (party_get_slot, ":siege_begin_hours", ":center_no", slot_center_siege_begin_hours),
         (store_sub, ":siege_begin_hours", ":cur_hours", ":siege_begin_hours"),
@@ -498,15 +499,19 @@ simple_triggers = [
           (try_end),
           (store_mul, ":strength_ratio", ":attacker_strength", 100),
           (val_div, ":strength_ratio", ":defender_strength"),
-          (store_sub, ":random_up_limit", ":strength_ratio", 300),
+          (store_sub, ":random_up_limit", ":strength_ratio", 200),
           (try_begin),
-            (gt, ":random_up_limit", -100), #never attack if the strength ratio is less than 200%
+            (neg|faction_slot_ge, ":center_faction", slot_faction_strength, fac_str_very_weak),
+            (val_max, ":random_up_limit", 0), #MV: if the defending faction is on its knees, even a suicidal siege attack is welcome, as it will lower the garrison and defending lord strength for the next siege; but mostly we hope that the player will intervene and win
+          (try_end),
+          (try_begin),
+            (gt, ":random_up_limit", -100), #never attack if the strength ratio is less than 1:1 (was 2:1)
             (store_div, ":siege_begin_hours_effect", ":siege_begin_hours", 3),
             (val_add, ":random_up_limit", ":siege_begin_hours_effect"),
           (try_end),
           (val_div, ":random_up_limit", 5),
           (val_max, ":random_up_limit", 0),
-          (store_sub, ":random_down_limit", 200, ":strength_ratio"),
+          (store_sub, ":random_down_limit", 100, ":strength_ratio"), #was 200, less siege retreats now
           (val_max, ":random_down_limit", 0),
           (try_begin),
             (store_random_in_range, ":rand", 0, 100),

@@ -262,7 +262,7 @@ game_menus = [
 	(call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg13),
 	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
-	(str_store_string, s15, "@Resource Pts:^ {reg12} (in {s16})"),  # first rp
+	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})"),  # first rp
 
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
 		(neg|eq,"$players_kingdom", ":fac"),
@@ -1389,7 +1389,7 @@ game_menus = [
         (gt, reg4, 0),
         (str_store_faction_name, s4, ":faction_no"),
         (faction_get_slot, reg5, ":faction_no", slot_faction_respoint),
-        (str_store_string, s12, "@{s12}^  {s4}: {reg4} Resource pts ({reg5})"),
+        (str_store_string, s12, "@{s12}^  {s4}: {reg4} Resource points ({reg5})"),
       (try_end),
 	(else_try),
 	  (str_store_string, s12, "@No upkeep costs"),
@@ -1435,7 +1435,12 @@ game_menus = [
     (assign, reg2, ":charisma"),
     (assign, reg3, ":ranks"),
     # (assign, reg3, ":renown"),
-    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^Orc hiring bonus: +2/3 for each orc^TOTAL:  {reg5}"),
+    (str_clear, s5),
+    (try_begin),
+      (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@Orc hiring bonus: +2/3 for each orc^"),
+    (try_end),
+    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}"),
 #    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^TOTAL:  {reg5}"),
 #    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Renown: {s4}{reg3}^TOTAL:  {reg5}"),
     ],

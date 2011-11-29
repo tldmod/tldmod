@@ -4314,13 +4314,13 @@ scripts = [
         (this_or_next|neg|troop_is_hero, ":stack_troop"),
         (eq, "$g_move_heroes", 1),
         (troop_get_type,":race",":stack_troop"),
-        (neg|eq,":race",tf_orc),        ## TLD good guys finish all orcs, evil guys finish all elves, GA
-        (neg|eq,":race",tf_uruk),
-        (neg|eq,":race",tf_urukhai),
-        (neg|eq,":race",tf_troll),
-        (neg|eq,":race",tf_lorien),
-        (neg|eq,":race",tf_imladris),
-        (neg|eq,":race",tf_woodelf),
+        (neq,":race",tf_orc),        ## TLD good guys finish all orcs, evil guys finish all elves, GA
+        (neq,":race",tf_uruk),
+        (neq,":race",tf_urukhai),
+        (neq,":race",tf_troll),
+        (neq,":race",tf_lorien),
+        (neq,":race",tf_imladris),
+        (neq,":race",tf_woodelf),
         (party_stack_get_size, ":stack_size",":source_party",":stack_no"),
         (party_add_prisoners, ":target_party", ":stack_troop", ":stack_size"),
       (try_end),
@@ -5542,7 +5542,7 @@ scripts = [
 
         (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
-		#(assign, ":quest_no", "qst_capture_troll"),
+		#(assign, ":quest_no", "qst_escort_merchant_caravan"),
 #mtarini: ok, ok, so we put in a menu:
 		(try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
 		
@@ -6602,13 +6602,13 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_capture_prisoners"),
           (try_begin),
-            #(eq, "$players_kingdom", ":giver_faction_no"),
-            #(call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
-            #(assign, ":cur_target_faction", reg0),
-            #(store_add, ":max_tier_no", slot_faction_tier_5_troop, 1),
-            #(store_random_in_range, ":random_tier_no", slot_faction_tier_2_troop, ":max_tier_no"),
-            #(faction_get_slot, ":cur_target_troop", ":cur_target_faction", ":random_tier_no"),
-            #(gt, ":cur_target_troop", 0),
+            #not given by factions that have only elven or orcish enemies in the initial theatre, since elves and orcs can't be taken prisoner
+            # central theater - no mercy there 
+            (neq, ":giver_faction_no", "fac_moria"),
+            (neq, ":giver_faction_no", "fac_guldur"),
+            (neq, ":giver_faction_no", "fac_lorien"),
+            (neq, ":giver_faction_no", "fac_imladris"),
+
             (store_character_level, ":quest_target_amount", "trp_player"),
             (gt, ":quest_target_amount", 5),
             (val_clamp, ":quest_target_amount", 6, 31),

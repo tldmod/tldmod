@@ -200,8 +200,9 @@ ai_scripts = [
 #         (this_or_next|lt, ":offensive_hours", 60),
 #         (lt, ":faction_marshall_num_followers", 4),
         #TLD: not many hosts in TLD
-            (lt, ":offensive_hours", 60),
-         (assign, ":chance_gathering_army", 300), #was 3000, caused too much waiting
+         (lt, ":offensive_hours", 48), #wait for lords for two days max
+         (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
+         (assign, ":chance_gathering_army", 300), #was 3000, caused too much waiting when there were other interesting opportunities
        (try_end),
 ## Attacking center
        (try_begin),
@@ -235,6 +236,11 @@ ai_scripts = [
            (this_or_next|lt, ":center_faction_strength", fac_str_very_weak),
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
            (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
+
+           #MV: a small, 10% chance to ignore the center, to add variety to sieging targets
+           (store_random_in_range, ":random_ignore", 0, 100),
+           (this_or_next|lt, ":random_ignore", 90),
+           (eq, ":old_target_attacking_center", ":enemy_walled_center"), #don't ignore if we are currently sieging it
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
            (assign, ":besieger_own_faction", 0),
@@ -275,18 +281,9 @@ ai_scripts = [
 #MV test code end
            (store_mul, ":center_score", 1000, ":faction_marshall_army_strength"),
            (val_div, ":center_score", ":center_str"),
+           (this_or_next|lt, ":center_faction_strength", fac_str_very_weak), #attack very weak factions regardless of odds (not too smart, but hopefully the player will help out)
            (gt, ":center_score", 1200), #siege attacks more likely with worse odds (down to +20% advantage), was 1500 (+50%)
            (val_min, ":center_score", 20000),#20 times stronger means an easy victory, distance is more important
-           (try_begin),
-             (party_slot_eq, ":enemy_walled_center", slot_town_lord, "trp_player"),
-             (call_script, "script_troop_get_player_relation", ":faction_marshall"),
-             (assign, ":player_relation", reg0),
-             #(troop_get_slot, ":player_relation", ":faction_marshall", slot_troop_player_relation),
-             (lt, ":player_relation", 0),
-             (store_sub, ":multiplier", 50, ":player_relation"),
-             (val_mul, ":center_score", ":multiplier"),
-             (val_div, ":center_score", 50),
-           (try_end),
            (try_begin),
              (party_slot_eq, ":enemy_walled_center", slot_center_original_faction, ":faction_no"),
              (val_mul, ":center_score", 2),
@@ -353,8 +350,7 @@ ai_scripts = [
            (store_troop_faction, ":cur_kingdom_marshall_faction", ":cur_kingdom_marshall"),
            (store_relation, ":rel", ":cur_kingdom_marshall_faction", ":faction_no"),
            (lt, ":rel", 0),
-           (this_or_next|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center),
-           (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_raiding_village),
+           (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center),
            (party_get_slot, ":cur_kingdom_marshall_party_follower_strength", ":cur_kingdom_marshall_party", slot_party_follower_strength),
            (party_get_slot, ":cur_kingdom_marshall_party_strength", ":cur_kingdom_marshall_party", slot_party_cached_strength),
            (val_add, ":cur_kingdom_marshall_party_strength", ":cur_kingdom_marshall_party_follower_strength"),
@@ -369,9 +365,6 @@ ai_scripts = [
            (try_begin),
              (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center),
              (val_mul, ":attack_army_score", 10),
-           (else_try),
-             (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_raiding_village),
-             (val_mul, ":attack_army_score", 3),
            (try_end),
            (try_begin),
              (eq, ":old_target_attacking_enemy_army", ":cur_kingdom_marshall_party"),
@@ -401,10 +394,10 @@ ai_scripts = [
          (val_mul, ":chance_attacking_enemy_army", ":offensive_rating"),
          (val_div, ":chance_attacking_enemy_army", 100),
        (try_end),
-#Attacking enemies around center
+#Attacking enemies around center (defensive patrols)
        (try_begin),
-         (gt, ":faction_strength", fac_str_weak), #TLD
-         (neq, ":old_faction_ai_state", sfai_default),
+         (gt, ":faction_strength", fac_str_very_weak), #TLD: was fac_str_weak - more defensive patrols by weak factions
+         #(neq, ":old_faction_ai_state", sfai_default), #MV: allow switching from defense to defensive patrols
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_enemies_around_center", -1),
          (try_begin),
@@ -434,7 +427,9 @@ ai_scripts = [
              (gt, ":attack_army_score", 850),
              (store_sub, ":attack_army_score", 1700, ":attack_army_score"),
            (try_end),
-           (gt, ":attack_army_score", 0),
+           (this_or_next|gt, ":attack_army_score", 0),
+           (eq, ":center_faction", ":faction_no"),
+           (val_max, ":attack_army_score", 1), #MV: always some small chance of patrol around home towns
            (val_mul, ":attack_army_score", 4),
            (try_begin),
              # (party_slot_eq, ":center_no", slot_party_type, spt_village),
@@ -1056,12 +1051,12 @@ ai_scripts = [
 
             (try_begin),
               (eq, ":continue", 1),
-              (store_distance_to_party_from_party, ":dist", ":faction_marshall_party", ":party_no"),
-              (store_sub, ":chance", 120, ":dist"),
-  ##            (val_mul, ":chance", 3),
-  ##            (val_div, ":chance", 2),
-              (val_min, ":chance", 100),
-              (val_max, ":chance", 20),
+              # (store_distance_to_party_from_party, ":dist", ":faction_marshall_party", ":party_no"),
+              # (store_sub, ":chance", 120, ":dist"),
+  # ##            (val_mul, ":chance", 3),
+  # ##            (val_div, ":chance", 2),
+              # (val_min, ":chance", 100),
+              # (val_max, ":chance", 20),
 #MV              (store_sub, ":faction_advantage_effect", "$g_average_center_value_per_faction", ":faction_center_value"),
 #              (val_mul, ":faction_advantage_effect", 2),
 #              (val_add, ":chance", ":faction_advantage_effect"),
@@ -1115,7 +1110,7 @@ ai_scripts = [
             (assign, ":old_target_to_follow_other_party", ":commander_party"),
           (try_end),
 
-          (troop_get_slot, ":hero_renown", ":troop_no", slot_troop_renown),
+          #(troop_get_slot, ":hero_renown", ":troop_no", slot_troop_renown), #MV: no renown influence on following marshalls
           (assign, ":num_available_to_follow", 0),
           (try_begin),
             (eq, "p_main_party", ":old_target_to_follow_other_party"),
@@ -1129,11 +1124,12 @@ ai_scripts = [
             (eq, ":troop_faction", ":faction_no"),
             (troop_get_slot, ":other_party", ":other_hero", slot_troop_leaded_party),
             (ge, ":other_party", 0),
-            (troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
-            (lt, ":hero_renown", ":other_hero_renown"),
+            #(troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
+            #(lt, ":hero_renown", ":other_hero_renown"),
             (neg|party_slot_ge, ":other_party", slot_party_commander_party, 0), #other party is not under command itself.
-            (store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
-            (lt, ":dist", 25),
+            #MV: disregard distance when deciding to follow - our map is too large for that kind of finesse, and we have too few lords per faction
+            # (store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
+            # (lt, ":dist", 100), #was 25
             (party_slot_eq, ":other_party", slot_party_follow_me, 1),
             (val_add, ":num_available_to_follow", 1),
             (eq, ":other_party", ":old_target_to_follow_other_party"),
@@ -1166,11 +1162,11 @@ ai_scripts = [
             (eq, ":troop_faction", ":faction_no"),
             (troop_get_slot, ":other_party", ":other_hero", slot_troop_leaded_party),
             (ge, ":other_party", 0),
-            (troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
-            (lt, ":hero_renown", ":other_hero_renown"),
+            #(troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
+            #(lt, ":hero_renown", ":other_hero_renown"),
             (neg|party_slot_ge, ":other_party", slot_party_commander_party, 0), #other party is not under command itself.
-            (store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
-            (lt, ":dist", 25),
+            #(store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
+            #(lt, ":dist", 25),
             (party_slot_eq, ":other_party", slot_party_follow_me, 1),
             (val_sub, ":random_party_to_follow", 1),
             (try_begin),
