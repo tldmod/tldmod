@@ -842,10 +842,8 @@ dialogs = [
       (assign, ":rank_points_needed", reg0),
       (faction_get_slot, ":rank_points_held", "$g_talk_troop_faction", slot_faction_rank),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s29, s24), #to s29
-      # a little hackery to determine needed rank title
-      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_needed"),
-      (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), #to s24
-      (faction_set_slot, "$g_talk_troop_faction", slot_faction_rank, ":rank_points_held"), #end vile hackery
+      # determine needed rank title
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", ":rank_needed"), #to s24
       (store_sub, reg3, ":rank_points_needed", ":rank_points_held"), # reg3: how many more rank points are needed to recruit
       (gt, reg3, 0)], # not enough?
 "It seems that you are not esteemed enough by my people, {playername}. \
@@ -3361,9 +3359,121 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone|plyr,"lord_get_reward_item", [], "Never mind then.", "lord_pretalk", []],
 [anyone,"lord_get_reward_item_answer", [], "Very well. May you use it to vanquish our enemies.", "lord_pretalk", []],
 
-     
+# TLD: give siege (and other?) suggestions to marshalls (MV)
 
-# TLD: give orders to lords
+[anyone|plyr, "lord_talk",
+   [
+     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"), #only with marshalls
+     (ge, "$tld_war_began", 1),
+   ],
+"I would like to have a council with you about the War.", "marshall_ask",[]],
+
+[anyone, "marshall_ask", [ #insufficient rank
+      (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+      (lt, ":rank", 9),
+      (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 9), #to s24 (highest rank)
+   ], "I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.", "lord_pretalk",[]],
+[anyone, "marshall_ask", [ #insufficient influence
+     (assign, ":siege_command_cost", tld_command_cost_siege),
+     (try_begin),
+       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+       (val_mul, ":siege_command_cost", 2),
+       (val_div, ":siege_command_cost", 3), # 33 for tld_command_cost_siege=50
+     (try_end),
+     (faction_get_slot, reg14, "$g_talk_troop_faction", slot_faction_influence),
+     (lt, reg14, ":siege_command_cost"),
+     (assign, reg15, ":siege_command_cost"),
+   ], "You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]", "lord_pretalk",[]],
+[anyone, "marshall_ask", [ #insufficient faction strength
+     (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_strength, fac_str_ok),
+     (call_script, "script_faction_strength_string_to_s23", "$g_talk_troop_faction"),     
+   ], "We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.", "lord_pretalk",[]],
+[anyone, "marshall_ask", [ #busy campaigning
+     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_default), #not on campaign
+     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_gathering_army), #not gathering army
+   ], "We are on a campaign, {playername}, your advice would have to wait.", "lord_pretalk",[]],
+[anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
+
+[anyone|plyr|repeat_for_parties, "marshall_suggest",
+   [ (store_repeat_object, ":party_no"),
+     (party_is_active, ":party_no"), #TLD
+     #conditions for sieging (see also script_decide_faction_ai)
+     (party_slot_eq, ":party_no", slot_center_destroyed, 0), #not destroyed
+     (party_slot_eq, ":party_no", slot_party_type, spt_town), #a town
+     (party_slot_eq, ":party_no", slot_center_is_besieged_by, -1), #not under siege
+     
+     (store_faction_of_party, ":enemy_faction", ":party_no"),
+     (store_relation, ":relation", ":enemy_faction", "$g_talk_troop_faction"),
+     (lt, ":relation", 0), #an enemy town
+
+     (faction_get_slot, ":lord_theater", "$g_talk_troop_faction", slot_faction_active_theater),
+     (party_slot_eq, ":party_no", slot_center_theater, ":lord_theater"), # an enemy town in active theater
+     
+     (party_get_slot, ":siegable", ":party_no", slot_center_siegability),
+     (neq, ":siegable", tld_siegable_never), #some places are never siegable
+     
+     #make sure the enemy faction is weak enough to be sieged
+     (faction_get_slot, ":enemy_faction_strength", ":enemy_faction", slot_faction_strength),       
+     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+     (lt, ":enemy_faction_strength", fac_str_weak), # otherwise, defenders need to be weak
+     #if it's a faction capital, the enemy needs to be very weak
+     (this_or_next|lt, ":enemy_faction_strength", fac_str_very_weak),
+     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+     (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
+
+     #end siege conditions
+     (str_store_party_name, s1, ":party_no")],
+   "We should ride to besiege {s1} at once.", "marshall_answer",[(store_repeat_object, "$temp")]],
+[anyone|plyr, "marshall_suggest", [], "Never mind, I trust your judgement.", "lord_pretalk",[]],
+
+[anyone, "marshall_answer", [],
+   "Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!", "close_window",
+   [
+     (assign, ":siege_target", "$temp"),
+     #faction AI
+     (faction_set_slot, "$g_talk_troop_faction", slot_faction_ai_state, sfai_attacking_center),
+     (faction_set_slot, "$g_talk_troop_faction", slot_faction_ai_object, ":siege_target"),
+     
+     #marshall party AI
+     (troop_get_slot, ":marshall_party", "$g_talk_troop", slot_troop_leaded_party),
+     (call_script, "script_party_set_ai_state", ":marshall_party", spai_besieging_center, ":siege_target"),
+     (party_set_ai_initiative, ":marshall_party", 0), #no chasing around
+     (party_set_slot, ":marshall_party", slot_party_commander_party, -1),
+     
+     #make all available faction hosts follow
+     (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+       (troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
+       (neg|troop_slot_ge, ":lord", slot_troop_prisoner_of_party, 0),
+       (store_troop_faction, ":lord_faction", ":lord"),
+       (eq, ":lord_faction", "$g_talk_troop_faction"),
+       (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+       (gt, ":lord_party", 0),
+       (party_is_active, ":lord_party"),
+       (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, ":lord"), #skip kings and marshalls
+       (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, ":lord"),
+       #(party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party), #intentionally not a condition, for fun
+       
+       #now, just follow and shut up
+       (party_set_slot, ":lord_party", slot_party_commander_party, ":marshall_party"),
+       (call_script, "script_party_set_ai_state", ":lord_party", spai_accompanying_army, ":marshall_party"),
+       (party_set_ai_initiative, ":lord_party", 10), #don't react to random enemies much
+     (try_end),
+
+     #deduct influence cost
+     (assign, ":siege_command_cost", tld_command_cost_siege),
+     (try_begin),
+       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+       (val_mul, ":siege_command_cost", 2),
+       (val_div, ":siege_command_cost", 3), # 33 for tld_command_cost_siege=50
+     (try_end),
+     (call_script, "script_spend_influence_of", ":siege_command_cost", "$g_talk_troop_faction"),
+     
+     (str_store_party_name, s4, ":siege_target"),    
+   ]],
+
+   
+# TLD: give orders to lords (MV)
 
 [anyone|plyr,"lord_talk",
    [ # TLD: give orders if you have some minimum faction influence
@@ -3718,9 +3828,9 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 
 [anyone,"lord_talk_ask_about_war_details", [],
 "We are {s22} and they are {s23}. Overall, {s9}.", "lord_talk_ask_about_war_2",[
-	(call_script, "script_faction_strength_string", "$g_encountered_party_faction"),
+	(call_script, "script_faction_strength_string_to_s23", "$g_encountered_party_faction"),
 	(str_store_string_reg, s22, s23),
-	(call_script, "script_faction_strength_string", "$faction_requested_to_learn_more_details_about_the_war_against"),
+	(call_script, "script_faction_strength_string_to_s23", "$faction_requested_to_learn_more_details_about_the_war_against"),
 	(faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
 	(try_begin),
 	  (faction_slot_eq, "$faction_requested_to_learn_more_details_about_the_war_against", slot_faction_active_theater, ":faction_theater"),

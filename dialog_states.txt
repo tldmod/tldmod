@@ -175,6 +175,9 @@ lord_give_troops_check_2
 lord_get_reward_item_ask
 lord_get_reward_item
 lord_get_reward_item_answer
+marshall_ask
+marshall_suggest
+marshall_answer
 lord_give_order_ask
 lord_give_order
 lord_give_order_answer

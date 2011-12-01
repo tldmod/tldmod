@@ -1453,7 +1453,7 @@ game_menus = [
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
       (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
-      (call_script, "script_faction_strength_string", ":cur_kingdom"),
+      (call_script, "script_faction_strength_string_to_s23", ":cur_kingdom"),
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
       (str_store_string, s2, "@{s2}^_________{s4}: {reg1} ({s23})"),
@@ -1876,7 +1876,7 @@ game_menus = [
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
       (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
-      (call_script, "script_faction_strength_string", ":cur_kingdom"),
+      (call_script, "script_faction_strength_string_to_s23", ":cur_kingdom"),
       (str_store_faction_name, s4, ":cur_kingdom"),
       (faction_get_slot, reg1, ":cur_kingdom", slot_faction_strength),
       (faction_get_slot, reg2, ":cur_kingdom", slot_faction_debug_str_gain),
@@ -2123,6 +2123,12 @@ game_menus = [
      ("defeat",[],"Set faction strength to -1000 (defeat).", [
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,-1000),
        (display_message, "@Faction defeated! Now wait for it...", 0x30FFC8),]),
+     ("dying",[],"Set faction strength to 300 (dying).", [
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,300),
+       (display_message, "@Faction almost defeated! Wait for the guardians to spawn...", 0x30FFC8),]),
+     ("spent",[],"Set faction strength to 600 (spent).", [
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,600),
+       (display_message, "@Faction almost defeated! The AI can go for the capital now...", 0x30FFC8),]),
      ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
     ]
  ),
@@ -6372,7 +6378,8 @@ game_menus = [
           (eq, "$sneaked_into_town", 1),
           (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
         (else_try),
-          (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+          #MV: commented this out - lets both the map travel and town music continue to this menu
+          #(call_script, "script_music_set_situation_with_culture", mtf_sit_travel), 
         (try_end),
 		(assign, "$current_town","$g_encountered_party"),   # mtarini...  was:(store_encountered_party,"$current_town"),
 		

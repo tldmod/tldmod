@@ -1,4 +1,4 @@
-1016
+1021
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -514,7 +514,7 @@ qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
 qstr_Defenders:_infantry_ Defenders:_infantry_CHARGE!!
 qstr_Defenders:_everyone_ Defenders:_everyone_CHARGE!!
-qstr_Attackers:{reg1}/{re Attackers:{reg1}/{reg3}/{reg5}_Defenders:{reg0}/{reg2}/{reg4}
+qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}_Defenders:_{reg0}/{reg2}/{reg4}
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F
@@ -626,6 +626,8 @@ qstr_{s1}engaging_{s7} {s1}engaging_{s7}
 qstr_{s1}retreating_to_{s {s1}retreating_to_{s7}
 qstr_{s1}unknown_{reg3}_ {s1}unknown({reg3})
 qstr_Faction_defeated!_No Faction_defeated!_Now_wait_for_it...
+qstr_Faction_almost_defea Faction_almost_defeated!_Wait_for_the_guardians_to_spawn...
+qstr_Faction_almost_defeat Faction_almost_defeated!_The_AI_can_go_for_the_capital_now...
 qstr_{s4}_spawn_losses_af {s4}_spawn_losses_after_{reg1}_days^
 qstr_{s1}^Scouts_lost:_{r {s1}^Scouts_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
 qstr_{s1}^Raiders_lost:_{ {s1}^Raiders_lost:_{reg1}_Str_loss:_{reg2}_Active:_{reg3}
@@ -791,6 +793,9 @@ qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
+qstr_Guardians_of_{s6} Guardians_of_{s6}
+qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
+qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.______________________________________________________________________________________________________________________(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)

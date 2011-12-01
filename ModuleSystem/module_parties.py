@@ -124,7 +124,7 @@ parties = [
     ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-41.3,-131.1),[],170),
     ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-46.6,-188.0),[],170),
 # Rhun towns
-    ("town_north_rhun_camp","Northern_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-71.2,-223.1),[],170),
+    ("town_north_rhun_camp","Main_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-71.2,-223.1),[],170),
     ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-73.02,-189.9),[],170),
     ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-68.63,-236.87),[],170),
 # Gundabad towns

@@ -331,7 +331,7 @@ simple_triggers = [
       (try_end),
     #TLD, grow faction strength with time from center income
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
-	     (faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_dying), #was 1: no annoying regen for dying factions (<300)
+	     (faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_dying), #was 1: no annoying regen for dying factions (<500)
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
          (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain), #debug
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
@@ -2085,12 +2085,62 @@ simple_triggers = [
 			(assign, ":news_color", color_bad_news),
 		(try_end),
 		(str_store_faction_name, s22,":faction"),
-		(call_script, "script_faction_strength_string", ":faction"),
+		(call_script, "script_faction_strength_string_to_s23", ":faction"),
 		(try_begin),
 			(lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
 			(display_message,"@The forces of {s22} have rallied! {s22} is now {s23}.", ":news_color"),
 		(else_try),
 			(display_message,"@The might of {s22} has diminished! {s22} is now {s23}.", ":news_color"), # announce when strength threshold is crossed downwards
+		(try_end),
+        
+        #MV: spawn a guardian party (once) when faction strength below fac_str_dying
+        #this is a fun quick fix to defeat dying factions and avoid grinding
+        (try_begin),
+            (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_dying),
+            (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
+            
+            (faction_get_slot, ":capital", ":faction", slot_faction_capital),
+            (set_spawn_radius, 1),
+            (spawn_around_party, ":capital", pt_none),
+            (assign, ":guard_party", reg0),
+            (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
+                        
+            #party slots
+            (str_store_faction_name, s6, ":faction"),
+            (try_begin),
+              (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+              (party_set_name, ":guard_party", "@Guardians of {s6}"),
+            (else_try),
+              (party_set_name, ":guard_party", "@Guard Legion of {s6}"),
+            (try_end),
+            (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+            (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill
+            (party_set_slot, ":guard_party", slot_party_home_center, ":capital"),
+            (party_set_faction, ":guard_party", ":faction"),
+            (party_set_slot, ":guard_party", slot_party_ai_object, ":capital"),
+            (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+            (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+            (party_set_ai_patrol_radius, ":guard_party", 3), #must be tight radius
+            
+            #fill it up with lord army reinforcements and upgrade a lot
+            (store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
+            (try_for_range, ":unused", 0, ":reinforcement_waves"),
+              (call_script, "script_cf_reinforce_party", ":guard_party"),
+            (try_end),
+            (try_for_range, ":unused", 0, 40), #lords get initially about 14x4000, we do 40x6000 (about 4-5x more)
+              (party_upgrade_with_xp, ":guard_party", 6000, 0),
+            (try_end),
+                    
+            #tell the player what happened
+            (try_begin),
+              (store_relation, ":rel", "$players_kingdom", ":faction"),
+              (gt, ":rel", 0),
+              (assign, ":news_color", color_good_news),
+            (else_try),
+              (assign, ":news_color", color_bad_news),
+            (try_end),
+            (str_store_party_name, s7, ":capital"),
+            (display_log_message, "@Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.", ":news_color"),
 		(try_end),
 	(try_end),
 	]),

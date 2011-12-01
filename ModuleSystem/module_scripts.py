@@ -397,6 +397,13 @@ scripts = [
 	(store_script_param_1, ":faction"),
     (call_script, "script_get_faction_rank", ":faction"),
     (assign, ":rank", reg0),
+    (call_script, "script_get_any_rank_title_to_s24", ":faction", ":rank"),
+]),
+
+# script_get_any_rank_title_to_s24  
+("get_any_rank_title_to_s24",[
+	(store_script_param_1, ":faction"),
+	(store_script_param_2, ":rank"),
 	(try_begin),
 		(eq, ":faction", "$players_kingdom"),
 		(call_script, "script_get_own_rank_title_to_s24", ":faction", ":rank"),
@@ -1711,11 +1718,11 @@ scripts = [
 	(assign, "$inital_player_xp", 0),
 	# savegame compartibillity globals. USE THOSE in code if need be
 	# Feel free to rename them... BUT if so rename then if variables.txt BEFORE you compile your code!!!
-	(assign, "$g_variable5", 0),
-	(assign, "$g_variable6", 0),
-	(assign, "$g_variable7", 0),
-	(assign, "$g_variable8", 0),
-	(assign, "$g_variable9", 0),
+	(assign, "$g_variable5", 0), (assign, reg0, "$g_variable5"), #MV: to get rid of build warnings - remove on use
+	(assign, "$g_variable6", 0), (assign, reg0, "$g_variable6"),
+	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"),
+	(assign, "$g_variable8", 0), (assign, reg0, "$g_variable8"),
+	(assign, "$g_variable9", 0), (assign, reg0, "$g_variable9"),
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -4040,8 +4047,7 @@ scripts = [
 	# put "goods" in loot if it was a caravan (or farmers)
       (assign, ":num_looted_items",0),
       (try_begin),
-        (this_or_next|party_slot_eq, "$g_enemy_party", slot_party_type, spt_kingdom_caravan),
-        (party_slot_eq, "$g_enemy_party", slot_party_type, spt_village_farmer),
+        (party_slot_eq, "$g_enemy_party", slot_party_type, spt_kingdom_caravan),
         (store_mul, ":plunder_amount", player_loot_share, 30),
         (val_mul, ":plunder_amount", "$g_strength_contribution_of_player"),
         (val_div, ":plunder_amount", 100),
@@ -7797,7 +7803,7 @@ scripts = [
           (store_add, ":party_template", ":party_template_c", ":offset"), # tier 4 troop mix
         (try_end),
       (else_try),
-        (eq, ":party_type", spt_kingdom_hero_party),
+        #(eq, ":party_type", spt_kingdom_hero_party), #MV: hosts or guardians
         (try_begin),
           (lt, ":rand", 50),
           (store_add, ":party_template", ":party_template_a", ":offset"), # base tier 1 and 2 troops
@@ -7807,7 +7813,6 @@ scripts = [
         (else_try),
           (store_add, ":party_template", ":party_template_c", ":offset"), # tier 4 troop mix
         (try_end),
-      (else_try),
       (try_end),
       
 	  (try_begin),
@@ -16785,6 +16790,12 @@ scripts = [
         (assign, ":track", 0),
         (store_faction_of_party, ":town_faction", "$g_encountered_party"),
         (try_begin),
+          (this_or_next|eq, ":town_faction", "fac_gondor"),
+          (eq, ":town_faction", "fac_rohan"),
+          (store_random_in_range, ":random", 0, 100),
+          (lt, ":random", 10), #play alliance track 10% of the time
+          (assign, ":track", "track_TLD_Alliance_Towns"),
+        (else_try),
           (eq, ":town_faction", "fac_gondor"),
           (try_begin),
             (eq, "$g_encountered_party", "p_town_minas_tirith"),

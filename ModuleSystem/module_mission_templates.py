@@ -1197,6 +1197,7 @@ mission_templates = [ # not used in game
 				(troop_set_slot,"trp_no_troop",":slot",":x"),
 			(try_end),
 		(try_end),
+        (set_show_messages, 0),
 		(try_for_range, ":slot",0,3),
 			(neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will
 			(troop_set_slot,"trp_no_troop",":slot",-1),
@@ -1273,7 +1274,7 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end),
 	(set_show_messages, 1),
-	(display_message, "@Attackers:{reg1}/{reg3}/{reg5} Defenders:{reg0}/{reg2}/{reg4}")]),
+	(display_message, "@Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}")]),
 ]),
 ( "besiege_inner_battle_castle",mtf_battle_mode,-1,
   "You attack the walls of the castle...",

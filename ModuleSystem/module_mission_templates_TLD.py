@@ -820,7 +820,7 @@ custom_tld_bow_always = [
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   [ (assign,"$trolls_in_battle",0),	
 	(assign,"$nazgul_in_battle",0),	
-	(assign,"$wargs_in_battle",0),	
+	(assign,"$wargs_in_battle",0), (eq, "$wargs_in_battle", 0), #MV: to get rid of build warnings - remove on use
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
 	(call_script, "script_check_agent_armor"), # check for berserker trait

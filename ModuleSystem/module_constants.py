@@ -233,6 +233,7 @@ slot_faction_occasional_sound2_night = 177
 slot_faction_occasional_sound3_night = 178
 
 slot_faction_temp_value = 179 # temp values used for various scripts
+slot_faction_guardian_party = 180 # keeps the party ID of the guardian party, spawned when the faction is dying
 
 # slots for stealth missions companion tracking
 slot_fcomp_troopid = 1
@@ -530,14 +531,14 @@ spt_kingdom_caravan    = 11
 spt_prisoner_train     = 12
 spt_kingdom_hero_party = 13 # TLD hosts
 spt_kingdom_hero_alone = 14 # TLD heros w/o hosts atm
-spt_village_farmer     = 15
+spt_guardian           = 15
 spt_ship               = 16
 spt_cattle_herd        = 17
-spt_bandit              = 18 #WTH, native doesn't have a spt for bandits?! (TLD foxyman)
+spt_bandit             = 18 #WTH, native doesn't have a spt for bandits?! (TLD foxyman)
 #spt_deserter           = 20
 
 kingdom_party_types_begin = spt_patrol
-kingdom_party_types_end = spt_kingdom_hero_alone + 1
+kingdom_party_types_end = spt_guardian + 1
 
 #slot_faction_state values
 sfs_active                     = 0
@@ -1216,6 +1217,8 @@ tld_command_cost_follow = 20
 tld_command_cost_goto   = 5
 tld_command_cost_patrol = 10
 tld_command_cost_engage = 25
+tld_command_cost_siege =  50 #marshalls only
+
 
 ####################################################
 # TLD War System (foxyman and mtarini and MV) ######
@@ -1236,7 +1239,7 @@ theater_N =  1<<3
 evil_party_str_handicap = 50 # if the player is evil, evil parties and garrisons have this % of regular party strength (used in AI battles)
 
 # MV: some constants for faction strength as used in the faction AI
-fac_str_dying = 300 # less than this, go for the kill by sieging the capital
+fac_str_dying = 500 # less than this, go for the kill by sieging the capital
 fac_str_very_weak = 1000 # less than this, faction capital can be sieged and faction can be destroyed by capturing the capital
 fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
@@ -1407,6 +1410,7 @@ ws_alone_vp   = 20  # for hero-led parties (bodyguards only).
 ws_host_vp    = 80  # for hero-led parties (hosts). strength about 1000
 ws_p_train_vp = 30  # strength 150-250
 ws_center_vp  = 100 # loss of center
+ws_guard_vp   = 1000 # guardian party, spawned when str<500, so it can be used to defeat a faction
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_none = 0
@@ -1513,7 +1517,7 @@ center_list = [
 	[icon_mfc_mordor],[900],[2,8,4,5,4,7], str_income_med, garrison_limit_evil_high*2, 1, tld_siegable_capital),
 (p_town_minas_morgul, [scn_minas_morgul_center, scn_mordor_castle_b, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena, scn_minas_morgul_siege, mesh_ui_default_menu_window],
 	[trp_barman_mmorgul, trp_smith_mmorgul, trp_merchant_mmorgul, trp_elder_mmorgul, pt_morgul_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
-	[icon_mfc_mordor],[900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_never),
+	[icon_mfc_mordor],[900],[2,4,2,5,2,6], str_income_low, garrison_limit_evil_high, 1, tld_siegable_normal),
 (p_town_cirith_ungol, [scn_cirith_ungol_center, -1, scn_mordor_prison,scn_mordor_tavern, -1, scn_cirith_ungol_center, mesh_town_evilcamp],
 	[trp_barman_cungol, trp_smith_orc_patrol, trp_merchant_orc_patrol, trp_elder_cungol, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
@@ -1572,7 +1576,7 @@ center_list = [
 
 (p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
 	[trp_barman_moria, trp_smith_moria, trp_merchant_moria, trp_elder_moria, pt_moria_recruits, trp_moria_lord,trp_snaga_of_moria,trp_goblin_of_moria,trp_wolf_rider_of_moria,trp_large_goblin_of_moria], 
-	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_very_high, garrison_limit_evil_high, 1, tld_siegable_never),
+	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_very_high, garrison_limit_evil_high, 1, tld_siegable_capital),
 (p_town_troll_cave, [scn_troll_cave_center, -1, -1,-1,-1,scn_troll_cave_center, mesh_ui_default_menu_window],
 	[-1, trp_no_troop, trp_no_troop, trp_no_troop, pt_moria_recruits, trp_moria_lord,trp_snaga_of_moria,trp_goblin_of_moria,trp_wolf_rider_of_moria,trp_large_goblin_of_moria], 
 	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_normal),
@@ -1633,7 +1637,7 @@ center_list = [
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
 (p_town_erebor, [scn_erebor_center, scn_erebor_castle, scn_rohan_prison,-1,scn_dwarf_arena,scn_erebor_siege, mesh_town_erebor],
 	[trp_barman_erebor, trp_smith_erebor, trp_merchant_erebor, trp_elder_erebor, pt_dwarf_recruits, trp_dwarf_lord, trp_dwarven_apprentice, trp_dwarven_lookout, trp_dwarven_bowman, trp_iron_hills_miner], 
-	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_never),
+	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 1, tld_siegable_capital),
 (p_town_ironhill_camp, [scn_ironhill_camp_center, -1, -1,-1,-1,scn_ironhill_camp_center, mesh_town_goodcamp],
 	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_no_troop, pt_dwarf_iron_recruits, trp_dwarf_lord,trp_dwarven_lookout, trp_dwarven_bowman, trp_iron_hills_infantry, trp_iron_hills_miner], 
 	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_always),

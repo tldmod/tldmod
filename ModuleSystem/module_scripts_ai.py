@@ -206,7 +206,7 @@ ai_scripts = [
        (try_end),
 ## Attacking center
        (try_begin),
-         (gt, ":faction_strength", fac_str_ok), #TLD
+         (ge, ":faction_strength", fac_str_ok), #TLD
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_center", -1),
@@ -326,7 +326,7 @@ ai_scripts = [
          (val_div, ":chance_attacking_center", 100),
        (try_end),
 
-#Attacking enemy army
+#Attacking enemy army that is sieging
        (try_begin),
          (gt, ":faction_strength", fac_str_very_weak), #TLD: conserve strength if very weak
          (neq, ":old_faction_ai_state", sfai_default),
@@ -350,7 +350,7 @@ ai_scripts = [
            (store_troop_faction, ":cur_kingdom_marshall_faction", ":cur_kingdom_marshall"),
            (store_relation, ":rel", ":cur_kingdom_marshall_faction", ":faction_no"),
            (lt, ":rel", 0),
-           (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center),
+           (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center), #sieging
            (party_get_slot, ":cur_kingdom_marshall_party_follower_strength", ":cur_kingdom_marshall_party", slot_party_follower_strength),
            (party_get_slot, ":cur_kingdom_marshall_party_strength", ":cur_kingdom_marshall_party", slot_party_cached_strength),
            (val_add, ":cur_kingdom_marshall_party_strength", ":cur_kingdom_marshall_party_follower_strength"),
@@ -363,18 +363,27 @@ ai_scripts = [
            (gt, ":attack_army_score", 0),
            (val_mul, ":attack_army_score", 2),
            (try_begin),
-             (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center),
-             (val_mul, ":attack_army_score", 10),
+             (faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_ai_state, sfai_attacking_center), #always true
+             (val_mul, ":attack_army_score", 5),
            (try_end),
            (try_begin),
              (eq, ":old_target_attacking_enemy_army", ":cur_kingdom_marshall_party"),
              (val_mul, ":attack_army_score", 100),
            (try_end),
-           (store_distance_to_party_from_party, ":dist", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
+           #(store_distance_to_party_from_party, ":dist", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
+           (call_script, "script_get_tld_distance", ":cur_kingdom_marshall_party", ":faction_marshall_party"),
+           (assign, ":dist", reg0),
+           #new condition: either in active theater, or helping out a home town, or distance less than 100
+           #this is to prevent long and frequent journeys across the map to help far off allies
+           (faction_get_slot, ":besieged_center", ":cur_kingdom_marshall_faction", slot_faction_ai_object),
+           (store_faction_of_party, ":besieged_faction", ":besieged_center"),
+           (this_or_next|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
+           (this_or_next|eq, ":besieged_faction", ":faction_no"),
+           (lt, ":dist", 100),
            (val_add, ":dist", 20),
            (try_begin), #TLD: large effect of different active theaters, but still allowed for more random fun
              (neg|faction_slot_eq, ":cur_kingdom_marshall_faction", slot_faction_active_theater, ":faction_theater"),
-             (val_mul, ":dist", 100),
+             (val_mul, ":dist", 200),
            (try_end),
            (val_div, ":attack_army_score", ":dist"),
            (gt, ":attack_army_score", ":best_attack_army_score"),
@@ -1923,10 +1932,10 @@ ai_scripts = [
 	  (call_script, "script_calculate_troop_ai_under_command", ":troop_no"),
 ]),
 
-# script_faction_strength_string
+# script_faction_strength_string_to_s23
 # INPUT: faction ID
 #OUTPUT: s23 contains name of faction strength
-("faction_strength_string",
+("faction_strength_string_to_s23",
     [ (store_script_param, ":faction_no", 1),
       (faction_get_slot,":strength",":faction_no",slot_faction_strength),
 	  (val_add,":strength",999),
@@ -2433,6 +2442,8 @@ ai_scripts = [
 	(store_script_param, ":center", 1),
 	(store_faction_of_party, ":center_faction", ":center"),
 
+    (party_set_slot, ":center", slot_center_is_besieged_by, -1),
+    
     # first remove any volunteers
     (party_get_slot, ":volunteers", ":center", slot_town_volunteer_pt),
     (try_begin),
@@ -2440,6 +2451,16 @@ ai_scripts = [
         (party_is_active, ":volunteers"),
         (party_detach, ":volunteers"),
         (remove_party, ":volunteers"),
+	(try_end),
+    
+    # remove player's reserves, if player's capital is destroyed
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_capital, ":center"),
+      (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+      (gt, ":reserve_party", 0),
+      (party_is_active, ":reserve_party"),
+      (party_detach, ":reserve_party"),
+      (remove_party, ":reserve_party"),
 	(try_end),
     
 	# detach all attached parties, in case there are parties in the camp
@@ -2487,11 +2508,6 @@ ai_scripts = [
 		(party_set_slot, ":center", slot_village_smoke_added, 25), # smoking for a day
 	(try_end),
 
-	# lose strength
-	# (faction_get_slot, ":strength", ":center_faction", slot_faction_strength_tmp),
-	# (val_sub, ":strength", ws_center_vp),
-	# (faction_set_slot, ":center_faction", slot_faction_strength_tmp, ":strength"),
-	# (disable_party, ":center"),
 	(call_script, "script_update_center_notes", ":center"),
 ]),
 
