@@ -7077,6 +7077,7 @@ scripts = [
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
+		(this_or_next|eq, ":center_no", "p_town_erebor"), # erebor looks the same if destroyed
 		(this_or_next|eq, ":center_no", "p_town_isengard"), # iseengard looks the same if destroyed
 		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # destroyed stuff are not landmarks
         (store_distance_to_party_from_party, ":party_distance", ":party_no", ":center_no"),
@@ -7086,6 +7087,7 @@ scripts = [
       (try_end),
 	  
 	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 4),
+	  (else_try), (eq, reg0,  "p_town_erebor"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
 	  (else_try), (assign, ":sight_range", 2.5),(try_end), # default
 	  
@@ -7128,6 +7130,9 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),	
 		(str_store_string, s17, "@in sight of the majestic City Walls of Minas Tirith, the White City"),
+	(else_try),
+		(eq,":landmark","p_town_erebor"),	
+		(str_store_string, s17, "@in sight of the entrance to Erebor, the dwarven fortress"),
 	(else_try),
 		(eq,":landmark","p_town_isengard"),	
 		(str_store_string, s17, "@in sight of the dark Tower of Orthanc"),
@@ -9455,6 +9460,9 @@ scripts = [
 	(assign, "$bs_day_sound", "snd_wind_ambiance"), # default ambience
 	(assign, "$bs_night_sound", "snd_wind_ambiance"),
 	(try_begin),
+		(eq,":landmark","p_town_erebor"),
+		(assign,":scene_to_use","scn_erebor_outside"), 
+	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),
 		(assign,":scene_to_use","scn_minas_tirith_outside"), 
 	(else_try),
@@ -9478,11 +9486,11 @@ scripts = [
 		#(store_random_in_range, ":scene_to_use", "scn_ford_small1", "scn_erebor_siege"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
-		(eq,":landmark", landmark_great_east_road ), # Anduin fords
+		(eq,":landmark", landmark_great_east_road ), 
 		(assign, ":native_terrain_to_use", rt_steppe), 
 		(assign,":scene_to_use","scn_great_east_road"),
 	(else_try),
-		(eq,":landmark", landmark_old_forest_road ), # Anduin fords
+		(eq,":landmark", landmark_old_forest_road ),
 		(assign,":scene_to_use","scn_old_forest_road"),
 	(else_try),
 		(eq,":region",region_dead_marshes),

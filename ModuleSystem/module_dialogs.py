@@ -3266,7 +3266,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone|plyr,"lord_talk",[
      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], 
-"I want to request a special item.", "lord_get_reward_item_ask",[]],
+"I need an object from the Royal Armory.", "lord_get_reward_item_ask",[]],
 
 [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(eq, reg1,0)], "Seems like you have no place in your inventory for anything else. Make some room, then return.", "lord_talk",[]],
 [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(gt, reg1,0)], "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],

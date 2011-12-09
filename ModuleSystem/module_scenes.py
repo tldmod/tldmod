@@ -337,6 +337,7 @@ scenes = [
 
 ("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
 ("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
+("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
 
 ("old_forest_road"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("great_east_road"  ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
