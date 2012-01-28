@@ -378,8 +378,8 @@ mission_templates_cutscenes = [
         (assign, "$g_tld_intro_state", 30),
         
         (music_set_situation, 0), (music_set_culture, 0),
-        (play_track, "track_ambushed_by_khergit", 2), #orc ambush track
-        (music_set_situation, mtf_sit_siege),
+        (play_track, "track_TLD_Minas_Morgul", 2), #new MM track
+        (music_set_situation, mtf_sit_town),
       ]),
       
       (0, 0, ti_once,
@@ -535,7 +535,7 @@ mission_templates_cutscenes = [
         (team_set_relation, 0, 1, 1), 
         
         (music_set_situation, 0),
-        (play_cue_track, "track_lords_hall_goodmen"),
+        (play_cue_track, "track_TLD_Minas_Tirith"), #new track
       ]),
       
       (0, 0, ti_once,

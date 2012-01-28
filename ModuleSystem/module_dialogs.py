@@ -2706,7 +2706,8 @@ How could I expect someone like {playername} to be up to the challange. My serva
         (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
         (eq, "$g_talk_troop_met", 0)],
 "Ah, welcome, {s24}.^You should already know that {s12}. \
-Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant you a simple mount to help you in your travels. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to a chest."
+Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there."
+#^As your {s15}, I grant you a simple mount to help you in your travels.
 		, "lord_pretalk",[
           (assign, ":num_theater_enemies", 0),
           (faction_get_slot, ":faction_theater", "$g_encountered_party_faction", slot_faction_active_theater),
@@ -3266,7 +3267,7 @@ Your duty is to help in our struggle, {playername}." #^As your {s15}, I grant yo
 [anyone|plyr,"lord_talk",[
      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], 
-"I need an object from the Royal Armory.", "lord_get_reward_item_ask",[]],
+"I want to request a special item.", "lord_get_reward_item_ask",[]],
 
 [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(eq, reg1,0)], "Seems like you have no place in your inventory for anything else. Make some room, then return.", "lord_talk",[]],
 [anyone,"lord_get_reward_item_ask", [(store_free_inventory_capacity,reg1,"trp_player"),(gt, reg1,0)], "Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?", "lord_get_reward_item",[]],

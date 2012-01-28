@@ -2294,7 +2294,7 @@ troops = [
 ["knight_4_17","Whip_Grumrunt","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1,0x00000009bf00000736db6db6db6db6db00000000001db6db0000000000000000],
-["knight_4_17","Whip_Grimsob","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
+["knight_4_18","Whip_Grimsob","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1,0x000000083f00200a36db6db6db6db6db00000000001db6db0000000000000000],
 #Dale

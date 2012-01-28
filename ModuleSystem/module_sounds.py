@@ -122,7 +122,7 @@ sounds = [
 ("unhide",0, ["s_unhide.wav"]),
 ("neigh",0, ["silence.wav"]),
 ("gallop",sf_vol_3, ["horse_gallop_3.wav","horse_gallop_4.wav","horse_gallop_5.wav"]),
-("battle",sf_vol_4, ["battle.wav"]),
+("battle",sf_vol_4, ["battle.wav"]), #MV: needed by the engine
 ("arrow_hit_body",sf_priority_4, ["arrow_hit_body_1.wav","arrow_hit_body_2.wav","arrow_hit_body_3.wav"]),
 ("metal_hit_low_armor_low_damage",sf_priority_5|sf_vol_9, ["sword_hit_lo_armor_lo_dmg_1.wav","sword_hit_lo_armor_lo_dmg_2.wav","sword_hit_lo_armor_lo_dmg_3.wav"]),
 ("metal_hit_low_armor_high_damage",sf_priority_5|sf_vol_9, ["sword_hit_lo_armor_hi_dmg_1.wav","sword_hit_lo_armor_hi_dmg_2.wav","sword_hit_lo_armor_hi_dmg_3.wav"]),
