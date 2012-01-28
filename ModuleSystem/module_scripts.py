@@ -14337,10 +14337,10 @@ scripts = [
         (troop_set_slot, "trp_npc14", slot_troop_rank_request, 0),  #TLD
 
         # Bolzog
-        (troop_set_slot, "trp_npc15", slot_troop_morality_type, -1),
-        (troop_set_slot, "trp_npc15", slot_troop_morality_value, 0),
-        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_type, -1),
-        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_value, 0),
+        (troop_set_slot, "trp_npc15", slot_troop_morality_type, tmt_egalitarian),
+        (troop_set_slot, "trp_npc15", slot_troop_morality_value, 1),
+        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_type, tmt_honest),
+        (troop_set_slot, "trp_npc15", slot_troop_2ary_morality_value, -1),
         (troop_set_slot, "trp_npc15", slot_troop_personalityclash_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc15", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc15", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
