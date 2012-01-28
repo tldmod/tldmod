@@ -42,6 +42,16 @@ ai_scripts = [
       (try_for_range, ":cur_center", centers_begin, centers_end),
         (call_script, "script_party_calculate_strength", ":cur_center", 0), #will update slot_party_cached_strength for centers
       (try_end),
+      
+      #MV: also calculate the strength of faction patrols
+      (try_for_parties, ":patrol"),
+        (party_is_active, ":patrol"),
+        (party_get_slot, ":party_type", ":patrol", slot_party_type), 
+        (this_or_next|eq, ":party_type", spt_patrol),
+        (this_or_next|eq, ":party_type", spt_raider),
+        (eq, ":patrol", spt_scout),
+        (call_script, "script_party_calculate_strength", ":patrol", 0), #will update slot_party_cached_strength
+      (try_end),    
 
       (try_for_range, ":cur_center", centers_begin, centers_end),
         (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -662,6 +672,29 @@ ai_scripts = [
           (val_add, ":enemy_strength", ":str"),
         (try_end),
       (try_end),
+      
+      #MV: also calculate the strength of nearby faction patrols
+      (try_for_parties, ":patrol"),
+        (party_is_active, ":patrol"),
+        (party_get_slot, ":party_type", ":patrol", slot_party_type), 
+        (this_or_next|eq, ":party_type", spt_patrol),
+        (this_or_next|eq, ":party_type", spt_raider),
+        (eq, ":patrol", spt_scout),
+        (store_distance_to_party_from_party, ":distance", ":patrol", ":party_no"),
+        (lt, ":distance", 10),
+        (party_get_slot, ":str", ":patrol", slot_party_cached_strength), #pre-calculated in script_init_ai_calculation
+        (store_faction_of_party, ":patrol_faction", ":patrol"),
+        (store_relation, ":rel", ":patrol_faction", ":party_faction"),
+        (try_begin),
+          (this_or_next|eq, ":patrol_faction", ":party_faction"),
+          (gt, ":rel", 0),
+          (val_add, ":friend_strength", ":str"),
+        (else_try),
+          (lt, ":rel", 0),
+          (val_add, ":enemy_strength", ":str"),
+        (try_end),
+      (try_end),
+      
       (party_set_slot, ":party_no", slot_party_follower_strength, ":follower_strength"),
       (party_set_slot, ":party_no", slot_party_nearby_friend_strength, ":friend_strength"),
       (party_set_slot, ":party_no", slot_party_nearby_enemy_strength, ":enemy_strength"),

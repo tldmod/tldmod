@@ -197,7 +197,22 @@ triggers = [
 
 #Kingdom Parties
 (12, 0, 0, [],[  # TLD Parties spawn (foxyman)
+      #corrupt saves possible retardant: limit number of total parties to 900
+      (assign, ":total_parties", 0),
+      (try_for_parties, ":unused"),
+        (val_add, ":total_parties", 1),
+      (try_end),
+      (le, ":total_parties", 900), #skip spawning if there are too many parties
+      
+      #corrupt saves possible retardant: also limit the number of parties spawned at once
+      (assign, ":to_spawn", 16),
+      (try_begin),
+        (ge, ":total_parties", 700),
+        (assign, ":to_spawn", 10), #slows down spawning rate when there are many parties
+      (try_end),
+      
       (try_for_range, ":center", centers_begin, centers_end),
+        (gt, ":to_spawn", 0),
         (party_is_active, ":center"),
         (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":center_scouts", ":center", slot_center_spawn_scouts),
@@ -265,6 +280,7 @@ triggers = [
                 (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
                 (party_set_ai_target_position, ":scout_party", pos1),
                 (party_set_ai_patrol_radius, ":scout_party", 10),
+                (val_sub, ":to_spawn", 1),
             (try_end),
             (try_begin),
                 (ge,"$tld_war_began",1), # No raiders before war
@@ -301,6 +317,7 @@ triggers = [
                     (assign, ":enemy_center", ":center"),
                 (try_end),
                 (party_set_ai_object, ":raider_party", ":enemy_center"),
+                (val_sub, ":to_spawn", 1),
             (try_end),                        
             (try_begin),
                 (ge,"$tld_war_began",1), # No patrols before war
@@ -330,6 +347,7 @@ triggers = [
                 (party_set_ai_behavior, ":patrol_party", ai_bhvr_patrol_party),
                 (party_set_ai_object, ":patrol_party", ":center"),
                 (party_set_ai_patrol_radius, ":patrol_party", 15),
+                (val_sub, ":to_spawn", 1),
             (try_end),
             (try_begin),
                 (gt, ":center_caravan", 0),
@@ -358,6 +376,7 @@ triggers = [
                 (party_set_ai_behavior, ":caravan_party", ai_bhvr_travel_to_party),
                 (party_set_ai_object, ":caravan_party", ":center"),
                 (party_set_flags, ":caravan_party", pf_default_behavior, 1),
+                (val_sub, ":to_spawn", 1),
             (try_end),             
         (try_end),
       (try_end),
