@@ -339,4 +339,8 @@ sounds = [
 #("fire_loop"             ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
 #("torch_loop"            ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
 
+("lord_dies", sf_2d|sf_priority_9|sf_vol_7, ["lord_dies.wav"]),
+("enemy_lord_dies", sf_2d|sf_priority_9|sf_vol_7, ["enemy_lord_dies.wav"]),
+("level_up", sf_2d|sf_priority_9|sf_vol_7, ["level_up.wav"]),
+
 ]

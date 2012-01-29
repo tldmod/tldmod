@@ -268,5 +268,8 @@ snd_orc_cheer = 266
 snd_water_wavesplash_source = 267
 snd_water_waves_source = 268
 snd_water_splash_source = 269
+snd_lord_dies = 270
+snd_enemy_lord_dies = 271
+snd_level_up = 272
 
 
