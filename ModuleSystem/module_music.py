@@ -24,11 +24,11 @@ tracks = [
 #("calm_night_1", "TLD_NightMusic.mp3", mtf_module_track|mtf_sit_night, mtf_sit_tavern|mtf_sit_travel),
 ("captured", "capture.ogg", mtf_persist_until_finished, 0),
 
-("defeated_by_neutral","TLD_Killed_By_Evil.mp3",mtf_module_track|                 mtf_persist_until_finished|mtf_sit_killed, 0),
+("defeated_by_neutral","TLD_Killed.mp3",mtf_module_track|                 mtf_persist_until_finished|mtf_sit_killed, 0),
 ("defeated_by_neutral_2", "defeated_by_neutral_2.ogg",                            mtf_persist_until_finished|mtf_sit_killed, 0),
 ("defeated_by_neutral_3", "defeated_by_neutral_3.ogg",                            mtf_persist_until_finished|mtf_sit_killed, 0),
 ("killed_by_swadian", "killed_by_swadian.ogg" ,                  mtf_culture_good|mtf_persist_until_finished|mtf_sit_killed, 0),
-("killed_by_khergit", "TLD_Killed_By_Evil.mp3", mtf_module_track|mtf_culture_evil|mtf_persist_until_finished|mtf_sit_killed, 0),
+("killed_by_khergit", "TLD_Killed.mp3", mtf_module_track|mtf_culture_evil|mtf_persist_until_finished|mtf_sit_killed, 0),
   
 
 #TLD battle music
@@ -108,6 +108,7 @@ tracks = [
 ("TLD_Rivendell_Camp",   "TLD_Rivendell_Camp.mp3",   mtf_module_track, mtf_sit_town),
 ("TLD_Mirkwood_Camp",    "TLD_Mirkwood_Camp.mp3",    mtf_module_track, mtf_sit_town),
 ("TLD_Esgaroth",         "TLD_Esgaroth.mp3",         mtf_module_track, mtf_sit_town),
+("TLD_Dale",             "TLD_Dale.mp3",             mtf_module_track, mtf_sit_town),
 ("TLD_Harad_Camp",       "TLD_Harad_Camp.mp3",       mtf_module_track, mtf_sit_town),
 ("TLD_Rhun_Encampment",  "TLD_Rhun_Encampment.mp3",  mtf_module_track, mtf_sit_town),
 ("TLD_Khand_Encampment", "TLD_Khand_Encampment.mp3", mtf_module_track, mtf_sit_town),
