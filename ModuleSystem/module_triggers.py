@@ -207,11 +207,14 @@ triggers = [
       #corrupt saves possible retardant: also limit the number of parties spawned at once
       (assign, ":to_spawn", 16),
       (try_begin),
-        (ge, ":total_parties", 700),
+        (ge, ":total_parties", 750), #about 300 active parties, lords+bandits+patrols
         (assign, ":to_spawn", 10), #slows down spawning rate when there are many parties
       (try_end),
       
-      (try_for_range, ":center", centers_begin, centers_end),
+      #new: randomly choose centers to spawn parties from
+      (assign, ":max_tries", 60),
+      (try_for_range, ":unused", 0, ":max_tries"),
+        (store_random_in_range, ":center", centers_begin, centers_end),
         (gt, ":to_spawn", 0),
         (party_is_active, ":center"),
         (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
@@ -379,7 +382,11 @@ triggers = [
                 (val_sub, ":to_spawn", 1),
             (try_end),             
         (try_end),
-      (try_end),
+        (try_begin),
+          (le, ":to_spawn", 0),
+          (assign, ":max_tries", 0), #exit loop
+        (try_end),
+      (try_end), #try_for_range
     ]
   ),
 

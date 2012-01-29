@@ -141,7 +141,7 @@ tracks = [
 ("TLD_Map_Day_I", "Day-Night-Map\TLD_Map_Day_I.mp3", mtf_module_track, mtf_sit_travel|mtf_sit_night),
 ("TLD_Map_Day_J", "Day-Night-Map\TLD_Map_Day_J.mp3", mtf_module_track, mtf_sit_travel|mtf_sit_night),
 ("TLD_Map_Day_M", "Day-Night-Map\TLD_Map_Day_Misty_Mountains.mp3", mtf_module_track, mtf_sit_travel|mtf_sit_night),
-#Night tracks are played by the MB jukebox, no scripting there
+#Night tracks are played by the MB jukebox, plus night travel scripting
 ("TLD_Map_Night_A", "Day-Night-Map\TLD_Map_Night_A.mp3", mtf_module_track|mtf_sit_night, mtf_sit_travel),
 ("TLD_Map_Night_B", "Day-Night-Map\TLD_Map_Night_B.mp3", mtf_module_track|mtf_sit_night, mtf_sit_travel),
 ("TLD_Map_Night_C", "Day-Night-Map\TLD_Map_Night_C.mp3", mtf_module_track|mtf_sit_night, mtf_sit_travel),

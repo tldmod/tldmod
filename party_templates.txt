@@ -54,8 +54,8 @@ pt_umbar_scouts Corsair_Scouts 281474980905062 0 15 183 299 1 1 0 302 2 4 0 301 
 pt_khand_scouts Easterling_Scouts 281474980905058 0 15 183 293 1 1 0 283 2 4 0 282 3 6 0 -1 -1 -1 
 pt_moria_scouts Moria_Scouts 281474980905081 0 16 183 373 1 1 0 372 2 5 0 371 3 6 0 -1 -1 -1 
 pt_guldur_scouts Dol_Guldur_Scouts 281474980905081 0 17 183 357 3 4 0 356 8 12 0 -1 -1 -1 -1 
-pt_gundabad_scouts Gundabad_Scouts 281474980905084 0 18 183 391 1 1 0 390 2 5 0 389 4 7 0 -1 -1 -1 
-pt_rhun_scouts Rhun_Scouts 281474980905057 0 13 183 66 1 1 0 69 2 5 0 65 4 7 0 -1 -1 -1 
+pt_gundabad_scouts Gundabad_Scouts 281474980905084 0 18 183 391 1 2 0 390 3 6 0 389 6 10 0 -1 -1 -1 
+pt_rhun_scouts Rhun_Scouts 281474980905057 0 13 183 66 1 3 0 69 3 6 0 65 5 8 0 -1 -1 -1 
 pt_gondor_raiders Gondor_Foragers 281474980905069 0 3 238 112 1 1 0 103 6 12 0 116 6 12 0 -1 -1 -1 
 pt_rohan_raiders Rohirrim_Foragers 281474980905072 0 5 238 241 1 1 0 239 3 8 0 230 3 8 0 238 5 10 0 -1 -1 
 pt_imladris_raiders Rivendell_Foragers 562949957615734 0 9 238 206 1 1 0 199 6 12 0 203 6 12 0 -1 -1 -1 
@@ -73,8 +73,8 @@ pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284
 pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 299 4 8 0 298 4 8 0 297 6 15 0 -1 -1 
 pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 380 1 1 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
 pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 357 8 16 0 368 8 16 0 356 15 30 0 -1 
-pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 1 0 387 5 10 0 386 10 15 0 383 10 20 0 -1 -1 
-pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 1 0 66 6 12 0 77 8 16 0 -1 -1 -1 
+pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 386 12 18 0 383 18 32 0 -1 -1 
+pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615719 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
 pt_rohan_patrol Rohirrim_Patrol 562949957615728 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
 pt_imladris_patrol Dunedain_Patrol 4194422 0 9 238 216 1 1 0 215 4 10 0 214 3 5 0 213 8 20 0 212 8 20 0 -1 
@@ -97,7 +97,7 @@ pt_dunland_war_party Dunlending_Warband 844424934326366 0 19 238 274 2 4 0 270 6
 pt_khand_war_party Variag_War_Party 844424934326361 0 14 238 281 2 4 0 285 2 4 0 280 5 10 0 279 8 16 0 282 10 20 0 278 20 40 0 
 pt_moria_war_party Moria_War_Party 844424934326363 0 16 238 377 5 10 0 379 10 20 0 376 12 24 0 375 15 30 0 374 20 50 0 352 1 2 0 
 pt_dale_war_party Dale_War_Party 844424934326346 0 11 238 48 8 13 0 54 8 20 0 52 8 16 0 51 5 20 0 57 10 25 0 59 4 15 0 
-pt_rhun_war_party Rhun_War_Party 844424934326360 0 13 238 80 2 4 0 79 3 8 0 70 5 10 0 67 5 10 0 72 10 20 0 64 16 32 0 
+pt_rhun_war_party Rhun_War_Party 844424934326360 0 13 238 80 2 4 0 79 5 10 0 70 8 16 0 67 8 16 0 72 12 24 0 64 18 36 0 
 pt_gondor_company Minas_Tirith_Patrol 1125899911037037 0 3 238 429 1 1 0 114 2 4 0 113 4 8 0 108 10 20 0 118 10 20 0 105 10 20 0 
 pt_rohan_company Rohan_Company 112 0 5 238 241 25 25 0 232 25 25 0 225 25 25 0 242 12 12 0 233 12 12 0 412 1 1 0 
 pt_imladris_company Rivendell_Company 118 0 9 238 203 20 33 0 204 20 33 0 205 20 33 0 206 3 6 0 409 1 1 0 -1 

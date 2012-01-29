@@ -14359,7 +14359,7 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
         (troop_set_slot, "trp_npc16", slot_troop_home, -1),
         (troop_set_slot, "trp_npc16", slot_troop_payment_request, 1200 / companionPriceMult),
-        (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_north_rhun_camp"),  #TLD
+        (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_rhun_main_camp"),  #TLD
         (troop_set_slot, "trp_npc16", slot_troop_rank_request, 2),  #TLD
 
 #additional companions        
@@ -17020,8 +17020,14 @@ scripts = [
         # (else_try),
           # (eq, ":faction", "fac_beorn"),
         (else_try), #couldn't find a faction (Dale, Beorn), play standard travel music
-          (assign, ":track", "track_TLD_Map_Day_A"),
-          (assign, ":no_tracks", 11),
+          (try_begin),
+            (is_currently_night),
+            (assign, ":track", "track_TLD_Map_Night_A"),
+            (assign, ":no_tracks", 7),
+          (else_try), 
+            (assign, ":track", "track_TLD_Map_Day_A"),
+            (assign, ":no_tracks", 11),
+          (try_end),
         (try_end),
        
         (store_random_in_range, ":random_track_index", 0, ":no_tracks"),

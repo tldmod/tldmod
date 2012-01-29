@@ -6,6 +6,7 @@ from header_skills import *
 from header_triggers import *
 from header_troops import *
 from header_music import *
+from header_terrain_types import *
 from module_constants import *
 
 ####################################################################################################################
@@ -200,6 +201,10 @@ simple_triggers = [
            (store_random_in_range, ":rand_no", 0, 40),
            (val_mul, ":stack_size", ":rand_no"),
            (val_div, ":stack_size", 100),
+           (try_begin), #MV added this block
+             (ge, ":rand_no", 20),
+             (val_max, ":stack_size", 1), #POP bugfix: at least one should escape, so there are not plenty of 1-2 prisoner stacks
+           (try_end),
            (party_remove_prisoners, ":center_no", ":stack_troop", ":stack_size"),
          (try_end),
        (try_end),
@@ -242,22 +247,56 @@ simple_triggers = [
       (try_end),
     ]),
 
-# (15) Converging center prosperity to ideal prosperity once in every 15 days
-(24*15,
-   [(try_for_range, ":center_no", centers_begin, centers_end),
-      (party_is_active, ":center_no"), #TLD
-	  (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
-      (call_script, "script_get_center_ideal_prosperity", ":center_no"),
-      (assign, ":ideal_prosperity", reg0),
-      (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
+# (15) Converging center prosperity to ideal prosperity once in every 15 days - MV: removed this and replaced with this:
+# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain
+(23*3,
+   [
+    (set_spawn_radius, 3),
+    (try_for_parties, ":cur_party"),
+      (gt, ":cur_party", "p_scribble_242"), #avoid static map parties
+      (party_is_active, ":cur_party"),
+      #remove empty parties
+      (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
       (try_begin),
-        (gt, ":prosperity", ":ideal_prosperity"),
-        (call_script, "script_change_center_prosperity", ":center_no", -1),
-      (else_try),
-        (lt, ":prosperity", ":ideal_prosperity"),
-        (call_script, "script_change_center_prosperity", ":center_no", 1),
-      (try_end),
-    (try_end),
+        (eq, ":num_stacks", 0),
+        (party_get_template_id, ":cur_party_template", ":cur_party"),
+        (neq, ":cur_party_template", "pt_ruins"),
+        (neq, ":cur_party_template", "pt_mound"),
+        (neq, ":cur_party_template", "pt_pyre"),
+        (neq, ":cur_party_template", "pt_legendary_place"),
+        (remove_party, ":cur_party"),
+      (else_try), #unstick stuck parties
+        (party_get_current_terrain, ":terrain_type", ":cur_party"),
+        (try_begin),
+          (this_or_next|eq, ":terrain_type", rt_water),
+          (this_or_next|eq, ":terrain_type", rt_mountain),
+          (this_or_next|eq, ":terrain_type", rt_river),
+          (this_or_next|eq, ":terrain_type", rt_mountain_forest),
+          (gt, ":terrain_type", rt_desert_forest),
+          (assign, ":max_tries", 1000),
+          (try_for_range, ":unused", 0, ":max_tries"),
+            # check for suitable terrain
+            (spawn_around_party, ":cur_party", "pt_none"),
+            (assign, ":fake_party", reg0),
+            (party_get_position, pos1, ":fake_party"),
+            (party_get_current_terrain, ":terrain_type", ":fake_party"),
+            (remove_party, ":fake_party"),
+            #check for impassable terrain
+            (try_begin),
+              (this_or_next|eq, ":terrain_type", rt_water),
+              (this_or_next|eq, ":terrain_type", rt_mountain),
+              (this_or_next|eq, ":terrain_type", rt_river),
+              (this_or_next|eq, ":terrain_type", rt_mountain_forest),
+              (             gt, ":terrain_type", rt_desert_forest), # any custom types?
+              #bad terrain, try again
+            (else_try), #good terrain, move party there and exit loop
+              (party_set_position, ":cur_party", pos1),
+              (assign, ":max_tries", 0),
+            (try_end),
+          (try_end), # try_for_range :unused
+        (try_end),
+      (try_end), #unstick
+    (try_end), #try_for_parties
     ]),
 
 # (16) Checking if the troops are resting at a half payment point (this has to stay, in TLD!)
