@@ -16730,16 +16730,17 @@ scripts = [
 
       (faction_get_slot, ":result", ":faction_no", slot_faction_culture),
 
-      (try_begin),
-        (this_or_next|eq, ":faction_no", "fac_outlaws"),
-#        (this_or_next|eq, ":faction_no", "fac_peasant_rebels"),
-        (this_or_next|eq, ":faction_no", "fac_deserters"),
-        (this_or_next|eq, ":faction_no", "fac_mountain_bandits"),
-        (eq, ":faction_no", "fac_forest_bandits"),
-        (assign, ":result", mtf_culture_6),
-      (else_try),
-        (assign, ":result", 0), #no culture, including player with no bindings to another kingdom
-      (try_end),
+      #MV: commented this out! it overwrote a valid result!
+      # (try_begin),
+        # (this_or_next|eq, ":faction_no", "fac_outlaws"),
+# #        (this_or_next|eq, ":faction_no", "fac_peasant_rebels"),
+        # (this_or_next|eq, ":faction_no", "fac_deserters"),
+        # (this_or_next|eq, ":faction_no", "fac_mountain_bandits"),
+        # (eq, ":faction_no", "fac_forest_bandits"),
+        # (assign, ":result", mtf_culture_6),
+      # (else_try),
+        # (assign, ":result", 0), #no culture, including player with no bindings to another kingdom
+      # (try_end),
       (assign, reg0, ":result"),
 ]),
 # script_music_set_situation_with_culture
@@ -16791,6 +16792,10 @@ scripts = [
       (try_end),
       (music_set_situation, ":situation"),
       (music_set_culture, ":culture"),
+
+# (assign, reg0, ":situation"),
+# (assign, reg1, ":culture"),
+# (display_message,"@DEBUG: music_set_situation_with_culture: situation {reg0}, culture {reg1}"),
       
       #MV: Custom TLD music for towns, because we have too many cultures and town-specific tracks
       (try_begin),
@@ -16957,7 +16962,7 @@ scripts = [
           (assign, ":track", "track_TLD_Battle_Beorn"),
         (try_end),
         
-        (play_track, ":track", 1),
+        (play_track, ":track", 0),
       (try_end),
       
       #MV: Custom TLD music for travel, because we have too many cultures to use mtf_culture_X flags
@@ -17037,7 +17042,7 @@ scripts = [
        
         (store_random_in_range, ":random_track_index", 0, ":no_tracks"),
         (val_add, ":track", ":random_track_index"),        
-        (play_track, ":track", 1),
+        (play_track, ":track", 0),
       (try_end),
 ]),
 # script_combat_music_set_situation_with_culture

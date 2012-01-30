@@ -6,11 +6,17 @@
 
 
 mtf_culture_1                          = 0x00000001 # Gondor
-mtf_culture_2                          = 0x00000002 # Rohan and other good men
+mtf_culture_gondor = mtf_culture_1
+mtf_culture_2                          = 0x00000002 # Rohan and other good men and dwarves
+mtf_culture_rohan_goodmen = mtf_culture_2
 mtf_culture_3                          = 0x00000004 # Orcs
+mtf_culture_orcs = mtf_culture_3
 mtf_culture_4                          = 0x00000008 # Elves
-mtf_culture_5                          = 0x00000010 # Harad & Khand
+mtf_culture_elves = mtf_culture_4
+mtf_culture_5                          = 0x00000010 # Harad & Khand #MV: code says Harad only
+mtf_culture_harad = mtf_culture_5
 mtf_culture_6                          = 0x00000020 # Various evil men
+mtf_culture_evilmen = mtf_culture_6
 
 mtf_culture_good                       = 0x0000000B # all good
 mtf_culture_evil                       = 0x00000034 # all evil
