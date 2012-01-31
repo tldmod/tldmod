@@ -18,10 +18,12 @@ mtf_culture_harad = mtf_culture_5
 mtf_culture_6                          = 0x00000020 # Various evil men
 mtf_culture_evilmen = mtf_culture_6
 
-mtf_culture_good                       = 0x0000000B # all good
-mtf_culture_evil                       = 0x00000034 # all evil
-mtf_culture_all                        = 0x0000003F
-
+#mtf_culture_good                       = 0x0000000B # all good
+mtf_culture_good = mtf_culture_gondor|mtf_culture_rohan_goodmen|mtf_culture_elves
+#mtf_culture_evil                       = 0x00000034 # all evil
+mtf_culture_evil = mtf_culture_orcs|mtf_culture_harad|mtf_culture_evilmen
+#mtf_culture_all                        = 0x0000003F
+mtf_culture_all = mtf_culture_good|mtf_culture_evil
 
 ##mtf_sit_map_travel                 = 0x00000001
 ##mtf_sit_attack                     = 0x00000002
