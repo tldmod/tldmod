@@ -584,7 +584,7 @@ items =[
 #
 #N/A
 ["wood_club","Wooden_Club",[("wood_club",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(60)|swing_damage(15,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
-["twohand_wood_club","Large_Wooden_Club",[("twohand_wood_club",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_shop|itp_wooden_attack|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,10,weight(3.5)|difficulty(0)|spd_rtng(85)|weapon_length(79)|swing_damage(25,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
+["twohand_wood_club","Large_Wooden_Club",[("twohand_wood_club",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_shop|itp_wooden_attack,itc_nodachi|itcf_carry_axe_back,10,weight(3.5)|difficulty(0)|spd_rtng(85)|weapon_length(79)|swing_damage(25,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
 #
 ["bone_cudgel","Bone_Cudgel",[("bone_cudgel",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(53)|swing_damage(15,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["skull_club","Skull_Club",[("skull_club",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(55)|swing_damage(15,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
