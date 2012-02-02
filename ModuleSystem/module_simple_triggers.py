@@ -259,6 +259,8 @@ simple_triggers = [
       (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
       (try_begin),
         (eq, ":num_stacks", 0),
+        (party_get_battle_opponent, ":opponent", ":cur_party"),
+        (lt, ":opponent", 0),
         (party_get_template_id, ":cur_party_template", ":cur_party"),
         (neq, ":cur_party_template", "pt_ruins"),
         (neq, ":cur_party_template", "pt_mound"),
