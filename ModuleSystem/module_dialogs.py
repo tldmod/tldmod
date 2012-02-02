@@ -860,8 +860,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone, "companion_recruit_payment", [
       (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
       (store_add, ":dialog_line", "str_npc1_payment", ":npc_offset"),
-      #(troop_get_slot, reg3, "$g_talk_troop", slot_troop_payment_request),
-      (str_store_party_name, s20, "$g_encountered_party"),
+      (troop_get_slot, reg14, "$g_talk_troop", slot_troop_payment_request),
+      (store_troop_faction, ":faction", "$g_talk_troop"),
+      (str_store_faction_name, s14, ":faction"),
       (str_store_string, s5, ":dialog_line")],
 "{s5}", "companion_recruit_payment_response", []],
 

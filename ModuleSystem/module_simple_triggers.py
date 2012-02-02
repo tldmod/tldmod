@@ -386,9 +386,25 @@ simple_triggers = [
              (val_div, ":strength_income", 2), #halve income before the War
              (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
              (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
+           (else_try), #evil handicap: if player is evil, evil factions get less
+             (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+             (neg|faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
+             (gt, ":strength_income", 0),
+             (val_div, ":strength_income", 2), #half income - tweakable
+             (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
+             (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
+             (val_max, ":strength_income", 5), #has to be >0             
            (try_end),
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
+         (try_end),
+         #one more evil handicap: Gondor and Rohan get +10.. cheaters!
+         (try_begin),
+           (gt, "$tld_war_began", 0),
+           (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+           (this_or_next|eq, ":faction_no", "fac_gondor"),
+           (eq, ":faction_no", "fac_rohan"),
+           (val_add, ":strength", 10),
          (try_end),
          (val_min, ":strength", 9995), #limit max strength
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
