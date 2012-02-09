@@ -3352,8 +3352,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (item_set_slot, ":item", slot_item_given_as_reward, 1), # can't give more then one
      (call_script, "script_apply_attribute_bonuses"), # update player attributes for rings and such
      (call_script, "script_get_player_party_morale_values"),
-     (val_add, reg0, ":recent_events_morale"),
-     (party_set_morale, "p_main_party", reg0), # update morale for cauldrons and such
+     (val_add, ":recent_events_morale", reg0),
+	 (val_clamp, ":recent_events_morale", 0, 100), #GA overflow fixage 
+     (party_set_morale, "p_main_party", ":recent_events_morale"), # update morale for cauldrons and such
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
 	 (call_script, "script_spend_influence_of", ":price", "$g_talk_troop_faction")
 ,]],

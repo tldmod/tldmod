@@ -907,6 +907,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
+		(agent_set_slot, ":agent", slot_agent_time_counter, 0),
 		(try_begin),
 			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
 			(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
@@ -1535,8 +1536,15 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
 		(store_random_in_range, ":random", 0,100),(try_begin),(lt,":random",7),(agent_play_sound, ":ghost", "snd_warg_lone_woof"),(try_end), # should be brutal GRRR of attacking warg here
 		(agent_get_horse,":horse",":ghost"),
-		(eq,":horse",-1),
-		(call_script, "script_remove_agent", ":ghost"),
+		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter),(val_add, reg1, 1),(agent_set_slot, ":ghost", slot_agent_time_counter, reg1),
+		(try_begin), # make riderless wargs run away after 22 sec 
+			(eq, reg1, 15),
+			(init_position, pos0), #send them to 0,0
+			(agent_set_scripted_destination, ":ghost", pos0, 1),
+		(try_end),
+		(this_or_next|eq,":horse",-1), # remove wargless riders 
+		(gt, reg1, 25), # or wargs running from battle for 45 sec
+			(call_script, "script_remove_agent", ":ghost"),
 	(try_end),
 
 	(try_for_agents,":warg"), 

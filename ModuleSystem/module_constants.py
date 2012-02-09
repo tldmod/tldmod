@@ -146,6 +146,7 @@ slot_agent_troll_swing_move       = 14
 slot_agent_last_hp		          = 15
 slot_agent_mount_side		      = 16 # a mount has the side as its rider
 slot_agent_mount_dead			  = 17
+slot_agent_time_counter			  = 18
 
 ########################################################
 ##  FACTION SLOTS          #############################
