@@ -4300,8 +4300,8 @@ game_menus = [
         
           (store_mul, ":faction_reln_boost", ":enemy_advantage", "$g_starting_strength_enemy_party"),
           (val_div, ":faction_reln_boost", 300),
-          (val_min, ":faction_reln_boost", 40),
-          (val_div, ":faction_reln_boost", 3), #MV: nerf to be close to normal battles
+          (val_min, ":faction_reln_boost", 50), #was 40 in 3.1 
+          (val_div, ":faction_reln_boost", 2), #MV: nerf to be close to normal battles - MV: upped a bit after 3.1
 
           (store_mul, "$g_relation_boost", ":enemy_advantage", ":enemy_advantage"),
           (val_div, "$g_relation_boost", 700),

@@ -60,7 +60,7 @@ def set_item_faction():
 		if sfaction > 0: command_list.append((item_set_slot, i_item, slot_item_subfaction, sfaction))
 	return command_list [:]
 
-companionPriceMult = 20 # this is used to multiply old hiring praces for companions (in res point) to new prices (in influence)
+companionPriceMult = 50 # this is used to multiply old hiring praces for companions (in res point) to new prices (in influence) - MV: nerfed down, was 20
 
 scripts = [
 
