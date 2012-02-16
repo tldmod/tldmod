@@ -278,7 +278,7 @@ strings = [
   ("january_reg1_reg2",   "T.A.{reg2}, Narvinyë {reg1} (Jan)"),
   ("february_reg1_reg2",  "T.A.{reg2}, Nénimë {reg1} (Feb)"),
   ("march_reg1_reg2",     "T.A.{reg2}, Súlìmë {reg1} (Mar)"),
-  ("april_reg1_reg2",     "T.A.{reg2}, Víressë {reg1 (Apr)}"),
+  ("april_reg1_reg2",     "T.A.{reg2}, Víressë {reg1 (Apr)"),
   ("may_reg1_reg2",       "T.A.{reg2}, Lótessë {reg1} (May)"),
   ("june_reg1_reg2",      "T.A.{reg2}, Náríë {reg1} (Jun)"),
   ("july_reg1_reg2",      "T.A.{reg2}, Cermië {reg1} (Jul)"),
