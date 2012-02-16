@@ -3287,17 +3287,12 @@ scripts = [
         (val_add, ":modifier_value", 1),
 	  (try_end),
 	  (try_begin),
-        (store_and, ":check" ,":wound_mask", wound_head), #head injury
+        	(store_and, ":check" ,":wound_mask", wound_head), #head injury
 		(neq, ":check", 0),
 		(val_sub, ":modifier_value", 1),
 	  (try_end),
-	(else_try),
-  	  (eq, ":skill_no", "skl_wound_treatment"),
-	  (try_begin),
-        (store_and, ":check" ,":wound_mask", wound_head), #head injury
-		(neq, ":check", 0),
-        (val_sub, ":modifier_value", 1),
-	  (try_end),
+	# Wound treatment removed, the branch here bypassed the garlic
+	# and herbarium skill bonuses. -CppCoder
 	  # (eq, ":troop_no", "trp_player"), # player only uses brew
 	  # (call_script, "script_get_troop_item_amount", ":troop_no", "itm_orc_brew"),
 	  # (gt, reg0, 0),
@@ -3435,9 +3430,7 @@ scripts = [
         (val_add, ":modifier_value", 1),
 	  (try_end),
     (else_try), #Wound Treatment	
-  	# This should fix the garlic/wound treatment bug, at least it did for me, 
-	# need to test and see if head wounds work properly... -CppCoder
-  	 (eq, ":skill_no", "skl_wound_treatment"),
+  	 (eq, ":skill_no", "skl_wound_treatment"),	
  	 (try_begin),
 	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_garlic_reward"),
 	    (gt, reg0, 0),
