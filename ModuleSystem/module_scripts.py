@@ -3434,23 +3434,25 @@ scripts = [
         (gt, reg0, 0),
         (val_add, ":modifier_value", 1),
 	  (try_end),
-    (else_try), #Wound Treatment
-      (eq, ":skill_no", "skl_wound_treatment"),
-      (try_begin),
-        (call_script, "script_get_troop_item_amount", ":troop_no", "itm_garlic_reward"),
-        (gt, reg0, 0),
-        (val_add, ":modifier_value", 1),
-      (try_end),
-	  (try_begin),
-        (call_script, "script_get_troop_item_amount", ":troop_no", "itm_herbarium_reward"),
-        (gt, reg0, 0),
-        (val_add, ":modifier_value", 1),
-	  (try_end),
-	  (try_begin),
-        (store_and, ":check" ,":wound_mask", wound_head), #head injury
+    (else_try), #Wound Treatment	
+  	# This should fix the garlic/wound treatment bug, at least it did for me, 
+	# need to test and see if head wounds work properly... -CppCoder
+  	 (eq, ":skill_no", "skl_wound_treatment"),
+ 	 (try_begin),
+	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_garlic_reward"),
+	    (gt, reg0, 0),
+            (val_add, ":modifier_value", 1),
+	 (try_end),
+ 	 (try_begin),
+	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_herbarium_reward"),
+	    (gt, reg0, 0),
+            (val_add, ":modifier_value", 1),
+	 (try_end),
+	(try_begin),
+        	(store_and, ":check" ,":wound_mask", wound_head), #head injury
 		(neq, ":check", 0),
-        (val_sub, ":modifier_value", 1),
-	  (try_end),
+        	(val_sub, ":modifier_value", 1),
+	(try_end),
     (else_try), #Leadership
       (eq, ":skill_no", "skl_leadership"), # cumulative
       (try_begin),
