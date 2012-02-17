@@ -1,4 +1,5 @@
-﻿from header_game_menus import *
+﻿from header_common import *
+from header_game_menus import *
 from header_parties import *
 from header_items import *
 from header_mission_templates import *
@@ -7834,6 +7835,13 @@ game_menus = [
    ("scene5",[],"Battlefield9 (file scn_battlefield9.sco)",[(1261,"scn_battlefield9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield9"),(2048)]),
    ("leave" ,[],"Back...",[(change_screen_quit)])],
  ),
+
+("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,
+    "Welcome, adventurer, to TLD. Let the TLD for Warband experience start nao!",
+    "none", [],
+    [ ("continue",[],"Continue...",[(jump_to_menu, "mnu_start_game_1")]),
+      ("go_back",[],"Go back",[(change_screen_quit)])]
+),
 ] 
 
 ## quick scene chooser

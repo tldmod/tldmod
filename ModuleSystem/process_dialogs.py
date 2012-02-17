@@ -1,6 +1,7 @@
 import string
 import types
 
+from header_common import *
 from module_info import *
 from module_triggers import *
 from module_dialogs import *
@@ -15,7 +16,8 @@ sentence_conditions_pos = 2
 text_pos = 3
 opt_token_pos = 4
 sentence_consequences_pos = 5
-
+## Warband voiceover stuff
+sentence_voice_over_pos = 6
 
 
 #-------------------------------------------------------
@@ -65,6 +67,7 @@ def compile_sentence_tokens(sentences):
   input_tokens = []
   output_tokens = []
   dialog_states = ["start","party_encounter","prisoner_liberated","enemy_defeated","party_relieved","event_triggered","close_window","trade","exchange_members", "trade_prisoners","buy_mercenaries","view_char","training","member_chat","prisoner_chat"]
+  dialog_state_usages = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
   for sentence in sentences:
     output_token_id = -1
     output_token = sentence[opt_token_pos]
@@ -76,6 +79,7 @@ def compile_sentence_tokens(sentences):
         break
     if not found:
       dialog_states.append(output_token)
+      dialog_state_usages.append(0)
       output_token_id = len(dialog_states) - 1
     output_tokens.append(output_token_id)
   for sentence in sentences:
@@ -85,6 +89,7 @@ def compile_sentence_tokens(sentences):
     for i_t in xrange(len(dialog_states)):
       if input_token == dialog_states[i_t]:
         input_token_id = i_t
+        dialog_state_usages[i_t] = dialog_state_usages[i_t] + 1
         found = 1
         break
     if not found:
@@ -97,6 +102,9 @@ def compile_sentence_tokens(sentences):
       print "**********************************************************************************"
     input_tokens.append(input_token_id)
   save_dialog_states(dialog_states)
+  for i_t in xrange(len(dialog_states)):
+    if dialog_state_usages[i_t] == 0:
+      print "ERROR: Output token not found: " + dialog_states[i_t]
   return (input_tokens, output_tokens)
 
 def create_auto_id(sentence,auto_ids):
@@ -170,6 +178,14 @@ def save_sentences(variable_list,variable_uses,sentences,tag_uses,quick_strings,
         file.write("NO_TEXT ")
       file.write(" %d "%(output_states[i]))
       save_statement_block(file, 0, 1, sentence[sentence_consequences_pos], variable_list,variable_uses,tag_uses,quick_strings)
+
+      #### Warband voiceover addition
+      if (wb_compile_switch == 1):	  
+        if (len(sentence) > sentence_voice_over_pos):
+          file.write("%s "%sentence[sentence_voice_over_pos])
+        else:
+          file.write("NO_VOICEOVER ")
+      #### end Warband voiceover addition
       file.write("\n")
     except:
       print "Error in dialog line:"

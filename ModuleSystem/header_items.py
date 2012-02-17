@@ -35,12 +35,19 @@ itp_attach_left_item     = 0x00000100
 itp_attach_left_hand     = 0x00000200
 itp_attach_forearm       = 0x00000300
 itp_attach_armature      = 0x00000f00
+itp_force_attach_left_hand      = 0x0000000000000100
+itp_force_attach_right_hand     = 0x0000000000000200
+itp_force_attach_left_forearm   = 0x0000000000000300
+itp_attachment_mask             = 0x0000000000000f00
+
+
 
 itp_unique               = 0x00001000
 itp_always_loot          = 0x00002000
 ##itp_melee                = 0x00002000
 itp_no_parry             = 0x00004000
 itp_spear                = 0x00008000
+itp_default_ammo         = 0x00008000
 itp_shop                 = 0x00010000
 itp_wooden_attack        = 0x00020000
 itp_wooden_parry         = 0x00040000
@@ -56,13 +63,34 @@ itp_primary                  = 0x00400000
 itp_secondary                = 0x00800000
 itp_covers_legs              = 0x01000000
 itp_doesnt_cover_hair        = 0x01000000
+itp_can_penetrate_shield     = 0x01000000
 itp_consumable               = 0x02000000
 itp_bonus_against_shield     = 0x04000000
 itp_penalty_with_shield      = 0x08000000
 itp_cant_use_on_horseback    = 0x10000000
 itp_civilian                 = 0x20000000
+itp_next_item_as_melee       = 0x20000000
 itp_fit_to_head              = 0x40000000
+itp_offset_lance             = 0x40000000
+### MBSE addon
+itp_lance                    = 0x40000000
+### end MBSE addon
 itp_covers_head              = 0x80000000
+itp_couchable                = 0x0000000080000000
+itp_crush_through            = 0x0000000100000000
+#itp_knock_back               = 0x0000000200000000 being used?
+itp_remove_item_on_use       = 0x0000000400000000
+itp_unbalanced               = 0x0000000800000000
+
+itp_covers_beard             = 0x0000001000000000    #remove beard mesh
+itp_no_pick_up_from_ground   = 0x0000002000000000
+itp_can_knock_down           = 0x0000004000000000
+itp_extra_penetration        = 0x0000100000000000
+itp_has_bayonet              = 0x0000200000000000
+itp_cant_reload_while_moving = 0x0000400000000000
+itp_ignore_gravity           = 0x0000800000000000
+itp_ignore_friction          = 0x0001000000000000
+
 
 #equipment slots
 ek_item_0 = 0
@@ -76,8 +104,11 @@ ek_gloves = 7
 ek_horse  = 8
 ek_food   = 9
 
+if (wb_compile_switch == 0):
+  max_inventory_items = 64
+elif (wb_compile_switch == 1):
+  max_inventory_items = 96
 
-max_inventory_items = 64
 num_equipment_kinds = ek_food + 1
 num_weapon_proficiencies = 7
 
@@ -171,9 +202,18 @@ def shoot_speed(x):
 def get_missile_speed(y):
   return (y >> iwf_shoot_speed_bits) & ibf_10bit_mask
 
+def horse_scale(x):
+  return (((bignum | x) & ibf_10bit_mask) << iwf_weapon_length_bits)
+
 def weapon_length(x):
   return (((bignum | x) & ibf_10bit_mask) << iwf_weapon_length_bits)
 
+def shield_width(x):
+  return weapon_length(x)
+ 
+def shield_height(x):
+  return shoot_speed(x)
+ 
 def get_weapon_length(y):
   return ((y >> iwf_weapon_length_bits) & ibf_10bit_mask)
 
@@ -309,6 +349,8 @@ itcf_parry_forward_polearm                           = 0x0001000000000000
 itcf_parry_up_polearm                                = 0x0002000000000000
 itcf_parry_right_polearm                             = 0x0004000000000000
 itcf_parry_left_polearm                              = 0x0008000000000000
+
+itcf_horseback_slash_polearm                         = 0x0010000000000000
 
 itcf_force_64_bits                                   = 0x8000000000000000
 

@@ -15,6 +15,8 @@ sf_force_skybox      = 0x00000002   #Force adding a skybox even if indoors flag 
 sf_generate          = 0x00000100   #Generate terrain by terran-generator
 sf_randomize         = 0x00000200   #Randomize terrain generator key
 sf_auto_entry_points = 0x00000400   #Automatically create entry points
+sf_no_horses         = 0x00000800   #Horses are not avaible
+sf_muddy_water       = 0x00001000   #Changes the shader of the river mesh
 
 
 

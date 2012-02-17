@@ -1,5 +1,6 @@
 import string
 
+from header_common import *
 from module_info import *
 from module_troops import *
 
@@ -15,21 +16,35 @@ def save_troops():
   file.write("%d "%len(troops))
   for troop in troops:
     troop_len = len(troop)
-    if troop_len == 11:
-      troop[11:11] = [0, 0, 0, 0]
-    elif troop_len == 12:
-      troop[12:12] = [0, 0, 0]
-    elif troop_len == 13:
-      troop[13:13] = [0, 0]
-    elif troop_len == 14:
-      troop[14:14] = [0]
+    if (wb_compile_switch == 0):	
+      if troop_len == 11:
+        troop[11:11] = [0, 0, 0, 0]
+      elif troop_len == 12:
+        troop[12:12] = [0, 0, 0]
+      elif troop_len == 13:
+        troop[13:13] = [0, 0]
+      elif troop_len == 14:
+        troop[14:14] = [0]
+    elif (wb_compile_switch == 1):
+      if troop_len == 11:
+        troop[11:11] = [0, 0, 0, 0, 0]
+      elif troop_len == 12:
+        troop[12:12] = [0, 0, 0, 0]
+      elif troop_len == 13:
+        troop[13:13] = [0, 0, 0]
+      elif troop_len == 14:
+        troop[14:14] = [0, 0]
+      elif troop_len == 15:
+        troop[15:15] = [0]
     if (troop[4] > 0):
 #      add_tag_use(tag_uses,tag_scene,troop[4] & tsf_site_id_mask)
       id_no = find_object(troops,convert_to_identifier(troop[0]))
 #      if (id_no >= 0):  add_tag_use(tag_uses,tag_troop,id_no)
 #    if (troop[6] > 0):  add_tag_use(tag_uses,tag_faction,troop[6])
-
-    file.write("\ntrp_%s %s %s %d %d %d %d %d %d\n  "%(convert_to_identifier(troop[0]),replace_spaces(troop[1]),replace_spaces(troop[2]),troop[3],troop[4],troop[5], troop[6], troop[13], troop[14]))
+    if (wb_compile_switch == 0):
+      file.write("\ntrp_%s %s %s %d %d %d %d %d %d\n  "%(convert_to_identifier(troop[0]),replace_spaces(troop[1]),replace_spaces(troop[2]),troop[3],troop[4],troop[5], troop[6], troop[13], troop[14]))
+    elif (wb_compile_switch == 1):
+      file.write("\ntrp_%s %s %s %s %d %d %d %d %d %d\n  "%(convert_to_identifier(troop[0]),replace_spaces(troop[1]),replace_spaces(troop[2]), replace_spaces(str(troop[13])), troop[3],troop[4],troop[5], troop[6], troop[14], troop[15]))
     inventory_list = troop[7]
 #    inventory_list.append(itm_arrows)
 #    inventory_list.append(itm_corsair_arrows)

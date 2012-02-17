@@ -2894,6 +2894,9 @@ troops = [
 ["elder_mordor_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_mordor,
    [itm_m_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+["elder_isengard_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_urukhai,0,0,fac_isengard,
+   [itm_isen_uruk_light_b,itm_uruk_greaves,],
+      def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_lorien_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
    [itm_lorien_armor_e,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
@@ -3119,8 +3122,8 @@ troops = [
  
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
-["future_troop_1","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["future_troop_2","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
+["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 ["future_troop_3","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_4","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_5","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],

@@ -42,6 +42,14 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
                                                    get_thrust_damage(item[6]),
                                                    get_swing_damage(item[6]),
                                                                ))
+    if (wb_compile_switch == 1):
+      if (len(item) > 9):
+        ofile.write(" %d\n"%(len(item[9])))
+        for item_faction in item[9]:
+          ofile.write(" %d"%item_faction)
+        ofile.write("\n")
+      else:
+        ofile.write(" 0\n")
     trigger_list = []
     if (len(item) > 8):
       trigger_list = item[8]

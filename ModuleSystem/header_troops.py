@@ -53,6 +53,13 @@ tfg_horse            = 0x01000000
 tfg_shield           = 0x02000000
 tfg_ranged           = 0x04000000
 tf_unmoveable_in_party_window = 0x10000000
+tf_guarantee_boots            = tfg_boots
+tf_guarantee_armor            = tfg_armor
+tf_guarantee_helmet           = tfg_helm
+tf_guarantee_gloves           = tfg_gloves
+tf_guarantee_horse            = tfg_horse
+tf_guarantee_shield           = tfg_shield
+tf_guarantee_ranged           = tfg_ranged
 
 # Character attributes...
 ca_strength     = 0
@@ -288,12 +295,22 @@ def upgrade(troops,troop1_id,troop2_id):
   else:
     cur_troop = troops[troop1_no]
     cur_troop_length = len(cur_troop)
-    if cur_troop_length == 11:
-      cur_troop[11:11] = [0, 0, troop2_no, 0]
-    elif cur_troop_length == 12:
-      cur_troop[12:12] = [0, troop2_no, 0]
-    else:
-      cur_troop[13:cur_troop_length] = [troop2_no, 0]
+    if (wb_compile_switch == 0):
+      if cur_troop_length == 11:
+        cur_troop[11:11] = [0, 0, troop2_no, 0]
+      elif cur_troop_length == 12:
+        cur_troop[12:12] = [0, troop2_no, 0]
+      else:
+        cur_troop[13:cur_troop_length] = [troop2_no, 0]
+    elif (wb_compile_switch == 1):
+      if cur_troop_length == 11:
+        cur_troop[11:11] = [0, 0, 0, troop2_no, 0]
+      elif cur_troop_length == 12:
+        cur_troop[12:12] = [0, 0, troop2_no, 0]
+      elif cur_troop_length == 13:
+        cur_troop[13:13] = [0, troop2_no, 0]
+      else:
+        cur_troop[14:14] = [troop2_no, 0]  
 
 def upgrade2(troops,troop1_id,troop2_id,troop3_id):
   troop1_no = find_troop(troops,troop1_id)
@@ -308,9 +325,19 @@ def upgrade2(troops,troop1_id,troop2_id,troop3_id):
   else:
     cur_troop = troops[troop1_no]
     cur_troop_length = len(cur_troop)
-    if cur_troop_length == 11:
-      cur_troop[11:11] = [0, 0, troop2_no, troop3_no]
-    elif cur_troop_length == 12:
-      cur_troop[12:12] = [0, troop2_no, troop3_no]
-    else:
-      cur_troop[13:cur_troop_length] = [troop2_no, troop3_no]
+    if (wb_compile_switch == 0):
+      if cur_troop_length == 11:
+        cur_troop[11:11] = [0, 0, troop2_no, troop3_no]
+      elif cur_troop_length == 12:
+        cur_troop[12:12] = [0, troop2_no, troop3_no]
+      else:
+        cur_troop[13:cur_troop_length] = [troop2_no, troop3_no]
+    elif (wb_compile_switch == 1):
+      if cur_troop_length == 11:
+        cur_troop[11:11] = [0, 0, 0, troop2_no, troop3_no]
+      elif cur_troop_length == 12:
+        cur_troop[12:12] = [0, 0, troop2_no, troop3_no]
+      elif cur_troop_length == 13:
+        cur_troop[13:13] = [0, troop2_no, troop3_no]
+      else:
+        cur_troop[14:14] = [troop2_no, troop3_no]

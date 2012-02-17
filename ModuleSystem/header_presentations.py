@@ -12,5 +12,9 @@ tf_center_justify        = 0x00000010
 tf_double_space          = 0x00000800
 tf_vertical_align_center = 0x00001000
 tf_scrollable            = 0x00002000
+tf_single_line           = 0x00008000
+tf_with_outline          = 0x00010000
+tf_scrollable_style_2    = 0x00020000
 
 prsntf_read_only         = 0x00000001
+prsntf_manual_end_only   = 0x00000002

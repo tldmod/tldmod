@@ -11,6 +11,7 @@ voice_grunt_long = 3
 voice_yell       = 4
 voice_warcry     = 5
 voice_victory    = 6
+voice_stun       = 7
 
 skf_use_morph_key_10 = 0x00000001
 skf_use_morph_key_20 = 0x00000002

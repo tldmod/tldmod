@@ -37,6 +37,7 @@ mtf_persist_until_finished             = 0x00000100
 
 mtf_sit_tavern                         = 0x00000200
 mtf_sit_fight                          = 0x00000400
+mtf_sit_multiplayer_fight              = 0x00000800
 mtf_sit_ambushed                       = 0x00001000
 mtf_sit_town                           = 0x00002000
 mtf_sit_town_infiltrate                = 0x00004000
@@ -49,6 +50,7 @@ mtf_sit_day                            = 0x00100000
 mtf_sit_encounter_hostile              = 0x00200000
 mtf_sit_main_title                     = 0x00400000
 mtf_sit_victorious                     = 0x00800000
+mtf_sit_feast                          = 0x01000000
 mtf_sit_lords_hall                     = 0x02000000
 mtf_module_track                       = 0x10000000 ##set this flag for tracks placed under module folder
 

@@ -22,7 +22,7 @@ grc_infantry = 0
 grc_archers  = 1
 grc_cavalry  = 2
 grc_heroes   = 3
-grc_everyone = 10
+grc_everyone = 10-wb_compile_switch
 
 mordr_hold				= 0
 mordr_follow			= 1
@@ -38,6 +38,8 @@ mordr_use_any_weapon	= 10
 mordr_stand_ground		= 11
 mordr_hold_fire			= 12
 mordr_fire_at_will		= 13
+#WB
+mordr_retreat           = 14
 
 rordr_free				= 0
 rordr_mount				= 1
@@ -88,6 +90,7 @@ mtef_team_member_2       = 0x00008000
 mtef_infantry_first      = 0x00010000
 mtef_archers_first       = 0x00020000
 mtef_cavalry_first       = 0x00040000
+mtef_no_auto_reset       = 0x00080000 
 mtef_reverse_order       = 0x01000000
 mtef_use_exact_number    = 0x02000000
 
@@ -127,6 +130,7 @@ mtf_team_fight          = 0x00000001 #identify enemies through team_no
 mtf_battle_mode         = 0x00000002 #No inventory access
 mtf_commit_casualties   = 0x00000010
 mtf_no_blood            = 0x00000100
+mtf_synch_inventory     = 0x00010000 #Make a backup of player inventory and restore it at mission end.
 
 
 

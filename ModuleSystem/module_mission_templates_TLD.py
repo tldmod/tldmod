@@ -136,7 +136,7 @@ common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV 
   	(store_normalized_team_count,":a", 0), 	#  check that battle still goes on MT
 	(store_normalized_team_count,":b", 1),
 	(gt,":b",0),(gt,":a",0),
-    (display_message, "str_player_down"), #MV
+
     #MV: not sure about this one, will see if it's needed
 	# (set_show_messages, 0), #stop messages JL
 	# (team_give_order, "$fplayer_team_no", grc_everyone, mordr_charge), #charges everyone JL
@@ -157,6 +157,7 @@ common_battle_on_player_down =  (1, 4, ti_once, [(main_hero_fallen)],  [   # MV 
     # (set_mission_result,-1),
     # (call_script, "script_count_mission_casualties_from_agents"),
     # (finish_mission,0)
+    (display_message, "str_player_down"), #MV
 ])
 
 
@@ -903,6 +904,18 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 		(is_between, ":agent_item", item_warg_begin , item_warg_end),
 		(val_add,"$wargs_in_battle",1),# keep warg count up to date...
 		(agent_set_slot,":agent",slot_agent_mount_dead,0),
+		# (try_begin),
+			# (is_mbse_active),
+			# (display_message, "@MBSE working, warg spawning"),
+#			(agent_set_sound, ":agent", sound_horse_walk, "snd_warg_lone_woof"),
+#			(agent_set_sound, ":agent", sound_trot, "snd_evil_orders"),
+#			(agent_set_sound, ":agent", sound_canter, "snd_warg_lone_woof"),
+#			(agent_set_sound, ":agent", sound_gallop, "snd_warg_lone_woof"),
+#			(agent_set_sound, ":agent", sound_snort, "snd_warg_lone_woof"),
+#			(agent_set_sound, ":agent", sound_hit, "snd_nazgul_skreech_short"),
+			# (agent_set_sound, ":agent", sound_die, "snd_evil_orders"),
+			# (agent_set_sound, ":agent", sound_neigh, "snd_nazgul_skreech_short"),
+		# (try_end),
 	(try_end),
 	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg

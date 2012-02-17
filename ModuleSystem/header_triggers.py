@@ -1,3 +1,4 @@
+from header_common import *
 ###################################################
 # header_triggers.py
 # This file contains declarations for triggers
@@ -24,12 +25,14 @@ ti_on_scene_prop_hit     = -42.0 #can only be used in module_scene_props trigger
 # Trigger Param 1: prop instance number
 # Trigger Param 2: hit damage
 # Position Register 1: Hit Position
+# WB:Position Register 2: x holds attacker agent id
 
 ti_on_scene_prop_destroy = -43.0 #can only be used in module_scene_props triggers
 # Trigger Param 1: prop instance number
 
 ti_on_init_item          = -50.0 #can only be used in module_items triggers
 ti_on_weapon_attack      = -51.0 #can only be used in module_items triggers
+# WB: Trigger Param 1: attacker agent id
 # Position Register 1: Weapon Item Position
 
 ti_on_presentation_load  = -60.0 #can only be used in module_presentations triggers
@@ -45,6 +48,77 @@ ti_on_init_map_icon                   = -70.0 #can only be used in module_map_ic
 # Trigger Param 1: id of the owner party
 
 ti_once        = 100000000.0
+
+###########################################
+#### WB triggers
+ti_server_player_joined  = -15.0 #can only be used in module_mission_templates triggers
+# Used only by the server in multiplayer mode
+ti_on_multiplayer_mission_end = -16.0 # Trigger Param 1: player_no
+
+ti_after_mission_start   = -20.0 #can only be used in module_mission_templates triggers
+ti_escape_pressed        = -23.0 #can only be used in module_mission_templates triggers
+ti_battle_window_opened  = -24.0 #can only be used in module_mission_templates triggers
+ti_on_agent_killed_or_wounded = -26.0 #can only be used in module_mission_templates triggers
+ti_on_agent_knocked_down = -27.0 #can only be used in module_mission_templates triggers
+ti_on_agent_hit          = -28.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: damage inflicted agent_id
+# Trigger Param 2: damage dealer agent_id
+# Trigger Param 3: inflicted damage
+# Register 0: damage dealer item_id
+# Position Register 0: position of the blow
+#                      rotation gives the direction of the blow
+# Trigger result: if returned result is greater than or equal to zero, inflicted damage is set to the value specified by the module.
+
+ti_on_player_exit        = -29.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: player_id
+
+ti_on_scene_prop_use     = -44.0 #can only be used in module_scene_props triggers
+# Trigger Param 1: user agent id
+# Trigger Param 2: prop instance number
+
+ti_on_scene_prop_is_animating = -45.0 #can only be used in module_scene_props triggers
+# Trigger Param 1: prop instance number
+# Trigger Param 2: remaining animation time
+
+ti_on_scene_prop_animation_finished = -46.0 #can only be used in module_scene_props triggers
+# Trigger Param 1: prop instance number
+
+ti_on_scene_prop_start_use = -47.0 #can only be used in module_scene_props triggers
+# Trigger Param 1: user agent id
+# Trigger Param 2: prop instance number
+
+ti_on_scene_prop_cancel_use = -48.0 #can only be used in module_scene_props triggers
+# Trigger Param 1: user agent id
+# Trigger Param 2: prop instance number
+
+ti_on_missile_hit        = -52.0 #can only be used in module_items triggers
+# Position Register 1: Missile Position
+# Trigger Param 1: shooter agent id
+ti_on_item_picked_up     = -53.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: item id
+# Trigger Param 3: scene prop id (will be deleted after this trigger)
+ti_on_item_dropped       = -54.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: item id
+# Trigger Param 3: scene prop id
+ti_on_agent_mount        = -55.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: horse agent id
+ti_on_agent_dismount     = -56.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: horse agent id
+ti_on_item_wielded       = -57.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: item id
+ti_on_item_unwielded     = -58.0 #can only be used in module_mission_templates triggers
+# Trigger Param 1: agent id
+# Trigger Param 2: item id
+ti_on_presentation_mouse_press        = -64.0 #can only be used in module_presentations triggers
+# Trigger Param 1: id of the object that mouse is pressed on
+# Trigger Param 2: 0: left mouse button, 1 right mouse button, 2 middle mouse button
+
+
 
 # Keys that can be checked by key_is_down and key_clicked
 
@@ -168,19 +242,33 @@ gk_action = 4
 gk_jump = 5
 gk_attack = 6
 gk_defend = 7
-gk_equip_primary_weapon = 8
-gk_equip_secondary_weapon = 9
-gk_sheath_weapon = 10
-gk_leave = 11
-gk_zoom = 12
-gk_view_char = 13
-gk_cam_toggle = 14
-gk_character_window = 15
-gk_inventory_window = 16
-gk_party_window = 17
-gk_quests_window = 18
-gk_game_log_window = 19
-gk_view_orders = 20
+gk_kick = 8
+#gk_parry_then_attack = 8
+gk_toggle_weapon_mode = 9
+gk_equip_weapon_1 = 10
+gk_equip_weapon_2 = 11
+gk_equip_weapon_3 = 12
+gk_equip_weapon_4 = 13
+gk_equip_primary_weapon = 8+6*wb_compile_switch
+gk_equip_secondary_weapon = 9+6*wb_compile_switch
+gk_drop_weapon = 16
+gk_sheath_weapon = 10+7*wb_compile_switch
+gk_leave = 11+7*wb_compile_switch
+gk_zoom = 12+7*wb_compile_switch
+gk_view_char = 13+7*wb_compile_switch
+gk_cam_toggle = 14+7*wb_compile_switch
+gk_character_window = 15+28*wb_compile_switch
+gk_inventory_window = 16+28*wb_compile_switch
+gk_party_window = 17+28*wb_compile_switch
+gk_quests_window = 18+28*wb_compile_switch
+gk_game_log_window = 19+28*wb_compile_switch
+gk_view_orders = 20+2*wb_compile_switch
+gk_order_1 = 23
+gk_order_2 = 24
+gk_order_3 = 25
+gk_order_4 = 26
+gk_order_5 = 27
+gk_order_6 = 28
 gk_order_halt = 21
 gk_order_follow = 22
 gk_order_charge = 23
@@ -191,13 +279,25 @@ gk_order_fall_back = 27
 gk_order_stand_closer = 28
 gk_order_spread_out = 29
 gk_order_blunt_weapons_toggle = 30
-gk_everyone_hear = 31
-gk_infantry_hear = 32
-gk_archers_hear = 33
-gk_cavalry_hear = 34
-gk_reverse_order_group = 35
-gk_quick_save = 36
+gk_everyone_hear = 31-2*wb_compile_switch
+gk_infantry_hear = 32-2*wb_compile_switch
+gk_archers_hear = 33-2*wb_compile_switch
+gk_cavalry_hear = 34-2*wb_compile_switch
+gk_group0_hear = gk_infantry_hear
+gk_group1_hear = gk_archers_hear
+gk_group2_hear = gk_cavalry_hear
+gk_group3_hear = 33
+gk_group4_hear = 34
+gk_group5_hear = 35
+gk_group6_hear = 36
+gk_group7_hear = 37
+gk_group8_hear = 38
+gk_reverse_order_group = 35+4*wb_compile_switch
+gk_quick_save = 36+12*wb_compile_switch
 
+gk_everyone_around_hear = 40
+gk_mp_message_all = 41
+gk_mp_message_team = 42
 # Keys that can be caught by the trigger
 
 
@@ -223,3 +323,12 @@ trigger_consequences_pos = 4
 
 def ti_val(iv):
   return iv
+
+### MBSE addon
+ti_on_agent_hit_mbse     = -71 #can only be used in module_mission_templates triggers
+# Trigger Param 1: id of agent that received damage
+# Trigger Param 2: id of agent that delivered damage
+# Trigger Param 3: hit damage
+# Trigger Param 4: hit bone
+# Trigger Param 5: agent dealer's weapon
+# Trigger Result: Greater or equal 0 will change the damage

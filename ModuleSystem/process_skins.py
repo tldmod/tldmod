@@ -44,9 +44,9 @@ def write_voices(ofile, voices):
 def export_skins(skins):
   ofile = open(export_dir + "skins.txt","w")
   ofile.write("skins_file version 1\n")
-  ofile.write("%d\n"%len(skins))
   if len(skins) > 16:
     skins = skins[0:15]
+  ofile.write("%d\n"%len(skins))
   for skin in skins:
     skin_name      = skin[0]
     skin_flags     = skin[1]

@@ -19,6 +19,11 @@ sf_priority_3     = 0x00000030
 sf_priority_2     = 0x00000020
 sf_priority_1     = 0x00000010
 
+sf_vol_15         = 0x00000f00
+sf_vol_14         = 0x00000e00
+sf_vol_13         = 0x00000d00
+sf_vol_12         = 0x00000c00
+sf_vol_11         = 0x00000b00
 sf_vol_10         = 0x00000a00
 sf_vol_9          = 0x00000900
 sf_vol_8          = 0x00000800

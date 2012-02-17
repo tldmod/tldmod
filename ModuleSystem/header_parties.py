@@ -27,14 +27,17 @@ pf_no_label                  = 0x00080000
 pf_limit_members             = 0x00100000
 pf_hide_defenders            = 0x00200000
 pf_show_faction              = 0x00400000
+#pf_is_hidden                = 0x01000000 #used in the engine, do not overwrite this flag
+pf_dont_attack_civilians     = 0x02000000
+pf_civilian                  = 0x04000000
 
 ### parties name prefixes (mtarini)
 pf_nameprefix_nul            = 0x00000000
-pf_nameprefix_town           = 0x01000000
-pf_nameprefix_city           = 0x02000000
-pf_nameprefix_the            = 0x03000000
-pf_nameprefix_a              = 0x04000000
-pf_nameprefix_an             = 0x05000000
+pf_nameprefix_town           = 0x02000000
+pf_nameprefix_city           = 0x03000000
+pf_nameprefix_the            = 0x04000000
+pf_nameprefix_a              = 0x05000000
+pf_nameprefix_an             = 0x06000000
 
 pf_carry_goods_bits    = 48
 pf_carry_gold_bits     = 56
