@@ -8125,8 +8125,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
  A group at least {reg4} would offer them adequate protection.\
  Can you lead that supply train to {s8} in 7 days?"+promise_reg14_rp_of_s14
  , "escort_merchant_caravan_quest_brief",
-   [(quest_get_slot, reg8, "qst_escort_merchant_caravan", slot_quest_gold_reward),
-    (quest_get_slot, reg14, "qst_escort_merchant_caravan", slot_quest_target_amount),
+   [
+# Bugfix - CppCoder
+    (quest_get_slot, reg14, "qst_escort_merchant_caravan", slot_quest_gold_reward),
+    (quest_get_slot, reg4, "qst_escort_merchant_caravan", slot_quest_target_amount),
     #(quest_get_slot, reg6, "qst_escort_merchant_caravan", slot_quest_expiration_days),
     (quest_get_slot, ":quest_target_center", "qst_escort_merchant_caravan", slot_quest_target_center),
     (str_store_party_name, s8, ":quest_target_center")]],
