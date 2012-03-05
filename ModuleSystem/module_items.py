@@ -1022,12 +1022,12 @@ items =[
 ["dale_armor_k","Dale_Noble_Armor",[("dale_heavy_belt_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["dale_armor_l","Dale_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ###########HELMS##########
-["dale_helmet_a","Nasal_Helm_with_Chain",[("DwarfHelmConical_BChain",0)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_b","Nasal_Helm_with_Leather",[("DwarfHelmConical_BLeather",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_c","Round_Helm_with_Chain",[("DwarfHelmRoundChain",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(33)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_d","Round_Helm_with_Leather",[("DwarfHelmRoundLeather",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_e","Conical_Helm_with_Leather",[("DwarfHelmConicalLeather",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(33)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_f","Conical_Helm_with_Chain",[("DwarfHelmConicalChain",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_a","Nasal_Helm_with_Chain",[("dale_inf_helm_a",0)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_b","Nasal_Helm_with_Leather",[("dale_archer_helm_a",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_c","Round_Helm_with_Chain",[("dale_inf_helm_b",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(33)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_d","Round_Helm_with_Leather",[("dale_archer_helm_b",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_e","Conical_Helm_with_Leather",[("dale_inf_helm_b",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(33)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_f","Conical_Helm_with_Chain",[("dale_archer_helm_c",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 #["dale_hood", "Dale Hood",[("dale_hood",0)], itp_shop| itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #########WEAPONS##########
 ["dale_sword","Dale_Shortsword",[("dale_sword_b",0),("scab_dale_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(108)|weapon_length(88)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon],
