@@ -1173,7 +1173,7 @@ simple_triggers = [
 	(quest_get_slot, ":quest_object_center", "qst_kill_troll", slot_quest_object_center),
 	(str_store_party_name,s2,":quest_object_center"),
 	(display_message, "@The troll outside {s2} was killed. Mission canceled."),
-	(cancel_quest, "qst_kill_troll"),
+	(call_script, "script_cancel_quest", "qst_kill_troll"),
 ]),
 	
  
