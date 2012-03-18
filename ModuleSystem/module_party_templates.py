@@ -350,7 +350,7 @@ party_templates = [
 ("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,1,3)]), #two T1
 ("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,1,1),]), #two T1 & prize
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,0,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
-("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_mordor,1,3),(trp_morgul_orc,0,2)]), #T1 T2
+("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_morgul_orc,1,2)]), #T1 T2
 ("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,0,2),(trp_far_harad_tribesman,1,2)]), #three T1
 ("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
