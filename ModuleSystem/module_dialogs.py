@@ -3122,7 +3122,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [trp_dwarf_lord|plyr,"lord_talk", [(check_quest_active,"qst_find_lost_spears")], "Let me come into the dungeons", "find_lost_spears_permission", []],
 [trp_dwarf_lord,"find_lost_spears_permission",[(ge, "$g_talk_troop_faction_relation", 0)], "Alright, go. Your relations with dwarves are ok.", "find_lost_spears_permission_yes", []],
-[trp_dwarf_lord,"find_lost_spears_permission",[],"Ye shall not go there. Your relations with dwarves are bad.", "find_lost_spears_permission_no", []],
+[trp_dwarf_lord,"find_lost_spears_permission",[],"Ye shall not go there. Your relations with dwarves are bad.", "find_lost_spears_permission_yes", []],
 [trp_dwarf_lord,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[(assign,"$dungeon_access",1)]],
                             
 
@@ -3173,8 +3173,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 
-[anyone|plyr,"lord_talk", [(eq, 1, 0),(le,"$talk_context", tc_party_encounter),(ge, "$g_talk_troop_faction_relation", 0)],
-   "I have an offer for you.", "lord_talk_preoffer",[]],
+# [anyone|plyr,"lord_talk", [(eq, 1, 0),(le,"$talk_context", tc_party_encounter),(ge, "$g_talk_troop_faction_relation", 0)],
+   # "I have an offer for you.", "lord_talk_preoffer",[]],
   
 [anyone|plyr,"lord_talk", [(eq,"$encountered_party_hostile",0),
                              (eq,"$talk_context", tc_party_encounter), #works only on map: lords in towns get reinforced anyway
@@ -3864,12 +3864,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1),
-                             #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
-                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-                             #(ge, "$g_talk_troop_faction_relation", 10),
-                             ],
-"CHEAT:I want to suggest a course of action.", "lord_suggest_action_ask",[]],
+# [anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1),
+                             # #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+                             # (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+                             # #(ge, "$g_talk_troop_faction_relation", 10),
+                             # ],
+# "CHEAT:I want to suggest a course of action.", "lord_suggest_action_ask",[]],
 
 [anyone,"lord_tell_objective", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 1),
                                   # insert this string where appropriate
@@ -4465,32 +4465,6 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
 #Request Mission
-
-[anyone|auto_proceed,"lord_request_mission_ask",
-   [(eq, "$players_kingdom", 0),
-    (ge, "$g_talk_troop_faction_relation", 0),
-    (ge, "$g_talk_troop_relation", 0),
-#    (troop_slot_ge, "trp_player", slot_troop_renown, 30),
-    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"),
-    (faction_get_slot, ":last_offer_time", "$g_talk_troop_faction", slot_faction_last_mercenary_offer_time),
-    (assign, ":num_enemies", 0),
-    (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_state, sfs_active),
-      (store_relation, ":reln", "$g_talk_troop_faction", ":faction_no"),
-      (lt, ":reln", 0),
-      (val_add, ":num_enemies", 1),
-    (try_end),
-    (ge, ":num_enemies", 1),
-    (store_current_hours, ":cur_hours"),
-    (store_add,  ":week_past_last_offer_time", ":last_offer_time", 7 * 24),
-    (val_add,  ":last_offer_time", 24),
-    (ge, ":cur_hours", ":last_offer_time"),
-    (store_random_in_range, ":rand", 0, 100),
-    (this_or_next|lt, ":rand", 20),
-    (ge, ":cur_hours", ":week_past_last_offer_time")],
-"Warning: This line should never display.", "lord_propose_mercenary",[(store_current_hours, ":cur_hours"),
-                                  (faction_set_slot, "$g_talk_troop_faction", slot_faction_last_mercenary_offer_time,  ":cur_hours")]],
-
  
 [anyone,"lord_request_mission_ask", [(store_partner_quest,":lords_quest"),(ge,":lords_quest",0)],
 "You still haven't finished the last task I gave you, {playername}. You should be working on that, not asking me for other things to do.", "lord_pretalk",[]],
@@ -6799,14 +6773,14 @@ It's an important matter, so please make haste.", "caravan_help1",[
     (call_script, "script_change_player_relation_with_center", ":giver_town", 1),
     (call_script, "script_end_quest", "qst_deliver_wine")]],
   
-[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
-                                     (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
-                                     (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
-                                     (store_item_kind_count, ":item_count", ":quest_target_item"),
-                                     (eq, ":item_count", 0),
-                                     (quest_get_slot, reg9, "qst_deliver_wine", slot_quest_target_amount),
-                                     (str_store_item_name, s4, ":quest_target_item")],
-"I was told to deliver you {reg9} units of {s4}, but I lost the cargo on the way.", "tavernkeeper_deliver_wine_lost",[]],
+# [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_wine"),
+                                     # (quest_slot_eq, "qst_deliver_wine", slot_quest_target_center, "$g_encountered_party"),
+                                     # (quest_get_slot, ":quest_target_item", "qst_deliver_wine", slot_quest_target_item),
+                                     # (store_item_kind_count, ":item_count", ":quest_target_item"),
+                                     # (eq, ":item_count", 0),
+                                     # (quest_get_slot, reg9, "qst_deliver_wine", slot_quest_target_amount),
+                                     # (str_store_item_name, s4, ":quest_target_item")],
+# "I was told to deliver you {reg9} units of {s4}, but I lost the cargo on the way.", "tavernkeeper_deliver_wine_lost",[]],
   
 # [anyone,"tavernkeeper_deliver_wine_lost", [],
  # "What? I was waiting for that {s4} for weeks!\

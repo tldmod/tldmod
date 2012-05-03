@@ -7836,12 +7836,12 @@ game_menus = [
    ("leave" ,[],"Back...",[(change_screen_quit)])],
  ),
 
-("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,
-    "Welcome, adventurer, to TLD. Let the TLD for Warband experience start nao!",
-    "none", [],
-    [ ("continue",[],"Continue...",[(jump_to_menu, "mnu_start_game_1")]),
-      ("go_back",[],"Go back",[(change_screen_quit)])]
-),
+# ("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,
+    # "Welcome, adventurer, to TLD. Let the TLD for Warband experience start nao!",
+    # "none", [],
+    # [ ("continue",[],"Continue...",[(jump_to_menu, "mnu_start_game_1")]),
+      # ("go_back",[],"Go back",[(change_screen_quit)])]
+# ),
 ] 
 
 ## quick scene chooser

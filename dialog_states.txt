@@ -166,8 +166,6 @@ lord_active_mission_1
 lord_request_mission_ask
 find_lost_spears_permission
 find_lost_spears_permission_yes
-find_lost_spears_permission_no
-lord_talk_preoffer
 lord_give_troops
 lord_give_troops_check
 lord_give_troops_check_1
@@ -195,7 +193,6 @@ lord_talk_ask_location_3
 lord_talk_ask_about_war_2
 lord_talk_ask_about_war_details
 party_encounter_lord_hostile_ultimatum_surrender
-lord_suggest_action_ask
 lord_active_mission_2
 lord_generic_mission_thank
 lord_generic_mission_thank_extra
@@ -209,7 +206,6 @@ lord_hunt_down_fugitive_success_2
 lord_hunt_down_fugitive_reward_accept
 lord_active_mission_3
 lord_mission_failed
-lord_propose_mercenary
 lord_tell_mission
 lord_mission_capture_troll_1
 lord_mission_capture_troll_2
@@ -315,7 +311,6 @@ runaway_serf_talk_again_return_2
 mayor_deliver_wine
 mayor_pretalk
 mayor_deliver_wine_incomplete
-tavernkeeper_deliver_wine_lost
 mercenary_tavern_talk
 mercenary_after_recruited
 mercenary_after_recruited_2
