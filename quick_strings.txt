@@ -1,4 +1,4 @@
-1022
+1024
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -590,6 +590,7 @@ qstr_Orc_hiring_bonus:_+2 Orc_hiring_bonus:_+2/3_for_each_orc^
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^{s5}TOTAL:__{reg5}
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr__________Faction_str _________Faction_strengths_report:^{s2}
+qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_strength.
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
@@ -781,6 +782,7 @@ qstr_Breaking_camp... Breaking_camp...
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
+qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.

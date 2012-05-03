@@ -1460,6 +1460,8 @@ game_menus = [
       (str_store_string, s2, "@{s2}^_________{s4}: {reg1} ({s23})"),
     (try_end),
     (str_store_string, s1, "@_________Faction strengths report:^{s2}"),
+    (assign, reg1, "$g_fac_str_siegable"),
+    (str_store_string, s1, "@{s1}^^Factions are normally sieged when below {reg1} strength."),
     ],
     [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports")])]
  ),

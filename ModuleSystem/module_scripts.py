@@ -1718,8 +1718,8 @@ scripts = [
 	(assign, "$inital_player_xp", 0),
 	# savegame compartibillity globals. USE THOSE in code if need be
 	# Feel free to rename them... BUT if so rename then if variables.txt BEFORE you compile your code!!!
-	(assign, "$g_variable5", 0), (assign, reg0, "$g_variable5"), #MV: to get rid of build warnings - remove on use
-	(assign, "$g_variable6", 0), (assign, reg0, "$g_variable6"),
+	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
+	(assign, "$g_variable6", 0), (assign, reg0, "$g_variable6"), #MV: to get rid of build warnings - remove on use
 	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"),
 	(assign, "$g_variable8", 0), (assign, reg0, "$g_variable8"),
 	(assign, "$g_variable9", 0), (assign, reg0, "$g_variable9"),

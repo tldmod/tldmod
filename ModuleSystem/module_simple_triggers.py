@@ -367,10 +367,21 @@ simple_triggers = [
      (call_script, "script_recalculate_ais"),
     ]),
 # (20) Count faction armies
-(24,[(try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+(24,[ (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":faction_no"),
       (try_end),
-    #TLD, grow faction strength with time from center income
+      #TLD: ease siege requirements with player level to get a more dynamic game
+      (store_character_level, ":player_level", "trp_player"),
+      (try_begin),
+        (gt, ":player_level", tld_player_level_to_own_chest), #some min level needed to do this
+        (store_sub, ":new_fac_str_siegable", ":player_level", tld_player_level_to_own_chest), #1-..
+        (val_mul, ":new_fac_str_siegable", 100),
+        (val_add, ":new_fac_str_siegable", fac_str_weak),
+        (neq, ":new_fac_str_siegable", "$g_fac_str_siegable"), #this is how we determine if the player leveled up :); also makes old savegames work
+        (assign, "$g_fac_str_siegable", ":new_fac_str_siegable"),
+        (display_message, "@The war expands, commanders are getting bolder! (siege requirements reduced)"),
+      (try_end),
+      #TLD, grow faction strength with time from center income
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
 	     (faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_dying), #was 1: no annoying regen for dying factions (<500)
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),

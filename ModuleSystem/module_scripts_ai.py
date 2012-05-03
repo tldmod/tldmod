@@ -241,9 +241,10 @@ ai_scripts = [
            (faction_get_slot, ":center_faction_strength", ":center_faction", slot_faction_strength),
            
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
-           (lt, ":center_faction_strength", fac_str_weak), # otherwise, defenders need to be weak
+           (lt, ":center_faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
            #MV: if it's a faction capital, the enemy needs to be very weak
-           (this_or_next|lt, ":center_faction_strength", fac_str_very_weak),
+           (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+           (this_or_next|lt, ":center_faction_strength", ":capital_siegable_str"),
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
            (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
 
@@ -291,7 +292,9 @@ ai_scripts = [
 #MV test code end
            (store_mul, ":center_score", 1000, ":faction_marshall_army_strength"),
            (val_div, ":center_score", ":center_str"),
-           (this_or_next|lt, ":center_faction_strength", fac_str_very_weak), #attack very weak factions regardless of odds (not too smart, but hopefully the player will help out)
+           (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+           (this_or_next|lt, ":center_faction_strength", ":capital_siegable_str"), #too much?
+           #(this_or_next|lt, ":center_faction_strength", fac_str_very_weak), #attack very weak factions regardless of odds (not too smart, but hopefully the player will help out)
            (gt, ":center_score", 1200), #siege attacks more likely with worse odds (down to +20% advantage), was 1500 (+50%)
            (val_min, ":center_score", 20000),#20 times stronger means an easy victory, distance is more important
            (try_begin),

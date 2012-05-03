@@ -3419,9 +3419,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      #make sure the enemy faction is weak enough to be sieged
      (faction_get_slot, ":enemy_faction_strength", ":enemy_faction", slot_faction_strength),       
      (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
-     (lt, ":enemy_faction_strength", fac_str_weak), # otherwise, defenders need to be weak
+     (lt, ":enemy_faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
      #if it's a faction capital, the enemy needs to be very weak
-     (this_or_next|lt, ":enemy_faction_strength", fac_str_very_weak),
+     (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+     (this_or_next|lt, ":enemy_faction_strength", ":capital_siegable_str"),
      (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
      (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
 
