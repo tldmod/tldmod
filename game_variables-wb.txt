@@ -1,0 +1,1642 @@
+# Initial Buffer_sizes
+# Modders may adjust these large enough so that the game will not need to restore
+# buffers during the game. However keeping them excessively large will reduce performance in most systems.
+#Buffer_sizes WB (if smaller than 65535, this also represents the maximum vertex count for a corresponding mesh)
+new_buffer_size_dx7_regular_ffp_static  = 262144
+new_buffer_size_dx7_regular_ffp_dynamic = 262144
+new_buffer_size_regular_ffp_static 		=  32768
+new_buffer_size_regular_ffp_dynamic     =  32768
+new_buffer_size_regular_static          = 131072
+new_buffer_size_regular_dynamic         =  65536
+new_buffer_size_skinning_static         = 131072
+new_buffer_size_skinning_dynamic        =  65536
+new_buffer_size_normal_map_static       = 131072
+new_buffer_size_normal_map_dynamic      =  65536
+new_buffer_size_normal_map_skinning_static  = 131072
+new_buffer_size_normal_map_skinning_dynamic =  65536
+#Buffer_sizes MB
+buffer_size_regular_ffp_static = 0
+buffer_size_regular_ffp_dynamic     =  24000
+buffer_size_regular_static          = 200000
+buffer_size_regular_dynamic         =  35000
+buffer_size_skinning_static         = 150000
+buffer_size_skinning_dynamic        =      0
+buffer_size_normal_map_static       = 150000
+buffer_size_normal_map_dynamic      =  12000
+buffer_size_dx7_regular_ffp_static  = 290000
+buffer_size_dx7_regular_ffp_dynamic =  30000
+
+#Global_values
+musket_left_hand_x_dif = 0.0
+musket_left_hand_y_dif = -0.37
+musket_left_hand_z_dif = -0.04
+
+arrow_button_height = 0.1
+arrow_button_width_ratio = 1.51
+combobox_child_button_position_x = 0.001
+combobox_child_button_size_x = 0.215
+combobox_child_button_size_y = 0.029
+combobox_child_button_text_size_x = 0.018
+combobox_child_button_text_size_y = 0.018
+combobox_button_size_x = 0.217
+combobox_button_size_y = 0.038
+combobox_text_size = 0.02
+combobox_text_position_x = 0.0
+combobox_text_position_y = 0.013
+combobox_child_button_text_position_x = 0.0
+combobox_child_button_text_position_y = 0.01
+
+#Yes_no_window MB
+yn_tb_name_x = 0.1
+yn_tb_name_y = 0.2
+#Yes_no_window WB
+yes_no_generic_combo_position_x = 0.132
+yes_no_generic_combo_position_y = 0.15
+yes_no_generic_combo_text_size_x = 0.02
+yes_no_generic_combo_text_size_y = 0.02
+
+yes_no_text_title_position_x = 0.03
+yes_no_text_title_position_y = 0.4
+yes_no_text_title_size_x = 0.43
+yes_no_text_title_size_y = 0.04
+yes_no_text_title_text_flags = 0x10
+yes_no_text_title_text_size_x = 0.025
+yes_no_text_title_text_size_y = 0.025
+
+yes_no_text_question_with_text_box_position_x = 0.02
+yes_no_text_question_with_text_box_position_y = 0.325
+yes_no_text_question_with_text_box_size_x = 0.45
+yes_no_text_question_with_text_box_size_y = 0.1
+yes_no_text_question_with_text_box_text_flags = 0x110
+yes_no_text_question_with_text_box_text_size_x = 0.02
+yes_no_text_question_with_text_box_text_size_y = 0.02
+
+yes_no_text_generic_label2_position_x = 0.02
+yes_no_text_generic_label2_position_y = 0.225
+yes_no_text_generic_label2_size_x = 0.45
+yes_no_text_generic_label2_size_y = 0.1
+yes_no_text_generic_label2_text_flags = 0x110
+yes_no_text_generic_label2_text_size_x = 0.02
+yes_no_text_generic_label2_text_size_y = 0.02
+
+yes_no_text_question_position_x = 0.02
+yes_no_text_question_position_y = 0.3
+yes_no_text_question_size_x = 0.45
+yes_no_text_question_size_y = 0.15
+yes_no_text_question_text_flags = 0x110
+yes_no_text_question_text_size_x = 0.02
+yes_no_text_question_text_size_y = 0.02
+
+yes_no_text_generic_combo_position_x = 0.0
+yes_no_text_generic_combo_position_y = 0.2
+yes_no_text_generic_combo_size_x = 0.49
+yes_no_text_generic_combo_size_y = 0.04
+yes_no_text_generic_combo_text_flags = 0x10
+yes_no_text_generic_combo_text_size_x = 0.02
+yes_no_text_generic_combo_text_size_y = 0.02
+
+yes_no_generic_text_box_position_x = 0.1
+yes_no_generic_text_box_position_y = 0.27
+yes_no_generic_text_box_text_size_x = 0.02
+yes_no_generic_text_box_text_size_y = 0.02
+
+yes_no_generic_text_box_simple_1_position_x = 0.1
+yes_no_generic_text_box_simple_1_position_y = 0.28
+yes_no_generic_text_box_simple_1_width = 0.3
+yes_no_generic_text_box_simple_1_size_x = 0.4
+yes_no_generic_text_box_simple_1_size_y = 0.2
+yes_no_generic_text_box_simple_1_text_flags = 0x4000
+
+yes_no_generic_text_box_simple_2_position_x = 0.1
+yes_no_generic_text_box_simple_2_position_y = 0.18
+yes_no_generic_text_box_simple_2_width = 0.3
+yes_no_generic_text_box_simple_2_size_x = 0.4
+yes_no_generic_text_box_simple_2_size_y = 0.2
+yes_no_generic_text_box_simple_2_text_flags = 0x4000
+
+yes_no_button_position_x = 0.169
+yes_no_button_position_y = 0.05
+
+yes_no_button1_position_x = 0.088
+yes_no_button1_position_y = 0.05
+
+yes_no_button2_position_x = 0.25
+yes_no_button2_position_y = 0.05
+
+yes_no_button1_longer_position_x = 0.05
+yes_no_button1_longer_position_y = 0.07
+
+yes_no_button2_longer_position_x = 0.05
+yes_no_button2_longer_position_y = 0.02
+
+#Load_save_window
+save_b_done_position_x = 0.70
+save_b_done_position_y = 0.03
+save_b_cancel_position_x = 0.50
+save_b_cancel_position_y = 0.03
+save_b_delete_position_x = 0.05
+save_b_delete_position_y = 0.03
+save_b_delete_text_color = 0xFF990000
+save_b_delete_highlight_text_color = 0xFFFF2222
+
+#Load_save_window_variables
+save_b_done_h = 0.05
+save_b_cancel_h = 0.05
+save_b_delete_h = 0.04
+save_b_save_x = 0.015
+save_b_save_y = 0.51
+save_b_save_x_a = 0.32
+save_b_save_y_a = 0.21
+save_b_save_size_y = 0.2
+save_b_save_t_s = 0.03
+save_b_save_button_h = 0.37
+save_b_save_t_c = 0xFFAAAAAA
+save_b_save_t_h_c = 0xFFFFFFFF
+save_t_name_x = 0.05
+save_t_name_y = 0.12
+save_t_info_x = 0.05
+save_t_info_y = 0.07
+save_t_error_x = 0.02
+save_t_error_y = 0.01
+
+#Character_window
+char_b_reset_position_x = 0.7
+char_b_reset_position_y = 0.018
+char_b_reset_highlight_text_color = 0xFFAA2200
+
+char_b_done_position_x = 0.86
+char_b_done_position_y = 0.018
+
+char_b_stats_position_x = 0.02
+char_b_stats_position_y = 0.015
+
+char_b_next_position_x = 0.18125
+char_b_next_position_y = 0.715
+
+char_b_prev_position_x = 0.04875
+char_b_prev_position_y = 0.715
+
+char_bo_skills_position_x = 0.05
+char_bo_skills_position_y = 0.05
+char_bo_skills_size_x = 0.33
+
+char_b_attribs_base_position_x = 0
+char_b_attribs_base_position_y = 0.17
+char_b_attribs_base_size_x = 0.15
+char_b_attribs_base_size_y = 0.03
+char_b_attribs_base_text_color = 0xFF000033
+char_b_attribs_base_highlight_text_color = 0xFF0011DD
+char_b_attribs_base_text_flags = 0x4
+char_b_attribs_base_text_size_x = 0.02
+char_b_attribs_base_text_size_y = 0.02
+
+char_b_skills_base_position_x = 0
+char_b_skills_base_position_y = 0.00975
+char_b_skills_base_text_color = 0xFF003300
+char_b_skills_base_highlight_text_color = 0xFF00AA00
+char_b_skills_base_text_flags = 0x1
+char_b_skills_base_text_size_x = 0.017
+char_b_skills_base_text_size_y = 0.017
+
+char_b_weapon_proficiencies_base_text_color = 0xFF330000
+char_b_weapon_proficiencies_base_highlight_text_color = 0xFFDD1100
+char_b_weapon_proficiencies_base_text_flags = 0x4
+char_b_weapon_proficiencies_base_text_size_x = 0.017
+char_b_weapon_proficiencies_base_text_size_y = 0.017
+char_b_weapon_proficiencies_base_size_x = 0.206
+char_b_weapon_proficiencies_base_size_y = 0.01875
+char_b_weapon_proficiencies_base_position_x = 0.7125
+char_b_weapon_proficiencies_base_position_y = 0.38
+
+char_s_skills_position_x = 0.665
+char_s_skills_position_y = 0.067
+char_s_skills_size_x = 0.012
+char_s_skills_size_y = 0.43
+
+char_sc_skills_outer_position_x = 0.35
+char_sc_skills_outer_position_y = 0.07
+char_sc_skills_outer_size_x = 0.32
+char_sc_skills_outer_size_y = 0.48
+
+char_t_weapon_proficiencies_title_position_x = 0.7455
+char_t_weapon_proficiencies_title_position_y = 0.413
+char_t_weapon_proficiencies_title_size_x = 0.13
+char_t_weapon_proficiencies_title_size_y = 0.03
+char_t_weapon_proficiencies_title_text_size_x = 0.02
+char_t_weapon_proficiencies_title_text_size_y = 0.02
+char_t_weapon_proficiencies_title_text_color = 0xFF331100
+char_t_weapon_proficiencies_title_text_flags = 0x4
+
+char_t_attributes_title_position_x = 0.08
+char_t_attributes_title_position_y = 0.25
+char_t_attributes_title_size_x = 0.13
+char_t_attributes_title_size_y = 0.03
+char_t_attributes_title_text_size_x = 0.023
+char_t_attributes_title_text_size_y = 0.023
+char_t_attributes_title_text_color = 0xFF001133
+char_t_attributes_title_text_flags = 0x4
+
+char_t_skills_title_position_x = 0.39
+char_t_skills_title_position_y = 0.514
+char_t_skills_title_size_x = 0.13
+char_t_skills_title_size_y = 0.03
+char_t_skills_title_text_size_x = 0.02
+char_t_skills_title_text_size_y = 0.02
+char_t_skills_title_text_color = 0xFF113300
+char_t_skills_title_text_flags = 0x4
+
+char_bo_attribs_position_x = 0.042
+char_bo_attribs_position_y = 0.05
+char_bo_attribs_size_x = 0.223
+char_bo_attribs_size_y = 1
+char_bo_attribs_text_size_x = 0.02
+char_bo_attribs_text_size_y = 0.02
+
+char_bo_general_info_position_x = 0.355
+char_bo_general_info_position_y = 0.53
+char_bo_general_info_size_x = 0.4
+char_bo_general_info_size_y = 0.12
+char_bo_general_info_text_color = 0xFF331100
+
+char_tb_character_name_position_x = 0.31
+char_tb_character_name_position_y = 0.69
+char_tb_character_name_text_position_x = 0.02625
+char_tb_character_name_text_position_y = 0.015
+char_tb_character_name_size_x = 0.375
+char_tb_character_name_size_y = 0.04
+
+char_bo_skill_desc_position_x = 0.713125
+char_bo_skill_desc_position_y = 0.450625
+char_bo_skill_desc_size_x = 0.233125
+char_bo_skill_desc_size_y = 0.265
+char_bo_skill_desc_text_size_x = 0.017
+char_bo_skill_desc_text_size_y = 0.017
+char_bo_skill_desc_text_color = 0xFF330000
+char_bo_skill_desc_text_flags = 0x111
+
+char_t_explanation_position_x = 0
+char_t_explanation_position_y = 0.08
+char_t_explanation_size_x = 0.233125
+char_t_explanation_size_y = 0.013
+char_t_explanation_text_size_x = 0.014
+char_t_explanation_text_size_y = 0.014
+char_t_explanation_text_color = 0xFFFF0000
+
+char_i_character_position_x = 0.03
+char_i_character_position_y = 0.32
+char_i_character_size_x = 0.27
+char_i_character_size_y = 0.4
+
+char_i_character_shadow_position_x = 0.153
+char_i_character_shadow_position_y = 0.343
+char_i_character_shadow_size_x = 0.27
+char_i_character_shadow_size_y = 0.13
+# WB addition
+character_text_skill_points_position_x = 0.34
+character_text_skill_points_position_y = 0.065
+character_text_skill_points_text_size_x = 0.022
+character_text_skill_points_text_size_y = 0.022
+character_text_skill_points_size_x = 0.32
+character_text_skill_points_size_y = 0.04
+character_text_skill_points_text_color = 0xFF002200
+character_text_skill_points_text_flags = 0x10
+
+character_text_attribute_points_position_x = 0.02
+character_text_attribute_points_position_y = 0.065
+character_text_attribute_points_text_size_x = 0.022
+character_text_attribute_points_text_size_y = 0.022
+character_text_attribute_points_size_x = 0.28
+character_text_attribute_points_size_y = 0.04
+character_text_attribute_points_text_color = 0xFF000022
+character_text_attribute_points_text_flags = 0x10
+
+character_text_weapon_prop_points_position_x = 0.7
+character_text_weapon_prop_points_position_y = 0.065
+character_text_weapon_prop_points_text_size_x = 0.022
+character_text_weapon_prop_points_text_size_y = 0.022
+character_text_weapon_prop_points_size_x = 0.28
+character_text_weapon_prop_points_size_y = 0.04
+character_text_weapon_prop_points_text_color = 0xFF220000
+character_text_weapon_prop_points_text_flags = 0x10
+
+
+#Character_window_variables
+char_b_reset_h = 0.038
+char_b_done_h = 0.038
+char_b_stats_h = 0.03
+char_b_prev_h = 0.025
+char_b_next_h = 0.025
+char_b_skills_w = 0.26
+char_b_skills_y_a = 0.0175
+char_b_skills_x_a = 0.025
+char_b_weapon_proficiencies_y_a = 0.03
+char_b_attribs_y_a = 0.03
+char_b_skill_levels_x = 0.24
+char_b_skill_levels_w = 0.02
+char_b_skill_increment_x = 0.2625
+char_b_skill_increment_y_a = 0.005
+char_b_skill_increment_h_a = 0.002
+char_b_skill_increment_t_s = 0.018
+char_b_weapon_proficiency_increment_x = 0.935
+char_b_weapon_proficiency_increment_y = 0.375
+char_b_weapon_proficiency_increment_y_a = 0.03
+char_b_weapon_proficiency_increment_h = 0.024
+char_b_weapon_proficiency_increment_t_s = 0.024
+char_b_attrib_increment_x = 0.17
+char_b_attrib_increment_y_a = 0.0000
+char_b_attrib_increment_h = 0.025
+char_b_attrib_increment_t_s = 0.025
+char_tb_character_name_t_c = 0xFFFF0000
+char_t_current_level_x = 0
+char_t_current_level_y = 0.045
+char_t_base_attrib_x = 0
+char_t_base_attrib_y = 0.020
+char_t_level_x = 0
+char_t_level_y = 0.12
+char_t_xp_x = 0
+char_t_xp_y = 0.07
+char_t_next_level_at_x = 0
+char_t_next_level_at_y = 0.045
+char_t_health_x = 0
+char_t_health_y = 0.095
+char_t_attrib_points_x = 0.04
+char_t_attrib_points_y = 0.02
+char_t_skill_points_x = 0.4
+char_t_skill_points_y = 0.02
+char_t_weapon_points_x = 0.72
+char_t_weapon_points_y = 0.02
+char_num_skills = 24
+
+#Inventory_window
+inv_s_inventory1_position_x = 0.961
+inv_s_inventory1_position_y = 0.11
+inv_s_inventory1_size_x = 0.02
+inv_s_inventory1_size_y = 0.58
+
+inv_s_inventory2_position_x = 0.2925
+inv_s_inventory2_position_y = 0.11
+inv_s_inventory2_size_x = 0.02
+inv_s_inventory2_size_y = 0.58
+
+inv_sc_inventory1_outer_position_x = 0.691
+inv_sc_inventory1_outer_position_y = 0.6975
+inv_sc_inventory1_outer_size_x = 0.2875
+
+inv_sc_inventory2_outer_position_x = 0.023
+inv_sc_inventory2_outer_position_y = 0.6975
+inv_sc_inventory2_outer_size_x = 0.2875
+
+inv_t_gold1_position_x = 0.726
+inv_t_gold1_position_y = 0.043
+inv_t_gold1_size_x = 0.21
+inv_t_gold1_size_y = 0.04
+inv_t_gold1_text_size_x = 0.023
+inv_t_gold1_text_size_y = 0.023
+inv_t_gold1_text_flags = 0x10
+
+inv_t_gold2_position_x = 0.065
+inv_t_gold2_position_y = 0.043
+inv_t_gold2_size_x = 0.21
+inv_t_gold2_size_y = 0.04
+inv_t_gold2_text_size_x = 0.023
+inv_t_gold2_text_size_y = 0.023
+inv_t_gold2_text_flags = 0x10
+
+inv_t_name1_position_x = 0.748
+inv_t_name1_position_y = 0.709
+inv_t_name1_text_size_x = 0.017
+inv_t_name1_text_size_y = 0.017
+inv_t_name1_size_x = 0.18
+inv_t_name1_size_y = 0.04
+inv_t_name1_text_flags = 0x10
+
+inv_t_name2_position_x = 0.075
+inv_t_name2_position_y = 0.709
+inv_t_name2_text_size_x = 0.017
+inv_t_name2_text_size_y = 0.017
+inv_t_name2_size_x = 0.18
+inv_t_name2_size_y = 0.04
+inv_t_name2_text_flags = 0x10
+
+inv_b_leave_position_x = 0.512
+inv_b_leave_position_y = 0.03
+
+inv_t_total_cost_position_x = 0.41
+inv_t_total_cost_position_y = 0.293
+inv_t_total_cost_size_x = 0.18
+inv_t_total_cost_size_y = 0.022
+inv_t_total_cost_text_size_x = 0.017
+inv_t_total_cost_text_size_y = 0.017
+inv_t_total_cost_text_color = 0xFFFFFF99
+inv_t_total_cost_text_flags = 0x10
+
+inv_t_armor_base_position_x = 0.51
+inv_t_armor_base_position_y = 0.18
+inv_t_armor_base_size_x = 0.125
+inv_t_armor_base_size_y = 0.022
+inv_t_armor_base_text_size_x = 0.017
+inv_t_armor_base_text_size_y = 0.017
+inv_t_armor_base_text_flags = 0x10
+inv_t_armor_base_text_color = 0xFF000000
+
+inv_t_armor_base2_position_x = 0.17
+inv_t_armor_base2_position_y = 0.18
+inv_t_armor_base2_size_x = 0.125
+inv_t_armor_base2_size_y = 0.022
+inv_t_armor_base2_text_size_x = 0.017
+inv_t_armor_base2_text_size_y = 0.017
+inv_t_armor_base2_text_flags = 0x10
+
+inv_i_character_position_x = 0.34
+inv_i_character_position_y = 0.017
+inv_i_character_size_y = 0.25
+inv_i_character_size_x = 0.17
+
+inv_i_character2_position_x = 0
+inv_i_character2_position_y = 0.017
+inv_i_character2_size_y = 0.25
+inv_i_character2_size_x = 0.17
+#WB addition
+inv_i_character_shadow_position_x = 0.335
+inv_i_character_shadow_position_y = -0.03
+inv_i_character_shadow_size_y = 0.15
+inv_i_character_shadow_size_x = 0.17
+
+inv_i_character_shadow2_position_x = 0.0
+inv_i_character_shadow2_position_y = -0.03
+inv_i_character_shadow2_size_y = 0.15
+inv_i_character_shadow2_size_x = 0.17
+#end WB addition
+inv_im_equipment_menu_position_x = 0.34
+inv_im_equipment_menu_position_y = 0.31
+inv_im_equipment_menu_size_x = 0.32
+inv_im_equipment_menu_size_y = 0.55
+
+inv_hinge1_position_x = 0.3105
+inv_hinge1_position_y = 0.17
+inv_hinge1_size_x = 0.045
+inv_hinge1_size_y = 0.09
+
+inv_hinge2_position_x = 0.3105
+inv_hinge2_position_y = 0.565
+inv_hinge2_size_x = 0.045	
+inv_hinge2_size_y = 0.09
+
+inv_hinge3_position_x = 0.6452
+inv_hinge3_position_y = 0.17
+inv_hinge3_size_x = 0.045
+inv_hinge3_size_y = 0.09
+
+inv_hinge4_position_x = 0.6452
+inv_hinge4_position_y = 0.565
+inv_hinge4_size_x = 0.045
+inv_hinge4_size_y = 0.09
+
+inv_i_equipment_pangel_bg_position_x = 0.0
+inv_i_equipment_pangel_bg_position_y = 0.0
+inv_i_equipment_pangel_bg_size_x = 0.333333
+inv_i_equipment_pangel_bg_size_y = 0.75
+
+
+#Inventory_window_variables
+inv_b_leave_h = 0.04
+inv_t_armor_y_a = 0.024
+inv_visible_inventory_area = 0.598
+inv_equipment_x = 0.2125
+inv_equipment_y = 0.2953
+inv_armor_x = 0.111
+inv_horse_y = 0.007
+inv_equipment_menu_x_a = 0.333333
+
+#Face_gen_window
+face_bo_deform_position_x = 0
+face_bo_deform_position_y = 0
+face_bo_deform_size_x = 0.365625
+face_bo_deform_size_y = 0.008
+face_bo_deform_text_size_x = 0.02
+face_bo_deform_text_size_y = 0.02
+
+face_bo_button_position_x = 0.054
+face_bo_button_position_y = 0.057
+face_bo_button_size_x = 0.449375
+face_bo_button_size_y = 0.163125
+
+face_sl_deform_key_base_position_x = 0.13
+face_sl_deform_key_base_position_y = 0.008
+face_sl_deform_key_base_size_x = 0.83
+
+face_t_deform_key_base_position_x = 0
+face_t_deform_key_base_position_y = 0.016
+face_t_deform_key_base_size_x = 0.12
+face_t_deform_key_base_size_y = 0.03
+face_t_deform_key_base_text_flags = 0x8
+face_t_deform_key_base_text_size_x = 0.015
+face_t_deform_key_base_text_size_y = 0.015
+face_t_deform_key_base_text_color = 0xFFFFFFDD
+
+face_s_deform_position_x = 0.925
+face_s_deform_position_y = 0.052
+face_s_deform_size_x = 0.02
+face_s_deform_size_y = 0.648125
+
+face_sc_deform_position_x = 0.573125
+face_sc_deform_position_y = 0.039
+face_sc_deform_size_x = 0.345
+face_sc_deform_size_y = 0.673125
+
+face_b_next_face_position_x = 0.08
+face_b_next_face_position_y = 0.104
+
+face_b_next_beard_position_x = 0.232
+face_b_next_beard_position_y = 0.104
+
+face_b_next_hair_position_x = 0.384
+face_b_next_hair_position_y = 0.104
+
+face_b_prev_face_position_x = 0.009
+face_b_prev_face_position_y = 0.104
+
+face_b_prev_beard_position_x = 0.161
+face_b_prev_beard_position_y = 0.104
+
+face_b_prev_hair_position_x = 0.313
+face_b_prev_hair_position_y = 0.104
+
+face_t_change_beard_position_x = 0.19
+face_t_change_beard_position_y = 0.125
+face_t_change_beard_size_x = 0.087
+face_t_change_beard_size_y = 0.02
+face_t_change_beard_text_size_x = 0.023
+face_t_change_beard_text_size_y = 0.023
+face_t_change_beard_text_flags = 0x10
+
+face_t_change_face_position_x = 0.038
+face_t_change_face_position_y = 0.125
+face_t_change_face_size_x = 0.087
+face_t_change_face_size_y = 0.02
+face_t_change_face_text_size_x = 0.023
+face_t_change_face_text_size_y = 0.023
+face_t_change_face_text_flags = 0x10
+
+face_t_change_hair_position_x = 0.342
+face_t_change_hair_position_y = 0.125
+face_t_change_hair_size_x = 0.087
+face_t_change_hair_size_y = 0.02
+face_t_change_hair_text_size_x = 0.023
+face_t_change_hair_text_size_y = 0.023
+face_t_change_hair_text_flags = 0x10
+
+face_b_randomize_position_x = 0.015
+face_b_randomize_position_y = 0
+
+face_b_reset_position_x = 0.167
+face_b_reset_position_y = 0
+face_b_reset_highlight_text_color = 0xFFAA2200
+
+face_b_done_position_x = 0.319
+face_b_done_position_y = 0
+
+face_sl_age_position_x = 0.17
+face_sl_age_position_y = 0.079
+face_sl_age_size_x = 0.87
+
+face_t_age_position_x = 0
+face_t_age_position_y = 0.086
+face_t_age_size_x = 0.14
+face_t_age_size_y = 0.03
+face_t_age_text_size_x = 0.02
+face_t_age_text_size_y = 0.02
+face_t_age_text_flags = 0x8
+face_t_age_text_color = 0xFFFFFFDD
+
+face_sl_hair_color_position_x = 0.17
+face_sl_hair_color_position_y = 0.045
+face_sl_hair_color_size_x = 0.87
+
+face_t_hair_color_position_x = 0
+face_t_hair_color_position_y = 0.053
+face_t_hair_color_size_x = 0.14
+face_t_hair_color_size_y = 0.03
+face_t_hair_color_text_size_x = 0.02
+face_t_hair_color_text_size_y = 0.02
+face_t_hair_color_text_flags = 0x8
+face_t_hair_color_text_color = 0xFFFFFFDD
+
+#Face_gen_window_variables
+face_deform_key_h = 0.033
+face_button_h = 0.035
+face_button_arrow_h = 0.05
+
+#Party_window
+party_b_done_position_x = 0.52
+party_b_done_position_y = 0.026
+
+party_b_reset_position_x = 0.360625
+party_b_reset_position_y = 0.026
+party_b_reset_highlight_text_color = 0xFFAA2200
+
+party_b_talk_position_x = 0.095
+party_b_talk_position_y = 0.06
+
+party_b_release_position_x = 0.092
+party_b_release_position_y = 0.005
+party_b_release_highlight_text_color = 0xFFAA2200
+
+party_b_move_up_position_x = 0.20
+party_b_move_up_position_y = 0.5
+
+party_b_move_down_position_x = 0.20
+party_b_move_down_position_y = 0.46
+
+party_t_upgrade_position_x = 0.008
+party_t_upgrade_position_y = 0.26
+party_t_upgrade_size_x = 0.285
+party_t_upgrade_size_y = 0.02
+party_t_upgrade_text_size_x = 0.023
+party_t_upgrade_text_size_y = 0.023
+party_t_upgrade_text_flags = 0x10
+party_t_upgrade_text_color = 0xFF991100
+
+party_b_upgrade1_position_x = 0.008
+party_b_upgrade1_position_y = 0.22
+
+party_b_upgrade2_position_x = 0.008
+party_b_upgrade2_position_y = 0.18
+
+party_bo_info_position_x = 0.35
+party_bo_info_position_y = 0.11
+party_bo_info_size_x = 0.3
+party_bo_info_size_y = 0.60
+party_bo_info_text_size_x = 0.02
+party_bo_info_text_size_y = 0.02
+party_bo_info_text_color = 0xFF991100
+
+party_t_troop_cost_position_x = 0.01
+party_t_troop_cost_position_y = 0.125
+party_t_troop_cost_size_x = 0.27
+party_t_troop_cost_size_y = 0.04
+party_t_troop_cost_text_size_x = 0.02
+party_t_troop_cost_text_size_y = 0.02
+party_t_troop_cost_text_color = 0xFF111000
+
+party_bo_members_base_position_x = 0
+party_bo_members_base_position_y = 0
+party_bo_members_base_size_x = 0.263
+party_bo_members_base_size_y = 1.00
+
+party_s_members1_position_x = 0.3013
+party_s_members1_position_y = 0.301
+party_s_members1_size_x = 0.02
+party_s_members1_size_y = 0.3835
+
+party_s_members2_position_x = 0.3013
+party_s_members2_position_y = 0.109
+party_s_members2_size_x = 0.02
+party_s_members2_size_y = 0.131875
+
+party_sc_members1_position_x = 0.0345
+party_sc_members1_position_y = 0.32125
+party_sc_members1_size_x = 0.263
+party_sc_members1_size_y = 0.42
+
+party_sc_members2_position_x = 0.0345
+party_sc_members2_position_y = 0.093125
+party_sc_members2_size_x = 0.263
+party_sc_members2_size_y = 0.1
+
+party_bo_party1_position_x = 0.65
+party_bo_party1_position_y = 0.0
+party_bo_party1_size_x = 0.35
+party_bo_party1_size_y = 0.75
+
+party_bo_party2_position_x = -0.005
+party_bo_party2_position_y = 0
+party_bo_party2_size_x = 0.35
+party_bo_party2_size_y = 0.75
+
+party_t_prisoner_management_position_x = 0.04
+party_t_prisoner_management_position_y = 0.093125
+party_t_prisoner_management_size_x = 0.265
+party_t_prisoner_management_size_y = 0.15
+party_t_prisoner_management_text_flags = 0x111
+
+party_t_morale_position_x = 0.68
+party_t_morale_position_y = 0.062
+party_t_morale_size_x = 0.22
+party_t_morale_size_y = 0.02
+party_t_morale_text_size_x = 0.02
+party_t_morale_text_size_y = 0.02
+party_t_morale_text_flags = 0x4
+party_t_morale_text_color = 0xFFFFEEAA
+
+party_t_gold_position_x = 0.68
+party_t_gold_position_y = 0.041
+party_t_gold_size_x = 0.22
+party_t_gold_size_y = 0.015
+party_t_gold_text_size_x = 0.02
+party_t_gold_text_size_y = 0.02
+party_t_gold_text_flags = 0x4
+party_t_gold_text_color = 0xFFFFEEAA
+
+party_t_weekly_cost_position_x = 0.68
+party_t_weekly_cost_position_y = 0.02
+party_t_weekly_cost_size_x = 0.22
+party_t_weekly_cost_size_y = 0.015
+party_t_weekly_cost_text_size_x = 0.02
+party_t_weekly_cost_text_size_y = 0.02
+party_t_weekly_cost_text_flags = 0x4
+party_t_weekly_cost_text_color = 0xFFFFEEAA
+
+party_t_max_companions_position_x = 0.74
+party_t_max_companions_position_y = 0.719
+party_t_max_companions_size_x = 0.1825
+party_t_max_companions_size_y = 0.023
+party_t_max_companions_text_size_x = 0.02
+party_t_max_companions_text_size_y = 0.02
+party_t_max_companions_text_flags = 0x10
+
+party_t_max_prisoners_position_x = 0.738
+party_t_max_prisoners_position_y = 0.265
+party_t_max_prisoners_size_x = 0.1825
+party_t_max_prisoners_size_y = 0.023
+party_t_max_prisoners_text_size_x = 0.02
+party_t_max_prisoners_text_size_y = 0.02
+party_t_max_prisoners_text_flags = 0x10
+
+party_t_party_skills_position_x = 0.0785
+party_t_party_skills_position_y = 0.718
+party_t_party_skills_size_x = 0.1825
+party_t_party_skills_size_y = 0.023
+party_t_party_skills_text_size_x = 0.02
+party_t_party_skills_text_size_y = 0.02
+party_t_party_skills_text_flags = 0x10
+
+party_t_choose_companions_position_x = 0.0785
+party_t_choose_companions_position_y = 0.718
+party_t_choose_companions_size_x = 0.1825
+party_t_choose_companions_size_y = 0.023
+party_t_choose_companions_text_size_x = 0.02
+party_t_choose_companions_text_size_y = 0.02
+party_t_choose_companions_text_flags = 0x10
+
+party_t_choose_prisoners_position_x = 0.0785
+party_t_choose_prisoners_position_y = 0.265
+party_t_choose_prisoners_size_x = 0.1825
+party_t_choose_prisoners_size_y = 0.023
+party_t_choose_prisoners_text_size_x = 0.02
+party_t_choose_prisoners_text_size_y = 0.02
+party_t_choose_prisoners_text_flags = 0x10
+
+party_bo_skills_position_x = 0
+party_bo_skills_position_y = 0
+party_bo_skills_size_x = 0.35
+party_bo_skills_size_y = 0.75
+
+party_t_skills_position_x = 0.1175
+party_t_skills_position_y = 0.705
+party_t_skills_size_x = 0.128125
+party_t_skills_size_y = 0.023
+party_t_skills_text_flags = 0x10
+
+party_s_skills_position_x = 0.296
+party_s_skills_position_y = 0.299
+party_s_skills_size_x = 0.02
+party_s_skills_size_y = 0.386
+
+party_sc_skills_position_x = 0.0
+party_sc_skills_position_y = 0.297
+party_sc_skills_size_x = 0.35
+party_sc_skills_size_y = 0.391
+
+party_i_character_position_x = 0.3
+party_i_character_position_y = 0.38
+party_i_character_size_x = 0.3
+party_i_character_size_y = 0.3
+
+party_t_selected_troop_name_position_x = 0.0
+party_t_selected_troop_name_position_y = 0.56
+party_t_selected_troop_name_size_x = 0.3
+party_t_selected_troop_name_size_y = 0.02
+party_t_selected_troop_name_text_size_x = 0.02
+party_t_selected_troop_name_text_size_y = 0.02
+party_t_selected_troop_name_text_flags = 0x10
+
+#Party_window_variables
+party_b_done_h = 0.04
+party_b_reset_h = 0.04
+party_b_talk_h = 0.04
+party_b_release_h = 0.035
+party_b_move_up_h = 0.03
+party_b_move_down_h = 0.03
+party_b_upgrade1_h = 0.029
+party_b_upgrade2_h = 0.029
+party_b_member_h = 0.0262
+party_b_members_h = 0.0262
+party_b_members_width_ratio = 7.8
+party_b_members_button_h = 0.06
+party_b_members_x = 0.03
+party_bo_skills_t_x = 0.045
+party_bo_skills_t_x_deep = 0.06
+party_bo_skills_t_y = -0.035
+party_bo_skills_t_y_a = 0.03
+party_bo_skills_t_y_a_short = 0.025
+party_b_member_t_c = 0xFF000000
+party_b_member_t_c_wounded = 0xFFFF0000
+party_b_upgrade_t_c_passive = 0xFFCC0000
+party_bo_member1_h = 0.391
+party_bo_member2_h = 0.135
+party_bo_member1_y = 0.296
+party_bo_member2_y = 0.106
+party_info_warn_x = 0.05
+party_info_warn_y = 0.18
+#WB addition
+party_b_group_position_x = 0.525
+party_b_group_position_y = 0.415
+party_b_group_h = 0.03
+
+party_b_rename_position_x = 0.192
+party_b_rename_position_y = 0.075
+party_b_rename_h = 0.03
+
+party_b_close_position_x = 0.202
+party_b_close_position_y = 0.030
+party_b_close_h = 0.03
+
+
+
+party_b_morale_text_position_x = 0.405
+party_b_morale_text_position_y = 0.205
+party_b_morale_text_size_x = 0.20
+party_b_morale_text_size_y = 0.04
+party_b_morale_text_text_size_x = 0.02
+party_b_morale_text_text_size_y = 0.02
+party_b_morale_text_text_flags = 0x10
+party_b_morale_text_text_color = 0xFF111000
+
+
+
+party_b_group_header_position_x = 0.516
+party_b_group_header_position_y = 0.458
+party_b_group_header_size_x = 0.20
+party_b_group_header_size_y = 0.04
+party_b_group_header_text_size_x = 0.02
+party_b_group_header_text_size_y = 0.02
+party_b_group_header_text_flags = 0x4
+party_b_group_header_text_color = 0xFF111000
+
+party_b_group_information_position_x = 0.034
+party_b_group_information_position_y = 0.30
+party_b_group_information_size_x = 0.30
+party_b_group_information_size_y = 0.02
+party_b_group_information_text_size_x = 0.03
+party_b_group_information_text_size_y = 0.03
+#end WB addition
+#Notes_window
+note_i_picture_position_x = 0.1
+note_i_picture_position_y = 0.1
+note_i_picture_size_x = 0.2
+note_i_picture_size_y = 0.2
+
+note_t_keys_position_x = 0
+note_t_keys_position_y = 0
+note_t_keys_size_x = 0.25
+note_t_keys_size_y = 0.1
+note_t_keys_text_size_x = 0.02
+note_t_keys_text_size_y = 0.02
+note_t_keys_text_flags = 0x700
+
+note_t_data_position_x = 0
+note_t_data_position_y = 0
+note_t_data_size_x = 0.615
+note_t_data_size_y = 0.1
+note_t_data_text_size_x = 0.02
+note_t_data_text_size_y = 0.02
+note_t_data_text_flags = 0x700
+
+note_t_title_position_x = 0.03
+note_t_title_position_y = 0.67
+note_t_title_size_x = 0.615
+note_t_title_size_y = 0.1
+note_t_title_text_size_x = 0.025
+note_t_title_text_size_y = 0.025
+note_t_title_text_flags = 0x10
+note_t_title_text_color = 0xFF000000
+
+note_b_back_position_x = 0.06
+note_b_back_position_y = 0.7
+
+note_b_forward_position_x = 0.15
+note_b_forward_position_y = 0.7
+
+note_b_map_follow_position_x = 0.4
+note_b_map_follow_position_y = 0.7
+
+note_bo_keys_position_x = 0.7
+note_bo_keys_position_y = 0
+note_bo_keys_size_x = 0.255
+note_bo_keys_size_y = 0.0
+
+note_bo_data_position_x = 0
+note_bo_data_position_y = 0
+note_bo_data_size_x = 0.615
+note_bo_data_size_y = 0
+
+note_s_keys_position_x = 0.95
+note_s_keys_position_y = 0.08
+note_s_keys_size_x = 0.02
+note_s_keys_size_y = 0.62
+
+note_sc_keys_position_x = 0.7
+note_sc_keys_position_y = 0.07
+note_sc_keys_size_x = 0.255
+note_sc_keys_size_y = 0.648
+
+note_s_data_position_x = 0.65
+note_s_data_position_y = 0.08
+note_s_data_size_x = 0.02
+note_s_data_size_y = 0.62
+
+note_sc_data_position_x = 0.03
+note_sc_data_position_y = 0.08
+note_sc_data_size_x = 0.655
+note_sc_data_size_y = 0.57
+
+#Notes_window_variables
+note_button_sm_h = 0.024
+note_image_border = 0.03
+note_button_x_a = 0.14
+note_button_x = 0.02
+note_button_y = 0.01
+note_button_h = 0.04
+
+#Conversation_window
+conv_bo_board_position_x = 0.3
+conv_bo_board_position_y = 0.32
+conv_bo_board_size_x = 0.7
+conv_bo_board_size_y = 0.43
+
+conv_t_partner_position_x = 0.07
+conv_t_partner_position_y = 0.05
+conv_t_partner_size_x = 0.56
+conv_t_partner_size_y = 0.3
+conv_t_partner_text_flags = 0x111
+conv_t_partner_text_color = 0xFF331100
+
+conv_t_utterer_name_position_x = 0.05
+conv_t_utterer_name_position_y = 0.36
+conv_t_utterer_name_size_x = 0.2
+conv_t_utterer_name_size_y = 0.04
+conv_t_utterer_name_text_size_x = 0.026
+conv_t_utterer_name_text_size_y = 0.026
+conv_t_utterer_name_text_flags = 0x4
+conv_t_utterer_name_text_color = 0xFF001144
+
+conv_bo_choices_position_x = 0
+conv_bo_choices_position_y = 0
+conv_bo_choices_size_x = 0.965
+conv_bo_choices_size_y = 0
+
+conv_s_choices_position_x = 0.967
+conv_s_choices_position_y = 0.02
+conv_s_choices_size_x = 0.02
+conv_s_choices_size_y = 0.25
+
+conv_sc_choices_position_x = 0.01
+conv_sc_choices_position_y = 0.01
+conv_sc_choices_size_x = 0.965
+conv_sc_choices_size_y = 0.27
+
+conv_t_press_mouse_position_x = 0.62
+conv_t_press_mouse_position_y = 0.0287
+conv_t_press_mouse_size_x = 0.32
+conv_t_press_mouse_size_y = 0.03
+conv_t_press_mouse_text_size_x = 0.026
+conv_t_press_mouse_text_size_y = 0.026
+conv_t_press_mouse_text_flags = 0x8
+conv_t_press_mouse_text_color = 0xFFFFEEAA
+#WB addition
+conversation_conversation_mesh_position_x = 0.008
+conversation_conversation_mesh_position_y = 0.29
+conversation_conversation_mesh_size_x = 0.292
+conversation_conversation_mesh_size_y = 0.452
+#end WB addition
+
+#Conversation_window_variables
+conv_sentence_x = 0.01
+conv_sentence_y_a = 0.041
+conv_sentence_text_x = 0.03
+conv_sentence_size_y = 0.0397
+conv_sentence_width_ratio = 22.8
+conv_sentence_button_height = 0.045
+conv_choices_min_y = 0.27
+
+#WB variables from here down
+#Profile_window
+profile_text_choose_profile_position_x = 0.162
+profile_text_choose_profile_position_y = 0.72
+profile_text_choose_profile_size_x = 0.168
+profile_text_choose_profile_size_y = 0.04
+profile_text_choose_profile_text_size_x = 0.024
+profile_text_choose_profile_text_size_y = 0.024
+profile_text_choose_profile_text_flags = 0x10
+profile_text_choose_profile_text_color = 0xFF000000
+
+profile_text_multiplayer_position_x = 0.663
+profile_text_multiplayer_position_y = 0.72
+profile_text_multiplayer_size_x = 0.168
+profile_text_multiplayer_size_y = 0.04
+profile_text_multiplayer_text_size_x = 0.024
+profile_text_multiplayer_text_size_y = 0.024
+profile_text_multiplayer_text_flags = 0x10
+profile_text_multiplayer_text_color = 0xFF000000
+
+profile_profiles_combo_position_x = 0.14
+profile_profiles_combo_position_y = 0.63
+profile_profiles_combo_text_size_x = 0.02
+profile_profiles_combo_text_size_y = 0.02
+
+profile_exit_button_position_x = 0.708
+profile_exit_button_position_y = 0.06
+profile_exit_button_text_flags = 0x200
+profile_exit_button_text_size_x = 0.04
+profile_exit_button_text_size_y = 0.04
+profile_exit_button_highlight_text_color = 0xFFFFDD00
+
+profile_host_button_position_x = 0.55
+profile_host_button_position_y = 0.42
+profile_host_button_size_x = 0.4
+profile_host_button_size_y = 0.04
+profile_host_button_text_size_x = 0.04
+profile_host_button_text_size_y = 0.04
+profile_host_button_text_flags = 0x10
+profile_host_button_highlight_text_color = 0xFFFFDD00
+
+profile_join_button_position_x = 0.55
+profile_join_button_position_y = 0.35
+profile_join_button_size_x = 0.4
+profile_join_button_size_y = 0.04
+profile_join_button_text_size_x = 0.04
+profile_join_button_text_size_y = 0.04
+profile_join_button_text_flags = 0x10
+profile_join_button_highlight_text_color = 0xFFFFDD00
+
+profile_delete_button_position_x = 0.188
+profile_delete_button_position_y = 0.07
+profile_delete_button_text_size_x = 0.02
+profile_delete_button_text_size_y = 0.02
+profile_delete_button_highlight_text_color = 0xFFAA3300
+
+profile_create_button_position_x = 0.12
+profile_create_button_position_y = 0.58
+profile_create_button_text_size_x = 0.02
+profile_create_button_text_size_y = 0.02
+profile_create_button_highlight_text_color = 0xFF227700
+
+profile_edit_button_position_x = 0.257
+profile_edit_button_position_y = 0.58
+profile_edit_button_text_size_x = 0.02
+profile_edit_button_text_size_y = 0.02
+profile_edit_button_highlight_text_color = 0xFFAA3300
+
+profile_character_image_position_x = 0.09
+profile_character_image_position_y = 0.1
+
+#Multiplayer_client_window
+#multiplayer_client_connect_button_position_x = 0.83
+#multiplayer_client_connect_button_position_y = 0.03
+#multiplayer_client_connect_button_text_size_x = 0.03
+#multiplayer_client_connect_button_text_size_y = 0.03
+#multiplayer_client_connect_button_text_flags = 0x200
+#multiplayer_client_connect_button_highlight_text_color = 0xFF33FF00
+
+multiplayer_client_connect_button_position_x = 0.78
+multiplayer_client_connect_button_position_y = 0.04
+multiplayer_client_connect_button_size_x = 0.2
+multiplayer_client_connect_button_size_y = 0.02
+multiplayer_client_connect_button_text_size_x = 0.02
+multiplayer_client_connect_button_text_size_y = 0.02
+multiplayer_client_connect_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_connect_button_text_flags = 0x10
+
+multiplayer_client_add_to_fav_button_position_x = 0.34
+multiplayer_client_add_to_fav_button_position_y = 0.04
+multiplayer_client_add_to_fav_button_text_size_x = 0.02
+multiplayer_client_add_to_fav_button_text_size_y = 0.02
+multiplayer_client_add_to_fav_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_add_to_fav_button_text_flags = 0x10
+
+multiplayer_client_exit_button_position_x = 0.1
+multiplayer_client_exit_button_position_y = 0.04
+multiplayer_client_exit_button_text_size_x = 0.020
+multiplayer_client_exit_button_text_size_y = 0.020
+multiplayer_client_exit_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_exit_button_text_flags = 0x10
+
+multiplayer_client_table_render_height_adder = 0.5
+
+multiplayer_client_host_button_position_x = 0.62
+multiplayer_client_host_button_position_y = 0.7
+multiplayer_client_host_button_text_size_x = 0.020
+multiplayer_client_host_button_text_size_y = 0.020
+multiplayer_client_host_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_host_button_text_flags = 0x10
+
+multiplayer_client_change_profile_button_position_x = 0.62
+multiplayer_client_change_profile_button_position_y = 0.66
+multiplayer_client_change_profile_button_text_size_x = 0.020
+multiplayer_client_change_profile_button_text_size_y = 0.020
+multiplayer_client_change_profile_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_change_profile_button_text_flags = 0x10
+
+multiplayer_client_servers_list_position_x = 0.05
+multiplayer_client_servers_list_position_y = 0.15
+multiplayer_client_servers_list_size_x = 0.9
+#multiplayer_client_servers_list_size_y = 0.588
+multiplayer_client_servers_list_size_y = 0.51
+multiplayer_client_servers_list_text_size_x = 0.02
+multiplayer_client_servers_list_text_size_y = 0.02
+multiplayer_client_servers_list_frame_thickness = 0.005
+multiplayer_client_servers_list_text_flags = 0
+
+multiplayer_client_list_type_combo_position_x = 0.17
+multiplayer_client_list_type_combo_position_y = 0.695#aa
+multiplayer_client_list_type_combo_text_size_x = 0.02
+multiplayer_client_list_type_combo_text_size_y = 0.02
+
+multiplayer_client_info_text_position_x = 0.05
+multiplayer_client_info_text_position_y = 0.65
+multiplayer_client_info_text_text_flags = 0x200
+multiplayer_client_info_text_text_color = 0xFF444444
+multiplayer_client_info_text_text_size_x = 0.015
+multiplayer_client_info_text_text_size_y = 0.015
+
+
+multiplayer_client_filter_info_text_position_x = 0.35
+multiplayer_client_filter_info_text_position_y = 0.65
+#multiplayer_client_filter_info_text_position_y = 0.25
+multiplayer_client_filter_info_text_text_flags = 0x200
+multiplayer_client_filter_info_text_text_color = 0xFF444444
+multiplayer_client_filter_info_text_text_size_x = 0.015
+multiplayer_client_filter_info_text_text_size_y = 0.015
+
+multiplayer_client_list_type_text_position_x = 0.04
+multiplayer_client_list_type_text_position_y = 0.705##aa
+multiplayer_client_list_type_text_size_x = 0.1
+multiplayer_client_list_type_text_size_y = 0.04
+multiplayer_client_list_type_text_text_size_x = 0.022
+multiplayer_client_list_type_text_text_size_y = 0.022
+multiplayer_client_list_type_text_text_flags = 0x08
+
+multiplayer_client_password_text_position_x = 0.05
+multiplayer_client_password_text_position_y = 0.107
+multiplayer_client_password_text_size_x = 0.235
+multiplayer_client_password_text_size_y = 0.18
+multiplayer_client_password_text_text_flags = 0x08
+multiplayer_client_password_text_text_color = 0xFFAA0000
+
+multiplayer_client_password_textbox_position_x = 0.3
+multiplayer_client_password_textbox_position_y = 0.10
+multiplayer_client_password_textbox_width = 0.4
+multiplayer_client_password_textbox_size_x = 0.5
+multiplayer_client_password_textbox_size_y = 0.2
+multiplayer_client_password_textbox_text_flags = 0x4000
+
+multiplayer_client_refresh_button_position_x = 0.54
+multiplayer_client_refresh_button_position_y = 0.66
+multiplayer_client_refresh_button_size_x = 0.2
+multiplayer_client_refresh_button_size_y = 0.02
+multiplayer_client_refresh_button_text_size_x = 0.025
+multiplayer_client_refresh_button_text_size_y = 0.025
+multiplayer_client_refresh_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_refresh_button_text_flags = 0x10
+
+multiplayer_client_search_button_position_x = 0.415
+#multiplayer_client_search_button_position_y = 0.702
+multiplayer_client_search_button_position_y = 0.697#aa
+multiplayer_client_search_button_size_x = 0.2
+multiplayer_client_search_button_size_y = 0.01
+multiplayer_client_search_button_text_size_x = 0.020
+multiplayer_client_search_button_text_size_y = 0.020
+multiplayer_client_search_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_search_button_text_flags = 0x10
+
+multiplayer_client_cancel_button_position_x = 0.415
+#multiplayer_client_cancel_button_position_y = 0.702
+multiplayer_client_cancel_button_position_y = 0.697#aa
+multiplayer_client_cancel_button_size_x = 0.2
+multiplayer_client_cancel_button_size_y = 0.01
+multiplayer_client_cancel_button_text_size_x = 0.020
+multiplayer_client_cancel_button_text_size_y = 0.020
+multiplayer_client_cancel_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_cancel_button_text_flags = 0x10
+
+#multiplayer_client_remove_from_fav_button_position_x = 0.7
+#multiplayer_client_remove_from_fav_button_position_y = 0.66
+#multiplayer_client_remove_from_fav_button_size_x = 0.25
+#multiplayer_client_remove_from_fav_button_size_y = 0.02
+#multiplayer_client_remove_from_fav_button_text_size_x = 0.025
+#multiplayer_client_remove_from_fav_button_text_size_y = 0.025
+#multiplayer_client_remove_from_fav_button_highlight_text_color = 0xFF33FF00
+#multiplayer_client_remove_from_fav_button_text_flags = 0x10
+
+multiplayer_client_remove_from_fav_button_position_x = 0.34
+multiplayer_client_remove_from_fav_button_position_y = 0.04
+multiplayer_client_remove_from_fav_button_text_size_x = 0.02
+multiplayer_client_remove_from_fav_button_text_size_y = 0.02
+multiplayer_client_remove_from_fav_button_highlight_text_color = 0xFF33FF00
+multiplayer_client_remove_from_fav_button_text_flags = 0x10
+
+multiplayer_client_server_filter_checkbox_position_x = 0.75
+#multiplayer_client_server_filter_checkbox_position_y = 0.705
+multiplayer_client_server_filter_checkbox_position_y = 0.69
+
+server_filter_vertex_color = 0xAAFFFFBA
+table_sort_icon_position_y_displacement_offset = -0.06
+
+
+#multiplayer_client_filter_area_height = 0.065
+#multiplayer_client_filter_area_height = 0.13
+multiplayer_client_filter_area_height = 0.112
+multiplayer_client_password_area_height = 0.05
+multiplayer_client_filter_area_height2 = 0.0
+multiplayer_client_password_area_height2 = -0.05
+mp_client_table_test1 = 0.0
+mp_client_table_test2 = 0.0
+
+server_filter_panel_pos_x = 0.05
+#server_filter_panel_pos_y = 0.57
+server_filter_panel_pos_y = 0.57
+server_filter_panel_size_x = 0.9
+#server_filter_panel_size_y = 0.12
+server_filter_panel_size_y = 0.167
+
+mp_server_table_icon_widget_pos_x_multiplier = -2.9
+mp_server_table_icon_widget_pos_y_multiplier = -4.75
+
+table_sort_color = 0x66471208
+#6D392A
+
+server_filter_checkbox_background_pos_x = 0.705
+#server_filter_checkbox_background_pos_y = 0.7
+server_filter_checkbox_background_pos_y = 0.674
+server_filter_checkbox_background_size_x = 0.245
+#server_filter_checkbox_background_size_y = 0.032
+server_filter_checkbox_background_size_y = 0.06
+
+server_filter_panel_has_players_checkbox_position_x = 0.03
+server_filter_panel_has_players_checkbox_position_y = 0.071
+server_filter_panel_has_players_checkbox_text_size_x = 0.02
+server_filter_panel_has_players_checkbox_text_size_y = 0.02
+
+server_filter_panel_is_not_full_checkbox_position_x = 0.03
+server_filter_panel_is_not_full_checkbox_position_y = 0.046
+server_filter_panel_is_not_full_checkbox_text_size_x = 0.02
+server_filter_panel_is_not_full_checkbox_text_size_y = 0.02
+
+server_filter_panel_is_version_compatible_checkbox_position_x = 0.03
+server_filter_panel_is_version_compatible_checkbox_position_y = 0.046
+server_filter_panel_is_version_compatible_checkbox_text_size_x = 0.02
+server_filter_panel_is_version_compatible_checkbox_text_size_y = 0.02
+
+server_filter_panel_is_password_free_checkbox_position_x = 0.03
+server_filter_panel_is_password_free_checkbox_position_y = 0.021
+server_filter_panel_is_password_free_checkbox_text_size_x = 0.02
+server_filter_panel_is_password_free_checkbox_text_size_y = 0.02
+
+server_filter_panel_native_only_checkbox_position_x = 0.02
+server_filter_panel_native_only_checkbox_position_y = 0.075
+
+server_filter_panel_ping_limit_combo_label_position_x = 0.55
+server_filter_panel_ping_limit_combo_label_position_y = 0.02
+server_filter_panel_ping_limit_combo_label_text_size_x = 0.02
+server_filter_panel_ping_limit_combo_label_text_size_y = 0.02
+
+server_filter_panel_game_type_combo_label_position_x = 0.55
+server_filter_panel_game_type_combo_label_position_y = 0.057
+server_filter_panel_game_type_combo_label_text_size_x = 0.02
+server_filter_panel_game_type_combo_label_text_size_y = 0.02
+
+server_filter_panel_ping_limit_label_position_x = 0.35
+server_filter_panel_ping_limit_label_position_y = 0.038
+server_filter_panel_ping_limit_label_size_x = 0.2
+server_filter_panel_ping_limit_label_size_y = 0.01
+server_filter_panel_ping_limit_label_text_size_x = 0.02
+server_filter_panel_ping_limit_label_text_size_y = 0.02
+
+server_filter_panel_game_type_label_position_x = 0.35
+server_filter_panel_game_type_label_position_y = 0.076
+server_filter_panel_game_type_label_size_x = 0.2
+server_filter_panel_game_type_label_size_y = 0.01
+server_filter_panel_game_type_label_text_size_x = 0.02
+server_filter_panel_game_type_label_text_size_y = 0.02
+
+server_filter_panel_filter_info_text_position_x = 0.38
+server_filter_panel_filter_info_text_position_y = -0.188
+server_filter_panel_filter_info_text_size_x = 0.5
+server_filter_panel_filter_info_text_size_y = 0.2
+#server_filter_panel_filter_info_text_text_flags = 0x200
+server_filter_panel_filter_info_text_text_color = 0xFF444444
+server_filter_panel_filter_info_text_text_size_x = 0.015
+server_filter_panel_filter_info_text_text_size_y = 0.015
+
+table_line_color = 0x00000000
+
+game_ui_container_position_x = 0.81
+game_ui_container_position_y = 0.008
+game_ui_container_size_x = 0.19
+game_ui_container_size_y = 0.1
+game_ui_player_position_x = 0.014369
+game_ui_player_position_y = 0.047
+game_ui_player_size_x = 0.171068
+game_ui_player_size_y = 0.05
+game_ui_horse_position_x = 0.014369
+game_ui_horse_position_y = 0
+game_ui_horse_size_x = 0.171068
+game_ui_horse_size_y = 0.05
+game_ui_player_health_position_x = 0.051
+game_ui_player_health_position_y = 0.0595
+game_ui_player_health_size_x = 0.120
+game_ui_player_health_size_y = 0.006
+game_ui_horse_health_position_x = 0.053
+game_ui_horse_health_position_y = 0.0125
+game_ui_horse_health_size_x = 0.120
+game_ui_horse_health_size_y = 0.006
+game_ui_ammo_status_position_x = 0.135
+game_ui_ammo_status_position_y = 0.11
+game_ui_shield_status_position_x = 0.08
+game_ui_shield_status_position_y = 0.105
+game_ui_gold_position_x = 0.913
+game_ui_gold_position_y = 0.660
+game_ui_gold_text_size_x = 0.024
+game_ui_gold_text_size_y = 0.024
+game_ui_gold_text_color = 0xFFDDDD66
+game_ui_gold_text_flags = 0
+game_ui_gold_size_x = 0.08
+game_ui_gold_size_y = 0.04
+game_ui_ammo_position_x = 0.135
+game_ui_ammo_position_y = 0.10
+game_ui_ammo_text_size_x = 0.024
+game_ui_ammo_text_size_y = 0.024
+game_ui_ammo_size_x = 0.05
+game_ui_ammo_size_y = 0.04
+game_ui_ammo_text_flags = 0
+game_ui_orders_container_position_x = 0.0
+game_ui_orders_container_position_y = 0.4
+game_ui_orders_container_size_x = 0.45
+game_ui_orders_container_size_y = 0.2
+tactical_game_ui_gold_mesh_position_x = 0.88
+tactical_game_ui_gold_mesh_position_y = 0.652
+tactical_game_ui_gold_mesh_size_x = 0.0375
+tactical_game_ui_gold_mesh_size_y = 0.0285
+tactical_game_ui_notification_position_x = 0.2
+tactical_game_ui_notification_position_y = 0.6
+tactical_game_ui_notification_size_x = 0.6
+tactical_game_ui_notification_size_y = 0.5
+tactical_game_ui_notification_text_size_x = 0.04
+tactical_game_ui_notification_text_size_y = 0.04
+tactical_game_ui_notification_text_flags = 0x00000010
+tactical_game_ui_notification_text_color = 0xFFFFFFFF
+tactical_game_ui_watching_position_x = 0.25
+tactical_game_ui_watching_position_y = 0.02
+tactical_game_ui_watching_size_x = 0.5
+tactical_game_ui_watching_size_y = 0.5
+tactical_game_ui_watching_text_size_x = 0.03
+tactical_game_ui_watching_text_size_y = 0.03
+tactical_game_ui_watching_text_flags = 0x00000010
+tactical_game_ui_watching_text_color = 0xFFFFFFFF
+
+#main menu (initial)
+initial_tutorial_button_position_x = 0.05
+initial_tutorial_button_position_y = 0.48
+initial_tutorial_button_size_x = 0.185
+initial_tutorial_button_size_y = 0.031
+initial_tutorial_button_text_size_x = 0.022
+initial_tutorial_button_text_size_y = 0.030
+initial_tutorial_button_text_flags = 0x10
+initial_tutorial_button_text_color = 0xFF110000
+initial_tutorial_button_highlight_text_color = 0xFFFFDD00
+
+initial_start_new_game_button_position_x = 0.05
+initial_start_new_game_button_position_y = 0.44
+initial_start_new_game_button_size_x = 0.185
+initial_start_new_game_button_size_y = 0.031
+initial_start_new_game_button_text_size_x = 0.022
+initial_start_new_game_button_text_size_y = 0.030
+initial_start_new_game_button_text_flags = 0x10
+initial_start_new_game_button_text_color = 0xFF110000
+initial_start_new_game_button_highlight_text_color = 0xFFFFDD00
+
+initial_resume_game_button_position_x = 0.05
+initial_resume_game_button_position_y = 0.40
+initial_resume_game_button_size_x = 0.185
+initial_resume_game_button_size_y = 0.031
+initial_resume_game_button_text_size_x = 0.022
+initial_resume_game_button_text_size_y = 0.030
+initial_resume_game_button_text_flags = 0x10
+initial_resume_game_button_text_color = 0xFF110000
+initial_resume_game_button_highlight_text_color = 0xFFFFDD00
+
+initial_multiplayer_button_position_x = 0.05
+initial_multiplayer_button_position_y = 0.36
+initial_multiplayer_button_size_x = 0.185
+initial_multiplayer_button_size_y = 0.031
+initial_multiplayer_button_text_size_x = 0.022
+initial_multiplayer_button_text_size_y = 0.030
+initial_multiplayer_button_text_flags = 0x10
+initial_multiplayer_button_text_color = 0xFF110000
+initial_multiplayer_button_highlight_text_color = 0xFFFFDD00
+
+initial_custom_battle_button_position_x = 0.05
+initial_custom_battle_button_position_y = 0.32
+initial_custom_battle_button_size_x = 0.185
+initial_custom_battle_button_size_y = 0.031
+initial_custom_battle_button_text_size_x = 0.022
+initial_custom_battle_button_text_size_y = 0.030
+initial_custom_battle_button_text_flags = 0x10
+initial_custom_battle_button_text_color = 0xFF110000
+initial_custom_battle_button_highlight_text_color = 0xFFFFDD00
+
+initial_options_button_position_x = 0.05
+initial_options_button_position_y = 0.28
+initial_options_button_size_x = 0.185
+initial_options_button_size_y = 0.031
+initial_options_button_text_size_x = 0.022
+initial_options_button_text_size_y = 0.030
+initial_options_button_text_flags = 0x10
+initial_options_button_text_color = 0xFF110000
+initial_options_button_highlight_text_color = 0xFFFFDD00
+
+initial_credits_button_position_x = 0.05
+initial_credits_button_position_y = 0.24
+initial_credits_button_size_x = 0.185
+initial_credits_button_size_y = 0.031
+initial_credits_button_text_size_x = 0.022
+initial_credits_button_text_size_y = 0.030
+initial_credits_button_text_flags = 0x10
+initial_credits_button_text_color = 0xFF110000
+initial_credits_button_highlight_text_color = 0xFFFFDD00
+
+initial_quit_button_position_x = 0.05
+initial_quit_button_position_y = 0.20
+initial_quit_button_size_x = 0.185
+initial_quit_button_size_y = 0.025
+initial_quit_button_text_size_x = 0.022
+initial_quit_button_text_size_y = 0.030
+initial_quit_button_text_flags = 0x10
+initial_quit_button_text_color = 0xFF110000
+initial_quit_button_highlight_text_color = 0xFFFFDD00
+
+initial_game_logo_position_x = 0.045
+initial_game_logo_position_y = 0.54
+initial_game_logo_size_x = 0.2
+initial_game_logo_size_y = 0.07
+
+initial_version_info_position_x = 0.18
+initial_version_info_position_y = 0.525
+initial_version_info_text_size_x = 0.016
+initial_version_info_text_size_y = 0.016
+initial_version_info_text_flags = 0x200
+initial_version_info_text_color = 0xFF110000
+initial_version_info_highlight_text_color = 0xFFFFDD00
+
+
+#game loading 
+loading_game_logo_position_x = 0.52
+loading_game_logo_position_y = 0.6
+loading_game_logo_size_x = 0.45
+loading_game_logo_size_y = 0.12
+
+
+options_game_logo_pos_x = 0.72
+options_game_logo_pos_y = 0.66
+options_game_logo_size_x = 0.24
+options_game_logo_size_y = 0.06
+
+options_right_control_offset_x = -0.07
+
+
+tab_item_size_x = 0.222
+tab_item_size_y = 0.0675337423
+tab_text_size_x = 0.2
+tab_text_size_y = 0.02
+tab_item_text_pos_x = 0.0
+tab_item_text_pos_y = 0.033
+
+tab_item_mouse_event_size_x = 0.222
+tab_item_mouse_event_size_y = 0.0675337423
+tab_item_mouse_event_size_position_offset_y = 0.0
+
+tab_panel_posx = -0.00
+tab_panel_posy = -0.617
+tab_panel_sizex = 0.9375
+tab_panel_sizey = 0.64
+
+tab_posx = 0.03
+tab_posy = 0.645
+tab_sizex = 0.7
+tab_sizey = 0.07
+
+tab_item_mouse_offset_y1 = 0.668
+
+control_options_scrollable_posx = 0.05
+control_options_scrollable_sizex = 0.711
+
+options_window_text_color = 0xff000000
+
+options_done_button_posx = 0.80
+options_done_button_posy = 0.04
+
+graphics_options_overall_label_posx = 0.775
+graphics_options_overall_combo_posx = 0.7945
+graphics_options_overall_combo_text_size = 0.014
+
+graphics_options_performance_posx = 0.775
+graphics_options_performance_posy = 0.42
+graphics_options_performance_textsize = 0.025
+
+options_difficulty_pos_x = 0.785
+options_difficulty_pos_y = 0.42
+options_difficulty_size = 0.03
+
+
+
+
+
+#starting (first screen)
+starting_game_logo_position_x = 0.0
+starting_game_logo_position_y = 0.65
+starting_game_logo_size_x = 0.32
+starting_game_logo_size_y = 0.08
+
+#escape window
+escape_game_logo_position_x = 0.15
+escape_game_logo_position_y = 0.55
+escape_game_logo_size_x = 0.32
+escape_game_logo_size_y = 0.105
+
+escape_return_button_position_x = 0.18
+escape_return_button_position_y = 0.48
+escape_return_button_size_x = 0.25
+escape_return_button_size_y = 0.02
+escape_return_button_text_size_x = 0.032
+escape_return_button_text_size_y = 0.045
+escape_return_button_text_flags = 0x10
+escape_return_button_text_color = 0xFF110000
+escape_return_button_highlight_text_color = 0xFF40A000
+
+escape_options_button_position_x = 0.18
+escape_options_button_position_y = 0.42
+escape_options_button_size_x = 0.25
+escape_options_button_size_y = 0.05
+escape_options_button_text_size_x = 0.032
+escape_options_button_text_size_y = 0.045
+escape_options_button_text_flags = 0x10
+escape_options_button_text_color = 0xFF110000
+escape_options_button_highlight_text_color = 0xFF40A000
+
+escape_save_exit_button_position_x = 0.18
+escape_save_exit_button_position_y = 0.36
+escape_save_exit_button_size_x = 0.25
+escape_save_exit_button_size_y = 0.025
+escape_save_exit_button_text_size_x = 0.032
+escape_save_exit_button_text_size_y = 0.045
+escape_save_exit_button_text_flags = 0x10
+escape_save_exit_button_text_color = 0xFF110000
+escape_save_exit_button_highlight_text_color = 0xFF40A000
+
+escape_save_button_position_x = 0.18
+escape_save_button_position_y = 0.30
+escape_save_button_size_x = 0.25
+escape_save_button_size_y = 0.025
+escape_save_button_text_size_x = 0.032
+escape_save_button_text_size_y = 0.045
+escape_save_button_text_flags = 0x10
+escape_save_button_text_color = 0xFF110000
+escape_save_button_highlight_text_color = 0xFF40A000
+
+escape_save_as_button_position_x = 0.18
+escape_save_as_button_position_y = 0.24
+escape_save_as_button_size_x = 0.25
+escape_save_as_button_size_y = 0.025
+escape_save_as_button_text_size_x = 0.032
+escape_save_as_button_text_size_y = 0.045
+escape_save_as_button_text_flags = 0x10
+escape_save_as_button_text_color = 0xFF110000
+escape_save_as_button_highlight_text_color = 0xFF40A000
+
+escape_exit_button_position_x = 0.18
+escape_exit_button_position_y = 0.18
+escape_exit_button_size_x = 0.25
+escape_exit_button_size_y = 0.025
+escape_exit_button_text_size_x = 0.032
+escape_exit_button_text_size_y = 0.045
+escape_exit_button_text_flags = 0x10
+escape_exit_button_text_color = 0xFF110000
+escape_exit_button_highlight_text_color = 0xFF40A000
+
+
+profile_character_shadow_position_x = 0.075
+profile_character_shadow_position_y = 0.085
+profile_character_shadow_size_x = 0.32
+profile_character_shadow_size_y = 0.13
+
