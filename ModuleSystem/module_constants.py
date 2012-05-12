@@ -207,7 +207,7 @@ slot_faction_num_towns               = 82
 slot_faction_debug_str_gain         = 148
 slot_faction_debug_str_loss         = 149
 
-slot_faction_strength               = 150 # strength 0-9995
+slot_faction_strength               = 150 # strength 0-8000, was 9995
 slot_faction_party_map_banner		= 151
 slot_faction_hosts                  = 152 # number of alive hosts
 slot_faction_strength_tmp           = 153 # strength changes from killed parties enter here first, then processed through onmap trigger each hour (to make messages work ok)
@@ -1245,7 +1245,7 @@ fac_str_dying = 500 # less than this, go for the kill by sieging the capital
 fac_str_very_weak = 1000 # less than this, faction capital can be sieged and faction can be destroyed by capturing the capital
 fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
-
+fac_str_max = 8000
 
 # faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
 faction_init = [
@@ -1655,7 +1655,7 @@ center_list = [
 	[-1, trp_smith_eastfold, trp_merchant_eastfold, trp_elder_rohan_ac, pt_rohan_recruits, trp_rohan_lord, trp_skirmisher_of_rohan, trp_lancer_of_rohan, trp_guardsman_of_rohan, trp_footman_of_rohan], 
 	[icon_mfc_rohan],[900],[3,8,4,6,4,5], 0, garrison_limit_med, 3, tld_siegable_always),
 (p_advcamp_isengard, [scn_advcamp_bad, -1, -1, -1, -1, scn_advcamp_bad, mesh_town_evilcamp],
-	[-1, trp_smith_urcamp, trp_merchant_urcamp, -1, pt_isengard_recruits, trp_isengard_lord, trp_orc_of_isengard,trp_large_orc_of_isengard, trp_uruk_hai_tracker, trp_uruk_hai_of_isengard], 
+	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_elder_isengard_ac, pt_isengard_recruits, trp_isengard_lord, trp_orc_of_isengard,trp_large_orc_of_isengard, trp_uruk_hai_tracker, trp_uruk_hai_of_isengard], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_mordor, [scn_advcamp_bad, -1, -1, -1, -1, scn_advcamp_bad, mesh_town_evilcamp],
 	[-1, trp_smith_oscamp, trp_merchant_isengard, trp_elder_mordor_ac, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
@@ -1787,7 +1787,7 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
 			   0xFF212221, 0xFF212221, 0xFF2E3B10, 0xFF425D7B, 0xFF394608 ]
             
 # foxyman
-cheat_switch = 1
+cheat_switch = 0
 # TLD faction ranks end
 
 faction_strings =[    #shop rumors begin     shop rumors end           loop_ambient_day       loop_ambient_always        occasional_ambient(later to be divided into occasional nature and occasional faction)

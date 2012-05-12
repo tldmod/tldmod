@@ -634,7 +634,11 @@ player_side_faction
 enemy_side_faction
 inital_player_xp
 g_fac_str_siegable
-g_variable6
+battle_renown_total
 g_variable7
 g_variable8
 g_variable9
+tld_option_siege_reqs
+tld_option_siege_relax_rate
+tld_option_regen_rate
+tld_option_regen_limit

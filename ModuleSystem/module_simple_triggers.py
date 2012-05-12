@@ -375,7 +375,7 @@ simple_triggers = [
       (try_begin),
         (gt, ":player_level", tld_player_level_to_own_chest), #some min level needed to do this
         (store_sub, ":new_fac_str_siegable", ":player_level", tld_player_level_to_own_chest), #1-..
-        (val_mul, ":new_fac_str_siegable", 100),
+        (val_mul, ":new_fac_str_siegable", "$tld_option_siege_relax_rate"),
         (val_add, ":new_fac_str_siegable", fac_str_weak),
         (neq, ":new_fac_str_siegable", "$g_fac_str_siegable"), #this is how we determine if the player leveled up :); also makes old savegames work
         (assign, "$g_fac_str_siegable", ":new_fac_str_siegable"),
@@ -383,7 +383,7 @@ simple_triggers = [
       (try_end),
       #TLD, grow faction strength with time from center income
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
-	     (faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_dying), #was 1: no annoying regen for dying factions (<500)
+	     (faction_slot_ge, ":faction_no", slot_faction_strength, "$tld_option_regen_limit"), #was 1: no annoying regen for dying factions (<500/1000/1500)
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
          (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain), #debug
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
@@ -394,12 +394,18 @@ simple_triggers = [
            (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
-           (try_begin),
-             (eq, "$tld_war_began", 0),
+           (try_begin), #no income
+             (this_or_next|eq, "$tld_option_regen_rate", 2), #Battles only
+             (eq, "$tld_option_regen_rate", 3), #None
+             (assign, ":strength_income", 0),
+           (else_try), #halved income
+             (this_or_next|eq, "$tld_war_began", 0),
+             (eq, "$tld_option_regen_rate", 1),
              (val_div, ":strength_income", 2), #halve income before the War
              (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
              (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
-           (else_try), #evil handicap: if player is evil, evil factions get less
+           (try_end),
+           (try_begin), #evil handicap: if player is evil, evil factions get less
              (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
              (neg|faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
              (gt, ":strength_income", 0),
@@ -411,15 +417,16 @@ simple_triggers = [
            (val_add, ":strength", ":strength_income"),
            (val_add, ":debug_gain", ":strength_income"), #debug
          (try_end),
-         #one more evil handicap: Gondor and Rohan get +10.. cheaters!
+         #one more evil handicap: Gondor and Rohan get +10.. cheaters! 
          (try_begin),
            (gt, "$tld_war_began", 0),
+           (eq, "$tld_option_regen_rate", 0), #Normal
            (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-           (this_or_next|eq, ":faction_no", "fac_gondor"),
+           #(this_or_next|eq, ":faction_no", "fac_gondor"), #MV: Gondor excluded on player input
            (eq, ":faction_no", "fac_rohan"),
            (val_add, ":strength", 10),
          (try_end),
-         (val_min, ":strength", 9995), #limit max strength
+         (val_min, ":strength", fac_str_max), #limit max strength
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
          (faction_set_slot, ":faction_no", slot_faction_debug_str_gain, ":debug_gain"), #debug
 	  (try_end),
@@ -1371,6 +1378,8 @@ simple_triggers = [
 			(try_end),
 			(try_begin),
 				(neq, ":result", -1),
+# (str_store_quest_name, s7, ":result"),
+# (display_log_message, "@DEBUG: Getting marshall quest: {s7}."),
 				(quest_set_slot, ":result", slot_quest_current_state, 0),
 				(quest_set_slot, ":result", slot_quest_giver_troop, ":faction_marshall"),
 				(try_begin),
@@ -2164,6 +2173,10 @@ simple_triggers = [
         #MV: spawn a guardian party (once) when faction strength below fac_str_dying
         #this is a fun quick fix to defeat dying factions and avoid grinding
         (try_begin),
+            #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
+            (this_or_next|eq, ":faction", "fac_isengard"),
+            (eq, ":faction", "fac_woodelf"),
+
             (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_dying),
             (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
             

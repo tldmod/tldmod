@@ -230,7 +230,8 @@ triggers = [
             (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":center_theater"), #center in faction's active theater
             
             (faction_get_slot, ":strength", ":faction_no", slot_faction_strength),
-            (val_clamp, ":strength", 0, 7001), # keep spawning chance and max limit within reason
+            (val_clamp, ":strength", 0, 5001), # keep spawning chance and max limit within reason 
+                                               # 3.15 (was 7001): this should limit the Mordor and other swarms
 			(store_div, ":chance_modifier", ":strength", 100),
             (val_sub, ":chance_modifier", 35), # -5 for str. 3000, 0 for 3500, +5 for 4000,... +35 for 7000 
             

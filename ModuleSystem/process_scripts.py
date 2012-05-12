@@ -16,10 +16,11 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   for i_script in xrange(len(scripts)):
     func = scripts[i_script]
     script_name = convert_to_identifier(func[0])
-    if cheat_switch == 0:  
-      if (not(script_name.startswith("game_"))):
-        s_num = s_num + 1
-        script_name = "s" + str(s_num) 
+    #MV: removed script name obfuscation.. made impossible helping players
+    # if cheat_switch == 0:  
+      # if (not(script_name.startswith("game_"))):
+        # s_num = s_num + 1
+        # script_name = "s" + str(s_num) 
     if (type(func[1]) == list_type):
       #file.write("%s -1\n"%(convert_to_identifier(func[0])))
       file.write("%s -1\n"%script_name)

@@ -60,7 +60,7 @@ def set_item_faction():
 		if sfaction > 0: command_list.append((item_set_slot, i_item, slot_item_subfaction, sfaction))
 	return command_list [:]
 
-companionPriceMult = 50 # this is used to multiply old hiring praces for companions (in res point) to new prices (in influence) - MV: nerfed down, was 20
+companionPriceMult = 100 # this is used to multiply old hiring praces for companions (in res point) to new prices (in influence) - MV: nerfed down to 50, was 20 - another nerf, Glorfindel now 50, others reasonable
 
 scripts = [
 
@@ -450,10 +450,10 @@ scripts = [
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":new_rank", reg0),
           
-        # gain influence = 1/10 rank points gain (rounded). 
+        # gain influence = 1/8 rank points gain (rounded) Was 1/10
           (faction_get_slot, ":val", ":fac", slot_faction_influence),
-          (store_add, ":inf_dif", ":difference", 5),
-          (val_div, ":inf_dif", 10),
+          (store_add, ":inf_dif", ":difference", 8/2),
+          (val_div, ":inf_dif", 8),
           (val_add, ":val", ":inf_dif"),
           (faction_set_slot, ":fac", slot_faction_influence, ":val"),
 
@@ -1719,10 +1719,15 @@ scripts = [
 	# savegame compartibillity globals. USE THOSE in code if need be
 	# Feel free to rename them... BUT if so rename then if variables.txt BEFORE you compile your code!!!
 	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
-	(assign, "$g_variable6", 0), (assign, reg0, "$g_variable6"), #MV: to get rid of build warnings - remove on use
-	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"),
-	(assign, "$g_variable8", 0), (assign, reg0, "$g_variable8"),
+	#(assign, "$battle_renown_total", 0),
+	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"), #MV: to get rid of build warnings - remove on use
+	(assign, "$g_variable8", 0), (assign, reg0, "$g_variable8"), 
 	(assign, "$g_variable9", 0), (assign, reg0, "$g_variable9"),
+    #these are used for strategic options/tweaks
+	(assign, "$tld_option_siege_reqs", 0), #0,1,2 : Siege strength requirements: Normal/Halved/None
+	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
+	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
+	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -4400,11 +4405,12 @@ scripts = [
 	      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
           # add half victory points to the winner faction
           (try_begin),
+            (neq, "$tld_option_regen_rate", 3), #None - no regen, even from battles
             (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
             (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
 		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
 		    (val_add, ":winner_strength", ":win_value"),
-            (val_min, ":winner_strength", 9995), #limit max strength
+            (val_min, ":winner_strength", fac_str_max), #limit max strength
 	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
             #debug stuff
             (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),
@@ -5562,7 +5568,7 @@ scripts = [
 			(assign, ":quest_importance", 4),
 			(assign, ":quest_xp_reward", 3000),
 			(assign, ":quest_gold_reward", 1500),
-			(assign, ":quest_rank_reward", 120),
+			(assign, ":quest_rank_reward", 60),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),          #mtarini: Saruman wants a troll be captured
@@ -5576,7 +5582,7 @@ scripts = [
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
-			(assign, ":quest_rank_reward", 75),
+			(assign, ":quest_rank_reward", 45),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),
@@ -5599,7 +5605,7 @@ scripts = [
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
-			(assign, ":quest_rank_reward", 70),
+			(assign, ":quest_rank_reward", 40),
 			(assign, ":quest_expiration_days", 10),
 			(assign, ":quest_dont_give_again_period", 30),
 			(assign, ":result", ":quest_no"),
@@ -5615,7 +5621,7 @@ scripts = [
 			(assign, ":quest_importance", 2),
 			(assign, ":quest_xp_reward", 100),
 			(assign, ":quest_gold_reward", 500),
-			(assign, ":quest_rank_reward", 50),
+			(assign, ":quest_rank_reward", 30),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),
@@ -7064,7 +7070,7 @@ scripts = [
       (try_end),
 ]),
 
-# script_get_closest_landmark (mtarini)
+# script_get_close_landmark (mtarini) MV: corrected typo so searching for script_get_close_landmark works
 # a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
 # Input: arg1 = party_no
 # Output: reg0 = landmark no (closest, max dist 4),. Else -1
@@ -7074,6 +7080,7 @@ scripts = [
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
+        (party_is_active, ":center_no"), #MV: Barad Dur caused script errors, probably because it was destroyed
 		(this_or_next|eq, ":center_no", "p_town_erebor"), # erebor looks the same if destroyed
 		(this_or_next|eq, ":center_no", "p_town_isengard"), # iseengard looks the same if destroyed
 		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # destroyed stuff are not landmarks
@@ -7106,7 +7113,7 @@ scripts = [
 	  (try_end),
 ]),
 
-# script_get_closest_landmark (mtarini)
+# script_cf_store_landmark_description_in_s17 (mtarini) MV: corrected careless copy/paste
 # a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
 # Output: s17: the string
 ("cf_store_landmark_description_in_s17", [
@@ -10924,6 +10931,7 @@ scripts = [
       (assign, "$cant_talk_to_enemy", 0),
       (assign, "$last_defeated_hero", 0),
       (assign, "$last_freed_hero", 0),
+      (assign, "$battle_renown_total", 0),
 
       (call_script, "script_encounter_calculate_fit"),
       (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
@@ -13753,7 +13761,7 @@ scripts = [
     [(set_spawn_radius,5),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_mountain_bandits"),
-       (lt,":num_parties",num_mountain_bandit_spawn_points*4), # 4 bandits per spawn point on average
+       (lt,":num_parties",num_mountain_bandit_spawn_points*2), # 2 bandits per spawn point on average - was 4
        (store_random,":spawn_point",num_mountain_bandit_spawn_points),
        (val_add,":spawn_point","p_mountain_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_mountain_bandits"),
@@ -13761,7 +13769,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_forest_bandits"),
-       (lt,":num_parties",num_forest_bandit_spawn_points*4),
+       (lt,":num_parties",num_forest_bandit_spawn_points*2),
        (store_random,":spawn_point",num_forest_bandit_spawn_points),
        (val_add,":spawn_point","p_forest_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_forest_bandits"),
@@ -13769,7 +13777,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_sea_raiders"),
-       (lt,":num_parties",num_sea_raider_spawn_points*4),
+       (lt,":num_parties",num_sea_raider_spawn_points*2),
        (store_random,":spawn_point",num_sea_raider_spawn_points),
        (val_add,":spawn_point","p_sea_raider_spawn_point_1"),
        (spawn_around_party,":spawn_point","pt_sea_raiders"),
@@ -13777,7 +13785,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_steppe_bandits"),
-       (lt,":num_parties",num_steppe_bandit_spawn_points*4),
+       (lt,":num_parties",num_steppe_bandit_spawn_points*2),
        (store_random,":spawn_point",num_steppe_bandit_spawn_points),
        (val_add,":spawn_point","p_steppe_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_steppe_bandits"),
@@ -13785,7 +13793,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_looters"),
-       (lt,":num_parties",30), # 1 looter per 2 towns
+       (lt,":num_parties",20), # 1 looter per 3 towns
        (store_random_in_range,":spawn_point",centers_begin,advcamps_begin),
        (spawn_around_party,":spawn_point","pt_looters"),
        (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
@@ -13799,7 +13807,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_deserters"),
-       (lt,":num_parties",15),
+       (lt,":num_parties",10), #was 15
        (set_spawn_radius, 4),
        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (store_random_in_range, ":random_no", 0, 100),

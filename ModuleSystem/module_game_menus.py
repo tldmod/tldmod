@@ -2856,8 +2856,63 @@ game_menus = [
 	    ],"Permanent death for player (that is YOU!):  {s7}.",[
 	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2)]),
 
+    ("game_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
  ]),
+( "camp_strat_tweaks",0,
+	"^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)","none",[],
+    [
+    ("strat_tweaks_siege_reqs",[
+      (try_begin),
+        (eq,"$tld_option_siege_reqs",0),(str_store_string, s7, "@Normal"),
+	  (else_try),
+        (eq,"$tld_option_siege_reqs",1),(str_store_string, s7, "@Defender only"),
+	  (else_try),
+        (str_store_string, s7, "@None"),
+      (try_end),
+        ],"Siege strength requirements: {s7}",[
+        (val_add, "$tld_option_siege_reqs", 1),
+        (val_mod, "$tld_option_siege_reqs", 3),]), #0-2
+
+    ("strat_tweaks_siege_relax_rate",[
+      (val_max, "$tld_option_siege_relax_rate", 50), #deals with old saves
+      (assign, reg1, "$tld_option_siege_relax_rate"),
+        ],"Siege str. req. relaxation rate: {reg1}",[
+        (val_mul, "$tld_option_siege_relax_rate", 2),
+        (try_begin),
+          (eq, "$tld_option_siege_relax_rate", 400),
+          (assign, "$tld_option_siege_relax_rate", 50),
+        (try_end),]), #50, 100, 200
+        
+    ("strat_tweaks_regen_rate",[
+      (try_begin),
+        (eq,"$tld_option_regen_rate",0),(str_store_string, s7, "@Normal"),
+	  (else_try),
+        (eq,"$tld_option_regen_rate",1),(str_store_string, s7, "@Halved"),
+	  (else_try),
+        (eq,"$tld_option_regen_rate",2),(str_store_string, s7, "@Battles only"),
+	  (else_try),
+        (str_store_string, s7, "@None"),
+      (try_end),
+        ],"Strength regen rate: {s7}",[
+        (val_add, "$tld_option_regen_rate", 1),
+        (val_mod, "$tld_option_regen_rate", 4),]), #0,1,2,3
+        
+    ("strat_tweaks_siege_regen_limit",[
+      (val_max, "$tld_option_regen_limit", 500), #deals with old saves
+      (assign, reg1, "$tld_option_regen_limit"),
+        ],"Factions don't regen below: {reg1}",[
+        (val_add, "$tld_option_regen_limit", 500),
+        (try_begin),
+          (eq, "$tld_option_regen_limit", 2500),
+          (assign, "$tld_option_regen_limit", 500),
+        (try_end),]), #500/1000/1500/2000
+
+    ("strat_tweaks_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")]),
+ ]),
+
+ 
+ 
 ( "camp_chest_fill",0,
  "^^^^^^^^Please choose faction to get items from.",
  "none",
@@ -3990,13 +4045,6 @@ game_menus = [
     [
       ("reject",[],"Send a message you are too busy.",
        [   (quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 7),
-           #Send Gandalf on a little chat
-           (try_begin),
-             (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-             (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
-             (eq, ":already_done", 0),
-             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
-           (try_end),
            (change_screen_return),
         ]),
       ("continue",[],"Send word you'll join him shortly.",
@@ -4008,6 +4056,13 @@ game_menus = [
            (str_store_string, s2, "@{s13} asked you to report to him with at least {reg13} troops."),
            (call_script, "script_start_quest", "qst_report_to_army", ":quest_target_troop"),
            (call_script, "script_report_quest_troop_positions", "qst_report_to_army", ":quest_target_troop", 3),
+           #Send Gandalf on a little chat
+           (try_begin),
+             (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+             (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
+             (eq, ":already_done", 0),
+             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
+           (try_end),
            (change_screen_return),
         ]),
      ]
@@ -4078,6 +4133,7 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(call_script, "script_maybe_relocate_player_from_z0"),
+    (val_add, "$battle_renown_total", "$battle_renown_value"),
 	(call_script, "script_encounter_calculate_fit"),
 	 
 	(call_script, "script_party_count_fit_regulars", "p_main_party"),
@@ -4271,7 +4327,8 @@ game_menus = [
 			  (else_try), 
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end), 
-              (store_div, ":rank_increase", "$battle_renown_value", 4), # MV: give some rank increase according to renown (should be small 1-10)
+              (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+#(display_message, "@Debug: giving rank points for impressed faction."),		  
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
 			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
@@ -4304,7 +4361,7 @@ game_menus = [
           (store_mul, ":faction_reln_boost", ":enemy_advantage", "$g_starting_strength_enemy_party"),
           (val_div, ":faction_reln_boost", 300),
           (val_min, ":faction_reln_boost", 50), #was 40 in 3.1 
-          (val_div, ":faction_reln_boost", 2), #MV: nerf to be close to normal battles - MV: upped a bit after 3.1
+          (val_div, ":faction_reln_boost", 2), #MV: nerf to be close to normal battles - MV: upped a bit after 3.1 - MV: not used at all in 3.15, back to renown
 
           (store_mul, "$g_relation_boost", ":enemy_advantage", ":enemy_advantage"),
           (val_div, "$g_relation_boost", 700),
@@ -4313,8 +4370,11 @@ game_menus = [
           (party_get_num_companion_stacks, ":num_ally_stacks", "$g_ally_party"),
           (gt, ":num_ally_stacks", 0), # anybody survived
           (store_faction_of_party, ":ally_faction","$g_ally_party"),
-		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
-		  
+          
+          (store_div, ":rank_increase", "$battle_renown_total", 5), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+#(display_message, "@Debug: giving rank points for helping allies."),		  
+		  (call_script, "script_increase_rank", ":ally_faction", "$g_relation_boost"), # MV - changed rank increase to renown calc
+#		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
           #(call_script, "script_change_player_relation_with_faction", ":ally_faction", ":faction_reln_boost"),
           (party_stack_get_troop_id, ":ally_leader", "$g_ally_party"),
           (party_stack_get_troop_dna, ":ally_leader_dna", "$g_ally_party"),
@@ -4871,7 +4931,7 @@ game_menus = [
                             "Charge the enemy.",[
                                 (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
                                 (assign, "$g_battle_result", 0),
- #                               (call_script, "script_calculate_renown_value"),
+                                (call_script, "script_calculate_renown_value"),
                                 (call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
                                 (call_script, "script_calculate_battleside_races"),
                                 

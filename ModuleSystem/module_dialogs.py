@@ -3389,6 +3389,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (assign, reg15, ":siege_command_cost"),
    ], "You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #insufficient faction strength
+     (eq, "$tld_option_siege_reqs", 0), # Normal attacking siege reqs
      (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_strength, fac_str_ok),
      (call_script, "script_faction_strength_string_to_s23", "$g_talk_troop_faction"),     
    ], "We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.", "lord_pretalk",[]],
@@ -3418,10 +3419,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      
      #make sure the enemy faction is weak enough to be sieged
      (faction_get_slot, ":enemy_faction_strength", ":enemy_faction", slot_faction_strength),       
+     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
      (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
      (lt, ":enemy_faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
      #if it's a faction capital, the enemy needs to be very weak
      (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
      (this_or_next|lt, ":enemy_faction_strength", ":capital_siegable_str"),
      (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
      (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak

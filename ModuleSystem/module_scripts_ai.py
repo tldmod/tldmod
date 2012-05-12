@@ -157,7 +157,7 @@ ai_scripts = [
        (else_try),
          (eq, ":old_faction_ai_state", sfai_gathering_army),
          (gt, ":offensive_hours", 180),
-         (assign, ":chance_defend", 10000),#army can not be gathered, cancel
+         (assign, ":chance_defend", 10000),#army can not be gathered, cancel; MV: also used to check for campaign cancellation later
          #else, keep it as 0
        (else_try),
          (store_div, ":chance_defend", ":offensive_hours", 10),
@@ -216,6 +216,7 @@ ai_scripts = [
        (try_end),
 ## Attacking center
        (try_begin),
+         (this_or_next|neq, "$tld_option_siege_reqs", 0), # Disabled normal attacking siege reqs
          (ge, ":faction_strength", fac_str_ok), #TLD
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
@@ -240,10 +241,12 @@ ai_scripts = [
            #MV: make sure the enemy faction is weak enough to be sieged
            (faction_get_slot, ":center_faction_strength", ":center_faction", slot_faction_strength),
            
+           (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
            (lt, ":center_faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
            #MV: if it's a faction capital, the enemy needs to be very weak
            (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+           (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
            (this_or_next|lt, ":center_faction_strength", ":capital_siegable_str"),
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
            (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
@@ -418,7 +421,8 @@ ai_scripts = [
        (try_end),
 #Attacking enemies around center (defensive patrols)
        (try_begin),
-         (gt, ":faction_strength", fac_str_very_weak), #TLD: was fac_str_weak - more defensive patrols by weak factions
+         # MV commented out for 3.15: to lessen inactivity of weak factions
+         #(gt, ":faction_strength", fac_str_very_weak), #TLD: was fac_str_weak - more defensive patrols by weak factions 
          #(neq, ":old_faction_ai_state", sfai_default), #MV: allow switching from defense to defensive patrols
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_enemies_around_center", -1),
@@ -426,7 +430,7 @@ ai_scripts = [
            (eq, ":old_faction_ai_state", sfai_attacking_enemies_around_center),
            (assign, ":old_target_attacking_enemies_around_center", ":old_faction_ai_object"),
          (try_end),
-
+         
          (assign, ":best_attack_army_center", -1),
          (assign, ":best_attack_army_score", 0),
          (try_for_range, ":center_no", centers_begin, centers_end),
@@ -443,6 +447,18 @@ ai_scripts = [
            #(faction_slot_eq, ":center_faction", slot_faction_active_theater, ":faction_theater"),
            
            (party_get_slot, ":nearby_enemy_strength", ":center_no", slot_party_nearby_enemy_strength),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # #(this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_imladris"),
+  # (assign, reg1, ":faction_marshall_army_strength"),
+  # (assign, reg2, ":nearby_enemy_strength"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (str_store_party_name, s2, ":center_no"),
+  # (display_message, "@DEBUG: {s1} considers patroling around {s2}, marshall str:{reg1} enemy str:{reg2}.", 0x30FFC8),
+# (try_end),
+#MV test code end
            (store_mul, ":attack_army_score", ":nearby_enemy_strength", 1000),
            (val_div, ":attack_army_score", ":faction_marshall_army_strength"), 
            (try_begin),
@@ -451,7 +467,11 @@ ai_scripts = [
            (try_end),
            (this_or_next|gt, ":attack_army_score", 0),
            (eq, ":center_faction", ":faction_no"),
-           (val_max, ":attack_army_score", 1), #MV: always some small chance of patrol around home towns
+           (try_begin),
+             (store_random_in_range, ":random_patrol", 0, 100),
+             (lt, ":random_patrol", 50), #50%
+             (val_max, ":attack_army_score", 5), #MV: always some small chance of patrol around home towns
+           (try_end),
            (val_mul, ":attack_army_score", 4),
            (try_begin),
              # (party_slot_eq, ":center_no", slot_party_type, spt_village),
@@ -469,17 +489,51 @@ ai_scripts = [
              (eq, ":old_target_attacking_enemies_around_center", ":center_no"),
              (val_mul, ":attack_army_score", 100),
            (try_end),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # #(this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_imladris"),
+  # (assign, reg1, ":attack_army_score"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (str_store_party_name, s2, ":center_no"),
+  # (display_message, "@DEBUG: {s1} considers patroling around {s2}: attack score before distance: {reg1}.", 0x30FFC8),
+# (try_end),
+#MV test code end
            #(store_distance_to_party_from_party, ":dist", ":center_no", ":faction_marshall_party"),
            (call_script, "script_get_tld_distance", ":center_no", ":faction_marshall_party"),
            (assign, ":dist", reg0),
            (val_add, ":dist", 20),
-           (val_mul, ":dist", 10), #TLD: bigger effect of distance
+           #(val_mul, ":dist", 10), #TLD: bigger effect of distance
            (val_div, ":attack_army_score", ":dist"),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # #(this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_imladris"),
+  # (assign, reg1, ":attack_army_score"),
+  # (assign, reg2, ":dist"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (str_store_party_name, s2, ":center_no"),
+  # (display_message, "@DEBUG: {s1} considers patroling around {s2}: attack score after distance: {reg1}, distance+20: {reg2}.", 0x30FFC8),
+# (try_end),
+#MV test code end
            (gt, ":attack_army_score", ":best_attack_army_score"),
            (assign, ":best_attack_army_center", ":center_no"),
            (assign, ":best_attack_army_score", ":attack_army_score"),
          (try_end),
          (ge, ":best_attack_army_center", 0),
+#MV test code begin
+# (try_begin),
+  # (eq, cheat_switch, 1),
+  # #(this_or_next|eq, ":faction_no", "fac_gondor"),
+  # (eq, ":faction_no", "fac_imladris"),
+  # (assign, reg1, ":best_attack_army_score"),
+  # (str_store_faction_name, s1, ":faction_no"),
+  # (str_store_party_name, s2, ":best_attack_army_center"),
+  # (display_message, "@DEBUG: {s1} best patrol center is {s2} with attack score: {reg1}.", 0x30FFC8),
+# (try_end),
+#MV test code end
          #Center having enemies at equal strength and 30 kms away will have a best_attack_army_score of 56
          (store_mul, ":chance_attacking_enemies_around_center", ":best_attack_army_score", 2),
          (val_min, ":chance_attacking_enemies_around_center", 2000),
@@ -515,6 +569,19 @@ ai_scripts = [
              (assign, ":end_cond", 0),#break
            (try_end),
          (try_end),
+         
+         #MV 3.15: prevent campaign cancellation while questing, or too soon
+         (try_begin),
+           (gt, ":chance_defend", 0), #any campaign can be cancelled
+           (eq, "$players_kingdom", ":faction_no"),
+#           (this_or_next|check_quest_active, "qst_follow_army"),
+           (this_or_next|lt, ":offensive_hours", 3*24), #campaign can be cancelled after minimum of 3 days
+           (this_or_next|check_quest_active, "qst_deliver_cattle_to_army"),
+           (check_quest_active, "qst_scout_waypoints"),
+           (assign, ":chance_defend", 0), #if the player is questing, don't cancel at all
+         (try_end),
+
+
        (try_end),
           
        (assign, ":sum_weights", 0),
@@ -525,10 +592,18 @@ ai_scripts = [
        (val_add, ":sum_weights", ":chance_attacking_enemy_army"),
        (val_add, ":sum_weights", ":chance_attacking_enemies_around_center"),
        
+       #MV 3.15: another attempt to avoid doing nothing
+       (try_begin), #patrol around the capital
+         (eq, ":sum_weights", 0),
+         (assign, ":sum_weights", 1),
+         (assign, ":chance_attacking_enemies_around_center", 1),
+         (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+         (assign, ":target_attacking_enemies_around_center", ":capital"),
+       (try_end),
 #MV test code begin
 # (try_begin),
   # (eq, cheat_switch, 1),
-  # (this_or_next|eq, ":faction_no", "fac_gondor"),
+#  (this_or_next|eq, ":faction_no", "fac_gondor"),
   # (eq, ":faction_no", "fac_mordor"),
   # (assign, reg1, ":chance_defend"),
   # (assign, reg2, ":chance_gathering_army"),
@@ -553,6 +628,7 @@ ai_scripts = [
          (try_end),
          (try_begin),
            (eq, cheat_switch, 1),
+           (eq, ":faction_no", "fac_imladris"),
            (str_store_faction_name, s1, ":faction_no"),
            #(display_message, "@DEBUG: {s1} decided to do nothing."),
          (try_end),
@@ -568,6 +644,7 @@ ai_scripts = [
          (try_end),
          (try_begin),
            (eq, cheat_switch, 1),
+           (eq, ":faction_no", "fac_imladris"),
            (str_store_faction_name, s1, ":faction_no"),
            #(display_message, "@DEBUG: {s1} decided to gather army."),
          (try_end),
@@ -582,6 +659,7 @@ ai_scripts = [
          (try_end),
          (try_begin),
            (eq, cheat_switch, 1),
+           (eq, ":faction_no", "fac_imladris"),
            (str_store_faction_name, s1, ":faction_no"),
            (str_store_party_name, s2, ":target_attacking_center"),
            #(display_message, "@DEBUG: {s1} decided to besiege {s2}."),
@@ -597,6 +675,7 @@ ai_scripts = [
          (try_end),
          (try_begin),
            (eq, cheat_switch, 1),
+           (eq, ":faction_no", "fac_imladris"),
            (str_store_faction_name, s1, ":faction_no"),
            (str_store_party_name, s2, ":target_attacking_enemy_army"),
            #(display_message, "@DEBUG: {s1} decided to attack {s2}."),
@@ -619,6 +698,7 @@ ai_scripts = [
          (try_end),
          (try_begin),
            (eq, cheat_switch, 1),
+           (eq, ":faction_no", "fac_imladris"),
            (str_store_faction_name, s1, ":faction_no"),
            (str_store_party_name, s2, ":target_attacking_enemies_around_center"),
            #(display_message, "@DEBUG: {s1} decided to attack enemies around {s2}."),
@@ -2137,7 +2217,7 @@ ai_scripts = [
 
 		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
-		  (val_div, ":strength", 1300),
+		  (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
 		  (val_add, ":strength", 1),
 		  (lt, ":hosts", ":strength"), # faction passes strength check 
 
@@ -2145,10 +2225,15 @@ ai_scripts = [
           (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
 		  (lt,":rnd",10),              # faction passes random check 
 
-			(val_add, ":hosts",1),  (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
+			(val_add, ":hosts",1),
+            (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
 			
             (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
 	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
+            (try_begin), #MV: double that for kings
+              (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
+              (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
+            (try_end),
             (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
 			(str_store_troop_name, s5, ":hero"),
 			(str_store_troop_name_link, s7, ":hero"),

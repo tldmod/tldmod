@@ -1,3 +1,32 @@
+TLD 3.15 changes:
+- Octoburn: added unused dwarven helmets to Dale
+- Strategy tweaks (a submenu under Actions->TLD mod options)
+  - Siege strength requirements: Normal/Defender only/None
+  - Siege str. req. relaxation rate: 50/100(default)/200
+  - Strength regen rate: Normal/Halved/Battles only/None
+  - Factions don't regen below: 500(default)/1000/1500/2000
+- Influence rebalanced (made easier)
+  - Companions cost halved again (Glorfindel is 50 now)
+  - 25% more influence from rank point gain (was: rank points/10, now: rank points/8)
+  - Changed formula for rank points gained in allied battles, now based on Native renown, as in single battles. Additional points from allies.
+- Campaign AI
+  - Removed a restriction that prevented weak factions to go patrolling; fixed an old bug that made patrols much less likely
+  - Less canceled campaigns if there's any reason to patrol for enemies; especially if the player is following the marshall and has a quest
+  - Max faction strength is now 8000 (from 9999) - less grind
+  - Slightly more lords spawn with full armies when strength is low
+  - Last-stand parties only for Mirkwood and Isengard
+  - Strong factions spawn less patrols
+
+
+TLD 3.14 changes:
+- Vota: MANY troops and items rebalanced
+- CppCoder: bugfixes
+- MV: Defense strength for siege requirements relaxes with player level (opens up the game)
+
+
+3.11-3.13 Unknown changes :)
+
+
 TLD 3.1 changes
 
 Major updates:
