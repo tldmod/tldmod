@@ -1745,7 +1745,7 @@ itemsfile version 2
  itm_harad_lamellar Harasjala_Armor Harasjala_Armor 1  harad_lamellar 0  16842765 0 1300 704643236 22.000000 100 0 25 10 0 0 0 0 0 0 0 0
 0
 
- itm_harad_heavy Harad_Swordsman_Armor Harad_Swordsman_Armor 1  harad_heavy 0  16842765 0 1500 704643072 22.000000 100 0 40 10 0 0 0 0 0 0 0 0
+ itm_harad_heavy Harad_Swordsman_Armor Harad_Swordsman_Armor 1  harad_heavy 0  16842765 0 4000 704643072 22.000000 100 0 40 10 0 0 0 0 0 0 0 0
 0
 
  itm_harad_skirmisher Light_Harad_Garb Light_Harad_Garb 1  harad_skirmisher 0  16842765 0 500 123731968 7.000000 100 0 12 3 0 0 0 0 0 0 0 0
@@ -1754,7 +1754,7 @@ itemsfile version 2
  itm_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16842765 0 600 123731968 14.000000 100 0 16 6 0 0 0 0 0 0 0 0
 0
 
- itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16842765 0 4000 704643072 20.000000 100 2 30 12 0 0 0 0 0 0 0 0
+ itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16842765 0 3000 704643072 20.000000 100 2 30 12 0 0 0 0 0 0 0 0
 0
 
  itm_harad_champion Far_Harad_Garb Far_Harad_Garb 1  harad_champion 0  16842765 0 700 123731968 10.000000 100 0 14 8 0 0 0 0 0 0 0 0
@@ -1814,16 +1814,16 @@ itemsfile version 2
  itm_horandor_a Harad_Scimitar Harad_Scimitar 1  horandor_a 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 22528 96 0 90 0 256 22
 0
 
- itm_skirmisher_sword Harad_Skirmisher_Sword Harad_Skirmisher_Sword 1  skirmisher_sword 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 69 0 256 30
+ itm_skirmisher_sword Harad_Skirmisher_Sword Harad_Skirmisher_Sword 1  skirmisher_sword 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 60 0 256 30
 0
 
- itm_harad_sabre Harad_Sabre Harad_Sabre 1  harad_sabre 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 92 0 256 30
+ itm_harad_sabre Harad_Sabre Harad_Sabre 1  harad_sabre 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 70 0 256 30
 0
 
- itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 66 0 512 542
+ itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 200 286870 2.500000 100 0 0 0 0 30720 96 0 50 0 512 542
 0
 
- itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  342163459 9223635925844623584 700 271496 2.000000 100 0 0 0 0 28672 100 0 55 0 256 540
+ itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  342163459 9223635925844623584 700 271496 2.000000 100 0 0 0 0 28672 100 0 74 0 256 540
 0
 
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 286870 0.750000 100 0 0 0 0 22528 112 0 47 0 275 22
@@ -1835,7 +1835,7 @@ itemsfile version 2
  itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  138772484 4222124851987200 300 271496 3.000000 100 0 0 0 0 16384 81 0 190 0 282 528
 0
 
- itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3.000000 100 0 0 0 0 16384 81 0 245 0 282 528
+ itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3.000000 100 0 0 0 0 16384 86 0 149 0 282 528
 0
 
  itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  268763143 6442450944 500 251658402 3.000000 100 0 5 0 0 600 82 0 90 0 0 0
