@@ -829,7 +829,7 @@ game_menus = [
 		(eq, "$g_custom_battle_scenario", 26),
 		#(assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
 		#(assign, "$g_custom_battle_scene", "scn_random_scene_plain_small"),
-		(assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
+		(assign, "$g_custom_battle_scene", "scn_quick_battle_5"),
 		#(modify_visitors_at_site, "$g_custom_battle_scene"),
 		#(assign, "$g_player_troop", "$testbattle_team_a_troop"),
 		#(set_player_troop, "$g_player_troop"),
