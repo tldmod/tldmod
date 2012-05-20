@@ -2809,6 +2809,7 @@ scripts = [
         (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
         (troop_get_type, ":type", ":stack_troop"),
 		(eq, ":type", tf_orc),
+		  (neg|troop_is_mounted, ":stack_troop"),
 		  (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
           (val_add, ":total", ":stack_size"),
       (try_end),  
