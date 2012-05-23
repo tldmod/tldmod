@@ -3336,6 +3336,7 @@ upgrade(troops,"orc_tracker_of_mordor","fell_orc_tracker_of_mordor")
 upgrade2(troops,"orc_archer_of_mordor","large_orc_archer_of_mordor","orc_tracker_of_mordor")
 upgrade(troops,"large_orc_archer_of_mordor","fell_orc_archer_of_mordor")
 upgrade(troops,"warg_rider_of_gorgoroth","great_warg_rider_of_mordor")
+upgrade(troops,"morgul_orc","fell_morgul_orc")
 #MORDOR URUKS
 upgrade(troops,"uruk_snaga_of_mordor","uruk_of_mordor")
 upgrade2(troops,"uruk_of_mordor","large_uruk_of_mordor","uruk_slayer_of_mordor")
