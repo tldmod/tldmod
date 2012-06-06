@@ -1882,7 +1882,7 @@ fac_reward_items_list = [
 #fac_umbar
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger, imod_large_bag), (5, itm_umb_helm_f, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_umbar_pike, imod_masterwork), (8, itm_umb_armor_h, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_orc_two_handed_axe, imod_masterwork), (8, itm_moria_armor_e, imod_lordly), (9, itm_orc_bow, imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_orc_two_handed_axe, imod_masterwork), (8, itm_moria_armor_e, imod_lordly), (9, itm_uruk_bow, imod_masterwork)],
 #fac_guldur
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0), (7,itm_angmar_whip_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
