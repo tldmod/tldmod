@@ -6261,7 +6261,8 @@ It's an important matter, so please make haste.", "caravan_help1",[
 [anyone,"start", [(eq,"$talk_context",tc_ally_thanks),
                     (troop_is_hero, "$g_talk_troop"),
                     (eq, "$g_talk_troop_met", 0),
-                    (ge, "$g_talk_troop_relation", 5)],
+                    (ge, "$g_talk_troop_relation", 5),
+		    (str_store_troop_name, s1, "$g_talk_troop")],
 "Your help was most welcome stranger. My name is {s1}. Can I learn yours?", "ally_thanks_meet", []],
 
 [anyone,"start", [(eq,"$talk_context",tc_ally_thanks),
