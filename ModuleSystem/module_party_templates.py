@@ -323,7 +323,7 @@ party_templates = [
 ("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_merchant_protector_of_dale,2,4),(trp_dale_billman,1,2),(trp_dale_veteran_warrior,1,2),]),
 #Erebor (7-14, 5-10, 4-8)
 ("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_warrior,1,2),(trp_dwarven_lookout,1,2),(trp_iron_hills_miner,1,2),(trp_dwarven_apprentice,4,8),]),
-("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_scout,3,5),(trp_dwarven_hardened_warrior,2,4),(trp_iron_hills_miner,0,1),]),
+("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_scout,1,3),(trp_dwarven_hardened_warrior,4,6),(trp_iron_hills_miner,0,1),]),
 ("dwarf_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_bowman,1,2),(trp_dwarven_axeman,1,2),(trp_dwarven_spearman,1,2),(trp_iron_hills_infantry,1,2),]),
 #Dunlenders (7-14, 5-10, 4-8)
 ("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_dunnish_warrior,3,6),(trp_dunnish_wildman,4,8),]),
