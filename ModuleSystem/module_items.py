@@ -700,7 +700,7 @@ items =[
 ["gundabad_helm_b","Gundabad_Helm",[("orc_gunda_helm_a",0)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(18)|difficulty(0),imodbits_orc_cloth],
 ["gundabad_helm_c","Gundabad_Helm",[("orc_gunda_helm_b",0)],itp_type_head_armor|itp_shop,0,350,weight(2)|head_armor(22)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
 ["gundabad_helm_d","Gundabad_Helm",[("orc_gunda_helm_c",0)],itp_type_head_armor|itp_shop,0,400,weight(2)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["gundabad_helm_e","Wargrider_Helm",[("orc_wargrider_helm",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,350,weight(1.5)|head_armor(22)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["gundabad_helm_e","Wargrider_Helm",[("orc_wargrider_helm",0)],itp_type_head_armor|itp_fit_to_head,0,350,weight(1.5)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
 #WEAPONS##########
 #["gundabad_sabre", "Gundabad Sabre",[("orc_sabre",0),("scab_orc_sabre", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 162 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(85)|swing_damage(28 , cut) | thrust_damage(21 ,  pierce),imodbits_sword_high ],
 ####DUNLAND ITEMS##########
@@ -732,7 +732,7 @@ items =[
 #["dun_shield_f", "Dunnish Shield",[("dunland_shield_f_spike",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dun_shield_g", "Dunnish Shield",[("dunland_shield_g",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #WEAPONS##########
-["dun_berserker","Dunland_Chieftain_Sword",[("dunland_sword",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(98)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
+["dun_berserker","Dunland_Chieftain_Sword",[("dunland_sword",0)],itp_type_one_handed_wpn|itp_primary,itc_longsword|itcf_carry_sword_left_hip,400,weight(1.25)|difficulty(0)|spd_rtng(140)|weapon_length(98)|swing_damage(33,cut)|thrust_damage(24,pierce),imodbits_weapon_bad],
 ["dunnish_antler_axe","Dunnish_Antler_Axe",[("dunland_antleraxe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(85)|weapon_length(73)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["dunnish_war_axe","Dunnish_War_Axe",[("dunland_axe_a",0)],itp_type_one_handed_wpn|itp_shop|itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(97)|weapon_length(50)|swing_damage(40,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["dunnish_axe","Dunnish_Axe",[("dunland_axe_b",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(100)|weapon_length(50)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
@@ -1083,9 +1083,9 @@ items =[
 ["woodman_padded","Woodman_Padded_Armor",[("woodman_padded",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(12)|head_armor(0)|body_armor(16)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["beorn_tunic","Beorning_Tunic",[("beorn_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(4)|head_armor(0)|body_armor(7)|leg_armor(3)|difficulty(0),imodbits_cloth,],
 ["beorn_padded","Beorning_Padded_Armor",[("beorn_padded",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(12)|head_armor(0)|body_armor(16)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["beorn_heavy","Beorning_Heavy_Armor",[("beorn_heavy",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(15)|head_armor(0)|body_armor(20)|leg_armor(6)|difficulty(0),imodbits_elf_armor,],
+["beorn_heavy","Beorning_Heavy_Armor",[("beorn_heavy",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(15)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
 ["beorn_berserk","Beorning_Berserker_Kit",[("beorn_berserker",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(18)|head_armor(0)|body_armor(20)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
+["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ######HELMS##########
 ["beorn_helmet","North_Skullcap",[("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
 #["northm_helm_b", "Northmen Helm",[("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
@@ -1187,7 +1187,7 @@ items =[
 ["gondor_lance_banner","Gondor_Lance_With_Banner",[("banner_lance_gondor",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(15,blunt)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["amroth_lance_banner","DolAmroth_Lance_With_Banner",[("banner_lance_dolamroth",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_sun","Rohan_Lance_With_Sun_Banner",[("banner_lance_rohan_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
-["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
+["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|thrust_damage(35,pierce),imodbits_weapon_good],
 #
 ["merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 ["pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
@@ -1239,6 +1239,20 @@ items =[
 ["crebain_reward","Isengard_Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
+["orc_throwing_axes_reward","Gundabad_Flying_Axes",[("orc_throwing_axe",0)],itp_type_thrown|itp_unique|itp_primary|itp_bonus_against_shield,itcf_throw_axe,150,weight(4)|difficulty(0)|shoot_speed(30)|spd_rtng(103)|weapon_length(33)|thrust_damage(46,cut)|max_ammo(5),imodbits_thrown],
+["corsair_throwing_dagger_reward","Poisoned_Throwing_Daggers",[("corsair_throwing_dagger",0)],itp_type_thrown|itp_unique|itp_primary|0,itcf_throw_knife,200,weight(3.5)|difficulty(0)|shoot_speed(24)|spd_rtng(110)|weapon_length(0)|thrust_damage(50,cut)|max_ammo(10),imodbits_thrown],
+["dwarf_shield_reward","Mithril_Dwarven_Shield",[("dwarf_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,400,weight(3)|hit_points(800)|body_armor(28)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_great_axe_reward","Dwarf_Sharp_Axe",[("dwarf_great_axe",0)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,700,weight(6)|difficulty(0)|spd_rtng(83)|weapon_length(102)|swing_damage(55,pierce)|thrust_damage(0,pierce),imodbits_weapon_good],
+["isen_uruk_heavy_reward","Uruk-hai_General_Armor",[("urukhai_isen_h",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,3000,weight(30)|head_armor(0)|body_armor(38)|leg_armor(17)|difficulty(0),imodbits_orc_armor,],
+["lorien_bow_reward","Noldorin_Bow",[("Elfbow",0),("Elfbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bow_back,1000,weight(1.5)|difficulty(3)|shoot_speed(50)|spd_rtng(83)|thrust_damage(36,pierce),imodbits_good_bow,[]],
+["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(125)|weapon_length(103)|swing_damage(33,cut)|thrust_damage(33,pierce),imodbits_weapon_good],
+["dale_sword_reward","Marchwarden_Sword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(98)|weapon_length(95)|swing_damage(41,cut)|thrust_damage(24,pierce),imodbits_weapon],
+["dale_armor_reward","Esgaroth_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_cloth,[]],
+["beorn_shield_reward","Woodmen_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,200,weight(3)|hit_points(550)|body_armor(9)|spd_rtng(118)|weapon_length(60),imodbits_shield,],
+["beorn_axe_reward","Bear_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(6)|difficulty(0)|spd_rtng(110)|weapon_length(71)|swing_damage(65,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
+
 
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,3000,weight(3)|head_armor(50)|difficulty(12),0],
 ["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
