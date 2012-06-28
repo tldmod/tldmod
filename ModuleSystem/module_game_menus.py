@@ -7758,7 +7758,7 @@ game_menus = [
 	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
         (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
 	],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),

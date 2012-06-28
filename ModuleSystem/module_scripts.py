@@ -2739,8 +2739,8 @@ scripts = [
 	(assign, ":wounds", 0), #count # of wounds
 	(assign, ":wound_mask", 0), #count # of wounds
 	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
-	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a badly maimed leg"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a badly maimed arm"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded leg"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded arm"),(val_add, ":str_reg", 1),(try_end),
 	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a concussion"),(val_add, ":str_reg", 1),(try_end),
 	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@some broken ribs"),(val_add, ":str_reg", 1),(try_end),
 	(str_store_string, s5, "@You are in perfect health."),

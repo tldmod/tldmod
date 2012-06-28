@@ -4505,7 +4505,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (assign, "$g_leave_encounter",1)]], 
  
 [anyone,"lord_mission_capture_troll_accepted", [], 
-"I knew I could count on your strenght and bravery. Slaves, give to {playername} one of Our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.", "lord_pretalk",[
+"I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.", "lord_pretalk",[
     (troop_add_item, "trp_player","itm_wheeled_cage",0),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
 	(setup_quest_text,"$random_quest_no"),
