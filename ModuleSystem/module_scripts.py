@@ -2731,11 +2731,35 @@ scripts = [
         (get_player_agent_own_troop_kill_count, reg1, 1),
         (str_store_string, s1, "str_number_of_own_troops_wounded_reg1"),
         (set_result_string, s1),
-      # (else_try),
-        # (eq, ":line_no", 4), # test!!
-        # (get_player_agent_own_troop_kill_count, reg1, 1),
-		# (str_store_string, s1, "@Hey it seems that more stuff can be put here!!! (on multiple lines too) -- mtarini"),
-        # (set_result_string, s1),
+      (else_try),
+	# CppCoder: Injury Report. Feel free to edit/remove/improve. :)
+	(eq, 0, 0), # on / off toggle
+        (eq, ":line_no", 1), 
+	(assign, ":str_reg", s1), 
+	(assign, ":wounds", 0), #count # of wounds
+	(assign, ":wound_mask", 0), #count # of wounds
+	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
+	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a badly maimed leg"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a badly maimed arm"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a concussion"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@some broken ribs"),(val_add, ":str_reg", 1),(try_end),
+	(str_store_string, s5, "@You are in perfect health."),
+        (try_begin),
+		(eq, ":wounds", 1),
+		(str_store_string, s5, "@You are suffering from {s1}."),
+	(else_try),
+		(eq, ":wounds", 2),
+		(str_store_string, s5, "@You are suffering from {s1} and {s2}."),
+	(else_try),
+		(eq, ":wounds", 3),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, and {s3}."),
+	(else_try),
+		(eq, ":wounds", 4),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, {s3} and {s4}."),
+	(else_try),
+		(str_store_string, s5, "@You are in perfect health."),
+	(try_end),
+        (set_result_string, s5),
       # (else_try),
         # (eq, ":line_no", 5), # test!!
         # (get_player_agent_own_troop_kill_count, reg1, 1),
@@ -19577,7 +19601,6 @@ scripts = [
 	# (position_rotate_x, pos8, -60), 
 	# (cur_tableau_add_sun_light, pos8, 175,150,125),
 # ]),
-
 
 ]
 

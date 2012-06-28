@@ -1621,11 +1621,28 @@ game_menus = [
   ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
   ## MadVader test end
+     ("camp_test_cppcoder",[],"CC Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
  ] for ct in range(cheat_switch)])+[
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
  ),
   
+
+## MadVader test begin
+( "camp_cctest",0,
+   "Hurry up and pick something already.",
+   "none", [],
+  [
+     ("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player")]),
+     ("camp_cctest_kill_lord",[],"Kill a Lord",
+			[
+				(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+			(	call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
+			]),
+     ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+  ]
+),
+
 ## MadVader test begin
 ( "camp_mvtest",0,
    "What do you want to test today?",
@@ -7702,13 +7719,13 @@ game_menus = [
   ("leave",  [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
  ]),  
 ( "burial_mound_oath", 0, 
-  "You loudly swear an oath of vengeance for the death of {s1}. \
-  You would relentlessly seek out the forces of {s2} and destroy them. \
+  "You loudly swear an oath of vengeance for the death of {s4}. \
+  You would relentlessly seek out the forces of {s3} and destroy them. \
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
 	[(set_background_mesh, "mesh_ui_default_menu_window"),
 	(store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
-	(str_store_troop_name, s1, ":hero"),
+	(str_store_troop_name, s4, ":hero"),
 	(store_troop_faction, ":target", ":hero"),
 	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
 	
@@ -7725,7 +7742,7 @@ game_menus = [
 			(assign,":target", ":fac"),
 	(try_end),
 	
-	(str_store_faction_name, s2, ":target"),
+	(str_store_faction_name, s3, ":target"),
 	(store_current_day, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
@@ -7740,6 +7757,8 @@ game_menus = [
 	(try_end),
 	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
+        (setup_quest_text, "qst_oath_of_vengeance"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
 	],[
     ("leave", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
