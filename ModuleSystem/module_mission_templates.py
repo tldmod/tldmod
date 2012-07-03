@@ -8,6 +8,7 @@ from module_constants import *
 from module_mission_templates_TLD import *
 from module_mission_templates_unneeded import *
 from module_mission_templates_cutscenes import *
+from module_mission_templates_morale import *
 
 ####################################################################################################################
 #   Each mission-template is a tuple that contains the following fields:
