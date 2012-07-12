@@ -1743,6 +1743,7 @@ scripts = [
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
+	(assign, "$tld_option_morale", 0), # Battle morale OFF by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 	
@@ -2731,35 +2732,6 @@ scripts = [
         (get_player_agent_own_troop_kill_count, reg1, 1),
         (str_store_string, s1, "str_number_of_own_troops_wounded_reg1"),
         (set_result_string, s1),
-      (else_try),
-	# CppCoder: Injury Report. Feel free to edit/remove/improve. :)
-	(eq, 0, 0), # on / off toggle
-        (eq, ":line_no", 1), 
-	(assign, ":str_reg", s1), 
-	(assign, ":wounds", 0), #count # of wounds
-	(assign, ":wound_mask", 0), #count # of wounds
-	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
-	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded leg"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded arm"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a concussion"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@some broken ribs"),(val_add, ":str_reg", 1),(try_end),
-	(str_store_string, s5, "@You are in perfect health."),
-        (try_begin),
-		(eq, ":wounds", 1),
-		(str_store_string, s5, "@You are suffering from {s1}."),
-	(else_try),
-		(eq, ":wounds", 2),
-		(str_store_string, s5, "@You are suffering from {s1} and {s2}."),
-	(else_try),
-		(eq, ":wounds", 3),
-		(str_store_string, s5, "@You are suffering from {s1}, {s2}, and {s3}."),
-	(else_try),
-		(eq, ":wounds", 4),
-		(str_store_string, s5, "@You are suffering from {s1}, {s2}, {s3} and {s4}."),
-	(else_try),
-		(str_store_string, s5, "@You are in perfect health."),
-	(try_end),
-        (set_result_string, s5),
       # (else_try),
         # (eq, ":line_no", 5), # test!!
         # (get_player_agent_own_troop_kill_count, reg1, 1),
@@ -19601,6 +19573,48 @@ scripts = [
 	# (position_rotate_x, pos8, -60), 
 	# (cur_tableau_add_sun_light, pos8, 175,150,125),
 # ]),
+
+	# script_remove_agent_from_field
+	# This script removes an agent from a battle and adds it to the original party.
+	("remove_agent_from_field", 
+	[
+		(store_script_param, ":agent_no",1),
+		(agent_get_party_id, ":party_id", ":agent_no"),
+
+		# Remove agent's horse first.
+		(agent_get_horse, ":horse_id", ":agent_no"),
+		(try_begin),
+			(ge, ":horse_id", 0),
+			(call_script, "script_remove_agent", ":horse_id"),	
+		(try_end),
+
+		# Remove the actual agent
+		(call_script, "script_remove_agent", ":agent_no"),
+		(agent_get_troop_id, ":troop", ":agent_no"),
+      		(str_store_troop_name, s1, ":troop"),
+
+		(party_add_members, ":party_id", ":troop", 1),
+		(party_wound_members, ":party_id", ":troop", 1),
+
+	]),
+
+	# script_clean_loot
+	# This script removes other forbidden items, (e.g., manflesh)...
+	("clean_loot", 
+	[
+	 	(troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop"),
+		(try_for_range, ":i_slot", 0, ":inv_cap"),
+			(troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
+			(try_begin),
+				(faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),
+				(eq|this_or_next, ":item_id", "itm_human_meat"),
+				(eq, ":item_id", "itm_maggoty_bread"),
+        			(troop_remove_item, "trp_temp_troop", ":item_id"),
+			#(else_try),
+			(try_end),
+		(try_end),
+             	(troop_sort_inventory, "trp_temp_troop"),
+	]),
 
 ]
 

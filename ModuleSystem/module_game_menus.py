@@ -1357,8 +1357,8 @@ game_menus = [
     ]
  ),
 ( "character_report",0,
-   "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^",
-#   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^",
+   "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
+#   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
    "none",
    [#(set_background_mesh, "mesh_ui_default_menu_window"),
 
@@ -1369,6 +1369,32 @@ game_menus = [
     #(assign, reg6, "$player_honor"),
     (assign, reg7, ":party_size_limit"),
     (party_get_morale, reg8, "p_main_party"),
+	# CppCoder: Injury Report. Feel free to edit/remove/improve. :)
+	(eq, 0, 0), # on / off toggle
+	(assign, ":str_reg", s1), 
+	(assign, ":wounds", 0), #count # of wounds
+	(assign, ":wound_mask", 0), #count # of wounds
+	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
+	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded leg"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded arm"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a concussion"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@some broken ribs"),(val_add, ":str_reg", 1),(try_end),
+	(str_store_string, s5, "@You are in perfect health."),
+        (try_begin),
+		(eq, ":wounds", 1),
+		(str_store_string, s5, "@You are suffering from {s1}."),
+	(else_try),
+		(eq, ":wounds", 2),
+		(str_store_string, s5, "@You are suffering from {s1} and {s2}."),
+	(else_try),
+		(eq, ":wounds", 3),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, and {s3}."),
+	(else_try),
+		(eq, ":wounds", 4),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, {s3} and {s4}."),
+	(else_try),
+		(str_store_string, s5, "@You are in perfect health."),
+	(try_end),
    ],
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
  ),
@@ -2872,6 +2898,12 @@ game_menus = [
 							(else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Permanent death for player (that is YOU!):  {s7}.",[
 	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2)]),
+
+    ("game_options_morale",[(try_begin),(eq,"$tld_option_morale",1),(str_store_string, s7, "@ON"),
+									(else_try),(str_store_string, s7, "@OFF"),(try_end),
+        ],"Battle morale system (BUGGY):  {s7}",[
+        (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
+
 
     ("game_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -4545,6 +4577,7 @@ game_menus = [
           (call_script, "script_party_calculate_loot", "p_encountered_party_backup"),
           (gt, reg0, 0),
           (troop_sort_inventory, "trp_temp_troop"),
+	  (call_script, "script_clean_loot"),
           (change_screen_loot, "trp_temp_troop"),
         (else_try),
           #finished all

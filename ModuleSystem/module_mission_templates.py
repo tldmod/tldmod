@@ -50,7 +50,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-	]
+	]+tld_morale_triggers
 
 tld_siege_battle_scripts = [
 	#tld_fix_viewpoint,
