@@ -16,6 +16,7 @@ from module_troops import *
 
 from module_scripts_ai import *
 from module_scripts_form import *
+from module_scripts_morale import *
 
 ####################################################################################################################
 # scripts is a list of script records.
@@ -19618,4 +19619,4 @@ scripts = [
 
 ]
 
-scripts = scripts + ai_scripts + formAI_scripts
+scripts = scripts + ai_scripts + formAI_scripts + morale_scripts
