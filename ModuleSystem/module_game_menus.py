@@ -2902,7 +2902,7 @@ game_menus = [
 
     ("game_options_morale",[(try_begin),(eq,"$tld_option_morale",1),(str_store_string, s7, "@ON"),
 									(else_try),(str_store_string, s7, "@OFF"),(try_end),
-        ],"Battle morale system (BUGGY):  {s7}",[
+        ],"Battle morale system:  {s7}",[
         (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
 
 
