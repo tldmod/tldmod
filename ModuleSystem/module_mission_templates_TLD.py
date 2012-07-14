@@ -7,6 +7,17 @@ from header_music import *
 from module_constants import *
 
 
+# This trigger prevents galadriel from fighting in battles.
+tld_remove_galadriel = 	(0.1,0,0,
+			[(eq, "$current_town", "p_town_caras_galadhon")], 
+			[
+			(try_for_agents, ":cur_agent"),
+				(agent_get_troop_id,":troop", ":cur_agent"),
+				(eq, ":troop", "trp_lorien_lord"),
+				(call_script, "script_remove_agent", ":cur_agent"),
+			(try_end),
+			])
+
 # a trigger to fix viewpoint... not used. Too many drawback (mtarini)
 tld_fix_viewpoint = (0,0,0,[],[
   (try_begin),
@@ -1512,7 +1523,8 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 		(neg|agent_is_human, ":mount"),
 		(agent_get_item_id, ":item", ":mount"),
 		(try_begin),
-			(is_between, ":item", item_horse_begin ,item_horse_end),
+			(is_between|this_or_next, ":item", item_horse_begin ,item_horse_end),
+			(eq, ":item", "itm_mearas_reward"),			# Fixes minor sound bug
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 

@@ -1659,13 +1659,21 @@ game_menus = [
    "Hurry up and pick something already.",
    "none", [],
   [
-     ("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player")]),
-     ("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attrib.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
-     ("camp_cctest_kill_lord",[],"Kill a Lord",
-			[
-				(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
-				(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
-			]),
+     	("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player")]),
+    	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attrib.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
+
+     	("camp_cctest_kill_lord",[],"Kill a Lord",
+	[
+		(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
+	]),
+
+     	("camp_cctest_money",[],"Take All My Money",
+	[
+      		(store_troop_gold, ":total_gold", "trp_player"),
+      		(troop_remove_gold, "trp_player",":total_gold"),
+	]),
+
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
   ]
 ),

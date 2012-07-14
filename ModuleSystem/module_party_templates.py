@@ -369,6 +369,10 @@ party_templates = [
 ("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,3)]), #T1 and T2
 ("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,3,7)]),
 
-
 ("caravan_survivors","Caravan Survivors",icon_generic_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
+
+# Morale parties:
+("routed_allies","Routed Allies",icon_axeman|carries_goods(3),0,fac_commoners,merchant_personality,[]),
+("routed_enemies","Routed Enemies",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[]),
+
 ]

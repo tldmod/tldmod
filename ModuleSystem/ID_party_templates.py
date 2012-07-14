@@ -239,3 +239,5 @@ pt_dwarf_recruits = 237
 pt_dwarf_iron_recruits = 238
 pt_dunland_recruits = 239
 pt_caravan_survivors = 240
+pt_routed_allies = 241
+pt_routed_enemies = 242

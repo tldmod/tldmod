@@ -1744,7 +1744,7 @@ scripts = [
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
-	(assign, "$tld_option_morale", 0), # Battle morale OFF by default
+	(assign, "$tld_option_morale", 1), # Battle morale ON by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 	
@@ -19576,11 +19576,10 @@ scripts = [
 # ]),
 
 	# script_remove_agent_from_field
-	# This script removes an agent from a battle and adds it to the original party.
+	# This script removes an agent from a battle and adds it to a routed party.
 	("remove_agent_from_field", 
 	[
 		(store_script_param, ":agent_no",1),
-		(agent_get_party_id, ":party_id", ":agent_no"),
 
 		# Remove agent's horse first.
 		(agent_get_horse, ":horse_id", ":agent_no"),
@@ -19589,13 +19588,57 @@ scripts = [
 			(call_script, "script_remove_agent", ":horse_id"),	
 		(try_end),
 
-		# Remove the actual agent
-		(call_script, "script_remove_agent", ":agent_no"),
+		(assign, ":found_party", 0),
+		(assign, ":max_dist", 200),
+
+		(try_for_parties, ":party_id"),
+			(party_get_template_id, ":party_template", ":party_id"),
+			(assign, ":party_target", "pt_routed_enemies"),
+			(try_begin),
+				(agent_is_ally, ":agent_no"),
+				(assign, ":party_target", "pt_routed_allies"),
+			(else_try),
+				(assign, ":party_target", "pt_routed_enemies"),
+			(try_end),
+			(eq, ":party_template", ":party_target"),
+			(assign, ":found_party", 1),
+			(party_get_position, pos1, "p_main_party"),
+			(party_get_position, pos2, ":party_id"),
+			(get_distance_between_positions, ":dist", pos1, pos2),
+			(lt, ":dist", ":max_dist"),
+			(try_begin),
+				(agent_is_ally, ":agent_no"),
+			(else_try),
+			(try_end),
+		(try_end),
+
 		(agent_get_troop_id, ":troop", ":agent_no"),
       		(str_store_troop_name, s1, ":troop"),
 
-		(party_add_members, ":party_id", ":troop", 1),
-		(party_wound_members, ":party_id", ":troop", 1),
+		(try_begin),
+			(eq, ":found_party", 0),
+			(assign, ":party_id", -1),
+			(set_spawn_radius, 100),
+			(try_begin),
+				(agent_is_ally, ":agent_no"),
+				(spawn_around_party, "p_main_party", "pt_routed_allies"),
+				(assign, ":party_id", reg0),
+				(party_add_members, ":party_id", ":troop", 1),
+				(party_wound_members, ":party_id", ":troop", 1),
+			(else_try),
+				(spawn_around_party, "p_main_party", "pt_routed_enemies"),
+				(assign, ":party_id", reg0),
+				(party_add_members, ":party_id", ":troop", 1),
+				(party_wound_members, ":party_id", ":troop", 1),
+			(try_end),
+		(try_end),
+
+		
+		(set_spawn_radius, 100),
+		(spawn_around_party, "p_main_party", "pt_steppe_bandits"),
+
+		# Remove the actual agent
+		(call_script, "script_remove_agent", ":agent_no"),
 
 	]),
 
