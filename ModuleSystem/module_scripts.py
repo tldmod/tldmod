@@ -19577,9 +19577,12 @@ scripts = [
 
 	# script_remove_agent_from_field
 	# This script removes an agent from a battle and adds it to a routed party.
+	# PARAM1: agent to remove
+
 	("remove_agent_from_field", 
 	[
-		(store_script_param, ":agent_no",1),
+		(store_script_param, ":agent_no", 1),
+		(agent_get_troop_id, ":troop_id", ":agent_no"),
 
 		# Remove agent's horse first.
 		(agent_get_horse, ":horse_id", ":agent_no"),
@@ -19587,79 +19590,18 @@ scripts = [
 			(ge, ":horse_id", 0),
 			(call_script, "script_remove_agent", ":horse_id"),	
 		(try_end),
-
-		(assign, ":found_party", 0),
-		(assign, ":max_dist", 200),
-
-		(try_for_parties, ":party_id"),
-			(party_get_template_id, ":party_template", ":party_id"),
-			(assign, ":party_target", "pt_routed_enemies"),
-			(try_begin),
-				(agent_is_ally, ":agent_no"),
-				(assign, ":party_target", "pt_routed_allies"),
-			(else_try),
-				(assign, ":party_target", "pt_routed_enemies"),
-			(try_end),
-			(eq, ":party_template", ":party_target"),
-			(assign, ":found_party", 1),
-			(party_get_position, pos1, "p_main_party"),
-			(party_get_position, pos2, ":party_id"),
-			(get_distance_between_positions, ":dist", pos1, pos2),
-			(lt, ":dist", ":max_dist"),
-			(try_begin),
-				(agent_is_ally, ":agent_no"),
-			(else_try),
-			(try_end),
-		(try_end),
-
-		(agent_get_troop_id, ":troop", ":agent_no"),
-      		(str_store_troop_name, s1, ":troop"),
-
-		(try_begin),
-			(eq, ":found_party", 0),
-			(assign, ":party_id", -1),
-			(set_spawn_radius, 100),
-			(try_begin),
-				(agent_is_ally, ":agent_no"),
-				(spawn_around_party, "p_main_party", "pt_routed_allies"),
-				(assign, ":party_id", reg0),
-				(party_add_members, ":party_id", ":troop", 1),
-				(party_wound_members, ":party_id", ":troop", 1),
-			(else_try),
-				(spawn_around_party, "p_main_party", "pt_routed_enemies"),
-				(assign, ":party_id", reg0),
-				(party_add_members, ":party_id", ":troop", 1),
-				(party_wound_members, ":party_id", ":troop", 1),
-			(try_end),
-		(try_end),
-
 		
-		(set_spawn_radius, 100),
-		(spawn_around_party, "p_main_party", "pt_steppe_bandits"),
+		(try_begin),
+			(agent_is_ally, ":agent_no"),
+         		#(party_add_members, "p_routed_allies", ":agent_no", 1),
+
+		(else_try),
+        		#(party_add_members, "p_routed_enemies", ":agent_no", 1),
+		(try_end),
 
 		# Remove the actual agent
 		(call_script, "script_remove_agent", ":agent_no"),
-
 	]),
-
-	# script_clean_loot
-	# This script removes other forbidden items, (e.g., manflesh)...
-	("clean_loot", 
-	[
-	 	(troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop"),
-		(try_for_range, ":i_slot", 0, ":inv_cap"),
-			(troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
-			(try_begin),
-				(faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),
-				(eq|this_or_next, ":item_id", "itm_human_meat"),
-				(eq, ":item_id", "itm_maggoty_bread"),
-        			(troop_remove_item, "trp_temp_troop", ":item_id"),
-			#(else_try),
-			(try_end),
-		(try_end),
-             	(troop_sort_inventory, "trp_temp_troop"),
-	]),
-
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts

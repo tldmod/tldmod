@@ -651,3 +651,5 @@ enemies_coh
 base_kills
 new_kills_a
 new_kills
+g_spawn_allies_party
+g_spawn_enemies_party

@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-241
+243
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -73,7 +73,7 @@ pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284
 pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 299 4 8 0 298 4 8 0 297 6 15 0 -1 -1 
 pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 380 1 1 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
 pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 357 8 16 0 368 8 16 0 356 15 30 0 -1 
-pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 386 12 18 0 383 18 32 0 -1 -1 
+pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 386 12 18 0 383 18 32 0 352 0 1 0 -1 
 pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615719 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
 pt_rohan_patrol Rohirrim_Patrol 562949957615728 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
@@ -90,8 +90,8 @@ pt_lossarnach_patrol Lossarnach_Patrol 562949957615722 0 3 238 130 1 1 0 129 3 8
 pt_brv_patrol Blackroot_Patrol 562949957615723 0 3 238 156 1 1 0 153 4 8 0 152 6 12 0 154 8 16 0 151 10 20 0 -1 
 pt_pinnath_patrol Pinnath_Patrol 562949957615721 0 3 238 150 1 1 0 149 3 6 0 147 3 6 0 148 6 16 0 146 8 20 0 -1 
 pt_lamedon_patrol Lamedon_Patrol 562949957615726 0 3 238 144 1 1 0 143 3 6 0 142 3 6 0 141 8 20 0 140 10 24 0 -1 
-pt_mordor_war_party Mordor_War_Party 844424934326353 0 6 238 351 1 2 0 346 10 22 0 369 10 22 0 345 16 36 0 359 20 40 0 368 20 40 0 
-pt_isengard_war_party Isengard_War_Party 844424934326354 0 7 238 343 1 2 0 335 2 4 0 340 2 4 0 334 10 20 0 338 15 30 0 320 5 10 0 
+pt_mordor_war_party Mordor_War_Party 844424934326353 0 6 238 351 1 2 0 346 10 22 0 345 16 36 0 359 20 40 0 368 40 60 0 354 0 3 0 
+pt_isengard_war_party Isengard_War_Party 844424934326354 0 7 238 343 1 2 0 335 3 6 0 340 3 6 0 334 15 25 0 320 5 10 0 353 0 3 0 
 pt_harad_war_party Harad_War_Party 844424934326361 0 12 238 250 2 4 0 259 2 4 0 262 2 4 0 254 8 16 0 257 10 20 0 247 20 40 0 
 pt_dunland_war_party Dunlending_Warband 844424934326366 0 19 238 274 2 4 0 270 6 12 0 268 12 24 0 271 10 20 0 267 20 50 0 -1 
 pt_khand_war_party Variag_War_Party 844424934326361 0 14 238 281 2 4 0 285 2 4 0 280 5 10 0 279 8 16 0 282 10 20 0 278 20 40 0 
@@ -165,7 +165,7 @@ pt_isengard_reinf_b _ 0 0 1 0 320 2 3 0 332 2 4 0 337 1 2 0 315 2 4 0 -1 -1
 pt_isengard_reinf_c _ 0 0 1 0 321 1 2 0 338 1 2 0 341 1 2 0 316 1 2 0 318 1 2 0 -1 
 pt_mordor_reinf_a _ 0 0 1 0 344 3 6 0 358 5 10 0 -1 -1 -1 -1 
 pt_mordor_reinf_b _ 0 0 1 0 368 2 4 0 369 2 4 0 345 2 3 0 359 2 4 0 -1 -1 
-pt_mordor_reinf_c _ 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 369 1 2 0 360 1 2 0 -1 
+pt_mordor_reinf_c _ 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 369 1 2 0 360 1 2 0 354 0 1 0 
 pt_harad_reinf_a _ 0 0 1 0 256 1 2 0 263 1 2 0 247 5 10 0 -1 -1 -1 
 pt_harad_reinf_b _ 0 0 1 0 260 1 2 0 253 2 4 0 248 1 2 0 263 1 2 0 -1 -1 
 pt_harad_reinf_c _ 0 0 1 0 261 1 2 0 258 1 2 0 264 1 2 0 251 1 1 0 249 0 1 0 -1 
@@ -189,21 +189,21 @@ pt_woodelf_reinf_b _ 0 0 1 0 183 2 4 0 187 1 2 0 191 1 2 0 -1 -1 -1
 pt_woodelf_reinf_c _ 0 0 1 0 184 1 2 0 188 1 2 0 192 2 4 0 -1 -1 -1 
 pt_moria_reinf_a _ 0 0 1 0 374 8 16 0 -1 -1 -1 -1 -1 
 pt_moria_reinf_b _ 0 0 1 0 378 4 7 0 375 3 6 0 -1 -1 -1 -1 
-pt_moria_reinf_c _ 0 0 1 0 371 3 6 0 376 1 2 0 379 1 2 0 -1 -1 -1 
+pt_moria_reinf_c _ 0 0 1 0 371 3 6 0 376 1 2 0 379 1 2 0 352 1 1 0 -1 -1 
 pt_guldur_reinf_a _ 0 0 1 0 356 8 16 0 -1 -1 -1 -1 -1 
 pt_guldur_reinf_b _ 0 0 1 0 368 4 7 0 357 3 6 0 -1 -1 -1 -1 
-pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 369 1 2 0 366 1 2 0 360 1 2 0 -1 -1 
+pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 369 1 2 0 366 1 2 0 360 1 2 0 354 0 1 0 -1 
 pt_beorn_reinf_a _ 0 0 1 0 39 2 4 0 38 2 4 0 29 3 6 0 -1 -1 -1 
 pt_beorn_reinf_b _ 0 0 1 0 35 2 4 0 31 1 2 0 40 1 2 0 43 1 2 0 -1 -1 
 pt_beorn_reinf_c _ 0 0 1 0 41 1 3 0 44 2 3 0 32 1 2 0 -1 -1 -1 
 pt_gundabad_reinf_a _ 0 0 1 0 382 8 16 0 -1 -1 -1 -1 -1 
 pt_gundabad_reinf_b _ 0 0 1 0 386 4 7 0 383 4 7 0 -1 -1 -1 -1 
-pt_gundabad_reinf_c _ 0 0 1 0 389 2 5 0 384 2 3 0 387 1 3 0 -1 -1 -1 
+pt_gundabad_reinf_c _ 0 0 1 0 389 2 5 0 384 2 3 0 387 1 3 0 352 1 1 0 -1 -1 
 pt_dale_reinf_a _ 0 0 1 0 48 1 2 0 49 1 2 0 47 5 10 0 -1 -1 -1 
 pt_dale_reinf_b _ 0 0 1 0 59 0 1 0 50 3 5 0 56 1 2 0 53 1 2 0 -1 -1 
 pt_dale_reinf_c _ 0 0 1 0 61 2 4 0 57 1 2 0 54 1 2 0 -1 -1 -1 
 pt_dwarf_reinf_a _ 0 0 1 0 83 1 2 0 91 1 2 0 96 1 2 0 82 4 8 0 -1 -1 
-pt_dwarf_reinf_b _ 0 0 1 0 92 3 5 0 84 2 4 0 96 0 1 0 -1 -1 -1 
+pt_dwarf_reinf_b _ 0 0 1 0 92 1 3 0 84 4 6 0 96 0 1 0 -1 -1 -1 
 pt_dwarf_reinf_c _ 0 0 1 0 93 1 2 0 88 1 2 0 85 1 2 0 97 1 2 0 -1 -1 
 pt_dunland_reinf_a _ 0 0 1 0 268 3 6 0 267 4 8 0 -1 -1 -1 -1 
 pt_dunland_reinf_b _ 0 0 1 0 272 3 6 0 269 2 4 0 -1 -1 -1 -1 
@@ -241,3 +241,5 @@ pt_dwarf_recruits _ 0 0 1 0 82 2 4 0 -1 -1 -1 -1 -1
 pt_dwarf_iron_recruits _ 0 0 1 0 96 1 3 0 -1 -1 -1 -1 -1 
 pt_dunland_recruits _ 0 0 1 0 267 3 7 0 -1 -1 -1 -1 -1 
 pt_caravan_survivors Caravan_Survivors 562949953421386 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 
+pt_routed_allies Routed_Allies 844424930132044 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_routed_enemies Routed_Enemies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 

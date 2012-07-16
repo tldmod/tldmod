@@ -4586,7 +4586,20 @@ game_menus = [
           (call_script, "script_party_calculate_loot", "p_encountered_party_backup"),
           (gt, reg0, 0),
           (troop_sort_inventory, "trp_temp_troop"),
-	  (call_script, "script_clean_loot"),
+
+	# This code cleans the inventory of other forbidden items, such as maggoty bread or human flesh
+	 (troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop"),
+	 (try_for_range, ":i_slot", 0, ":inv_cap"),
+		(troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
+		(try_begin),
+			(faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),
+			(eq|this_or_next, ":item_id", "itm_human_meat"),
+			(eq, ":item_id", "itm_maggoty_bread"),
+        		(troop_remove_item, "trp_temp_troop", ":item_id"),
+		(try_end),
+	  (try_end),
+          (troop_sort_inventory, "trp_temp_troop"),	  
+
           (change_screen_loot, "trp_temp_troop"),
         (else_try),
           #finished all

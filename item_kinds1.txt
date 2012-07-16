@@ -1,5 +1,5 @@
 itemsfile version 2
-900
+915
  itm_no_item INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -1443,7 +1443,7 @@ itemsfile version 2
  itm_gundabad_helm_d Gundabad_Helm Gundabad_Helm 1  orc_gunda_helm_c 0  65548 0 400 1099679400102 2.000000 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gundabad_helm_e Wargrider_Helm Wargrider_Helm 1  orc_wargrider_helm 0  1073807372 0 350 1099679400102 1.500000 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_gundabad_helm_e Wargrider_Helm Wargrider_Helm 1  orc_wargrider_helm 0  1073741836 0 350 1099679400102 1.500000 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dunland_wolfboots Dunland_Wolfboots Dunland_Wolfboots 1  dunland_wolfboots 0  69390 0 300 123731968 3.000000 100 0 0 10 0 0 0 0 0 0 0 0
@@ -1500,7 +1500,7 @@ itemsfile version 2
  itm_dun_shield_b Dunnish_Shield Dunnish_Shield 1  dun_roundshield_b 0  327687 5100273664 100 251658402 2.000000 100 0 1 0 0 480 82 0 90 0 0 0
 0
 
- itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 1  dunland_sword 0  4259842 9223388529822793743 400 286870 1.250000 100 0 0 0 0 28672 103 0 98 0 277 28
+ itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 1  dunland_sword 0  4194306 9223388529822793743 400 286870 1.250000 100 0 0 0 0 33792 140 0 98 0 280 33
 0
 
  itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe 0  80019458 9223388530091229198 500 286870 2.000000 100 0 0 0 0 35840 85 0 73 0 256 35
@@ -2306,22 +2306,22 @@ itemsfile version 2
  itm_woodman_scout Woodman_Scout_Cape Woodman_Scout_Cape 1  woodman_scout 0  16842765 0 600 123731968 14.000000 100 0 12 6 0 0 0 0 0 0 0 0
 0
 
- itm_woodman_padded Woodman_Padded_Armor Woodman_Padded_Armor 1  woodman_padded 0  16842765 0 500 123731968 12.000000 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_woodman_padded Woodman_Padded_Armor Woodman_Padded_Armor 1  woodman_padded 0  16842765 0 800 123731968 12.000000 100 0 16 6 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_tunic Beorning_Tunic Beorning_Tunic 1  beorn_tunic 0  16842765 0 400 123731968 4.000000 100 0 7 3 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_padded Beorning_Padded_Armor Beorning_Padded_Armor 1  beorn_padded 0  16842765 0 500 123731968 12.000000 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_beorn_padded Beorning_Padded_Armor Beorning_Padded_Armor 1  beorn_padded 0  16842765 0 800 123731968 12.000000 100 0 16 6 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_heavy Beorning_Heavy_Armor Beorning_Heavy_Armor 1  beorn_heavy 0  16842765 0 1000 704643072 15.000000 100 0 20 6 0 0 0 0 0 0 0 0
+ itm_beorn_heavy Beorning_Heavy_Armor Beorning_Heavy_Armor 1  beorn_heavy 0  16842765 0 1000 704643072 15.000000 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_berserk Beorning_Berserker_Kit Beorning_Berserker_Kit 1  beorn_berserker 0  16842765 0 500 123731968 6.000000 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16842765 0 1200 704643072 18.000000 100 0 20 12 0 0 0 0 0 0 0 0
+ itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643072 18.000000 100 0 24 15 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_helmet North_Skullcap North_Skullcap 1  beorn_helmet 0  65548 0 800 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
@@ -2406,6 +2406,12 @@ itemsfile version 2
 0
 
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 4222124851990272 400 156672 2.250000 100 0 0 0 0 20480 98 0 140 0 282 532
+0
+
+ itm_dwarf_spear_b Dwarf_Pike Dwarf_Pike 1  dwarf_spear_b 0  138772484 4222124851990272 800 156672 2.250000 100 0 0 0 0 22528 95 0 165 0 285 534
+0
+
+ itm_dwarf_spear_c Dwarf_Pike Dwarf_Pike 1  dwarf_spear_c 0  138772484 4222124851990272 600 156672 2.250000 100 0 0 0 0 22528 97 0 150 0 283 534
 0
 
  itm_dwarf_helm_a Dwarf_Coif Dwarf_Coif 1  DwarfHelmCoif 0  65548 0 500 704643072 1.000000 100 20 0 0 0 0 0 0 0 0 0 0
@@ -2520,7 +2526,7 @@ itemsfile version 2
  itm_rohan_lance_banner_sun Rohan_Lance_With_Sun_Banner Rohan_Lance_With_Sun_Banner 1  banner_lance_rohan_b 0  138772484 4222124717768960 1000 156672 3.000000 100 0 0 0 0 0 90 0 120 0 291 0
 0
 
- itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  138772484 4222124717768960 1000 156672 3.000000 100 0 0 0 0 0 90 0 120 0 291 0
+ itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  138706948 4222124717768960 1000 156672 3.000000 100 0 0 0 0 0 90 0 120 0 291 0
 0
 
  itm_merry_outfit hobbit_outfit hobbit_outfit 1  merry 0  16781325 0 1 0 1.000000 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2662,6 +2668,45 @@ itemsfile version 2
 0
 
  itm_wheeled_cage Giant_wheeled_cage Giant_wheeled_cage 1  wheeled_cage 0  4107 0 1000 0 58.000000 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_orc_throwing_axes_reward Gundabad_Flying_Axes Gundabad_Flying_Axes 1  orc_throwing_axe 0  71307274 196608 150 0 4.000000 100 0 0 0 0 0 103 30 33 5 46 0
+0
+
+ itm_corsair_throwing_dagger_reward Poisoned_Throwing_Daggers Poisoned_Throwing_Daggers 1  corsair_throwing_dagger 0  4198410 131072 200 0 3.500000 100 0 0 0 0 0 110 24 0 10 50 0
+0
+
+ itm_dwarf_shield_reward Mithril_Dwarven_Shield Mithril_Dwarven_Shield 1  dwarf_shield_j 0  266247 4831838208 400 771751936 3.000000 100 0 28 0 0 800 82 0 60 0 0 0
+0
+
+ itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 1  dwarf_great_axe 0  342102020 9223635923965575392 700 156672 6.000000 100 0 0 0 0 56320 83 0 102 0 256 311
+0
+
+ itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3000 1099679400102 30.000000 100 0 38 17 0 0 0 0 0 0 0 0
+0
+
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  6295560 5905584128 1000 656384 1.500000 100 0 0 0 3 0 83 50 0 0 292 0
+0
+
+ itm_lorien_sword_reward Galadhrim_Sword Galadhrim_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4198403 9223635954298781951 900 156672 2.500000 100 0 0 0 0 33792 125 0 103 0 289 33
+0
+
+ itm_dale_sword_reward Marchwarden_Sword Marchwarden_Sword 2  dale_sword_a 0  scab_dale_sword_a 3458764513820540928  4198402 9223388564182532111 500 287892 1.250000 100 0 0 0 0 41984 98 0 95 0 280 41
+0
+
+ itm_dale_armor_reward Esgaroth_Noble_Gorget Esgaroth_Noble_Gorget 1  dale_noble_gorget_b 0  16781325 0 2000 704643072 22.000000 100 4 38 15 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 1  lthr_glove_L 0  4111 0 200 123731968 0.000000 100 0 3 0 0 0 0 0 0 0 0 0
+0
+
+ itm_beorn_shield_reward Woodmen_Shield Woodmen_Shield 1  dwarf_shield_f 0  266247 4831838208 200 251658402 3.000000 100 0 9 0 0 550 118 0 60 0 0 0
+0
+
+ itm_beorn_axe_reward Bear_Axe Bear_Axe 1  beorning_war_axe 0  342102020 9223635923965575392 300 156672 6.000000 100 0 0 0 0 1024 110 0 71 0 256 65
+0
+
+ itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 40 11 0
 0
 
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small 0  4108 0 3000 0 3.000000 100 50 0 0 12 0 0 0 0 0 0 0

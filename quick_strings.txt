@@ -1,4 +1,4 @@
-1028
+1048
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -139,6 +139,9 @@ qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+2_to_Engineering +2_to_Engineering
 qstr_+3_to_Spotting +3_to_Spotting
+qstr_Less_Beorning_upkeep Less_Beorning_upkeep
+qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
+qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
@@ -487,6 +490,11 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
+qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
+qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
+qstr_Your_enemies_flee_in Your_enemies_flee_in_terror!
+qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -510,6 +518,8 @@ qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
+qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
+qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
@@ -583,6 +593,15 @@ qstr_Attacking_enemies_ar Attacking_enemies_around_{s11}
 qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
+qstr_a_wounded_leg a_wounded_leg
+qstr_a_wounded_arm a_wounded_arm
+qstr_a_concussion a_concussion
+qstr_some_broken_ribs some_broken_ribs
+qstr_You_are_in_perfect_h You_are_in_perfect_health.
+qstr_You_are_suffering_fr You_are_suffering_from_{s1}.
+qstr_You_are_suffering_fro You_are_suffering_from_{s1}_and_{s2}.
+qstr_You_are_suffering_from You_are_suffering_from_{s1},_{s2},_and_{s3}.
+qstr_You_are_suffering_from_ You_are_suffering_from_{s1},_{s2},_{s3}_and_{s4}.
 qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
 qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_points_({reg5})
 qstr_No_upkeep_costs No_upkeep_costs
@@ -778,6 +797,7 @@ qstr_You_advance_stealthi You_advance_stealthily_far_into_the_forest.
 qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_ruins!
 qstr_You_have_found_the_s You_have_found_the_sorcerer!
 qstr_Kill_him_quickly_bef Kill_him_quickly_before_he_escapes!
+qstr_Enraged_by_the_death Enraged_by_the_death_of_{s4},_you_have_sworn_an_oath_of_vengeance_upon_the_forces_of_{s3}._You_must_now_destroy_as_many_of_the_armies_of_{s3}_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!
 qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Isen_dams.
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_agains_the_mutinee!_^Seems_like_your_orcs_have_a_new_commander_now.
