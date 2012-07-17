@@ -670,10 +670,10 @@ dialogs = [
 "Yes, {s5}?", "member_talk",[]],
 
 [anyone|plyr,"member_talk", [(call_script, "script_unequip_items", "$g_talk_troop")],"Let me see your equipment.", "member_trade",[]],
-[anyone,"member_trade",[(store_character_level, ":talk_troop_level", "$g_talk_troop"),
+[anyone,"member_trade",[			(store_character_level, ":talk_troop_level", "$g_talk_troop"),
 						(ge, ":talk_troop_level", 40),
-                        (store_character_level, ":player_level", "trp_player"),
-                        (val_add, ":player_level", 10),
+                        			(store_character_level, ":player_level", "trp_player"),
+                        			(val_add, ":player_level", 10),
 						(ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
                         ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
@@ -978,7 +978,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s5}. Would you want me to rejoin your company?", "companion_rehire", []],
 
 [anyone|plyr, "companion_rehire", [(hero_can_join, "p_main_party")], "Welcome back, my friend!", "companion_recruit_signup_confirm", []],
-[anyone|plyr, "companion_rehire", [],  "Sorry, I can't take on anyone else right now now.", "companion_rehire_refused", []],
+[anyone|plyr, "companion_rehire", [],  "Sorry, I can't take on anyone else right now.", "companion_rehire_refused", []],
 [anyone, "companion_rehire_refused", [], "Well... Look me up if you change your mind, eh?", "close_window", [(call_script,"script_stand_back"),]],
 
 #[anyone, "event_triggered",
@@ -9020,17 +9020,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "{s43}", "close_window", [(call_script,"script_stand_back"),(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default")]],
 #post 0907 changes end
 
-# Reclaiming companions lost due to lack of RPs. 
+# Reclaiming companions lost due to lack of RPs. This is a catch dialog.
 
 [anyone,"start", [
 			(is_between, "$g_talk_troop", companions_begin, companions_end),
-			(store_sub, ":npc_string", companions_end, "$g_talk_troop"),
-			(store_add, s1, ":npc_string", "str_npc1_rehire_speech"),
+                    	(troop_get_slot, ":intro", "$g_talk_troop", slot_troop_rehire_speech),
+                    	(str_store_string, s5, ":intro"),
 		], 
-"{s1}", "reclaim_hero",[]],
-
-[anyone|plyr,"reclaim_hero", [], "Welcome back, my friend!", "close_window",[]],
-[anyone|plyr,"reclaim_hero", [], "Not right now.", "close_window",[]],
+"{s5}", "companion_rehire",[]],
 
 
 

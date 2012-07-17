@@ -952,7 +952,8 @@ game_menus = [
 #		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
-		 (else_try),                                     (set_jump_mission,"mt_custom_battle"),
+         (else_try),(eq, "$g_custom_battle_scenario",26),(set_jump_mission,"mt_lead_charge"),#(rest_for_hours,12,1000,0),
+	 (else_try),(set_jump_mission,"mt_custom_battle"),
         (try_end),
         (jump_to_menu, "mnu_custom_battle_end"),
         (jump_to_scene,"$g_custom_battle_scene"),
@@ -1673,6 +1674,23 @@ game_menus = [
       		(store_troop_gold, ":total_gold", "trp_player"),
       		(troop_remove_gold, "trp_player",":total_gold"),
 	]),
+
+
+	# These are for testing the guardian parties
+	("camp_cctest_weaken_isengard", [], "Weaken Isengard",
+	[
+		(assign, ":str", fac_str_dying),
+		(val_sub, ":str", 200),
+            	(faction_set_slot, "fac_isengard", slot_faction_strength, ":str"),
+	]),
+
+	("camp_cctest_weaken_mirkwood", [], "Weaken Mirkwood",
+	[
+		(assign, ":str", fac_str_dying),
+		(val_sub, ":str", 200),
+            	(faction_set_slot, "fac_woodelf", slot_faction_strength, ":str"),
+	]),
+	
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
   ]
@@ -4587,6 +4605,7 @@ game_menus = [
           (gt, reg0, 0),
           (troop_sort_inventory, "trp_temp_troop"),
 
+	# Clean loot
 	# This code cleans the inventory of other forbidden items, such as maggoty bread or human flesh
 	 (troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop"),
 	 (try_for_range, ":i_slot", 0, ":inv_cap"),

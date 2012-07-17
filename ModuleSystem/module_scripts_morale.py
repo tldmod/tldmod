@@ -65,14 +65,14 @@ morale_scripts = [
                    (ge,":ally",40),
                   (display_message,"@Your enemies flee in terror!",color_good_news),  
                   (call_script, "script_rout_enemies"),
-                  (assign,"$airout",1),
+                 # (assign,"$airout",1),
                (try_end),
 
                 (try_begin),
                    (le,":ally",-40),
                   (display_message,"@Your troops flee in terror!",color_bad_news),  
                   (call_script, "script_rout_allies"),
-                  (assign,"$rout",1),
+                 # (assign,"$rout",1),
                (try_end),
      ]),
 

@@ -8,6 +8,9 @@ from module_constants import *
 
 
 # This trigger tracks horses for riders falling off horse.
+tld_rider_test = (0, 0, 0, [(key_clicked, key_x)], [ (get_player_agent_no, ":player_agent"),(agent_get_slot, reg0, ":player_agent", slot_agent_mount),(display_message, "@{reg0} is your horse.")])
+
+# These triggers are bugged for wargs...
 tld_track_riders = (0.1, 0, 0, [], 
 			[
 				(try_for_agents, ":cur_agent"),
@@ -26,13 +29,13 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 					(assign, ":continue", 1),
 					(try_for_agents, ":rider"),
 						(agent_is_human, ":rider"),
-						(agent_is_alive, ":rider"),
+						(agent_is_alive, ":rider"),	
 						(eq, ":continue", 1),
 						(agent_slot_eq, ":rider", slot_agent_mount, ":mount"),
-			 			(get_player_agent_no,":player_agent"),
 						(store_agent_hit_points, ":hp", ":rider", 1),
-						(store_random_in_range, reg0, 10, 25), # fine tune this l8r
+						(store_random_in_range, reg0, 10, 25), 
 						(try_begin),
+			 				(get_player_agent_no, ":player_agent"),
 							(eq, ":rider", ":player_agent"),
 							(display_message, "@You fall of your horse!", color_bad_news),
 							(display_message, "@Recieved {reg0} damage."),
@@ -1653,6 +1656,14 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(assign, "$warg_to_be_replaced", ":warg"),
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
 		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
+
+		(assign, ":continue", 1),
+		(try_for_agents, ":old_rider"),
+			(eq, ":continue", 1),
+			(agent_slot_eq, ":old_rider", slot_agent_mount, ":warg"),
+			(agent_set_slot, ":old_rider", slot_agent_mount, -1),
+			(assign, ":continue", 0),
+		(try_end),
 		
 		(agent_get_position, pos10, ":warg"),
 		(position_get_rotation_around_z, reg1, pos10),

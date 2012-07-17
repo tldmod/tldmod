@@ -2178,6 +2178,7 @@ simple_triggers = [
             (eq, ":faction", "fac_woodelf"),
 
             (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_dying),
+
             (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
             
             (faction_get_slot, ":capital", ":faction", slot_faction_capital),

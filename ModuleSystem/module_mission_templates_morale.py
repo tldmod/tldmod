@@ -14,8 +14,6 @@ tld_morale_triggers = [
         (get_player_agent_kill_count,"$base_kills",0),
         (assign,"$new_kills_a",0),
 	(assign,"$new_kills",0),
-	(assign, "$rout", 0),
-	(assign, "$airout", 0),
          ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them
