@@ -378,6 +378,8 @@ morale_scripts = [
   #script_coherence
     ("coherence",
     [
+# TODO: Update so enemy to ally size influences morale
+
 (get_scene_boundaries, pos3, pos4),		 
 (assign,":num_allies",0),
 (assign,":coh_allies",0),

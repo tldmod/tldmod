@@ -19582,7 +19582,7 @@ scripts = [
 	("remove_agent_from_field", 
 	[
 		(store_script_param, ":agent_no", 1),
-		(agent_get_troop_id, ":troop_id", ":agent_no"),
+		#(agent_get_troop_id, ":troop_no", ":agent_no"),
 
 		# Remove agent's horse first.
 		(agent_get_horse, ":horse_id", ":agent_no"),
@@ -19593,10 +19593,10 @@ scripts = [
 		
 		(try_begin),
 			(agent_is_ally, ":agent_no"),
-         		#(party_add_members, "p_routed_allies", ":agent_no", 1),
+         		#(party_add_members, "p_routed_allies", ":troop_no", 1),
 
 		(else_try),
-        		#(party_add_members, "p_routed_enemies", ":agent_no", 1),
+        		#(party_add_members, "p_routed_enemies", ":troop_no", 1),
 		(try_end),
 
 		# Remove the actual agent

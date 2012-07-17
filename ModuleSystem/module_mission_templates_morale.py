@@ -19,7 +19,6 @@ tld_morale_triggers = [
          ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them
-	# TODO: Make it so when they rout, they are added to a routed party 
 
       (0.1, 0, 0, [(eq, "$tld_option_morale", 1)], 
 	[
@@ -28,7 +27,6 @@ tld_morale_triggers = [
 			(agent_get_position, pos2, ":cur_agent"),
 			(try_begin),
 				(agent_is_ally, ":cur_agent"),
-				#(eq|this_or_next, "$rout", 1),
 				(agent_slot_eq,":cur_agent",slot_agent_routed,1),
 				(agent_get_scripted_destination, pos1, ":cur_agent"),
 				(agent_set_scripted_destination, ":cur_agent", pos1, 1),
@@ -36,7 +34,6 @@ tld_morale_triggers = [
 				(lt, ":dist", 300),
 				(call_script, "script_remove_agent_from_field", ":cur_agent"),
 			(else_try),
-				#(eq|this_or_next, "$airout", 1),
 				(agent_slot_eq,":cur_agent",slot_agent_routed,1),
 				(agent_get_scripted_destination, pos1, ":cur_agent"),
 				(agent_set_scripted_destination, ":cur_agent", pos1, 1),

@@ -40,6 +40,9 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
+	tld_track_riders, 
+	tld_damage_fallen_riders,
+	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,

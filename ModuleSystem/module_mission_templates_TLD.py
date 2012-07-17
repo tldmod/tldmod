@@ -7,6 +7,76 @@ from header_music import *
 from module_constants import *
 
 
+# This trigger tracks horses for riders falling off horse.
+tld_track_riders = (0.1, 0, 0, [], 
+			[
+				(try_for_agents, ":cur_agent"),
+					(agent_is_human, ":cur_agent"),
+					(agent_is_alive, ":cur_agent"),
+					(agent_get_horse, ":horse", ":cur_agent"),
+					(agent_set_slot, ":cur_agent", slot_agent_mount, ":horse"), # no need to check, -1 means no horse, while 0+ means a horse.
+				(try_end),
+			])
+
+# This trigger damages agents that have fallen off their horse. :)
+tld_damage_fallen_riders = (0.1, 0, 0, [], 
+				[
+				(try_for_agents, ":mount"),
+					(agent_is_alive|neg, ":mount"),
+					(assign, ":continue", 1),
+					(try_for_agents, ":rider"),
+						(agent_is_human, ":rider"),
+						(agent_is_alive, ":rider"),
+						(eq, ":continue", 1),
+						(agent_slot_eq, ":rider", slot_agent_mount, ":mount"),
+			 			(get_player_agent_no,":player_agent"),
+						(store_agent_hit_points, ":hp", ":rider", 1),
+						(store_random_in_range, reg0, 10, 25), # fine tune this l8r
+						(try_begin),
+							(eq, ":rider", ":player_agent"),
+							(display_message, "@You fall of your horse!", color_bad_news),
+							(display_message, "@Recieved {reg0} damage."),
+						(try_end),
+						(val_sub, ":hp", reg0),
+	  	 				(agent_set_hit_points , ":rider",reg0,1),
+						(set_show_messages, 0),
+	   					(agent_deliver_damage_to_agent, ":mount", ":rider"),
+						(set_show_messages, 1),
+						(agent_set_slot, ":rider", slot_agent_mount, -1), # no horse now.
+						(assign, ":continue", 0),
+					(try_end),
+				(try_end),
+				])
+
+
+# This trigger makes wounded agents move slower.
+tld_slow_wounded  = (1, 0, 0, [],
+	[
+				(try_for_agents, ":cur_agent"),
+					(agent_is_human, ":cur_agent"),
+					(agent_is_alive, ":cur_agent"),
+					(agent_get_troop_id,":troop", ":cur_agent"),
+	 		 		(troop_get_type, ":race", ":troop"),
+	 				(neq, ":race", tf_troll),			# trolls are not influenced by wounds.
+					(store_agent_hit_points, ":hp", ":cur_agent"),
+					(try_begin),
+						(lt, ":hp", 10),
+	  					(agent_set_speed_limit,":cur_agent", 2),
+					(else_try),
+						(lt, ":hp", 25),
+	  					(agent_set_speed_limit,":cur_agent", 4),
+					(else_try),
+						(le, ":hp", 50),
+	  					(agent_set_speed_limit,":cur_agent", 8),
+					(else_try),
+						(gt, ":hp", 50),
+	  					(agent_set_speed_limit,":cur_agent", 100), # no speed limit
+					(try_end),
+				(try_end),
+	])
+			
+			
+
 # This trigger prevents galadriel from fighting in battles.
 tld_remove_galadriel = 	(0.1,0,0,
 			[(eq, "$current_town", "p_town_caras_galadhon")], 
@@ -1515,7 +1585,7 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 	(try_end),
 ])
 
-# make mount sound by scripts (bypasses MaB limit to customize mount sounds)
+# make mount sound by scripts (bypasses MaB limit to customize mount sounds),
 custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg and horse sounds
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
     

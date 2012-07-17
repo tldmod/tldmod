@@ -9020,6 +9020,20 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "{s43}", "close_window", [(call_script,"script_stand_back"),(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default")]],
 #post 0907 changes end
 
+# Reclaiming companions lost due to lack of RPs. 
+
+[anyone,"start", [
+			(is_between, "$g_talk_troop", companions_begin, companions_end),
+			(store_sub, ":npc_string", companions_end, "$g_talk_troop"),
+			(store_add, s1, ":npc_string", "str_npc1_rehire_speech"),
+		], 
+"{s1}", "reclaim_hero",[]],
+
+[anyone|plyr,"reclaim_hero", [], "Welcome back, my friend!", "close_window",[]],
+[anyone|plyr,"reclaim_hero", [], "Not right now.", "close_window",[]],
+
+
+
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
 [trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")]],
 [anyone,"start", [], "Surrender or die. Make your choice.", "battle_reason_stated",[]],
