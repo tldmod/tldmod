@@ -2091,5 +2091,9 @@ str_trait_title_battle_scarred = 2089
 str_trait_desc_battle_scarred = 2090
 str_trait_title_fell_beast = 2091
 str_trait_desc_fell_beast = 2092
+str_wound_head = 2093
+str_wound_chest = 2094
+str_wound_arm = 2095
+str_wound_leg = 2096
 
 

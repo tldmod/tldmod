@@ -736,16 +736,48 @@ dialogs = [
 [anyone,"member_background_recap_3", [], "Then shortly after, I joined up with you.", "do_member_trade",[]],
 [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
+# ORIGINAL MEMBER HEALTH
+#[anyone,"member_health", [
+#	(troop_get_slot, ":wound_mask", "$g_talk_troop", slot_troop_wound_mask),
+#	(try_begin),
+#		(neq, ":wound_mask", 0),
+#		(str_store_string, s12, "@I'm seriously injured. I need healing."),
+#	(else_try),
+#		(str_store_string, s12, "@I don't have serious injuries, thank you."),
+#	(try_end)],
+#"{s12}", "do_member_trade",[]],
+
+# NEW MEMBER HEALTH
 [anyone,"member_health", [
 	(troop_get_slot, ":wound_mask", "$g_talk_troop", slot_troop_wound_mask),
 	(try_begin),
 		(neq, ":wound_mask", 0),
-		(str_store_string, s12, "@I'm seriously injured. I need healing."),
+		(assign, ":str_reg", s1), 
+		(assign, ":wounds", 0), 
+		(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_head"),(val_add, ":str_reg", 1),(try_end),
+		(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_chest"),(val_add, ":str_reg", 1),(try_end),
+		(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_arm"),(val_add, ":str_reg", 1),(try_end),
+		(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_leg"),(val_add, ":str_reg", 1),(try_end),
+		(str_store_string, s12, "@I am in perfect health."),
+        	(try_begin),
+		(eq, ":wounds", 1),
+		(str_store_string, s12, "@I am suffering from {s1}."),
 	(else_try),
-		(str_store_string, s12, "@I don't have serious injuries, thank you."),
+		(eq, ":wounds", 2),
+		(str_store_string, s12, "@I am suffering from {s1} and {s2}."),
+	(else_try),
+		(eq, ":wounds", 3),
+		(str_store_string, s12, "@I am suffering from {s1}, {s2}, and {s3}."),
+	(else_try),
+		(eq, ":wounds", 4),
+		(str_store_string, s12, "@I am suffering from {s1}, {s2}, {s3} and {s4}."),
+	(else_try),
+		(str_store_string, s12, "@I am in perfect health."),
+	(try_end),
+	(else_try),
+		(str_store_string, s12, "@I don't have any serious injuries, thank you."),
 	(try_end)],
 "{s12}", "do_member_trade",[]],
-
 
 [anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
                      (this_or_next|eq, "$talk_context", tc_court_talk), #TLD

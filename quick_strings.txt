@@ -1,4 +1,4 @@
-1050
+1051
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -471,6 +471,7 @@ qstr_Noone..._oppossssses Noone..._oppossssses..._Barad_Dur..._and_livessss!
 qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
 qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
+qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
@@ -595,10 +596,6 @@ qstr_Attacking_enemies_ar Attacking_enemies_around_{s11}
 qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
-qstr_a_wounded_leg a_wounded_leg
-qstr_a_wounded_arm a_wounded_arm
-qstr_a_concussion a_concussion
-qstr_some_broken_ribs some_broken_ribs
 qstr_You_are_in_perfect_h You_are_in_perfect_health.
 qstr_You_are_suffering_fr You_are_suffering_from_{s1}.
 qstr_You_are_suffering_fro You_are_suffering_from_{s1}_and_{s2}.
@@ -893,8 +890,12 @@ qstr_You_just_got_windyfl You_just_got_windyflorated!
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
-qstr_I_m_seriously_injure I'm_seriously_injured._I_need_healing.
-qstr_I_don_t_have_serious I_don't_have_serious_injuries,_thank_you.
+qstr_I_am_in_perfect_heal I_am_in_perfect_health.
+qstr_I_am_suffering_from_ I_am_suffering_from_{s1}.
+qstr_I_am_suffering_from_{ I_am_suffering_from_{s1}_and_{s2}.
+qstr_I_am_suffering_from_{s I_am_suffering_from_{s1},_{s2},_and_{s3}.
+qstr_I_am_suffering_from_{s1 I_am_suffering_from_{s1},_{s2},_{s3}_and_{s4}.
+qstr_I_don_t_have_any_ser I_don't_have_any_serious_injuries,_thank_you.
 qstr_Good_day_to_you. Good_day_to_you.
 qstr_Ah_it_s_you_again._G Ah,_it's_you_again._Goodbye.
 qstr_My_apologies_if_I_wa My_apologies_if_I_was_rude,_earlier._What_was_your_story_again?

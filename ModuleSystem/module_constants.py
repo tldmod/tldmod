@@ -150,6 +150,10 @@ slot_agent_time_counter			  = 18
 slot_agent_routed			  = 19
 slot_agent_mount			  = 20
 
+# why not use a duplicate slot for an agent that will never use it? -CC
+slot_agent_warg_pouncing		  = 13
+slot_agent_warg_pounce_time		  = 14
+
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################

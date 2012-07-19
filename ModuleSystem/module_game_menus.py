@@ -1376,10 +1376,10 @@ game_menus = [
 	(assign, ":wounds", 0), #count # of wounds
 	(assign, ":wound_mask", 0), #count # of wounds
 	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
-	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded leg"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a wounded arm"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@a concussion"),(val_add, ":str_reg", 1),(try_end),
-	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "@some broken ribs"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_head"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_chest"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_arm"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_leg"),(val_add, ":str_reg", 1),(try_end),
 	(str_store_string, s5, "@You are in perfect health."),
         (try_begin),
 		(eq, ":wounds", 1),
@@ -1661,6 +1661,15 @@ game_menus = [
    "none", [],
   [
      	("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player")]),
+
+	("camp_cctest_injure_party_heroes", [], "Injure Heroes (in party)",
+	[
+		(try_for_range, ":npc", companions_begin, companions_end),
+            		(main_party_has_troop, ":npc"),
+			(call_script,"script_injury_routine", ":npc"),
+        	(try_end),
+	]),
+
     	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attrib.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
 
      	("camp_cctest_kill_lord",[],"Kill a Lord",
@@ -1675,22 +1684,16 @@ game_menus = [
       		(troop_remove_gold, "trp_player",":total_gold"),
 	]),
 
-
-	# These are for testing the guardian parties
-	("camp_cctest_weaken_isengard", [], "Weaken Isengard",
+     	("camp_cctest_wi",[],"Weaken Isengard",
 	[
-		(assign, ":str", fac_str_dying),
-		(val_sub, ":str", 200),
-            	(faction_set_slot, "fac_isengard", slot_faction_strength, ":str"),
+		(faction_set_slot, "fac_isengard", slot_faction_strength_tmp, 200),
 	]),
 
-	("camp_cctest_weaken_mirkwood", [], "Weaken Mirkwood",
+     	("camp_cctest_wm",[],"Weaken Mirkwood",
 	[
-		(assign, ":str", fac_str_dying),
-		(val_sub, ":str", 200),
-            	(faction_set_slot, "fac_woodelf", slot_faction_strength, ":str"),
+		(faction_set_slot, "fac_woodelf", slot_faction_strength_tmp, 200),
 	]),
-	
+
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
   ]

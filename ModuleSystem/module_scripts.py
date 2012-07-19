@@ -19576,13 +19576,13 @@ scripts = [
 # ]),
 
 	# script_remove_agent_from_field
-	# This script removes an agent from a battle and adds it to a routed party.
+	# This script removes an agent from a battle. (TODO: and adds it to a routed party.)
 	# PARAM1: agent to remove
 
 	("remove_agent_from_field", 
 	[
 		(store_script_param, ":agent_no", 1),
-		#(agent_get_troop_id, ":troop_no", ":agent_no"),
+		(agent_get_troop_id, ":troop_no", ":agent_no"),
 
 		# Remove agent's horse first.
 		(agent_get_horse, ":horse_id", ":agent_no"),
@@ -19593,10 +19593,23 @@ scripts = [
 		
 		(try_begin),
 			(agent_is_ally, ":agent_no"),
+			#(troop_is_hero|neg, ":troop_no"),
          		#(party_add_members, "p_routed_allies", ":troop_no", 1),
-
 		(else_try),
+			#(troop_is_hero|neg, ":troop_no"),
         		#(party_add_members, "p_routed_enemies", ":troop_no", 1),
+		(try_end),
+
+		# Tell the player when a hero has left the battle
+		(try_begin),
+			(troop_is_hero, ":troop_no"),
+      			(str_store_troop_name, s1, ":troop_no"),
+			(try_begin),
+        			(agent_is_ally, ":agent_no"),
+				(display_message, "@{s1} has fled the battle!", color_bad_news),
+			(else_try),
+				(display_message, "@{s1} has fled the battle!", color_good_news),
+			(try_end),
 		(try_end),
 
 		# Remove the actual agent

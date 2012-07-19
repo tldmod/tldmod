@@ -643,13 +643,9 @@ tld_option_siege_relax_rate
 tld_option_regen_rate
 tld_option_regen_limit
 tld_option_morale
-airout
-rout
 allies_coh_base
 allies_coh
 enemies_coh
 base_kills
 new_kills_a
 new_kills
-g_spawn_allies_party
-g_spawn_enemies_party

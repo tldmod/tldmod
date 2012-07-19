@@ -8,9 +8,6 @@ from module_constants import *
 
 
 # This trigger tracks horses for riders falling off horse.
-tld_rider_test = (0, 0, 0, [(key_clicked, key_x)], [ (get_player_agent_no, ":player_agent"),(agent_get_slot, reg0, ":player_agent", slot_agent_mount),(display_message, "@{reg0} is your horse.")])
-
-# These triggers are bugged for wargs...
 tld_track_riders = (0.1, 0, 0, [], 
 			[
 				(try_for_agents, ":cur_agent"),
@@ -33,7 +30,7 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 						(eq, ":continue", 1),
 						(agent_slot_eq, ":rider", slot_agent_mount, ":mount"),
 						(store_agent_hit_points, ":hp", ":rider", 1),
-						(store_random_in_range, reg0, 10, 25), 
+						(store_random_in_range, reg0, 10, 25), # damage calculation here, reg0 stores damage.
 						(try_begin),
 			 				(get_player_agent_no, ":player_agent"),
 							(eq, ":rider", ":player_agent"),
@@ -66,13 +63,13 @@ tld_slow_wounded  = (1, 0, 0, [],
 						(lt, ":hp", 10),
 	  					(agent_set_speed_limit,":cur_agent", 2),
 					(else_try),
-						(lt, ":hp", 25),
+						(lt, ":hp", 50),
 	  					(agent_set_speed_limit,":cur_agent", 4),
 					(else_try),
-						(le, ":hp", 50),
+						(le, ":hp", 75),
 	  					(agent_set_speed_limit,":cur_agent", 8),
 					(else_try),
-						(gt, ":hp", 50),
+						(gt, ":hp", 75),
 	  					(agent_set_speed_limit,":cur_agent", 100), # no speed limit
 					(try_end),
 				(try_end),
@@ -1543,32 +1540,36 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 ])
 
 # matrini: warg attacks.... NOT USED YET (still WIP)
-custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_random_in_range,reg10,0,3), (eq,reg10,1)],[ # once every three times
-	(try_for_agents,":warg"),	  # horse rearing near troll
-        (agent_is_alive, ":warg"), #MV
-		(agent_get_troop_id,reg0,":warg"),
+# CppCoder: improved, almost functional. :)
+
+custom_lone_wargs_special_attack = (0.1, 0, 0, 
+	[
+		(gt,"$wargs_in_battle",0),
+		(store_random_in_range,reg10,0,3), 
+		(eq,reg10,1)
+	],
+	[
+	(try_for_agents,":warg"), 
+        	(agent_is_alive, ":warg"), #MV
 		(agent_is_human, ":warg"),
+		(agent_get_troop_id,reg0,":warg"),
 		(is_between, reg0, warg_ghost_begin, warg_ghost_end),
-
 		(agent_get_horse, ":warg_mount", ":warg"),
-
-        (agent_get_position, pos0, ":warg_mount"),
+		(gt, ":warg_mount", -1),
+        	(agent_get_position, pos0, ":warg_mount"),
 		(agent_get_team, ":warg_team", ":warg"),
-		
 		(assign,":wants_to_jump",0),
-        (try_for_agents, ":enemy_agent"),
-            (agent_is_alive, ":enemy_agent"),
-            (agent_is_human, ":enemy_agent"),
-            (agent_get_team, ":enemy_team", ":enemy_agent"),
-            (teams_are_enemies, ":enemy_team", ":warg_team"),
-            
-            (agent_get_position, pos10, ":enemy_agent"),
+        	(try_for_agents, ":enemy_agent"),
+            		(agent_is_alive, ":enemy_agent"),
+            		(agent_is_human, ":enemy_agent"),
+            		(agent_get_team, ":enemy_team", ":enemy_agent"),
+            		(teams_are_enemies, ":enemy_team", ":warg_team"),
+            		(agent_get_position, pos10, ":enemy_agent"),
 			(position_transform_position_to_local, pos2,pos0, pos10),
 			(position_get_x, reg10, pos2),
 			(position_get_y, reg11, pos2),
 			(position_get_z, reg12, pos2),
 			(position_normalize_origin, reg13, pos2),
-			
 			(val_mul, reg10,100.0),
 			(val_mul, reg11,100.0),
 			(val_mul, reg12,100.0),
@@ -1577,14 +1578,30 @@ custom_lone_wargs_special_attack = (0,0,2, [(gt,"$wargs_in_battle",0),(store_ran
 			(convert_from_fixed_point, reg11),
 			(convert_from_fixed_point, reg12),
 			(convert_from_fixed_point, reg13),
-			(display_message, "@DEBUG: warg victim at ({reg10}, {reg11}, {reg12}) -- {reg13}"),
+			#(display_message, "@DEBUG: warg victim at ({reg10}, {reg11}, {reg12}) -- {reg13}"),
 			(is_between, reg10, -100, 100),
 			(is_between, reg11, +100, 600),
 			(assign,":wants_to_jump",1),
-        (try_end),
-		(eq,":wants_to_jump",1),
-		(agent_set_walk_forward_animation, ":warg_mount", "anim_warg_jump"),
-		(agent_set_walk_forward_animation, ":warg", "anim_ride_warg_jump"),
+        	(try_end),
+		(try_begin),
+			(agent_slot_eq, ":warg", slot_agent_warg_pouncing, 0),
+			(eq,":wants_to_jump",1),
+			(agent_set_animation, ":warg_mount", "anim_warg_jump"),
+			(agent_set_animation, ":warg", "anim_ride_warg_jump"),
+			(agent_set_slot,":warg", slot_agent_warg_pouncing, 1),
+		(else_try),
+			(agent_slot_eq, ":warg", slot_agent_warg_pouncing, 1),
+			(agent_get_slot, ":warg_pounce_time", ":warg", slot_agent_warg_pounce_time),
+			(val_add, ":warg_pounce_time", 1),
+			(try_begin),
+				(gt, ":warg_pounce_time", 30),
+				# TODO: move agent to target pos and check for enemies to injure.
+				(agent_set_slot,":warg", slot_agent_warg_pounce_time, 0),
+				(agent_set_slot,":warg", slot_agent_warg_pouncing, 0),
+			(else_try),
+				(agent_set_slot,":warg", slot_agent_warg_pounce_time, ":warg_pounce_time"),
+			(try_end),
+		(try_end),
 	(try_end),
 ])
 
