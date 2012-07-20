@@ -19604,12 +19604,12 @@ scripts = [
 		(try_begin),
 			(troop_is_hero, ":troop_no"),
       			(str_store_troop_name, s1, ":troop_no"),
+			(assign, ":news_color", color_good_news),
 			(try_begin),
         			(agent_is_ally, ":agent_no"),
-				(display_message, "@{s1} has fled the battle!", color_bad_news),
-			(else_try),
-				(display_message, "@{s1} has fled the battle!", color_good_news),
+				(assign, ":news_color", color_bad_news),
 			(try_end),
+			(display_message, "@{s1} has fled the battle!", ":news_color"),
 		(try_end),
 
 		# Remove the actual agent

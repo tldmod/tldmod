@@ -2195,6 +2195,14 @@ simple_triggers = [
             (else_try),
               (party_set_name, ":guard_party", "@Guard Legion of {s6}"),
             (try_end),
+	    # CppCoder bugfix: set the icons to properly match the party
+	    (try_begin),
+		(eq, ":faction", "fac_isengard"),
+	        (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
+	    (else_try),
+		(eq, ":faction", "fac_woodelf"),
+	        (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
+	    (try_end),
             (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
             (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill
             (party_set_slot, ":guard_party", slot_party_home_center, ":capital"),

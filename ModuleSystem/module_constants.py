@@ -141,18 +141,20 @@ slot_agent_map_overlay_id         = 10
 slot_agent_target_entry_point     = 11
 slot_agent_walker_type            = 12    
 # TLD
-slot_agent_troll_swing_status     = 13
-slot_agent_troll_swing_move       = 14
-slot_agent_last_hp		          = 15
-slot_agent_mount_side		      	  = 16 # a mount has the side as its rider
-slot_agent_mount_dead			  = 17
-slot_agent_time_counter			  = 18
-slot_agent_routed			  = 19
-slot_agent_mount			  = 20
+slot_agent_troll_swing_status     	= 13
+slot_agent_troll_swing_move       	= 14
+slot_agent_last_hp		        = 15
+slot_agent_mount_side		       	= 16 # a mount has the side as its rider
+slot_agent_mount_dead			= 17
+slot_agent_time_counter			= 18
+slot_agent_routed			= 19
+slot_agent_mount			= 20 
+slot_agent_state			= 21 
 
 # why not use a duplicate slot for an agent that will never use it? -CC
 slot_agent_warg_pouncing		  = 13
 slot_agent_warg_pounce_time		  = 14
+
 
 ########################################################
 ##  FACTION SLOTS          #############################

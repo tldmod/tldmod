@@ -475,13 +475,14 @@ script_formation_battle_tactic_apply_aux = 473
 script_battle_tactic_init_aux = 474
 script_battle_tactic_apply_aux = 475
 script_team_get_nontroll_leader = 476
-script_healthbars = 477
-script_morale_check = 478
-script_rout_check = 479
-script_flee_allies = 480
-script_flee_enemies = 481
-script_rout_allies = 482
-script_rout_enemies = 483
-script_coherence = 484
+script_find_exit_position_at_pos4 = 477
+script_healthbars = 478
+script_morale_check = 479
+script_rout_check = 480
+script_flee_allies = 481
+script_flee_enemies = 482
+script_rout_allies = 483
+script_rout_enemies = 484
+script_coherence = 485
 
 
