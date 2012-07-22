@@ -3124,6 +3124,7 @@ troops = [
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 ["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+
 ["future_troop_3","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_4","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_5","Compartibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],

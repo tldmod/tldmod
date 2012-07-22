@@ -155,6 +155,11 @@ slot_agent_state			= 21
 slot_agent_warg_pouncing		  = 13
 slot_agent_warg_pounce_time		  = 14
 
+agent_morale_state_normal		  	= 0
+agent_morale_state_disciplined		  	= 1
+
+agent_morale_state_fanatic		  	= 5
+
 
 ########################################################
 ##  FACTION SLOTS          #############################

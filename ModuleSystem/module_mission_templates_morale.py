@@ -63,6 +63,7 @@ tld_morale_triggers = [
       	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,10)], 
 	[
 		(try_for_agents, ":cur_agent"),
+			(agent_is_alive, ":cur_agent"),
 			(try_begin),
 				(agent_is_ally, ":cur_agent"),
 				(agent_slot_eq,":cur_agent",slot_agent_routed,1),

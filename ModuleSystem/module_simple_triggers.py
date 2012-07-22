@@ -693,6 +693,10 @@ simple_triggers = [
            (call_script, "script_party_remove_all_prisoners", ":troop_party_no"),
          (try_end),
       (try_end),
+
+	# Piggybacking on this trigger to check for routed parties.
+	# (call_script, "script_spawn_routed_parties"),
+
     ]),
 
 # (29) Check escape chances of hero prisoners.

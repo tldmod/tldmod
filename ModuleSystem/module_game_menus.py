@@ -3933,6 +3933,8 @@ game_menus = [
                   # (try_end),
               # (try_end),
 #Troop commentary changes end
+		# This is here so when you flee it checks for routed parties -CppCoder
+		(call_script, "script_spawn_routed_parties"),
           	(leave_encounter),(change_screen_return)]),
 			
       ("encounter_retreat",[
@@ -4027,7 +4029,9 @@ game_menus = [
               (store_troop_faction, ":victorious_faction", ":stack_troop"),
               (call_script, "script_add_log_entry", logent_player_retreated_from_lord_cowardly, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
-###Troop commentary changes end          
+###Troop commentary changes end  
+		# This is here so when you flee it checks for routed parties -CppCoder
+		(call_script, "script_spawn_routed_parties"),      
           (leave_encounter),(change_screen_return)]),
     ]
  ),
@@ -4710,7 +4714,10 @@ game_menus = [
                 (try_end),
               (try_end),
             (try_end),
-            
+
+		# Spawn routed parties after battle.
+		(call_script, "script_spawn_routed_parties"),        
+
             (leave_encounter),
             (change_screen_return),
           (else_try),

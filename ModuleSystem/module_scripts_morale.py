@@ -17,6 +17,107 @@ morale_scripts = [
 
 # MORALE SCRIPTS:
 
+	# script_spawn_routed_parties
+	("spawn_routed_parties", 
+	[
+		(try_begin),
+			(eq, "$g_spawn_allies_routed", 1),
+			(set_spawn_radius, 3),
+            		(spawn_around_party, "p_main_party", "pt_routed_allies"),
+            		(assign, ":routed_party", reg0),
+			(call_script, "script_party_add_party", ":routed_party", "p_routed_allies"),
+			(party_set_faction, ":routed_party", "$players_kingdom"),
+			(party_clear, "p_routed_allies"),
+			(assign, "$g_spawn_allies_routed", 0),
+		(try_end),
+	
+		(try_begin),
+			(eq, "$g_spawn_enemies_routed", 1),
+			(set_spawn_radius, 3),
+            		(spawn_around_party, "p_main_party", "pt_routed_enemies"),
+            		(assign, ":routed_party", reg0),
+			(call_script, "script_party_add_party", ":routed_party", "p_routed_enemies"),
+			(party_stack_get_troop_id, ":troop", ":routed_party", 0),
+			(store_troop_faction, ":faction", ":troop"),
+			(party_set_faction, ":routed_party", ":faction"),
+			(party_clear, "p_routed_enemies"),
+			(assign, "$g_spawn_enemies_routed", 0),
+		(try_end),
+	]),
+
+
+	# script_get_party_size
+	# This script returns the size of a party in reg0
+	# param1: party-id
+	("get_party_size", 
+	[
+		(store_script_param, ":party_no", 1),
+		(assign, reg0, 0),
+    		(party_get_num_companion_stacks, ":num_stacks",":party_no"),
+    		(try_for_range, ":stack_no", 0, ":num_stacks"),
+			(party_stack_get_size, ":stack_size", ":party_no", ":stack_no"),
+			(val_add, reg0, ":stack_size"),
+		(try_end),
+	]),
+	
+
+	# script_remove_agent_from_field
+	# This script removes an agent from a battle and adds it to a routed party.
+	# PARAM1: agent to remove
+
+	("remove_agent_from_field", 
+	[
+		(store_script_param, ":agent_no", 1),
+		(agent_get_troop_id, ":troop_no", ":agent_no"),
+
+		# Remove agent's horse first.
+		(agent_get_horse, ":horse_id", ":agent_no"),
+		(try_begin),
+			(ge, ":horse_id", 0),
+			(call_script, "script_remove_agent", ":horse_id"),	
+		(try_end),
+
+		(try_begin),
+			# Tell the player when a hero has left the battle
+			(troop_is_hero, ":troop_no"),
+      			(str_store_troop_name, s1, ":troop_no"),
+			(assign, ":news_color", color_good_news),
+			(try_begin),
+        			(agent_is_ally, ":agent_no"),
+				(assign, ":news_color", color_bad_news),
+			(try_end),
+			(display_message, "@{s1} has fled the battle!", ":news_color"),
+		(else_try),
+			# If the troop is a not hero, add it to a temp party
+			(try_begin),
+				(agent_is_ally, ":agent_no"),
+				(agent_get_party_id, ":party_no", ":agent_no"),
+				(agent_get_kill_count, ":agent_killed", ":agent_no"),
+				(agent_get_kill_count, ":agent_wounded", ":agent_no", 1),
+				(call_script, "script_remove_agent", ":agent_no"),
+				(agent_get_kill_count, ":agent_killed_2", ":agent_no"),
+				(agent_get_kill_count, ":agent_wounded_2", ":agent_no", 1),
+				(try_begin),
+					# agent was killed
+					(gt, ":agent_killed_2", ":agent_killed"),
+			        	(party_add_members, "p_routed_allies", ":troop_no", 1),
+					(assign, "$g_spawn_allies_routed", 1),
+				(else_try),
+					# agent was wounded
+					(gt, ":agent_wounded_2", ":agent_wounded"),
+					(party_remove_members,":party_no",":troop_no", 1),
+			        	(party_add_members, "p_routed_allies", ":troop_no", 1),
+					(assign, "$g_spawn_allies_routed", 1),
+				(try_end),
+			(else_try),	
+			        (party_add_members, "p_routed_enemies", ":troop_no", 1),
+				(assign, "$g_spawn_enemies_routed", 1),
+				(call_script, "script_remove_agent", ":agent_no"),
+			(try_end),
+		(try_end),
+
+	]),
+
 	("find_exit_position_at_pos4", 
 	[
 		(store_script_param, ":agent_no", 1),

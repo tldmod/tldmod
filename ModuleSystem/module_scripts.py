@@ -19575,46 +19575,6 @@ scripts = [
 	# (cur_tableau_add_sun_light, pos8, 175,150,125),
 # ]),
 
-	# script_remove_agent_from_field
-	# This script removes an agent from a battle. (TODO: and adds it to a routed party.)
-	# PARAM1: agent to remove
-
-	("remove_agent_from_field", 
-	[
-		(store_script_param, ":agent_no", 1),
-		(agent_get_troop_id, ":troop_no", ":agent_no"),
-
-		# Remove agent's horse first.
-		(agent_get_horse, ":horse_id", ":agent_no"),
-		(try_begin),
-			(ge, ":horse_id", 0),
-			(call_script, "script_remove_agent", ":horse_id"),	
-		(try_end),
-		
-		(try_begin),
-			(agent_is_ally, ":agent_no"),
-			#(troop_is_hero|neg, ":troop_no"),
-         		#(party_add_members, "p_routed_allies", ":troop_no", 1),
-		(else_try),
-			#(troop_is_hero|neg, ":troop_no"),
-        		#(party_add_members, "p_routed_enemies", ":troop_no", 1),
-		(try_end),
-
-		# Tell the player when a hero has left the battle
-		(try_begin),
-			(troop_is_hero, ":troop_no"),
-      			(str_store_troop_name, s1, ":troop_no"),
-			(assign, ":news_color", color_good_news),
-			(try_begin),
-        			(agent_is_ally, ":agent_no"),
-				(assign, ":news_color", color_bad_news),
-			(try_end),
-			(display_message, "@{s1} has fled the battle!", ":news_color"),
-		(try_end),
-
-		# Remove the actual agent
-		(call_script, "script_remove_agent", ":agent_no"),
-	]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts

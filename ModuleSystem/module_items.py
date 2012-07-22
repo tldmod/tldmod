@@ -1265,6 +1265,7 @@ items =[
 ["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,5000,weight(19)|head_armor(0)|body_armor(45)|leg_armor(17)|difficulty(15),imodbits_elf_armor,],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
+
 ["save_compartibility_item4","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["save_compartibility_item5","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["save_compartibility_item6","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
