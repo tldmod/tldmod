@@ -471,7 +471,6 @@ qstr_Noone..._oppossssses Noone..._oppossssses..._Barad_Dur..._and_livessss!
 qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
 qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
-qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
@@ -491,6 +490,7 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
 qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
