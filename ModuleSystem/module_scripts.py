@@ -1753,7 +1753,7 @@ scripts = [
 	(assign, "$enemy_side_faction", 0),
 	(assign, "$inital_player_xp", 0),
 	# savegame compartibillity globals. USE THOSE in code if need be
-	# Feel free to rename them... BUT if so rename then if variables.txt BEFORE you compile your code!!!
+	# Feel free to rename them... BUT if so rename then in variables.txt BEFORE you compile your code!!!
 	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
 	#(assign, "$battle_renown_total", 0),
 	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"), #MV: to get rid of build warnings - remove on use
@@ -1764,6 +1764,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
+	(assign, "$tld_option_max_parties", 900), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)

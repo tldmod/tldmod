@@ -2935,9 +2935,38 @@ game_menus = [
         (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
 
 
+    ("game_options_compat",[],"Compatibility tweaks...",[(jump_to_menu, "mnu_camp_compat_tweaks")]),
     ("game_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
  ]),
+
+( "camp_compat_tweaks",0,
+	"^^^^^^^^Click on an option to toggle:^(these are for compatibilty and are not cheats)","none",[],
+	[	
+    		("game_options_compat_party",
+		[
+			(assign, reg0, "$tld_option_max_parties"),
+			(try_begin),
+				(gt, "$tld_option_max_parties", 750),
+				(str_store_string, s1, "@{reg0} (could possibly cause save crashes)"),
+			(else_try),
+				(str_store_string, s1, "@{reg0}"),
+			(try_end),
+		],
+
+		"Maximum number of parties: {s1}",
+		[
+			(val_add, "$tld_option_max_parties", 50),
+			(try_begin),
+				(gt, "$tld_option_max_parties", 900),
+				(assign, "$tld_option_max_parties", 300),
+			(try_end),
+		]),
+
+    		("game_options_compat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+	]
+),
+
 ( "camp_strat_tweaks",0,
 	"^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)","none",[],
     [
@@ -3934,7 +3963,7 @@ game_menus = [
               # (try_end),
 #Troop commentary changes end
 		# This is here so when you flee it checks for routed parties -CppCoder
-		(call_script, "script_spawn_routed_parties"),
+		(call_script, "script_cf_spawn_routed_parties"),
           	(leave_encounter),(change_screen_return)]),
 			
       ("encounter_retreat",[
@@ -4031,7 +4060,7 @@ game_menus = [
           (try_end),
 ###Troop commentary changes end  
 		# This is here so when you flee it checks for routed parties -CppCoder
-		(call_script, "script_spawn_routed_parties"),      
+		(call_script, "script_cf_spawn_routed_parties"),      
           (leave_encounter),(change_screen_return)]),
     ]
  ),
@@ -4716,7 +4745,7 @@ game_menus = [
             (try_end),
 
 		# Spawn routed parties after battle.
-		(call_script, "script_spawn_routed_parties"),        
+		(call_script, "script_cf_spawn_routed_parties"),        
 
             (leave_encounter),
             (change_screen_return),

@@ -96,7 +96,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 			
 			
 
-# This trigger prevents galadriel from fighting in battles.
+# This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
 tld_remove_galadriel = 	(0.1,0,0,
 			[(eq, "$current_town", "p_town_caras_galadhon")], 
 			[

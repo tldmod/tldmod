@@ -202,12 +202,15 @@ triggers = [
       (try_for_parties, ":unused"),
         (val_add, ":total_parties", 1),
       (try_end),
-      (le, ":total_parties", 900), #skip spawning if there are too many parties
-      
-      #corrupt saves possible retardant: also limit the number of parties spawned at once
+
+      (le, ":total_parties", "$tld_option_max_parties"),	# Modified: Let player's choose for their compatability -CppCoder
+							 	#skip spawning if there are too many parties
+     	 							#corrupt saves possible retardant: also limit the number of parties spawned at once
+
       (assign, ":to_spawn", 16),
       (try_begin),
-        (ge, ":total_parties", 750), #about 300 active parties, lords+bandits+patrols
+	(store_sub, ":spawn_slowdown", "$tld_option_max_parties", 150),
+        (ge, ":total_parties", ":spawn_slowdown"), #about 300 active parties, lords+bandits+patrols
         (assign, ":to_spawn", 10), #slows down spawning rate when there are many parties
       (try_end),
       

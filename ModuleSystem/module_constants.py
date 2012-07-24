@@ -157,7 +157,6 @@ slot_agent_warg_pounce_time		  = 14
 
 agent_morale_state_normal		  	= 0
 agent_morale_state_disciplined		  	= 1
-
 agent_morale_state_fanatic		  	= 5
 
 
@@ -1909,11 +1908,11 @@ fac_reward_items_list = [
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)
 
 #Formation modes
-formation_none	= 0
+formation_none		= 0
 formation_default	= 1
-formation_ranks	= 2
+formation_ranks		= 2
 formation_shield	= 3
-formation_wedge	= 4
+formation_wedge		= 4
 formation_square	= 5
 
 #Formation tweaks
@@ -2082,3 +2081,20 @@ tld_conv_bit_gandalf_victory    = 0x08
 tld_conv_bit_nazgul_baggins     = 0x10
 tld_conv_bit_nazgul_evil_war    = 0x20
 tld_conv_bit_nazgul_victory     = 0x40
+
+# TLD morale codes -x% chance they will flee
+
+tld_morale_very_good		= 20
+tld_morale_good			= 10
+tld_morale_average		= 5
+tld_morale_poor			= 0
+
+tld_morale_formation_bonus	= 10	
+
+tld_morale_leader_important	= 40
+tld_morale_leader_bonus		= 10
+tld_morale_leader_average	= 5	
+tld_morale_leader_avenge	= 20
+tld_morale_leader_urukhai	= 20
+
+

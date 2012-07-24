@@ -8826,7 +8826,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	"{s37}",  "party_reinforce", [] ],
 
 		
-
+# Routed dialogs go here
+[party_tpl|pt_routed_allies, "start", [], "Yes?", "close_window", [] ],
+[party_tpl|pt_routed_enemies, "start", [], "What do you want?", "close_window", [] ],
 
 #Friendly faction party: they trust you.
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),

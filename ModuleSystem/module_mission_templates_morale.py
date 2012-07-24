@@ -6,7 +6,27 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+
+
 tld_morale_triggers = [
+
+	(0, 0, 0, [(key_clicked, key_x),(eq, cheat_switch, 1)],
+	[
+		(get_player_agent_no, ":player_agent"),
+		(agent_get_position, pos1, ":player_agent"),
+		(try_for_agents, ":agent"),
+			(agent_is_alive, ":agent"),
+			(agent_is_human, ":agent"),
+			(agent_get_position, pos2, ":agent"),
+			(get_distance_between_positions, ":dist", pos1, pos2),
+			(lt, ":dist", 500),
+			(agent_get_troop_id,":agent_troop", ":agent"),
+			(call_script, "script_cf_agent_get_leader_troop", ":agent"),
+			(str_store_troop_name, s1, reg0),
+			(str_store_troop_name, s2, ":agent_troop"),
+			(display_message, "@{s2}'s leader is: {s1}"),
+		(try_end),
+	]),
 
  	# This trigger always happens to prevent a "you killed 30000 troops in this battle." bug when you turn battle morale on
 	# after it was turned off for some time. -CppCoder
@@ -27,21 +47,19 @@ tld_morale_triggers = [
 
  	# let the player know of his troop's morale
 
-     (0, 0, 2, [(key_clicked, key_t),(eq, "$tld_option_morale", 1)], 
+     	(0, 0, 2, [(key_clicked, key_t),(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
 		(call_script, "script_healthbars"),       
 	]),
       
 	# calculate coherence once
-
 	(1, 0, ti_once, [(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
 	]),						
 
 	# morale check      
-
 	(15, 0, 10, [(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
@@ -49,7 +67,6 @@ tld_morale_triggers = [
         ]),
 
 	# rout check
-
 	(5, 0, 3, [(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
@@ -57,10 +74,9 @@ tld_morale_triggers = [
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 10 seconds, to ensure agents have time to advance and engage in 
+	# only after 5 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing. -CppCoder
-
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,10)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,5)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),
@@ -72,6 +88,8 @@ tld_morale_triggers = [
 				(agent_get_position, pos2, ":cur_agent"),
 				(get_distance_between_positions, ":dist", pos4, pos2),
 				(lt, ":dist", 300),
+				(call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
+				(le, reg0, 0),
 				(call_script, "script_remove_agent_from_field", ":cur_agent"),
 			(else_try),
 				(agent_slot_eq,":cur_agent",slot_agent_routed,1),
@@ -80,6 +98,8 @@ tld_morale_triggers = [
 				(agent_get_position, pos2, ":cur_agent"),
 				(get_distance_between_positions, ":dist", pos4, pos2),
 				(lt, ":dist", 300),
+				(call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
+				(le, reg0, 0),
 				(call_script, "script_remove_agent_from_field", ":cur_agent"),
 			(try_end),
 		(try_end),
