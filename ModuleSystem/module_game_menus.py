@@ -2959,7 +2959,7 @@ game_menus = [
 			(val_add, "$tld_option_max_parties", 50),
 			(try_begin),
 				(gt, "$tld_option_max_parties", 900),
-				(assign, "$tld_option_max_parties", 300),
+				(assign, "$tld_option_max_parties", 600),
 			(try_end),
 		]),
 
