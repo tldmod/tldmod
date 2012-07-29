@@ -140,7 +140,9 @@ slot_agent_arena_team_set         = 7
 slot_agent_map_overlay_id         = 10
 slot_agent_target_entry_point     = 11
 slot_agent_walker_type            = 12    
+
 # TLD
+
 slot_agent_troll_swing_status     	= 13
 slot_agent_troll_swing_move       	= 14
 slot_agent_last_hp		        = 15
@@ -149,20 +151,18 @@ slot_agent_mount_dead			= 17
 slot_agent_time_counter			= 18
 slot_agent_routed			= 19
 slot_agent_mount			= 20 
-slot_agent_state			= 21 
+slot_agent_rallied			= 21 # Commanders use this slot to remember they've rallied their troops.
+slot_agent_state			= 22 
 
-# why not use a duplicate slot for an agent that will never use it? -CC
-slot_agent_warg_pouncing		  = 13
-slot_agent_warg_pounce_time		  = 14
+# why not use duplicate slots for an agent that will never use it? -CC
 
-agent_morale_state_normal		  	= 0
-agent_morale_state_disciplined		  	= 1
-agent_morale_state_fanatic		  	= 5
-
+slot_agent_warg_pouncing		= 13
+slot_agent_warg_pounce_time		= 14
 
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################
+
 slot_faction_mask                   = 3 #bitmask
 slot_faction_ai_state               = 4
 slot_faction_ai_object              = 5
@@ -2097,4 +2097,7 @@ tld_morale_leader_average	= 5
 tld_morale_leader_avenge	= 20
 tld_morale_leader_urukhai	= 20
 
+agent_morale_state_normal		  	= 0
+agent_morale_state_disciplined		  	= 1
+agent_morale_state_fanatic		  	= 5
 

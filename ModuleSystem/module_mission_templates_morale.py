@@ -10,26 +10,8 @@ from module_constants import *
 
 tld_morale_triggers = [
 
-	(0, 0, 0, [(key_clicked, key_x),(eq, cheat_switch, 1)],
-	[
-		(get_player_agent_no, ":player_agent"),
-		(agent_get_position, pos1, ":player_agent"),
-		(try_for_agents, ":agent"),
-			(agent_is_alive, ":agent"),
-			(agent_is_human, ":agent"),
-			(agent_get_position, pos2, ":agent"),
-			(get_distance_between_positions, ":dist", pos1, pos2),
-			(lt, ":dist", 500),
-			(agent_get_troop_id,":agent_troop", ":agent"),
-			(call_script, "script_cf_agent_get_leader_troop", ":agent"),
-			(str_store_troop_name, s1, reg0),
-			(str_store_troop_name, s2, ":agent_troop"),
-			(display_message, "@{s2}'s leader is: {s1}"),
-		(try_end),
-	]),
-
  	# This trigger always happens to prevent a "you killed 30000 troops in this battle." bug when you turn battle morale on
-	# after it was turned off for some time. -CppCoder
+	# after it was turned off for some time. -CC
 
      	(1, 0, ti_once, [], [
         	(get_player_agent_kill_count,"$base_kills",0),
@@ -39,11 +21,100 @@ tld_morale_triggers = [
 		#(assign,"$new_enemy_kills",0),
     	]),
 
- 	# TODO: rally your troops (once per battle).
-     	#(0, 0, ti_once, [(key_clicked, key_v),(eq, "$tld_option_morale", 1)], []),
+ 	# TODO: rally your troops.
+     	(0, 0, 0, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
+	[
 
- 	# TODO: AI rallies enemy troops (once per battle).
-     	#(0.1, 0, ti_once, [(eq, "$tld_option_morale", 1)], []),
+		(get_player_agent_no, ":player"),	
+		(assign, ":max_rallies", 1),	
+		(agent_get_slot, ":times_rallied", ":player", slot_agent_rallied),
+		(store_attribute_level, ":cha", "trp_player", ca_charisma),
+		(store_div, ":normal_rallies", ":cha", 5),
+		(val_add, ":max_rallies", ":normal_rallies"),
+		(try_begin),
+			(player_has_item, "itm_horn_gondor_reward"),
+			(store_skill_level,":horn_rallies","skl_leadership","trp_player"),
+			(val_div, ":horn_rallies", 3),
+			(val_add, ":max_rallies", ":horn_rallies"),		
+		(try_end),
+		(assign, reg0, ":max_rallies"),
+		(assign, reg1, ":times_rallied"),
+		(display_message, "@Max Rallies: {reg0}, Times Rallied: {reg1}"),
+		(try_begin),
+			(lt, ":times_rallied", ":max_rallies"),
+			(play_sound, "snd_evil_horn"),
+			(display_message, "@You rally your troops!", color_good_news),
+			(val_add, ":times_rallied", 1),
+			(agent_set_slot, ":player", slot_agent_rallied, ":times_rallied"),
+		
+			# TODO: Animation + warcry sound
+
+			(try_for_agents, ":agent"),
+				(neq, ":agent", ":player"),
+				(agent_is_human, ":agent"),
+				(agent_is_alive, ":agent"),
+				(agent_is_ally, ":agent"),
+				# You can only rally YOUR troops.
+				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
+				(eq, reg0, "trp_player"),
+				(agent_set_slot, ":agent", slot_agent_rallied, 1),
+				(try_begin),
+					(agent_slot_eq,":agent",slot_agent_routed,1),
+					(agent_set_slot, ":agent", slot_agent_routed, 0),
+					(agent_clear_scripted_mode, ":agent"),					
+				(try_end),
+			(try_end),
+		(try_end),
+	]),
+
+ 	# TODO: AI rallies troops
+     	(3, 0, 0, [(eq, "$tld_option_morale", 1)], 
+	[	
+		(assign,":ally","$allies_coh"),
+		(assign,":enemy","$enemies_coh"),
+		(val_sub,":ally",":enemy"),
+
+		# Allies
+		(try_begin),
+			(lt, ":ally", -40),
+			(store_random_in_range, ":die_roll", 0, 101),
+			(lt, ":die_roll", 65), # Little bit of personality in enemy commanders
+		(try_end),
+
+		# Enemies
+		(try_begin),
+			(ge, ":ally", 40),
+			#(store_random_in_range, ":die_roll", 0, 101),
+			#(lt, ":die_roll", 65), # Little bit of personality in enemy commanders
+			(try_for_agents, ":agent"),
+				(agent_is_human, ":agent"),
+				(agent_is_alive, ":agent"),
+				(agent_is_ally|neg, ":agent"),
+				(agent_get_troop_id, ":troop", ":agent"),
+				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
+				(eq, ":troop", reg0),
+				(troop_is_hero, ":troop"),
+				(agent_get_slot, ":times_rallied", ":agent", slot_agent_rallied),
+				(store_attribute_level, ":cha", ":troop", ca_charisma),
+				(store_div, ":max_rallies", ":cha", 5),
+				(try_begin),
+					(lt, ":times_rallied", ":max_rallies"),
+					(str_store_troop_name, s1, ":troop"),
+					(display_message, "@{s1} rallies his troops!", color_bad_news),
+					(try_for_agents, ":cur_agent"),
+						(agent_is_human, ":cur_agent"),
+						(agent_is_alive, ":cur_agent"),
+						(agent_is_ally|neg, ":cur_agent"),
+						(call_script, "script_cf_agent_get_leader_troop", ":cur_agent"),
+						(eq, ":troop", reg0),
+						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
+						(val_add, ":times_rallied", 1),
+						(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
+					(try_end),
+				(try_end),
+			(try_end),
+		(try_end),
+	]),
 
  	# let the player know of his troop's morale
 

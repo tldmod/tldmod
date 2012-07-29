@@ -62,6 +62,7 @@ tld_siege_battle_scripts = [
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	custom_track_companion_casualties,
 	common_battle_healing,
+	custom_troll_hitting,
 	#common_battle_kill_underwater,
 	]
 

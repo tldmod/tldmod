@@ -2947,7 +2947,7 @@ game_menus = [
 		[
 			(assign, reg0, "$tld_option_max_parties"),
 			(try_begin),
-				(gt, "$tld_option_max_parties", 750),
+				(ge, "$tld_option_max_parties", 800),
 				(str_store_string, s1, "@{reg0} (could possibly cause save crashes)"),
 			(else_try),
 				(str_store_string, s1, "@{reg0}"),
