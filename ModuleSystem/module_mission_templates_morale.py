@@ -6,8 +6,6 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
-
-
 tld_morale_triggers = [
 
  	# This trigger always happens to prevent a "you killed 30000 troops in this battle." bug when you turn battle morale on
@@ -22,9 +20,12 @@ tld_morale_triggers = [
     	]),
 
  	# TODO: rally your troops.
-     	(0, 0, 0, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
+     	(0, 0, 10, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
 	[
-
+		(assign,":ally","$allies_coh"),
+		(assign,":enemy","$enemies_coh"),
+		(val_sub,":ally",":enemy"),
+		(lt, ":ally", -40),
 		(get_player_agent_no, ":player"),	
 		(assign, ":max_rallies", 1),	
 		(agent_get_slot, ":times_rallied", ":player", slot_agent_rallied),
@@ -37,18 +38,25 @@ tld_morale_triggers = [
 			(val_div, ":horn_rallies", 3),
 			(val_add, ":max_rallies", ":horn_rallies"),		
 		(try_end),
-		(assign, reg0, ":max_rallies"),
-		(assign, reg1, ":times_rallied"),
-		(display_message, "@Max Rallies: {reg0}, Times Rallied: {reg1}"),
+		#(assign, reg0, ":max_rallies"),
+		#(assign, reg1, ":times_rallied"),
+		#(display_message, "@Max Rallies: {reg0}, Times Rallied: {reg1}"),
 		(try_begin),
 			(lt, ":times_rallied", ":max_rallies"),
 			(play_sound, "snd_evil_horn"),
+			(agent_play_sound, ":player", "snd_evil_horn"),
 			(display_message, "@You rally your troops!", color_good_news),
 			(val_add, ":times_rallied", 1),
 			(agent_set_slot, ":player", slot_agent_rallied, ":times_rallied"),
-		
-			# TODO: Animation + warcry sound
-
+			(call_script, "script_troop_get_cheer_sound", "trp_player"),
+			(agent_play_sound, ":player", reg1),
+			(try_begin),
+				(agent_get_horse, ":horse", ":player"),
+				(ge, ":horse", 0),
+				(agent_set_animation, ":player", "anim_cheer_player_ride"),
+			(else_try),
+				(agent_set_animation, ":player", "anim_cheer_player"),
+			(try_end),
 			(try_for_agents, ":agent"),
 				(neq, ":agent", ":player"),
 				(agent_is_human, ":agent"),
@@ -67,7 +75,7 @@ tld_morale_triggers = [
 		(try_end),
 	]),
 
- 	# TODO: AI rallies troops
+ 	# AI rallies troops
      	(3, 0, 0, [(eq, "$tld_option_morale", 1)], 
 	[	
 		(assign,":ally","$allies_coh"),
@@ -77,15 +85,57 @@ tld_morale_triggers = [
 		# Allies
 		(try_begin),
 			(lt, ":ally", -40),
-			(store_random_in_range, ":die_roll", 0, 101),
-			(lt, ":die_roll", 65), # Little bit of personality in enemy commanders
+			(get_player_agent_no, ":player"),
+			(try_for_agents, ":agent"),
+				(neq, ":agent", ":player"),
+				(agent_is_human, ":agent"),
+				(agent_is_alive, ":agent"),
+				(agent_is_ally, ":agent"),
+				(agent_get_troop_id, ":troop", ":agent"),
+				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
+				(eq, ":troop", reg0),
+				(troop_is_hero, ":troop"),
+				(agent_get_slot, ":times_rallied", ":agent", slot_agent_rallied),
+				(store_attribute_level, ":cha", ":troop", ca_charisma),
+				(store_div, ":max_rallies", ":cha", 5),
+				(try_begin),
+					(store_random_in_range, ":die_roll", 0, 101),
+					(store_mul, ":rally_penalty", ":times_rallied", 20),
+					(store_sub, ":chance", 80, ":rally_penalty"),
+					(lt, ":die_roll", ":chance"), # Little bit of personality in AI commanders
+					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
+					(str_store_troop_name, s1, ":troop"),
+					(assign, reg0, ":chance"),
+					(assign, reg1, ":die_roll"),
+					(assign, reg2, ":times_rallied"),
+					(display_message, "@{s1} rallies his troops!", color_good_news),
+					(val_add, ":times_rallied", 1),
+					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
+					(call_script, "script_troop_get_cheer_sound", ":troop"),
+					(agent_play_sound, ":agent", reg1),
+					(try_begin),
+						(agent_get_horse, ":horse", ":agent"),
+						(ge, ":horse", 0),
+						(agent_set_animation, ":agent", "anim_cheer_player_ride"),
+					(else_try),
+						(agent_set_animation, ":agent", "anim_cheer_player"),
+					(try_end),
+					(try_for_agents, ":cur_agent"),
+						(neq, ":agent", ":cur_agent"),
+						(agent_is_human, ":cur_agent"),
+						(agent_is_alive, ":cur_agent"),
+						(agent_is_ally, ":cur_agent"),
+						(call_script, "script_cf_agent_get_leader_troop", ":cur_agent"),
+						(eq, ":troop", reg0),
+						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
+					(try_end),
+				(try_end),
+			(try_end),
 		(try_end),
 
 		# Enemies
 		(try_begin),
 			(ge, ":ally", 40),
-			#(store_random_in_range, ":die_roll", 0, 101),
-			#(lt, ":die_roll", 65), # Little bit of personality in enemy commanders
 			(try_for_agents, ":agent"),
 				(agent_is_human, ":agent"),
 				(agent_is_alive, ":agent"),
@@ -98,18 +148,35 @@ tld_morale_triggers = [
 				(store_attribute_level, ":cha", ":troop", ca_charisma),
 				(store_div, ":max_rallies", ":cha", 5),
 				(try_begin),
-					(lt, ":times_rallied", ":max_rallies"),
+					(store_random_in_range, ":die_roll", 0, 101),
+					(store_mul, ":rally_penalty", ":times_rallied", 15),
+					(store_sub, ":chance", 80, ":rally_penalty"),
+					(lt, ":die_roll", ":chance"), # Little bit of personality in AI commanders
+					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
 					(str_store_troop_name, s1, ":troop"),
+					(assign, reg0, ":chance"),
+					(assign, reg1, ":die_roll"),
+					(assign, reg2, ":times_rallied"),
 					(display_message, "@{s1} rallies his troops!", color_bad_news),
+					(val_add, ":times_rallied", 1),
+					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
+					(call_script, "script_troop_get_cheer_sound", ":troop"),
+					(agent_play_sound, ":agent", reg1),
+					(try_begin),
+						(agent_get_horse, ":horse", ":agent"),
+						(ge, ":horse", 0),
+						(agent_set_animation, ":agent", "anim_cheer_player_ride"),
+					(else_try),
+						(agent_set_animation, ":agent", "anim_cheer_player"),
+					(try_end),
 					(try_for_agents, ":cur_agent"),
+						(neq, ":agent", ":cur_agent"),
 						(agent_is_human, ":cur_agent"),
 						(agent_is_alive, ":cur_agent"),
 						(agent_is_ally|neg, ":cur_agent"),
 						(call_script, "script_cf_agent_get_leader_troop", ":cur_agent"),
 						(eq, ":troop", reg0),
 						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
-						(val_add, ":times_rallied", 1),
-						(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
 					(try_end),
 				(try_end),
 			(try_end),

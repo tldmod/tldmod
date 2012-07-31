@@ -1322,6 +1322,7 @@ triggers = [
 	(quest_get_slot, ":target", "qst_oath_of_vengeance", 2),
 	(quest_get_slot, ":start_day", "qst_oath_of_vengeance", 1),
 	(quest_get_slot, ":source_fac", "qst_oath_of_vengeance", 4),
+	(quest_get_slot, ":hero", "qst_oath_of_vengeance", 5),
 	(store_current_day, ":day"), 
 	(val_sub, ":day", 5), #checks start after 5 days under oath
 	(gt, ":day", ":start_day"),
@@ -1343,6 +1344,7 @@ triggers = [
 		(set_show_messages, 0),
 		(call_script, "script_end_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 1),
+		(str_store_troop_name, s1, ":hero"),
 		(display_message, "@You failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
 		(call_script, "script_cf_gain_trait_oathbreaker"),
 	(else_try),
@@ -1356,6 +1358,7 @@ triggers = [
 		(val_sub, ":count", ":start_killcount"),
 		(store_mul, reg1, ":count", 4),
 		(str_store_faction_name, s1, ":source_fac"),
+		(str_store_troop_name, s1, ":hero"),
 		(display_message, "@You fulfilled your oath of vengeance for {s1}'s hero death!", color_good_news),
 		(call_script, "script_increase_rank", ":source_fac", reg1),
 	(try_end),

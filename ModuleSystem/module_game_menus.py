@@ -1694,6 +1694,28 @@ game_menus = [
 		(faction_set_slot, "fac_woodelf", slot_faction_strength_tmp, 200),
 	]),
 
+     	("camp_cctest_rout_ally",[],"Add troops to routed allies",
+	[
+		(store_random_in_range, ":troop_no", "trp_gondor_noblemen", "trp_steward_guard"),
+		(party_add_members, "p_routed_allies", ":troop_no", 1),
+    		(party_get_num_companions, reg1, "p_routed_allies"),
+		(display_message, "@Ally party size: {reg1}", color_good_news),
+	]),
+
+     	("camp_cctest_rout_enemy",[],"Add troops to routed enemies",
+	[
+		(store_random_in_range, ":troop_no", "trp_orc_snaga_of_mordor", "trp_wolf_rider_of_moria"),
+		(party_add_members, "p_routed_enemies", ":troop_no", 1),
+    		(party_get_num_companions, reg1, "p_routed_enemies"),
+		(display_message, "@Enemy party size: {reg1}", color_bad_news),
+	]),
+
+     	("camp_cctest_rout_spawn",[],"Spawn routed parties",
+	[
+		(assign, "$g_spawn_allies_routed", 1),
+		(assign, "$g_spawn_enemies_routed", 1),
+		(call_script,"script_cf_spawn_routed_parties"),
+	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
   ]
@@ -4399,7 +4421,15 @@ game_menus = [
 	   (party_get_template_id, ":j", "$g_enemy_party"),(eq,":j","pt_wild_troll"),
 	  ],"Inspect downed troll",[ (jump_to_menu, "mnu_can_capture_troll")]) ,
 	  
-     ("continue",[],"Continue...",[(jump_to_menu, "$g_next_menu"),]),
+     ("continue",[],"Continue...",
+	[
+		(try_begin),
+			(gt, "$g_next_menu", -1),
+			(jump_to_menu, "$g_next_menu"),
+		(else_try),
+            		(change_screen_return),
+		(try_end),
+	]),
 	],
  ),
 
@@ -4769,7 +4799,7 @@ game_menus = [
 			(try_end),
 		(try_end),
       ],
-    [("continue",[],"Continue...",[]),]
+    [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
 ( "enemy_slipped_away",0,
     "^^^^^{s17}",
@@ -7841,6 +7871,7 @@ game_menus = [
 	(str_store_troop_name, s4, ":hero"),
 	(store_troop_faction, ":target", ":hero"),
 	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
+	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
 	
 	(assign,":count",1000000),  # choose nearest enemy capital as target faction
 	(assign,":target", 0),

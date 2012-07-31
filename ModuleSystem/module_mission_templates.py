@@ -41,13 +41,14 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_rider_test, 
+	#tld_wargs_attack_horses, # Just a thought, could be added in though.
 	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
-	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); improved, but still WIP.-CC
+	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); improved, but still WIP. -CC
 	tld_player_cant_ride,
 	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,

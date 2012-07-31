@@ -1,4 +1,4 @@
-1055
+1061
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -496,6 +496,9 @@ qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
 qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
 qstr_Your_enemies_flee_in Your_enemies_flee_in_terror!
 qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
+qstr_Many_of_your_troops_ Many_of_your_troops_flee_from_battle.
+qstr_Some_of_your_troops_ Some_of_your_troops_flee_from_battle.
+qstr_A_few_of_your_troops A_few_of_your_troops_flee_from_battle.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -516,12 +519,11 @@ qstr_Nazgul_sweep! Nazgul_sweep!
 qstr_You_and_your_horse_p You_and_your_horse_panic,_the_Nazgul_cries_are_unbearable!
 qstr_Your_horse_panics_th Your_horse_panics,_the_Nazgul_cries_are_unbearable!
 qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
-qstr_knocked_unconsciuos knocked_unconsciuos
+qstr_knocked_unconscious knocked_unconscious
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
-qstr_Max_Rallies:_{reg0}_ Max_Rallies:_{reg0},_Times_Rallied:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s1}_rallies_his_tro {s1}_rallies_his_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
@@ -616,6 +618,8 @@ qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
+qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
+qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
@@ -1036,6 +1040,8 @@ qstr_Hey_scum!_I_can_fix_ Hey_scum!_I_can_fix_that_jaw_of_yours.
 qstr_Watch_where_you_re_g Watch_where_you're_going,_maggot!
 qstr_I_don_t_like_your_fa I_don't_like_your_face!_I_think_it_needs_some_fixing.
 qstr_What_are_you_looking What_are_you_looking_at?_WHAT?
+qstr_the_white_hand the_white_hand
+qstr_the_lidless_eye the_lidless_eye
 qstr_I_have_some_of_your_ I_have_some_of_your_people_with_me._I'll_let_them_join_you,_to_help_your_cause.
 qstr_Some_of_your_stinky_ Some_of_your_stinky_kin_are_with_me._I'm_sure_they'd_rather_go_with_you.
 qstr_{s4}_It_is_always_go {s4}_It_is_always_good_to_see_one_of_our_own.

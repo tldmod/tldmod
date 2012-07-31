@@ -248,7 +248,7 @@ simple_triggers = [
     ]),
 
 # (15) Converging center prosperity to ideal prosperity once in every 15 days - MV: removed this and replaced with this:
-# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain
+# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player.
 (23*3,
    [
     (set_spawn_radius, 3),
@@ -267,6 +267,15 @@ simple_triggers = [
         (neq, ":cur_party_template", "pt_pyre"),
         (neq, ":cur_party_template", "pt_legendary_place"),
         (remove_party, ":cur_party"),
+      (else_try), # remove distant routed parties
+        (party_get_battle_opponent, ":opponent", ":cur_party"),
+        (lt, ":opponent", 0),
+        (party_get_template_id, ":cur_party_template", ":cur_party"),
+	(eq|this_or_next, ":cur_party_template", "pt_routed_allies"),
+	(eq, ":cur_party_template", "pt_routed_enemies"),
+	(store_distance_to_party_from_party, ":routed_distance", "p_main_party", ":cur_party"),
+	(gt, ":routed_distance", 200),
+        (remove_party, ":cur_party"),	
       (else_try), #unstick stuck parties
         (party_get_current_terrain, ":terrain_type", ":cur_party"),
         (try_begin),

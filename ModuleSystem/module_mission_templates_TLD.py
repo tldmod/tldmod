@@ -7,6 +7,60 @@ from header_music import *
 from module_constants import *
 
 
+# Something I'm testing with. -CC
+tld_wargs_attack_horses = (0.1, 0, 0, [(gt, "$wargs_in_battle", 0)], 
+			[
+				(try_for_agents, ":warg"),
+					(agent_is_human, ":warg"),
+					(agent_is_alive, ":warg"),
+					(agent_get_horse, ":mount", ":warg"),
+					(gt, ":mount", -1),
+					(agent_get_troop_id, ":troop", ":warg"),
+					(is_between, ":troop", warg_ghost_begin, warg_ghost_end),
+					(assign, ":stop", 0),
+					(try_for_agents, ":target"),
+						(neq, ":stop", 1),
+						(agent_is_human, ":target"),
+						(agent_is_alive, ":target"),
+						(agent_get_horse, ":horse", ":target"),
+						(gt, ":horse", -1),
+						(agent_get_position, pos1, ":warg"),
+						(agent_get_position, pos2, ":target"),
+						(set_fixed_point_multiplier, 100),
+						(get_distance_between_positions, ":dist", pos1, pos2),
+						(lt, ":dist", 300),
+						(agent_get_team, ":team_a", ":warg"),
+						(agent_get_team, ":team_b", ":target"),
+						(teams_are_enemies, ":team_a", ":team_b"),
+						(store_random_in_range, reg0, 0, 100),
+						(store_random_in_range, reg1, 5, 10),
+						(try_begin),
+							(get_player_agent_no, ":player"),
+							(eq, ":target", ":player"),
+							(lt, reg0, 10), # 10% chance
+							(display_message, "@Warg delivers {reg1} damage to mount.", color_bad_news),
+							(set_show_messages, 0),
+							(store_agent_hit_points, ":hp", ":horse", 1),
+							(val_sub, ":hp", reg1),
+	  	 					(agent_set_hit_points, ":horse", ":hp", 1),
+	   						(agent_deliver_damage_to_agent, ":warg", ":horse"),
+							(set_show_messages, 1),
+						(else_try),
+							(lt, reg0, 10), # 10% chance
+							(store_agent_hit_points, ":hp", ":horse", 1),
+							(val_sub, ":hp", reg1),
+	  	 					(agent_set_hit_points, ":horse", ":hp", 1),
+	   						(agent_deliver_damage_to_agent, ":warg", ":horse"),
+							#(try_begin),
+								#(agent_is_alive|neg, ":horse"),
+							#(try_end),
+							(assign, ":stop", 1),
+						(try_end),
+					(try_end),
+				(try_end),
+			])
+
+
 # This trigger tracks horses for riders falling off horse.
 tld_track_riders = (0.1, 0, 0, [], 
 			[
@@ -22,6 +76,7 @@ tld_track_riders = (0.1, 0, 0, [],
 tld_damage_fallen_riders = (0.1, 0, 0, [], 
 				[
 				(try_for_agents, ":mount"),
+					(agent_is_human|neg, ":mount"),
 					(agent_is_alive|neg, ":mount"),
 					(assign, ":continue", 1),
 					(try_for_agents, ":rider"),
@@ -38,7 +93,7 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 							(display_message, "@Recieved {reg0} damage."),
 						(try_end),
 						(val_sub, ":hp", reg0),
-	  	 				(agent_set_hit_points, ":rider", reg0, 1),
+	  	 				(agent_set_hit_points, ":rider", ":hp", 1),
 						(set_show_messages, 0),						
 						(try_begin),
 			 				(get_player_agent_no, ":player_agent"),
@@ -940,6 +995,9 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$nazgul_team", -1), # will be found when needed
 	(call_script, "script_check_agent_armor"), # check for berserker trait
 	(set_rain, 0,100), #switch off vanilla rain and snow
+
+	# TODO: Maybe add a chance that if the player is playing as a mordor orc, a nazgul may come to his aid? -CC
+
 	# Fixed the broken system. It was checking *parties* against *party templates*, plus some other bugs. -CC
 	(try_begin),
 		(party_get_template_id, ":p_template_1", "$g_encountered_party"),
@@ -1083,25 +1141,30 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(set_show_messages,1),
 ])
 
-# mtarini nazgul sweeps 
+# mtarini nazgul sweeps. improved by cppcoder.
 nazgul_sweeps = (2,1.2,5,[
-	(this_or_next|key_is_down, key_n),
+	#(this_or_next|key_is_down, key_n),
 	(gt,"$nazgul_in_battle",0),
-	(store_random_in_range,reg0,1,51),
-	(this_or_next|key_is_down, key_n),
-	(le,reg0,"$nazgul_in_battle"), # 2% chance every 2 seconds, for each nazgul present
+	(store_random_in_range,reg0,0,100),
+	#(this_or_next|key_is_down, key_n),
+	#(le,reg0,"$nazgul_in_battle"), 
+	(store_mul, reg1, "$nazgul_in_battle", 10), # 10% chance every 2 seconds, for each nazgul present
+	(le,reg0,reg1),	
 	(display_log_message, "@Nazgul sweep!"),
 	# if nazgul team is not computed, compute it
 	(try_begin),
 		(eq, "$nazgul_team", -1), 
 		(try_for_agents,":agent"),
-			(neg|eq, "$nazgul_team", -1), # stop when found
+			(eq, "$nazgul_team", -1),
 			(agent_get_party_id, ":party_id", ":agent"),
+			(ge, ":party_id", 0),
 			(party_get_template_id, ":party_template", ":party_id"),
 			(eq, ":party_template", "pt_mordor_war_party"),
 			(agent_get_team, "$nazgul_team",":agent"),
 		(try_end),
 	(try_end),
+	#(assign, reg0, "$nazgul_team"),
+	#(display_message, "@Nazgul Team = {reg0}"),
 	(store_random_in_range, ":long_skretch", 0,2),
 	# play sound
 	(try_begin),(ge,":long_skretch",1),(play_sound, "snd_nazgul_skreech_long" ),#(display_log_message, "@Debug: LONG sweep!"),
@@ -1233,19 +1296,23 @@ nazgul_sweeps = (2,1.2,5,[
 	# get it killed...  (trick! self kill with hidden message... is there a better way?) NO, THERE IS NOT. GA
 	(agent_set_hit_points,":random_agent",0,1), # this still doesn't kill it
 	(set_show_messages,0),
+	(agent_get_kill_count, ":killed", ":random_agent"),
 	(agent_deliver_damage_to_agent,":random_agent",":random_agent"), 
+	(agent_get_kill_count, ":killed_1", ":random_agent"),
 	(set_show_messages,1),
 	
 	# display kill in a log message of appropriate color
-	(assign, ":text_color", 0xFFAAFFAA),
+	# changed 0xFFAAFFAA to color_good_news -CC
+	(assign, ":text_color", color_good_news),
 	(try_begin),
 		(agent_is_ally, ":random_agent"),
-		(assign, ":text_color", 0xFFFFAAAA),
+		# changed 0xFFFFAAAA to color_bad_news -CC
+		(assign, ":text_color", color_bad_news),
 	(try_end),
-	(str_store_string, s10, "@killed"),	
+	(str_store_string, s10, "@knocked unconscious"),	
 	(try_begin),
-		(agent_is_wounded, ":random_agent"),
-		(str_store_string, s10, "@knocked unconsciuos"),
+		(gt, ":killed_1", ":killed"),
+		(str_store_string, s10, "@killed"),
 	(try_end),
 	(str_store_agent_name, s11, ":random_agent"),
 	(display_log_message, "@Nazgul diving attack on {s11}!"),

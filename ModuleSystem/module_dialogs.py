@@ -8738,7 +8738,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (store_partner_faction, reg14),
     (str_store_faction_name, s14, reg14),
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, reg14, reg0),],
-"It has been an honour to serve {s12} under your command, Commander.^^Now, as you know, I've been reassigned to home defence.^I shall soon leave."+promise_reg14_rp_of_s14, 
+"It has been an honour to serve {s14} under your command, Commander.^^Now, as you know, I've been reassigned to home defence.^I shall soon leave."+promise_reg14_rp_of_s14, 
   "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"regular_member_talk", [
@@ -8765,7 +8765,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "Shall I leave your command, and go back home to defend my hometown?"+promise_reg14_rp_of_s14, "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"disband_regular_member_confirm_yn", [(str_store_troop_name_plural, s15,"$g_talk_troop")],
-"Yes, go there and await further orders from {s12}. Good luck, soldier!", "close_window",[
+"Yes, go there and await further orders from {s14}. Good luck, soldier!", "close_window",[
 	(call_script,"script_stand_back"),
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, ":gain", reg0),
     #(party_remove_members_wounded_first,"p_main_party","$g_talk_troop",1),
@@ -8784,6 +8784,48 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 #TLD: faction specific non-lord party encounter dialogs for friends and enemies
 # (note: depends on lord dialogs coming before this; also bandits are not handled here)
+
+#Routed party dialogs.
+[anyone, "start", [
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+			(assign, reg1, 0),
+			(try_begin),
+				(faction_slot_eq|neg, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+				(assign, reg1, 1),
+			(try_end),
+		  ], 
+		"{reg1?My lord:Master}, you have survived! Shall we join you again?", "routed_allies_talk", [] ],
+
+[anyone|plyr, "routed_allies_talk", 
+		[
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+			(party_can_join_party,"$g_encountered_party","p_main_party"),
+			(str_store_faction_name, s1, "$g_encountered_party_faction"),
+			(try_begin),
+				(eq, "$g_encountered_party_faction", "fac_isengard"),
+				(str_store_string, s1, "@the white hand"),
+			(else_try),
+				(eq, "$g_encountered_party_faction", "fac_mordor"),
+				(str_store_string, s1, "@the lidless eye"),
+			(try_end),
+		 ], 
+		"Yes, together we shall fight for {s1} once again.", "close_window", 
+		[
+			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
+			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
+			(remove_party, "$g_encountered_party"),
+			(assign, "$g_leave_encounter",1),			
+		] 
+],
+
+[anyone|plyr, "routed_allies_talk", 
+		[
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+		 ], 
+		"Not yet, soldier.", "close_window", [(assign, "$g_leave_encounter",1)] ],
 
 #Friendly faction party: they don't trust you (rank 0 with them)
 [anyone,"start", 
@@ -8826,9 +8868,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 	"{s37}",  "party_reinforce", [] ],
 
 		
-# Routed dialogs go here
-[party_tpl|pt_routed_allies, "start", [], "Yes?", "close_window", [] ],
-[party_tpl|pt_routed_enemies, "start", [], "What do you want?", "close_window", [] ],
 
 #Friendly faction party: they trust you.
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
