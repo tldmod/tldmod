@@ -1,4 +1,4 @@
-1061
+1067
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -133,6 +133,9 @@ qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_+1_to_Trainer +1_to_Trainer
 qstr_Recruits_Tribal_Orcs Recruits_Tribal_Orcs
 qstr_+1_to_Charisma +1_to_Charisma
+qstr_rally rally
+qstr_rallies rallies
+qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Persuasion +1_to_Persuasion
 qstr_+1_to_Ironflesh +1_to_Ironflesh
@@ -495,10 +498,13 @@ qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
 qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
 qstr_Your_enemies_flee_in Your_enemies_flee_in_terror!
+qstr_Many_of_your_enemies Many_of_your_enemies_are_fleeing_from_battle.
+qstr_Some_of_your_enemies Some_of_your_enemies_are_fleeing_from_battle.
+qstr_A_few_of_your_enemie A_few_of_your_enemies_are_fleeing_from_battle.
 qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
-qstr_Many_of_your_troops_ Many_of_your_troops_flee_from_battle.
-qstr_Some_of_your_troops_ Some_of_your_troops_flee_from_battle.
-qstr_A_few_of_your_troops A_few_of_your_troops_flee_from_battle.
+qstr_Many_of_your_troops_ Many_of_your_troops_are_fleeing_from_battle.
+qstr_Some_of_your_troops_ Some_of_your_troops_are_fleeing_from_battle.
+qstr_A_few_of_your_troops A_few_of_your_troops_are_fleeing_from_battle.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

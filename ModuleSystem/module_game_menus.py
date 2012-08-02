@@ -1715,6 +1715,14 @@ game_menus = [
 		(assign, "$g_spawn_allies_routed", 1),
 		(assign, "$g_spawn_enemies_routed", 1),
 		(call_script,"script_cf_spawn_routed_parties"),
+	]),		
+	
+
+     	("camp_cctest_gain_traits",[],"Get All Traits",
+	[
+		(try_for_range, ":trait", slot_trait_first, slot_trait_last+1),
+			(call_script, "script_gain_trait", ":trait"),
+		(try_end),
 	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -2956,11 +2964,19 @@ game_menus = [
         ],"Battle morale system:  {s7}",[
         (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
 
+    ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
 
-    ("game_options_compat",[],"Compatibility tweaks...",[(jump_to_menu, "mnu_camp_compat_tweaks")]),
-    ("game_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
  ]),
+
+( "camp_tweaks",0,
+	"^^^^^^^^Choose an option that you would like to adjust.","none",[],
+	[
+   	 	("tweak_options_compat",[],"Compatibility tweaks...",[(jump_to_menu, "mnu_camp_compat_tweaks")]),
+    		("tweak_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
+    		("tweak_options_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")]),
+	]
+),
 
 ( "camp_compat_tweaks",0,
 	"^^^^^^^^Click on an option to toggle:^(these are for compatibilty and are not cheats)","none",[],
@@ -2969,7 +2985,7 @@ game_menus = [
 		[
 			(assign, reg0, "$tld_option_max_parties"),
 			(try_begin),
-				(ge, "$tld_option_max_parties", 800),
+				(ge, "$tld_option_max_parties", 850),
 				(str_store_string, s1, "@{reg0} (could possibly cause save crashes)"),
 			(else_try),
 				(str_store_string, s1, "@{reg0}"),
@@ -3984,8 +4000,8 @@ game_menus = [
                   # (try_end),
               # (try_end),
 #Troop commentary changes end
-		# This is here so when you flee it checks for routed parties -CppCoder
-		(call_script, "script_cf_spawn_routed_parties"),
+		# This is here so when you flee it checks for routed parties -CC
+		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
           	(leave_encounter),(change_screen_return)]),
 			
       ("encounter_retreat",[
@@ -4081,8 +4097,8 @@ game_menus = [
               (call_script, "script_add_log_entry", logent_player_retreated_from_lord_cowardly, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
 ###Troop commentary changes end  
-		# This is here so when you flee it checks for routed parties -CppCoder
-		(call_script, "script_cf_spawn_routed_parties"),      
+		# This is here so when you flee it checks for routed parties -CC
+		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
           (leave_encounter),(change_screen_return)]),
     ]
  ),
@@ -4393,6 +4409,7 @@ game_menus = [
      (try_end),
 #NPC companion changes end
 
+	
      (call_script, "script_print_casualties_to_s0", "p_player_casualties", 0),
      (str_store_string_reg, s8, s0),
      (call_script, "script_print_casualties_to_s0", "p_enemy_casualties", 0),
@@ -4774,8 +4791,8 @@ game_menus = [
               (try_end),
             (try_end),
 
-		# Spawn routed parties after battle.
-		(call_script, "script_cf_spawn_routed_parties"),        
+		# Spawn routed parties after battle. -CC
+		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),    
 
             (leave_encounter),
             (change_screen_return),

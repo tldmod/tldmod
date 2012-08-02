@@ -13,12 +13,72 @@ from ID_troops import *
 from ID_factions import *
 from module_troops import *
 
+# This file contains a heavily modified and improved version
+# of Chel's morale scripts. If you modify it, please leave a 
+# note telling what you did. -CC
+
 morale_scripts = [
+	
+	# script_cf_correct_party_icon
+	# This script sets an icon of a party relative to it's faction
+	# param0 = party_id
+	("cf_correct_party_icon",
+	[
+		(store_script_param, ":party_id", 1),
+		(gt, ":party_id", -1),
+		(store_faction_of_party, ":faction", ":party_id"),
+		#(party_get_num_companions, ":size", ":party_id"),
+		(assign, ":icon", icon_orc),
+		(try_begin),
+			(eq, ":faction", "fac_gondor"),
+			(assign, ":icon", icon_footman_gondor),
+		(else_try),
+			(eq, ":faction", "fac_dwarf"),
+			(assign, ":icon", icon_dwarf),
+		(else_try),
+			(eq, ":faction", "fac_rohan"),
+			(assign, ":icon", icon_knight_rohan),
+		(else_try),
+			(eq, ":faction", "fac_lorien"),
+			(assign, ":icon", icon_lorien_elf_a),
+		(else_try),
+			(eq, ":faction", "fac_imladris"),
+			(assign, ":icon", icon_rivendell_elf),
+		(else_try),
+			(eq, ":faction", "fac_woodelf"),
+			(assign, ":icon", icon_mirkwood_elf),
+		(else_try),
+			(eq, ":faction", "fac_dale"),
+			(assign, ":icon", icon_generic_knight),
+		(else_try),
+			(eq|this_or_next, ":faction", "fac_harad"),
+			(eq|this_or_next, ":faction", "fac_rhun"),
+			(eq, ":faction", "fac_khand"),
+			(assign, ":icon", icon_cataphract),
+			(assign, ":icon", icon_cataphract),
+		(else_try),
+			(eq, ":faction", "fac_umbar"),
+			(assign, ":icon", icon_umbar_corsair),
+		(else_try),
+			(eq|this_or_next, ":faction", "fac_mordor"),
+			(eq|this_or_next, ":faction", "fac_isengard"),
+			(eq|this_or_next, ":faction", "fac_moria"),
+			(eq|this_or_next, ":faction", "fac_guldur"),
+			(eq, ":faction", "fac_gundabad"),
+			(assign, ":icon", icon_orc),
+		(else_try),
+			(eq, ":faction", "fac_dunland"),
+			(assign, ":icon", icon_dunlander),
+		(else_try),
+			(eq, ":faction", "fac_beorn"),
+			(assign, ":icon", icon_axeman),
+		(try_end),
+		(party_set_icon, ":party_id", ":icon"),
+	]),
 
 	# script_cf_get_tier_morale
 	# This script stores the agents tier morale based on race in reg0.
 	# param0 = agent
-	# TODO: Maybe add it so different races get different bonuses.
 	("cf_agent_get_tier_morale",
 	[
 		(store_script_param, ":agent_no", 1),
@@ -26,16 +86,16 @@ morale_scripts = [
 		(agent_get_troop_id,":troop", ":agent_no"),
 		(store_character_level, ":level", ":troop"),	
 		(try_begin),
-			(is_between, ":level", 0, 6),
+			(is_between, ":level", 0, 7),
 			(assign, reg0, 3),
 		(else_try),
-			(is_between, ":level", 7, 14),
+			(is_between, ":level", 7, 15),
 			(assign, reg0, 6),
 		(else_try),
 			(is_between, ":level", 15, 23),
 			(assign, reg0, 12),
 		(else_try),
-			(is_between, ":level", 24, 32),
+			(is_between, ":level", 23, 32),
 			(assign, reg0, 18),
 		(else_try),
 			(assign, reg0, 25),
@@ -120,7 +180,7 @@ morale_scripts = [
          	(val_sub,reg1,":leader"),
          	(val_sub,reg1,":troop_level"),
 
-		# leader bonuses -CppCoder
+		# leader bonuses -CC
 		(try_begin),
 			(call_script, "script_cf_agent_get_leader", ":agent_no"),
 			(gt, reg0, -1),
@@ -147,7 +207,7 @@ morale_scripts = [
 			(try_end),
 		(try_end),
 	
-		# What are the variables for enemy formations? -CppCoder
+		# What are the variables for enemy formations? -CC
 		(assign, ":formation", formation_none),
 		(try_begin),
 			(agent_is_ally, ":agent_no"),
@@ -160,11 +220,11 @@ morale_scripts = [
 			(else_try),
 				(eq, ":class", grc_cavalry),
 				(assign, ":formation", "$cavalry_formation_type"),
-				(val_sub, reg1, 5), # slight bonus for cavalry units.
+				(val_sub, reg1, 5), # slight bonus for cavalry units. -CC
 			(try_end),
 		(try_end),
 
-		# Formation bonuses. -CppCoder
+		# Formation bonuses. -CC
 		(try_begin),
 			(eq|this_or_next, ":race", tf_gondor),
 			(eq|this_or_next, ":race", tf_male),
@@ -173,7 +233,7 @@ morale_scripts = [
 			(val_sub, reg1, tld_morale_formation_bonus),
 		(try_end),
 
-		# Race bonuses / penalties. -CppCoder
+		# Race bonuses / penalties. -CC
 		(try_begin),
 			(eq, ":race", tf_orc),
 			(val_sub, reg1, tld_morale_poor),
@@ -200,7 +260,7 @@ morale_scripts = [
 			(val_sub, reg1, tld_morale_average),
 		(try_end),
 
-		# Nazgul modifier -CppCoder
+		# Nazgul modifier -CC
 		(try_begin),
 			(gt, "$nazgul_in_battle", 0),
 			(agent_get_team, ":team_a", ":agent_no"),
@@ -214,7 +274,7 @@ morale_scripts = [
 			(try_end),
 		(try_end),
 
-		# faction bonuses. (mostly for easterlings, khand and haradrim). -CppCoder
+		# faction bonuses. (mostly for easterlings: khand and haradrim). -CC
 		(try_begin),
 			(call_script, "script_cf_agent_get_faction", ":agent_no"),
 			(gt, reg0, -1),
@@ -225,6 +285,7 @@ morale_scripts = [
 			(try_end),
 		(try_end),
 		
+		# Rallied agents are 20% less likely to flee.
 		(try_begin),
 			(agent_slot_eq,":agent_no",slot_agent_rallied, 1),
 			(val_sub, reg1, 20),
@@ -236,9 +297,11 @@ morale_scripts = [
 	]),
 
 	# script_cf_spawn_routed_parties
-	# This script spawns the routed parties nearby the player
+	# This script spawns the routed parties nearby the player OR if there already is a routed party nearby,
+	# it adds the routed troops to them.
 	("cf_spawn_routed_parties", 
 	[
+		# Clear the parties if the morale option has been turned off.
 		(try_begin),
 			(eq, "$tld_option_morale", 0),
 			(party_clear, "p_routed_allies"),
@@ -247,10 +310,12 @@ morale_scripts = [
 
 		(eq, "$tld_option_morale", 1),
 
-		# Don't spawn empty parties, though this should never happen, we catch it just in case. -CppCoder
+		# Don't spawn empty parties, though this should never happen, we catch it just in case. -CC
 		(try_begin),
+			(party_get_num_companions, ":size_plyr", "p_routed_troops"),
 			(party_get_num_companions, ":size_ally", "p_routed_allies"),
 			(le, ":size_ally", 0),
+			(le, ":size_plyr", 0),
 			(assign, "$g_spawn_allies_routed", 0),
 		(try_end),
 		(try_begin),
@@ -282,13 +347,17 @@ morale_scripts = [
         				(val_add, ":total_parties", 1),
       				(try_end),
       				(le, ":total_parties", "$tld_option_max_parties"),
-				(set_spawn_radius, 5),
+				(set_spawn_radius, 3),
             			(spawn_around_party, "p_main_party", "pt_routed_allies"),
             			(assign, ":routed_party", reg0),
+				(call_script, "script_party_add_party", ":routed_party", "p_routed_troops"),
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_allies"),
 				(party_stack_get_troop_id, ":troop", ":routed_party", 0),
 				(store_troop_faction, ":faction", ":troop"),
 				(party_set_faction, ":routed_party", ":faction"),
+				(try_begin),
+					(call_script, "script_cf_correct_party_icon", ":routed_party"),
+				(try_end),
 				(party_clear, "p_routed_allies"),
 				(assign, "$g_spawn_allies_routed", 0),
 			(try_end),
@@ -319,13 +388,22 @@ morale_scripts = [
       				(try_end),
       				(le, ":total_parties", "$tld_option_max_parties"),
 				(eq, "$g_spawn_enemies_routed", 1),
-				(set_spawn_radius, 5),
+				(set_spawn_radius, 3),
             			(spawn_around_party, "p_main_party", "pt_routed_enemies"),
             			(assign, ":routed_party", reg0),
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_enemies"),
-				#(party_stack_get_troop_id, ":troop", ":routed_party", 0),
-				#(store_troop_faction, ":faction", ":troop"),
-				(party_set_faction, ":routed_party", "$g_encountered_party_faction"),
+				(party_stack_get_troop_id, ":troop", ":routed_party", 0),
+				(store_troop_faction, ":faction", ":troop"),
+				(store_relation, ":relation", ":faction", "$players_kingdom"),
+				(try_begin),
+					(lt, ":relation", 0),
+					(party_set_faction, ":routed_party", ":faction"),
+				(else_try),
+					(party_set_faction, ":routed_party", "$g_encountered_party_faction"),	
+				(try_end),
+				(try_begin),
+					(call_script, "script_cf_correct_party_icon", ":routed_party"),
+				(try_end),
 				(party_clear, "p_routed_enemies"),
 				(assign, "$g_spawn_enemies_routed", 0),
 			(try_end),
@@ -360,22 +438,22 @@ morale_scripts = [
 	# script_remove_agent_from_field
 	# This script removes an agent from a battle and adds it to a routed party.
 	# param1: agent to remove
-	# TODO: minor improvements.
 	("remove_agent_from_field", 
 	[
 		(store_script_param, ":agent_no", 1),
 		(agent_get_troop_id, ":troop_no", ":agent_no"),
 
-		# Remove agent's horse first.
+		# Does agent have a horse? -CC
 		(agent_get_horse, ":horse_no", ":agent_no"),
 
+		# If so, remove it. -CC
 		(try_begin),
 			(ge, ":horse_no", 0),
 			(call_script, "script_remove_agent", ":horse_no"),	
 		(try_end),
 
 		(try_begin),
-			# Tell the player when a hero has left the battle
+			# Tell the player when a hero has left the battle. -CC
 			(troop_is_hero, ":troop_no"),
       			(str_store_troop_name, s1, ":troop_no"),
 			(assign, ":news_color", color_good_news),
@@ -386,37 +464,34 @@ morale_scripts = [
 			(display_message, "@{s1} has fled the battle!", ":news_color"),
 			(call_script, "script_remove_agent", ":agent_no"),
 		(else_try),
-			# If the troop is a not hero, add it to a temp party
+			# If the troop is a not hero, add it to a temp party. -CC
 			(try_begin),
-				(agent_is_ally, ":agent_no"),
+				(agent_is_ally, ":agent_no"),				
 				(agent_get_party_id, ":party_no", ":agent_no"),
 				(agent_get_kill_count, ":agent_killed", ":agent_no"),
 				(agent_get_kill_count, ":agent_wounded", ":agent_no", 1),
 				(call_script, "script_remove_agent", ":agent_no"),
 				(agent_get_kill_count, ":agent_killed_2", ":agent_no"),
 				(agent_get_kill_count, ":agent_wounded_2", ":agent_no", 1),
-				(assign, ":wounded", 0),
-				(try_begin),
-					(agent_is_wounded, ":agent_no"),
-					(assign, ":wounded", 1),
-				(try_end),
 				(try_begin),
 					# agent was killed
 					(gt, ":agent_killed_2", ":agent_killed"),
-			        	(party_add_members, "p_routed_allies", ":troop_no", 1),
-					(try_begin),
-						(eq, ":wounded", 1),
-						(party_wound_members, "p_routed_allies", ":troop_no"),
+			        	(try_begin),
+						(eq, ":party_no", "p_main_party"),
+						(party_add_members, "p_routed_troops", ":troop_no", 1),
+					(else_try),
+						(party_add_members, "p_routed_allies", ":troop_no", 1),
 					(try_end),
 					(assign, "$g_spawn_allies_routed", 1),
 				(else_try),
 					# agent was wounded
 					(gt, ":agent_wounded_2", ":agent_wounded"),
 					(party_remove_members,":party_no",":troop_no", 1),
-			        	(party_add_members, "p_routed_allies", ":troop_no", 1),
-					(try_begin),
-						(eq, ":wounded", 1),
-						(party_wound_members, "p_routed_allies", ":troop_no"),
+			        	(try_begin),
+						(eq, ":party_no", "p_main_party"),
+						(party_add_members, "p_routed_troops", ":troop_no", 1),
+					(else_try),
+						(party_add_members, "p_routed_allies", ":troop_no", 1),
 					(try_end),
 					(assign, "$g_spawn_allies_routed", 1),
 				(try_end),
@@ -424,14 +499,12 @@ morale_scripts = [
 			        (party_add_members, "p_routed_enemies", ":troop_no", 1),
 				(try_begin),
 					(agent_is_wounded, ":agent_no"),
-					(party_wound_members, "p_routed_enemies", ":troop_no"),
+					(party_wound_members, "p_routed_enemies", ":troop_no", 1),
 				(try_end),
 				(call_script, "script_remove_agent", ":agent_no"),
 				(assign, "$g_spawn_enemies_routed", 1),
 			(try_end),
 		(try_end),
-
-		(call_script, "script_encounter_calculate_fit"),
 	]),
 
 	# This script finds a position at the border nearest to the agent
@@ -550,28 +623,46 @@ morale_scripts = [
 	(try_begin),
 		(ge,":ally",40),
 		(call_script, "script_rout_enemies"),
-		#(try_begin),
-		(display_message,"@Your enemies flee in terror!",color_good_news),  
-		#(try_end),
+		(store_mul, ":enemies_ratio", reg1, 100),
+		(val_div, ":enemies_ratio", reg0),
+		#(assign, reg0, ":enemies_ratio"),
+		#(display_message, "@Enemies Ratio: {reg0}"),
+		(try_begin),
+			(gt, ":enemies_ratio", 80),
+			(display_message,"@Your enemies flee in terror!",color_good_news),  
+		(else_try),
+			(gt, ":enemies_ratio", 50),
+			(display_message,"@Many of your enemies are fleeing from battle.",color_good_news),  
+		(else_try),
+			(gt, ":enemies_ratio", 25),
+			(display_message,"@Some of your enemies are fleeing from battle.",color_good_news),  
+		(else_try),
+			(gt, ":enemies_ratio", 10),
+			(display_message,"@A few of your enemies are fleeing from battle.", color_good_news),  
+		(try_end),
 	(try_end),
 
 	(try_begin),
 		(le,":ally",-40),
 		(call_script, "script_rout_allies"),
+		#(assign, reg2, reg0),
+		#(assign, reg3, reg1),
 		(store_mul, ":allies_ratio", reg1, 100),
 		(val_div, ":allies_ratio", reg0),
+		#(assign, reg0, ":allies_ratio"),
+		#(display_message,"@Allies Ratio = {reg0}, Routed = {reg3}, Total = {reg2}"),  
 		(try_begin),
 			(gt, ":allies_ratio", 80),
 			(display_message,"@Your troops flee in terror!",color_bad_news),  
 		(else_try),
 			(gt, ":allies_ratio", 50),
-			(display_message,"@Many of your troops flee from battle.",color_bad_news),  
+			(display_message,"@Many of your troops are fleeing from battle.",color_bad_news),  
 		(else_try),
 			(gt, ":allies_ratio", 25),
-			(display_message,"@Some of your troops flee from battle.",color_bad_news),  
+			(display_message,"@Some of your troops are fleeing from battle.",color_bad_news),  
 		(else_try),
 			(gt, ":allies_ratio", 10),
-			(display_message,"@A few of your troops flee from battle.",color_bad_news),  
+			(display_message,"@A few of your troops are fleeing from battle.",color_bad_news),  
 		(try_end),
 	(try_end),
      ]),
@@ -603,7 +694,6 @@ morale_scripts = [
         	(store_random_in_range,":routed",1,101),
 		(try_begin),
                 	(le,":routed",":chance_ply"),
-#               	(display_message,"@One ally runs!"),  
 			(agent_get_position,pos2,":agent"),
 			(position_move_z,pos2,200,0),
                 	(agent_clear_scripted_mode,":agent"),
@@ -633,7 +723,6 @@ morale_scripts = [
          	(store_random_in_range,":routed",1,101),
 	 	(try_begin),
                    	(le,":routed",":chance_ply"),
-#                  	(display_message,"@One enemy runs!"),  
                 	(agent_get_position,pos2,":agent"),
 		 	(position_move_z,pos2,200,0),
                         (agent_clear_scripted_mode,":agent"),
@@ -653,12 +742,10 @@ morale_scripts = [
 	(assign, ":allies_routed", 0),
 	(assign, ":allies_total", 0),
 	(try_for_agents,":agent"),
-		(get_player_agent_no, ":player_agent"),
-		(neq, ":player_agent", ":agent"),
-		(val_add, ":allies_total", 1),
          	(agent_is_alive,":agent"),
          	(agent_is_human,":agent"),
          	(agent_is_ally,":agent"),
+		(val_add, ":allies_total", 1),
 		(call_script, "script_cf_agent_get_morale", ":agent"),
          	(assign, ":chance_ply", reg1),
          	(store_random_in_range,":routed",0,101),
@@ -667,6 +754,8 @@ morale_scripts = [
 		#(display_message, "@{reg1} less than {reg0}"),
               	(try_begin),
                    	(le,":routed",":chance_ply"),
+			(get_player_agent_no, ":player_agent"),
+			(neq, ":player_agent", ":agent"),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 0),
 		   	(agent_set_slot, ":agent", slot_agent_routed, 1),
               		(agent_get_position,pos2,":agent"),
@@ -674,17 +763,18 @@ morale_scripts = [
                         (agent_clear_scripted_mode,":agent"),
 			(call_script, "script_find_exit_position_at_pos4", ":agent"),
                         (agent_set_scripted_destination,":agent",pos4,1),
-			(val_add, ":allies_routed", 1),
            	(try_end),
 		(try_begin),
-                   	(le,":routed",":chance_ply"),
+		   	(agent_slot_eq, ":agent", slot_agent_routed, 1),
+			(val_add, ":allies_routed", 1),
        			(store_random_in_range,":rand",1,101),
-			(lt, ":rand", 67), # 67% chance.
+			(lt, ":rand", 33), # 33% chance.
 			(agent_get_horse, ":horse", ":agent"),
 			(try_begin),
-				(gt, ":horse", -1),
-          			(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"),
-			(else_try),
+				#(gt, ":horse", -1),
+          			#(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"),
+			#(else_try),
+				(le, ":horse", -1),
           			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"),	
 			(try_end),
 		(try_end),
@@ -699,10 +789,10 @@ morale_scripts = [
 	(assign, ":enemies_routed", 0),
 	(assign, ":enemies_total", 0),
 	(try_for_agents,":agent"),
-		(val_add, ":enemies_total", 1),
          	(agent_is_alive,":agent"),
          	(agent_is_human,":agent"),
          	(neg|agent_is_ally,":agent"),
+		(val_add, ":enemies_total", 1),
 		(call_script, "script_cf_agent_get_morale", ":agent"),
          	(assign, ":chance_ply", reg1),
          	(store_random_in_range,":routed",0,101),
@@ -715,17 +805,18 @@ morale_scripts = [
                         (agent_clear_scripted_mode,":agent"),
 			(call_script, "script_find_exit_position_at_pos4", ":agent"), 
                         (agent_set_scripted_destination,":agent",pos4,1),
-			(val_add, ":enemies_routed", 1),
                	(try_end),
 		(try_begin),
-                   	(le,":routed",":chance_ply"),
+		   	(agent_slot_eq, ":agent", slot_agent_routed, 1),
+			(val_add, ":enemies_routed", 1),
        			(store_random_in_range,":rand",1,101),
-			(lt, ":rand", 67), # 67% chance.
+			(lt, ":rand", 33), # 33% chance.
 			(agent_get_horse, ":horse", ":agent"),
 			(try_begin),
-				(gt, ":horse", -1),
-          			(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"),
-			(else_try),
+				#(gt, ":horse", -1),
+          			#(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"),
+			#(else_try),
+				(le, ":horse", -1),
           			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"),	
 			(try_end),
 		(try_end),
@@ -756,7 +847,6 @@ morale_scripts = [
 		(store_agent_hit_points,":hitpoints",":agent",0),
 		(agent_get_troop_id,":troop_type", ":agent"),
 		(store_character_level, ":troop_level", ":troop_type"),
-#		(val_div,":troop_level",10),
 		(val_mul,":hitpoints",":troop_level"),
 		(val_add,":num_allies",":troop_level"),
 		(val_add,":coh_allies",":hitpoints"),
@@ -773,7 +863,6 @@ morale_scripts = [
 		(store_agent_hit_points,":hitpoints",":agent",0),
 		(agent_get_troop_id,":troop_type", ":agent"),
 		(store_character_level, ":troop_level", ":troop_type"),
-#		(val_div,":troop_level",10),
 		(val_mul,":hitpoints",":troop_level"),
 		(val_add,":num_enemies",":troop_level"),
 		(val_add,":coh_enemies",":hitpoints"),
@@ -790,7 +879,6 @@ morale_scripts = [
 	# Difference between in battle agents.
 	(store_sub, ":advantage", ":num_allies_alive", ":num_enemies_alive"),
 	
-
 	(val_div,":coh_allies",":num_allies"),
 	(assign,"$allies_coh_base",":coh_allies"),
 	(val_add, "$allies_coh_base", ":advantage"),
@@ -799,7 +887,7 @@ morale_scripts = [
 	# Nazgul penalty
 	(try_begin),
 		(gt, "$nazgul_in_battle", 0),
-		(store_mul, ":nazgul_penalty", "$nazgul_in_battle", 15),
+		(store_mul, ":nazgul_penalty", "$nazgul_in_battle", 20),
 		(get_player_agent_no, ":player"),
 		(agent_get_team, ":player_team", ":player"),
 		(try_begin),
@@ -821,7 +909,7 @@ morale_scripts = [
 	(assign,"$enemies_coh",":coh_enemies"),
 	(val_add,"$allies_coh","$new_kills"),
 	(val_sub, "$enemies_coh", ":advantage"),
-	(val_add, "$allies_coh", ":num_enemies_rallied"),
+	(val_add, "$enemies_coh", ":num_enemies_rallied"),
 	(try_begin),
 		(lt, "$enemies_coh", 0),
 		(assign, "$enemies_coh", 0),

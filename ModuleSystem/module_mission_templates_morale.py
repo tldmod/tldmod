@@ -6,6 +6,10 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+# This file contains a heavily modified and improved version
+# of Chel's morale scripts. If you modify it, please leave a 
+# note telling what you did. -CC
+
 tld_morale_triggers = [
 
  	# This trigger always happens to prevent a "you killed 30000 troops in this battle." bug when you turn battle morale on
@@ -19,15 +23,15 @@ tld_morale_triggers = [
 		#(assign,"$new_enemy_kills",0),
     	]),
 
- 	# TODO: rally your troops.
-     	(0, 0, 10, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
+	# Rally your troops, five second wait inbetween. -CC
+     	(0, 0, 5, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
 	[
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
 		(lt, ":ally", -40),
 		(get_player_agent_no, ":player"),	
-		(assign, ":max_rallies", 1),	
+		(assign, ":max_rallies", 1),
 		(agent_get_slot, ":times_rallied", ":player", slot_agent_rallied),
 		(store_attribute_level, ":cha", "trp_player", ca_charisma),
 		(store_div, ":normal_rallies", ":cha", 5),
@@ -43,13 +47,12 @@ tld_morale_triggers = [
 		#(display_message, "@Max Rallies: {reg0}, Times Rallied: {reg1}"),
 		(try_begin),
 			(lt, ":times_rallied", ":max_rallies"),
+			(call_script, "script_troop_get_cheer_sound", "trp_player"),
 			(play_sound, "snd_evil_horn"),
-			(agent_play_sound, ":player", "snd_evil_horn"),
+			(agent_play_sound, ":player", reg1),
 			(display_message, "@You rally your troops!", color_good_news),
 			(val_add, ":times_rallied", 1),
 			(agent_set_slot, ":player", slot_agent_rallied, ":times_rallied"),
-			(call_script, "script_troop_get_cheer_sound", "trp_player"),
-			(agent_play_sound, ":player", reg1),
 			(try_begin),
 				(agent_get_horse, ":horse", ":player"),
 				(ge, ":horse", 0),
@@ -75,14 +78,14 @@ tld_morale_triggers = [
 		(try_end),
 	]),
 
- 	# AI rallies troops
+ 	# AI rallies troops -CC
      	(3, 0, 0, [(eq, "$tld_option_morale", 1)], 
 	[	
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
 
-		# Allies
+		# When allied troops are routed, allied commanders rally their troops!
 		(try_begin),
 			(lt, ":ally", -40),
 			(get_player_agent_no, ":player"),
@@ -99,10 +102,12 @@ tld_morale_triggers = [
 				(store_attribute_level, ":cha", ":troop", ca_charisma),
 				(store_div, ":max_rallies", ":cha", 5),
 				(try_begin),
+					(call_script, "script_count_enemy_agents_around_agent", ":agent", 300), # AI won't rally if surrounded. The 
+					(le, reg0, 0),								# animation makes him vulnerable. -CC
 					(store_random_in_range, ":die_roll", 0, 101),
-					(store_mul, ":rally_penalty", ":times_rallied", 20),
+					(store_mul, ":rally_penalty", ":times_rallied", 20), # The more they have rallied, the less likely to do it again. -CC
 					(store_sub, ":chance", 80, ":rally_penalty"),
-					(lt, ":die_roll", ":chance"), # Little bit of personality in AI commanders
+					(lt, ":die_roll", ":chance"), # lil' bit of personality in AI commanders
 					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
 					(str_store_troop_name, s1, ":troop"),
 					(assign, reg0, ":chance"),
@@ -133,7 +138,7 @@ tld_morale_triggers = [
 			(try_end),
 		(try_end),
 
-		# Enemies
+		# When enemy troops are routed, enemy commanders rally their troops!
 		(try_begin),
 			(ge, ":ally", 40),
 			(try_for_agents, ":agent"),
@@ -148,10 +153,12 @@ tld_morale_triggers = [
 				(store_attribute_level, ":cha", ":troop", ca_charisma),
 				(store_div, ":max_rallies", ":cha", 5),
 				(try_begin),
+					(call_script, "script_count_enemy_agents_around_agent", ":agent", 300), # AI won't rally if surrounded. The 
+					(le, reg0, 0),								# animation makes him vulnerable. -CC
 					(store_random_in_range, ":die_roll", 0, 101),
-					(store_mul, ":rally_penalty", ":times_rallied", 15),
+					(store_mul, ":rally_penalty", ":times_rallied", 20), # The more they have rallied, the less likely to do it again. -CC
 					(store_sub, ":chance", 80, ":rally_penalty"),
-					(lt, ":die_roll", ":chance"), # Little bit of personality in AI commanders
+					(lt, ":die_roll", ":chance"), # lil' bit of personality in AI commanders
 					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
 					(str_store_troop_name, s1, ":troop"),
 					(assign, reg0, ":chance"),
@@ -170,7 +177,7 @@ tld_morale_triggers = [
 						(agent_set_animation, ":agent", "anim_cheer_player"),
 					(try_end),
 					(try_for_agents, ":cur_agent"),
-						(neq, ":agent", ":cur_agent"),
+						(neq, ":agent", ":cur_agent"), # Ralliers don't rally themselves.
 						(agent_is_human, ":cur_agent"),
 						(agent_is_alive, ":cur_agent"),
 						(agent_is_ally|neg, ":cur_agent"),
@@ -184,7 +191,6 @@ tld_morale_triggers = [
 	]),
 
  	# let the player know of his troop's morale
-
      	(0, 0, 2, [(key_clicked, key_t),(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
@@ -212,9 +218,9 @@ tld_morale_triggers = [
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 5 seconds, to ensure agents have time to advance and engage in 
+	# only after 10 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing. -CppCoder
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,5)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,10)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),

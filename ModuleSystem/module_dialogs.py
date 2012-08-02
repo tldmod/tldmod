@@ -8201,7 +8201,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(quest_set_slot, "qst_escort_merchant_caravan", slot_quest_current_state, 2),
 		(call_script, "script_finish_quest", "qst_escort_merchant_caravan", 100),
 		(assign, reg14, ":quest_gold_reward"),
-		(str_store_faction_name, s14, "$ambient_faction"),
+		#(str_store_faction_name, s14, "$ambient_faction"),
+		(store_faction_of_party, ":faction", "$g_encountered_party"),
+		(str_store_faction_name, s14, ":faction"),
 		(assign, "$g_leave_encounter", 1)]],
   
 [anyone, "start", [ (check_quest_active, "qst_escort_merchant_caravan"),

@@ -231,7 +231,7 @@ quests = [
 ( "treebeard_kill_orcs", "Defeat the tree-chopping orc party", qf_random_quest,
   "Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.",
   ),
-( "oath_of_vengeance", "Oath of Vengeance.", qf_random_quest,
+( "oath_of_vengeance", "Oath of Vengeance", qf_random_quest,
   "Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"
   ),
   

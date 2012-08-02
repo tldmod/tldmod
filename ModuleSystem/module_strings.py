@@ -2944,7 +2944,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 # END Traits
 
 # BEGIN Wound Strings
-# These are used for reporting injuries. :) -CppCoder
+# These are used for reporting injuries. :) -CC
 
 ("wound_head", "a_heavy_blow_to_the_head"),
 ("wound_chest", "some_cracked_ribs"),

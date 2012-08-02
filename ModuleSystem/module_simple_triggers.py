@@ -973,14 +973,22 @@ simple_triggers = [
 (14,[(eq, "$g_player_is_captive", 0),
     (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
     (assign, ":num_men", 0),
+    (assign, ":num_orcs", 0), # Use for anyone who eats human flesh
     (try_for_range, ":i_stack", 0, ":num_stacks"),
       (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
       (val_add, ":num_men", ":stack_size"),
 	  # GA: orcs eat twice as much, mean little bastards
       (party_stack_get_troop_id, reg1, "p_main_party",":i_stack"),
 	  (troop_get_type, reg1, reg1),
+	  (try_begin),
+	  	(eq|this_or_next, reg1, tf_orc),
+	  	(eq|this_or_next, reg1, tf_uruk),
+	  	(eq, reg1, tf_urukhai),		
+	  	(val_add, ":num_orcs", ":stack_size"),
+	  (try_end),
 	  (eq, reg1, tf_orc),
 	  (val_add, ":num_men", ":stack_size"),
+	
 	(try_end),
     (val_div, ":num_men", 3),
     (try_begin),
@@ -995,7 +1003,16 @@ simple_triggers = [
       (try_for_range, ":cur_food", food_begin, food_end),
         (item_set_slot, ":cur_food", slot_item_is_checked, 0),
         (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
-        (val_add, ":available_food", 1),
+	(try_begin),
+		# CC: If your party has human flesh, it only counts as food if orc(s) in party
+		# CC: e.g., no more cannibalism.
+		(eq, ":cur_food", "itm_human_meat"),
+		(gt, ":num_orcs", 0),
+        	(val_add, ":available_food", 1),
+	(else_try),
+		(neq, ":cur_food", "itm_human_meat"),
+        	(val_add, ":available_food", 1),
+	(try_end),
       (try_end),
       (try_begin),
         (gt, ":available_food", 0),
@@ -2208,7 +2225,7 @@ simple_triggers = [
             (else_try),
               (party_set_name, ":guard_party", "@Guard Legion of {s6}"),
             (try_end),
-	    # CppCoder bugfix: set the icons to properly match the party
+	    # CC bugfix: set the icons to properly match the party
 	    (try_begin),
 		(eq, ":faction", "fac_isengard"),
 	        (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
