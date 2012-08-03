@@ -3397,7 +3397,7 @@ game_menus = [
 	("cageit2",[ # capture a second troll as prisoner
 	   (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),
 	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),(eq, ":num_trolls", 1),
-	],"Cage it togheter with the other troll.",[
+	],"Cage it together with the other troll.",[
       (party_add_prisoners, "p_main_party", "trp_troll_of_moria", 1),
 	  (display_message,"@A second troll is caged in wheeled cage."),
       (jump_to_menu,"$g_next_menu")],
@@ -3420,6 +3420,8 @@ game_menus = [
   ],[
 	("back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
+	("night_bandits",[],"Deal With Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
+	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
     ]+[("mi",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   

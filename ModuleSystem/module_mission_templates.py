@@ -504,6 +504,11 @@ mission_templates = [ # not used in game
 		(try_end),
 		(agent_set_speed_limit,":agent_no",":speed_limit"),
 		#(agent_set_slot, ":agent_no", 1, 1),
+		# CC: Prevent trolls from spawning. Easiest fix IMO. 
+		(try_begin),
+			(agent_get_troop_id, reg16, ":agent_no"),(troop_get_type, ":race", reg16),(eq, ":race", tf_troll),
+			(call_script, "script_remove_agent", ":agent_no"),	
+		(try_end),
 	 (try_end),
   ]),
   
@@ -519,7 +524,19 @@ mission_templates = [ # not used in game
   (ti_tab_pressed          , 0, 0, [], [   #(ti_on_leave_area,0,0,[],[]),
 	(assign, "$talk_context", 0),
 	(call_script, "script_count_mission_casualties_from_agents"),
+
+	# Remove killed trolls (maybe others) from killed party.
+	(party_get_num_companion_stacks, ":num_stacks", "p_enemy_casualties"),
+	(try_for_range, ":index", 0, ":num_stacks"),
+        	(party_stack_get_troop_id, ":stack_troop",  "p_enemy_casualties", ":index"),
+		(troop_get_type, ":race", ":stack_troop"),
+		(eq, ":race", tf_troll),
+		(party_stack_get_size, ":stack_size","p_enemy_casualties",":index"),
+		(party_remove_members, "p_enemy_casualties", ":stack_troop", ":stack_size"),
+	(try_end),
+
 	(party_get_num_companions, reg20, "p_enemy_casualties"),
+
 	#(display_message, "@(killed {reg20} prisoners)!"),
 	(try_begin),
 		(gt, reg20, 0),

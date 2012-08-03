@@ -1941,16 +1941,16 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
 	  (party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 2)]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(troops_can_join, 1),],
 "Can a savage beast be made to obey commands?","lord_capture_troll_completed_two_trolls_thankyou_info",[]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(troops_can_join, 1),],
 "Thank you, Master. You will be pleased by the way this troll will be put in good use.","lord_capture_troll_completed_two_trolls_thankyou_accept",[]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(party_can_join),],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(troops_can_join, 1),],
 "Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.","lord_capture_troll_completed_two_trolls_thankyou_refuse",[]],
 
-[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(neg|party_can_join),],
+[anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(troops_can_join|neg, 1),],
 "Thank you, master. But I'm not worth of your great gift. [no room in party!]","lord_capture_troll_completed_two_trolls_thankyou_refuse",[]],
 
 [anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence)],
@@ -1960,7 +1960,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.","lord_capture_troll_completed_two_trolls_thankyou",[]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[],
-"Now bring havoc to my enemies with your new gift","lord_pretalk",[(party_add_members, "p_main_party", "trp_troll_of_moria", 1)]],
+"Now bring havoc to my enemies with your new gift","lord_pretalk", [(party_add_members, "p_main_party", "trp_troll_of_moria", 1),(troop_remove_item,"trp_player","itm_wheeled_cage")]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_refuse",[],
 "As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.","lord_pretalk",[]],
@@ -1968,6 +1968,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
 "You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",
 	[(party_add_members, "p_main_party", "trp_armoured_troll", 1),
+	 (troop_remove_item,"trp_player","itm_wheeled_cage"),
 	 (call_script, "script_spend_influence_of", 10, "$g_talk_troop_faction"),]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
@@ -1977,7 +1978,8 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!", "close_window",[
 	(call_script,"script_stand_back"),
 	(call_script, "script_finish_quest", "qst_capture_troll", 100),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+    	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+	(troop_remove_item,"trp_player","itm_wheeled_cage"),
 	(party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 1)]],
 	
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
@@ -4495,6 +4497,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_failed", [], "{s43}", "lord_pretalk",
    [(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_mission_failed_default"),
     (store_partner_quest,":lords_quest"),
+    (try_begin),(eq, ":lords_quest", "qst_capture_troll"),(troop_remove_item,"trp_player","itm_wheeled_cage"),(try_end),
     (call_script, "script_abort_quest", ":lords_quest", 1)]],
 #Post 0907 changes end
   
@@ -4539,8 +4542,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_capture_troll_accepted", [], 
 "I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.", "lord_pretalk",[
     (troop_add_item, "trp_player","itm_wheeled_cage",0),
+    # CC bugfix: Fill out capture wild troll quest text.
+    (str_store_troop_name_link,s9,"$g_talk_troop"),
+    (setup_quest_text,"$random_quest_no"),
+    (str_store_string, s2, "@{s9} asked you to bring back a savage troll for use in his army."),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-	(setup_quest_text,"$random_quest_no"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
    
@@ -4602,7 +4608,15 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 "Good.\
  Go there and shed some light on this matter. Then return to me and report.\
  I expect to see you back with news before {reg1} dawns are passed.", "lord_pretalk",
-   [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+   [
+    (try_begin),
+	# CC bugfix: Fill out fangorn quest text.
+	(eq, "$random_quest_no", "qst_investigate_fangorn"),
+        (str_store_troop_name_link,s9,"$g_talk_troop"),
+        (setup_quest_text, "qst_investigate_fangorn"),
+        (str_store_string, s2, "@{s9} asked you to find out what is going on in the Fangorn Forest, and to report back."),
+    (try_end),
+    (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
 # TLD mission: investigate fangorn (mtarini) -- end
@@ -7561,7 +7575,9 @@ It's an important matter, so please make haste.", "caravan_help1",[
     (call_script, "script_finish_quest", "qst_deal_with_night_bandits", 100)]],
 
 [anyone|plyr,"lord_deal_with_night_bandits_completed", [], "They had it coming.", "close_window",[(call_script,"script_stand_back"),]],
-    
+
+# TODO: Improve so the mayor accepts better metal scraps    
+
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
                               (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
                               (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
@@ -8428,6 +8444,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # prisoner talk
 #[anyone|plyr,"prisoner_chat_00", [], "Guards, bring me that one!", "prisoner_chat_2",[]],
 
+# CC bugfix: Trolls go rawr...
+[anyone,"prisoner_chat_00", [(store_conversation_troop,reg1),(troop_get_type, ":troll", reg1),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
+
 [anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
 [anyone|plyr,"prisoner_chat_3", [
@@ -8725,7 +8744,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ######################################
 # GENERIC MEMBER CHAT
 ######################################
-   
+
+# CC bugfix: Trolls go rawr...   
+[anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
+
 [anyone,"member_chat_00", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
 "Your orders, Commander?", "regular_member_talk",[]],
 

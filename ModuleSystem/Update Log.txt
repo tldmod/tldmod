@@ -1,5 +1,5 @@
 This file is just for me to keep track of new features / bug fixes 
-I made. -CppCoder
+I made. -CC
 
 New Features:
 
@@ -17,7 +17,8 @@ Bug Fixes:
 Heroes lost due to lack of resources can join party again.
 Oathbreaker Quest Fixed.
 Mearh Stallion sounds like a horse now.
-Various text errors / register errors.
+Various text errors / register errors fixed.
+Fangorn and Capture Troll quests have proper text.
 
 Planned Features:
 
@@ -29,6 +30,3 @@ Galadriel's Quest (Mirkwood Sorcerer)
 King Brand's Quest (Lost Spears)
 
 Planned Bugfixes:
-
-Battle casualty summary glitches w/ morale system. (might not be possible to fix)
-
