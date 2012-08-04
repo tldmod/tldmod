@@ -12832,7 +12832,13 @@ scripts = [
 	# copy items
 	(troop_clear_inventory, "trp_player"),
 	(troop_get_inventory_capacity, ":inv_cap", ":troop"),
-
+	
+	# CC: Maybe fix?
+	(set_show_messages, 0),
+ 	(try_for_range, ":item", 0, "itm_save_compartibility_item4"),
+           	(troop_remove_items, "trp_player", ":item", 1),
+	(try_end),
+	(set_show_messages, 1),
 
 	# option 1 add everything he has
     # (try_for_range, ":i_slot", 0, ":inv_cap"),
@@ -13933,6 +13939,8 @@ scripts = [
      (party_clear, "p_ally_casualties"),
      (assign, "$any_allies_at_the_last_battle", 0),
      (try_for_agents, ":cur_agent"),
+	# CC: prevents routed agents from showing up in battle summary.
+       (agent_slot_eq, ":cur_agent", slot_agent_routed, 0),
        (agent_is_human, ":cur_agent"),
        (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
 	   (neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end), # dont count riderless wargs
@@ -13947,6 +13955,7 @@ scripts = [
          (eq, ":agent_party", "p_main_party"),
          (party_add_members, "p_player_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_player_casualties", ":agent_troop_id", 1),
          (try_end),
@@ -13954,12 +13963,14 @@ scripts = [
          (agent_is_ally, ":cur_agent"),
          (party_add_members, "p_ally_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_ally_casualties", ":agent_troop_id", 1),
          (try_end),
        (else_try),
          (party_add_members, "p_enemy_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_enemy_casualties", ":agent_troop_id", 1),
          (try_end),

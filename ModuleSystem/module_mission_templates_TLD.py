@@ -8,7 +8,7 @@ from module_constants import *
 
 
 # Something I'm testing with. -CC
-tld_wargs_attack_horses = (0.1, 0, 0, [(gt, "$wargs_in_battle", 0)], 
+tld_wargs_attack_horses = (1, 0, 0, [(gt, "$wargs_in_battle", 0)], 
 			[
 				(try_for_agents, ":warg"),
 					(agent_is_human, ":warg"),
@@ -37,8 +37,10 @@ tld_wargs_attack_horses = (0.1, 0, 0, [(gt, "$wargs_in_battle", 0)],
 						(try_begin),
 							(get_player_agent_no, ":player"),
 							(eq, ":target", ":player"),
-							(lt, reg0, 10), # 10% chance
-							(display_message, "@Warg delivers {reg1} damage to mount."),
+							(lt, reg0, 15), # 10% chance
+							(agent_get_troop_id,":troop", ":warg"),
+							(str_store_troop_name, s1, ":troop"),
+							(display_message, "@{s1} delivers {reg1} damage to mount."),
 							(set_show_messages, 0),
 							(store_agent_hit_points, ":hp", ":horse", 1),
 							(val_sub, ":hp", reg1),
@@ -46,14 +48,11 @@ tld_wargs_attack_horses = (0.1, 0, 0, [(gt, "$wargs_in_battle", 0)],
 	   						(agent_deliver_damage_to_agent, ":warg", ":horse"),
 							(set_show_messages, 1),
 						(else_try),
-							(lt, reg0, 10), # 10% chance
+							(lt, reg0, 15), # 10% chance
 							(store_agent_hit_points, ":hp", ":horse", 1),
 							(val_sub, ":hp", reg1),
 	  	 					(agent_set_hit_points, ":horse", ":hp", 1),
 	   						(agent_deliver_damage_to_agent, ":warg", ":horse"),
-							#(try_begin),
-								#(agent_is_alive|neg, ":horse"),
-							#(try_end),
 							(assign, ":stop", 1),
 						(try_end),
 					(try_end),
@@ -61,7 +60,7 @@ tld_wargs_attack_horses = (0.1, 0, 0, [(gt, "$wargs_in_battle", 0)],
 			])
 
 
-# This trigger tracks horses for riders falling off horse.
+# This trigger tracks horses for riders falling off horse. -CC
 tld_track_riders = (0.1, 0, 0, [], 
 			[
 				(try_for_agents, ":cur_agent"),
@@ -72,7 +71,7 @@ tld_track_riders = (0.1, 0, 0, [],
 				(try_end),
 			])
 
-# This trigger damages agents that have fallen off their horse. :)
+# This trigger damages agents that have fallen off their horse. :) -CC
 tld_damage_fallen_riders = (0.1, 0, 0, [], 
 				[
 				(try_for_agents, ":mount"),
@@ -90,7 +89,7 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 			 				(get_player_agent_no, ":player_agent"),
 							(eq, ":rider", ":player_agent"),
 							(display_message, "@You fall off of your mount!", color_bad_news),
-							(display_message, "@Recieved {reg0} damage."),
+							(display_message, "@Recieved {reg0} damage.", 0xD5B7B7),
 						(try_end),					
 						(val_sub, ":hp", reg0),
 	  	 				(agent_set_hit_points, ":rider", ":hp", 1),
@@ -102,32 +101,32 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 	   						(agent_deliver_damage_to_agent, ":rider", ":rider"),
 							(agent_get_kill_count, ":agent_killed_1", ":rider"),
 							(set_show_messages, 1),
-							# MESSAGE BEGIN CALCULATION HERE
-							(agent_get_troop_id,":troop", ":rider"),
-							(str_store_troop_name, s1, ":troop"),
+							# MESSAGE CODE HERE; TODO: Proper color codes.
 							(try_begin),
 								(agent_is_alive|neg, ":rider"),
 								(agent_get_party_id, ":party_no", ":rider"),
-								(assign, ":color", 0x3DC598),
+								(agent_get_troop_id,":troop", ":rider"),
+								(str_store_troop_name, s1, ":troop"),
 								(try_begin),
 									(eq, ":party_no", "p_main_party"),
-									(assign, ":color", 0xCE9613),
+									(assign, ":color", 0xB48211),
 								(else_try),
 									(agent_is_ally|neg, ":rider"),
-									(assign, ":color", 0x3DC598),
+									(assign, ":color", 0x42D8A6),
 								(else_try),
-									(assign, ":color", 0xAA6AD2),
+									(assign, ":color", 0xB06EDA),
 								(try_end),
 								(display_message, "@{s1} fell unconscious.", ":color"),
 							(try_end),
-							# MESSAGE END CALCULATION HERE
+							# MESSAGE CODE END
 							(try_begin), # Clone the agent back into party if killed.
 								(gt, ":agent_killed_1", ":agent_killed"),
 								(agent_get_party_id, ":party_no", ":rider"),
 								(agent_get_troop_id,":troop", ":rider"),
 								(neg|troop_is_hero, ":troop"),	# Catch to prevent duplicate heroes.
+								(agent_set_slot, ":rider", slot_agent_wounded, 1),
 								(gt, ":party_no", -1),
-			        				(party_add_members, ":party_no", ":troop", 1),
+								(party_add_members, ":party_no", ":troop", 1),
 								(party_wound_members, ":party_no", ":troop", 1),
 							(try_end),
 						(else_try),
@@ -140,7 +139,7 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 				])
 
 
-# This trigger makes wounded agents move slower.
+# This trigger makes wounded agents move slower. -CC
 tld_slow_wounded  = (1, 0, 0, [],
 	[
 				(try_for_agents, ":cur_agent"),
@@ -187,7 +186,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 			
 			
 
-# This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
+# CC: This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
 tld_remove_galadriel = 	(0.1,0,0,
 			[(eq, "$current_town", "p_town_caras_galadhon")], 
 			[

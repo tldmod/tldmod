@@ -48,7 +48,7 @@ tld_morale_triggers = [
 		(try_begin),
 			(lt, ":times_rallied", ":max_rallies"),
 			(call_script, "script_troop_get_cheer_sound", "trp_player"),
-			(play_sound, "snd_evil_horn"),
+			#(play_sound, "snd_evil_horn"),
 			(agent_play_sound, ":player", reg1),
 			(display_message, "@You rally your troops!", color_good_news),
 			(val_add, ":times_rallied", 1),
@@ -254,7 +254,7 @@ tld_morale_triggers = [
         	(get_player_agent_kill_count,":more_kills",0),
         	(val_sub,":more_kills","$base_kills"),
 
-		# TODO: Find enemy leader(s) and calculate their morale boost. -CppCoder	
+		# TODO: CC: Find enemy leader(s) and calculate their morale boost.	
 
 		(try_begin),
             		(gt,":more_kills","$new_kills_a"),

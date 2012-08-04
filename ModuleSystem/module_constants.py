@@ -152,7 +152,8 @@ slot_agent_time_counter			= 18
 slot_agent_routed			= 19
 slot_agent_mount			= 20 
 slot_agent_rallied			= 21 # Commanders use this slot to remember they've rallied their troops.
-slot_agent_state			= 22 
+slot_agent_alive			= 22 
+slot_agent_wounded			= 23 
 
 # why not use duplicate slots for an agent that will never use it? -CC
 

@@ -1197,7 +1197,9 @@ game_menus = [
     (jump_to_menu,"mnu_choose_skill"),
   ]),
   ("spacer",[],"_",[]),
-  ("go_back"     ,[],"Go back",[(jump_to_menu,"$last_menu")]),    ]
+
+	# CC: troop_clear_inventory prevents player from recieving invalid items.
+  ("go_back"     ,[],"Go back",[(troop_clear_inventory, "trp_player"),(jump_to_menu,"$last_menu")]),    ]
  ),
 ( "choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
  "^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...","none",[
@@ -1576,7 +1578,11 @@ game_menus = [
 			(change_screen_mission)]),
 		("camp_troop"      ,[
 		    (party_get_num_companions,reg10,"p_main_party"),(val_sub,reg10,1),
-		    (party_get_num_prisoners,reg11,"p_main_party"),(this_or_next|gt,reg10,0),(gt,reg11,0),
+		    (party_get_num_prisoners,reg11,"p_main_party"),
+              	    (party_count_prisoners_of_type, ":troll_count", "p_main_party", "trp_troll_of_moria"),(val_sub,reg11,":troll_count"),
+              	    (party_count_prisoners_of_type, ":troll_count", "p_main_party", "trp_armoured_troll"),(val_sub,reg11,":troll_count"),
+              	    (party_count_prisoners_of_type, ":troll_count", "p_main_party", "trp_olog_hai"),(val_sub,reg11,":troll_count"),
+		    (this_or_next|gt,reg10,0),(gt,reg11,0),
 			(store_mul, reg12, reg10,reg11),
 		],"Review{reg10?_troops:}{reg12?_and:}{reg11?_prisoners:}."  ,[
 			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...

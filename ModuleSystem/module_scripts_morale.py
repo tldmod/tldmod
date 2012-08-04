@@ -464,7 +464,8 @@ morale_scripts = [
 			(display_message, "@{s1} has fled the battle!", ":news_color"),
 			(call_script, "script_remove_agent", ":agent_no"),
 		(else_try),
-			# If the troop is a not hero, add it to a temp party. -CC
+			# If the troop is not a hero and not a warg, add it to a temp party. -CC
+			(is_between|neg, ":troop_no", warg_ghost_begin, warg_ghost_end),
 			(try_begin),
 				(agent_is_ally, ":agent_no"),				
 				(agent_get_party_id, ":party_no", ":agent_no"),

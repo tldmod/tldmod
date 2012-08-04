@@ -41,14 +41,14 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_rider_test, 
-	#tld_wargs_attack_horses, # Just a thought, could be added in though.
+	#tld_wargs_attack_horses, # CC: Just a thought, could be added in though.
 	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
-	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); improved, but still WIP. -CC
+	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); CC: improved, but still WIP.
 	tld_player_cant_ride,
 	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,
@@ -504,8 +504,10 @@ mission_templates = [ # not used in game
 		(try_end),
 		(agent_set_speed_limit,":agent_no",":speed_limit"),
 		#(agent_set_slot, ":agent_no", 1, 1),
-		# CC: Prevent trolls from spawning. Easiest fix IMO. 
+		# CC: Prevent enemy trolls from spawning. Easiest fix IMO. 
 		(try_begin),
+			(agent_get_team, ":agent_team", ":agent_no"),
+			(neq, ":agent_team", 2),
 			(agent_get_troop_id, reg16, ":agent_no"),(troop_get_type, ":race", reg16),(eq, ":race", tf_troll),
 			(call_script, "script_remove_agent", ":agent_no"),	
 		(try_end),
@@ -701,6 +703,7 @@ mission_templates = [ # not used in game
 	common_battle_order_panel_tick,
 ]),
 
+# CC: Needs fixing... broken for Isengard, and Corsair Camp?
 ( "bandits_at_night",0,-1,
   "Default town visit",
     [(0,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #MV: player set to team 2

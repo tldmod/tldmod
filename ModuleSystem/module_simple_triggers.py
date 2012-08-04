@@ -274,7 +274,7 @@ simple_triggers = [
 	(eq|this_or_next, ":cur_party_template", "pt_routed_allies"),
 	(eq, ":cur_party_template", "pt_routed_enemies"),
 	(store_distance_to_party_from_party, ":routed_distance", "p_main_party", ":cur_party"),
-	(gt, ":routed_distance", 200),
+	(gt, ":routed_distance", 50),
         (remove_party, ":cur_party"),	
       (else_try), #unstick stuck parties
         (party_get_current_terrain, ":terrain_type", ":cur_party"),
