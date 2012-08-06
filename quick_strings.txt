@@ -1,4 +1,4 @@
-1025
+1026
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -515,6 +515,7 @@ qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
 qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
+qstr_{s1}_delivers_{reg1} {s1}_delivers_{reg1}_damage_to_mount.
 qstr_You_fall_off_of_your You_fall_off_of_your_mount!
 qstr_Recieved_{reg0}_dama Recieved_{reg0}_damage.
 qstr_{s1}_fell_unconsciou {s1}_fell_unconscious.

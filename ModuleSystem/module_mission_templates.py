@@ -41,7 +41,7 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_rider_test, 
-	#tld_wargs_attack_horses, # CC: Just a thought, could be added in though.
+	tld_wargs_attack_horses, # CC: Just a thought, could be added in though.
 	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
