@@ -276,6 +276,7 @@ scenes = [
 ("advcamp_good" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("advcamp_bad" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("isengard_underground" ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000640002800000691a400003efe00004b34000059be",[],[]),
+
 #forest scenes for using in rnd
 ("forest_fangorn1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("forest_fangorn2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),

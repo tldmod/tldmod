@@ -1,3 +1,23 @@
+TLD 3.2 changes:
+- CppCoder:
+  - Party Limit Option in camp->TLD options->Gameplay Tweaks->Compatibility tweaks
+  - Starting equipment bug fixed.
+  - Battle Morale System.
+  - Riders falling off horses recieve damage.
+  - Wounded agents move slower.
+  - Trolls no longer appear as prisoners in review troops.
+  - Trolls no longer speak in party/prisoner dialog.
+  - Oathbreaker/keeper quest fixed.
+  - Fangorn and Capture Troll quest have text now.
+  - Mearh Stallion no longer roars like a warg.
+  - Nazgul Sweeps ingame. (Attack a mordor war party to see them).
+  - Injury Summary in Character Reports.
+  - Companions tell you their exact injuries.
+  - Companions lost due to lack of RPs can rejoin you again.
+  - Many other small bug fixes.
+- vota dc:
+  - More item/troop balancing. (I think?)
+
 TLD 3.15 changes:
 - Octoburn: added unused dwarven helmets to Dale
 - Strategy tweaks (a submenu under Actions->TLD mod options)

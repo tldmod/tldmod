@@ -51,10 +51,13 @@ morale_scripts = [
 			(eq, ":faction", "fac_dale"),
 			(assign, ":icon", icon_generic_knight),
 		(else_try),
-			(eq|this_or_next, ":faction", "fac_harad"),
-			(eq|this_or_next, ":faction", "fac_rhun"),
+			(eq, ":faction", "fac_harad"),
+			(assign, ":icon", icon_harad_horseman),
+		(else_try),
+			(eq, ":faction", "fac_rhun"),
+			(assign, ":icon", icon_easterling_horseman),
+		(else_try),
 			(eq, ":faction", "fac_khand"),
-			(assign, ":icon", icon_cataphract),
 			(assign, ":icon", icon_cataphract),
 		(else_try),
 			(eq, ":faction", "fac_umbar"),
@@ -294,6 +297,12 @@ morale_scripts = [
 		# Tier morale
 		(call_script, "script_cf_agent_get_tier_morale", ":agent_no"),
 		(val_sub, reg1, reg0),
+
+		# Ents never rout / flee.
+		(try_begin),
+			(eq, ":troop_type", "trp_ent"),
+			(assign, reg1, -100),
+		(try_end),
 	]),
 
 	# script_cf_spawn_routed_parties
@@ -304,6 +313,7 @@ morale_scripts = [
 		# Clear the parties if the morale option has been turned off.
 		(try_begin),
 			(eq, "$tld_option_morale", 0),
+			(party_clear, "p_routed_troops"),
 			(party_clear, "p_routed_allies"),
 			(party_clear, "p_routed_enemies"),
 		(try_end),
@@ -462,6 +472,7 @@ morale_scripts = [
 				(assign, ":news_color", color_bad_news),
 			(try_end),
 			(display_message, "@{s1} has fled the battle!", ":news_color"),
+			(agent_set_slot, ":agent_no", slot_agent_routed, 2),
 			(call_script, "script_remove_agent", ":agent_no"),
 		(else_try),
 			# If the troop is not a hero and not a warg, add it to a temp party. -CC
@@ -471,6 +482,7 @@ morale_scripts = [
 				(agent_get_party_id, ":party_no", ":agent_no"),
 				(agent_get_kill_count, ":agent_killed", ":agent_no"),
 				(agent_get_kill_count, ":agent_wounded", ":agent_no", 1),
+				(agent_set_slot, ":agent_no", slot_agent_routed, 2),
 				(call_script, "script_remove_agent", ":agent_no"),
 				(agent_get_kill_count, ":agent_killed_2", ":agent_no"),
 				(agent_get_kill_count, ":agent_wounded_2", ":agent_no", 1),
@@ -503,6 +515,7 @@ morale_scripts = [
 					(party_wound_members, "p_routed_enemies", ":troop_no", 1),
 				(try_end),
 				(call_script, "script_remove_agent", ":agent_no"),
+				(agent_set_slot, ":agent_no", slot_agent_routed, 2),
 				(assign, "$g_spawn_enemies_routed", 1),
 			(try_end),
 		(try_end),

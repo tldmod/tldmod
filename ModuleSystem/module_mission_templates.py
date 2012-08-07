@@ -703,12 +703,11 @@ mission_templates = [ # not used in game
 	common_battle_order_panel_tick,
 ]),
 
-# CC: Needs fixing... broken for Isengard, and Corsair Camp?
 ( "bandits_at_night",0,-1,
   "Default town visit",
     [(0,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #MV: player set to team 2
-     (1,mtef_scene_source|mtef_team_2,0,0,1,[]),
-     (2,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
+     (1,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #CC: this and next entry fixes bugs somehow. :)
+     (2,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]),
      (3,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
      (4,mtef_visitor_source|mtef_team_0,af_override_horse, aif_start_alarmed, 1, []),
      (5,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
@@ -732,6 +731,8 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
+	(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # CC: These are what cause the "unable to finish" bugs.
+	(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"), 
       ]),
       common_inventory_not_available,
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
@@ -809,17 +810,41 @@ mission_templates = [ # not used in game
 ]),
 ( "fangorn_battle",0,-1, # battle against random ents (mtarini)
     "You lead your men to battle Ents!",
-    [(1,mtef_defenders|mtef_team_0,0,0,0,[]),(0,mtef_defenders|mtef_team_0,0,0,0,[]), # not used
-	 (4,mtef_attackers|mtef_team_1,0,0,1,[]), (4,mtef_attackers|mtef_team_1,0,0,12,[]), # troops
-	 #(1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),(0,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
-     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
-     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
-     (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
+    [	
+	(0,mtef_defenders|mtef_team_0,0,0,0,[]),
+	(1,mtef_defenders|mtef_team_0,0,0,0,[]),
+
+	(4,mtef_attackers|mtef_team_1,0,0,1,[]), 
+	(4,mtef_attackers|mtef_team_1,0,0,12,[]), # troops
+
+     	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
+     	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
+     	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
     ],
 	
-
 	tld_common_battle_scripts+[   
-	common_battle_tab_press,
+	
+	# CC: Fixes fangorn retreat bug.
+	(ti_tab_pressed, 0, 0, [],
+	[
+		(try_begin),
+			(eq, "$battle_won", 1),
+			(call_script, "script_count_mission_casualties_from_agents"),
+			(finish_mission,0),
+		(else_try), #MV added this section
+			(main_hero_fallen),
+			(assign, "$pin_player_fallen", 1),
+			(str_store_string, s5, "str_retreat"),
+			(call_script, "script_simulate_retreat", 10, 20),
+			(assign, "$g_battle_result", -1),
+			(set_mission_result,-1),
+			(call_script, "script_count_mission_casualties_from_agents"),
+			(finish_mission,0),
+		(else_try),
+			(display_message,"str_can_not_retreat"),
+		(try_end),
+	]),
+
 	common_inventory_not_available, 
 	common_music_situation_update,
 	common_battle_check_friendly_kills,
@@ -827,21 +852,22 @@ mission_templates = [ # not used in game
 	common_battle_victory_display,
 	common_battle_order_panel,
 	common_battle_order_panel_tick,
-	
+
 	#  make ent spawn at random
-    (ti_on_agent_spawn, 0, 0, [],[
-     (store_trigger_param_1, ":agent"),
-	 (agent_get_troop_id, ":trp", ":agent"), 
-	 (eq, ":trp", "trp_ent"), # a ent is spawned!
-	 
-	 (mission_cam_get_position, pos11), 
-	 # spawn it at random pos
-	 (try_for_range, ":unused", 0, 50),
-	     (call_script, "script_store_random_scene_position_in_pos10" ),
-		 (position_is_behind_position, pos10, pos11), # ent appear always out of view >:-)
-		 (assign, ":unused", 50), # ends for loop
-	 (end_try),
-	 (agent_set_position, ":agent", pos10),
+	(ti_on_agent_spawn, 0, 0, [],
+	[
+     		(store_trigger_param_1, ":agent"),
+	 	(agent_get_troop_id, ":trp", ":agent"), 
+
+	 	(eq, ":trp", "trp_ent"), # a ent is spawned!
+	 	(mission_cam_get_position, pos11), 
+	 	# spawn it at random pos
+	 	(try_for_range, ":unused", 0, 50),
+	     		(call_script, "script_store_random_scene_position_in_pos10" ),
+		 	(position_is_behind_position, pos10, pos11), # ent appear always out of view >:-)
+		 	(assign, ":unused", 50), # ends for loop
+	 	(end_try),
+		(agent_set_position, ":agent", pos10),
 	]),
 
 	# initial conditions: 1 or 2 ents

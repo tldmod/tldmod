@@ -24,19 +24,21 @@ tld_morale_triggers = [
     	]),
 
 	# Rally your troops, five second wait inbetween. -CC
-     	(0, 0, 5, [(eq, "$tld_option_morale", 1),(key_clicked, key_v)], 
+     	(0, 0, 5, [(eq, "$tld_option_morale", 1),(get_player_agent_no, ":player"),(agent_is_alive, ":player"),(key_clicked, key_v)], 
 	[
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
 		(lt, ":ally", -40),
-		(get_player_agent_no, ":player"),	
+		(get_player_agent_no, ":player"),
+	
 		(assign, ":max_rallies", 1),
 		(agent_get_slot, ":times_rallied", ":player", slot_agent_rallied),
 		(store_attribute_level, ":cha", "trp_player", ca_charisma),
 		(store_div, ":normal_rallies", ":cha", 5),
 		(val_add, ":max_rallies", ":normal_rallies"),
 		(try_begin),
+			(player_has_item|this_or_next, "itm_angmar_whip_reward"),
 			(player_has_item, "itm_horn_gondor_reward"),
 			(store_skill_level,":horn_rallies","skl_leadership","trp_player"),
 			(val_div, ":horn_rallies", 3),
@@ -101,6 +103,7 @@ tld_morale_triggers = [
 				(agent_get_slot, ":times_rallied", ":agent", slot_agent_rallied),
 				(store_attribute_level, ":cha", ":troop", ca_charisma),
 				(store_div, ":max_rallies", ":cha", 5),
+				(val_add, ":max_rallies", 1),
 				(try_begin),
 					(call_script, "script_count_enemy_agents_around_agent", ":agent", 300), # AI won't rally if surrounded. The 
 					(le, reg0, 0),								# animation makes him vulnerable. -CC
@@ -110,9 +113,10 @@ tld_morale_triggers = [
 					(lt, ":die_roll", ":chance"), # lil' bit of personality in AI commanders
 					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
 					(str_store_troop_name, s1, ":troop"),
-					(assign, reg0, ":chance"),
-					(assign, reg1, ":die_roll"),
-					(assign, reg2, ":times_rallied"),
+					#(assign, reg0, ":chance"),
+					#(assign, reg1, ":die_roll"),
+					#(assign, reg2, ":times_rallied"),
+					(str_store_troop_name, s1, ":troop"),
 					(display_message, "@{s1} rallies his troops!", color_good_news),
 					(val_add, ":times_rallied", 1),
 					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
@@ -133,6 +137,8 @@ tld_morale_triggers = [
 						(call_script, "script_cf_agent_get_leader_troop", ":cur_agent"),
 						(eq, ":troop", reg0),
 						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
+						(agent_set_slot, ":cur_agent", slot_agent_routed, 0),
+						(agent_clear_scripted_mode, ":cur_agent"),
 					(try_end),
 				(try_end),
 			(try_end),
@@ -152,6 +158,7 @@ tld_morale_triggers = [
 				(agent_get_slot, ":times_rallied", ":agent", slot_agent_rallied),
 				(store_attribute_level, ":cha", ":troop", ca_charisma),
 				(store_div, ":max_rallies", ":cha", 5),
+				(val_add, ":max_rallies", 1),
 				(try_begin),
 					(call_script, "script_count_enemy_agents_around_agent", ":agent", 300), # AI won't rally if surrounded. The 
 					(le, reg0, 0),								# animation makes him vulnerable. -CC
@@ -160,10 +167,10 @@ tld_morale_triggers = [
 					(store_sub, ":chance", 80, ":rally_penalty"),
 					(lt, ":die_roll", ":chance"), # lil' bit of personality in AI commanders
 					(lt, ":times_rallied", ":max_rallies"), # ":max_rallies"
-					(str_store_troop_name, s1, ":troop"),
 					(assign, reg0, ":chance"),
 					(assign, reg1, ":die_roll"),
 					(assign, reg2, ":times_rallied"),
+					(str_store_troop_name, s1, ":troop"),
 					(display_message, "@{s1} rallies his troops!", color_bad_news),
 					(val_add, ":times_rallied", 1),
 					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
@@ -184,6 +191,8 @@ tld_morale_triggers = [
 						(call_script, "script_cf_agent_get_leader_troop", ":cur_agent"),
 						(eq, ":troop", reg0),
 						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
+						(agent_set_slot, ":cur_agent", slot_agent_routed, 0),
+						(agent_clear_scripted_mode, ":cur_agent"),
 					(try_end),
 				(try_end),
 			(try_end),
@@ -218,9 +227,9 @@ tld_morale_triggers = [
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 10 seconds, to ensure agents have time to advance and engage in 
+	# only after 15 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing. -CppCoder
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,10)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,15)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),

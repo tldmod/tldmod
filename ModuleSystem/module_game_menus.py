@@ -1198,7 +1198,6 @@ game_menus = [
   ]),
   ("spacer",[],"_",[]),
 
-	# CC: troop_clear_inventory prevents player from recieving invalid items.
   ("go_back"     ,[],"Go back",[(troop_clear_inventory, "trp_player"),(jump_to_menu,"$last_menu")]),    ]
  ),
 ( "choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
@@ -3000,14 +2999,14 @@ game_menus = [
 
 		"Maximum number of parties: {s1}",
 		[
-			(val_add, "$tld_option_max_parties", 50),
+			(val_add, "$tld_option_max_parties", 25), # CC: was 50
 			(try_begin),
 				(gt, "$tld_option_max_parties", 900),
 				(assign, "$tld_option_max_parties", 600),
 			(try_end),
 		]),
 
-    		("game_options_compat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+    		("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
 	]
 ),
 
@@ -3060,7 +3059,7 @@ game_menus = [
           (assign, "$tld_option_regen_limit", 500),
         (try_end),]), #500/1000/1500/2000
 
-    ("strat_tweaks_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")]),
+    ("strat_tweaks_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
  ]),
 
  
@@ -3310,20 +3309,19 @@ game_menus = [
 	    (lt,":chance",60),
 		(call_script,"script_fangorn_fight_ents"),
 		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),       
-
 		#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
 		(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
-        (set_jump_mission,"mt_fangorn_battle"),
-        (jump_to_scene,":scene_to_use" ),
+        	(set_jump_mission,"mt_fangorn_battle"),
+        	(jump_to_scene,":scene_to_use" ),
         
 		(set_battle_advantage, 0),
-        (assign, "$g_battle_result", 0),
-        (assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),		
-        (jump_to_menu, "mnu_battle_debrief"),
-        (assign, "$g_mt_mode", vba_normal),
+        	(assign, "$g_battle_result", 0),
+        	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),		
+        	(jump_to_menu, "mnu_battle_debrief"),
+        	(assign, "$g_mt_mode", vba_normal),
 		(assign, "$cant_leave_encounter", 1),
-        (change_screen_mission),
+        	(change_screen_mission),
 
 	(else_try),
 		(val_add,"$g_fangorn_rope_pulled", 30), 
@@ -5405,9 +5403,9 @@ game_menus = [
 	  ("moria_exit_scene",[], "Find your way out!",[
 			(modify_visitors_at_site,"scn_moria_deep_mines"),
 			(reset_visitors),
-            (set_visitor,0,"trp_player"),
+            		(set_visitor,0,"trp_player"),
 			(set_jump_mission,"mt_dungeon_crawl_moria_deep"),
-            (jump_to_scene, "scn_moria_deep_mines"),
+            		(jump_to_scene, "scn_moria_deep_mines"),
 			(jump_to_menu, "mnu_auto_return_to_map"),
             (change_screen_mission),
 	  ]),
@@ -8003,7 +8001,7 @@ game_menus = [
 ("mutiny",0,"{s1}","none",
    [(try_begin),
 		(eq,"$mutiny_stage",5), # fight lost
-		(str_store_string, s1, "@^^^You lost your fight agains the mutinee! ^Seems like your orcs have a new commander now."),
+		(str_store_string, s1, "@^^^You lost your fight against the mutiny! ^Seems like your orcs have a new commander now."),
 		(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
 		(try_for_range, ":stack_no", 0, ":num_stacks"), # remove all orcs
 			(party_stack_get_troop_id, ":stack_troop", "p_main_party" ,":stack_no"),
@@ -8056,7 +8054,7 @@ game_menus = [
 		# (set_jump_mission, "mt_arena_challenge_fight"),
 		# (jump_to_scene, "scn_duel_scene"),
 		# (change_screen_mission)]),
-	("leave",[(neq, "$party_meeting", 0)],"Leave.",[(change_screen_map)])]
+	("leave",[],"Leave.",[(change_screen_map)])]
  ),
 
 # ("taunt",0,

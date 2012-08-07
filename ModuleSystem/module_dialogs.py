@@ -8805,10 +8805,6 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"disband_regular_member_insist", [ ], "I know, but my duty brings me to different battles.^I will soon leave.", "close_window",[(call_script,"script_stand_back"),]],
 
-
-#TLD: faction specific non-lord party encounter dialogs for friends and enemies
-# (note: depends on lord dialogs coming before this; also bandits are not handled here)
-
 #Routed party dialogs.
 [anyone, "start", [
 			(eq, "$talk_context", tc_party_encounter),
@@ -8850,6 +8846,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                   	(eq, "$g_encountered_party_template", "pt_routed_allies"),
 		 ], 
 		"Not yet, soldier.", "close_window", [(assign, "$g_leave_encounter",1)] ],
+
+
+#TLD: faction specific non-lord party encounter dialogs for friends and enemies
+# (note: depends on lord dialogs coming before this; also bandits are not handled here)
 
 #Friendly faction party: they don't trust you (rank 0 with them)
 [anyone,"start", 

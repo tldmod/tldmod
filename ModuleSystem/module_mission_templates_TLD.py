@@ -1636,6 +1636,11 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 		(try_for_agents,":troll"),									# horse rearing near troll
 			#(agent_is_alive, ":troll"), #GA: horses hate dead trolls too
 			(agent_get_troop_id,reg0,":troll"),
+			(try_begin), # CC: Change string if it is an ent and not a troll			
+				(assign, reg5, 0),
+				(eq, reg0, "trp_ent"),
+				(assign, reg5, 1),
+			(try_end),
 			(troop_get_type, reg0, reg0),
 			(try_begin),
 				(eq, reg0, tf_troll),
@@ -1660,7 +1665,7 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 					(try_begin),
                         (eq, ":rider", ":player_agent"),
                         (is_between, reg0, 0, 3),
-                        (display_message, "@Your mount is scared by the troll!",color_bad_news),
+                        (display_message, "@Your mount is scared by the {reg5?ent:troll}!",color_bad_news),
 					(try_end),
 				(try_end),
 			(try_end),
