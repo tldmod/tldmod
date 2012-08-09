@@ -225,6 +225,11 @@ game_menus = [
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
+
+# 	CC: placeholder, should we want to implement this.
+#	("custom_battle_choose" ,[],"____________Build your own battle____________.",
+#		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
+
 	]+concatenate_scripts([[
 	("custom_battle_scenario_11",[],"____________Test Battles (Tune Balancing!)________.",
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
@@ -978,7 +983,12 @@ game_menus = [
        (str_store_string, s1, "str_battle_lost"),
      (try_end),
 	],
-    [("continue",[],"Continue.",[(try_begin),(eq,"$g_custom_battle_scenario",26),(jump_to_menu, "mnu_quick_battle_general_test"),(else_try),(change_screen_quit),(try_end)]),]
+
+	# CC: Ease not for only testing but for playing as well.
+    	[
+		("replay",[],"Play this battle again.",[(assign, "$battle_won", 0),(jump_to_menu, "mnu_custom_battle_2")]),
+    		("continue",[],"Continue.",[(try_begin),(eq,"$g_custom_battle_scenario",26),(jump_to_menu, "mnu_quick_battle_general_test"),(else_try),(change_screen_quit),(try_end)]),
+   	]
  ),
 
 ######################################
@@ -4006,7 +4016,7 @@ game_menus = [
                   # (try_end),
               # (try_end),
 #Troop commentary changes end
-		# This is here so when you flee it checks for routed parties -CC
+		# This is here so when you flee/leave it checks for routed parties -CC
 		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
           	(leave_encounter),(change_screen_return)]),
 			
@@ -4104,7 +4114,7 @@ game_menus = [
           (try_end),
 ###Troop commentary changes end  
 		# This is here so when you flee it checks for routed parties -CC
-		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
+	  (try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
           (leave_encounter),(change_screen_return)]),
     ]
  ),
@@ -4452,6 +4462,7 @@ game_menus = [
 		(else_try),
             		(change_screen_return),
 		(try_end),
+		(try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),  
 	]),
 	],
  ),

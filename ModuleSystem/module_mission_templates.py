@@ -841,7 +841,7 @@ mission_templates = [ # not used in game
 			(call_script, "script_count_mission_casualties_from_agents"),
 			(finish_mission,0),
 		(else_try),
-			(display_message,"str_can_not_retreat"),
+			(display_message, "@Cannot leave now."),
 		(try_end),
 	]),
 

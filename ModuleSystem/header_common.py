@@ -6,7 +6,7 @@
 
 ##### COMPILER SWITCHES
 wb_compile_switch = 0
-#cheat_switch = 0
+cheat_switch = 0
 #####
 
 bignum = 0x40000000000000000000000000000000

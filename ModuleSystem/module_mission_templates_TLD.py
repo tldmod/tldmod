@@ -8,7 +8,7 @@ from module_constants import *
 
 
 # Something I'm testing with. -CC
-tld_wargs_attack_horses = (1, 0, 0, [(gt, "$wargs_in_battle", 0)], 
+tld_wargs_attack_horses = (2, 0, 0, [(gt, "$wargs_in_battle", 0)], 
 			[
 				(try_for_agents, ":warg"),
 					(agent_is_human, ":warg"),
@@ -37,7 +37,7 @@ tld_wargs_attack_horses = (1, 0, 0, [(gt, "$wargs_in_battle", 0)],
 						(try_begin),
 							(get_player_agent_no, ":player"),
 							(eq, ":target", ":player"),
-							(lt, reg0, 15), # 10% chance
+							(lt, reg0, 15), # 15% chance
 							(agent_get_troop_id,":troop", ":warg"),
 							(str_store_troop_name, s1, ":troop"),
 							(display_message, "@{s1} delivers {reg1} damage to mount."),
@@ -48,7 +48,7 @@ tld_wargs_attack_horses = (1, 0, 0, [(gt, "$wargs_in_battle", 0)],
 	   						(agent_deliver_damage_to_agent, ":warg", ":horse"),
 							(set_show_messages, 1),
 						(else_try),
-							(lt, reg0, 15), # 10% chance
+							(lt, reg0, 15), # 15% chance
 							(store_agent_hit_points, ":hp", ":horse", 1),
 							(val_sub, ":hp", reg1),
 	  	 					(agent_set_hit_points, ":horse", ":hp", 1),
@@ -101,7 +101,6 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 	   						(agent_deliver_damage_to_agent, ":rider", ":rider"),
 							(agent_get_kill_count, ":agent_killed_1", ":rider"),
 							(set_show_messages, 1),
-							# MESSAGE CODE HERE; TODO: Proper color codes.
 							(try_begin),
 								(agent_is_alive|neg, ":rider"),
 								(agent_get_party_id, ":party_no", ":rider"),
@@ -109,12 +108,12 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 								(str_store_troop_name, s1, ":troop"),
 								(try_begin),
 									(eq, ":party_no", "p_main_party"),
-									(assign, ":color", 0xB48211),
+									(assign, ":color", 0xB48211), # Gold colored msg
 								(else_try),
 									(agent_is_ally|neg, ":rider"),
-									(assign, ":color", 0x42D8A6),
+									(assign, ":color", 0x42D8A6), # teal-green colored msg
 								(else_try),
-									(assign, ":color", 0xB06EDA),
+									(assign, ":color", 0xB06EDA), # Lt. Purple colored msg
 								(try_end),
 								(display_message, "@{s1} fell unconscious.", ":color"),
 							(try_end),
