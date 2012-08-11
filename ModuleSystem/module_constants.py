@@ -812,6 +812,8 @@ slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
 slot_troop_flags       = 134 # the original flags defined for troops, including item guarantees (mtarini)
 
+slot_troop_routed 	= 0 # tracks how many of a troop have been routed.
+
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
 
@@ -839,6 +841,7 @@ slot_trait_battle_scarred    = 21
 slot_trait_fell_beast        = 22
 slot_trait_first             = slot_trait_elf_friend
 slot_trait_last              = slot_trait_fell_beast
+
 
 ########################################################
 ##  QUEST SLOTS            #############################
@@ -2102,3 +2105,10 @@ agent_morale_state_normal		  	= 0
 agent_morale_state_disciplined		  	= 1
 agent_morale_state_fanatic		  	= 5
 
+# Party count option in tweaks menu
+
+tld_party_count_option_increment	= 25
+tld_party_count_option_max		= 1000
+tld_party_count_option_min		= 600
+tld_party_count_option_high_crash	= 901
+tld_party_count_option_med_crash	= 850

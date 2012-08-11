@@ -1016,9 +1016,9 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(call_script, "script_check_agent_armor"), # check for berserker trait
 	(set_rain, 0,100), #switch off vanilla rain and snow
 
-	# TODO: Maybe add a chance that if the player is playing as a mordor orc, a nazgul may come to his aid? -CC
+	# CC: Maybe we could add a chance that if the player is playing as a mordor orc, a nazgul may come to his aid?
 
-	# Fixed the broken system. It was checking *parties* against *party templates*, plus some other bugs. -CC
+	# CC: Fixed the broken system. It was checking *parties* against *party templates*, plus some other bugs.
 	(try_begin),
 		(party_get_template_id, ":p_template_1", "$g_encountered_party"),
 		(assign, ":p_template_2", -1),

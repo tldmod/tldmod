@@ -3000,7 +3000,10 @@ game_menus = [
 		[
 			(assign, reg0, "$tld_option_max_parties"),
 			(try_begin),
-				(ge, "$tld_option_max_parties", 850),
+				(ge, "$tld_option_max_parties", tld_party_count_option_high_crash),
+				(str_store_string, s1, "@{reg0} (will most likely cause save crashes)"),
+			(else_try),
+				(ge, "$tld_option_max_parties", tld_party_count_option_med_crash),
 				(str_store_string, s1, "@{reg0} (could possibly cause save crashes)"),
 			(else_try),
 				(str_store_string, s1, "@{reg0}"),
@@ -3009,10 +3012,10 @@ game_menus = [
 
 		"Maximum number of parties: {s1}",
 		[
-			(val_add, "$tld_option_max_parties", 25), # CC: was 50
+			(val_add, "$tld_option_max_parties", tld_party_count_option_increment),
 			(try_begin),
-				(gt, "$tld_option_max_parties", 900),
-				(assign, "$tld_option_max_parties", 600),
+				(gt, "$tld_option_max_parties", tld_party_count_option_max),
+				(assign, "$tld_option_max_parties", tld_party_count_option_min),
 			(try_end),
 		]),
 
@@ -4473,6 +4476,11 @@ game_menus = [
     [   # We exploit the menu condition system below.
         # The conditions should make sure that always another screen or menu is called.
         (assign, ":done", 0),
+
+	(try_begin),
+		(ge, "$battle_won", 0), # CC: Battle was won, or was neutral
+		(call_script, "script_cf_spawn_routed_parties"), 
+	(try_end),  
 					  
 		(assign, ":ambient_faction_backup", "$ambient_faction"), #TLD
         

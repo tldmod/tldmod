@@ -19,6 +19,12 @@ tld_morale_triggers = [
         	(get_player_agent_kill_count,"$base_kills",0),
         	(assign,"$new_kills_a",0),
 		(assign,"$new_kills",0),
+		(try_begin),
+			# Display the morale values once.
+			(eq, "$tld_option_morale", 1),
+			(call_script, "script_coherence"),    
+			(call_script, "script_healthbars"),
+		(try_end),
         	#(assign,"$new_enemy_kills_a",0),
 		#(assign,"$new_enemy_kills",0),
     	]),

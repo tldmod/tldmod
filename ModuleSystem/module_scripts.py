@@ -3376,12 +3376,6 @@ scripts = [
 		(neq, ":check", 0),
 		(val_sub, ":modifier_value", 1),
 	  (try_end),
-	# Wound treatment removed, the branch here bypassed the garlic
-	# and herbarium skill bonuses. -CppCoder
-	  # (eq, ":troop_no", "trp_player"), # player only uses brew
-	  # (call_script, "script_get_troop_item_amount", ":troop_no", "itm_orc_brew"),
-	  # (gt, reg0, 0),
-      # (val_add, ":modifier_value", 1),	
 	(else_try), #Riding
   	  (eq, ":skill_no", "skl_riding"),
 	  (try_begin),
@@ -3395,7 +3389,7 @@ scripts = [
         (val_sub, ":modifier_value", 1),
 	  (try_end),
 	  (try_begin),
-	    #dwarf MEANS no riding skils (mtarini) and no mounted archery
+	    #dwarf MEANS no riding skills (mtarini) and no mounted archery
 		(troop_get_type, ":race", ":troop_no"),
 		(eq, ":race", tf_dwarf),
 		(assign, ":modifier_value", -10),
@@ -4574,7 +4568,7 @@ scripts = [
 ]),
 
 #script_print_casualties_to_s0:
-# INPUT: param1: Party_id, param2: 0 = use new line, 1 = use comma
+# INPUT: param1: Party_id, param2: 0 = use new line, 1 = use comma, 2 = party of routed troops
 #OUTPUT: string register 0.
 ("print_casualties_to_s0",
     [(store_script_param, ":party_no", 1),
@@ -12492,21 +12486,32 @@ scripts = [
 # script_update_order_panel_statistics_and_map
 ("update_order_panel_statistics_and_map", #TODO: Call this in every battle mission template, once per second
    [(set_fixed_point_multiplier, 1000),
+
     (assign, ":num_us_ready_infantry", 0),
     (assign, ":num_us_ready_archers", 0),
     (assign, ":num_us_ready_cavalry", 0),
+
     (assign, ":num_us_wounded_infantry", 0),
     (assign, ":num_us_wounded_archers", 0),
     (assign, ":num_us_wounded_cavalry", 0),
+
     (assign, ":num_us_dead_infantry", 0),
     (assign, ":num_us_dead_archers", 0),
     (assign, ":num_us_dead_cavalry", 0),
+
     (assign, ":num_allies_ready_men", 0),
     (assign, ":num_allies_wounded_men", 0),
     (assign, ":num_allies_dead_men", 0),
+
     (assign, ":num_enemies_ready_men", 0),
     (assign, ":num_enemies_wounded_men", 0),
     (assign, ":num_enemies_dead_men", 0),
+
+# CC: Modified code.
+    (assign, ":num_us_routed_men", 0),
+    (assign, ":num_allies_routed_men", 0),
+    (assign, ":num_enemies_routed_men", 0),
+# CC: Modified code ends here.
 
     (get_player_agent_no, ":player_agent"),
     (agent_get_team, ":player_team", ":player_agent"),
@@ -12530,6 +12535,25 @@ scripts = [
     (get_scene_boundaries, pos2, pos3),
 
     (try_for_agents,":cur_agent"),
+
+# CC: Modified to prevent routed enemies from showing as dead, wounded, or alive, and to count the routed troops.
+      (try_begin),
+		(eq, "$tld_option_morale", 1),
+      		(agent_slot_eq, ":cur_agent", slot_agent_routed, 2),
+      		(agent_get_party_id, ":agent_party", ":cur_agent"),
+      		(try_begin),
+        		(eq, ":agent_party", "p_main_party"),
+			(val_add, ":num_us_routed_men", 1),
+		(else_try),
+			(agent_is_ally, ":cur_agent"),
+			(val_add, ":num_allies_routed_men", 1),
+		(else_try),
+			(val_add, ":num_enemies_routed_men", 1),
+		(try_end),
+      (try_end),
+      (agent_slot_eq|neg, ":cur_agent", slot_agent_routed, 2), 
+# CC: Modified code ends here.
+
       (agent_is_human, ":cur_agent"),
       (agent_get_class, ":agent_class", ":cur_agent"),
       (agent_get_party_id, ":agent_party", ":cur_agent"),
@@ -12614,6 +12638,16 @@ scripts = [
     (overlay_set_text, "$g_battle_enemies_wounded", "@{reg11}"),
     (overlay_set_text, "$g_battle_enemies_dead", "@{reg12}"),
 
+    (try_begin),
+	(eq, "$tld_option_morale", 1),
+    	(assign, reg12, ":num_us_routed_men"),
+    	(overlay_set_text, "$g_presentation_obj_31", "@{reg12}"),
+    	(assign, reg12, ":num_allies_routed_men"),
+    	(overlay_set_text, "$g_presentation_obj_32", "@{reg12}"),
+    	(assign, reg12, ":num_enemies_routed_men"),
+    	(overlay_set_text, "$g_presentation_obj_33", "@{reg12}"),
+    (try_end),
+
     (assign, ":stat_position_x", 100),
     (assign, ":stat_position_y", 100),
     (val_add, ":stat_position_x", 150),
@@ -12627,6 +12661,13 @@ scripts = [
     (val_add, ":stat_position_x", 150),
     (position_set_x, pos1, ":stat_position_x"),
     (overlay_set_position, "$g_battle_us_dead", pos1),
+    (try_begin),
+	(eq, "$tld_option_morale", 1),
+    	(val_add, ":stat_position_x", 150),
+    	(position_set_x, pos1, ":stat_position_x"),
+    	(overlay_set_position, "$g_presentation_obj_31", pos1),
+    	(val_add, ":stat_position_x", -150),
+    (try_end),
     (val_add, ":stat_position_x", -300),
     (val_add, ":stat_position_y", -40),
     (position_set_x, pos1, ":stat_position_x"),
@@ -12638,6 +12679,13 @@ scripts = [
     (val_add, ":stat_position_x", 150),
     (position_set_x, pos1, ":stat_position_x"),
     (overlay_set_position, "$g_battle_allies_dead", pos1),
+    (try_begin),
+	(eq, "$tld_option_morale", 1),
+    	(val_add, ":stat_position_x", 150),
+    	(position_set_x, pos1, ":stat_position_x"),
+    	(overlay_set_position, "$g_presentation_obj_32", pos1),
+    	(val_add, ":stat_position_x", -150),
+    (try_end),
     (val_add, ":stat_position_x", -300),
     (val_add, ":stat_position_y", -40),
     (position_set_x, pos1, ":stat_position_x"),
@@ -12649,6 +12697,13 @@ scripts = [
     (val_add, ":stat_position_x", 150),
     (position_set_x, pos1, ":stat_position_x"),
     (overlay_set_position, "$g_battle_enemies_dead", pos1),
+    (try_begin),
+	(eq, "$tld_option_morale", 1),
+    	(val_add, ":stat_position_x", 150),
+    	(position_set_x, pos1, ":stat_position_x"),
+    	(overlay_set_position, "$g_presentation_obj_33", pos1),
+    	(val_add, ":stat_position_x", -150),
+    (try_end),
 
     (call_script, "script_update_order_flags_on_map"),
 
@@ -13951,8 +14006,11 @@ scripts = [
      (party_clear, "p_ally_casualties"),
      (assign, "$any_allies_at_the_last_battle", 0),
      (try_for_agents, ":cur_agent"),
-	# CC: prevents routed agents from showing up in battle summary.
+
+	# CC: code modified to ignore routed agents.
        (agent_slot_eq|neg, ":cur_agent", slot_agent_routed, 2),
+	# CC: code end.
+
        (agent_is_human, ":cur_agent"),
        (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
 	   (neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end), # dont count riderless wargs

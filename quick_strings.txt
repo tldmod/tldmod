@@ -1,4 +1,4 @@
-1026
+1030
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -20,11 +20,12 @@ qstr_Use_Blunt_Weapons Use_Blunt_Weapons
 qstr_Hold_Your_Fire Hold_Your_Fire
 qstr_Fire_At_Will Fire_At_Will
 qstr_Us Us
+qstr_Allies Allies
 qstr_Enemies Enemies
 qstr_Ready Ready
 qstr_Wounded Wounded
 qstr_Dead Dead
-qstr_Allies Allies
+qstr_Routed Routed
 qstr_Number_of_men_knocke Number_of_men_knocked_down:_{reg1}
 qstr_Number_of_men_left:_ Number_of_men_left:_{reg1}
 qstr_Opponents_Beaten:_{r Opponents_Beaten:_{reg1}
@@ -493,6 +494,8 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_DEBUG:_Routed_Troops DEBUG:_Routed_Troops:_{reg10},_Routed_Allies:_{reg11},_Routed_Enemies:_{reg12}
+qstr_DEBUG:_Spawn_Allies: DEBUG:_Spawn_Allies:_{reg10},_Spawn_Enemies:_{reg11}
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
@@ -658,6 +661,7 @@ qstr_{s10}_besieged! {s10}_besieged!
 qstr_ON ON
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_OFF OFF
+qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
 qstr_Normal Normal
 qstr_Defender_only Defender_only

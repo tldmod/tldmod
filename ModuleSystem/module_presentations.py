@@ -1340,6 +1340,7 @@ presentations = [
         (overlay_set_position, "$g_presentation_obj_29", pos1),
 
         (create_text_overlay, "$g_presentation_obj_22", "@Us", 0),
+        (create_text_overlay, "$g_presentation_obj_23", "@Allies", 0),
         (create_text_overlay, "$g_presentation_obj_24", "@Enemies", 0),
         (create_text_overlay, "$g_presentation_obj_25", "@Ready", tf_center_justify),
         (create_text_overlay, "$g_presentation_obj_26", "@Wounded", tf_center_justify),
@@ -1348,14 +1349,25 @@ presentations = [
         (create_text_overlay, "$g_battle_us_ready", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_us_wounded", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_us_dead", s7, tf_center_justify),
+
         (create_text_overlay, "$g_battle_enemies_ready", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_enemies_wounded", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_enemies_dead", s7, tf_center_justify),
 
-        (create_text_overlay, "$g_presentation_obj_23", "@Allies", 0),
         (create_text_overlay, "$g_battle_allies_ready", s7, tf_center_justify),
-        (create_text_overlay, "$g_battle_allies_wounded", s7, tf_center_justify),
+        (create_text_overlay, "$g_battle_allies_wounded",s7, tf_center_justify),
         (create_text_overlay, "$g_battle_allies_dead", s7, tf_center_justify),
+
+	# CC: Code modified for routing report.
+        (str_clear, s7),
+	(try_begin),
+		(eq, "$tld_option_morale", 1),
+        	(create_text_overlay, "$g_presentation_obj_30", "@Routed", tf_center_justify),
+        	(create_text_overlay, "$g_presentation_obj_31", s7, tf_center_justify),
+        	(create_text_overlay, "$g_presentation_obj_32", s7, tf_center_justify),
+        	(create_text_overlay, "$g_presentation_obj_33", s7, tf_center_justify),
+	(try_end),
+	# CC: Modified end.
 
         (assign, ":stat_position_x", 100),
         (assign, ":stat_position_y", 100),
@@ -1372,7 +1384,17 @@ presentations = [
         (position_set_x, pos1, ":stat_position_x"),
         (overlay_set_position, "$g_presentation_obj_27", pos1),
 
-        (val_add, ":stat_position_x", -450),
+	# CC: Code modified for routing report.
+	(try_begin),
+		(eq, "$tld_option_morale", 1),
+        	(val_add, ":stat_position_x", 150),
+        	(position_set_x, pos1, ":stat_position_x"),
+       		(overlay_set_position, "$g_presentation_obj_30", pos1),
+        	(val_add, ":stat_position_x", -150),
+	(try_end),
+	# CC: Modified end.
+
+	(val_add, ":stat_position_x", -450),
         (val_add, ":stat_position_y", -40),
         (position_set_x, pos1, ":stat_position_x"),
         (position_set_y, pos1, ":stat_position_y"),

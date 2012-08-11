@@ -8805,13 +8805,18 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"disband_regular_member_insist", [ ], "I know, but my duty brings me to different battles.^I will soon leave.", "close_window",[(call_script,"script_stand_back"),]],
 
-#Routed party dialogs.
+# BEGIN ROUTED DIALOGS
+
 [anyone, "start", [
 			(eq, "$talk_context", tc_party_encounter),
                   	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+			(troop_get_type, ":race", "$g_talk_troop"),
+			(neq, ":race", tf_troll),
 			(assign, reg1, 0),
 			(try_begin),
-				(faction_slot_eq|neg, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+				(faction_slot_eq|this_or_next, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+				(eq|this_or_next, ":race", tf_evil_man),
+				(eq, ":race", tf_harad),			
 				(assign, reg1, 1),
 			(try_end),
 		  ], 
@@ -8828,7 +8833,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 				(str_store_string, s1, "@the white hand"),
 			(else_try),
 				(eq, "$g_encountered_party_faction", "fac_mordor"),
-				(str_store_string, s1, "@the lidless eye"),
+				(str_store_string, s1, "@the lidless eye"),	
 			(try_end),
 		 ], 
 		"Yes, together we shall fight for {s1} once again.", "close_window", 
@@ -8847,6 +8852,37 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		 ], 
 		"Not yet, soldier.", "close_window", [(assign, "$g_leave_encounter",1)] ],
 
+# Trolls only, sort of a placeholder.
+
+[anyone, "start", [
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+			(troop_get_type, ":race", "$g_talk_troop"),
+			(eq, ":race", tf_troll),
+		  ], 
+		"^^GROWL!^^", "routed_allies_talk_troll", [] ],
+
+[anyone|plyr, "routed_allies_talk_troll", 
+		[
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+		 ], 
+		"[Have them join you again]", "close_window", 
+		[
+			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
+			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
+			(remove_party, "$g_encountered_party"),
+			(assign, "$g_leave_encounter",1)
+		] ],
+
+[anyone|plyr, "routed_allies_talk_troll", 
+		[
+			(eq, "$talk_context", tc_party_encounter),
+                  	(eq, "$g_encountered_party_template", "pt_routed_allies"),
+		 ], 
+		"[Move On]", "close_window", [(assign, "$g_leave_encounter",1)] ],
+
+# END ROUTED DIALOGS
 
 #TLD: faction specific non-lord party encounter dialogs for friends and enemies
 # (note: depends on lord dialogs coming before this; also bandits are not handled here)
