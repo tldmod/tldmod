@@ -4129,6 +4129,41 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
+# TLD - mirkwood sorcerer quest finish (GA, fixed by CC) -- begin.
+
+[anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
+                       			(eq,":lords_quest","qst_mirkwood_sorcerer"),
+                       			(check_quest_succeeded, "qst_mirkwood_sorcerer")],
+"The sorcerer of Mirkwood has been slain, my Lady.", "lord_mission_sorcerer_completed",[]],
+
+# CC: Need someone to improve this dialog below...
+[anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
+                       			(eq,":lords_quest","qst_mirkwood_sorcerer"),
+                       			(check_quest_failed, "qst_mirkwood_sorcerer"),
+					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0),],
+"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer.", "lord_mission_sorcerer_failed",[]], 
+
+[anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
+                       			(eq,":lords_quest","qst_mirkwood_sorcerer"),
+                       			(check_quest_failed, "qst_mirkwood_sorcerer"),
+					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,3),],
+"The sorcerer of Mirkwood still lives. We interrupted his rituals but he has fled.", "lord_mission_sorcerer_failed",[]],
+
+[anyone,"lord_mission_sorcerer_completed", [], "Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for your people and as such you are entitled to a gift. Take this...", "lord_pretalk",
+[
+	(call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 100),
+	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
+	(call_script, "script_cf_gain_trait_elf_friend")
+]],
+
+[anyone,"lord_mission_sorcerer_failed", [], "Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. It is unfortunate that you could not stop him. No doubt he will take additional precautions in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. Thank you for your efforts but leave me now. I grow tired.", "lord_pretalk",
+[
+	(call_script,"script_stand_back"),
+	(call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 20),
+]],
+
+# TLD - mirkwood sorcerer quest finish (GA, fixed by CC) -- end.
+
 [anyone,"lord_active_mission_1", [(store_partner_quest,":lords_quest"),
                                     (eq,":lords_quest","qst_lend_companion"),
                                     #(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
@@ -4489,9 +4524,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ##
 ##### TODO: QUESTS COMMENT OUT END
 [anyone|plyr,"lord_active_mission_2", [], "I am still working on it.", "lord_active_mission_3",[]],
-[anyone|plyr,"lord_active_mission_2", [], "I am afraid I won't be able to do this quest.", "lord_mission_failed",[]],
+[anyone|plyr,"lord_active_mission_2", [(store_partner_quest,":lords_quest"),(neq, ":lords_quest", "qst_mirkwood_sorcerer")], "I am afraid I won't be able to do this quest.", "lord_mission_failed",[]],
 [anyone,"lord_active_mission_3", [], "Good. Remember, I am counting on you.", "lord_pretalk",[]],
-
 
 #Post 0907 changes begin
 [anyone,"lord_mission_failed", [], "{s43}", "lord_pretalk",
@@ -4649,7 +4683,35 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
     (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
+
 #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
+
+# TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- begin
+
+[anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_mirkwood_sorcerer")], "There is an important service you can deliver to our people, {playername}.", "lord_mission_mirkwood_sorcerer", []],
+[anyone, "lord_mission_mirkwood_sorcerer", [], "My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!", "lord_mission_mirkwood_sorcerer_0", []],
+
+[anyone|plyr, "lord_mission_mirkwood_sorcerer_0", [], "Where can I find the sorcerer, my Lady?", "lord_mission_mirkwood_sorcerer_1", []],
+
+[anyone, "lord_mission_mirkwood_sorcerer_1", [], "Search for him in Mirkwood forest, not far from Dol Guldur itself. He is both a well guarded and a cautious foe so you will need to use stealth to prevent the alarm from being raised. If he escapes, he will relocate to other dark places that we know not of and continue his wickedness unchallenged. There will be only one opportunity to defeat him. Much depends on your success. Go with our blessings.", "lord_mission_mirkwood_sorcerer_2", []],
+
+[anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "As you command, my Lady. I will try my best to eliminate this evil.", "lord_pretalk", 
+[
+	(setup_quest_text,"qst_mirkwood_sorcerer"),
+        (str_store_troop_name_link,s9,"$g_talk_troop"),
+	(str_store_string, s2, "@{s9} has asked you to slay the Dol Guldur sorcerer in Mirkwood."),
+	(call_script, "script_start_quest", "qst_mirkwood_sorcerer", "$g_talk_troop"),	
+	(quest_set_slot, "qst_mirkwood_sorcerer", slot_quest_current_state, 0),
+	(quest_set_slot, "qst_mirkwood_sorcerer", slot_quest_dont_give_again_period, 10000), # can get it only once
+	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+	(enable_party, "p_ancient_ruins"),
+]
+],
+[anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected", []],
+
+[anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[]], 
+
+# TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- end
 
 #TLD mission: nowy quest (Kolba) -- begin
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
@@ -7702,39 +7764,6 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone,"mayor_looters_quest_destroyed_2", [], "Anything else you need?", "mayor_looters_quest_response",[]],
 
-	# MIRKWOOD SORCERER QUEST START
-[trp_elder_cgaladhon|plyr, "mayor_begin",[
-	  (store_partner_quest,":lords_quest"),
-	  (eq,":lords_quest","qst_mirkwood_sorcerer"),
-	  (check_quest_succeeded, "qst_mirkwood_sorcerer")],
-#	  (quest_slot_eq, "$random_quest_no", slot_quest_progress, 2),
-"The_sorcerer_of_Mirkwood_has_been_slain, my Lady.", "lord_mission_sorcerer_completed",[]],
-	
-[trp_elder_cgaladhon,"lord_mission_sorcerer_completed", [],
-"Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. \
-You have performed a great service for your people and as such you are entitled to a gift. Take this.... ", "lord_generic_mission_completed",[
-	  (call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 100),
-	  (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
-      (call_script, "script_cf_gain_trait_elf_friend"),]],
-	  #(assign, "$galadriel_power", 100)]],
-
-[trp_elder_cgaladhon|plyr, "mayor_begin",[
-	  (store_partner_quest,":lords_quest"),
-	  (eq,":lords_quest","qst_mirkwood_sorcerer"),
-	  (check_quest_failed, "qst_mirkwood_sorcerer")],
-#	  (quest_slot_eq, "$random_quest_no", slot_quest_progress, 3),
-"The_sorcerer_of_Mirkwood_still_lives._We_interrupted_his_rituals_but_he_has_fled.", "lord_mission_sorcerer_failed",[]],
-	 
-[trp_elder_cgaladhon,"lord_mission_sorcerer_failed", [],
-"Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. \
-It is unfortunate that you could not stop him. No doubt he will take additional precautions \
-in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. \
-Thank you for your efforts but leave me now. I grow tired.", "close_window",[
-		(call_script,"script_stand_back"),
-	  (call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 20)]], 
-      #(assign, "$galadriel_power", 20)]],	
-	# MIRKWOOD SORCERER QUEST END
-
 
   #[anyone,"mayor_looters_quest_goods", [
       # (quest_get_slot,reg1,"qst_deal_with_looters",slot_quest_target_item),
@@ -7937,45 +7966,6 @@ Thank you for your efforts but leave me now. I grow tired.", "close_window",[
 ###################################################################3
 # Random Merchant quests....
 ##############################
-
-  # TLD mission: mirkwood sorcerer (GA) -- begin 
-#[trp_elder_cgaladhon, "start", [(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0)], 
-#"There is an important service you can deliver to our people, Commander", "lord_mission_mirkwood_sorcerer0",[]],
-#[trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer0", [], "Woot!?", "lord_tell_mission_sorcerer",[]],
-# remove upper 2 & make lower follow "lord_tell_mission"
-[trp_elder_cgaladhon,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_mirkwood_sorcerer")],
-"Yes {playername}, I have an important task for you. \
-My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. \
-A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. \
-Though he is a mortal, he has become one of the enemies greatest pupils \
-in the use of arcane rituals and he represents a great threat to our people. \
-You must hunt him down and destroy him!", 
-"lord_mission_mirkwood_sorcerer",[]],
-  
-[trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer", [], "Where can I find the sorcerer, my Lady?", "lord_mission_mirkwood_sorcerer_2",[]],
-
-[trp_elder_cgaladhon, "lord_mission_mirkwood_sorcerer_2", [], 
-"Search for him in Mirkwood forest, not far from Dol Guldur itself. \
-He is both a well guarded and a cautious foe so you will need to use stealth \
-to prevent the alarm from being raised. \
-If he escapes, he will relocate to other dark places that we know not of \
-and continue his wickedness unchallenged. There will be only one opportunity to defeat him. \
-Much depends on your success. Go with our blessings." ,"lord_mission_mirkwood_sorcerer_3",[]],
-
-[trp_elder_cgaladhon|plyr, "lord_mission_mirkwood_sorcerer_3", [], 
-"As you command, my Lady. I will try my best to eliminate this evil.", "lord_pretalk",[
-	(setup_quest_text,"qst_mirkwood_sorcerer"),
-    (str_store_string, s2, "@Lady Galadriel has asked you to slay the Dol Guldur sorcerer in Mirkwood."),
-    (call_script, "script_start_quest", "qst_mirkwood_sorcerer", "$g_talk_troop"),
-	(quest_set_slot, "qst_mirkwood_sorcerer", slot_quest_dont_give_again_period, 10000), # can get it only once
-	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
-	(enable_party, "p_ancient_ruins"),
-	(assign, "$g_leave_encounter",1)]],
-
-[trp_elder_cgaladhon|plyr,"lord_mission_mirkwood_sorcerer_3", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected",[]],
-[trp_elder_cgaladhon,"lord_mission_mirkwood_sorcerer_rejected", [], 
-"I understand, Commander. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[]], 
-  # TLD mission: mirkwood sorcerer (GA) -- end
 	
 # Ryan BEGIN
   # deal with looters

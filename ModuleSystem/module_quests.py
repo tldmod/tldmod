@@ -102,7 +102,7 @@ quests = [
 ("kill_troll", "Dispatch raging Troll", qf_random_quest,
    "{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts."
   ),
-("mirkwood_sorcerer", "Slay_a_sorcerer_in_Mirkwood.", qf_random_quest,
+("mirkwood_sorcerer", "Slay a sorcerer in Mirkwood", qf_random_quest,
   "Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him."
   ),
 ("find_lost_spears", "Find the lost spears of king Bladorthin", qf_random_quest,

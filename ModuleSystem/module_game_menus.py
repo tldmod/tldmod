@@ -3437,7 +3437,7 @@ game_menus = [
   ],[
 	("back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("night_bandits",[],"Deal With Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
+	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
     ]+[("mi",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
@@ -7718,7 +7718,7 @@ game_menus = [
 						(call_script, "script_initialize_sorcerer_quest"),
 						(assign, "$rescue_stage", 0),
 	(assign, "$active_rescue", 5),
-    (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+        (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
 	(disable_party, "p_ancient_ruins"),
 	(call_script, "script_set_meta_stealth"),
 	(call_script, "script_crunch_stealth_results"),
@@ -7735,7 +7735,7 @@ game_menus = [
 		(display_message, "@You_have_found_the_sorcerer!"),
 	(try_end),
 						(change_screen_mission)]),
-    ("next_rescue_scene", [], "_",  
+    ("next_rescue_scene", [(eq, 1, 0)], "_",  
 						[(call_script, "script_store_hero_death"),
 						 (call_script, "script_set_meta_stealth"),
 						 (call_script, "script_crunch_stealth_results"),
@@ -7760,7 +7760,7 @@ game_menus = [
 							(display_message, "@You_have_found_the_sorcerer!"),
 							(display_message, "@Kill_him_quickly_before_he_escapes!"),
 						(try_end)],"Continue_onward!"),
-		("pick_troops1", [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)], "Pick companions for the mission, {reg0}  selected",
+		("pick_troops1", [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)], "Pick companions for the mission, {reg0} selected",
 							[(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
 							(try_for_range, ":slot", 0, 40),
 								(troop_set_slot,"trp_temp_array_a",":slot",0), # clear eligible troops array

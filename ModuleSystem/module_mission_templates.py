@@ -2418,7 +2418,17 @@ mission_templates = [ # not used in game
 						  (call_script, "script_infiltration_mission_set_hit_points"),
 						  (call_script, "script_wounded_hero_cap_mission_health")]),
 	(2,0,0, [], [(call_script, "script_infiltration_mission_update_companion_casualties")]),
-	(1,4,ti_once,[(main_hero_fallen)],[(call_script, "script_infiltration_mission_update_companion_casualties"),(set_mission_result, -1),(finish_mission)]),
+	(1,4,ti_once,[(main_hero_fallen)],
+	[
+		(display_message, "@The_sorcerer_has_fled!", 4294901760),
+		(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
+		(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+		(call_script, "script_fail_quest","qst_mirkwood_sorcerer"),
+		(call_script, "script_infiltration_mission_update_companion_casualties"),
+		(set_mission_result, -1),
+		(finish_mission),
+	]),
+
 	(5,0, ti_once, [
 		  (try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
@@ -2486,7 +2496,7 @@ mission_templates = [ # not used in game
 				(display_message, "@The_sorcerer_has_fled!", 4294901760),
 				(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
 				(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
-				(fail_quest,"qst_mirkwood_sorcerer"),
+				(call_script, "script_fail_quest","qst_mirkwood_sorcerer"),
 				(agent_set_slot, ":agent", 1, 4),
 				(set_mission_result, -1),
 				(finish_mission),
@@ -2501,7 +2511,7 @@ mission_templates = [ # not used in game
 			(eq, ":troop", "trp_black_numenorean_sorcerer"),
 			(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
 			(display_message, "@The_sorcerer_is_dead!", 4294967040),
-			(succeed_quest,"qst_mirkwood_sorcerer"),
+			(call_script, "script_succeed_quest","qst_mirkwood_sorcerer"),
 			(eq,"$rescue_stage",1), #dummy usage of global var
 		#    (scene_prop_get_instance, ":local1", [opmask_scene_prop]528, 0),
 		#    (prop_instance_get_position, pos1, ":local1"),

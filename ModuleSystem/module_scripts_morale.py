@@ -178,7 +178,7 @@ morale_scripts = [
 			(gt, reg0, -1),
 			(store_skill_level,":leader","skl_leadership",reg0),
 		(try_end),
-		(val_div,":troop_level",10), # CC: was 10, changed for balance.
+		(val_div,":troop_level",10),
          	(val_div,":hitpoints",6), # CC: was 3, changed for balance.
          	(assign,reg1,100),
          	(val_sub,reg1,":hitpoints"),
@@ -292,17 +292,20 @@ morale_scripts = [
 		
 		# Rallied agents are 20% less likely to flee.
 		(try_begin),
-			(agent_slot_eq,":agent_no",slot_agent_rallied, 1),
+			(agent_slot_eq, ":agent_no", slot_agent_rallied, 1),
 			(val_sub, reg1, 20),
 		(try_end),
 
 		# Tier morale
 		(call_script, "script_cf_agent_get_tier_morale", ":agent_no"),
 		(val_sub, reg1, reg0),
-
 		
-		(try_begin), # Ents don't flee.
-			(eq, ":troop_type", "trp_ent"),
+		(try_begin), # Ents and spies don't flee.
+			(eq|this_or_next, ":troop_type", "trp_ent"),
+			(eq|this_or_next, ":troop_type", "trp_spy"),
+			(eq|this_or_next, ":troop_type", "trp_spy_evil"),
+			(eq|this_or_next, ":troop_type", "trp_spy_partner"),
+			(eq, ":troop_type", "trp_spy_partner_evil"),
 			(assign, reg1, -100),
 		(else_try), # Wargs more likely to flee
 			(is_between, ":troop_type", warg_ghost_begin, warg_ghost_end),
@@ -314,7 +317,7 @@ morale_scripts = [
 				(store_agent_hit_points,":hitpoints",":horse_no",0),
 				(val_sub, reg1, ":hitpoints"),
 			(try_end),
-		(else_try), #Troll parties never flee
+		(else_try), #Troll and quest parties never flee
 			(agent_get_party_id, ":party_no", ":agent_no"),
 			(party_get_template_id, ":template", ":party_no"),
 			(eq|this_or_next, ":template", "pt_wild_troll"),
@@ -338,16 +341,16 @@ morale_scripts = [
 			(assign, "$g_spawn_enemies_routed", 0),
 		(try_end),
 
-		(try_begin),
-			(neq, 0, cheat_switch),
-			(party_get_num_companions, reg10, "p_routed_troops"),
-			(party_get_num_companions, reg11, "p_routed_allies"),
-			(party_get_num_companions, reg12, "p_routed_enemies"),
-			(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
-			(assign, reg10, "$g_spawn_allies_routed"),
-			(assign, reg11, "$g_spawn_enemies_routed"),
-			(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
-		(try_end),
+		#(try_begin),
+		#	(neq, 0, cheat_switch),
+		#	(party_get_num_companions, reg10, "p_routed_troops"),
+		#	(party_get_num_companions, reg11, "p_routed_allies"),
+		#	(party_get_num_companions, reg12, "p_routed_enemies"),
+		#	(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
+		#	(assign, reg10, "$g_spawn_allies_routed"),
+		#	(assign, reg11, "$g_spawn_enemies_routed"),
+		#	(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
+		#(try_end),
 
 		# Clear the parties if the total count is greater/equal to than the maximum.
 		(try_begin),
@@ -369,15 +372,15 @@ morale_scripts = [
 		(try_begin),
 			(party_get_num_companions, ":size_plyr", "p_routed_troops"),
 			(party_get_num_companions, ":size_ally", "p_routed_allies"),
-			(le, ":size_ally", 3), 
-			(le, ":size_plyr", 3),
+			(lt, ":size_ally", 3), 
+			(lt, ":size_plyr", 3),
 			(party_clear, "p_routed_troops"),
 			(party_clear, "p_routed_allies"),
 			(assign, "$g_spawn_allies_routed", 0),
 		(try_end),
 		(try_begin),
 			(party_get_num_companions, ":size_enemy", "p_routed_enemies"),
-			(le, ":size_enemy", 6),
+			(lt, ":size_enemy", 6),
 			(party_clear, "p_routed_enemies"),
 			(assign, "$g_spawn_enemies_routed", 0),
 		(try_end),

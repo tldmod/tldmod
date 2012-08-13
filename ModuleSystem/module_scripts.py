@@ -5708,7 +5708,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
- (eq, 1, 0), #Disabled: not finished
+ 			(eq, 1, cheat_switch), #Enabled only with cheats
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
@@ -10551,7 +10551,7 @@ scripts = [
         (call_script, "script_objectionable_action", tmt_honest, "str_fail_quest"),
       (try_end),
 #NPC companion changes end
-      (call_script, "script_end_quest", ":quest_no"),
+	(call_script, "script_end_quest", ":quest_no"),
 ]),
 
 # script_cf_is_quest_troop
