@@ -1,5 +1,5 @@
 scenesfile version 1
- 256
+ 258
 scn_random_scene random_scene 1792 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1021,6 +1021,14 @@ scn_old_forest_road old_forest_road 256 none none 0.000000 0.000000 100.000000 1
   0 
  outer_terrain_forest 
 scn_great_east_road great_east_road 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_underground_warehouse underground_warehouse 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x00000007300005000004a92a00000f768000576c00001d2c 
+  0 
+  1  832 
+ 0 
+scn_amath_dollen_fortress amath_dollen_fortress 768 none none 0.000000 0.000000 90.000000 90.000000 -0.500000 0x000000025c602800000691a400003efe00004b34000059be 
   0 
   0 
  outer_terrain_flat 

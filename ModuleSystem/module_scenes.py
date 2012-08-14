@@ -343,5 +343,10 @@ scenes = [
 ("old_forest_road"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("great_east_road"  ,sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
 
+#CC: Scenes for lost spears quest (based on moria)
+
+("underground_warehouse",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
+("amath_dollen_fortress",sf_generate|sf_randomize,"none","none",(0,0),(90,90),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
+
 ]
 

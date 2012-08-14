@@ -146,7 +146,7 @@ items =[
 ["variag_kataphrakt","Easterling_Warhorse",[("easterling_warhorse01",0)],itp_type_horse|itp_shop,0,2000,hit_points(135)|body_armor(46)|difficulty(4)|horse_speed(36)|horse_maneuver(34)|horse_charge(35),imodbits_horse_basic|imodbits_horse_basic,[]],
 #########WARGS#########
 
-#first farg in list: warg_1b (see in module_constants)
+#first warg in list: warg_1b (see in module_constants)
 ["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg,[]],
 ["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg,[]],
 ["warg_1d","Warg",[("warg_1D",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(33)|horse_maneuver(64)|horse_charge(45),imodbits_horse_basic|imodbits_warg,[]],
@@ -1179,7 +1179,7 @@ items =[
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 ["whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 #BANNERS 
-# DO NOT CHANGE ORDER, THESE NEED TO BE IN ORDER FOR MORALE SCRIPTS TO WORK. -CC
+# DO NOT CHANGE ORDER, THESE NEED TO BE IN ORDER FOR MORALE SCRIPTS TO WORK. -CC ##
 ["mordor_banner","Mordor_Banner",[("banner_mordor",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
 ["isengard_banner","Isengard_banner",[("banner_isengard",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
 ["woodelf_banner","Mirkwood_Banner",[("banner_mirkwood",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(100)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(35,pierce),imodbits_weapon_good],

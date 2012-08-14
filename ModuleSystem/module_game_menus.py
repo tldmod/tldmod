@@ -6909,9 +6909,9 @@ game_menus = [
       ("dungeon_enter",[(eq, cheat_switch, 1), # not done yet
 	    (party_slot_eq,"$current_town",slot_party_type, spt_town),
         (eq, "$current_town", "p_town_erebor"),
-        (eq,"$dungeon_access",1),
-        ],"Enter the cellars.",[
-              (modify_visitors_at_site,"scn_erebor_dungeon_01"),(reset_visitors),
+        (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
+        ],"Search for the lost spears inside the mountains.",[
+              (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      (reset_visitors),
               (set_visitor,1,"trp_player"),
               (set_visitor, 2, "trp_goblin_gundabad"),
               (set_visitor, 3, "trp_fell_orc_warrior_gundabad"),

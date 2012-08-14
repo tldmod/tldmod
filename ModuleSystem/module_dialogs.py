@@ -238,9 +238,9 @@ dialogs = [
 [trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "Fall back in line, maggot! We are at war and I'm your commander.", "mutiny_pretalk_2",[]],
 [trp_orc_pretender, "mutiny_pretalk_2", [], "As you wish, commander. As you wish...", "close_window",[(assign,"$mutiny_stage",1),(jump_to_menu, "mnu_premutiny")]],
 
-[trp_orc_pretender, "start", [(eq,"$mutiny_stage",2)], "Hey, commander. We tell you what.. Lads here are not happy, not happy at all. ^Not enough manflesh, not enough fun. ^Lads here talk you not good enough, commander!", "mutiny_talk_1",[]],
+[trp_orc_pretender, "start", [(eq,"$mutiny_stage",2)], "Hey, commander. We tell you what... Lads here are not happy, not happy at all. ^Not enough manflesh, not enough fun. ^Lads here talk you not good enough, commander!", "mutiny_talk_1",[]],
 [trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? ^This is punishable by death, maggot!", "mutiny_talk_2",[]],
-[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what.. ^Lads here think I be better commander for them when I KILL YOU!", "close_window",[
+[trp_orc_pretender, "mutiny_talk_2", [], "We tell you what... ^Lads here think I be better commander for them when I KILL YOU!", "close_window",[
 	(assign,"$mutiny_stage",3),
     (jump_to_menu, "mnu_mutiny")]],
 
@@ -510,7 +510,7 @@ dialogs = [
 # "You'll have nothing of mine but cold steel, scum.", "close_window", [(call_script,"script_start_current_battle"),(encounter_attack)]],
 #####################################################################
 #TLD STUFFF
-######################################################	`1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq###
+#####################################################################
 
 [pt_wild_troll|party_tpl, "start", [], "^^GROWL!^^", "close_window",[] ],
 
@@ -689,6 +689,7 @@ dialogs = [
             # (assign, "$npc_quit_morale", reg0),
       ]],
 
+# CC: TODO: Companions go to ruins if there hometown is destroyed.
 [anyone,"member_separate", [#            (gt, "$npc_quit_morale", 30),
         (troop_get_slot, ":home_center", "$g_talk_troop", slot_troop_cur_center),
         (try_begin),
@@ -760,20 +761,20 @@ dialogs = [
 		(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_leg"),(val_add, ":str_reg", 1),(try_end),
 		(str_store_string, s12, "@I am in perfect health."),
         	(try_begin),
-		(eq, ":wounds", 1),
-		(str_store_string, s12, "@I am suffering from {s1}."),
-	(else_try),
-		(eq, ":wounds", 2),
-		(str_store_string, s12, "@I am suffering from {s1} and {s2}."),
-	(else_try),
-		(eq, ":wounds", 3),
-		(str_store_string, s12, "@I am suffering from {s1}, {s2}, and {s3}."),
-	(else_try),
-		(eq, ":wounds", 4),
-		(str_store_string, s12, "@I am suffering from {s1}, {s2}, {s3} and {s4}."),
-	(else_try),
-		(str_store_string, s12, "@I am in perfect health."),
-	(try_end),
+			(eq, ":wounds", 1),
+			(str_store_string, s12, "@I am suffering from {s1}."),
+		(else_try),
+			(eq, ":wounds", 2),
+			(str_store_string, s12, "@I am suffering from {s1} and {s2}."),
+		(else_try),
+			(eq, ":wounds", 3),
+			(str_store_string, s12, "@I am suffering from {s1}, {s2}, and {s3}."),
+		(else_try),
+			(eq, ":wounds", 4),
+			(str_store_string, s12, "@I am suffering from {s1}, {s2}, {s3} and {s4}."),
+		(else_try),
+			(str_store_string, s12, "@I am in perfect health."),
+		(try_end),
 	(else_try),
 		(str_store_string, s12, "@I don't have any serious injuries, thank you."),
 	(try_end)],
@@ -3152,19 +3153,23 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                              (lt,":lords_quest",0)], 
 "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
-  #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder)
+# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... -CC
 
-[trp_dwarf_lord|plyr,"lord_talk", [(check_quest_active,"qst_find_lost_spears")], "I wish to be allowed into the erebor dungeons.", "find_lost_spears_permission", []],
+#[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(player_has_item, "itm_book_of_moria"),(eq, cheat_switch, 1)], "My lord, I found this book...", "dwarf_lord_book", []],
+#[anyone,"dwarf_lord_book", [(troop_remove_item, "trp_player", "itm_book_of_moria"),(call_script, "script_increase_rank", "fac_dwarf", 100)], "Give it to me, raw and wwwwrrrrigling...", "lord_pretalk", []],
 
-[trp_dwarf_lord,"find_lost_spears_permission",[(eq,"$dungeon_access",1)], "I already gave you permission, {playername}.", "lord_pretalk", []],
+#TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- begin
 
-[trp_dwarf_lord,"find_lost_spears_permission",[(eq,"$dungeon_access",0),(ge, "$g_talk_troop_relation", 5)], "Alright, you may enter the dungeons.", "find_lost_spears_permission_yes", [(assign,"$dungeon_access",1)]],
-[trp_dwarf_lord,"find_lost_spears_permission",[],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
-
-[trp_dwarf_lord,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[]],
+[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(check_quest_active,"qst_find_lost_spears")], "My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.", "find_lost_spears_permission", []],
                             
+[anyone,"find_lost_spears_permission",[(quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),], "I already gave you permission, {playername}.", "lord_pretalk", []],
+[anyone,"find_lost_spears_permission",[(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0),(ge, "$g_talk_troop_relation", 5)], "Alright, {playername}, you may enter into the mountains.", "find_lost_spears_permission_yes", [(quest_set_slot, "qst_find_lost_spears", slot_quest_current_state, 1),]],
+[anyone,"find_lost_spears_permission",[],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
 
-
+[anyone|plyr,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[]],
+              
+#TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- end
+              
    #TLD - those oath options disabled for now, as no consequence menu is freezing game (Kolba)
                                                                                                                                                                                     
 ##[anyone|plyr,"lord_talk", [(le,"$talk_context", tc_party_encounter),
@@ -4145,7 +4150,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
                        			(check_quest_failed, "qst_mirkwood_sorcerer"),
 					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0),],
-"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer, and in the mean time he has fled.", "lord_mission_sorcerer_failed",[]], 
+"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer, and in the meantime he has fled.", "lord_mission_sorcerer_failed",[]], 
 
 [anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
@@ -4701,11 +4706,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_mirkwood_sorcerer")], "There is an important service you can deliver to our people, {playername}.", "lord_mission_mirkwood_sorcerer", []],
 [anyone, "lord_mission_mirkwood_sorcerer", [], "My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!", "lord_mission_mirkwood_sorcerer_0", []],
-
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_0", [], "Where can I find the sorcerer, my Lady?", "lord_mission_mirkwood_sorcerer_1", []],
-
 [anyone, "lord_mission_mirkwood_sorcerer_1", [], "Search for him in Mirkwood forest, not far from Dol Guldur itself. He is both a well guarded and a cautious foe so you will need to use stealth to prevent the alarm from being raised. If he escapes, he will relocate to other dark places that we know not of and continue his wickedness unchallenged. There will be only one opportunity to defeat him. Much depends on your success. Go with our blessings.", "lord_mission_mirkwood_sorcerer_2", []],
-
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "As you command, my Lady. I will try my best to eliminate this evil.", "lord_pretalk", 
 [
 	(setup_quest_text,"qst_mirkwood_sorcerer"),
@@ -4719,7 +4721,6 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ]
 ],
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected", []],
-
 [anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]], 
 
 # TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- end
@@ -7649,7 +7650,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone|plyr,"lord_deal_with_night_bandits_completed", [], "They had it coming.", "close_window",[(call_script,"script_stand_back"),]],
 
-# TODO: Improve so the mayor accepts better metal scraps    
+# TODO: CC: Improve so the mayor accepts better metal scraps    
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
                               (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
@@ -9154,7 +9155,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "{s43}", "close_window", [(call_script,"script_stand_back"),(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default")]],
 #post 0907 changes end
 
-# Reclaiming companions lost due to lack of RPs. This is a catch dialog.
+# CC: Reclaiming companions lost due to lack of RPs. This is a catch dialog.
 
 [anyone,"start", [
 			(is_between, "$g_talk_troop", companions_begin, companions_end),

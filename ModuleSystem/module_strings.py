@@ -235,7 +235,7 @@ strings = [
  but now they must be driven back to the neverworld."),
   ("custom_battle_3", "Lord Grimbold of Rohan is leading the last defence of the walls against an army if Isengard.\
  Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel."),
-  ("custom_battle_4", "When the scouts inform Lord Grainwad of the approach of an Rhun war band,\
+  ("custom_battle_4", "When the scouts inform Lord Beranhelm of the approach of an Rhun war band,\
  he decides to quickly prepare the defences of his camp and try to hold against superior numbers."),
   ("custom_battle_5", "Ugluk has brought his fierce orksies into the west with the promise of plunder.\
  If he can make this dwarf stronghold fall to him today, his masters in Barad-Dur will be mightily pleased."),
