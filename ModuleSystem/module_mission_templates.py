@@ -2157,6 +2157,7 @@ mission_templates = [ # not used in game
 		#  (team_set_relation, 3, 2, 1),
 		(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 		#  (call_script, "script_infiltration_mission_set_hit_points"),
+		# WTF?
 		(try_for_range, reg10, 1, 32),
 			(entry_point_get_position, reg10, reg10),
 		(try_end),
@@ -2420,13 +2421,16 @@ mission_templates = [ # not used in game
 	(2,0,0, [], [(call_script, "script_infiltration_mission_update_companion_casualties")]),
 	(1,4,ti_once,[(main_hero_fallen)],
 	[
+	(try_begin),
+		(neg|check_quest_succeeded, "qst_mirkwood_sorcerer"),
 		(display_message, "@The_sorcerer_has_fled!", 4294901760),
 		(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
 		(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
 		(call_script, "script_fail_quest","qst_mirkwood_sorcerer"),
-		(call_script, "script_infiltration_mission_update_companion_casualties"),
-		(set_mission_result, -1),
-		(finish_mission),
+	(try_end),
+	(call_script, "script_infiltration_mission_update_companion_casualties"),
+	(set_mission_result, -1),
+	(finish_mission),
 	]),
 
 	(5,0, ti_once, [

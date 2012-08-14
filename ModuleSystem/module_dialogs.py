@@ -3152,12 +3152,16 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                              (lt,":lords_quest",0)], 
 "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
-  #TLD Dain II Ironfoot dialogue (Kolba)
+  #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder)
 
-[trp_dwarf_lord|plyr,"lord_talk", [(check_quest_active,"qst_find_lost_spears")], "Let me come into the dungeons", "find_lost_spears_permission", []],
-[trp_dwarf_lord,"find_lost_spears_permission",[(ge, "$g_talk_troop_faction_relation", 0)], "Alright, go. Your relations with dwarves are ok.", "find_lost_spears_permission_yes", []],
-[trp_dwarf_lord,"find_lost_spears_permission",[],"Ye shall not go there. Your relations with dwarves are bad.", "find_lost_spears_permission_yes", []],
-[trp_dwarf_lord,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[(assign,"$dungeon_access",1)]],
+[trp_dwarf_lord|plyr,"lord_talk", [(check_quest_active,"qst_find_lost_spears")], "I wish to be allowed into the erebor dungeons.", "find_lost_spears_permission", []],
+
+[trp_dwarf_lord,"find_lost_spears_permission",[(eq,"$dungeon_access",1)], "I already gave you permission, {playername}.", "lord_pretalk", []],
+
+[trp_dwarf_lord,"find_lost_spears_permission",[(eq,"$dungeon_access",0),(ge, "$g_talk_troop_relation", 5)], "Alright, you may enter the dungeons.", "find_lost_spears_permission_yes", [(assign,"$dungeon_access",1)]],
+[trp_dwarf_lord,"find_lost_spears_permission",[],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
+
+[trp_dwarf_lord,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[]],
                             
 
 
@@ -4141,7 +4145,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
                        			(check_quest_failed, "qst_mirkwood_sorcerer"),
 					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0),],
-"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer.", "lord_mission_sorcerer_failed",[]], 
+"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer, and in the mean time he has fled.", "lord_mission_sorcerer_failed",[]], 
 
 [anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
@@ -4149,7 +4153,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,3),],
 "The sorcerer of Mirkwood still lives. We interrupted his rituals but he has fled.", "lord_mission_sorcerer_failed",[]],
 
-[anyone,"lord_mission_sorcerer_completed", [], "Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for your people and as such you are entitled to a gift. Take this...", "lord_pretalk",
+[anyone,"lord_mission_sorcerer_completed", [], "Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for our people and as such you are entitled to a gift. Take this...", "lord_pretalk",
 [
 	(call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 100),
 	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
@@ -4661,7 +4665,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 "Here is a mission for a trusted and brave commander like you, {playername}.\
  We are ill equipped to fight off the Rhun hordes.\
  Our armies are losing battles one by one.\
- A legend tells that once upon a time, the spears were made by Dwarves for the armies of the great King Bladorthin (long since dead),\
+ A legend tells that once upon a time, there were spears made by Dwarves for the armies of the great King Bladorthin (long since dead),\
  each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..", "lord_mission_find_lost_spears", []],
 
 [anyone|plyr,"lord_mission_find_lost_spears",[],
@@ -4680,9 +4684,16 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (assign, "$g_leave_encounter",1)]],
 
 [anyone,"lord_mission_find_lost_spears_accepted", [], "Good luck then!","lord_pretalk",
-     [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
-    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
-    (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)]],
+     [
+	(setup_quest_text,"qst_find_lost_spears"),
+        (str_store_troop_name_link,s9,"$g_talk_troop"),
+        (str_store_troop_name_link,s5,"trp_dwarf_lord"),
+	(str_store_string, s2, "@{s9} asked you to find the lost spears the dwarves once made for King Bladorthin. You will have to ask {s5} for permission to search for the spears in the depths of the Lonely Mountain."),
+	(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    	(call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+    	(quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days)
+     ]
+],
 
 #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
 
@@ -4709,7 +4720,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ],
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected", []],
 
-[anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[]], 
+[anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]], 
 
 # TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- end
 

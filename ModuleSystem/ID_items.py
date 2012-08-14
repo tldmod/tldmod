@@ -913,4 +913,3 @@ itm_save_compartibility_item7 = 911
 itm_save_compartibility_item8 = 912
 itm_save_compartibility_item9 = 913
 itm_save_compartibility_item10 = 914
-itm_save_compartibility_item11 = 915
