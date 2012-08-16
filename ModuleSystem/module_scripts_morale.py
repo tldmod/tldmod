@@ -367,6 +367,7 @@ morale_scripts = [
 		(try_end),
 
 		(eq, "$tld_option_morale", 1),
+		#(store_character_level, ":party_size", "trp_player"),
 
 		# Don't spawn parties w/ < 6 members. -CC
 		(try_begin),

@@ -2187,23 +2187,26 @@ simple_triggers = [
 		#       (val_add,":strength_new",999),
 		(val_div,":strength",1000),
 		(val_div,":strength_new",1000),
-		(neq,":strength",":strength_new"),
-		(store_relation, ":rel", "$players_kingdom", ":faction"),
+		
 		(try_begin),
-			(store_sub, ":is_good", ":strength_new", ":strength"),
-			(val_mul, ":is_good", ":rel"), # only the sign is important
-			(ge, ":is_good", 0), # ++ or --
-			(assign, ":news_color", color_good_news),
-		(else_try),
-			(assign, ":news_color", color_bad_news),
-		(try_end),
-		(str_store_faction_name, s22,":faction"),
-		(call_script, "script_faction_strength_string_to_s23", ":faction"),
-		(try_begin),
-			(lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
-			(display_message,"@The forces of {s22} have rallied! {s22} is now {s23}.", ":news_color"),
-		(else_try),
-			(display_message,"@The might of {s22} has diminished! {s22} is now {s23}.", ":news_color"), # announce when strength threshold is crossed downwards
+			(neq,":strength",":strength_new"),
+			(store_relation, ":rel", "$players_kingdom", ":faction"),
+			(try_begin),
+				(store_sub, ":is_good", ":strength_new", ":strength"),
+				(val_mul, ":is_good", ":rel"), # only the sign is important
+				(ge, ":is_good", 0), # ++ or --
+				(assign, ":news_color", color_good_news),
+			(else_try),
+				(assign, ":news_color", color_bad_news),
+			(try_end),
+			(str_store_faction_name, s22,":faction"),
+			(call_script, "script_faction_strength_string_to_s23", ":faction"),
+			(try_begin),
+				(lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
+				(display_message,"@The forces of {s22} have rallied! {s22} is now {s23}.", ":news_color"),
+			(else_try),
+				(display_message,"@The might of {s22} has diminished! {s22} is now {s23}.", ":news_color"), # announce when strength threshold is crossed downwards
+			(try_end),
 		(try_end),
         
         #MV: spawn a guardian party (once) when faction strength below fac_str_dying
@@ -2212,9 +2215,7 @@ simple_triggers = [
             #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
             (this_or_next|eq, ":faction", "fac_isengard"),
             (eq, ":faction", "fac_woodelf"),
-
             (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_dying),
-
             (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
             
             (faction_get_slot, ":capital", ":faction", slot_faction_capital),

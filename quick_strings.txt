@@ -1,4 +1,4 @@
-1077
+1078
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -631,6 +631,7 @@ qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
 qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
+qstr_Party_count:_{reg0} Party_count:_{reg0}
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...

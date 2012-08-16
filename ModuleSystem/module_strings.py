@@ -624,6 +624,7 @@ strings = [
   ("name_elf_35", "Oropher"),
   ("name_elf_36", "Orophin"),
   ("name_elf_37", "Saeros"),
+ # ("name_elf_38", "Coder"), #:)
 #dwarf
   ("name_dwarf_1",  "Assistnik"), #:)
   ("name_dwarf_2",  "Vader"), #:)

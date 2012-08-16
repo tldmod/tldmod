@@ -254,5 +254,3 @@ scn_isengard_outside = 252
 scn_erebor_outside = 253
 scn_old_forest_road = 254
 scn_great_east_road = 255
-scn_underground_warehouse = 256
-scn_amath_dollen_fortress = 257

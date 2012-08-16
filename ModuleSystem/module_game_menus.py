@@ -1740,6 +1740,15 @@ game_menus = [
 		(try_end),
 	]),
 
+     	("camp_cctest_parties",[],"Count Parties",
+	[
+		(assign, reg0, 0),
+		(try_for_parties, ":cur_party"),
+			(val_add, reg0, 1),
+		(try_end),
+		(display_message, "@Party count: {reg0}"),
+	]),
+
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
   ]
 ),

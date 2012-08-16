@@ -8835,7 +8835,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 				(str_store_string, s1, "@the white hand"),
 			(else_try),
 				(eq, "$g_encountered_party_faction", "fac_mordor"),
-				(str_store_string, s1, "@the lidless eye"),	
+				(str_store_string, s1, "@the lidless eye"),
 			(try_end),
 		 ], 
 		"Yes, together we shall fight for {s1} once again.", "close_window", 
