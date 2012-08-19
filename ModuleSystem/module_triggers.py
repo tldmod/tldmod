@@ -1339,15 +1339,18 @@ triggers = [
 	(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
 
 	(try_begin),
+		(faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, other wise you suceed.
 		(neg|ge, ":count", ":start_killcount"),
 		(call_script, "script_fail_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
 		(call_script, "script_end_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 1),
+		#(str_store_faction_name, s1, ":source_fac"),
 		(str_store_troop_name, s1, ":hero"),
-		(display_message, "@You failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
+		(display_message, "@You have failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
 		(call_script, "script_cf_gain_trait_oathbreaker"),
 	(else_try),
+		(faction_slot_eq|neg|this_or_next, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
 		(ge, ":count", ":start_killcount"),
 		(call_script, "script_succeed_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
@@ -1357,9 +1360,9 @@ triggers = [
 		(val_sub, ":start_killcount", 3),
 		(val_sub, ":count", ":start_killcount"),
 		(store_mul, reg1, ":count", 4),
-		(str_store_faction_name, s1, ":source_fac"),
+		#(str_store_faction_name, s1, ":source_fac"),
 		(str_store_troop_name, s1, ":hero"),
-		(display_message, "@You fulfilled your oath of vengeance for {s1}'s hero death!", color_good_news),
+		(display_message, "@You have fulfilled your oath of vengeance for {s1}'s heroic death!", color_good_news),
 		(call_script, "script_increase_rank", ":source_fac", reg1),
 	(try_end),
 ]),

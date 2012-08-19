@@ -1,4 +1,4 @@
-1078
+1083
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -632,6 +632,7 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
 qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Party_count:_{reg0} Party_count:_{reg0}
+qstr_Mordor_Legions_spawn Mordor_Legions_spawned!
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
@@ -812,6 +813,10 @@ qstr_Forces_of_Isengard Forces_of_Isengard
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
+qstr_Now_that_the_sorcere Now_that_the_sorcerer_is_dead,_there_is_nothing_left_to_be_done_here.
+qstr_Now_that_the_sorcerer Now_that_the_sorcerer_has_fled,_there_is_nothing_left_to_be_done_here.
+qstr_You_approach_a_heavi You_approach_a_heavily_guarded_region_of_the_forest...
+qstr_You_wait_for_darknes You_wait_for_darkness_to_fall.
 qstr_You_are_quickly_disc You_are_quickly_discovered_by_the_enemy.
 qstr_You_advance_stealthi You_advance_stealthily_far_into_the_forest.
 qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_ruins!
@@ -868,8 +873,8 @@ qstr_Your_companions__mor Your_companions'_morale_has_risen_from_hatred.
 qstr_Your_companions__mora Your_companions'_morale_has_dropped_from_fear.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
-qstr_You_failed_to_fulfil You_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
-qstr_You_fulfilled_your_o You_fulfilled_your_oath_of_vengeance_for_{s1}'s_hero_death!
+qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
+qstr_You_have_fulfilled_y You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
 qstr_{reg65?mistress:mast {reg65?mistress:master}

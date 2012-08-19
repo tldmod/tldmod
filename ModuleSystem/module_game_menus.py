@@ -1743,10 +1743,61 @@ game_menus = [
      	("camp_cctest_parties",[],"Count Parties",
 	[
 		(assign, reg0, 0),
-		(try_for_parties, ":cur_party"),
+		(try_for_parties, ":unused"),
 			(val_add, reg0, 1),
 		(try_end),
 		(display_message, "@Party count: {reg0}"),
+	]),
+
+     	("camp_cctest_mounts",[],"Gimme animal mounts",[(troop_add_item, "trp_player","itm_spider"),]),
+     	("camp_cctest_items",[],"Refactionize Items",[(call_script, "script_set_item_faction")]),
+     	("camp_cctest_legions",[],"Spawn Mordor Legions",
+	[
+		(faction_slot_eq, "fac_mordor", slot_faction_guardian_party, 0),
+
+            	(set_spawn_radius, 8),
+		(spawn_around_party, "p_town_morannon", "pt_legion_barad_dur"),
+		(assign, ":guard_party", reg0),
+            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
+            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
+
+		(spawn_around_party, "p_town_minas_morgul", "pt_legion_minas_morgul"),
+		(assign, ":guard_party", reg0),
+            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
+            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
+
+		(spawn_around_party, "p_town_morannon", "pt_legion_udun"),
+		(assign, ":guard_party", reg0),
+            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
+            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
+
+		(spawn_around_party, "p_town_morannon", "pt_legion_gorgoroth"),
+		(assign, ":guard_party", reg0),
+            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
+            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
+            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
+
+            	(faction_set_slot, "fac_mordor", slot_faction_guardian_party, 1),
+		(display_message, "@Mordor Legions spawned!", 0x30FFC8),
 	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -3446,8 +3497,8 @@ game_menus = [
   ],[
 	("back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
-	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
+#	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
+#	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
     ]+[("mi",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
@@ -7711,16 +7762,28 @@ game_menus = [
 
 ######################### TLD808 menus ##########################
 ( "ancient_ruins",0,
-  "You_approach_a_heavily_guarded_region_of_the_forest....", "none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
+  "{s1}", "none", 
+		[
+			(set_background_mesh, "mesh_ui_default_menu_window"),
+			(try_begin),
+				(check_quest_succeeded, "qst_mirkwood_sorcerer"),
+				(str_store_string, s1, "@Now that the sorcerer is dead, there is nothing left to be done here."),			
+			(else_try),
+				(check_quest_failed, "qst_mirkwood_sorcerer"),
+				(str_store_string, s1, "@Now that the sorcerer has fled, there is nothing left to be done here."),
+			(else_try),
+				(str_store_string, s1, "@You approach a heavily guarded region of the forest..."),				
+			(try_end),
+		],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
-  "Sneak_into_the_sorcerer's_lair under the night's cover.",
+  "Sneak into the sorcerer's lair under the night's cover.",
 						[(try_begin),
-							# (neg|is_currently_night),
-							# (store_time_of_day, reg1),
-							# (assign, reg2, 24),
-							# (val_sub, reg2, reg1),
-							# (display_message, "@You_wait_for_darkness_to_fall.", 4292863579),
-							# (rest_for_hours, reg2),
+							 (neg|is_currently_night),
+							 (store_time_of_day, reg1),
+							 (assign, reg2, 24),
+							 (val_sub, reg2, reg1),
+							 (display_message, "@You wait for darkness to fall.", color_good_news),
+							 (rest_for_hours, reg2),
 						(try_end),
 						(set_party_battle_mode),
 						(call_script, "script_initialize_general_rescue"),
@@ -7728,7 +7791,7 @@ game_menus = [
 						(assign, "$rescue_stage", 0),
 	(assign, "$active_rescue", 5),
         (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
-	(disable_party, "p_ancient_ruins"),
+	(disable_party, "p_ancient_ruins"), # CC: Only one chance...
 	(call_script, "script_set_meta_stealth"),
 	(call_script, "script_crunch_stealth_results"),
 	(call_script, "script_set_infiltration_player_record"),

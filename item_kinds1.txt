@@ -2739,7 +2739,7 @@ itemsfile version 2
  itm_feet_chains_dwarf Feet_Chains Feet_Chains 1  chains_full_dwarf 0  3854 0 200 0 10.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_save_compartibility_item4 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_spider Spider Spider 1  spider 0  65537 0 1200 0 0.000000 100 0 30 0 3 60 30 30 0 0 15 0
 0
 
  itm_save_compartibility_item5 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0

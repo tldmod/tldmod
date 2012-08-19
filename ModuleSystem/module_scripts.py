@@ -1018,6 +1018,7 @@ scripts = [
 	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
+	 (else_try),(eq, ":mount_item", "itm_spider"),                          (assign, ":mount_type", 1), # Only orcs can ride spiders 
 	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
 	(try_end),
 
@@ -12902,7 +12903,7 @@ scripts = [
 	
 	# CC: Maybe fix?
 	(set_show_messages, 0),
- 	(try_for_range, ":item", 0, "itm_save_compartibility_item4"),
+ 	(try_for_range, ":item", 0, "itm_save_compartibility_item10"),
            	(troop_remove_items, "trp_player", ":item", 1),
 	(try_end),
 	(set_show_messages, 1),
@@ -17444,6 +17445,10 @@ scripts = [
 	(item_set_slot, "itm_metal_scraps_bad", slot_item_faction,0xFFFF), # scraps needed for selling w/o faction discount
 	(item_set_slot, "itm_metal_scraps_medium", slot_item_faction,0xFFFF),
 	(item_set_slot, "itm_metal_scraps_good", slot_item_faction,0xFFFF), 
+	
+	# CC: Easiest way to make this work...
+	(faction_get_slot, ":mordor_mask", "fac_mordor", slot_faction_mask),
+	(item_set_slot, "itm_spider", slot_item_faction, ":mordor_mask"), 
 ]), 
 
 # script_fill_camp_chests

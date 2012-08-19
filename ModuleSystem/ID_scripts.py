@@ -482,15 +482,16 @@ script_cf_agent_get_faction = 480
 script_cf_agent_get_morale = 481
 script_cf_spawn_routed_parties = 482
 script_count_enemy_agents_around_agent = 483
-script_remove_agent_from_field = 484
-script_find_exit_position_at_pos4 = 485
-script_healthbars = 486
-script_morale_check = 487
-script_rout_check = 488
-script_flee_allies = 489
-script_flee_enemies = 490
-script_rout_allies = 491
-script_rout_enemies = 492
-script_coherence = 493
+script_count_team_agents = 484
+script_remove_agent_from_field = 485
+script_find_exit_position_at_pos4 = 486
+script_healthbars = 487
+script_morale_check = 488
+script_rout_check = 489
+script_flee_allies = 490
+script_flee_enemies = 491
+script_rout_allies = 492
+script_rout_enemies = 493
+script_coherence = 494
 
 

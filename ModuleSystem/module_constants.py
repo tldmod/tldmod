@@ -2108,7 +2108,7 @@ agent_morale_state_fanatic		  	= 5
 # Party count option in tweaks menu
 
 tld_party_count_option_increment	= 25
-tld_party_count_option_max		= 1000
+tld_party_count_option_max		= 900
 tld_party_count_option_min		= 600
 tld_party_count_option_high_crash	= 901
 tld_party_count_option_med_crash	= 850

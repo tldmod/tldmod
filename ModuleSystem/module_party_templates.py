@@ -376,4 +376,11 @@ party_templates = [
 ("routed_allies","Routed Allies",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[]),
 ("routed_enemies","Routed Enemies",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[]),
 
+# Mordor Legions
+
+("legion_minas_morgul","Legion_of_Minas_Morgul",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_black_numenorean_horsemaster,10,30),(trp_fell_uruk_of_mordor,30,60),(trp_uruk_of_mordor,45,105)]),
+("legion_udun","Legion_of_Udun",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_easterling_elite_skirmisher,10,30),(trp_fell_orc_archer_of_mordor,30,45),(trp_fell_uruk_slayer_of_mordor, 30, 45),(trp_orc_of_mordor,30,90)]),
+("legion_gorgoroth","Legion_of_Gorgoroth",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_captain_of_mordor,3,3),(trp_olog_hai,10,10),(trp_warg_rider_of_gorgoroth,50,80),(trp_uruk_of_mordor,50,110)]),
+("legion_barad_dur","Legion_of_Barad-Dur",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_captain_of_mordor,5,5),(trp_black_uruk_of_barad_dur,60,60),(trp_uruk_of_mordor,30,90),(trp_great_warg_rider_of_mordor,60,60),(trp_olog_hai,20,20)]),
+
 ]

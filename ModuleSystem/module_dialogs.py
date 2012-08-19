@@ -3164,7 +3164,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                             
 [anyone,"find_lost_spears_permission",[(quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),], "I already gave you permission, {playername}.", "lord_pretalk", []],
 [anyone,"find_lost_spears_permission",[(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0),(ge, "$g_talk_troop_relation", 5)], "Alright, {playername}, you may enter into the mountains.", "find_lost_spears_permission_yes", [(quest_set_slot, "qst_find_lost_spears", slot_quest_current_state, 1),]],
-[anyone,"find_lost_spears_permission",[],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
+[anyone,"find_lost_spears_permission",[(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0)],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
 
 [anyone|plyr,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[]],
               
