@@ -1766,7 +1766,7 @@ game_menus = [
             	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
             	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
 
-		(spawn_around_party, "p_town_minas_morgul", "pt_legion_minas_morgul"),
+		(spawn_around_party, "p_town_morannon", "pt_legion_minas_morgul"),
 		(assign, ":guard_party", reg0),
             	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
             	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
@@ -8161,6 +8161,29 @@ game_menus = [
  # "none",
    # [],[("leave",[],"Back...",[(change_screen_return)])],
  # ),
+
+# Animal ambushes (CppCoder)
+ ("animal_ambush", 0, 
+ "{s1}",
+ "none", 
+ [
+	(call_script, "script_get_region_of_party","p_main_party"),
+	(assign, ":ambush_troop", "trp_no_troop"),
+	(try_begin),
+		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
+		(eq, "$current_player_region", region_n_mirkwood),
+		(assign, ":ambush_troop", "trp_spider"),
+# Disabled, WIP.
+#	(else_try),
+#		(eq|this_or_next, "$current_player_region", region_grey_mountains),
+#		(eq, "$current_player_region", region_misty_mountains),
+#		(assign, ":ambush_troop", "trp_bear"),
+	(try_end),
+ ],
+ [
+	("leave",[],"Back...",[(change_screen_return)]),
+ ],
+ ),
 
 ("build_your_scene",0,
  "You can build your own battlescene here, using one of the slots provided below and game Edit mode \

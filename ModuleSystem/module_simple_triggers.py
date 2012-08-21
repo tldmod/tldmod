@@ -2209,13 +2209,13 @@ simple_triggers = [
 			(try_end),
 		(try_end),
         
-        #MV: spawn a guardian party (once) when faction strength below fac_str_dying
+        #MV: spawn a guardian party (once) when faction strength below fac_str_guardian
         #this is a fun quick fix to defeat dying factions and avoid grinding
         (try_begin),
             #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
             (this_or_next|eq, ":faction", "fac_isengard"),
             (eq, ":faction", "fac_woodelf"),
-            (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_dying),
+            (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian),
             (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
             
             (faction_get_slot, ":capital", ":faction", slot_faction_capital),

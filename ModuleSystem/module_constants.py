@@ -1263,6 +1263,9 @@ fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" 
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 fac_str_max = 8000
 
+fac_str_guardian = fac_str_dying # less than this, spawn the guardian party
+
+
 # faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
 faction_init = [
 (fac_gondor  ,4500,mtf_culture_gondor       ,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_gondor_commoner,     trp_gondor_militiamen,       trp_footmen_of_gondor,       trp_gondor_swordsmen,          trp_veteran_knight_of_gondor  ],[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_gondor_militiamen,         trp_ranger_of_ithilien,       trp_gondor_swordsmen,           trp_swordsmen_of_the_tower_guard],p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),

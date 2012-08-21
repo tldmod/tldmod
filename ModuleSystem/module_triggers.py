@@ -953,7 +953,7 @@ triggers = [
 			(ge,":level",tld_player_level_to_begin_war),
 	   ],[
 		(assign, "$tld_war_began",1),
-		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves.. Even in the far North there is a war of its own.","@The War has started!"),
+		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
 		(play_sound,"snd_evil_horn"),
 	# move Dun camp across Isen
 		(party_get_position, pos1, "p_town_dunland_camp"),
@@ -1073,10 +1073,10 @@ triggers = [
             (party_get_morale, ":morale", "p_main_party"),
             (try_begin),
                 (gt, ":morale", 50), # base morale high, get boost
-                (display_message, "@Your companions' morale has risen from hatred.", 0xffaa3333),
+                (display_message, "@Your party's morale has increased from hatred.", 0xffaa3333), # CC: was "Your companions' morale has risen from hatred.", 0xffaa3333
                 (val_add, ":morale", 10),
             (else_try), # base morale low, drop in fear
-                (display_message, "@Your companions' morale has dropped from fear.", 0xffaa3333),
+                (display_message, "@Your companions' morale has dropped from fear.", 0xffaa3333), # CC: was "Your companions' morale has dropped from fear.", 0xffaa3333
                 (val_sub, ":morale", 10),
             (try_end),
             (party_set_morale, "p_main_party", ":morale"),
