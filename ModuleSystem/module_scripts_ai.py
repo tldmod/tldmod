@@ -1509,6 +1509,8 @@ ai_scripts = [
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":continue", 0),
+	  (party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least 50 troops to siege
+	  (gt, ":party_size", tld_siege_min_party_size), 
           (try_begin),
             (eq, ":old_ai_state", spai_besieging_center),
             (gt, "$party_relative_strength", 30),
@@ -1784,6 +1786,8 @@ ai_scripts = [
           (eq, ":ai_state", spai_besieging_center),
           (try_begin),
             (party_slot_eq, ":ai_object", slot_center_is_besieged_by, -1),
+	    (party_get_num_companions, ":party_size", ":party_no"),
+	    (gt, ":party_size", tld_siege_min_party_size), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege
             (store_distance_to_party_from_party, ":distance", ":party_no", ":ai_object"),
             (lt, ":distance", 3),
             (try_begin),
@@ -2346,6 +2350,14 @@ ai_scripts = [
                       (party_is_active, ":attached_party"),
                       (party_detach, ":attached_party"),
                     (try_end),
+			# CC: Remove volunteers from the adv. camp.
+    			(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
+    			(try_begin),
+        			(gt, ":volunteers", 0),
+        			(party_is_active, ":volunteers"),
+        			(party_detach, ":volunteers"),
+        			(remove_party, ":volunteers"),
+			(try_end),
                     (disable_party, ":adv_camp"),
                   (try_end),
                                     

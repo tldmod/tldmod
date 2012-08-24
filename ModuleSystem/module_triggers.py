@@ -947,7 +947,7 @@ triggers = [
 		(display_log_message,"@ +1 to Charisma (permanent)"),
 ]),
 	
-# TLD War beginning condition (player level = 8 at the moment), GA
+# TLD War beginning condition (player level >= 8 at the moment), GA
 (1, 0, 0,[	(eq,"$tld_war_began",0),
 			(store_character_level,":level","trp_player"),
 			(ge,":level",tld_player_level_to_begin_war),
@@ -1073,7 +1073,7 @@ triggers = [
             (party_get_morale, ":morale", "p_main_party"),
             (try_begin),
                 (gt, ":morale", 50), # base morale high, get boost
-                (display_message, "@Your party's morale has increased from hatred.", 0xffaa3333), # CC: was "Your companions' morale has risen from hatred.", 0xffaa3333
+                (display_message, "@Your party's morale has risen from hatred.", 0xffaa3333), # CC: was "Your companions' morale has risen from hatred.", 0xffaa3333
                 (val_add, ":morale", 10),
             (else_try), # base morale low, drop in fear
                 (display_message, "@Your companions' morale has dropped from fear.", 0xffaa3333), # CC: was "Your companions' morale has dropped from fear.", 0xffaa3333
@@ -1120,6 +1120,48 @@ triggers = [
 
 #################################################################################
 (1, 0, 168, [], [ #traits crunching
+	# CC: New influence bonuses from traits:
+	(try_begin),
+		(faction_get_slot, reg1, "$players_kingdom", slot_faction_influence),
+		(assign, ":old_influence", reg1),
+		(try_begin),
+            		(troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 1),
+			(val_add, reg1, 2),
+        		(str_store_string, s27, "str_trait_title_oathkeeper"),
+			(faction_set_slot, "$players_kingdom", slot_faction_influence, reg1),
+			(store_sub, reg3, reg1, ":old_influence"),
+			(str_store_faction_name, s1, "$players_kingdom"),
+			(display_log_message, "@{s27}: Influence with {s1} increases to {reg1}.", color_good_news),
+		(try_end),
+		(try_begin),
+            		(troop_slot_eq, "trp_traits", slot_trait_reverent, 1),
+			(val_add, reg1, 2),
+        		(str_store_string, s27, "str_trait_title_reverent"),
+			(faction_set_slot, "$players_kingdom", slot_faction_influence, reg1),
+			(store_sub, reg3, reg1, ":old_influence"),
+			(str_store_faction_name, s1, "$players_kingdom"),
+			(display_log_message, "@{s27}: Influence with {s1} increases to {reg1}.", color_good_news),
+		(try_end),
+		(try_begin),
+            		(troop_slot_eq, "trp_traits", slot_trait_merciful, 1),
+			(val_add, reg1, 2),
+        		(str_store_string, s27, "str_trait_title_merciful"),
+			(faction_set_slot, "$players_kingdom", slot_faction_influence, reg1),
+			(store_sub, reg3, reg1, ":old_influence"),
+			(str_store_faction_name, s1, "$players_kingdom"),
+			(display_log_message, "@{s27}: Influence with {s1} increases to {reg1}.", color_good_news),
+		(try_end),
+		(try_begin),
+			(gt, reg1, 2),
+            		(troop_slot_eq, "trp_traits", slot_trait_oathbreaker, 1),
+        		(str_store_string, s27, "str_trait_title_oathbreaker"),
+			(val_sub, reg1, 2),
+			(faction_set_slot, "$players_kingdom", slot_faction_influence, reg1),
+			(store_sub, reg3, reg1, ":old_influence"),
+			(str_store_faction_name, s1, "$players_kingdom"),
+			(display_log_message, "@{s27}: Influence with {s1} decreases to {reg1}.", color_bad_news),
+		(try_end),
+	(try_end),
 	(try_begin),
 		(eq,1,0), # traits effect on influence inflow
 		(assign, ":wage", 0),#"$weekly_wage"),
@@ -1404,8 +1446,41 @@ triggers = [
 	(try_end),
    ]),
    
+	# CC: Ambushes
+	(6, 0, 0, [],[
+	(try_begin),
+		(lt, "$g_animal_ambush_counter", 3), # No ambushes if experienced three in last several days...
+		(try_begin),
+			(eq|this_or_next, "$current_player_region", region_misty_mountains),
+			(eq|this_or_next, "$current_player_region", region_grey_mountains),
+			(eq|this_or_next, "$current_player_region", region_n_mirkwood),
+			(eq, "$current_player_region", region_s_mirkwood),
+			(assign, ":ambush_chance", 100),
+			(party_get_num_companions, reg1, "p_main_party"),
+			(call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
+			(try_begin),
+				(lt, reg1, 8),
+				(val_sub, ":ambush_chance", 30),
+			(else_try),
+				(gt, reg1, 35),
+				(val_sub, ":ambush_chance", 70),
+			(try_end),
+			(try_begin),
+				(gt, reg0, 4),
+				(store_sub, reg2, reg0, 4),
+				(val_mul, reg2, 10),
+				(val_sub, ":ambush_chance", reg2), # -60% at max
+			(try_end),
+			(try_begin),
+				(store_random_in_range, ":rnd", 1, 101),
+				(lt, ":rnd", ":ambush_chance"),
+				(jump_to_menu, "mnu_animal_ambush"),
+			(try_end),
+		(try_end),		
+	(try_end),
+	]),
+
 # save game compartibility triggers. replace those if you add new ones
-   (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),

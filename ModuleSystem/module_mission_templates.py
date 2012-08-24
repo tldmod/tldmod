@@ -2157,7 +2157,7 @@ mission_templates = [ # not used in game
 		#  (team_set_relation, 3, 2, 1),
 		(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 		#  (call_script, "script_infiltration_mission_set_hit_points"),
-		# WTF?
+		# CC: WTF?
 		(try_for_range, reg10, 1, 32),
 			(entry_point_get_position, reg10, reg10),
 		(try_end),
@@ -2625,5 +2625,127 @@ mission_templates = [ # not used in game
 	(ti_tab_pressed      ,0,0,[],[(try_begin),(eq, "$battle_won", 1),(finish_mission),(try_end)]),
 	(ti_question_answered,0,0,[],[(store_trigger_param_1, ":local0"),(eq, ":local0", 0),(finish_mission)]),
 ]),
+
+# Animal Ambushes (CppCoder)
+("animal_ambush",mtf_battle_mode,charge,
+ "You are ambushed by an animal.",
+ [
+	# Player
+	(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+
+	# Companions (Add more for more companions)
+	(1,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(2,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(3,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(4,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(5,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(6,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(7,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(8,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(9,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(10,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(11,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(12,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(13,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(14,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(15,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+	(16,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+
+	# Enemies:
+	(17,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(18,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(19,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(20,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(21,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(22,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(23,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(24,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(25,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(26,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(27,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(28,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(29,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+	(30,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+
+ ],
+	# Triggers
+	common_deathcam_triggers + [
+
+	common_battle_on_player_down,
+
+	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1)]),
+
+	(0, 0, ti_once, 
+	[
+		# Make enemies charge...
+		(set_show_messages, 0),
+		(team_give_order, 1, grc_everyone, mordr_charge),
+		(set_show_messages, 1),
+
+		(store_current_scene, ":cur_scene"),
+		(modify_visitors_at_site, ":cur_scene"), 
+		(reset_visitors),
+
+		(assign, ":cur_entry", 1),
+		(try_for_range, ":npc", companions_begin, companions_end),
+			(main_party_has_troop, ":npc"),
+			(set_visitor, ":cur_entry", ":npc"),
+			(val_add, ":cur_entry", 1),
+			#(str_store_troop_name, s1, ":npc"),
+			#(assign, reg0, ":cur_entry"),
+			#(display_message, "@{s1} at entry {reg0}"),
+		(try_end),
+
+		(assign, ":cur_entry", 17),
+		(try_for_range, ":unused", 0, reg21),
+			(set_visitor, ":cur_entry", reg20),
+			(val_add, ":cur_entry", 1),
+		(try_end),
+	], 
+	[]),
+
+	(1, 60, ti_once, 
+	[
+		(store_mission_timer_a,reg(1)),
+		(ge,reg(1),10),
+		(all_enemies_defeated, 5),
+		(set_mission_result,1),
+		(display_message,"str_msg_battle_won"),
+		(assign,"$battle_won",1),
+		(assign, "$g_battle_result", 1),
+		(call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+	],
+	[
+		(finish_mission, 1)
+	]),
+
+	(ti_tab_pressed,0,0,[],
+	[
+		(try_begin),
+			(eq, "$battle_won", 1),
+			(jump_to_menu, "mnu_animal_ambush_success"),
+			(finish_mission),
+		(else_try),
+			(main_hero_fallen),
+			(jump_to_menu, "mnu_animal_ambush_fail"),
+			(finish_mission),
+		(try_end)
+	]),
+
+	# Remove riderless creatures
+	(1, 0, 0, [], [
+	(try_for_agents, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_is_human, ":agent"),
+		(agent_get_troop_id, ":agent_trp", ":agent"),
+		(eq|this_or_next, ":agent_trp", "trp_spider"),
+		(eq|this_or_next, ":agent_trp", "trp_bear"),
+		(eq, ":agent_trp", "trp_wolf"),
+		(agent_get_horse, ":horse", ":agent"),
+		(lt, ":horse", 0),
+		(call_script, "script_remove_agent", ":agent"),
+	(try_end),
+	]),
+ ]),
 
 ] + mission_templates_cutscenes

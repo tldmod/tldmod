@@ -1751,53 +1751,13 @@ game_menus = [
 
      	("camp_cctest_mounts",[],"Gimme animal mounts",[(troop_add_item, "trp_player","itm_spider"),]),
      	("camp_cctest_items",[],"Refactionize Items",[(call_script, "script_set_item_faction")]),
-     	("camp_cctest_legions",[],"Spawn Mordor Legions",
+     	("camp_cctest_pos",[],"Print Coords x100",
 	[
-		(faction_slot_eq, "fac_mordor", slot_faction_guardian_party, 0),
-
-            	(set_spawn_radius, 8),
-		(spawn_around_party, "p_town_morannon", "pt_legion_barad_dur"),
-		(assign, ":guard_party", reg0),
-            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
-            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
-            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
-            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
-
-		(spawn_around_party, "p_town_morannon", "pt_legion_minas_morgul"),
-		(assign, ":guard_party", reg0),
-            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
-            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
-            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
-            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
-
-		(spawn_around_party, "p_town_morannon", "pt_legion_udun"),
-		(assign, ":guard_party", reg0),
-            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
-            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
-            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
-            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
-
-		(spawn_around_party, "p_town_morannon", "pt_legion_gorgoroth"),
-		(assign, ":guard_party", reg0),
-            	(party_set_slot, ":guard_party", slot_party_type, spt_guardian),
-            	(party_set_slot, ":guard_party", slot_party_victory_value, 200),
-            	(party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
-            	(party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
-            	(party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-            	(party_set_ai_patrol_radius, ":guard_party", 10), #must be tight radius
-
-            	(faction_set_slot, "fac_mordor", slot_faction_guardian_party, 1),
-		(display_message, "@Mordor Legions spawned!", 0x30FFC8),
+		(set_fixed_point_multiplier, 100),
+		(party_get_position, pos13, "p_main_party"),
+       		(position_get_x, reg2, pos13),
+      		(position_get_y, reg3, pos13),
+      		(display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
 	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -7778,11 +7738,12 @@ game_menus = [
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak into the sorcerer's lair under the night's cover.",
 						[(try_begin),
+							# CC:MARKER
 							 (neg|is_currently_night),
 							 (store_time_of_day, reg1),
 							 (assign, reg2, 24),
 							 (val_sub, reg2, reg1),
-							 (display_message, "@You wait for darkness to fall.", color_good_news),
+							 (display_message, "@You wait for darkness to fall...", color_good_news),
 							 (rest_for_hours, reg2),
 						(try_end),
 						(set_party_battle_mode),
@@ -8164,26 +8125,66 @@ game_menus = [
 
 # Animal ambushes (CppCoder)
  ("animal_ambush", 0, 
- "{s1}",
+ "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(call_script, "script_get_region_of_party","p_main_party"),
 	(assign, ":ambush_troop", "trp_no_troop"),
+	(assign, ":ambush_count", 0),
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
-		(eq, "$current_player_region", region_n_mirkwood),
+		(eq, "$current_player_region", region_s_mirkwood),
 		(assign, ":ambush_troop", "trp_spider"),
-# Disabled, WIP.
-#	(else_try),
-#		(eq|this_or_next, "$current_player_region", region_grey_mountains),
-#		(eq, "$current_player_region", region_misty_mountains),
-#		(assign, ":ambush_troop", "trp_bear"),
+		(assign, ":ambush_scene", "scn_mirkwood_ambush"),
+		(store_random_in_range, ":ambush_count", 1, 5), # 1 to 5 spiders
+	(else_try),
+		(eq|this_or_next, "$current_player_region", region_grey_mountains),
+		(eq, "$current_player_region", region_misty_mountains),
+		(assign, ":ambush_scene", "scn_mountain_ambush"),
+		(store_random, ":rnd", 100),
+		(try_begin),
+			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush 
+			(lt, ":rnd", 40), 
+			(assign, ":ambush_troop", "trp_bear"),
+			(store_random_in_range, ":ambush_count", 1, 3), # 1 to 2 bears
+		(else_try),
+			(assign, ":ambush_troop", "trp_wolf"),
+			(store_random_in_range, ":ambush_count", 5, 9), # 5 to 8 wolves
+		(try_end),
 	(try_end),
+	(assign, reg20, ":ambush_troop"),
+	(assign, reg21, ":ambush_count"),
+	(assign, reg22, ":ambush_scene"),
  ],
  [
-	("leave",[],"Back...",[(change_screen_return)]),
+	("animal_ambush_continue",[],"Continue...",
+	[
+		(set_jump_entry, 0),
+		(modify_visitors_at_site, reg22),
+		(reset_visitors),
+		(jump_to_scene, reg22),
+		(set_jump_mission, "mt_animal_ambush"),
+		(change_screen_mission),
+	]),
  ],
  ),
+
+("animal_ambush_success", 0, "The {s2} fall before you as wheat to a scythe!", "none", 
+[
+	(str_store_troop_name_plural, s1, reg20),
+],
+[
+	("continue",[],"Continue...",[(change_screen_map)]),
+	("repeat",[(eq, cheat_switch, 1)],"Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+]),
+
+("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companions,} but luckily you managed to fend them off. You have received many wounds though.", "none", 
+[
+	(assign, reg0, 0),
+],
+[
+	("continue",[],"Continue...",[(change_screen_map)]),
+	("repeat",[],"Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+]),
 
 ("build_your_scene",0,
  "You can build your own battlescene here, using one of the slots provided below and game Edit mode \

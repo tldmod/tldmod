@@ -3158,6 +3158,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(player_has_item, "itm_book_of_moria"),(eq, cheat_switch, 1)], "My lord, I found this book...", "dwarf_lord_book", []],
 #[anyone,"dwarf_lord_book", [(troop_remove_item, "trp_player", "itm_book_of_moria"),(call_script, "script_increase_rank", "fac_dwarf", 100)], "Give it to me, raw and wwwwrrrrigling...", "lord_pretalk", []],
 
+# TLD: End Dwarf Lord takes Moria book
+
 #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- begin
 
 [anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(check_quest_active,"qst_find_lost_spears")], "My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.", "find_lost_spears_permission", []],
@@ -3577,7 +3579,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 "Follow me. [Costs {reg1}/{reg2} influence]", "lord_give_order_answer", [
      (assign, "$temp", spai_accompanying_army),
      (assign, "$temp_2", "p_main_party"),
-     (assign, "$tld_action_cost", "$temp_action_cost")]],
+     (assign, "$tld_action_cost", tld_command_cost_follow),
+     (try_begin),
+	(troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+	(val_mul, "$tld_action_cost", 2),
+	(val_div, "$tld_action_cost", 3),
+     (try_end)]],
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_goto),
@@ -3591,7 +3598,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (ge, reg2, "$temp_action_cost")], 
 "Go to... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_holding_center),
-     (assign, "$tld_action_cost", "$temp_action_cost")]],
+     (assign, "$tld_action_cost", tld_command_cost_goto),
+     (try_begin),
+	(troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+	(val_mul, "$tld_action_cost", 2),
+	(val_div, "$tld_action_cost", 3),
+     (try_end)]],
 
   #[anyone|plyr,"lord_give_order", [],
    # "Raid around the village of...", "lord_give_order_details_ask",
@@ -3611,7 +3623,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (ge, reg2, "$temp_action_cost")],  
 "Patrol around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_patrolling_around_center),
-     (assign, "$tld_action_cost", "$temp_action_cost")]],
+     (assign, "$tld_action_cost", tld_command_cost_patrol),
+     (try_begin),
+	(troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+	(val_mul, "$tld_action_cost", 2),
+	(val_div, "$tld_action_cost", 3),
+     (try_end)]],
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_engage),
@@ -3625,7 +3642,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (ge, reg2, "$temp_action_cost")], 
 "Engage enemies around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_raiding_around_center), #not really, changed later to spai_patrolling_around_center
-     (assign, "$tld_action_cost", "$temp_action_cost")]],
+     (assign, "$tld_action_cost", tld_command_cost_engage),
+     (try_begin),
+	(troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+	(val_mul, "$tld_action_cost", 2),
+	(val_div, "$tld_action_cost", 3),
+     (try_end)]],
 
 [anyone|plyr,"lord_give_order", [(neg|troop_slot_eq, "$g_talk_troop", slot_troop_player_order_state, spai_undefined)],
    "I won't need you for some time. You are free to do as you like.", "lord_give_order_stop", []],
@@ -3731,6 +3753,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
      (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+	(try_begin),
+		(eq, cheat_switch, 1),
+		(assign, reg0, "$tld_action_cost"),
+		(assign, reg1, "$temp_action_cost"),
+		(display_message, "@Taking {reg0} inf. Alt?={reg1}"),
+	(try_end),
      (val_sub, ":influence", "$tld_action_cost"),
      (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
      (assign, reg0, "$tld_action_cost"),

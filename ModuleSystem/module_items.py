@@ -182,7 +182,8 @@ items =[
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
 ["warg_ghost_armour","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
-["warg_ghost_lance" ,"HIDEME_lance"  ,[("dummy_mesh",0)],itp_unique|itp_type_polearm|itp_primary|itp_no_parry,itcf_thrust_onehanded_lance_horseback,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+["warg_ghost_lance" ,"HIDEME_lance"  ,[("dummy_mesh",0)],itp_unique|itp_type_polearm|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+# CC: ghost lance had itcf_thrust_onehanded_lance_horseback before, changed to prevent animals from couching
 # other HIDEME items already ingame
 
 #BOW MISSILES
@@ -1266,12 +1267,9 @@ items =[
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
-# CC: Spiders: low hp, high armor, fast but not too agile? idk... needs balancing...
-["spider","Spider",[("spider",0)], itp_type_horse, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(30)|horse_maneuver(30)|horse_charge(15),imodbits_none,[]],
-["save_compartibility_item5","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
-["save_compartibility_item6","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
-
-# CC: Bear and wolf above, maybe octo's defiled armor for the evil side below, leaves 1 item slot left...
+["spider","Spider",[("spider",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(60)|horse_charge(25),imodbits_none,[]],
+["bear","Bear",[("bear",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(100)|body_armor(40)|horse_speed(45)|horse_maneuver(40)|horse_charge(45),imodbits_none,[]],
+["wolf","Wolf",[("wolf",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25),imodbits_none,[]],
 
 ["save_compartibility_item7","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["save_compartibility_item8","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],

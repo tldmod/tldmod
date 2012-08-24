@@ -261,7 +261,7 @@ itemsfile version 2
  itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  dummy_mesh 0  2164264973 0 0 0 0.000000 100 200 200 200 0 0 0 0 0 0 0 0
 0
 
- itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  dummy_mesh 0  4214788 134217728 0 0 1.000000 100 0 0 0 0 0 100 0 1 0 256 0
+ itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  dummy_mesh 0  4214788 0 0 0 1.000000 100 0 0 0 0 0 100 0 1 0 256 0
 0
 
  itm_arrows Arrows Arrows 3  plain_arrow 0  plain_arrow_flying 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 4398046520456 3.000000 100 0 0 0 0 0 0 0 95 30 1 0
@@ -2739,13 +2739,13 @@ itemsfile version 2
  itm_feet_chains_dwarf Feet_Chains Feet_Chains 1  chains_full_dwarf 0  3854 0 200 0 10.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_spider Spider Spider 1  spider 0  1 0 1200 0 0.000000 100 0 30 0 3 60 30 30 0 0 15 0
+ itm_spider Spider Spider 1  spider 0  4097 0 1200 0 0.000000 100 0 30 0 3 60 60 50 0 0 25 0
 0
 
- itm_save_compartibility_item5 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0.000000 100 0 40 0 0 100 40 45 0 0 45 0
 0
 
- itm_save_compartibility_item6 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0.000000 100 0 25 0 0 50 50 50 0 0 25 0
 0
 
  itm_save_compartibility_item7 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0

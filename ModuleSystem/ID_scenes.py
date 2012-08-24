@@ -256,3 +256,5 @@ scn_old_forest_road = 254
 scn_great_east_road = 255
 scn_underground_warehouse = 256
 scn_amath_dollen_fortress = 257
+scn_mirkwood_ambush = 258
+scn_mountain_ambush = 259

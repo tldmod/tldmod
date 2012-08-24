@@ -1263,7 +1263,7 @@ fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" 
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 fac_str_max = 8000
 
-fac_str_guardian = fac_str_dying # less than this, spawn the guardian party
+fac_str_guardian = 1000 # less than this, spawn the guardian party
 
 
 # faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
@@ -2115,3 +2115,5 @@ tld_party_count_option_max		= 900
 tld_party_count_option_min		= 600
 tld_party_count_option_high_crash	= 901
 tld_party_count_option_med_crash	= 850
+
+tld_siege_min_party_size		= 75

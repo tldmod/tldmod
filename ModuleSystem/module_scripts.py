@@ -1702,6 +1702,7 @@ scripts = [
 	(assign, "$g_tld_conversations_done", 0),
 	(assign, "$g_tld_gandalf_state", -1),
 	(assign, "$g_tld_nazgul_state", -1),
+	(assign, "$g_animal_ambush_counter", 0), # CC: Needed for animal ambushes, and maybe ambushes in general?
 
 
 

@@ -146,6 +146,7 @@ str_27           = bignum | 0x0000001b
 str_28           = bignum | 0x0000001c
 str_29           = bignum | 0x0000001d
 str_30           = bignum | 0x0000001e
+str_127          = bignum | 0x0000007f  # cppcoder
 str_255          = bignum | 0x000000ff  # mtarini
 
 agi_3            = bignum | 0x00000300

@@ -1,4 +1,4 @@
-1083
+1087
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -632,7 +632,7 @@ qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
 qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Party_count:_{reg0} Party_count:_{reg0}
-qstr_Mordor_Legions_spawn Mordor_Legions_spawned!
+qstr_Party_position__{reg Party_position_({reg2},{reg3}).
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
@@ -816,7 +816,7 @@ qstr_{s11}_{s13} {s11},_{s13}
 qstr_Now_that_the_sorcere Now_that_the_sorcerer_is_dead,_there_is_nothing_left_to_be_done_here.
 qstr_Now_that_the_sorcerer Now_that_the_sorcerer_has_fled,_there_is_nothing_left_to_be_done_here.
 qstr_You_approach_a_heavi You_approach_a_heavily_guarded_region_of_the_forest...
-qstr_You_wait_for_darknes You_wait_for_darkness_to_fall.
+qstr_You_wait_for_darknes You_wait_for_darkness_to_fall...
 qstr_You_are_quickly_disc You_are_quickly_discovered_by_the_enemy.
 qstr_You_advance_stealthi You_advance_stealthily_far_into_the_forest.
 qstr_You_have_evaded_the_ You_have_evaded_the_patrols_and_crept_close_to_the_ruins!
@@ -846,6 +846,7 @@ qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
+qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_Sauron_sends_out_his_legions_of_Mordor!
 qstr_Guardians_of_{s6} Guardians_of_{s6}
 qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
@@ -861,7 +862,7 @@ qstr_The_water_you_drank_ The_water_you_drank_from_the_Ents_had_a_strange_effect
 qstr_Ent_water_effect:_in Ent_water_effect:_increase_stature!
 qstr__+1_to_Strength__per _+1_to_Strength_(permanent)
 qstr__+1_to_Charisma__per _+1_to_Charisma_(permanent)
-qstr_The_dark_shadow_fina The_dark_shadow_finally_broke_into_a_storm,_and_evil_hordes_started_their_march_on_the_free_people_of_Middle_Earth._Mordor_against_Gondor_in_the_South,_Isengard_agains_Rohan_in_the_West,_Dol_Guldur_against_the_Elves.._Even_in_the_far_North_there_is_a_war_of_its_own.
+qstr_The_dark_shadow_fina The_dark_shadow_finally_broke_into_a_storm,_and_evil_hordes_started_their_march_on_the_free_people_of_Middle_Earth._Mordor_against_Gondor_in_the_South,_Isengard_agains_Rohan_in_the_West,_Dol_Guldur_against_the_Elves..._Even_in_the_far_North_there_is_a_war_of_its_own.
 qstr_The_War_has_started! The_War_has_started!
 qstr_The_forest_seems_pea The_forest_seems_peaceful.
 qstr_There_is_a_sense_of_ There_is_a_sense_of_danger_in_the_air.
@@ -869,8 +870,10 @@ qstr_You_have_a_feeling_y You_have_a_feeling_you_disturbed_the_forest_for_long_e
 qstr_Get_out_now! Get_out,_now!
 qstr_You_are_inside_Fango You_are_inside_Fangorn._{s11}
 qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
-qstr_Your_companions__mor Your_companions'_morale_has_risen_from_hatred.
-qstr_Your_companions__mora Your_companions'_morale_has_dropped_from_fear.
+qstr_Your_party_s_morale_ Your_party's_morale_has_risen_from_hatred.
+qstr_Your_companions__mor Your_companions'_morale_has_dropped_from_fear.
+qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_to_{reg1}.
+qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
 qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
@@ -984,6 +987,7 @@ qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}
 qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
 qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
+qstr_Taking_{reg0}_inf._A Taking_{reg0}_inf._Alt?={reg1}
 qstr_You_spent_{reg0}_of_ You_spent_{reg0}_of_your_influence_with_{s1},_with_{reg1}_remaining.
 qstr_The_War_is_over_{pla The_War_is_over,_{playername},_haven't_you_heard?
 qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fighting_against_{s13}.
