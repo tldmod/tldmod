@@ -1,5 +1,4 @@
 @echo off
-for /f "tokens=1 delims=:" %%a in ("%cd%") do path %%a:/python26/
 python process_init.py
 python process_global_variables.py
 python process_strings.py
@@ -21,13 +20,14 @@ python process_presentations.py
 python process_party_tmps.py
 python process_parties.py
 python process_quests.py
+python process_info_pages.py
 python process_scripts.py
 python process_mission_tmps.py
 python process_game_menus.py
 python process_simple_triggers.py
 python process_dialogs.py
 python process_global_variables_unused.py
-python process_tags_unused.py
+python process_postfx.py
 @del *.pyc
 echo.
 echo ______________________________

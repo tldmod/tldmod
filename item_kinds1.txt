@@ -2168,22 +2168,22 @@ itemsfile version 2
  itm_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_noble_gorget_b 0  16842765 0 2000 704643072 22.000000 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_a Nasal_Helm_with_Chain Nasal_Helm_with_Chain 1  dale_inf_helm_a 0  65548 0 1200 704643238 2.000000 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_a Dale_Light_Infantry_Helm Dale_Light_Infantry_Helm 1  dale_inf_helm_a 0  65548 0 1200 704643238 2.000000 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_b Nasal_Helm_with_Leather Nasal_Helm_with_Leather 1  dale_archer_helm_a 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_b Dale_Light_Archer's_Helm Dale_Light_Archer's_Helm 1  dwarven_archer_helmet_t1 0  65548 0 1000 704643238 2.000000 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_c Round_Helm_with_Chain Round_Helm_with_Chain 1  dale_inf_helm_b 0  65548 0 1100 704643238 2.000000 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_c Dale_Infantry_Helm Dale_Infantry_Helm 1  dale_inf_helm_b 0  65548 0 1100 704643238 2.000000 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_d Round_Helm_with_Leather Round_Helm_with_Leather 1  dale_archer_helm_b 0  65548 0 900 704643238 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_d Dale_Archer's_Helm Dale_Archer's_Helm 1  dwarven_archer_helmet_t2 0  65548 0 900 704643238 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_e Conical_Helm_with_Leather Conical_Helm_with_Leather 1  dale_inf_helm_b 0  65548 0 1100 704643238 2.000000 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_e Dale_Heavy_Infantry_Helm Dale_Heavy_Infantry_Helm 1  dale_inf_helm_b 0  65548 0 1100 704643238 2.000000 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_f Conical_Helm_with_Chain Conical_Helm_with_Chain 1  dale_archer_helm_c 0  65548 0 900 704643238 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_f Dale_Heavy_Archer's_Helm Dale_Heavy_Archer's_Helm 1  dwarven_archer_helmet_t3 0  65548 0 900 704643238 2.000000 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_b 0  scab_dale_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.250000 100 0 0 0 0 28672 108 0 88 0 277 28
