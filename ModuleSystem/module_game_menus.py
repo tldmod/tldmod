@@ -7737,38 +7737,41 @@ game_menus = [
 		],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak into the sorcerer's lair under the night's cover.",
-						[(try_begin),
-							# CC:MARKER
-							 (neg|is_currently_night),
-							 (store_time_of_day, reg1),
-							 (assign, reg2, 24),
-							 (val_sub, reg2, reg1),
-							 (display_message, "@You wait for darkness to fall...", color_good_news),
-							 (rest_for_hours, reg2),
-						(try_end),
-						(set_party_battle_mode),
-						(call_script, "script_initialize_general_rescue"),
-						(call_script, "script_initialize_sorcerer_quest"),
-						(assign, "$rescue_stage", 0),
-	(assign, "$active_rescue", 5),
-        (quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
-	(disable_party, "p_ancient_ruins"), # CC: Only one chance...
-	(call_script, "script_set_meta_stealth"),
-	(call_script, "script_crunch_stealth_results"),
-	(call_script, "script_set_infiltration_player_record"),
-	(try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
+						[
+	(try_begin),
+		# CC:MARKER
+		(neg|is_currently_night),
+		(store_time_of_day, reg1),
+		(assign, reg2, 24),
+		(val_sub, reg2, reg1),
+		(display_message, "@You wait for darkness to fall...", color_good_news),
+		(rest_for_hours, reg2),
+		(change_screen_map),
+	(else_try),
+		(set_party_battle_mode),
+		(call_script, "script_initialize_general_rescue"),
+		(call_script, "script_initialize_sorcerer_quest"),
+		(assign, "$rescue_stage", 0),
+		(assign, "$active_rescue", 5),
+        	(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
+		(disable_party, "p_ancient_ruins"), # CC: Only one chance...
+		(call_script, "script_set_meta_stealth"),
+		(call_script, "script_crunch_stealth_results"),
+		(call_script, "script_set_infiltration_player_record"),
+		(try_begin),(ge, "$stealth_results", 3),(assign, "$rescue_stage", 0),(call_script, "script_infiltration_combat_1"),
 		(display_message, "@You_are_quickly_discovered_by_the_enemy."),
 		(display_message, "@Eliminate_them_before_the_alarm_spreads!"),
-	 (else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_2"),
+	 	(else_try),(eq, "$stealth_results", 2),(assign, "$rescue_stage", 1),(call_script, "script_infiltration_stealth_2"),
 		(display_message, "@You_advance_stealthily_far_into_the_forest."),
 		(display_message, "@Scout_this_area_alone_and_meet_your_men_beyond!"),
 		(display_message, "@Be_stealthy_but_eliminate_any_threats_quickly!"),
-	 (else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 2),(call_script, "script_final_sorcerer_fight"),
+	 	(else_try),(eq, "$stealth_results", 1),(assign, "$rescue_stage", 2),(call_script, "script_final_sorcerer_fight"),
 		(display_message, "@You_have_evaded_the_patrols_and_crept_close_to_the_ruins!"),
 		(display_message, "@You_have_found_the_sorcerer!"),
+		(try_end),
+		(assign, "$active_rescue", 5),
+		(change_screen_mission),
 	(try_end),
-	(assign, "$active_rescue", 5),
-	(change_screen_mission)
 	]),
     ("next_rescue_scene", [(eq, 1, 0)], "_",  
 						[
@@ -8128,14 +8131,14 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(assign, ":ambush_troop", "trp_no_troop"),
-	(assign, ":ambush_count", 0),
+	(assign, ":ambush_troop", "trp_wolf"), # Bugfix, sometimes there are no enemies...
+	(assign, ":ambush_count", 1), 
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
 		(assign, ":ambush_troop", "trp_spider"),
 		(assign, ":ambush_scene", "scn_mirkwood_ambush"),
-		(store_random_in_range, ":ambush_count", 1, 5), # 1 to 5 spiders
+		(store_random_in_range, ":ambush_count", 1, 5), # 1 to 5 spiders...
 	(else_try),
 		(eq|this_or_next, "$current_player_region", region_grey_mountains),
 		(eq, "$current_player_region", region_misty_mountains),
@@ -8145,7 +8148,8 @@ game_menus = [
 			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush 
 			(lt, ":rnd", 40), 
 			(assign, ":ambush_troop", "trp_bear"),
-			(store_random_in_range, ":ambush_count", 1, 3), # 1 to 2 bears
+			#(store_random_in_range, ":ambush_count", 1, 3), # 1 to 2 bears
+			(assign, ":ambush_count", 1),
 		(else_try),
 			(assign, ":ambush_troop", "trp_wolf"),
 			(store_random_in_range, ":ambush_count", 5, 9), # 5 to 8 wolves
@@ -8168,9 +8172,17 @@ game_menus = [
  ],
  ),
 
-("animal_ambush_success", 0, "The {s2} fall before you as wheat to a scythe!", "none", 
+("animal_ambush_success", 0, "The {s1} {reg0?fall:falls} before you as wheat to a scythe!", "none", 
 [
-	(str_store_troop_name_plural, s1, reg20),
+	(try_begin),
+		(gt, reg21, 1),
+		(assign, reg0, 1),
+		(str_store_troop_name_plural, s2, reg20),
+	(else_try),
+		(assign, reg0, 0),
+		(str_store_troop_name, s2, reg20),
+	(try_end),
+	(str_store_string, s1, s2), # TODO: ^ Update this horrible copy paste text ^
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),

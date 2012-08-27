@@ -1180,7 +1180,7 @@ items =[
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 ["whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 #BANNERS 
-# DO NOT CHANGE ORDER, THESE NEED TO BE IN ORDER FOR MORALE SCRIPTS TO WORK. -CC ##
+# TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
 ["mordor_banner","Mordor_Banner",[("banner_mordor",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
 ["isengard_banner","Isengard_banner",[("banner_isengard",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
 ["woodelf_banner","Mirkwood_Banner",[("banner_mirkwood",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(100)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(35,pierce),imodbits_weapon_good],
@@ -1267,8 +1267,8 @@ items =[
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
-["spider","Spider",[("spider",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(60)|horse_charge(25),imodbits_none,[]],
-["bear","Bear",[("bear",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(100)|body_armor(40)|horse_speed(45)|horse_maneuver(40)|horse_charge(45),imodbits_none,[]],
+["spider","Spider",[("spider",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(70)|horse_charge(25),imodbits_none,[]],
+["bear","Bear",[("bear",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(125)|body_armor(40)|horse_speed(50)|horse_maneuver(40)|horse_charge(25),imodbits_none,[]],
 ["wolf","Wolf",[("wolf",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25),imodbits_none,[]],
 
 ["save_compartibility_item7","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],

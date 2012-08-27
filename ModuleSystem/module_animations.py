@@ -1520,8 +1520,11 @@ animations = [
  ["warg_leapattack", acf_enforce_all|acf_align_with_ground|acf_displace_position, 
 	[1.0, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
   ],
- ["unused_horse_anim_7", 0, [1.0, "anim_horse", 0, 1, 0]],
- ["unused_horse_anim_8", 0, [1.0, "anim_horse", 0, 1, 0]],
+
+# Bear slappy anims... (cppcoder, merlkir)
+ ["bear_slap_right", acf_enforce_all|acf_align_with_ground, [1.0, "bear_slap_right", 1, 45, arf_blend_in_1]],
+ ["bear_uppercut", acf_enforce_all|acf_align_with_ground, [1.0, "bear_uppercut", 44, 93, arf_blend_in_1]],
+
  ["unused_horse_anim_9", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_10", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_11", 0, [1.0, "anim_horse", 0, 1, 0]],

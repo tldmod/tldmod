@@ -1,4 +1,4 @@
-1087
+1088
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -571,6 +571,7 @@ qstr_Report_this_ill_news Report_this_ill_news_to_the_Lady_at_once.
 qstr_The_sorcerer_is_flee The_sorcerer_is_fleeing!_Kill_him!
 qstr_The_sorcerer_is_dead The_sorcerer_is_dead!
 qstr_The_battle_is_won! The_battle_is_won!
+qstr_You_receive_{reg0}_d You_receive_{reg0}_damage.
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!

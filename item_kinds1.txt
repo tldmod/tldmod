@@ -2739,10 +2739,10 @@ itemsfile version 2
  itm_feet_chains_dwarf Feet_Chains Feet_Chains 1  chains_full_dwarf 0  3854 0 200 0 10.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_spider Spider Spider 1  spider 0  4097 0 1200 0 0.000000 100 0 30 0 3 60 60 50 0 0 25 0
+ itm_spider Spider Spider 1  spider 0  4097 0 1200 0 0.000000 100 0 30 0 3 60 70 50 0 0 25 0
 0
 
- itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0.000000 100 0 40 0 0 100 40 45 0 0 45 0
+ itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0.000000 100 0 40 0 0 125 40 50 0 0 25 0
 0
 
  itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0.000000 100 0 25 0 0 50 50 50 0 0 25 0

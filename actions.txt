@@ -936,10 +936,10 @@
   0.250000 anim_horse 600 601 1073741830 0 0.000000 0.000000 0.000000  0.000000 
  warg_leapattack 17410  1
   1.000000 wargLeapAttack 0 20 536870917 2829396006 0.000000 0.000000 0.000000  0.900000 
- unused_horse_anim_7 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_horse_anim_8 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
+ bear_slap_right 1026  1
+  1.000000 bear_slap_right 1 45 2 0 0.0 0.0 0.0 0.0 
+ bear_uppercut 1026  1
+  1.000000 bear_uppercut 44 93 2 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_9 0  1
   1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_10 0  1

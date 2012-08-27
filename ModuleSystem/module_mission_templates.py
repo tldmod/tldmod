@@ -2673,7 +2673,8 @@ mission_templates = [ # not used in game
 
 	common_battle_on_player_down,
 
-	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1)]),
+	# Make the teams enemies...
+	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
 
 	(0, 0, ti_once, 
 	[
@@ -2731,6 +2732,79 @@ mission_templates = [ # not used in game
 			(finish_mission),
 		(try_end)
 	]),
+
+# Bear striking...
+(1, 0, 0, [], [
+	(set_fixed_point_multiplier, 100),
+	(try_for_agents, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_is_human, ":agent"),
+		(call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
+		(gt, reg0, 0),
+		(agent_get_troop_id, ":agent_trp", ":agent"),
+		(eq, ":agent_trp", "trp_bear"),
+		(agent_get_horse, ":horse", ":agent"),
+		(ge, ":horse", 0),
+		(store_random_in_range, ":rnd", 0, 100),
+		(lt, ":rnd", 150), # 15% chance
+		(assign, ":enemy_in_front", 0),
+		(try_for_agents, ":target"),
+			(neq, ":enemy_in_front", 1),
+			(neq, ":agent", ":target"), # Stop hitting yourself!
+			(neq, ":agent", ":horse"), # Stop hitting yourself!
+			(agent_get_position, pos1, ":agent"),
+			(agent_get_position, pos2, ":target"),
+			(get_distance_between_positions, ":dist", pos1, pos2),
+			(lt, ":dist", 300),
+			(neg|position_is_behind_position, pos2, pos1),
+			(agent_get_team, ":agent_team", ":agent"),
+			(agent_get_team, ":target_team", ":target"),
+			(teams_are_enemies, ":agent_team", ":target_team"),
+			(assign, ":enemy_in_front", 1),
+		(try_end),
+		(eq, ":enemy_in_front", 1),
+		(store_random_in_range, ":rnd", 0, 2),
+		(assign, ":anim", "anim_bear_slap_right"),
+		(try_begin),
+			(eq, ":rnd", 1),
+			(assign, ":anim", "anim_bear_slap_right"),
+		(else_try),
+			(assign, ":anim", "anim_bear_uppercut"),
+		(try_end),
+		(agent_set_animation, ":horse", ":anim"),
+		(try_for_agents, ":target"),	
+			(neq, ":agent", ":target"), # Stop hitting yourself!
+			(neq, ":agent", ":horse"), # Stop hitting yourself!
+			(agent_is_alive, ":agent"),
+			(agent_is_human, ":agent"),
+			(agent_get_position, pos1, ":agent"),
+			(agent_get_position, pos2, ":target"),
+			(get_distance_between_positions, ":dist", pos1, pos2),
+			(lt, ":dist", 300),
+			(neg|position_is_behind_position, pos2, pos1),
+			(agent_get_team, ":agent_team", ":agent"),
+			(agent_get_team, ":target_team", ":target"),
+			(teams_are_enemies, ":agent_team", ":target_team"),
+			
+			(store_random_in_range, reg0, 10, 30),
+			#(display_message, "@DEBUG: Bear strikes!"),
+			(try_begin),
+				(get_player_agent_no, ":player"),
+				(eq, ":target", ":player"),
+				(display_message, "@You receive {reg0} damage."),
+			(try_end),
+			(set_show_messages, 0),
+			(store_agent_hit_points,":hp",":target",1),
+			(val_sub, ":hp", reg0),
+			(agent_set_hit_points, ":agent", ":hp", 1),
+			(agent_deliver_damage_to_agent, ":agent", ":target"),
+			(set_show_messages, 1),
+			
+			(agent_set_animation, ":target", "anim_strike_fly_back"),
+		(try_end),
+	(try_end),
+	]),
+
 
 	# Remove riderless creatures
 	(1, 0, 0, [], [

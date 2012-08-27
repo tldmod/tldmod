@@ -125,6 +125,13 @@ slot_item_agility_bonus           = 10 # 0 or 1, used to check if agility bonus 
 slot_item_intelligence_bonus      = 11 # 0 or 1, used to check if intelligence bonus was already applied by this item
 slot_item_charisma_bonus          = 12 # 0 or 1, used to check if charisma bonus was already applied by this item
 
+# For octo's defiled armor.
+slot_item_tableau_0		  = 0
+slot_item_tableau_1		  = 1
+slot_item_tableau_2		  = 2
+slot_item_tableau_3		  = 3
+slot_item_tableau_4		  = 4
+
 ########################################################
 ##  AGENT SLOTS            #############################
 ########################################################
