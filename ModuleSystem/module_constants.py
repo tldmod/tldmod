@@ -2098,10 +2098,10 @@ tld_conv_bit_nazgul_victory     = 0x40
 
 # TLD morale codes -x% chance they will flee
 
-tld_morale_very_good		= 20
-tld_morale_good			= 10
-tld_morale_average		= 5
-tld_morale_poor			= 0
+tld_morale_very_good		= 40
+tld_morale_good			= 20
+tld_morale_average		= 10
+tld_morale_poor			= 5
 
 tld_morale_formation_bonus	= 10	
 
@@ -2110,6 +2110,11 @@ tld_morale_leader_bonus		= 10
 tld_morale_leader_average	= 5	
 tld_morale_leader_avenge	= 20
 tld_morale_leader_urukhai	= 20
+
+tld_morale_rout			= 60
+
+tld_morale_rout_allies		= -tld_morale_rout
+tld_morale_rout_enemies		= tld_morale_rout
 
 agent_morale_state_normal		  	= 0
 agent_morale_state_disciplined		  	= 1

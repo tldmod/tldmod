@@ -761,7 +761,7 @@ morale_scripts = [
 	(val_sub,":ally",":enemy"),
 
 	(try_begin),
-		(ge,":ally",40),
+		(ge,":ally",tld_morale_rout_enemies),
 		(call_script, "script_rout_enemies"),
 		(store_mul, ":enemies_ratio", reg1, 100),
 		(val_div, ":enemies_ratio", reg0),
@@ -783,7 +783,7 @@ morale_scripts = [
 	(try_end),
 
 	(try_begin),
-		(le,":ally",-40),
+		(le,":ally",tld_morale_rout_allies),
 		(call_script, "script_rout_allies"),
 		#(assign, reg2, reg0),
 		#(assign, reg3, reg1),

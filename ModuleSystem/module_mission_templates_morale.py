@@ -35,7 +35,7 @@ tld_morale_triggers = [
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
-		(le, ":ally", -40),
+		(le, ":ally", tld_morale_rout_allies),
 		(get_player_agent_no, ":player"),
 	
 		(assign, ":max_rallies", 1),
@@ -95,7 +95,7 @@ tld_morale_triggers = [
 
 		# When allied troops are routed, allied commanders rally their troops!
 		(try_begin),
-			(le, ":ally", -40),
+			(le, ":ally", tld_morale_rout_allies),
 			(get_player_agent_no, ":player"),
 			(try_for_agents, ":agent"),
 				(neq, ":agent", ":player"),
@@ -153,7 +153,7 @@ tld_morale_triggers = [
 
 		# When enemy troops are routed, enemy commanders rally their troops!
 		(try_begin),
-			(ge, ":ally", 40),
+			(ge, ":ally", tld_morale_rout_enemies),
 			(try_for_agents, ":agent"),
 				(agent_is_human, ":agent"),
 				(agent_is_alive, ":agent"),

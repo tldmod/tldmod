@@ -2678,9 +2678,13 @@ mission_templates = [ # not used in game
 
 	(0, 0, ti_once, 
 	[
+		#(str_store_troop_name, s1, reg20),
+		#(display_message, "@DEBUG: Enemy to spawn: {s1}"),
+		#(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+
 		# Make enemies charge...
 		(set_show_messages, 0),
-		(team_give_order, 1, grc_everyone, mordr_charge),
+			(team_give_order, 1, grc_everyone, mordr_charge),
 		(set_show_messages, 1),
 
 		(store_current_scene, ":cur_scene"),
@@ -2696,6 +2700,7 @@ mission_templates = [ # not used in game
 			#(assign, reg0, ":cur_entry"),
 			#(display_message, "@{s1} at entry {reg0}"),
 		(try_end),
+
 
 		(assign, ":cur_entry", 17),
 		(try_for_range, ":unused", 0, reg21),
@@ -2746,7 +2751,7 @@ mission_templates = [ # not used in game
 		(agent_get_horse, ":horse", ":agent"),
 		(ge, ":horse", 0),
 		(store_random_in_range, ":rnd", 0, 100),
-		(lt, ":rnd", 150), # 15% chance
+		(lt, ":rnd", 15), # 15% chance
 		(assign, ":enemy_in_front", 0),
 		(try_for_agents, ":target"),
 			(neq, ":enemy_in_front", 1),
@@ -2796,7 +2801,7 @@ mission_templates = [ # not used in game
 			(set_show_messages, 0),
 			(store_agent_hit_points,":hp",":target",1),
 			(val_sub, ":hp", reg0),
-			(agent_set_hit_points, ":agent", ":hp", 1),
+			(agent_set_hit_points, ":target", ":hp", 1),
 			(agent_deliver_damage_to_agent, ":agent", ":target"),
 			(set_show_messages, 1),
 			
@@ -2817,6 +2822,12 @@ mission_templates = [ # not used in game
 		(eq, ":agent_trp", "trp_wolf"),
 		(agent_get_horse, ":horse", ":agent"),
 		(lt, ":horse", 0),
+		(try_begin),
+			(eq, cheat_switch, 1),
+			(agent_get_troop_id, ":agent_trp", ":agent"),
+			(str_store_troop_name, s1, ":agent_trp"),
+			(display_message, "@DEBUG: AGENT REMOVED: {s1}"),
+		(try_end),
 		(call_script, "script_remove_agent", ":agent"),
 	(try_end),
 	]),

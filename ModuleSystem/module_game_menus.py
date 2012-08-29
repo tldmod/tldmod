@@ -8131,7 +8131,7 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(assign, ":ambush_troop", "trp_wolf"), # Bugfix, sometimes there are no enemies...
+	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Bugfix, idk why yet, but sometimes there are no enemies...
 	(assign, ":ambush_count", 1), 
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
@@ -8182,20 +8182,20 @@ game_menus = [
 		(assign, reg0, 0),
 		(str_store_troop_name, s2, reg20),
 	(try_end),
-	(str_store_string, s1, s2), # TODO: ^ Update this horrible copy paste text ^
+	(str_store_string, s1, s2),
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
-	("repeat",[(eq, cheat_switch, 1)],"Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 
-("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companions,} but luckily you managed to fend them off. You have received many wounds though.", "none", 
+("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companions,} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
 	(assign, reg0, 0),
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
-	("repeat",[],"Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 
 ("build_your_scene",0,
