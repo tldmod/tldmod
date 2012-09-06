@@ -2739,7 +2739,7 @@ itemsfile version 2
  itm_feet_chains_dwarf Feet_Chains Feet_Chains 1  chains_full_dwarf 0  3854 0 200 0 10.000000 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_spider Spider Spider 1  spider 0  4097 0 1200 0 0.000000 100 0 30 0 3 60 70 50 0 0 25 0
+ itm_spider Spider Spider 1  spider 0  4097 0 1200 0 0.000000 100 0 30 0 3 60 75 50 0 0 25 0
 0
 
  itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0.000000 100 0 40 0 0 125 40 50 0 0 25 0
@@ -2748,13 +2748,14 @@ itemsfile version 2
  itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0.000000 100 0 25 0 0 50 50 50 0 0 25 0
 0
 
- itm_save_compartibility_item7 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_defiled_armor_gondor Defiled_Gondor_Leader's_Surcoat Defiled_Gondor_Leader's_Surcoat 1  defile_gondor 0  16781325 0 3000 0 22.000000 100 0 38 10 0 0 0 0 0 0 0 0
+1
+-50.000000  1 1981 2 1729382256910270509 0 
+
+ itm_defiled_armor_rohan Defiled_Rohan_Hauberk Defiled_Rohan_Hauberk 1  defile_rohan 0  16781325 0 1600 0 18.000000 100 0 33 12 0 0 0 0 0 0 0 0
 0
 
- itm_save_compartibility_item8 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_save_compartibility_item9 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_defiled_armor_dale Defiled_Dale_Noble_Armor Defiled_Dale_Noble_Armor 1  defile_dale 0  16781325 0 2000 0 22.000000 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
  itm_save_compartibility_item10 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0

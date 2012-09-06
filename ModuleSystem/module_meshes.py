@@ -399,6 +399,11 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("icon_helmsdeep"   ,0, "tableau_mesh_hd"          , 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("icon_dolamroth"   ,0, "tableau_mesh_dolamroth"   , 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("icon_edoras"      ,0, "tableau_mesh_edoras"      , 0, 0, 0, 0, 0, 0, 10, 10, 10),
-  
+### TLD defiled armor backgrounds
+  ("defiled_gondor_bg" ,0, "tableau_mesh_gondor" , 	0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_defiled_rohan_background" ,0, "tableau_mesh_rohan" , 	0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_defiled_dale_background" ,0, "tableau_mesh_dale" , 		0, 0, 0, 0, 0, 0, 10, 10, 10),
+### TLD defiled armor decals
+ 
   
   ]

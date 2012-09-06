@@ -1267,13 +1267,13 @@ items =[
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
-["spider","Spider",[("spider",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(70)|horse_charge(25),imodbits_none,[]],
+["spider","Spider",[("spider",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
 ["bear","Bear",[("bear",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(125)|body_armor(40)|horse_speed(50)|horse_maneuver(40)|horse_charge(25),imodbits_none,[]],
 ["wolf","Wolf",[("wolf",0)], itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25),imodbits_none,[]],
 
-["save_compartibility_item7","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
-["save_compartibility_item8","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
-["save_compartibility_item9","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["defiled_armor_gondor","Defiled_Gondor_Leader's_Surcoat",[("defile_gondor",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,3000,weight(22)|head_armor(0)|body_armor(38)|leg_armor(10)|difficulty(0),imodbits_none,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_defiled_gondor_armor",0)])]],
+["defiled_armor_rohan","Defiled_Rohan_Hauberk",[("defile_rohan",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1600,weight(18)|head_armor(0)|body_armor(33)|leg_armor(12)|difficulty(0),imodbits_none, []],
+["defiled_armor_dale","Defiled_Dale_Noble_Armor",[("defile_dale",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_none, []],
 
 ["save_compartibility_item10","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 

@@ -1693,22 +1693,6 @@ game_menus = [
 		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
 	]),
 
-     	("camp_cctest_money",[],"Take All My Money",
-	[
-      		(store_troop_gold, ":total_gold", "trp_player"),
-      		(troop_remove_gold, "trp_player",":total_gold"),
-	]),
-
-     	("camp_cctest_wi",[],"Weaken Isengard",
-	[
-		(faction_set_slot, "fac_isengard", slot_faction_strength_tmp, 200),
-	]),
-
-     	("camp_cctest_wm",[],"Weaken Mirkwood",
-	[
-		(faction_set_slot, "fac_woodelf", slot_faction_strength_tmp, 200),
-	]),
-
      	("camp_cctest_rout_ally",[],"Add troops to routed allies",
 	[
 		(store_random_in_range, ":troop_no", "trp_gondor_noblemen", "trp_steward_guard"),
@@ -1730,6 +1714,7 @@ game_menus = [
 		(assign, "$g_spawn_allies_routed", 1),
 		(assign, "$g_spawn_enemies_routed", 1),
 		(call_script,"script_cf_spawn_routed_parties"),
+		(display_message, "@Spawned routed parties!", color_good_news),
 	]),		
 	
 
@@ -1749,7 +1734,6 @@ game_menus = [
 		(display_message, "@Party count: {reg0}"),
 	]),
 
-     	("camp_cctest_mounts",[],"Gimme animal mounts",[(troop_add_item, "trp_player","itm_spider"),]),
      	("camp_cctest_items",[],"Refactionize Items",[(call_script, "script_set_item_faction")]),
      	("camp_cctest_pos",[],"Print Coords x100",
 	[
@@ -1758,6 +1742,12 @@ game_menus = [
        		(position_get_x, reg2, pos13),
       		(position_get_y, reg3, pos13),
       		(display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
+	]),
+     	("camp_cctest_defiled",[],"Add WIP Items",
+	[
+		(troop_add_item, "trp_player","itm_defiled_armor_gondor"),
+		(troop_add_item, "trp_player","itm_defiled_armor_rohan"),
+		(troop_add_item, "trp_player","itm_defiled_armor_dale"),
 	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -7737,15 +7727,14 @@ game_menus = [
 		],
   [ ("rescue_mission",  [(neg|quest_slot_ge, "qst_mirkwood_sorcerer",slot_quest_current_state,2)],
   "Sneak into the sorcerer's lair under the night's cover.",
-						[
+	[
 	(try_begin),
-		# CC:MARKER
 		(neg|is_currently_night),
 		(store_time_of_day, reg1),
 		(assign, reg2, 24),
 		(val_sub, reg2, reg1),
 		(display_message, "@You wait for darkness to fall...", color_good_news),
-		(rest_for_hours, reg2),
+		(rest_for_hours, reg2), #rest while not attackable
 		(change_screen_map),
 	(else_try),
 		(set_party_battle_mode),
@@ -8131,7 +8120,12 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Bugfix, idk why yet, but sometimes there are no enemies...
+	# (str_store_string, s1, "@You and your companions find yourselves separated from the rest of your party, when suddenly..."),
+ ],
+ [
+	("animal_ambush_continue",[],"Continue...",
+	[
+	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Default, just in case something glitches...
 	(assign, ":ambush_count", 1), 
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
@@ -8158,21 +8152,32 @@ game_menus = [
 	(assign, reg20, ":ambush_troop"),
 	(assign, reg21, ":ambush_count"),
 	(assign, reg22, ":ambush_scene"),
- ],
- [
-	("animal_ambush_continue",[],"Continue...",
-	[
-		(set_jump_entry, 0),
-		(modify_visitors_at_site, reg22),
-		(reset_visitors),
-		(jump_to_scene, reg22),
-		(set_jump_mission, "mt_animal_ambush"),
-		(change_screen_mission),
+
+	(set_jump_entry, 0),
+	(modify_visitors_at_site, reg22),
+	(reset_visitors),
+
+	(assign, ":cur_entry", 1),
+	(try_for_range, ":npc", companions_begin, companions_end),
+		(main_party_has_troop, ":npc"),
+		(set_visitor, ":cur_entry", ":npc"),
+		(val_add, ":cur_entry", 1),
+	(try_end),
+
+	(assign, ":cur_entry", 17),
+	(try_for_range, ":unused", 0, reg21),
+		(set_visitor, ":cur_entry", reg20),
+		(val_add, ":cur_entry", 1),
+	(try_end),
+
+	(jump_to_scene, reg22),
+	(set_jump_mission, "mt_animal_ambush"),
+	(change_screen_mission),
 	]),
  ],
  ),
 
-("animal_ambush_success", 0, "The {s1} {reg0?fall:falls} before you as wheat to a scythe!", "none", 
+("animal_ambush_success", 0, "The {s1} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead.", "none", 
 [
 	(try_begin),
 		(gt, reg21, 1),
@@ -8182,16 +8187,26 @@ game_menus = [
 		(assign, reg0, 0),
 		(str_store_troop_name, s2, reg20),
 	(try_end),
-	(str_store_string, s1, s2),
 ],
 [
-	("continue",[],"Continue...",[(change_screen_map)]),
+	("continue",[],"Continue...",[(store_mul, ":exp", 100, reg21),(add_xp_as_reward, ":exp"),(change_screen_map)]),
 	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 
-("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companions,} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
+("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
-	(assign, reg0, 0),
+	(assign, reg0, 1),
+	(assign, reg1, 0),
+	(assign, reg2, 1),
+	(try_for_range, ":npc", companions_begin, companions_end),
+		(main_party_has_troop, ":npc"),
+		(assign, reg0, 0),
+		(val_add, reg1, 1),
+	(try_end),
+	(try_begin),
+		(gt, reg1, 1),
+		(assign, reg2, 0),
+	(try_end),
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),

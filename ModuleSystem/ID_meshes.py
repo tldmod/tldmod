@@ -308,5 +308,8 @@ mesh_icon_minastirith = 306
 mesh_icon_helmsdeep = 307
 mesh_icon_dolamroth = 308
 mesh_icon_edoras = 309
+mesh_defiled_gondor_bg = 310
+mesh_tableau_defiled_rohan_background = 311
+mesh_tableau_defiled_dale_background = 312
 
 

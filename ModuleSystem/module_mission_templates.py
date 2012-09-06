@@ -2686,27 +2686,6 @@ mission_templates = [ # not used in game
 		(set_show_messages, 0),
 			(team_give_order, 1, grc_everyone, mordr_charge),
 		(set_show_messages, 1),
-
-		(store_current_scene, ":cur_scene"),
-		(modify_visitors_at_site, ":cur_scene"), 
-		(reset_visitors),
-
-		(assign, ":cur_entry", 1),
-		(try_for_range, ":npc", companions_begin, companions_end),
-			(main_party_has_troop, ":npc"),
-			(set_visitor, ":cur_entry", ":npc"),
-			(val_add, ":cur_entry", 1),
-			#(str_store_troop_name, s1, ":npc"),
-			#(assign, reg0, ":cur_entry"),
-			#(display_message, "@{s1} at entry {reg0}"),
-		(try_end),
-
-
-		(assign, ":cur_entry", 17),
-		(try_for_range, ":unused", 0, reg21),
-			(set_visitor, ":cur_entry", reg20),
-			(val_add, ":cur_entry", 1),
-		(try_end),
 	], 
 	[]),
 

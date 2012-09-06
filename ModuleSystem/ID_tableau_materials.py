@@ -43,3 +43,6 @@ tableau_rohan_plain_shield = 41
 tableau_rohan_boss_shield = 42
 tableau_far_harad_shield = 43
 tableau_icon_burnable = 44
+tableau_defiled_gondor_armor = 45
+tableau_defiled_rohan_armor = 46
+tableau_defiled_dale_armor = 47

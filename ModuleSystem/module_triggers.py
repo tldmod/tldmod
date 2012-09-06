@@ -1381,7 +1381,7 @@ triggers = [
 	(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
 
 	(try_begin),
-		(faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, other wise you suceed.
+		(faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, otherwise you suceed.
 		(neg|ge, ":count", ":start_killcount"),
 		(call_script, "script_fail_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
@@ -1448,8 +1448,6 @@ triggers = [
    
 	# CC: Ambushes
 	(6, 0, 0, [],[
-	(try_begin),
-		(lt, "$g_animal_ambush_counter", 3), # No ambushes if experienced three in last several days...
 		(try_begin),
 			(eq|this_or_next, "$current_player_region", region_misty_mountains),
 			(eq|this_or_next, "$current_player_region", region_grey_mountains),
@@ -1460,7 +1458,7 @@ triggers = [
 			(call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
 			(try_begin),
 				(lt, reg1, 8),
-				(val_sub, ":ambush_chance", 30),
+				(val_sub, ":ambush_chance", 25),
 			(else_try),
 				(gt, reg1, 35),
 				(val_sub, ":ambush_chance", 70),
@@ -1477,8 +1475,8 @@ triggers = [
 				(jump_to_menu, "mnu_animal_ambush"),
 			(try_end),
 		(try_end),		
-	(try_end),
 	]),
+
 
 # save game compartibility triggers. replace those if you add new ones
    (999, 0, ti_once, [],[]),
