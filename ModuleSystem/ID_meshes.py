@@ -309,7 +309,16 @@ mesh_icon_helmsdeep = 307
 mesh_icon_dolamroth = 308
 mesh_icon_edoras = 309
 mesh_defiled_gondor_bg = 310
-mesh_tableau_defiled_rohan_background = 311
-mesh_tableau_defiled_dale_background = 312
+mesh_defiled_rohan_bg = 311
+mesh_defiled_dale_bg = 312
+mesh_defiled_gondor_chest1 = 313
+mesh_defiled_gondor_chest2 = 314
+mesh_defiled_gondor_chest3 = 315
+mesh_defiled_gondor_chest4 = 316
+mesh_defiled_gondor_chest5 = 317
+mesh_defiled_gondor_chest6 = 318
+mesh_defiled_gondor_thigh1 = 319
+mesh_defiled_gondor_thigh2 = 320
+mesh_defiled_gondor_thigh3 = 321
 
 

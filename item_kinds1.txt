@@ -2753,10 +2753,12 @@ itemsfile version 2
 -50.000000  1 1981 2 1729382256910270509 0 
 
  itm_defiled_armor_rohan Defiled_Rohan_Hauberk Defiled_Rohan_Hauberk 1  defile_rohan 0  16781325 0 1600 0 18.000000 100 0 33 12 0 0 0 0 0 0 0 0
-0
+1
+-50.000000  1 1981 2 1729382256910270510 0 
 
  itm_defiled_armor_dale Defiled_Dale_Noble_Armor Defiled_Dale_Noble_Armor 1  defile_dale 0  16781325 0 2000 0 22.000000 100 2 38 15 0 0 0 0 0 0 0 0
-0
+1
+-50.000000  1 1981 2 1729382256910270511 0 
 
  itm_save_compartibility_item10 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.500000 90 0 0 0 0 0 0 0 0 0 0 0
 0

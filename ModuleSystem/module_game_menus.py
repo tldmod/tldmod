@@ -1748,6 +1748,7 @@ game_menus = [
 		(troop_add_item, "trp_player","itm_defiled_armor_gondor"),
 		(troop_add_item, "trp_player","itm_defiled_armor_rohan"),
 		(troop_add_item, "trp_player","itm_defiled_armor_dale"),
+		(troop_add_item, "trp_player","itm_gon_leader_surcoat_cloak"),
 	]),
 
      ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
