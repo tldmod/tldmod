@@ -1,4 +1,4 @@
-1090
+1098
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -68,6 +68,13 @@ qstr___What_business_do_y _'What_business_do_you_have_here,_supplicants?'
 qstr___Your_Stewardship_w _'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr___Enough_of_this_mad _'Enough_of_this_madness!_Guards!!'
 qstr___I_ve_had_enough_of _'I've_had_enough_of_these_pranks..._The_next_bunch_would_have_to_kneel!'
+qstr_Next_Armor Next_Armor
+qstr_Chest Chest
+qstr_Cape Cape
+qstr_Arms Arms
+qstr_Thighs Thighs
+qstr_Legs Legs
+qstr_Value_changed... Value_changed...
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -831,6 +838,7 @@ qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Is
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
+qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_Breaking_camp... Breaking_camp...
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).

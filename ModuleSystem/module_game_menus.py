@@ -3145,8 +3145,24 @@ game_menus = [
   "^^^^^^^^^     Which object?", "none",
  [(set_background_mesh, "mesh_ui_default_menu_window"),],
  [ 
+
+    ("camp_customize_defilement",
+		[
+			# (CppCoder) Only evil players can do this, though only evil players should be able to aqquire the items anyway.
+			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			(player_has_item|this_or_next, "itm_defiled_armor_gondor"),
+			(player_has_item|this_or_next, "itm_defiled_armor_rohan"),
+			(player_has_item, "itm_defiled_armor_dale"),
+		],
+		"Customize defiled armor",
+		[
+			(start_presentation, "prsnt_customize_defilement"),
+		]
+	),
+
     ("camp_drink_water",
-		[	(player_has_item,"itm_ent_water"),
+		[
+			(player_has_item,"itm_ent_water"),
 			(eq,"$g_ent_water_ever_drunk",0), # can drink only if never before
 		],
 		"Drink the Ent Water!",
@@ -3164,7 +3180,8 @@ game_menus = [
 		(try_end),
 		]
 	),
-	
+
+
     # ("camp_recruit_prisoners",
        # [(troops_can_join, 1),
         # (store_current_hours, ":cur_time"),
@@ -8143,8 +8160,7 @@ game_menus = [
 			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush 
 			(lt, ":rnd", 40), 
 			(assign, ":ambush_troop", "trp_bear"),
-			#(store_random_in_range, ":ambush_count", 1, 3), # 1 to 2 bears
-			(assign, ":ambush_count", 1),
+			(assign, ":ambush_count", 1),			# 1 bear only
 		(else_try),
 			(assign, ":ambush_troop", "trp_wolf"),
 			(store_random_in_range, ":ambush_count", 5, 9), # 5 to 8 wolves
@@ -8178,7 +8194,7 @@ game_menus = [
  ],
  ),
 
-("animal_ambush_success", 0, "The {s1} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead.", "none", 
+("animal_ambush_success", 0, "The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}", "none", 
 [
 	(try_begin),
 		(gt, reg21, 1),
@@ -8188,6 +8204,7 @@ game_menus = [
 		(assign, reg0, 0),
 		(str_store_troop_name, s2, reg20),
 	(try_end),
+	(str_store_string, s3, "@You cover up your tracks and move onward."), 
 ],
 [
 	("continue",[],"Continue...",[(store_mul, ":exp", 100, reg21),(add_xp_as_reward, ":exp"),(change_screen_map)]),
@@ -8198,7 +8215,7 @@ game_menus = [
 [
 	(assign, reg0, 1),
 	(assign, reg1, 0),
-	(assign, reg2, 1),
+	(assign, reg2, 0),
 	(try_for_range, ":npc", companions_begin, companions_end),
 		(main_party_has_troop, ":npc"),
 		(assign, reg0, 0),
@@ -8206,7 +8223,7 @@ game_menus = [
 	(try_end),
 	(try_begin),
 		(gt, reg1, 1),
-		(assign, reg2, 0),
+		(assign, reg2, 1),
 	(try_end),
 ],
 [

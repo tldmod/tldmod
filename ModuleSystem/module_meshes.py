@@ -399,6 +399,10 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("icon_helmsdeep"   ,0, "tableau_mesh_hd"          , 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("icon_dolamroth"   ,0, "tableau_mesh_dolamroth"   , 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("icon_edoras"      ,0, "tableau_mesh_edoras"      , 0, 0, 0, 0, 0, 0, 10, 10, 10),
+
+### TLD defiled presentation meshes
+  ("defiled_customize_bg", 0, "defile_ui_background", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("defiled_customize_overlay", 0, "defile_ui_overlay", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ### TLD defiled armor backgrounds
   ("defiled_gondor_bg" ,0, "tableau_mesh_gondor" , 	0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_rohan_bg" ,0, "tableau_mesh_rohan" , 	0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -411,11 +415,9 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("defiled_gondor_chest4" ,0, "gondor_chest_sauron_eye_a" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_gondor_chest5" ,0, "gondor_chest_saruman_hand_a" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_gondor_chest6" ,0, "gondor_chest_saruman_rune" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
-
   ("defiled_gondor_thigh1" ,0, "gondor_thigh_tear_aa" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_gondor_thigh2" ,0, "gondor_thigh_tear_ab" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_gondor_thigh3" ,0, "gondor_thigh_tear_ac" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
-
 ### ROHAN
 ### DALE
   
