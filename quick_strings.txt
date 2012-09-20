@@ -1,4 +1,4 @@
-1098
+1101
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -164,8 +164,12 @@ qstr_nothing nothing
 qstr_Good Good
 qstr_Med Med
 qstr_Bad Bad
-qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded
+qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
+qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
+qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
+qstr_{reg4}_wounded_{reg5 {reg4}_wounded,_{reg5}_routed
 qstr_killed killed
+qstr_routed routed
 qstr_wounded wounded
 qstr_{reg3?{reg3}:}_{s1}_ {reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}_{reg3?{reg3}:}_ {s0},_{reg3?{reg3}:}_{s1}_({s2})
@@ -525,7 +529,6 @@ qstr_You_have_found_the_lo You_have_found_the_local_authority...
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...
 qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
-qstr_{s1}_delivers_{reg1} {s1}_delivers_{reg1}_damage_to_mount.
 qstr_You_fall_off_of_your You_fall_off_of_your_mount!
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{s1}_fell_unconsciou {s1}_fell_unconscious.
@@ -883,8 +886,8 @@ qstr_You_are_inside_Fango You_are_inside_Fangorn._{s11}
 qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
 qstr_Your_party_s_morale_ Your_party's_morale_has_risen_from_hatred.
 qstr_Your_companions__mor Your_companions'_morale_has_dropped_from_fear.
-qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_to_{reg1}.
-qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_to_{reg1}.
+qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{reg1}.
+qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
 qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!

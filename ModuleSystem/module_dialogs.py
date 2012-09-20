@@ -8503,6 +8503,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(neg|troop_is_hero, "$g_talk_troop"),
 		(agent_set_animation, ":agent", "anim_fall_body_back"), 
 		(agent_set_hit_points,":agent",0,0),
+		
 		(agent_deliver_damage_to_agent, reg1, ":agent"),
 	(try_end),
 	(party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
@@ -8792,7 +8793,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (store_partner_faction, reg14),
     (str_store_faction_name, s14, reg14),
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, reg14, reg0),],
-"It has been an honour to serve {s14} under your command, Commander.^^Now, as you know, I've been reassigned to home defence.^I shall soon leave."+promise_reg14_rp_of_s14, 
+"It has been an honour to serve {s14} under your command, Commander.^^Now, as you know, I've been reassigned to home defense.^I shall soon leave."+promise_reg14_rp_of_s14, 
   "disband_regular_member_confirm_yn",[]],
 
 [anyone|plyr,"regular_member_talk", [
@@ -8910,7 +8911,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 			(eq, "$talk_context", tc_party_encounter),
                   	(eq, "$g_encountered_party_template", "pt_routed_allies"),
 		 ], 
-		"[Move On]", "close_window", [(assign, "$g_leave_encounter",1)] ],
+		"[Leave]", "close_window", [(assign, "$g_leave_encounter",1)] ],
 
 # END ROUTED DIALOGS
 

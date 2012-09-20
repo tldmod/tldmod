@@ -834,7 +834,7 @@ tableaus = [
 
 ("defile_troop", 0, "troop_portrait", 1024, 1024, 0, 0, 600, 600,
    [
-     (store_script_param, ":type", 1),
+    # (store_script_param, ":type", 1),
      (set_fixed_point_multiplier, 100),
      (cur_tableau_set_background_color, 0x00000000),
      (cur_tableau_set_ambient_light, 10,11,15),

@@ -1071,7 +1071,7 @@ tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
 	(try_begin), 
 		(eq,"$player_cheering",0), # don't reshout if just shouted
 		(call_script, "script_troop_get_cheer_sound", reg11),
-        (gt, reg1, -1), #MV fix
+        	(gt, reg1, -1), #MV fix
 		(agent_play_sound, reg10, reg1),    
 	(try_end),
 	(assign,"$player_cheering",1),
@@ -1751,7 +1751,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 		(agent_get_item_id, ":item", ":mount"),
 		(try_begin),
 			(is_between|this_or_next, ":item", item_horse_begin ,item_horse_end),
-			(eq, ":item", "itm_mearas_reward"),			# Fixes minor sound bug
+			(eq, ":item", "itm_mearas_reward"),			# CC: Fixes minor sound bug
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 

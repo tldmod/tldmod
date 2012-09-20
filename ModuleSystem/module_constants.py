@@ -819,7 +819,9 @@ slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
 slot_troop_flags       = 134 # the original flags defined for troops, including item guarantees (mtarini)
 
-slot_troop_routed 	= 0 # tracks how many of a troop have been routed.
+slot_troop_routed_us 		= 135 # tracks how many of a troop have been routed.
+slot_troop_routed_allies 	= 136 # tracks how many of a troop have been routed.
+slot_troop_routed_enemies 	= 137 # tracks how many of a troop have been routed.
 
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
@@ -2096,33 +2098,36 @@ tld_conv_bit_nazgul_baggins     = 0x10
 tld_conv_bit_nazgul_evil_war    = 0x20
 tld_conv_bit_nazgul_victory     = 0x40
 
+# Constants added by CppCoder below
+
 # TLD morale codes -x% chance they will flee
 
 tld_morale_very_good		= 25
 tld_morale_good			= 12
-tld_morale_average		= 6
+tld_morale_average		= 6 
 tld_morale_poor			= 3
 
-tld_morale_formation_bonus	= 10	
+tld_morale_formation_bonus	= 10 # Gondor and Dunland
 
-tld_morale_leader_important	= 40 # Black numenoreons / evil men 
+tld_morale_leader_important	= 40 # Black numenoreans / evil men
 tld_morale_leader_bonus		= 10 # Default morale bonus
 tld_morale_leader_average	= 10 # Average
 tld_morale_leader_avenge	= 20 # Dwarfs
 tld_morale_leader_urukhai	= 20 # Uruk hai when leader falls
 
-tld_morale_rout			= 45
+tld_morale_rout			= 40
 
 tld_morale_rout_allies		= -tld_morale_rout
 tld_morale_rout_enemies		= tld_morale_rout
 
+# Not used...
 agent_morale_state_normal		  	= 0
 agent_morale_state_disciplined		  	= 1
 agent_morale_state_fanatic		  	= 5
 
 # Party count option in tweaks menu
 
-tld_party_count_option_increment	= 25
+tld_party_count_option_increment	= 10
 tld_party_count_option_max		= 900
 tld_party_count_option_min		= 600
 tld_party_count_option_high_crash	= 901
@@ -2132,3 +2137,7 @@ tld_siege_min_party_size		= 75
 
 defiled_meshes_begin 			= "itm_defiled_armor_gondor"
 defiled_meshes_end			= "itm_save_compartibility_item10"
+
+tld_rp_cap				= 200000
+tld_if_cap				= 5000
+tld_influence_trait_bonus		= 2

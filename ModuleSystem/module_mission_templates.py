@@ -40,8 +40,7 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
-	#tld_rider_test, 
-	tld_wargs_attack_horses, # CC: Just a thought, could be added in though.
+	#tld_wargs_attack_horses, # CC: WIP
 	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
@@ -425,6 +424,8 @@ mission_templates = [ # not used in game
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
+
+
   ],
   #tld_common_peacetime_scripts +
   [  
@@ -518,8 +519,8 @@ mission_templates = [ # not used in game
   tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
   (ti_before_mission_start,0,0,[],[
     (set_battle_advantage, 0),
-	(team_set_relation,1,2,1), # plater friend with troops
-	(team_set_relation,2,3,0), # troops neuter with pris
+	(team_set_relation,1,2,1), # player friend with troops
+	(team_set_relation,2,3,0), # troops neutrl with pris
 	(assign, "$talk_context", tc_troop_review_talk),
 	(troop_get_xp, "$inital_player_xp", "trp_player"), 
 	]),
@@ -527,7 +528,7 @@ mission_templates = [ # not used in game
 	(assign, "$talk_context", 0),
 	(call_script, "script_count_mission_casualties_from_agents"),
 
-	# Remove killed trolls (maybe others) from killed party.
+	# CC: Remove killed trolls (maybe others) from killed party.
 	(party_get_num_companion_stacks, ":num_stacks", "p_enemy_casualties"),
 	(try_for_range, ":index", 0, ":num_stacks"),
         	(party_stack_get_troop_id, ":stack_troop",  "p_enemy_casualties", ":index"),

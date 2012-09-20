@@ -6939,7 +6939,8 @@ game_menus = [
         (eq, "$current_town", "p_town_erebor"),
         (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
         ],"Search for the lost spears inside the mountains.",[
-              (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      (reset_visitors),
+              (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
+	      (reset_visitors),
               (set_visitor,1,"trp_player"),
               (set_visitor, 2, "trp_goblin_gundabad"),
               (set_visitor, 3, "trp_fell_orc_warrior_gundabad"),
@@ -7096,6 +7097,7 @@ game_menus = [
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
             (change_screen_return,0),
+	    #(call_script, "script_update_respoint"),
           ],"Leave Area"),
 
     ]

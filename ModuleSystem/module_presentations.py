@@ -2773,7 +2773,7 @@ presentations = [
 		(set_fixed_point_multiplier, 1000),
 		(assign, "$g_presentation_obj_1", -1), # Do this so if we have only one/no armors, the object is invalid.
 		(assign, "$g_defiled_armor_mesh", "itm_defiled_armor_gondor"),
-		(assign, "$g_defiled_armor_rotation", 0),
+		#(assign, "$g_defiled_armor_rotation", 0),
 		(assign, ":num_armors", 0),
 
 		# We go in reverse order so that the items are set correctly only if the player has the item
@@ -2842,7 +2842,7 @@ presentations = [
 	(ti_on_presentation_event_state_change,
 	[
 		(store_trigger_param_1, ":object"),
-		(store_trigger_param_2, ":value"),
+		#(store_trigger_param_2, ":value"),
 		(try_begin),
           		(eq, ":object", "$g_presentation_obj_1"),
 			(val_add, "$g_defiled_armor_mesh", 1),
