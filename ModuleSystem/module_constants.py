@@ -125,12 +125,15 @@ slot_item_agility_bonus           = 10 # 0 or 1, used to check if agility bonus 
 slot_item_intelligence_bonus      = 11 # 0 or 1, used to check if intelligence bonus was already applied by this item
 slot_item_charisma_bonus          = 12 # 0 or 1, used to check if charisma bonus was already applied by this item
 
-# For octo's defiled armor.
+# CC: For octo's defiled armor.
 slot_item_tableau_0		  = 0
 slot_item_tableau_1		  = 1
 slot_item_tableau_2		  = 2
 slot_item_tableau_3		  = 3
 slot_item_tableau_4		  = 4
+slot_item_tableau_5		  = 5
+slot_item_tableau_6		  = 6
+slot_item_tableau_7		  = 7
 
 ########################################################
 ##  AGENT SLOTS            #############################
@@ -819,9 +822,9 @@ slot_troop_rank_request = 133 #TLD: faction rank needed to hire a NPC companion
 
 slot_troop_flags       = 134 # the original flags defined for troops, including item guarantees (mtarini)
 
-slot_troop_routed_us 		= 135 # tracks how many of a troop have been routed.
-slot_troop_routed_allies 	= 136 # tracks how many of a troop have been routed.
-slot_troop_routed_enemies 	= 137 # tracks how many of a troop have been routed.
+slot_troop_routed_us 		= 135
+slot_troop_routed_allies 	= 136
+slot_troop_routed_enemies 	= 137
 
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
@@ -1912,7 +1915,7 @@ fac_reward_items_list = [
 #fac_moria
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_orc_two_handed_axe, imod_masterwork), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
 #fac_guldur
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_banner      ,imod_balanced), (7,itm_angmar_whip_reward, 0), (9, itm_witchking_helmet, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_banner      ,imod_balanced), (7, itm_angmar_whip_reward, 0), (8, itm_spider, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_angmar_shield, imod_reinforced)],
 #fac_dunland
@@ -2102,28 +2105,23 @@ tld_conv_bit_nazgul_victory     = 0x40
 
 # TLD morale codes -x% chance they will flee
 
-tld_morale_very_good		= 25
-tld_morale_good			= 12
-tld_morale_average		= 6 
-tld_morale_poor			= 3
+tld_morale_very_good		= 40
+tld_morale_good			= 20
+tld_morale_average		= 10
+tld_morale_poor			= 5
 
-tld_morale_formation_bonus	= 10 # Gondor and Dunland
+tld_morale_formation_bonus	= 25 # Gondor and Dunland
 
-tld_morale_leader_important	= 40 # Black numenoreans / evil men
-tld_morale_leader_bonus		= 10 # Default morale bonus
-tld_morale_leader_average	= 10 # Average
-tld_morale_leader_avenge	= 20 # Dwarfs
-tld_morale_leader_urukhai	= 20 # Uruk hai when leader falls
+tld_morale_leader_important	= 45 # Black numenoreans / evil men
+tld_morale_leader_bonus		= 15 # Default morale bonus
+tld_morale_leader_average	= 20 # Average
+tld_morale_leader_avenge	= 25 # Dwarfs
+tld_morale_leader_urukhai	= 25 # Uruk hai when leader falls
 
-tld_morale_rout			= 40
+tld_morale_rout			= 45
 
 tld_morale_rout_allies		= -tld_morale_rout
 tld_morale_rout_enemies		= tld_morale_rout
-
-# Not used...
-agent_morale_state_normal		  	= 0
-agent_morale_state_disciplined		  	= 1
-agent_morale_state_fanatic		  	= 5
 
 # Party count option in tweaks menu
 
@@ -2133,10 +2131,16 @@ tld_party_count_option_min		= 600
 tld_party_count_option_high_crash	= 901
 tld_party_count_option_med_crash	= 850
 
+# Hero parties smaller than this will not siege...
+
 tld_siege_min_party_size		= 75
 
-defiled_meshes_begin 			= "itm_defiled_armor_gondor"
-defiled_meshes_end			= "itm_save_compartibility_item10"
+# Constants for defiled item meshes...
+
+defiled_items_begin 			= "itm_defiled_armor_gondor"
+defiled_items_end			= "itm_save_compartibility_item10"
+
+# Max values for resources and influence
 
 tld_rp_cap				= 200000
 tld_if_cap				= 5000

@@ -185,6 +185,31 @@ morale_scripts = [
          	(val_sub,reg1,":leader"),
          	(val_sub,reg1,":troop_level"),
 
+		(try_begin), # Ents and spies don't flee.
+			(eq|this_or_next, ":troop_type", "trp_ent"),
+			(eq|this_or_next, ":troop_type", "trp_spy"),
+			(eq|this_or_next, ":troop_type", "trp_spy_evil"),
+			(eq|this_or_next, ":troop_type", "trp_spy_partner"),
+			(eq, 		  ":troop_type", "trp_spy_partner_evil"),
+			(assign, reg1, -100),
+		(else_try), # Wargs more likely to flee
+			(is_between, ":troop_type", warg_ghost_begin, warg_ghost_end),
+			(agent_get_horse, ":horse_no", ":agent_no"),
+			(assign, reg1, 0),
+			(try_begin),
+				(ge, ":horse_no", 0),
+				(assign, reg1, 100),
+				(store_agent_hit_points,":hitpoints",":horse_no",0),
+				(val_sub, reg1, ":hitpoints"),
+			(try_end),
+		(else_try), #Troll and quest parties never flee
+			(agent_get_party_id, ":party_no", ":agent_no"),
+			(party_get_template_id, ":template", ":party_no"),
+			(eq|this_or_next, ":template", "pt_wild_troll"),
+			(eq, ":template", "pt_raging_trolls"),
+			(assign, reg1, -100),
+		(else_try),
+
 		# leader bonuses -CC
 		(try_begin),
 			(call_script, "script_cf_agent_get_leader", ":agent_no"),
@@ -287,6 +312,11 @@ morale_scripts = [
 				(eq|this_or_next, reg0, fac_harad),
 				(eq, reg0, fac_khand),
 				(val_sub, reg1, 20),
+			(else_try),
+				(eq|this_or_next, reg0, fac_lorien), # Elves get a morale boost
+				(eq|this_or_next, reg0, fac_imladris),
+				(eq, reg0, fac_woodelf),
+				(val_sub, reg1, 35), 
 			(try_end),
 		(try_end),
 		
@@ -298,31 +328,7 @@ morale_scripts = [
 
 		# Tier morale
 		(call_script, "script_cf_agent_get_tier_morale", ":agent_no"),
-		(val_sub, reg1, reg0),
-		
-		(try_begin), # Ents and spies don't flee.
-			(eq|this_or_next, ":troop_type", "trp_ent"),
-			(eq|this_or_next, ":troop_type", "trp_spy"),
-			(eq|this_or_next, ":troop_type", "trp_spy_evil"),
-			(eq|this_or_next, ":troop_type", "trp_spy_partner"),
-			(eq, 		  ":troop_type", "trp_spy_partner_evil"),
-			(assign, reg1, -100),
-		(else_try), # Wargs more likely to flee
-			(is_between, ":troop_type", warg_ghost_begin, warg_ghost_end),
-			(agent_get_horse, ":horse_no", ":agent_no"),
-			(assign, reg1, 0),
-			(try_begin),
-				(ge, ":horse_no", 0),
-				(assign, reg1, 100),
-				(store_agent_hit_points,":hitpoints",":horse_no",0),
-				(val_sub, reg1, ":hitpoints"),
-			(try_end),
-		(else_try), #Troll and quest parties never flee
-			(agent_get_party_id, ":party_no", ":agent_no"),
-			(party_get_template_id, ":template", ":party_no"),
-			(eq|this_or_next, ":template", "pt_wild_troll"),
-			(eq, ":template", "pt_raging_trolls"),
-			(assign, reg1, -100),
+		(val_sub, reg1, reg0),		
 		(try_end),
 	]),
 

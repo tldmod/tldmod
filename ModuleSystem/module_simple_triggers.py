@@ -2337,6 +2337,12 @@ simple_triggers = [
 # (57) TLD deal with prisoner trains reached destination (MV: shortened trigger from 8 to 3, so prisoners would update sooner)
 (3,[(try_for_parties, ":party_no"),
 		(party_is_active, ":party_no"),
+		(try_begin), # CC: Cleanup routed enemies / allies, just in case.
+        		(party_get_template_id, ":template", ":party_no"),
+			(is_between, ":template", "pt_routed_allies", "pt_legion_minas_morgul"),
+			(party_is_in_any_town, ":party_no"),
+			(remove_party, ":party_no"),
+		(try_end),
 		(party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
 		(party_is_in_any_town, ":party_no"),
 		(party_get_cur_town, ":cur_center", ":party_no"),

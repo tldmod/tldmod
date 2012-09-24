@@ -3005,7 +3005,7 @@ game_menus = [
 ),
 
 ( "camp_compat_tweaks",0,
-	"^^^^^^^^Click on an option to toggle:^(these are for compatibilty and are not cheats)","none",[],
+	"^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)","none",[],
 	[	
     		("game_options_compat_party",
 		[
@@ -3023,10 +3023,20 @@ game_menus = [
 
 		"Maximum number of parties: {s1}",
 		[
-			(val_add, "$tld_option_max_parties", tld_party_count_option_increment),
 			(try_begin),
-				(gt, "$tld_option_max_parties", tld_party_count_option_max),
-				(assign, "$tld_option_max_parties", tld_party_count_option_min),
+				(key_is_down|this_or_next, key_left_shift),
+				(key_is_down, key_right_shift),
+				(val_sub, "$tld_option_max_parties", tld_party_count_option_increment),
+				(try_begin),
+					(lt, "$tld_option_max_parties", tld_party_count_option_min),
+					(assign, "$tld_option_max_parties", tld_party_count_option_max),
+				(try_end),
+			(else_try),
+				(val_add, "$tld_option_max_parties", tld_party_count_option_increment),
+				(try_begin),
+					(gt, "$tld_option_max_parties", tld_party_count_option_max),
+					(assign, "$tld_option_max_parties", tld_party_count_option_min),
+				(try_end),
 			(try_end),
 		]),
 
@@ -4160,7 +4170,7 @@ game_menus = [
 ( "order_attack_2",mnf_disable_all_keys,
     "^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
-    [	(set_background_mesh, "mesh_ui_default_menu_window"),
+    [	(set_background_mesh, "mesh_ui_default_menu_window"),		
 		(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 		(assign, ":player_party_strength", reg0),
 		(val_div, ":player_party_strength", 5),
@@ -8135,12 +8145,22 @@ game_menus = [
    # [],[("leave",[],"Back...",[(change_screen_return)])],
  # ),
 
+# Death menu. Just a placeholder...
+( "death", mnf_disable_all_keys,
+    "You have been killed. Though the war still rages on, you will no longer be part of it.",
+    "none",
+    [(set_background_mesh, "mesh_ui_default_menu_window")],
+	[("continue",[],"Continue...",[(change_screen_quit)])]
+ ),
+
 # Animal ambushes (CppCoder)
  ("animal_ambush", 0, 
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	# (str_store_string, s1, "@You and your companions find yourselves separated from the rest of your party, when suddenly..."),
+	(assign, reg1, 1),
+	(assign, reg2, 1),
+	# (str_store_string, s1, "@You {reg0?find yourself: and{reg2? your ;companions,:{s26},}} separated from the rest of your party, when suddenly..."),
  ],
  [
 	("animal_ambush_continue",[],"Continue...",
@@ -8198,6 +8218,7 @@ game_menus = [
 
 ("animal_ambush_success", 0, "The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}", "none", 
 [
+	(assign, reg5, -1), # Reward item id.
 	(try_begin),
 		(gt, reg21, 1),
 		(assign, reg0, 1),
@@ -8209,7 +8230,14 @@ game_menus = [
 	(str_store_string, s3, "@You cover up your tracks and move onward."), 
 ],
 [
-	("continue",[],"Continue...",[(store_mul, ":exp", 100, reg21),(add_xp_as_reward, ":exp"),(change_screen_map)]),
+	("continue",[],"Continue...",[
+		(store_mul, ":exp", 100, reg21),
+		(add_xp_as_reward, ":exp"),
+		(try_begin),
+			(gt, reg5, -1),
+			(troop_add_item, "trp_player",reg5),
+		(try_end),
+		(change_screen_map)]),
 	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 

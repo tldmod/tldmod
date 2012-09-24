@@ -1509,7 +1509,7 @@ ai_scripts = [
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":continue", 0),
-	  (party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least 50 troops to siege
+	  (party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege
 	  (gt, ":party_size", tld_siege_min_party_size), 
           (try_begin),
             (eq, ":old_ai_state", spai_besieging_center),

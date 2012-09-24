@@ -3080,6 +3080,12 @@ scripts = [
       (store_add, ":level_factor", 90, ":level"),
       (val_mul, ":limit", ":level_factor"),
       (val_div, ":limit", 90),
+     	(try_begin),	# Decrease party size of elven parties
+		(troop_get_type, ":race", ":party_leader"),
+		(is_between,":race",tf_elf_begin,tf_elf_end),
+		(val_mul, ":limit", 67), # 2/3
+      		(val_div, ":limit", 100),
+	(try_end),
       (assign, reg0, ":limit"),
 ]),
 
@@ -5744,7 +5750,7 @@ scripts = [
           (eq, ":quest_no", "qst_mirkwood_sorcerer"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_lorien_lord"),  # only Galadriel gives this quest
-			(ge, ":player_level", 1),
+			(ge, ":player_level", 10), # CC: Was 1, change to 10, to hard if at level 1.
 			(assign, ":quest_expiration_days", 10),
 			(assign, ":quest_dont_give_again_period", 10000),
 			(assign, ":quest_importance", 4),
@@ -5810,7 +5816,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
- 			(eq, 1, cheat_switch), #CC: Enabled only with cheats
+ 			(eq, 1, cheat_switch), #CC: Enabled only with cheat switch
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
@@ -18141,7 +18147,7 @@ scripts = [
 			(display_message, "@You_were_killed.", color_bad_news),
 			#(assign, "$g_tutorial_entered", 1),
 			(finish_mission, 1),
-			(jump_to_menu, "mnu_tutorial"), #should be mnu_death here
+			(jump_to_menu, "mnu_death"), #should be mnu_death here
 		(try_end),
 	(try_end),
  ]), 
@@ -19620,8 +19626,12 @@ scripts = [
 		(party_stack_get_size    , ":ss", "p_temp_party", ":i_stack"),
 		(party_stack_get_troop_id, ":st", "p_temp_party", ":i_stack"),
 		(store_troop_faction, ":ft", ":st"),
-		(try_begin),(eq, ":ft", ":fac"),(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
-		 (else_try),                    (party_remove_members, ":source"           , ":st", ":ss"),# nonfactions outta source, stay in recipient_initial
+		(try_begin),
+			(eq, ":ft", ":fac"),	(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		# CC: Mordor and Guldur share troops
+		#(else_try),(eq, ":ft", "fac_guldur"),(eq,":fac","fac_mordor"),	(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		#(else_try),(eq, ":ft", "fac_mordor"),(eq,":fac","fac_guldur"), (party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		 (else_try),			(party_remove_members, ":source"           , ":st", ":ss"),# nonfactions outta source, stay in recipient_initial
 		(try_end),
 	(try_end),
 	(call_script, "script_party_add_party_companions", ":recipient", ":recipient_initial"), #transfer nonfactions to recipient

@@ -249,7 +249,9 @@ tld_morale_triggers = [
 				(get_distance_between_positions, ":dist", pos4, pos2),
 				(lt, ":dist", 300),
 				(call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
-				(le, reg0, 0),
+				(agent_get_troop_id,":troop_no", ":cur_agent"),
+				(le|this_or_next, reg0, 0),
+				(is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Lone wargs can always flee
 				(call_script, "script_remove_agent_from_field", ":cur_agent"),
 			(try_end),
 		(try_end),

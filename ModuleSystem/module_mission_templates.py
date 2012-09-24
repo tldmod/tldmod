@@ -53,7 +53,6 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-	tld_remove_galadriel,
 	]+tld_morale_triggers
 
 tld_siege_battle_scripts = [
@@ -63,6 +62,7 @@ tld_siege_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	custom_troll_hitting,
+	tld_remove_galadriel, 
 	#common_battle_kill_underwater,
 	]
 
@@ -2715,7 +2715,20 @@ mission_templates = [ # not used in game
 			(main_hero_fallen),
 			(jump_to_menu, "mnu_animal_ambush_fail"),
 			(finish_mission),
-		(try_end)
+		(try_end),
+		(try_begin),
+			(eq|this_or_next, "$battle_won", 1),
+			(main_hero_fallen),
+			(try_for_agents, ":agent"),
+				(agent_is_human, ":agent"),
+				(agent_get_troop_id, ":troop", ":agent"),
+				(troop_is_hero, ":troop"),
+				(eq|this_or_next, ":troop", "trp_player"),
+				(is_between, ":troop", companions_begin, companions_end),
+				(store_agent_hit_points,":hp",":agent",0),
+				(troop_set_health, ":troop", ":hp"),
+			(try_end),
+		(try_end),
 	]),
 
 # Bear striking...
@@ -2731,7 +2744,7 @@ mission_templates = [ # not used in game
 		(agent_get_horse, ":horse", ":agent"),
 		(ge, ":horse", 0),
 		(store_random_in_range, ":rnd", 0, 100),
-		(lt, ":rnd", 15), # 15% chance
+		(lt, ":rnd", 70), # 33% chance
 		(assign, ":enemy_in_front", 0),
 		(try_for_agents, ":target"),
 			(neq, ":enemy_in_front", 1),
@@ -2769,8 +2782,7 @@ mission_templates = [ # not used in game
 			(neg|position_is_behind_position, pos2, pos1),
 			(agent_get_team, ":agent_team", ":agent"),
 			(agent_get_team, ":target_team", ":target"),
-			(teams_are_enemies, ":agent_team", ":target_team"),
-			
+			(teams_are_enemies, ":agent_team", ":target_team"),			
 			(store_random_in_range, reg0, 10, 30),
 			#(display_message, "@DEBUG: Bear strikes!"),
 			(try_begin),
@@ -2802,12 +2814,6 @@ mission_templates = [ # not used in game
 		(eq, ":agent_trp", "trp_wolf"),
 		(agent_get_horse, ":horse", ":agent"),
 		(lt, ":horse", 0),
-		(try_begin),
-			(eq, cheat_switch, 1),
-			(agent_get_troop_id, ":agent_trp", ":agent"),
-			(str_store_troop_name, s1, ":agent_trp"),
-			(display_message, "@DEBUG: AGENT REMOVED: {s1}"),
-		(try_end),
 		(call_script, "script_remove_agent", ":agent"),
 	(try_end),
 	]),
