@@ -3524,8 +3524,153 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (str_store_party_name, s4, ":siege_target"),    
    ]],
 
+# TLD: Accept a delivered gift (CC)
+[anyone|plyr,"lord_talk",[
+	(eq, cheat_switch, 1), # CC: Enabled only in dev, for now.
+	(check_quest_active,"qst_deliver_gift"),
+	(quest_slot_eq, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), #must be correct faction
+        (quest_get_slot, ":giver_item_str", "qst_deliver_gift", slot_quest_target_amount),
+        (quest_get_slot, ":giver_faction", "qst_deliver_gift", slot_quest_object_faction),
+	(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
+	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),	
+	(str_store_faction_name, s3, ":giver_faction"),
+	(str_store_faction_name, s2, "$g_talk_troop_faction"),
+	(str_store_string, s1, ":giver_item_str"),
+   ], 
+"I bring a gift of {s1} from {s3} to the people of {s2}.", "deliver_gift_1",[]],
+
+[anyone,"deliver_gift_1",[
+	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+        (quest_get_slot, ":gold", "qst_deliver_gift", slot_quest_gold_reward),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, 0),
+	(call_script, "script_finish_quest", "qst_deliver_gift", 100),
+	(call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":gold"),
+        (quest_get_slot, ":gift_no", "qst_deliver_gift", slot_quest_target_item),
+	(try_begin),
+		(gt, ":gift_no", 0),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_guldur"),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_isengard"),
+		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(assign, ":gift_no", 0),
+	(else_try),
+		(is_between, ":gift_no", 1, 4),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_moria"),
+		(eq, "$g_talk_troop_faction", "fac_mordor"),
+		(assign, ":gift_no", 0),
+	(else_try),
+		(eq, ":gift_no", 1),
+		(eq, "$g_talk_troop_faction", "fac_harad"),
+		(assign, ":gift_no", 0),
+	(try_end),
+	(assign, reg20, ":gift_no"),
+	(store_mul, ":gift_str", ":faction_index", 5),
+	(val_add, ":gift_str", gift_strings_begin),
+	(val_add, ":gift_str", ":gift_no"),
+	(str_store_string, s2, ":gift_str"),
+	(display_message, "@gift_no={reg20}, s2={s2}"),
+	(str_store_faction_name, s3, "$g_talk_troop_faction"),
+], "The people of {s3} thank you for your gift, {playername}. In exchange for your gift, we give you {s2}. I thank you again, {playername}.", "lord_pretalk",
+[
+]],
+
+
+# TLD: Deliver gift to other allied factions (CC)
+
+[anyone|plyr,"lord_talk",[
+	(eq, cheat_switch, 1), # CC: Enabled only in dev, for now.
+	(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
+	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),	
+   ], 
+"I want to deliver a gift to our allies.", "send_gift_1",[]],
    
+[anyone,"send_gift_1",[(check_quest_active,"qst_deliver_gift")], "You are already delivering a gift, {playername}. It would be wise to deliver that one first.", "lord_pretalk",[]],
+[anyone,"send_gift_1",[(call_script,"script_update_respoint"),(faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),(lt,":rps",500),], "Unfortunately, you cannot afford to send a gift right now {playername}."+not_enough_rp, "lord_pretalk",[]],
+[anyone,"send_gift_1",[], "Very well. To whom would you like to send a gift?", "send_gift_2",[]],
+
+[anyone|plyr|repeat_for_100,"send_gift_2",
+[
+	(store_repeat_object, ":faction_index"),	
+	(store_sub, ":num_kingdoms", kingdoms_end, kingdoms_begin),
+	(lt, ":faction_index", ":num_kingdoms"),
+	(store_add, ":faction_no", ":faction_index", kingdoms_begin),
+	(this_or_next|eq, cheat_switch, 1), # Allows debuggers to give gifts to themselves. ;) (CC)
+	(neq, "$g_talk_troop_faction", ":faction_no"),
+        (store_relation, ":relation", ":faction_no", "$g_talk_troop_faction"),
+	(ge, ":relation", 0),
+	(str_store_faction_name, s1, ":faction_no"),
+], "{s1}", "send_gift_3",[(store_repeat_object, reg1)]],
+
+[anyone|plyr,"send_gift_2",[], "Nevermind.", "lord_pretalk",[]],
+
+[anyone,"send_gift_3",[], "Which gift would you like to send?", "send_gift_4",[]],
+
+[anyone|plyr|repeat_for_100,"send_gift_4",
+[
+	(store_repeat_object, ":gift_no"),
+	(lt, ":gift_no", 5),
+	(assign, ":valid_gift", 1),
+	(try_begin),
+		(gt, ":gift_no", 0),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_guldur"),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_isengard"),
+		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(assign, ":valid_gift", 0),
+	(else_try),
+		(is_between, ":gift_no", 1, 4),
+		(eq|this_or_next, "$g_talk_troop_faction", "fac_moria"),
+		(eq, "$g_talk_troop_faction", "fac_mordor"),
+		(assign, ":valid_gift", 0),
+	(else_try),
+		(eq, ":gift_no", 1),
+		(eq, "$g_talk_troop_faction", "fac_harad"),
+		(assign, ":valid_gift", 0),
+	(try_end),
+	(eq, ":valid_gift", 1),
+	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+	(store_mul, ":gift_str", ":faction_index", 5),
+	(val_add, ":gift_str", gift_strings_begin),
+	(val_add, ":gift_str", ":gift_no"),
+	(str_store_string, s2, ":gift_str"),
+
+	# reg14 = 500*(i^2)+500
+	(store_mul, ":gift_cost_a", ":gift_no", ":gift_no"), # i^2
+	(store_mul, ":gift_cost", ":gift_cost_a", 500), # (i^2)*500
+	(store_add, reg14, ":gift_cost", 500), #(i^2)*500 + 500
+
+	(faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),
+	(ge,":rps",reg14), # Player must be able to afford gift...
+	(str_store_string, s1, "@{s2} [{reg14} Resource Points]"),	
+], "{s1}", "send_gift_5",[(store_repeat_object, reg2)]],
+[anyone|plyr,"send_gift_4",[], "Nevermind.", "lord_pretalk",[]],
+
+[anyone,"send_gift_5",[], "All right {playername}. Good Luck.", "lord_pretalk",
+[
+    	(store_add, ":target_faction", reg1, kingdoms_begin),
+    	(assign, ":gift_no", reg2),
+	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+	(store_mul, ":gift_str", ":faction_index", 5),
+	(val_add, ":gift_str", gift_strings_begin),
+	(val_add, ":gift_str", ":gift_no"),
+	(store_mul, ":gift_cost_a", ":gift_no", ":gift_no"), # i^2
+	(store_mul, ":gift_cost", ":gift_cost_a", 500), # (i^2)*500
+	(store_add, reg14, ":gift_cost", 500), #(i^2)*500 + 500
+	(store_sub, reg0, 0, reg14),
+	(call_script, "script_add_faction_rps", "$g_talk_troop_faction", reg0),
+	(str_store_string, s1, ":gift_str"),
+    	(str_store_faction_name, s2, "$g_talk_troop_faction"),
+    	(str_store_faction_name, s3, ":target_faction"),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, reg14),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_item, ":gift_no"),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_amount, ":gift_str"), # uses this slot to remember gift id, saves time later.
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_faction, ":target_faction"),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, "$g_talk_troop_faction"),
+    	(setup_quest_text,"qst_deliver_gift"),
+    	(str_store_string, s2, "@You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture."),
+    	(call_script, "script_start_quest", "qst_deliver_gift", "$g_talk_troop"),
+]],
+
 # TLD: give orders to lords (MV)
+
 
 [anyone|plyr,"lord_talk",
    [ # TLD: give orders if you have some minimum faction influence

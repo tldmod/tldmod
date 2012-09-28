@@ -1,5 +1,5 @@
 questsfile version 1
-37
+38
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him. 
@@ -36,4 +36,5 @@ qst_deliver_iron Supply_{s3}_with_{reg5}_Units_of_{s6} 2 The_{s9}_of_{s3}_asked_
 qst_tld_introduction Deliver_message_about_Mordor_orcs_to_the_command 2 None 
 qst_treebeard_kill_orcs Defeat_the_tree-chopping_orc_party 2 Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn. 
 qst_oath_of_vengeance Oath_of_Vengeance 2 Enraged_by_the_death_of_{s1},_you_have_sworn_an_oath_of_vengeance_upon_the_forces_of_{s2}._You_must_now_destroy_as_many_of_the_armies_of_{s2}_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin! 
+qst_deliver_gift Deliver_a_Gift_of_{s1}_from_{s2}_to_{s3} 2 You_have_requested_to_deliver_a_gift_of_{s1}_to_{s3}_from_{s2}. 
 qst_quests_end Quests_End 0 . 

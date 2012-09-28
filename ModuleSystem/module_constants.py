@@ -2145,3 +2145,6 @@ defiled_items_end			= "itm_save_compartibility_item10"
 tld_rp_cap				= 200000
 tld_if_cap				= 5000
 tld_influence_trait_bonus		= 2
+
+gift_strings_begin			= "str_gondor_gift0"
+tld_gifts_per_faction			= 5

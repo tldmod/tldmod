@@ -2952,5 +2952,117 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("wound_arm", "a_badly_maimed_arm"),
 ("wound_leg", "a_badly_maimed_leg"),
 
+# END Wound Strings
+# BEGIN Gifts (Faction order must be kept) -CC
+
+("gondor_gift0", "Fresh Fruit and Wine"),
+("gondor_gift1", "Richly Dyed Cloth"),
+("gondor_gift2", "Ancient Tomes and Family Trees"),
+("gondor_gift3", "Spices and Incense"),
+("gondor_gift4", "Auroch War Horns"),
+
+("dwarf_gift0", "Strong Beer and Rock Salt"),
+("dwarf_gift1", "Hardened Shovels and Axes"),
+("dwarf_gift2", "Harps and Flutes"),
+("dwarf_gift3", "Robes Embroidered With Golden Thread and Gems"),
+("dwarf_gift4", "Marvellous Jewellry"),
+
+("rohan_gift0", "Mead and Apple Wine"),
+("rohan_gift1", "Embroided Tunics and Silver-Studded Belts"),
+("rohan_gift2", "Golden Torcs and Engraved Drinking Horns"),
+("rohan_gift3", "Fine Horse Barding"),
+("rohan_gift4", "Rohan Horses"),
+
+("mordor_gift0", "Weak Peat Beer"),
+("mordor_gift1", "_"),
+("mordor_gift2", "_"),
+("mordor_gift3", "_"),
+("mordor_gift4", "Farmer Slaves"),
+
+("isengard_gift0", "Dried Human Meat"),
+("isengard_gift1", "_"),
+("isengard_gift2", "_"),
+("isengard_gift3", "_"),
+("isengard_gift4", "_"),
+
+("lorien_gift0", "Seeds, Nuts and Berries"),
+("lorien_gift1", "Cold Lanterns and Strong Rope"),
+("lorien_gift2", "Lembas"),
+("lorien_gift3", "Silver Belts and Broaches"),
+("lorien_gift4", "Elven Cloaks"),
+
+("imladris_gift0", "White Bread and Herbal Butter"),
+("imladris_gift1", "Crystal Glassware"),
+("imladris_gift2", "Miruvor"),
+("imladris_gift3", "Embroidered Banners and Silver-Inlaid Horns"),
+("imladris_gift4", "Healing Herbs and Oitments"),
+
+("woodelf_gift0", "Soft Animal Hides"),
+("woodelf_gift1", "Arrow Heads and Fletching"),
+("woodelf_gift2", "Hunting Spears"),
+("woodelf_gift3", "Trained Birds of Prey"),
+("woodelf_gift4", "Drinking Cups of Red Gold"),
+
+("dale_gift0", "Semi-Precious Stones and Glass Beads"),
+("dale_gift1", "Codexes of Heroic Sagas"),
+("dale_gift2", "Dorwinion Wine"),
+("dale_gift3", "Luxurious Furs"),
+("dale_gift4", "Intricate Toys and Instruments"),
+
+("harad_gift0", "Figs and Pomegranates"),
+("harad_gift1", "_"),
+("harad_gift2", "Carved Ivory"),
+("harad_gift3", "Sacred Snake Wine"),
+("harad_gift4", "Golden Serpent Statues"),
+
+("rhun_gift0", "Waterskins"),
+("rhun_gift1", "Tattoo Ink"),
+("rhun_gift2", "Headgear with Horns and Antlers"),
+("rhun_gift3", "Horsehair Whips"),
+("rhun_gift4", "Horse Meat and Milk"),
+
+("khand_gift0", "Colourful Spices"),
+("khand_gift1", "Rolls of Silk"),
+("khand_gift2", "Hunting Falcons"),
+("khand_gift3", "Ingots of Water Steel"),
+("khand_gift4", "Sacred Warrior Masks"),
+
+("umbar_gift0", "Oysters and Sea Salt"),
+("umbar_gift1", "_"),
+("umbar_gift2", "_"),
+("umbar_gift3", "_"),
+("umbar_gift4", "_"),
+
+("moria_gift0", "Putrid Dwarven Ale"),
+("moria_gift1", "_"),
+("moria_gift2", "_"),
+("moria_gift3", "_"),
+("moria_gift4", "Dwarven Metal Scraps"),
+
+("guldur_gift0", "Black Liquor"),
+("guldur_gift1", "_"),
+("guldur_gift2", "_"),
+("guldur_gift3", "_"),
+("guldur_gift4", "_"),
+
+("gundabad_gift0", "Spiky Bone Piercings"),
+("gundabad_gift1", "Protective Warpaints"),
+("gundabad_gift2", "Boiled Dwarven Lard"),
+("gundabad_gift3", "Mummified Corpse Idols"),
+("gundabad_gift4", "Black Wargs"),
+
+("dunland_gift0", "Stinky Goat Cheese"),
+("dunland_gift1", "Flint Sacrificial Knives"),
+("dunland_gift2", "Bronze Arm Rings"),
+("dunland_gift3", "Goats"),
+("dunland_gift4", "Wolf Skulls and Claws"),
+
+("beorn_gift0", "Honey Cakes and Mead"),
+("beorn_gift1", "Bee Wax and Hemp Cloth"),
+("beorn_gift2", "Bee Hives"),
+("beorn_gift3", "Amber Necklaces"),
+("beorn_gift4", "Well Trained Ponies"),
+
+# END Gifts
 
 ]

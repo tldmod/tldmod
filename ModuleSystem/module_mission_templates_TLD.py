@@ -84,7 +84,7 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 						(eq, ":continue", 1),
 						(agent_slot_eq, ":rider", slot_agent_mount, ":mount"),
 						(store_agent_hit_points, ":hp", ":rider", 1),
-						(store_random_in_range, reg0, 10, 25), # damage calculation here, reg0 stores damage.
+						(store_random_in_range, reg0, 5, 15), # damage calculation here, reg0 stores damage.
 						(try_begin),
 			 				(get_player_agent_no, ":player_agent"),
 							(eq, ":rider", ":player_agent"),

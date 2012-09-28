@@ -176,6 +176,12 @@ lord_get_reward_item_answer
 marshall_ask
 marshall_suggest
 marshall_answer
+deliver_gift_1
+send_gift_1
+send_gift_2
+send_gift_3
+send_gift_4
+send_gift_5
 lord_give_order_ask
 lord_give_order
 lord_give_order_answer
