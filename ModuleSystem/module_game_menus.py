@@ -226,7 +226,7 @@ game_menus = [
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
 
-# 	CC: placeholder, should we want to implement this.
+# 	(CppCoder) placeholder, should we want to implement this.
 #	("custom_battle_choose" ,[],"____________Build your own battle____________.",
 #		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
 
@@ -984,7 +984,7 @@ game_menus = [
      (try_end),
 	],
 
-	# CC: Ease not for only testing but for playing as well.
+	# (CppCoder) Ease not for only testing but for playing as well.
     	[
 		("replay",[],"Play this battle again.",[(assign, "$battle_won", 0),(jump_to_menu, "mnu_custom_battle_2")]),
     		("continue",[],"Continue.",[(try_begin),(eq,"$g_custom_battle_scenario",26),(jump_to_menu, "mnu_quick_battle_general_test"),(else_try),(change_screen_quit),(try_end)]),
@@ -3159,13 +3159,18 @@ game_menus = [
     ("camp_customize_defilement",
 		[
 			# (CppCoder) Only evil players can do this, though only evil players should be able to aqquire the items anyway.
+			(eq, cheat_switch, 1),
 			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-			(player_has_item|this_or_next, "itm_defiled_armor_gondor"),
-			(player_has_item|this_or_next, "itm_defiled_armor_rohan"),
-			(player_has_item, "itm_defiled_armor_dale"),
+			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_gondor"),
+			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_rohan"),
+			(troop_has_item_equipped, "trp_player", "itm_defiled_armor_dale"),
 		],
-		"Customize defiled armor",
-		[
+		"Customize Defiled Armor",
+		[			
+			(try_for_range, ":item_id", defiled_items_begin, defiled_items_end),
+				(troop_has_item_equipped, "trp_player", ":item_id"), # (CppCoder) Must be done for efficiency's sake
+				(assign, "$g_defiled_armor_item", ":item_id"),
+			(try_end),
 			(start_presentation, "prsnt_customize_defilement"),
 		]
 	),
@@ -4516,7 +4521,7 @@ game_menus = [
         (assign, ":done", 0),
 
 	(try_begin),
-		(ge, "$battle_won", 0), # CC: Battle was won, or was neutral
+		(ge, "$battle_won", 0), # (CppCoder): Battle was won, or was neutral
 		(call_script, "script_cf_spawn_routed_parties"), 
 	(try_end),  
 					  
@@ -7773,7 +7778,7 @@ game_menus = [
 		(assign, "$rescue_stage", 0),
 		(assign, "$active_rescue", 5),
         	(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
-		(disable_party, "p_ancient_ruins"), # CC: Only one chance...
+		(disable_party, "p_ancient_ruins"), # (CppCoder) Only one chance...
 		(call_script, "script_set_meta_stealth"),
 		(call_script, "script_crunch_stealth_results"),
 		(call_script, "script_set_infiltration_player_record"),

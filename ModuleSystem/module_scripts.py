@@ -361,6 +361,10 @@ scripts = [
 		(store_mul, ":rank10", ":rank", 10), 
 		(val_mul, ":income", 5),  #  ( rank^2 *5 +rank * 10) =  0,  15 , 30, 55, 90 , 135, 190, 255, ... per day.
 		(val_add, ":income", ":rank10"),
+		# Allows us modders to cap the resource points income. (CppCoder)
+		(faction_get_slot, ":total_rp",  ":fac", slot_faction_respoint),
+		(this_or_next|eq, tld_rp_cap, -1),
+		(lt, ":total_rp", tld_rp_cap),
 		(call_script, "script_add_faction_rps", ":fac", ":income"),
 	(try_end),
 ]),
@@ -1791,14 +1795,15 @@ scripts = [
 	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
 	#(assign, "$battle_renown_total", 0),
 	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"), #MV: to get rid of build warnings - remove on use
-	(assign, "$g_variable8", 0), (assign, reg0, "$g_variable8"), 
-	(assign, "$g_variable9", 0), (assign, reg0, "$g_variable9"),
+	(assign, "$g_defiled_armor_item", "itm_defiled_armor_gondor"), 
+	(assign, "$g_defiled_armor_rotation", 0), 
     #these are used for strategic options/tweaks
 	(assign, "$tld_option_siege_reqs", 0), #0,1,2 : Siege strength requirements: Normal/Halved/None
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 900), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 825), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+						  # 
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -3080,7 +3085,8 @@ scripts = [
       (store_add, ":level_factor", 90, ":level"),
       (val_mul, ":limit", ":level_factor"),
       (val_div, ":limit", 90),
-     	(try_begin),	# Decrease party size of elven parties
+     	(try_begin),	# (CppCoder): Decrease party size of elven parties
+			# TODO: Fading of the elves, size -= (day_count/100)*5?
 		(troop_get_type, ":race", ":party_leader"),
 		(is_between,":race",tf_elf_begin,tf_elf_end),
 		(val_mul, ":limit", 67), # 2/3

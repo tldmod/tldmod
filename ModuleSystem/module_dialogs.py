@@ -689,7 +689,7 @@ dialogs = [
             # (assign, "$npc_quit_morale", reg0),
       ]],
 
-# CC: TODO: Companions go to ruins if there hometown is destroyed.
+# (CppCoder): TODO: Fix companions going back to ruins if there hometown is destroyed.
 [anyone,"member_separate", [#            (gt, "$npc_quit_morale", 30),
         (troop_get_slot, ":home_center", "$g_talk_troop", slot_troop_cur_center),
         (try_begin),
@@ -3153,7 +3153,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                              (lt,":lords_quest",0)], 
 "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
-# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... -CC
+# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... (CppCoder)
 
 #[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(player_has_item, "itm_book_of_moria"),(eq, cheat_switch, 1)], "My lord, I found this book...", "dwarf_lord_book", []],
 #[anyone,"dwarf_lord_book", [(troop_remove_item, "trp_player", "itm_book_of_moria"),(call_script, "script_increase_rank", "fac_dwarf", 100)], "Give it to me, raw and wwwwrrrrigling...", "lord_pretalk", []],
@@ -3524,9 +3524,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (str_store_party_name, s4, ":siege_target"),    
    ]],
 
-# TLD: Accept a delivered gift (CC)
+# TLD: Accept a delivered gift (CppCoder)
 [anyone|plyr,"lord_talk",[
-	(eq, cheat_switch, 1), # CC: Enabled only in dev, for now.
 	(check_quest_active,"qst_deliver_gift"),
 	(quest_slot_eq, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), #must be correct faction
         (quest_get_slot, ":giver_item_str", "qst_deliver_gift", slot_quest_target_amount),
@@ -3541,106 +3540,99 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"deliver_gift_1",[
 	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
+        (quest_get_slot, ":original_faction", "qst_deliver_gift", slot_quest_object_faction),
+        (quest_get_slot, ":giver_gift_str", "qst_deliver_gift", slot_quest_target_amount),
         (quest_get_slot, ":gold", "qst_deliver_gift", slot_quest_gold_reward),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, 0),
 	(call_script, "script_finish_quest", "qst_deliver_gift", 100),
 	(call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":gold"),
         (quest_get_slot, ":gift_no", "qst_deliver_gift", slot_quest_target_item),
-	(try_begin),
-		(gt, ":gift_no", 0),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_guldur"),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_isengard"),
-		(eq, "$g_talk_troop_faction", "fac_umbar"),
-		(assign, ":gift_no", 0),
-	(else_try),
-		(is_between, ":gift_no", 1, 4),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_moria"),
-		(eq, "$g_talk_troop_faction", "fac_mordor"),
-		(assign, ":gift_no", 0),
-	(else_try),
-		(eq, ":gift_no", 1),
-		(eq, "$g_talk_troop_faction", "fac_harad"),
-		(assign, ":gift_no", 0),
-	(try_end),
 	(assign, reg20, ":gift_no"),
 	(store_mul, ":gift_str", ":faction_index", 5),
 	(val_add, ":gift_str", gift_strings_begin),
 	(val_add, ":gift_str", ":gift_no"),
+
+	(str_store_string, s1, ":giver_gift_str"),
 	(str_store_string, s2, ":gift_str"),
-	(display_message, "@gift_no={reg20}, s2={s2}"),
 	(str_store_faction_name, s3, "$g_talk_troop_faction"),
-], "The people of {s3} thank you for your gift, {playername}. In exchange for your gift, we give you {s2}. I thank you again, {playername}.", "lord_pretalk",
-[
-]],
+	(str_store_faction_name, s4, ":original_faction"),
+	(str_store_string, s5, "@The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}."),
 
+], "{s5}", "lord_pretalk", []],
 
-# TLD: Deliver gift to other allied factions (CC)
+# TLD: Deliver gift to other allied factions (CppCoder)
 
 [anyone|plyr,"lord_talk",[
-	(eq, cheat_switch, 1), # CC: Enabled only in dev, for now.
+	(eq, cheat_switch, 1), # (CppCoder): Enabled only in dev, for now.
 	(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
 	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),	
+	(quest_slot_eq|neg, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), # can't ask to deliver a gift from the faction you are giving a gift to.
+	(quest_get_slot, ":days_remaining", "qst_deliver_gift", slot_quest_dont_give_again_remaining_days),
+	(le, ":days_remaining", 0),
+	(try_begin),
+		(faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good), # Good or Evil men
+		(faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_culture, mtf_culture_orcs),
+		(str_store_string, s1, "@I want to deliver a gift to our allies."),
+		(str_store_string, s4, "@delivering a gift"),
+	(else_try),
+		(str_store_string, s1, "@I want to bring a bribe to our allies."),
+		(str_store_string, s4, "@giving a bribe"),
+	(try_end),
    ], 
-"I want to deliver a gift to our allies.", "send_gift_1",[]],
+"{s1}", "send_gift_1",[]],
    
-[anyone,"send_gift_1",[(check_quest_active,"qst_deliver_gift")], "You are already delivering a gift, {playername}. It would be wise to deliver that one first.", "lord_pretalk",[]],
-[anyone,"send_gift_1",[(call_script,"script_update_respoint"),(faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),(lt,":rps",500),], "Unfortunately, you cannot afford to send a gift right now {playername}."+not_enough_rp, "lord_pretalk",[]],
-[anyone,"send_gift_1",[], "Very well. To whom would you like to send a gift?", "send_gift_2",[]],
+[anyone,"send_gift_1",[(check_quest_active,"qst_deliver_gift")], "You are already {s4}, {playername}. It would be wise to deliver that one first.", "lord_pretalk",[]],
+[anyone,"send_gift_1",[(call_script,"script_update_respoint"),(faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),(lt,":rps",500),], "Unfortunately, you cannot afford to send a gift right now {playername}."+not_enough_rp, "lord_pretalk",[]],
+
+# Good factions and evil men send gifts, others send bribes.
+[anyone,"send_gift_1",
+	[
+	(faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+	(faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_culture, mtf_culture_orcs),
+	], 
+	"Very well. To whom would you like to deliver a gift?", "send_gift_2",[]],
+[anyone,"send_gift_1",[], "Very Well. Who do you want to give a bribe to?", "send_gift_2",[]],
 
 [anyone|plyr|repeat_for_100,"send_gift_2",
 [
-	(store_repeat_object, ":faction_index"),	
+	(store_repeat_object, ":faction_index"),
 	(store_sub, ":num_kingdoms", kingdoms_end, kingdoms_begin),
 	(lt, ":faction_index", ":num_kingdoms"),
 	(store_add, ":faction_no", ":faction_index", kingdoms_begin),
-	(this_or_next|eq, cheat_switch, 1), # Allows debuggers to give gifts to themselves. ;) (CC)
+	(this_or_next|eq, cheat_switch, 1), # Allows debuggers to give gifts to their own faction. ;) (CppCoder)
 	(neq, "$g_talk_troop_faction", ":faction_no"),
         (store_relation, ":relation", ":faction_no", "$g_talk_troop_faction"),
-	(ge, ":relation", 0),
+	(ge, ":relation", 0), # Allies only
 	(str_store_faction_name, s1, ":faction_no"),
 ], "{s1}", "send_gift_3",[(store_repeat_object, reg1)]],
 
 [anyone|plyr,"send_gift_2",[], "Nevermind.", "lord_pretalk",[]],
 
-[anyone,"send_gift_3",[], "Which gift would you like to send?", "send_gift_4",[]],
+[anyone,"send_gift_3",
+	[
+	(faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+	(faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_culture, mtf_culture_orcs),
+	], "Which gift would you like to give to them?", "send_gift_4",[]],
+
+[anyone,"send_gift_3",[], "What bribe do you want to give them?", "send_gift_4",[]],
 
 [anyone|plyr|repeat_for_100,"send_gift_4",
 [
 	(store_repeat_object, ":gift_no"),
 	(lt, ":gift_no", 5),
-	(assign, ":valid_gift", 1),
-	(try_begin),
-		(gt, ":gift_no", 0),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_guldur"),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_isengard"),
-		(eq, "$g_talk_troop_faction", "fac_umbar"),
-		(assign, ":valid_gift", 0),
-	(else_try),
-		(is_between, ":gift_no", 1, 4),
-		(eq|this_or_next, "$g_talk_troop_faction", "fac_moria"),
-		(eq, "$g_talk_troop_faction", "fac_mordor"),
-		(assign, ":valid_gift", 0),
-	(else_try),
-		(eq, ":gift_no", 1),
-		(eq, "$g_talk_troop_faction", "fac_harad"),
-		(assign, ":valid_gift", 0),
-	(try_end),
-	(eq, ":valid_gift", 1),
 	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
 	(store_mul, ":gift_str", ":faction_index", 5),
 	(val_add, ":gift_str", gift_strings_begin),
 	(val_add, ":gift_str", ":gift_no"),
 	(str_store_string, s2, ":gift_str"),
-
-	# reg14 = 500*(i^2)+500
-	(store_mul, ":gift_cost_a", ":gift_no", ":gift_no"), # i^2
-	(store_mul, ":gift_cost", ":gift_cost_a", 500), # (i^2)*500
-	(store_add, reg14, ":gift_cost", 500), #(i^2)*500 + 500
-
+	(store_mul, ":gift_cost_a", ":gift_no", ":gift_no"),
+	(store_mul, ":gift_cost", ":gift_cost_a", 500),
+	(store_add, reg14, ":gift_cost", 500),
 	(faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),
 	(ge,":rps",reg14), # Player must be able to afford gift...
 	(str_store_string, s1, "@{s2} [{reg14} Resource Points]"),	
 ], "{s1}", "send_gift_5",[(store_repeat_object, reg2)]],
+
 [anyone|plyr,"send_gift_4",[], "Nevermind.", "lord_pretalk",[]],
 
 [anyone,"send_gift_5",[], "All right {playername}. Good Luck.", "lord_pretalk",
@@ -3661,16 +3653,27 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     	(str_store_faction_name, s3, ":target_faction"),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, reg14),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_target_item, ":gift_no"),
-   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_amount, ":gift_str"), # uses this slot to remember gift id, saves time later.
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_amount, ":gift_str"),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_target_faction, ":target_faction"),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, "$g_talk_troop_faction"),
-    	(setup_quest_text,"qst_deliver_gift"),
-    	(str_store_string, s2, "@You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture."),
-    	(call_script, "script_start_quest", "qst_deliver_gift", "$g_talk_troop"),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, "$g_talk_troop_faction"),
+	(quest_set_slot, "qst_deliver_gift", slot_quest_dont_give_again_remaining_days, 15), # Can only give a gift every 15 days.
+	(try_begin),
+		(faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+		(faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_culture, mtf_culture_orcs),
+		(str_store_string, s4, "@Gift"),
+    		(setup_quest_text,"qst_deliver_gift"),
+    		(str_store_string, s2, "@You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture."),
+    		(call_script, "script_start_quest", "qst_deliver_gift", "$g_talk_troop"),
+	(else_try),
+		(str_store_string, s4, "@Bribe"),
+    		(setup_quest_text,"qst_deliver_gift"),
+    		(str_store_string, s2, "@You have requested to deliver a bribe of {s1} to {s3} from {s2}. Hopefully you can get some sort of reward from them in exchange."),
+    		(call_script, "script_start_quest", "qst_deliver_gift", "$g_talk_troop"),		
+	(try_end),
 ]],
 
 # TLD: give orders to lords (MV)
-
 
 [anyone|plyr,"lord_talk",
    [ # TLD: give orders if you have some minimum faction influence
@@ -4311,19 +4314,19 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
-# TLD - mirkwood sorcerer quest finish (GA, fixed by CC) -- begin.
+# TLD - mirkwood sorcerer quest finish (GA, fixed by CppCoder) -- begin.
 
 [anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
                        			(check_quest_succeeded, "qst_mirkwood_sorcerer")],
 "The sorcerer of Mirkwood has been slain, my Lady.", "lord_mission_sorcerer_completed",[]],
 
-# CC: Need someone to improve this dialog below...
+# CppCoder: Need someone to improve this dialog below...
 [anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
                        			(check_quest_failed, "qst_mirkwood_sorcerer"),
 					(quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0),],
-"Forgive me, my Lady, but urgent matters prevented me from slaying the sorcerer, and in the meantime he has fled.", "lord_mission_sorcerer_failed",[]], 
+"Forgive me, my Lady, but urgent matters have prevented me from slaying the sorcerer, and in the meantime he has fled.", "lord_mission_sorcerer_failed",[]], 
 
 [anyone|plyr,"lord_active_mission_1", [	(store_partner_quest,":lords_quest"),
                        			(eq,":lords_quest","qst_mirkwood_sorcerer"),
@@ -4344,7 +4347,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(call_script, "script_finish_quest", "qst_mirkwood_sorcerer", 20),
 ]],
 
-# TLD - mirkwood sorcerer quest finish (GA, fixed by CC) -- end.
+# TLD - mirkwood sorcerer quest finish (GA, fixed by CppCoder) -- end.
 
 [anyone,"lord_active_mission_1", [(store_partner_quest,":lords_quest"),
                                     (eq,":lords_quest","qst_lend_companion"),
@@ -4713,7 +4716,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_failed", [], "{s43}", "lord_pretalk",
    [(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_mission_failed_default"),
     (store_partner_quest,":lords_quest"),
-    (try_begin),(eq, ":lords_quest", "qst_capture_troll"),(troop_remove_item,"trp_player","itm_wheeled_cage"),(try_end),
+    (try_begin),(eq, ":lords_quest", "qst_capture_troll"),(troop_remove_item,"trp_player","itm_wheeled_cage"),(try_end), # CppCoder: Remove wheeled cage when failed/ended quest
     (call_script, "script_abort_quest", ":lords_quest", 1)]],
 #Post 0907 changes end
   
@@ -4733,7 +4736,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     # TLD mission: capture troll (mtarini) -- begin 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_capture_troll")],
 "You are a brave servant, {playername}, and we will give you a glimpse of our plans.\
- We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strenghten our own breeds of colossal warriors!", "lord_mission_capture_troll_1", []],
+ We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strengthen our own breeds of colossal warriors!", "lord_mission_capture_troll_1", []],
   
 [anyone|plyr,"lord_mission_capture_troll_1", [], "How can I serve, Master?", "lord_mission_capture_troll_2",[]],
 
@@ -4758,7 +4761,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_capture_troll_accepted", [], 
 "I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.", "lord_pretalk",[
     (troop_add_item, "trp_player","itm_wheeled_cage",0),
-    # CC bugfix: Fill out capture wild troll quest text.
+    # CppCoder bugfix: Fill out capture wild troll quest text.
     (str_store_troop_name_link,s9,"$g_talk_troop"),
     (setup_quest_text,"$random_quest_no"),
     (str_store_string, s2, "@{s9} asked you to bring back a savage troll for use in his army."),
@@ -4826,7 +4829,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  I expect to see you back with news before {reg1} dawns are passed.", "lord_pretalk",
    [
     (try_begin),
-	# CC bugfix: Fill out fangorn quest text.
+	# CppCoder bugfix: Fill out fangorn quest text.
 	(eq, "$random_quest_no", "qst_investigate_fangorn"),
         (str_store_troop_name_link,s9,"$g_talk_troop"),
         (setup_quest_text, "qst_investigate_fangorn"),
@@ -4875,7 +4878,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 #TLD mission: Find the lost spears of king Bladorthin (Kolba) -- end
 
-# TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- begin
+# TLD mission: slay mirkwood sorcerer (GA, fixed by CppCoder) -- begin
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_mirkwood_sorcerer")], "There is an important service you can deliver to our people, {playername}.", "lord_mission_mirkwood_sorcerer", []],
 [anyone, "lord_mission_mirkwood_sorcerer", [], "My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!", "lord_mission_mirkwood_sorcerer_0", []],
@@ -4896,7 +4899,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected", []],
 [anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]], 
 
-# TLD mission: slay mirkwood sorcerer (GA, fixed by CC) -- end
+# TLD mission: slay mirkwood sorcerer (GA, fixed by CppCoder) -- end
 
 #TLD mission: nowy quest (Kolba) -- begin
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
@@ -7823,7 +7826,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone|plyr,"lord_deal_with_night_bandits_completed", [], "They had it coming.", "close_window",[(call_script,"script_stand_back"),]],
 
-# TODO: CC: Improve so the mayor accepts better metal scraps    
+# TODO: CppCoder: Improve so the mayor accepts better metal scraps    
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
                               (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
@@ -8619,7 +8622,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # prisoner talk
 #[anyone|plyr,"prisoner_chat_00", [], "Guards, bring me that one!", "prisoner_chat_2",[]],
 
-# CC bugfix: Trolls go rawr...
+# CppCoder bugfix: Trolls go rawr...
 [anyone,"prisoner_chat_00", [(store_conversation_troop,reg1),(troop_get_type, ":troll", reg1),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
 
 [anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
@@ -8921,7 +8924,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # GENERIC MEMBER CHAT
 ######################################
 
-# CC bugfix: Trolls go rawr...   
+# CppCoder bugfix: Trolls go rawr...   
 [anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
 
 [anyone,"member_chat_00", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
@@ -9329,7 +9332,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "{s43}", "close_window", [(call_script,"script_stand_back"),(call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_lord_challenged_default")]],
 #post 0907 changes end
 
-# CC: Reclaiming companions lost due to lack of RPs. This is a catch dialog.
+# CppCoder: Reclaiming companions lost due to lack of RPs. This is a catch dialog.
 
 [anyone,"start", [
 			(is_between, "$g_talk_troop", companions_begin, companions_end),

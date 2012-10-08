@@ -2765,68 +2765,53 @@ presentations = [
 
 ]),
 
-("customize_defilement",0,mesh_defiled_customize_bg,
+("customize_defilement", 0, mesh_load_window,
 [
 	(ti_on_presentation_load, 
 	[
 		(presentation_set_duration, 999999),
 		(set_fixed_point_multiplier, 1000),
-		(assign, "$g_presentation_obj_1", -1), # Do this so if we have only one/no armors, the object is invalid.
-		(assign, "$g_defiled_armor_mesh", "itm_defiled_armor_gondor"),
-		#(assign, "$g_defiled_armor_rotation", 0),
-		(assign, ":num_armors", 0),
-
-		# We go in reverse order so that the items are set correctly only if the player has the item
-		(try_begin),
-			(player_has_item, "itm_defiled_armor_dale"),
-			(val_add, ":num_armors", 1),
-			(assign, "$g_defiled_armor_mesh", "itm_defiled_armor_dale"),
-		(try_end),
-		(try_begin),
-			(player_has_item, "itm_defiled_armor_rohan"),
-			(val_add, ":num_armors", 1),
-			(assign, "$g_defiled_armor_mesh", "itm_defiled_armor_rohan"),
-		(try_end),
-		(try_begin),
-			(player_has_item, "itm_defiled_armor_gondor"),
-			(val_add, ":num_armors", 1),
-			(assign, "$g_defiled_armor_mesh", "itm_defiled_armor_gondor"),
-		(try_end),
-		(try_begin),
-			(gt, ":num_armors", 1),
-        		(create_button_overlay, "$g_presentation_obj_1", "@Next Armor", tf_center_justify),
-        		(position_set_x, pos1, 750),
-        		(position_set_y, pos1, 600),
-        		(overlay_set_position, "$g_presentation_obj_1", pos1), # Position it correctly
-		(try_end),
-
-		(create_mesh_overlay_with_tableau_material, "$g_presentation_obj_7", -1, "tableau_defile_troop", 0),
+		(assign, "$g_presentation_obj_1", -1), # Do this so if we have only one/no armors, the object is invalid.	
+	
+		(init_position, pos1),
+		(create_mesh_overlay_with_tableau_material, "$g_presentation_obj_1", -1, "tableau_defile_troop", 0),
         	(position_set_x, pos1, 0),
         	(position_set_y, pos1, 0),
-        	(overlay_set_position, "$g_presentation_obj_7", pos1),
+        	(overlay_set_position, "$g_presentation_obj_1", pos1),
 
-		(create_mesh_overlay, "$g_presentation_obj_8", "mesh_defiled_customize_overlay"),
+		(init_position, pos1),
+		(create_mesh_overlay, "$g_presentation_obj_2", "mesh_defiled_customize_overlay"),
+        	(overlay_set_position, "$g_presentation_obj_2", pos1),
         	
-		(create_button_overlay, "$g_presentation_obj_2", "@Chest", tf_center_justify),
+		(create_button_overlay, "$g_presentation_obj_3", "@Chest", tf_center_justify),
         	(position_set_x, pos1, 550),
         	(position_set_y, pos1, 550),
-        	(overlay_set_position, "$g_presentation_obj_2", pos1),
-		(create_button_overlay, "$g_presentation_obj_3", "@Cape", tf_center_justify),
+        	(overlay_set_position, "$g_presentation_obj_3", pos1),
+
+		(create_button_overlay, "$g_presentation_obj_4", "@Cape", tf_center_justify),
         	(position_set_x, pos1, 550),
         	(position_set_y, pos1, 500),
-        	(overlay_set_position, "$g_presentation_obj_3", pos1),
-		(create_button_overlay, "$g_presentation_obj_4", "@Arms", tf_center_justify),
+        	(overlay_set_position, "$g_presentation_obj_4", pos1),
+
+		(create_button_overlay, "$g_presentation_obj_5", "@Arms", tf_center_justify),
         	(position_set_x, pos1, 550),
         	(position_set_y, pos1, 450),
-        	(overlay_set_position, "$g_presentation_obj_4", pos1),
-		(create_button_overlay, "$g_presentation_obj_5", "@Thighs", tf_center_justify),
+        	(overlay_set_position, "$g_presentation_obj_5", pos1),
+
+		(create_button_overlay, "$g_presentation_obj_6", "@Thighs", tf_center_justify),
         	(position_set_x, pos1, 550),
         	(position_set_y, pos1, 400),
-        	(overlay_set_position, "$g_presentation_obj_5", pos1),
-		(create_button_overlay, "$g_presentation_obj_6", "@Legs", tf_center_justify),
+        	(overlay_set_position, "$g_presentation_obj_6", pos1),
+
+		(create_button_overlay, "$g_presentation_obj_7", "@Legs", tf_center_justify),
         	(position_set_x, pos1, 550),
         	(position_set_y, pos1, 350),
-        	(overlay_set_position, "$g_presentation_obj_6", pos1),
+        	(overlay_set_position, "$g_presentation_obj_7", pos1),
+
+		(create_button_overlay, "$g_presentation_obj_8", "@Rotate", tf_center_justify),
+        	(position_set_x, pos1, 600),
+        	(position_set_y, pos1, 300),
+        	(overlay_set_position, "$g_presentation_obj_8", pos1),
 	]),
 
 	(ti_on_presentation_run, 
@@ -2844,13 +2829,15 @@ presentations = [
 		(store_trigger_param_1, ":object"),
 		#(store_trigger_param_2, ":value"),
 		(try_begin),
-          		(eq, ":object", "$g_presentation_obj_1"),
-			(val_add, "$g_defiled_armor_mesh", 1),
-			(display_message, "@Value changed..."),
+			(eq, ":object", "$g_presentation_obj_8"),
+			(val_add, "$g_defiled_armor_rotation", 90), # Rotate 90 deg
 			(try_begin),
-				(ge, "$g_defiled_armor_mesh", defiled_items_end),
-				(assign, "$g_defiled_armor_mesh", defiled_items_begin),
+				(ge, "$g_defiled_armor_rotation", 360),
+				(store_sub, "$g_defiled_armor_rotation", "$g_defiled_armor_rotation", 360),
 			(try_end),
+			(assign, reg0, "$g_defiled_armor_rotation"),
+			(display_message, "@Rotation={reg0}"),
+          		(start_presentation, "prsnt_customize_defilement"), # Restart
 		(try_end),
 	]),
 

@@ -1,4 +1,4 @@
-1103
+1109
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -68,13 +68,13 @@ qstr___What_business_do_y _'What_business_do_you_have_here,_supplicants?'
 qstr___Your_Stewardship_w _'Your_Stewardship,_we_have_come_from_distant_lands_to..._jump!'
 qstr___Enough_of_this_mad _'Enough_of_this_madness!_Guards!!'
 qstr___I_ve_had_enough_of _'I've_had_enough_of_these_pranks..._The_next_bunch_would_have_to_kneel!'
-qstr_Next_Armor Next_Armor
 qstr_Chest Chest
 qstr_Cape Cape
 qstr_Arms Arms
 qstr_Thighs Thighs
 qstr_Legs Legs
-qstr_Value_changed... Value_changed...
+qstr_Rotate Rotate
+qstr_Rotation={reg0} Rotation={reg0}
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -581,7 +581,6 @@ qstr_Report_this_ill_news Report_this_ill_news_to_the_Lady_at_once.
 qstr_The_sorcerer_is_flee The_sorcerer_is_fleeing!_Kill_him!
 qstr_The_sorcerer_is_dead The_sorcerer_is_dead!
 qstr_The_battle_is_won! The_battle_is_won!
-qstr_You_receive_{reg0}_d You_receive_{reg0}_damage.
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!
@@ -1000,9 +999,16 @@ qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}
 qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
 qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
-qstr_gift_no={reg20}_s2={ gift_no={reg20},_s2={s2}
+qstr_The_people_of_{s3}_t The_people_of_{s3}_thank_you_for_your_gift,_{playername}._In_exchange_for_your_gift_of_{s1},_we_will_send_the_people_of_{s4}_a_gift_of_{s2}._I_thank_you_once_again,_{playername}.
+qstr_I_want_to_deliver_a_ I_want_to_deliver_a_gift_to_our_allies.
+qstr_delivering_a_gift delivering_a_gift
+qstr_I_want_to_bring_a_br I_want_to_bring_a_bribe_to_our_allies.
+qstr_giving_a_bribe giving_a_bribe
 qstr_{s2}_[{reg14}_Resour {s2}_[{reg14}_Resource_Points]
+qstr_Gift Gift
 qstr_You_have_requested_t You_have_requested_to_deliver_a_gift_of_{s1}_to_{s3}_from_{s2}._The_people_of_{s3}_will_surely_appreciate_this_kind_gesture.
+qstr_Bribe Bribe
+qstr_You_have_requested_to You_have_requested_to_deliver_a_bribe_of_{s1}_to_{s3}_from_{s2}._Hopefully_you_can_get_some_sort_of_reward_from_them_in_exchange.
 qstr_Taking_{reg0}_inf._A Taking_{reg0}_inf._Alt?={reg1}
 qstr_You_spent_{reg0}_of_ You_spent_{reg0}_of_your_influence_with_{s1},_with_{reg1}_remaining.
 qstr_The_War_is_over_{pla The_War_is_over,_{playername},_haven't_you_heard?

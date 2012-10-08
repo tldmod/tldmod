@@ -234,8 +234,8 @@ quests = [
 ( "oath_of_vengeance", "Oath of Vengeance", qf_random_quest,
   "Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"
   ),
-  ("deliver_gift", "Deliver a Gift of {s1} from {s2} to {s3}", qf_random_quest,
-  "You have requested to deliver a gift of {s1} to {s3} from {s2}."
+  ("deliver_gift", "Deliver a {s4} of {s1} from {s2} to {s3}", qf_random_quest,
+  "You have requested to deliver a {s4} of {s1} to {s3} from {s2}."
   ),
  # ### TLD traits
 # ( "trait_elf_friend", "*TRAIT*_-Elf_Friend", 0, 

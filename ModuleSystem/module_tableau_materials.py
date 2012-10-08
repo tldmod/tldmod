@@ -832,7 +832,7 @@ tableaus = [
        (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
 ]),	
 
-("defile_troop", 0, "troop_portrait", 1024, 1024, 0, 0, 600, 600,
+("defile_troop", 0, "defile_troop_portrait", 1024, 1024, 0, 0, 600, 600,
    [
     # (store_script_param, ":type", 1),
      (set_fixed_point_multiplier, 100),
@@ -844,22 +844,21 @@ tableaus = [
      (position_set_y, pos8, 200),
      (position_set_z, pos8, 300),
      (cur_tableau_add_point_light, pos8, 550,500,450),
-     (cur_tableau_set_override_flags, af_override_all),
+     (cur_tableau_set_override_flags, af_override_body),
 
-     (cur_tableau_add_override_item, "$g_defiled_armor_mesh"),
-     (cur_tableau_add_override_item, "itm_orc_ragwrap"),
+     (cur_tableau_add_override_item, "$g_defiled_armor_item"),
      (assign, ":animation", "anim_pose_1"),
 
-     (init_position, pos2),
      (cur_tableau_set_camera_parameters, 1, 6, 6, 10, 10000),
+
+     (init_position, pos2),
+     (position_rotate_z, pos2, "$g_defiled_armor_rotation"),
+     (cur_tableau_add_troop, "trp_player", pos2, ":animation" , 0),
 
      (init_position, pos5),
      (position_set_x, pos5, 0), 
      (position_set_y, pos5, 400),
      (position_set_z, pos5, 21),
-
-     (cur_tableau_add_troop, "trp_player", pos2, ":animation" , 0),
-
      (position_rotate_x, pos5, -90),
      (position_rotate_z, pos5, 180),
      (cur_tableau_set_camera_position, pos5),

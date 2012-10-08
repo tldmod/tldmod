@@ -2716,6 +2716,7 @@ mission_templates = [ # not used in game
 			(jump_to_menu, "mnu_animal_ambush_fail"),
 			(finish_mission),
 		(try_end),
+		# Apply health changes...
 		(try_begin),
 			(eq|this_or_next, "$battle_won", 1),
 			(main_hero_fallen),
@@ -2788,7 +2789,7 @@ mission_templates = [ # not used in game
 			(try_begin),
 				(get_player_agent_no, ":player"),
 				(eq, ":target", ":player"),
-				(display_message, "@You receive {reg0} damage."),
+				(display_message, "@Received {reg0} damage."),
 			(try_end),
 			(set_show_messages, 0),
 			(store_agent_hit_points,":hp",":target",1),
@@ -2801,7 +2802,6 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end),
 	]),
-
 
 	# Remove riderless creatures
 	(1, 0, 0, [], [

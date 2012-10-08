@@ -635,8 +635,8 @@ inital_player_xp
 g_fac_str_siegable
 battle_renown_total
 g_variable7
-g_variable8
-g_variable9
+g_defiled_armor_item
+g_defiled_armor_rotation
 tld_option_siege_reqs
 tld_option_siege_relax_rate
 tld_option_regen_rate
@@ -651,4 +651,3 @@ new_kills
 g_spawn_allies_routed
 g_spawn_enemies_routed
 tld_option_max_parties
-g_defiled_armor_mesh
