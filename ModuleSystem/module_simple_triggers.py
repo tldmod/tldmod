@@ -1225,11 +1225,18 @@ simple_triggers = [
 ]),
 	
  
-# (46) Remaining days text update
+# (46) Remaining days text update, plus canceling quests for dead lords.
 (24,[(try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
 		(try_begin),
 			(check_quest_active, ":cur_quest"),
-			(try_begin),
+			(try_begin), # Cancel quests for dead lords (CppCoder)
+				(neg|check_quest_concluded, ":cur_quest"),
+				(quest_get_slot, ":troop_no", ":cur_quest", slot_quest_giver_troop),
+				(gt, ":troop_no", 0),
+         			(troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), # Is the troop dead?
+				(display_message, "@{s1} has died on the battlefield. Quest canceled.", color_bad_news),
+				(call_script, "script_cancel_quest", ":cur_quest"),
+			(else_try),
 				(neg|check_quest_concluded, ":cur_quest"),
 				(quest_slot_ge, ":cur_quest", slot_quest_expiration_days, 1),
 				(quest_get_slot, ":exp_days", ":cur_quest", slot_quest_expiration_days),
@@ -1237,7 +1244,7 @@ simple_triggers = [
 				(try_begin),
 					(eq, ":exp_days", 0),
 					(try_begin),
-						(eq, ":cur_quest", "qst_mirkwood_sorcerer"), # CC: Disable the ruins party if you fail the sorcerer quest.
+						(eq, ":cur_quest", "qst_mirkwood_sorcerer"), # (CppCoder) Disable the ruins party if you fail the sorcerer quest.
 						(disable_party, "p_ancient_ruins"),
 						(call_script, "script_fail_quest", ":cur_quest"),
 					(else_try),

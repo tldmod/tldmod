@@ -352,6 +352,12 @@ scripts = [
 ("rank_income_to_player",[
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":fac", slot_faction_state, sfs_active), #MV fix: dead factions don't pay you
+
+		# Allows us modders to cap the resource points income. (CppCoder)
+		(faction_get_slot, ":total_rp",  ":fac", slot_faction_respoint),
+		(this_or_next|eq, tld_rp_cap, -1),
+		(lt, ":total_rp", tld_rp_cap),
+
 		(call_script, "script_get_faction_rank", ":fac"),
 		(assign, ":rank", reg0),
 		(gt, ":rank", 0),
@@ -361,10 +367,6 @@ scripts = [
 		(store_mul, ":rank10", ":rank", 10), 
 		(val_mul, ":income", 5),  #  ( rank^2 *5 +rank * 10) =  0,  15 , 30, 55, 90 , 135, 190, 255, ... per day.
 		(val_add, ":income", ":rank10"),
-		# Allows us modders to cap the resource points income. (CppCoder)
-		(faction_get_slot, ":total_rp",  ":fac", slot_faction_respoint),
-		(this_or_next|eq, tld_rp_cap, -1),
-		(lt, ":total_rp", tld_rp_cap),
 		(call_script, "script_add_faction_rps", ":fac", ":income"),
 	(try_end),
 ]),
