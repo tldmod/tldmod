@@ -2115,8 +2115,8 @@ tld_morale_formation_bonus	= 25 # Gondor and Dunland
 tld_morale_leader_important	= 45 # Black numenoreans / evil men
 tld_morale_leader_bonus		= 15 # Default morale bonus
 tld_morale_leader_average	= 20 # Average
-tld_morale_leader_avenge	= 25 # Dwarfs
-tld_morale_leader_urukhai	= 25 # Uruk hai when leader falls
+tld_morale_leader_avenge	= 25 # Dwarfs,   when leader falls
+tld_morale_leader_urukhai	= 25 # Uruk hai, when leader falls
 
 tld_morale_rout			= 45
 
@@ -2146,5 +2146,6 @@ tld_rp_cap				= 200000
 tld_if_cap				= 5000
 tld_influence_trait_bonus		= 2
 
+# These are used for the gift giving system.
 gift_strings_begin			= "str_gondor_gift0"
 tld_gifts_per_faction			= 5

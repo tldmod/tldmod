@@ -40,14 +40,14 @@ af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_ov
 
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
-	#tld_wargs_attack_horses, # CC: WIP
+	#tld_wargs_attack_horses, # WIP (CppCoder)
 	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
-	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); CC: improved, but still WIP.
+	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); Improved, but still WIP. (CppCoder)
 	tld_player_cant_ride,
 	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,
@@ -505,7 +505,7 @@ mission_templates = [ # not used in game
 		(try_end),
 		(agent_set_speed_limit,":agent_no",":speed_limit"),
 		#(agent_set_slot, ":agent_no", 1, 1),
-		# CC: Prevent enemy trolls from spawning. Easiest fix IMO. 
+		# (CppCoder) Prevent enemy trolls from spawning. Easiest fix IMO. 
 		(try_begin),
 			(agent_get_team, ":agent_team", ":agent_no"),
 			(neq, ":agent_team", 2),
@@ -528,7 +528,7 @@ mission_templates = [ # not used in game
 	(assign, "$talk_context", 0),
 	(call_script, "script_count_mission_casualties_from_agents"),
 
-	# CC: Remove killed trolls (maybe others) from killed party.
+	# (CppCoder) Remove killed trolls (maybe others) from killed party.
 	(party_get_num_companion_stacks, ":num_stacks", "p_enemy_casualties"),
 	(try_for_range, ":index", 0, ":num_stacks"),
         	(party_stack_get_troop_id, ":stack_troop",  "p_enemy_casualties", ":index"),
@@ -640,7 +640,7 @@ mission_templates = [ # not used in game
      (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
-    formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts +[
+    formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts + command_cursor_sub_mod + [
 	common_battle_tab_press,
 	common_music_situation_update,
 	(0,0,ti_once,[],[]),
@@ -707,7 +707,7 @@ mission_templates = [ # not used in game
 ( "bandits_at_night",0,-1,
   "Default town visit",
     [(0,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #MV: player set to team 2
-     (1,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #CC: this and next entry fixes bugs somehow. :)
+     (1,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]), #(CppCoder): this and next entry fixes bugs somehow. :)
      (2,mtef_scene_source|mtef_team_2, af_override_horse, 0, 1,[]),
      (3,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
      (4,mtef_visitor_source|mtef_team_0,af_override_horse, aif_start_alarmed, 1, []),
@@ -732,7 +732,7 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
-	(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # CC: These are what cause the "unable to finish" bugs.
+	(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
 	(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"), 
       ]),
       common_inventory_not_available,
@@ -825,7 +825,7 @@ mission_templates = [ # not used in game
 	
 	tld_common_battle_scripts+[   
 	
-	# CC: Fixes fangorn retreat bug.
+	# (CppCoder) Fixes fangorn retreat bug.
 	(ti_tab_pressed, 0, 0, [],
 	[
 		(try_begin),
@@ -2158,7 +2158,7 @@ mission_templates = [ # not used in game
 		#  (team_set_relation, 3, 2, 1),
 		(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 		#  (call_script, "script_infiltration_mission_set_hit_points"),
-		# CC: WTF?
+		# (CppCoder) WTF?
 		(try_for_range, reg10, 1, 32),
 			(entry_point_get_position, reg10, reg10),
 		(try_end),
@@ -2399,6 +2399,8 @@ mission_templates = [ # not used in game
 	(ti_tab_pressed,0,0,[],[(try_begin),(eq, "$battle_won", 1),(finish_mission),(try_end)]),
 	(ti_question_answered,0,0,[],[(store_trigger_param_1, ":answer"),(eq, ":answer", 0),(finish_mission)]),
 ]),
+
+# This mission template could be improved for better clarity
 ( "sorcerer_mission",mtf_battle_mode,0,
   "You_lead_your_men_to_battle.",
 	[(0 ,mtef_visitor_source|mtef_team_1 ,af_override_horse, aif_start_alarmed, 1,[]),( 1 ,mtef_visitor_source|mtef_team_1 ,af_override_horse, aif_start_alarmed, 1,[]),  
@@ -2732,7 +2734,7 @@ mission_templates = [ # not used in game
 		(try_end),
 	]),
 
-# Bear striking...
+# Aniamal striking...
 (1, 0, 0, [], [
 	(set_fixed_point_multiplier, 100),
 	(try_for_agents, ":agent"),
@@ -2741,6 +2743,8 @@ mission_templates = [ # not used in game
 		(call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
 		(gt, reg0, 0),
 		(agent_get_troop_id, ":agent_trp", ":agent"),
+		(eq|this_or_next, ":agent_trp", "trp_spider"),
+		(eq|this_or_next, ":agent_trp", "trp_wolf"),
 		(eq, ":agent_trp", "trp_bear"),
 		(agent_get_horse, ":horse", ":agent"),
 		(ge, ":horse", 0),
@@ -2762,13 +2766,22 @@ mission_templates = [ # not used in game
 			(assign, ":enemy_in_front", 1),
 		(try_end),
 		(eq, ":enemy_in_front", 1),
-		(store_random_in_range, ":rnd", 0, 2),
 		(assign, ":anim", "anim_bear_slap_right"),
 		(try_begin),
-			(eq, ":rnd", 1),
-			(assign, ":anim", "anim_bear_slap_right"),
+			(eq, ":agent_trp", "trp_spider"),
+			(assign, ":anim", "anim_spider_attack"),
 		(else_try),
-			(assign, ":anim", "anim_bear_uppercut"),
+			(eq, ":agent_trp", "trp_wolf"),
+			(assign, ":anim", "anim_wolf_snap"),
+		(else_try),
+			(eq, ":agent_trp", "trp_bear"),
+			(store_random_in_range, ":rnd", 0, 2),
+			(try_begin),
+				(eq, ":rnd", 1),
+				(assign, ":anim", "anim_bear_slap_right"),
+			(else_try),
+				(assign, ":anim", "anim_bear_uppercut"),
+			(try_end),
 		(try_end),
 		(agent_set_animation, ":horse", ":anim"),
 		(try_for_agents, ":target"),	
@@ -2783,22 +2796,43 @@ mission_templates = [ # not used in game
 			(neg|position_is_behind_position, pos2, pos1),
 			(agent_get_team, ":agent_team", ":agent"),
 			(agent_get_team, ":target_team", ":target"),
-			(teams_are_enemies, ":agent_team", ":target_team"),			
-			(store_random_in_range, reg0, 10, 30),
+			(teams_are_enemies, ":agent_team", ":target_team"),	
+			(assign, ":damaged_agents", 0),
+			(assign, ":agents_to_damage", 100),		
+			(try_begin),
+				(eq, ":agent_trp", "trp_spider"),
+				(store_random_in_range, reg0, 10, 20),
+				(assign, ":hit_anim", "anim_strike_fly_back"),
+				(assign, ":agents_to_damage", 1),
+			(else_try),
+				(eq, ":agent_trp", "trp_wolf"),
+				(store_random_in_range, reg0, 10, 15),
+				(assign, ":hit_anim", "anim_strike_legs_front"),
+				(assign, ":agents_to_damage", 1),
+			(else_try),
+				(eq, ":agent_trp", "trp_bear"),
+				(store_random_in_range, reg0, 10, 30),
+				(assign, ":hit_anim", "anim_strike_fly_back"),
+				(assign, ":agents_to_damage", 100),
+			(try_end),
 			#(display_message, "@DEBUG: Bear strikes!"),
 			(try_begin),
 				(get_player_agent_no, ":player"),
 				(eq, ":target", ":player"),
 				(display_message, "@Received {reg0} damage."),
 			(try_end),
+			(le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
 			(set_show_messages, 0),
 			(store_agent_hit_points,":hp",":target",1),
 			(val_sub, ":hp", reg0),
 			(agent_set_hit_points, ":target", ":hp", 1),
-			(agent_deliver_damage_to_agent, ":agent", ":target"),
+			(try_begin),
+				(le, ":hp", 0),
+				(agent_deliver_damage_to_agent, ":agent", ":target"),
+			(try_end),
 			(set_show_messages, 1),
-			
-			(agent_set_animation, ":target", "anim_strike_fly_back"),
+			(val_add, ":damaged_agents", 1),
+			(agent_set_animation, ":target", ":hit_anim"),
 		(try_end),
 	(try_end),
 	]),

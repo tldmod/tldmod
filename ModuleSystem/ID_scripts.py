@@ -493,5 +493,7 @@ script_flee_enemies = 491
 script_rout_allies = 492
 script_rout_enemies = 493
 script_coherence = 494
+script_cf_shift_pos1_along_y_axis_to_ground = 495
+script_shift_pos1_along_y_axis_to_ground_aux = 496
 
 

@@ -1,5 +1,17 @@
 TLD 3.2 changes:
 - CppCoder:
+  - Kingdom Heroes now need at least 75 troops to besiege.
+  - Resource Point Cap (200,000)
+  - Gift Giving (Exchange Resource Points)
+  - Berserker Troops no longer rout
+  - Command Cursor Mini Mod
+  - Galadriel's Quest (Mirkwood Sorcerer)
+  - Animal Ambushes (Mirkwood or Northern Mountains)
+  - Mordor Legions (when mordor is last faction standing with less than 2500 strength)
+  - Isengard and Mirkwood guardian parties should spawn now.
+  - Influence traits give influence (for player's faction only).
+  - Battle Morale System: After Battle summary now reports routed troops.
+  - Battle Morale System: Tweaking of morale values. (still WIP)
   - Party Limit Option in camp->TLD options->Gameplay Tweaks->Compatibility tweaks
   - Starting equipment bug fixed.
   - Battle Morale System.
@@ -15,6 +27,9 @@ TLD 3.2 changes:
   - Companions tell you their exact injuries.
   - Companions lost due to lack of RPs can rejoin you again.
   - Many other small bug fixes.
+  - More bugfixing.
+- Merlkir:
+  - Minor graphic tweak.
 - vota dc:
   - More item/troop balancing. (I think?)
 

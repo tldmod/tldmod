@@ -1775,19 +1775,31 @@ troops = [
 ["caravan_guard","Caravan_Guard","Caravan_Guards",tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_2|knows_ironflesh_1,bandit_face1,bandit_face2],
+
 # Messengers of different races for quests (non-heroes: can be killed or captured on purpose)
+# TODO: Maybe make a messenger for each different faction. (CppCoder)
+
 ["messenger_man", "Messenger", "Messengers", tf_randomize_face| tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_gon_ranger_skirt,itm_gondor_light_greaves,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_2,man_face_young_1,man_face_old_2],
+
 ["messenger_elf", "Messenger", "Messengers", tf_lorien| tf_randomize_face| tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_lorien_armor_a,itm_lorien_boots,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_riding_2,lorien_elf_face_1,lorien_elf_face_2],
+
 ["messenger_dwarf", "Messenger", "Messengers", tf_dwarf| tf_randomize_face| tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_dwarf_pad_boots,itm_leather_dwarf_armor,],
       attr_dwarf_tier_1,wp_dwarf_tier_1,knows_common_dwarf|knows_riding_2,dwarf_face_2,dwarf_face_3],
+
 ["messenger_orc", "Messenger", "Messengers", tf_orc| tf_randomize_face| tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_moria_armor_a,],
       attr_orc_tier_1,wp_orc_tier_1,knows_common|knows_riding_2,orc_face3,orc_face8],
+
+# Added to fix evil factions getting gondor messengers.
+["messenger_evil_man", "Messenger", "Messengers", tf_evil_man|tf_randomize_face|tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
+   [itm_khand_foot_lam_c,itm_variag_greaves,],
+      attr_tier_1,wp_tier_1,knows_common|knows_riding_2,khand_man1,khand_man2],
+
 #This troop is the troop marked as soldiers_end
 ["town_walker_1","Townsman","Townsmen",tf_gondor| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
@@ -2036,7 +2048,7 @@ troops = [
 ["kingdom_heroes_including_player_begin","bug","_",tf_hero,0,0,fac_gondor,
    [],
       lord_attrib,0,0,0],
-#governors (lural contains how player refers to the guy
+#governors (plural contains how player refers to the guy
 ["gondor_lord","Steward_Denethor","Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_denethor_robe,itm_gondor_light_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],

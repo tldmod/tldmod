@@ -47,3 +47,5 @@ psys_map_village_looted_smoke = 45
 psys_dungeon_water_drops = 46
 psys_map_water_splash = 47
 psys_scene_fog = 48
+psys_fat_arrow = 49
+psys_fat_arrow_rising = 50

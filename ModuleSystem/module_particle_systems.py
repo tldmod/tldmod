@@ -834,4 +834,34 @@ particle_systems = [
      20,                       #rotation speed
      1                        #rotation damping
     ),
+
+###command_cursor_minimod_begin###
+    ("fat_arrow", psf_always_emit|psf_billboard_2d|psf_global_emit_dir, "arrow_up_rot",
+     100, 0.1, 0.0, 0.0, 100.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.7), (1.0, 0.7),          #alpha keys
+     (0.0, 0.0), (1.0, 0.0),      #red keys
+     (0.0, 1.0), (1.0, 1.0),       #green keys
+     (0.0, 0.0), (1.0, 0.0),      #blue keys
+     (0, 30),    (1.0, 30.0),        #scale keys
+     (0.0, 0.0, 0.0),           #emit box size
+     (0.0, 0.0, 0.0),                 #emit velocity
+     0.0,                       #emit dir randomness
+     0,
+     0
+    ),
+    ("fat_arrow_rising", psf_always_emit|psf_billboard_2d|psf_global_emit_dir, "arrow_up_rot",
+     100, 3, 0.0, 0.0, 0.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.7), (1.0, 0.7),          #alpha keys
+     (0.25, 0.0), (1, 1.0),      #red keys
+     (0.0, 1.0),(0.5, 0.0),       #green keys
+     (0.0, 0.0), (1, 0.0),      #blue keys
+     (0, 30),   (1.0, 30),        #scale keys
+     (0.0, 0.0, 0.0),           #emit box size
+     (0.0, 0, 3),                 #emit velocity
+     0.0,                       #emit dir randomness
+     0,
+     0
+    ),
+###command_cursor_minimod)end###
+
 ]

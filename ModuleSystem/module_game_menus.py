@@ -1116,7 +1116,7 @@ game_menus = [
  "^^^^^^^^^Your Master is the White Hand^Choose your Race", "none",[],[
  ("start_1",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
  ("start_2",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
- ("start_3",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_3",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"go back",[(jump_to_menu, "mnu_start_evil")]),    ]
  ),

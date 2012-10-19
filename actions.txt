@@ -940,10 +940,10 @@
   1.000000 bear_slap_right 1 45 2 0 0.0 0.0 0.0 0.0 
  bear_uppercut 1026  1
   1.000000 bear_uppercut 44 93 2 0 0.0 0.0 0.0 0.0 
- unused_horse_anim_9 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_horse_anim_10 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
+ spider_attack 1026  1
+  1.000000 spider_attack 1 33 2 0 0.0 0.0 0.0 0.0 
+ wolf_snap 1026  1
+  1.000000 wolf_snap 1 55 2 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_11 0  1
   1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_12 0  1

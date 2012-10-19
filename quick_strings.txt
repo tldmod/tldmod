@@ -1,4 +1,4 @@
-1109
+1118
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -549,6 +549,14 @@ qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_his_tro {s5}_rallies_his_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_Everyone Everyone
+qstr_Infantry Infantry
+qstr_Archers Archers
+qstr_Cavalry Cavalry
+qstr_{s1} {s1}
+qstr_{s1}_and_{s2} {s1}_and_{s2}
+qstr_{s1}_{s2}_and_{s3} {s1},_{s2}_and_{s3}
+qstr_{s10}_Move_over_ther {s10},_Move_over_there!
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
@@ -849,6 +857,7 @@ qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.
+qstr_{s1}_has_died_on_the {s1}_has_died_on_the_battlefield._Quest_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_Parties_defeated:_{r Parties_defeated:_{reg1}
@@ -883,7 +892,7 @@ qstr_Get_out_now! Get_out,_now!
 qstr_You_are_inside_Fango You_are_inside_Fangorn._{s11}
 qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
 qstr_Your_party_s_morale_ Your_party's_morale_has_risen_from_hatred.
-qstr_Your_companions__mor Your_companions'_morale_has_dropped_from_fear.
+qstr_Your_party_s_morale_h Your_party's_morale_has_fallen_from_fear.
 qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
@@ -1003,7 +1012,7 @@ qstr_The_people_of_{s3}_t The_people_of_{s3}_thank_you_for_your_gift,_{playernam
 qstr_I_want_to_deliver_a_ I_want_to_deliver_a_gift_to_our_allies.
 qstr_delivering_a_gift delivering_a_gift
 qstr_I_want_to_bring_a_br I_want_to_bring_a_bribe_to_our_allies.
-qstr_giving_a_bribe giving_a_bribe
+qstr_delivering_a_bribe delivering_a_bribe
 qstr_{s2}_[{reg14}_Resour {s2}_[{reg14}_Resource_Points]
 qstr_Gift Gift
 qstr_You_have_requested_t You_have_requested_to_deliver_a_gift_of_{s1}_to_{s3}_from_{s2}._The_people_of_{s3}_will_surely_appreciate_this_kind_gesture.

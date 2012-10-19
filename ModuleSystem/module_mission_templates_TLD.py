@@ -7,6 +7,152 @@ from header_music import *
 from module_constants import *
 
 
+# COMMAND CURSOR MINIMOD # (CppCoder)
+
+
+common_init_command_cursor = (
+  ti_before_mission_start, 0, 0, [],
+  [
+    (assign, "$order_move_to_pos43_start", 0),
+	  (assign, "$hold_key_1second",0),
+  ])
+
+# Sped up from 1 second to 0.5 second.
+common_command_cursor_countdown = (
+  0, 0.5, 0, 
+  [
+    (try_begin),
+      (neg|game_key_is_down, gk_order_halt),
+	    (assign, "$hold_key_1second",0),
+    (try_end),
+    (game_key_is_down, gk_order_halt),
+  ],
+  [
+    (try_begin),
+      (game_key_is_down, gk_order_halt),
+	    (assign, "$hold_key_1second",1),
+    (try_end),
+  ])
+
+  
+common_command_cursor_key_pressed = (
+  0.05, 0, 0,
+    [
+      (game_key_is_down, gk_order_halt),
+      (eq, "$hold_key_1second",1),
+      (get_player_agent_no, ":player"),
+      (agent_get_look_position, pos1, ":player"),
+      (position_move_z, pos1, 120),
+      (try_begin),
+        (call_script, "script_cf_shift_pos1_along_y_axis_to_ground", 30000),
+        (assign, "$order_move_to_pos43_start", 1),
+        (particle_system_burst, "psys_fat_arrow", pos1, 1),
+        (copy_position, pos43, pos1),
+      (else_try),
+        (assign, "$order_move_to_pos43_start", 0),
+      (try_end),
+    ], []
+)
+
+# Modified to have proper message when multiple groups are selected (e.g., "Infantry and Cavalry"). (CppCoder)
+common_order_move_to_pos43 = (
+  0, 0, 0,
+    [
+      (eq, "$order_move_to_pos43_start", 1),
+      (neg|game_key_is_down, gk_order_halt),
+      (assign, "$order_move_to_pos43_start", 0),
+      (particle_system_burst, "psys_fat_arrow_rising", pos43, 1),
+      (get_player_agent_no, ":player"),
+      (agent_get_team, ":player_team", ":player"),
+      (set_show_messages, 0),
+      (assign, ":num_listening", 0),
+      (assign, ":str_id", s1),
+      (try_begin),
+        (class_is_listening_order, ":player_team", grc_infantry),
+        (class_is_listening_order, ":player_team", grc_archers),
+        (class_is_listening_order, ":player_team", grc_cavalry),
+	(try_begin),
+		(eq, "$tld_option_formations", 1),
+		(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos43),
+		(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos43),
+		(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos43),
+	(else_try),
+        	(team_give_order, ":player_team", grc_everyone, mordr_hold),
+        	(team_set_order_position, ":player_team", grc_everyone, pos43),
+	(try_end),
+        (str_store_string, s1, "@Everyone"),
+      (else_try),
+	(try_begin),
+        	(class_is_listening_order, ":player_team", grc_infantry),
+      		(set_show_messages, 0),
+		(try_begin),
+			(eq, "$tld_option_formations", 1),
+			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos43),
+		(else_try),
+        		(team_give_order, ":player_team", grc_infantry, mordr_hold),
+        		(team_set_order_position, ":player_team", grc_infantry, pos43),
+		(try_end),
+      		(set_show_messages, 1),
+        	(str_store_string, ":str_id", "@Infantry"),
+		(val_add, ":str_id", 1),
+		(val_add, ":num_listening", 1),
+      	(try_end),
+	(try_begin),
+        	(class_is_listening_order, ":player_team", grc_archers),
+      		(set_show_messages, 0),
+		(try_begin),
+			(eq, "$tld_option_formations", 1),
+			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos43),
+		(else_try),
+        		(team_give_order, ":player_team", grc_archers, mordr_hold),
+        		(team_set_order_position, ":player_team", grc_archers, pos43),
+		(try_end),
+      		(set_show_messages, 1),
+        	(str_store_string, ":str_id", "@Archers"),
+		(val_add, ":str_id", 1),
+		(val_add, ":num_listening", 1),
+      	(try_end),
+	(try_begin),
+        	(class_is_listening_order, ":player_team", grc_cavalry),
+      		(set_show_messages, 0),
+		(try_begin),
+			(eq, "$tld_option_formations", 1),
+			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos43),
+		(else_try),
+        		(team_give_order, ":player_team", grc_cavalry, mordr_hold),
+        		(team_set_order_position, ":player_team", grc_cavalry, pos43),
+		(try_end),
+      		(set_show_messages, 1),
+        	(str_store_string, ":str_id", "@Cavalry"),
+		(val_add, ":str_id", 1),
+		(val_add, ":num_listening", 1),
+      	(try_end),
+      (try_end),
+      (set_show_messages, 1),
+      (try_begin),
+		(try_begin),
+			(le, ":num_listening", 1),
+			(str_store_string, s10, "@{s1}"),
+		(else_try),
+			(eq, ":num_listening", 2),
+			(str_store_string, s10, "@{s1} and {s2}"),
+		(else_try),
+			(eq, ":num_listening", 3),
+			(str_store_string, s10, "@{s1}, {s2} and {s3}"),
+		(try_end),
+      (try_end),
+      (display_message, "@{s10}, Move over there!"),
+    ], []
+)
+command_cursor_sub_mod = [
+	common_init_command_cursor,
+	common_command_cursor_countdown,
+	common_command_cursor_key_pressed,
+	common_order_move_to_pos43,
+]
+# COMMAND CURSOR MINIMOD #
+ 
+
 # Something I'm testing with. -CC
 tld_wargs_attack_horses = (2, 0, 0, [(gt, "$wargs_in_battle", 0)], 
 			[

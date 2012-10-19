@@ -4633,22 +4633,22 @@ scripts = [
        (party_stack_get_troop_id, ":stack_troop",":party_no",":i_stack"),
        (party_stack_get_size, ":stack_size",":party_no",":i_stack"),
        (party_stack_get_num_wounded, ":num_wounded",":party_no",":i_stack"),
+       (store_sub, ":num_killed", ":stack_size", ":num_wounded"),
 	(try_begin),
 		(eq, ":party_no", "p_player_casualties"),
 		(troop_get_slot, ":num_routed", ":stack_troop", slot_troop_routed_us),
-		(store_sub, ":num_wounded", ":num_wounded", ":num_routed"),
+		(store_sub, ":num_killed", ":num_killed", ":num_routed"),
 	(else_try),
 		(eq, ":party_no", "p_ally_casualties"),
 		(troop_get_slot, ":num_routed", ":stack_troop", slot_troop_routed_allies),
-		(store_sub, ":num_wounded", ":num_wounded", ":num_routed"),
+		(store_sub, ":num_killed", ":num_killed", ":num_routed"),
 	(else_try),
 		(eq, ":party_no", "p_enemy_casualties"),
 		(troop_get_slot, ":num_routed", ":stack_troop", slot_troop_routed_enemies),
-		(store_sub, ":num_wounded", ":num_wounded", ":num_routed"),
+		(store_sub, ":num_killed", ":num_killed", ":num_routed"),
 	(try_end),
 
        (store_sub, ":stack_size", ":stack_size", ":num_routed"),
-       (store_sub, ":num_killed", ":stack_size", ":num_wounded"),
        (val_add, ":total_killed", ":num_killed"),
        (val_add, ":total_wounded", ":num_wounded"),
        (val_add, ":total_routed", ":num_routed"),
@@ -5758,7 +5758,7 @@ scripts = [
           (eq, ":quest_no", "qst_mirkwood_sorcerer"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_lorien_lord"),  # only Galadriel gives this quest
-			(ge, ":player_level", 10), # CC: Was 1, change to 10, to hard if at level 1.
+			(ge, ":player_level", 10), # CC: Was 1, change to 10, too hard if available at level 1.
 			(assign, ":quest_expiration_days", 10),
 			(assign, ":quest_dont_give_again_period", 10000),
 			(assign, ":quest_importance", 4),
@@ -6161,6 +6161,9 @@ scripts = [
               (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
               (eq, "$g_talk_troop_faction", "fac_woodelf"),
               (assign, ":cur_object_troop", "trp_messenger_elf"),
+            (else_try), # (CppCoder): Bugfix, evil men need different messenger than regular men.
+	      (faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+              (assign, ":cur_object_troop", "trp_messenger_evil_man"),
             (else_try),
               (assign, ":cur_object_troop", "trp_messenger_man"),
             (try_end),
@@ -14168,8 +14171,8 @@ scripts = [
          (eq, ":agent_party", "p_main_party"),
          (party_add_members, "p_player_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|neg, ":cur_agent", slot_agent_routed, 2),
        	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
-       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_routed, 2),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_player_casualties", ":agent_troop_id", 1),
          (try_end),
@@ -14177,16 +14180,16 @@ scripts = [
          (agent_is_ally, ":cur_agent"),
          (party_add_members, "p_ally_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|neg, ":cur_agent", slot_agent_routed, 2),
        	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
-       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_routed, 2),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_ally_casualties", ":agent_troop_id", 1),
          (try_end),
        (else_try),
          (party_add_members, "p_enemy_casualties", ":agent_troop_id", 1),
          (try_begin),
+       	   (agent_slot_eq|neg, ":cur_agent", slot_agent_routed, 2),
        	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_wounded, 1),
-       	   (agent_slot_eq|this_or_next, ":cur_agent", slot_agent_routed, 2),
            (agent_is_wounded, ":cur_agent"),
            (party_wound_members, "p_enemy_casualties", ":agent_troop_id", 1),
          (try_end),
@@ -19843,4 +19846,55 @@ scripts = [
 
 ]
 
-scripts = scripts + ai_scripts + formAI_scripts + morale_scripts
+command_cursor_scripts = [
+
+###command_cursor_minimod_begin###
+  # script_cf_shirt_pos1_along_y_axis_to_ground
+  # Input: max distance to shift before failing
+  # Output: pos1 shifted to ground level along forward y-axis
+  ("cf_shift_pos1_along_y_axis_to_ground",
+    [
+      (store_script_param, ":max_distance", 1),
+      (assign, reg0, 1), #output value
+      (assign, reg10, ":max_distance"),
+      (assign, reg11, 0), #distance so far
+      (get_scene_boundaries, pos10, pos11),
+      (position_get_x, reg12, pos10),
+      (position_get_y, reg13, pos10),
+      (position_get_x, reg14, pos11),
+      (position_get_y, reg15, pos11),
+      (call_script, "script_shift_pos1_along_y_axis_to_ground_aux"),
+      (eq, reg0, 1), #if max distance or scene boundaries were reached, fail
+      (position_set_z_to_ground_level, pos1),
+    ]),
+    
+  ("shift_pos1_along_y_axis_to_ground_aux", 
+    [
+      (val_add, reg2, 100),
+      (copy_position, pos2, pos1),
+      (position_set_z_to_ground_level, pos2),
+      (position_get_x, ":pos1_x", pos1),
+      (position_get_y, ":pos1_y", pos1),
+      (position_get_z, ":pos1_z", pos1),
+      (position_get_z, ":ground_z", pos2),
+      (try_begin),                           #IF:
+        (this_or_next|ge, reg11, reg10),     #distance so far > max_distance OR
+        (this_or_next|le, ":pos1_x", reg12), #pos1 x <= scene min x OR
+        (this_or_next|le, ":pos1_y", reg13), #pos1 y <= scene min y OR
+        (this_or_next|ge, ":pos1_x", reg14), #pos1 x >= scene max x OR
+        (ge, ":pos1_y", reg15),              #pos1 y >= scene max y THEN
+        (assign, reg0, -1),                  #the outer function fails
+      (else_try),
+        (lt, ":ground_z", ":pos1_z"),
+        (position_move_y, pos1, 100),
+        (call_script, "script_shift_pos1_along_y_axis_to_ground_aux"),
+      (try_end),
+    ]),
+###command_cursor_minimod_end###
+
+]
+
+scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts
+
+
+

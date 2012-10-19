@@ -3548,7 +3548,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":gold"),
         (quest_get_slot, ":gift_no", "qst_deliver_gift", slot_quest_target_item),
 	(assign, reg20, ":gift_no"),
-	(store_mul, ":gift_str", ":faction_index", 5),
+	(store_mul, ":gift_str", ":faction_index", tld_gifts_per_faction),
 	(val_add, ":gift_str", gift_strings_begin),
 	(val_add, ":gift_str", ":gift_no"),
 
@@ -3563,7 +3563,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 # TLD: Deliver gift to other allied factions (CppCoder)
 
 [anyone|plyr,"lord_talk",[
-	(eq, cheat_switch, 1), # (CppCoder): Enabled only in dev, for now.
+	#(eq, cheat_switch, 1), # (CppCoder): Enabled only in dev, for now.
 	(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
 	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),	
 	(quest_slot_eq|neg, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), # can't ask to deliver a gift from the faction you are giving a gift to.
@@ -3576,7 +3576,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 		(str_store_string, s4, "@delivering a gift"),
 	(else_try),
 		(str_store_string, s1, "@I want to bring a bribe to our allies."),
-		(str_store_string, s4, "@giving a bribe"),
+		(str_store_string, s4, "@delivering a bribe"),
 	(try_end),
    ], 
 "{s1}", "send_gift_1",[]],
@@ -3621,7 +3621,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(store_repeat_object, ":gift_no"),
 	(lt, ":gift_no", 5),
 	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
-	(store_mul, ":gift_str", ":faction_index", 5),
+	(store_mul, ":gift_str", ":faction_index", tld_gifts_per_faction),
 	(val_add, ":gift_str", gift_strings_begin),
 	(val_add, ":gift_str", ":gift_no"),
 	(str_store_string, s2, ":gift_str"),
@@ -5861,6 +5861,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 	  # (str_store_party_name,s2,"$g_encountered_party"),
 	  (str_store_troop_name_link,s9,"$g_talk_troop"),
       (str_store_party_name_link,s13,":quest_object_center"),
+      (party_set_morale, ":quest_target_party", 20), # (CppCoder): Make trolls walk slower.
 	 
       # (try_begin),
         # (is_between, "$g_encountered_party", centers_begin, centers_end),

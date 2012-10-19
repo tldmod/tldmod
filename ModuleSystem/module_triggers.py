@@ -1077,7 +1077,7 @@ triggers = [
                 (display_message, "@Your party's morale has risen from hatred.", 0xffaa3333), # CC: was "Your companions' morale has risen from hatred.", 0xffaa3333
                 (val_add, ":morale", 10),
             (else_try), # base morale low, drop in fear
-                (display_message, "@Your companions' morale has dropped from fear.", 0xffaa3333), # CC: was "Your companions' morale has dropped from fear.", 0xffaa3333
+                (display_message, "@Your party's morale has fallen from fear.", 0xffaa3333), # CC: was "Your companions' morale has dropped from fear.", 0xffaa3333
                 (val_sub, ":morale", 10),
             (try_end),
             (party_set_morale, "p_main_party", ":morale"),

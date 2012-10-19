@@ -1,6 +1,7 @@
 This file is just for me to keep track of new features / bug fixes 
 I made. -CC
 
+
 New Features:
 
 Galadriel's Quest (Mirkwood Sorcerer)
@@ -33,11 +34,18 @@ Planned Bugfixes:
 
 3.21 Fixes and Features:
 
+Kingdom Heroes now need at least 75 troops to beseige.
+Resource Point Cap (200,000)
+Gift Giving (Exchange Resource Points)
+Berserker Troops no longer rout
+Command Cursor Mini Mod
 Galadriel's Quest (Mirkwood Sorcerer)
 Animal Ambushes (Mirkwood or Northern Mountains)
 Mordor Legions (when mordor is last fac standing w/ < 2500 str)
 Isengard and Mirkwood guardian parties should spawn now.
-Influence traits give influence.
-Morale System: After battle summary now reports routed troops.
+Influence traits give influence (for player's faction only).
+Battle Morale System: After Battle summary now reports routed troops.
+Battle Morale System: Tweaking of morale values. (still WIP)
 Much bugfixing.
+
 
