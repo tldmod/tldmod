@@ -1804,7 +1804,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 825), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 850), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 						  # 
 ]),    
 
@@ -3091,8 +3091,8 @@ scripts = [
 			# TODO: Fading of the elves, size -= (day_count/100)*5?
 		(troop_get_type, ":race", ":party_leader"),
 		(is_between,":race",tf_elf_begin,tf_elf_end),
-		(val_mul, ":limit", 67), # 2/3
-      		(val_div, ":limit", 100),
+		(val_mul, ":limit", 3), # CC: Was 2/3, upped to 3/4, elves wouldn't siege properly
+      		(val_div, ":limit", 4),
 	(try_end),
       (assign, reg0, ":limit"),
 ]),
@@ -5758,7 +5758,7 @@ scripts = [
           (eq, ":quest_no", "qst_mirkwood_sorcerer"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_lorien_lord"),  # only Galadriel gives this quest
-			(ge, ":player_level", 10), # CC: Was 1, change to 10, too hard if available at level 1.
+			(ge, ":player_level", 15), # CC: Was 1, change to 15, too hard if available at level 1.
 			(assign, ":quest_expiration_days", 10),
 			(assign, ":quest_dont_give_again_period", 10000),
 			(assign, ":quest_importance", 4),

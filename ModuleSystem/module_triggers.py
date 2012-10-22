@@ -1423,22 +1423,33 @@ triggers = [
    ]),
    
 	# CC: Ambushes
-	(6, 0, 0, [],[
+	(10, 0, 0, [],[
 		(try_begin),
+			(party_get_attached_to, ":attached_to_party", "p_main_party"),
+         		(neg|is_between, ":attached_to_party", centers_begin, centers_end),
 			(eq|this_or_next, "$current_player_region", region_misty_mountains),
 			(eq|this_or_next, "$current_player_region", region_grey_mountains),
 			(eq|this_or_next, "$current_player_region", region_n_mirkwood),
 			(eq, "$current_player_region", region_s_mirkwood),
-			(assign, ":ambush_chance", 100),
+			(assign, ":continue", 1),
+			(try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.
+				(eq, ":continue", 1),
+				(party_is_active, ":party_id"), # Skip non-existant adv. camps.
+            			(store_distance_to_party_from_party, ":dist", ":party_id", "p_main_party"),
+				(lt, ":dist", 300),
+				(assign, ":continue", 0),
+			(try_end),
+			(eq, ":continue", 1),
+			(assign, ":ambush_chance", 90),
 			(party_get_num_companions, reg1, "p_main_party"),
-			(call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
 			(try_begin),
 				(lt, reg1, 8),
-				(val_sub, ":ambush_chance", 25),
+				(val_sub, ":ambush_chance", 50),
 			(else_try),
 				(gt, reg1, 35),
 				(val_sub, ":ambush_chance", 70),
 			(try_end),
+			(call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
 			(try_begin),
 				(gt, reg0, 4),
 				(store_sub, reg2, reg0, 4),

@@ -425,10 +425,22 @@ mission_templates = [ # not used in game
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
  (4,mtef_visitor_source, af_prisoner, 0,0,[itm_feet_chains_dwarf] ),  # prisoners
 
+# Trolls
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
+ (5,mtef_visitor_source, af_prisoner, 0,0,[] ),  # prisoners
 
   ],
   #tld_common_peacetime_scripts +
   [  
+ 
   # make friend, prisoners, players, etc appear at the rigth locations and with scripted short starting walks
   (ti_on_agent_spawn, 0, 0, [],[
      (store_trigger_param_1, ":agent_no"),
@@ -618,6 +630,7 @@ mission_templates = [ # not used in game
 	  (store_add, ":entry", ":i", 4),
 	  (troop_get_type, ":race", ":trp_id"),
 	  (try_begin), (eq, ":race", tf_dwarf),(val_add, ":entry", 10), (try_end), # dwarf must be born with their chains
+	  #(try_begin), (eq, ":race", tf_troll),(val_add, ":entry", 20), (try_end), # trolls must be born in the right spot
 	  (add_visitors_to_current_scene,":entry",":trp_id",":trp_no"),
 	  (val_sub,":max_pris",":trp_no"), 
 	  #(str_store_troop_name, s3, ":trp_id"),(assign, reg3,":trp_no"),(display_message,"@debug: spawning {reg3} {s3} as prisoners"),

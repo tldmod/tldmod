@@ -1,5 +1,6 @@
 TLD 3.2 changes:
 - CppCoder:
+  - Elven Hero Parties are 2/3 of normal size.
   - Kingdom Heroes now need at least 75 troops to besiege.
   - Resource Point Cap (200,000)
   - Gift Giving (Exchange Resource Points)
