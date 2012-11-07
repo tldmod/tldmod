@@ -3087,12 +3087,15 @@ scripts = [
       (store_add, ":level_factor", 90, ":level"),
       (val_mul, ":limit", ":level_factor"),
       (val_div, ":limit", 90),
-     	(try_begin),	# (CppCoder): Decrease party size of elven parties
-			# TODO: Fading of the elves, size -= (day_count/100)*5?
-		(troop_get_type, ":race", ":party_leader"),
-		(is_between,":race",tf_elf_begin,tf_elf_end),
+	(troop_get_type, ":race", ":party_leader"),
+     	(try_begin),	
+		(is_between,":race",tf_elf_begin,tf_elf_end), # (CppCoder): Decrease party size of elven parties. 
 		(val_mul, ":limit", 3), # CC: Was 2/3, upped to 3/4, elves wouldn't siege properly
       		(val_div, ":limit", 4),
+	(else_try),
+		(eq, ":faction_id", "fac_rhun"), # (CppCoder): Rhun now receives a boost to party size. (3/2)
+		(val_mul, ":limit", 3), 
+      		(val_div, ":limit", 2),
 	(try_end),
       (assign, reg0, ":limit"),
 ]),
@@ -3966,6 +3969,8 @@ scripts = [
     [ (store_script_param_1, ":party"), #Party_id
       (store_script_param_2, ":exclude_leader"), #Party_id
       (assign, ":strength", 0),
+      (try_begin),
+      (party_is_active, ":party"), # Should bugfix errors
       (party_get_num_companion_stacks, ":num_stacks",":party"),
       (assign, ":first_stack", 0),
       (try_begin),
@@ -3996,6 +4001,7 @@ scripts = [
         (neg|faction_slot_eq, ":party_faction", slot_faction_side, faction_side_good),
         (val_mul, ":strength", evil_party_str_handicap),
         (val_div, ":strength", 100),
+      (try_end),
       (try_end),
       (assign, reg0, ":strength"),
 ]),

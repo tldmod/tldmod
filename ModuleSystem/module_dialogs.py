@@ -3551,11 +3551,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(store_mul, ":gift_str", ":faction_index", tld_gifts_per_faction),
 	(val_add, ":gift_str", gift_strings_begin),
 	(val_add, ":gift_str", ":gift_no"),
-
 	(str_store_string, s1, ":giver_gift_str"),
 	(str_store_string, s2, ":gift_str"),
 	(str_store_faction_name, s3, "$g_talk_troop_faction"),
 	(str_store_faction_name, s4, ":original_faction"),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_target_faction, 0),
+   	(quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, 0),
 	(str_store_string, s5, "@The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}."),
 
 ], "{s5}", "lord_pretalk", []],
