@@ -7,8 +7,7 @@ from header_music import *
 from module_constants import *
 
 
-# COMMAND CURSOR MINIMOD # (CppCoder)
-
+# COMMAND CURSOR MINIMOD # (Added by CppCoder) (I forgot original author)
 
 common_init_command_cursor = (
   ti_before_mission_start, 0, 0, [],

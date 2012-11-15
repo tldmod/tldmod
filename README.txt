@@ -1,21 +1,22 @@
 TLD 3.2 changes:
 - CppCoder:
-  - Elven Hero Parties are 2/3 of normal size.
-  - Kingdom Heroes now need at least 75 troops to besiege.
-  - Resource Point Cap (200,000)
-  - Gift Giving (Exchange Resource Points)
-  - Berserker Troops no longer rout
-  - Command Cursor Mini Mod
-  - Galadriel's Quest (Mirkwood Sorcerer)
-  - Animal Ambushes (Mirkwood or Northern Mountains)
-  - Mordor Legions (when mordor is last faction standing with less than 2500 strength)
+  - Elven Hero Parties are 3/4 of normal size. 
+  - Rhun Hero Parties are now 4/3 of normal size.
+  - Kingdom Heroes now need at least 50 troops to besiege. (should fix infinite siege bug).
+  - Resource Point Cap (200,000).
+  - Gift Giving through faction leaders. (Exchange Resource Points).
+  - Berserker Troops no longer flee from battle.
+  - Command Cursor Mini Mod.
+  - Galadriel's Quest (Mirkwood Sorcerer. lvl 10+).
+  - Animal Ambushes (Mirkwood or Northern Mountains).
+  - Mordor Legions (when mordor is last faction standing with less than 2500 strength).
   - Isengard and Mirkwood guardian parties should spawn now.
-  - Influence traits give influence (for player's faction only).
-  - Battle Morale System: After Battle summary now reports routed troops.
-  - Battle Morale System: Tweaking of morale values. (still WIP)
-  - Party Limit Option in camp->TLD options->Gameplay Tweaks->Compatibility tweaks
+  - Influence traits give/take influence (for player's faction only).
+  - Party Limit Option in camp->TLD options->Gameplay Tweaks->Compatibility tweaks.
   - Starting equipment bug fixed.
   - Battle Morale System.
+  - Battle Morale System: After Battle summary now reports routed troops.
+  - Battle Morale System: Tweaking of morale values. (still WIP).
   - Riders falling off horses recieve damage.
   - Wounded agents move slower.
   - Trolls no longer appear as prisoners in review troops.
@@ -30,7 +31,7 @@ TLD 3.2 changes:
   - Many other small bug fixes.
   - More bugfixing.
 - Merlkir:
-  - Minor graphic tweak.
+  - Minor graphic tweak(s).
 - vota dc:
   - More item/troop balancing. (I think?)
 

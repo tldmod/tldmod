@@ -4175,7 +4175,15 @@ game_menus = [
 ( "order_attack_2",mnf_disable_all_keys,
     "^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}",
     "none",
-    [	(set_background_mesh, "mesh_ui_default_menu_window"),		
+    [	(set_background_mesh, "mesh_ui_default_menu_window"),	
+	
+	# Reset routed count (needs to be here to prevent bugs...)
+	(try_for_range, ":troop_no", 0, "trp_last"),
+		(troop_set_slot, ":troop_no", slot_troop_routed_us, 0),
+		(troop_set_slot, ":troop_no", slot_troop_routed_allies, 0),
+		(troop_set_slot, ":troop_no", slot_troop_routed_enemies, 0),
+	(try_end),
+	
 		(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 		(assign, ":player_party_strength", reg0),
 		(val_div, ":player_party_strength", 5),
@@ -5225,9 +5233,11 @@ game_menus = [
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
     [	(set_background_mesh, "mesh_ui_default_menu_window"),
-	    (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
+
+	    	(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 		(assign, ":player_party_strength", reg0),
 		(val_div, ":player_party_strength", 5),
+
 		(call_script, "script_party_calculate_strength", "p_collective_friends", 0),
 		(assign, ":friend_party_strength", reg0),
 		(val_div, ":friend_party_strength", 5),
