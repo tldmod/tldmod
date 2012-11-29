@@ -2686,7 +2686,8 @@ mission_templates = [ # not used in game
  ],
 	# Triggers
 	common_deathcam_triggers + [
-
+	
+	custom_warg_sounds,
 	common_battle_on_player_down,
 
 	# Make the teams enemies...

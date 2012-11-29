@@ -271,5 +271,7 @@ snd_water_splash_source = 269
 snd_lord_dies = 270
 snd_enemy_lord_dies = 271
 snd_level_up = 272
+snd_spider = 273
+snd_spider_die = 274
 
 

@@ -1318,7 +1318,7 @@ nazgul_sweeps = (2,1.2,5,[
 	(store_random_in_range,reg0,0,100),
 	#(this_or_next|key_is_down, key_n),
 	#(le,reg0,"$nazgul_in_battle"), 
-	(store_mul, reg1, "$nazgul_in_battle", 10), # 10% chance every 2 seconds, for each nazgul present
+	(store_mul, reg1, "$nazgul_in_battle", 5), # 5% chance every 2 seconds, for each nazgul present
 	(le,reg0,reg1),	
 	(display_log_message, "@Nazgul sweep!"),
 	# if nazgul team is not computed, compute it
@@ -1896,7 +1896,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 		(agent_get_item_id, ":item", ":mount"),
 		(try_begin),
 			(is_between|this_or_next, ":item", item_horse_begin ,item_horse_end),
-			(eq, ":item", "itm_mearas_reward"),			# CC: Fixes minor sound bug
+			(eq, ":item", "itm_mearas_reward"),			# CppCoder: Fixes minor sound bug
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
@@ -1904,6 +1904,17 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 			(else_try), 						#sounds for dying horses
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_neigh1"),
+				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
+			(try_end),
+		(else_try),
+			(eq, ":item", "itm_spider"),			# CppCoder: Spider sounds
+			(try_begin), 	
+				(agent_is_alive, ":mount"),
+				(store_random_in_range, ":random", 1, 101), 
+				(try_begin),(le, ":random", 7),(agent_play_sound, ":mount", "snd_spider"),(try_end),
+			(else_try), 						
+				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
+				(agent_play_sound, ":mount", "snd_spider_die"),
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
 		(else_try),

@@ -1,5 +1,5 @@
 soundsfile version 2
-620
+623
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -620,7 +620,10 @@ soundsfile version 2
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
  level_up.wav 1937
-273
+ spider_battle01.wav 0
+ spider_battle2.wav 0
+ spider_death.wav 0
+275
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -894,3 +897,5 @@ snd_water_splash_source 1174 1 562
 snd_lord_dies 1937 1 617 
 snd_enemy_lord_dies 1937 1 618 
 snd_level_up 1937 1 619 
+snd_spider 0 2 620 621 
+snd_spider_die 0 1 622 
