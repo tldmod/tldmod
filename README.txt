@@ -33,7 +33,7 @@ TLD 3.2 changes:
 - Merlkir:
   - Graphic tweak(s).
 - Mandible:
- - Beorning/Woodmen armors redone.
+ - Beorning armors redone.
 - vota dc:
   - More item/troop balancing. (I think?)
 

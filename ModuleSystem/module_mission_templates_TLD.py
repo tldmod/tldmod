@@ -1312,7 +1312,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 ])
 
 # mtarini nazgul sweeps. improved by cppcoder.
-nazgul_sweeps = (2,1.2,5,[
+nazgul_sweeps = (4,1.2,5,[
 	#(this_or_next|key_is_down, key_n),
 	(gt,"$nazgul_in_battle",0),
 	(store_random_in_range,reg0,0,100),
