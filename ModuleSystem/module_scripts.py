@@ -17249,9 +17249,11 @@ scripts = [
           (assign, ":track", "track_TLD_Battle_Isengard"),
         (else_try), #elven factions
           (this_or_next|eq, ":faction", "fac_lorien"),
-          (this_or_next|eq, ":faction", "fac_imladris"),
-          (eq, ":faction", "fac_woodelf"),
+          (eq, ":faction", "fac_imladris"),
           (assign, ":track", "track_TLD_Battle_Elves"),
+        (else_try),
+          (eq, ":faction", "fac_woodelf"),
+          (assign, ":track", "track_TLD_Battle_Wood_Elves"),
         (else_try),
           (eq, ":faction", "fac_dale"),
           (assign, ":track", "track_TLD_Battle_Barding"),

@@ -38,6 +38,7 @@ tracks = [
 ("TLD_Battle_Dunland",   "Battle\TLD_Battle_Dunland.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Dwarves",   "Battle\TLD_Battle_Dwarves.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Elves",     "Battle\TLD_Battle_Elves.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Wood_Elves","Battle\TLD_Battle_WoodElves.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Far_Harad", "Battle\TLD_Battle_Far_Harad.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gondor",    "Battle\TLD_Battle_Gondor.mp3",    mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gundabad",  "Battle\TLD_Battle_Gundabad.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
