@@ -40,12 +40,14 @@ tracks = [
 ("TLD_Battle_Elves",     "Battle\TLD_Battle_Elves.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Wood_Elves","Battle\TLD_Battle_WoodElves.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Far_Harad", "Battle\TLD_Battle_Far_Harad.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Khand",     "Battle\TLD_Battle_Khand.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gondor",    "Battle\TLD_Battle_Gondor.mp3",    mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gundabad",  "Battle\TLD_Battle_Gundabad.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Isengard",  "Battle\TLD_Battle_Isengard.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Mordor",    "Battle\TLD_Battle_Mordor.mp3",    mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Orcs",      "Battle\TLD_Battle_Orcs.mp3",      mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Rohan",     "Battle\TLD_Battle_Rohan.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Rhun",      "Battle\TLD_Battle_Rhun.mp3",      mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 
 #TLD siege music (played by the MB music system)
 ("TLD_Bad_Siege",  "Battle\TLD_Bad_Siege.mp3",  mtf_module_track|mtf_sit_siege|mtf_culture_evil, mtf_sit_fight|mtf_sit_ambushed),

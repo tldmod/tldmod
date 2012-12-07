@@ -17260,9 +17260,13 @@ scripts = [
         (else_try),
           (eq, ":faction", "fac_harad"),
           (assign, ":track", "track_TLD_Battle_Far_Harad"),
-        (else_try), #some evil men
-          (this_or_next|eq, ":faction", "fac_rhun"),
-          (this_or_next|eq, ":faction", "fac_khand"),
+        (else_try), # Khand
+          (eq, ":faction", "fac_khand"),
+          (assign, ":track", "track_TLD_Battle_Khand"),
+        (else_try), # Rhun
+          (eq, ":faction", "fac_rhun"),
+          (assign, ":track", "track_TLD_Battle_Rhun"),
+        (else_try), # Corsairs
           (eq, ":faction", "fac_umbar"),
           (assign, ":track", "track_TLD_Battle_Corsair"),
         (else_try), #some orc factions
