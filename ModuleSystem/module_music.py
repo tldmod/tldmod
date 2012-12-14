@@ -43,6 +43,7 @@ tracks = [
 ("TLD_Battle_Far_Harad", "Battle\TLD_Battle_Far_Harad.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Khand",     "Battle\TLD_Battle_Khand.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gondor",    "Battle\TLD_Battle_Gondor.mp3",    mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Gondor_2",  "Battle\TLD_Battle_Gondor_2.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Gundabad",  "Battle\TLD_Battle_Gundabad.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Isengard",  "Battle\TLD_Battle_Isengard.mp3",  mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Mordor",    "Battle\TLD_Battle_Mordor.mp3",    mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
@@ -97,7 +98,17 @@ tracks = [
 
 #TLD town tracks
 ("TLD_Alliance_Towns",   "TLD_Alliance_Towns.mp3",   mtf_module_track, mtf_sit_town),
+
 ("TLD_Minas_Tirith",     "TLD_Minas_Tirith.mp3",     mtf_module_track, mtf_sit_town),
+("TLD_Black_Root",   	 "TLD_Black_Root.mp3",       mtf_module_track, mtf_sit_town),
+("TLD_Dol_Amroth",   	 "TLD_Dol_Amroth.mp3",       mtf_module_track, mtf_sit_town),
+("TLD_Henneth_Annun",	 "TLD_Henneth_Annun.mp3",    mtf_module_track, mtf_sit_town),
+("TLD_Pinnath_Gelin",	 "TLD_Pinnath_Gelin.mp3",    mtf_module_track, mtf_sit_town),
+#("TLD_Lamedon",    	 "TLD_Lossarnach.mp3",       mtf_module_track, mtf_sit_town),
+("TLD_Lossarnach",    	 "TLD_Lossarnach.mp3",       mtf_module_track, mtf_sit_town),
+("TLD_Osgiliath",    	 "TLD_Osgiliath.mp3",        mtf_module_track, mtf_sit_town),
+#("TLD_Pelagir",    	 "TLD_Pelagir.mp3",          mtf_module_track, mtf_sit_town),
+
 ("TLD_Gondor_Cities",    "TLD_Gondor_Cities.mp3",    mtf_module_track, mtf_sit_town),
 ("TLD_Edoras",           "TLD_Edoras.mp3",           mtf_module_track, mtf_sit_town),
 ("TLD_Helms_Deep",       "TLD_Helms_Deep.mp3",       mtf_module_track, mtf_sit_town),

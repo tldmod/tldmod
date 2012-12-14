@@ -2953,7 +2953,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("wound_leg", "a_badly_maimed_leg"),
 
 # END Wound Strings
-# BEGIN Gifts (Faction order must be kept) -CC
+# BEGIN Gifts (Faction order must be kept) -(CppCoder & Merlkir)
 
 ("gondor_gift0", "Fresh Fruit and Wine"),
 ("gondor_gift1", "Richly Dyed Cloth"),
@@ -2976,7 +2976,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("mordor_gift0", "Weak Peat Beer"),
 ("mordor_gift1", "Snaga Oil"),
 ("mordor_gift2", "Mordor Fly Larvae"),
-("mordor_gift3", "Orodruin Obsidion"),
+("mordor_gift3", "Orodruin Obsidian"),
 ("mordor_gift4", "Farmer Slaves"),
 
 ("isengard_gift0", "Dried Human Meat"),
