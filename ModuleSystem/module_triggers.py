@@ -1424,6 +1424,8 @@ triggers = [
    
 	# CC: Ambushes
 	(10, 0, 0, [],[
+		(eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
+		(eq,"$tld_war_began", 0),
 		(try_begin),
 			(party_get_attached_to, ":attached_to_party", "p_main_party"),
          		(neg|is_between, ":attached_to_party", centers_begin, centers_end),
@@ -1436,11 +1438,14 @@ triggers = [
 				(eq, ":continue", 1),
 				(party_is_active, ":party_id"), # Skip non-existant adv. camps.
             			(store_distance_to_party_from_party, ":dist", ":party_id", "p_main_party"),
-				(lt, ":dist", 300),
+				#(display_message, "@8 Units away..."),
+				(lt, ":dist", 8), 
 				(assign, ":continue", 0),
 			(try_end),
 			(eq, ":continue", 1),
-			(assign, ":ambush_chance", 90),
+			#(display_message, "@Ambush Possible; Calculating..."),
+
+			(assign, ":ambush_chance", 90), # 90% chance by default
 			(party_get_num_companions, reg1, "p_main_party"),
 			(try_begin),
 				(lt, reg1, 8),
@@ -1458,15 +1463,24 @@ triggers = [
 			(try_end),
 			(try_begin),
 				(store_random_in_range, ":rnd", 1, 101),
+				#(assign, reg10, ":rnd"),
+				#(assign, reg11, ":ambush_chance"),
+				#(display_message, "@Die Roll: {reg10} vs Chance: {reg11}"),
 				(lt, ":rnd", ":ambush_chance"),
+				(store_random_in_range, ":rnd", 1, 101),
+				(store_mul, ":ambush_counter", "$creature_ambush_counter", 10),
+				(gt, ":rnd", ":ambush_counter"),
+				(val_add, "$creature_ambush_counter", 1),				
 				(jump_to_menu, "mnu_animal_ambush"),
 			(try_end),
 		(try_end),		
 	]),
 
+	# Decrement the ambush counter every 20 hours (CppCoder)
+   	(20, 0, 0, [(gt, "$creature_ambush_counter", 0)],[(val_sub, "$creature_ambush_counter", 1)]),
 
 # save game compartibility triggers. replace those if you add new ones
-   (999, 0, ti_once, [],[]),
+
    (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),

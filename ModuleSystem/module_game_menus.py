@@ -2990,6 +2990,11 @@ game_menus = [
         ],"Battle morale system:  {s7}",[
         (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
 
+    ("game_options_animal_ambushes",[(try_begin),(eq,"$tld_option_animal_ambushes",1),(str_store_string, s7, "@ON"),
+									(else_try),(str_store_string, s7, "@OFF"),(try_end),
+        ],"Animal ambushes:  {s7}",[
+        (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2)]),
+
     ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
 
     ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -8194,10 +8199,14 @@ game_menus = [
 		(assign, ":ambush_scene", "scn_mountain_ambush"),
 		(store_random, ":rnd", 100),
 		(try_begin),
-			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush 
-			(lt, ":rnd", 40), 
+			(eq, "$players_kingdom", "fac_dunland"), 
 			(assign, ":ambush_troop", "trp_bear"),
 			(assign, ":ambush_count", 1),			# 1 bear only
+		(else_try),
+			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
+			(lt, ":rnd", 40),
+			(assign, ":ambush_troop", "trp_bear"),
+			(assign, ":ambush_count", 1),
 		(else_try),
 			(assign, ":ambush_troop", "trp_wolf"),
 			(store_random_in_range, ":ambush_count", 5, 9), # 5 to 8 wolves

@@ -29,6 +29,16 @@ tld_morale_triggers = [
 		#(assign,"$new_enemy_kills",0),
     	]),
 
+	(0, 0, 0, [(key_clicked, key_z),(eq, cheat_switch, 1)],
+	[
+		(try_for_agents, ":agent"),
+			(call_script, "script_cf_agent_get_morale", ":agent"),
+			(agent_get_troop_id, ":troop", ":agent"),
+			(str_store_troop_name, s1, ":troop"),
+			(display_message, "@{s1}'s morale: {reg1}"),
+		(try_end),
+	]),
+
 	# Rally your troops, five second wait inbetween. -CC
      	(0, 0, 5, [(eq, "$tld_option_morale", 1),(get_player_agent_no, ":player"),(agent_is_alive, ":player"),(key_clicked, key_v)], 
 	[
@@ -235,9 +245,9 @@ tld_morale_triggers = [
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 15 seconds, to ensure agents have time to advance and engage in 
+	# only after 30 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing. -CppCoder
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,15)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,30)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),
@@ -248,6 +258,8 @@ tld_morale_triggers = [
 				(agent_get_position, pos2, ":cur_agent"),
 				(get_distance_between_positions, ":dist", pos4, pos2),
 				(lt, ":dist", 300),
+				(store_random_in_range, ":rand", 0, 100),
+				(lt, ":rand", 50),
 				(call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
 				(agent_get_troop_id,":troop_no", ":cur_agent"),
 				(le|this_or_next, reg0, 0),

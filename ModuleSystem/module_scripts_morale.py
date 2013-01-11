@@ -178,8 +178,8 @@ morale_scripts = [
 			(gt, reg0, -1),
 			(store_skill_level,":leader","skl_leadership",reg0),
 		(try_end),
-		(val_div,":troop_level",10),
-         	(val_div,":hitpoints",6), # CC: was 3, changed for balance.
+		(val_div,":troop_level", 10),
+         	(val_div,":hitpoints", 3),
          	(assign,reg1,100),
          	(val_sub,reg1,":hitpoints"),
          	(val_sub,reg1,":leader"),
@@ -331,7 +331,13 @@ morale_scripts = [
 
 		# Tier morale
 		(call_script, "script_cf_agent_get_tier_morale", ":agent_no"),
-		(val_sub, reg1, reg0),		
+			(val_sub, reg1, reg0),		
+		(try_end),
+
+		(try_begin),
+			(call_script, "script_count_ally_agents_around_agent", ":agent_no", 600),
+			(store_div, ":morale_bonus", reg0, 2),
+			(val_sub, reg1, ":morale_bonus"),
 		(try_end),
 	]),
 
@@ -529,6 +535,31 @@ morale_scripts = [
 				(try_end),				
 				(party_clear, "p_routed_enemies"),
 				(assign, "$g_spawn_enemies_routed", 0),
+			(try_end),
+		(try_end),
+	]),
+
+	# script_count_ally_agents_around_agent
+	# This script checks an agent for being surrounded by allied agents, reg0 stores the number of agents
+	# param1: agent to check; param2: max_distance
+	("count_ally_agents_around_agent", 
+	[
+		(store_script_param, ":agent_no", 1),
+		(store_script_param, ":distance", 2),
+		(assign, reg0, 0),
+		(try_begin),
+			(ge, ":agent_no", 0),
+			(agent_get_position, pos1, ":agent_no"),
+			(agent_get_team, ":team_a", ":agent_no"),
+			(try_for_agents, ":cur_agent"),
+				(agent_is_human, ":cur_agent"),
+				(agent_is_alive, ":cur_agent"),
+				(agent_get_position, pos2, ":cur_agent"),
+				(get_distance_between_positions, ":dist", pos1, pos2),
+				(lt, ":dist", ":distance"),
+				(agent_get_team, ":team_b", ":cur_agent"),
+				(neg|teams_are_enemies, ":team_a", ":team_b"),
+				(val_add, reg0, 1),
 			(try_end),
 		(try_end),
 	]),

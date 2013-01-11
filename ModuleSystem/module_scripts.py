@@ -1785,6 +1785,7 @@ scripts = [
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
 	(assign, "$tld_option_morale", 1), # Battle morale ON by default
+	(assign, "$tld_option_animal_ambushes", 1), # Ambushes ON by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
 	(assign, "$healing_setting", 7), # rnd, 0-3 result in wounds
 	
@@ -1796,7 +1797,6 @@ scripts = [
 	# Feel free to rename them... BUT if so rename then in variables.txt BEFORE you compile your code!!!
 	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
 	#(assign, "$battle_renown_total", 0),
-	(assign, "$g_variable7", 0), (assign, reg0, "$g_variable7"), #MV: to get rid of build warnings - remove on use
 	(assign, "$g_defiled_armor_item", "itm_defiled_armor_gondor"), 
 	(assign, "$g_defiled_armor_rotation", 0), 
     #these are used for strategic options/tweaks
@@ -1805,7 +1805,7 @@ scripts = [
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
 	(assign, "$tld_option_max_parties", 850), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
-						  # 
+	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.						  # 
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
