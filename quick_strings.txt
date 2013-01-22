@@ -1,4 +1,4 @@
-1119
+1121
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -858,7 +858,9 @@ qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.
-qstr_{s1}_has_died_on_the {s1}_has_died_on_the_battlefield._Quest_canceled.
+qstr_Checking_Quests... Checking_Quests...
+qstr_{s1}_has_died_on_the {s1}_has_died_on_the_battlefield._Mission_canceled.
+qstr_{s1}_has_been_defeat {s1}_has_been_defeated._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_Parties_defeated:_{r Parties_defeated:_{reg1}

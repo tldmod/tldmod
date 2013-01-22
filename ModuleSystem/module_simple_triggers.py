@@ -1225,18 +1225,29 @@ simple_triggers = [
 ]),
 	
  
-# (46) Remaining days text update, plus canceling quests for dead lords.
+# (46) Remaining days text update, plus canceling quests for dead lords and dead factions
 (24,[(try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
 		(try_begin),
 			(check_quest_active, ":cur_quest"),
-			(try_begin), # Cancel quests for dead lords (CppCoder)
+			(display_message, "@Checking Quests..."),
+			(try_begin), # Cancel quests for dead lords and dead factions (CppCoder)
 				(neg|check_quest_concluded, ":cur_quest"),
 				(quest_get_slot, ":troop_no", ":cur_quest", slot_quest_giver_troop),
 				(gt, ":troop_no", 0),
-         			(troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), # Is the troop dead?
-				(str_store_troop_name, s1, ":troop_no"),
-				(display_message, "@{s1} has died on the battlefield. Quest canceled.", color_bad_news),
-				(call_script, "script_cancel_quest", ":cur_quest"),
+				(try_begin),
+         				(troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), # Is the troop dead?
+					(str_store_troop_name, s1, ":troop_no"),
+					(display_message, "@{s1} has died on the battlefield. Mission canceled.", color_bad_news),
+					(call_script, "script_cancel_quest", ":cur_quest"),
+				(try_end),
+				(try_begin),
+					(quest_get_slot, ":troop_no", ":cur_quest", slot_quest_giver_troop),
+					(store_troop_faction, ":fac", ":troop_no"),
+					(faction_slot_eq, ":fac", slot_faction_state, sfs_defeated),
+					(str_store_faction_name, s1, ":fac"),
+					(display_message, "@{s1} has been defeated. Mission canceled.", color_bad_news),
+					(call_script, "script_cancel_quest", ":cur_quest"),
+				(try_end),
 			(else_try),
 				(neg|check_quest_concluded, ":cur_quest"),
 				(quest_slot_ge, ":cur_quest", slot_quest_expiration_days, 1),

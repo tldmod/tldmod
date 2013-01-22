@@ -3652,6 +3652,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(str_store_string, s1, ":gift_str"),
     	(str_store_faction_name, s2, "$g_talk_troop_faction"),
     	(str_store_faction_name, s3, ":target_faction"),
+	(quest_set_slot, "qst_deliver_gift", slot_quest_giver_troop, "$g_talk_troop"),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, reg14),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_target_item, ":gift_no"),
    	(quest_set_slot, "qst_deliver_gift", slot_quest_target_amount, ":gift_str"),

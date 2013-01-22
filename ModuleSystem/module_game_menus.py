@@ -7127,7 +7127,12 @@ game_menus = [
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
             (change_screen_return,0),
-	    #(call_script, "script_update_respoint"),
+            (store_faction_of_party, ":fac", "$current_town"),
+            (try_begin),
+		(eq|this_or_next, ":fac", "fac_mordor"),
+		(eq, ":fac", "fac_guldur"),
+	    	(call_script, "script_update_respoint"), # Updates resource points		
+	    (try_end),
           ],"Leave Area"),
 
     ]

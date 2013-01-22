@@ -222,10 +222,12 @@ triggers = [
         (gt, ":to_spawn", 0),
         (party_is_active, ":center"),
         (party_slot_eq, ":center", slot_center_destroyed, 0), #TLD
+
         (party_get_slot, ":center_scouts", ":center", slot_center_spawn_scouts),
         (party_get_slot, ":center_raiders", ":center", slot_center_spawn_raiders),
         (party_get_slot, ":center_patrol", ":center", slot_center_spawn_patrol),
         (party_get_slot, ":center_caravan", ":center", slot_center_spawn_caravan),
+
 	 #(display_message, "@DEBUG: Attempt to spawn parties", 0xFF00fd33),
         (try_begin),
             (store_faction_of_party, ":faction_no", ":center"),

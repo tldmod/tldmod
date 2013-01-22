@@ -20,7 +20,7 @@ tld_morale_triggers = [
         	(assign,"$new_kills_a",0),
 		(assign,"$new_kills",0),
 		(try_begin),
-			# Display the morale values once.
+			# Display the morale values once, so the players have a general idea.
 			(eq, "$tld_option_morale", 1),
 			(call_script, "script_coherence"),    
 			(call_script, "script_healthbars"),
@@ -85,7 +85,19 @@ tld_morale_triggers = [
 				(agent_is_ally, ":agent"),
 				# You can only rally YOUR troops.
 				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
-				(eq, reg0, "trp_player"),
+				(assign, ":can_rally", 0),
+				(try_begin),
+					(eq, reg0, "trp_player"),
+					(assign, ":can_rally", 1),
+				(else_try), # Give player a chance to rally allied troops
+					(store_skill_level,":ldr","skl_leadership","trp_player"),
+					(gt, ":ldr", 3), # 3 or more leadership
+					(store_random_in_range, ":rnd", 0, 100),
+					(store_mul, ":chance", ":ldr", 10),
+					(gt, ":chance", ":rnd"),
+					(assign, ":can_rally", 1),
+				(try_end),
+				(eq, ":can_rally", 1),
 				(agent_set_slot, ":agent", slot_agent_rallied, 1),
 				(try_begin),
 					(agent_slot_eq,":agent",slot_agent_routed,1),
@@ -245,9 +257,9 @@ tld_morale_triggers = [
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 30 seconds, to ensure agents have time to advance and engage in 
+	# only after 60 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing. -CppCoder
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,30)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,60)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),

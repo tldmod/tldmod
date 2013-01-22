@@ -589,6 +589,27 @@ morale_scripts = [
 		(try_end),
 	]),
 
+	# script_count_dead_ally_agents
+	# This script checks for dead allied agents
+	# param1: agent to check;
+	("count_dead_ally_agents", 
+	[
+		(store_script_param, ":agent_no", 1),
+		(assign, reg0, 0),
+		(try_begin),
+			(ge, ":agent_no", 0),
+			(agent_get_position, pos1, ":agent_no"),
+			(agent_get_team, ":team_a", ":agent_no"),
+			(try_for_agents, ":cur_agent"),
+				(agent_is_human, ":cur_agent"),
+				(agent_is_alive|neg, ":cur_agent"),
+				(agent_get_team, ":team_b", ":cur_agent"),
+				(teams_are_enemies|neg, ":team_a", ":team_b"),
+				(val_add, reg0, 1),
+			(try_end),
+		(try_end),
+	]),
+
 	# script_count_agents
 	# This script counts an agent's enemies, and his allies
 	# param1: agent to check; param2: max_distance

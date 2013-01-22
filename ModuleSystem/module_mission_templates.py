@@ -2763,7 +2763,7 @@ mission_templates = [ # not used in game
 		(agent_get_horse, ":horse", ":agent"),
 		(ge, ":horse", 0),
 		(store_random_in_range, ":rnd", 0, 100),
-		(lt, ":rnd", 70), # 33% chance
+		(lt, ":rnd", 40), # 40% chance (melee attacks happen too often, and too much damage...)
 		(assign, ":enemy_in_front", 0),
 		(try_for_agents, ":target"),
 			(neq, ":enemy_in_front", 1),
