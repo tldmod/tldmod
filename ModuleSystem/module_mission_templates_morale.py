@@ -83,7 +83,6 @@ tld_morale_triggers = [
 				(agent_is_human, ":agent"),
 				(agent_is_alive, ":agent"),
 				(agent_is_ally, ":agent"),
-				# You can only rally YOUR troops.
 				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
 				(assign, ":can_rally", 0),
 				(try_begin),

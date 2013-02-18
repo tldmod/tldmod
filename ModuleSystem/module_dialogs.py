@@ -3525,6 +3525,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    ]],
 
 # TLD: Accept a delivered gift (CppCoder)
+# TODO: Add dialog for evil characters, this is currently only for good players.
+
 [anyone|plyr,"lord_talk",[
 	(check_quest_active,"qst_deliver_gift"),
 	(quest_slot_eq, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), #must be correct faction
@@ -3564,11 +3566,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 # TLD: Deliver gift to other allied factions (CppCoder)
 
 [anyone|plyr,"lord_talk",[
-	#(eq, cheat_switch, 1), # (CppCoder): Enabled only in dev, for now.
 	(faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "$g_talk_troop"), #must be a king
 	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),	
 	(quest_slot_eq|neg, "qst_deliver_gift", slot_quest_target_faction, "$g_talk_troop_faction"), # can't ask to deliver a gift from the faction you are giving a gift to.
 	(quest_get_slot, ":days_remaining", "qst_deliver_gift", slot_quest_dont_give_again_remaining_days),
+	(this_or_next|eq, cheat_switch, 1), # (CppCoder): Always available while debugging.
 	(le, ":days_remaining", 0),
 	(try_begin),
 		(faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good), # Good or Evil men
@@ -3605,7 +3607,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
         (store_relation, ":relation", ":faction_no", "$g_talk_troop_faction"),
 	(ge, ":relation", 0), # Allies only
 	(str_store_faction_name, s1, ":faction_no"),
-], "{s1}", "send_gift_3",[(store_repeat_object, reg1)]],
+], "{s1}", "send_gift_3",[(store_repeat_object, "$temp")]],
 
 [anyone|plyr,"send_gift_2",[], "Nevermind.", "lord_pretalk",[]],
 
@@ -3632,14 +3634,14 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),
 	(ge,":rps",reg14), # Player must be able to afford gift...
 	(str_store_string, s1, "@{s2} [{reg14} Resource Points]"),	
-], "{s1}", "send_gift_5",[(store_repeat_object, reg2)]],
+], "{s1}", "send_gift_5",[(store_repeat_object, "$temp_2")]],
 
 [anyone|plyr,"send_gift_4",[], "Nevermind.", "lord_pretalk",[]],
 
 [anyone,"send_gift_5",[], "All right {playername}. Good Luck.", "lord_pretalk",
 [
-    	(store_add, ":target_faction", reg1, kingdoms_begin),
-    	(assign, ":gift_no", reg2),
+    	(store_add, ":target_faction", "$temp", kingdoms_begin),
+    	(assign, ":gift_no", "$temp_2"),
 	(store_sub, ":faction_index", "$g_talk_troop_faction", kingdoms_begin),
 	(store_mul, ":gift_str", ":faction_index", 5),
 	(val_add, ":gift_str", gift_strings_begin),

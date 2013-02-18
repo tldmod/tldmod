@@ -2112,13 +2112,17 @@ tld_morale_poor			= 5
 
 tld_morale_formation_bonus	= 25 # Gondor and Dunland
 
-tld_morale_leader_important	= 45 # Black numenoreans / evil men
-tld_morale_leader_bonus		= 15 # Default morale bonus
-tld_morale_leader_average	= 20 # Average
-tld_morale_leader_avenge	= 25 # Dwarfs,   when leader falls
+tld_morale_leader_important	= 35 # Black numenoreans / evil men
+tld_morale_leader_bonus		= 25 # Gondor and Dunland
+tld_morale_leader_average	= 15 # Default morale bonus
+tld_morale_leader_avenge	= 35 # Dwarfs,   when leader falls
 tld_morale_leader_urukhai	= 25 # Uruk hai, when leader falls
 
-tld_morale_rout			= 45
+# These are extra bonuses to simply boost the courage
+tld_morale_bonus_easterlings	= 20
+tld_morale_bonus_elves		= 35
+
+tld_morale_rout			= 60
 
 tld_morale_rout_allies		= -tld_morale_rout
 tld_morale_rout_enemies		= tld_morale_rout

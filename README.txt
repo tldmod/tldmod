@@ -1,3 +1,9 @@
+TLD 3.23 changes:
+- CppCoder:
+  - Animal Ambushes become less likely the more attacks you've experienced.
+  - Morale System Tweaks (should make it more enjoyable and playable)
+  - Guldur and Mordor resource sharing bug fixed.
+
 TLD 3.2 changes:
 - CppCoder:
   - Elven Hero Parties are 3/4 of normal size. 

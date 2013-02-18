@@ -1,4 +1,4 @@
-1121
+1123
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -507,6 +507,8 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
+qstr_DEBUG:_Routed_Troops DEBUG:_Routed_Troops:_{reg10},_Routed_Allies:_{reg11},_Routed_Enemies:_{reg12}
+qstr_DEBUG:_Spawn_Allies: DEBUG:_Spawn_Allies:_{reg10},_Spawn_Enemies:_{reg11}
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!

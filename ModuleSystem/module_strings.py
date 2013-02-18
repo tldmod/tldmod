@@ -2411,6 +2411,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
 ("beorn_rumor_13", "*GROWLS*   Do you have any honey?"),
+("beorn_rumor_14", "Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you."), 
 #[b]Lothlorien[/b]
 #[i]general idea= Merl? Marco? - slight depression about shit that's going down, thoughts about leaving this goddamn continent mixed with semi-confident feeling of safety in the woods.[/i]
 ("lorien_rumor_begin", "O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. "), #[color=red]Galadriel's Song of Eldamar[/color]
@@ -2443,6 +2444,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("woodelf_rumor_6", "*stares at you, obviously annoyed by your presence*"), #[color=red]removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign[/color]
 ("woodelf_rumor_7", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
 ("woodelf_rumor_8", "Edain of Dale make intricate toys these days! They've learnt much from the Naugrim."),
+##
+("woodelf_rumor_9", "The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!"),
 #[b]Dale[/b]
 #[i]general idea= fearful because of the assault from several fronts[/i]
 ("dale_rumor_begin", "First there was the dragon, now this..."), 

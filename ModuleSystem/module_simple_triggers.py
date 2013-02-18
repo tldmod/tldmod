@@ -1237,7 +1237,7 @@ simple_triggers = [
 				(try_begin),
          				(troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), # Is the troop dead?
 					(str_store_troop_name, s1, ":troop_no"),
-					(display_message, "@{s1} has died on the battlefield. Mission canceled.", color_bad_news),
+					(display_message, "@{s1} was killed on the battlefield. Mission canceled.", color_bad_news),
 					(call_script, "script_cancel_quest", ":cur_quest"),
 				(try_end),
 				(try_begin),

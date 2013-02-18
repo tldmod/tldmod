@@ -179,8 +179,9 @@ morale_scripts = [
 			(store_skill_level,":leader","skl_leadership",reg0),
 		(try_end),
 		(val_div,":troop_level", 10),
-         	(val_div,":hitpoints", 3),
+         	(val_div,":hitpoints", 2),
          	(assign,reg1,100),
+
          	(val_sub,reg1,":hitpoints"),
          	(val_sub,reg1,":leader"),
          	(val_sub,reg1,":troop_level"),
@@ -314,12 +315,12 @@ morale_scripts = [
 			(try_begin),
 				(eq|this_or_next, reg0, fac_harad),
 				(eq, reg0, fac_khand),
-				(val_sub, reg1, 20),
+				(val_sub, reg1, tld_morale_bonus_easterlings),
 			(else_try),
 				(eq|this_or_next, reg0, fac_lorien), # Elves get a morale boost
 				(eq|this_or_next, reg0, fac_imladris),
 				(eq, reg0, fac_woodelf),
-				(val_sub, reg1, 35), 
+				(val_sub, reg1, tld_morale_bonus_elves), 
 			(try_end),
 		(try_end),
 		
@@ -336,7 +337,7 @@ morale_scripts = [
 
 		(try_begin),
 			(call_script, "script_count_ally_agents_around_agent", ":agent_no", 600),
-			(store_div, ":morale_bonus", reg0, 2),
+			(store_mul, ":morale_bonus", reg0, 3),
 			(val_sub, reg1, ":morale_bonus"),
 		(try_end),
 	]),
@@ -356,16 +357,16 @@ morale_scripts = [
 			(assign, "$g_spawn_enemies_routed", 0),
 		(try_end),
 
-		#(try_begin),
-		#	(neq, 0, cheat_switch),
-		#	(party_get_num_companions, reg10, "p_routed_troops"),
-		#	(party_get_num_companions, reg11, "p_routed_allies"),
-		#	(party_get_num_companions, reg12, "p_routed_enemies"),
-		#	(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
-		#	(assign, reg10, "$g_spawn_allies_routed"),
-		#	(assign, reg11, "$g_spawn_enemies_routed"),
-		#	(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
-		#(try_end),
+		(try_begin),
+			(neq, 0, cheat_switch),
+			(party_get_num_companions, reg10, "p_routed_troops"),
+			(party_get_num_companions, reg11, "p_routed_allies"),
+			(party_get_num_companions, reg12, "p_routed_enemies"),
+			(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
+			(assign, reg10, "$g_spawn_allies_routed"),
+			(assign, reg11, "$g_spawn_enemies_routed"),
+			(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
+		(try_end),
 
 		# Clear the parties if the total count is greater/equal to than the maximum.
 		(try_begin),
@@ -383,10 +384,10 @@ morale_scripts = [
 
 		(eq, "$tld_option_morale", 1),
 
-		# Don't spawn parties w/ < 1/3 players party size. -CC
-
+		# Don't spawn parties with less than 75% of player's party size. -CC
 		(party_get_num_companions, reg3, "p_main_party"),
-		(val_div, reg3, 3),
+		(val_mul, reg3, 3),
+		(val_div, reg3, 4),
 
 		# Clear empty parties
 		(try_begin),
