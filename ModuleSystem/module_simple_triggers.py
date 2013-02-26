@@ -2232,15 +2232,15 @@ simple_triggers = [
 	(try_begin),
 		(eq, ":faction", "fac_mordor"),
             	(faction_slot_eq, ":faction", slot_faction_guardian_party, 0), #CC: We use this to track wether or not the legions have been spawned.
-            	(neg|faction_slot_ge, ":faction", slot_faction_strength, 2000), #CC: Skip if the faction isn't weak enough
+            	(neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian), #CC: Skip if the faction isn't weak enough
 		(assign, ":mordor_only", 1), 
-		(try_for_range, ":other_fac", kingdoms_begin, kingdoms_end),
-			(eq, ":mordor_only", 1),
-			(neq, ":other_fac", ":faction"),
-            		(faction_slot_eq, ":other_fac", slot_faction_state, sfs_active), # faction lives
-            		(faction_slot_eq, ":other_fac", slot_faction_side, faction_side_eye),
-			(assign, ":mordor_only", 0), # Found another eye faction, do not spawn yet...
-		(try_end),
+		#(try_for_range, ":other_fac", kingdoms_begin, kingdoms_end),
+		#	(eq, ":mordor_only", 1),
+		#	(neq, ":other_fac", ":faction"),
+            	#	(faction_slot_eq, ":other_fac", slot_faction_state, sfs_active), # faction lives
+            	#	(faction_slot_eq, ":other_fac", slot_faction_side, faction_side_eye),
+		#	(assign, ":mordor_only", 0), # Found another eye faction, do not spawn yet...
+		#(try_end),
 		(eq, ":mordor_only", 1),
             	(set_spawn_radius, 8),
 		(spawn_around_party, "p_town_morannon", "pt_legion_barad_dur"),

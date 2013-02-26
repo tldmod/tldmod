@@ -7416,6 +7416,7 @@ It's an important matter, so please make haste.", "caravan_help1",[
    "You have survived up to Gauntlet wave {reg2}. {s4}", "trainer_pretalk",[
       (troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0),
       (troop_get_slot, ":wave_reached", "$g_talk_troop", slot_troop_trainer_training_result),
+      (val_max, ":wave_reached", 1), # (CC) Should prevent losing RPs due to evacuating the training grounds.
       (store_sub, ":reward_xp", ":wave_reached", 1),
       (store_mul, ":reward_gold", ":reward_xp", 30), #30,60,..
       (val_mul, ":reward_xp", 50), #50,100,..

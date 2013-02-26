@@ -38,6 +38,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("draw_victory_rohan", 0, "draw_victory_rohan", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_orc_orc", 0, "draw_victory_orc_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_lorien_arrows", 0, "draw_lorien_arrows", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_spiders", 	 0, "draw_spiders", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("town_west_emnet"    , 0, "town_west_emnet", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_dol_guldur"    , 0, "town_dol_guldur", 0, 0, 0, 0, 0, 0, 1, 1, 1),

@@ -2815,7 +2815,7 @@ mission_templates = [ # not used in game
 			(assign, ":agents_to_damage", 100),		
 			(try_begin),
 				(eq, ":agent_trp", "trp_spider"),
-				(store_random_in_range, reg0, 10, 20),
+				(store_random_in_range, reg0, 5, 10),
 				(assign, ":hit_anim", "anim_strike_fly_back"),
 				(assign, ":agents_to_damage", 1),
 			(else_try),
