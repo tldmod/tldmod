@@ -243,7 +243,7 @@ pt_dunland_recruits _ 0 0 1 0 267 3 7 0 -1 -1 -1 -1 -1
 pt_caravan_survivors Caravan_Survivors 562949953421386 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 
 pt_routed_allies Routed_Allies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
 pt_routed_enemies Routed_Enemies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
-pt_legion_minas_morgul Legion_of_Minas_Morgul 844424930132049 0 6 238 419 1 1 0 403 10 30 0 347 30 60 0 345 45 105 0 -1 -1 
-pt_legion_udun Legion_of_Udun 844424930132049 0 6 238 419 1 1 0 294 10 30 0 370 30 45 0 349 30 45 0 359 30 90 0 -1 
-pt_legion_gorgoroth Legion_of_Gorgoroth 844424930132049 0 6 238 419 1 1 0 418 3 3 0 354 10 10 0 362 50 80 0 345 50 110 0 -1 
-pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 5 0 350 60 60 0 345 30 90 0 363 60 60 0 354 20 20 0 
+pt_legion_minas_morgul Legion_of_Minas_Morgul 844424930132049 0 6 238 419 1 1 0 354 10 10 0 347 30 60 0 365 25 55 0 364 25 50 0 369 25 50 0 
+pt_legion_udun Legion_of_Udun 844424930132049 0 6 238 419 1 1 0 363 20 30 0 370 30 45 0 349 30 45 0 360 30 90 0 354 10 10 0 
+pt_legion_gorgoroth Legion_of_Gorgoroth 844424930132049 0 6 238 419 1 1 0 403 30 30 0 354 10 10 0 362 30 50 0 360 40 90 0 369 20 40 0 
+pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 5 0 350 60 60 0 361 90 90 0 370 60 60 0 354 15 15 0 

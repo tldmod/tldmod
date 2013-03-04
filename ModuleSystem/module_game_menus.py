@@ -8273,7 +8273,7 @@ game_menus = [
 ("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
 	(try_begin),
-		(eq, reg22, "trp_spider"),
+		(eq, reg20, "trp_spider"),
 		(set_background_mesh, "mesh_draw_spiders"),
 	(try_end),
 

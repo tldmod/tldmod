@@ -2,7 +2,11 @@ TLD 3.23 changes:
 - CppCoder:
   - Animal Ambushes become less likely the more attacks you've experienced.
   - Morale System Tweaks (should make it more enjoyable and playable)
-  - Guldur and Mordor resource sharing bug fixed.
+  - Guldur and Mordor resource sharing bug fixed. (hopefully :P )
+  - Spiders are less powerful (5-10 damage, was 10-20)
+  - Mordor legions more powerful and balanced.
+  - Quest for dead lords are ended.
+  - Minor tweaks.
 
 TLD 3.2 changes:
 - CppCoder:

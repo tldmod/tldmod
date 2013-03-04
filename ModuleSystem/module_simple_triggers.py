@@ -1229,7 +1229,6 @@ simple_triggers = [
 (24,[(try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
 		(try_begin),
 			(check_quest_active, ":cur_quest"),
-			(display_message, "@Checking Quests..."),
 			(try_begin), # Cancel quests for dead lords and dead factions (CppCoder)
 				(neg|check_quest_concluded, ":cur_quest"),
 				(quest_get_slot, ":troop_no", ":cur_quest", slot_quest_giver_troop),
@@ -1246,6 +1245,10 @@ simple_triggers = [
 					(faction_slot_eq, ":fac", slot_faction_state, sfs_defeated),
 					(str_store_faction_name, s1, ":fac"),
 					(display_message, "@{s1} has been defeated. Mission canceled.", color_bad_news),
+					(try_begin),
+						(eq, ":cur_quest", "qst_mirkwood_sorcerer"),
+						(disable_party, "p_ancient_ruins"),
+					(try_end),
 					(call_script, "script_cancel_quest", ":cur_quest"),
 				(try_end),
 			(else_try),
