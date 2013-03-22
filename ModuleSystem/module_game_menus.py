@@ -6948,6 +6948,28 @@ game_menus = [
        "Visit the {s41}.",
        [(party_get_slot, ":troop", "$current_town", slot_town_merchant),(change_screen_trade, ":troop")]),
 
+#	  ("improve_equipment",[
+#		(party_slot_eq,"$current_town",slot_party_type, spt_town),
+#	  	(this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
+#      		(this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
+#      		(neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),
+#      		(call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+#     		(ge, ":rank", 9),
+#	  	(party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+#	  	(str_store_troop_name, s40, ":troop"),],
+#       "Have {s40} improve your equipment.",
+#       [
+#	(party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+#             (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+#             (set_visitor,	0,	"trp_player"),
+#             (set_visitor,	17,	":troop"),
+#             (set_jump_mission,"mt_conversation_encounter"),
+#             (jump_to_scene,"scn_conversation_scene"),
+#             (assign, "$talk_context", tc_improve_equipment),
+#             (change_screen_map_conversation, ":troop")
+#	]),
+
+
 	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.",
        [   (try_begin),
              (eq,"$all_doors_locked",1),

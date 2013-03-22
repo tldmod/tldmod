@@ -921,6 +921,7 @@ tc_starting_quest             = 17 #TLD
 tc_make_enemy_join_player     = 18 #TLD
 ###tc_prisoner_talk              = 19 #TLD not used anymore
 tc_troop_review_talk          = 20 #TLD
+tc_improve_equipment	      = 21
 
 tld_max_quest_distance = 100 #TLD
 

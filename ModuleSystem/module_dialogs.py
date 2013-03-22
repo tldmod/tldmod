@@ -7832,7 +7832,57 @@ It's an important matter, so please make haste.", "caravan_help1",[
 
 [anyone|plyr,"lord_deal_with_night_bandits_completed", [], "They had it coming.", "close_window",[(call_script,"script_stand_back"),]],
 
-# TODO: CppCoder: Improve so the mayor accepts better metal scraps    
+# CppCoder: Improved so the mayor accepts better metal scraps    
+
+# Medium Grade Scraps
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
+				(eq, 1, 0), # enable/disable switch
+                              (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
+                              (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+			      (eq, ":quest_target_item", "itm_metal_scraps_bad"),
+                              (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+                              (store_item_kind_count, ":item_count", "itm_metal_scraps_medium"),
+                              (ge, ":item_count", ":quest_target_amount"),
+                              (assign, reg9, ":quest_target_amount"),
+                              (str_store_item_name, s3, ":quest_target_item"),
+                              (str_store_item_name, s4, "itm_metal_scraps_medium")],
+"I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.", "mayor_deliver_iron",
+		[
+			(assign, "$temp", 0),
+        		(quest_set_slot, "qst_deliver_iron", slot_quest_target_item, "itm_metal_scraps_medium"),
+                        (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+                        (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),			
+          		(store_item_value, ":item_value", ":quest_target_item"),
+          		(val_mul, ":item_value", 2), #2x profit
+          		(store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
+        		(quest_set_slot, "qst_deliver_iron", slot_quest_gold_reward, ":quest_gold_reward"),
+		]],
+
+# High Grade Scraps
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
+                              (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
+                              (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
+			      (eq|this_or_next, ":quest_target_item", "itm_metal_scraps_bad"),
+			      (eq, ":quest_target_item", "itm_metal_scraps_medium"),
+                              (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+                              (store_item_kind_count, ":item_count", "itm_metal_scraps_good"),
+                              (ge, ":item_count", ":quest_target_amount"),
+                              (assign, reg9, ":quest_target_amount"),
+                              (str_store_item_name, s3, ":quest_target_item"),
+                              (str_store_item_name, s4, "itm_metal_scraps_good")],
+"I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.", "mayor_deliver_iron",
+		[
+			(assign, "$temp", 0),
+        		(quest_set_slot, "qst_deliver_iron", slot_quest_target_item, "itm_metal_scraps_good"),
+                        (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),	
+                        (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),		
+          		(store_item_value, ":item_value", ":quest_target_item"),
+          		(val_mul, ":item_value", 2), #2x profit
+          		(store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
+        		(quest_set_slot, "qst_deliver_iron", slot_quest_gold_reward, ":quest_gold_reward"),
+		]],
+
+# Original scraps
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
                               (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
