@@ -21,7 +21,7 @@ def save_skills():
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_skills.py","w")
+  ofile = open("./id/ID_skills.py","w")
   for i_skill in xrange(len(skills)):
     ofile.write("skl_%s = %d\n"%(skills[i_skill][0],i_skill))
   ofile.write("\n\n")

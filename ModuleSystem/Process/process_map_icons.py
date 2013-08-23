@@ -24,7 +24,7 @@ def save_map_icons(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_map_icons.py","w")
+  ofile = open("./id/ID_map_icons.py","w")
   for i_map_icon in xrange(len(map_icons)):
     ofile.write("icon_%s = %d\n"%(map_icons[i_map_icon][0],i_map_icon))
   ofile.close()

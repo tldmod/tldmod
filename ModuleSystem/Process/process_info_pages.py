@@ -16,7 +16,7 @@ def save_info_pages():
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_info_pages.py","w")
+  ofile = open("./id/ID_info_pages.py","w")
   for i_info_page in xrange(len(info_pages)):
     ofile.write("ip_%s = %d\n"%(info_pages[i_info_page][0],i_info_page))
   ofile.write("\n\n")

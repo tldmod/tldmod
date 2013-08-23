@@ -35,7 +35,7 @@ def save_party_templates():
   file.close()
 
 def save_python_header():
-  file = open("./ID_party_templates.py","w")
+  file = open("./id/ID_party_templates.py","w")
   for i_party_template in xrange(len(party_templates)):
     file.write("pt_%s = %d\n"%(convert_to_identifier(party_templates[i_party_template][0]),i_party_template))
   file.close()

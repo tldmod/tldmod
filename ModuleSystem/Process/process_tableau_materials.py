@@ -17,7 +17,7 @@ def save_tableau_materials(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_tableau_materials.py","w")
+  ofile = open("./id/ID_tableau_materials.py","w")
   for i_tableau in xrange(len(tableaus)):
     ofile.write("tableau_%s = %d\n"%(tableaus[i_tableau][0],i_tableau))
   ofile.close()

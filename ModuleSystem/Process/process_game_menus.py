@@ -33,7 +33,7 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_menus.py","w")
+  ofile = open("./id/ID_menus.py","w")
   for i_game_menu in xrange(len(game_menus)):
     ofile.write("menu_%s = %d\n"%(game_menus[i_game_menu][0],i_game_menu))
   ofile.close()

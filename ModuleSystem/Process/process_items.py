@@ -9,7 +9,7 @@ def get_item_code(item):
   return code
 
 def save_python_header():
-  file = open("./ID_items.py","w")
+  file = open("./id/ID_items.py","w")
   for i_item in xrange(len(items)):
     file.write("itm_%s = %d\n"%(convert_to_identifier(items[i_item][0]),i_item))
   file.close()

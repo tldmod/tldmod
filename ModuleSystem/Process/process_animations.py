@@ -56,7 +56,7 @@ def write_actions(action_set,num_action_codes,action_codes,file_name):
       file.write(" none 0 0\n") #oops
 
 def save_python_header(action_codes):
-  ofile = open("./ID_animations.py","w")
+  ofile = open("./id/ID_animations.py","w")
   for i_anim in xrange(len(action_codes)):
     ofile.write("anim_%s = %d\n"%(action_codes[i_anim],i_anim))
   ofile.write("\n\n")

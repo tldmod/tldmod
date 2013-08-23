@@ -33,7 +33,7 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   file.close()
 
 def save_python_header():
-  file = open("./ID_scripts.py","w")
+  file = open("./id/ID_scripts.py","w")
   for i_script in xrange(len(scripts)):
     file.write("script_%s = %d\n"%(convert_to_identifier(scripts[i_script][0]),i_script))
   file.write("\n\n")

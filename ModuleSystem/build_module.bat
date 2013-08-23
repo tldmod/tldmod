@@ -37,7 +37,7 @@ python -B -OO process\process_global_variables_unused.py
 REM count objects... (mtarini)
 set /a cnt=0
 set /a max=915
-for /f %%a in ('type "ID_items.py"^|find "" /v /c') do set /a cnt=%%a
+for /f %%a in ('type ".\ID\ID_items.py"^|find "" /v /c') do set /a cnt=%%a
 set /a cnt = cnt-1 
 IF /I %cnt% LSS %max% ( 
 echo item count: %cnt%/%max% ... ok.
@@ -49,7 +49,7 @@ REM
 REM count map_icons... (mtarini)
 set /a cnt=0
 set /a max=256
-for /f %%a in ('type "ID_map_icons.py"^|find "" /v /c') do set /a cnt=%%a
+for /f %%a in ('type ".\ID\ID_map_icons.py"^|find "" /v /c') do set /a cnt=%%a
 IF /I %cnt% LSS %max% ( 
 echo  map icons: %cnt%/%max% ... ok.
 ) ELSE ( 

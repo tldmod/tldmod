@@ -4,7 +4,7 @@ from module_scenes import *
 from process_common import *
 
 def save_python_header():
-  ofile = open("./ID_scenes.py","w")
+  ofile = open("./id/ID_scenes.py","w")
   for i_scene in xrange(len(scenes)):
     ofile.write("scn_%s = %d\n"%(convert_to_identifier(scenes[i_scene][0]),i_scene))
   ofile.close()

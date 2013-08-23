@@ -58,7 +58,7 @@ def save_parties(parties):
   file.close()
 
 def save_python_header(parties):
-  file = open("./ID_parties.py","w")
+  file = open("./id/ID_parties.py","w")
   for i_party in xrange(len(parties)):
     file.write("p_%s = %d\n"%(convert_to_identifier(parties[i_party][0]),i_party))
   file.close()

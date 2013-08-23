@@ -50,7 +50,7 @@ def save_mission_templates(variables,variable_uses,tag_uses,quick_strings):
   file.close()
 
 def save_python_header():
-  file = open("./ID_mission_templates.py","w")
+  file = open("./id/ID_mission_templates.py","w")
   for i_mission_template in xrange(len(mission_templates)):
     file.write("mst_%s = %d\n"%(mission_templates[i_mission_template][0],i_mission_template))
   file.close()

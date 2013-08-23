@@ -58,7 +58,7 @@ def two_to_pow(x):
   return result
 
 def save_python_header():
-  file = open("./ID_factions.py","w")
+  file = open("./id/ID_factions.py","w")
   for i_faction in xrange(len(factions)):
     file.write("fac_%s = %d\n"%(factions[i_faction][0],i_faction))
   file.write("\n\n")

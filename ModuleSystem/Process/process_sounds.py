@@ -3,7 +3,7 @@ from module_info import *
 from module_sounds import *
 
 def write_python_header(sounds):
-  file = open("./ID_sounds.py","w")
+  file = open("./id/ID_sounds.py","w")
   for i_sound in xrange(len(sounds)):
     file.write("snd_%s = %d\n"%(sounds[i_sound][0],i_sound))
   file.write("\n\n")

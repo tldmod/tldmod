@@ -46,7 +46,7 @@ REM
 REM count objects... (mtarini)
 set /a cnt=0
 set /a max=915
-for /f %%a in ('type "ID_items.py"^|find "" /v /c') do set /a cnt=%%a
+for /f %%a in ('type ".\ID\ID_items.py"^|find "" /v /c') do set /a cnt=%%a
 set /a cnt = cnt-1 
 IF /I %cnt% LSS %max% ( 
 echo Item count: %cnt%/%max% ... ok.

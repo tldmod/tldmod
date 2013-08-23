@@ -19,7 +19,7 @@ def save_presentations(variable_list,variable_uses,tag_uses,quick_strings):
 
 
 def save_python_header():
-  file = open("./ID_presentations.py","w")
+  file = open("./id/ID_presentations.py","w")
   for i_presentation in xrange(len(presentations)):
     file.write("prsnt_%s = %d\n"%(presentations[i_presentation][0],i_presentation))
   file.close()

@@ -109,7 +109,7 @@ def two_to_pow(x):
   return result
 
 def save_python_header():
-  file = open("./ID_troops.py","w")
+  file = open("./id/ID_troops.py","w")
   for i_troop in xrange(len(troops)):
     file.write("trp_%s = %d\n"%(convert_to_identifier(troops[i_troop][0]),i_troop))
   file.close()

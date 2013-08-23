@@ -52,7 +52,7 @@ def save_particle_systems():
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_particle_systems.py","w")
+  ofile = open("./id/ID_particle_systems.py","w")
   for i_particle_system in xrange(len(particle_systems)):
     ofile.write("psys_%s = %d\n"%(particle_systems[i_particle_system][0],i_particle_system))
   ofile.close()

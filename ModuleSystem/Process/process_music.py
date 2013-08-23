@@ -5,7 +5,7 @@ from module_music import *
 from process_common import *
 
 def save_python_header():
-  ofile = open("./ID_music.py","w")
+  ofile = open("./id/ID_music.py","w")
   for i_track in xrange(len(tracks)):
     ofile.write("track_%s = %d\n"%(tracks[i_track][0],i_track))
   ofile.write("\n\n")

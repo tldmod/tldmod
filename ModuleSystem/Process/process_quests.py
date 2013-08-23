@@ -17,7 +17,7 @@ def save_quests():
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID_quests.py","w")
+  ofile = open("./id/ID_quests.py","w")
   for i_quest in xrange(len(quests)):
     ofile.write("qst_%s = %d\n"%(quests[i_quest][0],i_quest))
   for i_quest in xrange(len(quests)):
