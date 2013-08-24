@@ -1,0 +1,41 @@
+
+ STUFF IN THE RESOURCE TREE I'VE HAD TO TWEAK IN ORDER TO MAKE THIS THING WORK
+ -----------------------------------------------------------------------------
+
+ *MODULE SYSTEM
+ -rather new animation format, changed flags, a list with a lot of new hardcoded entries, work done primarly by GetAssista.
+ -different opcode correlation, operations need to be remapped on build, as some of them don't *mean* the same between WB and MB.
+ -we may avoid changing much else by specifying we aren't compatible with WB by *not* using a directive in <module.ini>,
+  then the game enters in soft-compatibility shim mode instead of showing hard errors.
+  
+ *MODULE INI
+ -set to *not* compatible with warband, this is important, specially when parsing brfs and skeletons
+ -disable multiplayer and tutorial, show performance warnings which may come in handy later on
+ 
+ *BINARY RESOURCE FILES
+ -the imposed limitation of more than two characters in names. specially troubling when a mesh called "0" is used for invisible items.
+ -even sharing the same resource loader and parser than the original game, seems like Warband's new physics engine doesn't likes
+  some of the collision bodies in TLD. the solution is to comment them out first in scene_props.txt/placeholders and fix them later on,
+  one by one, once we're in-game.
+ -interface changes, need to add a lot of meshes to <user_interface_b.brf>, Taleworlds should have been smarter and put it aside in the
+  brand-new <user_interface_c.brf> which includes multiplayer thingies.
+  
+ *SHADERS
+ -completely incompatible, manage to launch the game first using placeholders and recode
+  them later on using the sources provided by TaleWorlds.
+ -we don't need iron launcher, replacement or work-arounds at all, big selling point.
+ 
+ *MODULE DATA
+ -mostly compatible, primarily the font xml and agent body definitions, stuff like the flora need to be accomodated to the new format.
+ 
+ *TEXT FILES
+ -use the thankfully commented <game_variables.txt> from Warband, which includes all the new colors and positions for UI thingies. mostly a shameless copy-paste.
+ 
+ 
+ THOUGHTS
+ --------
+ 
+ Taleworlds wanted to make mods inter-compatible at first but got tired, burn-out or short
+ of time to finish this task leaving a halfplemented frankestein-esque thing which helps us in our task.
+ 
+ --swyter
