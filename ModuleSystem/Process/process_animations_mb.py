@@ -2,11 +2,7 @@ import string
 from header_common import *
 from module_info import *
 from process_common import *
-
-if (wb_compile_switch == 0):
-  from module_animations import *
-elif (wb_compile_switch == 1):
-  from module_animations_wb import *
+from module_animations import *
 
 def compile_action_sets(actions):
   action_codes = []
@@ -31,16 +27,9 @@ def write_actions(action_set,num_action_codes,action_codes,file_name):
     action_found = 0
     for action in action_set:
       if action[0] == i_action_code:
-        if (wb_compile_switch == 0):
-          file.write(" %s %d "%(action_codes[i_action_code],action[1])) #print flags
-        elif (wb_compile_switch == 1):
-          file.write(" %s %d %d "%(action_codes[i_action_code],action[1], action[2])) #print flags
-        file.write(" %d\n"%(len(action)-wb_compile_switch-2))
-        if (wb_compile_switch==1):
-         action=action[3:]
-        else:
-         action=action[2:]
-        for elem in action:
+        file.write(" %s %d "%(action_codes[i_action_code],action[1])) #print flags
+        file.write(" %d\n"%(len(action)-2))
+        for elem in action[2:]:
           file.write("  %f %s %d %d %d "%(elem[0],elem[1],elem[2],elem[3],elem[4]))
           if (len(elem) > 5):
             file.write("%d "%elem[5])
