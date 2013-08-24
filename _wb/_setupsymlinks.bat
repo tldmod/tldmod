@@ -16,7 +16,7 @@ call :createlink J Textures
 
 call :createlink H main.bmp
 call :createlink H module.ini
-
+call :createlink H map.txt
 
 echo. 
 echo Now comes the fun part. Enter the path to the warband folder.

@@ -23,8 +23,8 @@ def write_sounds(sound_samples, sounds):
       #### Warband sound formatting
       if (wb_compile_switch == 0):
         ofile.write("%d "%(s))
-      elif (wb_compile_switch == 1):
-        ofile.write("%d %d "%(s[0], s[1]))
+     #elif (wb_compile_switch == 1):
+     #  ofile.write("%d %d "%(s[0], s[1]))
       #### end Warband sound formatting
     ofile.write("\n")
   ofile.close()

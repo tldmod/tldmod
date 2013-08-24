@@ -9,3 +9,5 @@ if (wb_compile_switch == 0):
   export_dir = "../"
 elif (wb_compile_switch == 1):
   export_dir = "../_wb/"
+  from os import system
+  system("title building tld for wb--")
