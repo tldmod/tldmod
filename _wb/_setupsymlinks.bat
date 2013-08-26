@@ -6,10 +6,10 @@
  goto :eof
 
 :start
-call :createlink J Data
+::call :createlink J Data
 call :createlink J Languages
 call :createlink J Music
-call :createlink J Resource
+::call :createlink J Resource
 call :createlink J SceneObj
 call :createlink J Sounds
 call :createlink J Textures
@@ -17,6 +17,14 @@ call :createlink J Textures
 call :createlink H main.bmp
 call :createlink H module.ini
 call :createlink H map.txt
+
+mkdir Data
+call :createlink H Data/font_data.xml
+call :createlink H Data/ground_specs.txt
+call :createlink H Data/skeleton_bodies.xml
+
+::for /f %%f in ('dir /b ..\Data') do call :createlink H Data\%%f
+for /f %%f in ('dir /b ..\Resource\*.brf') do call :createlink H Resource\%%f
 
 echo. 
 echo Now comes the fun part. Enter the path to the warband folder.
