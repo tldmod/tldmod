@@ -15,3 +15,4 @@ prsnt_retirement = 13
 prsnt_intro_titles = 14
 prsnt_conversation_titles = 15
 prsnt_customize_defilement = 16
+prsnt_game_start = 17

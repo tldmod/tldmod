@@ -1,4 +1,5 @@
 from header_meshes import *
+from module_info import *
 
 ####################################################################################################################
 #  Each mesh record contains the following fields:
@@ -422,4 +423,11 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
 ### ROHAN
 ### DALE
   
+  ]
+
+if wb_compile_switch==1:
+  meshes+=[
+    ("loading_background",  0, "ui_default_menu_window",    0, 0, 0, 0, 0, 0, 1, 1, 1),
+    ("main_menu_background",0, "meeting_window",            0, 0, 0, 0, 0, 0, 1, 1, 1),
+    ("main_menu_statue",    render_order_plus_1, "pic_mercenary",             0, 0, 0, 0, 0, 0, 1, 1, 1),
   ]

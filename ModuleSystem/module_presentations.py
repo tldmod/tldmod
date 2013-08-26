@@ -5,6 +5,8 @@ from ID_meshes import *
 from header_operations import *
 from header_triggers import *
 from module_constants import *
+from module_info import *
+
 import string
 
 ####################################################################################################################
@@ -2844,3 +2846,75 @@ presentations = [
 ]),
 
 ]
+
+if wb_compile_switch==1:
+  presentations+=[
+    ("game_start", prsntf_read_only, 0, [
+          (ti_on_presentation_load,
+           [(presentation_set_duration, 999999),
+            (set_fixed_point_multiplier, 1000),
+            
+            #swy-- place the main menu statue in WB, manually, as there is no hardcoded mesh as in 1.011.
+            # (create_mesh_overlay, ":mmback", "mesh_main_menu_background"),
+            # (position_set_x, pos1, 0),
+            # (position_set_y, pos1, 0),
+            # (overlay_set_position, ":mmback", pos1),
+            
+            (create_mesh_overlay, ":mmstatue", "mesh_main_menu_statue"),
+            (position_set_x, pos1, 0),
+            (position_set_y, pos1, 0),
+            (overlay_set_position, ":mmstatue", pos1),
+            
+            ####### mouse fix pos system #######
+            (create_text_overlay, "$g_presentation_obj_39", "@ ", tf_center_justify|tf_vertical_align_center),
+
+            (create_mesh_overlay, "$g_presentation_obj_38", "mesh_white_plane"),
+            (position_set_x, pos1, 50),
+            (position_set_y, pos1, 37500),
+            (overlay_set_size, "$g_presentation_obj_38", pos1),
+
+            (create_mesh_overlay, "$g_presentation_obj_37", "mesh_white_plane"),
+            (position_set_x, pos1, 50000),
+            (position_set_y, pos1, 50),
+            (overlay_set_size, "$g_presentation_obj_37", pos1),
+            ####### mouse fix pos system #######
+            ]),
+            
+          (ti_on_presentation_run,
+           [
+            ####### mouse fix pos system #######
+            (mouse_get_position, pos1),
+            (position_get_x, reg50, pos1),
+            (position_get_y, reg51, pos1),
+            
+            (position_set_x, pos1, reg50),
+            (position_set_y, pos1, 0),
+            (overlay_set_position, "$g_presentation_obj_38", pos1),
+
+            (position_set_x, pos1, 0),
+            (position_set_y, pos1, reg51),
+            (overlay_set_position, "$g_presentation_obj_37", pos1),
+
+            (try_begin),
+              (le, reg50, 500),
+              (assign, ":offset_x", 70),
+            (else_try),
+              (assign, ":offset_x", -70),
+            (try_end),
+            (try_begin),
+              (le, reg51, 375),
+              (assign, ":offset_y", 20),
+            (else_try),
+              (assign, ":offset_y", -20),
+            (try_end),
+            (store_add, ":pos_x", reg50, ":offset_x"),
+            (store_add, ":pos_y", reg51, ":offset_x"),
+            (position_set_x, pos1, ":pos_x"),
+            (position_set_y, pos1, ":pos_y"),
+            (overlay_set_position, "$g_presentation_obj_39", pos1),
+            (overlay_set_text, "$g_presentation_obj_39", "@({reg50},{reg51})"),
+            ####### mouse fix pos system #######
+           ])
+
+    ]),
+  ]
