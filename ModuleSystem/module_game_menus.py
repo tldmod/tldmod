@@ -3483,7 +3483,7 @@ game_menus = [
     (set_background_mesh, "mesh_ui_default_menu_window"),
     (try_begin),(ge,"$cheat_imposed_quest",0),(str_store_quest_name,s20,"$cheat_imposed_quest"),(else_try),(str_store_string,s20,"@None"),(try_end),
   ],[
-	("back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
+	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 #	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 #	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
@@ -8335,7 +8335,7 @@ game_menus = [
    ("scene3",[],"Battlefield7 (file scn_battlefield7.sco)",[(1261,"scn_battlefield7"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield7"),(2048)]),
    ("scene4",[],"Battlefield8 (file scn_battlefield8.sco)",[(1261,"scn_battlefield8"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield8"),(2048)]),
    ("scene5",[],"Battlefield9 (file scn_battlefield9.sco)",[(1261,"scn_battlefield9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_battlefield9"),(2048)]),
-   ("back" ,[],"Back...",[(change_screen_quit)])],
+   ("back_3dot" ,[],"Back...",[(change_screen_quit)])],
  ),
 
 # ("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,

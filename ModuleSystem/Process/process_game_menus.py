@@ -9,10 +9,11 @@ from process_operations import *
 
 def save_game_menu_item(ofile,variable_list,variable_uses,menu_item,tag_uses,quick_strings):
   #duplicate-ids thingie
+  global conflicting_mno
   global conflicting_ids
   for value in gamemenu_uses:
     if value[0]==menu_item[0] and value[1]!=menu_item[2]:
-      debugfile.write(str([menu_item[0],menu_item[2]])+" conflicts with\n"+str(value)+"\r\n")
+      conflicting_mno+=str([menu_item[0],menu_item[2]])+" conflicts with\n"+str(value)+"\r\n"
       conflicting_ids=True
       break
   gamemenu_uses.append([menu_item[0],menu_item[2]])
@@ -53,7 +54,7 @@ variable_uses = []
 #duplicate-ids thingie
 gamemenu_uses = []
 conflicting_ids = False
-debugfile = open("_non-matching-dup-gamemenu-ids.log","w")
+conflicting_mno = ""
 #duplicate-ids end
 variables = load_variables(export_dir, variable_uses)
 tag_uses = load_tag_uses(export_dir)
@@ -65,5 +66,7 @@ save_quick_strings(export_dir,quick_strings)
 #duplicate-ids thingie
 if conflicting_ids:
   print "[!] Conflicting gamemenu item ids,\n    see the log for details!"
-debugfile.close()
+  debugfile = open("conflicting_mno.log","w")
+  debugfile.write(conflicting_mno)
+  debugfile.close()
 #duplicate-ids end
