@@ -2864,6 +2864,12 @@ if wb_compile_switch==1:
             (position_set_x, pos1, 0),
             (position_set_y, pos1, 0),
             (overlay_set_position, ":mmstatue", pos1),
-            ]),
+            ])
+    ]),
+    ("game_custom_battle_designer", mesh_load_window, 0, [
+          (ti_on_presentation_load,
+           [#swy-- boom! direct shortcut to the vanilla quick battle menu! how cool is that?
+            (jump_to_menu, "mnu_start_game_3"),
+            ])
     ]),
   ]
