@@ -235,9 +235,9 @@ game_menus = [
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
 	("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_11",[],"____________Test Troll Battles_____________________.",
+	("troll_battle_scenario",[],"____________Test Troll Battles_____________________.",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("custom_battle_scenario_11",[],"____________Test Warg Battles______________________.",
+	("warg_battle_scenario",[],"____________Test Warg Battles______________________.",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
 	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
@@ -1078,11 +1078,11 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 21),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("warg_battle_scenario_12",[],"          Against Wargs: many vs many",
 		[(assign, "$g_custom_battle_scenario", 22),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("warg_battle_scenario_10",[],"          Play Wargs: 1 vs 1",
+	("warg_battle_scenario_10b",[],"          Play Wargs: 1 vs 1",
 		[(assign, "$g_custom_battle_scenario", 23),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("warg_battle_scenario_11",[],"          Play Wargs: 2 vs 3",
+	("warg_battle_scenario_11b",[],"          Play Wargs: 2 vs 3",
 		[(assign, "$g_custom_battle_scenario", 24),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("warg_battle_scenario_12",[],"          Play Wargs: many vs many",
+	("warg_battle_scenario_12b",[],"          Play Wargs: many vs many",
 		[(assign, "$g_custom_battle_scenario", 25),(jump_to_menu, "mnu_custom_battle_2"),]),
  ] for ct in range(cheat_switch)])+[
     ("dot_go_back",[],".                 Go back",[(jump_to_menu, "mnu_start_game_3"),]),    ]
@@ -1091,9 +1091,9 @@ game_menus = [
 #TLD Character creation menus CONTINUE
 ( "start_good",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your race:", "none",[(set_show_messages,0),],[
-  ("start_01",[],"MAN",                 [(jump_to_menu,"mnu_start_good_man"),]),
-  ("start_02",[],"ELF",                 [(jump_to_menu,"mnu_start_good_elf"),]),
-  ("start_03",[],"DWARF",               [(jump_to_menu,"mnu_start_good_dwarf"),]),
+  ("start_ma",[],"MAN",                 [(jump_to_menu,"mnu_start_good_man"),]),
+  ("start_el",[],"ELF",                 [(jump_to_menu,"mnu_start_good_elf"),]),
+  ("start_dw",[],"DWARF",               [(jump_to_menu,"mnu_start_good_dwarf"),]),
   ("spacer"  ,[],"_",[]),  
   ("go_back" ,[],"Go back",[(jump_to_menu, "mnu_start_game_1")]),    ]
  ),
@@ -1106,93 +1106,93 @@ game_menus = [
  ),
 ( "start_eye",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the Lidless Eye^Choose your Race", "none",[],[
- ("start_1"  ,[],"an ORC, serving the Lidless Eye"       ,[(jump_to_menu,"mnu_start_eye_orc"),]),
- ("start_2"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_choose_skill"),]),
- ("start_3"  ,[],"a MAN, subjugated by Sauron"           ,[(jump_to_menu,"mnu_start_eye_man"),]),
+ ("start_or"  ,[],"an ORC, serving the Lidless Eye"       ,[(jump_to_menu,"mnu_start_eye_orc"),]),
+ ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_em"  ,[],"a MAN, subjugated by Sauron"           ,[(jump_to_menu,"mnu_start_eye_man"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
  ),
 ( "start_hand",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the White Hand^Choose your Race", "none",[],[
- ("start_1",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
- ("start_2",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
- ("start_3",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_whor",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
+ ("start_isur",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_duma",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
  ),
 ( "start_good_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_good_man")],[
-  ("start_01",[],"GONDOR, the Kingdom of the White Tower",[(jump_to_menu,"mnu_start_gondor"),]),
-  ("start_02",[],"ROHAN, the Horse people"               ,[(call_script,"script_start_as_one","trp_rohan_youth"),           (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_05",[],"DUNEDAIN, the ancient dynasty of Men"  ,[(call_script,"script_start_as_one","trp_dunedain_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_04",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_beorning_vale_man"),     (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_06",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_go",[],"GONDOR, the Kingdom of the White Tower",[(jump_to_menu,"mnu_start_gondor"),]),
+  ("start_ro",[],"ROHAN, the Horse people"               ,[(call_script,"script_start_as_one","trp_rohan_youth"),           (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_du",[],"DUNEDAIN, the ancient dynasty of Men"  ,[(call_script,"script_start_as_one","trp_dunedain_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_be",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_beorning_vale_man"),     (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_da",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
   ("spacer"  ,[],"_",[]),  
   ("go_back" ,[],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
 ( "start_good_elf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^which Forest do you live in, Elder?", "none",[(assign, "$last_menu", "mnu_start_good_elf")],[
-  ("start_1", [],"RIVENDELL, of Lord Elrond"            ,[(call_script,"script_start_as_one","trp_rivendell_scout"),      (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_2", [],"LOTHLORIEN, of Lady Galadriel"        ,[(call_script,"script_start_as_one","trp_lothlorien_scout"),     (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_3", [],"MIRKWOOD, land of the Silvan Elves"   ,[(call_script,"script_start_as_one","trp_greenwood_scout"),      (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_ri", [],"RIVENDELL, of Lord Elrond"            ,[(call_script,"script_start_as_one","trp_rivendell_scout"),      (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_lo", [],"LOTHLORIEN, of Lady Galadriel"        ,[(call_script,"script_start_as_one","trp_lothlorien_scout"),     (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_mi", [],"MIRKWOOD, land of the Silvan Elves"   ,[(call_script,"script_start_as_one","trp_greenwood_scout"),      (jump_to_menu,"mnu_choose_gender"),]),
   ("spacer" , [],"_",[]),  
   ("go_back", [],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
 ( "start_good_dwarf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_elf")],[
-  ("start_1", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_choose_skill"),]),
-  ("start_2", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_choose_skill"),]),
+  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_choose_skill"),]),
+  ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_choose_skill"),]),
   ("spacer" , [],"_",[]),  
   ("go_back", [],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
 ( "start_gondor",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where are you from, in Gondor?", "none",[(assign, "$last_menu", "mnu_start_gondor")],[
- ("start_1",[],"MINAS TIRITH, the Capital"                ,[(jump_to_menu,"mnu_start_gondor_mt"),]),
- ("start_3",[],"LOSSARNACH, the Fiefdom of the Axemen"    ,[(call_script,"script_start_as_one","trp_woodsman_of_lossarnach"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_4",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_5",[],"PINNATH GELIN, the Fiefdom of Green Hills",[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (jump_to_menu,"mnu_choose_gender"),]),
- ("start_6",[],"DOL AMROTH, the Fiefdom of Swan Knights"  ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
- ("start_7",[],"PELAGIR, the Coastal Fiefdom"             ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), (jump_to_menu,"mnu_choose_gender"),]),
- ("start_8",[],"BLACKROOT VALE, the Fiefdom of Archers"   ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_mt",[],"MINAS TIRITH, the Capital"                ,[(jump_to_menu,"mnu_start_gondor_mt"),]),
+ ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"    ,[(call_script,"script_start_as_one","trp_woodsman_of_lossarnach"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills",[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"  ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pe",[],"PELAGIR, the Coastal Fiefdom"             ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"   ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
 ( "start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
- ("start_1",[],"HARADRIM, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
- ("start_2",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_3",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
- ("start_4",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
- ("start_5",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_hr",[],"HARADRIM, the desert people from the South",[(jump_to_menu,"mnu_start_haradrim"),]),  
+ ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_corsair_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),     (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye")]),    ]
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_1",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("start_3",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye")]),    ]
  ),
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_1",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
- ("start_2",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("start_3",[],"in the cliffs of Mount GUNDABAD", [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_cliff",[],"in the cliffs of Mount GUNDABAD", [(call_script,"script_start_as_one","trp_goblin_gundabad"),       (jump_to_menu,"mnu_choose_skill"),]),
  ("spacer" ,[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_hand")]),    ]
  ),
 ( "start_gondor_mt",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage", "none",[(assign, "$last_menu", "mnu_start_gondor_mt")],[
- ("start_1",[],"Commoner" ,[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_2",[],"High-born",[(call_script,"script_start_as_one","trp_gondor_noblemen"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_1_com",[],"Commoner" ,[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2_hib",[],"High-born",[(call_script,"script_start_as_one","trp_gondor_noblemen"),(jump_to_menu,"mnu_choose_gender"),]),
  ("spacer" ,[],"_"        ,[]),
  ("go_back",[],"Go back"  ,[(jump_to_menu, "mnu_start_gondor")]),    ]
  ),
 ( "start_haradrim",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[
- ("start_1",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_harad_desert_warrior"),   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_2",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_1_des",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_harad_desert_warrior"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2_far",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
 # ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye_man")]),    ]
@@ -2129,7 +2129,7 @@ game_menus = [
     (str_store_string, s1, "@Faction AI report:^{s2}"),
     ],
     [("details",[],"Detailed faction report...", [(jump_to_menu, "mnu_mvtest_facai_details"),]),
-     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+     ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
  ),
 ( "mvtest_facai_details",0,
@@ -2282,7 +2282,7 @@ game_menus = [
      ("spent",[],"Set faction strength to 600 (spent).", [
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,600),
        (display_message, "@Faction almost defeated! The AI can go for the capital now...", 0x30FFC8),]),
-     ("continue",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
+     ("back_ai",[],"Back to faction AI.", [(jump_to_menu, "mnu_mvtest_facai_report"),]),
     ]
  ),
 ( "mvtest_faction_casualties",0,
@@ -2466,7 +2466,7 @@ game_menus = [
 	      (assign, "$g_mvtest_faction", kingdoms_begin),
 	    (try_end),
       ]),
-     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+     ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
  ),
 ( "mvtest_town_wealth_report",0,
@@ -2510,7 +2510,7 @@ game_menus = [
 	      (assign, "$g_mvtest_faction", kingdoms_begin),
 	    (try_end),
       ]),
-     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+     ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
  ),
 ( "mvtest_sieges",0,
@@ -2651,14 +2651,14 @@ game_menus = [
         (change_screen_map),
       ]),
  ] for ct in range(cheat_switch)])+[
-     ("continue",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+     ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
  ),
 ( "mvtest_order_siege",0,
    "Order {s1} to besiege...",
    "none",
    [(str_store_faction_name, s1, "$ambient_faction"),],
-   [("continue",[],"Back to siege menu.", [(jump_to_menu, "mnu_mvtest_sieges"),]),]
+   [("back_sieg",[],"Back to siege menu.", [(jump_to_menu, "mnu_mvtest_sieges"),]),]
   +
   concatenate_scripts([[
   (
@@ -3475,7 +3475,7 @@ game_menus = [
 ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
    [ ("cheat_free_magic_item_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]), ]
    +
-   [ ("mi",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) 
+   [ ("mi20",[(neg|player_has_item,x),(str_store_item_name,s20,x)],"{s20}",[(troop_add_item ,"trp_player",x),(display_message, "@Here you are."),]) 
 	for x in magic_items ]
  ),
 # choose quest cheat (mtarini)
@@ -3487,7 +3487,7 @@ game_menus = [
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 #	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 #	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
-    ]+[("mi",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
+    ]+[("mi21",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
   ### CHOSE TOWN WHERE TO RELOCATE PART 2: chose city (mtarini)
@@ -3639,7 +3639,7 @@ game_menus = [
 		(jump_to_menu, "mnu_select_any_troop_setup_search"),
 		]), 
 
-	("go_back"   ,[],"[Done]" ,[(assign, "$add_troop_menu_index", 0),(jump_to_menu, "mnu_select_any_troop"),]), 
+	("done"   ,[],"[Done]" ,[(assign, "$add_troop_menu_index", 0),(jump_to_menu, "mnu_select_any_troop"),]), 
  ]),
 ( "camp_cheat",0,
    "Other Cheats Menu (for development use):^^This menu is intended for development use while we are working on improving this mod. If you enable this option then additonal CHEAT menu's will also appear in other game menu's. Please do not report any bugs with this functionality since it is for testing only.",
@@ -7069,7 +7069,7 @@ game_menus = [
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,reg(11)),
 							(change_screen_mission)]),
-      ("castle_cheat_interior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT: Interior.",[
+      ("castle_cheat_interior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT! Interior.",[
 							(set_jump_mission,"mt_ai_training"),
 							(party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
 							(jump_to_scene,":castle_scene"),
@@ -7555,7 +7555,7 @@ game_menus = [
     [(set_background_mesh, "mesh_ui_default_menu_window"),
      (str_store_party_name, s1, "$g_encountered_party"),
     ],
-    [("continue",[],"Leave.",[(change_screen_return)])]
+    [("leave",[],"Leave.",[(change_screen_return)])]
  ),
 ( "legendary_place",0,
     "^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.",
@@ -7593,7 +7593,7 @@ game_menus = [
         (jump_to_scene,":lp_scene"),
         (change_screen_mission),
        ]),
-     ("continue",[],"Leave.",[(change_screen_return)]),
+     ("leave",[],"Leave.",[(change_screen_return)]),
     ]
  ),
 
@@ -7758,14 +7758,14 @@ game_menus = [
     "^^^^^^^^^^Choose good faction", "none", [(set_background_mesh, "mesh_relief01")],
     [
  ]+concatenate_scripts([[	
-	("cb_mordor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor1"   ,[],"Rohan"     ,[(assign,"$faction_good",fac_rohan   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor2"   ,[],"Lothlorien",[(assign,"$faction_good",fac_lorien  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor3"   ,[],"Rivendell" ,[(assign,"$faction_good",fac_imladris),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor4"   ,[],"Mirkwood"  ,[(assign,"$faction_good",fac_woodelf ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor5"   ,[],"Dwarves"   ,[(assign,"$faction_good",fac_dwarf   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor6"   ,[],"Dale"      ,[(assign,"$faction_good",fac_dale    ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
-     ("cb_mordor7"   ,[],"Beornings" ,[(assign,"$faction_good",fac_beorn   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+	("cb_gondor"    ,[],"Gondor"    ,[(assign,"$faction_good",fac_gondor  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor1"   ,[],"Rohan"     ,[(assign,"$faction_good",fac_rohan   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor2"   ,[],"Lothlorien",[(assign,"$faction_good",fac_lorien  ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor3"   ,[],"Rivendell" ,[(assign,"$faction_good",fac_imladris),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor4"   ,[],"Mirkwood"  ,[(assign,"$faction_good",fac_woodelf ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor5"   ,[],"Dwarves"   ,[(assign,"$faction_good",fac_dwarf   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor6"   ,[],"Dale"      ,[(assign,"$faction_good",fac_dale    ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
+     ("cb_gondor7"   ,[],"Beornings" ,[(assign,"$faction_good",fac_beorn   ),(jump_to_menu,"mnu_custom_battle_choose_faction3"),]),
  ] for ct in range(cheat_switch)])+[
      ("go_back"      ,[],"Go back"   ,[(jump_to_menu,"mnu_custom_battle_choose_faction1")]),
  ]),
