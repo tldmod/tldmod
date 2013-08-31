@@ -78,7 +78,7 @@ def export_skins(skins):
     ofile.write("%s %d\n %s %s %s\n"%(skin_name, skin_flags, body_name, calf_name, hand_name))
     ofile.write(" %s %d "%(head_mesh,len(face_keys)))
     for face_key in face_keys:
-      ofile.write("skinkey_%s %d %d %f %f %s "%(convert_to_identifier(face_key[4]), face_key[0],face_key[1],face_key[2],face_key[3],replace_spaces(face_key[4])))
+      ofile.write("skinkey_%s %d %d %s %s %s "%(convert_to_identifier(face_key[4]), face_key[0],face_key[1],sf(face_key[2]),sf(face_key[3]),replace_spaces(face_key[4])))
     ofile.write("\n%d\n"%len(hair_meshes))
     for mesh_name in hair_meshes:
       ofile.write(" %s "%mesh_name)
@@ -90,14 +90,14 @@ def export_skins(skins):
     write_textures(ofile,beard_textures)
     write_face_tex(ofile,face_textures)
     write_voices(ofile, voices)
-    ofile.write(" %s %f "%(skeleton_name, scale))
+    ofile.write(" %s %s "%(skeleton_name, sf(scale)))
     ofile.write("\n%d %d\n"%(blood_particles_1, blood_particles_2))
     ofile.write("%d\n"%(len(constraints)))
     for constraint in constraints:
-      ofile.write("\n%f %d %d "%(constraint[0], constraint[1], (len(constraint) - 2)))
+      ofile.write("\n%s %d %d "%(sf(constraint[0]), constraint[1], (len(constraint) - 2)))
       for i_pair in xrange(len(constraint)):
         if i_pair > 1:
-          ofile.write(" %f %d"%(constraint[i_pair][0], constraint[i_pair][1]))
+          ofile.write(" %s %d"%(sf(constraint[i_pair][0]), constraint[i_pair][1]))
     ofile.write("\n")
   ofile.close()
 

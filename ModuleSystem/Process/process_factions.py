@@ -41,7 +41,7 @@ def save_factions(relations):
       fac_color = faction[6]
     file.write("fac_%s %s %d %d \n"%(convert_to_identifier(faction[0]), replace_spaces(faction[1]), faction[2], fac_color))
     for reln in relations[i_faction]:
-      file.write(" %f "%reln)
+      file.write(" %s "%sf(reln))
     file.write("\n")
     ranks = []
     if (len(faction) > (faction_ranks_pos)):

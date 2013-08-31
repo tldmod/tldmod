@@ -10,7 +10,7 @@ def save_meshes():
   ofile.write("%d\n"%len(meshes))
   for i_mesh in xrange(len(meshes)):
     mesh = meshes[i_mesh]
-    ofile.write("mesh_%s %d %s %f %f %f %f %f %f %f %f %f\n"%(mesh[0],mesh[1],replace_spaces(mesh[2]),mesh[3],mesh[4],mesh[5],mesh[6],mesh[7],mesh[8],mesh[9],mesh[10],mesh[11]))
+    ofile.write("mesh_%s %d %s %s %s %s %s %s %s %s %s %s\n"%(mesh[0],mesh[1],replace_spaces(mesh[2]),sf(mesh[3]),sf(mesh[4]),sf(mesh[5]),sf(mesh[6]),sf(mesh[7]),sf(mesh[8]),sf(mesh[9]),sf(mesh[10]),sf(mesh[11])))
   ofile.close()
 
 def save_python_header():

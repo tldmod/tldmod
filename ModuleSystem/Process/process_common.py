@@ -26,3 +26,23 @@ def convert_to_identifier_with_no_lowercase(s0):
 
 def replace_spaces(s0):
   return string.replace(s0," ","_")
+
+def sf(input):
+    """
+    --swyter. build msys with short floats
+    """
+    #print("after:"+str(input))
+    input=str(input)
+    
+    '''
+    fixes a bug in scenes.txt, otherwise it munches the non-decimal zeroes,
+    leaving the player potentiall trapped into a teensy tiny space :(
+    '''
+    if ("." in input):
+     input=input.rstrip('0').rstrip(".")
+    #if (input[-1]=="."):
+    # input+="0"
+    if (input==""):
+     input="0"
+    #print("befor:"+input)
+    return input

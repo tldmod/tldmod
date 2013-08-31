@@ -43,9 +43,9 @@ def save_parties(parties):
     file.write("%d %d "%(ai_behavior_object,ai_behavior_object))
     position = party[9]
     default_behavior_location = position
-    file.write("%f %f "%(default_behavior_location[0],default_behavior_location[1]))
-    file.write("%f %f "%(default_behavior_location[0],default_behavior_location[1]))
-    file.write("%f %f 0.0 "%position)
+    file.write("%s %s "%(sf(default_behavior_location[0]),sf(default_behavior_location[1])))
+    file.write("%s %s "%(sf(default_behavior_location[0]),sf(default_behavior_location[1])))
+    file.write("%s %s 0 "%(sf(position[0]),sf(position[1])))
     member_list = party[10]
     file.write("%d "%len(member_list))
     for member in member_list:
@@ -54,7 +54,7 @@ def save_parties(parties):
     bearing = 0.0
     if (len(party) > 11):
       bearing = (3.1415926 / 180.0) * party[11]
-    file.write("\n%f\n"%(bearing))
+    file.write("\n%s\n"%sf(bearing))
   file.close()
 
 def save_python_header(parties):

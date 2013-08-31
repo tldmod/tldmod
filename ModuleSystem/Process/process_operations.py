@@ -111,7 +111,13 @@ def get_identifier_value(str, tag_uses):
       if (id_no < 0):
         print "Error: Unable to find object:" + str
       else:
-        result = id_no | (tag_type << op_num_value_bits)
+        #@swy-antireveng#
+        #> The game only needs type tags for registers, local variables, global variables, strings, quick strings
+        #result = id_no | (tag_type << op_num_value_bits)
+        if(tag_type==tag_register or tag_type==tag_local_variable or tag_type==tag_variable or tag_type==tag_string or tag_type==tag_quick_string):
+          result = id_no | (tag_type << op_num_value_bits)
+        else:
+          result = id_no
     else:
       print "Error: Unrecognized tag:" +tag_str + "in object:" + str
   else:
@@ -472,7 +478,7 @@ def compile_global_vars(statement_block,variable_list, variable_uses):
 def save_simple_triggers(ofile,triggers,variable_list, variable_uses,tag_uses,quick_strings):
   ofile.write("%d\n"%len(triggers))
   for trigger in triggers:
-    ofile.write("%f "%(trigger[0]))
+    ofile.write("%s "%(sf(trigger[0])))
     save_statement_block(ofile,0,1,trigger[1]  , variable_list, variable_uses,tag_uses,quick_strings)
     ofile.write("\n")
   ofile.write("\n")
