@@ -22,7 +22,8 @@ def save_python_header():
   ofile.write("\n\n")
   ofile.close()
 
-print "Exporting info_page data..."
-save_info_pages()
-save_python_header()
+if (wb_compile_switch):
+  print "Exporting info_page data for Warband..."
+  save_info_pages()
+  save_python_header()
   

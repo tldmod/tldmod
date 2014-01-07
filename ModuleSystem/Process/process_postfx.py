@@ -1,4 +1,5 @@
 from header_common import *
+from process_common import *
 from module_info import *
 from module_postfx import *
 
@@ -23,6 +24,7 @@ def write_postfx_params(postfx_params_list):
     ofile.write("  %s %s %s %s\n"%(sf(params_list3[0]), sf(params_list3[1]), sf(params_list3[2]), sf(params_list3[3])))
   ofile.close()
 
-print "Exporting postfx_params..."
-write_postfx_params(postfx_params)
-write_python_header(postfx_params)
+if (wb_compile_switch):
+  print "Exporting postfx_params for Warband..."
+  write_postfx_params(postfx_params)
+  write_python_header(postfx_params)
