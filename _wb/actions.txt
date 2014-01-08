@@ -938,60 +938,60 @@
   1 anim_human 0 1 0 0 0 0 0 0.0 
  unequip_bayonet 0 184549446  1
   1 anim_human 0 1 0 0 0 0 0 0.0 
- ready_carrystone 524288 16777216  1
+ ready_carrystone 524288 50331743  1
   0.35 anim_human 26206 26210 536870919 0 0 0 0 0.0 
- sit_on_throne 0 16777216  3
+ sit_on_throne 0 100728927  3
   5.5 sit 100 100 1342177280 0 0 0 0  0.25 
   5.5 sit 200 208 1342177280 0 0 0 0  0.25 
   5.5 sit 300 308 1342177280 0 0 0 0  0.25 
- bow_to_lord_go_down 0 16777216  1
+ bow_to_lord_go_down 0 50331743  1
   2 bow_to_lord 4 18 4 0 0 0 0  0 
- bow_to_lord_get_up 0 16777216  1
+ bow_to_lord_get_up 0 50331743  1
   0.4 bow_to_lord 4 0 7 0 0 0 0  0 
- bow_to_lord_stay_down 0 16777216  1
+ bow_to_lord_stay_down 0 50331743  1
   2.1 bow_to_lord 8 28 21 0 0 0 0  0 
  ready_and_release_slashright_troll 132096 572522497  1
   0.125 troll_slash_right 34 43 6 0 0 0 0 0.0 
  ready_and_release_slashleft_troll 263168 572522497  1
   0.125 troll_slash_left 33 43 5 0 0 0 0 0.0 
- ready_and_release_overswing_troll 533504 572522497  1
+ ready_and_release_overswing_troll 529408 572522497  1
   0.175 troll_overswing 33 49 5 0 0 0 0 0.0 
  ready_slashright_troll 132096 572522497  1
   0.6 troll_slash_right 1 28 44 0 0 0 0 0.0 
  ready_slashleft_troll 263168 572522497  1
   0.6 troll_slash_left 1 28 44 0 0 0 0 0.0 
- ready_overswing_troll 533504 572522497  1
+ ready_overswing_troll 529408 572522497  1
   0.6 troll_overswing 1 28 44 0 0 0 0 0.0 
- walk_forward_troll 256 16777216  1
+ walk_forward_troll 256 50331743  1
   5 man_cheer 650 1597 805306628 65535 0 0 0  0 
- walk_forward_onehanded_slow 256 16777216  1
+ walk_forward_onehanded_slow 256 50331743  1
   1.4 man_walk 0 32 805306628 58726 0 0 0  0 
- strike_fly_back_near_rise 16642 16777216  1
+ strike_fly_back_near_rise 16642 50331743  1
   1.7 ani_fall_flyback1_near_rise 0 43 515 102 0.19 -1.6 0  0.5 
- strike_fly_back_rise 17410 16777216  6
+ strike_fly_back_rise 17410 50331743  6
   2.09 ani_fall_flyback1_med_rise 0 53 515 102 0.19 -2.7 0  0.5 
   2.214 ani_fall_flyback1_far_rise 0 56 515 102 0.19 -4.4 0  0.5 
   2.1 ani_fall_flyback2_med_rise 0 49 515 102 0.933 -2.454 0  0.5 
   2.1 ani_fall_flyback2_far_rise 0 49 515 102 0.933 -3.8 0  0.5 
   2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
   2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
- strike_fly_back_rise_from_left 17410 16777216  6
+ strike_fly_back_rise_from_left 17410 50331743  6
   2.09 ani_fall_flyback1_med_rise_from_left 0 53 515 102 -0.19 -2.7 0  0.5 
   2.214 ani_fall_flyback1_far_rise_from_left 0 56 515 102 -0.19 -4.4 0  0.5 
   2.1 ani_fall_flyback2_med_rise_from_left 0 49 515 102 -0.933 -2.454 0  0.5 
   2.1 ani_fall_flyback2_far_rise_from_left 0 49 515 102 -0.933 -3.8 0  0.5 
   2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
   2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
- strike_fly_front_rise 17410 16777216  1
+ strike_fly_front_rise 17410 50331743  1
   1.12 ani_fall_flyfront_rise 0 77 515 102 -0.36 2.93 0  1 
- strike_fly_back_near 17410 16777216  1
+ strike_fly_back_near 17410 50331743  1
   0.59 ani_fall_flyback1_near_rise 0 15 515 102 0.19 -1.6 0  0.5 
- strike_fly_back 17410 16777216  2
+ strike_fly_back 17410 50331743  2
   0.59 ani_fall_flyback1_med_rise 0 15 515 102 0.19 -2.7 0  0.5 
   0.62 ani_fall_flyback1_far_rise 0 15 515 102 0.19 -4.4 0  0.5 
- strike_fly_front 17410 16777216  1
+ strike_fly_front 17410 50331743  1
   0.59 ani_fall_flyfront_rise 0 40 515 102 -0.36 2.93 0  0.5 
- nazgul_noooo_long 1024 16777216  11
+ nazgul_noooo_long 1024 50331743  11
   3.5 oh_no 8 38 3 0 0 0 0 0.0 
   3.6 oh_no 12 43 3 0 0 0 0 0.0 
   3.2 oh_no 16 44 4 0 0 0 0 0.0 
@@ -1003,7 +1003,7 @@
   3.2 oh_no 40 67 3 0 0 0 0 0.0 
   3.4 oh_no 44 76 3 0 0 0 0 0.0 
   3.9 oh_no 48 79 3 0 0 0 0 0.0 
- nazgul_noooo_short 1024 16777216  11
+ nazgul_noooo_short 1024 50331743  11
   1.5 oh_no 8 18 3 0 0 0 0 0.0 
   1.6 oh_no 12 33 3 0 0 0 0 0.0 
   2.2 oh_no 16 34 4 0 0 0 0 0.0 
@@ -1015,70 +1015,70 @@
   2.2 oh_no 40 57 3 0 0 0 0 0.0 
   2.3 oh_no 44 66 3 0 0 0 0 0.0 
   1.9 oh_no 48 69 3 0 0 0 0 0.0 
- nazgul_noooo_mounted_long 1024 16777216  3
+ nazgul_noooo_mounted_long 1024 50331743  3
   4 oh_no_mounted 0 83 3 0 0 0 0 0.0 
   4 oh_no_mounted 42 125 3 0 0 0 0 0.0 
   4 oh_no_mounted 84 167 3 0 0 0 0 0.0 
- nazgul_noooo_mounted_short 1024 16777216  4
+ nazgul_noooo_mounted_short 1024 50331743  4
   2 oh_no_mounted 0 41 3 0 0 0 0 0.0 
   2 oh_no_mounted 42 83 3 0 0 0 0 0.0 
   2 oh_no_mounted 84 125 3 0 0 0 0 0.0 
   2 oh_no_mounted 126 167 3 0 0 0 0 0.0 
- hide_inside_warg 257 16777216  1
+ hide_inside_warg 257 83951616  1
   1 hide_inside_warg 0 31 268435456 0 0 0 0 0.0 
- ride_warg_jump 257 16777216  1
+ ride_warg_jump 257 50331743  1
   1.7 hide_inside_warg 0 20 268435461 2829396006 0 0 0  0.9 
- cheer_player 8704 16777216  3
+ cheer_player 4608 50331743  3
   6 man_cheer 12 185 6 0 0 0 0 0.0 
   6 man_cheer 217 397 6 0 0 0 0 0.0 
   6 man_cheer 338 518 6 0 0 0 0 0.0 
- cheer_player_ride 8704 16777216  3
+ cheer_player_ride 4608 50331743  3
   6 ani_cheer_ride 12 185 6 0 0 0 0 0.0 
   6 ani_cheer_ride 217 397 6 0 0 0 0 0.0 
   6 ani_cheer_ride 338 518 6 0 0 0 0 0.0 
- cancel_ani_stand 0 16777216  1
+ cancel_ani_stand 0 50331743  1
   0.25 anim_human 50 50 16 0 0 0 0  0 
- cancel_ani_ride 0 16777216  1
+ cancel_ani_ride 0 50331743  1
   0.25 stand_onhorse 0 0 16 0 0 0 0  0 
- greet_elf 0 16777216  1
+ greet_elf 0 50331743  1
   1.3 anim_greet_elf 0 25 15 0 0 0 0 0.0 
- greet_elf_mounted 0 16777216  1
+ greet_elf_mounted 0 50331743  1
   1.3 anim_greet_elf_mounted 0 25 15 0 0 0 0 0.0 
- greet_human 0 16777216  1
+ greet_human 0 50331743  1
   1.8 anim_greet_human 0 29 11 0 0 0 0 0.0 
- greet_human_mounted 0 16777216  1
+ greet_human_mounted 0 50331743  1
   1.8 anim_greet_human_mounted 0 29 11 0 0 0 0 0.0 
- greet_orc 0 16777216  1
+ greet_orc 0 50331743  1
   2 anim_greet_orc 0 37 13 0 0 0 0 0.0 
- greet_orc_mounted 0 16777216  1
+ greet_orc_mounted 0 50331743  1
   2 anim_greet_orc_mounted 0 37 13 0 0 0 0 0.0 
- greet_simple 0 16777216  1
+ greet_simple 0 50331743  1
   1.4 anim_greet_simple 0 39 13 0 0 0 0 0.0 
- greet_simple_mounted 0 16777216  1
+ greet_simple_mounted 0 50331743  1
   1.4 anim_greet_simple_mounted 0 39 13 0 0 0 0 0.0 
- greet_goaway 0 16777216  1
+ greet_goaway 0 50331743  1
   1.8 anim_greet_goaway 0 33 13 0 0 0 0 0.0 
- greet_goaway_mounted 0 16777216  1
+ greet_goaway_mounted 0 50331743  1
   1.8 anim_greet_goaway_mounted 0 33 13 0 0 0 0 0.0 
- troll_or_ent_bend_continue 1024 16777216  1
+ troll_or_ent_bend_continue 1024 83886175  1
   6 troll_or_ent_bend 0 79 1342177280 0 0 0 0  0 
- troll_or_ent_bend_rise 0 16777216  1
+ troll_or_ent_bend_rise 0 50331743  1
   2 troll_or_end_getUp 0 15 13 0 0 0 0 0.0 
- lean_from_camera 0 16777216  1
+ lean_from_camera 0 50331743  1
   12 leaningBack 0 94 1342177283 0 0 0 0  0 
- lean_from_camera_mounted 0 16777216  1
+ lean_from_camera_mounted 0 50331743  1
   12 leaning_back_mounted 0 94 1342177283 0 0 0 0  0 
- sit_on_ground 0 16777216  1
+ sit_on_ground 0 50331743  1
   20 sitting 0 199 1342177280 0 0 0 0  0 
- pause 1024 16777216  1
+ pause 1024 50331743  1
   1 anim_human 50 52 1 0 0 0 0  0.25 
- pause_mounted 1024 16777216  1
+ pause_mounted 1024 50331743  1
   1 stand_onhorse 0 30 1 0 0 0 0  0.25 
- stay_tied 1024 16777216  3
+ stay_tied 1024 117440607  3
   6.2 tied_stand_walk 24 54 268435467 0 0 0 0 0.0 
   6.2 tied_stand_walk 14 44 268435467 0 0 0 0 0.0 
   6.2 tied_stand_walk 4 34 268435467 0 0 0 0 0.0 
- walk_tied 17408 16777216  7
+ walk_tied 17408 50331743  7
   5.6 tied_stand_walk 55 152 536871172 58726 0 3.4 0  0 
   5.6 tied_stand_walk 50 148 536871172 58726 0 3.4 0  0 
   5.6 tied_stand_walk 45 142 536871172 58726 0 3.4 0  0 
@@ -1086,7 +1086,7 @@
   5.6 tied_stand_walk 35 138 536871172 58726 0 3.4 0  0 
   5.6 tied_stand_walk 30 138 536871172 58726 0 3.4 0  0 
   5.6 tied_stand_walk 45 138 536871172 58726 0 3.4 0  0 
- fall_tied 1026 16777216  1
+ fall_tied 1026 50331743  1
   2.3 tied_fall_rise 0 91 514 102 0 0 0  0.5 
  unused_human_anim_64 0 0  1
   1 anim_human 0 1 0 0 0 0 0 0.0 
@@ -1228,18 +1228,18 @@
   4.5 anim_horse 820 908 1342177280 0 0 0 0  0 
  warg_jump 16640 16777216  1
   1.7 warg_jump 0 20 805306373 2829396006 0 0 0  0.9 
- horse_cancel_ani 0 16777216  1
+ horse_cancel_ani 0 50331743  1
   0.25 anim_horse 600 601 1073741830 0 0 0 0  0 
  warg_leapattack 16640 16777216  1
   1 wargLeapAttack 0 20 536870917 2829396006 0 0 0  0.9 
- unused_horse_anim_7 0 0  1
-  1 anim_horse 0 1 0 0 0 0 0 0.0 
- unused_horse_anim_8 0 0  1
-  1 anim_horse 0 1 0 0 0 0 0 0.0 
- unused_horse_anim_9 0 0  1
-  1 anim_horse 0 1 0 0 0 0 0 0.0 
- unused_horse_anim_10 0 0  1
-  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ bear_slap_right 1026 16777216  1
+  1 bear_slap_right 1 45 2 0 0 0 0 0.0 
+ bear_uppercut 1026 16777216  1
+  1 bear_uppercut 44 93 2 0 0 0 0 0.0 
+ spider_attack 1026 16777216  1
+  1 spider_attack 1 33 2 0 0 0 0 0.0 
+ wolf_snap 1026 16777216  1
+  1 wolf_snap 1 55 2 0 0 0 0 0.0 
  unused_horse_anim_11 0 0  1
   1 anim_horse 0 1 0 0 0 0 0 0.0 
  unused_horse_anim_12 0 0  1
