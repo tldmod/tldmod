@@ -1815,35 +1815,35 @@ animations = [
  ## TLD ANIMATIONS! (mtarini)
 
  
- ["ready_carrystone", acf_overswing, amf_client_prediction,
+ ["ready_carrystone", acf_overswing, amf_client_prediction|amf_priority_die|amf_play,
    [ready_durn, "anim_human", combat+6206, combat+6210, blend_in_ready|arf_use_walk_progress|blend_in_walk], 
  ],
  
- # FOR TRONES  ROOMS(mtarini)
- # ---------------------
+ # FOR THRONE ROOMS (mtarini)
+ # --------------------------
  
- # used by lords 
- ["sit_on_throne", 0, amf_client_prediction,
+ # Used by lords
+ ["sit_on_throne", 0, amf_play|amf_priority_die|amf_start_instantly|amf_keep,
    [5.5, "sit", 100, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 200, 208, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [5.5, "sit", 300, 308, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
  ],
  
- # bow to lord
- ["bow_to_lord_go_down", 0, amf_client_prediction,
+ # Bow to lord
+ ["bow_to_lord_go_down", 0, amf_client_prediction|amf_priority_die|amf_play,
    [2.0, "bow_to_lord", 4, 18, arf_blend_in_3, 0, (0, 0, 0), 0],
  ], 
- ["bow_to_lord_get_up", 0, amf_client_prediction,
+ ["bow_to_lord_get_up", 0, amf_client_prediction|amf_priority_die|amf_play,
    [0.4, "bow_to_lord", 4, 0, arf_blend_in_6, 0, (0, 0, 0), 0],
  ],
- ["bow_to_lord_stay_down", 0, amf_client_prediction,
+ ["bow_to_lord_stay_down", 0, amf_client_prediction|amf_priority_die|amf_play,
    [2.1, "bow_to_lord", 8, 28, #arf_use_stand_progress|arf_cyclic|
       arf_blend_in_20, 0, (0, 0, 0), 0],
  ],
  
   
- # TROLL STUFF  (mtarini)
- # ------------------
+ # TROLL STUFF (mtarini)
+ # ---------------------
  
  # TROLL ATTACK, in one go (ready and release)  
  ["ready_and_release_slashright_troll", acf_right_cut|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
@@ -1852,7 +1852,7 @@ animations = [
  ["ready_and_release_slashleft_troll", acf_left_cut|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
    [0.6*(43-28)/72, "troll_slash_left", 33, 43, 5], 
  ], 
- ["ready_and_release_overswing_troll", acf_overswing|acf_rotate_body|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
+ ["ready_and_release_overswing_troll", acf_overswing|acf_parallels_for_look_slope|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
    [0.6*(49-28)/72, "troll_overswing", 33, 49, 5], 
  ], 
  # TROLL ATTACK, in two times -ready only!!!
@@ -1862,23 +1862,23 @@ animations = [
  ["ready_slashleft_troll", acf_left_cut|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
    [0.6, "troll_slash_left", 1, 28, 44], 
  ], 
- ["ready_overswing_troll", acf_overswing|acf_rotate_body|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
+ ["ready_overswing_troll", acf_overswing|acf_parallels_for_look_slope|acf_enforce_all, amf_priority_continue|amf_use_weapon_speed|amf_play|amf_client_owner_prediction,
    [0.6, "troll_overswing", 1, 28, 44], 
  ], 
  # TROLL WALK, can't get it to be used -- UNUSED!!! just a failed test
- ["walk_forward_troll", acf_enforce_lowerbody, amf_client_prediction,
+ ["walk_forward_troll", acf_enforce_lowerbody, amf_client_prediction|amf_priority_die|amf_play,
 #   [1.0, "anim_human", 6000, 6020, arf_walk,pack2f(0.4,0.9)],
    [5.0, "man_cheer", 650, 1597, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(2.0,4.5), (0, 0, 0), 0.0],
  ], #7
- ["walk_forward_onehanded_slow", acf_enforce_lowerbody, amf_client_prediction,
+ ["walk_forward_onehanded_slow", acf_enforce_lowerbody, amf_client_prediction|amf_priority_die|amf_play,
 #   [1.0, "anim_human", 6000, 6020, arf_walk,pack2f(0.4,0.9)],
    [1.4, "man_walk", 0, 32, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.0],
  ],
  # flyback animations (for troll victims) then rise  
- ["strike_fly_back_near_rise", acf_enforce_lowerbody|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_back_near_rise", acf_enforce_lowerbody|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [1.7, "ani_fall_flyback1_near_rise", 0, 43, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-1.6,0), 0.5],
  ],
- ["strike_fly_back_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_back_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [2.09, "ani_fall_flyback1_med_rise", 0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -2.7  ,0), 0.5],
    [2.214,"ani_fall_flyback1_far_rise", 0, 56, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -4.4  ,0), 0.5],
    [2.1,  "ani_fall_flyback2_med_rise", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.933, -2.454,0), 0.5],
@@ -1887,7 +1887,7 @@ animations = [
    [2.2,  "ani_fall_flyback3_far_rise", 0, 64, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.0345,-4.81 ,0), 0.5],
  ],
  # the same, but when hit from left...
-  ["strike_fly_back_rise_from_left", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+  ["strike_fly_back_rise_from_left", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [2.09, "ani_fall_flyback1_med_rise_from_left", 0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.19, -2.7,0), 0.5],
    [2.214,"ani_fall_flyback1_far_rise_from_left", 0, 56, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.19, -4.4,0), 0.5],
    [2.1,  "ani_fall_flyback2_med_rise_from_left", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.933, -2.454,0), 0.5],
@@ -1896,24 +1896,24 @@ animations = [
    [2.2,  "ani_fall_flyback3_far_rise", 0, 64, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.0345, -4.81,0), 0.5],
  ],
  # hit from back: fly forward
- ["strike_fly_front_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_front_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [1.12, "ani_fall_flyfront_rise", 0, 77, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.36,2.93,0), 1.0],
  ],
  # flyback animations (troll victims),  but don't rise (UNUSED -- should substitute death animations but cannot do that)
- ["strike_fly_back_near", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_back_near", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [0.59, "ani_fall_flyback1_near_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-1.6,0), 0.5],
  ],
- ["strike_fly_back", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_back", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [0.59, "ani_fall_flyback1_med_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-2.7,0), 0.5],
    [0.62, "ani_fall_flyback1_far_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-4.4,0), 0.5],
  ],
- ["strike_fly_front", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction,
+ ["strike_fly_front", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_client_prediction|amf_priority_die|amf_play,
    [0.59, "ani_fall_flyfront_rise", 0, 40, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.36,2.93,0), 0.5],
  ],
  
-  # NAZUGL REACTIONS (mtarini) 
+  # NAZGUL REACTIONS (mtarini) 
  # ------------------
- ["nazgul_noooo_long", acf_enforce_all,  amf_client_prediction,
+ ["nazgul_noooo_long", acf_enforce_all,  amf_client_prediction|amf_priority_die|amf_play,
    [3.5, "oh_no", 8,  8+30, arf_blend_in_2], 
    [3.6, "oh_no",12, 12+31, arf_blend_in_2], 
    [3.2, "oh_no",16, 16+28, arf_blend_in_3], 
@@ -1926,7 +1926,7 @@ animations = [
    [3.4, "oh_no",44, 44+32, arf_blend_in_2], 
    [3.9, "oh_no",48, 48+31, arf_blend_in_2], 
  ],
- ["nazgul_noooo_short", acf_enforce_all,  amf_client_prediction,
+ ["nazgul_noooo_short", acf_enforce_all,  amf_client_prediction|amf_priority_die|amf_play,
    [1.5, "oh_no", 8,  8+10, arf_blend_in_2], 
    [1.6, "oh_no",12, 12+21, arf_blend_in_2], 
    [2.2, "oh_no",16, 16+18, arf_blend_in_3], 
@@ -1940,22 +1940,22 @@ animations = [
    [1.9, "oh_no",48, 48+21, arf_blend_in_2], 
  ],
  # nazgul reaction when mounted
- ["nazgul_noooo_mounted_long", acf_enforce_all,  amf_client_prediction,
+ ["nazgul_noooo_mounted_long", acf_enforce_all,  amf_client_prediction|amf_priority_die|amf_play,
    [4.0, "oh_no_mounted", 0,   0+83, arf_blend_in_2], 
    [4.0, "oh_no_mounted", 42, 42+83, arf_blend_in_2], 
    [4.0, "oh_no_mounted", 84, 84+83, arf_blend_in_2], 
  ],
- ["nazgul_noooo_mounted_short", acf_enforce_all,  amf_client_prediction,
+ ["nazgul_noooo_mounted_short", acf_enforce_all,  amf_client_prediction|amf_priority_die|amf_play,
    [2.0, "oh_no_mounted", 0,   0+41, arf_blend_in_2], 
    [2.0, "oh_no_mounted", 42, 42+41, arf_blend_in_2], 
    [2.0, "oh_no_mounted", 84, 84+41, arf_blend_in_2], 
    [2.0, "oh_no_mounted",126,126+41, arf_blend_in_2], 
  ],     
  # used to make "ghost" rider hide inside warg
- ["hide_inside_warg", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction,
+ ["hide_inside_warg", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction|amf_start_instantly|amf_keep,
    [1.0, "hide_inside_warg", 0, 31, arf_cyclic],
  ],
- ["ride_warg_jump", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction,
+ ["ride_warg_jump", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction|amf_priority_die|amf_play,
    [1.7, "hide_inside_warg", 0, 20, arf_blend_in_4|arf_cyclic| acf_synch_with_horse,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9],
    #[1.7, "hide_inside_warg", 0, 20, arf_blend_in_4,pack2f(0.4, 0.0), ( 0.0, 4.2,0), 0],
  ],
@@ -1966,7 +1966,7 @@ animations = [
 
    
   # on foot ( shorter versions than for ai)
- ["cheer_player", acf_rotate_body|acf_enforce_rightside, amf_client_prediction,
+ ["cheer_player", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_die|amf_play,
    [6.0, "man_cheer",  12,  185, arf_blend_in_5],
    [6.0, "man_cheer", 217, 397, arf_blend_in_5],
    [6.0, "man_cheer", 338, 518, arf_blend_in_5],
@@ -1974,7 +1974,7 @@ animations = [
  ],
 
 	# mounted version 
-  ["cheer_player_ride", acf_rotate_body|acf_enforce_rightside, amf_client_prediction,
+  ["cheer_player_ride", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_die|amf_play,
    [6.0, "ani_cheer_ride",  12, 185, arf_blend_in_5],
    [6.0, "ani_cheer_ride", 217, 397, arf_blend_in_5],
    [6.0, "ani_cheer_ride", 338, 518, arf_blend_in_5],
@@ -1982,57 +1982,57 @@ animations = [
  ],
  
  # cancel ani... using thse two to cancel ongoin animations...
- ["cancel_ani_stand", 0, amf_client_prediction,
+ ["cancel_ani_stand", 0, amf_client_prediction|amf_priority_die|amf_play,
    [0.25, "anim_human", 50, 50, arf_blend_in_15, 0, (0, 0, 0), 0],
  ],
  
- ["cancel_ani_ride", 0, amf_client_prediction,
+ ["cancel_ani_ride", 0, amf_client_prediction|amf_priority_die|amf_play,
    [0.25, "stand_onhorse", 0, 0, arf_blend_in_15, 0, (0, 0, 0), 0],
  ],
  
  
 
  # greetings (mtarini)
- ["greet_elf",           0, amf_client_prediction, [1.3, "anim_greet_elf",           0, 25, arf_blend_in_14]],
- ["greet_elf_mounted",   0, amf_client_prediction, [1.3, "anim_greet_elf_mounted",   0, 25, arf_blend_in_14]],
- ["greet_human",         0, amf_client_prediction, [1.8, "anim_greet_human",         0, 29, arf_blend_in_10]],
- ["greet_human_mounted", 0, amf_client_prediction, [1.8, "anim_greet_human_mounted", 0, 29, arf_blend_in_10]],
- ["greet_orc",           0, amf_client_prediction, [2.0, "anim_greet_orc",           0, 37, arf_blend_in_12]],
- ["greet_orc_mounted",   0, amf_client_prediction, [2.0, "anim_greet_orc_mounted",   0, 37, arf_blend_in_12]],
- ["greet_simple",        0, amf_client_prediction, [1.4, "anim_greet_simple",        0, 39, arf_blend_in_12]],
- ["greet_simple_mounted",0, amf_client_prediction, [1.4, "anim_greet_simple_mounted",0, 39, arf_blend_in_12]],
- ["greet_goaway",        0, amf_client_prediction, [1.8, "anim_greet_goaway",        0, 33, arf_blend_in_12]],
- ["greet_goaway_mounted",0, amf_client_prediction, [1.8, "anim_greet_goaway_mounted",0, 33, arf_blend_in_12]],
+ ["greet_elf",           0, amf_client_prediction|amf_priority_die|amf_play, [1.3, "anim_greet_elf",           0, 25, arf_blend_in_14]],
+ ["greet_elf_mounted",   0, amf_client_prediction|amf_priority_die|amf_play, [1.3, "anim_greet_elf_mounted",   0, 25, arf_blend_in_14]],
+ ["greet_human",         0, amf_client_prediction|amf_priority_die|amf_play, [1.8, "anim_greet_human",         0, 29, arf_blend_in_10]],
+ ["greet_human_mounted", 0, amf_client_prediction|amf_priority_die|amf_play, [1.8, "anim_greet_human_mounted", 0, 29, arf_blend_in_10]],
+ ["greet_orc",           0, amf_client_prediction|amf_priority_die|amf_play, [2.0, "anim_greet_orc",           0, 37, arf_blend_in_12]],
+ ["greet_orc_mounted",   0, amf_client_prediction|amf_priority_die|amf_play, [2.0, "anim_greet_orc_mounted",   0, 37, arf_blend_in_12]],
+ ["greet_simple",        0, amf_client_prediction|amf_priority_die|amf_play, [1.4, "anim_greet_simple",        0, 39, arf_blend_in_12]],
+ ["greet_simple_mounted",0, amf_client_prediction|amf_priority_die|amf_play, [1.4, "anim_greet_simple_mounted",0, 39, arf_blend_in_12]],
+ ["greet_goaway",        0, amf_client_prediction|amf_priority_die|amf_play, [1.8, "anim_greet_goaway",        0, 33, arf_blend_in_12]],
+ ["greet_goaway_mounted",0, amf_client_prediction|amf_priority_die|amf_play, [1.8, "anim_greet_goaway_mounted",0, 33, arf_blend_in_12]],
 
 
 
- ["troll_or_ent_bend_continue", acf_enforce_all, amf_client_prediction, [6.0, "troll_or_ent_bend", 0, 79, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
- ["troll_or_ent_bend_rise", 0, amf_client_prediction, [2.0, "troll_or_end_getUp", 0, 15, arf_blend_in_12]],
- ["lean_from_camera"        , 0, amf_client_prediction,[12, "leaningBack", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
- ["lean_from_camera_mounted", 0, amf_client_prediction,[12, "leaning_back_mounted", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["troll_or_ent_bend_continue", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_keep, [6.0, "troll_or_ent_bend", 0, 79, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["troll_or_ent_bend_rise", 0, amf_client_prediction|amf_priority_die|amf_play, [2.0, "troll_or_end_getUp", 0, 15, arf_blend_in_12]],
+ ["lean_from_camera"        , 0, amf_client_prediction|amf_priority_die|amf_play,[12, "leaningBack", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["lean_from_camera_mounted", 0, amf_client_prediction|amf_priority_die|amf_play,[12, "leaning_back_mounted", 0, 94, arf_blend_in_2|arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
 
- ["sit_on_ground", 0, amf_client_prediction, [20, "sitting", 0, 199, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
+ ["sit_on_ground", 0, amf_client_prediction|amf_priority_die|amf_play, [20, "sitting", 0, 199, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0]],
  
  # next is unused_human_anim_46
  
- ["pause",acf_enforce_all, amf_client_prediction,
+ ["pause",acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play,
 #   [3.0, "myanim", 0, 50, arf_cyclic|arf_loop_pos_0_25],
    [1.0, "anim_human", 50, 52, arf_blend_in_0 , 0, (0, 0, 0), 0.25],
  ],
- ["pause_mounted", acf_enforce_all, amf_client_prediction,
+ ["pause_mounted", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play,
    [1.0, "stand_onhorse", 0, 30, arf_blend_in_0, 0, (0, 0, 0), 0.25],
  ],
 
 #TIED PRISONERS (mtarini) 
  # ----------------------
  # tied prisoners  (mtarini)
- ["stay_tied", acf_enforce_all, amf_client_prediction,
+ ["stay_tied", acf_enforce_all, amf_client_prediction|amf_keep|amf_priority_die|amf_play,
    [6.2, "tied_stand_walk", 24, 54, arf_blend_in_10|arf_cyclic], 
    [6.2, "tied_stand_walk", 14, 44, arf_blend_in_10|arf_cyclic], 
    [6.2, "tied_stand_walk",  4, 34, arf_blend_in_10|arf_cyclic], 
  ],
 
- ["walk_tied", acf_enforce_all|acf_displace_position, amf_client_prediction,
+ ["walk_tied", acf_enforce_all|acf_displace_position, amf_client_prediction|amf_priority_die|amf_play,
 #   [stand a arando time, then walk (arrive at the same instant)
    [5.6, "tied_stand_walk", 55,152, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
    [5.6, "tied_stand_walk", 50,148, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
@@ -2043,7 +2043,7 @@ animations = [
    [5.6, "tied_stand_walk", 45,138, arf_use_walk_progress|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 3.4, 0), 0.0],
  ],
  
- ["fall_tied", acf_enforce_all|acf_align_with_ground,  amf_client_prediction,
+ ["fall_tied", acf_enforce_all|acf_align_with_ground,  amf_client_prediction|amf_priority_die|amf_play,
    [2.3, "tied_fall_rise", 0, 91, arf_blend_in_1|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],
  ],
 
@@ -2188,7 +2188,7 @@ animations = [
  ],
  
   # to cancel ani...(mtarini)
- ["horse_cancel_ani", 0, amf_client_prediction,
+ ["horse_cancel_ani", 0, amf_client_prediction|amf_priority_die|amf_play,
    [0.25, "anim_horse", 600, 601, arf_use_stand_progress|arf_blend_in_5, 0, (0, 0, 0), 0.0],
   ],
 
