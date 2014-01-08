@@ -1,0 +1,1422 @@
+670
+ stand 0 16777216  4
+  3 anim_human 50 52 1342177280 0 0 0 0  0.25 
+  3 anim_human 60 62 1342177280 0 0 0 0  0.75 
+  3 anim_human 70 72 1342177280 0 0 0 0  0.25 
+  3 anim_human 80 82 1358954496 0 0 0 0  0.5 
+ stand_man 0 16777216  1
+  11 stand_man 0 315 1342177280 0 0 0 0  0.25 
+ stand_player_first_person 0 16777216  2
+  3.5 anim_human 90 100 1342177280 0 0 0 0  0.25 
+  3.5 anim_human 110 120 1342177280 0 0 0 0  0.25 
+ jump 256 2197815298  1
+  1 jump 22 46 2 0 0 0 0 0.0 
+ jump_loop 256 50331650  1
+  0.5 jump_loop 0 14 268435460 0 0 0 0 0.0 
+ jump_end 256 50331681  1
+  0.3 jump 48 55 3 0 0 0 0 0.0 
+ jump_end_hard 256 50331681  1
+  0.6 jump_end_hard 36 54 2 0 0 0 0 0.0 
+ stand_unarmed 0 16777216  1
+  8 noweapon_cstance 0 100 1342177280 0 0 0 0  0.25 
+ stand_single 0 16777216  1
+  9 sword_loop01 0 200 1342177280 0 0 0 0  0.25 
+ stand_greatsword 0 16777216  1
+  6 greatsword_cstance 0 91 1342177280 0 0 0 0  0.25 
+ stand_staff 0 16777216  1
+  2 staff_cstance 0 60 1342177280 0 0 0 0  0 
+ stand_crossbow 0 16777216  1
+  2 staff_cstance 0 60 1342177280 0 0 0 0  0 
+ turn_right 256 50331648  1
+  0.95 stand_man 0 30 1342177280 0 0 0 0  0.25 
+ turn_left 256 50331648  1
+  0.95 stand_man 0 30 1342177280 0 0 0 0  0.25 
+ turn_right_single 256 50331648  1
+  0.95 turn_man_onehanded 0 23 268435716 58726 0 0 0  0 
+ turn_left_single 256 50331648  1
+  0.95 turn_man_onehanded 30 53 268435716 58726 0 0 0  0 
+ turn_right_staff 256 50331648  1
+  0.95 turn_man_staff 0 20 268435716 58726 0 0 0  0 
+ turn_left_staff 256 50331648  1
+  0.95 turn_man_staff 30 50 268435716 58726 0 0 0  0 
+ turn_right_greatsword 256 50331648  1
+  0.95 turn_man_greatsword 0 20 268435716 58726 0 0 0  0 
+ turn_left_greatsword 256 50331648  1
+  0.95 turn_man_greatsword 30 50 268435716 58726 0 0 0  0 
+ prepare_kick_0 256 2197815329  1
+  0.05 kick_rightleg 10 12 4 0 0 0 0 0.0 
+ prepare_kick_1 256 2197815329  1
+  0.05 kick_rightleg 12 12 4 0 0 0 0 0.0 
+ prepare_kick_2 256 2197815329  1
+  0.05 kick_rightleg 12 12 4 0 0 0 0 0.0 
+ prepare_kick_3 256 2197815329  1
+  0.05 kick_rightleg 12 12 4 0 0 0 0 0.0 
+ kick_right_leg 256 50331681  1
+  0.7 kick_rightleg 12 33 2 0 0 0 0 0.0 
+ kick_left_leg 256 50331681  1
+  0.7 kick_rightleg 12 33 2 0 0 0 0 0.0 
+ run_forward 256 17825792  1
+  0.8 run_man_forward 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_onehanded 256 17825792  1
+  0.8 run_man_forward_onehanded 0 24 805306624 58726 0 0 0  0.4 
+ run_forward_staff 256 17825792  1
+  0.8 run_forward_staff 0 24 805306624 58726 0 0 0  0.4 
+ run_forward_greatsword 256 17825792  1
+  0.8 run_forward_greatsword 0 24 805306624 58726 0 0 0  0.4 
+ run_forward_hips_right 256 17825792  1
+  0.8 run_forward_hips_right 0 22 805306624 58726 0 0 0  0.4 
+ run_forward_hips_left 256 17825792  1
+  0.8 run_forward_hips_left 0 22 805306624 58726 0 0 0  0.4 
+ run_forward_right 256 17825792  1
+  0.8 run_man_forward_right 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_right_onehanded 256 17825792  1
+  0.8 run_man_forward_right_onehanded 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_right_staff 256 17825792  1
+  0.8 run_man_forward_right_stuff 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_right_greatsword 256 17825792  1
+  0.8 run_man_forward_right_greatsword 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_right_hips_right 256 17825792  1
+  0.8 run_forward_right_hips_right 0 22 805306628 58726 0 0 0  0.4 
+ run_forward_right_hips_left 256 17825792  1
+  0.8 run_forward_right_hips_left 0 19 805306628 58726 0 0 0  0.4 
+ run_forward_left 256 17825792  1
+  0.8 run_man_forward_left 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_left_onehanded 256 17825792  1
+  0.8 run_man_forward_left_onehanded 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_left_staff 256 17825792  1
+  0.8 run_man_forward_left_stuff 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_left_greatsword 256 17825792  1
+  0.8 run_man_forward_left_greatsword 0 24 805306628 58726 0 0 0  0.4 
+ run_forward_left_hips_right 256 17825792  1
+  0.6 run_forward_left_hips_right 0 19 805306628 58726 0 0 0  0.4 
+ run_forward_left_hips_left 256 17825792  1
+  0.8 run_forward_left_hips_left 0 22 805306628 58726 0 0 0  0.4 
+ run_backward 256 17825792  1
+  0.7 run_backward 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_onehanded 256 17825792  1
+  0.7 run_backward 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_staff 256 17825792  1
+  0.7 run_backward_staff 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_greatsword 256 17825792  1
+  0.7 run_backward_twohanded 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_hips_right 256 17825792  1
+  0.7 run_backward_hips_right 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_hips_left 256 17825792  1
+  0.7 run_backward_hips_left 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_right 256 17825792  1
+  0.7 run_backward_right 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_right_onehanded 256 17825792  1
+  0.7 run_backward_right 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_right_staff 256 17825792  1
+  0.7 run_backward_staff_right 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_right_greatsword 256 17825792  1
+  0.7 run_backward_twohanded_right 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_right_hips_right 256 17825792  1
+  0.7 run_backward_right_hips_right 0 19 2415919364 58726 0 0 0  0.4 
+ run_backward_right_hips_left 256 17825792  1
+  0.7 run_backward_right_hips_left 0 22 2415919364 58726 0 0 0  0.4 
+ run_backward_left 256 17825792  1
+  0.7 run_backward_left 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_left_onehanded 256 17825792  1
+  0.7 run_backward_left 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_left_staff 256 17825792  1
+  0.7 run_backward_staff_left 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_left_greatsword 256 17825792  1
+  0.7 run_backward_twohanded_left 0 21 2415919364 58726 0 0 0  0.4 
+ run_backward_left_hips_right 256 17825792  1
+  0.7 run_backward_left_hips_right 0 22 2415919364 58726 0 0 0  0.4 
+ run_backward_left_hips_left 256 17825792  1
+  0.7 run_backward_left_hips_left 0 19 2415919364 58726 0 0 0  0.4 
+ run_right 256 17825792  1
+  0.8 run_man_right 0 24 805306628 58726 0 0 0  0 
+ run_right_onehanded 256 17825792  1
+  0.8 run_man_right_onehanded 0 24 805306628 58726 0 0 0  0 
+ run_right_twohanded 256 17825792  1
+  0.8 run_man_right_greatsword 0 24 805306628 58726 0 0 0  0 
+ run_right_polearm 256 17825792  1
+  0.8 run_man_right_stuff 0 24 805306628 58726 0 0 0  0 
+ run_right_hips_right 256 17825792  1
+  0.8 run_man_right_stuff 0 24 805306628 58726 0 0 0  0 
+ run_right_hips_left 256 17825792  1
+  0.8 run_right_hips_left 0 24 805306628 58726 0 0 0  0 
+ run_left 256 17825792  1
+  0.8 run_man_left 0 24 805306628 58726 0 0 0  0 
+ run_left_onehanded 256 17825792  1
+  0.8 run_man_left_onehanded 0 24 805306628 58726 0 0 0  0 
+ run_left_twohanded 256 17825792  1
+  0.8 run_man_left_greatsword 0 24 805306628 58726 0 0 0  0 
+ run_left_polearm 256 17825792  1
+  0.8 run_man_left_stuff 0 24 805306628 58726 0 0 0  0 
+ run_left_hips_right 256 17825792  1
+  0.8 run_left_hips_right 0 24 805306628 58726 0 0 0  0 
+ run_left_hips_left 256 17825792  1
+  0.8 run_man_left_stuff 0 24 805306628 58726 0 0 0  0 
+ walk_forward 256 17825792  1
+  1 man_walk 0 32 805306628 58726 0 0 0  0 
+ walk_forward_onehanded 256 17825792  1
+  1 man_walk 0 32 805306628 58726 0 0 0  0 
+ walk_forward_staff 256 17825792  1
+  1 man_walk_staff 0 32 805306628 58726 0 0 0  0 
+ walk_forward_greatsword 256 17825792  1
+  1 man_walk_greatsword 0 32 805306628 58726 0 0 0  0 
+ walk_forward_hips_right 256 17825792  1
+  1 walk_forward_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_forward_hips_left 256 17825792  1
+  1 walk_forward_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_backward 256 17825792  1
+  1 walk_backward 0 30 2415919364 58726 0 0 0  0 
+ walk_backward_onehanded 256 17825792  1
+  1 man_walk 32 0 2415919364 58726 0 0 0  0 
+ walk_backward_staff 256 17825792  1
+  1 man_walk_staff 32 0 2415919364 58726 0 0 0  0 
+ walk_backward_greatsword 256 17825792  1
+  1 man_walk_greatsword 32 0 2415919364 58726 0 0 0  0 
+ walk_backward_hips_right 256 17825792  1
+  1 walk_backward_hips_right 0 30 2415919364 58726 0 0 0  0 
+ walk_backward_hips_left 256 17825792  1
+  1 walk_backward_hips_left 0 30 2415919364 58726 0 0 0  0 
+ walk_right 256 17825792  1
+  1 walk_right_normal 0 32 805306628 58726 0 0 0  0 
+ walk_right_onehanded 256 17825792  1
+  1 walk_right_onehanded_r 0 32 805306628 58726 0 0 0  0 
+ walk_right_twohanded 256 17825792  1
+  1 walk_right_greatsword_r 0 32 805306628 58726 0 0 0  0 
+ walk_right_polearm 256 17825792  1
+  1 walk_right_staff_r 0 32 805306628 58726 0 0 0  0 
+ walk_right_hips_right 256 17825792  1
+  1 walk_right_staff_r 0 32 805306628 58726 0 0 0  0 
+ walk_right_hips_left 256 17825792  1
+  1 walk_right_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_left 256 17825792  1
+  1 walk_left_normal 0 32 805306628 58726 0 0 0  0 
+ walk_left_onehanded 256 17825792  1
+  1 walk_left_onehanded_r 0 32 805306628 58726 0 0 0  0 
+ walk_left_twohanded 256 17825792  1
+  1 walk_left_greatsword 0 32 805306628 58726 0 0 0  0 
+ walk_left_polearm 256 17825792  1
+  1 walk_left_staff 0 32 805306628 58726 0 0 0  0 
+ walk_left_hips_right 256 17825792  1
+  1 walk_left_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_left_hips_left 256 17825792  1
+  1 walk_left_staff 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right 256 17825792  1
+  1 walk_crossright_normal 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right_onehanded 256 17825792  1
+  1 walk_crossright_onehanded 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right_twohanded 256 17825792  1
+  1 walk_crossright_greatsword 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right_polearm 256 17825792  1
+  1 walk_crossright_staff 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right_hips_right 256 17825792  1
+  1 walk_forward_right_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_forward_right_hips_left 256 17825792  1
+  1 walk_forward_right_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left 256 17825792  1
+  1 walk_crossleft_normal 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left_onehanded 256 17825792  1
+  1 walk_crossleft_onehanded 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left_twohanded 256 17825792  1
+  1 walk_crossleft_greatsword 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left_polearm 256 17825792  1
+  1 walk_crossleft_staff 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left_hips_right 256 17825792  1
+  1 walk_forward_left_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_forward_left_hips_left 256 17825792  1
+  1 walk_forward_left_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_backward_left 256 17825792  1
+  1 walk_crossright_normal 32 0 805306628 58726 0 0 0  0 
+ walk_backward_left_onehanded 256 17825792  1
+  1 walk_crossright_onehanded 32 0 805306628 58726 0 0 0  0 
+ walk_backward_left_twohanded 256 17825792  1
+  1 walk_crossright_greatsword 32 0 805306628 58726 0 0 0  0 
+ walk_backward_left_polearm 256 17825792  1
+  1 walk_crossright_staff 32 0 805306628 58726 0 0 0  0 
+ walk_backward_left_hips_right 256 17825792  1
+  1 walk_backward_left_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_backward_left_hips_left 256 17825792  1
+  1 walk_backward_left_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_backward_right 256 17825792  1
+  1 walk_crossleft_normal 32 0 805306628 58726 0 0 0  0 
+ walk_backward_right_onehanded 256 17825792  1
+  1 walk_crossleft_onehanded 32 0 805306628 58726 0 0 0  0 
+ walk_backward_right_twohanded 256 17825792  1
+  1 walk_crossleft_greatsword 32 0 805306628 58726 0 0 0  0 
+ walk_backward_right_polearm 256 17825792  1
+  1 walk_crossleft_staff 32 0 805306628 58726 0 0 0  0 
+ walk_backward_right_hips_right 256 17825792  1
+  1 walk_backward_right_hips_right 0 32 805306628 58726 0 0 0  0 
+ walk_backward_right_hips_left 256 17825792  1
+  1 walk_backward_right_hips_left 0 32 805306628 58726 0 0 0  0 
+ walk_forward_crouch 256 0  1
+  1.7 low_walk 0 48 536870912 58726 0 0 0 0.0 
+ stand_to_crouch 256 0  1
+  1 crouch_down 0 81 2 0 0 0 0  0.0 
+ crouch_to_stand 256 0  1
+  1 crouch_down 154 185 2 0 0 0 0  0.0 
+ ride_0 256 16777216  1
+  15 stand_onhorse 0 456 268435456 0 0 0 0 0.0 
+ ride_1 257 16777216  1
+  1 anim_human_02 0 31 268435456 0 0 0 0 0.0 
+ lancer_ride_1 257 50331650  1
+  1 lancer_ride1 0 31 268435456 0 0 0 0 0.0 
+ lancer_charge_parried 256 35651599  1
+  1 anim_human 10210 10220 33 0 0 0 0 0.0 
+ ride_2 257 16777216  1
+  0.8 anim_human_02 50 69 268435456 0 0 0 0 0.0 
+ ride_3 257 16777216  1
+  0.6 anim_human_02 100 116 268435456 0 0 0 0 0.0 
+ ride_4 257 16777216  1
+  0.5 anim_human_02 150 165 268435489 0 0 0 0 0.0 
+ lancer_ride_4 505413889 50368514  1
+  0.5 lancer_ride4 0 15 268435585 0 0 0 0 0.0 
+ lancer_ride_4_no_shield 505413889 50368514  1
+  0.5 lancer_ride4_no_shield 0 15 268435585 0 0 0 0 0.0 
+ ride_rear 33024 50331712  1
+  1.7 anim_human_02 265 297 9 0 0 0 0 0.0 
+ ride_spur 256 33554434  1
+  0.3 anim_human 10860 10865 9 0 0 0 0 0.0 
+ ride_jump 256 16777216  1
+  1.6 anim_human_02 205 222 5 0 0 0 0 0.0 
+ ride_jump_end 1024 16777216  1
+  0.1 anim_human_02 222 224 17 0 0 0 0 0.0 
+ ride_turn_right 257 16777216  1
+  1 anim_human_02 500 533 268435456 0 0 0 0 0.0 
+ ride_turn_left 257 16777216  1
+  1 anim_human_02 450 483 268435456 0 0 0 0 0.0 
+ mount_horse 1024 50331712  1
+  1.3 anim_human 11003 11045 2 0 0 0 0  0.0 
+ dismount_horse 16640 58720320  1
+  1.1 anim_human 11103 11145 2 0 -0.5 0 0  0.0 
+ lancer_ride_0 256 50331650  1
+  43 stand_onhorse_staff 0 1300 301989888 0 0 0 0 0.0 
+ equip_default 0 184549446  1
+  0.6 equip_arms 206 221 1 0 0 0 0 0.0 
+ unequip_default 0 184549446  1
+  0.3 equip_arms 207 200 1 0 0 0 0 0.0 
+ equip_sword 0 184549446  1
+  0.8 equip_sword 0 27 1 0 0 0 0 0.0 
+ unequip_sword 0 184549446  1
+  0.3 equip_sword 6 0 1 0 0 0 0 0.0 
+ equip_greatsword 0 184549446  1
+  1.2 draw_greatsword 0 35 1 0 0 0 0 0.0 
+ unequip_greatsword 0 184549446  1
+  0.3 draw_greatsword 10 0 1 0 0 0 0 0.0 
+ equip_axe_left_hip 0 184549446  1
+  0.8 draw_axe 0 16 1 0 0 0 0 0.0 
+ unequip_axe_left_hip 0 184549446  1
+  0.3 draw_axe 6 0 1 0 0 0 0 0.0 
+ equip_crossbow 0 184549446  1
+  1.2 equip_greataxe 0 20 1 0 0 0 0 0.0 
+ unequip_crossbow 0 184549446  1
+  0.3 equip_greataxe 10 0 1 0 0 0 0 0.0 
+ equip_spear 0 184549446  1
+  0.8 equip_arms 17 34 1 0 0 0 0 0.0 
+ unequip_spear 0 184549446  1
+  0.3 equip_arms 15 10 1 0 0 0 0 0.0 
+ equip_dagger_front_left 0 184549446  1
+  0.8 equip_arms 253 276 1 0 0 0 0 0.0 
+ unequip_dagger_front_left 0 184549446  1
+  0.2 equip_arms 254 250 1 0 0 0 0 0.0 
+ equip_dagger_front_right 0 184549446  1
+  0.8 equip_arms 305 333 1 0 0 0 0 0.0 
+ unequip_dagger_front_right 0 184549446  1
+  0.4 equip_arms 306 300 1 0 0 0 0 0.0 
+ equip_axe_back 0 184549446  1
+  1 equip_greataxe 0 17 1 0 0 0 0 0.0 
+ unequip_axe_back 0 184549446  1
+  0.3 equip_greataxe 7 0 1 0 0 0 0 0.0 
+ equip_revolver_right 0 184549446  1
+  0.6 equip_arms 352 365 1 0 0 0 0 0.0 
+ unequip_revolver_right 0 184549446  1
+  0.3 equip_arms 354 350 1 0 0 0 0 0.0 
+ equip_pistol_front_left 0 184549446  1
+  0.8 equip_arms 253 276 1 0 0 0 0 0.0 
+ unequip_pistol_front_left 0 184549446  1
+  0.2 equip_arms 254 250 1 0 0 0 0 0.0 
+ equip_katana 0 184549446  1
+  0.8 anim_human 20030 20045 1 0 0 0 0 0.0 
+ unequip_katana 0 184549446  1
+  0.3 anim_human 20010 20000 1 0 0 0 0 0.0 
+ equip_wakizashi 0 184549446  1
+  0.8 anim_human 20030 20045 1 0 0 0 0 0.0 
+ unequip_wakizashi 0 184549446  1
+  0.3 anim_human 20010 20000 1 0 0 0 0 0.0 
+ equip_shield 0 184549446  1
+  0.8 equip_arms 68 84 1 0 0 0 0 0.0 
+ unequip_shield 0 184549446  1
+  0.4 equip_arms 62 50 1 0 0 0 0 0.0 
+ equip_bow_back 0 184549446  1
+  0.7 equip_arms 161 179 1 0 0 0 0 0.0 
+ unequip_bow_back 0 184549446  1
+  0.3 equip_arms 163 150 1 0 0 0 0 0.0 
+ equip_bow_left_hip 0 184549446  1
+  0.7 equip_arms 110 148 1 0 0 0 0 0.0 
+ unequip_bow_left_hip 0 184549446  1
+  0.3 equip_arms 115 108 1 0 0 0 0 0.0 
+ cancel_attack_onehanded 0 1109417996  1
+  0.25 sword_loop01 10 11 9 0 0 0 0 0.0 
+ cancel_attack_twohanded 0 1109417996  1
+  0.25 greatsword_cstance 10 11 9 0 0 0 0 0.0 
+ cancel_attack_polearm 0 1109417996  1
+  0.25 staff_cstance 10 11 9 0 0 0 0 0.0 
+ ready_bow 1678770176 606081034  1
+  1.5 anim_human 20500 20530 519 28707 0 0 0 0.0 
+ release_bow 1678770176 572526602  1
+  0.3 anim_human 20530 20532 3 0 0 0 0 0.0 
+ ready_bow_mounted 1678770176 606081034  1
+  1.5 anim_human 20800 20830 519 26137 0 0 0 0.0 
+ release_bow_mounted 1678770176 4096  1
+  0.3 anim_human 20830 20832 3 0 0 0 0 0.0 
+ ready_crossbow 1678770176 606089226  1
+  1.5 anim_human 21300 21320 7 0 0 0 0 0.0 
+ release_crossbow 1678770176 572534794  1
+  0.2 anim_human 21330 21331 2 0 0 0 0 0.0 
+ reload_crossbow 0 35651644  1
+  1 anim_human 21700 21750 521 61286 0 0 0 0.0 
+ reload_crossbow_horseback 0 35651644  1
+  1.6 anim_human 21800 21877 521 61252 0 0 0 0.0 
+ ready_javelin 1048576 606085130  1
+  0.6 throw_javelin2 0 30 7 0 0 0 0 0.0 
+ release_javelin 1048576 572530703  1
+  0.9 throw_javelin2 55 100 1 0 0 0 0 0.0 
+ ready_throwing_knife 1048576 606085130  1
+  0.6 throw_knife 10 30 7 0 0 0 0 0.0 
+ release_throwing_knife 1048576 572530703  1
+  0.9 throw_knife 30 70 1 0 0 0 0 0.0 
+ ready_throwing_axe 1048576 606085130  1
+  0.6 throwing_axe 7 23 7 0 0 0 0 0.0 
+ release_throwing_axe 1048576 572530703  1
+  0.9 throwing_axe 23 60 1 0 0 0 0 0.0 
+ ready_stone 1048576 606085130  1
+  0.6 throwing_stone 0 20 7 0 0 0 0 0.0 
+ release_stone 1048576 572530703  1
+  0.9 throwing_stone 20 65 1 0 0 0 0 0.0 
+ ready_pistol 1679818752 606093322  1
+  0.3 anim_human 22500 22515 9 0 0 0 0 0.0 
+ release_pistol 1679818752 572538890  1
+  0.3 anim_human 22520 22527 2 0 0 0 0 0.0 
+ reload_pistol 0 35651644  1
+  2 anim_human 22650 22860 9 0 0 0 0 0.0 
+ ready_musket 1678770176 606089226  1
+  1.5 anim_human 21300 21320 7 0 0 0 0 0.0 
+ release_musket 1678770176 572534794  1
+  0.2 anim_human 21330 21331 2 0 0 0 0 0.0 
+ reload_musket 0 35651644  1
+  2 anim_human 22650 22860 9 0 0 0 0 0.0 
+ ready_swingright_fist 0 606105610  1
+  0.35 right_swing 0 15 7 0 0 0 0 0.0 
+ release_swingright_fist 0 35680266  1
+  0.5 right_swing 15 41 6 0 0 0 0 0.0 
+ release_swingright_fist_continue 0 35680266  1
+  0.5 right_swing 15 41 6 0 0 0 0 0.0 
+ blocked_swingright_fist 0 35680271  1
+  0.3 anim_human 24013 24008 6 0 0 0 0 0.0 
+ parried_swingright_fist 0 35680271  1
+  0.6 anim_human 24013 24008 6 0 0 0 0 0.0 
+ ready_swingleft_fist 0 606109706  1
+  0.35 anim_human 24300 24300 7 0 0 0 0 0.0 
+ release_swingleft_fist 0 35684362  1
+  0.5 anim_human 24300 24335 6 0 0 0 0 0.0 
+ release_swingleft_fist_continue 0 35684362  1
+  0.5 anim_human 24300 24335 6 0 0 0 0 0.0 
+ blocked_swingleft_fist 0 35684367  1
+  0.3 anim_human 24313 24308 6 0 0 0 0 0.0 
+ parried_swingleft_fist 0 35684367  1
+  0.6 anim_human 24313 24308 6 0 0 0 0 0.0 
+ ready_direct_fist 0 606101514  1
+  0.35 direct_fist 0 16 7 0 0 0 0 0.0 
+ release_direct_fist 0 35676170  1
+  0.5 direct_fist 17 36 6 0 0 0 0 0.0 
+ release_direct_fist_continue 0 35676170  1
+  0.5 direct_fist 17 36 6 0 0 0 0 0.0 
+ blocked_direct_fist 0 35676175  1
+  0.3 anim_human 24613 24608 6 0 0 0 0 0.0 
+ parried_direct_fist 0 35676175  1
+  0.6 anim_human 24613 24608 6 0 0 0 0 0.0 
+ ready_uppercut_fist 0 606101514  1
+  0.35 uppercut 0 17 7 0 0 0 0 0.0 
+ release_uppercut_fist 0 35676170  1
+  0.5 uppercut 17 34 6 0 0 0 0 0.0 
+ release_uppercut_fist_continue 0 35676170  1
+  0.5 uppercut 17 34 6 0 0 0 0 0.0 
+ blocked_uppercut_fist 0 35676175  1
+  0.3 anim_human 24913 24908 6 0 0 0 0 0.0 
+ parried_uppercut_fist 0 35676175  1
+  0.6 anim_human 24913 24908 6 0 0 0 0 0.0 
+ ready_slashright_twohanded 1678901248 1679818762  1
+  0.35 slashright_twohanded 10 18 7 0 0 0 0 0.0 
+ release_slashright_twohanded 1678901248 2183135242  1
+  0.61 slashright_twohanded 18 38 6 0 0 0 0 0.0 
+ release_slashright_twohanded_continue 0 572522497  1
+  0.5 slashright_twohanded 38 61 2 0 0 0 0 0.0 
+ blocked_slashright_twohanded 1678770176 35651599  1
+  0.3 anim_human 25725 25720 6 0 0 0 0 0.0 
+ parried_slashright_twohanded 1678770176 35651599  1
+  0.6 anim_human 25725 25720 6 0 0 0 0 0.0 
+ ready_slashleft_twohanded 1678901248 1679818762  1
+  0.35 slashleft_twohanded 12 16 7 0 0 0 0 0.0 
+ release_slashleft_twohanded 1678901248 2183135242  1
+  0.61 slashleft_twohanded 16 38 6 0 0 0 0 0.0 
+ release_slashleft_twohanded_continue 0 572522497  1
+  0.5 slashleft_twohanded 38 52 2 0 0 0 0 0.0 
+ blocked_slashleft_twohanded 1678770176 35651599  1
+  0.3 anim_human 26425 26420 6 0 0 0 0 0.0 
+ parried_slashleft_twohanded 1678770176 35651599  1
+  0.6 anim_human 26425 26420 6 0 0 0 0 0.0 
+ ready_thrust_twohanded 1678835712 1679818762  1
+  0.35 anim_human 26000 26010 7 0 0 0 0 0.0 
+ release_thrust_twohanded 1678835712 2183135242  1
+  0.61 anim_human 26010 26031 6 0 0 0 0 0.0 
+ release_thrust_twohanded_continue 0 572522497  1
+  0.1 anim_human 26031 26040 2 0 0 0 0 0.0 
+ blocked_thrust_twohanded 0 35651599  1
+  0.6 anim_human 26015 26016 6 0 0 0 0 0.0 
+ parried_thrust_twohanded 0 35651599  1
+  0.7 anim_human 26015 26016 6 0 0 0 0 0.0 
+ ready_overswing_twohanded 524288 1679818762  1
+  0.35 attacks_twohanded_overswing 11 26 7 0 0 0 0 0.0 
+ release_overswing_twohanded 524288 2183135242  1
+  0.61 attacks_twohanded_overswing 26 55 6 0 0 0 0 0.0 
+ release_overswing_twohanded_continue 0 572522497  1
+  0.5 attacks_twohanded_overswing 55 66 2 0 0 0 0 0.0 
+ blocked_overswing_twohanded 0 35651599  1
+  0.3 anim_human 26215 26212 6 0 0 0 0 0.0 
+ parried_overswing_twohanded 0 35651599  1
+  0.6 anim_human 26215 26212 6 0 0 0 0 0.0 
+ ready_thrust_onehanded 1679884800 1679843338  1
+  0.35 attacks_thrust_onehanded 5 13 7 0 0 0 0 0.0 
+ release_thrust_onehanded 1679884800 2183159818  1
+  0.62 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
+ release_thrust_onehanded_continue 0 572547073  1
+  0.3 attacks_thrust_onehanded 32 54 2 0 0 0 0 0.0 
+ blocked_thrust_onehanded 512 35676175  1
+  0.6 anim_human 28515 28513 6 0 0 0 0 0.0 
+ parried_thrust_onehanded 512 35676175  1
+  0.7 anim_human 28515 28513 6 0 0 0 0 0.0 
+ ready_thrust_onehanded_horseback 1679884800 1679843338  1
+  0.35 attacks_thrust_onehanded 5 13 7 0 0 0 0 0.0 
+ release_thrust_onehanded_horseback 1679884800 2183159818  1
+  0.62 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
+ release_thrust_onehanded_horseback_continue 0 572547073  1
+  0.3 attacks_thrust_onehanded 32 54 2 0 0 0 0 0.0 
+ blocked_thrust_onehanded_horseback 512 35676175  1
+  0.6 anim_human 28515 28513 6 0 0 0 0 0.0 
+ parried_thrust_onehanded_horseback 512 35676175  1
+  0.7 anim_human 28515 28513 6 0 0 0 0 0.0 
+ ready_thrust_onehanded_lance 1679884800 1679843338  1
+  0.35 thrust_onehanded_lance_hb 5 8 7 0 0 0 0 0.0 
+ release_thrust_onehanded_lance 1679884800 2183159818  1
+  0.62 thrust_onehanded_lance_hb 8 33 6 0 0 0 0 0.0 
+ release_thrust_onehanded_lance_continue 0 572547073  1
+  0.1 thrust_onehanded_lance_hb 33 45 2 0 0 0 0 0.0 
+ blocked_thrust_onehanded_lance 512 35676175  1
+  0.6 anim_human 29515 29513 6 0 0 0 0 0.0 
+ parried_thrust_onehanded_lance 512 35676175  1
+  0.7 anim_human 29515 29513 6 0 0 0 0 0.0 
+ ready_slashright_onehanded 1679949824 1679818762  1
+  0.35 attacks_single_righttoleft 2 5 7 0 0 0 0 0.0 
+ release_slashright_onehanded 1679949824 2183135242  1
+  0.6 attacks_single_righttoleft 5 28 6 0 0 0 0 0.0 
+ release_slashright_onehanded_continue 0 572522497  1
+  0.4 attacks_single_righttoleft 28 44 2 0 0 0 0 0.0 
+ blocked_slashright_onehanded 0 35651599  1
+  0.3 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
+ parried_slashright_onehanded 0 35651599  1
+  0.6 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
+ ready_slashleft_onehanded 1680080896 1679818762  1
+  0.35 attacks_single_lefttoright 4 11 7 0 0 0 0 0.0 
+ release_slashleft_onehanded 1680080896 2183135242  1
+  0.61 attacks_single_lefttoright 11 29 6 0 0 0 0 0.0 
+ release_slashleft_onehanded_continue 0 572522497  1
+  0.4 attacks_single_lefttoright 29 43 2 0 0 0 0 0.0 
+ blocked_slashleft_onehanded 0 35651599  1
+  0.3 parry_single_lefttoright 0 75 6 0 0 0 0 0.0 
+ parried_slashleft_onehanded 0 35651599  1
+  0.6 parry_single_lefttoright 0 75 6 0 0 0 0 0.0 
+ ready_overswing_onehanded 524800 1679839242  1
+  0.35 attacks_single_overswing 5 16 7 0 0 0 0 0.0 
+ release_overswing_onehanded 524800 2183155722  1
+  0.6 attacks_single_overswing 16 37 6 0 0 0 0 0.0 
+ release_overswing_onehanded_continue 0 572542977  1
+  0.2 attacks_single_overswing 37 40 2 0 0 0 0 0.0 
+ blocked_overswing_onehanded 512 35672079  1
+  0.3 anim_human 29315 29310 6 0 0 0 0 0.0 
+ parried_overswing_onehanded 512 35672079  1
+  0.6 anim_human 29315 29310 6 0 0 0 0 0.0 
+ ready_slash_horseback_right 1679949824 1679847434  1
+  0.35 attacks_single_righttoleft_horseback 8 17 7 0 0 0 0 0.0 
+ release_slash_horseback_right 1679949824 2183163914  1
+  0.7 attacks_single_righttoleft_horseback 17 39 6 0 0 0 0 0.0 
+ release_slash_horseback_right_continue 0 572551169  1
+  0.4 attacks_single_righttoleft_horseback 39 54 2 0 0 0 0 0.0 
+ blocked_slash_horseback_right 1679818752 35680271  1
+  0.3 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
+ parried_slash_horseback_right 1679818752 35680271  1
+  0.6 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
+ ready_slash_horseback_left 1680080896 1679851530  1
+  0.35 attacks_single_lefttoright_horseback 7 21 7 0 0 0 0 0.0 
+ release_slash_horseback_left 1680080896 2183168010  1
+  0.7 attacks_single_lefttoright_horseback 21 43 6 0 0 0 0 0.0 
+ release_slash_horseback_left_continue 0 572555265  1
+  0.3 attacks_single_lefttoright_horseback 43 51 2 0 0 0 0 0.0 
+ blocked_slash_horseback_left 1679818752 35684367  1
+  0.3 parry_single_lefttoright 0 75 6 0 0 0 0 0.0 
+ parried_slash_horseback_left 1679818752 35684367  1
+  0.6 parry_single_lefttoright 0 75 6 0 0 0 0 0.0 
+ ready_slash_horseback_polearm_right 1679949824 1679847434  1
+  0.35 attacks_staff_righttoleft 6 16 7 0 0 0 0 0.0 
+ release_slash_horseback_polearm_right 1679949824 2183163914  1
+  0.7 attacks_staff_righttoleft 16 40 6 0 0 0 0 0.0 
+ release_slash_horseback_polearm_right_continue 0 572551169  1
+  0.4 attacks_staff_righttoleft 40 48 2 0 0 0 0 0.0 
+ blocked_slash_horseback_polearm_right 1679818752 35680271  1
+  0.3 anim_human 27915 27913 3 0 0 0 0 0.0 
+ parried_slash_horseback_polearm_right 1679818752 35680271  1
+  0.3 anim_human 27915 27913 3 0 0 0 0 0.0 
+ ready_slash_horseback_polearm_left 1680080896 1679851530  1
+  0.35 attacks_staff_lefttoright 10 16 7 0 0 0 0 0.0 
+ release_slash_horseback_polearm_left 1680080896 2183168010  1
+  0.7 attacks_staff_lefttoright 16 41 6 0 0 0 0 0.0 
+ release_slash_horseback_polearm_left_continue 0 572555265  1
+  0.3 attacks_staff_lefttoright 41 55 2 0 0 0 0 0.0 
+ blocked_slash_horseback_polearm_left 1679818752 35684367  1
+  0.3 anim_human 27615 27613 3 0 0 0 0 0.0 
+ parried_slash_horseback_polearm_left 1679818752 35684367  1
+  0.3 anim_human 27615 27613 3 0 0 0 0 0.0 
+ ready_overswing_staff 524288 1679818762  1
+  0.35 attacks_staff_uptodown 9 26 7 0 0 0 0 0.0 
+ release_overswing_staff 524288 2183135242  1
+  0.6 attacks_staff_uptodown 26 61 6 0 0 0 0 0.0 
+ release_overswing_staff_continue 0 572522497  1
+  0.3 attacks_staff_uptodown 61 68 2 0 0 0 0 0.0 
+ blocked_overswing_staff 0 35651599  1
+  0.3 anim_human 27017 27014 3 0 0 0 0 0.0 
+ parried_overswing_staff 0 35651599  1
+  0.6 anim_human 27017 27014 3 0 0 0 0 0.0 
+ ready_thrust_staff 1678835712 1679818762  1
+  0.35 attacks_staff_thrust 14 21 7 0 0 0 0 0.0 
+ release_thrust_staff 1678835712 35651594  1
+  0.6 attacks_staff_thrust 21 40 6 0 0 0 0 0.0 
+ release_thrust_staff_continue 1678835712 572522506  1
+  0.6 attacks_staff_thrust 40 58 6 0 0 0 0 0.0 
+ blocked_thrust_staff 1678770176 35651599  1
+  0.6 anim_human 27316 27313 3 0 0 0 0 0.0 
+ parried_thrust_staff 1678770176 35651599  1
+  0.7 anim_human 27316 27313 3 0 0 0 0 0.0 
+ ready_slashleft_staff 1678770176 1679818762  1
+  0.35 attacks_staff_lefttoright 10 16 7 0 0 0 0 0.0 
+ release_slashleft_staff 1678770176 2183135242  1
+  0.6 attacks_staff_lefttoright 16 44 6 0 0 0 0 0.0 
+ release_slashleft_staff_continue 0 572522497  1
+  0.3 attacks_staff_lefttoright 44 55 2 0 0 0 0 0.0 
+ blocked_slashleft_staff 1678770176 35651599  1
+  0.3 anim_human 27615 27613 3 0 0 0 0 0.0 
+ parried_slashleft_staff 1678770176 35651599  1
+  0.6 anim_human 27615 27613 3 0 0 0 0 0.0 
+ ready_slashright_staff 1678770176 1679818762  1
+  0.35 attacks_staff_righttoleft 6 16 7 0 0 0 0 0.0 
+ release_slashright_staff 1678770176 2183135242  1
+  0.6 attacks_staff_righttoleft 16 40 6 0 0 0 0 0.0 
+ release_slashright_staff_continue 0 572522497  1
+  0.4 attacks_staff_righttoleft 40 48 2 0 0 0 0 0.0 
+ blocked_slashright_staff 1678770176 35651599  1
+  0.3 anim_human 27915 27913 3 0 0 0 0 0.0 
+ parried_slashright_staff 1678770176 35651599  1
+  0.6 anim_human 27915 27913 3 0 0 0 0 0.0 
+ defend_fist 0 775991310  1
+  0.75 anim_human 24950 24960 4 0 0 0 0 0.0 
+ defend_fist_keep 0 604024846  1
+  2 anim_human 24950 24960 268435459 0 0 0 0 0.0 
+ defend_fist_parry_1 0 167817231  1
+  0.6 anim_human 24962 24970 1 0 0 0 0 0.0 
+ defend_fist_parry_2 0 167817231  1
+  0.6 anim_human 24962 24970 1 0 0 0 0 0.0 
+ defend_fist_parry_3 0 167817231  1
+  0.8 anim_human 24962 24970 1 0 0 0 0 0.0 
+ defend_shield_forward 0 1782620174  1
+  0.75 defend_shield_forward 6 25 4 0 0 0 0 0.0 
+ defend_shield_up 0 1782620174  1
+  0.75 defend_shield_up 1 27 4 0 0 0 0 0.0 
+ defend_shield_right 0 1782620174  1
+  0.75 defend_shield_right 5 26 4 0 0 0 0 0.0 
+ defend_shield_left 0 1782620174  1
+  0.75 defend_shield_left 5 26 4 0 0 0 0 0.0 
+ defend_shield 0 1782620174  1
+  0.75 defend_shield_up 1 17 4 0 0 0 0 0.0 
+ defend_shield_keep 1677725696 604024846  1
+  2 anim_human 35118 35120 268435461 0 0 0 0 0.0 
+ defend_shield_parry_1 1677725696 167813135  1
+  0.6 anim_human 35121 35130 2 0 0 0 0 0.0 
+ defend_shield_parry_2 1677725696 167813135  1
+  0.6 anim_human 35121 35130 2 0 0 0 0 0.0 
+ defend_shield_parry_3 1677725696 167813135  1
+  0.8 anim_human 35121 35130 2 0 0 0 0 0.0 
+ defend_forward_greatsword 0 1849733134  1
+  0.75 defend_twohanded 0 20 4 0 0 0 0 0.0 
+ defend_forward_greatsword_keep 0 608219150  1
+  2 defend_twohanded 170 170 268435460 0 0 0 0 0.0 
+ defend_forward_greatsword_parry_1 0 167817231  1
+  0.6 defend_twohanded 350 367 2 0 0 0 0 0.0 
+ defend_forward_greatsword_parry_2 0 167817231  1
+  0.6 defend_twohanded 350 367 2 0 0 0 0 0.0 
+ defend_forward_greatsword_parry_3 0 167817231  1
+  0.6 defend_twohanded 350 367 2 0 0 0 0 0.0 
+ defend_up_twohanded 0 1849733134  1
+  0.75 anim_human 35403 35410 4 0 0 0 0 0.0 
+ defend_up_twohanded_keep 0 608219150  1
+  2 anim_human 35410 35410 268435460 0 0 0 0 0.0 
+ defend_up_twohanded_parry_1 0 167817231  1
+  0.6 anim_human 35411 35418 2 0 0 0 0 0.0 
+ defend_up_twohanded_parry_2 0 167817231  1
+  0.6 anim_human 35411 35418 2 0 0 0 0 0.0 
+ defend_up_twohanded_parry_3 0 167817231  1
+  0.8 anim_human 35411 35418 2 0 0 0 0 0.0 
+ defend_right_twohanded 0 1849733134  1
+  0.75 anim_human 35510 35520 4 0 0 0 0 0.0 
+ defend_right_twohanded_keep 0 608219150  1
+  2 anim_human 35520 35520 268435460 0 0 0 0 0.0 
+ defend_right_twohanded_parry_1 0 167817231  1
+  0.6 anim_human 35521 35528 2 0 0 0 0 0.0 
+ defend_right_twohanded_parry_2 0 167817231  1
+  0.6 anim_human 35521 35528 2 0 0 0 0 0.0 
+ defend_right_twohanded_parry_3 0 167817231  1
+  0.8 anim_human 35521 35528 2 0 0 0 0 0.0 
+ defend_left_twohanded 0 1849733134  1
+  0.75 anim_human 35610 35620 4 0 0 0 0 0.0 
+ defend_left_twohanded_keep 0 608219150  1
+  2 anim_human 35620 35620 268435460 0 0 0 0 0.0 
+ defend_left_twohanded_parry_1 0 167817231  1
+  0.6 anim_human 35620 35630 2 0 0 0 0 0.0 
+ defend_left_twohanded_parry_2 0 167817231  1
+  0.6 anim_human 35620 35630 2 0 0 0 0 0.0 
+ defend_left_twohanded_parry_3 0 167817231  1
+  0.8 anim_human 35620 35630 2 0 0 0 0 0.0 
+ defend_forward_onehanded 0 1849733134  1
+  0.75 defend_forward_onehanded 20 41 4 0 0 0 0 0.0 
+ defend_forward_onehanded_keep 0 608219150  1
+  5 defend_onehanded 15 70 268435460 0 0 0 0 0.0 
+ defend_forward_onehanded_parry_1 0 167817231  1
+  0.6 defend_onehanded 75 85 2 0 0 0 0 0.0 
+ defend_forward_onehanded_parry_2 0 167817231  1
+  0.6 defend_onehanded 75 85 2 0 0 0 0 0.0 
+ defend_forward_onehanded_parry_3 0 167817231  1
+  0.8 defend_onehanded 75 85 2 0 0 0 0 0.0 
+ defend_up_onehanded 0 1849733134  1
+  0.75 defend_up_onehanded 9 25 4 0 0 0 0 0.0 
+ defend_up_onehanded_keep 0 608219150  1
+  2.8 defend_up_onehanded_keep 1 87 268435460 0 0 0 0 0.0 
+ defend_up_onehanded_parry_1 0 167817231  1
+  0.6 anim_human 36121 36130 2 0 0 0 0 0.0 
+ defend_up_onehanded_parry_2 0 167817231  1
+  0.6 anim_human 36121 36130 2 0 0 0 0 0.0 
+ defend_up_onehanded_parry_3 0 167817231  1
+  0.8 anim_human 36121 36130 2 0 0 0 0 0.0 
+ defend_right_onehanded 0 1849733134  1
+  0.75 defend_right_onehanded 14 31 4 0 0 0 0 0.0 
+ defend_right_onehanded_keep 0 608219150  1
+  2.5 defend_right_onehanded_keep 0 79 268435462 0 0 0 0 0.0 
+ defend_right_onehanded_parry_1 0 167817231  1
+  0.6 anim_human 36221 36230 2 0 0 0 0 0.0 
+ defend_right_onehanded_parry_2 0 167817231  1
+  0.6 anim_human 36221 36230 2 0 0 0 0 0.0 
+ defend_right_onehanded_parry_3 0 167817231  1
+  0.8 anim_human 36221 36230 2 0 0 0 0 0.0 
+ defend_left_onehanded 0 1849733134  1
+  0.75 defend_left_onehanded 12 28 4 0 0 0 0 0.0 
+ defend_left_onehanded_keep 0 608219150  1
+  2.2 defend_left_onehanded_keep 1 71 268435460 0 0 0 0 0.0 
+ defend_left_onehanded_parry_1 0 167817231  1
+  0.6 anim_human 36321 36330 2 0 0 0 0 0.0 
+ defend_left_onehanded_parry_2 0 167817231  1
+  0.6 anim_human 36321 36330 2 0 0 0 0 0.0 
+ defend_left_onehanded_parry_3 0 167817231  1
+  0.8 anim_human 36321 36330 2 0 0 0 0 0.0 
+ defend_forward_staff 0 1849733134  1
+  0.75 defend_staff 0 5 4 0 0 0 0 0.0 
+ defend_forward_staff_keep 0 608219150  1
+  2 defend_staff 5 5 268435460 0 0 0 0 0.0 
+ defend_forward_staff_parry_1 0 167817231  1
+  0.6 defend_staff 56 70 2 0 0 0 0 0.0 
+ defend_forward_staff_parry_2 0 167817231  1
+  0.6 defend_staff 56 70 2 0 0 0 0 0.0 
+ defend_forward_staff_parry_3 0 167817231  1
+  0.6 defend_staff 56 70 2 0 0 0 0 0.0 
+ defend_up_staff 0 1849733134  1
+  0.75 anim_human 37110 37120 4 0 0 0 0 0.0 
+ defend_up_staff_keep 0 608219150  1
+  2 anim_human 37120 37120 268435460 0 0 0 0 0.0 
+ defend_up_staff_parry_1 0 167817231  1
+  0.6 anim_human 37121 37130 2 0 0 0 0 0.0 
+ defend_up_staff_parry_2 0 167817231  1
+  0.6 anim_human 37121 37130 2 0 0 0 0 0.0 
+ defend_up_staff_parry_3 0 167817231  1
+  0.8 anim_human 37121 37130 2 0 0 0 0 0.0 
+ defend_right_staff 0 1849733134  1
+  0.75 anim_human 37210 37220 4 0 0 0 0 0.0 
+ defend_right_staff_keep 0 608219150  1
+  2 anim_human 37220 37220 268435460 0 0 0 0 0.0 
+ defend_right_staff_parry_1 0 167817231  1
+  0.6 anim_human 37221 37230 2 0 0 0 0 0.0 
+ defend_right_staff_parry_2 0 167817231  1
+  0.6 anim_human 37221 37230 2 0 0 0 0 0.0 
+ defend_right_staff_parry_3 0 167817231  1
+  0.8 anim_human 37221 37230 2 0 0 0 0 0.0 
+ defend_left_staff 0 1849733134  1
+  0.75 anim_human 37310 37320 4 0 0 0 0 0.0 
+ defend_left_staff_keep 0 608219150  1
+  2 anim_human 37320 37320 268435460 0 0 0 0 0.0 
+ defend_left_staff_parry_1 0 167817231  1
+  0.6 anim_human 37321 37330 2 0 0 0 0 0.0 
+ defend_left_staff_parry_2 0 167817231  1
+  0.6 anim_human 37321 37330 2 0 0 0 0 0.0 
+ defend_left_staff_parry_3 0 167817231  1
+  0.8 anim_human 37321 37330 2 0 0 0 0 0.0 
+ strike_head_left 0 176160848  1
+  0.5 strikes 55 71 4 0 0 0 0 0.0 
+ strike_head_right 0 176160848  1
+  0.5 strikes 4 19 4 0 0 0 0 0.0 
+ strike_head_front 0 176160848  1
+  0.5 strikes 180 198 4 0 0 0 0 0.0 
+ strike_head_back 0 176160848  1
+  0.6 strikes_back 4 25 4 0 0 0 0 0.0 
+ strike_chest_left 0 176160848  1
+  0.5 strikes 706 724 4 0 0 0 0 0.0 
+ strike_chest_right 0 176160848  1
+  0.6 strikes 487 512 4 0 0 0 0 0.0 
+ strike_chest_front 0 176160848  1
+  0.6 strikes 881 905 4 0 0 0 0 0.0 
+ strike_chest_back 0 176160848  1
+  0.5 strikes_back 401 418 4 0 0 0 0 0.0 
+ strike_abdomen_left 0 176160848  1
+  0.58 strikes 1425 1444 4 0 0 0 0 0.0 
+ strike_abdomen_right 0 176160848  1
+  0.6 strikes 1168 1188 4 0 0 0 0 0.0 
+ strike_abdomen_front 0 176160848  1
+  0.6 strikes 1618 1640 4 0 0 0 0 0.0 
+ strike_abdomen_back 0 176160848  1
+  0.53 strikes_back 886 904 4 0 0 0 0 0.0 
+ strike_legs_left 0 176160848  1
+  0.55 strikes 2284 2305 4 0 0 0 0 0.0 
+ strike_legs_right 0 176160848  1
+  0.56 strikes 1999 2020 4 0 0 0 0 0.0 
+ strike_legs_front 0 176160848  1
+  0.56 strikes 2655 2676 4 0 0 0 0 0.0 
+ strike_legs_back 0 176160848  1
+  0.5 strikes_back 1120 1137 4 0 0 0 0 0.0 
+ strike2_head_left 1024 176160848  1
+  0.5 strikes 55 71 4 0 0 0 0 0.0 
+ strike2_head_right 1024 176160848  1
+  0.5 strikes 4 19 4 0 0 0 0 0.0 
+ strike2_head_front 1024 176160848  1
+  0.5 strikes 180 198 4 0 0 0 0 0.0 
+ strike2_head_back 1024 176160848  1
+  0.55 strikes_back 4 25 4 0 0 0 0 0.0 
+ strike2_chest_left 1024 176160848  1
+  0.5 strikes 706 724 4 0 0 0 0 0.0 
+ strike2_chest_right 1024 176160848  1
+  0.55 strikes 487 512 4 0 0 0 0 0.0 
+ strike2_chest_front 1024 176160848  1
+  0.55 strikes 881 905 4 0 0 0 0 0.0 
+ strike2_chest_back 1024 176160848  1
+  0.5 strikes_back 401 418 4 0 0 0 0 0.0 
+ strike2_abdomen_left 1024 176160848  1
+  0.55 strikes 1425 1444 4 0 0 0 0 0.0 
+ strike2_abdomen_right 1024 176160848  1
+  0.55 strikes 1168 1188 4 0 0 0 0 0.0 
+ strike2_abdomen_front 1024 176160848  1
+  0.55 strikes 1618 1640 4 0 0 0 0 0.0 
+ strike2_abdomen_back 1024 176160848  1
+  0.53 strikes_back 886 904 4 0 0 0 0 0.0 
+ strike2_legs_left 1024 176160848  1
+  0.55 strikes 2284 2305 4 0 0 0 0 0.0 
+ strike2_legs_right 1024 176160848  1
+  0.56 strikes 1999 2020 4 0 0 0 0 0.0 
+ strike2_legs_front 1024 176160848  1
+  0.56 strikes 2655 2676 4 0 0 0 0 0.0 
+ strike2_legs_back 1024 176160848  1
+  0.5 strikes_back 1120 1137 4 0 0 0 0 0.0 
+ strike3_head_left 1024 176160848  1
+  0.99 strikes3_head 107 146 4 0 0 0 0 0.0 
+ strike3_head_right 1024 176160848  1
+  0.9 strikes3_head 208 251 4 0 0 0 0 0.0 
+ strike3_head_front 1024 176160848  1
+  0.9 strikes3_head 14 48 4 0 0 0 0 0.0 
+ strike3_head_back 1024 176160848  1
+  0.9 strikes3_head 309 346 4 0 0 0 0 0.0 
+ strike3_chest_left 1024 176160848  1
+  0.9 strikes3_chest 61 97 4 0 0 0 0 0.0 
+ strike3_chest_right 1024 176160848  1
+  0.9 strikes3_chest 108 145 4 0 0 0 0 0.0 
+ strike3_chest_front 1024 176160848  1
+  0.8 strikes3_chest 3 27 4 0 0 0 0 0.0 
+ strike3_abdomen_left 1024 176160848  1
+  0.9 strikes3_abdomen 105 150 4 0 0 -0 0  0.0 
+ strike3_abdomen_right 1024 176160848  1
+  0.9 strikes3_abdomen 63 98 4 0 0 0 0  0.0 
+ strike3_abdomen_front 1024 176160848  1
+  0.9 strikes3_abdomen 4 43 4 0 0 0 0  0.0 
+ strike3_abdomen_back 1024 176160848  1
+  1.08 strikes3_abdomen_back 0 53 4 0 0 0 0 0.0 
+ strike_head_front_left_reloc 1024 176160848  1
+  0.6 strike_frontal 0 37 4 0 0 0 0 0.0 
+ fall_face_hold 9218 92274783  1
+  2.2 death_face 8 60 529 127 0 0 0  0.6 
+ fall_chest_front 9218 92274783  1
+  1 death_chest 4 37 529 229 0 0 0  0.5 
+ fall_abdomen_hold_front 9218 92274783  1
+  2.7 death_abdomen 5 96 529 102 0 0 0  0.5 
+ fall_head_front 9218 92274783  1
+  1.2 anim_human 40100 40138 529 204 0 0 0  0.8 
+ fall_right_front 9218 92274783  1
+  2 death2 0 53 529 165 0 0 0  1 
+ fall_body_back 9218 92274783  1
+  2.7 death 0 83 529 53623 0 0 0  1.8 
+ fall_rider_right_forward 9216 92274783  1
+  2.2 anim_human 40200 40275 516 204 0 0 0  0.3 
+ fall_rider_right 9216 92274783  1
+  2.2 anim_human 40200 40275 516 204 0 0 0  0.3 
+ fall_rider_left 9216 92274783  1
+  2.2 anim_human 40200 40275 516 204 0 0 0  0.3 
+ rider_fall_right 17408 58720337  1
+  2.5 anim_human_02 350 382 9 0 0.8 -1.8 0  0.5 
+ rider_fall_roll 17408 58720337  1
+  2.5 anim_human 42000 42084 9 0 0 0 0  1 
+ strike_chest_front_stop 1024 176160848  1
+  0.4 anim_human 45000 45010 4 0 0 0 0 0.0 
+ strike_fall_back_rise 258 176160848  1
+  1.7 anim_human 45400 45453 515 102 0 0 0  0.5 
+ strike_fall_back_rise_upper 2 176160848  1
+  1.44 anim_human 45400 45445 3 0 0 0 0 0.0 
+ cheer 0 33554496  4
+  6 man_cheer 0 185 6 0 0 0 0 0.0 
+  3 man_cheer 200 289 6 0 0 0 0 0.0 
+  4.5 man_cheer 300 437 6 0 0 0 0 0.0 
+  5.5 man_cheer 450 617 6 0 0 0 0 0.0 
+ cheer_stand 268435456 33554496  1
+  31.5 man_cheer 650 1597 6 0 0 0 0 0.0 
+ stand_townguard 0 0  1
+  79 stand_guardsman 0 2397 1342177280 0 0 0 0  0.25 
+ stand_lady 0 0  1
+  29 lady_stand 0 863 1342177280 0 0 0 0  0.25 
+ stand_lord 0 0  1
+  10 lord_stand 0 111 1342177280 0 0 0 0  0.25 
+ dance 0 0  1
+  20 anim_human 0 387 6 0 0 0 0 0.0 
+ pose_1 0 0  1
+  3 poses 0 0 268435456 0 0 0 0 0.0 
+ pose_2 0 0  1
+  3 poses 2 2 268435456 0 0 0 0 0.0 
+ pose_3 0 0  1
+  3 poses 4 4 268435456 0 0 0 0 0.0 
+ pose_4 0 0  1
+  3 poses 6 6 268435456 0 0 0 0 0.0 
+ pose_5 0 0  1
+  3 poses 8 8 268435456 0 0 0 0 0.0 
+ wedding_guest 0 33554527  1
+  30 wedding_guest 0 906 268435456 0 0 0 0 0.0 
+ wedding_guest_notr 0 33554527  1
+  32 wedding_guest_notr 0 962 268435456 0 0 0 0 0.0 
+ wedding_guest_woman 0 33554527  1
+  27.5 wedding_guest_woman 0 825 268435456 0 0 0 0 0.0 
+ wedding_dad_stairs 0 33620063  1
+  10 wedding_dad_stairs 0 300 1 0 0 0 0 0.0 
+ wedding_dad_walk 0 33620063  1
+  4.5 wedding_dad_walk 0 134 1 0 0 0 0 0.0 
+ wedding_bride_stairs 0 33620063  1
+  10 wedding_bride_stairs 0 300 1 0 0 0 0 0.0 
+ wedding_bride_walk 0 33620063  1
+  4.5 wedding_bride_walk 0 134 1 0 0 0 0 0.0 
+ wedding_groom_wait 0 100728927  1
+  10 wedding_groom_last 0 2 1 0 0 0 0 0.0 
+ wedding_groom_last 0 100728927  1
+  10 wedding_groom_last 0 300 1 0 0 0 0 0.0 
+ wedding_dad_last 0 100728927  1
+  10 wedding_dad_last 0 300 1 0 0 0 0 0.0 
+ wedding_bride_last 0 100728927  1
+  10 wedding_bride_last 0 300 1 0 0 0 0 0.0 
+ equip_bayonet 0 184549446  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unequip_bayonet 0 184549446  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ ready_carrystone 524288 16777216  1
+  0.35 anim_human 26206 26210 536870919 0 0 0 0 0.0 
+ sit_on_throne 0 16777216  3
+  5.5 sit 100 100 1342177280 0 0 0 0  0.25 
+  5.5 sit 200 208 1342177280 0 0 0 0  0.25 
+  5.5 sit 300 308 1342177280 0 0 0 0  0.25 
+ bow_to_lord_go_down 0 16777216  1
+  2 bow_to_lord 4 18 4 0 0 0 0  0 
+ bow_to_lord_get_up 0 16777216  1
+  0.4 bow_to_lord 4 0 7 0 0 0 0  0 
+ bow_to_lord_stay_down 0 16777216  1
+  2.1 bow_to_lord 8 28 21 0 0 0 0  0 
+ ready_and_release_slashright_troll 132096 572522497  1
+  0.125 troll_slash_right 34 43 6 0 0 0 0 0.0 
+ ready_and_release_slashleft_troll 263168 572522497  1
+  0.125 troll_slash_left 33 43 5 0 0 0 0 0.0 
+ ready_and_release_overswing_troll 533504 572522497  1
+  0.175 troll_overswing 33 49 5 0 0 0 0 0.0 
+ ready_slashright_troll 132096 572522497  1
+  0.6 troll_slash_right 1 28 44 0 0 0 0 0.0 
+ ready_slashleft_troll 263168 572522497  1
+  0.6 troll_slash_left 1 28 44 0 0 0 0 0.0 
+ ready_overswing_troll 533504 572522497  1
+  0.6 troll_overswing 1 28 44 0 0 0 0 0.0 
+ walk_forward_troll 256 16777216  1
+  5 man_cheer 650 1597 805306628 65535 0 0 0  0 
+ walk_forward_onehanded_slow 256 16777216  1
+  1.4 man_walk 0 32 805306628 58726 0 0 0  0 
+ strike_fly_back_near_rise 16642 16777216  1
+  1.7 ani_fall_flyback1_near_rise 0 43 515 102 0.19 -1.6 0  0.5 
+ strike_fly_back_rise 17410 16777216  6
+  2.09 ani_fall_flyback1_med_rise 0 53 515 102 0.19 -2.7 0  0.5 
+  2.214 ani_fall_flyback1_far_rise 0 56 515 102 0.19 -4.4 0  0.5 
+  2.1 ani_fall_flyback2_med_rise 0 49 515 102 0.933 -2.454 0  0.5 
+  2.1 ani_fall_flyback2_far_rise 0 49 515 102 0.933 -3.8 0  0.5 
+  2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
+  2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
+ strike_fly_back_rise_from_left 17410 16777216  6
+  2.09 ani_fall_flyback1_med_rise_from_left 0 53 515 102 -0.19 -2.7 0  0.5 
+  2.214 ani_fall_flyback1_far_rise_from_left 0 56 515 102 -0.19 -4.4 0  0.5 
+  2.1 ani_fall_flyback2_med_rise_from_left 0 49 515 102 -0.933 -2.454 0  0.5 
+  2.1 ani_fall_flyback2_far_rise_from_left 0 49 515 102 -0.933 -3.8 0  0.5 
+  2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
+  2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
+ strike_fly_front_rise 17410 16777216  1
+  1.12 ani_fall_flyfront_rise 0 77 515 102 -0.36 2.93 0  1 
+ strike_fly_back_near 17410 16777216  1
+  0.59 ani_fall_flyback1_near_rise 0 15 515 102 0.19 -1.6 0  0.5 
+ strike_fly_back 17410 16777216  2
+  0.59 ani_fall_flyback1_med_rise 0 15 515 102 0.19 -2.7 0  0.5 
+  0.62 ani_fall_flyback1_far_rise 0 15 515 102 0.19 -4.4 0  0.5 
+ strike_fly_front 17410 16777216  1
+  0.59 ani_fall_flyfront_rise 0 40 515 102 -0.36 2.93 0  0.5 
+ nazgul_noooo_long 1024 16777216  11
+  3.5 oh_no 8 38 3 0 0 0 0 0.0 
+  3.6 oh_no 12 43 3 0 0 0 0 0.0 
+  3.2 oh_no 16 44 4 0 0 0 0 0.0 
+  4 oh_no 20 42 4 0 0 0 0 0.0 
+  3.4 oh_no 24 44 3 0 0 0 0 0.0 
+  3.9 oh_no 28 57 4 0 0 0 0 0.0 
+  3.8 oh_no 32 57 4 0 0 0 0 0.0 
+  4.1 oh_no 36 65 4 0 0 0 0 0.0 
+  3.2 oh_no 40 67 3 0 0 0 0 0.0 
+  3.4 oh_no 44 76 3 0 0 0 0 0.0 
+  3.9 oh_no 48 79 3 0 0 0 0 0.0 
+ nazgul_noooo_short 1024 16777216  11
+  1.5 oh_no 8 18 3 0 0 0 0 0.0 
+  1.6 oh_no 12 33 3 0 0 0 0 0.0 
+  2.2 oh_no 16 34 4 0 0 0 0 0.0 
+  2 oh_no 20 42 4 0 0 0 0 0.0 
+  2.3 oh_no 24 44 3 0 0 0 0 0.0 
+  1.9 oh_no 28 47 4 0 0 0 0 0.0 
+  1.8 oh_no 32 47 4 0 0 0 0 0.0 
+  2.1 oh_no 36 55 4 0 0 0 0 0.0 
+  2.2 oh_no 40 57 3 0 0 0 0 0.0 
+  2.3 oh_no 44 66 3 0 0 0 0 0.0 
+  1.9 oh_no 48 69 3 0 0 0 0 0.0 
+ nazgul_noooo_mounted_long 1024 16777216  3
+  4 oh_no_mounted 0 83 3 0 0 0 0 0.0 
+  4 oh_no_mounted 42 125 3 0 0 0 0 0.0 
+  4 oh_no_mounted 84 167 3 0 0 0 0 0.0 
+ nazgul_noooo_mounted_short 1024 16777216  4
+  2 oh_no_mounted 0 41 3 0 0 0 0 0.0 
+  2 oh_no_mounted 42 83 3 0 0 0 0 0.0 
+  2 oh_no_mounted 84 125 3 0 0 0 0 0.0 
+  2 oh_no_mounted 126 167 3 0 0 0 0 0.0 
+ hide_inside_warg 257 16777216  1
+  1 hide_inside_warg 0 31 268435456 0 0 0 0 0.0 
+ ride_warg_jump 257 16777216  1
+  1.7 hide_inside_warg 0 20 268435461 2829396006 0 0 0  0.9 
+ cheer_player 8704 16777216  3
+  6 man_cheer 12 185 6 0 0 0 0 0.0 
+  6 man_cheer 217 397 6 0 0 0 0 0.0 
+  6 man_cheer 338 518 6 0 0 0 0 0.0 
+ cheer_player_ride 8704 16777216  3
+  6 ani_cheer_ride 12 185 6 0 0 0 0 0.0 
+  6 ani_cheer_ride 217 397 6 0 0 0 0 0.0 
+  6 ani_cheer_ride 338 518 6 0 0 0 0 0.0 
+ cancel_ani_stand 0 16777216  1
+  0.25 anim_human 50 50 16 0 0 0 0  0 
+ cancel_ani_ride 0 16777216  1
+  0.25 stand_onhorse 0 0 16 0 0 0 0  0 
+ greet_elf 0 16777216  1
+  1.3 anim_greet_elf 0 25 15 0 0 0 0 0.0 
+ greet_elf_mounted 0 16777216  1
+  1.3 anim_greet_elf_mounted 0 25 15 0 0 0 0 0.0 
+ greet_human 0 16777216  1
+  1.8 anim_greet_human 0 29 11 0 0 0 0 0.0 
+ greet_human_mounted 0 16777216  1
+  1.8 anim_greet_human_mounted 0 29 11 0 0 0 0 0.0 
+ greet_orc 0 16777216  1
+  2 anim_greet_orc 0 37 13 0 0 0 0 0.0 
+ greet_orc_mounted 0 16777216  1
+  2 anim_greet_orc_mounted 0 37 13 0 0 0 0 0.0 
+ greet_simple 0 16777216  1
+  1.4 anim_greet_simple 0 39 13 0 0 0 0 0.0 
+ greet_simple_mounted 0 16777216  1
+  1.4 anim_greet_simple_mounted 0 39 13 0 0 0 0 0.0 
+ greet_goaway 0 16777216  1
+  1.8 anim_greet_goaway 0 33 13 0 0 0 0 0.0 
+ greet_goaway_mounted 0 16777216  1
+  1.8 anim_greet_goaway_mounted 0 33 13 0 0 0 0 0.0 
+ troll_or_ent_bend_continue 1024 16777216  1
+  6 troll_or_ent_bend 0 79 1342177280 0 0 0 0  0 
+ troll_or_ent_bend_rise 0 16777216  1
+  2 troll_or_end_getUp 0 15 13 0 0 0 0 0.0 
+ lean_from_camera 0 16777216  1
+  12 leaningBack 0 94 1342177283 0 0 0 0  0 
+ lean_from_camera_mounted 0 16777216  1
+  12 leaning_back_mounted 0 94 1342177283 0 0 0 0  0 
+ sit_on_ground 0 16777216  1
+  20 sitting 0 199 1342177280 0 0 0 0  0 
+ pause 1024 16777216  1
+  1 anim_human 50 52 1 0 0 0 0  0.25 
+ pause_mounted 1024 16777216  1
+  1 stand_onhorse 0 30 1 0 0 0 0  0.25 
+ stay_tied 1024 16777216  3
+  6.2 tied_stand_walk 24 54 268435467 0 0 0 0 0.0 
+  6.2 tied_stand_walk 14 44 268435467 0 0 0 0 0.0 
+  6.2 tied_stand_walk 4 34 268435467 0 0 0 0 0.0 
+ walk_tied 17408 16777216  7
+  5.6 tied_stand_walk 55 152 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 50 148 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 45 142 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 40 138 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 35 138 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 30 138 536871172 58726 0 3.4 0  0 
+  5.6 tied_stand_walk 45 138 536871172 58726 0 3.4 0  0 
+ fall_tied 1026 16777216  1
+  2.3 tied_fall_rise 0 91 514 102 0 0 0  0.5 
+ unused_human_anim_64 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_65 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_66 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_67 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_68 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_69 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_70 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_71 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_72 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_73 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_74 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_75 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_76 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_77 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_78 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_79 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_80 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_81 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_82 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_83 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_84 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_85 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_86 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_87 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_88 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_89 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_90 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_91 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_92 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_93 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_94 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_95 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_96 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_97 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_98 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_99 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ unused_human_anim_100 0 0  1
+  1 anim_human 0 1 0 0 0 0 0 0.0 
+ horse_stand 0 16777216  12
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 644 688 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 688 732 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  3.5 anim_horse 732 820 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  1.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  2.5 anim_horse 820 908 1342177280 0 0 0 0  0 
+ horse_pace_1 256 17825792  1
+  1 anim_horse 0 31 805306624 3938413375 0 0 0  0.25 
+ horse_pace_2 256 17825792  1
+  0.8 anim_horse 50 69 805306624 2829396006 0 0 0  0.9 
+ horse_pace_3 256 17825792  1
+  0.6 anim_horse 100 116 805306624 1801057005 0 0 0  0.6 
+ horse_pace_4 256 17825792  1
+  0.5 anim_horse 150 165 805306624 4022947686 0 0 0  0.2 
+ horse_walk_backward 256 16777216  1
+  1.9 anim_horse 31 0 2415919360 2693669137 0 0 0  0 
+ horse_rear 33024 33554506  1
+  1.7 anim_horse 265 297 9 0 0 0 0 0.0 
+ horse_jump 256 50331650  1
+  1.6 anim_horse 205 222 5 0 0 0 0 0.0 
+ horse_jump_end 256 50331681  1
+  0.1 anim_horse 222 224 9 0 0 0 0 0.0 
+ horse_turn_right 0 16777216  1
+  1 anim_horse 500 533 268435461 0 0 0 0 0.0 
+ horse_turn_left 0 16777216  1
+  1 anim_horse 450 483 268435461 0 0 0 0 0.0 
+ horse_turn_right_head 0 16777216  1
+  1 anim_horse 500 533 268435461 0 0 0 0 0.0 
+ horse_turn_left_head 0 16777216  1
+  1 anim_horse 450 483 268435461 0 0 0 0 0.0 
+ horse_slow 0 16777216  2
+  3 anim_horse 0 31 268435456 0 0 0 0 0.0 
+  1.5 anim_horse 0 31 268435456 0 0 0 0 0.0 
+ horse_fall_in_place 1026 83886160  1
+  4 anim_horse 0 38 529 0 0 0 0 0.0 
+ horse_fall_right 1026 83886160  1
+  1.75 anim_horse 350 375 521 153 0 0 0  0.5 
+ horse_fall_roll 1026 83886160  1
+  2.5 anim_horse 400 428 521 76 0 0 0  1.8 
+ horse_rear_twice 33024 16777216  1
+  4 horse_rear_twice 0 83 3 0 0 0 0 0.0 
+ horse_rear_fast_blend 33024 16777216  1
+  2 horse_rear_twice 0 41 3 0 0 0 0 0.0 
+ oliphant_stand 0 16777216  13
+  3.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  2.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  3.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  2.5 anim_horse 644 688 1342177280 0 0 0 0  0 
+  2.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  3.5 anim_horse 688 732 1342177280 0 0 0 0  0 
+  2.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  5.5 anim_horse 732 820 1342177280 0 0 0 0  0 
+  3.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  3.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  2.5 anim_horse 600 644 1342177280 0 0 0 0  0 
+  5 anim_horse 260 301 1342177289 0 0 0 0  0 
+  4.5 anim_horse 820 908 1342177280 0 0 0 0  0 
+ warg_jump 16640 16777216  1
+  1.7 warg_jump 0 20 805306373 2829396006 0 0 0  0.9 
+ horse_cancel_ani 0 16777216  1
+  0.25 anim_horse 600 601 1073741830 0 0 0 0  0 
+ warg_leapattack 16640 16777216  1
+  1 wargLeapAttack 0 20 536870917 2829396006 0 0 0  0.9 
+ unused_horse_anim_7 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_8 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_9 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_10 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_11 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_12 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_13 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_14 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_15 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_16 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_17 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_18 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_19 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_20 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_21 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_22 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_23 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_24 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_25 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_26 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_27 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_28 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_29 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_30 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_31 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_32 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_33 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_34 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_35 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_36 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_37 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_38 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_39 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_40 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_41 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_42 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_43 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_44 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_45 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_46 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_47 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_48 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_49 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_50 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_51 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_52 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_53 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_54 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_55 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_56 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_57 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_58 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_59 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_60 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_61 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_62 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_63 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_64 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_65 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_66 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_67 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_68 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_69 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_70 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_71 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_72 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_73 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_74 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_75 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_76 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_77 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_78 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_79 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_80 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_81 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_82 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_83 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_84 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_85 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_86 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_87 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_88 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_89 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_90 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_91 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_92 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_93 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_94 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_95 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_96 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_97 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_98 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_99 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
+ unused_horse_anim_100 0 0  1
+  1 anim_horse 0 1 0 0 0 0 0 0.0 
