@@ -26,8 +26,12 @@ from module_scene_props import *
 from module_presentations import *
 from module_map_icons import *
 from module_tableau_materials import *
-from module_animations import *
 
+from module_info import *
+if (not wb_compile_switch):
+  from module_animations import *
+else:
+  from module_animations_wb import *
 
 def get_id_value(tag, identifier, tag_uses):
   tag_type = -1

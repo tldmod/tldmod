@@ -91,7 +91,7 @@ amf_use_defend_speed                       = 0x00400000
 amf_accurate_body                          = 0x00800000
 amf_client_prediction                      = 0x01000000
 amf_play                                   = 0x02000000
-amf_keep	                               = 0x04000000
+amf_keep                                   = 0x04000000
 amf_restart                                = 0x08000000 # restart animation even if it is the current animation
 amf_hide_weapon                            = 0x10000000
 amf_client_owner_prediction                = 0x20000000
@@ -106,7 +106,14 @@ acf_enforce_lowerbody        = 0x00000100
 acf_enforce_rightside        = 0x00000200
 acf_enforce_all              = 0x00000400
 acf_parallels_for_look_slope = 0x00001000
-acf_rotate_body              = 0x00002000
+
+from module_info import wb_compile_switch as anim_wb_switch
+
+if (anim_wb_switch):
+  acf_lock_camera            = 0x00002000
+else:
+  acf_rotate_body            = 0x00002000
+  
 acf_displace_position        = 0x00004000
 acf_ignore_slope             = 0x00008000
 acf_thrust                   = 0x00010000
@@ -117,16 +124,11 @@ acf_rot_vertical_mask        = 0x00300000
 acf_rot_vertical_bow         = 0x00100000
 acf_rot_vertical_sword       = 0x00200000
 acf_anim_length_mask         = 0xff000000
-
-from header_common import *
-if (wb_compile_switch == 0):
-  acf_lock_camera            = 0x00002000
-elif (wb_compile_switch == 1):
-  acf_lock_camera            = 0x00100000
-
 acf_anim_length_bits         = 24
+
 def acf_anim_length(x):
   return (x << acf_anim_length_bits) & acf_anim_length_mask
+  
 #------------------------------------------
 
 
