@@ -2322,6 +2322,8 @@ scene_props = [
 
 ("distant_outer_tirith",sokf_place_at_origin|sokf_moveable,"outer_tirith","0",[]),
 
+("gothic_chair_nocol",0,"gothic_chair","0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
+
 ("save_compartibility1",0,"0","0", []),
 ("save_compartibility2",0,"0","0", []),
 ("save_compartibility3",0,"0","0", []),
