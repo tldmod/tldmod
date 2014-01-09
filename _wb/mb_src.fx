@@ -5396,3 +5396,432 @@ DEFINE_TECHNIQUES(tree_billboards_dot3_alpha, vs_main_bump_billboards, ps_main_b
 
 
 #endif
+
+
+//  WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND WARBAND
+//  88       88 8888888      8888888 888888888     88888      8888        888888     88888    88 8888  8888     8 8
+//  88888 88888 8888888 888888888888 88888888 88888 888 8888888888888 8888888888 8888  88 8888 8 8888  888 888888 8
+//  88888 88888     888    888888888 88888888       888       8888888 8888888888 8888  88      8       888      888
+//  88888 88888 8888 88 888888888888 88888888 88888 888888888 8888888 8888888888 8888  88 8888 888888  8888888  888
+//  88888   888 8888 88      8888888       88 88888 888      88888888   88888888     8888 8888 88     8888     8888
+//  SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS SHADERS 
+
+
+//
+// MAP SHADERS (auto-snow, swamp, disupt of regular patterns...) -- mtarini
+///////////////////////////////////////////////////////////////////
+
+// ... for cast-shadows   (VS and FS)
+#define MAP_SHADOW_NO    0  // hide shadow
+#define MAP_SHADOW_YES   1  // do shadows
+
+// ... special (VS and FS)
+#define MAP_SPECIAL_NONE  0  // nothing
+#define MAP_SPECIAL_SWAMP 1  // change color for swamps
+#define MAP_SPECIAL_SNOW  2  // add procedural snow 
+
+// ... distort texture  (VS only)
+#define MAP_DISTORT_NO  0  // don't
+#define MAP_DISTORT_YES 1  // disturb patterns to avoid repetitions
+
+// ... blend mode (FS only)
+#define MAP_BLEND_SMOOTH 0  // as default
+#define MAP_BLEND_HARD   1  // mix
+#define MAP_BLEND_MID    2  // a mixture
+
+struct VS_OUTPUT_TLD_MAP
+{
+   float4 Pos					: POSITION;
+   float4 Color					: COLOR0;
+   float2 Tex0					: TEXCOORD0;
+   float4 SunLight				: TEXCOORD1;
+   float4 ShadowTexCoord		: TEXCOORD2;
+   float2 TexelPos				: TEXCOORD3;
+   float2 Spec                  : TEXCOORD4;
+   float  Fog				    : FOG;
+};
+
+struct PS_INPUT_TLD_MAP
+{
+	float4 Color				: COLOR0;
+	float2 Tex0					: TEXCOORD0;
+	float4 SunLight				: TEXCOORD1;
+	float4 ShadowTexCoord		: TEXCOORD2;
+	float2 TexelPos				: TEXCOORD3;
+	float2  Spec                  : TEXCOORD4;
+};
+
+
+VS_OUTPUT_TLD_MAP vs_mtarini_map (
+  uniform const int PcfMode, 
+  uniform const int Shadow, 
+  uniform const int Special, 
+  uniform const int Distort, 
+  uniform const float MultUV,
+  float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT_TLD_MAP Out = (VS_OUTPUT_TLD_MAP)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   //no need: 
+   float3 vWorldN = mul((float3x3)matWorld, vNormal); //normal in world space
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+      
+   if (Distort) {
+     // break texture patterns
+     Out.Tex0 += float2(1.0,1.0) * 0.09*sin( 2.6*tc.x );
+     Out.Tex0 += float2(-1.5,1.0) * 0.12*sin( 4.0*tc.y );
+     Out.Tex0*=MultUV;
+   }
+   
+   float4 diffuse_light = vAmbientColor + vLightColor;
+   float dp = dot(vWorldN, -vSkyLightDir);
+   diffuse_light += max(0, dp) * vSkyLightColor;
+   
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+ 
+   if (Special==MAP_SPECIAL_SNOW) {
+     // store altitude in Spec.x
+     Out.Spec.x = vPosition.z; 
+	 
+     // computation of specular
+     float3 vHalf = normalize(normalize(vCameraPos - vWorldPos.xyz) -vSkyLightDir );
+     float fSpecular = pow( saturate( dot( vHalf, vNormal ) ), 32.0);
+     Out.Spec.y = fSpecular * vAmbientColor.x * 0.8; // store specular in SunLight.x
+   }
+   
+   //apply custom lighting:
+   Out.Color = diffuse_light ;
+     //vMaterialColor*  (ignored: material color)
+     //vColor *  (ignored: preshaded color)
+     //(1-(1-vAmbientColor)*(1-vAmbientColor))*       // enhancing effect night time on light
+     //(0.25+0.75*dot( normalize(vNormal), -vSkyLightDir ) ) // adding ambient
+   //;
+
+   if (Special==MAP_SPECIAL_SWAMP) {
+     // computes wheter inside swamp
+     float2 dist = vWorldPos.xy-float2(-35,-27);
+     Out.Spec.x = (dot(dist,dist)>38*38)?0:1; // stores swamp as yes no
+   }
+
+   Out.Color.w=vColor.w; // need original alpha for blending terrains
+	
+   float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
+   Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+
+   if ((Shadow)&&(PcfMode != PCF_NONE))
+   {
+		//shadow mapping variables
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+   }
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
+{
+    PS_OUTPUT Output;
+
+    float4 tex_col=tex2D(MeshTextureSampler, In.Tex0*3.0);
+	
+	tex_col.rgb = pow(tex_col.rgb, input_gamma);
+
+    // change the following weights to tune snow presence
+    float snow = In.Spec.x*0.70  // effect of altitude on snow presence
+                 - 1.4               // basic snow altitude
+		 - (tex_col.w-0.5)*2.5; // effect of alpha channel on snow presence
+
+
+    snow=clamp(snow,0.0,0.85); // snow factor is between 0 and 0.85
+
+    tex_col.xyz=snow*float3(0.9,0.9,0.9) +(1-snow)*tex_col.xyz;
+
+
+    tex_col *= In.Color             // shade with Lambertian lighting
+			+ In.SunLight
+            + snow*In.Spec.y // plus shininess (only for snow)...
+              *1.3*(1.0-0.5*tex_col.w);   // ...whiegted with alpha channel
+
+    Output.RGBColor = tex_col;
+    Output.RGBColor.w = In.Color.w;
+	Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);	
+    return Output;
+}
+
+PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode, 
+                         uniform const int Shadow, uniform const int Special, uniform const int Blendmode)
+{
+    PS_OUTPUT Output;
+    
+    float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+    
+    tex_col.rgb = pow(tex_col.rgb, input_gamma);
+    
+	if ((PcfMode != PCF_NONE))
+    {
+		//fixme: float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
+//		sun_amount *= sun_amount;
+		Output.RGBColor =  tex_col * ((In.Color + In.SunLight /* sun_amount*/));
+    }
+    else
+    {
+    	Output.RGBColor = tex_col * (In.Color + In.SunLight);
+    }
+    // gamma correct
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+ 
+ 
+	if (Special==MAP_SPECIAL_SWAMP) 
+	{
+	  // artificial color for swamp
+	  float4 swampCol=Output.RGBColor + float4(+0.015,+0.015,+0.085,0);
+      Output.RGBColor=(In.Spec.x>0)?swampCol:Output.RGBColor;
+	}
+	
+	if (Blendmode==MAP_BLEND_SMOOTH) {
+	  Output.RGBColor.w = In.Color.w;
+	}
+	  
+  	if (Blendmode==MAP_BLEND_HARD) {
+	  Output.RGBColor.w = 0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5);
+	}
+
+ 	if (Blendmode==MAP_BLEND_MID) {
+	  Output.RGBColor.w = 
+         (0.5)*In.Color.w+
+         (0.5)*(0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5));
+	}
+
+    return Output;
+}
+
+
+technique mtarini_snowy_map
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_NONE);
+   }
+}
+
+technique mtarini_map
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_swampy_map
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+   }
+}
+
+technique mtarini_desert_map
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_snowy_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_DEFAULT);
+   }
+}
+
+technique mtarini_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_swampy_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+   }
+}
+
+technique mtarini_desert_map_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+
+technique mtarini_snowy_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_NVIDIA);
+   }
+}
+
+technique mtarini_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_NO,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+technique mtarini_swampy_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+   }
+}
+
+technique mtarini_desert_map_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_DISTORT_YES,2.4);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_YES, MAP_SPECIAL_NONE, MAP_BLEND_SMOOTH);
+   }
+}
+
+
+// map scribble shader (mtarini)
+
+
+VS_OUTPUT vs_map_scribble_shader(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+   if (UseSecondLight)
+   {
+		diffuse_light += vLightColor;
+	}
+   
+	//directional lights, compute diffuse color
+	float dp = dot(vWorldN, -vSkyLightDir);
+	diffuse_light += max(0, dp) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+	
+	Out.Color.a *= clamp(normalize( float3(matWorldView[2][0],matWorldView[2][1],matWorldView[2][2]) ).z * 2.0 - 1,0,1); 
+
+	//shadow mapping variables
+	float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+
+technique map_scribble_shader
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_map_scribble_shader(PCF_NONE, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
+technique map_scribble_shader_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_map_scribble_shader(PCF_DEFAULT, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+   }
+}
+
+technique map_scribble_shader_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_map_scribble_shader(PCF_NVIDIA, true);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+   }
+}
