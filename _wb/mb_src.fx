@@ -715,7 +715,7 @@ PS_OUTPUT ps_font_background(VS_OUTPUT_FONT In)
 { 
 	PS_OUTPUT Output;
 	Output.RGBColor.a = 1.0f; //In.Color.a;
-	Output.RGBColor.rgb = tex2D(FontTextureSampler, In.Tex0).rgb + In.Color.rgb;
+	Output.RGBColor.rgb = tex2D(FontTextureSampler, In.Tex0).rrr + In.Color.rgb;
 	//	Output.RGBColor.rgb += 1.0f - In.Color.a;
 	
 	return Output;
@@ -5408,6 +5408,101 @@ DEFINE_TECHNIQUES(tree_billboards_dot3_alpha, vs_main_bump_billboards, ps_main_b
 
 
 //
+// FONT SHADERS (outline and general shadowness) --swyter
+///////////////////////////////////////////////////////////////////
+
+struct VS_OUTPUT_FONT_MTARINI
+{
+   float4 Pos					: POSITION;
+   float4 Color					: COLOR0;
+   float3 Tex0					: TEXCOORD0;
+   float  Fog				    : FOG;
+};
+VS_OUTPUT_FONT_MTARINI vs_font_mtarini(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FONT_MTARINI Out;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0.xy = tc;
+   Out.Color = vColor * vMaterialColor;
+   
+   // compute border color
+   Out.Tex0.z = (max(Out.Color.r, max( Out.Color.g, Out.Color.b ) ) >0.5)?0:1;
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+struct PS_INPUT_FONT_MTARINI
+{
+	float4 Color				: COLOR0;
+	float3 Tex0					: TEXCOORD0;
+};
+PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In) 
+{ 
+
+    float4 sample = tex2D(FontTextureSampler, In.Tex0.xy);
+    PS_OUTPUT Output;
+	float bord = clamp((1.0-sample.r)*2.0,0,1);
+	float bordColor =  In.Tex0.z;
+	Output.RGBColor.a = In.Color.a *(bord*(0.40+0.30*(1.0f-sample.g)) + sample.a);
+	
+	float isB = (1.0f-sample.a) * (1.0f-sample.g);
+	Output.RGBColor.rgb = In.Color.rgb * (1-isB) + float3(bordColor,bordColor,bordColor)*(isB);
+	return Output;
+}
+
+technique font_outline_mtarini
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_font_mtarini();
+      PixelShader = compile ps_2_0 ps_font_outline_mtarini();
+   }
+}
+
+
+//
+// PROGRESS BAR SHADER TRICK (hack required again due to my incompetence) --swyter
+///////////////////////////////////////////////////////////////////
+
+VS_OUTPUT_FONT vs_mtarini_progressbar(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FONT Out;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   tc.x *= (vPosition.x )*1.25213;
+
+   Out.Tex0 = tc;
+   Out.Color = vColor * vMaterialColor;
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+technique mtarini_progressbar
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_progressbar();
+      PixelShader = compile ps_2_0 ps_main_no_shadow();
+   }
+}
+
+
+//
 // MAP SHADERS (auto-snow, swamp, disupt of regular patterns...) -- mtarini
 ///////////////////////////////////////////////////////////////////
 
@@ -5448,7 +5543,7 @@ struct PS_INPUT_TLD_MAP
 	float4 SunLight				: TEXCOORD1;
 	float4 ShadowTexCoord		: TEXCOORD2;
 	float2 TexelPos				: TEXCOORD3;
-	float2  Spec                  : TEXCOORD4;
+	float2 Spec					: TEXCOORD4;
 };
 
 
@@ -5584,9 +5679,9 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     
 	if ((PcfMode != PCF_NONE))
     {
-		//fixme: float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
+		float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
 //		sun_amount *= sun_amount;
-		Output.RGBColor =  tex_col * ((In.Color + In.SunLight /* sun_amount*/));
+		Output.RGBColor =  tex_col * ((In.Color + In.SunLight * sun_amount));
     }
     else
     {
