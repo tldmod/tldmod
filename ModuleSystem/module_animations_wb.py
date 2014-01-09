@@ -2165,7 +2165,7 @@ animations = [
  
   # oliphant stand (mtarini): a slowed down version of horse_stand, plus the occasional rampage.
  #  (for some reason, after a while, standing oliphants loses this and get back to standard horse_stand animation)
- ["oliphant_stand", 0, amf_client_prediction,
+ ["oliphant_stand", 0, amf_client_prediction|amf_keep|amf_priority_die|amf_start_instantly|amf_play,
    [3.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
    [2.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
    [3.5, "anim_horse", 600, 644, arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
