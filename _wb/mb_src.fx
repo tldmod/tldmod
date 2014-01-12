@@ -5501,6 +5501,81 @@ technique mtarini_progressbar
    }
 }
 
+// WATERFALLS
+///////////////////
+
+VS_OUTPUT vs_mtarini_waterfall (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   tc.y -= 0.15*time_var;
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+   if (UseSecondLight)
+   {
+		diffuse_light += vLightColor;
+	}
+   
+	//directional lights, compute diffuse color
+	float dp = dot(vWorldN, -vSkyLightDir);
+	diffuse_light += max(0, dp) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+
+	//shadow mapping variables
+	float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+technique mtarini_waterfall
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_waterfall(PCF_NONE, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
 
 //
 // MAP SHADERS (auto-snow, swamp, disupt of regular patterns...) -- mtarini
