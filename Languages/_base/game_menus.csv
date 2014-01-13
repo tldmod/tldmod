@@ -1,0 +1,899 @@
+menu_start_game_1|^^^^^^^^^^What do you fight for?
+mno_start_good|the DAWN of a new Era
+mno_start_evil|the TWILIGHT of Man
+mno_spacer| 
+mno_go_bback|Go Back
+mno_quick|[dev: quick start Gondor]
+mno_quick2|[dev: quick start Mordor]
+menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
+mno_go_forth|          Go forth upon you chosen path...
+mno_cheat00|CHEAT: become a {s21}
+mno_cheat01|CHEAT: become a  {s21}
+mno_cheat03|CHEAT: add 10 {s21} to party
+menu_start_game_3|^^^^^^^^Choose your scenario:
+mno_custom_battle_scenario_1|           Skirmish, Gondor factions vs Harad     .
+mno_custom_battle_scenario_12|            Choose factions for battle             .
+mno_custom_battle_scenario_3|            Skirmish, Elves vs Black Numenoreans   .
+mno_custom_battle_scenario_4|            Helms Deep Defense, Rohan vs Isengard  .
+mno_custom_battle_scenario_5|            Skirmish, North factions vs Rhun       .
+mno_custom_battle_scenario_6|            Siege Attack, Orcs vs Dwarves          .
+mno_custom_battle_scenario_7|            Ambush, Orcs vs Mirkwood               .
+mno_custom_battle_scenario_11|            Test Battles (Tune Balancing!)        .
+mno_custom_battle_scenario_10|            Scenery test battle                    .
+mno_troll_battle_scenario|            Test Troll Battles                     .
+mno_warg_battle_scenario|            Test Warg Battles                      .
+mno_choose_scene|            ** Scene Chooser **                    .
+mno_build_your_own_scene|            ** Build your own scene for TLD **     .
+mno_go_back_spc|                              Go back              .
+menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
+mno_go_back_dot|Go back.
+menu_reports|^^^{s9}
+mno_cheat_faction_orders|Cheat: Faction orders.
+mno_view_upkeep_costs|View upkeep costs.
+mno_view_character_report|View character report.
+mno_view_party_size_report|View party size report.
+mno_view_morale_report|View party morale report.
+mno_view_character_report_02|NPC status check.
+mno_view_faction_strengths_report|View faction strengths report.
+mno_view_traits_report|View traits.
+mno_resume_travelling|Resume travelling.
+menu_custom_battle_2|^^^^^^{s16}
+mno_custom_battle_go|Start.
+mno_leave_custom_battle_2|Cancel.
+menu_custom_battle_end|^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.
+mno_replay|Play this battle again.
+mno_continue_dot|Continue.
+menu_quick_battle_general_test|^^^Current battle: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
+mno_tAA|        +5 Team A
+mno_tAB|        -5 Team A
+mno_tAC|        Select Troop A
+mno_tBA|        +5 Team B
+mno_tBB|        -5 Team B
+mno_tBC|        Select Troop B
+mno_B|         Preset 1
+mno_F|          START FIGHT!
+mno_dot_go_back|.                 Go back
+menu_quick_battle_general_test_select_a| 
+menu_quick_battle_general_test_select_b| 
+menu_quick_battle_troll|^^^^^^^^Choose your troll scenario:
+mno_troll_battle_scenario_10|          Test: Troll VS Infantry
+mno_troll_battle_scenario_11|          Test: Troll VS Archers
+mno_troll_battle_scenario_12|          Test: Troll VS Cavalry
+mno_troll_battle_scenario_13|          Test: Troll VS Lancers
+mno_troll_battle_scenario_14|          Test: Troll VS Troll
+mno_troll_battle_scenario_15|          Toy-Test: player controlled Troll
+menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:
+mno_warg_battle_scenario_10|          Against Wargs: 1 vs 1
+mno_warg_battle_scenario_11|          Against Wargs: 2 vs 3
+mno_warg_battle_scenario_12|          Against Wargs: many vs many
+mno_warg_battle_scenario_10b|          Play Wargs: 1 vs 1
+mno_warg_battle_scenario_11b|          Play Wargs: 2 vs 3
+mno_warg_battle_scenario_12b|          Play Wargs: many vs many
+menu_start_good|^^^^^^^^^^Select your race:
+mno_start_ma|MAN
+mno_start_el|ELF
+mno_start_dw|DWARF
+mno_go_back|Go back
+menu_start_evil|^^^^^^^^^^Whom do you Serve?
+mno_start_eye|SAURON of Mordor, the Lord of the Rings
+mno_start_hand|SARUMAN of Isengard, the White Hand
+menu_start_eye|^^^^^^^^^Your Master is the Lidless Eye^Choose your Race
+mno_start_or|an ORC, serving the Lidless Eye
+mno_start_ur|an URUK, the new breed of Orcs
+mno_start_em|a MAN, subjugated by Sauron
+menu_start_hand|^^^^^^^^^Your Master is the White Hand^Choose your Race
+mno_start_whor|an ORC, serving the White Hand
+mno_start_isur|an URUK-HAI, bred in Isengard
+mno_start_duma|a MAN of Dunland, the Western Plains
+menu_start_good_man|^^^^^^^^^^Select your people:
+mno_start_go|GONDOR, the Kingdom of the White Tower
+mno_start_ro|ROHAN, the Horse people
+mno_start_du|DUNEDAIN, the ancient dynasty of Men
+mno_start_be|BEORNINGS, the Bear people
+mno_start_da|the northern Kingdom of DALE
+menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
+mno_start_ri|RIVENDELL, of Lord Elrond
+mno_start_lo|LOTHLORIEN, of Lady Galadriel
+mno_start_mi|MIRKWOOD, land of the Silvan Elves
+menu_start_good_dwarf|^^^^^^^^^^Select your Lineage:
+mno_start_er|a dweller of EREBOR
+mno_start_ih|a miner of the IRON HILLS
+menu_start_gondor|^^^^^^^^^^Where are you from, in Gondor?
+mno_start_mt|MINAS TIRITH, the Capital
+mno_start_ls|LOSSARNACH, the Fiefdom of the Axemen
+mno_start_la|LAMEDON, the Fiefdom of the Mountain Clansmen
+mno_start_pg|PINNATH GELIN, the Fiefdom of Green Hills
+mno_start_do|DOL AMROTH, the Fiefdom of Swan Knights
+mno_start_pe|PELAGIR, the Coastal Fiefdom
+mno_start_bl|BLACKROOT VALE, the Fiefdom of Archers
+menu_start_eye_man|^^^^^^^^^^Select your people:
+mno_start_hr|HARADRIM, the desert people from the South
+mno_start_bn|Black NUMENOREANS, the renegades from the West
+mno_start_um|UMBAR, the pirates from the South Seas
+mno_start_rh|RHUN, the barbarians from the East
+mno_start_kh|KHAND, the savage people from South-East
+menu_start_eye_orc|^^^^^^^^^^Where do you lurk?
+mno_start_arm|in the armies amassed at MORDOR
+mno_start_cav|in the caves of DOL GULDUR
+menu_start_hand_orc|^^^^^^^^^^Where do you lurk?
+mno_start_armis|in the Armies amassed at ISENGARD
+mno_start_minmo|in the Mines of MORIA
+mno_start_cliff|in the cliffs of Mount GUNDABAD
+menu_start_gondor_mt|^^^^^^^^^^Select your Lineage
+mno_start_1_com|Commoner
+mno_start_2_hib|High-born
+menu_start_haradrim|^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line
+mno_start_1_des|Desert Man
+mno_start_2_far|Far Harad Tribesman
+menu_choose_gender|^^^^^^^^^^Your gender?
+mno_start_male|Male
+mno_start_female|Female
+menu_choose_skill|^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...
+mno_skip|SKIP THAT: let me playtest now
+mno_proc|Proceed as normal
+menu_auto_return|This menu automatically returns to caller.
+menu_morale_report|^^{s1}
+mno_continue|Continue...
+menu_faction_orders|{s9}
+mno_faction_orders_next_faction|Select next faction.
+mno_faction_orders_defend|Force defend.
+mno_faction_orders_gather|Force gather army.
+mno_faction_orders_increase_time|Increase last offensive time by 24 hours.
+mno_faction_orders_rethink|Force rethink.
+mno_faction_orders_rethink_all|Force rethink for all factions.
+menu_character_report|^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
+menu_upkeep_report|{s12}
+menu_party_size_report|^^^^{s1}
+menu_faction_strengths_report|{s1}
+menu_traits_report|{s1}
+menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
+mno_camp_scene|Walk around.
+mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_action|Use an object.
+mno_camp_wait_here|Camp here for some time.
+mno_camp_options|Change TLD options.
+mno_Cheat_enable|Enable cheat/modding options.
+mno_camp_cheat_option|Cheats  (for development use).
+mno_camp_test_madvader|MV Test Menu
+mno_camp_test_cppcoder|CC Test Menu
+menu_camp_cctest|Hurry up and pick something already.
+mno_camp_cctest_injure|Injure Me
+mno_camp_cctest_injure_party_heroes|Injure Companions
+mno_camp_cctest_heal|Heal my Injuries. (Does not fix prof. or attrib.)
+mno_camp_cctest_kill_lord|Kill a Lord
+mno_camp_cctest_rout_ally|Add troops to routed allies
+mno_camp_cctest_rout_enemy|Add troops to routed enemies
+mno_camp_cctest_rout_spawn|Spawn routed parties
+mno_camp_cctest_gain_traits|Get All Traits
+mno_camp_cctest_parties|Count Parties
+mno_camp_cctest_items|Refactionize Items
+mno_camp_cctest_pos|Print Coords x100
+mno_camp_cctest_defiled|Add WIP Items
+mno_camp_cctest_return|Back to camp menu.
+menu_camp_mvtest|What do you want to test today?
+mno_camp_mvtest_pimp|Pimp me up first!
+mno_camp_mvtest_expwar|Start the War!
+mno_camp_mvtest_evilwar|Start the War of Two Towers! (defeat all good factions)
+mno_camp_mvtest_rank|Give me local money, rank and influence.
+mno_camp_mvtest_reinf|Reinforce me!
+mno_camp_mvtest_sieges|Test sieges...
+mno_camp_mvtest_legend|Enable legendary places.
+mno_camp_mvtest_intro|Test cutscenes...
+mno_camp_mvtest_facstr|View faction strengths.
+mno_camp_mvtest_killed|View faction casualties.
+mno_camp_mvtest_facai|View faction AI.
+mno_camp_mvtest_towns|View center strength income.
+mno_camp_mvtest_defeat|Defeat a faction.
+mno_camp_mvtest_advcamps|Test advance camps.
+mno_camp_mvtest_wait|Fast forward for 30 days.
+mno_camp_mvtest_back|Back to camp menu.
+menu_mvtest_destroy_faction|Choose a faction to defeat:
+mno_back_test|Back to test menu.
+mno_kill_faction|{s10}.
+menu_mvtest_facstr_report|{s1}
+menu_mvtest_facai_report|{s1}
+mno_details|Detailed faction report...
+mno_back_mtest|Back to main test menu.
+menu_mvtest_facai_details|{s1}
+mno_change|Change faction: {s7}
+mno_defeat|Set faction strength to -1000 (defeat).
+mno_dying|Set faction strength to 300 (dying).
+mno_spent|Set faction strength to 600 (spent).
+mno_back_ai|Back to faction AI.
+menu_mvtest_faction_casualties|{s1}
+mno_prev_faction|Previous faction
+mno_next_faction|Next faction
+menu_mvtest_town_wealth_report|{s1}
+menu_mvtest_sieges|Test sieges
+mno_order_siege|Order ambient faction to besiege...
+mno_order_siege_wo|Order Gothmog to besiege West Osgiliath.
+mno_order_siege_erech|Order Gothmog to besiege Erech.
+mno_order_siege_pinnath|Order Gothmog to besiege Pinnath Gelin.
+mno_order_siege_edhellond|Order Gothmog to besiege Edhellond.
+mno_order_siege_candros|Order Gothmog to besiege Edoras.
+mno_order_siege_pelargir|Order Gothmog to besiege Pelargir.
+mno_order_siege_wemnet|Order Saruman to besiege Edoras.
+mno_order_siege_dale|Order Partitava to besiege Dale.
+menu_mvtest_order_siege|Order {s1} to besiege...
+mno_back_sieg|Back to siege menu.
+mno_siege_town|{s10}.
+menu_mvtest_advcamps|Test advance camps
+mno_spawnSW|Spawn SW advance camps
+mno_spawnSE|Spawn SE advance camps
+mno_spawnC|Spawn C advance camps
+mno_spawnN|Spawn N advance camps
+mno_disable|Remove all advance camps
+mno_movespawnSW|Move SW theater center and spawn camps there
+mno_movespawnSE|Move SE theater center and spawn camps there
+mno_movespawnC|Move C theater center and spawn camps there
+mno_movespawnN|Move N theater center and spawn camps there
+menu_mvtest_cutscenes|Choose an option:
+mno_intro|Play intro.
+mno_joke|Play GA joke.
+mno_gandalf_1|Play Gandalf advice.
+mno_gandalf_2|Play Gandalf ally down.
+mno_gandalf_3|Play Gandalf enemy down.
+mno_gandalf_4|Play Gandalf victory.
+mno_nazgul_1|Play Nazgul Baggins.
+mno_nazgul_2|Play Nazgul evil war.
+mno_nazgul_3|Play Nazgul victory.
+mno_scenetest|Enter conversation scene.
+mno_partytest|Create a Gandalf party following you.
+menu_game_options|^^^^^^^^Click on an option to toggle:
+mno_game_options_restrict_items|Restricted player equipment:  {s7}
+mno_game_options_formations|Battle formations and AI:  {s7}
+mno_game_options_town_menu|Town NPCs always accessible from Menus:  {s7}
+mno_game_options_cutscenes|Cutscenes:  {s7}
+mno_game_options_injuries|Injuries for companions:  {s7}.
+mno_game_options_death|Permanent death for lords and companions:  {s7}.
+mno_game_options_death2|Permanent death for player (that is YOU!):  {s7}.
+mno_game_options_morale|Battle morale system:  {s7}
+mno_game_options_animal_ambushes|Animal ambushes:  {s7}
+mno_game_options_tweaks|Gameplay tweaks...
+mno_game_options_back|Back to camp menu.
+menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
+mno_tweak_options_compat|Compatibility tweaks...
+mno_tweak_options_strat|Strategy tweaks...
+mno_tweak_options_back|Back to options menu.
+menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
+mno_game_options_compat_party|Maximum number of parties: {s1}
+mno_game_options_compat_back|Back to tweaks menu.
+menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
+mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
+mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
+mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
+mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
+mno_strat_tweaks_back|Back to tweaks menu.
+menu_camp_chest_fill|^^^^^^^^Please choose faction to get items from.
+mno_f_gondor|Gondor items
+mno_f_rohan|Rohan items
+mno_f_isengard|Isengard items
+mno_f_mordor|Mordor items
+mno_f_dwarf|Dwarf items
+mno_f_lorien|Lothlorien items
+mno_f_woodelf|Mirkwood items
+mno_f_imladris|Imladris items
+mno_f_harad|Harad items
+mno_f_khand|Khand items
+mno_f_rhun|Rhun items
+mno_f_dale|Dale items
+mno_f_umbar|Umbar items
+mno_f_moria|Moria items
+mno_f_gundabad|Gundabad items
+mno_f_dunland|Dunland items
+menu_cheat_change_race|^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.
+mno_race_test|TEST     
+mno_race_male|Male
+mno_race_female|Female
+mno_race_gondor|Gondor
+mno_race_rohan|Rohan
+mno_race_dunlander|Dunlander
+mno_race_orc|Orc
+mno_race_uruk|Uruk
+mno_race_haradrim|Haradrim
+mno_race_easterling|Easterling
+mno_race_dwarf|Dwarf
+mno_race_troll|Troll
+mno_race_dunedain|Dunedain
+mno_race_lothlorien|Lothlorien
+mno_race_rivendell|Rivendell
+mno_race_mirkwood|Mirkwood
+mno_race_evil_male|Evil Male
+menu_camp_action|^^^^^^^^^     Which object?
+mno_camp_customize_defilement|Customize Defiled Armor
+mno_camp_drink_water|Drink the Ent Water!
+mno_camp_action_4|Back.
+menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
+menu_assasins_attack_player_retreat|You escaped with your life!
+menu_assasins_attack_player_defeated|You should not be reading this...
+menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?
+mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
+mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
+mno_be_bold|Go on! I'm not afraid of plants or old myths!
+mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
+menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
+menu_fangorn_battle_debrief|you shouldn't be reading this
+menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
+menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
+mno_ow_get_out|Ouch! Let's get out of this cursed place!
+menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
+menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
+mno_get_out|Let's get out of this cursed place!
+menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in a pool of its blood, it looks tremendously dangerous...
+mno_killit|Dispatch it, now. Make sure it dies.
+mno_cageit1|Cage it and drag it around.
+mno_cageit2|Cage it together with the other troll.
+menu_cheat_free_magic_item|Which free magic item do you want?
+mno_cheat_free_magic_item_back|Back
+mno_mi20|{s20}
+menu_cheat_impose_quest|Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)
+mno_just_back|Back
+mno_none|None
+mno_mi21|{s21}
+menu_teleport_to_town_part_two|^^^^^^^^Ride Shadowfax:^to which city inside {s11}?
+mno_go_to_town_|{s10}.
+mno_another_kingdom|No, Another Kingdom
+menu_teleport_to_town|^^^^^^^^Ride Shadowfax:^to which kingdom?
+mno_go_to_town|{s10}.
+mno_teleport_neutrals|Others/neutrals
+mno_teleport_others_factions|More... ({reg5}/3)
+mno_teleport_back|Back to camp menu.
+menu_select_any_troop|Select troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
+mno_trp|{s11} (lvl:{reg11})
+mno_prev_page|[Prev Page]
+mno_next_page|[Next Page]
+mno_opt|[Search Option]
+mno_done|[Done]
+mno_cancel|[Cancel]
+menu_select_any_troop_setup_search|Add troops: setup search parameters^^^Current parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
+mno_one|[Change Tier]
+mno_facup|[Prev Faction]
+mno_facdown|[Next Faction]
+mno_raceup|[Prev Race]
+mno_racedown|[Next Race]
+mno_three|[Regulars or Heroes]
+menu_camp_cheat|Other Cheats Menu (for development use):^^This menu is intended for development use while we are working on improving this mod. If you enable this option then additonal CHEAT menu's will also appear in other game menu's. Please do not report any bugs with this functionality since it is for testing only.
+mno_cheat_disabable|Disable cheat/modding options.
+mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
+mno_cheat_change_race|Change your race (for development use).
+mno_impose_quest|Impose a quest...
+mno_relocate_party|Move to town...
+mno_add_troops|Add troops to player party.
+mno_cheat_get_item|Gain a free magic item
+mno_cheat_add_xp|Add 1000 experience to player.
+mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
+mno_camp_mod_3|Add gear and gold to player.
+mno_camp_mod_4|Spawn a looter party nearby.
+mno_camp_mod_5|Fill merchants with faction stuff
+mno_cheat_back|Back to camp menu.
+menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
+menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
+mno_i_shall_surv|I... shall... survive!
+menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
+mno_end_game_bye|Farewell.
+menu_cattle_herd|You encounter some people.
+mno_cattle_drive_away|Order them to follow.
+mno_cattle_stop|Bring them to a stop.
+mno_leave|Leave.
+menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
+mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
+mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
+mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_debug_leave|DEBUG: avoid this battle.
+mno_encounter_leave|Disengage.
+mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
+mno_encounter_surrender|DEBUG: surrender.
+mno_encounter_cheat_heal|CHEAT: heal yourself.
+menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
+mno_leave_behind|Go on. The sacrifice of these men will save the rest.
+mno_dont_leave_behind|No. We leave no one behind.
+menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
+menu_order_attack_begin|^^^^^^          Your troops prepare to attack the enemy.
+mno_order_attack_begin|Order the attack to begin.
+mno_call_back|Call them back.
+menu_order_attack_2|^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}
+mno_order_attack_continue|Order your soldiers to continue the attack.
+mno_order_retreat|Call your soldiers back.
+menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+mno_reject|Send a message you are too busy.
+mno_send_word|Send word you'll join him shortly.
+menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
+menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
+menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
+menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
+mno_inspect_troll|Inspect downed troll
+menu_total_victory|You shouldn't be reading this... {s9}
+menu_enemy_slipped_away|^^^^^{s17}
+menu_total_defeat|You shouldn't be reading this...
+menu_permanent_damage|^^^^^{s0}
+mno_s0|{s0}
+menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
+mno_pre_join_help_attackers|Move in to help the {s2}.
+mno_pre_join_help_defenders|Rush to the aid of the {s1}.
+mno_pre_join_leave|Don't get involved.
+menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
+mno_join_attack|Charge the enemy.
+mno_join_order_attack|Order your troops to attack with your allies while you stay back.
+mno_join_leave|Disengage.
+mno_join_cheat_heal|CHEAT: heal yourself.
+menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
+menu_test_scene|You enter the test scene.
+mno_enter|Enter.
+menu_battlefields|^^^^^^^^^Select a field...
+mno_enter_f1|Field 1
+mno_enter_f2|Field 2
+mno_enter_f3|Field 3
+mno_enter_f4|Field 4
+mno_enter_f5|Field 5
+menu_join_siege_outside|^^^^^^{s1} has come under siege by {s2}.
+mno_approach_besiegers|Approach the siege camp.
+mno_pass_through_siege|Pass through the siege lines and enter {s1}.
+menu_cut_siege_without_fight|The besiegers let you approach the gates without challenge.
+menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,    where you and your troops are welcomed.
+mno_talk_to_siege_commander| Request a meeting with the commander.
+mno_join_siege_with_allies|Join the next assault.
+mno_join_siege_stay_back|Order your soldiers to join the next assault without you.
+menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+mno_moria_exit_scene|Find your way out!
+menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
+mno_moria_enter|Return into main hall of Moria trough the secret entrance
+mno_moria_enter_door|Enter Moria.
+mno_moria_secret|{s12}
+mno_cheat_steal_book|CHEAT: steal book now
+mno_cheat_steal_book_door|Get the book
+mno_town_sneak|TEST: Disguise yourself and try to sneak into the town.
+mno_castle_start_siege|Besiege the {reg6?town:castle}.
+mno_cheat_castle_start_siege|CHEAT: Besiege the {reg6?town:castle}...
+mno_castle_leave|Leave.
+mno_castle_cheat_interior|CHEAT! Interior.
+mno_castle_cheat_exterior|CHEAT! Exterior.
+mno_castle_cheat_town_walls|CHEAT! Town Walls.
+menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
+mno_siege_request_meeting|Call for a meeting with the castle commander.
+mno_wait_24_hours|Wait until tomorrow.
+mno_castle_lead_attack|Lead your soldiers in an assault.
+mno_attack_stay_back|Order your soldiers to attack while you stay back...
+mno_build_ladders|Prepare ladders to attack the walls.
+mno_cheat_castle_lead_attack|CHEAT: Instant build equipments.
+mno_lift_siege|Abandon the siege.
+menu_siege_attack_meets_sally|^^^^^^The defenders sally out to meet your assault.
+menu_castle_besiege_inner_battle|{s1}
+menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
+mno_build_ladders_cont|Do it.
+menu_castle_attack_walls_simulate|{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
+menu_castle_taken_by_friends|Nothing to see here.
+menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
+menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
+mno_castle_taken_no_claim|Ask no rewards.
+menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
+mno_siege_defender_join_battle|Join the battle.
+mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
+menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
+menu_town_bandits_failed|^^^^^{s4} {s5}
+menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
+menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
+menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+menu_close|Nothing.
+menu_town|You arrived in {s60}.{s12}{s13}
+mno_town_menu_0|Go to some location.
+mno_town_menu_0_door|Door to some location.
+mno_town_approach|Approach {s1}...
+mno_town_castle|Go to {s1}.
+mno_town_castle_door|Door to the castle.
+mno_town_center|Walk to the main square...
+mno_town_center_door|Door to the town center.
+mno_aw_chamber|Never: Enter the AW chamber.
+mno_aw_chamber_door|Open the door.
+mno_trade_with_arms_merchant|Visit the {s40}.
+mno_trade_with_horse_merchant|Visit the {s41}.
+mno_town_prison|Never: Enter the prison.
+mno_town_prison_door|Door to the prison.
+mno_dungeon_enter|Search for the lost spears inside the mountains.
+mno_dungeon_enter_door|Open the door.
+mno_talk_to_castle_commander|Visit the {s61} Barracks.
+mno_speak_with_elder|Speak with the {s6}.
+mno_castle_wait|{s1}.
+mno_town_cheat_alley|CHEAT: Go to the alley.
+mno_castle_cheat_town_exterior|CHEAT: Exterior.
+mno_castle_cheat_dungeon|CHEAT: Prison.
+mno_cheat_town_start_siege|CHEAT: Besiege the {reg6?town:castle}...
+mno_center_reports|CHEAT: Show reports.
+mno_sail_from_port|CHEAT: Sail from port.
+mno_isengard_underground|Go to the underground caverns.
+mno_tirith_toplevel|Climb up to the top level.
+mno_town_leave|Leave...
+mno_town_leave_door|Leave Area
+menu_disembark|Do you wish to disembark?
+mno_disembark_yes|Yes.
+mno_disembark_no|No.
+menu_ship_reembark|Do you wish to embark?
+mno_reembark_yes|Yes.
+mno_reembark_no|No.
+menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
+menu_sneak_into_town_suceeded|Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.
+menu_sneak_into_town_caught|As you try to sneak in, one of the guards recognizes you and raises the alarm! You must flee back through the gates before all the guards in the town come down on you!
+mno_sneak_caught_fight|Try to fight your way out!
+mno_sneak_caught_surrender|Surrender.
+menu_sneak_into_town_caught_dispersed_guards|You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.
+menu_sneak_into_town_caught_ran_away|You make your way back through the gates and quickly retreat to the safety out of town.
+menu_auto_training_ground_trainer|stub
+menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \ You shiver, as all the world goes black around you...^Is this your end?
+menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
+menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
+mno_whatever|Get up!
+menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
+menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
+menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
+menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
+menu_notification_one_side_left|^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!
+menu_notification_total_defeat|^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
+menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.
+menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
+menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
+menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
+mno_explore|Explore this place.
+menu_auto_return_to_map|stub
+menu_auto_player_garrison|stub
+menu_auto_player_garrison_2|stub
+menu_auto_town_brawl|stub
+menu_auto_intro_rohan|stub
+menu_auto_intro_gondor|stub
+menu_auto_intro_mordor|stub
+menu_auto_intro_joke|stub
+menu_auto_convo|stub
+menu_auto_conversation_cutscene|stub
+menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
+mno_help|Help the strangers!
+mno_go_your_way|Leave them alone
+menu_starting_quest_victory|null
+menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
+mno_good_equal|Good faction
+mno_bad_equal|Evil faction
+mno_replay_prev|Replay previous setup
+menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
+mno_cb_gondor|Gondor
+mno_cb_gondor1|Rohan
+mno_cb_gondor2|Lothlorien
+mno_cb_gondor3|Rivendell
+mno_cb_gondor4|Mirkwood
+mno_cb_gondor5|Dwarves
+mno_cb_gondor6|Dale
+mno_cb_gondor7|Beornings
+menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
+mno_cb_mordor|Mordor
+mno_cb_mordor1|Isengard
+mno_cb_mordor2|Dunland
+mno_cb_mordor3|Haradrim
+mno_cb_mordor4|Easterlings
+mno_cb_mordor5|Moria
+mno_cb_mordor6|Gundabad
+mno_cb_mordor7|Rhun
+mno_cb_mordor8|Corsairs
+menu_ancient_ruins|{s1}
+mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
+mno_next_rescue_scene| 
+mno_next_rescue_scene_door|Continue onward!
+mno_pick_troops1|Pick companions for the mission, {reg0} selected
+menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
+mno_troop1|{s1}: {reg1}
+mno_troop2|{s2}: {reg2}
+mno_troop3|{s3}: {reg3}
+mno_troop4|{s4}: {reg4}
+mno_troop5|{s5}: {reg5}
+mno_troop6|{s6}: {reg6}
+mno_troop7|{s7}: {reg7}
+mno_troop8|{s8}: {reg8}
+mno_troop9|{s9}: {reg9}
+mno_go_forward|End selecting companions and proceed.
+menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
+mno_pay_respects|Kneel and pay your respects.
+mno_swear_oath|Swear an oath of vengeance!
+mno_despoil|Desecrate the site
+mno_leave_mound|Leave the mound.
+menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
+menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
+menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
+menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+mno_leave_pyre|Leave the pyre.
+menu_town_ruins|When you approach, you see that {s1} is {s2}
+mno_ruin_menu_0|Explore the place.
+mno_ruin_leave|Leave...
+menu_premutiny|none
+menu_mutiny|{s1}
+menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
+menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
+menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
+mno_repeat|DEBUG: Repeat...
+menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
+menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+mno_scene1|Battlefield5 (file scn battlefield5.sco)
+mno_scene2|Battlefield6 (file scn battlefield6.sco)
+mno_scene3|Battlefield7 (file scn battlefield7.sco)
+mno_scene4|Battlefield8 (file scn battlefield8.sco)
+mno_scene5|Battlefield9 (file scn battlefield9.sco)
+mno_back_3dot|Back...
+menu_choose_scenes_0|Choose a scene: (Page 1 of 21)
+mno_back|Go back.
+mno_next|Next...
+mno_choose_scene_0|advcamp bad: generate
+mno_choose_scene_1|advcamp good: generate
+mno_choose_scene_2|advcamp good siege: generate
+mno_choose_scene_3|aldburg center: generate
+mno_choose_scene_4|aldburg siege: generate
+mno_choose_scene_5|amath dollen fortress: generate
+mno_choose_scene_6|amon hen: generate
+mno_choose_scene_7|aw tomb: indoors
+mno_choose_scene_8|battle scene mountain forest 01: generate|auto entry points
+mno_choose_scene_9|battle scene plain 01: generate|auto entry points
+mno_choose_scene_10|battle scene plain 02: generate|auto entry points
+mno_choose_scene_11|battlefield1: generate
+mno_choose_scene_12|battlefield10: generate
+menu_choose_scenes_13|Choose a scene: (Page 2 of 21)
+mno_previous|Previous...
+mno_choose_scene_13|battlefield2: generate
+mno_choose_scene_14|battlefield3: generate
+mno_choose_scene_15|battlefield4: generate
+mno_choose_scene_16|battlefield5: generate
+mno_choose_scene_17|battlefield6: generate
+mno_choose_scene_18|battlefield7: generate
+mno_choose_scene_19|battlefield8: generate
+mno_choose_scene_20|battlefield9: generate
+mno_choose_scene_21|beorn arena: generate
+mno_choose_scene_22|beorn castle: indoors
+mno_choose_scene_23|beorning village center: generate
+mno_choose_scene_24|bridge 1: generate
+mno_choose_scene_25|cair andros castle: indoors
+menu_choose_scenes_26|Choose a scene: (Page 3 of 21)
+mno_choose_scene_26|cair andros center: generate
+mno_choose_scene_27|cair andros siege: generate
+mno_choose_scene_28|camp scene: generate
+mno_choose_scene_29|caras galadhon center: generate
+mno_choose_scene_30|castle 1 exterior: generate
+mno_choose_scene_31|castle 1 interior: indoors
+mno_choose_scene_32|castle 1 prison: indoors
+mno_choose_scene_33|cerin amroth center: generate
+mno_choose_scene_34|cerin dolen center: generate
+mno_choose_scene_35|cirith ungol center: generate
+mno_choose_scene_36|conversation scene: generate
+mno_choose_scene_37|dale arena: generate
+mno_choose_scene_38|dale center: generate
+menu_choose_scenes_39|Choose a scene: (Page 4 of 21)
+mno_choose_scene_39|dale siege: generate
+mno_choose_scene_40|deadmarshes: generate|auto entry points
+mno_choose_scene_41|dol amroth castle: indoors
+mno_choose_scene_42|dol amroth center: generate
+mno_choose_scene_43|dol amroth siege: generate
+mno_choose_scene_44|dol guldur center: generate
+mno_choose_scene_45|dol guldur north outpost center: generate
+mno_choose_scene_46|dol guldur siege: generate
+mno_choose_scene_47|duel scene: generate
+mno_choose_scene_48|dunland camp center: generate
+mno_choose_scene_49|dwarf arena: indoors
+mno_choose_scene_50|east emnet center: generate
+mno_choose_scene_51|east emnet siege: generate
+menu_choose_scenes_52|Choose a scene: (Page 5 of 21)
+mno_choose_scene_52|east osgiliath castle: indoors
+mno_choose_scene_53|east osgiliath center: generate
+mno_choose_scene_54|east osgiliath siege: generate
+mno_choose_scene_55|eastfold center: generate
+mno_choose_scene_56|eastfold siege: generate
+mno_choose_scene_57|edhellond center: generate
+mno_choose_scene_58|edhellond siege: generate
+mno_choose_scene_59|edoras castle: indoors
+mno_choose_scene_60|edoras center: generate
+mno_choose_scene_61|edoras siege: generate
+mno_choose_scene_62|elf arena: generate
+mno_choose_scene_63|elf castle: indoors
+mno_choose_scene_64|elf prison: indoors
+menu_choose_scenes_65|Choose a scene: (Page 6 of 21)
+mno_choose_scene_65|elf tavern: indoors
+mno_choose_scene_66|erebor castle: indoors
+mno_choose_scene_67|erebor center: indoors
+mno_choose_scene_68|erebor dungeon 01: indoors
+mno_choose_scene_69|erebor outside: generate
+mno_choose_scene_70|erebor siege: generate
+mno_choose_scene_71|erech center: generate
+mno_choose_scene_72|erech siege: generate
+mno_choose_scene_73|esgaroth castle: indoors
+mno_choose_scene_74|esgaroth center: generate
+mno_choose_scene_75|esgaroth old ruins: generate
+mno_choose_scene_76|ethring center: generate
+mno_choose_scene_77|ethring siege: generate
+menu_choose_scenes_78|Choose a scene: (Page 7 of 21)
+mno_choose_scene_78|fangorn: generate
+mno_choose_scene_79|field 1: generate
+mno_choose_scene_80|field 2: generate
+mno_choose_scene_81|field 3: generate
+mno_choose_scene_82|field 4: generate
+mno_choose_scene_83|field 5: generate
+mno_choose_scene_84|ford big1: generate
+mno_choose_scene_85|ford big2: generate
+mno_choose_scene_86|ford big3: generate
+mno_choose_scene_87|ford small1: generate
+mno_choose_scene_88|ford small2: generate
+mno_choose_scene_89|ford small3: generate
+mno_choose_scene_90|forest1: generate
+menu_choose_scenes_91|Choose a scene: (Page 8 of 21)
+mno_choose_scene_91|forest2: generate
+mno_choose_scene_92|forest3: generate
+mno_choose_scene_93|forest4: generate
+mno_choose_scene_94|forest5: generate
+mno_choose_scene_95|forest end: generate
+mno_choose_scene_96|forest fangorn1: generate
+mno_choose_scene_97|forest fangorn2: generate
+mno_choose_scene_98|forest fangorn3: generate
+mno_choose_scene_99|forest fangorn4: generate
+mno_choose_scene_100|forest fangorn5: generate
+mno_choose_scene_101|forest firien1: generate
+mno_choose_scene_102|forest firien2: generate
+mno_choose_scene_103|forest firien3: generate
+menu_choose_scenes_104|Choose a scene: (Page 9 of 21)
+mno_choose_scene_104|forest ithilien1: generate
+mno_choose_scene_105|forest ithilien2: generate
+mno_choose_scene_106|forest ithilien3: generate
+mno_choose_scene_107|forest ithilien4: generate
+mno_choose_scene_108|forest ithilien5: generate
+mno_choose_scene_109|forest lorien1: generate
+mno_choose_scene_110|forest lorien2: generate
+mno_choose_scene_111|forest lorien3: generate
+mno_choose_scene_112|forest lorien4: generate
+mno_choose_scene_113|forest lorien5: generate
+mno_choose_scene_114|forest mirkwood1: generate
+mno_choose_scene_115|forest mirkwood2: generate
+mno_choose_scene_116|forest mirkwood3: generate
+menu_choose_scenes_117|Choose a scene: (Page 10 of 21)
+mno_choose_scene_117|forest mirkwood4: generate
+mno_choose_scene_118|forest mirkwood5: generate
+mno_choose_scene_119|forest some1: generate
+mno_choose_scene_120|forest some2: generate
+mno_choose_scene_121|goblin north outpost center: generate
+mno_choose_scene_122|goblin south outpost center: generate
+mno_choose_scene_123|gondor arena: generate
+mno_choose_scene_124|gondor castle: indoors
+mno_choose_scene_125|gondor castle a: indoors
+mno_choose_scene_126|gondor castle b: indoors
+mno_choose_scene_127|gondor castle c: indoors
+mno_choose_scene_128|gondor prison: indoors
+mno_choose_scene_129|gondor tavern: indoors
+menu_choose_scenes_130|Choose a scene: (Page 11 of 21)
+mno_choose_scene_130|great east road: generate|randomize
+mno_choose_scene_131|gundabad camp center: generate
+mno_choose_scene_132|gundabad mirkwood outpost: generate
+mno_choose_scene_133|gundabad ne outpost center: generate
+mno_choose_scene_134|gundabad nw outpost center: generate
+mno_choose_scene_135|gundabad siege: generate
+mno_choose_scene_136|handsign: generate|auto entry points
+mno_choose_scene_137|harad arena: generate
+mno_choose_scene_138|harad camp center: generate
+mno_choose_scene_139|henneth annun castle: indoors
+mno_choose_scene_140|henneth annun center: generate
+mno_choose_scene_141|hornburg castle: generate
+mno_choose_scene_142|hornburg center: generate
+menu_choose_scenes_143|Choose a scene: (Page 12 of 21)
+mno_choose_scene_143|hornburg siege: generate
+mno_choose_scene_144|ironhill camp center: generate
+mno_choose_scene_145|isengard arena: generate
+mno_choose_scene_146|isengard castle: indoors
+mno_choose_scene_147|isengard center: generate
+mno_choose_scene_148|isengard center flooded: generate
+mno_choose_scene_149|isengard outside: generate|randomize|auto entry points
+mno_choose_scene_150|isengard underground: generate
+mno_choose_scene_151|khand arena: generate
+mno_choose_scene_152|khand camp center: generate
+mno_choose_scene_153|linhir center: generate
+mno_choose_scene_154|linhir siege: generate
+mno_choose_scene_155|lossarnach center: generate
+menu_choose_scenes_156|Choose a scene: (Page 13 of 21)
+mno_choose_scene_156|lossarnach siege: generate
+mno_choose_scene_157|minas morgul center: generate
+mno_choose_scene_158|minas morgul siege: generate
+mno_choose_scene_159|minas tirith castle: indoors|force skybox
+mno_choose_scene_160|minas tirith center: generate
+mno_choose_scene_161|minas tirith center mid: generate
+mno_choose_scene_162|minas tirith center top: generate
+mno_choose_scene_163|minas tirith outside: generate|auto entry points
+mno_choose_scene_164|minas tirith siege: generate
+mno_choose_scene_165|mirkwood: generate
+mno_choose_scene_166|mirkwood ambush: generate
+mno_choose_scene_167|morannon castle: generate
+mno_choose_scene_168|morannon center: generate
+menu_choose_scenes_169|Choose a scene: (Page 14 of 21)
+mno_choose_scene_169|morannon siege: generate
+mno_choose_scene_170|mordor arena: generate
+mno_choose_scene_171|mordor castle: indoors
+mno_choose_scene_172|mordor castle a: indoors
+mno_choose_scene_173|mordor castle b: indoors
+mno_choose_scene_174|mordor prison: indoors
+mno_choose_scene_175|mordor tavern: indoors
+mno_choose_scene_176|moria castle: indoors
+mno_choose_scene_177|moria center: generate
+mno_choose_scene_178|moria deep mines: generate|auto entry points
+mno_choose_scene_179|moria secret entry: generate|auto entry points
+mno_choose_scene_180|moria siege: generate
+mno_choose_scene_181|mountain ambush: generate|randomize
+menu_choose_scenes_182|Choose a scene: (Page 15 of 21)
+mno_choose_scene_182|north rhun camp center: generate
+mno_choose_scene_183|old forest road: generate
+mno_choose_scene_184|orc sentry camp center: generate
+mno_choose_scene_185|pelargir center: generate
+mno_choose_scene_186|pelargir siege: generate
+mno_choose_scene_187|pinnath gelin center: generate
+mno_choose_scene_188|pinnath gelin siege: generate
+mno_choose_scene_189|quick battle 1: generate
+mno_choose_scene_190|quick battle 2: generate
+mno_choose_scene_191|quick battle 3: generate
+mno_choose_scene_192|quick battle 4: generate
+mno_choose_scene_193|quick battle 5: generate
+mno_choose_scene_194|quick battle 6: generate
+menu_choose_scenes_195|Choose a scene: (Page 16 of 21)
+mno_choose_scene_195|quick battle 7: generate
+mno_choose_scene_196|quick battle ambush: generate
+mno_choose_scene_197|quick battle corsair: generate
+mno_choose_scene_198|quick battle random: generate|randomize
+mno_choose_scene_199|random scene: generate|randomize|auto entry points
+mno_choose_scene_200|random scene desert: generate|randomize
+mno_choose_scene_201|random scene desert forest: generate|randomize
+mno_choose_scene_202|random scene desert small: generate|randomize
+mno_choose_scene_203|random scene north: generate|randomize
+mno_choose_scene_204|random scene north forest: generate|randomize
+mno_choose_scene_205|random scene north small: generate|randomize
+mno_choose_scene_206|random scene parade: generate|randomize
+mno_choose_scene_207|random scene plain: generate|randomize
+menu_choose_scenes_208|Choose a scene: (Page 17 of 21)
+mno_choose_scene_208|random scene plain forest: generate|randomize
+mno_choose_scene_209|random scene plain small: generate|randomize
+mno_choose_scene_210|random scene snow: generate|randomize
+mno_choose_scene_211|random scene snow forest: generate|randomize
+mno_choose_scene_212|random scene snow small: generate|randomize
+mno_choose_scene_213|random scene steppe: generate|randomize
+mno_choose_scene_214|random scene steppe forest: generate|randomize
+mno_choose_scene_215|random scene steppe small: generate|randomize
+mno_choose_scene_216|rhun arena: generate
+mno_choose_scene_217|rhun north camp center: generate
+mno_choose_scene_218|rhun south camp center: generate
+mno_choose_scene_219|rivendell camp center: generate
+mno_choose_scene_220|rivercross: generate
+menu_choose_scenes_221|Choose a scene: (Page 18 of 21)
+mno_choose_scene_221|rohan arena: generate
+mno_choose_scene_222|rohan castle: indoors
+mno_choose_scene_223|rohan castle a: indoors
+mno_choose_scene_224|rohan castle b: indoors
+mno_choose_scene_225|rohan prison: indoors
+mno_choose_scene_226|rohan tavern: indoors
+mno_choose_scene_227|small ford: generate
+mno_choose_scene_228|starting quest: generate
+mno_choose_scene_229|tarnost center: generate
+mno_choose_scene_230|tarnost siege: generate
+mno_choose_scene_231|test scene: generate
+mno_choose_scene_232|thranduil hall room: indoors|force skybox
+mno_choose_scene_233|thranduils halls center: generate
+menu_choose_scenes_234|Choose a scene: (Page 19 of 21)
+mno_choose_scene_234|tld sorcerer forest a: generate
+mno_choose_scene_235|tld sorcerer forest b: generate
+mno_choose_scene_236|tld sorcerer forest c: generate
+mno_choose_scene_237|town alley: generate
+mno_choose_scene_238|town store: indoors
+mno_choose_scene_239|town walls: generate
+mno_choose_scene_240|troll cave center: generate
+mno_choose_scene_241|umbar arena: generate
+mno_choose_scene_242|umbar camp center: generate
+mno_choose_scene_243|umbar camp siege: generate
+mno_choose_scene_244|underground warehouse: generate
+mno_choose_scene_245|uruk hai h camp center: generate
+mno_choose_scene_246|uruk hai outpost center: generate
+menu_choose_scenes_247|Choose a scene: (Page 20 of 21)
+mno_choose_scene_247|uruk hai r camp center: generate
+mno_choose_scene_248|village 1: generate
+mno_choose_scene_249|west emnet center: generate
+mno_choose_scene_250|west emnet siege: generate
+mno_choose_scene_251|west osgiliath castle: indoors
+mno_choose_scene_252|west osgiliath center: generate
+mno_choose_scene_253|west osgiliath siege: generate
+mno_choose_scene_254|westfold center: generate
+mno_choose_scene_255|westfold siege: generate
+mno_choose_scene_256|woodelf camp center: generate
+mno_choose_scene_257|woodelf west camp center: generate
+mno_choose_scene_258|woodsmen village2 center: generate
+mno_choose_scene_259|woodsmen village center: generate

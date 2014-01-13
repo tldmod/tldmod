@@ -1,0 +1,74 @@
+﻿qst_deliver_message|- List, który ma otrzymać {s13}
+qst_deliver_message_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją otrzymać {s13}. {s13} odwiedzał {s4}, gdy otrzymał{e/a}ś to zadanie.
+qst_deliver_message_to_enemy_lord|- List, który ma otrzymać {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją otrzymać {s13} ({s15}). {s13} odwiedzał {s4}, gdy otrzymał{e/a}ś to zadanie.
+qst_raise_troops|- Szkolenie {reg1} {s14}
+qst_raise_troops_text|{s9} poprosił cię o wyszkolenie {reg1} {s14} i przyprowadzenie ich do niego.
+qst_escort_messenger|- Eskorta
+qst_escort_messenger_text|Odeskortuj posłańca do {s14}.
+qst_hunt_down_fugitive|- Łotr {s4}
+qst_hunt_down_fugitive_text|{s9} poprosił cię, byś dopadł{/a} i ukarał{/a} mordercę zwanego {s4}. Podobno ukrywa się gdzieś w {s3}.
+qst_bring_back_runaway_serfs|- Uciekający niewolnicy
+qst_bring_back_runaway_serfs_text|{s9} poprosił cię, byś sprowadził{/a} trzy grupy niewolników z powrotem do {s2}. Powiedział, że wszystkie trzy grupy zapewne kierują się w stronę {s3}.
+qst_follow_spy|- Śladem szpiega
+qst_follow_spy_text|{s11} poprosił cię, byś podążył{/a} za szpiegiem, który niedługo opuści {s12}. Musisz uważać by nie zostać zauważon{y/a} przez szpiega w czasie jego podróży, gdyż może on nabrać podejrzeń i zawrócić. Gdy już szpieg spotka się ze swym wspólnikiem, masz ich pojmać i przyprowadzić do zleceniodawcy ({s11}).
+qst_capture_enemy_hero|- Pojmanie wrogiego dowódcy
+qst_capture_enemy_hero_text|{s11} poprosił cię, byś pojmała{/a} wrogiego dowódcę.
+qst_lend_companion|- {reg3?Towarzyszka:Towarzysz}
+qst_lend_companion_text|{s9} poprosił cię, byś wypożyczył{/a} mu swego towarzysza. {s3}, bo o {reg3?nią:niego} właśnie chodzi, wróci do ciebie za tydzień.
+qst_capture_prisoners|- Pojmanie
+qst_capture_prisoners_text|{s9} chciał, byś przyprowadził{/a} mu {reg1} więźniów.
+qst_investigate_fangorn|- Fangorn
+qst_investigate_fangorn_text|{s9} poprosił cię, byś zbadał{/a} co się dzieje w lesie Fangorn, a następnie złożył{a/} raport.
+qst_capture_troll|- Trol
+qst_capture_troll_text|{s9} poprosił cię, byś złapał{/a} dzikiego trola do jego armi.
+qst_kill_troll|- Przeprowadzka
+qst_kill_troll_text|{s9} poprosił cię o uwolnienie {s13} od rozszalałego Trola.
+qst_mirkwood_sorcerer|- Zabić czarownika
+qst_mirkwood_sorcerer_text|Moc Galadrieli wykorzystywana w obronie Lothlorien zostały bardzo osłabiona w wyniku przeklętych rytuałów czarownika z Dol Guldur.  Mimo swej śmiertelności stanowi wielkie niebezpieczeństwo dla Elfów. Znajdziejsz go w Mrocznej Puszczy, niedaleko Dol Guldur. Pamiętaj, że tylko skryte działanie pozwoli go pokonać.
+qst_find_lost_spears|- Włócznia króla Bladorthina
+qst_find_lost_spears_text|{s9} poprosił cię o odnalezienie krasnoludzkiej włóczni wykonanej dla króla Bladorthina. Musisz zapytać krasnoludów o zgodę na poszukiwania w głębi Samotnej Góry.
+qst_rescue_prisoners|- Na ratunek
+qst_rescue_prisoners_text|{s9} chciał, byś uratował{/a} {reg1} więźniów.
+qst_scout_enemy_town|- Wrogie miasto
+qst_scout_enemy_town_text|{s9} poprosił cię, byś przeprowadził{a/} zwiad wokół {s13}.
+qst_dispatch_scouts|- {s13}
+qst_dispatch_scouts_text|{s9} poprosił cię, byś rozlokował zwiadowców opodal {s13}.
+qst_eliminate_patrols|- Patrol
+qst_eliminate_patrols_text|{s9} poprosił cię o wyeliminowanie {reg1} {s13} wrogich oddziałów.
+qst_lend_surgeon|- {reg3?Felczerka:Felczer} {s3}
+qst_lend_surgeon_text|{s1} prosił cię, byś wypożyczył{/a} mu sw{reg3?ą doświadczoną felczerkę:ego doświadczonego felczera}, któr{reg3?ą:ym} jest {s3}.
+qst_follow_army|- Kampania wojenna
+qst_follow_army_text|Podążaj za armią, którą dowodzi {s9}.
+qst_report_to_army|- {s13}
+qst_report_to_army_text|Złóż raport o wrogich ruchach wokół {s13}
+qst_deliver_cattle_to_army|- Zapasy
+qst_deliver_cattle_to_army_text|Dostarcz {reg3} szt żywności do {s13}
+qst_join_siege_with_army|- Oblężenie
+qst_join_siege_with_army_text|Przyłącz się do oblężenia i wspólnymi siłami zdobądźcie {s14}
+qst_scout_waypoints|- Zwiad
+qst_scout_waypoints_text|Rusz na zwiad pod {s13}, {s14} i {s15}
+qst_move_cattle_herd|- {s12}
+qst_move_cattle_herd_text|Starszy {s10} poprosił cię o przyprowadzenie {s12} do {s13}.
+qst_escort_merchant_caravan|- Transport
+qst_escort_merchant_caravan_text|Eskortuj transport zapasów do {s8}.
+qst_deliver_wine|- {s6}
+qst_deliver_wine_text|{s9} z {s3} poprosił cię, byś dostarczył{/a} im {reg5} szt {s6} do {s4} w ciągu 7 dni.
+qst_troublesome_bandits|- Kłopotliwe gobliny
+qst_troublesome_bandits_text|{s9} miasta {s4} poprosił cię, byś dopadł{/a} grasujące w pobliżu kłopotliwe gobliny.
+qst_deal_with_looters|- Orkowie
+qst_deal_with_looters_text|Starszy {s4} poprosił cię, byś zaj{ął/ęła} się plemiennymi orkami błąkającymi się wokół {s4}.
+qst_deal_with_night_bandits|- Gobliny {s14}
+qst_deal_with_night_bandits_text|Starszy {s14} poprosił cię o zajęcie się nocnymi napadami goblinów w {s14}.
+qst_deliver_food|- Żywność dla {s3}
+qst_deliver_food_text|{s9} z {s3} poprosił cię, byś dostarczył{/a} im {reg5} szt żywności w ciągu 10 dni.
+qst_deliver_iron|- {s6}
+qst_deliver_iron_text|{s3} poprosił cię, byś dostarczył{/a} im {reg5} szt {s6}.
+qst_tld_introduction|- Informacje
+qst_tld_introduction_text|- Dostarcz do dowództwa informacje o orkach z Mordoru
+qst_treebeard_kill_orcs|- Drwale
+qst_treebeard_kill_orcs_text|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
+qst_oath_of_vengeance|- Zemsta
+qst_oath_of_vengeance_text|Rozwścieczony śmiercią {s1}, przysiągł{e/a}ś krwawą zemstę siłom wspierającym {s2}. W ciągu najbliższych dni musisz zniszczyć jak najwięcej armii wspierających {s2}. Masz świadomość, że twoi ludzie byli świadkami tej przysięgi i dlatego nie chcesz wyjść na krzywoprzysięzce. Orgię krwi czas zacząć!
+qst_quests_end|Quests End
+qst_quests_end_text|.

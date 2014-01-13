@@ -1,0 +1,84 @@
+﻿skl_trade|Targowanie
+skl_trade_desc|Każdy poziom tej umiejętności zwiększa ilość ekwipunku otrzymanego za Pkt Prestiżu. (Umiejętność oddziału)
+skl_leadership|Przywództwo
+skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%. (Umiejętność dowódcy)
+skl_prisoner_management|Zarządzanie więźniami
+skl_prisoner_management_desc|Każdy poziom tej umiejętności zwiększa maksymalną ilość jeńców o %d. (Umiejętność dowódcy)
+skl_reserved_1|Reserved Skill 1
+skl_reserved_1_desc|This is a reserved skill.
+skl_reserved_2|Reserved Skill 2
+skl_reserved_2_desc|This is a reserved skill.
+skl_reserved_3|Reserved Skill 3
+skl_reserved_3_desc|This is a reserved skill.
+skl_reserved_4|Reserved Skill 4
+skl_reserved_4_desc|This is a reserved skill.
+skl_persuasion|Perswazja
+skl_persuasion_desc|Ta umiejętność pomaga Ci nakłaniać inne osoby do zaakceptowania Twojego punktu widzenia. (Umiejętność osobista)
+skl_engineer|Inżynieria
+skl_engineer_desc|Ta umiejętność pozwala na szybsze i bardziej efektywne budowanie maszyn oblężniczych i budynków. (Umiejętność oddziału)
+skl_first_aid|Pierwsza pomoc
+skl_first_aid_desc|Bohaterowie, na każdy poziom tej umiejętności, odzyskują 5%% straconych podczas misji punktów zdrowia. (Umiejętność oddziału)
+skl_surgery|Chirurgia
+skl_surgery_desc|Każdy punkt w tej umiejętności daje 4%% szansy na to, że śmiertelnie ugodzony członek oddziału zostanie ranny, a nie zabity. (Umiejętność oddziału)
+skl_wound_treatment|Leczenie ran
+skl_wound_treatment_desc|Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)
+skl_inventory_management|Zarządzanie ekwipunkiem
+skl_inventory_management_desc|Zwiększa pojemność ekwipunku o 6 pól na każdy poziom umiejętności. (Umiejętność dowódcy)
+skl_spotting|Spostrzeganie
+skl_spotting_desc|Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)
+skl_pathfinding|Szukanie ścieżek
+skl_pathfinding_desc|Szybkość oddziału podczas poruszania się po mapie zwiększa się o 3%% na poziom umiejętności. (Umiejętność oddziału)
+skl_tactics|Taktyka
+skl_tactics_desc|Na każde dwa poziomy tej umiejętności zwiększa się 1 początkowa przewaga bitewna. (Umiejętność oddziału)
+skl_tracking|Tropienie
+skl_tracking_desc|Ślady dają więcej  informacji. (Umiejętność oddziału)
+skl_trainer|Szkolenie
+skl_trainer_desc|Każdego dnia każdy bohater, który ma tę umiejętność, dodaje trochę doświadczenia wszystkim członkom oddziału mającym niższy poziom, niż on. Dodawane dośw.: {0,4,10,16,23,30,38,46,55,65,80}. (Umiejętność osobista)
+skl_reserved_5|Reserved Skill 5
+skl_reserved_5_desc|This is a reserved skill.
+skl_reserved_6|Reserved Skill 6
+skl_reserved_6_desc|This is a reserved skill.
+skl_reserved_7|Reserved Skill 7
+skl_reserved_7_desc|This is a reserved skill.
+skl_reserved_8|Reserved Skill 8
+skl_reserved_8_desc|This is a reserved skill.
+skl_looting|Plądrowanie
+skl_looting_desc|Każdy punkt tej umiejętności zwiększa łup z plądrowania o 10%%. (Umiejętność oddziału)
+skl_horse_archery|Łucznictwo konne
+skl_horse_archery_desc|Zmniejsza kary celności i zadawanych obrażeń w przypadku strzelania i rzucania z końskiego grzbietu. (Umiejętność osobista)
+skl_riding|Jeździectwo
+skl_riding_desc|Pozwala na dosiadanie lepszych wierzchowców i zwiększa szybkość jazdy oraz zdolność manewru. (Umiejętność osobista)
+skl_athletics|Atletyka
+skl_athletics_desc|Zwiększa szybkość biegu. (Umiejętność osobista)
+skl_shield|Tarcza
+skl_shield_desc|Obniża uszkodzenia, jakich doznaje tarcza (o 8%% na poziom umiejętności) i zwiększa szybkość oraz biegłość posługiwania się tarczą. (Umiejętność osobista)
+skl_weapon_master|Mistrzostwo w broniach
+skl_weapon_master_desc|Ułatwia szkolenie się i zwiększa limit biegłości w posługiwaniu się bronią. Limity to odpowiednio: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Umiejętność osobista)
+skl_reserved_9|Reserved Skill 9
+skl_reserved_9_desc|This is a reserved skill.
+skl_reserved_10|Reserved Skill 10
+skl_reserved_10_desc|This is a reserved skill.
+skl_reserved_11|Reserved Skill 11
+skl_reserved_11_desc|This is a reserved skill.
+skl_reserved_12|Reserved Skill 12
+skl_reserved_12_desc|This is a reserved skill.
+skl_reserved_13|Reserved Skill 13
+skl_reserved_13_desc|This is a reserved skill.
+skl_power_draw|Potężny naciąg
+skl_power_draw_desc|Pozwala na używanie lepszych łuków. Każdy punkt (do czterech plus wymagania "potężnego naciągu" danego łuku) zwiększa obrażenia zadawane przez łuk o 14%%. (Umiejętność osobista)
+skl_power_throw|Potężny rzut
+skl_power_throw_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy rzucie o 10%%. (Umiejętność osobista)
+skl_power_strike|Potężny cios
+skl_power_strike_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy walce wręcz o 8%%. (Umiejętność osobista)
+skl_ironflesh|Żelazne ciało
+skl_ironflesh_desc|Każdy punkt w tej umiejętności zwiększa ilość punktów zdrowia o 2. (Umiejętność osobista)
+skl_reserved_14|Reserved Skill 14
+skl_reserved_14_desc|This is a reserved skill.
+skl_reserved_15|Reserved Skill 15
+skl_reserved_15_desc|This is a reserved skill.
+skl_reserved_16|Reserved Skill 16
+skl_reserved_16_desc|This is a reserved skill.
+skl_reserved_17|Reserved Skill 17
+skl_reserved_17_desc|This is a reserved skill.
+skl_reserved_18|Reserved Skill 18
+skl_reserved_18_desc|This is a reserved skill.

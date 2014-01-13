@@ -1,0 +1,32 @@
+[main]
+host = https://www.transifex.com
+
+[tld.factions]
+file_filter = <lang>\factions.csv
+source_file = _base\factions.csv
+source_lang = en
+type = INI
+
+[tld.hints]
+file_filter = <lang>\hints.csv
+source_file = en\hints.csv
+source_lang = en
+type = INI
+
+[tld.item_kinds]
+file_filter = <lang>\item_kinds.csv
+source_file = _base\item_kinds.csv
+source_lang = en
+type = INI
+
+[tld.parties]
+file_filter = <lang>\parties.csv
+source_file = _base\parties.csv
+source_lang = en
+type = INI
+
+[tld.party_templates]
+file_filter = <lang>\party_templates.csv
+source_file = _base\party_templates.csv
+source_lang = en
+type = INI

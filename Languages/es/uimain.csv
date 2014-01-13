@@ -1,0 +1,93 @@
+﻿ui_texture_detail|Detalle de textura:
+ui_max_frame_rate|FPS Máximos
+ui_enable_bumpmap|Utilizar Bump Mapping
+ui_disable_blood|Ocultar sangre
+ui_disable_music|Desactivar música
+ui_disable_sound|Desactivar sonido
+ui_enable_cheats|Permitir trucos
+ui_enable_edit_mode|Permitir Modo Editor (Aviso, esto ralentiza el juego)
+ui_enable_pixel_shaders|Utilizar Píxel Shaders
+ui_enable_sound_variation|Permitir Variaciones de Sonido
+ui_enable_vertex_shaders|Método de Renderización:
+ui_shadow_quality|Calidad de Sombras
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Mostrar FPS
+ui_start_windowed|Comenzar en Modo Ventana
+ui_trialmode_caption|Activación
+ui_trialmode|Por favor, activa Mount&&Blade introduciendo el código. Tu código único de, 16 dígitos está incluido dentro de la caja del juego.\nSi no quieres activar el juego en estos momentos, puedes jugar en modo de prueba, aunque no podrás avanzar más allá de nivel 8.
+ui_launch_buy|Comprar una licencia en TaleWorlds.com
+ui_launch_faq|FAQ de las Ventas Online
+ui_trialmode2|Para activar el juego ahora...
+ui_trialmode3|O también puedes...
+ui_trialmode4|Si tienes preguntas sobre el proceso de activación, puedes leer...
+ui_serial_key_caption|Número de Serie
+ui_notification_serial_input|Introducir tu número de serie debajo (puedes copiarlo y pegarlo) y hacer click en el botón Activar
+ui_activate|Activar
+ui_paste|Pegar
+ui_notification_serial_internet_connection|¡La activación requiere conexión a Internet!
+ui_notification_serial_offline|Si este ordenador no tiene acceso a Internet, también puedes usar:
+ui_manual_activation|Activación manual
+ui_manual_activation_caption|Activación manual
+ui_cancel2|Cancelar
+ui_ok2|OK
+ui_activation_successful|¡Mount&&Blade activado con éxito!
+ui_activation_successful2|Por favor, guarda tu número de serie para referencia futura. Puede que lo vuelvas a necesitar si quieres instalar Mount&Blade en un nuevo ordenador.
+ui_activation_denied|¡Activación denegada!
+ui_notification_serial_already_used|Este número de serie ya se está utilizando en otro ordenador. Tendrás que esperar unas semanas antes de reactivarlo en este ordenador.
+ui_notification_unable_to_connect_to_activation_server|¡Imposible conectar con el servidor de activación!
+ui_notification_unable_to_connect_to_activation_server2|Por favor, confirma que tu conexión a Internet está activa y funciona correctamente, e inténtalo de nuevo. Si estás utilizando un cortafuegos, deberás dar permiso al juego para acceder a internet. Si falla, siempre puedes utilizar la activación manual.
+ui_incorrect_serial_number|¡Número de serie incorrecto!
+ui_incorrect_hardware_hash|¡Hardware Hash incorrecto!
+ui_incorrect_activation_code|¡Código de activación incorrecto!
+ui_cant_write_to_registry|¡No se puede modificar el registro!
+ui_video|Vídeo
+ui_audio|Audio
+ui_game|Juego
+ui_advanced|Avanzado
+ui_mount_and_blade_is_ready|Mount&&Blade está preparado.
+ui_notification_trial_mode|Mount&&Blade se encuentra actualmente en versión de prueba. En esta versión puedes jugar libremente hasta que tu personaje llegue al nivel 6. Para continuar, por favor adquiere una licencia en TaleWorlds.com. Comprar una licencia online es muy rápido y con ello desbloqueas el resto del juego.
+ui_there_are_no_modules_installed|There are no modules installed!
+ui_notification_new_version|Se ha encontrado una versión nueva de Mount&Blade.\nLa versión instalada actualmente es %d.%d%d%d.\nLa última versión de Mount&Blade es %d.%d%d%d.\nPuedes descargar la última versión de www.taleworlds.com.
+ui_new_version_found|¡Se ha encontrado una versión nueva!
+ui_notification_unable_to_retreive_new_version|Imposible recuperar la información de la nueva versión. Por favor, inténtalo más tarde.
+ui_new_version|Nueva Versión:
+ui_notification_latest_version|La Versión instalada de Mount&Blade es la última disponible.
+ui_mount_and_blade_is_up_to_date|¡Mount&Blade ya está actualizado!
+ui_off|Off
+ui_continue_playing_the_trial_mode|Continuar jugando en modo prueba.
+ui_faq_caption|FAQ
+ui_faq_text|P: ¿Qué es la activación?\r\nR: El sistema de activación es un método amigable de protección anticopia que se basa en la distribución de un número de serie único que se adjunta a todas las copias del juego. Es necesario activar el juego con este número de serie una vez en cada ordenador donde quieras jugar. Tras activarlo una vez, no requerirás hacer nada más para jugar (como por ejemplo dejar el disco del juego en el lector). Mientras guardes tu número de serie podrás activar y jugar fácilmente, incluso luego de varios años.\r\n\r\nP: ¿Dónde puedo encontrar mi número de serie?\r\nR: Cada caja del juego incluye el número de serie único de cada juego. Diferentes distribuidores pueden adjuntar el código de activación de diferentes formas, pero por lo general, está impreso en el manual. Si has comprado tu juego online, el distribuidor online deberá enviarte el número de serie.\r\n\r\nP: ¿Cómo funciona el proceso de activación?\r\nR: El juego crea un valor hash con las especificaciones de tu ordenador y lo envía a un servidor de activación a través de internet, junto con tu número de serie. El servidor de activación registra la clave de tu ordenador y responde con número de activación, que a su vez, desbloquea la versión completa del juego.\r\n\r\nP: ¿Puedo activar el juego en diferentes ordenadores?\r\nR: Sí. Pero recuerda que el juego está licenciado en tu nombre, para tu uso personal. El servidor de activación puede rechazar temporalmente un número de serie si se utiliza en demasiados ordenadores en un determinado período de tiempo. \r\n\r\nP: El programa no responde luego de que pincho varias veces en el botón de activar.\r\nR: A veces el proceso de activación puede tomar hasta medio minuto. Sé paciente. El juego reportará el resultado.\r\n\r\nP: Mi ordenador no tiene acceso a internet. ¿Cómo puedo activar el juego?\r\nR: En este caso deberás utilizar la actualización manual. Pulsa sobre ""Introducir tu número de serie"", y luego ""Activación Manual"". Tendrás que abrir una página web de activación desde otro ordenador que esté conectado a internet.\r\n
+ui_auto_adjust|Auto Ajustar
+ui_screen_size|Resolución de pantalla:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Utilizar Resolución del Escritorio
+ui_play|Jugar Mount&&Blade
+ui_check_for_new_version|Comprobar si hay una nueva versión
+ui_configure|Configurar
+ui_configure_caption|Configurar
+ui_gamersgate_website|Página web de GamersGate
+ui_mountandblade_website|Página web de Mount & Blade
+ui_current_setting|           Escenario actual:
+ui_manual_activation_text1|1) En tu explorador, abre la siguiente dirección:
+ui_manual_activation_text2|2) En la página web que aparece, introduce tu número de serie...
+ui_manual_activation_text3|3) ... y el hardware hash de este equipo:
+ui_manual_activation_text4|4) La página te dará a continuación un código de activación. Escríbelo o pégalo debajo y pulsa OK.
+ui_activation_code|Código de Activación:
+ui_force_vsync|Forzar Vertical Sync.
+ui_module_newer_than_application|Lo seleccionado NO FUNCIONA con esta versión del juego. Se recomienda que no lo utilices. Para remediar esto, puedes comprobar si hay una nueva versión.
+ui_module_older_than_application|Lo seleccionado fue creado para una versión antigua del juego y puede no funcionar en esta versión. Puedes intentar utilizarlo, pero tal vez tengas problemas. Para remediar esto, puedes comprobar si hay una nueva versión.
+ui_m_low|Bajo
+ui_m_high|Alto
+ui_m_ultra_high|Ultra alto
+ui_force_single_threading|Forzar Single Threading
+ui_not_enough_memory|Parece que tienes %d MB de espacio en tu memoria virtual. Mount&Blade requiere al menos 700 MB de memoria para poder funcionar sin problema. Si Mount&Blade salta al escritorio continuamente mientras juegas, por favor, cierra algunos otros programas antes de comenzar a jugar Mount&Blade o incrementa tu memoria virtual en Panel de Control -> Menú sistema.
+ui_install|Instalar Mount&Blade
+DirectXText|"Mount&Blade requiere DiractX 9.0c o suparior para funcionar. Este ordenador no cumple dicho requerimiento. Para solucionar el problema debes descargar e instalar la última versión de DirectX desde la web de Microsoft. ¿Quieres visitar la web de descarga de DirectX ahora?"
+NoMountAndBladeText|"Mount&Blade no ha sido instalado en este ordenador. Por favor, descarga el instalador completo desde www.taleworlds.com y utilízalo para instalar el juego."
+ui_SavegamesText|¿Quieres conservar tus partidas guardadas?
+ui_trialmode_online|Mount&&Blade está ejecutándose en modo de prueba. En este modo, puedes jugar libremente hasta que tu personaje llegue a nivel 7. Para continuar, por favor, compra una licencia en TaleWorlds.com. Te llevará solamente un minuto comprarla online y desbloquear el modo completo.
+ui_launch_activate|Introducir el número de serie
+ui_trialmode2_online|Al comprar una licencia, obtendrás un número de serie.\nPara desbloquear el modo completo...
+ui_trialmode3_online|O si aún no quieres comprar el juego, puedes...
+ui_trialmode4_online|El proceso de ventas online es totalmente seguro. Respetamos el derecho a la seguridad, la privacidad, el tener copias de seguridad del juego y modificar el hardware de los ordenadores de nuestros clientes. Si quieres leer más sobre nuestra política de ventas, por favor, mira aquí:

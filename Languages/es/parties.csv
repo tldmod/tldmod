@@ -1,0 +1,442 @@
+﻿p_temp_party|Grupo Temporal
+p_camp_bandits|Campamento de Bandidos
+p_temp_party_2|Grupo Temporal 2
+p_temp_casualties|Bajas
+p_temp_casualties_2|Bajas
+p_temp_casualties_3|Bajas
+p_temp_wounded|Enemigos Heridos
+p_temp_killed|Enemigos Asesinados
+p_main_party_backup|
+p_encountered_party_backup|
+p_collective_friends_backup|
+p_player_casualties|
+p_enemy_casualties|
+p_ally_casualties|
+p_collective_enemy|Enemigo Colectivo
+p_collective_ally|Aliado Colectivo
+p_collective_friends|Aliado Colectivo
+p_town_minas_tirith|Minas Tirith
+p_town_pelargir|Pelargir
+p_town_linhir|Linhir
+p_town_dol_amroth|Dol Amroth
+p_town_edhellond|Edhellond
+p_town_lossarnach|Lossarnach
+p_town_tarnost|Tarnost
+p_town_erech|Erech
+p_town_pinnath_gelin|Pinnath Gelin
+p_town_west_osgiliath|Osgiliath Oeste
+p_town_henneth_annun|Henneth Annun
+p_town_cair_andros|Cair Andros
+p_town_calembel|Calembel
+p_town_edoras|Edoras
+p_town_aldburg|Aldburg
+p_town_hornburg|Abismo de Helm
+p_town_east_emnet|Estemnet
+p_town_westfold|Folde Oeste
+p_town_west_emnet|Oestemnet
+p_town_eastfold|Folde Este
+p_town_morannon|La Puerta Negra
+p_town_minas_morgul|Minas Morgul
+p_town_cirith_ungol|Campamento de Patrullas Orco
+p_town_east_osgiliath|Osgiliath Este
+p_town_orc_sentry_camp|Campemento de centinelas Orco
+p_town_isengard|Isengard
+p_town_urukhai_outpost|Puesto de Avanzada Uruk-Hai
+p_town_urukhai_h_camp|Campamento de Caza Uruk-Hai
+p_town_urukhai_r_camp|Campamento Uruk-Hai del río
+p_town_caras_galadhon|Caras Galadhon
+p_town_cerin_dolen|Cerin Dolen
+p_town_cerin_amroth|Cerin Amroth
+p_town_thranduils_halls|Salones de Thranduil
+p_town_woodelf_camp|Campamento de los Elfos del Bosque
+p_town_woodelf_west_camp|Campamento Oeste de los Elfos del Bosque
+p_town_woodsmen_village|Pueblo de los Hombres del Bosque
+p_town_beorning_village|Pueblo Beórnida
+p_town_beorn_house|Casa de Beorn
+p_town_moria|Puertas de Moria
+p_town_troll_cave|Cueva de Troll
+p_town_dale|Valle
+p_town_esgaroth|Esgaroth
+p_town_dunland_camp|Campamento Dunlendino
+p_town_harad_camp|Campamento Haradrim
+p_town_khand_camp|Campamento de Khand
+p_town_umbar_camp|Campamento Corsario
+p_town_imladris_camp|Campamento de Rivendel
+p_town_dol_guldur|Dol Guldur
+p_town_dol_guldur_north_outpost|Puesto de Vigilancia Norte de Dol Guldur
+p_town_rhun_main_camp|Campamento Principal de Rhûn
+p_town_rhun_south_camp|Puesto de Vigilancia Meridional de Rhûn
+p_town_rhun_north_camp|Puesto de Vigilancia Septentrional de Rhûn
+p_town_gundabad|Puesto de Vigilancia Noreste de Gundabad
+p_town_gundabad_ne_outpost|Puesto de Vigilancia Noreste de Gundabad
+p_town_gundabad_nw_outpost|Puesto de Vigilancia Noroeste de Gundabad
+p_town_goblin_north_outpost|Puesto de Vigilancia Norte de los Trasgos
+p_town_goblin_south_outpost|Puesto de Vigilancia Sur de los Trasgos
+p_town_gundabad_m_outpost|Puesto de Vigilancia de Gundabad en el Bosque Negro
+p_town_erebor|Erebor
+p_town_ironhill_camp|Cantera de las Colinas de Hierro
+p_advcamp_gondor|Puesto Avanzado de Gondor
+p_advcamp_rohan|Puesto Avanzado Rohirrim
+p_advcamp_isengard|Puesto Avanzado de Isengard
+p_advcamp_mordor|Puesto Avanzado de Mordor
+p_advcamp_harad|Puesto Avanzado Haradrim
+p_advcamp_rhun|Puesto Avanzado de Rhûn
+p_advcamp_khand|Puesto Avanzado de Khand
+p_advcamp_umbar|Puesto Avanzado de Umbar
+p_advcamp_lorien|Puesto Avanzado de Lórien
+p_advcamp_imladris|Puesto Avanzado Imladris
+p_advcamp_woodelf|Puesto Avanzado del Bosque Negro
+p_advcamp_moria|Campamento de Paso de Moria
+p_advcamp_guldur|Puesto Avanzado de Dol Guldur
+p_advcamp_gundabad|Puesto Avanzado de Monte Gundabad
+p_advcamp_dale|Puesto Avanzado del Valle
+p_advcamp_dwarf|Puesto Avanzado de Erebor
+p_advcamp_dunland|Campamento de Paso Dunledino
+p_advcamp_beorn|Campamento de Paso Beórnida
+p_centers_end| 
+p_argonath|Argonath
+p_argonath2|Argonath
+p_hand_isen|Mano Simbólica de Isengard
+p_mount_doom|Monte del Destino
+p_town_barad_dur|Barad Dûr
+p_ford_cair_andros1|Anduin
+p_ford_cair_andros2|Anduin
+p_ford_caras_galadhon|Anduin
+p_ford_brown_lands|Anduin
+p_ford_rauros|Anduin
+p_ford_pelargir|Anduin
+p_ford_edhellond|Anduin
+p_ford_cerin_dolen|Cauce de Plata
+p_old_ford|Bosque viejo
+p_ford_erech|Ringlo
+p_ford_isen1|Isengard
+p_ford_isen2|Isengard
+p_ford_rohan|Entaguas
+p_ford_rohan2|Entaguas
+p_ford_fangorn|Entaguas
+p_ford_fangorn2|Limclaro
+p_ford_moria|Cauce de Plata
+p_test_scene|escena de test
+p_battlefields|Campo de Batalla
+p_theater_se_center|SE Theater center
+p_theater_sw_center|SW Theater center
+p_theater_c_center|C Theater center
+p_theater_n_center|N Theater center
+p_fangorn_center|Centro de Fangorn
+p_looter_spawn_point|saqueador sp
+p_steppe_bandit_spawn_point|bandido de la estepa
+p_steppe_bandit_spawn_point_2|bandido de la estepa 2
+p_forest_bandit_spawn_point|bandido del bosque sp
+p_forest_bandit_spawn_point_2|bandido del bosque sp 2
+p_forest_bandit_spawn_point_3|bandido del bosque sp 3
+p_forest_bandit_spawn_point_4|bandido del bosque sp 4
+p_forest_bandit_spawn_point_5|bandido del bosque sp 5
+p_mountain_bandit_spawn_point|bandido de la montaña sp
+p_mountain_bandit_spawn_point_2|bandido de la montaña sp 2
+p_mountain_bandit_spawn_point_3|bandido de la montaña sp 3
+p_mountain_bandit_spawn_point_4|bandido de la montaña sp 4
+p_mountain_bandit_spawn_point_5|bandido de la montaña sp 5
+p_sea_raider_spawn_point_1|pirata sp
+p_sea_raider_spawn_point_2|pirata sp
+p_gondor_test|gondor prueba sp
+p_mordor_test|mordor prueba sp
+p_gondor_allies_test|gondor aliados prueba sp
+p_isengard_test|isengard prueba sp
+p_isen_rohan|isen rohan sp
+p_mordor_gondor|mordor gondor sp
+p_harad_gondor|harad gondor sp
+p_corsair_gondor|corsair gondor sp
+p_rhun_gondor|rhun gondor sp
+p_khand_gondor|khand gondor sp
+p_lorien_moria|lórien moria sp
+p_gunda_woodelves|gunda elfos del bosque sp
+p_gunda_dwarves|gunda enanao sp
+p_spawn_points_end|último punto de reaparición
+p_pointer_player| 
+p_pointer_z_0_begin| 
+p_pointer_z_0_mountain| 
+p_pointer_z_0_steppe| 
+p_pointer_z_0_plain| 
+p_pointer_z_0_snow| 
+p_pointer_z_0_desert| 
+p_pointer_z_0_steppe_forest| 
+p_pointer_z_0_plain_forest| 
+p_pointer_z_0_snow_forest| 
+p_pointer_z_0_desert_forest| 
+p_camplace_n1| 
+p_camplace_n2| 
+p_camplace_n3| 
+p_camplace_n4| 
+p_camplace_n5| 
+p_camplace_m1| 
+p_camplace_m2| 
+p_camplace_m3| 
+p_camplace_m4| 
+p_camplace_m5| 
+p_camplace_s1| 
+p_camplace_s2| 
+p_camplace_s3| 
+p_camplace_s4| 
+p_camplace_s5| 
+p_ancient_ruins|Ruinas Antiguas
+p_shrubbery1| 
+p_shrubbery2| 
+p_shrubbery3| 
+p_shrubbery4| 
+p_shrubbery5| 
+p_shrubbery6| 
+p_shrubbery7| 
+p_shrubbery8| 
+p_routed_troops| 
+p_routed_allies| 
+p_routed_enemies| 
+p_save4| 
+p_save5| 
+p_save6| 
+p_save7| 
+p_save8| 
+p_save9| 
+p_save10| 
+p_scribble_0| 
+p_scribble_1| 
+p_scribble_2| 
+p_scribble_3| 
+p_scribble_4| 
+p_scribble_5| 
+p_scribble_6| 
+p_scribble_7| 
+p_scribble_8| 
+p_scribble_9| 
+p_scribble_10| 
+p_scribble_11| 
+p_scribble_12| 
+p_scribble_13| 
+p_scribble_14| 
+p_scribble_15| 
+p_scribble_16| 
+p_scribble_17| 
+p_scribble_18| 
+p_scribble_19| 
+p_scribble_20| 
+p_scribble_21| 
+p_scribble_22| 
+p_scribble_23| 
+p_scribble_24| 
+p_scribble_25| 
+p_scribble_26| 
+p_scribble_27| 
+p_scribble_28| 
+p_scribble_29| 
+p_scribble_30| 
+p_scribble_31| 
+p_scribble_32| 
+p_scribble_33| 
+p_scribble_34| 
+p_scribble_35| 
+p_scribble_36| 
+p_scribble_37| 
+p_scribble_38| 
+p_scribble_39| 
+p_scribble_40| 
+p_scribble_41| 
+p_scribble_42| 
+p_scribble_43| 
+p_scribble_44| 
+p_scribble_45| 
+p_scribble_46| 
+p_scribble_47| 
+p_scribble_48| 
+p_scribble_49| 
+p_scribble_50| 
+p_scribble_51| 
+p_scribble_52| 
+p_scribble_53| 
+p_scribble_54| 
+p_scribble_55| 
+p_scribble_56| 
+p_scribble_57| 
+p_scribble_58| 
+p_scribble_59| 
+p_scribble_60| 
+p_scribble_61| 
+p_scribble_62| 
+p_scribble_63| 
+p_scribble_64| 
+p_scribble_65| 
+p_scribble_66| 
+p_scribble_67| 
+p_scribble_68| 
+p_scribble_69| 
+p_scribble_70| 
+p_scribble_71| 
+p_scribble_72| 
+p_scribble_73| 
+p_scribble_74| 
+p_scribble_75| 
+p_scribble_76| 
+p_scribble_77| 
+p_scribble_78| 
+p_scribble_79| 
+p_scribble_80| 
+p_scribble_81| 
+p_scribble_82| 
+p_scribble_83| 
+p_scribble_84| 
+p_scribble_85| 
+p_scribble_86| 
+p_scribble_87| 
+p_scribble_88| 
+p_scribble_89| 
+p_scribble_90| 
+p_scribble_91| 
+p_scribble_92| 
+p_scribble_93| 
+p_scribble_94| 
+p_scribble_95| 
+p_scribble_96| 
+p_scribble_97| 
+p_scribble_98| 
+p_scribble_99| 
+p_scribble_100| 
+p_scribble_101| 
+p_scribble_102| 
+p_scribble_103| 
+p_scribble_104| 
+p_scribble_105| 
+p_scribble_106| 
+p_scribble_107| 
+p_scribble_108| 
+p_scribble_109| 
+p_scribble_110| 
+p_scribble_111| 
+p_scribble_112| 
+p_scribble_113| 
+p_scribble_114| 
+p_scribble_115| 
+p_scribble_116| 
+p_scribble_117| 
+p_scribble_118| 
+p_scribble_119| 
+p_scribble_120| 
+p_scribble_121| 
+p_scribble_122| 
+p_scribble_123| 
+p_scribble_124| 
+p_scribble_125| 
+p_scribble_126| 
+p_scribble_127| 
+p_scribble_128| 
+p_scribble_129| 
+p_scribble_130| 
+p_scribble_131| 
+p_scribble_132| 
+p_scribble_133| 
+p_scribble_134| 
+p_scribble_135| 
+p_scribble_136| 
+p_scribble_137| 
+p_scribble_138| 
+p_scribble_139| 
+p_scribble_140| 
+p_scribble_141| 
+p_scribble_142| 
+p_scribble_143| 
+p_scribble_144| 
+p_scribble_145| 
+p_scribble_146| 
+p_scribble_147| 
+p_scribble_148| 
+p_scribble_149| 
+p_scribble_150| 
+p_scribble_151| 
+p_scribble_152| 
+p_scribble_153| 
+p_scribble_154| 
+p_scribble_155| 
+p_scribble_156| 
+p_scribble_157| 
+p_scribble_158| 
+p_scribble_159| 
+p_scribble_160| 
+p_scribble_161| 
+p_scribble_162| 
+p_scribble_163| 
+p_scribble_164| 
+p_scribble_165| 
+p_scribble_166| 
+p_scribble_167| 
+p_scribble_168| 
+p_scribble_169| 
+p_scribble_170| 
+p_scribble_171| 
+p_scribble_172| 
+p_scribble_173| 
+p_scribble_174| 
+p_scribble_175| 
+p_scribble_176| 
+p_scribble_177| 
+p_scribble_178| 
+p_scribble_179| 
+p_scribble_180| 
+p_scribble_181| 
+p_scribble_182| 
+p_scribble_183| 
+p_scribble_184| 
+p_scribble_185| 
+p_scribble_186| 
+p_scribble_187| 
+p_scribble_188| 
+p_scribble_189| 
+p_scribble_190| 
+p_scribble_191| 
+p_scribble_192| 
+p_scribble_193| 
+p_scribble_194| 
+p_scribble_195| 
+p_scribble_196| 
+p_scribble_197| 
+p_scribble_198| 
+p_scribble_199| 
+p_scribble_200| 
+p_scribble_201| 
+p_scribble_202| 
+p_scribble_203| 
+p_scribble_204| 
+p_scribble_205| 
+p_scribble_206| 
+p_scribble_207| 
+p_scribble_208| 
+p_scribble_209| 
+p_scribble_210| 
+p_scribble_211| 
+p_scribble_212| 
+p_scribble_213| 
+p_scribble_214| 
+p_scribble_215| 
+p_scribble_216| 
+p_scribble_217| 
+p_scribble_218| 
+p_scribble_219| 
+p_scribble_220| 
+p_scribble_221| 
+p_scribble_222| 
+p_scribble_223| 
+p_scribble_224| 
+p_scribble_225| 
+p_scribble_226| 
+p_scribble_227| 
+p_scribble_228| 
+p_scribble_229| 
+p_scribble_230| 
+p_scribble_231| 
+p_scribble_232| 
+p_scribble_233| 
+p_scribble_234| 
+p_scribble_235| 
+p_scribble_236| 
+p_scribble_237| 
+p_scribble_238| 
+p_scribble_239| 
+p_scribble_240| 
+p_scribble_241| 
+p_scribble_242| 

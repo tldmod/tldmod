@@ -1,0 +1,152 @@
+﻿menu_start_game_1|^^^^^^^^^^¿Por qué fin lucháis?
+mno_start_good|Por el AMANECER de una nueva Era
+mno_start_evil|Por el OCASO del Hombre
+mno_spacer|  
+mno_go_back|Volver atrás
+menu_start_phase_2|^^^^^En la Tierra Media. Una sombra esta creciendo en el Este, ^y cosas oscuras que hace mucho estaban ocultas están resurgiendo. ^Los pueblos libres se preparan para la guerra, como no se ha visto en esta era. ^Hombres, Elfos, Enanos y Orcos; todos tomarán parte. ^^Qué parte, sin embargo, está por verse... 
+mno_continue|Continuar
+menu_start_game_3|^^^^^^^^Escoge tu escenario:
+mno_custom_battle_scenario_1|           Escaramuza, Facciones de Gondor vs Harad     .
+mno_custom_battle_scenario_3|            Escaramuza, Elfos vs Numenóreanos Negros   .
+mno_custom_battle_scenario_4|            Defensa de Abismo de Helm, Rohan vs Isengard  .
+mno_custom_battle_scenario_5|            Escaramuza, Facciones del Norte vs Rhûn       .
+mno_custom_battle_scenario_6|            Asedio, Orcos vs Enanos          .
+mno_custom_battle_scenario_7|            Emboscada, Orcos vs Bosque Negro               .
+mno_build_your_own_scene|            ** Construir tu propio escenario para TLD **     .
+menu_tutorial|^^TLD tiene varias características desconocidas paea M&B Native. Estas estan descritas detalladamente sin hacer spoilers en un PDF incluido en el mod. Para el tutorial sobre la mecánica básica del juego porfavor use el Modulo Native
+mno_go_back_dot|Volver atrás.
+menu_reports|^^^{s9}
+mno_view_character_report|Ver reporte del personaje.
+mno_view_party_size_report|Ver reporte del tamaño del grupo.
+mno_view_morale_report|Ver reporte de la moral del grupo.
+mno_view_character_report_02|Checkear estatus de los NPC.
+mno_view_faction_strengths_report|Ver reporte de fuerza de facción.
+mno_view_traits_report|Ver características.
+mno_resume_travelling|Reanudar Viaje.
+menu_custom_battle_2|^^^^^^{s16}
+mno_custom_battle_go|Comenzar.
+mno_leave_custom_battle_2|Cancelar.
+menu_custom_battle_end|^^^^^^La batalla a finalizado. {s1} Vuestro bando ha matado {reg5} enemigos y perdido {reg6} tropas en la batalla. Personalmente, habéis matado a {reg7} oponentes.
+mno_replay|Jugar batalla otra vez.
+menu_quick_battle_general_test|^^^Batalla actual: ^equipo A: {reg10} {s10}^^VS^^equipo B: {reg11} {s11}
+menu_quick_battle_general_test_select_a| 
+menu_quick_battle_general_test_select_b| 
+menu_quick_battle_troll|^^^^^^^^Elige tu escenario troll:
+menu_quick_battle_wargs|^^^^^^^^Elige tu escenario Huargo TEST
+menu_start_good|^^^^^^^^^^Elige tu raza:
+mno_start_03|ENANOS
+menu_start_evil|^^^^^^^^^^¿A quién serviréis?
+mno_start_eye|SAURON de Mordor, el Señor de los Anillos
+mno_start_hand|SARUMAN de Isengard, la Mano Blanca
+menu_start_eye|^^^^^^^^^Tu señor es el Gran Ojo^Elige tu raza:
+menu_start_hand|^^^^^^^^^Tu señor es la Mano Blanca^Elige tu raza:
+menu_start_good_man|^^^^^^^^^^Elige a tu gente:
+menu_start_good_elf|^^^^^^^^^^De cúal bosque provienes?
+menu_start_good_dwarf|^^^^^^^^^^Selecciona tu Linaje:
+menu_start_gondor|^^^^^^^^^^De dónde eres en Gondor?
+menu_start_eye_man|^^^^^^^^^^Selecciona tu gente:
+menu_start_eye_orc|^^^^^^^^^^Donde acechas?
+menu_start_hand_orc|^^^^^^^^^^Donde acechas?
+menu_start_gondor_mt|^^^^^^^^^^Selecciona tu Linaje:
+menu_start_haradrim|^^^^^^^Eres un Haradrim,^un Hombre del Desierto.^Selecciona tu linea
+menu_choose_gender|^^^^^^^^^^Tu género?
+mno_start_male|Hombre
+mno_start_female|Mujer
+menu_choose_skill|^^^^^^^^Para Desarrolladores:^*normalmente*, en este momento^irías a editar habilidades^y luego la cara...
+mno_skip|SALTAR: Jugar en modo prueba
+menu_auto_return|Este menú vuelve automaticamente al solicitante
+menu_morale_report|^^{s1}
+menu_faction_orders|{s9}
+menu_character_report|^^^^^Moral del Grupo: {reg8}^Límite del tamaño del grupo: {reg7}^{s5}
+menu_upkeep_report|{s12}
+menu_party_size_report|^^^^{s1}
+menu_faction_strengths_report|{s1}
+menu_traits_report|{s1}
+menu_camp|^^^^En estos momentos, te encuentras en {s1}.{s2}^^¿Qué queréis hacer?
+mno_camp_scene|Dar una vuelta.
+mno_camp_troop|Revisar{reg10? tropas:}{reg12? y:}{reg11? prisioneros:}.
+mno_camp_action|Usar un objeto.
+mno_camp_wait_here|Acampar aquí por algún tiempo.
+mno_camp_options|Cambiar opciones de TLD.
+menu_camp_cctest|Apresúrate y toma algo ya.
+mno_camp_cctest_injure|Herirme.
+mno_camp_cctest_injure_party_heroes|Herir Compañeros.
+mno_camp_cctest_heal|Curar mis heridas. (No arregla profs. o atributos)
+mno_camp_cctest_kill_lord|Matar a un Lord
+mno_camp_cctest_rout_ally|Agregar tropas a los aliados vencidos.
+mno_camp_cctest_rout_enemy|Agregar tropas a los enemigos vencidos.
+mno_camp_cctest_rout_spawn|Spawnear grupos vencidos.
+mno_camp_cctest_gain_traits|Obtener todos los Traits
+mno_camp_cctest_parties|Contar Grupos
+mno_camp_cctest_items|Refaccionar Items.
+mno_camp_cctest_pos|Imprimir Coords x100
+mno_camp_cctest_defiled|Agregar Items WIP
+mno_camp_cctest_return|Volver al menú del campamento.
+menu_camp_mvtest|Que quieres testear hoy?
+mno_camp_mvtest_back|Volver al menú del campamento.
+menu_mvtest_destroy_faction|Elegir facción para derrotar:
+mno_kill_faction|{s10}.
+menu_mvtest_facstr_report|{s1}
+menu_mvtest_facai_report|{s1}
+mno_details|Reporte de facción detallado...
+menu_mvtest_facai_details|{s1}
+mno_change|Cambiar facción: {s7}
+mno_defeat|Ajustar fuerza de facción a -1000 (derrota).
+mno_dying|Ajustar fuerza de facción a 300 (moribunda).
+mno_spent|Ajustar fuerza de facción a 600 (Agotada).
+menu_mvtest_faction_casualties|{s1}
+mno_next|Facción siguiente
+menu_mvtest_town_wealth_report|{s1}
+menu_mvtest_sieges|Testear asedios
+menu_mvtest_order_siege|Orden {s1} a sitiar...
+mno_siege_town|{s10}.
+menu_mvtest_advcamps|Testear campamentos avanzado
+menu_mvtest_cutscenes|Elige una opción:
+mno_intro|Poner Intro.
+mno_joke|Poner GA joke.
+menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
+mno_game_options_restrict_items|Equipamento restringido:  {s7}
+mno_game_options_formations|IA y Formaciones de batalla:  {s7}
+mno_game_options_town_menu|NPC's de los poblados siempre visibles desde el Menú:  {s7}
+mno_game_options_cutscenes|Cinemáticas:  {s7}
+mno_game_options_injuries|Heridas para compañeros:  {s7}.
+mno_game_options_death|Muerte permanente para Nobles y compañeros:  {s7}.
+mno_game_options_death2|Muerte permanente para el jugador (Este eres TÚ):  {s7}.
+mno_game_options_morale|Sistema de Moral de Batalla:  {s7}
+mno_game_options_tweaks|Ajustes de gameplay...
+mno_game_options_back|Volver al menú del campamento.
+menu_camp_tweaks|^^^^^^^^Elige la opción que te gustaría ajustar.
+mno_tweak_options_compat|Ajustes de compatibilidad...
+mno_tweak_options_strat|Ajustes de estrategia...
+mno_tweak_options_back|Volver al menú de opciones.
+menu_camp_compat_tweaks|^^^^^^^^Haz click sobreuna opción para cambiarla (Manten shift para disminuir):^(Esto es para compatibilidad y no son cheats)
+mno_game_options_compat_party|Máximo número de grupos: {s1}
+mno_game_options_compat_back|Volver al menú de ajustes.
+menu_camp_strat_tweaks|^^^^^^^^Haz click sobre una opción para cambiarla:^(cuidado: estos son cheats!)
+mno_strat_tweaks_siege_reqs|Requisitos de fuerza para asedio: {s7}
+mno_strat_tweaks_siege_relax_rate|Req. de fuer. para asedio: Velocidad de mitigación: {reg1}
+mno_strat_tweaks_regen_rate|Velocidad de regeneración de fuerza: {s7}
+mno_strat_tweaks_siege_regen_limit|No regenerar facciones debajo de: {reg1}
+mno_strat_tweaks_back|Volver al menú de ajustes.
+menu_camp_chest_fill|^^^^^^^^Porfavor escoge una facción para obtener items.
+menu_cheat_change_race|^^^^^Porfavor elige tu raza:^^Nota: Deberías re ver tu personaje en el generador de caras antes de hacer este cambio.
+menu_camp_action|^^^^^^^^^     Cuál objeto?
+mno_camp_customize_defilement|Personalizar Armadura Profanada:
+mno_camp_drink_water|Beber el Agua Ent!
+mno_camp_action_4|Volver.
+menu_assasins_attack_player_won|Haz derrotado exitosamente asesino de {s2}, enviados por {s3}.
+menu_assasins_attack_player_retreat|Haz escapado con vida!
+menu_assasins_attack_player_defeated|Tú no deberías estar leyendo esto...
+menu_fangorn_danger|^^^^^^Es extraño... sientes como ruidos amenazadores alrededor de ti.^Están los árboles hablando? Hay una sensación de profunda ira y dolor en el aire...^Tus órdenes?
+mno_be_quiet_elf|Respetad los árboles. Moveos en silencio a lo largo del bosque.
+mno_be_quiet|Poned sus armas en el suelo y callaos!.. Ahora largo de aquí!
+mno_be_bold|Moveos! No le temo a las plantas o a viejos mitos!
+mno_fight_back|Vamos a ver! Peinad el área! Quemad un árbol o dos!
+menu_fangorn_search_fails|^^^^^^Buscas en la oscuridad, en el espesor del bosque pero no encuentras nada.^Aún así, te sientes observado y amenazado, más y más...
+mno_ok|Continuar...
+menu_fangorn_battle_debrief|Tú no deberías estar leyendo esto...
+menu_fangorn_battle_debrief_won|^^^Una gran victoria!^^^Entonces, esto es lo que significan todos los mitos sobre Fangorn...
+mno_ok_|Continuar...
+menu_fangorn_killed_player_only|^^^^^^Vagas por el espeso y oscuros bosque.^De repente eres golpeado por algo! Tal vez una rama pesada cayó en tu cabeza?^Estás inconsciente solo unos minutos... despiertas malherido pero puedes seguir adelante; algo extraño ocurre en este bosque.
+mno_leave|Atrás...
+menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuros bosque.^^De repente eres golpeado por algo! Tal vez una rama pesada cayó en tu cabeza?.^^Estás inconsciente solo unos minutos... cuando despiertas, malherido pero puedes pero vivo, descubres que no todas tu tropas fueron tan afortunadas, algo extraño ocurre en este bosque...
