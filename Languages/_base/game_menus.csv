@@ -174,23 +174,6 @@ mno_f_umbar|Umbar items
 mno_f_moria|Moria items
 mno_f_gundabad|Gundabad items
 mno_f_dunland|Dunland items
-menu_cheat_change_race|^^^^^Please choose your race:^^Note: You should review your character in the face generator after making this change.
-mno_race_male|Male
-mno_race_female|Female
-mno_race_gondor|Gondor
-mno_race_rohan|Rohan
-mno_race_dunlander|Dunlander
-mno_race_orc|Orc
-mno_race_uruk|Uruk
-mno_race_haradrim|Haradrim
-mno_race_easterling|Easterling
-mno_race_dwarf|Dwarf
-mno_race_troll|Troll
-mno_race_dunedain|Dunedain
-mno_race_lothlorien|Lothlorien
-mno_race_rivendell|Rivendell
-mno_race_mirkwood|Mirkwood
-mno_race_evil_male|Evil Male
 menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Drink the Ent Water!
@@ -275,9 +258,7 @@ menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {
 menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
 mno_inspect_troll|Inspect downed troll
 menu_total_victory|You shouldn't be reading this... {s9}
-menu_enemy_slipped_away|^^^^^{s17}
 menu_total_defeat|You shouldn't be reading this...
-menu_permanent_damage|^^^^^{s0}
 menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
 mno_pre_join_help_attackers|Move in to help the {s2}.
 mno_pre_join_help_defenders|Rush to the aid of the {s1}.
@@ -330,7 +311,6 @@ mno_siege_defender_join_battle|Join the battle.
 mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
 menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
-menu_town_bandits_failed|^^^^^{s4} {s5}
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
@@ -346,7 +326,6 @@ mno_town_center_door|Door to the town center.
 mno_aw_chamber_door|Open the door.
 mno_trade_with_arms_merchant|Visit the {s40}.
 mno_trade_with_horse_merchant|Visit the {s41}.
-mno_town_prison|Never: Enter the prison.
 mno_town_prison_door|Door to the prison.
 mno_dungeon_enter|Search for the lost spears inside the mountains.
 mno_dungeon_enter_door|Open the door.
