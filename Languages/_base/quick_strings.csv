@@ -637,10 +637,6 @@ qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Regular troops only
 qstr_Heroes_only|Heroes only
 qstr_Regulars_and_Heroes|Regulars and Heroes
-qstr_Added_1000_experienc|Added 1000 experience to player.
-qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
-qstr_Items_added_to_playe|Items added to player inventory.
-qstr_Looter_party_was_spa|Looter party was spawned nearby.
 qstr_HP_lost_from_poisoni|HP lost from poisoning.
 qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
