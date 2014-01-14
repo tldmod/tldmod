@@ -20,8 +20,6 @@ mno_build_your_own_scene|            ** Build your own scene for TLD **     .
 mno_go_back_spc|                              Go back              .
 menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
 mno_go_back_dot|Go back.
-menu_reports|^^^{s9}
-mno_cheat_faction_orders|Cheat: Faction orders.
 mno_view_upkeep_costs|View upkeep costs.
 mno_view_character_report|View character report.
 mno_view_party_size_report|View party size report.
@@ -30,7 +28,6 @@ mno_view_character_report_02|NPC status check.
 mno_view_faction_strengths_report|View faction strengths report.
 mno_view_traits_report|View traits.
 mno_resume_travelling|Resume travelling.
-menu_custom_battle_2|^^^^^^{s16}
 mno_custom_battle_go|Start.
 mno_leave_custom_battle_2|Cancel.
 menu_custom_battle_end|^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.
@@ -243,20 +240,7 @@ mno_facdown|[Next Faction]
 mno_raceup|[Prev Race]
 mno_racedown|[Next Race]
 mno_three|[Regulars or Heroes]
-menu_camp_cheat|Other Cheats Menu (for development use):^^This menu is intended for development use while we are working on improving this mod. If you enable this option then additonal CHEAT menu's will also appear in other game menu's. Please do not report any bugs with this functionality since it is for testing only.
 mno_cheat_disabable|Disable cheat/modding options.
-mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
-mno_cheat_change_race|Change your race (for development use).
-mno_impose_quest|Impose a quest...
-mno_relocate_party|Move to town...
-mno_add_troops|Add troops to player party.
-mno_cheat_get_item|Gain a free magic item
-mno_cheat_add_xp|Add 1000 experience to player.
-mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
-mno_camp_mod_3|Add gear and gold to player.
-mno_camp_mod_4|Spawn a looter party nearby.
-mno_camp_mod_5|Fill merchants with faction stuff
-mno_cheat_back|Back to camp menu.
 menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
 menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
 mno_i_shall_surv|I... shall... survive!
@@ -323,7 +307,6 @@ mno_moria_exit_scene|Find your way out!
 menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
 mno_moria_enter|Return into main hall of Moria trough the secret entrance
 mno_moria_enter_door|Enter Moria.
-mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Besiege the {reg6?town:castle}.
 mno_castle_leave|Leave.
 menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
@@ -334,7 +317,6 @@ mno_attack_stay_back|Order your soldiers to attack while you stay back...
 mno_build_ladders|Prepare ladders to attack the walls.
 mno_lift_siege|Abandon the siege.
 menu_siege_attack_meets_sally|^^^^^^The defenders sally out to meet your assault.
-menu_castle_besiege_inner_battle|{s1}
 menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
 mno_build_ladders_cont|Do it.
 menu_castle_attack_walls_simulate|{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}
@@ -405,7 +387,6 @@ mno_explore|Explore this place.
 menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
 mno_help|Help the strangers!
 mno_go_your_way|Leave them alone
-menu_starting_quest_victory|null
 menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
 mno_good_equal|Good faction
 mno_bad_equal|Evil faction

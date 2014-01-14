@@ -161,10 +161,6 @@ qstr_{reg4}_wounded_{reg5|{reg4} wounded, {reg5} routed
 qstr_killed|killed
 qstr_routed|routed
 qstr_wounded|wounded
-qstr_{reg3?{reg3}:}_{s1}_|{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|None
 qstr_^None|^None
 qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
