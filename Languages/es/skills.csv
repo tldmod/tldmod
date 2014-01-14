@@ -1,17 +1,9 @@
-﻿skl_trade|Comerciar
+skl_trade|Comerciante
 skl_trade_desc|Cada nivel de esta habilidad hace posible conseguir más equipo con menos Puntos de recursos. (Habilidad de Grupo)
 skl_leadership|Liderazgo
 skl_leadership_desc|Cada punto incrementa el número máximo de tropas que podéis liderar en 5, incrementa la moral del grupo y reduce los salarios en un 5%%. (Habilidad de líder)
 skl_prisoner_management|Manejo de prisioneros.
 skl_prisoner_management_desc|Cada nivel de esta habilidad incrementa el número máximo de prisioneros en %d. (Habilidad de líder)
-skl_reserved_1|Habilidad reservada 1
-skl_reserved_1_desc|Ésta es una habilidad reservada.
-skl_reserved_2|Habilidad reservada 2
-skl_reserved_2_desc|Ésta es una habilidad reservada.
-skl_reserved_3|Habilidad reservada 2
-skl_reserved_3_desc|Ésta es una habilidad reservada.
-skl_reserved_4|Habilidad reservada 4
-skl_reserved_4_desc|Ésta es una habilidad reservada.
 skl_persuasion|Persuasión
 skl_persuasion_desc|Esta habilidad ayuda a que la gente acepte vuestro punto de vista. (Habilidad personal)
 skl_engineer|Ingeniería
@@ -24,25 +16,17 @@ skl_wound_treatment|Tratamiento de Heridas
 skl_wound_treatment_desc|La velocidad de curación del grupo se incrementa un 20%% por nivel de habilidad. (Habilidad de grupo)
 skl_inventory_management|Administrar inventario
 skl_inventory_management_desc|Incrementa la capacidad del inventario +6 por nivel de habilidad. (Habilidad de líder)
-skl_spotting|Avistar
+skl_spotting|Avistamiento
 skl_spotting_desc||El rango de visión del grupo se incrementa un 10%% por nivel de habilidad. (Habilidad de grupo)
-skl_pathfinding|Explorar
+skl_pathfinding|Buscarutas
 skl_pathfinding_desc|La velocidad del grupo en el mapa se incrementa un 3%% por nivel de habilidad. (Habilidad de grupo)
-skl_tactics|Táctica
+skl_tactics|Tácticas
 skl_tactics_desc||Cada dos niveles de esta habilidad, se incrementa la ventaja inicial de batalla en 1. (Habilidad de grupo)
 skl_tracking|Rastreo
 skl_tracking_desc|Se obtiene más información sobre los rastros. (Habilidad de grupo)
 skl_trainer|Instruir
 skl_trainer_desc|Todos los días cada héroe con esta habilidad agrega experiencia a todo miembro de su grupo cuyo nivel sea menor que el suyo. La experiencia se gana así: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidad personal)
-skl_reserved_5|Habilidad reservada 5
-skl_reserved_5_desc|Ésta es una habilidad reservada.
-skl_reserved_6|Habilidad reservada 6
-skl_reserved_6_desc|Ésta es una habilidad reservada.
-skl_reserved_7|Habilidad reservada 7
-skl_reserved_7_desc|Ésta es una habilidad reservada.
-skl_reserved_8|Habilidad reservada 8
-skl_reserved_8_desc|Ésta es una habilidad reservada.
-skl_looting|Saquear
+skl_looting|Saqueo
 skl_looting_desc|Esta habilidad incrementa la cantidad obtenida en el saqueo en un 10%% por nivel de habilidad. (Habilidad de grupo)
 skl_horse_archery|Arquería Montada
 skl_horse_archery_desc|Reduce la penalización de daño y puntería al utilizar arcos y armas arrojadizas desde caballos. (Habilidad personal)
@@ -54,31 +38,11 @@ skl_shield|Escudo
 skl_shield_desc|Reduce el daño a los escudos (en un 8%% por nivel de habilidad) y mejora la velocidad al escudarse y cubrirse. (Habilidad personal)
 skl_weapon_master|Maestro en Armas
 skl_weapon_master_desc|Facilita el aprendizaje de las competencias en armas e incrementa los límites de estas competencias. Los límites funcionan así: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidad personal)
-skl_reserved_9|Habilidad reservada 9
-skl_reserved_9_desc|Ésta es una habilidad reservada.
-skl_reserved_10|Habilidad reservada 10
-skl_reserved_10_desc|Ésta es una habilidad reservada.
-skl_reserved_11|Habilidad reservada 11
-skl_reserved_11_desc|Ésta es una habilidad reservada.
-skl_reserved_12|Habilidad reservada 12
-skl_reserved_12_desc|Ésta es una habilidad reservada.
-skl_reserved_13|Habilidad reservada 13
-skl_reserved_13_desc|Ésta es una habilidad reservada.
-skl_power_draw|Arqueria
+skl_power_draw|Potencia de disparo
 skl_power_draw_desc|Permite a los personajes utilizar mejores arcos. Cada punto de esta habilidad (hasta cuatro puntos por encima de los requerimientos del arco) incrementa el daño hecho por los arcos en un 14%%. (Habilidad personal)
 skl_power_throw|Potencia de Lanzamiento
 skl_power_throw_desc|Cada punto de esta habilidad incrementa el daño de lanzamiento en un 10%%. (Habilidad personal)
 skl_power_strike|Potencia de Golpe
 skl_power_strike_desc|Cada punto de esta habilidad incrementa el daño cuerpo a cuerpo en un 8%%. (Habilidad personal)
-skl_ironflesh|Piel de Hierro
+skl_ironflesh|Piel curtida
 skl_ironflesh_desc|Cada punto de esta habilidad incrementa los puntos de daño en +2. (Habilidad personal)
-skl_reserved_14|Habilidad reservada 14
-skl_reserved_14_desc|Ésta es una habilidad reservada.
-skl_reserved_15|Habilidad reservada 15
-skl_reserved_15_desc|Ésta es una habilidad reservada.
-skl_reserved_16|Habilidad reservada 16
-skl_reserved_16_desc|Ésta es una habilidad reservada.
-skl_reserved_17|Habilidad reservada  17
-skl_reserved_17_desc|Ésta es una habilidad reservada.
-skl_reserved_18|Habilidad reservada 17
-skl_reserved_18_desc|Ésta es una habilidad reservada.
