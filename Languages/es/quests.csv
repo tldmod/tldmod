@@ -1,4 +1,4 @@
-﻿qst_deliver_message|Entregad el mensaje a {s13}
+qst_deliver_message|Entega el mensaje a {s13}
 qst_deliver_message_text|{s9} te a pedido qu entregues un mensaje a {s13}. {s13} se encontraba en {s4} cuando te fue asignada esta misión.
 qst_deliver_message_to_enemy_lord|Entega el mensaje a {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} te ha pedido que entregues un mensaje a {s13} de {s15}. {s13} estaba en {s4} cuando te fue asignada esta misión.
@@ -72,5 +72,3 @@ qst_oath_of_vengeance|Juramento de Venganza.
 qst_oath_of_vengeance_text|Enfurecido por la muerte de {s1}, has hecho un juramento de venganza contra las fuerzas de {s2}. Ahora debes destruir tantos ejércitos de {s2} como puedas en los próximos días. Eres consciente de que tus seguidores han sido testigos de este juramente y no deseas ser conocido por romper tus juramentos. El derramamiento de sangre ha de comenzar de inmediato.
 qst_deliver_gift|Dar a {s4} de {s1} de {s2} para {s3}
 qst_deliver_gift_text|Entregar regalo a {s4} de {s1} para {s3} de {s2}.
-qst_quests_end|Fin de las misiones.
-qst_quests_end_text|.
