@@ -36,10 +36,8 @@ qstr_Go_back_to_the_adven|Volver a la aventura...
 qstr_You_have_retired_at_|Os habéis retirado al nivel {reg4} tras {reg5} días de aventurero.
 qstr_Effect_on_Score|Efecto en la puntuación
 qstr_Settlements_owned_by|Vuestros asentamientos: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
 qstr_Friendly_Settlements|Asentamientos amigos: {reg0}
 qstr_Hostile_Settlements:|Asentamientos hostiles: {reg0}
-qstr_{reg0}|{reg0}
 qstr_Friendly_Lords:_{reg|Lords Amigos: {reg0}
 qstr_Enemy_Lords:_{reg0}|Lords Enemigos: {reg0}
 qstr_Victories:_{reg0}|Victorias: {reg0}
@@ -52,9 +50,7 @@ qstr_Inventory:_{reg0}_de|Inventario: {reg0} monedas
 qstr_Experience:_{reg0}|Experiencia: {reg0}
 qstr_Days_Passed:_{reg0}|Días pasados: {reg0}
 qstr_Difficulty:_{reg0}%|Dificultad: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|PUNTUACION TOTAL: {reg0}
-qstr_______|      
 qstr_A_peaceful_village_n|Un pueblo pacífico no lejos del Folde Oeste...
 qstr_The_War_is_upon_Roha|¡La Guerra llega a Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - La Ciudad Blanca
@@ -76,7 +72,6 @@ qstr_Rotate|Girar
 qstr_Rotation={reg0}|Girar={reg0}{***}
 qstr_You_gained_{reg0}_Re|Has ganado {reg0} Puntos de Recurso de {s0}.
 qstr_You_lost_{reg0}_Reso|Pierdes {reg0} Puntos de Recursos de {s0}.
-qstr_{s24}:|{s24}:
 qstr_Great_Hope_of_{s5}|La Gran esperanza de {s5}
 qstr_Hope_of_{s5}|Esperanza de {s5}
 qstr_Indispensable_Ally_o|Aliado Indispensable de {s5}
@@ -161,7 +156,6 @@ qstr__{s61}| {s61}
 qstr_ERROR:_More_than_15_|ERROR: Se han asignado más de 15 rutas de comercio a {s1}.
 qstr_nothing|Nada
 qstr_Good|Bien
-qstr_Med|Med
 qstr_Bad|Mal
 qstr_{reg4}_killed_{reg5}|{reg4} muertos, {reg5} heridos, {reg6} vencidos
 qstr_{reg4}_killed_{reg5}_|{reg4} muertos, {reg5} heridos
@@ -170,10 +164,6 @@ qstr_{reg4}_wounded_{reg5|{reg4} heridos, {reg5} vencidos
 qstr_killed|muertos
 qstr_routed|vencidos
 qstr_wounded|heridos
-qstr_{reg3?{reg3}:}_{s1}_|{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Ninguno
 qstr_^None|^Ninguno
 qstr_near_the_Great_East_|cerca del Gran camino del Este, la vieja carretera abandonada
@@ -313,7 +303,6 @@ qstr_Falling_Back|Retirada!
 qstr_Standing_Closer|Acercaos!, quiero un bloque sólido!!
 qstr_Spreading_Out|Separaos!, cubrid el terreno!!
 qstr_Standing|Mantened posición!
-qstr_N/A|N/A
 qstr_Free|Libre
 qstr_Any_Weapon|Cualquier Arma
 qstr_Blunt_Weapons|Armas Contundentes
@@ -338,19 +327,15 @@ qstr_This_quest_has_been_s|Esta misión ha sido completada satisfactoriamente. H
 qstr_This_quest_has_faile|Esta misión ha fracasado. Habla con {s59} para explicarle la situación.
 qstr_At_the_time_quest_wa||Esta misión, al momento de ser asignada:^{s1}
 qstr_{s7}_and_{s8}|{s7} y {s8}
-qstr_{s7}_{s8}|{s7}, {s8}
 qstr_noone|nadie
 qstr_{s9}_and_{s10}|{s9} y {s10}
-qstr_{s9}_{s10}|{s9}, {s10}
 qstr_no_one|nadie
 qstr_{s11}_and_{s12}|{s11} y {s12}
-qstr_{s11}_{s12}|{s11}, {s12}
 qstr_{s5}_is_ruled_by_{s6|{s5} es regido por {s6}.^Ocupa {s8}.^Sus comandantes son: {s10}.^{s5} está en guerra con: {s12}.
 qstr_{s5}_has_been_defeat|¡{s5} ha sido derrotado!
 qstr_{s5}_has_a_strength_|{s5} tiene una fuerza de {reg1} hombres en total.
 qstr_no_holdings|sin propietarios
 qstr_{s57}_and_{s58}|{s57} y {s58}
-qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Ella:Él}
 qstr_^{s59}|^{s59}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} es regente del {s56}.^:{s54} es comandante de {s55} de {s56}.^}}^{reg9?{reg3?Ella:Él} es {reg3?Lady:Lord} de {s58}.:}{s59}{reg10?^{reg3?Ella:él} murió en el campo de batalla!:}
@@ -377,7 +362,6 @@ qstr_You_brought_{reg3}_h|Habéis comprado {reg3} cabezas de ganado a {s1}.
 qstr_Log_entry_{reg3}:_ty|Entrada en log {reg3}: tipo {reg4}
 qstr_Center:_{s4}|Centro: {s4}
 qstr_Troop:_{s4}|Tropas: {s4}
-qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|El grupo aliado está presente
 qstr_{s4}_is_present_at_e|{s4} está presente en el evento
 qstr_Event_#{reg5}_type_{|Evento #{reg5}, tipo {reg6}, hora {reg8}: relación del reino del jugador a la tropa = {reg7}
@@ -592,12 +576,8 @@ qstr_Look_at_my_over_the_|¡Mira mi captura sobre-el-hombro, {playername}! ¡Soy
 qstr_You_wish_old_man_my_|Eso os gustaría, viejo hombre, ¡mi visión sobre-el-hombro es mucho más bonita!
 qstr_You_should_really_se|¡Deberías realmente ver las fotos del Senescal Denethor en Facebook, él es maravilloso!
 qstr_Press_Space_to_conti|Presiona Espacio para continuar...
-qstr_{s24}__{reg13}_|{s24} ({reg13})
 qstr_Influence:^_{reg11}_|Influencia:^ {reg11} (con {s16})
 qstr_Resource_Points:^_{r|Puntos de Recursos:^ {reg12} (en {s16}){***}
-qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
-qstr_{s13}_{reg11}__with_|{s13}, {reg11} (with {s16})
-qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 qstr__={s10}=_^{s11}.^^{s|-={s10}=-^{s11}.^^{s13}.^^{s15}.
 qstr_{s4}:_M{reg3}_2M{reg|{s4}: M{reg3}, 2M{reg4}, PC{reg5}, 2PC{reg6}, PM{reg7}
 qstr___| -
@@ -623,10 +603,8 @@ qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Puntos de recursos ({reg5})
 qstr_No_upkeep_costs|Sin costes de mantenimiento
 qstr_Orc_hiring_bonus:_+2|Bonificación de contratación de orcos: +2/3 por cada orco^
 qstr_Current_party_size_l|El límite actual del grupo es {reg5}.^Los modificadores del tamaño del grupo son:^^Tamaño base:  +10^Liderazgo: {s2}{reg1}^Carisma: {s3}{reg2}^Rango: {s4}{reg3}^{s5}TOTAL:  {reg5}{***}
-qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|         Informe de Fuerza de las Facciones:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Las facciones son normalmente asediadas cuando tienen {reg1} de fuerza.
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Virtudes Conseguidas:^{s2}
 qstr_^^You_are_{s17}.|^^Tu eres {s17}.
 qstr_Assassins_in_the_cam|¡Asesinos en el campamento, defendeos!
@@ -678,9 +656,6 @@ qstr_Daily_strength_incom|Fuerza por Rentas diarias y guarniciones de {s4}
 qstr_{s1}^{s7}:_{reg1}__G|{s1}^{s7}: {reg1}  Guarniciones: {reg3}/{reg2}{reg4?: Capturable}
 qstr_{s1}^^Total:_{reg1}|{s1}^^Total: {reg1}
 qstr_{s10}_besieged!|¡{s10} Asediada!
-qstr_ON|ON
-qstr_OFF__cheat_|OFF (cheat)
-qstr_OFF|OFF
 qstr_{reg0}__will_most_li|{reg0} (puede posiblemente en su mayoria causar crashes de gardado)
 qstr_{reg0}__could_possib|{reg0} (puede posiblemente en su mayoria causar crashes de gardado)
 qstr_Normal|Normal
@@ -708,12 +683,10 @@ qstr_lothlorien|lothlórien
 qstr_rivendell|rivendel
 qstr_mirkwood|bosque negro
 qstr_evil_man|hombre malvado
-qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Solo tropas regulares
 qstr_Heroes_only|Solo Heróres
 qstr_Regulars_and_Heroes|Regulares y Heróes
 qstr_HP_lost_from_poisoni|PS perdidos por envenenamiento.
-qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Un grupo de {s1} está {s10} hacia vos.
 qstr_You_are_attacking_a_|Estáis atacando a un grupo de {s1}.
 qstr_The_battle_against_t|La Batalla contra el grupo de {s1} continúa.
@@ -742,7 +715,6 @@ qstr_Retirement_is_starti|Retiro comienza a sonar cada vez mejor...
 qstr_No_matter!_I_will_pe|Ni importa! Yo perseveraré!!!
 qstr_What_did_I_do_to_des|¿Qué hice yo para merecer esto?
 qstr_I_suppose_it_ll_make|Supongo que podre hacer una buena historia de esto, al menos...
-qstr__{s17}|, {s17}
 qstr_You_retreated_from_b|Te retiras de la batalla.
 qstr_CHEAT:_healed!!!|CHEAT: curado!!!!
 qstr_{s9}_wants_you_to_fo|{s9} quiere que sigáis a su ejército hasta que os indique lo contrario.
@@ -785,7 +757,6 @@ qstr_Forces_of_Mordor|Fuerzas de Mordor
 qstr_Forces_of_Isengard|Fuerzas de Isengard
 qstr_their_enemies|sus enemigos
 qstr_{s11}_and_{s13}|{s11} y {s13}
-qstr_{s11}_{s13}|{s11}, {s13}
 qstr_Now_that_the_sorcere|Ahora que el hechicero está muerto, no hay más nada que hacer aquí.
 qstr_Now_that_the_sorcerer|Ahora que el hechicero ha huido, no hay más nada que hacer aquí.
 qstr_You_approach_a_heavi|Te acercas a una región fuertemente protegida del bosque...
@@ -872,26 +843,8 @@ qstr_i_wont_decapitated_e|yo quiero cortar cabezas de elefantes en multi, aoda!!
 qstr_I_don_t_think_there_|No creo que se pueda hacer un multiplayer con TLD, pero los "elefantes'' se veran bien.
 qstr_There_is_a_hidden_el|Hay un nivel secreto de modo deathmatch online de ''elefantes'', pero primero debes borrar todos tus partidas guardadas, luego jugar por 100 días en el juego sin guardar, luego ve a la pantalla del personaje y presiona Alt+F4. Totalmente recomendable!!
 qstr_Did_you_bring_your_z|Did you bring your zupdog? 
-qstr_What_s_zupdog?|What's zupdog?
-qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
 qstr_Wai_no_plate_armour_|Poqe no hay armadura de plata en el mod???
 qstr_What_is_plate_armour|Que es armadura de plata? no se nada sobre eso
-qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
-qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
-qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
-qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
-qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
-qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
-qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
-qstr_In_movies_trolls_are|In movies trolls are big and fat, wai u make me skinny?
-qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
-qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-qstr_What_is_news?_Got_an|What is news? Got any screenshots?
-qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
-qstr_Say_cheese!|Say cheese!
-qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
-qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
-qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Treebeard_wants_you_|Bárbol quiere que encuentres y elimines a los orcos que cortan árboles en Fangorn.
 qstr_Something_wrong_not_|Algo falla, no hay suficientes tropas para un grupo de exploración.
 qstr_my_home_town|Mi hogar
@@ -1020,7 +973,6 @@ qstr_You_will_not_be_diss|No le decepcionaremos. {sir/madam}. No encontrará mej
 qstr_What_an_amazing_feat|¡Que proeza de armas!
 qstr_Well_done!|¡Bien Hecho!
 qstr_Nice_legwork.|Excelente trabajo de campo.
-qstr_Heh.|Heh.
 qstr_Good_moves_but_you_m|Buenos movimientos, pero todavía necesitás mejorar.
 qstr_More_than_half_of_th|Más de la mitad de oponentes, no está mal.
 qstr_You_ll_need_to_try_h|Necesitáis intentarlo con más intensidad que eso.
@@ -1045,7 +997,6 @@ qstr_This_is_{s5}_Command|Este es {s5}, Comandante.
 qstr_{s6}_This_place_and_|{s6} Este lugar y sus alrededores os pertenecen por supuesto, mi {lord/lady}.
 qstr_{s6}_This_place_and_t|{s6} Este lugar y sus alrededores pertenecen a {s7} de {s8}.
 qstr_{s3}_and_{s5}|{s3} y {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
 qstr_{reg20?We_mostly_pro|{reg20?Aquí producimos sobre todo {s5}:Actualmente no producimos casi nada}. Si queréis saber más, podéis hablar con nuestro {reg4?maestro de la cofradía:anciano}. Está justo allí.
 qstr_Hey_scum!_I_can_fix_|¡Hey escoria! Os puedo arreglar la mandíbula a vos y a los vuestros.
 qstr_Watch_where_you_re_g|Mira por donde vas, ¡Gusano!

@@ -35,10 +35,8 @@ qstr_Go_back_to_the_adven|Wróć do podróżowania.
 qstr_You_have_retired_at_|Przechodzisz w stan spoczynku mając {reg4} poziom doświadczenia, po {reg5} dniach podróżowania.
 qstr_Effect_on_Score|Wpływ na Wynik
 qstr_Settlements_owned_by|Twoje osady: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
 qstr_Friendly_Settlements|Osady przyjaciół: {reg0}
 qstr_Hostile_Settlements:|Osady wrogów: {reg0}
-qstr_{reg0}|{reg0}
 qstr_Friendly_Lords:_{reg|Przyjaźni lordowie: {reg0}
 qstr_Enemy_Lords:_{reg0}|Wrodzy lordowie: {reg0}
 qstr_Victories:_{reg0}|Zwycięstwa: {reg0}
@@ -51,9 +49,7 @@ qstr_Inventory:_{reg0}_de|Ekwipunek: {reg0} denarów
 qstr_Experience:_{reg0}|Doświadczenie: {reg0}
 qstr_Days_Passed:_{reg0}|Minęło dni: {reg0}
 qstr_Difficulty:_{reg0}%|Poziom trudności: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|CAŁKOWITY WYNIK: {reg0}
-qstr_______|      
 qstr_A_peaceful_village_n|Niedaleko Westfold znajduje się spokojna wioska...
 qstr_The_War_is_upon_Roha|Wojna wkroczyła do Rohanu!
 qstr_Minas_Tirith___The_W|Minas Tirith - Białe Miasto
@@ -68,7 +64,6 @@ qstr___Enough_of_this_mad| 'Dość tego szaleństwa! Straż!!'
 qstr___I_ve_had_enough_of| 'Wystarczy tych żartów... Kolejna zgraja będzie musiała uklęknąć!'
 qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
 qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
-qstr_{s24}:|{s24}:
 qstr_Great_Hope_of_{s5}|Wielka Nadzieja {s5}
 qstr_Hope_of_{s5}|Nadzieja {s5}
 qstr_Indispensable_Ally_o|Niezastąpiony Sojusznik {s5}
@@ -147,9 +142,6 @@ qstr_ERROR:_More_than_15_|ERROR: Więcej jak 15 szlaków handlowych otrzymał {s
 qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
 qstr_killed|nie żyje
 qstr_wounded|odnosi rany
-qstr_{reg3?{reg3}:}_{s1}_|{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
 qstr_{s0}^TOTAL:_{reg3}__|{s0}^RAZEM: {reg3} ({s2})
 qstr_None|Brak
 qstr_^None|^Brak
@@ -303,7 +295,6 @@ qstr_{reg9}|{reg9}
 qstr_{reg10}|{reg10}
 qstr_{reg11}|{reg11}
 qstr_{reg12}|{reg12}
-qstr_Orc_brew_finished!|Orc brew finished!
 qstr_Given_by:_{s62}|Zleceniodawca: {s62}
 qstr_Given_on:_{s60}|Otrzymane: {s60}
 qstr_You_have_{reg0}_days|Masz jeszcze {reg0} dni na ukończenie tego zadania.
@@ -312,19 +303,15 @@ qstr_This_quest_has_been_s|To zadanie zostało pomyślnie ukończone. {s59} wrę
 qstr_This_quest_has_faile|Nie udało się ukończyć tego zadania. {s59} czeka na twoje wyjaśnienia w tej sprawie.
 qstr_At_the_time_quest_wa|Dodatkowe informacje o zadaniu:^{s1}
 qstr_{s7}_and_{s8}|{s7} i {s8}
-qstr_{s7}_{s8}|{s7}, {s8}
 qstr_noone|brak
 qstr_{s9}_and_{s10}|{s9} i {s10}
-qstr_{s9}_{s10}|{s9}, {s10}
 qstr_no_one|nikt
 qstr_{s11}_and_{s12}|{s11} i {s12}
-qstr_{s11}_{s12}|{s11}, {s12}
 qstr_{s5}_is_ruled_by_{s6|{s5}, którym rządzi {s6}^Ma pod kontrolą: {s8}.^Ma następujących wasali: {s10}.^^{s5} prowadzi wojnę z: {s12}.
 qstr_{s5}_has_been_defeat|Unicestwiono {s5}!
 qstr_{s5}_has_a_strength_|{s5} ma armię liczącą w sumie {reg1} żołnierzy.
 qstr_no_holdings|no holdings 
 qstr_{s57}_and_{s58}|{s57} i {s58}
-qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Ona:On}
 qstr_^{s59}|^{s59}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} jest suzerenem, mającym pod swoimi rządami {s56}.^:{s54} wspiera {s56}.^{s55} mianował go swoim wasalem.^}}Reputacja: {reg5}.^{reg9?Ma w swoim władaniu {s58}.:Nie posiada żadnych lenn.}{s59}
@@ -348,17 +335,10 @@ qstr_{s4}_looks_upset.|{s4} się niepokoi.
 qstr_your_party|twojego oddziału
 qstr_{reg0?One_of_your_pr|{reg0?Jeden z twych jeńców,:} {s1} ({s3}) zdołał uciec z niewoli!
 qstr_You_brought_{reg3}_h|Doprowadził{eś/aś} {reg3} szt. bydła do: {s1}.
-qstr_Log_entry_{reg3}:_ty|Log entry {reg3}: type {reg4}
 qstr_Center:_{s4}|Osada: {s4}
 qstr_Troop:_{s4}|Jednostka: {s4}
-qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|Sojuszniczy oddział jest obecny
 qstr_{s4}_is_present_at_e|{s4} jest obecny przy wydarzeniu
-qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to troop object = {reg7}
-qstr_Event_#{reg5}_type_{r|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to center object faction = {reg7}
-qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
-qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
-qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Player unaffiliated
 qstr_Elapsed_hours:_{reg7|Upłynęło godzin: {reg7}
 qstr_Reputation_type:_{s1|Typ reputacji: {s15}
 qstr_Entries_up_to_#{reg5|Wpisy do #{reg5} pominięte
@@ -449,7 +429,6 @@ qstr_Thank_you_Mithrandir|Dziękuję, Mithrandirze!
 qstr_The_wizard_Saruman_i|Czarodziej Saruman odszedł, a Barad Dur rozbite w pył wraz z Mrocznym Lordem! Wszystkie ludy Śródziemia zostały uwolnione od niemal pożarło wszystko co dobre i czyste w tym świecie. Wróg został wygnany a Król powrócił!
 qstr_It_was_a_long_and_bl|To była długa i krwawa wojna i wielu twych bliskich przyjaciół nie ma już wśród nas.
 qstr_There_is_much_to_reg|Jest wiele do opłakiwania, i nawet więcej do odbudowy i uleczenia w najbliższych dniach. Ale teraz cieszmy się i świętujmy z tym przyjaciółmi, którzy są wśród nas, w Ostatnich Dniach Trzeciej Ery.
-qstr_Bagginsssss..._Ssssh|Bagginsssss... Sssshhhire...
 qstr_I..._don_t_know!|Ja... nie wiem!
 qstr_It..._beckonsssssss.|To... przyciągaaaaaaaaaaaa...
 qstr_Treachery..._Unforgi|Zdrada... Niewybaczalna...
@@ -534,10 +513,8 @@ qstr_Look_at_my_over_the_|Spójrz na mnie, {playername}! Jestem taki wspaniały 
 qstr_You_wish_old_man_my_|Jak chcesz, stary, ale mój widok jest znacznie lepszy!
 qstr_You_should_really_se|Naprawdę powinieneś zobaczyć zdjęcia Namiestnika Denetora na Facebooku, jest niesamowity!
 qstr_Press_Space_to_conti|Naciśnij 'spację' by kontynuować...
-qstr_{s24}__{reg13}_|{s24} ({reg13})
 qstr_Influence:^_{reg11}_|Wpływy:^ {reg11} ({s16})
 qstr_Resource_Pts:^_{reg1|Pkt Prestiżu:^ {reg12} ({s16})
-qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} ({s16})
 qstr_{s15}_{reg12}__with_|{s15}, {reg12} ({s16})
 qstr__={s10}=_^{s11}.^^{s|-={s10}=-^{s11}.^^{s13}.^^{s15}.
@@ -559,7 +536,6 @@ qstr_Weekly_upkeep_for_tr|Tygodniowy koszt utrzymania wojska:^{reg5} Punktów Pr
 qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Pkt Prestiżu ({reg5})
 qstr_No_upkeep_costs|Brak kosztów utrzymania
 qstr_Current_party_size_l|Aktualny limit oddziału: {reg5}.^Na wielkość oddziału wpływają obecnie:^^Podstawowa wielkość:  +10^Przywództwo: {s2}{reg1}^Charyzma: {s3}{reg2}^Reputacja: {s4}{reg3}^RAZEM:  {reg5}
-qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|         Raport siły frakcji:^{s2}
 qstr_Loyal|Lojalny
 qstr_Devoted|Oddany
@@ -581,7 +557,6 @@ qstr_Revengeful|Mściwy
 qstr_Vengeful|Mściwy
 qstr_{s2}^{s4}:_{reg1}__{|{s2}^{s4}: {reg1} ({s3})
 qstr_Your_relation_with_t|Twoje relacje z frakcjami:^{s2}
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Zyskane umiejętności:^{s2}
 qstr_^^You_are_in_proximi|^^Jesteś blisko z {s17}.
 qstr_Assassins_in_the_cam|Zabójcy w obozie, broń się!
@@ -644,12 +619,10 @@ qstr_urukhai|uruk-hai
 qstr_haradrim|haradrim
 qstr_dwarf|krasnolud
 qstr_troll|trol
-qstr_dunedain|dunedain
 qstr_lothlorien|elf z Lothlorien
 qstr_rivendell|elf z Rivendell
 qstr_mirkwood|elf z Mrocznej Puszczy
 qstr_evil_man|zły człowiek
-qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Tylko regularne oddziały
 qstr_Heroes_only|Tylko Bohaterowie
 qstr_Regulars_and_Heroes|Regularni oraz Bohaterowie
@@ -678,8 +651,6 @@ qstr_{s17}|{s17}
 qstr_Prisoners_rescued_so|Dotychczas uratowani więźniowie: {reg1}
 qstr_Victory_comment._Pla|Komentarz do zwycięstwa. Gracz był sam
 qstr_Ordinary_victory_com|Zwykły komentarz do zwycięstwa. The player provided at least 40 percent forces.
-qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
-qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
 qstr_Some_of_your_tendons|Kilka twoich ścięgien zostało poważnie uszkodzonych w czasie walki. Tracisz 1 punkt siły.
 qstr_You_took_a_nasty_wou|Odniosł{e/a}ś paskudną ranę, która sprawi, że nawet po jej wyleczeniu będziesz lekko utykać na jedną nogę. Tracisz 1 punkt zręczności.
 qstr_You_have_trouble_thi|Po bitwie, w której nieszczęśliwie otrzymał{e/a}ś silny cios w skroń, masz problemy z koncentracją myśli i nieustannie nękają cię silne bóle głowy. Twoja inteligencja obniża się o 1.
@@ -729,7 +700,6 @@ qstr_Forces_of_Mordor|Siły Mordoru
 qstr_Forces_of_Isengard|Siły Isengardu
 qstr_their_enemies|ich wrogowie
 qstr_{s11}_and_{s13}|{s11} i {s13}
-qstr_{s11}_{s13}|{s11}, {s13}
 qstr_You_are_quickly_disc|Zostajesz szybko odkryt{y/a} przez wroga.
 qstr_You_advance_stealthi|Ukrywasz się głęboko w lesie.
 qstr_You_have_evaded_the_|Udaje ci się uniknąć patroli i zbliżyć nieodkryt{ym/ej} do ruin!
@@ -758,7 +728,6 @@ qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23
 qstr_The_forces_of_{s2}_e|Siły {s2} rozłożyły się obozem w {s15}!
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Gdy prowadzisz handel z {s11}, pamiętaj, że cię nie znają i nie wiedzą o twych zasługach dla {s10}.                                                                                                                (Pkt. Prestiżu zdobyte wśród ludzi z {s11} nie mają tej samej wartości u {s10} -- patrz ekran Raportów)
-qstr_Info|Info
 qstr_You_came_into_a_poss|{Wszedłeś/Weszłaś} w posiadanie dziwnego, trochę dużego naczynia z czystą wodą. Zalatuje odrobinę piżmem.
 qstr_Obtained:_Ent_water.|Uzyskano: Woda Entów.
 qstr_A_little_after_you_f|Nieco po wypiciu zatrutej wody zaczynasz odczuwać dziwne efekty uboczne. Robaki z twej grupy wydają się... cię szanować i jednocześnie bać, tak jakbyś był{/a}... większ{y/a}. I możesz przysiąc, rzeczywiście, jesteś nieco wyższ{y/a}. Czy to naprawdę możliwe?
@@ -786,36 +755,6 @@ qstr_{reg65?mistress:mast|{reg65?mistrzyni:mistrzu}
 qstr_{reg65?Mistress:Mast|{reg65?Mistrzyni:Mistrzu}
 qstr_{reg65?madame:sir}|{reg65?Pani:Panie}
 qstr_{reg65?Madame:Sir}|{reg65?Pani:Panie}
-qstr_How_do_magnets_work?|How do magnets work?
-qstr_Um..._by_enchanting_|Um... by enchanting iron?
-qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
-qstr_i_wont_a_warband_por|i wont a warband port nao!!11!
-qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
-qstr_Install_TLD_in_your_|Install TLD in your Warband Modules folder, add the line 'compatible with warband = 1' to module.ini, and you can play it on Warband!
-qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
-qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
-qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
-qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
-qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
-qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
-qstr_Did_you_bring_your_z|Did you bring your zupdog?
-qstr_What_s_zupdog?|What's zupdog?
-qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
-qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
-qstr_What_is_plate_armour|What is plate armour? Never heard of it.
-qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
-qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
-qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
-qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
-qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
-qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
-qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
-qstr_In_movies_trolls_are|In movies trolls are big and fat, wai u make me skinny?
-qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
-qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-qstr_What_is_news?_Got_an|What is news? Got any screenshots?
-qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
-qstr_Say_cheese!|Say cheese!
 qstr_Treebeard_wants_you_|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qstr_Something_wrong_not_|Brakuje jednostek do oddziału zwiadowczego
 qstr_my_home_town|moje rodzinne miasto
@@ -926,7 +865,6 @@ qstr_You_will_not_be_diss|Nie zawiedziesz się, {Panie/Pani}. Nie znajdziesz lep
 qstr_What_an_amazing_feat|Co za niesamowity wyczyn!
 qstr_Well_done!|Wspaniale!
 qstr_Nice_legwork.|Dobra robota.
-qstr_Heh.|Heh.
 qstr_Good_moves_but_you_m|Dobry ruch, ale to jeszcze nie koniec.
 qstr_More_than_half_of_th|Więcej aniżeli połowa przeciwników, nie źle.
 qstr_You_ll_need_to_try_h|Musisz lepiej się postarać.
@@ -950,7 +888,6 @@ qstr_This_is_{s5}_Command|To {s5}, Dowódco.
 qstr_{s6}_This_place_and_|{s6} To miejsce i okoliczne ziemie należą oczywiście do ciebie, {mój panie/moja pani}.
 qstr_{s6}_This_place_and_t|{s6} To miejsce i okoliczne ziemie należą do {s7} z {s8}.
 qstr_{s3}_and_{s5}|{s3} i {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
 qstr_{reg20?We_mostly_pro|{reg20?Głównie wytwarzamy tutaj {s5}:Niewiele tu w ostatnim czasie wytwarzamy}. Jeśli chcesz wiedzieć więcej, możesz porozmawiać z naszym {reg4?zarządcą:starszym}. Jest niedaleko, o tam.
 qstr_Hey_scum!_I_can_fix_|Hej szumowino! Mogę naprawić twoją szczękę.
 qstr_Watch_where_you_re_g|Patrz gdzie leziesz, robalu!

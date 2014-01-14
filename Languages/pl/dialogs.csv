@@ -10,9 +10,7 @@ dlga_mutiny_talk_2:close_window|Powiemy ci coś.. ^Chłopaki mówią, że ja bę
 dlga_start:troll_introduce_1|Jakiś problem?
 dlga_start:troll_talk_1|Ty szalon{y/a}?
 dlga_troll_introduce_1:troll_goodbye|Do licha! Gadający trol?!
-dlga_troll_introduce_1:close_window|I own a horse.
 dlga_troll_talk_1:troll_talk_2|Ja trol, trol.
-dlga_troll_talk_1:close_window|I own a horse.
 dlga_troll_talk_2:troll_talk_3|Wyzwanie podjęte!^^{s4}
 dlga_troll_talk_3:troll_beaten|{s6}
 dlga_troll_talk_3:troll_goodbye|{s5}
@@ -350,7 +348,6 @@ dlga_lord_give_order_details:lord_give_order_answer|{s1}
 dlga_lord_give_order_details:lord_pretalk|Nieważne.
 dlga_lord_give_order_stop:lord_pretalk|W porządku. Zrobię to.
 dlga_lord_give_order_answer:lord_pretalk|Przykro mi, ale teraz muszę się zajmować własnymi sprawami.
-dlga_lord_give_order_answer:lord_give_order_answer_2|.
 dlga_lord_give_order_answer_2:close_window|Zrobię to.
 dlga_lord_give_order_answer_2:lord_pretalk|Przykro mi, to jest dla mnie niemożliwe do wykonania.
 dlga_lord_talk:lord_give_order_call_to_arms_verify|Chcę rozpocząć nową kampanię. Zbierzmy tu armię.

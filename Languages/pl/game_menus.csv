@@ -16,24 +16,17 @@ mno_custom_battle_scenario_7|            Zasadzka, Orkowie vs Elfy z Mrocznej Pu
 mno_go_back|                              Wróć
 menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
 mno_go_back_dot|Wróć.
-menu_reports|^^^{s9}
 mno_view_party_size_report|Obejrzyj raport rozmiaru oddziału.
 mno_view_morale_report|Obejrzyj raport morale oddziału.
-mno_view_character_report_02|NPC status check.
 mno_view_faction_strengths_report|Obejrzyj raport siły frakcji.
 mno_view_faction_relations_report|Obejrzyj raport stosunków między frakcjami.
-mno_view_traits_report|View traits.
 mno_resume_travelling|Wróć.
-menu_custom_battle_2|^^^^^^{s16}
-mno_custom_battle_go|Start.
 mno_leave_custom_battle_2|Anuluj.
 menu_custom_battle_end|^^^^^^Bitwa skończona. {s1} Twój oddział zabił {reg5} wrogów, tracąc przy tym {reg6} ludzi.^Z twej ręki poległo {reg7} wrogów.
 mno_continue|Dalej.
 menu_quick_battle_general_test|^^^Obecna bitwa: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
 mno_go_back|.                 Wróć
-menu_quick_battle_troll|^^^^^^^^Choose your troll scenario:
 mno_go_back|.                 Wróć
-menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:
 mno_go_back|.                 Wróć
 menu_start_good|^^^^^^^^^^Wybierz rasę:
 menu_start_evil|^^^^^^^^^^Komu Służysz?
@@ -101,71 +94,28 @@ menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, któryc
 mno_continue|Dalej...
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
 mno_continue|Dalej...
-menu_assasins_attack_player_defeated|You should not be reading this...
 menu_fangorn_danger|^^^^^^Dziwne, otaczają cie jakby szepty.^Czyżby to rozmawiały drzewa? W powietrzu można wyczuć głeboki gniew i ból.^Twoje rozkazy?
 mno_be_quiet_elf|Poszanuj panujący wokół spokój. Poruszaj się jak najciszej.
-mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
-mno_be_bold|Go on! I'm not afraid of plants or old myths!
-mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
-menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
 mno_ok|Continue...
-menu_fangorn_battle_debrief|you shouldn't be reading this
-menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 mno_ok_|Continue...
-menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 mno_ok_0|Ouch! Let's get out of this cursed place!
 menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were that lucky.^^
 mno_ok_1|Ouch! Let's get out of this cursed place!
-menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
 mno_ok_2|Let's get out of this cursed place!
 menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in its blood, it looks tremendously dangerous...
-mno_killit|Dispatch it, now. Make sure it dies.
-mno_cageit1|Cage it and drag it around.
 mno_cageit2|Cage it togheter with the other troll.
-menu_cheat_free_magic_item|Which free magic item do you want?
-mno_cheat_free_magic_item_back|Back
-menu_cheat_impose_quest|Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)
 mno_back|Back
-mno_none|None
-menu_teleport_to_town_part_two|^^^^^^^^Ride Shadowfax:^to which city inside {s11}?
 mno_teleport_back|No, Another Kingdom
-menu_teleport_to_town|^^^^^^^^Ride Shadowfax:^to which kingdom?
-mno_teleport_neutrals|Others/neutrals
-mno_teleport_others_factions|More... ({reg5}/3)
 mno_teleport_back|Wróć do menu obozu.
-menu_select_any_troop|Select troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
 mno_prev_page|[Poprzednia]
 mno_next_page|[Następna]
-mno_opt|[Search Option]
 mno_go_back|[Done]
 mno_go_back|[Cancel]
-menu_select_any_troop_setup_search|Add troops: setup search parameters^^^Current parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
-mno_one|[Change Tier]
-mno_facup|[Prev Faction]
-mno_facdown|[Next Faction]
-mno_raceup|[Prev Race]
-mno_racedown|[Next Race]
-mno_three|[Regulars or Heroes]
 mno_go_back|[Done]
-menu_camp_cheat|Other Cheats Menu (for development use):^^This menu is intended for development use while we are working on improving this mod. If you enable this option then additonal CHEAT menu's will also appear in other game menu's. Please do not report any bugs with this functionality since it is for testing only.
-mno_cheat_disabable|Disable cheat/modding options.
-mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
-mno_cheat_change_race|Change your race (for development use).
-mno_impose_quest|Impose a quest...
-mno_relocate_party|Move to town...
 mno_camp_mod_4|Add troops to player party.
-mno_cheat_get_item|Gain a free magic item
-mno_cheat_add_xp|Add 1000 experience to player.
-mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
-mno_camp_mod_3|Add gear and gold to player.
 mno_camp_mod_5|Spawn a looter party nearby.
-mno_camp_mod_5|Fill merchants with faction stuff
-mno_cheat_back|Back to camp menu.
-menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
 mno_ok_|Continue.
-menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
 mno_ok_|I... shall... survive!
-menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
 mno_end_game_bye|Bywaj.
 menu_cattle_herd|Napotykasz jakichś ludzi.
 mno_cattle_drive_away|Rozkaż im podążać za sobą.
@@ -174,7 +124,6 @@ mno_leave|Odejdź.
 menu_simple_encounter|^^^^^{s2}^Masz {reg22} ludzi zdolnych do walki przeciwko {reg11}.^^Twe rozakazy?
 mno_encounter_attack|{reg21?Atakujemy:Przygotować się do obrony}.
 mno_encounter_order_attack|Rozkaż swoim oddziałom {reg21?zaatakować:stawić im czoła}, ty zaś zaczekaj na tyłach.
-mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_encounter_leave|Odejdź.
 mno_encounter_retreat|Wycofaj się, zostawiając kilku żołnierzy, by osłaniali twój odwrót.
 menu_encounter_retreat_confirm|^^^^^Jako członek oddziału z najwyższymi umiejętnościami taktycznymi,   ({reg2}), {reg3?obmyślasz:{s3} obmyśla} plan, który pozwoli tobie i twoim ludziom uciec, ratując życie. Będziesz musiał jednak zostawić {reg4} żołnierzy, by powstrzymać wroga od ruszenia w pościg.
@@ -190,7 +139,6 @@ mno_order_attack_continue|Rozkaż żołnierzom, by nie przerywali ataku.
 mno_order_retreat|Każ się wycofać.
 mno_continue|Dalej...
 menu_kingdom_army_quest_report_to_army|{s8} przesyła wiadomość, że życzy sobie, byś przyłączył{/a} się do jego nowej kampanii wojennej. Musisz przybyć wraz z armią składającą się z {reg13} żołnierzy i szybko powin{ieneś/naś} wyszkolić więcej ludzi, jeśli tylu nie posiadasz.
-mno_reject|Send a message you are too busy.
 mno_continue|Send word you'll join him shortly.
 menu_kingdom_army_quest_messenger|{s8} przesyła wiadomość, że życzy sobie rozmawiać z tobą w sprawie pewnego zadania. Żąda, byś spotkał{/a} się z nim najszybciej, jak to tylko możliwe.
 mno_continue|Dalej...
@@ -199,14 +147,6 @@ mno_continue|Dalej...
 menu_kingdom_army_follow_failed|Nie wysłuchał{e/a}ś rozkazów, które wydał ci {s8} i nie podążył{e/a}ś za nim. W gniewie wyrzuca Cię ze swej armii i wysyła groźnie brzmiące ostrzeżenie, iż twe czyny nie zostaną zapomniane.
 mno_continue|Dalej...
 menu_battle_debrief|{s11} Podczas tej krwawej bitwy ucierpieli:^^Twoje straty:{s8}{s10}^^Straty wroga:{s9}
-mno_inspect_troll|Inspect downed troll
-mno_continue|Continue...
-menu_total_victory|You shouldn't be reading this... {s9}
-mno_continue|Continue...
-menu_enemy_slipped_away|^^^^^{s17}
-mno_continue|Continue...
-menu_total_defeat|You shouldn't be reading this...
-menu_permanent_damage|^^^^^{s0}
 mno_s0|{s0}
 menu_pre_join|^^^^^Natrafiasz na zaciekłą bitwę, w której walczą {s2} i {s1}. Decydujesz się...
 mno_pre_join_help_attackers|Wspomóc atakujących. {s2} potrzebują pomocy.
@@ -230,10 +170,7 @@ mno_join_siege_with_allies|Przyłącz się do następnego ataku na mury.
 mno_join_siege_stay_back|Rozkaż swoim żołnierzom, by bez ciebie przyłączyli się do następnego ataku.
 mno_leave|Odejdź.
 menu_moria_must_escape|^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.
-mno_moria_exit_scene|Find your way out!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
-mno_moria_enter|Return into main hall of Moria trough the secret entrance
-mno_moria_enter_door|Enter Moria.
 mno_moria_secret|{s12}
 mno_moria_exit_scene|CHEAT: steal book now
 mno_moria_exit_scene_door|Get book.
@@ -251,7 +188,6 @@ mno_cheat_castle_lead_attack|CHEAT: Błyskawiczna budowa wyposażenia.
 mno_lift_siege|Porzuć oblężenie.
 menu_siege_attack_meets_sally|^^^^^^Obrońcy ruszają naprzeciw twemu szturmowi.
 mno_continue|Dalej...
-menu_castle_besiege_inner_battle|{s1}
 mno_continue|Dalej...
 menu_construct_ladders|Jako członek oddziału z najwyższą umiejętnością inżynierii ({reg2}), {reg3?obliczasz:{s3} oblicza}, że zbudowanie drabin zajmie około {reg4} godzin.
 mno_build_ladders_cont|Dalej.
@@ -272,38 +208,21 @@ menu_siege_join_defense|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}
 mno_continue|Dalej...
 menu_village_hunt_down_fugitive_defeated|^^^^^Uciekinier powala cię na ziemię potężnym uderzeniem, nagle świat zaczyna wirować i wszystko ciemnieje. Czas mija. Gdy wreszcie otwierasz oczy zmaltretowan{y/a} i zakrwawion{y/a}, ale na szczęście żadna z odniesionych ran nie okazuje się śmiertelna.
 mno_continue|Dalej...
-menu_town_bandits_failed|^^^^^{s4} {s5}
 mno_continue|Dalej...
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes. Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.
 mno_continue|Dalej...
-menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 mno_continue|Dalej...
-menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
 mno_continue|Dalej...
 menu_close|Zamknij.
 menu_town|Przybywasz do {s60}.{s12}{s13}
-mno_town_menu_0|Go to some location.
-mno_town_menu_0_door|Door to some location.
-mno_town_approach|Approach {s1}...
-mno_town_castle|Go to {s1}.
-mno_town_castle_door|Door to the castle.
-mno_town_center|Walk to the main square...
-mno_town_center_door|Door to the town center.
 mno_aw_chamber|Never: Enter the AW chamber.
-mno_aw_chamber_door|Open the door.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
-mno_town_prison|Never: Enter the prison.
-mno_town_prison_door|Door to the prison.
 mno_dungeon_enter|Enter the cellars.
-mno_dungeon_enter_door|Open the door.
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_castle_wait|{s1}.
-mno_isengard_underground|Go to the underground caverns.
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
-mno_town_leave|Leave...
-mno_town_leave_door|Leave Area
 menu_disembark|Chcesz opuścić statek?
 mno_disembark_yes|Tak.
 mno_disembark_no|Nie.
@@ -322,50 +241,21 @@ mno_continue|Dalej...
 menu_sneak_into_town_caught_ran_away|Zostawiasz miasto za sobą i uciekasz na wzgórza.
 mno_continue|Dalej...
 menu_auto_training_ground_trainer|stub
-menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \ You shiver, as all the world goes black around you...^Is this your end?
-mno_continue|Continue...
-menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
 mno_ok_|Continue...
 menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.
-mno_whatever|Get up!
 menu_recover_after_death_default|^^^^^You regain your conciousness. You are in the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.  You get up and try to look for any other survivors from your party.
-mno_continue|Continue...
 menu_recover_after_death_town|^^^^You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town.  It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
-mno_continue|Continue...
 menu_recover_after_death_town_alone|You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town. Your companions find you. It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
-mno_continue|Continue...
 menu_notification_center_under_siege|{s1} jest pod oblężeniem wrogich oddziałów, którymi dowodzi {s2} ({s3})!
 mno_continue|Dalej...
 menu_notification_one_side_left|^^^^^Wojna o Pierścień się skończyła!^^{s1} pokonuje wszystkich swych przeciwników!
-mno_continue|Continue...
 menu_notification_total_defeat|^^^^^Wojna o Pierścień skończyła się dla ciebie!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
-mno_continue|Continue...
-menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.
-mno_continue|Continue...
 menu_notification_faction_defeated|^^^^^Pokonano {s1}!^{s1} już nie istnieje!
-mno_continue|Continue...
-menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 mno_continue|Leave.
-menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
-mno_explore|Explore this place.
 mno_continue|Leave.
-menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
-mno_help|Help the strangers!
-mno_go_your_way|Leave them alone
-menu_starting_quest_victory|null
-menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
-mno_go_back|Go back
-menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
-mno_go_back|Go back
-menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
-mno_go_back|Go back
 menu_ancient_ruins|You approach a heavily guarded region of the forest....
-mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 mno_next_rescue_scene| 
-mno_next_rescue_scene_door|Continue onward!
 mno_pick_troops1|Pick companions for the mission, {reg0}  selected
-mno_leave|Leave.
-menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
 mno_troop1|{s1}: {reg1}
 mno_troop2|{s2}: {reg2}
 mno_troop3|{s3}: {reg3}
@@ -375,26 +265,13 @@ mno_troop6|{s6}: {reg6}
 mno_troop7|{s7}: {reg7}
 mno_troop8|{s8}: {reg8}
 mno_troop9|{s9}: {reg9}
-mno_go_forward|End selecting companions and proceed.
-menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
-mno_pay_respects|Kneel and pay your respects.
-mno_swear_oath|Swear an oath of vengeance!
-mno_despoil|Desecrate the site
 mno_leave|Leave the mound.
-menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
 mno_leave|Leave the mound.
 menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s1}.   You would relentlessly seek out the forces of {s2} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 mno_leave|Leave the mound.
-menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
 mno_leave|Leave the mound.
-menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
-mno_swear_oath|Swear an oath of vengeance!
 mno_leave|Leave the pyre.
-menu_town_ruins|When you approach, you see that {s1} is {s2}
-mno_ruin_menu_0|Explore the place.
-mno_ruin_leave|Leave...
 menu_premutiny|none
 menu_mutiny|{s1}
-mno_leave|Leave.
 menu_taunt|You taunted the defenders, shouting insults and parading a good distance away for some time. There was no reaction apart from several arrows which fell well short of your ranks. ^Looks like there is nothing to do here
 mno_leave|Back...

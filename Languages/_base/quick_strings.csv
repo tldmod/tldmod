@@ -73,7 +73,6 @@ qstr_Arms|Arms
 qstr_Thighs|Thighs
 qstr_Legs|Legs
 qstr_Rotate|Rotate
-qstr_Rotation={reg0}|Rotation={reg0}
 qstr_You_gained_{reg0}_Re|You gained {reg0} Resource Points of {s0}.
 qstr_You_lost_{reg0}_Reso|You lost {reg0} Resource Points of {s0}.
 qstr_{s24}:|{s24}:

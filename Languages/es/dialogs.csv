@@ -217,7 +217,6 @@ dlga_defeat_lord_answer:defeat_lord_answer_1|Ahora sois mi prisionero.
 dlga_defeat_lord_answer_1:close_window|Estoy a vuestra merced.
 dlga_defeat_lord_answer:defeat_lord_answer_2|Habéis luchado con valentía. Quedáis libre.
 dlga_defeat_lord_answer_2:close_window|{s43}
-dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 dlga_start:party_encounter_lord_hostile_attacker.1|¡Alto!
 dlga_party_encounter_lord_hostile_attacker:party_encounter_lord_hostile_attacker|{s42}
 dlga_party_encounter_lord_hostile_attacker:party_encounter_lord_hostile_attacker_2|{s43}
@@ -333,7 +332,6 @@ dlga_lord_give_troops_check_2:lord_pretalk|{s31}
 dlga_lord_talk:lord_get_reward_item_ask|Me gustaría pediros un objeto en especial.
 dlga_lord_get_reward_item_ask:lord_talk|Parece ser que no disponéis de espacio suficiente en vuestro inventario. Haced un hueco, y entonces volved.
 dlga_lord_get_reward_item_ask:lord_get_reward_item|Really? Recordad que necesitáis de un cierto rango e influencia para poder acceder a ciertos objetos especiales.^¿Qué es lo que queréis?
-dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [costs {reg14}/{reg15} Influence]
 dlga_lord_get_reward_item:lord_pretalk|No importa.
 dlga_lord_get_reward_item_answer:lord_pretalk|De acuerdo. Ojalá lo uséis para derrotar a nuestros enemigos.
 dlga_lord_talk:marshall_ask|Me gustaría celebrar concilio con vos acerca de la Guerra.
@@ -358,7 +356,6 @@ dlga_lord_give_order_details:lord_give_order_answer|{s1}
 dlga_lord_give_order_details:lord_pretalk|No importa.
 dlga_lord_give_order_stop:lord_pretalk|De acuerdo. Haré eso.
 dlga_lord_give_order_answer:lord_pretalk|Lo siento. Se me necesita en otro lugar.
-dlga_lord_give_order_answer:lord_give_order_answer_2|.
 dlga_lord_give_order_answer_2:close_window|Lo haré.
 dlga_lord_give_order_answer_2:lord_pretalk|Lo siento, pero no puedo hacer eso.
 dlga_lord_talk:lord_talk_ask_something|Me gustaría preguntaros algo.

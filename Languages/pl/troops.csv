@@ -1084,7 +1084,6 @@ trp_dunland_lord|Daeglaf Czarny
 trp_dunland_lord_pl|Wódz
 trp_beorn_lord|Grimbeorn Stary
 trp_beorn_lord_pl|Wódz
-trp_lorien_marshall|Celeborn
 trp_lorien_marshall_pl| 
 trp_pippin_notmet|Niziołek
 trp_pippin_notmet_pl| 
@@ -1136,7 +1135,6 @@ trp_knight_1_20|Gronk Ludożerca
 trp_knight_1_20_pl| 
 trp_knight_2_1|Kapitan Mortakh
 trp_knight_2_1_pl| 
-trp_knight_2_2|Berúthiel
 trp_knight_2_2_pl| 
 trp_knight_2_3|Skang
 trp_knight_2_3_pl| 
@@ -1219,421 +1217,199 @@ trp_heroes_end_pl|
 trp_smith_mtirith|Kowal Berethor
 trp_smith_mtirith_pl|Kowal Namiestnika
 trp_smith_pelargir|Mistrz Kowalski Hallatan
-trp_smith_pelargir_pl|smithy
 trp_smith_linhir|Płatnerz Bor
-trp_smith_linhir_pl|smithy
 trp_smith_dolamroth|Kowal Haldad
-trp_smith_dolamroth_pl|Amroth smiths
 trp_smith_edhellond|Ryis Żelaznagłowa
-trp_smith_edhellond_pl|smithy
 trp_smith_lossarnach|Berin Topornik
-trp_smith_lossarnach_pl|smithy
 trp_smith_tarnost|Harandil Stalowymłot
-trp_smith_tarnost_pl|smithy
 trp_smith_erech|Lorne Czarny
-trp_smith_erech_pl|smithy
 trp_smith_pinnath|Tarandil Miecznik
-trp_smith_pinnath_pl|smithy
 trp_smith_eosgiliath|Bzurg Rabuś
-trp_smith_eosgiliath_pl|smithy
-trp_smith_wosgiliath|Gardil
-trp_smith_wosgiliath_pl|makeshift smithy
-trp_smith_calembel|Agronom
-trp_smith_calembel_pl|smithy
 trp_smith_hannun|Fal Kowal Zwiadowców
-trp_smith_hannun_pl|ranger gear stash
-trp_smith_candros|Kalimdor
-trp_smith_candros_pl|smithy
 trp_smith_edoras|Mistrz Stali Eaoden
-trp_smith_edoras_pl|King's smithy
 trp_smith_aldburg|Fulm Żelaznostopy
-trp_smith_aldburg_pl|smithy
-trp_smith_hornburg|Aldhelm
-trp_smith_hornburg_pl|smithy
-trp_smith_eastemnet|Eadfrid
-trp_smith_eastemnet_pl|smithy
 trp_smith_westfold|Deor Hełmiarz
-trp_smith_westfold_pl|smithy
 trp_smith_westemnet|Płatnerz
-trp_smith_westemnet_pl|smithy
 trp_smith_eastfold|Eaderan Żelazoryt
-trp_smith_eastfold_pl|smithy
 trp_smith_morannon|Hurbag Wytapiacz
-trp_smith_morannon_pl|smithy
 trp_smith_mmorgul|Ogniomistrz Orgurz
-trp_smith_mmorgul_pl|smithy
 trp_town_24_smith|Boz Żelazołup
-trp_town_24_smith_pl|smithy
 trp_smith_orc_patrol|Glugz Żelazny Palec
-trp_smith_orc_patrol_pl|camp smithy
 trp_smith_oscamp|Kugash Żelazomił
-trp_smith_oscamp_pl|camp smithy
 trp_smith_isengard|Burz Żelazogrzmot
-trp_smith_isengard_pl|underground smithy
 trp_smith_uoutpost|Gurzuk Żelaznozęby
-trp_smith_uoutpost_pl|outpost smithy
 trp_smith_uhcamp|Rabzug Rdzawy
-trp_smith_uhcamp_pl|camp smithy
-trp_smith_urcamp|Glurk
-trp_smith_urcamp_pl|camp smithy
 trp_smith_cgaladhon|Dirufin Łuczarz
-trp_smith_cgaladhon_pl|elven weaponmakers
 trp_smith_cdolen|Dimirian Grotnik
-trp_smith_cdolen_pl|elven weaponmakers
-trp_smith_camroth|Getasistan
-trp_smith_camroth_pl|elven weaponmakers
-trp_smith_thranduils_halls|Thurinor
-trp_smith_thranduils_halls_pl|smithy
-trp_smith_woodelf_camp|Calechir
-trp_smith_woodelf_camp_pl|smithy
 trp_smith_beorn|Beornalaf Topornik
-trp_smith_beorn_pl|smithy
 trp_smith_moria|Kowal Burgak
-trp_smith_moria_pl|smithy
 trp_smith_dale|Ardel Ognistoręki
-trp_smith_dale_pl|smithy
 trp_smith_esgaroth|Kelegarn Łuczarz
-trp_smith_esgaroth_pl|smithy
 trp_smith_erebor|Thror Młotnik
-trp_smith_erebor_pl|praised Dwarven smiths
 trp_smith_dunland|Dorrowuld Żelazna Pika
-trp_smith_dunland_pl|smithy
 trp_smith_harad|Har Stalogniot
-trp_smith_harad_pl|smithy
 trp_smith_khand|Pushurt Przekupień
-trp_smith_khand_pl|smithy
 trp_smith_umbar|Kowal Fuinir
-trp_smith_umbar_pl|smithy
-trp_smith_imladris|Duifirian
-trp_smith_imladris_pl|elven weaponmakers
-trp_smith_dolguldur|Shtazg Dulbash
-trp_smith_dolguldur_pl|smithy
-trp_smith_north_rhun|Ognjemir Kladivo
-trp_smith_north_rhun_pl|makeshift smithy
 trp_smith_gundabad|Blurg Handlarz Śniegiem
-trp_smith_gundabad_pl|smithy
 trp_smith_ironhill|Kowal Żelaznych Wzgórz
-trp_smith_ironhill_pl|Dwarven camp smiths
 trp_town_50_weaponsmith|Płatnerz
-trp_town_50_weaponsmith_pl|smithy
 trp_smith_gondor_ac|Płatnerz Bor
-trp_smith_gondor_ac_pl|camp smithy
 trp_smith_rohan_ac|Deor Hełmiarz
-trp_smith_rohan_ac_pl|camp smithy
 trp_smith_mordor_ac|Kowal Hurbag
-trp_smith_mordor_ac_pl|smithy
 trp_smith_isengard_ac|Burz Żelazorąb
-trp_smith_isengard_ac_pl|underground smithy
 trp_smith_lorien_ac|Dimirian Grotnik
-trp_smith_lorien_ac_pl|elven weaponmakers
 trp_smith_woodelf_ac|Calechir
-trp_smith_woodelf_ac_pl|smithy
 trp_smith_dwarf_ac|Kowal Żelaznych Wzgórz
-trp_smith_dwarf_ac_pl|Dwarven camp smiths
 trp_smith_gundabad_ac|Blurg Handlarz Śniegiem
-trp_smith_gundabad_ac_pl|smithy
 trp_smith_rhun_ac|Ognjemir Kladivo
-trp_smith_rhun_ac_pl|makeshift smithy
-trp_smith_guldur_ac|Shtazg Dulbash
-trp_smith_guldur_ac_pl|smithy
-trp_smith_imladris_ac|Duifirian
-trp_smith_imladris_ac_pl|elven weaponmakers
 trp_smith_dunland_ac|Dorrowuld Żelazna Pika
-trp_smith_dunland_ac_pl|smithy
 trp_smith_harad_ac|Har Tęgogłowy
-trp_smith_harad_ac_pl|smithy
 trp_smith_khand_ac|Pushurt Straganiarz
-trp_smith_khand_ac_pl|smithy
 trp_smith_umbar_ac|Kowal Fuinir
-trp_smith_umbar_ac_pl|smithy
 trp_barman_mtirith|Karczmarz
-trp_barman_mtirith_pl|the Citadel
 trp_barman_pelargir|Karczmarz
-trp_barman_pelargir_pl|the Castle
 trp_barman_linhir|Karczmarz
-trp_barman_linhir_pl|the Castle
 trp_barman_dolamroth|Karczmarz
-trp_barman_dolamroth_pl|the Castle
 trp_barman_edhellond|Karczmarz
-trp_barman_edhellond_pl|the Castle
 trp_barman_lossarnach|Karczmarz
-trp_barman_lossarnach_pl|the Castle
 trp_barman_tarnost|Karczmarz
-trp_barman_tarnost_pl|the Castle
 trp_barman_erech|Karczmarz
-trp_barman_erech_pl|the Castle
 trp_barman_pinnath|Karczmarz
-trp_barman_pinnath_pl|the Castle
 trp_barman_hannun|Karczmarz
-trp_barman_hannun_pl|the Secret Cave
 trp_barman_calembel|Karczmarz
-trp_barman_calembel_pl|the Castle
 trp_barman_edoras|Karczmarz
-trp_barman_edoras_pl|Meduseld, the Golden Hall
 trp_barman_aldburg|Karczmarz
-trp_barman_aldburg_pl|the Castle
 trp_barman_hornburg|Karczmarz
-trp_barman_hornburg_pl|the Lord Halls
 trp_barman_eastemnet|Karczmarz
-trp_barman_eastemnet_pl|the Castle
 trp_barman_westfold|Karczmarz
-trp_barman_westfold_pl|the Castle
 trp_barman_westemnet|Karczmarz
-trp_barman_westemnet_pl|the Castle
 trp_barman_eastfold|Karczmarz
-trp_barman_eastfold_pl|the Castle
 trp_barman_baraddur|Karczmarz
-trp_barman_baraddur_pl|the Castle
 trp_barman_morannon|Karczmarz
-trp_barman_morannon_pl|the Leader's Cave
 trp_barman_mmorgul|Karczmarz
-trp_barman_mmorgul_pl|the Tower
 trp_barman_cungol|Karczmarz
-trp_barman_cungol_pl|the Castle
 trp_barman_isengard|Karczmarz
-trp_barman_isengard_pl|the tower of Orthanc
 trp_barman_cgaladhon|Karczmarz
-trp_barman_cgaladhon_pl|the Tree castle
 trp_barman_cdolen|Karczmarz
-trp_barman_cdolen_pl|the Tree castle
 trp_barman_camroth|Karczmarz
-trp_barman_camroth_pl|the Tree castle
 trp_barman_thalls|Karczmarz
-trp_barman_thalls_pl|the Throne Room
 trp_barman_beorn|Karczmarz
-trp_barman_beorn_pl|Beorn House
 trp_barman_moria|Karczmarz
-trp_barman_moria_pl|the Chief's Chamber
 trp_barman_dale|Karczmarz
-trp_barman_dale_pl|the Castle
 trp_barman_esgaroth|Karczmarz
-trp_barman_esgaroth_pl|the Hall
 trp_barman_erebor|Karczmarz
-trp_barman_erebor_pl|the Lord's Chamber
 trp_barman_dolguldur|Karczmarz
-trp_barman_dolguldur_pl|the Castle
 trp_merchant_mtirith|Kwatermistrz
-trp_merchant_mtirith_pl|stable and warehouse
 trp_merchant_pelargir|Kwatermistrz
-trp_merchant_pelargir_pl|stable and warehouse
 trp_merchant_linhir|Kwatermistrz
-trp_merchant_linhir_pl|stable and warehouse
 trp_merchant_dolamroth|Kwatermistrz
-trp_merchant_dolamroth_pl|stable and warehouse
 trp_merchant_edhellond|Kwatermistrz
-trp_merchant_edhellond_pl|stable and warehouse
 trp_merchant_lossarnach|Kwatermistrz
-trp_merchant_lossarnach_pl|stable and warehouse
 trp_merchant_tarnost|Kwatermistrz
-trp_merchant_tarnost_pl|stable and warehouse
 trp_merchant_erech|Kwatermistrz
-trp_merchant_erech_pl|stable and warehouse
 trp_merchant_pinnath|Kwatermistrz
-trp_merchant_pinnath_pl|stable and warehouse
 trp_merchant_eosgiliath|Zaopatrzeniowiec
-trp_merchant_eosgiliath_pl|stable and warehouse
 trp_merchant_wosgiliath|Kwatermistrz
-trp_merchant_wosgiliath_pl|stable and warehouse
 trp_town_12_horse_merchant|Kwatermistrz
-trp_town_12_horse_merchant_pl|stable and warehouse
 trp_town_13_horse_merchant|Kwatermistrz
-trp_town_13_horse_merchant_pl|stable and warehouse
 trp_merchant_edoras|Kwatermistrz
-trp_merchant_edoras_pl|stable and warehouse
 trp_merchant_aldburg|Kwatermistrz
-trp_merchant_aldburg_pl|King's stable and warehouse
 trp_merchant_hornburg|Kwatermistrz
-trp_merchant_hornburg_pl|stable and warehouse
 trp_merchant_eastemnet|Kwatermistrz
-trp_merchant_eastemnet_pl|stable and warehouse
 trp_merchant_westfold|Kwatermistrz
-trp_merchant_westfold_pl|stable and warehouse
 trp_merchant_westemnet|Kwatermistrz
-trp_merchant_westemnet_pl|stable and warehouse
 trp_merchant_eastfold|Kwatermistrz
-trp_merchant_eastfold_pl|stable and warehouse
 trp_town_21_horse_merchant|Kwatermistrz
-trp_town_21_horse_merchant_pl|pit and warehouse
 trp_merchant_morannon|Zaopatrzeniowiec
-trp_merchant_morannon_pl|pit and warehouse
 trp_merchant_mmorgul|Zaopatrzeniowiec
-trp_merchant_mmorgul_pl|pit and warehouse
 trp_town_24_horse_merchant|Zaopatrzeniowiec
-trp_town_24_horse_merchant_pl|pit and warehouse
 trp_merchant_orc_patrol|Zaopatrzeniowiec
-trp_merchant_orc_patrol_pl|camp stash
 trp_merchant_isengard|Zaopatrzeniowiec
-trp_merchant_isengard_pl|camp stash
 trp_town_27_horse_merchant|Zaopatrzeniowiec
-trp_town_27_horse_merchant_pl|warg pit and supplies
 trp_merchant_uoutpost|Zaopatrzeniowiec
-trp_merchant_uoutpost_pl|warg pit and supplies
 trp_merchant_uhcamp|Zaopatrzeniowiec
-trp_merchant_uhcamp_pl|warg pit and supplies
 trp_merchant_urcamp|Zaopatrzeniowiec
-trp_merchant_urcamp_pl|warg pit and supplies
 trp_merchant_cgaladhon|Zaopatrzeniowiec
-trp_merchant_cgaladhon_pl|elven supplies
 trp_merchant_cdolen|Zaopatrzeniowiec
-trp_merchant_cdolen_pl|elven supplies
 trp_merchant_camroth|Zaopatrzeniowiec
-trp_merchant_camroth_pl|elven supplies
 trp_merchant_thranduils_halls|Zaopatrzeniowiec
-trp_merchant_thranduils_halls_pl|elven supplies
 trp_merchant_woodelf_camp|Zaopatrzeniowiec
-trp_merchant_woodelf_camp_pl|elven supplies
 trp_merchant_woodmen|Zaopatrzeniowiec
-trp_merchant_woodmen_pl|stable and warehouse
 trp_merchant_beorn|Zaopatrzeniowiec
-trp_merchant_beorn_pl|stable and warehouse
 trp_merchant_moria|Zaopatrzeniowiec
-trp_merchant_moria_pl|warg pit and supplies
 trp_merchant_dale|Zaopatrzeniowiec
-trp_merchant_dale_pl|stable and warehouse
 trp_merchant_esgaroth|Zaopatrzeniowiec
-trp_merchant_esgaroth_pl|stable and warehouse
 trp_merchant_erebor|Kwatermistrz
-trp_merchant_erebor_pl|Dwarven supplies
 trp_merchant_dunland|Zaopatrzeniowiec
-trp_merchant_dunland_pl|camp stash
 trp_merchant_harad|Zaopatrzeniowiec
-trp_merchant_harad_pl|camp stash
 trp_merchant_khand|Zaopatrzeniowiec
-trp_merchant_khand_pl|camp stash
 trp_merchant_umbar|Zaopatrzeniowiec
-trp_merchant_umbar_pl|camp stash
 trp_merchant_imladris|Zaopatrzeniowiec
-trp_merchant_imladris_pl|camp supplies
 trp_merchant_dolguldur|Zaopatrzeniowiec
-trp_merchant_dolguldur_pl|stable and warehouse
 trp_merchant_north_rhun|Zaopatrzeniowiec
-trp_merchant_north_rhun_pl|camp stash
 trp_merchant_south_rhun|Zaopatrzeniowiec
-trp_merchant_south_rhun_pl|camp stash
 trp_merchant_gundabad|Zaopatrzeniowiec
-trp_merchant_gundabad_pl|camp stash
 trp_merchant_ironhill|Kwatermistrz
-trp_merchant_ironhill_pl|Dwarven supplies
 trp_town_50_horse_merchant|Zaopatrzeniowiec
-trp_town_50_horse_merchant_pl|stable and warehouse
 trp_merchant_calembel|Zaopatrzeniowiec
-trp_merchant_calembel_pl|stable and warehouse
 trp_elder_mtirith|Zarządca Tirith
-trp_elder_mtirith_pl|the White City
 trp_elder_pelargir|Zarządca Pelargir
-trp_elder_pelargir_pl|the city
 trp_elder_linhir|Zarządca Linhir
-trp_elder_linhir_pl|the city
 trp_elder_dolamroth|Zarządca Dol Amroth
-trp_elder_dolamroth_pl|the city
 trp_elder_edhellond|Zarządca Edhellond
-trp_elder_edhellond_pl|the city
 trp_elder_lossarnach|Zarządca Lossarnach
-trp_elder_lossarnach_pl|the town
 trp_elder_tarnost|Zarządca Tarnost
-trp_elder_tarnost_pl|the town
 trp_elder_erech|Zarządca Erech
-trp_elder_erech_pl|the town
 trp_elder_pinnath|Zarządca Pinnath
-trp_elder_pinnath_pl|the town
 trp_elder_ethring|Zarządca Ethring
-trp_elder_ethring_pl|the city
 trp_elder_henneth|Zarządca
-trp_elder_henneth_pl|the hideout
 trp_elder_cairandros|Zarządca Cair Andros
-trp_elder_cairandros_pl|the island fortress
 trp_elder_edoras|Than Edoras
-trp_elder_edoras_pl|the city
 trp_elder_aldburg|Than Aldburg
-trp_elder_aldburg_pl|the town
 trp_elder_hornburg|Than Rogatego Grodu
-trp_elder_hornburg_pl|the fortress
 trp_elder_eastemnet|Than Wschodniego Emnet
-trp_elder_eastemnet_pl|the town
 trp_elder_westfold|Than Zachdniej Bruzdy
-trp_elder_westfold_pl|the town
 trp_elder_westemnet|Than Zachodniego Emnet
-trp_elder_westemnet_pl|the town
 trp_elder_eastfold|Than Wschodniej Bruzdy
-trp_elder_eastfold_pl|the town
 trp_elder_morannon|Wódz Czarnej Bramy
-trp_elder_morannon_pl|the caves overlooking the Great Gate
 trp_elder_mmorgul|Wódz Morgulu
-trp_elder_mmorgul_pl|the sinister city
 trp_elder_cungol|Przywódca Obozu
-trp_elder_cungol_pl|the camp
 trp_elder_isengard|Grima Gadzi Język
-trp_elder_isengard_pl|the city
 trp_elder_cgaladhon|Starszy Lorien
-trp_elder_cgaladhon_pl|the elven forest fortress
 trp_elder_cdolen|Starszy Lorien
-trp_elder_cdolen_pl|the encampment
 trp_elder_camroth|Starszy Lorien
-trp_elder_camroth_pl|the encampment
 trp_elder_thalls|Starszy Mrocznej Puszczy
-trp_elder_thalls_pl|the elven caves
 trp_elder_imladris|Zarządca Rivendell
-trp_elder_imladris_pl|the camp
 trp_elder_wvillage|Pierre Leśnik
-trp_elder_wvillage_pl|the village
 trp_elder_beorn|Starszy Beorn
-trp_elder_beorn_pl|the hamlet
 trp_elder_harad|Przywódca Haradrimskiego Obozu
-trp_elder_harad_pl|the camp
 trp_elder_rhun|Przywódca Obozu Rhun
-trp_elder_rhun_pl|the camp
 trp_elder_khand|Przywódca Obozu Khandu 
-trp_elder_khand_pl|the camp
 trp_elder_dunland|Przywódca Obozu Dunlandu
-trp_elder_dunland_pl|the camp
 trp_elder_umbar|Umbarski Kwatermistrz
-trp_elder_umbar_pl|the fortified camp
 trp_elder_moria|Przywódca z Morii
-trp_elder_moria_pl|the Mines
 trp_elder_gunda|Zarządca Jaskiń
-trp_elder_gunda_pl|the caves
 trp_elder_dale|Kwatermistrz Dale
-trp_elder_dale_pl|the city
 trp_elder_esgaroth|Kwatermistrz Esgaroth
-trp_elder_esgaroth_pl|the lake town
 trp_elder_erebor|Zarządca Ereboru
-trp_elder_erebor_pl|the Halls
 trp_elder_dolguldur|Zarządca Guldur
-trp_elder_dolguldur_pl|the black castle
 trp_elder_gondor_ac|Zarządca
-trp_elder_gondor_ac_pl|the camp
 trp_elder_rohan_ac|Zarządca
-trp_elder_rohan_ac_pl|the camp
 trp_elder_mordor_ac|Zarządca
-trp_elder_mordor_ac_pl|the camp
 trp_elder_lorien_ac|Zarządca
-trp_elder_lorien_ac_pl|the camp
 trp_elder_woodelf_ac|Zarządca
-trp_elder_woodelf_ac_pl|the camp
 trp_elder_imladris_ac|Zarządca
-trp_elder_imladris_ac_pl|the camp
 trp_elder_beorn_ac|Zarządca
-trp_elder_beorn_ac_pl|the camp
 trp_elder_harad_ac|Przywódca Obozu Haradu
-trp_elder_harad_ac_pl|the camp
 trp_elder_rhun_ac|Przywódca Obozu Rhunu
-trp_elder_rhun_ac_pl|the camp
 trp_elder_khand_ac|Przywódca Obozu Khandu
-trp_elder_khand_ac_pl|the camp
 trp_elder_dunland_ac|Przywódca Obozu Dunlandu
-trp_elder_dunland_ac_pl|the camp
 trp_elder_umbar_ac|Umbarski Kwatermistrz
-trp_elder_umbar_ac_pl|the camp
 trp_elder_moria_ac|Przywódca Obozu Morii
-trp_elder_moria_ac_pl|the camp
 trp_elder_gunda_ac|Przywódca Obozu Gundabadu
-trp_elder_gunda_ac_pl|the camp
 trp_elder_dale_ac|Kwatermistrz Dale
-trp_elder_dale_ac_pl|the camp
 trp_elder_guldur_ac|Przywódca Obozu Guldur
-trp_elder_guldur_ac_pl|the camp
 trp_elder_dwarf_ac|Krasnoludzki Zarządca
-trp_elder_dwarf_ac_pl|the camp
 trp_village_1_elder|Starszy Wioski
 trp_village_1_elder_pl| 
 trp_merchants_end|bug
@@ -1642,11 +1418,8 @@ trp_tutorial_chest_1|Skrzynia z Bronią Białą
 trp_tutorial_chest_1_pl|bug
 trp_tutorial_chest_2|Skrzynia z Bronią Dystansową
 trp_tutorial_chest_2_pl|bug
-trp_bonus_chest_1|Bonus Chest
 trp_bonus_chest_1_pl|bug
-trp_bonus_chest_2|Bonus Chest
 trp_bonus_chest_2_pl|bug
-trp_bonus_chest_3|Bonus Chest
 trp_bonus_chest_3_pl|bug
 trp_camp_chest_faction|Skrzynia
 trp_camp_chest_faction_pl|bug
@@ -1679,17 +1452,9 @@ trp_easter_egg_troll|Trol
 trp_easter_egg_troll_pl| 
 trp_treebeard|Drzewiec
 trp_treebeard_pl| 
-trp_ent_1|Bregalad
 trp_ent_1_pl| 
-trp_ent_2|Finglas
 trp_ent_2_pl| 
-trp_ent_3|Fladrif
 trp_ent_3_pl| 
-trp_gandalf|Gandalf
-trp_gandalf_pl|Home-grown Gandalves
-trp_nazgul|Nazgul
-trp_nazgul_pl|Domesticated Nazgul
-trp_quick_battle_6_player|quick battle 6 player
 trp_quick_battle_6_player_pl| 
 trp_barman|Karczmarz
 trp_barman_pl| 
@@ -1708,11 +1473,8 @@ trp_dorwinion_raider_pl|Dorwinionskich Łupieżców
 trp_troops_end|troops end
 trp_troops_end_pl|troops end
 trp_city_guard|Strażnik Miejski
-trp_city_guard_pl|city guard
 trp_orc_sentry|Orkowy Strażnik
-trp_orc_sentry_pl|orc sentry
 trp_uruk_hai_sentry|Strażnik Uruk-hai
-trp_uruk_hai_sentry_pl|uruk hai sentry
 trp_black_numenorean_sorcerer|Czarownik Czarnych Numenorejczyków
 trp_black_numenorean_sorcerer_pl|Czarowników Czarnych Numenorejczyków
 trp_black_numenorean_acolyte|Akolita Czarnych Numenorejczyków
@@ -1721,7 +1483,6 @@ trp_wolf_rider_of_mirkwood|Wilczy Jeździec z Mrocznej Puszczy
 trp_wolf_rider_of_mirkwood_pl|Wilczych Jeźdźców z Mrocznej Puszczy
 trp_warg_rider_of_mirkwood|Jeździec Wargów z Mrocznej Puszczy
 trp_warg_rider_of_mirkwood_pl|Jeźdźców Wargów z Mrocznej Puszczy
-trp_gate_aggravator|Gate is holding
 trp_gate_aggravator_pl| 
 trp_orc_pretender|Ork Pretendent
 trp_orc_pretender_pl| 

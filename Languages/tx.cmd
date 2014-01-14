@@ -6,8 +6,8 @@ luajit tx.lua convert
 
 ::push our latest strings to the web
 ::tx push -s -t -f --skip --no-interactive
-tx push -s -f --skip --no-interactive
-::tx push -t -f --skip --no-interactive
+::tx push -s -f --skip --no-interactive
+tx push -t -f --skip --no-interactive
 ::tx push -t -l sv --skip --no-interactive
 
 ::pull latest translations
