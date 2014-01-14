@@ -161,10 +161,6 @@ qstr_{reg4}_wounded_{reg5|{reg4} heridos, {reg5} vencidos
 qstr_killed|muertos
 qstr_routed|vencidos
 qstr_wounded|heridos
-qstr_{reg3?{reg3}:}_{s1}_|{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Ninguno
 qstr_^None|^Ninguno
 qstr_near_the_Great_East_|cerca del Gran camino del Este, la vieja carretera abandonada

@@ -1,24 +1,23 @@
 menu_start_game_1|^^^^^^^^^^¿Por qué fin lucháis?
 mno_start_good|Por el AMANECER de una nueva Era
 mno_start_evil|Por el OCASO del Hombre
-mno_spacer|  
-mno_go_back|Volver atrás
+mno_go_bback|Volver atrás
 menu_start_phase_2|^^^^^En la Tierra Media. Una sombra esta creciendo en el Este, ^y cosas oscuras que hace mucho estaban ocultas están resurgiendo. ^Los pueblos libres se preparan para la guerra, como no se ha visto en esta era. ^Hombres, Elfos, Enanos y Orcos; todos tomarán parte. ^^Qué parte, sin embargo, está por verse... 
-mno_continue|Continuar
+mno_go_forth|          Sigue adelante por el camino que has elegido...
 menu_start_game_3|^^^^^^^^Escoge tu escenario:
-mno_custom_battle_scenario_1 |            Escaramuza, Facciones de Gondor contra Harad
+mno_custom_battle_scenario_1|            Escaramuza, Facciones de Gondor contra Harad
 mno_custom_battle_scenario_12|            Elegir facciones para la batalla
-mno_custom_battle_scenario_3 |            Escaramuza, Elfos contra Numenóreanos Negros
-mno_custom_battle_scenario_4 |            Defensa de Abismo de Helm, Rohan contra Isengard
-mno_custom_battle_scenario_5 |            Escaramuza, Facciones norteñas contra Rhûn
-mno_custom_battle_scenario_6 |            Asedio, Orcos contra Enanos
-mno_custom_battle_scenario_7 |            Emboscada, Orcos contra Bosque Negro
+mno_custom_battle_scenario_3|            Escaramuza, Elfos contra Numenóreanos Negros
+mno_custom_battle_scenario_4|            Defensa de Abismo de Helm, Rohan contra Isengard
+mno_custom_battle_scenario_5|            Escaramuza, Facciones norteñas contra Rhûn
+mno_custom_battle_scenario_6|            Asedio, Orcos contra Enanos
+mno_custom_battle_scenario_7|            Emboscada, Orcos contra Bosque Negro
 mno_custom_battle_scenario_11|            Batallas de prueba (¡Para equilibrar el juego!)
 mno_custom_battle_scenario_10|            Batallas de prueba de escenarios
-mno_troll_battle_scenario    |            Batallas de equilibrio de trolls
-mno_warg_battle_scenario     |            Batallas de equilibrio de huargos
-mno_build_your_own_scene     |            ** Construir tu propio escenario para TLD **
-mno_go_back_spc              |            Retroceder
+mno_troll_battle_scenario|            Batallas de equilibrio de trolls
+mno_warg_battle_scenario|            Batallas de equilibrio de huargos
+mno_build_your_own_scene|            ** Construir tu propio escenario para TLD **
+mno_go_back_spc|            Retroceder
 menu_tutorial|^^TLD tiene varias características desconocidas paea M&B Native. Estas estan descritas detalladamente sin hacer spoilers en un PDF incluido en el mod. Para el tutorial sobre la mecánica básica del juego porfavor use el Modulo Native
 mno_go_back_dot|Volver atrás.
 mno_view_upkeep_costs|Ver costes de mantenimiento.
@@ -41,8 +40,8 @@ mno_tAC|        Elige tropa A
 mno_tBA|        +5 Equipo B
 mno_tBB|        -5 Equipo B
 mno_tBC|        Elige tropa B
-mno_B  |        Preselección 1
-mno_F  |        ¡COMENZAR PELEA!
+mno_B|        Preselección 1
+mno_F|        ¡COMENZAR PELEA!
 mno_dot_go_back|.                 Volver atrás
 menu_quick_battle_troll|^^^^^^^^Elige tu escenario troll:
 ; mno_troll_battle_scenario_10|          Test: Troll VS Infantry
@@ -175,23 +174,6 @@ menu_camp_chest_fill|^^^^^^^^Por favor escoge una facción para obtener items.
 ; mno_f_moria|Moria items
 ; mno_f_gundabad|Gundabad items
 ; mno_f_dunland|Dunland items
-menu_cheat_change_race|^^^^^Porfavor elige tu raza:^^Nota: Deberías ver tu personaje en el generador de caras antes de hacer este cambio.
-mno_race_male|Hombre
-mno_race_female|Mujer
-mno_race_gondor|Gondor
-mno_race_rohan|Rohan
-mno_race_dunlander|Dunledino
-mno_race_orc|Orco
-mno_race_uruk|Uruk
-mno_race_haradrim|Haradrim
-mno_race_easterling|Oriental
-mno_race_dwarf|Enano
-mno_race_troll|Troll
-mno_race_dunedain|Dunedain
-mno_race_lothlorien|Lothlórien
-mno_race_rivendell|Rivendel
-mno_race_mirkwood|Bosque Negro
-mno_race_evil_male|Hombre malvado
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_customize_defilement|Personalizar Armadura Profanada:
 mno_camp_drink_water|¡Beber el Agua Ent!
@@ -276,9 +258,7 @@ mno_leave|Atrás...
 ; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
 ; mno_inspect_troll|Inspect downed troll
 ; menu_total_victory|You shouldn't be reading this... {s9}
-; menu_enemy_slipped_away|^^^^^{s17}
 ; menu_total_defeat|You shouldn't be reading this...
-; menu_permanent_damage|^^^^^{s0}
 ; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
 ; mno_pre_join_help_attackers|Move in to help the {s2}.
 ; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
@@ -331,7 +311,6 @@ mno_castle_leave|Atrás...
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
-; menu_town_bandits_failed|^^^^^{s4} {s5}
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
@@ -347,7 +326,6 @@ mno_town_center_door|Puerta al centro de la ciudad.
 mno_aw_chamber_door|Abrir la puerta.
 mno_trade_with_arms_merchant|Visitar {s40}.
 mno_trade_with_horse_merchant|Visitar {s41}.
-; mno_town_prison|Never: Enter the prison.
 mno_town_prison_door|Puerta a la prisión.
 mno_dungeon_enter|Buscar las lanzas perdidas dentro de la montaña.
 mno_dungeon_enter_door|Abrir la puerta.
