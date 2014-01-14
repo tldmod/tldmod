@@ -72,3 +72,9 @@ file_filter = <lang>\troops.csv
 source_file = _base\troops.csv
 source_lang = en
 type = INI
+
+[tld.ui]
+file_filter = <lang>\ui.csv
+source_file = en\ui.csv
+source_lang = en
+type = INI
