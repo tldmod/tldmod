@@ -4,14 +4,6 @@ skl_leadership|Leadership
 skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. (Leader skill)
 skl_prisoner_management|Prisoner Management
 skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. (Leader skill)
-skl_reserved_1|Reserved Skill 1
-skl_reserved_1_desc|This is a reserved skill.
-skl_reserved_2|Reserved Skill 2
-skl_reserved_2_desc|This is a reserved skill.
-skl_reserved_3|Reserved Skill 3
-skl_reserved_3_desc|This is a reserved skill.
-skl_reserved_4|Reserved Skill 4
-skl_reserved_4_desc|This is a reserved skill.
 skl_persuasion|Persuasion
 skl_persuasion_desc|This skill helps you make other people accept your point of view. (Personal skill)
 skl_engineer|Crafting
@@ -34,14 +26,6 @@ skl_tracking|Tracking
 skl_tracking_desc|Tracks become more informative. (Party skill)
 skl_trainer|Trainer
 skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
-skl_reserved_5|Reserved Skill 5
-skl_reserved_5_desc|This is a reserved skill.
-skl_reserved_6|Reserved Skill 6
-skl_reserved_6_desc|This is a reserved skill.
-skl_reserved_7|Reserved Skill 7
-skl_reserved_7_desc|This is a reserved skill.
-skl_reserved_8|Reserved Skill 8
-skl_reserved_8_desc|This is a reserved skill.
 skl_looting|Looting
 skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
 skl_horse_archery|Mounted Archery
@@ -54,16 +38,6 @@ skl_shield|Shield
 skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
 skl_weapon_master|Weapon Master
 skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
-skl_reserved_9|Reserved Skill 9
-skl_reserved_9_desc|This is a reserved skill.
-skl_reserved_10|Reserved Skill 10
-skl_reserved_10_desc|This is a reserved skill.
-skl_reserved_11|Reserved Skill 11
-skl_reserved_11_desc|This is a reserved skill.
-skl_reserved_12|Reserved Skill 12
-skl_reserved_12_desc|This is a reserved skill.
-skl_reserved_13|Reserved Skill 13
-skl_reserved_13_desc|This is a reserved skill.
 skl_power_draw|Power Draw
 skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
 skl_power_throw|Power Throw
@@ -72,13 +46,3 @@ skl_power_strike|Power Strike
 skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
 skl_ironflesh|Ironflesh
 skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)
-skl_reserved_14|Reserved Skill 14
-skl_reserved_14_desc|This is a reserved skill.
-skl_reserved_15|Reserved Skill 15
-skl_reserved_15_desc|This is a reserved skill.
-skl_reserved_16|Reserved Skill 16
-skl_reserved_16_desc|This is a reserved skill.
-skl_reserved_17|Reserved Skill 17
-skl_reserved_17_desc|This is a reserved skill.
-skl_reserved_18|Reserved Skill 18
-skl_reserved_18_desc|This is a reserved skill.

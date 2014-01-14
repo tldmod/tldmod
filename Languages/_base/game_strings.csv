@@ -1,12 +1,6 @@
-str_no_string|NO STRING!
-str_empty_string| 
 str_yes|Yes.
 str_no|No.
-str_blank_string| 
-str_error_string|ERROR!!!ERROR!!!!ERROR!!!ERROR!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!!
 str_noone|no one
-str_s0|{s0}
-str_blank_s1| {s1}
 str_reg1|{reg1}
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} and {s51}
@@ -48,8 +42,6 @@ str_charge_no_2|Charge #2:
 str_charge_no_3|Charge #3:
 str_charge_no_4|Charge #4:
 str_change|Change
-str_plus|+
-str_minus|-
 str_color_no_1|Color #1:
 str_color_no_2|Color #2:
 str_charge|Charge
@@ -59,48 +51,6 @@ str_flip_vertical|Flip Vertical
 str_hold_fire|Hold Fire
 str_blunt_hold_fire|Blunt / Hold Fire
 str_tutorial_ammo_refilled|Ammo refilled.
-str_tutorial_failed|You have been beaten this time, but don't worry. Follow the instructions carefully and you'll do better next time. Press the Tab key to return to to the menu where you can retry this tutorial.
-str_tutorial_1_msg_1|In this tutorial you will learn the basics of movement and combat. In Mount&Blade you use the mouse to control where you are looking, and the WASD keys of your keyboard to move. Your first task in the training is to locate the yellow flag in the room and move over it. You can press the Tab key at any time to quit this tutorial or to exit any other area in the game. Go to the yellow flag now.
-str_tutorial_1_msg_2|Well done. Next we will cover attacking with weapons. For the purposes of this tutorial you have been equipped with bow and arrows, a sword and a shield. You can draw different weapons from your weapon slots by using the scroll wheel of your mouse. In the default configuration, scrolling up pulls out your next weapon, and scrolling down pulls out your shield. If you are already holding a shield, scrolling down will put your shield away instead. Try changing your wielded equipment with the scroll wheel now. When you are ready, go to the yellow flag to move on to your next task.
-str_tutorial_1_msg_3|Excellent. The next part of this tutorial covers attacking with melee weapons. You attack with your currently wielded weapon by using your left mouse button. Press and hold the button to ready an attack, then release the button to strike. If you hold down the left mouse button for a while before releasing, your attack will be more powerful. Now draw your sword and destroy the four dummies in the room.
-str_tutorial_1_msg_4|Nice work! You've destroyed all four dummies. You can now move on to the next room.
-str_tutorial_1_msg_5|As you see, there is an archery target on the far side of the room. Your next task is to use your bow to put three arrows into that target. Press and hold down the left mouse button to notch an arrow. You can then fire the arrow by releasing the left mouse button. Note the targeting reticule in the centre of your screen, which shows you the accuracy of your shot. In order to achieve optimal accuracy, let fly your arrow when the reticule is at its smallest. Try to shoot the target now.
-str_tutorial_1_msg_6|Well done! You've learned the basics of moving and attacking. With a little bit of practice you will soon master them. In the second tutorial you can learn more advanced combat skills and face armed opponents. You can press the Tab key at any time to return to the tutorial menu.
-str_tutorial_2_msg_1|This tutorial will teach you how to defend yourself with a shield and how to battle armed opponents. For the moment you are armed with nothing but a shield. Your task is not to attack, but to successfully protect yourself from harm with your shield. There is an armed opponent waiting for you in the next room. He will try his best to knock you unconscious, while you must protect yourself with your shield by pressing and holding the right mouse button. Go into the next room now to face your opponent. Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game.
-str_tutorial_2_msg_2|Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
-str_tutorial_2_msg_3|Well done, you've succeeded in defending against an armed opponent. The next phase of this tutorial will pit you and your shield against a force of enemy archers. Move on to the next room when you're ready to face the archers.
-str_tutorial_2_msg_4|Defend yourself from arrows by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
-str_tutorial_2_msg_5|Excellent, you've put up a succesful defence against archers. There is a reward waiting for you in the next room.
-str_tutorial_2_msg_6|In the default configuration, the F key on your keyboard is used for non-violent interaction with objects and humans in the gameworld. To pick up the sword on the altar, look at it and press F when you see the word 'Equip'.
-str_tutorial_2_msg_7|A fine weapon! Now you can use it to deliver a bit of payback. Go back through the door and dispose of the archers you faced earlier.
-str_tutorial_2_msg_8|Very good. Your last task before finishing this tutorial is to face the maceman. Go through the door now and show him your steel!
-str_tutorial_2_msg_9|Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents. Give it a bit more practice and you'll soon be a renowned swordsman. The next tutorial covers directional defence, which is one of the most important elements of Mount&Blade combat. You can press the Tab key at any time to return to the tutorial menu.
-str_tutorial_3_msg_1|This tutorial is intended to give you an overview of parrying and defence without a shield. Parrying attacks with your weapon is a little bit more difficult than blocking them with a shield. When you are defending with a weapon, you are only protected from one direction, the direction in which your weapon is set. If you are blocking upwards, you will parry any overhead swings coming against you, but you will not stop thrusts or attacks to your sides. Either of these attacks would still be able to hit you. That's why, in order to survive without a shield, you must learn directional defence. Go pick up up the quarterstaff now to begin practice.
-str_tutorial_3_msg_2|By default, the direction in which you defend (by clicking and holding your right mouse button) is determined by the attack direction of your closest opponent. For example, if your opponent is readying a thrust attack, pressing and holding the right mouse button will parry thrust attacks, but not side or overhead attacks. You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack. If you start BEFORE he readies an attack, you may parry the wrong way altogether! Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent. Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple quarterstaff. Your quarterstaff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead. Move on to the next room when you are ready to initiate the fight.
-str_tutorial_3_msg_3|Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
-str_tutorial_3_msg_4|Well done, you've succeeded this trial! Now you will be pitted against a more challenging opponent that will make things more difficult for you. Move on to the next room when you're ready to face him.
-str_tutorial_3_msg_5|Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
-str_tutorial_3_msg_6|Congratulations, you still stand despite the enemy's best efforts. The time has now come to attack as well as defend. Approach the door and press the F key when you see the word 'Go'.
-str_tutorial_3_2_msg_1|Your staff's attacks have been enabled again. Your first opponent is waiting in the next room. Defeat him by a combination of attack and defence.
-str_tutorial_3_2_msg_2|Defeat your opponent with your quarterstaff.
-str_tutorial_3_2_msg_3|Excellent. Now the only thing standing in your way is one last opponent. He is in the next room. Move in and knock him down.
-str_tutorial_3_2_msg_4|Defeat your opponent with your quarterstaff.
-str_tutorial_3_2_msg_5|Well done! In this tutorial you have learned how to fight ably without a shield. Train hard and train well, and no one shall be able to lay a stroke on you. In the next tutorial you may learn horseback riding and cavalry combat. You can press the Tab key at any time to return to the tutorial menu.
-str_tutorial_4_msg_1|Welcome to the fourth tutorial. In this sequence you'll learn about riding a horse and how to perform various martial exercises on horseback. We'll start by getting you mounted up. Approach the horse, and press the 'F' key when you see the word 'Mount'.
-str_tutorial_4_msg_2|While on horseback, the WASD keys control your horse's movement, not your own. Ride your horse and try to follow the yellow flag around the course. When you reach the flag, it will move to the next waypoint on the course until you reach the finish.
-str_tutorial_4_msg_3|Very good. Next we'll cover attacking enemies from horseback. Approach the yellow flag now.
-str_tutorial_4_msg_4|Draw your sword (using the mouse wheel) and destroy the four targets. Try hitting the dummies as you pass them at full gallop -- this provides an extra challenge, but the additional speed added to your blow will allow you to do more damage. The easiest way of doing this is by pressing and holding the left mouse button until the right moment, releasing it just before you pass the target.
-str_tutorial_4_msg_5|Excellent work. Now let us try some target shooting from horseback. Go near the yellow flag now.
-str_tutorial_4_msg_6|Locate the archery target beside the riding course and shoot it three times with your bow. Although you are not required to ride while shooting, it's recommended that you try to hit the target at various speeds and angles to get a feel for how your horse's speed and course affects your aim.
-str_tutorial_4_msg_7|Congratulations, you have finished this tutorial. You can press the Tab key at any time to return to the tutorial menu.
-str_tutorial_5_msg_1|TODO: Follow order to the flag
-str_tutorial_5_msg_2|TODO: Move to the flag, keep your units at this position
-str_tutorial_5_msg_3|TODO: Move to the flag to get the archers
-str_tutorial_5_msg_4|TODO: Move archers to flag1, infantry to flag2
-str_tutorial_5_msg_5|TODO: Enemy is charging. Fight!
-str_tutorial_5_msg_6|TODO: End of battle.
-str_trainer_help_1|This is a training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around.
-str_trainer_help_2|To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name. When you wish to leave this or any other area or retreat from a battle, you can press the TAB key.
 str_custom_battle_1|Captain Malvogil and his Gondor company intercepted Harad reinforcement group. Shouting out his warcry, he spurs his horse forward, and leads his loyal men to a fierce battle.
 str_custom_battle_2|Celeborn from Lorien is leading a patrol of horsemen and archers when forward lookout brings a warning of a force of ash-faced evil men approaching. It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages, but now they must be driven back to the neverworld.
 str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army if Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
@@ -533,7 +483,6 @@ str_surname_38|{s50} the Quick
 str_surname_39|{s50} the Minstrel
 str_surname_40|{s50} the Bold
 str_surname_41|{s50} the Hot-Head
-str_surnames_end|surnames end
 str_number_of_troops_killed_reg1|Number of troops killed: {reg1}
 str_number_of_troops_wounded_reg1|Number of troops wounded: {reg1}
 str_number_of_own_troops_killed_reg1|Number of friendly troops killed: {reg1}
@@ -846,35 +795,35 @@ str_npc2_morality_speech|I hope you don't mind my saying so, but it's a bit hard
 str_npc3_morality_speech|Commander, we Eorlingas never {s21}. Our horses don't tire easily and, once we regroup, there is no situation a well-timed charge can't decide in our favour. Take heed the next time we battle against the odds.
 str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
 str_npc5_morality_speech|You must reconsider your actions, commander. To {s21} makes us no more honourable than the Enemy and diminishes the confidence of our friends.
-str_npc6_morality_speech|[No primary moral code]
+
 str_npc7_morality_speech|I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?
 str_npc8_morality_speech|Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake.
 str_npc9_morality_speech|The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken.
-str_npc10_morality_speech|[No primary moral code]
-str_npc11_morality_speech|[No primary moral code]
-str_npc12_morality_speech|[No primary moral code]
-str_npc13_morality_speech|[No primary moral code]
-str_npc14_morality_speech|[No primary moral code]
+
+
+
+
+
 str_npc15_morality_speech|You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!
-str_npc16_morality_speech|[No primary moral code]
-str_npc17_morality_speech|[No primary moral code]
+
+
 str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnedain, both in valor and honour. I would prefer if we don't {s21}.
-str_npc2_2ary_morality_speech|[No secondary moral code]
-str_npc3_2ary_morality_speech|[No secondary moral code]
+
+
 str_npc4_2ary_morality_speech|Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors.
-str_npc5_2ary_morality_speech|[No secondary moral code]
-str_npc6_2ary_morality_speech|[No secondary moral code]
-str_npc7_2ary_morality_speech|[No secondary moral code]
-str_npc8_2ary_morality_speech|[No secondary moral code]
-str_npc9_2ary_morality_speech|[No secondary moral code]
-str_npc10_2ary_morality_speech|[No secondary moral code]
-str_npc11_2ary_morality_speech|[No secondary moral code]
-str_npc12_2ary_morality_speech|[No secondary moral code]
-str_npc13_2ary_morality_speech|[No secondary moral code]
-str_npc14_2ary_morality_speech|[No secondary moral code]
+
+
+
+
+
+
+
+
+
+
 str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
-str_npc16_2ary_morality_speech|[No secondary moral code]
-str_npc17_2ary_morality_speech|[No secondary moral code]
+
+
 str_npc1_personalityclash_speech|Did I mention I hate {s11}?
 str_npc2_personalityclash_speech|Did I mention I hate {s11}?
 str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
@@ -1096,7 +1045,6 @@ str_npc14_honorific|Captain
 str_npc15_honorific|Master
 str_npc16_honorific|Chieftain
 str_npc17_honorific|Chief
-str_companion_strings_end|INVALID
 str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
 str_comment_intro_famous_liege|Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor.
 str_comment_intro_famous_martial|Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!

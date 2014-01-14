@@ -101,7 +101,6 @@ qstr_You_spent_{reg10}_of|You spent {reg10} of your influence with {s1}, with {r
 qstr_Troop_upkeep:|Troop upkeep:
 qstr_{s11}_and_{s10}|{s11} and {s10}
 qstr_their|their
-qstr_{s11}|{s11}
 qstr_its|its
 qstr_[no_upkeep_costs]|[no upkeep costs]
 qstr_Short_of_Resource_Po|Short of Resource Points!!
@@ -113,10 +112,6 @@ qstr_You_were_wounded_in_|You were wounded in Fangorn!
 qstr_Volunteers|Volunteers
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was defeated in battle.
 qstr_{s2}_have_razed_{s1}|{s2} have razed {s1}!
-qstr_DEBUG:_{s1}_no_longe|DEBUG: {s1} no longer leads a party.
-qstr_DEBUG:_{s1}_is_no_lo|DEBUG: {s1} is no longer a prisoner.
-qstr_DEBUG:_{s1}_is_now_a|DEBUG: {s1} is now a prisoner of player.
-qstr_DEBUG:_{s1}_is_now_a_|DEBUG: {s1} is now a prisoner of {s2}.
 qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Res.Pt ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} Res.Pts ({s2})
@@ -156,9 +151,6 @@ qstr_+{reg1}_to_Party_Mor|+{reg1} to Party Morale
 qstr_Do_you_want_to_disem|Do you want to disembark?
 qstr_Move_here|Move here
 qstr_View_notes|View notes
-qstr_Debug_str:_{reg0}|Debug str: {reg0}
-qstr__{s61}| {s61}
-qstr_ERROR:_More_than_15_|ERROR: More than 15 trade routes are given for {s1}.
 qstr_nothing|nothing
 qstr_Good|Good
 qstr_Med|Med
@@ -252,7 +244,6 @@ qstr_Ha!_Soon_there_will_|Ha! Soon there will be spoils for everybody.
 qstr_Yes._Unless_you_get_|Yes. Unless you get killed first.
 qstr_You_don_t_get_any_sp|You don't get any spoils if YOU get killed, scum of {s21}.
 qstr_Is_that_a_threat?_Be|Is that a threat? Be thankful that we have enemies around to slaughter before it is your turn.
-qstr_{s15}_|{s15} 
 qstr_The_enemy_is_upon_us|The enemy is upon us! ^
 qstr_They_are_upon_us!_^|They are upon us! ^
 qstr_{playername}_and_{hi|{playername} and {his/her} rabble from {s18} is upon us! ^
@@ -303,7 +294,6 @@ qstr_Death_to_the_trespas|Death to the trespassers of the lands of {s16}!
 qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
 qstr_Attack!|Attack!
-qstr_TLD_ERROR!_could_not|TLD ERROR! could not spawn the party on the same side of the white mountains
 qstr_You_are_attacked_by_|You are attacked by a group of goblins!
 qstr_Holding|Holding
 qstr_Following|Following
@@ -320,15 +310,6 @@ qstr_Blunt_Weapons|Blunt Weapons
 qstr_Infantry__{reg1}_|Infantry ({reg1})
 qstr_Archers__{reg2}_|Archers ({reg2})
 qstr_Cavalry__{reg3}_|Cavalry ({reg3})
-qstr_{reg4}|{reg4}
-qstr_{reg5}|{reg5}
-qstr_{reg6}|{reg6}
-qstr_{reg7}|{reg7}
-qstr_{reg8}|{reg8}
-qstr_{reg9}|{reg9}
-qstr_{reg10}|{reg10}
-qstr_{reg11}|{reg11}
-qstr_{reg12}|{reg12}
 qstr_Orc_brew_finished!|Orc brew finished!
 qstr_Given_by:_{s62}|Given by: {s62}
 qstr_Given_on:_{s60}|Given on: {s60}
@@ -352,14 +333,11 @@ qstr_no_holdings|no holdings
 qstr_{s57}_and_{s58}|{s57} and {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?She:He}
-qstr_^{s59}|^{s59}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
 qstr_The_last_time_you_sa|The last time you saw {reg1?her:him}, {s1}
 qstr_The_last_time_you_he|The last time you heard about {reg1?her:him}, {s1}
 qstr_The_{s50}|The {s50}
-qstr_{s50}|{s50}
 qstr_{s50}_belongs_to_{s1|{s50} belongs to {s1} of {s2}.^
-qstr_{s2}|{s2}
 qstr_Current_garrison_con|Current garrison consists of {reg5} men.^Has food stock for {reg6} days.
 qstr_Very_Poor|Very Poor
 qstr_Poor|Poor
@@ -369,7 +347,6 @@ qstr_Very_Rich|Very Rich
 qstr_{s50}_Caves|{s50} Caves
 qstr_{s50}_Mines|{s50} Mines
 qstr_{s50}_Woods|{s50} Woods
-qstr_ERROR:_Companion_str|ERROR: Companion strings actual/needed: {reg1}/{reg2}
 qstr_{s4}_looks_upset.|{s4} looks upset.
 qstr_your_party|your party
 qstr_{reg0?One_of_your_pr|{reg0?One of your prisoners, :}{s1} of {s3} has escaped from captivity!
@@ -490,7 +467,6 @@ qstr_I_shall_serve_the_Ey|I shall serve the Eye!
 qstr_{s1}_has_been_besieg|{s1} has been besieged by {s2} of {s3}.
 qstr_The_forces_of_{s2}_m|The forces of {s2} march to {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
-qstr_ERROR|ERROR
 qstr____Ruins_of_{s1}___|   Ruins of {s1}   
 qstr_ranks|ranks
 qstr_shield_wall|shield wall
@@ -506,8 +482,6 @@ qstr___Not_enough_archers|  Not enough archers to form {s1}, holding instead.
 qstr___Infantry_formation|  Infantry formation disassembled.
 qstr___Cavalry_formation_|  Cavalry formation disassembled.
 qstr___Archer_formation_d|  Archer formation disassembled.
-qstr_DEBUG:_Routed_Troops|DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}
-qstr_DEBUG:_Spawn_Allies:|DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}
 qstr_{s1}_has_fled_the_ba|{s1} has fled the battle!
 qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|Morale of your troops wavers!
@@ -544,8 +518,6 @@ qstr_You_cower_in_terror_|You cower in terror, the Nazgul cries are unbearable!
 qstr_knocked_unconscious|knocked unconscious
 qstr_Nazgul_diving_attack|Nazgul diving attack on {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} is {s10} in the Nazgul attack!
-qstr_CHEAT:_SELF_mind_bla|CHEAT: SELF mind blast!!! (ctrl+s)
-qstr_CHEAT:_player_team:_|CHEAT: player team: "A-a-a-a-argh!" (ctrl+s)
 qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
 qstr_You_rally_your_troop|You rally your troops!
 qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
@@ -555,7 +527,6 @@ qstr_Everyone|Everyone
 qstr_Infantry|Infantry
 qstr_Archers|Archers
 qstr_Cavalry|Cavalry
-qstr_{s1}|{s1}
 qstr_{s1}_and_{s2}|{s1} and {s2}
 qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} and {s3}
 qstr_{s10}_Move_over_ther|{s10}, Move over there!
@@ -571,8 +542,6 @@ qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fi
 qstr_Ballista:_out_of_ammo|Ballista: out of ammo
 qstr_The_ladders_on_Deepi|The ladders on Deeping Wall! Watch out!
 qstr_You_yell_for_your_ho|You yell for your horse.
-qstr_FOG:R_{reg0}_G_{reg1|FOG:R {reg0} G {reg1} B{reg2} dist {reg3}
-qstr_max_X_{reg0}_max_Y_{|max X {reg0} max Y {reg1}
 qstr_THREE.._TWO..._ONE..|THREE.. TWO... ONE.... FIGHT!
 qstr_Leave_the_place_in_s|Leave the place in silence?
 qstr_Leave_scene?|Leave scene?
@@ -601,27 +570,6 @@ qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (with {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
-qstr__={s10}=_^{s11}.^^{s|-={s10}=-^{s11}.^^{s13}.^^{s15}.
-qstr_{s4}:_M{reg3}_2M{reg|{s4}: M{reg3}, 2M{reg4}, PC{reg5}, 2PC{reg6}, PM{reg7}
-qstr_TEST:_troll_VS_infan|TEST: troll VS infantry
-qstr_TEST:_troll_VS_arche|TEST: troll VS archers
-qstr_TEST:_troll_VS_chava|TEST: troll VS chavalry
-qstr_TEST:_troll_VS_lance|TEST: troll VS lancers
-qstr_TEST:_Troll_vs_Troll|TEST: Troll vs Troll
-qstr_TEST:_Troll_by_playe|TEST: Troll by player
-qstr_TROLL_TEST|TROLL TEST
-qstr_TEST:_warg_test_1_VS|TEST: warg test 1 VS 1
-qstr_TEST:_warg_test_2_VS|TEST: warg test 2 VS 3
-qstr_TEST:_warg_test_many|TEST: warg test many VS many
-qstr_TEST:_play_warg_test|TEST: play warg, test 1 VS 1
-qstr_TEST:_play_wargs_tes|TEST: play wargs, test 2 VS 3
-qstr_TEST:_play_wargs_man|TEST: play wargs, many VS many
-qstr_TEST_BATTLE:_{reg10}|TEST BATTLE: {reg10} {s10} vs {reg11} {s11}
-qstr_TEST_SCENE|TEST SCENE
-qstr_FACTION_SHOWOFF|FACTION SHOWOFF
-qstr___| -
-qstr__| 
-qstr__+| +
 qstr_^No_food:___{reg7}|^No food:  -{reg7}
 qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Defending
@@ -651,76 +599,12 @@ qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
 qstr_Ally_party_size:_{re|Ally party size: {reg1}
 qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
-qstr_Spawned_routed_parti|Spawned routed parties!
 qstr_Party_count:_{reg0}|Party count: {reg0}
 qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-qstr_You_have_been_pimped|You have been pimped up!
-qstr_9000_XP_added___now_|9000 XP added - now wait for the War...
-qstr_Good_factions_defeat|Good factions defeated! Now wait for it...
-qstr_{s1}_rank_points_inc|{s1} rank points increased to {reg0}, influence to {reg1}!
 qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
-qstr_All_four_legendary_p|All four legendary places enabled!
-qstr_{s10}_defeated!_Now_|{s10} defeated! Now wait for it...
-qstr_{s2}^{s4}:_{reg1}__{|{s2}^{s4}: {reg1} ({s23}) Diff: {reg2}
 qstr_Faction_strengths_re|Faction strengths report:^{s2}
 qstr_Attacking_enemy_part|Attacking enemy party {s11}
 qstr_Unknown_{reg3}_|Unknown({reg3})
-qstr_SE|SE
-qstr_SW|SW
-qstr_C|C
-qstr_N|N
-qstr_INVALID|INVALID
-qstr_{s2}^{s4}:_Th:_{s9}_|{s2}^{s4}: Th: {s9}-{s10} Str: {reg1} Hosts: {reg2} {s11}
-qstr_Faction_AI_report:^{|Faction AI report:^{s2}
-qstr_Detailed_faction_AI_|Detailed faction AI report for {s4}:^Theater:{s9}-{s10} Str:{reg1} Hosts:{reg2} {s11}
-qstr_Faction_defeated!^{s|Faction defeated!^{s1}
-qstr_{s1}^{s6}_leads_{s7}|{s1}^{s6} leads {s7}, 
-qstr_{s1}_no_host__|{s1}(no host), 
-qstr_{s1}doing_nothing|{s1}doing nothing
-qstr_{s1}escorting_{s7}|{s1}escorting {s7}
-qstr_{s1}besieging_{s7}|{s1}besieging {s7}
-qstr_{s1}defending_{s7}|{s1}defending {s7}
-qstr_{s1}patrolling_aroun|{s1}patrolling around {s7}
-qstr_{s1}recruiting_in_{s|{s1}recruiting in {s7} - INVALID
-qstr_{s1}raiding_around_{|{s1}raiding around {s7} - INVALID
-qstr_{s1}engaging_{s7}|{s1}engaging {s7}
-qstr_{s1}retreating_to_{s|{s1}retreating to {s7}
-qstr_{s1}unknown_{reg3}_|{s1}unknown({reg3})
-qstr_Faction_defeated!_No|Faction defeated! Now wait for it...
-qstr_Faction_almost_defea|Faction almost defeated! Wait for the guardians to spawn...
-qstr_Faction_almost_defeat|Faction almost defeated! The AI can go for the capital now...
-qstr_{s4}_spawn_losses_af|{s4} spawn losses after {reg1} days^
-qstr_{s1}^Scouts_lost:_{r|{s1}^Scouts lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Raiders_lost:_{|{s1}^Raiders lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Patrols_lost:_{|{s1}^Patrols lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Caravans_lost:_|{s1}^Caravans lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^P._trains_lost_|{s1}^P. trains lost-arrived: {reg1} Strength loss: 0{reg2?-{reg2}:} Active: {reg3}
-qstr_{s1}^^Total_strength|{s1}^^Total strength gain: {reg1}
-qstr_{s1}^Total_strength_|{s1}^Total strength loss: {reg2}
-qstr_{s1}^_Strength_loss_|{s1}^(Strength loss from spawns: {reg3})
-qstr_{s1}^Difference:_{re|{s1}^Difference: {reg1}
-qstr_Daily_strength_incom|Daily strength income and garrisons for {s4}
-qstr_{s1}^{s7}:_{reg1}__G|{s1}^{s7}: {reg1}  Garrison: {reg3}/{reg2}{reg4?: Capturable}
-qstr_{s1}^^Total:_{reg1}|{s1}^^Total: {reg1}
-qstr_Gothmog_besieges_Wes|Gothmog besieges West Osgiliath!
-qstr_Gothmog_besieges_Ere|Gothmog besieges Erech!
-qstr_Gothmog_besieges_Pin|Gothmog besieges Pinnath Gelin!
-qstr_Gothmog_besieges_Edh|Gothmog besieges Edhellond!
-qstr_Gothmog_besieges_Edo|Gothmog besieges Edoras!
-qstr_Gothmog_besieges_Pel|Gothmog besieges Pelargir!
-qstr_Saruman_besieges_Edo|Saruman besieges Edoras!
-qstr_Partitava_besieges_D|Partitava besieges Dale!
-qstr_{s10}_besieged!|{s10} besieged!
-qstr_SW_advance_camps_spa|SW advance camps spawned around a point northwest of East Emnet!
-qstr_SE_advance_camps_spa|SE advance camps spawned around a point west of West Osgiliath!
-qstr_C_advance_camps_spaw|C advance camps spawned around Cerin Amroth!
-qstr_N_advance_camps_spaw|N advance camps spawned around Beorn's House!
-qstr_Advance_camps_disabl|Advance camps disabled, theaters restored!
-qstr_SW_advance_camps_spaw|SW advance camps spawned around {reg2},{reg3}!
-qstr_SE_advance_camps_spaw|SE advance camps spawned around {reg2},{reg3}!
-qstr_C_advance_camps_spawn|C advance camps spawned around {reg2},{reg3}!
-qstr_N_advance_camps_spawn|N advance camps spawned around {reg2},{reg3}!
-qstr_Gandalf_would_like_t|Gandalf would like to have a little chat!
 qstr_ON|ON
 qstr_OFF__cheat_|OFF (cheat)
 qstr_OFF|OFF
@@ -759,13 +643,11 @@ qstr_Added_1000_experienc|Added 1000 experience to player.
 qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
 qstr_Items_added_to_playe|Items added to player inventory.
 qstr_Looter_party_was_spa|Looter party was spawned nearby.
-qstr_DEBUG:_Smiths_just_g|DEBUG: Smiths just got stuffed!
 qstr_HP_lost_from_poisoni|HP lost from poisoning.
 qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
 qstr_You_are_attacking_a_|You are attacking a group of {s1}.
 qstr_The_battle_against_t|The battle against the group of {s1} continues.
-qstr_CHEAT:_healed!!!|CHEAT: healed!!!
 qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
 qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
 qstr_You_were_victorious!|You were victorious!
@@ -777,7 +659,6 @@ qstr_^^Ally_Casualties:{s|^^Ally Casualties:{s0}
 qstr_News_of_your_victory|News of your victory against {s4} reach {s3}.
 qstr_{s3}_witnesses_your_|{s3} witnesses your victory against {s4}.
 qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
-qstr_{s17}|{s17}
 qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
 qstr_Victory_comment._Pla|Victory comment. Player was alone
 qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
