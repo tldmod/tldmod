@@ -9,7 +9,6 @@ ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equip
 ui_you_dont_have_value|Don't have: %s
 ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
 ui_merchant_pay_whatever|No, I don't need any of that, keep it.
-ui_money_value|%s
 ui_horse|Mount
 ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
 ui_return_your_bought_goods|Return the goods you have taken before giving that!

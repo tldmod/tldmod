@@ -7,11 +7,11 @@ luajit tx.lua convert
 ::push our latest strings to the web
 ::tx push -s -t -f --skip --no-interactive
 ::tx push -s -f --skip --no-interactive
-tx push -s -t -f --skip --no-interactive
+::tx push -s -t -f --skip --no-interactive
 ::tx push -t -l sv --skip --no-interactive
 
 ::pull latest translations
-::tx pull -a -f --skip --minimum-perc=100 --mode=reviewer
+tx pull -a -f --skip --minimum-perc=100 --mode=reviewer
 
 ::revert back to mab format
 luajit tx.lua revert
