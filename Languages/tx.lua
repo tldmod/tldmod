@@ -31,7 +31,7 @@ end
 if arg[1] == "convert" then
   regex = {"([^%^])|","%1="} print("Converting format...")
 else
-  regex = {"([^%^])=","|"}   print("Reverting format...")
+  regex = {"([^%^])=","%1|"}          print("Reverting format...")
 end
 
 for _,file in pairs( scandir() ) do
