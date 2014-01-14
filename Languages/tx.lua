@@ -29,9 +29,9 @@ end
 
 
 if arg[1] == "convert" then
-  regex = {"^[^|](|)","="} print("Converting format...")
+  regex = {"^([^%|]+)%|(.*)","%1  = \"%2\""} print("Converting format...")
 else
-  regex = {"^[^=](=)","|"} print("Reverting format...")
+  regex = {"  %= \"(.*)\"","|%1"} print("Reverting format...")
 end
 
 for _,file in pairs( scandir() ) do

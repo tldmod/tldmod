@@ -7,6 +7,12 @@ source_file = _base\factions.csv
 source_lang = en
 type = INI
 
+[tld.game_menus]
+file_filter = <lang>\game_menus.csv
+source_file = _base\game_menus.csv
+source_lang = en
+type = INI
+
 [tld.hints]
 file_filter = <lang>\hints.csv
 source_file = en\hints.csv
@@ -19,6 +25,12 @@ source_file = _base\item_kinds.csv
 source_lang = en
 type = INI
 
+[tld.item_modifiers]
+file_filter = <lang>\item_modifiers.csv
+source_file = _base\item_modifiers.csv
+source_lang = en
+type = INI
+
 [tld.parties]
 file_filter = <lang>\parties.csv
 source_file = _base\parties.csv
@@ -28,5 +40,35 @@ type = INI
 [tld.party_templates]
 file_filter = <lang>\party_templates.csv
 source_file = _base\party_templates.csv
+source_lang = en
+type = INI
+
+[tld.quests]
+file_filter = <lang>\quests.csv
+source_file = _base\quests.csv
+source_lang = en
+type = INI
+
+[tld.quick_strings]
+file_filter = <lang>\quick_strings.csv
+source_file = _base\quick_strings.csv
+source_lang = en
+type = INI
+
+[tld.skills]
+file_filter = <lang>\skills.csv
+source_file = _base\skills.csv
+source_lang = en
+type = INI
+
+[tld.skins]
+file_filter = <lang>\skins.csv
+source_file = _base\skins.csv
+source_lang = en
+type = INI
+
+[tld.troops]
+file_filter = <lang>\troops.csv
+source_file = _base\troops.csv
 source_lang = en
 type = INI

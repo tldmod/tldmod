@@ -1,7 +1,6 @@
 menu_start_game_1|^^^^^^^^^^What do you fight for?
 mno_start_good|the DAWN of a new Era
 mno_start_evil|the TWILIGHT of Man
-mno_spacer| 
 mno_go_bback|Go Back
 menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
 mno_go_forth|          Go forth upon you chosen path...
@@ -47,8 +46,6 @@ mno_tBC|        Select Troop B
 mno_B|         Preset 1
 mno_F|          START FIGHT!
 mno_dot_go_back|.                 Go back
-menu_quick_battle_general_test_select_a| 
-menu_quick_battle_general_test_select_b| 
 menu_quick_battle_troll|^^^^^^^^Choose your troll scenario:
 mno_troll_battle_scenario_10|          Test: Troll VS Infantry
 mno_troll_battle_scenario_11|          Test: Troll VS Archers
@@ -433,7 +430,6 @@ mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun
 mno_cb_mordor8|Corsairs
 mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
-mno_next_rescue_scene| 
 mno_next_rescue_scene_door|Continue onward!
 mno_pick_troops1|Pick companions for the mission, {reg0} selected
 menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
