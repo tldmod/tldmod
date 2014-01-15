@@ -7497,7 +7497,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)])]
  ),
 ( "notification_your_faction_collapsed",0,
-    "^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.",
+    "^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.",
     "none",
     [ (str_store_faction_name, s11, "$players_kingdom"),
       (set_fixed_point_multiplier, 100),

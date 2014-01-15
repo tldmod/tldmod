@@ -157,14 +157,12 @@ mno_camp_drink_water|Drink the Ent Water!
 mno_camp_action_4|Back.
 menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
 menu_assasins_attack_player_retreat|You escaped with your life!
-menu_assasins_attack_player_defeated|You should not be reading this...
 menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?
 mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
 mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
 mno_be_bold|Go on! I'm not afraid of plants or old myths!
 mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-menu_fangorn_battle_debrief|you shouldn't be reading this
 menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 mno_ow_get_out|Ouch! Let's get out of this cursed place!
@@ -209,8 +207,6 @@ menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join th
 menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
 mno_inspect_troll|Inspect downed troll
-menu_total_victory|You shouldn't be reading this... {s9}
-menu_total_defeat|You shouldn't be reading this...
 menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
 mno_pre_join_help_attackers|Move in to help the {s2}.
 mno_pre_join_help_defenders|Rush to the aid of the {s1}.
@@ -308,7 +304,7 @@ menu_recover_after_death_town_alone|You regain your conciousness and find yourse
 menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
 menu_notification_one_side_left|^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!
 menu_notification_total_defeat|^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
-menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.
+menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.
 menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
 menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
