@@ -198,31 +198,6 @@ menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare
 mno_killit|Dispatch it, now. Make sure it dies.
 mno_cageit1|Cage it and drag it around.
 mno_cageit2|Cage it together with the other troll.
-menu_cheat_free_magic_item|Which free magic item do you want?
-mno_cheat_free_magic_item_back|Back
-menu_cheat_impose_quest|Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)
-mno_just_back|Back
-mno_none|None
-menu_teleport_to_town_part_two|^^^^^^^^Ride Shadowfax:^to which city inside {s11}?
-mno_another_kingdom|No, Another Kingdom
-menu_teleport_to_town|^^^^^^^^Ride Shadowfax:^to which kingdom?
-mno_teleport_neutrals|Others/neutrals
-mno_teleport_others_factions|More... ({reg5}/3)
-mno_teleport_back|Back to camp menu.
-menu_select_any_troop|Select troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
-mno_trp|{s11} (lvl:{reg11})
-mno_prev_page|[Prev Page]
-mno_next_page|[Next Page]
-mno_opt|[Search Option]
-mno_done|[Done]
-mno_cancel|[Cancel]
-menu_select_any_troop_setup_search|Add troops: setup search parameters^^^Current parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
-mno_one|[Change Tier]
-mno_facup|[Prev Faction]
-mno_facdown|[Next Faction]
-mno_raceup|[Prev Race]
-mno_racedown|[Next Race]
-mno_three|[Regulars or Heroes]
 mno_cheat_disabable|Disable cheat/modding options.
 menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
 menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
@@ -302,7 +277,6 @@ menu_construct_ladders|As the party member with the highest Engineer skill ({reg
 mno_build_ladders_cont|Do it.
 menu_castle_attack_walls_simulate|{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
-menu_castle_taken_by_friends|Nothing to see here.
 menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
 menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
 mno_castle_taken_no_claim|Ask no rewards.
@@ -314,7 +288,6 @@ menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sen
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-menu_close|Nothing.
 menu_town|You arrived in {s60}.{s12}{s13}
 mno_town_menu_0|Go to some location.
 mno_town_menu_0_door|Door to some location.
