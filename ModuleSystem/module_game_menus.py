@@ -195,13 +195,13 @@ game_menus = [
       (troop_set_slot, "trp_banner_background_color_array", 129, 0xFF425D7B),
       (troop_set_slot, "trp_banner_background_color_array", 130, 0xFF394608),
 	  
-	  # initailization (mtarini)
+	  # initialization (mtarini)
       (assign, "$testbattle_team_a_num", 40),(assign, "$testbattle_team_a_troop", "trp_orc_of_isengard"),
       (assign, "$testbattle_team_b_num", 10),(assign, "$testbattle_team_b_troop", "trp_gondor_swordsmen"),
       (assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race
-	  (assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
-	  (assign, "$menu_select_any_troop_search_fac", "fac_gondor"), # player's kingdom
-	  (assign, "$menu_select_any_troop_search_hero", 0),	
+      (assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
+      (assign, "$menu_select_any_troop_search_fac", "fac_gondor"), # player's kingdom
+      (assign, "$menu_select_any_troop_search_hero", 0),	
 
 #	  (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
       ],
@@ -3102,7 +3102,7 @@ game_menus = [
  ]),
 
  
- 
+#-swy- Nothing leads to this menu, not even with cheats/dev thingie on, probably disabled for a good reason.
 ( "camp_chest_fill",0,
  "^^^^^^^^Please choose faction to get items from.",
  "none",

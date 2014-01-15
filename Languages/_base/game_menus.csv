@@ -118,12 +118,6 @@ mno_start_male|Male
 mno_start_female|Female
 mno_proc|Proceed as normal
 mno_continue|Continue...
-mno_faction_orders_next_faction|Select next faction.
-mno_faction_orders_defend|Force defend.
-mno_faction_orders_gather|Force gather army.
-mno_faction_orders_increase_time|Increase last offensive time by 24 hours.
-mno_faction_orders_rethink|Force rethink.
-mno_faction_orders_rethink_all|Force rethink for all factions.
 menu_character_report|^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
 mno_camp_scene|Walk around.
@@ -157,23 +151,6 @@ mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
 mno_strat_tweaks_back|Back to tweaks menu.
-menu_camp_chest_fill|^^^^^^^^Please choose faction to get items from.
-mno_f_gondor|Gondor items
-mno_f_rohan|Rohan items
-mno_f_isengard|Isengard items
-mno_f_mordor|Mordor items
-mno_f_dwarf|Dwarf items
-mno_f_lorien|Lothlorien items
-mno_f_woodelf|Mirkwood items
-mno_f_imladris|Imladris items
-mno_f_harad|Harad items
-mno_f_khand|Khand items
-mno_f_rhun|Rhun items
-mno_f_dale|Dale items
-mno_f_umbar|Umbar items
-mno_f_moria|Moria items
-mno_f_gundabad|Gundabad items
-mno_f_dunland|Dunland items
 menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Drink the Ent Water!
