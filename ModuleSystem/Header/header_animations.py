@@ -106,14 +106,8 @@ acf_enforce_lowerbody        = 0x00000100
 acf_enforce_rightside        = 0x00000200
 acf_enforce_all              = 0x00000400
 acf_parallels_for_look_slope = 0x00001000
-
-from module_info import wb_compile_switch as anim_wb_switch
-
-if (anim_wb_switch):
-  acf_lock_camera            = 0x00002000
-else:
-  acf_rotate_body            = 0x00002000
-  
+acf_lock_camera              = 0x00002000
+acf_rotate_body              = 0x00002000
 acf_displace_position        = 0x00004000
 acf_ignore_slope             = 0x00008000
 acf_thrust                   = 0x00010000

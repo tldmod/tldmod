@@ -713,7 +713,6 @@ dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, I'm not int
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 dlga_merchant_quest_requested:merchant_quest_brief.7|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
-dlga_merchant_quest_brief:mayor_pretalk|DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|I am sorry, but no.
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|Splendid. You can find them right outside the town. After you take them to {s13}, return back to me and I will give you your pay.
