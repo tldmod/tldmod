@@ -1,6 +1,12 @@
 [main]
 host = https://www.transifex.com
 
+[tld.dialogs]
+file_filter = <lang>\dialogs.csv
+source_file = _base\dialogs.csv
+source_lang = en
+type = INI
+
 [tld.factions]
 file_filter = <lang>\factions.csv
 source_file = _base\factions.csv
@@ -10,6 +16,12 @@ type = INI
 [tld.game_menus]
 file_filter = <lang>\game_menus.csv
 source_file = _base\game_menus.csv
+source_lang = en
+type = INI
+
+[tld.game_strings]
+file_filter = <lang>\game_strings.csv
+source_file = _base\game_strings.csv
 source_lang = en
 type = INI
 
