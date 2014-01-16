@@ -333,7 +333,7 @@ str_npc16_intro_response_1|¿Quién eres?
 str_npc17_intro_response_1|El Bosque Negro es un bosque magnífico. ¿Quién eres? ¿Sabes mucho sobre los bosques?
 str_npc1_intro_response_2|No te preocupes, me temo que las cuevas no son un lugar apropiado para una conversación.
 str_npc2_intro_response_2|Da igual, no tengo tiempo para hablar con guardias.
-str_npc3_intro_response_2|No te preocupes, armaré "_QQ_"barullo"_QQ_" en otro sitio.
+str_npc3_intro_response_2|No te preocupes, armaré "barullo" en otro sitio.
 str_npc4_intro_response_2|Disculpe, tengo asuntos urgentes que atender.
 str_npc5_intro_response_2|Disculpa, tengo gente más importante a la que hablar.
 str_npc6_intro_response_2|El sentimiento es mutuo. Adiós.
@@ -356,7 +356,7 @@ str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas
 str_npc6_backstory_a|Disculpad mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
 str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
 str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy un mero curandero y herbalista con modestas habilidades.
-str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y su snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de trigo... y perdió el control. "_QQ_"Retirada"_QQ_" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
+str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y su snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de trigo... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
 str_npc10_backstory_a|¡Soy Durgash!
 str_npc11_backstory_a|¡Nar! No un rastreador, eso es. ¡Me echaron! Te digo que han perdido sus cabezas, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que tengo una nariz rota. ¡Gam! Si no encuentran una trucha para mí pronto me volveré a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles flácidas antes de que me metan ahí!
 str_npc12_backstory_a|Estoy al mando de un grupo. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocaron, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
@@ -373,7 +373,7 @@ str_npc5_backstory_b|Lord Elrond me envía como emisario a Lord Celeborn, para o
 str_npc6_backstory_b|Me gusta caminar por los senderos ocultos de nuestro bello bosque. A veces me muevo silenciosamente a través de los árboles y observo las costumbres de los muchos animales del bosque. La canción de un pájaro extraño, las crías de un jabalí salvaje son tan bellas para mí como lo son el choque de las espadas para los Edain.
 str_npc7_backstory_b|Ayudé a mejorar las defensas de Erebor y entrené a algunos de los enanos más jóvenes, bajo la supervisión de mi venerado padre Dwalin, según nuestra costumbre.
 str_npc8_backstory_b|He tratado a mi Rey Brand de su estreñimiento, un mal común que afecta a nuestros hombres en tiempos de guerra. Una poción de ajenjo y tanto los intestinos como la mente son calmados.
-str_npc9_backstory_b|Así que me dije a mi mismo, "_QQ_"Gulm, ¿queires acabar como carroña?"_QQ_" Y me contesté, "_QQ_"No"_QQ_". La siguiente batalla me tiré al suelo fingiendo estar herido. Luego, cuando nadie miraba, ¡caí sobre mi sargento! Le rajé casi por la mitad, ¡gharr! Luego corté a su secuaz snaga... Resulta que el maldito bicho sobrevivió de alguna manera y empezó a contárselo a todo el mundo. La próxima vez me aseguraré de cortarle la cabeza, gharr...
+str_npc9_backstory_b|Así que me dije a mi mismo, "Gulm, ¿queires acabar como carroña?" Y me contesté, "No". La siguiente batalla me tiré al suelo fingiendo estar herido. Luego, cuando nadie miraba, ¡caí sobre mi sargento! Le rajé casi por la mitad, ¡gharr! Luego corté a su secuaz snaga... Resulta que el maldito bicho sobrevivió de alguna manera y empezó a contárselo a todo el mundo. La próxima vez me aseguraré de cortarle la cabeza, gharr...
 str_npc10_backstory_b|Soy un jinete de lobo rastreador de Isengard.          C
 str_npc11_backstory_b|¡Arrg! Es sólo porque mi nariz estaba llena de mocos. ¿Y de que sirve que la pase por las piedras de todos modos? ¡Nar! ¡Fueron los sucios Uruks! ¡Esos malditos ladrones de melocotones! Perdí el rastro porque se lo cargaron pinchando y pisoteando todo lo que encontraban antes de que llegase.
 str_npc12_backstory_b|Y esos Nazgul me dan repelús. Te despellejan con la mirada y te dejan frío en la oscuridad al otro lado. Pero a Él le gustan, son sus favoritos hoy en día, así que da igual quejarse. Te lo digo, no es ningún juego servir en la ciudad. Me gustaría probar suerte en algún lugar en donde no esté ninguno de ellos.
@@ -583,7 +583,7 @@ str_npc4_2ary_morality_speech|Disculpad señor, pero las mujeres como yo prefier
 
 
 
-str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Sois astuto, señor! ¡Cogéis el oro, y asentís, y decís "_QQ_"sí señor"_QQ_" pero teníais planeado esto desde hace tiempo! Ji-Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estáis engañando...
+str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Sois astuto, señor! ¡Cogéis el oro, y asentís, y decís "sí señor" pero teníais planeado esto desde hace tiempo! Ji-Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estáis engañando...
 
 
 str_npc1_personalityclash_speech|¿Os había dicho que odio a {s11}?
@@ -593,7 +593,7 @@ str_npc4_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc5_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc6_personalityclash_speech|{playername}, acabo de ver a {s11} pisar de forma descarada un nido de pájaros jóvenes. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
 str_npc7_personalityclash_speech|Lord {s11} es un guerrero habilidoso en el campo de batalla, pero me pregunto si su truco está en cegar al enemigo con el brillo de su pelo. ¿O quizás caen admirados por su fama y sus modales refinados?
-str_npc8_personalityclash_speech|Señor, tengo una queja contra {s11}. Me hostiga continuamente para le haga una bebida llamada "_QQ_"el hada verde"_QQ_".
+str_npc8_personalityclash_speech|Señor, tengo una queja contra {s11}. Me hostiga continuamente para le haga una bebida llamada "el hada verde".
 str_npc9_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc10_personalityclash_speech|¿Os había dicho que odio a {s11}?
 str_npc11_personalityclash_speech|¿Os he mencionado que odio a {s11}?
@@ -746,7 +746,7 @@ str_npc4_home_description|¿Dónde están ahora el caballo y su jinete? ¿Dónde
 str_npc5_home_description|Construido en el pasado por el Reino del Sur, ahora sirve de guarida para aquel que llamamos el Mago Blanco, conspirando, sin duda, para incrementar su poder a costa de otros.
 str_npc6_home_description|Nunca me había aventurado tan lejos, pero he oído a los exploradores de Greenwood decir que puede ser que encontremos Nazgûls aquí. Siento una presencia maligna, pero no se de qué se puede tratar. Es poderosa, sin embargo, así que estemos alerta.
 str_npc7_home_description|Viendo la desolación del lugar, y la cantidad de pisadas de orcos, temo por el valiente Balin y su expedición. Parece que Moria ha caído a manos del Enemigo así que debemos ir con cuidado.
-str_npc8_home_description|No suele suceder que, un mercader ambulante llega al mercado del Valle y me ofrece la mejor miel que jamás he probado; por alguna extraña razón me dice que ha sido "_QQ_"elaborada por los osos"_QQ_" y se ríe alegremente.
+str_npc8_home_description|No suele suceder que, un mercader ambulante llega al mercado del Valle y me ofrece la mejor miel que jamás he probado; por alguna extraña razón me dice que ha sido "elaborada por los osos" y se ríe alegremente.
 str_npc9_home_description|Las malditas murallas son demasiado altas y duras para que mi martillo las pueda romper. Me imagino que si alguna vez hacemos huir a los habitantes de la maldita ciudad de Edoras, correrán a esconderse detrás de estas murallas.
 str_npc10_home_description|¿Conocéis esa ciudad?
 str_npc11_home_description|¿Conocéis esa ciudad?
@@ -1255,7 +1255,7 @@ str_gondor_rumor_11|¿Dol Guldur? Nunca he oído hablar de ello.
 str_gondor_rumor_12|¿Moria? Los enanos excavan allí, ¿verdad?
 str_gondor_rumor_13|No le digáis a nadie que he dicho esto, pero creo que el Príncipe Imrahil debería de ser Rey. Lord Denethor es un hombre íntegro, pero Gondor se ha debilitado mucho durante su regencia. Y no sólo desde que su hijo mayor nos dejó.
 str_gondor_rumor_14|La gente dice que los Nueve salieron de Minas Morgul de nuevo. Ojalá tuviéramos más valientes capitanes como Boromir para guiar a nuestros hombres en la batalla contra enemigos tan antiguos como esos.
-str_gondor_rumor_15|Los Sureños nos han echado de Harondor. Han estado realizando muchas incursiones contra nosotros durante bastante tiempo. Desearía poder pasear de nuevo por los verdes campos de Lebennin de nuevo. Pero se nos dice "_QQ_"No"_QQ_", nuestros soldados deben proteger el centro del reino.
+str_gondor_rumor_15|Los Sureños nos han echado de Harondor. Han estado realizando muchas incursiones contra nosotros durante bastante tiempo. Desearía poder pasear de nuevo por los verdes campos de Lebennin de nuevo. Pero se nos dice "No", nuestros soldados deben proteger el centro del reino.
 str_gondor_rumor_16|El primo de mi amigo es un arquero al servicio de Hirluin el Hermoso. Tienen de lejos, los uniformes más bonitos en mi opinión.
 str_gondor_rumor_17|Hay una extraña roca negra cerca de Erech. Una vez fui a verla con mi padre. La gente dice que la roca oculta la entrada a una sala donde duerme el último hijo de los reyes del mar. Yo pienso que sólo es una roca.
 str_gondor_rumor_18|Nosotros, la gente de Gondor, sólo decimos la verdad. Rara vez alardeamos de algo, y luego luchamos o morimos en el intento.
@@ -1332,13 +1332,13 @@ str_rhun_rumor_12|Los orcos son criaturas asquerosas sin coraje ni habilidad. No
 str_rhun_rumor_13|¿Qué es lo mejor en la vida? Aplastar a tus enemigos, ver sus cadáveres pasar por delante de ti, y oir los lamentos de sus mujeres.
 str_dunland_rumor_begin|¡No descansaremos hasta que no nos hayamos vengado y esos malditos no estén de rodillas!
 str_dunland_rumor_2|¡Esos bastardos Rohirrim son cariñosos con sus caballos por la noche! Ja ja ja!
-str_dunland_rumor_3|¡Esos malditos "_QQ_"Pelo de Paja"_QQ_" se atragantarán con nuestras tierras! ¡Y con su sangre! ¡Ja!
-str_dunland_rumor_4|¡Muerte a los Forgoil! ¡Muerte a los "_QQ_"Pelo de Paja"_QQ_"! ¡Muerte a los ladrones del Norte!
+str_dunland_rumor_3|¡Esos malditos "Pelo de Paja" se atragantarán con nuestras tierras! ¡Y con su sangre! ¡Ja!
+str_dunland_rumor_4|¡Muerte a los Forgoil! ¡Muerte a los "Pelo de Paja"! ¡Muerte a los ladrones del Norte!
 str_dunland_rumor_5|Ahora lo llaman Rohan, pero ¡es nuestra tierra ancestral! Vengaremos la muerte de nuestros antepasados y expulsaremos a esos sucios ladrones de tierras.
 str_dunland_rumor_6|¡No dejes que los Forgoil te cojan, o te torturarán y te quemarán vivo!
 str_dunland_rumor_7|¡Tenemos la sed de sangre de un lobo y la fuerza de un jabalí!
 str_dunland_rumor_8|Los Forgoil piensan que somos salvajes y estúpidos. Veremos lo que piensan cuando sus jinetes se enfrenten a nuestros piqueros.
-str_dunland_rumor_9|Los cuervos de Isengard se comerán los ojos de los "_QQ_"Pelo de Paja"_QQ_", los lobos de Dunland les morderán sus gargantas.
+str_dunland_rumor_9|Los cuervos de Isengard se comerán los ojos de los "Pelo de Paja", los lobos de Dunland les morderán sus gargantas.
 str_dunland_rumor_10|Una vez capturé y maté un lobo con mis manos desnudas. ¡Le romperé el cuello a un Hombre-caballo como si fuera la rama de un árbol! ¡Grrr!
 str_dunland_rumor_11|Nuestro jefe encontró una vieja espada de bronce en un túmulo. La dobló y la tiró a un pantano. Los espíritus de las colinas estarán de nuestra parte seguro. Es un antiguo ritual.
 str_dunland_rumor_12|Mis antepasados lucharon con Freca y más tarde con Wulf contra los malditos Forgoil. Aún recordamos su coraje.
@@ -1405,7 +1405,7 @@ str_harad_rumor_9|Cuento con que obtengamos un buen botín cuando conquistemos e
 str_harad_rumor_10|Mantente alejado de los Mumakil. Son bestias malhumoradas y te aplastarán si te descuidas.
 str_harad_rumor_11|En Harad tenemos desiertos y junglas, montañas y mar. Nuestra gente es tan diversa como nuestras tierras y tan numerosas como los granos de arena.
 str_harad_rumor_12|Muchos caballeros de Harondor prefieren sables en vez de espadas comunes. Son bastante buenos para atravesar campesinos que están huyendo, pero necesitas una buena lanza o una espada bien afilada para atravesar una armadura robusta.
-str_harad_rumor_13|Mi hermano de sangre se unió a los Karka - ahora es un explorador. Los Jinetes del "_QQ_"Colmillo"_QQ_" tienen una vida llena de peligros, pero es una gran experiencia para los jóvenes impetuosos.
+str_harad_rumor_13|Mi hermano de sangre se unió a los Karka - ahora es un explorador. Los Jinetes del "Colmillo" tienen una vida llena de peligros, pero es una gran experiencia para los jóvenes impetuosos.
 str_harad_rumor_14|¡Jamás tengas un enfrentamiento contra la hermandad del León! Su reputación es bien conocida.
 str_harad_rumor_15|Ojalá tuviéramos más armas hechas de hierro negro. Muchos todavía tienen que arreglarse con armas de bronce, algunos incluso con palos de madera y jabalinas de cristal negro, y teniendo que marchar a la batalla desnudos.
 str_gunda_rumor_begin|¡Arrebatadle las tierras cálidas a los hombres!

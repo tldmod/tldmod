@@ -407,7 +407,7 @@ qstr_Scout_this_area_alon|¡Explorad el área solo y encontrad a vuestros hombre
 qstr_Be_stealthy_but_elim|¡Ser sigiloso pero eliminar cualquier amenaza rápidamente!
 qstr_You_are_spotted_by_a|¡Has sido avistado por una patrulla!
 qstr_Eliminate_them_befor|¡Eliminadlos antes de que den la voz de alarma!
-qstr_You_have_reached_the|¡Habéis alcanzado las mazmorras!
+qstr_You_have_reached_the|¡Has llegado a las mazmorras!
 qstr_Eliminate_the_guards|¡Eliminad los guardias y liberar a vuestros hombres!
 qstr_{s1}_has_been_captur|{s1} ha sido capturado por el enemigo.
 qstr_Gondor_takes_a_capti|Gondor toma un prisionero.
@@ -420,7 +420,7 @@ qstr_You_were_grievously_wo|Habéis sido gravemente herido en batalla. Vuestros 
 qstr_You_were_grievously_wou|Habéis sido gravemente herido en batalla. Vuestros hombres lograron arrastraros lejos de la lucha; y desafortunadamente el hechicero ha conseguido escapar.
 qstr_You_were_grievously_woun|Habéis sido gravemente herido y vuestro cuerpo se amontona con los muertos. Eligiendo vuestro momento, lográis escapar; desafortunadamente el hechicero esta lejos de vuestro alcance.
 qstr_Some_of_your_compani|Algunos de vuestros compañeros están sufriendo por antiguas heridas.
-qstr_Item_you_just_equipp|El objeto que has equipado no está listo para personajes de esta raza y será eliminado del inventario del jugador pronto^^Aseguraos de que tenéis espacio para el objeto o se perderá.
+qstr_Item_you_just_equipp|El objeto que has equipado no está listo para personajes de esta raza y será eliminado del inventario del jugador en breve^^Asegúrate de que tener espacio para el objeto o se perderá.
 qstr_Inappropriate_equipm|Equipo inapropiado
 qstr_The_mount_you_just_e|La montura que has equipado no está listo para personajes de esta raza. Ten en cuenta que no habrá problemas con el comportamiento de los animales en el campo de batalla, si lo dejas como está.
 qstr_Inappropriate_mount|Montura inapropiada
@@ -565,7 +565,7 @@ qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (with {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 qstr_^No_food:___{reg7}||^Sin comida:  -{reg7}
-qstr_Current_party_morale|La moral actual del grupo es {reg5}.^Los modificadores de la moral del grupo son:^^Moral Base:  +50^Tamaño del Grupo: {s2}{reg1}^Liderazgo: {s3}{reg2}^Variedad de comida: {s4}{reg3}{s5}^Items Especiales: {s6}{reg6}^Eventos recentes: {s7}{reg4}^TOTAL:  {reg5}
+qstr_Current_party_morale|La moral actual del grupo es de {reg5} puntos.^Los modificadores de la moral del grupo son:^^Base moral:  +50^Tamaño del Grupo: {s2}{reg1}^Liderazgo: {s3}{reg2}^Variedad de comida: {s4}{reg3}{s5}^Objetos Especiales: {s6}{reg6}^Sucesos recientes: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Defendiendo
 qstr_Gathering_army|Reuniendo ejército
 qstr_Besieging_{s11}|Asediando {s11}
@@ -624,7 +624,7 @@ qstr_urukhai|urukhai
 qstr_haradrim|haradrim
 qstr_dwarf|enano
 qstr_troll|troll
-qstr_dunedain|dunedain
+qstr_dunedain|dúnadan
 qstr_lothlorien|lothlórien
 qstr_rivendell|rivendel
 qstr_mirkwood|bosque negro
@@ -789,7 +789,7 @@ qstr_dis_mod_takes_2_long|este mod tomo mucho tiempo para hacerse y apesta!!11
 qstr_Well_there_s_a_lot_o|Bueno, hay un montón de mejoras gráficas y contenido. Yo supongo que eso toma tiempo...
 qstr_It_has_been_recently|Ha salido hace poco, si perdiste el link, puedes descargarlo desde lemonparty.org.
 qstr_i_wont_decapitated_e|yo quiero cortar cabezas de elefantes en multi, aoda!!11
-qstr_I_don_t_think_there_|No creo que se pueda hacer un multiplayer con TLD, pero los "_QQ_"elefantes'' se veran bien.
+qstr_I_don_t_think_there_|No creo que se pueda hacer un multiplayer con TLD, pero los "elefantes'' se veran bien.
 qstr_There_is_a_hidden_el|Hay un nivel secreto de modo deathmatch online de ''elefantes'', pero primero debes borrar todos tus partidas guardadas, luego jugar por 100 días en el juego sin guardar, luego ve a la pantalla del personaje y presiona Alt+F4. Totalmente recomendable!!
 qstr_Did_you_bring_your_z|Did you bring your zupdog? 
 qstr_What_s_zupdog?|What's zupdog?
@@ -858,7 +858,7 @@ qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, un comandante de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y el dueño de {s8}.:.
 qstr_Very_well_done_{play|¡Muy bien hecho, {playername}! Habéis capturado a ambos, el espía y su contratista, tal y como esperaba, y ambos están ahora bajo llave, esperando a ser interrogados. ¡Tendrán que darnos alguna explicación ahora!. De cualquier modo, estoy muy satisfecho con los resultados, {playername}, y os doy esta bolsa como una muestra de aprecio.
-qstr_Beautiful_work_{play|Bonito trabajo, {playername}! Habéis captura a ambos, el espía y su contratista, como os dijeron, y ambos se encuentran enjaulados en mi mazmorra, esperando para ser itnerrogados. ¡Mi torturador estará ocupado esta noche!. De cualquier modo, estoy satisfecho con los resultados, {playername}, y os doy esta bolsa como una muestra de aprecio.
+qstr_Beautiful_work_{play|¡Un trabajo excelente, {playername}! Has capturado a ambos, al espía y a su contratista, tal y como os dijeron, y ambos se encuentran enjaulados en mi mazmorra, esperando para ser interrogados. ¡Mi torturador estará ocupado esta noche!. Pero bueno, estoy satisfecho con los resultados, {playername}, y quiero ofrecerte esta bolsa como muestra de mi aprecio.
 qstr_Your_mission_is_comp|Has completado la misión, {s9} te solicita que renaudes el seguimiento de su ejército hasta nuevo aviso.
 qstr_{s13}_asked_you_to_g|{s13} te ha pedido que reunas {reg3} unidades de {s4} y se las lleves.
 qstr_{s9}_asked_you_to_sc|{s9} te ha pedido que explóres {s13}, {s14} y {s15}, y que luego le informes de lo que encuentres.
