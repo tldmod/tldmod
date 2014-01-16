@@ -417,7 +417,7 @@ qstr_Isengard_takes_a_cap|Isengard toma un prisionero.
 qstr_You_were_grievously_|Habéis sido gravemente herido y vuestro cuerpo se amontona con los muertos. Eligiendo vuestro momento, lográis escapar más alla del muro, pero el enemigo ha visto vuestros movimientos. Mejor huir rápidamente.
 qstr_You_were_grievously_w|Habéis sido gravemente herido en batalla. Vuestro hombres lograron sacaros del frente, pero hubo terribles bajas en el esfuerzo.
 qstr_You_were_grievously_wo|Habéis sido gravemente herido en batalla. Vuestros hombres lograron arrastraros lejos pero hubo terribles bajas en el esfuerzo. Desafortunadamente, algunos de vuestros compañeros han sido capturados y llevados a {s2}.
-qstr_You_were_grievously_wou|Habéis sido gravemente herido en batalla. Vuestros hombres lograron arrastraros lejos de la lucha; y desafortunadamente el hechicero consiguió escapar.
+qstr_You_were_grievously_wou|Habéis sido gravemente herido en batalla. Vuestros hombres lograron arrastraros lejos de la lucha; y desafortunadamente el hechicero ha conseguido escapar.
 qstr_You_were_grievously_woun|Habéis sido gravemente herido y vuestro cuerpo se amontona con los muertos. Eligiendo vuestro momento, lográis escapar; desafortunadamente el hechicero esta lejos de vuestro alcance.
 qstr_Some_of_your_compani|Algunos de vuestros compañeros están sufriendo por antiguas heridas.
 qstr_Item_you_just_equipp|El objeto que has equipado no está listo para personajes de esta raza y será eliminado del inventario del jugador pronto^^Aseguraos de que tenéis espacio para el objeto o se perderá.
@@ -549,10 +549,10 @@ qstr_Alarm_Level_is_now_a|Nivel de alarma ahora en 1
 qstr_Alarm_Level_is_now_at|Nivel de alarma ahora en 0
 qstr_The_guards_have_spott|¡Los guardias te han visto!
 qstr_Alarm_Level_is_now_at_|Nivel de alarma ahora en 2
-qstr_The_sorcerer_has_fle|¡El hechicero ha huído!
+qstr_The_sorcerer_has_fle|¡El hechicero ha huido!
 qstr_Report_this_ill_news|Reporta estas enfermantes noticias a Lady Galadriel...
 qstr_The_sorcerer_is_flee|¡El hechicero está huyendo! ¡Matadle!
-qstr_The_sorcerer_is_dead|¡El hechicero está muerto!
+qstr_The_sorcerer_is_dead|¡El hechicero ha muerto!
 qstr_The_battle_is_won!|¡La batalla esta ganada!
 qstr_Look_at_my_over_the_|¡Mira mi captura sobre-el-hombro, {playername}! ¡Soy tan maravillo en la distancia!
 qstr_You_wish_old_man_my_|Eso os gustaría, viejo hombre, ¡mi visión sobre-el-hombro es mucho más bonita!
@@ -705,8 +705,8 @@ qstr_Forces_of_Isengard|Fuerzas de Isengard
 qstr_their_enemies|sus enemigos
 qstr_{s11}_and_{s13}|{s11} y {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-qstr_Now_that_the_sorcere|Ahora que el hechicero está muerto, no hay más nada que hacer aquí.
-qstr_Now_that_the_sorcerer|Ahora que el hechicero ha huido, no hay más nada que hacer aquí.
+qstr_Now_that_the_sorcere|Ahora que el hechicero está muerto, ya no queda más nada que hacer aquí.
+qstr_Now_that_the_sorcerer|Ahora que el hechicero ha huido, ya no queda más nada que hacer aquí.
 qstr_You_approach_a_heavi|Te acercas a una región fuertemente protegida del bosque...
 qstr_You_wait_for_darknes|Esperas a que anochezca...
 qstr_You_are_quickly_disc|Eres descubierto rápidamente por el enemigo.
@@ -782,9 +782,9 @@ qstr_{reg65?Madame:Sir}|{reg65?Madame:Sir}{***}
 qstr_How_do_magnets_work?|¿Cómo funcionan los magnetos?
 qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los Magnetos están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal aún contiene piezas de gravedad en su interior.
-qstr_i_wont_a_warband_por|yo quiedo una version pada warband aoda!!11
+qstr_i_wont_a_bonerlrord_|yo quero qe lo psaseis a bonerlrord haora mesmo!11
 qstr_I_m_sure_the_TLD_tea|Estoy seguro que el equipo de TLD lo harán cuando puedan.
-qstr_Install_TLD_in_your_|instala TLD en la carpeta Modules del Warband, agrega la línea 'compatible with warband = 1' en el module.ini, y podrás jugar en Warband!
+qstr_Install_TLD_in_your_|Instala TLD en la carpeta Modules de Bannerlord, agrega la línea 'compatible_with_wfas = 1' en el module.ini, y podrás jugar en Warband y... ¡en Warrider 0.202!
 qstr_dis_mod_takes_2_long|este mod tomo mucho tiempo para hacerse y apesta!!11
 qstr_Well_there_s_a_lot_o|Bueno, hay un montón de mejoras gráficas y contenido. Yo supongo que eso toma tiempo...
 qstr_It_has_been_recently|Ha salido hace poco, si perdiste el link, puedes descargarlo desde lemonparty.org.
@@ -906,7 +906,7 @@ qstr_Well_you_may_do_as_y|Bueno, puede hacer lo que queráis mis compañeros y y
 qstr_{s9}_asked_you_to_br|{s9} te ha pedido que lleves un mensaje a {s13}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s9}_asked_you_to_fi|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s9}_asked_you_to_fin|{s9} te ha pedido que encuentres la lanza perdida de los enanos hecha para el Rey Bladorthin. Tendrás que preguntar a {s5} para obtener el permiso para buscar la lanza en las profundidades de la Montaña Solitaria.
-qstr_{s9}_has_asked_you_t|{s9} te ha pedido que mates al brujo de Dol Guldur en el Bosque Negro.
+qstr_{s9}_has_asked_you_t|{s9} te ha pedido que mates al hechicero de Dol Guldur en el Bosque Negro.
 qstr_{s9}_asked_you_to_ta|{s9} te ha pedido que lleves un mensaje a {s13}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s9}_asked_you_to_tak|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s11}_asked_you_to_e|{s11} te ha pedido que escoltes a su mensajero a {s14}.

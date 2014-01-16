@@ -296,7 +296,6 @@ dlga_lord_give_order_details_ask:lord_give_order_details|Where?
 dlga_lord_give_order_details:lord_pretalk|Never mind.
 dlga_lord_give_order_stop:lord_pretalk|All right. I will do that.
 dlga_lord_give_order_answer:lord_pretalk|I am sorry. I am needed somewhere else at the moment.
-dlga_lord_give_order_answer:lord_give_order_answer_2|.
 dlga_lord_give_order_answer_2:close_window|I will do that.
 dlga_lord_give_order_answer_2:lord_pretalk|I am sorry, it is not possible for me to do that.
 dlga_lord_talk:lord_talk_ask_something|I wish to ask you something.

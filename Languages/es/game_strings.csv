@@ -1,12 +1,6 @@
-﻿str_no_string|NO STRING!
-str_empty_string| 
 str_yes|Sí.
 str_no|No.
-str_blank_string| 
-str_error_string|ERROR!!!ERROR!!!!ERROR!!!ERROR!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!!
 str_noone|Nadie
-str_s0|{s0}
-str_blank_s1| {s1}
 str_s50_and_s51|{s50} y {s51}
 str_s5_s_party| Grupo de {s5}
 str_s5_s_host| Anfitrión de {s5}
@@ -16,40 +10,7 @@ str_s7_raiders|{s7} Asaltantes
 str_bandits_eliminated_by_another|Los problemáticos bandidos han eliminado otro grupo.
 str_msg_battle_won|¡Victoria! Pulsa tabulador para salir.
 str_tutorial_map1|Este es el mapa de la Tierra Media. Haz clic en el mapa para mover a tu grupo, entrar en una ciudad o seguir a otro grupo. El juego se pondrá en pausa si tu grupo no se está moviendo, si está descansando o si está esperando. Para esperar solo tienes que pulsar la barra espaciadora.
-str_change_color_1|Cambiar color 1
-str_change_color_2|Cambiar color 2
-str_change_background|Cambiar patrón de fondo
-str_change_flag_type|Cambiar tipo de bandera
-str_change_map_flag_type|Cambiar tipo de mapa
-str_randomize|Aleatorio
-str_sample_banner|Ejemplo de Estandarte
-str_sample_map_banner|Ejemplo de Estandarte de Mapa
-str_number_of_charges|Número de cargas:
-str_change_charge_1|Cambiar carga 1
-str_change_charge_1_color|Cambiar color de carga 1
-str_change_charge_2|Cambiar carga 2
-str_change_charge_2_color|Cambiar color de carga 2
-str_change_charge_3|Cambiar carga 3
-str_change_charge_3_color|Cambiar color de carga 3
-str_change_charge_4|Cambiar carga 4
-str_change_charge_4_color|Cambiar color de carga 4
-str_change_charge_position|Cambiar posición de carga
-str_choose_position|Elegir posición:
-str_choose_charge|Elegir carga:
-str_choose_background|Elegir patrón de fondo:
-str_choose_flag_type|Elegir tipo de bandera:
-str_choose_map_flag_type|Elegir tipo de bandera de mapa:
-str_choose_color|Elegir color:
 str_accept|Aceptar
-str_charge_no_1|Carga #1:
-str_charge_no_2|Carga #2:
-str_charge_no_3|Carga #3:
-str_charge_no_4|Carga #4:
-str_change|Cambiar
-str_plus|+
-str_minus|-
-str_color_no_1|Color 1:
-str_color_no_2|Color 2:
 str_charge|Carga
 str_color|Color
 str_flip_horizontal|Girar en horizontal
@@ -57,48 +18,6 @@ str_flip_vertical|Girar en vertical
 str_hold_fire|Alto el fuego
 str_blunt_hold_fire|Alto el fuego                
 str_tutorial_ammo_refilled|Munición recargada.
-str_tutorial_failed|Has sido derrotado esta vez, pero no te preocupes. Sigue las instrucciones con cuidado y lo harás mejor la próxima vez. Pulsa tabulador para volver al menú desde donde puedes volver a intentar este tutorial.
-str_tutorial_1_msg_1|En este tutorial aprenderás las bases del movimiento y el combate. En Mount&Blade usarás el ratón para controlar hacia donde miras, y las teclas W,A,S y D para moverte. Tu primera tarea en el entrenamiento será encontrar la bandera amarilla en la habitación y moverte hacia ella. Puedes pulsar tabulador en cualquier momento para salir de este tutorial o para salir a otra area del juego. Puedes moverte a la bandera amarilla.
-str_tutorial_1_msg_2|Bien hecho. El siguiente paso es el ataque con armas. Para este tutorial has sido equipado con arco y flechas, una espada y un escudo. Puedes desenvainar diferentes armas usando la rueda del ratón. Con la configuración por defecto, moviéndola hacia arriba sacará tu siguiente arma y hacia abajo sacará tu escudo. Si ya tienes equipado un escudo, mover la rueda del ratón hacia abajo lo desequipará. Intenta cambiar tus armas equipadas usando la rueda del ratón. Cuando estés listo, ve a la bandera amarilla para realizar tu nueva tarea.
-str_tutorial_1_msg_3|Excelente. La siguiente parte de este tutorial cubre los ataques con armas de cuerpo a cuerpo. Puedes atacar con el arma que tengas empuñada con el botón izquierdo del ratón. Pulsa y mantén el botón para preparar un ataque, libéralo soltando el botón. Si mantienes el botón izquierdo del ratón pulsado un rato antes de soltarlo, tu ataque será más poderoso. Desenvaina tu espada y destruye los cuatro maniquís en la sala.
-str_tutorial_1_msg_4|¡Bien hecho! Has destruido los cuatro maniquís. Puedes proceder hacia la siguiente habitación.
-str_tutorial_1_msg_5|Como puedes ver, hay una diana al fondo de la habitación. Tu siguiente tarea será usar tu arco para poner tres flechas en ese objetivo. Haz clic con el botón izquierdo y mantenlo pulsado para cargar una flecha. Puedes soltar la flecha soltando el botón izquierdo del ratón. Fíjate en el retículo para apuntar en mitad de la pantalla, te muestra la precisión de tu tiro. Para conseguir una buena puntería, suelta tu flecha cuando el retículo sea lo más pequeño posible. Intenta disparar a la diana ahora.
-str_tutorial_1_msg_6|¡Bien hecho! Has aprendido las bases de moverse y atacar. Con un poco de práctica pronto las dominarás. En el segundo tutorial puedes aprender más sobre técnicas de combate avanzadas y enfrentarte a oponentes armados. Puedes pulsar tabulador en cualquier momento para salir al menú de tutorial.
-str_tutorial_2_msg_1|Este tutorial te enseñará a defenderte con un escudo y a cómo enfrentarte a oponentes armados. Por ahora estás armado únicamente con un escudo. Tu tarea no es atacar sino protegerte con tu escudo. Hay un oponente armado esperándote en la siguiente habitación. Él intentará dejarte inconsciente, tú debes tratar de evitarlo protegiéndote con tu escudo. Para hacerlo debes mantener pulsado el botón derecho de tu ratón. Ve a la siguiente sala para enfrentarte a tu oponente. Recuerda que puedes pulsar tabulador en cualquier momento para salir de este tutorial o salir a otro área del juego.
-str_tutorial_2_msg_2|Pulsa y mantén el botón derecho del ratón para elevar tu escudo. Intenta permanecer en pie durante 30 segundos. Te faltan {reg3} segundos.
-str_tutorial_2_msg_3|Bien hecho, te has defendido con exito de un oponente armado. La siguiente fase de este tutorial te hará enfrentarte a una fuerza de arqueros enemigos. Muévete hacia la siguiente habitación cuando estés listo para enfrentarte a los arqueros.
-str_tutorial_2_msg_4|Defiéndete de las flechas elevando tu escudo con el botón derecho del ratón. Intenta paremanecer en pie durante 30 segundos. Te faltan {reg3} segundos.      
-str_tutorial_2_msg_5|Excelente, te has defendido bien contra los arqueros. Tienes una recompensa esperándote en la siguiente habitación.
-str_tutorial_2_msg_6|Con los controles predeterminados, la tecla F se usa para interacción no violenta con objetos y humanos en el juego. Para coger la espada en el altar mírala y pulsa F cuando veas la palabra "Equipar".
-str_tutorial_2_msg_7|¡Un buen arma! Puedes usarla para ajustar cuentas. Vuelve atrás y acaba con los arqueros con los que te enfrentaste antes.
-str_tutorial_2_msg_8|Muy bien. Tu última tarea antes de terminar este tutorial es enfrentarse al hombre de la maza. ¡Pasa por la puerta y enséñale tu acero!
-str_tutorial_2_msg_9|¡Enhorabuena! Has aprendido a defenderte con un escudo y has tenido tu primer combate con oponentes armados. Practica un poco más y pronto serás un espadachín de renombre. El siguiente tutorial cubre la defensa direccional, que es uno de los elementos más importantes del combate en Mount&Blade. Puedes pulsar tabulador en cualquier momento para volver al menú del tutorial.
-str_tutorial_3_msg_1|Este tutorial está pensado para darte una vista general del bloqueo y la defensa sin escudo. Bloquear ataques con tu arma es algo más difícil que con un escudo. Cuando te defiendes con un arma, solo te proteges en una dirección, hacia la que tu espada está mirando. Si estás bloqueando hacia arriba, bloquearás cualquier golpe que venga desde arriba, pero no pararás estocadas o golpes por los lados. Cualquiera de estos ataques podrá golpearte. Por ello, para sobrevivir sin un escudo, debes aprender a usar la defensa direccional. Coge la pica para empezar la práctica.
-str_tutorial_3_msg_2|Por defecto, la dirección hacia la que te defiendes (manteniendo pulsado el botón derecho del ratón) está determinada por la dirección del ataque de tu oponente más cercano. Por ejemplo, si tu oponente está preparando una estocada, pulsando y manteniendo el botón derecho parará estocadas, pero no parará ataques desde arriba. Debes observar a tu oponente cuidadosamente y unicamente iniciar tu parada DESPUÉS de que tu enemigo haya comenzado su ataque. Si lo haces ANTES de que lo prepare, es posible que intentes parar el ataque en la dirección equivocada. Es hora de que pases a la siguiente habitación, donde te tendrás que defender de un oponente armado. Tu tarea es defenderte durante 30 segundos únicamente con una pica. Los ataques de la pica están desactivados para este tutorial, así que no te preocupes por atacar y concéntrate en tu defensa. Muévete hacia la siguiente habitación cuando estés listo para comenzar la pelea.
-str_tutorial_3_msg_3|Mantén pulsado el botón derecho del ratón para defenderte con tu pica justo después de que tu oponente empiece su ataque. Intenta permanecer en pie durante treinta segundos. Te faltan {reg3} segundos.
-str_tutorial_3_msg_4|Bien hecho, ¡has completado esta prueba! Ahora te enfrentarás a un oponente que te pondrá las cosas más difíciles. Muévete hacia la siguiente habitación cuando estés listo para enfrentarte a él.
-str_tutorial_3_msg_5|Mantén pulsado el botón derecho del ratón para defenderte con tu pica, justo después de que tu oponente comience su ataque. Trata de permanecer en pie durante treinta segundos. Te faltan {reg3} segundos.
-str_tutorial_3_msg_6|Enhorabuena, sigues en pie a pesar de que el enemigo lo ha intentado con todas sus fuerzas. Es hora de que aprendas a atacar. Acércate a la puerta y pulsa F cuando veas la palabra "Ir".
-str_tutorial_3_2_msg_1|Los ataques de tu pica han sido activados de nuevo. Tu primer oponente te está esperando en la siguiente habitación. Derrótale con una combinación de ataque y defensa.
-str_tutorial_3_2_msg_2|Derrota a tu oponente con tu pica.
-str_tutorial_3_2_msg_3|Excelente. Ahora sólo queda derrotar a un último oponente. Está en la siguiente habitación. Entra y déjale inconsciente.
-str_tutorial_3_2_msg_4|Derrota a tu oponente con tu pica.
-str_tutorial_3_2_msg_5|¡Bien hecho! En este tutorial has aprendido a luchar sin escudo. Entrena duro y con constancia y nadie podrá darte un solo golpe. En el siguiente tutorial podrás aprender a montar a caballo y el combate con caballos. Puedes pulsar tabulador en cualquier momento para volver al menú de tutorial.
-str_tutorial_4_msg_1|Bienvenido al cuarto tutorial. En esta secuencia aprenderás a montar a caballo y a cómo realizar diferentes ataques desde un caballo. Empezaremos por montar. Acércate al caballo y pulsa F cuando veas la palabra "Montar".
-str_tutorial_4_msg_2|Mientras estés montado en el caballo, las teclas W,A,S, y D controlarán el movimiento del caballo, no el tuyo. Monta en tu caballo e intenta seguir la bandera amarilla por el circuito. Cuando llegues a la bandera, esta se moverá al siguiente punto de ruta hasta que llegues al final del circuito.
-str_tutorial_4_msg_3|Muy bien. Vamos a practicar el ataque a los enemigos desde un caballo. Acércate a la bandera amarilla.        C
-str_tutorial_4_msg_4|Desenvaina tu espada (rueda del ratón) y destruye los cuatro objetivos. Intenta golpear a los maniquís mientras pasas al galope (esto supone un reto extra, pero cuanto más rápido vas más daño tiene tu ataque a caballo. La manera más fácil de hacer esto es manteniendo pulsado el botón derecho del ratón hasta que llegue el momento adecuado, entonces lo liberas justo antes de pasar a tu objetivo.
-str_tutorial_4_msg_5|Excelente trabajo. Ahora probemos ataques a distancia desde el caballo. Acércate a la bandera amarilla.
-str_tutorial_4_msg_6|Localiza la diana al lado del circuito y aciértala tres veces con tu arco. Aunque no se requiere que estés en movimiento mientras disparas, es recomendable que intentes acertar a la diana a diferentes velocidades y ángulos, para entender cómo afectan tu velocidad y rumbo a tu puntería.
-str_tutorial_4_msg_7|Enhorabuena, has completado este tutorial. Puedes pulsar tabulador en cualquier momento para volver al menú de tutorial.
-str_tutorial_5_msg_1|TODO: Sigue el orden hasta la bandera
-str_tutorial_5_msg_2|TODO: Muévete hacia la bandera, mantén a tus unidades en posición
-str_tutorial_5_msg_3|TODO: Muévete hacia la bandera para conseguir a los arqueros
-str_tutorial_5_msg_4|TODO: Mueve a los arqueros hacia la bandera 1 y a la infantería hacia la bandera 2
-str_tutorial_5_msg_5|TODO: El enemigo está cargando. ¡Lucha!
-str_tutorial_5_msg_6|TODO: Fin de la batalla
-str_trainer_help_1|Esto es un campo de entrenamiento donde puedes aprender las bases del juego. Usa las teclas W,A,S, y D para moverte y el ratón para mirar alrededor.
-str_trainer_help_2|Para hablar con el entrenador, acércate a él y pulsa la tecla F cuando veas la palabra "Hablar" bajo su nombre. Cuando desees salir de ésta o de cualquier otra área o bien retirarte de una batalla, puedes pulsar la tecla tabulador.
 str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Con su grito de batalla, se lanza montado en su caballo, liderando a sus leales hombres a una feroz batalla.
 str_custom_battle_2|Celeborn de Lothlórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de retaguardia le avisan de que una fuerza de malvados hombres cara-ceniza se están acercando. ¡Son los terribles Númenóreanos  Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben de haber sido atraídos por la *Oscuridad*.      
 str_custom_battle_3|Lord Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras las fuerzas de asedio se preparan para un último ataque a los muros, debe defenderlos con valentía y su afilado acero.
@@ -285,211 +204,6 @@ str_persuasion_summary_bad|Utilizas tus herramientas de persuasión {s50}, pero 
 str_persuasion_summary_average|{s50} resulta ser un auténtico orador con una mente brillante y tu no consigues esbozar argumentos completamente convincentes. {reg51?she:he} no puede contrarrestar tu punto de vista mediante razones. Al final, ninguno consigue ganar terreno en esta discusión.
 str_persuasion_summary_good|Con pensamiento rápido y una buena argumentación consigues exponer bien tu caso, forzando a {s50} a darte la razón. No obstante, {reg51?she:he} todavía tiene dudas sobre tu petición.
 str_persuasion_summary_very_good|Das un inspirado discurso que resuena en los oídos de todos los que te escuchan como si fuera poesía. El mundo parece silenciarse para escucharte mejor. Las inspiradas palabras han conmovido profundamente a {s50}  y {reg51?she:he} parece mucho más dispuesto a ayudarte.
-str_name_1|Adanedhel
-str_name_2|Ondoher
-str_name_3|Aerandir
-str_name_4|Agarwaen
-str_name_5|Ailinel
-str_name_6|Aldarion
-str_name_7|Almarian
-str_name_8|Amandil
-str_name_9|Amlaith
-str_name_10|Anardil
-str_name_11|Anborn
-str_name_12|Andróg
-str_name_13|Angbor
-str_name_14|Arador
-str_name_15|Araglas
-str_name_16|Arahael
-str_name_17|Arantar
-str_name_18|Arassuil
-str_name_19|Alcarin
-str_name_20|Belegund
-str_name_21|Bereg
-str_name_22|Bergil
-str_name_23|Borthand
-str_name_24|Ceorl
-str_name_25|Ciryon
-str_name_26|Damrod
-str_name_27|Derufin
-str_name_28|Dorlas
-str_name_29|Duilin
-str_name_30|Duinhir
-str_name_31|Egalmoth
-str_name_32|Emeldir
-str_name_33|Eradan
-str_name_34|Erellont
-str_name_35|Erendis
-str_name_36|Falathar
-str_name_37|Fengel
-str_name_38|Forweg
-str_name_39|Frumgar
-str_name_40|Fuinur
-str_name_41|Galdor
-str_name_42|Gethron
-str_name_43|Gorlim
-str_name_44|Grithnir
-str_name_45|Gundor
-str_name_46|Hador
-str_name_47|Haldar
-str_name_48|Hallacar
-str_name_49|Hathol
-str_name_50|Herion
-str_name_51|Hild
-str_name_52|Hunthor
-str_name_53|Imlach
-str_name_54|Ioreth
-str_name_55|Ivorwen
-str_name_56|Labadal
-str_name_57|Larnach
-str_name_58|Magor
-str_name_59|Mairen
-str_name_60|Malach
-str_name_61|Malantur
-str_name_62|Malvegil
-str_name_63|Mardil
-str_name_64|Meneldur
-str_name_65|Minalcar
-str_name_66|Minohtar
-str_name_67|Ondoher
-str_name_68|Orleg
-str_name_69|Orodreth
-str_name_70|Ostoher
-str_name_71|Pelendur
-str_name_72|Ragnor
-str_name_73|Sador
-str_name_74|Súrion
-str_name_75|Thorongil
-str_name_76|Turambar
-str_name_77|Ulfast
-str_name_78|Ulwarth
-str_name_79|Valacar
-str_name_80|Wulf
-str_name_elf_1|Merlkir
-str_name_elf_2|Romanoir
-str_name_elf_3|Aegnor
-str_name_elf_4|Amdír
-str_name_elf_5|Amras
-str_name_elf_6|Annael
-str_name_elf_7|Aredhel
-str_name_elf_8|Arminas
-str_name_elf_9|Caranthir
-str_name_elf_10|Curufin
-str_name_elf_11|Daeron
-str_name_elf_12|Eluchíl
-str_name_elf_13|Edrahil
-str_name_elf_14|Eluréd
-str_name_elf_15|Erestor
-str_name_elf_16|Faelivrin
-str_name_elf_17|Finrod
-str_name_elf_18|Felagund
-str_name_elf_19|Galathil
-str_name_elf_20|Galdor
-str_name_elf_21|Gelmir
-str_name_elf_22|Gildor
-str_name_elf_23|Guilin
-str_name_elf_24|Ithilbor
-str_name_elf_25|Lindir
-str_name_elf_26|Lómion
-str_name_elf_27|Maedhros
-str_name_elf_28|Maeglin
-str_name_elf_29|Malgalad
-str_name_elf_30|Nellas
-str_name_elf_31|Nerdanel
-str_name_elf_32|Nerwen
-str_name_elf_33|Nimloth
-str_name_elf_34|Orodreth
-str_name_elf_35|Oropher
-str_name_elf_36|Orophin
-str_name_elf_37|Saeros
-str_name_dwarf_1|Assistnik
-str_name_dwarf_2|Vader
-str_name_dwarf_3|Azaghâl
-str_name_dwarf_4|Bifur
-str_name_dwarf_5|Bofur
-str_name_dwarf_6|Bombur
-str_name_dwarf_7|Borin
-str_name_dwarf_8|Dori
-str_name_dwarf_9|Dwalin
-str_name_dwarf_10|Farin
-str_name_dwarf_11|Frár
-str_name_dwarf_12|Frerin
-str_name_dwarf_13|Frór
-str_name_dwarf_14|Gamil
-str_name_dwarf_15|Gróin
-str_name_dwarf_16|Grór
-str_name_dwarf_17|Ibun
-str_name_dwarf_18|Khîm
-str_name_dwarf_19|Lóni
-str_name_dwarf_20|Mîm
-str_name_dwarf_21|Nár
-str_name_dwarf_22|Narvi
-str_name_dwarf_23|Nori
-str_name_dwarf_24|Óin
-str_name_dwarf_25|Ori
-str_name_dwarf_26|Telchar
-str_name_dwarf_27|Marco
-str_name_dwarf_28|Octo
-str_name_orc_1|Triglav
-str_name_orc_2|Adgulg
-str_name_orc_3|Aghed
-str_name_orc_4|Aguk
-str_name_orc_5|Alog
-str_name_orc_6|Azhug
-str_name_orc_7|Bagdud
-str_name_orc_8|Bargulg
-str_name_orc_9|Bog
-str_name_orc_10|Borug
-str_name_orc_11|Bulgan
-str_name_orc_12|Bumhug
-str_name_orc_13|Carguk
-str_name_orc_14|Dalthu
-str_name_orc_15|Derthag
-str_name_orc_16|Dregu
-str_name_orc_17|Dugarod
-str_name_orc_18|Ertguth
-str_name_orc_19|Fandagh
-str_name_orc_20|Farghed
-str_name_orc_21|Fozhug
-str_name_orc_22|Furbog
-str_name_orc_23|Gholug
-str_name_orc_24|Gnalurg
-str_name_orc_25|Grug
-str_name_orc_26|Haguk
-str_name_orc_27|Hoknuk
-str_name_orc_28|Igmut
-str_name_orc_29|Jolagh
-str_name_orc_30|Jukha
-str_name_orc_31|Karguk
-str_name_orc_32|Klog
-str_name_orc_33|Krothu
-str_name_orc_34|Kulgha
-str_name_orc_35|Margulg
-str_name_orc_36|Mazhug
-str_name_orc_37|Naghat
-str_name_orc_38|Nugbu
-str_name_orc_39|Nurbag
-str_name_orc_40|Oggha
-str_name_orc_41|Olodagh
-str_name_orc_42|Omogulg
-str_name_orc_43|Opoguk
-str_name_orc_44|Orgoth
-str_name_orc_45|Perthag
-str_name_orc_46|Pofhug
-str_name_orc_47|Prutha
-str_name_orc_48|Raguk
-str_name_orc_49|Romarod
-str_name_orc_50|Rugbu
-str_name_orc_51|Sargulg
-str_name_orc_52|Slog
-str_name_orc_53|Suhgan
-str_name_orc_54|Surgha
-str_name_orc_55|Torug
-str_name_orc_56|Turbag
-str_name_orc_57|Urghat
-str_name_orc_58|Varguk
-str_name_orc_59|Zlog
-str_name_orc_60|Zunuguk
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} de Erech
@@ -531,7 +245,6 @@ str_surname_38|{s50} el Rápido
 str_surname_39|{s50} el Trovador
 str_surname_40|{s50} el Atrevido
 str_surname_41|{s50} el Impetuoso
-str_surnames_end|Fin de los apodos
 str_number_of_troops_killed_reg1|Número de tropas eliminadas: {reg1}
 str_number_of_troops_wounded_reg1|Número de tropas heridas: {reg1}
 str_number_of_own_troops_killed_reg1|Número de tropas aliadas eliminadas: {reg1}
@@ -620,7 +333,7 @@ str_npc16_intro_response_1|¿Quién eres?
 str_npc17_intro_response_1|El Bosque Negro es un bosque magnífico. ¿Quién eres? ¿Sabes mucho sobre los bosques?
 str_npc1_intro_response_2|No te preocupes, me temo que las cuevas no son un lugar apropiado para una conversación.
 str_npc2_intro_response_2|Da igual, no tengo tiempo para hablar con guardias.
-str_npc3_intro_response_2|No te preocupes, armaré "barullo" en otro sitio.
+str_npc3_intro_response_2|No te preocupes, armaré "_QQ_"barullo"_QQ_" en otro sitio.
 str_npc4_intro_response_2|Disculpe, tengo asuntos urgentes que atender.
 str_npc5_intro_response_2|Disculpa, tengo gente más importante a la que hablar.
 str_npc6_intro_response_2|El sentimiento es mutuo. Adiós.
@@ -643,7 +356,7 @@ str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas
 str_npc6_backstory_a|Disculpad mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
 str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
 str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy un mero curandero y herbalista con modestas habilidades.
-str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y su snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de trigo... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
+str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y su snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de trigo... y perdió el control. "_QQ_"Retirada"_QQ_" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
 str_npc10_backstory_a|¡Soy Durgash!
 str_npc11_backstory_a|¡Nar! No un rastreador, eso es. ¡Me echaron! Te digo que han perdido sus cabezas, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que tengo una nariz rota. ¡Gam! Si no encuentran una trucha para mí pronto me volveré a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles flácidas antes de que me metan ahí!
 str_npc12_backstory_a|Estoy al mando de un grupo. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocaron, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
@@ -660,7 +373,7 @@ str_npc5_backstory_b|Lord Elrond me envía como emisario a Lord Celeborn, para o
 str_npc6_backstory_b|Me gusta caminar por los senderos ocultos de nuestro bello bosque. A veces me muevo silenciosamente a través de los árboles y observo las costumbres de los muchos animales del bosque. La canción de un pájaro extraño, las crías de un jabalí salvaje son tan bellas para mí como lo son el choque de las espadas para los Edain.
 str_npc7_backstory_b|Ayudé a mejorar las defensas de Erebor y entrené a algunos de los enanos más jóvenes, bajo la supervisión de mi venerado padre Dwalin, según nuestra costumbre.
 str_npc8_backstory_b|He tratado a mi Rey Brand de su estreñimiento, un mal común que afecta a nuestros hombres en tiempos de guerra. Una poción de ajenjo y tanto los intestinos como la mente son calmados.
-str_npc9_backstory_b|Así que me dije a mi mismo, "Gulm, ¿queires acabar como carroña?" Y me contesté, "No". La siguiente batalla me tiré al suelo fingiendo estar herido. Luego, cuando nadie miraba, ¡caí sobre mi sargento! Le rajé casi por la mitad, ¡gharr! Luego corté a su secuaz snaga... Resulta que el maldito bicho sobrevivió de alguna manera y empezó a contárselo a todo el mundo. La próxima vez me aseguraré de cortarle la cabeza, gharr...
+str_npc9_backstory_b|Así que me dije a mi mismo, "_QQ_"Gulm, ¿queires acabar como carroña?"_QQ_" Y me contesté, "_QQ_"No"_QQ_". La siguiente batalla me tiré al suelo fingiendo estar herido. Luego, cuando nadie miraba, ¡caí sobre mi sargento! Le rajé casi por la mitad, ¡gharr! Luego corté a su secuaz snaga... Resulta que el maldito bicho sobrevivió de alguna manera y empezó a contárselo a todo el mundo. La próxima vez me aseguraré de cortarle la cabeza, gharr...
 str_npc10_backstory_b|Soy un jinete de lobo rastreador de Isengard.          C
 str_npc11_backstory_b|¡Arrg! Es sólo porque mi nariz estaba llena de mocos. ¿Y de que sirve que la pase por las piedras de todos modos? ¡Nar! ¡Fueron los sucios Uruks! ¡Esos malditos ladrones de melocotones! Perdí el rastro porque se lo cargaron pinchando y pisoteando todo lo que encontraban antes de que llegase.
 str_npc12_backstory_b|Y esos Nazgul me dan repelús. Te despellejan con la mirada y te dejan frío en la oscuridad al otro lado. Pero a Él le gustan, son sus favoritos hoy en día, así que da igual quejarse. Te lo digo, no es ningún juego servir en la ciudad. Me gustaría probar suerte en algún lugar en donde no esté ninguno de ellos.
@@ -674,7 +387,6 @@ str_npc2_backstory_c|Aunque mi presencia aquí es importante, estoy ansioso por 
 str_npc3_backstory_c|Y aquí estoy, deshonrado y taciturno. Mi éored debe de estar a millas de distancia y no tengo posibilidades de alcanzarlos, no con todos los orcos y los hombres salvajes que rondan las llanuras. ¿Necesitáis por casualidad la ayuda de un buen jinete Rohirrim?
 str_npc4_backstory_c|Puede que sepas que a las mujeres, por muy habilidosas que sean con la espada, no se les permite cabalgar con los éoredas. No obstante, no creo que esperar a los guerreros junto al fuego del campamento sea mi destino. No me quedaré sentada sin hacer nada con la gran oportunidad que hay de realizar hazañas en esta guerra, y me vendría bien tu ayuda, guerrero.
 str_npc5_backstory_c|No obstante, si los enemigos de Lothlórien están huyendo, puede que considere unirme a ti por un tiempo, {playername}. Siento que nuestros destinos están unidos en esta guerra.
-
 str_npc6_backstory_c|No lo entendería, creo, viendo lo que se está preparando para esta guerra; pero debéis de haber viajado mucho. ¿Habéis visto los otros grandes bosques? ¿Podéis llevarme allí?
 str_npc7_backstory_c|Esta tranquilidad en el combate no gusta a un guerrero enano con mi linaje y temperamento. ¿Me figuro que ves mucha más acción en tus viajes y que tienes relaciones cordiales con los enanos? Conozco un guerrero enano que te ayudaría mucho a hacer frente a los enemigos.
 str_npc8_backstory_c|He oído que hay muchos combates en otros lugares y nuestras tierras están siendo saqueadas ahora. Por las marcas en tu armadura debes de haber estado en peligro muchas veces. Quizás mis humildes habilidades de combate podrían ser de utilidad en tu compañía de soldados.
@@ -685,7 +397,6 @@ str_npc12_backstory_c|Eh, si tengo la oportunidad, me descalzaré y me asentaré
 str_npc13_backstory_c|Seguí a mi gente al norte, y atendí a su llamada oscura para cumplir el deber que tengo con mi gente. Pero en ellos veo oscuridad y busco hacer mi parte en esta guerra en otro lugar, hasta que las arenas de mi tiempo dejen de moverse. Incluso ahora las siento débiles, cuando antes caían a cascadas.
 str_npc14_backstory_c|Pero ahí llega la marea más oscura, una marea negra de sombra que se alza sobre estas tierras como ningunos ojos mortales han visto. Esta es la marea que quiero domar, pero no tengo aliados con quien conseguir cabalgar esta tormenta.
 str_npc15_backstory_c|Tras muchos inviernos salí de los túneles y busqué en el Bosque Oscuro un buen lugar para vivir y practicar mis artes. Me iba bien, hasta que unos malditos cabrones con tatuajes blancos - ¡ugh! ¡Blanco! ¡Como la cara de un elfo! Esos cabronazos quemaron mi casa en el bosque y tuve que esconderme en las cuevas de nuevo... Allí... Dime, ¿tienes algo de comer? ¿Quizás un buen caballo?
-
 str_npc16_backstory_c|Eso ocurrió muchas vidas de hombre atrás, en otra época, pero el tiempo para pensar y para las historias ha terminado. El tiempo para que mi gente se tome la venganza ha llegado y yo llevaré la venganza de mi gente hacia estas tierras del oeste. ¡Por mi mano sus hogares arderán y se marchitarán hasta que su clan deje de existir!
 str_npc17_backstory_c|Si vas al bosque, ¿crees que podría ir contigo y contarte cosas sobre los árboles? Muchas de ellas son muy interesantes, ¿sabes?
 str_npc1_backstory_later|He guiado partidas de exploradores hasta Emyn Amen. Hay mucha actividad enemiga y muchos orcos cayeron en nuestra emboscada. Pero esas son solo cabezas de orcos; también vimos terribles critaturas marchando. Temo por mi tierra de Ithilien y por el destino de Gondor.
@@ -846,35 +557,35 @@ str_npc2_morality_speech|Espero que no os ofenda lo que os voy a decir, pero me 
 str_npc3_morality_speech|Señor, nosotros los Eorlingas nunca {s21}. Nuestros caballos no se cansan fácilmente y, una vez reagrupados, no hay situación que no podamos superar mediante una carga de caballería a tiempo. Tenedlo en cuenta la próxima vez en que estemos en una situación complicada.
 str_npc4_morality_speech|No hagáis caso de lo que digan los soldados, a veces {s21} es la decisión más sabia. Yo prefiero salvar la vida para poder luchar otro día, cuando la fortuna esté de nuestro lado.
 str_npc5_morality_speech|Debéis reconsiderar vuestra postura, señor. {s21} nos hace tan poco honorables como el Enemigo y disminuye la confianza que nuestros aliados tienen puesta en nosotros.
-str_npc6_morality_speech|[No primary moral code]
+
 str_npc7_morality_speech|No me gustó la decisión que tomásteis de {s21}. Caer en el campo de batalla es un honor a ojos de cualquier enano con sentido común, pero luchar en una compañía liderada por un cobarde es una desgracia. ¿Qué dirán mis primos de esto si se llegan a enterar?
 str_npc8_morality_speech|Señor, debo objetar. {s21} es duro con los soldados e innecesario. Hago lo que puedo por aliviar su sufrimiento, pero por favor no cometáis otro caro error.
 str_npc9_morality_speech|Los guerreros Uruk-hai no {s21}. Si el señor tiene pocas agallas, quizás se encuentre sin ellos una noche de estas. Gulm ha hablado.
-str_npc10_morality_speech|[No primary moral code]
-str_npc11_morality_speech|[No primary moral code]
-str_npc12_morality_speech|[No primary moral code]
-str_npc13_morality_speech|[No primary moral code]
-str_npc14_morality_speech|[No primary moral code]
+
+
+
+
+
 str_npc15_morality_speech|Podéis pensar que Bolzog el Grande puede curarlo todo, {playername}, ¡pero incluso yo tengo mis límites! ¡Si continuáis hasta {s21} incluso mi habilidad se verá comprometida! ¡Necesito que me apoyéis! No puedo revivir a los muertos, ya sea porque hayan muerto de hambre o cortados en pedazos.
-str_npc16_morality_speech|[No primary moral code]
-str_npc17_morality_speech|[No primary moral code]
+
+
 str_npc1_2ary_morality_speech|Capitán, he sido educado como un Dúnadan, tanto  en valor como en honor. Preferiría no {s21}.
-str_npc2_2ary_morality_speech|[No secondary moral code]
-str_npc3_2ary_morality_speech|[No secondary moral code]
+
+
 str_npc4_2ary_morality_speech|Disculpad señor, pero las mujeres como yo prefieren antes la muerte al deshonor. {s21} trae deshonra a mi casa y a mis ancestros.
-str_npc5_2ary_morality_speech|[No secondary moral code]
-str_npc6_2ary_morality_speech|[No secondary moral code]
-str_npc7_2ary_morality_speech|[No secondary moral code]
-str_npc8_2ary_morality_speech|[No secondary moral code]
-str_npc9_2ary_morality_speech|[No secondary moral code]
-str_npc10_2ary_morality_speech|[No secondary moral code]
-str_npc11_2ary_morality_speech|[No secondary moral code]
-str_npc12_2ary_morality_speech|[No secondary moral code]
-str_npc13_2ary_morality_speech|[No secondary moral code]
-str_npc14_2ary_morality_speech|[No secondary moral code]
-str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Sois astuto, señor! ¡Cogéis el oro, y asentís, y decís "sí señor" pero teníais planeado esto desde hace tiempo! Ji-Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estáis engañando...
-str_npc16_2ary_morality_speech|[No secondary moral code]
-str_npc17_2ary_morality_speech|[No secondary moral code]
+
+
+
+
+
+
+
+
+
+
+str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Sois astuto, señor! ¡Cogéis el oro, y asentís, y decís "_QQ_"sí señor"_QQ_" pero teníais planeado esto desde hace tiempo! Ji-Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estáis engañando...
+
+
 str_npc1_personalityclash_speech|¿Os había dicho que odio a {s11}?
 str_npc2_personalityclash_speech|¿Os había dicho que odio a {s11}?
 str_npc3_personalityclash_speech|Señor, ¿cómo es que {s11} forma parte de nuestra compañía? Reconozco que es un soldado habilidoso a pie, pero pienso que habla demasiado sobre emboscadas - algo acorde con la naturaleza de su gente.
@@ -882,7 +593,7 @@ str_npc4_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc5_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc6_personalityclash_speech|{playername}, acabo de ver a {s11} pisar de forma descarada un nido de pájaros jóvenes. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
 str_npc7_personalityclash_speech|Lord {s11} es un guerrero habilidoso en el campo de batalla, pero me pregunto si su truco está en cegar al enemigo con el brillo de su pelo. ¿O quizás caen admirados por su fama y sus modales refinados?
-str_npc8_personalityclash_speech|Señor, tengo una queja contra {s11}. Me hostiga continuamente para le haga una bebida llamada "el hada verde".
+str_npc8_personalityclash_speech|Señor, tengo una queja contra {s11}. Me hostiga continuamente para le haga una bebida llamada "_QQ_"el hada verde"_QQ_".
 str_npc9_personalityclash_speech|¿Os he dicho que odio a {s11}?
 str_npc10_personalityclash_speech|¿Os había dicho que odio a {s11}?
 str_npc11_personalityclash_speech|¿Os he mencionado que odio a {s11}?
@@ -1035,7 +746,7 @@ str_npc4_home_description|¿Dónde están ahora el caballo y su jinete? ¿Dónde
 str_npc5_home_description|Construido en el pasado por el Reino del Sur, ahora sirve de guarida para aquel que llamamos el Mago Blanco, conspirando, sin duda, para incrementar su poder a costa de otros.
 str_npc6_home_description|Nunca me había aventurado tan lejos, pero he oído a los exploradores de Greenwood decir que puede ser que encontremos Nazgûls aquí. Siento una presencia maligna, pero no se de qué se puede tratar. Es poderosa, sin embargo, así que estemos alerta.
 str_npc7_home_description|Viendo la desolación del lugar, y la cantidad de pisadas de orcos, temo por el valiente Balin y su expedición. Parece que Moria ha caído a manos del Enemigo así que debemos ir con cuidado.
-str_npc8_home_description|No suele suceder que, un mercader ambulante llega al mercado del Valle y me ofrece la mejor miel que jamás he probado; por alguna extraña razón me dice que ha sido "elaborada por los osos" y se ríe alegremente.
+str_npc8_home_description|No suele suceder que, un mercader ambulante llega al mercado del Valle y me ofrece la mejor miel que jamás he probado; por alguna extraña razón me dice que ha sido "_QQ_"elaborada por los osos"_QQ_" y se ríe alegremente.
 str_npc9_home_description|Las malditas murallas son demasiado altas y duras para que mi martillo las pueda romper. Me imagino que si alguna vez hacemos huir a los habitantes de la maldita ciudad de Edoras, correrán a esconderse detrás de estas murallas.
 str_npc10_home_description|¿Conocéis esa ciudad?
 str_npc11_home_description|¿Conocéis esa ciudad?
@@ -1096,7 +807,6 @@ str_npc14_honorific|Capitán
 str_npc15_honorific|Maestro
 str_npc16_honorific|Jefe
 str_npc17_honorific|Jefe
-str_companion_strings_end|INVALID
 str_comment_intro_liege_affiliated|Me han dicho que habéis jurado fidelidad a uno de los pretendientes que disputa mi aspiración al trono del Reino. Pero podemos hablar de todas formas.
 str_comment_intro_famous_liege|¡Vuestra fama os precede! Quizás sea el momento de que juréis fidelidad a un señor digno de vuestro valor.
 str_comment_intro_famous_martial|¡Vuestra fama os precede! ¡Quizás comprobemos en el futuro el valor de cada uno en una justa, o en el campo de batalla!
@@ -1450,18 +1160,6 @@ str_gossip_about_character_sadistic|Dicen que a {s6} le gusta torturar a sus ene
 str_gossip_about_character_goodnatured|Dicen que {s6} es un buen hombre y trata a sus súbditos decentemente. Esto es más de lo que se puede decir de casi todos los nobles de la Tierra Media.
 str_gossip_about_character_upstanding|La gente dice que es deseable estar bajo las órdenes de {s6}. Se porta bien con sus súbditos, y los recompensa generosamente si trabajan bien.
 str_latest_rumor|El último rumor que has oído acerca de {s6} es:
-str_credits_1|Mount&Blade Copyright 2001-2008 Taleworlds Entertainment
-str_credits_2|Diseño del juego:^Armagan Yavuz^Steve Negus^Cem Cimenbicer
-str_credits_3|Programación:^Armagan Yavuz^Cem Cimenbicer
-str_credits_4|Artistas CG:^Ipek Yavuz^Ozgur Saral^Mustafa Ozturk
-str_credits_8|Animaciones:^Pinar Cekic^Umit Singil
-str_credits_5|Concepto artístico:^Ganbat Badamkhand
-str_credits_6|Guionistas:^Steve Negus^Ryan A. Span^Armagan Yavuz
-str_credits_9|Banda sonora original:^Jesse Hopkins
-str_credits_7|Modelado adicional:^Hilmi Aric^Ahmet Sarisakal^Katie Beedham^^^Guionistas adicionales:^Michael Buhler^Patrick Desjardins^^^Voces:^Tassilo Egloffstein^Jade E Henderson^^^Banda Sonora Original Compuesta por:^Jesse Hopkins^Solos de Violín Realizados por:^Zoriy Zinger^Tema principal y Scherzo Realizado por:^La Orquesta Sinfónica y Cinemática del Estado Ruso, Dirigido por Sergei Skripka^^^Muestras de Sonido:^Audiosparx.com^^^Mount&Blade Edición de Mapas:^Matt Stentiford^^^Taleworlds Forum Programming:^Brett Flannigan www.fenrisoft.com^^^Tutorial de Mount & Blade escrito por:^Edward Spoerl^^^Vídeos de Gameplay:^Jemes Muia^^^Sistema de Captura de Movimiento:^NaturalPoint-Optitrack Arena^^^Animaciones de los Caballos Realizadas por:^Richard Widgery & Kinetic Impulse^^^Física de los cuerpos:^Newton Game Dynamics^^^Música y Sonido:^FMOD Sound System by Firelight Technologies^^^Protección antipiratería:^Themida by Oreans Technologies^^^Texturas Skybox:^Jay Weston www.hyperfocaldesign.com^^^Material de Arte Externo Utilizado:^Texturemonk^Mayang Textures^cgtextures.com^3d.sk^^Editor No Oficial de Mount&Blade:^Josh Dahlby^^^Many thanks to Marco Tarini for the Mountain shader idea!^^^Agradecimientos a:^Ibrahim Dogan^Nova Language Works^Selim Kurtulus and UPS Turkey^^^Taleworlds.com Administradores y Moderadores del Foro:^Janus^Archonsod^Narcissus^Nairagorn^Lost Lamb^Deus Ex^Merentha^Volkier^Okin^Instag0^Deniz^ego^Guspav^Hallequin^Invictus^okiN^Raz^rejenorst^Skyrage^ThVaz^^^Traducción al español^^Traductores:^Anabel 'Rhaenys' Diaz^Analia 'Immortality' Dobarro^Anoik^^Asesor sobre Temas Medievales:^Enric 'Palafoxx' Clave^^Probador de Idiomas:^Theo de Moree^^^Mount&Blade Sugerencias y Feedback:^13 Chain Bloody Spider^Aenarion^AgentSword^Ahadhran^Albino^Allegro^allthesedamnnamesare^Amman de Stazia^Ancientwanker^Anrea 'Skree' Giongiani^Aqtai^Art Falmingaid^bryce777^Bugman^Buxton^Calandale^Cartread^Chel^Chilly5^Cirdan^Cleaning agent^Cymro^DaBlade^DaLagga^Damien^danover^Dearahn^Deathblow^Destichado^Dryvus^dunnno^D'Sparil^ealabor^Ealdormann Hussey^EasyCo506^El Duke^Elias Maluco^Eogan^ex ottoyuhr^Fisheye^Fossi^fujiwara^Fuzzpilz^GandalfTheGrey^Gerif^Grocat^Guspav^Halden The Borch shooter^Hallequin^Handel^Hardcode^Haupper^Hellequin^Highelf^Highlander^Ibrahim Turgut^Iesu^Ilex^Ingolifs^Invictus^Itchrelief^Jlgx50^JHermes^Jik^john259^JonathanStrange^jpgray^kamov23^Kayback^Khalid Ibn Walid^KON Air^Lady Tanith^Larry Knight^LavaLampMaster^Leprechaun^Lhorkan^Llew2^Maelstorm^Manitas^Maw^MAXHARDMAN^Merentha^Merlkir^Michael Elijah 'ironpants' Bell-Rao^mihoshi^Mirathei^mkeller^Momaw^Morgoth2005^MrCrotch^mtarini^n00854180t^Naridill^Nicholas AltamanokiN^oksir^Oldtimer^Ollieh^oRGy^Oubliette^Patrick 'nox' Gallaty^Pavlov^Rando^Raz^rejenorst^Rjii^Ron Losey^Rorthic^RR raptor^Scion^Seff^shenzay^Shadowmoses^shikamaru 1993^Silver^silverkatana^Sir Prince^Sirgigor^Skyrage^Smoson^sneakey pete^Stefano^Stella^Stonewall382^Talak^Tankai^TG^thelast^The Phoenix^The Pope^The Yogi^Thingy Master^Thormac^Thus Spake Nosferatu^ThVaz^Toygar Birinci^Tuckles^Tul^Ursca^Vaerraent^Vilhjalmr^Volkier^vuk^Wanderer^WhoCares^Winter^Worbah^Yoshiboy^...and many many other wonderful Mount&Blade players!^^(This is only a small sample of all the players who have contributed to the game by providing suggestions and feedback.^This list has been compiled by sampling only a few threads in the Taleworlds Forums.^Unfortunately compiling an exhaustive list is almost impossible.^We apologize sincerely if you contributed your suggestions and feedback but were not listed here, and please know that we are grateful to you all the same...)
-str_credits_10|Paradox Interactive^^President and CEO:^Theodore Bergqvist^^Executive Vice President:^Fredrik Wester^^Chief Financial Officer:^Lena Eriksson^^Finance & Accounting:^Annlouise Larsson^^VP Sales & Marketing US:^Reena M. Miranda^^VP Sales & Marketing EU:^Martin Sirc^^Distribution Manager Nordic:^Erik Helmfridsson^^Director of PR & Marketing:^Susana Meza^^PR & Marketing:^Sofia Forsgren^^Product Manager:^Boel Bermann{***}
-str_credits_11|Logotipo:^Jason Brown^^Cover Art:^Piotr Fox Wysocki^^Layout:^Christian Sabe^Melina Grundel^^Poster:^Piotr Fox Wysocki^^Map & Concept Art:^Ganbat Badamkhand^^Manual Editing:^Digital Wordsmithing: Ryan Newman, Nick Stewart^^Web:^Martin Ericsson^^Marketing Assets:^2Coats^^Localization:^S&H Entertainment Localization^^GamersGate:^Ulf Hedblom^Andreas Pousette^Martin Ericson^Christoffer Lindberg{***}
-str_credits_12|Agradecimientos a todos nuestros socios a nivel mundial, en especial a:^Koch Media (Germany & UK)^Blue Label (Italy & France)^Friendware (Spain)^New Era Interactive Media Co. Ltd. (Asia)^Snowball (Russia)^Pinnacle (UK)^Porto Editora (Portugal)^Hell-Tech (Greece)^CD Projekt (Poland, Czech Republic, Slovakia & Hungary)^Paradox Scandinavian Distribution (Scandinavia){***}
 str_faction_strength_crushed|hundida
 str_faction_strength_spent_and_wavering|vacilante
 str_faction_strength_weakened|debilitada
@@ -1557,7 +1255,7 @@ str_gondor_rumor_11|¿Dol Guldur? Nunca he oído hablar de ello.
 str_gondor_rumor_12|¿Moria? Los enanos excavan allí, ¿verdad?
 str_gondor_rumor_13|No le digáis a nadie que he dicho esto, pero creo que el Príncipe Imrahil debería de ser Rey. Lord Denethor es un hombre íntegro, pero Gondor se ha debilitado mucho durante su regencia. Y no sólo desde que su hijo mayor nos dejó.
 str_gondor_rumor_14|La gente dice que los Nueve salieron de Minas Morgul de nuevo. Ojalá tuviéramos más valientes capitanes como Boromir para guiar a nuestros hombres en la batalla contra enemigos tan antiguos como esos.
-str_gondor_rumor_15|Los Sureños nos han echado de Harondor. Han estado realizando muchas incursiones contra nosotros durante bastante tiempo. Desearía poder pasear de nuevo por los verdes campos de Lebennin de nuevo. Pero se nos dice "No", nuestros soldados deben proteger el centro del reino.
+str_gondor_rumor_15|Los Sureños nos han echado de Harondor. Han estado realizando muchas incursiones contra nosotros durante bastante tiempo. Desearía poder pasear de nuevo por los verdes campos de Lebennin de nuevo. Pero se nos dice "_QQ_"No"_QQ_", nuestros soldados deben proteger el centro del reino.
 str_gondor_rumor_16|El primo de mi amigo es un arquero al servicio de Hirluin el Hermoso. Tienen de lejos, los uniformes más bonitos en mi opinión.
 str_gondor_rumor_17|Hay una extraña roca negra cerca de Erech. Una vez fui a verla con mi padre. La gente dice que la roca oculta la entrada a una sala donde duerme el último hijo de los reyes del mar. Yo pienso que sólo es una roca.
 str_gondor_rumor_18|Nosotros, la gente de Gondor, sólo decimos la verdad. Rara vez alardeamos de algo, y luego luchamos o morimos en el intento.
@@ -1634,13 +1332,13 @@ str_rhun_rumor_12|Los orcos son criaturas asquerosas sin coraje ni habilidad. No
 str_rhun_rumor_13|¿Qué es lo mejor en la vida? Aplastar a tus enemigos, ver sus cadáveres pasar por delante de ti, y oir los lamentos de sus mujeres.
 str_dunland_rumor_begin|¡No descansaremos hasta que no nos hayamos vengado y esos malditos no estén de rodillas!
 str_dunland_rumor_2|¡Esos bastardos Rohirrim son cariñosos con sus caballos por la noche! Ja ja ja!
-str_dunland_rumor_3|¡Esos malditos "Pelo de Paja" se atragantarán con nuestras tierras! ¡Y con su sangre! ¡Ja!
-str_dunland_rumor_4|¡Muerte a los Forgoil! ¡Muerte a los "Pelo de Paja"! ¡Muerte a los ladrones del Norte!
+str_dunland_rumor_3|¡Esos malditos "_QQ_"Pelo de Paja"_QQ_" se atragantarán con nuestras tierras! ¡Y con su sangre! ¡Ja!
+str_dunland_rumor_4|¡Muerte a los Forgoil! ¡Muerte a los "_QQ_"Pelo de Paja"_QQ_"! ¡Muerte a los ladrones del Norte!
 str_dunland_rumor_5|Ahora lo llaman Rohan, pero ¡es nuestra tierra ancestral! Vengaremos la muerte de nuestros antepasados y expulsaremos a esos sucios ladrones de tierras.
 str_dunland_rumor_6|¡No dejes que los Forgoil te cojan, o te torturarán y te quemarán vivo!
 str_dunland_rumor_7|¡Tenemos la sed de sangre de un lobo y la fuerza de un jabalí!
 str_dunland_rumor_8|Los Forgoil piensan que somos salvajes y estúpidos. Veremos lo que piensan cuando sus jinetes se enfrenten a nuestros piqueros.
-str_dunland_rumor_9|Los cuervos de Isengard se comerán los ojos de los "Pelo de Paja", los lobos de Dunland les morderán sus gargantas.
+str_dunland_rumor_9|Los cuervos de Isengard se comerán los ojos de los "_QQ_"Pelo de Paja"_QQ_", los lobos de Dunland les morderán sus gargantas.
 str_dunland_rumor_10|Una vez capturé y maté un lobo con mis manos desnudas. ¡Le romperé el cuello a un Hombre-caballo como si fuera la rama de un árbol! ¡Grrr!
 str_dunland_rumor_11|Nuestro jefe encontró una vieja espada de bronce en un túmulo. La dobló y la tiró a un pantano. Los espíritus de las colinas estarán de nuestra parte seguro. Es un antiguo ritual.
 str_dunland_rumor_12|Mis antepasados lucharon con Freca y más tarde con Wulf contra los malditos Forgoil. Aún recordamos su coraje.
@@ -1657,6 +1355,7 @@ str_beorn_rumor_10|¡Los hombres de Rohan son parientes nuestros, los osos compa
 str_beorn_rumor_11|¿Convertirnos en osos? Por supuesto que no podemos hacerlo. ¿Quién os dijo eso? ¡Ja ja ja!
 str_beorn_rumor_12|Beorn fue un gran hombre. No, un hombre no, ¡un gigante!
 str_beorn_rumor_13|*RUGE* ¿Tienes algo de miel?
+str_beorn_rumor_14|¡No deambules sólo por las montañas! Osos y lobos se mantienen alejados de grandes grupos de hombres. Pero el hambre, o, como algunos dicen, los espíritus sombríos, les dirigen suficientemente cerca como para atacarte.
 str_lorien_rumor_begin|¡Oh Lothlórien! El Invierno se acerca, el día de las hojas desnudas y secas; Las hojas caen al agua, la corriente las aleja lentamente.
 str_lorien_rumor_2|¡No os atreváis a hablar mal de Lady Galadriel! No hay en ella ni en esta tierra ninguna traza de maldad, a no ser que un hombre lo traiga en él mismo. ¡En ese caso que se prepare!
 str_lorien_rumor_3|El mundo está lleno de grandes peligros, y en él hay muchos lugares oscuros; pero aún hay muchos lugares bellos, y aunque ahora en muchas tierras el amor se mezcla con el dolor, crece incluso más fuerte.
@@ -1683,6 +1382,7 @@ str_woodelf_rumor_5|¡Shhh, no dhínen! Puede haber orcos acechando. ¡Debemos e
 str_woodelf_rumor_6|*te mira fijamente, obviamente molesto por tu presencia*
 str_woodelf_rumor_7|¿Oduleg hi am man theled? Necesitamos saber que venís a hacer aquí. El hechicero tiene espías por todas partes.
 str_woodelf_rumor_8|¡Los Edain del Valle hacen complejos juguetes hoy en día! Han aprendido mucho de los Naugrim.
+str_woodelf_rumor_9|La sombra de Dol Guldur se extiende por la tierra. Criaturas oscuras han sido vistas en los bosques, nuestras avanzadas han sido atacadas, nuestros cazadores desaparecidos para no volverse a ver. ¡Nuestras patrullas ahora son de un mínimo de 35 soldados, hasta ahí han llegado nuestros temores!
 str_dale_rumor_begin|Primero apareció el dragón, y ahora esto...
 str_dale_rumor_2|¡Como si no tuviéramos suficiente con los orcos procedentes del norte, ahora nos atacan las hordas provenientes del este!
 str_dale_rumor_3|Desde que acabamos con el dragón, hemos aprendido a buscar el punto débil del enemigo.
@@ -1705,7 +1405,7 @@ str_harad_rumor_9|Cuento con que obtengamos un buen botín cuando conquistemos e
 str_harad_rumor_10|Mantente alejado de los Mumakil. Son bestias malhumoradas y te aplastarán si te descuidas.
 str_harad_rumor_11|En Harad tenemos desiertos y junglas, montañas y mar. Nuestra gente es tan diversa como nuestras tierras y tan numerosas como los granos de arena.
 str_harad_rumor_12|Muchos caballeros de Harondor prefieren sables en vez de espadas comunes. Son bastante buenos para atravesar campesinos que están huyendo, pero necesitas una buena lanza o una espada bien afilada para atravesar una armadura robusta.
-str_harad_rumor_13|Mi hermano de sangre se unió a los Karka - ahora es un explorador. Los Jinetes del "Colmillo" tienen una vida llena de peligros, pero es una gran experiencia para los jóvenes impetuosos.
+str_harad_rumor_13|Mi hermano de sangre se unió a los Karka - ahora es un explorador. Los Jinetes del "_QQ_"Colmillo"_QQ_" tienen una vida llena de peligros, pero es una gran experiencia para los jóvenes impetuosos.
 str_harad_rumor_14|¡Jamás tengas un enfrentamiento contra la hermandad del León! Su reputación es bien conocida.
 str_harad_rumor_15|Ojalá tuviéramos más armas hechas de hierro negro. Muchos todavía tienen que arreglarse con armas de bronce, algunos incluso con palos de madera y jabalinas de cristal negro, y teniendo que marchar a la batalla desnudos.
 str_gunda_rumor_begin|¡Arrebatadle las tierras cálidas a los hombres!
