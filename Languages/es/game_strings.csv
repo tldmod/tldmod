@@ -1,30 +1,30 @@
 str_yes|Sí.
 str_no|No.
-str_noone|Nadie
+str_noone|nadie
 str_s50_and_s51|{s50} y {s51}
 str_s5_s_party| Grupo de {s5}
-str_s5_s_host| Anfitrión de {s5}
-str_given_by_s1_at_s2|Dado por {s1} a {s2}
+str_s5_s_host| Hueste de {s5}
+str_given_by_s1_at_s2|Dado por {s1} en {s2}
 str_given_by_s1_in_wilderness|Dado por {s1} en el campo de batalla
 str_s7_raiders|{s7} Asaltantes
-str_bandits_eliminated_by_another|Los problemáticos bandidos han eliminado otro grupo.
+str_bandits_eliminated_by_another|Los  bandidos problemáticos han sido eliminados por otro grupo.
 str_msg_battle_won|¡Victoria! Pulsa tabulador para salir.
-str_tutorial_map1|Este es el mapa de la Tierra Media. Haz clic en el mapa para mover a tu grupo, entrar en una ciudad o seguir a otro grupo. El juego se pondrá en pausa si tu grupo no se está moviendo, si está descansando o si está esperando. Para esperar solo tienes que pulsar la barra espaciadora.
+str_tutorial_map1|Este es el mapa de la Tierra Media. Haz clic izquierdo en el mapa para mover a tu grupo, entrar en una ciudad o seguir a otro grupo. El juego se pondrá en pausa cuando tu grupo no se esté moviendo, descansando o esperando. Para esperar solo tienes que mantener pulsada la barra espaciadora.
 str_accept|Aceptar
 str_charge|Carga
 str_color|Color
 str_flip_horizontal|Girar en horizontal
 str_flip_vertical|Girar en vertical
 str_hold_fire|Alto el fuego
-str_blunt_hold_fire|Alto el fuego                
+str_blunt_hold_fire|Armas contundentes / Alto el fuego                
 str_tutorial_ammo_refilled|Munición recargada.
-str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Con su grito de batalla, se lanza montado en su caballo, liderando a sus leales hombres a una feroz batalla.
-str_custom_battle_2|Celeborn de Lothlórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de retaguardia le avisan de que una fuerza de malvados hombres cara-ceniza se están acercando. ¡Son los terribles Númenóreanos  Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben de haber sido atraídos por la *Oscuridad*.      
-str_custom_battle_3|Lord Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras las fuerzas de asedio se preparan para un último ataque a los muros, debe defenderlos con valentía y su afilado acero.
-str_custom_battle_4|Cuando los exploradores informaron a Lord Beranhelm de que la banda de guerreros Rhun se estaba acercando, decidió construir rápidamente defensas en su campamento e intentar resistir a pesar de la desigualdad en número frente al enemigo.
-str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de saqueo. Si consigue hacerse con esta fortaleza enana hoy, sus jefes en Barad-Dûr estarán contentos.
-str_custom_battle_6|Ugluk y su escuadrón de orcos intentaron evadir con todas sus fuerzas a las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios pieles-pálidas para vengarse.
-str_custom_battle_7|¡Un grupo de corsarios ha montado un campamento en las orillas de Gondor! Ataquemos antes de que se refuercen y devolvámosles al mar donde pertenecen.
+str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su cabalo  y lidera a sus leales hombres a una feroz batalla.
+str_custom_battle_2|Celeborn de Lórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de vanguardia le avisan de que una fuerza de hombres malvados de rostro ceniciento se están acercando. ¡Son los terribles Númenóreanos Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben ser enviados de vuelta a la oscuridad.      
+str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras los sitiadores se preparan para su asalto final a los muros, debe defenderlos con su coraje y su brillante acero.
+str_custom_battle_4|Cuando los exploradores informn al señor Beranhelm de que una banda de guerreros de Rhun se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
+str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de saqueo. Si consigue hacerse con esta fortaleza enana hoy, sus amos en Barad-Dûr estarán contentos.
+str_custom_battle_6|Ugluk y su pelotón de orcos hacían todo lo posible para escapar de las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios pieles-pálidas para vengarse.
+str_custom_battle_7|¡Los corsarios han montado un campamento en las costas de Gondor! Ataquemos antes de que obtengan refuerzos y devolvámoslos al mar donde pertenecen.
 str_finished|(Terminado)
 str_delivered_damage|Realizado {reg60} daño.
 str_archery_target_hit|Distancia: {reg61} yardas. Puntuación: {reg60}
@@ -35,23 +35,23 @@ str_cant_use_inventory_disguised|No se puede acceder al inventario mientrás est
 str_cant_use_inventory_tutorial|No se puede acceder al inventario en el campo de entrenamiento.
 str_1_denar|1 Punto de recursos.        
 str_reg1_denars|{reg1} Puntos de recursos.           
-str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Ene)          
-str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Feb)           
-str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Mar)             
-str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1} (Abr)          
-str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (May)            
-str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (Jun)             
-str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (Jul)              
-str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (Ago)            
-str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (Sep)           
-str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (Oct)           
-str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (Nov)            
-str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (Dic)            
-str_calendar_spec_day_1|T.A.{reg2}, Yestarë (Primer día)            
-str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Día de Primavera)       
-str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Mitad de año)          
-str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (Día de la Cosecha)          
-str_calendar_spec_day_5|T.A.{reg2}, Mettarë (Último día)             
+str_january_reg1_reg2|{reg2} T.E., {reg1} Narvinyë (Ene)          
+str_february_reg1_reg2|{reg2} T.E., {reg1} Nénimë (Feb)           
+str_march_reg1_reg2|{reg2} T.E., {reg1} Súlìmë (Mar)             
+str_april_reg1_reg2|{reg2} T.E., {reg1} Víressë (Abr)          
+str_may_reg1_reg2|{reg2} T.E., {reg1} Lótessë (May)            
+str_june_reg1_reg2|{reg2} T.E., {reg1} Náríë (Jun)             
+str_july_reg1_reg2|{reg2} T.E., {reg1} Cermië (Jul)              
+str_august_reg1_reg2|{reg2} T.E., {reg1} Urimë (Ago)            
+str_september_reg1_reg2|{reg2} T.E., {reg1} Yavannië (Sep)           
+str_october_reg1_reg2|{reg2} T.E., {reg1} Narquelië (Oct)           
+str_november_reg1_reg2|{reg2} T.E., {reg1} Hísimë (Nov)            
+str_december_reg1_reg2|{reg2} T.E., {reg1} Ringarë (Dic)            
+str_calendar_spec_day_1|{reg2} T.E., Yestarë (Primer Día)            
+str_calendar_spec_day_2|{reg2} T.E., Tuilérë (Día de Primavera)       
+str_calendar_spec_day_3|{reg2} T.E., Loëndë (Día de Año Medio)          
+str_calendar_spec_day_4|{reg2} T.E., Yáviérë (Día de la Cosecha)          
+str_calendar_spec_day_5|{reg2} T.E., Mettarë (Último Día)             
 str_town_nighttime|Es noche cerrada.
 str_door_locked|La puerta está cerrada.
 str_castle_is_abondened|El castillo parece abandonado.
@@ -64,25 +64,25 @@ str_give_up_fight|¿Rendirse?
 str_do_you_wish_to_leave_tutorial|¿Deseas salir del tutorial?
 str_do_you_wish_to_surrender|¿Deseas rendirte?
 str_can_not_retreat|Imposible retirarse, ¡hay enemigos cerca!
-str_s1_joined_battle_enemy|{s1} se ha unido al bando enemigo.
+str_s1_joined_battle_enemy|{s1} se ha unido a la batalla en el bando enemigo.
 str_s1_joined_battle_friend|{s1} se ha unido a la batalla a tu lado.
 str_entrance_to_town_forbidden|Los guardas de la ciudad están buscando intrusos y parece que no podrás pasar las puertas sin que te vean.
 str_sneaking_to_town_impossible|Los guardias de la ciudad han sido alertados. No podrás pasar inadvertido por la puerta sin importar el disfraz que lleves puesto.
 str_battle_won|¡Has ganado la batalla!
 str_battle_lost|¡Has perdido la batalla!
 str_player_down|¡Has sido derribado, pero tus tropas seguirán luchando!
-str_attack_walls_success|Después de una sangrienta batalla, tus valientes soldados consiguen hacerse con el control de las murallas enemigas.
-str_attack_walls_failure|Tus soldados caen como moscas, según asaltan las murallas, y los pocos que quedan vivos pronto corren por sus vidas. Nunca los volverás a ver.
-str_attack_walls_continue|Una sangrienta batalla comienza y ambos bandos luchan con igual valor. A pesar de los esfuerzos de tus tropas, el castillo permanece en manos enemigas.
-str_order_attack_success|Tus hombres luchan con valentía, consiguiendo derrotar al enemigo.          C
-str_order_attack_failure|Mientras observas la batalla, ves con tristeza cómo el enemigo destroza a tus soldados y liquida con facilidad a los supervivientes.
-str_order_attack_continue|A pesar de la larga batalla, tus tropas han sido incapaces de conseguir una victoria decisiva.
-str_join_order_attack_success|Tus hombres luchan junto con tus aliados, compartiendo la gloria según van derrotando a los enemigos.
-str_join_order_attack_failure|Mientras observas la batalla, ves con tristeza cómo el enemigo destroza a tus soldados y liquida con facilidad a los supervivientes.
-str_join_order_attack_continue|A pesar de la larga batalla, tus tropas han sido incapaces de conseguir una victoria decisiva.
-str_siege_defender_order_attack_success|Los hombres de la guarnición defienden sus murallas con destreza y coraje, haciendo fracasar el asalto enemigo y convirtiendo la derrota en una retirada y aniquilación del enemigo.
-str_siege_defender_order_attack_failure|El asalto pronto se torna en matanza. Los valientes esfuerzos de los defensores resultan ser vanos; la guarnición no puede defender los muros y el enemigo pasa hasta al último defensor por la espada.
-str_siege_defender_order_attack_continue|Los sangrientos esfuerzos de los invasores para conquistar las murallas no tienen éxito, pero quedan demasiados enemigos como para que los defensores puedan cantar victoria. El asedio continúa.       
+str_attack_walls_success|Después de una sangrienta batalla, tus valientes soldados consiguen arrebatarel control de las murallas al enemigo.
+str_attack_walls_failure|Tus soldados caen como moscas asaltando las murallas, y los pocos que quedan vivos pronto huyen en desbandada. Nunca los volverás a ver.
+str_attack_walls_continue|Una sangrienta batalla tiene lugar y ambos bandos luchan con igual valor. A pesar de los esfuerzos de tus tropas, el castillo permanece en manos enemigas.
+str_order_attack_success|Tus hombres luchan con valentía y derrotan al enemigo. 
+str_order_attack_failure|Observas la batalla con desesperación, mienras el enemigo destroza a tus soldados y hace huir con facilidad a los pocos supervivientes.
+str_order_attack_continue|A pesar de la larga escaramuza, tus tropas han sido incapaces de conseguir una victoria decisiva.
+str_join_order_attack_success|Tus hombres luchan codo con codo con tus aliados, compartiendo la gloria según van derrotando a los enemigos.
+str_join_order_attack_failure|Observas la batalla con desesperación, mienras el enemigo destroza a tus soldados y hace huir con facilidad a los pocos supervivientes.
+str_join_order_attack_continue|A pesar de la larga escaramuza, ni tus tropas ni las de tus aliados han sido capaces de conseguir una victoria decisiva.
+str_siege_defender_order_attack_success|Los hombres de la guarnición defienden sus murallas con destreza y coraje, haciendo fracasar el asalto enemigo y convirtiendo la derrota en una desbandada del enemigo.
+str_siege_defender_order_attack_failure|El asalto pronto se torna en matanza. Los valientes esfuerzos de los defensores resultan ser vanos; la guarnición desbordada no puede defender los muros y el enemigo pasa hasta al último defensor por la espada.
+str_siege_defender_order_attack_continue|Los sucesivos y sangrientos asaltos contra las murallas no logran ganar terreno, pero quedan demasiados enemigos como para que los defensores puedan cantar victoria. El asedio continúa.       
 str_hero_taken_prisoner|{s1} de {s3} ha sido tomado prisionero por {s2}.
 str_hero_freed|{s1} de {s3} ha sido liberado por {s2}.    
 str_center_captured|¡{s2} ha tomado {s1} de {s3}!
@@ -92,15 +92,15 @@ str_faction_relation_increased|Tu relación con {s1} ha aumentado de {reg1} a {r
 str_faction_relation_detoriated|Tu relación con {s1} ha empeorado de {reg1} a {reg2}.
 str_party_gained_morale|Tu grupo gana {reg1} puntos de moral.        
 str_party_lost_morale|Tu grupo pierde {reg1} puntos de moral.             
-str_qst_follow_spy_noticed_you|¡El espía te ha visto! ¡Va a por ti!     
-str_father|Padre
-str_husband|Marido
-str_wife|Esposa
-str_daughter|Hija
-str_mother|Madre
-str_son|Hijo
-str_brother|Hermano
-str_sister|Hermana
+str_qst_follow_spy_noticed_you|¡El espía te ha visto! ¡Se escapa!     
+str_father|padre
+str_husband|marido
+str_wife|esposa
+str_daughter|hija
+str_mother|madre
+str_son|hijo
+str_brother|hermano
+str_sister|hermana
 str_he|Él
 str_she|Ella
 str_s3s_s2|{s3} de {s2}          
@@ -110,21 +110,21 @@ str_s5_is_a_nobleman_of_s6|{s5} es un noble de {s6}.
 str_relation_mnus_100|Vengativo
 str_relation_mnus_90|Vengativo
 str_relation_mnus_80|Vengativo
-str_relation_mnus_70|Odioso
-str_relation_mnus_60|Odioso
+str_relation_mnus_70|Lleno de odio
+str_relation_mnus_60|Lleno de odio
 str_relation_mnus_50|Hostil
 str_relation_mnus_40|Enfadado           
-str_relation_mnus_30|Amargado
+str_relation_mnus_30|Resentido
 str_relation_mnus_20|Gruñón
-str_relation_mnus_10|Sospechoso
+str_relation_mnus_10|Suspicaz
 str_relation_plus_0|Indiferente
 str_relation_plus_10|Cooperativo
 str_relation_plus_20|Acogedor
-str_relation_plus_30|Encantador
-str_relation_plus_40|Amable
+str_relation_plus_30|Favorable
+str_relation_plus_40|Comprensivo
 str_relation_plus_50|Amistoso
-str_relation_plus_60|Gentil
-str_relation_plus_70|Cariñoso
+str_relation_plus_60|Benévolo
+str_relation_plus_70|Afectuoso
 str_relation_plus_80|Leal
 str_relation_plus_90|Devoto
 str_relation_mnus_100_ns|{s60} es vengativo contra ti.          
@@ -132,18 +132,18 @@ str_relation_mnus_90_ns|{s60} es vengativo contra ti.
 str_relation_mnus_80_ns|{s60} es vengativo contra ti.
 str_relation_mnus_70_ns|{s60} te odia.
 str_relation_mnus_60_ns|{s60} te odia.
-str_relation_mnus_50_ns|{s60} es hostil contigo.
+str_relation_mnus_50_ns|{s60} es hostil hacia ti.
 str_relation_mnus_40_ns|{s60} está enfadado contigo.
 str_relation_mnus_30_ns|{s60} te guarda rencor.
 str_relation_mnus_20_ns|{s60} está gruñón contigo.
 str_relation_mnus_10_ns|{s60} no confía en ti.
 str_relation_plus_0_ns|{s60} es indiferente hacia ti.
-str_relation_plus_10_ns|{s60} es cortés contigo.
+str_relation_plus_10_ns|{s60} es cooperativo contigo.
 str_relation_plus_20_ns|{s60} es acogedor contigo.      
-str_relation_plus_30_ns|{s60} es encantador contigo.
-str_relation_plus_40_ns|{s60} es amable contigo.
+str_relation_plus_30_ns|{s60} es favorable hacia ti.
+str_relation_plus_40_ns|{s60} es comprensivo contigo.
 str_relation_plus_50_ns|{s60} te es amistoso.
-str_relation_plus_60_ns|{s60} te es gentil.
+str_relation_plus_60_ns|{s60} es benévolo hacia ti.
 str_relation_plus_70_ns|{s60} te tiene un gran aprecio.
 str_relation_plus_80_ns|{s60} te es leal.
 str_relation_plus_90_ns|{s60} te es devoto.
@@ -152,11 +152,11 @@ str_center_relation_mnus_100|El pueblo de odia con todas sus fuerzas
 str_center_relation_mnus_90|El pueblo te odia intensamente
 str_center_relation_mnus_80|El pueblo te odia de verdad
 str_center_relation_mnus_70|El pueblo te odia
-str_center_relation_mnus_60|El pueblo te odia
+str_center_relation_mnus_60|El pueblo siente odio hacia ti
 str_center_relation_mnus_50|El pueblo es extremadamente hostil hacia ti
 str_center_relation_mnus_40|El pueblo es bastante hostil hacia ti
 str_center_relation_mnus_30|El pueblo es hostil hacia ti
-str_center_relation_mnus_20|El pueblo es hostil hacia ti
+str_center_relation_mnus_20|El pueblo está en tu contra
 str_center_relation_mnus_10|El pueblo se opone a ti
 str_center_relation_plus_0|Al pueblo le eres indiferente
 str_center_relation_plus_10|El pueblo te acepta
@@ -167,24 +167,24 @@ str_center_relation_plus_50|El pueblo te apoya mucho
 str_center_relation_plus_60|El pueblo te es leal
 str_center_relation_plus_70|El pueblo te es muy leal
 str_center_relation_plus_80|El pueblo te es devoto
-str_center_relation_plus_90|El pueblo te es intensamente devoto
+str_center_relation_plus_90|El pueblo te es ferozmente devoto
 str_town_prosperity_0|La pobreza de la ciudad de {s60} es insostenible.
-str_town_prosperity_10|La mugrienta ciudad de {s60} tiene unas condiciones de vida terribles, pero está habitada.
+str_town_prosperity_10|La mugrienta ciudad de {s60} no está en absoluto desierta.
 str_town_prosperity_20|La ciudad de {s60} es un lugar penoso y desolado.
-str_town_prosperity_30|La ciudad de {s60} parece pobre y olvidada.
+str_town_prosperity_30|La ciudad de {s60} parece pobre y descuidada.
 str_town_prosperity_40|La ciudad de {s60} parece estár luchando por sobrevivir.
-str_town_prosperity_50|La ciudad de {s60} es normal.
+str_town_prosperity_50|La ciudad de {s60} parece normal y corriente.
 str_town_prosperity_60|La ciudad de {s60} parece próspera.
-str_town_prosperity_70|La próspera ciudad de {s60} está llena de movimiento.
-str_town_prosperity_80|La ciudad de {s60} parece rica y bien ciudada.
+str_town_prosperity_70|La próspera ciudad de {s60} está llena de actividad.
+str_town_prosperity_80|La ciudad de {s60} parece rica y bien cuidada.
 str_town_prosperity_90|La ciudad de {s60} es adinerada y está llena de gente de bien.
 str_town_prosperity_100|La brillante ciudad de {s60} alardea abiertamente de su riqueza.
 str_village_prosperity_0|La pobreza de la aldea de {s60} es insostenible.
 str_village_prosperity_10|La aldea de {s60} parece pobre y miserable.
 str_village_prosperity_20|La aldea de {s60} parece muy pobre y desolada.
-str_village_prosperity_30|La aldea de {s60} parece pobre y olvidada.
+str_village_prosperity_30|La aldea de {s60} parece pobre y descuidada.
 str_village_prosperity_40|La aldea de {s60} parece bastante pobre pero lucha por sobrevivir.
-str_village_prosperity_50|La aldea de {s60} parece normal.
+str_village_prosperity_50|La aldea de {s60} parece normal y corriente.
 str_village_prosperity_60|La aldea de {s60} parece próspera.
 str_village_prosperity_70|La aldea de {s60} parece muy próspera.
 str_village_prosperity_80|La aldea de {s60} parece rica y bien cuidada.
@@ -193,17 +193,17 @@ str_village_prosperity_100|La aldea de {s60}, rodeada por vastos y fértiles cam
 str_war_report_minus_4|estamos a punto de perder la guerra
 str_war_report_minus_3|la situación tiene mala pinta
 str_war_report_minus_2|las cosas no nos van muy bien
-str_war_report_minus_1|todavía podemos ganar la guerra si nos esforzamos
+str_war_report_minus_1|todavía podemos ganar la guerra si nos reagrupamos
 str_war_report_0|estamos bastante igualados con el enemigo
 str_war_report_plus_1|tenemos una buena oportunidad de ganar la guerra
 str_war_report_plus_2|las cosas van bastante bien
-str_war_report_plus_3|no deberíamos de tener ninguna dificultad derrotándoles
+str_war_report_plus_3|no deberíamos de tener ninguna dificultad para derrotarlos
 str_war_report_plus_4|estamos a punto de ganar la guerra
-str_persuasion_summary_very_bad|Utilizas tus mejores herramientas de persuasión {s50}, pero ninguno de tus argumentos parece salir bien. Cada vez que empiezas a ir por el buen camino, de repente dices algo que te desvía totalmente del objetivo. Para cuando has acabado de hablar no has conseguido ni un solo argumento a tu favor, y te das cuenta de que todo lo que has hecho ha resultado ser en tu contra. Como era de esperar, {s50} no parece impresionado.
-str_persuasion_summary_bad|Utilizas tus herramientas de persuasión {s50}, pero {reg51?she:he} te supera desde el comienzo. Tus argumentos parecen vacíos incluso a tus propios oídos. {s50}, igualmente, no se ha formado una buena opinión de lo que has dicho.
-str_persuasion_summary_average|{s50} resulta ser un auténtico orador con una mente brillante y tu no consigues esbozar argumentos completamente convincentes. {reg51?she:he} no puede contrarrestar tu punto de vista mediante razones. Al final, ninguno consigue ganar terreno en esta discusión.
+str_persuasion_summary_very_bad|Haces todo lo posible para persuadir a {s50}, pero ninguno de tus argumentos parece salir bien. Cada vez que empiezas a ir por el buen camino, de repente dices algo que te desvía totalmente del objetivo. Para cuando has acabado de hablar no has conseguido ni un solo argumento a tu favor, y te das cuenta de que todo lo que has hecho ha resultado ser en tu contra. Como era de esperar, {s50} no parece impresionado.
+str_persuasion_summary_bad|Intentas persuadir a {s50}, pero {reg51?she:he} te supera desde el comienzo. Tus argumentos parecen vacíos incluso a tus propios oídos. {s50}, tampoco se ha formado una buena opinión de lo que has dicho.
+str_persuasion_summary_average|{s50} resulta ser un hábil orador con una mente brillante y tu no consigues esbozar aningún argumento concreto que {reg51?she:he} no pueda contrarrestar con su razonamiento. Al final, ninguno consigue ganar terreno en esta discusión.
 str_persuasion_summary_good|Con pensamiento rápido y una buena argumentación consigues exponer bien tu caso, forzando a {s50} a darte la razón. No obstante, {reg51?she:he} todavía tiene dudas sobre tu petición.
-str_persuasion_summary_very_good|Das un inspirado discurso que resuena en los oídos de todos los que te escuchan como si fuera poesía. El mundo parece silenciarse para escucharte mejor. Las inspiradas palabras han conmovido profundamente a {s50}  y {reg51?she:he} parece mucho más dispuesto a ayudarte.
+str_persuasion_summary_very_good|Das un apasionado discurso que resuena en los oídos de todos los que te escuchan como si fuera poesía. El mundo parece silenciarse para escucharte mejor. Las inspiradas palabras han conmovido profundamente a {s50}  y {reg51?she:he} parece mucho más dispuesto a ayudarte.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} de Erech
@@ -213,9 +213,9 @@ str_surname_6|{s50} de Linhir
 str_surname_7|{s50} de Ethring
 str_surname_8|{s50} de Aldburg
 str_surname_9|{s50} de Isengard
-str_surname_10|{s50} del Folde Oeste de Rohan
+str_surname_10|{s50} del Folde Oeste
 str_surname_11|{s50} de Erebor
-str_surname_12|{s50} del Folde Este de Rohan
+str_surname_12|{s50} del Folde Este
 str_surname_13|{s50} de Morannon
 str_surname_14|{s50} de Cirith Ungol
 str_surname_15|{s50} de Osgiliath
@@ -229,8 +229,8 @@ str_surname_22|{s50} el Flaco
 str_surname_23|{s50} el Nazgûl
 str_surname_24|{s50} el Gorrión
 str_surname_25|{s50} el Maldito
-str_surname_26|{s50} el Cicatrices
-str_surname_27|{s50} el Bello
+str_surname_26|{s50} el Desfigurado
+str_surname_27|{s50} el Hermoso
 str_surname_28|{s50} el Triste
 str_surname_29|{s50} el Rojo
 str_surname_30|{s50} el Negro
@@ -252,16 +252,16 @@ str_number_of_own_troops_wounded_reg1|Número de tropas aliadas heridas: {reg1}
 str_retreat|¡Retirada!
 str_siege_continues|La lucha continúa...
 str_casualty_display|Tus bajas: {s10}^Bajas enemigas: {s11}{s12}
-str_casualty_display_hp|^Has sido herido {reg1} puntos de salud.
+str_casualty_display_hp|^Te han herido con {reg1} puntos de daño.
 str_quest_log_updated|El diario de misiones ha sido actualizado...
-str_banner_selection_text|Has sido otorgado el derecho de llevar una bandera. Tu bandera reflejará tu estatus y te traerá honor. ¿Qué bandera deseas elegir?
-str_retirement_text_1|Es demasiado tarde para darte cuenta de que tu dinero no durará eternamente. No te cuesta mucho acabar con lo poco que habías ahorrado y tus intentos desesperados por intentar volver a las aventuras fallan una y otra vez. Acabas siendo un mendigo en {s9}, viviendo de las limosnas y de la caridad de los demás.
-str_retirement_text_2|Es demasiado tarde para darte cuenta de que tu dinero no durará eternamente. No te cuesta mucho acabar con lo poco que habías ahorrado. Cuando hasta tu último denar se ha evaporado te ves forzado a empezar una vida como criminal en las calles de {s9}, usando tus habilidades como ladrón para reunir a duras penas dinero suficiente para sobrevivir junto con mujeres y aldeanos pobres.              aqui me he quedado
-str_retirement_text_3|Es demasiado tarde para darte cuenta de que tu dinero no durará eternamente. No te cuesta mucho acabar con lo poco que habías ahorrado y acabas convirtiéndote en un vagabundo, yendo de taberna en taberna, sacándoles bebidas a los indulgentes patrones y entreteniéndoles con historias de guerra que nadie se cree.
+str_banner_selection_text|Te ha sido otorgado el derecho de llevar un estandarte. Tu estandarte reflejará tu estatus y te traerá honor. ¿Qué estandarte deseas elegir?
+str_retirement_text_1|Demasiado tarde te das cuenta de que tu dinero no durará eternamente. No te lleva mucho acabar con lo poco que habías ahorrado y tus intentos desesperados por intentar volver a las aventuras fallan una y otra vez. Acabas siendo un mendigo en {s9}, viviendo de las limosnas y de la caridad de los demás.
+str_retirement_text_2|Demasiado tarde te das cuenta de que tu dinero no durará eternamente. No te lleva mucho acabar con lo poco que habías ahorrado. Cuando hasta tu último denar se ha evaporado te ves forzado a empezar una vida como criminal en las calles de {s9}, usando tus habilidades como ladrón para ganarte la vida robando calderilla a las mujeres y los ciudadanos pobres.
+str_retirement_text_3|Demasiado tarde te das cuenta de que tu dinero no durará eternamente. No te lleva mucho acabar con lo poco que habías ahorrado y acabas convirtiéndote en un vagabundo arruinado, yendo de taberna en taberna, sacándoles bebidas a los indulgentes patrones a cambio de historias de guerra que nadie se cree.
 str_retirement_text_4|El dinero que has ahorrado no te dura demasiado, pero consigues reunir lo suficiente como para comprar algo de tierra cerca de la aldea de {s7}. Allí te conviertes en un granjero libre, y pronto empiezas a atraer a potenciales {wives/husbands}. Con el tiempo, los aldeanos te tratan como el héroe local. Siempre tienes un puesto de honor en los festines y tus hazañas son contadas y recontadas en todas las tabernas, para que los niños te recuerden por siempre jamás.
-str_retirement_text_5|El dinero que has ahorrado no te dura demasiado pero es suficiente para comprar una pequeña taberna en {s9}. A pesar de que tus primeras relaciones con los lugareños no son muy buenas, pronto te aceptan como uno más. Con el tiempo tu próspera taberna se convierte en sala de festines y en lugar de reunión. La gente viene desde muy lejos para comer o para pasar la noche allí, debido a tu renombre y a las historias épicas que cuentas de tus días de aventuras.
-str_retirement_text_6|Has ahorrado sabiamente durante tu carrera y ahora tu dinero y tu inteligencia te permiten realizar excelentes inversiones que aseguren tu futuro. Trás comprar varias tiendas y almacenes en {s9}, tu astucia te convierte en uno de los más promienentes mercaderes de la ciudad y pronto te conviertes en una persona adinerada conocida tanto por su imperio mercantil como por sus hazañas en la batalla.          C
-str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tu fortín de {s7}, administrando la aldea y los campos, organizando las cortes locales y cumpliendo con tus obligaciones de señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propia sala de banquetes y calabozos, existen pocos deseos de bienes materiales que tu dinero o tus tierras no te permitan conseguir.
+str_retirement_text_5|El dinero que has ahorrado no te dura demasiado pero es suficiente para comprar una pequeña taberna en {s9}. A pesar de que los lugareños desconfían la principio, pronto te aceptan como uno más. Con el tiempo tu próspera taberna se convierte en sala de festines y en lugar de reunión. La gente viene desde muy lejos para comer o para pasar la noche allí, debido a tu renombre y a las historias épicas que cuentas de tus días de aventuras.
+str_retirement_text_6|Has ahorrado sabiamente durante tu carrera y ahora tu dinero y tu inteligencia te permiten realizar excelentes inversiones que aseguren tu futuro. Trás comprar varias tiendas y almacenes en {s9}, tu astucia te convierte en uno de los más promienentes mercaderes de la ciudad y pronto te conviertes en una persona adinerada conocida tanto por su imperio mercantil como por sus hazañas en la batalla.
+str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tu fortín de {s7}, administrando la aldea y los campos, organizando las cortes locales y cumpliendo con tus obligaciones hacia tu señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propio salón y tus posesiones, existen pocos deseos de bienes materiales que tus ahorros o tus rentas no te permitan conseguir.
 str_retirement_text_8|No hay ninguna duda de que te lo has montado bien. Tus enormes propiedades y el oro obtenido en tus aventuras son suficientes para garantizarte una vida llena de riquezas y facilidades para el resto de tus días. Retirándote a tu noble sitio en {s8}, intercambias tu vida de aventuras por la política y pronto te conviertes en alguien con poder en el reino de tu señor. Con tus propios bosques para cazar, una sala de banquetes y cientos de historias de guerra que contar, tienes pocos problemas para sacarle lo máximo a los años futuros.
 str_retirement_text_9|Como recompensa por tu competente y leal servicio, tu señor feudal te otorga un título nobiliario, convirtiéndote así en parte de la nobleza del reino. Pronto completas tu investidura como barón de {s7}, y te conviertes en uno de los consejeros y ayudantes de tu señor feudal. Tu renombre te da un sutil empuje en tu influencia así como también en tu poder político. Pasas el resto de tus días jugando a los juegos de poder, administrando tus grandes feudos y recordando los viejos tiempos de aventura y gloria.
 str_retirement_text_10|A pesar de tus humildes comienzos, tu señor feudal te tiene en alta estima, y el reino se estremece en admiración cuando se te otorga el título nobiliario de {count/countess} de {s9}. Vastos campos y fortunas son tuyos ahora. Pronto te conviertes en el consejero más cercano a tu señor feudal; te conviertes en su igual y te encargas de llevar gran parte de su reino. Acabas sentándote en un trono, en tu propio espléndido palacio como una de las figuras más poderosas de la Tierra Media.
@@ -311,16 +311,16 @@ str_npc11_intro|¡Arrg! No eres de aquí, ¿verdad? Puedo olerlo y si dices que 
 str_npc12_intro|¡Ey! ¿Qué haces merodeando por aquí?
 str_npc13_intro|¡Alto! ¿Qué te trae a la tienda del Caudillo?
 str_npc14_intro|Tienes los andares de un hombre cuyas piernas han visto pocos días en el mar, forastero. 
-str_npc15_intro|¡Bendito sea el Ojo de Sauron, oh guerrero!
+str_npc15_intro|¡Alabado sea el Ojo, oh guerrero!
 str_npc16_intro|Mis ojos no suelen ver a un extraño caminando entre las tiendas de un campamento de las tierras del este. ¿Qué os trae por aquí? Hablad ahora, y sed rápido.
 str_npc17_intro|Hola. ¿Te gustan estos bosques?
-str_npc1_intro_response_1|Salve, maestro rastreador. ¿Cómo les va a los guardabosques del sur?       
-str_npc2_intro_response_1|Mis negocios son los negocios de Gondor, ¿quién eres tu?
+str_npc1_intro_response_1|Salve, maestro rastreador. ¿Cómo les va a los montaraces del sur?
+str_npc2_intro_response_1|Mis asuntos son los asuntos de Gondor, ¿quién eres tu?
 str_npc3_intro_response_1|Buen día a vos también, ¿tenéis algún problema?
 str_npc4_intro_response_1|Saludos, mi señora. ¿Con quién tengo el honor de hablar?
 str_npc5_intro_response_1|¡Salve, señor elfo! Es un gran honor conocerle.
 str_npc6_intro_response_1|¿Así es como los Elfos Silvanos saludan a sus invitados?
-str_npc7_intro_response_1|{playername} a su servicio. ¿Cómo les va a las gentes de Durin?
+str_npc7_intro_response_1|{playername} a su servicio. ¿Cómo le va al pueblo de Durin?
 str_npc8_intro_response_1|Saludos. Me preguntaba si habría voluntarios para unirse a nosotros en nuestros viajes.
 str_npc9_intro_response_1|Retira tus amenazas, Uruk, antes de que lleguemos a las manos. No soy un chivato.
 str_npc10_intro_response_1|¿Quién eres?
@@ -328,7 +328,7 @@ str_npc11_intro_response_1|¿Quién eres?
 str_npc12_intro_response_1|¿Quién eres?
 str_npc13_intro_response_1|¿Quién eres?
 str_npc14_intro_response_1|¿Quién eres?
-str_npc15_intro_response_1|Benditos sea el Ojo de Sauron, Snaga. ¿Cual es tu historia?
+str_npc15_intro_response_1|Alabado sea el Ojo, Snaga. ¿Cual es tu historia?
 str_npc16_intro_response_1|¿Quién eres?
 str_npc17_intro_response_1|El Bosque Negro es un bosque magnífico. ¿Quién eres? ¿Sabes mucho sobre los bosques?
 str_npc1_intro_response_2|No te preocupes, me temo que las cuevas no son un lugar apropiado para una conversación.
@@ -338,7 +338,7 @@ str_npc4_intro_response_2|Disculpe, tengo asuntos urgentes que atender.
 str_npc5_intro_response_2|Disculpa, tengo gente más importante a la que hablar.
 str_npc6_intro_response_2|El sentimiento es mutuo. Adiós.
 str_npc7_intro_response_2|No te preocupes, necesito tomar el aire.
-str_npc8_intro_response_2|No te preocupes, estamos simplemente viendo el paisaje.
+str_npc8_intro_response_2|No te preocupes, estamos simplemente admirando el paisaje.
 str_npc9_intro_response_2|Me pongo en marcha entonces, o mi brazo armado empezará a picarme.
 str_npc10_intro_response_2|[Ignorar e irse]
 str_npc11_intro_response_2|¡No te incumbe a ti, gusano!
@@ -348,86 +348,86 @@ str_npc14_intro_response_2|¡No te incumbe a ti!
 str_npc15_intro_response_2|Hmmf. Guárdate tus zarpitas, Snaga.
 str_npc16_intro_response_2|¡No te incumbe a ti!
 str_npc17_intro_response_2|Sí, los bosques son maravillosos, pero tengo que seguir mi camino.
-str_npc1_backstory_a|Habéis venido en tiempos difíciles, amigo. Ithilien está rebosante de exploradores e invasores enemigos; hay quienes han visto grandes huestes de orcos. Intentamos evitar que esas nauseabundas criaturas crucen el gran rio y he liderado a un grupo de habilidosos guardabosques a muchas batallas victoriosas. Mi capitán Faramir es atrevido y no me desespero por la sombra que se cierne sobre nosotros.
-str_npc2_backstory_a|Ah, que considerado sois por preguntar por mi. He sido asignado a la guardia de la administración, una tarea importante. Si se me permite decir, no muy ajetreada.
+str_npc1_backstory_a|Habéis venido en tiempos difíciles, amigo. Ithilien está rebosante de exploradores e invasores enemigos; hay quienes han visto grandes huestes de orcos. Intentamos evitar que esas nauseabundas criaturas crucen el gran rio y he liderado a un grupo de habilidosos montaraces a muchas batallas victoriosas. Mi capitán Faramir es atrevido y no me desespero por la sombra que se cierne sobre nosotros.
+str_npc2_backstory_a|Ah, que considerado sois por preguntar por mi. He sido asignado a la guardia de los salones del Senescal, una tarea importante. Si se me permite decir, no muy ajetreada.
 str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por el momento y la tierra tiembla como un tablón mal colocado. Ah, si no hubiese bebido toda esa cerveza anoche... normalmente tengo buena cabeza para beber, debe de haber sido algún bregaje orco.
-str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuales son tus negocios, {playername}. Permíteme explicarte porque.
+str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuáles son tus asuntos, {playername}. Permíteme explicarte por qué.
 str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
 str_npc6_backstory_a|Disculpad mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
-str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
-str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy un mero curandero y herbalista con modestas habilidades.
-str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y su snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de trigo... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
+str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos de Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
+str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy un mero curandero y herbolario con modestas habilidades.
+str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y sus snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de paja... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga de su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
 str_npc10_backstory_a|¡Soy Durgash!
-str_npc11_backstory_a|¡Nar! No un rastreador, eso es. ¡Me echaron! Te digo que han perdido sus cabezas, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que tengo una nariz rota. ¡Gam! Si no encuentran una trucha para mí pronto me volveré a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles flácidas antes de que me metan ahí!
-str_npc12_backstory_a|Estoy al mando de un grupo. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocaron, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
+str_npc11_backstory_a|¡Nar! No un rastreador, eso es. ¡Me echaron! Te digo que han perdido sus cabezas, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que tengo una nariz rota. ¡Gam! Si no encuentran una banda para mí pronto me volveré a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles flácidas antes de que me metan ahí!
+str_npc12_backstory_a|Estoy al mando de un grupo. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocan, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
 str_npc13_backstory_a|¡¿?! Soy un grano de arena de las arenas del sur, traído hacia el norte por el frio y las oscuras alas de la noche. Me llamo Lykyada, un Señor Serpiente de Haradwaith. Señor de la Serpiente Dorada, azote de la Tribu de la Serpiente Negra, ahora aliado del Señor Oscuro.
-str_npc14_backstory_a|Soy Fuldmir, hijo del rey del sur de Umbar, al sur de Harondor, y la Bahía de Belfalas, pues ambos son hogares en mi corazón. Somos los señores del mar y la vela, corsarios para algunos, familia de la Bahía de Belfalas, pues sus aguas domamos.
-str_npc15_backstory_a|Soy Bolzog el Prodigio, Engastador de Huesos, Cerrador de Heridas y Chamán de Curación. Si vas a la guerra en el bando del Ojo de Sauron, sin duda algunos de tus compañeros serán heridos por los pieles-pálidas habitantes del bosque y amantes de los caballos. Pero, ¡nar-nar-nar! a los orcos se les reemplaza fácilmente, oh Gran Lider, pero cómo puedes reemplazar a un huargo? ¿A un gigante? ¿A un troll de las cavernas? ¡Shi-shi! ¡No! Me necesitas, ¡el Gran Bolzog!
-str_npc16_backstory_a|Bueno, es el forastero quien debería hablar primero. No obstante, soy Varfang de las gentes de Balchoth... puedo adivinar que no has escuchado aún las canciones e historias de mi tierra en las que se habla del los Balchoth, pues con sólo mencionar este nombre tu coraje desaparecería y tu corazón se llenaría de temor.
-str_npc17_backstory_a|Me llaman Dímborn y trabajo en los bosques. Me gusta estar en el campo. Me gustan los bosques. Muchos árboles en los bosques. Me gustan los árboles. He trabajado en los bosques toda mi vida, porque soy fuerte y porque me gustan los bosques.
-str_npc1_backstory_b|Deberías saber que soy Ithilien, guardabosques del linaje de los Dúnedain. Sé mucho sobre rastreo y exploración y mi destreza con el arco y la espada es bien conocida por los orcos. También puedo entrenar a cualquier alma que desee combatir a la Sombra que se acerca.     
-str_npc2_backstory_b|He sido entrenado como centinela de Minas Tirith, para mantener el orden en la Ciudad Blanca y servir a mi señor Administrador.
-str_npc3_backstory_b|Soy un jinete de Emmet del éored oeste, se fueron sin mi con una gran patrulla al los vados de Isen. Sé que su valentía será digna del estandarte verde, pero temo que muchos no regresen.
-str_npc4_backstory_b|Nací en una familia noble y he servido a Lady Éowyn como dama de honor desde que éramos niñas. Nuestros padres fueron sabios al permitirnos entrenar junto a nuestros hermanos en las artes del combate, para poder así convertirnos en doncellas guerreras de Rohan.
-str_npc5_backstory_b|Lord Elrond me envía como emisario a Lord Celeborn, para otorgar ayuda y consejo si lo requiere en la guerra, en esta parte de Rhovanion. 
+str_npc14_backstory_a|Soy Fuldmir, hijo de las tierras sureñas de Umbar, al sur de Harondor, y de la Bahía de Belfalas, pues ambos son hogares en mi corazón. Somos los señores del mar y la vela, corsarios para algunos, familia de la Bahía de Belfalas, pues sus aguas domamos.
+str_npc15_backstory_a|Soy Bolzog el Prodigio, Engastador de Huesos, Cerrador de Heridas y Chamán de Curación. Si vas a la guerra en el bando del Ojo, sin duda algunos de tus compañeros serán heridos por los pieles-pálidas habitantes del bosque y amantes de los caballos. Sí, -¡nar-nar-nar!- a los orcos se los reemplaza fácilmente, oh Gran Lider, pero ¿cómo puedes reemplazar a un huargo? ¿A un gigante? ¿A un troll de las cavernas? ¡Shi-shi! ¡No! Me necesitas, ¡el Gran Bolzog!
+str_npc16_backstory_a|Bueno, es el forastero quien debería hablar primero. No obstante, soy Varfang del pueblo de los Balchoth... puedo adivinar que no has escuchado aún las canciones e historias de mi tierra en las que se habla del los Balchoth, pues con sólo mencionar este nombre tu coraje desaparecería y tu corazón se llenaría de temor.
+str_npc17_backstory_a|Me llaman Dímborn y trabajo en los bosques. Me gusta estar en el campo. Me gustan los bosques. Muchos árboles en los bosques. Me gustan los árboles. He trabajado en los bosques toda mi vida, porque soy fuerte y porque me gustan los átboles\n.
+str_npc1_backstory_b|Deberías saber que soy un montaraz de Ithilien, del linaje de los Dúnedain. Sé mucho sobre rastreo y exploración y mi destreza con el arco y la espada es bien conocida por los orcos. También puedo entrenar a cualquier alma que desee combatir a la Sombra que se acerca.     
+str_npc2_backstory_b|He sido entrenado como centinela de Minas Tirith, para mantener el orden en la Ciudad Blanca y servir a mi señor Senescal.
+str_npc3_backstory_b|Soy un jinete del éored de Oestemnet, se fueron sin mi a una larga patrulla por los vados del Isen. Sé que su valentía será digna del estandarte verde, pero temo que muchos no regresen.
+str_npc4_backstory_b|Nací en una familia noble y he servido a la dama Éowyn como dama de honor desde que éramos niñas. Nuestros padres fueron sabios al permitirnos entrenar junto a nuestros hermanos en las artes del combate, para poder así convertirnos en doncellas guerreras de Rohan.
+str_npc5_backstory_b|El señor Elrond me envía como emisario a Lord Celeborn, para otorgar ayuda y consejo si lo requiere en la guerra, en esta parte de Rhovanion. 
 str_npc6_backstory_b|Me gusta caminar por los senderos ocultos de nuestro bello bosque. A veces me muevo silenciosamente a través de los árboles y observo las costumbres de los muchos animales del bosque. La canción de un pájaro extraño, las crías de un jabalí salvaje son tan bellas para mí como lo son el choque de las espadas para los Edain.
 str_npc7_backstory_b|Ayudé a mejorar las defensas de Erebor y entrené a algunos de los enanos más jóvenes, bajo la supervisión de mi venerado padre Dwalin, según nuestra costumbre.
 str_npc8_backstory_b|He tratado a mi Rey Brand de su estreñimiento, un mal común que afecta a nuestros hombres en tiempos de guerra. Una poción de ajenjo y tanto los intestinos como la mente son calmados.
 str_npc9_backstory_b|Así que me dije a mi mismo, "Gulm, ¿queires acabar como carroña?" Y me contesté, "No". La siguiente batalla me tiré al suelo fingiendo estar herido. Luego, cuando nadie miraba, ¡caí sobre mi sargento! Le rajé casi por la mitad, ¡gharr! Luego corté a su secuaz snaga... Resulta que el maldito bicho sobrevivió de alguna manera y empezó a contárselo a todo el mundo. La próxima vez me aseguraré de cortarle la cabeza, gharr...
-str_npc10_backstory_b|Soy un jinete de lobo rastreador de Isengard.          C
-str_npc11_backstory_b|¡Arrg! Es sólo porque mi nariz estaba llena de mocos. ¿Y de que sirve que la pase por las piedras de todos modos? ¡Nar! ¡Fueron los sucios Uruks! ¡Esos malditos ladrones de melocotones! Perdí el rastro porque se lo cargaron pinchando y pisoteando todo lo que encontraban antes de que llegase.
+str_npc10_backstory_b|Soy un jinete de lobo de Isengard y un rastreador.
+str_npc11_backstory_b|¡Arrg! Es sólo porque mi nariz estaba llena de mocos. ¿Y de que sirve que la pase por las piedras de todos modos? ¡Nar! ¡Fueron los sucios Uruks! ¡Esos malditos chivatos ladrones! Perdí el rastro porque se lo cargaron pinchando y pisoteando todo lo que encontraban antes de que llegase.
 str_npc12_backstory_b|Y esos Nazgul me dan repelús. Te despellejan con la mirada y te dejan frío en la oscuridad al otro lado. Pero a Él le gustan, son sus favoritos hoy en día, así que da igual quejarse. Te lo digo, no es ningún juego servir en la ciudad. Me gustaría probar suerte en algún lugar en donde no esté ninguno de ellos.
-str_npc13_backstory_b|Vi cómo la palabra del Señor Oscuro se extendía entre mi gente, y cómo sus corazones y mentes quedaban tullidos. La mayoría fueron atraídos por su oscuridad y donde antes había valentía se sustituyó por una insaciable lujuria por la matanza indiscriminada, de modo que cuando sus oidos escuchasen su llamada, estos acudieran como marionetas sin voluntad propia.  
+str_npc13_backstory_b|Vi cómo la palabra del Señor Oscuro se extendía entre mi gente, y cómo su voluntad invadía sus corazones y mentes. La mayoría fueron atraídos por su oscuridad y donde antes había valentía creció una insaciable sed por la matanza, de modo que cuando sus oidos escuchasen su llamada, fueron los más dispuestos a responder.  
 str_npc14_backstory_b|Mucho cambia en el hombre que ha navegado a través de los vientos y por los mares de las aguas de Belfalas, y aquellos que todavía no lo han experimentado no son más que niños. Los hombres duros de verdad son los que se enfrentan a su tempestad y atraviesan sus tormentas. He avistado sus mareas más oscuras y siempre he salido indemne.
-str_npc15_backstory_b|Muchas lunas atrás, cuando no era más que un pedacito de carne, mi señor lideró a la tribu a las minas, donde los enanos habían muerto hacía poco. Un espectro de fuego acababa de pasar y se estaba cómodo y caliente. Prosperamos, pero cada cierto tiempo algún cruel aventurero, o héroe enano, venía y nos mataba y mutilaba dentro de nuestros pacíficos túneles. Mis manos aprendieron pronto a cerrar las heridas de espadas y hachas y mi mente aprendió a ver el contorno de hueso, tendón y piel. Estos días puedo hacer una poción o curar un hueso roto con igual habilidad que antes.
-str_npc16_backstory_b|Los Balchoth eran una fiera raza de hombres de mi tierra natal, casi todos aplastados por los hombres de oeste. Perseguidos como bestias de carga y como carne para sus espadas. La sangre derramada por aquellas espadas es la misma que fluye por las mias, pues en mi interior su causa continúa viviendo.
+str_npc15_backstory_b|Muchas lunas atrás, cuando no era más que un pedacito de carne, mi señor lideró a la tribu a las minas, donde los enanos habían muerto hacía poco. Un espectro de fuego acababa de pasar y se estaba cómodo y caliente. Prosperamos, pero cada cierto tiempo algún cruel aventurero, o héroe enano, venía y nos mataba y mutilaba dentro de nuestros pacíficos túneles. Mis manos aprendieron pronto a cerrar las heridas de espadas y hachas y mi mente aprendió a ver el contorno de hueso, tendón bajo la piel. Ahora puedo hacer una poción o curar un hueso roto con igual habilidad que antes.
+str_npc16_backstory_b|Los Balchoth eran una fiera raza de hombres de mi tierra natal, casi todos masacrados por los hombres de oeste. Perseguidos como bestias de carga y como alimento para sus espadas. La sangre derramada por aquellas espadas es la misma que fluye por mis venas, pues en mi interior su causa continúa viviendo.
 str_npc17_backstory_b|Puedes sacar muchas cosas de un árbol, ¿sabes? Es lo que yo hago. Trabajo con árboles y hago cosas a partir de ellos. A veces uso arbustos también. Pero me gustan más los árboles.
-str_npc1_backstory_c|En cualquier caso, temo que estemos en grave inferioridad numérica en Ithilien y no duraremos mucho sin refuerzos o mediante alguna acción por parte de nuestro administrador. Por ello prefiero ayudar allí donde mis acciones cuenten, si mi Capitán Faramir me lo permite.
-str_npc2_backstory_c|Aunque mi presencia aquí es importante, estoy ansioso por ver el combate de verdad y... ver también a los elfos hablando con los árboles y con los olifantes. Parece que habéis viajado mucho, señor, y no lo digo por vuestra apariencia, no señor. Aprendo rápido y puedo cocinar... bueno, suficientemente bien para los soldados. Si no me equivoco, ¿estáis buscando voluntarios?
+str_npc1_backstory_c|En cualquier caso, temo que estemos en grave inferioridad numérica en Ithilien y no duraremos mucho sin refuerzos o mediante alguna acción por parte de nuestro Senescal. Por ello prefiero ayudar allí donde mis acciones cuenten, si mi Capitán Faramir me lo permite.
+str_npc2_backstory_c|Aunque mi presencia aquí es importante, estoy ansioso por ver el combate de verdad y... ver elfos, árboles parlantes y olifantes. Parece que habéis viajado mucho, señor, y no lo digo por vuestra apariencia, no señor. Aprendo rápido y puedo cocinar... bueno, suficientemente bien para los soldados. Si no me equivoco, ¿estáis buscando voluntarios?
 str_npc3_backstory_c|Y aquí estoy, deshonrado y taciturno. Mi éored debe de estar a millas de distancia y no tengo posibilidades de alcanzarlos, no con todos los orcos y los hombres salvajes que rondan las llanuras. ¿Necesitáis por casualidad la ayuda de un buen jinete Rohirrim?
 str_npc4_backstory_c|Puede que sepas que a las mujeres, por muy habilidosas que sean con la espada, no se les permite cabalgar con los éoredas. No obstante, no creo que esperar a los guerreros junto al fuego del campamento sea mi destino. No me quedaré sentada sin hacer nada con la gran oportunidad que hay de realizar hazañas en esta guerra, y me vendría bien tu ayuda, guerrero.
 str_npc5_backstory_c|No obstante, si los enemigos de Lothlórien están huyendo, puede que considere unirme a ti por un tiempo, {playername}. Siento que nuestros destinos están unidos en esta guerra.
-str_npc6_backstory_c|No lo entendería, creo, viendo lo que se está preparando para esta guerra; pero debéis de haber viajado mucho. ¿Habéis visto los otros grandes bosques? ¿Podéis llevarme allí?
-str_npc7_backstory_c|Esta tranquilidad en el combate no gusta a un guerrero enano con mi linaje y temperamento. ¿Me figuro que ves mucha más acción en tus viajes y que tienes relaciones cordiales con los enanos? Conozco un guerrero enano que te ayudaría mucho a hacer frente a los enemigos.
-str_npc8_backstory_c|He oído que hay muchos combates en otros lugares y nuestras tierras están siendo saqueadas ahora. Por las marcas en tu armadura debes de haber estado en peligro muchas veces. Quizás mis humildes habilidades de combate podrían ser de utilidad en tu compañía de soldados.
+str_npc6_backstory_c|No lo entenderíais, creo, viendo que estáis preparado par ala guerra; pero debéis de haber viajado mucho. ¿Habéis visto los otros grandes bosques? ¿Podéis llevarme allí?
+str_npc7_backstory_c|Esta tranquilidad en el combate no gusta a un guerrero enano con mi linaje y temperamento. ¿Me figuro que ves mucha más acción en tus viajes y que tu causa es común a la de los enanos? Sé que contar con un guerrero enano mejoraría mucho tus posibilidades de supervivencia.
+str_npc8_backstory_c|He oído que hay muchos combates en otros lugares y nuestras tierras han sido perdonadas por ahora. Por las marcas en tu armadura debes de haber estado en peligro muchas veces. Quizás mis humildes habilidades de combate podrían ser de utilidad en tu compañía de soldados, por el bien de todos.
 str_npc9_backstory_c|Soy un guerrero Uruk-hai, ¡y un berserk! Lo que hay que saber para matar hombres, yo lo sé. Serví a la Mano Blanca pero ahora a la Mano no le intereso. Me gustaría ir contigo y cazar hombres en el sur, mientras los snagas de Isengard rechinan los dientes de envidia.
-str_npc10_backstory_c|Quizá puedas ser mi próximo jefe.        C
+str_npc10_backstory_c|Quizá puedas ser mi próximo jefe. 
 str_npc11_backstory_c|¡Está bien, está bien! Mi nariz no sirve de mucho. Reconozco que mis ojos son mejores que mi nariz. ¡Ai! Pero mi nariz no es buena porque no sé cómo huele nada. Ni siquiera sé lo que estoy buscando. ¡Arg! Solo necesito salir de aquí y empezar a husmear en otros lugares.
-str_npc12_backstory_c|Eh, si tengo la oportunidad, me descalzaré y me asentaré en mis propias tierras con algunos amigos de confianza. En algún lugar hay un buen botín esperándome, y sin grandes jefes. Me gustaría probar algún sitio dónde no estén ellos, como en los viejos tiempos.
+str_npc12_backstory_c|Eh, si tengo la oportunidad, me escaparé y me organizaré por mi cuenta con algunos muchachos de confianza. En algún lugar hay un buen botín esperándome, y sin grandes jefes. Me gustaría probar algún sitio dónde no estén ellos, como en los viejos tiempos.
 str_npc13_backstory_c|Seguí a mi gente al norte, y atendí a su llamada oscura para cumplir el deber que tengo con mi gente. Pero en ellos veo oscuridad y busco hacer mi parte en esta guerra en otro lugar, hasta que las arenas de mi tiempo dejen de moverse. Incluso ahora las siento débiles, cuando antes caían a cascadas.
-str_npc14_backstory_c|Pero ahí llega la marea más oscura, una marea negra de sombra que se alza sobre estas tierras como ningunos ojos mortales han visto. Esta es la marea que quiero domar, pero no tengo aliados con quien conseguir cabalgar esta tormenta.
-str_npc15_backstory_c|Tras muchos inviernos salí de los túneles y busqué en el Bosque Oscuro un buen lugar para vivir y practicar mis artes. Me iba bien, hasta que unos malditos cabrones con tatuajes blancos - ¡ugh! ¡Blanco! ¡Como la cara de un elfo! Esos cabronazos quemaron mi casa en el bosque y tuve que esconderme en las cuevas de nuevo... Allí... Dime, ¿tienes algo de comer? ¿Quizás un buen caballo?
+str_npc14_backstory_c|Pero ahí llega la marea más oscura, una marea negra de sombra que se alza sobre estas tierras como ningunos ojos mortales han visto. Esta es la marea que quiero domar, pero no tengo una tripulación lo bastante dura como para cabalgar esta tormenta.
+str_npc15_backstory_c|Tras muchos inviernos salí de los túneles y busqué en el Bosque Oscuro un buen lugar para vivir y practicar mis artes. Me iba bien, hasta que unos bastardos grandes y feos con tatuajes blancos - ¡ugh! ¡Blanco! ¡Como la cara de un elfo! Menudos bastardos. Quemaron mi casa en el bosque y tuve que esconderme en las cuevas de nuevo... Allí... Dime, ¿tienes algo de comer? ¿Quizás un buen caballo?
 str_npc16_backstory_c|Eso ocurrió muchas vidas de hombre atrás, en otra época, pero el tiempo para pensar y para las historias ha terminado. El tiempo para que mi gente se tome la venganza ha llegado y yo llevaré la venganza de mi gente hacia estas tierras del oeste. ¡Por mi mano sus hogares arderán y se marchitarán hasta que su clan deje de existir!
-str_npc17_backstory_c|Si vas al bosque, ¿crees que podría ir contigo y contarte cosas sobre los árboles? Muchas de ellas son muy interesantes, ¿sabes?
+str_npc17_backstory_c|Si vas al bosque, ¿crees que podría ir contigo y contarte cosas sobre los árboles? Hay muchos árboles muy interesantes por ahí, ¿sabes?
 str_npc1_backstory_later|He guiado partidas de exploradores hasta Emyn Amen. Hay mucha actividad enemiga y muchos orcos cayeron en nuestra emboscada. Pero esas son solo cabezas de orcos; también vimos terribles critaturas marchando. Temo por mi tierra de Ithilien y por el destino de Gondor.
 str_npc2_backstory_later|Hemos tenido pocos visitantes ultimamente y creo que tendremos aún menos visitantes por llegar. Creo que esto no es un buen presagio.
-str_npc3_backstory_later|Todavía no hay noticias del éored, y mi gente sigue persiguiendo unos orcos.
-str_npc4_backstory_later|Más jinetes vuelven con sus cuerpos rotos e intentan ayudar donde pueden. Pero todavía me siento atrapado en una jaula.
+str_npc3_backstory_later|Todavía no hay noticias de mi éored, y estoy ansioso por cargar sobre algunos orcos.
+str_npc4_backstory_later|Más jinetes vuelven con sus cuerpos rotos e intento ayudar donde puedo. Pero todavía me siento atrapada en una jaula.
 str_npc5_backstory_later|¿Lo has reconsiderado? El tiempo de los Eldar se acaba.
-str_npc6_backstory_later|He estado observando el nido de las arañas gigantes durante varios días. Parecen al principio criaturas asquerosas, pero mantienen a los enemigos a raya. ¿Has venido a pedirme que viaje contigo?
+str_npc6_backstory_later|He estado observando un nido de arañas gigantes durante varios días. Parecen al principio criaturas asquerosas, pero mantienen a los enemigos a raya. ¿Has venido a pedirme que viaje contigo?
 str_npc7_backstory_later|Construir muros defensivos es digno de cualquier enano. Pero necesito usar mi hacha también. Pronto. Déjame ir contigo.
-str_npc8_backstory_later|He acudido de nuevo a nuestro Rey, esta vez para verle vomitar. Espero que su resolución de atacar al enemigo no esté relacionada con su condición. ¿También sufres de estreñimiento y vómitos?
-str_npc9_backstory_later|¿Qué crees que hago? Gulm está aquí sentado esperando a que un silencioso snaga le apuñale en la oscuridad. Llévame contigo, te serviré bien.
+str_npc8_backstory_later|He acudido de nuevo a nuestro Rey, esta vez para verle vomitar. Espero que su resolución de atacar al enemigo no esté relacionada con su enfermedad. ¿También sufres de estreñimiento y vómitos?
+str_npc9_backstory_later|¿Qué crees que hago? Gulm está aquí sentado esperando a que un escurridizo snaga le apuñale en la oscuridad. Llévame contigo, te serviré bien.
 str_npc10_backstory_later|¿Has reconsiderado la situación? Te serviré bien.       
-str_npc11_backstory_later|Arg! ¡Así que eras tú! Te olí, por eso sabía que ibas a venir. Dile a los jefes eso, ¿vale? Piensan que desde que me expulsaron de los rastreadores me pueden insultar sin peligro; pues se equivocan, les clavaré una flecha en sus intestinos antes de que se den cuenta. ¿Y de quién será la culpa? ¡Mía no!
-str_npc12_backstory_later|Tengo mis órdenes. Cualquier intruso que encuentren mis hombres aquí arriba será desplumado; dientes, uñas, pelo, todo. Pero tengo mis informadores. Sabemos que están ocurriendo cosas extrañas: con los jefazos yendo a la guerra, y todo eso. Dicen que hay grandes criaturas yendo en dirección oeste. Estar aquí sentado sin hacer nada es más de lo que puedo soportar.
+str_npc11_backstory_later|Arg! ¡Así que eras tú! Te olí, por eso sabía que ibas a venir. Dile a los jefes eso, ¿vale? Piensan que desde que me expulsaron de los rastreadores me pueden insultar sin peligro; pues se equivocan, les clavaré una flecha en las tripas antes de que se den cuenta. ¿Y de quién será la culpa? ¡Mía no!
+str_npc12_backstory_later|Tengo mis órdenes. Cualquier intruso que encuentren mis chicos aquí arriba será desplumado; dientes, uñas, pelo, todo. Pero tengo mis informadores. Sabemos que están ocurriendo cosas extrañas: con los jefazos yendo a la guerra, y todo eso. Ocurren cosas importantes allá lejos en el oeste. Estar aquí sentado sin hacer nada es más de lo que puedo soportar.
 str_npc13_backstory_later|Mi papel aquí se ajusta bien a la causa de la oscuridad, y una vez más los Norteños temen al sur. Veo grandes victorias en el futuro, y ríos de sangre detrás de nosotros. Pero con cada victoria veo a mis hombres más corrompidos, con sus mentes esclavizadas por su voluntad maligna. Tener que contemplar esto me desespera. 
 str_npc14_backstory_later|Habéis vuelto, extranjero, quizás esto sea un presagio. He estado contemplando las aguas, y las he visto oscurecerse. El mar cambia los ojos de un hombre, y le enseña a utilizar sus propios ojos para comprender el lenguaje de las aguas.
-str_npc15_backstory_later|Muchos personajes importantes han suplicado ser curados por mis pociones. Los amantes de los caballos y los elfos de cara pálida son algunos de ellos, y he tenido que dejar mi cabaña una vez más, y ahora... bueno, Gran Señor, ya no tengo tanta suerte como cuando luchamos juntos y me estábais agradecido por mis habilidades guerreras.
-str_npc16_backstory_later|En la historia de mi gente se ha hablado desde hace mucho tiempo sobre estas tierras. No conozco que infames historias había antes de que mi pueblo llegara estas tierras, pero esas historias serán tristes y oscuras ahora que mi gente ha llegado ya. Como una tormenta de espadas, pezuñas y flechas, los arrasaremos como el Balchoth hizo antes que nosotros.
+str_npc15_backstory_later|Muchos personajes importantes han suplicado ser curados por mis pociones. Pero los amantes de los caballos y los elfos de cara pálida son demasiados, y he tenido que dejar mi cabaña una vez más, y ahora... bueno, Gran Señor, ya no tengo tanta suerte como cuando luchamos juntos y me estábais agradecido por mis habilidades...
+str_npc16_backstory_later|En la historia de mi gente se ha hablado desde hace mucho tiempo sobre estas tierras. No conozco qué infames historias  se habrán contado sobre la primera vez que mi pueblo entró en estas tierras, pero sus historias serán tristes y oscuras ahora que mi gente ha vuelto. Como una tormenta de espadas, pezuñas y flechas, los arrasaremos como los Balchoth hicieron antes que nosotros.
 str_npc17_backstory_later|El otro día vi un pino muy viejo. Los pinos pueden llegar a ser muy antiguos. Hay que respetar a los árboles viejos. Pero también he visto gente que no los respeta en absoluto. Tú respetas a los árboles, ¿verdad?
-str_npc1_backstory_response_1|Si podéis venir, tengo gran necesidad de un guerrero y explorador experimentado.
+str_npc1_backstory_response_1|Si obtenéis licencia, tengo gran necesidad de un guerrero y explorador experimentado.
 str_npc2_backstory_response_1|Tenéis razón, estoy buscando voluntarios.
 str_npc3_backstory_response_1|Si podéis aguantar sin cerveza, me vendría bien un buen jinete.
-str_npc4_backstory_response_1|Agradecería la ayuda de una doncella guerrera de Rohan, si quisiérais uniros.
-str_npc5_backstory_response_1|Quizás pueda sonar presuntuoso, pero a mis hombres les vendría bien vuestra abilidad en el combate para las batallas futuras.
-str_npc6_backstory_response_1|Viajamos por la Tierra Media, y para defender a los débiles luchamos contra el enemigo.
+str_npc4_backstory_response_1|Agradecería la ayuda de una doncella guerrera de Rohan, si me la ofrecéis.
+str_npc5_backstory_response_1|Quizás pueda sonar presuntuoso pedíroslo, pero a mi compañía le vendría bien vuestra habilidad para las batallas futuras.
+str_npc6_backstory_response_1|Viajamos por la Tierra Media, pero para defender todo aquello que es hermoso, luchamos contra el enemigo.
 str_npc7_backstory_response_1|En efecto, un guerrero enano sería bienvenido en mi compañía.
-str_npc8_backstory_response_1|Nos sería útil un sanador y herbalista.
+str_npc8_backstory_response_1|Nos sería útil un sanador y herbolario.
 str_npc9_backstory_response_1|Me parece que nos sería útil un berserker.
-str_npc10_backstory_response_1|Vos lo haréis bien.
-str_npc11_backstory_response_1|¿Qué tal si os escapáis conmigo?
-str_npc12_backstory_response_1|¿Qué tal si nos escapamos?
+str_npc10_backstory_response_1|Servirás.
+str_npc11_backstory_response_1|¿Qué tal si te escapas conmigo?
+str_npc12_backstory_response_1|¿Qué tal si nos escabullimos?
 str_npc13_backstory_response_1|¿Qué tal si me seguís?
 str_npc14_backstory_response_1|¿Os gustaría uniros a mí?
 str_npc15_backstory_response_1|Ajá... Un sanador, ¿eh? ¿Y decís que sois bueno en ello? Alguien como vos podría serme útil.
@@ -436,7 +436,7 @@ str_npc17_backstory_response_1|Bueno, uno siempre puede aprender más acerca de 
 str_npc1_backstory_response_2|Siento oir eso. Que vuestra fe fortalezca vuestro valor.
 str_npc2_backstory_response_2|No, lo siento. Estoy buscando guerreros con experiencia.
 str_npc3_backstory_response_2|No, lo siento. Estoy buscando alguien que sea más fiable.
-str_npc4_backstory_response_2|Lo siento, señora mía, no hay nada que pueda hacer.
+str_npc4_backstory_response_2|Lo siento, mi señora, no hay nada que pueda hacer.
 str_npc5_backstory_response_2|Volveré cuando Lothlórien sea más seguro.
 str_npc6_backstory_response_2|No, lo siento. No aceptamos parásitos.
 str_npc7_backstory_response_2|No, lo siento. Nos va bien por nuestra cuenta.
@@ -444,71 +444,71 @@ str_npc8_backstory_response_2|No, lo siento. Sólo contratamos sanadores cuando 
 str_npc9_backstory_response_2|Bah. No confío en traidores.
 str_npc10_backstory_response_2|No te necesito, esclavo.
 str_npc11_backstory_response_2|No quiero oir tus pasos.
-str_npc12_backstory_response_2|Los Jefes saben más que nadie. Será mejor que obedezcáis las órdenes.
-str_npc13_backstory_response_2|Ese es el destino que sufriréis.
+str_npc12_backstory_response_2|Los Jefes saben más que nadie. Será mejor que obedezcas las órdenes.
+str_npc13_backstory_response_2|Ese es el destino que sufrirás.
 str_npc14_backstory_response_2|Ya he tenido suficiente de esto.
 str_npc15_backstory_response_2|Bah! Necesito guerreros, no holgazanes.
 str_npc16_backstory_response_2|Ya he tenido suficiente.
-str_npc17_backstory_response_2|No, lo siento. Marchamos a la guerra, no a recoger hierbas.
-str_npc1_signup|Estoy seguro de que el Capitán Faramir entiende que hay otros que son capaces de mantener al Enemigo a raya con incluso más valor y coraje que él.
-str_npc2_signup|Oh, feliz día! Me encantaría unirme a vuestra compañía de soldados.
-str_npc3_signup|Confiad en mí, señor, el brebaje que necesito es el dulce néctar de la victoria. Si me mandáis a la batalla contra el enemigo, ¡pronto descubrirán la temible punta de una lanza Rohirrim!
-str_npc4_signup|Os lo ofrezco de buen grado, y me podéis dar la bienvenida a vuestra compañía, señor.
+str_npc17_backstory_response_2|No, lo siento. Marchamos a la guerra, no a una excursión botánica.
+str_npc1_signup|Estoy seguro de que el Capitán Faramir entiende que hay otros que son capaces de mantener al Enemigo a raya con incluso más valor y coraje.
+str_npc2_signup|¡Oh, feliz día! Me encantaría unirme a vuestra compañía.
+str_npc3_signup|Confiad en mí, señor, toda la bebida que necesito es el dulce néctar de la victoria. Si me mandáis a la batalla contra el enemigo, ¡pronto descubrirán la temible punta de una lanza Rohirrim!
+str_npc4_signup|Os la ofrezco de buen grado, y me podéis dar la bienvenida a vuestra compañía, señor.
 str_npc5_signup|Ya veo. Admito que he oído hablar de vos y de vuestras hazañas.
 str_npc6_signup|Me disgustan la violencia y las armas de guerra, pero se cómo defenderme si es necesario.
-str_npc7_signup|Tengo habilidad con el hacha, tanto en el manejo como en el lanzamiento de hachas. También puedo ayudaros en el comercio con los mercaderes. Y también soy capaz de encontrar las mejores piezas de botín en el campo de batalla.
+str_npc7_signup|Tengo habilidad con las hachas, tanto las de blandir coo las de lanzar. También puedo acortar vuestras facturas si me dejáis hablar con los mercaderes. Y también tengo buen ojo para encontrar las mejores piezas de botín en el campo de batalla.
 str_npc8_signup|¿De verdad? De acuerdo entonces, sólo necesito coger mis hierbas y mis recetas.
 str_npc9_signup|Un guerrero Uruk vale más que todos tus snagas. Un guerrero Uruk nunca huye de una batalla.
 str_npc10_signup|¿De verdad? Haríais bien en dejarme unir a vuestra compañía.
-str_npc11_signup|Seguir a tus hombres, ¿eh? Ar! No dejo de oir todas estas cosas que están ocurriendo al oeste, asaltos y todo eso, y con cientos de nuestros chicos muertos. Te acompañaré a echar un vistazo de todas formas, y así veré en que estás metido.
+str_npc11_signup|Seguir a tus hombres, ¿eh? ¡Ar! No dejo de oir todas estas cosas que están ocurriendo al oeste, asaltos y todo eso, y con cientos de nuestros chicos muertos. Te acompañaré a echar un vistazo de todas formas, y así veré en que estás metido.
 str_npc12_signup|¿Seguir a tu tropa, no? Quizás este sea por fin mi día de suerte. Mis puños son tan duros como siempre, y mi látigo ansía entrar en combate. Ha probado su ración de piel de orco de la espalda mis muchachos.
-str_npc13_signup|Podré seguiros si me aceptáis en vuestro grupo. Mis piernas son tan fuertes como las de un caballo y mis manos desnudas han soportado las cuchillas del enemigo. Mis dedos son capaces de crear flechas que caigan como muerte sobre el enemigo, ya sea a pie o a caballo, vos decidís de que manera puedo serviros.
+str_npc13_signup|Os seguiré si me aceptáis. Puedo dirigir a un caballo solo ocn las piernas, y mis manos conocen el tacto de las hojas curvas. Mis dedos pueden hacer caer flechas como una lluvia de estrellas sobre el enemigo, ya sea a pie o a caballo, aunque lucharé del modo que ordenéis.
 str_npc14_signup|Quizás, pero sabed que no soy ningún ladrón ni bandido. No robaré, ni tomaré aquello que otros puedan necesitar.
 str_npc15_signup|Je-Je. ¡Tenéis razón! ¡Ssssí! Sois sabio, Gran Capitán.
-str_npc16_signup|Aguardo órdenes, y con cada segundo que pasa se me ensombrece el corazón. Ya no puedo esperar a los planes de señores y capitanes lejanos que nunca he visto y cuya existencia es más ficción que realidad. Señores, cuyas órdenes son traídas y voceadas por hombres de poca valía. Mi gente y yo aguardamos el momento de la venganza.
-str_npc17_signup|¡Muy bien! Conozco muchos árboles. Muy pronto tú también sabrás acerca de muchos árboles. Como yo. Porque tengo grandes conocimientos sobre árboles.
+str_npc16_signup|Aguardo órdenes, y con cada segundo que pasa se me ensombrece el corazón. Ya no puedo esperar a los planes de señores y capitanes lejanos que nunca he visto y cuya existencia es más leyenda que realidad. Señores cuyas órdenes susurradas, son traídas y voceadas por hombres de poca valía. Yo espero, y conmigo aguarda la venganza de mi pueblo.
+str_npc17_signup|¡Muy bien! Conozco muchos árboles. Muy pronto tú también conocerás muchos árboles. Como yo. Porque yo conozco mucho árboles.
 str_npc1_signup_2|Sólo necesitaría un momento para hablar con mi capitán y recoger mis cosas.
 str_npc2_signup_2|Tendré que hablar primero con mi sargento y después nos podremos ir - ¡tenemos grandes batallas en las que combatir y toda clase de criaturas extrañas que ver!
 str_npc3_signup_2|He estado esperando a que alguien me llevara consigo, así que sólo necesito ensillar mi caballo y estaremos listos para partir.
-str_npc4_signup_2|He cazado presas a menudo con arcos y jabalinas. Ahora cazaré orcos bajo vuestro mando. Y tengo algunas habilidades curativas así creo que podré ser útil.
-str_npc5_signup_2|Quizás uniéndome a vuestra compañía y golpeando duro donde no se lo esperen, el Enemigo pueda ser sorprendido. Iré con vos.      
+str_npc4_signup_2|He cazado muchas veces con arcos y jabalinas. Ahora cazaré orcos bajo vuestro mando. Y tengo algunas habilidades curativas que estoy segura serán necesarias.
+str_npc5_signup_2|Quizás uniéndome a vuestra compañía y golpeando duro donde no se lo esperen, el Enemigo quede desequilibrado. Iré con vos.      
 str_npc6_signup_2|Quizás pueda enseñaros a moveros más deprisa y a hacer menos ruido. Vamos.
-str_npc7_signup_2|Si podéis mantener a la gente alta de vuestra compañía a raya, sobre todo los traicioneros elfos, me uniré gustosamente a vuestro grupo.
-str_npc8_signup_2|Debo advertiros sin embargo, que no se pelear. Pero estoy segura de que podéis mantener a una mujer de mi edad segura del peligro.
+str_npc7_signup_2|Si podéis mantener a la gente grande de vuestra compañía a raya, sobre todo a esos escurridizos elfos, me uniré gustosamente a vuestro grupo.
+str_npc8_signup_2|Debo advertiros sin embargo, que soy bastante inútil en una batalla. Pero estoy segura de que podéis mantener a una mujer de mi edad a salvo del peligro.
 str_npc9_signup_2|Pero debéis decidiros rápidamente, los guardias están comenzando a sospechar. 
 str_npc10_signup_2|No os arrepentiréis de llevarme con vosotros.
 str_npc11_signup_2|Hay muchas cosas ahí fuera que mi nariz puede oler, y que mi cuchillo puede cortar. No saben muchas cosas ahora mismo pero aprenden rápido. ¿Qué decís?
-str_npc12_signup_2|Le enseñaré a vuestras bestias a obedecer a base de latigazos y les daré tanto castigo como sus pieles permitan. Si lo soportan bien eso debería hacerles trotar bien. ¿Qué decís?
-str_npc13_signup_2|Sabed, sin embargo, que siempre seré leal a la gente de mi raza. He luchado mucho y les he causado demasiados problemas. No les daré la espalda ya que su destino será el mío.
-str_npc14_signup_2|Es una suerte que los que ya no pertenecen a este mundo no tengan necesidad de los tesoros mundanos y yo tengo la suerte de tener habilidad en desembarazar a esos dueños de sus tesoros materiales.  
-str_npc15_signup_2|¡Oh, este es un gran momento para Bolzog El Elegido, y para vos, Gran Señor! Conquistaremos el mundo juntos, con vos, indestructible gracias a mi poder sanador, y conmigo, el Gran Brujo Orco que os apoyará siempre!
-str_npc16_signup_2|Me temo que no puedo esperar más. Pretendo unirme a la próxima compañía que abandone el campamento, ya sea con la venia de mi jefe o no. Temo que la guerra termine antes de partir para unirme a ella.
+str_npc12_signup_2|Le enseñaré a vuestros gusanos a obedecer a base de latigazos y les daré tanto castigo como sus pieles permitan. Si lo soportan bien eso debería hacerles trotar bien. ¿Qué decís?
+str_npc13_signup_2|Sabed, sin embargo, que siempre seré leal a la gente de mi raza. He luchado mucho y he perdido demasiado por ellos. No les daré la espalda ya que su destino será el mío.
+str_npc14_signup_2|Es una suerte que los que ya no pertenecen a este mundo no tengan necesidad de los tesoros mundanos y yo tengo la suerte de ser capaz de aliviar de sus necesidades mundanas a los dueños de esos tesoros.  
+str_npc15_signup_2|¡Oh, este es un gran momento para Bolzog El Prodigio, y para vos, Gran Señor! Conquistaremos el mundo juntos, con vos, indestructible gracias a mi poder sanador, y conmigo, el Gran Brujo Orco que os apoyará siempre!
+str_npc16_signup_2|Me temo que no puedo esperar más. Pretendo unirme a la próxima compañía que abandone el campamento, ya sea con la venia de mi caudillo o no. Temo que la guerra termine antes de partir para unirme a ella.
 str_npc17_signup_2|Cogeré algunas de mis herramientas, y podremos partir. ¡Hay un roble en este mismo camino que debo enseñaros!
-str_npc1_signup_response_1|Me sería muy útil un rastreador habilidoso, seréis bienvenido si queréis uniros a mí.
+str_npc1_signup_response_1|Me sería muy útil un montaraz habilidoso, seréis bienvenido si queréis uniros a mí.
 str_npc2_signup_response_1|Muy bien. Nos vendría bien alguna alegría en estos tiempos oscuros.
 str_npc3_signup_response_1|Muy bien. Ensillad vuestro caballo - partiremos pronto.
-str_npc4_signup_response_1|Impresionante. Estaremos listos para partir cuando vos estéis lista, señora mía.
-str_npc5_signup_response_1|Estaremos honrados de tener a un señor elfo como compañero.
+str_npc4_signup_response_1|Impresionante. Estaremos listos para partir cuando vos estéis lista, mi señora.
+str_npc5_signup_response_1|Estaremos honrados de tener la compañía de un señor de los Elfos.
 str_npc6_signup_response_1|Muy bien. Espero que no huyáis del primer orco que nos encontremos.
-str_npc7_signup_response_1|De acuerdo, señor enano, sois bienvenido a nuestro grupo.
+str_npc7_signup_response_1|De acuerdo, maestro enano, sois bienvenido a nuestro grupo.
 str_npc8_signup_response_1|Estaréis a salvo con nosotros, os lo prometo. Partiremos pronto.
 str_npc9_signup_response_1|Muy bien. Haz lo que se te ordena y te alimentaré bien.
 str_npc10_signup_response_1|Muy bien. Vamos.
 str_npc11_signup_response_1|Muy bien. Vamos.
-str_npc12_signup_response_1|Creo que podemos utilizar vuestra ayuda.
-str_npc13_signup_response_1|Creo que podemos utilizar vuestra ayuda.
+str_npc12_signup_response_1|Creo que encontraremos un buen uso para vos.
+str_npc13_signup_response_1|Creo que encontraremos un buen uso para vos.
 str_npc14_signup_response_1|Muy bien. Vamos.
-str_npc15_signup_response_1|Mmmm. Me gusta vuestra... confianza en vos mismo. Recoged vuestras cosas.
+str_npc15_signup_response_1|Mmmm. Admiro vuestra... confianza. Recoged vuestras cosas.
 str_npc16_signup_response_1|¿Qué tal si me seguís?
-str_npc17_signup_response_1|¡Genial! De todas formas espero que no habléis mucho de los árboles.
+str_npc17_signup_response_1|¡Genial! Pero espero que no estéis todo el tiempo hablando de árboles.
 str_npc1_signup_response_2|No tengo necesidad de vuestros servicios en este momento, os deseo buena suerte.
 str_npc2_signup_response_2|Lo siento, he cambiado de opinión.
 str_npc3_signup_response_2|Lo siento, he cambiado de opinión - quizás la próxima vez.
-str_npc4_signup_response_2|Lo siento, señora mía, quizás en otra ocasión.
+str_npc4_signup_response_2|Lo siento, mi señora, quizás en otra ocasión.
 str_npc5_signup_response_2|Pensándolo mejor, quizás necesitemos ayudar a Lothlórien por nuestra cuenta.
 str_npc6_signup_response_2|Lo siento, pero me es imposible imaginaros en un campo de batalla.
-str_npc7_signup_response_2|Lo siento, pero me caen bien los elfos.
-str_npc8_signup_response_2|Lo siento, pero todo el mundo lucha en mi compañía.
+str_npc7_signup_response_2|Lo siento, pero resulta que me caen bien los elfos.
+str_npc8_signup_response_2|Lo siento, pero en mi compañía todo el mundo lucha.
 str_npc9_signup_response_2|He cambiado de opinión. Quienquiera que os esté buscando puede venir a por mí después.
 str_npc10_signup_response_2|He cambiado de opinión.
 str_npc11_signup_response_2|No te necesito, esclavo.
