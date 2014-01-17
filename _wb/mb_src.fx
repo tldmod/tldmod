@@ -5778,13 +5778,14 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
 	}
 	  
   	if (Blendmode==MAP_BLEND_HARD) {
-	  Output.RGBColor.w = 0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5);
+	  Output.RGBColor.w = saturate(0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5));
 	}
 
  	if (Blendmode==MAP_BLEND_MID) {
-	  Output.RGBColor.w = 
+	  Output.RGBColor.w = saturate(
          (0.5)*In.Color.w+
-         (0.5)*(0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5));
+         (0.5)*(0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5))
+	  );
 	}
 
     return Output;
@@ -5814,7 +5815,7 @@ technique mtarini_swampy_map
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
-      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_MID /*MAP_BLEND_HARD*/);
    }
 }
 
@@ -5850,7 +5851,7 @@ technique mtarini_swampy_map_SHDW
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
-      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_MID /*MAP_BLEND_HARD*/);
    }
 }
 
@@ -5887,7 +5888,7 @@ technique mtarini_swampy_map_SHDWNVIDIA
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_DISTORT_YES,1.0);
-      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_HARD);
+      PixelShader  = compile ps_2_0 ps_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SWAMP, MAP_BLEND_MID /*MAP_BLEND_HARD*/);
    }
 }
 
