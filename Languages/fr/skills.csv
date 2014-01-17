@@ -1,0 +1,84 @@
+﻿skl_trade|Commerce
+skl_trade_desc|Chaque niveau dans cette compétence réduit la pénalité de commerce de 5%%. (compétence de groupe)
+skl_leadership|Commandement
+skl_leadership_desc|Chaque point augmente le nombre de soldats que le personnage peut commander de 3, augmente le moral du groupe et diminue la solde des troupes de 8%%. (compétence du commandant)
+skl_prisoner_management|Gestion de prisonniers
+skl_prisoner_management_desc|Chaque niveau dans cette compétence augmente le nombre maximum de prisonniers que le personnage peut détenir de %d. (compétence du commandant)
+skl_reserved_1|Reserved Skill 1
+skl_reserved_1_desc|This is a reserved skill.
+skl_reserved_2|Reserved Skill 2
+skl_reserved_2_desc|This is a reserved skill.
+skl_reserved_3|Reserved Skill 3
+skl_reserved_3_desc|This is a reserved skill.
+skl_reserved_4|Reserved Skill 4
+skl_reserved_4_desc|This is a reserved skill.
+skl_persuasion|Persuasion
+skl_persuasion_desc|Cette compétence aide à faire accepter son point de vue. (compétence personnelle)
+skl_engineer|Ingénierie
+skl_engineer_desc|Cette compétence permet de construire des équipements de siège et des bâtiments plus rapidement. (compétence de groupe)
+skl_first_aid|Premiers soins
+skl_first_aid_desc|Les héros récupèrent 7%% des points de vie perdus pendant les batailles par niveau de compétence. (compétence de groupe)
+skl_surgery|Chirurgie
+skl_surgery_desc|Chaque point de cette compétence donne 5%% de chance qu'un soldat du personnage survive à un coup mortel. (compétence de groupe)
+skl_wound_treatment|Guérison
+skl_wound_treatment_desc|La vitesse de soin est augmentée de 30%% par niveau de compétence. (compétence de groupe)
+skl_inventory_management|Gestion d'inventaire
+skl_inventory_management_desc|Augmente l'espace de l'inventaire de +6 par niveau de compétence. (compétence du commandant)
+skl_spotting|Reconnaissance
+skl_spotting_desc|Le champs de vision du groupe est augmenté de 10%% par niveau de compétence. (compétence de groupe)
+skl_pathfinding|Marche forcée
+skl_pathfinding_desc|La vitesse de voyage du groupe est augmentée de 3%% par niveau de compétence. (compétence de groupe)
+skl_tactics|Tactique
+skl_tactics_desc|Tous les deux niveaux de cette compétence, l'avantage tactique du groupe augmente de 1. (compétence de groupe)
+skl_tracking|Traque
+skl_tracking_desc|Les traces donnent plus de renseignements et durent plus longtemps. (compétence de groupe)
+skl_trainer|Mentor
+skl_trainer_desc|Chaque jour, les expériences du personnage profitent aux soldats d'un niveau inférieur au sien et leurs donnent de l'expérience. L'expérience partagée est distribuée ainsi: {0,4,10,16,23,30,38,46,55,65,80}. (compétence personnelle)
+skl_reserved_5|Reserved Skill 5
+skl_reserved_5_desc|This is a reserved skill.
+skl_reserved_6|Reserved Skill 6
+skl_reserved_6_desc|This is a reserved skill.
+skl_reserved_7|Reserved Skill 7
+skl_reserved_7_desc|This is a reserved skill.
+skl_reserved_8|Reserved Skill 8
+skl_reserved_8_desc|This is a reserved skill.
+skl_looting|Pillage
+skl_looting_desc|Cette compétence augmente le nombre d'objets trouvés de 10%% par niveau de compétence. (compétence de groupe)
+skl_horse_archery|Archerie montée
+skl_horse_archery_desc|Réduit les pénalités à la précision et aux dégâts que l'archerie montée provoque. (compétence personnelle)
+skl_riding|Équitation
+skl_riding_desc|Permet au personnage de monter des chevaux plus fougueux et augmente la vitesse et la manoeuvrabilité à cheval du personnage. (compétence personnelle)
+skl_athletics|Athlétisme
+skl_athletics_desc|Améliore la vitesse de course du personnage. (compétence personnelle)
+skl_shield|Bouclier
+skl_shield_desc|Réduit les dégâts infligés au bouclier du personnage (de 8%% par niveau de compétence) et améliore leur vitesse et leur couverture. (compétence personnelle)
+skl_weapon_master|Maître d'armes
+skl_weapon_master_desc|Augmente la limite de maîtrise des armes. Les limites augmentent ainsi: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (compétence personnelle)
+skl_reserved_9|Reserved Skill 9
+skl_reserved_9_desc|This is a reserved skill.
+skl_reserved_10|Reserved Skill 10
+skl_reserved_10_desc|This is a reserved skill.
+skl_reserved_11|Reserved Skill 11
+skl_reserved_11_desc|This is a reserved skill.
+skl_reserved_12|Reserved Skill 12
+skl_reserved_12_desc|This is a reserved skill.
+skl_reserved_13|Reserved Skill 13
+skl_reserved_13_desc|This is a reserved skill.
+skl_power_draw|Puissance de tension
+skl_power_draw_desc|Permet au personnage d'utiliser des arcs plus puissants. Chaque point de cette compétence (jusqu'à 4 plus la puissance de tension requise de l'arc) augmente les dégâts de l'arc de 12%%. (compétence personnelle)
+skl_power_throw|Puissance de jet
+skl_power_throw_desc|Chaque point dans cette compétence augmente les dégâts de jet de 7%%. (compétence personnelle)
+skl_power_strike|Puissance de frappe
+skl_power_strike_desc|Chaque point dans cette compétence augmente vos dégâts de 6%%. (compétence personnelle)
+skl_ironflesh|Résistance
+skl_ironflesh_desc|Chaque point dans cette compétence augmente les points de vie de +2. (compétence personnelle)
+skl_reserved_14|Reserved Skill 14
+skl_reserved_14_desc|This is a reserved skill.
+skl_reserved_15|Reserved Skill 15
+skl_reserved_15_desc|This is a reserved skill.
+skl_reserved_16|Reserved Skill 16
+skl_reserved_16_desc|This is a reserved skill.
+skl_reserved_17|Reserved Skill 17
+skl_reserved_17_desc|This is a reserved skill.
+skl_reserved_18|Reserved Skill 18
+skl_reserved_18_desc|This is a reserved skill.

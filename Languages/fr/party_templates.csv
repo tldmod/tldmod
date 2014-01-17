@@ -1,0 +1,241 @@
+pt_none|Personne
+pt_rescued_prisoners|Prisonniers libérés
+pt_enemy|Ennemi
+pt_hero_party|Armée du héros
+pt_cattle_herd|Troupeau de bétail
+pt_ruins|Ruines
+pt_legendary_place|Lieu légendaire
+pt_mound|Tertre de héros
+pt_pyre|Bûcher de héros
+pt_wild_troll|Troll sauvage
+pt_raging_trolls|Trolls enragés
+pt_looters|Orques tribaux
+pt_forest_bandits|Traînards orques
+pt_mountain_bandits|Gobelins sauvages
+pt_steppe_bandits|Parias du Pays de Dun
+pt_sea_raiders|Corsaires renégats
+pt_deserters|Déserteurs
+pt_merchant_caravan|Caravane de marchands
+pt_troublesome_bandits|Gobelins gênants
+pt_fangorn_orcs|Orques bûcherons 
+pt_village_farmers|Paysans
+pt_spy_partners|Voyageurs méfiants
+pt_spy_partners_evil|Voyageurs méfiants
+pt_runaway_serfs|Esclaves en fuite
+pt_spy|Cavalier solitaire
+pt_spy_evil|Cavalier solitaire
+pt_sacrificed_messenger|Messager sacrifié
+pt_gandalf|Cavalier solitaire
+pt_nazgul|Cavalier solitaire
+pt_gondor_scouts|Éclaireurs gondoriens
+pt_blackroot_auxila|Auxiliaires du Val de la Racine Noire
+pt_lamedon_auxila|Auxiliaires du Lamedon
+pt_lossarnach_auxila|Auxiliaires de Lossarnach
+pt_pinnath_gelin_auxila|Auxiliaires de Pinnath Gelin
+pt_ranger_scouts|Éclaireurs Rangers
+pt_rohan_scouts|Éclaireurs Rohirrims
+pt_lorien_scouts|Éclaireurs de la Lórien
+pt_woodelf_scouts|Éclaireurs elfes de la Forêt Noire
+pt_imladris_scouts|Éclaireurs elfes de Fondcombe
+pt_dale_scouts|Éclaireurs de Dale 
+pt_esgaroth_scouts|Éclaireurs d'Esgaroth
+pt_dwarf_scouts|Guetteurs nains
+pt_beorn_scouts|Éclaireurs des Beornides
+pt_woodmen_scouts|Éclaireurs Balchoths
+pt_mordor_scouts|Éclaireurs du Mordor
+pt_morgul_scouts|Éclaireurs de Minas Morgul
+pt_isengard_scouts|Éclaireurs d'Isengard
+pt_isengard_scouts_warg|Éclaireurs wargs de l'Isengard
+pt_harad_scouts|Éclaireurs Haradrims
+pt_dunland_scouts|Éclaireurs de Dun
+pt_umbar_scouts|Éclaireurs d'Umbar
+pt_khand_scouts|Éclaireurs du Khand
+pt_moria_scouts|Éclaireurs de la Moria
+pt_guldur_scouts|Éclaireurs de Dol Guldur
+pt_gundabad_scouts|Éclaireurs de Gundabad
+pt_rhun_scouts|Éclaireurs du Rhûn
+pt_gondor_raiders|Fourrageurs du Gondor
+pt_rohan_raiders|Fourrageurs Rohirrims
+pt_imladris_raiders|Fourrageurs d'Imladris
+pt_lorien_raiders|Fourrageurs de Lothlórien 
+pt_woodelf_raiders|Fourrageurs de la Forêt Noire
+pt_dale_raiders|Fourrageurs de Dale
+pt_dwarf_raiders|Fourrageurs Nains
+pt_ranger_raiders|Pillards Rangers
+pt_morgul_raiders|Pillards de Morgul
+pt_mordor_raiders|Pillards de Mordor
+pt_isengard_raiders|Pillards d'Isengard
+pt_dunland_raiders|Pillards du pays de Dun
+pt_harad_raiders|Pillards Haradrims
+pt_khand_raiders|Pillards du Khand
+pt_umbar_raiders|Pillards d'Umbar
+pt_moria_raiders|Pillards de la Moria
+pt_guldur_raiders|Pillards de Dol Guldur
+pt_gundabad_raiders|Pillards de Gundabad
+pt_rhun_raiders|Pillards du Rhûn
+pt_gondor_patrol|Patrouille du Gondor
+pt_rohan_patrol|Patrouille de Rohirrim
+pt_imladris_patrol|Patrouille de Dùnedain
+pt_lorien_patrol|Patrouille de la Lórien
+pt_woodelf_patrol|Patrouille d'Elfes Sylvains
+pt_dale_patrol|Patrouille de Dale
+pt_esgaroth_patrol|Patrouille d'Esgaroth
+pt_dwarf_patrol|Patrouille de Nains
+pt_ranger_patrol|Patrouille de Rangers
+pt_amroth_patrol|Patrouille de Dol Amroth
+pt_pelargir_patrol|Patrouille de Pelargir
+pt_lossarnach_patrol|Patrouille de Lossarnach
+pt_brv_patrol|Patrouille du Morthond
+pt_pinnath_patrol|Patrouille de Pinnath Gelin
+pt_lamedon_patrol|Patrouille de Lamedon 
+pt_mordor_war_party|Armée du Mordor
+pt_isengard_war_party|Armée de l'Isengard
+pt_harad_war_party|Armée du Harad
+pt_dunland_war_party|Armée de Dun
+pt_khand_war_party|Armée Orientale
+pt_moria_war_party|Armée Orque
+pt_dale_war_party|Armée de Dale
+pt_rhun_war_party|Armée de Rhûn
+pt_gondor_company|Patrouille de Minas Tirith
+pt_rohan_company|Compagnie du Rohan
+pt_imladris_company|Compagnie de Fondcombe
+pt_lorien_company|Compagnie de la Lothlórien
+pt_woodelf_company|Compagnie d'Elfes Sylvains
+pt_dale_company|Compagnie de Dale
+pt_dwarf_company|Compagnie de Nains
+pt_gondor_elite_company|Compagnie d'élite du Gondor
+pt_rohan_elite_company|Compagnie d'élite du Rohan
+pt_imladris_elite_company|Compagnie d'élite de Fondcombe
+pt_lorien_elite_company|Compagnie d'élite de la Lothlórien
+pt_woodelf_elite_company|Compagnie d'élite des Elfes Sylvains
+pt_dale_elite_company|Compagnie d'élite de Dale
+pt_dwarf_elite_company|Compagnie d'élite naine
+pt_gondor_caravan|Caravane du Gondor
+pt_rohan_caravan|Caravane du Rohan
+pt_imladris_caravan|Caravane de Fondcombe
+pt_lorien_caravan|Caravane de la Lothlórien
+pt_woodelf_caravan|Caravane de la Forêt noire
+pt_dale_caravan|Caravane de Dale
+pt_dwarf_caravan|Caravane naine 
+pt_mordor_caravan|Convoi d'approvisionnement du Mordor
+pt_isengard_caravan|Convoi d'approvisionnement de l'Isengard
+pt_gunda_caravan|Convoi d'approvisionnement de Gundabad
+pt_gondor_p_trainConvoi de prisonniers du Gondor
+pt_rohan_p_train|Convoi de prisonniers du Rohan
+pt_imladris_p_train|Convoi de prisonniers de Rivendell
+pt_lorien_p_train|Convoi de prisonniers de Lothlórien
+pt_lorien_p_train|Convoi de prisonniers de Mirkwood
+pt_dale_p_train|Convoi de prisonniers de Dale
+pt_dwarf_p_train|Convoi de prisonniers des Nains
+pt_mordor_p_train|Convoi de prisonniers du Mordor
+pt_isengard_p_train|Convoi de prisonniers de l'Isengard
+pt_kingdom_hero_party|Armée de campagne
+pt_gondor_reinf_d| 
+pt_gondor_reinf_a| 
+pt_gondor_reinf_b| 
+pt_gondor_reinf_c| 
+pt_pelargir_reinf_a| 
+pt_pelargir_reinf_b| 
+pt_pelargir_reinf_c| 
+pt_dol_amroth_reinf_a| 
+pt_dol_amroth_reinf_b| 
+pt_dol_amroth_reinf_c| 
+pt_lamedon_reinf_a| 
+pt_lamedon_reinf_b| 
+pt_lamedon_reinf_c| 
+pt_lossarnach_reinf_a| 
+pt_lossarnach_reinf_b| 
+pt_lossarnach_reinf_c| 
+pt_pinnath_reinf_a| 
+pt_pinnath_reinf_b| 
+pt_pinnath_reinf_c| 
+pt_ithilien_reinf_a| 
+pt_ithilien_reinf_b| 
+pt_ithilien_reinf_c| 
+pt_blackroot_reinf_a| 
+pt_blackroot_reinf_b| 
+pt_blackroot_reinf_c| 
+pt_rohan_reinf_a| 
+pt_rohan_reinf_b| 
+pt_rohan_reinf_c| 
+pt_isengard_reinf_a| 
+pt_isengard_reinf_b| 
+pt_isengard_reinf_c| 
+pt_mordor_reinf_a| 
+pt_mordor_reinf_b| 
+pt_mordor_reinf_c| 
+pt_harad_reinf_a| 
+pt_harad_reinf_b| 
+pt_harad_reinf_c| 
+pt_rhun_reinf_a| 
+pt_rhun_reinf_b| 
+pt_rhun_reinf_c| 
+pt_khand_reinf_a| 
+pt_khand_reinf_b| 
+pt_khand_reinf_c| 
+pt_umbar_reinf_a| 
+pt_umbar_reinf_b| 
+pt_umbar_reinf_c| 
+pt_lorien_reinf_a| 
+pt_lorien_reinf_b| 
+pt_lorien_reinf_c| 
+pt_imladris_reinf_a| 
+pt_imladris_reinf_b| 
+pt_imladris_reinf_c| 
+pt_woodelf_reinf_a| 
+pt_woodelf_reinf_b| 
+pt_woodelf_reinf_c| 
+pt_moria_reinf_a| 
+pt_moria_reinf_b| 
+pt_moria_reinf_c| 
+pt_guldur_reinf_a| 
+pt_guldur_reinf_b| 
+pt_guldur_reinf_c| 
+pt_beorn_reinf_a| 
+pt_beorn_reinf_b| 
+pt_beorn_reinf_c| 
+pt_gundabad_reinf_a| 
+pt_gundabad_reinf_b| 
+pt_gundabad_reinf_c| 
+pt_dale_reinf_a| 
+pt_dale_reinf_b| 
+pt_dale_reinf_c| 
+pt_dwarf_reinf_a| 
+pt_dwarf_reinf_b| 
+pt_dwarf_reinf_c| 
+pt_dunland_reinf_a| 
+pt_dunland_reinf_b| 
+pt_dunland_reinf_c| 
+pt_gondor_cap_recruits| 
+pt_gondor_recruits| 
+pt_pelargir_recruits| 
+pt_dol_amroth_recruits| 
+pt_lamedon_recruits| 
+pt_lossarnach_recruits| 
+pt_pinnath_recruits| 
+pt_ithilien_recruits| 
+pt_blackroot_recruits| 
+pt_rohan_recruits| 
+pt_rohan_cap_recruits| 
+pt_isengard_recruits| 
+pt_morannon_recruits| 
+pt_mordor_recruits| 
+pt_morgul_recruits| 
+pt_harad_recruits| 
+pt_rhun_recruits| 
+pt_khand_recruits| 
+pt_umbar_recruits| 
+pt_lorien_recruits| 
+pt_imladris_recruits| 
+pt_woodelf_recruits| 
+pt_moria_recruits| 
+pt_guldur_recruits| 
+pt_beorn_recruits| 
+pt_woodman_recruits| 
+pt_gundabad_recruits| 
+pt_gundabad_cap_recruits| 
+pt_dale_recruits| 
+pt_dwarf_recruits| 
+pt_dwarf_iron_recruits| 
+pt_dunland_recruits| 
+pt_caravan_survivors|Survivants d'une caravane

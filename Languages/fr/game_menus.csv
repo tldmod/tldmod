@@ -1,0 +1,1656 @@
+menu_start_game_1|^^^^^^^^^^Pour quoi vous battez-vous ?
+mno_start_good|L'AUBE d'une nouvelle ère
+mno_start_evil|Le CRÉPUSCULE des Hommes
+mno_spacer| 
+mno_go_back|Retour
+menu_start_phase_2|^^^^^ La Terre du Milieu. Une Ombre grandit à l'Est, ^ et de sombres choses qui ont longtemps été cachées arrivent. ^ Les Peuples libres se préparent à la guerre, une guerre telle qu'il n'en a pas été vue depuis un Âge. ^ les Hommes, les Elfes, les Nains et les Orques ; tous joueront leur rôle. ^^ Quel rôle, cependant, cela reste à voir...
+mno_continue|Continuer sur le chemin que vous avez choisi...
+mno_spacer| 
+menu_start_game_3|^^^^^^^^Choisissez votre scénario :
+mno_custom_battle_scenario_1| Escarmouche, Gondor contre Harad .
+mno_custom_battle_scenario_3| Escarmouche, Elfes contre Númenóréens Noirs .
+mno_custom_battle_scenario_4| Défense du Gouffre de Helm, Rohan contre Isengard .
+mno_custom_battle_scenario_5| Escarmouche, factions du Nord contre Rhûn.
+mno_custom_battle_scenario_6| Attaque de siège, Orques contre Nains.
+mno_custom_battle_scenario_7| Embuscade, Orques contre Mirkwood.
+mno_build_your_own_scene| ** Créez votre propre scène pour TLD ** .
+mno_go_back| Retour.
+menu_tutorial|^^TLD a de nombreuses fonctionnalités étrangères à Native. Celles ci sont décrites en détail dans le PDF inclus dans l'installation (en anglais), ou sur MundusBellicus.fr, dans la section TLD dans le sous-forum Mount&Blade.
+mno_go_back_dot|Retour.
+menu_reports|^^^{s9}
+mno_view_character_report|Voir le rapport des coûts d'entretiens.
+mno_view_character_report|Voir le rapport du Personnage.
+mno_view_party_size_report|Voir le rapport sur la taille du Groupe.
+mno_view_morale_report|Voir le rapport sur le moral du Groupe.
+mno_view_character_report_02|Vérifier l'état des PnJs.
+mno_view_faction_strengths_report|Voir le rapport de la force des factions.
+mno_view_traits_report|Voir les caractéristiques.
+mno_resume_travelling|Retourner au voyage.
+menu_custom_battle_2|^^^^^^{s16}
+mno_custom_battle_go|Commencer.
+mno_leave_custom_battle_2|Annuler.
+menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} troupes dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
+mno_continue|Continuer.
+menu_quick_battle_general_test|^^^Bataille actuelle : ^équipe A: {reg10} {s10}^^VS^^ équipe B: {reg11} {s11}
+mno_go_back|. Retour
+menu_quick_battle_general_test_select_a| 
+menu_quick_battle_general_test_select_b| 
+menu_quick_battle_troll|^^^^^^^^Choisissez votre scénario de Troll :
+mno_go_back|. Go back
+menu_quick_battle_wargs|^^^^^^^^Choisissez votre scénario-test de Warg :
+mno_go_back|. Go back
+menu_start_good|^^^^^^^^^^Choisissez votre race :
+mno_start_01|Homme
+mno_start_02|Elfe
+mno_start_03|Nain
+mno_spacer| 
+mno_go_back|Retour
+menu_start_evil|^^^^^^^^^^Qui voulez-vous servir ?
+mno_start_eye|Sauron du Mord, le Seigneur des Anneaux
+mno_start_hand|Saroumane d'Isengard, la Main Blanche
+mno_spacer| 
+mno_go_back|Retour
+menu_start_eye|^^^^^^^^^Votre maître est l’Oeil Sans Paupière^Choisissez votre race
+mno_start_1|un Orque, servant l’Oeil Sans Paupière
+mno_start_2|un Uruk, la nouvelle génération d'Orques
+mno_start_3|un Homme, subjugué par Sauron
+mno_spacer| 
+mno_go_back|Retour
+menu_start_hand|^^^^^^^^^Votre maître est la Main Blanche^Choisissez votre race
+mno_start_1|un Orque, servant la Main Blanche
+mno_start_2|un Uruk-hai, élevé en Isengard
+mno_start_3|un Homme de Dunland, les Plaines de l'Ouest
+mno_spacer| 
+mno_go_back|Retour
+menu_start_good_man|^^^^^^^^^^Choisissez votre peuple :
+mno_start_01|Le Gondor, le Royaume de la Tour Blanche
+mno_start_02|le Rohan, le peuple des Chevaux
+mno_start_05|Les Dúnedains, l'ancienne dynastie des Hommes
+mno_start_04|Les Béornides, le peuple de l'Ours
+mno_start_06|Dale, le Royaume du Nord
+mno_spacer| 
+mno_go_back|Retour
+menu_start_good_elf|^^^^^^^^^^Dans quelle forêt vivez-vous, Elfe ?
+mno_start_1|Fondcombe,du Seigneur Elrond
+mno_start_2|Lothlórien, de la Dame Galadriel
+mno_start_3|Mirkwood, terre des Elfes syvlains
+mno_spacer| 
+mno_go_back|Retour
+menu_start_good_dwarf|^^^^^^^^^^Sélectionnez votre lignée :
+mno_start_1|un habitant d'Erebor
+mno_start_2|un mineur des Collines de Fer
+mno_spacer| 
+mno_go_back|Retour
+menu_start_gondor|^^^^^^^^^^D'où venez-vous, au Gondor ?
+mno_start_1|de Minas Tirith, la capitale
+mno_start_3|du Lossarnach, le fief des porteurs de haches
+mno_start_4|du Lamedon, le fief des Clans des Montagnes
+mno_start_5|de Pinnath Gelin, le fief des Vertes Collines
+mno_start_6|de Dol Amroth, le fief des Chevaliers du Cygne
+mno_start_7|de Pelargir, le fied de la Côte
+mno_start_8|du Val de la Racine Noire, le fief des Archers
+mno_spacer| 
+mno_go_back|Retour
+menu_start_eye_man|^^^^^^^^^^Sélectionnez votre peuple:
+mno_start_1|Les Haradrim, le peuple du Sud
+mno_start_2|Les Númenóréens Noirs, les renégats de l'Ouest
+mno_start_3|Umbar, les pirates des Mers du Sud
+mno_start_4|Rhûn, les barbares de l'Est
+mno_start_5|Khand, le peuple sauvage du Sud--est
+mno_spacer| 
+mno_go_back|Retour
+menu_start_eye_orc|^^^^^^^^^^Où rôdez-vous ?
+mno_start_1|dans les armées massées au Mordor
+mno_start_3|dans les caves de Dol Guldur
+mno_spacer| 
+mno_go_back|Retour
+menu_start_hand_orc|^^^^^^^^^^Où rôdez-vous ?
+mno_start_1|dans les armées massées en Isengard
+mno_start_2|dans les mines de la Moria
+mno_start_3|dans les collines du Mont Gundabad
+mno_spacer| 
+mno_go_back|Retour
+menu_start_gondor_mt|^^^^^^^^^^Sélectionnez votre lignage :
+mno_start_1|Roturier
+mno_start_2|Noble
+mno_spacer| 
+mno_go_back|Retour
+menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un Homme du Désert.^Sélectionnez votre lignée :
+mno_start_1|Homme du Désert
+mno_start_2|Homme des tribus du Harad Lointain
+mno_spacer| 
+mno_go_back|Retour
+menu_choose_gender|^^^^^^^^^^Votre sexe ?
+mno_start_male|Homme
+mno_start_female|Femme
+mno_spacer| 
+mno_go_back|Retour
+menu_choose_skill|^^^^^^^^POUR LES DEVS :^*normallement*, à ce point^vous voudrez modifier les compétences^et faire face...
+mno_skip|SAUTEZ CA : laissez-moi tester maintenant
+mno_continue|Procéder normalement
+menu_auto_return|Ce menu revient automatiquement à l'appelant.
+menu_morale_report|^^{s1}
+mno_continue|Continuer...
+menu_faction_orders|{s9}
+mno_go_back_dot|Retour.
+menu_character_report|^^^^^Moral du groupe : {reg8}^Limite du groupe : {reg7}^
+mno_continue|Continuer...
+menu_upkeep_report|{s12}
+mno_continue|Continuer...
+menu_party_size_report|^^^^{s1}
+mno_continue|Continuer...
+menu_faction_strengths_report|{s1}
+mno_continue|Continuer...
+menu_traits_report|{s1}
+mno_continue|Continuer...
+menu_camp|^^^^Vous êtes dans {s1}.{s2}^^Que voulez-vous faire ?
+mno_camp_scene|Se promener.
+mno_camp_troop|Passer en revue {reg10? troupes:}{reg12?et:}{reg11? prisonniers:}.
+mno_camp_action|Utiliser un objet.
+mno_camp_wait_here|Camper ici pour quelque temps.
+mno_camp_options|Changer les options de TLD.
+mno_resume_travelling|Retourner au voyage.
+menu_camp_mvtest|Que voulez-vous tester aujourd'hui ?
+mno_camp_mvtest_back|Retour au menu du camp.
+menu_mvtest_destroy_faction|Choisissez une faction à vaincre :
+mno_continue|Retour au menu test.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+mno_kill_faction|{s10}.
+menu_mvtest_facstr_report|{s1}
+mno_continue|Retour au menu de test.
+menu_mvtest_facai_report|{s1}
+mno_details|Rapport de faction détaillé...
+mno_continue|Retour au menu principal de test.
+menu_mvtest_facai_details|{s1}
+mno_change|Changer de faction : {s7}
+mno_defeat|Définir la puissance de la faction à -1000 (défaite).
+mno_dying|Définir la puissance de la faction à 300 (agonie).
+mno_spent|Définir la puissance de la faction à 600 (déclin).
+mno_continue|Retour à la faction IA.
+menu_mvtest_faction_casualties|{s1}
+mno_next|Faction précédente
+mno_next|Faction suivante
+mno_continue|Retour au menu principal de test.
+menu_mvtest_town_wealth_report|{s1}
+mno_change|Changer de faction : {s7}
+mno_continue|Retour au menu principal de test.
+menu_mvtest_sieges|Tester les sièges
+mno_continue|Retour au menu principal de test.
+menu_mvtest_order_siege|Ordonnez à {s1} d'assiéger...
+mno_continue|Retour au menu siège.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+mno_siege_town|{s10}.
+menu_mvtest_advcamps|Test advance camps
+mno_continue|Continuer...
+menu_mvtest_cutscenes|Choisissez une option :
+mno_intro|Jouer l'intro
+mno_joke|Play GA joke.
+mno_continue|Retour au menu de test principal
+menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
+mno_game_options_restrict_items|Equipement du joueur restreint : {s7}
+mno_game_options_formations|Formations de bataille et IA : {s7}
+mno_game_options_town_menu|PnJs des villes toujours disponibles depuis les menus : {s7}
+mno_game_options_cutscenes|Cinématiques : {s7}
+mno_game_options_injuries|Blessures pour les compagnons : {s7}.
+mno_game_options_death|Mort permanente pour les seigneurs et les compagnons : {s7}.
+mno_game_options_death2|Mort permanente pour le joueur (c'est VOUS !) : {s7}.
+mno_game_options_strat|Astuces de stratégie...
+mno_game_options_back|Retour au menu de camp.
+menu_camp_strat_tweaks|^^^^^^^^Cliquez sur une option pour basculer : ^(attention : c'est de la triche !)
+mno_strat_tweaks_siege_reqs|Force requise pour les sièges : {s7}
+mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
+mno_strat_tweaks_regen_rate|Taux de régénération de rate: {s7}
+mno_strat_tweaks_siege_regen_limit|Les factions ne se régénèrent pas en-dessous : {reg1}
+mno_strat_tweaks_back|Retour au menu des options.
+menu_camp_chest_fill|^^^^^^^^Choisissez une faction pour en obtenir des objets.
+mno_go_back|Retour
+menu_cheat_change_race|^^^^^Choisissez votre race :^^Note : vous devriez revoir votre personnage dans le générateur de faces après avoir effectué ce changement.
+mno_go_back|Retour
+menu_camp_action|^^^^^^^^^ Quel objet ?
+mno_camp_drink_water|Buvez l'Eau des Ents !
+mno_camp_action_4|Retour.
+menu_assasins_attack_player_won|Vous avez vaincu avec succès les assassins de {s2}, envoyé par {s3}.
+mno_continue|Continuer...
+menu_assasins_attack_player_retreat|Vous vous êtes échappé en vie !
+mno_continue|Continuer...
+menu_assasins_attack_player_defeated|Vous ne devriez pas lire ceci...
+menu_fangorn_danger|^^^^^^Étrange, vous entendez des bruits menaçants autour de vous.^Les arbres parlent-ils ? Il y a une sensation de profond danger et de douleur dans l'air. ^Vos ordres ?
+mno_be_quiet_elf|Respectez le courroux des arbres. Circulez tranquillement.
+mno_be_quiet|Baissez vos armes et restez calmes ! Maintenant, hors d'ici !
+mno_be_bold|Continuez ! Je n'ai pas peur des plantes ou des vieilles légendes !
+mno_fight_back|Allons voir ! Explorez la zone ! Brûlez un arbre ou deux !
+menu_fangorn_search_fails|^^^^^^Vous explorez la profonde et obscure forêt, mais ne trouvez rien. ^Malgré tout, vous vous sentez de plus en plus observé et menacé.
+mno_ok|Continuer...
+menu_fangorn_battle_debrief|vous ne devriez pas lire ceci
+menu_fangorn_battle_debrief_won|^^^Une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
+mno_ok_|Continuer...
+menu_fangorn_killed_player_only|^^^^^^Vous vous promenez dans l'épaisse forêt.^Tout d'un coup, vous êtes frappé par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête.^Vous restez inconscient seulement quelques minutes. Vous êtes gravement blessés, mais vous pouvez continuer.
+mno_leave|Ouch ! Quittons cet endroit maudit !
+menu_fangorn_killed_troop_and_player|^^^^^^Vous vous promenez dans l'épaisse et sombre forêt.^^Tout d'un coup, vous êtes frappé par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête.^^Lorsque vous revenez à vous, quelques minutes plus tard, vous vous apercevez qu'aucune de vos troupes n'a eu autant de chance.^^
+mno_leave|Ouch ! Quittons cet endroit maudit !
+menu_fangorn_killed_troop_only|^^^^^^^^Vous vous promenez dans l'épaisse et sombre forêt. Vos troupes sont effrayées.^^Soudain, vous entendez des hurlements à l’arrière ! Vous vous dépêchez d'y aller, et trouver certaines de vos troupes sur le sol, au milieu d'une mare de sang.^^Quelques autres sont portés disparus...
+mno_leave|Quittons cet endroit maudit !
+menu_can_capture_troll|Le Troll sauvage abattu respire encore !^^Ces yeux mauvais ne vous quittent pas, remplis de douleur et de rage.^Même à terre, baignant dans son propre sang, il semble terriblement dangereux...
+mno_killit|Dispersez-vous, maintenant. Assurez-vous qu'il meurt.
+mno_cageit1|Enfermez-le dans une cage
+mno_cageit2|Enfermez-le avec l'autre Troll.
+menu_cheat_free_magic_item|Quel article magique gratuit voulez-vous ?
+mno_cheat_free_magic_item_back|Retour
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+mno_mi|{s20}
+menu_cheat_impose_quest| Quête actuellement imposée :^{s20}^^Quelle quête voulez-imposer?^(Aucune autre quête ne sera donnée)
+mno_back|retour
+mno_none|aucun
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+mno_mi|{s21}
+menu_teleport_to_town_part_two|^^^^^^^^Chevaucher Grispoil:^Vers quelle ville?{s11}?
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_go_to_town_|{s10}.
+mno_teleport_back|Non, un autre royaume.
+menu_teleport_to_town|^^^^^^^^Chevaucher Grispoil:^Vers quel royaume?
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_go_to_town|{s10}.
+mno_teleport_neutrals|Autres/Neutres
+mno_teleport_others_factions|Plus...({reg5}/3)
+mno_teleport_back|Retour au menu du camp.
+menu_select_any_troop|Choisir des troupes:^^^Paramètres de recherche actuels:^Faction: {s10}^Race: {s13}^Grade: {s11}^{s12}
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_trp|{s11} (lvl:{reg11})
+mno_prev_page|[Page précédente]
+mno_next_page|[Page suivante]
+mno_opt|[Option de recherche]
+mno_go_back|[Terminé]
+mno_go_back|[Annuler]
+menu_select_any_troop_setup_search|Ajouter des troupes: mise en place de recherche de paramètres^^^Paramètres actuels:^Faction: {s10}^Race: {s13}^Niveau: {s11}^{s12}
+mno_one|[Changer de niveau]
+mno_facup|[Faction précédente]
+mno_facdown|[Faction suivante]
+mno_raceup|[Race précédente]
+mno_racedown|[Race suivante]
+mno_three|[Réguliers ou Héros]
+mno_go_back|[Fait]
+menu_camp_cheat|Menu d'autres codes de triche (à des fins de développement):^^Nous les développeurs avons créé ce menu pendant que nous travaillons à l'amélioration du mod. Si vous activez cette fonction, apparaîtra alors un menu de CODES DE TRICHE supplémentaire dans les autres menus du jeu. Prière de ne pas faire de rapports à propos d'éventuels bogues car ceci n'a pour vocation que le test.
+mno_cheat_back|Retour au menu du camp
+menu_drank_ent_water_human|^^^Vous buvez l'eau. Elle a un goût clair et rafraîchissant. Elle a un parfum agréable, semblable au musc.^Vous vous sentez revigoré.^^Cependant, vous gardez aussi une sensation étrange et anormale. Quelque chose vous dit qu'il vaudrait mieux ne jamais, au grand jamais boire à nouveau de cette eau.
+mno_ok_|Continuer.
+menu_drank_ent_water_orc|^^^Vous vous désaltérez. Ce n'est que de l'eau.^Soudain, vous vous saisissez la gorge dans un raptus de douleur.^Empoisonné!^Vous étouffez, vomissez du sang noir, vous êtes aux portes de la mort.^^Quelle douleur, oh une douleur abominable.
+mno_ok_|Je... survivrai!
+menu_end_game|^^^^^Vous avez pris votre décision, vous décidâtes d'abandonner votre vie d'aventurier et de vous assagir. Vous vendez vos armes et armures, rassemblez vos effets personnels et chevauchez vers le soleil couchant...
+mno_end_game_bye|Adieu.
+menu_cattle_herd|Vous rencontrez plusieurs individus.
+mno_cattle_drive_away|Ordonner leur de vous suivre
+mno_cattle_stop|Les mener jusqu'à la prochaine halte.
+mno_leave|Partir.
+menu_simple_encounter|^^^^^{s2}^Vous possédez {reg22} troupes fin prêtes pour affronter {reg11}.^^La bataille se déroule à {s3}{s4}.^^Vos ordres?
+mno_encounter_attack|{reg21?Chargez-les:Préparez-vous à leur faire face}.
+mno_encounter_order_attack|Ordonner à vos troupes d' {reg21?attaquer:les affronter} sans vous.
+mno_special_whip|Ruez-vous sur eux pour percer le {s4}.
+mno_encounter_leave|Battre en retraite.
+mno_encounter_retreat|Se retirer du combat en laissant quelques soldats derrière vous pour couvrir votre retraite.
+menu_encounter_retreat_confirm|^^^^^En tant que membre ayant les talents tactiques les plus développés, ({reg2}), {reg3?vous élaborez:{s3} imagine} un plan qui vous permettra de sauver votre vie et celle de vos hommes {reg4}, en contrepartie vous devrez laisser des soldats derrière pour juguler la poursuite ennemie.
+mno_leave_behind|Continuer. Le sacrifice de ces braves épargnera les autres.
+mno_dont_leave_behind|Non. Nous ne laissons personne derrière.
+menu_encounter_retreat|^^^^^Vous annoncez à {reg4} de vos troupes de retenir l'ennemi pendant que vous battez en retraite avec le reste de vos soldats.
+mno_continue|Continuer...
+menu_order_attack_begin|^^^^^^ Vos troupes se préparent à engager l'ennemi.
+mno_order_attack_begin|Déclencher l'attaque.
+mno_call_back|Les rappeler.
+menu_order_attack_2|^{s4}^Vos pertes: {s8}^^Les pertes ennemies: {s9}
+mno_order_attack_continue|Ordonner à vos soldats de continuer l'attaque.
+mno_order_retreat|Rappeler vos soldats
+mno_continue|Continuer...
+menu_kingdom_army_quest_report_to_army|{s8} vous envoie cette missive pour vous signaler qu'il souhaiterait vous voir participer à sa nouvelle campagne militaire. Pour rejoindre cette armée, vous devez contribuer à hauteur de {reg13} troupes minimum et avez l'ordre de recruter incontinent plus de guerriers si vos rangs sont trop clairsemés.
+mno_reject|Renvoyer que vous êtes trop occupé.
+mno_continue|Renvoyer que vous vous joindrez à lui d'ici peu.
+menu_kingdom_army_quest_messenger|{s8} vous envoie ce message car il désire s'entretenir avec vous au sujet d'une tâche qu'il lui faut accomplir. Il requiert votre présence dans les plus brefs délais.
+mno_continue|Continuer...
+menu_kingdom_army_quest_join_siege_order|{s8} ,à travers ce message, vous intime l'ordre de rejoindre le siège de {s9} en préparation d'un assaut total. Vos troupes doivent prendre {s9} à tous prix.
+mno_continue|Continuer...
+menu_kingdom_army_follow_failed|Vous avez désobéi aux ordres et n'avez pas suivi {s8}. Il vous envoie ce mot dans lequel il imagine que vous aviez, sans doute, d'autres affaires éminemment plus urgentes à régler mais vous prévient que sa patience à des limites!
+mno_continue|Continuer...
+menu_battle_debrief|{s11}^Vos pertes:{s8}{s10}^^Pertes adverses:{s9}
+mno_inspect_troll|Inspecter le troll à terre.
+mno_continue|Continuer...
+menu_total_victory|Vous ne devriez pas lire cela... {s9}
+mno_continue|Continuer...
+menu_enemy_slipped_away|^^^^^{s17}
+mno_continue|Continuer...
+menu_total_defeat|Vous ne devriez pas lire cela...
+menu_permanent_damage|^^^^^{s0}
+mno_s0|{s0}
+menu_pre_join|^^^^^Vous tomber sur un combat entre {s2} et {s1}. Vous décider de...
+mno_pre_join_help_attackers|Vous précipiter pour aider {s2}.
+mno_pre_join_help_defenders|Prêter main forte à {s1}.
+mno_pre_join_leave|Ne pas s'en mêler
+menu_join_battle|^^^Vous aidez {s2} contre {s1}.^ Vous avez {reg22} soldats prêts à en découdre face à {reg11} ennemis.^^Le bataille a lieu à {s3}{s4}.
+mno_join_attack|Charger l'ennemi
+mno_join_order_attack|Ordonner à vos troupes de charger sous les ordres de votre allié pendant que vous restez à l'arrière.
+mno_join_leave|Battre en retraite.
+mno_join_cheat_heal|CODE: s'auto-soigner.
+menu_join_order_attack|{s4}^^Vos pertes: {s8}^^Pertes alliées: {s9}^^Pertes ennemies: {s10}
+mno_continue|Continuer...
+menu_test_scene|Vous entrez dans la zone d'essai.
+mno_enter|Entrer
+mno_leave|Partir
+menu_battlefields|^^^^^^^^^Sélectionner un champ...
+mno_enter_f1|Champ 1
+mno_enter_f2|Champ 2
+mno_enter_f3|Champ 3
+mno_enter_f4|Champ 4
+mno_enter_f5|Champ 5
+mno_leave|Partir.
+menu_join_siege_outside|^^^^^^{s1} vient d'être assiégé par {s2}.
+mno_approach_besiegers|Approcher du camp de siège.
+mno_pass_through_siege|Traverser les lignes et entrer dans {s1}.
+mno_leave|Partir.
+menu_cut_siege_without_fight|Les assiégeants vous laissent approcher des portes sans intervenir.
+mno_continue|Continuer...
+menu_besiegers_camp_with_allies|{s1} est assiegé. Les bannières de {s2} flottent au-dessus du camp des assiégeants, où vous et vos troupes sont bien accueillies.
+mno_talk_to_siege_commander|Demander une audience avec le commandant.
+mno_join_siege_with_allies|Rejoindre le prochain assaut.
+mno_join_siege_stay_back|Ordonner à vos hommes de rejoindre le prochain assaut sans vous.
+mno_leave|Quitter.
+menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des Nains de se réinstaller dans la Moria. Tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Parcourant les pages, vous tombez sur les mots « vrai-argent » ! Etudiant les pages avec attention, vous réalisez soudain que ce sont les descriptions de caches naines quelque part dans les niveaux inférieurs. Ha ! Cela ne sera-t-il pas formidable de retrouver le mithril nain, perdu depuis si longtemps ? ^Vous suivez avec impatience la direction indiquée, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs... ^...^Après quelques heures de recherches infructueuses vous comprenez que vous êtes perdu au plus profond de la Moria, et que vous devez trouver un moyen de sortir.
+mno_moria_exit_scene|Trouvez la sortie !
+menu_castle_outside|Vous êtes à l'extérieur de {s2}.{s11} {s3} {s4}
+mno_moria_enter|Retourner au hall principal de la Moria par l'entrée secrète.
+mno_moria_enter_door|Entrer dans la Moria.
+mno_moria_secret|{s12}
+mno_moria_exit_scene|CHEAT: steal book now
+mno_moria_exit_scene_door|Prendre le livre.
+mno_town_sneak|Non.
+mno_castle_start_siege|Non.
+mno_cheat_castle_start_siege|Non.
+mno_castle_leave|Quitter
+menu_castle_besiege|Vous assiégez {s1}. {s2} {s3}
+mno_siege_request_meeting|Demander un entretien avec le commandant du château.
+mno_wait_24_hours|Attendre jusqu'à demain.
+mno_castle_lead_attack|Mener vos soldats à l'assaut.
+mno_attack_stay_back|Ordonner à vos soldats d'attaquer alors que vous restez derrière....
+mno_build_ladders|Préparer des échelles pour attaquer les murs.
+mno_cheat_castle_lead_attack|CHEAT: Instant build equipments.
+mno_lift_siege|Abandonner. 
+menu_siege_attack_meets_sally|^^^^^^Les défenseurs font une sortie pour contrer votre assaut..
+mno_continue|Continuer...
+menu_castle_besiege_inner_battle|{s1}
+mno_continue|Continuer...
+menu_construct_ladders|En tant que membre du groupe avec la plus haute compétence d’Ingénierie ({reg2}), {reg3?vous estimez:{s3} estime} qu'il faudra {reg4} heures pour construire assez d'échelles pour l'assaut.
+mno_build_ladders_cont|Allez-y..
+mno_go_back|Retour.
+menu_castle_attack_walls_simulate|{s4}^^Vos pertes : {s8}^^Les pertes ennemies : {s9}
+mno_continue|Continuer...
+menu_castle_attack_walls_with_allies_simulate|{s4} ^^Vos pertes : {s8}^^Les pertes de vos alliés : {s9}^^Les pertes ennemies : {s10}
+mno_continue|Continuer...
+menu_castle_taken_by_friends|Il n'y a rien à voir ici.
+menu_castle_taken|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total {reg2?de la ville:du château}. {reg1? Il semble que rien ne vous empêche de le garder pour vous-même...:}
+mno_continue|Continuer...
+menu_castle_taken_2|{s3}est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total du château. Il est temps d'envoyer un messager à {s9} pour annoncer votre victoire. {s5}
+mno_castle_taken_no_claim|Ne demander aucune récompense.
+menu_siege_started_defender|{s1} lance un assaut contre les murs de {s2}. Vous avez {reg22} troupes prêtes au combat contre les {reg11} de l'ennemi. Vous décidez de...
+mno_siege_defender_join_battle|Rejoindre la bataille.
+mno_siege_defender_troops_join_battle|Ordre à vos hommes de rejoindre la bataille sans vous.
+menu_siege_join_defense|{s4}^^Vos pertes : {s8}^^Pertes de vos alliés : {s9}^^Pertes ennemies : {s10}
+mno_continue|Continuer...
+menu_village_hunt_down_fugitive_defeated|^^^^^Le coup de massue du fuyard vous jette à terre, votre vision se brouille et un voile noir tombe sur vos yeux. Le temps passe. Lorsque vous rouvrez vos yeux, vous vous découvrez blessé et sanglant, mais par chance aucune de vos blessures ne semble mortelle.
+mno_continue|Continuer...
+menu_town_bandits_failed|^^^^^{s4} {s5}
+mno_continue|Continuer...
+menu_town_bandits_succeeded|^^^^^Les Gobelins sont fauchés comme le blé par vos coups ! Bientôt vous vous tenez seul, tous vos attaquants gisent inconscients, morts ou mourants. Les locaux vous seront vraisemblablement très reconnaissant de les avoir sauvé de cette menace.
+mno_continue|Continuer...
+menu_town_brawl_lost|^^^^^^Vous avez été assommé. Les gens que vous avez attaqué vous fouillent rapidement, à la recherche de marchandises de valeur, avant de reprendre leur activité journalière.
+mno_continue|Continuer...
+menu_town_brawl_won|^^^^^Vous avez battu tous les adversaires et les gardes sont envoyés pour réprimer les troubles. Vous les détroussez rapidement, avant de vous éclipser jusqu'à ce que les choses se tassent. ^La prochaine fois, ils vous montreront peut-être plus de respect et reculeront.
+mno_continue|Continuer...
+menu_close|Rien.
+menu_town|Vous êtes arrivé à {s60}.{s12}{s13}
+mno_town_menu_0|Aller dans en endroit.
+mno_town_menu_0_door|Porte vers un endroit.
+mno_town_approach|Approcher de {s1}...
+mno_town_castle|Aller à {s1}.
+mno_town_castle_door|Porte vers le château.
+mno_town_center|Marcher jusqu'à la place principale.
+mno_town_center_door|Porte jusqu'au centre-ville.
+mno_aw_chamber|Never: Enter the AW chamber.
+mno_aw_chamber_door|Ouvrir la porte.
+mno_trade_with_arms_merchant|Visiter le {s40}.
+mno_trade_with_horse_merchant|Visiter le {s41}.
+mno_town_prison|Never: Entrer dans la prison.
+mno_town_prison_door|Porte vers la prison.
+mno_dungeon_enter|Entrer dans les cellules.
+mno_dungeon_enter_door|Ouvrir la porte.
+mno_talk_to_castle_commander|Visiter la caserne de {s61}.
+mno_speak_with_elder|Parler avec l'{s6}.
+mno_castle_wait|{s1}.
+mno_town_cheat_alley|CHEAT
+mno_castle_cheat_interior|CHEAT
+mno_castle_cheat_town_exterior|CHEAT
+mno_castle_cheat_dungeon|CHEAT
+mno_castle_cheat_town_walls|CHEAT
+mno_cheat_town_start_siege|CHEAT
+mno_center_reports|CHEAT
+mno_sail_from_port|CHEAT
+mno_isengard_underground|Aller vers les cavernes souterraines.
+mno_tirith_toplevel|Grimper au dernier niveau.
+mno_town_leave|Quitter...
+mno_town_leave_door|Quitter la zone.
+menu_disembark|Voulez-vous débarquer ?
+mno_disembark_yes|Oui.
+mno_disembark_no|Non.
+menu_ship_reembark|Voulez-vous embarquer ?
+mno_reembark_yes|Oui.
+mno_reembark_no|Non.
+menu_center_reports|Nom de la ville : {s1}^Revenu de location : {reg1} denars^Recettes douanières : {reg2} denars^Stock de nourriture : pour {reg3} jours
+mno_go_back_dot|Retour.
+menu_sneak_into_town_suceeded|Déguisé dans les vêtements d'un pauvre pèlerin, vous dupèrent les gardes et purent entrer dans la ville.
+mno_continue|Continuer...
+menu_sneak_into_town_caught|Alors que vous essayiez de vous faufiler dans la ville, un des gardes vous reconnu et sonna l'alarme! Vous devez fuir par les portes avant que tous les gardes de la ville ne vous tombent dessus!
+mno_sneak_caught_fight|Essayez de vous frayer votre sortie en vous battant!
+mno_sneak_caught_surrender|Se rendre!
+menu_sneak_into_town_caught_dispersed_guards|Vous semez les gardes et couvrez vos traces avant de vous enfuir, en perdant facilement vos poursuivants dans le dédale des rues.
+mno_continue|Continuer...
+menu_sneak_into_town_caught_ran_away|Vous parcourez le chemin jusqu'aux portes et vous repliez rapidement dans la sécurité de l'extérieur de la ville.
+mno_continue|Continuer...
+menu_auto_training_ground_trainer|talon
+menu_tld_player_defeated|^^^^^Soudainement une douleur accablante s'abat sur l'arrière de votre tête! \ Vous vous affaissez alors que votre vue s'assombrit. \ Est-ce votre fin?
+mno_continue|Continuer...
+menu_recover_after_death_fangorn|Vous vous réveillez. La forêt est toujours autour de vous. Souffrant de tout votre corps, par miracle, vous êtes vivant.^^ Ce fût une défaite, mais au moins vous furent capable de voir ce qui se passa. ^Maintenant vous savez ce qui se passe dans cette maudite forêt,^ et vous avez survécut pour le raconter. ^^Quelqu'un pourra vous croire une jour?
+mno_ok_|Continuer...
+menu_recover_after_death_moria|^^^^^Vous reprenez conscience. Etendu sur un sol mou, l'air frais soufflant sur votre visage. vous êtes dehors!^Les orcs ont dut vous prendre pour mort et jeté dans une sombre crevasse.^Vous avez dut être transporté vers la surface par un courant sous-terrain.
+mno_whatever|Levez-vous!
+menu_recover_after_death_default|^^^^^Vous reprenez conscience, étendu là où vous êtes tombé. Les ennemis ont dû vous croire mort et laissé là. Quimporte, il semble qu'aucune de vos blessures n'ait été fatale et bien que vous vous sentiez vraiment mal, vous pouvez toujours marcher. Vous essayez de vous lever afin de retrouver des survivants de votre camp.
+mno_continue|Continuer...
+menu_recover_after_death_town|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant! Personne n'est dans les environs et vous prenez votre opportunité de sortir de la ville; Il semble qu'aucune de vos blessures n'ait été fatale. Et bien que vous vous sentiez vraiment mal, vous pouvez marcher.
+mno_continue|Continuer...
+menu_recover_after_death_town_alone|Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant! Personne n'est près de vous et vous prenez votre opportunité de sortir de la ville. Vos compagnons vous trouvent. Il semble qu'aucune de vos blessures n'est fatale, bien que vous vous sentiez vraiment mal vous pouvez marcher.
+mno_continue|Continuer...
+menu_notification_center_under_siege|{s1} A été assiégé par {s2} de {s3}!
+mno_continue|Continuer...
+menu_notification_one_side_left|^^^^^La guerre de l'anneau est terminée!^ {s1} ont défaits tous leurs ennemis et sont victorieux!
+mno_continue|Continuer...
+menu_notification_total_defeat|^^^^^La guerre de l'anneau est terminée pour vous!^^Les {s1} ont été défaits par leurs ennemis et vous restez seul dans la défaite!
+mno_continue|Continuer...
+menu_notification_your_faction_collapsed|^^^^^Votr e{s11} patrie a été défaite!^ Il reste vos alliés dans cette guerre. Ensemble avec ceux qu'il reste de votre peuple {11} pouvez toujours aidez votre camp à emporter la victoire.
+mno_continue|Continuer...
+menu_notification_faction_defeated|^^^^^{s1} est vaincue!^{s1} N'est plus, défaite par les forces de {s13}!
+mno_continue|Continuer...
+menu_ruins|^^^^Vous approchez de{s1}. Un ancien puissant camp a été rasé, mais vous pouvez toujours voir les traces de fortifications et d'armes rouillées.
+mno_continue|Partir.
+menu_legendary_place|^^^^Vous avez suivi les rumeurs et trouvé {s1}. Vous pouvez maintenant explorer ces lieux par vous même et voir si les rumeurs sont vraies.
+mno_explore|Explorer ce lieu.
+mno_continue|Partir.
+menu_auto_return_to_map|stub
+menu_auto_player_garrison|stub
+menu_auto_player_garrison_2|stub
+menu_auto_town_brawl|stub
+menu_auto_intro_rohan|stub
+menu_auto_intro_gondor|stub
+menu_auto_intro_mordor|stub
+menu_auto_intro_joke|stub
+menu_auto_convo|stub
+menu_auto_conversation_cutscene|stub
+menu_starting_quest_good|^^^^^^Vous apercevez une petite caravane, attaquée par une bande d'Orques. Que voulez-vous faire ?
+mno_help|Aider les étrangers !
+mno_go_your_way|Les laisser se débrouiller.
+menu_starting_quest_victory|Nul
+menu_custom_battle_choose_faction1|^^^^^^^^^^Chois issez votre camp et votre avantage :
+mno_go_back|Retour.
+menu_custom_battle_choose_faction2|^^^^^^^^^^Chois issez une faction du Bien
+mno_go_back|Retour.
+menu_custom_battle_choose_faction3|^^^^^^^^^^Chois issez une faction du Mal
+mno_go_back|Retour.
+menu_ancient_ruins|Vous approchez d'une zone de la forêt fortement protégée...
+mno_rescue_mission|Se faufiler dans l'antre du sorcier avec la couverture de la nuit.
+mno_next_rescue_scene| 
+mno_next_rescue_scene_door|Continuer à avancer !
+mno_pick_troops1|Choisissez des compagnons pour la mission, {reg0} sélectionnés
+mno_leave|Quitter.
+menu_pick_troops|Qui voulez-vous emmener dans la mission furtive ? Pour l'instant, vous avez sélectionné {reg0} compagnons. Vous pouvez emmener jusqu'à 10 troupes avec vous.
+mno_troop1|{s1}: {reg1}
+mno_troop2|{s2}: {reg2}
+mno_troop3|{s3}: {reg3}
+mno_troop4|{s4}: {reg4}
+mno_troop5|{s5}: {reg5}
+mno_troop6|{s6}: {reg6}
+mno_troop7|{s7}: {reg7}
+mno_troop8|{s8}: {reg8}
+mno_troop9|{s9}: {reg9}
+mno_go_forward|Fin de la sélection des compagnons et continuer.
+menu_burial_mound|Vous approchez du tumulus funéraire de {s1} de {s2}. Il est fait avec les armes de ses ennemis tombés au combat.
+mno_pay_respects|S'agenouiller et présenter ses respects.
+mno_swear_oath|Prêter serment de vengeance ! 
+mno_despoil|Profaner le site.
+mno_leave|Quitter le tumulus.
+menu_burial_mound_respects|Vous vous agenouillez et présentez vos respects à {s1}, murmurant une prière pour un rapide voyage vers l'au-delà. Il n'y a rien de plus à faire ici.
+mno_leave|Quitter le tumulus.
+menu_burial_mound_oath|Vous prêtez haut et fort serment de venger la mort de {s1}. Vous jurer de traquer sans relâche les forces de {s2} et de les détruire. Vos mots ont porté loin avec le vent, et qui sait s'ils ne furent pas entendus au-delà de la mer ?
+mno_leave|Quitter le tumulus.
+menu_burial_mound_despoil|Vous démolissez le monument de {s1} de vos propres mains, et souillez les pierres avec des malédictions, des chants déchus et des actes innommables. Vos partisans restent en retrait par peur de la mort, mais semblent avoir une déférence renouvelée envers votre méchanceté.
+mno_leave|Quitter le tumulus.
+menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
+mno_swear_oath|Prêter serment de vengeance ! 
+mno_leave|Quitter le bûcher.
+menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
+mno_ruin_menu_0|Explorer la zone.
+mno_ruin_leave|Quitter.
+menu_premutiny|Aucun.
+menu_mutiny|{s1}
+mno_leave|Quitter.
+menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode (you need to switch edit mode ON in M&B lauching screen Options first). You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder) to the dev team of TLD, and if your scene is good, it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places, unless you are experienced scene-maker and know how to bar AI troops from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+mno_scene1|Champ de bataille 5 (fichier scn battlefield5.sco)
+mno_scene2|Champ de bataille 6 (fichier scn battlefield6.sco)
+mno_scene3|Champ de bataille 7 (fichier scn battlefield7.sco)
+mno_scene4|Champ de bataille 8 (fichier scn battlefield8.sco)
+mno_scene5|Champ de bataille (fichier scn battlefield9.sco)
+mno_leave|Retour...
