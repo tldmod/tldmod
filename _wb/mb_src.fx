@@ -6966,3 +6966,156 @@ technique map_scribble_shader_SHDWNVIDIA
       PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
    }
 }
+
+
+// FACE SHADERS for orcs (red eye glowing at night)  (mtarini)
+////////////////////////////////////////////////////////////
+
+struct PS_INPUT_REDEYE
+{
+	float4 Color				: COLOR0;
+	float2 Tex0					: TEXCOORD0;
+	float4 SunLight				: TEXCOORD1;
+	float4 ShadowTexCoord		: TEXCOORD2;
+	float2 ShadowTexelPos		: TEXCOORD3;
+    float  EyeColor             : TEXCOORD4;
+};
+struct VS_OUTPUT_REDEYE
+{
+   float4 Pos					: POSITION;
+   float4 Color					: COLOR0;
+   float2 Tex0					: TEXCOORD0;
+   float4 SunLight				: TEXCOORD1;
+   float4 ShadowTexCoord		: TEXCOORD2;
+   float2 ShadowTexelPos		: TEXCOORD3;
+   float  Fog				    : FOG;
+   float  EyeColor              : TEXCOORD4;
+};
+
+VS_OUTPUT_REDEYE vs_face_redeye (uniform const int PcfMode, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT_REDEYE Out = (VS_OUTPUT_REDEYE)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   // red eye effect begin:
+   float3 vViewN = normalize(mul((float3x3)matWorldView, vNormal)); //normal in view space
+   
+   // next two lines increase eye redness radius up:
+   vViewN.y = (vViewN.y<0)?min(vViewN.y+0.2,0):vViewN.y; vViewN = normalize(vViewN);
+   float v = vViewN.z*vViewN.z;
+   v = v*v*v;
+   v = v*v*v;
+   Out.EyeColor = v*v; 
+   float night = clamp(1.28*(0.9-vSunColor.x),0.15,1.0); 
+   Out.EyeColor *= night;
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+	//directional lights, compute diffuse color
+	diffuse_light += max(0, dot(vWorldN, -vSkyLightDir)) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0.2f * (wNdotL + 0.9f), wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = vMaterialColor * vColor * diffuse_light;
+
+	//shadow mapping variables
+	float wNdotSun = dot(vWorldN, -vSunDir);
+	Out.SunLight =  max(0.2f * (wNdotSun + 0.9f),wNdotSun) * vSunColor * vMaterialColor * vColor;
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+PS_OUTPUT ps_face_redeye(PS_INPUT_REDEYE In, uniform const int PcfMode)
+{
+    PS_OUTPUT Output;
+    
+    float4 tex1_col = tex2D(MeshTextureSampler, In.Tex0);
+    float4 tex2_col = tex2D(Diffuse2Sampler, In.Tex0);
+    
+    float4 tex_col;
+    
+    tex_col = tex2_col * In.Color.a + tex1_col * (1.0f - In.Color.a);
+    
+    tex_col.rgb = pow(tex_col.rgb, input_gamma);
+    
+	if ((PcfMode != PCF_NONE))
+    {
+		float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
+//		sun_amount *= sun_amount;
+		Output.RGBColor =  tex_col * ((In.Color + In.SunLight * sun_amount));
+    }
+    else
+    {
+    	Output.RGBColor = tex_col * (In.Color + In.SunLight);
+	}
+    // gamma correct
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+	Output.RGBColor.rgb += float3(2,0.5,0.0)*In.EyeColor * tex1_col.a;
+    Output.RGBColor.a = vMaterialColor.a;
+	//Output.RGBColor.rgb = float3(0,0,0);
+	//Output.RGBColor.r = In.EyeColor;
+	
+    return Output;
+}
+
+
+technique face_shader_redeye
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_face_redeye(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_face_redeye(PCF_NONE);
+   }
+}
+technique face_shader_redeye_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_face_redeye(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_face_redeye(PCF_DEFAULT);
+   }
+}
+technique face_shader_redeye_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_face_redeye(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_face_redeye(PCF_NVIDIA);
+   }
+}
+// face shader for orcs: END
