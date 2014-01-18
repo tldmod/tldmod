@@ -5576,6 +5576,976 @@ technique mtarini_waterfall
    }
 }
 
+// WAVING STANDARD
+/////////////////////
+
+
+
+VS_OUTPUT vs_mtarini_standart(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+   
+   // WAWING...
+   float4 vPositionNew = vPosition;
+   float3 vNormalNew;
+
+   float time = 5.0*(
+        // 1.3*(matWorld._m00+matWorld._m11+matWorld._m22) +
+        0.45*(matWorld._m03+matWorld._m13+matWorld._m23) +
+		time_var
+   );
+   //time = sin(time*5.0);
+
+   float atten=1.0, wavel=1.0+tc.y*0.8, angle;
+
+   atten = min(tc.y*tc.x*2.0f,1.0f);
+   angle = time+tc.x*9.0*wavel;
+  
+   vPositionNew.x += sin(angle)*(atten*0.065);
+
+   vNormalNew.z = cos(angle)*atten*1.0;
+   vNormalNew.y = 0; //vNormalNew.z * tc.y*0.1;
+   vNormalNew.x = -sqrt(1.0-vNormalNew.z*vNormalNew.z);
+//   vNormalNew=normalize(vNormalNew); 
+
+
+   // revert all in not waving parts
+   vPositionNew = (tc.x>0.75)?vPosition:vPositionNew;
+   vPositionNew = (tc.x==0)?vPosition:vPositionNew;
+   vPosition = (matWorldView._m00>0.99)?vPosition:vPositionNew;// to prevent inventory disasters
+   vNormal = (tc.x>0.75)?vNormal:vNormalNew;
+ 
+ 
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+   if (UseSecondLight)
+   {
+		diffuse_light += vLightColor;
+	}
+   
+	//directional lights, compute diffuse color
+	float dp = dot(vWorldN, -vSkyLightDir);
+	diffuse_light += max(0, dp) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+
+	//shadow mapping variables
+	float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   
+   Out.Fog = get_fog_amount(d);
+   return Out;
+}
+
+technique mtarini_standart_shader
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NONE,true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
+technique mtarini_standart_shader_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_DEFAULT,true);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+   }
+}
+
+technique mtarini_standart_shader_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NVIDIA,true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NVIDIA);
+   }
+}
+
+
+// WIND THOUGH LEAVES
+/////////////////////////
+
+VS_OUTPUT_FLORA vs_mtarini_windy_flora(uniform const int PcfMode, uniform const float windSTR, uniform const int UseUV, float4 vPosition : POSITION, float3 norm : NORMAL, float4 vColor : COLOR, float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FLORA Out = (VS_OUTPUT_FLORA)0;
+
+   float2 treePos = float2 (matWorld._m03, matWorld._m23);
+   float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
+   windAmount*=windAmount;
+   windAmount+=0.2;
+   float t2 = time_var + dot( treePos , float2(2.5,1.5)) + dot(norm,float3(7.1,0.4,3.2));
+   float windPhase = sin(t2*3.9)*cos(t2*2.3);
+   if (UseUV == 1) {
+     vPosition.xyz += norm*(tc.x-0.5)*(tc.y-0.5)*windPhase*windAmount*windSTR;
+   } else {
+	 vPosition.xyz += norm*windPhase*windAmount*windSTR;
+   }
+   
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+   Out.Color = vColor * (vAmbientColor + vSunColor * 0.06f); //add some sun color to simulate sun passing through leaves.
+   
+   	//shadow mapping variables
+	Out.SunLight = (vSunColor * 0.34f)* vMaterialColor * vColor;
+
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+	}
+	//shadow mapping variables end
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+
+VS_OUTPUT_FLORA vs_mtarini_windy_grass(uniform const int PcfMode, float4 vPosition : POSITION, float4 vColor : COLOR,  float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FLORA Out = (VS_OUTPUT_FLORA)0;
+	
+   float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
+   windAmount*=windAmount; 
+   float2 treePos = //float2 (matWorld._m03, matWorld._m13) + 
+                    vPosition.xy;
+   float t2 = time_var + dot( treePos , float2(6.5,4.5)) ;
+   float windPhase = sin(t2*3.9)*cos(t2*2.3);
+   vPosition.xy += float2(0.018,0.018) // *(vPosition.z+50.0)
+				    *windPhase*(windAmount+0.2)
+                   *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
+   
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   Out.Tex0 = tc;
+	
+   Out.Color = vColor * vAmbientColor;
+  
+   if (PcfMode != PCF_NONE)
+   {
+		Out.SunLight = (vSunColor * 0.55f) * vMaterialColor * vColor;
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+   } else
+   {
+  	Out.SunLight = vSunColor * 0.5f * vColor;
+   }
+	//shadow mapping variables end
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+   
+   Out.Color.a = min(1.0f,(1.0f - (d / 50.0f)) * 2.0f);
+
+   return Out;
+}
+
+VS_OUTPUT_FLORA_NO_SHADOW vs_mtarini_windy_grass_no_shadow(float4 vPosition : POSITION, float4 vColor : COLOR,  float2 tc : TEXCOORD0)
+{
+   VS_OUTPUT_FLORA_NO_SHADOW Out = (VS_OUTPUT_FLORA_NO_SHADOW)0;
+
+   float windAmount = sin(time_var*0.1014) + cos(time_var*0.1413);
+   windAmount*=windAmount; 
+   float2 treePos = float2 (matWorld._m03, matWorld._m13) + vPosition.xy;
+   float t2 = time_var + dot( treePos , float2(2.5,1.5)) ;
+   float windPhase = sin(t2*3.9)*cos(t2*2.3);
+	vPosition.xy += float2(0.018,0.018) // *(vPosition.z+50.0)
+				    *windPhase*(windAmount+0.2)
+                   *vColor.w; // distance from ground stored in alpha channes with openbrf easteregg! ;)
+   	
+	
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+  
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+   Out.Color = vColor * vMaterialColor;
+   
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+   
+   Out.Color.a = min(1.0f,(1.0f - (d / 50.0f)) * 2.0f);
+   //Out.Color.r = 1; Out.Color.g = Out.Color.b = 1.0-vColor.w;
+
+   return Out;
+}
+
+
+technique mtarini_windy_flora
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.18,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
+technique mtarini_windy_flora_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.18,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
+	}
+}
+
+technique mtarini_windy_flora_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.18,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
+	}
+}
+
+technique mtarini_windy_flora_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.18,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
+technique mtarini_windy_flora_mild_one_sheet
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.1,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
+technique mtarini_windy_flora_mild_one_sheet_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.1,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
+	}
+}
+
+technique mtarini_windy_flora_mild_one_sheet_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.1,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
+	}
+}
+
+technique mtarini_windy_flora_mild_one_sheet_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.1,1);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
+technique mtarini_windy_flora_mild
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.00625,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+technique mtarini_windy_flora_mild_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_DEFAULT,0.00625,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_DEFAULT);
+	}
+}
+technique mtarini_windy_flora_mild_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NVIDIA,0.00625,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NVIDIA);
+	}
+}
+technique mtarini_windy_flora_mild_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_flora(PCF_NONE,0.00625,0);
+      PixelShader = compile ps_2_0 ps_flora(PCF_NONE);
+	}
+}
+
+
+technique mtarini_windy_grass
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_grass(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_grass(PCF_NONE);
+	}
+}
+
+technique mtarini_windy_grass_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_grass(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_grass(PCF_DEFAULT);
+	}
+}
+
+technique mtarini_windy_grass_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_windy_grass(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_grass(PCF_NVIDIA);
+	}
+}
+
+technique mtarini_windy_grass_PRESHADED
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_grass(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_grass(PCF_NONE);
+      //VertexShader = compile vs_2_0 vs_mtarini_windy_grass_no_shadow();
+      //PixelShader = compile ps_2_0 ps_grass_no_shadow();
+	}
+}
+
+technique mtarini_windy_grass_no_shadow
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_windy_grass_no_shadow();
+      PixelShader = compile ps_2_0 ps_grass_no_shadow();
+	}
+}
+
+
+
+// OLIPHANTS
+
+VS_OUTPUT vs_mtarini_main_skin_big (float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES, uniform const int PcfMode)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+   
+   vPosition.xyz/=6.5;
+   
+   float4 vObjectPos = mul(matWorldArray[vBlendIndices.x], vPosition /*- matBoneOriginArray[vBlendIndices.x]*/) * vBlendWeights.x
+                     + mul(matWorldArray[vBlendIndices.y], vPosition /*- matBoneOriginArray[vBlendIndices.y]*/) * vBlendWeights.y
+                     + mul(matWorldArray[vBlendIndices.z], vPosition /*- matBoneOriginArray[vBlendIndices.z]*/) * vBlendWeights.z
+                     + mul(matWorldArray[vBlendIndices.w], vPosition /*- matBoneOriginArray[vBlendIndices.w]*/) * vBlendWeights.w;
+   float3 vObjectN = normalize(mul((float3x3)matWorldArray[vBlendIndices.x], vNormal) * vBlendWeights.x
+                             + mul((float3x3)matWorldArray[vBlendIndices.y], vNormal) * vBlendWeights.y
+                             + mul((float3x3)matWorldArray[vBlendIndices.z], vNormal) * vBlendWeights.z
+                             + mul((float3x3)matWorldArray[vBlendIndices.w], vNormal) * vBlendWeights.w);
+   
+   vObjectPos.xyz*=6.5;
+   float4 vWorldPos = mul(matWorld,vObjectPos);
+   Out.Pos = mul(matViewProj, vWorldPos);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vObjectN)); //normal in world space
+   
+   float3 P = mul(matView, vWorldPos); //position in view space
+   
+   Out.Tex0 = tc;
+
+   //light computation
+   Out.Color = vAmbientColor;
+//   Out.Color.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+
+	//directional lights, compute diffuse color
+	Out.Color += max(0, dot(vWorldN, -vSkyLightDir)) * vSkyLightColor;
+
+   //point lights
+   for(int j = 0; j < iLightPointCount; j++)
+   {
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+			
+		float LD = length(point_to_light);
+		float fAtten = 1.0f /(LD * LD);// +  0.9f / (LD * LD);
+		//compute diffuse color
+		Out.Color += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+   }
+
+   //apply material color
+   Out.Color *= vMaterialColor * vColor;
+   Out.Color = min(1, Out.Color);
+   
+	//shadow mapping variables
+	float wNdotSun = max(-0.0001, dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+   if (PcfMode != PCF_NONE)
+   {
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+   
+   return Out;
+}
+
+
+
+
+
+
+
+// WARGS, OLIHPANT, PONIES : rescaled skeletons for creatures
+
+VS_OUTPUT vs_mtarini_main_skin_resize(float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES, uniform const float pre_resize,  uniform const float resize,  uniform const int PcfMode)
+{
+   VS_OUTPUT Out = (VS_OUTPUT)0;
+
+   vPosition.xyz*=pre_resize;
+   
+   float4 vObjectPos = mul(matWorldArray[vBlendIndices.x], vPosition /*- matBoneOriginArray[vBlendIndices.x]*/) * vBlendWeights.x
+                     + mul(matWorldArray[vBlendIndices.y], vPosition /*- matBoneOriginArray[vBlendIndices.y]*/) * vBlendWeights.y
+                     + mul(matWorldArray[vBlendIndices.z], vPosition /*- matBoneOriginArray[vBlendIndices.z]*/) * vBlendWeights.z
+                     + mul(matWorldArray[vBlendIndices.w], vPosition /*- matBoneOriginArray[vBlendIndices.w]*/) * vBlendWeights.w;
+   float3 vObjectN = normalize(mul((float3x3)matWorldArray[vBlendIndices.x], vNormal) * vBlendWeights.x
+                             + mul((float3x3)matWorldArray[vBlendIndices.y], vNormal) * vBlendWeights.y
+                             + mul((float3x3)matWorldArray[vBlendIndices.z], vNormal) * vBlendWeights.z
+                             + mul((float3x3)matWorldArray[vBlendIndices.w], vNormal) * vBlendWeights.w);
+   
+   vObjectPos.xyz*=resize;
+   float4 vWorldPos = mul(matWorld,vObjectPos);
+   Out.Pos = mul(matViewProj, vWorldPos);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vObjectN)); //normal in world space
+   
+   float3 P = mul(matView, vWorldPos); //position in view space
+   
+   Out.Tex0 = tc;
+
+   //light computation
+   Out.Color = vAmbientColor;
+//   Out.Color.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+
+	//directional lights, compute diffuse color
+	Out.Color += max(0, dot(vWorldN, -vSkyLightDir)) * vSkyLightColor;
+
+   //point lights
+   for(int j = 0; j < iLightPointCount; j++)
+   {
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+			
+		float LD = length(point_to_light);
+		float fAtten = 1.0f /(LD * LD);// +  0.9f / (LD * LD);
+		//compute diffuse color
+		Out.Color += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+   }
+
+   //apply material color
+   Out.Color *= vMaterialColor * vColor;
+   Out.Color = min(1, Out.Color);
+   
+	//shadow mapping variables
+	float wNdotSun = max(-0.0001, dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+   if (PcfMode != PCF_NONE)
+   {
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+   
+   return Out;
+}
+
+
+technique mtarini_skin_diffuse_95perc
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_95perc_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_95perc_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1,0.95,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+technique mtarini_skin_diffuse_78perc
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_78perc_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_78perc_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+
+
+technique mtarini_skin_diffuse_73perc
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_73perc_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_73perc_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+
+
+
+technique mtarini_skin_diffuse_big
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_NONE);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+	}
+}
+technique mtarini_skin_diffuse_big_SHDW
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+	}
+}
+technique mtarini_skin_diffuse_big_SHDWNVIDIA
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_a vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
+	}
+}
+
+
+// Specular and transparency trick
+// shader that uses top part of texture as transparency, rest as sepcular.
+///////////////////////////////////////////////////////////////////
+
+struct PS_INPUT_SPECULAR_ALPHA
+{
+	float4 Color				: COLOR0;
+	float2 Tex0					: TEXCOORD0;
+	float4 SunLight				: TEXCOORD1;
+	float4 ShadowTexCoord		: TEXCOORD2;
+	float2 ShadowTexelPos		: TEXCOORD3;
+    float3 worldPos              : TEXCOORD4;
+    float3 worldNormal           : TEXCOORD5;
+};
+PS_OUTPUT ps_specular_alpha(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
+{
+    PS_OUTPUT Output;
+    
+ // Compute half vector for specular lighting
+ //   float3 vHalf = normalize(normalize(-ViewPos) + normalize(g_vLight - ViewPos));
+ 
+
+	float4 outColor = tex2D(MeshTextureSampler, In.Tex0);
+    outColor.rgb = pow(outColor.rgb, input_gamma);
+	
+	float3 vHalf = normalize(normalize(vCameraPos - In.worldPos) - vSunDir);
+	// Compute normal dot half for specular light
+	float4 fSpecular = vSpecularColor * pow( saturate( dot( vHalf, normalize( In.worldNormal) ) ), fMaterialPower) * outColor.a;
+	if ((PcfMode != PCF_NONE))
+    {
+		float sun_amount = 0.15f + GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
+//		sun_amount *= sun_amount;
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular) * sun_amount)));
+    }
+    else
+    {
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular * 0.5f))));
+    }
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+    
+	Output.RGBColor.a = 1.0f;
+    return Output;
+}
+PS_OUTPUT ps_mtarini_specular_alpha_top(PS_INPUT_SPECULAR_ALPHA In, uniform const int PcfMode)
+{
+    PS_OUTPUT Output;
+    
+ // Compute half vector for specular lighting
+ //   float3 vHalf = normalize(normalize(-ViewPos) + normalize(g_vLight - ViewPos));
+ 
+
+	float4 outColor = tex2D(MeshTextureSampler, In.Tex0);
+    outColor.rgb = pow(outColor.rgb, input_gamma);
+	
+	float3 vHalf = normalize(normalize(vCameraPos - In.worldPos) - vSunDir);
+	// Compute normal dot half for specular light
+	float4 fSpecular = vSpecularColor * pow( saturate( dot( vHalf, normalize( In.worldNormal) ) ), fMaterialPower) * outColor.a;
+	
+	fSpecular = (In.Tex0.y< 171.0/1024.0 )?0.0f:fSpecular;
+	
+	if ((PcfMode != PCF_NONE))
+    {
+		float sun_amount = 0.15f + GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
+//		sun_amount *= sun_amount;
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular) * sun_amount)));
+    }
+    else
+    {
+		Output.RGBColor = (outColor * ((In.Color + (In.SunLight + fSpecular * 0.5f))));
+    }
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+    
+	Output.RGBColor.a = (In.Tex0.y< 171.0/1024.0 )?outColor.a:1.0f;
+    return Output;
+}
+
+struct VS_OUTPUT_SPECULAR_ALPHA
+{
+   float4 Pos					: POSITION;
+   float4 Color					: COLOR0;
+   float2 Tex0					: TEXCOORD0;
+   float4 SunLight				: TEXCOORD1;
+   float4 ShadowTexCoord		: TEXCOORD2;
+   float2 ShadowTexelPos		: TEXCOORD3;
+   float3 worldPos              : TEXCOORD4;
+   float3 worldNormal           : TEXCOORD5;
+   float  Fog				    : FOG;
+};
+VS_OUTPUT_SPECULAR_ALPHA vs_specular_alpha (uniform const int PcfMode, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0)
+{
+   VS_OUTPUT_SPECULAR_ALPHA Out = (VS_OUTPUT_SPECULAR_ALPHA)0;
+
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   Out.worldPos = vWorldPos;
+   Out.worldNormal = vWorldN;
+   
+   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+
+   
+	//directional lights, compute diffuse color
+	float dp = dot(vWorldN, -vSkyLightDir);
+	if (dp < 0.0f)
+	{
+		dp *= -0.2f;
+	}
+	diffuse_light += dp * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD*LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+	//shadow mapping variables
+	float wNdotSun = max(-0.0001f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   return Out;
+}
+VS_OUTPUT_SPECULAR_ALPHA vs_specular_alpha_skin (uniform const int PcfMode, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vBlendWeights : BLENDWEIGHT, float4 vBlendIndices : BLENDINDICES)
+{
+   VS_OUTPUT_SPECULAR_ALPHA Out = (VS_OUTPUT_SPECULAR_ALPHA)0;
+
+   float4 vObjectPos = mul(matWorldArray[vBlendIndices.x], vPosition /*- matBoneOriginArray[vBlendIndices.x]*/) * vBlendWeights.x
+                     + mul(matWorldArray[vBlendIndices.y], vPosition /*- matBoneOriginArray[vBlendIndices.y]*/) * vBlendWeights.y
+                     + mul(matWorldArray[vBlendIndices.z], vPosition /*- matBoneOriginArray[vBlendIndices.z]*/) * vBlendWeights.z
+                     + mul(matWorldArray[vBlendIndices.w], vPosition /*- matBoneOriginArray[vBlendIndices.w]*/) * vBlendWeights.w;
+   float3 vObjectN = normalize(mul((float3x3)matWorldArray[vBlendIndices.x], vNormal) * vBlendWeights.x
+                     + mul((float3x3)matWorldArray[vBlendIndices.y], vNormal) * vBlendWeights.y
+                     + mul((float3x3)matWorldArray[vBlendIndices.z], vNormal) * vBlendWeights.z
+                     + mul((float3x3)matWorldArray[vBlendIndices.w], vNormal) * vBlendWeights.w);
+   
+   float4 vWorldPos = mul(matWorld,vObjectPos);
+   Out.Pos = mul(matViewProj, vWorldPos);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vObjectN)); //normal in world space
+   
+   float3 P = mul(matView, vWorldPos); //position in view space
+
+//   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+//   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+//   float3 vWorldN = mul((float3x3)matWorld, vNormal); //normal in world space
+   
+   Out.worldPos = vWorldPos;
+   Out.worldNormal = vWorldN;
+   
+//   float3 P = mul(matWorldView, vPosition); //position in view space
+   
+   Out.Tex0 = tc;
+
+   float4 diffuse_light = vAmbientColor;
+//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
+   
+	//directional lights, compute diffuse color
+	diffuse_light += max(0, dot(vWorldN, -vSkyLightDir)) * vSkyLightColor;
+
+	//point lights
+	for(int j = 0; j < iLightPointCount; j++)
+	{
+		int i = iLightIndices[j];
+		float3 point_to_light = vLightPosDir[i]-vWorldPos;
+		float LD = length(point_to_light);
+		float3 L = normalize(point_to_light);
+		float wNdotL = dot(vWorldN, L);
+		
+		float fAtten = 1.0f/(LD*LD);// + 0.9f / (LD * LD);
+		//compute diffuse color
+		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
+	}
+   //apply material color
+//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
+	Out.Color = (vMaterialColor * vColor * diffuse_light);
+	//shadow mapping variables
+	float wNdotSun = max(-0.0001f,dot(vWorldN, -vSunDir));
+	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
+
+	if (PcfMode != PCF_NONE)
+	{
+		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
+		Out.ShadowTexCoord = ShadowPos;
+		Out.ShadowTexCoord.z /= ShadowPos.w;
+		Out.ShadowTexCoord.w = 1.0f;
+		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
+		//shadow mapping variables end
+	}
+	
+	
+   //apply fog
+   float d = length(P);
+   Out.Fog = get_fog_amount(d);
+
+   Out.Pos = (d<0.15)?float4(0,0,-1,1):Out.Pos ; // FIX ORC
+
+   return Out;
+}
+
+
+technique specular_alpha
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_specular_alpha(PCF_NONE);
+   }
+}
+
+
+technique specular_alpha_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_specular_alpha(PCF_DEFAULT);
+   }
+}
+technique specular_alpha_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_specular_alpha(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_specular_alpha(PCF_NVIDIA);
+   }
+}
+
+technique specular_alpha_skin
+{
+	pass P0
+	{
+      VertexShader = compile vs_2_0 vs_specular_alpha_skin(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_specular_alpha(PCF_NONE);
+	}
+}
+technique specular_alpha_skin_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha_skin(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_specular_alpha(PCF_DEFAULT);
+   }
+}
+technique specular_alpha_skin_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_specular_alpha_skin(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_specular_alpha(PCF_NVIDIA);
+   }
+}
+
+//--
+
+technique mtarini_specular_alpha_top
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_NONE);
+      PixelShader = compile ps_2_0 ps_mtarini_specular_alpha_top(PCF_NONE);
+   }
+}
+
+technique mtarini_specular_alpha_top_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_specular_alpha(PCF_DEFAULT);
+      PixelShader = compile ps_2_0 ps_mtarini_specular_alpha_top(PCF_DEFAULT);
+   }
+}
+technique mtarini_specular_alpha_top_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_a vs_specular_alpha(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_mtarini_specular_alpha_top(PCF_NVIDIA);
+   }
+}
+
 
 //
 // MAP SHADERS (auto-snow, swamp, disupt of regular patterns...) -- mtarini
