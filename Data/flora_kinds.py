@@ -36,7 +36,7 @@ with open("flora_kinds.txt") as f:
 nlines = 0
 nflora = int(result[nlines][0]); nlines+=1
 
-print("there are %u plants in there!\n"%nflora)
+print("there are %u plants in there!"%nflora)
 
 for n in range(0,nflora):
   cur_line = result[nlines]
@@ -50,16 +50,21 @@ for n in range(0,nflora):
   
   for x in tflags:
     if flags & x[1]==x[1]:
-      #print(x)
       dflag.append(x[0])
       
+  grass_density = (flags >> 32 & 0xfff !=0 and "density(%u)"%(flags >> 32 & 0xfff))
+  if grass_density: dflag.append(grass_density)
+  
   dflag = "|".join(dflag)
   
-  print("\tid: %s flags: 0x%x dflag: %s nmeshes: %u"%(thiid, flags, dflag, nmesh))
+  if dflag == "":
+    dflag = "0"
+  
+  print("\n\tid: %s flags: 0x%x dflag: %s nmeshes: %u"%(thiid, flags, dflag, nmesh))
   
   nlines+=1
   
   for i in range(0,nmesh):
     cur_line = result[nlines]
-    print("\t\tmesh_nm: %s tcol_nm: %s\n"%(cur_line[0],cur_line[1]))
+    print("\t\tmesh_nm: %s tcol_nm: %s"%(cur_line[0],cur_line[1]))
     nlines+=1

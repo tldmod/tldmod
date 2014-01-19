@@ -1,0 +1,608 @@
+there are 134 plants in there!
+
+	id: grass flags: 0x5dc011e0404 dflag: fkf_plain|fkf_plain_forest|fkf_point_up|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1500) nmeshes: 5
+		mesh_nm: PW_grass_a_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+
+	id: grass_bush flags: 0xa000c182c dflag: fkf_plain|fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_snow_forest|fkf_align_with_ground|fkf_grass|density(10) nmeshes: 2
+		mesh_nm: PW_grass_bush_a_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_b_xx tcol_nm: 0
+
+	id: grass_saz flags: 0xc60110181c dflag: fkf_plain|fkf_steppe|fkf_snow|fkf_steppe_forest|fkf_snow_forest|fkf_on_green_ground|fkf_guarantee|density(198) nmeshes: 2
+		mesh_nm: PW_grass_bush_c_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_c_xx tcol_nm: 0
+
+	id: grass_purple flags: 0x1f40008080c dflag: fkf_plain|fkf_steppe|fkf_steppe_forest|fkf_grass|density(500) nmeshes: 2
+		mesh_nm: PW_grass_bush_e_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_e_xx tcol_nm: 0
+
+	id: fern flags: 0x3e8000c1400 dflag: fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|fkf_grass|density(1000) nmeshes: 2
+		mesh_nm: PW_fern_a_xx tcol_nm: 0
+		mesh_nm: PW_fern_b_xx tcol_nm: 0
+
+	id: grass_steppe flags: 0x5dc011ee9e8 dflag: fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|fkf_point_up|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1500) nmeshes: 5
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_e tcol_nm: 0
+
+	id: grass_bush_g flags: 0x190000c0c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(400) nmeshes: 3
+		mesh_nm: PW_grass_bush_g01_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_g02_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_g03_xx tcol_nm: 0
+
+	id: grass_bush_h flags: 0x190000c0404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|fkf_grass|density(400) nmeshes: 3
+		mesh_nm: PW_grass_bush_h01_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_h02_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_h03_xx tcol_nm: 0
+
+	id: grass_bush_i flags: 0x190000c0404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|fkf_grass|density(400) nmeshes: 2
+		mesh_nm: PW_grass_bush_i01_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_i02_xx tcol_nm: 0
+
+	id: grass_bush_j flags: 0x190000c0c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(400) nmeshes: 2
+		mesh_nm: PW_grass_bush_j01_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_j02_xx tcol_nm: 0
+
+	id: grass_bush_k flags: 0x190000c0404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|fkf_grass|density(400) nmeshes: 2
+		mesh_nm: PW_grass_bush_k01_xx tcol_nm: 0
+		mesh_nm: PW_grass_bush_k02_xx tcol_nm: 0
+
+	id: grass_bush_l flags: 0x3200040404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|density(50) nmeshes: 2
+		mesh_nm: PW_grass_bush_l01 tcol_nm: 0
+		mesh_nm: PW_grass_bush_l02 tcol_nm: 0
+
+	id: thorn_a flags: 0x3200040404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|density(50) nmeshes: 4
+		mesh_nm: PW_thorn_a tcol_nm: 0
+		mesh_nm: PW_thorn_b tcol_nm: 0
+		mesh_nm: PW_thorn_c tcol_nm: 0
+		mesh_nm: PW_thorn_d tcol_nm: 0
+
+	id: basak flags: 0x4600002828 dflag: fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|density(70) nmeshes: 1
+		mesh_nm: PW_basak_xx tcol_nm: 0
+
+	id: common_plant flags: 0x4600002828 dflag: fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|density(70) nmeshes: 1
+		mesh_nm: PW_common_plant_xx tcol_nm: 0
+
+	id: small_plant flags: 0x3200040c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|density(50) nmeshes: 1
+		mesh_nm: PW_big_bush_xx tcol_nm: 0
+
+	id: buddy_plant flags: 0x3200000404 dflag: fkf_plain|fkf_plain_forest|density(50) nmeshes: 2
+		mesh_nm: PW_buddy_plant_xx tcol_nm: 0
+		mesh_nm: PW_buddy_plant_b_xx tcol_nm: 0
+
+	id: yellow_flower flags: 0x3200040404 dflag: fkf_plain|fkf_plain_forest|fkf_align_with_ground|density(50) nmeshes: 2
+		mesh_nm: PW_yellow_flower tcol_nm: 0
+		mesh_nm: PW_yellow_flower_b tcol_nm: 0
+
+	id: spiky_plant flags: 0x3200041404 dflag: fkf_plain|fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|density(50) nmeshes: 1
+		mesh_nm: PW_spiky_plant tcol_nm: 0
+
+	id: seedy_plant flags: 0x3200000c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|density(50) nmeshes: 1
+		mesh_nm: PW_big_bush_xx tcol_nm: 0
+
+	id: blue_flower flags: 0x1e00000404 dflag: fkf_plain|fkf_plain_forest|density(30) nmeshes: 1
+		mesh_nm: PW_blue_flower_xx tcol_nm: 0
+
+	id: big_bush flags: 0x1e00000c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|density(30) nmeshes: 1
+		mesh_nm: PW_big_bush_xx tcol_nm: 0
+
+	id: bushes02_a flags: 0x1e00000814 dflag: fkf_plain|fkf_snow|fkf_steppe_forest|density(30) nmeshes: 3
+		mesh_nm: PW_bushes02_a tcol_nm: bo_pw_bushes02_a
+		mesh_nm: PW_bushes02_b tcol_nm: bo_pw_bushes02_a
+		mesh_nm: PW_bushes02_c tcol_nm: bo_pw_bushes02_a
+
+	id: bushes03_a flags: 0x3600003430 dflag: fkf_snow|fkf_desert|fkf_plain_forest|fkf_snow_forest|fkf_desert_forest|density(54) nmeshes: 3
+		mesh_nm: PW_bushes03_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes03_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes03_c_xx tcol_nm: 0
+
+	id: bushes04_a flags: 0x6600002c3c dflag: fkf_plain|fkf_steppe|fkf_snow|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102) nmeshes: 3
+		mesh_nm: PW_bushes04_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes04_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes04_c_xx tcol_nm: 0
+
+	id: bushes05_a flags: 0x4600000828 dflag: fkf_steppe|fkf_desert|fkf_steppe_forest|density(70) nmeshes: 1
+		mesh_nm: PW_bushes05_a_xx tcol_nm: 0
+
+	id: bushes06_a flags: 0x6600002c3c dflag: fkf_plain|fkf_steppe|fkf_snow|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102) nmeshes: 3
+		mesh_nm: PW_bushes06_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes06_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes06_c_xx tcol_nm: 0
+
+	id: bushes07_a flags: 0x6600003430 dflag: fkf_snow|fkf_desert|fkf_plain_forest|fkf_snow_forest|fkf_desert_forest|density(102) nmeshes: 3
+		mesh_nm: PW_bushes07_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes07_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes07_c_xx tcol_nm: 0
+
+	id: bushes08_a flags: 0x4600000c0c dflag: fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|density(70) nmeshes: 3
+		mesh_nm: PW_bushes08_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes08_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes08_c_xx tcol_nm: 0
+
+	id: bushes09_a flags: 0x6600003030 dflag: fkf_snow|fkf_desert|fkf_snow_forest|fkf_desert_forest|density(102) nmeshes: 3
+		mesh_nm: PW_bushes09_a tcol_nm: 0
+		mesh_nm: PW_bushes09_b tcol_nm: 0
+		mesh_nm: PW_bushes09_c tcol_nm: 0
+
+	id: bushes10_a flags: 0x4600000400 dflag: fkf_plain_forest|density(70) nmeshes: 3
+		mesh_nm: PW_bushes10_a tcol_nm: bo_pw_bushes10_a
+		mesh_nm: PW_bushes10_b tcol_nm: bo_pw_bushes10_b
+		mesh_nm: PW_bushes10_c tcol_nm: bo_pw_bushes10_c
+
+	id: bushes11_a flags: 0x4600003430 dflag: fkf_snow|fkf_desert|fkf_plain_forest|fkf_snow_forest|fkf_desert_forest|density(70) nmeshes: 3
+		mesh_nm: PW_bushes11_a tcol_nm: 0
+		mesh_nm: PW_bushes11_b tcol_nm: 0
+		mesh_nm: PW_bushes11_c tcol_nm: 0
+
+	id: bushes12_a flags: 0x3200040808 dflag: fkf_steppe|fkf_steppe_forest|fkf_align_with_ground|density(50) nmeshes: 3
+		mesh_nm: PW_bushes12_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes12_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes12_c_xx tcol_nm: 0
+
+	id: aspen flags: 0x1600210808 dflag: fkf_steppe|fkf_steppe_forest|fkf_realtime_ligting|fkf_rock|density(22) nmeshes: 3
+		mesh_nm: aspen_a tcol_nm: bo_aspen_a
+		mesh_nm: aspen_b tcol_nm: bo_aspen_b
+		mesh_nm: aspen_c tcol_nm: bo_aspen_c
+
+	id: pw_small_rock_group flags: 0x1600212828 dflag: fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(22) nmeshes: 3
+		mesh_nm: PW_aspen_a tcol_nm: 0
+		mesh_nm: PW_aspen_b tcol_nm: 0
+		mesh_nm: PW_aspen_c tcol_nm: 0
+
+	id: pine_1 flags: 0x400402400 dflag: fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: pine_1_a tcol_nm: bo_pine_1_a
+		mesh_nm: pine_1_b tcol_nm: bo_pine_1_b
+
+	id: pw_fir flags: 0x400400000 dflag: fkf_tree|density(4) nmeshes: 2
+		mesh_nm: PW_pine_1_a_xx tcol_nm: bo_pw_pine_1_a
+		mesh_nm: PW_pine_1_b_xx tcol_nm: bo_pw_pine_1_b
+
+	id: pine_2 flags: 0x400402400 dflag: fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: pine_2_a tcol_nm: bo_pine_2_a
+
+	id: pw_fir2 flags: 0x400400000 dflag: fkf_tree|density(4) nmeshes: 1
+		mesh_nm: PW_pine_2_a_xx tcol_nm: bo_pw_pine_2_a
+
+	id: pine_3 flags: 0x400402400 dflag: fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: pine_3_a tcol_nm: bo_pine_3_a
+
+	id: pw_fir3 flags: 0x400400000 dflag: fkf_tree|density(4) nmeshes: 1
+		mesh_nm: PW_pine_3_a_xx tcol_nm: bo_pw_pine_3_a
+
+	id: pine_4 flags: 0x400402400 dflag: fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: pine_4_a tcol_nm: bo_pine_4_a
+
+	id: pw_pine_group2 flags: 0x200402000 dflag: fkf_desert_forest|fkf_tree|density(2) nmeshes: 1
+		mesh_nm: PW_pine_4_a tcol_nm: bo_pw_pine_4_a_cyl
+
+	id: pine_6 flags: 0x400402400 dflag: fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: pine_6_a tcol_nm: bo_pine_6_a
+
+	id: pw_pine_group1 flags: 0x200402000 dflag: fkf_desert_forest|fkf_tree|density(2) nmeshes: 1
+		mesh_nm: PW_pine_6_a tcol_nm: bo_pw_pine_6_a_cyl
+
+	id: snowy_pine flags: 0x400000 dflag: fkf_tree nmeshes: 1
+		mesh_nm: PW_tree_snowy_a tcol_nm: bo_pw_tree_snowy_a
+
+	id: snowy_pine_2 flags: 0x400000 dflag: fkf_tree nmeshes: 1
+		mesh_nm: PW_snowy_pine_2 tcol_nm: bo_pw_snowy_pine_2
+
+	id: small_rock flags: 0x400400c08 dflag: fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_17_a tcol_nm: bo_pw_tree_17_a
+		mesh_nm: PW_tree_17_b tcol_nm: bo_pw_tree_17_b
+		mesh_nm: PW_tree_17_c tcol_nm: bo_pw_tree_17_c
+
+	id: rock_snowy flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_rock_snowy_a tcol_nm: bo_pw_rock_snowy_a
+		mesh_nm: PW_rock_snowy_b tcol_nm: bo_pw_rock_snowy_b
+		mesh_nm: PW_rock_snowy_c tcol_nm: bo_pw_rock_snowy_c
+
+	id: tree_1 flags: 0x600000400 dflag: fkf_plain_forest|density(6) nmeshes: 1
+		mesh_nm: PW_tree_9_a_xx tcol_nm: 0
+
+	id: tree_2 flags: 0x0 dflag: 0 nmeshes: 2
+		mesh_nm: tree_2_a tcol_nm: bo_tree_2_a
+		mesh_nm: tree_2_b tcol_nm: bo_tree_2_b
+
+	id: pw_fir_shibby flags: 0x400403000 dflag: fkf_snow_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: PW_tree_2_a tcol_nm: bo_pw_tree_2_a_cyl
+		mesh_nm: PW_tree_2_b tcol_nm: bo_pw_tree_2_b_cyl
+
+	id: tree_3 flags: 0x500410000 dflag: fkf_realtime_ligting|fkf_tree|density(5) nmeshes: 2
+		mesh_nm: tree_3_a tcol_nm: bo_tree_3_a
+		mesh_nm: tree_3_b tcol_nm: bo_tree_3_b
+
+	id: pw_gray_bush flags: 0x500411030 dflag: fkf_snow|fkf_desert|fkf_snow_forest|fkf_realtime_ligting|fkf_tree|density(5) nmeshes: 2
+		mesh_nm: PW_tree_3_a_gray tcol_nm: 0
+		mesh_nm: PW_tree_3_b_gray tcol_nm: 0
+
+	id: tree_4 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: tree_4_a tcol_nm: bo_tree_4_a
+		mesh_nm: tree_4_b tcol_nm: bo_tree_4_b
+
+	id: pw_birch_yellow flags: 0x400400808 dflag: fkf_steppe|fkf_steppe_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: PW_tree_4_a tcol_nm: bo_pw_tree_4_a_cyl
+		mesh_nm: PW_tree_4_b tcol_nm: bo_pw_tree_4_b_cyl
+
+	id: tree_5 flags: 0x4600000400 dflag: fkf_plain_forest|density(70) nmeshes: 4
+		mesh_nm: tree_5_a tcol_nm: bo_tree_5_a
+		mesh_nm: tree_5_b tcol_nm: bo_tree_5_b
+		mesh_nm: tree_5_c tcol_nm: bo_tree_5_c
+		mesh_nm: tree_5_d tcol_nm: bo_tree_5_d
+
+	id: pw_birch_green flags: 0x4600000800 dflag: fkf_steppe_forest|density(70) nmeshes: 5
+		mesh_nm: PW_tree_5_a tcol_nm: bo_pw_tree_5_a_cyl
+		mesh_nm: PW_tree_5_b tcol_nm: bo_pw_tree_5_b_cyl
+		mesh_nm: PW_tree_5_c tcol_nm: bo_pw_tree_5_c_cyl
+		mesh_nm: PW_tree_5_d tcol_nm: bo_pw_tree_5_d_cyl
+		mesh_nm: PW_tree_5_a_yellow tcol_nm: bo_pw_tree_5_a_cyl
+
+	id: tree_6 flags: 0x0 dflag: 0 nmeshes: 4
+		mesh_nm: tree_6_a tcol_nm: bo_tree_6_a
+		mesh_nm: tree_6_b tcol_nm: bo_tree_6_b
+		mesh_nm: tree_6_c tcol_nm: bo_tree_6_c
+		mesh_nm: tree_6_d tcol_nm: bo_tree_6_d
+
+	id: pw_fir_shubby_group flags: 0x400000 dflag: fkf_tree nmeshes: 4
+		mesh_nm: PW_tree_6_a tcol_nm: bo_pw_tree_6_a
+		mesh_nm: PW_tree_6_b tcol_nm: bo_pw_tree_6_b
+		mesh_nm: PW_tree_6_c tcol_nm: bo_pw_tree_6_c
+		mesh_nm: PW_tree_6_d tcol_nm: bo_pw_tree_6_d
+
+	id: tree_7 flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: tree_7_a tcol_nm: bo_tree_7_a
+		mesh_nm: tree_7_b tcol_nm: bo_tree_7_b
+		mesh_nm: tree_7_c tcol_nm: bo_tree_7_c
+
+	id: pw_man_skeleton flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_tree_7_a_color tcol_nm: 0
+		mesh_nm: PW_tree_7_b_color tcol_nm: 0
+		mesh_nm: PW_tree_7_c_color tcol_nm: 0
+
+	id: tree_8 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: tree_8_a tcol_nm: bo_tree_8_a
+		mesh_nm: tree_8_b tcol_nm: bo_tree_8_b
+		mesh_nm: tree_8_c tcol_nm: bo_tree_8_c
+
+	id: pw_leaf_green_group flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_tree_8_a tcol_nm: bo_pw_tree_8_a
+		mesh_nm: PW_tree_8_b tcol_nm: bo_pw_tree_8_b
+		mesh_nm: PW_tree_8_c tcol_nm: bo_pw_tree_8_c
+
+	id: tree_9 flags: 0x3200400400 dflag: fkf_plain_forest|fkf_tree|density(50) nmeshes: 3
+		mesh_nm: tree_9_a tcol_nm: bo_tree_9_a
+		mesh_nm: tree_9_b tcol_nm: bo_tree_9_a
+		mesh_nm: tree_9_c tcol_nm: bo_tree_9_a
+
+	id: pw_ground_thorn flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_tree_9_a_xx tcol_nm: 0
+		mesh_nm: PW_tree_9_a_xx tcol_nm: 0
+		mesh_nm: PW_tree_9_a_xx tcol_nm: 0
+
+	id: tree_10 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: tree_10_a tcol_nm: bo_tree_10_a
+		mesh_nm: tree_10_b tcol_nm: bo_tree_10_a
+		mesh_nm: tree_10_c tcol_nm: bo_tree_10_a
+
+	id: pw_branchy_green_group flags: 0x400400800 dflag: fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_10_a tcol_nm: bo_pw_tree_10_a
+		mesh_nm: PW_tree_10_b tcol_nm: bo_pw_tree_10_a
+		mesh_nm: PW_tree_10_c tcol_nm: bo_pw_tree_10_a
+
+	id: tree_11 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: tree_11_a tcol_nm: bo_tree_11_a
+		mesh_nm: tree_11_b tcol_nm: bo_tree_11_a
+		mesh_nm: tree_11_c tcol_nm: bo_tree_11_a
+
+	id: pw_branchy_green_group2 flags: 0x400400800 dflag: fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_11_a tcol_nm: bo_pw_tree_11_a
+		mesh_nm: PW_tree_11_b tcol_nm: bo_pw_tree_11_a
+		mesh_nm: PW_tree_11_c tcol_nm: bo_pw_tree_11_a
+
+	id: tree_12 flags: 0x400400800 dflag: fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: tree_12_a tcol_nm: bo_tree_12_a
+		mesh_nm: tree_12_b tcol_nm: bo_tree_12_b
+		mesh_nm: tree_12_c tcol_nm: bo_tree_12_c
+
+	id: pw_pine_bushes_group flags: 0xc01002020 dflag: fkf_desert|fkf_desert_forest|fkf_guarantee|density(12) nmeshes: 3
+		mesh_nm: PW_tree_12_a_xx tcol_nm: bo_pw_tree_12_a
+		mesh_nm: PW_tree_12_b_xx tcol_nm: bo_pw_tree_12_b
+		mesh_nm: PW_tree_12_c_xx tcol_nm: bo_pw_tree_12_c
+
+	id: tree_14 flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: tree_14_a tcol_nm: bo_tree_14_a
+		mesh_nm: tree_14_b tcol_nm: bo_tree_14_b
+		mesh_nm: tree_14_c tcol_nm: bo_tree_14_c
+
+	id: pw_tall_leaf flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tree_14_a tcol_nm: bo_pw_tree_14_a_cyl
+		mesh_nm: PW_tree_14_b tcol_nm: bo_pw_tree_14_b_cyl
+		mesh_nm: PW_tree_14_c tcol_nm: bo_pw_tree_14_c_cyl
+
+	id: tree_15 flags: 0x4000400000 dflag: fkf_tree|density(64) nmeshes: 3
+		mesh_nm: tree_15_a tcol_nm: bo_tree_15_a
+		mesh_nm: tree_15_b tcol_nm: bo_tree_15_b
+		mesh_nm: tree_15_c tcol_nm: bo_tree_15_c
+
+	id: pw_leaf_yellow2 flags: 0x4600400800 dflag: fkf_steppe_forest|fkf_tree|density(70) nmeshes: 3
+		mesh_nm: PW_tree_15_a tcol_nm: bo_pw_tree_15_a_cyl
+		mesh_nm: PW_tree_15_b tcol_nm: bo_pw_tree_15_b_cyl
+		mesh_nm: PW_tree_15_c tcol_nm: bo_pw_tree_15_c_cyl
+
+	id: tree_16 flags: 0x2600400400 dflag: fkf_plain_forest|fkf_tree|density(38) nmeshes: 2
+		mesh_nm: tree_16_a tcol_nm: bo_tree_16_a
+		mesh_nm: tree_16_b tcol_nm: bo_tree_16_b
+
+	id: pw_pine_small_group flags: 0x2600403000 dflag: fkf_snow_forest|fkf_desert_forest|fkf_tree|density(38) nmeshes: 2
+		mesh_nm: PW_tree_16_a tcol_nm: bo_pw_tree_16_a_cyl
+		mesh_nm: PW_tree_16_b tcol_nm: bo_pw_tree_16_b_cyl
+
+	id: tree_17 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 4
+		mesh_nm: tree_17_a tcol_nm: bo_tree_17_a
+		mesh_nm: tree_17_b tcol_nm: bo_tree_17_b
+		mesh_nm: tree_17_c tcol_nm: bo_tree_17_c
+		mesh_nm: tree_17_d tcol_nm: bo_tree_17_d
+
+	id: pw_birch_green_group flags: 0x400400000 dflag: fkf_tree|density(4) nmeshes: 4
+		mesh_nm: PW_tree_17_a tcol_nm: bo_pw_tree_17_a
+		mesh_nm: PW_tree_17_b tcol_nm: bo_pw_tree_17_b
+		mesh_nm: PW_tree_17_c tcol_nm: bo_pw_tree_17_c
+		mesh_nm: PW_tree_17_d tcol_nm: bo_pw_tree_17_d
+
+	id: tree_plane flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: tree_18_a tcol_nm: bo_tree_18_a
+		mesh_nm: tree_18_b tcol_nm: bo_tree_18_b
+
+	id: pw_birch_yellow_group flags: 0x400400000 dflag: fkf_tree|density(4) nmeshes: 2
+		mesh_nm: PW_tree_18_a tcol_nm: bo_pw_tree_18_a_cyl
+		mesh_nm: PW_tree_18_b tcol_nm: bo_pw_tree_18_b_cyl
+
+	id: tree_19 flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: tree_19_a tcol_nm: bo_tree_19_a
+
+	id: pw_snow_bushes flags: 0x400000000 dflag: density(4) nmeshes: 1
+		mesh_nm: PW_tree_19_a tcol_nm: 0
+
+	id: beech flags: 0x300400400 dflag: fkf_plain_forest|fkf_tree|density(3) nmeshes: 2
+		mesh_nm: tree_20_a tcol_nm: bo_tree_20_a
+		mesh_nm: tree_20_b tcol_nm: bo_tree_20_b
+
+	id: pw_leaf_yellow2_group flags: 0x300400800 dflag: fkf_steppe_forest|fkf_tree|density(3) nmeshes: 2
+		mesh_nm: PW_tree_20_a tcol_nm: bo_pw_tree_20_a
+		mesh_nm: PW_tree_20_b tcol_nm: bo_pw_tree_20_b
+
+	id: tall_tree flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 1
+		mesh_nm: tall_tree_a tcol_nm: bo_tall_tree_a
+
+	id: pw_pine_group3 flags: 0x200402000 dflag: fkf_desert_forest|fkf_tree|density(2) nmeshes: 1
+		mesh_nm: PW_tall_tree_a tcol_nm: bo_pw_tall_tree_a_cyl
+
+	id: tree_e flags: 0x400400400 dflag: fkf_plain_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: tree_e_1 tcol_nm: bo_tree_e_1
+		mesh_nm: tree_e_2 tcol_nm: bo_tree_e_2
+		mesh_nm: tree_e_3 tcol_nm: bo_tree_e_3
+
+	id: pw_fir_shubby_small_group flags: 0x400402800 dflag: fkf_steppe_forest|fkf_desert_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_e_1 tcol_nm: bo_pw_tree_e_1
+		mesh_nm: PW_tree_e_2 tcol_nm: bo_pw_tree_e_2
+		mesh_nm: PW_tree_e_3 tcol_nm: bo_pw_tree_e_3
+
+	id: tree_f flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: tree_f_1 tcol_nm: bo_tree_f_1
+		mesh_nm: tree_f_2 tcol_nm: bo_tree_f_1
+		mesh_nm: tree_f_3 tcol_nm: bo_tree_f_1
+
+	id: pw_leaf_yellow_group flags: 0x400400800 dflag: fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_f_1 tcol_nm: bo_pw_tree_f_1
+		mesh_nm: PW_tree_f_2 tcol_nm: bo_pw_tree_f_1
+		mesh_nm: PW_tree_f_3 tcol_nm: bo_pw_tree_f_1
+
+	id: grape_vineyard flags: 0x0 dflag: 0 nmeshes: 1
+		mesh_nm: grape_vineyard tcol_nm: bo_grape_vineyard
+
+	id: grape_vineyard_stake flags: 0x0 dflag: 0 nmeshes: 1
+		mesh_nm: grape_vineyard_stake tcol_nm: bo_grape_vineyard_stake
+
+	id: wheat flags: 0x0 dflag: 0 nmeshes: 4
+		mesh_nm: wheat_a tcol_nm: 0
+		mesh_nm: wheat_b tcol_nm: 0
+		mesh_nm: wheat_c tcol_nm: 0
+		mesh_nm: wheat_d tcol_nm: 0
+
+	id: zl_fir flags: 0x500400000 dflag: fkf_tree|density(5) nmeshes: 4
+		mesh_nm: PL_fur1 tcol_nm: bo_pl_fur1
+		mesh_nm: PL_fur2 tcol_nm: bo_pl_fur2
+		mesh_nm: PL_fur3 tcol_nm: bo_pl_fur3
+		mesh_nm: PW_pine_3_a_xx tcol_nm: bo_pw_pine_3_a
+
+	id: zl_fir_tall flags: 0x500403000 dflag: fkf_snow_forest|fkf_desert_forest|fkf_tree|density(5) nmeshes: 3
+		mesh_nm: PL_fur_tall1 tcol_nm: bo_pl_fur_tall1
+		mesh_nm: PL_fur_tall2 tcol_nm: bo_pl_fur_tall2
+		mesh_nm: PL_fur_tall3 tcol_nm: bo_pl_fur_tall3
+
+	id: zl_fir_shubby flags: 0x100403000 dflag: fkf_snow_forest|fkf_desert_forest|fkf_tree|density(1) nmeshes: 5
+		mesh_nm: PW_tree_2_a tcol_nm: bo_pw_tree_2_a_cyl
+		mesh_nm: PW_tree_2_b tcol_nm: bo_pw_tree_2_b_cyl
+		mesh_nm: PW_tree_e_1 tcol_nm: bo_pw_tree_e_1
+		mesh_nm: PW_tree_e_2 tcol_nm: bo_pw_tree_e_2
+		mesh_nm: PW_tree_e_3 tcol_nm: bo_pw_tree_e_3
+
+	id: zl_birch_yellow flags: 0x400000 dflag: fkf_tree nmeshes: 2
+		mesh_nm: PW_tree_4_a tcol_nm: bo_pw_tree_4_a_cyl
+		mesh_nm: PW_tree_4_b tcol_nm: bo_pw_tree_4_b_cyl
+
+	id: zl_birch_green flags: 0x400000 dflag: fkf_tree nmeshes: 4
+		mesh_nm: PW_tree_5_a tcol_nm: bo_pw_tree_5_a_cyl
+		mesh_nm: PW_tree_5_b tcol_nm: bo_pw_tree_5_b_cyl
+		mesh_nm: PW_tree_5_c tcol_nm: bo_pw_tree_5_c_cyl
+		mesh_nm: PW_tree_5_d tcol_nm: bo_pw_tree_5_d_cyl
+
+	id: zl_fir_shubby_group flags: 0x200402000 dflag: fkf_desert_forest|fkf_tree|density(2) nmeshes: 4
+		mesh_nm: PW_tree_6_a tcol_nm: bo_pw_tree_6_a
+		mesh_nm: PW_tree_6_b tcol_nm: bo_pw_tree_6_b
+		mesh_nm: PW_tree_6_c tcol_nm: bo_pw_tree_6_c
+		mesh_nm: PW_tree_6_d tcol_nm: bo_pw_tree_6_d
+
+	id: zl_green2_group flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tree_8_a tcol_nm: bo_pw_tree_8_a
+		mesh_nm: PW_tree_8_b tcol_nm: bo_pw_tree_8_b
+		mesh_nm: PW_tree_8_c tcol_nm: bo_pw_tree_8_c
+
+	id: zl_skeleton_man flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_tree_7_a tcol_nm: 0
+		mesh_nm: PW_tree_7_b tcol_nm: 0
+		mesh_nm: PW_tree_7_c tcol_nm: 0
+
+	id: zl_green_group_small flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tree_10_a tcol_nm: bo_pw_tree_10_a
+		mesh_nm: PW_tree_10_b tcol_nm: bo_pw_tree_10_b
+		mesh_nm: PW_tree_10_c tcol_nm: bo_pw_tree_10_c
+
+	id: zl_green_group_large flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tree_11_a tcol_nm: bo_pw_tree_11_a
+		mesh_nm: PW_tree_11_b tcol_nm: bo_pw_tree_11_b
+		mesh_nm: PW_tree_11_c tcol_nm: bo_pw_tree_11_c
+
+	id: zl_tree_12 flags: 0x400400c00 dflag: fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_12_a_xx tcol_nm: bo_pw_tree_12_a
+		mesh_nm: PW_tree_12_b_xx tcol_nm: bo_pw_tree_12_b
+		mesh_nm: PW_tree_12_c_xx tcol_nm: bo_pw_tree_12_c
+
+	id: zl_birch_tall flags: 0x400400800 dflag: fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_14_a tcol_nm: bo_pw_tree_14_a_cyl
+		mesh_nm: PW_tree_14_b tcol_nm: bo_pw_tree_14_b_cyl
+		mesh_nm: PW_tree_14_c tcol_nm: bo_pw_tree_14_c_cyl
+
+	id: zl_tree_15 flags: 0x400400c00 dflag: fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4) nmeshes: 3
+		mesh_nm: PW_tree_15_a tcol_nm: bo_pw_tree_15_a_cyl
+		mesh_nm: PW_tree_15_b tcol_nm: bo_pw_tree_15_b_cyl
+		mesh_nm: PW_tree_15_c tcol_nm: bo_pw_tree_15_c_cyl
+
+	id: zl_tree_16 flags: 0x400400c00 dflag: fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4) nmeshes: 2
+		mesh_nm: PW_tree_16_a tcol_nm: bo_pw_tree_16_a_cyl
+		mesh_nm: PW_tree_16_b tcol_nm: bo_pw_tree_16_b_cyl
+
+	id: zl_birch_green_group flags: 0x400000 dflag: fkf_tree nmeshes: 4
+		mesh_nm: PW_tree_17_a tcol_nm: bo_pw_tree_17_a
+		mesh_nm: PW_tree_17_b tcol_nm: bo_pw_tree_17_b
+		mesh_nm: PW_tree_17_c tcol_nm: bo_pw_tree_17_c
+		mesh_nm: PW_tree_17_d tcol_nm: bo_pw_tree_17_d
+
+	id: zl_birch_yellow_group flags: 0x400000 dflag: fkf_tree nmeshes: 2
+		mesh_nm: PW_tree_18_a tcol_nm: bo_pw_tree_18_a_cyl
+		mesh_nm: PW_tree_18_b tcol_nm: bo_pw_tree_18_b_cyl
+
+	id: zl_aspen_yellow flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tree_f_1 tcol_nm: bo_pw_tree_f_1
+		mesh_nm: PW_tree_f_2 tcol_nm: bo_pw_tree_f_2
+		mesh_nm: PW_tree_f_3 tcol_nm: bo_pw_tree_f_3
+
+	id: zl_aspen_yellow_group flags: 0x400000 dflag: fkf_tree nmeshes: 2
+		mesh_nm: PW_tree_20_a tcol_nm: bo_pw_tree_20_a
+		mesh_nm: PW_tree_20_b tcol_nm: bo_pw_tree_20_b
+
+	id: zl_aspen_yellow_bush flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PL_aspen_yellowbush1 tcol_nm: 0
+		mesh_nm: PL_aspen_yellowbush2 tcol_nm: 0
+		mesh_nm: PL_aspen_yellowbush3 tcol_nm: 0
+
+	id: zl_oak_group flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PL_oak_group1 tcol_nm: bo_pl_oak_group1
+		mesh_nm: PL_oak_group2 tcol_nm: bo_pl_oak_group2
+		mesh_nm: PL_oak_group3 tcol_nm: bo_pl_oak_group3
+
+	id: zl_bush_white_flowers flags: 0x0 dflag: 0 nmeshes: 2
+		mesh_nm: PW_grass_bush_l01 tcol_nm: 0
+		mesh_nm: PW_grass_bush_l02 tcol_nm: 0
+
+	id: zl_bush_08 flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_bushes08_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes08_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes08_c_xx tcol_nm: 0
+
+	id: zl_fir_bush flags: 0xa00003020 dflag: fkf_desert|fkf_snow_forest|fkf_desert_forest|density(10) nmeshes: 3
+		mesh_nm: PW_bushes09_a tcol_nm: 0
+		mesh_nm: PW_bushes09_b tcol_nm: 0
+		mesh_nm: PW_bushes09_c tcol_nm: 0
+
+	id: zl_birch_green_bush flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_bushes10_a tcol_nm: 0
+		mesh_nm: PW_bushes10_b tcol_nm: 0
+		mesh_nm: PW_bushes10_c tcol_nm: 0
+
+	id: zl_shalebush flags: 0x200002000 dflag: fkf_desert_forest|density(2) nmeshes: 3
+		mesh_nm: PW_bushes11_a tcol_nm: 0
+		mesh_nm: PW_bushes11_b tcol_nm: 0
+		mesh_nm: PW_bushes11_c tcol_nm: 0
+
+	id: zl_bush_steppe_wheat flags: 0x0 dflag: 0 nmeshes: 3
+		mesh_nm: PW_bushes12_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes12_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes12_c_xx tcol_nm: 0
+
+	id: zl_pink_tree flags: 0x400000 dflag: fkf_tree nmeshes: 3
+		mesh_nm: PW_tall_tree_a tcol_nm: bo_pw_tall_tree_a_cyl
+		mesh_nm: PW_pine_4_a tcol_nm: bo_pw_pine_4_a_cyl
+		mesh_nm: PW_pine_6_a tcol_nm: bo_pw_pine_6_a_cyl
+
+	id: zl_rockformation flags: 0x100212020 dflag: fkf_desert|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(1) nmeshes: 3
+		mesh_nm: PW_rock_c tcol_nm: bo_pw_rock_c
+		mesh_nm: PW_rock_e tcol_nm: bo_pw_rock_e
+		mesh_nm: PW_rock_k tcol_nm: bo_pw_rock_k
+
+	id: zl_white_flowers flags: 0x2000c0000 dflag: fkf_align_with_ground|fkf_grass|density(2) nmeshes: 2
+		mesh_nm: PW_grass_bush_l01 tcol_nm: 0
+		mesh_nm: PW_grass_bush_l02 tcol_nm: 0
+
+	id: zl_yellow_flowers flags: 0x2000c0000 dflag: fkf_align_with_ground|fkf_grass|density(2) nmeshes: 1
+		mesh_nm: PW_spiky_plant tcol_nm: 0
+
+	id: rock flags: 0x4600401400 dflag: fkf_plain_forest|fkf_snow_forest|fkf_tree|density(70) nmeshes: 2
+		mesh_nm: PW_pine_1_a_xx tcol_nm: bo_pw_pine_1_a
+		mesh_nm: PW_pine_1_b_xx tcol_nm: bo_pw_pine_1_b
+
+	id: rock_snowy2 flags: 0x400000 dflag: fkf_tree nmeshes: 1
+		mesh_nm: PW_tree_snowy_b tcol_nm: bo_pw_tree_snowy_b
+
+	id: zl_reed flags: 0xc201000010 dflag: fkf_snow|fkf_guarantee|density(194) nmeshes: 1
+		mesh_nm: GA_reed1 tcol_nm: 0
+
+	id: ga_grass_snow flags: 0x682011c1010 dflag: fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1666) nmeshes: 5
+		mesh_nm: PW_grass_a_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+
+	id: ga_bushes04_a_snow flags: 0x18601041010 dflag: fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_guarantee|density(390) nmeshes: 3
+		mesh_nm: PW_bushes04_a_xx tcol_nm: 0
+		mesh_nm: PW_bushes04_b_xx tcol_nm: 0
+		mesh_nm: PW_bushes04_c_xx tcol_nm: 0
+
+	id: ga_grass_desert flags: 0x7dc051c2020 dflag: fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|fkf_has_colony_props|density(2012) nmeshes: 5
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_b_xx tcol_nm: 0
+		mesh_nm: PW_grass_e_xx tcol_nm: 0
+		mesh_nm: PW_grass_yellow_e tcol_nm: 0
+
+	id: zl_fir_tall_hs flags: 0x500403000 dflag: fkf_snow_forest|fkf_desert_forest|fkf_tree|density(5) nmeshes: 4
+		mesh_nm: PW_rock_d tcol_nm: bo_pw_rock_d
+		mesh_nm: PW_rock_f tcol_nm: bo_pw_rock_f
+		mesh_nm: PW_rock_i tcol_nm: bo_pw_rock_i
+		mesh_nm: PW_pine_1_a_xx tcol_nm: bo_pw_rock_f
+
+	id: zl_fir_shubby_single flags: 0x500402010 dflag: fkf_snow|fkf_desert_forest|fkf_tree|density(5) nmeshes: 4
+		mesh_nm: PW_tree_2_a_single1 tcol_nm: bo_pw_tree_2_a_single1
+		mesh_nm: PW_tree_2_a_single2 tcol_nm: 0
+		mesh_nm: PW_tree_2_a_single3 tcol_nm: bo_pw_tree_2_a_single3
+		mesh_nm: PW_tree_2_a_single2_dark tcol_nm: 0
+
+	id: ga_tree_3_a_brown flags: 0x1600002020 dflag: fkf_desert|fkf_desert_forest|density(22) nmeshes: 2
+		mesh_nm: PW_tree_3_a_brown tcol_nm: 0
+		mesh_nm: PW_tree_3_b_brown tcol_nm: 0
