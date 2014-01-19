@@ -1,0 +1,3 @@
+1. run all py files
+2. copy flora_kinds.txt, skyboxes.txt and ground_specs.txt files to "../WOTS/Data/" folder
+3. if a new ground_spec is added or any of them is deleted: engine c++ code should be recompiled after copying ground_spec_codes.h to Program/src folder
