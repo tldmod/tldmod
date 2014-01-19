@@ -1,0 +1,48 @@
+skl_trade|Handel
+skl_trade_desc|Jede Stufe dieser Fähigkeit ermöglicht es sich mehr Ausrüstung für weniger Ressourcenpunkte anzueignen. (Truppen-Fähigkeit)
+skl_leadership|Führerschaft
+skl_leadership_desc|Jeder Punkt erhöht die Maximalzahl der Soldaten, die ihr befehligen könnt, um 5, erhöht Eure Truppen-Moral und reduziert den Sold um 5%%. (Anführer-Fähigkeit)
+skl_prisoner_management|Gefangenenaufsicht
+skl_prisoner_management_desc|Jede Stufe dieser Fähigkeit erhöht die Maximalzahl der Gefangenen um %d. (Anführer-Fähigkeit)
+skl_persuasion|Rhetorik
+skl_persuasion_desc|Diese Fähigkeit lässt andere Leute Euren Standpunkt einsehen. (Persönliche Fähigkeit)
+skl_engineer|Handwerk
+skl_engineer_desc|Jeder Punkt dieser Fähigkeit reduziert die Zeit Ausrüstung zu fertigen als auch aufzurüsten, und erlaubt Aufrüstungen höherer Qualität. (Truppen-Fähigkeit)
+skl_first_aid|Erste Hilfe
+skl_first_aid_desc|Helden erhalten pro Fertigkeitsstufe 5%% von bei Missionen verlorenen Trefferpunkten wieder. (Truppen-Fähigkeit)
+skl_surgery|Chirurgie
+skl_surgery_desc|Jeder Punkt dieser Fähigkeit ermöglicht eine 4%% Chance, dass ein tödlich verwundetes Truppenmitglied nur verwundet statt getötet wird. (Truppen-Fähigkeit)
+skl_wound_treatment|Wundheilung
+skl_wound_treatment_desc|Die Heilungsgeschwindigkeit der Truppe wird um 20%% pro Fertigkeitsstufe erhöht. (Truppen-Fähigkeit)
+skl_inventory_management|Inventarverwaltung
+skl_inventory_management_desc|Erhöht das Aufnahmevermögen des Inventars um +6 pro Fertigkeitsstufe. (Anführer-Fähigkeit)
+skl_spotting|Aufklärung
+skl_spotting_desc|Die Sichtweite der Truppe wird um 10%% pro Fertigkeitsstufe erhöht (Truppen-Fähigkeit)
+skl_pathfinding|Wegfindung
+skl_pathfinding_desc|Die Kartengeschwindigkeit der Truppe wird um 3%% pro Fertigkeitsstufe erhöht. (Truppen-Fähigkeit)
+skl_tactics|Taktik
+skl_tactics_desc|Jeweils zwei Stufen dieser Fähigkeit erhöhen den Kampfbeginnsvorteil um 1. (Truppen-Fähigkeit)
+skl_tracking|Spurensuche
+skl_tracking_desc|Spuren werden informativer. (Truppen-Fähigkeit)
+skl_trainer|Ausbilder
+skl_trainer_desc|Jeden Tag verleiht jeder Held mit dieser Fähigkeit jedem anderen Truppenmitglied mit geringerer Stufe ein bisschen Erfahrung. Die Erfahrung wächst wie folgt: {0,4,10,16,23,30,38,46,55,65,80}. (Persönliche Fähigkeit)
+skl_looting|Plündern
+skl_looting_desc|Diese Fähigkeit erhöht die Menge des erhaltenen Plünderguts um 10%% pro Fertigkeitsstufe. (Truppen-Fähigkeit)
+skl_horse_archery|Berittenes Bogenschießen
+skl_horse_archery_desc|Reduziert Schadens- und Genauigkeitsabzüge für Bogenschießen und Werfen vom Pferd. (Persönliche Fähigkeit)
+skl_riding|Reiten
+skl_riding_desc|Erlaubt Euch Pferde (oder andere Kreaturen) höherer Schwierigkeitsstufen zu reiten und erhöht Eure Reitgeschwindigkeit und Manövrierfähigkeit. (Persönliche Fähigkeit)
+skl_athletics|Athletik
+skl_athletics_desc|Erhöht Eure Laufgeschwindigkeit. (Persönliche Fähigkeit)
+skl_shield|Schild
+skl_shield_desc|Reduziert den Schaden an Schilden (um 8%% pro Fertigkeitsstufe) und verbessert die Schildgeschwindigkeit und -deckfläche. (Persönliche Fähigkeit)
+skl_weapon_master|Waffenmeister
+skl_weapon_master_desc|Erleichtert es Euch Waffenfertigkeiten zu erlernen und erhöht die Grenzen der Waffenfertigkeiten. Die Beschränkungen sehen wie folgt aus: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Persönliche Fähigkeit)
+skl_power_draw|Bogenzugkraft
+skl_power_draw_desc|Lässt den Helden stärkere Bögen benutzen. Jeder zusätzliche Punkt dieser Fähigkeit (bis zu vier plus Spannwert-Anforderung für den Bogen) erhöht den vom Bogen angerichteten Schaden um 14%%. (Persönliche Fähigkeit)
+skl_power_throw|Wurfkraft
+skl_power_throw_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht den Wurfschaden um 10%%. (Persönliche Fähigkeit)
+skl_power_strike|Schlagkraft
+skl_power_strike_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht den Nahkampfschaden um 8%%. (Persönliche Fähigkeit)
+skl_ironflesh|Eisenhaut
+skl_ironflesh_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht die Trefferpunkte um +2. (Persönliche Fähigkeit)

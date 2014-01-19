@@ -261,64 +261,64 @@ str_retirement_text_3|Demasiado tarde te das cuenta de que tu dinero no durará 
 str_retirement_text_4|El dinero que has ahorrado no te dura demasiado, pero consigues reunir lo suficiente como para comprar algo de tierra cerca de la aldea de {s7}. Allí te conviertes en un granjero libre, y pronto empiezas a atraer a potenciales {wives/husbands}. Con el tiempo, los aldeanos te tratan como el héroe local. Siempre tienes un puesto de honor en los festines y tus hazañas son contadas y recontadas en todas las tabernas, para que los niños te recuerden por siempre jamás.
 str_retirement_text_5|El dinero que has ahorrado no te dura demasiado pero es suficiente para comprar una pequeña taberna en {s9}. A pesar de que los lugareños desconfían la principio, pronto te aceptan como uno más. Con el tiempo tu próspera taberna se convierte en sala de festines y en lugar de reunión. La gente viene desde muy lejos para comer o para pasar la noche allí, debido a tu renombre y a las historias épicas que cuentas de tus días de aventuras.
 str_retirement_text_6|Has ahorrado sabiamente durante tu carrera y ahora tu dinero y tu inteligencia te permiten realizar excelentes inversiones que aseguren tu futuro. Trás comprar varias tiendas y almacenes en {s9}, tu astucia te convierte en uno de los más promienentes mercaderes de la ciudad y pronto te conviertes en una persona adinerada conocida tanto por su imperio mercantil como por sus hazañas en la batalla.
-str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tu fortín de {s7}, administrando la aldea y los campos, organizando las cortes locales y cumpliendo con tus obligaciones hacia tu señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propio salón y tus posesiones, existen pocos deseos de bienes materiales que tus ahorros o tus rentas no te permitan conseguir.
-str_retirement_text_8|No hay ninguna duda de que te lo has montado bien. Tus enormes propiedades y el oro obtenido en tus aventuras son suficientes para garantizarte una vida llena de riquezas y facilidades para el resto de tus días. Retirándote a tu noble sitio en {s8}, intercambias tu vida de aventuras por la política y pronto te conviertes en alguien con poder en el reino de tu señor. Con tus propios bosques para cazar, una sala de banquetes y cientos de historias de guerra que contar, tienes pocos problemas para sacarle lo máximo a los años futuros.
-str_retirement_text_9|Como recompensa por tu competente y leal servicio, tu señor feudal te otorga un título nobiliario, convirtiéndote así en parte de la nobleza del reino. Pronto completas tu investidura como barón de {s7}, y te conviertes en uno de los consejeros y ayudantes de tu señor feudal. Tu renombre te da un sutil empuje en tu influencia así como también en tu poder político. Pasas el resto de tus días jugando a los juegos de poder, administrando tus grandes feudos y recordando los viejos tiempos de aventura y gloria.
-str_retirement_text_10|A pesar de tus humildes comienzos, tu señor feudal te tiene en alta estima, y el reino se estremece en admiración cuando se te otorga el título nobiliario de {count/countess} de {s9}. Vastos campos y fortunas son tuyos ahora. Pronto te conviertes en el consejero más cercano a tu señor feudal; te conviertes en su igual y te encargas de llevar gran parte de su reino. Acabas sentándote en un trono, en tu propio espléndido palacio como una de las figuras más poderosas de la Tierra Media.
-str_loot_village|Saquear la aldea
-str_steal_from_villagers|Robar a los aldeanos
-str_rob_caravan|Robar una caravana mercante
-str_sell_slavery|Vender esclavos
-str_men_hungry|Quedarse sin comida
-str_men_unpaid|No poder pagar a los soldados
-str_excessive_casualties|Sacrificar demasiados soldados
-str_surrender|Rendirse al enemigo
-str_flee_battle|Huir de la batalla
-str_pay_bandits|Pagar a los bandidos
-str_fail_quest|Fracasar en la misión encomendada
-str_squander_money|Despilfarrar el dinero que nos ha sido otorgado
-str_murder_merchant|Involucrarnos en un asesinato a sangre fría
-str_round_up_serfs|Pegar a nuestros siervos por algún noble
-str_battle_fate_1|Estábamos separados en el corazón de la batalla
-str_battle_fate_2|Fui herido y me abandonaron a mi suerte
+str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tu fortín de {s7}, administrando la aldea y los campos, organizando las cortes locales y cumpliendo con tus obligaciones hacia tu señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propio salón y tus propiedades, existen pocos deseos de bienes materiales que tu riqueza o las rentas de tus tierras no te permitan conseguir.
+str_retirement_text_8|No hay ninguna duda de que te lo has montado bien. Tus enormes propiedades y el oro obtenido en tus aventuras son suficientes para garantizarte una vida opulenta y fácil para el resto de tus días. Retirándote a tu solar en {s8}, cambias tu vida de aventuras por la política y pronto te conviertes en alguien con poder en el reino de tu señor. Con intrigas en las que mantenerte ocupado, tus propios bosques para cazar, un salón para festejar y cientos de historias de guerra que contar, tienes pocos problemas para sacarle lo máximo a los años futuros.
+str_retirement_text_9|Como recompensa por tu competente y leal servicio, tu señor feudal te otorga un título herditario, convirtiéndote así en parte de la alta nobleza del reino. Pronto completas tu investidura como barón de {s7}, y te conviertes en uno de los consejeros y ayudantes de tu señor. Tu renombre te da una sutil influencia, así como abierto poder político. Pasas el resto de tus días jugando a los juegos de poder, administrando tus grandes feudos y recordando los viejos tiempos de aventura y gloria.
+str_retirement_text_10|A pesar de tus humildes comienzos, tu señor feudal te tiene en alta estima, y el reino se estremece en admiración cuando se te otorga el título hereditario de {count/countess} de {s9}. Vastos campos y fortunas son tuyos ahora. Pronto te conviertes en el consejero más cercano a tu señor, casi su igual, y te encargas de llevar gran parte de su reino. Acabas sentándote en un trono, en tu propio espléndido palacio como una de las figuras más poderosas de la Tierra Media.
+str_loot_village|atacar a aldeanos inocentes
+str_steal_from_villagers|robar a los aldeanos pobres
+str_rob_caravan|atracar una caravana mercante
+str_sell_slavery|vender a gente como esclavos
+str_men_hungry|quedarse sin comida
+str_men_unpaid|no poder pagar a los soldados
+str_excessive_casualties|sacrificar demasiados soldados
+str_surrender|rendirse al enemigo
+str_flee_battle|huir de la batalla
+str_pay_bandits|pagar a los bandidos
+str_fail_quest|fracasar en una misión que juramos cumplir
+str_squander_money|despilfarrar el dinero que nos ha sido confiado
+str_murder_merchant|involucrarnos en un asesinato a sangre fría
+str_round_up_serfs|apalear a siervos en nombre de un noble
+str_battle_fate_1|Nos separamos en el fragor de la batalla
+str_battle_fate_2|Me hirieron y pensaron que había muerto
 str_battle_fate_3|El enemigo me dejó inconsciente          
-str_battle_fate_4|Me hicieron prisionero para cobrar mi rescate
+str_battle_fate_4|Me apresaron para cobrar mi rescate
 str_battle_fate_5|Me capturaron, pero conseguí escapar
-str_npc_morale_report|Estoy {s6} con vuestra tu elección de compañeros, {s7} vuestro estilo de liderazgo, y {s8} el estado general de los asuntos
-str_happy|Contento con
+str_npc_morale_report|Estoy {s6} tu elección de compañeros, {s7} tu estilo de liderazgo, y {s8} el estado general de las cosas.
+str_happy|a gusto con
 str_content|Conforme con
-str_concerned|Preocupado por
-str_not_happy|Enfadado con
-str_miserable|Paralizado con
+str_concerned|en desacuerdo con
+str_not_happy|a disgusto con
+str_miserable|hasta la coronilla con
 str_morale_reg1| Moral: {reg1}
-str_bar_enthusiastic|Entusiasmado
+str_bar_enthusiastic|Entusiasta
 str_bar_content|Conforme
-str_bar_weary|Cansado
-str_bar_disgruntled|Insatisfecho
+str_bar_weary|Disconforme
+str_bar_disgruntled|Infeliz
 str_bar_miserable|Miserable
-str_here_plus_space|Aquí
-str_npc1_intro|¡Salve, guerrero, y bienvenido a Henneth Annûn!
-str_npc2_intro|¡Salve! ¿Puedo preguntarle que asuntos le traen por aquí?
-str_npc3_intro|¡Ho! Nada de armar barullo, viajero.
+str_here_plus_space|aquí
+str_npc1_intro|Salve, guerrero, y bienvenido a Henneth Annûn.
+str_npc2_intro|¡Salve! ¿Puedo preguntaros que asuntos os traen por aquí?
+str_npc3_intro|¡Eh! Nada de armar barullo, viajero.
 str_npc4_intro|¡Bienvenido a Meduseld, guerrero!
-str_npc5_intro|¡Salve {playername}. ¡Mae govannen!
-str_npc6_intro|Dejadme en paz, extraño. No deseo hablar con vos.
+str_npc5_intro|Salve, {playername} ¡Mae govannen!
+str_npc6_intro|Déjame en paz, extranjero. No deseo hablar contigo.
 str_npc7_intro|¡Kíli, hijo de Dwalin, a su servicio!
 str_npc8_intro|Bienvenido al Valle, viajero. ¿Cómo puedo ayudaros?
-str_npc9_intro|¡Ssh! Si saludas a los guardas te cortaré la molleja y se la daré de comer a los huargos.
+str_npc9_intro|¡Ssh! ¡Si se te ocurre siquiera saludar a los guardias te cortaré la molleja y se la daré de comer a los huargos!
 str_npc10_intro|¡Tú!          
-str_npc11_intro|¡Arrg! No eres de aquí, ¿verdad? Puedo olerlo y si dices que no en frente de los jefes, ¡te sacaré los ojos!
-str_npc12_intro|¡Ey! ¿Qué haces merodeando por aquí?
+str_npc11_intro|¡Arrg! No eres de aquí, ¿verdad? Puedo olerlo y si dices que no enfrente de los jefes, ¡te sacaré los ojos!
+str_npc12_intro|¡Eh! ¿Qué haces merodeando por aquí?
 str_npc13_intro|¡Alto! ¿Qué te trae a la tienda del Caudillo?
 str_npc14_intro|Tienes los andares de un hombre cuyas piernas han visto pocos días en el mar, forastero. 
 str_npc15_intro|¡Alabado sea el Ojo, oh guerrero!
-str_npc16_intro|Mis ojos no suelen ver a un extraño caminando entre las tiendas de un campamento de las tierras del este. ¿Qué os trae por aquí? Hablad ahora, y sed rápido.
+str_npc16_intro|Mis ojos no suelen ver a un extraño caminando entre las tiendas de las tierras del este. ¿Qué te trae por aquí? Habla ahora, y sé rápido.
 str_npc17_intro|Hola. ¿Te gustan estos bosques?
 str_npc1_intro_response_1|Salve, maestro rastreador. ¿Cómo les va a los montaraces del sur?
-str_npc2_intro_response_1|Mis asuntos son los asuntos de Gondor, ¿quién eres tu?
-str_npc3_intro_response_1|Buen día a vos también, ¿tenéis algún problema?
+str_npc2_intro_response_1|Mis asuntos son los asuntos de Gondor, ¿quién eres tú?
+str_npc3_intro_response_1|Buen día a ti también, ¿tienes algún problema?
 str_npc4_intro_response_1|Saludos, mi señora. ¿Con quién tengo el honor de hablar?
-str_npc5_intro_response_1|¡Salve, señor elfo! Es un gran honor conocerle.
+str_npc5_intro_response_1|¡Salve, señor de los elfos! Es un gran honor conoceros.
 str_npc6_intro_response_1|¿Así es como los Elfos Silvanos saludan a sus invitados?
 str_npc7_intro_response_1|{playername} a su servicio. ¿Cómo le va al pueblo de Durin?
 str_npc8_intro_response_1|Saludos. Me preguntaba si habría voluntarios para unirse a nosotros en nuestros viajes.
@@ -331,40 +331,40 @@ str_npc14_intro_response_1|¿Quién eres?
 str_npc15_intro_response_1|Alabado sea el Ojo, Snaga. ¿Cual es tu historia?
 str_npc16_intro_response_1|¿Quién eres?
 str_npc17_intro_response_1|El Bosque Negro es un bosque magnífico. ¿Quién eres? ¿Sabes mucho sobre los bosques?
-str_npc1_intro_response_2|No te preocupes, me temo que las cuevas no son un lugar apropiado para una conversación.
+str_npc1_intro_response_2|No importa, me temo que las cuevas no son un lugar apropiado para una conversación.
 str_npc2_intro_response_2|Da igual, no tengo tiempo para hablar con guardias.
 str_npc3_intro_response_2|No te preocupes, armaré "barullo" en otro sitio.
-str_npc4_intro_response_2|Disculpe, tengo asuntos urgentes que atender.
-str_npc5_intro_response_2|Disculpa, tengo gente más importante a la que hablar.
+str_npc4_intro_response_2|Disculpad, tengo asuntos urgentes que atender.
+str_npc5_intro_response_2|Disculpad, tengo gente menos importante con la que hablar.
 str_npc6_intro_response_2|El sentimiento es mutuo. Adiós.
-str_npc7_intro_response_2|No te preocupes, necesito tomar el aire.
+str_npc7_intro_response_2|Disculpa, necesito algo de aire fresco.
 str_npc8_intro_response_2|No te preocupes, estamos simplemente admirando el paisaje.
-str_npc9_intro_response_2|Me pongo en marcha entonces, o mi brazo armado empezará a picarme.
+str_npc9_intro_response_2|Me pongo en marcha entonces, o el brazo de la espada empezará a picarme.
 str_npc10_intro_response_2|[Ignorar e irse]
-str_npc11_intro_response_2|¡No te incumbe a ti, gusano!
-str_npc12_intro_response_2|¡No te incumbe a ti, gusano!
-str_npc13_intro_response_2|¡No te incumbe a ti!
-str_npc14_intro_response_2|¡No te incumbe a ti!
-str_npc15_intro_response_2|Hmmf. Guárdate tus zarpitas, Snaga.
-str_npc16_intro_response_2|¡No te incumbe a ti!
+str_npc11_intro_response_2|¡Ocúpate de tus asuntos, gusano!
+str_npc12_intro_response_2|¡Ocúpate de tus asuntos, gusano!
+str_npc13_intro_response_2|¡Ocúpate de tus asuntos!
+str_npc14_intro_response_2|¡Ocúpate de tus asuntos!
+str_npc15_intro_response_2|Hmmf. Guárdate tus pequeñas garras, Snaga.
+str_npc16_intro_response_2|¡Ocúpate de tus asuntos!
 str_npc17_intro_response_2|Sí, los bosques son maravillosos, pero tengo que seguir mi camino.
-str_npc1_backstory_a|Habéis venido en tiempos difíciles, amigo. Ithilien está rebosante de exploradores e invasores enemigos; hay quienes han visto grandes huestes de orcos. Intentamos evitar que esas nauseabundas criaturas crucen el gran rio y he liderado a un grupo de habilidosos montaraces a muchas batallas victoriosas. Mi capitán Faramir es atrevido y no me desespero por la sombra que se cierne sobre nosotros.
+str_npc1_backstory_a|Has venido en tiempos difíciles, amigo. Ithilien está rebosante de exploradores e invasores enemigos; hay quienes han visto grandes huestes de orcos. Intentamos evitar que esas nauseabundas criaturas crucen el gran rio y he liderado a un grupo de diestros montaraces en muchas misiones exitosas. Mi capitán Faramir es atrevido y no me desespero por la sombra que se cierne sobre nosotros.
 str_npc2_backstory_a|Ah, que considerado sois por preguntar por mi. He sido asignado a la guardia de los salones del Senescal, una tarea importante. Si se me permite decir, no muy ajetreada.
-str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por el momento y la tierra tiembla como un tablón mal colocado. Ah, si no hubiese bebido toda esa cerveza anoche... normalmente tengo buena cabeza para beber, debe de haber sido algún bregaje orco.
-str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuáles son tus asuntos, {playername}. Permíteme explicarte por qué.
-str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
-str_npc6_backstory_a|Disculpad mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
+str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por momentos y la tierra tiembla como si cabalgara un caballo travieso. Ah, si no hubiese bebido toda esa cerveza anoche... normalmente tengo buena cabeza para beber, debe de haber sido algún bregaje orco.
+str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuáles son vuestros asuntos, {playername}. Permitidme explicaros por qué.
+str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los hombres mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
+str_npc6_backstory_a|Disculpa mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
 str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos de Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
-str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy un mero curandero y herbolario con modestas habilidades.
-str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento y sus snaga ahora me dan caza. ¡Ese cerdo lo llevaba pidiendo desde hace tiempo! Una vez, nos emboscó una patrulla de pelos de paja... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga de su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
+str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy una curandera y herbolaria con modestas habilidades.
+str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento, y sus snagas ahora me dan caza. ¡Ese cerdo se lo estaba buscando! Una vez, nos emboscó una patrulla de pelos de paja... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga de su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
 str_npc10_backstory_a|¡Soy Durgash!
-str_npc11_backstory_a|¡Nar! No un rastreador, eso es. ¡Me echaron! Te digo que han perdido sus cabezas, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que tengo una nariz rota. ¡Gam! Si no encuentran una banda para mí pronto me volveré a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles flácidas antes de que me metan ahí!
-str_npc12_backstory_a|Estoy al mando de un grupo. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocan, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
-str_npc13_backstory_a|¡¿?! Soy un grano de arena de las arenas del sur, traído hacia el norte por el frio y las oscuras alas de la noche. Me llamo Lykyada, un Señor Serpiente de Haradwaith. Señor de la Serpiente Dorada, azote de la Tribu de la Serpiente Negra, ahora aliado del Señor Oscuro.
+str_npc11_backstory_a|¡Nar! Un rastreadorno, eso seguro. ¡Me echaron! Te digo que se han vuelto loco, eso es. ¡Malditos! Primero dicen que disparo mal y luego que corro despacio, y luego que mi olfato no sirve de nada. ¡Gam! Si no encuentran un pelotón para mí pronto me mandarán a las Canteras Negras, si lo que oigo es cierto. ¡Haré que algunos de los jefes pierdan sus pieles antes de que me metan ahí!
+str_npc12_backstory_a|Estoy al mando de un banda de muchachos. Soy Gorbag y será mejor que aprendas a respetarnos rápido. Los Uruk somos los jefes por aquí. Los Grandes Jefes se equivocan, sí, incluso los más grandes cometen errores, y siempre los pobres Uruks tienen que arreglarlo, y no nos lo agradecen. Ni siquiera nos dicen lo que saben, ¿eh? Ni de lejos. ¡Grr!
+str_npc13_backstory_a|¿Yo? Soy un grano de arena de los desiertos del sur, traído hacia el norte por los vientos frios y oscuros de la noche. Me llamo Lykyada, un Señor Serpiente de Haradwaith. Señor de la Serpiente Dorada, azote de la Tribu de la Serpiente Negra, ahora aliado del Señor Oscuro.
 str_npc14_backstory_a|Soy Fuldmir, hijo de las tierras sureñas de Umbar, al sur de Harondor, y de la Bahía de Belfalas, pues ambos son hogares en mi corazón. Somos los señores del mar y la vela, corsarios para algunos, familia de la Bahía de Belfalas, pues sus aguas domamos.
-str_npc15_backstory_a|Soy Bolzog el Prodigio, Engastador de Huesos, Cerrador de Heridas y Chamán de Curación. Si vas a la guerra en el bando del Ojo, sin duda algunos de tus compañeros serán heridos por los pieles-pálidas habitantes del bosque y amantes de los caballos. Sí, -¡nar-nar-nar!- a los orcos se los reemplaza fácilmente, oh Gran Lider, pero ¿cómo puedes reemplazar a un huargo? ¿A un gigante? ¿A un troll de las cavernas? ¡Shi-shi! ¡No! Me necesitas, ¡el Gran Bolzog!
+str_npc15_backstory_a|Soy Bolzog el Prodigio, Colocador de Huesos, Cerrador de Heridas y Chamán de Curación. Si vas a la guerra en el bando del Ojo, sin duda algunos de tus compañeros serán heridos por los pieles-pálidas del bosque o los amantes de los caballos. Sí, -¡nar-nar-nar!- a los orcos se los reemplaza fácilmente, oh Gran Lider, pero ¿cómo puedes reemplazar a un huargo? ¿A un gigante? ¿A un troll de las cavernas? ¡Shi-shi! ¡No! Me necesitas, ¡el Gran Bolzog!
 str_npc16_backstory_a|Bueno, es el forastero quien debería hablar primero. No obstante, soy Varfang del pueblo de los Balchoth... puedo adivinar que no has escuchado aún las canciones e historias de mi tierra en las que se habla del los Balchoth, pues con sólo mencionar este nombre tu coraje desaparecería y tu corazón se llenaría de temor.
-str_npc17_backstory_a|Me llaman Dímborn y trabajo en los bosques. Me gusta estar en el campo. Me gustan los bosques. Muchos árboles en los bosques. Me gustan los árboles. He trabajado en los bosques toda mi vida, porque soy fuerte y porque me gustan los átboles\n.
+str_npc17_backstory_a|Me llaman Dímborn y trabajo en los bosques. Se está bien allí. Me gustan los bosques. Muchos árboles en los bosques. Me gustan los árboles. He trabajado en los bosques toda mi vida, porque soy fuerte y porque me gustan los átboles\n.
 str_npc1_backstory_b|Deberías saber que soy un montaraz de Ithilien, del linaje de los Dúnedain. Sé mucho sobre rastreo y exploración y mi destreza con el arco y la espada es bien conocida por los orcos. También puedo entrenar a cualquier alma que desee combatir a la Sombra que se acerca.     
 str_npc2_backstory_b|He sido entrenado como centinela de Minas Tirith, para mantener el orden en la Ciudad Blanca y servir a mi señor Senescal.
 str_npc3_backstory_b|Soy un jinete del éored de Oestemnet, se fueron sin mi a una larga patrulla por los vados del Isen. Sé que su valentía será digna del estandarte verde, pero temo que muchos no regresen.
