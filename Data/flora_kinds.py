@@ -36,6 +36,8 @@ with open("flora_kinds.txt") as f:
 nlines = 0
 nflora = int(result[nlines][0]); nlines+=1
 
+pyresult = []
+
 print("there are %u plants in there!"%nflora)
 
 for n in range(0,nflora):
@@ -62,9 +64,24 @@ for n in range(0,nflora):
   
   print("\n\tid: %s flags: 0x%x dflag: %s nmeshes: %u"%(thiid, flags, dflag, nmesh))
   
+  pymesh = []
+  
   nlines+=1
   
   for i in range(0,nmesh):
     cur_line = result[nlines]
-    print("\t\tmesh_nm: %s tcol_nm: %s"%(cur_line[0],cur_line[1]))
+    
+    tmesh_nm = str(cur_line[0])
+    tcoll_nm = str(cur_line[1])
+    
+    print("\t\tmesh_nm: %s tcol_nm: %s"%(tmesh_nm, tcoll_nm))
+    
+    pymesh.append([cur_line[0], cur_line[1]])
     nlines+=1
+    
+  pyresult.append(tuple([thiid, dflag, pymesh]))
+    
+    
+import pprint
+pp = pprint.PrettyPrinter()
+pp.pprint(pyresult)

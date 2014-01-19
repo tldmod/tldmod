@@ -59,7 +59,7 @@ def save_python_header():
 
 print "Exporting ground_spec data..."
 save_ground_specs()
-save_c_header()
+#save_c_header()
 save_python_header()
 #print "Finished."
   
