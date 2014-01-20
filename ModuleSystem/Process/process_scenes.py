@@ -56,7 +56,7 @@ def save_scenes(variables,variable_uses,tag_uses):
     
     from module_info import wb_compile_switch as is_a_wb_scene
     
-    if (is_a_wb_scene):
+    if (is_a_wb_scene and False): #swy-- disabled again now that we've a correct reverse engineered wb-compatible flora data file
       
       # enable the flag
       terrain_code = int(scene[7],16) | 0b01 << (32 * 5) + 2
