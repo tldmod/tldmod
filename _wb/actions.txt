@@ -392,9 +392,9 @@
  release_stone 1048576 572530703  1
   0.9 throwing_stone 20 65 1 0 0 0 0 0.0 
  ready_pistol 1679818752 606093322  1
-  0.3 anim_human 22500 22515 9 0 0 0 0 0.0 
+  1.5 gansta_bow 100 130 519 28707 0 0 0 0.0 
  release_pistol 1679818752 572538890  1
-  0.3 anim_human 22520 22527 2 0 0 0 0 0.0 
+  0.3 gansta_bow 130 132 3 0 0 0 0 0.0 
  reload_pistol 0 35651644  1
   2 anim_human 22650 22860 9 0 0 0 0 0.0 
  ready_musket 1678770176 606089226  1
