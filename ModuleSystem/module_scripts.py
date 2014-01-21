@@ -9884,7 +9884,7 @@ scripts = [
 			(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
 			(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
 			(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
-						 (eq, ":stack_troop", "trp_mordor_lord"), #Mouth in hood
+			             (eq, ":stack_troop", "trp_mordor_lord"), #Mouth in hood
 			(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":cur_pos", af_override_horse|af_override_weapons),
 		(try_end),
         (val_add,":cur_pos", 1),
@@ -19017,6 +19017,8 @@ scripts = [
 #GA: transferred from town menu so that can double it elsewhere
 ("initialize_center_scene",[
 	(assign, "$talk_context", 0),
+	(set_jump_mission,"mt_town_center"),
+
 	(try_begin),
 		(call_script, "script_cf_enter_center_location_bandit_check"),
 	(else_try),
@@ -19108,6 +19110,13 @@ scripts = [
                     (this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
                     (this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
                                  (eq, ":stack_troop", "trp_lorien_lord"), #Galadriel in her invis peryphery
+
+                    #swy-- debug thingie, it gets called, so the loop works as intended in wb
+                  # (str_store_troop_name, s1, ":stack_troop"),
+                  # (assign, reg1, ":cur_pos"),
+                  # (display_message,"@shit just got real: entry point:{reg1} troop:{s1}"),
+
+                    #swy-- this doesn't seem to do anything in WB unless the set_jump_mission/<stuff>/change_screen_mission is properly sandwitched ->
                     (mission_tpl_entry_set_override_flags, "mt_town_center", ":cur_pos", af_override_horse|af_override_weapons),
                 (try_end),
                 (val_add,":cur_pos", 1),
@@ -19125,7 +19134,6 @@ scripts = [
         (try_end),
 
         (call_script, "script_init_town_walkers"),
-        (set_jump_mission,"mt_town_center"),
         (assign, ":override_state", af_override_horse),
         (try_begin),
             (eq, "$sneaked_into_town", 1), #setup disguise
@@ -19143,6 +19151,8 @@ scripts = [
         (mission_tpl_entry_set_override_flags, "mt_town_center", 5, ":override_state"),
         (mission_tpl_entry_set_override_flags, "mt_town_center", 6, ":override_state"),
         (mission_tpl_entry_set_override_flags, "mt_town_center", 7, ":override_state"),
+        
+        (change_screen_mission),
     (try_end), #if bandits
 ]),
 

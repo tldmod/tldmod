@@ -1,4 +1,4 @@
-1122
+1123
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1121,3 +1121,4 @@ qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:sold
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
 qstr_Try_not_getting_your Try_not_getting_yourself_killed.
+qstr_SWY_DEBUG__Enemies_R SWY-DEBUG--Enemies_Ratio:_(val_div,([{reg1}]*100),[{reg0}])

@@ -817,6 +817,9 @@ morale_scripts = [
      ]),
 
   #script_rout_check
+  #swy-- this comes from script_rout_enemies/script_rout_allies and shows morale-related messages about fleeeing troops in battlefield.
+  #      reg0: should be allies/enemies_total | reg1: should be allies/enemies_total
+  #      why not just use globals for this? low registers have a high chance of getting overwritten
     ("rout_check",
     [
 	(assign,":ally","$allies_coh"),
@@ -825,7 +828,16 @@ morale_scripts = [
 
 	(try_begin),
 		(ge,":ally",tld_morale_rout_enemies),
+		
+		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
+	#	(gt,reg0,0),
+	#	(gt,reg1,0),
+		
 		(call_script, "script_rout_enemies"),
+		
+		#swy-- debug print to diagnose the wtf division by zero thing...
+		(display_message, "@SWY-DEBUG--Enemies Ratio: (val_div,([{reg1}]*100),[{reg0}])",color_bad_news),
+    
 		(store_mul, ":enemies_ratio", reg1, 100),
 		(val_div, ":enemies_ratio", reg0),
 		#(assign, reg0, ":enemies_ratio"),

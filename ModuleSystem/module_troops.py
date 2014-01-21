@@ -2073,7 +2073,7 @@ troops = [
 ["umbar_lord","Admiral_Tulmir","Admiral",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
    [itm_umb_armor_h,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_f,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_6,0x0000000e3b004244365b6db99b6db7df00000000001dd6eb0000000000000000],
-["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female,0,0,fac_lorien,
+["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female| tfg_armor| tfg_helm| tfg_gloves| tfg_boots,0,0,fac_lorien,
    [itm_galadriel,itm_empty_head,itm_empty_legs,itm_empty_hands,],
       def_attrib|level(2),wp(20),knows_common,0x0000000e3b004000365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["imladris_lord","Lord_Elrond","Lord",tf_hero| tf_imladris| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,

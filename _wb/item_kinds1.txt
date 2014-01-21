@@ -225,7 +225,7 @@ itemsfile version 2
  itm_tree_trunk_club_b Tree_Trunk Tree_Trunk 1  tree_trunk_club 0  4587522 9223372036854775808 1 0 58 100 0 0 0 0 49152 92 0 175 0 560 560
 0
 
- itm_tree_trunk_invis Tree_Trunk Tree_Trunk 1  0 0  4587522 9223372036854775808 1 0 58 100 0 0 0 0 49152 92 0 175 0 560 560
+ itm_tree_trunk_invis Tree_Trunk Tree_Trunk 1  dummy_mesh 0  4587522 9223372036854775808 1 0 58 100 0 0 0 0 49152 92 0 175 0 560 560
 0
 
  itm_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  4194306 9223372036854775808 1 0 58 100 0 0 0 0 16384 96 0 150 0 577 592
@@ -2556,13 +2556,13 @@ itemsfile version 2
  itm_galadriel Galadriel_suit Galadriel_suit 1  galadriel 0  553652237 0 1 0 33 100 60 80 60 0 0 0 0 0 0 0 0
 0
 
- itm_empty_hands empty_hands empty_hands 1  0 0  4111 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
+ itm_empty_hands empty_hands empty_hands 1  dummy_mesh 0  4111 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
 0
 
- itm_empty_legs empty_legs empty_legs 1  0 0  4110 0 130 0 33 100 0 0 1 0 0 0 0 0 0 0 0
+ itm_empty_legs empty_legs empty_legs 1  dummy_mesh 0  4110 0 130 0 33 100 0 0 1 0 0 0 0 0 0 0 0
 0
 
- itm_empty_head empty_head empty_head 1  0 0  2147487756 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
+ itm_empty_head empty_head empty_head 1  dummy_mesh 0  2147487756 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0
