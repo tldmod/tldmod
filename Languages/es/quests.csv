@@ -1,74 +1,74 @@
 qst_deliver_message|Entega el mensaje a {s13}
-qst_deliver_message_text|{s9} te a pedido qu entregues un mensaje a {s13}. {s13} se encontraba en {s4} cuando te fue asignada esta misión.
+qst_deliver_message_text|{s9} te ha pedido que entregues un mensaje a {s13}. {s13} se encontraba en {s4} cuando te fue asignada esta misión.
 qst_deliver_message_to_enemy_lord|Entega el mensaje a {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} te ha pedido que entregues un mensaje a {s13} de {s15}. {s13} estaba en {s4} cuando te fue asignada esta misión.
 qst_raise_troops|Reúne {reg1} {s14}
 qst_raise_troops_text|{s9} te ha pedido que reunas {reg1} {s14} y le hagas entrega de ellos.
-qst_escort_messenger|Escolta a {s14}
+qst_escort_messenger|Escolta al mensajero a {s14}
 qst_escort_messenger_text|Nada
 qst_hunt_down_fugitive|Da caza a {s4}
-qst_hunt_down_fugitive_text|{s9} te ha pedido que des caza al fugitivo conocido como {s4}. Hay rumores de que se la ha visto por {s3}.
+qst_hunt_down_fugitive_text|{s9} te ha pedido que des caza al fugitivo conocido como {s4}. Se cree que en estos momentos se encuentra en {s3}.
 qst_bring_back_runaway_serfs|Captura a los esclavos fugitivos.
-qst_bring_back_runaway_serfs_text|{s9} te ha pedido que captures y traigas de vuelta a {s2} a tres grupos de siervos fugitivos. Os ha dicho que los grupos han sido vistos huyendo hacia {s3}.
-qst_follow_spy|Sigue al espía.
-qst_follow_spy_text|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado de que no te vea por el camino, o es posible que sospeche y se dé la vuelta. Una vez que el espía se encuentre con su cómplice, emboscalos y capturalos, para llevarlos de regreso a {s11}.
+qst_bring_back_runaway_serfs_text|{s9} te ha pedido que captures y traigas de vuelta a {s2} a tres grupos de esclavos fugitivos. Dice que los  tres grupos deben de estar huyendo hacia {s3}.
+qst_follow_spy|Sigue al espía hasta la reunión.
+qst_follow_spy_text|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado de que no te vea por el camino, o es posible que sospeche y se dé la vuelta. Una vez que el espía se encuentre con su cómplice, debes emboscarlos y capturarlos, para llevar a los dos de regreso a {s11}.
 qst_capture_enemy_hero|Captura a un Comandante de {s13}.
-qst_capture_enemy_hero_text|{s11} te ha pedido que captures a un Señor de {s13}.
+qst_capture_enemy_hero_text|{s11} te ha pedido que captures a un Comandante de {s13}.
 qst_lend_companion|Presta a tu compañero {s3} a {s9}.
 qst_lend_companion_text|{s9} te ha pedido que le prestes a tu compañero {s3} durante una semana.
-qst_capture_prisoners|Trae {reg1} prisioneros.
+qst_capture_prisoners|Trae {reg1} prisioneros enemigos.
 qst_capture_prisoners_text|{s9} desea que le lleves {reg1} prisioneros enemigos.
-qst_investigate_fangorn|Investigar Fangorn
-qst_investigate_fangorn_text|{s9} te ha pedido averigues que está sucediendo en el Bosque de Fangorn y que le informes.
+qst_investigate_fangorn|Investiga Fangorn
+qst_investigate_fangorn_text|{s9} te ha pedido averiguar qué está sucediendo en el Bosque de Fangorn e informar de tus hallazgos.
 qst_capture_troll|Captura un Troll.
-qst_capture_troll_text|{s9} te ha pedido que trajeras un troll salvaje para usarlo en su ejército.
-qst_kill_troll|Acaba con el Troll Enfurecido.
-qst_kill_troll_text|{s9} te ha pedido liberar a {s13} de la amenaza de un violento Troll a sus afueras.
+qst_capture_troll_text|{s9} te ha pedido que traigas un troll salvaje para usarlo en su ejército.
+qst_kill_troll|Acaba con el Troll rabioso
+qst_kill_troll_text|{s9} te ha pedido liberar a {s13} de la amenaza de un Troll rabioso en sus afueras.
 qst_mirkwood_sorcerer|Mata a un hechicero en el Bosque Negro.
-qst_mirkwood_sorcerer_text|El poder de Galadriel para defender Lothlórien ha sido contrarestrado por los viles rituales de un hechicero de Dol Guldur. A pesar de que es un mortal, representa una gran amenaza para los elfos. Búscalo por el Bosque Negro, no lejos de Dol Guldur. Usa el sigilo para evitar que se de la alarma, ya que solo habrá una oportunidad para derrotarlo.
+qst_mirkwood_sorcerer_text|El poder de Galadriel para defender Lothlórien ha sido debilitado por los viles rituales de un hechicero de Dol Guldur. A pesar de que es un mortal, representa una gran amenaza para los Elfos. Búscalo por el Bosque Negro, no lejos de Dol Guldur. Usa el sigilo para evitar que se dé la alarma, ya que solo habrá una oportunidad para derrotarlo.
 qst_find_lost_spears|Encuentra las lanzas perdidas del Rey Bladorthin
-qst_find_lost_spears_text|{s9} te ha pedido encontrar las lanzas perdidas de los enanos que una vez fueron hechas por el Rey Bladorthin. Deberás pedir permiso a los enanos para buscar las lanzas en las profundidades de la Montaña Solitaria.
+qst_find_lost_spears_text|{s9} te ha pedido encontrar las lanzas perdidas que los enanos hicieron para el Rey Bladorthin. Deberás pedir permiso a los enanos para buscar las lanzas en las profundidades de la Montaña Solitaria.
 qst_rescue_prisoners|Rescata {reg1} prisioneros.
-qst_rescue_prisoners_text|{s9} te ha pedido rescatar {reg1} prisioneros.
+qst_rescue_prisoners_text|{s9} quiere que rescates {reg1} prisioneros.
 qst_scout_enemy_town|Explora la ciudad enemiga.
 qst_scout_enemy_town_text|{s9} te ha pedido explorar alrededor de {s13}.
-qst_dispatch_scouts|Elimina una partida de exploradores.
-qst_dispatch_scouts_text|{s9}  te ha pedido eliminar una partida de exploradores cerca de {s13}.
-qst_eliminate_patrols|Elimina {reg1} partidas de enemigos.
-qst_eliminate_patrols_text|{s9} os ha pedido eliminar {reg1} {s13} partidas de enemigos.
-qst_lend_surgeon|Presta a tu sanador {s3} a {s1}
-qst_lend_surgeon_text|Presta a tu experto sanador {s3} a {s1}.
+qst_dispatch_scouts|Organiza una partida de exploradores.
+qst_dispatch_scouts_text|{s9}  te ha pedido organizar una partida de exploradores y dejarlos cerca de {s13}.
+qst_eliminate_patrols|Elimina {reg1} grupos enemigos.
+qst_eliminate_patrols_text|{s9} te ha pedido eliminar {reg1} grupos enemigos de {s13}. 
+qst_lend_surgeon|Presta a tu cirujano {s3} a {s1}
+qst_lend_surgeon_text|Presta a tu experto cirujano {s3} a {s1}.
 qst_follow_army|Sigue al ejercito de {s9}
 qst_follow_army_text|Nada
-qst_report_to_army|Reporta ante {s13}
+qst_report_to_army|Preséntate ante {s13}
 qst_report_to_army_text|Nada
 qst_deliver_cattle_to_army|Entrega {reg3} unidades de comida a {s13}
 qst_deliver_cattle_to_army_text|Nada
-qst_join_siege_with_army|Inete al asedio de {s14}
+qst_join_siege_with_army|únete al asedio de {s14}
 qst_join_siege_with_army_text|Nada
-qst_scout_waypoints|Explorar {s13}, {s14} y {s15}
+qst_scout_waypoints|Explora {s13}, {s14} y {s15}
 qst_scout_waypoints_text|Nada
-qst_move_cattle_herd|Trasladar {s12} a {s13}
-qst_move_cattle_herd_text|El Alcalde de {s10} te ha pedido trasladar {s12} a {s13}.
+qst_move_cattle_herd|Traslada {s12} a {s13}
+qst_move_cattle_herd_text|El Anciano de {s10} te ha pedido trasladar {s12} a {s13}.
 qst_escort_merchant_caravan|Escolta Caravana de Suministros a {s8}
-qst_escort_merchant_caravan_text|Escolta Caravana de Suministros a {s8}
+qst_escort_merchant_caravan_text|Escolta una Caravana de Suministros a {s8}
 qst_deliver_wine|Entrega {reg5} unidades de {s6} a {s4}.
-qst_deliver_wine_text|{s9} de {s3} te ha pedido que entregues {reg5} unidades de {s6} en {s4}; en 7 días.
-qst_troublesome_bandits|Dar caza a los Trasgos problemáticos.
-qst_troublesome_bandits_text|{s9} de {s4} te ha pedido que des caza a los Trasgos problemáticos que rondan cerca de la ciudad.
-qst_deal_with_looters|Tratar con Orcos Tribales
-qst_deal_with_looters_text|El Anciano de {s4} te ha pedido tratar con varias bandas de Orcos Tribales alrededor de {s4}.
-qst_deal_with_night_bandits|Tratar con Trasgos Nocturnos.
-qst_deal_with_night_bandits_text|El Anciano de {s14} te ha pedido tratar con trasgos nocturnos en {s14}.
-qst_deliver_food|Suministra {s3} con {reg5} Unidades de comida.
-qst_deliver_food_text|{s9} de {s3} te ha pedido llevarle {reg5} unidades de comida en 10 días.
-qst_deliver_iron|Suministra {s3} con {reg5} Unidades de {s6}.
-qst_deliver_iron_text|{s9} de {s3} te ha pedido llevarle {reg5} unidades de {s6}.
+qst_deliver_wine_text|El {s9} de {s3} te ha pedido que entregues {reg5} unidades de {s6} en {s4} en 7 días.
+qst_troublesome_bandits|Da caza a los Trasgos problemáticos.
+qst_troublesome_bandits_text|El {s9} de {s4} te ha pedido que des caza a los Trasgos problemáticos que rondan cerca de la ciudad.
+qst_deal_with_looters|Encárgate de los Orcos Tribales
+qst_deal_with_looters_text|El Anciano de {s4} te ha pedido que te encargues de varias bandas de Orcos Tribales alrededor de {s4}.
+qst_deal_with_night_bandits|Encárgate de los Trasgos Nocturnos.
+qst_deal_with_night_bandits_text|El Anciano de {s14} te ha pedido que te encargues de los trasgos nocturnos en {s14}.
+qst_deliver_food|Suministra a {s3} {reg5} Unidades de comida.
+qst_deliver_food_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de comida en 10 días.
+qst_deliver_iron|Suministra a {s3} {reg5} Unidades de {s6}.
+qst_deliver_iron_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de {s6}.
 qst_tld_introduction|Entregar el mensaje acerca de los Orcos de Mordor al comandante.
 qst_tld_introduction_text|Nada
-qst_treebeard_kill_orcs|Eliminar al grupo de orcos que talán árboles.
-qst_treebeard_kill_orcs_text|Bárbol quiere que encuentres y elimines los orcos que están talando árboles en Fangorn.
+qst_treebeard_kill_orcs|Elimina al grupo de orcos taladores de árboles.
+qst_treebeard_kill_orcs_text|Bárbol quiere que encuentres y elimines a los orcos que están talando árboles en Fangorn.
 qst_oath_of_vengeance|Juramento de Venganza.
-qst_oath_of_vengeance_text|Enfurecido por la muerte de {s1}, has hecho un juramento de venganza contra las fuerzas de {s2}. Ahora debes destruir tantos ejércitos de {s2} como puedas en los próximos días. Eres consciente de que tus seguidores han sido testigos de este juramente y no deseas ser conocido por romper tus juramentos. El derramamiento de sangre ha de comenzar de inmediato.
-qst_deliver_gift|Dar a {s4} de {s1} de {s2} para {s3}
-qst_deliver_gift_text|Entregar regalo a {s4} de {s1} para {s3} de {s2}.
+qst_oath_of_vengeance_text|Enfurecido por la muerte de {s1}, has hecho un juramento de venganza contra las fuerzas de {s2}. Ahora debes destruir tantos ejércitos de {s2} como puedas en los próximos días. Eres consciente de que tus seguidores han sido testigos de este juramente y no deseas ser conocido por romper tus juramentos. ¡El derramamiento de sangre ha de comenzar de inmediato!
+qst_deliver_gift|Entregar un {s4} de {s1} de {s2} a {s3}
+qst_deliver_gift_text|Has pedido entregar un {s4} de {s1} para {s3} de {s2}.
