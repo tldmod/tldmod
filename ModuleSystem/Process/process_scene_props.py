@@ -11,6 +11,13 @@ def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.write("scene_propsfile version 1\n")
   ofile.write(" %d\n"%(len(scene_props)))
   for scene_prop in scene_props:
+   #swy-- fix shameful, sneaky typo rename of TW, that in WB breaks compatibility with existing ladder meshes, fsck you TW, FSCK YOU! >:(
+   from module_info import wb_compile_switch as is_a_wb_scene_prop
+   if (is_a_wb_scene_prop):
+    scene_prop=list(scene_prop)
+    scene_prop[2]=str(scene_prop[2]).replace("leadder","ladder")
+    scene_prop[3]=str(scene_prop[3]).replace("leadder","ladder")
+   
    #<fisheye> modified the following code to allow for higher hit points on destructable scene props
    #ofile.write("spr_%s %d %d %s %s "%(scene_prop[0], scene_prop[1], get_spr_hit_points(scene_prop[1]), scene_prop[2], scene_prop[3]))
     if (len(scene_prop) == 5):
