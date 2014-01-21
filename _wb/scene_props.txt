@@ -3150,10 +3150,10 @@ spr_dwarf_statue_d 0 0 statue_dwarf4 0 0
 spr_dwarf_statue_e 0 0 statue_dwarf5 0 0
 
 
-spr_dwarf_statue_hill_a 0 0 statue_dwarf_hill_a 0 0
+spr_dwarf_statue_hill_a 0 0 statue_dwarf_hill_a bo_statue_dwarf_hill_a 0
 
 
-spr_dwarf_statue_hill_b 0 0 statue_dwarf_hill_b 0 0
+spr_dwarf_statue_hill_b 0 0 statue_dwarf_hill_b bo_statue_dwarf_hill_b 0
 
 
 spr_mordor_clouds 69632 0 skybox_cloud_overlay 0 0

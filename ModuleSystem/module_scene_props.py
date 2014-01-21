@@ -1680,8 +1680,8 @@ scene_props = [
 ("dwarf_statue_c",0,"statue_dwarf3","0", []),
 ("dwarf_statue_d",0,"statue_dwarf4","0", []),
 ("dwarf_statue_e",0,"statue_dwarf5","0", []),
-("dwarf_statue_hill_a",0,"statue_dwarf_hill_a","0", []),
-("dwarf_statue_hill_b",0,"statue_dwarf_hill_b","0", []),
+("dwarf_statue_hill_a",0,"statue_dwarf_hill_a","bo_statue_dwarf_hill_a", []),
+("dwarf_statue_hill_b",0,"statue_dwarf_hill_b","bo_statue_dwarf_hill_b", []),
 
 #("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
 ("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
