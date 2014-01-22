@@ -2050,7 +2050,14 @@ animations = [
    [2.3, "tied_fall_rise", 0, 91, arf_blend_in_1|arf_make_custom_sound, pack2f(0.4, 0.0), (0,0,0), 0.5],
  ],
 
- ["unused_human_anim_64", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+#swy-- added stand animations for cutscenes in wb, but with higher priority to override jumps.
+ ["stand_cutscene", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_keep,
+   [3.0, "anim_human", 50, 52, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+   [3.0, "anim_human", 60, 62, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.75],
+   [3.0, "anim_human", 70, 72, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+   [3.0, "anim_human", 80, 82, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
+ ],
+ 
  ["unused_human_anim_65", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_66", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_67", 0, 0, [1.0, "anim_human", 0, 1, 0]],

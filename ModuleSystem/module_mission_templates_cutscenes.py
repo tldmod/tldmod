@@ -6,6 +6,9 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_cutscene
+
+
 mission_templates_cutscenes = [
 
 ("intro_rohan", 0, -1,
@@ -76,7 +79,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -232,7 +241,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -371,7 +386,7 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -430,7 +445,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -511,7 +532,7 @@ mission_templates_cutscenes = [
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            # finish chain
-           (change_screen_return),
+           (jump_to_menu,"mnu_auto_cutscene_return"),
          (try_end),
          ], []),
     ],
@@ -523,7 +544,7 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return)]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -619,7 +640,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -737,7 +764,7 @@ mission_templates_cutscenes = [
            (music_set_situation, 0),
            (val_add, "$g_tld_intro_state", 1),
            # finish chain
-           (change_screen_return),
+           (jump_to_menu,"mnu_auto_cutscene_return"),
          (try_end),
          ], []),
     ],
@@ -749,7 +776,7 @@ mission_templates_cutscenes = [
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -810,7 +837,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -920,7 +953,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain
-           (change_screen_return),
+           (jump_to_menu,"mnu_auto_cutscene_return"),
          (try_end),
          
          #presentation
@@ -941,7 +974,7 @@ mission_templates_cutscenes = [
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(change_screen_return),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -1045,7 +1078,13 @@ mission_templates_cutscenes = [
          (agent_get_horse, ":horse_agent", ":player_agent"),					
          (try_begin),
            (eq, ":horse_agent", -1),
-           (agent_set_animation, ":player_agent", "anim_stand"),
+         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         ]+(is_a_wb_cutscene==0 and 
+          [(agent_set_animation, ":player_agent", "anim_stand")]
+            or
+          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         )+[
+         #swy-- here it finishes, just in case
          (else_try),
            (agent_set_animation, ":player_agent", "anim_ride_0"),
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
@@ -1186,7 +1225,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain
-           (change_screen_return),
+           (jump_to_menu,"mnu_auto_cutscene_return"),
          (try_end),
          
          #presentation

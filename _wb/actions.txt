@@ -1088,8 +1088,11 @@
   5.6 tied_stand_walk 45 138 536871172 58726 0 3.4 0  0 
  fall_tied 1026 50331743  1
   2.3 tied_fall_rise 0 91 514 102 0 0 0  0.5 
- unused_human_anim_64 0 0  1
-  1 anim_human 0 1 0 0 0 0 0 0.0 
+ stand_cutscene 1024 83886175  4
+  3 anim_human 50 52 1342177280 0 0 0 0  0.25 
+  3 anim_human 60 62 1342177280 0 0 0 0  0.75 
+  3 anim_human 70 72 1342177280 0 0 0 0  0.25 
+  3 anim_human 80 82 1358954496 0 0 0 0  0.5 
  unused_human_anim_65 0 0  1
   1 anim_human 0 1 0 0 0 0 0 0.0 
  unused_human_anim_66 0 0  1
