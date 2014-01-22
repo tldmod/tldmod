@@ -8,6 +8,8 @@ from header_terrain_types import *
 
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_cutscene
+
 ####################################################################################################################
 #  (menu-id, menu-flags, menu_text, mesh-name, [<operations>], [<options>]),
 #
@@ -7703,14 +7705,16 @@ game_menus = [
     ],
     []
  ),
- 
+#swy-- add compilation guards, this only shows up in WB, it's used to exit cutscenes, as workaround.
+]+ (is_a_wb_cutscene==1 and [
 ( "auto_cutscene_return",0,"stub","none",
     [
        (change_screen_return),
     ],
     []
  ),
-
+] or []) +[
+#swy-- guard finishes here, just in case
 ###################### starting quest, GA ##############################  
 ( "starting_quest_good",0,
    "^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?",

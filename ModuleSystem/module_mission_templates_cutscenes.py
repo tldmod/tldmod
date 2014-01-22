@@ -8,6 +8,10 @@ from module_constants import *
 
 from module_info import wb_compile_switch as is_a_wb_cutscene
 
+#swy-- macro to select exit mode on all the cutscenes, that way we maintain compatibility and still works well in both games.
+return_exit_macro = (is_a_wb_cutscene==1 and [ (jump_to_menu, "mnu_auto_cutscene_return") ]
+                                          or [ (change_screen_return) ])
+
 
 mission_templates_cutscenes = [
 
@@ -386,7 +390,7 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -532,7 +536,7 @@ mission_templates_cutscenes = [
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            # finish chain
-           (jump_to_menu,"mnu_auto_cutscene_return"),
+           ]+return_exit_macro+[
          (try_end),
          ], []),
     ],
@@ -544,7 +548,7 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -764,7 +768,7 @@ mission_templates_cutscenes = [
            (music_set_situation, 0),
            (val_add, "$g_tld_intro_state", 1),
            # finish chain
-           (jump_to_menu,"mnu_auto_cutscene_return"),
+           ]+return_exit_macro+[
          (try_end),
          ], []),
     ],
@@ -776,7 +780,7 @@ mission_templates_cutscenes = [
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -953,7 +957,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain
-           (jump_to_menu,"mnu_auto_cutscene_return"),
+           ]+return_exit_macro+[
          (try_end),
          
          #presentation
@@ -974,7 +978,7 @@ mission_templates_cutscenes = [
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu,"mnu_auto_cutscene_return"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
     (ti_before_mission_start, 0, 0, [],
       [ 
@@ -1225,7 +1229,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain
-           (jump_to_menu,"mnu_auto_cutscene_return"),
+           ]+return_exit_macro+[
          (try_end),
          
          #presentation
