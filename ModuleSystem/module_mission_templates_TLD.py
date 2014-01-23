@@ -2069,6 +2069,7 @@ ballista_disengage = (0, 0, 1, 	[(key_clicked, key_f),(eq,"$ballista_action",1)]
 			 (mission_cam_set_mode,0),
 			 (assign,"$ballista_action",0),
 			 #swy-- disable the crossbow animation when leaving the ballista mode.
+			 (get_player_agent_no,":player_agent"),
 			 (agent_set_animation,":player_agent", "anim_cancel_ani_stand")
 			])
 ballista_shoot = (0, 0, 0,   [(key_clicked, key_space),(eq,"$ballista_action",1),(eq,"$missile_flying",0)],	###### fire in the hole!

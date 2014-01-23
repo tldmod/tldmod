@@ -454,7 +454,11 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     elif (can_fail_statement == 0 and current_depth == 0
           and (is_can_fail_operation(opcode)
                or ((opcode == call_script) and (statement[1].startswith("cf_", 7))))
-          and (not statement_name.startswith("cf_"))):
+          and (not statement_name.startswith("cf_"))
+          
+          #swy-- we don't care about these ones, a bad practice, i know!
+          and (statement_name!="rout_check" and statement_name!="coherence")):
+      
       print "WARNING: Script can fail at operation #" + str(i) + ". Use cf_ at the beginning of its name: " + statement_name
     save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings)
   if (store_script_param_1_uses > 1):
