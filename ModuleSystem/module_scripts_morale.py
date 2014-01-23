@@ -825,18 +825,17 @@ morale_scripts = [
 	(assign,":ally","$allies_coh"),
 	(assign,":enemy","$enemies_coh"),
 	(val_sub,":ally",":enemy"),
+  
+	#swy-- let's avoid divisions by zero, even if the problem comes upstream.
+	(gt,reg0,0),
+	(gt,reg1,0),
 
 	(try_begin),
-		(ge,":ally",tld_morale_rout_enemies),
-		
-		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
-	#	(gt,reg0,0),
-	#	(gt,reg1,0),
-		
+		(ge,":ally",tld_morale_rout_enemies),		
 		(call_script, "script_rout_enemies"),
 		
 		#swy-- debug print to diagnose the wtf division by zero thing...
-		(display_message, "@SWY-DEBUG--Enemies Ratio: (val_div,([{reg1}]*100),[{reg0}])",color_bad_news),
+	#	(display_message, "@SWY-DEBUG--Enemies Ratio: (val_div,([{reg1}]*100),[{reg0}])",color_bad_news),
     
 		(store_mul, ":enemies_ratio", reg1, 100),
 		(val_div, ":enemies_ratio", reg0),
@@ -1091,6 +1090,11 @@ morale_scripts = [
 			(val_add, ":num_enemies_rallied", 1),
 		(try_end),
 	(end_try),
+
+	# Sanity check
+	# swy-- let's avoid divisions by zero, we don't want to calculate the morale of troops which don't even exist.
+	(gt,":num_allies",0),
+	(gt,":num_enemies",0),
 
 	# Difference between in battle agents.
 	(store_sub, ":advantage", ":num_allies_alive", ":num_enemies_alive"),

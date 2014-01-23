@@ -1969,7 +1969,7 @@ animations = [
 
    
   # on foot ( shorter versions than for ai)
- ["cheer_player", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_die|amf_play,
+ ["cheer_player", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_jump_end|amf_play,
    [6.0, "man_cheer",  12,  185, arf_blend_in_5],
    [6.0, "man_cheer", 217, 397, arf_blend_in_5],
    [6.0, "man_cheer", 338, 518, arf_blend_in_5],

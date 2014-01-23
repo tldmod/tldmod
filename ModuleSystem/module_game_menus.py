@@ -7709,7 +7709,7 @@ game_menus = [
 ]+ (is_a_wb_cutscene==1 and [
 ( "auto_cutscene_return",0,"stub","none",
     [
-       (change_screen_return),
+       (change_screen_map),
     ],
     []
  ),

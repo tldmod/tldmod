@@ -81,14 +81,21 @@ mission_templates = [ # not used in game
      (25,mtef_visitor_source,af_override_horse,0,1,[]),(26,mtef_visitor_source,af_override_horse,0,1,[]),(27,mtef_visitor_source,af_override_horse,0,1,[]),(28,mtef_visitor_source,af_override_horse,0,1,[]),(29,mtef_visitor_source,af_override_horse,0,1,[]),(30,mtef_visitor_source,af_override_horse,0,1,[]),(31,mtef_visitor_source,af_override_horse,0,1,[]),
      ],
     [ (ti_on_agent_spawn, 0, 0, [],[(store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
+      
       (1, 0, ti_once, [], [			# ambience sounds
-			(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
-			 (else_try),					 (play_sound, "$bs_day_sound",   sf_looping),
-			(try_end),
-			(store_current_scene, ":cur_scene"),(scene_set_slot, ":cur_scene", slot_scene_visited, 1)]),
-      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
+        (try_begin),
+          (is_currently_night),
+          (play_sound, "$bs_night_sound", sf_looping),
+        (else_try),
+          (play_sound, "$bs_day_sound",   sf_looping),
+        (try_end),
+        (store_current_scene, ":cur_scene"),
+        (scene_set_slot, ":cur_scene", slot_scene_visited, 1)
+      ]),
+      
+      (ti_before_mission_start,  0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)],[]),
-      (ti_tab_pressed, 0, 0, [(set_trigger_result,1)],[]),
+      (ti_tab_pressed,           0, 0, [(set_trigger_result,1)],[]),
 ]),
 # This template is used in party encounters and such.
 ( "conversation_encounter",0,-1,
@@ -441,15 +448,15 @@ mission_templates = [ # not used in game
   #tld_common_peacetime_scripts +
   [  
  
-  # make friend, prisoners, players, etc appear at the rigth locations and with scripted short starting walks
+  # make friend, prisoners, players, etc appear at the right locations and with scripted short starting walks
   (ti_on_agent_spawn, 0, 0, [],[
-     (store_trigger_param_1, ":agent_no"),
+   (store_trigger_param_1, ":agent_no"),
 	 
 	 (get_player_agent_no, ":player_no"),
 	 (agent_get_position, pos1, ":agent_no"),
 	 
 	 (try_begin),
-	    (eq,":player_no", ":agent_no"), # player
+	  (eq,":player_no", ":agent_no"), # player
 		# player was spawned at a distant entry point so that it faces his troops (MaB bug: set poistion doesn't affect ... move back to his troops
 		(entry_point_get_position,pos1,4),
 		(position_move_y, pos1, 700, 0), # move player in front
@@ -483,10 +490,10 @@ mission_templates = [ # not used in game
 		
 		(copy_position, pos2, pos1),
 		(store_random_in_range,":start_pos",-460,-330),
-		(position_move_y, pos2, ":start_pos", 0), # ten steps backward plese
+		(position_move_y, pos2, ":start_pos", 0), # ten steps backward please
 		(store_random_in_range,":start_drift",-50,+50),
 		(position_move_x, pos2, ":start_drift", 0), 		
-		(position_move_y, pos1, 200, 0), # ten steps backward plese
+		(position_move_y, pos1, 200, 0), # ten steps backward please
 		
 		# (position_get_x, reg10, pos1),
 		# (position_get_y, reg11, pos1),
@@ -503,7 +510,7 @@ mission_templates = [ # not used in game
 			(position_move_y, pos1, -600, 0), # prisoners, stay back
 			
 			(agent_set_animation, ":agent_no", "anim_stay_tied"),
-		    #(display_message, "@Spawn pris: ({s3})"),
+		# (display_message, "@Spawn pris: ({s3})"),
 			(agent_set_position, ":agent_no", pos2),
 			(store_agent_hit_points,":cur_hp",":agent_no",1),
 			(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
@@ -556,9 +563,9 @@ mission_templates = [ # not used in game
 	(try_begin),
 		(gt, reg20, 0),
 		
-		(call_script, "script_party_remove_party_from_prisoners", "p_main_party", "p_enemy_casualties"), # remove pris
+		(call_script, "script_party_remove_party_from_prisoners", "p_main_party", "p_enemy_casualties"), # remove prisoners
 		
-		(try_begin), # add as many human meats as number of removef prid
+		(try_begin), # add as many human meat pieces as number of removed prisoners
 			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # unless good
 			(try_for_range, ":unused", 0, reg0), 
 				(troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
@@ -708,7 +715,7 @@ mission_templates = [ # not used in game
 			],[
 			(add_reinforcements_to_entry,3,7),
 			(val_add,"$attacker_reinforcement_stage",1)]),
-	#AI Tiggers
+	#AI Triggers
 	(0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
 			(call_script, "script_select_battle_tactic"),
 			(call_script, "script_battle_tactic_init")]),
