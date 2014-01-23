@@ -459,7 +459,7 @@ common_battle_check_victory_condition = (1, 60, ti_once,[
 	(finish_mission, 1)])
 
 common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
-common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(start_presentation, "prsnt_battle")])
+common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(neq, "$g_presentation_battle_active", 1),(start_presentation, "prsnt_battle")])
 common_battle_order_panel_tick = (0.1, 0, 0, [], [ (eq, "$g_presentation_battle_active", 1),(call_script, "script_update_order_panel_statistics_and_map")])
 common_battle_inventory = (ti_inventory_key_pressed, 0, 0, [],[(display_message,"str_use_baggage_for_inventory")])
 common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_message, "str_cant_use_inventory_now")],[])
