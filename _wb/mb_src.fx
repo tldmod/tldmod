@@ -4873,11 +4873,16 @@ DEFINE_TECHNIQUES(map_mountain_bump, vs_map_mountain_bump, ps_map_mountain_bump)
 struct VS_OUTPUT_MAP_WATER
 {
 	float4 Pos           : POSITION;
-	float4 Color	     : COLOR0;
+	float4 Color         : COLOR0;
 	float2 Tex0          : TEXCOORD0;
-	float3 LightDir		 : TEXCOORD1;//light direction for bump
-	float3 CameraDir	 : TEXCOORD3;//camera direction for bump
-	float4 PosWater		 : TEXCOORD4;//position according to the water camera
+	float3 LightDir      : TEXCOORD1; //light direction for bump
+	float3 CameraDir     : TEXCOORD3; //camera direction for bump
+	float4 PosWater      : TEXCOORD4; //position according to the water camera
+
+	float2 worldpos      : TEXCOORD5; //swy-- pass the world pos to pixel shader
+	float2 sawtooth_fn   : TEXCOORD6; //      together with the sawtooth for sampling
+	float1 triangle_fn   : TEXCOORD7; //      and the synced triangle wave for masking...
+	
 	float  Fog           : FOG;
 };
 VS_OUTPUT_MAP_WATER vs_map_water (uniform const bool reflections, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
@@ -4926,7 +4931,36 @@ VS_OUTPUT_MAP_WATER vs_map_water (uniform const bool reflections, float4 vPositi
 		Out.CameraDir = mul(TBNMatrix, -point_to_camera_normal);
 		Out.LightDir = mul(TBNMatrix, -vSunDir);
 	}
+	
+	//swy-- flowmap time-varying sawtooth and triangle
+	//      functions for animating and masking the flow...
+	
+	float time_var_mod = time_var / 7.f;
+	
+	//swy-- specially tweaked functions for
+	//      both (n)ormals and diffuse (t)extures...
+	
+	float sawtooth_a_n = frac(time_var_mod);
+	float sawtooth_b_n = frac(time_var_mod + 0.5f);
+	
+	float sawtooth_a_t = frac(time_var_mod)        - 0.5f;
+	float sawtooth_b_t = frac(time_var_mod + 0.5f) - 0.5f;
 
+	//swy-- triangle function used for masking by lerp two samples,
+	//      all that is modulated by the upper sawtooths
+	float triangle_fn = abs(0.5f - sawtooth_a_n) / 0.5f;
+	
+	Out.sawtooth_fn = float2(sawtooth_a_t, sawtooth_b_t);
+	Out.triangle_fn = triangle_fn;
+	
+	//       ^
+	//	     '->
+	//swy-- fits pretty well! took me a long while, tho!
+	Out.worldpos = vWorldPos.xy / 374.f;
+	Out.worldpos.x -= 0.495f;
+	Out.worldpos.y += 0.68f;
+	
+	Out.worldpos.x *= -1.f;
 
 	//apply fog
 	float d = length(P);
@@ -4938,8 +4972,25 @@ PS_OUTPUT ps_map_water(uniform const bool reflections, VS_OUTPUT_MAP_WATER In)
 { 
 	PS_OUTPUT Output;
 	Output.RGBColor =  In.Color;
+	
+	//swy-- unpack vector range from 0.0f - 1.0f to -1.0f - 1.0f
 
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+	float4 flow_sample = tex2D(Diffuse2Sampler, In.worldpos.xy);
+	float2 flow_vector = (flow_sample.rg * 2.0f) - 1.0f;
+	float noise_sample = flow_sample.b;
+	
+	flow_vector.x *= -1.f;
+	
+	//swy-- sample two times at different points, and show the less
+	//      stretched one at the right time in cycles, permuted by the noise to limit pulsing...
+
+	float4 sample_a = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.x - (noise_sample/2))*.8f));
+	float4 sample_b = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.y - (noise_sample/2))*.8f));
+
+	float4 tex_col = lerp(sample_a.rgba, sample_b.rgba, In.triangle_fn.xxxx);
+
+
+	//float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
 	INPUT_TEX_GAMMA(tex_col.rgb);
 	
 	/////////////////////
