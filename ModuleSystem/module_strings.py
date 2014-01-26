@@ -2774,7 +2774,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("fullname_region_pelennor", "Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor"), #0
 ("fullname_region_subfac_pelargir", "the Fiefdom of Lebennin, part of the Realm of Gondor"), # pelargir
-("fullname_region_subfac_dol_amroth", "Belfalas, the costal region in the Shouth of Gondor"), #subfac_dol_amroth
+("fullname_region_subfac_dol_amroth", "Belfalas, the costal region in the South of Gondor"), #subfac_dol_amroth
 ("fullname_region_subfac_ethring", "Ringló Vale, a valley of the Realm of Gondor"), # subfac_ethring
 ("fullname_region_subfac_lossarnach", "the Fiefdom of Lossarnach, also known as the Vale of Flowers, part of the Realm of Gondor"),
 ("fullname_region_subfac_pinnath_gelin", "the Green Hills of Pinnath Gelin, a region in the Realm of Gondor"),
@@ -2968,7 +2968,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("dwarf_gift1", "Hardened Shovels and Axes"),
 ("dwarf_gift2", "Harps and Flutes"),
 ("dwarf_gift3", "Robes Embroidered With Golden Thread and Gems"),
-("dwarf_gift4", "Marvellous Jewellry"),
+("dwarf_gift4", "Marvellous Jewelry"),
 
 ("rohan_gift0", "Mead and Apple Wine"),
 ("rohan_gift1", "Embroided Tunics and Silver-Studded Belts"),
