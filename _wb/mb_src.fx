@@ -4918,9 +4918,7 @@ VS_OUTPUT_MAP_WATER vs_map_water (uniform const bool reflections, float4 vPositi
 		Out.PosWater.xy = (float2(water_pos.x, -water_pos.y)+water_pos.w)/2;
 		Out.PosWater.xy += (vDepthRT_HalfPixel_ViewportSizeInv.xy * water_pos.w);
 		Out.PosWater.zw = water_pos.zw;
-	}
-	
-	{
+
 		float3 vWorldN = float3(0,0,1); //vNormal; //normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
 		float3 vWorld_tangent  = float3(1,0,0); //normalize(mul((float3x3)matWorld, vTangent)); //normal in world space
 		float3 vWorld_binormal = float3(0,1,0); //normalize(cross(vWorld_tangent, vNormal)); //normalize(mul((float3x3)matWorld, vBinormal)); //normal in world space
@@ -4935,7 +4933,7 @@ VS_OUTPUT_MAP_WATER vs_map_water (uniform const bool reflections, float4 vPositi
 	//swy-- flowmap time-varying sawtooth and triangle
 	//      functions for animating and masking the flow...
 	
-	float time_var_mod = time_var / 7.f;
+	float time_var_mod = time_var / 10.f;
 	
 	//swy-- specially tweaked functions for
 	//      both (n)ormals and diffuse (t)extures...
@@ -4984,8 +4982,8 @@ PS_OUTPUT ps_map_water(uniform const bool reflections, VS_OUTPUT_MAP_WATER In)
 	//swy-- sample two times at different points, and show the less
 	//      stretched one at the right time in cycles, permuted by the noise to limit pulsing...
 
-	float4 sample_a = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.x - (noise_sample/2))*.8f));
-	float4 sample_b = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.y - (noise_sample/2))*.8f));
+	float4 sample_a = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.x - noise_sample) * .5f));
+	float4 sample_b = tex2D(MeshTextureSampler, (In.worldpos.xy*32) + (flow_vector*(In.sawtooth_fn.y - noise_sample) * .5f));
 
 	float4 tex_col = lerp(sample_a.rgba, sample_b.rgba, In.triangle_fn.xxxx);
 
@@ -5025,7 +5023,12 @@ PS_OUTPUT ps_map_water(uniform const bool reflections, VS_OUTPUT_MAP_WATER In)
 	OUTPUT_GAMMA(Output.RGBColor.rgb);	//0.5 * normal + 0.5; //
 	//Output.RGBColor.rgb = In.Color.rgb;
 	
-	Output.RGBColor.a = In.Color.a * tex_col.a;
+	Output.RGBColor.a  = In.Color.a * tex_col.a * tex_col.a;
+	
+	//swy-- tint tweaks
+	//Output.RGBColor.b *= pow(1.f, 1.f-tex_col.a);
+	Output.RGBColor *= float4(0.77f, 0.77f, 0.80f, 0.95f);
+	Output.RGBColor.rgb += (flow_sample.x*0.03f);
 	
 	return Output;
 }
