@@ -2872,4 +2872,23 @@ if wb_compile_switch==1:
             (jump_to_menu, "mnu_start_game_3"),
             ])
     ]),
+    ("game_escape", mesh_load_window, 0, [
+          (ti_on_presentation_load,
+           [(presentation_set_duration, 999999),
+            (set_fixed_point_multiplier, 1000),
+            
+            #swy-- place the random escape menu illustrations in WB, manually, as there are no hardcoded meshes as in 1.011.            
+            (create_mesh_overlay, ":emback", "mesh_main_menu_background"),
+            (position_set_x, pos1, 0),
+            (position_set_y, pos1, 0),
+            (overlay_set_position, ":emback", pos1),
+            
+			(store_random_in_range, ":random_bg_pic", mesh_pic_mb_warrior_1, mesh_pic_mb_warrior_4),
+
+            (create_mesh_overlay, ":empic", ":random_bg_pic"),
+            (position_set_x, pos1, 0),
+            (position_set_y, pos1, 0),
+            (overlay_set_position, ":empic", pos1),
+            ])
+    ]),
   ]

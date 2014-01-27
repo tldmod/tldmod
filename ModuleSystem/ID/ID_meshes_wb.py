@@ -326,5 +326,9 @@ mesh_defiled_gondor_thigh3 = 324
 mesh_loading_background = 325
 mesh_main_menu_background = 326
 mesh_main_menu_statue = 327
+mesh_pic_mb_warrior_1 = 328
+mesh_pic_mb_warrior_2 = 329
+mesh_pic_mb_warrior_3 = 330
+mesh_pic_mb_warrior_4 = 331
 
 

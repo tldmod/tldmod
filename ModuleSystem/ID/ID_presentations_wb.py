@@ -17,3 +17,4 @@ prsnt_conversation_titles = 15
 prsnt_customize_defilement = 16
 prsnt_game_start = 17
 prsnt_game_custom_battle_designer = 18
+prsnt_game_escape = 19

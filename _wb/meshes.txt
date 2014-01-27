@@ -1,4 +1,4 @@
-328
+332
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -327,3 +327,7 @@ mesh_defiled_gondor_thigh3 0 gondor_thigh_tear_ac 0 0 0 0 0 0 1 1 1
 mesh_loading_background 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_main_menu_background 0 meeting_window 0 0 0 0 0 0 1 1 1
 mesh_main_menu_statue 1 pic_mercenary 0 0 0 0 0 0 1 1 1
+mesh_pic_mb_warrior_1 1 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
+mesh_pic_mb_warrior_2 1 pic_mb_warrior_2 0 0 0 0 0 0 1 1 1
+mesh_pic_mb_warrior_3 1 pic_mb_warrior_3 0 0 0 0 0 0 1 1 1
+mesh_pic_mb_warrior_4 1 pic_mb_warrior_4 0 0 0 0 0 0 1 1 1
