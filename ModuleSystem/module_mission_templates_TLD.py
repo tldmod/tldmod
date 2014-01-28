@@ -6,6 +6,7 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_mt
 
 # COMMAND CURSOR MINIMOD # (Added by CppCoder) (I forgot original author)
 
@@ -1978,7 +1979,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(agent_get_item_id,":warg_itm",":warg"),
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
 		(agent_get_rider,":rider",":warg"),
-		(eq,":rider",-1), #(display_message,"@warg without rider found!"),
+		(eq,":rider",-1), (display_message,"@warg without rider found!"),
 		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
 		(assign, "$warg_to_be_replaced", ":warg"),
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
@@ -1996,11 +1997,18 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		(val_sub,reg1,1), # translate entry point number into mission entry
+		] + ((not is_a_wb_mt==1) and [
+		#swy-- classic 1.011 code path for spawning wargs
 		(store_current_scene, ":cur_scene"),
 		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-		#(str_store_troop_name, s12, ":warg_ghost_trp"), 
-		#(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
+		] or [
+		#swy-- new Warband code path for spawning wargs
+		(set_spawn_position, pos10),
+		(spawn_agent,":warg_ghost_trp"),
+		]) + [
+		(str_store_troop_name, s12, ":warg_ghost_trp"), 
+		(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
 	(try_end),
 	(set_show_messages,1)])
 
