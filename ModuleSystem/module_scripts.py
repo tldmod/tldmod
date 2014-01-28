@@ -18,6 +18,8 @@ from module_scripts_ai import *
 from module_scripts_form import *
 from module_scripts_morale import *
 
+from module_info import wb_compile_switch as is_a_wb_script
+
 ####################################################################################################################
 # scripts is a list of script records.
 # Each script record contns the following two fields:
@@ -9837,63 +9839,86 @@ scripts = [
       (party_get_slot, ":castle_scene", ":center_no", slot_town_castle),
       (modify_visitors_at_site,":castle_scene"),
       (reset_visitors),
-      #Adding guards
+      
+      # Adding guards
       (party_get_slot, ":guard_troop", ":center_no", slot_town_castle_guard_troop),
-##########
+      # --
+      
       (try_begin),
         (le, ":guard_troop", 0),
         (assign, ":guard_troop", "trp_guard_of_the_fountain_court"),
       (try_end),
+      
       (set_visitor, 6, ":guard_troop"),
       (set_visitor, 7, ":guard_troop"),
-	  
-	  # place the two hobbits; USE ENTRY POINT 8 !!! (mtarini)
-	  (try_begin),
-	    (gt, "$tld_war_began", 0), (eq, ":castle_scene", "scn_minas_tirith_castle"),
-		(try_begin), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 0),
-			(set_visitor, 8, "trp_pippin_notmet"), # a "halfling"
-		(else_try),
-			(set_visitor, 8, "trp_pippin"),
-		(try_end),
-	  (else_try), 
-	    (gt, "$tld_war_began", 0), (eq, ":castle_scene", "scn_edoras_castle"),
-		(try_begin), (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 0),
-			(set_visitor, 8, "trp_merry_notmet"),  # a "halfling"
-		(else_try),
-			(set_visitor, 8, "trp_merry"),
-		(try_end),
-	  (try_end),
-
-      (assign, ":cur_pos", 16),
-      (call_script, "script_get_heroes_attached_to_center", ":center_no", "p_temp_party"),
-      (party_get_num_companion_stacks, ":num_stacks","p_temp_party"),
-	  
-	  # bugfix (mtarini): repirstinate original af_flags...
-	  (try_for_range, ":i", 0, 32),
-		 (try_begin),(is_between, ":i", 1, 16), (mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":i", af_override_horse),
-		 (else_try),(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":i", af_override_horse | af_override_weapons | af_override_head | af_override_gloves),
-		 (try_end),
-	  (end_try),
-	  
-      (try_for_range, ":i_stack", 0, ":num_stacks"),
-        (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
-        (lt, ":cur_pos", 32), # spawn up to entry point 31
-        (set_visitor, ":cur_pos", ":stack_troop"),
-		(try_begin),
-			(this_or_next|eq, ":stack_troop", "trp_knight_3_11"), #imladris elves all in helms
-			(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
-			(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
-			(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
-			             (eq, ":stack_troop", "trp_mordor_lord"), #Mouth in hood
-			(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":cur_pos", af_override_horse|af_override_weapons),
-		(try_end),
-        (val_add,":cur_pos", 1),
+    
+    # Place the two hobbits; USE ENTRY POINT 8 !!! (mtarini)
+    (try_begin),
+      (gt, "$tld_war_began", 0),
+      (eq, ":castle_scene", "scn_minas_tirith_castle"),
+      
+      (try_begin),
+        (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 0),
+        (set_visitor, 8, "trp_pippin_notmet"), # a "halfling"
+      (else_try),
+        (set_visitor, 8, "trp_pippin"),
       (try_end),
-      #TLD NPC companions
-      (val_max, ":cur_pos", 17), #if no one else in court, skip 16 (could be a throne)
+    (else_try), 
+      (gt, "$tld_war_began", 0),
+      (eq, ":castle_scene", "scn_edoras_castle"),
+      
+      (try_begin),
+        (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 0),
+        (set_visitor, 8, "trp_merry_notmet"),  # a "halfling"
+      (else_try),
+        (set_visitor, 8, "trp_merry"),
+      (try_end),
+    (try_end),
+
+    (assign, ":cur_pos", 16),
+    (call_script, "script_get_heroes_attached_to_center", ":center_no", "p_temp_party"),
+    
+    (party_get_num_companion_stacks, ":num_stacks", "p_temp_party"),
+    
+    # Bugfix (mtarini): repristinate original af_flags...
+    (try_for_range, ":i", 0, 32),
+      (try_begin),
+        (is_between, ":i", 1, 16),
+        (mission_tpl_entry_set_override_flags,
+            "mt_visit_town_castle",
+            ":i",
+            af_override_horse
+        ),
+      (else_try),
+        (mission_tpl_entry_set_override_flags,
+            "mt_visit_town_castle",
+            ":i",
+            af_override_horse | af_override_weapons | af_override_head | af_override_gloves
+        ),
+      (try_end),
+    (try_end),
+	  
+    (try_for_range, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
+        (lt, ":cur_pos", 32), # Spawn up to entry point 31
+        (set_visitor, ":cur_pos", ":stack_troop"),
+        (try_begin),
+        	(this_or_next|eq, ":stack_troop", "trp_knight_3_11"), # Imladris elves all in helms
+        	(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
+        	(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
+        	(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
+        	             (eq, ":stack_troop", "trp_mordor_lord"), # Mouth of Sauron in hood
+        	(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":cur_pos", af_override_horse|af_override_weapons),
+        (try_end),
+        
+        (val_add,":cur_pos", 1),
+    (try_end),
+
+      # TLD NPC companions
+      (val_max, ":cur_pos", 17), # if no one else in court, skip 16 (could be a throne)
       (try_for_range, ":cur_troop", companions_begin, companions_end),
         (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
-        (neg|main_party_has_troop, ":cur_troop"), #not already hired
+        (neg|main_party_has_troop, ":cur_troop"), # not already hired
         (assign, ":on_lease", 0),
         (try_begin),
           (check_quest_active,"qst_lend_companion"),
@@ -9904,7 +9929,7 @@ scripts = [
         (store_faction_of_party, ":center_faction", ":center_no"),
         (store_troop_faction, ":troop_faction", ":cur_troop"),
         (store_relation, ":rel", ":center_faction", ":troop_faction"),
-        (ge, ":rel", 0), #only spawn if friendly center
+        (ge, ":rel", 0),      # only spawn if friendly center
         (lt, ":cur_pos", 32), # spawn up to entry point 31, can have multiple companions in a single town castle
         (set_visitor, ":cur_pos", ":cur_troop"),
         (val_add,":cur_pos", 1),
@@ -13443,7 +13468,14 @@ scripts = [
 #     (else_try),
        (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh_banner"),
 #     (try_end),
-]),
+
+      ] + (is_a_wb_script==1 and [
+      
+      #swy-- this is needed to show by default the note entries on Warband...
+      (faction_set_note_available, ":faction_no", 1),
+       
+      ] or [])
+),
 
 #script_update_faction_traveler_notes
 # INPUT: faction_no
@@ -13459,7 +13491,14 @@ scripts = [
      (str_store_faction_name, s5, ":faction_no"),
      (assign, reg1, ":total_men"),
      (add_faction_note_from_sreg, ":faction_no", 1, "@{s5} has a strength of {reg1} men in total.", 1),
-]),
+
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (faction_set_note_available, ":faction_no", 1),
+
+     ] or [])
+),
 
 #script_update_troop_notes
 # INPUT: troop_no
@@ -13544,7 +13583,15 @@ scripts = [
 #       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
      (try_end),
-]),
+     
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (troop_set_note_available, ":troop_no", 1),
+
+     ] or [])
+
+),
 
 #script_update_troop_location_notes
 # INPUT: troop_no
@@ -13566,7 +13613,14 @@ scripts = [
          (add_troop_note_from_sreg, ":troop_no", 2, "@The last time you heard about {reg1?her:him}, {s1}", 1),
        (try_end),
      (try_end),
-]),
+     
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (troop_set_note_available, ":troop_no", 1),
+
+     ] or [])
+),
 
 #script_update_center_notes
 # INPUT: center_no
@@ -13612,7 +13666,14 @@ scripts = [
      (add_party_note_from_sreg, ":center_no", 0, "@{s2}", 0), #TLD: no prosperity
      #(add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
      (add_party_note_tableau_mesh, ":center_no", "tableau_center_note_mesh"),
-]),
+
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (party_set_note_available, ":center_no", 1),
+
+     ] or [])
+),
 
 #script_update_center_recon_notes
 # INPUT: center_no
@@ -13629,7 +13690,14 @@ scripts = [
        (party_get_num_companions, reg5, "p_collective_ally"),
        (add_party_note_from_sreg, ":center_no", 1, "@Current garrison consists of {reg5} men.^Has food stock for {reg6} days.", 1),
      (try_end),
-]),
+     
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (party_set_note_available, ":center_no", 1),
+
+     ] or [])
+),
 
 #script_update_all_notes
 ("update_all_notes",
@@ -13638,8 +13706,9 @@ scripts = [
         (call_script, "script_update_troop_notes", ":troop_no"),
       (try_end),
       (try_for_range, ":center_no", centers_begin, centers_end),
-        (party_is_active, ":center_no"), #TLD
-		(party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+        (party_is_active, ":center_no"),                         # TLD
+        (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+        
         (call_script, "script_update_center_notes", ":center_no"),
       (try_end),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
