@@ -1516,7 +1516,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	#	(display_message, "@going at {reg1}/{reg2} m/s x10"),
 		
 		(this_or_next|ge,":mount_speed_x", 590), # if the horse is lame and goes faster than 59 m/s (normal calloping speed is over ~60 m/s)
-		(             ge,":mount_speed_y", 590), # there's a 5% chance of stalling every 2 secs.
+		(             ge,":mount_speed_y", 590), # there's a 95% chance of stalling every 2 secs.
 		
 		(store_random_in_range, ":rand_stall_horse", 0, 100),
 		(ge, ":rand_stall_horse", 5),
