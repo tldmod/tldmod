@@ -9908,7 +9908,11 @@ scripts = [
         	(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
         	(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
         	             (eq, ":stack_troop", "trp_mordor_lord"), # Mouth of Sauron in hood
-        	(mission_tpl_entry_set_override_flags, "mt_visit_town_castle", ":cur_pos", af_override_horse|af_override_weapons),
+        	(mission_tpl_entry_set_override_flags,
+        	    "mt_visit_town_castle",
+        	    ":cur_pos",
+        	    af_override_horse | af_override_weapons
+        	),
         (try_end),
         
         (val_add,":cur_pos", 1),
