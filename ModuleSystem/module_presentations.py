@@ -2883,7 +2883,7 @@ if wb_compile_switch==1:
             (position_set_y, pos1, 0),
             (overlay_set_position, ":emback", pos1),
             
-			(store_random_in_range, ":random_bg_pic", mesh_pic_mb_warrior_1, mesh_pic_mb_warrior_4),
+            (store_random_in_range, ":random_bg_pic", mesh_pic_mb_warrior_1, mesh_pic_mb_warrior_4 + 1),
 
             (create_mesh_overlay, ":empic", ":random_bg_pic"),
             (position_set_x, pos1, 0),
