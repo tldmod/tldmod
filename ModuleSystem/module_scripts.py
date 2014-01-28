@@ -1535,19 +1535,19 @@ scripts = [
 		(troop_set_slot, ":kingdom_hero", slot_troop_player_order_object, -1),
 	(try_end),
 # Rohan lord banners
-	(troop_set_slot, "trp_knight_1_9", slot_troop_banner_scene_prop, "spr_banner_f01"), #westfold
-	(troop_set_slot, "trp_knight_1_10", slot_troop_banner_scene_prop, "spr_banner_f05"), #westemnet
-	(troop_set_slot, "trp_knight_1_11", slot_troop_banner_scene_prop, "spr_banner_f02"), #aldburg
-#	(troop_set_slot, "trp_knight_1_12", slot_troop_banner_scene_prop, "spr_banner_ed"), # hama is kings man
-	(troop_set_slot, "trp_knight_1_13", slot_troop_banner_scene_prop, "spr_banner_f06"), #eastfold
-	(troop_set_slot, "trp_knight_1_14", slot_troop_banner_scene_prop, "spr_banner_f07"), #eastemnet
+	(troop_set_slot, "trp_knight_1_9",  slot_troop_banner_scene_prop, "spr_banner_f01"), # westfold
+	(troop_set_slot, "trp_knight_1_10", slot_troop_banner_scene_prop, "spr_banner_f05"), # westemnet
+	(troop_set_slot, "trp_knight_1_11", slot_troop_banner_scene_prop, "spr_banner_f02"), # aldburg
+#	(troop_set_slot, "trp_knight_1_12", slot_troop_banner_scene_prop, "spr_banner_ed"),  # hama is king's man
+	(troop_set_slot, "trp_knight_1_13", slot_troop_banner_scene_prop, "spr_banner_f06"), # eastfold
+	(troop_set_slot, "trp_knight_1_14", slot_troop_banner_scene_prop, "spr_banner_f07"), # eastemnet
 # Gondor vassals lord banners
-	(troop_set_slot, "trp_knight_1_1", slot_troop_banner_scene_prop, "spr_banner_ek"), #lamedon
-	(troop_set_slot, "trp_knight_1_3", slot_troop_banner_scene_prop, "spr_banner_er"), #dol amroth
-	(troop_set_slot, "trp_knight_1_4", slot_troop_banner_scene_prop, "spr_banner_en"), #pelargir
-	(troop_set_slot, "trp_knight_1_5", slot_troop_banner_scene_prop, "spr_banner_ed"), #blackroot vale
-	(troop_set_slot, "trp_knight_1_6", slot_troop_banner_scene_prop, "spr_banner_eg"), #pinnath gelin
-	(troop_set_slot, "trp_knight_1_8", slot_troop_banner_scene_prop, "spr_banner_f21"), #lossarnach
+	(troop_set_slot, "trp_knight_1_1",  slot_troop_banner_scene_prop, "spr_banner_ek"),  # lamedon
+	(troop_set_slot, "trp_knight_1_3",  slot_troop_banner_scene_prop, "spr_banner_er"),  # dol amroth
+	(troop_set_slot, "trp_knight_1_4",  slot_troop_banner_scene_prop, "spr_banner_en"),  # pelargir
+	(troop_set_slot, "trp_knight_1_5",  slot_troop_banner_scene_prop, "spr_banner_ed"),  # blackroot vale
+	(troop_set_slot, "trp_knight_1_6",  slot_troop_banner_scene_prop, "spr_banner_eg"),  # pinnath gelin
+	(troop_set_slot, "trp_knight_1_8",  slot_troop_banner_scene_prop, "spr_banner_f21"), # lossarnach
 
 # fill center slots	
 	(try_for_range, ":center_no", centers_begin, centers_end),
@@ -1595,9 +1595,9 @@ scripts = [
 			(troop_set_slot, ":troop_id", slot_troop_wealth, 60000),
 		(try_end),
 	(try_end),
-	#add town garrisons
+	# Add town garrisons
 	(try_for_range, ":center_no", centers_begin, centers_end),
-		(assign, ":initial_wealth", 20000),#Add initial center wealth
+		(assign, ":initial_wealth", 20000), #Add initial center wealth
 		(try_begin),
 			(is_between, ":center_no", centers_begin, centers_end),
 			(val_mul, ":initial_wealth", 2),
