@@ -1501,8 +1501,25 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(try_begin), # lame horses can stall
 		(eq, "$horse_mod", imod_lame),
 		(eq, ":mount","$horse_player"),
-		(store_random_in_range, reg1 ,0,20),
-		(ge, reg1, 1),
+
+		#swy-- reduced constant nagging, fire randomly just when the horse goes fast, this isn't even even fun or challenging!
+		(agent_get_speed, pos1, ":mount"), # speed in m/s for both X and Y
+    
+		(position_get_x, ":mount_speed_x", pos1), # after some testing the game seems to use just the Y slot 
+		(position_get_y, ":mount_speed_y", pos1), # of the position for speed, which is multiplied x10.
+		
+		#swy-- debug, see how the real speed is measured
+	#	(assign, reg1, ":mount_speed_x"), # empty, always zero?
+	#	(assign, reg2, ":mount_speed_y"), # actual speed counter...
+		
+	#	(display_message, "@going at {reg1}/{reg2} m/s x10"),
+		
+		(this_or_next|ge,":mount_speed_x", 590), # if the horse is lame and goes faster than 59 m/s (normal calloping speed is over ~60 m/s)
+		(             ge,":mount_speed_y", 590), # there's a 5% chance of stalling every 2 secs.
+		
+		(store_random_in_range, ":rand_stall_horse", 0, 100),
+		(ge, ":rand_stall_horse", 5),
+		
 		(agent_set_animation, ":mount", "anim_horse_cancel_ani"), 
 		(display_message, "@Your mount stumbles! It seems to be lame.",color_bad_news),
 	(try_end),
