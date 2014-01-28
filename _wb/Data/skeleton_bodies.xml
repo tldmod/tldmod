@@ -5,27 +5,27 @@
     <Bones>
       <Bone name="hb_abdomen" bone_mass="10"> <Bodies> <body type="capsule" radius="0.14" pos_x="-0.04" pos2_x="0.04" pos_y="0.08" pos2_y="0.08" pos_z="-0.03" pos2_z="-0.03"/> </Bodies> </Bone>
       
-	  <Bone name="hb_thigh_l" bone_mass="10"      bone_twist_limit_min="30"  plane_dir_x="-1" bone_plane_min="-25" bone_plane_max="30"    socket_dir_z="-1"     bone_cone_min = "-50"  bone_cone_max="50"> <Bodies> <body type="capsule" radius="0.08" pos_x="-0.01" pos2_x="-0.01" pos_y="0.09" pos2_y="0.43" pos_z="0.06" pos2_z="0.04"/></Bodies> </Bone>
+	  <Bone name="hb_thigh_l" bone_mass="10"      bone_twist_limit_min="30"  plane_dir_x="-1" bone_plane_min="-25" bone_plane_max="30"    socket_dir_z="-1"     bone_cone_min = "-50"  bone_cone_max="50"> <Bodies> <body type="capsule" radius="0.085" pos_x="-0.01" pos2_x="-0.01" pos_y="0.09" pos2_y="0.43" pos_z="0.06" pos2_z="0.04"/></Bodies> </Bone>
       <Bone name="hb_calf_l"  bone_mass="6"         bone_twist_limit_min="0"  bone_twist_limit_max="45"  plane_dir_x="-1" bone_plane_min="-5" bone_plane_max="5"     socket_dir_z="-1"     bone_cone_min = "-65"  bone_cone_max="10"> <Bodies> <body type="capsule" radius="0.06" pos_x="-0.01" pos2_x="-0.01" pos_y="0.07" pos2_y="0.45" pos_z="0.04" pos2_z="0.02"/></Bodies></Bone>
       <Bone name="hb_foot_l"  bone_mass="3"         bone_twist_limit_min="-5"  bone_twist_limit_max="5"  plane_dir_x="-1" bone_plane_min="-5" bone_plane_max="5"     socket_dir_y="1"     bone_cone_min = "-25"    bone_cone_max="10"> <Bodies> <body for_ragdoll_only="1" type="capsule" radius="0.05" pos_x="0.01" pos2_x="0.01" pos_y="0.05" pos2_y="0.2"/></Bodies></Bone>
       
-	  <Bone name="hb_thigh_r" bone_mass="10"      bone_twist_limit_min="30"  plane_dir_x="1" bone_plane_min="-25" bone_plane_max="30"    socket_dir_z="-1"     bone_cone_min = "-50"    bone_cone_max="50"><Bodies> <body type="capsule" radius="0.08" pos_x="0.03" pos2_x="0.01" pos_y="0.09" pos2_y="0.43" pos_z="0.06" pos2_z="0.04"/></Bodies> </Bone>
+	  <Bone name="hb_thigh_r" bone_mass="10"      bone_twist_limit_min="30"  plane_dir_x="1" bone_plane_min="-25" bone_plane_max="30"    socket_dir_z="-1"     bone_cone_min = "-50"    bone_cone_max="50"><Bodies> <body type="capsule" radius="0.085" pos_x="0.03" pos2_x="0.01" pos_y="0.09" pos2_y="0.43" pos_z="0.06" pos2_z="0.04"/></Bodies> </Bone>
       <Bone name="hb_calf_r"  bone_mass="6"         bone_twist_limit_min="0" bone_twist_limit_max="45"  plane_dir_x="1" bone_plane_min="-5" bone_plane_max="5"     socket_dir_z="-1"     bone_cone_min = "-10"    bone_cone_max="65"> <Bodies> <body type="capsule" radius="0.06" pos_x="0.01" pos2_x="0.01" pos_y="0.07" pos2_y="0.45" pos_z="0.04" pos2_z="0.02"/></Bodies></Bone>
       <Bone name="hb_foot_r"  bone_mass="3"         bone_twist_limit_min="-5" bone_twist_limit_max="5"  plane_dir_x="1" bone_plane_min="-5" bone_plane_max="5"     socket_dir_y="1"     bone_cone_min = "-10"    bone_cone_max="25"> <Bodies> <body for_ragdoll_only="1" type="capsule" radius="0.05" pos_x="0.01" pos2_x="0.01" pos_y="0.05" pos2_y="0.2"/></Bodies></Bone>
       
-	  <Bone name="hb_spine"   bone_mass="10"      bone_twist_limit_min="15"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="40"    socket_dir_z="1"     bone_cone_min = "-35"    bone_cone_max="30"> <Bodies> <body type="capsule" radius="0.13" pos_x="0.03" pos2_x="-0.02" pos_y="0.12" pos2_y="0.12" pos_z="-0.02" pos2_z="-0.02"/> </Bodies> </Bone>
+	  <Bone name="hb_spine"   bone_mass="10"      bone_twist_limit_min="15"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="40"    socket_dir_z="1"     bone_cone_min = "-35"    bone_cone_max="30"> <Bodies> <body type="capsule" radius="0.13" pos_x="0.03" pos2_x="-0.025" pos_y="0.12" pos2_y="0.12" pos_z="-0.02" pos2_z="-0.02"/> </Bodies> </Bone>
       <Bone name="hb_thorax"  bone_mass="10"      bone_twist_limit_min="20"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="30"    socket_dir_z="1"     bone_cone_min = "-35"    bone_cone_max="35"> <Bodies> <body type="capsule" radius="0.11" pos_x="-0.07" pos2_x="0.07" pos_y="0.11" pos2_y="0.11" pos_z="-0.04" pos2_z="-0.04"/> </Bodies></Bone>
       <Bone name="hb_head"    bone_mass="5"         bone_twist_limit_min="-60" bone_twist_limit_max="60"  plane_dir_x="1" bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="1"    bone_cone_min="-60"     bone_cone_max="60" > <Bodies> <body type="capsule" radius="0.08" pos_x="0.0" pos2_x="0.0" pos_y="0.03" pos2_y="0.16" pos_z="0.0" pos2_z="0.0"/> </Bodies></Bone>
       
-	  <Bone name="hb_shoulder_l" bone_mass="3"  bone_twist_limit_min="50"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="15"    socket_dir_x="-1"    bone_cone_min="-10"      bone_cone_max="10"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.04" pos2_x="-0.03" pos_y="0.08" pos2_y="0.11" pos_z="0.00" pos2_z="0.0"/></Bodies> </Bone>
-      <Bone name="hb_upperarm_l" bone_mass="4"    bone_twist_limit_min="20"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="75"    socket_dir_x="-1"    bone_cone_min="-20"      bone_cone_max="110"> <Bodies> <body type="capsule" radius="0.05" pos_x="-0.03" pos2_x="-0.01" pos_y="0.04" pos2_y="0.2" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
-      <Bone name="hb_forearm_l"  bone_mass="2"      bone_twist_limit_min="45"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="15"    socket_dir_x="-1"    bone_cone_min="-5"       bone_cone_max="90"> <Bodies> <body type="capsule" radius="0.04" pos_x="-0.01" pos2_x="0.01" pos_y="0.01" pos2_y="0.24" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
+	  <Bone name="hb_shoulder_l" bone_mass="3"  bone_twist_limit_min="50"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="15"    socket_dir_x="-1"    bone_cone_min="-10"      bone_cone_max="10"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.04" pos2_x="-0.03" pos_y="0.08" pos2_y="0.11" pos_z="0.005" pos2_z="0.0"/></Bodies> </Bone>
+      <Bone name="hb_upperarm_l" bone_mass="4"    bone_twist_limit_min="20"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="75"    socket_dir_x="-1"    bone_cone_min="-20"      bone_cone_max="110"> <Bodies> <body type="capsule" radius="0.055" pos_x="-0.03" pos2_x="-0.01" pos_y="0.04" pos2_y="0.2" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
+      <Bone name="hb_forearm_l"  bone_mass="2"      bone_twist_limit_min="45"  plane_dir_y="1" bone_plane_min="-15" bone_plane_max="15"    socket_dir_x="-1"    bone_cone_min="-5"       bone_cone_max="90"> <Bodies> <body type="capsule" radius="0.045" pos_x="-0.01" pos2_x="0.01" pos_y="0.01" pos2_y="0.24" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
       <Bone name="hb_hand_l"> </Bone>                                                                                                                                       
       <Bone name="hb_item_l"> </Bone>                                                                                                                                       
       
-	  <Bone name="hb_shoulder_r" bone_mass="3"  bone_twist_limit_min="50"  plane_dir_y="-1"  bone_plane_min="-15" bone_plane_max="15"  socket_dir_x="1"     bone_cone_min="-10"      bone_cone_max="10"> <Bodies> <body type="capsule" radius="0.06" pos_x="0.04" pos2_x="0.03" pos_y="0.08" pos2_y="0.11" pos_z="0.00" pos2_z="0.0"/></Bodies> </Bone>
-      <Bone name="hb_upperarm_r" bone_mass="4"    bone_twist_limit_min="20"  plane_dir_y="-1" bone_plane_min="-75" bone_plane_max="15"   socket_dir_x="1"     bone_cone_min="-20"      bone_cone_max="110"><Bodies> <body type="capsule" radius="0.05" pos_x="0.03" pos2_x="0.01" pos_y="0.04" pos2_y="0.2" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
-      <Bone name="hb_forearm_r"  bone_mass="2"      bone_twist_limit_min="45"  plane_dir_y="-1" bone_plane_min="-15" bone_plane_max="15"   socket_dir_x="1"     bone_cone_min="-5"       bone_cone_max="90"> <Bodies> <body type="capsule" radius="0.04" pos_x="0.01" pos2_x="0.01" pos_y="0.01" pos2_y="0.24" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
+	  <Bone name="hb_shoulder_r" bone_mass="3"  bone_twist_limit_min="50"  plane_dir_y="-1"  bone_plane_min="-15" bone_plane_max="15"  socket_dir_x="1"     bone_cone_min="-10"      bone_cone_max="10"> <Bodies> <body type="capsule" radius="0.06" pos_x="0.04" pos2_x="0.03" pos_y="0.08" pos2_y="0.11" pos_z="0.005" pos2_z="0.0"/></Bodies> </Bone>
+      <Bone name="hb_upperarm_r" bone_mass="4"    bone_twist_limit_min="20"  plane_dir_y="-1" bone_plane_min="-75" bone_plane_max="15"   socket_dir_x="1"     bone_cone_min="-20"      bone_cone_max="110"><Bodies> <body type="capsule" radius="0.055" pos_x="0.03" pos2_x="0.01" pos_y="0.04" pos2_y="0.2" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
+      <Bone name="hb_forearm_r"  bone_mass="2"      bone_twist_limit_min="45"  plane_dir_y="-1" bone_plane_min="-15" bone_plane_max="15"   socket_dir_x="1"     bone_cone_min="-5"       bone_cone_max="90"> <Bodies> <body type="capsule" radius="0.045" pos_x="0.01" pos2_x="0.01" pos_y="0.01" pos2_y="0.24" pos_z="-0.01" pos2_z="-0.01"/></Bodies></Bone>
       <Bone name="hb_hand_r"> </Bone>          
       <Bone name="hb_item_r"> </Bone>
     </Bones>
@@ -34,86 +34,86 @@
    <Bones>
     <Bone bone_mass="15" bone_cone_max="30" bone_twist_limit="20" name="hb_abdomen">
      <Bodies>
-      <body radius="0.13" pos_x="-0.05" pos_y="0.06" pos_z="-0.02" pos2_x="0.05" type="capsule" pos2_y="0.06" pos2_z="-0.02"/>
+      <body radius="0.136" pos_x="-0.0585" pos_y="0.06" pos_z="-0.029" pos2_x="0.0585" type="capsule" pos2_y="0.06" pos2_z="-0.029"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="-20" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.06" pos_x="0.00" pos_y="0.11" pos_z="0.03" pos2_x="0.06" type="capsule" pos2_y="0.43" pos2_z="-0.01"/>
+      <body radius="0.067" pos_x="0.00559593" pos_y="0.113969" pos_z="0.0376904" pos2_x="0.0692984" type="capsule" pos2_y="0.432492" pos2_z="-0.0118521"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.01" pos_y="0.06" pos_z="0.05" pos2_x="-0.08" type="capsule" pos2_y="0.44" pos2_z="0.09"/>
+      <body radius="0.05" pos_x="-0.0142119" pos_y="0.0661338" pos_z="0.0541516" pos2_x="-0.0818729" type="capsule" pos2_y="0.448406" pos2_z="0.0965875"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="20" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.06" pos_x="-0.00" pos_y="0.11" pos_z="0.03" pos2_x="-0.06" type="capsule" pos2_y="0.43" pos2_z="-0.01"/>
+      <body radius="0.067" pos_x="-0.00559593" pos_y="0.113969" pos_z="0.0376904" pos2_x="-0.0692984" type="capsule" pos2_y="0.432492" pos2_z="-0.0118521"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.01" pos_y="0.06" pos_z="0.05" pos2_x="0.08" type="capsule" pos2_y="0.44" pos2_z="0.09"/>
+      <body radius="0.05" pos_x="0.0142119" pos_y="0.0661338" pos_z="0.0541516" pos2_x="0.0818729" type="capsule" pos2_y="0.448406" pos2_z="0.0965875"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="25" name="hb_spine">
      <Bodies>
-      <body radius="0.12" pos_x="0.04" pos_y="0.1" pos_z="0.02" pos2_x="-0.04" type="capsule" pos2_y="0.1" pos2_z="0.02"/>
+      <body radius="0.12" pos_x="0.0405" pos_y="0.1" pos_z="0.02" pos2_x="-0.0405" type="capsule" pos2_y="0.1" pos2_z="0.02"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.10" pos_x="-0.08" pos_y="0.11" pos_z="-1.49" pos2_x="0.08" type="capsule" pos2_y="0.11" pos2_z="-1.49"/>
+      <body radius="0.107" pos_x="-0.0855001" pos_y="0.11" pos_z="-1.49012e-07" pos2_x="0.0855001" type="capsule" pos2_y="0.11" pos2_z="-1.49012e-07"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="60" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.07" pos_x="-1.86" pos_y="0.04" pos_z="0.06" pos2_x="-1.86" type="capsule" pos2_y="0.15" pos2_z="0.03"/>
+      <body radius="0.0700001" pos_x="-1.86265e-09" pos_y="0.0488758" pos_z="0.0677827" pos2_x="-1.86265e-09" type="capsule" pos2_y="0.155185" pos2_z="0.0396779"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.03" pos_y="0.12" pos_z="0.01" pos2_x="-0.03" type="capsule" pos2_y="0.17" pos2_z="0.01"/>
+      <body radius="0.0490001" pos_x="-0.0394645" pos_y="0.120842" pos_z="0.0106888" pos2_x="-0.0390165" type="capsule" pos2_y="0.173077" pos2_z="0.011843"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.03" pos_y="0.06" pos_z="-0.00" pos2_x="-0.03" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0470001" pos_x="-0.0378921" pos_y="0.064854" pos_z="-0.00866351" pos2_x="-0.0356664" type="capsule" pos2_y="0.244075" pos2_z="-0.00670451"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.03" pos_x="-0.01" pos_y="0.02" pos_z="-0.01" pos2_x="-0.01" type="capsule" pos2_y="0.28" pos2_z="-0.01"/>
+      <body radius="0.0390001" pos_x="-0.0100633" pos_y="0.0294676" pos_z="-0.0101996" pos2_x="-0.010092" type="capsule" pos2_y="0.285468" pos2_z="-0.010163"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.03" pos_y="0.12" pos_z="0.01" pos2_x="0.03" type="capsule" pos2_y="0.17" pos2_z="0.01"/>
+      <body radius="0.0490001" pos_x="0.0394645" pos_y="0.120842" pos_z="0.0106888" pos2_x="0.0390165" type="capsule" pos2_y="0.173077" pos2_z="0.011843"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.03" pos_y="0.06" pos_z="-0.00" pos2_x="0.03" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0470001" pos_x="0.0378921" pos_y="0.064854" pos_z="-0.00866351" pos2_x="0.0356664" type="capsule" pos2_y="0.244075" pos2_z="-0.00670451"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.03" pos_x="0.01" pos_y="0.02" pos_z="-0.01" pos2_x="0.01" type="capsule" pos2_y="0.28" pos2_z="-0.01"/>
+      <body radius="0.0390001" pos_x="0.0100633" pos_y="0.0294676" pos_z="-0.0101996" pos2_x="0.010092" type="capsule" pos2_y="0.285468" pos2_z="-0.010163"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="360" bone_twist_limit="180" name="hb_hand_r">
      <Bodies>
-      <body radius="0.02" for_ragdoll_only="1" pos_x="0.00" pos_y="0.05" pos_z="-0.00" pos2_x="0.00" type="capsule" pos2_y="0.09" pos2_z="-0.00"/>
+      <body radius="0.025" for_ragdoll_only="1" pos_x="0.000825614" pos_y="0.051264" pos_z="-0.000403881" pos2_x="0.000836566" type="capsule" pos2_y="0.097514" pos2_z="-0.000409126"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="100" bone_cone_max="360" bone_twist_limit="180" name="hb_item_r">
      <Bodies>
-      <body radius="0.01" for_ragdoll_only="1" pos_x="0.03" pos_y="-0.00" pos_z="-0.00" pos2_x="0.03" type="capsule" pos2_y="0.17" pos2_z="-0.00"/>
+      <body radius="0.015" for_ragdoll_only="1" pos_x="0.0325388" pos_y="-0.00615334" pos_z="-0.000733137" pos2_x="0.032452" type="capsule" pos2_y="0.170097" pos2_z="-0.000717878"/>
      </Bodies>
     </Bone>
    </Bones>
@@ -122,86 +122,86 @@
    <Bones>
     <Bone bone_mass="15" bone_cone_max="30" bone_twist_limit="20" name="hb_abdomen">
      <Bodies>
-      <body radius="0.11" pos_x="-0.08" pos_y="0.06" pos_z="-0.04" pos2_x="0.08" type="capsule" pos2_y="0.06" pos2_z="-0.04"/>
+      <body radius="0.115" pos_x="-0.084" pos_y="0.06" pos_z="-0.04" pos2_x="0.084" type="capsule" pos2_y="0.06" pos2_z="-0.04"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="-20" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.07" pos_x="0.00" pos_y="0.11" pos_z="0.05" pos2_x="0.10" type="capsule" pos2_y="0.34" pos2_z="0.00"/>
+      <body radius="0.072" pos_x="0.0096221" pos_y="0.119303" pos_z="0.051141" pos2_x="0.106101" type="capsule" pos2_y="0.348232" pos2_z="0.000251191"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.01" pos_y="0.01" pos_z="0.05" pos2_x="-0.15" type="capsule" pos2_y="0.37" pos2_z="0.12"/>
+      <body radius="0.045" pos_x="-0.0121691" pos_y="0.0135371" pos_z="0.0519223" pos2_x="-0.152833" type="capsule" pos2_y="0.376186" pos2_z="0.127512"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="20" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.07" pos_x="-0.00" pos_y="0.11" pos_z="0.05" pos2_x="-0.10" type="capsule" pos2_y="0.34" pos2_z="0.00"/>
+      <body radius="0.072" pos_x="-0.0096221" pos_y="0.119303" pos_z="0.051141" pos2_x="-0.106101" type="capsule" pos2_y="0.348232" pos2_z="0.000251191"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.01" pos_y="0.01" pos_z="0.05" pos2_x="0.15" type="capsule" pos2_y="0.37" pos2_z="0.12"/>
+      <body radius="0.045" pos_x="0.0121691" pos_y="0.0135371" pos_z="0.0519223" pos2_x="0.152833" type="capsule" pos2_y="0.376186" pos2_z="0.127512"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="25" name="hb_spine">
      <Bodies>
-      <body radius="0.14" pos_x="0.03" pos_y="0.08" pos_z="0.01" pos2_x="-0.03" type="capsule" pos2_y="0.08" pos2_z="0.01"/>
+      <body radius="0.14" pos_x="0.0325" pos_y="0.08" pos_z="0.015" pos2_x="-0.0325" type="capsule" pos2_y="0.08" pos2_z="0.015"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.09" pos_x="-0.09" pos_y="0.13" pos_z="0.02" pos2_x="0.09" type="capsule" pos2_y="0.13" pos2_z="0.02"/>
+      <body radius="0.095" pos_x="-0.0915001" pos_y="0.13" pos_z="0.0299999" pos2_x="0.0915001" type="capsule" pos2_y="0.13" pos2_z="0.0299999"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="60" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.07" pos_x="0" pos_y="0.04" pos_z="0.06" pos2_x="0" type="capsule" pos2_y="0.15" pos2_z="0.03"/>
+      <body radius="0.0700001" pos_x="0" pos_y="0.0488758" pos_z="0.0677827" pos2_x="0" type="capsule" pos2_y="0.155185" pos2_z="0.0396779"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.04" pos_y="0.10" pos_z="0.01" pos2_x="-0.04" type="capsule" pos2_y="0.14" pos2_z="0.01"/>
+      <body radius="0.0590001" pos_x="-0.04" pos_y="0.10575" pos_z="0.01" pos2_x="-0.04" type="capsule" pos2_y="0.148" pos2_z="0.01"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.01" pos_y="0.03" pos_z="-0.00" pos2_x="-0.02" type="capsule" pos2_y="0.24" pos2_z="-0.01"/>
+      <body radius="0.0440001" pos_x="-0.0140276" pos_y="0.0338403" pos_z="-0.00644887" pos2_x="-0.0210124" type="capsule" pos2_y="0.245852" pos2_z="-0.0135502"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.01" pos_y="0.00" pos_z="-0.00" pos2_x="-0.01" type="capsule" pos2_y="0.28" pos2_z="-0.00"/>
+      <body radius="0.0400001" pos_x="-0.010001" pos_y="0.0075006" pos_z="-0.00999951" pos2_x="-0.0100015" type="capsule" pos2_y="0.282501" pos2_z="-0.00999965"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.04" pos_y="0.10" pos_z="0.01" pos2_x="0.04" type="capsule" pos2_y="0.14" pos2_z="0.01"/>
+      <body radius="0.0590001" pos_x="0.04" pos_y="0.10575" pos_z="0.01" pos2_x="0.04" type="capsule" pos2_y="0.148" pos2_z="0.01"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.01" pos_y="0.03" pos_z="-0.00" pos2_x="0.02" type="capsule" pos2_y="0.24" pos2_z="-0.01"/>
+      <body radius="0.0440001" pos_x="0.0140276" pos_y="0.0338403" pos_z="-0.00644887" pos2_x="0.0210124" type="capsule" pos2_y="0.245852" pos2_z="-0.0135502"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.01" pos_y="0.00" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.28" pos2_z="-0.00"/>
+      <body radius="0.0400001" pos_x="0.010001" pos_y="0.0075006" pos_z="-0.00999951" pos2_x="0.0100015" type="capsule" pos2_y="0.282501" pos2_z="-0.00999965"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="360" bone_twist_limit="180" name="hb_hand_r">
      <Bodies>
-      <body radius="0.02" for_ragdoll_only="1" pos_x="0" pos_y="0.01" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.06" pos2_z="0"/>
+      <body radius="0.025" for_ragdoll_only="1" pos_x="0" pos_y="0.01875" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.065" pos2_z="0"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="100" bone_cone_max="360" bone_twist_limit="180" name="hb_item_r">
      <Bodies>
-      <body radius="0.01" for_ragdoll_only="1" pos_x="0" pos_y="-0.00" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
+      <body radius="0.015" for_ragdoll_only="1" pos_x="0" pos_y="-0.00625002" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
      </Bodies>
     </Bone>
    </Bones>
@@ -210,86 +210,86 @@
    <Bones>
     <Bone bone_mass="15" bone_cone_max="30" bone_twist_limit="20" name="hb_abdomen">
      <Bodies>
-      <body radius="0.14" pos_x="-0.08" pos_y="0.07" pos_z="-0.04" pos2_x="0.08" type="capsule" pos2_y="0.07" pos2_z="-0.04"/>
+      <body radius="0.14" pos_x="-0.081" pos_y="0.077" pos_z="-0.047" pos2_x="0.081" type="capsule" pos2_y="0.077" pos2_z="-0.047"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="-20" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.09" pos_x="0.00" pos_y="0.09" pos_z="0.06" pos2_x="0.01" type="capsule" pos2_y="0.22" pos2_z="0.05"/>
+      <body radius="0.091" pos_x="0.00548255" pos_y="0.0913315" pos_z="0.0669438" pos2_x="0.0134066" type="capsule" pos2_y="0.226041" pos2_z="0.0590197"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.01" pos_y="0.06" pos_z="0.03" pos2_x="-0.01" type="capsule" pos2_y="0.24" pos2_z="0.03"/>
+      <body radius="0.0599999" pos_x="-0.0100001" pos_y="0.0699994" pos_z="0.0399999" pos2_x="-0.0100001" type="capsule" pos2_y="0.245282" pos2_z="0.0307745"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="20" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.09" pos_x="-0.00" pos_y="0.09" pos_z="0.06" pos2_x="-0.01" type="capsule" pos2_y="0.22" pos2_z="0.05"/>
+      <body radius="0.091" pos_x="-0.00548255" pos_y="0.0913315" pos_z="0.0669438" pos2_x="-0.0134066" type="capsule" pos2_y="0.226041" pos2_z="0.0590197"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.01" pos_y="0.06" pos_z="0.03" pos2_x="0.01" type="capsule" pos2_y="0.24" pos2_z="0.03"/>
+      <body radius="0.0599999" pos_x="0.0100001" pos_y="0.0699994" pos_z="0.0399999" pos2_x="0.0100001" type="capsule" pos2_y="0.245282" pos2_z="0.0307745"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="25" name="hb_spine">
      <Bodies>
-      <body radius="0.13" pos_x="0.06" pos_y="0.09" pos_z="-0.04" pos2_x="-0.06" type="capsule" pos2_y="0.09" pos2_z="-0.04"/>
+      <body radius="0.13" pos_x="0.0675" pos_y="0.09" pos_z="-0.0400001" pos2_x="-0.0675" type="capsule" pos2_y="0.09" pos2_z="-0.0400001"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.15" pos_x="-0.1" pos_y="0.11" pos_z="-0.07" pos2_x="0.1" type="capsule" pos2_y="0.11" pos2_z="-0.07"/>
+      <body radius="0.15" pos_x="-0.1" pos_y="0.11" pos_z="-0.0710002" pos2_x="0.1" type="capsule" pos2_y="0.11" pos2_z="-0.0710001"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="60" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.08" pos_x="0" pos_y="0.04" pos_z="0.04" pos2_x="0" type="capsule" pos2_y="0.14" pos2_z="0.04"/>
+      <body radius="0.0800001" pos_x="0" pos_y="0.0469859" pos_z="0.048996" pos2_x="0" type="capsule" pos2_y="0.149986" pos2_z="0.048996"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.08" pos_x="-0.05" pos_y="0.09" pos_z="-0.00" pos2_x="-0.04" type="capsule" pos2_y="0.13" pos2_z="-0.00"/>
+      <body radius="0.084" pos_x="-0.0592749" pos_y="0.098229" pos_z="-0.0010143" pos2_x="-0.0483379" type="capsule" pos2_y="0.13104" pos2_z="-0.00648282"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.07" pos_x="-0.01" pos_y="0.04" pos_z="-0.03" pos2_x="-0.00" type="capsule" pos2_y="0.14" pos2_z="-0.03"/>
+      <body radius="0.0720001" pos_x="-0.0160464" pos_y="0.0468223" pos_z="-0.0399995" pos2_x="-0.00435691" type="capsule" pos2_y="0.14034" pos2_z="-0.0399995"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.01" pos_y="0.05" pos_z="-0.00" pos2_x="-0.01" type="capsule" pos2_y="0.20" pos2_z="-0.00"/>
+      <body radius="0.0530001" pos_x="-0.0100011" pos_y="0.0540006" pos_z="-0.00999954" pos2_x="-0.0100013" type="capsule" pos2_y="0.206001" pos2_z="-0.00999961"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.08" pos_x="0.05" pos_y="0.09" pos_z="-0.00" pos2_x="0.04" type="capsule" pos2_y="0.13" pos2_z="-0.00"/>
+      <body radius="0.084" pos_x="0.0592749" pos_y="0.098229" pos_z="-0.0010143" pos2_x="0.0483379" type="capsule" pos2_y="0.13104" pos2_z="-0.00648282"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.07" pos_x="0.01" pos_y="0.04" pos_z="-0.03" pos2_x="0.00" type="capsule" pos2_y="0.14" pos2_z="-0.03"/>
+      <body radius="0.0720001" pos_x="0.0160464" pos_y="0.0468223" pos_z="-0.0399995" pos2_x="0.00435691" type="capsule" pos2_y="0.14034" pos2_z="-0.0399995"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.01" pos_y="0.05" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.20" pos2_z="-0.00"/>
+      <body radius="0.0530001" pos_x="0.0100011" pos_y="0.0540006" pos_z="-0.00999954" pos2_x="0.0100013" type="capsule" pos2_y="0.206001" pos2_z="-0.00999961"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="360" bone_twist_limit="180" name="hb_hand_r">
      <Bodies>
-      <body radius="0.02" for_ragdoll_only="1" pos_x="0" pos_y="0.01" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.06" pos2_z="0"/>
+      <body radius="0.025" for_ragdoll_only="1" pos_x="0" pos_y="0.01875" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.065" pos2_z="0"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="100" bone_cone_max="360" bone_twist_limit="180" name="hb_item_r">
      <Bodies>
-      <body radius="0.01" for_ragdoll_only="1" pos_x="0" pos_y="-0.00" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
+      <body radius="0.015" for_ragdoll_only="1" pos_x="0" pos_y="-0.00625002" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
      </Bodies>
     </Bone>
    </Bones>
@@ -303,81 +303,81 @@
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="-20" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.08" pos_x="-0.00" pos_y="0.09" pos_z="0.06" pos2_x="-0.00" type="capsule" pos2_y="0.43" pos2_z="0.04"/>
+      <body radius="0.085" pos_x="-0.00999998" pos_y="0.09" pos_z="0.06" pos2_x="-0.00999992" type="capsule" pos2_y="0.43" pos2_z="0.04"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_l">
      <Bodies>
-      <body radius="0.06" pos_x="-0.00" pos_y="0.07" pos_z="0.04" pos2_x="-0.00" type="capsule" pos2_y="0.45" pos2_z="0.02"/>
+      <body radius="0.06" pos_x="-0.00999989" pos_y="0.07" pos_z="0.04" pos2_x="-0.00999983" type="capsule" pos2_y="0.45" pos2_z="0.02"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="20" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.08" pos_x="0.03" pos_y="0.08" pos_z="0.06" pos2_x="0.01" type="capsule" pos2_y="0.43" pos2_z="0.04"/>
+      <body radius="0.085" pos_x="0.03" pos_y="0.0899999" pos_z="0.06" pos2_x="0.0100001" type="capsule" pos2_y="0.43" pos2_z="0.04"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.01" pos_y="0.06" pos_z="0.03" pos2_x="0.01" type="capsule" pos2_y="0.44" pos2_z="0.02"/>
+      <body radius="0.0599999" pos_x="0.0100001" pos_y="0.0699994" pos_z="0.0399999" pos2_x="0.0100002" type="capsule" pos2_y="0.449999" pos2_z="0.02"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="25" name="hb_spine">
      <Bodies>
-      <body radius="0.13" pos_x="0.03" pos_y="0.12" pos_z="-0.02" pos2_x="-0.02" type="capsule" pos2_y="0.12" pos2_z="-0.02"/>
+      <body radius="0.13" pos_x="0.03" pos_y="0.12" pos_z="-0.02" pos2_x="-0.025" type="capsule" pos2_y="0.12" pos2_z="-0.0200001"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.12" pos_x="-0.08" pos_y="0.11" pos_z="-0.05" pos2_x="0.08" type="capsule" pos2_y="0.11" pos2_z="-0.05"/>
+      <body radius="0.12" pos_x="-0.0850001" pos_y="0.11" pos_z="-0.0500002" pos2_x="0.0850001" type="capsule" pos2_y="0.11" pos2_z="-0.0500001"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="60" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.08" pos_x="0" pos_y="0.03" pos_z="0.04" pos2_x="0" type="capsule" pos2_y="0.14" pos2_z="0.04"/>
+      <body radius="0.0800001" pos_x="0" pos_y="0.0399859" pos_z="0.048996" pos2_x="0" type="capsule" pos2_y="0.149986" pos2_z="0.048996"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.06" pos_x="-0.03" pos_y="0.08" pos_z="0.01" pos2_x="-0.01" type="capsule" pos2_y="0.13" pos2_z="0.00"/>
+      <body radius="0.06" pos_x="-0.0355277" pos_y="0.0800001" pos_z="0.0139449" pos2_x="-0.0161572" type="capsule" pos2_y="0.138111" pos2_z="0.00425965"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.02" pos_y="0.04" pos_z="-0.00" pos2_x="-0.00" type="capsule" pos2_y="0.2" pos2_z="-0.00"/>
+      <body radius="0.0550001" pos_x="-0.0299998" pos_y="0.0400001" pos_z="-0.00999939" pos2_x="-0.00999968" type="capsule" pos2_y="0.2" pos2_z="-0.00999928"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.00" pos_y="0.01" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0450001" pos_x="-0.00999962" pos_y="0.0100002" pos_z="-0.00999928" pos2_x="0.0100006" type="capsule" pos2_y="0.24" pos2_z="-0.00999892"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.06" pos_x="0.03" pos_y="0.08" pos_z="0.01" pos2_x="0.01" type="capsule" pos2_y="0.13" pos2_z="0.00"/>
+      <body radius="0.06" pos_x="0.0355277" pos_y="0.0800001" pos_z="0.0139449" pos2_x="0.0161572" type="capsule" pos2_y="0.138111" pos2_z="0.00425965"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.03" pos_y="0.04" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.20" pos2_z="-0.00"/>
+      <body radius="0.0550001" pos_x="0.0300005" pos_y="0.0400004" pos_z="-0.00999963" pos2_x="0.0100008" type="capsule" pos2_y="0.200001" pos2_z="-0.00999951"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.01" pos_y="0.01" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0450001" pos_x="0.010001" pos_y="0.0100006" pos_z="-0.00999951" pos2_x="0.0100014" type="capsule" pos2_y="0.240001" pos2_z="-0.00999963"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="360" bone_twist_limit="180" name="hb_hand_r">
      <Bodies>
-      <body radius="0.02" for_ragdoll_only="1" pos_x="0" pos_y="0.01" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.06" pos2_z="0"/>
+      <body radius="0.025" for_ragdoll_only="1" pos_x="0" pos_y="0.01875" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.065" pos2_z="0"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="100" bone_cone_max="360" bone_twist_limit="180" name="hb_item_r">
      <Bodies>
-      <body radius="0.01" for_ragdoll_only="1" pos_x="0" pos_y="-0.00" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
+      <body radius="0.015" for_ragdoll_only="1" pos_x="0" pos_y="-0.00625002" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
      </Bodies>
     </Bone>
    </Bones>
@@ -386,86 +386,86 @@
    <Bones>
     <Bone bone_mass="15" bone_cone_max="30" bone_twist_limit="20" name="hb_abdomen">
      <Bodies>
-      <body radius="0.12" pos_x="-0.05" pos_y="0.05" pos_z="-0.02" pos2_x="0.05" type="capsule" pos2_y="0.05" pos2_z="-0.02"/>
+      <body radius="0.128" pos_x="-0.0575" pos_y="0.05" pos_z="-0.02" pos2_x="0.0575" type="capsule" pos2_y="0.05" pos2_z="-0.02"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="-20" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.07" pos_x="0.01" pos_y="0.11" pos_z="0.02" pos2_x="0.06" type="capsule" pos2_y="0.42" pos2_z="-0.02"/>
+      <body radius="0.078" pos_x="0.016468" pos_y="0.115353" pos_z="0.0247526" pos2_x="0.0620023" type="capsule" pos2_y="0.425901" pos2_z="-0.0237066"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_l">
      <Bodies>
-      <body radius="0.06" pos_x="-0.01" pos_y="0.07" pos_z="0.04" pos2_x="-0.03" type="capsule" pos2_y="0.44" pos2_z="0.13"/>
+      <body radius="0.06" pos_x="-0.0160914" pos_y="0.0759983" pos_z="0.0407078" pos2_x="-0.0359083" type="capsule" pos2_y="0.444049" pos2_z="0.135292"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="30" rotate_up="20" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.07" pos_x="-0.01" pos_y="0.11" pos_z="0.02" pos2_x="-0.06" type="capsule" pos2_y="0.42" pos2_z="-0.02"/>
+      <body radius="0.078" pos_x="-0.016468" pos_y="0.115353" pos_z="0.0247526" pos2_x="-0.0620023" type="capsule" pos2_y="0.425901" pos2_z="-0.0237066"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="15" bone_cone_max="5" bone_twist_limit="45" rotate_side="90" name="hb_calf_r">
      <Bodies>
-      <body radius="0.06" pos_x="0.01" pos_y="0.07" pos_z="0.04" pos2_x="0.03" type="capsule" pos2_y="0.44" pos2_z="0.13"/>
+      <body radius="0.06" pos_x="0.0160914" pos_y="0.0759983" pos_z="0.0407078" pos2_x="0.0359083" type="capsule" pos2_y="0.444049" pos2_z="0.135292"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="25" name="hb_spine">
      <Bodies>
-      <body radius="0.14" pos_x="0.05" pos_y="0.1" pos_z="0.02" pos2_x="-0.05" type="capsule" pos2_y="0.1" pos2_z="0.02"/>
+      <body radius="0.14" pos_x="0.0525" pos_y="0.1" pos_z="0.02" pos2_x="-0.0525" type="capsule" pos2_y="0.1" pos2_z="0.02"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="10" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.12" pos_x="-0.07" pos_y="0.11" pos_z="-1.3" pos2_x="0.07" type="capsule" pos2_y="0.11" pos2_z="-1.3"/>
+      <body radius="0.123" pos_x="-0.0775001" pos_y="0.11" pos_z="-1.3411e-07" pos2_x="0.0775001" type="capsule" pos2_y="0.11" pos2_z="-1.3411e-07"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="60" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.07" pos_x="0" pos_y="0.04" pos_z="0.06" pos2_x="0" type="capsule" pos2_y="0.15" pos2_z="0.03"/>
+      <body radius="0.0700001" pos_x="0" pos_y="0.0488758" pos_z="0.0677827" pos2_x="0" type="capsule" pos2_y="0.155185" pos2_z="0.0396779"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.06" pos_x="-0.04" pos_y="0.11" pos_z="0.01" pos2_x="-0.04" type="capsule" pos2_y="0.14" pos2_z="0.01"/>
+      <body radius="0.0690001" pos_x="-0.04" pos_y="0.11075" pos_z="0.01" pos2_x="-0.04" type="capsule" pos2_y="0.143" pos2_z="0.01"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.05" pos_x="-0.02" pos_y="0.04" pos_z="-0.00" pos2_x="-0.00" type="capsule" pos2_y="0.2" pos2_z="-0.00"/>
+      <body radius="0.0550001" pos_x="-0.0299998" pos_y="0.0400001" pos_z="-0.00999939" pos2_x="-0.00999968" type="capsule" pos2_y="0.2" pos2_z="-0.00999928"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.04" pos_x="-0.00" pos_y="0.01" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0450001" pos_x="-0.00999962" pos_y="0.0100002" pos_z="-0.00999928" pos2_x="0.0100006" type="capsule" pos2_y="0.24" pos2_z="-0.00999892"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="8" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.06" pos_x="0.04" pos_y="0.11" pos_z="0.01" pos2_x="0.04" type="capsule" pos2_y="0.14" pos2_z="0.01"/>
+      <body radius="0.0690001" pos_x="0.04" pos_y="0.11075" pos_z="0.01" pos2_x="0.04" type="capsule" pos2_y="0.143" pos2_z="0.01"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="4" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.05" pos_x="0.03" pos_y="0.04" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.20" pos2_z="-0.00"/>
+      <body radius="0.0550001" pos_x="0.0300005" pos_y="0.0400004" pos_z="-0.00999963" pos2_x="0.0100008" type="capsule" pos2_y="0.200001" pos2_z="-0.00999951"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="5" bone_twist_limit="45" rotate_up="45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.04" pos_x="0.01" pos_y="0.01" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.24" pos2_z="-0.00"/>
+      <body radius="0.0450001" pos_x="0.010001" pos_y="0.0100006" pos_z="-0.00999951" pos2_x="0.0100014" type="capsule" pos2_y="0.240001" pos2_z="-0.00999963"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="2" bone_cone_max="360" bone_twist_limit="180" name="hb_hand_r">
      <Bodies>
-      <body radius="0.02" for_ragdoll_only="1" pos_x="0" pos_y="0.01" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.06" pos2_z="0"/>
+      <body radius="0.025" for_ragdoll_only="1" pos_x="0" pos_y="0.01875" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.065" pos2_z="0"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="100" bone_cone_max="360" bone_twist_limit="180" name="hb_item_r">
      <Bodies>
-      <body radius="0.01" for_ragdoll_only="1" pos_x="0" pos_y="-0.00" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
+      <body radius="0.015" for_ragdoll_only="1" pos_x="0" pos_y="-0.00625002" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.17" pos2_z="0"/>
      </Bodies>
     </Bone>
    </Bones>
@@ -474,149 +474,149 @@
    <Bones>
     <Bone bone_mass="20" bone_cone_max="30" bone_twist_limit="20" name="hb_abdomen">
      <Bodies>
-      <body radius="0.25" pos_x="-0.06" pos_y="0.05" pos_z="0.00" pos2_x="0.06" type="capsule" pos2_y="0.05" pos2_z="0.00"/>
+      <body radius="0.25" pos_x="-0.0677" pos_y="0.0541" pos_z="0.000400007" pos2_x="0.0677" type="capsule" pos2_y="0.0541" pos2_z="0.000400007"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="20" bone_cone_max="70" bone_twist_limit="30" name="hb_thigh_l">
      <Bodies>
-      <body radius="0.14" pos_x="0.07" pos_y="0.24" pos_z="0.01" pos2_x="0.15" type="capsule" pos2_y="0.64" pos2_z="-0.27"/>
+      <body radius="0.14" pos_x="0.075332" pos_y="0.240913" pos_z="0.0178245" pos2_x="0.15619" type="capsule" pos2_y="0.641176" pos2_z="-0.279702"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="12" bone_cone_max="5" bone_twist_limit="45" rotate_side="45" name="hb_calf_l">
      <Bodies>
-      <body radius="0.11" pos_x="0.03" pos_y="0.00" pos_z="0.01" pos2_x="-0.00" type="capsule" pos2_y="0.76" pos2_z="0.24"/>
+      <body radius="0.114" pos_x="0.0369417" pos_y="0.00750476" pos_z="0.0185336" pos2_x="-0.00670243" type="capsule" pos2_y="0.769377" pos2_z="0.249301"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_l"/>
     <Bone bone_mass="20" bone_cone_max="70" bone_twist_limit="30" name="hb_thigh_r">
      <Bodies>
-      <body radius="0.14" pos_x="-0.07" pos_y="0.24" pos_z="0.01" pos2_x="-0.15" type="capsule" pos2_y="0.64" pos2_z="-0.27"/>
+      <body radius="0.14" pos_x="-0.075332" pos_y="0.240913" pos_z="0.0178245" pos2_x="-0.15619" type="capsule" pos2_y="0.641176" pos2_z="-0.279702"/>
      </Bodies>
     </Bone>
     <Bone bone_cone_min="-5" socket_dir_x="0.9" socket_dir_y="0.0" bone_mass="12" bone_cone_max="5" bone_twist_limit="45" rotate_side="45" name="hb_calf_r">
      <Bodies>
-      <body radius="0.11" pos_x="-0.03" pos_y="0.00" pos_z="0.01" pos2_x="0.00" type="capsule" pos2_y="0.76" pos2_z="0.24"/>
+      <body radius="0.114" pos_x="-0.0369417" pos_y="0.00750476" pos_z="0.0185336" pos2_x="0.00670243" type="capsule" pos2_y="0.769377" pos2_z="0.249301"/>
      </Bodies>
     </Bone>
     <Bone name="hb_foot_r"/>
     <Bone bone_mass="20" bone_cone_max="30" bone_twist_limit="20" name="hb_spine">
      <Bodies>
-      <body radius="0.22" pos_x="0" pos_y="-0.12" pos_z="-0.01" pos2_x="0" type="capsule" pos2_y="0.01" pos2_z="0.00"/>
+      <body radius="0.225" pos_x="0" pos_y="-0.129545" pos_z="-0.0195661" pos2_x="0" type="capsule" pos2_y="0.0145008" pos2_z="0.00572931"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="20" bone_cone_max="30" bone_twist_limit="20" name="hb_thorax">
      <Bodies>
-      <body radius="0.34" pos_x="-0.11" pos_y="0.03" pos_z="0.06" pos2_x="0.11" type="capsule" pos2_y="0.03" pos2_z="0.06"/>
+      <body radius="0.34" pos_x="-0.117786" pos_y="0.0318999" pos_z="0.064948" pos2_x="0.117786" type="capsule" pos2_y="0.0318999" pos2_z="0.064948"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="70" bone_twist_limit="60" name="hb_head">
      <Bodies>
-      <body radius="0.14" pos_x="0" pos_y="-0.06" pos_z="0.18" pos2_x="0" type="capsule" pos2_y="0.01" pos2_z="0.10"/>
+      <body radius="0.14" pos_x="0" pos_y="-0.0616895" pos_z="0.186807" pos2_x="0" type="capsule" pos2_y="0.0140826" pos2_z="0.108167"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="6" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_l">
      <Bodies>
-      <body radius="0.16" pos_x="0.02" pos_y="0.00" pos_z="0.01" pos2_x="0.03" type="capsule" pos2_y="0.03" pos2_z="-0.00"/>
+      <body radius="0.165" pos_x="0.0230948" pos_y="0.00750552" pos_z="0.010139" pos2_x="0.032278" type="capsule" pos2_y="0.0341475" pos2_z="-0.00855121"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_l">
      <Bodies>
-      <body radius="0.10" pos_x="-0.02" pos_y="0.13" pos_z="0.00" pos2_x="-0.00" type="capsule" pos2_y="0.44" pos2_z="0.01"/>
+      <body radius="0.108" pos_x="-0.0243053" pos_y="0.130626" pos_z="0.00384631" pos2_x="-0.00040278" type="capsule" pos2_y="0.441618" pos2_z="0.0125276"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="1" bone_mass="4" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_l">
      <Bodies>
-      <body radius="0.09" pos_x="0.01" pos_y="0.06" pos_z="-0.00" pos2_x="0.01" type="capsule" pos2_y="0.84" pos2_z="-0.03"/>
+      <body radius="0.092" pos_x="0.018242" pos_y="0.0616452" pos_z="-0.00940714" pos2_x="0.0151294" type="capsule" pos2_y="0.844429" pos2_z="-0.0331532"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_l"/>
     <Bone name="hb_item_l"/>
     <Bone bone_mass="6" bone_cone_max="10" bone_twist_limit="50" name="hb_shoulder_r">
      <Bodies>
-      <body radius="0.16" pos_x="-0.02" pos_y="0.00" pos_z="0.01" pos2_x="-0.03" type="capsule" pos2_y="0.03" pos2_z="-0.00"/>
+      <body radius="0.165" pos_x="-0.0230948" pos_y="0.00750552" pos_z="0.010139" pos2_x="-0.032278" type="capsule" pos2_y="0.0341475" pos2_z="-0.00855121"/>
      </Bodies>
     </Bone>
     <Bone bone_mass="8" bone_cone_max="40" bone_twist_limit="20" rotate_side="-60" name="hb_upperarm_r">
      <Bodies>
-      <body radius="0.10" pos_x="0.02" pos_y="0.13" pos_z="0.00" pos2_x="0.00" type="capsule" pos2_y="0.44" pos2_z="0.01"/>
+      <body radius="0.108" pos_x="0.0243053" pos_y="0.130626" pos_z="0.00384631" pos2_x="0.00040278" type="capsule" pos2_y="0.441618" pos2_z="0.0125276"/>
      </Bodies>
     </Bone>
     <Bone socket_dir_z="-1" bone_mass="4" bone_cone_max="5" bone_twist_limit="45" rotate_up="-45" name="hb_forearm_r">
      <Bodies>
-      <body radius="0.09" pos_x="-0.01" pos_y="0.06" pos_z="-0.00" pos2_x="-0.01" type="capsule" pos2_y="0.64" pos2_z="-0.02"/>
+      <body radius="0.092" pos_x="-0.018242" pos_y="0.0616452" pos_z="-0.00940714" pos2_x="-0.0159243" type="capsule" pos2_y="0.644522" pos2_z="-0.0270889"/>
      </Bodies>
     </Bone>
     <Bone name="hb_hand_r">
      <Bodies>
-      <body radius="0.07" pos_x="0" pos_y="0.15" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.31" pos2_z="0"/>
+      <body radius="0.075" pos_x="0" pos_y="0.15375" pos_z="0" pos2_x="0" type="capsule" pos2_y="0.31" pos2_z="0"/>
      </Bodies>
     </Bone>
     <Bone name="hb_item_r">
      <Bodies>
-      <body radius="0.03" pos_x="0" pos_y="-0.05" pos_z="-3.52" pos2_x="0" type="capsule" pos2_y="0.29" pos2_z="6.38"/>
+      <body radius="0.035" pos_x="0" pos_y="-0.05625" pos_z="-3.5243e-09" pos2_x="0" type="capsule" pos2_y="0.29" pos2_z="6.38668e-09"/>
      </Bodies>
     </Bone>
    </Bones>
   </Skeleton>
   <Skeleton name="skel_horse">
     <Bones>
-      <Bone name="hrsb_pelvis" 	bone_mass="100"> <Bodies> <body type="capsule" radius="0.27" pos_y="0.02" pos2_y="0.46" pos_z="0.0" pos2_z="-0.01" /> </Bodies></Bone>
+      <Bone name="hrsb_pelvis" 	bone_mass="100"> <Bodies> <body type="capsule" radius="0.27" pos_y="0.02" pos2_y="0.465241" pos_z="0.0" pos2_z="-0.019414" /> </Bodies></Bone>
       
 	  <Bone name="hrsb_spine_1"></Bone>
-      <Bone name="hrsb_spine_2" bone_mass="120"    plane_dir_x="1"  socket_dir_y="1" bone_twist_limit_min="10" bone_cone_min="-10" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.24" pos_y="0.08" pos2_y="0.47" pos_z="-0.21" pos2_z="-0.05" /> </Bodies></Bone>
+      <Bone name="hrsb_spine_2" bone_mass="120"    plane_dir_x="1"  socket_dir_y="1" bone_twist_limit_min="10" bone_cone_min="-10" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.24" pos_y="0.088658" pos2_y="0.471090" pos_z="-0.219485" pos2_z="-0.05" /> </Bodies></Bone>
       <Bone name="hrsb_spine_3"></Bone>
       
-	  <Bone name="hrsb_neck_1"  bone_mass="30"     plane_dir_x="1"  socket_dir_z="0.2" socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-30" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.18" pos_y="-0.05" pos2_y="0.08" pos_z="0.0" pos2_z="0.00" /> </Bodies></Bone>
-      <Bone name="hrsb_neck_2"  bone_mass="20"     plane_dir_x="1"  socket_dir_z="0.2" socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-30" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.12" pos_y="0.08" pos2_y="0.18" pos_z="0.0" pos2_z="0.00" /> </Bodies></Bone>
-      <Bone name="hrsb_neck_3"  bone_mass="40"     plane_dir_x="1"  socket_dir_z="1"   socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-40" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.1" pos_y="0.07" pos2_y="0.2" pos_z="0.00" pos2_z="-0.04" /> </Bodies></Bone>
+	  <Bone name="hrsb_neck_1"  bone_mass="30"     plane_dir_x="1"  socket_dir_z="0.2" socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-30" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.18" pos_y="-0.05" pos2_y="0.087653" pos_z="0.0" pos2_z="0.00000" /> </Bodies></Bone>
+      <Bone name="hrsb_neck_2"  bone_mass="20"     plane_dir_x="1"  socket_dir_z="0.2" socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-30" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.12" pos_y="0.087653" pos2_y="0.187653" pos_z="0.0" pos2_z="0.00000" /> </Bodies></Bone>
+      <Bone name="hrsb_neck_3"  bone_mass="40"     plane_dir_x="1"  socket_dir_z="1"   socket_dir_y="1"  bone_twist_limit_min="20"  bone_cone_min="-40" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.1" pos_y="0.078141" pos2_y="0.2" pos_z="0.005855" pos2_z="-0.04" /> </Bodies></Bone>
       
-	  <Bone name="hrsb_head"    bone_mass="15"     plane_dir_x="1"  socket_dir_z="-1"  socket_dir_y="1"  bone_twist_limit_min="30"  bone_cone_min="-20" bone_cone_max="20"><Bodies> <body type="capsule" radius="0.1" pos_y="0.05" pos2_y="0.35" pos_z="-0.04" pos2_z="-0.02" /> </Bodies></Bone>
+	  <Bone name="hrsb_head"    bone_mass="15"     plane_dir_x="1"  socket_dir_z="-1"  socket_dir_y="1"  bone_twist_limit_min="30"  bone_cone_min="-20" bone_cone_max="20"><Bodies> <body type="capsule" radius="0.1" pos_y="0.054818" pos2_y="0.35" pos_z="-0.044534" pos2_z="-0.02" /> </Bodies></Bone>
       
 	  <Bone name="hrsb_l_clavicle"></Bone>
       <Bone name="hrsb_l_upper_arm" bone_mass="15" plane_dir_x="-1"  bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" socket_dir_y="-1" bone_twist_limit_min="20" bone_cone_min="0" bone_cone_max="60"><Bodies> <body type="capsule" radius="0.11" pos_x="0.03" pos2_x="0.01" pos_y="0.05" pos2_y="0.23" pos_z="-0.1" pos2_z="-0.15" /> </Bodies></Bone>
-      <Bone name="hrsb_l_forearm"   bone_mass="12" plane_dir_x="-1"  socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-50" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.06" pos_x="0.01" pos2_x="0.02" pos_y="-0.03" pos2_y="0.28" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
-      <Bone name="hrsb_l_hand"      bone_mass="8"  plane_dir_x="-1"  socket_dir_z="-1" bone_twise_limit="30" bone_cone_min="-70" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="0.02" pos2_x="0.01" pos_y="-0.00" pos2_y="0.33" pos_z="-0.05" pos2_z="-0.03" /> </Bodies></Bone>
+      <Bone name="hrsb_l_forearm"   bone_mass="12" plane_dir_x="-1"  socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-50" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.065" pos_x="0.01" pos2_x="0.02" pos_y="-0.03" pos2_y="0.28" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
+      <Bone name="hrsb_l_hand"      bone_mass="8"  plane_dir_x="-1"  socket_dir_z="-1" bone_twise_limit="30" bone_cone_min="-70" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="0.02" pos2_x="0.01" pos_y="-0.005" pos2_y="0.33" pos_z="-0.05" pos2_z="-0.03" /> </Bodies></Bone>
       <Bone name="hrsb_l_front_hoof"></Bone>
       
 	  <Bone name="hrsb_r_clavicle"></Bone>
       <Bone name="hrsb_r_upper_arm" bone_mass="15" plane_dir_x="1"   bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" socket_dir_y="1" bone_twist_limit_min="20" bone_cone_min="-60" bone_cone_max="0"><Bodies> <body type="capsule" radius="0.11" pos_x="-0.03" pos2_x="-0.02" pos_y="0.05" pos2_y="0.23" pos_z="-0.1" pos2_z="-0.15" /> </Bodies></Bone>
-      <Bone name="hrsb_r_forearm"   bone_mass="12" plane_dir_x="1"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-10" bone_cone_max="50"><Bodies> <body type="capsule" radius="0.06" pos_x="0.0" pos2_x="0.0" pos_y="-0.03" pos2_y="0.28" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
-      <Bone name="hrsb_r_hand"      bone_mass="8"  plane_dir_x="1"   socket_dir_z="-1" bone_twise_limit="30" bone_cone_min="-5"  bone_cone_max="70"><Bodies> <body type="capsule" radius="0.04" pos_x="0.0" pos2_x="0.0" pos_y="-0.00" pos2_y="0.33" pos_z="-0.05" pos2_z="-0.03" /> </Bodies></Bone>
+      <Bone name="hrsb_r_forearm"   bone_mass="12" plane_dir_x="1"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-10" bone_cone_max="50"><Bodies> <body type="capsule" radius="0.065" pos_x="0.0" pos2_x="0.0" pos_y="-0.03" pos2_y="0.28" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
+      <Bone name="hrsb_r_hand"      bone_mass="8"  plane_dir_x="1"   socket_dir_z="-1" bone_twise_limit="30" bone_cone_min="-5"  bone_cone_max="70"><Bodies> <body type="capsule" radius="0.04" pos_x="0.0" pos2_x="0.0" pos_y="-0.005" pos2_y="0.33" pos_z="-0.05" pos2_z="-0.03" /> </Bodies></Bone>
       <Bone name="hrsb_r_front_hoof"></Bone>
       
-	  <Bone name="hrsb_l_thigh"     bone_mass="20" plane_dir_x="-1"  bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-30" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.12" pos_x="0.00" pos2_x="0.00" pos_y="0.05" pos2_y="0.31" pos_z="0.00" pos2_z="0.00" /> </Bodies></Bone>
-      <Bone name="hrsb_l_calf"      bone_mass="12" plane_dir_x="-1"  socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-30" bone_cone_max="35"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.01" pos2_x="0.01" pos_y="0.05" pos2_y="0.4" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
+	  <Bone name="hrsb_l_thigh"     bone_mass="20" plane_dir_x="-1"  bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-30" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.12" pos_x="0.001969" pos2_x="0.001169" pos_y="0.050497" pos2_y="0.310491" pos_z="0.006680" pos2_z="0.001765" /> </Bodies></Bone>
+      <Bone name="hrsb_l_calf"      bone_mass="12" plane_dir_x="-1"  socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-30" bone_cone_max="35"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.01" pos2_x="0.01" pos_y="0.055" pos2_y="0.4" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
       <Bone name="hrsb_l_foot"      bone_mass="8"  plane_dir_x="-1"  socket_dir_z="-1" bone_twist_limit_min="30" bone_cone_min="-5"  bone_cone_max="60"><Bodies> <body type="capsule" radius="0.04" pos_x="0.0" pos2_x="0.01" pos_y="0.0" pos2_y="0.4" pos_z="-0.07" pos2_z="-0.03" /> </Bodies></Bone>
       <Bone name="hrsb_l_back_hoof"></Bone>
       
-	  <Bone name="hrsb_r_thigh"     bone_mass="20" plane_dir_x="1"   bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-40" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.12" pos_x="-0.00" pos2_x="-0.00" pos_y="0.05" pos2_y="0.31" pos_z="0.00" pos2_z="0.00" /> </Bodies></Bone>
-      <Bone name="hrsb_r_calf"      bone_mass="12" plane_dir_x="1"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-35" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.06" pos_x="0.01" pos2_x="-0.01" pos_y="0.05" pos2_y="0.4" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
+	  <Bone name="hrsb_r_thigh"     bone_mass="20" plane_dir_x="1"   bone_plane_min="-25" bone_plane_max="25"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-40" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.12" pos_x="-0.005" pos2_x="-0.005" pos_y="0.050497" pos2_y="0.310491" pos_z="0.006680" pos2_z="0.001765" /> </Bodies></Bone>
+      <Bone name="hrsb_r_calf"      bone_mass="12" plane_dir_x="1"   socket_dir_z="-1" bone_twist_limit_min="20" bone_cone_min="-35" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.06" pos_x="0.01" pos2_x="-0.01" pos_y="0.055" pos2_y="0.4" pos_z="-0.05" pos2_z="-0.05" /> </Bodies></Bone>
       <Bone name="hrsb_r_foot"      bone_mass="8"  plane_dir_x="1"   socket_dir_z="-1" bone_twist_limit_min="30" bone_cone_min="-60" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="0.0" pos2_x="-0.01" pos_y="0.0" pos2_y="0.4" pos_z="-0.07" pos2_z="-0.03" /> </Bodies></Bone>
       <Bone name="hrsb_r_back_hoof"></Bone>
       
 	  <Bone name="hrsb_tail_1"  bone_mass="2"         bone_twist_limit_min="-5" bone_twist_limit_max="5"  plane_dir_x="1" bone_plane_min="-45" bone_plane_max="45"     socket_dir_y="-1"     socket_dir_z="-1"     bone_cone_min = "-60"    bone_cone_max="60"> <Bodies> <body for_ragdoll_only="1" type="capsule" radius="0.05" pos_x="0.01" pos2_x="0.01" pos_y="0.05" pos2_y="0.2"/></Bodies></Bone>
       <Bone name="hrsb_tail_2"  bone_mass="1"         bone_twist_limit_min="-5" bone_twist_limit_max="5"  plane_dir_x="1" bone_plane_min="-75" bone_plane_max="75"     socket_dir_z="-1"     bone_cone_min = "-60"    bone_cone_max="65"> <Bodies> <body for_ragdoll_only="1" type="capsule" radius="0.05" pos2_z="-0.05" pos_y="0.05" pos2_y="0.4"/></Bodies></Bone>
 	  
-      <!--<Bone name="hrsb_abdomen" bone_mass="100"> <Bodies> <body type="capsule" radius="0.27" pos_y="0.17" pos2_y="0.55" pos_z="-0.04" pos2_z="-0.10" /> </Bodies></Bone>
-      <Bone name="hrsb_thorax" bone_mass="120" bone_twist_limit="10" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.27" pos_y="0.03" pos2_y="0.33" pos_z="-0.31" pos2_z="-0.31" /> </Bodies></Bone>
-      <Bone name="hrsb_neck" bone_mass="40" bone_twist_limit="20" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.16" pos_y="-0.06" pos2_y="0.20" pos_z="0.03" pos2_z="0.04" /> </Bodies></Bone>
-      <Bone name="hrsb_neck_2" bone_mass="40" bone_twist_limit="20" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.11" pos_y="0.00" pos2_y="0.33" pos_z="0.06" pos2_z="0.04" /> </Bodies></Bone>
-      <Bone name="hrsb_head" bone_mass="15" socket_dir_x="1" bone_twist_limit="30" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.09" pos_y="-0.01" pos2_y="0.40" pos_z="0.11" pos2_z="0.13" /> </Bodies></Bone>
-      <Bone name="hrsb_uarm_l" bone_mass="15" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.09" pos_x="-0.03" pos2_x="-0.03" pos_y="0.04" pos2_y="0.30" pos_z="-0.02" pos2_z="0.03" /> </Bodies></Bone>
-      <Bone name="hrsb_forearm_l" bone_mass="12" socket_dir_x="1" rotate_side="20" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="0.00" pos2_x="0.00" pos_y="0.02" pos2_y="0.35" pos_z="0.03" pos2_z="0.01" /> </Bodies></Bone>
-      <Bone name="hrsb_f_foot_l" bone_mass="8" socket_dir_x="1" rotate_side="-30" bone_twise_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="0.00" pos2_x="0.00" pos_y="-0.00" pos2_y="0.40" pos_z="-0.01" pos2_z="0.06" /> </Bodies></Bone>
+      <!--<Bone name="hrsb_abdomen" bone_mass="100"> <Bodies> <body type="capsule" radius="0.2751" pos_y="0.1745" pos2_y="0.5548" pos_z="-0.0418" pos2_z="-0.1008" /> </Bodies></Bone>
+      <Bone name="hrsb_thorax" bone_mass="120" bone_twist_limit="10" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.2744" pos_y="0.033100" pos2_y="0.334562" pos_z="-0.318066" pos2_z="-0.318066" /> </Bodies></Bone>
+      <Bone name="hrsb_neck" bone_mass="40" bone_twist_limit="20" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.16" pos_y="-0.062336" pos2_y="0.203688" pos_z="0.037761" pos2_z="0.041944" /> </Bodies></Bone>
+      <Bone name="hrsb_neck_2" bone_mass="40" bone_twist_limit="20" bone_cone_max="40"><Bodies> <body type="capsule" radius="0.115" pos_y="0.006908" pos2_y="0.336504" pos_z="0.062009" pos2_z="0.045428" /> </Bodies></Bone>
+      <Bone name="hrsb_head" bone_mass="15" socket_dir_x="1" bone_twist_limit="30" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.09" pos_y="-0.012795" pos2_y="0.406755" pos_z="0.115308" pos2_z="0.135087" /> </Bodies></Bone>
+      <Bone name="hrsb_uarm_l" bone_mass="15" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.09" pos_x="-0.036" pos2_x="-0.036" pos_y="0.046481" pos2_y="0.309956" pos_z="-0.026114" pos2_z="0.032735" /> </Bodies></Bone>
+      <Bone name="hrsb_forearm_l" bone_mass="12" socket_dir_x="1" rotate_side="20" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="0.0097" pos2_x="0.0097" pos_y="0.023237" pos2_y="0.352644" pos_z="0.038240" pos2_z="0.018353" /> </Bodies></Bone>
+      <Bone name="hrsb_f_foot_l" bone_mass="8" socket_dir_x="1" rotate_side="-30" bone_twise_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="0.006" pos2_x="0.006" pos_y="-0.007820" pos2_y="0.405251" pos_z="-0.012129" pos2_z="0.067458" /> </Bodies></Bone>
       <Bone name="hrsb_f_hoof_l"></Bone>
-      <Bone name="hrsb_uarm_r" bone_mass="15" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.1" pos_x="0.03" pos2_x="0.03" pos_y="0.04" pos2_y="0.30" pos_z="-0.02" pos2_z="0.03" /> </Bodies></Bone>
-      <Bone name="hrsb_forearm_r" bone_mass="12" socket_dir_x="1" rotate_side="20" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.00" pos2_x="-0.00" pos_y="0.02" pos2_y="0.35" pos_z="0.03" pos2_z="0.01" /> </Bodies></Bone>
-      <Bone name="hrsb_f_foot_r" bone_mass="8" socket_dir_x="1" rotate_side="-30" bone_twise_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="-0.00" pos2_x="-0.00" pos_y="-0.00" pos2_y="0.40" pos_z="-0.01" pos2_z="0.06" /> </Bodies></Bone>
+      <Bone name="hrsb_uarm_r" bone_mass="15" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="30"><Bodies> <body type="capsule" radius="0.1" pos_x="0.036" pos2_x="0.036" pos_y="0.046481" pos2_y="0.309956" pos_z="-0.026114" pos2_z="0.032735" /> </Bodies></Bone>
+      <Bone name="hrsb_forearm_r" bone_mass="12" socket_dir_x="1" rotate_side="20" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.0097" pos2_x="-0.0097" pos_y="0.023237" pos2_y="0.352644" pos_z="0.038240" pos2_z="0.018353" /> </Bodies></Bone>
+      <Bone name="hrsb_f_foot_r" bone_mass="8" socket_dir_x="1" rotate_side="-30" bone_twise_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.04" pos_x="-0.006" pos2_x="-0.006" pos_y="-0.007820" pos2_y="0.405251" pos_z="-0.012129" pos2_z="0.067458" /> </Bodies></Bone>
       <Bone name="hrsb_f_hoof_r"></Bone>
-      <Bone name="hrsb_thigh_l" bone_mass="20" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.1" pos_x="-0.01" pos2_x="-0.01" pos_y="0.10" pos2_y="0.40" pos_z="-0.00" pos2_z="-0.02" /> </Bodies></Bone>
-      <Bone name="hrsb_calf_l" bone_mass="12" socket_dir_x="1" rotate_side="-10" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="0.00" pos2_x="0.00" pos_y="0.08" pos2_y="0.46" pos_z="-0.03" pos2_z="-0.01" /> </Bodies></Bone>
-      <Bone name="hrsb_h_foot_l" bone_mass="8" socket_dir_x="1" rotate_side="15" bone_twist_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.05" pos_x="-0.00" pos2_x="-0.00" pos_y="-0.02" pos2_y="0.41" pos_z="-0.00" pos2_z="0.01" /> </Bodies></Bone>
+      <Bone name="hrsb_thigh_l" bone_mass="20" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.1" pos_x="-0.0106" pos2_x="-0.0185" pos_y="0.101887" pos2_y="0.400455" pos_z="-0.000387" pos2_z="-0.028649" /> </Bodies></Bone>
+      <Bone name="hrsb_calf_l" bone_mass="12" socket_dir_x="1" rotate_side="-10" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="0.0082" pos2_x="0.0082" pos_y="0.083453" pos2_y="0.462767" pos_z="-0.031844" pos2_z="-0.016474" /> </Bodies></Bone>
+      <Bone name="hrsb_h_foot_l" bone_mass="8" socket_dir_x="1" rotate_side="15" bone_twist_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.055" pos_x="-0.0093" pos2_x="-0.0093" pos_y="-0.022213" pos2_y="0.417122" pos_z="-0.006068" pos2_z="0.017894" /> </Bodies></Bone>
       <Bone name="hrsb_h_hoof_l"></Bone>
-      <Bone name="hrsb_thigh_r" bone_mass="20" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.1" pos_x="0.01" pos2_x="0.01" pos_y="0.10" pos2_y="0.40" pos_z="-0.00" pos2_z="-0.02" /> </Bodies></Bone>
-      <Bone name="hrsb_calf_r" bone_mass="12" socket_dir_x="1" rotate_side="-10" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.00" pos2_x="-0.00" pos_y="0.08" pos2_y="0.46" pos_z="-0.03" pos2_z="-0.01" /> </Bodies></Bone>
-      <Bone name="hrsb_h_foot_r" bone_mass="8" socket_dir_x="1" rotate_side="15" bone_twist_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.05" pos_x="0.00" pos2_x="0.00" pos_y="-0.02" pos2_y="0.41" pos_z="-0.00" pos2_z="0.01" /> </Bodies></Bone>
+      <Bone name="hrsb_thigh_r" bone_mass="20" socket_dir_x="1" bone_twist_limit="20" bone_cone_max="10"><Bodies> <body type="capsule" radius="0.1" pos_x="0.0106" pos2_x="0.0185" pos_y="0.101887" pos2_y="0.400455" pos_z="-0.000387" pos2_z="-0.028649" /> </Bodies></Bone>
+      <Bone name="hrsb_calf_r" bone_mass="12" socket_dir_x="1" rotate_side="-10" bone_twist_limit="20" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.06" pos_x="-0.0082" pos2_x="-0.0082" pos_y="0.083453" pos2_y="0.462767" pos_z="-0.031844" pos2_z="-0.016474" /> </Bodies></Bone>
+      <Bone name="hrsb_h_foot_r" bone_mass="8" socket_dir_x="1" rotate_side="15" bone_twist_limit="30" bone_cone_max="5"><Bodies> <body type="capsule" radius="0.055" pos_x="0.0093" pos2_x="0.0093" pos_y="-0.022213" pos2_y="0.417122" pos_z="-0.006068" pos2_z="0.017894" /> </Bodies></Bone>
       <Bone name="hrsb_h_hoof_r"></Bone>
       <Bone name="hrsb_tail_1"></Bone>
       <Bone name="hrsb_tail_2"></Bone>-->

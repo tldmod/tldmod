@@ -11131,9 +11131,14 @@ scripts = [
       (call_script, "script_party_copy", "p_collective_friends_backup", "p_collective_friends"),
       (call_script, "script_party_calculate_strength", "p_collective_friends", 0),
       (assign, "$g_starting_strength_friends", reg0),
-
-      (store_mul, "$g_strength_contribution_of_player","$g_starting_strength_main_party", 100), # reduce contribution if we are helping someone.
-      (val_div, "$g_strength_contribution_of_player","$g_starting_strength_friends"),
+      
+      (try_begin),
+        #swy-- don't divide by zero when entering West Emmet menu... probably deeper in the maze of code
+        (gt, "$g_starting_strength_friends", 0),
+        
+        (store_mul, "$g_strength_contribution_of_player","$g_starting_strength_main_party", 100), # reduce contribution if we are helping someone.
+        (val_div, "$g_strength_contribution_of_player","$g_starting_strength_friends"),
+      (try_end),
 
 #      (try_begin),
 #        (gt, "$g_ally_party", 0),
