@@ -6,9 +6,9 @@ str_s5_s_party| Grupo de {s5}
 str_s5_s_host| Hueste de {s5}
 str_given_by_s1_at_s2|Dado por {s1} en {s2}
 str_given_by_s1_in_wilderness|Dado por {s1} en el campo de batalla
-str_s7_raiders|{s7} Asaltantes
+str_s7_raiders|Asaltantes {s7}
 str_bandits_eliminated_by_another|Los  bandidos problemáticos han sido eliminados por otro grupo.
-str_msg_battle_won|¡Victoria! Pulsa tabulador para salir.
+str_msg_battle_won|¡Victoria! Pulsa Tab para salir...
 str_tutorial_map1|Este es el mapa de la Tierra Media. Haz clic izquierdo en el mapa para mover a tu grupo, entrar en una ciudad o seguir a otro grupo. El juego se pondrá en pausa cuando tu grupo no se esté moviendo, descansando o esperando. Para esperar solo tienes que mantener pulsada la barra espaciadora.
 str_accept|Aceptar
 str_charge|Carga
@@ -220,7 +220,7 @@ str_surname_13|{s50} de Morannon
 str_surname_14|{s50} de Cirith Ungol
 str_surname_15|{s50} de Osgiliath
 str_surname_16|{s50} de Moria
-str_surname_17|{s50} del Valle
+str_surname_17|{s50} de Valle
 str_surname_18|{s50} de Esgaroth
 str_surname_19|{s50} de Dol Guldur
 str_surname_20|{s50} de Gundabad
@@ -354,7 +354,7 @@ str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por momentos y la
 str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuáles son vuestros asuntos, {playername}. Permitidme explicaros por qué.
 str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los hombres mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
 str_npc6_backstory_a|Disculpa mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
-str_npc7_backstory_a|Que considerado al preguntar, {playername}. Estamos combatiendo las incursiones de hombres del este y orcos de Gundabad, por ahora nada que nuestros aliados del Valle y nosotros no podamos manejar.
+str_npc7_backstory_a|Eres muy considerado al preguntarlo, {playername}. Estamos combatiendo las incursiones de orientales y orcos de Gundabad, por ahora nada que nosotros o nuestros aliados de Valle no podamos manejar.
 str_npc8_backstory_a|Estoy seguro de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mi, sólo soy una curandera y herbolaria con modestas habilidades.
 str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento, y sus snagas ahora me dan caza. ¡Ese cerdo se lo estaba buscando! Una vez, nos emboscó una patrulla de pelos de paja... y perdió el control. "Retirada" gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga de su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
 str_npc10_backstory_a|¡Soy Durgash!
@@ -654,11 +654,11 @@ str_npc14_personalityclash2_speech_b|Odio a {s11}.
 str_npc15_personalityclash2_speech_b|Odio a {s11}.
 str_npc16_personalityclash2_speech_b|Odio a {s11}.
 str_npc17_personalityclash2_speech_b|Odio a {s11}.
-str_npc1_personalitymatch_speech|Habéis notado la gracia de movimientos de {s11} en nuestra última batalla? ¿La manera en que se mueve alrededor del enemigo antes de dar el golpe de gracia? Es como las historias antiguas, cuando las doncellas elfas demostraban tanta elegancia en el campo de batalla como en sus bellas cortes en los bosques.
+str_npc1_personalitymatch_speech|¿Habéis notado la gracia en los movimientos de {s11} en nuestra última batalla? ¿La forma en que rodea al enemigo antes de dar el golpe de gracia? Es como en las historias antiguas, cuando las doncellas elfas demostraban tanta elegancia en el campo de batalla como en sus bellas cortes de los bosques.
 str_npc2_personalitymatch_speech|Disculpadme, señor. Sólo estaba ayudando a {s11} con algunas pequeñas reparaciones a las armas después de esa última chatarra, e incluso se comprometió a enseñarme como mejorar mis golpes.
 str_npc3_personalitymatch_speech|¿No es la carga de una doncella guerrera de Rohan un peligro a tener en cuenta? Entiendo que nuestras mujeres son más útiles en el hogar, pero después de ver a {s11} derribar a los enemigos en la última batalla, comienzo a tener dudas.
 str_npc4_personalitymatch_speech|Una batalla gloriosa, señor, mis felicitaciones por la victoria. He notado como {s11} se encargaba silenciosamente de curar a los heridos y los enfermos, incluso de los enemigos caídos.
-str_npc5_personalitymatch_speech|¿Os había dicho que me cae bien {s11}?
+str_npc5_personalitymatch_speech|¿Te había dicho que me cae bien {s11}?
 str_npc6_personalitymatch_speech|{playername}, a pesar de que odio las guerras, no he podido dejar de admirar a mi señor {s11} cabalgando esplendorosamente y abalanzándose sobre el enemigo como un águila.
 str_npc7_personalitymatch_speech|¡Una sangrienta victoria, como a mí me gusta! Obtuve, sin embargo, una herida que {s11} ha curado amablemente.
 str_npc8_personalitymatch_speech|Otra gran victoria para vos, señor. Admiro vuestra habilidad para salvar las vidas de nuestros hombres. Guerreros como {s11} son realmente útiles en vuestros planes de batalla.
@@ -677,8 +677,8 @@ str_npc3_personalitymatch_speech_b|Señor, me gustaría pediros como un favor pe
 str_npc4_personalitymatch_speech_b|Salvar vidas es el acto más noble que existe, y siento amistad por esa alma caritativa, incluso siendo de mundos tan diferentes. 
 str_npc5_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc6_personalitymatch_speech_b|Me pregunto que edad tendrá él. ¿Quizás una docena de siglos más que yo? No importa, nunca lo comprenderíais.
-str_npc7_personalitymatch_speech_b|{s11} y sus compatriotas del Valle, aunque no se pueden comparar a los guerreros enanos, han probado ser aliados fiables en esta guerra. Se han portado como buenos amigos y compañeros, si se me permite decirlo.
-str_npc8_personalitymatch_speech_b|La gente del Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores a pesar de la diferencia de raza y de costumbres.
+str_npc7_personalitymatch_speech_b|{s11} y sus compatriotas de Valle, aunque no se pueden comparar a los guerreros enanos, han probado ser aliados fiables en esta guerra. Se han portado como buenos amigos y compañeros, si se me permite decirlo.
+str_npc8_personalitymatch_speech_b|La gente de Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores a pesar de la diferencia de raza y de costumbres.
 str_npc9_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc10_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc11_personalitymatch_speech_b|Me cae bien {s11}.
@@ -746,7 +746,7 @@ str_npc4_home_description|¿Dónde están ahora el caballo y su jinete? ¿Dónde
 str_npc5_home_description|Construido en el pasado por el Reino del Sur, ahora sirve de guarida para aquel que llamamos el Mago Blanco, conspirando, sin duda, para incrementar su poder a costa de otros.
 str_npc6_home_description|Nunca me había aventurado tan lejos, pero he oído a los exploradores de Greenwood decir que puede ser que encontremos Nazgûls aquí. Siento una presencia maligna, pero no se de qué se puede tratar. Es poderosa, sin embargo, así que estemos alerta.
 str_npc7_home_description|Viendo la desolación del lugar, y la cantidad de pisadas de orcos, temo por el valiente Balin y su expedición. Parece que Moria ha caído a manos del Enemigo así que debemos ir con cuidado.
-str_npc8_home_description|No suele suceder que, un mercader ambulante llega al mercado del Valle y me ofrece la mejor miel que jamás he probado; por alguna extraña razón me dice que ha sido "elaborada por los osos" y se ríe alegremente.
+str_npc8_home_description|No muy a menudo, un mercader ambulante llega al mercado de Valle y me ofrece la mejor miel que jamás he probado. Por alguna extraña razón me dice que ha sido "elaborada por osos" y se ríe alegremente.
 str_npc9_home_description|Las malditas murallas son demasiado altas y duras para que mi martillo las pueda romper. Me imagino que si alguna vez hacemos huir a los habitantes de la maldita ciudad de Edoras, correrán a esconderse detrás de estas murallas.
 str_npc10_home_description|¿Conocéis esa ciudad?
 str_npc11_home_description|¿Conocéis esa ciudad?
@@ -761,7 +761,7 @@ str_npc2_home_description_2|Se dice que ahora está lleno de temibles orcos, esp
 str_npc3_home_description_2|Si tenemos que cruzar Entwood, hagámoslo con rapidez y sigilo. No sé quién puede estar escuchando nuestras pisadas y no quiero descubrirlo.
 str_npc4_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos.
 str_npc5_home_description_2|Que esto sirva como recordatorio que incluso los más poderosos, incluso uno de los Istari, puede ser corrompido y caer en desgracia. Aquellos que tienen sed de poder pueden ser derrotados por el poder, así que no nos demoremos más tiempo.
-str_npc6_home_description_2|Siento la presencia de malvados ejércitos detrás de sus muros y listos para marchar a la guerra... ¿Contra la bella Lothlórien? ¿Contra los ciudadanos del Valle? ¿Contra mi tierra natal de Greenwood? No puedo saberlo, pero por favor haced todo lo posible para frustrar sus planes.
+str_npc6_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la bella Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero por favor haced todo lo posible para frustrar sus planes.
 str_npc7_home_description_2|Si la suerte de la guerra nos concede alguna vez el control sobre un gran ejército, deberíamos arriesgarnos a entrar a las Minas y saquear sus grandes riquezas.
 str_npc8_home_description_2|Puedo oler la delicada fragancia de muchas flores y veo a las abejas recolectar su néctar. Si no os importa, recogeré algunas hierbas para nuestro propio uso, sólo será un momento.
 str_npc9_home_description_2|No deberíamos deambular por aquí si no tenemos una gran horda Uruk-hai apoyándonos detrás. A no ser que quieras que cuelguen tu cabeza en una pica.
@@ -778,9 +778,9 @@ str_npc2_home_recap|Nací en Minas Tirith, dentro de una humilde, pero honrada f
 str_npc3_home_recap|Soy uno de los Eorlingas, o Rohirrim, como nos llaman los extranjeros.
 str_npc4_home_recap|No me parece divertido que os hayáis olvidado de ello tan fácilmente.
 str_npc5_home_recap|Saciaré vuestra curiosidad, pero no nos demoremos aquí.
-str_npc6_home_recap|Nací y crecí en Mirkwood, como un Elfo Silvano. El gran conocimiento de los bosques que tiene nuestra raza es conocido por toda la Tierra Media.
+str_npc6_home_recap|Nací y crecí en el Bosque Negro, como un Elfo Silvano. Nuestra pericia en los bosques es conocida por todos.
 str_npc7_home_recap|Soy hijo de Dwalin, del pueblo de Durin.
-str_npc8_home_recap|Soy un sanador y herbalista del Valle.
+str_npc8_home_recap|Soy un sanador y herbalista de Valle.
 str_npc9_home_recap|Gulm os dirá lo que queréis saber. Pero la charla no mata a nuestros enemigos.
 str_npc10_home_recap|Seré breve.
 str_npc11_home_recap|Seré breve.
@@ -1191,10 +1191,10 @@ str_party_greet_friend_lorien|¡Saludos, amigo de Lothlórien!
 str_party_greet_enemy_lorien|¡Monstruo, pondremos fin a tu sufrimiento!
 str_party_greet_friend_imladris|¡Saludos, amigo de Imladris y de Elrond!
 str_party_greet_enemy_imladris|¡Hoy lucharemos, enemigos de Imladris y de la justicia!
-str_party_greet_friend_woodelf|¡Saludos, amigo de los Elfos Silvanos de Mirkwood!
-str_party_greet_enemy_woodelf|¡Todo aquel que entra en Mirkwood con malicia en su corazón nunca sale vivo!
-str_party_greet_friend_dale|¡Saludos, amigo del pueblo del Valle!
-str_party_greet_enemy_dale|¡Sacad vuestras espadas, somos los hombres del Valle!
+str_party_greet_friend_woodelf|¡Saludos, amigo de los Elfos Silvanos del Bosque Negro!
+str_party_greet_enemy_woodelf|¡Todo aquel que entre en el Bosque Negro con malicia jamás saldrá con vida!
+str_party_greet_friend_dale|¡Saludos, amigo del pueblo de Valle!
+str_party_greet_enemy_dale|¡Desenvainad vuestras espadas, somos los hombres de Valle!
 str_party_greet_friend_harad|¡Bienvenido, amigo de los Haradrim!
 str_party_greet_enemy_harad|¡Vuestros cadáveres serán enterrados por las arenas del desierto!
 str_party_greet_friend_rhun|¡Saludos, amigo de las tribus de los Hombres del Este y de Dorwinion!
@@ -1294,7 +1294,7 @@ str_mordor_rumor_17|Los uruk-hai de Saruman dicen que no les molesta el sol. ¡B
 str_mordor_rumor_18|Todos muertos, todos podridos. Elfos y Hombres y Orcos. ¡En la Ciénaga de los Muertos!
 str_mordor_rumor_19|¡Jamás te interpongas entre un Nazgûl y su presa!
 str_mordor_rumor_20|¿De Isengard? ¡Los uruk-hai de ese pequeño y sucio mago! ¡Os aseguro que comen carne de orco!
-str_mordor_rumor_21|Mirkwood ya está bajo nuestro control, pero los elfos todavía no lo saben.
+str_mordor_rumor_21|El Bosque Negro ya está bajo nuestro control, pero los elfos todavía no lo saben.
 str_mordor_rumor_22|Afina bien la vista si no quieres ser víctima de una emboscada en Ithilien. Esos malditos capuchas verdes...
 str_mordor_rumor_23|Donde hay un látigo hay una voluntad.
 str_isengard_rumor_begin|¡Sharkû lo ordena!
@@ -1318,7 +1318,7 @@ str_isengard_rumor_18|Sólo hay una cosa que los gusanos y las ratas de Lugbúrz
 str_isengard_rumor_19|Estamos talando el bosque, pero muchos de los orcos que se adentran en él, nunca vuelven.
 str_isengard_rumor_20|Donde hay un látigo hay una voluntad.
 str_rhun_rumor_begin|¡Cabalgad como el viento!
-str_rhun_rumor_2|Los Enanos son viles y codiciosos. Y los hombres del Valle les ayudan a engañarnos y a aprovecharse de nosotros.
+str_rhun_rumor_2|Los Enanos son viles y codiciosos. Y los hombres de Valle les ayudan a engañarnos y a aprovecharse de nosotros.
 str_rhun_rumor_3|Tres magos vinieron a nuestras tierras hace tiempo. Me pregunto en que andarán metidos.
 str_rhun_rumor_4|Nuestras tierras son extensas y escasamente pobladas. Pero sabemos cómo sobrevivir allí.
 str_rhun_rumor_5|Antes solíamos comerciar con los Elfos y con los Enanos cosas como nuestro vino y tabaco obtenido en las tierras fértiles. ¡Pero nos mentían y engañaban!
@@ -1344,7 +1344,7 @@ str_dunland_rumor_11|Nuestro jefe encontró una vieja espada de bronce en un tú
 str_dunland_rumor_12|Mis antepasados lucharon con Freca y más tarde con Wulf contra los malditos Forgoil. Aún recordamos su coraje.
 str_beorn_rumor_begin|El bosque es muy extenso y todo tipo de criaturas viven dentro de él.
 str_beorn_rumor_2|¡Las avispas silvestres hacen la mejor miel!
-str_beorn_rumor_3|Los elfos de los bosques son escurridizos, pero amables. Los Enanos de las montañas son alegres y ruidosos. Los hombres del Valle son trabajadores.
+str_beorn_rumor_3|Los elfos de los bosques son escurridizos, pero amables. Los Enanos de las montañas son alegres y ruidosos. Los hombres de Valle son trabajadores.
 str_beorn_rumor_4|A menudo vemos muchas criaturas extrañas por nuestras tierras.
 str_beorn_rumor_5|¡Duermo toda la noche y trabajo todo el día!
 str_beorn_rumor_6|La maldad se aproxima desde allá en las montañas.
@@ -1381,7 +1381,7 @@ str_woodelf_rumor_4|De manera ágil y rápida, silenciosa y precisa, aún podemo
 str_woodelf_rumor_5|¡Shhh, no dhínen! Puede haber orcos acechando. ¡Debemos estar en guardia!
 str_woodelf_rumor_6|*te mira fijamente, obviamente molesto por tu presencia*
 str_woodelf_rumor_7|¿Oduleg hi am man theled? Necesitamos saber que venís a hacer aquí. El hechicero tiene espías por todas partes.
-str_woodelf_rumor_8|¡Los Edain del Valle hacen complejos juguetes hoy en día! Han aprendido mucho de los Naugrim.
+str_woodelf_rumor_8|¡Los Edain de Valle hacen complejos juguetes hoy en día! Han aprendido mucho de los Naugrim.
 str_woodelf_rumor_9|La sombra de Dol Guldur se extiende por la tierra. Criaturas oscuras han sido vistas en los bosques, nuestras avanzadas han sido atacadas, nuestros cazadores desaparecidos para no volverse a ver. ¡Nuestras patrullas ahora son de un mínimo de 35 soldados, hasta ahí han llegado nuestros temores!
 str_dale_rumor_begin|Primero apareció el dragón, y ahora esto...
 str_dale_rumor_2|¡Como si no tuviéramos suficiente con los orcos procedentes del norte, ahora nos atacan las hordas provenientes del este!
@@ -1458,7 +1458,7 @@ str_good_rumor_3|¡Los Uruk-hai son una raza diferente de orcos que no temen a l
 str_good_rumor_4|Después de cada derrota, la Sombra adopta una nueva forma y vuelve a crecer de nuevo.
 str_good_rumor_5|La Ciénaga de los Muertos... una tierra contaminada, enferma más allá de toda curación posible.
 str_good_rumor_6|La Sombra como criadora de criaturas tan sólo puede imitar, no puede crear nuevas cosas partiendo de la nada. No creo que le insuflara vida a los orcos, sólo los corrompió y los desfiguró.
-str_good_rumor_7|Greenwood se solía llamar y antaño estaba lleno de elfos. El más grande de los bosques del Norte. Pero ahora se llama Mirkwood. Y está lleno de todo tipo de criaturas malvadas.
+str_good_rumor_7|Se solía llamar el Bosque Verde, y antaño estaba lleno de elfos. El más grande de los bosques del Norte. Pero ahora se llama el Bosque Negro. Y está lleno de todo tipo de criaturas malvadas.
 str_good_rumor_8|Los Argonath, Los Pilares de los Reyes, los gigantescos guardianes de la antigua frontera norte de Gondor.
 str_good_rumor_9|Amon Hen es el más alejado hacia el oeste de los tres picos en la parte sur de Nen Hithoel.
 str_neutral_rumor_begin|Mañana todo podría cambiar...
@@ -1471,7 +1471,7 @@ str_evil_rumor_3|Las pesadas estatuas de esos debiluchos desperdigadas por el gr
 str_legendary_rumor_begin|La leyenda dice que los árboles se reúnen para hablar en el bosque de Fangorn.
 str_legendary_rumor_amonhen|Dicen que hay un lugar especial en el río Anduin, donde se encuentran las grandes estatuas.
 str_legendary_rumor_deadmarshes|Se rumorea que todo lo muerto parece vivo en el centro de la Ciénaga de los Muertos.
-str_legendary_rumor_mirkwood|Hay criaturas diferentes a los orcos que acechan en el bosque de Mirkwood.
+str_legendary_rumor_mirkwood|Existen otras criaturas además de orcos acechando en el Bosque Negro.
 str_legendary_rumor_fangorn|Fangorn es un bosque que sería mejor evitar. Allí suceden cosas muy raras.
 str_last_rumor|No he oído nada interesante últimamente.
 str_ent_rumor_begin|No os precipitéis...
@@ -1557,16 +1557,16 @@ str_woodelf_rank_6|Tiribrannon, Guardián del Bosque Verde
 str_woodelf_rank_7|Pengherdir, Maestro Arquero del Bosque Verde
 str_woodelf_rank_8|Armagor, Espadachín Real del Bosque Verde
 str_woodelf_rank_9|Thalion, Héroe del Bosque Verde
-str_dale_rank_0|Habitante del Valle
-str_dale_rank_1|Hombre Libre del Valle
-str_dale_rank_2|Soldado del Valle
-str_dale_rank_3|Barquero del Valle
-str_dale_rank_4|Portador del Escudo del Valle
-str_dale_rank_5|Portador de la Espada del Valle
-str_dale_rank_6|Barding, Arquero del Valle
-str_dale_rank_7|Capitán del Valle
-str_dale_rank_8|Maestro del Lago del Valle
-str_dale_rank_9|Héroe del Valle
+str_dale_rank_0|Habitante de Valle
+str_dale_rank_1|Hombre Libre de Valle
+str_dale_rank_2|Soldado de Valle
+str_dale_rank_3|Barquero de Valle
+str_dale_rank_4|Portador del Escudo de Valle
+str_dale_rank_5|Portador de la Espada de Valle
+str_dale_rank_6|Bardinga, Arquero de Valle
+str_dale_rank_7|Capitán de Valle
+str_dale_rank_8|Maestro del Lago de Valle
+str_dale_rank_9|Héroe de Valle
 str_harad_rank_0|Iniciado de la Tribu
 str_harad_rank_1|Adulto de la Tribu
 str_harad_rank_2|Guerrero de la Tribu
@@ -1687,17 +1687,17 @@ str_fullname_region_wetwang|Nindalf, los pantanos de Wetwang
 str_fullname_region_dead_marshes|la Ciénaga de los Muertos, el antiguo campo de batalla de la gran Batalla de Dagor Dagorlad, ahora es un lugar maldito
 str_fullname_region_isengard|las llanuras de Isengard
 str_fullname_region_fangorn|el bosque de Fangorn, donde se dice que los árboles hablan.
-str_fullname_region_brown_lands|las Tierras Pardas, se extienden entre Emyn Muil y Mirkwood
+str_fullname_region_brown_lands|las Tierras Pardas, se extienden entre Emyn Muil y el Bosque Negro
 str_fullname_region_dagorlad|Dagorlad
 str_fullname_region_n_undeep|el Codo Norte
 str_fullname_region_s_undeep|el Codo Sur
 str_fullname_region_emyn_muil|Emyn Muil
 str_fullname_region_misty_mountains|las faldas de las Montañas Nubladas
 str_fullname_region_lorien|Lothlórien, el bosque de los Elfos Sindar, donde los dorados Mallorns crecen
-str_fullname_region_anduin_banks|el valle del Anduin, entre las Montañas Nubladas y Mirkwood
-str_fullname_region_n_mirkwood|los densos bosques del norte de Mirkwood, el hogar de los Elfos Silvanos
-str_fullname_region_s_mirkwood|los densos bosques del sur de Mirkwood, según se dice, infestados de extrañas criaturas
-str_fullname_region_above_mirkwook|Rhovanion del Norte, las tierras entre Mirkwood y las Montañas Grises en el Norte
+str_fullname_region_anduin_banks|el valle del Anduin, entre las Montañas Nubladas y El Bosque Negro
+str_fullname_region_n_mirkwood|las densas arboledas del norte del Bosque Negro, hogar de los Elfos Silvanos
+str_fullname_region_s_mirkwood|los densas arboledas del sur del Bosque Negro, según se dice, infestadas de extrañas criaturas
+str_fullname_region_above_mirkwook|la parte septentrional de Rhovanion, las tierras entre el Bosque Negro y las Montañas Grises en el Norte
 str_fullname_region_grey_mountains|las faldas de las Montañas Grises, donde habitan los Enanos
 str_fullname_region_mordor|Mordor, el Reino Oscuro de Sauron
 str_shortname_region_unknown|una región sin nombre
@@ -1731,8 +1731,8 @@ str_shortname_region_brown_lands|las Tierras Pardas
 str_shortname_region_misty_mountains|las faldas de las Montañas Nubladas
 str_shortname_region_lorien_|Lothlórien
 str_shortname_region_anduin_banks_|el valle del Anduin
-str_shortname_region_n_mirkwood_|el Norte de Mirkwood
-str_shortname_region_s_mirkwood_|el Sur de Mirkwood
+str_shortname_region_n_mirkwood_|el Norte del Bosque Negro
+str_shortname_region_s_mirkwood_|el Sur del Bosque Negro
 str_shortname_region_above_mirkwook|El norte de Rhovanion{***}
 str_shortname_region_grey_mountains|las faldas de las Montañas Grises
 str_shortname_region_mordor|la Tierra de Mordor

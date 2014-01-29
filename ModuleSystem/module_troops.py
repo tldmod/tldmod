@@ -560,7 +560,7 @@ troops = [
 ["merchant_protector_of_dale","Merchant_Protector_of_Dale","Merchant_Protectors_of_Dale",tf_mounted| tfg_boots| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,
    [itm_lance,itm_dale_shield_d,itm_dale_armor_e,itm_dale_armor_f,itm_leather_boots,itm_dale_horse,itm_dale_helmet_e,itm_dale_helmet_f,],
       attr_tier_4,wp_tier_4,knows_riding_3|knows_ironflesh_2|knows_power_strike_1,vaegir_face_young_1,vaegir_face_older_2],
-["girions_guard_of_dale","Girion's_Guard_of_Dale","Girion's_Gaurds_of_Dale",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,
+["girions_guard_of_dale","Girion's_Guard_of_Dale","Girion's_Guards_of_Dale",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,
    [itm_lance,itm_dale_shield_d,itm_dale_sword_long,itm_dale_armor_k,itm_dale_armor_l,itm_leather_boots,itm_dale_warhorse,itm_leather_gloves,itm_dale_helmet_f,],
       attr_tier_5,wp_tier_5,knows_riding_4|knows_shield_2|knows_ironflesh_3|knows_power_strike_2,vaegir_face_middle_1,vaegir_face_older_2],
 ["dale_items","BUG","BUG",tf_hero,0,0,fac_dale,

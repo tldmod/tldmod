@@ -1502,7 +1502,9 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	(try_begin), # lame horses can stall
 		(eq, "$horse_mod", imod_lame),
 		(eq, ":mount","$horse_player"),
-
+		
+		] + ( is_a_wb_mt==1 and [
+		
 		#swy-- reduced constant nagging, fire randomly just when the horse goes fast, this isn't even even fun or challenging!
 		(agent_get_speed, pos1, ":mount"), # speed in m/s for both X and Y
     
@@ -1517,7 +1519,9 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 		
 		(this_or_next|ge,":mount_speed_x", 590), # if the horse is lame and goes faster than 59 m/s (normal calloping speed is over ~60 m/s)
 		(             ge,":mount_speed_y", 590), # there's a 95% chance of stalling every 2 secs.
-		
+
+		] or []) + [
+
 		(store_random_in_range, ":rand_stall_horse", 0, 100),
 		(ge, ":rand_stall_horse", 5),
 		

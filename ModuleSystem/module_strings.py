@@ -2816,7 +2816,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
 ("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 31
 ("fullname_region_anduin_banks", "the valley of Anduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 32 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
-("fullname_region_n_mirkwood", "the dense forests of northen Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 33
+("fullname_region_n_mirkwood", "the dense forests of northern Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 33
 ("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by strange creatures" ),#region_s_mirkwood = 34
 ("fullname_region_above_mirkwook", "Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_grey_mountains", "the foothills of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36

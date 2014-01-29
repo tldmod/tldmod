@@ -53,7 +53,7 @@ qstr_Experience:_{reg0}|Experiencia: {reg0}
 qstr_Days_Passed:_{reg0}|Días pasados: {reg0}
 qstr_Difficulty:_{reg0}%|Dificultad: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|PUNTUACION TOTAL: {reg0}
+qstr_TOTAL_SCORE:_{reg0}|PUNTUACIÓN TOTAL: {reg0}
 qstr_______|      
 qstr_A_peaceful_village_n|Un pueblo pacífico no lejos del Folde Oeste...
 qstr_The_War_is_upon_Roha|¡La Guerra ha llegado a Rohan!
@@ -132,7 +132,7 @@ qstr_+1_to_Agility|+1 en Agilidad
 qstr_+1_to_Leadership|+1 en Liderazgo
 qstr_+1_to_Power_Draw|+1 en Arquería
 qstr_+1_to_Trainer|+1 en Instruir
-qstr_Recruits_Tribal_Orcs|Reclutar Orcos Tribales
+qstr_Recruits_Tribal_Orcs|Recluta Orcos Tribales
 qstr_rally|reúnen
 qstr_rallies|reúne
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} en batalla
@@ -163,15 +163,15 @@ qstr_routed|huidos
 qstr_wounded|heridos
 qstr_None|Ninguno
 qstr_^None|^Ninguno
-qstr_near_the_Great_East_|cerca del Gran camino del Este, la vieja carretera abandonada
+qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja carretera abandonada
 qstr_near_what_is_left_of|cerca de lo que queda de la Vieja Carretera del Bosque, el antiguo camino enano que se utiliza para cruzar el espeso bosque
 qstr_close_to_the_Hand_sh|cerca de la señal de la Mano-Blanca Saruman, que apunta hacia la torre de Orthanc
 qstr_in_sight_of_the_maje|a la vista de las majestuosas murallas de Minas Tirith, la Ciudad Blanca
 qstr_in_sight_of_the_entr|a la vista de la entrada a Erebor, la fortaleza enana
 qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
-qstr_near_the_Old_Ford_wh|cerca del Bosque Viejo, donde el Camino cruza el río Anduin
-qstr_near_a_big_ford_cros|Cerca del gran bosque cruzando el Río {s15}
-qstr_near_a_small_ford_cr|Cerca de un pequeño bosque cruzando el Río {s15}{***}
+qstr_near_the_Old_Ford_wh|cerca del Antiguo Vado, donde el Camino del Bosque Viejo cruza el río Anduin
+qstr_near_a_big_ford_cros|Cerca del gran vado cruzando el Río {s15}
+qstr_near_a_small_ford_cr|Cerca de un pequeño vado cruzando el Río {s15}
 qstr_Battle_Advantage_=_{|_QQ_"Ventaja en la batalla = {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} quiere que no pares de seguir a su ejército hasta nuevo aviso.
 qstr_Rohan_capital_moved_|¡La capital de Rohan se ha trasladado de Edoras a Cuernavilla!
@@ -199,7 +199,7 @@ qstr_man|de hombres
 qstr_riding|cabalgando
 qstr_marching|marchando
 qstr_charging|cargando
-qstr_We_know_this_is_your|Sabemos que esta es tu tierra, {playername}.^Confía en nosotros, estamos aquí para luchar contra un enemigo común.
+qstr_We_know_this_is_your|Sabemos que ésta es tu tierra, {playername}.^Confía en nosotros, estamos aquí para luchar contra un enemigo común.
 qstr_I_trust_you._{s20}_a|Confío en ti. {s20} y {s21} deberían ser amigos y confiar uno en el otro.
 qstr_There_is_wisdom_in_y|Hay sabiduría en tus palabras, {playername}.
 qstr_Why_should_I?_Better|¿Por qué debería? Será mejor que abandonéis las tierras de {s20}.
@@ -281,9 +281,9 @@ qstr_Draw_your_weapons_me|¡Desenvainad vuestras armas, hombres! ¡Que la muerte
 qstr_Orcs_of_{s16}_get_re|Orcos de {s16}, ¡Preparaos! ¡Hoy tendremos gargantas que cortar!
 qstr_These_friend_of_elve|¡Éstos amigos de los elfos caerán bajo el filo de nuestras espadas!
 qstr_These_Elves_will_fal|¡Éstos Elfos caerán bajo el filo de nuestras espadas!
-qstr_Raahh!_Draw_your_wea|¡Raahh! ¡Sacad vuestras armas, escoria de {s16}! ¡Los cuervos festejarán nuestra victorias con entrañas de {s15}!
-qstr_Rha!_{s14}More_{s15}|¡Rha! {s14} ¡Más cuerpos de {s15} para desfigurar con nuestras armas!
-qstr_Slaughter_these_puny|¡Masacrad a estos ladrones de {s18} ahora! ¡Luego quemad sus casas y reducid a sus familias!
+qstr_Raahh!_Draw_your_wea|¡Raahh! ¡Desenvainad vuestras armas, escoria de {s16}! ¡Esta noche nos daremos un festín con las entrañas de {s15}!
+qstr_Rha!_{s14}More_{s15}|¡Rha! {s14} ¡Más cuerpos de {s15} para desfigurar con nuestras retorcidas armas!
+qstr_Slaughter_these_puny|¡Masacrad a estos débiles ladrones de {s18}, ahora mismo! Después quemaremos sus casas y acabaremos con sus familias.
 qstr_Death_to_the_trespas|¡Muerte a los intrusos de las tierras de {s16}!
 qstr_CHARGE!_Let_s_clear_|¡CARGAD! ¡Limpiemos la escoría {s18} {s19} de {s17}!
 qstr_{s14}Now_that_{s19}s|{s14} ¡Ahroa la escoria de {s19} probará la furia de los Beórnidas!
@@ -884,7 +884,7 @@ qstr_It_is_my_duty_to_hel|Es mi deber ayudar a nuestra gente.
 qstr_It_is_my_duty_to_help|Es mi deber ayudar a nuestros aliados.
 qstr_The_people_of_{s3}_t|La gente de {s3} te agradece tu regalo, {playername}. A cambio de tu regalo de {s1}, vamos a enviar a la gente de {s4} un regalo de {s2}. Y gracias de nuevo, {playername}.
 qstr_I_want_to_deliver_a_|Quiero entregar un regalo a nuestros aliados.
-qstr_delivering_a_gift|entrega un regalo
+qstr_delivering_a_gift|entregando un regalo
 qstr_I_want_to_bring_a_br|Quiero sobornar a uno de nuestros aliados.
 qstr_delivering_a_bribe|realizando un soborno
 qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Puntos de Recursos]
@@ -910,7 +910,7 @@ qstr_{s9}_has_asked_you_t|{s9} te ha pedido que mates al hechicero de Dol Guldur
 qstr_{s9}_asked_you_to_ta|{s9} te ha pedido que lleves un mensaje a {s13}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s9}_asked_you_to_tak|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
 qstr_{s11}_asked_you_to_e|{s11} te ha pedido que escoltes a su mensajero a {s14}.
-qstr_Lend_your_experience|Presta a tu cirujano experto {s3} a {s1}.
+qstr_Lend_your_experience|Prestar a tu cirujano experto {s3} a {s1}.
 qstr_No_commander_should_|Ningún comandante debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y había algunos que no saben donde empieza y donde termina una espada. Necesitan a alguien que les enseñe el significado del valor. Tu eres un guerrero de renombre, {playername}. ¿Entrenarías algunas tropas por mi? Le agradecería que lo hiciera.
 qstr_No_commander_should_h|Ningún comandante debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y ejecuté a algunos por incompetentes. Necesitan a alguien con el acero en su regazo para azotarlos e inculcarles ciertos valores o matarlos en el intento. Sois un guerrero de renombre, {playername}. ¿Entrenarías algunas tropas por mi? Puedo hacer que valga la pena.
 qstr_{s9}_asked_you_to_ra|{s9} te ha pedido que le lleves {reg1} {s14}.
@@ -936,15 +936,15 @@ qstr_{s9}_asked_you_to_fr|{s9} te ha pedido liberar a {s13} de la amenaza de un 
 qstr_You_chose_well_{sir/|Habéis elegido bien, {sir/madam}. Mis muchachos saben cómo mantener su palabra y ganarse el sueldo
 qstr_Well_done_{sir/madam|Bien hecho, {sir/madam}. Mantén el dinero y el vino en nuestro camino y no hay ningún enemigo al que debáis temer.
 qstr_We_are_at_your_servi|Estamos a vuestro servicio, {sir/madam}. Pon la dirección de aquellos a quien atacar, y haremos el resto.
-qstr_You_will_not_be_diss|No le decepcionaremos. {sir/madam}. No encontrará mejores guerreros.
+qstr_You_will_not_be_diss|No te decepcionaré mi {señor/señora}. No encontrareis mejores guerreros.
 qstr_What_an_amazing_feat|¡Que proeza de armas!
-qstr_Well_done!|¡Bien Hecho!
+qstr_Well_done!|¡Bien hecho!
 qstr_Nice_legwork.|Excelente trabajo de campo.
-qstr_Heh.|Heh.
-qstr_Good_moves_but_you_m|Buenos movimientos, pero todavía necesitás mejorar.
+qstr_Heh.|Jojeje.
+qstr_Good_moves_but_you_m|Buenos movimientos, pero todavía necesitas mejorar.
 qstr_More_than_half_of_th|Más de la mitad de oponentes, no está mal.
-qstr_You_ll_need_to_try_h|Necesitáis intentarlo con más intensidad que eso.
-qstr_Well..._better_here_|Bien... mejor aquí que en combate, ¿eh?
+qstr_You_ll_need_to_try_h|Vas a tener que intentarlo con más ganas.
+qstr_Well..._better_here_|Bueno... mejor aquí que en combate, ¿no?
 qstr_town|ciudad
 qstr_village|pueblo
 qstr_The_{s9}_of_{s13}_ha|El {s9} de {s13} te ha pedido que trates con los orcos tribales en los campos de los alrededores.
@@ -959,21 +959,21 @@ qstr_slaves|esclavos
 qstr_{s1}_Refugees|{s1} Refugiados
 qstr_{s1}_Slaves|{s1} Esclavos
 qstr_The_{s11}_of_{s10}_a|El {s11} de {s10} te ha pedido escoltar algunos {s12} a {s13}. Te ha prometido {reg8} Pts. de Recursos a la vuelta.
-qstr__Guards_slaughter_hi|¡Guardias!¡Masacradle!
-qstr_Slaughter_him_for_fr|¡Masacradle, si queréis carne humana fresca!
-qstr_This_is_{s5}_Command|Este es {s5}, Comandante.
+qstr__Guards_slaughter_hi|¡Guardias, acabad con él!
+qstr_Slaughter_him_for_fr|¡Acabad con él si queréis carne humana fresca!
+qstr_This_is_{s5}_Command|Estamos en {s5}, Comandante.
 qstr_{s6}_This_place_and_|{s6} Este lugar y sus alrededores os pertenecen por supuesto, mi {lord/lady}.
 qstr_{s6}_This_place_and_t|{s6} Este lugar y sus alrededores pertenecen a {s7} de {s8}.
 qstr_{s3}_and_{s5}|{s3} y {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?Aquí producimos sobre todo {s5}:Actualmente no producimos casi nada}. Si queréis saber más, podéis hablar con nuestro {reg4?maestro de la cofradía:anciano}. Está justo allí.
-qstr_Hey_scum!_I_can_fix_|¡Hey escoria! Os puedo arreglar la mandíbula a vos y a los vuestros.
+qstr_{reg20?We_mostly_pro|{reg20?Aquí producimos sobre todo {s5}:Ahora mismo no producimos casi nada}. Si queréis saber más, podéis hablar con nuestro {reg4?maestro de la cofradía:anciano}. Está justo allí.
+qstr_Hey_scum!_I_can_fix_|¡Oye, tú, escoria! Creo que te voy a arreglar esa mandíbula tuya.
 qstr_Watch_where_you_re_g|Mira por donde vas, ¡Gusano!
 qstr_I_don_t_like_your_fa|¡No me gusta tu cara! Creo que necesita algún arreglo.
 qstr_What_are_you_looking|¿Que estás mirando? ¿QUÉ?
 qstr_the_white_hand|la mano blanca
 qstr_the_lidless_eye|el ojo de Sauron
-qstr_I_have_some_of_your_|Tengo algunos de vuestra gente conmigo. Les dejaré unirse a vos para ayudar en vuestra causa.
+qstr_I_have_some_of_your_|Tengo algunos de los vuestros conmigo. Les dejaré unirse a ti para ayudar en la causa.
 qstr_Some_of_your_stinky_|Algunos de vuestros apestosos camaradas están conmigo. Estoy seguro que preferirían ir contigo.
 qstr_{s4}_It_is_always_go|{s4} Siempre es bueno ver a uno de los nuestros.
 qstr_a_nearby_town|una ciudad cercana
@@ -982,12 +982,12 @@ qstr_{s4}^We_are_from_{s1|{s4}^Somos de {s11}, y exploramos en la dirección de 
 qstr_{s4}^We_are_{reg1?fo|{s4}^Estamos {reg1?buscando:saqueando} alrededor de {s11}.
 qstr_{s4}^We_are_patrolli|{s4}^Estamos patruyando alrededor de {s11}.
 qstr_{s4}^We_are_carrying|{s4}^Estamos llevando suministros de {s11} a {s12}.
-qstr_{s4}^We_are_escortin|{s4}^Estamos escoltando prisioneros a {s12}.
-qstr_Greetings_do_you_nee|Saludos, ¿Necesitáis refuerzos?
-qstr_Goodbye_friends.|Adios, amigos.
-qstr_See_you_later_if_you|Os veo más tarde si no estáis muerto.
-qstr__^Oh_and_take_back_t|^Ah, y regresa a quienes no son de tu gente.
+qstr_{s4}^We_are_escortin|{s4}^Estamos escoltando prisioneros hasta {s12}.
+qstr_Greetings_do_you_nee|Saludos, ¿Necesitas refuerzos?
+qstr_Goodbye_friends.|Hasta luego, amigos.
+qstr_See_you_later_if_you|Nos veremos más tarde si no mueres antes.
+qstr__^Oh_and_take_back_t|^Ah, y quédate con todos aquellos que no son de nuestra gente.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Esos bravos:Ese bravo} {reg28?soldados ayudarán:soldado ayudará} seguramente a defender nuestras tierras.{s32} {s23}^^[gana {reg14} Puntos de Recursos de {s14}]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Esas útiles:Esa útil} {reg28?tropas ayudarán:tropa ayudará} seguramente en el ataque.{s32}^{s23}^^[gana {reg14} Puntos de Recursos de {s14}]
-qstr_Good_luck_in_your_tr|Buena suerte en vuestos viajes.
-qstr_Try_not_getting_your|Intenta no matarte tu mismo.
+qstr_Good_luck_in_your_tr|Buena suerte en vuestros viajes.
+qstr_Try_not_getting_your|Intenta que no te maten.
