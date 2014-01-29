@@ -1,0 +1,74 @@
+qst_deliver_message|Botschaft an {s13} überbringen
+qst_deliver_message_text|{s9} bat dich, eine Botschaft an {s13} zu überbringen. {s13} befand sich in {s4}, als dir dieser Auftrag erteilt wurde.
+qst_deliver_message_to_enemy_lord|Botschaft an {s13} überbringen
+qst_deliver_message_to_enemy_lord_text|{s9} bat dich, eine Botschaft an {s13} von {s15} zu überbringen. {s13} befand sich in {s4}, als dir dieser Auftrag erteilt wurde.
+qst_raise_troops|Bilde {reg1} {s14} aus
+qst_raise_troops_text|{s9} bat dich, {reg1} {s14} auszubilden und ihm zu überlassen.
+qst_escort_messenger|Eskortiere den Boten nach {s14}
+qst_escort_messenger_text|Nichts
+qst_hunt_down_fugitive|Jage {s4}
+qst_hunt_down_fugitive_text|{s9} bat dich, den Flüchtigen names {s4} zu jagen. Er soll sich im Moment in {s3} aufhalten.
+qst_bring_back_runaway_serfs|Bring die entflohenen Sklaven zurück
+qst_bring_back_runaway_serfs_text|{s9} bat dich, die drei Gruppen entflohener Sklaven nach {s2} zurückzubringen. Er sagte, dass alle drei Gruppen in Richtung {s3} fliehen müssten.
+qst_follow_spy|Folge dem Spion zum Treffen
+qst_follow_spy_text|{s11} bat dich, dem Spion zu folgen, der {s12} verlassen wird. Du musst darauf achten, während seiner Reise nicht vom Spion gesehen zu werden, da er sonst Verdacht schöpfen und umkehren könnte. Sobald sich der Spion mit seinem Komplizen trifft, musst du sie überfallen, gefangen nehmen und nach {s11} zurückbringen.
+qst_capture_enemy_hero|Nimm einen gegnerischen Befehlshaber gefangen
+qst_capture_enemy_hero_text|{s11} bat dich, einen gegnerischen Befehlshaber gefangen zu nehmen.
+qst_lend_companion|Leihe deinen Gefährten {s3} an {s9} aus
+qst_lend_companion_text|{s9} bat dich, ihm deinen Gefährten {s3} für eine Woche zu leihen.
+qst_capture_prisoners|Bringt {reg1} Gefangene
+qst_capture_prisoners_text|{s9} bat dich, ihm {reg1} Gefangene zu bringen.
+qst_investigate_fangorn|Erkunde Fangorn
+qst_investigate_fangorn_text|{s9} bat dich herauszufinden, was im Wald Fangorn vorgeht, und Bericht zu erstatten.
+qst_capture_troll|Fangt einen Troll
+qst_capture_troll_text|{s9} bat dich, ihm einen wilden Troll für seine Armee zu bringen.
+qst_kill_troll|Töte den wütenden Troll
+qst_kill_troll_text|{s9} bat dich, {s13} von der Bedrohung des Trolls zu befreien, der in der Umgebung wütet.
+qst_mirkwood_sorcerer|Erschlage einen Zauberer im Düsterwald
+qst_mirkwood_sorcerer_text|Galadriels Macht, die Lothlorien behütet, wird durch die widerwärtigen Rituale eines Zauberers von Dol Guldur bedroht. Obwohl er ein Sterblicher ist, stellt er eine große Bedrohung für die Elben dar. Suche nach ihm im Düsterwald, nicht fern von Dol Guldur selbst. Gehe im Verborgenen vor und ziehe keine Aufmerksamkeit auf dich, denn du hast nur eine einzige Gelegenheit, ihn zu vernichten.
+qst_find_lost_spears|Finde die verlorenen Speere des Königs Bladorthin
+qst_find_lost_spears_text|{s9} bat dich, die verlorenen Speere zu finden, welche die Zwerge einst für König Bladorthin  gefertigt haben. Du wirst die Erlaubnis der Zwerge brauchen, um in den Tiefen des Einsamen Berges nach den Speeren zu suchen.
+qst_rescue_prisoners|Befreie {reg1} Gefangene
+qst_rescue_prisoners_text|{s9} bat dich, {reg1} Gefangene zu befreien.
+qst_scout_enemy_town|Spähe die Stadt des Feindes aus
+qst_scout_enemy_town_text|{s9} bat dich, die Gegend um {s13} auszuspähen.
+qst_dispatch_scouts|Sende einen Spähtrupp aus
+qst_dispatch_scouts_text|{s9} bat dich, einen Spähtrupp in der Nähe von {s13} auszusenden.
+qst_eliminate_patrols|Vernichtet {reg1} feindliche Verbände
+qst_eliminate_patrols_text|{s9} bat dich, {reg1} {s13} feindliche Verbände zu vernichten.
+qst_lend_surgeon|Leihe {s1} deinen Chirugen {s3}
+qst_lend_surgeon_text|Leihe {s1} deinen erfahrenen Chirurgen {s3}.
+qst_follow_army|Folge {s9}s Armee
+qst_follow_army_text|Nichts
+qst_report_to_army|Melde dich bei {s13}
+qst_report_to_army_text|Nichts
+qst_deliver_cattle_to_army|Bringe {reg3} Einheiten Nahrung nach {s13}
+qst_deliver_cattle_to_army_text|Nichts
+qst_join_siege_with_army|Nimm an der Belagerung von {s14} teil
+qst_join_siege_with_army_text|Nichts
+qst_scout_waypoints|Spähe {s13}, {s14} und {s15} aus
+qst_scout_waypoints_text|Nichts
+qst_move_cattle_herd|Bring {s12} nach {s13}
+qst_move_cattle_herd_text|Der Älteste von {s10} bat dich, {s12} nach {s13} zu bringen.
+qst_escort_merchant_caravan|Beschütze die Nachschublieferung nach {s8}
+qst_escort_merchant_caravan_text|Beschütze die Nachschublieferung nach {s8}.
+qst_deliver_wine|Liefere {reg5} Einheiten {s6} nach {s4}
+qst_deliver_wine_text|Der {s9} von {s3} bat dich, innerhalb von 7 Tagen {reg5} Einheiten {s6} nach {s4} zu bringen.
+qst_troublesome_bandits|Jage die lästigen Orks
+qst_troublesome_bandits_text|Der {s9} von {s4} bat dich, die lästigen Orks in der Nähe der Stadt zu jagen.
+qst_deal_with_looters|Vernichte die Stammesorks
+qst_deal_with_looters_text|Der Älteste von {s4} bat dich, einige Rotten von Stammesorks in der Nähe von {s4} zu vernichten.
+qst_deal_with_night_bandits|Kümmere dich um die herrenlosen Orks
+qst_deal_with_night_bandits_text|Der Älteste von {s14} bat dich, die Nachtorks in {s14} zu vernichten.
+qst_deliver_food|Versorgt {s3} mit {reg5} Einheiten Nahrung
+qst_deliver_food_text|Der {s9} von {s3} bat dich, ihm innerhalb von 10 Tagen {reg5} Einheiten Nahrung zu bringen.
+qst_deliver_iron|Bringe {reg5} Einheiten {s6} nach {s3} 
+qst_deliver_iron_text|Der {s9} von {s3} bat dich, ihm {reg5} Einheiten {s6} zu bringen.
+qst_tld_introduction|Überbringe eine Nachricht über die Orks von Mordor an die Führung
+qst_tld_introduction_text|Nichts
+qst_treebeard_kill_orcs|Besiegt die holzfällende Orktruppe
+qst_treebeard_kill_orcs_text|Baumbart bat Euch, die Orks, welche die Bäume in Fangorn abholzen, zu finden und zu besiegen.
+qst_oath_of_vengeance|Racheschwur
+qst_oath_of_vengeance_text|Erzürnt durch den Tod von {s1}, schworst du einen Racheeid gegen die Truppen von {s2}. Du musst in den kommenden Tagen möglichst viele Armeen von {s2} zerstören. Du bist dir bewusst, dass deine Gefährten Zeugen dieses Schwurs waren, und du möchtest nicht als Eidbrecher bekannt werden. Eine Orgie des Blutvergießens muss nun beginnen!
+qst_deliver_gift|Überbringe ein {s4} an {s1} von {s2} nach {s3}
+qst_deliver_gift_text|Du hast hast ersucht, ein {s4} an {s1} von {s3} nach {s2} zu überbringen.
