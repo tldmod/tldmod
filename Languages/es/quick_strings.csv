@@ -1,5 +1,5 @@
 qstr_Gate_is_breached!|¡El portón ha caído!
-qstr_Gate_opens..._You_ha|La puerta se abre... Habéis alcanzado el lugar más sagrado en la Tierra Media.
+qstr_Gate_opens..._You_ha|La puerta se abre... te has internado en lugar más sagrado en la Tierra Media.
 qstr_Secret_place_discove|¡Lugar secreto descubierto!
 qstr_Next_Page|Página Siguiente
 qstr_Action|Acción
@@ -560,7 +560,7 @@ qstr_You_should_really_se|¡En serio, deberías ver las fotos del Senescal Denet
 qstr_Press_Space_to_conti|Presiona Espacio para continuar...
 qstr_{s24}__{reg13}_|{s24} ({reg13})
 qstr_Influence:^_{reg11}_|Influencia:^ {reg11} (con {s16})
-qstr_Resource_Points:^_{r|Puntos de Recursos:^ {reg12} (en {s16}){***}
+qstr_Resource_Points:^_{r|Puntos de Recursos:^ {reg12} (en {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (en {s16})
@@ -583,7 +583,7 @@ qstr_Weekly_upkeep_for_tr|Mantenimiento semanal de las tropas:^{reg5} Puntos de 
 qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Puntos de recursos ({reg5})
 qstr_No_upkeep_costs|Sin costes de mantenimiento
 qstr_Orc_hiring_bonus:_+2|Bonificación de contratación de orcos: +2/3 por cada orco^
-qstr_Current_party_size_l|El límite actual del grupo es {reg5}.^Los modificadores del tamaño del grupo son:^^Tamaño base:  +10^Liderazgo: {s2}{reg1}^Carisma: {s3}{reg2}^Rango: {s4}{reg3}^{s5}TOTAL:  {reg5}{***}
+qstr_Current_party_size_l|El límite actual del grupo es {reg5}.^Los modificadores del tamaño del grupo son:^^Tamaño base:  +10^Liderazgo: {s2}{reg1}^Carisma: {s3}{reg2}^Rango: {s4}{reg3}^{s5}TOTAL:  {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|Informe de Fuerza de las Facciones:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Las facciones son normalmente asediadas cuando tienen {reg1} de fuerza.
@@ -693,8 +693,8 @@ qstr_You_have_fallen._The|Habéis caído. Los bandidos rebuscan rápidamente en 
 qstr_Luckily_some_of_your|Por fortuna, algunos de vuestros compañeros llegan buscándoos y os encuentran en el suelo. Rápidamente os llevan a un sitio seguro y atienden vuestras heridas.
 qstr_Luckily_some_passing|Por fortuna, algunos campesinos locales os encuentran en la cuneta y se percatan de que no sois cualquiera. Ellos os llevan a una posada cercana y atienden vuestras heridas.
 qstr_{s13}^^You_have_succ|{s13}^^Te has colado con éxito.
-qstr_the_place|el lugar
-qstr_the_castle|el castillo
+qstr_the_place|l lugar
+qstr_the_castle|l castillo
 qstr_Stay_indoors_for_som|Quedarse aquí durante algún tiempo ({reg1} Puntos de Recursos la noche)
 qstr_Camp_outside_for_som|Acampar fuera por algún tiempo (gratis)
 qstr_{s1}_s_Ship|Barco de {s1}
@@ -924,7 +924,7 @@ qstr_We_have_reports_that|Tenemos informes de que varias patrullas aliadas han s
 qstr_We_have_reports_that_|Tenemos informes de que varias patrullas aliadas han sido emboscados y derrotados Algunos de esos cobardes pueden estar vivos, capturados por el enemigo. Por muy prescindibles que sean, es un desperdicio que mueran en algún agujero. Quiero rescatar a {reg1} prisioneros, y hacer que luchen de nuevo por nosotros.
 qstr_{s9}_has_asked_you_to|{s9} te ha pedido que rescates {reg1} prisioneros.
 qstr_We_have_reports_that_a|Tenemos informes de que un ejército enemigo puede estar reuniendose en {s13}. Claramente, eso es motivo de gran preocupación para mí, ya que no sé de cuantos soldados dispone el enemigo y si mis soldados estarán listos para enfrentarse a ellos en el campo de batalla. Quiero que os acerquéis a {s13} y descubráis todo lo posible.
-qstr_My_spies_tell_me_of_|Mis espías me han dicho que un gran grupo de guerreros se agrupan en {s13}. No deberían ser rival para nosotros y nuestros siervos, pero no estaría de más saber cuántos son. Quiero que os acerquéis lo suficiente a {s13} como para descubrir todo sobre ellos.
+qstr_My_spies_tell_me_of_|Mis espías me han dicho que un gran grupo de guerreros se agrupa en {s13}. No deberían ser rival para nosotros y nuestros siervos, pero no estaría de más saber cuántos son. Quiero que os acerquéis lo suficiente a {s13} como para descubrir todo sobre ellos.
 qstr_{s9}_asked_you_to_sco|{s9} te ha pedido explorar alrededor de {s13}.
 qstr_We_have_reports_of_s|Tenemos informes de actividad enemiga cerca de {s13}. Nuestros exploradores han fracasado hasta ahora para llegar lo suficientemente cerca y explorar el área. Quiero que reúnas a un grupo de exploradores capaces para acercarse lo suficientemente cerca de {s13} y que los despliegues allí.
 qstr_My_spies_tell_me_the|Mis espías me dicen que el enemigo está maquinando algo en {s13}. Nuestros cobardes exploradores han fallado en su aproximamiento y no nos han dicho nada útil. Te quiero para reclutar a mi propio grupo de exploradores, y que se acerquen a {s13} y dejadlos allí para que informen. Aseguraos de que no dan la vuelta y huyen.

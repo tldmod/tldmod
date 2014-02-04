@@ -123,7 +123,7 @@ menu_camp|^^^^En estos momentos, te encuentras en {s1}.{s2}^^¿Qué queréis hac
 mno_camp_scene|Dar una vuelta.
 mno_camp_troop|Revisar{reg10? tropas:}{reg12? y:}{reg11? prisioneros:}.
 mno_camp_action|Usar un objeto.
-mno_camp_wait_here|Acampar aquí por algún tiempo.
+mno_camp_wait_here|Acampar aquí durante algún tiempo.
 mno_camp_options|Cambiar opciones de TLD.
 mno_Cheat_enable|Activar las opciones de trucos/modding.
 menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
@@ -166,7 +166,7 @@ menu_fangorn_search_fails|^^^^^^Buscas en la oscuridad, en el espesor del bosque
 menu_fangorn_battle_debrief_won|^^^Una gran victoria!^^^Entonces, esto es lo que significan todos los mitos sobre Fangorn...
 menu_fangorn_killed_player_only|^^^^^^Vagas por el espeso y oscuro bosque.^¡De repente algo the golpea por atrás! ¿Puede que una rama pesada haya caído en tu cabeza?^Permaneces inconsciente sólo durante algunos minutos... despiertas malherido pero puedes seguir adelante. Algo extraño ocurre en este bosque.
 mno_ow_get_out|¡Augh! Salir ahora mismo de este maldito lugar.
-menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuros bosque.^^De repente eres golpeado por algo! Tal vez una rama pesada cayó en tu cabeza?.^^Estás inconsciente solo unos minutos... cuando despiertas, malherido pero puedes pero vivo, descubres que no todas tu tropas fueron tan afortunadas, algo extraño ocurre en este bosque...
+menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^^Cuando de repente... ¡notas que algo te golpea! Puede que una rama haya caído sobre tu cabeza.^^Quedas inconsciente durante sólo unos minutos... y cuando despiertas, malherido, descubres que no todas tus tropas han sido tan afortunadas...
 menu_fangorn_killed_troop_only|^^^^^^^^Deambulas por el frondoso y oscuro bosque. Tus tropas están aterrorizadas.^^De repente, escuchas gritos que provienen desde la retaguardia, sólo para encontrarte con un puñado de tus tropas en el suelo, bañadas en su propia sangre.^^Otros tantos han desaparecido sin más...
 mno_get_out|¡Salgamos de este maldito lugar!
 menu_can_capture_troll|¡El troll caído todavía respira!^^Sus ojos malignos te miran fijamente, llenos de rabia y dolor.^Incluso ahora, que ha sido derribado, y yace indefenso en el charco de su propia sangre, parece increíblemente peligroso...
@@ -187,7 +187,7 @@ menu_simple_encounter|^^^^^{s2}^Tienes {reg22} tropas listas para la batalla, te
 mno_encounter_attack|{reg21?Cargar hacia la victoria:Prepararse para un enfrentamiento}.
 mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ellos} sin tu ayuda.
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
-mno_encounter_leave|Retirarse.
+mno_encounter_leave|Separarse.
 mno_encounter_retreat|Huye, dejando a algún soldado detrás para cubrir tu retirada.
 menu_encounter_retreat_confirm|^^^^^Como el miembro del grupo con mayor habilidad táctica, ({reg2}), {reg3?trazas:{s3} traza} un plan que te permitirá a ti y a los tuyos escapar sanos y salvos, pero tendrás que dejar {reg4} soldados detrás para distraer al enemigo y que no os dé caza.
 mno_leave_behind|Seguir. El sacrificio de unos pocos salvará al resto.
@@ -214,7 +214,7 @@ mno_pre_join_leave|No involucrarse.
 menu_join_battle|^^^Estás colaborando con {s2} en la lucha contra {s1}.^ Cuentas con {reg22} tropas listas para la batalla, en la que se enfrentarán contra {reg11} enemigos.^^La batalla se desarrollará en {s3}{s4}.
 mno_join_attack|Enfrentarse al enemigo.
 mno_join_order_attack|Ordenar a tus tropas atacar al enemigo junto con tus aliados mientras te mantienes al margen.
-mno_join_leave|Retirarse.
+mno_join_leave|Separarse.
 menu_join_order_attack|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
 mno_enter|Entrar.
 menu_battlefields|^^^^^^^^^Selecciona un campo...
@@ -226,7 +226,7 @@ mno_enter_f5|Campo 5
 menu_join_siege_outside|^^^^^^{s1} ha sido asediado por {s2}.
 mno_approach_besiegers|Acercarse al campamento de asedio.
 mno_pass_through_siege|Atravesar las líneas de asedio y entrar en {s1}.
-menu_cut_siege_without_fight|Los atacantes de dejan acercarte a las puertas sin problema alguno.
+menu_cut_siege_without_fight|Los atacantes te dejan acercarte a las puertas sin problema alguno.
 menu_besiegers_camp_with_allies|{s1} permanece bajo asedio. Los estandartes de {s2} ondean sobre el campamento de los sitiadores, donde tú y tus tropas sois bienvenido.
 mno_talk_to_siege_commander|Pedir una reunión con el comandante.
 mno_join_siege_with_allies|Unirse al siguiente asalto.
@@ -264,8 +264,8 @@ menu_town_brawl_won|^^^^^Has dejado inertes en el suelo a todos los oponentes re
 menu_town|Has llegado a {s60}.{s12}{s13}
 mno_town_menu_0|Ir a algún sitio.
 mno_town_menu_0_door|Puerta a algún sitio.
-mno_town_approach|Acercarse a {s1}...
-mno_town_castle|Ir a {s1}.
+mno_town_approach|Acercarse a{s1}...
+mno_town_castle|Ir a{s1}.
 mno_town_castle_door|Puerta al castillo.
 mno_town_center|Ir al centro de la ciudad...
 mno_town_center_door|Puerta al centro de la ciudad.
@@ -340,7 +340,7 @@ mno_next_rescue_scene_door|¡Seguir adelante!
 mno_pick_troops1|Elige compañeros para la misión, {reg0} seleccionados
 menu_pick_troops|¿Quién quieres que te acompañe en ésta misión de sigilo?  Por el momento has elegido {reg0} compañeros. Puedes llevarte contigo hasta 10 tropas.
 mno_go_forward|Terminar de elegir compañeros y continuar.
-menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}.  Recubierta por completo por las melladas armas de sus enemigos caídos.
+menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}.  Recubierto por completo por las melladas armas de sus enemigos caídos.
 mno_pay_respects|Arrodíllarte y mostrar tus respetos.
 mno_swear_oath|¡Pronunciar un juramento de venganza!
 mno_despoil|Profanar el lugar
@@ -356,7 +356,7 @@ mno_ruin_leave|Irse...
 menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no serás parte de ella nunca más.
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}
-menu_animal_ambush_fail|Los animales muerden y desgarran {reg0?,: a ti y a tu{reg2?s : }compañero{reg2?s,:,}} pero por suerte consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
+menu_animal_ambush_fail|Los animales {reg0?te muerden y desgarran,:os muerden y desgarran a ti y a tu{reg2?s : }compañero{reg2?s,:,}} pero por suerte consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
 menu_build_your_scene|Puedes crear tu propio escenario de batalla desde aquí, utilizando una de las ranuras disponibles abajo y activando el modo de Edición (primero tienes que marcar la casilla de comprobación en la última pestaña de las opciones del lanzador). Tras ésto puedes enviarnos las escenas creadas (los archivos sco de dentro de la carpeta TLD/SceneObj) y si tu escena es decente puede aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta ser específico al contarnos en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros detalles que corten el paso a los bots, a no ser que seas un creador de mapas de prestigio y sepas como conducir a las tropas por donde tu quieras con una "AI Mesh" (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar del 5 al 8)
 mno_scene1|Battlefield5 (archivo scn_battlefield5.sco)
 mno_scene2|Battlefield6 (archivo scn_battlefield6.sco)

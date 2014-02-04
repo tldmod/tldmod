@@ -1,0 +1,46 @@
+ui_at_learning_limit|(Höchstmarke für diese Rasse erreicht)
+ui_not_enough_skill_points_to_learn|(nicht genügend Fertigkeitspunkte zum Erlernen)
+ui_not_enough_attributetype_to_learn_this_skill|(nicht genügend %s, um diese Fertigkeit zu erlernen)
+ui_explanation_agility|Wendigkeit: Jeder Punkt verleiht fünf Waffenpunkte und erhöht die Waffengeschwindigkeit um 0,5%. Die folgenden Fähigkeiten könen nicht über 1/3 des Wendigkeitswerts hinaus entwickelt werden: Waffenmeister, Schild, Athletik, Reiten, Berittenes Bogenschießen, Plündern.
+ui_retreated_battle|%s ist geflohen.
+ui_riding_skill_not_adequate_to_mount|(Reitfertigkeit zu niedrig)
+ui_camp|Aktionen
+ui_tutorial_inventory|In The Last Days benötigst du Ressourcenpunkte um Ausrüstung zu erwerben. Ressourcenpunkte sind ein Maß dafür, wie bereitwillig eine Fraktion ist, dich auszuzrüsten, und wie viele der Ressourcen der Fraktion du verwenden darfst.
+ui_you_dont_have_value|Nicht genügend: %s
+ui_merchant_cant_afford_value|%s: Du gibst uns mehr als wir benötigen! Vielleicht solltest du etwas mehr für dich behalten (du gibst Waren für %s, wir können aber nur %s verwenden).
+ui_merchant_pay_whatever|Nein, ich benötige nichts davon, behalte es.
+ui_horse|Aufsitzen
+ui_reclaim_your_sold_goods|Verlange die bereits übergebenen Waren zurück, bevor du das übergibst!
+ui_return_your_bought_goods|Gib die genommenen Waren zurück, bevor du das übergibst!
+ui_return_price|wenn zurückgegeben: +%d Ressourcenpunkte
+ui_sell_price|wenn verkauft: +%d Ressourcenpunkte
+ui_reclaim_price|wenn zurückverlangt: -%d Ressourcenpunkte
+ui_buying_price|wenn erworben: -%d Ressourcenpunkte
+ui_notification_riding_skill_not_enough|Deine Reitfertigkeit ist nicht hoch genug, um aufzusitzen.
+ui_notification_payment_value|Verzehrt %s
+ui_notification_payment_receive_value|Gewinnend %s
+ui_weekly_cost_value|Unterhalt: %s
+ui_sell|Gib
+ui_hire|Anwerben
+ui_notification_cant_hire|(nicht genügend Ressourcenpunkte zum Anwerben)
+ui_joining_cost_weekly_wage|Anwerben: %d Ressourcenpunkte -- Unterhalt: %d Ressourcenpunkte
+ui_weekly_wage|Unterhalt: %d Ressourcenpunkte
+ui_price|Wert: %d Ressourcenpunkte
+ui_cant_reload_this_weapon_on_horseback|Diese Waffe kann reitend nicht nachgeladen werden.
+ui_delivered_number_damage_to_horse|Dem Reittier wurde %d Schaden zugefügt.
+ui_horse_charged_for_number_damage|Reittier griff an und erzeugte %d Schaden.
+ui_horse_received_number_damage|Reittier erlitt %d Schaden.
+ui_horse_fell_dead|Reittier verendet...
+ui_horse_crippled|Reittier verkrüppelt...
+ui_you_got_value|%s verdient.
+ui_has_deserted_the_party|hat die Truppe verlassen.
+ui_have_deserted_the_party|haben die Truppe verlassen.
+ui_loading_textures|Texturen werden geladen (etwas Geduld)...
+ui_order_hold_fire_toggle|Beschuss einstellen/Nach Belieben schießen (an/aus)
+ui_order_dismount_toggle|Befehl Absitzen/Aufsitzen (an/aus)
+ui_mount_horses_e_|%s, Aufsitzen!
+ui_hold_fire_e_|%, Beschuss einstellen!
+ui_fire_at_will_e_|%s, Nach Belieben schießen!
+ui_recent_messages|Letzte Benachrichtigungen
+ui_value_denars|%d Ressourcenpunkte.
+ui_cannot_be_used_on_horseback|Kann reitend nicht benutzt werden

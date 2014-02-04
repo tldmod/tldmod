@@ -25,7 +25,7 @@ from ID_particle_systems import *
 #TLD - significantly modified module_skins.py (Hokie)
 
 uruk_face_keys = [
-(10,0,-0.5,1.5, "Wieght"),
+(10,0,-0.5,1.5, "Weight"),
 (20,0,-0.5,1.5, "Mouth Shape"),
 (30,0,-0.5,1.25, "Eyelids"),
 (40,0,1.25,-0.25, "Eye to Eye Dist"),
