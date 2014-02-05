@@ -50,7 +50,7 @@ qstr_Companions_Lost/Depa|Compañeros perdidos/retirados: {reg0}
 qstr_Wealth:_{reg0}_denar|Riqueza: {reg0} monedas en recursos
 qstr_Inventory:_{reg0}_de|Inventario: {reg0} monedas
 qstr_Experience:_{reg0}|Experiencia: {reg0}
-qstr_Days_Passed:_{reg0}|Días pasados: {reg0}
+qstr_Days_Passed:_{reg0}|Días transcurridos: {reg0}
 qstr_Difficulty:_{reg0}%|Dificultad: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|PUNTUACIÓN TOTAL: {reg0}
@@ -91,7 +91,7 @@ qstr_Enforcer_of_{s5}|Ejecutor de {s5}
 qstr_Important_Ally_of_{s|Aliado Importante de {s5}
 qstr_Ally_of_{s5}|Aliado de {s5}
 qstr_Accomplice_of_{s5}|Cómplice de {s5}
-qstr_Useful_Tool_of_{s5}|Herramienta útil de {s5}
+qstr_Useful_Tool_of_{s5}|Instrumento útil de {s5}
 qstr_Servant_of_{s5}|Sirviente de {s5}
 qstr_Unknown_to_{s5}|Desconocido para {s5}
 qstr_You_have_been_{reg1?|¡Has sido {reg1?ascendido:degradado} a {s24} ({reg0})!
@@ -104,7 +104,7 @@ qstr_its|su
 qstr_[no_upkeep_costs]|[sin gastos de mantenimiento]
 qstr_Short_of_Resource_Po|¡Puntos de Recursos insuficientes!
 qstr_{s10}_will_soon_reas|¡{s10} reasignará pronto algunas de las tropas de {s12} a tu grupo!
-qstr_Superior_orders_from|Llegan órdenes de tu superior {s11} para reasignar tropas...
+qstr_Superior_orders_from|Llegan órdenes de tu superior {s11} para reasignar tropas:
 qstr_{reg12}_{s10}_left_t|¡{reg12} {s10} dejan el grupo!
 qstr_Fangorn_claimed_{reg|¡Fangorn se ha cobrado {reg0} muertos y {reg1} heridos entre tus tropas!
 qstr_You_were_wounded_in_|¡Te han herido en Fangorn!
@@ -448,7 +448,7 @@ qstr_Well_met_{playername|Nos encontramos de nuevo, {playername}, {s24}. No me e
 qstr_Thank_you_Mithrandir|¡Gracias, Mithrandir!
 qstr_The_wizard_Saruman_i|¡El mago Saruman ya no sigue entre nosotros y Barad Dûr ha sido reducido a polvo junto con su Señor Oscuro! Los pueblos de la Tierra Media han sido liberados de la amenaza que casi consumió todo el bien y la pureza de este mundo. ¡El enemigo ha sido vencido y el Rey ha regresado!
 qstr_It_was_a_long_and_bl|Ha sido una guerra larga y sangrienta, muchos de nuestros amigos ya no están entre nosotros.
-qstr_There_is_much_to_reg|Hay mucho que lamentar y llorar, y más aún que reconstruir y reparar en los días venideros. Pero por ahora, alegrémonos con aquellos de nuestros amigos que aún están con nosotros y celebremos todo lo conseguido en Los Últimos Días de la Tercera Edad.
+qstr_There_is_much_to_reg|Hay mucho que lamentar y llorar, y más aún que reconstruir y reparar en los días venideros. Pero por ahora, alegrémonos con aquellos de nuestros amigos que aún siguen con nosotros y celebremos todo lo conseguido en Los Últimos Días de la Tercera Edad.
 qstr_Bagginsssss..._Ssssh|Bolsssónnnn... Comaaarca...
 qstr_I..._don_t_know!|¡Yo... no... lo conozco!
 qstr_It..._beckonsssssss.|Nosss... llaamaaa...
@@ -827,7 +827,7 @@ qstr_My_apologies_if_I_wa|Mis disculpas si he sido grosero antes. ¿Cuál era tu
 qstr_I_was_reconsidering_|He reconsiderado nuestra última conversación. ¿Cuál era tu historia?
 qstr_Greetings_{s23}_{s24|Saludos, {s23}, {s24}.
 qstr_Greetings_{s23}.|Saludos, {s23}.
-qstr_So_you_are_{s23}._I_|Entonces, tu eres {s23}. He oído que lucháis por nuestros amigos {s25}, supongo que debería consideraros como un aliado.
+qstr_So_you_are_{s23}._I_|Así que tú eres {s23}. He oído que luchas por nuestros amigos de {s25}, supongo que debería considerarte mi aliado.
 qstr_I_need_volunteers_wi|Necesito voluntarios dispuestos a seguirme en misiones peligrosas.
 qstr_I_need_some_soldiers|Necesito algunos soldados para reemplazar mis muertos.
 qstr_{playername}_s_Reser|Reservas de {playername}
