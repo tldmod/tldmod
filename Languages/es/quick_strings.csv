@@ -589,7 +589,7 @@ qstr__________Faction_str|Informe de Fuerza de las Facciones:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Las facciones son normalmente asediadas cuando tienen {reg1} de fuerza.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Virtudes Conseguidas:^{s2}
-qstr_^^You_are_{s17}.|^^Tu eres {s17}.
+qstr_^^You_are_{s17}.|^^Te encuentras {s17}.
 qstr_Assassins_in_the_cam|¡Asesinos en el campamento, defendeos!
 qstr_Ally_party_size:_{re|Tamaño del grupo aliado: {reg1}
 qstr_Enemy_party_size:_{r|Tamaño del grupo enemigo: {reg1}
@@ -747,7 +747,7 @@ qstr_Guard_Legion_of_{s6}|Legión de guardianes de {s6}
 qstr_Scouts_report_that_{|Los exploradores informa de que {s6} ha congregado un gran ejercito en las proximidades de {s7}, en un último y desesperado intento de defender la capital.
 qstr_The_forces_of_{s2}_e|¡Las fuerzas de {s2} han establecido un campamento avanzado en {s15}!
 qstr_{s1}_from_{s2}|{s1} de {s2}
-qstr_When_dealing_with_lo||Cuando tratéis con locales en {s11}, recordad que ellos no te conocen y que no necesariamente reconocen los méritos que habéis ganado en {s10}. (los Puntos de Recursos que podéis disponer con la gente de {s11} no son los mismo que ganáis en {s10}, sino los que ganaréis en {s11} - ver también la pantalla de informes)
+qstr_When_dealing_with_lo|Cuando trates con {s11}, recuerda que ellos no te conocen y que no necesariamente tienen que saber de los méritos conseguidos en {s10}. (los Puntos de Recursos que dispones con la gente de {s11} no son los mismos que con {s10}, sino los que ganes en un futuro con {s11} -- echa un vistazo al menú de informes)
 qstr_Info|Información
 qstr_You_came_into_a_poss|Entráis en el lugar de un extraño, un bol de gran tamaño con agua de apariencia fresca. Huele un poco como el almizcle.
 qstr_Obtained:_Ent_water.|Has conseguido: Agua Ent.
