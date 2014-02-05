@@ -139,10 +139,10 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} en batalla
 qstr_+1_to_Charisma|+1 en Carisma
 qstr_+1_to_Surgery|+1 en Cirugía
 qstr_+1_to_Persuasion|+1 en Persuasión
-qstr_+1_to_Ironflesh|+1 en Piel de Hierro
+qstr_+1_to_Ironflesh|+1 en Piel curtida
 qstr_+1_to_Prisoner_Mgmt|+1 en Manejo de Prisioneros
 qstr_+2_to_Crafting|+2 de ingeniería
-qstr_+3_to_Spotting|+3 en Avistar
+qstr_+3_to_Spotting|+3 de Avistamiento
 qstr_Less_Beorning_upkeep|Menor mantenimiento para Beórnidas
 qstr_Less_Dunnish_upkeep|Menor mantenimiento para Dunlendinos
 qstr_Less_Wargs_upkeep|Menor mantenimiento para Huargos
@@ -164,8 +164,8 @@ qstr_wounded|heridos
 qstr_None|Ninguno
 qstr_^None|^Ninguno
 qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja carretera abandonada
-qstr_near_what_is_left_of|cerca de lo que queda de la Vieja Carretera del Bosque, el antiguo camino enano que se utiliza para cruzar el espeso bosque
-qstr_close_to_the_Hand_sh|cerca de la señal de la Mano-Blanca Saruman, que apunta hacia la torre de Orthanc
+qstr_near_what_is_left_of|cerca de lo que queda de la Vieja Carretera del Bosque, el antiguo camino enano que se utilizaba para cruzar el espeso bosque
+qstr_close_to_the_Hand_sh|cerca de la señal de la Mano Blanca de Saruman, que apunta hacia la torre de Orthanc
 qstr_in_sight_of_the_maje|a la vista de las majestuosas murallas de Minas Tirith, la Ciudad Blanca
 qstr_in_sight_of_the_entr|a la vista de la entrada a Erebor, la fortaleza enana
 qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
@@ -361,19 +361,19 @@ qstr_Reputation_type:_{s1|Tipo de reputación: {s15}
 qstr_Entries_up_to_#{reg5|Entradas hasta #{reg5} omitidas
 qstr_A_new_location_is_no|¡Hay un nuevo lugar disponible en el mapa!
 qstr_New_trait_gained:_{s|Nueva virtud conseguida: {s5}.
-qstr_Gained_permanent_+1_|+1 en Fuerza ganado permanentemente
-qstr_Gained_permanent_+1_t|+1 en Agilidad ganado permanentemente
-qstr_Gained_permanent_+1_to|+1 en Carisma ganado permanentemente
-qstr_Gained_permanent_+20|+20 en Habilidades con Armas ganado permanentemente
-qstr_Gained_permanent_+2_|+2 en Fuerza ganado permanentemente
-qstr_Gained_permanent_+2_t|+2 en Carisma ganado permanentemente
+qstr_Gained_permanent_+1_|Has conseguido +1 punto permanente de Fuerza.
+qstr_Gained_permanent_+1_t|Has conseguido +1 punto permanente de Agilidad.
+qstr_Gained_permanent_+1_to|Has conseguido +1 punto permanente de Carisma.
+qstr_Gained_permanent_+20|Has conseguido +20 puntos permanentes de Manejo de Armas.
+qstr_Gained_permanent_+2_|Has conseguido +2 puntos permanentes de Fuerza.
+qstr_Gained_permanent_+2_t|Has conseguido +2 puntos permanentes de Carisma.
 qstr_Lost_permanent__1_to|-1 en Carisma perdido permanentemente
-qstr_Gained_permanent_+1_to_|+1 en Piel de Hierro ganado permanentemente
-qstr_Gained_permanent_+5_|+5 en Fuerza ganado permanentemente
+qstr_Gained_permanent_+1_to_|Has conseguido +1 punto permanente de Piel curtida.
+qstr_Gained_permanent_+5_|Has conseguido +5 puntos permanentes de Fuerza.
 qstr_Lost_permanent__2_to|-2 en Carisma perdido permanentemente
-qstr_Gained_permanent_+2_to|+2 en Piel de Hierro ganado permanentemente
-qstr_Gained_permanent_+10|+10 en Habiliades con Armas ganado permanentemente
-qstr_Gained_permanent_+1_to_T|+1 en Táctica ganado permanentemente
+qstr_Gained_permanent_+2_to|Has conseguido +2 puntos permanentes de Piel curtida.
+qstr_Gained_permanent_+10|Has conseguido +10 puntos permanentes de Manejo de Armas.
+qstr_Gained_permanent_+1_to_T|Has conseguido +1 punto permanente de Habilidad Táctica.
 qstr_You_have|Tienes
 qstr_{s1}_has|{s1} tiene
 qstr_{s11}_suffered_a_ser|{s11} ha sufrido una herida seria.

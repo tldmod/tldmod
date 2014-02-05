@@ -1,43 +1,43 @@
-ui_at_learning_limit|(Hasta el límite de aprendizaje)
-ui_not_enough_skill_points_to_learn|(No hay suficientes puntos de habilidad para aprender)
-ui_not_enough_attributetype_to_learn_this_skill|(No tenéis suficiente %s para aprender esta habilidad)
+ui_at_learning_limit|(en el límite de aprendizaje para esta raza)
+ui_not_enough_skill_points_to_learn|(sin suficientes puntos de habilidad para aprender)
+ui_not_enough_attributetype_to_learn_this_skill|(sin suficiente %s para aprender esta habilidad)
 ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e incrementa la velocidad del arma en un 0.5%. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de Agilidad: Escudo, Atletismo, Maestro de armas, Cabalgar, Arquero montado, Saquear.
 ui_retreated_battle|%s ha huido del campo de batalla.
 ui_riding_skill_not_adequate_to_mount|(Habilidad de cabalgar no adecuada para montar)
-ui_camp|Acampar
-ui_tutorial_inventory|Ésta es la pantalla de comercio. Pulsad la tecla Control mientras hacéis clic en un objeto para comprarlo o venderlo rápidamente.
-ui_you_dont_have_value|No tenéis %s.
-ui_merchant_cant_afford_value|%s: No puedo pagar %s. Sólo tengo %s.
-ui_merchant_pay_whatever|De acuerdo, pagad con lo que tenéis.
-ui_horse|Caballo
-ui_reclaim_your_sold_goods|¡Reclamad vuestros objetos vendidos antes de comprar eso!
-ui_return_your_bought_goods|¡Devolved vuestros objetos comprados antes de comprar eso!
-ui_return_price|Precio de vuelta: %d
-ui_sell_price|Precio de venta: %d
-ui_reclaim_price|Precio de reclamación: %d
-ui_buying_price|Precio de compra: %d
-ui_notification_riding_skill_not_enough|Vuestra habilidad de cabalgar no es suficiente para montar este caballo.
-ui_notification_payment_value|Debéis pagar %s.
-ui_notification_payment_receive_value|Recibiréis %s.
-ui_weekly_cost_value|Coste semanal: %s
+ui_camp|Acciones
+ui_tutorial_inventory|En The Last Days, necesitas Puntos de Recursos para conseguir equipamiento. Los Puntos de Recursos miden el apoyo de una facción para mantenerte bien surtido, y cuantos de los recursos de dicha facción te corresponden utilizar.
+ui_you_dont_have_value|No tienes: %s.
+ui_merchant_cant_afford_value|¡%s: Nos estás dando más de lo que necesitamos! Tal vez sea mejor que compres algo más (estás ofreciendo bienes valorados en %s, nosotros sólo podemos tener %s).
+ui_merchant_pay_whatever|No, no necesito para nada, quédatelo.
+ui_horse|Montura
+ui_reclaim_your_sold_goods|¡Pedir la devolución de lo ofrecido antes de darlo!
+ui_return_your_bought_goods|¡Devolver los bienes que te has llevado antes de dar eso!
+ui_return_price|Precio de vuelta: %d P. de Rec.
+ui_sell_price|Precio de venta: %d P. de Rec.
+ui_reclaim_price|Precio de vuelta: -%d P. de Rec.
+ui_buying_price|Precio de compra: -%d P. de Rec.
+ui_notification_riding_skill_not_enough|No tienes habilidad suficiente para montar esta bestia.
+ui_notification_payment_value|Tienes que pagar %s.
+ui_notification_payment_receive_value|Consigues %s.
+ui_weekly_cost_value|Coste de mantenimiento: %s
 ui_sell|Vender
-ui_hire|Contratar
-ui_notification_cant_hire|(Imposible contratar: no hay suficiente dinero)
-ui_joining_cost_weekly_wage|Coste de unirse: %d, coste semanal: %d
-ui_weekly_wage|Salario semanal: %d
-ui_price|Precio: %d
-ui_cant_reload_this_weapon_on_horseback|No podéis recargar este arma a caballo.
-ui_delivered_number_damage_to_horse|Habéis procurado %d puntos de daño al caballo.
-ui_horse_charged_for_number_damage|El caballo ha embestido %d puntos de daño.
-ui_horse_received_number_damage|El caballo ha recibido %d puntos de daño.
-ui_horse_fell_dead|El caballo ha caído muerto...
-ui_horse_crippled|Caballo lisiado...
-ui_you_got_value|Tenéis %s.
-ui_has_deserted_the_party| ha desertado del grupo.
-ui_have_deserted_the_party| han desertado del grupo.
+ui_hire|Reclutar
+ui_notification_cant_hire|(sin P. de Rec. suf. para reclutar)
+ui_joining_cost_weekly_wage|Coste de unirse: %d Pts. de Rec, coste semanal: %d Pts. de Rec.
+ui_weekly_wage|Coste de mantenimiento: %d P. de Rec.
+ui_price|Precio: %d P. de Rec.
+ui_cant_reload_this_weapon_on_horseback|No se puede recargar a lomos de una montura.
+ui_delivered_number_damage_to_horse|La montura ha sufrido %d puntos de daño.
+ui_horse_charged_for_number_damage|La montura embiste con %d puntos de daño.
+ui_horse_received_number_damage|La montura ha recibido %d puntos de daño.
+ui_horse_fell_dead|Han acabado con tu montura...
+ui_horse_crippled|Montura herida...
+ui_you_got_value|Has conseguido %s.
+ui_has_deserted_the_party|ha dejado el grupo.
+ui_have_deserted_the_party|han dejado el grupo.
 ui_loading_textures|Cargando texturas... (ten paciencia)
-ui_order_hold_fire_toggle|Ordenar alto al fuego/fuego a discreción (Cambio)
-ui_order_dismount_toggle|Ordenar desmontar/montar caballos (Cambio)
+ui_order_hold_fire_toggle|Ordenar alto el fuego/fuego a discreción (Intercam.)
+ui_order_dismount_toggle|Ordenar desmontar/montar (Intercam.)
 ui_mount_horses_e_|¡%s, montad!
 ui_hold_fire_e_|¡%s, no disparéis!
 ui_fire_at_will_e_|¡%s, disparad!

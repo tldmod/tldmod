@@ -17,14 +17,14 @@ mno_custom_battle_scenario_10|            Batallas de prueba de escenarios
 mno_troll_battle_scenario|            Batallas de equilibrio de trolls
 mno_warg_battle_scenario|            Batallas de equilibrio de huargos
 mno_build_your_own_scene|            ** Construir tu propio escenario para TLD **
-mno_go_back_spc|            Retroceder
+mno_go_back_spc|            Volver atrás.
 menu_tutorial|^^TLD tiene varias características desconocidas para aquellos que provienen de M&B Native. Estas están descritas detalladamente sin revelar sorpresas en un PDF incluido con el mod. Para el tutorial de iniciación sobre la mecánica básica del juego, practica con el módulo Native.
 mno_go_back_dot|Volver atrás.
 mno_view_upkeep_costs|Ver costes de mantenimiento.
 mno_view_character_report|Ver informe del personaje.
 mno_view_party_size_report|Ver informe del tamaño del grupo.
 mno_view_morale_report|Ver informe de la moral del grupo.
-mno_view_character_report_02|Combrobar estado de los PNJ.
+mno_view_character_report_02|Comprobar estado de los PNJ.
 mno_view_faction_strengths_report|Ver informe de fuerza de facción.
 mno_view_traits_report|Ver virtudes conseguidas.
 mno_resume_travelling|Reanudar Viaje.
@@ -62,7 +62,7 @@ mno_start_ma|HOMBRE
 mno_start_el|ELFO
 mno_start_dw|ENANO
 mno_go_back|Volver atrás
-menu_start_evil|^^^^^^^^^^¿A quién serviréis?
+menu_start_evil|^^^^^^^^^^¿Quién será tu Señor?
 mno_start_eye|SAURON de Mordor, el Señor de los Anillos
 mno_start_hand|SARUMAN de Isengard, la Mano Blanca
 menu_start_eye|^^^^^^^^^Tu señor es el Gran Ojo^Elige tu raza:
@@ -102,7 +102,7 @@ mno_start_rh|RHUN, los bárbaros del Este
 mno_start_kh|KHAND, el pueblo salvaje del Sureste
 menu_start_eye_orc|^^^^^^^^^^¿Desde donde acechas al enemigo?
 mno_start_arm|desde los ejércitos reunidos en MORDOR
-mno_start_cav|desde las ccuevas de DOL GULDUR
+mno_start_cav|desde las cuevas de DOL GULDUR
 menu_start_hand_orc|^^^^^^^^^^¿Desde donde acechas al enemigo?
 mno_start_armis|desde los ejércitos reunidos en ISENGARD
 mno_start_minmo|desde las minas de MORIA
@@ -117,30 +117,30 @@ menu_choose_gender|^^^^^^^^^^¿Cual es tu sexo?
 mno_start_male|Hombre
 mno_start_female|Mujer
 mno_proc|Seguir sin más
-mno_continue|Continuar
+mno_continue|Continuar...
 menu_character_report|^^^^^Moral del Grupo: {reg8}^Límite del tamaño del grupo: {reg7}^{s5}
-menu_camp|^^^^En estos momentos, te encuentras en {s1}.{s2}^^¿Qué queréis hacer?
+menu_camp|^^^^Estás en {s1}.{s2}^^¿Qué quieres hacer?
 mno_camp_scene|Dar una vuelta.
 mno_camp_troop|Revisar{reg10? tropas:}{reg12? y:}{reg11? prisioneros:}.
 mno_camp_action|Usar un objeto.
 mno_camp_wait_here|Acampar aquí durante algún tiempo.
 mno_camp_options|Cambiar opciones de TLD.
 mno_Cheat_enable|Activar las opciones de trucos/modding.
-menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
-mno_game_options_restrict_items|Equipamento restringido:  {s7}
-mno_game_options_formations|IA y Formaciones de batalla:  {s7}
-mno_game_options_town_menu|NPC's de los poblados siempre visibles desde el Menú:  {s7}
-mno_game_options_cutscenes|Cinemáticas:  {s7}
-mno_game_options_injuries|Heridas para compañeros:  {s7}.
-mno_game_options_death|Muerte permanente para Nobles y compañeros:  {s7}.
+menu_game_options|^^^^^^^^Haz clic sobre una opción para des/activarla:
+mno_game_options_restrict_items|Restringir el equipamiento del jugador: {s7}
+mno_game_options_formations|IA y Formaciones de batalla: {s7}
+mno_game_options_town_menu|PNJs de lugares siempre accesibles desde el Menú:  {s7}
+mno_game_options_cutscenes|Cinemáticas: {s7}
+mno_game_options_injuries|Los compañeros sufren heridas: {s7}.
+mno_game_options_death|Muerte permanente para Nobles y compañeros: {s7}.
 mno_game_options_death2|Muerte permanente para el jugador (Este eres TÚ):  {s7}.
-mno_game_options_morale|Sistema de Moral de Batalla:  {s7}
-mno_game_options_animal_ambushes|Emboscadas de animales:  {s7}
+mno_game_options_morale|Sistema de Moral en Batalla: {s7}
+mno_game_options_animal_ambushes|Emboscadas de animales: {s7}
 mno_game_options_tweaks|Ajustes de jugabilidad...
 mno_game_options_back|Volver al menú del campamento.
 menu_camp_tweaks|^^^^^^^^Elige la opción que te gustaría ajustar.
 mno_tweak_options_compat|Ajustes de compatibilidad...
-mno_tweak_options_strat|Ajustes de estrategia...
+mno_tweak_options_strat|Ajustes estratégicos...
 mno_tweak_options_back|Volver al menú de opciones.
 menu_camp_compat_tweaks|^^^^^^^^Haz click sobre una opción para cambiarla (Mantén pulsado Mayús para disminuir):^(Esto es para compatibilidad y no son trucos)
 mno_game_options_compat_party|Máximo número de grupos: {s1}
@@ -149,18 +149,18 @@ menu_camp_strat_tweaks|^^^^^^^^Haz clic sobre una opción para cambiarla:^(cuida
 mno_strat_tweaks_siege_reqs|Requisitos de fuerza para asedio: {s7}
 mno_strat_tweaks_siege_relax_rate|Req. de fuer. para asedio: Velocidad de mitigación: {reg1}
 mno_strat_tweaks_regen_rate|Velocidad de regeneración de fuerza: {s7}
-mno_strat_tweaks_siege_regen_limit|No regenerar facciones debajo de: {reg1}
+mno_strat_tweaks_siege_regen_limit|No regenerar facciones por debajo de: {reg1}
 mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
-mno_camp_customize_defilement|Personalizar Armadura Profanada:
+mno_camp_customize_defilement|Personalizar Armadura Profanada
 mno_camp_drink_water|¡Beber el Agua Ent!
-mno_camp_action_4|Volver.
-menu_assasins_attack_player_won|Haz derrotado los asesinos de {s2}, enviados por {s3}.
+mno_camp_action_4|Atrás.
+menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|¡Has escapado con vida!
-menu_fangorn_danger|^^^^^^Es extraño... sientes como ruidos amenazadores alrededor de ti.^Están los árboles hablando? Hay una sensación de profunda ira y dolor en el aire...^Tus órdenes?
-mno_be_quiet_elf|Respetad los árboles. Moveos en silencio a lo largo del bosque.
-mno_be_quiet|¡Poned vustras armas en el suelo y calláos!.. ¡Ahora, vayámonos de aquí!
-mno_be_bold|¡Moveos! ¡No le temo ni a las plantas ni a los viejos mitos!
+menu_fangorn_danger|^^^^^^Es extraño... sientes ruidos amenazadores a tu derredor.^¿Están los árboles hablando? Notas una fuerte sensación de profunda ira y punzante dolor en el aire...^¿Cuales son tus órdenes?
+mno_be_quiet_elf|Respetar la ira de los árboles. Moveos en silencio a lo largo del bosque.
+mno_be_quiet|¡Poner vuestras armas en el suelo y manteneos en silencio! ¡Ahora, vayámonos de aquí!
+mno_be_bold|¡Seguir adelante! ¡No le temo ni a las plantas ni a los viejos mitos!
 mno_fight_back|¡Vamos a ver! ¡Peinad el área! ¡Quemad un árbol o dos!
 menu_fangorn_search_fails|^^^^^^Buscas en la oscuridad, en el espesor del bosque pero no encuentras nada.^Aún así, te sientes observado y amenazado, más y más...
 menu_fangorn_battle_debrief_won|^^^Una gran victoria!^^^Entonces, esto es lo que significan todos los mitos sobre Fangorn...
@@ -170,7 +170,7 @@ menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^
 menu_fangorn_killed_troop_only|^^^^^^^^Deambulas por el frondoso y oscuro bosque. Tus tropas están aterrorizadas.^^De repente, escuchas gritos que provienen desde la retaguardia, sólo para encontrarte con un puñado de tus tropas en el suelo, bañadas en su propia sangre.^^Otros tantos han desaparecido sin más...
 mno_get_out|¡Salgamos de este maldito lugar!
 menu_can_capture_troll|¡El troll caído todavía respira!^^Sus ojos malignos te miran fijamente, llenos de rabia y dolor.^Incluso ahora, que ha sido derribado, y yace indefenso en el charco de su propia sangre, parece increíblemente peligroso...
-mno_killit|Acabar con él, ahora. Aségurate de que muera.
+mno_killit|Acabar con él, ahora. Asegurándote de que muera.
 mno_cageit1|Enjaularlo y llevarlo a rastras.
 mno_cageit2|Enjaularlo junto con el otro troll.
 mno_cheat_disabable|Desactivar las opciones de trucos/modding.
@@ -180,33 +180,33 @@ mno_i_shall_surv|¡Sob... re... viviré!
 menu_end_game|^^^^^Has tomado tu decisión, y te propones dejar atrás tu vida de aventuras y sentar la cabeza. Vendes tus armas y armadura, reúnes todas tus pertenencias, y cabalgas hacia el amanecer...
 mno_end_game_bye|Buen viaje.
 menu_cattle_herd|Te encuentras de frente con algunas personas.
-mno_cattle_drive_away|Ordenarles que te sigan.
+mno_cattle_drive_away|Decirles que te sigan.
 mno_cattle_stop|Decirles que se detengan.
-mno_leave|Atrás...
+mno_leave|Irse.
 menu_simple_encounter|^^^^^{s2}^Tienes {reg22} tropas listas para la batalla, te enfrentarás al enemigo, que tiene {reg11}.^^La batalla tomará lugar en {s3}{s4}.^^¿Cuales son tus órdenes?
-mno_encounter_attack|{reg21?Cargar hacia la victoria:Prepararse para un enfrentamiento}.
+mno_encounter_attack|{reg21?Cargar hacia la victoria:Prepararse para el enfrentamiento}.
 mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ellos} sin tu ayuda.
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
 mno_encounter_leave|Separarse.
-mno_encounter_retreat|Huye, dejando a algún soldado detrás para cubrir tu retirada.
+mno_encounter_retreat|Huir, dejando a algún soldado detrás para cubrir tu retirada.
 menu_encounter_retreat_confirm|^^^^^Como el miembro del grupo con mayor habilidad táctica, ({reg2}), {reg3?trazas:{s3} traza} un plan que te permitirá a ti y a los tuyos escapar sanos y salvos, pero tendrás que dejar {reg4} soldados detrás para distraer al enemigo y que no os dé caza.
 mno_leave_behind|Seguir. El sacrificio de unos pocos salvará al resto.
 mno_dont_leave_behind|Ni hablar. No dejaremos a nadie detrás.
 menu_encounter_retreat|^^^^^Le dices a {reg4} de tus tropas que mantengan la posición y distraigan al enemigo mientras tú y los tuyos os retiráis junto con el resto del grupo.
 menu_order_attack_begin|^^^^^^ Tus tropas se preparan para atacar al enemigo.
-mno_order_attack_begin|Ordenar que empiece el ataque.
+mno_order_attack_begin|Ordenar que comience el ataque.
 mno_call_back|Anunciar la retirada.
 menu_order_attack_2|^{s4}^Tus bajas: {s8}^^Bajas enemigas: {s9}
 mno_order_attack_continue|Ordenar a tus tropas que reanuden el ataque.
 mno_order_retreat|Anunciar la retirada.
 menu_kingdom_army_quest_report_to_army|{s8} te comunica que quiere que te unas a él en su nueva campaña militar. Necesitas llevar por lo menos {reg13} tropas contigo para que te admitan en su ejército, y te sugiere amablemente que te hagas con más guerreros con la celeridad adecuada en caso de que no cuentes con los efectivos suficientes.
-mno_reject|Enviar el mensaje diciendo que te encuentras demasiado ocupado.
-mno_send_word|Enviarle el mensaje de que te reunirás con el en breve.
+mno_reject|Enviarle el mensaje diciendo que te encuentras demasiado ocupado.
+mno_send_word|Enviarle el mensaje de que te reunirás con él en breve.
 menu_kingdom_army_quest_messenger|{s8} desea hablar contigo acerca de una tarea que quiere encomendarte. Te pide que vayas a verlo tan pronto como sea posible.
 menu_kingdom_army_quest_join_siege_order|{s8} te envía el mensaje de que debes unirte al asedio de {s9} en preparación para un asalto completo. Tus tropas deberán tomar {s9} a cualquier precio.
 menu_kingdom_army_follow_failed|Has desobedecido órdenes directas y no has seguido a {s8}. Te envía un mensaje en el que asume que tienes otras cuestiones más urgentes que atender, pero te advierte que su paciencia tiene un límite.
 menu_battle_debrief|{s11}^Tus bajas: {s8}{s10}^^Bajas enemigas: {s9}
-mno_inspect_troll|Inspeccionar troll caido
+mno_inspect_troll|Inspeccionar el troll caído
 menu_pre_join|^^^^^Te encuentras en frente de una batalla entre {s2} y {s1}. Al final decides...
 mno_pre_join_help_attackers|Ayuda con tus refuerzos a {s2}.
 mno_pre_join_help_defenders|Apresurarte a ayudar a {s1}.
@@ -232,12 +232,12 @@ mno_talk_to_siege_commander|Pedir una reunión con el comandante.
 mno_join_siege_with_allies|Unirse al siguiente asalto.
 mno_join_siege_stay_back|Ordenar a tus tropas unirse al próximo asalto sin tu ayuda.
 menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos por restablecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Hojeando el libro, te topas con las palabras "plata auténtica". Estudiando las paginas con detenimiento de repente entiendes que son las descripciones de un alijo de cofres enanos en algún punto de los niveles inferiores. Vaya, no estaría mal descubrir de nuevo el valioso mithril enano. ^Comienzas a seguir sus indicaciones con entusiasmo, a través de un estrecho y tortuoso túnel y en descenso...^...^Tras un par de horas de búsqueda infructuosa comprendes que estás irremediablemente perdido en las profundidades de Moria y necesitas encontrar una salida a la superficie como sea.
-mno_moria_exit_scene|¡Encuentra un camino de salida!
+mno_moria_exit_scene|¡Encontrar un camino de salida!
 menu_castle_outside|Te encuentras en las afueras de {s2}.{s11} {s3} {s4}
 mno_moria_enter|Volver al salón principal de Moria a través de la entrada secreta
 mno_moria_enter_door|Entrar en Moria.
 mno_castle_start_siege|Asediar {reg6?la ciudad:el castillo}.
-mno_castle_leave|Atrás...
+mno_castle_leave|Irse.
 menu_castle_besiege|Estás asediando {s1}. {s2} {s3}
 mno_siege_request_meeting|Pedir una reunión con el comandante del castillo.
 mno_wait_24_hours|Esperar hasta mañana.
@@ -245,7 +245,7 @@ mno_castle_lead_attack|Liderar a tus hombres en un asalto.
 mno_attack_stay_back|Ordenar a tus tropas atacar sin tu ayuda.
 mno_build_ladders|Preparar las escaleras para atacar los muros.
 mno_lift_siege|Abandonar el asedio.
-menu_siege_attack_meets_sally|^^^^^^Los defensores abandonan su protección para enfrentarse a tí.
+menu_siege_attack_meets_sally|^^^^^^Los defensores abandonan su protección para enfrentarse a ti.
 menu_construct_ladders|Como miembro del grupo con la mejor habilidad de ingeniería ({reg2}), {reg3?calculas:{s3} calcula} que tardareis unas {reg4} horas en construir suficientes escalas de asedio para llevar a cabo el asalto.
 mno_build_ladders_cont|Hacerlo.
 menu_castle_attack_walls_simulate|{s4}^^Tus bajas: {s8}^^Bajas enemigas: {s9}
@@ -297,12 +297,12 @@ menu_sneak_into_town_caught_ran_away|Retrocedes rápidamente hasta las puertas y
 menu_tld_player_defeated|^^^^^¡Un repentino dolor lacerante surca la parte de atrás de tu cabeza! \ Tiemblas y te encoges, mientras el mundo se tiñe de negro a tu alrededor...^¿Será éste tu final?
 menu_recover_after_death_fangorn|Te despiertas con el bosque todavía a tu alrededor. Cada hueso duele. Pero sigues vivo, de milagro.^^Fue una derrota, pero al menos tuviste la suerte de ver el resultado.^Ahora sabes de verdad que es lo que está pasando en esta foresta maldita, y vivirás para contarlo.^^Pero, ¿habrá alguien que te crea?
 menu_recover_after_death_moria|^^^^^Recuperas tu consciencia. Te encuentras sobre tierra suave y húmeda, el aire fresco rozándote la cara. Los orcos debieron tomarte por muerto y te tiraron a algún pozo turbio y tenebroso. ^La corriente ha debido llevarte hasta la superficie a través de alguna clase de corriente subterránea.
-mno_whatever|¡Levantarte!
+mno_whatever|¡Levantarse!
 menu_recover_after_death_default|^^^^^Recuperas tu consciencia y te encuentras sólo en el mismo sitio donde caíste. Los enemigos debieron tomarte por muerto y te dejaron allí. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad. Te levantas y vas en busca de supervivientes de tu grupo.
 menu_recover_after_death_town|^^^^Recuperas tu consciencia y te encuentras sólo en las afueras de la ciudad. ¡Estás vivo! Nadie parece estar cerca y tienes tu oportunidad de arrastrarte fuera del lugar. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad.
 menu_recover_after_death_town_alone|Recuperas tu consciencia y te encuentras sólo en las afueras de la ciudad. ¡Estás vivo! Nadie parece estar cerca y tienes tu oportunidad de arrastrarte fuera del lugar. Tus compañeros te encuentran. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad.
-menu_notification_center_under_siege|{s1} ha sido asediado por {s2} de {s3}!
-menu_notification_one_side_left|^^^^^¡La Guerra del Anillo ha terminado!^^Las {s1} ha derrotado a todos sus enemigos y se erigen victoriosas!
+menu_notification_center_under_siege|¡{s1} ha sido asediado por {s2} de {s3}!
+menu_notification_one_side_left|^^^^^¡La Guerra del Anillo ha terminado!^^Las {s1} han derrotado a todos sus enemigos y se erigen victoriosas!
 menu_notification_total_defeat|^^^^^¡La Guerra del Anillo ha terminado para ti! Las {s1} han sido derrotadas por sus enemigos y tu te mantienes sólo y abandonado en la derrota.
 menu_notification_your_faction_collapsed|^^^^^¡{s11}, tu antiguo hogar, ha caído!^Pero no temas, otros aliados permanecen activos en la Guerra. Tú, junto con cualquiera de los supervivientes de {s11} que sigan en pie, todavía podéis plantar cara al enemigo y ayudar a que tu facción gane.
 menu_notification_faction_defeated|^^^^^¡{s1} ha sido derrotado!^{s1} ya no existe, gracias los esfuerzos combinados de {s13}.
@@ -332,7 +332,7 @@ mno_cb_mordor2|Tierras Pardas
 mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Orientales
 mno_cb_mordor5|Moria
-mno_cb_mordor6|Puesto de Vigilancia Noreste de Gundabad
+mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Corsarios
 mno_rescue_mission|Escabullirse dentro de la guarida del hechicero bajo el abrigo de la noche.
@@ -341,7 +341,7 @@ mno_pick_troops1|Elige compañeros para la misión, {reg0} seleccionados
 menu_pick_troops|¿Quién quieres que te acompañe en ésta misión de sigilo?  Por el momento has elegido {reg0} compañeros. Puedes llevarte contigo hasta 10 tropas.
 mno_go_forward|Terminar de elegir compañeros y continuar.
 menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}.  Recubierto por completo por las melladas armas de sus enemigos caídos.
-mno_pay_respects|Arrodíllarte y mostrar tus respetos.
+mno_pay_respects|Arrodillarte y mostrar tus respetos.
 mno_swear_oath|¡Pronunciar un juramento de venganza!
 mno_despoil|Profanar el lugar
 mno_leave_mound|Dejar el túmulo.
@@ -353,7 +353,7 @@ mno_leave_pyre|Dejar la pira.
 menu_town_ruins|Cuando te acercas ves que {s1} está {s2}
 mno_ruin_menu_0|Explorar el lugar.
 mno_ruin_leave|Irse...
-menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no serás parte de ella nunca más.
+menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no formarás parte de ella nunca más.
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}
 menu_animal_ambush_fail|Los animales {reg0?te muerden y desgarran,:os muerden y desgarran a ti y a tu{reg2?s : }compañero{reg2?s,:,}} pero por suerte consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
