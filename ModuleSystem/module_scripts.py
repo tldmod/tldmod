@@ -13657,6 +13657,12 @@ scripts = [
          (str_store_string, s51, "@{s50}"),
        (try_end),
        (str_store_string, s2, "@{s50} belongs to {s1} of {s2}.^"), #TLD: was s51
+       ] + (is_a_wb_script==1 and [
+             
+       #swy-- this is needed to show by default the note entries on Warband, this one goes in the loop because we don't want to show everything...
+       (party_set_note_available, ":center_no", 1),
+
+       ] or []) + [
      (else_try),
        (str_clear, s2),
      (try_end),
@@ -13664,20 +13670,20 @@ scripts = [
      (call_script, "script_get_prosperity_text_to_s50", ":center_no"),
      (try_begin), #TLD: if party is disabled, clear all text so there will be no wiki entry
        (this_or_next|party_slot_eq, ":center_no", slot_center_destroyed, 1), # TLD
-	   (neg|party_is_active, ":center_no"),
+       (neg|party_is_active, ":center_no"),
+       
        (str_clear, s2),
+       ] + (is_a_wb_script==1 and [
+             
+       #swy-- this completely hides the notes on Warband, nice and tidy...
+       (party_set_note_available, ":center_no", 0),
+
+       ] or []) + [
      (try_end),
      (add_party_note_from_sreg, ":center_no", 0, "@{s2}", 0), #TLD: no prosperity
      #(add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
      (add_party_note_tableau_mesh, ":center_no", "tableau_center_note_mesh"),
-
-     ] + (is_a_wb_script==1 and [
-     
-     #swy-- this is needed to show by default the note entries on Warband...
-     (party_set_note_available, ":center_no", 1),
-
-     ] or [])
-),
+]),
 
 #script_update_center_recon_notes
 # INPUT: center_no
@@ -13694,14 +13700,7 @@ scripts = [
        (party_get_num_companions, reg5, "p_collective_ally"),
        (add_party_note_from_sreg, ":center_no", 1, "@Current garrison consists of {reg5} men.^Has food stock for {reg6} days.", 1),
      (try_end),
-     
-     ] + (is_a_wb_script==1 and [
-     
-     #swy-- this is needed to show by default the note entries on Warband...
-     (party_set_note_available, ":center_no", 1),
-
-     ] or [])
-),
+]),
 
 #script_update_all_notes
 ("update_all_notes",

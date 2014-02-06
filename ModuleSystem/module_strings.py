@@ -2438,11 +2438,11 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #[i]general idea= Merl? Marco? - quite paranoid, slightly bigheaded about their own importance, secretly enjoying the fruits of their trade with Dale and dwarves.[/i]
 ("woodelf_rumor_begin", "An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey."), #[color=red]Song of Nimrodel sung by Legolas[/color]
 ("woodelf_rumor_2", "Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves."), #[color=red]Legolas quote[/color]
-("woodelf_rumor_3", "Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."), 
+("woodelf_rumor_3", "Darkness and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light."), 
 ("woodelf_rumor_4", "Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?"),
 ("woodelf_rumor_5", "Shhh, no dhínen! There may be orcs lurking around. We must be on guard!"),
 ("woodelf_rumor_6", "*stares at you, obviously annoyed by your presence*"), #[color=red]removed text, because the player could be a Woodelf too and stil get this rumour as if he's foreign[/color]
-("woodelf_rumor_7", "Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere."),
+("woodelf_rumor_7", "Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere."),
 ("woodelf_rumor_8", "Edain of Dale make intricate toys these days! They've learnt much from the Naugrim."),
 ##
 ("woodelf_rumor_9", "The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!"),
