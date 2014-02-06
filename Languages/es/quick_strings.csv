@@ -320,7 +320,7 @@ qstr_{s9}_{s10}|{s9}, {s10}
 qstr_no_one|nadie
 qstr_{s11}_and_{s12}|{s11} y {s12}
 qstr_{s11}_{s12}|{s11}, {s12}
-qstr_{s5}_is_ruled_by_{s6|{s5} encabeza {s6}.^Controlan {s8}.^Sus señores son {s10}.^Las gentes de {s5} están en guerra con {s12}.
+qstr_{s5}_is_ruled_by_{s6|{s6} encabeza a {s5}.^Controlan {s8}.^Sus señores son {s10}.^Las gentes de {s5} están en guerra con {s12}.
 qstr_{s5}_has_been_defeat|¡{s5} ha sido derrotado!
 qstr_{s5}_has_a_strength_|{s5} tiene una fuerza total de {reg1} hombres.
 qstr_no_holdings|ningún asentamiento
@@ -895,7 +895,7 @@ qstr_You_have_requested_to|Ha solicitado a entregar un soborno de {s1} a {s3} de
 qstr_Taking_{reg0}_inf._A|Conquista {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|Gastas {reg0} de tu influencia con {s1}, sigues teniendo {reg11}.
 qstr_The_War_is_over_{pla|La guerra ha terminado, {playername}, ¿No te has enterado?
-qstr_We_are_at_war_with_{|Estamos en guerra con {s12}. Sin embargo, estamos luchamos sobre todo contra {s13}.
+qstr_We_are_at_war_with_{|Estamos en guerra con {s12}. Sin embargo, estamos luchando sobre todo contra {s13}.
 qstr_We_are_at_war_with_{s|Estamos en guerra con {s12}. Sin embargo, solo hay escaramuzas en este momento.
 qstr_we_are_not_too_conce|no estamos demasiado preocupados por ellos en este momento, ya que estamos luchando contra enemigos más cercanos a casa.
 qstr__under_your_orders|, bajo vuestras órdenes.
@@ -903,12 +903,12 @@ qstr_These_soldiers_may_w|Estos soldados también pueden cambiar el curso de mis
 qstr_Good_work_in_shaping|Buen trabajo en la formación de reclutas, {playername}, habéis sido de mucha utilidad. Esperemos que duren más que el último lote, pero ven a verme de nuevo si no.
 qstr_Well_the_soldiers_ar|Bueno, los soldados están bajo vuestro mando ahora, Sir. Estoy seguro que tendrá buen cuidado de ellos.
 qstr_Well_you_may_do_as_y|Bueno, puede hacer lo que queráis mis compañeros y yo siempre podemos endurecerlos más si fuera necesario.
-qstr_{s9}_asked_you_to_br|{s9} te ha pedido que lleves un mensaje a {s13}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
-qstr_{s9}_asked_you_to_fi|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
+qstr_{s9}_asked_you_to_br|{s9} te ha pedido que le traigas un troll salvaje para usarlo en su ejército.
+qstr_{s9}_asked_you_to_fi|{s9} te ha pedido que investigues lo que está pasando en el Bosque de Fangorn, y que vuelvas a informarle.
 qstr_{s9}_asked_you_to_fin|{s9} te ha pedido que encuentres la lanza perdida de los enanos hecha para el Rey Bladorthin. Tendrás que preguntar a {s5} para obtener el permiso para buscar la lanza en las profundidades de la Montaña Solitaria.
 qstr_{s9}_has_asked_you_t|{s9} te ha pedido que mates al hechicero de Dol Guldur en el Bosque Negro.
-qstr_{s9}_asked_you_to_ta|{s9} te ha pedido que lleves un mensaje a {s13}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
-qstr_{s9}_asked_you_to_tak|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. {s13} supuestamente estaba en {s4} cuando se te asignó esta misión.
+qstr_{s9}_asked_you_to_ta|{s9} te ha pedido que lleves un mensaje a {s13}. Se cree que {s13} estaba en {s4} cuando se te asignó esta misión.
+qstr_{s9}_asked_you_to_tak|{s9} te ha pedido que lleves un mensaje a {s13} de {s15}. Se cree que {s13} estaba en {s4} cuando se te asignó esta misión.
 qstr_{s11}_asked_you_to_e|{s11} te ha pedido que escoltes a su mensajero a {s14}.
 qstr_Lend_your_experience|Prestar a tu cirujano experto {s3} a {s1}.
 qstr_No_commander_should_|Ningún señor debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y había algunos que no sabían donde empieza y termina su espada. Necesitan a alguien que les enseñe el significado del valor. Tu eres un guerrero de renombre, {playername}. ¿Entrenarías algunas tropas por mi? Te lo agradecería enormemente.
@@ -962,7 +962,7 @@ qstr_The_{s11}_of_{s10}_a|El {s11} de {s10} te ha pedido escoltar algunos {s12} 
 qstr__Guards_slaughter_hi|¡Guardias, acabad con él!
 qstr_Slaughter_him_for_fr|¡Acabad con él si queréis carne humana fresca!
 qstr_This_is_{s5}_Command|Estamos en {s5}, mi señor.
-qstr_{s6}_This_place_and_|{s6} Este lugar y sus alrededores os pertenecen por supuesto, mi {lord/lady}.
+qstr_{s6}_This_place_and_|{s6} Este lugar y sus alrededores te pertenecen a ti y sólo a ti, mi {señor/señora}.
 qstr_{s6}_This_place_and_t|{s6} Este lugar y sus alrededores pertenecen a {s7} de {s8}.
 qstr_{s3}_and_{s5}|{s3} y {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
