@@ -29,27 +29,27 @@ dlga_start:hobbit_merry_talk_met.1|¡Bienvenido de nuevo, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|¡Bienvenido de nuevo, {playername}!
 dlga_hobbit_merry_talk_met:close_window|Saludos, maese Merry.
 dlga_hobbit_pippin_talk_met:close_window|Saludos, maese Pippin.
-dlga_start:treebeard_introduce_1|(Te encuentras mirando a una criatura extraordinaria. Es muy alto y de miembros rígidos con una piel rugosa como una corteza y con frondoso pelo. El musgo cubre algunas partes de su cuerpo. Pero en este momento te es imposible separar la vista de sus ojos. Esos profundos ojos te están vigilando, lentos y solemnes aunque también muy agudos y penetrantes. Piensas que son de color marrón, iluminados por una luz verde, como si fueran dos pozos profundos, llenos de experiencia y sabiduría. Pero en la superficie de sus ojos se aprecia un destello de interés... como el brillo del sol sobre las hojas de un vasto árbol, o sobre las ondas de un profundo lago.)
-dlga_treebeard_introduce_1:treebeard_introduce_2|(Estás a punto de hablar cuando de repente te inunda una sensación de ahogo, como si el aire se hubiera vuelto demasiado escaso para respirar... tomando desesperadamente una gran bocanada de aire consigues librarte de esa sensación y la inmensa criatura parecida a un árbol relaja un poco la intensidad de su mirada. La criatura sigue mirando hacia ti y te das cuenta que otras grandes criaturas de aspecto arbóreo también te están vigilando, como si esperaran que hablases...)
-dlga_treebeard_introduce_2:treebeard_introduce_3|Disculpen mi intrusión... No soy más que un caminante cansado que busca escapar de ciertos acontecimientos recientes... me llamo {playername}. ¿Puedo preguntar quienes sois?
-dlga_treebeard_introduce_3:treebeard_introduce_4|(El gigante arbóreo de rígidos miembros abre lentamente la boca, escondida detrás de pequeñas ramas, hojas y musgo. Con una voz profunda, lenta y estridente responde de manera autoritaria:)^  'Ajumm... Mmmm... No te voy a decir mi nombre... por lo menos, de momento. De hecho tardaría un buen rato en decírtelo. Mi nombre está creciendo continuamente and he vivido mucho,mucho tiempo; así que mi nombre es como un cuento. Los nombres de verdad que ciertamente cuentan una historia son los que pertenecen a mi lenguaje, a la antigua lengua Ent, digamos. Es un lenguaje maravilloso, pero se tarda muchísimo en decir cualquier cosa, porque no decimos nada, a no ser que merezca la pena tomarse mucho tiempo en explicarlo.'
-dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, así que eres un Ent! He oído muchas leyendas sobre vosotros y es un honor estar en tu presencia. No deseo molestar y me iré si así me lo pides.
-dlga_treebeard_introduce_5:treebeard_questtalk|(El gigante de rígidos miembros y sus compañeros Ents permanecen quietos durante muchos minutos en silencio mientras una brisa pasa a través de sus cabellos frondosos y de sus barbas. Se miran unos a otros durante un momento hasta que un inusualmente impaciente Ent con aspecto de serbal hace gestos de querer hablar. Sin embargo, permanece en silencio hasta que el gigante Ent de rígidos movimientos comienza a hablar de nuevo:)
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como estaba diciendo...:Ajumm... Apreciamos tu gran cortesía con nosotros. Es bastante inusual verlo en gentes de tu raza:¡qué gusto hablar con elfos de nuevo! Las cosas no han ido bien desde que las Entmujeres desaparecieron - y ahora hay muchas criaturas malvadas del Señor Oscuro tratando de destruir nuestros hogares. Buscamos a alguien rápido pero prudente. Alguien que pueda ayudarnos mientras discutimos nuestros próximos movimientos.^Muchas hordas de orcos han asaltado el bosque y quemado nuestros árboles con sus proyectiles de fuego - si pudieras derrotar a los orcos y asegurarte de que no vuelven a amenazar el bosque, te estaríamos agradecidos y te consideraríamos nuestro amigo. Haz esto y hablaremos de nuevo.
+dlga_start:treebeard_introduce_1|(Te encuentras mirando a una criatura extraordinaria. Es muy alto y de miembros rígidos, con una piel rugosa como la corteza y de frondoso pelo. El musgo cubre algunas partes de su cuerpo. Pero en este momento te es imposible separar la vista de sus ojos. Esos profundos ojos te están vigilando, lentos y solemnes aunque también muy agudos y penetrantes. Piensas que son de color marrón, iluminados por una luz verde, como si fueran dos pozos profundos, llenos de experiencia y sabiduría. Pero en la superficie de sus ojos se aprecia un destello de interés... como el brillo del sol sobre las hojas de un vasto árbol, o sobre las ondas de un profundo lago.)
+dlga_treebeard_introduce_1:treebeard_introduce_2|(Estás a punto de hablar cuando de repente te inunda una sensación de ahogo, como si el aire se hubiera vuelto demasiado escaso para respirar... tomando desesperadamente una gran bocanada de aire consigues librarte de esa sensación y la inmensa criatura parecida a un árbol relaja un poco la intensidad de su mirada. La criatura te sigue mirando y te das cuenta que otras grandes criaturas de aspecto arbóreo también te están vigilando, como si esperaran que hablases...)
+dlga_treebeard_introduce_2:treebeard_introduce_3|Perdonad mi intrusión... No soy más que un caminante cansado que busca escapar de ciertos acontecimientos recientes... me llamo {playername}. ¿Puedo preguntar quienes sois?
+dlga_treebeard_introduce_3:treebeard_introduce_4|(El gigante arbóreo de rígidos movimientos abre lentamente la boca, escondida detrás de pequeñas ramas, hojas y musgo. Con una voz profunda, lenta y solemne responde de manera autoritaria:)^  'Ajumm... Mmmm... No te voy a decir mi nombre... al menos, no de momento. De hecho tardaría un buen rato en decírtelo. Mi nombre está creciendo continuamente y he vivido mucho, mucho tiempo; así que mi nombre es como una historia. En mi idioma los nombres de verdad cuentan una historia, una historia sobre las cosas a las que pertenecen, en la antigua lengua Ent. Es un lenguaje maravilloso, pero se tarda muchísimo en decir cualquier cosa, porque no decimos nada, a no ser que merezca la pena tomarse mucho tiempo en explicarlo.'
+dlga_treebeard_introduce_4:treebeard_introduce_5|¡Oh, así que eres un Ent! He oído muchas leyendas sobre vosotros y es un honor estar en tu presencia. No deseo molestar y me iré si así me lo pides.
+dlga_treebeard_introduce_5:treebeard_questtalk|(El gigante de rígidos movimientos y sus compañeros Ents permanecen quietos durante varios minutos en silencio mientras una brisa pasa a través de sus frondosos cabellos y barbas. Se miran los unos a otros durante un momento hasta que un extrañamente impaciente Ent con aspecto de serbal hace gestos de querer hablar. Sin embargo, permanece en silencio hasta que el gigante Ent de movimientos rígidos comienza a hablar de nuevo:)
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como estaba diciendo...:Ajumm... Apreciamos la gran cortesía que nos demuestras. {reg1?Resulta poco común verlo en gentes de tu raza:¡Qué gusto hablar con elfos de nuevo!}} Las cosas no han ido bien desde que las Ent-mujeres desaparecieron - y ahora hay muchas criaturas malvadas del Señor Oscuro intentando destruir nuestros hogares. Buscamos a alguien rápido pero prudente. Alguien que pueda ayudarnos mientras discutimos nuestros próximos movimientos.^Muchas hordas de orcos han asaltado el bosque y quemado nuestros árboles con sus proyectiles de fuego - si pudieras derrotar a los orcos y asegurarte de que no vuelven a amenazar el bosque, te estaríamos agradecidos y te consideraríamos nuestro amigo. Hazlo y hablaremos de nuevo.
 dlga_treebeard_quest_brief:close_window|Los orcos son sin duda criaturas detestables. Me aseguraré de que no vuelvan a hacer daño al bosque.
 dlga_treebeard_quest_brief:treebeard_pretalk|Lo siento. Pero ahora mismo tengo prisa.
-dlga_treebeard_questtalk:close_window|(El líder Ent abre lentamente su oculta boca y los otros Ents te miran y comienzan también a emitir un largo y profundo sonido que hace que el suelo tiemble ligeramente - te das cuenta de que se están riendo a la manera de los Ents. Un Ent relativamente joven con aspecto de serbal golpea el suelo con sus pies de siete dedos y el temblor del suelo casi te hace caer.)^'Con cuidado, Ramaviva, no queremos lastimar a nuestro joven aliado. Humm... Me llamo Bárbol, soy el más antiguo de los Ents, y todos te agradecemos lo que has hecho... Humm... Déjame regalarte un poco de Agua Ent para celebrar tu victoria.'
+dlga_treebeard_questtalk:close_window|(El líder Ent abre lentamente su boca escondida y los otros Ents te miran y comienzan también a emitir un largo y profundo sonido que hace que el suelo tiemble ligeramente - te das cuenta de que se están riendo a la manera de los Ents. Un Ent relativamente joven con aspecto de serbal golpea el suelo con sus pies de siete dedos y el temblor del suelo casi te hace caer.)^'Con cuidado, Ramaviva, no queremos lastimar a nuestro joven aliado. Humm... Me llamo Bárbol, soy el más antiguo de los Ents, y todos te agradecemos lo que has hecho... Humm... Déjame regalarte un poco de Agua Ent para celebrar tu victoria.'
 dlga_treebeard_questtalk:close_window.1|(El gigante de miembros rígidos y sus compañeros Ents permanecen de pie en silencio mientras la brisa pasa a través de sus cabellos frondosos y de sus barbas.)
 dlga_treebeard_pretalk:treebeard_talk_response|Ajumm... ¿Qué deseas saber, joven amigo?
 dlga_treebeard_talk_response:treebeard_about_himself|Cuéntame más sobre ti.
 dlga_treebeard_talk_response:treebeard_about_entwives|Cuéntame más sobre las Ent-mujeres.
 dlga_treebeard_talk_response:treebeard_about_ents|Cuéntame más acerca de los Ents.
 dlga_treebeard_talk_response:close_window|No importa, hasta luego.
-dlga_treebeard_about_himself:treebeard_pretalk|(El líder Ent parece adusto y solemne. Después de un rato dice lentamente:)^'No vayas tan deprisa... podremos hablar más acerca de esto cuando el bosque esté libre de la amenaza de los orcos.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Ajummm...Soy el más viejo de mi raza mmmm... Los hombres me conocen como Bárbol y los Elfos me llaman Fangorn. Hummm... Yo, Corteza y Zarcillo somos los únicos Ents que hemos habitado los bosques antes de la Epoca Oscura. Ya no soy tan flexible como solía ser... el joven Ramaviva puede doblarse y agitarse, como un arbolillo al viento... Hummm... Si las Entmujeres estuvieran aquí...
+dlga_treebeard_about_himself:treebeard_pretalk|(El líder Ent parece adusto y solemne. Después de un rato dice lentamente:)^'No vayas tan deprisa... podremos hablar más cuando el bosque quede libre de la amenaza de los orcos.'
+dlga_treebeard_about_himself:treebeard_pretalk.1|Ajummm...Soy el más viejo de mi raza mmmm... Los hombres me conocen como Bárbol y los Elfos me llaman Fangorn. Hummm... Yo, Corteza y Zarcillo somos los únicos Ents que hemos habitado los bosques antes de que cayera la Oscuridad. Ya no soy tan flexible como solía ser... el joven Ramaviva puede doblarse y agitarse, como un arbolillo al viento... Hummm... Si las Ent-mujeres estuvieran aquí...
 dlga_treebeard_about_entwives:treebeard_pretalk|(La cara del cabecilla Ent muestra de repente tristeza y su voz es extrañamente profunda.)^'Hummm... Es una triste historia... cuando los bosques estén libres de orcos te la contaré.'
-dlga_treebeard_about_entwives:treebeard_pretalk.1|Ajummm... las bellas Entmujeres... les encanta plantar y cultivar plantas... tendríamos que haberles hecho caso... Ajumm... se marcharon a las Tierras Pardas a cultivar jardines y enseñaron a los hombres a cultivar la tierra... solíamos visitarlas... hasta que... Sauron apareció... las Entmujeres ya no están... Hummm... Fimbrethil... el color de sus espigas de trigo... las hemos estado buscando... pero no las hemos encontrado... todavía...
-dlga_treebeard_about_ents:treebeard_pretalk|Ajummm... Somos pastores de los árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales aunque no tan antiguos como los Elfos que nos dieron el poder del habla. Las cosas han cambiado con el tiempo. Al principio éramos más impacientes y flexibles. A lo largo del tiempo hemos perdido a muchos de nosotros. Algunos somos todavía verdaderos Ents, y con la energía propia de nuestra raza, pero muchos están empezando a adormilarse, convirtiéndose en árboles, como si dijéramos. La mayoría de los árboles son simplemente árboles, por supuesto; pero muchos están medio despiertos. Algunos están casi despiertos, y unos pocos están, bueno, ah, bueno, convirtiéndose en Ents. Eso sucede a menudo. Pero cuando eso le sucede a un árbol, encuentras que algunos son de corazón malvado. Aún así, hacemos lo que podemos. Mantenemos alejados a los extraños y a los imprudentes; y entrenamos y enseñamos, y caminamos y desmalezamos.
+dlga_treebeard_about_entwives:treebeard_pretalk.1|Ajummm... las bellas Ent-mujeres... les encanta plantar y cultivar plantas... tendríamos que haberles hecho más caso... Ajumm... se marcharon a las Tierras Pardas a cultivar jardines y enseñaron a los hombres a cultivar la tierra... solíamos visitarlas... hasta que... Sauron apareció... las Ent-mujeres ya no están... Hummm... Fimbrethil... el color de sus espigas de trigo... las hemos estado buscando... pero no las hemos encontrado... todavía...
+dlga_treebeard_about_ents:treebeard_pretalk|Ajummm... Somos pastores de los árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales aunque no tan antiguos como los Elfos que nos dieron el poder del habla. Las cosas han cambiado con el tiempo. Al principio éramos más impacientes y flexibles. A lo largo del tiempo hemos perdido a muchos de nosotros. Algunos somos todavía verdaderos Ents, y con la energía propia de nuestra raza, pero muchos están empezando a adormilarse, convirtiéndose en árboles. Por supuesto, la mayoría de los árboles son simplemente árboles; pero muchos están medio despiertos. Algunos están casi despiertos, y unos pocos están, bueno, eh, bueno, convirtiéndose en Ents. Eso sucede a menudo. Pero cuando eso le sucede a un árbol, a veces te encuentras con que algunos son de malvado corazón. Aún así, hacemos lo que podemos. Mantenemos alejados a extraños y a imprudentes; y entrenamos y enseñamos, y caminamos y cuidamos del bosque.
 dlga_start:close_window.1|¿Mmmmm?
 dlga_start:close_window.2|¿Mmrmmm?
 dlga_start:close_window.3|¿Mmmrrrmm?
@@ -115,22 +115,22 @@ dlga_companion_rehire_refused:close_window|Vaya... Búscame si cambias de opini�
 dlga_companion_objection_response:close_window|Gracias, aprecio el apoyo que me has dado.
 dlga_companion_objection_response:close_window.1|Esperemos que no vuelva a ocurrir.
 dlga_companion_objection_response:close_window.2|Tomo nota, pero ahora tengo cosas más importantes en mente.
-dlga_companion_personalityclash2_response:close_window|Pienso que {s11} es un miembro valioso para esta compañía. Deberías tenerle {reg11?her:him} más en cuenta.
-dlga_companion_personalityclash2_response:close_window.1|Tienes razón. No estoy satisfecho con el comportamiento de {s11} y le haré saber a {reg11?her:him} sobre esto.
+dlga_companion_personalityclash2_response:close_window|Pienso que {s11} es un valioso miembro de esta compañía. Deberías tener{reg11?la:le} más en cuenta.
+dlga_companion_personalityclash2_response:close_window.1|Tienes razón. A mi tampoco me satisface el comportamiento de {s11} y así se lo haré saber.
 dlga_companion_personalityclash2_response:close_window.2|No tengo tiempo para riñas sin importancia.
-dlga_companion_personalityclash_response:close_window|Pienso que {s11} es un miembro valioso para esta compañía. Deberías tenerle {reg11?her:him} más en cuenta.
-dlga_companion_personalityclash_response:close_window.1|Tienes razón. No estoy satisfecho con el comportamiento de {s11} y le haré saber a {reg11?her:him} sobre esto.
+dlga_companion_personalityclash_response:close_window|Valoro a {s11} como un valioso miembro para esta compañía. Deberías tener{reg11?la:le} más en cuenta.
+dlga_companion_personalityclash_response:close_window.1|Tienes razón. A mi tampoco me satisface el comportamiento de {s11} y a {reg11?ella:él} se lo haré saber.
 dlga_companion_personalityclash_response:close_window.2|No tengo tiempo para riñas sin importancia.
 dlga_companion_personalitymatch_response:close_window|Muy bien.
-dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?our:my} {s6} vuestras tierras están sufriendo las consecuencias de la Guerra, le pedimos que ayude a {reg6?our:my} gente tan pronto como pueda.
-dlga_companion_faction_demolished:close_window|Entonces acudiremos en su ayuda {s6} inmediatamente.
+dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?nuestra:mi} tierra de {s6} están sufriendo las despiadadas consecuencias de la Guerra, te pedimos que ayudes a {reg6?nuestra:mi} gente tan pronto como sea posible.
+dlga_companion_faction_demolished:close_window|Entonces acudiremos a ayudar a {s6} inmediatamente.
 dlga_companion_faction_demolished:close_window.1|Lo siento, pero se nos necesita en otra parte.
 dlga_companion_home_description:companion_home_description_2|Cuéntame más.
 dlga_companion_home_description:close_window|No tenemos tiempo para charlar ahora mismo.
 dlga_companion_home_description:close_window.1|Preferiría que mis compañeros no me molestaran con tales tonterías.
-dlga_start:player_hire_troop|{s33}^^Estoy a cargo de esta guarnición en {s21}. ¿Quería verme?
+dlga_start:player_hire_troop|{s33}^^Estoy a cargo de las fuerzas guarnecidas en {s21}. ¿Querías verme?
 dlga_player_hire_troop:player_hire_troop_give|Algunos de los soldados a mi cargo serían más útiles aquí, para defender {s21}.
-dlga_player_hire_troop:close_window|Quiero revisar mis tropas estacionadas aquí.
+dlga_player_hire_troop:close_window|Quiero revisar mis tropas guarnecidas aquí.
 dlga_player_hire_troop:close_window.1|Necesito entrenarme un poco.
 dlga_player_hire_troop:tld_sell_prisoners|Te he traído algunos prisioneros.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Déjame ver a esos desgraciados.
@@ -142,7 +142,7 @@ dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|Déjame
 dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|Así que has cambiado de opinión...^Ya veo.
 dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|Déjame revisar las tropas...
 dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|Así que has cambiado de opinión...^Ya veo.
-dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|No tenemos necesidad de esas tropas aquí...^Retíralas.
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|No necesitamos a tus tropas aquí...^Quédate con ellas.
 dlga_player_hire_troop_nextcycle:player_hire_troop|¿Algo más?
 dlga_start:player_siege_castle_commander_1|¿Qué es lo que quieres?
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|¡Rendíos! ¡Vuestra situación es desesperada!
@@ -178,7 +178,7 @@ dlga_lord_meet_neutral:lord_intro.1|Me llamo {playername}. A vuestro servicio.
 dlga_lord_meet_enemy:lord_intro|Soy {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Se me conoce como {playername}. No lo olvidéis, oiréis hablar de mí a menudo.
 dlga_start:lord_start.3|Bueno, {playername}...
-dlga_lord_start:lord_generic_mission_completed|Vuestro cirujano pudo convencer a mi amigo y realizó la operación.  Lo único que podemos hacer ahora es rezar por su recuperación. De todas formas, os agradezco que nos hayáis cedido a vuestro cirujano, {playername}. Tenéis un noble espíritu. No olvidaré lo que habéis hecho.
+dlga_lord_start:lord_generic_mission_completed|Tu cirujano pudo convencer a mi amigo y realizó la operación.  Lo único que podemos hacer ahora es rezar por su recuperación. De todas formas, te agradezco que nos hayas cedido a tu cirujano, {playername}. Tienes un noble espíritu. No olvidaré lo que has hecho por mí.
 dlga_lord_start:lord_investigate_fangorn_completed0|Así que, {playername}, vienes de Fangorn. ¿Qué es lo que has descubierto?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|¡Los árboles están vivos! ¡Están atacando a nuestras tropas!
 dlga_lord_investigate_fangorn_completed1:close_window|Llevaba sospechándolo desde hace tiempo. Me has rendido un gran servicio, {playername}.
@@ -309,7 +309,7 @@ dlga_lord_talk_ask_location:lord_talk_ask_location_2|De acuerdo, puedo o no sabe
 dlga_lord_talk_ask_location_2:lord_pretalk|No importa.
 dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Cuéntame más sobre la guerra contra {s1}.
 dlga_lord_talk_ask_about_war_2:lord_pretalk|Eso es todo lo que quería saber. Gracias.
-dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Nosotros tenemos {s22} y ellos tienen {s23}. En total, {s9}.
+dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Nosotros tenemos {s22} y ellos tienen {s23}. En general, {s9}.
 dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|¡Hoy es un buen día para luchar, {s4}!
 dlga_lord_tell_objective:lord_pretalk|¿Cómo que qué estoy haciendo? ¡¿Qué te parece que estoy haciendo?! ¡Estoy prisionero, aquí!
 dlga_lord_tell_objective:lord_pretalk.1|No dirijo ninguna tropa en este momento.
@@ -575,7 +575,7 @@ dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|Suena bastante bien. Pero 
 dlga_tavern_mercenary_cant_lead:close_window|Es una pena. Bueno, {reg3?estaremos:estaré} esperando por aquí durante algún tiempo, si es que necesitáis contratar a alguien.
 dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|Eso suena bien. Pero no puedo admitir a ningún soldado más ahora mismo.
 dlga_mercenary_tavern_talk:close_window|Lo siento, pero no necesito a ningún soldado más ahora mismo.
-dlga_start:trainer_pretalk|Habéis sobrevivido hasta el entrenamiento de supervivencia {reg2}. {s4}
+dlga_start:trainer_pretalk|Has sobrevivido hasta el entrenamiento de supervivencia {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Muy bien, has acabado con todos tus oponentes.
 dlga_start:trainer_talk|Buenos días. ¿Listo para el entrenamiento?
 dlga_trainer_pretalk:trainer_talk|¿Listo para un poco de entrenamiento?
@@ -588,17 +588,17 @@ dlga_trainer_talk_combat:trainer_explain_defense|Cuéntame más acerca de mi pro
 dlga_trainer_talk_combat:trainer_explain_attack|Cuéntame más acerca del uso de armas.
 dlga_trainer_talk_combat:trainer_explain_horseback|Cuéntame más acerca de la lucha a lomos de un corcel.
 dlga_trainer_talk_combat:trainer_pretalk|Creo que eso es todo lo que necesito saber. Cambiemos de tema.
-dlga_trainer_explain_defense:trainer_explain_defense_2|Buena pregunta. La primera cosa que debéis aprender como luchador es a defenderos correctamente. Manteneros fuera de peligro es la primera regla del combate, y es mucho más importante que dañar a los demás. Cualquiera puede llevar una espada y rezar para que haga daño, pero sólo los luchadores expertos en la defensa son capaces de sobrevivir.
-dlga_trainer_explain_defense_2:trainer_explain_defense_3|Bien. Defenderos se vuelve realmente fácil si estáis equipados con un escudo. Simplemente bloquead el ataque con vuestro escudo. [Hold down the right mouse button to defend yourself with the shield.] En esta posición, podréis repeler todos los ataques que os vengan de frente. Sin embargo, el enemigo os podrá hacer daño si os ataca por los lados o por la espalda.
-dlga_trainer_explain_defense_3:trainer_explain_defense_4|¿Y qué ocurre si no dispongo de un escudo?
-dlga_trainer_explain_defense_4:trainer_combat_pretalk|Entonces tendréis que utilizar vuestro arma para bloquear el ataque del enemigo. Esto resulta un poco más difícil que defenderse con un escudo. Cuando os defendeis con un arma, sólo podéis bloquear el ataque en una determinada dirección. Es decir, no podréis bloquear ataques a la cabeza, ataques a los lados o una estocada al pecho si no estáis cubriendo alguna de esas posiciones. Por tanto deberéis observar bien a vuestro oponente y empezar a bloquear el ataque justo DESPUÉS de que haya empezado su movimiento. De esta manera podréis desviar correctamente su ataque. Si empezárais a bloquear su ataque ANTES de que realice su movimiento, podría entonces atacaros en otra dirección distinta a la que cubrís y dar así en el blanco.
-dlga_trainer_explain_attack:trainer_explain_attack_2|Buena pregunta. Una buena defensa es un buen ataque, como se suele decir.  Una táctica que muchos luchadores encuentran útil es tener una postura de ataque y con el arma lista para golpear, esperando el momento preciso para usarla. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
+dlga_trainer_explain_defense:trainer_explain_defense_2|Buena pregunta. La primera cosa que deberás aprender como luchador es a defenderte correctamente. Mantenerte fuera de peligro es la primera regla del combate, y es mucho más importante que dañar a los demás. Cualquiera puede llevar una espada y rezar para que haga daño, pero sólo los luchadores expertos en la defensa son capaces de sobrevivir.
+dlga_trainer_explain_defense_2:trainer_explain_defense_3|Bien. Defenderte se vuelve mucho fácil si te equipas con un escudo. Mantén levantado tu escudo. [Mantén pulsado el botón izquierdo del ratón para defenderte con el escudo.] En esta posición, podrás repeler todos los ataques que te vengan de frente. Sin embargo, el enemigo te podrá hacer daño en caso de que ataque por los costados o por la espalda.
+dlga_trainer_explain_defense_3:trainer_explain_defense_4|¿Y qué ocurre si no tengo escudo?
+dlga_trainer_explain_defense_4:trainer_combat_pretalk|Entonces tendrás que utilizar tu arma para bloquear el ataque enemigo. Esto resulta un poco más difícil que defenderse con un escudo. Cuando te defiendas con un arma, sólo podrás bloquear el ataque en una dirección determinada. Es decir, no podrás bloquear ataques a la cabeza, ataques a los lados o una estocada al pecho si no estás cubriendo alguna de esas posiciones. Por tanto deberás observar bien a tu oponente y empezar a bloquear el ataque justo DESPUÉS de que haya empezado su movimiento. De esta manera podrás desviar correctamente su ataque. Si empezaras a bloquear su ataque ANTES de que realice su movimiento, entonces podría atacaros en otra dirección distinta a la que te defiendes y dar así en el blanco.
+dlga_trainer_explain_attack:trainer_explain_attack_2|Buena pregunta. Como se suele decir, la mejor defensa es un buen ataque. Una táctica que muchos luchadores encuentran útil es tener una postura de ataque y con el arma lista para golpear, esperando el momento preciso para usarla. [Puedes mantener lista tu espada manteniendo pulsado el botón izquierdo del ratón.]
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|Eso parece útil.
-dlga_trainer_explain_attack_3:trainer_explain_attack_4|Es una buena táctica, pero recordad que, vuestro oponente puede darse cuenta y adoptar una postura defensiva en la misma dirección que vuestro ataque. Si eso ocurre, deberéis cancelar vuestro ataque y atacar rápidamente en otra dirección. [You may cancel your current attack by quickly tapping the right mouse button].
+dlga_trainer_explain_attack_3:trainer_explain_attack_4|Es una buena táctica, pero recuerda que, tu oponente puede darse cuenta y adoptar una postura defensiva en la misma dirección que tu ataque. Si eso ocurre, deberás cancelar tu ataque y atacar rápidamente en otra dirección. [Puedes cancelar rápidamente el ataque apretando ligeramente el botón derecho del ratón].
 dlga_trainer_explain_attack_4:trainer_explain_attack_5|Si mi enemigo se está defendiendo en la misma dirección de mi ataque, detendré este ataque y utilizaré otra dirección.
-dlga_trainer_explain_attack_5:trainer_combat_pretalk|En efecto, seleccionar la dirección de nuestro ataque es crucial. Existen cuatro direcciones de ataque principales: ataque por la derecha, ataque por la izquierda, ataque a la cabeza y estocada al pecho. Deberéis usar cada uno de manera inteligente. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
-dlga_trainer_explain_horseback:trainer_combat_pretalk|Muy buena pregunta. El caballo puede llegar a ser el arma más poderosa en combate. Os proporciona rapidez, altura, poder e iniciativa. Muchas armas de guerra se vuelven más efectivas cuando son usadas encima de un caballo. Sin embargo deberéis prestar atención a los enemigos montados a caballo y a sus lanzas de caballería, ya que son capaces de derrotar a un enemigo de un sólo golpe. [To use the couched lance yourself, wield a lance or similar weapon, and speed up your horse without pressing attack or defense buttons. after you reach a speed, you'll lower your lance. Then try to target your enemies by maneuvering your horse.]
-dlga_trainer_choose_mode:trainer_choose_mode_player|Disponemos de varios modos de entrenamiento para mejorar las habilidades de nuestros soldados. En el Combate Singular tendréis que hacer frente a un grupo de uno a cuatro enemigos, en los combates en grupo vuestro equipo de cuatro luchadores se enfrentará a un grupo de cuatro,ocho o doce oponentes, y, finalmente, Supervivencia supone el mayor reto para cualquier guerrero - tendréis que enfrentaros a oleadas cada vez mayores de enemigos totalmente solo. La melé se trata de una simple trifulca.^¿Cuál preferís?
+dlga_trainer_explain_attack_5:trainer_combat_pretalk|Así es, seleccionar la dirección de nuestro ataque es crucial. Existen cuatro direcciones de ataque principales: ataque por la derecha, ataque por la izquierda, ataque a la cabeza y estocada al pecho. Deberás usar cada uno de manera inteligente. [para controla tu dirección de ataque con los controles por defecto, mueve tu ratón en la dirección que quieres orientar tu arma y presiona el botón izquierdo del ratón simultáneamente].
+dlga_trainer_explain_horseback:trainer_combat_pretalk|Muy buena pregunta. El caballo puede llegar a ser el arma más poderosa en combate. Te proporciona rapidez, altura, poder e iniciativa. Muchas armas de guerra se vuelven más efectivas cuando son usadas a lomos de un caballo. Sin embargo deberás prestar atención a los enemigos montados a caballo y a sus lanzas de caballería, ya que son capaces de tirar a un enemigo de un sólo golpe. [Para utilizar la lanza de derribo, blande una lanza o cualquier arma similar, y espolea tu caballo sin presionar los botones de atacar o defender, cuando llegues a cierta velocidad, la lanza se bajará. Intenta apuntar a tus enemigos maniobrando con tu caballo.]
+dlga_trainer_choose_mode:trainer_choose_mode_player|Disponemos de varios modos de entrenamiento para mejorar las habilidades de nuestros soldados. En el Combate Singular tendrás que hacer frente a un grupo de uno a cuatro enemigos, en los combates en grupo tu equipo de cuatro luchadores se enfrentará a un grupo de cuatro, ocho o doce oponentes, y, finalmente, Supervivencia supone el mayor reto para cualquier guerrero - tendrás que enfrentarte a oleadas cada vez mayores de enemigos completamente sólo. El combate cuerpo a cuerpo se trata de una simple trifulca.^¿Cuál prefieres?
 dlga_trainer_choose_mode_player:trainer_choose_opponents|Combate singular.
 dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Combate por equipos.
 dlga_trainer_choose_mode_player:trainer_choose_weapon|Supervivencia.
@@ -648,75 +648,75 @@ dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Lo siento. Esa gente se
 dlga_move_cattle_herd_failed_2:close_window|Bueno, era tu responsabilidad llevarlos de manera segura a su destino, sin importar los peligros. Debes saber que el señor ha exigido saber quién es el responsable de este fracaso. Así que le dije que habías sido tú.
 dlga_mayor_begin:mayor_friendly_pretalk|He oído hablar de tus hazañas. Le habéis dado a esos trasgos el castigo que se merecían. Eres tan bueno como cuentan.^^[has conseguido {reg14} Puntos de Recursos de {s14}]
 dlga_mayor_begin:mayor_talk|¿Qué puedo hacer por ti?
-dlga_mayor_friendly_pretalk:mayor_talk|Y ahora... ¿Qué más puedo hacer por vos?
+dlga_mayor_friendly_pretalk:mayor_talk|Y ahora... ¿Qué más puedo hacer por ti?
 dlga_mayor_pretalk:mayor_talk|¿Sí?
-dlga_mayor_talk:mayor_info_begin|¿Me podéis decir a que os dedicáis?
+dlga_mayor_talk:mayor_info_begin|¿Puedes decirme a qué te dedicas?
 dlga_mayor_talk:merchant_quest_requested|¿De que manera puedo ayudaros en vuestra causa?
-dlga_mayor_talk:merchant_quest_last_offered_job|Acerca de la misión que me asignásteis...
-dlga_mayor_talk:merchant_quest_about_job|Acerca de la tarea que me dísteis...
-dlga_mayor_talk:close_window|[Adiós]
-dlga_mayor_info_begin:mayor_info_talk|Soy la autoridad local aquí en {s9}. Se podría decir que estoy a cargo de las tareas cotidianas. Siempre hay cosas que hacer, así que si queréis ayudar sólo tenéis que decírmelo.
-dlga_mayor_info_talk:mayor_info_lord|¿Quién gobierna esta ciudad?
+dlga_mayor_talk:merchant_quest_last_offered_job|Sobre esa tarea que necesitabas que hiciera...
+dlga_mayor_talk:merchant_quest_about_job|Sobre esa tarea que me asignasteis...
+dlga_mayor_talk:close_window|[Irse]
+dlga_mayor_info_begin:mayor_info_talk|Soy la autoridad local aquí, en {s9}. Se podría decir que estoy a cargo de las tareas cotidianas. Siempre hay cosas que hacer, así que si quieres ayudar sólo tienes que decírmelo.
+dlga_mayor_info_talk:mayor_info_lord|¿Quién gobierna este sitio?
 dlga_mayor_info_lord:mayor_info_talk|Nuestro señor es {s10}.
 dlga_mayor_info_talk:mayor_pretalk|Eso es todo lo que necesito saber. Gracias.
-dlga_merchant_quest_about_job:merchant_quest_about_job_2|¿Y qué?
-dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|¿Qué pasa si no puedo acabarlo?
-dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|Bueno, todavía estoy trabajando en ello.
+dlga_merchant_quest_about_job:merchant_quest_about_job_2|¿Cual es el problema?
+dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|¿Qué pasa si no puedo acabarla?
+dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|Bueno, todavía estoy trabajando en ella.
 dlga_merchant_quest_about_job_working:mayor_pretalk|Bien. Estoy seguro de que lo lograrás.
 dlga_merchant_quest_last_offered_job:merchant_quest_brief|Eh, quieres recapacitar sobre ello. Bien...
-dlga_merchant_quest_what_if_fail:mayor_pretalk|Espero que no me falléis. No podemos permitirnos perder la carga que lleváis.
-dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Bueno, simplemente hacedlo lo mejor que podáis para acabarlo.
-dlga_merchant_quest_taken:mayor_pretalk|Excelente. Confío en vos entonces. Buena suerte.
-dlga_merchant_quest_stall:mayor_pretalk|Bueno, veré si puedo encontrar a alguien para hacer el trabajo. Pero si cambiáis de opinión, decídmelo.
+dlga_merchant_quest_what_if_fail:mayor_pretalk|Espero que no me falles. No nos podemos permitir perder la carga que llevas contigo.
+dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Bueno, hazlo lo mejor posible para terminarla.
+dlga_merchant_quest_taken:mayor_pretalk|Excelente. Cuento contigo. Buena suerte.
+dlga_merchant_quest_stall:mayor_pretalk|Bueno, veré si puedo encontrar a alguien para hacer el trabajo. Pero si cambias de opinión, dímelo.
 dlga_merchant_quest_requested:merchant_quest_brief|Bueno, pareces suficientemente capaz. Creo que puedo tener alguna misión para ti.
-dlga_merchant_quest_brief:merchant_quest_looters_choice|Hemos tenido algunas batallas cerca de {s5} recientemente, con todo el caos que eso conlleva, y eso ha atraído algunas hordas de orcos tribales que se dedican al pillaje. Necesito que alguien le de una lección a estos orcos. ¿Te interesa? 
+dlga_merchant_quest_brief:merchant_quest_looters_choice|Hemos tenido algunas escaramuzas cerca de {s5} hace más bien poco, y todo el caos que eso conlleva ha atraído algunas hordas de orcos tribales que se dedican al pillaje por toda la región. Necesito que alguien dé una lección a estos orcos. ¿Te interesa? 
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|De acuerdo, lo haré.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Me temo que tendrás que encontrar a otra persona para ese trabajo. 
-dlga_merchant_quest_looters_brief:close_window|Excelente! Encontrarás a los orcos tribales deambulando por la campiña, probablemente en busca de más granjas que saquear. Acaba con los orcos tribales y líbranos de su molesta presencia. Hablaré con nuestro tesorero, y serás recompensado por cada banda de orcos tribales destruida, hasta que consigas acabar con todos ellos.
-dlga_merchant_quest_requested:merchant_quest_brief.1|Gracias por vuestra ayuda. Ahora mismo ando buscando a alguien para entregar algo de {s4}. Quizás puedas encargarte de ello...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Tengo un cargamento de {s6} que necesita ser entregado a {s10} en {s4}. Necesitamos entregar {reg5} unidades de {s6} a {s4} en {reg6} días. ¿Puedes encargarte de ello?^^[you will earn {reg14} Resource Points of {s14}]
+dlga_merchant_quest_looters_brief:close_window|¡Excelente! Encontrarás a los orcos tribales deambulando por la campiña, probablemente en busca de más granjas que saquear. Acaba con los orcos tribales y líbranos de su molesta presencia. Hablaré con nuestro jefe de suministros, y serás recompensado por cada banda de orcos tribales destruida, hasta que consigas acabar con todos ellos.
+dlga_merchant_quest_requested:merchant_quest_brief.1|Agradezco tu ofrecimiento. Ahora mismo ando buscando a alguien para entregar algo de {s4}. Quizás puedas encargarte de ello...
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Tengo un cargamento de {s6} que necesita ser entregado a {s10} en {s4}. Necesitamos entregar {reg5} unidades de {s6} a {s4} en {reg6} días. ¿Puedes encargarte de ello?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|De acuerdo. Me encargaré de la entrega.
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|Me temo que no puedo llevar ese cargamento ahora mismo.
-dlga_merchant_quest_requested:merchant_quest_brief.2|Gracias por tu ayuda. Ahora mismo estaba buscando a alguien para que nos suministrara comida.Quizás seas la persona adecuada para ello...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Nuestras reservas de comida se están acabando y las caravanas de suministros están siendo asaltadas por el enemigo. Necesito que alguien nos traiga {reg5} unidades de comida en un periodo de {reg6} días, o empezaremos a pasar hambre. Quizás en los pueblos aliados cerca de aquí tengan suficiente comida para poder compartir con nosotros. ¿Qué te parece?
-dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|De acuerdo. Encontraré ese cargamento de comida y lo traeré aquí.
+dlga_merchant_quest_requested:merchant_quest_brief.2|Agradezco tu oferta. Ahora mismo estaba buscando a alguien para que nos suministrara comida. Quizás seas la persona adecuada para ello...
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Nuestras reservas de comida se están acabando y las caravanas de suministros están siendo asaltadas por el enemigo. Necesito que alguien nos traiga {reg5} unidades de comida en un periodo de {reg6} días, o empezaremos a pasar hambre. Quizás en los asentamientos aliados cercanos tengan comida suficiente para compartir con nosotros. ¿Qué te parece?
+dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|De acuerdo. Encontraré esa comida y la traeré aquí.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Lo siento, necesitarás encontrar a otro para este tipo de trabajo.
-dlga_merchant_quest_requested:merchant_quest_brief.3|¿Una misión, dices? De hecho estoy buscando a alguien que nos suministre mineral y metal. Las minas y las carreteras ya no son tan seguras como antes, y el suministro de estos materiales se ha vuelto cada vez más difícil. El enemigo debe de contar con sus propios medios, oscuros y eficientes medios de extraer minerales, ya que hemos visto orcos y otras tristes criaturas transportando metal. Su calidad es la misma que la de sus portadores, se trata de hierro barato y de mala calidad; del tipo de hierro que consideraríamos obsceno no hace mucho. Pero en estos tiempos que corren los herreros también son capaces de trabajar con material pésimo, si es necesario. Toda ayuda es buena.
-dlga_merchant_quest_requested:merchant_quest_brief.4|¿Un trabajo, dices? El Amo exige más y más tropas cada día, y nunca son lo suficientemente buenas para él... pero las armaduras no nos crecen en la piel, ¿sabes?^Los gusanos a cargo del transporte de suministros del metal son débiles y traicioneros, los masacran fácilmente y nos dejan sin materiales. Pero estos hombres, estos elfos...  van siempre cubiertos de brillantes metales, hasta el más humilde está protegido como si fuera un rey...^Registra sus cadáveres y tráeme todo ese metal, {playername}. Con una libra de peso de ese tipo de hierro, nuestro herrero puede fabricar suficientes armaduras para toda una banda de guerreros.
+dlga_merchant_quest_requested:merchant_quest_brief.3|¿Una tarea, dices? De hecho estoy buscando a alguien que nos suministre mineral y metal. Las minas y las carreteras ya no son tan seguras como antes, y el suministro de estos materiales se ha vuelto cada vez más difícil. El enemigo debe de contar con sus propios medios, sus oscuros y eficientes medios de extraer minerales, ya que hemos visto orcos y otras tristes criaturas transportando metal. Su calidad es la misma que la de sus portadores, se trata de hierro barato y de mala calidad; del tipo de hierro que consideraríamos obsceno no hace mucho. Pero en estos tiempos de necesidad los herreros también son capaces de trabajar con material pésimo. Toda ayuda es buena.
+dlga_merchant_quest_requested:merchant_quest_brief.4|¿Un trabajo, dices? El Amo exige más y más tropas cada día, y nunca son lo suficientemente buenas para Él... pero las armaduras no nos crecen en la piel, ¿sabes?^Los gusanos a cargo del transporte de suministros del metal son débiles y traicioneros, los masacran fácilmente y nos dejan sin materiales. Pero estos hombres, estos elfos...  van siempre cubiertos de brillantes metales, hasta el más humilde está protegido como si fuera un rey...^Registra sus cadáveres y tráeme todo ese metal, {playername}. Con una libra de peso de ese tipo de hierro, nuestro herrero puede fabricar suficientes armaduras para toda una banda de guerreros.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Necesitamos {reg5} unidades de {s6} en un periodo de {reg6} días, antes de que nuestros armeros se queden sin materias primas. ¿Qué te parece?
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|De acuerdo. Conseguiré esas piezas de metal y te las traeré.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Estoy demasiado ocupado ahora mismo.
 dlga_merchant_quest_requested:merchant_quest_brief.5|Gracias por tu ayuda. Ando buscando a alguien para escoltar una caravana de suministros. Quizás te interese este trabajo...
-dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Voy a enviar una caravana de suministros a {s8}. Sin embargo, con todas esas tropas enemigas ahí fuera, no quiero enviarla sin una escolta adecuada. Un grupo de al menos {reg4} guerreros supondría suficiente protección. ¿Puedes liderar esa caravana de suministros hasta {s8} en un periodo de 7 días?^^[you will earn {reg14} Resource Points of {s14}]
+dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Voy a enviar una caravana de suministros a {s8}. Sin embargo, con todas esas tropas enemigas ahí fuera, no quiero enviarla sin una escolta adecuada. Un grupo de al menos {reg4} guerreros nos daría la suficiente seguridad. ¿Puedes liderar esa caravana de suministros hasta {s8} en un periodo de 7 días?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|De acuerdo. Escoltaré esa caravana de suministros.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Me temo que no dispongo de tantos soldados en este momento.
-dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Lo siento. No puedo hacerlo en este momento.
-dlga_start:close_window.21|Podemos arreglárnoslas nosotros mismos en lo que queda del camino. Gracias
-dlga_start:close_window.22|Bueno, casi hemos llegado a {s21}. Podemos arreglárnoslas nosotros mismos en lo que queda del camino. Gracias por escoltarnos. Buena suerte.^^[earned {reg14} Resource Points of {s14}]
-dlga_start:merchant_caravan_intro_1|Saludos. Debes de ser nuestra escolta, ¿verdad?
+dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Lo siento. Me temo que no puedo hacerlo en este momento.
+dlga_start:close_window.21|Podemos arreglárnoslas nosotros solos en lo que queda de camino. Gracias.
+dlga_start:close_window.22|Bueno, casi hemos llegado a {s21}. Podemos arreglárnoslas nosotros solos en lo poco que queda de camino. Gracias por escoltarnos. Buena suerte.^^[has conseguido {reg14} Puntos de Recursos de {s14}]
+dlga_start:merchant_caravan_intro_1|Saludos. Tú debes de ser nuestra escolta, ¿verdad?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Sí. Me llamo {playername}. Os guiaré hasta {s1}.
-dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bueno, es bueno saber que no viajaremos solos. ¿Qué quieres que hagamos nosotros ahora? 
+dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bueno, es bueno saber que no viajaremos solos. ¿Qué quieres que hagamos?
 dlga_start:escort_merchant_caravan_talk|Eh. Hemos llegado hasta aquí... ¿Qué quieres que hagamos?
 dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Seguidme. Os llevaré por una ruta segura.
 dlga_merchant_caravan_follow_lead:close_window|De acuerdo. Estaremos justo detrás de ti.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Quedaos aquí un momento. Me adelantaré para ver si hay peligros.
-dlga_merchant_caravan_stay_here:close_window|Alright. Te esperaremos aquí
-dlga_merchant_quest_requested:merchant_quest_brief.6|En realidad, estaba buscando un comandante capaz como tú. Existe una banda de trasgos especialmente molestos. Han infestado las cercanías y se dedican a asaltar caravanas de suministros y a guerreros solitarios. Han estado evadiendo todas nuestras patrullas en la zona hasta el momento. Si nadie es capaz de hacerles frente prontamente, voy a necesitar pedir una acción militar para acabar con ellos.
-dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Necesito que alguien de caza a esos molestos trasgos. Es un trabajo peligroso, pero creo que eres la persona adecuada para ello. ¿Qué dices a eso?^^[you will earn {reg14} Resource Points of {s14}]
+dlga_merchant_caravan_stay_here:close_window|Muy bien. Te esperaremos aquí
+dlga_merchant_quest_requested:merchant_quest_brief.6|Lo cierto es que estaba buscando un comandante tan capaz como tú. Existe una banda de trasgos especialmente molestos. Han infestado las cercanías y se dedican a asaltar caravanas de suministros y a guerreros despistados. Han estado evadiendo todas nuestras patrullas en la zona hasta el momento. Si nadie es capaz de hacerles frente en breve, voy a tener que solicitar acciones militares urgentes para acabar con ellos.
+dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Necesito que alguien dé caza a esos molestos trasgos. Es un trabajo peligroso, pero creo que eres la persona adecuada para ello. ¿Qué opinas?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|De acuerdo. Daré caza a esos trasgos.
 dlga_merchant_quest_taken_bandits:close_window|¿Lo harás? Me alegra mucho oír eso. Que tengas suerte.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Lo siento. No tengo tiempo para eso ahora mismo.
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|¡Claro que tengo una misión para ti! Existe un grupo de peligrosos trasgos sembrando el caos por todo el lugar, y ya no sé como acabar con ellos. Han estado asaltando y robando a reclutas borrachos aprovechando la oscuridad de la noche, y desapareciendo rápidamente antes de que los guardias llegaran. No hemos sido capaces de capturar a uno solo de ellos. Sólo atacan a personas aisladas, nunca se han atrevido a asaltar a todo un grupo de gente. Necesito a alguien que pueda enfrentarse a estos trasgos en solitario y acabe con ellos. Ésta parece ser la única manera para hacerlo. ¿Estás a la altura de las circunstancias?
 dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Hay una banda de peligrosos trasgos sembrando el caos por todo el lugar, y ya no sé como acabar con ellos. Han estado asaltando y robando a reclutas borrachos aprovechando la oscuridad de la noche, y desapareciendo rápidamente antes de que los guardias llegaran. No hemos sido capaces de capturar a uno solo de ellos. Sólo atacan a gente aislada, y nunca se han atrevido a asaltar a todo un grupo de gente. Necesito a alguien que pueda enfrentarse a estos trasgos en solitario y acabe con ellos. Ésta parece ser la única manera para hacerlo. ¿Estás a la altura de este reto?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|¿Matar trasgos? ¡Por supuesto!
-dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, no estoy interesado.
-dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Me quitas un peso de encima, {playername}. Habrá una recompensa para ti si tienes éxito en tu misión. Simplemente, vigila tu pellejo,¿eh?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|¿Matar trasgos? ¡Por supuesto, será un placer!
+dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, no me interesa.
+dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Me quitas un peso de encima, {playername}. Habrá una suculenta recompensa para ti si tienes éxito en tu misión. Intenta que no maten, ¿vale?
 dlga_merchant_quest_requested:merchant_quest_brief.7|El capitán de la guarnición de aquí está buscando un guerrero audaz que pueda llevar a un grupo de {s12} hasta {s13}.
-dlga_merchant_quest_brief:move_cattle_herd_quest_brief|El grupo deberá llegar a {s13} en un periodo de {reg6} días. Cuanto antes mejor, mucho mejor, pero no debe tardar más de {reg6} días.  ¿Puedes llevarlo a cabo?^^[you will earn {reg14} Resource Points of {s14}]
-dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Sí, puedo llevarlo hasta {s13}.
-dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Lo siento pero no.
-dlga_move_cattle_herd_quest_taken:mayor_pretalk|Espléndido. Podéis encontrarlo en las afueras de la ciudad. Después de que lo hayáis llevado hasta {s13}, volved aquí y os daré vuestra paga.
-dlga_merchant_quest_requested:mayor_pretalk|Gracias, señor, pero no necesitamos nada más ahora mismo. Os lo haré saber cuando necesitemos vuestra ayuda.
+dlga_merchant_quest_brief:move_cattle_herd_quest_brief|El grupo deberá llegar a {s13} en un periodo de {reg6} días. Cuanto antes mejor, mucho mejor, pero no debe tardar más de {reg6} días.  ¿Puedes llevarlo a cabo?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
+dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Sí, puedo llevarlos hasta {s13}.
+dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Lo siento, pero no.
+dlga_move_cattle_herd_quest_taken:mayor_pretalk|Espléndido. Los encontrarás en las afueras de la ciudad. Una vez los hayáis llevado hasta {s13}, vuelve aquí y te pagaré con creces.
+dlga_merchant_quest_requested:mayor_pretalk|Gracias, mi señor, pero no necesitamos nada ahora mismo. Te lo haré saber cuando sea necesario.
 dlga_goods_merchant_talk:goods_trade_requested|Quiero comprar algunas cosas... y quizás vender otras.
 dlga_goods_trade_requested:goods_trade_completed|Claro, claro... echa un vistazo a lo que tengo...
 dlga_goods_trade_completed:goods_merchant_talk|¿Algo más?
@@ -726,121 +726,121 @@ dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Váis a lamentar ca
 dlga_troublesome_bandits_intro_2:close_window|¡Matad ahora! ¡Comed luego! 
 dlga_start:fangorn_orcs_intro_1|¿Eh? Al anciano no le gustará que interrumpas el trabajo de sus sirvientes.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|¡Dejad de hacer daño a este bosque y marchaos, o lo lamentaréis! 
-dlga_fangorn_orcs_intro_2:close_window|Ja-Ja-Ja! ¡Talaremos y quemaremos lo que nos apetezca! Después de que hayamos terminado contigo...
+dlga_fangorn_orcs_intro_2:close_window|¡Jo-Jo-Ju-Jo! ¡Talaremos y quemaremos lo que nos apetezca! Una vez que hayamos terminado contigo...
 dlga_start:disbanded_troop_ask|¿Queréis que os sigamos?
 dlga_disbanded_troop_ask:disbanded_troop_join|Sí. Cabalguemos juntos.
-dlga_disbanded_troop_ask:close_window|No en este momento.
-dlga_disbanded_troop_join:close_window|Desafortunadamente, no tenéis espacio libre en vuestra compañía para nosotros.
+dlga_disbanded_troop_ask:close_window|No, esta vez no.
+dlga_disbanded_troop_join:close_window|Por desgracia no cuentas con espacio suficiente para nosotros en tu grupo.
 dlga_disbanded_troop_join:close_window.1|Estamos a vuestras órdenes.
 dlga_start:enemy_talk_1|No me cogerás de nuevo. Esta vez no.
 dlga_enemy_talk_1:enemy_talk_2|No tienes ninguna oportunidad de éxito contra mí. Ríndete.
 dlga_enemy_talk_2:close_window|¡Me rendiré cuando hayas muerto!
 dlga_prisoner_chat_00:close_window|^^¡GRRRR!^^
-dlga_prisoner_chat_00:prisoner_chat_3|Me has hecho prisionero ya, ¿qué más quieres de mí?
+dlga_prisoner_chat_00:prisoner_chat_3|Ya me has puesto las cadenas, ¿qué más quieres de mí?
 dlga_prisoner_chat_3:prisoner_chat_4|¡No hagas ningún movimiento en falso, escoria!
 dlga_prisoner_chat_3:prisoner_slaughter|¡Vas a ser nuestra cena de hoy!{s20}
 dlga_prisoner_chat_4:close_window|No estoy en posición de poder hacer nada contra ti... ¡Déjame en paz!
-dlga_prisoner_slaughter:prisoner_slaughter_02|¡Un día de estos me las vas a pagar!
-dlga_prisoner_slaughter:close_window|Un día de estos me las pagarás.... ¡Gak!...
+dlga_prisoner_slaughter:prisoner_slaughter_02|¡Un día de estos me las pagarás con creces!
+dlga_prisoner_slaughter:close_window|Un día de estos me las pagarás.... ¡Aa-Garrlkllk!...
 dlga_start:close_window.23|Fuera de aquí, vil mendigo.
-dlga_start:town_merchant_talk|Saludos señor. ¿Qué puedo ofreceros?
+dlga_start:town_merchant_talk|Saludos, mi señor. ¿Qué puedo hacer por ti?
 dlga_start:town_merchant_talk.1|Buenos días. ¿Qué puedo hacer por ti?
 dlga_town_merchant_talk:trade_requested_weapons|Quiero comprar nuevas armas. Enséñame lo que tengas.
-dlga_town_merchant_talk:trade_requested_horse|Estaba pensando en comprar un caballo.
-dlga_trade_requested_weapons:merchant_trade|Ah, sí señor. Estas son las mejores armas que podréis encontrar.
-dlga_trade_requested_horse:merchant_trade|Tenéis buen ojo, señor. No váis a encontrar mejores caballos que estos en otros lugares.
-dlga_merchant_trade:town_merchant_talk|¿Algo más?
+dlga_town_merchant_talk:trade_requested_horse|Estaba pensando en comprarme una nueva montura.
+dlga_trade_requested_weapons:merchant_trade|Ah, sí, mi señor. Estas son las mejores armas que podréis encontrar en estos lares.
+dlga_trade_requested_horse:merchant_trade|Tenéis buen ojo, mi señor. No vais a encontrar mejores caballos que estos en ningún otro sitio.
+dlga_merchant_trade:town_merchant_talk|¿Alguna cosa más?
 dlga_town_merchant_talk:merchant_gossip|Dime. ¿De qué habla la gente en estos días? 
 dlga_town_merchant_talk:close_window|Adiós.
 dlga_start:town_dweller_talk|¿Disculpa?
-dlga_start:town_dweller_talk.1|Buenos días, Comandante.
+dlga_start:town_dweller_talk.1|Buenos días, mi señor.
 dlga_town_dweller_talk:town_dweller_ask_fugitive|Estoy buscando a un fugitivo llamado {s4}. Me han dicho que puede estar escondido por aquí.
-dlga_town_dweller_ask_fugitive:close_window|Los forasteros van y vienen en esta ciudad. Si se encuentra encondido aquí, seguro que das con él si buscas un poco.
-dlga_town_dweller_talk:town_dweller_ask_info|¿Qué me puedes decir sobre este pueblo?
+dlga_town_dweller_ask_fugitive:close_window|Los forasteros van y vienen en esta ciudad. Si se encuentra escondido por aquí, seguro que das con él si buscas un poco.
+dlga_town_dweller_talk:town_dweller_ask_info|¿Qué me puedes decir sobre este sitio?
 dlga_town_dweller_talk:town_dweller_ask_info.1|¿Qué me puedes decir sobre este lugar?
 dlga_town_dweller_talk:town_dweller_ask_situation|¿Qué tal es la vida por aquí?
-dlga_town_dweller_ask_situation:town_dweller_poor|La desgracia ha golpeado a mi familia, {sir/madam}. Una plaga ha destruido mis cosechas, y mis pobres hijos están en casa hambrientos y enfermos. Mis vecinos son demasiado pobres para poder ayudarme.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Tengo una vida miserable, {sir/madam}. No he podido encontrar un trabajo en meses, y mis pobres hijos se van a dormir cada noche con el estómago vacío. Mis vecinos son demasiado pobres para ayudarme.
+dlga_town_dweller_ask_situation:town_dweller_poor|La desgracia ha golpeado a mi familia, {mi señor/mi señora}. Una plaga ha destruido mis cosechas, y mis pobres hijos están en casa hambrientos y enfermos. Mis vecinos son demasiado pobres para poder ayudarme.
+dlga_town_dweller_ask_situation:town_dweller_poor.1|Tengo una vida miserable, {mi señor/mi señora}. No he podido encontrar un trabajo en meses, y mis pobres hijos se van a dormir cada noche con el estómago vacío. Mis vecinos son demasiado pobres para ayudarme.
 dlga_town_dweller_poor:town_dweller_poor_paid|Entonces toma estos 300 denarios. Espero que esto os ayude a ti y a tu familia.
 dlga_town_dweller_poor:town_dweller_poor_not_paid|Entonces debes trabajar más duramente y llevar tu carga sin rechistar.
-dlga_town_dweller_poor_not_paid:close_window|Sí {sir/madam}. Haré lo que decís. 
-dlga_town_dweller_poor_paid:close_window|{My lord/My good lady}. Muchas gracias por vuestra ayuda. Le diré a todo el mundo cómo nos habéis ayudado.
+dlga_town_dweller_poor_not_paid:close_window|Sí, {mi señor/mi señora}. Haré lo que decís. 
+dlga_town_dweller_poor_paid:close_window|{Mi buen señor/Mi buena señora}. Muchas gracias por vuestra ayuda. Le diré a todo el mundo cómo nos habéis ayudado.
 dlga_town_dweller_ask_situation:close_window|Agradezco tu amabilidad, mi {señor/señora}. Con vuestra ayuda nuestras vida serán más llevaderas. Rezaré por ti cada día.
-dlga_town_dweller_ask_situation:town_dweller_talk|Son tiempos difíciles, {sir/madam}. Trabajamos durante todo el día y aún así muchas noches nos acostamos con el estómago vacío.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Son tiempos difíciles, {sir/madam}. Pero debemos dar gracias por lo que tenemos.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|No nos va mal {sir/madam}. Debemos dar gracias por lo que tenemos.
-dlga_town_dweller_talk:town_dweller_ask_rumor|¿Qué se rumorea por aquí?
-dlga_town_dweller_ask_rumor:town_dweller_talk|No se nada que pudiera ser de interés para ti.
+dlga_town_dweller_ask_situation:town_dweller_talk|Son tiempos difíciles, {mi señor/mi señora}. Trabajamos durante todo el día y aún así muchas noches nos acostamos con el estómago vacío.
+dlga_town_dweller_ask_situation:town_dweller_talk.1|Son tiempos difíciles, {mi señora/mi señora}. Pero debemos dar gracias por lo que tenemos.
+dlga_town_dweller_ask_situation:town_dweller_talk.2|No nos va mal {mi señora/mi señora}. Debemos dar gracias por lo que tenemos.
+dlga_town_dweller_talk:town_dweller_ask_rumor|¿Qué es lo que se comenta por aquí?
+dlga_town_dweller_ask_rumor:town_dweller_talk|No sé nada que pudiera ser de interés para ti.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|¿Me estás amenazando? Los guardias conocen bien a la gente de tu calaña. 
 dlga_town_dweller_brawl_confirm:close_window|¿Ah sí? Vamos a ver lo valiente que eres.
-dlga_town_dweller_brawl_confirm:close_window.1|No, creía que eras otra persona.
-dlga_town_dweller_talk:close_window|[Adiós]
-dlga_start:player_castle_guard_talk|¿Sí, señor?
+dlga_town_dweller_brawl_confirm:close_window.1|No, te he confundido con otro.
+dlga_town_dweller_talk:close_window|[Irse]
+dlga_start:player_castle_guard_talk|¿Sí, mi señor?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|¿Cómo va la guardia, soldado?
-dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Todo está tranquilo, señor. Nada nuevo que informar.
+dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Todo en calma, mi señor. Nada de lo que informar.
 dlga_player_castle_guard_talk_3:close_window|Bien. Mantén los ojos bien abiertos.
-dlga_start:close_window.24|Buenos días, comandante. Es bueno contar con tu presencia aquí, en {s10}.
-dlga_start:close_window.25|Vigilad vuestros modales y no tendremos ningún problema.
-dlga_start:hall_guard_easter_egg|Ah, justo después de medianoche. Sabéis, algo bastante inusual me sucedió recientemente - ¿Queréis escucharlo?
+dlga_start:close_window.24|Buenos días, mi señor. Es bueno contar con tu presencia aquí, en {s10}.
+dlga_start:close_window.25|Cuida tus formas y no tendremos ningún problema.
+dlga_start:hall_guard_easter_egg|Ah, justo después de medianoche sucedió algo extraño - ¿Quieres escucharlo?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Sí, por favor.
-dlga_hall_guard_easter_egg:close_window|No me interesan los rumores.
-dlga_hall_guard_easter_egg_scene:close_window|Bueno.. un grupo inusual de guerreros apareció por aquí recientemente: un hombre, un enano y un elfo, y después...
-dlga_start:hall_guard_talk|¿Sus órdenes, señor?
-dlga_start:close_window.26|No se nos permite hablar mientras estamos de guardia, señor.
+dlga_hall_guard_easter_egg:close_window|No me interesan las habladurías.
+dlga_hall_guard_easter_egg_scene:close_window|Bueno... un grupo muy poco común de aventureros apareció por aquí hace poco: un hombre, un enano y un elfo, y entonces...
+dlga_start:hall_guard_talk|¿Cuales son tus órdenes, mi señor?
+dlga_start:close_window.26|No se nos permite hablar mientras estamos de guardia, mi señor.
 dlga_hall_guard_talk:hall_guard_duty|Permaneced alerta y hacedme saber si alguien viene a verme.
-dlga_hall_guard_duty:close_window|Sí, señor. Como ordenéis.
+dlga_hall_guard_duty:close_window|Sí, mi señor. Como ordenéis.
 dlga_hall_guard_talk:hall_guard_arrest|¡Quiero que arrestéis a este hombre inmediatamente!
-dlga_hall_guard_arrest:hall_guard_arrest_2|¿A quién queréis arrestar, señor?
-dlga_hall_guard_arrest_2:close_window|Ah, perdonad mi fervor muchachos.
-dlga_hall_guard_arrest_2:close_window.1|Olvidadlo. Encontraré otra manera de solucionar esto.
-dlga_enemy_defeated:close_window|Argg! Odio esto.
-dlga_party_relieved:close_window|Gracias por ayudarnos contra esos bastardos.
+dlga_hall_guard_arrest:hall_guard_arrest_2|¿A quién queréis arrestar, mi señor?
+dlga_hall_guard_arrest_2:close_window|Ah, perdonad mi fervor, muchachos.
+dlga_hall_guard_arrest_2:close_window.1|Olvidadlo. Encontraré otra forma de solucionarlo.
+dlga_enemy_defeated:close_window|¡Argg! Odio esto.
+dlga_party_relieved:close_window|Gracias por ayudarnos a acabar con esos bastardos.
 dlga_start:battle_reason_stated|¡Beberé vuestra sangre!
 dlga_member_chat_00:close_window.1|^^¡GRRRR!^^
-dlga_member_chat_00:regular_member_talk|¿Qué órdenes tenéis, señor?
+dlga_member_chat_00:regular_member_talk|¿Cuales son tus órdenes, mi señor?
 dlga_regular_member_talk:view_regular_char_requested|Cuéntame más sobre ti.
-dlga_view_regular_char_requested:do_regular_member_view_char|Sí señor. Déjeme contarle acerca de mí.
+dlga_view_regular_char_requested:do_regular_member_view_char|Claro, mi señor. Déjame contarle todo lo que hay que saber sobre mí.
 dlga_do_regular_member_view_char:regular_member_talk|¿Algo más?
-dlga_member_chat_00:disband_regular_member_confirm_yn|Ha sido un honor estar {s12} bajo sus órdenes, señor.^^Ahora, como sabéis, me han reasignado a la defensa de mi tierra natal.^Partiré pronto.^^[you will earn {reg14} Resource Points of {s14}]
-dlga_regular_member_talk:disband_regular_member_confirm|Vuestra ayuda es más necesaria en vuestra tierra de {s12}, que aquí en mi ejército de soldados.
-dlga_regular_member_talk:disband_regular_member_confirm.1|Estáis herido... deberíais volver a vuestra tierra de {s12}, donde podéis ser de más utilidad que aquí.
+dlga_member_chat_00:disband_regular_member_confirm_yn|Ha sido un honor servir a {s12} bajo sus órdenes, mi señor.^^Ahora, como sabéis, me han reasignado a la defensa de mi tierra natal.^Partiré pronto.^^[conseguirás {reg14} Puntos de Recursos de {s14}]
+dlga_regular_member_talk:disband_regular_member_confirm|Tu ayuda es más necesaria en {s12}, tu tierra, que aquí conmigo.
+dlga_regular_member_talk:disband_regular_member_confirm.1|Estáis herido... deberías volver a tu tierra natal, en {s12}, donde serás de más utilidad que aquí.
 dlga_regular_member_talk:close_window|Nada. Sigamos.
-dlga_disband_regular_member_confirm:disband_regular_member_confirm_yn|¿Debo dejar de estar a vuestro servicio, y volver a mis tierras para defenderlas?^^[you will earn {reg14} Resource Points of {s14}]
-dlga_disband_regular_member_confirm_yn:close_window|Sí, id allí y esperad órdenes de {s12}. ¡Buena suerte, soldado! 
-dlga_disband_regular_member_confirm_yn:close_window.1|Todavía no, os necesito aquí.
-dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|Pero todavía se te necesita aquí.
+dlga_disband_regular_member_confirm:disband_regular_member_confirm_yn|¿Deseas que deje de estar a tu servicio, y volver a mi tierra natal?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
+dlga_disband_regular_member_confirm_yn:close_window|Sí, ve allí y espera órdenes de {s12}. ¡Buena suerte, soldado! 
+dlga_disband_regular_member_confirm_yn:close_window.1|Todavía no, todavía te necesito aquí.
+dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|¡Pero todavía se te necesita aquí!
 dlga_disband_regular_member_insist:close_window|Lo siento, pero mi deber me obliga.^Partiré dentro de poco.
-dlga_start:routed_allies_talk|¡{reg1?Mi señor:Maestro}, has sobrevivido! ¿Quieres que nos unamos contigo?
-dlga_routed_allies_talk:close_window|Sí, entre todos lucharemos de nuevo por {s1}.
+dlga_start:routed_allies_talk|¡Mi {reg1?señor:amo}, has sobrevivido! ¿Quieres que viajemos de nuevo?
+dlga_routed_allies_talk:close_window|Sí, juntos lucharemos de nuevo por {s1}.
 dlga_routed_allies_talk:close_window.1|Todavía no, soldado.
 dlga_start:routed_allies_talk_troll|^^¡GRRRR!^^
 dlga_routed_allies_talk_troll:close_window|[Hacer que vuelvan a unirse a ti]
-dlga_routed_allies_talk_troll:close_window.1|[Irse.]
-dlga_start:party_encounter_friend|{s4} ¿Qué os trae por aquí, {s24}?
-dlga_party_reinforce:party_reinforce_end|No hemos visto mucha actividad enemiga todavía. Gracias, quizás más tarde.
+dlga_routed_allies_talk_troll:close_window.1|[Irse]
+dlga_start:party_encounter_friend|{s4} ¿Qué es lo que te trae por aquí, {s24}?
+dlga_party_reinforce:party_reinforce_end|Todavía no hemos divisado mucha actividad enemiga. Gracias, quizás más tarde.
 dlga_party_reinforce:party_reinforce_end.1|Gracias, pero no necesitamos más soldados.
-dlga_party_reinforce:party_reinforce_check|¿Reforzar nuestra compañía? Reinforce our party? Podemos aceptar algunos soldados más, pero tened en cuenta que sólo aceptamos tropas de nuestro mismo bando.
-dlga_party_reinforce:party_reinforce_end.2|Desafortunadamente no contáis con {s22} soldados para reforzar nuestra tropa.
-dlga_party_reinforce_check:party_reinforce_check_1|Dejadme ver a las tropas...
-dlga_party_reinforce_check_1:party_reinforce_end|Así que habéis cambiado de opinión...^Ya veo.
-dlga_party_reinforce_check_1:party_reinforce_end.1|Esos soldados no tienen ninguna utilidad para nosotros. ^Tomadlos de vuelta.
-dlga_start:close_window.27|¡Me estás demorando! ¡Los magos nunca llegan tarde!
-dlga_start:close_window.28|Me... llamaaaaa...
+dlga_party_reinforce:party_reinforce_check|¿Reforzar nuestra compañía? Podemos aceptar algunos soldados más, pero ten en cuenta que sólo aceptamos tropas de nuestra gente.
+dlga_party_reinforce:party_reinforce_end.2|Por desgracia no cuentas con ningún soldado de {s22} con los que reforzar nuestra compañía.
+dlga_party_reinforce_check:party_reinforce_check_1|Déjame ver a la lista de tropas...
+dlga_party_reinforce_check_1:party_reinforce_end|Así que has cambiado de opinión...^Ya veo.
+dlga_party_reinforce_check_1:party_reinforce_end.1|Esos soldados no nos sirven. ^Quédate con ellos.
+dlga_start:close_window.27|¡Me estás demorando! ¡Un mago nunca llega tarde!
+dlga_start:close_window.28|Nosss... llaamaaaaa...
 dlga_start:party_encounter_hostile_attacker|No tenéis ninguna oportunidad. Rendíos u os mataremos a todos...
-dlga_party_encounter_hostile_attacker:close_window|¡No nos mateis! Nos rendimos.
+dlga_party_encounter_hostile_attacker:close_window|¡No ataquéis! Nos rendimos.
 dlga_party_encounter_hostile_attacker:close_window.1|¡Lucharemos hasta la muerte!
-dlga_start:party_encounter_hostile_defender|¿Qué queréis?
+dlga_start:party_encounter_hostile_defender|¿Qué es lo que quieres?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|¡Rendíos o preparaos para morir!
 dlga_party_encounter_hostile_defender:close_window|Nada. Os dejaremos en paz.
-dlga_start:close_window.29|* te mira en silencio *
-dlga_start:battle_reason_stated.1|Rendíos o preparaos para morir. Elegid. 
+dlga_start:close_window.29|*te mira fijamente en silencio*
+dlga_start:battle_reason_stated.1|Rendíos o preparaos para morir. Decidíos.
 dlga_battle_reason_stated:close_window|No os tengo miedo. Lucharé.
 dlga_start:free|Hola. ¿Qué puedo hacer por ti?
-dlga_free:view_char_requested|Cuéntame acerca de ti.
+dlga_free:view_char_requested|Cuéntame más sobre ti.
 dlga_view_char_requested:view_char|Muy bien, escucha...
 dlga_view_char:free|¿Algo más?
 dlga_end:close_window|[Hecho]
-dlga_start:threaten_1|Dejad las armas y rendíos si queréis seguir viviendo.
-dlga_threaten_1:end|Lucharemos contra ti antes.
-dlga_free:close_window|  Adiós.
-dlga_free:close_window.1| [Adios]
+dlga_start:threaten_1|Dejad las armas y rendíos si queréis vivir.
+dlga_threaten_1:end|Antes nos enfrentaremos a ti.
+dlga_free:close_window|Adiós.
+dlga_free:close_window.1| [Irse]
