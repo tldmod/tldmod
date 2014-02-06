@@ -305,7 +305,7 @@ menu_notification_center_under_siege|{s1} wird von {s2} von {s3} belagert!
 menu_notification_one_side_left|^^^^^Der Ringkrieg ist vorüber!^^Die {s1} haben all ihre Gegner bezwungen und sind siegreich!
 menu_notification_total_defeat|^^^^^Der Ringkrieg ist für dich vorbei!^^Die {s1} wurden von ihren Feinden besiegt und in der Niederlage stehst du nun allein. 
 menu_notification_your_faction_collapsed|^^^^^Dein Heimatland {s11} wurde besiegt!^Andere Verbündete verbleiben aber im Krieg. Du kannst immer noch, zusammen mit jedem Überlebenden von {s11}, deiner Seite zum Sieg verhelfen.
-menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Kräfte von {s13}!
+menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Mächte von {s13}!
 menu_ruins|^^^^Du näherst dich den {s1}. Ein einst solides Lager wurde dem Erdboden gleich gemacht, auch wenn du noch einige Spuren der Befestigungen und verstreut rostige Waffen erkennst.
 menu_legendary_place|^^^^Du bist den Gerüchten gefolgt and hast {s1} entdeckt. Du kannst diesen Ort nun erkunden und prüfen, ob die Gerüchte wahr sind.
 mno_explore|Erkunde diesen Ort.
@@ -350,7 +350,7 @@ menu_burial_mound_oath|Du schwörst lauthals einen Racheschwur für den Tod von 
 menu_burial_mound_despoil|Du reißt das Monument für {s1} mit deinen eigenen Händen nieder und entweihst die Steine mit Flüchen, fürchterlichem Gesang und unaussprechbaren Handlungen. Dein Gefolge zieht sich aus Furcht vor dem Toten zurück, scheint aber erneuerten Respekt vor deiner Verruchtheit zu haben.
 menu_funeral_pyre|Du näherst dich den verkohlten Überresten des Scheiterhaufens von {s3} von {s2}. Hier wurde sein Körper durch seine persönliche Leibwache feierlich verbrannt. Nichts von Wert verbleibt. 
 mno_leave_pyre|Verlasse den Scheiterhaufen.
-menu_town_ruins|Als du dich näherst, siehst du, dass {s1} {s2} ist.
+menu_town_ruins|Als du dich näherst, siehst du, dass {s1} {s2}.
 mno_ruin_menu_0|Erkunde den Ort.
 mno_ruin_leave|Verlassen...
 menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht länger Teil davon sein.

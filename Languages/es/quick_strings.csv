@@ -182,7 +182,7 @@ qstr_{s3}_is_no_longer_un|{s3} ya no está bajo asedio.
 qstr_Enemies_spotted_near|Enemigos avistados cerca de {s1}.
 qstr_Your_relation_with_{|Tu relación con {s1} ha mejorado.
 qstr_Your_relation_with_{s|Ha empeorado tu relación con {s1}.
-qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?estaba:está actualmente} en {s3}.
+qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?estaba:está ahora mismo} en {s3}.
 qstr_{s2}_{reg3?was:is}_t|s2} {reg3?estaba:está} viajando hacia {s3} y {reg4?ella:él} {reg3?estaba:debería estar} cerca de {s4}{reg3?: en ese momento}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?estaba:está} por los campos y {reg3?estaba:debería estar} cerca de {s3}{reg3?: en ese momento}.
 qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?se encontraba:se encuentra} en cautividad en {s3}.
@@ -442,9 +442,9 @@ qstr_You_bring_dismal_new|Portáis noticias tristes, mago.
 qstr_But_I_also_bring_a_m|Pero también traigo un mensaje de esperanza. Las gentes de {s5} aún se mantienen firmes. Sus guerreros audaces y sus líderes resueltos.
 qstr_Help_them_fight_the_|Ayúdales en la lucha contra el Enemigo hasta el fin de tus fuerzas. ¡Nunca cedas! ¡Pero mantente en guardia! Hay criaturas más antiguas y oscuras que los orcos en el mundo.
 qstr_Beware_{playername}_|Ten cuidado, {playername}, el poder de la Oscuridad se desmorona. {s3} ha caído, al igual que su líder {s4}.
-qstr_What_do_you_want_of_|¿Qué queréis de mi, anciano?
+qstr_What_do_you_want_of_|¿Qué es lo que quieres de mi, anciano?
 qstr_Just_know_that_a_Daw|Sólo tienes de saber que un nuevo Amanecer se acerca. Es inevitable. Y en caso de que vivas para verlo, piensa en qué parte has tomado al respecto.
-qstr_Well_met_{playername|Nos encontramos de nuevo, {playername}, {s24}. No me equivoqué al poner mis esperanzas en ti. El poder de las fuerzas de la Sombra ha caído y esfuerzos han sido una parte fundamental de su derrota.
+qstr_Well_met_{playername|Nos encontramos de nuevo, {playername}, {s24}. No me equivoqué al poner mis esperanzas en ti. El poder de las fuerzas de la Sombra ha caído y tus esfuerzos han sido una parte fundamental de su derrota.
 qstr_Thank_you_Mithrandir|¡Gracias, Mithrandir!
 qstr_The_wizard_Saruman_i|¡El mago Saruman ya no sigue entre nosotros y Barad Dûr ha sido reducido a polvo junto con su Señor Oscuro! Los pueblos de la Tierra Media han sido liberados de la amenaza que casi consumió todo el bien y la pureza de este mundo. ¡El enemigo ha sido vencido y el Rey ha regresado!
 qstr_It_was_a_long_and_bl|Ha sido una guerra larga y sangrienta, muchos de nuestros amigos ya no están entre nosotros.
@@ -856,7 +856,7 @@ qstr_It_is_my_duty_to_pro|Es mi deber proteger a nuestro pueblo.
 qstr_It_is_my_duty_to_prot|Es mi deber proteger a nuestros aliados.
 qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, un comandante de {s6}
-qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y el dueño de {s8}.:.
+qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y dueño de {s8}.:.
 qstr_Very_well_done_{play|¡Muy bien hecho, {playername}! Habéis capturado a ambos, el espía y su contratista, tal y como esperaba, y ambos están ahora bajo llave, esperando a ser interrogados. ¡Tendrán que darnos alguna explicación ahora!. De cualquier modo, estoy muy satisfecho con los resultados, {playername}, y os doy esta bolsa como una muestra de aprecio.
 qstr_Beautiful_work_{play|¡Un trabajo excelente, {playername}! Has capturado a ambos, al espía y a su contratista, tal y como os dijeron, y ambos se encuentran enjaulados en mi mazmorra, esperando para ser interrogados. ¡Mi torturador estará ocupado esta noche!. Pero bueno, estoy satisfecho con los resultados, {playername}, y quiero ofrecerte esta bolsa como muestra de mi aprecio.
 qstr_Your_mission_is_comp|Has completado la misión, {s9} te solicita que renaudes el seguimiento de su ejército hasta nuevo aviso.
@@ -870,13 +870,13 @@ qstr_It_was_an_honour_to_|Fue un honor serviros.
 qstr_Your_wish_is_my_comm|Vuestros deseos son mis órdenes, comandante.
 qstr_we_are_fighting_agai|estamos luchando contra {s13}
 qstr_we_are_not_fighting_|no estamos en guerra con nadie ahora mismo
-qstr_Oh?_Let_me_see_that.|Oh? Déjame echarle un ojo a esto... Bien, bien. Habéis hecho bien en traerme esto, {playername}. Toma mi sello como prueba de que lo he recibido y dadle mis saludos a {s9} cuando le veas de nuevo.
-qstr_Give_me_that!_Hrmph!|¡Deme eso! ¡Hrmph! Bien hecho en traerme esto, {playername}, sois un sirviente útil. Decidle a {s9} que os emplée más a menudo
-qstr_What?_Let_me_see_tha|Qué? Dejadme ver eso... Hmmm. Fue bueno que me trajeras esto, {playername}. Ahora iros.
-qstr_Give_me_that!_Hrmph!_|¡Deme eso! ¡Hrmph! sois un sirviente útil para vuestros amos, {playername}, pero todos ustedes morirán tarde o temprano. No ahora, sin embargo, escabullete..
+qstr_Oh?_Let_me_see_that.|¿Oh? Déjame verlo... ¡Bien, bien, bien! Has hecho bien en traerme esto, {playername}. Aquí tienes mi sello como prueba de que lo he recibido, saluda a {s9} de mi parte cuando le vuelvas a ver.
+qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Humrm! Has hecho bien en traerme esto, {playername}, eres un sirviente útil. Espero que hagas saber a {s9} que haga uso de ti más a menudo
+qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Ha estado muy listo al traérmelo, {playername}. Ahora, fuera.
+qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Hmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
 qstr_Do_you_need_reinforc|¿Necesitáis refuerzos?
-qstr_You_don_t_look_too_s|No parecéis demasiado fuerte, ¿Necesitáis tropas?
-qstr_^{s14}_is_grateful_t|^{s14} es grandioso de tu parte, {playername}, {s29}^
+qstr_You_don_t_look_too_s|No parece que tengas hombres suficientes, ¿Necesitáis tropas?
+qstr_^{s14}_is_grateful_t|^{s14} te lo agradece, {playername}, {s29}^
 qstr_{s31}{reg28?Those:That|{s31}{reg28?Esos bravos:Ese bravo} {reg28?soldados ayudarán:soldado ayudará} seguramente a defender nuestras tierras .{s32}^^[gana {reg14} Puntos de Recursos de {s14}]
 qstr_{s31}{reg28?Those:That}|{s31}{reg28?Esas útiles:Esa útil} {reg28?tropas serán:tropa será} seguramente de ayuda para el ataque.{s32}^^[gana {reg14} Puntos de Recursos de {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Ah, y llevaos esos soldados que no son de mi reino, no tengo uso para ellos.
@@ -895,7 +895,7 @@ qstr_You_have_requested_to|Ha solicitado a entregar un soborno de {s1} a {s3} de
 qstr_Taking_{reg0}_inf._A|Conquista {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|Gastas {reg0} de tu influencia con {s1}, sigues teniendo {reg11}.
 qstr_The_War_is_over_{pla|La guerra ha terminado, {playername}, ¿No te has enterado?
-qstr_We_are_at_war_with_{|Estamos en guerra con {s12}. Sin embargo, luchamos en su mayoría contra {s13}.
+qstr_We_are_at_war_with_{|Estamos en guerra con {s12}. Sin embargo, estamos luchamos sobre todo contra {s13}.
 qstr_We_are_at_war_with_{s|Estamos en guerra con {s12}. Sin embargo, solo hay escaramuzas en este momento.
 qstr_we_are_not_too_conce|no estamos demasiado preocupados por ellos en este momento, ya que estamos luchando contra enemigos más cercanos a casa.
 qstr__under_your_orders|, bajo vuestras órdenes.
@@ -914,7 +914,7 @@ qstr_Lend_your_experience|Prestar a tu cirujano experto {s3} a {s1}.
 qstr_No_commander_should_|Ningún comandante debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y había algunos que no saben donde empieza y donde termina una espada. Necesitan a alguien que les enseñe el significado del valor. Tu eres un guerrero de renombre, {playername}. ¿Entrenarías algunas tropas por mi? Le agradecería que lo hiciera.
 qstr_No_commander_should_h|Ningún comandante debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y ejecuté a algunos por incompetentes. Necesitan a alguien con el acero en su regazo para azotarlos e inculcarles ciertos valores o matarlos en el intento. Sois un guerrero de renombre, {playername}. ¿Entrenarías algunas tropas por mi? Puedo hacer que valga la pena.
 qstr_{s9}_asked_you_to_ra|{s9} te ha pedido que le lleves {reg1} {s14}.
-qstr_{s9}_asked_you_to_hu|{s9} te ha pedido que des caza a un fugitivo llamado {s4}. Se cree que actualmente se esconde en {s3}.
+qstr_{s9}_asked_you_to_hu|{s9} te ha pedido que des caza a un fugitivo llamado {s4}. Se cree que ahora mismo se esconde en {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} te ha pedido que apreces a tres grupos de esclavos fugitivos y los conduzcas, vivos, de regreso a {s4}. Dijo que los grupos estaban huyendo hacia {s3}.
 qstr_{s11}_asked_you_to_f|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado y no dejar que el espía te aviste, o podría sospechar y darse la vuelta. Una vez que el espía se encuentre con su contacto, desbes capturarlos y llevarlos de regreso a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} te ha pedido que captures a un comandante enemigo y que luego se lo lleves a {s11} para custodiarlo allí.

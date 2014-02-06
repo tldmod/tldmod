@@ -15,13 +15,13 @@ dlga_troll_beaten:troll_talk_1|Me inclino ante tu chachi sabiduría, ¡Gran Trol
 dlga_troll_goodbye:close_window|¡JO JI JU JA JA JE JO JO JO JO!
 dlga_start:hobbit_merry_talk_met|¡Hola de nuevo, {playername}!
 dlga_start:hobbit_pippin_talk_met|¡Hola de nuevo, {playername}!
-dlga_start:hobbit_general_talk_1|¡Saludos, mi{señor/señora}! ¡Soy Meriadoc Brandigamo pero puedes llamame Merry!
-dlga_start:hobbit_general_talk_1.1|¡Saludos, mi{señor/señora}! ¡Soy Peregrin Tuk pero puedes llamarme Pippin!
+dlga_start:hobbit_general_talk_1|¡Saludos, mi {señor/señora}! ¡Soy Meriadoc Brandigamo pero puedes llamame Merry!
+dlga_start:hobbit_general_talk_1.1|¡Saludos, mi {señor/señora}! ¡Soy Peregrin Tuk pero puedes llamarme Pippin!
 dlga_hobbit_general_talk_1:close_window|No tengo tiempo para ésto.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Ahora que lo pienso, creo que nunca había visto a nadie como tú.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vaya, creo que me he encontrado con otro como tú en Edoras.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vaya, creo que me he encontrado con otro como tú en Minas Tirith.
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Lo sé. ¡Vengo de lejos! Soy un Hobbit, mi{señor/señora}, de la Comarca.
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Lo sé. ¡Vengo de lejos! Soy un Hobbit, mi {señor/señora}, de la Comarca.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|¡Oh, ese debe de haber sido mi querido primo! Peregrin Tuk, o Pippin, como también le llaman. Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡ambos! El bueno de Pippin, me pregunto como le estará yendo en Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|¡Oh, ese debe de haber sido mi querido primo! Meriadoc Brandigamo, o Merry, como también le llaman. Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡ambos! El bueno de Pippin, me pregunto como le estará yendo en Minas Tirith.
 dlga_hobbit_general_talk_3:close_window|Bueno, hasta luego.
@@ -239,8 +239,8 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|De acuerdo, todo vuestro.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Me temo que tengo otros planes para él.
 dlga_lord_buy_prisoner_accept:lord_pretalk|¡Excelente! Haré que mis hombres lo lleven a nuestra prisión lo antes posible. Seguro que ayuda a la causa.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Es una pena, nos habría resultado muy útil, {playername}.
-dlga_lord_start:lord_pretalk|Ah, bienvenido, {s24}.^Ya deberías saberlo {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando pruebes ser digno de mi confianza [nivel {reg1}], te dejaré abrir ese cofre de ahí.
-dlga_lord_start:lord_talk|¿Qué queréis?
+dlga_lord_start:lord_pretalk|Ah, bienvenido, {s24}.^Ya deberías saber {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando pruebes ser digno de mi confianza [nivel {reg1}], te dejaré abrir ese cofre de ahí.
+dlga_lord_start:lord_talk|¿Qué es lo que quieres?
 dlga_lord_pretalk:lord_talk|¿Algo más? 
 dlga_lord_talk:lord_lend_companion_end|Me gustaría que {s14} volviera bajo mi mando, {s65}, si ya no necesitáis  {reg3?sus:sus} servicios.
 dlga_lord_lend_companion_end:lord_pretalk|Llevas a demasiados soldados en tu compañía, {playername}. No puedes llevar a nadie más de momento.
@@ -263,7 +263,7 @@ dlga_lord_talk:lord_get_reward_item_ask|Me gustaría pedir un objeto especial.
 dlga_lord_get_reward_item_ask:lord_talk|Parece que no dispones de espacio suficiente en tu inventario. Haz un hueco, y pregúntame de nuevo.
 dlga_lord_get_reward_item_ask:lord_get_reward_item|¿En serio? Recuerda que necesitas cierto rango e influencia para poder acceder a ciertos objetos especiales.^¿Qué es lo que buscas?
 dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [cuesta {reg14}/{reg15} de Influencia]
-dlga_lord_get_reward_item:lord_pretalk|Olvidadlo entonces.
+dlga_lord_get_reward_item:lord_pretalk|Entonces nada.
 dlga_lord_get_reward_item_answer:lord_pretalk|Muy bien. Esperemos que lo uses para acabar con nuestros enemigos.
 dlga_lord_talk:marshall_ask|Me gustaría darte consejo sobre la Guerra.
 dlga_marshall_ask:lord_pretalk|Difícilmente recibiré consejo de un {s25}, {playername}. Habría estado más dispuesto a escucharte si fueras {s24}, pero no es el caso.
@@ -309,7 +309,7 @@ dlga_lord_talk_ask_location:lord_talk_ask_location_2|De acuerdo, puedo o no sabe
 dlga_lord_talk_ask_location_2:lord_pretalk|No importa.
 dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Cuéntame más sobre la guerra contra {s1}.
 dlga_lord_talk_ask_about_war_2:lord_pretalk|Eso es todo lo que quería saber. Gracias.
-dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Nosotros tenemos {s22} y ellos tienen {s23}. En general, {s9}.
+dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Nosotros estamos {s22} y ellos {s23}. En general, {s9}.
 dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|¡Hoy es un buen día para luchar, {s4}!
 dlga_lord_tell_objective:lord_pretalk|¿Cómo que qué estoy haciendo? ¡¿Qué te parece que estoy haciendo?! ¡Estoy prisionero, aquí!
 dlga_lord_tell_objective:lord_pretalk.1|No dirijo ninguna tropa en este momento.
@@ -437,7 +437,7 @@ dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Bueno, es una desgra
 dlga_lord_tell_mission:lord_mission_told.3|Nuestros exploradores han notado un incremento reciente en la actividad del enemigo. Desafortunadamente nunca hemos conseguido capturar soldados enemigos para interrogarlos, y así conocer los planes del enemigo. Así que necesito un guerrero valiente que capture a {reg1} soldados enemigos, para que los pueda interrogar.
 dlga_lord_tell_mission:lord_pretalk|No, {playername}. No necesito de tu ayuda en este momento.
 dlga_lord_mission_told:lord_mission_accepted|Puedes contar conmigo, {s65}.
-dlga_lord_mission_told:lord_mission_rejected|Me temo que no puedo aceptar hacer una misión como esa en este momento.
+dlga_lord_mission_told:lord_mission_rejected|Me temo que no puedo aceptar una misión como esa en este momento.
 dlga_lord_mission_accepted:close_window|Excelente, {playername}, excelente. Confío plenamente en ti.
 dlga_lord_mission_rejected:close_window|¿Ah sí? Bueno, supongo que simplemente no te encuentras suficientemente preparado para realizar esta misión. Tendré que encontrar a alguien con más agallas para llevarla a cabo.
 dlga_lord_talk:lord_leave_prison|Debo irme.
@@ -489,7 +489,7 @@ dlga_castle_gate_guard_talk:request_meeting_castle_lord|Quiero hablar con el se�
 dlga_castle_gate_guard_talk:request_meeting_other|Quiero hablar con una persona dentro del castillo.
 dlga_castle_gate_guard_talk:close_window|[Irse]
 dlga_request_meeting_castle_lord:close_window|Espera aquí. {s2} se reunirá contigo.
-dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|Mi señor no se encuentra aquí  en este momento.
+dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|Mi señor no se encuentra aquí en este momento.
 dlga_request_meeting_other:request_meeting_3|¿Quién es?
 dlga_request_meeting_3:close_window|No importa.
 dlga_request_meeting_4:request_meeting_5|Espera aquí. Le informaré de tu petición.
@@ -727,7 +727,7 @@ dlga_troublesome_bandits_intro_2:close_window|¡Matad ahora! ¡Comed luego!
 dlga_start:fangorn_orcs_intro_1|¿Eh? Al anciano no le gustará que interrumpas el trabajo de sus sirvientes.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|¡Dejad de hacer daño a este bosque y marchaos, o lo lamentaréis! 
 dlga_fangorn_orcs_intro_2:close_window|¡Jo-Jo-Ju-Jo! ¡Talaremos y quemaremos lo que nos apetezca! Una vez que hayamos terminado contigo...
-dlga_start:disbanded_troop_ask|¿Queréis que os sigamos?
+dlga_start:disbanded_troop_ask|¿Quieres que os sigamos?
 dlga_disbanded_troop_ask:disbanded_troop_join|Sí. Cabalguemos juntos.
 dlga_disbanded_troop_ask:close_window|No, esta vez no.
 dlga_disbanded_troop_join:close_window|Por desgracia no cuentas con espacio suficiente para nosotros en tu grupo.
@@ -792,7 +792,7 @@ dlga_hall_guard_duty:close_window|Sí, mi señor. Como ordenéis.
 dlga_hall_guard_talk:hall_guard_arrest|¡Quiero que arrestéis a este hombre inmediatamente!
 dlga_hall_guard_arrest:hall_guard_arrest_2|¿A quién queréis arrestar, mi señor?
 dlga_hall_guard_arrest_2:close_window|Ah, perdonad mi fervor, muchachos.
-dlga_hall_guard_arrest_2:close_window.1|Olvidadlo. Encontraré otra forma de solucionarlo.
+dlga_hall_guard_arrest_2:close_window.1|Olvídalo. Encontraré otra forma de solucionarlo.
 dlga_enemy_defeated:close_window|¡Argg! Odio esto.
 dlga_party_relieved:close_window|Gracias por ayudarnos a acabar con esos bastardos.
 dlga_start:battle_reason_stated|¡Beberé vuestra sangre!

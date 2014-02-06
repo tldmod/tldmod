@@ -20,8 +20,8 @@ str_blunt_hold_fire|Armas contundentes / Alto el fuego
 str_tutorial_ammo_refilled|Munición recargada.
 str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su cabalo  y lidera a sus leales hombres a una feroz batalla.
 str_custom_battle_2|Celeborn de Lórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de vanguardia le avisan de que una fuerza de hombres malvados de rostro ceniciento se están acercando. ¡Son los terribles Númenóreanos Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben ser enviados de vuelta a la oscuridad.      
-str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras los sitiadores se preparan para su asalto final a los muros, debe defenderlos con su coraje y su brillante acero.
-str_custom_battle_4|Cuando los exploradores informn al señor Beranhelm de que una banda de guerreros de Rhun se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
+str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras los sitiadores se preparan para su asalto final a los muros, él debe defenderlos con su coraje y brillante acero.
+str_custom_battle_4|Cuando los exploradores informan al señor Beranhelm de que una banda de guerreros de Rhûn se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
 str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de saqueo. Si consigue hacerse con esta fortaleza enana hoy, sus amos en Barad-Dûr estarán contentos.
 str_custom_battle_6|Ugluk y su pelotón de orcos hacían todo lo posible para escapar de las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios pieles-pálidas para vengarse.
 str_custom_battle_7|¡Los corsarios han montado un campamento en las costas de Gondor! Ataquemos antes de que obtengan refuerzos y devolvámoslos al mar donde pertenecen.
@@ -261,7 +261,7 @@ str_retirement_text_3|Demasiado tarde te das cuenta de que tu dinero no durará 
 str_retirement_text_4|El dinero que has ahorrado no te dura demasiado, pero consigues reunir lo suficiente como para comprar algo de tierra cerca de la aldea de {s7}. Allí te conviertes en un granjero libre, y pronto empiezas a atraer a potenciales {wives/husbands}. Con el tiempo, los aldeanos te tratan como el héroe local. Siempre tienes un puesto de honor en los festines y tus hazañas son contadas y recontadas en todas las tabernas, para que los niños te recuerden por siempre jamás.
 str_retirement_text_5|El dinero que has ahorrado no te dura demasiado pero es suficiente para comprar una pequeña taberna en {s9}. A pesar de que los lugareños desconfían la principio, pronto te aceptan como uno más. Con el tiempo tu próspera taberna se convierte en sala de festines y en lugar de reunión. La gente viene desde muy lejos para comer o para pasar la noche allí, debido a tu renombre y a las historias épicas que cuentas de tus días de aventuras.
 str_retirement_text_6|Has ahorrado sabiamente durante tu carrera y ahora tu dinero y tu inteligencia te permiten realizar excelentes inversiones que aseguren tu futuro. Trás comprar varias tiendas y almacenes en {s9}, tu astucia te convierte en uno de los más promienentes mercaderes de la ciudad y pronto te conviertes en una persona adinerada conocida tanto por su imperio mercantil como por sus hazañas en la batalla.
-str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tu fortín de {s7}, administrando la aldea y los campos, organizando las cortes locales y cumpliendo con tus obligaciones hacia tu señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propio salón y tus propiedades, existen pocos deseos de bienes materiales que tu riqueza o las rentas de tus tierras no te permitan conseguir.
+str_retirement_text_7|Como parte de la nobleza, aunque de menor rango, tu futuro está asegurado. Te instalas en tus tierras de {s7}, administrando la aldea y los campos, organizando los juicios locales y cumpliendo con tus obligaciones hacia tu señor feudal. Ocasionalmente tu señor te llama a las armas para sus campañas, pero estos periodos son cortos y nunca vuelves realmente a tus días de aventuras. Ya has hecho una fortuna. Con tu propio salón y tus propiedades, existen pocos deseos de bienes materiales que tu riqueza o las rentas de tus tierras no te permitan conseguir.
 str_retirement_text_8|No hay ninguna duda de que te lo has montado bien. Tus enormes propiedades y el oro obtenido en tus aventuras son suficientes para garantizarte una vida opulenta y fácil para el resto de tus días. Retirándote a tu solar en {s8}, cambias tu vida de aventuras por la política y pronto te conviertes en alguien con poder en el reino de tu señor. Con intrigas en las que mantenerte ocupado, tus propios bosques para cazar, un salón para festejar y cientos de historias de guerra que contar, tienes pocos problemas para sacarle lo máximo a los años futuros.
 str_retirement_text_9|Como recompensa por tu competente y leal servicio, tu señor feudal te otorga un título herditario, convirtiéndote así en parte de la alta nobleza del reino. Pronto completas tu investidura como barón de {s7}, y te conviertes en uno de los consejeros y ayudantes de tu señor. Tu renombre te da una sutil influencia, así como abierto poder político. Pasas el resto de tus días jugando a los juegos de poder, administrando tus grandes feudos y recordando los viejos tiempos de aventura y gloria.
 str_retirement_text_10|A pesar de tus humildes comienzos, tu señor feudal te tiene en alta estima, y el reino se estremece en admiración cuando se te otorga el título hereditario de {count/countess} de {s9}. Vastos campos y fortunas son tuyos ahora. Pronto te conviertes en el consejero más cercano a tu señor, casi su igual, y te encargas de llevar gran parte de su reino. Acabas sentándote en un trono, en tu propio espléndido palacio como una de las figuras más poderosas de la Tierra Media.
@@ -791,13 +791,13 @@ str_npc15_home_recap|Seré breve.
 str_npc16_home_recap|Seré breve.
 str_npc17_home_recap|Nací en las lindes del bosque, pero he pasado toda mi vida dentro del bosque. ¿Te he hablado de la cantidad de árboles que hay allí?
 str_npc1_honorific|Capitán
-str_npc2_honorific|señor
-str_npc3_honorific|señor
-str_npc4_honorific|señor
-str_npc5_honorific|señor
+str_npc2_honorific|mi señor
+str_npc3_honorific|mi señor
+str_npc4_honorific|mi señor
+str_npc5_honorific|mi señor
 str_npc6_honorific|guerrero
 str_npc7_honorific|capitán
-str_npc8_honorific|señor
+str_npc8_honorific|mi señor
 str_npc9_honorific|Amo
 str_npc10_honorific|Amo
 str_npc11_honorific|Amo
@@ -808,7 +808,7 @@ str_npc15_honorific|Amo
 str_npc16_honorific|Jefe
 str_npc17_honorific|Jefe
 str_comment_intro_liege_affiliated|Me han dicho que habéis jurado fidelidad a uno de los pretendientes que disputa mi aspiración al trono del Reino. Pero podemos hablar de todas formas.
-str_comment_intro_famous_liege|¡Vuestra fama os precede! Quizás sea el momento de que juréis fidelidad a un señor digno de vuestro valor.
+str_comment_intro_famous_liege|¡Tu reputación te precede! Quizás sea el momento de que jures fidelidad a un señor digno de tu valor.
 str_comment_intro_famous_martial|¡Vuestra fama os precede! ¡Quizás comprobemos en el futuro el valor de cada uno en una justa, o en el campo de batalla!
 str_comment_intro_famous_badtempered|He oído hablar de vos. Bueno, no suelo ser alguien de muchas palabras, así que si tenéis algo que decir, adelante.
 str_comment_intro_famous_pitiless|Conozco vuestro nombre. Llena de miedo los corazones de los hombres. Eso es bueno. Quizás deberíamos mantener una conversación en el futuro.
@@ -1159,24 +1159,24 @@ str_gossip_about_character_cunning|Dicen que {s6} es un adversario muy astuto.
 str_gossip_about_character_sadistic|Dicen que a {s6} le gusta torturar a sus enemigos. No me gustaría conocer el lado oscuro de ese hombre.
 str_gossip_about_character_goodnatured|Dicen que {s6} es un buen hombre y trata a sus súbditos decentemente. Esto es más de lo que se puede decir de casi todos los nobles de la Tierra Media.
 str_gossip_about_character_upstanding|La gente dice que es deseable estar bajo las órdenes de {s6}. Se porta bien con sus súbditos, y los recompensa generosamente si trabajan bien.
-str_latest_rumor|El último rumor que has oído acerca de {s6} es:
-str_faction_strength_crushed|hundida
-str_faction_strength_spent_and_wavering|vacilante
-str_faction_strength_weakened|debilitada
-str_faction_strength_fair|favorable
-str_faction_strength_average|media
-str_faction_strength_strong|fuerte
-str_faction_strength_quite_strong|bastante fuerte
-str_faction_strength_very_strong|muy fuerte
-str_faction_strength_unmatched|inmejorable
+str_latest_rumor|El último rumor sobre {s6} que has oído ha sido:
+str_faction_strength_crushed|en las últimas
+str_faction_strength_spent_and_wavering|muy debilitados
+str_faction_strength_weakened|debilitados
+str_faction_strength_fair|bastante bien
+str_faction_strength_average|aguantando
+str_faction_strength_strong|fuertes
+str_faction_strength_quite_strong|bastante fuertes
+str_faction_strength_very_strong|muy fuertes
+str_faction_strength_unmatched|sin rival
 str_faction_strength_last|INVALID
 str_theater_se|Gondor
 str_theater_sw|Rohan
 str_theater_c|Rhovanion del Sur
 str_theater_n|Rhovanion del Norte
-str_faction_side_name|Los Pueblos Libres
-str_faction_side_name1|El Ojo de Sauron
-str_faction_side_name2|La Mano Blanca
+str_faction_side_name|los Pueblos Libres
+str_faction_side_name1|el Ojo de Sauron
+str_faction_side_name2|la Mano Blanca
 str_party_greet_friend_gondor|¡Saludos, amigo del Árbol Blanco!
 str_party_greet_enemy_gondor|¡Desenvainad vuestras espadas si os atrevéis, enemigos de Gondor!
 str_party_greet_friend_dwarf|¡Saludos de parte del pueblo de Durin, amigo de los enanos!
@@ -1459,7 +1459,7 @@ str_good_rumor_4|Después de cada derrota, la Sombra adopta una nueva forma y vu
 str_good_rumor_5|La Ciénaga de los Muertos... una tierra contaminada, enferma más allá de toda curación posible.
 str_good_rumor_6|La Sombra como criadora de criaturas tan sólo puede imitar, no puede crear nuevas cosas partiendo de la nada. No creo que le insuflara vida a los orcos, sólo los corrompió y los desfiguró.
 str_good_rumor_7|Se solía llamar el Bosque Verde, y antaño estaba lleno de elfos. El más grande de los bosques del Norte. Pero ahora se llama el Bosque Negro. Y está lleno de todo tipo de criaturas malvadas.
-str_good_rumor_8|Los Argonath, Los Pilares de los Reyes, los gigantescos guardianes de la antigua frontera norte de Gondor.
+str_good_rumor_8|Los Argonath, Pilares de los Reyes, son los gigantescos guardianes de la antigua frontera septentrional de Gondor.
 str_good_rumor_9|Amon Hen es el más alejado hacia el oeste de los tres picos en la parte sur de Nen Hithoel.
 str_neutral_rumor_begin|Mañana todo podría cambiar...
 str_neutral_rumor_2|La Ciénaga de los Muertos... un lugar contaminado y enfermo.
@@ -1535,7 +1535,7 @@ str_lorien_rank_4|Thangyl, Portador del Escudo de Lothlórien
 str_lorien_rank_5|Maglagyl, Portador de la Espada de Lothlórien
 str_lorien_rank_6|Tiribrannon, Guardián de Lothlórien
 str_lorien_rank_7|Glaurchir, Gran Maestre de Lothlórien
-str_lorien_rank_8|Galadhîr, Señor Radiante de Lothlórien
+str_lorien_rank_8|Galadhîr, Gran Señor de Lothlórien
 str_lorien_rank_9|Thalion, Héroe de Lothlórien
 str_imladris_rank_0|Háno, Hermano de Imladris
 str_imladris_rank_1|Macar, Guerrero de Imladris
@@ -1674,11 +1674,11 @@ str_fullname_region_s_ithilien|Ithilien del Sur, la provincia más al este del R
 str_fullname_region_druadan_forest|El Bosque de Drúadan, el bosque de Gondor habitado por los Drúedain
 str_fullname_region_firien_wood|El Bosque de Firien, el Bosque Susurrante, un bosque de robles de Gondor
 str_fullname_region_anorien|Anórien, la tierra del Sol, un valle entre las Montañas Blancas y el río Anduin
-str_fullname_region_rohan0|el Folde, el centro de Rohan
+str_fullname_region_rohan0|el Folde, corazón de Rohan
 str_fullname_region_rohan1|el Estemnet, es parte de Rohan, la Marca
 str_fullname_region_rohan2|el Oestemnet , es parte de Rohan, la Marca
-str_fullname_region_rohan3|el Folde Este, es parte de Rohan, la Marca
-str_fullname_region_rohan4|el Folde Oeste, es parte de Rohan, la Marca
+str_fullname_region_rohan3|el Folde Este, parte de Rohan, la Marca
+str_fullname_region_rohan4|el Folde Oeste, parte de Rohan, la Marca
 str_fullname_region_rohan5|El Abismo de Helm, un valle de las Montañas Blancas, en Rohan
 str_fullname_region_the_wold|las Praderas, el área más al norte de la Marca
 str_fullname_region_gap_of_rohan|la Grieta de Rohan, la frontera más al este de Rohan, una zona de conflicto entre los Rohirrim y los Dunledinos.
@@ -1717,8 +1717,8 @@ str_shortname_region_anorien|Anórien
 str_shortname_region_rohan0|el Folde
 str_shortname_region_rohan1|Estemnet
 str_shortname_region_rohan2|Oestemnet
-str_shortname_region_rohan3|El Folde Este
-str_shortname_region_rohan4|El Folde Oeste
+str_shortname_region_rohan3|el Folde Este
+str_shortname_region_rohan4|el Folde Oeste
 str_shortname_region_rohan5|El Abismo de Helm
 str_shortname_region_the_wold|las Praderas
 str_shortname_region_gap_of_rohan|la Grieta de Rohan

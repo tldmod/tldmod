@@ -2,7 +2,7 @@ skl_trade|Comerciante
 skl_trade_desc|Cada nivel de esta habilidad hace posible conseguir más equipo con menos Puntos de recursos. (Habilidad de Grupo)
 skl_leadership|Liderazgo
 skl_leadership_desc|Cada punto incrementa el número máximo de tropas que podéis liderar en 5, incrementa la moral del grupo y reduce los salarios en un 5%%. (Habilidad de líder)
-skl_prisoner_management|Manejo de prisioneros.
+skl_prisoner_management|Manejo de prisioneros
 skl_prisoner_management_desc|Cada nivel de esta habilidad incrementa el número máximo de prisioneros en %d. (Habilidad de líder)
 skl_persuasion|Persuasión
 skl_persuasion_desc|Esta habilidad ayuda a que la gente acepte vuestro punto de vista. (Habilidad personal)
@@ -12,7 +12,7 @@ skl_first_aid|Primeros Auxilios
 skl_first_aid_desc|Los héroes regeneran un 5%% de sus puntos de golpe perdidos por nivel de habilidad durante una misión. (Habilidad de grupo)
 skl_surgery|Cirugía
 skl_surgery_desc|Cada punto de esta habilidad añade una probabilidad de 4%% de que un miembro del grupo que reciba un golpe mortal resulte herido y no muerto. (Habilidad de grupo)
-skl_wound_treatment|Tratamiento de Heridas
+skl_wound_treatment|Tratamiento de Heridos
 skl_wound_treatment_desc|La velocidad de curación del grupo se incrementa un 20%% por nivel de habilidad. (Habilidad de grupo)
 skl_inventory_management|Administrar inventario
 skl_inventory_management_desc|Incrementa la capacidad del inventario +6 por nivel de habilidad. (Habilidad de líder)
@@ -40,7 +40,7 @@ skl_weapon_master|Maestro en Armas
 skl_weapon_master_desc|Facilita el aprendizaje de las competencias en armas e incrementa los límites de estas competencias. Los límites funcionan así: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidad personal)
 skl_power_draw|Potencia de disparo
 skl_power_draw_desc|Permite a los personajes utilizar mejores arcos. Cada punto de esta habilidad (hasta cuatro puntos por encima de los requerimientos del arco) incrementa el daño hecho por los arcos en un 14%%. (Habilidad personal)
-skl_power_throw|Potencia de Lanzamiento
+skl_power_throw|Potencia de Tiro
 skl_power_throw_desc|Cada punto de esta habilidad incrementa el daño de lanzamiento en un 10%%. (Habilidad personal)
 skl_power_strike|Potencia de Golpe
 skl_power_strike_desc|Cada punto de esta habilidad incrementa el daño cuerpo a cuerpo en un 8%%. (Habilidad personal)
