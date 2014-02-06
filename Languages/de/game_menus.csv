@@ -302,7 +302,7 @@ menu_recover_after_death_default|^^^^^Du kommst zu Bewusstsein. Du liegst an der
 menu_recover_after_death_town|^^^^Du kommst zu Bewusstsein und befindest dich am Stadtrand. Du bist am Leben! Niemand ist hier und du nutzt die Chance, um dich aus der Stadt zu schleifen. Es scheint als wäre keine deiner Verletzungen ernsthaft, und auch wenn du dich fürchterlich fühlst, kannst du immer noch gehen.
 menu_recover_after_death_town_alone|Du kommst zu Bewusstsein und befindest dich am Stadtrand. Du bist am Leben! Niemand ist heir und du nutzt die Chance, um dich aus der Stadt zu schleifen. Deine Gefährten fanden dich. Es scheint als wäre keine deiner Verletzungen ernsthaft, und auch wenn du dich fürchterlich fühlst, kannst du immer noch gehen.
 menu_notification_center_under_siege|{s1} wird von {s2} von {s3} belagert!
-menu_notification_one_side_left|^^^^^Der Ringkrieg ist vorüber!^^{s1} hat all seine Gegner bezwungen und ist siegreich!
+menu_notification_one_side_left|^^^^^Der Ringkrieg ist vorüber!^^Die {s1} haben all ihre Gegner bezwungen und sind siegreich!
 menu_notification_total_defeat|^^^^^Der Ringkrieg ist für dich vorbei!^^Die {s1} wurden von ihren Feinden besiegt und in der Niederlage stehst du nun allein. 
 menu_notification_your_faction_collapsed|^^^^^Dein Heimatland {s11} wurde besiegt!^Andere Verbündete verbleiben aber im Krieg. Du kannst immer noch, zusammen mit jedem Überlebenden von {s11}, deiner Seite zum Sieg verhelfen.
 menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Kräfte von {s13}!
