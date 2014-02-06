@@ -13586,16 +13586,16 @@ scripts = [
        (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}", 0),
 #       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
+
+       ] + (is_a_wb_script==1 and [
+       
+       #swy-- this is needed to show by default the note entries on Warband...
+       (troop_set_note_available, ":troop_no", 1),
+
+       ] or []) + [
+
      (try_end),
-     
-     ] + (is_a_wb_script==1 and [
-     
-     #swy-- this is needed to show by default the note entries on Warband...
-     (troop_set_note_available, ":troop_no", 1),
-
-     ] or [])
-
-),
+]),
 
 #script_update_troop_location_notes
 # INPUT: troop_no

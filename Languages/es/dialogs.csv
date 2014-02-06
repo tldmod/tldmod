@@ -239,7 +239,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|De acuerdo, todo vuestro.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Me temo que tengo otros planes para él.
 dlga_lord_buy_prisoner_accept:lord_pretalk|¡Excelente! Haré que mis hombres lo lleven a nuestra prisión lo antes posible. Seguro que ayuda a la causa.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Es una pena, nos habría resultado muy útil, {playername}.
-dlga_lord_start:lord_pretalk|Ah, bienvenido, {s24}.^Ya deberías saber {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando pruebes ser digno de mi confianza [nivel {reg1}], te dejaré abrir ese cofre de ahí.
+dlga_lord_start:lord_pretalk|Ah, bienvenido, {s24}.^Ya deberías saber que {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando pruebes ser digno de mi confianza [nivel {reg1}], te dejaré abrir ese cofre de ahí.
 dlga_lord_start:lord_talk|¿Qué es lo que quieres?
 dlga_lord_pretalk:lord_talk|¿Algo más? 
 dlga_lord_talk:lord_lend_companion_end|Me gustaría que {s14} volviera bajo mi mando, {s65}, si ya no necesitáis  {reg3?sus:sus} servicios.

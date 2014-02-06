@@ -327,7 +327,7 @@ qstr_no_holdings|ningún asentamiento
 qstr_{s57}_and_{s58}|{s57} y {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Ella:Él}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s56} manda en {s54}.^:{s54} sirve como {s55} de {s56}.^}}^{reg9?{reg3?Ella:Él} es {reg3?la señora:el señor} de {s58}.:}{s59}{reg10?^{reg3?¡Ella:¡Él} murió en el campo de batalla!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} encabeza a {s56}.^:{s54} sirve a {s55} de {s56}.^}}^{reg9?{reg3?Ella:Él} es {reg3?la señora:el señor} de {s58}.:}{s59}{reg10?^¡Ha caído en el campo de batalla!:}
 qstr_The_last_time_you_sa|La última vez que {reg1?la:lo} viste, {s1}
 qstr_The_last_time_you_he|La última vez que escuchaste hablar de {reg1?ella:él}, {s1}
 qstr_The_{s50}|El {s50}
@@ -842,8 +842,8 @@ qstr_There_are_brave_sold|Hay soldados valientes dispuestos a arriesgar su vida,
 qstr_We_have_some_spare_t|Tenemos algunas tropas de repuesto, pero no podemos darnos el lujo de perderlos a manos de  gente como tú. Ve, trae algunos recursos y podría cambiar mi idea.
 qstr_There_are_brave_soldi|Hay valientes soldados aquí como voluntarios para el servicio de campo.^^Creo que puedo dejar que algunos de ellos vayan con vos, no sin aportar unos pocos recursos, por si nunca vuelven, claro esta...
 qstr_There_are_spare_troo|Hay tropas de repuesto aquí que no les importaría tener un poco de derramamiento de sangre.^^Puedo dejar que algunos vayan con vos, por un precio claro...
-qstr_Strenghten_defences_|¿Fortalecer las defensas en {s21}? Eso es sin duda bienvenido. Tened en cuenta que sólo podemos aceptar a nuestra propia gente.
-qstr_Strenghten_defences_i|¿Fortalecer las defensas en {s21}? Bueno, mientras no estén lisiados, ¿Por qué no?. Solo estad seguro de que nos dejas a tropas de las nuestras, ya que no tenemos uso para forasteros aquí.
+qstr_Strenghten_defences_|¿Fortalecer las defensas de {s21}? Eso es sin duda bienvenido. Ten en cuenta que sólo aceptaremos a soldados de nuestra propia gente.
+qstr_Strenghten_defences_i|¿Fortalecer las defensas de {s21}? Bueno, mientras no estén lisiados... ¿Por qué no? Pero asegúrate de que nos dejas a tropas de las nuestras, ya que aquí no nos interesan los forasteros.
 qstr_Please_return_them_i|Por favor que vuelvan en una pieza. Personalmente conozco el valor de cada uno de ellos. Y aquí necesitamos a cada alma...
 qstr_Don_t_let_them_all_d|No dejéis que mueran todos en un solo lugar. Excepto los cobardes. Poned a esos en primera fila...
 qstr_Thank_you_commander.|Gracias, mi señor.^
