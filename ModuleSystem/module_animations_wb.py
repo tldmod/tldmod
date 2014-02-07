@@ -84,13 +84,21 @@ animations = [
 #   [3.0, "myanim", 0, 50, arf_cyclic|arf_loop_pos_0_25],
    [3.0, "anim_human", 50, 52, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [3.0, "anim_human", 60, 62, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.75],
-   [3.0, "anim_human", 70, 72, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+  #swy-- orcs, trolls and ents look rather silly with their arms crossed...
+  #[3.0, "anim_human", 70, 72, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
    [3.0, "anim_human", 80, 82, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
 ##   [35.0, "stand_woman", 0, 1059, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
 ##   [43.0, "stand_woman_public", 0, 1313, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
 #  [35.0, "tavern_stand", 0, 472, arf_cyclic|arf_loop_pos_0_25],
  ],
  ["stand_man", 0, amf_client_prediction,
+#        [3.0, "lord_stand", 0, 72, arf_cyclic|arf_loop_pos_0_25],
+   [3.5, "anim_human", 90, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+   [3.5, "anim_human", 110, 120, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+#   [124.0, "stand_shopkeeper", 0, 3740, arf_cyclic|arf_loop_pos_0_25],
+#   [80.0, "stand_guardsman", 0, 2397, arf_cyclic|arf_loop_pos_0_25],
+
+   #swy-- wb original:
    [11.0, "stand_man", 0, 315, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
  ],
  ["stand_player_first_person", 0, amf_client_prediction,

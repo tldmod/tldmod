@@ -3,7 +3,7 @@ qstr_Gate_opens..._You_ha|La puerta se abre... te has internado en lugar más sa
 qstr_Secret_place_discove|¡Lugar secreto descubierto!
 qstr_Next_Page|Página Siguiente
 qstr_Action|Acción
-qstr_Mount|Montura
+qstr_Mount|Montad
 qstr_Attack_Type|Tipo de Ataque
 qstr_Hold_This_Position|Mantened la Posición
 qstr_Follow_Me|Seguidme
@@ -162,7 +162,7 @@ qstr_killed|muertos
 qstr_routed|huidos
 qstr_wounded|heridos
 qstr_None|Ninguno
-qstr_^None|^Ninguno
+qstr_^None|^Ninguna
 qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja carretera abandonada
 qstr_near_what_is_left_of|cerca de lo que queda de la Vieja Carretera del Bosque, el antiguo camino enano que se utilizaba para cruzar el espeso bosque
 qstr_close_to_the_Hand_sh|cerca de la señal de la Mano Blanca de Saruman, que apunta hacia la torre de Orthanc
@@ -189,13 +189,13 @@ qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?se encontraba:se encuentra} en cautividad e
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?fue:ha sido} {reg4?capturada:capturado} por sus enemigos.
 qstr_{reg3?{s2}_s_locatio|{reg3?Se desconoce la localización de {s2}:No sé dónde está {s2}}.
 qstr_{s6}_has_joined_your|{s6} se ha unido a tu grupo
-qstr_elven|elfo
-qstr_dwarven|enano
-qstr_orc|orco
+qstr_elven|elfa
+qstr_dwarven|enana
+qstr_orc|orca
 qstr_uruk|uruk
 qstr_uruk_hai|uruk-hai
 qstr_trollish|troll
-qstr_man|de hombres
+qstr_man|humana
 qstr_riding|cabalgando
 qstr_marching|marchando
 qstr_charging|cargando
@@ -254,7 +254,7 @@ qstr_Kill_the_maggots!|¡Matad a esos gusanos!
 qstr_Death_to_traitors_of|¡Muerte a los traidores del Ojo!
 qstr_Death_to_traitors_of_|¡Muerte a los traidores de la Mano Blanca!
 qstr_{s14}Kill_them_all!_|{s14}¡Matadlos a todos! ¡No dejéis prisioneros!
-qstr_Tonight_we_feast_on_|¡Esta noche nos daremos un festín con vuestra carne de {s15}!
+qstr_Tonight_we_feast_on_|¡Esta noche nos daremos un festín con vuestra carne {s15}!
 qstr_Gharr!_Kill!_Kill!_K|¡Garrg! ¡Matar! ¡Matar! ¡Matar!
 qstr_Slaughter_these_half|¡Masacrad a esos medio hombres!
 qstr_Fear_no_elven_ghosts|¡No temáis a los fantasmas elfos!
@@ -635,7 +635,7 @@ qstr_Heroes_only|Solo Heróres
 qstr_Regulars_and_Heroes|Regulares y Heróes
 qstr_HP_lost_from_poisoni|PS perdidos por envenenamiento.
 qstr__{s17}.|, {s17}.
-qstr_A_group_of_{s1}_is_{|Un grupo de {s1} está {s10} hacia vos.
+qstr_A_group_of_{s1}_is_{|Un grupo de {s1} está {s10} hacia ti.
 qstr_You_are_attacking_a_|Estáis atacando a un grupo de {s1}.
 qstr_The_battle_against_t|La Batalla contra el grupo de {s1} continúa.
 qstr_{s13}_asked_you_to_r|{s13} os ha pedido que reportéis ante él con al menos {reg13} tropas.
@@ -836,7 +836,7 @@ qstr_Nicely_done_{s23}.|Excelentemente hecho, {s23}.
 qstr_Good_work_{s23}.|Buen trabajo, {s23}.
 qstr_The_more_you_capture|Cuanto más se captura, mejor, {s23}.
 qstr_Caught_a_few_straggl|Atrapasteis unos pocos rezagados, ¿{s23}?
-qstr_I_am_sorry_no_one_el|Lo siento, ninguno está listo para irse.^Ellos servirán a {s22} manteniendo las defensas aquí.
+qstr_I_am_sorry_no_one_el|Lo siento, pero ninguno está listo para irse.^Servirán a {s22} manteniendo aquí las defensas.
 qstr_Tough_luck_but_we_do|Mala suerte, pues no tenemos a nadie. Vuelve más tarde.
 qstr_There_are_brave_sold|Hay soldados valientes dispuestos a arriesgar su vida, pero en estos tiempos oscuros no podemos permitir que ellos dejen nuestras defensas aquí.^ Volveremos a hablar de esto cuando pueda aportar recursos a nuestra causa por su marcha.
 qstr_We_have_some_spare_t|Tenemos algunas tropas de repuesto, pero no podemos darnos el lujo de perderlos a manos de  gente como tú. Ve, trae algunos recursos y podría cambiar mi idea.
@@ -915,7 +915,7 @@ qstr_No_commander_should_|Ningún señor debería admitir esto, {playername}, es
 qstr_No_commander_should_h|Ningún Amo debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y ejecuté a algunos por incompetentes. Necesitan a alguien con el acero en su regazo e inculcarles ciertos valores o matarlos en el intento. Eres un guerrero de renombre, {playername}. ¿Entrenarías a algunas de mis tropas? Conseguiré que te resulte... rentable.
 qstr_{s9}_asked_you_to_ra|{s9} te ha pedido que le lleves {reg1} {s14}.
 qstr_{s9}_asked_you_to_hu|{s9} te ha pedido que des caza a un fugitivo llamado {s4}. Se cree que ahora mismo se esconde en {s3}.
-qstr_{s9}_asked_you_to_ca|{s9} te ha pedido que apreces a tres grupos de esclavos fugitivos y los conduzcas, vivos, de regreso a {s4}. Dijo que los grupos estaban huyendo hacia {s3}.
+qstr_{s9}_asked_you_to_ca|{s9} te ha pedido que atrapes a tres grupos de esclavos fugitivos y los conduzcas, vivos, de vuelta a {s4}. Los grupos estaban huyendo hacia {s3}.
 qstr_{s11}_asked_you_to_f|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado y no dejar que el espía te aviste, o podría sospechar y darse la vuelta. Una vez que el espía se encuentre con su contacto, desbes capturarlos y llevarlos de regreso a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} te ha pedido que captures a un señor enemigo y que luego se lo lleves a {s11} para interrogarlo.
 qstr_{s9}_asked_you_to_le|{s9} te ha pedido que le prestes a tu compañero, {s3}, durante una semana.

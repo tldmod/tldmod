@@ -1784,6 +1784,8 @@ presentations = [
           (try_for_agents, ":cur_agent"),
             (agent_set_slot, ":cur_agent", slot_agent_map_overlay_id, 0),
           (try_end),
+          #swy-- hackfix to show sidelog messages again in wb-- i'm not going to spend more time in this jumblefuck, i'm scared.
+          (set_show_messages, 1),
           (presentation_set_duration, 0),
         (try_end),
         ]),

@@ -883,7 +883,7 @@ str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|He oído que habéis 
 str_comment_you_defeated_a_lord_allied_spiteful|He oído que habéis derrotado a ese perro de {s54}. Ah, si hubiera podido estar ahí para oirle lloriquear.
 str_comment_you_defeated_a_lord_allied_unfriendly_chivalrous|He oído que habéis derrotado a {s54}. Espero que no hayáis utilizado tácticas deshonrosas para ello.
 str_comment_you_defeated_a_lord_allied|He oído que habéis derrotado a {s54}. Me alegro de vuestra victoria.
-str_comment_you_defeated_me_enemy_chivalrous|No estoy resentido por vuestra victoria en nuestra última pelea, ¡pero estoy ansioso por combatir contra vos de nuevo!
+str_comment_you_defeated_me_enemy_chivalrous|No estoy resentido por tu victoria en nuestra última pelea, ¡pero estoy ansioso por combatir contra ti de nuevo!
 str_comment_you_defeated_me_enemy_spiteful|Hacía tiempo que quería coincidir con vos de nuevo. No me volveréis a engañar con vuestros trucos de nuevo; me va a encantar oíros suplicar piedad.
 str_comment_you_defeated_me_enemy|La última vez que luchamos, {playername}, conseguistéis derrotarme. ¡Pero os aseguro que eso no volverá a pasar de nuevo!
 str_comment_i_defeated_you_enemy_spiteful|¿Venís a por más? Si volvemos a luchar, echaré vuestras vísceras a los perros.
@@ -1000,7 +1000,7 @@ str_prisoner_released_cunning|¿Lo soy? Sois {man/woman} amable. Intentaré enco
 str_prisoner_released_sadistic|¿Lo soy? ¿Es tanta vuestra crueldad que preferís verme libre y humillado que encadenado? ¡Disfrutad de vuestro triunfo!
 str_prisoner_released_goodnatured|Sois en verdad {man/woman} de honor, {sir/madame}. ¡No olvidaré esto!
 str_prisoner_released_upstanding|Sois en verdad {man/woman} de honor, {sir/madame}. ¡No olvidaré esto!
-str_enemy_meet_default|¿Quién sois vos, para venir armado contra mí?
+str_enemy_meet_default|¿Quién eres tú, para venir armado contra mí?
 str_enemy_meet_martial|¿Cuál es vuestro nombre, {sir/madame}? Si llegamos a combatir, me gustaría saber contra quién lucho.
 str_enemy_meet_quarrelsome|¿Quién demonios sois?
 str_enemy_meet_pitiless|¿Quién sois? Hablad, para así saber a quien mato.
