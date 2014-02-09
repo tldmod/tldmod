@@ -64,12 +64,12 @@ trp_beorning_vale_man|Hombre Beórnida
 trp_beorning_vale_man_pl|Hombres Beórnidas
 trp_beorning_warrior|Guerrero Beórnida
 trp_beorning_warrior_pl|Guerreros Beórnidas
-trp_beorning_tolltacker|Atacante Beórnida
-trp_beorning_tolltacker_pl|Atacantes Beórnidas
-trp_beorning_sentinel||Centinela Beórnida
+trp_beorning_tolltacker|Incursor Beórnida
+trp_beorning_tolltacker_pl|Incursores Beórnidas
+trp_beorning_sentinel|Centinela Beórnida
 trp_beorning_sentinel_pl|Centinelas Beórnidas
-trp_beorning_warden_of_the_ford|Guardián del Vado Beórnida
-trp_beorning_warden_of_the_ford_pl|Guardianes del Vado Beórnidas
+trp_beorning_warden_of_the_ford|Guardián Beórnida del Vado
+trp_beorning_warden_of_the_ford_pl|Guardianes Beórnidas del Vado
 trp_beorning_carrock_lookout|Vigía Beórnida de Carrock 
 trp_beorning_carrock_lookout_pl|Vigías Beórnidas de Carrock 
 trp_beorning_carrock_fighter|Luchador Beórnida de Carrock 
@@ -186,7 +186,7 @@ trp_footmen_of_gondor|Hombre de Armas de Gondor
 trp_footmen_of_gondor_pl|Hombres de Armas de Gondor
 trp_gondor_spearmen|Lancero de Gondor
 trp_gondor_spearmen_pl|Lanceros de Gondor
-trp_gondor_veteran_spearmen||Lancero Veterano de Gondor
+trp_gondor_veteran_spearmen|Lancero Veterano de Gondor
 trp_gondor_veteran_spearmen_pl|Lanceros Veteranos de Gondor
 trp_guard_of_the_fountain_court|Guardia del Patio del Manantial
 trp_guard_of_the_fountain_court_pl|Guardias del Patio del Manantial
@@ -1058,7 +1058,7 @@ trp_smith_dolamroth|Haldad el Herrero
 trp_smith_dolamroth_pl|herreros de Amroth
 trp_smith_edhellond|Ryis Dobla-Hierro
 trp_smith_edhellond_pl|herrero
-trp_smith_lossarnach|Berin Hacedor de Hachas
+trp_smith_lossarnach|Berin, maestro hachero
 trp_smith_lossarnach_pl|herrero
 trp_smith_tarnost|Harandil Martillo de Acero
 trp_smith_tarnost_pl|herrero
@@ -1118,7 +1118,7 @@ trp_smith_thranduils_halls|Thurinor
 trp_smith_thranduils_halls_pl|herrero
 trp_smith_woodelf_camp|Calechir
 trp_smith_woodelf_camp_pl|herrero
-trp_smith_beorn|Beornalaf Hacedor de Hachas
+trp_smith_beorn|Beornalaf, maestro hachero
 trp_smith_beorn_pl|herrero
 trp_smith_moria|Burgak el Forjador
 trp_smith_moria_pl|herrero
@@ -1532,7 +1532,7 @@ trp_wolf_rider_of_mirkwood_pl|Jinetes de Lobo del Bosque Negro
 trp_warg_rider_of_mirkwood|Jinete de Huargo del Bosque Negro
 trp_warg_rider_of_mirkwood_pl|Jinetes de Huargo del Bosque Negro
 trp_gate_aggravator|Mantenemos la puerta
-trp_orc_pretender|Pretendiente Orco
+trp_orc_pretender|Aspirante a cabecilla Orco
 trp_human_prisoner|Prisionero Humano
 trp_spider|Araña del Bosque Negro 
 trp_spider_pl|Arañas del Bosque Negro 

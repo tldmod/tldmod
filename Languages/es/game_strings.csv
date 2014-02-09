@@ -947,7 +947,7 @@ str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|He oído que habéi
 str_comment_pledged_allegiance_allied_quarrelsome|He oído que habéis jurado lealtad a nuestro señor, {s54}. Combatid fieramente contra nuestros enemigos, respetad a vuestros superiores, y no os crucéis en mi camino y os aseguro que todo irá bien.
 str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|He oído que habéis jurado lealtad a nuestro señor, {s54}. Si estuviera en su piel, no me fiaría de vos ni para limpiar las cocinas.
 str_comment_pledged_allegiance_allied_selfrighteous|He oído que habéis jurado lealtad a nuestro señor, {s54}. Luchad valientemente y seréis recompensado generosamente. Traicionadnos y daremos con vos un ejemplo que tardará en ser olvidado.
-str_comment_pledged_allegiance_allied_cunning_unfriendly|He oído que habéis jurado lealtad a nuestro señor, {s54}. No pretendo esconder mi descontento con esa decisión, pero a veces es mejor tener a los enemigos cerca que tenerlos lejos.
+str_comment_pledged_allegiance_allied_cunning_unfriendly|He oído que has jurado lealtad a nuestro señor, {s54}. No pretendo esconder mi descontento con esa decisión, pero a veces es mejor tener a los enemigos cerca que lejos.
 str_comment_pledged_allegiance_allied_cunning|He oído que habéis jurado lealtad a nuestro señor, {s54}. Eso es bueno. Cuantos más soldados experimentados tengamos con nosotros en estos tiempos difíciles, mejor nos irá. Observaré vuestros progresos desde la distancia.
 str_comment_pledged_allegiance_allied_debauched_unfriendly|He oído que habéis jurado lealtad a nuestro señor, {s54}. Sin duda no tardaréis en traicionarlo, y tendré el placer de veros sufrir el castigo reservado para los traidores.
 str_comment_pledged_allegiance_allied_debauched|He oído que habéis jurado lealtad a nuestro señor, {s54}. Excelente... Estoy seguro de que vos y yo nos convertiremos en grandes amigos. Pero recordad -- si nos traicionais, será el mayor error que hayáis cometido nunca.
@@ -1028,7 +1028,7 @@ str_battle_won_unfriendly_default|Así que estáis aquí. Bueno, supongo que es 
 str_battle_won_unfriendly_martial|Hemos tenido agrias discusiones en el pasado, pero por ahora celebremos alegremente nuestra victoria.
 str_battle_won_unfriendly_quarrelsome|Si estáis esperando a que os dé las gracias, podéis seguir esperando. Vuestra ayuda no era muy necesaria, pero me imagino que no teníais nada mejor que hacer, ¿verdad?
 str_battle_won_unfriendly_pitiless|Habéis venido aquí como un chacal tratándose de aprovechar de la presa de un león. Muy bien, coged lo que queráis de los restos. No os lo impediré.
-str_battle_won_unfriendly_cunning|{playername}... Bueno, supongo que no me molesta vuestra llegada, aunque no trataré de aparentar que me alegro de veros.
+str_battle_won_unfriendly_cunning|{playername}... Bueno, supongo que no me molesta tu llegada, aunque no trataré de aparentar que me alegro de verte.
 str_battle_won_unfriendly_sadistic|¡Atrás, maldito buitre! Esta es mi victoria, no tratéis de robarme la gloria.
 str_battle_won_unfriendly_goodnatured|Oh, sois vos. Bueno, supongo que debería de daros las gracias por vuestra ayuda.
 str_battle_won_unfriendly_upstanding|Gracias por venir en mi ayuda. Ahora debo marcharme, antes de que diga algo de lo que me pueda arrepentir después.
@@ -1051,7 +1051,7 @@ str_unprovoked_attack_upstanding|Considero esto como un asalto no provocado, y m
 str_unnecessary_attack_default|No dudaré en atravesaros con mi espada si me provocáis, pero os doy la oportunidad de marcharos ahora mientras podéis.
 str_unnecessary_attack_martial|Estoy ansioso de responder a vuestro desafío, {sir/madame}, aunque os doy un momento para reconsiderar vuestra posición.
 str_unnecessary_attack_quarrelsome|¡Bah! Hoy no estoy de humor para estas tonterías. Fuera de mi camino.
-str_unnecessary_attack_pitiless|Hoy me siento piadoso. Haré como que no os he oído.
+str_unnecessary_attack_pitiless|Hoy me siento magnánimo. Haré como que no te he oído.
 str_unnecessary_attack_cunning|No veo que podéis ganar en convertirme en vuestro enemigo. Quizás deberíais marcharos y olvidaros de esto.
 str_unnecessary_attack_sadistic|No quiero perder el tiempo con un gusano como vos. Fuera de mi camino.
 str_unnecessary_attack_goodnatured|No veo que ganáis peleando contra mí, {sir/madame}. Aún tenéis la oportunidad de marcharos.

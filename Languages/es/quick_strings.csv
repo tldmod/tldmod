@@ -163,15 +163,15 @@ qstr_routed|huidos
 qstr_wounded|heridos
 qstr_None|Ninguno
 qstr_^None|^Ninguna
-qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja carretera abandonada
-qstr_near_what_is_left_of|cerca de lo que queda de la Vieja Carretera del Bosque, el antiguo camino enano que se utilizaba para cruzar el espeso bosque
+qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja ruta abandonada
+qstr_near_what_is_left_of|cerca de lo que queda del Camino Viejo del Bosque, el antiguo camino enano utilizado para cruzar la espesa foresta del Bosque Negro
 qstr_close_to_the_Hand_sh|cerca de la señal de la Mano Blanca de Saruman, que apunta hacia la torre de Orthanc
 qstr_in_sight_of_the_maje|a la vista de las majestuosas murallas de Minas Tirith, la Ciudad Blanca
 qstr_in_sight_of_the_entr|a la vista de la entrada a Erebor, la fortaleza enana
 qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
-qstr_near_the_Old_Ford_wh|cerca del Antiguo Vado, donde el Camino del Bosque Viejo cruza el río Anduin
-qstr_near_a_big_ford_cros|Cerca del gran vado cruzando el Río {s15}
-qstr_near_a_small_ford_cr|Cerca de un pequeño vado cruzando el Río {s15}
+qstr_near_the_Old_Ford_wh|cerca del Viejo Vado, donde el Camino del Bosque Viejo cruza el río Anduin
+qstr_near_a_big_ford_cros|cerca de un gran vado cruzando el Río {s15}
+qstr_near_a_small_ford_cr|cerca de un pequeño vado cruzando el Río {s15}
 qstr_Battle_Advantage_=_{|_QQ_"Ventaja en la batalla = {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} quiere que no pares de seguir a su ejército hasta nuevo aviso.
 qstr_Rohan_capital_moved_|¡La capital de Rohan se ha trasladado de Edoras a Cuernavilla!
@@ -189,13 +189,13 @@ qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?se encontraba:se encuentra} en cautividad e
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?fue:ha sido} {reg4?capturada:capturado} por sus enemigos.
 qstr_{reg3?{s2}_s_locatio|{reg3?Se desconoce la localización de {s2}:No sé dónde está {s2}}.
 qstr_{s6}_has_joined_your|{s6} se ha unido a tu grupo
-qstr_elven|elfa
-qstr_dwarven|enana
-qstr_orc|orca
+qstr_elven|elfos
+qstr_dwarven|enanos
+qstr_orc|orcos
 qstr_uruk|uruk
 qstr_uruk_hai|uruk-hai
 qstr_trollish|troll
-qstr_man|humana
+qstr_man|hombres
 qstr_riding|cabalgando
 qstr_marching|marchando
 qstr_charging|cargando
@@ -254,7 +254,7 @@ qstr_Kill_the_maggots!|¡Matad a esos gusanos!
 qstr_Death_to_traitors_of|¡Muerte a los traidores del Ojo!
 qstr_Death_to_traitors_of_|¡Muerte a los traidores de la Mano Blanca!
 qstr_{s14}Kill_them_all!_|{s14}¡Matadlos a todos! ¡No dejéis prisioneros!
-qstr_Tonight_we_feast_on_|¡Esta noche nos daremos un festín con vuestra carne {s15}!
+qstr_Tonight_we_feast_on_|¡Esta noche nos daremos un festín con vuestra carne de {s15}!
 qstr_Gharr!_Kill!_Kill!_K|¡Garrg! ¡Matar! ¡Matar! ¡Matar!
 qstr_Slaughter_these_half|¡Masacrad a esos medio hombres!
 qstr_Fear_no_elven_ghosts|¡No temáis a los fantasmas elfos!
@@ -281,8 +281,8 @@ qstr_Draw_your_weapons_me|¡Desenvainad vuestras armas, hombres! ¡Que la muerte
 qstr_Orcs_of_{s16}_get_re|Orcos de {s16}, ¡Preparaos! ¡Hoy tendremos gargantas que cortar!
 qstr_These_friend_of_elve|¡Éstos amigos de los elfos caerán bajo el filo de nuestras espadas!
 qstr_These_Elves_will_fal|¡Éstos Elfos caerán bajo el filo de nuestras espadas!
-qstr_Raahh!_Draw_your_wea|¡Raahh! ¡Desenvainad vuestras armas, escoria de {s16}! ¡Esta noche nos daremos un festín con las entrañas de {s15}!
-qstr_Rha!_{s14}More_{s15}|¡Rha! {s14} ¡Más cuerpos de {s15} para desfigurar con nuestras retorcidas armas!
+qstr_Raahh!_Draw_your_wea|¡Raahh! ¡Desenvainad vuestras armas, escoria de {s16}! ¡Esta noche nos daremos un festín con entrañas de {s15}!
+qstr_Rha!_{s14}More_{s15}|¡Rha! {s14} ¡Más cuerpos de {s15} que desfigurar con nuestras retorcidas armas!
 qstr_Slaughter_these_puny|¡Masacrad a estos débiles ladrones de {s18}, ahora mismo! Después quemaremos sus casas y acabaremos con sus familias.
 qstr_Death_to_the_trespas|¡Muerte a los intrusos de las tierras de {s16}!
 qstr_CHARGE!_Let_s_clear_|¡CARGAD! ¡Limpiemos la escoría {s18} {s19} de {s17}!
@@ -380,7 +380,7 @@ qstr_{s11}_suffered_a_ser|{s11} ha sufrido una herida seria.
 qstr_The_leg_has_been_bad|La pierna ha sido dañada gravemente en el transcurso de la batalla.
 qstr___2_athletics__1_rid|(-2 de atletismo, -1 de cabalgar, -2 de agilidad, -15 de cuerpo a cuerpo)
 qstr_The_arm_has_been_bad|El brazo ha sido dañado gravemente en el transcurso de la batalla.
-qstr___20_weapon_skill__2|(-20 de habilidad con armas, -2 de fuerza, -1 fuerza de ataque)
+qstr___20_weapon_skill__2|(-20 de habilidad con armas, -2 de fuerza, -1 de fuerza de ataque)
 qstr_The_head_has_suffere|Tu cabeza ha sufrido un duro golpe.
 qstr___1_intelligence_ski|(-1 a habilidades de inteligencia, -15 a habilidad a distancia)
 qstr_The_chest_has_suffer|Tu tórax ha ha sufrido daños y tienes algunas costillas fracturadas.
@@ -656,7 +656,7 @@ qstr_Player_participation|Comentario de la participación del jugador. El enemig
 qstr_No_victory_comment._|Comentario de la no-victoria. La batalla fue corta, y el jugador proveyó menos del 40 por ciento de la fuerza aliada
 qstr_Some_of_your_tendons|Algunos de tus tendones han sido dañados en la batalla. Pierdes 1 de Fuerza.
 qstr_You_took_a_nasty_wou|Te llevas una fea herida que te causa un poco de cojera, incluso después de ser tratada, tomara tiempo curarse... Pierdes 1 de agilidad.
-qstr_You_have_trouble_thi|Tienes problemas para pensar con claridad después de la batalla, tal vez por un golpe particularmente duro a la cabeza y ahora tiene dolores frecuentes de cabeza. Tu Inteligencia se ve reducida en 1.
+qstr_You_have_trouble_thi|Tienes problemas para pensar con claridad después de la batalla, puede que por algún golpe particularmente duro dirigido a tu cráneo, y ahora tienes dolores frecuentes de cabeza. Tu Inteligencia se ve reducida en 1 punto.
 qstr_Perhaps_I_m_getting_|Quizás estoy teniendo mala suerte...
 qstr_Retirement_is_starti|Retiro comienza a sonar cada vez mejor...
 qstr_No_matter!_I_will_pe|¡No importa! ¡Sobreviviré!

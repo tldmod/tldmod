@@ -17,11 +17,11 @@ skl_wound_treatment_desc|La velocidad de curación del grupo se incrementa un 20
 skl_inventory_management|Administrar inventario
 skl_inventory_management_desc|Incrementa la capacidad del inventario +6 por nivel de habilidad. (Habilidad de líder)
 skl_spotting|Avistamiento
-skl_spotting_desc||El rango de visión del grupo se incrementa un 10%% por nivel de habilidad. (Habilidad de grupo)
+skl_spotting_desc|El rango de visión del grupo se incrementa un 10%% por nivel de habilidad. (Habilidad de grupo)
 skl_pathfinding|Buscarutas
 skl_pathfinding_desc|La velocidad del grupo en el mapa se incrementa un 3%% por nivel de habilidad. (Habilidad de grupo)
 skl_tactics|Tácticas
-skl_tactics_desc||Cada dos niveles de esta habilidad, se incrementa la ventaja inicial de batalla en 1. (Habilidad de grupo)
+skl_tactics_desc|Cada dos niveles de esta habilidad, se incrementa la ventaja inicial de batalla en 1. (Habilidad de grupo)
 skl_tracking|Rastreo
 skl_tracking_desc|Se obtiene más información sobre los rastros. (Habilidad de grupo)
 skl_trainer|Instruir
