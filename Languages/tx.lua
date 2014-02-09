@@ -18,7 +18,7 @@ function load(fi)
       table.insert( x, (l:gsub(regex[1],regex[2])) )
       
       --Fix the quotes from Transifex, which thinks that we're using Joomla!
-      if l:find([["_QQ_"]]) ~= nil then x[#x]=(x[#x]):gsub([["_QQ_"]],[["]]) end
+      if l:find([["_QQ_"]]) ~= nil then x[#x]=(x[#x]):gsub([["?_QQ_"]],[["]]) end
 
   end
   f:close(); f = io.open(fi,'w')
