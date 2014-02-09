@@ -18,7 +18,7 @@ str_flip_vertical|Girar en vertical
 str_hold_fire|Alto el fuego
 str_blunt_hold_fire|Armas contundentes / Alto el fuego                
 str_tutorial_ammo_refilled|Munición recargada.
-str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su cabalo  y lidera a sus leales hombres a una feroz batalla.
+str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su caballo y lidera a sus leales hombres a una feroz batalla.
 str_custom_battle_2|Celeborn de Lórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de vanguardia le avisan de que una fuerza de hombres malvados de rostro ceniciento se están acercando. ¡Son los terribles Númenóreanos Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben ser enviados de vuelta a la oscuridad.      
 str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras los sitiadores se preparan para su asalto final a los muros, él debe defenderlos con su coraje y brillante acero.
 str_custom_battle_4|Cuando los exploradores informan al señor Beranhelm de que una banda de guerreros de Rhûn se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
@@ -350,7 +350,7 @@ str_npc16_intro_response_2|¡Ocúpate de tus asuntos!
 str_npc17_intro_response_2|Sí, los bosques son maravillosos, pero tengo que seguir mi camino.
 str_npc1_backstory_a|Has venido en tiempos difíciles, amigo. Ithilien está rebosante de exploradores e invasores enemigos; hay quienes han visto grandes huestes de orcos. Intentamos evitar que esas nauseabundas criaturas crucen el gran rio y he liderado a un grupo de diestros montaraces en muchas misiones exitosas. Mi capitán Faramir es atrevido y no me desespero por la sombra que se cierne sobre nosotros.
 str_npc2_backstory_a|Ah, que considerado sois por preguntar por mi. He sido asignado a la guardia de los salones del Senescal, una tarea importante. Si se me permite decir, no muy ajetreada.
-str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por momentos y la tierra tiembla como si cabalgara un caballo travieso. Ah, si no hubiese bebido toda esa cerveza anoche... normalmente tengo buena cabeza para beber, debe de haber sido algún bregaje orco.
+str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por momentos y la tierra se agita como si cabalgara un caballo travieso. Ah, si anoche no hubiese bebido toda esa cerveza... normalmente tengo buena cabeza para beber, debe de haber sido algún brebaje orco.
 str_npc4_backstory_a|Me llamo Gálmynë, y me gustaría saber cuáles son vuestros asuntos, {playername}. Permitidme explicaros por qué.
 str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los hombres mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
 str_npc6_backstory_a|Disculpa mi ímpetu, forastero, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
@@ -707,7 +707,7 @@ str_npc16_retirement_speech|Me estoy cansando de la vida del guerrero, me retira
 str_npc17_retirement_speech|Me estoy cansando de la vida del guerrero, me retiraré.
 str_npc1_rehire_speech|Qué alegría verte de nuevo, capitán. ¿Quieres que me una a ti otra vez?
 str_npc2_rehire_speech|¡Qué alegría! Señor, ¿puedo unirme a vos de nuevo?
-str_npc3_rehire_speech|¡Ho! ¿Cabalgamos juntos de nuevo?
+str_npc3_rehire_speech|¡Jor! ¿Cabalgamos juntos de nuevo?
 str_npc4_rehire_speech|Bienvenido de nuevo. ¿Seguimos por donde lo habíamos dejado?
 str_npc5_rehire_speech|Qué alegría verte, {playername}. Viajemos juntos de nuevo.
 str_npc6_rehire_speech|Me alegra verte de nuevo, {playername}. Juntemos de nuevo nuestros caminos.

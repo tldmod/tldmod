@@ -172,7 +172,7 @@ qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
 qstr_near_the_Old_Ford_wh|cerca del Viejo Vado, donde el Camino del Bosque Viejo cruza el río Anduin
 qstr_near_a_big_ford_cros|cerca de un gran vado cruzando el Río {s15}
 qstr_near_a_small_ford_cr|cerca de un pequeño vado cruzando el Río {s15}
-qstr_Battle_Advantage_=_{|"Ventaja en la batalla = {reg0}.
+qstr_Battle_Advantage_=_{|Ventaja en la batalla: {reg0}
 qstr_{s9}_wants_you_to_re|{s9} quiere que no pares de seguir a su ejército hasta nuevo aviso.
 qstr_Rohan_capital_moved_|¡La capital de Rohan se ha trasladado de Edoras a Cuernavilla!
 qstr__Being_Raided_|(Siendo asolado)
@@ -777,8 +777,8 @@ qstr_{reg65?my_Lady:my_Lo|{reg65?mi Señora:mi Señor}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Mi Señora:Mi Señor}
 qstr_{reg65?mistress:mast|{reg65?ama:amo}
 qstr_{reg65?Mistress:Mast|{reg65?Ama:Amo}
-qstr_{reg65?madame:sir}|{reg65?señora:señor}
-qstr_{reg65?Madame:Sir}|{reg65?Señora:Señor}
+qstr_{reg65?madame:sir}|mi {reg65?señora:señor}
+qstr_{reg65?Madame:Sir}|Mi {reg65?Señora:Señor}
 qstr_How_do_magnets_work?|¿Cómo funcionan los imanes?
 qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los imanes están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal todavía contiene piezas de gravedad en su interior.
