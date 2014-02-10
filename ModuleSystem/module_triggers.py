@@ -157,7 +157,7 @@ triggers = [
             (try_end),
         (try_end),
         
-        #--swy add poneys to the Iron Hills camp merchant, that's it.
+        #swy-- add poneys to the Iron Hills camp merchant, that's it.
         #      poneys are always cool if there are dwarves over them!
         
         (try_begin),
