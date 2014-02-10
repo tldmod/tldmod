@@ -100,24 +100,32 @@ triggers = [
 (0, 0, 24, [], [
     (set_merchandise_modifier_quality,100),
     (try_for_range,":cur_center",centers_begin, centers_end),
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
+        (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
+        
         (party_get_slot,":cur_merchant",":cur_center",slot_town_merchant),
         (neq, ":cur_merchant", "trp_no_troop"),
+        
         (reset_item_probabilities,100),     
         (troop_clear_inventory,":cur_merchant"),
         (store_troop_faction,":faction",":cur_merchant"),
-		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
+        (faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
+        
         (troop_get_slot,":subfaction",":cur_center", slot_troop_subfaction),
-		(assign, ":subfaction_mask", 1),
-		(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end), #":subfaction_mask" = 2,4,8,16... if subfactions here
+        (assign, ":subfaction_mask", 1),
 
+        # --
+    
+        (try_for_range, ":unused", 0, ":subfaction"),
+          (val_mul, ":subfaction_mask", 2),
+        (try_end), #":subfaction_mask" = 2,4,8,16... if subfactions here
+    
         (assign, ":is_orc_faction", 0),
         (try_begin),
           (this_or_next|eq, ":faction", "fac_mordor"),
           (this_or_next|eq, ":faction", "fac_isengard"),
           (this_or_next|eq, ":faction", "fac_moria"),
           (this_or_next|eq, ":faction", "fac_guldur"),
-          (eq, ":faction", "fac_gundabad"),
+          (             eq, ":faction", "fac_gundabad"),
           (assign, ":is_orc_faction", 1),
         (try_end),
         # (assign, ":is_elf_faction", 0),
@@ -132,29 +140,32 @@ triggers = [
         (try_for_range,":item","itm_sumpter_horse", "itm_warg_reward"),
             (item_get_slot,":item_faction_mask",":item",slot_item_faction),
             (val_and,":item_faction_mask",":faction_mask"),
-			(try_begin),
-				(eq,":item_faction_mask",0), # faction mismatch
-				(set_item_probability_in_merchandise,":item",0),
-			(else_try),
-				(try_begin), # faction match but what about subfactions?
-					(neq, ":subfaction", 0),
-					(val_div, ":subfaction_mask", 2), #shift back
-					(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
-					(store_and,":subfaction_mask",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
-					(eq,":subfaction_mask",0),
-					(set_item_probability_in_merchandise,":item", 0),  #  prob reduced to 0 %
-				(try_end),
-			(try_end),
+            
+            (try_begin),
+              (eq,":item_faction_mask",0), # faction mismatch
+              (set_item_probability_in_merchandise,":item",0),
+            (else_try),
+              (try_begin), # faction match but what about subfactions?
+                (neq, ":subfaction", 0),
+                
+                (val_div, ":subfaction_mask", 2), #shift back
+                (item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
+                (store_and,":subfaction_mask",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
+                (eq,":subfaction_mask",0),
+                (set_item_probability_in_merchandise,":item", 0),  #  prob reduced to 0 %
+              (try_end),
+            (try_end),
         (try_end),
-    # horses inventory
-		(troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance stored in merchant skills values
-		(store_skill_level,":items",":skill",":cur_merchant"),         
-		(try_begin),
+        
+        # Add mounts/horses to merchant inventories
+        (troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance stored in merchant skills values
+        (store_skill_level,":items",":skill",":cur_merchant"),         
+        (try_begin),
             (gt,":items",0),
             (troop_add_merchandise,":cur_merchant",itp_type_horse,":items"),
         (try_end),
     
-    # Add trade goods to merchant inventories
+        # Add trade goods to merchant inventories
         (reset_item_probabilities,100),
         (try_for_range, ":cur_goods", trade_goods_begin, trade_goods_end),
             #MV: no non-edible trade goods and some factional food
@@ -168,7 +179,8 @@ triggers = [
               (neq, ":cur_goods", "itm_maggoty_bread"),
               (this_or_next|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
               (neq, ":cur_goods", "itm_cram"),
-		  ## food quest: 
+              
+              # food quest: 
               (assign, ":quest_prevents", 0),
               (try_begin), # don't allow this food to generate if the quest says there is a shortage
                 (check_quest_active, "qst_deliver_food"),
@@ -183,16 +195,20 @@ triggers = [
             (try_end),
             #(set_item_probability_in_merchandise,":cur_goods",":cur_probability"),
         (try_end),
+        
         (store_div, ":num_goods", ":center_str_income", 5),
         (val_add, ":num_goods", num_merchandise_goods), #now 3-7
         (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
         (troop_sort_inventory, ":cur_merchant"),
         (store_troop_gold, ":cur_gold",":cur_merchant"),
+        
+        #swy-- if the horse/ goods merchant is short of bucks, yo. give somm' money to da biotch!
+        #      don't expect enlightening comments all the way down. this is the jungle!
         (lt,":cur_gold",600),
         (store_random_in_range,":new_gold",200,400),
         (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
-	(try_end),
+    (try_end),
 ]),
 
 #Kingdom Parties
