@@ -157,6 +157,15 @@ triggers = [
             (try_end),
         (try_end),
         
+        #--swy add poneys to the Iron Hills camp merchant, that's it.
+        #      poneys are always cool if there are dwarves over them!
+        
+        (try_begin),
+          (eq, ":cur_merchant", "trp_merchant_ironhill"),
+          (set_item_probability_in_merchandise, "itm_pony", 100),
+          (troop_add_merchandise, ":cur_merchant", itp_type_horse, 1), #one poney for you!
+        (try_end),
+        
         # Add mounts/horses to merchant inventories
         (troop_get_slot,":skill","trp_skill2item_type",itp_type_horse), #abundance stored in merchant skills values
         (store_skill_level,":items",":skill",":cur_merchant"),         
