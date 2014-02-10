@@ -7512,7 +7512,7 @@ scripts = [
       (val_sub, ":raw_advantage", ":enemy_party_tactics"),
       (val_div, ":raw_advantage", 100),
       (assign, reg0, ":raw_advantage"),
-      (display_message, "@Battle Advantage = {reg0}.", 0xFFFFFFFF),
+      (display_message, "@Battle Advantage: {reg0}.", 0xFFFFFFFF),
 ]),
 
 # script_cf_check_enemies_nearby
