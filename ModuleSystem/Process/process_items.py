@@ -19,7 +19,7 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
   ofile = open(itemkinds_file_name,"w")
   ofile.write("itemsfile version 2\n")
   ofile.write("%d\n"%len(items))
-  for item in items:
+  for index,item in enumerate(items):
     if (item[3] & itp_shop) > 0:
       id_no = find_object(items,convert_to_identifier(item[0]))
       add_tag_use(tag_uses,tag_item,id_no)
@@ -29,6 +29,8 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
       #swy-- different dummy mesh for warband, for invisible objects, fixes galadriel's appearance, meshes have to have more than two characters to work.
       from module_info import wb_compile_switch as is_a_wb_item
       item_variation = list(item_variation)
+      # if (is_a_wb_item and item_variation[0]=="0") or (index<=(len(items)/2)):
+      # if (is_a_wb_item and item_variation[0]=="0") or (index>=(len(items)/2)):
       if (is_a_wb_item and item_variation[0]=="0"):
         item_variation[0]="dummy_mesh"
 
