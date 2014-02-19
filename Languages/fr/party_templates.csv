@@ -1,4 +1,3 @@
-pt_none|Personne
 pt_rescued_prisoners|Prisonniers libérés
 pt_enemy|Ennemi
 pt_hero_party|Armée du héros
@@ -120,122 +119,20 @@ pt_dwarf_caravan|Caravane naine
 pt_mordor_caravan|Convoi d'approvisionnement du Mordor
 pt_isengard_caravan|Convoi d'approvisionnement de l'Isengard
 pt_gunda_caravan|Convoi d'approvisionnement de Gundabad
-pt_gondor_p_trainConvoi de prisonniers du Gondor
+pt_gondor_p_train|Convoi de prisonniers du Gondor
 pt_rohan_p_train|Convoi de prisonniers du Rohan
 pt_imladris_p_train|Convoi de prisonniers de Rivendell
 pt_lorien_p_train|Convoi de prisonniers de Lothlórien
-pt_lorien_p_train|Convoi de prisonniers de Mirkwood
+pt_woodelf_p_train|Convoi de prisonniers de Mirkwood
 pt_dale_p_train|Convoi de prisonniers de Dale
 pt_dwarf_p_train|Convoi de prisonniers des Nains
 pt_mordor_p_train|Convoi de prisonniers du Mordor
 pt_isengard_p_train|Convoi de prisonniers de l'Isengard
 pt_kingdom_hero_party|Armée de campagne
-pt_gondor_reinf_d| 
-pt_gondor_reinf_a| 
-pt_gondor_reinf_b| 
-pt_gondor_reinf_c| 
-pt_pelargir_reinf_a| 
-pt_pelargir_reinf_b| 
-pt_pelargir_reinf_c| 
-pt_dol_amroth_reinf_a| 
-pt_dol_amroth_reinf_b| 
-pt_dol_amroth_reinf_c| 
-pt_lamedon_reinf_a| 
-pt_lamedon_reinf_b| 
-pt_lamedon_reinf_c| 
-pt_lossarnach_reinf_a| 
-pt_lossarnach_reinf_b| 
-pt_lossarnach_reinf_c| 
-pt_pinnath_reinf_a| 
-pt_pinnath_reinf_b| 
-pt_pinnath_reinf_c| 
-pt_ithilien_reinf_a| 
-pt_ithilien_reinf_b| 
-pt_ithilien_reinf_c| 
-pt_blackroot_reinf_a| 
-pt_blackroot_reinf_b| 
-pt_blackroot_reinf_c| 
-pt_rohan_reinf_a| 
-pt_rohan_reinf_b| 
-pt_rohan_reinf_c| 
-pt_isengard_reinf_a| 
-pt_isengard_reinf_b| 
-pt_isengard_reinf_c| 
-pt_mordor_reinf_a| 
-pt_mordor_reinf_b| 
-pt_mordor_reinf_c| 
-pt_harad_reinf_a| 
-pt_harad_reinf_b| 
-pt_harad_reinf_c| 
-pt_rhun_reinf_a| 
-pt_rhun_reinf_b| 
-pt_rhun_reinf_c| 
-pt_khand_reinf_a| 
-pt_khand_reinf_b| 
-pt_khand_reinf_c| 
-pt_umbar_reinf_a| 
-pt_umbar_reinf_b| 
-pt_umbar_reinf_c| 
-pt_lorien_reinf_a| 
-pt_lorien_reinf_b| 
-pt_lorien_reinf_c| 
-pt_imladris_reinf_a| 
-pt_imladris_reinf_b| 
-pt_imladris_reinf_c| 
-pt_woodelf_reinf_a| 
-pt_woodelf_reinf_b| 
-pt_woodelf_reinf_c| 
-pt_moria_reinf_a| 
-pt_moria_reinf_b| 
-pt_moria_reinf_c| 
-pt_guldur_reinf_a| 
-pt_guldur_reinf_b| 
-pt_guldur_reinf_c| 
-pt_beorn_reinf_a| 
-pt_beorn_reinf_b| 
-pt_beorn_reinf_c| 
-pt_gundabad_reinf_a| 
-pt_gundabad_reinf_b| 
-pt_gundabad_reinf_c| 
-pt_dale_reinf_a| 
-pt_dale_reinf_b| 
-pt_dale_reinf_c| 
-pt_dwarf_reinf_a| 
-pt_dwarf_reinf_b| 
-pt_dwarf_reinf_c| 
-pt_dunland_reinf_a| 
-pt_dunland_reinf_b| 
-pt_dunland_reinf_c| 
-pt_gondor_cap_recruits| 
-pt_gondor_recruits| 
-pt_pelargir_recruits| 
-pt_dol_amroth_recruits| 
-pt_lamedon_recruits| 
-pt_lossarnach_recruits| 
-pt_pinnath_recruits| 
-pt_ithilien_recruits| 
-pt_blackroot_recruits| 
-pt_rohan_recruits| 
-pt_rohan_cap_recruits| 
-pt_isengard_recruits| 
-pt_morannon_recruits| 
-pt_mordor_recruits| 
-pt_morgul_recruits| 
-pt_harad_recruits| 
-pt_rhun_recruits| 
-pt_khand_recruits| 
-pt_umbar_recruits| 
-pt_lorien_recruits| 
-pt_imladris_recruits| 
-pt_woodelf_recruits| 
-pt_moria_recruits| 
-pt_guldur_recruits| 
-pt_beorn_recruits| 
-pt_woodman_recruits| 
-pt_gundabad_recruits| 
-pt_gundabad_cap_recruits| 
-pt_dale_recruits| 
-pt_dwarf_recruits| 
-pt_dwarf_iron_recruits| 
-pt_dunland_recruits| 
 pt_caravan_survivors|Survivants d'une caravane
+pt_routed_allies|Alliés en déroute
+pt_routed_enemies|Ennemis en déroute
+pt_legion_minas_morgul|Légion de Minas Morgul
+pt_legion_udun|Légion d'Udun
+pt_legion_gorgoroth|Légion de Gorgoroth
+pt_legion_barad_dur|Légion de Barad-Dûr

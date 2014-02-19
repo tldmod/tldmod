@@ -1,14 +1,6 @@
-str_no_string|SANS CHAINES!
-str_empty_chaîne| 
 str_yes|Oui.
 str_no|Non.
-str_blank_string| 
-str_error_string|ERREUR!!!ERREUR!!!!ERREUR!!!ERREU R!!! ERREUR!!!ERREUR!!!!ERREUR!!!ERREUR!!!!ERREUR!!!ERR EUR!!! !ERREUR!!!ERREUR!!!!ERREUR!!!ERREUR!!!!ERREUR!!!ER REUR!! !!!
 str_noone|personne
-str_s0|{s0}
-str_blank_s1| {s1}
-str_reg1|{reg1}
-str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} Et {s51}
 str_s5_s_party| {s5}'s Troupe
 str_s5_s_host| {s5}'s Hôte
@@ -18,40 +10,7 @@ str_s7_raiders|{s7} Voleurs
 str_bandits_eliminated_by_another|Les bandits ont été éliminé par une autre troupe.
 str_msg_battle_won|Bataille gagnée! Appuyez sur la touche tabulation pour quitter...
 str_tutorial_map1|Vous vous voyez actuellement sur le plan terrestre. Faites un clic gauche sur la carte pour déplacer votre groupe à cet endroit, entrer dans la ville sélectionnée, ou de poursuivre le groupe sélectionnée. Le temps s'arrête sur le plan terrestre si votre troupe ne bouge pas, en attente ou au repos. Pour attendre n'importe où, simplement appuyez et maintenez la barre d'espace.
-str_change_color_1|Changer de couleur 1
-str_change_color_2|Changer de couleur 2
-str_change_background|Changer le motif de fond
-str_change_flag_type|Changer le drapeau
-str_change_map_flag_type|Changer la carte
-str_randomize|Aléatoire
-str_sample_banner|Exemple de bannière
-str_sample_map_banner|Exemple de drapeau de la carte:
-str_number_of_charges|Nombres d'ordres:
-str_change_charge_1|Changer l'ordre 1
-str_change_charge_1_color|Change l'ordre 1 Color
-str_change_charge_2|Changer l'ordre 2
-str_change_charge_2_color|Changer l'ordre 2 Color
-str_change_charge_3|Changer l'ordre 3
-str_change_charge_3_color|Changer la Charge 3 Color
-str_change_charge_4|Changer l'ordre 4
-str_change_charge_4_color|Changer l'ordre 4 Color
-str_change_charge_position|Changer la position de la charge
-str_choose_position|Choisir la position:
-str_choose_charge|Choisir une charge:
-str_choose_background|Choisir la configuration de fond:
-str_choose_flag_type|Choisir le type de drapeau:
-str_choose_map_flag_type|Choose map flag type:
-str_choose_color|Choisir la couleur:
 str_accept|Accepter
-str_charge_no_1|Ordre #1:
-str_charge_no_2|Ordre #2:
-str_charge_no_3|Ordre #3:
-str_charge_no_4|Ordre #4:
-str_change|Changement
-str_plus|+
-str_minus|-
-str_color_no_1|Couleur #1:
-str_color_no_2|Couleur #2:
 str_charge|Ordre
 str_color|Couleur
 str_flip_horizontal|Retouner Horizontal
@@ -59,48 +18,6 @@ str_flip_vertical|Retourner Vertical
 str_hold_fire|Hold Fire (Je ne suis pas sûr donc je préfère laisser tel quel)
 str_blunt_hold_fire|Blunt / Hold Fire(Je ne suis pas sûr donc je préfère laisser tel quel)
 str_tutorial_ammo_refilled|Munitions remplies.
-str_tutorial_failed|Vous avez été battu cette fois, mais ne vous inquiétez pas. Suivez avec attention les instructions et vous ferez mieux la prochaine fois. Appuyez sur la touche Tab pour revenir sur le menu où vous pourrez recommencer le tutoriel.
-str_tutorial_1_msg_1|Dans ce tutoriel vous allez apprendre les bases du mouvement et du combat. Dans Mount&Blade vous utilisez la souris pour contrôler ce que vous regardez, et les touches WASD de votre clavier pour bouger. Votre première tâche dans ce tutoriel est de localiser le drapeau jaune dans dans la place et progresser jusque là. Vous pouvez appuyez sur Tab à tout moment pour quitter ce tutoriel ou pour quitter tout autre endroit dans le jeu. Allez au drapeau jaune maintenant.
-str_tutorial_1_msg_2|Bravo. Ensuite nous allons apprendre à attaquer avec des armes. Dans le but de ce tutoriel vous avez été équipé d'un arc et de flèches, d'une épée et d'un bouclier. Vous pouvez changer d'arme de votre stock d'armes en utilisant la molette de votre souris. Dans la configuration par défaut, la molette par le haut fait sortir votre prochaine arme, la molette par le bas fait sortir le bouclier. Si vous portez déjà un bouclier, défiler par le bas retira votre bouclier à la place. Essayez de changer votre maniement d'équipement avec votre molette maintenant. Quand vous êtes prêt, allez au drapeau jaune pour aller à votre prochaine tâche.
-str_tutorial_1_msg_3|Excellent. La prochaine partie de ce tutoriel est d'apprendre à attaquer avec des armes de mêlée. Vous attaquez avec l'arme que vous avez actuellement à la main en utilisant le bouton gauche de la souris. Appuyez et tenez le bouton pour apprêter une attaque, puis relâchez le bouton pour frapper. Si vous maintenant le bouton gauche pendant un moment avant de relâcher, votre attaque sera plus puissante. Maintenant dégainez votre épée et détruisez les quatre mannequins de la salle.
-str_tutorial_1_msg_4|Bon travail! Vous avez détruit les quatre mannequins. Vous pouvez maintenant bouger à la prochaine salle.
-str_tutorial_1_msg_5|Comme vous voyez, il y a une cible de tir à l'arc loin devant. La prochaine tâche est d'utiliser votre arc pour mettre trois flèches dans la cible. Appuyez et maintenez le bouton gauche de la souris pour encocher une flèche. Vous pouvez ensuite tirer votre flèche en relâchant le bouton gauche de la souris. Remarquez le réticule de tir au centre de votre écran, qui vous montre la précision de votre tir. Afin d'atteindre une précision optimale, laissez voler votre flèche quand le réticule est le plus petit possible. Essayez d'atteindre la cible maintenant.
-str_tutorial_1_msg_6|Bien joué! Vous avez appris les bases du mouvement et de l'attaque. Avec un petit peu de pratique vous les maitriserez bientôt. Dans le second tutoriel vous pouvez apprendre des compétences de combat plus avancées et faire face à des adversaires armés. Vous pouvez appuyer sur la touche Tab à tout moment pour revenir au menu du tutoriel.
-str_tutorial_2_msg_1|Ce tutoriel vous enseignera comment vous défendre avec un bouclier et comment se battre avec des adversaires armés. Pour le moment vous êtes armé avec rien sauf d'un bouclier. Votre tâche n'est pas d'attaquer, mais de vous défendre avec succès du danger avec votre bouclier. Il y a un adversaire armé qui vous attend dans la prochaine salle. Il va faire de son mieux pour vous assommer, pendant que vous devez vous protéger avec votre bouclier en appuyant et en maintenant le bouton droit de la souris. Allez maintenant dans la prochaine salle pour défier votre adversaire. Souvenez-vous que vous pouvez appuyer sur la touche Tab à tout moment pour quitter le tutoriel ou pour quitter n'importe quel endroit dans le jeu.
-str_tutorial_2_msg_2|Appuyez et maintenez le bouton droit de la souris pour lever votre bouclier. Essayez de tenir debout pendant 30 secondes. Vous avez {reg3} secondes.
-str_tutorial_2_msg_3|Bien joué, vous avez réussi à vous défendre contre votre adversaire armé. La prochaine phase de ce tutoriel opposera vous et votre bouclier contre une force d'archers ennemis. Allez à la prochaine salle quand vous serez prêt à faire face aux archers.
-str_tutorial_2_msg_4|Défendez vous des flèches en levant votre bouclier avec le bouton droit de la souris. Essayez de tenir debout pendant 30 secondes. Vous avez {reg3} secondes.
-str_tutorial_2_msg_5|Excellent, vous avez réussi votre défense contre les archers. Il y a une récompense qui vous attend dans la prochaine salle.
-str_tutorial_2_msg_6|Dans la configuration par défaut, la touche F de votre clavier est utilisé pour des interactions non-violentes avec des objets et des humains dans le monde du jeu. Pour prendre l'épée sur l'autel, regardez la et appuyez sur F quand vous voyez le mot 'Équiper'.
-str_tutorial_2_msg_7|Une bonne arme! Maintenant vous pouvez l'utiliser pour délivrer la monnaie de leur pièce. Retournez par la porte et disposez des archers que vous avez fait face avant.
-str_tutorial_2_msg_8|Très bien. Votre dernière tâche avant de finir ce tutoriel est de faire face à un homme avec une masse. Allez par la porte maintenant et montrez-lui votre acier!
-str_tutorial_2_msg_9|Félicitations! Vous avez maintenant appris comment vous défendre avec un bouclier et même eu le goût d'un premier combat avec un adversaire armé. Donnez-vous un peu plus de pratique et vous serez bientôt un épéiste renommé. Le prochain tutoriel couvre les attaques directionnels, ce qui est un élément des plus importants des combat de Mount&Blade. Vous pouvez appuyez sur la touche Tab à tout moment pour retourner sur le menu du tutoriel.
-str_tutorial_3_msg_1|Ce tutoriel est sensé vous donner un aperçu des parades et de la défense sans bouclier. Parer des attaques avec votre arme est un petit peu plus difficile que de les bloquer avec un bouclier. Quand vous vous défendez avec une arme, vous êtes seulement protégé d'un côté, dans la direction que votre arme est inclinée. Si vous bloquez par le haut, vous allez parer tout les coups du haut qui viennent vers vous, mais vous ne pourrez pas bloquer les coups ou les attaques sur vos flancs. Chacune de ces attaques seront capables de toucher. C'est pourquoi, dans le but de survivre sans bouclier, vous devez apprendre la défense directionnel. Allez prendre le bâton d'entrainement pour commencer.
-str_tutorial_3_msg_2|Par défaut, la direction dans laquelle vous défendez (en cliquant et maintenant le bouton droit de la souris) est déterminée par la direction de l'attaque de votre adversaire le plus proche. Par exemple, si votre adversaire s'apprête à attaquer de face, appuyer et maintenant le bouton droit de la souris parera les attaques de face, mais pas les attaques de côté ou du haut. Vous devez regarder attentivement votre adversaire et seulement entreprendre une parade APRÈS que l'ennemi comme à attaquer. Si vous commencez AVANT qu'il s'apprête à attaquer, tout compte fait vous parerez peut être dans le mauvais sens! Maintenant il est temps pour vous de bouger à la prochaine salle, où vous aurez à vous défendre contre un adversaire armé. Votre tâche est de vous défendre avec succès pendant trente secondes avec pas d'équipement excepté d'un bâton d'entrainement. Les attaques de votre bâton d'entrainement sont désactivés pour ce tutoriel, donc ne vous inquiétez pas à propos d'attaquer et concentrez-vous sur votre défense à la place. Allez à la prochaine salle quand vous être prêt pour débuter le combat.
-str_tutorial_3_msg_3|Appuyez et maintenez le bouton droit de la souris pour vous défendre avec votre bâton après que l'adversaire commence ses attaques. Essayez de tenir debout pendant trente secondes. Vous avez {reg3} secondes.
-str_tutorial_3_msg_4|Bien joué, vous avez réussi cette épreuve! Maintenant vous allez être opposé à un adversaire plus difficile qui rendra les choses plus difficile pour vous. Allez à la prochaine salle vous lui faire face.
-str_tutorial_3_msg_5|Appuyez et maintenez le bouton droit de la souris pour vous défendre avec votre bâton après que l'adversaire commence ses attaques. Essayez de tenir debout pendant trente secondes. Vous avez {reg3} secondes.
-str_tutorial_3_msg_6|Félicitation, vous êtes resté debout malgré les meilleurs efforts de vitre ennemi. Il est temps maintenant d'attaquer et de se défendre. Approcher la porte et appuyez sur la touche F quand vous voyez le mot 'Aller'.
-str_tutorial_3_2_msg_1|Les attaques de votre bâton sont activés. Votre premier adversaire attend dans la prochaine salle. Battez le en combinant attaque et défense.
-str_tutorial_3_2_msg_2|Battez votre adversaire avec votre bâton d'entrainement.
-str_tutorial_3_2_msg_3|Excellent. Maintenant la seule chose qui se tient sur votre chemin est un dernier adversaire. Il est dans la prochaine salle. Allez-y et assommez-le.
-str_tutorial_3_2_msg_4|Battez votre adversaire avec votre bâton d'entrainement.
-str_tutorial_3_2_msg_5|Bien joué! Dans ce tutoriel vous avez appris à vous battre habilement sans un bouclier. Entraînez vous dur et bien, et personne ne sera capable de vous mettre un coup. Dans le prochain tutoriel vous pourrez apprendre l'équitation et le combat de cavalerie. Vous pouvez appuyez sur la touche Tab à tout moment pour retourner sur le menu du tutoriel.
-str_tutorial_4_msg_1|Bienvenue sur le quatrième tutoriel. Dans cette séquence vous apprendrez comment monter à cheval et comment effectuer des exercices martiaux variés à cheval. Nous allons commencer par vous faire monter. Approchez le cheval, et appuyez sur la touche 'F' quand vous verrez le mot 'Monter'.
-str_tutorial_4_msg_2|Quand vous êtes à dos de cheveal, les touches ZQSD contrôle les mouvements de votre cheval, pas les vôtres. Montez votre cheval et essayez de suivre le drapeau jaune autour du parcours. Quand vous atteignez le drapeau, il bougera au prochain point sur le parcours jusqu'à ce que vous atteignez le dernier.
-str_tutorial_4_msg_3|Tès bien. Ensuite nous allons attaquer les ennemies à dos de cheval. Approchez le drapeau jaune maintenant.
-str_tutorial_4_msg_4|Dégainez votre épée (en utilisant la molette de votre souris) et détruisez les quatre cibles. Essayez de toucher les mannequins pendant que vous les passez à plein galop -- cela donne un challenge supplémentaire, mais la vitesse additionnelle ajoutée à votre coup vous permettra de faire plus de dommages. La façon la plus facile de le faire est de presser et maintenir le bouton gauche de la souris jusqu'au bon moment, relâcher juste avant de passer devant la cible.
-str_tutorial_4_msg_5|Excellent travail. Maintenant laissez nous essayer quelques cibles de tir à dos de cheval. Allez près du drapeau jaune maintenant.
-str_tutorial_4_msg_6|Localisez la cible de tir à l'arc à côté du parcours d'équitation et tirez dessus trois fois avec votre arc. Bien qu'il n'est pas demandé d'être monter pendant que vous tirez, il est recommandé d'atteindre la cible à des vitesses et angles variés pour avoir une idée de comment la vitesse du cheval et votre course affecte votre visé.
-str_tutorial_4_msg_7|Félicitation, vous avez fini ce tutoriel. Vous pouvez appuyez sur la touche Tab à tout moment pour retourner sur le menu du tutoriel.
-str_tutorial_5_msg_1|TODO: Suivez les ordres jusqu'au drapeau
-str_tutorial_5_msg_2|TODO: Allez au drapeau, gardez vos unités à cette position
-str_tutorial_5_msg_3|TODO: Allez au drapeau pour avoir les archers
-str_tutorial_5_msg_4|TODO: Bougez les archers jusqu'au drapeau 1, l'infanterie au drapeau 2
-str_tutorial_5_msg_5|TODO: L'ennemi charge. Battez-vous!
-str_tutorial_5_msg_6|TODO: Fin de la bataille.
-str_trainer_help_1|C'est un entrainement de terrain où vous pouvez apprendre les bases du jeu. Utilisez les touches Q, S, D, Z pour bouger et la souris pour regarder autour.
-str_trainer_help_2|Pour parler avec l'entraineur, allez près de lui, regardez le et appuyez sur la touche 'F' quand vous voyez le mot 'Parler' sous son nom. Quand vous voulez le quitter ou tout autre zone ou vous retirez d'une bataille, vous pouvez appuyer sur la touche TAB.
 str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforcement Harad. Criant son crie de guerre, il éperonna son cheval vers l'avant, et mena ses hommes loyaux à une féroce bataille.
 str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de chevaux montés et d'archers quand plus avant à l'affût vient une alerte qu'une force de mauvais hommes aux visages sombres approchent. Ce sont les redoutés Númenóréens noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
 str_custom_battle_3|Le seigneur Grimbold of Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, Puisque les assiégeants se preparent pour un assaut final sur les murs, il doit tenir les murs avec courage et avec l'acier briant.
@@ -173,7 +90,7 @@ str_troop_relation_increased|Vos relations avec {s1} se sont améliorées de {re
 str_troop_relation_detoriated|Vos relations avec{s1} se sont dégradées de {reg1} à {reg2}.
 str_faction_relation_increased|Vos relations avec {s1} se sont améliorées de {reg1} à {reg2}.
 str_faction_relation_detoriated|Vos relations avec {s1} se sont dégradées de {reg1} à {reg2}.
-str_party_gained_morale|Votre camp a gagner {reg1} moral.
+str_party_gained_morale|Votre camp a gagné {reg1} de moral.
 str_party_lost_morale|Votre camp a perdu {reg1} moral.
 str_qst_follow_spy_noticed_you|L'espion vous a reperé ! Il a couru pour ça!
 str_father|père
@@ -287,211 +204,6 @@ str_persuasion_summary_bad|Vous essayez de convaincre {s50}, mais {reg51?she:he}
 str_persuasion_summary_average|{s50} se révèle être un bon orateur à l'esprit vif, et vous n'arrivez pas à répondre quelque chose de concret {reg51?she:he} ne peux pas contredire avec un argument rationnel. En fin de compte, aucun de vous ne parviens à gagner du terrain pendant cette discussion.
 str_persuasion_summary_good|Grâce à la vivacité d'esprit et une argumentation délicate, vous parvenez à exposer votre cause, forçant {s50} à céder sur plusieurs points. Cependant, {reg51?she:he} continue à douter de votre requête.
 str_persuasion_summary_very_good|Vous livrez un discours passionné qui attire toute l'attention tel une poésie. Le monde lui même semble se calmer afin de mieux vous entendre . Les mots utilisés ont touchés {s50} profondément, et {reg51?she:he} semble bien mieux disposer à vous apporter son aide.
-str_name_1|Adanedhel
-str_name_2|Ondoher
-str_name_3|Aerandir
-str_name_4|Agarwaen
-str_name_5|Ailinel
-str_name_6|Aldarion
-str_name_7|Almarian
-str_name_8|Amandil
-str_name_9|Amlaith
-str_name_10|Anardil
-str_name_11|Anborn
-str_name_12|Andróg
-str_name_13|Angbor
-str_name_14|Arador
-str_name_15|Araglas
-str_name_16|Arahael
-str_name_17|Arantar
-str_name_18|Arassuil
-str_name_19|Alcarin
-str_name_20|Belegund
-str_name_21|Bereg
-str_name_22|Bergil
-str_name_23|Borthand
-str_name_24|Ceorl
-str_name_25|Ciryon
-str_name_26|Damrod
-str_name_27|Derufin
-str_name_28|Dorlas
-str_name_29|Duilin
-str_name_30|Duinhir
-str_name_31|Egalmoth
-str_name_32|Emeldir
-str_name_33|Eradan
-str_name_34|Erellont
-str_name_35|Erendis
-str_name_36|Falathar
-str_name_37|Fengel
-str_name_38|Forweg
-str_name_39|Frumgar
-str_name_40|Fuinur
-str_name_41|Galdor
-str_name_42|Gethron
-str_name_43|Gorlim
-str_name_44|Grithnir
-str_name_45|Gundor
-str_name_46|Hador
-str_name_47|Haldar
-str_name_48|Hallacar
-str_name_49|Hathol
-str_name_50|Herion
-str_name_51|Hild
-str_name_52|Hunthor
-str_name_53|Imlach
-str_name_54|Ioreth
-str_name_55|Ivorwen
-str_name_56|Labadal
-str_name_57|Larnach
-str_name_58|Magor
-str_name_59|Mairen
-str_name_60|Malach
-str_name_61|Malantur
-str_name_62|Malvegil
-str_name_63|Mardil
-str_name_64|Meneldur
-str_name_65|Minalcar
-str_name_66|Minohtar
-str_name_67|Ondoher
-str_name_68|Orleg
-str_name_69|Orodreth
-str_name_70|Ostoher
-str_name_71|Pelendur
-str_name_72|Ragnor
-str_name_73|Sador
-str_name_74|Súrion
-str_name_75|Thorongil
-str_name_76|Turambar
-str_name_77|Ulfast
-str_name_78|Ulwarth
-str_name_79|Valacar
-str_name_80|Wulf
-str_name_elf_1|Merlkir
-str_name_elf_2|Romanoir
-str_name_elf_3|Aegnor
-str_name_elf_4|Amdír
-str_name_elf_5|Amras
-str_name_elf_6|Annael
-str_name_elf_7|Aredhel
-str_name_elf_8|Arminas
-str_name_elf_9|Caranthir
-str_name_elf_10|Curufin
-str_name_elf_11|Daeron
-str_name_elf_12|Eluchíl
-str_name_elf_13|Edrahil
-str_name_elf_14|Eluréd
-str_name_elf_15|Erestor
-str_name_elf_16|Faelivrin
-str_name_elf_17|Finrod
-str_name_elf_18|Felagund
-str_name_elf_19|Galathil
-str_name_elf_20|Galdor
-str_name_elf_21|Gelmir
-str_name_elf_22|Gildor
-str_name_elf_23|Guilin
-str_name_elf_24|Ithilbor
-str_name_elf_25|Lindir
-str_name_elf_26|Lómion
-str_name_elf_27|Maedhros
-str_name_elf_28|Maeglin
-str_name_elf_29|Malgalad
-str_name_elf_30|Nellas
-str_name_elf_31|Nerdanel
-str_name_elf_32|Nerwen
-str_name_elf_33|Nimloth
-str_name_elf_34|Orodreth
-str_name_elf_35|Oropher
-str_name_elf_36|Orophin
-str_name_elf_37|Saeros
-str_name_dwarf_1|Assistnik
-str_name_dwarf_2|Vader
-str_name_dwarf_3|Azaghâl
-str_name_dwarf_4|Bifur
-str_name_dwarf_5|Bofur
-str_name_dwarf_6|Bombur
-str_name_dwarf_7|Borin
-str_name_dwarf_8|Dori
-str_name_dwarf_9|Dwalin
-str_name_dwarf_10|Farin
-str_name_dwarf_11|Frár
-str_name_dwarf_12|Frerin
-str_name_dwarf_13|Frór
-str_name_dwarf_14|Gamil
-str_name_dwarf_15|Gróin
-str_name_dwarf_16|Grór
-str_name_dwarf_17|Ibun
-str_name_dwarf_18|Khîm
-str_name_dwarf_19|Lóni
-str_name_dwarf_20|Mîm
-str_name_dwarf_21|Nár
-str_name_dwarf_22|Narvi
-str_name_dwarf_23|Nori
-str_name_dwarf_24|Óin
-str_name_dwarf_25|Ori
-str_name_dwarf_26|Telchar
-str_name_dwarf_27|Marco
-str_name_dwarf_28|Octo
-str_name_orc_1|Triglav
-str_name_orc_2|Adgulg
-str_name_orc_3|Aghed
-str_name_orc_4|Aguk
-str_name_orc_5|Alog
-str_name_orc_6|Azhug
-str_name_orc_7|Bagdud
-str_name_orc_8|Bargulg
-str_name_orc_9|Bog
-str_name_orc_10|Borug
-str_name_orc_11|Bulgan
-str_name_orc_12|Bumhug
-str_name_orc_13|Carguk
-str_name_orc_14|Dalthu
-str_name_orc_15|Derthag
-str_name_orc_16|Dregu
-str_name_orc_17|Dugarod
-str_name_orc_18|Ertguth
-str_name_orc_19|Fandagh
-str_name_orc_20|Farghed
-str_name_orc_21|Fozhug
-str_name_orc_22|Furbog
-str_name_orc_23|Gholug
-str_name_orc_24|Gnalurg
-str_name_orc_25|Grug
-str_name_orc_26|Haguk
-str_name_orc_27|Hoknuk
-str_name_orc_28|Igmut
-str_name_orc_29|Jolagh
-str_name_orc_30|Jukha
-str_name_orc_31|Karguk
-str_name_orc_32|Klog
-str_name_orc_33|Krothu
-str_name_orc_34|Kulgha
-str_name_orc_35|Margulg
-str_name_orc_36|Mazhug
-str_name_orc_37|Naghat
-str_name_orc_38|Nugbu
-str_name_orc_39|Nurbag
-str_name_orc_40|Oggha
-str_name_orc_41|Olodagh
-str_name_orc_42|Omogulg
-str_name_orc_43|Opoguk
-str_name_orc_44|Orgoth
-str_name_orc_45|Perthag
-str_name_orc_46|Pofhug
-str_name_orc_47|Prutha
-str_name_orc_48|Raguk
-str_name_orc_49|Romarod
-str_name_orc_50|Rugbu
-str_name_orc_51|Sargulg
-str_name_orc_52|Slog
-str_name_orc_53|Suhgan
-str_name_orc_54|Surgha
-str_name_orc_55|Torug
-str_name_orc_56|Turbag
-str_name_orc_57|Urghat
-str_name_orc_58|Varguk
-str_name_orc_59|Zlog
-str_name_orc_60|Zunuguk
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} d'Erech
@@ -533,7 +245,6 @@ str_surname_38|{s50} le Rapide
 str_surname_39|{s50} le Ménestrel
 str_surname_40|{s50} le Gras
 str_surname_41|{s50} Tête-Chaude
-str_surnames_end|fin des surnoms
 str_number_of_troops_killed_reg1|Nombre de tués: {reg1}
 str_number_of_troops_wounded_reg1|Nombre de blessés: {reg1}
 str_number_of_own_troops_killed_reg1|Nombre d'alliés tués: {reg1}
@@ -798,7 +509,7 @@ str_npc5_signup_response_2|À bien y penser, nous avons peut-être besoin d'aide
 str_npc6_signup_response_2|Désolé, je ne peux pas vous imaginer sur le champs de bataille.
 str_npc7_signup_response_2|Désolé, il m'arrive d'aimer les elfes.
 str_npc8_signup_response_2|Je suis désolé, tout le monde se bat dans ma compagnie.
-str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
+str_npc9_signup_response_2|J'ai changé d'avis. Qui que ce soit vous cherchant pourrait venir pour moi la prochaine fois.
 str_npc10_signup_response_2|I've changed my mind.
 str_npc11_signup_response_2|I don't need you, slave.
 str_npc12_signup_response_2|I've changed my mind.
@@ -846,35 +557,35 @@ str_npc2_morality_speech|I hope you don't mind my saying so, but it's a bit hard
 str_npc3_morality_speech|Commander, we Eorlingas never {s21}. Our horses don't tire easily and, once we regroup, there is no situation a well-timed charge can't decide in our favour. Take heed the next time we battle against the odds.
 str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
 str_npc5_morality_speech|You must reconsider your actions, commander. To {s21} makes us no more honourable than the Enemy and diminishes the confidence of our friends.
-str_npc6_morality_speech|[No primary moral code]
+
 str_npc7_morality_speech|I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?
 str_npc8_morality_speech|Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake.
 str_npc9_morality_speech|The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken.
-str_npc10_morality_speech|[No primary moral code]
-str_npc11_morality_speech|[No primary moral code]
-str_npc12_morality_speech|[No primary moral code]
-str_npc13_morality_speech|[No primary moral code]
-str_npc14_morality_speech|[No primary moral code]
+
+
+
+
+
 str_npc15_morality_speech|You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!
-str_npc16_morality_speech|[No primary moral code]
-str_npc17_morality_speech|[No primary moral code]
+
+
 str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnedain, both in valor and honour. I would prefer if we don't {s21}.
-str_npc2_2ary_morality_speech|[No secondary moral code]
-str_npc3_2ary_morality_speech|[No secondary moral code]
+
+
 str_npc4_2ary_morality_speech|Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors.
-str_npc5_2ary_morality_speech|[No secondary moral code]
-str_npc6_2ary_morality_speech|[No secondary moral code]
-str_npc7_2ary_morality_speech|[No secondary moral code]
-str_npc8_2ary_morality_speech|[No secondary moral code]
-str_npc9_2ary_morality_speech|[No secondary moral code]
-str_npc10_2ary_morality_speech|[No secondary moral code]
-str_npc11_2ary_morality_speech|[No secondary moral code]
-str_npc12_2ary_morality_speech|[No secondary moral code]
-str_npc13_2ary_morality_speech|[No secondary moral code]
-str_npc14_2ary_morality_speech|[No secondary moral code]
+
+
+
+
+
+
+
+
+
+
 str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
-str_npc16_2ary_morality_speech|[No secondary moral code]
-str_npc17_2ary_morality_speech|[No secondary moral code]
+
+
 str_npc1_personalityclash_speech|Did I mention I hate {s11}?
 str_npc2_personalityclash_speech|Did I mention I hate {s11}?
 str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
@@ -1096,7 +807,6 @@ str_npc14_honorific|Captain
 str_npc15_honorific|Master
 str_npc16_honorific|Chieftain
 str_npc17_honorific|Chief
-str_companion_strings_end|INVALID
 str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
 str_comment_intro_famous_liege|Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor.
 str_comment_intro_famous_martial|Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!
@@ -1199,8 +909,6 @@ str_comment_you_helped_my_ally_unfriendly_spiteful|I heard that you rode to the 
 str_comment_you_helped_my_ally_spiteful|I heard that you saved {s54} from a whipping. You should have let him learn his lesson, in my opinion.
 str_comment_you_helped_my_ally_chivalrous|I heard that you got {s54} out of a tight spot. That was a noble deed.
 str_comment_you_helped_my_ally_default|I heard that you got {s54} out of a tight spot. Good work!
-str_comment_you_were_defeated_allied_unfriendly|I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?
-str_comment_you_were_defeated_allied|I heard that {s54} defeated you. But take heart -- the tables will soon be turned!
 str_comment_you_abandoned_us_unfriendly_spiteful|You worm! You left us alone to face {s54}, didn't you? I spit at you.
 str_comment_you_abandoned_us_unfriendly_pitiless|Well... You abandoned me in the middle of a battle with {s54}, didn't you? I'll see you buried in a traitor's grave.
 str_comment_you_abandoned_us_spiteful|You disappeared in the middle of that battle with {s54}... I hope you have a good explanation. Did your bowels give out? Were you shaking too hard with fear to hold your weapon?
@@ -1435,11 +1143,6 @@ str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to 
 str_rebellion_refuse_default|[liege]
 str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
 str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
-str_rebellion_agree_pitiless|No. I will not join your rebellion. I count it little more than the tantrum of a child, denied a bauble which {reg3?she:he} thinks should be {reg3?hers:his}. I will stick with {s46}, whose ability to rule is well-tested.
-str_rebellion_agree_cunning|I am sorry. You do not give me reason for confidence that you will win. Many will die, but I do not wish to be among them. I will continue to back {s46}.
-str_rebellion_agree_sadistic|No. I won't play your little game. You grasp at a crown, but I think instead you'll get a quick trip to the scaffold, and I'll be there by {s46}'s side to watch the headsman's axe drop.
-str_rebellion_agree_goodnatured|I am sorry. I don't feel right turning my back on {s46}. No hard feelings when me meet on the battlefield.
-str_rebellion_agree_upstanding|I am sorry. {s45}'s claim is not strong enough for me to inflict the curse of civil disorder on the poor wretches of this land. I will continue to back {s46}. May the Heavens forgive me if I do wrong.
 str_talk_later_default|[liege]
 str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
 str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
@@ -1457,18 +1160,6 @@ str_gossip_about_character_sadistic|They say that {s6} likes to torture his enem
 str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
 str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
 str_latest_rumor|The latest rumor you heard about {s6} was:
-str_credits_1|Mount&Blade Copyright 2001-2008 Taleworlds Entertainment
-str_credits_2|Game design:^Armagan Yavuz^Steve Negus^Cem Cimenbicer
-str_credits_3|Programming:^Armagan Yavuz^Cem Cimenbicer
-str_credits_4|CG Artists:^Ipek Yavuz^Ozgur Saral^Mustafa Ozturk
-str_credits_8|Animation:^Pinar Cekic^Umit Singil
-str_credits_5|Concept Artist:^Ganbat Badamkhand
-str_credits_6|Writing:^Steve Negus^Ryan A. Span^Armagan Yavuz
-str_credits_9|Original Music:^Jesse Hopkins
-str_credits_7|Additional Modeling:^Hilmi Aric^Ahmet Sarisakal^Katie Beedham^^^Additional Writing:^Michael Buhler^Patrick Desjardins^^^Voice Talents:^Tassilo Egloffstein^Jade E Henderson^^^Original Music Composed by:^Jesse Hopkins^Violin Solos Performed by:^Zoriy Zinger^Main Theme and Scherzo Performed by:^The Russian State Symphony Cinema Orchestra, Conducted by Sergei Skripka^^^Sound Samples:^Audiosparx.com^^^Mount&Blade Map Editor:^Matt Stentiford^^^Taleworlds Forum Programming:^Brett Flannigan www.fenrisoft.com^^^Mount&Blade Tutorial written by:^Edward Spoerl^^^Gameplay Videos:^Jemes Muia^^^Motion Capture System:^NaturalPoint-Optitrack Arena^^^Horse Motion Capture Animation Supplied by:^Richard Widgery & Kinetic Impulse^^^Ragdoll Physics:^Newton Game Dynamics^^^Sound and Music Program Library:^FMOD Sound System by Firelight Technologies^^^Copy Protection:^Themida by Oreans Technologies^^^Skybox Textures:^Jay Weston www.hyperfocaldesign.com^^^Third Party Art Libraries Used:^Texturemonk^Mayang Textures^cgtextures.com^3d.sk^^Unofficial Mount&Blade Editor:^Josh Dahlby^^^Many thanks to Marco Tarini for the Mountain shader idea!^^^Special Thanks to:^Ibrahim Dogan^Nova Language Works^Selim Kurtulus and UPS Turkey^^^Taleworlds.com Forum Administrators and Moderators:^Janus^Archonsod^Narcissus^Nairagorn^Lost Lamb^Deus Ex^Merentha^Volkier^Okin^Instag0^Deniz^ego^Guspav^Hallequin^Invictus^okiN^Raz^rejenorst^Skyrage^ThVaz^^^Spanish Translation^^Translators:^Anabel 'Rhaenys' Diaz^Analia 'Immortality' Dobarro^Anoik^^Medieval Consultant:^Enric 'Palafoxx' Clave^^Language Tester:^Theo de Moree^^^Mount&Blade Community Suggestions and Feedback:^13 Chain Bloody Spider^Aenarion^AgentSword^Ahadhran^Albino^Allegro^allthesedamnnamesare^Amman de Stazia^Ancientwanker^Anrea 'Skree' Giongiani^Aqtai^Art Falmingaid^bryce777^Bugman^Buxton^Calandale^Cartread^Chel^Chilly5^Cirdan^Cleaning agent^Cymro^DaBlade^DaLagga^Damien^danover^Dearahn^Deathblow^Destichado^Dryvus^dunnno^D'Sparil^ealabor^Ealdormann Hussey^EasyCo506^El Duke^Elias Maluco^Eogan^ex ottoyuhr^Fisheye^Fossi^fujiwara^Fuzzpilz^GandalfTheGrey^Gerif^Grocat^Guspav^Halden The Borch shooter^Hallequin^Handel^Hardcode^Haupper^Hellequin^Highelf^Highlander^Ibrahim Turgut^Iesu^Ilex^Ingolifs^Invictus^Itchrelief^Jlgx50^JHermes^Jik^john259^JonathanStrange^jpgray^kamov23^Kayback^Khalid Ibn Walid^KON Air^Lady Tanith^Larry Knight^LavaLampMaster^Leprechaun^Lhorkan^Llew2^Maelstorm^Manitas^Maw^MAXHARDMAN^Merentha^Merlkir^Michael Elijah 'ironpants' Bell-Rao^mihoshi^Mirathei^mkeller^Momaw^Morgoth2005^MrCrotch^mtarini^n00854180t^Naridill^Nicholas AltamanokiN^oksir^Oldtimer^Ollieh^oRGy^Oubliette^Patrick 'nox' Gallaty^Pavlov^Rando^Raz^rejenorst^Rjii^Ron Losey^Rorthic^RR raptor^Scion^Seff^shenzay^Shadowmoses^shikamaru 1993^Silver^silverkatana^Sir Prince^Sirgigor^Skyrage^Smoson^sneakey pete^Stefano^Stella^Stonewall382^Talak^Tankai^TG^thelast^The Phoenix^The Pope^The Yogi^Thingy Master^Thormac^Thus Spake Nosferatu^ThVaz^Toygar Birinci^Tuckles^Tul^Ursca^Vaerraent^Vilhjalmr^Volkier^vuk^Wanderer^WhoCares^Winter^Worbah^Yoshiboy^...and many many other wonderful Mount&Blade players!^^(This is only a small sample of all the players who have contributed to the game by providing suggestions and feedback.^This list has been compiled by sampling only a few threads in the Taleworlds Forums.^Unfortunately compiling an exhaustive list is almost impossible.^We apologize sincerely if you contributed your suggestions and feedback but were not listed here, and please know that we are grateful to you all the same...)
-str_credits_10|Paradox Interactive^^President and CEO:^Theodore Bergqvist^^Executive Vice President:^Fredrik Wester^^Chief Financial Officer:^Lena Eriksson^^Finance & Accounting:^Annlouise Larsson^^VP Sales & Marketing US:^Reena M. Miranda^^VP Sales & Marketing EU:^Martin Sirc^^Distribution Manager Nordic:^Erik Helmfridsson^^Director of PR & Marketing:^Susana Meza^^PR & Marketing:^Sofia Forsgren^^Product Manager:^Boel Bermann
-str_credits_11|Logotype:^Jason Brown^^Cover Art:^Piotr Fox Wysocki^^Layout:^Christian Sabe^Melina Grundel^^Poster:^Piotr Fox Wysocki^^Map & Concept Art:^Ganbat Badamkhand^^Manual Editing:^Digital Wordsmithing: Ryan Newman, Nick Stewart^^Web:^Martin Ericsson^^Marketing Assets:^2Coats^^Localization:^S&H Entertainment Localization^^GamersGate:^Ulf Hedblom^Andreas Pousette^Martin Ericson^Christoffer Lindberg
-str_credits_12|Thanks to all of our partners worldwide, in particular long-term partners:^Koch Media (Germany & UK)^Blue Label (Italy & France)^Friendware (Spain)^New Era Interactive Media Co. Ltd. (Asia)^Snowball (Russia)^Pinnacle (UK)^Porto Editora (Portugal)^Hell-Tech (Greece)^CD Projekt (Poland, Czech Republic, Slovakia & Hungary)^Paradox Scandinavian Distribution (Scandinavia)
 str_faction_strength_crushed|crushed
 str_faction_strength_spent_and_wavering|spent and wavering
 str_faction_strength_weakened|weakened
@@ -1664,6 +1355,7 @@ str_beorn_rumor_10|Men of Rohan are our kin, bears are our blood, goblins are ou
 str_beorn_rumor_11|Turn into bears? Of course we don't. Who told you that? Ha ha ha!
 str_beorn_rumor_12|Beorn was a great man. No, not a man, a giant!
 str_beorn_rumor_13|*GROWLS*   Do you have any honey?
+str_beorn_rumor_14|Ne vous promenez pas tout seul dans les montagnes ! Les ours et les loups restent à distance des gros groupes d'hommes. Mais la fin - ou de sombres esprits, comme disent certains, peuvent les pousser à vous attaquer.
 str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
 str_lorien_rumor_2|Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!
 str_lorien_rumor_3|The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.
@@ -1684,12 +1376,13 @@ str_imladris_rumor_8|Áva rucë! The Eldar have taken arms to fight the enemy al
 str_imladris_rumor_9|I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours.
 str_woodelf_rumor_begin|An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey.
 str_woodelf_rumor_2|Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves.
-str_woodelf_rumor_3|Darknes and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light.
+str_woodelf_rumor_3|L'ombre et le mal se rependront sur ces bois jadis superbes. À moins qu'ils soient stoppés, ils étoufferont tout espoir et toute lumière.
 str_woodelf_rumor_4|Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?
 str_woodelf_rumor_5|Shhh, no dhínen! There may be orcs lurking around. We must be on guard!
 str_woodelf_rumor_6|*stares at you, obviously annoyed by your presence*
-str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerrer's spies are everywhere.
+str_woodelf_rumor_7|Oduleg hi am man theled ? Nous avons besoin de connaître la raison de votre présence. Les espions du Sorcier sont partout.
 str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
+str_woodelf_rumor_9|L'ombre de Dol Guldur se répand. De noires créatures ont été aperçues dans les bois, nos avant-postes attaqués, des chasseurs disparaissent et nous ne les revoyons plus. Notre patrouilles comptent maintenant au moins 35 soldats, notre peur est de cette taille !
 str_dale_rumor_begin|First there was the dragon, now this...
 str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
 str_dale_rumor_3|Ever since the defeat of the dragon, we know how to look for the enemy's weak spot.
@@ -1970,7 +1663,7 @@ str_tld_spear_hit|Ouch!
 str_fullname_region_unknown|an unnamed region, somewhere in Middle Earth
 str_fullname_region_pelennor|Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor
 str_fullname_region_subfac_pelargir|the Fiefdom of Lebennin, part of the Realm of Gondor
-str_fullname_region_subfac_dol_amroth|Belfalas, the costal region in the Shouth of Gondor
+str_fullname_region_subfac_dol_amroth|Belfalas, la région côtière du sud du Gondor
 str_fullname_region_subfac_ethring|Ringló Vale, a valley of the Realm of Gondor
 str_fullname_region_subfac_lossarnach|the Fiefdom of Lossarnach, also known as the Vale of Flowers, part of the Realm of Gondor
 str_fullname_region_subfac_pinnath_gelin|the Green Hills of Pinnath Gelin, a region in the Realm of Gondor
@@ -2002,7 +1695,7 @@ str_fullname_region_emyn_muil|Emyn Muil, the rocky hills above the inflow of the
 str_fullname_region_misty_mountains|the foothills of Misty Mountains
 str_fullname_region_lorien|Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow
 str_fullname_region_anduin_banks|the valley of Anduin, between Misty Mountains and Mirkwood
-str_fullname_region_n_mirkwood|the dense forests of northen Mirkwood, home of the Woodelves
+str_fullname_region_n_mirkwood|les denses forêts du nord de Mirkwood, terre des Elfes sylvains
 str_fullname_region_s_mirkwood|the dense forest of southern Mirkwood, said to be infested by strange creatures
 str_fullname_region_above_mirkwook|Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North
 str_fullname_region_grey_mountains|the foothills of Grey Mountains, where Dwarves dwell
@@ -2035,10 +1728,6 @@ str_shortname_region_dead_marshes|the Dead Marshes
 str_shortname_region_isengard|the plains around Isengard
 str_shortname_region_fangorn|Fangorn
 str_shortname_region_brown_lands|the Brown Lands
-str_fullname_region_dagorlad|Dagorlad
-str_fullname_region_n_undeep|the North Undeep
-str_fullname_region_s_undeep|the South Undeep
-str_fullname_region_emyn_muil|Emyn Muil
 str_shortname_region_misty_mountains|the foothills of Misty Mountains
 str_shortname_region_lorien_|Lorien
 str_shortname_region_anduin_banks_|the valley of Anduin
@@ -2091,3 +1780,97 @@ str_trait_title_battle_scarred|Battle Scars
 str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
 str_trait_title_fell_beast|Fell Beast
 str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_wound_head|un coup dur à la tête
+str_wound_chest|quelques côtes fêlées
+str_wound_arm|un bras estropié
+str_wound_leg|une jambe estropiée
+str_gondor_gift0|fruits frais et vin
+str_gondor_gift1|riche tissu teint
+str_gondor_gift2|Tomes anciens et arbres généalogiques
+str_gondor_gift3|Épices et encens
+str_gondor_gift4|Cors de guerre d'Auroch
+str_dwarf_gift0|Bière forte et sels minéraux
+str_dwarf_gift1|Pelles et haches trempées
+str_dwarf_gift2|Harpes et flûtes
+str_dwarf_gift3|Robes brodées de fil d'or et de pierres précieuses
+str_dwarf_gift4|Merveilleux bijoux
+str_rohan_gift0|Hydromel et cidre
+str_rohan_gift1|Tuniques brodées et ceintures cloutées en argent
+str_rohan_gift2|Torques d'or et cors à boisson
+str_rohan_gift3|Beau carapaçon de cheval
+str_rohan_gift4|Chevaux du Rohan
+str_mordor_gift0|Bière légère tourbée
+str_mordor_gift1|Huile de Snaga
+str_mordor_gift2|Larves de mouche du Mordor
+str_mordor_gift3|Obsidienne d'Orodruin
+str_mordor_gift4|Esclaves fermiers
+str_isengard_gift0|Viande humaine séchée
+str_isengard_gift1|chaines de fer noire
+str_isengard_gift2|Instruments de torture
+str_isengard_gift3|Verrerie d'alchimiste
+str_isengard_gift4|Petits anneaux de Saroumane
+str_lorien_gift0|Graines, noix et baies
+str_lorien_gift1|Lanternes froides et cordes solides
+str_lorien_gift2|Lembas
+str_lorien_gift3|Ceintures d'argent et broches
+str_lorien_gift4|Capes elfiques
+str_imladris_gift0|Pain blanc et beurre d'herbes
+str_imladris_gift1|Verrerie en cristal
+str_imladris_gift2|Miruvor
+str_imladris_gift3|Bannières brodées et cors incrustés d'argent
+str_imladris_gift4|Plantes médicinales et onguents
+str_woodelf_gift0|Douces peaux d'animaux
+str_woodelf_gift1|Pointes de flèches et archerie
+str_woodelf_gift2|Lances de chasse
+str_woodelf_gift3|Oiseaux de proie entraînés
+str_woodelf_gift4|Gobelets d'Or Rouge
+str_dale_gift0|Pierres semi-précieuses et perles de verre
+str_dale_gift1|Codex de saga héroïques
+str_dale_gift2|Vin du Dorwinion
+str_dale_gift3|Fourrures de luxe
+str_dale_gift4|Jouets et instruments complexes
+str_harad_gift0|Figues et grenades
+str_harad_gift1|Colliers de guerriers
+str_harad_gift2|Ivoire découpée
+str_harad_gift3|Vin de serpent sacré
+str_harad_gift4|Statues du Serpent d'Or
+str_rhun_gift0|Outres
+str_rhun_gift1|Encre de tatouage
+str_rhun_gift2|Coiffe à cornes et bois
+str_rhun_gift3|Fouets en crins de chevaux
+str_rhun_gift4|Lait et viande de cheval\n
+str_khand_gift0|Épices colorées
+str_khand_gift1|Rouleaux de soie
+str_khand_gift2|Faucons de chasse
+str_khand_gift3|Lingots d'aciers
+str_khand_gift4|Masques sacrés de guerriers
+str_umbar_gift0|Huîtres et sel de mer
+str_umbar_gift1|Peignes en os de baleine et hameçons de pêche
+str_umbar_gift2|Esclaves de plaisance
+str_umbar_gift3|Cartes maritimes des Mers du Sud
+str_umbar_gift4|Mystérieux schémas númenóréens
+str_moria_gift0|Bière naine putride
+str_moria_gift1|Charbon
+str_moria_gift2|Vers luminescents
+str_moria_gift3|Perles noires
+str_moria_gift4|Débris de métaux nains
+str_guldur_gift0|Liqueur noire
+str_guldur_gift1|Vins de torture empoisonnés
+str_guldur_gift2|Cages à roux d'esclaves
+str_guldur_gift3|Oeufs d'araignées géantes
+str_guldur_gift4|Livres de magie noire
+str_gundabad_gift0|Piercings d'os
+str_gundabad_gift1|Peintures de guerre protectrices
+str_gundabad_gift2|Lard de nain bouilli
+str_gundabad_gift3|Idoles momifiées
+str_gundabad_gift4|Wargs noire
+str_dunland_gift0|Fromage de chèvre puant
+str_dunland_gift1|Couteaux sacrificiels en silex
+str_dunland_gift2|Anneaux de bras en bronze
+str_dunland_gift3|Chèvres
+str_dunland_gift4|Crânes et griffes de loups
+str_beorn_gift0|Gâteaux de miel et hydromel
+str_beorn_gift1|Cire d'abeille et tissu de chanvre
+str_beorn_gift2|Ruches
+str_beorn_gift3|Colliers d'ambre
+str_beorn_gift4|Poneys bien entraînés
