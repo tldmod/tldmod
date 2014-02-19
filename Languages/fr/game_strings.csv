@@ -1,46 +1,46 @@
 str_yes|Oui.
 str_no|Non.
 str_noone|personne
-str_s50_and_s51|{s50} Et {s51}
-str_s5_s_party| {s5}'s Troupe
-str_s5_s_host| {s5}'s Hôte
-str_given_by_s1_at_s2|Donner par {s1} à {s2}
-str_given_by_s1_in_wilderness|Donner par {s1} tandis que dans les champs
+str_s50_and_s51|{s50} et {s51}
+str_s5_s_party| Troupe de {s5}
+str_s5_s_host| Ost de {s5}
+str_given_by_s1_at_s2|Donné par {s1} à {s2}
+str_given_by_s1_in_wilderness|Donné par {s1} tandis que dans les champs
 str_s7_raiders|{s7} Voleurs
 str_bandits_eliminated_by_another|Les bandits ont été éliminé par une autre troupe.
-str_msg_battle_won|Bataille gagnée! Appuyez sur la touche tabulation pour quitter...
-str_tutorial_map1|Vous vous voyez actuellement sur le plan terrestre. Faites un clic gauche sur la carte pour déplacer votre groupe à cet endroit, entrer dans la ville sélectionnée, ou de poursuivre le groupe sélectionnée. Le temps s'arrête sur le plan terrestre si votre troupe ne bouge pas, en attente ou au repos. Pour attendre n'importe où, simplement appuyez et maintenez la barre d'espace.
+str_msg_battle_won|Bataille gagnée ! Appuyez sur la touche tabulation pour quitter...
+str_tutorial_map1|Vous voyez actuellement la carte du monde. Faites un clic gauche sur la carte pour déplacer votre groupe à cet endroit, entrer dans la ville sélectionnée, ou poursuivre le groupe sélectionnée. Le temps s'arrête  si votre troupe ne bouge pas, est en attente ou au repos. Pour attendre n'importe où, simplement appuyez et maintenez la barre d'espace.
 str_accept|Accepter
-str_charge|Ordre
+str_charge|Charge
 str_color|Couleur
-str_flip_horizontal|Retouner Horizontal
-str_flip_vertical|Retourner Vertical
-str_hold_fire|Hold Fire (Je ne suis pas sûr donc je préfère laisser tel quel)
-str_blunt_hold_fire|Blunt / Hold Fire(Je ne suis pas sûr donc je préfère laisser tel quel)
+str_flip_horizontal|Renversement horizontal
+str_flip_vertical|Renversement vertical
+str_hold_fire|Maintenez le tir
+str_blunt_hold_fire|Maintenez le tir
 str_tutorial_ammo_refilled|Munitions remplies.
-str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforcement Harad. Criant son crie de guerre, il éperonna son cheval vers l'avant, et mena ses hommes loyaux à une féroce bataille.
-str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de chevaux montés et d'archers quand plus avant à l'affût vient une alerte qu'une force de mauvais hommes aux visages sombres approchent. Ce sont les redoutés Númenóréens noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
-str_custom_battle_3|Le seigneur Grimbold of Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, Puisque les assiégeants se preparent pour un assaut final sur les murs, il doit tenir les murs avec courage et avec l'acier briant.
-str_custom_battle_4|Quand les éclaireurs informent le seigneur Grainwad d'une approche d'une bande armé du Rhun, Il décide de préparer rapidement les défenses du camp et d'essayer de tenir contre un nombre supérieur.
-str_custom_battle_5|Ugluk a amené ses féroces orksies dans l'ouest avec la promesse de pillage. S'il peut faire tomber cette forteresse naine aujourd'hui, ses maîtres dans Barad-Dur seront extrêmement satisfait.
-str_custom_battle_6|Ugluk et ses groupes de pilleurs orques étaient aussi vif que possible dans la fuite des patrouilles elfes. Mais les bonnes fortunes ne peuvent durer éternellement, and it seems like filthy paleskins will have their share now.
-str_custom_battle_7|Les corsaires ont posé leur camp sur les rivages du Gondor! Comment osent-ils?! Allons les frapper avant qu'ils ne reçoivent des renforcements et rejetez les à la mer, là où est leur place.
-str_finished|(Finished)
-str_delivered_damage|Infligés {reg60} dommages.
-str_archery_target_hit|Distance: {reg61} yards. Score: {reg60}
-str_use_baggage_for_inventory|Utilisez votre bagage pour accéder à l'inventaire durant la bataille (c'est à votre position de départ).
+str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforts du Harad. Poussant son cri de guerre, il éperonne son cheval vers l'avant, et mène ses hommes loyaux à une féroce bataille.
+str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de cavaliers et d'archers,  quand plus avant vient une alerte qu'une force de mauvais hommes aux visages sombres approchent. Ce sont les redoutés Númenóréens Noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
+str_custom_battle_3|Le seigneur Grimbold du Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, puisque les assiégeants se préparent pour un assaut final des murs, il doit tenir avec son courage son acier brillant.
+str_custom_battle_4|Alors que les éclaireurs informent le seigneur Breanhelm de l'approche d'une bande armé de Rhûn, Il décide de préparer rapidement les défenses du camp et d'essayer de tenir contre un ennemi supérieur en nombre.
+str_custom_battle_5|Ugluk a amené ses féroces Orques dans l'Ouest, avec une promesse de pillage. S'il peut faire tomber cette forteresse naine aujourd'hui, ses maîtres de Barad-Dûr seront extrêmement satisfaits.
+str_custom_battle_6|Ugluk et ses groupes de pilleurs orques étaient aussi vifs que possible en fuyant les patrouilles elfes. Mais les bonnes fortunes ne peuvent durer éternellement,  et il semble que les sales peaux-pâles aient maintenant leur part.
+str_custom_battle_7|Les Corsaires ont posé leur camp sur les rivages du Gondor ! Comment osent-ils ?! Allons les frapper avant qu'ils ne reçoivent des renforcements et rejetons-les à la mer, là où est leur place.
+str_finished|(Terminé)
+str_delivered_damage|{reg60} dommages infligés.
+str_archery_target_hit|Distance : {reg61} yards. Score : {reg60}
+str_use_baggage_for_inventory|Utilisez votre bagage pour accéder à l'inventaire durant la bataille (elle se trouve à votre position de départ).
 str_cant_use_inventory_now|Impossible d'accéder à l'inventaire maintenant.
-str_cant_use_inventory_arena|Impossible d'accéder à l'inventaire dans l'arène. [Remarque : c'est arène ou zone vous pensez ?]
+str_cant_use_inventory_arena|Impossible d'accéder à l'inventaire dans l'arène.
 str_cant_use_inventory_disguised|Impossible d'accéder à l'inventaire lorsque vous êtes déguisé.
 str_cant_use_inventory_tutorial|Impossible d'accéder à l'inventaire dans le camp d'entraînement.
-str_1_denar|1 Point de ressource.
-str_reg1_denars|{reg1} Points de ressource.
+str_1_denar|1 Point de Ressource.
+str_reg1_denars|{reg1} Points de Ressource.
 str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Jan)
 str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Fev)
 str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Mar)
 str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1 (Avr)}
 str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (Mai)
-str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (Jun)
+str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (Juin)
 str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (Jul)
 str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (Août)
 str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (Sep)
@@ -48,51 +48,51 @@ str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (Oct)
 str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (Nov)
 str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (Dec)
 str_calendar_spec_day_1|T.A.{reg2}, Yestarë (Premier Jour)
-str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Jour de printemps)
-str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Jour de milieu de l'année)
-str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (Jour de récolte)
+str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Jour du printemps)
+str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Jour du milieu de l'année)
+str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (Jour des récoltes)
 str_calendar_spec_day_5|T.A.{reg2}, Mettarë (Dernier Jour)
-str_town_nighttime| C'est tard la nuit.
+str_town_nighttime|Il est tard la nuit.
 str_door_locked|La porte est verrouillée.
-str_castle_is_abondened|Le château semble desert.
-str_town_is_abondened|La ville n'a pas de garnison pour être defendue.
-str_place_is_occupied_by_player|La place est tenue par vos troupes.
-str_place_is_occupied_by_enemy|La place est tenue par des troupes ennemies.
-str_place_is_occupied_by_friendly|La place est tenue par des troupes alliées.
-str_do_you_want_to_retreat|Êtes vous sûr de vouloir vous replier?
+str_castle_is_abondened|Le château semble désert.
+str_town_is_abondened|La ville n'a pas de garnison qui la défend.
+str_place_is_occupied_by_player|L'endroit est tenu par vos troupes.
+str_place_is_occupied_by_enemy|L'endroit est tenu par des troupes ennemies.
+str_place_is_occupied_by_friendly|L'endroit est tenu par des troupes alliées.
+str_do_you_want_to_retreat|Êtes-vous sûr de vouloir vous replier?
 str_give_up_fight|Abandonner le combat?
-str_do_you_wish_to_leave_tutorial|Voulez vous quitter le tutoriel?
-str_do_you_wish_to_surrender|Voulez vous vous rendre?
-str_can_not_retreat|Impossible de se replier, des ennemis sont proches!
+str_do_you_wish_to_leave_tutorial|Voulez vous quitter le tutoriel ?
+str_do_you_wish_to_surrender|Voulez-vous vous rendre ?
+str_can_not_retreat|Impossible de se replier, des ennemis sont proches !
 str_s1_joined_battle_enemy|{s1} a rejoint la bataille dans le camp adverse.
 str_s1_joined_battle_friend|{s1} a rejoint la bataille à vos côtés.
-str_entrance_to_town_forbidden|Les gardes de la ville sont à l'affût d'intrus et il semble que vous ne soyez pas capable de passer les portes inaperçu.
-str_sneaking_to_town_impossible|Les gardes de la ville sont en alerte. Vous ne serez pas capable de vous faufiler par ces portes peu importe votre déguisement.
-str_battle_won|Vous avez gagné la bataille!
-str_battle_lost|Vous avez perdu la bataille!
-str_player_down|Vous avez été assomé, mais vos troupes combattent!
-str_attack_walls_success|Après un combat sanglant, vos braves soldats ont réussis à s'emparer des murs ennemis.
-str_attack_walls_failure|Vos soldats sont tombés par vagues en attaquant les murs, et le peu qu'il restait en vie ont vite été en déroute et on pris la fuite, on ne les reverra pas.
-str_attack_walls_continue|Les deux camps ce sont battus à égale valeur à la suite d'une bataille sanglante. Malgré les efforts de vos troupes, le château est encore aux mains de l'ennemi.
-str_order_attack_success|Vos hommes ont combattus bravement et vaincus l'ennemi.
-str_order_attack_failure|Vous regardez la bataille désespéré puisque vos soldats sont balayés par l'ennemi, puis vous entraînez quelques survivants avec vous en déroute.
-str_order_attack_continue|Malgré un champ de bataille étendu, vos troupes ont été incapables de remporter une victoire décisive.
-str_join_order_attack_success|Vos soldats ont bien combattus aux côtés de vos alliés, partageant la gloire puisque vos ennemis sont vaincus.
-str_join_order_attack_failure|Vous regardez la bataille désespéré puisque vos soldats sont balayés par l'ennemi, puis vous entraînez quelques survivants avec vous en déroute.
-str_join_order_attack_continue|Malgré un champ de bataille étendu,ni vos troupes ni celles de votre allié n'ont été capable de remporter une victoire décisive sur l'ennemi. 
-str_siege_defender_order_attack_success|Les hommes de la garnison protègent leurs murs avec habilité et courage, brisez l'assaut ennemi et retournez habilement la défaite en une déroute complète.
-str_siege_defender_order_attack_failure|L'assaut tourne rapidement en un bain de sang. Les vaillants efforts sont vains; la garnison débordée ne peut tenir les murs, et l'ennemi passe tout les défenseurs au fil de l'épée. 
+str_entrance_to_town_forbidden|Les gardes de la ville sont à l'affût d'intrus et il semble que vous ne pussiez pas passer les portes inaperçu.
+str_sneaking_to_town_impossible|Les gardes de la ville sont en alerte. Vous ne serez pas capable de vous faufiler par ces portes, quelque soit votre déguisement.
+str_battle_won|Vous avez gagné la bataille !
+str_battle_lost|Vous avez perdu la bataille !
+str_player_down|Vous avez été assommé, mais vos troupes combattent !
+str_attack_walls_success|Après un combat sanglant, vos braves soldats ont réussi à s'emparer des murs ennemis.
+str_attack_walls_failure|Vos soldats sont tombés par vagues en attaquant les murs, et le peu qu'il restait en vie a vite été mis en déroute et a pris la fuite. On ne les reverra jamais.
+str_attack_walls_continue|Les deux camps se sont battus à égale valeur à la suite d'une bataille sanglante. Malgré les efforts de vos troupes, le château est encore aux mains de l'ennemi.
+str_order_attack_success|Vos hommes ont combattu bravement et vaincu l'ennemi.
+str_order_attack_failure|Vous regardez la bataille avec désespoir alors que l'ennemi balaie vos soldats, mettant en fuite les derniers survivants.
+str_order_attack_continue|Malgré une embuscade, vos troupes ont été incapables de remporter une victoire décisive.
+str_join_order_attack_success|Vos soldats ont bien combattu aux côtés de vos alliés, partageant la gloire puisque vos ennemis sont vaincus.
+str_join_order_attack_failure|Vous regardez la bataille avec désespoir alors que l'ennemi balaie vos soldats, mettant en fuite les derniers survivants.
+str_join_order_attack_continue|Malgré une embuscade, ni vos troupes ni celles de votre allié n'ont été capables de remporter une victoire décisive.
+str_siege_defender_order_attack_success|Les hommes de la garnison protègent leurs murs avec compétence et courage, brisant l'assaut ennemi et retournant habilement la défaite en une déroute complète.
+str_siege_defender_order_attack_failure|L'assaut tourne rapidement en un bain de sang. Les vaillants efforts sont vains ; la garnison débordée ne peut tenir les murs, et l'ennemi passe les derniers défenseurs au fil de l'épée. 
 str_siege_defender_order_attack_continue|A nouveau, des tentatives sanglantes sur les murs ne parviennent pas à gagner du terrain, mais il reste beaucoup trop d'ennemi pour que les défenseurs puissent proclamer la victoire. Le siège continue.
 str_hero_taken_prisoner|{s1} de {s3} a été fait prisonnier par {s2}.
-str_hero_freed|{s1} de{s3} a été liberé de sa captivité par {s2}.
+str_hero_freed|{s1} de {s3} a été liberé de sa captivité par {s2}.
 str_center_captured|{s2} a pris {s1} de {s3}!
 str_troop_relation_increased|Vos relations avec {s1} se sont améliorées de {reg1} à {reg2}.
 str_troop_relation_detoriated|Vos relations avec{s1} se sont dégradées de {reg1} à {reg2}.
 str_faction_relation_increased|Vos relations avec {s1} se sont améliorées de {reg1} à {reg2}.
 str_faction_relation_detoriated|Vos relations avec {s1} se sont dégradées de {reg1} à {reg2}.
-str_party_gained_morale|Votre camp a gagné {reg1} de moral.
-str_party_lost_morale|Votre camp a perdu {reg1} moral.
-str_qst_follow_spy_noticed_you|L'espion vous a reperé ! Il a couru pour ça!
+str_party_gained_morale|Votre groupe gagne {reg1} de moral.
+str_party_lost_morale|Votre groupe perd {reg1} de moral.
+str_qst_follow_spy_noticed_you|L'espion vous a repéré ! Il part en courant !
 str_father|père
 str_husband|époux
 str_wife|épouse
@@ -103,9 +103,9 @@ str_brother|frère
 str_sister|soeur 
 str_he|Il
 str_she|Elle
-str_s3s_s2|{s3}'s {s2}
-str_s5_is_s51|{s5} is {s51}.
-str_s5_is_the_ruler_of_s51|{s5} est le suzerin de {s51}.
+str_s3s_s2|{s3} de {s2}
+str_s5_is_s51|{s5} est {s51}.
+str_s5_is_the_ruler_of_s51|{s5} est le suzerain de {s51}.
 str_s5_is_a_nobleman_of_s6|{s5} est un noble de {s6}.
 str_relation_mnus_100|Rancunier
 str_relation_mnus_90|Rancunier
@@ -115,13 +115,13 @@ str_relation_mnus_60|Malveillant
 str_relation_mnus_50| Hostile
 str_relation_mnus_40| En colère
 str_relation_mnus_30| Irrité
-str_relation_mnus_20| Grognon [Si vous avez mieux je suis preneur]
+str_relation_mnus_20| Grognon
 str_relation_mnus_10| Suspicieux
 str_relation_plus_0| Indifférent
 str_relation_plus_10| Coopératif
 str_relation_plus_20| Accueillant
 str_relation_plus_30| Favorable
-str_relation_plus_40| Parti Prenant 
+str_relation_plus_40|Favorable
 str_relation_plus_50| Amical
 str_relation_plus_60| Gracieux
 str_relation_plus_70| Sincère
@@ -130,14 +130,14 @@ str_relation_plus_90| Dévoué
 str_relation_mnus_100_ns|{s60} est rancunier envers vous.
 str_relation_mnus_90_ns|{s60} est rancunier envers vous.
 str_relation_mnus_80_ns|{s60} est rancunier envers vous.
-str_relation_mnus_70_ns|{s60} est malveillant envers vous.
-str_relation_mnus_60_ns|{s60} est malveillant envers vous.
+str_relation_mnus_70_ns|{s60} vous déteste.
+str_relation_mnus_60_ns|{s60} vous déteste.
 str_relation_mnus_50_ns|{s60} est hostile envers vous.
 str_relation_mnus_40_ns|{s60} est en colère après vous.
 str_relation_mnus_30_ns|{s60} est irrité.
 str_relation_mnus_20_ns|{s60} est grognon après vous.
 str_relation_mnus_10_ns|{s60} est suspicieux envers vous.
-str_relation_plus_0_ns|{s60} est indifférent.
+str_relation_plus_0_ns|{s60} est indifférent envers vous.
 str_relation_plus_10_ns|{s60} est coopératif avec vous.
 str_relation_plus_20_ns|{s60} est accueillant avec vous.
 str_relation_plus_30_ns|{s60} vous est favorable.
@@ -147,63 +147,63 @@ str_relation_plus_60_ns|{s60} est gracieux avec vous.
 str_relation_plus_70_ns|{s60} est sincère avec vous.
 str_relation_plus_80_ns|{s60} vous est loyal.
 str_relation_plus_90_ns|{s60} vous est dévoué.
-str_relation_reg1| Relation: {reg1}
-str_center_relation_mnus_100|La population vous déteste ardemment 
+str_relation_reg1| Relation : {reg1}
+str_center_relation_mnus_100|La population vous déteste ardemment
 str_center_relation_mnus_90|La population vous déteste intensément
 str_center_relation_mnus_80|La population vous déteste fortement
 str_center_relation_mnus_70|La population vous déteste
-str_center_relation_mnus_60|La population vous est détestable
+str_center_relation_mnus_60|La population vous hait
 str_center_relation_mnus_50|La population est extrêmement hostile envers vous
 str_center_relation_mnus_40|La population est très hostile envers vous
 str_center_relation_mnus_30|La population vous est hostile
 str_center_relation_mnus_20|La population en a après vous
 str_center_relation_mnus_10|La population est opposée à vous
-str_center_relation_plus_0|La population est indifférente
+str_center_relation_plus_0|La population est indifférente à vous
 str_center_relation_plus_10|La population est tolérante avec vous
 str_center_relation_plus_20|La population est coopérative avec vous
-str_center_relation_plus_30|La population vous supporte un peu
-str_center_relation_plus_40|La population vous supporte
-str_center_relation_plus_50|La population vous supporte beaucoup
+str_center_relation_plus_30|La population vous soutient un peu
+str_center_relation_plus_40|La population vous soutient
+str_center_relation_plus_50|La population vous soutient beaucoup
 str_center_relation_plus_60|La population vous est loyale
 str_center_relation_plus_70|La population vous est très loyale
 str_center_relation_plus_80|La population vous est dévouée
 str_center_relation_plus_90|La population vous est fortement dévouée
-str_town_prosperity_0|La pauvreté de la ville de {s60} est irrattrapable 
-str_town_prosperity_10|L'insalubrité de la ville de {s60} est tout sauf inexistante.
-str_town_prosperity_20|La ville de {s60} semble un endroit misérable et désolé.
+str_town_prosperity_0|La pauvreté de la ville de {s60} est irrécupérable
+str_town_prosperity_10|La ville insalubre de {s60} est déserte.
+str_town_prosperity_20|La ville de {s60} semble être un endroit misérable et désolé.
 str_town_prosperity_30|La ville de {s60} semble pauvre et négligée.
-str_town_prosperity_40|La ville de {s60} à l'air en difficulté.
-str_town_prosperity_50|La ville de {s60} n'as pas grand intérêt.
+str_town_prosperity_40|La ville de {s60} a l'air en difficulté.
+str_town_prosperity_50|La ville de {s60} n'est pas de grand intérêt.
 str_town_prosperity_60|La ville de {s60} semble fleurissante.
 str_town_prosperity_70|La ville prospère de {s60} est en pleine effervescence.
 str_town_prosperity_80|La ville de {s60} semble riche et bien entretenue.
-str_town_prosperity_90|La ville de {s60} est opulente et bondé de gens apte à tout faire.
+str_town_prosperity_90|La ville de {s60} est opulente et bondée de gens aptes à tout faire.
 str_town_prosperity_100|La scintillante ville de {s60} étale ouvertement sa grand richesse.
-str_village_prosperity_0|Le pauvre village de {s60} est irrattrapable.
-str_village_prosperity_10|Le village de {s60} à l'air malheureux, pauvre et misérable.
+str_village_prosperity_0|Le pauvre village de {s60} est irrécupérable.
+str_village_prosperity_10|Le village de {s60} a l'air malheureux, pauvre et misérable.
 str_village_prosperity_20|Le village de {s60} semble très pauvre et désolé.
 str_village_prosperity_30|Le village de {s60} semble pauvre et négligé.
 str_village_prosperity_40|Le village de {s60} semble pauvre et quelque peu en difficulté.
-str_village_prosperity_50|Le village de {s60} à l'air banal.
+str_village_prosperity_50|Le village de {s60} a l'air banal.
 str_village_prosperity_60|Le village de {s60} semble être florissant.
 str_village_prosperity_70|Le village de {s60} apparaît comme robuste.
-str_village_prosperity_80|Le village de {s60} à l'air riche et bien entretenu.
-str_village_prosperity_90|Le village de {s60} à l'air très riche et prospère.
-str_village_prosperity_100|Le village de {s60} entouré par de vastes champs fertiles, semble immensément riche.
+str_village_prosperity_80|Le village de {s60} a l'air riche et bien entretenu.
+str_village_prosperity_90|Le village de {s60} a l'air très riche et prospère.
+str_village_prosperity_100|Le village de {s60}, entouré par de vastes champs fertiles, semble immensément riche.
 str_war_report_minus_4|nous sommes sur le point de perdre la guerre
-str_war_report_minus_3|la situation est désolée
+str_war_report_minus_3|la situation semble sombre
 str_war_report_minus_2|les choses ne vont pas très bien pour nous
 str_war_report_minus_1|nous pouvons toujours gagner la guerre si nous nous reprenons 
 str_war_report_0|nous sommes à force égale avec l'ennemi
-str_war_report_plus_1|il est très probable que nous gagnons la guerre
+str_war_report_plus_1|nous avons une bonne chance de gagner la guerre
 str_war_report_plus_2|les choses vont très bien
 str_war_report_plus_3|nous ne devrions avoir aucune difficulté à gagner la guerre
 str_war_report_plus_4|nous sommes sur le point de gagner la guerre
-str_persuasion_summary_very_bad|Vous essayez de convaincre {s50}, mais aucuns de vos arguments n'ont l'air d'y parvenir. Chaque fois que vous commencez à débattre, vous semblez dire quelque chose d'entièrement faux qui vous décrédibilise. Une fois avoir fini de parler vous n'avez pas réussi a rendre votre proposition cohérente, et vous réalisez que vous vous êtes encore plus enfoncé. Sans surprise {s50} n'as pas l'air impressioné.
-str_persuasion_summary_bad|Vous essayez de convaincre {s50}, mais {reg51?she:he} vous discrédite depuis le début. Même vos meilleurs arguments sonnent faux dans vos oreilles. {s50}, également, n'as pas eu une très bonne impression de votre discours.
-str_persuasion_summary_average|{s50} se révèle être un bon orateur à l'esprit vif, et vous n'arrivez pas à répondre quelque chose de concret {reg51?she:he} ne peux pas contredire avec un argument rationnel. En fin de compte, aucun de vous ne parviens à gagner du terrain pendant cette discussion.
-str_persuasion_summary_good|Grâce à la vivacité d'esprit et une argumentation délicate, vous parvenez à exposer votre cause, forçant {s50} à céder sur plusieurs points. Cependant, {reg51?she:he} continue à douter de votre requête.
-str_persuasion_summary_very_good|Vous livrez un discours passionné qui attire toute l'attention tel une poésie. Le monde lui même semble se calmer afin de mieux vous entendre . Les mots utilisés ont touchés {s50} profondément, et {reg51?she:he} semble bien mieux disposer à vous apporter son aide.
+str_persuasion_summary_very_bad|Vous faites de votre mieux pour convaincre {s50}, mais aucun de vos arguments n'ont l'air d'y parvenir. Chaque fois que vous commencez à être logique, vous semblez dire quelque chose d'entièrement faux qui vous décrédibilise. Après avoir fini de parler, vous n'avez pas réussi a former un seul argument cohérent, et vous réalisez que vous vous êtes encore plus enfoncé. Sans surprise {s50} n'as pas l'air impressioné.
+str_persuasion_summary_bad|Vous essayez de convaincre {s50}, mais {reg51?elle:il} vous discrédite depuis le début. Même vos meilleurs arguments sonnent faux à vos propres oreilles. {s50} n'a pas eu une très bonne impression de votre discours.
+str_persuasion_summary_average|{s50} se révèle être un bon orateur à l'esprit vif, et vous n'arrivez pas à répondre quelque chose de concret qu'{reg51?elle:il} ne puisse pas contredire avec un argument rationnel. En fin de compte, aucun de vous ne parvient à gagner du terrain pendant cette discussion.
+str_persuasion_summary_good|Grâce votre vivacité d'esprit et une argumentation soignée, vous parvenez à exposer votre cause, forçant {s50} à céder sur plusieurs points. Cependant, {reg51?elle:il} continue à douter de votre requête.
+str_persuasion_summary_very_good|Vous livrez un discours passionné qui résonne aux oreilles de tout le monde comme une poésie. Le monde lui-même semble se calmer afin de mieux vous entendre. Les mots utilisés ont touché {s50} profondément, et {reg51?elle:il} semble bien mieux disposé à vous apporter son aide.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} d'Erech
@@ -244,25 +244,25 @@ str_surname_37|{s50} le Vif
 str_surname_38|{s50} le Rapide
 str_surname_39|{s50} le Ménestrel
 str_surname_40|{s50} le Gras
-str_surname_41|{s50} Tête-Chaude
-str_number_of_troops_killed_reg1|Nombre de tués: {reg1}
-str_number_of_troops_wounded_reg1|Nombre de blessés: {reg1}
-str_number_of_own_troops_killed_reg1|Nombre d'alliés tués: {reg1}
-str_number_of_own_troops_wounded_reg1|Nombre d'alliés blessés: {reg1}
-str_retreat|Retraite!
+str_surname_41|{s50} la Tête-Chaude
+str_number_of_troops_killed_reg1|Nombre de tués : {reg1}
+str_number_of_troops_wounded_reg1|Nombre de blessés : {reg1}
+str_number_of_own_troops_killed_reg1|Nombre d'alliés tués : {reg1}
+str_number_of_own_troops_wounded_reg1|Nombre d'alliés blessés : {reg1}
+str_retreat|Retraite !
 str_siege_continues|Le combat continue...
-str_casualty_display|Vos pertes: {s10}^Pertes ennemies: {s11}{s12}
+str_casualty_display|Vos pertes : {s10}^Pertes ennemies : {s11}{s12}
 str_casualty_display_hp|^Une blessure vous retire {reg1} points de vie.
 str_quest_log_updated|Le journal de quêtes a été mis à jour...
-str_banner_selection_text|On vous a octroyé le droit de porter une bannière. Votre bannière est la preuve de votre haut rang et de votre fierté. Quelle bannière choisissez-vous?
+str_banner_selection_text|On vous a octroyé le droit de porter une bannière. Votre bannière est la preuve de votre haut rang et de votre fierté. Quelle bannière choisissez-vous ?
 str_retirement_text_1|Vous vous rendez compte un peu tard que votre argent ne suffira pas. Il ne vous a pas fallu longtemps pour gaspiller le peu que vous aviez économisé. Vous faites plusieurs tentatives désespérées pour relancer votre aventure mais en vain. Vous finissez mendiant à {s9}, vivant de l'aumône et de la charité des gens.
-str_retirement_text_2|Vous vous rendez compte un peu tard que votre argent ne suffira pas. Il ne vous a pas fallu longtemps pour gaspiller le peu que vous aviez économisé. Une fois le moindre argent évaporé de vos mains, vous êtes forcé de commencer une vie de crimes dans les ruelles de {s9}, utilisant vos compétences pour gagner un peu d'argent auprès des femmes et des pauvres citadins.
+str_retirement_text_2|Vous vous rendez compte un peu tard que votre argent ne suffira pas. Il ne vous a pas fallu longtemps pour gaspiller le peu que vous aviez économisé. Une fois le moindre argent évaporé de vos mains, vous êtes forcé de commencer une vie de crimes dans les ruelles de {s9}, utilisant vos compétences pour dévaliser le peu d'argent des femmes et des pauvres citadins.
 str_retirement_text_3|Vous vous rendez compte un peu tard que votre argent ne suffira pas. Il ne vous a pas fallu longtemps pour gaspiller le peu que vous aviez économisé. Vous finissez en vagabond sans le sou, allant de taverne en taverne pour obtenir à boire auprès d'indulgents patrons en les régalant avec des histoires de guerre que personne ne croit jamais.
-str_retirement_text_4|L'argent que vous avez économisé n'a pas duré longtemps, mais vous réussissez à en rassembler assez pour acheter un terrain près du village de {s7}. Vous devenez un fermier libre et vous commencez bientôt à attirer des {épouses potentielles/maris potentiels}. Au fil du temps, les villageois viennent à vous traiter comme leur héros local. Vous avez toujours une place d'honneur dans les fêtes et vos exploits sont racontés dans les pubs et les tavernes afin que les enfants se souviennent de vous pour toujours.
-str_retirement_text_5|L'argent que vous avez économisé n'a pas duré lontemps, mais vous en avez assez pour acheter une petite taverne à {s9}. Bien que les locaux se méfient de vous au début, ils ne tardent pas à vous accepter dans leur milieu. Au fil du temps, votre taverne devient un lieu festif, populaire et un lieu rencontre. Les gens viennent de loin pour y manger et y séjourner en raison de votre notoriété et des histoires épiques que vous racontez à propos de votre passé d'aventurier.
+str_retirement_text_4|L'argent que vous avez économisé n'a pas duré longtemps, mais vous réussissez à en rassembler assez pour acheter un terrain près du village de {s7}. Vous devenez un fermier libre et vous commencez bientôt à attirer des {épouses potentielles/maris potentiels}. Au fil du temps, les villageois viennent à vous traiter en héros local. Vous avez toujours une place d'honneur dans les fêtes et vos exploits sont racontés dans les bars et les tavernes afin que les enfants se souviennent de vous pour toujours.
+str_retirement_text_5|L'argent que vous avez économisé n'a pas duré lontemps, mais vous en avez assez pour acheter une petite taverne à {s9}. Bien que les locaux se méfient de vous au début, ils ne tardent pas à vous accepter dans leur milieu. Au fil du temps, votre taverne devient un lieu festif, populaire et un lieu de rencontre. Les gens viennent de loin pour y manger et y séjourner en raison de votre notoriété et des histoires épiques que vous racontez à propos de votre passé d'aventurier.
 str_retirement_text_6|Vous avez sagement économisé durant votre carrière et à présent, votre argent et votre intelligence vous permettent de faire d'excellents investissements pour cimenter votre futur. Après avoir acheté plusieurs magasins et entrepôts à {s9}, votre sens des affaires fait de vous l'un des marchands les plus importants de la ville et vous devenez bientôt {un homme fortuné connu/une femme fortunée connue} aussi bien pour votre empire commercial que pour vos exploits au combat.
-str_retirement_text_7|En tant que noble, même de moindre importance, votre futur est quasiment assuré. Vous vous installez dans votre fief de {s7}, administrant le village et ses alentours, rendant la justice, accomplissant ainsi votre devoir de seigneur. De temps en temps, votre suzerain fait appel à vous pour l'aider dans ses campagnes militaires mais cela ne dure jamais très longtemps et vous ne partez plus à l'aventure comme auparavant. Vous avez déjà fait votre fortune. Avec votre propre hall et votre patrimoine, il existe peu de choses dont vous ayez vraiment besoin et que vos revenus ne puissent vous permettre d'acquérir.
-str_retirement_text_8|Vous avez sans aucun doute réussi à assurer votre avenir. Votre vaste patrimoine et vos richesses amassées durant vos aventures vous garantissent un avenir aisé. Vous retirant dans votre domaine de {s8}, vous échangez votre vie d'aventurier pour la politique et vous vous imposez rapidement comme l'un des plus puissants du royaume de votre suzerain. Avec les intrigues auxquelles vous participez, vos propres forêts où chasser, un hall pour festoyer et une centaine d'histoires de guerre épiques à raconter, vous n'aurez pas de mal à tirer le meilleur des années qui suivent.
+str_retirement_text_7|En tant que noble avec terre, même d'importance moindre, votre futur est quasiment assuré. Vous vous installez dans votre fief de {s7}, administrant le village et ses alentours, rendant la justice, accomplissant ainsi votre devoir de seigneur. De temps en temps, votre suzerain fait appel à vous pour l'aider dans ses campagnes militaires mais cela ne dure jamais très longtemps et vous ne partez plus à l'aventure comme auparavant. Vous avez déjà fait fortune. Avec votre propre hall et votre patrimoine, il existe peu de choses dont vous ayez vraiment besoin et que vos revenus ne puissent vous permettre d'acquérir.
+str_retirement_text_8|Vous avez sans aucun doute réussi à assurer votre avenir. Votre vaste patrimoine et vos richesses amassées durant vos aventures vous garantissent un avenir aisé. Vous retirant dans votre domaine de {s8}, vous échangez votre vie d'aventurier pour la politique et vous vous imposez rapidement comme l'un des plus puissants du royaume de votre suzerain. Avec les intrigues auxquelles vous participez, vos propres forêts où chasser, un hall pour festoyer et une centaine d'histoires de guerre épiques à raconter, vous n'aurez pas de mal à tirer le meilleur des années qui arrivent.
 str_retirement_text_9|Comme récompense pour vos bons et loyaux services, votre suzetain a décrété que votre titre serait héréditaire, vous faisant rejoindre la grande noblesse du royaume. Vous devenez ainsi baron de {s7} et l'un des plus proches conseillers du souverain. Votre renommée accentue davantage votre influence aussi bien que votre puissance politique. A présent, vous occupez vos journées aux jeux du pouvoir, administrant vos vastes possessions tout en vous rappelant les temps anciens de l'aventure et de la gloire.
 str_retirement_text_10|Bien que vous ayez eu des débuts humbles, votre suzerain vous tient en haute estime et une onde de choc a traversé le royaume lorsqu'il vous a donné le titre de {comte/comtesse} de {s9}. De vastes possessions et une immense fortune sont maintenant vôtres. Vous devenez rapidement le meilleur conseiller du souverain qui vous traite en égal et vous charge des missions les plus importantes dans le royaume. Vous possédez un trône dans votre splendide palais, ce qui fait de vous l'un des personnages les plus importants de la Terre du Milieu.
 str_loot_village|attaquer les villageois innocents
@@ -275,7 +275,7 @@ str_excessive_casualties|sacrifier un grand nombre de nos soldats
 str_surrender|se rendre à l'ennemi
 str_flee_battle|fuir la bataille
 str_pay_bandits|payer des bandits
-str_fail_quest|vous avez échoué dans une quête pour laquelle nous avons donné notre parole d'honneur
+str_fail_quest|vous avez échoué dans une quête que nous avions entreprise à cause de l'honneur
 str_squander_money|dépenser l'argent qui nous a été donné en dépôt
 str_murder_merchant|nous impliquer dans un meurtre de sang froid
 str_round_up_serfs|rassembler des serfs au nom d'un noble

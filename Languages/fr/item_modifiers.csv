@@ -2,17 +2,17 @@ imod_plain|Plaine %s
 imod_cracked|%s craquelé
 imod_rusty|%s rouillé
 imod_bent|%s tordu
-imod_chipped|%s ébréché %s
-imod_battered|%s bosselé %s
-imod_poor|Faible %s
-imod_crude|Simple %s
+imod_chipped|%s ébréché
+imod_battered|%s bosselé
+imod_poor|%s médiocre
+imod_crude|%s simple
 imod_old|Vieux %s
 imod_cheap|%s bon marché
 imod_fine|Excellent %s
 imod_well_made|%s bien fait
 imod_sharp|%s aiguisé
 imod_balanced|%s équilibré
-imod_tempered|%s tempéré
+imod_tempered|%s trempé
 imod_deadly|%s mortel
 imod_exquisite|%s exquis
 imod_masterwork|Chef d’œuvre %s
@@ -26,18 +26,18 @@ imod_sturdy|%s solide
 imod_thick|%s robuste
 imod_hardened|%s endurci
 imod_reinforced|%s résistant
-imod_superb|Trophé %s
-imod_lordly|Noble %s
+imod_superb|Superbe %s
+imod_lordly|%s de noble
 imod_lame|%s estropié
 imod_swaybacked|%s ensorcelé
 imod_stubborn|%s têtu
 imod_timid|%s craintif
 imod_meek|%s recouvert de sang
 imod_spirited|%s courageux
-imod_champion|Champion %s
+imod_champion|%s de champion
 imod_fresh|%s frais
-imod_day_old|%s frais d'un jour
-imod_two_day_old|%s frais de deux jours
+imod_day_old|%s frais du jour
+imod_two_day_old|%s datant de deux jours
 imod_smelling|%s puant
 imod_rotten|%s pourri
 imod_large_bag|Grand sac de %s 

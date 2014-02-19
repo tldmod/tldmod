@@ -3341,7 +3341,9 @@ scripts = [
 # This script is called from the game engine when the player reaches the shore with a ship.
 # INPUT: pos0 = disembark position
 ("game_on_disembark",
-   [(question_box,"@Do you want to disembark?"),
+   [#swy-- add some additional sexy guards to the callback, 69 means true!
+    (assign, "$do_you_want_to_disembark_called", 69),
+    (question_box,"@Do you want to disembark?"),
 #   (jump_to_menu, "mnu_disembark"),
 ]),
 

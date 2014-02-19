@@ -255,6 +255,10 @@ simple_triggers = [
     (try_for_parties, ":cur_party"),
       (gt, ":cur_party", "p_scribble_242"), #avoid static map parties
       (party_is_active, ":cur_party"),
+      
+      #swy-- don't mess with the player!
+      (neq,":cur_party", "p_main_party"),
+      
       #remove empty parties
       (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
       (try_begin),
@@ -1863,6 +1867,11 @@ simple_triggers = [
 ## (54) question box (yes/no) on global map
 (ti_question_answered, 
    [(store_trigger_param_1,":answer"),
+   
+    #swy-- add guards, this doesn't seem like it's protected to last, murphy's law! 69 is true in my book!
+    (eq, "$do_you_want_to_disembark_called", 69),
+    (assign, "$do_you_want_to_disembark_called", -1),
+    
     (try_begin),
 		(eq,":answer",0), # yes on "Do you want to disembark?" question box
 		(assign, "$g_player_icon_state", pis_normal),
