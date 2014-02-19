@@ -4,20 +4,20 @@ mno_start_evil|the TWILIGHT of Man
 mno_go_bback|Go Back
 menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
 mno_go_forth|          Go forth upon you chosen path...
-menu_start_game_3|^^^^^^^^Choose your scenario:
-mno_custom_battle_scenario_1|           Skirmish, Gondor factions vs Harad     .
-mno_custom_battle_scenario_12|            Choose factions for battle             .
-mno_custom_battle_scenario_3|            Skirmish, Elves vs Black Numenoreans   .
-mno_custom_battle_scenario_4|            Helms Deep Defense, Rohan vs Isengard  .
-mno_custom_battle_scenario_5|            Skirmish, North factions vs Rhun       .
-mno_custom_battle_scenario_6|            Siege Attack, Orcs vs Dwarves          .
-mno_custom_battle_scenario_7|            Ambush, Orcs vs Mirkwood               .
-mno_custom_battle_scenario_11|            Test Battles (Tune Balancing!)        .
-mno_custom_battle_scenario_10|            Scenery test battle                    .
-mno_troll_battle_scenario|            Test Troll Battles                     .
-mno_warg_battle_scenario|            Test Warg Battles                      .
-mno_build_your_own_scene|            ** Build your own scene for TLD **     .
-mno_go_back_spc|                              Go back              .
+menu_start_game_3            |^^^^^^^^Choose your scenario:
+mno_custom_battle_scenario_1 |Skirmish, Gondor factions vs Harad
+mno_custom_battle_scenario_12|Choose factions for battle
+mno_custom_battle_scenario_3 |Skirmish, Elves vs Black Numenoreans
+mno_custom_battle_scenario_4 |Helms Deep Defense, Rohan vs Isengard
+mno_custom_battle_scenario_5 |Skirmish, North factions vs Rhûn
+mno_custom_battle_scenario_6 |Siege Attack, Orcs vs Dwarves
+mno_custom_battle_scenario_7 |Ambush, Orcs vs Mirkwood
+mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
+mno_custom_battle_scenario_10|Scenery test battle
+mno_troll_battle_scenario    |Test Troll Battles
+mno_warg_battle_scenario     |Test Warg Battles
+mno_build_your_own_scene     |**Build your own scene for TLD **
+mno_go_back_spc              |Go back
 menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
 mno_go_back_dot|Go back.
 mno_view_upkeep_costs|View upkeep costs.

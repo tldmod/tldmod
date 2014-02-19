@@ -207,21 +207,21 @@ game_menus = [
 
 #	  (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
       ],
-   [("custom_battle_scenario_1" ,[], "___________Skirmish, Gondor factions vs Harad_____.",
+   [("custom_battle_scenario_1" ,[], "Skirmish, Gondor factions vs Harad",
 		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
 	]+concatenate_scripts([[
-	("custom_battle_scenario_12",[],"____________Choose factions for battle_____________.",
+	("custom_battle_scenario_12",[],"Choose factions for battle",
 		[(assign, "$g_custom_battle_scenario",16),(jump_to_menu, "mnu_custom_battle_choose_faction1"),]),
 	] for ct in range(cheat_switch)])+[	
-	("custom_battle_scenario_3" ,[],"____________Skirmish, Elves vs Black_Numenoreans___.",
+	("custom_battle_scenario_3" ,[],"Skirmish, Elves vs Black_Numenoreans",
 		[(assign, "$g_custom_battle_scenario", 2),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_4" ,[],"____________Helms Deep Defense, Rohan vs Isengard__.",
+	("custom_battle_scenario_4" ,[],"Helms Deep Defense, Rohan vs Isengard",
 		[(assign, "$g_custom_battle_scenario", 3),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_5" ,[],"____________Skirmish, North factions vs Rhun_______.",
+	("custom_battle_scenario_5" ,[],"Skirmish, North factions vs Rhun",
 		[(assign, "$g_custom_battle_scenario", 4),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_6" ,[(eq, cheat_switch, 1),],"____________Siege Attack, Orcs vs Dwarves__________.",
+	("custom_battle_scenario_6" ,[(eq, cheat_switch, 1),],"Siege Attack, Orcs vs Dwarves",
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("custom_battle_scenario_7" ,[],"____________Ambush, Orcs vs Mirkwood_______________.",
+	("custom_battle_scenario_7" ,[],"Ambush, Orcs vs Mirkwood",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
@@ -233,20 +233,20 @@ game_menus = [
 #		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
 
 	]+concatenate_scripts([[
-	("custom_battle_scenario_11",[],"____________Test Battles (Tune Balancing!)________.",
+	("custom_battle_scenario_11",[],"Test Battles (Tune Balancing!)",
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
-	("custom_battle_scenario_10",[],"____________Scenery test battle____________________.",
+	("custom_battle_scenario_10",[],"Scenery test battle",
 		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("troll_battle_scenario",[],"____________Test Troll Battles_____________________.",
+	("troll_battle_scenario",[],"Test Troll Battles",
 		[(jump_to_menu, "mnu_quick_battle_troll"),]),
-	("warg_battle_scenario",[],"____________Test Warg Battles______________________.",
+	("warg_battle_scenario",[],"Test Warg Battles",
 		[(jump_to_menu, "mnu_quick_battle_wargs"),]),
-	("choose_scene"             ,[],"____________** Scene Chooser **____________________.",
+	("choose_scene"             ,[],"** Scene Chooser **",
 		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]),
 	] for ct in range(cheat_switch)])+[
-    ("build_your_own_scene"     ,[],"____________** Build your own scene for TLD **_____.",
+    ("build_your_own_scene"     ,[],"** Build your own scene for TLD **",
 		[                                         (jump_to_menu, "mnu_build_your_scene"),]),
-    ("go_back_spc"              ,[],"______________________________Go back______________.",[(change_screen_quit)])]
+    ("go_back_spc"              ,[],"Go back",[(change_screen_quit)])]
  ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
