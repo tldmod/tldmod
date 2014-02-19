@@ -203,9 +203,13 @@ game_menus = [
       (assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race
       (assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
       (assign, "$menu_select_any_troop_search_fac", "fac_gondor"), # player's kingdom
-      (assign, "$menu_select_any_troop_search_hero", 0),	
-
-#	  (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
+      (assign, "$menu_select_any_troop_search_hero", 0),
+      
+    # (call_script,"script_TLD_troop_banner_slot_init"), 	  #TLD troops banners
+      
+    #swy-- added unused merlkir illustration here... it looks cool!
+      (set_background_mesh, "mesh_draw_war_starts"),
+      
       ],
    [("custom_battle_scenario_1" ,[], "Skirmish, Gondor factions vs Harad",
 		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
@@ -3336,7 +3340,13 @@ game_menus = [
    "^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?",
    "none",
    [(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_fangorn"), (set_background_mesh, reg10),
-    (troop_get_type,reg5,"trp_player"),],
+    (troop_get_type,reg5,"trp_player"),
+    
+    #swy-- added unused merlkir illustration here... it looks cool!
+    (eq, "$player_looks_like_an_orc", 1),
+    (set_background_mesh, "mesh_draw_lorien_magic"),
+
+    ],
    [("be_quiet_elf",
 	 [(is_between,reg5,tf_elf_begin, tf_elf_end)], "Respect the hatred of the trees. Move along quietly.",
 	 [(assign,"$g_fangorn_rope_pulled", -100), # disable fangorn menu from now on
@@ -3450,7 +3460,7 @@ game_menus = [
 
 #### CAPTURE TROLL MENU
 ( "can_capture_troll",0,"The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in a pool of its blood, it looks tremendously dangerous...",
-  "none",[(set_background_mesh, "mesh_ui_default_menu_window")], [
+  "none",[(set_background_mesh, "mesh_draw_wild_troll")], [
 	("killit",[],"Dispatch it, now. Make sure it dies.",[(jump_to_menu,"$g_next_menu")],),
 	("cageit1",[
 	  (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),

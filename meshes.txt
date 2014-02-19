@@ -1,4 +1,4 @@
-325
+327
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -324,3 +324,5 @@ mesh_defiled_gondor_chest6 0 gondor_chest_saruman_rune 0 0 0 0 0 0 1 1 1
 mesh_defiled_gondor_thigh1 0 gondor_thigh_tear_aa 0 0 0 0 0 0 1 1 1
 mesh_defiled_gondor_thigh2 0 gondor_thigh_tear_ab 0 0 0 0 0 0 1 1 1
 mesh_defiled_gondor_thigh3 0 gondor_thigh_tear_ac 0 0 0 0 0 0 1 1 1
+mesh_draw_lorien_magic 0 draw_lorien_magic 0 0 0 0 0 0 1 1 1
+mesh_draw_war_starts 0 draw_war_starts 0 0 0 0 0 0 1 1 1

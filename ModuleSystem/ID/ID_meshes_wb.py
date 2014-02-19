@@ -330,5 +330,7 @@ mesh_pic_mb_warrior_1 = 328
 mesh_pic_mb_warrior_2 = 329
 mesh_pic_mb_warrior_3 = 330
 mesh_pic_mb_warrior_4 = 331
+mesh_draw_lorien_magic = 332
+mesh_draw_war_starts = 333
 
 
