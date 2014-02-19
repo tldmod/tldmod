@@ -246,7 +246,7 @@ game_menus = [
 	] for ct in range(cheat_switch)])+[
     ("build_your_own_scene"     ,[],"** Build your own scene for TLD **",
 		[                                         (jump_to_menu, "mnu_build_your_scene"),]),
-    ("go_back_spc"              ,[],"Go back",[(change_screen_quit)])]
+    ("go_back"                  ,[],"Go back",[(change_screen_quit)])]
  ),
 # This needs to be the fourth window!!!
 ( "tutorial",mnf_disable_all_keys,
