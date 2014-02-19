@@ -17,6 +17,8 @@ def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
       scene_prop=list(scene_prop)
       scene_prop[2]=str(scene_prop[2]).replace("leadder","ladder")
       scene_prop[3]=str(scene_prop[3]).replace("leadder","ladder")
+      #swy-- use old model included with the patch, the one coming with WB lacks a entrance ramp on one of the sides, sigh :(
+      scene_prop[2]=str(scene_prop[2]).replace("castle_f_gatehouse_a","castle_f_gatehouse_a_compat")
    
     #<fisheye> modified the following code to allow for higher hit points on destructable scene props
     #ofile.write("spr_%s %d %d %s %s "%(scene_prop[0], scene_prop[1], get_spr_hit_points(scene_prop[1]), scene_prop[2], scene_prop[3]))

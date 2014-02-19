@@ -658,10 +658,10 @@ spr_castle_f_wall_way_b 0 0 castle_f_wall_way_b bo_castle_f_wall_way_b 0
 spr_castle_f_wall_way_b_E 0 0 castle_f_wall_way_b 0 0
 
 
-spr_castle_f_gatehouse_a 0 0 castle_f_gatehouse_a bo_castle_f_gatehouse_a 0
+spr_castle_f_gatehouse_a 0 0 castle_f_gatehouse_a_compat bo_castle_f_gatehouse_a 0
 
 
-spr_castle_f_gatehouse_a_E 0 0 castle_f_gatehouse_a 0 0
+spr_castle_f_gatehouse_a_E 0 0 castle_f_gatehouse_a_compat 0 0
 
 
 spr_stone_minaret_a 0 0 stone_minaret_a bo_stone_minaret_a 0
