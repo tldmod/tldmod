@@ -2661,6 +2661,9 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
+        #swy-- transparent mask for the WB HP bar
+        (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        
         # cover up the HP bar
         (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
         (position_set_x, pos1, 0),
@@ -2735,16 +2738,21 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
+        #swy-- transparent mask for the WB HP bar
+        (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        
         # cover up the HP bar
         (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
         (position_set_x, pos1, 0),
         (position_set_y, pos1, 0),
         (overlay_set_position, ":black_strip", pos1),
         (position_set_x, pos1, 50000),
-        (position_set_y, pos1, 2400),
+        (position_set_y, pos1,  2400),
         (overlay_set_size, ":black_strip", pos1),
         (overlay_set_alpha, ":black_strip", 0xFF),
         (overlay_set_color, ":black_strip", 0x000000),
+
+        
         (get_player_agent_no, ":player_agent"),
         (agent_set_hit_points, ":player_agent", 0, 1), #restored automatically at the end of mission
         

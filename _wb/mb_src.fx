@@ -19,6 +19,8 @@
 // pause>nul
 ///////////////////////////////////////////////////////////////////////////////////
 
+/* swyter-- used to hide the HP overlay on TLD cutscenes */
+float swy_ui_opacity = 1.0f;
 
 #if !defined (PS_2_X)
 	#error "define high quality shader profile: PS_2_X ( ps_2_b or ps_2_a )"
@@ -622,13 +624,20 @@ VS_OUTPUT_FONT_X vs_main_no_shadow(float4 vPosition : POSITION, float3 vNormal :
 
 	return Out;
 }
-PS_OUTPUT ps_main_no_shadow(VS_OUTPUT_FONT_X In) 
+PS_OUTPUT ps_main_no_shadow(VS_OUTPUT_FONT_X In, uniform const bool swy_is_ui = false) 
 { 
 	PS_OUTPUT Output;
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
 	INPUT_TEX_GAMMA(tex_col.rgb);
 	Output.RGBColor =  In.Color * tex_col;
 	OUTPUT_GAMMA(Output.RGBColor.rgb);
+	
+	if (swy_is_ui)
+	{
+		/* swyter -- modulate the HP overlay with a TLD module system constant, nice toy! */
+		Output.RGBColor.a *= swy_ui_opacity;
+	}
+	
 	return Output;
 }
 PS_OUTPUT ps_simple_no_filtering(VS_OUTPUT_FONT_X In) 
@@ -673,6 +682,15 @@ technique simple_shading //Uses gamma
 	{
 		VertexShader = vs_font_compiled_2_0;
 		PixelShader = compile ps_2_0 ps_main_no_shadow();
+	}
+}
+/* swyter-- custom technique for controlling the opacity of the HP overlay */
+technique swy_tld_hp_overlay //Uses gamma
+{
+	pass P0
+	{
+		VertexShader = vs_font_compiled_2_0;
+		PixelShader = compile ps_2_0 ps_main_no_shadow(true);
 	}
 }
 technique simple_shading_no_filter //Uses gamma

@@ -1,4 +1,4 @@
-1122
+1123
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -55,6 +55,7 @@ qstr_Days_Passed:_{reg0} Days_Passed:_{reg0}
 qstr_Difficulty:_{reg0}% Difficulty:_{reg0}%
 qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
+qstr_swy_ui_opacity swy_ui_opacity
 qstr_______ ______
 qstr_A_peaceful_village_n A_peaceful_village_not_far_from_Westfold...
 qstr_The_War_is_upon_Roha The_War_is_upon_Rohan!

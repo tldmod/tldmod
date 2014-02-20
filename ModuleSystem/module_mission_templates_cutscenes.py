@@ -9,7 +9,10 @@ from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_cutscene
 
 #swy-- macro to select exit mode on all the cutscenes, that way we maintain compatibility and still works well in both games.
-return_exit_macro = (is_a_wb_cutscene==1 and [ (jump_to_menu, "mnu_auto_cutscene_return") ]
+#swy-- this also makes the HP UI visible again, controlled by shader uniforms.
+return_exit_macro = (is_a_wb_cutscene==1 and [ (set_shader_param_float, "@swy_ui_opacity", 100), #rustic equivalent to 1.0f = 0xff = 255 alpha = show it!
+                                               (jump_to_menu, "mnu_auto_cutscene_return") ]
+                                               
                                           or [ (change_screen_return) ])
 
 
@@ -117,7 +120,7 @@ mission_templates_cutscenes = [
            (position_rotate_x, pos1, 45),
            (position_set_x, pos1, 5000),
            (position_set_y, pos1, 4000),
-           (position_set_z, pos1, 800),
+           (position_set_z, pos1,  800),
            (mission_cam_set_position, pos1),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -128,7 +131,7 @@ mission_templates_cutscenes = [
            (position_rotate_x, pos1, -15),
            (position_set_x, pos1, 5000),
            (position_set_y, pos1, 4000),
-           (position_set_z, pos1, 800),
+           (position_set_z, pos1,  800),
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -140,7 +143,7 @@ mission_templates_cutscenes = [
            (play_cue_track, "track_victorious_evil2"),
            (init_position, pos1),
            (position_set_x, pos1, 4600),
-           (position_set_y, pos1, 100),
+           (position_set_y, pos1,  100),
            (set_spawn_position, pos1),
            (try_for_range, ":unused", 0, 10),
              (spawn_agent, "trp_warg_rider_of_isengard"),
@@ -186,7 +189,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, 180),
            (position_rotate_x, pos1, 60),
            (position_set_x, pos1, 4500),
-           (position_set_y, pos1, 100),
+           (position_set_y, pos1,  100),
            (position_set_z, pos1, 2200),
            (mission_cam_animate_to_position, pos1, 4000, 0),
            (reset_mission_timer_b),
@@ -273,7 +276,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, -120),
            (position_set_x, pos1, 17300),
            (position_set_y, pos1, 21600),
-           (position_set_z, pos1, 1300),
+           (position_set_z, pos1,  1300),
            (mission_cam_animate_to_position, pos1, 2600, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -283,7 +286,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, -95),
            (position_set_x, pos1, 17300),
            (position_set_y, pos1, 21600),
-           (position_set_z, pos1, 1300),
+           (position_set_z, pos1,  1300),
            (mission_cam_animate_to_position, pos1, 400, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -293,7 +296,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, -100),
            (position_set_x, pos1, 20800),
            (position_set_y, pos1, 22000),
-           (position_set_z, pos1, 1300),
+           (position_set_z, pos1,  1300),
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -304,7 +307,7 @@ mission_templates_cutscenes = [
            (position_rotate_x, pos1, 15),
            (position_set_x, pos1, 25000),
            (position_set_y, pos1, 20100),
-           (position_set_z, pos1, 3000),
+           (position_set_z, pos1,  3000),
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -315,7 +318,7 @@ mission_templates_cutscenes = [
            (position_rotate_x, pos1, -20),
            (position_set_x, pos1, 28300),
            (position_set_y, pos1, 12500),
-           (position_set_z, pos1, 5000),
+           (position_set_z, pos1,  5000),
            (mission_cam_animate_to_position, pos1, 2700, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -325,7 +328,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, 100),
            (position_rotate_x, pos1, -30),
            (position_set_x, pos1, 21600),
-           (position_set_y, pos1, 8300),
+           (position_set_y, pos1,  8300),
            (position_set_z, pos1, 17300),
            (mission_cam_animate_to_position, pos1, 2700, 0),
            (val_add, "$g_tld_intro_state", 1),
@@ -336,7 +339,7 @@ mission_templates_cutscenes = [
            (position_rotate_z, pos1, -150),
            (position_rotate_x, pos1, -40),
            (position_set_x, pos1, 16900),
-           (position_set_y, pos1, 9000),
+           (position_set_y, pos1,  9000),
            (position_set_z, pos1, 16800),
            (mission_cam_animate_to_position, pos1, 2700, 0),
            (val_add, "$g_tld_intro_state", 1),
@@ -356,9 +359,9 @@ mission_templates_cutscenes = [
            (ge, ":cur_time", 27),
            (init_position, pos1),
            (position_rotate_z, pos1, -150),
-           (position_set_x, pos1, 7800),
+           (position_set_x, pos1,  7800),
            (position_set_y, pos1, 20300),
-           (position_set_z, pos1, 7100),
+           (position_set_z, pos1,  7100),
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -367,7 +370,7 @@ mission_templates_cutscenes = [
            (init_position, pos1),
            (position_set_x, pos1, 14900),
            (position_set_y, pos1, 23200),
-           (position_set_z, pos1, 3900),
+           (position_set_z, pos1,  3900),
            (mission_cam_animate_to_position, pos1, 4000, 0),
            # ominious music
            (play_cue_track, "track_victorious_evil3"),
@@ -446,7 +449,7 @@ mission_templates_cutscenes = [
          (set_fixed_point_multiplier, 100),
          # make player agent static
          (get_player_agent_no, ":player_agent"),
-         (agent_get_horse, ":horse_agent", ":player_agent"),					
+         (agent_get_horse, ":horse_agent", ":player_agent"),
          (try_begin),
            (eq, ":horse_agent", -1),
          #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
@@ -776,7 +779,7 @@ mission_templates_cutscenes = [
 
 ("test_gandalf", 0, -1,
     "Gandalf cutscene mission",
-    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    [( 0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
@@ -974,7 +977,7 @@ mission_templates_cutscenes = [
     
 ("conversation_cutscene", 0, -1,
     "Gandalf/Nazgul conversation cutscene mission",
-    [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+    [( 0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
     ],
     [
