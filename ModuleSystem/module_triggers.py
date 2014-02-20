@@ -984,10 +984,17 @@ triggers = [
 		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
 		(play_sound,"snd_evil_horn"),
 	# move Dun camp across Isen
-		(party_get_position, pos1, "p_town_dunland_camp"),
-		(position_move_x,pos1,-400),
-		(position_move_y,pos1,500),
+	#	(party_get_position, pos1, "p_town_dunland_camp"),
+	#	(position_move_x,pos1,-400),
+	#	(position_move_y,pos1,500),
+		
+	#swy-- hardcoded it with absolute positioning so it kind of works in WB... :)
+		(set_fixed_point_multiplier, 10),
+		(position_set_x,pos1, 459),
+		(position_set_y,pos1,-435),
+		
 		(party_set_position, "p_town_dunland_camp", pos1),
+    
 	#	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),
           (neg|party_is_active,":center"),
