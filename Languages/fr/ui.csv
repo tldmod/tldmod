@@ -1,0 +1,46 @@
+ui_at_learning_limit|(à la limite d'apprentissage pour cette race)
+ui_not_enough_skill_points_to_learn|(pas assez de points de compétences pour apprendre)
+ui_not_enough_attributetype_to_learn_this_skill|(pas assez de %s pour apprendre cette compétence)
+ui_explanation_agility|Agilité : chaque point donne cinq points d'arme et augmente la vitesse de 0,5 %. Les compétences suivantes ne peuvent pas être développées au-delà de 1/3 de l'Agilité : Maître d'arme, Bouclier, Athlétisme, Équitation, Archerie montée, Pillage. 
+ui_retreated_battle|%s a été mis en déroute.
+ui_riding_skill_not_adequate_to_mount|(compétence d'Équitation trop faible)
+ui_camp|Actions
+ui_tutorial_inventory|Dans The Last Days, vous avez besoin de Points de Ressources pour obtenir de l'équipement. Ces Points de Ressources sont une mesure de la disposition d'une faction à vous garder approvisionné, et des ressources de la faction que vous êtes autorisé à utiliser.
+ui_you_dont_have_value|N'a pas : %s
+ui_merchant_cant_afford_value|%s : Vous nous donnez plus que nécessaire ! Gardez peut-être quelque chose pour vous (vous donner des biens pour %s, nous pouvons uniquement utiliser %s)
+ui_merchant_pay_whatever|Non, je n'ai pas besoin de ça. Gardez-le.
+ui_horse|Monter
+ui_reclaim_your_sold_goods|Récupérer les marchandises que vous avez donné avant de donné ça !
+ui_return_your_bought_goods|Rendez les marchandises que vous avez prises avant de donner ça !
+ui_return_price|Si rendu : +%d Pt. Res.
+ui_sell_price|Si donné : +%d Pt. Res.
+ui_reclaim_price|Pour récupérer : -%d Pt. Res.
+ui_buying_price|Pour prendre : -%d Pt. Res.
+ui_notification_riding_skill_not_enough|Votre compétence d'Équitation n'est pas suffisante pour cette monture.
+ui_notification_payment_value|Consume %s
+ui_notification_payment_receive_value|Gain %s
+ui_weekly_cost_value|Entretien : %s
+ui_sell|Donner
+ui_hire|Engager
+ui_notification_cant_hire|(pas assez de Pt. Res. pour engager)
+ui_joining_cost_weekly_wage|Engager : %d Pt. Res. -- Entretien : %d Pt. Res.
+ui_weekly_wage|Entretien : %d Pt. Res.
+ui_price|Valeur : %d Pt. Res.
+ui_cant_reload_this_weapon_on_horseback|Vous ne pouvez pas recharger cette arme sur une monture.
+ui_delivered_number_damage_to_horse|%d de dommage infligés à la monture.
+ui_horse_charged_for_number_damage|Monture chargée pour %d de dommages.
+ui_horse_received_number_damage|%d de dommages reçus par la monture.
+ui_horse_fell_dead|La monture est morte.
+ui_horse_crippled|Monture paralysée...
+ui_you_got_value|%s gagnés.
+ui_has_deserted_the_party|a quitté le groupe.
+ui_have_deserted_the_party|a quitté le groupe.
+ui_loading_textures|Chargement des textures (soyez patient)...
+ui_order_hold_fire_toggle|Ne tirez pas/Feu à volonté (Basculer)
+ui_order_dismount_toggle|Ordonnez de démonter/monter (Basculer)
+ui_mount_horses_e_|%s, montez !
+ui_hold_fire_e_|%s, ne tirez pas !
+ui_fire_at_will_e_|%s, feu à volonté !
+ui_recent_messages|Derniers messages
+ui_value_denars|%d Points de Res.
+ui_cannot_be_used_on_horseback|Ne peut être utilisé sur une monture.

@@ -1208,9 +1208,9 @@ scripts = [
 # Script: start a battle with wandering ents  (mtarini)
 ("fangorn_fight_ents",[
 	#(assign, ":ent_troop", "trp_ent"), # should be ents!
-	(jump_to_scene, "scn_random_scene_plain_forest"),
 	#(call_script, "script_setup_random_scene"),
 	(set_jump_mission,"mt_fangorn_battle"),
+	(jump_to_scene, "scn_random_scene_plain_forest"),
 	(modify_visitors_at_site, "scn_random_scene_plain_forest"),
 	(reset_visitors),
 	(set_party_battle_mode),
@@ -4295,21 +4295,22 @@ scripts = [
 ("setup_troop_meeting",
     [ (store_script_param_1, ":meeting_troop"),
       (store_script_param_2, ":troop_dna"),
+      (set_jump_mission, "mt_conversation_encounter"),
       (modify_visitors_at_site, "scn_conversation_scene"),
-	  (reset_visitors),
+      (reset_visitors),
       (set_visitor, 0, "trp_player"),
 
-	  (troop_equip_items, ":meeting_troop"),
+      (troop_equip_items, ":meeting_troop"),
       (try_begin),
-		(this_or_next|eq, ":meeting_troop", "trp_mordor_lord"),
-		(eq, ":meeting_troop", "trp_lorien_lord"),
-		(set_visitor, 18, ":meeting_troop", ":troop_dna"),
-	  (else_try),
-		(set_visitor, 17, ":meeting_troop", ":troop_dna"),
+        (this_or_next|eq, ":meeting_troop", "trp_mordor_lord"),
+        (eq, ":meeting_troop", "trp_lorien_lord"),
+        (set_visitor, 18, ":meeting_troop", ":troop_dna"),
+        (else_try),
+        (set_visitor, 17, ":meeting_troop", ":troop_dna"),
       (try_end),
-	  (set_jump_mission, "mt_conversation_encounter"),
+
       (jump_to_scene, "scn_conversation_scene"),
-	(change_screen_map_conversation, ":meeting_troop"),
+      (change_screen_map_conversation, ":meeting_troop"),
 ]),
 
 #script_setup_party_meeting:
@@ -4324,6 +4325,7 @@ scripts = [
 		#        (call_script, "script_music_set_situation_with_culture", mtf_sit_encounter_hostile),
 	(try_end),
 
+	(set_jump_mission,"mt_conversation_encounter"),
 	(modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
 	(set_visitor,0,"trp_player"),
 	(party_stack_get_troop_id, ":meeting_troop",":meeting_party",0),
@@ -4346,7 +4348,6 @@ scripts = [
 		(set_visitor,":entry",reg0,":rnd"),
 	(try_end),
 	
-	(set_jump_mission,"mt_conversation_encounter"),
 	(jump_to_scene,"scn_conversation_scene"),
 	(change_screen_map_conversation, ":meeting_troop"),
 ]),
@@ -4850,7 +4851,11 @@ scripts = [
 #   $g_tld_training_opponents = 1-4 for abm_training, 4-12 for abm_team
 #   $g_tld_training_weapon = player weapon type
 ("tld_start_training_at_training_ground",
-   [ (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+   [ (set_jump_mission, "mt_training_ground_training"),
+   
+     (party_get_slot, ":training_scene", "$g_encountered_party", slot_town_arena),
+     (jump_to_scene, ":training_scene"),
+
      (modify_visitors_at_site, ":training_scene"),
      (reset_visitors),
    # Set up player and his team, if any
@@ -4953,8 +4958,7 @@ scripts = [
          (call_script, "script_tld_training_equip_entry_point", ":entry_point", ":opponent", 1, -1, -1), #random weapon type and mount
        (try_end),
      # (try_end),
-     (set_jump_mission, "mt_training_ground_training"),
-     (jump_to_scene, ":training_scene"),
+     (change_screen_mission),
      ]),
      
   #script_tld_training_equip_entry_point
@@ -11576,11 +11580,11 @@ scripts = [
       (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
       (eq, "$sneaked_into_town", 0),#Skip if sneaked
       (party_get_slot, ":cur_scene", "$current_town", slot_town_center),
+      (set_jump_mission, "mt_bandits_at_night"),
       (modify_visitors_at_site, ":cur_scene"),
       (reset_visitors),
       (party_get_slot, ":bandit_troop", "$current_town", slot_center_has_bandits),
       (store_character_level, ":level", "trp_player"),
-      (set_jump_mission, "mt_bandits_at_night"),
         (assign, ":spawn_amount", 1),
         (assign, "$num_center_bandits", 0),
         (try_begin),
@@ -18542,7 +18546,6 @@ scripts = [
 #script_infiltration_battle_wall
 ("infiltration_battle_wall",[
 	(set_jump_mission, "mt_battle_wall_mission"),
-	(jump_to_scene, "$rescue_wall_battle", 0),
 	(reset_visitors),
 	(modify_visitors_at_site, "$rescue_wall_battle"),
 		(try_for_range, reg1, 10, 20),
@@ -18653,8 +18656,8 @@ scripts = [
 	(set_visitor, 14, "$guard_troop2", 0),
 	(set_visitor, 16, "$guard_troop2", 0),
 	]), 
-	#script_infiltration_stealth_2
-	("infiltration_stealth_2",[
+#script_infiltration_stealth_2
+("infiltration_stealth_2",[
 	(set_jump_mission, "mt_infiltration_stealth_mission"),
 	(jump_to_scene, "$rescue_stealth_scene_1", 0),
 	(reset_visitors),
