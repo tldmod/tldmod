@@ -1560,6 +1560,7 @@ PS_OUTPUT ps_main(VS_OUTPUT In, uniform const int PcfMode)
 	PS_OUTPUT Output;
 	
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+	
 	INPUT_TEX_GAMMA(tex_col.rgb);
 	
 	float sun_amount = 1.0f; 
@@ -1862,7 +1863,7 @@ PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode )
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
 	INPUT_TEX_GAMMA(tex_col.rgb);
 
-	Output.RGBColor *= tex_col;
+	Output.RGBColor.rgb *= tex_col.rgb;
 	Output.RGBColor *= In.VertexColor;
 	
 	//	Output.RGBColor = saturate(Output.RGBColor);
@@ -1888,7 +1889,7 @@ PS_OUTPUT ps_main_bump_simple_multitex( VS_OUTPUT_BUMP In, uniform const int Pcf
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
 	float4 tex_col2 = tex2D(Diffuse2Sampler, In.Tex0 * uv_2_scale);
 	
-	float4 multi_tex_col = tex_col;
+	float4 multi_tex_col = float4(tex_col.rgb, 1.0f);
 	float inv_alpha = (1.0f - In.VertexColor.a);
 	multi_tex_col.rgb *= inv_alpha;
 	multi_tex_col.rgb += tex_col2.rgb * In.VertexColor.a;
@@ -5576,6 +5577,18 @@ technique mtarini_progressbar
 // WATERFALLS
 ///////////////////
 
+struct VS_OUTPUT_WATERFALL
+{
+	float4 Pos					: POSITION;
+	float  Fog				    : FOG;
+	
+	float4 Color				: COLOR0;
+	float3 Tex0					: TEXCOORD0; //swy-- changed this one from float2 to float3 to make room for a second vertex shader modulator
+	float4 SunLight				: TEXCOORD1;
+	float4 ShadowTexCoord		: TEXCOORD2;
+	float2 ShadowTexelPos		: TEXCOORD3;
+};
+
 VS_OUTPUT vs_mtarini_waterfall (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
 {
    VS_OUTPUT Out = (VS_OUTPUT)0;
@@ -5587,50 +5600,14 @@ VS_OUTPUT vs_mtarini_waterfall (uniform const int PcfMode, uniform const bool Us
    
    float3 P = mul(matWorldView, vPosition); //position in view space
    
-   tc.y -= 0.15*time_var;
-   Out.Tex0 = tc;
+   Out.Tex0 = float3(tc.x, tc.y - (0.15f*time_var), (tc.y + (0.5f*time_var)) / 2.f);
 
    float4 diffuse_light = vAmbientColor;
-//   diffuse_light.rgb *= gradient_factor * (gradient_offset + vWorldN.z);
    
-   if (UseSecondLight)
-   {
-		diffuse_light += vLightColor;
-	}
-   
-	//directional lights, compute diffuse color
-	float dp = dot(vWorldN, -vSkyLightDir);
-	diffuse_light += max(0, dp) * vSkyLightColor;
+   Out.Color =  vColor;
 
-	//point lights
-	for(int j = 0; j < iLightPointCount; j++)
-	{
-		int i = iLightIndices[j];
-		float3 point_to_light = vLightPosDir[i]-vWorldPos;
-		float LD = length(point_to_light);
-		float3 L = normalize(point_to_light);
-		float wNdotL = dot(vWorldN, L);
-		
-		float fAtten = 1.0f/(LD * LD);// + 0.9f / (LD * LD);
-		//compute diffuse color
-		diffuse_light += max(0, wNdotL) * vLightDiffuse[i] * fAtten;
-	}
-   //apply material color
-//	Out.Color = min(1, vMaterialColor * vColor * diffuse_light);
-	Out.Color = (vMaterialColor * vColor * diffuse_light);
-
-	//shadow mapping variables
-	float wNdotSun = max(0.0f,dot(vWorldN, -vSunDir));
-	Out.SunLight = (wNdotSun) * vSunColor * vMaterialColor * vColor;
-	if (PcfMode != PCF_NONE)
-	{
-		float4 ShadowPos = mul(matSunViewProj, vWorldPos);
-		Out.ShadowTexCoord = ShadowPos;
-		Out.ShadowTexCoord.z /= ShadowPos.w;
-		Out.ShadowTexCoord.w = 1.0f;
-		Out.ShadowTexelPos = Out.ShadowTexCoord * fShadowMapSize;
-		//shadow mapping variables end
-	}
+   //shadow mapping variables
+   Out.SunLight = 0;
 	
    //apply fog
    float d = length(P);
@@ -5639,12 +5616,32 @@ VS_OUTPUT vs_mtarini_waterfall (uniform const int PcfMode, uniform const bool Us
    return Out;
 }
 
+PS_OUTPUT ps_mtarini_waterfall(VS_OUTPUT_WATERFALL In, uniform const int PcfMode, uniform const bool swy_nifty_water = false)
+{
+	PS_OUTPUT Output;
+	
+	float4 tex_col = tex2D(MeshTextureSampler, float2(In.Tex0.x, In.Tex0.y));
+	
+	if (swy_nifty_water)
+	{
+		float4 tex_col_b = tex2D(MeshTextureSampler, float2(In.Tex0.x, In.Tex0.z));
+
+		tex_col     *= tex_col_b;
+		tex_col.rgb += tex_col_b.rgb / 1.5f;
+	}
+
+	Output.RGBColor =  tex_col * In.Color;
+	
+	
+	return Output;
+}
+
 technique mtarini_waterfall
 {
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_waterfall(PCF_NONE, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+       PixelShader = compile ps_2_0 ps_mtarini_waterfall(PCF_NONE, true);
    }
 }
 
