@@ -443,4 +443,6 @@ if wb_compile_switch==1:
 meshes+=[
   ("draw_lorien_magic",      0, "draw_lorien_magic", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_war_starts",        0, "draw_war_starts",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_bear",              0, "draw_bear",         0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_wolf",              0, "draw_wolf",         0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

@@ -8227,13 +8227,6 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(assign, reg1, 1),
-	(assign, reg2, 1),
-	# (str_store_string, s1, "@You {reg0?find yourself: and{reg2? your ;companions,:{s26},}} separated from the rest of your party, when suddenly..."),
- ],
- [
-	("continue",[],"Continue...",
-	[
 	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Default, just in case something glitches...
 	(assign, ":ambush_count", 1), 
 	(try_begin),
@@ -8248,7 +8241,7 @@ game_menus = [
 		(assign, ":ambush_scene", "scn_mountain_ambush"),
 		(store_random, ":rnd", 100),
 		(try_begin),
-			(eq, "$players_kingdom", "fac_dunland"), 
+			(eq, "$players_kingdom", "fac_dunland"),
 			(assign, ":ambush_troop", "trp_bear"),
 			(assign, ":ambush_count", 1),			# 1 bear only
 		(else_try),
@@ -8264,7 +8257,23 @@ game_menus = [
 	(assign, reg20, ":ambush_troop"),
 	(assign, reg21, ":ambush_count"),
 	(assign, reg22, ":ambush_scene"),
-
+  
+  #swy-- set the background mesh depending on what's going to attack us!
+  (try_begin),
+    (eq,":ambush_troop", "trp_spider"),
+    (set_background_mesh, "mesh_draw_spiders"),
+  (else_try),
+    (eq,":ambush_troop", "trp_bear"),
+    (set_background_mesh, "mesh_draw_bear"),
+  (else_try),
+    (eq,":ambush_troop", "trp_wolf"),
+    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+  (try_end)
+ ],
+ [
+	("continue",[],"Continue...",
+	[
+	(set_jump_mission, "mt_animal_ambush"),
 	(set_jump_entry, 0),
 	(modify_visitors_at_site, reg22),
 	(reset_visitors),
@@ -8283,7 +8292,6 @@ game_menus = [
 	(try_end),
 
 	(jump_to_scene, reg22),
-	(set_jump_mission, "mt_animal_ambush"),
 	(change_screen_mission),
 	]),
  ],
@@ -8316,10 +8324,19 @@ game_menus = [
 
 ("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
-	(try_begin),
-		(eq, reg20, "trp_spider"),
-		(set_background_mesh, "mesh_draw_spiders"),
-	(try_end),
+  (assign,":ambush_troop", reg20),
+
+  #swy-- set the background mesh depending on what's going to attack us!
+  (try_begin),
+    (eq,":ambush_troop", "trp_spider"),
+    (set_background_mesh, "mesh_draw_spiders"),
+  (else_try),
+    (eq,":ambush_troop", "trp_bear"),
+    (set_background_mesh, "mesh_draw_bear"),
+  (else_try),
+    (eq,":ambush_troop", "trp_wolf"),
+    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+  (try_end),
 
 	(assign, reg0, 1),
 	(assign, reg1, 0),
