@@ -1,5 +1,5 @@
 trp_unarmed_troop|Troupe non armée
-trp_unarmed_troop_pl|Troupe non armée
+trp_unarmed_troop_pl|Troupes non armées
 trp_tutorial_maceman|Porteur de hache
 trp_tutorial_maceman_pl|Porteurs de haches
 trp_tutorial_archer|Archer
@@ -15,7 +15,7 @@ trp_veteran_fighter_pl|Combattants vétérans
 trp_champion_fighter|Combattant champion
 trp_champion_fighter_pl|Combattants champions
 trp_arena_training_fighter_1|Combattant novice
-trp_arena_training_fighter_1_pl|Combattant novice
+trp_arena_training_fighter_1_pl|Combattants novices
 trp_arena_training_fighter_2|Combattant novice
 trp_arena_training_fighter_2_pl|Combattants novices
 trp_arena_training_fighter_3|Combattant qualifié
@@ -51,7 +51,7 @@ trp_woodmen_skilled_forester_pl|Forestiers expérimentés de la Forêt Noire
 trp_woodmen_axemen|Manieur de hache de la Forêt Noire
 trp_woodmen_axemen_pl|Manieurs de hache de la Forêt Noire
 trp_woodmen_master_axemen|Maître manieur de hache de la Forêt Noire
-trp_woodmen_master_axemen_pl|Maîtres manieurs de hache de la Forêt Noire
+trp_woodmen_master_axemen_pl|Maîtres manieurs de haches de la Forêt Noire
 trp_woodmen_tracker|Traqueur de la Forêt Noire
 trp_woodmen_tracker_pl|Traqueurs de la Forêt Noire
 trp_woodmen_scout|Éclaireur de la Forêt Noire
@@ -60,8 +60,8 @@ trp_woodmen_archer|Archer de la Forêt Noire
 trp_woodmen_archer_pl|Archers de la Forêt Noire
 trp_fell_huntsmen_of_mirkwood|Chasseur expert de la Forêt Noire
 trp_fell_huntsmen_of_mirkwood_pl|Chasseurs experts de la Forêt Noire
-trp_beorning_vale_man|Homme des Beornides
-trp_beorning_vale_man_pl|Hommes des Beornides
+trp_beorning_vale_man|Beornide
+trp_beorning_vale_man_pl|Beornides
 trp_beorning_warrior|Guerrier beornide
 trp_beorning_warrior_pl|Guerriers beornides
 trp_beorning_tolltacker|Douanier beornide
@@ -78,14 +78,14 @@ trp_beorning_carrock_berserker|Berserker beornide du Carrock
 trp_beorning_carrock_berserker_pl|Berserkers beornides du Carrock 
 trp_dale_militia|Milicien de Dale
 trp_dale_militia_pl|Milice de Dale
-trp_dale_man_at_arms|Homme d'arme de Dale
+trp_dale_man_at_arms|Homme d'armes de Dale
 trp_dale_man_at_arms_pl|Hommes d'armes de Dale
-trp_laketown_scout|Éclaireur de la Ville du Lac
-trp_laketown_scout_pl|Éclaireurs de la Ville du Lac
-trp_laketown_bowmen|Archer novice de la Ville du Lac
-trp_laketown_bowmen_pl|Archers novices de la Ville du Lac
-trp_laketown_archer|Archer de la Ville du Lac
-trp_laketown_archer_pl|Archers de la Ville du Lac
+trp_laketown_scout|Éclaireur de Lacville
+trp_laketown_scout_pl|Éclaireurs de Lacville
+trp_laketown_bowmen|Archer novice de Lacville
+trp_laketown_bowmen_pl|Archers novices de Lacville
+trp_laketown_archer|Archer de Lacville
+trp_laketown_archer_pl|Archers de Lacville
 trp_barding_bowmen_of_esgaroth|Archer de Bard d'Esgaroth
 trp_barding_bowmen_of_esgaroth_pl|Archers de Bard d'Esgaroth
 trp_dale_warrior|Guerrier de Dale
@@ -93,13 +93,13 @@ trp_dale_warrior_pl|Guerriers de Dale
 trp_dale_veteran_warrior|Guerrier vétéran de Dale
 trp_dale_veteran_warrior_pl|Guerriers vétérans de Dale
 trp_dale_marchwarden|Gardien des Marches de Dale
-trp_dale_marchwarden_pl|Gardiens des Marches Dale
+trp_dale_marchwarden_pl|Gardiens des Marches de Dale
 trp_dale_pikeman|Lancier de Dale
 trp_dale_pikeman_pl|Lanciers de Dale
-trp_dale_billman|Piquier de Dale
-trp_dale_billman_pl|Piquiers de Dale
-trp_dale_bill_master|Maître piquier de Dale
-trp_dale_bill_master_pl|Maîtres piquiers de Dale
+trp_dale_billman|Vougier de Dale
+trp_dale_billman_pl|Vougiers de Dale
+trp_dale_bill_master|Maître-vougier de Dale
+trp_dale_bill_master_pl|Maîtres-vougiers de Dale
 trp_merchant_squire_or_dale|Écuyer marchant de Dale
 trp_merchant_squire_or_dale_pl|Écuyers marchants de Dale
 trp_merchant_guard_of_dale|Garde marchant de Dale

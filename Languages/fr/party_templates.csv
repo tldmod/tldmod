@@ -1,6 +1,6 @@
 pt_rescued_prisoners|Prisonniers libérés
 pt_enemy|Ennemi
-pt_hero_party|Armée du héros
+pt_hero_party|Groupe du héros
 pt_cattle_herd|Troupeau de bétail
 pt_ruins|Ruines
 pt_legendary_place|Lieu légendaire
@@ -31,75 +31,75 @@ pt_blackroot_auxila|Auxiliaires du Val de la Racine Noire
 pt_lamedon_auxila|Auxiliaires du Lamedon
 pt_lossarnach_auxila|Auxiliaires de Lossarnach
 pt_pinnath_gelin_auxila|Auxiliaires de Pinnath Gelin
-pt_ranger_scouts|Éclaireurs Rangers
-pt_rohan_scouts|Éclaireurs Rohirrims
+pt_ranger_scouts|Éclaireurs rangers
+pt_rohan_scouts|Éclaireurs rohirrims
 pt_lorien_scouts|Éclaireurs de la Lórien
 pt_woodelf_scouts|Éclaireurs elfes de la Forêt Noire
 pt_imladris_scouts|Éclaireurs elfes de Fondcombe
 pt_dale_scouts|Éclaireurs de Dale 
 pt_esgaroth_scouts|Éclaireurs d'Esgaroth
 pt_dwarf_scouts|Guetteurs nains
-pt_beorn_scouts|Éclaireurs des Beornides
-pt_woodmen_scouts|Éclaireurs Balchoths
+pt_beorn_scouts|Éclaireurs beornides
+pt_woodmen_scouts|Éclaireurs forestiers
 pt_mordor_scouts|Éclaireurs du Mordor
 pt_morgul_scouts|Éclaireurs de Minas Morgul
-pt_isengard_scouts|Éclaireurs d'Isengard
+pt_isengard_scouts|Éclaireurs de l'Isengard
 pt_isengard_scouts_warg|Éclaireurs wargs de l'Isengard
-pt_harad_scouts|Éclaireurs Haradrims
-pt_dunland_scouts|Éclaireurs de Dun
-pt_umbar_scouts|Éclaireurs d'Umbar
-pt_khand_scouts|Éclaireurs du Khand
+pt_harad_scouts|Éclaireurs haradrim
+pt_dunland_scouts|Éclaireurs du Pays de Dun
+pt_umbar_scouts|Éclaireurs corsaires
+pt_khand_scouts|Éclaireurs orientaux
 pt_moria_scouts|Éclaireurs de la Moria
 pt_guldur_scouts|Éclaireurs de Dol Guldur
 pt_gundabad_scouts|Éclaireurs de Gundabad
-pt_rhun_scouts|Éclaireurs du Rhûn
+pt_rhun_scouts|Éclaireurs de Rhûn
 pt_gondor_raiders|Fourrageurs du Gondor
-pt_rohan_raiders|Fourrageurs Rohirrims
+pt_rohan_raiders|Fourrageurs rohirrim
 pt_imladris_raiders|Fourrageurs d'Imladris
-pt_lorien_raiders|Fourrageurs de Lothlórien 
+pt_lorien_raiders|Fourrageurs de la Lothlórien 
 pt_woodelf_raiders|Fourrageurs de la Forêt Noire
 pt_dale_raiders|Fourrageurs de Dale
-pt_dwarf_raiders|Fourrageurs Nains
-pt_ranger_raiders|Pillards Rangers
+pt_dwarf_raiders|Fourrageurs nains
+pt_ranger_raiders|Pillards rangers
 pt_morgul_raiders|Pillards de Morgul
-pt_mordor_raiders|Pillards de Mordor
-pt_isengard_raiders|Pillards d'Isengard
-pt_dunland_raiders|Pillards du pays de Dun
-pt_harad_raiders|Pillards Haradrims
+pt_mordor_raiders|Pillards du Mordor
+pt_isengard_raiders|Pillards de l'Isengard
+pt_dunland_raiders|Pillards du Pays de Dun
+pt_harad_raiders|Pillards haradrim
 pt_khand_raiders|Pillards du Khand
-pt_umbar_raiders|Pillards d'Umbar
+pt_umbar_raiders|Pillards de l'Umbar
 pt_moria_raiders|Pillards de la Moria
 pt_guldur_raiders|Pillards de Dol Guldur
 pt_gundabad_raiders|Pillards de Gundabad
-pt_rhun_raiders|Pillards du Rhûn
+pt_rhun_raiders|Pillards de Rhûn
 pt_gondor_patrol|Patrouille du Gondor
 pt_rohan_patrol|Patrouille de Rohirrim
-pt_imladris_patrol|Patrouille de Dùnedain
+pt_imladris_patrol|Patrouille de Dúnedains
 pt_lorien_patrol|Patrouille de la Lórien
-pt_woodelf_patrol|Patrouille d'Elfes Sylvains
+pt_woodelf_patrol|Patrouille de la Forêt Noire
 pt_dale_patrol|Patrouille de Dale
 pt_esgaroth_patrol|Patrouille d'Esgaroth
 pt_dwarf_patrol|Patrouille de Nains
 pt_ranger_patrol|Patrouille de Rangers
 pt_amroth_patrol|Patrouille de Dol Amroth
 pt_pelargir_patrol|Patrouille de Pelargir
-pt_lossarnach_patrol|Patrouille de Lossarnach
-pt_brv_patrol|Patrouille du Morthond
+pt_lossarnach_patrol|Patrouille du Lossarnach
+pt_brv_patrol|Patrouille de la Vallée de Morthond
 pt_pinnath_patrol|Patrouille de Pinnath Gelin
-pt_lamedon_patrol|Patrouille de Lamedon 
+pt_lamedon_patrol|Patrouille du Lamedon 
 pt_mordor_war_party|Armée du Mordor
 pt_isengard_war_party|Armée de l'Isengard
 pt_harad_war_party|Armée du Harad
-pt_dunland_war_party|Armée de Dun
-pt_khand_war_party|Armée Orientale
-pt_moria_war_party|Armée Orque
+pt_dunland_war_party|Armée du Pays de Dun
+pt_khand_war_party|Armée de Variags
+pt_moria_war_party|Armée orque de la Moria
 pt_dale_war_party|Armée de Dale
 pt_rhun_war_party|Armée de Rhûn
 pt_gondor_company|Patrouille de Minas Tirith
 pt_rohan_company|Compagnie du Rohan
 pt_imladris_company|Compagnie de Fondcombe
 pt_lorien_company|Compagnie de la Lothlórien
-pt_woodelf_company|Compagnie d'Elfes Sylvains
+pt_woodelf_company|Compagnie de la Forêt Noire
 pt_dale_company|Compagnie de Dale
 pt_dwarf_company|Compagnie de Nains
 pt_gondor_elite_company|Compagnie d'élite du Gondor
@@ -121,9 +121,9 @@ pt_isengard_caravan|Convoi d'approvisionnement de l'Isengard
 pt_gunda_caravan|Convoi d'approvisionnement de Gundabad
 pt_gondor_p_train|Convoi de prisonniers du Gondor
 pt_rohan_p_train|Convoi de prisonniers du Rohan
-pt_imladris_p_train|Convoi de prisonniers de Rivendell
-pt_lorien_p_train|Convoi de prisonniers de Lothlórien
-pt_woodelf_p_train|Convoi de prisonniers de Mirkwood
+pt_imladris_p_train|Convoi de prisonniers de Fondcombe
+pt_lorien_p_train|Convoi de prisonniers de la Lothlórien
+pt_woodelf_p_train|Convoi de prisonniers de la Forêt Noire
 pt_dale_p_train|Convoi de prisonniers de Dale
 pt_dwarf_p_train|Convoi de prisonniers des Nains
 pt_mordor_p_train|Convoi de prisonniers du Mordor

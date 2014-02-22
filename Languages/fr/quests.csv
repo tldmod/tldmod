@@ -1,74 +1,74 @@
 qst_deliver_message|Délivrer un message à {s13}
-qst_deliver_message_text|{s9} vous a demandé de prendre un message pour {s13}. {s13} était à {s4} quand on vous a donné cette quête.
+qst_deliver_message_text|{s9} vous a demandé d'apporter un message pour {s13}. {s13} était à {s4} quand cette quête vous a été donnée.
 qst_deliver_message_to_enemy_lord|Délivrer un message à {s13}
-qst_deliver_message_to_enemy_lord_text|{s9} vous a demandé de prendre un message pour {s13} de {s15}. {s13} était à {s4} quand on vous a donné cette quête.
+qst_deliver_message_to_enemy_lord_text|{s9} vous a demandé d'apporter un message pour {s13} de {s15}. {s13} était à {s4} quand cette quête vous a été donnée.
 qst_raise_troops|Améliorer {reg1} {s14}
-qst_raise_troops_text|{s9} vous a demandé d'améliorer {reg1} {s14} et de les lui ramener.
+qst_raise_troops_text|{s9} vous a demandé d'améliorer {reg1} {s14} et de les lui apporter.
 qst_escort_messenger|Escorter le messager à {s14}
 qst_escort_messenger_text|Aucun
 qst_hunt_down_fugitive|Traquer {s4}
 qst_hunt_down_fugitive_text|{s9} vous a demandé de traquer le fugitif nommé {s4}. Il est actuellement à {s3}.
 qst_bring_back_runaway_serfs|Ramener des esclaves en fuite.
-qst_bring_back_runaway_serfs_text|{s9} vous a demandé de ramener les trois groupes d'esclaves en fuite à {s2}. Il a dit que les trois groupes devaient avoir fuit dans la direction de{s3}.
-qst_follow_spy|Suivre l'espion
-qst_follow_spy_text|{s11} vous a demandé de suivre l'espion qui va partir {s12}. Vous devez être sûr de ne pas vous faire voir par l'espion pendant ce voyage, car sinon il pourrait devenir méfiant et s'échapper. Dès que l'espion aura rencontré son complice, vous devrez vous embusquer, les capturer et les ramener tous les deux à {s11}.
+qst_bring_back_runaway_serfs_text|{s9} vous a demandé de ramener les trois groupes d'esclaves en fuite à {s2}. Il a dit que les trois groupes devaient avoir fuit dans la direction de {s3}.
+qst_follow_spy|Suivre l'Espion au rendez-vous
+qst_follow_spy_text|{s11} vous a demandé de suivre l'espion qui va partir de {s12}. Vous devez être sûr de ne pas vous faire voir par l'espion pendant ce voyage, sinon il pourrait devenir méfiant et s'échapper. Dès que l'espion aura rencontré son complice, vous devrez vous embusquer, les capturer et les ramener tous les deux à {s11}.
 qst_capture_enemy_hero|Capturer un commandant ennemi.
 qst_capture_enemy_hero_text|{s11} vous a demandé de capturer un commandant ennemi.
 qst_lend_companion|Prêter votre compagnon {s3} à {s9}
 qst_lend_companion_text|{s9} vous a demandé de lui prêter un compagnon {s3} pour une semaine.
 qst_capture_prisoners|Apportez {reg1} prisonniers ennemis
-qst_capture_prisoners_text|{s9} voudrais que vous lui apportiez {reg1} prisonniers ennemis.
+qst_capture_prisoners_text|{s9} voudrait que vous lui apportiez {reg1} prisonniers ennemis.
 qst_investigate_fangorn|Enquêter dans la Forêt de Fangorn.
 qst_investigate_fangorn_text|{s9} vous a demandé de découvrir ce qui se passe dans la forêt de Fangorn et de lui faire un rapport.
 qst_capture_troll|Capturer un Troll
 qst_capture_troll_text|{s9} vous a demander de ramener un Troll sauvage pour l'utiliser dans son armée.
-qst_kill_troll|Tuez un Troll enragé
+qst_kill_troll|Tuer un Troll enragé
 qst_kill_troll_text|{s9} vous a demandé de libérer {s13} de la menace d'un Troll enragé dans ses environs.
 qst_mirkwood_sorcerer|Tuer un sorcier dans la Forêt Noire.
 qst_mirkwood_sorcerer_text|Le pouvoir de Galadriel pour défendre la Lothlórien a été gêné par les rituels maléfiques d'un sorcier de Dol Guldur. Tant qu'il est vivant, il représente un grand danger pour les Elfes. Recherchez-le dans la Forêt Noire, pas très loin de Dol Guldur. Utilisez la furtivité pour empêcher que l'alarme ne soit donnée car il n'y aura qu'une seule occasion de le vaincre.
 qst_find_lost_spears|Trouver les lances perdues du Roi Bladorthin.
-qst_find_lost_spears_text|{s9} vous a demandé de trouver les lances naines perduesjadis forgées pour le Roi Bladorthin. Vous devez demander la permission aux nains pour chercher les lances dans les entrailles de la Montagne Solitaire.
-qst_rescue_prisoners|Secourez {reg1} prisonniers
+qst_find_lost_spears_text|{s9} vous a demandé de trouver les lances naines perdues jadis forgées pour le Roi Bladorthin. Vous devez demander la permission aux nains de chercher les lances dans les entrailles de la Montagne Solitaire.
+qst_rescue_prisoners|Secourer {reg1} prisonniers
 qst_rescue_prisoners_text|{s9} veut que vous sauviez {reg1} prisonniers.
 qst_scout_enemy_town|Espionnez une ville ennemie.
 qst_scout_enemy_town_text|{s9} vous a demandé de partir en éclaireur vers {s13}.
-qst_dispatch_scouts|Dispersez des éclaireurs.
-qst_dispatch_scouts_text|{s9} vous a demandé de disperser des éclaireurs vers {s13}.
+qst_dispatch_scouts|Envoyer des éclaireurs.
+qst_dispatch_scouts_text|{s9} vous a demandé d'envoyer un groupe d'éclaireurs vers {s13}.
 qst_eliminate_patrols|Éliminer {reg1} armées ennemies.
 qst_eliminate_patrols_text|{s9} vous a demandé d'éliminer {reg1} {s13} armées ennemies.
-qst_lend_surgeon|Prêtez votre sergent {s3} à {s1}
-qst_lend_surgeon_text|Prêter votre sergent expérimenté {s3} à {s1}.
+qst_lend_surgeon|Prêter votre chirurgien {s3} à {s1}
+qst_lend_surgeon_text|Prêter votre chirurgien expérimenté {s3} à {s1}.
 qst_follow_army|Suivez l'armée de {s9}
-qst_follow_army_text|Rien
-qst_report_to_army|Rapportez à {s13}
-qst_report_to_army_text|Rien
+qst_follow_army_text|Aucune
+qst_report_to_army|Faites votre rapport à {s13}
+qst_report_to_army_text|Aucune
 qst_deliver_cattle_to_army|Livrez {reg3} unités de nourritures à {s13}
-qst_deliver_cattle_to_army_text|Rien
-qst_join_siege_with_army|Joindre le siège de {s14}
-qst_join_siege_with_army_text|Rien
+qst_deliver_cattle_to_army_text|Aucune
+qst_join_siege_with_army|Rejoindre le siège de {s14}
+qst_join_siege_with_army_text|Aucune
 qst_scout_waypoints|Espionnez {s13}, {s14} et {s15}
-qst_scout_waypoints_text|Rien
+qst_scout_waypoints_text|Aucune
 qst_move_cattle_herd|Déplacer {s12} à {s13}
 qst_move_cattle_herd_text|L'ancien de {s10} vous a demandé de déplacer {s12} à {s13}.
-qst_escort_merchant_caravan|Escortez un convoi de ravitaillement à {s8}
-qst_escort_merchant_caravan_text|Escortez un convoi de ravitaillement à {s8}.
-qst_deliver_wine|Délivrez {reg5} unités de {s6} à {s4}
+qst_escort_merchant_caravan|Escorter un convoi de ravitaillement à {s8}
+qst_escort_merchant_caravan_text|Escorter un convoi de ravitaillement à {s8}.
+qst_deliver_wine|Délivrer {reg5} unités de {s6} à {s4}
 qst_deliver_wine_text|Le {s9} de {s3} vous a demandé de livrer {reg5} unités de {s6} à {s4} en 7 jours.
 qst_troublesome_bandits|Traquez les gobelins gênants.
 qst_troublesome_bandits_text|Le {s9} de {s4} vous a demandé de traquer les gobelins gênants dans le voisinage de la ville.
-qst_deal_with_looters|Traiter avec des orques tribaux
-qst_deal_with_looters_text|L'ancien de {s4} vous a demandé de traiter avec plusieurs groupes de tribus orques autour de {s4}.
-qst_deal_with_night_bandits|Traitez avec des gobelins vicieux
-qst_deal_with_night_bandits_text|L'ancien de {s14} vous a demandé de traiter avec des gobelins nocturnes à {s14}.
-qst_deliver_food|Fournissez {reg5} unités de nourritures à {s3}.
+qst_deal_with_looters|S'occuper des Orques tribaux
+qst_deal_with_looters_text|L'ancien de {s4} vous a demandé de vous occuper de plusieurs groupes d'Orques tribaux autour de {s4}.
+qst_deal_with_night_bandits|S'occuper des Gobelins vicieux
+qst_deal_with_night_bandits_text|L'ancien de {s14} vous a demandé de vous occuper des Gobelins nocturnes à {s14}.
+qst_deliver_food|Fournir {reg5} unités de nourritures à {s3}.
 qst_deliver_food_text|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de nourritures en 10 jours.
-qst_deliver_iron|Fournissez {reg5} unités de {s6} à {s3}
+qst_deliver_iron|Fournir {reg5} unités de {s6} à {s3}
 qst_deliver_iron_text|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de {s6}.
-qst_tld_introduction|Délivrez un message à propos des orques du Mordor au commandant
-qst_tld_introduction_text|Rien
-qst_treebeard_kill_orcs|Vainquez l'armée d'orques bûcherons
-qst_treebeard_kill_orcs_text|Sylvebarbe vous demande de trouver et de tuer les orques qui coupent les arbres de Fangorn.
-qst_oath_of_vengeance|Serment de Vengeance.
-qst_oath_of_vengeance_text|Enragé par la mort de {s1}, vous avez prêté un serment de vengeance contre les forces de {s2}. Vous devez maintenant détruire le plus d'armées de {s2} que possible dans les prochains jours. Vous êtes conscients que vos partisans ont assisté à ce serment et vous ne voulez pas être connu comme un parjure. Une effusion de sang doit commencer maintenant!
-qst_deliver_gift|Délivrer à {s4} de {s1} de {s2} à {s3}
+qst_tld_introduction|Délivrez un message à propos des Orques du Mordor au commandant
+qst_tld_introduction_text|Aucune
+qst_treebeard_kill_orcs|Vaincre l'armée d'Orques bûcherons
+qst_treebeard_kill_orcs_text|Sylvebarbe vous demande de trouver et de tuer les Orques qui coupent les arbres de Fangorn.
+qst_oath_of_vengeance|Serment de Vengeance
+qst_oath_of_vengeance_text|Enragé par la mort de {s1}, vous avez prêté un serment de vengeance contre les forces de {s2}. Vous devez maintenant détruire le plus d'armées de {s2} que possible dans les prochains jours. Vous êtes conscients que vos partisans ont assisté à ce serment et vous ne voulez pas être vu comme un parjure. Une effusion de sang doit commencer maintenant !
+qst_deliver_gift|Délivrer un {s4} de {s1} de {s2} à {s3}
 qst_deliver_gift_text|Vous avez demandé de livrer un {s4} au {s1} des {s3} au départ de {s2}.

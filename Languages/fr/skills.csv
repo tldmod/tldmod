@@ -1,48 +1,48 @@
 skl_trade|Commerce
-skl_trade_desc|Chaque niveau dans cette compétence réduit la pénalité de commerce de 5%%. (compétence de groupe)
+skl_trade_desc|Chaque niveau de cette compétence permet de réclamer plus d'équipement pour moins de Points de Ressource. (Compétence du groupe)
 skl_leadership|Commandement
-skl_leadership_desc|Chaque point augmente le nombre de soldats que le personnage peut commander de 3, augmente le moral du groupe et diminue la solde des troupes de 8%%. (compétence du commandant)
+skl_leadership_desc|Chaque point augmente le nombre de soldats que le personnage peut commander de 5, augmente le moral du groupe et diminue la solde des troupes de 5%%. (Compétence du commandant)
 skl_prisoner_management|Gestion de prisonniers
-skl_prisoner_management_desc|Chaque niveau dans cette compétence augmente le nombre maximum de prisonniers que le personnage peut détenir de %d. (compétence du commandant)
+skl_prisoner_management_desc|Chaque niveau de cette compétence augmente le nombre maximum de prisonniers que le personnage peut détenir de %d. (Compétence du commandant)
 skl_persuasion|Persuasion
-skl_persuasion_desc|Cette compétence aide à faire accepter son point de vue. (compétence personnelle)
+skl_persuasion_desc|Cette compétence aide à faire accepter son point de vue. (Compétence personnelle)
 skl_engineer|Ingénierie
-skl_engineer_desc|Cette compétence permet de construire des équipements de siège et des bâtiments plus rapidement. (compétence de groupe)
-skl_first_aid|Premiers soins
-skl_first_aid_desc|Les héros récupèrent 7%% des points de vie perdus pendant les batailles par niveau de compétence. (compétence de groupe)
+skl_engineer_desc|Chaque point de cette compétence diminue à la fois le temps de peaufiner et d'améliorer l'équipement, et permet aussi des améliorations de meilleure qualité. (Compétence du groupe)
+skl_first_aid|Premiers secours
+skl_first_aid_desc|Les héros récupèrent 5%% des points de vie perdus pendant les batailles par niveau de compétence. (Compétence du groupe)
 skl_surgery|Chirurgie
-skl_surgery_desc|Chaque point de cette compétence donne 5%% de chance qu'un soldat du personnage survive à un coup mortel. (compétence de groupe)
-skl_wound_treatment|Guérison
-skl_wound_treatment_desc|La vitesse de soin est augmentée de 30%% par niveau de compétence. (compétence de groupe)
+skl_surgery_desc|Chaque point de cette compétence donne 4%% de chance qu'un soldat du personnage survive à un coup mortel. (Compétence du groupe)
+skl_wound_treatment|Guérison des blessures
+skl_wound_treatment_desc|La vitesse de soin du groupe est augmentée de 20%% par niveau de compétence. (Compétence de groupe)
 skl_inventory_management|Gestion d'inventaire
-skl_inventory_management_desc|Augmente l'espace de l'inventaire de +6 par niveau de compétence. (compétence du commandant)
+skl_inventory_management_desc|Augmente l'espace de l'inventaire de +6 par niveau de compétence. (Compétence du commandant)
 skl_spotting|Reconnaissance
-skl_spotting_desc|Le champs de vision du groupe est augmenté de 10%% par niveau de compétence. (compétence de groupe)
+skl_spotting_desc|Le champs de vision du groupe est augmenté de 10%% par niveau de compétence. (Compétence du groupe)
 skl_pathfinding|Marche forcée
-skl_pathfinding_desc|La vitesse de voyage du groupe est augmentée de 3%% par niveau de compétence. (compétence de groupe)
+skl_pathfinding_desc|La vitesse de voyage du groupe est augmentée de 3%% par niveau de compétence. (Compétence du groupe)
 skl_tactics|Tactique
-skl_tactics_desc|Tous les deux niveaux de cette compétence, l'avantage tactique du groupe augmente de 1. (compétence de groupe)
+skl_tactics_desc|Tous les deux niveaux de cette compétence, l'avantage tactique du groupe augmente de 1. (Compétence du groupe)
 skl_tracking|Traque
-skl_tracking_desc|Les traces donnent plus de renseignements et durent plus longtemps. (compétence de groupe)
+skl_tracking_desc|Les traces donnent plus de renseignements et apparaissent plus longtemps. (Compétence du groupe)
 skl_trainer|Mentor
-skl_trainer_desc|Chaque jour, les expériences du personnage profitent aux soldats d'un niveau inférieur au sien et leurs donnent de l'expérience. L'expérience partagée est distribuée ainsi: {0,4,10,16,23,30,38,46,55,65,80}. (compétence personnelle)
+skl_trainer_desc|Chaque jour, les expériences du personnage profitent aux soldats d'un niveau inférieur au sien et leurs donnent de l'expérience. L'expérience partagée est distribuée ainsi : {0,4,10,16,23,30,38,46,55,65,80}. (Compétence personnelle)
 skl_looting|Pillage
-skl_looting_desc|Cette compétence augmente le nombre d'objets trouvés de 10%% par niveau de compétence. (compétence de groupe)
+skl_looting_desc|Cette compétence augmente le nombre d'objets trouvés de 10%% par niveau de compétence. (Compétence de groupe)
 skl_horse_archery|Archerie montée
-skl_horse_archery_desc|Réduit les pénalités à la précision et aux dégâts que l'archerie montée provoque. (compétence personnelle)
+skl_horse_archery_desc|Réduit les pénalités à la précision et aux dégâts que l'archerie montée provoque. (Compétence personnelle)
 skl_riding|Équitation
-skl_riding_desc|Permet au personnage de monter des chevaux plus fougueux et augmente la vitesse et la manoeuvrabilité à cheval du personnage. (compétence personnelle)
+skl_riding_desc|Permet au personnage de monter des chevaux plus fougueux et augmente la vitesse et la manoeuvrabilité du personnage. (Compétence personnelle)
 skl_athletics|Athlétisme
-skl_athletics_desc|Améliore la vitesse de course du personnage. (compétence personnelle)
+skl_athletics_desc|Améliore la vitesse de course du personnage. (Compétence personnelle)
 skl_shield|Bouclier
-skl_shield_desc|Réduit les dégâts infligés au bouclier du personnage (de 8%% par niveau de compétence) et améliore leur vitesse et leur couverture. (compétence personnelle)
+skl_shield_desc|Réduit les dégâts infligés au bouclier du personnage (de 8%% par niveau de compétence) et améliore leur vitesse et leur couverture. (Compétence personnelle)
 skl_weapon_master|Maître d'armes
-skl_weapon_master_desc|Augmente la limite de maîtrise des armes. Les limites augmentent ainsi: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (compétence personnelle)
+skl_weapon_master_desc|Rend plus facile l'apprentissage et augmente la limite de maîtrise des armes. Les limites augmentent ainsi : 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Compétence personnelle)
 skl_power_draw|Puissance de tension
-skl_power_draw_desc|Permet au personnage d'utiliser des arcs plus puissants. Chaque point de cette compétence (jusqu'à 4 plus la puissance de tension requise de l'arc) augmente les dégâts de l'arc de 12%%. (compétence personnelle)
+skl_power_draw_desc|Permet au personnage d'utiliser des arcs plus puissants. Chaque point de cette compétence (jusqu'à 4 plus la puissance de tension requise de l'arc) augmente les dégâts de l'arc de 12%%. (Compétence personnelle)
 skl_power_throw|Puissance de jet
-skl_power_throw_desc|Chaque point dans cette compétence augmente les dégâts de jet de 7%%. (compétence personnelle)
+skl_power_throw_desc|Chaque point dans cette compétence augmente les dégâts de jet de 10%%. (Compétence personnelle)
 skl_power_strike|Puissance de frappe
-skl_power_strike_desc|Chaque point dans cette compétence augmente vos dégâts de 6%%. (compétence personnelle)
+skl_power_strike_desc|Chaque point dans cette compétence augmente vos dégâts de 8%%. (Compétence personnelle)
 skl_ironflesh|Résistance
-skl_ironflesh_desc|Chaque point dans cette compétence augmente les points de vie de +2. (compétence personnelle)
+skl_ironflesh_desc|Chaque point dans cette compétence augmente les points de vie de +2. (Compétence personnelle)

@@ -14,9 +14,9 @@ p_town_calembel|Calembel
 p_town_edoras|Edoras
 p_town_aldburg|Aldburg
 p_town_hornburg|Fort-le-Cor
-p_town_east_emnet|Emnet-est
-p_town_westfold|Westfold 
-p_town_west_emnet|Emnet-ouest
+p_town_east_emnet|Estemnet
+p_town_westfold|Ouestfolde
+p_town_west_emnet|Ouestemnet
 p_town_eastfold|Estfolde
 p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
@@ -34,7 +34,7 @@ p_town_thranduils_halls|Halls de Thranduil
 p_town_woodelf_camp|Camp des Elfes sylvains
 p_town_woodelf_west_camp|Camp occidental de Elfes sylvains
 p_town_woodsmen_village|Village de Forestiers
-p_town_beorning_village|Village de Beornides
+p_town_beorning_village|Village de Béornides
 p_town_beorn_house|Maison de Beorn
 p_town_moria|Portes de la Moria
 p_town_troll_cave|Caverne troll
@@ -55,7 +55,7 @@ p_town_gundabad_ne_outpost|Avant-poste nord-est de Gundabad
 p_town_gundabad_nw_outpost|Avant-poste nord-ouest de Gundabad
 p_town_goblin_north_outpost|Avant-poste nord gobelin
 p_town_goblin_south_outpost|Avant-poste sud gobelin
-p_town_gundabad_m_outpost|Ruines d'un avant-poste de Gundabad dans la Forêt Noire
+p_town_gundabad_m_outpost|Avant-poste de Gundabad dans la Forêt Noire
 p_town_erebor|Erebor
 p_town_ironhill_camp|Carrière des Monts du Fer
 p_advcamp_gondor|Camp avancé du Gondor
@@ -67,20 +67,20 @@ p_advcamp_rhun|Camp avancé de Rhûn
 p_advcamp_khand|Camp avancé du Khand
 p_advcamp_umbar|Camp avancé d'Umbar
 p_advcamp_lorien|Camp avancé de la Lórien
-p_advcamp_imladris|Camp avancé de Fondcombe
+p_advcamp_imladris|Camp avancé d'Imladris
 p_advcamp_woodelf|Camp avancé de la Forêt Noire
 p_advcamp_moria|Camp avancé de la Moria
 p_advcamp_guldur|Camp avancé de Dol Guldur
-p_advcamp_gundabad|Camp avancé du Gundabad
+p_advcamp_gundabad|Camp avancé de Gundabad
 p_advcamp_dale|Camp avancé de Dale
 p_advcamp_dwarf|Camp avancé d'Erebor
-p_advcamp_dunland|Camp avancé du Dunland
-p_advcamp_beorn|Camp avancé des Beornings
+p_advcamp_dunland|Camp avancé du Pays de Dun
+p_advcamp_beorn|Camp avancé des Béornides
 p_argonath|Argonath
 p_argonath2|Argonath
 p_hand_isen|Signe de la Main d'Isengard
 p_mount_doom|Mont du Destin
-p_town_barad_dur|Barad-dûr
+p_town_barad_dur|Barad-Dûr
 p_ford_cair_andros1|Anduin
 p_ford_cair_andros2|Anduin
 p_ford_caras_galadhon|Anduin
