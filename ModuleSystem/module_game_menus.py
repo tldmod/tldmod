@@ -1158,7 +1158,7 @@ game_menus = [
  ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills",[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (jump_to_menu,"mnu_choose_gender"),]),
  ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"  ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
- ("start_pe",[],"PELAGIR, the Coastal Fiefdom"             ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pe",[],"PELARGIR, the Coastal Fiefdom"             ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), (jump_to_menu,"mnu_choose_gender"),]),
  ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"   ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
