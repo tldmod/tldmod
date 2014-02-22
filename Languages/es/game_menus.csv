@@ -90,7 +90,7 @@ menu_start_gondor|^^^^^^^^^^¿De qué parte de Gondor procedes?
 mno_start_mt|MINAS TIRITH, la Capital
 mno_start_ls|LOSSARNACH, la región de los forjadores de hachas
 mno_start_la|LAMEDON, la región de los clanes de la montaña
-mno_start_pg|PINNATH GELIN,la región de las verdes colinas
+mno_start_pg|PINNATH GELIN, la región de las verdes colinas
 mno_start_do|DOL AMROTH, la región de los Caballeros del Cisne de plata
 mno_start_pe|PELARGIR, la región costera
 mno_start_bl|VALLE DE LA RAÍZ NEGRA, la región de los arqueros
@@ -142,10 +142,10 @@ menu_camp_tweaks|^^^^^^^^Elige la opción que te gustaría ajustar.
 mno_tweak_options_compat|Ajustes de compatibilidad...
 mno_tweak_options_strat|Ajustes estratégicos...
 mno_tweak_options_back|Volver al menú de opciones.
-menu_camp_compat_tweaks|^^^^^^^^Haz click sobre una opción para cambiarla (Mantén pulsado Mayús para disminuir):^(Esto es para compatibilidad y no son trucos)
+menu_camp_compat_tweaks|^^^^^^^^Haz clic sobre una opción para cambiarla (Mantén pulsado Mayús para reducirla):^(Esto mejora la compatibilidad y no son trucos)
 mno_game_options_compat_party|Máximo número de grupos: {s1}
 mno_game_options_compat_back|Volver al menú de ajustes.
-menu_camp_strat_tweaks|^^^^^^^^Haz clic sobre una opción para cambiarla:^(cuidado: ¡estos son trucos!)
+menu_camp_strat_tweaks|^^^^^^^^Haz clic sobre una opción para activarla o desactivarla:^(cuidado: ¡estos son trucos!)
 mno_strat_tweaks_siege_reqs|Requisitos de fuerza para asedio: {s7}
 mno_strat_tweaks_siege_relax_rate|Req. de fuer. para asedio: Velocidad de mitigación: {reg1}
 mno_strat_tweaks_regen_rate|Velocidad de regeneración de fuerza: {s7}
@@ -162,8 +162,8 @@ mno_be_quiet_elf|Respetar la ira de los árboles. Moveos en silencio a lo largo 
 mno_be_quiet|¡Poner vuestras armas en el suelo y manteneos en silencio! ¡Ahora, vayámonos de aquí!
 mno_be_bold|¡Seguir adelante! ¡No le temo ni a las plantas ni a los viejos mitos!
 mno_fight_back|¡Vamos a ver! ¡Peinad el área! ¡Quemad un árbol o dos!
-menu_fangorn_search_fails|^^^^^^Buscas en la oscuridad, en el espesor del bosque pero no encuentras nada.^Aún así, te sientes observado y amenazado, más y más...
-menu_fangorn_battle_debrief_won|^^^Una gran victoria!^^^Entonces, esto es lo que significan todos los mitos sobre Fangorn...
+menu_fangorn_search_fails|^^^^^^Buscas en en el espesor del oscuro agreste bosque pero no encuentras nada.^Aún así te sientes observado y amenazado, cada vez más y más...
+menu_fangorn_battle_debrief_won|^^^¡Una gran victoria!^^^Así que que es ésto a lo que los viejos mitos sobre Fangorn aludían...
 menu_fangorn_killed_player_only|^^^^^^Vagas por el espeso y oscuro bosque.^¡De repente algo te golpea por atrás! ¿Puede que una rama pesada haya caído en tu cabeza?^Permaneces inconsciente sólo durante algunos minutos... despiertas malherido pero puedes seguir adelante. Algo extraño ocurre en este bosque.
 mno_ow_get_out|¡Augh! Salir ahora mismo de este maldito lugar.
 menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^^Cuando de repente... ¡notas que algo te golpea! Puede que una rama haya caído sobre tu cabeza.^^Quedas inconsciente durante sólo unos minutos... y cuando despiertas, malherido, descubres que no todas tus tropas han sido tan afortunadas...
@@ -207,13 +207,13 @@ menu_kingdom_army_quest_join_siege_order|{s8} te envía el mensaje de que debes 
 menu_kingdom_army_follow_failed|Has desobedecido órdenes directas y no has seguido a {s8}. Te envía un mensaje en el que asume que tienes otras cuestiones más urgentes que atender, pero te advierte que su paciencia tiene un límite.
 menu_battle_debrief|{s11}^Tus bajas: {s8}{s10}^^Bajas enemigas: {s9}
 mno_inspect_troll|Inspeccionar el troll caído
-menu_pre_join|^^^^^Te encuentras en frente de una batalla entre {s2} y {s1}. Al final decides...
+menu_pre_join|^^^^^Te encuentras de frente en una batalla entre {s2} y {s1}. Al final decides...
 mno_pre_join_help_attackers|Ayuda con tus refuerzos a {s2}.
 mno_pre_join_help_defenders|Apresurarte a ayudar a {s1}.
 mno_pre_join_leave|No involucrarse.
 menu_join_battle|^^^Estás colaborando con {s2} en la lucha contra {s1}.^ Cuentas con {reg22} tropas listas para la batalla, en la que se enfrentarán contra {reg11} enemigos.^^La batalla se desarrollará en {s3}{s4}.
 mno_join_attack|Enfrentarse al enemigo.
-mno_join_order_attack|Ordenar a tus tropas atacar al enemigo junto con tus aliados mientras te mantienes al margen.
+mno_join_order_attack|Atacar al enemigo junto con tus aliados mientras te mantienes al margen.
 mno_join_leave|Separarse.
 menu_join_order_attack|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
 mno_enter|Entrar.
