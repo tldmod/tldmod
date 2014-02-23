@@ -9,7 +9,7 @@ itemsfile version 2
  itm_practice_sword Practice_Sword Practice_Sword 1  practice_sword 0  12976130 9223388529554358287 1 0 1.5 100 0 0 0 0 16384 103 0 90 0 524 528
 0
 
- itm_arena_lance Lance Lance 1  arena_lance 0  138706948 4222126999473920 1 0 2.5 100 0 0 0 0 20480 96 0 150 0 537 532
+ itm_arena_lance Lance Lance 1  arena_lance 0  2286190596 4222124851990272 1 0 2.5 100 0 0 0 0 20480 96 0 150 0 537 532
 0
 
  itm_practice_staff Wooden_Staff Wooden_Staff 1  wooden_staff 0  138838020 4222129415393024 1 0 2.5 100 0 0 0 0 16384 103 0 118 0 524 528
@@ -373,10 +373,10 @@ itemsfile version 2
  itm_fine_hat Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  536936460 0 10 123731968 0.5 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  138772484 4222126999473920 100 271496 2 100 0 0 0 0 19456 102 0 120 0 281 531
+ itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  138772484 4222124851990272 100 271496 2 100 0 0 0 0 19456 102 0 120 0 281 531
 0
 
- itm_spear Spear Spear 1  spear_h_2-15m 0  138772484 4222126999473920 200 271496 2.25 100 0 0 0 0 20480 98 0 135 0 282 532
+ itm_spear Spear Spear 1  spear_h_2-15m 0  138772484 4222124851990272 200 271496 2.25 100 0 0 0 0 20480 98 0 135 0 282 532
 0
 
  itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  2286256132 4222124851987200 200 271496 2.5 100 0 0 0 0 16384 90 0 175 0 283 528
@@ -894,7 +894,7 @@ itemsfile version 2
  itm_gondor_cav_sword Gondor_Cavalry_Sword Gondor_Cavalry_Sword 2  gondor_riding_sword 0  scab_gondor_riding_sword 3458764513820540928  4259842 9223388564182532111 300 287892 2 100 0 0 0 0 28672 103 0 100 0 277 28
 0
 
- itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  2152038404 4222124851990272 200 156672 2.25 100 0 0 0 0 20480 102 0 153 0 286 532
+ itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  4554756 4222124851990272 200 156672 2.25 100 0 0 0 0 20480 102 0 153 0 286 532
 0
 
  itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  2286256132 4222124851990272 600 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
@@ -1095,7 +1095,7 @@ itemsfile version 2
  itm_uruk_falchion_b Uruk_Falchion Uruk_Falchion 1  uruk_falchion_b 0  4259843 9223652412613460206 200 286870 2.5 100 0 0 0 0 25600 90 0 67 0 256 25
 0
 
- itm_uruk_spear Uruk_Spear Uruk_Spear 1  uruk_spear 0  2154135556 4222124851990272 300 271496 2.5 100 0 0 0 0 20480 96 0 168 0 283 532
+ itm_uruk_spear Uruk_Spear Uruk_Spear 1  uruk_spear 0  6651908 4222124851990272 300 271496 2.5 100 0 0 0 0 20480 96 0 168 0 283 532
 0
 
  itm_uruk_skull_spear Uruk_Skull_Spear Uruk_Skull_Spear 1  uruk_skull_spear 0  2154135556 4222124851990272 300 286870 2.5 100 0 0 0 0 20480 96 0 176 0 283 532
