@@ -1,5 +1,5 @@
 soundsfile version 2
-625
+627
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -625,7 +625,9 @@ soundsfile version 2
  spider_battle01.wav 0
  spider_battle2.wav 0
  spider_death.wav 0
-275
+ new_rank_evil.wav 1937
+ new_rank_good.wav 1937
+277
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -901,3 +903,5 @@ snd_enemy_lord_dies 1937 1 620
 snd_level_up 1937 1 621 
 snd_spider 0 2 622 623 
 snd_spider_die 0 1 624 
+snd_new_rank_evil 1937 1 625 
+snd_new_rank_good 1937 1 626 

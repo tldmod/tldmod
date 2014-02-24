@@ -438,9 +438,18 @@ scripts = [
     [ (store_script_param_1, ":fac"),
       (store_script_param_2, ":rank"),
       (store_script_param, ":is_promoted", 3),
-	  (play_sound, "snd_level_up"),
-	  (call_script, "script_get_rank_title_to_s24", ":fac"),
-	  (str_store_troop_name, s10, "trp_player"),
+      
+      #swy-- play a different sound depending on the allegiance of the player
+      (try_begin),
+        (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+        (play_sound, "snd_new_rank_evil"),
+      (else_try),
+        (play_sound, "snd_new_rank_good"),
+      (try_end),
+    
+      (call_script, "script_get_rank_title_to_s24", ":fac"),
+      (str_store_troop_name, s10, "trp_player"),
+      
       (assign, reg0, ":rank"),
       (assign, reg1, ":is_promoted"),
       (assign, ":news_color", color_bad_news),
@@ -448,7 +457,8 @@ scripts = [
         (eq, ":is_promoted", 1),
         (assign, ":news_color", color_good_news),
       (try_end),
-	  (display_message, "@You have been {reg1?promoted:demoted} to {s24} ({reg0})!", ":news_color"),
+      
+      (display_message, "@You have been {reg1?promoted:demoted} to {s24} ({reg0})!", ":news_color"),
 ]),
 
 # script_increase_rank

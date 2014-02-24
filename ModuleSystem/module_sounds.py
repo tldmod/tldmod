@@ -346,4 +346,8 @@ sounds = [
 ("spider", 0, ["spider_battle01.wav", "spider_battle2.wav"]),
 ("spider_die", 0, ["spider_death.wav"]),
 
+#swy-- new sounds for rank promotion made by Merlkir
+("new_rank_evil", sf_2d|sf_priority_9|sf_vol_7, ["new_rank_evil.wav"]),
+("new_rank_good", sf_2d|sf_priority_9|sf_vol_7, ["new_rank_good.wav"]),
+
 ]
