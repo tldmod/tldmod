@@ -20016,5 +20016,20 @@ command_cursor_scripts = [
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts
 
+#swy-- WB: make it so upgrading troops from the party screen is free, just like in vanilla M&B 1.011, many thanks to mtarini for his fantastic help on Trello!
+if is_a_wb_script==1:
+  scripts += [
+
+  # script_game_get_upgrade_cost
+  # This script is called from game engine for calculating needed troop upgrade exp
+  # Input:
+  # param1: troop_id,
+  # Output: reg0 = needed cost for upgrade
+  ("game_get_upgrade_cost",
+    [
+     #(store_script_param_1, ":troop_id"),
+      (set_trigger_result, 0),
+    ]),
+  ]
 
 

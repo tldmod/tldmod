@@ -497,5 +497,6 @@ script_rout_enemies = 495
 script_coherence = 496
 script_cf_shift_pos1_along_y_axis_to_ground = 497
 script_shift_pos1_along_y_axis_to_ground_aux = 498
+script_game_get_upgrade_cost = 499
 
 
