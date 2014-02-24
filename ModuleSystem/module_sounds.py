@@ -267,7 +267,7 @@ sounds = [
 ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),
 ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
 
-("warg_lone_woof",sf_priority_6|sf_vol_10, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav"]),#,"warg_howl02.mp3","warg_howl03.mp3"
+("warg_lone_woof",sf_priority_6|sf_vol_10, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav","warg_howl02.mp3","warg_howl03.mp3"]),
 ("horse_snort_again",sf_priority_5|sf_vol_7, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 
 ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),

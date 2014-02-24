@@ -325,5 +325,7 @@ mesh_defiled_gondor_thigh2 = 323
 mesh_defiled_gondor_thigh3 = 324
 mesh_draw_lorien_magic = 325
 mesh_draw_war_starts = 326
+mesh_draw_bear = 327
+mesh_draw_wolf = 328
 
 
