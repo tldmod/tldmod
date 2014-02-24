@@ -8308,6 +8308,21 @@ game_menus = [
 		(assign, reg0, 0),
 		(str_store_troop_name, s2, reg20),
 	(try_end),
+  
+  (assign,":ambush_troop", reg20),
+  
+  #swy-- set the background mesh depending on what's going to attack us!
+  (try_begin),
+    (eq,":ambush_troop", "trp_spider"),
+    (set_background_mesh, "mesh_draw_spiders"),
+  (else_try),
+    (eq,":ambush_troop", "trp_bear"),
+    (set_background_mesh, "mesh_draw_bear"),
+  (else_try),
+    (eq,":ambush_troop", "trp_wolf"),
+    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+  (try_end),
+  
 	(str_store_string, s3, "@You cover up your tracks and move onward."), 
 ],
 [

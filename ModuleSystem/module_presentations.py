@@ -2661,8 +2661,12 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
+        ] + (wb_compile_switch==1 and [
+        
         #swy-- transparent mask for the WB HP bar
         (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        
+        ] or []) + [
         
         # cover up the HP bar
         (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
@@ -2738,8 +2742,12 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
+        ] + (wb_compile_switch==1 and [
+        
         #swy-- transparent mask for the WB HP bar
         (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        
+        ] or []) + [
         
         # cover up the HP bar
         (create_mesh_overlay, ":black_strip", "mesh_white_plane"),
