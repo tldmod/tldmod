@@ -948,26 +948,26 @@ str_comment_pledged_allegiance_allied_quarrelsome|J'ai entendu dire que vous avi
 str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur {s54}. Si j'étais lui, je ne vous ferais pas confiance pour nettoyer l'argenterie.
 str_comment_pledged_allegiance_allied_selfrighteous|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur {s54}. Combattez bravement et vous serez récompensé. Trahissez-nous, et nous ferons de vous un exemple qui ne sera pas oublié de sitôt.
 str_comment_pledged_allegiance_allied_cunning_unfriendly|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur {s54}. Je ne prétends pas être ravi de cette décision, mais peut-être qu'il est mieux de vous avoir dans notre tente et que vous uriniez dehors, plutôt que l'inverse.
-str_comment_pledged_allegiance_allied_cunning|I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress.
-str_comment_pledged_allegiance_allied_debauched_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death.
-str_comment_pledged_allegiance_allied_debauched|I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make.
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt.
-str_comment_pledged_allegiance_allied_goodnatured|I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity.
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong.
-str_comment_pledged_allegiance_allied_upstanding|I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift horse in affairs of arms.
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back.
-str_comment_our_king_granted_you_a_fief_allied_friendly|I heard that {s54} granted you {s51} as a fief. May your new lands prosper.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came.
-str_comment_our_king_granted_you_a_fief_allied_spiteful|I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor.
-str_comment_our_king_granted_you_a_fief_allied|I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself.
-str_comment_you_renounced_your_alliegance_enemy_friendly|I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle.
-str_comment_you_renounced_your_alliegance_friendly|I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows.
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor.
-str_comment_you_renounced_your_alliegance_enemy|I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies.
-str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
+str_comment_pledged_allegiance_allied_cunning|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. C'est bien. Plus nous avons de combattants compétents en ces temps troublés, mieux c'est. Je suivrai vos progrès.
+str_comment_pledged_allegiance_allied_debauched_unfriendly|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Nul doute que vous le trahirez bientôt, et j'aurai le plaisir de vous voir endurer la mort des traîtres.
+str_comment_pledged_allegiance_allied_debauched|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Excellent... je suis sûr que nous allons devenir de très bons amis. Mais rappelez-vous -- si vous nous trahissez, vous ferez la plus grosse erreur de votre vie.
+str_comment_pledged_allegiance_allied_goodnatured_unfriendly|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Bien, je ne peux pas dire que je vous aurais fait confiance, mais peut-être méritez-vous le bénéfice du doute.
+str_comment_pledged_allegiance_allied_goodnatured|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Vous êtes {un homme bon/une femme de bien} ! Notre seigneur est une noble âme, et récompense la loyauté et la valeur par la gentillesse et la générosité.
+str_comment_pledged_allegiance_allied_upstanding_unfriendly|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Hélas, d'après ce que je sais de vous, j'ai peur que vous nous disgraciez tous, mais je serais heureux que vous me prouviez le contraire.
+str_comment_pledged_allegiance_allied_upstanding|J'ai entendu dire que vous aviez prêté allégeance à notre seigneur, {s54}. Combattez nos ennemis avec valeur, mais aussi avec honneur et compassion. Un nom de valeur est aussi utile qu'une épée acérée ou qu'un cheval rapide, dans les affaires de la guerre.
+str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. N'oubliez pas -- ménagez le fouet et plaisez aux paysans !
+str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Je suis heureux de vous voir prospérer -- mais faites attention. Les hommes sont des vipères, envieux et cupides de la richesse de leurs voisins. Restez proche de moi, et je surveillerai vos arrières.
+str_comment_our_king_granted_you_a_fief_allied_friendly|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Puisse vos nouvelles terres prospérer.
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Souvenez-vous que l'orgueil précède la chute.
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Je pense, cependant, que cette fortune ne vous élève que pour vous humilier encore plus, lorsqu'elle vous rejettera dans le fumier d'où vous venez.
+str_comment_our_king_granted_you_a_fief_allied_spiteful|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Espérons que vous avez en effet mérité la faveur de notre seigneur.
+str_comment_our_king_granted_you_a_fief_allied|J'ai entendu dire que {s54} vous a accordé {s51} comme fief. Vous semblez bien vous porter.
+str_comment_you_renounced_your_alliegance_enemy_friendly|J'ai entendu dire que vous aviez renoncé à votre allégeance à notre seigneur, {s54}. Il me peine que nous devions maintenant nous rencontrer sur le champ de bataille.
+str_comment_you_renounced_your_alliegance_friendly|J'ai entendu dire que vous aviez renoncé à votre allégeance à notre seigneur, {s54}. Prions pour nous n'ayons pas à en venir aux armes.
+str_comment_you_renounced_your_alliegance_unfriendly_spiteful|J'ai toujours pensé que vous étiez un traître envers {s54}, et il semble maintenant que j'avais raison. J'espère que vous êtes préparé à la mort des traîtres !
+str_comment_you_renounced_your_alliegance_unfriendly_moralizing|J'ai entendu dire que vous aviez renoncé à votre allégeance à notre seigneur, {s54}. Je suis forcé de vous considérer comme un traître.
+str_comment_you_renounced_your_alliegance_enemy|J'ai entendu dire que vous aviez renoncé à votre allégeance à notre seigneur, {s54}. Bien, c'est la marche du monde pour de vieux camarades que de devenir ennemis. 
+str_comment_you_renounced_your_alliegance_default|J'ai entendu dire que vous aviez renoncé à votre allégeance à notre seigneur, {s54}. Bien, c'est votre décision, mais n'espérez pas que j'y aille doucement lorsque nous nous rencontrerons sur le champ de bataille.
 str_personality_archetypes|suzerain
 str_martial|martial
 str_quarrelsome|de mauvaise humeur
@@ -1013,25 +1013,25 @@ str_battle_won_martial|Il n'existe pas de plus grande fortune que la chance de p
 str_battle_won_quarrelsome|Hah ! Nous avons appris à ces bâtards une chose ou deux, n'est-ce pas ?
 str_battle_won_pitiless|Ensemble, nous ferons en sorte que nos ennemis apprennent à craindre nos noms, et à trembler à notre approche !
 str_battle_won_cunning|Maintenant, nous devons être sûrs de pousser notre avantage, pour que le sang versé aujourd'hui n'ait pas coulé en vain.
-str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
-str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
-str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
-str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
+str_battle_won_sadistic|Maintenant, dépouillons leurs morts et laissons-les aux corbeaux, que tous connaissent le destin que ceux qui s'opposent à nous.
+str_battle_won_goodnatured|C'était une belle bagarre ! Il n'est pas de joie égale à celle la victoire, eh ?
+str_battle_won_upstanding|Maintenant, remercions les cieux de notre victoire, et faisons le deuil des nombreux braves gens qui sont tombés aujourd'hui.
+str_battle_won_grudging_default|Vous avez aidé à renverser le sort sur le champ de bataille, aujourd'hui. Quoi que je puisse penser de vous, je ne peux vous reprocher votre valeur.
 str_battle_won_grudging_martial|{playername} -- vous avez prouvé être {un homme/une femme} digne aujourd'hui, quelques soient vos méfaits du passé.
-str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
-str_battle_won_grudging_pitiless|Your help was most valuable today. I would not imagine that you came to help me out of kindness, but I nonetheless thank you.
-str_battle_won_grudging_cunning|It would be unwise of me not to thank you for coming to help me in my hour of need. So... You have my gratitude.
-str_battle_won_grudging_sadistic|Well! How touching! {playername} has come to rescue me.
-str_battle_won_grudging_goodnatured|{playername}! I can't say that we've always gotten along in the past, but you fought well today. My thanks to you!
-str_battle_won_grudging_upstanding|Perhaps I was wrong about you. Your arrival was most timely. You have my gratitude.
+str_battle_won_grudging_quarrelsome|Hmf. Votre visage n'est pas de ceux que j'aime voir en temps normal, mais je suppose que je dois vous remercier pour votre aide.
+str_battle_won_grudging_pitiless|Votre aide fut très importante aujourd'hui. Je n'aurais pas imaginé que vous viendriez m'aider avec une telle bonté, mais je vous remercie néanmoins.
+str_battle_won_grudging_cunning|Il serait imprudent de ne pas vous remercier d'être venu à mon aide alors que j'étais dans le besoin. Donc... vous avez ma gratitude.
+str_battle_won_grudging_sadistic|Bien ! Que c'est touchant ! {playername} est venu à ma rescousse.
+str_battle_won_grudging_goodnatured|{playername} ! Je ne peux pas dire que nous ayons toujours été en bons termes par le passé, mais vous vous êtes bien battu aujourd'hui. Acceptez mes remerciements !
+str_battle_won_grudging_upstanding|Peut-être que j'avais tort à votre sujet. Votre arrivée était à point nommé. Vous avez ma gratitude.
 str_battle_won_unfriendly_default|Alors vous voilà. Et bien, mieux vaut tard que jamais, je suppose.
-str_battle_won_unfriendly_martial|We have hard harsh words in the past, but for now let us simply enjoy our victory.
-str_battle_won_unfriendly_quarrelsome|If you're standing there waiting for thanks, you can keep waiting. Your help wasn't really needed, but I guess you had nothing better to do, right?
-str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
-str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
-str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
-str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
-str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
+str_battle_won_unfriendly_martial|Nous avons eu des mots difficiles par le passé, mais pour l'instant profitons simplement de notre victoire.
+str_battle_won_unfriendly_quarrelsome|Si vous attendez des remerciements, vous pouvez continuer à attendre. Votre aide n'était pas nécessaire, mais je pense que vous n'aviez rien de mieux à faire, pas vrai ?
+str_battle_won_unfriendly_pitiless|Vous êtes venu ici, comme un chacal à la mort d'un lion. Très bien, prenez votre part du butin, je ne vous arrêterai pas.
+str_battle_won_unfriendly_cunning|{playername}... bien, je suppose que votre arrivée ne fait pas de mal, bien que je ne prétendrai pas que je suis heureux de vous voir.
+str_battle_won_unfriendly_sadistic|Fichez le camp, charognard ! C'est ma victoire, bien que vous essayiez de me voler toute la gloire.
+str_battle_won_unfriendly_goodnatured|Oh, c'est vous. Bien, je suppose que je devrais vous remercier pour votre aide.
+str_battle_won_unfriendly_upstanding|Merci d'être venu à mon soutien. Maintenant fichez le camp, avant que je dise quelque chose que je pourrais regretter.
 str_troop_train_request_default|J'ai besoin de quelqu'un comme vous pour les dresser.
 str_troop_train_request_martial|J'ai besoin de quelqu'un pour leur montrer la signification du courage.
 str_troop_train_request_quarrelsome|Bâtards paresseux et gras. Ils me font vomir.
@@ -1044,42 +1044,42 @@ str_unprovoked_attack_default|Quoi ? Pourquoi nous attaquez-vous ? Parlez, coqui
 str_unprovoked_attack_martial|Je n'ai pas d'objection à une passe d'arme, mais je voudrais vous demander pour quelle raison vous nous attaquez ?
 str_unprovoked_attack_quarrelsome|Vous faites une grosse erreur, {mon garçon/ma fille}. Que croyez-vous faire ?
 str_unprovoked_attack_pitiless|Vraiment ? Si vous voulez réellement mourir aujourd'hui, je serais plus que ravi de vous obliger, mais je suis aussi curieux de voir ce que vous espérez accomplir.
-str_unprovoked_attack_cunning|Really? I think that you are acting most unwisely. What do you hope to gain by this?
-str_unprovoked_attack_sadistic|What's this? Do you enjoy having your eyes put out?
+str_unprovoked_attack_cunning|Vraiment ? Je pense que vous agissez de manière imprudente. Qu'espériez-vous gagner ?
+str_unprovoked_attack_sadistic|Qu'est-ce ceci ? Aimez-vous voir les yeux braqués sur vous ?
 str_unprovoked_attack_goodnatured|Pourquoi faites-vous cela ? Nous n'avons pas de querelle, {sire/madame}.
-str_unprovoked_attack_upstanding|I consider this an unprovoked assault, and will protest to your king. Why do you do this?
-str_unnecessary_attack_default|I will not hesitate to cut you down if pressed, but I will offer you the chance to ride away from this.
-str_unnecessary_attack_martial|I am eager to take you up on your challenge, {sir/madame}, although I will give you a minute to reconsider.
-str_unnecessary_attack_quarrelsome|Bah! I'm in no mood for this nonsense today. Get out of my way.
-str_unnecessary_attack_pitiless|I am in a merciful mood today. I will pretend that I did not hear you.
-str_unnecessary_attack_cunning|I don't see what you have to gain by making an enemy of me. Maybe you should just ride away.
-str_unnecessary_attack_sadistic|I have no time to waste on a worm like you. Get out of my way.
-str_unnecessary_attack_goodnatured|I don't see what you have to gain by picking a fight, {sir/madame}. You can still ride away.
-str_unnecessary_attack_upstanding|If a fight is what you wish, {sir/madame}, then you will have one, but I will yet offer you the chance to back down.
-str_lord_challenged_default|As you wish. Prepare to die!
-str_lord_challenged_martial|So be it. Defend yourself!
-str_lord_challenged_quarrelsome|You impudent whelp! I'll crush you!
-str_lord_challenged_pitiless|If you so badly wish to die, then I have no choice but to oblige you.
-str_lord_challenged_cunning|Well, if you leave me no choice...
-str_lord_challenged_sadistic|You heap of filth! I'll make you wish you'd never been born.
-str_lord_challenged_goodnatured|Very well. I had hoped that we might avoid coming to blows, but I see that have no choice.
-str_lord_challenged_upstanding|So be it. It saddens me that you cannot be made to see reason.
-str_lord_mission_failed_default|Well, I am disappointed, but I am sure that you will have many chances to redeem yourself.
-str_lord_mission_failed_martial|There is no honour in failing a quest which you endeavoured to take, but I will accept your word on it.
-str_lord_mission_failed_quarrelsome|You failed? Bah. I should have expected as much from the likes of you.
-str_lord_mission_failed_pitiless|You failed? Well. You disappoint me. That is a most unwise thing to do.
-str_lord_mission_failed_cunning|Well, I am disappointed, but no one can guarantee that the winds of fortune will always blow their way.
-str_lord_mission_failed_sadistic|Indeed? Those who fail me do not always live to regret it.
-str_lord_mission_failed_goodnatured|Oh well. It was a long shot, anyway. Thank you for making an effort.
-str_lord_mission_failed_upstanding|Very well. I am sure that you gave it your best effort.
-str_lord_follow_refusal_default|Follow you? You forget your station, {sir/madame}.
-str_lord_follow_refusal_martial|Perhaps if you one day prove yourself a valorous and honourable warrior, then I would follow you. But not today.
-str_lord_follow_refusal_quarrelsome|Follow someone like you? I don't think so.
-str_lord_follow_refusal_pitiless|Lords like me do not follow people like you, {sir/madame}.
-str_lord_follow_refusal_cunning|First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you.
-str_lord_follow_refusal_sadistic|I think not! Rather, you should follow me, as a whipped cur follows {his/her} master.
-str_lord_follow_refusal_goodnatured|Um, I am a bit pressed with errands right now. Perhaps at a later date.
-str_lord_follow_refusal_upstanding|First show me that you are worthy to lead, and then perhaps I will follow.
+str_unprovoked_attack_upstanding|Je considère ceci comme une attaque non provoquée, et je me plaindrai à votre roi. Pourquoi faites-vous ceci ?
+str_unnecessary_attack_default|Je n'hésiterais pas à vous abattre si besoin, mais je vous offre la chance de partir loin de ceci.
+str_unnecessary_attack_martial|Je suis impatient de relever votre défi {sire/madame}, mais je vais vous laisser une minute pour reconsidérer la chose.
+str_unnecessary_attack_quarrelsome|Bah ! Je ne suis pas d'humeur ces bêtises. Restez loin de mon chemin.
+str_unnecessary_attack_pitiless|Je suis d'humeur miséricordieuse aujourd'hui. Je vais faire comme si je n'avais rien entendu.
+str_unnecessary_attack_cunning|Je ne vois pas ce que vous avez à gagner à faire de moi votre ennemi. Peut-être devriez-vous juste partir.
+str_unnecessary_attack_sadistic|Je n'ai pas de temps à perdre avec un ver comme. Ôtez-vous de mon chemin.
+str_unnecessary_attack_goodnatured|Je ne vois pas ce que vous avez à gagner à déclencher un combat {sire/madame}. Vous pouvez encore partir.
+str_unnecessary_attack_upstanding|Si un combat est ce que vous souhaitez, {sire/madame}, alors vous l'aurez, mais je vais vous laisser une chose de vous retirer.
+str_lord_challenged_default|Comme vous voulez. Préparez-vous à mourir !
+str_lord_challenged_martial|Ainsi soit-il. Défendez-vous !
+str_lord_challenged_quarrelsome|Morveux imprudent ! Je vais vous écraser !
+str_lord_challenged_pitiless|Si vous avez autant envie de mourir, je n'ai pas d'autre choix que de vous satisfaire.
+str_lord_challenged_cunning|Bien, vous ne me laissez pas le choix...
+str_lord_challenged_sadistic|Tas d'ordures ! Je vais vous faire regretter d'être né.
+str_lord_challenged_goodnatured|Très bien. J'espérais que nous puissions éviter d'en venir aux mains, mais je vois que je n'ai pas le choix.
+str_lord_challenged_upstanding|Ainsi soit-il. Il m'attriste que vous ne puissiez revenir à la raison.
+str_lord_mission_failed_default|Bien, je suis déçu, mais je suis sûr que vous aurez de nombreuses chances de vous racheter.
+str_lord_mission_failed_martial|Il n'y a aucun honneur à échouer dans une quête à laquelle vous vous étiez engagé, mais j'accepte votre parole à ce sujet.
+str_lord_mission_failed_quarrelsome|Vous avez échoué ? Bah. Je n'aurais pas dû en atteindre plus de quelqu'un tel que vous.
+str_lord_mission_failed_pitiless|Vous avez échoué ? Vous me décevez. C'est une chose des plus imprudentes à faire.
+str_lord_mission_failed_cunning|Bien, je suis déçu, mais personne ne garantit que les vents de la fortune ne tourneront pas.
+str_lord_mission_failed_sadistic|Vraiment ? Ceux qui échouent ne vivent pas toujours pour le regretter.
+str_lord_mission_failed_goodnatured|Oh d'accord. C'était un coup dans l'eau, de toute façon. Merci de vos efforts.
+str_lord_mission_failed_upstanding|Très bien, je suis sûr que avez fait de votre mieux.
+str_lord_follow_refusal_default|Vous suivre ? Vous oubliez votre place, {sire/madame}.
+str_lord_follow_refusal_martial|Peut-être un jour, si vous prouvez que vous êtes un guerrier honorable et valeureux, je vous suivrais. Mais pas aujourd'hui.
+str_lord_follow_refusal_quarrelsome|Suivre quelqu'un comme vous ? Je ne pense pas.
+str_lord_follow_refusal_pitiless|Les seigneurs comme moi ne suivent pas les gens comme vous, {sire/madame}.
+str_lord_follow_refusal_cunning|Montrez-moi d'abord que vous êtes le type {d'homme/de femme} qui ne mènera pas au désastre, et ensuite je vous suivrais peut-être.
+str_lord_follow_refusal_sadistic|Je ne pense pas ! Vous devriez plutôt me suivre, comme un chien suit {son/son} maître.
+str_lord_follow_refusal_goodnatured|Um, je suis un peu pressé par des affaires, en ce moment. Peut-être plus tard.
+str_lord_follow_refusal_upstanding|Montrez-moi d'abord que vous êtes digne de diriger, et peut-être que je vous suivrai.
 str_lord_insult_default|varlot de base
 str_lord_insult_martial|fripon déshonoré
 str_lord_insult_quarrelsome|ivrogne bâtard
@@ -1089,43 +1089,43 @@ str_lord_insult_sadistic|pleurnichard
 str_lord_insult_goodnatured|camarade désagréable
 str_lord_insult_upstanding|scélérat indigne
 str_rebellion_dilemma_default|[suzerain]
-str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
-str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
-str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
-str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
-str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
-str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
-str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
+str_rebellion_dilemma_martial|{s45} a clairement été lésé. Bien que j'ai prêté serment à {s46}, il ne m'engage pas à le soutenir s'il a usurpé illégalement le trône.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} ne m'a jamais donné mon dû, alors je ne pense pas lui devoir beaucoup. Cependant, peut-être que {s45} ne sera pas meilleur, et {s46} s'est au moins dévoilé lui-même.
+str_rebellion_dilemma_pitiless|Hmm. {s45} dit qu'{reg3?qu'elle est l'héritière:il est l'héritier} légitime du trône. Ce qui est bien -- cela m'absout de mon serment à {s46}. Mais je dois quand même soupeser ma décision avec précaution.
+str_rebellion_dilemma_cunning|Hmm. J'ai prêté allégeance à {s46}, mais les puissants ne sont pas liés par leurs serments comme les gens ordinaires. Notre devoir est envers notre propre capacité à régner, à imposer l'ordre et à empêcher la guerre de tous contre tous.
+str_rebellion_dilemma_sadistic|Hmm. Dans ce bas-monde, un homme avisé doit penser par lui-même, car personne ne le fera. Ainsi -- qu'y a-t-il pour moi ?
+str_rebellion_dilemma_goodnatured|Je ne sais quoi dire. J'ai prêté serment à {s46} comme souverain légitime, mais il n'est pas le souverain légitime. Je ne sais pas si je lui suis encore lié.
+str_rebellion_dilemma_upstanding|C'est délicat. C'est une chose grave que de déclarer mon allégeance à {s46} comme nulle et non avenue, et de dissoudre les liens qui empêchent notre terre de sombrer dans l'anarchie. Pourtant, je suis aussi engagé à soutenir la légitimité de la succession, et {s45} a également une revendication au trône valide.
 str_rebellion_dilemma_2_default|[suzeain]
-str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
-str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
-str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
-str_rebellion_dilemma_2_cunning|{s46} has been challenged, and thus he will never be able to rule as strongly as one whose claim has never been questioned. Yet if {s45} takes the throne by force, {reg3?she:he} will not be as strong as one who succeeded peacefully.
-str_rebellion_dilemma_2_sadistic|Perhaps if I join {s45} while {reg3?she:he} is still weak {reg3?she:he} will enrich me, but perhaps if I bring {s46} your head he will give me an even greater reward.
-str_rebellion_dilemma_2_goodnatured|{s46} has always treated me decently, yet it's true that he did wrong to {s45}. I hesitate to renounce my homage to {s46}, yet I also don't think it's right to support injustice.
-str_rebellion_dilemma_2_upstanding|I feel that I must do whatever is best for the realm, to avoid it being laid waste by civil war and ravaged by its enemies.
-str_rebellion_prior_argument_very_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-str_rebellion_prior_argument_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
-str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
-str_rebellion_rival_default|[liege]
-str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
-str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
-str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
-str_rebellion_rival_cunning|{s49} {s44}, who has already joined you, is headstrong and quarrelsome, and a bit of liability.
-str_rebellion_rival_sadistic|{s49} I have no desire to fight alongside your ally {s44}, who puts on such a nauseating display of virtue.
-str_rebellion_rival_goodnatured|{s49} I'd be reluctant to be on the same side as {s44}, who has quite a reputation for cruelty.
-str_rebellion_rival_upstanding|{s49} your ally {s44} is in my opinion a dangerous, unreliable, and highly unprincipled man.
-str_rebellion_argument_favorable|I respect your line of argument
-str_rebellion_argument_neutral|I find your line of argument only moderately compelling
-str_rebellion_argument_unfavorable|I do not find your line of argument compelling
-str_rebellion_persuasion_favorable|you state your case eloquently
-str_rebellion_persuasion_neutral|you make a reasonable case
-str_rebellion_persuasion_unfavorable|you make an unconvincing case
-str_rebellion_relation_very_favorable|I have the greatest respect for you personally.
-str_rebellion_relation_favorable|I know and respect you personally.
-str_rebellion_relation_neutral|I do not know you as well as I might like.
-str_rebellion_relation_unfavorable|I do not trust you.
+str_rebellion_dilemma_2_martial|D'un autre côté, {s46} nous a dirigé en temps de guerre comme en temps de paix, et je suis réticent à l'idée de renoncer à mon allégeance.
+str_rebellion_dilemma_2_quarrelsome|Alors dites-moi, pourquoi devrais-je tourner le dos au bâtard que je connais, en faveur {reg3?d'une femme:d'un bâtard} que je ne connais pas ?
+str_rebellion_dilemma_2_pitiless|C'est une périlleuse position que celle de se voir demander qui devrait être le {reg3?dirigeant:roi} de cette terre. Pourtant, c'est aussi l'opportunité de récolter les fruits qui ont toujours été mon dû.
+str_rebellion_dilemma_2_cunning|{s46} a été contesté, et ainsi il ne sera jamais capable de régner aussi fortement que quelqu'un qui ne l'a jamais été. Mais si {s45} prend le trône par la force, {reg3?elle ne sera pas aussi forte:il ne sera pas aussi fort} que quelqu'un qui aurait succédé pacifiquement.
+str_rebellion_dilemma_2_sadistic|Peut-être que si je rejoins {s45} alors qu'{reg3?elle:il} est toujours faible, {reg3?elle:il} m’enrichira, mais peut-être que si j'apporte votre tête à {s46}, il me donnera une plus grande récompense.
+str_rebellion_dilemma_2_goodnatured|{s46} m'a toujours traité décemment, mais il est vrai qu'il n'a pas été juste avec {s45}. J'hésite à renoncer à mon allégeance envers {s46}, mais je ne pense pas qu'il soit bien de soutenir l'injustice.
+str_rebellion_dilemma_2_upstanding|Je crois que je dois faire ce qui est le mieux pour le royaume, pour éviter de le voir déchiré par la guerre civile et ravagé par ses ennemis.
+str_rebellion_prior_argument_very_favorable|J'ai déjà entendu quelques arguments pour soutenir votre candidat au trône, et j'ai tendance à être d'accord.
+str_rebellion_prior_argument_favorable|J'ai déjà entendu quelques arguments pour soutenir votre candidat au trône, et j'ai tendance à être d'accord.
+str_rebellion_prior_argument_unfavorable|J'ai déjà entendu quelques arguments pour soutenir votre candidat au trône, mais je ne les trouve pas convaincants.
+str_rebellion_prior_argument_very_unfavorable|J'ai déjà entendu quelques arguments pour soutenir votre candidat au trône, mais je ne suis pas d'accord avec la plupart d'entre eux.
+str_rebellion_rival_default|[suzerain]
+str_rebellion_rival_martial|{s49} votre allié {s44} a une fois remis en cause mon honneur et ma bravoure. Ce n'est pas souvent que je reçoive l'opportunité de le confronter en bataille, et de lui faire retirer ses paroles.
+str_rebellion_rival_quarrelsome|{s49} vous travaillez avec {s44}. C'est une fouine rusée, et je n'ai pas du tout confiance en lui.
+str_rebellion_rival_pitiless|{s49} vous semblez avoir obtenu le soutien de {s44} -- qui est mou,  faible, n'est pas apte à gouverner un fief, et que j'ai toujours détesté.
+str_rebellion_rival_cunning|{s49} {s44}, qui vous a déjà rejoint, et entêté et querelleur, et peu fiable.
+str_rebellion_rival_sadistic|{s49} je n'ai aucun désir de combattre aux côtés de votre allié {s44}, qui affiche un tel étalage nauséabond de vertu.
+str_rebellion_rival_goodnatured|{s49} je serais réticent à être du même côté que {s44}, qui a une réputation de cruauté.
+str_rebellion_rival_upstanding|{s49} votre allié {s44} est un homme dangereux, peu fiable et sans principes, à mon avis.
+str_rebellion_argument_favorable|Je respecte vos arguments. 
+str_rebellion_argument_neutral|Je trouve vos arguments que modérément convaincants
+str_rebellion_argument_unfavorable|Je ne trouve pas vos arguments convaincants
+str_rebellion_persuasion_favorable|Vous affirmez votre cause avec éloquence
+str_rebellion_persuasion_neutral|c'est une affaire raisonnable
+str_rebellion_persuasion_unfavorable|c'est une affaire pas convaincante
+str_rebellion_relation_very_favorable|j'ai personnellement le plus grand respect pour vous.
+str_rebellion_relation_favorable|Je vous connais et vous respecte personnellement.
+str_rebellion_relation_neutral|Je ne vous connais pas autant que je l'aimerais.
+str_rebellion_relation_unfavorable|Je ne vous fais pas confiance.
 str_and_comma_3|En outre,
 str_but_comma_3|Cependant.
 str_and_comma_1|, et
@@ -1148,18 +1148,18 @@ str_talk_later_martial|Il n'est plus temps de parler politique ! Je suis là auj
 str_talk_later_quarrelsome|Vous attendez-vous à ce que je discute avec vous de trahir mon suzerain, alors que nous sommes encerclés par son armée ? Vous me prenez pour quoi ? Un maudit idiot ?
 str_talk_later_pitiless|Encore votre langue ! Quoi que j'ai à dire sur le sujet, je n'en parlerai pas ici et maintenant, alors que nous sommes au milieu de notre armée.
 str_talk_later_cunning|Ce n'est ni le lieu, ni l'endroit pour une telle discussion. Peut-être pourrions-nous en discuter plus tard et dans un lieu différent, mais pour l'instant nous sommes toujours ennemis.
-str_talk_later_sadistic|You should have your mouth sewn shut! Can you imagine what would happen if the other vassals see me talking to you of treason?
-str_talk_later_goodnatured|So you wish to discuss your rebellion with me? Try that again when we aren't surrounded by my liege's army, and I will hear what you have to say.
-str_talk_later_upstanding|Whatever my thoughts on the legitimacy of the succession, I am not about to discuss them here and now. If we meet again when we can talk in privacy, I will hear what you have to say on the matter. But for now, consider me your enemy.
-str_gossip_about_character_default|They say that {s6} doesn't possess any interesting character traits.
-str_gossip_about_character_martial|They say that {s6} loves nothing more than war.
-str_gossip_about_character_quarrelsome|They say that {s6} almost came to blows with another lord lately, because the man made a joke about his nose.
-str_gossip_about_character_selfrighteous|I heard that {s6} had a squire executed because the unfortunate man killed a deer in his forest.
-str_gossip_about_character_cunning|They say that {s6} is a cunning opponent.
-str_gossip_about_character_sadistic|They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man.
-str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
-str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
-str_latest_rumor|The latest rumor you heard about {s6} was:
+str_talk_later_sadistic|Vous devriez avoir la bouche cousue ! Pouvez-vous imaginer ce qui se passerait si les autres vassaux me voyaient parler avec vous de trahison ?
+str_talk_later_goodnatured|Vous voulez discuter de votre rébellion avec moi ? Essayez à nouveau lorsque nous ne serons plus encerclés par les armées de mon suzerain, et j'écouterai ce que vous avez à dire.
+str_talk_later_upstanding|Quelques soient mes opinions sur la légitimité de la succession, je ne suis pas ici pour en parler maintenant. Si nous nous revoyons lorsque nous pourrons parler en privé, j'entendrai ce que vous avez à dire sur le sujet. Pour l'instant, considérez-moi comme votre ennemi.
+str_gossip_about_character_default|On dit que {s6} ne possède aucun trait de caractère intéressant.
+str_gossip_about_character_martial|On dit que {s6} n'aime rien davantage que la guerre.
+str_gossip_about_character_quarrelsome|On dit que {s6} en est presque venu aux mains avec un autre seigneur, dernièrement, parce que l'autre avait fait une plaisanterie à propos de son nez.
+str_gossip_about_character_selfrighteous|J'ai entendu dire que {s6} a exécuté un écuyer car l'infortuné avait tué  un cerf dans sa forêt.
+str_gossip_about_character_cunning|On dit que {s6} est un adversaire rusé.
+str_gossip_about_character_sadistic|On dit que {s6} aime torturer ses ennemis. Je ne voudrais pas me retrouver du mauvais côté de cet homme.
+str_gossip_about_character_goodnatured|On dit que {s6} est un homme bon et traite décemment les gens qui vivent sur ses terres. C'est plus qu'on peut dire de la plupart des nobles.
+str_gossip_about_character_upstanding|Les gens disent qu'il est agréable d'être au service de {s6}. Il est bon avec ses suivants, et les récompense s'ils travaillent bien.
+str_latest_rumor|La dernière rumeur que vous avez entendu à propos de {s6} était :
 str_faction_strength_crushed|écrasé
 str_faction_strength_spent_and_wavering|fatigué et vacillant
 str_faction_strength_weakened|affaibli
@@ -1203,12 +1203,12 @@ str_party_greet_friend_khand|Jus jívati jyók, ami des Variags ! Vos cicatrices
 str_party_greet_enemy_khand|Mettez vos masques de guerre, car aujourd'hui vous rencontrez votre destin !
 str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, ami des Corsaires !
 str_party_greet_enemy_umbar|Si nous étions en mer, vous danseriez sur une planche assez tôt !
-str_party_greet_friend_moria|Hail the White Hand!
-str_party_greet_enemy_moria|You shall have your throats cut by the orcs of Moria!
-str_party_greet_friend_guldur|Victory for the Eye!
-str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
-str_party_greet_friend_gundabad|Fear the power of Angmar!
-str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
+str_party_greet_friend_moria|Vive la Main Blanche !
+str_party_greet_enemy_moria|Vous aurez vos gorges tranchées par les Orques de la Moria !
+str_party_greet_friend_guldur|Victoire pour l'Oeil !
+str_party_greet_enemy_guldur|Les Elfes et leurs amis tomberont sous nos lames !
+str_party_greet_friend_gundabad|Craignez le pouvoir de l'Angmar !
+str_party_greet_enemy_gundabad|Nous allons descendre sur vous et festoyer avec vos entrailles !
 str_party_greet_friend_dunland|Salutations, ennemi du Peuple des Chevaux !
 str_party_greet_enemy_dunland|Vos maisons brûleront et vos familles seront massacrées !
 str_party_greet_friend_beorn|Salutations, ami de Beorn !
@@ -1255,23 +1255,23 @@ str_gondor_rumor_11|Dol Guldur ? Jamais entendu parler.
 str_gondor_rumor_12|La Moria ? Les Nains y ont des mines, n'est ce pas ?
 str_gondor_rumor_13|Ne le dites à personne, mais je pense que le Prince Imrahil devrait devenir roi. Le Seigneur Denethor est un homme noble, mais le Gondor s'est beaucoup fané sous son règne. Et pas seulement depuis que son fils aîné est parti.
 str_gondor_rumor_14|Les gens disent que les Neufs chevauchent à nouveau hors de Minas Morgul. Je souhaiterais que nous ayons plus de braves capitaines comme Boromir pour mener nos hommes au combat contre de tels antiques ennemis.
-str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
-str_gondor_rumor_16|My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me.
-str_gondor_rumor_17|There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock.
-str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
-str_dwarf_rumor_begin|They ask us if dwarves have any friends. Of course we have friends. But we don't like them.
-str_dwarf_rumor_2|Orcs? Pfft! Axe-grease, all they are.
-str_dwarf_rumor_3|What's that you're wearing? It doesn't look like it would protect you from a bee sting. And it looks funny.
-str_dwarf_rumor_4|Of course we can ride horses. We just don't want to!
-str_dwarf_rumor_5|Bugger off! We don't need your sort around here, the orcs are bad enough.
-str_dwarf_rumor_6|Who are you calling short?
-str_dwarf_rumor_7|You should see the caves of Hornburg. If we could only mine all the gems there...
+str_gondor_rumor_15|Les Suderons nous poussent hors du Harondor. Ils nous harcèlent fortement depuis quelques temps. Je souhaite pouvoir marcher à nouveau à travers les champs verts du Lebennin. Mais on nous dit « non ». Nos soldats doivent protéger le coeur du royaume.
+str_gondor_rumor_16|Le cousin de mon ami est archer au service de Hirluin le Beau. Ils ont de loin les plus beaux uniformes, si vous voulez mon avis.
+str_gondor_rumor_17|Il y a un étrange rocher noir près d'Erech. J'y suis allé avec mon père, une fois. Les gens disent qu'il se trouve sur une chambre où repose le dernier des rois de la mer. Je pense que c'est juste un rocher.
+str_gondor_rumor_18|Nous sommes des gens de parole, nous les Gondoriens. Nous nous vantons rarement, et puis oeuvrons, ou mourrons en essayant.
+str_dwarf_rumor_begin|Ils nous demandent si les Nains ont des amis. Bien sûr que nous avons des amis. Mais nous ne les aimons pas.
+str_dwarf_rumor_2|Les Orques ? Pfft, ils ne sont que du lubrifiant pour épée.
+str_dwarf_rumor_3|Qu'est ce que c'est que vous portez ? On dirait que cela ne vous protégerait même pas d'une piqûre d'abeille. Et cela semble drôle.
+str_dwarf_rumor_4|Bien sûr que nous pouvons monter des chevaux. Nous n'en avons simplement pas envie !
+str_dwarf_rumor_5|Fichez le camp ! Nous n'avons pas besoin de gens comme vous par ici, les Orques sont suffisants.
+str_dwarf_rumor_6|Qui appelez-vous petit ?
+str_dwarf_rumor_7|Vous devriez voir les Cavernes de Fort-le-Cor. Si nous seulement nous pouvions exploiter toutes ces pierres précieuses...
 str_dwarf_rumor_8|Aucune nouvelle de nos frères de la Moria depuis quelques temps. Je parie qu'ils veulent juste garder toutes les richesses pour eux-mêmes !
 str_dwarf_rumor_9|Les Elfes ? Qu'ont déjà fait les Elfes pour nous ? D'accord, les arts de la guérison, mais à part ça ? Certes, quelques techniques de forgeage, mais quoi d'autre ? D'accord, ils combattent l'Ombre, mais à part ça, qu'ont-ils déjà fait pour nous, je vous le demande ?
 str_dwarf_rumor_10|Une chope de bière, un porc rôti, une fille à barbe épaisse, et je suis heureux !
 str_dwarf_rumor_11|Bien, Brian, j'ouvre une mine ! Quoi ? Ugh ? Bien, Brian, j'ouvre une mine !
-str_dwarf_rumor_12|We, Dwarves always build more than one entry into our mines. And then there's the secret ones too.
-str_dwarf_rumor_13|Strange are the ways of men.
+str_dwarf_rumor_12|Nous, les Nains, construisons toujours plus d'une entrée dans nos mines. Et puis il y a les entrées secrètes, aussi.
+str_dwarf_rumor_13|Étranges sont les coutumes des hommes.
 str_dwarf_rumor_14|Infatigable était le Peuple de Durin lorsque sous les montagnes la musique s'élevait. Les harpistes jouaient, les ménestrels chantaient, et aux portes les trompettes sonnaient.
 str_dwarf_rumor_15|*fredonne doucement* Tuer les Hommes ! Tuer les Hommes ! Garder l'or pour nous-mêmes !
 str_mordor_rumor_begin|Lugbúrz commande !
