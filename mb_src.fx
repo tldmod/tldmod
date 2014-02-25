@@ -36,6 +36,7 @@ Out.Tex0 = float4((2.f * dot(V,N) * N - V) * (iTexGenType == TEXGEN_TYPE_CAMERAS
         + N * (iTexGenType == TEXGEN_TYPE_CAMERASPACENORMAL)
         + P * (iTexGenType == TEXGEN_TYPE_CAMERASPACEPOSITION), 0);*/
 
+#pragma warning( disable : 3571)	//pow(f,e)
 
 
 // Structs and variables with default values
@@ -1048,9 +1049,38 @@ PS_OUTPUT ps_main_no_shadow_no_wrap(PS_INPUT_FONT In)
 
 
 
-VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false)
 {
    VS_OUTPUT Out = (VS_OUTPUT)0;
+   
+   
+   //swy-- constants, tailored constants everywhere! :)
+   if(swy_rohan_banners)
+   {
+	//swy-- if not metal thingy
+	if(tc.x < 0.944f)
+	{
+		//float seed = time_var + ((vPosition.y/vPosition.z) * 6.0f);
+		float seed = time_var + ((vPosition.x/vPosition.y/vPosition.z) * 1.0f);
+		
+		
+		float v_modulator;
+		
+		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
+		if(tc.x < 0.547f && tc.y > 0.789f)
+		{
+			v_modulator = tc.x * 0.5f;
+		}
+		
+		else
+		{
+			v_modulator = tc.y;
+		}
+		
+		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
+	}
+   }
+   
 
    Out.Pos = mul(matWorldViewProj, vPosition);
    
@@ -1102,6 +1132,20 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
 		//shadow mapping variables end
 	}
+	
+   if(swy_rohan_banners)
+   {
+      if(tc.x > 0.952f)
+      {
+        Out.Color = float4(0, 1.f, 0, 1.0f);
+      }
+	  
+      if(tc.x > 0.952f)
+      {
+        Out.Color = float4(0, 1.f, 0, 1.0f);
+      }
+
+   }
 	
    //apply fog
    float d = length(P);
@@ -2578,6 +2622,15 @@ technique diffuse
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
+technique diffuse_rohan_banners
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, true);
       PixelShader = compile ps_2_0 ps_main(PCF_NONE);
    }
 }

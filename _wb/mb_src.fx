@@ -1440,9 +1440,33 @@ struct VS_OUTPUT
 	float2 ShadowTexelPos		: TEXCOORD3;
 };
 
-VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1)
+VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false)
 {
 	INITIALIZE_OUTPUT(VS_OUTPUT, Out);
+	
+	//swy-- constants, tailored constants everywhere! :)
+	if(swy_rohan_banners)
+	{
+	 //swy-- if not metal thingy
+	 if(tc.x < 0.944f)
+	 {
+		float seed = time_var + ((vPosition.x/vPosition.y/vPosition.z) * 1.0f);
+		float v_modulator;
+		
+		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
+		if(tc.x < 0.547f && tc.y > 0.789f)
+		{
+			v_modulator = tc.x * 0.5f;
+		}
+		
+		else
+		{
+			v_modulator = tc.y;
+		}
+		
+		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
+	 }
+	}
 
 	Out.Pos = mul(matWorldViewProj, vPosition);
 
@@ -1577,6 +1601,7 @@ PS_OUTPUT ps_main(VS_OUTPUT In, uniform const int PcfMode)
 }
 
 VertexShader vs_main_compiled_PCF_NONE_true = compile vs_2_0 vs_main(PCF_NONE, true);
+VertexShader vs_main_compiled_PCF_NONE_true_rohan_banners = compile vs_2_0 vs_main(PCF_NONE, true, true);
 VertexShader vs_main_compiled_PCF_DEFAULT_true = compile vs_2_0 vs_main(PCF_DEFAULT, true);
 VertexShader vs_main_compiled_PCF_NVIDIA_true = compile vs_2_a vs_main(PCF_NVIDIA, true);
 
@@ -1597,6 +1622,16 @@ technique diffuse
 		PixelShader = ps_main_compiled_PCF_NONE;
 	}
 }
+
+technique diffuse_rohan_banners
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_NONE_true_rohan_banners;
+		PixelShader = ps_main_compiled_PCF_NONE;
+	}
+}
+
 technique diffuse_SHDW
 {
 	pass P0
