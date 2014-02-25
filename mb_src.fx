@@ -1057,10 +1057,10 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
    //swy-- constants, tailored constants everywhere! :)
    if(swy_rohan_banners)
    {
-	//swy-- if not metal thingy
-	if(tc.x < 0.944f)
-	{
-		float seed = time_var + ((vPosition.x/vPosition.y/vPosition.z) * 1.0f);
+	 //swy-- if not metal thingy
+	 if(tc.x < 0.944f)
+	 {
+		float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
 		float v_modulator;
 		
 		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
@@ -1075,7 +1075,7 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 		}
 		
 		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
-	}
+	 }
    }
    
 

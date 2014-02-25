@@ -1450,7 +1450,7 @@ VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, 
 	 //swy-- if not metal thingy
 	 if(tc.x < 0.944f)
 	 {
-		float seed = time_var + ((vPosition.x/vPosition.y/vPosition.z) * 1.0f);
+		float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
 		float v_modulator;
 		
 		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
