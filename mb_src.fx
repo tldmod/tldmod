@@ -1060,10 +1060,7 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 	//swy-- if not metal thingy
 	if(tc.x < 0.944f)
 	{
-		//float seed = time_var + ((vPosition.y/vPosition.z) * 6.0f);
 		float seed = time_var + ((vPosition.x/vPosition.y/vPosition.z) * 1.0f);
-		
-		
 		float v_modulator;
 		
 		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
@@ -1132,20 +1129,6 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 		Out.TexelPos = Out.ShadowTexCoord * fShadowMapSize;
 		//shadow mapping variables end
 	}
-	
-   if(swy_rohan_banners)
-   {
-      if(tc.x > 0.952f)
-      {
-        Out.Color = float4(0, 1.f, 0, 1.0f);
-      }
-	  
-      if(tc.x > 0.952f)
-      {
-        Out.Color = float4(0, 1.f, 0, 1.0f);
-      }
-
-   }
 	
    //apply fog
    float d = length(P);
