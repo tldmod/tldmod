@@ -2322,7 +2322,8 @@ scene_props = [
 
 ("distant_outer_tirith",sokf_place_at_origin|sokf_moveable,"outer_tirith","0",[]),
 
-("gothic_chair_nocol",0,"gothic_chair","0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
+("gothic_chair_nocol",0,"gothic_chair",  "0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
+("smaug_skeleton",    0,"smaug_skeleton","0", []), #swy--added unused but otherwise pretty cool (both technically and artistically) Smaug skeleton, for the Lone Mountain I guess.
 
 ("save_compartibility1",0,"0","0", []),
 ("save_compartibility2",0,"0","0", []),

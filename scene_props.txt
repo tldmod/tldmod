@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1543
+ 1544
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4667,6 +4667,9 @@ spr_distant_outer_tirith 69632 0 outer_tirith 0 0
 
 
 spr_gothic_chair_nocol 0 0 gothic_chair 0 0
+
+
+spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 
 
 spr_save_compartibility1 0 0 0 0 0
