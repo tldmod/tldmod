@@ -1,5 +1,5 @@
-trp_unarmed_troop|Troupe désarmée
-trp_unarmed_troop_pl|Troupes désarmées
+trp_unarmed_troop|Troupe non armée
+trp_unarmed_troop_pl|Troupes non armées
 trp_tutorial_maceman|Porteur de hache
 trp_tutorial_maceman_pl|Porteurs de haches
 trp_tutorial_archer|Archer
@@ -1109,11 +1109,11 @@ trp_smith_uhcamp_pl|Forge du camp
 trp_smith_urcamp|Glurk
 trp_smith_urcamp_pl|Forge du camp
 trp_smith_cgaladhon|Dirufin l'Archer
-trp_smith_cgaladhon_pl|Fabriquants elfes d'armes
+trp_smith_cgaladhon_pl|Fabricants d'armes elfiques
 trp_smith_cdolen|Dimirian Fabriquant de Flèches
-trp_smith_cdolen_pl|Fabriquants elfes d'armes
+trp_smith_cdolen_pl|Fabricants d'armes elfiques
 trp_smith_camroth|Getasistan
-trp_smith_camroth_pl|Fabriquants elfes d'armes
+trp_smith_camroth_pl|Fabricants d'armes elfiques
 trp_smith_thranduils_halls|Thurinor
 trp_smith_thranduils_halls_pl|Forge
 trp_smith_woodelf_camp|Calechir
@@ -1126,26 +1126,26 @@ trp_smith_dale|Ardel Main de Feu
 trp_smith_dale_pl|Forge
 trp_smith_esgaroth|Kelegarn l'Archer
 trp_smith_esgaroth_pl|Forge
-trp_smith_erebor|Thror le Fabriquant de Marteaux
+trp_smith_erebor|Thror le Marteleur
 trp_smith_erebor_pl|Forges naines réputées
-trp_smith_dunland|Dorrowuld Pique de Fer
+trp_smith_dunland|Dorrowuld Piquefer
 trp_smith_dunland_pl|Forge
-trp_smith_harad|Har Cintreur de Fer
+trp_smith_harad|Har Plielacier
 trp_smith_harad_pl|Forge
-trp_smith_khand|Pushurt le Marchand
+trp_smith_khand|Pushurt le Marchandeur
 trp_smith_khand_pl|Forge
 trp_smith_umbar|Fuinir le Forgeron
 trp_smith_umbar_pl|Forge
 trp_smith_imladris|Duifirian
-trp_smith_imladris_pl|Fabriquants elfes d'armes
+trp_smith_imladris_pl|Fabricants d'armes elfiques
 trp_smith_dolguldur|Shtazg Dulbash
 trp_smith_dolguldur_pl|Forge
 trp_smith_north_rhun|Ognjemir Kladivo
 trp_smith_north_rhun_pl|Forge de fortune
-trp_smith_gundabad|Blurg Vendeur des Neiges
+trp_smith_gundabad|Blurg Vendeurneige
 trp_smith_gundabad_pl|Forge
-trp_smith_ironhill|Forgeron des Monts de Fer
-trp_smith_ironhill_pl|Forgerons du Camp Nain
+trp_smith_ironhill|Forge des Monts du Fer
+trp_smith_ironhill_pl|Forgerons du camp nains
 trp_town_50_weaponsmith|Armurier
 trp_town_50_weaponsmith_pl|Forge
 trp_smith_gondor_ac|Bor l'Armurier
@@ -1157,198 +1157,198 @@ trp_smith_mordor_ac_pl|Forge
 trp_smith_isengard_ac|Burz Cogneur de Fer
 trp_smith_isengard_ac_pl|Forge souterraine
 trp_smith_lorien_ac|Dimirian Fabriquant de Flèches
-trp_smith_lorien_ac_pl|Fabriquants elfes d'armes
+trp_smith_lorien_ac_pl|Fabricants d'armes elfiques
 trp_smith_woodelf_ac|Dhoelath
 trp_smith_woodelf_ac_pl|Forge
-trp_smith_dwarf_ac|Forgeron des Monts de Fer
-trp_smith_dwarf_ac_pl|Forgerons du Camp Nain
-trp_smith_gundabad_ac|Blurg Vendeur des Neiges
+trp_smith_dwarf_ac|Forgeron des Monts du Fer
+trp_smith_dwarf_ac_pl|Forgerons de camp nains
+trp_smith_gundabad_ac|Blurg Vendeurneige
 trp_smith_gundabad_ac_pl|Forge
 trp_smith_rhun_ac|Branimir Bronnik
-trp_smith_rhun_ac_pl|Forge de ortune
+trp_smith_rhun_ac_pl|Forge de fortune
 trp_smith_guldur_ac|Shtazg Dulbash
 trp_smith_guldur_ac_pl|Forge
 trp_smith_imladris_ac|Duifirian
-trp_smith_imladris_ac_pl|Fabriquants elfes d'armes
-trp_smith_dunland_ac|Dorrowuld Pique de Fer
+trp_smith_imladris_ac_pl|Fabricants d'armes elfiques
+trp_smith_dunland_ac|Dorrowuld Piquefer
 trp_smith_dunland_ac_pl|Forge
-trp_smith_harad_ac|Har Cintreur de Fer
+trp_smith_harad_ac|Har Plielacier
 trp_smith_harad_ac_pl|Forge
-trp_smith_khand_ac|Pushurt le Marchand
+trp_smith_khand_ac|Pushurt le Marchandeur
 trp_smith_khand_ac_pl|Forge
 trp_smith_umbar_ac|Fuinir le Forgeron
 trp_smith_umbar_ac_pl|Forge
 trp_barman_mtirith|Tavernier
-trp_barman_mtirith_pl|La Citadelle 
+trp_barman_mtirith_pl|la Citadelle 
 trp_barman_pelargir|Tavernier
-trp_barman_pelargir_pl|Le Château
+trp_barman_pelargir_pl|le Château
 trp_barman_linhir|Tavernier
-trp_barman_linhir_pl|Le Château
+trp_barman_linhir_pl|le Château
 trp_barman_dolamroth|Tavernier
-trp_barman_dolamroth_pl|Le Château
+trp_barman_dolamroth_pl|le Château
 trp_barman_edhellond|Tavernier
-trp_barman_edhellond_pl|Le Château
+trp_barman_edhellond_pl|le Château
 trp_barman_lossarnach|Tavernier
-trp_barman_lossarnach_pl|Le Château
+trp_barman_lossarnach_pl|le Château
 trp_barman_tarnost|Tavernier
-trp_barman_tarnost_pl|Le Château
+trp_barman_tarnost_pl|le Château
 trp_barman_erech|Tavernier
-trp_barman_erech_pl|Le Château
+trp_barman_erech_pl|le Château
 trp_barman_pinnath|Tavernier
-trp_barman_pinnath_pl|Le Château
+trp_barman_pinnath_pl|le Château
 trp_barman_hannun|Tavernier
-trp_barman_hannun_pl|La Grotte Secrète
+trp_barman_hannun_pl|la Caverne secrète
 trp_barman_calembel|Tavernier
-trp_barman_calembel_pl|Le Château
+trp_barman_calembel_pl|le Château
 trp_barman_edoras|Tavernier
 trp_barman_edoras_pl|Meduseld, le Château d'Or
 trp_barman_aldburg|Tavernier
-trp_barman_aldburg_pl|Le Château
+trp_barman_aldburg_pl|le Château
 trp_barman_hornburg|Tavernier
-trp_barman_hornburg_pl|les Salles des Seigneurs
+trp_barman_hornburg_pl|les Halls du Seigneur
 trp_barman_eastemnet|Tavernier
-trp_barman_eastemnet_pl|Le Château
+trp_barman_eastemnet_pl|le Château
 trp_barman_westfold|Tavernier
-trp_barman_westfold_pl|Le Château
+trp_barman_westfold_pl|le Château
 trp_barman_westemnet|Tavernier
-trp_barman_westemnet_pl|Le Château
+trp_barman_westemnet_pl|le Château
 trp_barman_eastfold|Tavernier
-trp_barman_eastfold_pl|Le Château
+trp_barman_eastfold_pl|le Château
 trp_barman_baraddur|Tavernier
-trp_barman_baraddur_pl|Le Château
+trp_barman_baraddur_pl|le Château
 trp_barman_morannon|Tavernier
-trp_barman_morannon_pl|La Grotte des Chefs
+trp_barman_morannon_pl|le Chef de la Caverne
 trp_barman_mmorgul|Tavernier
-trp_barman_mmorgul_pl|La Tour
+trp_barman_mmorgul_pl|la Tour
 trp_barman_cungol|Tavernier
-trp_barman_cungol_pl|Le Château
+trp_barman_cungol_pl|le Château
 trp_barman_isengard|Tavernier
-trp_barman_isengard_pl|La Tour d'Orthanc
+trp_barman_isengard_pl|la Tour d'Orthanc
 trp_barman_cgaladhon|Tavernier
-trp_barman_cgaladhon_pl|Le Château des Arbres
+trp_barman_cgaladhon_pl|le Château-arbre
 trp_barman_cdolen|Tavernier
-trp_barman_cdolen_pl|Le Château des Arbres
+trp_barman_cdolen_pl|le Château-arbre
 trp_barman_camroth|Tavernier
-trp_barman_camroth_pl|Le Château des Arbres
+trp_barman_camroth_pl|le Château-arbre
 trp_barman_thalls|Tavernier
-trp_barman_thalls_pl|La Salle du Trône
+trp_barman_thalls_pl|la Salle du Trône
 trp_barman_beorn|Tavernier
-trp_barman_beorn_pl|La Maison de Beorn
+trp_barman_beorn_pl|Maison de Beorn
 trp_barman_moria|Tavernier
-trp_barman_moria_pl|La Chambre des Chefs
+trp_barman_moria_pl|la Chambre du Chef
 trp_barman_dale|Tavernier
-trp_barman_dale_pl|Le Château
+trp_barman_dale_pl|le Château
 trp_barman_esgaroth|Tavernier
-trp_barman_esgaroth_pl|La Salle
+trp_barman_esgaroth_pl|le Hall
 trp_barman_erebor|Tavernier
-trp_barman_erebor_pl|La Chambre des Seigneurs
+trp_barman_erebor_pl|la Chambre du Seigneur
 trp_barman_dolguldur|Tavernier
-trp_barman_dolguldur_pl|Le Château
-trp_merchant_mtirith|Approvisionneur
-trp_merchant_mtirith_pl|L'écurie et l'entrepôt
-trp_merchant_pelargir|Approvisionneur
-trp_merchant_pelargir_pl|L'écurie et l'entrepôt
-trp_merchant_linhir|Approvisionneur
-trp_merchant_linhir_pl|L'écurie et l'entrepôt
-trp_merchant_dolamroth|Approvisionneur
-trp_merchant_dolamroth_pl|L'écurie et l'entrepôt
-trp_merchant_edhellond|Approvisionneur
-trp_merchant_edhellond_pl|L'écurie et l'entrepôt
-trp_merchant_lossarnach|Approvisionneur
-trp_merchant_lossarnach_pl|L'écurie et l'entrepôt
-trp_merchant_tarnost|Approvisionneur
-trp_merchant_tarnost_pl|L'écurie et l'entrepôt
-trp_merchant_erech|Approvisionneur
-trp_merchant_erech_pl|L'écurie et l'entrepôt
-trp_merchant_pinnath|Approvisionneur
-trp_merchant_pinnath_pl|L'écurie et l'entrepôt
-trp_merchant_eosgiliath|Approvisionneur
-trp_merchant_eosgiliath_pl|L'écurie et l'entrepôt
-trp_merchant_wosgiliath|Approvisionneur
-trp_merchant_wosgiliath_pl|L'écurie et l'entrepôt
-trp_town_12_horse_merchant|Approvisionneur
-trp_town_12_horse_merchant_pl|L'écurie et l'entrepôt
-trp_town_13_horse_merchant|Approvisionneur
-trp_town_13_horse_merchant_pl|L'écurie et l'entrepôt
-trp_merchant_edoras|Approvisionneuse
-trp_merchant_edoras_pl|L'écurie et l'entrepôt
-trp_merchant_aldburg|Approvisionneur
-trp_merchant_aldburg_pl|Les écuries du Roi et l'entrepôt
-trp_merchant_hornburg|Approvisionneur
-trp_merchant_hornburg_pl|L'écurie et l'entrepôt
-trp_merchant_eastemnet|Approvisionneur
-trp_merchant_eastemnet_pl|L'écurie et l'entrepôt
-trp_merchant_westfold|Approvisionneuse
-trp_merchant_westfold_pl|L'écurie et l'entrepôt
-trp_merchant_westemnet|Approvisionneuse
-trp_merchant_westemnet_pl|L'écurie et l'entrepôt
-trp_merchant_eastfold|Approvisionneuse
-trp_merchant_eastfold_pl|L'écurie et l'entrepôt
-trp_town_21_horse_merchant|Approvisionneur
-trp_town_21_horse_merchant_pl|La fosse et l'entrepôt
-trp_merchant_morannon|Approvisionneur
-trp_merchant_morannon_pl|La fosse et l'entrepôt
-trp_merchant_mmorgul|Approvisionneur
-trp_merchant_mmorgul_pl|La fosse et l'entrepôt
-trp_town_24_horse_merchant|Approvisionneur
-trp_town_24_horse_merchant_pl|La fosse et l'entrepôt
-trp_merchant_orc_patrol|Approvisionneur
-trp_merchant_orc_patrol_pl|Réserve cachée de provisions du camp
-trp_merchant_isengard|Approvisionneur
-trp_merchant_isengard_pl|Réserve cachée de provisions du camp
-trp_town_27_horse_merchant|Approvisionneur
-trp_town_27_horse_merchant_pl|Fosse à Wargs et provisions
-trp_merchant_uoutpost|Approvisionneur
-trp_merchant_uoutpost_pl|Fosse à Wargs et provisions
-trp_merchant_uhcamp|Approvisionneur
-trp_merchant_uhcamp_pl|Fosse à Wargs et provisions
-trp_merchant_urcamp|Approvisionneur
-trp_merchant_urcamp_pl|Fosse à Wargs et provisions
-trp_merchant_cgaladhon|Approvisionneur
-trp_merchant_cgaladhon_pl|Provisions elfiques
-trp_merchant_cdolen|Approvisionneur
-trp_merchant_cdolen_pl|Provisions elfiques
-trp_merchant_camroth|Approvisionneur
-trp_merchant_camroth_pl|Provisions elfiques
-trp_merchant_thranduils_halls|Approvisionneur
-trp_merchant_thranduils_halls_pl|Provisions elfiques
-trp_merchant_woodelf_camp|Approvisionneur
-trp_merchant_woodelf_camp_pl|Provisions elfiques
-trp_merchant_woodmen|Approvisionneur
-trp_merchant_woodmen_pl|L'écurie et l'entrepôt
-trp_merchant_beorn|Approvisionneur
-trp_merchant_beorn_pl|L'écurie et l'entrepôt
-trp_merchant_moria|Approvisionneur
-trp_merchant_moria_pl|Fosse à Wargs et provisions
-trp_merchant_dale|Approvisionneur
-trp_merchant_dale_pl|L'écurie et l'entrepôt
-trp_merchant_esgaroth|Approvisionneur
-trp_merchant_esgaroth_pl|L'écurie et l'entrepôt
-trp_merchant_erebor|Approvisionneur
-trp_merchant_erebor_pl|Provisions naines
-trp_merchant_dunland|Maîtres des Provisions du Pays de Dun
-trp_merchant_dunland_pl|Réserve cachée de provisions du camp
-trp_merchant_harad|Maître des Provisions du Harad
-trp_merchant_harad_pl|Réserve cachée de provisions du camp
-trp_merchant_khand|Maître des Provisions du Khand
-trp_merchant_khand_pl|Réserve cachée de provisions du camp
-trp_merchant_umbar|Approvisionneur
-trp_merchant_umbar_pl|Réserve cachée de provisions du camp
-trp_merchant_imladris|Approvisionneur
-trp_merchant_imladris_pl|Provisions du camp
-trp_merchant_dolguldur|Approvisionneur
-trp_merchant_dolguldur_pl|L'écurie et l'entrepôt
-trp_merchant_north_rhun|Approvisionneur
-trp_merchant_north_rhun_pl|Réserve cachée de provisions du camp
-trp_merchant_south_rhun|Approvisionneur
-trp_merchant_south_rhun_pl|Réserve cachée de provisions du camp
-trp_merchant_gundabad|Approvisionneur
-trp_merchant_gundabad_pl|Réserve cachée de provisions du camp
-trp_merchant_ironhill|Approvisionneur
-trp_merchant_ironhill_pl|Provisions naines
-trp_town_50_horse_merchant|Approvisionneur
-trp_town_50_horse_merchant_pl|L'écurie et l'entrepôt
-trp_merchant_calembel|Approvisionneur
+trp_barman_dolguldur_pl|le Château
+trp_merchant_mtirith|Maître de l'approvisionnement
+trp_merchant_mtirith_pl|étable et entrepôt
+trp_merchant_pelargir|Maître de l'approvisionnement
+trp_merchant_pelargir_pl|étable et entrepôt
+trp_merchant_linhir|Maître de l'approvisionnement
+trp_merchant_linhir_pl|étable et entrepôt
+trp_merchant_dolamroth|Maître de l'approvisionnement
+trp_merchant_dolamroth_pl|étable et entrepôt
+trp_merchant_edhellond|Maître de l'approvisionnement
+trp_merchant_edhellond_pl|étable et entrepôt
+trp_merchant_lossarnach|Maître de l'approvisionnement
+trp_merchant_lossarnach_pl|étable et entrepôt
+trp_merchant_tarnost|Maître de l'approvisionnement
+trp_merchant_tarnost_pl|étable et entrepôt
+trp_merchant_erech|Maître de l'approvisionnement
+trp_merchant_erech_pl|étable et entrepôt
+trp_merchant_pinnath|Maître de l'approvisionnement
+trp_merchant_pinnath_pl|étable et entrepôt
+trp_merchant_eosgiliath|Maître de l'approvisionnement
+trp_merchant_eosgiliath_pl|écurie et entrepôt
+trp_merchant_wosgiliath|Maître de l'approvisionnement
+trp_merchant_wosgiliath_pl|écurie et entrepôt
+trp_town_12_horse_merchant|Maître de l'approvisionnement
+trp_town_12_horse_merchant_pl|écurie et entrepôt
+trp_town_13_horse_merchant|Maître de l'approvisionnement
+trp_town_13_horse_merchant_pl|écurie et entrepôt
+trp_merchant_edoras|Maîtresse de l'approvisionnement
+trp_merchant_edoras_pl|écurie et entrepôt
+trp_merchant_aldburg|Maître de l'approvisionnement
+trp_merchant_aldburg_pl|écurie du Roi et entrepôt
+trp_merchant_hornburg|Maître de l'approvisionnement
+trp_merchant_hornburg_pl|écurie et entrepôt
+trp_merchant_eastemnet|Maître de l'approvisionnement
+trp_merchant_eastemnet_pl|écurie et entrepôt
+trp_merchant_westfold|Maîtresse de l'approvisionnement
+trp_merchant_westfold_pl|écurie et entrepôt
+trp_merchant_westemnet|Maîtresse de l'approvisionnement
+trp_merchant_westemnet_pl|écurie et entrepôt
+trp_merchant_eastfold|Maîtresse de l'approvisionnement
+trp_merchant_eastfold_pl|écurie et entrepôt
+trp_town_21_horse_merchant|Maître de l'approvisionnement
+trp_town_21_horse_merchant_pl|fosse et entrepôt
+trp_merchant_morannon|Maître de l'approvisionnement
+trp_merchant_morannon_pl|fosse et entrepôt
+trp_merchant_mmorgul|Maître de l'approvisionnement
+trp_merchant_mmorgul_pl|fosse et entrepôt
+trp_town_24_horse_merchant|Maître de l'approvisionnement
+trp_town_24_horse_merchant_pl|fosse et entrepôt
+trp_merchant_orc_patrol|Maître de l'approvisionnement
+trp_merchant_orc_patrol_pl|Planque du camp
+trp_merchant_isengard|Maître de l'approvisionnement
+trp_merchant_isengard_pl|Planque du camp
+trp_town_27_horse_merchant|Maître de l'approvisionnement
+trp_town_27_horse_merchant_pl|fosse à Wargs et fournitures
+trp_merchant_uoutpost|Maître de l'approvisionnement
+trp_merchant_uoutpost_pl|Fosse à Wargs et fournitures
+trp_merchant_uhcamp|Maître de l'approvisionnement
+trp_merchant_uhcamp_pl|Fosse à Wargs et fournitures
+trp_merchant_urcamp|Maître de l'approvisionnement
+trp_merchant_urcamp_pl|Fosse à Wargs et fournitures
+trp_merchant_cgaladhon|Maître de l'approvisionnement
+trp_merchant_cgaladhon_pl|Fournitures elfiques
+trp_merchant_cdolen|Maître de l'approvisionnement
+trp_merchant_cdolen_pl|Fournitures elfiques
+trp_merchant_camroth|Maître de l'approvisionnement
+trp_merchant_camroth_pl|Fournitures elfiques
+trp_merchant_thranduils_halls|Maître de l'approvisionnement
+trp_merchant_thranduils_halls_pl|Fournitures elfiques
+trp_merchant_woodelf_camp|Maître de l'approvisionnement
+trp_merchant_woodelf_camp_pl|Fournitures elfiques
+trp_merchant_woodmen|Maître de l'approvisionnement
+trp_merchant_woodmen_pl|écurie et entrepôt
+trp_merchant_beorn|Maître de l'approvisionnement
+trp_merchant_beorn_pl|écurie et entrepôt
+trp_merchant_moria|Maître de l'approvisionnement
+trp_merchant_moria_pl|Fosse à Wargs et fournitures
+trp_merchant_dale|Maître de l'approvisionnement
+trp_merchant_dale_pl|écurie et entrepôt
+trp_merchant_esgaroth|Maître de l'approvisionnement
+trp_merchant_esgaroth_pl|écurie et entrepôt
+trp_merchant_erebor|Maître de l'approvisionnement
+trp_merchant_erebor_pl|Fournitures naines
+trp_merchant_dunland|Maître des fournitures du Pays de Dun
+trp_merchant_dunland_pl|Planque du camp
+trp_merchant_harad|Maître des provisions du Harad
+trp_merchant_harad_pl|Planque du camp
+trp_merchant_khand|Maître des fournitures de Khand
+trp_merchant_khand_pl|Planque du camp
+trp_merchant_umbar|Maître de l'approvisionnement
+trp_merchant_umbar_pl|Planque du camp
+trp_merchant_imladris|Maître de l'approvisionnement
+trp_merchant_imladris_pl|Fournitures du camp
+trp_merchant_dolguldur|Maître de l'approvisionnement
+trp_merchant_dolguldur_pl|écurie et entrepôt
+trp_merchant_north_rhun|Maître de l'approvisionnement
+trp_merchant_north_rhun_pl|Planque du camp
+trp_merchant_south_rhun|Maître de l'approvisionnement
+trp_merchant_south_rhun_pl|Planque du camp
+trp_merchant_gundabad|Maître de l'approvisionnement
+trp_merchant_gundabad_pl|Planque du camp
+trp_merchant_ironhill|Maître de l'approvisionnement
+trp_merchant_ironhill_pl|Fournitures naines
+trp_town_50_horse_merchant|Maître de l'approvisionnement
+trp_town_50_horse_merchant_pl|écurie et entrepôt
+trp_merchant_calembel|Maître de l'approvisionnement
 trp_merchant_calembel_pl|L'écurie et l'entrepôt
 trp_elder_mtirith|Maître de la Guilde de Tirith
 trp_elder_mtirith_pl|La Cité Blanche
@@ -1505,7 +1505,7 @@ trp_ent_1|Bregalad
 trp_ent_2|Finglas
 trp_ent_3|Fladrif
 trp_gandalf|Gandalf
-trp_gandalf_pl|Home-grown Gandalves
+trp_gandalf_pl|Gandalfs maisons
 trp_nazgul|Nazgûl
 trp_nazgul_pl|Nazgûl domestiqué
 trp_barman|Barman

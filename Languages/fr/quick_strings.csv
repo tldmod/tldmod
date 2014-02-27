@@ -784,7 +784,7 @@ qstr_Um..._by_enchanting_|Um... avec du fer enchanté ?
 qstr_Magnets_are_made_of_|Les aimants sont faits de métal, qui est extrait du sol. Ils sont magnétiques parce que le métal contient toujours des morceaux de gravité à l'intérieur.
 qstr_i_wont_a_bonerlrord_|je vo un portaje bonerlrrd nao !! 11
 qstr_I_m_sure_the_TLD_tea|Je suis sûr que l'équipe de TLD y arrivera quand ils pourront.
-qstr_Install_TLD_in_your_|Install TLD in your Warband Modules folder, add the line 'compatible with warband = 1' to module.ini, and you can play it on Warband!
+qstr_Install_TLD_in_your_|Installez TLD dans le répertoire Modules de Bannerlord, ajoutez la ligne 'compatible_with_wfas = 1' dans module.ini, et vous pourrez y jouer à la fois avec Warband ET Warrider 0.202 !
 qstr_dis_mod_takes_2_long|ce mode a mi 2 an a sortir ! ces nulle!
 qstr_Well_there_s_a_lot_o|Et bien, il y a beaucoup de nouveaux graphismes et autres, j'imagine que ça prend du temps.
 qstr_It_has_been_recently|Il est sorti récemment. Si vous avez manqué le lien, vous pouvez le télécharger à lemonparty.org.
@@ -858,9 +858,9 @@ qstr_I_am_{s4}_{s15}_of_{|Je suis {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Je suis {s4}, un commandant de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? et le dirigeant de {s8}.:.
 qstr_Very_well_done_{play|Très bien, {playername} ! Vous avez capturé à la fois l'espion et son commanditaire, comme je l'espérais, et le duo est maintenant sous bonne garde, attendant d'être interrogé. Ils auront quelques explications à donner ! En tout cas, je suis très heureux de votre succès, {playername}, et je vous donne cette bourse en témoignage de ma gratitude.
-qstr_Beautiful_work_{play|Beau travail, {playername} ! Vous avez capturé à la fois l'espion et son commanditaire, comme il vous était demandé, et la paire est maintenant sous bonne garde dans mon donjon, attendant d'être interrogée. Mon bourreau sera occupé, cette nuit ! Quoi qu'il en soit, je suis très satisfais de votre succès, {playername}, et je vous donne cette bourse en guise en gage de ma gratitude.
-qstr_Your_mission_is_comp|Votre mission est terminée, {s9} veut que vous le suiviez à nouveau jusqu'à nouvelles instructions.
-qstr_{s13}_asked_you_to_g|{s13} vous a demandé de réunir {reg3} unités de{s4} et de le lui apporter.
+qstr_Beautiful_work_{play|Beau travail, {playername} ! Vous avez capturé à la fois l'espion et son commanditaire, comme il vous l'était demandé, et la paire est maintenant sous bonne garde dans mon donjon, attendant d'être interrogée. Mon bourreau sera occupé, cette nuit ! Quoi qu'il en soit, je suis très satisfais de votre succès, {playername}, et je vous donne cette bourse en guise en gage de ma gratitude.
+qstr_Your_mission_is_comp|Votre mission est terminée, {s9} veut que vous le suiviez à nouveau jusqu'à nouvel ordre.
+qstr_{s13}_asked_you_to_g|{s13} vous a demandé de réunir {reg3} unités de {s4} et de les lui apporter.
 qstr_{s9}_asked_you_to_sc|{s9} vous a demandé d'explorer {s13}, {s14} et {s15}, et de faire votre rapport.
 qstr_You_have_been_most_h|Vous avez été d'une grande aide, {playername}. Mes remerciements.
 qstr_You_are_a_good_serva|Vous êtes un bon servant, {playername}. Continuez comme ça.
@@ -878,7 +878,7 @@ qstr_Do_you_need_reinforc|Avez-vous besoin de renforts ?
 qstr_You_don_t_look_too_s|Vous n'avez pas l'air très forts, avez-vous besoin de troupes ?
 qstr_^{s14}_is_grateful_t|^{s14} vous est reconnaissant, {playername}, {s29}^
 qstr_{s31}{reg28?Those:That|{s31}{reg28?Ces:Ce } {reg28?braves:brave} {reg28?soldats:soldat} vous {reg28?aideront:aidera} sûrement à défendre vos terres.{s32}^^[Vous avez gagné {reg14} Points de Ressources de {s14}]
-qstr_{s31}{reg28?Those:That}|{s31}{reg28?Ces:cette } {reg28?troupes:troupe} nous aidera à faire plus de ravages.{s32}^^[Vous avez gagné {reg14} Points de Ressources de {s14}]
+qstr_{s31}{reg28?Those:That}|{s31}{reg28?Ces:cette } {reg28?troupes nous aideront:troupe nous aidera} à faire plus de ravages.{s32}^^[Vous avez gagné {reg14} Points de Ressource de {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, et reprenez ces soldats qui ne sont pas des nôtres, nous n'en avons pas l'utilité.
 qstr_It_is_my_duty_to_hel|C’est mon devoir d’aider nos gens.
 qstr_It_is_my_duty_to_help|C’est mon devoir de venir en aide à nos alliés.
@@ -893,101 +893,101 @@ qstr_You_have_requested_t|Vous avez demandé à faire un don de {s1} à {s3} dep
 qstr_Bribe|Pot de vin
 qstr_You_have_requested_to|Vous avez demandé à offrir un pot de vin à {s1} de {s3} depuis {s2}. Avec un peu de chance, vous obtiendrez quelque récompense en échange.
 qstr_Taking_{reg0}_inf._A|Prend {reg0} inf. Alt?={reg1}
-qstr_You_spent_{reg0}_of_|Vous dépensez {reg0} de votre influence avec {s1}, et {reg1} restant.
-qstr_The_War_is_over_{pla|La guerre est terminée, {playername}, Vous ne l’avez point entendu ?
-qstr_We_are_at_war_with_{|Nous sommes en guerre avec {s12}. Cependant, nous combattons essentiellement {s13}.
+qstr_You_spent_{reg0}_of_|Vous dépensez {reg0} de votre influence avec {s1}, avec {reg1} restants.
+qstr_The_War_is_over_{pla|La Guerre est terminée, {playername}, vous ne le saviez pas ?
+qstr_We_are_at_war_with_{|Nous sommes en guerre avec {s12}. Cependant, nous combattons essentiellement contre {s13}.
 qstr_We_are_at_war_with_{s|Nous sommes en guerre avec {s12}. Cependant, il n’y a que de petites escarmouches pour l’instant.
 qstr_we_are_not_too_conce|Ils ne nous préocupent pas vraiment pour l’instant, nous combattons d’autres ennemis plus proches de nos terres.
-qstr__under_your_orders| A vos orders.
-qstr_These_soldiers_may_w|Ces soldats pourraient faire tourner le vent en ma faveur, {playername}. Je vous fais confiance, vous les entrainerez bien. Merci à vous, vous avez ma consideration.
-qstr_Good_work_in_shaping|Vous avez fait un beau travail en formant ces recrues, {playername}, vous m’avez été plus qu’utile. J’espère que ce sont les derniers du lot, mais revenez me voir si ce n’est pas le cas. 
-qstr_Well_the_soldiers_ar|Fort bien, ces homes sont sous votre commandement désormais sir. Je suis sûr que vous prendrez soin d’eux.
-qstr_Well_you_may_do_as_y|Fort bien, vous pouvez faire ce qui vous plait. Mes compagnons et moi meme pouvons toujours vous renforcer si besoin.
+qstr__under_your_orders|, à vos ordres
+qstr_These_soldiers_may_w|Ces soldats pourraient faire tourner le vent en ma faveur, {playername}. Je vous fais confiance, vous les entraînerez bien. Merci à vous, et tous mes compliments.
+qstr_Good_work_in_shaping|Vous avez fait un beau travail en formant ces recrues, {playername}, vous m’avez été plus qu’utile. J'espère qu'ils dureront plus longtemps que le dernier groupe, mais venez me voir à nouveau si ce n'est pas le cas. 
+qstr_Well_the_soldiers_ar|Fort bien, ces hommes sont désormais sous votre commandement, sire. Je suis sûr que vous prendrez soin d’eux.
+qstr_Well_you_may_do_as_y|Fort bien, faites comme vous l'entendez. Mes compagnons et moi-même pourront toujours nous endurcir, si nécessaire.
 qstr_{s9}_asked_you_to_br|{s9} vous a demandé de ramener un Troll sauvage pour l'utiliser dans son armée.
 qstr_{s9}_asked_you_to_fi|{s9} vous a demandé de découvrir ce qui se passe dans la Forêt de Fangorn, et de faire votre rapport.
 qstr_{s9}_asked_you_to_fin|{s9} vous a demandé de trouver les lances perdues que les Nains ont autrefois fabriqués pour le Roi Bladorthin. Vous devrez demander à {s5} la permission de chercher les lances dans les profondeurs de la Montagne Solitaire.
-qstr_{s9}_has_asked_you_t|{s9} vous a demandé de délivrer {reg1} prisonniers.
-qstr_{s9}_asked_you_to_ta|{s9} vous a mandé d’aller porter ce message à {s13}. {s13} était censé être à {s4} lorsque cettre tâche vous a été confiée.
-qstr_{s9}_asked_you_to_tak|{s9} vous a mandé d’aller porter ce message à {s13} du {s15}. {s13} était censé être à {s4} lorsque cette tâche vous a été confiée.
+qstr_{s9}_has_asked_you_t|{s9} vous a demandé de tuer le sorcier de Dol Guldur dans la Forêt Noire.
+qstr_{s9}_asked_you_to_ta|{s9} vous a demandé d’aller porter un message à {s13}. {s13} était censé être à {s4} lorsque cette tâche vous a été confiée.
+qstr_{s9}_asked_you_to_tak|{s9} vous a demandé d’aller porter un message à {s13} de {s15}. {s13} était censé être à {s4} lorsque cette tâche vous a été confiée.
 qstr_{s11}_asked_you_to_e|{s11} vous a demandé d’escorter son messager jusqu’à {s14}.
-qstr_Lend_your_experience|Fournissez votre chirurgien expérimenté {s3} à {s1}.
-qstr_No_commander_should_|Aucun commandant ne devrait avoir à le reconnaitre, {playername}, mais j’ai passé mes hommes en revue l’autre jour et il y a parmi eux un grand nombre d’homme qui ne savent pas pas par quelle bout tenir une épée. Ils ont besoin de quelqu’un qui pourrait leur montrer ce qu’est le courage. Vous êtes un guerrier de renom, {playername}. Pourriez-vous entrainer une partie de mes troupes pour moi ? Je vous en serais reconnaissant.
-qstr_No_commander_should_h|Aucun commandant de devrait avoir à le reconnaitre, {playername}, mais j’ai passé mes hommes en revue l’autre jour et execute un certain nombre pour leur incompetence. Ils ont besoin de quelqu’un dur comme l’acier pour leur insuffler un peu de courage, ou les tuer en essayant. Vous êtes un guerrier de, {playername}. Pourriez-vous entrainer une partie de mes troupes pour moi ? ? Ce serait louable de votre part.
-qstr_{s9}_asked_you_to_ra|{s9} vous a demandé de rallier {reg1} {s14} et de les lui ramener.
-qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un fugitif du nom de {s4}. Il devrait être {s3}.
-qstr_{s9}_asked_you_to_ca|{s9} vous a demandé de capture les trois groups d’esclaves en cavale et de les ramener à slaves and bring them back to {s4}, en vie et en bonne santé. Il a dit que les trois groupes se dirigent en direction de {s3}.
-qstr_{s11}_asked_you_to_f|{s11} vous a demandé de suivre l’espion qui va. Faîtes bien attention à ce que l’espion ne vous apercoive pas en chemin, ou il pourrait avoir des soupçons et faire demi-tour. Une fois que l’espion aura rejoint ses complices, vous devez les capturez et les ramener à {s11}.
-qstr_{s11}_asked_you_to_c|{s11} vous a demandé de capturer un général ennemi et de le ramener à {s11}pour l’interroger.
-qstr_{s9}_asked_you_to_le|{s9} vous a demandé de lui préter votre compagnion {s3} pour une semaine.
-qstr_{s9}_has_requested_y|{s9} vous a mandé pour lui apporter {reg1} prisonniers ennemis.
-qstr_We_have_reports_that|Nous avons entendu dire que beaucoup de nos patrouilles tombent dans des embuscades et sont massacrées. Certains des hommes sont peut être encore envie, aux mains de l’ennemi. Déja que le moral de mes soldats est chancelant, car ils savent que les hommes captures vont sûrement être executés, emprisonnés ou pire encore.Je veux que vous sauviez {reg1} prisonnier, cela redynamisera e moral de nos troupes.
-qstr_We_have_reports_that_| Nous avons entendu dire que beaucoup de nos patrouilles tombent dans des embuscades et sont massacrées. Certains de ces laches sont peut-être encore en vie, capturés par l’ennemi. Bien qu’ils soient loin d’être irremplaçable, ils ne nous servent à rien à pourrir dans quelques geôles sordides. Je veux que vous secouriez {reg1} prisonnier, et que vous vous assuriez qu’ils combattent à nouveau à nos côtés.
+qstr_Lend_your_experience|Prêtez votre chirurgien expérimenté {s3} à {s1}.
+qstr_No_commander_should_|Aucun commandant ne devrait avoir à l'admettre, {playername}, mais j’ai passé mes hommes en revue l’autre jour, et il y a en certains qui ne savent pas par quelle bout tenir une épée. Ils ont besoin de quelqu'un qui puisse leur montrer ce qu’est le courage. Vous êtes un guerrier de renom, {playername}. Pourriez-vous entraîner une partie de mes troupes pour moi ? Je vous en serai reconnaissant.
+qstr_No_commander_should_h|Aucun commandant de devrait avoir à l'admettre, {playername}, mais j’ai passé mes hommes en revue l’autre jour j'ai dû en exécuter quelques-uns pour incompétence. Ils ont besoin de quelqu'un de dur comme l’acier pour leur infliger un peu de courage, ou les tuer en essayant. Vous êtes un guerrier de renom, {playername}. Pourriez-vous entraîner quelques troupes pour moi ? Je peux faire en sorte que ça en vaille la peine pour vous.
+qstr_{s9}_asked_you_to_ra|{s9} vous a demandé d'élever {reg1} {s14} et de les lui ramener.
+qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un fugitif du nom de {s4}. Il devrait être à {s3}.
+qstr_{s9}_asked_you_to_ca|{s9} vous a demandé de capturer les trois groupes d’esclaves en fuite et de les ramener à {s4}, en vie et en bonne santé. Il dit que les trois groupes se dirigent vers {s3}.
+qstr_{s11}_asked_you_to_f|{s11} vous a demandé de suivre l’espion qui va quitter {s12}. Faites bien attention à ce que l’espion ne vous aperçoive pas en chemin, ou il pourrait avoir des soupçons et faire demi-tour. Une fois que l’espion aura rejoint son complice, vous devez les capturez tous les deux et les ramener à {s11}.
+qstr_{s11}_asked_you_to_c|{s11} vous a demandé de capturer un général ennemi et de le ramener à {s11} pour l’interroger.
+qstr_{s9}_asked_you_to_le|{s9} vous a demandé de lui prêter votre compagnon {s3}, pour une semaine.
+qstr_{s9}_has_requested_y|{s9} vous a demandé pour lui apporter {reg1} prisonniers ennemis.
+qstr_We_have_reports_that|On nous a rapporté que quelques-unes de nos patrouilles alliées ont été prises en embuscade et vaincues. Certains de ces hommes vivent peut-être encore, capturés par l'ennemi. Quoi qu'il en soit, le moral de mes troupes en pâtit, car les hommes capturés seront sûrement tués, emprisonnés ou pire encore. Je veux que vous sauviez {reg1} prisonniers, et ainsi releviez le moral de nos troupes.
+qstr_We_have_reports_that_|On nous a rapporté que quelques-unes de nos patrouilles ont été prises en embuscade et vaincues. Certains de ces couards vivent peut-être encore, capturés par l'ennemi. Puisqu'ils nous coûtent cher, c'est du gâchis de les laisser mourir dans quelque trou de prison. Je veux que vous libériez {reg1} prisonniers, et que vous vous assuriez qu'ils combattent à nouveau.
 qstr_{s9}_has_asked_you_to|{s9} vous a demandé de sauver {reg1} prisonniers.
-qstr_We_have_reports_that_a|Nos rapports nous signalent que les forces ennemies devraient se regrouper à {s13}. En ce qui me concerne, la situation est critique, je n’ai aucune idée du nombre de soldats ennemis et je ne sais aps si mes propres troupes seront prêtes à les affronter sur le champ de bataille. Je veux que vous approchiez au plus prés de {s13}, et que vous récoltiez le plus de renseignements possible.
-qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerrier se regroupe à {s13}. Il ne devrait pas y avoir de rencontre entre nous et les serviteurs, mais il serait bon de savoir combien d'entre eux sont présents. Je veux que vous vous approchiez au plus près de {s13}, et que vous récoltiez le plus de renseignement possible. 
+qstr_We_have_reports_that_a|On nous rapporte qu'un ost ennemi serait en train de se rassembler à {s13}. Il est clair que c'est une grave préoccupation, car je ne sais pas de combien de troupes dispose l'ennemi, ni si mes soldats seront près à les rencontrer sur le champ de bataille. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
+qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerriers se regroupe à {s13}. Ils ne devraient pas être de taille contre nous et nos serviteurs, mais il ne ferait pas de mal de savoir combien ils sont. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
 qstr_{s9}_asked_you_to_sco|{s9} vous a demandé de partir en éclaireur autour de {s13}.
-qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie prés de {s13}. Nous éclaireurs ne sont pas parvenus à se rapprocher suffisament pour observer les allers-et-venus ennemis dans la zone. Je veux que vous rassembliez une équipe d’éclaireur et que vous vous rapprochier de {s13}, afin de répartir vos hommes dans la zone.
-qstr_My_spies_tell_me_the|Mes espions m’ont signalé que les ennemis préparent quelque chose à {s13}. Nos éclaireurs, tous plus laches les uns que les autres, ne se sont pas aventurés suffisament prés pour pouvoir nous rapporter des informations interessantes. Je veux que vous recrutiez votre proper équipe d’éclaireur, alliez à {s13}, et que vous les laissiez làs-bas. Assurez vous qu’ils ne vont pas retourner leur veste et fuire !
-qstr_{s9}_asked_you_to_di|{s9} vous a demandé de répartir votre groupe d’éclaireur prés de {s13}.^Réunnissez 7 soldats de {s15}, don’t au moins l’un d’entre eux sera {s14}, approchez vous de {s13} et parlez aux {s14} pour disperser votre troupe.
-qstr_We_need_to_take_the_|Nous avons besoin de remporter cette, {playername}. En cet instant précis, nous sommes en mesure de le faire en frappant leurs patrouilles et leurs lignes de communication. Je veux que vous éliminez {reg1} groupe de {s13}, cela nous aidera à reprendre l’initiative.
-qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playername}. Leurs patrouilles et leurs caravanes de ravitaillement sont de bons moyens de déchainner ma fureur. Je veux que vous éliminiez {reg1} groupes de {s13}, nous pourrons alors leur apprendre à craindre ce qui va leur arriver.
+qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie près de {s13}. Nos éclaireurs ne sont pas parvenus à se rapprocher suffisamment pour observer les allers et venues dans la région. Je veux que vous rassembliez un groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous envoyez les éclaireurs.
+qstr_My_spies_tell_me_the|Mes espions me signalent que l'ennemi prépare quelque chose à {s13}. Ces couards d'éclaireurs ont échoué à se rapprocher suffisamment pour apprendre quelque chose d'intéressant. Je veux que vous recrutiez votre propre groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous les envoyiez faire leur travail. Assurez-vous qu'ils ne se retournent pas pour fuir !
+qstr_{s9}_asked_you_to_di|{s9} vous a demandé d'envoyer un groupe d’éclaireurs près de {s13}.^Réunissez 7 soldats de {s15}, dont au moins l’un d’entre eux est {s14}, approchez-vous de {s13} et parlez au {s14} pour expédier le groupe.
+qstr_We_need_to_take_the_|Nous avons besoin de porter le combat sur l'ennemi, {playername}. Pour l'instant, nous pouvons faire ceci en nous attaquant à ses patrouilles et ses communications. Je veux que vous éliminiez {reg1} groupes {s13}, ce qui nous aiderait à reprendre l'initiative.
+qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playername}. Leurs patrouilles et leurs caravanes de ravitaillement deviennent trop fréquents à mon goût. Je veux que vous éliminiez {reg1} groupes de {s13}, qu'ils craignent alors ce qui va leur arriver.
 qstr_{s9}_asked_you_to_el|{s9} vous a demandé d’éliminer {reg1} groupes de {s13}.
-qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d’un troll déchaîné dans sa périphérie.
+qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d’un troll déchaîné dans ses environs.
 qstr_You_chose_well_{sir/|Vous avez bien choisi, {sire/madame}. Mes gars savent tenir leur parole et mériter leur paie.
 qstr_Well_done_{sir/madam|Bien joué, {sire/madame}. Continuez de faire venir l'argent et le vin, et il n'y aura aucun ennemi que vous devrez craindre dans Calradia.
-qstr_We_are_at_your_servi|Nous sommes à votre service, {Sire/madame}. Indiquez nous les fauteurs de troubles, et nous ferons le reste.
-qstr_You_will_not_be_diss|Vous ne serez pas déçu {Sire/madame}. Vous ne trouverez pas meilleurs guerriers dans tout Calradia. 
-qstr_What_an_amazing_feat|What an amazing feat of arms! [Feat of arms ... sans moi j'ai pas bien compris :/]
-qstr_Well_done!|Bien joué!
+qstr_We_are_at_your_servi|Nous sommes à votre service, {sire/madame}. Indiquez-nous la direction des fauteurs de troubles, et nous ferons le reste.
+qstr_You_will_not_be_diss|Vous ne serez pas {déçu, sire/déçue, madame}. Vous ne trouverez pas meilleurs guerriers dans tout Calradia. 
+qstr_What_an_amazing_feat|Quel véritable tour de force !
+qstr_Well_done!|Bien joué !
 qstr_Nice_legwork.|Jolis mouvements.
 qstr_Heh.|Heh.
-qstr_Good_moves_but_you_m|Bon déplacement, mais tu auras toujours besoin de le travailler.
+qstr_Good_moves_but_you_m|Bons mouvements, vais vous avez encore du travail.
 qstr_More_than_half_of_th|Plus de la moitié des adversaires, pas mal.
-qstr_You_ll_need_to_try_h|Tu devras t'entraîner plus dur que ça.
-qstr_Well..._better_here_|Bien... meilleur ici quand dans un combat, hein.
+qstr_You_ll_need_to_try_h|Vous aurez besoin de vous entraîner plus dur que ça.
+qstr_Well..._better_here_|Et bien... c'est mieux ici que dans un vrai combat, eh ?
 qstr_town|ville
 qstr_village|village
-qstr_The_{s9}_of_{s13}_ha|Le {s9} de {s13} vous a demandé de négocier avec les tribus orcs dans les campagnes environnantes. 
-qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} vous demande de livrer {reg5} unités de {s6} aux {s10} à {s4} dans {reg6} jours.
-qstr_The_{s9}_of_{s3}_ask|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de nourriture dans {reg6} jours.
-qstr_The_{s9}_of_{s3}_aske|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de {s6} dans {reg0} jours.
-qstr_Escort_the_supply_tr|Escortez la colonne de ravitaillement à {s8}.
-qstr_The_{s9}_of_{s4}_ask|Le {s9} de {s4} vous a demandé d'abattre les intrus gobelins aux alentours de la ville.
-qstr_The_{s9}_of_{s14}_ha|Le {s9} de {s14} vous a demandé de négocier avec un groupe de gobelins causant du tort à {s14}. Il ne sorte que la nuit, et n'attaque que les gens seuls dans les rues.
+qstr_The_{s9}_of_{s13}_ha|Le {s9} de {s13} vous a demandé de vous débarrasser des Orques des environs.
+qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} vous a demandé de livrer {reg5} unités de {s6} au {s10} à {s4} dans les {reg6} jours.
+qstr_The_{s9}_of_{s3}_ask|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de nourriture dans les {reg6} jours.
+qstr_The_{s9}_of_{s3}_aske|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de {s6} dans les {reg0} jours.
+qstr_Escort_the_supply_tr|Escortez le convoi de ravitaillement à {s8}.
+qstr_The_{s9}_of_{s4}_ask|Le {s9} de {s4} vous a demandé de traquer les Gobelins gênants au voisinage de la ville.
+qstr_The_{s9}_of_{s14}_ha|Le {s9} de {s14} vous a demandé de vous occuper d'un groupe de Gobelins causant des troubles à {s14}. Ils ne sortent que la nuit, et n'attaquent que des gens seuls dans les rues.
 qstr_refugees|réfugiés
 qstr_slaves|esclaves
 qstr_{s1}_Refugees|{s1} Réfugiés
 qstr_{s1}_Slaves|{s1} Esclaves
 qstr_The_{s11}_of_{s10}_a|Le {s11} de {s10} vous a demandé d'escorter quelques {s12} à {s13}.
 qstr__Guards_slaughter_hi| Gardes, abattez-le!
-qstr_Slaughter_him_for_fr|Abattez le pour de la chaire fraiche humaine!
+qstr_Slaughter_him_for_fr|Abattez-le, pour de la chair fraîche humaine !
 qstr_This_is_{s5}_Command|C'est {s5}, Commandant.
-qstr_{s6}_This_place_and_|{s6} Ce lieu et les terres environnantes vous appartiennes, {seigneur/dame}.
-qstr_{s6}_This_place_and_t|{s6} Ce lieu et les terres environnantes appartiennent à {s7} de {s8}.
+qstr_{s6}_This_place_and_|{s6} Cet endroit et les terres environnantes vous appartiennent, {mon seigneur/ma dame}.
+qstr_{s6}_This_place_and_t|{s6} Cet endroit et les terres environnantes appartiennent à {s7} de {s8}.
 qstr_{s3}_and_{s5}|{s3} et {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?Nous produisons essentiellement {s5} ici:Nous ne produisons pas beaucoup ces jours ci}. Si vous voulez en savoir plus, vous pouvez parler avec notre {reg4?guildmaster:village elder}. Il est proche, juste là.
-qstr_Hey_scum!_I_can_fix_|Hé scum! Je peux arranger cette mâchoire.
-qstr_Watch_where_you_re_g|Regardes ou tu vas l'asticot!
-qstr_I_don_t_like_your_fa|Je n'aime pas ton visage! Je pense qu'il a besoin d'être arranger.
-qstr_What_are_you_looking|Que ce que tu cherches? QUOI?
+qstr_{reg20?We_mostly_pro|{reg20?Nous produisons essentiellement du {s5} ici:Nous ne produisons pas beaucoup ces jours ci}. Si vous voulez en savoir plus, vous pouvez parler avec notre {reg4?maître de guilde:ancien}. Il est juste à côté, par là.
+qstr_Hey_scum!_I_can_fix_|Hé racaille ! Je peux arranger ta mâchoire.
+qstr_Watch_where_you_re_g|Regarde où tu vas, l'asticot !
+qstr_I_don_t_like_your_fa|Je n'aime pas ta tête ! Je pense qu'elle a besoin d'être arrangée.
+qstr_What_are_you_looking|Que cherchez-vous ? QUOI ?
 qstr_the_white_hand|la Main Blanche
 qstr_the_lidless_eye|L'Oeil sans Paupière
 qstr_I_have_some_of_your_|J'ai certains de vos gens avec moi. Je vais les laisser vous rejoindre, pour aider votre cause.
-qstr_Some_of_your_stinky_|Des puants de votre genre son avec moi. Je suis sûr qu'ils préfèrent être avec vous.
+qstr_Some_of_your_stinky_|Certains de vos rats puants sont avec moi. Je suis sûr qu'ils préféreraient aller avec vous.
 qstr_{s4}_It_is_always_go|{s4} Il est toujours bon de voir un des nôtres.
-qstr_a_nearby_town|une ville proche
-qstr_that_town_over_there|cette ville là bas
+qstr_a_nearby_town|une ville voisine
+qstr_that_town_over_there|cette ville là-bas
 qstr_{s4}^We_are_from_{s1|{s4}^Nous sommes de {s11}, en reconnaissance vers {s12}.
-qstr_{s4}^We_are_{reg1?fo|{s4}^Nous sommes {reg1?foraging:raiding} dans les environs {s11}.
+qstr_{s4}^We_are_{reg1?fo|{s4}^Nous sommes {reg1?à la recherche de nourriture:en train de piller} dans les environs de {s11}.
 qstr_{s4}^We_are_patrolli|{s4}^Nous patrouillons dans les environs {s11}.
-qstr_{s4}^We_are_carrying|{s4}^Nous apportons des vivres de {s11} à {s12}.
+qstr_{s4}^We_are_carrying|{s4}^Nous apportons du ravitaillement de {s11} à {s12}.
 qstr_{s4}^We_are_escortin|{s4}^Nous escortons des prisonniers à {s12}.
-qstr_Greetings_do_you_nee|Salut à vous, besoin de renforts?
+qstr_Greetings_do_you_nee|Salutations, avez-vous besoin de renforts ?
 qstr_Goodbye_friends.|Au revoir, camarades.
 qstr_See_you_later_if_you|On se voit plus tard si vous n'êtes pas tués.
-qstr__^Oh_and_take_back_t| ^Oh, et ramenez ceux qui ne sont pas des nôtres.
-qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:Th at} vaillant {reg28?soldiers:soldier} nous aiderons surement à défendre nos terres.{s32} {s23}^^[earned {reg14} Points de ressources de {s14}]
-qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:T hat} utile {reg28?troops:troop} nous aiderons à faire plus de ravages.{s32}^{s23}^^[earned {reg14} Points de ressources de {s14}]
-qstr_Good_luck_in_your_tr|Bonne chances pour vos voyages.
-qstr_Try_not_getting_your|Try not getting yourself killed.
+qstr__^Oh_and_take_back_t| ^Oh, et reprenez ceux qui ne sont pas des nôtres.
+qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Ces:Ce} {reg28?vaillants soldats nous aideront:vaillant soldat nous aidera} sûrement à défendre nos terres.{s32} {s23}^^[vous avez gagné {reg14} Points de Ressource de {s14}]
+qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Ces:Cette} {reg28?troupes nous aideront:troupe nous aidera} à faire plus de ravages.{s32}^{s23}^^[vous avez gagné {reg14} Points de Ressource de {s14}]
+qstr_Good_luck_in_your_tr|Bonne chance dans vos voyages.
+qstr_Try_not_getting_your|Essayez de ne pas vous faire tuer.
