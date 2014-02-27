@@ -270,13 +270,13 @@ mno_town_castle_door|Porte vers le château.
 mno_town_center|Marcher jusqu'à la place principale.
 mno_town_center_door|Porte jusqu'au centre-ville.
 mno_aw_chamber_door|Ouvrir la porte.
-mno_trade_with_arms_merchant|Visiter le {s40}.
-mno_trade_with_horse_merchant|Visiter le {s41}.
+mno_trade_with_arms_merchant|Visiter {s40}.
+mno_trade_with_horse_merchant|Visiter {s41}.
 mno_town_prison_door|Porte vers la prison.
 mno_dungeon_enter|Chercher les lances perdues dans les montagnes.
 mno_dungeon_enter_door|Ouvrir la porte.
-mno_talk_to_castle_commander|Visiter la caserne de {s61}.
-mno_speak_with_elder|Parler avec l'{s6}.
+mno_talk_to_castle_commander|Visiter la caserne {s61}.
+mno_speak_with_elder|Parler avec le {s6}.
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_tirith_toplevel|Grimper au dernier niveau.
 mno_town_leave|Quitter...
@@ -317,24 +317,24 @@ mno_good_equal|Faction du Bien
 mno_bad_equal|Faction du Mal
 mno_replay_prev|Rejouer configuration précédente
 menu_custom_battle_choose_faction2|^^^^^^^^^^Choisissez une faction du Bien
-mno_cb_gondor|Gondor
-mno_cb_gondor1|Rohan
-mno_cb_gondor2|Lothlórien
-mno_cb_gondor3|Fondcombe
-mno_cb_gondor4|Forêt Noire
-mno_cb_gondor5|Nains
-mno_cb_gondor6|Dale
-mno_cb_gondor7|Beornides
+mno_cb_gondor|du Gondor
+mno_cb_gondor1|du Rohan
+mno_cb_gondor2|de la Lothlórien
+mno_cb_gondor3|de Fondcombe
+mno_cb_gondor4|de la Forêt Noire
+mno_cb_gondor5|des Nains
+mno_cb_gondor6|de Dale
+mno_cb_gondor7|des Beornides
 menu_custom_battle_choose_faction3|^^^^^^^^^^Choisissez une faction du Mal
-mno_cb_mordor|Mordor
-mno_cb_mordor1|Isengard
-mno_cb_mordor2|Pays de Dun
-mno_cb_mordor3|Haradrim
-mno_cb_mordor4|Orientaux
-mno_cb_mordor5|Moria
-mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhûn
-mno_cb_mordor8|Corsaires
+mno_cb_mordor|du Mordor
+mno_cb_mordor1|de l'Isengard
+mno_cb_mordor2|du Pays de Dun
+mno_cb_mordor3|des Haradrim
+mno_cb_mordor4|des Orientaux
+mno_cb_mordor5|de la Moria
+mno_cb_mordor6|de Gundabad
+mno_cb_mordor7|de Rhûn
+mno_cb_mordor8|des Corsaires
 mno_rescue_mission|Se faufiler dans l'antre du sorcier sous la couverture de la nuit.
 mno_next_rescue_scene_door|Continuer à avancer !
 mno_pick_troops1|Choisir des compagnons pour la mission, {reg0} sélectionnés

@@ -694,7 +694,7 @@ qstr_Luckily_some_of_your|Par chance, certains de vos compagnons partent à votr
 qstr_Luckily_some_passing|Par chance, quelques badaud locaux vous trouvent gisant dans le fossé  et reconnaissent en vous quelqu'un d'autre qu'un simple mendiant. Ils vous emmènent en lieu sûr et pansent vos blessures.
 qstr_{s13}^^You_have_succ|{s13}^^Vous vous êtes infiltré avec succès.
 qstr_the_place|l'endroit
-qstr_the_castle|le château
+qstr_the_castle|au château
 qstr_Stay_indoors_for_som|Rester à l'intérieur pour quelques temps ({reg1} Points de Ressource par nuit)
 qstr_Camp_outside_for_som|Camper dans la nature pour quelques temps (gratuit)
 qstr_{s1}_s_Ship|Navire de {s1}
@@ -723,7 +723,7 @@ qstr_^^^You_have_slain_th|^^^Vous avez tué le contrevenant, et les autres Orque
 qstr_You_cover_up_your_tr|Vous couvrez vos traces et allez de l'avant.
 qstr_Breaking_camp...|Lève le camp...
 qstr_You_have_left_{s1}.|Vous avez quitté {s1}.
-qstr_You_are_entering_{s1|Vous entrez {s1} ({s2}).
+qstr_You_are_entering_{s1|Vous entrez dans {s1} ({s2}).
 qstr_You_are_entering_{s1}|vous entrez dans {s1}.
 qstr_The_war_expands_comm|La guerre s'enfonce, les commandants deviennent plus audacieux (prérequis de siège réduits)
 qstr_Your_party_is_spotte|Votre groupe est repéré par {s1}.

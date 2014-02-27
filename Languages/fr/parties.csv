@@ -22,7 +22,7 @@ p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
 p_town_cirith_ungol|Camp de patrouille orque
 p_town_east_osgiliath|Osgiliath-est
-p_town_orc_sentry_camp|Camp de sentinelle orque
+p_town_orc_sentry_camp|Avant-poste orque
 p_town_isengard|Isengard
 p_town_urukhai_outpost|Avant-poste uruk-hai
 p_town_urukhai_h_camp|Camp de chasseurs uruk-hai
@@ -32,7 +32,7 @@ p_town_cerin_dolen|Cerin Dolen
 p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Halls de Thranduil
 p_town_woodelf_camp|Camp des Elfes sylvains
-p_town_woodelf_west_camp|Camp occidental de Elfes sylvains
+p_town_woodelf_west_camp|Camp occidental des Elfes sylvains
 p_town_woodsmen_village|Village de Forestiers
 p_town_beorning_village|Village de Béornides
 p_town_beorn_house|Maison de Beorn
@@ -40,11 +40,11 @@ p_town_moria|Portes de la Moria
 p_town_troll_cave|Caverne troll
 p_town_dale|Dale
 p_town_esgaroth|Esgaroth
-p_town_dunland_camp|Camp d'Hommes de Dûn
-p_town_harad_camp|Camp de Haradrim
-p_town_khand_camp|Camp de Variags
+p_town_dunland_camp|Campement des Hommes de Dûn
+p_town_harad_camp|Campement des Haradrim
+p_town_khand_camp|Campement de Khand
 p_town_umbar_camp|Camp corsaire
-p_town_imladris_camp|Camp de Fondcombe
+p_town_imladris_camp|Campement de Fondcombe
 p_town_dol_guldur|Dol Guldur
 p_town_dol_guldur_north_outpost|Avant-poste nord de Dol Guldur
 p_town_rhun_main_camp|Camp principal de Rhûn
@@ -64,7 +64,7 @@ p_advcamp_isengard|Camp avancé de l'Isengard
 p_advcamp_mordor|Camp avancé du Mordor
 p_advcamp_harad|Camp avancé du Harad
 p_advcamp_rhun|Camp avancé de Rhûn
-p_advcamp_khand|Camp avancé du Khand
+p_advcamp_khand|Camp avancé de Khand
 p_advcamp_umbar|Camp avancé d'Umbar
 p_advcamp_lorien|Camp avancé de la Lórien
 p_advcamp_imladris|Camp avancé d'Imladris

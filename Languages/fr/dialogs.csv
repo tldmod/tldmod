@@ -131,7 +131,7 @@ dlga_companion_home_description:close_window.1|Je préfère que mes compagnons n
 dlga_start:player_hire_troop|{s33}^^Je suis en charge des forces stationnées ici à {s21}. Vous vouliez me voir ?
 dlga_player_hire_troop:player_hire_troop_give|Certains des guerriers de mon groupe seraient plus utiles ici, pour défendre {s21}.
 dlga_player_hire_troop:close_window|Je veux passer en revue mes guerriers stationnés ici.
-dlga_player_hire_troop:close_window.1|J’ai besoin d’un peu d’entraînement.
+dlga_player_hire_troop:close_window.1|J'ai besoin d’un peu d’entraînement.
 dlga_player_hire_troop:tld_sell_prisoners|Je vous ai apporté quelques prisonniers.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{ s33} Voyons voir ces misérables.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Permettez-moi de vérifier les registres de notre donjon...
