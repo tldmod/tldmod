@@ -396,7 +396,7 @@ dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cherchez-
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Il en sera fait selon votre volonté, ma Dame. Je ferai de mon mieux pour éliminer ce mal.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Pardonnez-moi, ma Dame. J'ai certaines affaires pressantes dont je dois m'occuper avant d'aider votre peuple à contrer cette menace.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Je comprends, {playername}. Mais ne tardez pas trop, résister à cette magie noire m'épuise.
-dlga_lord_tell_mission:lord_mission_deliver_message|Je dois envoyer une lettre à {s13}, qui devrait être en ce moment à {s4}. Si vous allez dans sa direction, pourriez-vous la lui livrer ? La lettre doit être entre ces mains dans les 30 jours.
+dlga_lord_tell_mission:lord_mission_deliver_message|Je dois envoyer une lettre à {s13}, qui devrait être en ce moment à {s4}. Si vous allez dans sa direction, pourriez-vous la lui livrer ? La lettre doit être entre ses mains dans les 30 jours.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainement, j'ai l'intention de passer par {s4}, et cela ne me pose pas de problème.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|De doute de voir {s13} avant longtemps, {s65}. Vous feriez mieux d'envoyer quelqu'un d'autre.
 dlga_lord_mission_deliver_message_accepted:close_window|J'apprécie, {playername}. Voici la lettre. Présentez mes salutations à {s13} lorsque vous le verrez.

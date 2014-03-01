@@ -264,8 +264,8 @@ menu_town_brawl_won|^^^^^Vous avez battu tous les adversaires et les gardes envo
 menu_town|Vous êtes arrivé à {s60}.{s12}{s13}
 mno_town_menu_0|Aller dans un endroit particulier.
 mno_town_menu_0_door|Porte vers un endroit particulier.
-mno_town_approach|Approcher de {s1}...
-mno_town_castle|Aller à {s1}.
+mno_town_approach|Approcher {s1}...
+mno_town_castle|Aller {s1}.
 mno_town_castle_door|Porte vers le château.
 mno_town_center|Marcher jusqu'à la place principale.
 mno_town_center_door|Porte jusqu'au centre-ville.
@@ -276,7 +276,7 @@ mno_town_prison_door|Porte vers la prison.
 mno_dungeon_enter|Chercher les lances perdues dans les montagnes.
 mno_dungeon_enter_door|Ouvrir la porte.
 mno_talk_to_castle_commander|Visiter la caserne {s61}.
-mno_speak_with_elder|Parler avec le {s6}.
+mno_speak_with_elder|Parler avec {s6}.
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_tirith_toplevel|Grimper au dernier niveau.
 mno_town_leave|Quitter...
