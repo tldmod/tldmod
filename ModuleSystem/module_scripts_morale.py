@@ -825,12 +825,12 @@ morale_scripts = [
 	(assign,":ally","$allies_coh"),
 	(assign,":enemy","$enemies_coh"),
 	(val_sub,":ally",":enemy"),
-  
-	#swy-- let's avoid divisions by zero, even if the problem comes upstream.
-	(gt,reg0,0),
-	(gt,reg1,0),
 
 	(try_begin),
+		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
+		(gt,reg0,0),
+		(gt,reg1,0),
+		#--
 		(ge,":ally",tld_morale_rout_enemies),		
 		(call_script, "script_rout_enemies"),
 		
@@ -857,6 +857,10 @@ morale_scripts = [
 	(try_end),
 
 	(try_begin),
+		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
+		(gt,reg0,0),
+		(gt,reg1,0),
+		#--
 		(le,":ally",tld_morale_rout_allies),
 		(call_script, "script_rout_allies"),
 		#(assign, reg2, reg0),
