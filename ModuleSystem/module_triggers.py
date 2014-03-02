@@ -129,6 +129,9 @@ triggers = [
         
         (item_get_type, ":cur_item_type", ":item"),
         
+        #swy-- hacky fix to get rid of the tools sold by weapon merchants... don't count goods... we were counting stuff which is not going to appear because doesn't has the merchandise/shop flags?!
+        (neq,":cur_item_type", itp_type_goods),
+        
         #swy-- select the correct array member by using (curr itp + slot base) and calculate the minimum items to add...        
         (store_add,":aval_slot", ":cur_item_type", slot_troop_shop_aval_itp_counter_base),
         
