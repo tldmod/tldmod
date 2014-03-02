@@ -41,13 +41,21 @@ triggers = [
 
 # Refresh Smiths
 (0, 0, 24, [], [
-	(try_for_range,":cur_merchant",weapon_merchants_begin,weapon_merchants_end),
-		(reset_item_probabilities,100),     
+	(try_for_range,":cur_merchant", weapon_merchants_begin, weapon_merchants_end),
+  
+    #swy-- for every single weapon merchant, blank out the inventory, don't sell any weapons by default...
+		(reset_item_probabilities, 0),
 		(troop_clear_inventory,":cur_merchant"),
+    
+    #swy-- get his faction and subfaction mask, if any, used to compare against items' faction slot...
 		(store_troop_faction,":faction",":cur_merchant" ),
-		(faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
-		(troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
-		(store_add,":last_item_plus_one","itm_ent_body",1),
+    
+		(faction_get_slot, ":faction_mask", ":faction",      slot_faction_mask),
+		(  troop_get_slot, ":subfaction",   ":cur_merchant", slot_troop_subfaction),
+    
+    
+    #swy-- get the latest item, add one because that's how the game loops work...
+		(store_add,":last_item_plus_one", "itm_defiled_armor_dale", 1),
 		
 		(try_begin), # bad guys have shitty quality shops
 			(neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
@@ -55,12 +63,31 @@ triggers = [
 		(else_try),
 			(set_merchandise_modifier_quality,100),
 		(try_end),
-		
+    
+    
+    #swy-- debug prints stuff, used to analyze mask behaviour in MB1011/WB...
+    (assign,                reg33,":cur_merchant"),
+    (str_store_faction_name,s1,   ":faction"),
+    (str_store_troop_name,  s2,   ":cur_merchant"),
+    
+    (display_message, "@XX --"),
+    (display_message, "@XX {reg33} -- {s1} -- {s2}"),
+    (display_message, "@ -#- things: "),
+    
+    #swy-- for every item in the list, check if matches the seller's faction + subfaction and add it to the probability list if so...
 		(try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
-			(item_get_slot,":item_faction_mask",":item",slot_item_faction),
+    
+      #swy-- debug log stuff...
+      (str_store_item_name,s1,":item"),
+      (assign,reg33,":item"),
+
+      #swy-- find out if the bitwise flag of the item matches the item seller's mask... [item bitfield slot & seller faction == item faction mask = 1/0]
+			(item_get_slot,":item_faction_mask", ":item", slot_item_faction),
 			(val_and,":item_faction_mask",":faction_mask"),
+      
 			(try_begin),
 				(eq,":item_faction_mask",0), # faction mismatch
+        (display_message, "@ {reg33} -- {s1} -- 0"),
 				(set_item_probability_in_merchandise,":item",0),
 			(else_try),
 				(gt, ":subfaction", 0),
@@ -70,20 +97,30 @@ triggers = [
 				(store_and,reg1,":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
 				(eq,reg1,0),
 				(set_item_probability_in_merchandise, ":item", 0),  #  prob reduced to 1 %
+        (display_message, "@ {reg33} -- {s1} -- 0"),
 			(else_try),
 				(store_item_value,":value",":item"),
 				(try_begin), # somewhat fewer expensive items in store
 					(gt,":value",1500),
 					(set_item_probability_in_merchandise,":item",50),
+          (display_message, "@ {reg33} -- {s1} -- 50"),
+        (else_try),
+          (display_message, "@ {reg33} -- {s1} -- 100"),
 				(try_end),
 			(try_end),
+
 		(try_end),
+    
+    (display_message, "@ -#- weapon types: "),
 
 		(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
 			(troop_get_slot,":skill","trp_skill2item_type",":itp_type"), #abundance stored in merchant skills values
 			(store_skill_level,":items",":skill",":cur_merchant"), 
 			(try_begin),
-				(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",":items"),
+				(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",1),
+        (assign,reg33,":itp_type"),
+        (assign,reg44,":items"),
+        (display_message, "@ types: {reg33} -- items: {reg44}"),
 			(try_end),
 		(try_end),
 		
