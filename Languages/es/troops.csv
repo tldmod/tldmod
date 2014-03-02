@@ -1049,14 +1049,14 @@ trp_knight_5_7|Thorin III Yelmo de Piedra
 trp_knight_5_11|Jefe Fudreim
 trp_knight_5_12|Jefe Wulf
 trp_smith_mtirith|Berethor el Herrero
-trp_smith_mtirith_pl|Herrero del Senescal
+trp_smith_mtirith_pl|herreros del Senescal
 trp_smith_pelargir|Maestro del Metal Hallatan
 trp_smith_pelargir_pl|herrero
 trp_smith_linhir|Bor el Armero
 trp_smith_linhir_pl|herrero
 trp_smith_dolamroth|Haldad el Herrero
 trp_smith_dolamroth_pl|herreros de Amroth
-trp_smith_edhellond|Ryis Dobla-Hierro
+trp_smith_edhellond|Ryis Tuercehierro
 trp_smith_edhellond_pl|herrero
 trp_smith_lossarnach|Berin, maestro hachero
 trp_smith_lossarnach_pl|herrero
@@ -1072,13 +1072,13 @@ trp_smith_wosgiliath|Gardil
 trp_smith_wosgiliath_pl|herrero improvisado
 trp_smith_calembel|Agronom
 trp_smith_calembel_pl|herrero
-trp_smith_hannun|Fal el Montaraz Herrero
+trp_smith_hannun|Fal el Herrero Montaraz
 trp_smith_hannun_pl|alijo de equipación montaraz
 trp_smith_candros|Kalimdor
 trp_smith_candros_pl|herrero
 trp_smith_edoras|Eaoden Maestro de Acero
 trp_smith_edoras_pl|herrero del Rey
-trp_smith_aldburg|Fulm Pezuña de Hierro
+trp_smith_aldburg|Fulm Pezuñaferro
 trp_smith_aldburg_pl|herrero
 trp_smith_hornburg|Aldhelm
 trp_smith_hornburg_pl|herrero
@@ -1088,29 +1088,29 @@ trp_smith_westfold|Deor Hacedor de Yelmos
 trp_smith_westfold_pl|herrero
 trp_smith_westemnet|Armero
 trp_smith_westemnet_pl|herrero
-trp_smith_eastfold|Eaderan Tallador de Hierro
+trp_smith_eastfold|Eaderan Tallahierro
 trp_smith_eastfold_pl|herrero
 trp_smith_morannon|Hurbar Forjaverjas
 trp_smith_morannon_pl|herrero
 trp_smith_mmorgul|Orgurz Escupefuego
 trp_smith_mmorgul_pl|herrero
-trp_town_24_smith|Boz Arruina-Hierro
+trp_town_24_smith|Boz Malografierro
 trp_town_24_smith_pl|herrero
 trp_smith_orc_patrol|Glugz Dedo de Hierro
 trp_smith_orc_patrol_pl|herrero del campamento
-trp_smith_oscamp|Kugash Amante del Hierro
+trp_smith_oscamp|Kugash el Ferromante
 trp_smith_oscamp_pl|herrero del campamento
-trp_smith_isengard|Burz Machaca-Hierro
+trp_smith_isengard|Burz Machacafierro
 trp_smith_isengard_pl|herrero subterráneo
-trp_smith_uoutpost|Gurzuk Diente de Hierro
+trp_smith_uoutpost|Gurzuk Dienteferro
 trp_smith_uoutpost_pl|herrero del puesto de avanzada
-trp_smith_uhcamp|Rabzug Come-Herrumbre
+trp_smith_uhcamp|Rabzug Comeherrumbre
 trp_smith_uhcamp_pl|herrero del campamento
 trp_smith_urcamp|Glurk
 trp_smith_urcamp_pl|herrero del campamento
-trp_smith_cgaladhon|Dirufin el Hacedor de Arcos
+trp_smith_cgaladhon|Dirufin Tallarcos
 trp_smith_cgaladhon_pl|armeros élficos
-trp_smith_cdolen|Dimirian el Hacedor de Flechas
+trp_smith_cdolen|Dimirian el Flechero
 trp_smith_cdolen_pl|armeros élficos
 trp_smith_camroth|Getasistan
 trp_smith_camroth_pl|armeros élficos
@@ -1122,15 +1122,15 @@ trp_smith_beorn|Beornalaf, maestro hachero
 trp_smith_beorn_pl|herrero
 trp_smith_moria|Burgak el Forjador
 trp_smith_moria_pl|herrero
-trp_smith_dale|Ardel Mano de Fuego
+trp_smith_dale|Ardel Ardemano
 trp_smith_dale_pl|herrero
-trp_smith_esgaroth|Kelegarn Hacedor de Arcos
+trp_smith_esgaroth|Kelegarn Tallarcos
 trp_smith_esgaroth_pl|herrero
-trp_smith_erebor|Thror Hacedor de Martillos
-trp_smith_erebor_pl|elogiados herreros enanos
-trp_smith_dunland|Dorrowuld Pica de Hierro
+trp_smith_erebor|Thror el Martillador
+trp_smith_erebor_pl|a los reputados herreros enanos
+trp_smith_dunland|Dorrowuld Puntaferro
 trp_smith_dunland_pl|herrero
-trp_smith_harad|Har Doblador de Acero
+trp_smith_harad|Har Doblacero
 trp_smith_harad_pl|herrero
 trp_smith_khand|Pushurt el Regateador
 trp_smith_khand_pl|herrero
@@ -1142,10 +1142,10 @@ trp_smith_dolguldur|Shtazg Dulbash
 trp_smith_dolguldur_pl|herrero
 trp_smith_north_rhun|Ognjemir Kladivo
 trp_smith_north_rhun_pl|herrero improvisado
-trp_smith_gundabad|Blurg Vende-Nieve
+trp_smith_gundabad|Blurg Vendenieves
 trp_smith_gundabad_pl|herrero
 trp_smith_ironhill|Herrero de las Colinas de Hierro
-trp_smith_ironhill_pl|herrero del campamento Enano
+trp_smith_ironhill_pl|herreros del campamento Enano
 trp_town_50_weaponsmith|Armero
 trp_town_50_weaponsmith_pl|herrero
 trp_smith_gondor_ac|Bor el Armero
@@ -1154,9 +1154,9 @@ trp_smith_rohan_ac|Deor Hacedor de Yelmos
 trp_smith_rohan_ac_pl|herrero del campamento
 trp_smith_mordor_ac|Hurbar Forjaverjas
 trp_smith_mordor_ac_pl|herrero
-trp_smith_isengard_ac|Burz Machaca-Hierro
-trp_smith_isengard_ac_pl|herrero bajo tierra
-trp_smith_lorien_ac|Dimirian el Hacedor de Flechas
+trp_smith_isengard_ac|Burz Machacaferro
+trp_smith_isengard_ac_pl|herrero subterráneo
+trp_smith_lorien_ac|Dimirian el Flechero
 trp_smith_lorien_ac_pl|armeros élficos
 trp_smith_woodelf_ac|Dhoelath
 trp_smith_woodelf_ac_pl|herrero
@@ -1169,7 +1169,7 @@ trp_smith_rhun_ac_pl|herrero improvisado
 trp_smith_guldur_ac|Shtazg Golpegris
 trp_smith_guldur_ac_pl|herrero
 trp_smith_imladris_ac|Duifirian
-trp_smith_imladris_ac_pl|herrero elfo
+trp_smith_imladris_ac_pl|armeros elfos
 trp_smith_dunland_ac|Dorrowuld Puntaferro
 trp_smith_dunland_ac_pl|herrero
 trp_smith_harad_ac|Har Doblacero
