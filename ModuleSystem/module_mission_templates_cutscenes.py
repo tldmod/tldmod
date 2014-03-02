@@ -11,7 +11,7 @@ from module_info import wb_compile_switch as is_a_wb_cutscene
 #swy-- macro to select exit mode on all the cutscenes, that way we maintain compatibility and still works well in both games.
 #swy-- this also makes the HP UI visible again, controlled by shader uniforms.
 return_exit_macro = (is_a_wb_cutscene==1 and [ (set_shader_param_float, "@swy_ui_opacity", 100), #rustic equivalent to 1.0f = 0xff = 255 alpha = show it!
-                                               (jump_to_menu, "mnu_auto_cutscene_return") ]
+                                               (jump_to_menu, "mnu_auto_return_to_map") ]
                                                
                                           or [ (change_screen_return) ])
 
@@ -799,17 +799,23 @@ mission_templates_cutscenes = [
        [(start_presentation, "prsnt_conversation_titles"),
         
         #spawn Gandalf behind the little hill
-        (set_fixed_point_multiplier, 100),
-        (init_position, pos1),
-        (position_set_x, pos1, 7800),
-        (position_set_y, pos1, 8000),
-        (position_rotate_z, pos1, 0),
-        (set_spawn_position, pos1),
-        (spawn_agent, "trp_gandalf"), #has to be in a condition block, or it will crash
-        #immediately have him ride over the hill to meet the player
-        (position_set_x, pos1, 7550),
-        (position_set_y, pos1, 11700),
-        (agent_set_scripted_destination, reg0, pos1, 1),
+        (try_for_agents,":cur_agent"),
+          (agent_get_troop_id, ":cur_agent_trp", ":cur_agent"),
+          (eq,":cur_agent_trp", "$g_tld_convo_talker"),
+          
+          (set_fixed_point_multiplier, 100),
+          
+          #swy-- move here to the original spawn point position...
+          (init_position, pos1),
+          (position_set_x, pos1, 7800),
+          (position_set_y, pos1, 8000),
+          (agent_set_position,":cur_agent", pos1),
+          
+          #immediately have him ride over the hill to meet the player
+          (position_set_x, pos1,  7550),
+          (position_set_y, pos1, 11700),
+          (agent_set_scripted_destination, ":cur_agent", pos1, 1),
+        (try_end)
        ],[]),
 
       # detect player camera init
@@ -1003,28 +1009,37 @@ mission_templates_cutscenes = [
 				[(set_fog_distance, 400, 0x010101),(assign,"$lightning_cycle",2),]),
 	(0.5,0.1, 6,[(eq, "$g_tld_convo_talker", "trp_nazgul"),(eq,"$lightning_cycle",2),(set_fog_distance, 300, 0x555555),],
 				[(set_fog_distance, 400, 0x010101),(assign,"$lightning_cycle",0),]),
-	################## THUNDER AND LIGHTNING END #################################      
+	################## THUNDER AND LIGHTNING END #################################
+  
+  
       (0, 0, ti_once,
        [
-	    (try_begin), #GA: menacing ambiance for nazgul :)
-			(eq, "$g_tld_convo_talker", "trp_nazgul"),
-			(set_fog_distance,400,0x010101),
-		(try_end),
-		
-	    (start_presentation, "prsnt_conversation_titles"),
+        (try_begin), #GA: menacing ambiance for nazgul :)
+          (eq, "$g_tld_convo_talker", "trp_nazgul"),
+          (set_fog_distance,400,0x010101),
+        (try_end),
+        
+        (start_presentation, "prsnt_conversation_titles"),
         
         #spawn Gandalf/Nazgul behind the little hill
-        (set_fixed_point_multiplier, 100),
-        (init_position, pos1),
-        (position_set_x, pos1, 7800),
-        (position_set_y, pos1, 8000),
-        (position_rotate_z, pos1, 0),
-        (set_spawn_position, pos1),
-        (spawn_agent, "$g_tld_convo_talker"), #has to be in a condition block, or it will crash
-        #immediately have him ride over the hill to meet the player
-        (position_set_x, pos1, 7550),
-        (position_set_y, pos1, 11700),
-        (agent_set_scripted_destination, reg0, pos1, 1),
+        (try_for_agents,":cur_agent"),
+          (agent_get_troop_id, ":cur_agent_trp", ":cur_agent"),
+          (eq,":cur_agent_trp", "$g_tld_convo_talker"),
+          
+          (set_fixed_point_multiplier, 100),
+          
+          #swy-- move here to the original spawn point position...
+          (init_position, pos1),
+          (position_set_x, pos1, 7800),
+          (position_set_y, pos1, 8000),
+          (agent_set_position,":cur_agent", pos1),
+          
+          #immediately have him ride over the hill to meet the player
+          (position_set_x, pos1,  7550),
+          (position_set_y, pos1, 11700),
+          (agent_set_scripted_destination, ":cur_agent", pos1, 1),
+        (try_end)
+        
        ],[]),
 
       # detect player camera init
@@ -1215,7 +1230,6 @@ mission_templates_cutscenes = [
              (init_position, pos1),
              (position_set_x, pos1, 7800),
              (position_set_y, pos1, 7500),
-             (set_spawn_position, pos1),
              (agent_set_scripted_destination, ":agent_no", pos1, 1),
            (try_end),
            (str_store_string, s1, "str_empty_string"),

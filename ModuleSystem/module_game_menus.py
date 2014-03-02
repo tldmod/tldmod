@@ -7003,13 +7003,13 @@ game_menus = [
         (eq, "$current_town", "p_town_erebor"),
         (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
         ],"Search for the lost spears inside the mountains.",[
+              (set_jump_mission, "mt_tld_erebor_dungeon"),
               (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
-	      (reset_visitors),
+              (reset_visitors),
               (set_visitor,1,"trp_player"),
               (set_visitor, 2, "trp_goblin_gundabad"),
               (set_visitor, 3, "trp_fell_orc_warrior_gundabad"),
               (set_visitor, 4, "trp_orc_fighter_gundabad"),
-              (set_jump_mission, "mt_tld_erebor_dungeon"),
               (jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
        ],"Open the door."),
@@ -7020,13 +7020,13 @@ game_menus = [
           (party_get_num_companions, ":no_companions", "$g_encountered_party"),
           (ge, ":no_companions", 1),
        ],"Visit the {s61} Barracks.",[
+             (set_jump_mission,"mt_conversation_encounter"),
              (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
              (set_visitor,0,"trp_player"),
-			 (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
+             (call_script, "script_get_party_max_ranking_slot", "$g_encountered_party"),
              (party_stack_get_troop_id, reg6,"$g_encountered_party",reg0),
              (party_stack_get_troop_dna,reg7,"$g_encountered_party",reg0),
              (set_visitor,17,reg6,reg7),
-             (set_jump_mission,"mt_conversation_encounter"),
              (jump_to_scene,"scn_conversation_scene"),
              (assign, "$talk_context", tc_hire_troops),
              (change_screen_map_conversation, reg6)
@@ -7273,6 +7273,7 @@ game_menus = [
     [("sneak_caught_fight",[],"Try to fight your way out!",
        [   (assign,"$all_doors_locked",1),
            (party_get_slot, ":sneak_scene", "$current_town",slot_town_center), # slot_town_gate),
+           (set_jump_mission,"mt_sneak_caught_fight"),
            (modify_visitors_at_site,":sneak_scene"),(reset_visitors),
            (set_visitor,0,"trp_player"),
            (store_faction_of_party, ":town_faction","$current_town"),
@@ -7297,7 +7298,6 @@ game_menus = [
            (set_visitor,2,reg(1)),
            (set_visitor,3,reg(2)),
            (set_visitor,4,reg(3)),
-           (set_jump_mission,"mt_sneak_caught_fight"),
  #          (jump_to_menu,"mnu_captivity_start_castle_defeat"),
            (set_passage_menu,"mnu_town"),
            (jump_to_scene,":sneak_scene"),
@@ -7699,6 +7699,7 @@ game_menus = [
        (modify_visitors_at_site, "scn_conversation_scene"),
        (reset_visitors),
        (set_visitor, 0, "trp_player"),
+       (set_visitor, 1, "$g_tld_convo_talker"),
        (jump_to_scene, "scn_conversation_scene"),
        (change_screen_mission),
     ],
@@ -7710,21 +7711,13 @@ game_menus = [
        (modify_visitors_at_site, "scn_conversation_scene"),
        (reset_visitors),
        (set_visitor, 0, "trp_player"),
+       (set_visitor, 1, "$g_tld_convo_talker"),
        (jump_to_scene, "scn_conversation_scene"),
        (change_screen_mission),
     ],
     []
  ),
-#swy-- add compilation guards, this only shows up in WB, it's used to exit cutscenes, as workaround.
-]+ (is_a_wb_cutscene==1 and [
-( "auto_cutscene_return",0,"stub","none",
-    [
-       (change_screen_map),
-    ],
-    []
- ),
-] or []) +[
-#swy-- guard finishes here, just in case
+ 
 ###################### starting quest, GA ##############################  
 ( "starting_quest_good",0,
    "^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?",

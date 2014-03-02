@@ -19483,7 +19483,7 @@ scripts = [
       (faction_get_slot, ":nearest_king", ":nearest_faction", slot_faction_leader),
       (str_store_troop_name, s4, ":nearest_king"),
       
-      (str_store_string, s50, "@Ah, what a coincidence, running into you {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities."),
+      (str_store_string, s50, "@Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities."),
       (str_store_string, s51, "@Who are you?"),
       (str_store_string, s52, "@A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!"),
       (str_store_string, s53, "@What should I do?"),
@@ -19509,7 +19509,7 @@ scripts = [
       (str_store_troop_name, s4, ":dead_king"),
       (str_store_faction_name, s5, ":best_faction"),
       
-      (str_store_string, s50, "@Good to see the Shadow has not yet managed to defeat you {playername}."),
+      (str_store_string, s50, "@Good to see the Shadow has not yet managed to defeat you, {playername}."),
       (str_store_string, s51, "@You are the one they call Gandalf or Mithrandir."),
       (str_store_string, s52, "@That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all."),
       (str_store_string, s53, "@What do you mean?"),
@@ -19527,7 +19527,7 @@ scripts = [
       (faction_get_slot, ":dead_king", "$g_tld_convo_subject", slot_faction_leader),
       (str_store_troop_name, s4, ":dead_king"),
       
-      (str_store_string, s50, "@Beware {playername}, the might of Darkness crumbles. {s3} has fallen, as has its leader {s4}."),
+      (str_store_string, s50, "@Beware, {playername}, the might of Darkness crumbles. {s3} has fallen, as has its leader {s4}."),
       (str_store_string, s51, "@What do you want of me, old man?"),
       (str_store_string, s52, "@Just know that a Dawn is coming. It is inevitable. And should you still be alive to see it, consider what you shall have to say for yourself then."),
       (assign, "$g_tld_convo_lines", 3),
@@ -19538,7 +19538,7 @@ scripts = [
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),
       (call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg0),
       
-      (str_store_string, s50, "@Well met {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!"),
+      (str_store_string, s50, "@Well met, {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!"),
       (str_store_string, s51, "@Thank you, Mithrandir!"),
       (str_store_string, s52, "@The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!"),
       (str_store_string, s53, "@It was a long and bloody war and many of our close friends are also no longer with us."),
