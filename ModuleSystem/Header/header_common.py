@@ -282,8 +282,12 @@ reg60  = opmask_register|60
 reg61  = opmask_register|61
 reg62  = opmask_register|62
 reg63  = opmask_register|63
+reg64  = opmask_register|64
 
 reg65  = opmask_register|65
+
+#swy-- We've up to 128 registers to play with: http://forums.taleworlds.com/index.php?topic=6575.4490;wap2
+
 
 #######################################
 ################# WB specific

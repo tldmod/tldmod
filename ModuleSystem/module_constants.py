@@ -826,6 +826,29 @@ slot_troop_routed_us 		= 135
 slot_troop_routed_allies 	= 136
 slot_troop_routed_enemies 	= 137
 
+# WEAPON MERCHANT ITP AVAILABILITY SLOTS -- warband only (=troop slots)
+
+#swy-- we use the slot range from [138 + 0x2 = 140] to [138 + 0x0f = 153] of the dummy 'trp_skill2item_type' troop
+#      for storing the number of available items of each type for the weapon merchant refresh trigger, in WB.
+slot_troop_shop_aval_itp_counter_base = 138
+
+from header_items import *
+
+slot_troop_shop_aval_itp_itp_type_one_handed_wpn = slot_troop_shop_aval_itp_counter_base + itp_type_one_handed_wpn # 140
+slot_troop_shop_aval_itp_itp_type_two_handed_wpn = slot_troop_shop_aval_itp_counter_base + itp_type_two_handed_wpn # 141
+slot_troop_shop_aval_itp_itp_type_polearm        = slot_troop_shop_aval_itp_counter_base + itp_type_polearm        # 142
+slot_troop_shop_aval_itp_itp_type_arrows         = slot_troop_shop_aval_itp_counter_base + itp_type_arrows         # 143
+slot_troop_shop_aval_itp_itp_type_bolts          = slot_troop_shop_aval_itp_counter_base + itp_type_bolts          # 144
+slot_troop_shop_aval_itp_itp_type_shield         = slot_troop_shop_aval_itp_counter_base + itp_type_shield         # 145
+slot_troop_shop_aval_itp_itp_type_bow            = slot_troop_shop_aval_itp_counter_base + itp_type_bow            # 146
+slot_troop_shop_aval_itp_itp_type_crossbow       = slot_troop_shop_aval_itp_counter_base + itp_type_crossbow       # 147
+slot_troop_shop_aval_itp_itp_type_thrown         = slot_troop_shop_aval_itp_counter_base + itp_type_thrown         # 148
+slot_troop_shop_aval_itp_itp_type_goods          = slot_troop_shop_aval_itp_counter_base + itp_type_goods          # 149
+slot_troop_shop_aval_itp_itp_type_head_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_head_armor     # 150
+slot_troop_shop_aval_itp_itp_type_body_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_body_armor     # 151
+slot_troop_shop_aval_itp_itp_type_foot_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_foot_armor     # 152
+slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_hand_armor     # 153
+
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
 

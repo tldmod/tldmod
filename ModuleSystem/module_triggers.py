@@ -7,6 +7,7 @@ from header_triggers import *
 from header_troops import *
 
 from module_constants import *
+from module_info import wb_compile_switch as is_a_wb_trigger
 
 ####################################################################################################################
 #  Each trigger contains the following fields:
@@ -48,6 +49,18 @@ triggers = [
     #            just resets them to their default value specified in module_items, maybe misdocumented!
     (reset_item_probabilities, 100),
     (troop_clear_inventory,":cur_merchant"),
+    
+    
+    #swy-- in WB we've to store the number of each available item type into a slot array, here we reset them to zero for every merchant...
+    ] + (is_a_wb_trigger==1 and [
+
+    (try_for_range, ":aval_slot", slot_troop_shop_aval_itp_counter_base + itp_type_one_handed_wpn,
+                                  slot_troop_shop_aval_itp_counter_base + itp_type_hand_armor + 1),        
+      #swy-- reset the curr itp array member slot to zero...
+      (troop_set_slot, "trp_skill2item_type", ":aval_slot", 0),
+    (try_end),
+    
+    ] or []) + [
     
     #swy-- get his faction and subfaction mask, if any, used to compare against items' faction slot...
     (store_troop_faction,":faction",":cur_merchant" ),
@@ -111,16 +124,42 @@ triggers = [
           (gt,":value",1500),
           (set_item_probability_in_merchandise, ":item", 50),
         (try_end),
+        
+        ] + (is_a_wb_trigger==1 and [
+        
+        (item_get_type, ":cur_item_type", ":item"),
+        
+        #swy-- select the correct array member by using (curr itp + slot base) and calculate the minimum items to add...        
+        (store_add,":aval_slot", ":cur_item_type", slot_troop_shop_aval_itp_counter_base),
+        
+        #swy-- increment the curr itp array member slot by one...
+        (troop_get_slot,":aval_items", "trp_skill2item_type", ":aval_slot"),(val_add,":aval_items", 1),
+        (troop_set_slot,               "trp_skill2item_type", ":aval_slot",          ":aval_items"),
+        
+        ] or []) + [
+        
       (try_end),
       
     (try_end),
     
     #swy-- add items depending on their type... some settlements don't have certain kinds of weapon...
-    (try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
+    (try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_hand_armor + 1),
       (troop_get_slot,":skill","trp_skill2item_type",":itp_type"), #abundance stored in merchant skills values
       (store_skill_level,":items",":skill",":cur_merchant"), 
       (try_begin),
         (gt,":items",0),
+
+        ] + (is_a_wb_trigger==1 and [
+        
+        #swy-- select the correct array member by using (curr itp + slot base) and calculate the minimum items to add...
+        (store_add,":aval_slot", ":itp_type", slot_troop_shop_aval_itp_counter_base),
+        (troop_get_slot,":aval_items", "trp_skill2item_type", ":aval_slot"),
+        #swy-- stores the minimum of :items or :aval_items in :items
+        #      for example: if we ask for two helmets, but the faction only has one; min(2,1) = 1, just add one, the minimum, solves the WB bug.
+        (val_min,":items",":aval_items"),
+        
+        ] or []) + [
+        
         (troop_add_merchandise,":cur_merchant",":itp_type",":items"),
       (try_end),
     (try_end),
