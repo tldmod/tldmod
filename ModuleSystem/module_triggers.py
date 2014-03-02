@@ -41,96 +41,99 @@ triggers = [
 
 # Refresh Smiths
 (0, 0, 24, [], [
-	(try_for_range,":cur_merchant", weapon_merchants_begin, weapon_merchants_end),
+  (try_for_range,":cur_merchant", weapon_merchants_begin, weapon_merchants_end),
   
-    #swy-- for every single weapon merchant, blank out the inventory, don't sell any weapons by default...
-		(reset_item_probabilities, 0),
-		(troop_clear_inventory,":cur_merchant"),
+    #swy-- for every single weapon merchant, blank out the inventory, reset any previous probability tweak to their defaults...
+    #      edit: looks like reset_item_probabilities doesn't accepts any arguments at all?!,
+    #            just resets them to their default value specified in module_items, maybe misdocumented!
+    (reset_item_probabilities, 100),
+    (troop_clear_inventory,":cur_merchant"),
     
     #swy-- get his faction and subfaction mask, if any, used to compare against items' faction slot...
-		(store_troop_faction,":faction",":cur_merchant" ),
+    (store_troop_faction,":faction",":cur_merchant" ),
     
-		(faction_get_slot, ":faction_mask", ":faction",      slot_faction_mask),
-		(  troop_get_slot, ":subfaction",   ":cur_merchant", slot_troop_subfaction),
+    (faction_get_slot, ":faction_mask", ":faction",      slot_faction_mask),
+    (  troop_get_slot, ":subfaction",   ":cur_merchant", slot_troop_subfaction),
     
     
     #swy-- get the latest item, add one because that's how the game loops work...
-		(store_add,":last_item_plus_one", "itm_defiled_armor_dale", 1),
-		
-		(try_begin), # bad guys have shitty quality shops
-			(neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
-			(set_merchandise_modifier_quality,50),
-		(else_try),
-			(set_merchandise_modifier_quality,100),
-		(try_end),
+    (store_add,":last_item_plus_one", "itm_ent_body", 1),
     
+    (try_begin), # bad guys have shitty quality shops
+      (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+      (set_merchandise_modifier_quality, 50),
+    (else_try),
+      (set_merchandise_modifier_quality,100),
+    (try_end),
     
-    #swy-- debug prints stuff, used to analyze mask behaviour in MB1011/WB...
-    (assign,                reg33,":cur_merchant"),
-    (str_store_faction_name,s1,   ":faction"),
-    (str_store_troop_name,  s2,   ":cur_merchant"),
-    
-    (display_message, "@XX --"),
-    (display_message, "@XX {reg33} -- {s1} -- {s2}"),
-    (display_message, "@ -#- things: "),
-    
-    #swy-- for every item in the list, check if matches the seller's faction + subfaction and add it to the probability list if so...
-		(try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
-    
-      #swy-- debug log stuff...
-      (str_store_item_name,s1,":item"),
-      (assign,reg33,":item"),
-
-      #swy-- find out if the bitwise flag of the item matches the item seller's mask... [item bitfield slot & seller faction == item faction mask = 1/0]
-			(item_get_slot,":item_faction_mask", ":item", slot_item_faction),
-			(val_and,":item_faction_mask",":faction_mask"),
+    #swy-- for every item in the list, check if matches the seller's
+    #      faction + subfaction and add it to the probability list if so...
+    (try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability
+ 
+      #swy-- find out if the bitwise flag of the item matches the item seller's mask...
+      #      [item bitfield slot & seller faction == item faction mask == 1/0]
+      (item_get_slot,":item_faction_mask", ":item", slot_item_faction),
+      (val_and,":item_faction_mask",":faction_mask"),
       
-			(try_begin),
-				(eq,":item_faction_mask",0), # faction mismatch
-        (display_message, "@ {reg33} -- {s1} -- 0"),
-				(set_item_probability_in_merchandise,":item",0),
-			(else_try),
-				(gt, ":subfaction", 0),
-				(assign, ":subfaction_mask", 1),
-				(try_for_range, ":unused", 0, ":subfaction"),(val_mul, ":subfaction_mask", 2),(try_end), # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
-				(item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
-				(store_and,reg1,":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
-				(eq,reg1,0),
-				(set_item_probability_in_merchandise, ":item", 0),  #  prob reduced to 1 %
-        (display_message, "@ {reg33} -- {s1} -- 0"),
-			(else_try),
-				(store_item_value,":value",":item"),
-				(try_begin), # somewhat fewer expensive items in store
-					(gt,":value",1500),
-					(set_item_probability_in_merchandise,":item",50),
-          (display_message, "@ {reg33} -- {s1} -- 50"),
-        (else_try),
-          (display_message, "@ {reg33} -- {s1} -- 100"),
-				(try_end),
-			(try_end),
-
-		(try_end),
+      (try_begin),
+        #swy--> if the item doesn't belongs to our faction, bail out early...
+        (eq,":item_faction_mask",0),
+        (set_item_probability_in_merchandise, ":item", 0),
+        
+      (else_try),
+        #swy--> null out its probability if we are part of a subfaction but the item isn't...
+        (gt, ":subfaction", 0),
+        
+        #swy-- if the subfaction mask bit index exists, let's make it, turning it into the proper bitmask with powers of two, emulating a leftshift [1 << mask index]:
+        #  e.g: mask index 1 = 2             =>  2
+        #       mask index 2 = 2 x 2         =>  4
+        #       mask index 3 = 2 x 2 x 2     =>  8
+        #       mask index 4 = 2 x 2 x 2 x 2 => 16
+        
+        # note: there's also a val_lshift operation in WB, but that makes it an opcode longer than a direct power of two. :-)
+        (assign, ":subfaction_mask", 1),
+        (try_for_range, ":unused", 0, ":subfaction"),
+          (val_mul, ":subfaction_mask", 2),  # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
+        (try_end),
+        
+        (item_get_slot,":item_subfaction_field", ":item", slot_item_subfaction),
+        
+        # check for subfaction mismatch, in case they match, jump to the next else like a normal item...
+        (store_and,":subfaction_result", ":subfaction_mask", ":item_subfaction_field"),
+        (       eq,":subfaction_result", 0),
+        # --
+        (set_item_probability_in_merchandise, ":item", 0),
+        
+      (else_try),
+        #swy--> half its probability if the item costs more than 1500...
+        (store_item_value,":value",":item"),
+        (try_begin),
+          (gt,":value",1500),
+          (set_item_probability_in_merchandise, ":item", 50),
+        (try_end),
+      (try_end),
+      
+    (try_end),
     
-    (display_message, "@ -#- weapon types: "),
-
-		(try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
-			(troop_get_slot,":skill","trp_skill2item_type",":itp_type"), #abundance stored in merchant skills values
-			(store_skill_level,":items",":skill",":cur_merchant"), 
-			(try_begin),
-				(gt,":items",0),(troop_add_merchandise,":cur_merchant",":itp_type",1),
-        (assign,reg33,":itp_type"),
-        (assign,reg44,":items"),
-        (display_message, "@ types: {reg33} -- items: {reg44}"),
-			(try_end),
-		(try_end),
-		
-		(troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space),
-		(troop_sort_inventory, ":cur_merchant"),
-		(store_troop_gold, ":gold",":cur_merchant"),
-		(lt, ":gold",900),
-		(store_random_in_range,":new_gold",200,400),
-		(call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
-	(try_end),
+    #swy-- add items depending on their type... some settlements don't have certain kinds of weapon...
+    (try_for_range,":itp_type",itp_type_one_handed_wpn, itp_type_pistol),
+      (troop_get_slot,":skill","trp_skill2item_type",":itp_type"), #abundance stored in merchant skills values
+      (store_skill_level,":items",":skill",":cur_merchant"), 
+      (try_begin),
+        (gt,":items",0),
+        (troop_add_merchandise,":cur_merchant",":itp_type",":items"),
+      (try_end),
+    (try_end),
+    
+    #swy-- make room for the new items and give him some extra money if needed...
+    (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space),
+    (troop_sort_inventory, ":cur_merchant"),
+    (store_troop_gold, ":gold",":cur_merchant"),
+    
+    (lt, ":gold",900),
+    (store_random_in_range,":new_gold",200,400),
+    (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
+  (try_end),
 ]),
 
 # Refresh Horse sellers
@@ -1503,7 +1506,7 @@ triggers = [
 			(eq|this_or_next, "$current_player_region", region_misty_mountains),
 			(eq|this_or_next, "$current_player_region", region_grey_mountains),
 			(eq|this_or_next, "$current_player_region", region_n_mirkwood),
-			(eq, "$current_player_region", region_s_mirkwood),
+			(eq,              "$current_player_region", region_s_mirkwood),
 			(assign, ":continue", 1),
 			(try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.
 				(eq, ":continue", 1),
@@ -1551,7 +1554,7 @@ triggers = [
 	# Decrement the ambush counter every 20 hours (CppCoder)
    	(18, 0, 0, [(gt, "$creature_ambush_counter", 0)],[(val_sub, "$creature_ambush_counter", 1)]),
 
-# save game compartibility triggers. replace those if you add new ones
+# save game compatibility triggers. replace those if you add new ones
 
    (999, 0, ti_once, [],[]),
    (999, 0, ti_once, [],[]),

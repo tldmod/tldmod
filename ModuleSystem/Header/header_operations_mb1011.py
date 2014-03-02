@@ -391,7 +391,7 @@ troop_set_faction                      = 1550   # (troop_set_faction,<troop_id>,
 troop_set_health                       = 1560	# (troop_set_health,<troop_id>,<relative health (0-100)>),
 
 troop_get_upgrade_troop                = 1561   # (troop_get_upgrade_troop,<destination>,<troop_id>,<upgrade_path>), #upgrade_path can be: 0 = random, 1 = get first node, 2 = get second node (returns -1 if not available)
-                                                # LIES!!! 0 = get fist node.  1 = get second node.  DON'T EVER USE 2. Returns ZERO if not available!!! -- mtarini
+                                                # LIES!!! 0 = get first node.  1 = get second node.  DON'T EVER USE 2. Returns ZERO if not available!!! -- mtarini
 
 #Items...
 item_get_type                          = 1570   # (item_get_type, <destination>, <item_id>), #returned values are listed at header_items.py (values starting with itp_type_)
@@ -693,6 +693,11 @@ disable_menu_option                    = 2061   # (disable_menu_option),
 store_trigger_param_1  = 2071  # (store_trigger_param_1,<destination>),
 store_trigger_param_2  = 2072  # (store_trigger_param_2,<destination>),
 set_trigger_result     = 2075  # (set_trigger_result, <value>),
+
+#swy-- maybe they work in M&B 1.011 too? maybe, needs testing
+val_lshift             = 2100 # (val_lshift, <destination>, <value>), # shifts the bits of destination to left by value amount.
+val_rshift             = 2101 # (val_rshift, <destination>, <value>), # shifts the bits of destination to right by value amount.
+#--
 
 val_add                = 2105	#dest, operand ::       dest = dest + operand
 				# (val_add,<destination>,<value>),
