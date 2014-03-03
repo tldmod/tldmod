@@ -161,6 +161,9 @@ triggers = [
         #      for example: if we ask for two helmets, but the faction only has one; min(2,1) = 1, just add one, the minimum, solves the WB bug.
         (val_min,":items",":aval_items"),
         
+        #swy-- check again that we aren't adding zero items, may cause unexpected bugs, thanks to Marco.
+        (gt,":items",0),
+        
         ] or []) + [
         
         (troop_add_merchandise,":cur_merchant",":itp_type",":items"),
