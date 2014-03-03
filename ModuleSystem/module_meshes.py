@@ -445,4 +445,7 @@ meshes+=[
   ("draw_war_starts",        0, "draw_war_starts",   0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_bear",              0, "draw_bear",         0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_wolf",              0, "draw_wolf",         0, 0, 0, 0, 0, 0, 1, 1, 1),
+  
+  ("draw_victory_dunland",   0, "draw_victory_dunland", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_khand",     0, "draw_victory_khand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

@@ -4417,10 +4417,16 @@ game_menus = [
 			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
 			(eq, ":winning_side_faction", "fac_gondor" ),
-			(set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: rohan VS anything
+			(set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
 		(else_try),
 			(eq, ":winning_side_faction", "fac_rohan" ),
-			(set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: gondor VS anything
+			(set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
+		(else_try),
+			(eq, ":winning_side_faction", "fac_dunland" ),
+			(set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
+		(else_try),
+			(eq, ":winning_side_faction", "fac_khand" ),
+			(set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
 		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
 			(eq, ":losing_side_race_group", tf_orc ),

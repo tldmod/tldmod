@@ -33,7 +33,10 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   file.close()
 
 def save_python_header():
-  file = open("./id/ID_scripts.py","w")
+  if (wb_compile_switch):
+    file = open("./id/ID_scripts_wb.py","w")
+  else:
+    file = open("./id/ID_scripts_mb.py","w")
   for i_script in xrange(len(scripts)):
     file.write("script_%s = %d\n"%(convert_to_identifier(scripts[i_script][0]),i_script))
   file.write("\n\n")

@@ -334,5 +334,7 @@ mesh_draw_lorien_magic = 332
 mesh_draw_war_starts = 333
 mesh_draw_bear = 334
 mesh_draw_wolf = 335
+mesh_draw_victory_dunland = 336
+mesh_draw_victory_khand = 337
 
 
