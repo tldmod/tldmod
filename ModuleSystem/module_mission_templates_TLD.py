@@ -1276,9 +1276,9 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(agent_set_position, ":agent", pos4),
 			(try_begin),
 				(neq,":agent_item",-1), 
-				# fisrt spawn:  MOUNT set hit points
+				# first spawn:  MOUNT set hit points
 				(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
-				(store_div, reg12, 3), # nerf riderlass wargs: redue HP to 1/3
+				(store_div, reg12, 3), # nerf riderlass wargs: reduce HP to 1/3
 				(agent_set_hit_points, ":agent", reg12, 1),
 				#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
 			(else_try), 
@@ -1338,8 +1338,13 @@ nazgul_sweeps = (4,1.2,5,[
 	#(display_message, "@Nazgul Team = {reg0}"),
 	(store_random_in_range, ":long_skretch", 0,2),
 	# play sound
-	(try_begin),(ge,":long_skretch",1),(play_sound, "snd_nazgul_skreech_long" ),#(display_log_message, "@Debug: LONG sweep!"),
-	 (else_try),                       (play_sound, "snd_nazgul_skreech_short"),#(display_log_message, "@Debug: SHORT sweep!"),
+	(try_begin),
+		(ge,":long_skretch",1),
+		(play_sound, "snd_nazgul_skreech_long" ),
+		#(display_log_message, "@Debug: LONG sweep!"),
+	(else_try),
+		(play_sound, "snd_nazgul_skreech_short"),
+		#(display_log_message, "@Debug: SHORT sweep!"),
 	(try_end), 
 	(get_player_agent_no, ":player_agent"), #for messages
 	(try_for_agents,":victim"), # psycological effect:
@@ -1360,7 +1365,7 @@ nazgul_sweeps = (4,1.2,5,[
 		(store_skill_level, ":riding", "skl_riding", ":trp_victim"),
 		(store_random_in_range,":die_roll_int",1,26),
 
-		(try_begin), 		# the horses couldrear
+		(try_begin), 		# the horses could rear
 			(ge,":horse",0), # there's an horse being riden
 			(try_begin), 
 				# if rider failed intelligece test: both horse and rider panic
@@ -1370,21 +1375,23 @@ nazgul_sweeps = (4,1.2,5,[
 					(agent_set_animation, ":horse", "anim_horse_rear_twice"), 
 				(else_try), 
 					(agent_set_animation, ":horse", "anim_horse_rear_fast_blend"), 
+				(try_end),
+        
+				(try_begin), #always let the player know what affects him
+					(eq, ":player_agent", ":victim"),
+					(display_log_message, "@You and your horse panic, the Nazgul cries are unbearable!"),
 				(try_end), 
-                (try_begin), #always let the player know what affects him
-                    (eq, ":player_agent", ":victim"),
-                    (display_log_message, "@You and your horse panic, the Nazgul cries are unbearable!"),
-                (try_end), 
 			(else_try), 
-				# if rider success on intelligece test: he won'y panic, horse could
+				# if rider success on intelligence test: he won't panic, horse could
 				(store_random_in_range,":die_roll_riding",1,13),
 				(ge, ":die_roll_riding" , ":riding"), # riding test: horse is a victim if 1d12 rolls over riding skill
 				(agent_set_animation, ":horse", "anim_horse_rear"),
 				#(agent_play_sound,":horse","snd_neigh"),
-                (try_begin), #always let the player know what affects him
-                    (eq, ":player_agent", ":victim"),
-                    (display_log_message, "@Your horse panics, the Nazgul cries are unbearable!"),
-                (try_end), 
+        
+				(try_begin), #always let the player know what affects him
+					(eq, ":player_agent", ":victim"),
+					(display_log_message, "@Your horse panics, the Nazgul cries are unbearable!"),
+				(try_end), 
 			# (else_try), 
 				# (assign, ":horse_resisted", 1),
 			(try_end), 
@@ -1409,11 +1416,13 @@ nazgul_sweeps = (4,1.2,5,[
 				(else_try), 
 					(agent_set_animation, ":victim", "anim_nazgul_noooo_short"),
 				(try_end), 
-			(try_end), 
-            (try_begin), #always let the player know what affects him
-                (eq, ":player_agent", ":victim"),
-                (display_log_message, "@You cower in terror, the Nazgul cries are unbearable!"),
-            (try_end), 
+			(try_end),
+      
+			(try_begin), #always let the player know what affects him
+				(eq, ":player_agent", ":victim"),
+				(display_log_message, "@You cower in terror, the Nazgul cries are unbearable!"),
+			(try_end),
+      
 		(try_end), 
 		# show message?
         # MV: commented out - resistance not important, it's the other way around, effects are important
@@ -1443,8 +1452,8 @@ nazgul_sweeps = (4,1.2,5,[
 		(agent_get_position, 1,":victim"),
 		(position_is_behind_position, 1,2), # a troop never suffers an attack if visible on the screen
 		
-		# this one is eligible for phisical effect,
-	    (store_random_in_range,":die_roll",1,10000),
+		# this one is eligible for physical effect,
+		(store_random_in_range,":die_roll",1,10000),
 		(ge, ":random_agent_score",":die_roll"),
 		(assign, ":random_agent_score", ":die_roll"),
 		(assign, ":random_agent", ":victim"),
@@ -1467,9 +1476,11 @@ nazgul_sweeps = (4,1.2,5,[
 	# get it killed...  (trick! self kill with hidden message... is there a better way?) NO, THERE IS NOT. GA
 	(agent_set_hit_points,":random_agent",0,1), # this still doesn't kill it
 	(set_show_messages,0),
+	#--
 	(agent_get_kill_count, ":killed", ":random_agent"),
 	(agent_deliver_damage_to_agent,":random_agent",":random_agent"), 
 	(agent_get_kill_count, ":killed_1", ":random_agent"),
+	#--
 	(set_show_messages,1),
 	
 	# display kill in a log message of appropriate color

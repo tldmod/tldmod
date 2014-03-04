@@ -14,7 +14,13 @@ return_exit_macro = (is_a_wb_cutscene==1 and [ (set_shader_param_float, "@swy_ui
                                                (jump_to_menu, "mnu_auto_return_to_map") ]
                                                
                                           or [ (change_screen_return) ])
-
+                                          
+#swy-- this restores the cutscene presentation in WB after coming back from the Esc menu...
+guard_against_esc = (is_a_wb_cutscene==1 and [ (try_begin),
+                                                (neg|is_presentation_active, "prsnt_conversation_titles"),
+                                                (start_presentation, "prsnt_conversation_titles"),
+                                               (try_end) ]
+                                          or [])
 
 mission_templates_cutscenes = [
 
@@ -840,7 +846,7 @@ mission_templates_cutscenes = [
          (assign, "$g_tld_conversation_space_pressed", 1),
         ]),
         
-      (0, 0, 0,
+      (0, 0, 0, guard_against_esc+
        [
          (set_show_messages, 0),
          (store_mission_timer_a, ":cur_time"),
@@ -1090,7 +1096,7 @@ mission_templates_cutscenes = [
         ]),
       
       #Positions used: pos50-52 talker views, pos53-55 player views (only pos53 done), pos60 bird's eye talker view
-      (0, 0, 0,
+      (0, 0, 0, guard_against_esc+
        [
          (set_show_messages, 0),
          (store_mission_timer_a, ":cur_time"),
