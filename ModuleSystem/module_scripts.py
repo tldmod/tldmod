@@ -3383,6 +3383,21 @@ scripts = [
       (call_script, "script_party_calculate_strength", ":party_no", 0),
       (context_menu_add_item, "@Debug str: {reg0}", 3),
     (try_end),
+    
+    ] + (is_a_wb_script==1 and [
+    
+    #swy-- add an Accompany option to the right-click menu for allied parties, mostly lifted from Native Warband...
+    (try_begin),
+     (neq, ":party_no", "p_main_party"),       
+     (store_faction_of_party, ":party_faction", ":party_no"),
+     
+     (call_script, "script_cf_factions_are_allies", ":party_faction", "$players_kingdom"),     
+     (neg|is_between, ":party_no", centers_begin, "p_save10"),
+     
+     (context_menu_add_item, "str_cmenu_follow", cmenu_follow),
+    (try_end),
+     
+    ] or []) + [
 ]),
 
 #script_game_event_context_menu_button_clicked:

@@ -3987,16 +3987,21 @@ game_menus = [
 
 		## set background mesh
 		(set_background_mesh, "mesh_ui_default_menu_window"),
-        (try_begin),
-          (eq, "$g_encountered_party_template", "pt_looters"  ),
-		  (set_background_mesh, "mesh_draw_tribal_orcs"),
-        (else_try),
-          (is_between, "$g_encountered_party_template", "pt_forest_bandits" ,"pt_steppe_bandits"        ),
-		  (set_background_mesh, "mesh_draw_orc_raiders"),
-        (else_try),
-          (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"        ),
-		  (set_background_mesh, "mesh_draw_wild_troll"),
-        (try_end),
+    (try_begin),
+      (eq, "$g_encountered_party_template", "pt_looters"  ),
+      (set_background_mesh, "mesh_draw_tribal_orcs"),
+    (else_try),
+      #swy-- if "wild goblins" or "troublesome goblins" show this illustration thingy...
+      (this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),
+      (             eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
+      (set_background_mesh, "mesh_draw_mountain_goblins"),
+    (else_try),
+      (is_between, "$g_encountered_party_template", "pt_forest_bandits" ,"pt_steppe_bandits"        ),
+      (set_background_mesh, "mesh_draw_orc_raiders"),
+    (else_try),
+      (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
+      (set_background_mesh, "mesh_draw_wild_troll"),
+    (try_end),
 		
 		
 		# set reg21, to change the options string in the menu

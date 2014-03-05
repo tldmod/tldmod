@@ -3068,4 +3068,6 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 # END Gifts
 
+("cmenu_follow", "Accompany"),
+
 ]
