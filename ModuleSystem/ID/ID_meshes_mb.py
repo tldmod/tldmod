@@ -329,5 +329,6 @@ mesh_draw_bear = 327
 mesh_draw_wolf = 328
 mesh_draw_victory_dunland = 329
 mesh_draw_victory_khand = 330
+mesh_draw_mountain_goblins = 331
 
 
