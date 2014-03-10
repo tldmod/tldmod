@@ -4,20 +4,20 @@ mno_start_evil|Den UNTERGANG der Menschheit.
 mno_go_bback|Zurück.
 menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
 mno_go_forth|Betritt nun den Pfad, den du als dein Schicksal gewählt hast...
-menu_start_game_3|^^^^^^^^Wähle ein Szenario:
-mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor gegen Harad .
+menu_start_game_3            |^^^^^^^^Wähle ein Szenario:
+mno_custom_battle_scenario_1 |Gefecht; Reiche von Gondor vs. Harad
 mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht.
-mno_custom_battle_scenario_3|Gefecht; Elben gegen Schwarze Númenóer .
-mno_custom_battle_scenario_4|Verteidigung von Helms Klamm; Rohan gegen Isengart .
-mno_custom_battle_scenario_5|Gefecht; Reiche des Nordens gegen Rhun .
-mno_custom_battle_scenario_6|Belagerungsangriff; Orks gegen Zwerge .
-mno_custom_battle_scenario_7|Hinterhalt; Orks gegen Düsterwald .
-mno_custom_battle_scenario_11|Test-Schlachten (Balancing-Abstimmung!) .
-mno_custom_battle_scenario_10|Test: Szene .
-mno_troll_battle_scenario|Test: Trolle .
-mno_warg_battle_scenario|Test: Warge .
-mno_build_your_own_scene|** Erstelle deine eigene Szene für TLD ** .
-mno_go_back_spc|Zurück .
+mno_custom_battle_scenario_3 |Gefecht; Elben gegen Schwarze Númenórer
+mno_custom_battle_scenario_4 |Verteidigung von Helms Klamm; Rohan gegen Isengart
+mno_custom_battle_scenario_5 |Gefecht; Reiche des Nordens gegen Rhûn
+mno_custom_battle_scenario_6 |Belagerungsangriff; Orks gegen Zwerge
+mno_custom_battle_scenario_7 |Hinterhalt; Orks gegen Düsterwald
+mno_custom_battle_scenario_11|Test-Schlachten (Balancing-Abstimmung)
+mno_custom_battle_scenario_10|Kulissentest: Schlacht
+mno_troll_battle_scenario    |Test: Trollschlachten
+mno_warg_battle_scenario     |Test: Wargschlachten
+mno_build_your_own_scene     |** Erstelle deine eigene Szene für TLD **
+mno_go_back                  |Zurück.
 menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
 mno_go_back_dot|Zurück.
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
@@ -92,7 +92,7 @@ mno_start_ls|LOSSARNACH, das Lehen der Axtkämpfer
 mno_start_la|LAMEDON, das Lehen der Stammeskrieger aus den Bergen
 mno_start_pg|PINNATZ GELIN, das Lehen der Grünen Berge
 mno_start_do|DOL AMROTH, das Lehen der Schwanenritter
-mno_start_pe|PELARGIR, die große Hafenstadt
+mno_start_pe|PELARGIR, der großen Hafenstadt
 mno_start_bl|Das TAL DES MORTHOND, Lehen der Bogenschützen
 menu_start_eye_man|^^^^^^^^^^Wählt Euer Volk:
 mno_start_hr|HARADRIM, das Wüstenvolk aus dem Süden
