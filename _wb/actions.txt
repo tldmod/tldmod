@@ -967,30 +967,30 @@
   5 man_cheer 650 1597 805306628 65535 0 0 0  0 
  walk_forward_onehanded_slow 256 50331743  1
   1.4 man_walk 0 32 805306628 58726 0 0 0  0 
- strike_fly_back_near_rise 16642 50331743  1
+ strike_fly_back_near_rise 16642 192938064  1
   1.7 ani_fall_flyback1_near_rise 0 43 515 102 0.19 -1.6 0  0.5 
- strike_fly_back_rise 17410 50331743  6
+ strike_fly_back_rise 17410 192938064  6
   2.09 ani_fall_flyback1_med_rise 0 53 515 102 0.19 -2.7 0  0.5 
   2.214 ani_fall_flyback1_far_rise 0 56 515 102 0.19 -4.4 0  0.5 
   2.1 ani_fall_flyback2_med_rise 0 49 515 102 0.933 -2.454 0  0.5 
   2.1 ani_fall_flyback2_far_rise 0 49 515 102 0.933 -3.8 0  0.5 
   2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
   2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
- strike_fly_back_rise_from_left 17410 50331743  6
+ strike_fly_back_rise_from_left 17410 192938064  6
   2.09 ani_fall_flyback1_med_rise_from_left 0 53 515 102 -0.19 -2.7 0  0.5 
   2.214 ani_fall_flyback1_far_rise_from_left 0 56 515 102 -0.19 -4.4 0  0.5 
   2.1 ani_fall_flyback2_med_rise_from_left 0 49 515 102 -0.933 -2.454 0  0.5 
   2.1 ani_fall_flyback2_far_rise_from_left 0 49 515 102 -0.933 -3.8 0  0.5 
   2.2 ani_fall_flyback3_med_rise 0 64 515 102 -0.0345 -2.91 0  0.5 
   2.2 ani_fall_flyback3_far_rise 0 64 515 102 -0.0345 -4.81 0  0.5 
- strike_fly_front_rise 17410 50331743  1
+ strike_fly_front_rise 17410 192938064  1
   1.12 ani_fall_flyfront_rise 0 77 515 102 -0.36 2.93 0  1 
- strike_fly_back_near 17410 50331743  1
+ strike_fly_back_near 17410 192938064  1
   0.59 ani_fall_flyback1_near_rise 0 15 515 102 0.19 -1.6 0  0.5 
- strike_fly_back 17410 50331743  2
+ strike_fly_back 17410 192938064  2
   0.59 ani_fall_flyback1_med_rise 0 15 515 102 0.19 -2.7 0  0.5 
   0.62 ani_fall_flyback1_far_rise 0 15 515 102 0.19 -4.4 0  0.5 
- strike_fly_front 17410 50331743  1
+ strike_fly_front 17410 192938064  1
   0.59 ani_fall_flyfront_rise 0 40 515 102 -0.36 2.93 0  0.5 
  nazgul_noooo_long 1024 50331743  11
   3.5 oh_no 8 38 3 0 0 0 0 0.0 
