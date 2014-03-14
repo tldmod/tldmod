@@ -575,12 +575,12 @@ get_scene_boundaries                   = 1799   # (get_scene_boundaries, <positi
 scene_prop_get_num_instances           = 1810	# (scene_prop_get_num_instances,<destination>, <scene_prop_id>),
 scene_prop_get_instance                = 1811	# (scene_prop_get_instance,<destination>, <scene_prop_id>, <instance_no>),
 
-prop_instance_get_position             = 1850	# (prop_instance_get_position,<position_no>,<scene_prop_id>),
-prop_instance_get_starting_position    = 1851	# (prop_instance_get_starting_position,<position_no>,<scene_prop_id>),
-prop_instance_get_scale                = 1852	# (prop_instance_get_scale,<position_no>,<scene_prop_id>),
+prop_instance_get_position             = 1850	# (prop_instance_get_position,<position_no>,<instance_no>),
+prop_instance_get_starting_position    = 1851	# (prop_instance_get_starting_position,<position_no>,<instance_no>),
+prop_instance_get_scale                = 1852	# (prop_instance_get_scale,<position_no>,<instance_no>),
 
-prop_instance_set_position             = 1855	# (prop_instance_set_position,<scene_prop_id>,position),
-prop_instance_animate_to_position      = 1860	# (prop_instance_animate_to_position,<scene_prop_id>,position,<duration-in-1/100-seconds>),
+prop_instance_set_position             = 1855	# (prop_instance_set_position,<instance_no>,position),
+prop_instance_animate_to_position      = 1860	# (prop_instance_animate_to_position,<instance_no>,position,<duration-in-1/100-seconds>),
 
 replace_scene_props                    = 1890   # (replace_scene_props, <old_scene_prop_id>,<new_scene_prop_id>),
 #---------------------------
