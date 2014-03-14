@@ -1237,7 +1237,7 @@ tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   [ (store_trigger_param_1, ":agent"),
 	(agent_get_troop_id,":agent_trp",":agent"),
-	(agent_get_item_id, ":agent_item", ":agent"),
+	(agent_get_item_id, ":agent_mount_itm", ":agent"),
 
     (try_begin), # when trolls in battle
 	  (troop_get_type, reg12, ":agent_trp"),
@@ -1250,7 +1250,7 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 	(try_end),
 	
 	(try_begin), # when wargs in battle
-		(is_between, ":agent_item", item_warg_begin , item_warg_end),
+		(is_between, ":agent_mount_itm", item_warg_begin , item_warg_end),
 		(val_add,"$wargs_in_battle",1),# keep warg count up to date...
 		(agent_set_slot,":agent",slot_agent_mount_dead,0),
 		# (try_begin),
@@ -1266,7 +1266,6 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			# (agent_set_sound, ":agent", sound_neigh, "snd_nazgul_skreech_short"),
 		# (try_end),
 	(try_end),
-	
 	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
 		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
 		(agent_set_slot, ":agent", slot_agent_time_counter, 0),
@@ -1275,13 +1274,13 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 			(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
 			(agent_set_position, ":agent", pos4),
 			(try_begin),
-				(neq,":agent_item",-1), 
+				(neq,":agent_mount_itm",-1), 
 				# first spawn:  MOUNT set hit points
 				(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
 				(store_div, reg12, 3), # nerf riderlass wargs: reduce HP to 1/3
 				(agent_set_hit_points, ":agent", reg12, 1),
 				#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
-			(else_try), 
+			(else_try),
 				# second spawn: GHOST RIDER set side
 				(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
 				(agent_set_team, ":agent", reg12), # this was set just above
@@ -1290,12 +1289,14 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
 				(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
 				(assign, "$warg_to_be_replaced", -1),
 			(try_end),
+		] + ((not is_a_wb_mt==1) and [
 		(else_try), # UGLY FIX FOR CARRYOVER WARGS, KILL THOSE SPAWNED AT START. GA
 			(agent_set_slot,":agent", slot_agent_mount_dead, 1), #silently
 			(call_script, "script_remove_agent", ":agent"),
+		] or []) + [
 		(try_end), 
-	(else_try), 
-		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignement
+	(else_try),
+		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignment
 	(try_end),
 	
 	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is. GA: and remember that it's alive
@@ -1661,7 +1662,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 		(agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
 		# test for stun
 		(try_begin),
-			(store_add,":last_hp",3),
+			(val_add,":last_hp",3),
 			(ge,":last_hp",":cur_hp"),
 			(assign,":status",-4), # STUNNED: skip 4 "turns"
 		(try_end),
@@ -1970,58 +1971,83 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 # mtarini: wargs attack even if they are not mounted
 custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
 	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
-        (agent_is_alive, ":ghost"), 
-		(agent_is_human,":ghost"),
+		(agent_is_alive, ":ghost"), 
+		(agent_is_human, ":ghost"),
+		#--
 		(agent_get_troop_id,":trp_ghost",":ghost"),
-		(is_between, ":trp_ghost", warg_ghost_begin, warg_ghost_end),
+		(is_between,        ":trp_ghost", warg_ghost_begin, warg_ghost_end),
+		
 		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
-		(store_random_in_range, ":random", 0,100),(try_begin),(lt,":random",7),(agent_play_sound, ":ghost", "snd_warg_lone_woof"),(try_end), # should be brutal GRRR of attacking warg here
-		(agent_get_horse,":horse",":ghost"),
-		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter),(val_add, reg1, 1),(agent_set_slot, ":ghost", slot_agent_time_counter, reg1),
-		(try_begin), # make riderless wargs run away after 22 sec 
+
+		#swy-- there's a 6% prob every 1.5 secs of random lone warg sounds!
+		(store_random_in_range, ":random", 0,100),
+		(try_begin),
+				(le,":random",6),
+				# should be brutal GRRR of attacking warg here
+				(agent_play_sound, ":ghost", "snd_warg_lone_woof"),
+		(try_end),
+		
+		#swy-- add +1 to the time counter slot of this lone warg
+		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter), (val_add, reg1, 1),
+		(agent_set_slot,       ":ghost", slot_agent_time_counter,            reg1),
+		
+		#swy-- make riderless wargs run away after X secs
+		(try_begin),
 			(eq, reg1, 15),
 			(init_position, pos0), #send them to 0,0
 			(agent_set_scripted_destination, ":ghost", pos0, 1),
 		(try_end),
+		
+		(agent_get_horse,":horse",":ghost"),
 		(this_or_next|eq,":horse",-1), # remove wargless riders 
-		(gt, reg1, 25), # or wargs running from battle for 45 sec
-			(call_script, "script_remove_agent", ":ghost"),
+		(             gt, reg1, 25),   # or wargs running from battle for 45 sec
+		#--
+		(call_script, "script_remove_agent", ":ghost"),
 	(try_end),
 
-	(try_for_agents,":warg"), 
-        (agent_is_alive, ":warg"),
-		(neg|agent_is_human,":warg"),
-		(agent_get_item_id,":warg_itm",":warg"),
+	(try_for_agents,":cur_warg"), 
+		(    agent_is_alive, ":cur_warg"),
+		(neg|agent_is_human, ":cur_warg"),
+		
+		#swy-- if this agent is a horse/warg/mount, get the mount item...
+		(agent_get_item_id,":warg_itm",":cur_warg"),
+		
+		#swy-- if this mount is a warg and riderless...
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
-		(agent_get_rider,":rider",":warg"),
+		(agent_get_rider,":rider",":cur_warg"),
 		(eq,":rider",-1), # (display_message,"@warg without rider found!"),
+		#--
 		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
-		(assign, "$warg_to_be_replaced", ":warg"),
+		(assign, "$warg_to_be_replaced", ":cur_warg"),
+		
+		#swy-- calculate the correct ghost warg troop by using the warg item offset, they are listed in the same order...
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
-		(val_add, ":warg_ghost_trp",  warg_ghost_begin),
-
+		(val_add,   ":warg_ghost_trp",             warg_ghost_begin),
+		#--
 		(assign, ":continue", 1),
 		(try_for_agents, ":old_rider"),
 			(eq, ":continue", 1),
-			(agent_slot_eq, ":old_rider", slot_agent_mount, ":warg"),
+			(agent_slot_eq, ":old_rider", slot_agent_mount, ":cur_warg"),
 			(agent_set_slot, ":old_rider", slot_agent_mount, -1),
 			(assign, ":continue", 0),
 		(try_end),
 		
-		(agent_get_position, pos10, ":warg"),
+		(agent_get_position, pos10, ":cur_warg"),
+		
+		] + ((not is_a_wb_mt==1) and [
+		#swy-- classic 1.011 code path for spawning wargs
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
 		(val_sub,reg1,1), # translate entry point number into mission entry
-	#	] + ((not is_a_wb_mt==1) and [
-	#	#swy-- classic 1.011 code path for spawning wargs
+		#--
 		(store_current_scene, ":cur_scene"),
 		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
-	#	] or [
-	#	#swy-- new Warband code path for spawning wargs
-	#	(set_spawn_position, pos10),
-	#	(spawn_agent,":warg_ghost_trp"),
-	#	]) + [
+		] or [
+		#swy-- new Warband code path for spawning wargs
+		(set_spawn_position, pos10),
+		(spawn_agent,":warg_ghost_trp"),
+		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
 	#	(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
 	(try_end),

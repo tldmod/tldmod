@@ -181,8 +181,8 @@ items =[
 #
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
-["warg_ghost_armour","HIDEME_armour" ,[("dummy_mesh",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
-["warg_ghost_lance" ,"HIDEME_lance"  ,[("dummy_mesh",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_polearm|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+["warg_ghost_armour","HIDEME_armour" ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_lance" ,"HIDEME_lance"  ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_polearm|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
 # CC: ghost lance had itcf_thrust_onehanded_lance_horseback before, changed to prevent animals from couching
 # other HIDEME items already ingame
 
