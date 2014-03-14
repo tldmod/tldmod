@@ -33,10 +33,11 @@ from module_mission_templates_morale import *
 #
 ####################################################################################################################
 
-pilgrim_disguise = [itm_blackroot_hood,itm_pilgrim_disguise,itm_practice_staff]
-af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
+pilgrim_disguise  = [itm_blackroot_hood, itm_pilgrim_disguise, itm_practice_staff]
+
+af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
-af_prisoner = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
+af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
 
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
@@ -387,13 +388,13 @@ mission_templates = [ # not used in game
      (8,mtef_visitor_source,af_override_horse,0,1,[]),(9,mtef_visitor_source,af_override_horse,0,1,[]),(10,mtef_scene_source,af_override_horse,0,1,[]),(11,mtef_scene_source,af_override_horse,0,1,[]),
      (12,mtef_visitor_source,af_override_horse,0,1,[]),(13,mtef_visitor_source,af_override_horse,0,1,[]),(14,mtef_visitor_source,af_override_horse,0,1,[]),(15,mtef_visitor_source,af_override_horse,0,1,[]),
      (16,mtef_visitor_source,af_castle_warlord,0,1,[]),(17,mtef_visitor_source,af_castle_warlord,0,1,[]),(18,mtef_visitor_source,af_castle_warlord,0,1,[]),(19,mtef_visitor_source,af_castle_warlord,0,1,[]),
-	 (20,mtef_visitor_source,af_castle_warlord,0,1,[]),(21,mtef_visitor_source,af_castle_warlord,0,1,[]),(22,mtef_visitor_source,af_castle_warlord,0,1,[]),(23,mtef_visitor_source,af_castle_warlord,0,1,[]),
-	 (24,mtef_visitor_source,af_castle_warlord,0,1,[]),(25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),
-	 (28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
+     (20,mtef_visitor_source,af_castle_warlord,0,1,[]),(21,mtef_visitor_source,af_castle_warlord,0,1,[]),(22,mtef_visitor_source,af_castle_warlord,0,1,[]),(23,mtef_visitor_source,af_castle_warlord,0,1,[]),
+     (24,mtef_visitor_source,af_castle_warlord,0,1,[]),(25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),
+     (28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
     tld_common_peacetime_scripts + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
-      (ti_before_mission_start , 0, 0, [],[(call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1)]),
+      (ti_before_mission_start , 0, 0, [],[ (call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1)]),
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
       (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
 	  (0, 0, ti_once, [], [#(set_fog_distance, 150, 0xFF736252)
