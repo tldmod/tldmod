@@ -8,7 +8,8 @@ from module_constants import *
 
 from module_info import wb_compile_switch as is_a_wb_mt
 
-# COMMAND CURSOR MINIMOD # (Added by CppCoder) (I forgot original author)
+# COMMAND CURSOR MINIMOD by dstemmer # (Added by CppCoder) (I forgot original author)
+# http://forums.taleworlds.com/index.php?topic=63370.0
 
 common_init_command_cursor = (
   ti_before_mission_start, 0, 0, [],
@@ -347,7 +348,7 @@ tld_remove_galadriel = 	(0.1,0,0,
 			(try_end),
 			])
 
-# a trigger to fix viewpoint... not used. Too many drawback (mtarini)
+# a trigger to fix viewpoint... not used. Too many drawbacks (mtarini)
 tld_fix_viewpoint = (0,0,0,[],[
   (try_begin),
     #(this_or_next|game_key_clicked, gk_view_char),
