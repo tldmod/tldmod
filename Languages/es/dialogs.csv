@@ -95,7 +95,7 @@ dlga_do_member_view_char:member_talk|¿Alguna cosa más?
 dlga_start:close_window.5|Partiremos en cuanto estés listo.
 dlga_start:close_window.6|Por favor, no me hagas perder más mi tiempo. Puede que nos encontremos de nuevo en un futuro.
 dlga_companion_recruit_signup_response:close_window|Por desgracia ahora mismo no tengo sitio para ti en mi grupo.
-dlga_companion_recruit_rank:close_window|Parece que mi gente no te valora lo suficiente, {playername}. Eres {s29} y necesitas tener como mínimo ser un {s24} para que considere unirme a tu compañía [{reg3} necesitas disponer de mayor renombre. ^Vuelve cuando lo hayas conseguido.
+dlga_companion_recruit_rank:close_window|Parece que mi gente no te valora lo suficiente, {playername}. Eres {s29} y por lo menos necesitas ser un {s24} para que considere unirme a tu compañía [{reg3} necesitas disponer de mayor renombre]. ^Vuelve cuando lo hayas conseguido.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Me alegra ver que has conseguido llegar a {s29}, y estoy dispuesto a unirme a tu compañía.
 dlga_companion_recruit_payment_response:close_window|Bueno, entonces no creo que pueda hacer mucho al respecto.
 dlga_start:companion_recruit_meet_again|Nos encontramos de nuevo.

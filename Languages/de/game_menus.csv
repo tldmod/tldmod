@@ -92,7 +92,7 @@ mno_start_ls|LOSSARNACH, das Lehen der Axtkämpfer
 mno_start_la|LAMEDON, das Lehen der Stammeskrieger aus den Bergen
 mno_start_pg|PINNATZ GELIN, das Lehen der Grünen Berge
 mno_start_do|DOL AMROTH, das Lehen der Schwanenritter
-mno_start_pe|PELARGIR, der großen Hafenstadt
+mno_start_pe|PELARGIR, die große Hafenstadt
 mno_start_bl|Das TAL DES MORTHOND, Lehen der Bogenschützen
 menu_start_eye_man|^^^^^^^^^^Wählt Euer Volk:
 mno_start_hr|HARADRIM, das Wüstenvolk aus dem Süden
@@ -187,7 +187,7 @@ menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihr
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
 mno_special_whip|Stürme voran, mit der {s4} knallend.
-mno_encounter_leave|Zurückfallen.
+mno_encounter_leave|Zurückziehen.
 mno_encounter_retreat|Zieh dich zurück und lasse einige Soldaten zurück, um deinen Rückzug zu decken.
 menu_encounter_retreat_confirm|^^^^^Als Truppenmitglied mit dem größten Taktikverständnis, ({reg2}), {reg3?entwirfst du:entwirft {s3}} einen Plan, der es dir und deinen Männern erlaubt, mit dem Leben davonzukommen, aber du musst {reg4} Truppen zurücklassen, um den Feind an der Verfolgung zu hindern.
 mno_leave_behind|Weiter. Das Opfer dieser Männer wird die anderen retten.
@@ -207,7 +207,7 @@ menu_kingdom_army_quest_join_siege_order|{s8} sendet Nachricht, dass du dich der
 menu_kingdom_army_follow_failed|Du hast Befehle missachtet und darin versagt {s8} zu folgen. Er sendet Nachricht, dass er annimmt, dass du wichtigere Angelegenheiten hast, warnt dich aber, dass seine Geduld nicht grenzenlos ist.
 menu_battle_debrief|{s11}^Deine Verluste:{s8}{s10}^^Gegnerische Verluste:{s9}
 mno_inspect_troll|Untersuche den bezwungenen Troll
-menu_pre_join|^^^^^Du wirst Zeuge eines Gefechts zwischen {s2} und {s1}. Du entscheidest dich dazu...
+menu_pre_join|^^^^^{s2} kämpfen gegen {s1}. Du entscheidest dich dazu...
 mno_pre_join_help_attackers|Einzugreifen und den {s2} zu helfen.
 mno_pre_join_help_defenders|Den {s1} zu Hilfe zu eilen.
 mno_pre_join_leave|Dich nicht einzumischen.
