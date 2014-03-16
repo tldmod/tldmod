@@ -1,6 +1,6 @@
 import string
 
-from module_info import *
+from module_info import wb_compile_switch as is_wb
 from module_scripts import *
 
 from process_common import *
@@ -33,7 +33,7 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   file.close()
 
 def save_python_header():
-  if (wb_compile_switch):
+  if (is_wb):
     file = open("./id/ID_scripts_wb.py","w")
   else:
     file = open("./id/ID_scripts_mb.py","w")

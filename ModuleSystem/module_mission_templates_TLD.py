@@ -15,7 +15,16 @@ common_init_command_cursor = (
   ti_before_mission_start, 0, 0, [],
   [
     (assign, "$order_move_to_pos43_start", 0),
-	  (assign, "$hold_key_1second",0),
+    
+    ] + ((not is_a_wb_mt==1) and [
+    
+    (assign, "$hold_key_1second",0),
+
+    ] or [
+    
+    # this space has been intentionally left blank :)
+    
+    ]) + [
   ])
 
 # Sped up from 1 second to 0.5 second.
@@ -35,7 +44,6 @@ common_command_cursor_countdown = (
     (try_end),
   ])
 
-  
 common_command_cursor_key_pressed = (
   0.05, 0, 0,
     [
@@ -55,12 +63,49 @@ common_command_cursor_key_pressed = (
     ], []
 )
 
+common_command_cursor_key_pressed_wb = (
+  0, 0, 0,
+    [
+      (this_or_next|key_is_down, key_left_control),
+      (             key_is_down, key_right_control),
+      (             key_is_down, key_f1),
+      
+      (omit_key_once, key_f1),
+      (omit_key_once, gk_order_1),
+      (omit_key_once, gk_view_orders),
+      
+      (get_player_agent_no, ":player"),
+      (agent_get_look_position, pos1, ":player"),
+      (position_move_z, pos1, 120),
+      (try_begin),
+        (call_script, "script_cf_shift_pos1_along_y_axis_to_ground", 30000),
+        (assign, "$order_move_to_pos43_start", 1),
+        (particle_system_burst, "psys_fat_arrow", pos1, 1),
+        (copy_position, pos43, pos1),
+      (else_try),
+        (assign, "$order_move_to_pos43_start", 0),
+      (try_end),
+    ], []
+)
+
 # Modified to have proper message when multiple groups are selected (e.g., "Infantry and Cavalry"). (CppCoder)
 common_order_move_to_pos43 = (
   0, 0, 0,
     [
       (eq, "$order_move_to_pos43_start", 1),
+      
+      ] + ((not is_a_wb_mt==1) and [
+      
       (neg|game_key_is_down, gk_order_halt),
+
+      ] or [
+      
+      (neg|this_or_next|key_is_down, key_left_control),
+      (neg|             key_is_down, key_right_control),
+      (neg|             key_is_down, key_f1),
+      
+      ]) + [
+      
       (assign, "$order_move_to_pos43_start", 0),
       (particle_system_burst, "psys_fat_arrow_rising", pos43, 1),
       (get_player_agent_no, ":player"),
@@ -147,8 +192,18 @@ common_order_move_to_pos43 = (
 )
 command_cursor_sub_mod = [
 	common_init_command_cursor,
+  
+  ] + ((not is_a_wb_mt==1) and [
+  
 	common_command_cursor_countdown,
 	common_command_cursor_key_pressed,
+  
+  ] or [
+  
+  common_command_cursor_key_pressed_wb,
+  
+  ]) + [
+  
 	common_order_move_to_pos43,
 ]
 # COMMAND CURSOR MINIMOD #
