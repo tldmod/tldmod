@@ -10,6 +10,8 @@ from module_mission_templates_unneeded import *
 from module_mission_templates_cutscenes import *
 from module_mission_templates_morale import *
 
+from module_info import wb_compile_switch as is_a_wb_mt
+
 ####################################################################################################################
 #   Each mission-template is a tuple that contains the following fields:
 #  1) Mission-template id (string): used for referencing mission-templates in other files.
@@ -72,6 +74,45 @@ tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
 ] + custom_tld_bow_to_kings
+
+tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
+
+  (ti_before_mission_start,  0, 0, [],
+  [
+    (try_begin),
+      (store_current_scene, ":cur_scene"),
+      (this_or_next|eq,  ":cur_scene", "scn_deadmarshes"),
+      (this_or_next|eq,  ":cur_scene", "scn_fangorn"),
+      (this_or_next|eq,  ":cur_scene", "scn_mirkwood"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_forest_mirkwood1"),
+      (this_or_next|eq,  ":cur_scene", "scn_forest_mirkwood2"),
+      (this_or_next|eq,  ":cur_scene", "scn_forest_mirkwood3"),
+      (this_or_next|eq,  ":cur_scene", "scn_forest_mirkwood4"),
+      (this_or_next|eq,  ":cur_scene", "scn_forest_mirkwood5"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_moria_castle"),
+      (this_or_next|eq,  ":cur_scene", "scn_moria_secret_entry"),
+      (this_or_next|eq,  ":cur_scene", "scn_moria_deep_mines"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_a"),
+      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_b"),
+      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_c"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_isengard_center"),
+      (this_or_next|eq,  ":cur_scene", "scn_isengard_underground"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_harad_camp_center"),
+      (this_or_next|eq,  ":cur_scene", "scn_north_rhun_camp_center"),
+      
+      (this_or_next|eq,  ":cur_scene", "scn_minas_morgul_siege"),
+      (             eq,  ":cur_scene", "scn_minas_morgul_center"),
+      
+      (set_river_shader_to_mud),
+    (try_end),
+  ]),
+
+] or [])
 
 mission_templates = [ # not used in game
 ( "town_default",0,-1, "Default town visit",
@@ -226,6 +267,7 @@ mission_templates = [ # not used in game
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_peacetime_scripts +[
 
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
@@ -261,7 +303,7 @@ mission_templates = [ # not used in game
 			(try_begin),# remove beam bridges in osgiliath (for non battle scenes)
 				(store_current_scene, ":cur_scene"),
 				(this_or_next|eq,  ":cur_scene", "scn_east_osgiliath_center"),
-				(eq,  ":cur_scene", "scn_west_osgiliath_center"),
+				(             eq,  ":cur_scene", "scn_west_osgiliath_center"),
 				(replace_scene_props, "spr_osgiliath_broken_bridge_beams", "spr_empty"),
 			(try_end),
 			# check if dungeons are present in a scene
@@ -392,6 +434,7 @@ mission_templates = [ # not used in game
      (24,mtef_visitor_source,af_castle_warlord,0,1,[]),(25,mtef_visitor_source,af_castle_warlord,0,1,[]),(26,mtef_visitor_source,af_castle_warlord,0,1,[]),(27,mtef_visitor_source,af_castle_warlord,0,1,[]),
      (28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
+    tld_common_wb_muddy_water +
     tld_common_peacetime_scripts + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
       (ti_before_mission_start , 0, 0, [],[ (call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1)]),
@@ -447,6 +490,7 @@ mission_templates = [ # not used in game
 
   ],
   #tld_common_peacetime_scripts +
+  tld_common_wb_muddy_water +
   [  
  
   # make friend, prisoners, players, etc appear at the right locations and with scripted short starting walks
@@ -661,6 +705,7 @@ mission_templates = [ # not used in game
      (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
+    tld_common_wb_muddy_water +
     formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts + command_cursor_sub_mod + [
 	common_battle_tab_press,
 	common_music_situation_update,
@@ -744,6 +789,7 @@ mission_templates = [ # not used in game
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
+     tld_common_wb_muddy_water +
     [ (ti_on_agent_spawn,0,0,[],[(store_trigger_param_1, ":agent_no"),
 								(agent_get_troop_id, ":troop_no", ":agent_no"),
 								(neq, ":troop_no", "trp_player"),
@@ -799,7 +845,8 @@ mission_templates = [ # not used in game
      (39,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      #(40,mtef_visitor_source|mtef_team_1,af_override_horse|af_override_weapons,aif_start_alarmed,1,[itm_wood_club]),
      ],
-    tld_common_battle_scripts+[
+     tld_common_wb_muddy_water +
+     tld_common_battle_scripts + [
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
 			(mission_disable_talk),
@@ -843,8 +890,8 @@ mission_templates = [ # not used in game
      	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
      	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
     ],
-	
-	tld_common_battle_scripts+[   
+  tld_common_wb_muddy_water +
+	tld_common_battle_scripts + [   
 	
 	# (CppCoder) Fixes fangorn retreat bug.
 	(ti_tab_pressed, 0, 0, [],
@@ -941,7 +988,8 @@ mission_templates = [ # not used in game
 	[(0,mtef_visitor_source,af_override_horse,aif_start_alarmed,1,[]),
 	 (1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
 	],
-	tld_common_battle_scripts+[
+  tld_common_wb_muddy_water + 
+	tld_common_battle_scripts + [
 	common_music_situation_update,
 	common_battle_check_friendly_kills,
 	common_battle_victory_display,
@@ -1007,7 +1055,7 @@ mission_templates = [ # not used in game
       (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     ],[
+     ],tld_common_wb_muddy_water+[
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
 	common_inventory_not_available,
@@ -1025,6 +1073,7 @@ mission_templates = [ # not used in game
      (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,12,[]),
      (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
      ],
+    tld_common_wb_muddy_water +
     formations_triggers + AI_triggers +
     common_deathcam_triggers+
     tld_siege_battle_scripts+[
@@ -1099,6 +1148,7 @@ mission_templates = [ # not used in game
      (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
 	],
+   tld_common_wb_muddy_water+
     common_deathcam_triggers+
     tld_siege_battle_scripts+[
 	(ti_before_mission_start, 0, 0, [],[
@@ -1362,6 +1412,7 @@ mission_templates = [ # not used in game
      (19, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      (20, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	common_battle_tab_press,
@@ -1399,6 +1450,7 @@ mission_templates = [ # not used in game
      (27, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      (28, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      ],
+  tld_common_wb_muddy_water+
 	tld_common_battle_scripts+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	common_battle_tab_press,
@@ -1442,6 +1494,7 @@ mission_templates = [ # not used in game
       (32,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
 #      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
     ],
+  tld_common_wb_muddy_water+
 	tld_common_battle_scripts+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	(ti_tab_pressed, 0, 0, [],
@@ -1493,7 +1546,7 @@ mission_templates = [ # not used in game
       (25,mtef_visitor_source|mtef_team_1,af_override_all_but_horse,aif_start_alarmed,1,[itm_practice_staff]),
       (26,mtef_visitor_source|mtef_team_1,af_override_all_but_horse,aif_start_alarmed,1,[itm_practice_staff]),
       (27,mtef_visitor_source|mtef_team_1,af_override_all_but_horse,aif_start_alarmed,1,[itm_practice_staff]),
-    ],[
+    ],tld_common_wb_muddy_water+[
 	(0, 0, ti_once, [], [(eq, "$g_tld_training_mode", abm_gauntlet),(start_presentation, "prsnt_gauntlet")]),
 	(0, 0, ti_once, [], [#(play_sound, "snd_arena_ambiance", sf_looping),
 							(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
@@ -1644,7 +1697,7 @@ mission_templates = [ # not used in game
       (4,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons,0,1,[]),
       (5,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons,0,1,[]),
       (6,mtef_scene_source|mtef_team_0,0,0,1,[]),
-    ],[
+    ],tld_common_wb_muddy_water+[
 	(ti_before_mission_start , 0, 0,[],[(call_script, "script_change_banners_and_chest")]),
 	(ti_inventory_key_pressed, 0, 0,[(set_trigger_result,1)], []),
 	(ti_tab_pressed          , 0, 0,[(set_trigger_result,1)], []),
@@ -1715,6 +1768,7 @@ mission_templates = [ # not used in game
       (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_leather_jerkin]),
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_leather_jerkin]),
     ],
+    tld_common_wb_muddy_water+
     tournament_triggers
 ),
 ( "arena_challenge_fight",mtf_team_fight, -1, # used for orc mutiny
@@ -1728,7 +1782,7 @@ mission_templates = [ # not used in game
 	  (18,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(19,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(20,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(21,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
 	  (22,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(23,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(24,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(25,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
 	  (26,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
-    ],[
+    ],tld_common_wb_muddy_water+[
 	common_inventory_not_available,
 #	(ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
 			
@@ -1800,6 +1854,7 @@ mission_templates = [ # not used in game
       (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
@@ -1830,6 +1885,7 @@ mission_templates = [ # not used in game
       (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	common_battle_mission_start,
 	(0, 0, ti_once,[ (assign, "$defender_team", 0),(assign, "$attacker_team", 1),(assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3)], []),
@@ -1873,6 +1929,7 @@ mission_templates = [ # not used in game
       (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
@@ -1911,6 +1968,7 @@ mission_templates = [ # not used in game
 		(28,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
 		(30,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_siege_battle_scripts +[
     common_custom_battle_tab_press,
     common_custom_battle_question_answered,
@@ -1962,6 +2020,7 @@ mission_templates = [ # not used in game
       (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
     common_custom_battle_tab_press,
     common_custom_battle_question_answered,
@@ -2011,6 +2070,7 @@ mission_templates = [ # not used in game
       (56,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(57,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),
       (58,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(59,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
@@ -2053,6 +2113,7 @@ mission_templates = [ # not used in game
   "You start training.",
     [(0,0,0,aif_start_alarmed,30,[]),
      ],
+    tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
 	(0, 0, ti_once, [], [(assign,"$g_presentation_battle_active", 0),]),
@@ -2063,7 +2124,7 @@ mission_templates = [ # not used in game
  "You visit a legendary place.",
     [(0,mtef_scene_source|mtef_team_0,0,0,1,[]),(1,mtef_scene_source|mtef_team_0,0,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
-     ],[
+     ],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
 	(0,0,ti_once,[],[(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
 					  (else_try),					  (play_sound, "$bs_day_sound",   sf_looping),
@@ -2077,7 +2138,7 @@ mission_templates = [ # not used in game
      (4,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[]),
      (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
      (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-	 ],[
+	 ],tld_common_wb_muddy_water+[
 	#(ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
 	#(ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1),], []),
 	#(1, 0, ti_once, [], [(tutorial_box,"str_tld_erebor_dungeon"),]),
@@ -2121,7 +2182,7 @@ mission_templates = [ # not used in game
 ( "scene_chooser",mtf_battle_mode,-1,
     "You go to the scene",
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
-	],[
+	],tld_common_wb_muddy_water+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
 	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1)]),	
 	dungeon_darkness_effect,
@@ -2131,7 +2192,7 @@ mission_templates = [ # not used in game
 ( "dungeon_crawl_moria_entrance",0,-1,
     "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
-	],[
+	],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
@@ -2141,7 +2202,7 @@ mission_templates = [ # not used in game
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
-	],[
+	],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
 	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), (play_sound, "snd_moria_ambiance", sf_looping), ]),
@@ -2150,7 +2211,7 @@ mission_templates = [ # not used in game
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
     "Lost in Moria! Orcs are everywhere! You must find a way out!",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
-	],[
+	],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
 	(ti_question_answered, 0, 0, [], [ 
 		(store_trigger_param_1,":answer"), (eq,":answer",0), (troop_remove_item, "trp_player","itm_book_of_moria"), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission)]),
@@ -2172,7 +2233,7 @@ mission_templates = [ # not used in game
 	(16,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(17,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]), 
 	(18,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(19,mtef_visitor_source|mtef_team_2,                0,aif_start_alarmed,1,[]), 
 	(20,mtef_visitor_source|mtef_team_2,                0,aif_start_alarmed,1,[]), 
-	],[
+	],tld_common_wb_muddy_water+[
 	(0,0,ti_once,[],[
 		#  (team_set_relation, 2, 1, 0),
 		#  (team_set_relation, 3, 1, -1),
@@ -2379,7 +2440,7 @@ mission_templates = [ # not used in game
 	(32,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),(33,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
 	(34,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),(35,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
 	(36,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
-	],[
+	],tld_common_wb_muddy_water+[
 	(0,0,ti_once,[],[	(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 							(call_script, "script_infiltration_mission_set_hit_points"),
 							(call_script, "script_wounded_hero_cap_mission_health")]),
@@ -2438,7 +2499,7 @@ mission_templates = [ # not used in game
 	(22 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(23 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(24 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(25 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(26 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]) 
-	],[	
+	],tld_common_wb_muddy_water+[	
 	(0,0,ti_once,[],[ (call_script, "script_infiltration_mission_synch_agents_and_troops"),
 						  (call_script, "script_infiltration_mission_set_hit_points"),
 						  (call_script, "script_wounded_hero_cap_mission_health")]),
@@ -2597,7 +2658,7 @@ mission_templates = [ # not used in game
 	  (24,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
 	  (25,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
 	  (26,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),
-	],[
+	],tld_common_wb_muddy_water+[
 	(0,0,ti_once,[],[
 		(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 		(call_script, "script_infiltration_mission_set_hit_points"),
@@ -2693,6 +2754,7 @@ mission_templates = [ # not used in game
 
  ],
 	# Triggers
+  tld_common_wb_muddy_water+
 	common_deathcam_triggers + [
 	
 	custom_warg_sounds,
@@ -2871,7 +2933,7 @@ mission_templates = [ # not used in game
 		(agent_get_troop_id, ":agent_trp", ":agent"),
 		(eq|this_or_next, ":agent_trp", "trp_spider"),
 		(eq|this_or_next, ":agent_trp", "trp_bear"),
-		(eq, ":agent_trp", "trp_wolf"),
+		(eq,              ":agent_trp", "trp_wolf"),
 		(agent_get_horse, ":horse", ":agent"),
 		(lt, ":horse", 0),
 		(call_script, "script_remove_agent", ":agent"),
