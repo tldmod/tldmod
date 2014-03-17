@@ -1084,17 +1084,12 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 	 //swy-- if not metal thingy
 	 if(tc.x <= (244.f/256.f))
 	 {
-		float seed = time_var + (vPosition.x+vPosition.y+tc.x+tc.y);
-		// float v_modulator = tex2Dlod(Diffuse2Sampler, float4(tc,0.f,1.f)).a / 4;
+		float seed = time_var + (vPosition.x + vPosition.y + tc.x + tc.y) + matWorld._m03;
+		float thingie  = sin(seed + cos(vPosition.x)) * frac(tc.y*3.f) /* * abs(vPosition.x) */;
+		      thingie *= 0.2f;
 		
-		// float thingie = ((sin(seed+cos(vPosition.x))) * ((vPosition.y/200.f)+1.f));
-		float thingie = ( (sin(seed+cos(vPosition.x))) * frac(tc.y*3.f) /* * abs(vPosition.x) */ ) * 0.2f;
 		vPosition.y += -(abs(thingie)*abs(thingie));
 		vPosition.x += thingie*0.3f;
-		//vPosition.z += -thingie*0.05f;
-		
-		
-		// vPosition.x += thingie;//vPosition.y;//tex2Dlod(Diffuse2Sampler, float4(tc,0.f,1.f)).a;
 	 }
    }
    
@@ -2634,16 +2629,16 @@ technique diffuse_rohan_banners
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader  = compile ps_2_0 ps_main(PCF_NONE);
    }
 }
 
 technique diffuse_spr_banners
 {
    pass P0
-   { /* had to raise the VS version to 3.0, hmmm */
-      VertexShader = compile vs_3_0 vs_main(PCF_NONE, true, false, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   { /* had to raise the VS version to 3.0, hmmm / nevermind, hacked it around! no more texture lookups needed in VS */
+      VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, false, true);
+      PixelShader  = compile ps_2_0 ps_main(PCF_NONE);
    }
 }
 
