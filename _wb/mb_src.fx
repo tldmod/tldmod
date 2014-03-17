@@ -1440,7 +1440,7 @@ struct VS_OUTPUT
 	float2 ShadowTexelPos		: TEXCOORD3;
 };
 
-VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false)
+VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false, uniform const bool swy_spr_banners = false)
 {
 	INITIALIZE_OUTPUT(VS_OUTPUT, Out);
 	
@@ -1467,6 +1467,22 @@ VS_OUTPUT vs_main(uniform const int PcfMode, uniform const bool UseSecondLight, 
 		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
 	 }
 	}
+	
+   //swy-- per-pixel sampling for per-vertex shaders, now that's performant! :)
+   if(swy_spr_banners)
+   {
+	 //swy-- if not metal thingy
+	 if(tc.x <= (244.f/256.f))
+	 {
+		float seed = time_var + (vPosition.x + vPosition.y + tc.x + tc.y) + matWorld._m03;
+		float thingie  = sin(seed + cos(vPosition.x)) * frac(tc.y*3.f) /* * abs(vPosition.x) */;
+		      thingie *= 0.2f;
+		
+		vPosition.y += -(abs(thingie)*abs(thingie));
+		vPosition.x += thingie*0.3f;
+	 }
+   }
+   
 
 	Out.Pos = mul(matWorldViewProj, vPosition);
 
@@ -1628,8 +1644,17 @@ technique diffuse_rohan_banners
 	pass P0
 	{
 		VertexShader = vs_main_compiled_PCF_NONE_true_rohan_banners;
-		PixelShader = ps_main_compiled_PCF_NONE;
+		PixelShader  = ps_main_compiled_PCF_NONE;
 	}
+}
+
+technique diffuse_spr_banners
+{
+   pass P0
+   { /* had to raise the VS version to 3.0, hmmm / nevermind, hacked it around! no more texture lookups needed in VS */
+      VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, false, true);
+      PixelShader  = ps_main_compiled_PCF_NONE;
+   }
 }
 
 technique diffuse_SHDW
