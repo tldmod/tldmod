@@ -1049,7 +1049,7 @@ PS_OUTPUT ps_main_no_shadow_no_wrap(PS_INPUT_FONT In)
 
 
 
-VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false)
+VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight, float4 vPosition : POSITION, float3 vNormal : NORMAL, float2 tc : TEXCOORD0, float4 vColor : COLOR0, float4 vLightColor : COLOR1, uniform const bool swy_rohan_banners = false, uniform const bool swy_spr_banners = false)
 {
    VS_OUTPUT Out = (VS_OUTPUT)0;
    
@@ -1075,6 +1075,26 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
 		}
 		
 		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
+	 }
+   }
+   
+   //swy-- per-pixel sampling for per-vertex shaders, now that's performant! :)
+   if(swy_spr_banners)
+   {
+	 //swy-- if not metal thingy
+	 if(tc.x <= (244.f/256.f))
+	 {
+		float seed = time_var + (vPosition.x+vPosition.y+tc.x+tc.y);
+		// float v_modulator = tex2Dlod(Diffuse2Sampler, float4(tc,0.f,1.f)).a / 4;
+		
+		// float thingie = ((sin(seed+cos(vPosition.x))) * ((vPosition.y/200.f)+1.f));
+		float thingie = ( (sin(seed+cos(vPosition.x))) * frac(tc.y*3.f) /* * abs(vPosition.x) */ ) * 0.2f;
+		vPosition.y += -(abs(thingie)*abs(thingie));
+		vPosition.x += thingie*0.3f;
+		//vPosition.z += -thingie*0.05f;
+		
+		
+		// vPosition.x += thingie;//vPosition.y;//tex2Dlod(Diffuse2Sampler, float4(tc,0.f,1.f)).a;
 	 }
    }
    
@@ -2614,6 +2634,15 @@ technique diffuse_rohan_banners
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, true);
+      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+   }
+}
+
+technique diffuse_spr_banners
+{
+   pass P0
+   { /* had to raise the VS version to 3.0, hmmm */
+      VertexShader = compile vs_3_0 vs_main(PCF_NONE, true, false, true);
       PixelShader = compile ps_2_0 ps_main(PCF_NONE);
    }
 }
