@@ -3996,6 +3996,11 @@ game_menus = [
       (             eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
       (set_background_mesh, "mesh_draw_mountain_goblins"),
     (else_try),
+      #swy-- if "corsair renegades" or "corsair scouts" show this illustration thingy...
+      (this_or_next|eq, "$g_encountered_party_template", "pt_sea_raiders"),
+      (             eq, "$g_encountered_party_template", "pt_umbar_scouts"),
+      (set_background_mesh, "mesh_draw_corsair_renegades"),
+    (else_try),
       (is_between, "$g_encountered_party_template", "pt_forest_bandits" ,"pt_steppe_bandits"        ),
       (set_background_mesh, "mesh_draw_orc_raiders"),
     (else_try),

@@ -70,9 +70,12 @@ common_command_cursor_key_pressed_wb = (
       (             key_is_down, key_right_control),
       (             key_is_down, key_f1),
       
+      ] + (is_a_wb_mt and [
+      #swy-- freakingly unnecessary additional guards to prevent python from going mental even if this isn't even compiled-in in 1.011...
       (omit_key_once, key_f1),
       (omit_key_once, gk_order_1),
       (omit_key_once, gk_view_orders),
+      ] or []) + [
       
       (get_player_agent_no, ":player"),
       (agent_get_look_position, pos1, ":player"),

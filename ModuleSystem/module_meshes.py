@@ -450,4 +450,5 @@ meshes+=[
   ("draw_victory_khand",     0, "draw_victory_khand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_mountain_goblins",  0, "draw_mountain_goblins",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_corsair_renegades", 0, "draw_corsair_renegades",  0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
