@@ -1,4 +1,4 @@
-1123
+1115
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -553,14 +553,6 @@ qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_his_tro {s5}_rallies_his_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
-qstr_Everyone Everyone
-qstr_Infantry Infantry
-qstr_Archers Archers
-qstr_Cavalry Cavalry
-qstr_{s1} {s1}
-qstr_{s1}_and_{s2} {s1}_and_{s2}
-qstr_{s1}_{s2}_and_{s3} {s1},_{s2}_and_{s3}
-qstr_{s10}_Move_over_ther {s10},_Move_over_there!
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
