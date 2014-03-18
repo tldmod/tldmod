@@ -8,6 +8,10 @@ from module_constants import *
 
 from module_info import wb_compile_switch as is_a_wb_mt
 
+if(is_a_wb_mt):
+  #swy-- import Warband-specific death cam and AI/formation code... if needed.
+  from module_mission_templates_TLD_wb import *
+
 # COMMAND CURSOR MINIMOD by dstemmer # (Added by CppCoder) (I forgot original author)
 # http://forums.taleworlds.com/index.php?topic=63370.0
 
@@ -590,12 +594,19 @@ common_move_deathcam = (0, 0, 0,
   (try_end)
 ])
 
-common_deathcam_triggers = [
+common_deathcam_triggers = (not is_a_wb_mt==1 and 
+[
 	common_init_deathcam,
 	common_start_deathcam,
   
 	common_move_deathcam,
-]
+] or [
+  common_init_deathcam_wb,
+  common_start_deathcam_wb,
+  
+  common_move_deathcam_wb,
+  common_rotate_deathcam_wb,
+])
 ## MadVader deathcam end
 
 #AI triggers v3 by motomataru

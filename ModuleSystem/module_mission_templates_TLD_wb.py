@@ -1,6 +1,11 @@
-## MadVader deathcam begin
+from header_common import *
+from header_operations import *
+from header_mission_templates import *
+from module_constants import *
 
-common_init_deathcam = (0, 0, ti_once, [],
+## MadVader Warband deathcam begin
+
+common_init_deathcam_wb = (0, 0, ti_once, [],
 [
   (assign, "$tld_camera_on", 0),
   
@@ -14,7 +19,7 @@ common_init_deathcam = (0, 0, ti_once, [],
   (assign, "$tld_camera_mouse_counter", 0),
 ])
 
-common_start_deathcam = (0, 4, ti_once, # 4 seconds delay before the camera activates
+common_start_deathcam_wb = (0, 4, ti_once, # 4 seconds delay before the camera activates
 [
   (main_hero_fallen),
   (eq, "$tld_camera_on", 0)
@@ -40,7 +45,7 @@ common_start_deathcam = (0, 4, ti_once, # 4 seconds delay before the camera acti
   (assign, "$tld_camera_on", 1)
 ])
 
-common_move_deathcam = (0, 0, 0,
+common_move_deathcam_wb = (0, 0, 0,
 [
   (eq, "$tld_camera_on", 1),
   (this_or_next|game_key_clicked, gk_move_forward),
@@ -90,9 +95,9 @@ common_move_deathcam = (0, 0, 0,
 
 # set this to a positive number
 # (MV: 2 or 3 works well for me, but needs testing on other people's PCs)
-deathcam_mouse_deadzone = 2
+deathcam_wb_mouse_deadzone = 2
 
-common_rotate_deathcam = (0, 0, 0,
+common_rotate_deathcam_wb = (0, 0, 0,
 [
   (eq, "$tld_camera_on", 1),
   (neg|is_presentation_active, "prsnt_battle"),
@@ -143,8 +148,8 @@ common_rotate_deathcam = (0, 0, 0,
     (try_end),
     
     #skip pass if not needed (mouse deadzone)
-    (this_or_next|lt, ":shift", -deathcam_mouse_deadzone),
-    (             gt, ":shift",  deathcam_mouse_deadzone),
+    (this_or_next|lt, ":shift", -deathcam_wb_mouse_deadzone),
+    (             gt, ":shift",  deathcam_wb_mouse_deadzone),
    
     (assign, ":sign", 1),
     (try_begin),
@@ -155,7 +160,7 @@ common_rotate_deathcam = (0, 0, 0,
     # square root calc
     (val_abs, ":shift"),
     # ":shift" is now 1 or greater
-    (val_sub, ":shift", deathcam_mouse_deadzone),
+    (val_sub, ":shift", deathcam_wb_mouse_deadzone),
     (convert_to_fixed_point,  ":shift"),
     (store_sqrt,    ":shift", ":shift"),
     (convert_from_fixed_point,":shift"),
@@ -186,4 +191,4 @@ common_rotate_deathcam = (0, 0, 0,
   (mission_cam_set_position, pos47),
 ])
 
-## MadVader deathcam end
+## MadVader Warband deathcam end
