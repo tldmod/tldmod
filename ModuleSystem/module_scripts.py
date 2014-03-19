@@ -1815,6 +1815,12 @@ scripts = [
 	(try_begin),
 		(gt, ":volunteers", 0),
 		(neg|party_is_active, ":volunteers"), # depleted
+		#swy-- fix for corrupted savegames(*), clean your own shit! :(
+		# ----
+		#      (*) party number increases because rounds of "depleted" volunteer parties
+		#          stay in the savegame piling up until it blows up on overflow! *slow clap*
+		(remove_party, ":volunteers"),
+		# --
 		(assign, ":volunteers", 0),
 	(try_end),
 	(try_begin),
@@ -1827,14 +1833,14 @@ scripts = [
 		(party_set_flags, ":volunteers", pf_no_label),
 		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
 	(try_end),
-	
-	# compute ideal number of volunteers
-	(store_party_size_wo_prisoners, ":to_add", ":town"),
+  
+  # compute ideal number of volunteers
+  (store_party_size_wo_prisoners, ":to_add", ":town"),
     (val_div, ":to_add", 20), #   base: [num-garrison] / 20
     (call_script, "script_get_faction_rank", ":fac"),
     (assign, ":rank", reg0),
     (val_add, ":to_add", ":rank"), #  + rank
-	(store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
+    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
     (val_div, ":lead_bonus", 2),
     (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
     # orc bonus
@@ -1844,10 +1850,10 @@ scripts = [
       (this_or_next|eq, ":fac", "fac_isengard"),
       (this_or_next|eq, ":fac", "fac_moria"),
       (this_or_next|eq, ":fac", "fac_guldur"),
-      (eq, ":fac", "fac_gundabad"),
+      (             eq, ":fac", "fac_gundabad"),
       (assign, ":is_orc_faction", 1),
       (val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
-	(try_end),
+  (try_end),
     # town relations bonus +size*rel/100
     (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
     (val_add, ":center_relation", 100),
@@ -1860,14 +1866,14 @@ scripts = [
 	(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
 	(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
 	(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
-    (store_add, ":target_size", ":vol_total", ":to_add"),
-
-    (party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
+	(store_add, ":target_size", ":vol_total", ":to_add"),
+	
+	(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
 	(try_begin),
 		(gt, ":to_add", 0), # add volunteers!
         # this is to simulate slower growth for smaller templates (e.g. rangers)
         (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
-		(try_for_range, ":unused", 0, ":reinf_rounds"),
+        (try_for_range, ":unused", 0, ":reinf_rounds"),
             (try_begin),
               (store_party_size, ":current_size", ":volunteers"),
               (le, ":target_size", ":current_size"),
@@ -1901,7 +1907,7 @@ scripts = [
 			(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
 			(party_add_members, ":town", ":guy", 1),
 		(try_end),
-	(try_end),
+  (try_end),
     
     # add a couple of orc volunteers each day
     (try_begin),

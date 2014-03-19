@@ -2188,5 +2188,6 @@ str_beorn_gift2 = 2186
 str_beorn_gift3 = 2187
 str_beorn_gift4 = 2188
 str_cmenu_follow = 2189
+str_fake_party = 2190
 
 

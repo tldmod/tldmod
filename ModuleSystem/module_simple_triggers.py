@@ -293,6 +293,10 @@ simple_triggers = [
             # check for suitable terrain
             (spawn_around_party, ":cur_party", "pt_none"),
             (assign, ":fake_party", reg0),
+            #swy-- assign it a name just for kicks, maybe causes savegame corruption and this is a good marker!
+            (party_set_name,  ":fake_party", "str_fake_party"),
+            (party_set_flags, ":fake_party",  pf_no_label),
+            # ----
             (party_get_position, pos1, ":fake_party"),
             (party_get_current_terrain, ":terrain_type", ":fake_party"),
             (remove_party, ":fake_party"),
@@ -2308,7 +2312,7 @@ simple_triggers = [
         (try_begin),
             #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
             (this_or_next|eq, ":faction", "fac_isengard"),
-            (eq, ":faction", "fac_woodelf"),
+            (             eq, ":faction", "fac_woodelf"),
             (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian),
             (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
             
