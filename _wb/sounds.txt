@@ -168,16 +168,16 @@ soundsfile version 2
  punch_4.wav 2384
  punch_5.wav 2384
  player_hit_by_arrow.wav 2720
- fl_pistol.wav 2720
- encounter_sea_raider_5.ogg 1281
- encounter_sea_raider_9.ogg 1281
- encounter_sea_raider_9b.ogg 1281
- encounter_sea_raider_10.ogg 1281
- encounter_steppe_bandit_3.ogg 1281
- encounter_steppe_bandit_3b.ogg 1281
- encounter_steppe_bandit_8.ogg 1281
- encounter_steppe_bandit_10.ogg 1281
- encounter_steppe_bandit_12.ogg 1281
+ fl_pistol.wav 2728
+ encounter_sea_raider_5.ogg 1289
+ encounter_sea_raider_9.ogg 1289
+ encounter_sea_raider_9b.ogg 1289
+ encounter_sea_raider_10.ogg 1289
+ encounter_steppe_bandit_3.ogg 1289
+ encounter_steppe_bandit_3b.ogg 1289
+ encounter_steppe_bandit_8.ogg 1289
+ encounter_steppe_bandit_10.ogg 1289
+ encounter_steppe_bandit_12.ogg 1289
  sneak_halt_1.ogg 1
  sneak_halt_2.ogg 1
  horse_walk_1.wav 2352
@@ -207,16 +207,16 @@ soundsfile version 2
  man_hit_32.wav 2640
  man_hit_47.wav 2640
  man_hit_57.wav 2640
- man_victory_3.wav 2640
- man_victory_4.wav 2640
- man_victory_5.wav 2640
- man_victory_8.wav 2640
- man_victory_15.wav 2640
- man_victory_49.wav 2640
- man_victory_52.wav 2640
- man_victory_54.wav 2640
- man_victory_57.wav 2640
- man_victory_71.wav 2640
+ man_victory_3.wav 2648
+ man_victory_4.wav 2648
+ man_victory_5.wav 2648
+ man_victory_8.wav 2648
+ man_victory_15.wav 2648
+ man_victory_49.wav 2648
+ man_victory_52.wav 2648
+ man_victory_54.wav 2648
+ man_victory_57.wav 2648
+ man_victory_71.wav 2648
  Fire_Torch_Loop3.wav 1174
  d_dog1.wav 2177
  d_dog2.wav 2177
@@ -247,20 +247,20 @@ soundsfile version 2
  man_hit_19.wav 2672
  man_hit_22.wav 2672
  man_hit_59.wav 2672
- man_death_1.wav 160
- man_death_8.wav 160
- man_death_8b.wav 160
- man_death_11.wav 160
- man_death_14.wav 160
- man_death_16.wav 160
- man_death_18.wav 160
- man_death_21.wav 160
- man_death_29.wav 160
- man_death_40.wav 160
- man_death_44.wav 160
- man_death_46.wav 160
- man_death_48.wav 160
- man_death_64.wav 160
+ man_death_1.wav 168
+ man_death_8.wav 168
+ man_death_8b.wav 168
+ man_death_11.wav 168
+ man_death_14.wav 168
+ man_death_16.wav 168
+ man_death_18.wav 168
+ man_death_21.wav 168
+ man_death_29.wav 168
+ man_death_40.wav 168
+ man_death_44.wav 168
+ man_death_46.wav 168
+ man_death_48.wav 168
+ man_death_64.wav 168
  man_excercise_1.wav 1120
  man_excercise_2.wav 1120
  man_excercise_4.wav 1120
@@ -277,28 +277,28 @@ soundsfile version 2
  man_grunt_5.wav 2128
  man_grunt_13.wav 2128
  man_grunt_14.wav 2128
- man_yell_4.wav 2144
- man_yell_4_2.wav 2144
- man_yell_7.wav 2144
- man_yell_9.wav 2144
- man_yell_11.wav 2144
- man_yell_13.wav 2144
- man_yell_15.wav 2144
- man_yell_16.wav 2144
- man_yell_17.wav 2144
- man_yell_20.wav 2144
- man_shortyell_4.wav 2144
- man_shortyell_5.wav 2144
- man_shortyell_6.wav 2144
- man_shortyell_9.wav 2144
- man_shortyell_11.wav 2144
- man_shortyell_11b.wav 2144
- man_yell_b_18.wav 2144
- man_yell_22.wav 2144
- man_yell_b_21.wav 2144
- man_yell_b_22.wav 2144
- man_yell_b_23.wav 2144
- man_yell_c_20.wav 2144
+ man_yell_4.wav 2152
+ man_yell_4_2.wav 2152
+ man_yell_7.wav 2152
+ man_yell_9.wav 2152
+ man_yell_11.wav 2152
+ man_yell_13.wav 2152
+ man_yell_15.wav 2152
+ man_yell_16.wav 2152
+ man_yell_17.wav 2152
+ man_yell_20.wav 2152
+ man_shortyell_4.wav 2152
+ man_shortyell_5.wav 2152
+ man_shortyell_6.wav 2152
+ man_shortyell_9.wav 2152
+ man_shortyell_11.wav 2152
+ man_shortyell_11b.wav 2152
+ man_yell_b_18.wav 2152
+ man_yell_22.wav 2152
+ man_yell_b_21.wav 2152
+ man_yell_b_22.wav 2152
+ man_yell_b_23.wav 2152
+ man_yell_c_20.wav 2152
  man_insult_2.wav 96
  man_insult_3.wav 96
  man_insult_7.wav 96
@@ -306,72 +306,72 @@ soundsfile version 2
  man_insult_13.wav 96
  man_insult_15.wav 96
  man_insult_16.wav 96
- woman_hit_2.wav 112
- woman_hit_3.wav 112
- woman_hit_b_2.wav 112
- woman_hit_b_4.wav 112
- woman_hit_b_6.wav 112
- woman_hit_b_7.wav 112
- woman_hit_b_8.wav 112
- woman_hit_b_11.wav 112
- woman_hit_b_14.wav 112
- woman_hit_b_16.wav 112
+ woman_hit_2.wav 120
+ woman_hit_3.wav 120
+ woman_hit_b_2.wav 120
+ woman_hit_b_4.wav 120
+ woman_hit_b_6.wav 120
+ woman_hit_b_7.wav 120
+ woman_hit_b_8.wav 120
+ woman_hit_b_11.wav 120
+ woman_hit_b_14.wav 120
+ woman_hit_b_16.wav 120
  woman_fall_1.wav 160
  woman_hit_b_5.wav 160
- gondor_yell_1.wav 2144
- gondor_yell_2.wav 2144
- gondor_yell_3.wav 2144
- gondor_yell_4.wav 2144
- gondor_yell_5.wav 2144
- gondor_yell_6.wav 2144
- gondor_victory_1.wav 2640
- gondor_victory_2.wav 2640
- gondor_victory_3.wav 2640
- gondor_victory_4.wav 2640
- gondor_victory_5.wav 2640
- gondor_victory_6.wav 2640
- rohan_yell_1.wav 2144
- rohan_yell_2.wav 2144
- rohan_yell_3.wav 2144
- rohan_yell_4.wav 2144
- rohan_yell_5.wav 2144
- rohan_yell_6.wav 2144
- rohan_yell_7.wav 2144
- rohan_yell_8.wav 2144
- rohan_yell_9.wav 2144
- rohan_yell_10.wav 2144
- rohan_yell_11.wav 2144
- rohan_yell_12.wav 2144
- rohan_yell_13.wav 2144
- rohan_yell_14.wav 2144
+ gondor_yell_1.wav 2152
+ gondor_yell_2.wav 2152
+ gondor_yell_3.wav 2152
+ gondor_yell_4.wav 2152
+ gondor_yell_5.wav 2152
+ gondor_yell_6.wav 2152
+ gondor_victory_1.wav 2648
+ gondor_victory_2.wav 2648
+ gondor_victory_3.wav 2648
+ gondor_victory_4.wav 2648
+ gondor_victory_5.wav 2648
+ gondor_victory_6.wav 2648
+ rohan_yell_1.wav 2152
+ rohan_yell_2.wav 2152
+ rohan_yell_3.wav 2152
+ rohan_yell_4.wav 2152
+ rohan_yell_5.wav 2152
+ rohan_yell_6.wav 2152
+ rohan_yell_7.wav 2152
+ rohan_yell_8.wav 2152
+ rohan_yell_9.wav 2152
+ rohan_yell_10.wav 2152
+ rohan_yell_11.wav 2152
+ rohan_yell_12.wav 2152
+ rohan_yell_13.wav 2152
+ rohan_yell_14.wav 2152
  rohan_victory_1.wav 2640
  rohan_victory_2.wav 2640
  rohan_victory_3.wav 2640
  rohan_victory_4.wav 2640
- dun_yell_1.wav 2144
- dun_yell_2.wav 2144
- dun_yell_3.wav 2144
- dun_yell_4.wav 2144
- dun_yell_5.wav 2144
- dun_yell_6.wav 2144
- dun_yell_7.wav 2144
- dun_yell_8.wav 2144
- dun_yell_9.wav 2144
- dun_yell_10.wav 2144
- dun_yell_11.wav 2144
- dun_yell_12.wav 2144
- dun_yell_13.wav 2144
- dun_yell_14.wav 2144
- dun_yell_15.wav 2144
- dun_yell_16.wav 2144
- dun_yell_17.wav 2144
- dun_yell_18.wav 2144
- dun_yell_19.wav 2144
- dun_yell_20.wav 2144
- dun_yell_21.wav 2144
- dun_yell_22.wav 2144
- dun_yell_23.wav 2144
- dun_yell_24.wav 2144
+ dun_yell_1.wav 2152
+ dun_yell_2.wav 2152
+ dun_yell_3.wav 2152
+ dun_yell_4.wav 2152
+ dun_yell_5.wav 2152
+ dun_yell_6.wav 2152
+ dun_yell_7.wav 2152
+ dun_yell_8.wav 2152
+ dun_yell_9.wav 2152
+ dun_yell_10.wav 2152
+ dun_yell_11.wav 2152
+ dun_yell_12.wav 2152
+ dun_yell_13.wav 2152
+ dun_yell_14.wav 2152
+ dun_yell_15.wav 2152
+ dun_yell_16.wav 2152
+ dun_yell_17.wav 2152
+ dun_yell_18.wav 2152
+ dun_yell_19.wav 2152
+ dun_yell_20.wav 2152
+ dun_yell_21.wav 2152
+ dun_yell_22.wav 2152
+ dun_yell_23.wav 2152
+ dun_yell_24.wav 2152
  dun_victory_1.wav 2640
  dun_victory_2.wav 2640
  dun_victory_3.wav 2640
@@ -401,12 +401,12 @@ soundsfile version 2
  orc_grunt_long_1.wav 2128
  orc_yell_1.wav 2144
  orc_yell_2.wav 2144
- orc_victory_1.wav 2640
- orc_victory_2.wav 2640
- orc_victory_3.wav 2640
- orc_victory_4.wav 2640
- orc_victory_5.wav 2640
- orc_victory_6.wav 2640
+ orc_victory_1.wav 2648
+ orc_victory_2.wav 2648
+ orc_victory_3.wav 2648
+ orc_victory_4.wav 2648
+ orc_victory_5.wav 2648
+ orc_victory_6.wav 2648
  uruk_death_01.wav 160
  uruk_death_02.wav 160
  uruk_death_03.wav 160
@@ -429,35 +429,35 @@ soundsfile version 2
  uruk_shortyell_05.wav 2128
  uruk_shortyell_06.wav 2128
  uruk_shortyell_07.wav 2128
- uruk_yell_01.wav 2144
- uruk_yell_02.wav 2144
- uruk_yell_03.wav 2144
- uruk_yell_04.wav 2144
- uruk_yell_05.wav 2144
- uruk_yell_06.wav 2144
- uruk_yell_07.wav 2144
- uruk_yell_08.wav 2144
- uruk_yell_09.wav 2144
- uruk_yell_10.wav 2144
- uruk_yell_11.wav 2144
- uruk_yell_12.wav 2144
- uruk_victory_01.wav 2640
- uruk_victory_02.wav 2640
- uruk_victory_03.wav 2640
- uruk_victory_04.wav 2640
- uruk_victory_05.wav 2640
- uruk_victory_06.wav 2640
- uruk_victory_07.wav 2640
- uruk_victory_08.wav 2640
- uruk_victory_09.wav 2640
- uruk_victory_10.wav 2640
- uruk_victory_11.wav 2640
- uruk_victory_12.wav 2640
- uruk_victory_13.wav 2640
- uruk_victory_14.wav 2640
- uruk_victory_15.wav 2640
- uruk_victory_16.wav 2640
- uruk_victory_17.wav 2640
+ uruk_yell_01.wav 2152
+ uruk_yell_02.wav 2152
+ uruk_yell_03.wav 2152
+ uruk_yell_04.wav 2152
+ uruk_yell_05.wav 2152
+ uruk_yell_06.wav 2152
+ uruk_yell_07.wav 2152
+ uruk_yell_08.wav 2152
+ uruk_yell_09.wav 2152
+ uruk_yell_10.wav 2152
+ uruk_yell_11.wav 2152
+ uruk_yell_12.wav 2152
+ uruk_victory_01.wav 2648
+ uruk_victory_02.wav 2648
+ uruk_victory_03.wav 2648
+ uruk_victory_04.wav 2648
+ uruk_victory_05.wav 2648
+ uruk_victory_06.wav 2648
+ uruk_victory_07.wav 2648
+ uruk_victory_08.wav 2648
+ uruk_victory_09.wav 2648
+ uruk_victory_10.wav 2648
+ uruk_victory_11.wav 2648
+ uruk_victory_12.wav 2648
+ uruk_victory_13.wav 2648
+ uruk_victory_14.wav 2648
+ uruk_victory_15.wav 2648
+ uruk_victory_16.wav 2648
+ uruk_victory_17.wav 2648
  har_yell_1.wav 2144
  har_yell_2.wav 2144
  har_yell_3.wav 2144
@@ -473,71 +473,71 @@ soundsfile version 2
  haradrim_victory_3.wav 2640
  haradrim_victory_4.wav 2640
  haradrim_victory_5.wav 2640
- wilhelm.wav 160
- dwarf1.wav 2144
- dwarf10.wav 2144
- dwarf11.wav 2144
- dwarf12.wav 2144
- dwarf2.wav 2144
- dwarf4.wav 2144
- dwarf5.wav 2144
- dwarf7.wav 2144
- dwarf9.wav 2144
- dwarf_01.wav 2144
- dwarf_02.wav 2144
- dwarf_04.wav 2144
- dwarf_05.wav 2144
- dwarf_06.wav 2144
- dwarf_07.wav 2144
- dwarf_09.wav 2144
+ wilhelm.wav 168
+ dwarf1.wav 2152
+ dwarf10.wav 2152
+ dwarf11.wav 2152
+ dwarf12.wav 2152
+ dwarf2.wav 2152
+ dwarf4.wav 2152
+ dwarf5.wav 2152
+ dwarf7.wav 2152
+ dwarf9.wav 2152
+ dwarf_01.wav 2152
+ dwarf_02.wav 2152
+ dwarf_04.wav 2152
+ dwarf_05.wav 2152
+ dwarf_06.wav 2152
+ dwarf_07.wav 2152
+ dwarf_09.wav 2152
  dwarf8.wav 2640
  troll_death_1.wav 160
  troll_hit_1.wav 2672
  troll_grunt_1.wav 1120
  troll_grunt_2.wav 1120
  troll_hit_2.wav 2128
- dunedain_yell_1.wav 2144
- dunedain_yell_2.wav 2144
- dunedain_yell_3.wav 2144
- dunedain_yell_4.wav 2144
- dunedain_yell_5.wav 2144
- dunedain_yell_6.wav 2144
- dunedain_yell_7.wav 2144
- dunedain_yell_8.wav 2144
- dunedain_yell_9.wav 2144
- dunedain_yell_10.wav 2144
+ dunedain_yell_1.wav 2152
+ dunedain_yell_2.wav 2152
+ dunedain_yell_3.wav 2152
+ dunedain_yell_4.wav 2152
+ dunedain_yell_5.wav 2152
+ dunedain_yell_6.wav 2152
+ dunedain_yell_7.wav 2152
+ dunedain_yell_8.wav 2152
+ dunedain_yell_9.wav 2152
+ dunedain_yell_10.wav 2152
  dunedain_victory_1.wav 2640
  dunedain_victory_2.wav 2640
  dunedain_victory_3.wav 2640
- elf_lothlorien_yell_1.wav 2144
- elf_lothlorien_yell_2.wav 2144
- elf_lothlorien_yell_3.wav 2144
- elf_basic_yell_1.wav 2144
- elf_basic_yell_2.wav 2144
- elf_basic_yell_3.wav 2144
- elf_basic_yell_4.wav 2144
- elf_basic_yell_5.wav 2144
- elf_basic_yell_6.wav 2144
- elf_basic_yell_7.wav 2144
- elf_basic_yell_8.wav 2144
- elf_basic_yell_9.wav 2144
- elf_basic_yell_10.wav 2144
+ elf_lothlorien_yell_1.wav 2152
+ elf_lothlorien_yell_2.wav 2152
+ elf_lothlorien_yell_3.wav 2152
+ elf_basic_yell_1.wav 2152
+ elf_basic_yell_2.wav 2152
+ elf_basic_yell_3.wav 2152
+ elf_basic_yell_4.wav 2152
+ elf_basic_yell_5.wav 2152
+ elf_basic_yell_6.wav 2152
+ elf_basic_yell_7.wav 2152
+ elf_basic_yell_8.wav 2152
+ elf_basic_yell_9.wav 2152
+ elf_basic_yell_10.wav 2152
  elf_basic_victory_1.wav 2640
  elf_basic_victory_2.wav 2640
  elf_basic_victory_3.wav 2640
  elf_basic_victory_4.wav 2640
  elf_basic_victory_5.wav 2640
- elf_rivendell_yell_1.wav 2144
- elf_rivendell_yell_2.wav 2144
- elf_mirkwood_yell_1.wav 2144
- elf_mirkwood_yell_2.wav 2144
+ elf_rivendell_yell_1.wav 2152
+ elf_rivendell_yell_2.wav 2152
+ elf_mirkwood_yell_1.wav 2152
+ elf_mirkwood_yell_2.wav 2152
  s_big_weaponSwing.wav 2672
- thunder.wav 2720
+ thunder.wav 2724
  pull_bow_1.ogg 2048
  order_form_ranks_(orc).wav 768
  horn_isengard.wav 2560
- nazgul_02.wav 2720
- nazgul_01.wav 2720
+ nazgul_02.wav 2724
+ nazgul_01.wav 2724
  horror_scream_man_0.wav 2720
  horror_scream_man_1.wav 2720
  horror_scream_man_2.wav 2720
@@ -557,60 +557,60 @@ soundsfile version 2
  horse_snort_3.wav 1872
  horse_snort_4.wav 1872
  horse_snort_5.wav 1872
- spear_trap.wav 2416
- elf_elfsong.wav 1921
- moria_loop.wav 899
- henneth_loop.wav 899
- good_forest_loop.wav 899
- evil_forest_loop.wav 899
- water_waves_loop.wav 899
- water_splash_loop.wav 899
- water_wavesplash_loop.wav 899
- wind_loop.wav 899
- isen_loop.wav 899
- evil_men_loop.wav 899
- beast_loop.wav 899
- morgul_loop.wav 899
- gondor_people_loop.wav 899
- rohan_people_loop.wav 899
- dwarf_men_loop.wav 899
- harad_loop.wav 899
- evil_flies_loop.wav 899
- night_loop.wav 899
- neutral_forest_loop.wav 899
- fangorn_loop.wav 899
- good_eagle01.wav 1153
- good_workshop.wav 1153
- good_bird01.wav 1153
- good_bird02.wav 1153
- good_bird03.wav 1153
- good_bird_wings.wav 1153
- rohan01.wav 1153
- rohan02.wav 1153
- rohan03.wav 1153
- rohan04.wav 1153
- dwarves01.wav 1153
- dwarves02.wav 1153
- osgiliath05.wav 1153
- osgiliath02.wav 1153
- osgiliath04.wav 1153
- evil_crow.wav 1153
- harad01.wav 1153
- harad02.wav 1153
- harad03.wav 1153
- sea_seagulls.wav 1153
- sea_seaside.wav 1153
- orc_warg.wav 1153
- orc_beast01.wav 1153
- orc_beast02.wav 1153
- orc_beast03.wav 1153
- moria01.wav 1153
- moria02.wav 1153
- morgul01.wav 1153
- morgul02.wav 1153
- osgiliath01.wav 1153
- osgiliath03.wav 1153
- gondor_army.wav 1153
+ spear_trap.wav 2424
+ elf_elfsong.wav 1929
+ moria_loop.wav 907
+ henneth_loop.wav 907
+ good_forest_loop.wav 907
+ evil_forest_loop.wav 907
+ water_waves_loop.wav 907
+ water_splash_loop.wav 907
+ water_wavesplash_loop.wav 907
+ wind_loop.wav 907
+ isen_loop.wav 907
+ evil_men_loop.wav 907
+ beast_loop.wav 907
+ morgul_loop.wav 907
+ gondor_people_loop.wav 907
+ rohan_people_loop.wav 907
+ dwarf_men_loop.wav 907
+ harad_loop.wav 907
+ evil_flies_loop.wav 907
+ night_loop.wav 907
+ neutral_forest_loop.wav 907
+ fangorn_loop.wav 907
+ good_eagle01.wav 1161
+ good_workshop.wav 1161
+ good_bird01.wav 1161
+ good_bird02.wav 1161
+ good_bird03.wav 1161
+ good_bird_wings.wav 1161
+ rohan01.wav 1161
+ rohan02.wav 1161
+ rohan03.wav 1161
+ rohan04.wav 1161
+ dwarves01.wav 1161
+ dwarves02.wav 1161
+ osgiliath05.wav 1161
+ osgiliath02.wav 1161
+ osgiliath04.wav 1161
+ evil_crow.wav 1161
+ harad01.wav 1161
+ harad02.wav 1161
+ harad03.wav 1161
+ sea_seagulls.wav 1161
+ sea_seaside.wav 1161
+ orc_warg.wav 1161
+ orc_beast01.wav 1161
+ orc_beast02.wav 1161
+ orc_beast03.wav 1161
+ moria01.wav 1161
+ moria02.wav 1161
+ morgul01.wav 1161
+ morgul02.wav 1161
+ osgiliath01.wav 1161
+ osgiliath03.wav 1161
+ gondor_army.wav 1161
  horse_exterior_whinny_01.wav 0
  horse_exterior_whinny_02.wav 0
  horse_exterior_whinny_03.wav 0
@@ -622,9 +622,9 @@ soundsfile version 2
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
  level_up.wav 1937
- spider_battle01.wav 0
- spider_battle2.wav 0
- spider_death.wav 0
+ spider_battle01.wav 2728
+ spider_battle2.wav 2728
+ spider_death.wav 2728
  new_rank_evil.wav 1937
  new_rank_good.wav 1937
 277
@@ -748,9 +748,9 @@ snd_wooden_hit_high_armor_low_damage 2384 2 162 163
 snd_wooden_hit_high_armor_high_damage 2384 3 159 160 161 
 snd_blunt_hit 2384 4 164 165 165 166 
 snd_player_hit_by_arrow 2720 1 167 
-snd_pistol_shot 2720 1 168 
-snd_encounter_sea_raiders 1281 4 169 170 171 172 
-snd_encounter_steppe_bandits 1281 5 173 174 175 176 177 
+snd_pistol_shot 2728 1 168 
+snd_encounter_sea_raiders 1289 4 169 170 171 172 
+snd_encounter_steppe_bandits 1289 5 173 174 175 176 177 
 snd_sneak_town_halt 1 2 178 179 
 snd_horse_walk 2352 4 180 181 182 183 
 snd_horse_trot 1072 4 184 185 186 187 
@@ -766,7 +766,7 @@ snd_man_hit_pierce_weak 2640 5 202 203 204 205 206
 snd_man_hit_pierce_strong 2640 5 202 203 204 205 206 
 snd_man_hit_cut_weak 2640 5 202 203 204 205 206 
 snd_man_hit_cut_strong 2640 5 202 203 204 205 206 
-snd_man_victory 2640 10 207 208 209 210 211 212 213 214 215 216 
+snd_man_victory 2648 10 207 208 209 210 211 212 213 214 215 216 
 snd_fire_loop 1174 1 217 
 snd_torch_loop 1174 1 217 
 snd_dummy_hit 144 2 126 128 
@@ -780,37 +780,37 @@ snd_distant_blacksmith 1153 1 229
 snd_arena_ambiance 899 1 230 
 snd_town_ambiance 899 1 231 
 snd_man_hit 2672 20 232 233 234 235 236 237 238 239 202 240 241 242 243 244 245 203 204 205 206 246 
-snd_man_die 160 14 247 248 249 250 251 252 253 254 255 256 257 258 259 260 
+snd_man_die 168 14 247 248 249 250 251 252 253 254 255 256 257 258 259 260 
 snd_man_grunt 1120 3 261 262 263 
 snd_man_breath_hard 2096 7 264 265 266 267 268 269 270 
 snd_man_grunt_long 2128 6 271 272 273 274 275 276 
-snd_man_yell 2144 22 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 
+snd_man_yell 2152 22 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 
 snd_man_warcry 96 7 299 300 301 302 303 304 305 
-snd_woman_hit 112 10 306 307 308 309 310 311 312 313 314 315 
+snd_woman_hit 120 10 306 307 308 309 310 311 312 313 314 315 
 snd_woman_die 160 2 316 317 
-snd_gondor_yell 2144 22 318 319 320 321 322 323 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
-snd_gondor_victory 2640 10 207 208 209 210 324 325 326 327 328 329 
+snd_gondor_yell 2152 22 318 319 320 321 322 323 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
+snd_gondor_victory 2648 10 207 208 209 210 324 325 326 327 328 329 
 snd_gondor_victory_player 2640 2 324 325 
-snd_rohan_yell 2144 30 330 331 332 333 334 335 336 337 338 339 340 341 342 343 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
+snd_rohan_yell 2152 30 330 331 332 333 334 335 336 337 338 339 340 341 342 343 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
 snd_rohan_victory 2640 8 207 208 209 210 344 345 346 347 
-snd_dunlender_yell 2144 24 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 
+snd_dunlender_yell 2152 24 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 
 snd_dunlender_victory 2640 9 372 373 374 375 376 377 378 379 380 
 snd_orc_die 160 8 381 382 383 384 385 386 387 388 
 snd_orc_hit 2672 8 389 390 391 392 393 394 395 396 
 snd_orc_grunt 1120 1 397 
 snd_orc_grunt_long 2128 1 398 
 snd_orc_yell 2144 2 399 400 
-snd_orc_victory 2640 6 401 402 403 404 405 406 
+snd_orc_victory 2648 6 401 402 403 404 405 406 
 snd_uruk_die 160 6 407 408 409 410 411 412 
 snd_uruk_hit 2672 9 413 414 415 416 417 418 419 420 421 
 snd_uruk_grunt 1120 1 397 
 snd_uruk_grunt_long 2128 7 422 423 424 425 426 427 428 
-snd_uruk_yell 2144 12 429 430 431 432 433 434 435 436 437 438 439 440 
-snd_uruk_victory 2640 17 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 
+snd_uruk_yell 2152 12 429 430 431 432 433 434 435 436 437 438 439 440 
+snd_uruk_victory 2648 17 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 
 snd_haradrim_yell 2144 10 458 459 460 461 462 463 464 465 466 467 
 snd_haradrim_victory 2640 5 468 469 470 471 472 
-snd_haradrim_die 160 14 473 248 249 250 251 252 253 254 255 256 257 258 259 260 
-snd_dwarf_yell 2144 23 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 289 288 287 297 284 278 282 
+snd_haradrim_die 168 14 473 248 249 250 251 252 253 254 255 256 257 258 259 260 
+snd_dwarf_yell 2152 23 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 289 288 287 297 284 278 282 
 snd_dwarf_victory 2640 7 136 136 136 490 214 215 216 
 snd_troll_die 160 1 491 
 snd_troll_hit 2672 3 492 492 492 
@@ -818,77 +818,77 @@ snd_troll_grunt 1120 2 493 494
 snd_troll_grunt_long 2128 2 494 495 
 snd_troll_yell 2144 2 494 495 
 snd_troll_victory 2640 3 494 495 491 
-snd_dunedain_yell 2144 26 496 497 498 499 500 501 502 503 504 505 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
+snd_dunedain_yell 2152 26 496 497 498 499 500 501 502 503 504 505 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 
 snd_dunedain_victory 2640 8 216 207 208 209 210 506 507 508 
 snd_dunedain_victory_player 2640 1 506 
-snd_lothlorien_yell 2144 14 270 509 510 511 512 513 514 515 516 517 518 519 520 521 
+snd_lothlorien_yell 2152 14 270 509 510 511 512 513 514 515 516 517 518 519 520 521 
 snd_lothlorien_victory 2640 7 211 512 522 523 524 525 526 
-snd_rivendell_yell 2144 13 270 527 528 512 513 514 515 516 517 518 519 520 521 
+snd_rivendell_yell 2152 13 270 527 528 512 513 514 515 516 517 518 519 520 521 
 snd_rivendell_victory 2640 7 211 512 522 523 524 525 526 
-snd_mirkwood_yell 2144 13 270 529 530 512 513 514 515 516 517 518 519 520 521 
+snd_mirkwood_yell 2152 13 270 529 530 512 513 514 515 516 517 518 519 520 521 
 snd_mirkwood_victory 2640 7 211 512 522 523 524 525 526 
 snd_mirkwood_victory_player 2640 2 522 523 
 snd_big_weapon_swing 2672 1 531 
-snd_thunder 2720 1 532 
+snd_thunder 2724 1 532 
 snd_pull_ballista 2048 1 533 
 snd_evil_orders 768 1 534 
 snd_evil_horn 2560 1 535 
-snd_nazgul_skreech_long 2720 1 536 
-snd_nazgul_skreech_short 2720 1 537 
+snd_nazgul_skreech_long 2724 1 536 
+snd_nazgul_skreech_short 2724 1 537 
 snd_horror_scream_man 2720 5 538 539 540 541 542 
 snd_horror_scream_woman 2720 1 543 
 snd_horror_scream_orc 2720 1 544 
 snd_warg_lone_woof 2656 7 545 546 547 548 549 550 551 
 snd_horse_snort_again 1872 5 552 553 554 555 556 
-snd_spear_trap 2416 1 557 
-snd_elf_song 1921 1 558 
-snd_moria_ambiance 899 1 559 
-snd_henneth_ambiance 899 1 560 
-snd_goodforest_ambiance 899 1 561 
-snd_evilforest_ambiance 899 1 562 
-snd_water_waves_ambiance 899 1 563 
-snd_water_splash_ambiance 899 1 564 
-snd_water_wavesplash_ambiance 899 1 565 
-snd_wind_ambiance 899 1 566 
-snd_isengard_ambiance 899 1 567 
-snd_evilmen_ambiance 899 1 568 
-snd_orcs_ambiance 899 1 569 
-snd_morgul_ambiance 899 1 570 
-snd_gondor_ambiance 899 1 571 
-snd_rohan_ambiance 899 1 572 
-snd_dwarf_ambiance 899 1 573 
-snd_harad_ambiance 899 1 574 
-snd_deadmarshes_ambiance 899 1 575 
-snd_night_ambiance 899 1 576 
-snd_neutralforest_ambiance 899 1 577 
-snd_fangorn_ambiance 899 1 578 
-snd_gondor_occasional 1153 6 136 136 579 229 580 221 
-snd_elves_occasional 1153 6 136 136 581 582 583 584 
-snd_lorien_occasional 1153 5 558 581 582 583 584 
-snd_beorn_occasional 1153 7 581 582 583 580 228 221 227 
-snd_rohan_occasional 1153 10 585 586 587 588 580 579 581 229 221 225 
-snd_dwarf_occasional 1153 5 589 590 229 591 592 
-snd_dale_occasional 1153 9 581 582 583 580 228 229 221 225 593 
-snd_rhun_occasional 1153 8 585 586 587 588 594 228 229 221 
-snd_harad_occasional 1153 11 136 586 587 588 594 595 596 597 595 596 597 
-snd_umbar_occasional 1153 5 136 136 136 598 599 
-snd_dunland_occasional 1153 8 136 594 579 218 219 220 221 227 
-snd_orc_occasional 1153 6 136 594 600 601 602 603 
-snd_guldur_occasional 1153 8 136 136 136 136 594 601 602 603 
-snd_moria_occasional 1153 5 136 136 136 604 605 
-snd_isengard_occasional 1153 14 136 136 605 594 601 602 603 228 600 229 589 590 593 227 
-snd_urukhai_occasional 1153 6 594 601 602 603 600 227 
-snd_seaside_occasional 1153 6 581 582 583 598 599 229 
-snd_morgul_occasional 1153 9 136 136 136 136 136 136 136 606 607 
-snd_eosgi_occasional 1153 8 601 602 603 608 592 609 593 591 
-snd_wosgi_occasional 1153 7 136 136 608 592 609 593 591 
-snd_tirith_occasional 1153 6 136 579 610 229 136 136 
-snd_morannon_occasional 1153 1 136 
-snd_tirith_top_occasional 1153 6 136 579 136 136 136 136 
-snd_meeting_elf 1120 12 527 528 512 513 514 515 516 517 518 519 520 521 
-snd_meeting_uruk 1120 7 422 423 424 425 426 427 428 
-snd_meeting_man 1120 7 289 288 287 297 284 278 282 
-snd_meeting_orc 1120 4 397 398 399 400 
+snd_spear_trap 2424 1 557 
+snd_elf_song 1929 1 558 
+snd_moria_ambiance 907 1 559 
+snd_henneth_ambiance 907 1 560 
+snd_goodforest_ambiance 907 1 561 
+snd_evilforest_ambiance 907 1 562 
+snd_water_waves_ambiance 907 1 563 
+snd_water_splash_ambiance 907 1 564 
+snd_water_wavesplash_ambiance 907 1 565 
+snd_wind_ambiance 907 1 566 
+snd_isengard_ambiance 907 1 567 
+snd_evilmen_ambiance 907 1 568 
+snd_orcs_ambiance 907 1 569 
+snd_morgul_ambiance 907 1 570 
+snd_gondor_ambiance 907 1 571 
+snd_rohan_ambiance 907 1 572 
+snd_dwarf_ambiance 907 1 573 
+snd_harad_ambiance 907 1 574 
+snd_deadmarshes_ambiance 907 1 575 
+snd_night_ambiance 907 1 576 
+snd_neutralforest_ambiance 907 1 577 
+snd_fangorn_ambiance 907 1 578 
+snd_gondor_occasional 1161 6 136 136 579 229 580 221 
+snd_elves_occasional 1161 6 136 136 581 582 583 584 
+snd_lorien_occasional 1161 5 558 581 582 583 584 
+snd_beorn_occasional 1161 7 581 582 583 580 228 221 227 
+snd_rohan_occasional 1161 10 585 586 587 588 580 579 581 229 221 225 
+snd_dwarf_occasional 1161 5 589 590 229 591 592 
+snd_dale_occasional 1161 9 581 582 583 580 228 229 221 225 593 
+snd_rhun_occasional 1161 8 585 586 587 588 594 228 229 221 
+snd_harad_occasional 1161 11 136 586 587 588 594 595 596 597 595 596 597 
+snd_umbar_occasional 1161 5 136 136 136 598 599 
+snd_dunland_occasional 1161 8 136 594 579 218 219 220 221 227 
+snd_orc_occasional 1161 6 136 594 600 601 602 603 
+snd_guldur_occasional 1161 8 136 136 136 136 594 601 602 603 
+snd_moria_occasional 1161 5 136 136 136 604 605 
+snd_isengard_occasional 1161 14 136 136 605 594 601 602 603 228 600 229 589 590 593 227 
+snd_urukhai_occasional 1161 6 594 601 602 603 600 227 
+snd_seaside_occasional 1161 6 581 582 583 598 599 229 
+snd_morgul_occasional 1161 9 136 136 136 136 136 136 136 606 607 
+snd_eosgi_occasional 1161 8 601 602 603 608 592 609 593 591 
+snd_wosgi_occasional 1161 7 136 136 608 592 609 593 591 
+snd_tirith_occasional 1161 6 136 579 610 229 136 136 
+snd_morannon_occasional 1161 1 136 
+snd_tirith_top_occasional 1161 6 136 579 136 136 136 136 
+snd_meeting_elf 1128 12 527 528 512 513 514 515 516 517 518 519 520 521 
+snd_meeting_uruk 1128 7 422 423 424 425 426 427 428 
+snd_meeting_man 1128 7 289 288 287 297 284 278 282 
+snd_meeting_orc 1128 4 397 398 399 400 
 snd_neigh1 0 6 611 612 613 614 615 616 
 snd_horse_snort1 1872 5 552 553 554 555 556 
 snd_horse_low_whinny1 2304 2 617 618 
@@ -901,7 +901,7 @@ snd_water_splash_source 1174 1 564
 snd_lord_dies 1937 1 619 
 snd_enemy_lord_dies 1937 1 620 
 snd_level_up 1937 1 621 
-snd_spider 0 2 622 623 
-snd_spider_die 0 1 624 
+snd_spider 2728 2 622 623 
+snd_spider_die 2728 1 624 
 snd_new_rank_evil 1937 1 625 
 snd_new_rank_good 1937 1 626 
