@@ -1366,15 +1366,16 @@ nazgul_sweeps = (4,1.2,5,[
 	#(display_message, "@Nazgul Team = {reg0}"),
 	(store_random_in_range, ":long_skretch", 0,2),
 	# play sound
+	(get_player_agent_no, ":player_agent"), #for messages and sound origin
 	(try_begin),
 		(ge,":long_skretch",1),
-		(play_sound, "snd_nazgul_skreech_long" ),
+		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_long" ),
 		#(display_log_message, "@Debug: LONG sweep!"),
 	(else_try),
-		(play_sound, "snd_nazgul_skreech_short"),
+		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_short"),
 		#(display_log_message, "@Debug: SHORT sweep!"),
 	(try_end), 
-	(get_player_agent_no, ":player_agent"), #for messages
+
 	(try_for_agents,":victim"), # psycological effect:
 		(agent_is_alive,":victim"),
 		(agent_get_team, reg1, ":victim"),
@@ -2108,7 +2109,8 @@ HD_ladders_rise = (0,25,ti_once, [],[(scene_prop_get_instance,":ladder", "spr_si
 			 (prop_instance_get_position,pos1,":ladder"),
 			 (position_rotate_x,pos1,-120),
 			 (prop_instance_animate_to_position,":ladder",pos1,1100),
-			 (play_sound, "snd_evil_horn"),
+			 (get_player_agent_no,":plyr"),
+			 (agent_play_sound, ":plyr", "snd_evil_horn"),
 			 (display_message,"@The ladders on Deeping Wall! Watch out!")])
 ################## SIEGE LADDERS END #########################################
 

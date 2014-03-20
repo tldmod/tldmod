@@ -255,13 +255,13 @@ sounds = [
 
 ("big_weapon_swing", sf_vol_10|sf_priority_7,["s_big_weaponSwing.wav"]),
 
-("thunder",sf_priority_10|sf_vol_10|sf_start_at_random_pos, ["thunder.wav"]),
+("thunder",sf_2d|sf_vol_15, ["thunder.wav"]),
 ("pull_ballista",sf_vol_8, ["pull_bow_1.ogg"]),
 ("evil_orders",  sf_vol_3, ["order_form_ranks_(orc).wav"]),
 ("evil_horn",   sf_vol_10, ["horn_isengard.wav"]),
 
-("nazgul_skreech_long", sf_priority_10|sf_vol_10|sf_start_at_random_pos, ["nazgul_02.wav"]),
-("nazgul_skreech_short",sf_priority_10|sf_vol_10|sf_start_at_random_pos, ["nazgul_01.wav"]),
+("nazgul_skreech_long", sf_2d|sf_vol_15, ["nazgul_02.wav"]),
+("nazgul_skreech_short",sf_2d|sf_vol_15, ["nazgul_01.wav"]),
 
 ("horror_scream_man"  ,sf_priority_10|sf_vol_10,["horror_scream_man_0.wav","horror_scream_man_1.wav","horror_scream_man_2.wav","horror_scream_man_3.wav","horror_scream_man_4.wav"]),
 ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),
@@ -343,11 +343,11 @@ sounds = [
 ("enemy_lord_dies", sf_2d|sf_priority_9|sf_vol_7, ["enemy_lord_dies.wav"]),
 ("level_up",        sf_2d|sf_priority_9|sf_vol_7, ["level_up.wav"]),
 
-("spider",     sf_priority_10|sf_vol_10|sf_stream_from_hd, ["spider_battle01.wav", "spider_battle2.wav"]),
-("spider_die", sf_priority_10|sf_vol_10|sf_stream_from_hd, ["spider_death.wav"]),
+("spider",     sf_stream_from_hd, ["spider_battle01.wav", "spider_battle2.wav"]),
+("spider_die", sf_stream_from_hd, ["spider_death.wav"]),
 
 #swy-- new sounds for rank promotion made by Merlkir
-("new_rank_evil", sf_2d|sf_priority_9|sf_vol_7, ["new_rank_evil.wav"]),
-("new_rank_good", sf_2d|sf_priority_9|sf_vol_7, ["new_rank_good.wav"]),
+("new_rank_evil", sf_2d|sf_vol_7, ["new_rank_evil.wav"]),
+("new_rank_good", sf_2d|sf_vol_7, ["new_rank_good.wav"]),
 
 ]

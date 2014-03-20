@@ -532,12 +532,12 @@ soundsfile version 2
  elf_mirkwood_yell_1.wav 2152
  elf_mirkwood_yell_2.wav 2152
  s_big_weaponSwing.wav 2672
- thunder.wav 2724
+ thunder.wav 3841
  pull_bow_1.ogg 2048
  order_form_ranks_(orc).wav 768
  horn_isengard.wav 2560
- nazgul_02.wav 2724
- nazgul_01.wav 2724
+ nazgul_02.wav 3841
+ nazgul_01.wav 3841
  horror_scream_man_0.wav 2720
  horror_scream_man_1.wav 2720
  horror_scream_man_2.wav 2720
@@ -622,11 +622,11 @@ soundsfile version 2
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
  level_up.wav 1937
- spider_battle01.wav 2728
- spider_battle2.wav 2728
- spider_death.wav 2728
- new_rank_evil.wav 1937
- new_rank_good.wav 1937
+ spider_battle01.wav 8
+ spider_battle2.wav 8
+ spider_death.wav 8
+ new_rank_evil.wav 1793
+ new_rank_good.wav 1793
 277
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
@@ -829,12 +829,12 @@ snd_mirkwood_yell 2152 13 270 529 530 512 513 514 515 516 517 518 519 520 521
 snd_mirkwood_victory 2640 7 211 512 522 523 524 525 526 
 snd_mirkwood_victory_player 2640 2 522 523 
 snd_big_weapon_swing 2672 1 531 
-snd_thunder 2724 1 532 
+snd_thunder 3841 1 532 
 snd_pull_ballista 2048 1 533 
 snd_evil_orders 768 1 534 
 snd_evil_horn 2560 1 535 
-snd_nazgul_skreech_long 2724 1 536 
-snd_nazgul_skreech_short 2724 1 537 
+snd_nazgul_skreech_long 3841 1 536 
+snd_nazgul_skreech_short 3841 1 537 
 snd_horror_scream_man 2720 5 538 539 540 541 542 
 snd_horror_scream_woman 2720 1 543 
 snd_horror_scream_orc 2720 1 544 
@@ -901,7 +901,7 @@ snd_water_splash_source 1174 1 564
 snd_lord_dies 1937 1 619 
 snd_enemy_lord_dies 1937 1 620 
 snd_level_up 1937 1 621 
-snd_spider 2728 2 622 623 
-snd_spider_die 2728 1 624 
-snd_new_rank_evil 1937 1 625 
-snd_new_rank_good 1937 1 626 
+snd_spider 8 2 622 623 
+snd_spider_die 8 1 624 
+snd_new_rank_evil 1793 1 625 
+snd_new_rank_good 1793 1 626 

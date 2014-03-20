@@ -178,7 +178,7 @@ mission_templates = [ # not used in game
 			# (add_visitors_to_current_scene,31, "trp_knight_2_11",1),
 			# (display_message, "@ATTEMPT SPAWNING!"),]),
 			
-		# freindly greetings (after 0.35 secs)
+		# friendly greetings (after 0.35 secs)
 		(0, 0.35, ti_once, [], [ 
 			(eq,"$party_meeting",1), # friendly
 			(try_for_agents,":agent"),
@@ -1992,7 +1992,7 @@ mission_templates = [ # not used in game
 	ballista_missile_illumination,ballista_camera_alignment,ballista_turn_up,ballista_turn_down,ballista_turn_left,ballista_turn_right,ballista_aim,
 	################## THUNDER AND LIGHTNING BEGIN ###############################
 	(3, 0.2, 6, [(store_random_in_range,":rnd",1,5),(eq,":rnd",1),(set_fog_distance, 200, 0xaaaaaa),],
-				[(set_fog_distance, 80, 0x010101),(play_sound,"snd_thunder"),(assign, "$lightning_cycle",1),]),
+				[(set_fog_distance, 80, 0x010101),(get_player_agent_no,":plyr"),(agent_play_sound, ":plyr", "snd_thunder"),(assign, "$lightning_cycle",1),]),
 	(0.4,0.1, 6,[(eq,"$lightning_cycle",1),(set_fog_distance, 150, 0x777777),],		###### Lightning afterflashes 
 				[(set_fog_distance, 80, 0x010101),(assign,"$lightning_cycle",2),]),
 	(0.5,0.1, 6,[(eq,"$lightning_cycle",2),(set_fog_distance, 120, 0x555555),],
@@ -2339,7 +2339,7 @@ mission_templates = [ # not used in game
 				(assign, "$alarm_level", 1),
 				(display_message, "@The_guards_have_spotted_a_dead_body!"),
 				(display_message, "@Alarm_Level_is_now_at_1!", 4294945450),
-				(play_sound, "snd_man_yell"),
+				(agent_play_sound, "snd_man_yell", ":enemy"),
 				(reset_mission_timer_a),
 			(try_end),
 		(try_end),
@@ -2398,8 +2398,8 @@ mission_templates = [ # not used in game
 				(eq, "$alarm_level", 1),
 	#			(agent_set_team  , ":agent", 3),
 				(display_message, "@The_guards_have_spotted_you!"),
-				(display_message, "@Alarm_Level_is_now_at_2!", 4294945450),
-				(play_sound, "snd_man_yell"),
+				(display_message, "@Alarm_Level_is_now_at_2!", 0xFFFFAAAA),
+				(agent_play_sound, ":agent", "snd_man_yell"),
 				(store_agent_hit_points, ":hp", ":agent", 1), # mark enemy as the one who spotted you (will not return to patrol)
 				(val_sub,":hp",1),
 				(agent_set_hit_points, ":agent", ":hp", 1),
