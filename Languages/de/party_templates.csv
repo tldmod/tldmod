@@ -4,7 +4,7 @@ pt_hero_party|Heldentruppe
 pt_cattle_herd|Viehherde
 pt_ruins|Ruinen
 pt_legendary_place|Legendärer Ort
-pt_mound|Grabmal
+pt_mound|Grabhügel
 pt_pyre|Scheiterhaufen
 pt_wild_troll|Wilder Troll
 pt_raging_trolls|Wütende Trolle
@@ -53,13 +53,13 @@ pt_moria_scouts|Späher von Moria
 pt_guldur_scouts|Späher von Dol Guldur
 pt_gundabad_scouts|Späher von Gundabad
 pt_rhun_scouts|Späher von Rhun
-pt_gondor_raiders|Furiere von Gondor
-pt_rohan_raiders|Furiere von Rohan
-pt_imladris_raiders|Furiere aus dem Bruchtal
-pt_lorien_raiders|Furiere von Lothlorien
-pt_woodelf_raiders|Furiere aus dem Düsterwald
-pt_dale_raiders|Furiere von Thal
-pt_dwarf_raiders|Zwergische Furiere
+pt_gondor_raiders|Versorgungstrupp von Gondor
+pt_rohan_raiders|Versorgungstrupp aus Rohan
+pt_imladris_raiders|Versorgungstrupp aus dem Bruchtal
+pt_lorien_raiders|Versorgungstrupp aus Lothlorien
+pt_woodelf_raiders|Versorgungstrupp aus dem Düsterwald
+pt_dale_raiders|Versorgungstrupp aus Thal
+pt_dwarf_raiders|Zwergischer Versorgungstrupp
 pt_ranger_raiders|Plünderer der Waldläufer
 pt_morgul_raiders|Plünderer von Morgul
 pt_mordor_raiders|Plünderer von Mordor
@@ -72,21 +72,21 @@ pt_moria_raiders|Plünderer von Moria
 pt_guldur_raiders|Plünderer von Dol Guldur
 pt_gundabad_raiders|Plünderer von Gundabad
 pt_rhun_raiders|Plünderer von Rhun
-pt_gondor_patrol|Patrouille von Gondor
-pt_rohan_patrol|Patrouille von Rohan
+pt_gondor_patrol|Patrouille aus Gondor
+pt_rohan_patrol|Patrouille aus Rohan
 pt_imladris_patrol|Patrouille der Dunedain
-pt_lorien_patrol|Patrouille von Lothlorien
+pt_lorien_patrol|Patrouille aus Lothlorien
 pt_woodelf_patrol|Patrouille aus dem Düsterwald
 pt_dale_patrol|Patrouille von Thal
 pt_esgaroth_patrol|Patrouille von Esgaroth
-pt_dwarf_patrol|Zwergische Patrouille
+pt_dwarf_patrol|Zwergen-Patrouille
 pt_ranger_patrol|Patrouille der Waldläufer
 pt_amroth_patrol|Patrouille von Dol Amroth
 pt_pelargir_patrol|Patrouille von Pelargir
-pt_lossarnach_patrol|Patrouille von Lossarnach
+pt_lossarnach_patrol|Patrouille aus Lossarnach
 pt_brv_patrol|Patrouille aus dem Schwarzgrundtal
 pt_pinnath_patrol|Patrouille der Pinnath
-pt_lamedon_patrol|Patrouille von Lamedon
+pt_lamedon_patrol|Patrouille aus Lamedon
 pt_mordor_war_party|Heerschar von Mordor
 pt_isengard_war_party|Herrschar von Isengart
 pt_harad_war_party|Heerschar von Harad
@@ -102,13 +102,13 @@ pt_lorien_company|Kompanie von Lothlorien
 pt_woodelf_company|Kompanie aus dem Düsterwald
 pt_dale_company|Kompanie von Thal
 pt_dwarf_company|Kompanie der Zwerge
-pt_gondor_elite_company|Elitekompanie von Gondor
-pt_rohan_elite_company|Elitekompanie von Rohan
-pt_imladris_elite_company|Elitekompanie aus dem Bruchtal
-pt_lorien_elite_company|Elitekompanie von Lothlorien
-pt_woodelf_elite_company|Elitekompanie aus dem Düsterwald
-pt_dale_elite_company|Elitekompanie von Thal
-pt_dwarf_elite_company|Zwergische Elitekompanie
+pt_gondor_elite_company|Elitetruppe aus Gondor
+pt_rohan_elite_company|Elitetruppe aus Rohan
+pt_imladris_elite_company|Elitetruppe aus dem Bruchtal
+pt_lorien_elite_company|Elitetruppe aus Lothlorien
+pt_woodelf_elite_company|Elitetruppe aus dem Düsterwald
+pt_dale_elite_company|Elitetruppe aus Thal
+pt_dwarf_elite_company|Zwergische Elitetruppe
 pt_gondor_caravan|Kaufmannszug von Gondor
 pt_rohan_caravan|Kaufmannszug von Rohan
 pt_imladris_caravan|Kaufmannszug aus dem Bruchtal

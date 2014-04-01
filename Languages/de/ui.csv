@@ -6,26 +6,26 @@ ui_retreated_battle|%s ist geflohen.
 ui_riding_skill_not_adequate_to_mount|(Reitfertigkeit zu niedrig)
 ui_camp|Aktionen
 ui_tutorial_inventory|In The Last Days benötigst du Ressourcenpunkte um Ausrüstung zu erwerben. Ressourcenpunkte sind ein Maß dafür, wie bereitwillig eine Fraktion ist, dich auszuzrüsten, und wie viele der Ressourcen der Fraktion du verwenden darfst.
-ui_you_dont_have_value|Nicht genügend: %s
+ui_you_dont_have_value|Es fehlen: %s
 ui_merchant_cant_afford_value|%s: Du gibst uns mehr als wir benötigen! Vielleicht solltest du etwas mehr für dich behalten (du gibst Waren für %s, wir können aber nur %s verwenden).
 ui_merchant_pay_whatever|Nein, ich benötige nichts davon, behalte es.
 ui_horse|Aufsitzen
 ui_reclaim_your_sold_goods|Verlange die bereits übergebenen Waren zurück, bevor du das übergibst!
 ui_return_your_bought_goods|Gib die genommenen Waren zurück, bevor du das übergibst!
-ui_return_price|wenn zurückgegeben: +%d Ressourcenpunkte
-ui_sell_price|wenn verkauft: +%d Ressourcenpunkte
-ui_reclaim_price|wenn zurückverlangt: -%d Ressourcenpunkte
-ui_buying_price|wenn erworben: -%d Ressourcenpunkte
+ui_return_price|zurückgeben: +%d R.P.
+ui_sell_price|verkaufen: +%d R.P.
+ui_reclaim_price|zurücknehmen: -%d R.P.
+ui_buying_price|kaufen: -%d R.P.
 ui_notification_riding_skill_not_enough|Deine Reitfertigkeit ist nicht hoch genug, um aufzusitzen.
-ui_notification_payment_value|Verzehrt %s
-ui_notification_payment_receive_value|Gewinnend %s
+ui_notification_payment_value|Du verbrauchst %s
+ui_notification_payment_receive_value|Du erhältst %s
 ui_weekly_cost_value|Unterhalt: %s
 ui_sell|Gib
 ui_hire|Anwerben
 ui_notification_cant_hire|(nicht genügend Ressourcenpunkte zum Anwerben)
-ui_joining_cost_weekly_wage|Anwerben: %d Ressourcenpunkte -- Unterhalt: %d Ressourcenpunkte
-ui_weekly_wage|Unterhalt: %d Ressourcenpunkte
-ui_price|Wert: %d Ressourcenpunkte
+ui_joining_cost_weekly_wage|Anwerben: %d R.P. -- Unterhalt: %d R.P.
+ui_weekly_wage|Unterhalt: %d R.P.
+ui_price|Wert: %d R.P.
 ui_cant_reload_this_weapon_on_horseback|Diese Waffe kann reitend nicht nachgeladen werden.
 ui_delivered_number_damage_to_horse|Dem Reittier wurde %d Schaden zugefügt.
 ui_horse_charged_for_number_damage|Reittier griff an und erzeugte %d Schaden.
@@ -44,4 +44,4 @@ ui_fire_at_will_e_|%s, Nach Belieben schießen!
 ui_recent_messages|Letzte Benachrichtigungen
 ui_value_denars|%d Ressourcenpunkte.
 ui_cannot_be_used_on_horseback|Kann reitend nicht benutzt werden
-ui_upgrade_to_value|Aktualisieren auf %s
+ui_upgrade_to_value|Befördern zu %s

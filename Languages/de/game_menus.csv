@@ -119,7 +119,7 @@ mno_start_female|Weiblich
 mno_proc|Wie gewohnt verfahren
 mno_continue|Fortsetzen...
 menu_character_report|^^^^^Truppenmoral: {reg8}^Truppengrößengrenze: {reg7}^{s5}
-menu_camp|^^^^Du bist in {s1}.{s2}^^Was möchtest du tun?
+menu_camp|^^^^Du befindest dich {s1}.{s2}^^Was möchtest du tun?
 mno_camp_scene|Herumgehen.
 mno_camp_troop|Überprüfe{reg10? Truppen:}{reg12? und:}{reg11? Gefangene:}.
 mno_camp_action|Einen Gegenstand verwenden.
@@ -152,7 +152,7 @@ mno_strat_tweaks_regen_rate|Stärke-Regenerationsrate: {s7}
 mno_strat_tweaks_siege_regen_limit|Fraktionen erholen sich nicht mehr, wenn unter: {reg1}
 mno_strat_tweaks_back|Zurück zum Optimierungs-Menü.
 menu_camp_action|^^^^^^^^^ Welchen Gegenstand?
-mno_camp_customize_defilement|Entweihte Rüstung anpassen
+mno_camp_customize_defilement|Geschändete Rüstung anpassen
 mno_camp_drink_water|Trink das Entwasser!
 mno_camp_action_4|Zurück.
 menu_assasins_attack_player_won|Du hast die Attentäter aus {s2}, ausgesandt von {s3}, besiegt.
@@ -183,7 +183,7 @@ menu_cattle_herd|Du begegnest einigen Leuten.
 mno_cattle_drive_away|Befehle ihnen, dir zu folgen.
 mno_cattle_stop|Bringe sie zum Halt.
 mno_leave|Verlassen.
-menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet in {s3}{s4} statt.^^Deine Befehle?
+menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet {s3}{s4} statt.^^Deine Befehle?
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
 mno_special_whip|Stürme voran, mit der {s4} knallend.
@@ -210,8 +210,8 @@ mno_inspect_troll|Untersuche den bezwungenen Troll
 menu_pre_join|^^^^^{s2} kämpfen gegen {s1}. Du entscheidest dich dazu...
 mno_pre_join_help_attackers|Einzugreifen und den {s2} zu helfen.
 mno_pre_join_help_defenders|Den {s1} zu Hilfe zu eilen.
-mno_pre_join_leave|Dich nicht einzumischen.
-menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde.^^Die Schlacht wird in {s3}{s4} ausgetragen.
+mno_pre_join_leave|Nicht eingreifen.
+menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde.^^Die Schlacht wird {s3}{s4} ausgetragen.
 mno_join_attack|Greif den Feind an.
 mno_join_order_attack|Befiehl deinen Truppen, mit deinen Verbündeten anzugreifen, während du zurückbleibst.
 mno_join_leave|Zurückfallen.
@@ -265,17 +265,17 @@ menu_town|Du bist in {s60} angekommen.{s12}{s13}
 mno_town_menu_0|Gehe irgendwo hin.
 mno_town_menu_0_door|Tür irgendwo hin.
 mno_town_approach|Nähere dich {s1}...
-mno_town_castle|Gehe nach {s1}.
+mno_town_castle|Gehe {s1}.
 mno_town_castle_door|Tür zur Feste.
 mno_town_center|Gehe zum Hauptplatz...
 mno_town_center_door|Tür zum Stadtzentrum.
 mno_aw_chamber_door|Öffne die Tür.
-mno_trade_with_arms_merchant|Besuche den {s40}.
-mno_trade_with_horse_merchant|Besuche den {s41}.
+mno_trade_with_arms_merchant|Besuche {s40}.
+mno_trade_with_horse_merchant|Besuche {s41}.
 mno_town_prison_door|Tür zum Gefängnis.
 mno_dungeon_enter|Suche die verlorenen Speere in den Bergen.
 mno_dungeon_enter_door|Öffne die Tür.
-mno_talk_to_castle_commander|Besuche die {s61} Barracken.
+mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
@@ -294,7 +294,7 @@ mno_sneak_caught_fight|Versuche, dir deinen Weg in die Freiheit zu erkämpfen!
 mno_sneak_caught_surrender|Ergib dich.
 menu_sneak_into_town_caught_dispersed_guards|Du schlägst die Wachen zurück und verwischst deine Spuren, bevor du Fersengeld gibst und deine Verfolger im Gewirr der Straßen leicht abschüttelst.
 menu_sneak_into_town_caught_ran_away|Du schlägst dich zu den Toren durch und fliehst rasch in die Sicherheit außerhalb der Stadt.
-menu_tld_player_defeated|^^^^^Plötzlich verspürst du einen niederschmetternden Schmerz an deinem Hinterkopf! \ Du schauderst als sich die Welt um dich verdunkelt...^Ist das dein Ende?
+menu_tld_player_defeated|^^^^^Plötzlich verspürst du einen niederschmetternden Schmerz an deinem Hinterkopf! \\ Du schauderst als sich die Welt um dich verdunkelt...^Ist das dein Ende?
 menu_recover_after_death_fangorn|Du wachst auf. Du befindest dich immer noch im Wald. Jeder Knochen schmerzt. Du bist am Leben, durch ein Wunder.^^Es war eine Niederlage, aber immerhin konntest du sehen, was passierte. ^Jetzt weißt du, was in diesem verwunschenen Wald vor sich geht,^und du hast überlebt, um es zu erzählen. ^^Wird dir je jemand glauben?
 menu_recover_after_death_moria|^^^^^Du kommst zu dir. Du liegst auf weichem Boden, frische Luft streicht über dein Gesicht. Du bist draußen!^Die Orks müssen dich für tot gehalten und in irgendein dunkles Loch geworfen haben.^Du wurdest von einem unterirdischen Bach an die Oberfläche getragen.
 mno_whatever|Steh auf!
@@ -305,7 +305,7 @@ menu_notification_center_under_siege|{s1} wird von {s2} von {s3} belagert!
 menu_notification_one_side_left|^^^^^Der Ringkrieg ist vorüber!^^Die {s1} haben all ihre Gegner bezwungen und sind siegreich!
 menu_notification_total_defeat|^^^^^Der Ringkrieg ist für dich vorbei!^^Die {s1} wurden von ihren Feinden besiegt und in der Niederlage stehst du nun allein. 
 menu_notification_your_faction_collapsed|^^^^^Dein Heimatland {s11} wurde besiegt!^Andere Verbündete verbleiben aber im Krieg. Du kannst immer noch, zusammen mit jedem Überlebenden von {s11}, deiner Seite zum Sieg verhelfen.
-menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Mächte von {s13}!
+menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Armeen von {s13}!
 menu_ruins|^^^^Du näherst dich den {s1}. Ein einst solides Lager wurde dem Erdboden gleich gemacht, auch wenn du noch einige Spuren der Befestigungen und verstreut rostige Waffen erkennst.
 menu_legendary_place|^^^^Du bist den Gerüchten gefolgt and hast {s1} entdeckt. Du kannst diesen Ort nun erkunden und prüfen, ob die Gerüchte wahr sind.
 mno_explore|Erkunde diesen Ort.
@@ -356,7 +356,7 @@ mno_ruin_leave|Verlassen...
 menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht länger Teil davon sein.
 menu_animal_ambush|Du und deine Gefährten finden sich vom Rest der Truppen getrennt, als plötzlich...
 menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen! Schon bald liegen all deine Angreifer am Boden, verwundet oder tot. {s3}
-menu_animal_ambush_fail|Die Tiere beißen und reißen an dir{reg0?,: und deinem Gefährten{reg2?s,:,}} aber zum Glück könntest du sie abwehren. Hoffentlich greifen sie nicht erneut an.
+menu_animal_ambush_fail|Die Tiere beißen und reißen an dir{reg0?,: und deine{reg2?n,:m,} Gefährten}, aber zum Glück konnten sie abgewehrt werden. Hoffentlich greifen sie nicht erneut an.
 menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest (schalte ihn zunächst im M&B-Launcher ein). Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, mache nichts mit #5-8)
 mno_scene1|Schlachtfeld5 (Datei scn battlefield5.sco)
 mno_scene2|Schlachtfeld6 (Datei scn battlefield6.sco)
