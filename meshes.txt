@@ -1,4 +1,4 @@
-333
+334
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -332,3 +332,4 @@ mesh_draw_victory_dunland 0 draw_victory_dunland 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_khand 0 draw_victory_khand 0 0 0 0 0 0 1 1 1
 mesh_draw_mountain_goblins 0 draw_mountain_goblins 0 0 0 0 0 0 1 1 1
 mesh_draw_corsair_renegades 0 draw_corsair_renegades 0 0 0 0 0 0 1 1 1
+mesh_draw_dunland_outcasts 0 draw_dunland_outcasts 0 0 0 0 0 0 1 1 1
