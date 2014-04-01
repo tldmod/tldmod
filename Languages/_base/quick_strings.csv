@@ -747,7 +747,7 @@ qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
 qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
 qstr_{s1}_from_{s2}|{s1} from {s2}
-qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.                                                                                                                      (the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
+qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
 qstr_Info|Info
 qstr_You_came_into_a_poss|You came into a possession of a strange, oversized bowl of fresh-looking water. It smells a little like musk.
 qstr_Obtained:_Ent_water.|Obtained: Ent water.
