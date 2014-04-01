@@ -338,5 +338,6 @@ mesh_draw_victory_dunland = 336
 mesh_draw_victory_khand = 337
 mesh_draw_mountain_goblins = 338
 mesh_draw_corsair_renegades = 339
+mesh_draw_dunland_outcasts = 340
 
 
