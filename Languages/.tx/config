@@ -25,6 +25,12 @@ source_file = _base\game_strings.csv
 source_lang = en
 type = INI
 
+[tld.info_pages]
+file_filter = <lang>\info_pages.csv
+source_file = _base\info_pages.csv
+source_lang = en
+type = INI
+
 [tld.hints]
 file_filter = <lang>\hints.csv
 source_file = en\hints.csv
