@@ -4571,6 +4571,8 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 	PS_OUTPUT Output;
 	
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+	float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+	
 	INPUT_TEX_GAMMA(tex_col.rgb);
 	
 	float sun_amount = 1;
@@ -4578,7 +4580,7 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 	{
 		sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
 	}
-	Output.RGBColor =  tex_col * ((In.Color + In.SunLight * sun_amount));
+	Output.RGBColor =  tex_col * ((tex_sdw * In.Color + In.SunLight * sun_amount));
 	
 	
 	//add fresnel term
@@ -6816,14 +6818,15 @@ PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
 {
     PS_OUTPUT Output;
 
-    float4 tex_col=tex2D(MeshTextureSampler, In.Tex0*3.0);
-	
+    float4 tex_col = tex2D(MeshTextureSampler, In.Tex0*3.0);
+    float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+
 	tex_col.rgb = pow(tex_col.rgb, input_gamma);
 
     // change the following weights to tune snow presence
-    float snow = In.Spec.x*0.70  // effect of altitude on snow presence
-                 - 1.4               // basic snow altitude
-		 - (tex_col.w-0.5)*2.5; // effect of alpha channel on snow presence
+    float snow = In.Spec.x*0.70          // effect of altitude on snow presence
+                 - 1.4                   // basic snow altitude
+                 - (tex_col.w-0.5)*2.5;  // effect of alpha channel on snow presence
 
 
     snow=clamp(snow,0.0,0.85); // snow factor is between 0 and 0.85
@@ -6831,14 +6834,15 @@ PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
     tex_col.xyz=snow*float3(0.9,0.9,0.9) +(1-snow)*tex_col.xyz;
 
 
-    tex_col *= In.Color             // shade with Lambertian lighting
-			+ In.SunLight
-            + snow*In.Spec.y // plus shininess (only for snow)...
-              *1.3*(1.0-0.5*tex_col.w);   // ...whiegted with alpha channel
+    tex_col *= tex_sdw
+             * In.Color                     // shade with Lambertian lighting
+             + In.SunLight
+             + snow*In.Spec.y               // plus shininess (only for snow)...
+             * 1.3 * (1.0-0.5*tex_col.w);   // ...weighted with alpha channel
 
     Output.RGBColor = tex_col;
     Output.RGBColor.w = In.Color.w;
-	Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);	
+    Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);	
     return Output;
 }
 
@@ -6848,6 +6852,7 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     PS_OUTPUT Output;
     
     float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+    float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
     
     tex_col.rgb = pow(tex_col.rgb, input_gamma);
     
@@ -6855,11 +6860,11 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     {
 		float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
 //		sun_amount *= sun_amount;
-		Output.RGBColor =  tex_col * ((In.Color + In.SunLight * sun_amount));
+		Output.RGBColor =  tex_col * (tex_sdw * In.Color + In.SunLight * sun_amount);
     }
     else
     {
-    	Output.RGBColor = tex_col * (In.Color + In.SunLight);
+    	Output.RGBColor = tex_col * (tex_sdw * In.Color + In.SunLight);
     }
     // gamma correct
     Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
@@ -6886,6 +6891,8 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
          (0.5)*(0.5+(In.Color.w-0.5)*2.0 + (tex_col.w-0.5))
 	  );
 	}
+	
+	Output.RGBColor.rgb;
 
     return Output;
 }
