@@ -1,0 +1,47 @@
+ui_at_learning_limit|(limit ucenja za ovu rasu)
+ui_not_enough_skill_points_to_learn|(nema dovoljno skil poena da se nauci)
+ui_not_enough_attributetype_to_learn_this_skill|(nema dovoljno %ova da se nauci ovaj skil)
+ui_explanation_agility|Okretnost. Svaki poen vam daje pet poena za oruzje i povecava procenat potezanja oruzja za 0.5%. Ovi skilovi se nemogu izgraditi preko 1/3 okretnosti: majstor oruzja, Stit< Atletika, Jahanje, Streljastvo na konju, Kradja.
+ui_retreated_battle|%ovi su pobegli.
+ui_riding_skill_not_adequate_to_mount|(Skil jahanja prenizak)
+ui_camp|Akcije.
+ui_tutorial_inventory|U TLD su vam potrebni Reurs poeni da dobijete opremu.
+ui_you_dont_have_value|Nema %eva
+ui_merchant_cant_afford_value|%a Dajate nam vise nego sto nam treba. Mozda da sacuvate nesto za sebe.
+ui_merchant_pay_whatever|Ne netreba mi, zadrzite.
+ui_horse|Jasi
+ui_reclaim_your_sold_goods|Prvo vratite to sto ste uzeli!
+ui_return_your_bought_goods|Prvo vratite to sto ste uzeli!
+ui_return_price|ako vracen +%o Res.P
+ui_sell_price|ako dato +%o Res.P
+ui_reclaim_price|Za vraceno -%o Res.P
+ui_buying_price|za uzeti -%o Res.P
+ui_notification_riding_skill_not_enough|Skil jahanja vam nije dovoljno visok.
+ui_notification_payment_value|Koristiti
+ui_notification_payment_receive_value|Dobijate
+ui_weekly_cost_value|Odzavanje:
+ui_sell|Daj
+ui_hire|Regrutuj
+ui_notification_cant_hire|(nema dovoljno R.P. za regrutovanje)
+ui_joining_cost_weekly_wage|Regrutuj %o Res.Pts - Odrzavanje %o Res.Pts.
+ui_weekly_wage|Odrzavanje: %o Res.P.
+ui_price|Vrednost %d Res.P.
+ui_cant_reload_this_weapon_on_horseback|Nemoguce napuniti ovo oruzje dok ste na konju.
+ui_delivered_number_damage_to_horse|Datko %o steta za konja.
+ui_horse_charged_for_number_damage|Konj jurisao za %o stete.
+ui_horse_received_number_damage|Konj primio %o stete.
+ui_horse_fell_dead|Konj je pao mrtav...
+ui_horse_crippled|Konj je obogaljen...
+ui_you_got_value|%ova zaradjeno.
+ui_has_deserted_the_party|je otisao iz grupe.
+ui_have_deserted_the_party|je napustio grupu.
+ui_loading_textures|Ucitavalje tekstura (budite strpljivi)...
+ui_order_hold_fire_toggle|Ne pucaj/Pucaj po zelji (Toggle)
+ui_order_dismount_toggle|Naredi Sjahanje/Jahanje (Toogle)
+ui_mount_horses_e_|%o Konj!
+ui_hold_fire_e_|%e. Ne pucajte!
+ui_fire_at_will_e_|%e Pucaj po zelji!
+ui_recent_messages|Posednje poruke.
+ui_value_denars|%o resurs poena.
+ui_cannot_be_used_on_horseback|Nemoze se koristiti za vreme jahanja.
+ui_upgrade_to_value|Unapredi za 
