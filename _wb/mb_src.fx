@@ -22,6 +22,9 @@
 /* swyter-- used to hide the HP overlay on TLD cutscenes */
 float swy_ui_opacity = 1.0f;
 
+/* swyter-- used to make everything darker when the Mordor faction is strong */
+float swy_mordor_strength_factor = 1.0f;
+
 #if !defined (PS_2_X)
 	#error "define high quality shader profile: PS_2_X ( ps_2_b or ps_2_a )"
 #endif
@@ -69,7 +72,7 @@ float swy_ui_opacity = 1.0f;
 	#define INITIALIZE_OUTPUT(structure, var)	structure var = (structure)0;
 #endif
 
-#pragma warning( disable : 3571)	//pow(f,e)
+#pragma warning(disable : 3571)	//pow(f,e)
 
 
 //Categories..
@@ -286,8 +289,8 @@ struct PS_OUTPUT
 #ifdef FUNCTIONS
 float GetSunAmount(uniform const int PcfMode, float4 ShadowTexCoord, float2 ShadowTexelPos)
 {
-	float sun_amount;
-	if (PcfMode == PCF_NVIDIA)
+	float sun_amount = 0.f;
+	/**if (PcfMode == PCF_NVIDIA)
 	{
 		//sun_amount = tex2D(ShadowmapTextureSampler, ShadowTexCoord).r;
 		sun_amount = tex2Dproj(ShadowmapTextureSampler, ShadowTexCoord).r;
@@ -304,7 +307,7 @@ float GetSunAmount(uniform const int PcfMode, float4 ShadowTexCoord, float2 Shad
 
 		// lerp between the shadow values to calculate our light amount
 		sun_amount = lerp(lerp(sourcevals[0], sourcevals[1], lerps.x), lerp(sourcevals[2], sourcevals[3], lerps.x), lerps.y);
-	}
+	}**/
 	return sun_amount;
 }
 
@@ -4581,6 +4584,7 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 		sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
 	}
 	Output.RGBColor =  tex_col * ((tex_sdw * In.Color + In.SunLight * sun_amount));
+	Output.RGBColor.rgb = swy_mordor_strength_factor;
 	
 	
 	//add fresnel term

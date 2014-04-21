@@ -1,4 +1,4 @@
-1115
+1120
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -869,6 +869,11 @@ qstr_Guardians_of_{s6} Guardians_of_{s6}
 qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
+qstr_:swy_mordor_strength :swy_mordor_strength_factor_orig_=_{reg1}
+qstr_:swy_mordor_strength_ :swy_mordor_strength_after_normal_=_{reg1}
+qstr_:swy_mordor_strength_s :swy_mordor_strength_sub_=_{reg1}
+qstr_:swy_mordor_strength_f :swy_mordor_strength_factor_=_{reg1}
+qstr_swy_mordor_strength_ swy_mordor_strength_factor
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
