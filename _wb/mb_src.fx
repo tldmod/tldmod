@@ -290,7 +290,7 @@ struct PS_OUTPUT
 float GetSunAmount(uniform const int PcfMode, float4 ShadowTexCoord, float2 ShadowTexelPos)
 {
 	float sun_amount = 0.f;
-	/**if (PcfMode == PCF_NVIDIA)
+	if (PcfMode == PCF_NVIDIA)
 	{
 		//sun_amount = tex2D(ShadowmapTextureSampler, ShadowTexCoord).r;
 		sun_amount = tex2Dproj(ShadowmapTextureSampler, ShadowTexCoord).r;
@@ -307,7 +307,7 @@ float GetSunAmount(uniform const int PcfMode, float4 ShadowTexCoord, float2 Shad
 
 		// lerp between the shadow values to calculate our light amount
 		sun_amount = lerp(lerp(sourcevals[0], sourcevals[1], lerps.x), lerp(sourcevals[2], sourcevals[3], lerps.x), lerps.y);
-	}**/
+	}
 	return sun_amount;
 }
 
@@ -4583,8 +4583,7 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 	{
 		sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
 	}
-	Output.RGBColor =  tex_col * ((tex_sdw * In.Color + In.SunLight * sun_amount));
-	Output.RGBColor.rgb = swy_mordor_strength_factor;
+	Output.RGBColor =  (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f)*tex_sdw) * (tex_sdw * In.Color + In.SunLight * sun_amount);
 	
 	
 	//add fresnel term
@@ -6838,7 +6837,7 @@ PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
     tex_col.xyz=snow*float3(0.9,0.9,0.9) +(1-snow)*tex_col.xyz;
 
 
-    tex_col *= tex_sdw
+    tex_col *= (float4(swy_mordor_strength_factor.xxx,1.0f) * tex_sdw)
              * In.Color                     // shade with Lambertian lighting
              + In.SunLight
              + snow*In.Spec.y               // plus shininess (only for snow)...
@@ -6864,11 +6863,14 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     {
 		float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
 //		sun_amount *= sun_amount;
-		Output.RGBColor =  tex_col * (tex_sdw * In.Color + In.SunLight * sun_amount);
+		Output.RGBColor = (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f) *tex_sdw) * (tex_sdw * In.Color + In.SunLight * sun_amount);
+    	Output.RGBColor.a = 1.0;
+
     }
     else
     {
-    	Output.RGBColor = tex_col * (tex_sdw * In.Color + In.SunLight);
+    	Output.RGBColor = (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f) *tex_sdw) * (tex_sdw * In.Color + In.SunLight);
+    	Output.RGBColor.a = 1.0;
     }
     // gamma correct
     Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);

@@ -8,6 +8,7 @@ from header_troops import *
 from header_music import *
 from header_terrain_types import *
 from module_constants import *
+from module_info import wb_compile_switch as is_a_wb_trigger
 
 ####################################################################################################################
 # Simple triggers are the alternative to old style triggers. They do not preserve state, and thus simpler to maintain.
@@ -2560,11 +2561,12 @@ simple_triggers = [
   (try_end), # try_for_range
 ]),   
 
-# (63) Propagate Mordor strength as shader uniform every hour...
-(1,
-[
-  (set_fixed_point_multiplier, 100),
 
+] + (is_a_wb_trigger and False and [
+
+# (63) Propagate Mordor strength as shader uniform every hour...
+(0,
+[
   # get the general strength from the faction slot (which can be from 0 to 8000)
   # example: 6900
   (faction_get_slot, ":faction_strength", "fac_mordor", slot_faction_strength),
@@ -2572,27 +2574,15 @@ simple_triggers = [
   # limit the range of values to 0-8000, just to make sure wonky things won't happen
   (val_clamp, ":faction_strength", 0, fac_str_max),
   
-  (assign,reg1,":faction_strength"),
-  (display_message,"@:swy_mordor_strength_factor_orig = {reg1}"),
-
-  
   # normalize it to the unit by dividing it by the maximum, taking care of
   # the two digits for decimals as we are doing integer operations on a future float
   # example: (6900*100) / (8000/100) = 8625 = 86.25%
   (val_mul,":faction_strength", 100),
   (val_div,":faction_strength", fac_str_max/100), # fixed point with two decimal points
   
-  (assign, reg1, ":faction_strength"),
-  (display_message,"@:swy_mordor_strength_after_normal = {reg1}"),
-
-  
   # reverse it, so that the more powerful the faction, darker the map
   # example: (100*100) - 8625 = 1325 = 13.75%
   (store_sub, ":faction_strength", 100 * 100, ":faction_strength"),
-  
-  (assign,reg1,":faction_strength"),
-  (display_message,"@:swy_mordor_strength_sub = {reg1}"),
-
   
   # instead of linearly mapping the ambient light... map it to a pow curve,
   # darker the dark, brighter when Mordor is weak, looks less flat ambient-wise.
@@ -2602,11 +2592,22 @@ simple_triggers = [
   
   # min:     0 = 0.0f 
   # max: 10000 = 1.0f
-  (assign,reg1,":faction_strength"),
-  (display_message,"@:swy_mordor_strength_factor = {reg1}"),
   
-  (set_shader_param_float, "@swy_mordor_strength_factor", ":faction_strength"),
+  # gradient it smoothly instead of abruptly
+  (try_begin),
+    (lt,":faction_strength","$cur_mordor_strength"),
+    (val_add,"$cur_mordor_strength",100),
+  (else_try),
+    (gt,":faction_strength","$cur_mordor_strength"),
+    (val_sub,"$cur_mordor_strength",100),
+  (try_end),
+  
+  (neq,"$cur_mordor_strength",":faction_strength"),
+  (store_div,":out","$cur_mordor_strength", 2),
+  (set_shader_param_float, "@swy_mordor_strength_factor", ":out"),
 ]),
+
+] or []) + [
 
 ##############################################
 #trigger reserved for future save game compatibility
