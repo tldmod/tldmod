@@ -3772,7 +3772,23 @@ game_menus = [
 
 ( "drank_ent_water_human",0,# human player drank Ent water
     "^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.",
-	"none",[  (set_background_mesh, "mesh_draw_entdrink_human"),],[("continue_dot",[],"Continue.",[(change_screen_return,0),] ),]
+  "none",[  (try_begin),
+              (troop_get_type, ":player_race", "trp_player"),
+              (            eq, ":player_race",  tf_dwarf),
+              # --
+              (set_background_mesh, "mesh_draw_entdrink_dwarf"),
+              
+            (else_try),
+              (call_script, "script_determine_what_player_looks_like"),
+              (         eq, "$player_looks_like_an_orc", 1),
+              # --
+              (set_background_mesh, "mesh_draw_entdrink_orc"),
+              
+            (else_try),
+              (set_background_mesh, "mesh_draw_entdrink_human"),
+            (try_end),
+
+  ],[("continue_dot",[],"Continue.",[(change_screen_return,0),] ),]
  ),
 ( "drank_ent_water_orc",0,# orc player drank Ent water (mtarini)
 	"^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",

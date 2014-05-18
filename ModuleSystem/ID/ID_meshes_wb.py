@@ -339,5 +339,9 @@ mesh_draw_victory_khand = 337
 mesh_draw_mountain_goblins = 338
 mesh_draw_corsair_renegades = 339
 mesh_draw_dunland_outcasts = 340
+mesh_draw_entdrink_dwarf = 341
+mesh_draw_entdrink_orc = 342
+mesh_draw_victory_harad = 343
+mesh_draw_victory_rhun = 344
 
 
