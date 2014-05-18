@@ -2616,10 +2616,10 @@ itemsfile version 2
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 12 100 2 50 20 15 0 0 0 0 0 0 0
 0
 
- itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 40960 130 0 100 0 286 296
+ itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 40960 130 0 100 0 286 296
 0
 
- itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  2h_westernesse 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
+ itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
 0
 
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
