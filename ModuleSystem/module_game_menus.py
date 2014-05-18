@@ -4430,17 +4430,17 @@ game_menus = [
 		
 		(try_begin),
 			# orc VS anything not orc
-			(eq, ":winning_side_race_group", tf_orc ),
-			(neq, ":losing_side_race_group", tf_orc ),
+			( eq, ":winning_side_race_group", tf_orc ),
+			(neq, ":losing_side_race_group",  tf_orc ),
 			(store_random_in_range,":rnd",0,2),
 			(try_begin),(eq,":rnd",0),(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
 			 (else_try),(set_background_mesh, "mesh_draw_victory_uruk"),
 			(try_end),
 		(else_try),	
 			# orc VS orc
-			(eq, ":winning_side_race_group", tf_orc ),
-			(eq, ":losing_side_race_group", tf_orc ),
-			(neq, ":winning_side_faction", fac_no_faction), # not good for winning tribals etc.
+			( eq, ":winning_side_race_group", tf_orc ),
+			( eq, ":losing_side_race_group",  tf_orc ),
+			(neq, ":winning_side_faction",    fac_no_faction), # not good for winning tribals etc.
 			(set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
 		(else_try),
 			# dwarf VS anything
@@ -4459,6 +4459,12 @@ game_menus = [
 			(eq, ":winning_side_faction", "fac_khand" ),
 			(set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
 		(else_try),
+			(eq, ":winning_side_faction", "fac_harad" ),
+			(set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
+		(else_try),
+			(eq, ":winning_side_faction", "fac_rhun" ),
+			(set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
+		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
 			(eq, ":losing_side_race_group", tf_orc ),
 			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS orcs 
@@ -4468,15 +4474,15 @@ game_menus = [
 			(set_background_mesh,  "mesh_draw_defeat_orc"), 
 		(else_try),
 			# generic  defeat image: anybody else....
-			(eq, "$g_battle_result", -1), (eq, "$player_looks_like_an_orc", 1),
+			(eq, "$g_battle_result", -1), (neq, "$player_looks_like_an_orc", 1),
 			(set_background_mesh,  "mesh_draw_defeat_human"), 
 		(try_end),
 		
-		# special case ovveride: ent image 
+		# special case override: ent image 
 		(try_begin),  
 			(eq, "$g_encountered_party", "p_legend_fangorn"),
 			(eq, "$g_battle_result", -1),
-			# override vicotry-image with ent, image 
+			# override the victory image with this ent image 
 			(store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_ent_attack"), (set_background_mesh, reg10),
 		(try_end),
 	 (try_end),
