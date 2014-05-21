@@ -1,0 +1,47 @@
+ui_at_learning_limit|(na ograničenju za učenje za ovu rasu)
+ui_not_enough_skill_points_to_learn|(nedovoljno bodova iskustva da bi naučio)
+ui_not_enough_attributetype_to_learn_this_skill|(nedovoljno % kako bi naučio ovu vještinu)
+ui_explanation_agility|Spretnost: svaki bod daje pet bodova za oružje i ubrzava brzinu oružja za 0.5%. Slijedeće vještine se ne mogu razviti više od 1/3 Spretnosti: gospodar oružja, Štit, Atletika, Jahanje,  Strijelac na konju, Pljačkanje.
+ui_retreated_battle|%s je razbijen.
+ui_riding_skill_not_adequate_to_mount|(Vještina jahanja preniska)
+ui_camp|Akcije
+ui_tutorial_inventory|U Posljednjim Danima, potrebni su ti prihodni bodovi kako bi mogao doći do opreme. Prihodni bodovi su mjera koliko je frakcija spremna da te opskrbljuje, i koliko sredstava frakcije imaš pravo koristiti.
+ui_you_dont_have_value|Nema: %s 
+ui_merchant_cant_afford_value|%s: Daješ nam više nego što nam je potrebno! Možda bi mogao zadržati nešto više za sebe (daješ dobra za %s, možemo samo iskoristiti %s).
+ui_merchant_pay_whatever|Ne, ne treba mi ništa od toga, zadržite.
+ui_horse|Uzjaši
+ui_reclaim_your_sold_goods|Povrati robu koju si dao prije nego što daješ to!
+ui_return_your_bought_goods|Vrati robu koju si uzeo prije nego daš to!
+ui_return_price|ako se vrati: +%d Res.B.
+ui_sell_price|ako se da: +%d Res.B.
+ui_reclaim_price|tražiti povrat:-%d Res.B.
+ui_buying_price|polagati pravo: -%d Res.B.
+ui_notification_riding_skill_not_enough|Tvoja vještina jahanja nije dovoljno visoka da bi mogao zajahati ovo.
+ui_notification_payment_value|Potrošnja %s
+ui_notification_payment_receive_value|Dobivanje %s
+ui_weekly_cost_value|Održavanje %s
+ui_sell|Daj
+ui_hire|Prijavi se 
+ui_notification_cant_hire|nedovoljno P.B. za prijavu)
+ui_joining_cost_weekly_wage|Unovačiti: %d Prihod.Bod. -- Uzdržavanje %d Prihod.Bod.
+ui_weekly_wage|Uzdržavanje: %d Prihod.B.
+ui_price|Vrijednost: %d Prihod.B.
+ui_cant_reload_this_weapon_on_horseback|Ne možeš ponovo napuniti ovo oružje dok jašeš.
+ui_delivered_number_damage_to_horse|Napravio %d štete konju. 
+ui_horse_charged_for_number_damage|Konj opterećen za %d štete.
+ui_horse_received_number_damage|Konj je dobio %d oštećenja.
+ui_horse_fell_dead|Konj se srušio mrtav...
+ui_horse_crippled|Konj osakaćen...
+ui_you_got_value|%s zarađeno.
+ui_has_deserted_the_party|Napustio je družinu.
+ui_have_deserted_the_party|Napustili su družinu
+ui_loading_textures|Učitavam Teksture (budi strpljiv)...
+ui_order_hold_fire_toggle|Ne pucaj/Pucaj po volji (Uključi ili isključi)
+ui_order_dismount_toggle|Naredi sjahati/uzjahati ((Uključi ili isključi)
+ui_mount_horses_e_|%s, Uzjaši!
+ui_hold_fire_e_|%s, Ne pucaj!
+ui_fire_at_will_e_|%s, Slobodno pucaj!
+ui_recent_messages|Zadnje poruke
+ui_value_denars|%d Broj Resursa 
+ui_cannot_be_used_on_horseback|Ne može se koristiti  dok si na konju
+ui_upgrade_to_value|Unaprijedi u %s

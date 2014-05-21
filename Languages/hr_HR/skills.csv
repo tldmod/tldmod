@@ -1,0 +1,48 @@
+skl_trade|Trgovac
+skl_trade_desc|Nivoi ove vještine omogućuju osigurati više opreme za manje Bodova Resursa. \n  (Vještina družine)
+skl_leadership|Vodstvo
+skl_leadership_desc|Svaki dodatni bod povećava broj vojnika kojima možeš zapovijedati za 5, povećava moral tvoje družine i smanjuje plaću vojnika za 5 % ( Vješina Vođe)
+skl_prisoner_management|Upravljanje zatvorenicima
+skl_prisoner_management_desc|Svaki dodatni nivo ove vještine povećava broj zatvorenika za %d. (Vještina Vođe)
+skl_persuasion|Nagovaranje
+skl_persuasion_desc|Ova vještina  pomaže da drugi ljudi prihvate tvoj pogled.  (Osobna vještina)
+skl_engineer|Obrtništvo
+skl_engineer_desc|Svaki dodatni bod ove vještine istodobno smanjuje vrijeme izrade i unaprijeđenja opreme, te omogućava kvalitetniju nadogradnju. (Vještina družine)
+skl_first_aid|Prva pomoć
+skl_first_aid_desc|Junacima se vraća 5 % po vještini nivoa bodova otpornosti izgubljenih za vrijeme misije. (vještina družine)
+skl_surgery|Kirurgija
+skl_surgery_desc|Svaki dodatni bod ove vještine daje 4%%  priliku da će smrtno pogođen član družine prije biti ranjen nego ubijen. (vještina družine)
+skl_wound_treatment|Obrada rana
+skl_wound_treatment_desc|Svakim  dodatni nivo ove vještine ubrzava oporavak Družine za 20%%. (vještina družine)
+skl_inventory_management|Upravljanje inventarom
+skl_inventory_management_desc|Povećava kapacitet inventara za +6 za svaki dodatni nivo vještine. (Vještina Vođe)
+skl_spotting|Uočavanje
+skl_spotting_desc|Doseg pogleda družine se povećava za 10%%  za svaki dodatni nivo vještine. (vještina družine)
+skl_pathfinding|Pronalazak puta
+skl_pathfinding_desc|Za svaki dodatni nivo vještine brzina otkrivanja mape za Družinu se povećava za 3%%. (vještina družine)
+skl_tactics|Taktika
+skl_tactics_desc|Svaka dodatna dva nivoa ove vještine povećavaju početnu prednost za 1. (vještina družine)
+skl_tracking|Praćenje
+skl_tracking_desc|Više se može pročitati iz traga. (vještina družine)
+skl_trainer|Trener
+skl_trainer_desc|Svaki dan, svaki junak s ovom vještinom daje iskustvo svakom drugom članu družine čije je nivo niži od njegovog/ njenog. Dobiveno iskustvo ide od: {0,4,10,16,23,30,38,46,55,65,80}. (Osobna vještina)
+skl_looting|Pljačkanje
+skl_looting_desc|Za svaki dodatni nivo ova vještina povećava količinu plijena za 10 %%. (vještina družine)
+skl_horse_archery|Streličarstvo na konju
+skl_horse_archery_desc|Smanjuje oštećenja i kaznu za preciznost za streličarstvo i bacanje kad se nalažiš na konju. (Osobna vještina)
+skl_riding|jahanje
+skl_riding_desc|Omogućuje da jašeš konje ( ili druge zvjeri) koje su na većem nivou težine, i povećava tvoju brzinu jahanja i upravljanja. (Osobna vještina)
+skl_athletics|Atletika
+skl_athletics_desc|Poboljšava tvoju brzinu trčanja. (Osobna vještina)
+skl_shield|Štit
+skl_shield_desc|Smanjuje oštećenje štitova (za 8%% po nivou vještine) i popravlja brzinu štita i pokrivanje. (Osobna vještina)
+skl_weapon_master|Gospodar Oružja
+skl_weapon_master_desc|Olakšava učenje izvrsnosti oružja i povećava granicu izvrsnosti. Ograničenja su prikazana kao: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobna vještna)
+skl_power_draw|Moć Potezanja
+skl_power_draw_desc|Dopušta liku korištenje jačih lukova. Svaki dodatni bod ove vještine (sve do četiri plus moć potezanja zahtjev luka) povećava oštećenje za 14%%. (Osobna vještina)
+skl_power_throw|Moć Bacanja
+skl_power_throw_desc|Svaki dodatni bod ove vještine povećava oštećenje od koplja za 10 %%. (Osobna vještina)
+skl_power_strike|Moć udara
+skl_power_strike_desc|Svaki dodatni bod ove vještine povećava štetu od bodeža, mačeva i drugog oružja koje se ne koristi kao projektil, za  8%%. (Osobna vještina)
+skl_ironflesh|Željezno tijelo
+skl_ironflesh_desc|Svaki dodatni bod ovoj vještini povećava broj bodova otpornosti za+2 (Osobna vještina)

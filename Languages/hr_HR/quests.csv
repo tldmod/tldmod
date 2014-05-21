@@ -1,0 +1,74 @@
+qst_deliver_message|Dostavi poruku  za {s13}
+qst_deliver_message_text|{s9} je zatražio  da odneseš poruku za {s13}. {s13} je bio kod {s4} kada si dobio ovaj zadatak.
+qst_deliver_message_to_enemy_lord|Dostavi poruku  za {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} je zatražio  da odneseš poruku za {s13} od {s15}. {s13} je bio kod {S4} kada si dobio ovaj zadatak.
+qst_raise_troops|Podigni {reg1} {s14}
+qst_raise_troops_text|{s9} je tražio da podignete {reg1} {s14} i da ih dovedete njemu.
+qst_escort_messenger|Isprati glasnika prema {s14}
+qst_escort_messenger_text|Nijedan
+qst_hunt_down_fugitive|Ulovi {s4}
+qst_hunt_down_fugitive_text|{s9} je zatražio da uhvatiš bjegunca koji se zove {s4}. Vjerojatna trenutna lokcija je {s3}.
+qst_bring_back_runaway_serfs|Dovedi natrag odbjegle robove
+qst_bring_back_runaway_serfs_text|{s9} je  zatražio da dovedeš  tri grupe odbjeglih robova natrag k {s2}. Rekao je kako sve tri grupe bježe  u smjeru {s3}.
+qst_follow_spy|Slijedi  špijuna na sastanak
+qst_follow_spy_text|{s11}  je zatražio  da pratiš  špijuna  koji će napustiti {s12}. Moraš biti oprezan kako te špijun ne bi vidio za vrijeme svog puta, inače bi mogao postati sumnjičav i vratiti se nazad. Jednom kad se špijun sastane sa svojim suradnikom, trebaš ih uhvatiti u zasjedi i zarobiti ih, te ih dovesti natrag k {s11}.
+qst_capture_enemy_hero|Zarobi neprijateljskog  zapovijednika
+qst_capture_enemy_hero_text|{s11} je zatražio od tebe da uhvatiš neprijateljskog zapovijednika.
+qst_lend_companion|Posudi svog suradnika {s3} {s9}
+qst_lend_companion_text|{s9}  je zatražio da mu posudiš svog suradnika {s3} na tjedan dana
+qst_capture_prisoners|Dovedi {reg1} neprijateljske zarobljenike
+qst_capture_prisoners_text|{s9} je želio da mu dovedeš {reg1} neprijateljske zarobljenike.
+qst_investigate_fangorn|Istraži Fangorn
+qst_investigate_fangorn_text|{s9}  je zatražio da otkriješ što se zbiva u Fangornskoj šumi, te da mu povratno javiš.
+qst_capture_troll|Zarobi Trola
+qst_capture_troll_text|{s9}  je zatražio da mu dovedeš divljeg trola kojeg bi mogao koristiti u svojoj vojsci.
+qst_kill_troll| Ubij podivljalog Trola
+qst_kill_troll_text|{s9} je zatražio da oslobodiš {s13} od napasnog trola koji divlja u perferiji.
+qst_mirkwood_sorcerer|Ubij čarobnjaka u Mirkwoodu
+qst_mirkwood_sorcerer_text|Galadrijeva moć obrane Lothloriena je potkopana  prljavim ritualima čarobnjka iz Dol Guldura. Iako je smrtnik, predstavlja veliku opasnost vilenjacima. Potraži ga u Mirkwoodskoj šumi, nedaleko od samog Dol Guldura. Koristi prikradanje kako bi spriječio da se oglasi alarm, jer imat ćeš samo jednu mogućnost da ga poraziš.
+qst_find_lost_spears|Pronađi izgubljena koplja kralja Bladorthina
+qst_find_lost_spears_text|{s9} je zatražio da pronađeš izgubljena koplja koja su patuljci nekoć davno napravili za kralja Bladorthina. Moraš tražiti dopuštenje od patuljaka kako bi tragao za kopljima u dubinama Usamljene planine.
+qst_rescue_prisoners|Spasi {reg1} Zarobljenike
+qst_rescue_prisoners_text|{s9} je želio da  spasiš {reg1} zarobljenike.
+qst_scout_enemy_town|Istraži neprijateljski grad.
+qst_scout_enemy_town_text|{s9} je zatražio da izvidiš uokolo {s13}.
+qst_dispatch_scouts|Pošalji Izvidnicu
+qst_dispatch_scouts_text|{s9} je zatražio da  pošalješ izvidnicu blizu {s13}.
+qst_eliminate_patrols|Eliminiraj  {reg1}  Neprijateljske Snage
+qst_eliminate_patrols_text|s9} je zatražio da eliminiraš {reg1} {s13} neprijateljske snage.
+qst_lend_surgeon|Posudi svog Kirurga {s3} {s1}
+qst_lend_surgeon_text|Posudi svog iskusnog kirurga {s3} i daj ga {s1}.
+qst_follow_army|Slijedi {s9}-ovu Vojsku
+qst_follow_army_text|Nijedan 
+qst_report_to_army|Javi se {s13}
+qst_report_to_army_text|Nijedan 
+qst_deliver_cattle_to_army|Dostavi {reg3} jedinice hrane za {s13}
+qst_deliver_cattle_to_army_text|Nijedan 
+qst_join_siege_with_army|Pridruži se opsadi {s14}
+qst_join_siege_with_army_text|Nijedan 
+qst_scout_waypoints|Izvidi {s13}, {s14} i {s15}
+qst_scout_waypoints_text|Nijedan 
+qst_move_cattle_herd|Pomakni {s12} prema {s13}
+qst_move_cattle_herd_text|Starješina od {s10} je zamolio da pomakneš neke {s12} prema {s13}.
+qst_escort_merchant_caravan|Isprati opskrbni vlak do {s8}
+qst_escort_merchant_caravan_text|Isprati opskrbni vlak do {s8}
+qst_deliver_wine|Dostavi {reg5} Jedinice od {s6}  do {s4}
+qst_deliver_wine_text|{s9} od {s3} je zatražio da dostaviš {reg5} jedinice od {s6} do {s4} za 7 dana.
+qst_troublesome_bandits|Ulovi problematične Gobline
+qst_troublesome_bandits_text|{s9} od {s4} je zatražio da uloviš problematične gobline u blizini grada. 
+qst_deal_with_looters|Obračunaj se s Plemenskim Orkama
+qst_deal_with_looters_text|Starješina od {s4} je zatražio da se obračunaš s nekoliko bandi Orki uokolo {s4}.
+qst_deal_with_night_bandits|Obračunaj se s Divljim Goblinima
+qst_deal_with_night_bandits_text|Starješina od {s14} je zatražio da se obračunaš s noćnim goblinima kod {s14}.
+qst_deliver_food|Opskrbi {s3} s {reg5} jedinica hrane.
+qst_deliver_food_text|{s9} od {s3} je zatražio da mu doneseš {reg5} jedinica hrane u 10 dana.
+qst_deliver_iron|Opskrbi {s3} s {reg5}  Jedinica {s6}
+qst_deliver_iron_text|{s9} od {s3} je zatražio do mu doneseš {reg5} jedinica {s6}.
+qst_tld_introduction|Dostavi poruku o orkama iz Mordora zapovijedništvu.
+qst_tld_introduction_text|Nijedan 
+qst_treebeard_kill_orcs|Porazi grupu orki koji sijeku drveća
+qst_treebeard_kill_orcs_text|Treebeard želi da pronađeš i poraziš orke koji sijeku drveća u Fangornu.
+qst_oath_of_vengeance|Prisega Osvete
+qst_oath_of_vengeance_text|Razjaren smrću {s1}, prisegnuo si osvetiti se snagama {s2}. Moraš uništiti što više vojski od {s2} u nadolazećim danima. Oštroumno si svjestan kako su tvoji slijedbenici svjedočili tvojoj prisezi i ne želiš biti poznat kao onaj tko krši prisegu. Orgija puštanja krvi sada mora početi!
+qst_deliver_gift|Dostavi {s4} od {s1} od {s2} do {s3}
+qst_deliver_gift_text|Zatražili ste da dostavite {s4} jedinice {s1}  za  {s3}  od {s2}.
