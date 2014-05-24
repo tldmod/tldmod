@@ -289,7 +289,7 @@ struct PS_OUTPUT
 #ifdef FUNCTIONS
 float GetSunAmount(uniform const int PcfMode, float4 ShadowTexCoord, float2 ShadowTexelPos)
 {
-	float sun_amount = 0.f;
+	float sun_amount;
 	if (PcfMode == PCF_NVIDIA)
 	{
 		//sun_amount = tex2D(ShadowmapTextureSampler, ShadowTexCoord).r;
@@ -4583,7 +4583,7 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 	{
 		sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.ShadowTexelPos);
 	}
-	Output.RGBColor =  (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f)*tex_sdw) * (tex_sdw * In.Color + In.SunLight * sun_amount);
+	Output.RGBColor =  tex_col * (tex_sdw * In.Color + In.SunLight * sun_amount);
 	
 	
 	//add fresnel term
@@ -6837,7 +6837,7 @@ PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
     tex_col.xyz=snow*float3(0.9,0.9,0.9) +(1-snow)*tex_col.xyz;
 
 
-    tex_col *= (float4(swy_mordor_strength_factor.xxx,1.0f) * tex_sdw)
+    tex_col *= tex_sdw
              * In.Color                     // shade with Lambertian lighting
              + In.SunLight
              + snow*In.Spec.y               // plus shininess (only for snow)...
@@ -6863,14 +6863,11 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     {
 		float sun_amount = GetSunAmount(PcfMode, In.ShadowTexCoord, In.TexelPos);
 //		sun_amount *= sun_amount;
-		Output.RGBColor = (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f) *tex_sdw) * (tex_sdw * In.Color + In.SunLight * sun_amount);
-    	Output.RGBColor.a = 1.0;
-
+		Output.RGBColor =  tex_col * (tex_sdw * In.Color + In.SunLight * sun_amount);
     }
     else
     {
-    	Output.RGBColor = (tex_col * float4(swy_mordor_strength_factor.xxx,1.0f) *tex_sdw) * (tex_sdw * In.Color + In.SunLight);
-    	Output.RGBColor.a = 1.0;
+    	Output.RGBColor = tex_col * (tex_sdw * In.Color + In.SunLight);
     }
     // gamma correct
     Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
