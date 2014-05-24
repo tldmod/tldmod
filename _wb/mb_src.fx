@@ -1620,13 +1620,23 @@ PS_OUTPUT ps_main(VS_OUTPUT In, uniform const int PcfMode)
 }
 
 VertexShader vs_main_compiled_PCF_NONE_true = compile vs_2_0 vs_main(PCF_NONE, true);
-VertexShader vs_main_compiled_PCF_NONE_true_rohan_banners = compile vs_2_0 vs_main(PCF_NONE, true, true);
 VertexShader vs_main_compiled_PCF_DEFAULT_true = compile vs_2_0 vs_main(PCF_DEFAULT, true);
 VertexShader vs_main_compiled_PCF_NVIDIA_true = compile vs_2_a vs_main(PCF_NVIDIA, true);
 
 VertexShader vs_main_compiled_PCF_NONE_false = compile vs_2_0 vs_main(PCF_NONE, false);
 VertexShader vs_main_compiled_PCF_DEFAULT_false = compile vs_2_0 vs_main(PCF_DEFAULT, false);
 VertexShader vs_main_compiled_PCF_NVIDIA_false = compile vs_2_a vs_main(PCF_NVIDIA, false);
+
+/* swyter -- rohan banners precompiled thingie */
+VertexShader vs_main_compiled_PCF_NONE_true_rohan_banners    = compile vs_2_0 vs_main(PCF_NONE,    true, true);
+VertexShader vs_main_compiled_PCF_DEFAULT_true_rohan_banners = compile vs_2_0 vs_main(PCF_DEFAULT, true, true);
+VertexShader vs_main_compiled_PCF_NVIDIA_true_rohan_banners  = compile vs_2_a vs_main(PCF_NVIDIA,  true, true);
+
+/* swyter -- scene prop banners precompiled thingie */
+VertexShader vs_main_compiled_PCF_NONE_true_spr_banners      = compile vs_2_0 vs_main(PCF_NONE,    true, false, true);
+VertexShader vs_main_compiled_PCF_DEFAULT_true_spr_banners   = compile vs_2_0 vs_main(PCF_DEFAULT, true, false, true);
+VertexShader vs_main_compiled_PCF_NVIDIA_true_spr_banners    = compile vs_2_a vs_main(PCF_NVIDIA,  true, false, true);
+
 
 PixelShader ps_main_compiled_PCF_NONE = compile ps_2_0 ps_main(PCF_NONE);
 PixelShader ps_main_compiled_PCF_DEFAULT = compile ps_2_0 ps_main(PCF_DEFAULT);
@@ -1641,25 +1651,6 @@ technique diffuse
 		PixelShader = ps_main_compiled_PCF_NONE;
 	}
 }
-
-technique diffuse_rohan_banners
-{
-	pass P0
-	{
-		VertexShader = vs_main_compiled_PCF_NONE_true_rohan_banners;
-		PixelShader  = ps_main_compiled_PCF_NONE;
-	}
-}
-
-technique diffuse_spr_banners
-{
-   pass P0
-   { /* had to raise the VS version to 3.0, hmmm / nevermind, hacked it around! no more texture lookups needed in VS */
-      VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, false, true);
-      PixelShader  = ps_main_compiled_PCF_NONE;
-   }
-}
-
 technique diffuse_SHDW
 {
 	pass P0
@@ -1677,6 +1668,58 @@ technique diffuse_SHDWNVIDIA
 	}
 }
 DEFINE_LIGHTING_TECHNIQUE(diffuse, 0, 0, 0, 0, 0)
+
+/* swyter -- rohan banners precompiled thingie */
+technique diffuse_rohan_banners
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_NONE_true_rohan_banners;
+		PixelShader  = ps_main_compiled_PCF_NONE;
+	}
+}
+technique diffuse_rohan_banners_SHDW
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_DEFAULT_true_rohan_banners;
+		PixelShader = ps_main_compiled_PCF_DEFAULT;
+	}
+}
+technique diffuse_rohan_banners_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_NVIDIA_true_rohan_banners;
+		PixelShader = ps_main_compiled_PCF_NVIDIA;
+	}
+}
+
+/* swyter -- scene prop banners precompiled thingie */
+technique diffuse_spr_banners
+{
+   pass P0
+   { /* had to raise the VS version to 3.0, hmmm / nevermind, hacked it around! no more texture lookups needed in VS */
+      VertexShader = vs_main_compiled_PCF_NONE_true_spr_banners;
+      PixelShader  = ps_main_compiled_PCF_NONE;
+   }
+}
+technique diffuse_spr_banners_SHDW
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_DEFAULT_true_spr_banners;
+		PixelShader  = ps_main_compiled_PCF_DEFAULT;
+	}
+}
+technique diffuse_spr_banners_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = vs_main_compiled_PCF_NVIDIA_true_spr_banners;
+		PixelShader  = ps_main_compiled_PCF_NVIDIA;
+	}
+}
 
 technique diffuse_dynamic
 {
