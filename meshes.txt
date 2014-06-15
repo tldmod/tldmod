@@ -1,4 +1,4 @@
-338
+339
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -337,3 +337,4 @@ mesh_draw_entdrink_dwarf 0 draw_entdrink_dwarf 0 0 0 0 0 0 1 1 1
 mesh_draw_entdrink_orc 0 draw_entdrink_orc 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_harad 0 draw_victory_harad 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_rhun 0 draw_victory_rhun 0 0 0 0 0 0 1 1 1
+mesh_draw_victory_evilman 0 draw_victory_evilman 0 0 0 0 0 0 1 1 1
