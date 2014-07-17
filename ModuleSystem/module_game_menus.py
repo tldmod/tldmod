@@ -1691,9 +1691,9 @@ game_menus = [
         	(try_end),
 	]),
 
-    	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attrib.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
+    	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attributes.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
 
-     	("camp_cctest_kill_lord",[],"Kill a Lord",
+     	("camp_cctest_kill_lord",[],"Kill a Random Lord",
 	[
 		(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
 		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
@@ -4427,6 +4427,8 @@ game_menus = [
 			(assign, ":winning_side_faction", "$enemy_side_faction" ),
 			#(assign, ":losing_side_faction",  "$player_side_faction" ), # not used... yet
 		(try_end),
+
+		# CppCoder quick search tag [VIKTOREE] (For adding the new victory paintings)
 		
 		(try_begin),
 			# orc VS anything not orc
@@ -4594,6 +4596,7 @@ game_menus = [
 
 	(try_begin),
 		(ge, "$battle_won", 0), # (CppCoder): Battle was won, or was neutral
+					# (CppCoder): Gonna do more testing, is this required? Even if a battle is lost, shouldn't the troops spawn?
 		(call_script, "script_cf_spawn_routed_parties"), 
 	(try_end),  
 					  

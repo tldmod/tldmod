@@ -2785,6 +2785,9 @@ presentations = [
 
 ]),
 
+# CppCoder: MAJORLY WIP
+# CppCoder: I suck at this kind of stuff, so if there is someone better, by all means go for it. :) 
+
 ("customize_defilement", 0, mesh_load_window,
 [
 	(ti_on_presentation_load, 

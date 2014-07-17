@@ -82,7 +82,7 @@ morale_scripts = [
 	]),
 
 	# script_cf_get_tier_morale
-	# This script stores the agents tier morale based on race in reg0.
+	# This script stores the agents tier morale based on level in reg0.
 	# param0 = agent
 	("cf_agent_get_tier_morale",
 	[
@@ -108,7 +108,8 @@ morale_scripts = [
 	]),
 
 	# script_cf_agent_get_leader
-	# This script finds an agent's leader (heroes only), and stores his agent id in reg0.
+	# This script finds an agent's leader (heroes only), and stores his agent id in reg0. reg0 is set to -1 if
+	# there is no hero leader.
 	# param0 = agent
 	("cf_agent_get_leader", 
 	[
