@@ -19906,8 +19906,32 @@ scripts = [
 	(assign, reg0, ":removed"),
 ]),
 
-	 
-("save_compartibility_script7",[]),
+# cpp: Imported this script from classic Warband. Fixes the "Terrible" troop morale. Can be expanded on.
+  ("game_get_morale_of_troops_from_faction",
+    [
+      # (store_script_param_1, ":troop_no"),            
+      
+     # (store_troop_faction, ":faction_no", ":troop_no"),
+      
+     # (try_begin),
+       # (ge, ":faction_no", npc_kingdoms_begin),
+       # (lt, ":faction_no", npc_kingdoms_end),
+       # (faction_get_slot, reg0, ":faction_no",  slot_faction_morale_of_player_troops),
+        # (assign, reg1, ":faction_no"),
+        # (assign, reg2, ":troop_no"),
+        # (assign, reg3, reg0),
+        # (display_message, "@extra morale for troop {reg2} of faction {reg1} is {reg3}"),
+      # (else_try),
+        #(assign, reg0, 0),
+      # (try_end),
+      # (val_div, reg0, 100),
+    
+      #(val_add, reg0, reg1),
+      
+      (party_get_morale, reg0, "p_main_party"),
+      (set_trigger_result, reg0),
+  ]),
+
 ("save_compartibility_script8",[]),
 ("save_compartibility_script9",[]),
 ("save_compartibility_script10",[]),
