@@ -1,3 +1,9 @@
+TLD 3.3 changes:
+- Swyter:
+  - Warband Port. \o/
+  - Warband port bugfixes (TONs of 'em).
+
+
 TLD 3.23 changes:
 - CppCoder:
   - Animal Ambushes become less likely the more attacks you've experienced.

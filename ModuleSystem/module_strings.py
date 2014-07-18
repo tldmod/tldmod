@@ -2998,7 +2998,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("imladris_gift1", "Crystal Glassware"),
 ("imladris_gift2", "Miruvor"),
 ("imladris_gift3", "Embroidered Banners and Silver-Inlaid Horns"),
-("imladris_gift4", "Healing Herbs and Oitments"),
+("imladris_gift4", "Healing Herbs and Ointments"),
 
 ("woodelf_gift0", "Soft Animal Hides"),
 ("woodelf_gift1", "Arrow Heads and Fletching"),

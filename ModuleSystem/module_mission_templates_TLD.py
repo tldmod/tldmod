@@ -593,7 +593,7 @@ common_move_deathcam = (0, 0, 0,
     (agent_set_position, ":player_agent", pos1),
   (try_end)
 ])
-
+ 
 common_deathcam_triggers = (not is_a_wb_mt==1 and 
 [
 	common_init_deathcam,
@@ -610,6 +610,7 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 ## MadVader deathcam end
 
 #AI triggers v3 by motomataru
+# cpp: Quick Find [AITAKTIKS]
 AI_triggers = [  
 	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
 		(assign, "$cur_casualties", 0),
@@ -729,6 +730,16 @@ AI_triggers = [
 #                   *_space                hold the multiplier of extra space ordered into formation by the player
 
 formations_triggers = [
+
+	(ti_on_order_issued, 0, 0, [], 
+	[
+		(store_trigger_param_1, reg0), 
+		(store_trigger_param_2, ":agent_id"),
+		(display_message, "@Order: {reg0}"),
+	]),
+
+
+
 	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
 		(assign, "$autorotate_at_player", formation_autorotate_at_player),
 		(assign, "$infantry_formation_type", formation_default),	#type set by first call; depends on faction
@@ -899,6 +910,7 @@ formations_triggers = [
 		(try_end),
 		(set_show_messages, 1),
 	]),
+
 #form ranks command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_ranks)], [
 		(assign, "$fclock", 1),
@@ -906,11 +918,13 @@ formations_triggers = [
 		(val_max, "$archer_space", 2),
 		(call_script, "script_player_attempt_formation", grc_archers, formation_ranks)
 	]),
+
 #form shield wall command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_shield)], [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_attempt_formation", grc_infantry, formation_shield)
 	]),
+
 #form wedge command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_wedge)], [
 		(assign, "$fclock", 1),
