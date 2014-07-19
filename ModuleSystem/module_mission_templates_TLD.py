@@ -160,7 +160,79 @@ command_cursor_sub_mod = (not is_a_wb_mt==1 and
 	common_order_move_to_pos43,
 ] or [])
 # COMMAND CURSOR MINIMOD #
- 
+
+# cpp-- Prevents an issue of compiling where it doesnt know what this is if its M&B 1.011
+if is_a_wb_mt==0: 
+ ti_on_order_issued = 0 
+
+# VANILLA FORMATIONS FIX #
+mb_only_formations = [
+
+	# charge ends formation
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_charge)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_charge)
+	]),
+
+	# dismount ends formation
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_dismount)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_dismount),
+	]),
+
+	# On hold, any formations reform in new location		
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_halt)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_hold)
+	]),
+
+	# Follow is hold repeated frequently
+	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_follow)], [
+		(assign, "$fclock", 1),
+		(call_script, "script_player_order_formations", mordr_follow)
+	]),
+
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_advance     )],[(call_script,"script_player_order_formations",mordr_advance)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_fall_back   )],[(call_script,"script_player_order_formations",mordr_fall_back)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_spread_out  )],[(call_script,"script_player_order_formations",mordr_spread_out)]),
+	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_stand_closer)],[(call_script,"script_player_order_formations",mordr_stand_closer)]),
+]
+
+# cpp-- Only blocks keys if it is M&B
+block_mb_gamekeys = (not is_a_wb_mt==1 and 
+[
+		(neg|game_key_is_down, gk_order_charge), 		
+		(neg|game_key_is_down, gk_order_dismount),
+		(neg|game_key_is_down, gk_order_halt),
+		(neg|game_key_is_down, gk_order_follow),
+		(neg|game_key_is_down, gk_order_advance),
+		(neg|game_key_is_down, gk_order_fall_back),
+		(neg|game_key_is_down, gk_order_spread_out),
+		(neg|game_key_is_down, gk_order_stand_closer)
+] or [])
+
+mb_formations = (not is_a_wb_mt==1 and mb_only_formations or [])
+# VANILLA FORMATIONS FIX #
+
+# WARBAND FORMATIONS FIX #
+wb_formation_order = (ti_on_order_issued, 0, 0, [], 
+	[
+		(store_trigger_param_1, ":order_id"), 
+		(store_trigger_param_2, ":agent_id"),
+		(try_begin),
+			(call_script, "script_change_formation", ":order_id", ":agent_id"),
+		(try_end),
+	]) 
+
+#cpp-- The formation updates are only included with M&B Warband.
+
+wb_formations = (is_a_wb_mt==1 and 
+[
+	wb_formation_order,
+] or [])
+# WARBAND FORMATIONS FIX #
+
+
 
 # Something I'm testing with. -CC
 tld_wargs_attack_horses = (2, 0, 0, [(gt, "$wargs_in_battle", 0)], 
@@ -236,6 +308,8 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 					(try_for_agents, ":rider"),
 						(agent_is_human, ":rider"),
 						(agent_is_alive, ":rider"),	
+						(agent_get_troop_id,":troop_id", ":rider"),
+						(is_between|neg, ":troop_id", warg_ghost_begin, warg_ghost_end), # cpp: Dont allow wargs to fall unconscious
 						(eq, ":continue", 1),
 						(agent_slot_eq, ":rider", slot_agent_mount, ":mount"),
 						(store_agent_hit_points, ":hp", ":rider", 1),
@@ -731,14 +805,6 @@ AI_triggers = [
 
 formations_triggers = [
 
-	(ti_on_order_issued, 0, 0, [], 
-	[
-		(store_trigger_param_1, reg0), 
-		(store_trigger_param_2, ":agent_id"),
-		(display_message, "@Order: {reg0}"),
-	]),
-
-
 
 	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
 		(assign, "$autorotate_at_player", formation_autorotate_at_player),
@@ -911,6 +977,8 @@ formations_triggers = [
 		(set_show_messages, 1),
 	]),
 
+# cpp: These should be fine, as they dont override anything
+
 #form ranks command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_ranks)], [
 		(assign, "$fclock", 1),
@@ -941,26 +1009,7 @@ formations_triggers = [
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", mordr_charge)
 	]),
-#charge ends formation
-	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_charge)], [
-		(assign, "$fclock", 1),
-		(call_script, "script_player_order_formations", mordr_charge)
-	]),
-#dismount ends formation
-	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_dismount)], [
-		(assign, "$fclock", 1),
-		(call_script, "script_player_order_formations", mordr_dismount),
-	]),
-#On hold, any formations reform in new location		
-	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_halt)], [
-		(assign, "$fclock", 1),
-		(call_script, "script_player_order_formations", mordr_hold)
-	]),
-#Follow is hold	repeated frequently
-	(0, 0, 1, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_follow)], [
-		(assign, "$fclock", 1),
-		(call_script, "script_player_order_formations", mordr_follow)
-	]),
+
 #attempt to avoid simultaneous formations function calls
 	(1, 0, 0, [	
         (eq, "$tld_option_formations", 1),
@@ -970,15 +1019,7 @@ formations_triggers = [
 		(neg|key_is_down, key_for_wedge),
 		(neg|key_is_down, key_for_square),
 		(neg|key_is_down, key_for_undo),
-		(neg|game_key_is_down, gk_order_charge),
-		(neg|game_key_is_down, gk_order_dismount),
-		(neg|game_key_is_down, gk_order_halt),
-		(neg|game_key_is_down, gk_order_follow),
-		(neg|game_key_is_down, gk_order_advance),
-		(neg|game_key_is_down, gk_order_fall_back),
-		(neg|game_key_is_down, gk_order_spread_out),
-		(neg|game_key_is_down, gk_order_stand_closer)
-	  ], [
+	  ]+block_mb_gamekeys, [
 		(set_fixed_point_multiplier, 100),
 		(store_mod, ":fifth_second", "$fclock", 5),
 		(call_script, "script_team_get_position_of_enemies", pos60, "$fplayer_team_no", grc_everyone),
@@ -1049,11 +1090,9 @@ formations_triggers = [
 		(try_end),
 		(val_add, "$fclock", 1),
 	]),
-	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_advance     )],[(call_script,"script_player_order_formations",mordr_advance)]),
-	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_fall_back   )],[(call_script,"script_player_order_formations",mordr_fall_back)]),
-	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_spread_out  )],[(call_script,"script_player_order_formations",mordr_spread_out)]),
-	(0,0,0,[(eq,"$tld_option_formations",1),(game_key_clicked,gk_order_stand_closer)],[(call_script,"script_player_order_formations",mordr_stand_closer)]),
-]
+
+]+wb_formations+mb_formations
+
 #end formations triggers
 
 cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,[

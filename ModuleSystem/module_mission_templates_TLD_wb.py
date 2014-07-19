@@ -5,6 +5,8 @@ from module_constants import *
 
 ## MadVader Warband deathcam begin
 
+## cpp: Currently you can move outside of the boundries. TODO: Fix it. :)
+
 common_init_deathcam_wb = (0, 0, ti_once, [],
 [
   (assign, "$tld_camera_on", 0),
