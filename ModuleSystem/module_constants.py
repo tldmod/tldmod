@@ -2178,3 +2178,7 @@ tld_influence_trait_bonus		= 2
 # These are used for the gift giving system.
 gift_strings_begin			= "str_gondor_gift0"
 tld_gifts_per_faction			= 5
+
+tld_cursor_undefined			= -1
+tld_cursor_arrow_mode			= -2
+tld_cursor_time				= 20

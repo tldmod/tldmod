@@ -215,7 +215,8 @@ mb_formations = (not is_a_wb_mt==1 and mb_only_formations or [])
 # VANILLA FORMATIONS FIX #
 
 # WARBAND FORMATIONS FIX #
-wb_formation_order = (ti_on_order_issued, 0, 0, [], 
+
+wb_formation_order = (ti_on_order_issued, 0, 0, [(eq,"$tld_option_formations",1)], 
 	[
 		(store_trigger_param_1, ":order_id"), 
 		(store_trigger_param_2, ":agent_id"),
@@ -224,12 +225,61 @@ wb_formation_order = (ti_on_order_issued, 0, 0, [],
 		(try_end),
 	]) 
 
+# cpp-- WB command cursor tracking
+wb_command_cursor_init = (0, 0, ti_once, [(eq,"$tld_option_formations",1)], [(assign, "$hold_f1", tld_cursor_undefined)])
+wb_command_cursor_f1_down = (0, 0, 0, [(eq,"$tld_option_formations",1),(key_is_down, key_f1),(eq, "$hold_f1", tld_cursor_undefined)], [(assign, "$hold_f1", 0)])
+wb_command_cursor_f1_timer = (0, 0, 0, [(eq,"$tld_option_formations",1),(ge, "$hold_f1", 0)], [(val_add, "$hold_f1", 1)])
+wb_command_cursor_arrow_mode = (0, 0, 0, [(eq,"$tld_option_formations",1),(ge, "$hold_f1", tld_cursor_time)], [(assign, "$hold_f1", tld_cursor_arrow_mode)])
+
+wb_command_cursor_f1_up = (0, 0, 0, [(eq,"$tld_option_formations",1),(key_is_down|neg, key_f1),(neq, "$hold_f1", tld_cursor_undefined)], 
+[
+	(try_begin),
+		(eq, "$hold_f1", tld_cursor_arrow_mode),
+		# cpp-- Hook stuff. Basically, we need a way to get the position of the arrow, The code below doesnt work all to great, because it relies
+		# 	on the glitchy script to find the position.
+      		(get_player_agent_no, ":player"),
+      		(agent_get_team, ":player_team", ":player"),
+      		(agent_get_look_position, pos1, ":player"),
+      		(position_move_z, pos1, 120),
+      		(try_begin),
+        		(call_script, "script_cf_shift_pos1_along_y_axis_to_ground", 30000), # cpp-- Not the best, probably a better option but this works for now
+      			(try_begin),
+        			(class_is_listening_order, ":player_team", grc_infantry),
+				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos1),
+			(try_end),
+      			(try_begin),
+        			(class_is_listening_order, ":player_team", grc_archers),
+				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos1),
+			(try_end),
+      			(try_begin),
+        			(class_is_listening_order, ":player_team", grc_cavalry),
+				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos1),
+			(try_end),
+	(else_try),
+		(try_end),
+	(try_end),
+	(assign, "$hold_f1", tld_cursor_undefined),
+])
+
+
+
 #cpp-- The formation updates are only included with M&B Warband.
 
 wb_formations = (is_a_wb_mt==1 and 
 [
 	wb_formation_order,
 ] or [])
+
+wb_command_cursor = (is_a_wb_mt==1 and 
+[
+	wb_command_cursor_init,
+	wb_command_cursor_f1_down,
+	wb_command_cursor_f1_timer,
+	wb_command_cursor_arrow_mode,
+	wb_command_cursor_f1_up
+	
+] or [])
+
 # WARBAND FORMATIONS FIX #
 
 
@@ -1091,7 +1141,7 @@ formations_triggers = [
 		(val_add, "$fclock", 1),
 	]),
 
-]+wb_formations+mb_formations
+]+wb_formations+wb_command_cursor+mb_formations
 
 #end formations triggers
 
