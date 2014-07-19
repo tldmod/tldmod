@@ -4459,6 +4459,9 @@ game_menus = [
 			(eq, ":winning_side_faction", "fac_rohan" ),
 			(set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
 		(else_try),
+			(eq, ":winning_side_faction", "fac_woodelf" ),
+			(set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
+		(else_try),
 			(eq, ":winning_side_faction", "fac_dunland" ),
 			(set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
 		(else_try),

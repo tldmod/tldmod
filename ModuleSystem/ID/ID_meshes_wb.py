@@ -344,5 +344,6 @@ mesh_draw_entdrink_orc = 342
 mesh_draw_victory_harad = 343
 mesh_draw_victory_rhun = 344
 mesh_draw_victory_evilman = 345
+mesh_draw_victory_mirkwood = 346
 
 
