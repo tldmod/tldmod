@@ -1,7 +1,93 @@
+TLD 3.3.1 changes:
+- Swyter:
+ - Enhanced waterfall, lava and fountain shaders, including transparency.
+ - Wavy shaders for both Meduseld and per-faction banners, made from scratch.
+ - Revised siege scenes and AI meshes, mainly from Osgiliath, Helm's Deep and Minas Morgul.
+ - Updated overall map with passable fords and some optimizations.
+ - Reimplemented the lone wargs mechanics in Warband, making riderless wargs aggressive.
+ - Added scrollbars back to Warband.
+ - Fixed ramp meshes in Erech and Calembel, in Warband.
+ - Fixed crash when encountering wargs and warg mounted troops, caused by LODs, in Warband.
+ - Add code guards to prevent possible player teleporting in the overall map.
+ - Training in barracks will spawn the player with (correct) weapons, in Warband.
+ - Hide the HP overlay during cutscenes using shader and uniform black magic, in Warband.
+ - Make the cutscene overlay persist after coming back from the Esc menu, in Warband.
+ - Make spears couchable in Warband.
+ - Special items like troll clubs can no longer be picked up in the battlefield.
+ - Now uruks and other races are sized correctly in Warband.
+ - Upgrading troops in Warband is free and doesn't cost local resources, keeping with the original mechanic in M&B 1.011.
+ - Fixed the blue underwater fog in Edoras and other places, caused by the fountain in Warband.
+ - Fixed the shading glitches in Meduseld's floor.
+ - Workaround Warband bug when populating smiths inventories which caused incorrect items like tools and other faction's weapons to be added by mistake.
+ - Gandalf no longer appears bald or as a cute redhead, in Warband.
+ - Fixed wobbly map trees in Mirkwood, in Warband.
+ - Add entry points for enemies in the Rhûn Main Camp siege scene.
+ - Fixed unwanted transparency of body parts when LODs are triggered.
+ - Add "Accompany" option to the right-click party menu for allies, in Warband.
+ - Fix some remaining inaccessible lords, like Burza in Gundabad.
+ - Make use of Warband's muddy water in some scenes like Dead Marshes or Minas Morgul.
+ - Fix ragdoll animations of troll victims.
+ - Complete French translation of the entire mod by ALG and his team from MundusBellicus.fr.
+ - Additional corrections and additions to other languages in Transifex.
+ - Better skeleton rigging for bears.
+ - New LODs for trolls.
+ 
+- Merlkir:
+ - Nine new illustrations by Merlkir, plus some that weren't added before, mainly for encounters and victory.
+	 - Mirkwood victory
+	 - Black numeroneans victory
+	 - Rhûn victory
+	 - Dunland victory
+	 - Khand victory
+	 - Bear attack
+	 - Wolf attack
+	 - Mountain goblins attack
+	 - Corsair renegades attack
+	 - Good vs Evil reused as Quick Battles background 
+	 - Troll attack also used in quest menus
+ - New good/evil sounds for rank promotion, by Merlkir.
+ - Better hit sounds for Trolls, by Merlkir.
+
+- CppCoder:
+ - Fix the "terrible" moral problem for the player's party.
+
+
 TLD 3.3 changes:
 - Swyter:
-  - Warband Port. \o/
-  - Warband port bugfixes (TONs of 'em).
+  - Port to Warband.
+  - New, easier and less obtrusive install method for 1.011. (Rewritten Iron Launcher into a proxy DLL with IAT hooks)
+  - Optimize flying missiles to avoid fillrate issues on sieges.
+  - Optimize animal meshes, better rigging for wolves, moving ears, added LODs and AO.
+  - Optimize a good part of the Mordor weapon meshes, added manual LODs.
+  - Add per-vertex ambient occlusion to Mirkwood helmets and shields, some Lothlorien props too.
+  - Tidy up internal scripts, simplifying logic and cleaning them up.
+  - Redone Iron Hills Quarry and West Emmet AI meshes so that NPCs don't get stuck.
+  - Add lightweight capsule collisions to Dwarven statues, like the one amid the Iron Hills Quarry.
+  - Add a new localization back-end on Transifex (Transifex.com).
+  - Add finished and reviewed es_ES translation by HoJu and Swyter.
+  - Add purchasable ponies to the Iron Hills Quarry merchant.
+  - Manually fix border seams (visible as striped patterns on the ground) of some tiling terrain normal maps.
+  - Re-encode the Bink intro video using the older audio codec so it can be played with the stock binkplay.exe instead of bundling it.
+    
+  - WB: Added flowmap shader to rivers and sea, adds directionality to water surfaces.
+  - WB: Make sitting lords accessible for talk on their throne rooms. (Denethor, Thranduil, Theoden, Saruman, Gothmog, M. of Sauron)
+  - WB: Fix l(e)adders not appearing in sieges, Taleworlds typo.
+  - WB: Redo the loading, main, and escape menus to make them look like their 1.011 counterparts.
+  - WB: Turn the module system into something dual, multi-target.
+  - WB: Port mtarini shaders to Warband (windy flora/red eyes/skeleton hackery/...).
+  - WB: Fix broken marshes shader in the overall map when HDR is enabled.
+  - WB: Fix non-manifold collision meshes which caused Warband to crash on loading.
+  - WB: Decompiled and rebuild the flora_kinds.txt for Warband, fixed some broken flags too (caused crashes on some scenes).
+  - WB: Complete the rewritten animations file (module_animations_wb.py) started by GetAssista. Adds Warband animations to TLD.
+  - WB: Fix gansta bows for evil races using the gun animation.
+  - WB: Fix scene entry point item overriding, fixing Galadriel, Merry, Pippin and other special agents with transparent parts.
+  - WB: Fix in-battle command overlay toggling. Now it can be closed.
+  - WB: Fix exit of cutscenes instead of repeating in an endless loop.
+  - WB: Fix division by zero when entering West Emmet castle menu.
+  - WB: Fix ragdolls (skeleton_bodies.xml) with buggy possessed wobbly legs.
+  - WB: Fix troop, center and faction notes not appearing in the interface.
+  - WB: Add HDR shader, materials and textures to TLD skyboxes.
+  - WB: Changed the lame horse mechanic to trigger randomly only when the horse starts trotting. (Fairer)
 
 
 TLD 3.23 changes:
