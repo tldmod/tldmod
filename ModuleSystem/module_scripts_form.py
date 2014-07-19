@@ -4241,7 +4241,8 @@ formAI_scripts = [
   # script_change_formation
   # Input: order_no, agent_no
   # Output: none
-  # This script is 
+  # This script is for warband to change the formation based upon the command
+  # that was issued from the player.
   ("change_formation", 
     [
       	(store_script_param, ":order_no", 1),
@@ -4253,21 +4254,12 @@ formAI_scripts = [
 		(eq, ":order_no", mordr_hold),
 		(assign, "$fclock", 1),
 		(call_script, "script_player_order_formations", ":order_no"),
-		#(eq, "$cheat_mode",1),
-		(assign, reg0, ":order_no"),
-		(display_message, "@Order Intercepted: {reg0}"),
 	(else_try),
 		(eq|this_or_next, ":order_no", mordr_advance),
 		(eq|this_or_next, ":order_no", mordr_fall_back),
 		(eq|this_or_next, ":order_no", mordr_spread_out),
 		(eq, ":order_no", mordr_stand_closer),
 		(call_script, "script_player_order_formations", ":order_no"),
-		(assign, reg0, ":order_no"),
-		(display_message, "@Order Intercepted: {reg0}"),
-	(else_try),
-		#(eq, "$cheat_mode",1),
-		(assign, reg0, ":order_no"),
-		(display_message, "@Order Untouched: {reg0}"),
 	(try_end),
     ]),
 	
