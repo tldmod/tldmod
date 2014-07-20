@@ -235,24 +235,24 @@ wb_command_cursor_f1_up = (0, 0, 0, [(eq,"$tld_option_formations",1),(key_is_dow
 [
 	(try_begin),
 		(eq, "$hold_f1", tld_cursor_arrow_mode),
-		# cpp-- Hook stuff. Basically, we need a way to get the position of the arrow, The code below doesnt work all to great, because it relies
-		# 	on the glitchy script to find the position.
       		(get_player_agent_no, ":player"),
       		(agent_get_team, ":player_team", ":player"),
       		(agent_get_look_position, pos1, ":player"),
       		(position_move_z, pos1, 120),
       		(try_begin),
-        		(call_script, "script_cf_shift_pos1_along_y_axis_to_ground", 30000), # cpp-- Not the best, probably a better option but this works for now
-      			(try_begin),
+        		(try_begin),
         			(class_is_listening_order, ":player_team", grc_infantry),
+				(team_get_order_position, pos1, ":player_team", grc_infantry),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos1),
 			(try_end),
       			(try_begin),
         			(class_is_listening_order, ":player_team", grc_archers),
+				(team_get_order_position, pos1, ":player_team", grc_archers),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos1),
 			(try_end),
       			(try_begin),
         			(class_is_listening_order, ":player_team", grc_cavalry),
+				(team_get_order_position, pos1, ":player_team", grc_cavalry),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos1),
 			(try_end),
 	(else_try),
