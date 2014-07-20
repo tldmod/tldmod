@@ -461,4 +461,5 @@ meshes+=[
   ("draw_victory_evilman",   0, "draw_victory_evilman",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("draw_victory_mirkwood",  0, "draw_victory_mirkwood", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_rivendell", 0, "draw_victory_rivendell",0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
