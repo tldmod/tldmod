@@ -1,5 +1,11 @@
 TLD 3.3.1 changes:
 - Swyter:
+ - Reimplement the death camera in Warband using MadVader's code as reference.
+ - Make the NazgÃ»l, alarm levels and thunder sounds audible in Warband.
+ - Added LODs to the reward swords and a better scabbard version of another one.
+ - Fix undefined path material under the character creation terrain mesh in Warband, looked like blonde hair.
+ - Fix invisible mesh of the "Sword of The Great Serpent" reward item in Warband.
+ - Added a subtle hint of scrolling clouds projecting shadows in the overall map, done with shaders, only for Warband.
  - Enhanced waterfall, lava and fountain shaders, including transparency.
  - Wavy shaders for both Meduseld and per-faction banners, made from scratch.
  - Revised siege scenes and AI meshes, mainly from Osgiliath, Helm's Deep and Minas Morgul.
@@ -21,7 +27,7 @@ TLD 3.3.1 changes:
  - Workaround Warband bug when populating smiths inventories which caused incorrect items like tools and other faction's weapons to be added by mistake.
  - Gandalf no longer appears bald or as a cute redhead, in Warband.
  - Fixed wobbly map trees in Mirkwood, in Warband.
- - Add entry points for enemies in the Rhûn Main Camp siege scene.
+ - Add entry points for enemies in the RhÃ»n Main Camp siege scene.
  - Fixed unwanted transparency of body parts when LODs are triggered.
  - Add "Accompany" option to the right-click party menu for allies, in Warband.
  - Fix some remaining inaccessible lords, like Burza in Gundabad.
@@ -29,27 +35,31 @@ TLD 3.3.1 changes:
  - Fix ragdoll animations of troll victims.
  - Complete French translation of the entire mod by ALG and his team from MundusBellicus.fr.
  - Additional corrections and additions to other languages in Transifex.
- - Better skeleton rigging for bears.
  - New LODs for trolls.
  
 - Merlkir:
- - Nine new illustrations by Merlkir, plus some that weren't added before, mainly for encounters and victory.
-	 - Mirkwood victory
-	 - Black numeroneans victory
-	 - Rhûn victory
-	 - Dunland victory
-	 - Khand victory
-	 - Bear attack
-	 - Wolf attack
-	 - Mountain goblins attack
-	 - Corsair renegades attack
-	 - Good vs Evil reused as Quick Battles background 
-	 - Troll attack also used in quest menus
+ - Ten new illustrations by Merlkir, plus some that weren't added before, mainly for encounters and victory.
+     - Rivendell victory
+     - Mirkwood victory
+     - Black numeroneans victory
+     - RhÃ»n victory
+     - Dunland victory
+     - Khand victory
+     - Bear attack
+     - Wolf attack
+     - Mountain goblins attack
+     - Corsair renegades attack
+     - Good vs Evil reused as Quick Battles background 
+     - Troll attack also used in quest menus
+ - Written a brand new series of gameplay-related info pages from scratch.
  - New good/evil sounds for rank promotion, by Merlkir.
  - Better hit sounds for Trolls, by Merlkir.
 
 - CppCoder:
  - Fix the "terrible" moral problem for the player's party.
+ 
+- mtarini
+ - Better skeleton rigging for bears.
 
 
 TLD 3.3 changes:
