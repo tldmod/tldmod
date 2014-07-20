@@ -181,8 +181,8 @@ morale_scripts = [
 		(try_end),
 		(val_div,":troop_level", 10),
          	(val_div,":hitpoints", 2),
-         	(assign,reg1,100),
-
+         	(assign,reg1,100),		
+						
          	(val_sub,reg1,":hitpoints"),
          	(val_sub,reg1,":leader"),
          	(val_sub,reg1,":troop_level"),
@@ -386,9 +386,10 @@ morale_scripts = [
 		(eq, "$tld_option_morale", 1),
 
 		# Don't spawn parties with less than 75% of player's party size. -CC
+		# these values can be edited in module_constants.py
 		(party_get_num_companions, reg3, "p_main_party"),
-		(val_mul, reg3, 3),
-		(val_div, reg3, 4),
+		(val_mul, reg3, tld_rout_party_spawn_ratio_numerator),
+		(val_div, reg3, tld_rout_party_spawn_ratio_denominator),
 
 		# Clear empty parties
 		(try_begin),
@@ -818,9 +819,14 @@ morale_scripts = [
      ]),
 
   #script_rout_check
+
   #swy-- this comes from script_rout_enemies/script_rout_allies and shows morale-related messages about fleeeing troops in battlefield.
   #      reg0: should be allies/enemies_total | reg1: should be allies/enemies_total
   #      why not just use globals for this? low registers have a high chance of getting overwritten
+
+  #cpp-- it's not really needed for this, since the script fires during this script, and the registers aren't used to store consistent data.
+  #	 I've isolated the division by zero error, and made some tweaks to correct it.
+
     ("rout_check",
     [
 	(assign,":ally","$allies_coh"),
@@ -828,67 +834,59 @@ morale_scripts = [
 	(val_sub,":ally",":enemy"),
 
 	(try_begin),
-		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
-		(gt,reg0,0),
-		(gt,reg1,0),
-		#--
 		(ge,":ally",tld_morale_rout_enemies),		
 		(call_script, "script_rout_enemies"),
-		
-		#swy-- debug print to diagnose the wtf division by zero thing...
-	#	(display_message, "@SWY-DEBUG--Enemies Ratio: (val_div,([{reg1}]*100),[{reg0}])",color_bad_news),
-    
+
 		(store_mul, ":enemies_ratio", reg1, 100),
-		(val_div, ":enemies_ratio", reg0),
+
+		(try_begin),
+			(gt, reg0, 0), # At least a few enemies remain in battle
+			(val_div, ":enemies_ratio", reg0),
+			(try_begin),
+				(gt, ":enemies_ratio", 80),
+				(display_message,"@Your enemies flee in terror!",color_good_news),  
+			(else_try),
+				(gt, ":enemies_ratio", 50),
+				(display_message,"@Many of your enemies are fleeing from battle.",color_good_news),  
+			(else_try),
+				(gt, ":enemies_ratio", 25),
+				(display_message,"@Some of your enemies are fleeing from battle.",color_good_news),  
+			(else_try),
+				(gt, ":enemies_ratio", 10),
+				(display_message,"@A few of your enemies are fleeing from battle.", color_good_news),  
+			(try_end),
+		(try_end),
+
 		#(assign, reg0, ":enemies_ratio"),
 		#(display_message, "@Enemies Ratio: {reg0}"),
-		(try_begin),
-			(gt, ":enemies_ratio", 80),
-			(display_message,"@Your enemies flee in terror!",color_good_news),  
-		(else_try),
-			(gt, ":enemies_ratio", 50),
-			(display_message,"@Many of your enemies are fleeing from battle.",color_good_news),  
-		(else_try),
-			(gt, ":enemies_ratio", 25),
-			(display_message,"@Some of your enemies are fleeing from battle.",color_good_news),  
-		(else_try),
-			(gt, ":enemies_ratio", 10),
-			(display_message,"@A few of your enemies are fleeing from battle.", color_good_news),  
-		(try_end),
 	(try_end),
 
 	(try_begin),
-		#swy-- let's avoid divisions by zero, even if the problem comes upstream.
-		(gt,reg0,0),
-		(gt,reg1,0),
-		#--
 		(le,":ally",tld_morale_rout_allies),
 		(call_script, "script_rout_allies"),
-		#(assign, reg2, reg0),
-		#(assign, reg3, reg1),
 		(val_sub, reg0, 1), # Remove player from agents
 		(store_mul, ":allies_ratio", reg1, 100),
-		(val_div, ":allies_ratio", reg0),
-		#(assign, reg0, ":allies_ratio"),
-		#(display_message,"@Allies Ratio = {reg0}, Routed = {reg3}, Total = {reg2}"),  
 		(try_begin),
-			(gt, ":allies_ratio", 80),
-			(display_message,"@Your troops flee in terror!",color_bad_news),  
-		(else_try),
-			(gt, ":allies_ratio", 50),
-			(display_message,"@Many of your troops are fleeing from battle.",color_bad_news),  
-		(else_try),
-			(gt, ":allies_ratio", 25),
-			(display_message,"@Some of your troops are fleeing from battle.",color_bad_news),  
-		(else_try),
-			(gt, ":allies_ratio", 10),
-			(display_message,"@A few of your troops are fleeing from battle.",color_bad_news),  
+		(gt, reg0, 0), # At least a few allies remain in battle
+		(val_div, ":allies_ratio", reg0),
+			(try_begin),
+				(gt, ":allies_ratio", 80),
+				(display_message,"@Your troops flee in terror!",color_bad_news),  
+			(else_try),
+				(gt, ":allies_ratio", 50),
+				(display_message,"@Many of your troops are fleeing from battle.",color_bad_news),  
+			(else_try),
+				(gt, ":allies_ratio", 25),
+				(display_message,"@Some of your troops are fleeing from battle.",color_bad_news),  
+			(else_try),
+				(gt, ":allies_ratio", 10),
+				(display_message,"@A few of your troops are fleeing from battle.",color_bad_news),  
+			(try_end),
 		(try_end),
 	(try_end),
      ]),
 
-	 
-	 
+
 ##==============================================##
 ## 		FLEEING SCRIPTS 		##
 ##==============================================##
@@ -1096,15 +1094,16 @@ morale_scripts = [
 		(try_end),
 	(end_try),
 
-	# Sanity check
-	# swy-- let's avoid divisions by zero, we don't want to calculate the morale of troops which don't even exist.
-	(gt,":num_allies",0),
-	(gt,":num_enemies",0),
-
 	# Difference between in battle agents.
 	(store_sub, ":advantage", ":num_allies_alive", ":num_enemies_alive"),
 	
-	(val_div,":coh_allies",":num_allies"),
+	(try_begin),
+		(gt,":num_allies",0),
+		(val_div,":coh_allies",":num_allies"),
+	(else_try),
+		(assign, ":coh_allies", 0),
+	(try_end),
+
 	(assign,"$allies_coh_base",":coh_allies"),
 	(val_add, "$allies_coh_base", ":advantage"),
 	(val_add, "$allies_coh_base", ":num_allies_rallied"),
@@ -1129,12 +1128,22 @@ morale_scripts = [
 		(lt, "$allies_coh_base", 0),
 		(assign, "$allies_coh_base", 0),
 	(try_end),
+
 	(assign,"$allies_coh","$allies_coh_base"),
-	(val_div,":coh_enemies",":num_enemies"),
+
+	(try_begin),
+		(gt,":num_enemies",0),
+		(val_div,":coh_enemies",":num_enemies"),
+	(else_try),
+		(assign, ":coh_enemies", 0),
+	(try_end),
+
 	(assign,"$enemies_coh",":coh_enemies"),
-	(val_add,"$allies_coh","$new_kills"),
 	(val_sub, "$enemies_coh", ":advantage"),
 	(val_add, "$enemies_coh", ":num_enemies_rallied"),
+
+	(val_add,"$allies_coh","$new_kills"),
+
 	(try_begin),
 		(lt|this_or_next, "$enemies_coh", 0),
 		(eq, ":num_enemies", 0),

@@ -2152,6 +2152,9 @@ tld_morale_rout			= 60
 tld_morale_rout_allies		= -tld_morale_rout
 tld_morale_rout_enemies		= tld_morale_rout
 
+tld_rout_party_spawn_ratio_numerator	= 75
+tld_rout_party_spawn_ratio_denominator	= 100
+
 # Party count option in tweaks menu
 
 tld_party_count_option_increment	= 10
@@ -2179,6 +2182,7 @@ tld_influence_trait_bonus		= 2
 gift_strings_begin			= "str_gondor_gift0"
 tld_gifts_per_faction			= 5
 
+# These are for the Warband command cursor to work with formations
 tld_cursor_undefined			= -1
 tld_cursor_arrow_mode			= -2
 tld_cursor_time				= 20

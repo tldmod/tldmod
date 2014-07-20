@@ -1669,7 +1669,7 @@ game_menus = [
   ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
   ## MadVader test end
-     ("camp_test_cppcoder",[],"CC Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
+     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
  ] for ct in range(cheat_switch)])+[
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
