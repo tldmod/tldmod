@@ -46,3 +46,5 @@ ui_recent_messages|Last Msgs
 ui_value_denars|%d Resource Pts.
 ui_cannot_be_used_on_horseback|Cannot be used while mounted
 ui_upgrade_to_value| Upgrade to %s
+ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+

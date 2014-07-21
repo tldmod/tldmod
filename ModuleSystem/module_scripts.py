@@ -20047,10 +20047,20 @@ if is_a_wb_script==1:
   # Output: reg0 = needed cost for upgrade
   ("game_get_upgrade_cost",
     [
-     #(store_script_param_1, ":troop_id"),
-      (set_trigger_result, 0),
-    ]),
+     #(faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (troop_get_slot, reg2, "trp_player", slot_troop_forbid_companion_upgrade_mode),
+     (display_message, "@debug: $g_talk_troop_faction= {reg1} / result: {reg2}"),
 
+     #(store_script_param_1, ":troop_id"),
+     #swy-- hacky workaround to block upgrading by disabling the button on certain occasions...
+      (try_begin),     
+         (eq, reg2, 1),
+         (assign, ":result", -1),
+      (else_try),
+         (assign, ":result",  0),
+      (try_end),
+      (set_trigger_result, ":result"),
+    ]),
 
 # cpp: Imported this script from classic Warband.
 # Fixes the "Terrible" troop morale. Can be expanded on.
@@ -20062,26 +20072,7 @@ if is_a_wb_script==1:
   # Output: reg0: extra morale x 100
   ("game_get_morale_of_troops_from_faction",
     [
-     # (store_script_param_1, ":troop_no"),            
-     # 
-     # (store_troop_faction, ":faction_no", ":troop_no"),
-     # 
-     # (try_begin),
-     #   (ge, ":faction_no", npc_kingdoms_begin),
-     #   (lt, ":faction_no", npc_kingdoms_end),
-     #   
-     #   (faction_get_slot, reg0, ":faction_no",  slot_faction_morale_of_player_troops),
-     #
-     #   #(assign, reg1, ":faction_no"),
-     #   #(assign, reg2, ":troop_no"),
-     #   #(assign, reg3, reg0),
-     #   #(display_message, "@extra morale for troop {reg2} of faction {reg1} is {reg3}"),
-     # (else_try),
-     #   (assign, reg0, 0),
-     # (try_end),
-     #       
-     # (val_div, reg0, 100),
-     # 
+     #(store_script_param_1, ":troop_no"),
       (party_get_morale,   reg0, "p_main_party"),
       (set_trigger_result, reg0),
     ]),

@@ -11,6 +11,7 @@ from header_troops import *
 from header_items import * #TLD
 
 from module_constants import *
+from module_info import wb_compile_switch as is_a_wb_dialog
 
 
 ####################################################################################################################
@@ -1502,7 +1503,28 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
         (else_try),
           (str_store_string, s4, "@Strenghten defences in {s21}? Well, as long as they are not crippled, why not. Just be sure you give away our own troops, for we have no use for outsiders here."),
         (try_end)],
-"{s4}", "player_hire_troop_reunite", [(change_screen_give_members)]],
+
+"{s4}", "player_hire_troop_reunite",
+
+#swy-- workaround a bug where the player would get stuck in the conversation menu with the barracks guy after donating some troops to his camp.
+#   -- because the player insists on upgrading his troops inside the give_members screen, the before/after count doesn't match and none of the following dialog options kick. Boom, stuck.
+#   -- what i've made is to make impossible for the player to upgrade his troops in here by returning a crazy amount of points/money in "script_game_get_upgrade_cost", so the button stays disabled.
+#   -- more info: http://mbx.streetofeyes.com/index.php/topic,3465.msg68239.html#msg68239
+
+  (is_a_wb_dialog
+   and
+  [
+   (troop_set_slot, "trp_player", slot_troop_forbid_companion_upgrade_mode, 1),
+   (change_screen_give_members),
+  ]
+   or
+  [
+   (change_screen_give_members)
+  ])
+  
+# disabled in the next dialog -> player_hire_troop_reunite
+
+],
 
 [anyone,"player_hire_troop_pre_pre_nextcycle", [], 
 "Let me check the troop roster...", "player_hire_troop_pre_nextcycle", []],
@@ -1521,7 +1543,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s4}", "player_hire_troop_nextcycle", []],
 
 [anyone,"player_hire_troop_reunite", [], 
-"Let me check the troop roster...", "player_hire_troop_reunite_1", []],
+"Let me check the troop roster...", "player_hire_troop_reunite_1", [] + (is_a_wb_dialog and [(troop_set_slot, "trp_player", slot_troop_forbid_companion_upgrade_mode, 779)] or []) ],
 
 [anyone,"player_hire_troop_reunite_1", [
 		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
@@ -1556,7 +1578,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr,"player_hire_troop_reunite_2", 
 	 [ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-		                          (str_store_string, s31, "@I don't need them anyway, so save it."),
+	                              (str_store_string, s31, "@I don't need them anyway, so save it."),
 	    (else_try),(eq, reg26, 1),(str_store_string, s31, "@It is my duty to protect our people."), #player is of the same faction
 	    (else_try),               (str_store_string, s31, "@It is my duty to protect our allies."),
 	   (try_end)], 
@@ -3254,16 +3276,40 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Reinforcement code from town garrison reinforcement, register init above
 [anyone,"lord_give_troops", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
 	 "Reinforce my party? I can always use a few more soldiers.", 
-	 "lord_give_troops_check", [
+	 "lord_give_troops_check",
+   [
 		(party_clear, "p_main_party_backup"),#GA: changed to exchange from whole party then return non-faction guys to player
 		(assign, "$g_move_heroes", 0),
-        (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
+    (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
 		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
-		(call_script, "script_get_party_disband_cost", "p_main_party", 1), (assign, "$initial_party_value", reg0), # initial party total value
-        (change_screen_give_members)]],
+		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
+    (assign, "$initial_party_value", reg0), # initial party total value
+   ] +
+
+#swy-- workaround a bug where the player would get stuck in the conversation menu with the barracks guy after donating some troops to his camp.
+#   -- because the player insists on upgrading his troops inside the give_members screen, the before/after count doesn't match and none of the following dialog options kick. Boom, stuck.
+#   -- what i've made is to make impossible for the player to upgrade his troops in here by returning a crazy amount of points/money in "script_game_get_upgrade_cost", so the button stays disabled.
+#   -- more info: http://mbx.streetofeyes.com/index.php/topic,3465.msg68239.html#msg68239
+
+  (is_a_wb_dialog
+   and
+  [
+   (assign,"$tld_forbid_troop_upgrade_mode",1),
+   (change_screen_give_members),
+   #(assign,"$tld_forbid_troop_upgrade_mode",0)
+  ]
+   or
+  [
+   (change_screen_give_members)
+  ])
+  
+# disabled in the next dialog -> lord_give_troops_check
+
+],
+
 [anyone,"lord_give_troops", [], "Unfortunately you don't have any {s14} soldiers to reinforce me with.", "lord_pretalk", []],
 
-[anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", []],
+[anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", [] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ],
 
 [anyone,"lord_give_troops_check_1", [
 		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
@@ -9266,18 +9312,41 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "We don't need any more soldiers, thank you.", "party_reinforce_end", []],
 #Reinforcement code from town garrison reinforcement, register init above
 [anyone,"party_reinforce", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
-	 "Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.", 
-	 "party_reinforce_check", [
-        #GA: allowed player to transfer whatever troops in exchange screen. Unfitting ones will be returned to him later
-		(party_clear, "p_main_party_backup"),
-		(assign, "$g_move_heroes", 0),
-        (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
-		(party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
-		(call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$initial_party_value", reg0), # initial party total value (after removing troops ...)
-        (change_screen_give_members)]],
+   "Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.", 
+   "party_reinforce_check", [
+    #GA: allowed player to transfer whatever troops in exchange screen. Unfitting ones will be returned to him later
+    (party_clear, "p_main_party_backup"),
+    (assign, "$g_move_heroes", 0),
+    (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
+    (party_get_num_companions, reg28, "p_main_party"), # reg28: initial party size (after removing troops unfit to be given)
+    (call_script, "script_get_party_disband_cost", "p_main_party",1),(assign, "$initial_party_value", reg0), # initial party total value (after removing troops ...)
+    
+    ] +
+
+#swy-- workaround a bug where the player would get stuck in the conversation menu with the barracks guy after donating some troops to his camp.
+#   -- because the player insists on upgrading his troops inside the give_members screen, the before/after count doesn't match and none of the following dialog options kick. Boom, stuck.
+#   -- what i've made is to make impossible for the player to upgrade his troops in here by returning a crazy amount of points/money in "script_game_get_upgrade_cost", so the button stays disabled.
+#   -- more info: http://mbx.streetofeyes.com/index.php/topic,3465.msg68239.html#msg68239
+
+  (is_a_wb_dialog
+   and
+  [
+   (assign,"$tld_forbid_troop_upgrade_mode",1),
+   (change_screen_give_members),
+   #(assign,"$tld_forbid_troop_upgrade_mode",0)
+  ]
+   or
+  [
+   (change_screen_give_members)
+  ])
+  
+# disabled in the next dialog -> party_reinforce_check
+  
+],
+
 [anyone,"party_reinforce", [], "Unfortunately you don't have any {s22} soldiers to reinforce us with.", "party_reinforce_end", []],
 
-[anyone,"party_reinforce_check", [], "Let me check the soldier roster... ", "party_reinforce_check_1", []], 
+[anyone,"party_reinforce_check", [], "Let me check the soldier roster... ", "party_reinforce_check_1", [] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ], 
 
 [anyone,"party_reinforce_check_1", [ # only 1st condition needs party script
 		#script restores main party, "p_main_party_backup" contains nonfaction troops returned to main party

@@ -849,6 +849,11 @@ slot_troop_shop_aval_itp_itp_type_body_armor     = slot_troop_shop_aval_itp_coun
 slot_troop_shop_aval_itp_itp_type_foot_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_foot_armor     # 152
 slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_hand_armor     # 153
 
+#swy-- used exclusively for the player, should be a global var,
+#      but the game doesn't update them/read them well inside
+#      hardcoded callback scripts such as <game_get_upgrade_cost>
+slot_troop_forbid_companion_upgrade_mode = 139
+
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
 

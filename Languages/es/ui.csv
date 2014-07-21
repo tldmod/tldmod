@@ -45,3 +45,5 @@ ui_recent_messages|Últimos mensajes
 ui_value_denars|%d ptos. de recursos
 ui_cannot_be_used_on_horseback|No se puede utilizar a lomos de tu montura
 ui_upgrade_to_value| Mejorar a %s
+ui_notification_cant_upgrade|(No puedes subir de nivel mientras intercambias tropas)
+
