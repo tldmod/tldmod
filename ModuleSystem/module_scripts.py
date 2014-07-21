@@ -20047,19 +20047,14 @@ if is_a_wb_script==1:
   # Output: reg0 = needed cost for upgrade
   ("game_get_upgrade_cost",
     [
-     #(faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-      (troop_get_slot, reg2, "trp_player", slot_troop_forbid_companion_upgrade_mode),
-     (display_message, "@debug: $g_talk_troop_faction= {reg1} / result: {reg2}"),
-
      #(store_script_param_1, ":troop_id"),
      #swy-- hacky workaround to block upgrading by disabling the button on certain occasions...
       (try_begin),     
-         (eq, reg2, 1),
-         (assign, ":result", -1),
+         (eq, "$tld_forbid_troop_upgrade_mode", 1),
+         (set_trigger_result, -1),
       (else_try),
-         (assign, ":result",  0),
+         (set_trigger_result,  0),
       (try_end),
-      (set_trigger_result, ":result"),
     ]),
 
 # cpp: Imported this script from classic Warband.

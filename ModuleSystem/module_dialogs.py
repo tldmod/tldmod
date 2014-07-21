@@ -1514,7 +1514,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   (is_a_wb_dialog
    and
   [
-   (troop_set_slot, "trp_player", slot_troop_forbid_companion_upgrade_mode, 1),
+   (assign, "$tld_forbid_troop_upgrade_mode", 1),
    (change_screen_give_members),
   ]
    or
@@ -1522,7 +1522,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    (change_screen_give_members)
   ])
   
-# disabled in the next dialog -> player_hire_troop_reunite
+# disabled in the next dialog -> player_hire_troop_reunite (already loaded when the give_members is accessed) -> player_hire_troop_nextcycle
 
 ],
 
@@ -1543,7 +1543,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s4}", "player_hire_troop_nextcycle", []],
 
 [anyone,"player_hire_troop_reunite", [], 
-"Let me check the troop roster...", "player_hire_troop_reunite_1", [] + (is_a_wb_dialog and [(troop_set_slot, "trp_player", slot_troop_forbid_companion_upgrade_mode, 779)] or []) ],
+"Let me check the troop roster...", "player_hire_troop_reunite_1", []],
 
 [anyone,"player_hire_troop_reunite_1", [
 		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
@@ -1590,7 +1590,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 		# prepare troops which can be given away (others are in moved in temp party)
 		#(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
 		#(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party","$g_encountered_party_faction"),
-		]],
+		] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ],
 
 		
 
@@ -2804,7 +2804,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
           (assign, reg1, tld_player_level_to_own_chest)]],
 
 [anyone,"lord_start", [], "What is it?", "lord_talk",[]],
-[anyone,"lord_pretalk", [], "Anything else?", "lord_talk",[]],
+[anyone,"lord_pretalk", [], "Anything else?", "lord_talk",[] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ],
 #[anyone,"hero_pretalk", [], "Anything else?", "lord_talk",[]],
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
@@ -3294,22 +3294,21 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (is_a_wb_dialog
    and
   [
-   (assign,"$tld_forbid_troop_upgrade_mode",1),
+   (assign, "$tld_forbid_troop_upgrade_mode", 1),
    (change_screen_give_members),
-   #(assign,"$tld_forbid_troop_upgrade_mode",0)
   ]
    or
   [
    (change_screen_give_members)
   ])
   
-# disabled in the next dialog -> lord_give_troops_check
+# disabled in the next dialog -> lord_give_troops_check (already loaded when the give_members is accessed) -> lord_give_troops_check_1 (3 paths) -> lord_pretalk
 
 ],
 
 [anyone,"lord_give_troops", [], "Unfortunately you don't have any {s14} soldiers to reinforce me with.", "lord_pretalk", []],
 
-[anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", [] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ],
+[anyone,"lord_give_troops_check", [], "Let me check the soldier roster...", "lord_give_troops_check_1", [] ],
 
 [anyone,"lord_give_troops_check_1", [
 		(call_script, "script_party_eject_nonfaction","$g_encountered_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
@@ -9331,7 +9330,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
   (is_a_wb_dialog
    and
   [
-   (assign,"$tld_forbid_troop_upgrade_mode",1),
+   (assign, "$tld_forbid_troop_upgrade_mode", 1),
    (change_screen_give_members),
    #(assign,"$tld_forbid_troop_upgrade_mode",0)
   ]
@@ -9340,13 +9339,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (change_screen_give_members)
   ])
   
-# disabled in the next dialog -> party_reinforce_check
+# disabled in the next dialog -> party_reinforce_check (already loaded when the give_members is accessed) -> party_reinforce_check_1 (3 branches) -> party_reinforce_end
   
 ],
 
 [anyone,"party_reinforce", [], "Unfortunately you don't have any {s22} soldiers to reinforce us with.", "party_reinforce_end", []],
 
-[anyone,"party_reinforce_check", [], "Let me check the soldier roster... ", "party_reinforce_check_1", [] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ], 
+[anyone,"party_reinforce_check", [], "Let me check the soldier roster... ", "party_reinforce_check_1", []], 
 
 [anyone,"party_reinforce_check_1", [ # only 1st condition needs party script
 		#script restores main party, "p_main_party_backup" contains nonfaction troops returned to main party
@@ -9396,7 +9395,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (else_try),
           (str_store_string, s4, "@Try not getting yourself killed."),
         (try_end)],
-"{s4}", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
+"{s4}", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)] + (is_a_wb_dialog and [(assign,"$tld_forbid_troop_upgrade_mode",0)] or []) ],
 
 
 #Enemy faction party
