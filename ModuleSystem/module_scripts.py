@@ -19884,7 +19884,7 @@ scripts = [
 	(position_set_z_to_ground_level, pos10),
 ]),
 
-# utility scropt (mtarini)
+# utility script (mtarini)
 # removes from party A the prisoners, as dictated from party B (except wonded)
 # returns removed number in reg0
 ("party_remove_party_from_prisoners",[
@@ -19906,32 +19906,7 @@ scripts = [
 	(assign, reg0, ":removed"),
 ]),
 
-# cpp: Imported this script from classic Warband. Fixes the "Terrible" troop morale. Can be expanded on.
-  ("game_get_morale_of_troops_from_faction",
-    [
-      # (store_script_param_1, ":troop_no"),            
-      
-     # (store_troop_faction, ":faction_no", ":troop_no"),
-      
-     # (try_begin),
-       # (ge, ":faction_no", npc_kingdoms_begin),
-       # (lt, ":faction_no", npc_kingdoms_end),
-       # (faction_get_slot, reg0, ":faction_no",  slot_faction_morale_of_player_troops),
-        # (assign, reg1, ":faction_no"),
-        # (assign, reg2, ":troop_no"),
-        # (assign, reg3, reg0),
-        # (display_message, "@extra morale for troop {reg2} of faction {reg1} is {reg3}"),
-      # (else_try),
-        #(assign, reg0, 0),
-      # (try_end),
-      # (val_div, reg0, 100),
-    
-      #(val_add, reg0, reg1),
-      
-      (party_get_morale, reg0, "p_main_party"),
-      (set_trigger_result, reg0),
-  ]),
-
+("save_compartibility_script7",[]),
 ("save_compartibility_script8",[]),
 ("save_compartibility_script9",[]),
 ("save_compartibility_script10",[]),
@@ -20074,6 +20049,41 @@ if is_a_wb_script==1:
     [
      #(store_script_param_1, ":troop_id"),
       (set_trigger_result, 0),
+    ]),
+
+
+# cpp: Imported this script from classic Warband.
+# Fixes the "Terrible" troop morale. Can be expanded on.
+
+  # script_game_get_morale_of_troops_from_faction
+  # This script is called from the game engine 
+  # Input: 
+  # param1: faction_no,
+  # Output: reg0: extra morale x 100
+  ("game_get_morale_of_troops_from_faction",
+    [
+     # (store_script_param_1, ":troop_no"),            
+     # 
+     # (store_troop_faction, ":faction_no", ":troop_no"),
+     # 
+     # (try_begin),
+     #   (ge, ":faction_no", npc_kingdoms_begin),
+     #   (lt, ":faction_no", npc_kingdoms_end),
+     #   
+     #   (faction_get_slot, reg0, ":faction_no",  slot_faction_morale_of_player_troops),
+     #
+     #   #(assign, reg1, ":faction_no"),
+     #   #(assign, reg2, ":troop_no"),
+     #   #(assign, reg3, reg0),
+     #   #(display_message, "@extra morale for troop {reg2} of faction {reg1} is {reg3}"),
+     # (else_try),
+     #   (assign, reg0, 0),
+     # (try_end),
+     #       
+     # (val_div, reg0, 100),
+     # 
+      (party_get_morale,   reg0, "p_main_party"),
+      (set_trigger_result, reg0),
     ]),
   ]
 

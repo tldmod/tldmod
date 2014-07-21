@@ -405,7 +405,7 @@ script_get_food_of_race_and_faction = 403
 script_troop_copy_all_items_from_troop = 404
 script_store_random_scene_position_in_pos10 = 405
 script_party_remove_party_from_prisoners = 406
-script_game_get_morale_of_troops_from_faction = 407
+script_save_compartibility_script7 = 407
 script_save_compartibility_script8 = 408
 script_save_compartibility_script9 = 409
 script_save_compartibility_script10 = 410
@@ -499,5 +499,6 @@ script_coherence = 497
 script_cf_shift_pos1_along_y_axis_to_ground = 498
 script_shift_pos1_along_y_axis_to_ground_aux = 499
 script_game_get_upgrade_cost = 500
+script_game_get_morale_of_troops_from_faction = 501
 
 
