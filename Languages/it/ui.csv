@@ -1,0 +1,47 @@
+ui_at_learning_limit|(Al Limite)
+ui_not_enough_skill_points_to_learn|(Punti abilità insufficienti)
+ui_not_enough_attributetype_to_learn_this_skill|(%s Insufficiente per apprendere quest'abilità)
+ui_explanation_agility|Agilità: Ogni Ogni punto dà +5 punti arma e aumenta la velocità dell'arma del 0.5%. Queste abilità non possono essere sviluppate oltre 1/3 dell'Agilità: Maestria nelle armi, Scudo, Atletica, Cavalcare, Tirare a cavallo, Saccheggiare.
+ui_retreated_battle|%s è in rotta.
+ui_riding_skill_not_adequate_to_mount|(Abilità Cavalcare insufficiente)
+ui_camp|Azioni
+ui_tutorial_inventory|In The Last Days, avrai bisogno di Punti Risorsa per ottenere equipaggiamento. I Punti Risorsa sono la misura in cui una fazione è disposta a rifornirti e di quante risorse hai il diritto di utilizzare.
+ui_you_dont_have_value|Non possiedi: %s
+ui_merchant_cant_afford_value|%s: Ci stai offrendo più del necessario! Forse dovresti tenere qualcosa per te (stai offrendo beni per %s, noi possiamo accettarne solo %s).
+ui_merchant_pay_whatever|No, non ne ho bisogno, puoi tenerlo.
+ui_horse|Monta
+ui_reclaim_your_sold_goods|Recupera i beni già dati, prima di dare questo!
+ui_return_your_bought_goods|Restituisci i beni presi, prime di cedere questo!
+ui_return_price|se restituito: +%d P.R.
+ui_sell_price|se dato: +%d P.R.
+ui_reclaim_price|per recuperare: -%d P.R.
+ui_buying_price|per ottenere: -%d P.R.
+ui_notification_riding_skill_not_enough|Non hai abbastanza abilità per cavalcarlo.
+ui_notification_payment_value|Consumare %s
+ui_notification_payment_receive_value|Guadagnare %s
+ui_weekly_cost_value|Mantenere: %s
+ui_sell|Dài
+ui_hire|Arruola
+ui_notification_cant_hire|(non abbastanza P.R. per arruolare)
+ui_joining_cost_weekly_wage|Arruola: %d P.R. -- Mantieni: %d P.R.
+ui_weekly_wage|Mantieni: %d P.R.
+ui_price|Valore: %d P.R.
+ui_cant_reload_this_weapon_on_horseback|Non puoi ricaricare questa arma mentre cavalchi.
+ui_delivered_number_damage_to_horse|Inflitti %d danni alla cavalcatura.
+ui_horse_charged_for_number_damage|Inflitti %d danni da carica.
+ui_horse_received_number_damage|La cavalcatura ha ricevuto %d danni.
+ui_horse_fell_dead|La cavalcatura è morta...
+ui_horse_crippled|La cavalcatura è azzoppata...
+ui_you_got_value|%s guadagnato.
+ui_has_deserted_the_party|ha abbandonato la Compagnia.
+ui_have_deserted_the_party|hanno abbandonato la Compagnia.
+ui_loading_textures|Caricamento Textures (sii paziente)...
+ui_order_hold_fire_toggle|Cessate il fuoco/Fuoco a volontà (Alternato)
+ui_order_dismount_toggle|Ordina di smontare/Montare (Alternato)
+ui_mount_horses_e_|%s, montate!
+ui_hold_fire_e_|%s, cessate il fuoco!
+ui_fire_at_will_e_|%s, fuoco a volontà!
+ui_recent_messages|Ultimi Msg
+ui_value_denars|%d Punti Risorsa
+ui_cannot_be_used_on_horseback|Non può essere usato mentre stai cavalcando
+ui_upgrade_to_value|Aggiorna a %s

@@ -1,0 +1,74 @@
+qst_deliver_message|Consegna un messaggio a {s13}
+qst_deliver_message_text|{s9} ti ha chiesto di consegnare un messaggio a {s13}. {s13} si trovava a {s4} quando ti è stato dato questo compito.
+qst_deliver_message_to_enemy_lord|Consegna un messaggio a {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. {s13} si trovava a {s4} quando ti è stato dato questo compito.
+qst_raise_troops|Istruisci {reg1} {s14}
+qst_raise_troops_text|{s9} ti ha chiesto di istruire {reg1} {s14} e riportarglieli.
+qst_escort_messenger|Scorta il messaggero fino a {s14}
+qst_escort_messenger_text|Nessuno
+qst_hunt_down_fugitive|Dai la caccia a {s4}
+qst_hunt_down_fugitive_text|{s9} ti ha chiesto di dare la caccia a un fuggitivo di nome {s4}. In questo momento si pensa si trovi a {s3}.
+qst_bring_back_runaway_serfs|Riporta indietro i servi in fuga.
+qst_bring_back_runaway_serfs_text|{s9} ti ha chiesto di riportare indietro i tre gruppi di servi in fuga {s2}. Ha detto che tutti e tre i gruppi si dovrebbero trovare in direzione di {s3}.
+qst_follow_spy|Insegui la spia fino all'incontro
+qst_follow_spy_text|{s11} ti ha chiesto di seguire la spia che abbandonerà {s12}. Dovrai prestare attenzione a non farti scoprire dalla spia durante il suo viaggio o potrebbe insospettirsi e tornare indietro. Una volta che la spia avrà incontrato il suo complice, prepara l'imboscata e catturali entrambi per poi consegnarli a {s11}.
+qst_capture_enemy_hero|Cattura il comandante nemico
+qst_capture_enemy_hero_text|{s11} ti ha chiesto di catturare il comandante nemico.
+qst_lend_companion|Offri temporaneamente il tuo compagno {s3} a {s9}
+qst_lend_companion_text|{s9} ha chiesto l'aiuto del tuo compagno {s3} per una settimana.
+qst_capture_prisoners|Consegna {reg1} prigionieri nemici
+qst_capture_prisoners_text|{s9} vuole che gli vengano consegnati {reg1} prigionieri nemici.
+qst_investigate_fangorn|Esamina Fangorn
+qst_investigate_fangorn_text|{s9} ti ha chiesto di andare a controllare cosa stia accadendo nella foresta di Fangorn e di tornare a riferire.
+qst_capture_troll|Cattura un Troll
+qst_capture_troll_text|{s9} ti ha chiesto di consegnargli un troll selvaggio affinchè venga utilizzato nelle sue armate.
+qst_kill_troll|Occupati del Troll infuriato
+qst_kill_troll_text|{s9} ti ha chiesto di liberare {s13} dalla minaccia di un troll inferocito che si aggira nella sua periferia.
+qst_mirkwood_sorcerer|Sbarazzati dello stregone nel Bosco Atro
+qst_mirkwood_sorcerer_text|Il potere di Galadriel in difesa di Lothlórien si sta indebolendo a causa dei  rivoltanti rituali eseguiti da uno stregone di Dol Guldur. Fino a che egli rimarrà in vita rappresenterà una grande minaccia per gli Elfi. Dirigiti a Bosco Atro e cerca non lontano da Dol Guldur stessa. Agisci con cautela o allarmerai i nemici, avrai una sola opportunità per sconfiggerlo.
+qst_find_lost_spears|Cerca le lance perdute di re Bladorthin
+qst_find_lost_spears_text|{s9} ti ha chiesto di trovare le lance perdute che i nani donarono a re Bladorthin. Devi chiedere il permesso ai nani per cercare le lance nelle profondità della Motagna Solitaria.
+qst_rescue_prisoners|Salva {reg1} prigionieri
+qst_rescue_prisoners_text|{s9} vuole che salvi {reg1} prigionieri.
+qst_scout_enemy_town|Osserva la città nemica
+qst_scout_enemy_town_text|{s9} ti ha chiesto di esplorare intorno a {s13}.
+qst_dispatch_scouts|Intercetta la pattuglia ricognitiva
+qst_dispatch_scouts_text|{s9} ti ha chiesto di intercettare la pattuglia ricognitiva vicino a {s13}.
+qst_eliminate_patrols|Elimina {reg1} compagnie nemiche
+qst_eliminate_patrols_text|{s9} ti ha chiesto di eliminare {reg1} {s13} compagnie nemiche.
+qst_lend_surgeon|Offri temporaneamente il tuo cerusico {s3} a {s1}
+qst_lend_surgeon_text|Offri l'aiuto del tuo cerusico {s3} a {s1}.
+qst_follow_army|Segui l'armata di {s9}
+qst_follow_army_text|Nessuno
+qst_report_to_army|Fai rapporto a {s13}
+qst_report_to_army_text|Nessuno
+qst_deliver_cattle_to_army|Consegna {reg3} unità di cibo a {s13}
+qst_deliver_cattle_to_army_text|Nessuno
+qst_join_siege_with_army|Partecipa all'assedio di {s14}
+qst_join_siege_with_army_text|Nessuno
+qst_scout_waypoints|Perlustra {s13}, {s14} e {s15}
+qst_scout_waypoints_text|Nessuno
+qst_move_cattle_herd|Sposta {s12} a {s13}
+qst_move_cattle_herd_text|L'Anziano di {s10} ti ha chiesto di spostare un po' di {s12} a {s13}.
+qst_escort_merchant_caravan|Scorta il convoglio dei rifornimenti fino a {s8}
+qst_escort_merchant_caravan_text|Scorta il convoglio dei rifornimenti fino a {s8}
+qst_deliver_wine|Consegna {reg5} unità di {s6} a {s4}
+qst_deliver_wine_text|Il {s9} di {s3} ti ha chiesto di consegnare {reg5} unità di {s6} a {s4} in 7 giorni.
+qst_troublesome_bandits|Dai la caccia ai Goblin molesti
+qst_troublesome_bandits_text|Il {s9} di {s4} ti ha chiesto di dare la caccia ai goblin molesti che si aggirano nelle vicinanze della città.
+qst_deal_with_looters|Tratta con gli Orchi Tribali
+qst_deal_with_looters_text|L'Anziano di {s4} ti ha chiesto di trattare con le numerose tribù orchesche intorno a {s4}.
+qst_deal_with_night_bandits|Tratta con i Goblin disonesti
+qst_deal_with_night_bandits_text|L'anziano di {s14} ti ha chiesto di trattare con i goblin disonesti a {s14}.
+qst_deliver_food|Rifornisci {s3} con {reg5} unità di cibo
+qst_deliver_food_text|Il {s9} di {s3} ti ha chiesto di consegnargli {reg5} unità di cibo in 10 giorni.
+qst_deliver_iron|Rifornisci {s3} con {reg5} unità di {s6}
+qst_deliver_iron_text|Il {s9} di {s3} ti ha chiesto di consegnargli {reg5} unità di {s6}.
+qst_tld_introduction|Consegna il messaggio riguardo gli orchi di Mordor al comando
+qst_tld_introduction_text|Nessuno
+qst_treebeard_kill_orcs|Sconfiggi la compagnia di orchi taglialegna
+qst_treebeard_kill_orcs_text|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.
+qst_oath_of_vengeance|Giuramento di vendetta
+qst_oath_of_vengeance_text|Infuriato per la morte di {s1}, hai giurato vendetta a {s2}. Da questo momento non desideri altro che distruggere il maggior numero possibile di armate di {s2}. Sei consapevole che un giuramento fatto davanti a testimoni, dev'essere un giuramento rispettato, di certo non vuoi passare per un ciarlatano. Uno spargimento di sangue sta per avere inizio!
+qst_deliver_gift|Consegna {s4} di {s1} a {s2} da {s3}
+qst_deliver_gift_text|Ti hanno chiesto di consegnare {s4} di {s1} a {s3} da {s2}.
