@@ -7593,8 +7593,43 @@ scripts = [
 ("get_heroes_attached_to_center",
     [ (store_script_param_1, ":center_no"),
       (store_script_param_2, ":party_no_to_collect_heroes"),
+      
+      #swy-- "p_temp_party" is often used as arg2 in here.
+      (party_clear, "p_temp_party_2"),     
       (party_clear, ":party_no_to_collect_heroes"),
-      (call_script, "script_get_heroes_attached_to_center_aux", ":center_no", ":party_no_to_collect_heroes"),
+      
+      
+      (call_script, "script_get_heroes_attached_to_center_aux", ":center_no", "p_temp_party_2"),
+      
+      #swy-- reorders the stack entries to make faction leaders (if any) always the first.
+      #   -- this is important to avoid funny situations in throne rooms, specially with
+      #   -- Thranduil/silvan elf commanders spawning in his throne with him in his halls!
+      #   -- <http://mbx.streetofeyes.com/index.php/topic,3465.msg68190.html#msg68190>
+      
+      # (this basically cherrypicks our leader from a temp party, if any, moving it to the asked destination and then copying the rest)
+      
+      (store_faction_of_party, ":center_fac", ":center_no"),
+      (faction_get_slot,       ":trp_leader", ":center_fac", slot_faction_leader),
+      
+      (party_get_num_companion_stacks, ":num_stacks", "p_temp_party_2"),
+      (try_for_range, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop", "p_temp_party_2", ":i_stack"),
+        #--
+        (eq, ":stack_troop", ":trp_leader"),
+        (party_add_members,    ":party_no_to_collect_heroes", ":stack_troop", 1),
+        (party_remove_members, "p_temp_party_2",              ":stack_troop", 1),
+      (try_end),
+      
+      #swy-- we've singled out and moved the leader to the emptied final party beforehand,
+      #   -- copy the rest of heroes using this handy helper function, boom! reordered!
+      
+      (assign, ":mh_backup", "$g_move_heroes"),
+      (assign,               "$g_move_heroes", 1), #parameter-like global var needed for the helper script to copy heroes too, we reset it back when finished... for reasons.
+      
+      (call_script, "script_party_add_party_companions", ":party_no_to_collect_heroes", "p_temp_party_2"),
+
+      (assign,               "$g_move_heroes", ":mh_backup"),
+
 ]),
 
 # script_get_heroes_attached_to_center_as_prisoner_aux
@@ -9933,6 +9968,16 @@ scripts = [
     (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
         (lt, ":cur_pos", 32), # Spawn up to entry point 31
+        
+        (try_begin),
+          #swy-- throne entry point for leader only
+          ( eq, ":castle_scene", "scn_thranduil_hall_room"),
+          ( eq, ":cur_pos", 16),
+          (neq, ":stack_troop", "trp_woodelf_lord"),
+          #   --
+          (val_max, ":cur_pos", 17),
+        (try_end),
+
         (set_visitor, ":cur_pos", ":stack_troop"),
         (try_begin),
         	(this_or_next|eq, ":stack_troop", "trp_knight_3_11"), # Imladris elves all in helms
