@@ -19,9 +19,9 @@ def save_game_menu_item(ofile,variable_list,variable_uses,menu_item,tag_uses,qui
   gamemenu_uses.append([menu_item[0],menu_item[2]])
   #duplicate-ids end
   ofile.write(" mno_%s "%(menu_item[0]))
-  save_statement_block(ofile,0, 1, menu_item[1], variable_list, variable_uses,tag_uses,quick_strings)
+  save_statement_block(ofile,0, 1, menu_item[1], variable_list, variable_uses,tag_uses,quick_strings, "mno_"+menu_item[0]+" condition block")
   ofile.write(" %s "%(string.replace(menu_item[2]," ","_")))
-  save_statement_block(ofile,0, 1, menu_item[3], variable_list, variable_uses,tag_uses,quick_strings)
+  save_statement_block(ofile,0, 1, menu_item[3], variable_list, variable_uses,tag_uses,quick_strings, "mno_"+menu_item[0]+" consequence block")
   door_name = "."
   if (len(menu_item) > 4):
     door_name = menu_item[4]
@@ -34,7 +34,7 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.write(" %d\n"%(len(game_menus)))
   for game_menu in game_menus:
     ofile.write("menu_%s %d %s %s"%(game_menu[0],game_menu[1],string.replace(game_menu[2]," ","_"),game_menu[3]))
-    save_statement_block(ofile,0,1, game_menu[4]  , variable_list, variable_uses,tag_uses,quick_strings)
+    save_statement_block(ofile,0,1, game_menu[4]  , variable_list, variable_uses,tag_uses,quick_strings, "menu_"+game_menu[0])
     menu_items = game_menu[5]
     ofile.write("%d\n"%(len(menu_items)))
     for menu_item in menu_items:

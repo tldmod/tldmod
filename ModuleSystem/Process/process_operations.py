@@ -287,7 +287,7 @@ def add_variable(variable_string,variables_list,variable_uses):
     variables_list.append(variable_string)
     variable_uses.append(-1)
 
-def get_variable(variable_string,variables_list,variable_uses):
+def get_variable(variable_string,variables_list,variable_uses, calling_script):
   found = 0
   result = -1
   var_string = variable_string[1:]
@@ -302,9 +302,9 @@ def get_variable(variable_string,variables_list,variable_uses):
       variables_list.append(variable_string)
       variable_uses.append(0)
       result = len(variables_list) - 1
-      print "WARNING: Usage of unassigned global variable: " + variable_string
+      print "WARNING: Usage of unassigned global variable: " + variable_string + " in script '" + calling_script + "'"
     else:
-      print "ERROR: Usage of unassigned local variable: " + variable_string
+      print "ERROR: Usage of unassigned local variable: " + variable_string + " in script '" + calling_script + "'"
   return result
 
 def is_lhs_operation(op_code):
@@ -372,16 +372,16 @@ def insert_quick_string_with_auto_id(sentence,quick_strings):
   return index
 
 
-def process_param(param,global_vars_list,global_var_uses, local_vars_list, local_var_uses, tag_uses, quick_strings):
+def process_param(param,global_vars_list,global_var_uses, local_vars_list, local_var_uses, tag_uses, quick_strings, calling_script):
   result = 0
   if (type(param) == types.StringType):
     if (param[0] == '$'):
       check_varible_not_defined(param[1:], local_vars_list)
-      result = get_variable(param, global_vars_list,global_var_uses)
+      result = get_variable(param, global_vars_list,global_var_uses, calling_script)
       result |= opmask_variable
     elif (param[0] == ':'):
       check_varible_not_defined(param[1:], global_vars_list)
-      result = get_variable(param, local_vars_list,local_var_uses)
+      result = get_variable(param, local_vars_list,local_var_uses, calling_script)
       result |= opmask_local_variable
     elif (param[0] == '@'):
       result = insert_quick_string_with_auto_id(param[1:], quick_strings)
@@ -394,7 +394,7 @@ def process_param(param,global_vars_list,global_var_uses, local_vars_list, local
     result = param
   return result
 
-def save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars_list,local_var_uses,tag_uses,quick_strings):
+def save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars_list,local_var_uses,tag_uses,quick_strings, calling_script):
   if no_variables == 0:
     lenstatement = len(statement) - 1
     if (is_lhs_operation(opcode) == 1):
@@ -407,7 +407,7 @@ def save_statement(ofile,opcode,no_variables,statement,variable_list,variable_us
     lenstatement = 0
   ofile.write("%d %d "%(opcode, lenstatement))
   for i in xrange(lenstatement):
-    operand = process_param(statement[i + 1],variable_list,variable_uses,local_vars_list,local_var_uses,tag_uses,quick_strings)
+    operand = process_param(statement[i + 1],variable_list,variable_uses,local_vars_list,local_var_uses,tag_uses,quick_strings, calling_script)
     ofile.write("%d "%operand)
 
 def compile_global_vars_in_statement(statement,variable_list, variable_uses):
@@ -423,7 +423,7 @@ def compile_global_vars_in_statement(statement,variable_list, variable_uses):
           if (statement[1][0] == '$'):
             add_variable(statement[1][1:], variable_list, variable_uses)
 
-def save_statement_block(ofile,statement_name,can_fail_statement,statement_block,variable_list, variable_uses,tag_uses,quick_strings):
+def save_statement_block(ofile,statement_name,can_fail_statement,statement_block,variable_list, variable_uses,tag_uses,quick_strings, calling_script):
   local_vars = []
   local_var_uses = []
   ofile.write(" %d "%(len(statement_block)))
@@ -460,7 +460,7 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
           and (statement_name!="rout_check" and statement_name!="coherence")):
       
       print "WARNING: Script can fail at operation #" + str(i) + ". Use cf_ at the beginning of its name: " + statement_name
-    save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings)
+    save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings, calling_script)
   if (store_script_param_1_uses > 1):
     print "WARNING: store_script_param_1 is used more than once:" + statement_name
   if (store_script_param_2_uses > 1):
@@ -468,15 +468,27 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
   i = 0
   while (i < len(local_vars)):
     if (local_var_uses[i] == 0 and not(local_vars[i].startswith("unused"))):
-      print "WARNING: Local variable never used: " + local_vars[i]
+      print "WARNING: Local variable never used: " + local_vars[i]+ ", at: " + str(statement_name) + " in script '" + calling_script + "'"
     i = i + 1
+  if (len(local_vars) > 128):
+   print "WARNING: Script uses more than 128 local wariables: " + str(statement_name) + "variables count:" + str(len(local_vars))
+  
+  # Indentation Enhancement By Vorne
+  # http://forums.taleworlds.com/index.php/topic,189368.0.html
+  
   if current_depth != 0:
     if current_depth > 0:
       missing = " missing"
     else:
       missing = " extra"
       current_depth *= -1
+    
+    if statement_name == 0:
+      statement_name = calling_script
+      
     print "WARNING: " + `current_depth` + missing + " try_end: " + str(statement_name)
+  
+  #>
 
 def compile_global_vars(statement_block,variable_list, variable_uses):
   for statement in statement_block:
@@ -485,9 +497,11 @@ def compile_global_vars(statement_block,variable_list, variable_uses):
 
 def save_simple_triggers(ofile,triggers,variable_list, variable_uses,tag_uses,quick_strings):
   ofile.write("%d\n"%len(triggers))
+  trigger_id = 0
   for trigger in triggers:
     ofile.write("%s "%(sf(trigger[0])))
-    save_statement_block(ofile,0,1,trigger[1]  , variable_list, variable_uses,tag_uses,quick_strings)
+    save_statement_block(ofile,0,1,trigger[1]  , variable_list, variable_uses,tag_uses,quick_strings, "trigger " + str(trigger_id))
     ofile.write("\n")
+    trigger_id += 1
   ofile.write("\n")
   

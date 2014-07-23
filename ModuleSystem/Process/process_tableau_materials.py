@@ -10,10 +10,12 @@ from process_operations import *
 def save_tableau_materials(variable_list,variable_uses,tag_uses,quick_strings):
   ofile = open(export_dir + "tableau_materials.txt","w")
   ofile.write("%d\n"%(len(tableaus)))
+  tableau_id = 0
   for tableau in tableaus:
     ofile.write("tab_%s %d %s %d %d %d %d %d %d"%(tableau[0], tableau[1], tableau[2], tableau[3], tableau[4], tableau[5], tableau[6], tableau[7], tableau[8]))
-    save_statement_block(ofile, 0, 1, tableau[9], variable_list, variable_uses, tag_uses, quick_strings)
+    save_statement_block(ofile, 0, 1, tableau[9], variable_list, variable_uses, tag_uses, quick_strings, "tableau "+str(tableau_id))
     ofile.write("\n")
+    tableau_id += 1
   ofile.close()
 
 def save_python_header():

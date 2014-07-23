@@ -11,7 +11,7 @@ def save_simple_triggers(variable_list,variable_uses,triggers,tag_uses,quick_str
   for i in xrange(len(simple_triggers)):
     simple_trigger = simple_triggers[i]
     file.write("%s "%sf(simple_trigger[0]))
-    save_statement_block(file,0, 1, simple_trigger[1]  , variable_list,variable_uses,tag_uses,quick_strings)
+    save_statement_block(file,0, 1, simple_trigger[1]  , variable_list,variable_uses,tag_uses,quick_strings, "simple trigger "+str(i))
     file.write("\n")
   file.close()
 
