@@ -2007,8 +2007,10 @@ simple_triggers = [
             (try_begin),
               (gt, ":volunteers", 0),
               (party_is_active, ":volunteers"),
-              (remove_party, ":volunteers"),
+              (party_detach,    ":volunteers"),
+              (remove_party,    ":volunteers"),
             (try_end),
+            
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
               (party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1),
               (call_script, "script_destroy_center", ":cur_party"),

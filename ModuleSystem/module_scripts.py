@@ -1813,13 +1813,8 @@ scripts = [
  	(ge, ":rel", 0),
 
 	(try_begin),
-		(gt, ":volunteers", 0),
-		(neg|party_is_active, ":volunteers"), # depleted
-		#swy-- fix for corrupted savegames(*), clean your own shit! :(
-		# ----
-		#      (*) party number increases because rounds of "depleted" volunteer parties
-		#          stay in the savegame piling up until it blows up on overflow! *slow clap*
-		(remove_party, ":volunteers"),
+		(                 gt, ":volunteers", 0),
+		(neg|party_is_active, ":volunteers"   ), # depleted
 		# --
 		(assign, ":volunteers", 0),
 	(try_end),
@@ -11675,16 +11670,18 @@ scripts = [
         (try_end),
       (else_try),
         (this_or_next|eq, ":troop_no", "trp_gondor_lord"), # mtarini: let sire Denethor sit. GA: as well as Saruman. Them are always in capitals
-        (eq, ":troop_no", "trp_isengard_lord"),
+        (             eq, ":troop_no", "trp_isengard_lord"),
         (assign, ":stand_animation", "anim_sit_on_throne"),
       (else_try),
-		(eq, ":troop_no", "trp_woodelf_lord"),(eq, "$current_town", "p_town_thranduils_halls"),
+        (eq, ":troop_no", "trp_woodelf_lord"),
+        (eq, "$current_town", "p_town_thranduils_halls"),
         (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Thranduil, but only in his halls
       (else_try),
-		(eq, ":troop_no", "trp_gundabad_lord"),(eq, "$current_town", "p_town_gundabad"),
+        (eq, ":troop_no", "trp_gundabad_lord"),
+        (eq, "$current_town", "p_town_gundabad"),
         (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Burza, but only in his cave
       (else_try),
-		(is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":stand_animation", "anim_stand_lord"),
       (else_try),
         (is_between, ":troop_no", soldiers_begin, soldiers_end),
