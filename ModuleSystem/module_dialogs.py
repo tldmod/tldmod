@@ -4835,7 +4835,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 "How can those beasts be fought?", "lord_mission_kill_troll_info_a",[]],
 
 [anyone,"lord_mission_kill_troll_info_a", [],
-"A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can esily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.", "lord_mission_told",[]],
+"A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can easily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.", "lord_mission_told",[]],
 
 [anyone|plyr,"lord_mission_told", [(eq,"$random_quest_no","qst_kill_troll")],
 "Do you think it comes from Mordor, or Isengard?", "lord_mission_kill_troll_info_b",[]],
