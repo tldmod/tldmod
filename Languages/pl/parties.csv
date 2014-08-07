@@ -1,4 +1,4 @@
-﻿p_town_minas_tirith|Minas Tirith
+p_town_minas_tirith|Minas Tirith
 p_town_pelargir|Pelargir
 p_town_linhir|Linhir
 p_town_dol_amroth|Dol Amroth
@@ -47,7 +47,7 @@ p_town_umbar_camp|Obóz Korsarzy
 p_town_imladris_camp|Obóz Rivendell
 p_town_dol_guldur|Dol Guldur
 p_town_dol_guldur_north_outpost|Północny Posterunek Dol Guldur
-p_town_north_rhun_camp|Północny Obóz Rhun
+p_town_rhun_main_camp|Główny Obóz Rhun
 p_town_rhun_south_camp|Południowy Posterunek Rhun
 p_town_rhun_north_camp|Północny Posterunek Rhun
 p_town_gundabad|Gundabad
@@ -76,19 +76,11 @@ p_advcamp_dale|Obozowisko Dale
 p_advcamp_dwarf|Obozowisko Ereboru
 p_advcamp_dunland|Obozowisko Dunlandu
 p_advcamp_beorn|Obozowisko Beorningów
-p_centers_end| 
 p_argonath|Argonath
 p_argonath2|Argonath
 p_hand_isen|Ręka Isengardu
 p_mount_doom|Góra Przeznaczenia
 p_town_barad_dur|Barad Dur
-p_test_scene|test scene
-p_battlefields|battlefields
-p_theater_se_center|SE Theater center
-p_theater_sw_center|SW Theater center
-p_theater_c_center|C Theater center
-p_theater_n_center|N Theater center
-p_fangorn_center|Centrum Fangornu
 p_ford_cair_andros1|Anduina
 p_ford_cair_andros2|Anduina
 p_ford_caras_galadhon|Anduina
@@ -106,4 +98,8 @@ p_ford_rohan2|Rzeka Entów
 p_ford_fangorn|Rzeka Entów
 p_ford_fangorn2|Mętna Woda
 p_ford_moria|Srebrna żyła
+p_legend_amonhen|Amon Hen
+p_legend_deadmarshes|Martwe Bagna
+p_legend_mirkwood|Mroczna Puszcza
+p_legend_fangorn|Las Fangorn
 p_ancient_ruins|Starożytne Ruiny

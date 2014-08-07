@@ -1,4 +1,4 @@
-﻿qst_deliver_message|- List, który ma otrzymać {s13}
+qst_deliver_message|- List, który ma otrzymać {s13}
 qst_deliver_message_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją otrzymać {s13}. {s13} odwiedzał {s4}, gdy otrzymał{e/a}ś to zadanie.
 qst_deliver_message_to_enemy_lord|- List, który ma otrzymać {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją otrzymać {s13} ({s15}). {s13} odwiedzał {s4}, gdy otrzymał{e/a}ś to zadanie.
@@ -70,5 +70,5 @@ qst_treebeard_kill_orcs|- Drwale
 qst_treebeard_kill_orcs_text|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qst_oath_of_vengeance|- Zemsta
 qst_oath_of_vengeance_text|Rozwścieczony śmiercią {s1}, przysiągł{e/a}ś krwawą zemstę siłom wspierającym {s2}. W ciągu najbliższych dni musisz zniszczyć jak najwięcej armii wspierających {s2}. Masz świadomość, że twoi ludzie byli świadkami tej przysięgi i dlatego nie chcesz wyjść na krzywoprzysięzce. Orgię krwi czas zacząć!
-qst_quests_end|Quests End
-qst_quests_end_text|.
+qst_deliver_gift|Dostarcz {s4} {s1} z {s2} do {s3}
+qst_deliver_gift_text|Poprosiłeś o dostarczenie {s4} {s1} do {s3} z {s2}
