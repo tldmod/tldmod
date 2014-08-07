@@ -1363,7 +1363,7 @@ tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),
 	(assign,"$player_cheering",0),
 ])
 
-# custom TLD functions for special troops spawining
+# custom TLD functions for special troops spawning
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   [ (store_trigger_param_1, ":agent"),
 	(agent_get_troop_id,":agent_trp",":agent"),
@@ -1729,9 +1729,9 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
             (copy_position, pos2, pos0), #pos2 holds the nearest enemy position
         (try_end),
     
-# (assign, reg0, ":min_dist"),
-# (assign, reg1, ":troll"),
-# (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+      # (assign, reg0, ":min_dist"),
+      # (assign, reg1, ":troll"),
+      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
 
         (try_begin),
           (this_or_next|eq, ":min_dist", 1000000),
@@ -1742,13 +1742,14 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
         (try_end),
         #Trolls charging - end
         
-		#  for tuning: show current troll HP at random times
-		(try_begin), 
-			(store_random_in_range,":random",1,20),
-			(eq,":random",1), # show it once in 20
-			(store_agent_hit_points,reg1,":troll"),
-			#(display_message,"@DEBUG: troll health: {reg1}%!"),
-		(try_end),
+	#mtarini: for tuning: show current troll HP at random times
+	#swy-- we don't actually need this entire block at all... don't selectively comment out the print leaving the other stuff there!
+	#	(try_begin), 
+	#		(store_random_in_range,":random",1,20),
+	#		(eq,":random",1), # show it once in 20
+	#		(store_agent_hit_points,reg1,":troll"),
+	#		(display_message,"@DEBUG: troll health: {reg1}%!"),
+	#	(try_end),
 		
 		(agent_get_slot,":status",":troll",slot_agent_troll_swing_status),
 		(try_begin),
@@ -1759,13 +1760,15 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 			(get_player_agent_no, ":player_agent"),
 			(try_begin),
 				(eq, ":player_agent", ":troll"),
+			#	(display_message, "@Debug: Player controlled troll."),
 				# player controlled trolls swing when button pressed
 				(try_begin),
 					(key_is_down, key_left_mouse_button),
 					(assign,":status",1), 
+				#	(display_message, "@Debug: Troll attack key pressed."),
 				(try_end),
 			(else_try),
-				# AI attaks 10% of times, if at lest a  victim is in range
+				# AI attacks 10% of times, if at least a victim is in range
 				(store_random_in_range,":random",1,101),
 				(le,":random",10), 
 				(agent_get_position,1,":troll"),
@@ -1793,9 +1796,31 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 		(agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
 		# test for stun
 		(try_begin),
-			(val_add,":last_hp",3),
-			(ge,":last_hp",":cur_hp"),
+		
+			#swy-- i still don't get this logic, but anyway, from now on if there isn't
+			#----- a previous health we'll use the current one, and trolls will get stunned
+			#----- if they have received >= 3 points of damage in this delta/relative difference.
+			
+			(try_begin),
+				(lt, ":last_hp", 1),
+				(assign, ":last_hp", ":cur_hp"),
+			(try_end),
+			
+		#	(val_add,":last_hp",3), #swy-- why this? getting the damage difference between frames and checking against as limit seems easier... i've tested this and works fine, and stun-rate is more of the same.
+			
+			(store_sub,":hp_difference", ":last_hp", ":cur_hp"),
+			
+		#	(assign,reg1,":last_hp"),
+		#	(assign,reg2, ":cur_hp"),
+		#	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2}"),
+			
+			# 282 >= 282 ?!!
+			# 285 >= 282
+		#	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
+			
+			(ge, ":hp_difference", 3),
 			(assign,":status",-4), # STUNNED: skip 4 "turns"
+		#	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
 		(try_end),
 		
 		(agent_set_slot,":troll",slot_agent_troll_swing_status,":status"),
@@ -1804,6 +1829,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 		(try_begin),
 			# status = 1: make troll start the attack!
 			(eq,":status",1),
+		#	(display_message, "@Debug: STATUS 1."),
 			(store_random_in_range,":random_attack",1,4), #1 = left, 2 = right, 3 or more= overhead
 			(try_begin),
 				(eq,":random_attack",1),
