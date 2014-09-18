@@ -1812,19 +1812,20 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 			
 		#	(assign,reg1,":last_hp"),
 		#	(assign,reg2, ":cur_hp"),
-		#	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2}"),
+		#	(assign,reg3, ":hp_difference"),
+		#	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2} diff:{reg3}"),
 			
 			# 282 >= 282 ?!!
 			# 285 >= 282
 		#	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
 			
-			(ge, ":hp_difference", 3),
-			(assign,":status",-4), # STUNNED: skip 4 "turns"
+			(ge,    ":hp_difference", 55),
+			(assign,":status",       -4), # STUNNED: skip 4 "turns"
 		#	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
 		(try_end),
 		
-		(agent_set_slot,":troll",slot_agent_troll_swing_status,":status"),
-		(agent_set_slot, ":troll",slot_agent_last_hp,":cur_hp"),
+		(agent_set_slot, ":troll", slot_agent_troll_swing_status,":status"),
+		(agent_set_slot, ":troll", slot_agent_last_hp,           ":cur_hp"),
 		
 		(try_begin),
 			# status = 1: make troll start the attack!
