@@ -2205,6 +2205,11 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		#swy-- new Warband code path for spawning wargs
 		(set_spawn_position, pos10),
 		(spawn_agent,":warg_ghost_trp"),
+		
+		#swy-- assign the spawned agent's team,
+		#   -- even if *technically* is done in the block that gets called after this
+		(agent_get_team,       ":cur_warg_team", ":cur_warg"),
+		(agent_set_team, reg0, ":cur_warg_team"),
 		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
 	#	(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
