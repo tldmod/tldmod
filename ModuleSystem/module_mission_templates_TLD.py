@@ -1419,19 +1419,19 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
         (store_div,                      ":agent_hit_points", 3), # nerf riderlass wargs: reduce HP to 1/3
         (agent_set_hit_points, ":agent", ":agent_hit_points", 1),
         
-        (assign, reg12, ":agent_hit_points"),
-        (display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+        #(assign, reg12, ":agent_hit_points"),
+        #(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
         
       (else_try),
         # second spawn: GHOST RIDER set side
         
-        (agent_get_team, reg11, "$warg_to_be_replaced"),
+        #(agent_get_team, reg11, "$warg_to_be_replaced"),
         
         (agent_get_slot, ":agent_mount_side", "$warg_to_be_replaced", slot_agent_mount_side),
         (agent_set_team, ":agent", ":agent_mount_side"), # this was set just above
         
-        (assign, reg12, ":agent_mount_side"),
-        (display_message,"@DEBUG: new wargs team is now: {reg12}, was: {reg11}"),
+        #(assign, reg12, ":agent_mount_side"),
+        #(display_message,"@DEBUG: new wargs team is now: {reg12}, was: {reg11}"),
         
         (agent_set_slot,"$warg_to_be_replaced", slot_agent_mount_dead, 1),
         (call_script, "script_remove_agent", "$warg_to_be_replaced"),			
@@ -1451,32 +1451,17 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
     (call_script, "script_agent_reassign_team", ":agent"),
   (try_end),
   
-  (try_begin),
-    # if we spawned a rider, let's make his mount remember what side it is.
-    # GA: and remember that it's alive
-    (agent_get_horse, ":horse", ":agent"),
-    
-    (assign,            reg11, ":agent"),
-    (assign,            reg12, ":horse"),
-    (agent_get_item_id, reg13, ":agent"),
-    (agent_get_rider,   reg14, ":agent"),
-    
-    (display_message,"@SWYDEBUG: agent: {reg11} horse: {reg12} poss item id: {reg13} rider: {reg14}"),
-
-    
-    (neq, ":horse", -1),
-    #--
-    (agent_get_team, ":agent_team", ":agent"),
-    
-    #(try_begin), # when wargs in battle
-      #(is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
-      (assign, reg13, ":agent_team"),
-      (display_message,"@SWYDEBUG: brand new mount {reg12}, faction set to {reg13}"),
-    #(try_end),
-
-    (agent_set_slot, ":horse", slot_agent_mount_side, ":agent_team"),
-    (agent_set_slot, ":horse", slot_agent_mount_dead, 0),
-  (try_end),
+  #(try_begin),
+  #  # if we spawned a rider, let's make his mount remember what side it is.
+  #  # GA: and remember that it's alive
+  #  (agent_get_horse, ":horse", ":agent"),
+  #  (neq, ":horse", -1),
+  #  #--
+  #  (agent_get_team, ":agent_team", ":agent"),
+  #  #swy-- assign the spawned agent's team,
+  #  (agent_set_slot, ":horse", slot_agent_mount_side, ":agent_team"),
+  #  (agent_set_slot, ":horse", slot_agent_mount_dead, 0),
+  #(try_end),
   
   (try_begin),
     #swy-- the engine reverses the order of agent spawns, at least in Warband
@@ -1521,12 +1506,12 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
     #-----   SWYDEBUG: agent: 33 horse: -1 poss item id: -1 rider: -1
     #-----   SWYDEBUG: agent: 32 horse: -1 poss item id: 61 rider: 33
 
-    #check if this :agent is a horse/ has a rider
+    #swy-- check if this :agent is a horse/ has a rider
     (agent_get_rider, ":agent_rider", ":agent"),
     (gt,              ":agent_rider", -1),
     #--
     (agent_get_team, ":agent_rider_team", ":agent_rider"),
-    (agent_set_slot, ":agent", slot_agent_mount_side, ":agent_rider_team"),
+    (agent_set_slot, ":agent", slot_agent_mount_side, ":agent_rider_team"), #swy-- assign the spawned agent's rider team,
     (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
   (try_end),
   
@@ -2289,6 +2274,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(agent_get_position, pos10, ":cur_warg"),
 		
 		] + ((not is_a_wb_mt==1) and [
+    
 		#swy-- classic 1.011 code path for spawning wargs
 		(position_get_rotation_around_z, reg1, pos10),
 		(call_script, "script_get_entry_point_with_most_similar_facing", reg1),
@@ -2297,21 +2283,13 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(store_current_scene, ":cur_scene"),
 		(modify_visitors_at_site, ":cur_scene"),  
 		(add_visitors_to_current_scene,reg1,":warg_ghost_trp",1),
+    
 		] or [
+    
 		#swy-- new Warband code path for spawning wargs
 		(set_spawn_position, pos10),
 		(spawn_agent,":warg_ghost_trp"),
-		
-		#swy-- assign the spawned agent's team,
-		#   -- even if *technically* is done in the block that gets called after this
-		#(agent_get_team, reg11, reg0),
     
-		#(agent_get_team,       ":old_rider_team", ":old_rider"),
-		#(agent_set_team, reg0, ":old_rider_team"),
-    
-    #(assign, reg12, ":old_rider_team"),
-    #(display_message,"@SWYWB: wargoldteam: {reg11} wargteam: {reg12}"),
-
 		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
 	#	(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
