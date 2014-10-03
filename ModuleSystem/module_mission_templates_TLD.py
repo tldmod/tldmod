@@ -2304,13 +2304,13 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		#swy-- assign the spawned agent's team,
 		#   -- even if *technically* is done in the block that gets called after this
-		(agent_get_team, reg11, reg0),
+		#(agent_get_team, reg11, reg0),
     
-		(agent_get_team,       ":old_rider_team", ":old_rider"),
-		(agent_set_team, reg0, ":old_rider_team"),
+		#(agent_get_team,       ":old_rider_team", ":old_rider"),
+		#(agent_set_team, reg0, ":old_rider_team"),
     
-    (assign, reg12, ":old_rider_team"),
-    (display_message,"@SWYWB: wargoldteam: {reg11} wargteam: {reg12}"),
+    #(assign, reg12, ":old_rider_team"),
+    #(display_message,"@SWYWB: wargoldteam: {reg11} wargteam: {reg12}"),
 
 		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
