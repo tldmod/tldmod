@@ -1,4 +1,4 @@
-1115
+1121
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -535,6 +535,10 @@ qstr_Forming_ranks. Forming_ranks.
 qstr_You_fall_off_of_your You_fall_off_of_your_mount!
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{s1}_fell_unconsciou {s1}_fell_unconscious.
+qstr_DEBUG:_new_wargs_has DEBUG:_new_wargs_has_{reg12}_hitpoints_left
+qstr_DEBUG:_new_wargs_tea DEBUG:_new_wargs_team_is_now:_{reg12},_was:_{reg11}
+qstr_SWYDEBUG:_agent:_{re SWYDEBUG:_agent:_{reg11}_horse:_{reg12}_poss_item_id:_{reg13}
+qstr_SWYDEBUG:_brand_new_ SWYDEBUG:_brand_new_mount_{reg12},_faction_set_to_{reg13}
 qstr_Three_Nazguls_are_ci Three_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazguls_are_circ Two_Nazguls_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -546,6 +550,7 @@ qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
 qstr_knocked_unconscious knocked_unconscious
 qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
+qstr_SWYWB:_wargoldteam:_ SWYWB:_wargoldteam:_{reg11}_wargteam:_{reg12}
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
@@ -1114,3 +1119,4 @@ qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:sold
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
 qstr_Try_not_getting_your Try_not_getting_yourself_killed.
+qstr_SWYDEBUG:_agent:_{reg SWYDEBUG:_agent:_{reg11}_horse:_{reg12}_poss_item_id:_{reg13}_rider:_{reg14}

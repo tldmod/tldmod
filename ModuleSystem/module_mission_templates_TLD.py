@@ -1365,82 +1365,178 @@ tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),
 
 # custom TLD functions for special troops spawning
 custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
-  [ (store_trigger_param_1, ":agent"),
-	(agent_get_troop_id,":agent_trp",":agent"),
-	(agent_get_item_id, ":agent_mount_itm", ":agent"),
+[
+  (store_trigger_param_1, ":agent"),
+  
+  (agent_get_troop_id, ":agent_trp",       ":agent"),
+  (agent_get_item_id,  ":agent_mount_itm", ":agent"),
+  
+  (try_begin), # when trolls in battle
+    (troop_get_type, ":agent_trp_type", ":agent_trp"),
+    (eq,             ":agent_trp_type", tf_troll),
+    #--
+    (agent_set_speed_limit, ":agent", 4), # trolls go 4 km/h max <GA>
+    (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
+    
+    # a failed test: set custom troll walking/standing animations... why wouldn't this work?
+    #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
+    #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
+  (try_end),
+  
+  (try_begin), # when wargs in battle
+    (is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
+    #--
+    (val_add, "$wargs_in_battle", 1), # keep warg count up to date...
+    (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
+    
+    #(try_begin),
+    #  (is_mbse_active),
+    #  (display_message, "@MBSE working, warg spawning"),
+    #  (agent_set_sound, ":agent", sound_horse_walk, "snd_warg_lone_woof"),
+    #  (agent_set_sound, ":agent", sound_trot, "snd_evil_orders"),
+    #  (agent_set_sound, ":agent", sound_canter, "snd_warg_lone_woof"),
+    #  (agent_set_sound, ":agent", sound_gallop, "snd_warg_lone_woof"),
+    #  (agent_set_sound, ":agent", sound_snort, "snd_warg_lone_woof"),
+    #  (agent_set_sound, ":agent", sound_hit, "snd_nazgul_skreech_short"),
+    #  (agent_set_sound, ":agent", sound_die, "snd_evil_orders"),
+    #  (agent_set_sound, ":agent", sound_neigh, "snd_nazgul_skreech_short"),
+    #(try_end),
+  (try_end),
+  
+  (try_begin), # for ghost wargs: set it up to replace the unmounted warg
+    (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
+    (agent_set_slot, ":agent", slot_agent_time_counter, 0),
+    (try_begin),
+      (neq, "$warg_to_be_replaced", -1),                  # else, if is a spawn of a warg from start...
+      (agent_get_position, pos4, "$warg_to_be_replaced"), # set position to match warg to be replaced...
+      (agent_set_position, ":agent", pos4),
+      
+      (try_begin),
+        #if is one of the warg mounts
+        (neq, ":agent_mount_itm", -1), 
+        # first spawn:  MOUNT set hit points
+        (store_agent_hit_points,         ":agent_hit_points", "$warg_to_be_replaced", 1),
+        (store_div,                      ":agent_hit_points", 3), # nerf riderlass wargs: reduce HP to 1/3
+        (agent_set_hit_points, ":agent", ":agent_hit_points", 1),
+        
+        (assign, reg12, ":agent_hit_points"),
+        (display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
+        
+      (else_try),
+        # second spawn: GHOST RIDER set side
+        
+        (agent_get_team, reg11, "$warg_to_be_replaced"),
+        
+        (agent_get_slot, ":agent_mount_side", "$warg_to_be_replaced", slot_agent_mount_side),
+        (agent_set_team, ":agent", ":agent_mount_side"), # this was set just above
+        
+        (assign, reg12, ":agent_mount_side"),
+        (display_message,"@DEBUG: new wargs team is now: {reg12}, was: {reg11}"),
+        
+        (agent_set_slot,"$warg_to_be_replaced", slot_agent_mount_dead, 1),
+        (call_script, "script_remove_agent", "$warg_to_be_replaced"),			
+        (assign, "$warg_to_be_replaced", -1),
+      (try_end),
+      
+    ] + ((not is_a_wb_mt==1) and [
+    
+    (else_try), # UGLY FIX FOR CARRYOVER WARGS, KILL THOSE SPAWNED AT START. GA
+      (agent_set_slot,":agent", slot_agent_mount_dead, 1), #silently
+      (call_script, "script_remove_agent", ":agent"),
+      
+    ] or []) + [
+    
+    (try_end),
+  (else_try), # normal team assignment
+    (call_script, "script_agent_reassign_team", ":agent"),
+  (try_end),
+  
+  (try_begin),
+    # if we spawned a rider, let's make his mount remember what side it is.
+    # GA: and remember that it's alive
+    (agent_get_horse, ":horse", ":agent"),
+    
+    (assign,            reg11, ":agent"),
+    (assign,            reg12, ":horse"),
+    (agent_get_item_id, reg13, ":agent"),
+    (agent_get_rider,   reg14, ":agent"),
+    
+    (display_message,"@SWYDEBUG: agent: {reg11} horse: {reg12} poss item id: {reg13} rider: {reg14}"),
 
-    (try_begin), # when trolls in battle
-	  (troop_get_type, reg12, ":agent_trp"),
-	  (eq, reg12, tf_troll),
-	  (agent_set_speed_limit,":agent", 4),	# trolls go 4 km/h max <GA>
-	  (assign,"$trolls_in_battle",1),	# condition on future troll triggers
-	# a failed test: set custom troll walking/standing animations... why wouldn't this work?
-	  #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
-	  #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
-	(try_end),
-	
-	(try_begin), # when wargs in battle
-		(is_between, ":agent_mount_itm", item_warg_begin , item_warg_end),
-		(val_add,"$wargs_in_battle",1),# keep warg count up to date...
-		(agent_set_slot,":agent",slot_agent_mount_dead,0),
-		# (try_begin),
-			# (is_mbse_active),
-			# (display_message, "@MBSE working, warg spawning"),
-#			(agent_set_sound, ":agent", sound_horse_walk, "snd_warg_lone_woof"),
-#			(agent_set_sound, ":agent", sound_trot, "snd_evil_orders"),
-#			(agent_set_sound, ":agent", sound_canter, "snd_warg_lone_woof"),
-#			(agent_set_sound, ":agent", sound_gallop, "snd_warg_lone_woof"),
-#			(agent_set_sound, ":agent", sound_snort, "snd_warg_lone_woof"),
-#			(agent_set_sound, ":agent", sound_hit, "snd_nazgul_skreech_short"),
-			# (agent_set_sound, ":agent", sound_die, "snd_evil_orders"),
-			# (agent_set_sound, ":agent", sound_neigh, "snd_nazgul_skreech_short"),
-		# (try_end),
-	(try_end),
-	(try_begin), # for ghost wargs: set it up to replace the unmounted warg
-		(is_between, ":agent_trp", warg_ghost_begin , warg_ghost_end),
-		(agent_set_slot, ":agent", slot_agent_time_counter, 0),
-		(try_begin),
-			(neq, "$warg_to_be_replaced", -1), # else, if is a spawn of a warg from start...
-			(agent_get_position,pos4,"$warg_to_be_replaced"),# set position to match warg to be replaced...
-			(agent_set_position, ":agent", pos4),
-			(try_begin),
-				(neq,":agent_mount_itm",-1), 
-				# first spawn:  MOUNT set hit points
-				(store_agent_hit_points, reg12, "$warg_to_be_replaced",1),
-				(store_div, reg12, 3), # nerf riderlass wargs: reduce HP to 1/3
-				(agent_set_hit_points, ":agent", reg12, 1),
-				#(display_message,"@DEBUG: new wargs has {reg12} hitpoints left"),
-			(else_try),
-				# second spawn: GHOST RIDER set side
-				(agent_get_slot, reg12, "$warg_to_be_replaced", slot_agent_mount_side),
-				(agent_set_team, ":agent", reg12), # this was set just above
-				#(display_message,"@DEBUG: new wargs team is now: {reg12}"),
-				(agent_set_slot,"$warg_to_be_replaced", slot_agent_mount_dead, 1),
-				(call_script, "script_remove_agent", "$warg_to_be_replaced"),			
-				(assign, "$warg_to_be_replaced", -1),
-			(try_end),
-		] + ((not is_a_wb_mt==1) and [
-		(else_try), # UGLY FIX FOR CARRYOVER WARGS, KILL THOSE SPAWNED AT START. GA
-			(agent_set_slot,":agent", slot_agent_mount_dead, 1), #silently
-			(call_script, "script_remove_agent", ":agent"),
-		] or []) + [
-		(try_end), 
-	(else_try),
-		(call_script, "script_agent_reassign_team", ":agent"), # normal team assignment
-	(try_end),
-	
-	(agent_get_horse, ":horse", ":agent"),	# if we spawned a rider, let's make his mount remember what side it is. GA: and remember that it's alive
-	(try_begin),(neq,":horse",-1), 
-		(agent_get_team,  reg12, ":agent"),
-		(agent_set_slot, ":horse", slot_agent_mount_side, reg12),
-		(agent_set_slot, ":horse", slot_agent_mount_dead,0),
-	(try_end),
-	
-	(try_begin),(is_between, ":agent_trp",companions_begin,companions_end), # track companion injuries in battle
-		(troop_set_slot, ":agent_trp", slot_troop_wounded, 0),
-		(troop_set_slot, ":agent_trp", slot_companion_agent_id, ":agent"),
-	(try_end),
-	(set_show_messages,1),
+    
+    (neq, ":horse", -1),
+    #--
+    (agent_get_team, ":agent_team", ":agent"),
+    
+    #(try_begin), # when wargs in battle
+      #(is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
+      (assign, reg13, ":agent_team"),
+      (display_message,"@SWYDEBUG: brand new mount {reg12}, faction set to {reg13}"),
+    #(try_end),
+
+    (agent_set_slot, ":horse", slot_agent_mount_side, ":agent_team"),
+    (agent_set_slot, ":horse", slot_agent_mount_dead, 0),
+  (try_end),
+  
+  (try_begin),
+    #swy-- the engine reverses the order of agent spawns, at least in Warband
+    #----- it starts by the biggest ID number and iterates until the smallest one.
+    #-----
+    #----- because the horse is spawned right after its rider, agent_get_horse doesn't return anything yet at spawn time
+    #----- we've to do it the other way around... getting the rider from its mount (by using agent_get_rider) and setting its slots accordingly.
+    
+    #----- eg: from warband playtesting:
+    #-----  Entry points for scene 31 : 1 2 3 4 5 6 7 8 9 10 13 14 15 16 17 18 19 20 21 22 23 24 25 26 39 40 0 11 12 27 28 29 30 31 32 33 34 35 36 37 38 41 42 
+    #-----  Total entry points for scene 31 : 43 
+    #-----   SWYDEBUG: agent: 63 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 62 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 61 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 60 horse: -1 poss item id: 61 rider: 61
+    #-----   SWYDEBUG: agent: 59 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 58 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 57 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 56 horse: -1 poss item id: 62 rider: 57
+    #-----   SWYDEBUG: agent: 55 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 54 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 53 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 52 horse: -1 poss item id: 62 rider: 53
+    #-----   SWYDEBUG: agent: 51 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 50 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 49 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 48 horse: -1 poss item id: 60 rider: 49
+    #-----   SWYDEBUG: agent: 47 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 46 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 45 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 44 horse: -1 poss item id: 61 rider: 45
+    #-----   SWYDEBUG: agent: 43 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 42 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 41 horse: -1 poss item id: 61 rider: 42
+    #-----   SWYDEBUG: agent: 40 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 39 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 38 horse: -1 poss item id: 62 rider: 39
+    #-----   SWYDEBUG: agent: 37 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 36 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 35 horse: -1 poss item id: 60 rider: 36
+    #-----   SWYDEBUG: agent: 34 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 33 horse: -1 poss item id: -1 rider: -1
+    #-----   SWYDEBUG: agent: 32 horse: -1 poss item id: 61 rider: 33
+
+    #check if this :agent is a horse/ has a rider
+    (agent_get_rider, ":agent_rider", ":agent"),
+    (gt,              ":agent_rider", -1),
+    #--
+    (agent_get_team, ":agent_rider_team", ":agent_rider"),
+    (agent_set_slot, ":agent", slot_agent_mount_side, ":agent_rider_team"),
+    (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
+  (try_end),
+  
+  (try_begin),
+    (is_between, ":agent_trp", companions_begin, companions_end), # track companion injuries in battle
+    #--
+    (troop_set_slot, ":agent_trp", slot_troop_wounded, 0),
+    (troop_set_slot, ":agent_trp", slot_companion_agent_id, ":agent"),
+  (try_end),
+  (set_show_messages, 1),
 ])
 
 # mtarini nazgul sweeps. improved by cppcoder.
@@ -2185,7 +2281,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(assign, ":continue", 1),
 		(try_for_agents, ":old_rider"),
 			(eq, ":continue", 1),
-			(agent_slot_eq, ":old_rider", slot_agent_mount, ":cur_warg"),
+			(agent_slot_eq,  ":old_rider", slot_agent_mount, ":cur_warg"),
 			(agent_set_slot, ":old_rider", slot_agent_mount, -1),
 			(assign, ":continue", 0),
 		(try_end),
@@ -2208,8 +2304,14 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		#swy-- assign the spawned agent's team,
 		#   -- even if *technically* is done in the block that gets called after this
+		(agent_get_team, reg11, reg0),
+    
 		(agent_get_team,       ":old_rider_team", ":old_rider"),
 		(agent_set_team, reg0, ":old_rider_team"),
+    
+    (assign, reg12, ":old_rider_team"),
+    (display_message,"@SWYWB: wargoldteam: {reg11} wargteam: {reg12}"),
+
 		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
 	#	(display_message,"@DEBUG: trying respawn {s12} from entry {reg1}..."),
