@@ -233,7 +233,7 @@ strings = [
  when forward lookout brings a warning of a force of ash-faced evil men approaching.\
  It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages,\
  but now they must be driven back to the neverworld."),
-  ("custom_battle_3", "Lord Grimbold of Rohan is leading the last defence of the walls against an army if Isengard.\
+  ("custom_battle_3", "Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard.\
  Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel."),
   ("custom_battle_4", "When the scouts inform Lord Beranhelm of the approach of an Rhun war band,\
  he decides to quickly prepare the defences of his camp and try to hold against superior numbers."),
