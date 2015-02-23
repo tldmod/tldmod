@@ -4,7 +4,7 @@ varying vec3 outTexCoord;
 
 void main()
 { 
-  vec4 sample = texture2D(FontTextureSampler, outTexCoord.xy);
+	vec4 sample = texture2D(FontTextureSampler, outTexCoord.xy);
 
 	float bord = clamp( (1.0-sample.r)*2.0, 0.0, 1.0 );
 	float bordColor = outTexCoord.z;
