@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+	<techniques> 
+		<technique name="notexture">
+			<vertex_shader name="vs_main_notexture.glsl"/>
+			<fragment_shader name="ps_main_notexture.glsl"/>
+		</technique>
+		<technique name="clear_floating_point_buffer">
+			<vertex_shader name="vs_clear_floating_point_buffer.glsl"/>
+			<fragment_shader name="ps_clear_floating_point_buffer.glsl"/>
+		</technique>
+		<technique name="diffuse_no_shadow">
+			<vertex_shader name="vs_main_no_shadow.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>	
+		</technique>
+		<technique name="simple_shading">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+		<technique name="simple_shading_ALPHATEST">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+		<technique name="simple_shading_no_filter">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_simple_no_filtering.glsl"/>
+		</technique>
+		<technique name="no_shading">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_no_shading.glsl"/>
+		</technique>
+		<technique name="no_shading_no_alpha">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_no_shading_no_alpha.glsl"/>
+		</technique>
+		<technique name="font_uniform_color">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_font_uniform_color.glsl"/>
+		</technique>
+		<technique name="font_background">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_font_background.glsl"/>
+		</technique>
+		<technique name="font_outline">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_font_outline.glsl"/>
+		</technique>
+		<technique name="renderdepth">
+			<vertex_shader name="vs_main_shadowmap.glsl"/>
+			<fragment_shader name="ps_main_shadowmap.glsl"/>
+		</technique>
+		<technique name="renderdepth_biased">
+			<vertex_shader name="vs_main_shadowmap_biased.glsl"/>
+			<fragment_shader name="ps_main_shadowmap.glsl"/>
+		</technique>
+		<technique name="renderdepthwithskin">
+			<vertex_shader name="vs_main_shadowmap_skin.glsl"/>
+			<fragment_shader name="ps_main_shadowmap.glsl"/>
+		</technique>
+		<technique name="renderdepth_light">
+			<vertex_shader name="vs_main_notexture.glsl"/>
+			<fragment_shader name="ps_main_notexture.glsl"/>
+		</technique>
+		<technique name="renderdepthwithskin_light">
+			<vertex_shader name="vs_main_notexture.glsl"/>
+			<fragment_shader name="ps_main_notexture.glsl"/>
+		</technique>
+		<technique name="render_character_shadow">
+			<vertex_shader name="vs_main_shadowmap.glsl"/>
+			<fragment_shader name="ps_render_character_shadow.glsl"/>
+		</technique>
+		<technique name="render_character_shadow_with_skin">
+			<vertex_shader name="vs_main_shadowmap_skin.glsl"/>
+			<fragment_shader name="ps_render_character_shadow.glsl"/>
+		</technique>
+		<technique name="character_shadow">
+			<vertex_shader name="vs_character_shadow.glsl"/>
+			<fragment_shader name="ps_character_shadow.glsl"/>
+		</technique>
+		<technique name="character_shadow_new">
+			<vertex_shader name="vs_character_shadow.glsl"/>
+			<fragment_shader name="ps_character_shadow_new.glsl"/>
+		</technique>
+		<technique name="watermap">
+			<vertex_shader name="vs_main_water.glsl"/>
+			<fragment_shader name="ps_main_water_ftf.glsl"/>
+		</technique>
+		<technique name="watermap_high">
+			<vertex_shader name="vs_main_water.glsl"/>
+			<fragment_shader name="ps_main_water_ttf.glsl"/>
+		</technique>
+		<technique name="watermap_mud">
+			<vertex_shader name="vs_main_water.glsl"/>
+			<fragment_shader name="ps_main_water_ftt.glsl"/>
+		</technique>
+		<technique name="watermap_mud_high">
+			<vertex_shader name="vs_main_water.glsl"/>
+			<fragment_shader name="ps_main_water_ttt.glsl"/>
+		</technique>
+		<technique name="skybox">
+			<vertex_shader name="vs_skybox.glsl"/>
+			<fragment_shader name="ps_skybox.glsl"/>
+		</technique>
+		<technique name="skybox_new">
+			<vertex_shader name="vs_skybox.glsl"/>
+			<fragment_shader name="ps_skybox_new.glsl"/>
+		</technique>
+		<technique name="skybox_new_HDR">
+			<vertex_shader name="vs_skybox.glsl"/>
+			<fragment_shader name="ps_skybox_new_hdr.glsl"/>
+		</technique>
+		<technique name="diffuse">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_SHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_ALPHATEST">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_SHDW">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_ALPHATEST">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_Instanced">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_Instanced_SHDW">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_Instanced_ALPHATEST">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_dynamic_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_false.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="envmap_metal">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="envmap_metal_SHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="envmap_metal_ALPHATEST">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="envmap_metal_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="bumpmap">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap.glsl"/>
+		</technique>
+		<technique name="bumpmap_SHDW">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap.glsl"/>
+		</technique>
+		<technique name="dot3">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple.glsl"/>
+		</technique>
+		<technique name="dot3_SHDW">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple.glsl"/>
+		</technique>
+		<technique name="dot3_multitex">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
+		</technique>
+		<technique name="dot3_multitex_SHDW">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
+		</technique>
+		<technique name="envmap_specular_diffuse">
+			<vertex_shader name="vs_envmap_specular.glsl"/>
+			<fragment_shader name="ps_envmap_specular.glsl"/>
+		</technique>
+		<technique name="envmap_specular_diffuse_Instanced">
+			<vertex_shader name="vs_envmap_specular.glsl"/>
+			<fragment_shader name="ps_envmap_specular.glsl"/>
+		</technique>
+		<technique name="watermap_for_objects">
+			<vertex_shader name="vs_envmap_specular.glsl"/>
+			<fragment_shader name="ps_envmap_specular_singlespec.glsl"/>
+		</technique>
+		<technique name="watermap_for_objects_SHDW">
+			<vertex_shader name="vs_envmap_specular.glsl"/>
+			<fragment_shader name="ps_envmap_specular_singlespec.glsl"/>
+		</technique>
+		<technique name="bumpmap_interior">
+			<vertex_shader name="vs_main_bump_interior.glsl"/>
+			<fragment_shader name="ps_main_bump_interior.glsl"/>
+		</technique>
+		<technique name="bumpmap_interior_new">
+			<vertex_shader name="vs_main_bump_interior_new.glsl"/>
+			<fragment_shader name="ps_main_bump_interior_new_false.glsl"/>
+		</technique>
+		<technique name="bumpmap_interior_new_specmap">
+			<vertex_shader name="vs_main_bump_interior_new.glsl"/>
+			<fragment_shader name="ps_main_bump_interior_new_true.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospecmap">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospecmap_SHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospecmap_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospecmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_specmap">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_specmap_SHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_specmap_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_specmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospec">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospec_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospec_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospec_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_noterraincolor">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_noterraincolor_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_noterraincolor_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_noterraincolor_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospec">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospec_SHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospec_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_nobump_nospec_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_high">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_high_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_high_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospec_high_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_Instanced">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_specmap_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_Instanced">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_nobump_nospecmap_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_noterraincolor_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high_noterraincolor.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_Instanced">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_Instanced_SHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_Instanced_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospecmap_high_Instanced_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospecmap_high.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_aniso">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_aniso_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_aniso_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_nospecmap_high_aniso_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_nospecmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_aniso">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_aniso_SHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_aniso_ALPHATEST">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="standart_skin_bump_specmap_high_aniso_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_skin_bump.glsl"/>
+			<fragment_shader name="ps_standart_skin_bump_specmap_high_aniso.glsl"/>
+		</technique>
+		<technique name="hair_shader">
+			<vertex_shader name="vs_hair.glsl"/>
+			<fragment_shader name="ps_hair.glsl"/>
+		</technique>
+		<technique name="hair_shader_SHDW">
+			<vertex_shader name="vs_hair.glsl"/>
+			<fragment_shader name="ps_hair.glsl"/>
+		</technique>
+		<technique name="hair_shader_ALPHATEST">
+			<vertex_shader name="vs_hair.glsl"/>
+			<fragment_shader name="ps_hair.glsl"/>
+		</technique>
+		<technique name="hair_shader_ALPHATESTSHDW">
+			<vertex_shader name="vs_hair.glsl"/>
+			<fragment_shader name="ps_hair.glsl"/>
+		</technique>
+		<technique name="hair_shader_aniso">
+			<vertex_shader name="vs_hair_aniso.glsl"/>
+			<fragment_shader name="ps_hair_aniso.glsl"/>
+		</technique>
+		<technique name="hair_shader_aniso_SHDW">
+			<vertex_shader name="vs_hair_aniso.glsl"/>
+			<fragment_shader name="ps_hair_aniso.glsl"/>
+		</technique>
+		<technique name="hair_shader_aniso_ALPHATEST">
+			<vertex_shader name="vs_hair_aniso.glsl"/>
+			<fragment_shader name="ps_hair_aniso.glsl"/>
+		</technique>
+		<technique name="hair_shader_aniso_ALPHATESTSHDW">
+			<vertex_shader name="vs_hair_aniso.glsl"/>
+			<fragment_shader name="ps_hair_aniso.glsl"/>
+		</technique>
+		<technique name="face_shader">
+			<vertex_shader name="vs_face.glsl"/>
+			<fragment_shader name="ps_face.glsl"/>
+		</technique>
+		<technique name="face_shader_SHDW">
+			<vertex_shader name="vs_face.glsl"/>
+			<fragment_shader name="ps_face.glsl"/>
+		</technique>
+		<technique name="face_shader_high">
+			<vertex_shader name="vs_main_standart_face_mod_t.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_tf.glsl"/>
+		</technique>
+		<technique name="face_shader_high_SHDW">
+			<vertex_shader name="vs_main_standart_face_mod_t.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_tf.glsl"/>
+		</technique>
+		<technique name="faceshader_high_specular">
+			<vertex_shader name="vs_main_standart_face_mod_t.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_tt.glsl"/>
+		</technique>
+		<technique name="faceshader_high_specular_SHDW">
+			<vertex_shader name="vs_main_standart_face_mod_t.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_tt.glsl"/>
+		</technique>
+		<technique name="faceshader_simple">
+			<vertex_shader name="vs_main_standart_face_mod_f.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_ff.glsl"/>
+		</technique>
+		<technique name="faceshader_simple_SHDW">
+			<vertex_shader name="vs_main_standart_face_mod_f.glsl"/>
+			<fragment_shader name="ps_main_standart_face_mod_ff.glsl"/>
+		</technique>
+		<technique name="skin_diffuse">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="skin_diffuse_SHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="skin_diffuse_ALPHATEST">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="skin_diffuse_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="flora">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="flora_SHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="flora_ALPHATEST">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="flora_ALPHATESTSHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="flora_Instanced">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="grass_no_shadow">
+			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow.glsl"/>
+		</technique>
+		<technique name="grass_no_shadow_SHDW">
+			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow.glsl"/>
+		</technique>
+		<technique name="grass_no_shadow_ALPHATEST">
+			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow.glsl"/>
+		</technique>
+		<technique name="grass_no_shadow_ALPHATESTSHDW">
+			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow.glsl"/>
+		</technique>
+		<technique name="grass">
+			<vertex_shader name="vs_grass.glsl"/>
+			<fragment_shader name="ps_grass.glsl"/>
+		</technique>
+		<technique name="grass_SHDW">
+			<vertex_shader name="vs_grass.glsl"/>
+			<fragment_shader name="ps_grass.glsl"/>
+		</technique>
+		<technique name="grass_ALPHATEST">
+			<vertex_shader name="vs_grass.glsl"/>
+			<fragment_shader name="ps_grass.glsl"/>
+		</technique>
+		<technique name="grass_ALPHATESTSHDW">
+			<vertex_shader name="vs_grass.glsl"/>
+			<fragment_shader name="ps_grass.glsl"/>
+		</technique>
+		<technique name="diffuse_map">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+		<technique name="diffuse_map_SHDW">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+		<technique name="diffuse_map_bump">
+			<vertex_shader name="vs_main_map_bump.glsl"/>
+			<fragment_shader name="ps_main_map_bump.glsl"/>
+		</technique>
+		<technique name="diffuse_map_bump_SHDW">
+			<vertex_shader name="vs_main_map_bump.glsl"/>
+			<fragment_shader name="ps_main_map_bump.glsl"/>
+		</technique>
+		<technique name="map_mountain">
+			<vertex_shader name="vs_map_mountain.glsl"/>
+			<fragment_shader name="ps_map_mountain.glsl"/>
+		</technique>
+		<technique name="map_mountain_SHDW">
+			<vertex_shader name="vs_map_mountain.glsl"/>
+			<fragment_shader name="ps_map_mountain.glsl"/>
+		</technique>
+		<technique name="map_mountain_bump">
+			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<fragment_shader name="ps_map_mountain_bump.glsl"/>
+		</technique>
+		<technique name="map_mountain_bump_SHDW">
+			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<fragment_shader name="ps_map_mountain_bump.glsl"/>
+		</technique>
+		<technique name="map_water">
+			<vertex_shader name="vs_map_water_f.glsl"/>
+			<fragment_shader name="ps_map_water_f.glsl"/>
+		</technique>
+		<technique name="map_water_high">
+			<vertex_shader name="vs_map_water_t.glsl"/>
+			<fragment_shader name="ps_map_water_t.glsl"/>
+		</technique>
+		<technique name="soft_sunflare">
+			<vertex_shader name="vs_main_depthed_flare.glsl"/>
+			<fragment_shader name="ps_main_depthed_flare_tt.glsl"/>
+		</technique>
+		<technique name="soft_particle_add">
+			<vertex_shader name="vs_main_depthed_flare.glsl"/>
+			<fragment_shader name="ps_main_depthed_flare_ft.glsl"/>
+		</technique>
+		<technique name="soft_particle_modulate">
+			<vertex_shader name="vs_main_depthed_flare.glsl"/>
+			<fragment_shader name="ps_main_depthed_flare_ff.glsl"/>
+		</technique>
+		<technique name="simple_ocean">
+			<vertex_shader name="vs_main_ocean.glsl"/>
+			<fragment_shader name="ps_main_ocean.glsl"/>
+		</technique>
+		<technique name="tree_billboards_flora">
+			<vertex_shader name="vs_flora_billboards.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="tree_billboards_flora_SHDW">
+			<vertex_shader name="vs_flora_billboards.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="tree_billboards_flora_ALPHATEST">
+			<vertex_shader name="vs_flora_billboards.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="tree_billboards_flora_ALPHATESTSHDW">
+			<vertex_shader name="vs_flora_billboards.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="tree_billboards_dot3_alpha">
+			<vertex_shader name="vs_main_bump_billboards.glsl"/>
+			<fragment_shader name="ps_main_bump_simple.glsl"/>
+		</technique>
+		<technique name="tree_billboards_dot3_alpha_SHDW">
+			<vertex_shader name="vs_main_bump_billboards.glsl"/>
+			<fragment_shader name="ps_main_bump_simple.glsl"/>
+		</technique>
+		<technique name="tree_billboards_dot3_alpha_ALPHATEST">
+			<vertex_shader name="vs_main_bump_billboards.glsl"/>
+			<fragment_shader name="ps_main_bump_simple.glsl"/>
+		</technique>
+		<technique name="tree_billboards_dot3_alpha_ALPHATESTSHDW">
+			<vertex_shader name="vs_main_bump_billboards.glsl"/>
+			<fragment_shader name="ps_main_bump_simple.glsl"/>
+		</technique>
+		
+		<!-- - - - - - - - - - - - - - - - - 
+       swy- custom TLD GLSL techniques 
+      - - - - - - - - - - - - - - - - -->
+
+		<!-- font_outline_mtarini - implemented -->
+		<technique name="font_outline_mtarini">
+			<vertex_shader name="vs_font_mtarini.glsl"/>
+			<fragment_shader name="ps_font_outline_mtarini.glsl"/>
+		</technique>
+
+		<!-- mtarini_progressbar - implemented -->
+		<technique name="mtarini_progressbar">
+			<vertex_shader name="vs_mtarini_progressbar.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+		<technique name="mtarini_progressbar_ALPHATEST">
+			<vertex_shader name="vs_mtarini_progressbar.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+
+		<technique name="swy_tld_hp_overlay">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+		<technique name="swy_tld_hp_overlay_ALPHATEST">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+
+		<technique name="mtarini_snowy_map">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+		<technique name="mtarini_snowy_map_SHDW">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+		<technique name="mtarini_swampy_map">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+		<technique name="mtarini_swampy_map_SHDW">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+		<technique name="mtarini_specular_alpha_top">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="mtarini_specular_alpha_top_SHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="mtarini_specular_alpha_top_ALPHATEST">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+		<technique name="mtarini_specular_alpha_top_ALPHATESTSHDW">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+
+		<technique name="windy_flora">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_SHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_ALPHATEST">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_ALPHATESTSHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_Instanced">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+
+		<technique name="windy_flora_mild">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_mild_SHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_mild_ALPHATEST">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_mild_ALPHATESTSHDW">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+		<technique name="windy_flora_mild_Instanced">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+
+	</techniques>
+</data>
