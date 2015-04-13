@@ -24,7 +24,7 @@ qstr_Enemies|Wrogowie
 qstr_Ready|Gotowy
 qstr_Wounded|Ranny
 qstr_Dead|Martwy
-; qstr_Routed|Routed
+qstr_Routed|Pobici
 qstr_Number_of_men_knocke|Liczba ludzi pobitych: {reg1}
 qstr_Number_of_men_left:_|Pozostało ludzi: {reg1}
 qstr_Opponents_Beaten:_{r|Przeciwnicy pokonani: {reg1}
@@ -67,7 +67,7 @@ qstr___What_business_do_y| 'Co was sprowadza do Białego Miasta?'
 qstr___Your_Stewardship_w| 'Wasza Namiestniczość, przybyliśmy z daleka by... skoczyć!'
 qstr___Enough_of_this_mad| 'Dość tego szaleństwa! Straż!!'
 qstr___I_ve_had_enough_of| 'Wystarczy tych żartów... Kolejna zgraja będzie musiała uklęknąć!'
-; qstr_Chest|Chest
+qstr_Chest|Skrzynia
 ; qstr_Cape|Cape
 ; qstr_Arms|Arms
 ; qstr_Thighs|Thighs
@@ -146,7 +146,7 @@ qstr_+3_to_Spotting|+3 do Spostrzegania
 ; qstr_Less_Beorning_upkeep|Less Beorning upkeep
 ; qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 ; qstr_Less_Wargs_upkeep|Less Wargs upkeep
-; qstr_+{reg1}_to_Party_Mor|+{reg1} do morale oddziału
+; qstr_+{reg1}_to_Party_Mor|+{reg1} to Party Morale
 qstr_Do_you_want_to_disem|Chcesz wyładować?
 qstr_Move_here|Przemieść się tutaj
 qstr_View_notes|Przejrzyj notatki
@@ -172,7 +172,7 @@ qstr_^None|^Brak
 ; qstr_near_the_Old_Ford_wh|near the Old Ford, where the Old Forest Road crosses the River Anduin
 ; qstr_near_a_big_ford_cros|near a big ford crossing the River {s15}
 ; qstr_near_a_small_ford_cr|near a small ford crossing the River {s15}
-qstr_Battle_Advantage_=_{|"Przewaga w bitwie = {reg0}.
+; qstr_Battle_Advantage:_{r|Battle Advantage: {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} chce abyś dalej podążał{/a} za jego armią, aż do następnych wskazówek.
 qstr_Rohan_capital_moved_|Stolica Rohanu została przeniesiona z Edoras do Rogatego Grodu!
 qstr__Being_Raided_|(Najeżdżana)
@@ -747,7 +747,7 @@ qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23
 ; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|Siły {s2} rozłożyły się obozem w {s15}!
 qstr_{s1}_from_{s2}|{s1} z {s2}
-qstr_When_dealing_with_lo|Gdy prowadzisz handel z {s11}, pamiętaj, że cię nie znają i nie wiedzą o twych zasługach dla {s10}.                                                                                                                (Pkt. Prestiżu zdobyte wśród ludzi z {s11} nie mają tej samej wartości u {s10} -- patrz ekran Raportów)
+qstr_When_dealing_with_lo|Gdy prowadzisz handel z {s11}, pamiętaj, że cię nie znają i nie wiedzą o twych zasługach dla {s10}.^^(Pkt. Prestiżu zdobyte wśród ludzi z {s11} nie mają tej samej wartości u {s10} -- patrz ekran Raportów)
 qstr_Info|Info
 qstr_You_came_into_a_poss|{Wszedłeś/Weszłaś} w posiadanie dziwnego, trochę dużego naczynia z czystą wodą. Zalatuje odrobinę piżmem.
 qstr_Obtained:_Ent_water.|Uzyskano: Woda Entów.
@@ -782,9 +782,9 @@ qstr_{reg65?Madame:Sir}|{reg65?Pani:Panie}
 qstr_How_do_magnets_work?|How do magnets work?
 qstr_Um..._by_enchanting_|Um... by enchanting iron?
 qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
-qstr_i_wont_a_warband_por|i wont a warband port nao!!11!
+; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
 qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
-qstr_Install_TLD_in_your_|Install TLD in your Warband Modules folder, add the line 'compatible with warband = 1' to module.ini, and you can play it on Warband!
+; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
 qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.

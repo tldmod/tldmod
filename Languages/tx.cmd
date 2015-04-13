@@ -11,7 +11,7 @@ luajit tx.lua convert
 ::tx push -t -l sv --skip --no-interactive
 
 ::pull latest translations
-tx pull -a -f --skip --minimum-perc=100 --mode=reviewer
+tx pull -a -f --skip --minimum-perc=40 --mode=reviewer
 
 ::revert back to mab format
 luajit tx.lua revert

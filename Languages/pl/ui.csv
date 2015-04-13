@@ -1,0 +1,48 @@
+; ui_at_learning_limit|(at learning limit for this race)
+; ui_not_enough_skill_points_to_learn|(not enough skill points to learn)
+; ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+; ui_retreated_battle|%s has been routed.
+ui_riding_skill_not_adequate_to_mount|(Umiejętność jeździecka za niska)
+ui_camp|Akcja 
+; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
+; ui_you_dont_have_value|Don't have: %s
+; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+ui_merchant_pay_whatever|Nie potrzebuje żadnego z nich, więc zatrzymaj go.
+ui_horse|Dosiądź
+; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
+; ui_return_your_bought_goods|Return the goods you have taken before giving that!
+; ui_return_price|if returned: +%d Res.P.
+; ui_sell_price|if given: +%d Res.P.
+; ui_reclaim_price|to reclaim: -%d Res.P.
+; ui_buying_price|to claim: -%d Res.P.
+ui_notification_riding_skill_not_enough|Twoje umiejętności jeździeckie nie są dostatecznie wysokie, aby móc dosiąść go.
+; ui_notification_payment_value|Consuming %s
+; ui_notification_payment_receive_value|Gaining %s
+; ui_weekly_cost_value|Upkeep: %s
+ui_sell|Daj
+; ui_hire|Enlist
+; ui_notification_cant_hire|(not enough R.P. to enlist)
+; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_weekly_wage|Koszty utrzymania: %d Res.P
+; ui_price|Value: %d Res.P.
+ui_cant_reload_this_weapon_on_horseback|Nie można przeładować rej broni podczas jazdy wierzchowcem. 
+ui_delivered_number_damage_to_horse|Wierzchowiec otrzymał %d obrażeń.
+ui_horse_charged_for_number_damage|Wierzchowiec szarżując zadał %d obrażeń.
+ui_horse_received_number_damage|Wierzchowiec otrzymał %d obrażeń.
+ui_horse_fell_dead|Wierzchowiec pada martwy...
+ui_horse_crippled|Wierzchowiec okaleczony...
+ui_you_got_value|%s Zarobione
+ui_has_deserted_the_party|Opuścił oddział. 
+ui_have_deserted_the_party|opuścił oddział .
+ui_loading_textures|Ładowanie tekstur (bądź cierpliwy)...
+ui_order_hold_fire_toggle|Nie strzelać/Strzelać na rozkaz (Przełącznik) 
+ui_order_dismount_toggle|Rozkaz Z wierzchowca/Na wierzchowce (Przełącznik) 
+ui_mount_horses_e_|%s, Na wierzchowce! 
+ui_hold_fire_e_|%s, Nie strzelać!
+ui_fire_at_will_e_|%s, Strzelać na rozkaz!
+ui_recent_messages|Ostatnia wiadomość
+ui_value_denars|%d Punkty zasobów
+ui_cannot_be_used_on_horseback|Nie można używać podczas jazdy konnej
+ui_upgrade_to_value|Ulepsz do %s
+ui_notification_cant_upgrade|(Nie można ulepszać podczas dawania żołnierzy) 

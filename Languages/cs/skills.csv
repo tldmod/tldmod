@@ -1,0 +1,48 @@
+skl_trade|Obchod
+skl_trade_desc|Uroven teto dovednosti zajistuje to ze muzes pobrat vice vybavi za mene zdroju. (Dovednost skupiny)
+skl_leadership|Vudcovstvi
+skl_leadership_desc|Kazdy bod zvysuje maximalni pocet jednotek kterym muzes velet o 5, zvysuje moralku skupiny a snizuje zold jednotek o 5 %%. (Vudcova dovednost)
+skl_prisoner_management|Drzeni veznu
+skl_prisoner_management_desc|Kazda uroven teto dovednosti zvysuje maximalni pocet veznu o %d. (Vudcova dovednost)
+skl_persuasion|Vyrecnost
+skl_persuasion_desc|Tato dovednost ti pomuze ostatni lidi presvedcit o tvych zamerech. (Osobni dovednost)
+skl_engineer|Vyroba
+skl_engineer_desc|Kazdy bod teto dovednosti naraz snizuje cas potrebny pro vyrobu a vylepseni vybavy, ale take i umozni kvalitnejsi vylepseni. (Dovednost skupiny);
+skl_first_aid|Prvni pomoct
+skl_first_aid_desc|Hrdinovi se obnovi 5%% HP ztracenych v bitve co jeden dovednosti uroven. (Dovednost skupiny)
+skl_surgery|Chirurgie 
+skl_surgery_desc|Kazdy bod teto dovednosti da 4%% sanci ze smrtelne zraneny clen skupiny bude pravdepodobneji zranen nez zabit. (Dovednost skupiny)
+skl_wound_treatment|Ran hojicstvi
+skl_wound_treatment_desc|Leceni skupiny je o 20%% rychlejsi co uroven dovednosti. (Dovednost skupiny)
+skl_inventory_management|Organizace inventare
+skl_inventory_management_desc|Zvysuje kapacitu inventare o +6 co uroven dovednosti. (Vudcova dovednost)
+skl_spotting|Viditelnost
+skl_spotting_desc|Skupina vidi o 10%% dal kazdou uroven dovednosti. (Dovednost skupiny)
+skl_pathfinding|Cestovani
+skl_pathfinding_desc|Rychlost na mape je o 3%% vetsi kazdou novou uroven dovednosti. (Dovednost skupiny)
+skl_tactics|Taktika
+skl_tactics_desc|Kazde dve urovne teto dovednosti zvysuje bitevni vyhodu o 1. (Dovednost skupiny)
+skl_tracking|Stopovani
+skl_tracking_desc|Stopy poskytnou vice informaci. (Dovednost skupiny)
+skl_trainer|Cvicitel
+skl_trainer_desc|Kazdy den, kazdy hrdina s touto dovednosti prida nejake zkusenosti kazdemu jinemu clenovy skupiny jehoz uroven je nizsi nez jeho/jeji. Zkusenosti se ziskavaji po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobni dovednost)
+skl_looting|Rabovani
+skl_looting_desc|Tato dovednost zvysi ziskanou korist o 10%% kazdou uroven dovednosti. (Dovednost skupiny)
+skl_horse_archery|Strelba z kone 
+skl_horse_archery_desc|Snizuje sankce na poskozeni a presnosti pri strelbe nebo hazeni na koni. (Osobni dovednost)
+skl_riding|Jezdectvi
+skl_riding_desc|Dovoli ti jezdit na konich (nebo jinych zviratach) ktere maji vyssi obtiznost jizdy, a zvysi tvoji rychlost a obratnost. (Osobni dovednost)
+skl_athletics|Kondice
+skl_athletics_desc|Zvysuje tvoji rychlost behu. (Osobni dovednost)
+skl_shield|Stit
+skl_shield_desc|Snizuje poskozeni stitum (o 8%% co nova uroven) a zlepsuje rychlost stitu a jeho pokryti. (Osobni dovednost)
+skl_weapon_master|Mistr zbrani
+skl_weapon_master_desc|Umoznuje jednoduseji se naucit dovednosti se zbrani, a zvysuje dovednostni limit. Limity jsou rozdeleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobni dovednost)
+skl_power_draw|Sila natahnuti
+skl_power_draw_desc|Umozni postave pouzit mocnejsi luky. Kazdy bod dovednosti( az 4 plus natahovaci narocnost luku) zvysuje poskozeni luku o 14%%. (Osobni dovednost)
+skl_power_throw|Vrh
+skl_power_throw_desc|Kazdy bod zvysuje poskozeni zpusobene hodem o 10%%. (Osobni dovednost)
+skl_power_strike|Uder
+skl_power_strike_desc|Kazdy bod zvysuje poskozeni zbrani na blizko o 8%%. (Osobni dovednost)
+skl_ironflesh|Odolnost
+skl_ironflesh_desc|Kazdy bod zvysi HP o +2. (Osobni dovednost)

@@ -4,24 +4,24 @@ mno_start_evil|o ZMIERZCH Ludzi
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie.^Wolne ludy gotują się do wojny, wojny której nie widziano od wieków.^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
 ; mno_go_forth|          Go forth upon you chosen path...
-menu_start_game_3|^^^^^^^^    Wybierz scenariusz:
-mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
-; mno_custom_battle_scenario_12|            Choose factions for battle             .
-mno_custom_battle_scenario_3|            Potyczka, Elfy vs Czarni Numenorejczycy
-mno_custom_battle_scenario_4|            Obrona Helmowego Jaru, Rohan vs Isengard
-mno_custom_battle_scenario_5|            Potyczka, Ludy Północy vs Rhun
-mno_custom_battle_scenario_6|            Atak podczas oblężenia, Orkowie vs Krasnoludy
-mno_custom_battle_scenario_7|            Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
-; mno_custom_battle_scenario_11|            Test Battles (Tune Balancing!)        .
-; mno_custom_battle_scenario_10|            Scenery test battle                    .
-; mno_troll_battle_scenario|            Test Troll Battles                     .
-; mno_warg_battle_scenario|            Test Warg Battles                      .
-; mno_build_your_own_scene|            ** Build your own scene for TLD **     .
-; mno_go_back_spc|                              Wróć
+menu_start_game_3            |^^^^^^^^    Wybierz scenariusz:
+mno_custom_battle_scenario_1 |            Potyczka, Gondor vs Harad
+mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
+mno_custom_battle_scenario_3 |Potyczka, Elfy vs Czarni Numenorejczycy
+mno_custom_battle_scenario_4 |Obrona Helmowego Jaru, Rohan vs Isengard
+mno_custom_battle_scenario_5 |Potyczka, Ludy Północy vs Rhun
+mno_custom_battle_scenario_6 |Atak podczas oblężenia, Orkowie vs Krasnoludy
+mno_custom_battle_scenario_7 |Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
+; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
+; mno_custom_battle_scenario_10|Scenery test battle
+; mno_troll_battle_scenario    |Test Troll Battles
+; mno_warg_battle_scenario     |Test Warg Battles
+mno_build_your_own_scene     |** Zbuduj własną scenę dla TLD **
+mno_go_back                  |Wróć
 menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
 mno_go_back_dot|Wróć.
-; mno_view_upkeep_costs|View upkeep costs.
-; mno_view_character_report|View character report.
+mno_view_upkeep_costs|Zobacz koszt utrzymania
+mno_view_character_report|Zobacz raport postaci
 mno_view_party_size_report|Obejrzyj raport rozmiaru oddziału.
 mno_view_morale_report|Obejrzyj raport morale oddziału.
 mno_view_character_report_02|NPC status check.
@@ -31,26 +31,26 @@ mno_resume_travelling|Wróć.
 mno_custom_battle_go|Start.
 mno_leave_custom_battle_2|Anuluj.
 menu_custom_battle_end|^^^^^^Bitwa skończona. {s1} Twój oddział zabił {reg5} wrogów, tracąc przy tym {reg6} ludzi.^Z twej ręki poległo {reg7} wrogów.
-; mno_replay|Play this battle again.
-; mno_continue_dot|Continue.
+mno_replay|Rozegraj bitwę ponownie
+mno_continue_dot|Dalej.
 menu_quick_battle_general_test|^^^Obecna bitwa: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
-; mno_tAA|        +5 Team A
-; mno_tAB|        -5 Team A
-; mno_tAC|        Select Troop A
-; mno_tBA|        +5 Team B
-; mno_tBB|        -5 Team B
-; mno_tBC|        Select Troop B
-; mno_B|         Preset 1
-; mno_F|          START FIGHT!
-; mno_dot_go_back|.                 Wróć
-menu_quick_battle_troll|^^^^^^^^Choose your troll scenario:
-; mno_troll_battle_scenario_10|          Test: Troll VS Infantry
-; mno_troll_battle_scenario_11|          Test: Troll VS Archers
-; mno_troll_battle_scenario_12|          Test: Troll VS Cavalry
-; mno_troll_battle_scenario_13|          Test: Troll VS Lancers
-; mno_troll_battle_scenario_14|          Test: Troll VS Troll
-; mno_troll_battle_scenario_15|          Toy-Test: player controlled Troll
-menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:
+mno_tAA|+5 Drużyna A
+mno_tAB|-5 Drużyna A
+mno_tAC|Wybierz jednostkę A
+mno_tBA|+5 Drużyna B
+mno_tBB|-5 Drużyna B
+mno_tBC|Wybierz jednostkę B
+mno_B|Zestaw 1
+mno_F|WALCZ!
+mno_dot_go_back|Powrót
+menu_quick_battle_troll|^^^^^^^^Wybierz swój scenariusz
+mno_troll_battle_scenario_10|Troll vs Piechota
+mno_troll_battle_scenario_11|Troll vs Łucznicy
+mno_troll_battle_scenario_12|Troll vs Kawaleria
+mno_troll_battle_scenario_13|Troll vs Lansjerzy 
+mno_troll_battle_scenario_14|Troll vs Troll
+mno_troll_battle_scenario_15|Troll kontrolowany przez gracza
+menu_quick_battle_wargs|^^^^^^^^Wybierz swój scenariusz
 ; mno_warg_battle_scenario_10|          Against Wargs: 1 vs 1
 ; mno_warg_battle_scenario_11|          Against Wargs: 2 vs 3
 ; mno_warg_battle_scenario_12|          Against Wargs: many vs many
@@ -58,9 +58,9 @@ menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:
 ; mno_warg_battle_scenario_11b|          Play Wargs: 2 vs 3
 ; mno_warg_battle_scenario_12b|          Play Wargs: many vs many
 menu_start_good|^^^^^^^^^^Wybierz rasę:
-; mno_start_ma|MAN
-; mno_start_el|ELF
-; mno_start_dw|DWARF
+mno_start_ma|CZŁOWIEK
+mno_start_el|ELF
+mno_start_dw|KRASNOLUD 
 mno_go_back|Wróć
 menu_start_evil|^^^^^^^^^^Komu Służysz?
 ; mno_start_eye|SAURON of Mordor, the Lord of the Rings
@@ -92,7 +92,7 @@ menu_start_gondor|^^^^^^^^^^Skąd jesteś, w Gondorze?
 ; mno_start_la|LAMEDON, the Fiefdom of the Mountain Clansmen
 ; mno_start_pg|PINNATH GELIN, the Fiefdom of Green Hills
 ; mno_start_do|DOL AMROTH, the Fiefdom of Swan Knights
-; mno_start_pe|PELAGIR, the Coastal Fiefdom
+; mno_start_pe|PELARGIR, the Coastal Fiefdom
 ; mno_start_bl|BLACKROOT VALE, the Fiefdom of Archers
 menu_start_eye_man|^^^^^^^^^^Wybierz swój lud:
 ; mno_start_hr|HARADRIM, the desert people from the South
@@ -118,12 +118,6 @@ mno_start_male|Mężczyzna
 mno_start_female|Kobieta
 ; mno_proc|Proceed as normal
 mno_continue|Dalej...
-; mno_faction_orders_next_faction|Select next faction.
-; mno_faction_orders_defend|Force defend.
-; mno_faction_orders_gather|Force gather army.
-; mno_faction_orders_increase_time|Increase last offensive time by 24 hours.
-; mno_faction_orders_rethink|Force rethink.
-; mno_faction_orders_rethink_all|Force rethink for all factions.
 menu_character_report|^^^^^Morale oddziału: {reg8}^Limit wielkości oddziału: {reg7}^
 menu_camp|^^^^Rozbijasz obóz.{s2}^^Co chcesz zrobić?
 mno_camp_scene|Przespacerować się.
@@ -157,37 +151,18 @@ mno_game_options_back|Wróć do menu obozu.
 ; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 ; mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
 ; mno_strat_tweaks_back|Back to tweaks menu.
-menu_camp_chest_fill|^^^^^^^^Wybierz frakcję, której chcesz ekwipunek.
-; mno_f_gondor|Gondor items
-; mno_f_rohan|Rohan items
-; mno_f_isengard|Isengard items
-; mno_f_mordor|Mordor items
-; mno_f_dwarf|Dwarf items
-; mno_f_lorien|Lothlorien items
-; mno_f_woodelf|Mirkwood items
-; mno_f_imladris|Imladris items
-; mno_f_harad|Harad items
-; mno_f_khand|Khand items
-; mno_f_rhun|Rhun items
-; mno_f_dale|Dale items
-; mno_f_umbar|Umbar items
-; mno_f_moria|Moria items
-; mno_f_gundabad|Gundabad items
-; mno_f_dunland|Dunland items
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 ; mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Wypić Wodę Entów!
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
-menu_assasins_attack_player_defeated|You should not be reading this...
 menu_fangorn_danger|^^^^^^Dziwne, otaczają cie jakby szepty.^Czyżby to rozmawiały drzewa? W powietrzu można wyczuć głeboki gniew i ból.^Twoje rozkazy?
 mno_be_quiet_elf|Poszanuj panujący wokół spokój. Poruszaj się jak najciszej.
 mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
 mno_be_bold|Go on! I'm not afraid of plants or old myths!
 mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-menu_fangorn_battle_debrief|you shouldn't be reading this
 menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 ; mno_ow_get_out|Ouch! Let's get out of this cursed place!
@@ -198,31 +173,6 @@ menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare
 mno_killit|Dispatch it, now. Make sure it dies.
 mno_cageit1|Cage it and drag it around.
 mno_cageit2|Cage it togheter with the other troll.
-menu_cheat_free_magic_item|Which free magic item do you want?
-mno_cheat_free_magic_item_back|Back
-menu_cheat_impose_quest|Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)
-mno_just_back|Back
-mno_none|None
-menu_teleport_to_town_part_two|^^^^^^^^Ride Shadowfax:^to which city inside {s11}?
-; mno_another_kingdom|No, Another Kingdom
-menu_teleport_to_town|^^^^^^^^Ride Shadowfax:^to which kingdom?
-mno_teleport_neutrals|Others/neutrals
-mno_teleport_others_factions|More... ({reg5}/3)
-mno_teleport_back|No, Another Kingdom
-menu_select_any_troop|Select troops:^^^Current search parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
-; mno_trp|{s11} (lvl:{reg11})
-mno_prev_page|[Poprzednia]
-mno_next_page|[Następna]
-mno_opt|[Search Option]
-; mno_done|[Done]
-; mno_cancel|[Cancel]
-menu_select_any_troop_setup_search|Add troops: setup search parameters^^^Current parameters:^Faction: {s10}^Race: {s13}^Tier: {s11}^{s12}
-mno_one|[Change Tier]
-mno_facup|[Prev Faction]
-mno_facdown|[Next Faction]
-mno_raceup|[Prev Race]
-mno_racedown|[Next Race]
-mno_three|[Regulars or Heroes]
 mno_cheat_disabable|Disable cheat/modding options.
 menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
 menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
@@ -257,8 +207,6 @@ menu_kingdom_army_quest_join_siege_order|{s8} chce, byś pom{ógł/ogła} oblega
 menu_kingdom_army_follow_failed|Nie wysłuchał{e/a}ś rozkazów, które wydał ci {s8} i nie podążył{e/a}ś za nim. W gniewie wyrzuca Cię ze swej armii i wysyła groźnie brzmiące ostrzeżenie, iż twe czyny nie zostaną zapomniane.
 menu_battle_debrief|{s11} Podczas tej krwawej bitwy ucierpieli:^^Twoje straty:{s8}{s10}^^Straty wroga:{s9}
 mno_inspect_troll|Inspect downed troll
-menu_total_victory|You shouldn't be reading this... {s9}
-menu_total_defeat|You shouldn't be reading this...
 menu_pre_join|^^^^^Natrafiasz na zaciekłą bitwę, w której walczą {s2} i {s1}. Decydujesz się...
 mno_pre_join_help_attackers|Wspomóc atakujących. {s2} potrzebują pomocy.
 mno_pre_join_help_defenders|Pomóc atakowanym ({s1}) i wesprzeć ich w obronie.
@@ -302,7 +250,6 @@ menu_construct_ladders|Jako członek oddziału z najwyższą umiejętnością in
 mno_build_ladders_cont|Dalej.
 menu_castle_attack_walls_simulate|{s4}^^Twoje straty:{s8}^^Straty wroga: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Twoje straty: {s8}^^Straty sojuszników: {s9}^^Straty wroga: {s10}
-menu_castle_taken_by_friends|Nie ma tu nic ciekawego.
 menu_castle_taken|{s3} pada pod naporem twoich żołnierzy i masz teraz{reg2?: nad nim} pełną kontrolę{reg2? nad miastem:}.{reg1? Wydaje się, że już nic nie może cię powstrzymać, by zatrzymać {reg2?je:go} dla siebie...:}
 menu_castle_taken_2|{s3} pada pod naporem twoich żołnierzy i masz teraz nad nim pełną kontrolę. Czas, by {s9} usłyszał o twoim zwycięstwie. {s5}
 mno_castle_taken_no_claim|O nic nie proś.
@@ -314,7 +261,6 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Uciekinier powala cię na ziemię 
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes. Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.
 menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-menu_close|Zamknij.
 menu_town|Przybywasz do {s60}.{s12}{s13}
 mno_town_menu_0|Go to some location.
 mno_town_menu_0_door|Door to some location.
@@ -348,7 +294,7 @@ mno_sneak_caught_fight|Spróbuj wywalczyć sobie drogę odwrotu!
 mno_sneak_caught_surrender|Poddaj się.
 menu_sneak_into_town_caught_dispersed_guards|Pokonujesz straże i zacierasz ślady przed rozpoczęciem ucieczki. Łatwo udaje ci się zgubić resztę pogoni w labiryncie uliczek.
 menu_sneak_into_town_caught_ran_away|Zostawiasz miasto za sobą i uciekasz na wzgórza.
-menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \ You shiver, as all the world goes black around you...^Is this your end?
+menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
 menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
 menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.
 mno_whatever|Get up!
