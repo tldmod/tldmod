@@ -339,5 +339,7 @@ mesh_draw_victory_rhun = 337
 mesh_draw_victory_evilman = 338
 mesh_draw_victory_mirkwood = 339
 mesh_draw_victory_rivendell = 340
+mesh_draw_victory_beornings = 341
+mesh_draw_victory_corsairs = 342
 
 

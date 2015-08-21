@@ -4477,6 +4477,12 @@ game_menus = [
 			(eq, ":winning_side_faction", "fac_rhun" ),
 			(set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
 		(else_try),
+			(eq, ":winning_side_faction", "fac_beorn" ),
+			(set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
+		(else_try),
+			(eq, ":winning_side_faction", "fac_umbar" ),
+			(set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
+		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
 			(eq, ":losing_side_race_group", tf_orc ),
 			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS orcs 

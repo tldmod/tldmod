@@ -449,9 +449,9 @@ meshes+=[
   ("draw_victory_dunland",   0, "draw_victory_dunland", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_khand",     0, "draw_victory_khand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_mountain_goblins",  0, "draw_mountain_goblins",   0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_corsair_renegades", 0, "draw_corsair_renegades",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_dunland_outcasts",  0, "draw_dunland_outcasts",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_mountain_goblins",  0, "draw_mountain_goblins",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_corsair_renegades", 0, "draw_corsair_renegades", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_dunland_outcasts",  0, "draw_dunland_outcasts",  0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_entdrink_dwarf",    0, "draw_entdrink_dwarf",   0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_entdrink_orc",      0, "draw_entdrink_orc",     0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -459,7 +459,10 @@ meshes+=[
   ("draw_victory_harad",     0, "draw_victory_harad",    0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_rhun",      0, "draw_victory_rhun",     0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_evilman",   0, "draw_victory_evilman",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  
+
   ("draw_victory_mirkwood",  0, "draw_victory_mirkwood", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_rivendell", 0, "draw_victory_rivendell",0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("draw_victory_beornings", 0, "draw_victory_beornings",0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_corsairs",  0, "draw_victory_corsairs", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
