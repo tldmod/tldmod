@@ -1,0 +1,48 @@
+skl_trade|取引
+skl_trade_desc|このスキル次第で、 少ないリソースポイントで より多くの物資を 手に入れることが できるようになります。　(パーティスキル)
+skl_leadership|統率力
+skl_leadership_desc|従軍できる兵士の最大数が 1レベル毎に5人増加します。 更にパーティーの士気を上げ、 兵士への報酬が5%%減少します。 (リーダースキル)
+skl_prisoner_management|囚人管理
+skl_prisoner_management_desc|1レベル毎に、 確保できる囚人の最大人数が %d人増加します。 (リーダースキル)
+skl_persuasion|説得
+skl_persuasion_desc|交渉相手をどれだけあなたの考えに 同意させられるかに影響します。 (個人スキル)
+skl_engineer|技術者
+skl_engineer_desc|ポイント毎に 工作や装備の アップグレードにかかる時間が 短縮され、 アップグレードのクオリティも 向上します。 (パーティスキル)
+skl_first_aid|応急手当て
+skl_first_aid_desc|戦闘で失ったヒットポイントを 1レベル毎に5%%回復します。 (パーティースキル)
+skl_surgery|手術
+skl_surgery_desc|1レベル毎に4%%の確率で、 戦闘で致死ダメージを受けたメンバーが “死亡”ではなく“負傷”状態で パーティーに残ります。 (パーティースキル)
+skl_wound_treatment|治療
+skl_wound_treatment_desc|パーティーの回復速度が 1レベル毎に20%%速くなります。 (パーティースキル)
+skl_inventory_management|荷物管理
+skl_inventory_management_desc|確保できるアイテムの最大数が 1レベル毎に6個増加します。 (リーダースキル)
+skl_spotting|観測術
+skl_spotting_desc|1レベル毎に、 マップ画面上での視界が 10%%広くなります。 (パーティースキル)
+skl_pathfinding|経路探索
+skl_pathfinding_desc|マップ画面上でのパーティーの速度が 1レベル毎に3%%速くなります。 (パーティースキル)
+skl_tactics|戦略
+skl_tactics_desc|2レベル毎に、 戦闘開始時の優位性が1増えます。 (パーティースキル)
+skl_tracking|追跡術
+skl_tracking_desc|レベルが高い程マップ画面上での 情報量が増えます。 (パーティースキル)
+skl_trainer|訓練
+skl_trainer_desc|このスキルを持っているメンバーが パーティーにいると、より低いレベルの 他のメンバーの経験値が 毎日いくらかの割合で増えます。 得られる経験値は次の通り: レベル0から {0,4,10,16,23,30,38,46,55,65,80} (個人スキル)
+skl_looting|略奪
+skl_looting_desc|1レベル毎に10%%多くの戦利品が 得られるようになります。 (パーティースキル)
+skl_horse_archery|馬上弓術
+skl_horse_archery_desc|馬上からの弓や投擲の ダメージと命中精度へのペナルティが 減少します。 (個人スキル)
+skl_riding|乗馬
+skl_riding_desc|より高いレベルの馬に乗ることが 出来るようになります。 また、乗降がより早くなり、 操作性も向上します。 (個人スキル)
+skl_athletics|アスレチック
+skl_athletics_desc|メイン画面上での移動が 速くなります。 (個人スキル)
+skl_shield|盾防御
+skl_shield_desc|1レベル毎に、 盾の受けるダメージが8%%軽減されます。 また、盾の扱いが素早くなり、 より広範囲をカバーできるように なります。 (個人スキル)
+skl_weapon_master|武器熟練
+skl_weapon_master_desc|武器の熟練度の上限を上げます。 上限は次のように上昇します: 60,100,140,180,220, 260,300,340,380,420。 (個人スキル)
+skl_power_draw|弓術
+skl_power_draw_desc|より強力な弓が使えるように なります。また1レベル毎に 14%%多くの弓ダメージを 与えられるようになります。 (最高で弓の必要弓術の+4まで) (個人スキル)
+skl_power_throw|豪投
+skl_power_throw_desc|1レベル毎に、 投擲武器によるダメージを10%%多く 与えられるようになります。 (個人スキル)
+skl_power_strike|強打
+skl_power_strike_desc|1レベル毎に、近接武器によるダメージを 8%%多く与えられるようになります。 (個人スキル)
+skl_ironflesh|鋼の肉体
+skl_ironflesh_desc|1レベル毎に、ヒットポイントが 2ポイント増加します。 (個人スキル)

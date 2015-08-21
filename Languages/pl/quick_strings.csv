@@ -68,11 +68,11 @@ qstr___Your_Stewardship_w| 'Wasza Namiestniczość, przybyliśmy z daleka by... 
 qstr___Enough_of_this_mad| 'Dość tego szaleństwa! Straż!!'
 qstr___I_ve_had_enough_of| 'Wystarczy tych żartów... Kolejna zgraja będzie musiała uklęknąć!'
 qstr_Chest|Skrzynia
-; qstr_Cape|Cape
-; qstr_Arms|Arms
-; qstr_Thighs|Thighs
-; qstr_Legs|Legs
-; qstr_Rotate|Rotate
+qstr_Cape|Peleryna
+qstr_Arms|Ramiona
+qstr_Thighs|Uda
+qstr_Legs|Nogi
+qstr_Rotate|Obrót
 qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
 qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
 qstr_{s24}:|{s24}:
@@ -141,7 +141,7 @@ qstr_+1_to_Surgery|+1 do Chirurgii
 qstr_+1_to_Persuasion|+1 do Perswazji
 qstr_+1_to_Ironflesh|+1 do Wytrzymałości
 qstr_+1_to_Prisoner_Mgmt|+1 do Zarządzania Więźniami
-; qstr_+2_to_Crafting|+2 to Crafting
+qstr_+2_to_Crafting|+2 do Konstruowania
 qstr_+3_to_Spotting|+3 do Spostrzegania
 ; qstr_Less_Beorning_upkeep|Less Beorning upkeep
 ; qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
@@ -150,10 +150,10 @@ qstr_+3_to_Spotting|+3 do Spostrzegania
 qstr_Do_you_want_to_disem|Chcesz wyładować?
 qstr_Move_here|Przemieść się tutaj
 qstr_View_notes|Przejrzyj notatki
-; qstr_nothing|nothing
-; qstr_Good|Good
-; qstr_Med|Med
-; qstr_Bad|Bad
+qstr_nothing|nic
+qstr_Good|Dobre
+qstr_Med|Średnie
+qstr_Bad|Słabe
 qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
 ; qstr_{reg4}_killed_{reg5}_|{reg4} killed, {reg5} wounded
 ; qstr_{reg4}_killed_{reg5}_r|{reg4} killed, {reg5} routed

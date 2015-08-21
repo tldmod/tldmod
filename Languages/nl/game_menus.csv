@@ -1,0 +1,366 @@
+menu_start_game_1|Waar wil je voor vechten?
+mno_start_good|De OPKOMST van een nieuw Tijdperk
+mno_start_evil|De SCHEMERING van Mensheid
+mno_go_bback|Ga Terug
+menu_start_phase_2|Midden Aarde. Een schaduw is groeiende in het Oosten, en donkere zaken komen naar voren die lang zijn verborgen. De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. Mensen, Elven, Dwergen en Orks; allen spelen hun rol. Welke rol, blijft echter nog te bezien...
+mno_go_forth|Ga voort naar je verkozen bestemming
+menu_start_game_3            |Kies je scenario:
+mno_custom_battle_scenario_1 |Skirmish, Gondor facties vs Harad
+mno_custom_battle_scenario_12|Kies facties voor gevecht
+mno_custom_battle_scenario_3 |Skirmish, Elven vs Zwarte Numenoreanen
+mno_custom_battle_scenario_4 |Helms Diep Verdediging, Rohan vs Isengard
+mno_custom_battle_scenario_5 |Skirmish, Noordelijke partijen vs Rhûn
+mno_custom_battle_scenario_6 |Beleg Aanval, Orks vs Dwergen
+mno_custom_battle_scenario_7 |Valstrik, Orks vs Demsterwold
+mno_custom_battle_scenario_11|Test Gevechten (toon balans!)
+mno_custom_battle_scenario_10|Landschap test gevecht
+mno_troll_battle_scenario    |Test Trollen Gevecht
+mno_warg_battle_scenario     |Test Warg Gevecht
+mno_build_your_own_scene     |** Maak je eigen scenario voor TLD **
+mno_go_back                  |Ga terug
+menu_tutorial|^^TLD heeft veel opties die er niet zijn in de originele M&B. Die opties staan in een PDF die bij deze release zit. Voor een handleiding van de basis game mechanics gebruik de Native module
+mno_go_back_dot|Ga terug.
+mno_view_upkeep_costs|Bekijk onderhoud kosten.
+mno_view_character_report|Bekijk karakter verslag.
+mno_view_party_size_report|Bekijk partij grootte verslag.
+mno_view_morale_report|Bekijk partij moraal verslag.
+mno_view_character_report_02|NPC statuscontrole
+mno_view_faction_strengths_report|Bekijk factie sterkte verslag.
+mno_view_traits_report|Bekijk eigenschappen.
+mno_resume_travelling|Hervat Reizen.
+mno_custom_battle_go|Start
+mno_leave_custom_battle_2|Annuleer.
+menu_custom_battle_end|Het gevecht is over. {s1} Jouw kant doodde {reg5} vijanden en verloor {reg6} troepen tijdens het gevecht. ^Jij doodde {reg7} vijanden in het gevecht.
+mno_replay|Speel dit gevecht opnieuw.
+mno_continue_dot|Vervolgen
+menu_quick_battle_general_test|^^^Huidige Strijd: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
+mno_tAA|+5 Team A
+mno_tAB|-5 Team A
+mno_tAC|Selecteer Kant A
+mno_tBA|+5 Team B
+mno_tBB|-5 Team B
+mno_tBC|Selecteer Kant B
+mno_B|Instelling 1
+mno_F|START DE STRIJD!
+mno_dot_go_back|Ga terug
+menu_quick_battle_troll|^^^^^^^^Kies je trol scenario:
+mno_troll_battle_scenario_10|Test: Trol VS Infanterie
+mno_troll_battle_scenario_11|Test: Trol VS Boogschutters
+mno_troll_battle_scenario_12|Test: Trol VS Cavalerie
+mno_troll_battle_scenario_13|Test: Trol VS Lancers
+mno_troll_battle_scenario_14|Test: Trol VS Trol
+mno_troll_battle_scenario_15|Toy-Test: Speler Bestuurd Trol
+menu_quick_battle_wargs|^^^^^^^^ Kies je TEST Warg scenario:
+mno_warg_battle_scenario_10|Tegen Wargs: 1 vs 1
+mno_warg_battle_scenario_11|Tegen Wargs: 2 vs 3
+mno_warg_battle_scenario_12|Tegen Wargs: veel vs veel
+mno_warg_battle_scenario_10b|Speel Wargs: 1 vs 1
+mno_warg_battle_scenario_11b|Speel Wargs: 2 vs 3
+mno_warg_battle_scenario_12b|Speel Wargs: veel vs veel
+menu_start_good|^^^^^^^^^^Kies je ras:
+mno_start_ma|MENS
+mno_start_el|ELF
+mno_start_dw|DWERG
+mno_go_back|Ga terug
+menu_start_evil|^^^^^^^^^^Wie dien jij?
+mno_start_eye|SAURON van Mordor, de Heer van de Ringen.
+mno_start_hand|SARUMAN van Isengard, de Witte Hand.
+menu_start_eye|^^^^^^^^^Je meester is the Lidless Eye^Kies je Ras
+mno_start_or|een ORC, Ten dienste van the Lidless Eye
+mno_start_ur|een URUK, Het nieuwe Orkse ras
+mno_start_em|een Mens, Onderworpen door Sauron.
+menu_start_hand|^^^^^^^^^Je meester is de Witte Hand^Kies je Ras.
+mno_start_whor|Een ORC, Ten dienste van de Witte Hand
+mno_start_isur|Een URUK-HAI, gefokt in Isengard
+mno_start_duma|een MENS uit Dunland, de Westerlijke Vlaktes
+menu_start_good_man|^^^^^^^^^^Kies uw volk:
+mno_start_go|GONDOR, het Koninkrijk van de Witte Toren
+mno_start_ro|Rohan, Het Paardenvolk
+mno_start_du|DUNEDAIN, De oude dynastie van de Mens.
+mno_start_be|BEORNINGS, Het Berenvolk
+mno_start_da|Het noordelijke Koninkrijk van DALE
+menu_start_good_elf|^^^^^^^^^^Welk bos leef je in, Ouderling?
+mno_start_ri|RIVENDELL, van Heer Elrond
+mno_start_lo|LOTHLORIEN, van Dame Galadriel
+mno_start_mi|MIRKWOOD, Land van de Silvan Elves
+menu_start_good_dwarf|^^^^^^^^^^Kies je Afkomst:
+mno_start_er|Een bewoner van EREBOR
+mno_start_ih|een mijnwerker van de IRON HILLS
+menu_start_gondor|^^^^^^^^^^Waar kom je vandaan, in Gondor?
+mno_start_mt|MINAS TIRITH, de Hoofstad
+mno_start_ls|LOSSARNACH, Het leengoed van de Axeman
+mno_start_la|LAMEDON, Het leengoed van de Mountain Clansmen
+mno_start_pg|PINNATH GELIN, Het leengoed van de Green Hills
+mno_start_do|DOL AMROTH, Het leengoed van de Swan Knights
+mno_start_pe|PELARGIR, Het ten kust gelegen leengoed
+mno_start_bl|BLACKROOT VALE, Het leengoed van de Boogschutters
+menu_start_eye_man|^^^^^^^^^^Kies uw volk:
+mno_start_hr|HARADRIM, The woestijn mensen van het Zuiden.
+mno_start_bn|Black NUMENOREANS, De overlopers vanuit het Westen
+mno_start_um|UMAR, Piraten van de Zuiden Zeeën 
+mno_start_rh|RHUN, Barbaren van het Oosten
+mno_start_kh|KHAND, Woeste mensen van het Zuidoosten 
+menu_start_eye_orc|^^^^^^^^^^Waar loer jij?
+mno_start_arm|In de grote legers bij MORDOR
+mno_start_cav|In de grotten van DOL GULDUR
+menu_start_hand_orc|^^^^^^^^^^Waar loer jij?
+mno_start_armis|In de grote legers bij ISENGARD
+mno_start_minmo|In de mijnen van MORIA
+mno_start_cliff|In de kliffen van berg GUNDABAD
+menu_start_gondor_mt|^^^^^^^^^^Kies je Afkomst
+mno_start_1_com|Burger
+mno_start_2_hib|Hoog Geboren
+menu_start_haradrim|^^^^^^^Je bent een Haradrim,^een Mens van de Woestijn.^Kies uw lijn
+mno_start_1_des|Woestijn Mens
+mno_start_2_far|Far Harad Stamlid
+menu_choose_gender|^^^^^^^^^^Je geslacht?
+mno_start_male|Man
+mno_start_female|Vrouw
+mno_proc|Ga door als gewoonlijk
+mno_continue|Vervolgen...
+menu_character_report|^^^^^Partij Moraal: {reg8}^Partij Grootte Limiet: {reg7}^{s5}
+menu_camp|^^^^Je bent in {s1}.{s2}^^Wat wil je doen?
+mno_camp_scene|Rond lopen.
+mno_camp_troop|Inspecteer{reg10? troops:}{reg12? and:}{reg11? gevangenen:}.
+mno_camp_action|Gebruik een object.
+mno_camp_wait_here|Wacht hier voor enige tijd.
+mno_camp_options|Verander TLD opties.
+mno_Cheat_enable|Activeer cheat/modding opties.
+menu_game_options|^^^^^^^^Klik op een optie om omschakelen:
+mno_game_options_restrict_items|Beperkte speler uitrusting: {s7}
+mno_game_options_formations|Gevecht formaties en AI: {s7}
+mno_game_options_town_menu|Stad NPCs altijd bereikbaar vanaf de Menus: {s7}
+mno_game_options_cutscenes|Tussenfilmpjes: {s7}
+mno_game_options_injuries|Blessures voor metgezellen: {s7}
+mno_game_options_death|Permanente dood voor heren en metgezellen: {s7}.
+mno_game_options_death2|Permanente dood voor speler (dat ben JIJ!): {s7}.
+mno_game_options_morale|Gevecht Moraal systeem: {s7}.
+mno_game_options_animal_ambushes|Dierlijke hinderlagen: {s7}.
+mno_game_options_tweaks|Gameplay tweaks...
+mno_game_options_back|Terug naar het kamp menu.
+menu_camp_tweaks|^^^^^^^^Kies een optie die u wilt aanpassen.
+mno_tweak_options_compat|Compatibility tweaks...
+mno_tweak_options_strat|Strategie tweaks...
+mno_tweak_options_back|Terug naar het opties menu.
+menu_camp_compat_tweaks|^^^^^^^^Klik op een optie om te veranderen (houd shift ingedrukt om te verlagen):^(Deze zijn voor compatibiliteit en zijn dus geen cheats)
+mno_game_options_compat_party|Maximaal aantal partijen: {s1}
+mno_game_options_compat_back|Terug naar het tweaks menu.
+menu_camp_strat_tweaks|^^^^^^^Klik op een optie:^(Pas op: Dit zijn cheats!)
+mno_strat_tweaks_siege_reqs|Belegering sterkte-eisen: {s7}
+mno_strat_tweaks_siege_relax_rate|Belegering str. eis. ontspanning snelheid: {reg1}
+mno_strat_tweaks_regen_rate|Sterkte regen snelheid: {s7}
+mno_strat_tweaks_siege_regen_limit|Facties regennen niet lager dan: {reg1}
+mno_strat_tweaks_back|Terug naar het tweaks menu.
+menu_camp_action|^^^^^^^^^ Welk object?
+mno_camp_customize_defilement|Aangepast verontreinigd Pantser
+mno_camp_drink_water|Drink het Ent Water!
+mno_camp_action_4|Terug.
+menu_assasins_attack_player_won|Je hebt de moordenaars succesvol afgeslagen van {s2}, gestuurd door {s3}. 
+menu_assasins_attack_player_retreat|Je bent levend ontsnapt!
+menu_fangorn_danger|^^^^^^Raar, Allemaal dreigende geluiden overal om je heen.^Praten de bomen met elkaar? Er is een gevoel van diepe woede en pijn in de lucht.^ Uw orders?
+mno_be_quiet_elf|Respecteer de haat van de bomen. Beweeg verder stil.
+mno_be_quiet|Leg de wapens neer en blijf rustig! En nu wegwezen!
+mno_be_bold|Ga door! Ik ben niet bang voor de oude planten of oude mythen!
+mno_fight_back|Laten we het uitzoeken! Zoek in de omgeving! Brand één of twee bomen plat!
+menu_fangorn_search_fails|^^^^^^Je zoekt in het donkere dikke bos maar vind niks.^ Toch voel je je waargenomen en bedreigd steeds meer krijg je het gevoel dat je bekeken word.
+menu_fangorn_battle_debrief_won|^^^Een grote overwinning! ^^^ Dus dit is wat alle mythes over Fangorn betekende...
+menu_fangorn_killed_player_only|^^^^^^Je dwaalt in het dicht begroeide, donkere bos.^Ineens wordt je geraakt! Misschien een zware tak die op je hoofd viel? Je raakt bewusteloos voor slechts enkele minuten. Je bent wel ernstig gewond maar je kan toch verder gaan.
+mno_ow_get_out|Auw! Laten we weggaan van deze vervloekte plek!
+menu_fangorn_killed_troop_and_player|^^^^^^Je dwaalt in het dicht begroeide, donkere bos.^Ineens wordt je geraakt! Misschien een zware tak die op je hoofd viel? Wanneer je weer herstelt, minuten later, zie je dat je troepen niet zo'n geluk hadden.
+menu_fangorn_killed_troop_only|^^^^^^^^Je dwaalt in het dicht begroeide, donkere bos. Je troepen zijn bang.^^Plotseling hoor je geschreeuw vanaf de achterzijde. Je haast je terug, alleen maar om een paar van je troepen te vinden, in een plas bloed. ^^ Een paar andere zijn nergens te vinden ...
+mno_get_out|Laten we weggaan van deze vervloekte plek!
+menu_can_capture_troll|De neergehaalde wilde trol ademt nog!^^Met kwade ogen kijkt hij je aan gevuld met pijn en woede.^Zelfs nu terwijl het neergehaald is, en hopeloos in een plas met bloed ligt, Lijkt het enorm gevaarlijk ...
+mno_killit|Beweeg nu! Maak zeker dat het dood is.
+mno_cageit1|Maak het vast en sleep het rond.
+mno_cageit2|Maak het vast aan de andere trol.
+mno_cheat_disabable|Deactiveer cheat/modding opties.
+menu_drank_ent_water_human|^^^Je drink het water. Het smaakt schoon en verfrissend. Het heeft een aangename geur, als van muskus.^Je voelt verfrist.^^ Maar je hebt ook een vreemd,onnatuurlijk gevoel. Iets vertelt je dat je maar beter nooit, nooit meer uit dit water drinkt.
+menu_drank_ent_water_orc|^^^Je drinkt het water. Het is gewoon water.^ Plotseling grijp je naar je keel het doet vreselijk veel pijn.^Het is Gif!^Je stikt en kotst zwart bloed, je zakt bijna weg.^^Het doet pijn oh vreselijk veel pijn.
+mno_i_shall_surv|Ik... zal... overleven!
+menu_end_game|^^^^^De beslissing is gemaakt. Je stopt met je oude leven en lijd een normaal leven. Je verkoopt je wapens en pantser, verzamelt al je bezittingen en rijd weg in de zonsondergang ....
+mno_end_game_bye|Vaarwel.
+menu_cattle_herd|Je komt wat mensen tegen.
+mno_cattle_drive_away|Je commandeert ze om jou te volgen.
+mno_cattle_stop|Je laat ze stoppen.
+mno_leave|Ga weg.
+menu_simple_encounter|^^^^^{s2}^Je hebt {reg22} troepen klaar voor het gevecht tegen hun {reg11}.^^Het gevecht neemt zich plaats in {s3}{s4}.^^Je orders?
+mno_encounter_attack|{reg21?Val ze aan:Bereid je voor om aan te vallen}. 
+mno_encounter_order_attack|Order je troepen om {reg21?attack:face them} zonder jou.
+mno_special_whip|Ren naar ze toe {s4}.
+mno_encounter_leave|Stop met aanvallen.
+mno_encounter_retreat|Trek terug, laat wat soldaten achter om je te verdedigen.
+menu_encounter_retreat_confirm|^^^^^Als partij lid met de hoogste tactiek vaardigheid,({reg2}), {reg3?you devise:{s3} devises} een plan dat er voor zorgt dat je veilig kunt ontsnappen. maar, je moet wat {reg4} soldat achterlaten zodat de vijand je niet kan achtervolgen.
+mno_leave_behind|Ga door. Het offer van deze mannen zal de rest redden.
+mno_dont_leave_behind|Nee. We laten niemand achter.
+menu_encounter_retreat|^^^^^Jij vertelt {reg4} van je troepen om de vijand op afstand te houden terwijl de rest van uw partij terugtrekt.
+menu_order_attack_begin|^^^^^^ Je troepen bereiden zich voor om de vijand aan te vallen.
+mno_order_attack_begin|Order de aanval te beginnen.
+mno_call_back|Roep ze terug.
+menu_order_attack_2|^{s4}^Uw slachtoffers: {s8}^^Vijandelijke slachtoffers: {s9}
+mno_order_attack_continue|Order je soldaten om de aanval voort te zetten.
+mno_order_retreat|Roep je soldaten terug.
+menu_kingdom_army_quest_report_to_army|{s8} Stuurt bericht dat hij wilt dat u zich aansluit bij zijn militaire campagne. U moet minstens {reg13} troepen naar het leger brengen, en krijg de opdracht om meer krijgers te rekruteren met alle haast.
+mno_reject|Stuur een bericht dat u te druk bent.
+mno_send_word|Stuur woord dat u zich binnenkort aansluit.
+menu_kingdom_army_quest_messenger|{s8} Stuurt woord dat hij met u wil spreken over een taak die uitgevoerd moet worden. Hij vraagt u om te komen en om hem zo spoedig mogelijk te zien.
+menu_kingdom_army_quest_join_siege_order|{8} stuurt woord dat u moet helpen met de belegering van {s9} in voorbereiding voor een volledige aanval. Je troepen moeten {s9} overnemen ten koste van alles.
+menu_kingdom_army_follow_failed|Je bent ongehoorzaam geweest en heb de taak niet goed uitgevoerd {s8}. Hij stuurt een boodschap waarin staat dat hij denkt dat u meer dringende zaken hebt, Maar waarschuwt dat zijn geduld niet onbeperkt is.
+menu_battle_debrief|{s11}^Uw Slachtoffers:{s8}{s10}^^Vijandelijke Slachtoffers:{s9}
+mno_inspect_troll|Inspecteer neergehaalde trol
+menu_pre_join|^^^^^Je komt aan terwijl er een strijd is tussen {s2} en {s1}. Je besluit om...
+mno_pre_join_help_attackers|{s2} Te helpen.
+mno_pre_join_help_defenders|Ren naar {s1} om te helpen.
+mno_pre_join_leave|Doe niet mee.
+menu_join_battle|^^^Je helpt {s2} tegen {s1}.^ Je hebt {reg22} troepen klaar voor de strijd tegen de vijanden {reg11}.^^De strijd neem plaats in {s3}{s4}.
+mno_join_attack|Val de vijand aan.
+mno_join_order_attack|Order je troepen om aan te vallen met je bondgenoten, terwijl je terug blijft.
+mno_join_leave|Stop met aanvallen.
+menu_join_order_attack|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
+mno_enter|Treed binnen.
+menu_battlefields|^^^^^^^^^Selecteer een veld...
+mno_enter_f1|Veld 1
+mno_enter_f2|Veld 2
+mno_enter_f3|Veld 3
+mno_enter_f4|Veld 4
+mno_enter_f5|Veld 5
+menu_join_siege_outside|^^^^^^{s1} is onder vuur gekomen door {s2}.
+mno_approach_besiegers|Benader het belegerings-kamp.
+mno_pass_through_siege|Passeer door de belegering lijnen en treed binnen {s1}.
+menu_cut_siege_without_fight|De belegeraars laat je de poort benaderen zonder enkele uitdaging.
+menu_besiegers_camp_with_allies|{s1} blijft belegerd. De vlaggen van {s2} wapperen boven het kamp van de belegeraars, waar u en uw troepen welkom zijn.
+mno_talk_to_siege_commander|Vraag een gesprek met de commandant.
+mno_join_siege_with_allies|Sluit aan bij de volgende aanval.
+mno_join_siege_stay_back|Commandeer je soldaten zich aan te sluiten bij de volgende aanval zonder jou.
+menu_moria_must_escape|^^Het boek lijkt op de laatste poging van de dwergen te hervestigen in Moria weer te geven. De poging eindige blijkbaar in een gruwelijke dood voor alle betrokkenen. Je leest verder en struikelt over de woorden 'puur zilver'! Je studeert de pagina en komt erachter dat het gaat over de schatten van de dwergen ergens op de lagere niveaus. Ha! Zou het niet leuk zijn om de lang verloren dwergen Mithril te ontdekken!? ^Je volgt gretig de richtingen, in een smalle tunnel en dieper... ^...^Na een paar uur voor niks te hebben gezocht kom je erachter dat je verdwaald bent in de dieptes van Moria, nu opzoek naar een uitgang.
+mno_moria_exit_scene|Vind de uitgang!
+menu_castle_outside|Je bent buiten {s2}.{s11} {s3} {s4}
+mno_moria_enter|Ga terug naar de grootste hal van Moria via de geheime ingang.
+mno_moria_enter_door|Treed Moria binnen.
+mno_castle_start_siege|Beleger de {reg6?town:castle}.
+mno_castle_leave|Ga weg.
+menu_castle_besiege|U ben bezig met belegeren van {s1}. {s2} {s3}
+mno_siege_request_meeting|Vraag een vergadering aan met de kasteel commandant.
+mno_wait_24_hours|Wacht tot morgen.
+mno_castle_lead_attack|Leid je soldaten in de volgende aanval.
+mno_attack_stay_back|Order je soldaten aan te vallen terwijl je terug blijft...
+mno_build_ladders|Bereid de ladders voor om de muren aan te vallen.
+mno_lift_siege|Stop de belegering.
+menu_siege_attack_meets_sally|^^^^^^De verdedigers komen naar u toe om te vechten.
+menu_construct_ladders|Als partij lid met de hoogste Ingenieur vaardigheid ({reg2}), {reg3?you estimate:{s3} estimates} Dat het {reg4} uren zal duren om de ladders voor de aanval te bouwen.
+mno_build_ladders_cont|Doe het.
+menu_castle_attack_walls_simulate|{s4}^^Uw slachtoffers:{s8}^^Vijandelijke slachtoffers waren: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
+menu_castle_taken|{s3} is veroverd door je troepen, en u hebt nu de volledige controle over de {reg2?town:castle}. {reg1? Het lijkt erop dat niks u stopt om het voor uzelf over te nemen...:}
+menu_castle_taken_2|{s3} Is veroverd door je troepen, en u hebt nu de volledige controle over het kasteel. Het is tijd om woord te sturen naar {s9} van uw overwinning. {s5}
+mno_castle_taken_no_claim|Vraag geen beloningen.
+menu_siege_started_defender|{s1} Lanceert een aanval tegen de muren van {s2}. U hebt {reg22} troepen fit voor de strijd tegen de vijand {reg11}. Je besluit om...
+mno_siege_defender_join_battle|Doe mee aan de slag.
+mno_siege_defender_troops_join_battle|Commandeer uw mannen mee te doen aan de strijd zonder uzelf.
+menu_siege_join_defense|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
+menu_village_hunt_down_fugitive_defeated|^^^^^Een zware klap van de voortvluchtige stuurt je naar de grond. en uw visie draait en dooft. Tijd gaat voorbij. Als je je ogen weer open doet voel je je neergeslagen en bloederig. Maar gelukkig zijn het geen dodelijke wonden.
+menu_town_bandits_succeeded|^^^^^De goblins vallen voor u als tarwe aan een zeis! Binnekort sta je alleen, terwijl de meeste van uw aanvallers bewusteloos, dood of stervend zijn. Nu moet de lokale bevolking je wel zeer dankbaar zijn want je hebt ze gered van deze dreiging.
+menu_town_brawl_lost|^^^^^^Je bent bewusteloos geslagen. De mensen die je aanvielen zoeken snel naar je bezittingen, waarna ze weer gewoontjes verder gaan met hun dagelijkse gang van zaken. 
+menu_town_brawl_won|^^^^^Je hebt alle tegenstanders verslagen en de bewakers komen naar je toe om het gevecht te sussen. Je zoekt snel naar hun bezittingen daarna verdwijn je totdat de gemoederen bedaren. Misschien laten ze de volgende keer meer respect zien en trekken ze terug.
+menu_town|Je arriveerde in {s60}.{s12}{s13}
+mno_town_menu_0|Ga naar een locatie.
+mno_town_menu_0_door|Deur naar een locatie.
+mno_town_approach|Nader {s1}...
+mno_town_castle|Ga naar {s1}.
+mno_town_castle_door|Deur naar het kasteel.
+mno_town_center|Loop naar het centrale plein...
+mno_town_center_door|Deur naar het centrum van de stad.
+mno_aw_chamber_door|Open de deur.
+mno_trade_with_arms_merchant|Bezoek de {s40}.
+mno_trade_with_horse_merchant|Bezoek de {s41}.
+mno_town_prison_door|Deur naar de gevangenis.
+mno_dungeon_enter|Zoek naar verloren speren in de bergen.
+mno_dungeon_enter_door|Open de deur.
+mno_talk_to_castle_commander|Bezoek de {s61} Barakken.
+mno_speak_with_elder|Spreek met de {s6}.
+mno_isengard_underground|Ga naar de ondergrondse grotten.
+mno_tirith_toplevel|Klim naar het hoogste niveau.
+mno_town_leave|Ga weg...
+mno_town_leave_door|Verlaat het gebied
+menu_disembark|Wilt u uitstappen?
+mno_disembark_yes|Ja.
+mno_disembark_no|Nee.
+menu_ship_reembark|Wilt u instappen?
+mno_reembark_yes|Ja.
+mno_reembark_no|Nee.
+menu_center_reports|De naam van de stad: {s1} ^ huurinkomsten: {reg1} denars ^ tarief inkomen: {reg2} denars ^ voedsel voorraad: {reg3} dagen
+menu_sneak_into_town_suceeded|Vermomd in de kleding van een arme pelgrim, laten de bewakers je de stad in.
+menu_sneak_into_town_caught|Wanner je probeert naar binnen te sluipen, Herken een van de wachters je en slaat alarm! Je moet terug naar de poort vluchten voordat alle bewakers uit de stad naar je komen!
+mno_sneak_caught_fight|Probeer er een baan door heen te slaan.
+mno_sneak_caught_surrender|Geef je over.
+menu_sneak_into_town_caught_dispersed_guards|Je rent van de bewakers af en bedekt je pad waarna je wegrent, gemakkelijk verliezen de achtervolgers je in het doolhof van straatjes.
+menu_sneak_into_town_caught_ran_away|Je maakt je weg terug naar de poorten en verdwijnt snel buiten de stad.
+menu_tld_player_defeated|^^^^^Plotseling een verpletterende pijn ontploft in de achterkant van je hoofd! \\ Je huivert, als de hele wereld om je heen zwart wordt...^Is dit mijn einde?
+menu_recover_after_death_fangorn|Je wordt wakker. Het bos is nog steeds om je heen. Elk bot doet pijn. Je bent in leven, door een wonder.^^Het was een nederlaag, maar in ieder geval wat je wat er gebeurd is.^Nu weet je wat er gaande is in dit vervloekte bos, en je hebt het overleefd.^^Maar zal ooit iemand je geloven?
+menu_recover_after_death_moria|^^^^^Je komt bij bewustzijn. Je ligt op een zachte bodem, frisse lucht blaast op je gezicht. Je bent buiten!^De orks moeten gedacht hebben dat je dood was en hebben je in een duistere put gegooid.^ Je moet door een ondergrondse stroming naar het oppervlak gedragen zijn.
+mno_whatever|Sta op!
+menu_recover_after_death_default|^^^^^Je komt bij bewustzijn. Je ligt op de plek waar je viel. De vijanden moeten gedacht hebben dat je dood was en lieten je daar achter. Echter, het lijkt erop dat geen van je wonden dodelijk waren, en hoewel je verschrikkelijk voelt, kom je erachter dat je nog steeds kan lopen. Je staat op en zoekt naar eventuele andere overlevenden van je partij.
+menu_recover_after_death_town|^^^^Je komt bij bewustzijn en je ligt op de rand van de stad. Je leeft! Niemand is in de buurt en je neemt je kans om jezelf buiten de stad te slepen. Het lijkt erop dat geen van je wonden dodelijk waren, en hoewel je verschrikkelijk voelt, je kunt nog steeds lopen.
+menu_recover_after_death_town_alone|Je komt bij bewustzijn en je ligt op de rand van de stad. Je leeft! Niemand is in de buurt en je neemt je kans om jezelf buiten de stad te slepen. Je metgezellen hebben je gevonden. Het lijkt erop dat geen van je wonden dodelijk waren, en hoewel je verschrikkelijk voelt, je kunt nog steeds lopen.
+menu_notification_center_under_siege|{s1} is belegerd door {s2} van {s3}!
+menu_notification_one_side_left|^^^^^The war of the Ring is voorbij!^^De {s1} hebben al hun vijanden verslagen en zijn winnaars!
+menu_notification_total_defeat|^^^^^The War of the Ring is voorbij voor jou!^^De {s1} zijn verslagen door hun vijanden en jij staat er alleen voor!
+menu_notification_your_faction_collapsed|^^^^^Je {s11} vaderland werd verslagen!^Toch, zijn er andere geallieerden nog steeds in oorlog. Jij en andere die nog over zijn {s11}, Kan nog steeds helpen om te winnen.  
+menu_notification_faction_defeated|^^^^^{s1} Verslagen!^{s1} is niet meer, verslagen door de krachten van de {s13}!
+menu_ruins|^^^^Je benadert de {s1}. Een eenmaal sterke kampement werd met de grond gelijkgemaakt, hoewel je nog steeds sporen van de vestingwerken en roestige wapens kunt zien.
+menu_legendary_place|^^^^Je hebt de geruchten gevolgd en vond {s1}. Je kunt de plek nu verkennen en erachter komen of de geruchten waar zijn.
+mno_explore|Verken deze plaats.
+menu_starting_quest_good|^^^^^^Je ziet een kleine caravan onder aanval van een band orks. Wat ga je doen?
+mno_help|Help de vreemdelingen!
+mno_go_your_way|Laat ze alleen
+menu_custom_battle_choose_faction1|^^^^^^^^^^Kies een kant en voordeel:
+mno_good_equal|Goede factie
+mno_bad_equal|Kwade factie
+mno_replay_prev|Herspeel vorige setup
+menu_custom_battle_choose_faction2|^^^^^^^^^^Kies goede factie
+mno_cb_gondor|Gondor
+mno_cb_gondor1|Rohan
+mno_cb_gondor2|Lothlorien
+mno_cb_gondor3|Rivendell
+mno_cb_gondor4|Mirkwood
+mno_cb_gondor5|Dwergen
+mno_cb_gondor6|Dale
+mno_cb_gondor7|Beornings
+menu_custom_battle_choose_faction3|^^^^^^^^^^Kies voor de slechte factie
+mno_cb_mordor|Mordor
+mno_cb_mordor1|Isengard
+mno_cb_mordor2|Dunland
+mno_cb_mordor3|Haradrim
+mno_cb_mordor4|Oosterlingen
+mno_cb_mordor5|Moria
+mno_cb_mordor6|Gundabad
+mno_cb_mordor7|Rhun
+mno_cb_mordor8|Piraten
+mno_rescue_mission|Ga stiekem in het hol van de tovenaar onder dekking van de nacht.
+mno_next_rescue_scene_door|Verder doorgaan!
+mno_pick_troops1|Kies metgezellen voor de missie, {reg0} geselecteerd
+menu_pick_troops|Wie zou je meenemen in deze stealth missie? Momenteel kies je {reg0} metgezellen. Je kan tot 10 troepen meenemen
+mno_go_forward|Beëindig het kiezen van metgezellen en ga verder.
+menu_burial_mound|Je benadert de grafheuvel van {s1} van {s2}. Het wordt overladen met de getande wapens van zijn gevallen vijanden.
+mno_pay_respects|Knielen en geef je respect.
+mno_swear_oath|Zweer een eed van wraak!
+mno_despoil|Ontheilig de plek
+mno_leave_mound|Verlaat de heuvel.
+menu_burial_mound_respects|Je knielt en geeft je respect aan {s1}, In stilte geef je een gebed voor een snelle reis naar het hiernamaals. Er is hier niets meer te doen.
+menu_burial_mound_oath|Je zweert luid een eed van wraak voor de dood van {s4}. Je zou onophoudelijk zoeken naar de krachten van de {s3} en ze vernietigen. Je woorden raken heel ver en kunnen waarschijnlijk gehoord woorden nabij de zee.
+menu_burial_mound_despoil|Je breekt het monument van {s1} af met je eigen handen, en je verontreinigt de stenen met vloeken, smerige gezangen en onuitspreekbare daden. Je metgezellen vallen terug in angst voor de dood, maar ze lijken steeds meer respect te hebben voor je boosheid.
+menu_funeral_pyre|Je benadert de verkoolde resten van de brandstapel van de {s3} van {s2}. Hier is zijn lijk plechtig verbrand door zijn persoonlijke bodyguards. Niets van waarde is over.
+mno_leave_pyre|Verlaat de brandstapel.
+menu_town_ruins|Wanneer je nadert, zie je dat {s1} is {s2}
+mno_ruin_menu_0|Verken de plaats.
+mno_ruin_leave|Ga weg...
+menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet langer een deel van uitmaken.
+menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
+menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}
+menu_animal_ambush_fail|De dieren bijten en verscheuren je{reg0?,: and your companion{reg2?s,:,}} maar gelukkig slaag je erin om hen af te weren. Hopelijk vallen ze je niet meer aan.
+menu_build_your_scene|U kunt uw eigen battlescene hier te bouwen, met behulp van een van de sleuven hieronder en game Edit mode (je nodig hebt om edit mode Schakel eerst in M & B lauching scherm Opties). Vervolgens kunt u indienen scènes u geconstrueerd (namelijk SCO bestanden van TLD / SceneObj map) naar het dev team van TLD, en als uw scène is goed, het kan in latere releases als een van willekeurige slagvelden! ^^ Probeer aan te geven welke regio op de kaart u wilt dat uw scene te verschijnen ^ Paar tips:. vermijd diep water, steile bergen en andere onbegaanbare plaatsen, tenzij je ervaren scene-maker en weten hoe AI troepen bar van het lopen, waar je ze niet wilt, en maken AI maas in andere plaatsen. ^ (Inzendingen # 0-1 zijn voor aanvallers, # 4 voor verdedigers, niet aanraken # 5-8
+mno_scene1|Slachtveld5 (file scn battlefield5.sco)
+mno_scene2|Slachtveld6 (file scn battlefield6.sco)
+mno_scene3|Slachtveld7 (file scn battlefield6.sco)
+mno_scene4|Slachtveld8 (file scn battlefield6.sco)
+mno_scene5|Slachtveld9 (file scn battlefield6.sco)
+mno_back_3dot|Terug...

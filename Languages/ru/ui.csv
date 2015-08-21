@@ -1,0 +1,48 @@
+ui_at_learning_limit|(лимит изучения для этой расы)
+ui_not_enough_skill_points_to_learn|(недостаточно очков навыка для изучения)
+ui_not_enough_attributetype_to_learn_this_skill|(недостаточно %s для изучения навыка)
+ui_explanation_agility|Ловкость: Каждое очко даёт пять очков навыка владения оружием и увеличивает скорость атаки на 0.5%. Следующие навыки не могут быть изучены при обладании менее чем 1/3 от Ловкости: Владение Оружием, Владение Щитом, Атлетика, Верховая Езда, Стрельба Верхом, Сбор Трофеев.
+ui_retreated_battle|%s был разбит.
+ui_riding_skill_not_adequate_to_mount|(Навык верховой езды слишком низок)
+ui_camp|Действия
+ui_tutorial_inventory|В The Last Days вам необходимы Очки Ресурсов для приобретения Экипировки. Очки Ресурсов – это мера того, как выбранная фракция вас снабжает и как много ресурсов фракции вы можете использовать.
+ui_you_dont_have_value|Не имеется: %s
+ui_merchant_cant_afford_value|%s: Ты даёшь нам больше, чем необходимо! Может оставишь что-нибудь себе (ты даешь товар %s, мы можем использовать только %s).
+ui_merchant_pay_whatever|Нет, мне не нужно ничего из этого, оставь себе.
+ui_horse|Оседлать
+ui_reclaim_your_sold_goods|Забери товар, который ты принёс, прежде чем дать это!
+ui_return_your_bought_goods|Верни товар, который ты взял, прежде чем взять это!
+ui_return_price|если возвращено: +%d Оч. Рес.
+ui_sell_price|если отдано: +%d Оч. Рес.
+ui_reclaim_price|требовать обратно: -%d Оч. Рес.
+ui_buying_price|требовать: -%d Оч. Рес.
+ui_notification_riding_skill_not_enough|Ваш навык верховой езды недостаточно высок, чтобы оседлать это.
+ui_notification_payment_value|Потребление %s
+ui_notification_payment_receive_value|Доход %s
+ui_weekly_cost_value|Содержание %s
+ui_sell|Дать
+ui_hire|Вербовка
+ui_notification_cant_hire|(недостаточно Оч. Рес. для вербовки)
+ui_joining_cost_weekly_wage|Вербовка: %d Оч. Рес. -- Содержание: %d Оч. Рес.
+ui_weekly_wage|Содержание: %d Оч. Рес.
+ui_price|Стоимость: %d Оч. Рес.
+ui_cant_reload_this_weapon_on_horseback|Невозможно перезарядить это оружие находясь верхом.
+ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
+ui_horse_charged_for_number_damage|Животное атаковало на %d урона.
+ui_horse_received_number_damage|Животное получило %d урона.
+ui_horse_fell_dead|Животное упало замертво...
+ui_horse_crippled|Животное покалечено...
+ui_you_got_value|%s получено.
+ui_has_deserted_the_party|покинул отряд.
+ui_have_deserted_the_party|покидает отряд.
+ui_loading_textures|Загрузка Текстур (будьте терпеливы)...
+ui_order_hold_fire_toggle|Не стрелять/Стрелять по готовности (переключение)
+ui_order_dismount_toggle|Приказ Спешиться/Оседлать (переключение)
+ui_mount_horses_e_|%s, Оседлать!
+ui_hold_fire_e_|%s, Не Стрелять!
+ui_fire_at_will_e_|%s, Стрелять по Готовности!
+ui_recent_messages|Последнии Сообщения
+ui_value_denars|%d Оч. Ресурсов
+ui_cannot_be_used_on_horseback|Не может быть использовано верхом
+ui_upgrade_to_value|Повысить до %s
+ui_notification_cant_upgrade|(Невозможно повысить, когда отдаешь солдат)

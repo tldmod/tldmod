@@ -1,9 +1,9 @@
 menu_start_game_1|^^^^^^^^^^O co walczysz?
-mno_start_good|o ŚWIT nowej Ery
-mno_start_evil|o ZMIERZCH Ludzi
+mno_start_good|ŚWIT nowej Ery
+mno_start_evil|ZMIERZCH Ludzi
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie.^Wolne ludy gotują się do wojny, wojny której nie widziano od wieków.^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
-; mno_go_forth|          Go forth upon you chosen path...
+mno_go_forth|Idź naprzód na wybrany szlak.
 menu_start_game_3            |^^^^^^^^    Wybierz scenariusz:
 mno_custom_battle_scenario_1 |            Potyczka, Gondor vs Harad
 mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
@@ -13,9 +13,9 @@ mno_custom_battle_scenario_5 |Potyczka, Ludy Północy vs Rhun
 mno_custom_battle_scenario_6 |Atak podczas oblężenia, Orkowie vs Krasnoludy
 mno_custom_battle_scenario_7 |Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
 ; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
-; mno_custom_battle_scenario_10|Scenery test battle
-; mno_troll_battle_scenario    |Test Troll Battles
-; mno_warg_battle_scenario     |Test Warg Battles
+mno_custom_battle_scenario_10|Test bitwy krajobrazowej
+mno_troll_battle_scenario    |Test bitew troli.
+mno_warg_battle_scenario     |Test walki wargów
 mno_build_your_own_scene     |** Zbuduj własną scenę dla TLD **
 mno_go_back                  |Wróć
 menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
@@ -51,43 +51,43 @@ mno_troll_battle_scenario_13|Troll vs Lansjerzy
 mno_troll_battle_scenario_14|Troll vs Troll
 mno_troll_battle_scenario_15|Troll kontrolowany przez gracza
 menu_quick_battle_wargs|^^^^^^^^Wybierz swój scenariusz
-; mno_warg_battle_scenario_10|          Against Wargs: 1 vs 1
-; mno_warg_battle_scenario_11|          Against Wargs: 2 vs 3
-; mno_warg_battle_scenario_12|          Against Wargs: many vs many
-; mno_warg_battle_scenario_10b|          Play Wargs: 1 vs 1
-; mno_warg_battle_scenario_11b|          Play Wargs: 2 vs 3
-; mno_warg_battle_scenario_12b|          Play Wargs: many vs many
+mno_warg_battle_scenario_10|Przeciwko wargowi: 1 vs 1
+mno_warg_battle_scenario_11|Przeciwko wargom: 2 vs 3
+mno_warg_battle_scenario_12|Przeciwko wargom: wielu na wielu
+mno_warg_battle_scenario_10b|Graj wargiem: 1 vs 1
+mno_warg_battle_scenario_11b|Graj wargiem: 2 vs 3
+mno_warg_battle_scenario_12b|Graj wargiem: wielu vs wielu
 menu_start_good|^^^^^^^^^^Wybierz rasę:
 mno_start_ma|CZŁOWIEK
 mno_start_el|ELF
 mno_start_dw|KRASNOLUD 
 mno_go_back|Wróć
 menu_start_evil|^^^^^^^^^^Komu Służysz?
-; mno_start_eye|SAURON of Mordor, the Lord of the Rings
-; mno_start_hand|SARUMAN of Isengard, the White Hand
+mno_start_eye|Sauron z Mordoru, Władca Pierścieni
+mno_start_hand|Saruman z Isengardu, Biała Dłoń
 menu_start_eye|^^^^^^^^^Twoim Mistrzem jest Oko^Wybierz rasę
-; mno_start_or|an ORC, serving the Lidless Eye
-; mno_start_ur|an URUK, the new breed of Orcs
-; mno_start_em|a MAN, subjugated by Sauron
+mno_start_or|Ork, służący Oku Bez Powiek
+mno_start_ur|Urok, nowa rasa orków
+mno_start_em|Człowiek, podporządkowany przez Sarumana
 menu_start_hand|^^^^^^^^^Twoim Mistrzem jest Biała Ręka^Wybierz rasę
-; mno_start_whor|an ORC, serving the White Hand
-; mno_start_isur|an URUK-HAI, bred in Isengard
-; mno_start_duma|a MAN of Dunland, the Western Plains
+mno_start_whor|Ork, służący Białej Dłoni
+mno_start_isur|Uruk-hai, rozmnożony w Isengardzie
+mno_start_duma|Człowiek z Dunlandu, zachodnich równin
 menu_start_good_man|^^^^^^^^^^Wybierz swój lud:
-; mno_start_go|GONDOR, the Kingdom of the White Tower
-; mno_start_ro|ROHAN, the Horse people
-; mno_start_du|DUNEDAIN, the ancient dynasty of Men
-; mno_start_be|BEORNINGS, the Bear people
-; mno_start_da|the northern Kingdom of DALE
-menu_start_good_elf|^^^^^^^^^^który Las zamieszkujesz, Starszy?
-; mno_start_ri|RIVENDELL, of Lord Elrond
-; mno_start_lo|LOTHLORIEN, of Lady Galadriel
-; mno_start_mi|MIRKWOOD, land of the Silvan Elves
+mno_start_go|Gondor, Królestwo Białej Wieży
+mno_start_ro|Rohan, jeźdźcy koni
+mno_start_du|Dunedainowie, starożytna dynastia ludzi
+mno_start_be|Beorningowie, Niedźwiedzi lud
+mno_start_da|Północne królestwo Dalii
+menu_start_good_elf|^^^^^^^^^^który Las zamieszkujesz, Starcze?
+mno_start_ri|Rivendell, Władcy Elronda
+mno_start_lo|Lothlorien, Pani Galadrieli
+mno_start_mi|Mroczna Puszcza, ziemia Leśnych Elfów
 menu_start_good_dwarf|^^^^^^^^^^Wybierz rodowód:
-; mno_start_er|a dweller of EREBOR
-; mno_start_ih|a miner of the IRON HILLS
+mno_start_er|mieszkaniec Ereboru
+mno_start_ih|górnik z Żelaznych Wzgórz
 menu_start_gondor|^^^^^^^^^^Skąd jesteś, w Gondorze?
-; mno_start_mt|MINAS TIRITH, the Capital
+mno_start_mt|MINAS TIRITH, stolica
 ; mno_start_ls|LOSSARNACH, the Fiefdom of the Axemen
 ; mno_start_la|LAMEDON, the Fiefdom of the Mountain Clansmen
 ; mno_start_pg|PINNATH GELIN, the Fiefdom of Green Hills
@@ -95,18 +95,18 @@ menu_start_gondor|^^^^^^^^^^Skąd jesteś, w Gondorze?
 ; mno_start_pe|PELARGIR, the Coastal Fiefdom
 ; mno_start_bl|BLACKROOT VALE, the Fiefdom of Archers
 menu_start_eye_man|^^^^^^^^^^Wybierz swój lud:
-; mno_start_hr|HARADRIM, the desert people from the South
+mno_start_hr|HARADRIMOWIE, ludzi pustyni z Południa
 ; mno_start_bn|Black NUMENOREANS, the renegades from the West
-; mno_start_um|UMBAR, the pirates from the South Seas
-; mno_start_rh|RHUN, the barbarians from the East
-; mno_start_kh|KHAND, the savage people from South-East
+mno_start_um|UMBAROWIE, piraci z Południowych Mórz
+mno_start_rh|RHUNOWIE, barbarzyńcy ze Wschodu
+mno_start_kh|KHANDOWIE, dzicy z Południowego Wschodu
 menu_start_eye_orc|^^^^^^^^^^Gdzie się narodziłes?
 ; mno_start_arm|in the armies amassed at MORDOR
-; mno_start_cav|in the caves of DOL GULDUR
+mno_start_cav|w jaskiniach DOL GULDUR
 menu_start_hand_orc|^^^^^^^^^^Gdzie się narodziłes?
 ; mno_start_armis|in the Armies amassed at ISENGARD
-; mno_start_minmo|in the Mines of MORIA
-; mno_start_cliff|in the cliffs of Mount GUNDABAD
+mno_start_minmo|w Kopalniach Moria
+mno_start_cliff|na zboczach góry GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Wybierz rodowód
 ; mno_start_1_com|Commoner
 ; mno_start_2_hib|High-born
@@ -125,7 +125,7 @@ mno_camp_scene|Przespacerować się.
 mno_camp_action|.....
 mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmienić opcje TLD.
-; mno_Cheat_enable|Enable cheat/modding options.
+mno_Cheat_enable|Włączone oszustwa/tryb moderski
 menu_game_options|^^^^^^^^Kliknij by zmienić:
 mno_game_options_restrict_items|Restrykcje przedmiotów: {s7}
 mno_game_options_formations|Formacje bitewne oraz AI: {s7}
@@ -138,19 +138,19 @@ mno_game_options_death2|Permanentna śmierć dla gracza (ty TY!): {s7}.
 ; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
 ; mno_game_options_tweaks|Gameplay tweaks...
 mno_game_options_back|Wróć do menu obozu.
-; menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
+menu_camp_tweaks|^^^^^^^^Wybierz opcję, którą chcesz dostosować.
 ; mno_tweak_options_compat|Compatibility tweaks...
 ; mno_tweak_options_strat|Strategy tweaks...
-; mno_tweak_options_back|Back to options menu.
+mno_tweak_options_back|Wróć do menu opcji.
 ; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
 ; mno_game_options_compat_party|Maximum number of parties: {s1}
-; mno_game_options_compat_back|Back to tweaks menu.
+mno_game_options_compat_back|Wróć do menu ulepszeń.
 ; menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
 ; mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
 ; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 ; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 ; mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
-; mno_strat_tweaks_back|Back to tweaks menu.
+mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 ; mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Wypić Wodę Entów!
@@ -168,7 +168,7 @@ menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All 
 ; mno_ow_get_out|Ouch! Let's get out of this cursed place!
 menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were that lucky.^^
 menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
-; mno_get_out|Let's get out of this cursed place!
+mno_get_out|Wynośmy się z tego przeklętego miejsca!
 menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in its blood, it looks tremendously dangerous...
 mno_killit|Dispatch it, now. Make sure it dies.
 mno_cageit1|Cage it and drag it around.
@@ -216,8 +216,8 @@ mno_join_attack|Zaatakuj wroga.
 mno_join_order_attack|Rozkaż swoim ludziom by pomogli sprzymierzeńcom w walce z wrogiem.
 mno_join_leave|Odejdź.
 menu_join_order_attack|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
-; mno_enter|Enter.
-; menu_battlefields|^^^^^^^^^Select a field...
+mno_enter|Wejdź.
+menu_battlefields|^^^^^^^^Wybierz pole...
 ; mno_enter_f1|Field 1
 ; mno_enter_f2|Field 2
 ; mno_enter_f3|Field 3
@@ -357,10 +357,10 @@ mno_ruin_leave|Leave...
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+menu_build_your_scene|Tutaj możesz zbudować własną scenę walki, używając jednego ze slotów zamieszczonych poniżej i trybu edycji (musisz najpierw zmienić tryb edycji na Włączony w menu opcji w panelu startowym M&B).
 ; mno_scene1|Battlefield5 (file scn battlefield5.sco)
 ; mno_scene2|Battlefield6 (file scn battlefield6.sco)
 ; mno_scene3|Battlefield7 (file scn battlefield7.sco)
 ; mno_scene4|Battlefield8 (file scn battlefield8.sco)
 ; mno_scene5|Battlefield9 (file scn battlefield9.sco)
-; mno_back_3dot|Back...
+mno_back_3dot|Wróć...

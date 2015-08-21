@@ -1,0 +1,366 @@
+menu_start_game_1|^^^^^^^^^^Za sta se boris?
+mno_start_good|Zora nove ere 
+mno_start_evil|Sumrak covecanstva
+mno_go_bback|Idi nazad
+menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
+mno_go_forth|Nastavi svojim putem...
+menu_start_game_3            |^^^^^^^^Izaberite vas scenario:
+mno_custom_battle_scenario_1 |Btika, Gondor vs Harad
+mno_custom_battle_scenario_12|Izaberite frakcije za bitku
+mno_custom_battle_scenario_3 |Bitka, Vilenjaci vs Black Numenoreans
+mno_custom_battle_scenario_4 |Helmov ponor, Rohan vs Isendard
+mno_custom_battle_scenario_5 |Btika, Severne fakcije vs Rhuna
+mno_custom_battle_scenario_6 |Opsada - napad, Orkovi vs Patuljaka
+mno_custom_battle_scenario_7 |Zaseda, Orkovi vs Mirkwood
+mno_custom_battle_scenario_11|Test bitke (Treba izbalansirati!)
+mno_custom_battle_scenario_10|Scenska test bitka
+mno_troll_battle_scenario    |Troll test bitke
+mno_warg_battle_scenario     |Warg test bitke
+mno_build_your_own_scene     |** Napravi tvoju scenu za TLD **
+mno_go_back                  |Idi nazad
+menu_tutorial|^^TLD ime dosta stvari koje nisu poznate u nativu. Mozete ih procitati u PDF fajlu. Za tutorijal,molim koristite native modul.
+mno_go_back_dot|Nazad
+mno_view_upkeep_costs|Pogledaj cenu.
+mno_view_character_report|Pogledaj raport.
+mno_view_party_size_report|Pogledaj velicinu vojske.
+mno_view_morale_report|Pogledaj moral vojske.
+mno_view_character_report_02|NPS status.
+mno_view_faction_strengths_report|Pogledaj snagu fakcija.
+mno_view_traits_report|Pogledaj osobine
+mno_resume_travelling|Nastavi putovanje.
+mno_custom_battle_go|Zapocni.
+mno_leave_custom_battle_2|Otkazi.
+menu_custom_battle_end|^^^^^^Bitka je zavrsena. {s1} Tvoja strana je ubila {reg5} neprijatelja i izgubila {reg6} svojih trupa.^Ti si sam ubio {reg7} neprijatelja.
+mno_replay|Igraj ovu bitku ponovo.
+mno_continue_dot|Nastavi.
+menu_quick_battle_general_test|^^^Trenutna bitka: ^tim A: {reg10} {s10}^^protiv^^ tima B: {reg11} {s11}
+mno_tAA|+5 Tim A
+mno_tAB|-5 Tim B
+mno_tAC|Selektuj trupu A
+mno_tBA|+5 Tim B
+mno_tBB|-5 Tim B
+mno_tBC|Selektuj trupu B
+mno_B|Postavljeno 1
+mno_F|Pocni bitku!
+mno_dot_go_back|. Povuci se
+menu_quick_battle_troll|^^^^^^^^Izaberi svoj troll scenario:
+mno_troll_battle_scenario_10|Test: Troll protiv Pesadije
+mno_troll_battle_scenario_11|Test: Troll protiv Strelaca
+mno_troll_battle_scenario_12|Test: Troll protiv Konjice
+mno_troll_battle_scenario_13|Test: Troll protiv Konjice sa Kopljima
+mno_troll_battle_scenario_14|Test: Troll na Trola
+mno_troll_battle_scenario_15|Test: Licno kontrolisani Troll
+menu_quick_battle_wargs|^^^^^^^^Izaberi scenario test za Vargu:
+mno_warg_battle_scenario_10|Protiv Varge: 1 na 1
+mno_warg_battle_scenario_11|Protiv Varge: 2 na 3
+mno_warg_battle_scenario_12|Protiv Varge: puno na puno
+mno_warg_battle_scenario_10b|Igraj Vargu: 1 na 1
+mno_warg_battle_scenario_11b|Igraj Vargu 2 na 3
+mno_warg_battle_scenario_12b|Igraj Vargu: puno na puno
+menu_start_good|^^^^^^^^^^Izaberi tvoju rasu:
+mno_start_ma|Covek
+mno_start_el|Vilenjak
+mno_start_dw|Patuljak
+mno_go_back|Idi nazad
+menu_start_evil|^^^^^^^^^^Kome sluzis?
+mno_start_eye|SAURONU od Mordora, gospodaru prstenova
+mno_start_hand|SARUMANU od Isengarda, beloj ruci
+menu_start_eye|^^^^^^^^^Tvoj vodja je svevidece oko^Izaberi svoju rasu
+mno_start_or|ORK, koji sluzi mracnom gospodaru
+mno_start_ur|URUK, nova vrsta Orkova
+mno_start_em|COVEK, zavaran da se bori za Saurona
+menu_start_hand|^^^^^^^^^Tvoj gospodar je beli carobnjak^Izaberi svoju rasu
+mno_start_whor|ORK, sluga carobnjaka
+mno_start_isur|URUK-HAI, odgajen u Isengardu
+mno_start_duma|COVEK Dunlanda, sa Zapadnih planina
+menu_start_good_man|^^^^^^^^^^Izaberi svoj narod:
+mno_start_go|GONDOR, Carstvo Bele Kule
+mno_start_ro|ROHAN, narod konja
+mno_start_du|DUNEDAIN, pre-dinastiju Ljudi
+mno_start_be|BEORNINGS, narod medveda
+mno_start_da|severno carstvo DALE
+menu_start_good_elf|^^^^^^^^^^iz koje si sume poreklom?
+mno_start_ri|RIVENDELL, od Lorda Elronda
+mno_start_lo|LOTHLORIEN, od Gospe Galadriele
+mno_start_mi|MIRKWOOD, zemlju sumskih Vilenjaka
+menu_start_good_dwarf|^^^^^^^^^^Izaberi svoje poreklo:
+mno_start_er|stanovnik EREBORA
+mno_start_ih|miner GVOZDENIH PLANINA
+menu_start_gondor|^^^^^^^^^^Odakle si rodom?
+mno_start_mt|MINAS TIRITH,glavni grad
+mno_start_ls|LOSSARNACH,dolinu Sekirasa
+mno_start_la|LAMEDON, domovinu Gorstaka
+mno_start_pg|PINNATH GELIN, mesto zelenih planina
+mno_start_do|DOL AMROTH, otadzbinu Svanskih Vitezova
+mno_start_pe|PELARGIR, velike luke
+mno_start_bl|BLACKROOT VALE, rodno mesto Strelaca
+menu_start_eye_man|^^^^^^^^^^Izaberi svoj narod:
+mno_start_hr|HARADRIM, pustinjski narod sa juga
+mno_start_bn|Crni NUMENOREANI, izbeglica za zapada
+mno_start_um|UMBAR, pirata sa juznih mora
+mno_start_rh|RHUN, varvara sa istoka
+mno_start_kh|KHAND, surovih ljudi za jugo - istoka
+menu_start_eye_orc|^^^^^^^^^^Gde obitavas?
+mno_start_arm|u armijama MORDORA
+mno_start_cav|u pecinama DOL GULDURA
+menu_start_hand_orc|^^^^^^^^^^Gde obitavas?
+mno_start_armis|u armijama ISENGARDA
+mno_start_minmo|u rudnicima MORIjE
+mno_start_cliff|na vukojebinama planine GUNDABADA
+menu_start_gondor_mt|^^^^^^^^^^Izaberi svoje poreklo
+mno_start_1_com|Obican covek
+mno_start_2_hib|Vlastela
+menu_start_haradrim|^^^^^^^Ti si jedan od harada,^naroda iz pustinje.^Izaberi svoj rod
+mno_start_1_des|Pustinjski covek
+mno_start_2_far|Clan plemena
+menu_choose_gender|^^^^^^^^^^Musko ili Zensko?
+mno_start_male|Musko
+mno_start_female|Zensko
+mno_proc|Nastavi prema normalnom
+mno_continue|Nastavi...
+menu_character_report|^^^^^Moral Grupe:re {reg8}^Limit Velicine Grupe: {reg7}^{s5}
+menu_camp|^^^^Nalazis se u {s1}.{s2}^^Sta zelis da radis?
+mno_camp_scene|Prosetaj se okolo.
+mno_camp_troop|Pregled{reg10? trupa:}{reg12? i:}{reg11? zarobljenika:}.
+mno_camp_action|Koristi "objekat".
+mno_camp_wait_here|Ulogori se ovde za neko vreme.
+mno_camp_options|Promeni TLD opcije.
+mno_Cheat_enable|Dozvoli cheat/moding opcije.
+menu_game_options|^^^^^^^^Izaberi opciju da bi je aktivirao:
+mno_game_options_restrict_items|Stroga oprema: {s7}
+mno_game_options_formations|Borbene formacije i AI: {s7}
+mno_game_options_town_menu|Ne treba traziti gradske trgovce na mapi: {s7}
+mno_game_options_cutscenes|Video snimci: {s7}
+mno_game_options_injuries|Rane na saborcima: {s7}.
+mno_game_options_death|Smrt lordova i saboraca: {s7}.
+mno_game_options_death2|Smrt igraca (to si TI!!): {s7}.
+mno_game_options_morale|Moral u bitci: {s7}
+mno_game_options_animal_ambushes|Napadi zivotinja: {s7}
+mno_game_options_tweaks|Namestanje igre...
+mno_game_options_back|Vrati se u logorski meni.
+menu_camp_tweaks|^^^^^^^^Izaberi opcije koje bi zeleo da podesis.
+mno_tweak_options_compat|Opcije kompatibilnosti...
+mno_tweak_options_strat|Opcije vezane za strategiju...
+mno_tweak_options_back|Vrati se nazad.
+menu_camp_compat_tweaks|^^^^^^^^Pritisni na opciju da promenis ( za smanjlivanje pritisni shift):^(ovo je vezano za kompatibilnost,ne za hakove)
+mno_game_options_compat_party|Najveci moguci broj grupa: {s1}
+mno_game_options_compat_back|Vrati se nazad.
+menu_camp_strat_tweaks|^^^^^^^^Pritisni na opciju da udjes:^(ovo su hakovi!)
+mno_strat_tweaks_siege_reqs|Zahtevi za opsadu: {s7}
+mno_strat_tweaks_siege_relax_rate|Odmaranje vezano za opsadu: {reg1}
+mno_strat_tweaks_regen_rate|Regeneracija snage: {s7}
+mno_strat_tweaks_siege_regen_limit|Fakcije ne regenerisu snagu ispod: {reg1}
+mno_strat_tweaks_back|Vrati se nazad.
+menu_camp_action|^^^^^^^^^ Koji objekat?
+mno_camp_customize_defilement|Modifikuj slab oklop
+mno_camp_drink_water|Popij malo Ent vode!
+mno_camp_action_4|Nazad.
+menu_assasins_attack_player_won|Uspesno si pobedio ubice od {s2}, poslate od {s3}.
+menu_assasins_attack_player_retreat|Uspeo si da pobegnes!
+menu_fangorn_danger|^^^^^^Cudna, strasna buka je svuda oko tebe.^ Da li to drvece prica? Moze se osetiti opasnost u vazduhu.^Tvoja naredjenja?
+mno_be_quiet_elf|Postuj drvece. Kreci se oprezno.
+mno_be_quiet|Odlozi oruzje i umiri se! Sad napolje iz ove sume!
+mno_be_bold|Ajde bre,pa nece mene plasiti neke babske price!
+mno_fight_back|Hajde da istrazimo!Pretrazi oblast! I spali koje drvo usput!
+menu_fangorn_search_fails|^^^^^^Pretrazio si mracnu,gustu sumu ali nisi nista nasao u njoj.^Ipak,ne osecas se prijatno u njoj,i sve vise i vise se osecas ugrozenim.
+menu_fangorn_battle_debrief_won|^^^Velika pobeda!^^^Znaci to se nalazi u Fangornu...
+menu_fangorn_killed_player_only|^^^^^^Pretrazio si sumu.^Odjednom,neko ili nesto te je udarilo! Mozda je to samo grana?^Bio si bez svesti samo par minuta. Povredjen si, ali mozes nastaviti.
+mno_ow_get_out|Bezimo iz ove proklete sume!
+menu_fangorn_killed_troop_and_player|^^^^^^Pretrazio si sumu.^Odjednom,neko ili nesto te je udarilo! Mozda je to samo grana?^Bio si bez svesti samo par minuta, ali za to vreme si primetio da je dosta tvojih trupa poginulo,^^
+menu_fangorn_killed_troop_only|^^^^^^^^Lutas kroz gustu, mracnu sumu. Tvoje trupe su uplasene.^^Odjednom, cujes krike od pozadi! Trceci nazad,vidis da su par tvoijh saboraca na zemlji, u lokvi krvi.^^Ostali, su nestali...
+mno_get_out|Hajdemo sa ovog prokletog mesta!
+menu_can_capture_troll|Oboreni divlji trol još uvek diše!^^Njegove zle oči ispunjene bolom i besom bulje u tebe.^Čak i sada kada je oboren, i leži bespomoćan u lokvi svoje krvi, izgleda mnogo opasno...
+mno_killit|Pogubi ga, sada. Postaraj se da umre.
+mno_cageit1|Zatvori ga i vuci ga okolo.
+mno_cageit2|Zatvori ga zajedno sa drugim trolom.
+mno_cheat_disabable|Onesposobi šifru/opcije modera.
+menu_drank_ent_water_human|^^^Piješ vodu. Ima čist i osvežujuć ukus. Ima prijatan miris, kao mošus.^Osećaš se osveženo.^^Međutim, takođe imaš čudan, neprirodan osećaj. Nešto ti govori da je bolje da više nikad, ikad ne piješ ovu vodu.
+menu_drank_ent_water_orc|^^^Piješ vodu. To je samo voda.^Odjednom se hvataš za grlo, u naletu bola.^Otrovan!^Gušiš se, povraćaš crnu krv, malo fali da se onesvestiš.^^Boli, ooo, to boli.
+mno_i_shall_surv|Ja... ću... preživeti!
+menu_end_game|^^^^^Odluka je doneta, rešio si da odustaneš od avanturističkog života i da se skrasiš. Prodaješ svoje oružje i oklop, sakupljaš sve svoje stvari, i jašeš u susret zalasku sunca...
+mno_end_game_bye|Zbogom.
+menu_cattle_herd|Srećeš neke ljude.
+mno_cattle_drive_away|Naređuješ im da te prate.
+mno_cattle_stop|Zaustavljaš ih.
+mno_leave|Odlazi.
+menu_simple_encounter|YYYYY{s2}^Imaš {reg22} vojnika spremnih za bitku protiv njihovih {reg11}.^^Bitka se održava u {s3}{s4}.^^Tvoja naređenja?
+mno_encounter_attack|{reg21?Jurišati na njih:Pripremite se da se suočite sa njima}.
+mno_encounter_order_attack|Naredi svojim vojnicima da {reg21?napadnu:suoče sa njima} bez tebe.
+mno_special_whip|Idi za njima i rasturaj {s4}.
+mno_encounter_leave|Odustani.
+mno_encounter_retreat|Povuci se, ostavljajući neke od vojnika da pokriju tvoje povlačenje.
+menu_encounter_retreat_confirm|^^^^^Kao član družine sa najvećom osobinom taktike, ({reg2}), {reg3?smislio si:{s3} smislio je} plan koji će tebi i tvojim ljudima pomoći da izvučete žive glave, ali ćeš morati da ostaviš {reg4} vojnika iza sebe da spreče neprijatelja da krenu u poteru.
+mno_leave_behind|Nastavi. Žrtva ovih ljudi će spasiti ostale.
+mno_dont_leave_behind|Ne. Ne ostavljaj nikog iza sebe.
+menu_encounter_retreat|^^^^^Kažeš {reg4} svojih vojnika da zadrže neprijatelja dok se ti povučeš zajedno sa ostatkom družine.
+menu_order_attack_begin|^^^^^^Tvoje trupe se spremaju da napadnu neprijatelja.
+mno_order_attack_begin|Naredi početak napada.
+mno_call_back|Opozovi ih.
+menu_order_attack_2|^{s4}^Tvoje žrtve: {s8}^^Neprijateljske žrtve: {s9}
+mno_order_attack_continue|Naredi svojim vojnicima da nastave napad.
+mno_order_retreat|Opozovi svoje vojnike.
+menu_kingdom_army_quest_report_to_army|{s8} šalje pismo da želi da se ti pridružiš njegovoj novoj vojnoj kampanji. Moraš da povedeš bar {reg13} vojnika, i dobio si instrukcije da što pre nabaviš još ratnika ako ih nemaš dovoljno.
+mno_reject|Pošalji poruku da se previše zauzet.
+mno_send_word|Pošalji poruku da ćeš mu se uskoro pridružiti.
+menu_kingdom_army_quest_messenger|{s8} šalje poruku da želi da priča sa tobom o zadatku koji treba uraditi. Traži da dođeš da ga vidiš što je pre moguće.
+menu_kingdom_army_quest_join_siege_order|{s8} šalje poruku da trebaš da se pridružiš opsadi {s9} u pripremi glavnog napada. Tvoje trupe moraju osvojiti {s9} po svaku cenu.
+menu_kingdom_army_follow_failed|Nisi poslušao naređenja i nisi uspeo da pratiš {s8}. On šalje poruku da pretpostavlja da imaš mnogo hitnija posla, ali upozorava da njegovo strpljenje nije neograničeno.
+menu_battle_debrief|{s11}^Tvoje žrtve:{s8}{s10}^^Neprijateljske žrtve:{s9}
+mno_inspect_troll|Pregledaj oborenog trola
+menu_pre_join|^^^^^Naišao si na bitku između {s2} i {s1}. Odlučuješ da...
+mno_pre_join_help_attackers|Pomogneš {s2}.
+mno_pre_join_help_defenders|Požuriš da pomogneš {s1}.
+mno_pre_join_leave|Ne mešaj se.
+menu_join_battle|^^^Pomažeš {s2} protiv {s1}.^ Imaš {reg22} vojnika spremnih za bitku protiv neprijateljevih {reg11}.^^Bitka se održava u {s3}{s4}.
+mno_join_attack|Juriš na neprijatelja.
+mno_join_order_attack|Naredi svojih trupama da napadnu zajedno sa tvojim saveznicima dok ti ostaješ pozadi.
+mno_join_leave|Odustani.
+menu_join_order_attack|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
+mno_enter|Uđi.
+menu_battlefields|^^^^^^^^^Izaberi polje...
+mno_enter_f1|Polje 1
+mno_enter_f2|Polje 2
+mno_enter_f3|Polje 3
+mno_enter_f4|Polje 4
+mno_enter_f5|Polje 5
+menu_join_siege_outside|^^^^^^{s1} je pod opsadom od strane {s2}.
+mno_approach_besiegers|Približi se opsadnom kampu.
+mno_pass_through_siege|Prođi kroz liniju opsade i uđi u {s1}.
+menu_cut_siege_without_fight|Opsadnici su te pustili da priđeš kapiji bez izazova.
+menu_besiegers_camp_with_allies|{s1} ostaje pod opsadom. Zastave {s2} se vijore iznad kampa opsadnika, gde ste ti i tvoji vojnici dobrodošli.
+mno_talk_to_siege_commander|Zatraži sastanak sa komandantom.
+mno_join_siege_with_allies|Pridruži se sledećem napadu.
+mno_join_siege_stay_back|Naredi svojim vojnicima da se pridruže sledećem napadu bez tebe.
+menu_moria_must_escape|^^Čini se da knjiga opisuje poslednji pokušaj patuljaka da se ponovo nastane u Moriji. Pokušaj koji je očigledno završen jezivom smrću svih umešanih. Pregledavanjem knjige, naleteo si na reči 'pravo srebro'! Proučavajući stranice odjednom shvataš da su to opisi zaliha patuljaka koji su negde na donjim nivoima. Hah! Zar ne bi bilo kul da otkriješ davno izgubljeni mitril patuljaka? ^Željno pratiš uputsva, u uzan krivudav tunel i dole...^...^Nakon nekoliko sati neplodne pretrage shvataš da si izgubljen duboko u Moriji i da moraš da nađeš izlaz.
+mno_moria_exit_scene|Pronađi izlaz!
+menu_castle_outside|Ispred si {s2}.{s11} {s3} {s4}
+mno_moria_enter|Vrati se u glavnu dvoranu Morije kroz skriveni ulaz
+mno_moria_enter_door|Uđi u Moriju.
+mno_castle_start_siege|Izvrši opsadu {reg6?town:castle}.
+mno_castle_leave|Odlazi.
+menu_castle_besiege|Vršiš opsadu {s1.} {s2} {s3}
+mno_siege_request_meeting|Zakaži sastanak sa komandantom zamka.
+mno_wait_24_hours|Čekaj do sutra.
+mno_castle_lead_attack|Vodi svoje vojnike u napad.
+mno_attack_stay_back|Naredi svojim vojnicima da napadnu dok ti ostaješ pozadi...
+mno_build_ladders|Pripremi merdevine za napad na zidine.
+mno_lift_siege|Napusti opsadu.
+menu_siege_attack_meets_sally|^^^^^^Branioci su izašli da dočekaju tvoj napad.
+menu_construct_ladders|Kao član družine sa najvećim Inženjerskim skilom ({reg2}), {reg3?ti predviđaš:{s3} predviđa} da će biti potrebno {reg4} sati da se napravi dovoljno merdevina za napad.
+mno_build_ladders_cont|Uradi to.
+menu_castle_attack_walls_simulate|{s4}^^Tvoje žrtve:{s8}^^Neprijateljske žrtve: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
+menu_castle_taken|{s3} je poklekao pred tvojom vojskom, i sada imaš punu kontrolu nad {reg2?town:castle}. {reg1? Čini se da te ništa ne zaustavlja da ga uzmeš za sebe...:}
+menu_castle_taken_2|{s3} je poklekao pred tvojom vojskom,i sad imas punu kontroli nad tvrdjavom. Vreme je da obavestis {s9} o tvojoj pobedi. {s5}
+mno_castle_taken_no_claim|Ne trazi nista za uzvrat.
+menu_siege_started_defender|{s1} napada zidine {s2}. Imas {reg22} vojnika spremnih za bitku protiv neprijateljevih {ret11}. Odlucujes da...
+mno_siege_defender_join_battle|Udjes u bitku.
+mno_siege_defender_troops_join_battle|Naredis svojim trupama da se bore bez tebe.
+menu_siege_join_defense|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
+menu_village_hunt_down_fugitive_defeated|^^^^^Jak udarac od doticne osobe poslao te je na zemlju,i pao si u nesvest. Prolazu vreme. Kada si dosao sebi,video si da si prekriven krvi, ali si veoma srecan. zato sto ni jedan udarac nije povredio vitalne organe.
+menu_town_bandits_succeeded|^^^^^Uspesno si savladao gobline! Ubrzo si stajao kao jedini preziveli dok su vecina napadaca lezana mrtva ili ranjena. Sigurno ce lokalci biti srecni sto si ih spasao od ovog problema.
+menu_town_brawl_lost|^^^^^^Pao si na zemlju. Oni koji su te napali, brzo su te pretrazili, da nemas nesto vredno kod sebe, pre nego sto su otisli dalje.
+menu_town_brawl_won|^^^^^Pobedio si protivnike, i strazar dolazi da izvidi situaciju. Brzo si uzeo nesto od vrednih stvari koje su imali i pobegao si.^Mozda ce sledeci put pokazati vise postovanja, i udaljiti se na vreme.
+menu_town|Dosao si u {s60}.{s12}{s13}
+mno_town_menu_0|Idi na neku lokaciju.
+mno_town_menu_0_door|Vrata za neku lokaciju.
+mno_town_approach|Pridji {s1}...
+mno_town_castle|Idi u {s1}
+mno_town_castle_door|Vrata od zamka.
+mno_town_center|Hodaj do glavnog trga...
+mno_town_center_door|Vrata za gradski trg.
+mno_aw_chamber_door|Otvori vrata.
+mno_trade_with_arms_merchant|Poseti {s40}.
+mno_trade_with_horse_merchant|Poseti {s41}.
+mno_town_prison_door|Vrata od zatvora.
+mno_dungeon_enter|Trazi izgubljena koplja unutar planine.
+mno_dungeon_enter_door|Otvori vrata.
+mno_talk_to_castle_commander|Poseti {s61} kasarnu.
+mno_speak_with_elder|Razgovaraj sa {s6}.
+mno_isengard_underground|Idi u podzemne pecine.
+mno_tirith_toplevel|Popenji se na vrh.
+mno_town_leave|Napusti...
+mno_town_leave_door|Napusti zonu
+menu_disembark|Zelis li da se iskrcas?
+mno_disembark_yes|Da.
+mno_disembark_no|Ne.
+menu_ship_reembark|Zelis li da se ukrcas?
+mno_reembark_yes|Da.
+mno_reembark_no|Ne.
+menu_center_reports|Ime grada: {s1}^Ukupan dobitak: {reg1} zlata^Dobitak tarife: {reg2} zlata^Ukupno hrane: za {reg3} dana
+menu_sneak_into_town_suceeded|Prerusen u prosjaka, prevario si strazare i usunjao se u grad.
+menu_sneak_into_town_caught|Dok si pokusavao da se usunjas u grad, jedan od strazara te je prepoznao i aktivirao alarm! Sada moras nekako da pobegnes pre neko sto svi strazari dodju do tebe!
+mno_sneak_caught_fight|Izbori se!
+mno_sneak_caught_surrender|Predaj se.
+menu_sneak_into_town_caught_dispersed_guards|Pobegao si strazarima kroz ulice.
+menu_sneak_into_town_caught_ran_away|Uspesno si pobegao kroz kapiju.
+menu_tld_player_defeated|^^^^^Odjednom, prekrio te je neopisiv bol u glavi! \\ Zakukao si, dok je sve oko tebe postalo crno...^Zar je ovo tvoj kraj?
+menu_recover_after_death_fangorn|Probudio si se. Suma je svuda oko tebe. Svaka kost te boli. Ziv si,ali sama nebesa su ti pomogla u tome.^^Poraz je, ali si uspeo da vidis sta se desilo.^Sad znas sta se nalazi u ovoj sumi,^i preziveo si da pricas.^^Da li ce ti iko verovati?
+menu_recover_after_death_moria|^^^^^Dosao si svesti. Lezis na mekoj travi, dok ti svez vazduh pirka oko glave. Napolju si!^Orkovi mora da su mislili da si mrtav pa su te obacili u neku jamu.^Verovatno te je podzemna reka izbavila odatle.
+mno_whatever|Ustani!
+menu_recover_after_death_default|^^^^^Dosao si svesti. Nalazis se na mestu odakle si pao. Neprijatelji su verovatno mislili da si mrtav, pa su te tu i ostavili. Ipak, izgleda da nisi tesko izranjavan i da, iako se osecas grozno idalje mozes da hodas. Ustao si i pogledao si da li ima jos prezivelih, nekim slucajem.
+menu_recover_after_death_town|^^^^Dosao si svesti, i nalazis se u gradskim ulicama. Ziv si! Niko nije oko tebe i iskoristio si priliku da se udaljis od grada. Izgleda da ni jedna rana nije smrtonosna, i iako se osecas uzasno, idalje mozes da hodas.
+menu_recover_after_death_town_alone|^^^^Dosao si svesti, i nalazis se u gradskim ulicama. Ziv si! Niko nije oko tebe i iskoristio si priliku da se udaljis od grada. Pronasli su te tvoji saborci. Izgleda da ni jedna rana nije smrtonosna, i iako se osecas uzasno, idalje mozes da hodas.
+menu_notification_center_under_siege|{s1} se opseda od strane {s2} od {s3}!
+menu_notification_one_side_left|^^^^^Rat prstena je zavrsen!^^{s1} Je porazen i ti stojis kao pobednik!
+menu_notification_total_defeat|^^^^^Rat prstena je zavrsen za tebe!^^{s1} je porazen od strane njihovih protivnika i ti stojis sam u porazu!
+menu_notification_your_faction_collapsed|^^^^^Tvoja {s11} otadzbina je porasena^Ipak, ostali saveznici su idalje u ratu. Ti,zajedno sa prezivelima iz {s11} cete idalje pomagati da pobedi vasa strana.
+menu_notification_faction_defeated|^^^^^{s1} je pobedjen\\pobedjena^{s1} vise je nema, porazena od strane {s13}!
+menu_ruins|^^^^Prisao si {s1}. Nekada jako mesto je sada razruseno do temelja, iako se idalje obrisi bitke mogu videti.
+menu_legendary_place|^^^^Pratio si price, i nasao si {s1}. Sada mozes da istrazis ovo mesto i da vidis da li su price tacne.
+mno_explore|Istrazi lokaciju.
+menu_starting_quest_good|^^^^^^Vidis mali karavan koji je napadnut od strane orkova. Sta ces da uradis?
+mno_help|Pomozi strancima!
+mno_go_your_way|Ostavi ih
+menu_custom_battle_choose_faction1|^^^^^^^^^^Izaberi svoju stranu i prednost:
+mno_good_equal|Dobra frakcija
+mno_bad_equal|Zla frakcija
+mno_replay_prev|Ponovo odigraj prosla podesavanja
+menu_custom_battle_choose_faction2|^^^^^^^^^^Izaberi dobru fakciju
+mno_cb_gondor|Gondor
+mno_cb_gondor1|Rohan
+mno_cb_gondor2|Lothlorien
+mno_cb_gondor3|Rivendel
+mno_cb_gondor4|Mirkvud
+mno_cb_gondor5|Patuljci
+mno_cb_gondor6|Dale
+mno_cb_gondor7|Beorningsi
+menu_custom_battle_choose_faction3|^^^^^^^^^^Izaberi zlu fakciju
+mno_cb_mordor|Mordor
+mno_cb_mordor1|Isengard
+mno_cb_mordor2|Dunland
+mno_cb_mordor3|Haradi
+mno_cb_mordor4|Easterlingsi
+mno_cb_mordor5|Moria
+mno_cb_mordor6|Gundabad
+mno_cb_mordor7|Rhun
+mno_cb_mordor8|Gusari
+mno_rescue_mission|Provuci se nekako pored carobnjakove zastite po noci.
+mno_next_rescue_scene_door|Nastavi napred!
+mno_pick_troops1|Izaberi saborce za misiju, {reg0} izabranih
+menu_pick_troops|Koga bi poveo na tu misju? Za sada si izabrao {reg0} saboraca. Mozes izabrati do 10 trupa da idu sa tobom.
+mno_go_forward|Zavrsi sa selektovanjem saboraca i nastavi.
+menu_burial_mound|Prisao si grobu {s1} od {s2}. Prekriveno je otupljenim oruzjem njegovih neprijatelja
+mno_pay_respects|Klekni i pomoli se.
+mno_swear_oath|Obecaj osvetu!
+mno_despoil|Oskrnavi mesto.
+mno_leave_mound|Napusti grob.
+menu_burial_mound_respects|Kleknuo si i pomolio si se za dusu {s1}, tiho pricajuci molitvu za brze putovanje u zagroban svet. Nema nista vise sto mozes da uradis ovde.
+menu_burial_mound_oath|Glasno si se zakleo za osvetu, zbog smrti {s4}. Sada treba da unistis sto vise snaga {s3}. Ko zna ko je sve cuo tvoje reci, mozda cak i neko preko mora?
+menu_burial_mound_despoil|Unistio si spomenik podignut za {s1} sa svojim rukama i prekrio si kamenje kletvama, psovkama i neverovatnim delima. Tvoja grupa se povukla plaseci se mrtvaka, ali izgleda da imaju vise postovanje prema tebi.
+menu_funeral_pyre|Prisao si lomaci {s3} od {s2}. Ovde je njegovo telo spaljeno od strane njegove licnih telohranibelja. Nista vredno nije ostavljeno.
+mno_leave_pyre|Napusti lomacu.
+menu_town_ruins|Kada si prisao, video si da je {s1} {s2}
+mno_ruin_menu_0|Istrazi lokaciju...
+mno_ruin_leave|Napusti...
+menu_death|Ubijen si. Iako rat idalje besni, ti u njemu vise neces ucestvovati.
+menu_animal_ambush|Ti i tvoji saborci bivate odvojeni od ostatka grupa, kada odjednom...
+menu_animal_ambush_success|{s2} {reg0?fall:falls} je pred tebe kao zito sto pada od kose! Uskoro, svi tvoji napadaci leze na zemlji, mrtvi ili ranjeni. {s3}
+menu_animal_ambush_fail|Zivotinje te grizu i vuku te{reg0?,: i tvog saborca{reg2?s,:,}} ali srecom si uspeo da ih udaljis. Uz malo srece, nece te vise dirati.
+menu_build_your_scene|Ovde mozes napraviti svoju scensku bitku, koristeci jedne od slotova ispod. (moras da ukljucis edit mod pre svega). Posle mozes slodobno da posaljes svoju scenu koju si napravio (to su .sco fajlovi koji se nalaze u TLD/SceneObj folderu) vodjama moda, i ukoliko je scena dobra, mozes je videti u jednom od naredhih verzija moda.^^Probaj da oznacis u kojim lokacijama ce se scena pojaviti.^ Par stvari koje treba da zapamtis su da: izbegavas duboku vodu, visoke planine i ostale slabo pristupacne lokacije, osim ako si veoma iskusan scenski programer i znas kako da kodiras trupe gde da idu.^ (Ulazi #0-1 su za napadace, #4 je za branioce, ne diraj #5-8
+mno_scene1|Bojno polje5 (file scn battlefield5.sco)
+mno_scene2|Bojno polje6 (file scn battlefield6.sco)
+mno_scene3|Bojno polje7 (file scn battlefield7.sco)
+mno_scene4|Bojno polje8 (file scn battlefield8.sco)
+mno_scene5|Bojno polje9 (file scn battlefield9.sco)
+mno_back_3dot|Nazad...

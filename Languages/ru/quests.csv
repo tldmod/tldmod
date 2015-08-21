@@ -1,0 +1,74 @@
+qst_deliver_message|Доставить сообщение {s13}
+qst_deliver_message_text|{s9} попросил ас отправить сообщение {s13}. {s13} был в {s4}, когда вы получили это задание.
+qst_deliver_message_to_enemy_lord|Доставить сообщение {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} попросил вас отправить сообщение {s13} из {s15}. {s13} был в {s4}, когда вы получили это задание.
+qst_raise_troops|Обучить {reg1} {s14}
+qst_raise_troops_text|{s9} попросил вас обучить {reg1} {s14} и привести их к нему.
+qst_escort_messenger|Сопроводить посыльного к {s14}
+qst_escort_messenger_text|Нет
+qst_hunt_down_fugitive|Выследить {s4}
+qst_hunt_down_fugitive_text|{s9} попросил вас выследить беглеца по имени {s4}. В настоящее время считается, что он в {s3}.
+qst_bring_back_runaway_serfs|Приведи обратно Сбежавших Рабов
+qst_bring_back_runaway_serfs_text|{s9} попросил вас привести обратно три группы бежавших рабов в {s2}. Он сказал, что все три группы бегут по направлению к {s3}.
+qst_follow_spy|Проследи за Шпионом до места Встречи
+qst_follow_spy_text|{s11} попросил вас проследить за шпионом, который покинет {s12}. Вы должны быть осторожны и не попасться ему на глаза, иначе он что-то заподозрит и повернёт обратно. Как только шпион встретится с сообщниками, вы должны атаковать и захватить их и привести обратно в {s11}.
+qst_capture_enemy_hero|Захватить в плен вражеского генерала
+qst_capture_enemy_hero_text|{s11} попросил вас захватить в плен вражеского генерала.
+qst_lend_companion|Предоставьте вашего компаньона {s3} на службу к {s9}
+qst_lend_companion_text|{s9} попросил вас предоставить ему вашего компаньона {s3} на неделю.
+qst_capture_prisoners|Привести {reg1} пленных врагов
+qst_capture_prisoners_text|{s9} хочет, чтобы вы привели к нему {reg1} пленных врагов.
+qst_investigate_fangorn|Разведайте Фангорн
+qst_investigate_fangorn_text|{s9} попросил вас разузнать что происходит в лесе Фангорн, и принести ему доклад о том, что вы узнали.
+qst_capture_troll|Захватить Тролля
+qst_capture_troll_text|{s9} попросил вас привести ему дикого тролля для использования в своей армии.
+qst_kill_troll|Остановить яростного тролля
+qst_kill_troll_text|{s9} попросил вас спасти {s13} от угрозы Тролля, бушующего на границе.
+qst_mirkwood_sorcerer|Убить Чародея в Лихолесье
+qst_mirkwood_sorcerer_text|Сила Галадриэль, направленная на защиту Лотлориена, была разрушена ритуалом Чародея из Дол Гулдура. Полагалось что он бессмертен, он представляет большую угрозу Эльфам. Найди его в Лихолесье, неподалёку от Дол Гулдура. Будь скрытен, дабы избежать обнаружения, поскольку будет только одна возможность победить его. 
+qst_find_lost_spears|Найди потерянные копья короля Бладортина
+qst_find_lost_spears_text|{s9} попросил тебя найти потерянные копья, которые однажды сделали гномы для короля Бладортина. Ты должен попросить разрешения на поиски копий к глубинах Одинокой Горы у гномов.
+qst_rescue_prisoners|Спасти {reg1} Заключённых
+qst_rescue_prisoners_text|{s9} попросил вас спасти {reg1} заключённых.
+qst_scout_enemy_town|Разведайте Вражеский Город
+qst_scout_enemy_town_text|{s9} попросил вас разведать территорию вокруг {s13}.
+qst_dispatch_scouts|Отправить Отряд Разведчиков
+qst_dispatch_scouts_text|{s9} попросил вас отправить отряд разведчиков неподалёку от {s13}.
+qst_eliminate_patrols|Уничтожь {reg1} Вражеских Отряда
+qst_eliminate_patrols_text|{s9} попросил вас уничтожить {reg1} {s13} вражеских отрядов.
+qst_lend_surgeon|Предоставьте Вашего Хирурга {s3} на службу к {s1}
+qst_lend_surgeon_text|Предоставьте вашего опытного хирурга {s3} на службу к {s1}.
+qst_follow_army|Следуй за Армией {s9}'s
+qst_follow_army_text|Нет
+qst_report_to_army|Долижи {s13}
+qst_report_to_army_text|Нет
+qst_deliver_cattle_to_army|Доставь {reg3} единиц пищи к {s13} 
+qst_deliver_cattle_to_army_text|Нет
+qst_join_siege_with_army|Присоединись к Осаде {s14}
+qst_join_siege_with_army_text|Нет
+qst_scout_waypoints|Разведай {s13}, {s14} и {s15}
+qst_scout_waypoints_text|Нет
+qst_move_cattle_herd|Отведи {s12} в {s13}
+qst_move_cattle_herd_text|Старейшина из {s10} попросил вас отвести {s12} в {s13}.
+qst_escort_merchant_caravan|Сопроводи Обоз Снабжения в {s8}
+qst_escort_merchant_caravan_text|Сопроводи Обоз Снабжения в {s8}.
+qst_deliver_wine|Доставь {reg5} Единиц {s6} к {s4}
+qst_deliver_wine_text|{s9} из {s3} попросил вас доставить {reg5} единиц {s6} к {s4} за 7 дней.
+qst_troublesome_bandits|Выследи Беспокойных Гоблинов
+qst_troublesome_bandits_text|{s9} из {s4} попросил вас выследить беспокойных гоблинов в окрестностях города.
+qst_deal_with_looters|Разобраться с племенами орков
+qst_deal_with_looters_text|Старейшина из {s4} попросил вас разобраться с несколькими группами племенных орков в округе {s4}.
+qst_deal_with_night_bandits|Разберись с Гоблинами Разбойниками
+qst_deal_with_night_bandits_text|Старейшина из {s14} попросил вас разобраться с ночными гоблинами в {s14}.
+qst_deliver_food|Снабдить {s3} {reg5} единицами пищи.
+qst_deliver_food_text|{s9} из {s3} попросил вас принести {reg5} единиц пищи за 10 дней.
+qst_deliver_iron|Снабдить {s3} {reg5} единицами {s6}.
+qst_deliver_iron_text|{s9} из {s3} попросил вас принести ему {reg5} единиц {s6}.
+qst_tld_introduction|Доставить сообщение о Мордорских орках командиру
+qst_tld_introduction_text|Нет
+qst_treebeard_kill_orcs|Уничтожь отряд орков-лесорубов.
+qst_treebeard_kill_orcs_text|Древобород хочет, чтобы ты уничтожил орков, рубящих лес Фангорн.
+qst_oath_of_vengeance|Клятва Мести
+qst_oath_of_vengeance_text|Находясь в ярости от смерти {s1}, вы клянётесь отомстить силам {s2}. Вы должны уничтожить столько армий {s2}, сколько возможно за эти несколько дней. Вы знаете, что ваши последователи стали свидетелями вашей клятвы и вы не хотите стать известным как клятвопреступник. Ужасное кровопролитие должно начаться сейчас!
+qst_deliver_gift|Доставь {s4} из {s1} из {s2} в {s3}
+qst_deliver_gift_text|Вы попросили доставить {s4} из {s1} из {s2} в {s3}.

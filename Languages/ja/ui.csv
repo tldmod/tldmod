@@ -1,0 +1,48 @@
+ui_at_learning_limit|(種族上限に達しました)
+ui_not_enough_skill_points_to_learn|(スキルポイントが足りません)
+ui_not_enough_attributetype_to_learn_this_skill|(%sが足りません)
+ui_explanation_agility|敏捷性: 1ポイント毎に 5武器ポイントを得ます。 武器を操るのが0.5%速くなります。 以下のスキルは敏捷性の1/3を越えて 上昇させることは出来ません: 盾防御、 アスレチック、 武器熟練、 乗馬、 馬上弓術、 略奪
+ui_retreated_battle|%sは離脱させられました。
+ui_riding_skill_not_adequate_to_mount|(乗馬スキルが足りません)
+ui_camp|アクション
+ui_tutorial_inventory|The Last Daysでは、 装備品を手に入れるには、 リソースポイントが必要になります。 リソースポイントとは、 あるファクションが あなたに対して 物資を提供する意思を どの程度持っているのか、 または、 そのファクションの資源を利用する権利を、 あなたがどの程度持っているか、 を表わす尺度です。
+ui_you_dont_have_value|払えません: %s
+ui_merchant_cant_afford_value|%s: こんなには捌ききれないよ！ もうすこしそちらの手元に 残しておいてくれないか  (%s相当の物資を渡しましたが、 上限は%sです)。
+ui_merchant_pay_whatever|不要なんだ、とっておいてくれ。
+ui_horse|馬
+ui_reclaim_your_sold_goods|その前に、こちらに渡した物を買い戻してくれよ！
+ui_return_your_bought_goods|その前に、そちらに渡した物を返してくれよ！
+ui_return_price|返品した場合: +%d リソースポイント
+ui_sell_price|売った場合: +%d リソースポイント
+ui_reclaim_price|買い戻した場合: -%d リソースポイント
+ui_buying_price|価格: -%d リソースポイント
+ui_notification_riding_skill_not_enough|乗馬スキルが足りません。
+ui_notification_payment_value|%s消費
+ui_notification_payment_receive_value|%s獲得
+ui_weekly_cost_value|維持費: %s
+ui_sell|放出
+ui_hire|雇用
+ui_notification_cant_hire|(雇用するにはリソースポイントが足りません)
+ui_joining_cost_weekly_wage|雇用: %d リソースポイント  --  維持費: %d リソースポイント
+ui_weekly_wage|維持費: %d リソースポイント
+ui_price|価値: %d リソースポイント
+ui_cant_reload_this_weapon_on_horseback|馬上ではこの武器は扱えません。
+ui_delivered_number_damage_to_horse|馬に%dのダメージを与えました。
+ui_horse_charged_for_number_damage|馬が%dのダメージを与えました。
+ui_horse_received_number_damage|馬が%dのダメージを受けました。
+ui_horse_fell_dead|馬が死亡しました・・・
+ui_horse_crippled|馬が怪我をしました・・・
+ui_you_got_value|%sを獲得。
+ui_has_deserted_the_party|はパーティから去りました。
+ui_have_deserted_the_party|はパーティから去りました。
+ui_loading_textures|テクスチャを読み込んでいます(時間がかかります)・・・
+ui_order_hold_fire_toggle|攻撃止め/攻撃しろ(トグル)
+ui_order_dismount_toggle|下馬/騎乗(トグル)
+ui_mount_horses_e_|%s、騎乗せよ！
+ui_hold_fire_e_|%s、攻撃止め！
+ui_fire_at_will_e_|%s、攻撃！
+ui_recent_messages|メッセージ
+ui_value_denars|%dリソースポイント
+ui_cannot_be_used_on_horseback|馬上での使用不可
+ui_upgrade_to_value|%sへアップグレード
+ui_notification_cant_upgrade|(兵士の入れ替え中はアップグレードできません)

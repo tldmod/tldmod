@@ -1,0 +1,74 @@
+qst_deliver_message|{s13}へ手紙を届けよ
+qst_deliver_message_text|{s9}に{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。
+qst_deliver_message_to_enemy_lord|{s13}へ手紙を届けよ
+qst_deliver_message_to_enemy_lord_text|{s9}に{s15}の{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。"
+qst_raise_troops|{s14}を{reg1}人育て上げよ
+qst_raise_troops_text|{s9}に{s14}を{reg1}人育て上げ、 彼に引き渡すよう頼まれた。
+qst_escort_messenger|{s14}まで伝令を護衛せよ
+qst_escort_messenger_text|None
+qst_hunt_down_fugitive|{s4}を追え
+qst_hunt_down_fugitive_text|{s9}に{s4}という名前の逃亡者を　捕まえるよう頼まれた。 逃亡者は現在、 {s3}に潜んでいるとされている。
+qst_bring_back_runaway_serfs|脱走した奴隷を連れ戻せ
+qst_bring_back_runaway_serfs_text|みっつのグループに分かれて逃走中の　奴隷を{s2}に連れ戻すよう、 {s9}に頼まれた。 すべてのグループは　{s3}の方角へ逃げているらしい。
+qst_follow_spy|密会現場までスパイを追跡せよ
+qst_follow_spy_text|{s12}を出発する予定のスパイを追跡するよう、 {s11}に頼まれた。 追跡に気付かれると スパイが密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 スパイが共謀者と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
+qst_capture_enemy_hero|敵の指揮官を捕らえよ
+qst_capture_enemy_hero_text|敵指揮官を捕らえてくるよう、 {s11}に頼まれた。
+qst_lend_companion|コンパニオンの{s3}を{s9}に貸す
+qst_lend_companion_text|{s9}に、コンパニオンの{s3}を 一週間貸してくれと頼まれた。
+qst_capture_prisoners|敵の捕虜を{reg1}名確保せよ
+qst_capture_prisoners_text|敵の捕虜を{reg1}名連れてくるよう、 {s9}に頼まれた。
+qst_investigate_fangorn|ファンゴルンの森を調査せよ
+qst_investigate_fangorn_text|{s9}より、 ファンゴルンの森を調査し、 結果を報告するよう頼まれた。
+qst_capture_troll|トロルを捕獲せよ
+qst_capture_troll_text|{s9}の命令により、 彼の軍隊で利用するための 凶暴なトロルを捕獲してくることになった。
+qst_kill_troll|暴れトロルを倒せ
+qst_kill_troll_text|{s13}のはずれで暴れる トロルの脅威から 住民たちを救うよう、 {s9}に頼まれた。
+qst_mirkwood_sorcerer|闇の森の妖術師を殺せ
+qst_mirkwood_sorcerer_text|ドル・グルドゥアの妖術師が行っている邪悪な儀式によって、 ロスロリエンを護るガラドリエルの力が弱められている。 妖術師は生身の人間だが、 その存在はエルフにとっての大きな脅威となっている。 闇の森にいる妖術師を探し出せ。 ドル・グルドゥアからそう遠くない場所にいるはずだ。 妖術師を倒す機会は一度きりしかない。 警戒をさけるため、 隠密な行動が要求されるだろう。
+qst_find_lost_spears|ブラードルシン王の失われた槍を見つけ出せ
+qst_find_lost_spears_text|かつてドワーフがブラードルシン王のために 鍛えたと伝わる失われた槍を見つけるよう、 {s9}に頼まれた。 はなれ山の奥深くを探索するには、 ドワーフの許可を得なければならない。
+qst_rescue_prisoners|捕虜を{reg1}名救出せよ
+qst_rescue_prisoners_text|捕虜を{reg1}名救出するよう、 {s9}に頼まれた。
+qst_scout_enemy_town|敵の拠点を偵察せよ
+qst_scout_enemy_town_text|{s13}周辺を偵察してくるよう、 {s9}に頼まれた。
+qst_dispatch_scouts|偵察隊を派遣せよ
+qst_dispatch_scouts_text|{s13}付近に偵察隊を派遣するよう、 {s9}に頼まれた。
+qst_eliminate_patrols|敵部隊を{reg1}倒せ
+qst_eliminate_patrols_text|{s13}の敵部隊を{reg1}殲滅するよう、 {s9}に頼まれた。
+qst_lend_surgeon|軍医の{s3}を{s1}に貸す
+qst_lend_surgeon_text|{s1}に、 経験豊富な軍医の{s3}を貸した。
+qst_follow_army|{s9}の部隊に同行せよ
+qst_follow_army_text|None
+qst_report_to_army|{s13}に出頭せよ
+qst_report_to_army_text|None
+qst_deliver_cattle_to_army|食料{reg3}ユニットを {s13}まで届けよ
+qst_deliver_cattle_to_army_text|None
+qst_join_siege_with_army|{s14}攻撃に参加せよ
+qst_join_siege_with_army_text|None
+qst_scout_waypoints|{s13}、 {s14}および {s15}を偵察せよ
+qst_scout_waypoints_text|None
+qst_move_cattle_herd|{s12}を{s13}まで連れて行く
+qst_move_cattle_herd_text|{s10}の長老に、 {s12}を{s13}まで連れて行くよう、頼まれた。
+qst_escort_merchant_caravan|{s8}への補給隊を護衛せよ
+qst_escort_merchant_caravan_text|補給隊を{s8}まで護衛する。
+qst_deliver_wine|{s4}へ{s6}を{reg5}ユニット届けよ
+qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}ユニット届けるよう、 {s3}の{s9}に頼まれた。
+qst_troublesome_bandits|迷惑なゴブリンを退治せよ
+qst_troublesome_bandits_text|町の周辺にいる迷惑なゴブリンを退治するよう、 {s4}の{s9}に頼まれた。
+qst_deal_with_looters|オークの部族を退治せよ
+qst_deal_with_looters_text|{s4}周辺にいる、 いくつかのオークの部族の群れを退治するよう、 {s4}の長老に頼まれた。
+qst_deal_with_night_bandits|ごろつきゴブリンを退治せよ
+qst_deal_with_night_bandits_text|{s14}に、 夜になると出没するというゴブリンを退治するよう、 {s14}の長老に頼まれた。
+qst_deliver_food|{s3}に食料を{reg5}ユニット供給せよ
+qst_deliver_food_text|10日以内に食料を{reg5}調達してくるよう、 {s3}の{s9}に頼まれた。
+qst_deliver_iron|{s3}に{s6}を{reg5}ユニット供給せよ
+qst_deliver_iron_text|{s6}を{reg5}ユニット調達してくるよう、 {s3}の{s9}に頼まれた。
+qst_tld_introduction|指揮官にモルドールのオークについての伝言を届けよ
+qst_tld_introduction_text|None
+qst_treebeard_kill_orcs|木を伐採しているオークの一団を倒せ
+qst_treebeard_kill_orcs_text|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
+qst_oath_of_vengeance|復讐の誓い
+qst_oath_of_vengeance_text|{s1}の死に大いに怒ったあなたは、 {s2}の軍勢に対する復讐を誓った。 あなたはこれからの数日間、 できるだけ多くの{s2}の部隊を 殲滅しなければならない。 多くの部下があなたの誓いを目撃しているため、 失敗すれば、 誓いを破った者として 汚名を着せられることになるだろう。 さあ血の狂乱を始めるのだ！
+qst_deliver_gift|{s2}からの{s1}の{s4}を{s3}に届けよ
+qst_deliver_gift_text|{s2}からの{s1}の{s4}を{s3}に届けるように頼まれた。
