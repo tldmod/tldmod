@@ -8155,7 +8155,7 @@ game_menus = [
   "You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
   Here his corpse was ceremoniously burned by his personal bodyguards. \
   Nothing of value remains.", "none", 
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_draw_funeral_pyre"),
     (store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s3, ":hero"),

@@ -1,4 +1,4 @@
-350
+351
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -349,3 +349,4 @@ mesh_draw_victory_mirkwood 0 draw_victory_mirkwood 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_rivendell 0 draw_victory_rivendell 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_beornings 0 draw_victory_beornings 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_corsairs 0 draw_victory_corsairs 0 0 0 0 0 0 1 1 1
+mesh_draw_funeral_pyre 0 draw_funeral_pyre 0 0 0 0 0 0 1 1 1

@@ -341,5 +341,6 @@ mesh_draw_victory_mirkwood = 339
 mesh_draw_victory_rivendell = 340
 mesh_draw_victory_beornings = 341
 mesh_draw_victory_corsairs = 342
+mesh_draw_funeral_pyre = 343
 
 

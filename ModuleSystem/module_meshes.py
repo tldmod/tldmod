@@ -40,7 +40,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("draw_victory_orc_orc",   0, "draw_victory_orc_orc", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_lorien_arrows",     0, "draw_lorien_arrows", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_spiders",           0, "draw_spiders", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  
+
   ("town_west_emnet"    , 0, "town_west_emnet", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_dol_guldur"    , 0, "town_dol_guldur", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_isengard"      , 0, "town_isengard", 0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -72,7 +72,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("town_evilcamp"      , 0, "town_evilcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_cair_andros"   , 0, "town_cair_andros", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("town_gundabad"      , 0, "town_gundabad", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  
+
   #("pic_prisoner_man", 0, "pic_prisoner_man", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   #("pic_prisoner_fem", 0, "pic_prisoner_fem", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   #("pic_prisoner_wilderness", 0, "pic_prisoner_wilderness", 0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -391,7 +391,7 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("rohan_paint_3",0, "rohan_paint_mesh_f", 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("rohan_paint_4",0, "rohan_paint_mesh_g", 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("rohan_paint_5",0, "rohan_paint_mesh_c", 0, 0, 0, 0, 0, 0, 10, 10, 10), # here start paitings suitable for bulb-centered shields
-  ("rohan_paint_6",0, "rohan_paint_mesh_d", 0, 0, 0, 0, 0, 0, 10, 10, 10),  
+  ("rohan_paint_6",0, "rohan_paint_mesh_d", 0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("rohan_paint_7",0, "rohan_paint_mesh_e", 0, 0, 0, 0, 0, 0, 10, 10, 10),
 ### burned map icons
   ("icon_burn_pattern",0, "tableau_mesh_burn_pattern", 0, 0, 0, 0, 0, 0, 10, 10, 10),
@@ -406,9 +406,9 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("defiled_customize_bg", 0, "defile_ui_background", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("defiled_customize_overlay", 0, "defile_ui_overlay", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ### TLD defiled armor backgrounds
-  ("defiled_gondor_bg" ,0, "tableau_mesh_gondor" , 	0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("defiled_rohan_bg" ,0, "tableau_mesh_rohan" , 	0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("defiled_dale_bg" ,0, "tableau_mesh_dale" , 		0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("defiled_gondor_bg" ,0, "tableau_mesh_gondor" ,  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("defiled_rohan_bg" ,0, "tableau_mesh_rohan" ,    0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("defiled_dale_bg" ,0, "tableau_mesh_dale" ,      0, 0, 0, 0, 0, 0, 1, 1, 1),
 ### TLD defiled armor decals
 ### GONDOR
   ("defiled_gondor_chest1" ,0, "gondor_chest_tear_aa" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -422,17 +422,17 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
   ("defiled_gondor_thigh3" ,0, "gondor_thigh_tear_ac" , 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ### ROHAN
 ### DALE
-  
+
   ]
 
 if wb_compile_switch==1:
   meshes+=[
-	#swy-- for the main menu
+    #swy-- for the main menu
     ("loading_background",                    0, "ui_default_menu_window",    0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("main_menu_background",                  0, "meeting_window",            0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("main_menu_statue",    render_order_plus_1, "pic_mercenary",             0, 0, 0, 0, 0, 0, 1, 1, 1),
-	
-	#swy-- for the escape menu
+
+    #swy-- for the escape menu
     ("pic_mb_warrior_1",    render_order_plus_1, "pic_mb_warrior_1",          0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("pic_mb_warrior_2",    render_order_plus_1, "pic_mb_warrior_2",          0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("pic_mb_warrior_3",    render_order_plus_1, "pic_mb_warrior_3",          0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -441,28 +441,30 @@ if wb_compile_switch==1:
 
 #swy-- these ones were missing and we don't want to break the indexing, do we?
 meshes+=[
-  ("draw_lorien_magic",      0, "draw_lorien_magic", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_war_starts",        0, "draw_war_starts",   0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_bear",              0, "draw_bear",         0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_wolf",              0, "draw_wolf",         0, 0, 0, 0, 0, 0, 1, 1, 1),
-  
-  ("draw_victory_dunland",   0, "draw_victory_dunland", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_victory_khand",     0, "draw_victory_khand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_lorien_magic",      0, "draw_lorien_magic",      0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_war_starts",        0, "draw_war_starts",        0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_bear",              0, "draw_bear",              0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_wolf",              0, "draw_wolf",              0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("draw_victory_dunland",   0, "draw_victory_dunland",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_khand",     0, "draw_victory_khand",     0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_mountain_goblins",  0, "draw_mountain_goblins",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_corsair_renegades", 0, "draw_corsair_renegades", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_dunland_outcasts",  0, "draw_dunland_outcasts",  0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_entdrink_dwarf",    0, "draw_entdrink_dwarf",   0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_entdrink_orc",      0, "draw_entdrink_orc",     0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_entdrink_dwarf",    0, "draw_entdrink_dwarf",    0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_entdrink_orc",      0, "draw_entdrink_orc",      0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_victory_harad",     0, "draw_victory_harad",    0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_victory_rhun",      0, "draw_victory_rhun",     0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_victory_evilman",   0, "draw_victory_evilman",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_harad",     0, "draw_victory_harad",     0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_rhun",      0, "draw_victory_rhun",      0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_evilman",   0, "draw_victory_evilman",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_victory_mirkwood",  0, "draw_victory_mirkwood", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_victory_rivendell", 0, "draw_victory_rivendell",0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_mirkwood",  0, "draw_victory_mirkwood",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_rivendell", 0, "draw_victory_rivendell", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_victory_beornings", 0, "draw_victory_beornings",0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_victory_corsairs",  0, "draw_victory_corsairs", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_beornings", 0, "draw_victory_beornings", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_corsairs",  0, "draw_victory_corsairs",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("draw_funeral_pyre",      0, "draw_funeral_pyre",      0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
