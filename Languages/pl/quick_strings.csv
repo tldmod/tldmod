@@ -479,15 +479,15 @@ qstr___Archer_formation_d|  Formacja łuczników rozwiązana.
 ; qstr_{s1}_has_fled_the_ba|{s1} has fled the battle!
 ; qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
 ; qstr_Morale_of_your_troop|Morale of your troops wavers!
-; qstr_Morale_of_your_enemi|Morale of your enemies wavers!
-; qstr_Your_enemies_flee_in|Your enemies flee in terror!
+qstr_Morale_of_your_enemi|Morale przeciwnika maleją!
+qstr_Your_enemies_flee_in|Twoi przeciwnicy uciekają w popłochu!
 ; qstr_Many_of_your_enemies|Many of your enemies are fleeing from battle.
 ; qstr_Some_of_your_enemies|Some of your enemies are fleeing from battle.
-; qstr_A_few_of_your_enemie|A few of your enemies are fleeing from battle.
-; qstr_Your_troops_flee_in_|Your troops flee in terror!
-; qstr_Many_of_your_troops_|Many of your troops are fleeing from battle.
-; qstr_Some_of_your_troops_|Some of your troops are fleeing from battle.
-; qstr_A_few_of_your_troops|A few of your troops are fleeing from battle.
+qstr_A_few_of_your_enemie|Kilku ludzi wroga ucieka z bitwy.
+qstr_Your_troops_flee_in_|Twoi ludzie uciekają w popłochu!
+qstr_Many_of_your_troops_|Wielu twoich ludzi ucieka z bitwy!
+qstr_Some_of_your_troops_|Znaczna część twoich ludzi ucieka z bitwy.
+qstr_A_few_of_your_troops|Kilku twoich ludzi ucieka z bitwy.
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
@@ -498,7 +498,7 @@ qstr_You_have_found_the_lo|Znalazł{e/a}ś miejscowy autorytet...
 qstr_You_have_found_the_loc|Znalazł{e/a}ś miejscowy magazyn...
 ; qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
 qstr_Forming_ranks.|Formować szeregi!
-; qstr_You_fall_off_of_your|You fall off of your mount!
+qstr_You_fall_off_of_your|Spadłeś ze swojego wierzchowca!
 ; qstr_Received_{reg0}_dama|Received {reg0} damage.
 ; qstr_{s1}_fell_unconsciou|{s1} fell unconscious.
 qstr_Three_Nazguls_are_ci|Trzy Nazgule krążą nad polem bitwy!
@@ -517,10 +517,10 @@ qstr_{s11}_is_{s10}_in_th|{s11} {s10} w wyniku ataku Nazgula!
 ; qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
 ; qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
 ; qstr_Your_bravery_inspire|Your bravery inspires your troops!
-; qstr_Everyone|Everyone
-; qstr_Infantry|Infantry
+qstr_Everyone|Wszyscy
+qstr_Infantry|Piechota
 qstr_Archers|Łuczników
-; qstr_Cavalry|Cavalry
+qstr_Cavalry|Kawaleria
 ; qstr_{s1}_and_{s2}|{s1} and {s2}
 ; qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} and {s3}
 ; qstr_{s10}_Move_over_ther|{s10}, Move over there!
@@ -600,7 +600,7 @@ qstr_Faction_strengths_re|Raport siły frakcji:^{s2}
 qstr_Attacking_enemy_part|Atakuje wrogi oddział {s11}
 qstr_Unknown_{reg3}_|Nieznany({reg3})
 qstr_ON|WŁ
-; qstr_OFF__cheat_|OFF (cheat)
+qstr_OFF__cheat_|Wyłączony (oszustwo)
 qstr_OFF|WYŁ
 ; qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
 ; qstr_{reg0}__could_possib|{reg0} (could possibly cause save crashes)
@@ -674,7 +674,7 @@ qstr__You_see_the_banner_o| Widząc powiewający nad bramami sztandar wnioskujes
 qstr__The_townsfolk_here_| Miejscowi uważają się za niepodległych.
 ; qstr_Go_to_the_secret_ent|Go to the secret entrance to Moria
 qstr_Search_for_a_secret_|Szukaj sekretnego wejścia do Morii
-; qstr_Get_book.|Get book.
+qstr_Get_book.|Zdobądź książkę.
 qstr_The_{reg6?town_s:cas|Zapas żywności {reg6?miasta:zamku} wystarczy na {reg3} dni.
 qstr_The_{reg6?town_s:cast|Zapasy żywności {reg6?miasta:zamku} skończyły się i obrońcy głodują.
 qstr_You_re_preparing_to_|Przygotowujesz się do ataku na mury ({reg9} godzin by zakończyć przygotowania).
@@ -883,12 +883,12 @@ qstr_{s4}_^Oh_and_take_bac|{s4} ^Aha, i zabierz z powrotem tych żołnierzy, kt�
 qstr_It_is_my_duty_to_hel|Moim obowiązkiem jest pomoc naszym ludziom.
 qstr_It_is_my_duty_to_help|Moim obowiązkiem jest pomoc naszym sprzymierzeńcom.
 ; qstr_The_people_of_{s3}_t|The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}.
-; qstr_I_want_to_deliver_a_|I want to deliver a gift to our allies.
-; qstr_delivering_a_gift|delivering a gift
+qstr_I_want_to_deliver_a_|Chcę wysłać podarki do wszystkich naszych sojuszników
+qstr_delivering_a_gift|wysyłanie podarunku
 ; qstr_I_want_to_bring_a_br|I want to bring a bribe to our allies.
 ; qstr_delivering_a_bribe|delivering a bribe
 ; qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Resource Points]
-; qstr_Gift|Gift
+qstr_Gift|Podarunek
 ; qstr_You_have_requested_t|You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture.
 ; qstr_Bribe|Bribe
 ; qstr_You_have_requested_to|You have requested to deliver a bribe of {s1} to {s3} from {s2}. Hopefully you can get some sort of reward from them in exchange.

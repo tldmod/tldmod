@@ -1,5 +1,5 @@
 ; ui_at_learning_limit|(at learning limit for this race)
-; ui_not_enough_skill_points_to_learn|(not enough skill points to learn)
+ui_not_enough_skill_points_to_learn|(Niewystarczająca ilość punktów umiejętności aby się nauczyć)
 ; ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
 ; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
 ; ui_retreated_battle|%s has been routed.
@@ -21,7 +21,7 @@ ui_notification_riding_skill_not_enough|Twoje umiejętności jeździeckie nie s�
 ; ui_notification_payment_receive_value|Gaining %s
 ; ui_weekly_cost_value|Upkeep: %s
 ui_sell|Daj
-; ui_hire|Enlist
+ui_hire|Werbunek
 ; ui_notification_cant_hire|(not enough R.P. to enlist)
 ; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
 ui_weekly_wage|Koszty utrzymania: %d Res.P

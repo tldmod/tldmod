@@ -301,9 +301,9 @@ qstr_N/A|N/D
 ; qstr_Free|Free
 qstr_Any_Weapon|Qualsiasi arma
 ; qstr_Blunt_Weapons|Blunt Weapons
-; qstr_Infantry__{reg1}_|Infantry ({reg1})
-; qstr_Archers__{reg2}_|Archers ({reg2})
-; qstr_Cavalry__{reg3}_|Cavalry ({reg3})
+qstr_Infantry__{reg1}_|Fanteria ({reg1})
+qstr_Archers__{reg2}_|Arceri ({reg2})
+qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
 ; qstr_Orc_brew_finished!|Orc brew finished!
 ; qstr_Given_by:_{s62}|Given by: {s62}
 ; qstr_Given_on:_{s60}|Given on: {s60}
@@ -321,12 +321,12 @@ qstr_no_one|nessuno
 qstr_{s11}_and_{s12}|{s11} e {s12}
 qstr_{s11}_{s12}|{s11}, {s12}
 ; qstr_{s5}_is_ruled_by_{s6|{s5} is ruled by {s6}.^It controls {s8}.^Its commanders are {s10}.^{s5} is at war with {s12}.
-; qstr_{s5}_has_been_defeat|{s5} has been defeated!
+qstr_{s5}_has_been_defeat|{s5} è stato sconfitto!
 ; qstr_{s5}_has_a_strength_|{s5} has a strength of {reg1} men in total.
 ; qstr_no_holdings|no holdings
 qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
-; qstr_{reg3?She:He}|{reg3?She:He}
+qstr_{reg3?She:He}|{reg3?Lei:Lui}
 ; qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
 ; qstr_The_last_time_you_sa|The last time you saw {reg1?her:him}, {s1}
 ; qstr_The_last_time_you_he|The last time you heard about {reg1?her:him}, {s1}
@@ -517,7 +517,7 @@ qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11}!
 ; qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
 ; qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
 ; qstr_Your_bravery_inspire|Your bravery inspires your troops!
-; qstr_Everyone|Everyone
+qstr_Everyone|Tutti
 qstr_Infantry|Fanteria
 qstr_Archers|Arcieri
 qstr_Cavalry|Cavalleria 
@@ -553,7 +553,7 @@ qstr_Alarm_Level_is_now_at_|Il livello di allarme è ora a 2!
 ; qstr_Report_this_ill_news|Report this ill news to the Lady at once.
 ; qstr_The_sorcerer_is_flee|The sorcerer is fleeing! Kill him!
 ; qstr_The_sorcerer_is_dead|The sorcerer is dead!
-; qstr_The_battle_is_won!|The battle is won!
+qstr_The_battle_is_won!|La battaglia è vinta!
 ; qstr_Look_at_my_over_the_|Look at my over-the-shoulder shot, {playername}! I'm so beautiful from a distance!
 ; qstr_You_wish_old_man_my_|You wish, old man, my over-the-shoulder view is much prettier!
 ; qstr_You_should_really_se|You should really see Steward Denetor's Facebook photos, he's amazing!
@@ -566,25 +566,25 @@ qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 ; qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 ; qstr_^No_food:___{reg7}|^No food:  -{reg7}
 ; qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
-; qstr_Defending|Defending
+qstr_Defending|Difendendo
 ; qstr_Gathering_army|Gathering army
-; qstr_Besieging_{s11}|Besieging {s11}
-; qstr_Raiding_{s11}|Raiding {s11}
-; qstr_Attacking_enemies_ar|Attacking enemies around {s11}
+qstr_Besieging_{s11}|Assediando {s11}
+qstr_Raiding_{s11}|Razziando {s11}
+qstr_Attacking_enemies_ar|Attaccando i nemici attorno {s11}
 qstr_No_one|Nessuno.
 ; qstr_{s9}{s10}^Current_st|{s9}{s10}^Current state: {s11}^Marshall: {s12}^Since the last offensive: {reg1} hours^Offensive maximum followers: {reg2}^^
 ; qstr_Selected_faction_is:|Selected faction is: {s10}^^{s9}
-; qstr_You_are_in_perfect_h|You are in perfect health.
+qstr_You_are_in_perfect_h|Sei in perfetta salute.
 ; qstr_You_are_suffering_fr|You are suffering from {s1}.
 ; qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
 ; qstr_You_are_suffering_from|You are suffering from {s1}, {s2}, and {s3}.
 ; qstr_You_are_suffering_from_|You are suffering from {s1}, {s2}, {s3} and {s4}.
 ; qstr_Weekly_upkeep_for_tr|Weekly upkeep for troops:^{reg5} Resource Points^
 ; qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Resource points ({reg5})
-; qstr_No_upkeep_costs|No upkeep costs
+qstr_No_upkeep_costs|Nessun costo di mantenimento
 ; qstr_Orc_hiring_bonus:_+2|Orc hiring bonus: +2/3 for each orc^
 ; qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
-; qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
+qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 ; qstr__________Faction_str|         Faction strengths report:^{s2}
 ; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
@@ -640,10 +640,10 @@ qstr__{s17}.|, {s17}.
 ; qstr_The_battle_against_t|The battle against the group of {s1} continues.
 ; qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
 ; qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
-; qstr_You_were_victorious!|You were victorious!
+qstr_You_were_victorious!|Hai vinto!
 ; qstr_The_battle_was_lost.|The battle was lost. Your forces were utterly crushed.
 ; qstr_Your_companions_carr|Your companions carry you away from the fighting.
-; qstr_You_have_defeated_th|You have defeated the enemy.
+qstr_You_have_defeated_th|Hai sconfitto il nemico.
 ; qstr_You_have_retreated_f|You have retreated from the fight.
 ; qstr_^^Ally_Casualties:{s|^^Ally Casualties:{s0}
 ; qstr_News_of_your_victory|News of your victory against {s4} reach {s3}.
@@ -854,7 +854,7 @@ qstr_Thank_you_commander.|Grazie, comandante.^
 ; qstr_I_don_t_need_them_an|I don't need them anyway, so save it.
 ; qstr_It_is_my_duty_to_pro|It is my duty to protect our people.
 ; qstr_It_is_my_duty_to_prot|It is my duty to protect our allies.
-; qstr_I_am_{s4}_{s15}_of_{|I am {s4}, {s15} of {s6}
+qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
 ; qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
 ; qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
 ; qstr_Very_well_done_{play|Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped, and the pair are now safely locked up, waiting to be questioned. They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.

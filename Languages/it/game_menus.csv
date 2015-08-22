@@ -301,7 +301,7 @@ mno_whatever|Alzati!
 menu_recover_after_death_default|^^^^^Riprendi conoscenza. Giaci nel posto in cui sei caduto. I nemici devono averti creduto morto e ti hanno lasciato lì. Comunque, pare che nessuna delle tue ferite sia letale, e anche se ti senti in modo orribile, ti rendi conto di essere in grado di camminare. Ti alzi e cerchi altri sopravvissuti della tua compagnia.
 menu_recover_after_death_town|^^^^Riprendi conoscenza a ti accorgi di trovarti nella periferia cittadina. Sei sopravvissuto! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. Sembra che nessuna delle tue ferite sia stata letale, anche se ti senti uno straccio, riesci ancora a camminare.
 menu_recover_after_death_town_alone|Riprendi conoscenza a ti accorgi di trovarti nella periferia cittadina. Sei sopravvissuto! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. I tuoi compagni ti trovano. Sembra che nessuna delle tue ferite sia stata letale, anche se ti senti uno straccio, riesci ancora a camminare.
-; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
+menu_notification_center_under_siege|{s1} è stata assediata da {s2} of {s3}!
 menu_notification_one_side_left|^^^^^La Guerra dell'Anello è terminata!^^Il {s1} ha sconfitto tutti i nemici e ora si erge vittorioso!
 menu_notification_total_defeat|^^^^^La Guerra dell'Anello è terminata per te!^^Il {s1} è stato sconfitto dai suoi nemici e tu sei rimasto solo nella sconfitta!
 ; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.

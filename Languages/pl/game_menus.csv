@@ -28,7 +28,7 @@ mno_view_character_report_02|NPC status check.
 mno_view_faction_strengths_report|Obejrzyj raport siły frakcji.
 mno_view_traits_report|View traits.
 mno_resume_travelling|Wróć.
-mno_custom_battle_go|Start.
+mno_custom_battle_go|Rozpocznij.
 mno_leave_custom_battle_2|Anuluj.
 menu_custom_battle_end|^^^^^^Bitwa skończona. {s1} Twój oddział zabił {reg5} wrogów, tracąc przy tym {reg6} ludzi.^Z twej ręki poległo {reg7} wrogów.
 mno_replay|Rozegraj bitwę ponownie
@@ -68,7 +68,7 @@ mno_start_hand|Saruman z Isengardu, Biała Dłoń
 menu_start_eye|^^^^^^^^^Twoim Mistrzem jest Oko^Wybierz rasę
 mno_start_or|Ork, służący Oku Bez Powiek
 mno_start_ur|Urok, nowa rasa orków
-mno_start_em|Człowiek, podporządkowany przez Sarumana
+mno_start_em|Człowiek, podporządkowany pod Saurona
 menu_start_hand|^^^^^^^^^Twoim Mistrzem jest Biała Ręka^Wybierz rasę
 mno_start_whor|Ork, służący Białej Dłoni
 mno_start_isur|Uruk-hai, rozmnożony w Isengardzie
@@ -108,21 +108,21 @@ menu_start_hand_orc|^^^^^^^^^^Gdzie się narodziłes?
 mno_start_minmo|w Kopalniach Moria
 mno_start_cliff|na zboczach góry GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Wybierz rodowód
-; mno_start_1_com|Commoner
+mno_start_1_com|Robotnik.
 ; mno_start_2_hib|High-born
 menu_start_haradrim|^^^^^^^Jesteś Haradrimem,^człowiekiem Pustyni.^Wybierz swój ród
-; mno_start_1_des|Desert Man
+mno_start_1_des|Człowiek pustyni.
 mno_start_2_far|Plemieniec Dalekiego Haradu
 menu_choose_gender|^^^^^^^^^^Twoja płeć?
 mno_start_male|Mężczyzna
 mno_start_female|Kobieta
-; mno_proc|Proceed as normal
+mno_proc|Postępować normalnie.
 mno_continue|Dalej...
 menu_character_report|^^^^^Morale oddziału: {reg8}^Limit wielkości oddziału: {reg7}^
 menu_camp|^^^^Rozbijasz obóz.{s2}^^Co chcesz zrobić?
 mno_camp_scene|Przespacerować się.
 ; mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
-mno_camp_action|.....
+mno_camp_action|Użyj obiektu
 mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmienić opcje TLD.
 mno_Cheat_enable|Włączone oszustwa/tryb moderski
@@ -159,7 +159,7 @@ menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, któryc
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
 menu_fangorn_danger|^^^^^^Dziwne, otaczają cie jakby szepty.^Czyżby to rozmawiały drzewa? W powietrzu można wyczuć głeboki gniew i ból.^Twoje rozkazy?
 mno_be_quiet_elf|Poszanuj panujący wokół spokój. Poruszaj się jak najciszej.
-mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
+mno_be_quiet|Umieść broń na ziemi i baz cicho a teraz wynocha.
 mno_be_bold|Go on! I'm not afraid of plants or old myths!
 mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
@@ -266,9 +266,9 @@ mno_town_menu_0|Go to some location.
 mno_town_menu_0_door|Door to some location.
 mno_town_approach|Approach {s1}...
 mno_town_castle|Go to {s1}.
-mno_town_castle_door|Door to the castle.
+mno_town_castle_door|Drzwi do zamku.
 mno_town_center|Walk to the main square...
-mno_town_center_door|Door to the town center.
+mno_town_center_door|Drzwi do wieży centralnej.
 mno_aw_chamber_door|Open the door.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
@@ -297,7 +297,7 @@ menu_sneak_into_town_caught_ran_away|Zostawiasz miasto za sobą i uciekasz na wz
 menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
 menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
 menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.
-mno_whatever|Get up!
+mno_whatever|Wstawaj
 menu_recover_after_death_default|^^^^^You regain your conciousness. You are in the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.  You get up and try to look for any other survivors from your party.
 menu_recover_after_death_town|^^^^You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town.  It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
 menu_recover_after_death_town_alone|You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town. Your companions find you. It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
@@ -313,7 +313,7 @@ menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band
 mno_help|Help the strangers!
 mno_go_your_way|Leave them alone
 menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
-; mno_good_equal|Good faction
+mno_good_equal|Dobra frakcja.
 ; mno_bad_equal|Evil faction
 ; mno_replay_prev|Replay previous setup
 menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
@@ -352,7 +352,7 @@ menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} 
 ; mno_leave_pyre|Leave the pyre.
 menu_town_ruins|When you approach, you see that {s1} is {s2}
 mno_ruin_menu_0|Explore the place.
-mno_ruin_leave|Leave...
+mno_ruin_leave|Wyjdz...
 ; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}

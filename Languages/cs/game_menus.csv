@@ -182,7 +182,7 @@ mno_get_out|Musime zmizet z tohoto prokleteho mista!
 ; menu_cattle_herd|You encounter some people.
 ; mno_cattle_drive_away|Order them to follow.
 ; mno_cattle_stop|Bring them to a stop.
-; mno_leave|Leave.
+mno_leave|Odejit.
 ; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 ; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
@@ -195,7 +195,7 @@ mno_get_out|Musime zmizet z tohoto prokleteho mista!
 ; menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
 ; menu_order_attack_begin|^^^^^^          Your troops prepare to attack the enemy.
 ; mno_order_attack_begin|Order the attack to begin.
-; mno_call_back|Call them back.
+mno_call_back|Zavolat zpet
 ; menu_order_attack_2|^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}
 ; mno_order_attack_continue|Order your soldiers to continue the attack.
 ; mno_order_retreat|Call your soldiers back.
@@ -237,7 +237,7 @@ mno_get_out|Musime zmizet z tohoto prokleteho mista!
 ; mno_moria_enter|Return into main hall of Moria trough the secret entrance
 ; mno_moria_enter_door|Enter Moria.
 ; mno_castle_start_siege|Besiege the {reg6?town:castle}.
-; mno_castle_leave|Leave.
+mno_castle_leave|Odejit
 ; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
 ; mno_siege_request_meeting|Call for a meeting with the castle commander.
 ; mno_wait_24_hours|Wait until tomorrow.
@@ -319,22 +319,22 @@ mno_reembark_no|Ne.
 ; menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
 mno_cb_gondor|Gondor
 mno_cb_gondor1|Rohan
-mno_cb_gondor2|Lothlórien
+mno_cb_gondor2|Lothlorien
 ; mno_cb_gondor3|Rivendell
 ; mno_cb_gondor4|Mirkwood
 ; mno_cb_gondor5|Dwarves
 mno_cb_gondor6|Dol
-mno_cb_gondor7|Meddědovci
+mno_cb_gondor7|Meddedovci
 ; menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
 mno_cb_mordor|Mordor
-mno_cb_mordor1|Železný pas
+mno_cb_mordor1|Zelezny Pas
 ; mno_cb_mordor2|Dunland
 ; mno_cb_mordor3|Haradrim
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Morie
 ; mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun
-; mno_cb_mordor8|Corsairs
+mno_cb_mordor8|Korzari
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 ; mno_next_rescue_scene_door|Continue onward!
 ; mno_pick_troops1|Pick companions for the mission, {reg0} selected
