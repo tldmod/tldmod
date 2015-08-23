@@ -8186,7 +8186,7 @@ game_menus = [
 ( "burial_mound_despoil", 0, 
   "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.\
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
-	[(set_background_mesh, "mesh_ui_default_menu_window"),
+	[(set_background_mesh, "mesh_draw_mound_desecrated"),
 	(store_encountered_party, ":mound"),(party_get_slot, ":hero", ":mound", slot_party_commander_party),(str_store_troop_name, s1, ":hero"),
 	 (store_random, ":rnd", 100),
 	 (try_begin),(is_between, ":rnd", 5, 10),
