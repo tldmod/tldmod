@@ -1,4 +1,4 @@
-1115
+1118
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -724,6 +724,9 @@ qstr_Normal Normal
 qstr_Defender_only Defender_only
 qstr_Halved Halved
 qstr_Battles_only Battles_only
+qstr_Doubled Doubled
+qstr_Tripled Tripled
+qstr_Quadrupled Quadrupled
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.

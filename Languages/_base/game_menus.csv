@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
 mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
+mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Back to tweaks menu.
 menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_customize_defilement|Customize Defiled Armor

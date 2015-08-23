@@ -474,16 +474,32 @@ scripts = [
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":old_rank", reg0),
           (faction_get_slot, ":val", ":fac", slot_faction_rank),
+
+          #swy-- uninitialized globals default to zero,
+          #   -- take advantage of this by adding one to get the saved multiplier:
+          #   -- 0 = x1 | 1 = x2 | 2 = x3 | 3 = x4
+          (store_add,                ":rank_multiplier", "$tld_option_rank_gain_rate", 1),
+          (val_mul,   ":difference", ":rank_multiplier"),
+          #swy-- 
+
           (val_add, ":val", ":difference"),
-          (ge, ":val", 0), #no negative rank points
+          (ge,      ":val", 0), #no negative rank points
           (faction_set_slot, ":fac", slot_faction_rank, ":val"),
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":new_rank", reg0),
           
-        # gain influence = 1/8 rank points gain (rounded) Was 1/10
+          # gain influence = 1/8 rank points gain (rounded) Was 1/10
           (faction_get_slot, ":val", ":fac", slot_faction_influence),
           (store_add, ":inf_dif", ":difference", 8/2),
-          (val_div, ":inf_dif", 8),
+          (val_div,   ":inf_dif", 8),
+
+          #swy-- uninitialized globals default to zero,
+          #   -- take advantage of this by adding one to get the saved multiplier:
+          #   -- 0 = x1 | 1 = x2 | 2 = x3 | 3 = x4
+          (store_add,             ":inf_multiplier", "$tld_option_influence_gain_rate", 1),
+          (val_mul,   ":inf_dif", ":inf_multiplier"),
+          #swy--
+
           (val_add, ":val", ":inf_dif"),
           (faction_set_slot, ":fac", slot_faction_influence, ":val"),
 
