@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Pozadovana sila k dobyvani: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlost snizovani pozadavku na silu pro dobyvani: {reg1}
 mno_strat_tweaks_regen_rate|Rychlost obnovy sily frakce: {s7}
 mno_strat_tweaks_siege_regen_limit|Od teto hranice se frakce neobnovuji: {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Zpet do menu uprav.
 menu_camp_action|^^^^^^^^^ Ktery predmet?
 mno_camp_customize_defilement|Vytvor si Poskvrnenou Zbroj

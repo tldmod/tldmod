@@ -150,6 +150,8 @@ mno_game_options_compat_back|Wróć do menu ulepszeń.
 ; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 ; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 ; mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 ; mno_camp_customize_defilement|Customize Defiled Armor

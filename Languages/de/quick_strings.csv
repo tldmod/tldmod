@@ -608,6 +608,9 @@ qstr_Normal|Normal
 qstr_Defender_only|nur Verteidiger
 qstr_Halved|Halbiert
 qstr_Battles_only|nur Kämpfe
+; qstr_Doubled|Doubled
+; qstr_Tripled|Tripled
+; qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|Du hast Entwasser getrunken...
 qstr_Fangorn_search:_fail|Fangorn-Suche: gescheitert.
 qstr_Troll_caged_in_wheel|Troll im Rollkäfig gefangen.

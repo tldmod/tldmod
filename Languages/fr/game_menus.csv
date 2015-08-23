@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Force requise pour les sièges : {s7}
 mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 mno_strat_tweaks_regen_rate|Taux de régénération de force : {s7}
 mno_strat_tweaks_siege_regen_limit|Les factions ne se régénèrent pas en-dessous de : {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Retour au menu des options.
 menu_camp_action|^^^^^^^^^ Quel objet ?
 mno_camp_customize_defilement|Personnaliser armure souillée

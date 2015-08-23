@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Stärkevoraussetzungen für Belagerungen: {s7}
 mno_strat_tweaks_siege_relax_rate|Lockerungsrate für Stärkevoraussetzungen für Belagerungen: {reg1}
 mno_strat_tweaks_regen_rate|Stärke-Regenerationsrate: {s7}
 mno_strat_tweaks_siege_regen_limit|Fraktionen erholen sich nicht mehr, wenn unter: {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Zurück zum Optimierungs-Menü.
 menu_camp_action|^^^^^^^^^ Welchen Gegenstand?
 mno_camp_customize_defilement|Geschändete Rüstung anpassen

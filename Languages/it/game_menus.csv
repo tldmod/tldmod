@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso rigenerazione forza: {s7}
 mno_strat_tweaks_siege_regen_limit|Le fazioni non rigenerano sotto: {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
 menu_camp_action|^^^^^^^^^ Quale oggetto?
 mno_camp_customize_defilement|Personalizza armatura corrotta

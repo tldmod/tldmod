@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^¿Por qué fin lucháis?
 mno_start_good|Por el AMANECER de una nueva Era
 mno_start_evil|Por el OCASO del Hombre
 mno_go_bback|Volver atrás
-menu_start_phase_2|^^^^^En la Tierra Media una sombra está creciendo en el Este, ^ agentes oscuros que hasta ahora permanecían ocultos en la sombra están resurgiendo. ^Los pueblos libres se preparan para la guerra, una guerra no antes vista en esta era. ^Hombres, Elfos, Enanos y Orcos; todos tomarán parte. ^^Qué parte, sin embargo, está aún por verse... 
+menu_start_phase_2|^^^En la Tierra Media una sombra está creciendo en el Este, ^ agentes oscuros que hasta ahora permanecían ocultos en la sombra están resurgiendo. ^Los pueblos libres se preparan para la guerra, una guerra no antes vista en esta era. ^Hombres, Elfos, Enanos y Orcos; todos tomarán parte. ^^Qué parte, sin embargo, está aún por verse... 
 mno_go_forth|Sigue adelante por el camino elegido...
 menu_start_game_3            |^^^^^^^^Elige tu escenario:
 mno_custom_battle_scenario_1 |Escaramuza, Facciones de Gondor contra Harad
@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Requisitos de fuerza para asedio: {s7}
 mno_strat_tweaks_siege_relax_rate|Req. de fuer. para asedio: Velocidad de mitigación: {reg1}
 mno_strat_tweaks_regen_rate|Velocidad de regeneración de fuerza: {s7}
 mno_strat_tweaks_siege_regen_limit|No regenerar facciones por debajo de: {reg1}
+mno_strat_tweaks_influence_gain_rate|Velocidad de obtención de influencia: {s7}
+mno_strat_tweaks_rank_gain_rate|Velocidad de obtención de rango: {s7}
 mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_customize_defilement|Personalizar Armadura Profanada

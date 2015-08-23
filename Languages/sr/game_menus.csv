@@ -150,6 +150,8 @@ mno_strat_tweaks_siege_reqs|Zahtevi za opsadu: {s7}
 mno_strat_tweaks_siege_relax_rate|Odmaranje vezano za opsadu: {reg1}
 mno_strat_tweaks_regen_rate|Regeneracija snage: {s7}
 mno_strat_tweaks_siege_regen_limit|Fakcije ne regenerisu snagu ispod: {reg1}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Vrati se nazad.
 menu_camp_action|^^^^^^^^^ Koji objekat?
 mno_camp_customize_defilement|Modifikuj slab oklop

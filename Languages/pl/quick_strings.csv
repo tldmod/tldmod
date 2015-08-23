@@ -574,7 +574,7 @@ qstr_Attacking_enemies_ar|Atakuje wrogów zbliżających się pod {s11}
 qstr_No_one|Nikt
 qstr_{s9}{s10}^Current_st|{s9}{s10}^Obecny stan: {s11}^Marszałek: {s12}^Od ostatniej ofensywy: {reg1} godzin^Najwięcej uczestników ofensywy: {reg2}^^
 qstr_Selected_faction_is:|Wybrana frakcja: {s10}^^{s9}
-; qstr_You_are_in_perfect_h|You are in perfect health.
+qstr_You_are_in_perfect_h|Jesteś w pełnym zdrowiu.
 ; qstr_You_are_suffering_fr|You are suffering from {s1}.
 ; qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
 ; qstr_You_are_suffering_from|You are suffering from {s1}, {s2}, and {s3}.
@@ -589,7 +589,7 @@ qstr__________Faction_str|         Raport siły frakcji:^{s2}
 ; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Zyskane umiejętności:^{s2}
-; qstr_^^You_are_{s17}.|^^You are {s17}.
+qstr_^^You_are_{s17}.|^^Jesteś {s17}.
 qstr_Assassins_in_the_cam|Zabójcy w obozie, broń się!
 ; qstr_Ally_party_size:_{re|Ally party size: {reg1}
 ; qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
@@ -608,6 +608,9 @@ qstr_OFF|WYŁ
 ; qstr_Defender_only|Defender only
 ; qstr_Halved|Halved
 ; qstr_Battles_only|Battles only
+; qstr_Doubled|Doubled
+; qstr_Tripled|Tripled
+; qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|Napił{e/a}ś się Wody Entów...
 qstr_Fangorn_search:_fail|Przeszukiwanie Fangornu: zakończone niepowodzeniem.
 qstr_Troll_caged_in_wheel|Trol zamknięty w klatce.
@@ -742,7 +745,7 @@ qstr_{s2}_was_defeated!|{s2} poniósł porażkę!
 qstr_The_forces_of_{s22}_|Siły {s22} wzrosła! {s22} jest teraz {s23}.
 qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23}.
 ; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
-; qstr_Guardians_of_{s6}|Guardians of {s6}
+qstr_Guardians_of_{s6}|Obrońcy {s6}
 ; qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
 ; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|Siły {s2} rozłożyły się obozem w {s15}!
@@ -815,7 +818,7 @@ qstr_Say_cheese!|Say cheese!
 qstr_Treebeard_wants_you_|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qstr_Something_wrong_not_|Brakuje jednostek do oddziału zwiadowczego
 qstr_my_home_town|moje rodzinne miasto
-; qstr_I_am_in_perfect_heal|I am in perfect health.
+qstr_I_am_in_perfect_heal|Jestem w pełni zdrów.
 ; qstr_I_am_suffering_from_|I am suffering from {s1}.
 ; qstr_I_am_suffering_from_{|I am suffering from {s1} and {s2}.
 ; qstr_I_am_suffering_from_{s|I am suffering from {s1}, {s2}, and {s3}.
@@ -886,11 +889,11 @@ qstr_It_is_my_duty_to_help|Moim obowiązkiem jest pomoc naszym sprzymierzeńcom.
 qstr_I_want_to_deliver_a_|Chcę wysłać podarki do wszystkich naszych sojuszników
 qstr_delivering_a_gift|wysyłanie podarunku
 ; qstr_I_want_to_bring_a_br|I want to bring a bribe to our allies.
-; qstr_delivering_a_bribe|delivering a bribe
+qstr_delivering_a_bribe|dostarczanie łapówki
 ; qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Resource Points]
 qstr_Gift|Podarunek
 ; qstr_You_have_requested_t|You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture.
-; qstr_Bribe|Bribe
+qstr_Bribe|Łapówka
 ; qstr_You_have_requested_to|You have requested to deliver a bribe of {s1} to {s3} from {s2}. Hopefully you can get some sort of reward from them in exchange.
 ; qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|Używasz {reg0} swych wpływów z {s1}, {reg1} zostało.
@@ -959,8 +962,8 @@ qstr_slaves|niewolników
 qstr_{s1}_Refugees|{s1} Uchodźców
 qstr_{s1}_Slaves|{s1} Niewolników
 qstr_The_{s11}_of_{s10}_a|{s11} z {s10} poprosił cię o eskortę {s12} do {s13}. Otrzymasz {reg8} PP po powrocie.
-; qstr__Guards_slaughter_hi| Guards, slaughter him!
-; qstr_Slaughter_him_for_fr|Slaughter him for fresh human meat!
+qstr__Guards_slaughter_hi|Straże, ubijcie go!
+qstr_Slaughter_him_for_fr|Ubijcie go dla świeżego ludzkiego mięsa!
 qstr_This_is_{s5}_Command|To {s5}, Dowódco.
 qstr_{s6}_This_place_and_|{s6} To miejsce i okoliczne ziemie należą oczywiście do ciebie, {mój panie/moja pani}.
 qstr_{s6}_This_place_and_t|{s6} To miejsce i okoliczne ziemie należą do {s7} z {s8}.
@@ -971,8 +974,8 @@ qstr_Hey_scum!_I_can_fix_|Hej szumowino! Mogę naprawić twoją szczękę.
 qstr_Watch_where_you_re_g|Patrz gdzie leziesz, robalu!
 qstr_I_don_t_like_your_fa|Nie podoba mi się twoja twarz! Myślę, że wymaga drobnych poprawek.
 qstr_What_are_you_looking|Na co się gapisz? CO?
-; qstr_the_white_hand|the white hand
-; qstr_the_lidless_eye|the lidless eye
+qstr_the_white_hand|biała ręka
+qstr_the_lidless_eye|oko bez powieki
 qstr_I_have_some_of_your_|Mam ze sobą kilku twych ziomków. Pozwolę im dołączyć do ciebie, by pomóc twej sprawie.
 qstr_Some_of_your_stinky_|Mam ze sobą kilku twych ziomków. Jestem pewien, że wolą iść z tobą.
 qstr_{s4}_It_is_always_go|{s4} Zawsze dobrze zobaczyć swego.
