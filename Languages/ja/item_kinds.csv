@@ -1,5 +1,5 @@
 itm_horse_meat|馬肉
-itm_practice_sword|模擬剣
+itm_practice_sword|練習用の剣
 itm_arena_lance|ランス
 itm_practice_staff|木の杖
 itm_practice_bow|練習用の弓
@@ -16,7 +16,7 @@ itm_tools|工具
 itm_siege_supply|補給物資
 itm_quest_wine|葡萄酒
 itm_quest_ale|エール
-itm_metal_scraps_bad|低質な鉄くず
+itm_metal_scraps_bad|低質の鉄くず
 itm_metal_scraps_medium|普通の鉄くず
 itm_metal_scraps_good|上質な鉄くず
 itm_oliphant|オリファント
@@ -27,7 +27,7 @@ itm_courser|コーサー
 itm_hunter|ハンター
 itm_pony|ポニー
 itm_arnor_warhorse|アルノリアン軍馬
-itm_dunedain_warhorse|ドゥーネダイン軍馬
+itm_dunedain_warhorse|ドゥネダイン軍馬
 itm_rohirrim_courser|ロヒアリムコーサー
 itm_rohirrim_hunter|ロヒアリムハンター
 itm_rohirrim_courser2|ロヒアリムコーサー
@@ -86,7 +86,7 @@ itm_olog_hands|オログ＝ハイの手
 itm_arrows|矢
 itm_gondor_arrows|ゴンドールの矢
 itm_gondor_auxila_arrows|ゴンドリアンの矢
-; itm_khergit_arrows|Barbed Arrows
+itm_khergit_arrows|とがり矢
 itm_rohan_arrows_2|ロヒアリムの矢
 itm_harad_arrows|ハラドリムの矢
 itm_corsair_arrows|海賊の矢
@@ -153,12 +153,12 @@ itm_loss_throwing_axes|ロスサールナッハの投げ斧
 itm_arnor_helm_a|アルノールの兜
 itm_arnor_helm_b|アルノールの兜
 itm_arnor_helm_c|アルノールの兜
-itm_dunedain_helm_a|ドゥーネダインの頭巾
+itm_dunedain_helm_a|ドゥネダインの頭巾
 itm_dunedain_helm_b|アルノールの細工入り兜
 itm_arnor_armor_a|アルノリアンの鎧
 itm_arnor_armor_b|アルノリアンの鎧
-itm_arnor_armor_c|ドゥーネダイン野伏の革鎧
-itm_arnor_armor_d|ドゥーネダイン野伏の革鎧
+itm_arnor_armor_c|ドゥネダイン野伏の革鎧
+itm_arnor_armor_d|ドゥネダイン野伏の革鎧
 itm_arnor_armor_e|アルノリアンの補強された胴着
 itm_arnor_armor_f|アルノリアンの上級鎧
 itm_arnor_greaves|アルノリアンのすね当て
@@ -339,9 +339,9 @@ itm_isen_uruk_light_e|ウルク＝ハイの鎖ハーネス
 itm_isen_uruk_heavy_a|ウルク＝ハイの鎖かたびらと革の防具
 itm_isen_uruk_heavy_b|ウルク＝ハイの重装鎧
 itm_isen_uruk_heavy_c|ウルク＝ハイの重装鎧
-itm_isen_uruk_heavy_d|ウルク＝ハイトラッカーの革鎧
-itm_isen_uruk_heavy_e|ウルク＝ハイトラッカーの革鎧
-itm_uruk_tracker_boots|ウルクトラッカーのブーツ
+itm_isen_uruk_heavy_d|ウルク＝ハイ追跡兵の革鎧
+itm_isen_uruk_heavy_e|ウルク＝ハイ追跡兵の革鎧
+itm_uruk_tracker_boots|ウルク追跡兵のブーツ
 itm_uruk_greaves|ウルクのすね当て
 itm_uruk_chain_greaves|ウルクの鎖すね当て
 itm_uruk_ragwrap|ウルクのぼろ布
@@ -352,8 +352,8 @@ itm_isen_uruk_helm_a|ウルク＝ハイの兜
 itm_isen_uruk_helm_b|ウルク＝ハイの兜
 itm_isen_uruk_helm_c|ウルク＝ハイの兜
 itm_isen_uruk_helm_d|ウルク＝ハイキャプテンの兜
-itm_isen_uruk_helm_e|ウルク＝ハイトラッカーの兜
-itm_isen_uruk_helm_f|ウルク＝ハイトラッカーの兜
+itm_isen_uruk_helm_e|ウルク＝ハイ追跡兵の兜
+itm_isen_uruk_helm_f|ウルク＝ハイ追跡兵の兜
 itm_uruk_pike_a|ウルクのパイク
 itm_uruk_pike_b|ウルクのパイク
 itm_uruk_falchion_a|ウルクのファルシオン
@@ -433,7 +433,7 @@ itm_m_orc_heavy_e|モルドールオークの重装鎧
 itm_m_uruk_light_a|ウルクのハーネス
 itm_m_uruk_light_b|ウルクの厚手のハーネス
 itm_m_uruk_heavy_c|ウルクの革鎧
-itm_m_uruk_heavy_d|ウルクのの重ね鎧
+itm_m_uruk_heavy_d|ウルクの重ね鎧
 itm_m_uruk_heavy_e|ウルクの鎖かたびら
 itm_m_uruk_heavy_f|ウルクの鎖かたびら
 itm_m_uruk_heavy_g|ウルクの鎖かたびら
@@ -730,19 +730,19 @@ itm_dale_shield_c|デールの盾
 itm_dale_shield_d|デールの盾
 itm_umb_armor_a|海賊の革鎧
 itm_umb_armor_a1|海賊の重装革鎧
-itm_umb_armor_b|海賊レイダーの鎧
+itm_umb_armor_b|海賊遊撃兵の鎧
 itm_umb_armor_c|海賊のパッド鎧
 itm_umb_armor_d|海賊の重装パッド鎧
-itm_umb_armor_e|海賊レイダーのパッド鎧
+itm_umb_armor_e|海賊遊撃兵のパッド鎧
 itm_umb_armor_f|海賊のホバーク
 itm_umb_armor_g|海賊のホバーク肩当て
-itm_umb_armor_h|海賊レイダーの重装鎧
+itm_umb_armor_h|海賊遊撃兵の重装鎧
 itm_umb_helm_a|海賊のシェル兜
 itm_umb_helm_b|海賊のシェル兜
-itm_umb_helm_c|海賊の民兵兜
-itm_umb_helm_d|海賊の民兵兜
-itm_umb_helm_e|海賊レイダーの兜
-itm_umb_helm_f|海賊レイダーの兜
+itm_umb_helm_c|海賊民兵の兜
+itm_umb_helm_d|海賊民兵の兜
+itm_umb_helm_e|海賊遊撃兵の兜
+itm_umb_helm_f|海賊遊撃兵の兜
 itm_umb_hood|ウンバールの頭巾
 itm_corsair_boots|海賊のブーツ
 itm_umb_shield_a|海賊のバックラー
@@ -840,7 +840,7 @@ itm_ent_head_helm3|エントの頭部
 itm_ent_feet_boots|エントの足
 itm_ent_hands|エントの手
 itm_galadriel|ガラドリエルの衣装
-itm_ent_water|ボウルに入った奇妙な水
+itm_ent_water|おわんに入った奇妙な水
 itm_map|中つ国の地図
 itm_athelas_reward|アセラスの鉢植
 itm_phial_reward|ガラドリエルの光
@@ -867,8 +867,8 @@ itm_garlic_reward|にんにく
 itm_silmarillion_reward|シルマリルリオン
 itm_herbarium_reward|中つ国植物標本
 itm_book_of_moria|マザルブルの書
-; itm_ring_a_reward|Tulcarisil
-; itm_ring_b_reward|Finwarisil
+itm_ring_a_reward|テュルカリシル
+itm_ring_b_reward|フィンワリシル
 itm_dale_bow_reward|バルドの弓
 itm_explosive_reward|アイゼンガルドの地雷
 itm_corsair_trident|海の怒りの三つ又

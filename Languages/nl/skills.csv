@@ -1,0 +1,48 @@
+skl_trade|Onderhandelaar
+skl_trade_desc|Hoe hoger het level voor deze vaardigheid, hoe meer spullen je kunt kopen voor minder punten (groep's vaardigheid)
+skl_leadership|Leiderschap
+skl_leadership_desc|Elk punt vergroot het maximum aantal troepen dat je kunt besturen. Verbetert het moraal van je groep en vermindert de loonkosten van je troepen met 5%% (Leider vaardigheid)
+skl_prisoner_management|Gevangenen beheer
+skl_prisoner_management_desc|Elk punt voor deze vaardigheid vergroot het maximum aantal gevangenen met %d (Leider vaardigheid)
+skl_persuasion|Overtuiging
+skl_persuasion_desc|Punten in deze vaardigheid zorgen ervoor dat mensen het eens zullen zijn met jou (Persoonlijke vaardigheid)
+skl_engineer|Creeëren
+skl_engineer_desc|Elk punt in deze vaardigheid vermindert de tijd die nodig is om spullen te maken en te verbeteren, laat ook betere verbeteringen toe. (groep's vaardigheid)
+skl_first_aid|Eerste hulp
+skl_first_aid_desc|Helden krijgen 5%% van hun gezondheidspunten terug tijdens een missie (groep's vaardigheid)
+skl_surgery|heelkunde
+skl_surgery_desc|Elk punt voor deze vaardigheid geeft een 4%% kans dat een dodelijk getroffen groep\ns lid slechts gewond raakt en niet dood gaat. (Groep's vaardigheid)
+skl_wound_treatment|Wondverzorging
+skl_wound_treatment_desc|De snelheid waarmee je groep weer heelt gaat omhoog met 20%% per punt voor deze vaardigheid. (groep's vaardigheid)
+skl_inventory_management|inventaris beheer
+skl_inventory_management_desc|vergroot inventaris capaciteit met +6 vakken per punt voor deze vaardigheid (leider vaardigheid)
+skl_spotting|spotten
+skl_spotting_desc|Je groep kan 10%% verder zien per punt voor deze vaardigheid (groep's vaardigheid)
+skl_pathfinding|Padvinden
+skl_pathfinding_desc|Snelheid van je groep op de kaart gaat met 3%% omhoog per punt in deze vaardigheid (groep's vaardigheid)
+skl_tactics|Tactiek
+skl_tactics_desc|Elke twee punten voor deze vaardigheid vergroot het voordeel aan het begin van het gevecht met 1. (groep's vaardigheid)
+skl_tracking|Spoorzoeken
+skl_tracking_desc|Sporen geven meer informatie. (groep's vaardigheid)
+skl_trainer|Trainer
+skl_trainer_desc|Elke dag voegt elke held met punten in deze vaardigheid ervaring toe aan leden in de groep die een lager level hebben dan de held/heldin zelf. Verkregen ervaring gaat als volgt: (0,4,10,16,23,30,38,46,55,65,80) (persoonlijke vaardigheid)
+skl_looting|plundering
+skl_looting_desc|deze vaardigheid vergroot de hoeveelheid verkregen buit met 10%% per vaardigheid's level.  (groep's vaardigheid)
+skl_horse_archery|Schieten vanaf paard
+skl_horse_archery_desc|vermindert de aftrek aan schade en accuraatheid voor boogschieten en het gooien van voorwerpen als je op een paard zit. (persoonlijke vaardigheid)
+skl_riding|Bereiden
+skl_riding_desc|laat je paarden (of andere dieren) van een hoger moeilijkheidslevel berijden en vergroot je snelheid en manoeuvreerbaarheid terwijl je dier berijd. (persoonlijke vaardigheid)
+skl_athletics|Atletiek
+skl_athletics_desc|Versnelt je rensnelheid. (persoonlijke vaardigheid)
+skl_shield|Schild
+skl_shield_desc|Vermindert schade aan schilden (met 8%% per vaardigheidslevel) en verbetert je schild snelheid en bedekking. (persoonlijke vaardigheid)
+skl_weapon_master|Wapenmeester
+skl_weapon_master_desc|maakt het makkelijker om te leren een wapen te beheersen en verhoogt de limieten in beheersing van wapens. limieten gaan als volgt: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (persoonlijke vaardigheid)
+skl_power_draw|Trekkracht
+skl_power_draw_desc|Laat character sterkere bogen gebruiken. Elk punt voor deze vaardigheid (tot meer dan 4 vaardigheidspunten nodig om bepaalde bogen te kunnen bedienen) verbetert de schade die je doet met je boog met 14%%. (persoonlijke vaardigheid)
+skl_power_throw|Gooikracht
+skl_power_throw_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan met gooiwapens met 10%% (persoonlijke vaardigheid)
+skl_power_strike|Slagkracht
+skl_power_strike_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan door slag- en steekwapens met 8%% (persoonlijke vaardigheid)
+skl_ironflesh|Stevige huid
+skl_ironflesh_desc|Elk punt voor deze vaardigheid verhoogt de schadepunten die je kan hebben voordat je neergaat met +2 (persoonlijke vaardigheid)

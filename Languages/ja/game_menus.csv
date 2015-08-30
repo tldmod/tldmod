@@ -1,0 +1,368 @@
+menu_start_game_1|^^^^^^^^^^何のために戦いますか？
+mno_start_good|新しい時代の夜明け
+mno_start_evil|人類の黄昏
+mno_go_bback|戻る
+menu_start_phase_2|^^^^^ここは中つ国。 東に広がる影は日々ふくれあがり、 ^ 遠く忘れ去られてきた暗いものたちが、その姿をあらわす。 ^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。 ^ 人間、エルフ、ドワーフ、そしてオーク; すべてのものがそれぞれの運命を演じていく。 ^^ 運命の先にあるものは何か、それはまだわからない・・・
+mno_go_forth|運命の道を踏み出すのだ・・・
+menu_start_game_3            |^^^^^^^^シナリオを選んでください:
+mno_custom_battle_scenario_1 |小規模戦闘、 ゴンドール勢 vs ハラド
+mno_custom_battle_scenario_12|ファクションを選んでください
+mno_custom_battle_scenario_3 |小規模戦闘、 エルフ vs 黒きヌーメノール人
+mno_custom_battle_scenario_4 |ヘルム峡谷の攻防戦、 ローハン vs アイゼンガルド
+mno_custom_battle_scenario_5 |小規模戦闘、 北方の民 vs リューン
+mno_custom_battle_scenario_6 |攻城戦、 オーク vs ドワーフ
+mno_custom_battle_scenario_7 |待ち伏せ攻撃、 オーク vs 闇の森のエルフ
+mno_custom_battle_scenario_11|戦闘のテスト(バランス調整をしてください！)
+mno_custom_battle_scenario_10|シーナリーのテスト
+mno_troll_battle_scenario    |トロルのテスト
+mno_warg_battle_scenario     |ワーグのテスト
+mno_build_your_own_scene     |** 自分だけのTLDのシーンを作ろう **
+mno_go_back                  |戻る
+menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
+mno_go_back_dot|戻る。
+mno_view_upkeep_costs|パーティの維持費を見る。
+mno_view_character_report|キャラクター情報を見る。
+mno_view_party_size_report|パーティの人数上限を確認する。
+mno_view_morale_report|パーティの士気に関する情報を見る。
+mno_view_character_report_02|NPCの状態を確認する。
+mno_view_faction_strengths_report|各ファクションの勢力を確認する。
+mno_view_traits_report|特殊能力を見る。
+mno_resume_travelling|旅を続ける。
+mno_custom_battle_go|開始。
+mno_leave_custom_battle_2|キャンセル。
+menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
+mno_replay|この戦闘をもう一度プレイする。
+mno_continue_dot|続ける。
+menu_quick_battle_general_test|^^^現在の戦闘: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
+mno_tAA|+5 Team A
+mno_tAB|-5 Team A
+mno_tAC|Aの兵を選ぶ
+mno_tBA|+5 Team B
+mno_tBB|-5 Team B
+mno_tBC|Bの兵を選ぶ
+mno_B|Preset 1
+mno_F|戦闘開始！
+mno_dot_go_back|. 戻る
+menu_quick_battle_troll|^^^^^^^^トロルのシナリオを選んでください:
+mno_troll_battle_scenario_10|テスト: トロル VS 歩兵
+mno_troll_battle_scenario_11|テスト: トロル VS 弓兵
+mno_troll_battle_scenario_12|テスト: トロル VS 騎兵
+mno_troll_battle_scenario_13|テスト: トロル VS ランサー
+mno_troll_battle_scenario_14|テスト: トロル VS トロル
+mno_troll_battle_scenario_15|お遊びテスト: トロルをプレイヤーが操作
+menu_quick_battle_wargs|^^^^^^^^ワーグのテストシナリオを選んでください:
+mno_warg_battle_scenario_10|対ワーグ: 1 vs 1
+mno_warg_battle_scenario_11|対ワーグ: 2 vs 3
+mno_warg_battle_scenario_12|対ワーグ: 大勢 vs 大勢
+mno_warg_battle_scenario_10b|ワーグをプレイ: 1 vs 1
+mno_warg_battle_scenario_11b|ワーグをプレイ: 2 vs 3
+mno_warg_battle_scenario_12b|ワーグをプレイ: 大勢 vs 大勢
+menu_start_good|^^^^^^^^^^種族を選んでください:
+mno_start_ma|人間
+mno_start_el|エルフ
+mno_start_dw|ドワーフ
+mno_go_back|戻る
+menu_start_evil|^^^^^^^^^^誰に仕えますか？
+mno_start_eye|モルドールのサウロン、指輪王
+mno_start_hand|アイゼンガルドのサルマン、白の手
+menu_start_eye|^^^^^^^^^あなたの主人は、瞼のない御目です。^種族を選んでください
+mno_start_or|オーク、瞼のない御目の忠実な下僕
+mno_start_ur|ウルク、新種のオーク
+mno_start_em|人間、サウロンへの服従を誓う
+menu_start_hand|^^^^^^^^^あなたの主人は、白の手となりました。^種族を選んでください
+mno_start_whor|オーク、白の手のしもべ
+mno_start_isur|ウルク＝ハイ、アイゼンガルドで繁殖される新種
+mno_start_duma|人間、西方の平野にある褐色人の国の住人
+menu_start_good_man|^^^^^^^^^^民族を選んでください:
+mno_start_go|ゴンドール、白い塔の王国
+mno_start_ro|ローハン、馬の民
+mno_start_du|ドゥネダイン、いにしえの王族の末裔
+mno_start_be|ビヨルン一党、熊人族
+mno_start_da|デール、北方の王国
+menu_start_good_elf|^^^^^^^^^^どちらの森にお住まいですか、賢者どの？
+mno_start_ri|リヴェンデル、エルロンド卿の率いる国
+mno_start_lo|ロスロリエン、ガラドリエル夫人の治める国
+mno_start_mi|闇の森、シルヴァン・エルフの国
+menu_start_good_dwarf|^^^^^^^^^^一族を選んでください:
+mno_start_er|エレボールの住人
+mno_start_ih|くろがね連山の鉱夫
+menu_start_gondor|^^^^^^^^^^ゴンドールのどこの出身ですか？
+mno_start_mt|ミナス・ティリス、首都
+mno_start_ls|ロスサールナッハ、斧使いの国
+mno_start_la|ラメドン、山の民の国
+mno_start_pg|ピンナス・ゲリン、緑丘陵の国
+mno_start_do|ドル・アムロス、白鳥の騎士の国
+mno_start_pe|ペラルギア、海岸沿いの国
+mno_start_bl|黒根谷、弓使いの国
+menu_start_eye_man|^^^^^^^^^^民族を選んでください:
+mno_start_hr|ハラドリム、南方の砂漠の民
+mno_start_bn|黒きヌーメノール人、西方から来た背教者
+mno_start_um|ウンバール、南の海からやってきた海賊
+mno_start_rh|リューン、東方の蛮族
+mno_start_kh|ハンド、南東に住む獰猛な民族
+menu_start_eye_orc|^^^^^^^^^^どこに潜伏しているのですか？
+mno_start_arm|モルドールに集結する軍勢
+mno_start_cav|ドル・グルドゥアの洞窟
+menu_start_hand_orc|^^^^^^^^^^どこに潜伏しているのですか？
+mno_start_armis|アイゼンガルドに集結する軍勢
+mno_start_minmo|モリアの坑道
+mno_start_cliff|グンダバド山の絶壁
+menu_start_gondor_mt|^^^^^^^^^^家系を選んでください
+mno_start_1_com|平民
+mno_start_2_hib|高貴な生まれ
+menu_start_haradrim|^^^^^^^あなたはハラドリム、^砂漠の民です。^部族を選んでください
+mno_start_1_des|砂漠の住人
+mno_start_2_far|遠ハラドの部族
+menu_choose_gender|^^^^^^^^^^あなたの性別は？
+mno_start_male|男性
+mno_start_female|女性
+mno_proc|通常通り続ける
+mno_continue|続ける・・・
+menu_character_report|^^^^^パーティの士気: {reg8}^パーティの人数上限: {reg7}^{s5}
+menu_camp|^^^^ここは{s1}です。{s2}^^何をしますか？
+mno_camp_scene|この辺りを散歩する。
+mno_camp_troop|{reg10?部下:}{reg12?および:}{reg11?捕虜:}の確認をする。
+mno_camp_action|アイテムを使う。
+mno_camp_wait_here|ここで野営する。
+mno_camp_options|TLDのオプション。
+mno_Cheat_enable|チート/mod作成オプションを有効にする。
+menu_game_options|^^^^^^^^項目をクリックするとトグルします:
+mno_game_options_restrict_items|プレイヤーの装備制限: {s7}
+mno_game_options_formations|陣形とAI: {s7}
+mno_game_options_town_menu|拠点のNPCに常にメニュー画面からアクセス: {s7}
+mno_game_options_cutscenes|カットシーン: {s7}
+mno_game_options_injuries|コンパニオンの怪我: {s7}。
+mno_game_options_death|ロードとコンパニオンが死亡する: {s7}。
+mno_game_options_death2|プレイヤーが死亡する(あなたの事ですよ！): {s7}。
+mno_game_options_morale|戦闘時の士気システム: {s7}
+mno_game_options_animal_ambushes|動物による襲撃: {s7}
+mno_game_options_tweaks|ゲームプレイの調整・・・
+mno_game_options_back|キャンプメニューに戻る。
+menu_camp_tweaks|^^^^^^^^調整したい項目を選んでください。
+mno_tweak_options_compat|互換性の調整・・・
+mno_tweak_options_strat|戦略上の調整・・・
+mno_tweak_options_back|オプションメニューに戻る。
+menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください(SHIFTを押しながらクリックすると数値が減ります):^(これらは互換性に関する調整で、 チートではありません)
+mno_game_options_compat_party|パーティの最大数: {s1}
+mno_game_options_compat_back|調整メニューに戻る。
+menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします:^(警告: これらはチートです！)
+mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力: {s7}
+mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート: {reg1}
+mno_strat_tweaks_regen_rate|勢力の回復レート: {s7}
+mno_strat_tweaks_siege_regen_limit|勢力回復不可とされるファクションの勢力の上限値: {reg1}
+mno_strat_tweaks_influence_gain_rate|影響力獲得レート:{s7}
+mno_strat_tweaks_rank_gain_rate|ランク獲得レート:{s7}
+mno_strat_tweaks_back|調整メニューに戻る。
+menu_camp_action|^^^^^^^^^ どのアイテムですか？
+mno_camp_customize_defilement|穢された鎧を改造する
+mno_camp_drink_water|エント水を飲むぞ！
+mno_camp_action_4|戻る。
+menu_assasins_attack_player_won|あなたは{s3}によって送り込まれた {s2}の暗殺者を撃退しました。
+menu_assasins_attack_player_retreat|あなたは命からがら逃げました！
+menu_fangorn_danger|^^^^^^奇妙だ、 周囲のあちこちから不穏な物音が聞こえる。^木々がしゃべっているのだろうか？ 大いなる怒りと苦痛が伝わってくる。 どうしますか？
+mno_be_quiet_elf|木々の憎悪はもっともだ。しずかに移動せよ。
+mno_be_quiet|武器をしまって静かにするんだ！この場から離れるぞ！
+mno_be_bold|かかって来い！植物だの古い伝説だの、私は一切恐れないぞ！
+mno_fight_back|原因をつきとめるぞ！ここ一帯を調べろ！そこの木を一、二本燃やせ！
+menu_fangorn_search_fails|^^^^^^あなたは暗く、 深い森のなかを探しまわったが、 何も見つけられなかった。^しかし、 監視の目にさらされているという思いと、 あたりに漂う脅威は どんどん強くなっている。
+menu_fangorn_battle_debrief_won|^^^大いなる勝利だ！^^^なるほど、 これがファンゴルンの伝説のからくりか・・・
+menu_fangorn_killed_player_only|^^^^^^あなたは深く、 暗い森のなかを探し回った。^突然、 あなたは何かに殴られた！ 大きな木の枝が 頭を直撃したのだろうか？ あなたは数分の間、 気を失った。 ひどい痛みが残っているが、 探索の続行に支障はない。
+mno_ow_get_out|いたた！この呪われた場所から逃げろ！
+menu_fangorn_killed_troop_and_player|^^^^^^あなたは深く、 暗い森のなかを探し回った。^^突然、 あなたは何かに殴られた！ 大きな木の枝でも落ちてきて、 頭を直撃したのだろう。^^数分後に意識を取り戻したあなたは、 部下たちはあなたほど幸運には 恵まれなかった事を知った。^^
+menu_fangorn_killed_troop_only|^^^^^^^^あなたは深く、 暗い森のなかを探し回った。 部下たちは恐怖で顔をひきつらせている。^^突然、 後方で悲鳴が上がった！ 駆けつけてみると、 数人の部下が血の海に横たわっていた。^^他にも数人の姿が見当たらないが、 一体どこへ消えたのか・・・
+mno_get_out|この呪われた場所から離れるぞ！
+menu_can_capture_troll|倒された野生のトロルは、まだ息をしている！^^悪意に満ちたその目は、苦痛と怒りの色をいっぱいに浮かべて あなたを凝視している。^みずからの血の海の中に 力なく横たわっている今でさえ、 それは途方もなく危険に見える・・・
+mno_killit|それをいますぐ殺せ。 間違いなく息の根を止めろ。
+mno_cageit1|檻に入れて引きずりまわせ。
+mno_cageit2|他のトロルと一緒に檻に入れろ。
+mno_cheat_disabable|チート/mod作成オプションを無効にする。
+menu_drank_ent_water_human|^^^あなたは水を飲んだ。 水は、 澄んだ、 さわやかな味がする。 ジャコウに似た、 良い香りもする。^とてもおいしい。^^しかし、 あなたは奇妙な、 超自然的ともいえる違和感を覚えた。 あなたの直感が、 もう二度と、 この水を口にしてはならないと訴えている。
+menu_drank_ent_water_orc|^^^あなたは水を飲んだ。 ただの水だ。^突然、 激痛が走り、 あなたはのどを手で押さえた。^毒だ！^あなたはむせ、 黒い血のかたまりを吐き、 意識が遠のくのを感じた。^^痛い、 ちくしょう、 痛いぞ。
+mno_i_shall_surv|し・・・ 死んで・・・ たまるか！
+menu_end_game|^^^^^あなたはついに冒険者としての生活に 区切りをつける決心をし、 腰を落ち着ける事にした。 あなたは武器や防具を売りさばき、 荷物をまとめると、 馬上の人となって夕日を目指して去っていった・・・
+mno_end_game_bye|さようなら。
+menu_cattle_herd|あなたは数人の群れに出くわした。
+mno_cattle_drive_away|ついてくるように言う。
+mno_cattle_stop|その場で止まるように言う。
+mno_leave|立ち去る。
+menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部下は{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
+mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
+mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
+; mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_encounter_leave|撤退する。
+mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
+menu_encounter_retreat_confirm|^^^^^パーティの中で最も高い戦略スキル({reg2})を持つ {reg3?あなた:{s3}}は、 敵を振り切って部隊を無事に撤退させる作戦を 考え出しましたが、 敵の追撃を食い止めるための兵を{reg4}名、 しんがりとして犠牲にしなければなりません。
+mno_leave_behind|この作戦でいこう。彼らの犠牲は無駄にしない。
+mno_dont_leave_behind|だめだ。部下を置いていくわけにはいかない。
+menu_encounter_retreat|^^^^^あなたは部下の兵{reg4}名に、 あなたと部隊が撤退するあいだ、 敵勢を食い止めるよう命令しました。
+menu_order_attack_begin|^^^^^^ 部下の兵は攻撃準備をしています。
+mno_order_attack_begin|攻撃開始を命令する。
+mno_call_back|呼び戻す。
+menu_order_attack_2|^{s4}^自軍犠牲者: {s8}^^敵軍犠牲者: {s9}
+mno_order_attack_continue|部下に攻撃を続けるように指示する。
+mno_order_retreat|部下を呼び戻す。
+menu_kingdom_army_quest_report_to_army|{s8}より、 今回の軍事遠征にあなたも同行せよ、 との連絡を受けました。 あなたは少なくとも {reg13}名の兵を連れて行かなくてはなりません。 足りない場合は、 急いで兵を集めてくるように、 とのことです。
+mno_reject|忙しくてそちらまで手が回らない、と返答する。
+mno_send_word|すぐにはせ参じる、と伝える。
+menu_kingdom_army_quest_messenger|{s8}より、 遂行すべき任務について あなたに話があるため出頭するように、 との連絡を受けました。 できる限りの速い出頭を求めています。
+menu_kingdom_army_quest_join_siege_order|{s8}より、 総攻撃を予定している {s9}包囲軍に参加せよとの指示がありました。 あなたの部隊は {s9}をなんとしても落とさねばなりません。
+menu_kingdom_army_follow_failed|あなたは命令を無視し、 {s8}への同行に失敗しました。 彼は火急の事態にみまわれたであろう あなたに理解を示しましたが、 彼の忍耐には限度がある事も伝えてきました。
+menu_battle_debrief|{s11}^自軍犠牲者:{s8}{s10}^^敵軍犠牲者:{s9}
+mno_inspect_troll|倒れたトロルを調べる
+menu_pre_join|^^^^^{s2}と{s1}が交戦中です。^あなたは・・・
+mno_pre_join_help_attackers|{s2}に加勢をする。
+mno_pre_join_help_defenders|{s1}の味方にまわる。
+mno_pre_join_leave|巻き込まれないようにする。
+menu_join_battle|^^^{s1}と戦っている{s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
+mno_join_attack|攻撃を開始する。
+mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
+mno_join_leave|撤退する。
+menu_join_order_attack|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+mno_enter|入る。
+menu_battlefields|^^^^^^^^^戦場を選んでください・・・
+mno_enter_f1|Field 1
+mno_enter_f2|Field 2
+mno_enter_f3|Field 3
+mno_enter_f4|Field 4
+mno_enter_f5|Field 5
+menu_join_siege_outside|^^^^^^{s1}が{s2}による包囲攻撃を受けています。
+mno_approach_besiegers|包囲軍の陣営を訪ねる。
+mno_pass_through_siege|包囲網を突破し、{s1}へ入城する。
+menu_cut_siege_without_fight|包囲軍は、門に近づくあなたに対して 攻撃をしませんでした。
+menu_besiegers_camp_with_allies|{s1}は依然、包囲されています。 あなたの部隊を歓迎してくれた 包囲軍の陣営には、 {s2}の軍旗がたなびいています。
+mno_talk_to_siege_commander|指揮官に面会を申し入れる。
+mno_join_siege_with_allies|次の攻撃に参加する。
+mno_join_siege_stay_back|部下に次の攻撃に参加するよう指示をし、 自身は後方に待機する。
+menu_moria_must_escape|^^この本には、 モリアに再び入植しようとした ドワーフたちの最後の試みが記録されているようだ。 その最後の試みは、 関わった者すべてが凄惨な死を遂げ、 失敗に終わったらしい。 本を注意深く読み進めていくうち、 あなたは「まことの銀」という記述を見つけた！ ページを熟読していくうち、 これはさらに深い層のどこかにある ドワーフの隠し財産に関する記述であることを ついに理解した。 やった！ 長く忘れられたドワーフのミスリルを 発掘するだなんて、 かっこいいじゃないか！？ ^あなたは喜び勇んで記述に従い、 細くまがりくねった坑道を 深く深く進んでいった・・・ ^・・・^何も手がかりのないまま 二時間ほどが過ぎた頃、 あなたは自分たちがモリアの深層で 迷ってしまい、 まず出口を探さなければ ならない事態になった事を悟った。
+mno_moria_exit_scene|出口を探すんだ！
+menu_castle_outside|ここは{s2}の外です。{s11} {s3} {s4}
+mno_moria_enter|秘密の入り口を通って、モリアの大広間へ行く
+mno_moria_enter_door|モリアに入る。
+mno_castle_start_siege|この{reg6?町:城}を包囲する。
+mno_castle_leave|立ち去る。
+menu_castle_besiege|あなたは{s1}の包囲を準備しています。 {s2} {s3}
+mno_siege_request_meeting|敵の指揮官に面会を申し入れる。
+mno_wait_24_hours|明日まで待機する。
+mno_castle_lead_attack|攻撃を陣頭指揮する。
+mno_attack_stay_back|部下に攻撃を指示し、 自身は後方に待機する・・・
+mno_build_ladders|城壁にかけるはしごの準備をする。
+mno_lift_siege|包囲を中止する。
+menu_siege_attack_meets_sally|^^^^^^守備軍が打って出てきました。
+menu_construct_ladders|パーティメンバーの中で最も高い 技術者スキル({reg2})を持つ{reg3?あなた:{s3}}は、 充分なはしごを準備するのに {reg4}時間を要すると計算しました。
+mno_build_ladders_cont|準備に取りかかる。
+menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+menu_castle_taken|{s3}はあなたの軍の手に落ち、 現在、 この{reg2?町:城}は完全にあなたの軍の 管理下におかれています。 {reg1? ここをあなたの領地とすることを 止めるものはいません・・・:}
+menu_castle_taken_2|{s3}はあなたの軍の手に落ち、 現在、 この城は完全にあなたの軍の 管理下におかれています。 {s9}に、 この勝利を報告しましょう。 {s5}
+mno_castle_taken_no_claim|褒美の要求をしない。
+menu_siege_started_defender|{s2}の城壁に対し、 {s1}が攻撃を仕掛けています。 あなたの部隊で戦闘可能な兵は{reg22}名、 対する敵勢は{reg11}名です。 あなたは・・・
+mno_siege_defender_join_battle|攻撃に参加する。
+mno_siege_defender_troops_join_battle|部下に攻撃に参加するよう指示し、 自身は後方に待機する。
+menu_siege_join_defense|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃に、 あなたは倒され、 あなたの視界はぐるっと回った後に 闇に包まれました。 しばらくの時間が経ち、 あなたは目を覚ましました。 血まみれの体は痛みはするものの、 幸運な事に致命傷は受けていませんでした。
+menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。
+menu_town_brawl_lost|^^^^^^あなたは倒され、 完全に気を失いました。 彼らは素早くあなたの体から 金目の物を抜き取ると、 何食わぬ顔で普段の生活へと 戻っていきました。
+menu_town_brawl_won|^^^^^あなたが敵をすべて倒すと、 騒動を聞きつけた衛兵が 駆けつけてきました。 あなたは素早く倒れている者たちから 金目の物を抜き取ると、 騒ぎが落ち着くまで身を隠しました。^次に連中と顔を合わせる機会があれば、 彼らはもう少しあなたに敬意を払うでしょう。
+menu_town|{s60}に到着しました。{s12}{s13}
+mno_town_menu_0|その辺をうろうろする。
+mno_town_menu_0_door|どこかへ通じる扉。
+mno_town_approach|{s1}へ向かう・・・
+mno_town_castle|{s1}に行く。
+mno_town_castle_door|城に入る。
+mno_town_center|中央広場へ向かう・・・
+mno_town_center_door|町の中心部へ行く。
+mno_aw_chamber_door|扉を開ける。
+mno_trade_with_arms_merchant|{s40}に行く。
+mno_trade_with_horse_merchant|{s41}に行く。
+mno_town_prison_door|牢獄へ行く。
+mno_dungeon_enter|失われた槍を探しに山の内部へ行く。
+mno_dungeon_enter_door|扉を開ける。
+mno_talk_to_castle_commander|{s61}の兵舎へ行く。
+mno_speak_with_elder|{s6}に会う。
+mno_isengard_underground|地下の洞窟へ行く。
+mno_tirith_toplevel|最上層に登る。
+mno_town_leave|立ち去る・・・
+mno_town_leave_door|立ち去る
+menu_disembark|上陸しますか？
+mno_disembark_yes|する。
+mno_disembark_no|しない。
+menu_ship_reembark|乗船しますか？
+mno_reembark_yes|する。
+mno_reembark_no|しない。
+; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
+menu_sneak_into_town_suceeded|みすぼらしい浮浪者に変装したあなたは、 衛兵の目をかいくぐって町の中へと入り込みました。
+menu_sneak_into_town_caught|潜入を試みたあなたに衛兵のひとりが気付き、 大声を上げました！ この辺りの衛兵が殺到するまえに、 門の外へ逃げなければなりません！
+mno_sneak_caught_fight|強行突破だ！
+mno_sneak_caught_surrender|降参する。
+menu_sneak_into_town_caught_dispersed_guards|衛兵どもを追い払ったあなたは、 自分の痕跡を消すと、 その場を去った。 追跡者たちは 入り組んだ通りの中に、 あなたを完全に見失った。
+menu_sneak_into_town_caught_ran_away|あなたは門の外へ出ると、 素早く町の外の安全な場所へ撤退した。
+menu_tld_player_defeated|^^^^^突然、 後頭部に激痛が走った！ \\\\ 目の前が真っ暗になり、 あなたの体は震えた。^ここで死ぬのだろうか？
+menu_recover_after_death_fangorn|あなたは目を覚ました。 あいかわらず、 あたりはいちめんの森だ。 関節という関節が痛む。 あなたは奇跡的に一命をとりとめたようだ。^^敗北を喫したには違いないが、 少なくとも何が起こったのかを 知る事はできた。^ようやくこの呪われた森の正体を知ったあなたは、 この事実を人に伝えなくてはならない。^^しかし、 信じる者はいるだろうか？
+menu_recover_after_death_moria|^^^^^あなたは意識を取り戻した。 あなたの体はやわらかい地面に横たわり、 新鮮な空気を運ぶそよ風が顔をなでていく。 ここは外だ！^オークどもはあなたが死んだと思い込み、 その辺の暗い穴にあなたを放り込んだのだ。^おそらく、 地下を流れる水脈にここまで運ばれたのだろう。
+mno_whatever|起き上がれ！
+menu_recover_after_death_default|^^^^^あなたは意識を取り戻した。 ここは倒された場所だ。 おそらく敵はあなたが死んだと思い、 そのまま放置したのだろう。 しかし、 致命傷は負わずに済んだようだ。 ひどい気分だが、 なんとか自力で歩けるようだ。 あなたは起き上がると、 生き残った部下がいないか探し始めた。
+menu_recover_after_death_town|^^^^あなたが意識を取り戻すと、 そこは町の郊外だった。 あなたは生きのびた！ まわりに人の気配はせず、 あなたはなんとか町の外へと這い出した。 どうやら致命傷はまぬがれたようだ。 気分は最悪だが、 なんとか自力で歩くことは出来る。
+menu_recover_after_death_town_alone|あなたが意識を取り戻すと、 そこは町の郊外だった。 あなたは生きのびた！ まわりに人の気配はせず、 あなたはなんとか町の外へと這い出した。 コンパニオンがあなたを発見した。 どうやら致命傷はまぬがれたようだ。 気分は最悪だが、 なんとか自力で歩くことは出来る。
+menu_notification_center_under_siege|{s1}が{s3}の{s2}によって包囲されました！
+menu_notification_one_side_left|^^^^^指輪戦争は終わりました！^^{s1}はすべての敵を打ち倒し、 勝者となりました！
+menu_notification_total_defeat|^^^^^あなたの指輪戦争は終わりました！^^{s1}は打ち倒され、 残ったのはあなたひとりです！
+menu_notification_your_faction_collapsed|^^^^^あなたの故郷である{s11}は壊滅しました！^しかしながら、 いまだ戦いを続ける同盟国は残っています。 あなたと{s11}の生き残った者たちは力を結集し、 味方の勝利の助けとならなければいけません。
+menu_notification_faction_defeated|^^^^^{s1}は敗れました！^{s1}は{s13}の軍勢によって壊滅し、 この世から消え去りました！
+menu_ruins|^^^^あなたは{s1}へと近づいていきました。 かつて強固を誇った陣地は完全に破壊され、 わずかに残る城壁や 散乱するさびた武器に、 かろうじてその面影を見ることができる。
+menu_legendary_place|^^^^あなたは噂話を頼りに{s1}を発見しました。 さっそく探索し、 噂が本当かどうか、 自らの手で確かめましょう。
+mno_explore|探索を始める。
+menu_starting_quest_good|^^^^^^あなたはオークの一団の襲撃を受けている、 小規模な隊商を見つけました。 どうしますか？
+mno_help|彼らを助けろ！
+mno_go_your_way|放っておく
+menu_custom_battle_choose_faction1|^^^^^^^^^^陣営とアドバンテージを選んでください:
+mno_good_equal|善のファクション
+mno_bad_equal|悪のファクション
+mno_replay_prev|前回の設定でもう一度プレイする
+menu_custom_battle_choose_faction2|^^^^^^^^^^善のファクションを選択してください
+mno_cb_gondor|ゴンドール
+mno_cb_gondor1|ローハン
+mno_cb_gondor2|ロスロリエン
+mno_cb_gondor3|リヴェンデル
+mno_cb_gondor4|闇の森のエルフ
+mno_cb_gondor5|ドワーフ
+mno_cb_gondor6|デール
+mno_cb_gondor7|ビヨルン一党
+menu_custom_battle_choose_faction3|^^^^^^^^^^悪のファクションを選択してください
+mno_cb_mordor|モルドール
+mno_cb_mordor1|アイゼンガルド
+mno_cb_mordor2|褐色人
+mno_cb_mordor3|ハラドリム
+mno_cb_mordor4|東夷
+mno_cb_mordor5|モリア
+mno_cb_mordor6|グンダバド
+mno_cb_mordor7|リューン
+mno_cb_mordor8|海賊
+mno_rescue_mission|夜の闇にまぎれて妖術師の根城へと潜入した。
+mno_next_rescue_scene_door|さらに進め！
+mno_pick_troops1|この任務に同行させるコンパニオンを選んでください。 {reg0}名が選択されています
+menu_pick_troops|この潜入任務に誰を連れて行きますか？ 現在、{reg0}名のコンパニオンが選択されています。 部下を10名まで連れて行くことが出来ます。
+mno_go_forward|同行者の選択を完了し、任務を遂行する。
+menu_burial_mound|あなたは{s2}の{s1}が埋葬された塚に近づいた。   敵の死者から奪った武器が数珠繋ぎにされ、 塚に山積みにされている。
+mno_pay_respects|ひざまずいて敬意を払う。
+mno_swear_oath|復讐の誓いを立てる！
+mno_despoil|この場所を穢す
+mno_leave_mound|この場を去る。
+menu_burial_mound_respects|あなたはひざまずいて{s1}に敬意を払い、 死者がまっすぐに死後の世界へ旅できるよう、 静かな祈りをささげた。 この場所でやるべき事はもうない。
+menu_burial_mound_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
+menu_burial_mound_despoil|あなたは{s1}の墓碑をみずからの手で取り壊すと、 墓碑に対して呪いの言葉を浴びせ、 残忍の歌を歌い、 言語に絶する行為を行った。 あなたの部下たちは死者の怒りを恐れて後ずさりをしたが、 あなたの底知れぬ邪悪さに対して敬意を新たにしたようだ。
+menu_funeral_pyre|あなたは{s2}の{s3}の、 火葬壇の炭となった残がいに近づいた。 ここで彼の亡骸は彼の親衛兵たちの手によって火葬された。 何もめぼしいものは見当たらない。
+mno_leave_pyre|この場を去る。
+menu_town_ruins|近づいてみると、 {s1}は{s2}なのがわかった。
+mno_ruin_menu_0|この場所を探索する。
+mno_ruin_leave|立ち去る・・・
+menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
+menu_animal_ambush|あなたとコンパニオンは、 他の兵とはぐれてしまいました。 すると突然・・・
+menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
+menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
+menu_build_your_scene|ゲームのEditモード (あらかじめM&BのランチャーのOptionsで EditモードをONにする必要があります)を 利用すれば、 下に用意されているスロットのうちのひとつを使って、 自分だけの戦闘シーンを作ることができます。 作成したシーン (TLD/SceneObjフォルダにある、 scoファイルのことです) をTLDの開発チームに送ってください。 シーンの出来が良ければ、 今後のリリースにおいて ランダム戦闘シーンのうちのひとつとして 登場するかも知れません！^^マップ上のどの地域を舞台にしたシーンなのかを 特定してください。^ヒント: あなたがシーン作成の経験が豊富で、 AIの仕組みや挙動を熟知しているのでない限り、 水中や急勾配の山といった 移動しづらい場所の使用は避けましょう。^(#0-1は攻撃側が、 #4は防衛側がメインです。 #5-8はいじらないでください。)
+mno_scene1|Battlefield5 (file scn battlefield5.sco)
+mno_scene2|Battlefield6 (file scn battlefield6.sco)
+mno_scene3|Battlefield7 (file scn battlefield7.sco)
+mno_scene4|Battlefield8 (file scn battlefield8.sco)
+mno_scene5|Battlefield9 (file scn battlefield9.sco)
+mno_back_3dot|戻る・・・

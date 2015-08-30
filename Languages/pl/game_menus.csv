@@ -1,4 +1,4 @@
-menu_start_game_1|^^^^^^^^^^O co walczysz?
+menu_start_game_1|^^^^^^^^^^Dlaczego chcesz walczyć?
 mno_start_good|ŚWIT nowej Ery
 mno_start_evil|ZMIERZCH Ludzi
 mno_go_bback|Wróć
@@ -12,7 +12,7 @@ mno_custom_battle_scenario_4 |Obrona Helmowego Jaru, Rohan vs Isengard
 mno_custom_battle_scenario_5 |Potyczka, Ludy Północy vs Rhun
 mno_custom_battle_scenario_6 |Atak podczas oblężenia, Orkowie vs Krasnoludy
 mno_custom_battle_scenario_7 |Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
-; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
+mno_custom_battle_scenario_11|Testowe bitwy (Ciągle Balansowane!)
 mno_custom_battle_scenario_10|Test bitwy krajobrazowej
 mno_troll_battle_scenario    |Test bitew troli.
 mno_warg_battle_scenario     |Test walki wargów
@@ -88,28 +88,28 @@ mno_start_er|mieszkaniec Ereboru
 mno_start_ih|górnik z Żelaznych Wzgórz
 menu_start_gondor|^^^^^^^^^^Skąd jesteś, w Gondorze?
 mno_start_mt|MINAS TIRITH, stolica
-; mno_start_ls|LOSSARNACH, the Fiefdom of the Axemen
-; mno_start_la|LAMEDON, the Fiefdom of the Mountain Clansmen
-; mno_start_pg|PINNATH GELIN, the Fiefdom of Green Hills
-; mno_start_do|DOL AMROTH, the Fiefdom of Swan Knights
-; mno_start_pe|PELARGIR, the Coastal Fiefdom
-; mno_start_bl|BLACKROOT VALE, the Fiefdom of Archers
+mno_start_ls|LOSSARNACH, Topornik Fiefdomu
+mno_start_la|LAMEDON, Konnyczłonek klanu Fiefdomu
+mno_start_pg|PINNATH GELIN, Fiefdomu z Zielonych Wzgórz
+mno_start_do|DOL AMROTH, Łabędzi Rycerz Fiefdom
+mno_start_pe|PELARGIR, Wybrzeża Fiefdomu
+mno_start_bl|BLACKROOT VALE, Łucznik Fiefdomu
 menu_start_eye_man|^^^^^^^^^^Wybierz swój lud:
 mno_start_hr|HARADRIMOWIE, ludzi pustyni z Południa
-; mno_start_bn|Black NUMENOREANS, the renegades from the West
+mno_start_bn|Czarni NUMENOREANS, renegaci z Zachodu
 mno_start_um|UMBAROWIE, piraci z Południowych Mórz
 mno_start_rh|RHUNOWIE, barbarzyńcy ze Wschodu
 mno_start_kh|KHANDOWIE, dzicy z Południowego Wschodu
 menu_start_eye_orc|^^^^^^^^^^Gdzie się narodziłes?
-; mno_start_arm|in the armies amassed at MORDOR
+mno_start_arm|W armiach zgromadzonych przez MORDOR
 mno_start_cav|w jaskiniach DOL GULDUR
 menu_start_hand_orc|^^^^^^^^^^Gdzie się narodziłes?
-; mno_start_armis|in the Armies amassed at ISENGARD
+mno_start_armis|W Armiach zgromadzonych przez ISENGARD
 mno_start_minmo|w Kopalniach Moria
 mno_start_cliff|na zboczach góry GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Wybierz rodowód
 mno_start_1_com|Robotnik.
-; mno_start_2_hib|High-born
+mno_start_2_hib|Wysoko urodzony
 menu_start_haradrim|^^^^^^^Jesteś Haradrimem,^człowiekiem Pustyni.^Wybierz swój ród
 mno_start_1_des|Człowiek pustyni.
 mno_start_2_far|Plemieniec Dalekiego Haradu
@@ -121,7 +121,7 @@ mno_continue|Dalej...
 menu_character_report|^^^^^Morale oddziału: {reg8}^Limit wielkości oddziału: {reg7}^
 menu_camp|^^^^Rozbijasz obóz.{s2}^^Co chcesz zrobić?
 mno_camp_scene|Przespacerować się.
-; mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_troop|Podgląd{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
 mno_camp_action|Użyj obiektu
 mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmienić opcje TLD.
@@ -134,27 +134,27 @@ mno_game_options_cutscenes|Cutscenki: {s7}
 mno_game_options_injuries|Urazy dla towarzyszy: {s7}.
 mno_game_options_death|Permanentna śmierć dla lordów i towarzyszy: {s7}.
 mno_game_options_death2|Permanentna śmierć dla gracza (ty TY!): {s7}.
-; mno_game_options_morale|Battle morale system:  {s7}
-; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
-; mno_game_options_tweaks|Gameplay tweaks...
+mno_game_options_morale|System bitewnych morale: {s7}
+mno_game_options_animal_ambushes|Zwierzęce zasadzki: {s7}
+mno_game_options_tweaks|usprawnienia rozgrywki...
 mno_game_options_back|Wróć do menu obozu.
 menu_camp_tweaks|^^^^^^^^Wybierz opcję, którą chcesz dostosować.
-; mno_tweak_options_compat|Compatibility tweaks...
-; mno_tweak_options_strat|Strategy tweaks...
+mno_tweak_options_compat|usprawnienia zgodności...
+mno_tweak_options_strat|usprawnienia strategii
 mno_tweak_options_back|Wróć do menu opcji.
-; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
-; mno_game_options_compat_party|Maximum number of parties: {s1}
+menu_camp_compat_tweaks|^^^^^^^^Kliknij opcję, aby zmienić (przytrzymaj shift, aby zmniejszyć):^(te opcje mają poprawić wydajność i nie są oszustwem)
+mno_game_options_compat_party|Maksymalna liczba grup: {s1}
 mno_game_options_compat_back|Wróć do menu ulepszeń.
-; menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
-; mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
-; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
-; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
-; mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
+menu_camp_strat_tweaks|^^^^^^^^Kliknij opcję, aby zmienić:^(Ostrzeżenie: to są oszustwa!)
+mno_strat_tweaks_siege_reqs|Siła wymagana do oblężenia: {s7}
+mno_strat_tweaks_siege_relax_rate|Prędkość odnawiania siły oblężenia: {reg1}
+mno_strat_tweaks_regen_rate|Szybkość regeneracji siły: {s7}
+mno_strat_tweaks_siege_regen_limit|Frakcje nie zregenerują się poniżej: {reg1}
 ; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
 ; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
-; mno_camp_customize_defilement|Customize Defiled Armor
+mno_camp_customize_defilement|Dostosuj Zplugawiony Pancerz
 mno_camp_drink_water|Wypić Wodę Entów!
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
@@ -162,24 +162,24 @@ menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
 menu_fangorn_danger|^^^^^^Dziwne, otaczają cie jakby szepty.^Czyżby to rozmawiały drzewa? W powietrzu można wyczuć głeboki gniew i ból.^Twoje rozkazy?
 mno_be_quiet_elf|Poszanuj panujący wokół spokój. Poruszaj się jak najciszej.
 mno_be_quiet|Umieść broń na ziemi i baz cicho a teraz wynocha.
-mno_be_bold|Go on! I'm not afraid of plants or old myths!
-mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
-menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
-menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
-; mno_ow_get_out|Ouch! Let's get out of this cursed place!
-menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your men were that lucky.^^
-menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
+mno_be_bold|Dalej! Nie lękam się roślin i starych mitów!
+mno_fight_back|Przekonajmy się! Przeszukajcie okolicę! Spalcie parę drzew!
+menu_fangorn_search_fails|^^^^^^Przeszukujesz  gęsty, mroczny las, ale nic nie znajdujesz.^Jednakże, czujesz się obserwowany, a poczucie niebezpieczeństwa narasta.
+menu_fangorn_battle_debrief_won|^^^Znakomite zwycięstwo!^^^A więc to jest odpowiedź na Fangoriańskie mity...
+menu_fangorn_killed_player_only|^^^^^^Podróżujesz przez mroczny, gęsty las.^Nagle zostajesz przez coś uderzony! Może gałąź spadła Ci na głowę?^Leżysz nieprzytomny przez parę minut. Jesteś ciężko ranny, lecz wciąż możesz iść dalej.
+mno_ow_get_out|Ahh! Wydostańmy się z tego przeklętego miejsca!
+menu_fangorn_killed_troop_and_player|^^^^^^Podróżujesz przez mroczny, gęsty las.^^Nagle zostajesz przez coś uderzony! Być może ciężka gałąź spadła Ci na głowę?^^Po długich minutach w końcu dźwigasz się na nogi, jednakże nie wszyscy twoi ludzie mieli tyle szczęścia.^^
+menu_fangorn_killed_troop_only|^^^^^^^^Podróżujesz przez mroczny, gęsty las. Twoi ludzie są przerażeni.^^Nagle słyszysz krzyki dochodzące z tyłu! Szybko zawracasz, jednakże odnajdujesz paru martwych żołnierzy w kałuży krwi.^^Innych nigdzie nie widać...
 mno_get_out|Wynośmy się z tego przeklętego miejsca!
-menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in its blood, it looks tremendously dangerous...
-mno_killit|Dispatch it, now. Make sure it dies.
-mno_cageit1|Cage it and drag it around.
-mno_cageit2|Cage it togheter with the other troll.
-mno_cheat_disabable|Disable cheat/modding options.
-menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
-menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
-; mno_i_shall_surv|I... shall... survive!
-menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
+menu_can_capture_troll|Pokonany troll wciąż oddycha!!^^Jego przepełnione bólem i wściekłością oczy patrzą na ciebie.^Nawet teraz, kiedy został powalony, leżąc w kałuży krwi, wciąż wydaje się śmiertelnie niebezpieczny...
+mno_killit|Dobijcie to, natychmiast. Upewnijcie się, że nie żyje.
+mno_cageit1|Zakujcie to i umieście w klatce.
+mno_cageit2|Umieście to wraz z innym trollem.
+mno_cheat_disabable|Wyłącz opcję oszustw/moddingu.
+menu_drank_ent_water_human|^^^Wypijasz wodę. Jest orzeźwiająca i czysta . Ma przyjemną woń , niczym piżmo.^Czujesz się pobudzony.^^Niemniej, masz dziwne i nienaturalne odczucie. Instykt mówi ci, aby nigdy więcej nie pić tej wody.
+menu_drank_ent_water_orc|^^^Wypijasz wodę. To zwyczajna woda.^Nagle czujesz zaciskający ból w gardle. .^Woda była zatruta!^Krztusisz się, wypluwając ciemną krew, niemalże mdlejesz.^^To boli, oh, tak bardzo boli.
+mno_i_shall_surv|Ja... powinienem... przetrwać!
+menu_end_game|^^^^^A więc postanowione, decydujesz się porzucić życie podróżnika i ustatkować się.  Sprzedajesz swoją zbroję i broń, zbierasz dobytek i wyruszasz w kierunku zachodzącego słońca...
 mno_end_game_bye|Bywaj.
 menu_cattle_herd|Napotykasz jakichś ludzi.
 mno_cattle_drive_away|Rozkaż im podążać za sobą.
@@ -208,7 +208,7 @@ menu_kingdom_army_quest_messenger|{s8} przesyła wiadomość, że życzy sobie r
 menu_kingdom_army_quest_join_siege_order|{s8} chce, byś pom{ógł/ogła} oblegać {s9} i przygotować szturm. Twoi żołnierze mają zająć {s9} za wszelką cenę.
 menu_kingdom_army_follow_failed|Nie wysłuchał{e/a}ś rozkazów, które wydał ci {s8} i nie podążył{e/a}ś za nim. W gniewie wyrzuca Cię ze swej armii i wysyła groźnie brzmiące ostrzeżenie, iż twe czyny nie zostaną zapomniane.
 menu_battle_debrief|{s11} Podczas tej krwawej bitwy ucierpieli:^^Twoje straty:{s8}{s10}^^Straty wroga:{s9}
-mno_inspect_troll|Inspect downed troll
+mno_inspect_troll|Zbadaj powalonego trolla
 menu_pre_join|^^^^^Natrafiasz na zaciekłą bitwę, w której walczą {s2} i {s1}. Decydujesz się...
 mno_pre_join_help_attackers|Wspomóc atakujących. {s2} potrzebują pomocy.
 mno_pre_join_help_defenders|Pomóc atakowanym ({s1}) i wesprzeć ich w obronie.
@@ -220,11 +220,11 @@ mno_join_leave|Odejdź.
 menu_join_order_attack|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
 mno_enter|Wejdź.
 menu_battlefields|^^^^^^^^Wybierz pole...
-; mno_enter_f1|Field 1
-; mno_enter_f2|Field 2
-; mno_enter_f3|Field 3
-; mno_enter_f4|Field 4
-; mno_enter_f5|Field 5
+mno_enter_f1|Pole 1
+mno_enter_f2|Pole 2
+mno_enter_f3|Pole 3
+mno_enter_f4|Pole 4
+mno_enter_f5|Pole 5
 menu_join_siege_outside|^^^^^^{s1} jest pod oblężeniem wojsk, którymi dowodzi {s2}.
 mno_approach_besiegers|Idź do obozu oblegających.
 mno_pass_through_siege|Omiń oblężenie i spróbuj się przedostać do: {s1}.
@@ -316,27 +316,27 @@ mno_help|Help the strangers!
 mno_go_your_way|Leave them alone
 menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
 mno_good_equal|Dobra frakcja.
-; mno_bad_equal|Evil faction
-; mno_replay_prev|Replay previous setup
+mno_bad_equal|Wroga frakcja
+mno_replay_prev|Przywróć poprzednie ustawienia
 menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
 mno_cb_gondor|Gondor
 mno_cb_gondor1|Rohan
 mno_cb_gondor2|Lothlorien
-; mno_cb_gondor3|Rivendell
-; mno_cb_gondor4|Mirkwood
-; mno_cb_gondor5|Dwarves
+mno_cb_gondor3|Rivendell
+mno_cb_gondor4|Mirkwood
+mno_cb_gondor5|Krasnoludy
 mno_cb_gondor6|Dale
 mno_cb_gondor7|Beorningowie
 menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
-; mno_cb_mordor2|Dunland
-; mno_cb_mordor3|Haradrim
-; mno_cb_mordor4|Easterlings
+mno_cb_mordor2|Dunland
+mno_cb_mordor3|Haradrim
+mno_cb_mordor4|Easterlingowie
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun
-; mno_cb_mordor8|Corsairs
+mno_cb_mordor8|Korsarze
 mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 mno_next_rescue_scene_door|Continue onward!
 mno_pick_troops1|Pick companions for the mission, {reg0}  selected
@@ -346,7 +346,7 @@ menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped 
 mno_pay_respects|Kneel and pay your respects.
 mno_swear_oath|Swear an oath of vengeance!
 mno_despoil|Desecrate the site
-; mno_leave_mound|Leave the mound.
+mno_leave_mound|Zsiądź z konia.
 menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
 menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s1}.   You would relentlessly seek out the forces of {s2} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
@@ -355,9 +355,9 @@ menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} 
 menu_town_ruins|When you approach, you see that {s1} is {s2}
 mno_ruin_menu_0|Explore the place.
 mno_ruin_leave|Wyjdz...
-; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
-; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
-; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
+menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś już jej częścią.
+menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
+menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy atakujący leżeli na ziemi - ranni, lub martwi. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
 menu_build_your_scene|Tutaj możesz zbudować własną scenę walki, używając jednego ze slotów zamieszczonych poniżej i trybu edycji (musisz najpierw zmienić tryb edycji na Włączony w menu opcji w panelu startowym M&B).
 ; mno_scene1|Battlefield5 (file scn battlefield5.sco)

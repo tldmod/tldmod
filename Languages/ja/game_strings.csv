@@ -1,0 +1,1876 @@
+str_yes|する。
+str_no|しない。
+str_noone|誰も
+str_s50_and_s51|{s50}および {s51}
+str_s5_s_party|{s5}の部隊
+str_s5_s_host|{s5}の軍隊
+str_given_by_s1_at_s2|{s2}にて {s1}より請け負う
+str_given_by_s1_in_wilderness|野外にて{s1}より請け負う
+str_s7_raiders|{s7}遊撃隊
+str_bandits_eliminated_by_another|迷惑な野盗は、 他のパーティによって倒されました。
+str_msg_battle_won|戦いに勝利しました！ 終了するにはTABキーを押してください・・・
+str_tutorial_map1|これは大陸の地図です。 マップ上を左クリックすると、 あなたのパーティはそこを目指して移動をしたり、 町の中へ入ったり、 選択されたパーティを追跡したりします。 この画面のときに、 パーティが移動もせず、 待機中でも休息中でもない場合は、 時間の流れは止まった状態になります。 スペースキーを押している間は、 パーティがその場に立ち止まった状態でも、 時間だけは流れていきます。
+str_accept|受け入れる
+str_charge|突撃
+; str_color|Color
+; str_flip_horizontal|Flip Horizontal
+; str_flip_vertical|Flip Vertical
+str_hold_fire|攻撃止め
+str_blunt_hold_fire|殴打 / 攻撃止め
+str_tutorial_ammo_refilled|矢弾が補充されました。
+str_custom_battle_1|マルヴォギル隊長率いるゴンドールの部隊は、 増援に向う途中のハラドの部隊を捕まえた。 隊長はときの声を上げ、 彼の馬にムチを当てると、 忠実な部下たちを率いて 激しい戦いの火蓋を切った。
+str_custom_battle_2|ロリエンのケレボルンが騎兵と弓兵からなる巡察隊を率いていると、 先行していた斥候から 灰色の顔をした男たちの一群が 接近していると報告を受けた。 悪名高い、黒きヌーメノール人だ！ ロスロリエンの近くでは彼らを長いこと見ることがなかったが、 再びこの世界へと追い払われてきたのだろう。
+str_custom_battle_3|ローハンのグリムボルド卿は一隊を率い、 アイゼンガルド軍による包囲のなか、 絶対防御線である城壁を死守していた。 攻城軍が仕上げの総攻撃にかかろうとする今、 彼は勇気と磨き上げた剣をもって、 この城壁を守り通さねばならない。
+str_custom_battle_4|リューンの軍勢が接近しているとの報告を斥候から受けると、 ベランヘルム卿は数に優る敵勢を食い止めるべく、 素早く彼の野営地の守備を固める準備にとりかかった。
+str_custom_battle_5|ウグルクは獰猛なオークどもに思うさまの略奪を約束すると、 彼らを率いて西方へと遠征した。 もしこのドワーフの要塞を今日落とすことができれば、 バラド＝ドゥアの主人たちは大いにお喜びになるだろう。
+str_custom_battle_6|ウグルク率いるオーク遊撃隊は、 彼らから逃げるエルフの巡察隊を 夢中になって追撃していた。 だが、運とはいづれ尽きるものなのだ。 どうやら、 狡猾な青白い顔の連中が攻勢に出る番が来たようだ。
+str_custom_battle_7|ゴンドールの海岸に、海賊どもが野営を張った！ なんとずうずうしい奴らか！ やつらの後続部隊が到着する前に、 元来た海へ追い戻してやろう。
+; str_finished|(Finished)
+str_delivered_damage|{reg60}のダメージを与えました。
+str_archery_target_hit|距離: {reg61}ヤード。 スコア: {reg60}
+str_use_baggage_for_inventory|戦闘中にインベントリを使用するには、 箱を利用してください (戦闘開始位置に置いてあります)。
+str_cant_use_inventory_now|今はインベントリを開けません。
+str_cant_use_inventory_arena|この場所ではインベントリを利用できません。
+str_cant_use_inventory_disguised|変装中はインベントリを利用できません。
+str_cant_use_inventory_tutorial|訓練キャンプにいるあいだは、 インベントリを利用できません。
+str_1_denar|1リソースポイント。
+str_reg1_denars|{reg1}リソースポイント。
+str_january_reg1_reg2|第三紀{reg2}、ナルヴィンイエ {reg1} (一月)
+str_february_reg1_reg2|第三紀{reg2}、ネーニエ {reg1} (二月)
+str_march_reg1_reg2|第三紀{reg2}、スーリメ {reg1} (三月)
+str_april_reg1_reg2|第三紀{reg2}、ヴィーレッセ {reg1} (四月)
+str_may_reg1_reg2|第三紀{reg2}、ローテッセ {reg1} (五月)
+str_june_reg1_reg2|第三紀{reg2}、ナーリエ {reg1} (六月)
+str_july_reg1_reg2|第三紀{reg2}、ケアミエ {reg1} (七月)
+str_august_reg1_reg2|第三紀{reg2}、ウリメ {reg1} (八月)
+str_september_reg1_reg2|第三紀{reg2}、ヤヴァンニエ {reg1} (九月)
+str_october_reg1_reg2|第三紀{reg2}、ナルクウェリエ {reg1} (十月)
+str_november_reg1_reg2|第三紀{reg2}、ヒーシメ {reg1} (十一月)
+str_december_reg1_reg2|第三紀{reg2}、リンガレ {reg1} (十二月)
+str_calendar_spec_day_1|第三紀{reg2}、イェスタレ(最初の日)
+str_calendar_spec_day_2|第三紀{reg2}、トゥイレーレ(春の日)
+str_calendar_spec_day_3|第三紀{reg2}、ロエンデ(ロアの中間の日)
+str_calendar_spec_day_4|第三紀{reg2}、ヤーヴィエーレ(秋の日)
+str_calendar_spec_day_5|第三紀{reg2}、メッタレ(終わりの日)
+str_town_nighttime|夜も更けています。
+str_door_locked|扉にはカギがかかっている。
+str_castle_is_abondened|城は抜け殻のようだ。
+str_town_is_abondened|ここには守備兵がいないようだ。
+str_place_is_occupied_by_player|ここはあなたの部隊によって確保されています。
+str_place_is_occupied_by_enemy|ここは敵対勢力によって確保されています。
+str_place_is_occupied_by_friendly|ここは友軍によって確保されています。
+str_do_you_want_to_retreat|本当に退却しますか？
+str_give_up_fight|降参しますか？
+str_do_you_wish_to_leave_tutorial|チュートリアルを終了しますか？
+str_do_you_wish_to_surrender|降伏しますか？
+str_can_not_retreat|敵勢が近すぎて退却できません！
+str_s1_joined_battle_enemy|{s1}が敵軍に加わりました。
+str_s1_joined_battle_friend|{s1}が味方に加わりました。
+str_entrance_to_town_forbidden|衛兵が侵入者に目を光らせていて、 簡単に門を通してはくれない様子です。
+str_sneaking_to_town_impossible|衛兵たちに気付かれてしまいました。 こうなってしまっては、 どんなにうまく変装をしても 門を通り抜ける事は不可能です。
+str_battle_won|戦いに勝利しました！
+str_battle_lost|戦いに敗れました！
+str_player_down|あなたは気を失いましたが、 あなたの兵は戦いを続行します！
+str_attack_walls_success|多くの血が流れた激戦を戦い抜き、 あなたの勇敢な兵士たちは敵の手から城壁を奪い取ることに成功しました。
+str_attack_walls_failure|あなたの兵士たちは、 城壁を襲う寄せ手の猛攻の波に 飲み込まれていきました。 数少ない生き残った者たちは 逃亡して、 二度と戻る事はないでしょう。
+str_attack_walls_continue|多くの犠牲者を出した戦闘は お互いに譲らず、 痛み分けに終わった。 兵士たちは勇敢に戦ってはいるが、 城は依然として敵の手にある。
+str_order_attack_success|あなたの兵士たちは勇敢に戦い、 敵勢を撃破しました。
+str_order_attack_failure|敵兵があなたの部下を切り倒し、 傷ついた生き残りの兵をいとも簡単に追い払う光景を、 あなたは絶望とともに見つめた。
+str_order_attack_continue|再三の攻撃にもかかわらず、 あなたの兵は決定的な勝利をつかむ事が できなかった。
+str_join_order_attack_success|あなたの兵は友軍とともによく戦って敵を打ち倒し、 勝利の栄誉を友軍と分かち合った。
+str_join_order_attack_failure|敵兵はあなたの部下を切り倒し、 傷ついた生き残りの兵をいとも簡単に追い払った。
+str_join_order_attack_continue|再三の攻撃にもかかわらず、 あなたの兵と友軍は決定的な勝利を つかむ事ができなかった。
+str_siege_defender_order_attack_success|守備隊の兵たちは 勇気と巧妙さを発揮して城壁を守り抜き、 敵の攻撃を打ち破ると、 その勢いをかって敵勢を敗走させた。
+str_siege_defender_order_attack_failure|敵の攻撃がはじまるや、 すぐに一方的な大虐殺となった。 数で圧倒される守備隊は、 勇敢な抵抗もむなしく城壁を奪われ、 皆殺しにされた。
+str_siege_defender_order_attack_continue|再び繰り返された総攻撃は、 攻撃軍に多くの犠牲者を出しながら、 寸土も奪うことができずに失敗に終わった。 しかし攻撃軍の圧倒的な数の優位は依然ゆるがず、 守備隊にとってはささやかな勝利に終わった。 攻防戦はまだつづく。
+str_hero_taken_prisoner|{s3}の{s1}が、 {s2}の捕虜になりました。
+str_hero_freed|{s2}の捕虜となっていた{s3}の {s1}が、 開放されました。
+str_center_captured|{s2}が、{s3}から{s1}を奪いました！
+str_troop_relation_increased|あなたと{s1}との信頼関係が{reg1}から{reg2}に向上しました。
+str_troop_relation_detoriated|あなたと{s1}との信頼関係が{reg1}から{reg2}に悪化しました。
+str_faction_relation_increased|あなたと{s1}との信頼関係が{reg1}から{reg2}へ向上しました。
+str_faction_relation_detoriated|あなたと{s1}との信頼関係が{reg1}から{reg2}へ悪化しました。
+str_party_gained_morale|あなたの部隊の士気が{reg1}上がりました。
+str_party_lost_morale|あなたの部隊の士気が{reg1}下がりました。
+str_qst_follow_spy_noticed_you|スパイがあなたに気付きました！ 彼が一目散に逃げます！
+str_father|父
+str_husband|夫
+str_wife|妻
+str_daughter|娘
+str_mother|母
+str_son|息子
+str_brother|兄弟
+str_sister|姉妹
+str_he|彼
+str_she|彼女
+str_s3s_s2|{s3}の{s2}
+str_s5_is_s51|{s5}は{s51}だよ。
+str_s5_is_the_ruler_of_s51|{s5}は{s51}の領主だよ。 
+str_s5_is_a_nobleman_of_s6|{s5}は{s6}の貴族だよ。
+str_relation_mnus_100|復讐を誓っている
+str_relation_mnus_90|復讐を誓っている
+str_relation_mnus_80|復讐を誓っている
+str_relation_mnus_70|憎んでいる
+str_relation_mnus_60|憎んでいる
+str_relation_mnus_50|敵意をもっている
+str_relation_mnus_40|憤慨している
+str_relation_mnus_30|恨みをもっている
+str_relation_mnus_20|不満を抱いている
+str_relation_mnus_10|疑いをもっている
+str_relation_plus_0|中立的である
+str_relation_plus_10|協力的である
+str_relation_plus_20|好意的である
+str_relation_plus_30|贔屓にしている
+str_relation_plus_40|支持している
+str_relation_plus_50|理解者である
+str_relation_plus_60|尊敬している
+str_relation_plus_70|好意を抱いている
+str_relation_plus_80|忠実である
+str_relation_plus_90|心酔している
+str_relation_mnus_100_ns|{s60}は、あなたに対する復讐を誓っています。
+str_relation_mnus_90_ns|{s60}は、あなたに対する復讐を誓っています。
+str_relation_mnus_80_ns|{s60}は、あなたに対する復讐を誓っています。
+str_relation_mnus_70_ns|{s60}は、あなたを憎んでいます。
+str_relation_mnus_60_ns|{s60}は、あなたを憎んでいます。
+str_relation_mnus_50_ns|{s60}は、あなたに敵意を抱いています。
+str_relation_mnus_40_ns|{s60}は、あなたに憤慨しています。
+str_relation_mnus_30_ns|{s60}は、あなたに恨みを抱いています。
+str_relation_mnus_20_ns|{s60}は、あなたに不満を抱いています。
+str_relation_mnus_10_ns|{s60}は、あなたに懐疑的です。
+str_relation_plus_0_ns|{s60}は、あなたに対して中立の立場をとっています。
+str_relation_plus_10_ns|{s60}は、あなたに協力的です。
+str_relation_plus_20_ns|{s60}は、あなたに好意的です。
+str_relation_plus_30_ns|{s60}は、あなたを贔屓にしています。
+str_relation_plus_40_ns|{s60}は、あなたを支持しています。
+str_relation_plus_50_ns|{s60}は、あなたの理解者です。
+str_relation_plus_60_ns|{s60}は、あなたを尊敬しています。
+str_relation_plus_70_ns|{s60}は、あなたに好意を抱いています。
+str_relation_plus_80_ns|{s60}は、あなたに忠実です。
+str_relation_plus_90_ns|{s60}は、あなたに心酔しています。
+str_relation_reg1|信頼関係: {reg1}
+str_center_relation_mnus_100|民衆はあなたを呪っています。
+str_center_relation_mnus_90|民衆はあなたに強い恨みを持っています。
+str_center_relation_mnus_80|民衆はあなたに恨みを持っています。
+str_center_relation_mnus_70|民衆はあなたを激しく憎んでいます。
+str_center_relation_mnus_60|民衆はあなたを憎んでいます。
+str_center_relation_mnus_50|民衆はあなたに激しい敵意を持っています。
+str_center_relation_mnus_40|民衆はあなたに強い敵意を持っています。
+str_center_relation_mnus_30|民衆はあなたに敵意を持っています。
+str_center_relation_mnus_20|民衆はあなたを拒否しています。
+str_center_relation_mnus_10|民衆はあなたに否定的です。
+str_center_relation_plus_0|民衆はあなたに対して中立的です。
+str_center_relation_plus_10|民衆はあなたを受け入れています。
+str_center_relation_plus_20|民衆はあなたに協力的です。
+str_center_relation_plus_30|民衆はあなたをいくらか支持しています。
+str_center_relation_plus_40|民衆はあなたを支持しています。
+str_center_relation_plus_50|民衆はあなたを熱心に支持しています。
+str_center_relation_plus_60|民衆はあなたに忠実です。
+str_center_relation_plus_70|民衆はあなたに非常に忠実です。
+str_center_relation_plus_80|民衆はあなたに心酔しています。
+str_center_relation_plus_90|民衆はあなたを崇めています。
+str_town_prosperity_0|{s60}は目を覆うばかりの貧困にさらされています。
+str_town_prosperity_10|荒れるにまかせた{s60}は、ほとんど廃墟と化しています。
+str_town_prosperity_20|{s60}はみすぼらしく、荒れ果てています。
+str_town_prosperity_30|{s60}は貧しく、荒れ放題です。
+str_town_prosperity_40|{s60}は多くの問題を抱えているように見えます。
+str_town_prosperity_50|{s60}はとりたてて言うべきところもない、平凡な町です。
+str_town_prosperity_60|{s60}には活気があります。
+str_town_prosperity_70|経済的に豊かな{s60}は、活気に満ちています。
+str_town_prosperity_80|{s60}は裕福で、手入れが行き届いています。
+str_town_prosperity_90|華やかな{s60}は、裕福そうな人々で賑わっています。
+str_town_prosperity_100|光輝くような{s60}の大いなる富の力は、訪れる者を圧倒せんばかりです。
+str_village_prosperity_0|{s60}は目を覆うばかりの貧困にさらされています。
+str_village_prosperity_10|{s60}の村は、ひどく貧しく、 悲惨な状態です。
+str_village_prosperity_20|{s60}の村はとても貧しく、 荒れ果てています。
+str_village_prosperity_30|{s60}の村は貧しく、荒れ放題です。
+str_village_prosperity_40|{s60}の村はどことなく寂れたように見えます。
+str_village_prosperity_50|{s60}の村はとりたてて言うべきところもない、 平凡な村です。
+str_village_prosperity_60|{s60}の村には活気があります。
+str_village_prosperity_70|{s60}の村は栄えているようです。
+str_village_prosperity_80|{s60}の村は豊かで、 手入れが行き届いています。
+str_village_prosperity_90|{s60}の村は非常に豊かで、 繁盛しています。
+str_village_prosperity_100|{s60}の村は広大で肥沃な農地に囲まれ、 非常に豊かです。
+str_war_report_minus_4|我々はこの戦争に負けるだろう
+str_war_report_minus_3|見通しは暗い
+str_war_report_minus_2|戦況は良くない
+str_war_report_minus_1|軍を整え直せばまだ巻き返せる
+str_war_report_0|戦況は五分だ
+str_war_report_plus_1|勝利の可能性は充分あるだろう
+str_war_report_plus_2|すべてがうまくいっている
+str_war_report_plus_3|やつらは我々の敵ではない
+str_war_report_plus_4|我々の勝利は目前だ
+str_persuasion_summary_very_bad|あなたは{s50}をなんとか説得しようと試みたが、 まるでうまくいかなかった。 話の出だしは良くても、 言葉の選択がまずいせいなのか、 話せば話すほど、 先方は興味を失っていくようだ。 終わってみれば、 もう自分でも何を言いたかったのか 分からないほど要領を得ない話になっていた。 説得というより、 墓穴を掘っただけだったようだ。 当然のことながら、 {s50}は何の感動も示さなかった。
+str_persuasion_summary_bad|あなたは{s50}を説得しようと試みたが、 のっけから厳しい反論にさらされた。 あなたが快心の論だと内心感じたものでさえ、 吐き出してみると、 {reg51?彼女:彼}の前では、 我ながら虚しい話に聞こえた。 {s50}があなたの意見を高く評価してくれるとは、 とても思えない。
+str_persuasion_summary_average|議論を始めてみると、 {s50}は頭の切れる、 弁舌の達者な人物であることが判明した。 あなたがどう論じてみても、 {reg51?彼女:彼}からの的確な反論に遭ってしまうのだった。 終わってみれば、 議論は平行線のままだった。
+str_persuasion_summary_good|とっさの機転と流れるような論証により、 あなたの弁論は {s50}のいくつかの考えを改めさせるのに 充分な効果を発揮した。 しかしながら、 {reg51?彼女:彼}はあなたの要望に対する懸念を 完全には捨てきれない様子だ。
+str_persuasion_summary_very_good|あなたの情熱のほとばしる言葉の数々は、 聴く者の耳に力強い詩のように響いた。 あたりは静まり返り、 まるで世界中のすべてのものが、 息をひそめてあなたの話に聴き入っているかのようだった。 あなたの美しい弁論は、 {s50}を大いに感動させた。 {reg51?彼女:彼}はあなたを支持することに対して 意欲的になったようだ。
+str_surname_1|タルノストの{s50}
+str_surname_2|ロスサールナッハの{s50}
+str_surname_3|エレヒの{s50}
+str_surname_4|エゼルロンドの{s50}
+str_surname_5|ペラルギアの{s50}
+str_surname_6|リンヒアの{s50}
+str_surname_7|エスリングの{s50}
+str_surname_8|アルドブルグの{s50}
+str_surname_9|アイゼンガルドの{s50}
+str_surname_10|ウェストフォルドの{s50}
+str_surname_11|エレボールの{s50}
+str_surname_12|イーストフォルドの{s50}
+str_surname_13|黒門の{s50}
+str_surname_14|キリス・ウンゴルの{s50}
+str_surname_15|オスギリアスの{s50}
+str_surname_16|モリアの{s50}
+str_surname_17|デールの{s50}
+str_surname_18|エスガロスの{s50}
+str_surname_19|ドル・グルドゥアの{s50}
+str_surname_20|グンダバドの{s50}
+str_surname_21|のっぽの{s50}
+str_surname_22|やせっぽちの{s50}
+str_surname_23|ナズグールの{s50}
+str_surname_24|スズメの{s50}
+str_surname_25|罰当たり{s50}
+str_surname_26|向こう傷の{s50}
+str_surname_27|金髪の{s50}
+str_surname_28|冷酷{s50}
+str_surname_29|赤の{s50}
+str_surname_30|黒の{s50}
+str_surname_31|のっぽの{s50}
+str_surname_32|夢想家{s50}
+str_surname_33|向こう見ずの{s50}
+str_surname_34|木喰いの{s50}
+str_surname_35|悪だくみの{s50}
+str_surname_36|臆病{s50}
+str_surname_37|秀才{s50}
+str_surname_38|神速の{s50}
+str_surname_39|吟遊詩人の{s50}
+str_surname_40|坊主頭の{s50}
+str_surname_41|癇癪持ちの{s50}
+str_number_of_troops_killed_reg1|戦死者: {reg1}
+str_number_of_troops_wounded_reg1|負傷者: {reg1}
+str_number_of_own_troops_killed_reg1|友軍戦死者: {reg1}
+str_number_of_own_troops_wounded_reg1|友軍負傷者: {reg1}
+str_retreat|退却！
+str_siege_continues|戦いは続く・・・
+str_casualty_display|自軍犠牲者: {s10}^敵軍犠牲者: {s11}{s12}
+str_casualty_display_hp|^あなたは負傷してヒットポイントを{reg1}失いました。
+str_quest_log_updated|クエストログが更新されました・・・
+; str_banner_selection_text|You have been awarded the right to carry a banner. Your banner will signify your status and bring you honour. Which banner do you want to choose?
+; str_retirement_text_1|Only too late do you realise that your money won't last. It doesn't take you long to fritter away what little you bothered to save, and you fare poorly in several desperate attempts to start adventuring again. You end up a beggar in {s9}, living on alms and the charity of the church.
+; str_retirement_text_2|Only too late do you realise that your money won't last. It doesn't take you long to fritter away what little you bothered to save. Once every denar has evaporated in your hands you are forced to start a life of crime in the backstreets of {s9}, using your skills to eke out a living robbing coppers from women and poor townsmen.
+; str_retirement_text_3|Only too late do you realise that your money won't last. It doesn't take you long to fritter away what little you bothered to save, and you end up a penniless drifter, going from tavern to tavern blagging drinks from indulgent patrons by regaling them with war stories that no one ever believes.
+; str_retirement_text_4|The silver you've saved doesn't last long, but you manage to put together enough to buy some land near the village of {s7}. There you become a free farmer, and you soon begin to attract potential {wives/husbands}. In time the villagers come to treat you as their local hero. You always receive a place of honour at feasts, and your exploits are told and retold in the pubs and taverns so that the children may keep a memory of you for ever and ever.
+; str_retirement_text_5|The silver you've saved doesn't last long, but it's enough to buy a small tavern in {s9}. Although the locals are wary of you at first, they soon accept you into their midst. In time your growing tavern becomes a popular feasthall and meeting place. People come for miles to eat or stay there due to your sheer renown and the epic stories you tell of your adventuring days.
+; str_retirement_text_6|You've saved wisely throughout your career, and now your silver and your intelligence allow you to make some excellent investments to cement your future. After buying several shops and warehouses in {s9}, your shrewdness turns you into one of the most prominent merchants in town, and you soon become a wealthy {man/woman} known as much for your trading empire as your exploits in battle.
+; str_retirement_text_7|As a landed noble, however minor, your future is all but assured. You settle in your holdfast at {s7}, administrating the village and fields, adjudicating the local courts and fulfilling your obligations to your liege lord. Occasionally your liege calls you to muster and command in his campaigns, but these stints are brief, and you never truly return to the adventuring of your younger days. You have already made your fortune. With your own hall and holdings, you've few wants that your personal wealth and the income of your lands cannot afford you.
+; str_retirement_text_8|There is no question that you've done very well for yourself. Your extensive holdings and adventuring wealth are enough to guarantee you a rich and easy life for the rest of your days. Retiring to your noble seat in {s8}, you exchange adventure for politics, and you soon establish yourself as a considerable power in your liege lord's kingdom. With intrigue to busy yourself with, your own forests to hunt, a hall to feast in and a hundred fine war stories to tell, you have little trouble making the best of the years that follow.
+; str_retirement_text_9|As a reward for your competent and loyal service, your liege lord decrees that you be given a hereditary title, joining the major nobility of the realm. Soon you complete your investitute as baron of {s7}, and you become one of your liege's close advisors and adjutants. Your renown garners you much subtle pull and influence as well as overt political power. Now you spend your days playing the games of power, administering your great fiefs, and recounting the old times of adventure and glory.
+; str_retirement_text_10|Though you started from humble beginnings, your liege lord holds you in high esteem, and a ripple of shock passes through the realm when he names you to the hereditary title of {count/countess} of {s9}. Vast fiefs and fortunes are now yours to rule. You quickly become your liege's most trusted advisor, almost his equal and charged with much of the running of his realm, and you sit a throne in your own splendourous palace as one of the most powerful figures in Calradia.
+str_loot_village|罪のない村人を襲う
+str_steal_from_villagers|貧しい村人からものを盗む
+str_rob_caravan|隊商を襲う
+str_sell_slavery|人々を奴隷として売る
+str_men_hungry|食料が底をつく
+str_men_unpaid|賃金の支払いが滞る
+str_excessive_casualties|多大な犠牲者を出す
+str_surrender|敵に降伏する
+str_flee_battle|戦いから逃げ出す
+str_pay_bandits|つまらない野盗との取引に応じる
+str_fail_quest|責任を持って引き受けた仕事に失敗する
+str_squander_money|預かった資金を使い込む
+str_murder_merchant|冷徹な殺人に手を染める
+str_round_up_serfs|貴族のための奴隷狩りをする
+str_battle_fate_1|戦いの最中にはぐれる
+str_battle_fate_2|私は負傷して倒れ、 そのまま放置された
+str_battle_fate_3|私は敵の一撃で気を失った
+str_battle_fate_4|私は捕らえられ、 身代金を要求された
+str_battle_fate_5|私は捕らえられたが、 なんとか逃げる事ができた
+str_npc_morale_report|コンパニオンの顔ぶれには{s6}。 あなたの統率力には{s7}。 その他の状況には{s8}。
+str_happy|とても満足している
+str_content|満足している
+str_concerned|懸念を抱いている
+str_not_happy|不満を感じている
+str_miserable|あきれ返っている
+str_morale_reg1|士気: {reg1}
+str_bar_enthusiastic|意気盛ん
+str_bar_content|満足している
+str_bar_weary|疲れている
+str_bar_disgruntled|不機嫌
+str_bar_miserable|不幸
+str_here_plus_space|やあ、戦士殿、 ヘンネス・アンヌーンへようこそ。
+str_npc1_intro|やあ、戦士殿、 ヘンネス・アンヌーンへようこそ。
+str_npc2_intro|やあ、お客人！ 今日はどういったご用件ですかな？
+str_npc3_intro|おっと！旅の人、 もうちょっと静かにしてもらえないかな。
+str_npc4_intro|黄金館へようこそ、戦士殿！
+str_npc5_intro|やあ、{playername}。 マエ ゴヴァンネン！
+str_npc6_intro|私にかまわないで、旅の人。 あなたと話をしたくないの。
+str_npc7_intro|ドワーリンの息子、キーリがこれにあり。 ご用があれば、なんなりと！
+str_npc8_intro|デールへようこそ、旅の人！ 私に何かできることはあるかしら？
+str_npc9_intro|シッ！ 衛兵どもに合図を送るそぶりでも見せたら、 おまえを切り裂いて、 はらわたをワーグどもの エサにしてやるからな！
+str_npc10_intro|そこのおまえ！
+str_npc11_intro|あっ！ おまえ、よそ者だな？ においでわかるぞ。 おいらなんかにわかる訳がない、 なんて親分たちに告げ口してみろ、 おまえの目玉をくり抜いてやるからな！
+str_npc12_intro|おほ！ なにしてんだおまえ、 隠れてんのか？
+str_npc13_intro|そこを動くな！ 族長のテントに、何の用だ？
+str_npc14_intro|お客人、 その不細工な歩き方からすると、 あんたは海の人間ではないようだな。
+str_npc15_intro|おお戦士よ、御目を称えよ！
+str_npc16_intro|我々東の軍団に、よそ者がまぎれ込むのはめずらしい。 ここで何をしている？さっさと吐け。
+str_npc17_intro|よう。 ここの森に用事があるのかい？
+str_npc1_intro_response_1|やあ、追跡術の達人。 南の野伏たちの調子はどう{だい/}？
+; str_npc2_intro_response_1|My business is Gondor's business, and who are you?
+str_npc3_intro_response_1|やあ、どうも、何か悪い事をしたか{な/しら}？
+str_npc4_intro_response_1|{これはどうも/あらこんにちは}、お嬢さん。 お名前を伺ってもよろしいか{な/しら}？
+str_npc5_intro_response_1|やあ、エルフの将軍！ お会いできて光栄だ。
+str_npc6_intro_response_1|それがシルヴァン・エルフ流の 来客へのあいさつなのか{い/しら}？
+str_npc7_intro_response_1|やあ、私は{playername}。 ドゥリンの一族の調子はどう{だい/}？
+str_npc8_intro_response_1|こんにちは。 我々と共に戦ってくれる者を探しているん{だ/の}。
+str_npc9_intro_response_1|脅す相手をよく考えること{だな/ね}、ウルク。{俺/私}はその辺のこそ泥とは違う{ぞ/わよ}。
+str_npc10_intro_response_1|何{だおまえ/よあんた}は？
+str_npc11_intro_response_1|何{だおまえ/よあんた}は？
+str_npc12_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
+str_npc13_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
+str_npc14_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
+; str_npc15_intro_response_1|Praise the Eye, Snaga. What's your story?
+str_npc16_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
+str_npc17_intro_response_1|闇の森は素晴らしい{/わね}。{君/あなた}は何者{だ/なの}？森に詳しいの{かい/}？
+str_npc1_intro_response_2|放っておいて{くれ/ちょうだい}、洞窟の中でおしゃべりをする気にはなれない{んだ/わ}。
+str_npc2_intro_response_2|放っておいて{くれ/ちょうだい}、衛兵に用はない{/わ}。
+str_npc3_intro_response_2|気にしないで{くれ/ちょうだい}、騒ぎの続きはよそでやる{よ/わ}。
+str_npc4_intro_response_2|放っておいて{くれ/ちょうだい}、よそで大事な用がある{んだ/の}。
+str_npc5_intro_response_2|せっかくだが、高貴な方々とは話が合うと思えないんだ。
+str_npc6_intro_response_2|私も同じ気分{だ/よ}。さようなら。
+str_npc7_intro_response_2|かまわないで{くれ/ちょうだい}。ここは空気が悪い{な/わね}。
+str_npc8_intro_response_2|かまわないで{くれ/ちょうだい}。観光に来ただけな{んだ/の}。
+str_npc9_intro_response_2|すぐに立ち去{る/るわよ}。でないと{俺/私}の利き腕が勝手に動きそうだ{からな/わ}。
+str_npc10_intro_response_2|[無視して素通りする]
+str_npc11_intro_response_2|よそへ行ってろ、虫けらめ！
+str_npc12_intro_response_2|私にかまうな、虫けらめ！
+str_npc13_intro_response_2|おまえなどに用はない！
+str_npc14_intro_response_2|おまえなどに用はない！
+str_npc15_intro_response_2|フン。その貧相なこぶしはしまっておけ、スナガめ。
+str_npc16_intro_response_2|おまえなどに用はない！
+str_npc17_intro_response_2|ああ、森は素晴らしいが、もう行かなきゃならないんだ。
+str_npc1_backstory_a|わが友人、君は大変なときに来てしまった。 イシリアンは敵の偵察隊やら遊撃隊やらでいっぱいだ。 オークの大群が行軍していくのを見た者もいる。 我々はあの不浄の生き物どもが 大河を渡るのを阻止しようと試みているとこで、 私も野伏の一隊を率いて多くの戦果を挙げた。 我々のファラミア隊長は勇敢だし、 我々があの闇に屈する事はない。
+str_npc2_backstory_a|おお、私についてお尋ねくださるとは、 なんという美しい心配り。 私は執政閣下の大広間につい最近配属されたばかりの衛兵でして、 名誉ある任務ではりますが、 多少、暇をもてあましております。
+; str_npc3_backstory_a|Well, my old helmet here is getting smaller by the minute and the ground seems wobbly as if I rode a mischievous foil. Ah, if I only hadn't drank all that ale last night - I normally have a good head for drink, so it must have been some nasty orc brew.
+; str_npc4_backstory_a|My name is Gálmynë, and I made it my business to know yours, {playername}. Let me explain why.
+; str_npc5_backstory_a|You may have heard tales of my deeds in battles past and forgotten by mortal Men. In the fullness of time this War is yet another time of danger for the Eldar, but it will be the Last War.
+str_npc6_backstory_a|感じの悪いのは謝るわ、旅の人。 でも、ここを訪れる数少ない来客といえば、 信用できない者ばかりなの。 つい一週間まえにここへ来た、 あのドワーフときたら・・・ 何でもないわ。 私はルエヴァンナ、 闇の森のシルヴァン・エルフよ。
+; str_npc7_backstory_a|Polite of you to ask, {playername}. We are fighting off incursions from Easterlings and Gundabad orcs, but so far nothing we and our Dale allies can't handle.
+; str_npc8_backstory_a|I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills.
+str_npc9_backstory_a|あんた、いいね！ わしは、グルム。 上官をやっちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ 以前、 ワラ頭の偵察隊に奇襲されたんじゃがな・・・ やつは一人で勝手に負けよったんじゃ。 「退却」とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって 突撃してくる馬をさばいたのは グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで 殴ってやったわ(ヒッヒッヒッ)。 わしらがおらんかったら、 部隊は全部ミミズのエサになっとったところじゃ。
+str_npc10_backstory_a|俺はドゥルガシュだ！
+str_npc11_backstory_a|おいらは追跡兵には向いてないってんだ。 それであいつら、 おいらをつまみ出しやがった！ 親分たちがおいらにキレちまったんだよ。 あんなやつらは死んじまえ！ やつらが言うには、 おいらは矢はあさっての方向に飛ばす、 足は遅い、 鼻は効かないと来たもんだ。 ドチクショーめ！ おいらの使い道が見つからなかったら、 黒い穴に放り込むって話してるのを聞いたんだ。 おいらにそんな事しようもんなら、 親分どもと刺し違えてやる！
+; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
+; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
+; str_npc14_backstory_a|I am Fuldimir, son of the southern realm of Umbar, south of Harondor, and the Bay of Belfalas, for both are home to my heart and my people. We are the lords of sea and sail, corsairs to some, kin of the Bay of Belfalas for her waters we tame.
+; str_npc15_backstory_a|I am Bolzog the Gifted, Setter of Bones, Closer of Cuts, and Shaman of Healing. If you go to war for The Eye, you will no doubt have one or other of your little fellows cut about a bit by pale-faced foresters or the horse-lovers. Now, -nar-nar-nar! - Orcs are easy to replace, Oh Great Leader, but can you replace a Warg? A Giant? A Cave Troll? Shi-shi! No! You need me, the Great Bolzog!
+; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balcoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balcoth, for the very name would check your courage and fill your heart with woe.
+; str_npc17_backstory_a|They call me Dímborn and I work in the woods. It is nice there. I like the woods. Many trees in the woods. I like trees. I've worked in the woods all my life, because I am strong and because I like trees.
+; str_npc1_backstory_b|You should know that I am an Ithilien Ranger of Dúnedain descent and valor. I know much of tracking and scouting and my skill with bow and sword is known to the orc. I can also train any soul that's willing to fight the coming Shadow.
+str_npc2_backstory_b|私はこの白い都の治安を守り、 執政閣下にお仕えするため、 ミナス・ティリスの衛兵となるべく訓練を受けました。
+; str_npc3_backstory_b|I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
+; str_npc4_backstory_b|I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan.
+; str_npc5_backstory_b|Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion.
+str_npc6_backstory_b|わたしは、この美しい森の、 秘密の小道を歩くのがすき。 ときどき息をひそめては、 木々の影から森に住む動物たちの営みを、 そっと観察するの。 めずらしい鳥の歌や、 巣ごもりをする野生の熊たちの姿は、 わたしにとってはエダインが武器をぶつけあったり、 大きな城壁に心を奪われたりするのと同じくらい、 興味を引かれることなの。
+; str_npc7_backstory_b|I helped improve the Erebor defenses and trained some younger dwarven folk, under the direction of my venerated father Dwalin, as is our custom.
+; str_npc8_backstory_b|I have treated my King Brand for constipation, a common malaise affecting men going to war. A light brew of wormwood, and both the bowels and the mind are put at ease.
+; str_npc9_backstory_b|So I said to myself, 'Gulm, you want end up as carrion?' and I answered, 'No'.^Next battle, I fell back pretending I was injured. Then, with no one watching, I fell upon my sergeant! Cleaved him almost in half, gharr! Then cut his sidekick snaga nicely^^...Turned out that bloody creeper survived somehow, and started waggling his tongue about all this. Next time I make sure his head is off, gharr...
+str_npc10_backstory_b|俺はアイゼンガルドの狼乗りで、 追跡兵だ。
+; str_npc11_backstory_b|Ar! It's only 'cause my nose was snotty. An' what good is it wearing my nose out on stones anyhow? Nar! It was those filthy Uruks! Those cursed peaching sneakthiefs! I only lost the scent through giving way to them. They messed up the scent back there, pinching anything they found, and stomping all round the place before I could get there.
+; str_npc12_backstory_b|And those Nazgul give me the creeps. And they skin the body off you as soon as look at you, and leave you all cold in the dark on the other side. But He likes 'em; they're His favourites nowadays, so it's no use grumbling. I tell you, it's no game serving in the city. I'd like to try somewhere where there's none of 'em.
+; str_npc13_backstory_b|I saw of late the word of the Dark Lord spread among my kin, and in their hearts and minds his will crept. Most were drawn to his darkness, and in place of their courage grew an insatiable lust for slaughter so that when their ears heard his call few puppets were so willing to answer.
+; str_npc14_backstory_b|There is much change in a man who rides the tumult of the winds and seas of the Belfalas waters, and those yet to battle her will are but children. For stout men are they who meet her tempest and ride her storm. I have laid eyes on her darkest tide and yet remain her master.
+; str_npc15_backstory_b|Many moons ago, when I was just a fresh little thing, my Grandsire led the tribe down into the mines, where the dwarves had recently died. A Fire Wraith had passed through, and it was comfortable and warm. We prospered, but every so often some cruel adventurer, or Dwarf hero, would come and kill and maim us in our peaceful tunnels. My hands learned to close the wound of sword or axe, and my mind learned to see the outline of bone and sinew below any hide. These days, I can work a potion or set a break with equal skill.
+; str_npc16_backstory_b|The Balcoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
+; str_npc17_backstory_b|You can make many things out of the trees, you know. It's what I do. I work with trees and make things out of trees. Sometimes bushes also. But I like trees more.
+; str_npc1_backstory_c|However, I fear we are hopelessly outnumbered here in Ithilien and we won't last long without reinforcements or bolder action by our Steward. I might as well help where my actions would account for more, if my Captain Faramir gives me leave.
+str_npc2_backstory_c|しかしながら、 我が任務の重要性は理解するものの、 私は常日頃、 実際の戦闘を見てみたいと切望しておりまして、 それと・・・ エルフやしゃべる木やオリファントなどというものも見てみたい、 と考えるわけであります！ 指揮官殿、 あなたは旅のご経験が豊富のようだ、 これは断じて、 あなたの格好を見てそう言っているのではありませんよ。 私は物覚えが非常に早く、 さらに料理の上手でして・・・ まあ、部隊で出される食事としては、ですが。 あなたは志願兵を募っていらっしゃると見受けますが、 いかがですか？
+; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
+; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
+; str_npc5_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
+str_npc6_backstory_c|みたところ、 あなたは戦いに熱心みたいだし、 こんな事は、 あなたには理解できないかもしれないわね。 でも、 あなたは遠く離れた、 いろいろな場所を旅をして来たのよね ― ここ以外の大森林に行った事はある？ わたしをそこへ連れて行けないかしら？
+; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
+; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
+; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
+str_npc10_backstory_c|おまえになら仕えてやってもいい。
+; str_npc11_backstory_c|All right, all right! My nose isn't much use. I reckon my eyes are better than my nose. Ai! But my nose is only no good cause it don't know what nothing smells like. It don't even know what it's looking for, I tell you. Ar! I just need to go lopin' off and start sniffing places.
+; str_npc12_backstory_c|Eh, if I get a chance, I'll slip off and set up somewhere on my own with a few trusty lads, somewhere there's good loot nice and handy, and no big bosses. I'd like to try somewhere where there's none of 'em, like old times.
+; str_npc13_backstory_c|I followed my kin north, and heeded his dark call, to fulfill the duty I have to my people. But in them I see his darkness dwell and I seek to do my part in this war elsewhere, until the sands of my time no longer fall. Even now I feel them begin to trickle where before there was a cascade.
+; str_npc14_backstory_c|But there comes yet the darkest tide, a black tide of shadow, which will rise over these lands such as which no mortal eyes will have seen. This is the tide I seek to master, but I am without a crew hardy enough to ride this storm.
+; str_npc15_backstory_c|After many winters I came up out of the tunnels, and looked about in the Dark Forests for a good place to live and practice my arts. I was doing fine, until some big ugly bastards with white tattoos – eugh! White! Like an elf face! – big bastards, they were. They fired my little place in the Forest, and I had to hide in the caves again... In here... Say, have you anything to eat? Maybe a nice horse?
+; str_npc16_backstory_c|That was many lives of men ago, a different time, but the time for grief and tales are over. The time for my people's retribution has come and I will carve my people's vengeance on the face of these western lands. By my hand, their homes will waste and wither until their clan is no more!
+; str_npc17_backstory_c|If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know.
+; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
+str_npc2_backstory_later|このところは、 ここを訪れる人の数も少なくなっております。 あまり良い兆しとは言えません。
+; str_npc3_backstory_later|Still no news of my éored, and I'm keen on riding down some orcs.
+; str_npc4_backstory_later|More riders return with their bodies broken, and I try to give aid where I can. But I still feel trapped in a cage.
+; str_npc5_backstory_later|Have you reconsidered? The time for the Eldar grows short.
+str_npc6_backstory_later|わたしはこの二日間、 大蜘蛛の巣を観察していたの。 初めて見るとその姿の醜さに驚くかも知れないけれど、 彼らは侵入者から森を守っているのよ。 今日はわたしを旅へ誘いに来たの？
+; str_npc7_backstory_later|Building up defensive walls is worthy of any dwarf. But I need to use my axe too. Soon. Let me come with you.
+; str_npc8_backstory_later|I made another call to our King, this time for vomiting. I hope his resolve to engage the enemy is not related to his conditions. Do you suffer from constipation and vomiting too?
+; str_npc9_backstory_later|What do you think I do? Gulm is sitting here and waiting for some sneaky snaga to stick him in the dark. Take me with you - I will serve well.
+str_npc10_backstory_later|考え直したか？ 俺は使えるオークだぞ。
+; str_npc11_backstory_later|Ar! It was you! I smelt you, I knew you were coming. Tell the Bosses that, will ya? They think since I was kicked out of the trackers that it's safe to flout me, well they're mistaken, I'll put an arrow in their guts first. And whose blames was that? Not mine!
+; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
+; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
+; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
+; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balcoth before us.
+; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
+; str_npc1_backstory_response_1|If you can get leave, I have much need of an experienced warrior and a tracker.
+str_npc2_backstory_response_1|{君/あなた}の言う通り{だ/よ}。私は志願兵を探している{/の}。
+; str_npc3_backstory_response_1|If you can do without ale, I would welcome a good horseman.
+; str_npc4_backstory_response_1|I would welcome the help of a Rohan shieldmaiden, if offered.
+; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
+; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
+; str_npc7_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
+; str_npc8_backstory_response_1|We can use a healer and a herbalist.
+; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
+; str_npc10_backstory_response_1|You will do.
+; str_npc11_backstory_response_1|How 'bout loping off with me?
+; str_npc12_backstory_response_1|How 'bout slippin' off with me.
+; str_npc13_backstory_response_1|How about following me?
+; str_npc14_backstory_response_1|How about joining me?
+; str_npc15_backstory_response_1|Aha... A healer, heh? And you are good at it, you say? I could use someone like you.
+; str_npc16_backstory_response_1|What are you doing here?
+; str_npc17_backstory_response_1|Well, one can always learn more about trees. We'd be glad to have you along.
+; str_npc1_backstory_response_2|I am sorry to hear that. May your faith sustain your valor.
+str_npc2_backstory_response_2|申し訳ない。経験のある戦士を探している{んだ/の}。
+; str_npc3_backstory_response_2|No, sorry. I'm looking for someone more reliable.
+; str_npc4_backstory_response_2|I am sorry, my Lady, there's nothing I can do.
+; str_npc5_backstory_response_2|I'll be back when Lothlórien is in less danger.
+; str_npc6_backstory_response_2|No, sorry. We cannot take hangers-on.
+; str_npc7_backstory_response_2|No, sorry. We do well on our own.
+; str_npc8_backstory_response_2|No, sorry. We only visit healers when we need them.
+; str_npc9_backstory_response_2|Bah. I don't trust traitors.
+str_npc10_backstory_response_2|おまえなど要らん、この奴隷め。
+; str_npc11_backstory_response_2|I don't want to hear your skulking.
+; str_npc12_backstory_response_2|The Big Bosses know best. You better follow orders.
+; str_npc13_backstory_response_2|That is your fate to suffer.
+; str_npc14_backstory_response_2|I've had enough of this.
+; str_npc15_backstory_response_2|Bah! I need fighters, not skulkers.
+; str_npc16_backstory_response_2|I've had enough of this.
+; str_npc17_backstory_response_2|No, I'm sorry. We're off to war, not to a botanical journey.
+; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
+str_npc2_signup|ああ、今日はついている！ 私は喜んであなたの部隊に志願したい。
+; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
+; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
+; str_npc5_signup|I see. I admit I have heard of you and your exploits.
+str_npc6_signup|わたしは暴力や戦争で使う武器は 嫌いだけれど、 いざとなったら自分の身は自分で守れるわ。
+; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
+; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
+; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
+str_npc10_signup|本当か？俺を部下にすれば重宝するだろう。
+; str_npc11_signup|Follow your mob Ai? Ar! I hear about all these goings-ons out west, raids and all, and hundreds of our lads done in. I'll come and have a look with you all the same, and see what you're up to.
+; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
+; str_npc13_signup|I may follow you if you will have me. My legs make good heading of a horse between them and my hands know well the feel of blades of the crescent moon. My fingers can make fall arrows like the plight of stars upon our enemy, be it on horse or feet, though how I fight will be at your command.
+; str_npc14_signup|Perhaps, know though that I am no thief or brigand. I will not steal, nor take that which other lives may find needed.
+; str_npc15_signup|Heh-heh. You are right! Yeesss! You are wise, Great Captain.
+; str_npc16_signup|I wait for orders, with every second passing darkening my heart. I can no longer stand to wait for the plans of far away lords and captains so unseen their existence is believed more in legend than in flesh. Lords whose whispered orders are brought forth and shouted by lesser men. I wait, and with me, my people's vengeance waits also.
+; str_npc17_signup|Very good! I know many trees. Soon you will know many trees too. Like me. Because I know many trees.
+; str_npc1_signup_2|It would take a moment to talk to my Captain and gather my things.
+str_npc2_signup_2|私の上官に話をしてこなくてはなりませんが、 それが済めば出発できます ―― 栄誉ある戦いと、 あらゆる不思議の生物が待っている！
+; str_npc3_signup_2|I've been waiting for someone to take me on, so I only need to saddle up my horse and we are ready to ride.
+; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
+; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
+; str_npc6_signup_2|Perhaps I can teach you to move faster and make less noise. Let's go.
+; str_npc7_signup_2|If you can keep the tall-folk in your company in line, especially the sneaky Elves, I'll gladly join you.
+; str_npc8_signup_2|I must warn you though, I am fairly useless in battle. But I'm sure you are able to keep a woman of my age safe.
+; str_npc9_signup_2|But you must decide quickly, the guards here are getting suspicious.
+str_npc10_signup_2|俺を部下にして後悔はさせない。
+; str_npc11_signup_2|Lots of stuff out there for my nose to smell too, and my knife to taste. They don't know too much now but they're quick learners alright. What d'you say?
+; str_npc12_signup_2|I'll show your slugs where there's a whip there's a will and give 'em as much lash as their skins will carry. If your lads take it well it should put 'em in a good trot. What d'you say?
+; str_npc13_signup_2|Know, though, that my loyalty lie always with my kin. I have fought this far and lost too much for them. I will not turn my back on them for their fate will be my own.
+; str_npc14_signup_2|It is just fortunate that those no longer of this world find no need of this world's treasures and I am fortunate to be skilled in ways that I may assist in relieving the worldly needs of the owners of those treasures.
+; str_npc15_signup_2|Oh, this is a great moment for Bolzog The Gifted, and for you, Great Lord! We shall conquer together, you, indestructible with my healing touch, and I, the Great Orc Sage who shall support you!
+; str_npc16_signup_2|I fear that I will not wait any longer. I intend on joining the next party to leave camp, with my Chieftain's approval or not. I fear the war will be over long ere I leave to join it.
+; str_npc17_signup_2|I'll just get some of my tools, and we can be off. There is this oak just down the road I must show you!
+str_npc1_signup_response_1|腕利きの野伏は重宝するだろう、ぜひ{俺/私}の仲間になって欲しい。
+str_npc2_signup_response_1|いい{だろう/わ}。この暗い時勢には明るさが必要{だろう/ね}。
+str_npc3_signup_response_1|いいだろう。馬に鞍をつけてくれ ― 我々はもうすぐ出発する。
+str_npc4_signup_response_1|素晴らしい。{君/あなた}の準備が整い次第、我々は出立する{/わよ}。
+str_npc5_signup_response_1|エルフの将軍を仲間に迎えることができるとは、光栄です。
+str_npc6_signup_response_1|いいだろう。{君/あなた}がオークを見て逃げ出さないことを祈る{よ/わ}。
+str_npc7_signup_response_1|いいだろう、歴戦のドワーフ殿、我々は歓迎する。
+str_npc8_signup_response_1|{君/あなた}の身の安全は私が保障{しよう/するわ}。さあすぐに出発する{ぞ/わよ}。
+str_npc9_signup_response_1|よかろう。{俺/私}の言う通りに働けば、腹一杯食べさせてやろう。
+str_npc10_signup_response_1|よかろう。さあ行くぞ。
+str_npc11_signup_response_1|よかろう。さあ行くぞ。
+str_npc12_signup_response_1|我々がおまえにふさわしい働き場所を用意してやろう。
+str_npc13_signup_response_1|我々がおまえにふさわしい働き場所を用意してやろう。
+str_npc14_signup_response_1|よかろう。さあ行くぞ。
+; str_npc15_signup_response_1|Hmmm. I admire your... confidence. Get your gear together.
+; str_npc16_signup_response_1|How about following me?
+; str_npc17_signup_response_1|Great! I hope you won't talk of trees all the time though.
+; str_npc1_signup_response_2|I have no need of your company at the moment, good luck to you.
+str_npc2_signup_response_2|{すまん/ごめんなさい}、気が変わった{/わ}。
+; str_npc3_signup_response_2|Sorry, I've changed my mind - maybe next time.
+; str_npc4_signup_response_2|I apologize, my Lady, perhaps another time.
+; str_npc5_signup_response_2|On second thought, maybe we need to help Lothlórien on our own.
+; str_npc6_signup_response_2|Sorry, I just can't imagine you on a battlefield.
+; str_npc7_signup_response_2|Sorry, I happen to like Elves.
+; str_npc8_signup_response_2|I'm sorry, everyone fights in my company.
+; str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
+; str_npc10_signup_response_2|I've changed my mind.
+str_npc11_signup_response_2|おまえなど要らん、この奴隷め。
+; str_npc12_signup_response_2|I've changed my mind.
+; str_npc13_signup_response_2|I've changed my mind.
+; str_npc14_signup_response_2|I've changed my mind.
+; str_npc15_signup_response_2|Actually, I think I'll look for a real healer and not a braggart.
+; str_npc16_signup_response_2|I've had enough of this.
+; str_npc17_signup_response_2|On the other hand, I think I've changed my mind. You're a bit of a nut, aren't you?
+; str_npc1_payment|I would join you, but my Captain Faramir would miss my presence here. [costs {reg14} Influence with {s14}]
+str_npc2_payment|残念ながら、 上官は私の退職を許可してくれませんでした。 [{s14}の影響ポイントが{reg14}必要です]
+; str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll need to settle my account before I can leave. [costs {reg14} Influence with {s14}]
+; str_npc4_payment|I would join you, but who will care for the wounded if the city is attacked? [costs {reg14} Influence with {s14}]
+; str_npc5_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien also needs me here. [costs {reg14} Influence with {s14}]
+; str_npc6_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
+; str_npc7_payment|I would join you, but I'm afraid my honorable father Dwalin will not understand why I left the town in a time of need. [costs {reg14} Influence with {s14}]
+; str_npc8_payment|I cannot abandon my duties here, my King still needs me. I'm too concerned for his health. [costs {reg14} Influence with {s14}]
+; str_npc9_payment|I want to leave with you, but the guards at the gate won't let me.^Trust me, I've tried. [costs {reg14} Influence with {s14}]
+; str_npc10_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
+; str_npc11_payment|I just need someone to do in the Boss. We could wait till he closes his eyes to lop off, but I reckon someone really high up can force his eyes shut. Ai! [costs {reg14} Influence with {s14}]
+; str_npc12_payment|Hai! Yoi! I'll need to remind the boys to keep their mangy gobs shut or the High Ups will get my number and 'ave it out for me, they will. [costs {reg14} Influence with {s14}]
+; str_npc13_payment|Alas the Chieftains here will not to allow my leave. Are you able to convince them otherwise? [costs {reg14} Influence with {s14}]
+; str_npc14_payment|The captain of the Haven will require much persuasion for my leave. Convince him and we shall set sail through this storm. [costs {reg14} Influence with {s14}]
+; str_npc15_payment|Ah, yes. Noble Warrior-Lord! One small impediment is there! A great injustice befell me, that the master of this cave did not like my offer of healing, and has stolen all my gear! The cheek! To steal from the Great Bolzog! Master, I can't recover my priceless equipment from his filthy claws! [costs {reg14} Influence with {s14}]
+; str_npc16_payment|I will not follow you, I will go my own path; but your path may go along with mine for a while. Though, before I travel these lands I must first pay tribute to those who died trying before us. Show them your tribute and we may make our leave. We must never forget our ancestors. They have not forgotten us. [costs {reg14} Influence with {s14}]
+; str_npc17_payment|I like trees, but my old uncle needs me here. [costs {reg14} Influence with {s14}]
+; str_npc1_payment_response|Don't worry, I'll arrange your leave with him. [costs {reg14}/{reg15} Influence]
+str_npc2_payment_response|心配するな、私が君の上官に話をつけてこよう。 [影響ポイントを{reg14}/{reg15}消費]
+; str_npc3_payment_response|This better be worth it. I'll settle with the barkeep. [costs {reg14}/{reg15} Influence]
+; str_npc4_payment_response|It's a noble cause, but I'm sure a replacement can be found. [costs {reg14}/{reg15} Influence]
+; str_npc5_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
+; str_npc6_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+; str_npc7_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
+; str_npc8_payment_response|The King's well-being is important, but you will save more lives with me. [costs {reg14}/{reg15} Influence]
+; str_npc9_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
+; str_npc10_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+; str_npc11_payment_response|Never mind your Boss, you serve me now. [costs {reg14}/{reg15} Influence]
+; str_npc12_payment_response|Your boys will get new orders, I'll worry about the High Ups. [costs {reg14}/{reg15} Influence]
+; str_npc13_payment_response|They will see otherwise, for I'm your Chieftain now. [costs {reg14}/{reg15} Influence]
+; str_npc14_payment_response|You don't need to worry about the old Harbor-master. [costs {reg14}/{reg15} Influence]
+; str_npc15_payment_response|Priceless, is it? I'll get your gear. [costs {reg14}/{reg15} Influence]
+; str_npc16_payment_response|I honor the ancestors, yours and mine. [costs {reg14}/{reg15} Influence]
+; str_npc17_payment_response|Your uncle will be fine. You are with me now. [costs {reg14}/{reg15} Influence]
+str_npc1_morality_speech|隊長、なぜ{s21}などという、 部下を見捨てるような事をするのか、 私には理解できない。 ファラミア隊長は部下への思いやりを忘れる事などなかったし、 必要のない苦しみを強要することもなかった。
+str_npc2_morality_speech|このような事を申し上げて、 お気を悪くなさらないといいのですが、 私にとって、 {s21}という行為は少々理解しがたいのです。 もしかすると私は兵士としての考え方が甘いのかも知れませんが、 あなたがもうすこし・・・ 思いやりを持って兵士たちに接するよう心がけていただければ、 と思います。
+str_npc3_morality_speech|隊長、我々エオルの家の子らは、 決して{s21}などという事はしない。 我々の馬は簡単にはへばらないし、 隊を整え直して狙い済ました突撃を繰り出せれば、 いつでも戦いの流れをひっくり返すことはできる。 再び劣勢の戦いに望む事があれば、 ぜひその事を心にとどめ置いていただきたい。
+; str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
+; str_npc5_morality_speech|You must reconsider your actions, commander. To {s21} makes us no more honourable than the Enemy and diminishes the confidence of our friends.
+
+; str_npc7_morality_speech|I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?
+; str_npc8_morality_speech|Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake.
+; str_npc9_morality_speech|The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken.
+
+
+
+
+
+str_npc15_morality_speech|{playername}、あんた、 てんさいボルゾグさんは何でも治してくれると思ってるんだろうがね、 わしにだって限界はあるんだよ！ もし{s21}ような事が続くなら、 わしの才能をもってしてもさばききれないよ！ こっちの身にもなってくれよ！ 切り刻まれようが飢え死にしようが、 死んじまったもんは生き返らせられないよ！
+
+
+str_npc1_2ary_morality_speech|隊長、私は勇気と名誉を重んじる、 デゥネダインとして育てられた。 {s21}などという事は、 受け入れがたい。
+
+
+str_npc4_2ary_morality_speech|隊長、ちょっとよろしいですか。 私のいた部隊の女はみな、 死は恐れなくとも、 不名誉だけは受け入れません。 {s21}などという行為は、 私の馬と先祖の名に、 泥を塗るのと同じ事です。
+
+
+
+
+
+
+
+
+
+
+; str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
+
+
+str_npc1_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc2_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+; str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
+str_npc4_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc5_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+; str_npc6_personalityclash_speech|{playername}, I just saw {s11} walk brazenly over a nest of young birds. His clumsiness destroyed the young lives of innocent creatures.
+; str_npc7_personalityclash_speech|Lord {s11} does well in a battle, but I wonder if he blinds the enemy by the shine of his hair? Or they fall in awe of his fame and uppity demeanor?
+; str_npc8_personalityclash_speech|Commander, I must lodge a complaint against {s11}. He continues to pester me about making him a certain brew called 'the green fairy'.
+str_npc9_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc10_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc11_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc12_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc13_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc14_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc15_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc16_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc17_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+; str_npc1_personalityclash_speech_b|I hate {s11}.
+; str_npc2_personalityclash_speech_b|I hate {s11}.
+; str_npc3_personalityclash_speech_b|I don't have a quarrel with the people of Gondor, but we would do better with more bold horsemen and less reluctant ground-huggers, if you catch my drift.
+; str_npc4_personalityclash_speech_b|I hate {s11}.
+; str_npc5_personalityclash_speech_b|I hate {s11}.
+; str_npc6_personalityclash_speech_b|His dwarven ways may serve him well underground, albeit it's a wonder he hasn't fallen down an ugly shaft. Maybe he should have.
+; str_npc7_personalityclash_speech_b|We would do better with a dwarven hero, someone like Durin the Deathless of old, and let the Elves prance around their forests.
+; str_npc8_personalityclash_speech_b|It is made from wormwood soaked in liquor and apparently favored by minstrels and vagrants for seeing things that are not there. I doubt you'll approve of your soldiers chasing air on the battlefield, as much as it may be amusing to watch.
+; str_npc9_personalityclash_speech_b|I hate {s11}.
+; str_npc10_personalityclash_speech_b|I hate {s11}.
+; str_npc11_personalityclash_speech_b|I hate {s11}.
+; str_npc12_personalityclash_speech_b|I hate {s11}.
+; str_npc13_personalityclash_speech_b|I hate {s11}.
+; str_npc14_personalityclash_speech_b|I hate {s11}.
+; str_npc15_personalityclash_speech_b|I hate {s11}.
+; str_npc16_personalityclash_speech_b|I hate {s11}.
+; str_npc17_personalityclash_speech_b|I hate {s11}.
+str_npc1_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc2_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc3_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc4_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc5_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc6_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+; str_npc7_personalityclash2_speech|A nice little scrap, eh captain? If only slightly ruined by the conduct of that Elf-woman {s11}.
+str_npc8_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc9_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc10_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc11_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc12_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc13_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc14_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc15_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc16_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc17_personalityclash2_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+; str_npc1_personalityclash2_speech_b|I hate {s11}.
+; str_npc2_personalityclash2_speech_b|I hate {s11}.
+; str_npc3_personalityclash2_speech_b|I hate {s11}.
+; str_npc4_personalityclash2_speech_b|I hate {s11}.
+; str_npc5_personalityclash2_speech_b|I hate {s11}.
+; str_npc6_personalityclash2_speech_b|I hate {s11}.
+; str_npc7_personalityclash2_speech_b|I saw her cowering in the rear, barely releasing an arrow or two in the general direction of the enemy. I say let her go to take care of the birds and bees, so we can go on with the bloody work of slaying the enemy.
+; str_npc8_personalityclash2_speech_b|I hate {s11}.
+; str_npc9_personalityclash2_speech_b|I hate {s11}.
+; str_npc10_personalityclash2_speech_b|I hate {s11}.
+; str_npc11_personalityclash2_speech_b|I hate {s11}.
+; str_npc12_personalityclash2_speech_b|I hate {s11}.
+; str_npc13_personalityclash2_speech_b|I hate {s11}.
+; str_npc14_personalityclash2_speech_b|I hate {s11}.
+; str_npc15_personalityclash2_speech_b|I hate {s11}.
+; str_npc16_personalityclash2_speech_b|I hate {s11}.
+; str_npc17_personalityclash2_speech_b|I hate {s11}.
+; str_npc1_personalitymatch_speech|Have you noticed the grace of {s11} in that last battle? The way she moves around the enemy just before striking the final blow? It's like the stories of old, when elven maidens displayed as much poise on the battlefield as in their beautiful forest courts.
+; str_npc2_personalitymatch_speech|Excuse me, commander. I was just helping {s11} with minor weapon repairs after that last scrap, and he even promised to teach me how to improve my strikes.
+; str_npc3_personalitymatch_speech|Is not a Rohan shieldmaiden in full charge a sight to behold? Granted, our womenfolk are better off by the hearth, but after seeing {s11} strike down the enemy in that last battle, I'm beginning to have doubts.
+; str_npc4_personalitymatch_speech|A battle of great deeds, commander, and my congratulations on the victory. I noticed how {s11} quietly and surely took care of the wounded and ailing, even as the last of the enemy got what they deserved.
+; str_npc5_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc6_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
+; str_npc7_personalitymatch_speech|Bloody and victorious, just as I like it! I did, however, sustain a flesh wound that {s11} was kind enough to bandage promptly.
+; str_npc8_personalitymatch_speech|Another victory for you, commander, and I admire your skill in sparing the lives of our men. Warriors like {s11} seem to be of great use in your battle plans.
+; str_npc9_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc10_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc11_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc12_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc13_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc14_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc15_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc16_personalitymatch_speech|Did I mention I like {s11}?
+; str_npc17_personalitymatch_speech|Umm, chief. I think {s11} could make it well in the woods. Can tell an ash from a willow.
+; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse in what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
+; str_npc2_personalitymatch_speech_b|My folks at home always told me stories about the Ithilien Rangers and now I can see for myself they are all true. If they are all like {s11}, I feel Gondor is safer for it.
+; str_npc3_personalitymatch_speech_b|Commander, as a personal favour, might I ask if you can order {s11} to stay more to the rear in the next battle? I could not stand to see her harmed, and it's not the ale talking.
+; str_npc4_personalitymatch_speech_b|To preserve lives is the noblest deed, and I feel kinship with that kind soul, even if our worlds are far apart.
+; str_npc5_personalitymatch_speech_b|I like {s11}.
+; str_npc6_personalitymatch_speech_b|I wonder just how old is he. Maybe a dozen of centuries older than me? Never mind, you wouldn't understand.
+; str_npc7_personalitymatch_speech_b|{s11} and her Dale-kin, even if not quite up to dwarven warrior standards, have proven to be steadfast allies in this War. A good choice for a friend and companion among Men, if I may say so.
+; str_npc8_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
+; str_npc9_personalitymatch_speech_b|I like {s11}.
+; str_npc10_personalitymatch_speech_b|I like {s11}.
+; str_npc11_personalitymatch_speech_b|I like {s11}.
+; str_npc12_personalitymatch_speech_b|I like {s11}.
+; str_npc13_personalitymatch_speech_b|I like {s11}.
+; str_npc14_personalitymatch_speech_b|I like {s11}.
+; str_npc15_personalitymatch_speech_b|I like {s11}.
+; str_npc16_personalitymatch_speech_b|I like {s11}.
+; str_npc17_personalitymatch_speech_b|My people get along well with the Woodelves. They like trees too. I like trees too. We all like trees.
+; str_npc1_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc2_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc3_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc4_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc5_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc6_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc7_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc8_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc9_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc10_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc11_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc12_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc13_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc14_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc15_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc16_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc17_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+; str_npc1_rehire_speech|It is good to see you again, Captain. Shall I join you once more?
+; str_npc2_rehire_speech|Happy days! Commander, can I please join you again?
+; str_npc3_rehire_speech|Ho! Shall we ride again together?
+; str_npc4_rehire_speech|Welcome again. Shall we continue where we left off?
+; str_npc5_rehire_speech|It's good to see you, {playername}. Let us travel together again.
+; str_npc6_rehire_speech|It's good to see you, {playername}. Let us walk the same path again.
+; str_npc7_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
+; str_npc8_rehire_speech|You are a welcome sight. Shall I join you once again?
+; str_npc9_rehire_speech|Gulm is ready to kill for you again. Are we going?
+; str_npc10_rehire_speech|Can I serve you once again?
+; str_npc11_rehire_speech|Can I serve you once again?
+; str_npc12_rehire_speech|Can I serve you once again?
+; str_npc13_rehire_speech|Can I serve you once again?
+; str_npc14_rehire_speech|Can I serve you once again?
+; str_npc15_rehire_speech|Aah, Great Lord! I have searched so long for you, as word of your glorious deeds rings across Middle Earth! Surely you have missed my skills? You will welcome me once more to complete your Great Army?
+; str_npc16_rehire_speech|Can I serve you once again?
+; str_npc17_rehire_speech|Hey. Time to move on again? Trees don't move much. But I like to move. But I like trees too.
+; str_npc1_home_intro|Captain, we are approaching Osgiliath now, so let us be on the lookout for friend and foe alike.
+str_npc2_home_intro|隊長、用心しましょう。 あそこに見えるのはミナス・モルグルに違いありません。 何かに監視されている感じがしませんか？
+; str_npc3_home_intro|A word of advice, commander. We are getting mighty close to Entwood now and the horses are getting restless. Some call the forest Fangorn, too.
+; str_npc4_home_intro|Let's stop here for a minute, commander. Ahead of us, between the Anduin and the Limlight, lies the Field of Celebrant, where Eorl the Young rode to the aid of our Gondor allies.
+; str_npc5_home_intro|Daro! That's Isengard and the black tower of Orthanc ahead. Much have changed since I last saw them, and none for the better.
+; str_npc6_home_intro|Excuse me, {playername}. The paths in this part become more twisted and some lead to dead-ends. We must be approaching Dol Guldur.
+; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
+; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+; str_npc9_home_intro|Curses! That must be Hornburg over there, master.
+; str_npc10_home_intro|Hey, look!
+; str_npc11_home_intro|Hey, look!
+; str_npc12_home_intro|Hey, look!
+; str_npc13_home_intro|Hey, look!
+; str_npc14_home_intro|Hey, look!
+; str_npc15_home_intro|Hey, look!
+; str_npc16_home_intro|Hey, look!
+; str_npc17_home_intro|Ooooo, mallorns grow here! One should never cut down a mallorn, they're just too beautiful!
+; str_npc1_home_description|It was a fair city once, the capital of Gondor of old, full of people and laughter. Now it lies deserted and ruined, the old Anduin flowing wearily through a ghost town.
+str_npc2_home_description|もうずいぶんと昔の話ですが、 あれはかつてミナス・イシルと呼ばれていました。 言い伝えによると、 月の光に照らされた中庭が銀色の光で満たされ、 周囲の壁を銀色と白色に浮かび上がらせたそうです。 ゴンドールの衛兵はその城壁から東を望み、 エフェル・ドゥアスのかなたを監視したのです。
+; str_npc3_home_description|It's thick with trunks and branches and all manner of trees, and I wouldn't venture there as strange creatures roam the forest, not all of them harmless.
+; str_npc4_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
+; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
+; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazguls here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
+; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+; str_npc8_home_description|Not too often, a travelling merchant comes to the Dale market and offers the finest honey I have ever tasted. For some curious reason, he says that 'it was made by bears' and laughs.
+; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+; str_npc10_home_description|Do you know that town?
+; str_npc11_home_description|Do you know that town?
+; str_npc12_home_description|Do you know that town?
+; str_npc13_home_description|Do you know that town?
+; str_npc14_home_description|Do you know that town?
+; str_npc15_home_description|Do you know that town?
+; str_npc16_home_description|Do you know that town?
+; str_npc17_home_description|I didn't know there were such lovely woods here too. I wonder if any woodsmen work here.
+; str_npc1_home_description_2|If Gondor is doomed, West Osgiliath shall fall first to the foul hordes of the Eye. I only hope Captain Faramir would be in command that day and stem the tide. If we could spare any men to bolster the defences here, I would be most grateful, Captain.
+str_npc2_home_description_2|今は恐ろしいオークどもで満ちあふれ、 恐怖の亡霊や、 さらに恐ろしい者たちのすみかとなっているそうです。 私は 、いつかゴンドールがあそこを取り戻し、 すべての不浄なものを一掃する日が来る事を願って止みません。
+; str_npc3_home_description_2|If we must cross Entwood, let us do so with haste and stealth. I don't know who might be listening to our hooves and I don't care to find out.
+; str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
+; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
+; str_npc6_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
+; str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+; str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
+; str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
+; str_npc10_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
+; str_npc11_home_description_2|Doesn't Orthanc look like a giant... something?
+; str_npc12_home_description_2|Doesn't Orthanc look like a giant... something?
+; str_npc13_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
+; str_npc14_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
+; str_npc15_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
+; str_npc16_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
+; str_npc17_home_description_2|I could chisel you a nice pipe. Would you like a pipe?
+; str_npc1_home_recap|I was born and raised in Ithilien, in a long line of warriors tracing back to the Southern Dúnedain.
+str_npc2_home_recap|私はミナス・ティリスの、 つつましくも誇り高い家で生まれ育ちました。
+; str_npc3_home_recap|I am one of the Eorlingas, or Rohirrim, as foreigners call us.
+; str_npc4_home_recap|I don't find it amusing that you should forget so easily.
+; str_npc5_home_recap|I'll indulge your curiosity, but let us not tarry.
+; str_npc6_home_recap|I was born and raised in Mirkwood, a Silvan Elf. Our race's woodcraft skills are known to all.
+; str_npc7_home_recap|I am son of Dwalin of the Durin's folk.
+; str_npc8_home_recap|I am a healer and a herbalist from Dale.
+; str_npc9_home_recap|Gulm will tell you if you must know. But talk doesn't make enemies dead.
+; str_npc10_home_recap|I'll make this short.
+; str_npc11_home_recap|I'll make this short.
+; str_npc12_home_recap|I'll make this short.
+; str_npc13_home_recap|I'll make this short.
+; str_npc14_home_recap|I'll make this short.
+; str_npc15_home_recap|I'll make this short.
+; str_npc16_home_recap|I'll make this short.
+; str_npc17_home_recap|I was born at the edge of the woods, but spent all my life in the woods. Did I tell you of the many trees there?
+str_npc1_honorific|隊長
+str_npc2_honorific|隊長
+str_npc3_honorific|隊長
+str_npc4_honorific|隊長
+str_npc5_honorific|隊長
+str_npc6_honorific|隊長
+str_npc7_honorific|隊長
+str_npc8_honorific|隊長
+str_npc9_honorific|隊長
+str_npc10_honorific|隊長
+str_npc11_honorific|親分
+str_npc12_honorific|親分
+str_npc13_honorific|隊長
+str_npc14_honorific|船長
+str_npc15_honorific|親方
+str_npc16_honorific|将軍
+str_npc17_honorific|かしら
+; str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
+; str_comment_intro_famous_liege|Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor.
+; str_comment_intro_famous_martial|Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!
+; str_comment_intro_famous_badtempered|I've heard of you. Well, I'm not one for bandying words, so if you have anything to say, out with it.
+; str_comment_intro_famous_pitiless|I know your name. It strikes fear in men's hearts. That is good. Perhaps we should speak together, some time.
+; str_comment_intro_famous_cunning|Ah, yes. At last we meet. You sound like a good {man/woman} to know. Let us speak together, from time to time.
+; str_comment_intro_famous_sadistic|I know your name -- and from what I hear, I'll warrant that many a grieving widow knows too. But that is no concern of mine.
+; str_comment_intro_famous_goodnatured|I've heard of you! It's very good to finally make your acquaintance.
+; str_comment_intro_famous_upstanding|I know your name. They say you are a most valiant warrior. I can only hope that your honour and mercy matches your valor.
+; str_comment_intro_noble_liege|I see that you carry a nobleman's banner, although I do not recognize the device. Know that I am always looking for good men to fight for me, once they prove themselves to be worthy of my trust.
+; str_comment_intro_noble_martial|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps one day we shall test each other's valor in a tournament, or on the battlefield!
+; str_comment_intro_noble_badtempered|I don't recognize the device on your banner. No doubt another foreigner come to our lands, as if we didn't have so many here already.
+; str_comment_intro_noble_pitiless|I see that you carry a nobleman's banner, but I do not recognize the device. Another vulture come to grow fat on the leftovers of war, no doubt!
+; str_comment_intro_noble_cunning|I see that you carry a nobleman's banner, but I do not recognize the device. Still, it is always worthwhile to make the acquaintance of {men/women} who may one day prove themselves to be great warriors.
+; str_comment_intro_noble_sadistic|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps you are the bastard {son/daughter} of a puffed-up cattle thief? Or perhaps you stole it?
+; str_comment_intro_noble_goodnatured|I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance, {sir/madame}! It is good to make your acquaitance.
+; str_comment_intro_noble_upstanding|I see that you carry a nobleman's banner, but I do not recognize the device. No doubt you have come to Calradia in search of wealth and glory. If this indeed is the case, then I only ask that you show mercy to those poor souls caught in the path of war.
+; str_comment_intro_common_liege|You may be of common birth, but know that I am always looking for good men to fight for me, if they can prove themselves to be worthy of my trust.
+; str_comment_intro_common_martial|Perhaps you are not of gentle birth, but if you prove yourself a {man/woman} of valor, then I would be pleased to try my strength against yours in the tournament or on the battlefield.
+; str_comment_intro_common_badtempered|Speak quickly, if you have anything to say, for I have no time to be bandying words with common soldiers of fortune.
+; str_comment_intro_common_pitiless|You have the look of a mercenary, another vulture come to grow fat on the misery of this land.
+; str_comment_intro_common_cunning|Well... I have not heard of you, but you have the look of a {man/woman} who might make something of {himself/herself}, some day.
+; str_comment_intro_common_sadistic|Normally I cut the throats of impudent commoners who barge into my presence uninvited, but I am in a good mood today.
+; str_comment_intro_common_goodnatured|Well, you look like a good enough sort.
+; str_comment_intro_common_upstanding|Peace to you, and always remember to temper your valor with mercy, your courage with honour.
+; str_comment_you_raided_my_village_enemy_benevolent|You have attacked innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
+; str_comment_you_raided_my_village_enemy_spiteful|You have raided my village of {s51}, destroying my property and killing the tenants. I will take my compensation in blood!
+; str_comment_you_raided_my_village_enemy_coldblooded|You have raided my village of {s51}, destroying my property and killing the tenants. I will make you think twice before you disrupt my revenues like that again.
+; str_comment_you_raided_my_village_enemy|You have raided my village of {s51}, destroying my property and killing tenants under my protection. You will pay the price for your crime!
+; str_comment_you_raided_my_village_unfriendly_spiteful|You have raided my village of {s51}. Do it again and I'll gut you like a fish.
+; str_comment_you_raided_my_village_friendly|You have raided my village of {s51}. This will place a grave strain on our friendship.
+; str_comment_you_raided_my_village_default|You have raided my village of {s51}. If you continue to behave this way, we may soon come to blows.
+; str_comment_you_robbed_my_village_enemy_coldblooded|You have robbed my tenants in the village of {s51}. I take that as a personal insult.
+; str_comment_you_robbed_my_village_enemy|You have robbed innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
+; str_comment_you_robbed_my_village_friendly_spiteful|I have heard that you pinched some food from my tenants at {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward.
+; str_comment_you_robbed_my_village_friendly|I have heard that you requisitioned supplies from my tenants at {s51}. I am sure that you would not have done so were you not desperately in need.
+; str_comment_you_robbed_my_village_default|You have robbed my tenants in the village of {s51}. If you continue to behave this way, we may soon come to blows.
+; str_comment_you_accosted_my_caravan_enemy|You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end.
+; str_comment_you_accosted_my_caravan_default|You have been accosting caravans under my protection. This sort of behavior must stop.
+; str_comment_you_helped_villagers_benevolent|I heard that you gave charity to my tenants in the village of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done.
+; str_comment_you_helped_villagers_friendly_cruel|I heard that you gave charity to my tenants in the village of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that.
+; str_comment_you_helped_villagers_friendly|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance.
+; str_comment_you_helped_villagers_unfriendly_spiteful|I heard that you gave charity to my tenants in the village of {s51}. As amusing as it is to see you grubbing for favor among my vassals, I would ask you to mind your own business.
+; str_comment_you_helped_villagers_cruel|I heard that you gave charity to my tenants in the village of {s51}. As the peasants' lord and protector, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone.
+; str_comment_you_helped_villagers_default|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their lord and protector, and I would rather not have them go looking to strangers for assistance.
+; str_comment_you_captured_a_castle_allied_friendly|I heard that you have besieged and taken {s51}. That was a great dead, and I am proud to call you my friend!
+; str_comment_you_captured_a_castle_allied_spiteful|I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their fortresses to despoil, their treasuries to ransack, their grieving widows to serve us our wine.
+; str_comment_you_captured_a_castle_allied_unfriendly_spiteful|I heard that you have besieged and taken {s51}. Well, every dog has his day, or so they say. Enjoy it while you can, until your betters kick you back out in the cold where you belong.
+; str_comment_you_captured_a_castle_allied_unfriendly|I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations.
+; str_comment_you_captured_a_castle_allied|I heard that you have besieged and taken {s51}. We have them on the run!
+; str_comment_you_captured_my_castle_enemy_spiteful|I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come.
+; str_comment_you_captured_my_castle_enemy_chivalrous|You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!
+; str_comment_you_captured_my_castle_enemy|You have something that belongs to me -- {s51}. I will make you relinquish it.
+; str_comment_we_defeated_a_lord_unfriendly_spiteful|I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
+; str_comment_we_defeated_a_lord_unfriendly|I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us.
+; str_comment_we_defeated_a_lord_cruel|That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!
+; str_comment_we_defeated_a_lord_quarrelsome|I won't forget how we whipped {s54}? I enjoyed that.
+; str_comment_we_defeated_a_lord_upstanding|I will not forget our victory over {s54}. Let us once again give thanks to heaven, and pray that we not grow too proud.
+; str_comment_we_defeated_a_lord_default|That was a great victory over {s54}, wasn't it? I am honoured to have fought by your side.
+; str_comment_we_fought_in_siege_unfriendly_spiteful|I suppose you will want to drink to the memory of our capture of {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
+; str_comment_we_fought_in_siege_unfriendly|I will not forget how we together we stormed {s51}, but I can also not forget the other matters that lie between us.
+; str_comment_we_fought_in_siege_cruel|I won't forget how we broke through the walls of {s51} and put its defenders to the sword. It is a sweet memory.
+; str_comment_we_fought_in_siege_quarrelsome|Remember how the enemy squealed when we came over the walls of {s51}? They had thought they were safe! We wiped the smug smiles of their faces!
+; str_comment_we_fought_in_siege_upstanding|I will not forget our capture of {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
+; str_comment_we_fought_in_siege_default|I will not forget how together we captured {s51}. I am honoured to have fought by your side.
+; str_comment_we_fought_in_major_battle_unfriendly_spiteful|I suppose you will want to drink to the memory of our great victory near {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
+; str_comment_we_fought_in_major_battle_unfriendly|I will not forget how we fought together in the great battle near {s51}, but I can also not forget the other matters that lie between us.
+; str_comment_we_fought_in_major_battle_cruel|I won't forget the great battle near {s51}, when we broke through the enemy lines and they ran screaming before us. It is a sweet memory.
+; str_comment_we_fought_in_major_battle_quarrelsome|That was a fine fight near {s51}, when we made those bastards run!
+; str_comment_we_fought_in_major_battle_upstanding|I will not forget how we fought side by side at the great battle near {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
+; str_comment_we_fought_in_major_battle_default|I will not forget how we fought side by side at the great battle near {s51}. I am honoured to have fought by your side.
+; str_comment_you_defeated_a_lord_allied_liege|So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that.
+; str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|I heard that you fought and defeated {s54}. Every dog has its day, I suppose.
+; str_comment_you_defeated_a_lord_allied_spiteful|I heard that you fought and defeated that dog {s54}. Ah, if only I could have heard him whimpering for mercy.
+; str_comment_you_defeated_a_lord_allied_unfriendly_chivalrous|I heard that you fought and defeated {s54}. I hope that you did not use dishonourable means to do so.
+; str_comment_you_defeated_a_lord_allied|I heard that you fought and defeated {s54}. I wish you joy of your victory.
+; str_comment_you_defeated_me_enemy_chivalrous|I will not begrudge you your victory the last time that we met, but I am anxious for another round!
+; str_comment_you_defeated_me_enemy_spiteful|I have been looking forward to meeting you again. Your tricks will not deceive me a second time, and I will relish hearing your cries for mercy.
+; str_comment_you_defeated_me_enemy|When last we met, {playername}, you had the better of me. But I assure you that it will not happen again!
+; str_comment_i_defeated_you_enemy_spiteful|Back for more? Make me fight you again, and I'll feed your bowels to my hounds.
+; str_comment_i_defeated_you_enemy_chivalrous|Come to test your valor against me again, {playername}?
+; str_comment_i_defeated_you_enemy_benevolent|So once again you come at me? Will you ever learn?
+; str_comment_i_defeated_you_enemy_coldblooded|You are persistent, but a nuisance.
+; str_comment_i_defeated_you_enemy|How many times must I chastise you before you learn to keep your distance?
+; str_comment_we_were_defeated_unfriendly_spiteful|Last I saw you, you had been struck down by the men of {s54}. I blame you for that disaster. What a pity to see that you survived.
+; str_comment_we_were_defeated_unfriendly|Last I saw you, you had been struck down by the men of {s54}. Well, I see that you survived.
+; str_comment_we_were_defeated_cruel|Last I saw you, you had been struck down by the men of {s54}. Don't worry -- we'll find him, and make him choke on his victory.
+; str_comment_we_were_defeated_default|Last I saw you, you had been struck down by the men of {s54}. It is good to see you alive and well.
+; str_comment_you_were_defeated_allied_friendly_spiteful|I heard that {s54} gave you a hard time. Don't worry, friend -- I'll find him for you, and make you a gift of his head.
+; str_comment_you_were_defeated_allied_unfriendly_cruel|I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!
+; str_comment_you_were_defeated_allied_spiteful|I heard that {s54} crushed you underfoot like an ant. Hah! Children should not play games made for grown-ups, little {boy/girl}!
+; str_comment_you_were_defeated_allied_pitiless|I heard that {s54} defeated you, and scattered your forces. That is most disappointing...
+; str_comment_you_were_defeated_allied_unfriendly_upstanding|I heard that {s54} defeated you. Perhaps you should consider if you have considered any misdeeds, that might cause heaven to rebuke you in this way.
+; str_comment_you_were_defeated_allied_unfriendly|I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?
+; str_comment_you_were_defeated_allied|I heard that {s54} defeated you. But take heart -- the tables will soon be turned!
+; str_comment_you_helped_my_ally_unfriendly_chivalrous|I heard that you saved {s54} from likely defeat. Whatever else I may think of you, I must at least commend you for that.
+; str_comment_you_helped_my_ally_unfriendly|[revelance should be zero, and this message should not appear]
+; str_comment_you_helped_my_ally_liege|I heard that you saved my vassal {s54} from likely defeat. 
+; str_comment_you_helped_my_ally_unfriendly_spiteful|I heard that you rode to the rescue of our poor {s54}. Did you think him a damsel in distress? No matter -- it's a common mistake.
+; str_comment_you_helped_my_ally_spiteful|I heard that you saved {s54} from a whipping. You should have let him learn his lesson, in my opinion.
+; str_comment_you_helped_my_ally_chivalrous|I heard that you got {s54} out of a tight spot. That was a noble deed.
+; str_comment_you_helped_my_ally_default|I heard that you got {s54} out of a tight spot. Good work!
+; str_comment_you_abandoned_us_unfriendly_spiteful|You worm! You left us alone to face {s54}, didn't you? I spit at you.
+; str_comment_you_abandoned_us_unfriendly_pitiless|Well... You abandoned me in the middle of a battle with {s54}, didn't you? I'll see you buried in a traitor's grave.
+; str_comment_you_abandoned_us_spiteful|You disappeared in the middle of that battle with {s54}... I hope you have a good explanation. Did your bowels give out? Were you shaking too hard with fear to hold your weapon?
+; str_comment_you_abandoned_us_chivalrous|What happened? You disappeared in the middle of that battle against {s54}. I can only hope that you were too badly wounded to stand, for I would be ashamed to have gone into battle alongside a coward.
+; str_comment_you_abandoned_us_benefitofdoubt|What happened? You disappeared in the middle of that battle against {s54}. I assume that you must have been wounded, but it did look suspicious.
+; str_comment_you_abandoned_us_default|What happened? One moment you were fighting with us against {s54}, the next moment you were nowhere to be found?
+; str_comment_you_ran_from_me_enemy_spiteful|Last time we met, you ran from me like a whipped dog. Have you come back to bark at me again, or to whine for mercy?
+; str_comment_you_ran_from_me_enemy_chivalrous|Last time we met, you fled from me. Learn to stand and fight like a gentleman!
+; str_comment_you_ran_from_me_enemy_benevolent|When I saw you flee the last time that we met, I had hoped that I would not have to fight you again.
+; str_comment_you_ran_from_me_enemy_coldblooded|Last time we met, you fled from me. That was a wise decision
+; str_comment_you_ran_from_me_enemy|You may have been able to escape the last time we crossed paths, but the next time I doubt that you be so lucky.
+; str_comment_you_ran_from_foe_allied_chivalrous|They say that you fled from {s54}, leaving your men behind. I pray that this is not true, for such conduct does dishonour to us all.
+; str_comment_you_ran_from_foe_allied_upstanding|They say that you fled from {s54}, leaving your men behind. I do not always believe such rumors, and I also know that desperate straits call for desperate measures. But I beg you to take more care of your good name, for men will not fight in our armies if they hear that we abandon them on the field of battle.
+; str_comment_you_ran_from_foe_allied_spiteful|By the way, they said that you ran away from {s54} like a quaking little rabbit, leaving your men behind to be butchered. Ha! What a sight that would have been to see!
+; str_comment_you_defeated_my_friend_enemy_pragmatic|You may have bested {s54}, but you cannot defeat us all.
+; str_comment_you_defeated_my_friend_enemy_chivalrous|I have heard that you defeated {s54}, and ever since have been anxious to cross swords with you.
+; str_comment_you_defeated_my_friend_enemy_spiteful|Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe.
+; str_comment_you_defeated_my_friend_enemy|They say that you have defeated {s54}. But I will be a truer test of your skill at arms.
+; str_comment_you_captured_a_lord_allied_friendly_spiteful|I heard that you captured {s54}. I hope that you squeezed him for every denar.
+; str_comment_you_captured_a_lord_allied_unfriendly_spiteful|I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a gentleman!
+; str_comment_you_captured_a_lord_allied_chivalrous|I heard that you captured {s54}. Well done. I assume, of course, that he has been been treated with the honours due his rank.
+; str_comment_you_captured_a_lord_allied|I heard that you captured {s54}. Well done. His ransom must be worth quite something.
+; str_comment_you_let_go_a_lord_allied_chivalrous|I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause.
+; str_comment_you_let_go_a_lord_allied_upstanding|I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one.
+; str_comment_you_let_go_a_lord_allied_coldblooded|I heard that you captured {s54}, but then let him go. That was most chivalrous of you, but chivalry does not win wars.
+; str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|I heard that you captured {s54}, but then let him go. How very chivalrous of you! No doubt the widows and orphans he leaves in his wake will want to commend you in person.
+; str_comment_you_let_go_a_lord_allied|I heard that you captured {s54}, but then let him go. Well, I will not tell you what to do with your own prisoners.
+; str_comment_you_let_me_go_spiteful|When last we met, you had me at your mercy and allowed me to go free. I hope you enjoyed toying with me, like a cat with a mouse, because soon I will have you at my mercy, to slay or humiliate according to my fancy.
+; str_comment_you_let_me_go_enemy_chivalrous|When last we met, you had me at your mercy and allowed me to go free. That was most chivalrous of you, and I will not forget. But I also must remember my oath to my liege, and our kingdoms are still at war.
+; str_comment_you_let_me_go_enemy_coldblooded|When last we met, you had me at your mercy and allowed me to go free. But we are still enemies, and I cannot promise to repay your mercy in kind.
+; str_comment_you_let_me_go_enemy|When last we met, you had me at your mercy and allowed me to go free. That was kind of you. But we are still at war.
+; str_comment_you_let_me_go_default|When last we met, you had me at your mercy and allowed me to go free. That was kind of you, and I am glad that our kingdoms are no longer at war.
+; str_comment_pledged_allegiance_allied_martial_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Pray do not disgrace us by behaving in a cowardly fashion.
+; str_comment_pledged_allegiance_allied_martial|I heard that you have pledged allegiance to our lord, {s54}. I look forward to fighting alongside you against our foes.
+; str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Bah. Do yourself a favor, and stay out of my way.
+; str_comment_pledged_allegiance_allied_quarrelsome|I heard that you have pledged allegiance to our lord, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine.
+; str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. If I were he, I would not trust you to clean the sculleries.
+; str_comment_pledged_allegiance_allied_selfrighteous|I heard that you have pledged allegiance to our lord, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten.
+; str_comment_pledged_allegiance_allied_cunning_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around.
+; str_comment_pledged_allegiance_allied_cunning|I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress.
+; str_comment_pledged_allegiance_allied_debauched_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death.
+; str_comment_pledged_allegiance_allied_debauched|I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make.
+; str_comment_pledged_allegiance_allied_goodnatured_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt.
+; str_comment_pledged_allegiance_allied_goodnatured|I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity.
+; str_comment_pledged_allegiance_allied_upstanding_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong.
+; str_comment_pledged_allegiance_allied_upstanding|I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift horse in affairs of arms.
+; str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!
+; str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back.
+; str_comment_our_king_granted_you_a_fief_allied_friendly|I heard that {s54} granted you {s51} as a fief. May your new lands prosper.
+; str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall.
+; str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came.
+; str_comment_our_king_granted_you_a_fief_allied_spiteful|I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor.
+; str_comment_our_king_granted_you_a_fief_allied|I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself.
+; str_comment_you_renounced_your_alliegance_enemy_friendly|I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle.
+; str_comment_you_renounced_your_alliegance_friendly|I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows.
+; str_comment_you_renounced_your_alliegance_unfriendly_spiteful|I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!
+; str_comment_you_renounced_your_alliegance_unfriendly_moralizing|I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor.
+; str_comment_you_renounced_your_alliegance_enemy|I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies.
+; str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
+; str_personality_archetypes|liege
+; str_martial|martial
+; str_quarrelsome|bad-tempered
+; str_selfrighteous|pitiless
+; str_cunning|cunning
+; str_debauched|sadistic
+; str_goodnatured|good-natured
+; str_upstanding|upstanding
+; str_surrender_demand_default|Yield or die!
+; str_surrender_demand_martial|The odds are not in your favor today. You may fight us, but there is also no shame if you yield now.
+; str_surrender_demand_quarrelsome|I've got you cornered. Give up, or I'll ride you down like a dog.
+; str_surrender_demand_pitiless|You cannot defeat me, and I'll teach you a painful lesson if you try. Yield!
+; str_surrender_demand_cunning|You are outmatched today. Give up -- if not for your own sake, then think of your men!
+; str_surrender_demand_sadistic|Surrender or I'll gut you like a fish!
+; str_surrender_demand_goodnatured|We have the advantage of you. Yield, and you will be well-treated.
+; str_surrender_demand_upstanding|You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed.
+; str_surrender_offer_default|Stop! I yield!
+; str_surrender_offer_martial|Stop! I yield!
+; str_surrender_offer_quarrelsome|Enough! You win today, you dog! Ach, the shame of it!
+; str_surrender_offer_pitiless|I yield! You have won. Cursed be this day!
+; str_surrender_offer_cunning|Stop! I yield to you!
+; str_surrender_offer_sadistic|I give up! I give up! Call back your dogs!
+; str_surrender_offer_goodnatured|I yield! Congratulations on your victory, {sir/madame}!
+; str_surrender_offer_upstanding|I yield! Grant me the honours of war, and do yourself credit!
+; str_prisoner_released_default|You have my gratitude, {sir/madame}. I shall not forget your kindness.
+; str_prisoner_released_martial|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
+; str_prisoner_released_quarrelsome|I'm free? Well... Good bye, then.
+; str_prisoner_released_pitiless|Thank you. When you are finally defeated, I will request for your death to be swift and merciful. Unless, that is, you care to join us... Good bye, for now.
+; str_prisoner_released_cunning|Am I? You are a good {man/woman}. I will try to find a way to repay you.
+; str_prisoner_released_sadistic|Am I? So refined is your cruelty, that you would rather see me free and humiliated, than in chains. Enjoy your triumph!
+; str_prisoner_released_goodnatured|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
+; str_prisoner_released_upstanding|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
+str_enemy_meet_default|我らに挑戦しようという、おぬしは何者だ？
+str_enemy_meet_martial|そこの指揮官、名を名乗れ。 戦う相手の名前くらいは知っておきたい。
+str_enemy_meet_quarrelsome|おぬしは誰だ？
+str_enemy_meet_pitiless|おぬしは誰だ？ 言え。 殺してしまってからでは知る術がない。
+str_enemy_meet_cunning|名を名乗れ。 敵の名前を知っておきたいのだ。
+str_enemy_meet_sadistic|誰だ貴様は？ 舌を切り取られぬうちに、さっさと名乗れ。
+str_enemy_meet_goodnatured|指揮官殿、名を名乗られよ。 戦う相手の名前を知っておきたい。
+str_enemy_meet_upstanding|我らが行く手をさえぎる不届き者め、 おぬしは誰だ？
+str_battle_won_default|先ほどのおぬしの働きは、見事であった。
+; str_battle_won_martial|There is no greater fortune than the chance to show one's valor on the field of arms!
+str_battle_won_quarrelsome|フン！ あの役立たずどもに、 モノのひとつふたつ、 教えてやったわ。 そうであろう？
+str_battle_won_pitiless|我々が力を合わせれば、 敵は我々の名前を耳にしただけで 恐れおののくようになるであろう！
+; str_battle_won_cunning|Now, we must be sure to press our advantage, so that the blood shed today is not wasted.
+; str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
+; str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
+; str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
+; str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
+; str_battle_won_grudging_martial|{playername} -- you have shown yourself a worthy {man/woman} today, whatever your misdeeds in the past.
+; str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
+; str_battle_won_grudging_pitiless|Your help was most valuable today. I would not imagine that you came to help me out of kindness, but I nonetheless thank you.
+; str_battle_won_grudging_cunning|It would be unwise of me not to thank you for coming to help me in my hour of need. So... You have my gratitude.
+; str_battle_won_grudging_sadistic|Well! How touching! {playername} has come to rescue me.
+; str_battle_won_grudging_goodnatured|{playername}! I can't say that we've always gotten along in the past, but you fought well today. My thanks to you!
+; str_battle_won_grudging_upstanding|Perhaps I was wrong about you. Your arrival was most timely. You have my gratitude.
+; str_battle_won_unfriendly_default|So you're here. Well, better late than never, I suppose.
+; str_battle_won_unfriendly_martial|We have hard harsh words in the past, but for now let us simply enjoy our victory.
+; str_battle_won_unfriendly_quarrelsome|If you're standing there waiting for thanks, you can keep waiting. Your help wasn't really needed, but I guess you had nothing better to do, right?
+; str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
+; str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
+; str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
+; str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
+; str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
+str_troop_train_request_default|あの連中をしごき上げるには、 おぬしのような人物が必要なのだ。
+str_troop_train_request_martial|あの連中には、勇気というものを 目の前に示してやる必要があるのだ。
+str_troop_train_request_quarrelsome|うすのろの肥えた豚どもめ。 あいつらを見ると吐き気がする。
+; str_troop_train_request_pitiless|They are more afraid of the enemy than they are of me, and this will not do.
+; str_troop_train_request_cunning|But men, like swords, are tempered and hardened by fire.
+; str_troop_train_request_sadistic|They need someone with steel in his back to flog some courage into them, or kill them trying.
+; str_troop_train_request_goodnatured|They're good enough lads, but I am afraid that they are not quite ready for a battle just yet.
+; str_troop_train_request_upstanding|It would be tantamount to murder for me to lead them into combat in their current state.
+; str_unprovoked_attack_default|What? Why do you attack us? Speak, you rascal!
+; str_unprovoked_attack_martial|I have no objection to a trial of arms, but I would ask you for what reason you attack us?
+; str_unprovoked_attack_quarrelsome|You're making a big mistake, {boy/girl}. What do you think you're doing?
+; str_unprovoked_attack_pitiless|Indeed? If you really want to die today, I'd be more than happy to oblige you, but I am curious as to what you hope to accomplish.
+; str_unprovoked_attack_cunning|Really? I think that you are acting most unwisely. What do you hope to gain by this?
+; str_unprovoked_attack_sadistic|What's this? Do you enjoy having your eyes put out?
+; str_unprovoked_attack_goodnatured|Why do you do this? We've got no quarrel, {sir/madame}.
+; str_unprovoked_attack_upstanding|I consider this an unprovoked assault, and will protest to your king. Why do you do this?
+; str_unnecessary_attack_default|I will not hesitate to cut you down if pressed, but I will offer you the chance to ride away from this.
+; str_unnecessary_attack_martial|I am eager to take you up on your challenge, {sir/madame}, although I will give you a minute to reconsider.
+; str_unnecessary_attack_quarrelsome|Bah! I'm in no mood for this nonsense today. Get out of my way.
+; str_unnecessary_attack_pitiless|I am in a merciful mood today. I will pretend that I did not hear you.
+; str_unnecessary_attack_cunning|I don't see what you have to gain by making an enemy of me. Maybe you should just ride away.
+; str_unnecessary_attack_sadistic|I have no time to waste on a worm like you. Get out of my way.
+; str_unnecessary_attack_goodnatured|I don't see what you have to gain by picking a fight, {sir/madame}. You can still ride away.
+; str_unnecessary_attack_upstanding|If a fight is what you wish, {sir/madame}, then you will have one, but I will yet offer you the chance to back down.
+; str_lord_challenged_default|As you wish. Prepare to die!
+; str_lord_challenged_martial|So be it. Defend yourself!
+; str_lord_challenged_quarrelsome|You impudent whelp! I'll crush you!
+; str_lord_challenged_pitiless|If you so badly wish to die, then I have no choice but to oblige you.
+; str_lord_challenged_cunning|Well, if you leave me no choice...
+; str_lord_challenged_sadistic|You heap of filth! I'll make you wish you'd never been born.
+; str_lord_challenged_goodnatured|Very well. I had hoped that we might avoid coming to blows, but I see that have no choice.
+; str_lord_challenged_upstanding|So be it. It saddens me that you cannot be made to see reason.
+; str_lord_mission_failed_default|Well, I am disappointed, but I am sure that you will have many chances to redeem yourself.
+; str_lord_mission_failed_martial|There is no honour in failing a quest which you endeavoured to take, but I will accept your word on it.
+; str_lord_mission_failed_quarrelsome|You failed? Bah. I should have expected as much from the likes of you.
+; str_lord_mission_failed_pitiless|You failed? Well. You disappoint me. That is a most unwise thing to do.
+; str_lord_mission_failed_cunning|Well, I am disappointed, but no one can guarantee that the winds of fortune will always blow their way.
+; str_lord_mission_failed_sadistic|Indeed? Those who fail me do not always live to regret it.
+; str_lord_mission_failed_goodnatured|Oh well. It was a long shot, anyway. Thank you for making an effort.
+; str_lord_mission_failed_upstanding|Very well. I am sure that you gave it your best effort.
+; str_lord_follow_refusal_default|Follow you? You forget your station, {sir/madame}.
+; str_lord_follow_refusal_martial|Perhaps if you one day prove yourself a valorous and honourable warrior, then I would follow you. But not today.
+; str_lord_follow_refusal_quarrelsome|Follow someone like you? I don't think so.
+; str_lord_follow_refusal_pitiless|Lords like me do not follow people like you, {sir/madame}.
+; str_lord_follow_refusal_cunning|First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you.
+; str_lord_follow_refusal_sadistic|I think not! Rather, you should follow me, as a whipped cur follows {his/her} master.
+; str_lord_follow_refusal_goodnatured|Um, I am a bit pressed with errands right now. Perhaps at a later date.
+; str_lord_follow_refusal_upstanding|First show me that you are worthy to lead, and then perhaps I will follow.
+; str_lord_insult_default|base varlot
+; str_lord_insult_martial|dishonourable knave
+; str_lord_insult_quarrelsome|filth-swilling bastard
+; str_lord_insult_pitiless|low-born worm
+; str_lord_insult_cunning|careless oaf
+; str_lord_insult_sadistic|sniveling cur
+; str_lord_insult_goodnatured|unpleasant fellow
+; str_lord_insult_upstanding|disgraceful scoundrel
+; str_rebellion_dilemma_default|[liege]
+; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
+; str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
+; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
+; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
+; str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
+; str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
+; str_rebellion_dilemma_2_default|[liege]
+; str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
+; str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
+; str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
+; str_rebellion_dilemma_2_cunning|{s46} has been challenged, and thus he will never be able to rule as strongly as one whose claim has never been questioned. Yet if {s45} takes the throne by force, {reg3?she:he} will not be as strong as one who succeeded peacefully.
+; str_rebellion_dilemma_2_sadistic|Perhaps if I join {s45} while {reg3?she:he} is still weak {reg3?she:he} will enrich me, but perhaps if I bring {s46} your head he will give me an even greater reward.
+; str_rebellion_dilemma_2_goodnatured|{s46} has always treated me decently, yet it's true that he did wrong to {s45}. I hesitate to renounce my homage to {s46}, yet I also don't think it's right to support injustice.
+; str_rebellion_dilemma_2_upstanding|I feel that I must do whatever is best for the realm, to avoid it being laid waste by civil war and ravaged by its enemies.
+; str_rebellion_prior_argument_very_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
+; str_rebellion_prior_argument_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
+; str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
+; str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
+; str_rebellion_rival_default|[liege]
+; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
+; str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
+; str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
+; str_rebellion_rival_cunning|{s49} {s44}, who has already joined you, is headstrong and quarrelsome, and a bit of liability.
+; str_rebellion_rival_sadistic|{s49} I have no desire to fight alongside your ally {s44}, who puts on such a nauseating display of virtue.
+; str_rebellion_rival_goodnatured|{s49} I'd be reluctant to be on the same side as {s44}, who has quite a reputation for cruelty.
+; str_rebellion_rival_upstanding|{s49} your ally {s44} is in my opinion a dangerous, unreliable, and highly unprincipled man.
+; str_rebellion_argument_favorable|I respect your line of argument
+; str_rebellion_argument_neutral|I find your line of argument only moderately compelling
+; str_rebellion_argument_unfavorable|I do not find your line of argument compelling
+; str_rebellion_persuasion_favorable|you state your case eloquently
+; str_rebellion_persuasion_neutral|you make a reasonable case
+; str_rebellion_persuasion_unfavorable|you make an unconvincing case
+; str_rebellion_relation_very_favorable|I have the greatest respect for you personally.
+; str_rebellion_relation_favorable|I know and respect you personally.
+; str_rebellion_relation_neutral|I do not know you as well as I might like.
+; str_rebellion_relation_unfavorable|I do not trust you.
+; str_and_comma_3|Furthermore, 
+; str_but_comma_3|However,
+; str_and_comma_1|, and 
+; str_but_comma_1|, but 
+; str_and_comma_2|. Moreover, 
+; str_but_comma_2|. Nonetheless, 
+; str_rebellion_agree_default|[liege]
+; str_rebellion_agree_martial|I have decided. I will back {s45} as the rightful heir.
+; str_rebellion_agree_quarrelsome|Ahh, I've thought long enough. I never did like {s46} much anyway. Let's go take his throne away from him.
+; str_rebellion_agree_pitiless|You are fortunate. I have decided to join you. Pray do not give me cause to regret this decision.
+; str_rebellion_agree_cunning|This is a most dangerous decision, but after careful consideration, I have decided that I will join you. Let's hope it is for the best.
+; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
+; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
+; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
+; str_rebellion_refuse_default|[liege]
+; str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
+; str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
+; str_talk_later_default|[liege]
+; str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
+; str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
+; str_talk_later_pitiless|Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army.
+; str_talk_later_cunning|This is hardly the time or the place for such a discussion. Perhaps we can discuss it at a later time and a different place, but for now we're still foes.
+; str_talk_later_sadistic|You should have your mouth sewn shut! Can you imagine what would happen if the other vassals see me talking to you of treason?
+; str_talk_later_goodnatured|So you wish to discuss your rebellion with me? Try that again when we aren't surrounded by my liege's army, and I will hear what you have to say.
+; str_talk_later_upstanding|Whatever my thoughts on the legitimacy of the succession, I am not about to discuss them here and now. If we meet again when we can talk in privacy, I will hear what you have to say on the matter. But for now, consider me your enemy.
+; str_gossip_about_character_default|They say that {s6} doesn't possess any interesting character traits.
+; str_gossip_about_character_martial|They say that {s6} loves nothing more than war.
+; str_gossip_about_character_quarrelsome|They say that {s6} almost came to blows with another lord lately, because the man made a joke about his nose.
+; str_gossip_about_character_selfrighteous|I heard that {s6} had a squire executed because the unfortunate man killed a deer in his forest.
+; str_gossip_about_character_cunning|They say that {s6} is a cunning opponent.
+; str_gossip_about_character_sadistic|They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man.
+; str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
+; str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
+; str_latest_rumor|The latest rumor you heard about {s6} was:
+; str_faction_strength_crushed|crushed
+; str_faction_strength_spent_and_wavering|spent and wavering
+str_faction_strength_weakened|弱小
+str_faction_strength_fair|弱い
+str_faction_strength_average|平凡
+str_faction_strength_strong|強い
+str_faction_strength_quite_strong|強大
+str_faction_strength_very_strong|非常に強大
+str_faction_strength_unmatched|無敵
+; str_faction_strength_last|INVALID
+str_theater_se|ゴンドール
+str_theater_sw|ローハン
+str_theater_c|ロヴァニオン南部
+str_theater_n|ロヴァニオン北部
+str_faction_side_name|自由の民
+str_faction_side_name1|瞼なき御目
+str_faction_side_name2|白き手
+str_party_greet_friend_gondor|やあ、白の木の友人！
+str_party_greet_enemy_gondor|望みとあらば武器をとれ、ゴンドールの敵め！
+str_party_greet_friend_dwarf|やあ、ドワーフの友よ！ ドゥリンの一族はおぬしを歓迎する。
+str_party_greet_enemy_dwarf|バルク カザド！ カザド アイ＝メヌ！
+str_party_greet_friend_rohan|やあごきげんよう、ロヒアリムの友人！
+str_party_greet_enemy_rohan|ローハン騎兵の挑戦を受けよ！
+str_party_greet_friend_mordor|御目に勝利を！
+str_party_greet_enemy_mordor|おまえらの首は、黒門に飾りに丁度良い！
+str_party_greet_friend_isengard|白の手ばんざい！
+str_party_greet_enemy_isengard|おまえの死体をご覧に入れたら、我らが賢者主人はお喜びになるだろう！
+str_party_greet_friend_lorien|やあ、美しきロリエンの友！
+str_party_greet_enemy_lorien|不浄の者どもめ、われらの手で、 その苦痛から開放してやろう！
+str_party_greet_friend_imladris|やあ、イムラトリスとエルロンド卿の友人！
+str_party_greet_enemy_imladris|今日、 我々はイムラドリスとすべての清きものの敵を打ち倒す！
+str_party_greet_friend_woodelf|やあ、闇の森のシルヴァン・エルフの友よ！
+str_party_greet_enemy_woodelf|悪意を持って闇の森に足を踏み入れる者は、 生きて森を出る事はないぞ！
+str_party_greet_friend_dale|やあ、誇り高きデールの友人！
+str_party_greet_enemy_dale|武器をとるがいい、我々はデールの民だ！
+str_party_greet_friend_harad|歓迎する、ハラドリムの友よ！
+str_party_greet_enemy_harad|おまえたちの肉体はひとつ残らずすり潰して、 砂漠の砂にしてやろう！
+str_party_greet_friend_rhun|ごきげんよう、 東夷の部族とドルイニオンの友人！
+str_party_greet_enemy_rhun|ドワーフも人間も、 獰猛さで知られる我々の敵ではない！
+; str_party_greet_friend_khand|Jus jívati jyók, friend of the Variags! Your battle scars honour you.
+; str_party_greet_enemy_khand|Put on the masks of warriors, for today you shall meet your doom!
+; str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, friend of the Corsairs!
+str_party_greet_enemy_umbar|白の手ばんざい！
+str_party_greet_friend_moria|白の手ばんざい！
+str_party_greet_enemy_moria|おまえののど笛は、 モリアのオークがかき切ってやろう！
+str_party_greet_friend_guldur|御目に勝利を！
+; str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
+str_party_greet_friend_gundabad|アングマールの力を思い知れ！
+; str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
+str_party_greet_friend_dunland|やあ、馬乗りどもの敵！
+; str_party_greet_enemy_dunland|Your homes will burn and your families shall be cut down!
+str_party_greet_friend_beorn|やあ、ビヨルンの友人！
+str_party_greet_enemy_beorn|我ら熊人の怒りをたっぷり味わえ！
+str_subfaction_gondor_name_begin|ゴンドール
+str_subfaction_gondor_name1|ペラルギア
+str_subfaction_gondor_name2|ドル・アムロス
+str_subfaction_gondor_name3|ラメドン
+str_subfaction_gondor_name4|ロスサールナッハ
+str_subfaction_gondor_name5|ピンナス・ゲリン
+str_subfaction_gondor_name6|黒根谷
+str_subfaction_gondor_name7|イシリアン
+str_default_rumor|戦争だよ。 みんな顔を合わせれば戦争の話ばかりさ。
+str_rohan_rumor_begin|私らのかわいい子供たちが 戦場へと旅立っていく姿を見ると、 心が張り裂けそうになるよ！ でも、あの子たちがいないと、 人間は歩いていかなきゃならなくなるものね。
+str_rohan_rumor_2|オークってのは、馬を食べるらしいよ。 なんて汚らわしい生き物なんだ！ やつらは捕虜のことも食べてしまうらしいね。 それもよくない事だよ、もちろん。
+str_rohan_rumor_3|ローハン産に勝る馬なんて、この世にいないよ。 エルフですら、 馬は我々から調達するんだ！
+str_rohan_rumor_4|傷の手当てができるのなら、 馬が怪我をしたときも、 どうか人間と同様に扱ってやってくれないか。
+str_rohan_rumor_5|荷馬を8頭用意してくれ、 と言われたんだ・・・ 彼には昨日、 7頭を引き渡したばっかりなんだよ。 一体どうなってるんだろうね。
+str_rohan_rumor_6|ゴンドールは頑丈な馬を好む。 我らの馬乗りたちは、 速い馬が好きだ。 エルフは最高の馬しか買わない。 で、敵はそれらの馬を盗むんだ！
+str_rohan_rumor_7|砂漠の馬やヴァリアグの馬を見た事があるんだけど、 ローハン産のほうが明らかに上だね。 でも、 乗りこなすには乗り手の経験がより必要なんだ。
+str_rohan_rumor_8|ワーグは馬より遅いが、 より小回りが利くんだ。 それと、 よく飼育された軍馬に比べると、 たいぶぜい弱だね。
+str_rohan_rumor_9|ローハンと対戦する軍は、 ローハンの騎兵への対抗策として パイクや槍で武装しているんだ。 裏切り者のサルマンは、 この戦争が終わるまえには ファンゴルンの森を伐採し尽くしてしまうよ。
+str_rohan_rumor_10|この世界で最高の馬乗りになるための 第一歩は、 まず最高の馬を育て上げる事から 始めるんだ。
+str_rohan_rumor_11|ゴンドールで目にする馬のほとんどは、 我々が育てた馬なんだよ。 彼らは、 ゴンドールの重装備にも耐えられる、 足が遅くても力の強い馬を好むんだ。
+str_rohan_rumor_12|ローハンでは、馬は人間と同じだ、 と言うんだ。 それはつまり、良い馬だ、 と言ったらそれは、良い人間だ、 という事と同じ意味で、悪い馬だ、 と言ったらそれは、悪い人間だ、 という事と同じ意味なんだ。 要するに、 もし馬が腹を空かせたのなら、 それは人間が腹を空かせているのと同じ事で、 馬が悲しむのは 人間が悲しむのと同様なんだ。 よく言われるのは、 馬が幸せなのは、 人間が幸せなのと一緒の事なんだ。 馬が怒っているときは、 人間が怒っているときと同様なんだ、 とも言われる。 馬が歩いてるっていうのは、 人間が歩いてるって言ってるのと同様で、 年をとった馬は、 年をとった人間と同じなんだ。 小さい馬、 というのは小さい人間、 と同じ意味なんだ。
+str_rohan_rumor_13|サルマンのオークどもはたちが悪いが、 たいした防具は身に付けていない。 一振りの良い斧があれば充分さ。
+str_rohan_rumor_14|我々の投げ斧や投げ槍は かさばりすぎると感じるかも知れないが、 馬で敵を踏みつける前に、 何かを投げつける機会が そう何度もあると思うかい？ せっかくなんだから、 しっかりした得物を投げるべきだよ。
+str_rohan_rumor_15|馬を駆りつつ一匹のオークを矢で射抜くのは骨の折れる作業だが、 密集したロングパイクのなかに突撃するよりはましだ。
+str_rohan_rumor_16|ゴンドールは弓の腕を磨く。 我々は馬上弓の鍛錬を怠らない。 褐色人は、どちらにも関心がない。
+str_rohan_rumor_17|サルマンのオークどもには、 大勢の優秀な弓兵がいる。 一方で、そうじゃないオークもたくさんいる。 優秀な騎兵指揮官は、 それらを瞬時に見分けなければならない。
+str_rohan_rumor_18|ここでは我々は皆、友人だ。 また、そうでなくてはならない。 我々が仲間同士で争えば、 モルドールが笑うだけだ。
+; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
+str_gondor_rumor_begin|敵は目と鼻の先まで迫っているというのに、 ゴンドールには王がいない。 東の闇は大きくなるばかりだ。 これは良くない。
+; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
+str_gondor_rumor_3|モルドールは、 乾ききった不毛の地だ。 あそこに住む生き物は、 一体何を食べているんだろう？ まさか共食いじゃないよね？ いやでも、まさか・・・
+; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
+; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
+; str_gondor_rumor_6|We know of the elves in the north, but nowadays noone gets to see them anymore.
+; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
+; str_gondor_rumor_8|Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?
+; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
+; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
+; str_gondor_rumor_11|Dol Guldur? Never heard of it.
+; str_gondor_rumor_12|Moria? The dwarves mine there, don't they?
+; str_gondor_rumor_13|Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left.
+; str_gondor_rumor_14|People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes.
+; str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
+; str_gondor_rumor_16|My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me.
+; str_gondor_rumor_17|There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock.
+; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
+str_dwarf_rumor_begin|ドワーフには友達がいないんじゃないか、 とよく聞かれる。 もちろんわしらにも友達はおる。 ただ、友達のことが嫌いなだけだ。
+str_dwarf_rumor_2|オーク？フン！ あれは斧の油じゃよ、 ただの油じゃ。
+str_dwarf_rumor_3|おまえのその着てるものは、何だ？ それじゃあ蜂に刺されるのも 防げないんじゃないのかね。 しかも格好悪い。
+str_dwarf_rumor_4|わしらだって、もちろん馬に乗れるさ。 ただ乗りたくないだけなんだ！
+str_dwarf_rumor_5|出て行け！ ここにおまえみたいな輩は要らん。 面倒のタネはオークどもだけでじゅうぶんじゃ。
+str_dwarf_rumor_6|わしらのことを背が低いという奴は、誰じゃ？
+str_dwarf_rumor_7|角笛城の洞窟は、ぜひ見ておくべきだ。 ああ、あそこのうなるような宝石群を、 思う存分掘れたら・・・
+str_dwarf_rumor_8|モリアにいる同胞からは、 もうずいぶんと一切の連絡が途絶えておる。 連中はあそこの宝を 独り占めするつもりに違いない！
+str_dwarf_rumor_9|エルフ？エルフがわしらの為に、 何かしてくれたか？ ああ、確かに治療術があるわいな、でも他には？ ああ、細工技術もあるな、でも他には？ ああ、確かに闇の勢力と戦ってくれとるのう。 つまりな、わしは、 エルフがわしらの為に何かしてくれた事が今までにあったか、 と聞いとるんじゃよ！
+str_dwarf_rumor_10|エールの大瓶に豚の丸焼き、 ふさふさのひげを生やした女。 これさえあればわしは幸せじゃ！
+; str_dwarf_rumor_11|Well, Brian, I'm opening a mine! What? Ugh? Well, Brian, I'm opening a mine!
+; str_dwarf_rumor_12|We, Dwarves always build more than one entry into our mines. And then there's the secret ones too.
+str_dwarf_rumor_13|人間のやる事は、本当に変わっとるのう。
+; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
+str_dwarf_rumor_15|*小声でつぶやく* 人間は殺せ！ エルフも殺せ！ 金塊はわしらで独占すればいいんじゃ！
+; str_mordor_rumor_begin|Lugbúrz commands!
+; str_mordor_rumor_2|Nazgûl will defeat the world of men!
+; str_mordor_rumor_3|Why aren't you working, glob! The Eye is watching!
+; str_mordor_rumor_4|Soon, darkness comes! Durb-burz!
+; str_mordor_rumor_5|Hungry! Where is food?
+; str_mordor_rumor_6|We will feast on men of the White city!
+; str_mordor_rumor_7|Master trains Olog-hai for war!
+; str_mordor_rumor_8|Warg bit my finger. And it really hurts! Warg-filth!
+; str_mordor_rumor_9|Don't trust Saruman-glob!
+; str_mordor_rumor_10|Mountain orcs are weak! We are strong! We will eat tribal snagas!
+str_mordor_rumor_11|ウルク グロブ イシ クリンプ シャルクーク。
+; str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
+; str_mordor_rumor_13|Snaga stole my meat, pushdug!
+; str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
+; str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
+; str_mordor_rumor_16|If it insults you - kill it. If it fights you - kill it. If it looks at you - kill it. If it's dead - eat it.
+; str_mordor_rumor_17|Saruman's uruk-hai say they don't mind the sun. Bûbhosh skai!
+; str_mordor_rumor_18|All dead, all rotten. Elves and Men and Orcs. In the Dead Marshes!
+; str_mordor_rumor_19|Come not between the Nazgûl and his prey!
+; str_mordor_rumor_20|Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant.
+; str_mordor_rumor_21|Mirkwood is in our hands already, but the elves don't know it yet.
+; str_mordor_rumor_22|Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods...
+; str_mordor_rumor_23|Where there's a whip there's a way.
+str_isengard_rumor_begin|偉大なるシャルクー！
+str_isengard_rumor_2|馬乗りどもは、食料だ！ ブブホシ！
+str_isengard_rumor_3|馬乗りども、パイクでおどろかせてやる！ ハァハァハァ！
+str_isengard_rumor_4|サルマンは手品をたくさん、知ってる！ 強い鉄と、火の石だ！
+str_isengard_rumor_5|野人どもは、油断ならん！ だが、シャルクーは、頭がいい。 シャルクーは、やつらの使いようを、よく知っている。
+; str_isengard_rumor_6|Moria-scum breed olog-hai! Big! Skai!
+; str_isengard_rumor_7|Wise master make uruk-hai strong!
+str_isengard_rumor_8|ワーグは馬を食べる！ だからワーグは馬より速い！
+str_isengard_rumor_9|ウルク＝ハイは、 馬乗りどもを踏んづける！
+; str_isengard_rumor_10|Grind! Grind! Grind!
+str_isengard_rumor_11|ウルク グロブ イシ クリンプ シャルクーク。
+str_isengard_rumor_12|森を焼く！ 武器をつくる！ 馬乗りを殺す！
+str_isengard_rumor_13|狂戦士に近寄るな。 見境なく切り刻み始めるぞ！
+; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
+; str_isengard_rumor_15|I don't trust those little mountain orc swines. Isengarders will win this war, with or without them.
+; str_isengard_rumor_16|By the White Hand! What's the use of sending mountain-maggots to fight for us, only half-trained! Cursed goblins and orcs of the North!
+; str_isengard_rumor_17|I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!
+; str_isengard_rumor_18|There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark.
+; str_isengard_rumor_19|We're cutting down the forest, but many orcs that go in, never come out.
+; str_isengard_rumor_20|Where there's a whip there's a way.
+; str_rhun_rumor_begin|Ride like the wind of the steppes!
+; str_rhun_rumor_2|The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us.
+; str_rhun_rumor_3|Three wizards came to our lands a while ago. I wonder what they are up to.
+; str_rhun_rumor_4|Our lands are vast and sparsely populated. But we know how to survive there.
+; str_rhun_rumor_5|We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!
+; str_rhun_rumor_6|Our cousins from Khand prefer to fight on foot, but we know being on a horse is better.
+; str_rhun_rumor_7|We have defeated Gondor legions before, and we will do it again!
+; str_rhun_rumor_8|We fight to the death! Never retreat, never turn and run! Not a step backwards!
+; str_rhun_rumor_9|A red dawn has risen in the east. A red dusk awaits the west!
+; str_rhun_rumor_10|Elven women? Nah. Too fragile!
+; str_rhun_rumor_11|Each of my sons has already brought me a head of an enemy. And my daughter the testicles of one. Ha ha ha!
+; str_rhun_rumor_12|Orcs are filthy beasts with no skill or courage. They have no place on the field of battle.
+; str_rhun_rumor_13|What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women.
+; str_dunland_rumor_begin|We won't rest until we are avenged and the strawheads are on their knees!
+; str_dunland_rumor_2|Rohirrim bastards are friendly with their horses at night! Ha ha ha!
+; str_dunland_rumor_3|Strawheads will cough out our land! Together with their blood! Gah!
+; str_dunland_rumor_4|Death to the Forgoil! Death to the Strawheads! Death to the robbers from the North!
+; str_dunland_rumor_5|They call it Rohan now, but it's our ancestral land! We will avenge our forfathers and chase off the dirty land-thieves.
+; str_dunland_rumor_6|Don't let the Forgoil catch you, or they will torture and burn you alive!
+; str_dunland_rumor_7|We are the bloodlust of the wolf and the strength of the boar!
+; str_dunland_rumor_8|Forgoil think we are savage and stupid. Let's see what they think after their horsemen meet our pikemen.
+; str_dunland_rumor_9|Isengard's crows will peck out Strawheads' eyes, Dunland's wolves will bite their throats.
+; str_dunland_rumor_10|I caught and killed a wolf with my bare hands. I will snap a horse-man's neck like a twig! Grrr!
+; str_dunland_rumor_11|Our chief found an old bronze sword in a barrow. He bent it and threw it in the marsh. Spirits of the hills will be on our side for sure. It is the old way.
+; str_dunland_rumor_12|My forefathers fought with Freca and later Wulf against the bloodied Forgoil. We remember their courage.
+; str_beorn_rumor_begin|The woods are vast and all manner of creatures live inside.
+; str_beorn_rumor_2|Wild bees make the best honey!
+; str_beorn_rumor_3|Elves of the woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking.
+; str_beorn_rumor_4|We see many strange beasts passing through our lands.
+; str_beorn_rumor_5|I sleep all night, and I work all day!
+; str_beorn_rumor_6|Evil is creeping from the mountains yonder.
+; str_beorn_rumor_7|The great forest is not as it used to be anymore!
+; str_beorn_rumor_8|The strength of the axe is not in the blade, but in the haft.
+; str_beorn_rumor_9|We slept through the last winter. What? Yes, you need to eat a lot in the autumn to last through winter like this.
+; str_beorn_rumor_10|Men of Rohan are our kin, bears are our blood, goblins are our prey!
+; str_beorn_rumor_11|Turn into bears? Of course we don't. Who told you that? Ha ha ha!
+; str_beorn_rumor_12|Beorn was a great man. No, not a man, a giant!
+; str_beorn_rumor_13|*GROWLS*   Do you have any honey?
+; str_beorn_rumor_14|Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you.
+; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
+; str_lorien_rumor_2|Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!
+; str_lorien_rumor_3|The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.
+; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
+; str_lorien_rumor_5|Often does hatred hurt itself!
+; str_lorien_rumor_6|Ancient magic protects Lothlórien, so powerful the Darkness does not yet dare challenge it.
+; str_lorien_rumor_7|Nathlo i nathal! You are safe within the golden woods. Posto vae - rest now, eat and drink. If you must leave then, carry with you a memory of how Lorien once was.
+; str_lorien_rumor_8|It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. 
+; str_lorien_rumor_9|Av-'osto - do not be afraid! More than our grey cloaks protect us from the enemy here.
+; str_imladris_rumor_begin|May the blessing of Elves and Men and all Free Folk go with you.
+; str_imladris_rumor_2|May the stars shine upon your faces!
+; str_imladris_rumor_3|He that breaks a thing to find out what it is has left the path of wisdom.
+; str_imladris_rumor_4|We must take a hard road, a road unforeseen. There lies our hope, if hope it be.
+; str_imladris_rumor_5|Despair is only for those who see the end beyond all doubt. We do not.
+; str_imladris_rumor_6|Even after the coldest winter flowers do spring. And after the longest night, comes a new dawn.
+; str_imladris_rumor_7|So many had gathered when last I rode to war. The light of the drawing of our swords was like a fire in a field of reeds. So few have left Imladris now. 
+; str_imladris_rumor_8|Áva rucë! The Eldar have taken arms to fight the enemy alongside brave Edain once more.  Perhaps for the last time, who knows? We sing of war, of fire and the end of the Night.
+; str_imladris_rumor_9|I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours.
+; str_woodelf_rumor_begin|An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey.
+; str_woodelf_rumor_2|Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves.
+; str_woodelf_rumor_3|Darkness and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light.
+; str_woodelf_rumor_4|Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?
+; str_woodelf_rumor_5|Shhh, no dhínen! There may be orcs lurking around. We must be on guard!
+; str_woodelf_rumor_6|*stares at you, obviously annoyed by your presence*
+; str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere.
+; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
+; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
+; str_dale_rumor_begin|First there was the dragon, now this...
+; str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
+; str_dale_rumor_3|Ever since the defeat of the dragon, we know how to look for the enemy's weak spot.
+; str_dale_rumor_4|Easterlings will never make it past us and our dwarven allies.
+; str_dale_rumor_5|Have you ever seen the sun rise over the Long lake? The colours used to make my heart sing. But now all I see is a red dawn. A bad omen.
+; str_dale_rumor_6|Dwarves are a bit too attached to treasures. We still don't know what to think of Thorin Oakenshield.
+; str_dale_rumor_7|The men of Rohan are our cousins and our own language is very similar to theirs.
+; str_dale_rumor_8|Esgaroth got its name from an Elven word for reeds, because of its reed banks. Did you know that?
+; str_dale_rumor_9|The dragon was a sort of a monster noone wants to see ever again.
+; str_dale_rumor_10|Our prosperity comes from trade with the Dwarves and the Elves. But it's hard to bargain with Dwarves. Very little profit there.
+; str_harad_rumor_begin|The Black Snake will strike swift and deadly.
+; str_harad_rumor_2|By the Serpent! Our beasts will trample Gondorians into the dirt.
+; str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!
+; str_harad_rumor_4|There is much gold and gems in Gondor. And even more in the lands beyond.
+; str_harad_rumor_5|We will catch many western weaklings and sacrifice them to the Serpent God.
+; str_harad_rumor_6|Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour.
+; str_harad_rumor_7|I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned.
+; str_harad_rumor_8|Warriors of Khand are fierce and fearless, but their strategy is too simple.
+; str_harad_rumor_9|I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace.
+; str_harad_rumor_10|Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant.
+; str_harad_rumor_11|In Harad we have deserts and jungles, mountains and sea. Our peoples are as diverse as our lands and as numerous as the grains of sand.
+; str_harad_rumor_12|Many knights from Harondor prefer sabres over straight blades. They're quite good for cutting down running peasants, but you need a spear or a good sword to penetrate strong armour.
+; str_harad_rumor_13|My blood brother signed up with the Karka - he's a scout now. Riders of 'The Fang' lead a dangerous life, but it is good experience for young hot-headed boys.
+; str_harad_rumor_14|Don't ever pick a fight with the Lion brotherhood! Their reputation is well earned.
+; str_harad_rumor_15|I wish we had more weapons made of black iron. Many still have to manage with bronze, some even with wooden clubs and javelins of black glass, running into battle naked.
+; str_gunda_rumor_begin|Take warm lands from men we come!
+; str_gunda_rumor_2|Sharkû promised warm caves.
+; str_gunda_rumor_3|Enough hiding in the cold mountains! Now we march into warm lands of men.
+; str_gunda_rumor_4|We saw a slimy skulker in our mountain tunnels, but could never catch him. He just disappeared when we got close.
+; str_gunda_rumor_5|The Isengarders think they're something special because the old man is equipping them.
+; str_gunda_rumor_6|We will burn the villages of men to keep us warm.
+; str_gunda_rumor_7|Manlings will feel the frostbite we will bring to them. And afterwards the fire. Ha ha ha!
+; str_gunda_rumor_8|Azog and Bolg almost defeated dwarves, elves and manlings last time. But bird-monsters and bear-men saved them. *spit*
+; str_gunda_rumor_9|Dwarf-flesh is tough and stringy. Man-flesh is better.
+; str_gunda_rumor_10|Bear-men came from the woods and ate Boldush. Bad luck for Boldush! Ha ha ha!
+; str_gunda_rumor_11|Some moved to Moria, much room there. But also Ghâsh in the deep. Best stay away!
+; str_moria_rumor_begin|When you hear drums - run and hide!
+; str_moria_rumor_2|Ghâsh is in the deep!
+; str_moria_rumor_3|Doom! Doom! Doom! Drums of the deep.
+; str_moria_rumor_4|Moria is big, but no dwarves hide in it anymore.
+; str_moria_rumor_5|Dwarves dug too deep. All the better for us. Ha ha ha!
+; str_moria_rumor_6|Many tunnels in Moria. We don't go to all.
+; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
+; str_moria_rumor_8|Dwarves will never set foot here again! Ever!
+; str_moria_rumor_9|When we gather enough troops, we will go and burn down woods of elves.
+; str_moria_rumor_10|Not much food in Moria. We're hungry. Must catch men and elves!
+; str_moria_rumor_11|Some go to the forest in the south. None come out.
+; str_umbar_rumor_begin|All the seas will belong to the black sails!
+; str_umbar_rumor_2|There's no Gondor ships left to sink, now we go plunder inland.
+; str_umbar_rumor_3|Umbar is our fate! And it will be Gondor's too.
+; str_umbar_rumor_4|Gondorians can't sail! They've got land-legs.
+; str_umbar_rumor_5|We've killed Gondorian kings in the past. Now they don't even have a king for us to kill.
+; str_umbar_rumor_6|The sneaky Gondorians burned our fleet years ago. Now it's Gondor that'll burn.
+; str_umbar_rumor_7|Nothing the sea can throw at us frightens a corsair. But we heard some disturbing rumours about abominations on land.
+; str_umbar_rumor_8|We will spill over Gondor like a giant wave and reclaim our long lost lands.
+; str_umbar_rumor_9|Haradrim don't drink rum. Did you know that? We like some, to steady the harpoon hand.
+; str_umbar_rumor_10|I saw some Variags of Khand fighting. I wouldn't want to be facing them in battle. It is a good thing they are on our side.
+; str_khand_rumor_begin|A fight is a fight, no matter how bloody. But retreat is the greatest shame!
+; str_khand_rumor_2|Our swords once drawn, must have blood!
+; str_khand_rumor_3|The ground trembles under our heavy cataphract cavalry, but our enemies tremble at the mere mention of us!
+; str_khand_rumor_4|This time we left the Wainriders behind, our attack will catch the enemies off guard.
+; str_khand_rumor_5|We are the Variags of Khand, the fiercest warriors anywhere!
+; str_khand_rumor_6|Rhun warriors are fierce too, but they fight on horseback, we rather maul our enemies on foot.
+; str_khand_rumor_7|We have fought Gondorians in the past, this time we will finish them for good!
+; str_khand_rumor_8|The West is weak and decadent. They have no warrior spirit. They will fall to our swords and axes.
+; str_khand_rumor_9|We do not fight for gold or slaves, we fight for honour and glory!
+; str_khand_rumor_10|The men of the West are arrogant, they do not know what might they are facing!
+; str_khand_rumor_11|We trade with Rhun, Mordor and Harad. And sometimes we fight them too. It is the way of our people.
+; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
+; str_good_rumor_begin|From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.
+; str_good_rumor_2|Orcs fight better at night but are weaker by day.
+; str_good_rumor_3|Urukhai are a different breed of orc that doesn't fear sunlight!
+; str_good_rumor_4|Always after a defeat and a respite, the Shadow takes another shape and grows again.
+; str_good_rumor_5|The Dead Marshes... a land defiled, diseased beyond all healing.
+; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
+; str_good_rumor_7|Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures.
+; str_good_rumor_8|The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor.
+; str_good_rumor_9|Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel.
+; str_neutral_rumor_begin|Tomorrow everything could change...
+; str_neutral_rumor_2|Dead Marshes... a place defiled and diseased.
+; str_neutral_rumor_3|The land used to be much different once.
+; str_neutral_rumor_4|Stay clear of Fangorn forest.
+; str_evil_rumor_begin|Orcs fight better at night, men fight better by day.
+; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
+; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
+; str_legendary_rumor_begin|Legend says that trees meet to talk in Fangorn.
+; str_legendary_rumor_amonhen|They say there is a special place on the Anduin, somewhere where the big statues stand.
+; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
+; str_legendary_rumor_mirkwood|Creatures other than orcs crawl around Mirkwood.
+; str_legendary_rumor_fangorn|Fangorn is a forest best avoided. Unusual things happen there.
+; str_last_rumor|I haven't heard anything interesting lately.
+; str_ent_rumor_begin|Do not be hasty now...
+; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
+; str_ent_rumor_3|The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.
+str_gondor_rank_0|ゴンドールの市民
+str_gondor_rank_1|ゴンドールの兵士
+str_gondor_rank_2|ゴンドールの曹長
+str_gondor_rank_3|ゴンドールの騎士
+str_gondor_rank_4|ゴンドールの塔の衛兵
+str_gondor_rank_5|ゴンドールの城塞の騎士
+str_gondor_rank_6|ゴンドールの執政近衛兵
+str_gondor_rank_7|ゴンドールの指揮官
+str_gondor_rank_8|ゴンドールの勇者
+str_gondor_rank_9|ゴンドールの英雄
+str_dwarf_rank_0|青ひげドワーフ
+str_dwarf_rank_1|ドワーフの鉱夫
+str_dwarf_rank_2|ドワーフの戦士
+str_dwarf_rank_3|長ひげドワーフ
+str_dwarf_rank_4|ドワーフの斧使い
+str_dwarf_rank_5|ドワーフの斧名人
+str_dwarf_rank_6|灰色ひげドワーフ
+str_dwarf_rank_7|ドワーフの指揮官
+str_dwarf_rank_8|ドワーフの族長
+str_dwarf_rank_9|館の英雄
+str_rohan_rank_0|ケオル、ローハンの市民
+str_rohan_rank_1|セイン、ローハンの使用人
+str_rohan_rank_2|レオド、ローハンの自由人
+str_rohan_rank_3|ロヒア、ローハンの馬乗り
+str_rohan_rank_4|シルドボラ、ローハンの盾持ち
+str_rohan_rank_5|スウェオルドボラ、ローハンの剣
+str_rohan_rank_6|フルムガール、ローハンの一番槍
+str_rohan_rank_7|ベアルドラエド、ローハンの相談役
+str_rohan_rank_8|エオル、ローハンの貴人
+str_rohan_rank_9|ハレス、ローハンの英雄
+str_mordor_rank_0|ミミズ
+str_mordor_rank_1|スナガ
+str_mordor_rank_2|ゴルゴロスの殺し屋
+str_mordor_rank_3|キリス・ウンゴルの見張り
+str_mordor_rank_4|ウドゥンの奴隷監視人
+str_mordor_rank_5|ドゥアサングの略奪者
+str_mordor_rank_6|黒門の衛兵
+str_mordor_rank_7|ミナス・モルグルの指揮官
+str_mordor_rank_8|バラド＝ドゥアの指揮官
+str_mordor_rank_9|人類の災難
+str_isengard_rank_0|ねずみ
+str_isengard_rank_1|スナガ
+str_isengard_rank_2|クランク回し
+str_isengard_rank_3|焚きつけ係り
+str_isengard_rank_4|ワーグの餌係り
+str_isengard_rank_5|鉄精錬工
+str_isengard_rank_6|鍛冶職人
+str_isengard_rank_7|オルサンクの指揮官
+str_isengard_rank_8|軍団長
+str_isengard_rank_9|魔法使いの白い右手
+str_lorien_rank_0|サドル、ロリエンの支持者
+str_lorien_rank_1|タウロン、ロリエンのフォレスター
+str_lorien_rank_2|ミファロン、ロリエンの灰色ハンター
+str_lorien_rank_3|シンディリス、ロリエンの灰色衛兵
+str_lorien_rank_4|サンジル、ロリエンの盾持ち
+str_lorien_rank_5|マグラジル、ロリエンの剣持ち
+str_lorien_rank_6|ティリブランノン、ロリエンの番人
+str_lorien_rank_7|グラウアチア、ロリエンのグランドマスター
+str_lorien_rank_8|ガラドヒア、ロリエンの光り輝く貴族
+str_lorien_rank_9|サルイオン、ロリエンの英雄
+str_imladris_rank_0|ハーノ、イムラドリスの兄弟
+str_imladris_rank_1|マカール、イムラドリスの戦士
+str_imladris_rank_2|シンダコルロ、イムラドリスの灰色マント
+str_imladris_rank_3|ルイネコロ、イムラドリスの青のマント
+str_imladris_rank_4|テュアマコリンド、イムラドリスの盾持ち
+str_imladris_rank_5|ランゴコリンド、イムラドリスの剣持ち
+str_imladris_rank_6|アラト、イムラドリスのチャンピオン
+str_imladris_rank_7|ヘスト、イムラドリスの指揮官
+str_imladris_rank_8|ルナンド、イムラドリスの救世主
+str_imladris_rank_9|カロ、イムラドリスの英雄
+str_woodelf_rank_0|サドル、緑森の支持者
+str_woodelf_rank_1|タウロン、緑森のフォレスター
+str_woodelf_rank_2|ヒアファロン、緑森の達人狩人
+str_woodelf_rank_3|カレンディリス、緑森の緑の番人
+str_woodelf_rank_4|サンジル、緑森の盾持ち
+str_woodelf_rank_5|マグラジル、緑森の剣持ち
+str_woodelf_rank_6|ティリブランノン、緑森の番人
+str_woodelf_rank_7|ペンゲアディア、緑森の弓名人
+str_woodelf_rank_8|アルマゴア、緑森の上級剣士
+str_woodelf_rank_9|サルイオン、緑森の英雄
+str_dale_rank_0|デールの住人
+str_dale_rank_1|デールの自由人
+str_dale_rank_2|デールの兵士
+str_dale_rank_3|デールの船乗り
+str_dale_rank_4|デールの盾持ち
+str_dale_rank_5|デールの剣持ち
+str_dale_rank_6|バルディング、デールの弓兵
+str_dale_rank_7|デールの指揮官
+str_dale_rank_8|デールの湖の主
+str_dale_rank_9|デールの英雄
+str_harad_rank_0|部族の新入り
+str_harad_rank_1|部族の大人
+str_harad_rank_2|部族の戦士
+str_harad_rank_3|ライオン殺し
+str_harad_rank_4|蛇使い
+str_harad_rank_5|ムマキル使い
+str_harad_rank_6|ブラックスネーク近衛兵
+str_harad_rank_7|ハロンドールの指揮官
+str_harad_rank_8|大砂漠の将軍
+str_harad_rank_9|金の蛇
+str_rhun_rank_0|リューンの住人
+str_rhun_rank_1|リューンの奴隷
+str_rhun_rank_2|リューンの戦士
+str_rhun_rank_3|リューンの牛戦士
+str_rhun_rank_4|リューンの盾持ち
+str_rhun_rank_5|リューンの剣持ち
+str_rhun_rank_6|リューンの騎兵
+str_rhun_rank_7|リューンの将軍
+str_rhun_rank_8|遊牧民族の長
+str_rhun_rank_9|ハムールの右腕
+str_khand_rank_0|ハンドの住人
+str_khand_rank_1|ハンドの農奴
+str_khand_rank_2|ハンドの戦士
+str_khand_rank_3|ハンドの鷹戦士
+str_khand_rank_4|ハンドの盾持ち
+str_khand_rank_5|ハンドの剣持ち
+str_khand_rank_6|ハンドの騎兵
+str_khand_rank_7|ヴァリアグの将軍
+str_khand_rank_8|ヴァリアグの族長
+str_khand_rank_9|伝説の征服王
+str_umbar_rank_0|新米水夫
+str_umbar_rank_1|甲板手伝い
+str_umbar_rank_2|水兵
+str_umbar_rank_3|もり使い
+str_umbar_rank_4|のど裂き
+str_umbar_rank_5|略奪者
+str_umbar_rank_6|水兵長
+str_umbar_rank_7|ウンバールの船長
+str_umbar_rank_8|艦隊指揮官
+str_umbar_rank_9|海の大提督
+str_moria_rank_0|うじ虫
+str_moria_rank_1|スナガ
+str_moria_rank_2|坑道のねずみ
+str_moria_rank_3|洞窟の食料調達係り
+str_moria_rank_4|鉱山の略奪者
+str_moria_rank_5|館荒らし
+str_moria_rank_6|ドワーフ殺し
+str_moria_rank_7|ゴブリンの将軍
+str_moria_rank_8|ゴブリンの族長
+str_moria_rank_9|地底の恐怖
+str_guldur_rank_0|ミミズ
+str_guldur_rank_1|スナガ
+str_guldur_rank_2|ゴルゴロスの殺し屋
+str_guldur_rank_3|キリス・ウンゴルの見張り
+str_guldur_rank_4|ウドゥンの奴隷監視人
+str_guldur_rank_5|ドゥアサングの略奪者
+str_guldur_rank_6|黒門の衛兵
+str_guldur_rank_7|ミナス・モルグルの指揮官
+str_guldur_rank_8|バラド＝ドゥアの指揮官
+str_guldur_rank_9|人類の災難
+str_gundabad_rank_0|糞
+str_gundabad_rank_1|スナガ
+str_gundabad_rank_2|坑道のねずみ
+str_gundabad_rank_3|洞窟の食料調達係り
+str_gundabad_rank_4|丘の略奪者
+str_gundabad_rank_5|山の略奪者
+str_gundabad_rank_6|ドワーフ殺し
+str_gundabad_rank_7|ワーグ騎兵団長
+str_gundabad_rank_8|偉大なるゴブリン
+str_gundabad_rank_9|北方の略奪者
+str_dunland_rank_0|仔犬
+str_dunland_rank_1|犬
+str_dunland_rank_2|軍犬
+str_dunland_rank_3|狼
+str_dunland_rank_4|大狼
+str_dunland_rank_5|ダイアウルフ
+str_dunland_rank_6|巨狼
+str_dunland_rank_7|狼の長
+str_dunland_rank_8|一族の長
+str_dunland_rank_9|フレカの復讐者
+str_beorn_rank_0|森の仔熊
+str_beorn_rank_1|森の追跡者
+str_beorn_rank_2|森の狩人
+str_beorn_rank_3|森の野伏
+str_beorn_rank_4|森の盾持ち
+str_beorn_rank_5|森の斧使い
+str_beorn_rank_6|森の熊
+str_beorn_rank_7|森の大熊
+str_beorn_rank_8|森の巨人
+str_beorn_rank_9|森の英雄
+; str_tld_introduction|TLD Introduction - you should go to Edoras.
+str_tld_erebor_dungeon|ここは死の匂いでいっぱいだ。 注意しよう。
+str_tld_spear_hit|{いてて/痛い}！
+str_fullname_region_unknown|名もなき場所、 中つ国のどこか
+str_fullname_region_pelennor|ペレンノール野、 ミナス・ティリス周辺の地、 ゴンドール領の中心地
+str_fullname_region_subfac_pelargir|レベンニンの国、 ゴンドール領
+str_fullname_region_subfac_dol_amroth|ベルファラス、 ゴンドール南部の沿岸地帯
+str_fullname_region_subfac_ethring|リングロ谷、 ゴンドール領内の渓谷
+str_fullname_region_subfac_lossarnach|ロスサールナッハの国、 またの名を花咲くアルナハ、 ゴンドール領
+str_fullname_region_subfac_pinnath_gelin|ピンナス・ゲリンの緑丘陵、 ゴンドール領
+str_fullname_region_subfac_blackroot|ラメドンの国、 ゴンドール領
+str_fullname_region_n_ithilien|北イシリアン、 ゴンドール領の極東地域
+str_fullname_region_c_ithilien|エミン・アルネン、 ミナス・ティリスからの大河をはさんだ、 イシリアン中央部の丘陵地
+str_fullname_region_s_ithilien|南イシリアン、 ゴンドール領の極東地域
+str_fullname_region_druadan_forest|ドルーアダンの森、 ドルーエダイン人のゴンドールの森
+str_fullname_region_firien_wood|フィリエン森、 囁く森、 ゴンドールのカシの木の森
+str_fullname_region_anorien|アノリアン、 太陽の地、 白の山脈とアンドゥインの大河にはさまれた渓谷
+str_fullname_region_rohan0|フォルデ、 ローハンの中心
+str_fullname_region_rohan1|イーストエムネト、 ローハン領、 騎士国
+str_fullname_region_rohan2|ウェストエムネト、 ローハン領、 騎士国
+str_fullname_region_rohan3|イーストフォルド、 ローハン領、 騎士国
+str_fullname_region_rohan4|ウェストフォルド、 ローハン領、 騎士国
+str_fullname_region_rohan5|ヘルム峡谷、 ローハンにある白の山脈の峡谷
+str_fullname_region_the_wold|ウォルド、 ローハンの騎士国北東部の一帯
+str_fullname_region_gap_of_rohan|ローハン谷、 ローハンの国境最東端、 ロヒアリムと褐色人の抗争地帯。
+str_fullname_region_entwash|エント川口、 ローハンのエント川とアンドゥイン川の合流地点
+str_fullname_region_wetwang|ニンダルヴ、 滝沢の湿地帯
+str_fullname_region_dead_marshes|死者の沼地、 かつてダゴルラドの戦いが行われた古の戦場、 いまは呪われた地
+str_fullname_region_isengard|アイゼンガルド周辺の一帯
+str_fullname_region_fangorn|ファンゴルンの森、 木々が話すと言われる。
+str_fullname_region_brown_lands|茶色の国、 エミン・ムイルと闇の森のあいだに広がる、 広大な一帯
+str_fullname_region_dagorlad|ダゴルラド、 戦場が原、 モルドールの門のまえに広がる、 木の一本も生えない荒野
+str_fullname_region_n_undeep|北の浅地、 アンドゥイン河のふたつの大きな蛇行地点のうちの、 大きいほう
+str_fullname_region_s_undeep|南の浅地、 アンドゥイン河のふたつの大きな蛇行地点のうちの、 小さいほう
+str_fullname_region_emyn_muil|エミン・ムイル、 エント川上流の岩だらけの丘陵地帯
+str_fullname_region_misty_mountains|霧ふり山脈の山すそ
+str_fullname_region_lorien|ロスロリエン、 金のマルローンの生える、 シンダール・エルフの森
+str_fullname_region_anduin_banks|アンドゥインの渓谷、 霧ふり山脈と闇の森にはさまれた
+str_fullname_region_n_mirkwood|闇の森北部の深い森、 シルヴァン・エルフの国
+str_fullname_region_s_mirkwood|奇妙な生き物たちが生息するといわれる深い森、 闇の森南部
+str_fullname_region_above_mirkwook|ロヴァニオン北部、 北にある闇の森と灰色山脈にはさまれた一帯
+str_fullname_region_grey_mountains|ドワーフの居住する、 灰色山脈の山すそ
+str_fullname_region_mordor|モルドール、 サウロンの闇の世界
+str_shortname_region_unknown|名もなき地域
+str_shortname_region_pelennor|ペレンノール野
+str_shortname_region_subfac_pelargir|レベンニンの国
+str_shortname_region_subfac_dol_amroth|ベルファラス
+str_shortname_region_subfac_ethring|リングロ谷
+str_shortname_region_subfac_lossarnach|ロスサールナッハの国
+str_shortname_region_subfac_pinnath_gelin|ピンナス・ゲリン一帯
+str_shortname_region_subfac_blackroot|ラメドンの国
+str_shortname_region_n_ithilien|北イシリアン
+str_shortname_region_c_ithilien|エミン・アルネン
+str_shortname_region_s_ithilien|南イシリアン
+str_shortname_region_druadan_forest|ドルーアダンの森
+str_shortname_region_firien_wood|フィリエン森
+str_shortname_region_anorien|アノリアン
+str_shortname_region_rohan0|フォルデ
+str_shortname_region_rohan1|イーストエムネト
+str_shortname_region_rohan2|ウェストエムネト
+str_shortname_region_rohan3|イーストフォルド
+str_shortname_region_rohan4|ウェストフォルド
+str_shortname_region_rohan5|ヘルム峡谷
+str_shortname_region_the_wold|ウォルド
+str_shortname_region_gap_of_rohan|ローハン谷
+str_shortname_region_entwash|エント川口
+str_shortname_region_wetwang|ニンダルヴ
+str_shortname_region_dead_marshes|死者の沼地
+str_shortname_region_isengard|アイゼンガルド一帯
+str_shortname_region_fangorn|ファンゴルン
+str_shortname_region_brown_lands|茶色の国
+str_shortname_region_misty_mountains|霧ふり山脈の山すそ
+str_shortname_region_lorien_|ロリエン
+str_shortname_region_anduin_banks_|アンドゥインの渓谷
+str_shortname_region_n_mirkwood_|闇の森北部
+str_shortname_region_s_mirkwood_|闇の森南部
+str_shortname_region_above_mirkwook|ロヴァニオン北部
+str_shortname_region_grey_mountains|灰色山脈の山すそ
+str_shortname_region_mordor|モルドールの地
+; str_trait_title_elf_friend|Elf Friend
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced and you may now attempt to give orders to elven armies.
+; str_trait_title_gondor_friend|Steward's Blessing
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
+; str_trait_title_rohan_friend|King's Man
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced and you may now attempt to give orders to the armies of the Riddermark.
+; str_trait_title_brigand_friend|Barbarian Champion
+; str_trait_desc_brigand_friend|You have become highly esteemed by the barbarian tribes serving Sauron as a result of your impressive displays in the arena. You may now recruit barbarians at reduced cost.
+; str_trait_title_blessed|Blessed
+; str_trait_desc_blessed|You sense that you have been blessed by powers from beyond the sea, and perhaps further away still. You do not know why this has happened or what it may mean but you are certain that it is so.
+; str_trait_title_reverent|Reverent
+; str_trait_desc_reverent|You have acquired a reputation for reverence and wisdom. Men and Elves are more likely to listen to your counsel.
+; str_trait_title_merciful|Merciful
+; str_trait_desc_merciful|You have aquired a reputation for merciful treatment towards the evil men who serve the Enemy. Many of the hardened men who serve you are conflicted by your behavior and suffer a morale penalty. Among the wise, however, your mercy is seen as evidence of high character and you recieve an influence bonus.
+; str_trait_title_bravery|Bravery
+; str_trait_desc_bravery|You have aquired a reputation for bravery in the face of great danger. Your courage is spoken of in both quiet taverns and the halls of the wise. Your deeds inspire your men and they recieve a weekly morale bonus.
+; str_trait_title_oathkeeper|Oathkeeper
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. You receive a weekly influence bonus.
+; str_trait_title_oathbreaker|Oathbreaker
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. You receive a weekly influence penalty.
+; str_trait_title_orc_pit_champion|Orc Pit Champion
+; str_trait_desc_orc_pit_champion|You have become renowned as a brutal warrior who was able to survive the cruelest of the orcish fighting contests. Such strength is both respected and feared by your black hearted followers and they now receive a weekly morale bonus.
+; str_trait_title_despoiler|Despoiler
+; str_trait_desc_despoiler|You have aquired a reputation for leaving behind wanton destruction wherever you travel. Such behavior is valued by the dark powers you serve and your receive a weekly influence bonus.
+; str_trait_title_accursed|Accursed
+; str_trait_desc_accursed|You sense that you have drawn the ire of powers beyond the sea. Your followers sense this doom as well and fear being around you. They receive a weekly morale penalty.
+; str_trait_title_stealthy|Stealthy
+; str_trait_desc_stealthy|You have developed uncanny skill in the art of stealthy infiltration. You receive a bonus to your stealth rating when undertaking such missions.
+; str_trait_title_berserker|Berserker
+; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. In battles where you are gravely wounded you will receive a health bonus once per battle. This will not restore you to full strength but may keep you going long after others would have succumbed to their wounds.
+; str_trait_title_infantry_captain|Infantry Captain
+; str_trait_desc_infantry_captain|You have developed uncanny skill in the command of infantry troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
+; str_trait_title_archer_captain|Archery Captain
+; str_trait_desc_archer_captain|You have developed uncanny skill in the command of missile troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
+; str_trait_title_cavalry_captain|Cavalry Captain
+; str_trait_desc_cavalry_captain|You have developed uncanny skill in the command of mounted troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
+; str_trait_title_command_voice|Command Voice
+; str_trait_desc_command_voice|Your experience with commanding men in the field has lent you an air of authority. The influence cost to give orders to armies in the field has been reduced.
+; str_trait_title_foe_hammer|Foe Hammer
+; str_trait_desc_foe_hammer|Having slain many of the great captains of the enemy you find that you have earned a reputation as a fearsome warrior. Troops under your command now receive a weekly morale bonus. Your experiences have also honed your skill in battle.
+; str_trait_title_battle_scarred|Battle Scars
+; str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
+; str_trait_title_fell_beast|Fell Beast
+; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_wound_head|頭部の怪我
+str_wound_chest|わき腹の怪我
+str_wound_arm|腕の怪我
+str_wound_leg|足の怪我
+str_gondor_gift0|新鮮な果物と葡萄酒
+str_gondor_gift1|鮮やかに染め上げられた布生地
+str_gondor_gift2|古代の巻物と家系図
+str_gondor_gift3|香辛料とお香
+str_gondor_gift4|オーロックスの角の戦笛
+str_dwarf_gift0|強いビールと岩塩
+str_dwarf_gift1|強化シャベルと斧
+str_dwarf_gift2|ハープとフルート
+str_dwarf_gift3|金糸の刺繍が入ったローブと宝石
+str_dwarf_gift4|見事な宝飾品
+str_rohan_gift0|蜂蜜酒とりんご酒
+str_rohan_gift1|刺繍の入ったチュニックと銀の鋲が打たれたベルト
+str_rohan_gift2|金のトルクと彫刻の入った角杯
+str_rohan_gift3|上等な馬鎧
+str_rohan_gift4|ローハン産の馬
+str_mordor_gift0|弱いピートビール
+str_mordor_gift1|スナガオイル
+str_mordor_gift2|モルドールのハエの幼虫
+str_mordor_gift3|オロドルインの黒曜石
+str_mordor_gift4|奴隷農民
+str_isengard_gift0|干し人肉
+str_isengard_gift1|黒い鉄の鎖
+str_isengard_gift2|拷問器具
+; str_isengard_gift3|Alchemist Glasswork
+; str_isengard_gift4|Saruman's Petty Rings
+; str_lorien_gift0|Seeds, Nuts and Berries
+; str_lorien_gift1|Cold Lanterns and Strong Rope
+str_lorien_gift2|レンバス
+; str_lorien_gift3|Silver Belts and Broaches
+; str_lorien_gift4|Elven Cloaks
+; str_imladris_gift0|White Bread and Herbal Butter
+; str_imladris_gift1|Crystal Glassware
+; str_imladris_gift2|Miruvor
+; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
+; str_imladris_gift4|Healing Herbs and Oitments
+; str_woodelf_gift0|Soft Animal Hides
+; str_woodelf_gift1|Arrow Heads and Fletching
+; str_woodelf_gift2|Hunting Spears
+; str_woodelf_gift3|Trained Birds of Prey
+; str_woodelf_gift4|Drinking Cups of Red Gold
+; str_dale_gift0|Semi-Precious Stones and Glass Beads
+; str_dale_gift1|Codexes of Heroic Sagas
+; str_dale_gift2|Dorwinion Wine
+; str_dale_gift3|Luxurious Furs
+; str_dale_gift4|Intricate Toys and Instruments
+; str_harad_gift0|Figs and Pomegranates
+; str_harad_gift1|Warrior Necklaces
+; str_harad_gift2|Carved Ivory
+; str_harad_gift3|Sacred Snake Wine
+; str_harad_gift4|Golden Serpent Statues
+; str_rhun_gift0|Waterskins
+; str_rhun_gift1|Tattoo Ink
+; str_rhun_gift2|Headgear with Horns and Antlers
+; str_rhun_gift3|Horsehair Whips
+; str_rhun_gift4|Horse Meat and Milk
+; str_khand_gift0|Colourful Spices
+; str_khand_gift1|Rolls of Silk
+; str_khand_gift2|Hunting Falcons
+; str_khand_gift3|Ingots of Water Steel
+; str_khand_gift4|Sacred Warrior Masks
+; str_umbar_gift0|Oysters and Sea Salt
+; str_umbar_gift1|Whalebone Combs and Fishing Hooks
+; str_umbar_gift2|Pleasure Slaves
+; str_umbar_gift3|Sailing Maps of the Southern Seas
+; str_umbar_gift4|Mysterious Numenorean Schematics
+; str_moria_gift0|Putrid Dwarven Ale
+; str_moria_gift1|Coal
+; str_moria_gift2|Luminescent Deep-Worms
+; str_moria_gift3|Black Cave Pearls
+; str_moria_gift4|Dwarven Metal Scraps
+; str_guldur_gift0|Black Liquor
+; str_guldur_gift1|Poisonous Vines of Torture
+; str_guldur_gift2|Wheeled Slave Cages
+; str_guldur_gift3|Giant Spider Eggs
+; str_guldur_gift4|Tomes of Dark Sorcery
+; str_gundabad_gift0|Spiky Bone Piercings
+; str_gundabad_gift1|Protective Warpaints
+; str_gundabad_gift2|Boiled Dwarven Lard
+; str_gundabad_gift3|Mummified Corpse Idols
+; str_gundabad_gift4|Black Wargs
+; str_dunland_gift0|Stinky Goat Cheese
+; str_dunland_gift1|Flint Sacrificial Knives
+; str_dunland_gift2|Bronze Arm Rings
+; str_dunland_gift3|Goats
+; str_dunland_gift4|Wolf Skulls and Claws
+; str_beorn_gift0|Honey Cakes and Mead
+; str_beorn_gift1|Bee Wax and Hemp Cloth
+; str_beorn_gift2|Bee Hives
+; str_beorn_gift3|Amber Necklaces
+; str_beorn_gift4|Well Trained Ponies

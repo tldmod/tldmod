@@ -172,7 +172,7 @@ menu_fangorn_killed_troop_and_player|^^^^^^Osservi nella fitta, oscura foresta.^
 menu_fangorn_killed_troop_only|^^^^^^Osservi nella fitta, oscura foresta. Le tue truppe sono terrorizzate.^^ All'improvviso, senti un grido provenire da dietro! Ti affretti a dirigerti verso l'urlo, solo per trovare alcune truppe a terra in una pozza di sangue.^^Di altre hai perso ogni traccia...
 mno_get_out|Andiamocene da questo posto maledetto!
 menu_can_capture_troll|Il troll selvaggio abbattuto continua a respirare!^^I suoi occhi malvagi continuano a fissarti pieni di dolore e rabbia.^Anche adesso che è stato abbattuto, e giace inerme nella sua pozza di sangue, ha un aspetto tremendamente pericoloso...
-; mno_killit|Dispatch it, now. Make sure it dies.
+mno_killit|Spediscilo, ora. Assicurati che muoia.
 mno_cageit1|Ingabbialo e trasportalo intorno.
 mno_cageit2|Ingabbialo insieme all'altro troll.
 mno_cheat_disabable|Disattiva le opzioni di cheat/modding.
@@ -188,10 +188,10 @@ mno_leave|Abbandona.
 menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contro {reg11} delle loro.^^La battaglia sta avendo luogo a {s3}{s4}.^^I tuoi ordini?
 mno_encounter_attack|{reg21?Caricateli:Prepariamoci ad affrontarli}.
 mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarli} senza di te.
-; mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_special_whip|Corri in avanti verso di loro rompendo il {s4}.
 mno_encounter_leave|Disimpegna.
 mno_encounter_retreat|Ritirati, lasciando alcuni soldati dietro di te per coprire la ritirata.
-; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
+menu_encounter_retreat_confirm|Come membro della compagnia con le abilità di tattica più elevate,  ({reg2}), {reg3? escogiti:{s3} escogita} un piano che permetterà a te e i tuoi uomini di scappare con le vostre vite, ma dovrai lasciare {reg4} soldati indietro per coprirvi la ritirata.
 mno_leave_behind|Procedi. Il sacrificio di questi uomini salverà molte vite.
 mno_dont_leave_behind|No. Noi non lasciamo nessuno indietro.
 menu_encounter_retreat|^^^^^Ordini a {reg4} delle tue truppe di impegnare il nemico mentre ti ritiri con il resto della compagnia.

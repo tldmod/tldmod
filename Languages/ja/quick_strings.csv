@@ -29,8 +29,8 @@ qstr_Number_of_men_knocke|気絶した兵士: {reg1}
 qstr_Number_of_men_left:_|戦闘可能な兵士: {reg1}
 qstr_Opponents_Beaten:_{r|倒した敵兵: {reg1}
 qstr_Opponents_Remaining:|敵兵残り: {reg1}
-; qstr_Gauntlet_wave:_1|Gauntlet wave: 1
-; qstr_Gauntlet_wave:_{reg1|Gauntlet wave: {reg1}
+qstr_Gauntlet_wave:_1|ガントレット人数:1名
+qstr_Gauntlet_wave:_{reg1|ガントレット:第{reg1}波
 qstr_Remain_in_retirement|このまま引退する。
 qstr_Go_back_to_the_adven|冒険に戻る。
 qstr_You_have_retired_at_|{reg5}日間に渡る冒険を終え、 あなたはレベル{reg4}で引退しました。
@@ -103,7 +103,7 @@ qstr_their|彼らの
 qstr_its|その
 qstr_[no_upkeep_costs]|[維持費なし]
 qstr_Short_of_Resource_Po|リソースポイントが足りません！！
-qstr_{s10}_will_soon_reas|{s10}が、まもなくあなたのパーティから{s12}の兵士を呼び戻します！
+qstr_{s10}_will_soon_reas|{s10}が、まもなくあなたのパーティから{s12}兵士を呼び戻します！
 qstr_Superior_orders_from|{s11}より、次の兵士の異動命令が下されました:
 qstr_{reg12}_{s10}_left_t|{reg12}名の{s10}がパーティを離れました！
 qstr_Fangorn_claimed_{reg|ファンゴルンの森にて、 あなたの部隊のうち{reg0}名が死亡、 {reg1}名が負傷しました！
@@ -119,8 +119,8 @@ qstr_+20_to_Party_Morale|パーティの士気に+20
 qstr_+1_to_Riding_Skill|乗馬スキルに+1
 qstr_+1_to_Pathfinding|経路探索スキルに+1
 qstr_+1_to_Athletics|アスレチックスキルに+1
-; qstr_Use_from|Use from
-qstr_Action_Menu|アクションメニュー
+qstr_Use_from|このアイテムは
+qstr_Action_Menu|アクションメニューから使用します
 qstr_+1_to_First_Aid|応急手当てスキルに+1
 qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
 qstr_+1_to_Wound_Treatmen|治療スキルに+1
@@ -161,14 +161,14 @@ qstr_{reg4}_wounded_{reg5|{reg4}名負傷、 {reg5}名離脱
 qstr_killed|死亡
 qstr_routed|離脱
 qstr_wounded|負傷
-qstr_None|None
-; qstr_^None|^None
+qstr_None|なし
+qstr_^None|^なし
 qstr_near_the_Great_East_|東街道のちかく、 荒れ果てたむかしの道
 qstr_near_what_is_left_of|その一部をかろうじて残す古森街道の近く、 この深い森をかつて横切っていた古のドワーフ道
 qstr_close_to_the_Hand_sh|オルサンクの塔の方角を指し示す、 手の形をしたサルマンの印の近く
-qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの城壁を望む
-qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む
-qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む
+qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの壮大な城壁を望む場所
+qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む場所
+qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む場所
 qstr_near_the_Old_Ford_wh|むかしの渡り場の近く、古森街道がアンドゥインの大河を渡るところ
 qstr_near_a_big_ford_cros|大きな浅瀬が{s15}の川を渡るところ
 qstr_near_a_small_ford_cr|小さな浅瀬が{s15}の川を渡るところ
@@ -189,12 +189,12 @@ qstr_{s2}_{reg3?was:is}_b|{s2}は{s3}で囚われの身となってい{reg3?た:
 qstr_{s2}_{reg3?was:has_b|{s2}は敵の捕虜になってい{reg3?た:る}。
 qstr_{reg3?{s2}_s_locatio|{reg3?{s2}の消息は不明だ:{s2}の行方はわからない}。
 qstr_{s6}_has_joined_your|{s6}があなたのパーティに加わりました
-qstr_elven|エルフの
-qstr_dwarven|ドワーフの
-qstr_orc|オークの
-qstr_uruk|ウルクの
-qstr_uruk_hai|ウルク＝ハイの
-qstr_trollish|トロルの
+qstr_elven|エルフ
+qstr_dwarven|ドワーフ
+qstr_orc|オーク
+qstr_uruk|ウルク
+qstr_uruk_hai|ウルク＝ハイ
+qstr_trollish|トロル
 qstr_man|人間の
 qstr_riding|乗馬
 qstr_marching|行進
@@ -242,7 +242,7 @@ qstr_Is_that_a_threat?_Be|それは脅しか？ 倒すべき敵が多すぎて�
 qstr_The_enemy_is_upon_us|敵が寄せてきたぞ！ ^
 qstr_They_are_upon_us!_^|敵がこちらに向かってくるぞ！ ^
 qstr_{playername}_and_{hi|{s18}の{playername}と 手下の烏合の衆がやって来たぞ！ ^
-qstr_ORCS!_ORCS!|オーク！ オーク！
+qstr_ORCS!_ORCS!|オークだ！ オークだ！
 qstr_ORCS!_ORCS!_Fight_fo|オーク！ オーク！ 死にたくなければ戦え！
 qstr_Elven_ghosts!|エルフの亡霊どもめ！
 qstr_Here_they_come!_Hold|来たぞ！ 陣を整えろ！
@@ -446,7 +446,7 @@ qstr_What_do_you_want_of_|ご老体、私は何をすればいいのですか？
 qstr_Just_know_that_a_Daw|夜明けがせまっているという事を知っておくのだ。 これは避けられない運命にある。 おぬしがそのときを生きて迎えられたときのために、 心の準備はしておくことだ。
 qstr_Well_met_{playername|おお、 {playername}、 {s24}よ。 おぬしに賭けたわしは間違っていなかった。 闇の力は打ち破られた。 おぬしは少なからぬ働きをしてくれた！
 qstr_Thank_you_Mithrandir|ありがとうございます、ミスランディア！
-qstr_The_wizard_Saruman_i|魔術師サルマンは消え去り、 バラド＝ドゥーアもその闇の主とともに塵あくたとなって崩れ去った！ 中つ国の民は、 この世界の清きものをすべて飲み込まんとする脅威から開放された。 敵は打ち破られ、 王は戻ったのだ！
+qstr_The_wizard_Saruman_i|魔術師サルマンは消え去り、 バラド＝ドゥアもその闇の主とともに塵あくたとなって崩れ去った！ 中つ国の民は、 この世界の清きものをすべて飲み込まんとする脅威から開放された。 敵は打ち破られ、 王は戻ったのだ！
 qstr_It_was_a_long_and_bl|多くの犠牲を払った、 長い戦いでした。 我々の親しい友人たちも、 その多くが命を落としてしまいました。
 qstr_There_is_much_to_reg|後悔や嘆き悲しむべきことは尽きず、 それにもまして、 これからは修復と再建の日々が始まる。 だが、 とりあえずは、 共に戦い抜いた友人たちと喜びを分かち合い、 この時代の最後の日々を勝利して迎えられたことを祝おうではないか。
 qstr_Bagginsssss..._Ssssh|バギンズ・・・ ホビット庄・・・
@@ -454,7 +454,7 @@ qstr_I..._don_t_know!|な・・・ なんの事だ！
 qstr_It..._beckonsssssss.|それは・・・ 手招くのだ・・・
 qstr_Treachery..._Unforgi|裏切りは・・・ 許されぬ・・・
 qstr_But_I...|{お、おれ/わ、わたし}は・・・
-qstr_Noone..._oppossssses|バラド＝ドゥーアに・・・ 刃向かう者は・・・ なんびとたりと・・・ 生かしてはおかぬ！
+qstr_Noone..._oppossssses|バラド＝ドゥアに・・・ 刃向かう者は・・・ なんびとたりと・・・ 生かしてはおかぬ！
 qstr_All..._must..._submi|すべての者は・・・ その身を・・・ ささげ・・・ そして・・・ 仕えよ・・・
 qstr_I_serve_the_Eye!|御目にお仕えいたします！
 qstr_I_shall_serve_the_Ey|御目にお仕えいたします！
@@ -530,7 +530,7 @@ qstr_New_ent_reached_batt|新手のエントが戦闘に加わりました・・
 qstr_Defenders:_infantry_|防衛軍: 歩兵部隊、突撃！！
 qstr_Defenders:_everyone_|防衛軍: 全軍突撃！！
 qstr_Attackers:_{reg1}/{r|攻撃軍: {reg1}/{reg3}/{reg5} 防衛軍: {reg0}/{reg2}/{reg4}
-; qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
+qstr_Reached_Gauntlet_wav|ガントレット第{reg1}波が来ました！
 qstr_Ballista:_out_of_amm|投石器: 弾切れです！
 qstr_Ballista:_turn_CURSO|投石器: カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
 qstr_Ballista:_out_of_ammo|投石器: 弾切れです
@@ -627,7 +627,7 @@ qstr_urukhai|ウルク＝ハイ
 qstr_haradrim|ハラドリム
 qstr_dwarf|ドワーフ
 qstr_troll|トロル
-qstr_dunedain|ドゥーネダイン
+qstr_dunedain|ドゥネダイン
 qstr_lothlorien|ロスロリエン
 qstr_rivendell|リヴェンデル
 qstr_mirkwood|闇の森
@@ -722,7 +722,7 @@ qstr_Enraged_by_the_death|{s4}の死に大いに怒りを覚えたあなたは�
 qstr_flooded._Somebody_or|水没している。 何者かがアイゼンの堤防を破壊したに違いない。
 qstr_destroyed._Only_smol|破壊されている。 火のくすぶる廃墟だけが残っている。
 qstr_^^^You_lost_your_fig|^^^あなたは反乱兵に倒されました！ ^どうやらオークたちは新しい指揮官を得たようです。
-qstr_^^^You_have_slain_th|^^^あなたが反乱兵を血祭りにあげると、他のオークどもは素早く持ち場に戻りました。 ^ 虫けらどもも、 これでしばらくはおとなしくなるでしょう。
+qstr_^^^You_have_slain_th|^^^あなたが反乱兵を血祭りにあげると、 他のオークどもは素早く持ち場に戻りました。 ^ 虫けらどもも、 これでしばらくはおとなしくなるでしょう。
 qstr_You_cover_up_your_tr|あなたは自分の足跡を消し、 さらに進んでいきました。
 qstr_Breaking_camp...|キャンプを撤収しました・・・
 qstr_You_have_left_{s1}.|{s1}を後にしました。
@@ -742,8 +742,8 @@ qstr_{s1}_is_scouted.|{s1}の偵察を完了しました。
 qstr_The_Age_of_Men_has_f|人類の時代は、 ついに終わりを告げました。 これよりふたつの塔が残った戦力を結集し、中つ国の覇権を争います！
 qstr_The_War_of_the_Two_T|ふたつの塔の戦いが始まりました！
 qstr_{s2}_was_defeated!|{s2}が敗れました！
-qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！ {s22}は現在、 {s23}です。
-qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！ {s22}は現在、 {s23}です。
+qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！ {s22}は現在、{s23}です。
+qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！ {s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
 qstr_Guardians_of_{s6}|{s6}の守護者
 qstr_Guard_Legion_of_{s6}|{s6}近衛軍団
@@ -819,16 +819,16 @@ qstr_Treebeard_wants_you_|ファンゴルンの森で木を伐採している �
 qstr_Something_wrong_not_|何かがおかしい、 偵察隊を編成するための　兵が足りない
 qstr_my_home_town|我が本拠地
 qstr_I_am_in_perfect_heal|体調はとても良い。
-qstr_I_am_suffering_from_|私は{s1}。
-qstr_I_am_suffering_from_{|私は{s1}おまけに {s2}。
-qstr_I_am_suffering_from_{s|私は{s1}、 {s2}おまけに {s3}。
-qstr_I_am_suffering_from_{s1|私は{s1}、 {s2}、 {s3}おまけに {s4}。
-qstr_I_don_t_have_any_ser|心配してくれてありがとう、 特に怪我はしていない。
-qstr_Good_day_to_you.|やあ、こんにちわ。
+qstr_I_am_suffering_from_|私は{s1}に悩まされている。
+qstr_I_am_suffering_from_{|私は{s1}、それと {s2}に悩まされている。
+qstr_I_am_suffering_from_{s|私は{s1}、 {s2}、それと {s3}に悩まされている。
+qstr_I_am_suffering_from_{s1|私は{s1}、 {s2}、 {s3}、それと {s4}に悩まされている。
+qstr_I_don_t_have_any_ser|ありがとう、 特に怪我はしていない。
+qstr_Good_day_to_you.|やあ、ごきげんよう。
 qstr_Ah_it_s_you_again._G|やあ、きみか。 じゃあまた。
 qstr_My_apologies_if_I_wa|このあいだは失礼があったら謝りたい。 もう一度きみの身の上話を聞かせてくれないか？
 qstr_I_was_reconsidering_|このあいだの君との話を思い出していたんだ。 もう一度きみの身の上話を聞かせてくれないか？
-qstr_Greetings_{s23}_{s24|こんにちわ、 {s23}、 {s24}。
+qstr_Greetings_{s23}_{s24|ごきげんよう、 {s23}、 {s24}。
 qstr_Greetings_{s23}.|ごきげんよう {s23}。
 qstr_So_you_are_{s23}._I_|そうか、おぬしが{s23}か。 {s25}に加勢をしたという話を聞く限り、 わが友軍と考えるべきだろうな。
 qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事を いとわない者はいないか。
@@ -930,7 +930,7 @@ qstr_We_have_reports_that_a|敵部隊が{s13}に集結している可能性が�
 qstr_My_spies_tell_me_of_|スパイからの報告によると、 {s13}に大規模な戦士の一団が集結しているらしい。 やつらなど我が軍の敵ではないが、 敵勢の数くらいは把握しておかねばならん。 おぬしには充分な距離まで{s13}に接近し、 できるかぎりの情報を収集してもらいたい。
 qstr_{s9}_asked_you_to_sco|{s9}より、 {s13}近辺を偵察するよう依頼された。
 qstr_We_have_reports_of_s|{s13}付近で敵が活動中との報告を受けた。 我々の偵察隊は、 具体的に何が行われているのかを 確認できる位置まで接近できていないようだ。 おぬしには偵察隊を編成し、 {s13}に充分接近した位置から その偵察隊を放ってもらいたい。
-qstr_My_spies_tell_me_the|{13}付近で敵が活動中との報告をスパイから受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、 念を押すんだ！
+qstr_My_spies_tell_me_the|{s13}付近で敵が活動中との報告をスパイから受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、 念を押すんだ！
 qstr_{s9}_asked_you_to_di|{s9}より、 {s13}近辺に偵察隊を放つよう依頼された。^少なくとも{s14}を1名含む、 {s15}の兵7名を連れて {s13}近くまで移動し、 {s14}に話かけて偵察隊を放とう。
 qstr_We_need_to_take_the_|{playername}、 戦いはこちらから仕掛けなくてはならない。 現時点で考えられるのは、 敵の偵察隊と連絡網を叩くことだ。 おぬしには{s13}を{reg1}部隊、 潰してもらいたい。 これで我が軍が主導権を奪い返すことができる。
 qstr_We_need_to_grind_dow|{playername}、 我々は役立たずの敵勢を 粉々にすり潰してやらねばならん。 やつらの偵察隊や補給隊どもが 我々の目と鼻の先をうろうろしておるのは気にさわる。 おぬしには{s13}を{reg1}部隊潰し、 やつらに恐怖というものを教えてやってもらいたい。
@@ -940,14 +940,14 @@ qstr_{s9}_asked_you_to_fr|{s9}より、 {s13}郊外で暴れるトロルの脅�
 ; qstr_Well_done_{sir/madam|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in Calradia you need fear.
 ; qstr_We_are_at_your_servi|We are at your service, {sir/madam}. Point us in the direction of those who need hurting, and we'll do the rest.
 ; qstr_You_will_not_be_diss|You will not be dissapointed {sir/madam}. You will not find better warriors in all Calradia.
-; qstr_What_an_amazing_feat|What an amazing feat of arms!
-; qstr_Well_done!|Well done!
-; qstr_Nice_legwork.|Nice legwork.
-; qstr_Heh.|Heh.
-; qstr_Good_moves_but_you_m|Good moves, but you may still need some work to do.
-; qstr_More_than_half_of_th|More than half of the opponents, not bad.
-; qstr_You_ll_need_to_try_h|You'll need to try harder than that.
-; qstr_Well..._better_here_|Well... better here than in combat, eh?
+qstr_What_an_amazing_feat|なんとも見事な武器さばき！
+qstr_Well_done!|上出来と言えますな！
+qstr_Nice_legwork.|足さばきは達者のようで。
+qstr_Heh.|フン。
+qstr_Good_moves_but_you_m|なかなかすじがよろしいが、 さらなる稽古に励む必要がありますな。
+qstr_More_than_half_of_th|対戦相手の半数以上は倒しましたな。 悪くない。
+qstr_You_ll_need_to_try_h|あなたなら、もっともっと出来るはずですよ。
+qstr_Well..._better_here_|まあ・・・ やっと訓練が終わって、やれやれ、 という感じでしょうかね？
 qstr_town|町
 qstr_village|村
 qstr_The_{s9}_of_{s13}_ha|{s13}の{s9}より、 周辺をうろつく部族オークどもを一掃するよう、 依頼された。
@@ -975,7 +975,7 @@ qstr_Watch_where_you_re_g|うろちょろするな、 この虫けらめが！
 qstr_I_don_t_like_your_fa|気にいらん顔つきだな！ 直してやろう。
 qstr_What_are_you_looking|おい、何を見てるんだ？ ああ？
 qstr_the_white_hand|白の手
-qstr_the_lidless_eye|瞼なき御眼
+qstr_the_lidless_eye|瞼なき御目
 qstr_I_have_some_of_your_|そちらの兵を数名、 預かっている。 何名かを そちらへまわそう。
 qstr_Some_of_your_stinky_|そちらの兵を数名、 預かっている。 何名かを そちらへまわそう。
 qstr_{s4}_It_is_always_go|{s4} 同胞に出会うのは、 いつでもいいものだ。

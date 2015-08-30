@@ -150,8 +150,8 @@ mno_strat_tweaks_siege_reqs|Требование к силе для осады: 
 mno_strat_tweaks_siege_relax_rate|Уменьшить требование к силе для осады: {reg1}
 mno_strat_tweaks_regen_rate|Скорость восстановления силы: {s7}
 mno_strat_tweaks_siege_regen_limit|Фракция не восстанавливается ниже: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_influence_gain_rate|Прирост влияния: {s7}
+mno_strat_tweaks_rank_gain_rate|Прирост ранга: {s7}
 mno_strat_tweaks_back|Вернуться в меню настроек.
 menu_camp_action|^^^^^^^^^ Который объект?
 mno_camp_customize_defilement|Настроить износ брони

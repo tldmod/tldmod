@@ -39,14 +39,14 @@ str_reg1_denars|{reg1} Pkt Prestiżu
 ; str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Feb)
 ; str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Mar)
 str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1 (Apr)}
-; str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (May)
-; str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (Jun)
-; str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (Jul)
-; str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (Aug)
-; str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (Sep)
-; str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (Oct)
-; str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (Nov)
-; str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (Dec)
+str_may_reg1_reg2|Maj
+str_june_reg1_reg2|Czerwiec
+str_july_reg1_reg2|Lipiec
+str_august_reg1_reg2|Sierpień
+str_september_reg1_reg2|Wrzesień
+str_october_reg1_reg2|str_pazdziernik_reg1_reg2
+str_november_reg1_reg2|str_listopad_reg1_reg2
+str_december_reg1_reg2|str_grudzien_reg1_reg2
 str_calendar_spec_day_1|T.A.{reg2}, Yestarë (Dzień Pierwszy)
 str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Dzień Wiosny)
 str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Połowa Lata)
@@ -290,7 +290,7 @@ str_content|zadowala mnie
 str_concerned|obawiam się o
 str_not_happy|nie całkiem podoba mi się
 str_miserable|zupełnie przeraża mnie
-; str_morale_reg1| Morale: {reg1}
+str_morale_reg1|Morale: {reg1}
 str_bar_enthusiastic|                   Pełnia entuzjazmu
 str_bar_content|              Zadowolenie
 str_bar_weary|          Zmęczenie
@@ -298,31 +298,31 @@ str_bar_disgruntled|     Niezadowolenie
 str_bar_miserable|  Przygnębienie
 str_here_plus_space|tutaj 
 str_npc1_intro|Pozdrawiam Cię wojowniku i witaj w Henneth Annûn.
-; str_npc2_intro|Hail, visitor! Might I ask what is your business here?
-; str_npc3_intro|Ho! Keep the racket down if you please, traveller.
+str_npc2_intro|Witaj!  Mogę zapytać cię o cel twojej wizyty?
+str_npc3_intro|Hola! Trzymaj broń w pochwie podróżniku.
 str_npc4_intro|Witam Cię wojowniku w Meduseld!
-; str_npc5_intro|Hail {playername}. Mae govannen!
-; str_npc6_intro|Leave me alone, stranger, I do not wish to speak to you.
-; str_npc7_intro|Kíli, son of Dwalin, at your service!
-; str_npc8_intro|Welcome to Dale, traveller! How can I help you?
-; str_npc9_intro|Ssh! If you just as wave to the guards, I'll slice out your gizzard and feed it to the wargs!
-; str_npc10_intro|You!
+str_npc5_intro|Witaj {playername}. Mae govannen!
+str_npc6_intro|Zostaw mnie, nie chcę z tobą rozmawiać.
+str_npc7_intro|Kíli, syn Dwalina, gotowy do służby!
+str_npc8_intro|Witaj w Dale podróżniku! Mogę ci w czymś pomóc?
+str_npc9_intro|Cisza! Jeżeli zawołasz strażników, wypruję ci flaki i nakarmie nimi wargi!
+str_npc10_intro|Ty!
 str_npc11_intro|You!
 str_npc12_intro|You!
-str_npc13_intro|You!
+str_npc13_intro|Zatrzymaj się! Co niesiesz do namiotu wodza?
 str_npc14_intro|You!
 str_npc15_intro|You!
 str_npc16_intro|You!
 ; str_npc17_intro|Hey. Fancy them woods there?
-; str_npc1_intro_response_1|Hail, Master Tracker. How fare the Rangers of the South?
-; str_npc2_intro_response_1|My business is Gondor's business, and who are you?
-; str_npc3_intro_response_1|And a good day to you too, is there something amiss?
-; str_npc4_intro_response_1|Greetings, my Lady. With whom do I have the honour to speak?
-; str_npc5_intro_response_1|Hail Elf-lord! It's a great honour to meet you.
-; str_npc6_intro_response_1|Is this how the Silvan Elves greet their guests?
-; str_npc7_intro_response_1|{playername} at your service. How fare the Durin's folk?
-; str_npc8_intro_response_1|Greetings. I was wondering if there are any volunteers here to join us in our travels.
-; str_npc9_intro_response_1|Hold your threats, Uruk, before it comes to blows - I am not a snitch.
+str_npc1_intro_response_1|Witaj, Tropicielu. Jak miewają się Strażnicy z Południa?
+str_npc2_intro_response_1|Mój interes jest interesem Gondoru, kim ty jesteś?
+str_npc3_intro_response_1|Również cię pozdrawia, czy wydarzyło się coś niepokojącego?
+str_npc4_intro_response_1|Witaj, moja Pani. Z kim mam honor rozmawiać?
+str_npc5_intro_response_1|Witaj elfi Władco! To wielki zaszczyt móc cię spotkać
+str_npc6_intro_response_1|Czy to tak Quendi witają swoich gości?
+str_npc7_intro_response_1|{playername} do usług. Jak miewa się lud Durina?
+str_npc8_intro_response_1|Witajcie. Czy są tutaj jacyś ochotnicy, którzy zechcieliby dołączyć do naszej wyprawy?
+str_npc9_intro_response_1|Powstrzymaj swój język, Uruku, zanim dojdzie do bójki- nie jestem kapusiem.
 str_npc10_intro_response_1|Kim jesteś?
 str_npc11_intro_response_1|Kim jesteś?
 str_npc12_intro_response_1|Kim jesteś?
@@ -330,17 +330,17 @@ str_npc13_intro_response_1|Kim jesteś?
 str_npc14_intro_response_1|Kim jesteś?
 str_npc15_intro_response_1|Who are you?
 str_npc16_intro_response_1|Kim jesteś?
-; str_npc17_intro_response_1|Mirkwood is a magnificent forest. Who are you? Do you know much about the woods?
-; str_npc1_intro_response_2|Never mind, I fear caves do not make a pleasant place for conversation.
-; str_npc2_intro_response_2|Never mind, I don't have time to speak to guards.
-; str_npc3_intro_response_2|Never mind, I'll make 'racket' elsewhere.
+str_npc17_intro_response_1|Mroczna Puszcza to wspaniała puszcza. Kim jesteś? Masz wiedzę o takich lasach?
+str_npc1_intro_response_2|Nieważne, obawiam się, że jaskinie nie są miłymi miejscami na rozmowę.
+str_npc2_intro_response_2|Nieważne, nie mam czasu na rozmowę ze strażą.
+str_npc3_intro_response_2|Nieważne, zrobię "rakiętę" gdzie indziej.
 ; str_npc4_intro_response_2|Excuse me, I have urgent matters elsewhere.
 ; str_npc5_intro_response_2|Excuse me, I have less important people to talk to.
-; str_npc6_intro_response_2|The feeling is mutual. Goodbye.
-; str_npc7_intro_response_2|Never mind, I need some fresh air.
+str_npc6_intro_response_2|Odwzajemniam to odczucie. Żegnam.
+str_npc7_intro_response_2|Nieważne, potrzebuję trochę świeżego powietrza.
 ; str_npc8_intro_response_2|Never mind, we are merely sight-seeing.
 ; str_npc9_intro_response_2|I'll just be on my way then, or my sword arm will start to itch.
-; str_npc10_intro_response_2|[Ignore and leave]
+str_npc10_intro_response_2|[Zignoruj i odejdź]
 str_npc11_intro_response_2|[Ignore and leave]
 str_npc12_intro_response_2|[Ignore and leave]
 str_npc13_intro_response_2|[Ignore and leave]
@@ -357,7 +357,7 @@ str_npc16_intro_response_2|[Ignore and leave]
 ; str_npc7_backstory_a|Polite of you to ask, {playername}. We are fighting off incursions from Easterlings and Gundabad orcs, but so far nothing we and our Dale allies can't handle.
 ; str_npc8_backstory_a|I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills.
 str_npc9_backstory_a|Good for you! They call me Gulm. I have gutted my sergeant and his snagas now hunt for me.^The worthless maggot had it coming. Once we got ambushed by a manling patrol and he lost it - 'fall back' he screams and runs. Gulm and a few others stood there and broke their horses as they came charging. Then bludgeoned the yellow-haired manlings into paste, har-har! If it wasn't for us, we would be worm food.
-; str_npc10_backstory_a|I am Durgash!
+str_npc10_backstory_a|I jestem Durgash
 str_npc11_backstory_a|They call me Ufthak! My unit is dead and gone to worms. If you need a warrior, it is me.
 str_npc12_backstory_a|I am Gorbag!
 str_npc13_backstory_a|I am Lykyada!

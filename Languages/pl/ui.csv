@@ -1,31 +1,31 @@
-; ui_at_learning_limit|(at learning limit for this race)
+ui_at_learning_limit|(w limicie nauki dla tego wyścigu)
 ui_not_enough_skill_points_to_learn|(Niewystarczająca ilość punktów umiejętności aby się nauczyć)
-; ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
-; ui_retreated_battle|%s has been routed.
+ui_not_enough_attributetype_to_learn_this_skill|(Za mało %s, aby nauczyć się tej umiejętności)
+ui_explanation_agility|Zwinność: Za każdy przyznany punkt dostajesz pięć punktów broni i zwiększoną szybkość ataku o 0,5%. Poniższe umiejętności nie mogą być wyższe niż 1/3 punktów zwinności: Mistrzostwo broni, Tarcza, Atletyka, Jeździectwo, Łucznictwo Konne, Łupienie.
+ui_retreated_battle|%s zostało skierowanych.
 ui_riding_skill_not_adequate_to_mount|(Umiejętność jeździecka za niska)
 ui_camp|Akcja 
-; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
-; ui_you_dont_have_value|Don't have: %s
-; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+ui_tutorial_inventory|W The Last Days potrzebujesz Punktów Zasobów do zdobycia sprzętu. Punkty Zasobów są zależne od możliwości dostarczania ich przez frakcje, oraz jak duże masz prawo do używania zasobów frakcji.
+ui_you_dont_have_value|Nie masz: %s
+ui_merchant_cant_afford_value|%s: Sprzedajesz nam więcej niż możemy zapłacić! Może zachowasz coś sobie? (Sprzedajesz dobra warte %s, kiedy możemy zapłacić tylko %s)
 ui_merchant_pay_whatever|Nie potrzebuje żadnego z nich, więc zatrzymaj go.
 ui_horse|Dosiądź
-; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
-; ui_reclaim_price|to reclaim: -%d Res.P.
-; ui_buying_price|to claim: -%d Res.P.
+ui_reclaim_your_sold_goods|Zabierz z powrotem sprzedawane przedmioty, przed kupieniem tego!
+ui_return_your_bought_goods|Oddaj kupowane przedmioty, przed sprzedażą tego!
+ui_return_price|jeżeli zwrócono: +%d Res.P.
+ui_sell_price|jeżeli dano: +%d Res.P.
+ui_reclaim_price|do odzyskania: -%d Res.P.
+ui_buying_price|Do zajęcia: -%d Res.P.
 ui_notification_riding_skill_not_enough|Twoje umiejętności jeździeckie nie są dostatecznie wysokie, aby móc dosiąść go.
-; ui_notification_payment_value|Consuming %s
-; ui_notification_payment_receive_value|Gaining %s
-; ui_weekly_cost_value|Upkeep: %s
+ui_notification_payment_value|Zjedzono %s
+ui_notification_payment_receive_value|Zyskano %s
+ui_weekly_cost_value|Utrzymanie: %s
 ui_sell|Daj
 ui_hire|Werbunek
-; ui_notification_cant_hire|(not enough R.P. to enlist)
-; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_notification_cant_hire|(Masz za mało R.P, aby rekrutować)
+ui_joining_cost_weekly_wage|Werbunek: %d Res.Pts. -- Utrzymanie: %d Res.Pts.
 ui_weekly_wage|Koszty utrzymania: %d Res.P
-; ui_price|Value: %d Res.P.
+ui_price|Wartość: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Nie można przeładować rej broni podczas jazdy wierzchowcem. 
 ui_delivered_number_damage_to_horse|Wierzchowiec otrzymał %d obrażeń.
 ui_horse_charged_for_number_damage|Wierzchowiec szarżując zadał %d obrażeń.

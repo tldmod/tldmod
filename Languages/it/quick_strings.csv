@@ -152,7 +152,7 @@ qstr_Move_here|Vai qui
 qstr_View_notes|Controlla le note
 qstr_nothing|Niente
 qstr_Good|Bene
-; qstr_Med|Med
+qstr_Med|Medio
 qstr_Bad|Cattivo
 qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
@@ -341,16 +341,16 @@ qstr_Very_Rich|Molto ricco
 qstr_{s50}_Caves|{s50} Caverne
 qstr_{s50}_Mines|{s50} Miniere
 qstr_{s50}_Woods|{s50} Boschi
-; qstr_{s4}_looks_upset.|{s4} looks upset.
+qstr_{s4}_looks_upset.|{s4} sembra turbato
 qstr_your_party|la tua compagnia
-; qstr_{reg0?One_of_your_pr|{reg0?One of your prisoners, :}{s1} of {s3} has escaped from captivity!
-; qstr_You_brought_{reg3}_h|You brought {reg3} heads of cattle to {s1}.
+qstr_{reg0?One_of_your_pr|{reg0?Uno dei tuoi prigionieri, :}{s1} di {s3} è fuggito dalla prigionia!
+qstr_You_brought_{reg3}_h|Hai comprato {reg3} capi di bestiame a {s1}.
 ; qstr_Log_entry_{reg3}:_ty|Log entry {reg3}: type {reg4}
 ; qstr_Center:_{s4}|Center: {s4}
 ; qstr_Troop:_{s4}|Troop: {s4}
 ; qstr_Lord:_{s4}|Lord: {s4}
-; qstr_Ally_party_is_presen|Ally party is present
-; qstr_{s4}_is_present_at_e|{s4} is present at event
+qstr_Ally_party_is_presen|Compagnia alleata è presente
+qstr_{s4}_is_present_at_e|{s4} è presente all'evento
 ; qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to troop object = {reg7}
 ; qstr_Event_#{reg5}_type_{r|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to center object faction = {reg7}
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
@@ -359,11 +359,11 @@ qstr_your_party|la tua compagnia
 ; qstr_Elapsed_hours:_{reg7|Elapsed hours: {reg7}
 ; qstr_Reputation_type:_{s1|Reputation type: {s15}
 ; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
-; qstr_A_new_location_is_no|A new location is now available on the map!
-; qstr_New_trait_gained:_{s|New trait gained: {s5}.
-; qstr_Gained_permanent_+1_|Gained permanent +1 to Strength.
-; qstr_Gained_permanent_+1_t|Gained permanent +1 to Agility.
-; qstr_Gained_permanent_+1_to|Gained permanent +1 to Charisma.
+qstr_A_new_location_is_no|Una nuova posizione è ora disponibile sulla mappa!
+qstr_New_trait_gained:_{s|Nuovo tratto acquisito: {s5}.
+qstr_Gained_permanent_+1_|Guadagnato permanentemente +1 alla Forza
+qstr_Gained_permanent_+1_t|Guadagnato permanentemente +1 all'Agilità
+qstr_Gained_permanent_+1_to|Guadagnato permanentemente +1 al Carisma
 ; qstr_Gained_permanent_+20|Gained permanent +20 to weapon proficiencies.
 ; qstr_Gained_permanent_+2_|Gained permanent +2 to Strength.
 ; qstr_Gained_permanent_+2_t|Gained permanent +2 to Charisma.
@@ -540,10 +540,10 @@ qstr_THREE.._TWO..._ONE..|TRE... DUE... UNO... COMBATTERE!
 qstr_Leave_the_place_in_s|Allontanarsi dall'area in silenzio?
 qstr_Leave_scene?|Abbandonare l'area?
 ; qstr_Trace_back_your_step|Trace back your steps and go back in the open now?
-; qstr_There_is_no_way_out!|There is no way out! Surrender to orcs?
+qstr_There_is_no_way_out!|Non c'è via di fuga! Ti arrendi agli orchi?
 ; qstr_Stealth_mini_game_tu|Stealth mini-game tutorial: There are two alarm levels. Level 1 is set off by the guards seeing a dead body or by them spotting you. Level 2 is set off by the guards spotting you when level 1 is already active. Level two is dangerous because guards will continue to arrive. You can avoid being spotted by staying hidden. To hid simply move behind various bits of cover.
 qstr_You_are_now_hidden.|Sei nascosto ora.
-; qstr_You_move_out_of_hidi|You move out of hiding.
+qstr_You_move_out_of_hidi|Esci dal tuo nascondiglio
 qstr_The_guards_have_spot|Le guardie hanno scoperto un cadavere!
 qstr_Alarm_Level_is_now_a|Il livello di allarme è ora a 1!
 qstr_Alarm_Level_is_now_at|Il livello di allarme è ora a 0!
@@ -551,15 +551,15 @@ qstr_The_guards_have_spott|Le guardie ti hanno scoperto!
 qstr_Alarm_Level_is_now_at_|Il livello di allarme è ora a 2!
 ; qstr_The_sorcerer_has_fle|The sorcerer has fled!
 ; qstr_Report_this_ill_news|Report this ill news to the Lady at once.
-; qstr_The_sorcerer_is_flee|The sorcerer is fleeing! Kill him!
-; qstr_The_sorcerer_is_dead|The sorcerer is dead!
+qstr_The_sorcerer_is_flee|Lo stregone sta scappando! Uccidilo!
+qstr_The_sorcerer_is_dead|Lo stregone è morto!
 qstr_The_battle_is_won!|La battaglia è vinta!
 ; qstr_Look_at_my_over_the_|Look at my over-the-shoulder shot, {playername}! I'm so beautiful from a distance!
 ; qstr_You_wish_old_man_my_|You wish, old man, my over-the-shoulder view is much prettier!
 ; qstr_You_should_really_se|You should really see Steward Denetor's Facebook photos, he's amazing!
-; qstr_Press_Space_to_conti|Press Space to continue...
+qstr_Press_Space_to_conti|Premi spazio per continuare
 qstr_{s24}__{reg13}_|{s24} ({reg13})
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})
+qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (with {s16})
 ; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
@@ -573,7 +573,7 @@ qstr_Raiding_{s11}|Razziando {s11}
 qstr_Attacking_enemies_ar|Attaccando i nemici attorno {s11}
 qstr_No_one|Nessuno.
 ; qstr_{s9}{s10}^Current_st|{s9}{s10}^Current state: {s11}^Marshall: {s12}^Since the last offensive: {reg1} hours^Offensive maximum followers: {reg2}^^
-; qstr_Selected_faction_is:|Selected faction is: {s10}^^{s9}
+qstr_Selected_faction_is:|La fazione selezionata è: {s10}^^{s9}
 qstr_You_are_in_perfect_h|Sei in perfetta salute.
 ; qstr_You_are_suffering_fr|You are suffering from {s1}.
 ; qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
@@ -590,7 +590,7 @@ qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 ; qstr_Traits_gained:^{s2}|Traits gained:^{s2}
 ; qstr_^^You_are_{s17}.|^^You are {s17}.
-; qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
+qstr_Assassins_in_the_cam|Assassini nel campo, difenditi!
 ; qstr_Ally_party_size:_{re|Ally party size: {reg1}
 ; qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
 ; qstr_Party_count:_{reg0}|Party count: {reg0}
@@ -600,14 +600,14 @@ qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 ; qstr_Attacking_enemy_part|Attacking enemy party {s11}
 ; qstr_Unknown_{reg3}_|Unknown({reg3})
 qstr_ON|ON
-; qstr_OFF__cheat_|OFF (cheat)
+qstr_OFF__cheat_|OFF (cheat)
 qstr_OFF|OFF
 ; qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
 ; qstr_{reg0}__could_possib|{reg0} (could possibly cause save crashes)
 qstr_Normal|Normale
-; qstr_Defender_only|Defender only
+qstr_Defender_only|Solo per i difensori
 ; qstr_Halved|Halved
-; qstr_Battles_only|Battles only
+qstr_Battles_only|Solo per le battaglie
 ; qstr_Doubled|Doubled
 ; qstr_Tripled|Tripled
 ; qstr_Quadrupled|Quadrupled
@@ -615,7 +615,7 @@ qstr_Normal|Normale
 ; qstr_Fangorn_search:_fail|Fangorn search: failed.
 ; qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
 ; qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
-qstr_Here_you_are.|Sei qui.
+qstr_Here_you_are.|Eccoti.
 ; qstr_Player_was_moved_to_|Player was moved to {s10}.
 ; qstr_neutral_whereabouts|neutral whereabouts
 ; qstr_any|any
@@ -631,25 +631,25 @@ qstr_troll|troll
 ; qstr_lothlorien|lothlorien
 ; qstr_rivendell|rivendell
 ; qstr_mirkwood|mirkwood
-; qstr_evil_man|evil man
+qstr_evil_man|Uomo malvagio
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
-; qstr_Regular_troops_only|Regular troops only
-; qstr_Heroes_only|Heroes only
+qstr_Regular_troops_only|Solo per le truppe regolari
+qstr_Heroes_only|Solo per gli eroi
 ; qstr_Regulars_and_Heroes|Regulars and Heroes
-; qstr_HP_lost_from_poisoni|HP lost from poisoning.
+qstr_HP_lost_from_poisoni|HP persi per il veleno
 qstr__{s17}.|, {s17}.
 ; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
 ; qstr_You_are_attacking_a_|You are attacking a group of {s1}.
-; qstr_The_battle_against_t|The battle against the group of {s1} continues.
+qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
 ; qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
 ; qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
 qstr_You_were_victorious!|Hai vinto!
 ; qstr_The_battle_was_lost.|The battle was lost. Your forces were utterly crushed.
-; qstr_Your_companions_carr|Your companions carry you away from the fighting.
+qstr_Your_companions_carr|I tuoi compagni ti trasportano via dal combattimento
 qstr_You_have_defeated_th|Hai sconfitto il nemico.
-; qstr_You_have_retreated_f|You have retreated from the fight.
-; qstr_^^Ally_Casualties:{s|^^Ally Casualties:{s0}
-; qstr_News_of_your_victory|News of your victory against {s4} reach {s3}.
+qstr_You_have_retreated_f|Ti sei ritirato dalla battaglia
+qstr_^^Ally_Casualties:{s|^^Perdite alleate:{s0}
+qstr_News_of_your_victory|Le notizie della tua vittoria contro {s4} giungono a {s3}
 ; qstr_{s3}_witnesses_your_|{s3} witnesses your victory against {s4}.
 ; qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
 ; qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
@@ -657,105 +657,105 @@ qstr_You_have_defeated_th|Hai sconfitto il nemico.
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
 ; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
-; qstr_Some_of_your_tendons|Some of your tendons have been damaged in the battle. You lose 1 strength.
+qstr_Some_of_your_tendons|Parte dei tuoi tendini sono stati danneggiati durante la battaglia. Perdi 1 punto in Forza
 ; qstr_You_took_a_nasty_wou|You took a nasty wound which will cause you to limp slightly even after it heals. Your lose 1 agility.
 ; qstr_You_have_trouble_thi|You have trouble thinking straight after the battle, perhaps from a particularly hard hit to your head, and frequent headaches now plague your existence. Your intelligence is reduced by 1.
 ; qstr_Perhaps_I_m_getting_|Perhaps I'm getting unlucky...
-; qstr_Retirement_is_starti|Retirement is starting to sound better and better.
+qstr_Retirement_is_starti|Il ritiro comincia a suonarti sempre meglio.
 ; qstr_No_matter!_I_will_pe|No matter! I will persevere!
-; qstr_What_did_I_do_to_des|What did I do to deserve this?
-; qstr_I_suppose_it_ll_make|I suppose it'll make for a good story, at least...
+qstr_What_did_I_do_to_des|Cosa ho fatto per meritarmi questo?
+qstr_I_suppose_it_ll_make|Suppongo che ne faccia una buona storia, almeno...
 qstr__{s17}|, {s17}
-; qstr_You_retreated_from_b|You retreated from battle.
-; qstr_{s9}_wants_you_to_fo|{s9} wants you to follow his army until further notice.
+qstr_You_retreated_from_b|Ti sei ritirato dalla battaglia.
+qstr_{s9}_wants_you_to_fo|{s9} vuole che segua la sua armata fino a notizie future
 qstr_{s8}_of_{s9}|{s8} di {s9}
-; qstr__Your_own_banner_fli| Your own banner flies over the castle gate.
-; qstr__You_see_the_banner_| You see the banner of {s7} over the castle gate.
-; qstr__This_castle_seems_t| This castle seems to belong to no one.
-; qstr__Your_own_banner_flie| Your own banner flies over the town gates.
-; qstr__You_see_the_banner_o| You see the banner of {s7} over the town gates.
-; qstr__The_townsfolk_here_| The townsfolk here have declared their independence.
-; qstr_Go_to_the_secret_ent|Go to the secret entrance to Moria
-; qstr_Search_for_a_secret_|Search for a secret entrance to Moria
+qstr__Your_own_banner_fli|Il tuo stendardo sventola dal cancello
+qstr__You_see_the_banner_|Riesci a vedere lo stendardo di {s7} sul cancello
+qstr__This_castle_seems_t|Il castello sembra non appartenga a nessuno
+qstr__Your_own_banner_flie|Il tuo stendardo sventola sui cancelli della città
+qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città
+qstr__The_townsfolk_here_|Gli abitanti di questo luogo hanno dichiarato la loro indipendenza
+qstr_Go_to_the_secret_ent|Vai all'entrata segreta di Moria
+qstr_Search_for_a_secret_|Cerchi un'entrata segreta per Moria
 ; qstr_Get_book.|Get book.
-; qstr_The_{reg6?town_s:cas|The {reg6?town's:castle's} food stores should last for {reg3} more days.
-; qstr_The_{reg6?town_s:cast|The {reg6?town's:castle's} food stores have run out and the defenders are starving.
-; qstr_You_re_preparing_to_|You're preparing to attack the walls, the work should finish in {reg9} hours.
-; qstr_Your_forces_are_buil|Your forces are building a siege tower. They estimate another {reg9} hours to complete the build.
-; qstr_You_are_ready_to_att|You are ready to attack the walls at any time.
-; qstr_The_siege_tower_is_b|The siege tower is built and ready to make an assault.
-; qstr_As_a_last_defensive_|As a last defensive effort, you retreat to the main hall of the keep. You and your remaining soldiers will put up a desperate fight here. If you are defeated, there's no other place to fall back to.
-; qstr_You_ve_been_driven_a|You've been driven away from the walls. Now the attackers are pouring into the streets. IF you can defeat them, you can perhaps turn the tide and save the day.
-; qstr_You_ve_breached_the_|You've breached the town walls, but the stubborn defenders continue to resist you in the streets! You'll have to deal with them before you can attack the keep at the heart of the town.
-; qstr_The_town_centre_is_y|The town centre is yours, but the remaining defenders have retreated to the castle. It must fall before you can complete your victory.
-; qstr_The_remaining_defend|The remaining defenders have retreated to the castle as a last defense. You must go in and crush any remaining resistance.
-; qstr_However_since_you_ar|However, since you are not a sworn {man/follower} of {s9}, there is no chance he would recognize you as the {lord/lady} of this {reg8?town:castle}.
-; qstr_The_enemy_has_been_f|The enemy has been forced to retreat. The assault is over, but the siege continues.
-; qstr_The_assasins_beat_yo|The assasins beat you down and leave you for dead. .
-; qstr_You_have_fallen._The|You have fallen. The bandits quickly search your body for valuables they can find, then vanish into the night. They have left you alive, if only barely.
-; qstr_Luckily_some_of_your|Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds.
-; qstr_Luckily_some_passing|Luckily some passing locals found you lying in the ditch, and recognised you as someone other than a simple beggar. They carried you to safety and dressed your wounds.
-; qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
-; qstr_the_place|the place
-; qstr_the_castle|the castle
-; qstr_Stay_indoors_for_som|Stay indoors for some time ({reg1} Resource points per night)
-; qstr_Camp_outside_for_som|Camp outside for some time (free)
-; qstr_{s1}_s_Ship|{s1}'s Ship
-; qstr_Time_passes...|Time passes...
-; qstr_Forces_of_Good|Forces of Good
-; qstr_Forces_of_Mordor|Forces of Mordor
-; qstr_Forces_of_Isengard|Forces of Isengard
-; qstr_their_enemies|their enemies
+qstr_The_{reg6?town_s:cas|Le scorte alimentari {reg6?della città:del castello} possono resistere per {reg3} altri giorni.
+qstr_The_{reg6?town_s:cast|Le scorte alimentari {reg6?town's:castle's} si sono esaurite e i difensori hanno fame.
+qstr_You_re_preparing_to_|Ti stai preparando per attaccare le mura, il lavoro dovrebbe finire in {reg9} ore.
+qstr_Your_forces_are_buil|La tua armata sta costruendo una torre d'assedio. Si stima che sarà completata in {reg9} ore.
+qstr_You_are_ready_to_att|Sei pronto ad attaccare le mura in qualunque momento.
+qstr_The_siege_tower_is_b|La torre d'assedio è costruita e pronta per assaltare
+qstr_As_a_last_defensive_|Come ultimo sforzo difensivo, vi ritirate nella sala principale del castello. Tu e i soldati rimanenti tenterete una resistenza disperata qui. Se sarete sconfitti, non ci sarà un'altra possibilità.
+qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia e salvare il giorno
+qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
+qstr_The_town_centre_is_y|Il centro città è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
+qstr_The_remaining_defend|I difensori rimanenti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
+qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {S9}, non c'è alcuna possibilità che ti riconoscerà come {signore/signora} di questa {reg8?città:castello}.
+qstr_The_enemy_has_been_f|Il nemico è stato forzato alla ritirata. L'assalto è finito, ma l'assedio continua.
+qstr_The_assasins_beat_yo|Gli assassini ti hanno ucciso a ti hanno lasciato morente
+qstr_You_have_fallen._The|Sei caduto. I banditi cercano sul tuo cadavere in cerca di qualcosa di valore, poi svaniscono nella notte.\nTi hanno lasciato a malapena vivo.
+qstr_Luckily_some_of_your|Per fortuna alcuni dei tuoi compagni sono venuti a cercarti quando non sei tornato, e ti hanno trovato che giacevi nel fosso. Ti hanno portato in salvo e curato le ferite.
+qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentre menti nel fossato, e ti hanno riconosciuto come un semplice pezzente. Ti portano al sicuro e si prendono cura delle tue ferite
+qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
+qstr_the_place|il posto
+qstr_the_castle|il castello
+qstr_Stay_indoors_for_som|Attendi un po' di tempo ({reg1} punti risorsa per notte)
+qstr_Camp_outside_for_som|Ti sei accampato all'aperto per un po' di tempo (nessun costo)
+qstr_{s1}_s_Ship|Nave di {s1}
+qstr_Time_passes...|Il tempo scorre...
+qstr_Forces_of_Good|Le forze del Bene
+qstr_Forces_of_Mordor|L'armata oscura di Mordor
+qstr_Forces_of_Isengard|L'armata di Isengard
+qstr_their_enemies|i loro nemici
 qstr_{s11}_and_{s13}|{s11} e {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-; qstr_Now_that_the_sorcere|Now that the sorcerer is dead, there is nothing left to be done here.
-; qstr_Now_that_the_sorcerer|Now that the sorcerer has fled, there is nothing left to be done here.
-; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest...
-; qstr_You_wait_for_darknes|You wait for darkness to fall...
-; qstr_You_are_quickly_disc|You are quickly discovered by the enemy.
-; qstr_You_advance_stealthi|You advance stealthily far into the forest.
-; qstr_You_have_evaded_the_|You have evaded the patrols and crept close to the ruins!
-; qstr_You_have_found_the_s|You have found the sorcerer!
-; qstr_You_cannot_leave_unt|You cannot leave until the guards lose you!
-; qstr_Kill_him_quickly_bef|Kill him quickly before he escapes!
-; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
-; qstr_flooded._Somebody_or|flooded. Somebody or something must have ruined the Isen dams.
-; qstr_destroyed._Only_smol|destroyed. Only smoldering ruins remain.
-; qstr_^^^You_lost_your_fig|^^^You lost your fight against the mutiny! ^Seems like your orcs have a new commander now.
-; qstr_^^^You_have_slain_th|^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure.
-; qstr_You_cover_up_your_tr|You cover up your tracks and move onward.
-; qstr_Breaking_camp...|Breaking camp...
-; qstr_You_have_left_{s1}.|You have left {s1}.
-; qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
-; qstr_You_are_entering_{s1}|You are entering {s1}.
-; qstr_The_war_expands_comm|The war expands, commanders are getting bolder! (siege requirements reduced)
-; qstr_Your_party_is_spotte|Your party is spotted by {s1}.
-; qstr_Party_has_nothing_to|Party has nothing to eat!
-; qstr_You_pay_for_accommod|You pay for accommodation.
-; qstr_The_troll_outside_{s|The troll outside {s2} was killed. Mission canceled.
-; qstr_{s1}_was_killed_on_t|{s1} was killed on the battlefield. Mission canceled.
-; qstr_{s1}_has_been_defeat|{s1} has been defeated. Mission canceled.
-; qstr_You_must_follow_{s1}|You must follow {s1}!
-; qstr_You_must_follow_{s1}!|You must follow {s1}! This is your last warning!
-; qstr_Parties_defeated:_{r|Parties defeated: {reg1}
-; qstr_{s1}_is_scouted.|{s1} is scouted.
-; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!
-; qstr_The_War_of_the_Two_T|The War of the Two Towers has started!
-; qstr_{s2}_was_defeated!|{s2} was defeated!
-; qstr_The_forces_of_{s22}_|The forces of {s22} have rallied! {s22} is now {s23}.
-; qstr_The_might_of_{s22}_h|The might of {s22} has diminished! {s22} is now {s23}.
-; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
-; qstr_Guardians_of_{s6}|Guardians of {s6}
-; qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
-; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
-; qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
-; qstr_{s1}_from_{s2}|{s1} from {s2}
-; qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
-; qstr_Info|Info
-; qstr_You_came_into_a_poss|You came into a possession of a strange, oversized bowl of fresh-looking water. It smells a little like musk.
-; qstr_Obtained:_Ent_water.|Obtained: Ent water.
+qstr_Now_that_the_sorcere|Ora che lo stregone è morto, non c'è più niente da fare qui.
+qstr_Now_that_the_sorcerer|Ora che lo stregone è fuggito, non c'è più niente da fare qui.
+qstr_You_approach_a_heavi|Ti avvicini ad una regione altamente sorvegliata della foresta...
+qstr_You_wait_for_darknes|Attendi la notte per passare inosservato...
+qstr_You_are_quickly_disc|Sei stato velocemente scoperto dal nemico.
+qstr_You_advance_stealthi|Avanzi di nascosto lontano nella foresta.
+qstr_You_have_evaded_the_|Hai evitato le pattuglie e ti sei arrampicato verso le rovine!
+qstr_You_have_found_the_s|Hai trovato lo stregone!
+qstr_You_cannot_leave_unt|Non puoi ritirarti fin quando non disperdi le guardie!
+qstr_Kill_him_quickly_bef|Uccidilo velocemente prima che scappi!
+qstr_Enraged_by_the_death|Infuriato per la morte di {s4}, hai giurato vendetta contro le forze della {s3}. Ora devi distruggere il maggior numero degli eserciti di {s3} possibile nei prossimi giorni. Sei ben consapevole che i tuoi seguaci hanno assistito a questo giuramento e non desideri esser conosciuto come uno che non mantiene le promesse. Un fiume di sangue dovrà scorrere!
+qstr_flooded._Somebody_or|è allagato. Qualcuno deve aver aperto le dighe di Isengard.
+qstr_destroyed._Only_smol|è distrutto. Restano solo fumanti rovine.
+qstr_^^^You_lost_your_fig|^^^Hai avuto la peggio contro l'ammutinamento! ^Sembra che la tua armata di orchi ha un nuovo comandante ora .
+qstr_^^^You_have_slain_th|^^^Hai ucciso l'autore del reato, e gli altri orchi rapidamente tornano in linea. ^Per qualche tempo queste spregevoli creature saranno tranquille di sicuro.
+qstr_You_cover_up_your_tr|Copri le tue tracce e continui a muoverti.
+qstr_Breaking_camp...|Smantellamento del campo...
+qstr_You_have_left_{s1}.|Hai lasciato {s1}.
+qstr_You_are_entering_{s1|Stai entrando {s1} ({s2}).
+qstr_You_are_entering_{s1}|Sei entrato {s1}.
+qstr_The_war_expands_comm|La guerra si espande, i comandanti sono sempre più audaci! (Ridotti i requisiti di assedio)
+qstr_Your_party_is_spotte|La tua compagnia è controllata da {s1}.
+qstr_Party_has_nothing_to|La tua compagnia non ha niente da mangiare!
+qstr_You_pay_for_accommod|Paghi per la sistemazione.
+qstr_The_troll_outside_{s|Il troll al di fuori {s2} è stato ucciso. La missione è cancellata.
+qstr_{s1}_was_killed_on_t|{s1} è stato ucciso sul campo di battaglia. La missione è cancellata.
+qstr_{s1}_has_been_defeat|{s1} è stato sconfitto. La missione è cancellata.
+qstr_You_must_follow_{s1}|Devi seguire {s1}!
+qstr_You_must_follow_{s1}!|Devi seguire {s1}! Questo è il tuo ultimo avviso!
+qstr_Parties_defeated:_{r|Le compagnie sono sconfitte: {reg1}
+qstr_{s1}_is_scouted.|{s1} è esplorato.
+qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l' unico sovrano della Terra di Mezzo!
+qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata!
+qstr_{s2}_was_defeated!|{s2} è stato sconfitto!
+qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata! {s22} ora è {s23} 
+qstr_The_might_of_{s22}_h|La forza di {s22} è diminuita. {s22} ora è {s23}. 
+qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi nemici, Sauron invia le sue legioni di Mordor!
+qstr_Guardians_of_{s6}|Guardiani di {s6}
+qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
+qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
+qstr_The_forces_of_{s2}_e|L'armata di {s2} ha costruito un campo avanzato in {s15}!
+qstr_{s1}_from_{s2}|{s1} da {s2}
+qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati in {s10}. ^^(I punti risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati in {s10}, ma solo quelli guadagnati in {s11})
+qstr_Info|Informazioni
+qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
+qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.
 ; qstr_A_little_after_you_f|A little after you fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?
-; qstr_Ent_water_effect.|Ent water effect.
+qstr_Ent_water_effect.|Effetto dell'acqua degli Ent.
 ; qstr_The_water_you_drank_|The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take that risk again.
 ; qstr_Ent_water_effect:_in|Ent water effect: increase stature!
 ; qstr__+1_to_Strength__per| +1 to Strength (permanent)
