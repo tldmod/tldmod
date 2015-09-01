@@ -608,9 +608,9 @@ qstr_Normal|Normal
 qstr_Defender_only|Défenseur uniquement
 qstr_Halved|Diminué de moitié
 qstr_Battles_only|Batailles uniquement
-; qstr_Doubled|Doubled
-; qstr_Tripled|Tripled
-; qstr_Quadrupled|Quadrupled
+qstr_Doubled|multiplié par deux
+qstr_Tripled|multiplié par trois
+qstr_Quadrupled|multiplié par quatre
 qstr_You_drank_the_Ent_Wa|Vous buvez l'Eau des Ents...
 qstr_Fangorn_search:_fail|Recherche de Fangorn : échouée.
 qstr_Troll_caged_in_wheel|Troll emprisonné dans une cage.

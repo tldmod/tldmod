@@ -1,0 +1,48 @@
+ui_at_learning_limit|(達到學習限度)
+ui_not_enough_skill_points_to_learn|(沒有足夠的技能點來學習)
+ui_not_enough_attributetype_to_learn_this_skill|(沒有足夠的 %s 來學習這個技能)
+ui_explanation_agility|敏捷: 每一點增加5點武器熟練度 , 並且提高武器速度0.5%.下列技能不能超過敏捷的1/3: 盾防 , 跑動 , 武器掌握 , 騎術 , 騎射 , 掠奪.
+ui_retreated_battle|%s 已經排到.
+ui_riding_skill_not_adequate_to_mount|(你的騎術不夠)
+ui_camp|行動
+ui_tutorial_inventory|在TLD , 你需要資源點來獲得裝備. 資源點是一個陣營給你的工資和衡量你的重要性 , 以及您有權使用的陣營資源.
+ui_you_dont_have_value|沒有: %s
+ui_merchant_cant_afford_value|%s: 你給我們多於我們需要的! 也許你可以保留更多的東西. (你給貨物 %s, 我們只能用%s).
+ui_merchant_pay_whatever|好吧 , 你有多少就付多少.
+ui_horse|乘坐
+ui_reclaim_your_sold_goods|購買物品前 , 先收回賣掉的同類物品!
+ui_return_your_bought_goods|出售物品前 , 先退回買走的同類物品!
+ui_return_price|退回價格: %d Res.P.
+ui_sell_price|出售價格: +%d Res.P.
+ui_reclaim_price|收回價格: -%d Res.P.
+ui_buying_price|購買價格: -%d Res.P.
+ui_notification_riding_skill_not_enough|騎術太低 , 不能騎這匹馬.
+ui_notification_payment_value|消耗 %s
+ui_notification_payment_receive_value|獲得 %s
+ui_weekly_cost_value|每週花費: %s
+ui_sell|給
+ui_hire|招募
+ui_notification_cant_hire|(沒有足夠的 R.P. 去招募)
+ui_joining_cost_weekly_wage|招募價格: %d Res.Pts. -- 每週工資: %d Res.Pts.
+ui_weekly_wage|每週工資: %d Res.Pts.
+ui_price|價格: %d Res.P.
+ui_cant_reload_this_weapon_on_horseback|在馬背上無法裝填.
+ui_delivered_number_damage_to_horse|給對方的馬 %d 點傷害.
+ui_horse_charged_for_number_damage|馬衝撞對方 %d 點傷害.
+ui_horse_received_number_damage|馬受到 %d 點傷害.
+ui_horse_fell_dead|馬死了...
+ui_horse_crippled|馬瘸了...
+ui_you_got_value|你獲得 %s .
+ui_has_deserted_the_party|從部隊中叛逃.
+ui_have_deserted_the_party|從部隊中叛逃.
+ui_loading_textures|載入紋理 (請耐心等候)...
+ui_order_hold_fire_toggle|不要射擊/任意射擊 (切換)
+ui_order_dismount_toggle|命令下馬/上馬 (切換)
+ui_mount_horses_e_|%s, 上馬!
+ui_hold_fire_e_|%s, 不要射擊!
+ui_fire_at_will_e_|%s, 任意射擊!
+ui_recent_messages|最近消息
+ui_value_denars|%d 資源數量.
+ui_cannot_be_used_on_horseback|不能在馬背上使用
+ui_upgrade_to_value|升級到 %s
+ui_notification_cant_upgrade|(費用不足無法升級)

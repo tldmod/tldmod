@@ -1,17 +1,17 @@
 qst_deliver_message|{s13}へ手紙を届けよ
 qst_deliver_message_text|{s9}に{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。
 qst_deliver_message_to_enemy_lord|{s13}へ手紙を届けよ
-qst_deliver_message_to_enemy_lord_text|{s9}に{s15}の{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。"
+qst_deliver_message_to_enemy_lord_text|{s9}に{s15}の{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。_QQ_
 qst_raise_troops|{s14}を{reg1}人育て上げよ
 qst_raise_troops_text|{s9}に{s14}を{reg1}人育て上げ、 彼に引き渡すよう頼まれた。
 qst_escort_messenger|{s14}まで伝令を護衛せよ
 qst_escort_messenger_text|None
 qst_hunt_down_fugitive|{s4}を追え
-qst_hunt_down_fugitive_text|{s9}に{s4}という名前の逃亡者を　捕まえるよう頼まれた。 逃亡者は現在、 {s3}に潜んでいるとされている。
+qst_hunt_down_fugitive_text|{s9}に{s4}という名前のおたずね者を 捕まえるよう頼まれた。 おたずね者は現在、 {s3}に潜んでいるとされている。
 qst_bring_back_runaway_serfs|脱走した奴隷を連れ戻せ
-qst_bring_back_runaway_serfs_text|みっつのグループに分かれて逃走中の　奴隷を{s2}に連れ戻すよう、 {s9}に頼まれた。 すべてのグループは　{s3}の方角へ逃げているらしい。
-qst_follow_spy|密会現場までスパイを追跡せよ
-qst_follow_spy_text|{s12}を出発する予定のスパイを追跡するよう、 {s11}に頼まれた。 追跡に気付かれると スパイが密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 スパイが共謀者と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
+qst_bring_back_runaway_serfs_text|みっつのグループに分かれて逃走中の 奴隷を{s2}に連れ戻すよう、 {s9}に頼まれた。 すべてのグループは {s3}の方角へ逃げているらしい。
+qst_follow_spy|密会現場まで密偵を追跡せよ
+qst_follow_spy_text|{s12}を出発する予定の密偵を追跡するよう、 {s11}に頼まれた。 追跡に気付かれると 密偵が密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 密偵が共謀者と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
 qst_capture_enemy_hero|敵の指揮官を捕らえよ
 qst_capture_enemy_hero_text|敵指揮官を捕らえてくるよう、 {s11}に頼まれた。
 qst_lend_companion|コンパニオンの{s3}を{s9}に貸す

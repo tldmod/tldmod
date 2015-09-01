@@ -233,12 +233,12 @@ itm_blackroot_leader|Armatura da comandante della valle della Radice Nera
 itm_blackroot_hood|Cappuccio della valle della Radice Nera
 itm_dol_hauberk|Usbergo di Dol Amroth
 itm_dol_heavy_mail|Maglia pesante di Dol Amroth
-; itm_dol_padded_coat|Dol Amroth Padded Coat
-; itm_dol_shirt|Dol Amroth Shirt
+itm_dol_padded_coat|Cappotto Imbottito di Dol Amroth
+itm_dol_shirt|Maglia di Dol Amroth
 itm_dol_very_heavy_mail|Maglia molto pesante di Dol Amroth
-; itm_dol_greaves|Dol Amroth Greaves
+itm_dol_greaves|Stivali di Dor Amroth
 itm_dol_shoes|Stivali leggeri di Dol Amroth
-; itm_lamedon_clansman|Lamedon Clansman Armor
+itm_lamedon_clansman|Armatura dell'uomo del clan del Lamedon
 itm_lamedon_footman|Armatura da appiedato del Lamedon
 itm_lamedon_knight|Armatura da cavaliere del Lamedon
 itm_lamedon_leader_surcoat_cloak|Armatura da condottiero del Lamedon
@@ -284,8 +284,8 @@ itm_amroth_sword_a|Spada di Dol Amroth
 itm_amroth_sword_b|Spada da Cavaliere di Dol Amroth
 itm_gondor_sword|Spada da Fanteria di Gondor
 itm_amroth_bastard|Spada Pesante di Dol Amroth
-; itm_gondor_short_sword|Linhir Eket
-; itm_pelargir_eket|Pelargir Eket
+itm_gondor_short_sword|Eket di Linhir
+itm_pelargir_eket|Eket di Pelargir
 itm_pelargir_sword|Spada di Pelargir
 itm_gondor_ranger_sword|Spada da Ramingo di Gondor
 itm_gondor_bastard|Spada Bastarda di Gondor
@@ -316,7 +316,7 @@ itm_lorien_helm_c|Elmo da Fanteria di Lorien
 itm_orc_chain_greaves|Gambali Orcheschi
 itm_orc_coif|Cuffia Orchesca
 itm_orc_greaves|Stivali di Maglia di Ferro Orcheschi
-; itm_orc_ragwrap|Orc Ragwrap
+itm_orc_ragwrap|Stracci Orcheschi
 itm_orc_furboots|Stivali di Pelliccia Orcheschi
 itm_orc_furboot_tall|Stivali di Pelliccia Orcheschi
 itm_orc_tribal_a|Pelle Grezza
@@ -339,12 +339,12 @@ itm_isen_uruk_light_e|Bardatura in Maglia di Ferro Uruk-hai
 itm_isen_uruk_heavy_a|Armatura in Cuoio e Maglia di Ferro Uruk-hai
 itm_isen_uruk_heavy_b|Armatura Pesante Uruk-hai
 itm_isen_uruk_heavy_c|Armatura Pesante Uruk-hai
-; itm_isen_uruk_heavy_d|Uruk-hai Tracker Leather
-; itm_isen_uruk_heavy_e|Uruk-hai Tracker Leather
-; itm_uruk_tracker_boots|Uruk Tracker Boots
+itm_isen_uruk_heavy_d|Pelle dell'inseguitore Uruk Hai
+itm_isen_uruk_heavy_e|Pelle dell'inseguitore Uruk Hai
+itm_uruk_tracker_boots|Stivali dell'inseguitore Uruk
 itm_uruk_greaves|Gambali Uruk
 itm_uruk_chain_greaves|Gambali in Maglia di Ferro Uruk
-; itm_uruk_ragwrap|Uruk Ragwrap
+itm_uruk_ragwrap|Stracci Uruk
 itm_isen_orc_helm_a|Elmo Orchesco Isen
 itm_isen_orc_helm_b|Elmo Orchesco Isen
 itm_isen_orc_helm_c|Elmo Orchesco Isen
@@ -352,8 +352,8 @@ itm_isen_uruk_helm_a|Elmo Uruk-Hai
 itm_isen_uruk_helm_b|Elmo Uruk-Hai
 itm_isen_uruk_helm_c|Elmo Uruk-Hai
 itm_isen_uruk_helm_d|Elmo da Capitano Uruk-Hai
-; itm_isen_uruk_helm_e|Uruk-Hai Tracker Helm
-; itm_isen_uruk_helm_f|Uruk-Hai Tracker Helm
+itm_isen_uruk_helm_e|Elmo dell'inseguitore Uruk Hai
+itm_isen_uruk_helm_f|Elmo dell'inseguitore Uruk Hai
 itm_uruk_pike_a|Picca Uruk
 itm_uruk_pike_b|Picca Uruk
 itm_uruk_falchion_a|Falcione Uruk
@@ -386,7 +386,7 @@ itm_orc_sledgehammer|Martello da Guerra Orchesco
 itm_orc_simple_spear|Lancia Orchesca
 itm_orc_skull_spear|Lancia del Teschio Orchesca
 itm_orc_bill|Becco Orchesco
-; itm_orc_slasher|Orc Slasher
+itm_orc_slasher|Flagello Orchesco
 itm_orc_falchion|Falcione Orchesco
 itm_orc_scimitar|Scimitarra Orchesca
 itm_orc_sabre|Sciabola Orchesca
@@ -403,23 +403,23 @@ itm_mordor_orc_shield_b|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_c|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_d|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_e|Scudo Orchesco di Mordor
-; itm_mordor_uruk_shield_a|Mordor Uruk Shield
-; itm_mordor_uruk_shield_b|Mordor Uruk Shield
-; itm_mordor_uruk_shield_c|Mordor Uruk Shield
-; itm_mordor_man_shield_a|Mordor Man Shield
-; itm_mordor_man_shield_b|Mordor Man Shield
-; itm_angmar_shield|Angmar Shield
-; itm_orc_helm_a|Orc Longnosehelm
-; itm_orc_helm_b|Orc Gratehelm
-; itm_orc_helm_c|Orc Buckethelm
-; itm_orc_helm_d|Orc Grillhelm
-; itm_orc_helm_e|Orc Beakhelm
-; itm_orc_helm_f|Orc Bughelm
-; itm_orc_helm_g|Orc Crowhelm
-; itm_orc_helm_h|Orc Jawhelm
-; itm_orc_helm_i|Orc Snouthelm
-; itm_orc_helm_j|Orc Lizardhelm
-; itm_orc_helm_k|Orc Vulturehelm
+itm_mordor_uruk_shield_a|Scudo da Uruk di Mordor
+itm_mordor_uruk_shield_b|Scudo da Uruk di Mordor
+itm_mordor_uruk_shield_c|Scudo da Uruk di Mordor
+itm_mordor_man_shield_a|Scudo Umano di Mordor
+itm_mordor_man_shield_b|Scudo Umano di Mordor
+itm_angmar_shield|Scudo di Angmar
+itm_orc_helm_a|Elmo nasolungo Orchesco
+itm_orc_helm_b|Elmo Forato Orchesco
+itm_orc_helm_c|Elmo a Secchio Orchesco
+itm_orc_helm_d|Elmo Segato Orchesco
+itm_orc_helm_e|Elmo a Becco Orschesco
+itm_orc_helm_f|Elmo insetto Orchesco
+itm_orc_helm_g|Elmo a Corvo Orchesco
+itm_orc_helm_h|Elmo Mascella Orchesco
+itm_orc_helm_i|Elmo Museruola Orschesco
+itm_orc_helm_j|Elmo Lucertola Orchesco
+itm_orc_helm_k|Elmo Avvoltoio Orchesco
 ; itm_m_orc_light_a|Mordor Orc Light Armor
 ; itm_m_orc_light_b|Mordor Orc Light Armor
 ; itm_m_orc_light_c|Mordor Orc Light Armor

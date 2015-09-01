@@ -12,7 +12,7 @@ ui_merchant_pay_whatever|Нет, мне не нужно ничего из это
 ui_horse|Оседлать
 ui_reclaim_your_sold_goods|Забери товар, который ты принёс, прежде чем дать это!
 ui_return_your_bought_goods|Верни товар, который ты взял, прежде чем взять это!
-ui_return_price|если возвращено: +%d Оч. Рес.
+ui_return_price|если возвращено: +%d Оч. Ре
 ui_sell_price|если отдано: +%d Оч. Рес.
 ui_reclaim_price|требовать обратно: -%d Оч. Рес.
 ui_buying_price|требовать: -%d Оч. Рес.
@@ -25,7 +25,7 @@ ui_hire|Вербовка
 ui_notification_cant_hire|(недостаточно Оч. Рес. для вербовки)
 ui_joining_cost_weekly_wage|Вербовка: %d Оч. Рес. -- Содержание: %d Оч. Рес.
 ui_weekly_wage|Содержание: %d Оч. Рес.
-ui_price|Стоимость: %d Оч. Рес.
+ui_price|Стоимость: %d Оч. Рес
 ui_cant_reload_this_weapon_on_horseback|Невозможно перезарядить это оружие находясь верхом.
 ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
 ui_horse_charged_for_number_damage|Животное атаковало на %d урона.

@@ -754,44 +754,44 @@ qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ric
 qstr_Info|Informazioni
 qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
 qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.
-; qstr_A_little_after_you_f|A little after you fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?
+qstr_A_little_after_you_f|Poco dopo che recuperi completamente le forze bevendo l'acqua avvelenata che hai ottenuto dagli alberi che camminano, accusi uno strano effetto collaterale. Le creature spregevoli nel tuo gruppo sembrano che...ti rispettano e ti temono di più, come se fossi diventato... più possente. E si potrebbe dire, in effetti, che sembri più alto. E' davvero possibile?
 qstr_Ent_water_effect.|Effetto dell'acqua degli Ent.
-; qstr_The_water_you_drank_|The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take that risk again.
-; qstr_Ent_water_effect:_in|Ent water effect: increase stature!
-; qstr__+1_to_Strength__per| +1 to Strength (permanent)
-; qstr__+1_to_Charisma__per| +1 to Charisma (permanent)
-; qstr_The_dark_shadow_fina|The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.
-; qstr_The_War_has_started!|The War has started!
-; qstr_The_forest_seems_pea|The forest seems peaceful.
-; qstr_There_is_a_sense_of_|There is a sense of danger in the air.
-; qstr_You_have_a_feeling_y|You have a feeling you disturbed the forest for long enough.
-; qstr_Get_out_now!|Get out, now!
-; qstr_You_are_inside_Fango|You are inside Fangorn. {s11}
-; qstr_Your_party_witnessed|Your party witnessed orcs eating prisoners.
-; qstr_Your_party_s_morale_|Your party's morale has risen from hatred.
-; qstr_Your_party_s_morale_h|Your party's morale has fallen from fear.
-; qstr_{s27}:_Influence_wit|{s27}: Influence with {s1} increases from {reg2} to {reg1}.
-; qstr_{s27}:_Influence_with|{s27}: Influence with {s1} decreases from {reg2} to {reg1}.
-; qstr_{s27}:_Party_morale_|{s27}: Party morale increased.
-; qstr_{s27}:_Party_morale_d|{s27}: Party morale decreased.
-; qstr_You_have_failed_to_f|You have failed to fulfill your oath of vengeance for {s1}'s heroic death!
-; qstr_You_have_fulfilled_y|You have fulfilled your oath of vengeance for {s1}'s heroic death!
-; qstr_{reg65?my_Lady:my_Lo|{reg65?my Lady:my Lord}
-; qstr_{reg65?My_Lady:My_Lo|{reg65?My Lady:My Lord}
-; qstr_{reg65?mistress:mast|{reg65?mistress:master}
-; qstr_{reg65?Mistress:Mast|{reg65?Mistress:Master}
-; qstr_{reg65?madame:sir}|{reg65?madame:sir}
+qstr_The_water_you_drank_|L'acqua che hai bevuto dagli Ents hanno uno strano effetto sul tuo corpo. Inizialmente non lo reputi possibile, ma ora, in evidenza dei fatti, bisogna ammetterlo: in qualche modo, sei più alto! Eppure il veleno ti ha quasi ucciso. Non potrai rischiare di nuovo.
+qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura!
+qstr__+1_to_Strength__per|+1 di Forza (permanente)
+qstr__+1_to_Charisma__per|+1 di Carisma (permanente)
+qstr_The_dark_shadow_fina|L'ombra oscura finalmente sorge in una tempesta, e le orde del male iniziano la loro marcia verso il popolo libero della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard contro Rohan ad Ovest, Dol Guldur contro gli elfi...Anche nel lontano Nord c'è una guerra a sé stante
+qstr_The_War_has_started!|La Guerra è cominciata!
+qstr_The_forest_seems_pea|La foresta appare tranquilla.
+qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
+qstr_You_have_a_feeling_y|Hai la sensazione di aver disturbato la foresta abbastanza a lungo.
+qstr_Get_out_now!|Esci fuori, ora!
+qstr_You_are_inside_Fango|Sei all'interno di Fangorn. {s11}
+qstr_Your_party_witnessed|La tua compagnia ha testimoniato su orchi che mangiano prigionieri.
+qstr_Your_party_s_morale_|Il morale della tua compagnia è passato ad odio.
+qstr_Your_party_s_morale_h|Il morale della tua compagnia è caduto nella paura.
+qstr_{s27}:_Influence_wit|{s27}: Influenza con {s1} aumenta da {reg2} a {reg1}
+qstr_{s27}:_Influence_with|{s27}: Influenza con {s1} diminuisce da {reg2} a {reg1}
+qstr_{s27}:_Party_morale_|{s27}: il morale della Compagnia aumenta.
+qstr_{s27}:_Party_morale_d|{s27}: il morale della Compagnia diminuisce.
+qstr_You_have_failed_to_f|Non sei riuscito a soddisfare la tua voglia di vendetta per la morte eroica di {s1}!
+qstr_You_have_fulfilled_y|Hai soddisfatto la tua voglia di vendetta per la morte eroica di {s1}!
+qstr_{reg65?my_Lady:my_Lo|{reg65?Mia Signora:mio Signore}
+qstr_{reg65?My_Lady:My_Lo|{reg65?Mia Signora:Mio Signore}
+qstr_{reg65?mistress:mast|{reg65?Padrona:Maestro}
+qstr_{reg65?Mistress:Mast|{reg65?Padrona:Maestro}
+qstr_{reg65?madame:sir}|{reg65?madame:signore}
 ; qstr_{reg65?Madame:Sir}|{reg65?Madame:Sir}
-; qstr_How_do_magnets_work?|How do magnets work?
-; qstr_Um..._by_enchanting_|Um... by enchanting iron?
-; qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
+qstr_How_do_magnets_work?|Come funzionano i magneti?
+qstr_Um..._by_enchanting_|Um... dal ferro incantato?
+qstr_Magnets_are_made_of_|I magneti sono fatti di metallo, che viene estratto dal terreno . Sono magnetici perché il metallo contiene ancora pezzi di gravità all'interno di esso.
 ; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-; qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
-; qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
-; qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
-; qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
+qstr_I_m_sure_the_TLD_tea|Sono sicuro che la squadra di TLD arriverà quando può.
+qstr_Install_TLD_in_your_|Installare TLD nella cartella Moduli Bannerlord, aggiungere la riga 'compatible_with_wfas = 1' a module.ini, e si può giocare sia su Warband e Warrider 0.202!\n
+qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
+qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso che richiede tempo.
+qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.
+qstr_i_wont_decapitated_e|Voglio decapitare gli elefanti in multi, ora!!!
 ; qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
 ; qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Did_you_bring_your_z|Did you bring your zupdog?
@@ -860,27 +860,27 @@ qstr_Thank_you_commander.|Grazie, comandante.^
 qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
 ; qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
 ; qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
-; qstr_Very_well_done_{play|Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped, and the pair are now safely locked up, waiting to be questioned. They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.
-; qstr_Beautiful_work_{play|Beautiful work, {playername}! You captured both the spy and his handler, just as you were told, and the pair are now safely locked up in my dungeon, waiting to be questioned. My torturer shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.
-; qstr_Your_mission_is_comp|Your mission is complete, {s9} wants you to resume following his army until further notice.
-; qstr_{s13}_asked_you_to_g|{s13} asked you to gather {reg3} units of {s4} and deliver them back to him.
-; qstr_{s9}_asked_you_to_sc|{s9} asked you to scout {s13}, {s14} and {s15}, then report back.
-; qstr_You_have_been_most_h|You have been most helpful, {playername}. My thanks.
-; qstr_You_are_a_good_serva|You are a good servant, {playername}. Carry on.
-; qstr_Superb_work_{playern|Superb work, {playername}. I admire your attitude.
-; qstr_Your_efficiency_is_p|Your efficiency is pleasing, {playername}. Continue and you will go far.
-; qstr_It_was_an_honour_to_|It was an honour to serve.
-; qstr_Your_wish_is_my_comm|Your wish is my command.
-; qstr_we_are_fighting_agai|we are fighting against {s13}
-; qstr_we_are_not_fighting_|we are not fighting anyone at the moment
-; qstr_Oh?_Let_me_see_that.|Oh? Let me see that... Well well well! It was good of you to bring me this, {playername}. Take my seal as proof that I've received it, and give my regards to {s9} when you see him again.
-; qstr_Give_me_that!_Hrmph!|Give me that! Hrmph! Good that you brought me this, {playername}, you are a useful servant. Tell {s9} to employ you more often.
-; qstr_What?_Let_me_see_tha|What? Let me see that... Hmmm. It was good of you to bring me this, {playername}. Now begone.
-; qstr_Give_me_that!_Hrmph!_|Give me that! Hrmph! You are a useful servant to your masters, {playername}, but all of you will be dead before long. Not now though, so scurry off.
+qstr_Very_well_done_{play|Ben fatto, {playername}! Hai catturato sia la spia e il suo mandatario, proprio come avevo sperato, ed entrambi sono ora bloccati in modo sicuro, in attesa di essere interrogati. Avranno qualche spiegazione! In ogni caso sono molto contento del tuo successo, { playername }, e ti do questa borsa come segno del mio apprezzamento.
+qstr_Beautiful_work_{play|Bel lavoro, {playername}! Hai catturato sia la spia che il suo mandatario, proprio come speravo, e  la coppia ora è al sicuro nella mia caverna, aspettando di essere interrogati! Il mio aguzzino sarà occupato questa notte! Ad ogni modo, sono veramente contento del tuo successo,{playername}, e ti do questa borsa come segno del mio apprezzamento.
+qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole te per riprendere a seguire la sua armata fino a nuovo avviso.
+qstr_{s13}_asked_you_to_g|{s13} ti ha chiesto di raccogliere {reg3} unità di {s4} e riportarglieli.
+qstr_{s9}_asked_you_to_sc|{s9} ti ha chiesto di esplorare {s13}, {s14} and {s15}, e riportargli le informazioni.
+qstr_You_have_been_most_h|Sei stato di grande aiuto, {playername}. I miei ringraziamenti.
+qstr_You_are_a_good_serva|Sei un buon servitore, {playername}. Continua così.
+qstr_Superb_work_{playern|Che lavoro superbo, {playername}. Ammiro il tuo spirito di sacrificio.
+qstr_Your_efficiency_is_p|La tua efficienza è piacevole, { playername }. Continua così ed arriverai lontano.
+qstr_It_was_an_honour_to_|E' un onore servire.
+qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
+qstr_we_are_fighting_agai|stiamo combattendo contro {s13}
+qstr_we_are_not_fighting_|non stiamo combattendo nessuno al momento
+qstr_Oh?_Let_me_see_that.|Oh? Fammi dare un'occhiata...Bene, bene, bene! E' un bene che me lo hai portato, {playername}. Prendi il mio sigillo come prova che l'ho ricevuto, e porta i miei saluti a {s9} quando lo vedrai ancora.
+qstr_Give_me_that!_Hrmph!|Dammelo! Hrmph! Meglio che me lo hai portato, {playername}, sei un buon aiutante. Dillo a {s9} di impiegarti più spesso.
+qstr_What?_Let_me_see_tha|Cosa? Fammi vedere... Hmmm. E' un bene che me lo hai portato, {playername}. Adesso vattene.
+qstr_Give_me_that!_Hrmph!_|Dammelo! Hrmph! Sei un buon servitore del tuo padrone, {playername}, ma sarai morto in breve tempo. Non ora, però, sparisci.
 qstr_Do_you_need_reinforc|Hai bisogno di rinforzi?
-; qstr_You_don_t_look_too_s|You don't look too strong, do you need troops?
-; qstr_^{s14}_is_grateful_t|^{s14} is grateful to you, {playername}, {s29}^
-; qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_You_don_t_look_too_s|Non sembri troppo forte, hai bisogno di truppe?
+qstr_^{s14}_is_grateful_t|^{s14} ti è grato, {playername}, {s29}^
+qstr_{s31}{reg28?Those:That|{s31}{reg28?Quelli:Quello} il coraggio {reg28?soldati:soldato} ci aiuterà sicuramente a difendere le nostre terre. {s32}^^[earned {reg14} punti Risorsa {s14}]
 ; qstr_{s31}{reg28?Those:That}|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, and take back those soldiers who are not our kin, I have no use for them.
 qstr_It_is_my_duty_to_hel|È il mio dovere aiutare la nostra gente.

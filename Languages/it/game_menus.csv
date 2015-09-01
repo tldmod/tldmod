@@ -201,12 +201,12 @@ mno_call_back|Chiamali indietro.
 menu_order_attack_2|^{s4}^Le tue perdite: {s8}^^Perdite nemiche: {s9}
 mno_order_attack_continue|Ordina ai tuoi soldati di continuare l'attacco.
 mno_order_retreat|Fai ritirare i tuoi soldati.
-; menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_kingdom_army_quest_report_to_army|{s8} manda a dire che vuole che tu ti unisca alla sua nuova campagna militare. È necessario portare almeno {reg13} truppe per l'esercito, e sei incaricato di arruolare più guerrieri con la dovuta rapidità se non ne hai abbastanza.
 mno_reject|Invia un messaggio che sei troppo impegnato.
 mno_send_word|Fagli sapere che presto ti unirai a lui.
-; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
-; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
-; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
+menu_kingdom_army_quest_messenger|{s8} manda a dire che vuole parlare con voi di un compito che ha bisogno di eseguire. Egli chiede di andare a consultarlo al più presto possibile..
+menu_kingdom_army_quest_join_siege_order|{s8}  manda a dire che si sta per unire l'assedio di {s9} in preparazione di un assalto. Le tue truppe devono prendere {s9} a tutti i costi.
+menu_kingdom_army_follow_failed|Hai disobbedito agli ordini e non sei riuscito a seguire {s8}.  Manda un messaggio che presuppone che tu hai questioni più urgenti, ma mettiti in guardia la sua pazienza non è illimitata.
 menu_battle_debrief|{s11}^Le tue perdite:{s8}{s10}^^Perdite nemiche:{s9}
 mno_inspect_troll|Ispeziona troll abbattuto
 menu_pre_join|^^^^^Ti imbatti in una battaglia che vede come avversari {s2} e {s1}. Decidi di...
@@ -252,8 +252,8 @@ menu_construct_ladders|In quanto membro della compagnia con maggiore abilità In
 mno_build_ladders_cont|Fallo.
 menu_castle_attack_walls_simulate|{s4}^^Le tue perdite: {s8}^^Perdite nemiche: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
-; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
-; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
+menu_castle_taken|{s3} ha perso le sue truppe, e adesso tu hai il pieno controllo del {reg2?town:castle}. {reg1? Sembrerebbe che non ci sia nulla ti impedisce di prenderlo per te ...:}
+menu_castle_taken_2|{s3} ha perso le sue truppe, e adesso hai il pieno controllo del castello. E tempo di passare parola a {s9} riguardo la tua vittoria. {s5}
 mno_castle_taken_no_claim|Rifiuta la ricompensa.
 menu_siege_started_defender|{s1} sta lanciando l'assalto contro le mure di {s2}. Hai {reg22} soldati pronti alla battaglia conro i nemici di {reg11}. Decidi di...
 mno_siege_defender_join_battle|Unirti alla battaglia.
@@ -262,7 +262,7 @@ menu_siege_join_defense|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti 
 menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggitivo ti manda a terra, mentre la testa ti gira vorticosamente la tua vista si spegne. Il tempo passa. Quando apre nuovamente gli occhi ti ritrovi malconcio e sanguinante, ma per fortuna nessuna delle ferite sembra essere letale.
 menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a voi come il grano sotto la falce! Presto scopri di essere l'unico rimasto in piedi, mentre la maggior parte dei tuoi nemici si trova privo di sensi, morto\no moribondo. Certamente le genti del posto ti saranno molto grate per averle salvate da questa minaccia.
 menu_town_brawl_lost|^^^^^^Sei stato colpito a tradimento. Coloro che ti hanno attaccato si affrettano a frugarti in cerca di cose di valore, prima di darsi alla fuga.
-; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno riportato l'ordine. Velocemente cerchi oggetti di valore per poi sparire finchè non si calmano le acque.^Magari la prossima volta mostreranno più rispetto e faranno marcia indietro.
 menu_town|Sei arrivato a {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Porta che conduce verso un luogo.
@@ -306,7 +306,7 @@ menu_recover_after_death_town_alone|Riprendi conoscenza a ti accorgi di trovarti
 menu_notification_center_under_siege|{s1} è stata assediata da {s2} of {s3}!
 menu_notification_one_side_left|^^^^^La Guerra dell'Anello è terminata!^^Il {s1} ha sconfitto tutti i nemici e ora si erge vittorioso!
 menu_notification_total_defeat|^^^^^La Guerra dell'Anello è terminata per te!^^Il {s1} è stato sconfitto dai suoi nemici e tu sei rimasto solo nella sconfitta!
-; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.
+menu_notification_your_faction_collapsed|^^^^^La tua {s11} madrepatria è stata sconfitta!^Ancora, gli altri alleati rimangono nella guerra. Tu, assieme a qualcuno rimasto di {s11}, potete ancora aiutare la vostra fazione a vincere.
 ; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
 ; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
@@ -341,7 +341,7 @@ mno_rescue_mission|Intrufolati nel covo dello stregone con il favore della notte
 mno_next_rescue_scene_door|Prosegui!
 mno_pick_troops1|Scegli compagni per la missione, {reg0} selezionati
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
-; mno_go_forward|End selecting companions and proceed.
+mno_go_forward|Chiudi la selezione dei compagni e procedi.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Inginocchiati e rendi omaggio.
 mno_swear_oath|Presta un giuramento di vendetta!

@@ -315,20 +315,20 @@ str_npc15_intro|おお戦士よ、御目を称えよ！
 str_npc16_intro|我々東の軍団に、よそ者がまぎれ込むのはめずらしい。 ここで何をしている？さっさと吐け。
 str_npc17_intro|よう。 ここの森に用事があるのかい？
 str_npc1_intro_response_1|やあ、追跡術の達人。 南の野伏たちの調子はどう{だい/}？
-; str_npc2_intro_response_1|My business is Gondor's business, and who are you?
+str_npc2_intro_response_1|ゴンドールの心配事は、私の心配事でもある。君は誰だい？
 str_npc3_intro_response_1|やあ、どうも、何か悪い事をしたか{な/しら}？
 str_npc4_intro_response_1|{これはどうも/あらこんにちは}、お嬢さん。 お名前を伺ってもよろしいか{な/しら}？
 str_npc5_intro_response_1|やあ、エルフの将軍！ お会いできて光栄だ。
 str_npc6_intro_response_1|それがシルヴァン・エルフ流の 来客へのあいさつなのか{い/しら}？
 str_npc7_intro_response_1|やあ、私は{playername}。 ドゥリンの一族の調子はどう{だい/}？
-str_npc8_intro_response_1|こんにちは。 我々と共に戦ってくれる者を探しているん{だ/の}。
+str_npc8_intro_response_1|こんにちは。 我々と共に戦ってくれる者を探している{んだ/の}。
 str_npc9_intro_response_1|脅す相手をよく考えること{だな/ね}、ウルク。{俺/私}はその辺のこそ泥とは違う{ぞ/わよ}。
 str_npc10_intro_response_1|何{だおまえ/よあんた}は？
 str_npc11_intro_response_1|何{だおまえ/よあんた}は？
 str_npc12_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
 str_npc13_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
 str_npc14_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
-; str_npc15_intro_response_1|Praise the Eye, Snaga. What's your story?
+str_npc15_intro_response_1|御目を称えよ、スナガ。何か用か？
 str_npc16_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
 str_npc17_intro_response_1|闇の森は素晴らしい{/わね}。{君/あなた}は何者{だ/なの}？森に詳しいの{かい/}？
 str_npc1_intro_response_2|放っておいて{くれ/ちょうだい}、洞窟の中でおしゃべりをする気にはなれない{んだ/わ}。
@@ -349,12 +349,12 @@ str_npc15_intro_response_2|フン。その貧相なこぶしはしまってお�
 str_npc16_intro_response_2|おまえなどに用はない！
 str_npc17_intro_response_2|ああ、森は素晴らしいが、もう行かなきゃならないんだ。
 str_npc1_backstory_a|わが友人、君は大変なときに来てしまった。 イシリアンは敵の偵察隊やら遊撃隊やらでいっぱいだ。 オークの大群が行軍していくのを見た者もいる。 我々はあの不浄の生き物どもが 大河を渡るのを阻止しようと試みているとこで、 私も野伏の一隊を率いて多くの戦果を挙げた。 我々のファラミア隊長は勇敢だし、 我々があの闇に屈する事はない。
-str_npc2_backstory_a|おお、私についてお尋ねくださるとは、 なんという美しい心配り。 私は執政閣下の大広間につい最近配属されたばかりの衛兵でして、 名誉ある任務ではりますが、 多少、暇をもてあましております。
-; str_npc3_backstory_a|Well, my old helmet here is getting smaller by the minute and the ground seems wobbly as if I rode a mischievous foil. Ah, if I only hadn't drank all that ale last night - I normally have a good head for drink, so it must have been some nasty orc brew.
-; str_npc4_backstory_a|My name is Gálmynë, and I made it my business to know yours, {playername}. Let me explain why.
-; str_npc5_backstory_a|You may have heard tales of my deeds in battles past and forgotten by mortal Men. In the fullness of time this War is yet another time of danger for the Eldar, but it will be the Last War.
+str_npc2_backstory_a|おお、私についてお尋ねくださるとは、 なんという美しい心配り。 私は執政閣下の大広間につい最近配属されたばかりの衛兵でして、 名誉ある任務ではありますが、 多少、暇をもてあましております。
+str_npc3_backstory_a|うむむ、 頭は兜に締め付けられるようで、 足はちゃんと床を踏んでるのかどうかよく分からず ふわふわする。 あー、 昨日の夜はエールを飲みすぎた ― いつもならあれくらいは平気なんだが、 途中から間違えてたちの悪いオークビールを飲んでいたのかも知れん。
+str_npc4_backstory_a|私の名はガルマイネ。 あなたの名前は調べたわ、 {playername}。 説明させてちょうだい。
+str_npc5_backstory_a|君は生身の人間たちが忘れ去ってしまった、 私の数々の戦いにおける功績を 耳にしたことがあるかも知れない。 いずれこの戦いは、 エルダールの危機の 再来とも言うべきものになるだろうが、 これが最後の戦いになるだろう。
 str_npc6_backstory_a|感じの悪いのは謝るわ、旅の人。 でも、ここを訪れる数少ない来客といえば、 信用できない者ばかりなの。 つい一週間まえにここへ来た、 あのドワーフときたら・・・ 何でもないわ。 私はルエヴァンナ、 闇の森のシルヴァン・エルフよ。
-; str_npc7_backstory_a|Polite of you to ask, {playername}. We are fighting off incursions from Easterlings and Gundabad orcs, but so far nothing we and our Dale allies can't handle.
+str_npc7_backstory_a|これはどうもご丁寧に、 {playername}。 わしらは侵攻してくる東夷やグンダバドのオークどもを 追い払っているのだが、 いまのところ、 わしらと同盟国のデールの手に余るような相手はおらん。
 ; str_npc8_backstory_a|I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills.
 str_npc9_backstory_a|あんた、いいね！ わしは、グルム。 上官をやっちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ 以前、 ワラ頭の偵察隊に奇襲されたんじゃがな・・・ やつは一人で勝手に負けよったんじゃ。 「退却」とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって 突撃してくる馬をさばいたのは グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで 殴ってやったわ(ヒッヒッヒッ)。 わしらがおらんかったら、 部隊は全部ミミズのエサになっとったところじゃ。
 str_npc10_backstory_a|俺はドゥルガシュだ！
@@ -365,13 +365,13 @@ str_npc11_backstory_a|おいらは追跡兵には向いてないってんだ。 
 ; str_npc15_backstory_a|I am Bolzog the Gifted, Setter of Bones, Closer of Cuts, and Shaman of Healing. If you go to war for The Eye, you will no doubt have one or other of your little fellows cut about a bit by pale-faced foresters or the horse-lovers. Now, -nar-nar-nar! - Orcs are easy to replace, Oh Great Leader, but can you replace a Warg? A Giant? A Cave Troll? Shi-shi! No! You need me, the Great Bolzog!
 ; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balcoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balcoth, for the very name would check your courage and fill your heart with woe.
 ; str_npc17_backstory_a|They call me Dímborn and I work in the woods. It is nice there. I like the woods. Many trees in the woods. I like trees. I've worked in the woods all my life, because I am strong and because I like trees.
-; str_npc1_backstory_b|You should know that I am an Ithilien Ranger of Dúnedain descent and valor. I know much of tracking and scouting and my skill with bow and sword is known to the orc. I can also train any soul that's willing to fight the coming Shadow.
+str_npc1_backstory_b|私は武勇で知られるドゥネダインの子孫、イシリアンの野伏だ。 追跡と斥候の技術には自信がある。 弓と剣の腕前に関しては、 オークどもがよく知っているだろう。 また、 迫り来る闇と戦おうという意志のある者ならば、 誰でも訓練することができる。
 str_npc2_backstory_b|私はこの白い都の治安を守り、 執政閣下にお仕えするため、 ミナス・ティリスの衛兵となるべく訓練を受けました。
 ; str_npc3_backstory_b|I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
 ; str_npc4_backstory_b|I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan.
 ; str_npc5_backstory_b|Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion.
 str_npc6_backstory_b|わたしは、この美しい森の、 秘密の小道を歩くのがすき。 ときどき息をひそめては、 木々の影から森に住む動物たちの営みを、 そっと観察するの。 めずらしい鳥の歌や、 巣ごもりをする野生の熊たちの姿は、 わたしにとってはエダインが武器をぶつけあったり、 大きな城壁に心を奪われたりするのと同じくらい、 興味を引かれることなの。
-; str_npc7_backstory_b|I helped improve the Erebor defenses and trained some younger dwarven folk, under the direction of my venerated father Dwalin, as is our custom.
+str_npc7_backstory_b|わしはドワーフのしきたり通り、 尊敬する父ドワーリンの教えに従い、 エレボールの守備を固めるのを助け、 若いドワーフたちを訓練した。
 ; str_npc8_backstory_b|I have treated my King Brand for constipation, a common malaise affecting men going to war. A light brew of wormwood, and both the bowels and the mind are put at ease.
 ; str_npc9_backstory_b|So I said to myself, 'Gulm, you want end up as carrion?' and I answered, 'No'.^Next battle, I fell back pretending I was injured. Then, with no one watching, I fell upon my sergeant! Cleaved him almost in half, gharr! Then cut his sidekick snaga nicely^^...Turned out that bloody creeper survived somehow, and started waggling his tongue about all this. Next time I make sure his head is off, gharr...
 str_npc10_backstory_b|俺はアイゼンガルドの狼乗りで、 追跡兵だ。
@@ -384,11 +384,11 @@ str_npc10_backstory_b|俺はアイゼンガルドの狼乗りで、 追跡兵だ
 ; str_npc17_backstory_b|You can make many things out of the trees, you know. It's what I do. I work with trees and make things out of trees. Sometimes bushes also. But I like trees more.
 ; str_npc1_backstory_c|However, I fear we are hopelessly outnumbered here in Ithilien and we won't last long without reinforcements or bolder action by our Steward. I might as well help where my actions would account for more, if my Captain Faramir gives me leave.
 str_npc2_backstory_c|しかしながら、 我が任務の重要性は理解するものの、 私は常日頃、 実際の戦闘を見てみたいと切望しておりまして、 それと・・・ エルフやしゃべる木やオリファントなどというものも見てみたい、 と考えるわけであります！ 指揮官殿、 あなたは旅のご経験が豊富のようだ、 これは断じて、 あなたの格好を見てそう言っているのではありませんよ。 私は物覚えが非常に早く、 さらに料理の上手でして・・・ まあ、部隊で出される食事としては、ですが。 あなたは志願兵を募っていらっしゃると見受けますが、 いかがですか？
-; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
+str_npc3_backstory_c|そういうわけで、 私はここで苦々しさをかみしめつつ、 恥をさらしている。 今頃、 我がエオレドは遠くかなたにおるだろう。 荒野を徘徊する野人やらオークやらをさばきつつ 彼らに追いつく事など、 私には無理だ。 おぬし、 優秀なロヒアリム騎兵がひとり必要だったりしないかね？
 ; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
 ; str_npc5_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
 str_npc6_backstory_c|みたところ、 あなたは戦いに熱心みたいだし、 こんな事は、 あなたには理解できないかもしれないわね。 でも、 あなたは遠く離れた、 いろいろな場所を旅をして来たのよね ― ここ以外の大森林に行った事はある？ わたしをそこへ連れて行けないかしら？
-; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
+str_npc7_backstory_c|この戦いは退屈で、 わしのような気質と血筋を持つ ドワーフの戦士には合わん。 わしの聞いたところだと、 あんたは方々に旅をしては 派手に暴れておるようで、 ドワーフには親切にしてるそうだな？ 一緒に戦ってくれるドワーフがいると、 生き残る可能性がぐーんと上がるぞ。
 ; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
 ; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
 str_npc10_backstory_c|おまえになら仕えてやってもいい。
@@ -401,11 +401,11 @@ str_npc10_backstory_c|おまえになら仕えてやってもいい。
 ; str_npc17_backstory_c|If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know.
 ; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
 str_npc2_backstory_later|このところは、 ここを訪れる人の数も少なくなっております。 あまり良い兆しとは言えません。
-; str_npc3_backstory_later|Still no news of my éored, and I'm keen on riding down some orcs.
+str_npc3_backstory_later|あいかわらず、 我がエオレドからの知らせはない。 私はオークどもを踏み潰したくてうずうずする。
 ; str_npc4_backstory_later|More riders return with their bodies broken, and I try to give aid where I can. But I still feel trapped in a cage.
 ; str_npc5_backstory_later|Have you reconsidered? The time for the Eldar grows short.
 str_npc6_backstory_later|わたしはこの二日間、 大蜘蛛の巣を観察していたの。 初めて見るとその姿の醜さに驚くかも知れないけれど、 彼らは侵入者から森を守っているのよ。 今日はわたしを旅へ誘いに来たの？
-; str_npc7_backstory_later|Building up defensive walls is worthy of any dwarf. But I need to use my axe too. Soon. Let me come with you.
+str_npc7_backstory_later|頑丈な城壁をつくるのは、 すべてのドワーフにとって、 やりがいを感じる仕事だ。 だが、わしは斧も振り回したいんだ。 今すぐ。 わしを一緒に連れて行ってくれないか。
 ; str_npc8_backstory_later|I made another call to our King, this time for vomiting. I hope his resolve to engage the enemy is not related to his conditions. Do you suffer from constipation and vomiting too?
 ; str_npc9_backstory_later|What do you think I do? Gulm is sitting here and waiting for some sneaky snaga to stick him in the dark. Take me with you - I will serve well.
 str_npc10_backstory_later|考え直したか？ 俺は使えるオークだぞ。
@@ -418,11 +418,11 @@ str_npc10_backstory_later|考え直したか？ 俺は使えるオークだぞ�
 ; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
 ; str_npc1_backstory_response_1|If you can get leave, I have much need of an experienced warrior and a tracker.
 str_npc2_backstory_response_1|{君/あなた}の言う通り{だ/よ}。私は志願兵を探している{/の}。
-; str_npc3_backstory_response_1|If you can do without ale, I would welcome a good horseman.
+str_npc3_backstory_response_1|しらふで使い物になるのなら、優秀な騎兵として我が部隊に迎え入れよう。
 ; str_npc4_backstory_response_1|I would welcome the help of a Rohan shieldmaiden, if offered.
 ; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
 ; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
-; str_npc7_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
+str_npc7_backstory_response_1|もちろん{だ/よ}、ドワーフの戦士は歓迎{しよう/するわ}。
 ; str_npc8_backstory_response_1|We can use a healer and a herbalist.
 ; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
 ; str_npc10_backstory_response_1|You will do.
@@ -435,11 +435,11 @@ str_npc2_backstory_response_1|{君/あなた}の言う通り{だ/よ}。私は�
 ; str_npc17_backstory_response_1|Well, one can always learn more about trees. We'd be glad to have you along.
 ; str_npc1_backstory_response_2|I am sorry to hear that. May your faith sustain your valor.
 str_npc2_backstory_response_2|申し訳ない。経験のある戦士を探している{んだ/の}。
-; str_npc3_backstory_response_2|No, sorry. I'm looking for someone more reliable.
-; str_npc4_backstory_response_2|I am sorry, my Lady, there's nothing I can do.
-; str_npc5_backstory_response_2|I'll be back when Lothlórien is in less danger.
-; str_npc6_backstory_response_2|No, sorry. We cannot take hangers-on.
-; str_npc7_backstory_response_2|No, sorry. We do well on our own.
+str_npc3_backstory_response_2|{すまないが/ごめんなさい}、もうちょっと信頼できる者を探している{んだ/の}。
+str_npc4_backstory_response_2|{すまないが/ごめんなさい}、私では力になれない{な/わね}。
+str_npc5_backstory_response_2|ロスロリエンがもうすこし平和になったらまた来る{よ/わ}。
+str_npc6_backstory_response_2|{すまないが/ごめんなさい}、役に立たない者を部隊に置いておく余裕はない{んだ/の}。
+str_npc7_backstory_response_2|せっかく{だが/だけど}、我々だけでうまくやれている{んだ/の}。
 ; str_npc8_backstory_response_2|No, sorry. We only visit healers when we need them.
 ; str_npc9_backstory_response_2|Bah. I don't trust traitors.
 str_npc10_backstory_response_2|おまえなど要らん、この奴隷め。
@@ -456,7 +456,7 @@ str_npc2_signup|ああ、今日はついている！ 私は喜んであなたの
 ; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
 ; str_npc5_signup|I see. I admit I have heard of you and your exploits.
 str_npc6_signup|わたしは暴力や戦争で使う武器は 嫌いだけれど、 いざとなったら自分の身は自分で守れるわ。
-; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
+str_npc7_signup|わしは斧に自信がある。 振り回すのも投げるのも得意だ。 それに、商人との交渉をわしにまかせてくれれば、 経費も浮かせることができるぞ。 あと、戦場で倒れた敵兵から 金目の物を見つけるのも得意だ。
 ; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
 ; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
 str_npc10_signup|本当か？俺を部下にすれば重宝するだろう。
@@ -473,7 +473,7 @@ str_npc2_signup_2|私の上官に話をしてこなくてはなりませんが�
 ; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
 ; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
 ; str_npc6_signup_2|Perhaps I can teach you to move faster and make less noise. Let's go.
-; str_npc7_signup_2|If you can keep the tall-folk in your company in line, especially the sneaky Elves, I'll gladly join you.
+str_npc7_signup_2|あんたがあの背の高い連中、 特に油断も隙もないエルフを ちゃんとしつけといてくれれば、 わしは喜んであんたの部隊に入るよ。
 ; str_npc8_signup_2|I must warn you though, I am fairly useless in battle. But I'm sure you are able to keep a woman of my age safe.
 ; str_npc9_signup_2|But you must decide quickly, the guards here are getting suspicious.
 str_npc10_signup_2|俺を部下にして後悔はさせない。
@@ -489,8 +489,8 @@ str_npc2_signup_response_1|いい{だろう/わ}。この暗い時勢には明�
 str_npc3_signup_response_1|いいだろう。馬に鞍をつけてくれ ― 我々はもうすぐ出発する。
 str_npc4_signup_response_1|素晴らしい。{君/あなた}の準備が整い次第、我々は出立する{/わよ}。
 str_npc5_signup_response_1|エルフの将軍を仲間に迎えることができるとは、光栄です。
-str_npc6_signup_response_1|いいだろう。{君/あなた}がオークを見て逃げ出さないことを祈る{よ/わ}。
-str_npc7_signup_response_1|いいだろう、歴戦のドワーフ殿、我々は歓迎する。
+str_npc6_signup_response_1|いい{だろう/わ}。{君/あなた}がオークを見て逃げ出さないことを祈る{よ/わ}。
+str_npc7_signup_response_1|いい{だろう/わ}、歴戦のドワーフ殿、我々は歓迎する。
 str_npc8_signup_response_1|{君/あなた}の身の安全は私が保障{しよう/するわ}。さあすぐに出発する{ぞ/わよ}。
 str_npc9_signup_response_1|よかろう。{俺/私}の言う通りに働けば、腹一杯食べさせてやろう。
 str_npc10_signup_response_1|よかろう。さあ行くぞ。
@@ -507,7 +507,7 @@ str_npc2_signup_response_2|{すまん/ごめんなさい}、気が変わった{/
 ; str_npc4_signup_response_2|I apologize, my Lady, perhaps another time.
 ; str_npc5_signup_response_2|On second thought, maybe we need to help Lothlórien on our own.
 ; str_npc6_signup_response_2|Sorry, I just can't imagine you on a battlefield.
-; str_npc7_signup_response_2|Sorry, I happen to like Elves.
+str_npc7_signup_response_2|せっかくだ{が/けど}、私はエルフのほうが好きな{んだ/の}。
 ; str_npc8_signup_response_2|I'm sorry, everyone fights in my company.
 ; str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
 ; str_npc10_signup_response_2|I've changed my mind.
@@ -519,7 +519,7 @@ str_npc11_signup_response_2|おまえなど要らん、この奴隷め。
 ; str_npc16_signup_response_2|I've had enough of this.
 ; str_npc17_signup_response_2|On the other hand, I think I've changed my mind. You're a bit of a nut, aren't you?
 ; str_npc1_payment|I would join you, but my Captain Faramir would miss my presence here. [costs {reg14} Influence with {s14}]
-str_npc2_payment|残念ながら、 上官は私の退職を許可してくれませんでした。 [{s14}の影響ポイントが{reg14}必要です]
+str_npc2_payment|残念ながら、 上官は私の退職を許可してくれませんでした。 [{s14}での影響力を{reg14}消費します]
 ; str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll need to settle my account before I can leave. [costs {reg14} Influence with {s14}]
 ; str_npc4_payment|I would join you, but who will care for the wounded if the city is attacked? [costs {reg14} Influence with {s14}]
 ; str_npc5_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien also needs me here. [costs {reg14} Influence with {s14}]
@@ -588,21 +588,21 @@ str_npc4_2ary_morality_speech|隊長、ちょっとよろしいですか。 私�
 
 str_npc1_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
 str_npc2_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-; str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
+str_npc3_personalityclash_speech|隊長、 なぜ{s11}のような者が我らが部隊にいるのだ？ 動きの速いのはまあ認めるが、 奇襲を好みすぎる ― 慎重さで知られる彼の一族とは大違いだ。
 str_npc4_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
 str_npc5_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-; str_npc6_personalityclash_speech|{playername}, I just saw {s11} walk brazenly over a nest of young birds. His clumsiness destroyed the young lives of innocent creatures.
-; str_npc7_personalityclash_speech|Lord {s11} does well in a battle, but I wonder if he blinds the enemy by the shine of his hair? Or they fall in awe of his fame and uppity demeanor?
-; str_npc8_personalityclash_speech|Commander, I must lodge a complaint against {s11}. He continues to pester me about making him a certain brew called 'the green fairy'.
-str_npc9_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc10_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc11_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc12_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc13_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc6_personalityclash_speech|{playername}、 ついさっき、 {s11}が若鳥の巣を堂々と踏み潰して 歩いていくのを見ました。 彼の粗雑さが、 罪のない若い生き物の命を奪ったのです。
+str_npc7_personalityclash_speech|{s11}卿は強いが、 あのきらきら光る髪は、 敵のめくらましになっているんじゃないのか？ それか、 彼の名声と偉そうな物腰に、 敵がびっくりして腰を抜かしているのかも知れんぞ？
+str_npc8_personalityclash_speech|隊長、 私は{s11}に対する苦情を申し立てたいと思います。 彼はことあるごとに 私に「緑の妖精」だとかいうものを調合するよう言って、 嫌がらせをするのです。
+str_npc9_personalityclash_speech|グルムは、{s11}を殺したい。 この話は、もう言ったか？
+str_npc10_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
+str_npc11_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
+str_npc12_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
+str_npc13_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc14_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc15_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc16_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
-str_npc17_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
+str_npc15_personalityclash_speech|わしは{s11}の事が嫌いだ。 これもう言ったか？
+str_npc16_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしたな？
+str_npc17_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
 ; str_npc1_personalityclash_speech_b|I hate {s11}.
 ; str_npc2_personalityclash_speech_b|I hate {s11}.
 ; str_npc3_personalityclash_speech_b|I don't have a quarrel with the people of Gondor, but we would do better with more bold horsemen and less reluctant ground-huggers, if you catch my drift.
@@ -688,23 +688,23 @@ str_npc17_personalityclash2_speech|私が{s11}の事を嫌いだという話は�
 ; str_npc15_personalitymatch_speech_b|I like {s11}.
 ; str_npc16_personalitymatch_speech_b|I like {s11}.
 ; str_npc17_personalitymatch_speech_b|My people get along well with the Woodelves. They like trees too. I like trees too. We all like trees.
-; str_npc1_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc2_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc3_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc4_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc5_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc6_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc7_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc8_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc9_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc10_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc11_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc12_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc13_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc14_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc15_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc16_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
-; str_npc17_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
+str_npc1_retirement_speech|私は戦いに明け暮れる生活に疲れた。 もう引退しようと思う。
+str_npc2_retirement_speech|戦いに明け暮れる生活に疲れてしまいました。 もう引退しようと思います。
+str_npc3_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc4_retirement_speech|戦いに明け暮れる生活に疲れてしまいました。 もう引退しようと思います。
+str_npc5_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc6_retirement_speech|戦いに明け暮れる生活にはもう疲れた。 もう引退するわ。
+str_npc7_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc8_retirement_speech|戦いに明け暮れる生活に疲れてしまいました。 もう引退しようと思います。
+str_npc9_retirement_speech|グルムは戦いに疲れた。 引退する。
+str_npc10_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
+str_npc11_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
+str_npc12_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
+str_npc13_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc14_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc15_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
+str_npc16_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
+str_npc17_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
 ; str_npc1_rehire_speech|It is good to see you again, Captain. Shall I join you once more?
 ; str_npc2_rehire_speech|Happy days! Commander, can I please join you again?
 ; str_npc3_rehire_speech|Ho! Shall we ride again together?
@@ -860,24 +860,24 @@ str_npc17_honorific|かしら
 ; str_comment_you_captured_my_castle_enemy_spiteful|I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come.
 ; str_comment_you_captured_my_castle_enemy_chivalrous|You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!
 ; str_comment_you_captured_my_castle_enemy|You have something that belongs to me -- {s51}. I will make you relinquish it.
-; str_comment_we_defeated_a_lord_unfriendly_spiteful|I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_defeated_a_lord_unfriendly|I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us.
-; str_comment_we_defeated_a_lord_cruel|That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!
-; str_comment_we_defeated_a_lord_quarrelsome|I won't forget how we whipped {s54}? I enjoyed that.
-; str_comment_we_defeated_a_lord_upstanding|I will not forget our victory over {s54}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_defeated_a_lord_default|That was a great victory over {s54}, wasn't it? I am honoured to have fought by your side.
-; str_comment_we_fought_in_siege_unfriendly_spiteful|I suppose you will want to drink to the memory of our capture of {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_fought_in_siege_unfriendly|I will not forget how we together we stormed {s51}, but I can also not forget the other matters that lie between us.
-; str_comment_we_fought_in_siege_cruel|I won't forget how we broke through the walls of {s51} and put its defenders to the sword. It is a sweet memory.
-; str_comment_we_fought_in_siege_quarrelsome|Remember how the enemy squealed when we came over the walls of {s51}? They had thought they were safe! We wiped the smug smiles of their faces!
-; str_comment_we_fought_in_siege_upstanding|I will not forget our capture of {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_fought_in_siege_default|I will not forget how together we captured {s51}. I am honoured to have fought by your side.
-; str_comment_we_fought_in_major_battle_unfriendly_spiteful|I suppose you will want to drink to the memory of our great victory near {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_fought_in_major_battle_unfriendly|I will not forget how we fought together in the great battle near {s51}, but I can also not forget the other matters that lie between us.
-; str_comment_we_fought_in_major_battle_cruel|I won't forget the great battle near {s51}, when we broke through the enemy lines and they ran screaming before us. It is a sweet memory.
-; str_comment_we_fought_in_major_battle_quarrelsome|That was a fine fight near {s51}, when we made those bastards run!
-; str_comment_we_fought_in_major_battle_upstanding|I will not forget how we fought side by side at the great battle near {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_fought_in_major_battle_default|I will not forget how we fought side by side at the great battle near {s51}. I am honoured to have fought by your side.
+str_comment_we_defeated_a_lord_unfriendly_spiteful|我々の{s54}戦の勝利を祝って 祝杯でも挙げようと考えているのなら、 やめておくがいい ―― おぬしがいままでに犯した不義の行いの数々は、 あの程度で拭いとれるものではないのだからな。
+str_comment_we_defeated_a_lord_unfriendly|{s54}戦でおぬしと共に戦った事は決して忘れないが、 我々の間にあるわだかまりもまた、 決して忘れる事はできない。
+str_comment_we_defeated_a_lord_cruel|あの{s54}との戦いは、我々の大勝利であったな？ 敵勢を丸ごとからすの餌にしてくれたわ！
+str_comment_we_defeated_a_lord_quarrelsome|ともに{s54}の尻を蹴り飛ばしてやったのは、 痛快であったな？ あれは愉快であった。
+str_comment_we_defeated_a_lord_upstanding|我々が力を合わせて掴んだ{s54}戦の勝利は、 決して忘れない。 我々の幸運を天に感謝し、 おごり高ぶらぬよう、 自らを戒めよう。
+str_comment_we_defeated_a_lord_default|あの{s54}戦は、大勝利であったな？ おぬしと共に戦うことができて、光栄に思う。
+str_comment_we_fought_in_siege_unfriendly_spiteful|{s51}を我々の手で捕らえたあかつきに 祝杯でも挙げようと考えているのかも知れんが、 やめておけ ―― おぬしがいままでに犯した不義の行いの数々は、 あの程度で拭いとれるものではない。
+str_comment_we_fought_in_siege_unfriendly|おぬしと共に{s51}を襲撃した事は決して忘れないが、 我々の間にあるわだかまりもまた、 決して忘れる事はできない。
+str_comment_we_fought_in_siege_cruel|おぬしと共にあの{s51}の城壁を打ち破り、 守備兵どもを蹴散らした事は決して忘れぬ。 あれは愉快な思い出となった。
+str_comment_we_fought_in_siege_quarrelsome|我々が{s51}の城壁を突破したときの、 敵兵の悲鳴は覚えておるか？ あやつら、 城壁を抜かれるなど思いもよらなかったらしい！ 余裕の笑みを浮かべておった顔が 一気に青ざめるのは、 愉快であった！
+str_comment_we_fought_in_siege_upstanding|我々が力を合わせて{s51}を捕らえた事は、 決して忘れない。 我々の幸運を天に感謝し、 おごり高ぶらぬよう、 自らを戒めよう。
+str_comment_we_fought_in_siege_default|おぬしと共に{s51}を捕らえた事は、決して忘れない。 おぬしと共に戦うことができて、光栄に思う。
+str_comment_we_fought_in_major_battle_unfriendly_spiteful|我々の{s51}での戦いの勝利を祝って 祝杯でも挙げようと考えているのなら、 やめておくがいい ―― おぬしがいままでに犯した不義の行いの数々は、 あの程度で拭いとれるものではないのだからな。
+str_comment_we_fought_in_major_battle_unfriendly|おぬしと共に戦った{s51}での戦いは決して忘れないが、 我々の間にあるわだかまりもまた、 決して忘れる事はできない。
+str_comment_we_fought_in_major_battle_cruel|おぬしと共に敵陣を切り裂き、 悲鳴を上げる敵兵を思う存分追い回した {s51}での大いなる戦いは、 決して忘れぬ。 あれは愉快であった。
+str_comment_we_fought_in_major_battle_quarrelsome|おぬしと共にあの臆病者の敵勢を 追い回した{s51}での戦いは、 実に痛快であったな！
+str_comment_we_fought_in_major_battle_upstanding|我々が力を合わせて戦った {s51}での大いなる戦いは、 決して忘れない。 我々の幸運を天に感謝し、 おごり高ぶらぬよう、 自らを戒めよう。
+str_comment_we_fought_in_major_battle_default|おぬしと共に戦った{s51}の大いなる戦いは、 決して忘れない。 おぬしと共に戦うことができて、光栄に思う。
 ; str_comment_you_defeated_a_lord_allied_liege|So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that.
 ; str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|I heard that you fought and defeated {s54}. Every dog has its day, I suppose.
 ; str_comment_you_defeated_a_lord_allied_spiteful|I heard that you fought and defeated that dog {s54}. Ah, if only I could have heard him whimpering for mercy.
@@ -984,12 +984,12 @@ str_npc17_honorific|かしら
 ; str_surrender_demand_sadistic|Surrender or I'll gut you like a fish!
 ; str_surrender_demand_goodnatured|We have the advantage of you. Yield, and you will be well-treated.
 ; str_surrender_demand_upstanding|You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed.
-; str_surrender_offer_default|Stop! I yield!
-; str_surrender_offer_martial|Stop! I yield!
-; str_surrender_offer_quarrelsome|Enough! You win today, you dog! Ach, the shame of it!
+str_surrender_offer_default|待て！降参だ！
+str_surrender_offer_martial|待て！降参だ！
+str_surrender_offer_quarrelsome|もうよい！今日はおぬしの勝ちだ、 この獣め！ くそっ、なんたる恥だ！
 ; str_surrender_offer_pitiless|I yield! You have won. Cursed be this day!
-; str_surrender_offer_cunning|Stop! I yield to you!
-; str_surrender_offer_sadistic|I give up! I give up! Call back your dogs!
+str_surrender_offer_cunning|待て！降参する！
+str_surrender_offer_sadistic|降参だ！降参だ！ おぬしのこの猛犬どもを呼び戻してくれ！
 ; str_surrender_offer_goodnatured|I yield! Congratulations on your victory, {sir/madame}!
 ; str_surrender_offer_upstanding|I yield! Grant me the honours of war, and do yourself credit!
 ; str_prisoner_released_default|You have my gratitude, {sir/madame}. I shall not forget your kindness.
@@ -1009,29 +1009,29 @@ str_enemy_meet_sadistic|誰だ貴様は？ 舌を切り取られぬうちに、�
 str_enemy_meet_goodnatured|指揮官殿、名を名乗られよ。 戦う相手の名前を知っておきたい。
 str_enemy_meet_upstanding|我らが行く手をさえぎる不届き者め、 おぬしは誰だ？
 str_battle_won_default|先ほどのおぬしの働きは、見事であった。
-; str_battle_won_martial|There is no greater fortune than the chance to show one's valor on the field of arms!
+str_battle_won_martial|戦場において我らが勇気を 世界に示すことができるというのは、 この上ない幸せであるな！
 str_battle_won_quarrelsome|フン！ あの役立たずどもに、 モノのひとつふたつ、 教えてやったわ。 そうであろう？
 str_battle_won_pitiless|我々が力を合わせれば、 敵は我々の名前を耳にしただけで 恐れおののくようになるであろう！
-; str_battle_won_cunning|Now, we must be sure to press our advantage, so that the blood shed today is not wasted.
-; str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
+str_battle_won_cunning|この日の犠牲を無駄にしないためにも、 今こそ攻勢に出るべきだ。
+str_battle_won_sadistic|やつらの死体は身ぐるみをはいで からすの餌とし、 我々に刃向かう者たちの末路を 世に知らしめようではないか。
 ; str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
-; str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
-; str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
-; str_battle_won_grudging_martial|{playername} -- you have shown yourself a worthy {man/woman} today, whatever your misdeeds in the past.
-; str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
-; str_battle_won_grudging_pitiless|Your help was most valuable today. I would not imagine that you came to help me out of kindness, but I nonetheless thank you.
+str_battle_won_upstanding|さあ、我らの勝利を天に感謝するとともに、 今日の多くの犠牲者たちに哀悼の祈りをささげよう。
+str_battle_won_grudging_default|今日はおぬしのおかげで 戦いの流れを引き寄せる事ができた。 私がおぬしに対して どういう感情を持っていようと、 おぬしの勇猛さは認めざるを得ない。
+str_battle_won_grudging_martial|{playername} ―― いままでの悪行はともかく、 今日のおぬしはみずからの価値を証明してみせた。
+str_battle_won_grudging_quarrelsome|フム。本来ならば、 おぬしの顔など見たくもないのだが、 今日ばかりはおぬしに 礼を言わねばならんな。
+str_battle_won_grudging_pitiless|今日のおぬしの活躍は抜群であった。 おぬしが親切から我らを助けに来たとも思えぬが、 とにかく礼を言う。
 ; str_battle_won_grudging_cunning|It would be unwise of me not to thank you for coming to help me in my hour of need. So... You have my gratitude.
-; str_battle_won_grudging_sadistic|Well! How touching! {playername} has come to rescue me.
-; str_battle_won_grudging_goodnatured|{playername}! I can't say that we've always gotten along in the past, but you fought well today. My thanks to you!
-; str_battle_won_grudging_upstanding|Perhaps I was wrong about you. Your arrival was most timely. You have my gratitude.
-; str_battle_won_unfriendly_default|So you're here. Well, better late than never, I suppose.
-; str_battle_won_unfriendly_martial|We have hard harsh words in the past, but for now let us simply enjoy our victory.
-; str_battle_won_unfriendly_quarrelsome|If you're standing there waiting for thanks, you can keep waiting. Your help wasn't really needed, but I guess you had nothing better to do, right?
-; str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
-; str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
-; str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
-; str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
-; str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
+str_battle_won_grudging_sadistic|これはこれは！ なんと感動的な話か！ {playername}様が、 私めを助けに来てくださった。
+str_battle_won_grudging_goodnatured|{playername}！ 我々の間には わだかまりもあったかも知れないが、 今日はよく戦ってくれた。 礼を言う！
+str_battle_won_grudging_upstanding|私はおぬしを誤解していたのかも知れんな。 おぬしの時をはずさぬ加勢は、 見事というほかない。 感謝する。
+str_battle_won_unfriendly_default|ほう、おぬし、いたのか。 まあ、 遅れても、 来るだけましかも知れんな。
+str_battle_won_unfriendly_martial|我々の間では口論もあったが、 今は共に勝利を祝おう。
+str_battle_won_unfriendly_quarrelsome|もし私からの礼を待ってそこに突っ立っているのなら、 いつまでもそこに立っているといい。 おぬしの加勢など不要であったが、 どうせ他にする事もなかったのであろう？
+str_battle_won_unfriendly_pitiless|おぬしはまるで、 ライオンの仕留めた獲物に群がるハイエナのようだ。 まあよい、戦利品は好きに漁ってゆけ。
+str_battle_won_unfriendly_cunning|{playername}か・・・ まあ、おぬしが我らの足を引っ張るようなことはなかったが、 お世辞を言う気にはなれんな。
+str_battle_won_unfriendly_sadistic|さがれ、屍肉に群がるハゲタカめ！ これは我らの勝利だ。 おぬしがどうのような姦計をめぐらせても 盗むことはできないぞ。
+str_battle_won_unfriendly_goodnatured|ああ、おぬしか。 まあ一応、おぬしにも礼を言っておこうか。
+str_battle_won_unfriendly_upstanding|おぬしの助勢に感謝する。 余計な事を言ってしまう前に、 これで失礼する。
 str_troop_train_request_default|あの連中をしごき上げるには、 おぬしのような人物が必要なのだ。
 str_troop_train_request_martial|あの連中には、勇気というものを 目の前に示してやる必要があるのだ。
 str_troop_train_request_quarrelsome|うすのろの肥えた豚どもめ。 あいつらを見ると吐き気がする。
@@ -1159,9 +1159,9 @@ str_troop_train_request_quarrelsome|うすのろの肥えた豚どもめ。 あ�
 ; str_gossip_about_character_sadistic|They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man.
 ; str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
 ; str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
-; str_latest_rumor|The latest rumor you heard about {s6} was:
-; str_faction_strength_crushed|crushed
-; str_faction_strength_spent_and_wavering|spent and wavering
+str_latest_rumor|最後に聞いた{s6}に関するうわさ話:
+str_faction_strength_crushed|壊滅
+str_faction_strength_spent_and_wavering|風前の灯
 str_faction_strength_weakened|弱小
 str_faction_strength_fair|弱い
 str_faction_strength_average|平凡
@@ -1807,70 +1807,70 @@ str_mordor_gift4|奴隷農民
 str_isengard_gift0|干し人肉
 str_isengard_gift1|黒い鉄の鎖
 str_isengard_gift2|拷問器具
-; str_isengard_gift3|Alchemist Glasswork
-; str_isengard_gift4|Saruman's Petty Rings
-; str_lorien_gift0|Seeds, Nuts and Berries
-; str_lorien_gift1|Cold Lanterns and Strong Rope
+str_isengard_gift3|錬金術師のガラス器具
+str_isengard_gift4|サルマンの小さな指輪
+str_lorien_gift0|種と木の実とベリー
+str_lorien_gift1|オイルランプと強靭なロープ
 str_lorien_gift2|レンバス
-; str_lorien_gift3|Silver Belts and Broaches
-; str_lorien_gift4|Elven Cloaks
-; str_imladris_gift0|White Bread and Herbal Butter
-; str_imladris_gift1|Crystal Glassware
-; str_imladris_gift2|Miruvor
-; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
-; str_imladris_gift4|Healing Herbs and Oitments
-; str_woodelf_gift0|Soft Animal Hides
-; str_woodelf_gift1|Arrow Heads and Fletching
-; str_woodelf_gift2|Hunting Spears
-; str_woodelf_gift3|Trained Birds of Prey
-; str_woodelf_gift4|Drinking Cups of Red Gold
-; str_dale_gift0|Semi-Precious Stones and Glass Beads
-; str_dale_gift1|Codexes of Heroic Sagas
-; str_dale_gift2|Dorwinion Wine
-; str_dale_gift3|Luxurious Furs
-; str_dale_gift4|Intricate Toys and Instruments
-; str_harad_gift0|Figs and Pomegranates
-; str_harad_gift1|Warrior Necklaces
-; str_harad_gift2|Carved Ivory
-; str_harad_gift3|Sacred Snake Wine
-; str_harad_gift4|Golden Serpent Statues
-; str_rhun_gift0|Waterskins
-; str_rhun_gift1|Tattoo Ink
-; str_rhun_gift2|Headgear with Horns and Antlers
-; str_rhun_gift3|Horsehair Whips
-; str_rhun_gift4|Horse Meat and Milk
-; str_khand_gift0|Colourful Spices
-; str_khand_gift1|Rolls of Silk
-; str_khand_gift2|Hunting Falcons
+str_lorien_gift3|銀のベルトとブローチ
+str_lorien_gift4|エルフのマント
+str_imladris_gift0|食パンとハーブ入りバター
+str_imladris_gift1|クリスタルガラスの食器
+str_imladris_gift2|ミルヴォール
+str_imladris_gift3|刺繍入りの軍旗と銀をちりばめた角笛
+str_imladris_gift4|薬草と軟膏
+str_woodelf_gift0|柔らかい動物の毛皮
+str_woodelf_gift1|矢じりと矢羽
+str_woodelf_gift2|狩猟用の槍
+str_woodelf_gift3|訓練された猛禽類
+str_woodelf_gift4|赤金の酒杯
+str_dale_gift0|半貴石とガラスのビーズ
+str_dale_gift1|英雄伝の冊子写本
+str_dale_gift2|ドルイニオン産の葡萄酒
+str_dale_gift3|豪華な毛皮
+str_dale_gift4|難解なおもちゃと楽器
+str_harad_gift0|いちじくと、ざくろ
+str_harad_gift1|戦士の首飾り
+str_harad_gift2|彫刻の入った象牙
+str_harad_gift3|神聖な蛇の果実酒
+str_harad_gift4|金の蛇の彫像
+str_rhun_gift0|水を入れる皮袋
+str_rhun_gift1|入れ墨用の墨
+str_rhun_gift2|角笛と鹿の角の被り物
+str_rhun_gift3|馬の毛の鞭
+str_rhun_gift4|馬の肉と牛乳
+str_khand_gift0|色とりどりの香辛料
+str_khand_gift1|絹の生地
+str_khand_gift2|鷹狩り用の鷹
 ; str_khand_gift3|Ingots of Water Steel
-; str_khand_gift4|Sacred Warrior Masks
-; str_umbar_gift0|Oysters and Sea Salt
-; str_umbar_gift1|Whalebone Combs and Fishing Hooks
-; str_umbar_gift2|Pleasure Slaves
-; str_umbar_gift3|Sailing Maps of the Southern Seas
-; str_umbar_gift4|Mysterious Numenorean Schematics
-; str_moria_gift0|Putrid Dwarven Ale
-; str_moria_gift1|Coal
+str_khand_gift4|神聖な戦士のマスク
+str_umbar_gift0|カキと海塩
+str_umbar_gift1|すき櫛と釣り針
+str_umbar_gift2|娯楽用奴隷
+str_umbar_gift3|南の海の航海用地図
+str_umbar_gift4|神秘的なヌーメノールの図面
+str_moria_gift0|腐ったドワーフエール
+str_moria_gift1|石炭
 ; str_moria_gift2|Luminescent Deep-Worms
 ; str_moria_gift3|Black Cave Pearls
-; str_moria_gift4|Dwarven Metal Scraps
-; str_guldur_gift0|Black Liquor
-; str_guldur_gift1|Poisonous Vines of Torture
-; str_guldur_gift2|Wheeled Slave Cages
-; str_guldur_gift3|Giant Spider Eggs
-; str_guldur_gift4|Tomes of Dark Sorcery
+str_moria_gift4|ドワーフの鉄くず
+str_guldur_gift0|黒いリキュール
+str_guldur_gift1|拷問用の毒のつる
+str_guldur_gift2|車輪つきの奴隷用の檻
+str_guldur_gift3|大蜘蛛の卵
+str_guldur_gift4|闇の儀式の本
 ; str_gundabad_gift0|Spiky Bone Piercings
 ; str_gundabad_gift1|Protective Warpaints
-; str_gundabad_gift2|Boiled Dwarven Lard
-; str_gundabad_gift3|Mummified Corpse Idols
-; str_gundabad_gift4|Black Wargs
-; str_dunland_gift0|Stinky Goat Cheese
-; str_dunland_gift1|Flint Sacrificial Knives
-; str_dunland_gift2|Bronze Arm Rings
-; str_dunland_gift3|Goats
-; str_dunland_gift4|Wolf Skulls and Claws
-; str_beorn_gift0|Honey Cakes and Mead
-; str_beorn_gift1|Bee Wax and Hemp Cloth
-; str_beorn_gift2|Bee Hives
-; str_beorn_gift3|Amber Necklaces
-; str_beorn_gift4|Well Trained Ponies
+str_gundabad_gift2|煮沸したドワーフのラード
+str_gundabad_gift3|ミイラの偶像
+str_gundabad_gift4|黒ワーグ
+str_dunland_gift0|くさいヤギのチーズ
+str_dunland_gift1|生け贄のフリントナイフ
+str_dunland_gift2|銅の腕輪
+str_dunland_gift3|ヤギ
+str_dunland_gift4|狼の頭骨と前足
+str_beorn_gift0|はちみつのケーキと蜂蜜酒
+str_beorn_gift1|蜜蝋と麻織物
+str_beorn_gift2|はちの巣
+str_beorn_gift3|こはくの首飾り
+str_beorn_gift4|よく調教されたポニー

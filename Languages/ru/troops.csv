@@ -1,15 +1,15 @@
 trp_unarmed_troop|Безоружный Воин
 trp_unarmed_troop_pl|Безоружные Воины
-trp_tutorial_maceman|Воин с Булавой
-trp_tutorial_maceman_pl|Воины с Булавами
+trp_tutorial_maceman|Воин с булавой
+trp_tutorial_maceman_pl|Воины с булавами
 trp_tutorial_archer|Лучник
 trp_tutorial_archer_pl|Лучники
 trp_tutorial_swordsman|Мечник
 trp_tutorial_swordsman_pl|Мечники
 trp_novice_fighter|Новобранец
 trp_novice_fighter_pl|Новобранцы
-trp_regular_fighter|Регулярный Боец
-trp_regular_fighter_pl|Регулярные Бойцы
+trp_regular_fighter|Регулярный Солдат
+trp_regular_fighter_pl|Регулярные Солдаты
 trp_veteran_fighter|Ветеран
 trp_veteran_fighter_pl|Ветераны
 trp_champion_fighter|Чемпион
@@ -18,12 +18,12 @@ trp_arena_training_fighter_1|Новобранец
 trp_arena_training_fighter_1_pl|Новобранцы
 trp_arena_training_fighter_2|Новобранец
 trp_arena_training_fighter_2_pl|Новобранцы
-trp_arena_training_fighter_3|Регулярный Боец
-trp_arena_training_fighter_3_pl|Регулярные Бойцы
-trp_arena_training_fighter_4|Регулярный Боец
-trp_arena_training_fighter_4_pl|Регулярные Бойцы
-trp_arena_training_fighter_5|Регулярный Боец
-trp_arena_training_fighter_5_pl|Регулярные Бойцы
+trp_arena_training_fighter_3|Регулярный Солдат
+trp_arena_training_fighter_3_pl|Регулярные Солдаты
+trp_arena_training_fighter_4|Регулярный Солдат
+trp_arena_training_fighter_4_pl|Регулярные Солдаты
+trp_arena_training_fighter_5|Регулярный Солдат
+trp_arena_training_fighter_5_pl|Регулярные Солдаты
 trp_arena_training_fighter_6|Ветеран
 trp_arena_training_fighter_6_pl|Ветераны
 trp_arena_training_fighter_7|Ветеран
@@ -42,14 +42,14 @@ trp_townsman|Горожанин
 trp_townsman_pl|Горожане
 trp_watchman|Дозорный
 trp_watchman_pl|Дозорные
-trp_woodmen_youth|Лесник
-trp_woodmen_youth_pl|Лесники
+trp_woodmen_youth|Лесовик
+trp_woodmen_youth_pl|Лесовики
 trp_woodmen_forester|Лесничий
-trp_woodmen_forester_pl|Лесничии
-trp_woodmen_skilled_forester|Искусный Лесничий
-trp_woodmen_skilled_forester_pl|Искусные Лесничие
-trp_woodmen_axemen|Дровосек
-trp_woodmen_axemen_pl|Дровосеки
+trp_woodmen_forester_pl|Лесничий
+trp_woodmen_skilled_forester|Опытный Лесничий
+trp_woodmen_skilled_forester_pl|Опытные Лесничие
+trp_woodmen_axemen|Лесовик-Дровосек
+trp_woodmen_axemen_pl|Лесовики-Дровосеки
 trp_woodmen_master_axemen|Дровосек-Мастер
 trp_woodmen_master_axemen_pl|Дровосеки-Мастера
 trp_woodmen_tracker|Лесной Охотник
@@ -406,8 +406,8 @@ trp_arnor_horsemen|Арнорский Всадник
 trp_arnor_horsemen_pl|Арнорские Всадники
 trp_knight_of_arnor|Рыцарь Арнора
 trp_knight_of_arnor_pl|Рыцари Арнора
-trp_dunedain_ranger|Дунадан-Рейнджер
-trp_dunedain_ranger_pl|Дунаданы-Рейнджеры
+trp_dunedain_ranger|Следопыт Дунэдайна
+trp_dunedain_ranger_pl|Следопыты Дунэдайна
 trp_dunedain_veteran_ranger|Дунаданский Рейнджер-Ветеран
 trp_dunedain_veteran_ranger_pl|Дунаданские Рейнджеры-Ветераны
 trp_dunedain_master_ranger|Дунаданский Рейнджер-Мастер
@@ -470,15 +470,15 @@ trp_harad_infantry|Харадский Лёгкий Всадник
 trp_harad_infantry_pl|Харадские Лёгкие Всадники
 trp_harad_veteran_infantry|Харадрим Копейщик
 trp_harad_veteran_infantry_pl|Харадримы Копейщики
-trp_harad_tiger_guard|Стражник Тигра
-trp_harad_tiger_guard_pl|Стража Тигра
-trp_harad_swordsman|Харадрим Мечник
-trp_harad_swordsman_pl|Харадримы Мечники
-trp_harad_lion_guard|Львиный Стражник
-trp_harad_lion_guard_pl|Львиная Стража
-trp_harad_skirmisher|Харадрим Застрельщик
-trp_harad_skirmisher_pl|Харадримы Застрельщики
-trp_harad_archer|Харадримы Лучник
+trp_harad_tiger_guard|Страж Тигра
+trp_harad_tiger_guard_pl|Стражи Тигра
+trp_harad_swordsman|Харадрим мечник
+trp_harad_swordsman_pl|Харадримы мечники
+trp_harad_lion_guard|Страж Льва
+trp_harad_lion_guard_pl|Стража Льва
+trp_harad_skirmisher|Харадрим застрельщик
+trp_harad_skirmisher_pl|Харадримы застрельщики
+trp_harad_archer|Харадрим лучники
 trp_harad_archer_pl|Харадримы Лучники
 trp_harad_eagle_guard|Орлиный Стражник
 trp_harad_eagle_guard_pl|Орлиная Стража
@@ -636,8 +636,8 @@ trp_fighting_uruk_hai_berserker|Боевой Урук-хай Берсерк
 trp_fighting_uruk_hai_berserker_pl|Боевые Урук-хаи Берсерки
 trp_uruk_snaga_of_isengard|Новорожденный Урук-хай
 trp_uruk_snaga_of_isengard_pl|Новорожденные Урук-хаи
-trp_uruk_hai_of_isengard|Урук-хай Изенгарда
-trp_uruk_hai_of_isengard_pl|Урук-хаи Изенгарда
+trp_uruk_hai_of_isengard|Урук-хаи Изенгарда
+trp_uruk_hai_of_isengard_pl|Урук-хай Изенгарда
 trp_large_uruk_hai_of_isengard|Крупный Урук-хай Изенгарда
 trp_large_uruk_hai_of_isengard_pl|Крупные Урук-хаи Изенгарда
 trp_fighting_uruk_hai_warrior|Боевой Урук-хай Воин
@@ -793,7 +793,7 @@ trp_captain_of_isengard_pl|Командиры Изенгарда
 trp_high_captain_of_isengard|Старший Командир Изенгарда
 trp_high_captain_of_isengard_pl|Старшие Командиры Изенгарда
 trp_lieutenant_of_mordor|Лейтенант Мордора
-trp_lieutenant_of_mordor_pl|Лейтенанты Мордора 
+trp_lieutenant_of_mordor_pl|Лейтенанты Мордора
 trp_captain_of_mordor|Командир Мордора
 trp_captain_of_mordor_pl|Командиры Мордора
 trp_high_captain_of_mordor|Старший Командир Мордора
@@ -806,8 +806,8 @@ trp_harad_chieftain|Вождь Харада
 trp_harad_chieftain_pl|Вожди Харада
 trp_harad_lieutenant|Лейтенант Харада
 trp_harad_lieutenant_pl|Лейтенанты Харада
-trp_black_numenorean_captain|Коммандир Черных Нуменорцев
-trp_black_numenorean_captain_pl|Коммандиры Черных Нуменорцев
+trp_black_numenorean_captain|Командир Черных Нуменорцев
+trp_black_numenorean_captain_pl|Командиры Черных Нуменорцев
 trp_black_numenorean_lieutenant|Лейтенант Черных Нуменорцев
 trp_black_numenorean_lieutenant_pl|Лейтенанты Черных Нуменорцев
 trp_dunnish_chieftain|Вождь Дунланда
@@ -816,7 +816,7 @@ trp_dunnish_lieutenant|Хетмен Дунланда
 trp_dunnish_lieutenant_pl|Хетмены Дунланда
 trp_goblin_chieftain|Вождь Гоблинов
 trp_goblin_chieftain_pl|Вожди Гоблинов
-trp_captain_of_gondor|Командир Гондора 
+trp_captain_of_gondor|Командир Гондора
 trp_captain_of_gondor_pl|Командиры Гондора
 trp_nobleman|Дворянин
 trp_nobleman_pl|Дворяне
@@ -833,11 +833,11 @@ trp_looter_pl|Грабители
 trp_bandit|Бандит
 trp_bandit_pl|Бандиты
 trp_brigand|Разбойник
-trp_brigand_pl|Разбойники
+trp_brigand_pl|Бандиты
 trp_mountain_bandit|Горный Бандит
-trp_mountain_bandit_pl|Горные Бандиты
+trp_mountain_bandit_pl|Горные Разбойники
 trp_forest_bandit|Лесной Бандит
-trp_forest_bandit_pl|Лесные Бандиты
+trp_forest_bandit_pl|Лесные Разбойники
 trp_sea_raider|Морской Налётчик
 trp_sea_raider_pl|Морские Налётчики
 trp_steppe_bandit|Степной Бандит
@@ -847,7 +847,7 @@ trp_manhunter_pl|Охотники на людей
 trp_kidnapped_girl|Похищенная Девушка
 trp_kidnapped_girl_pl|Похищенные Девушки
 trp_refugee|Беженец
-trp_refugee_pl|Беженцы \\
+trp_refugee_pl|Беженцы
 trp_peasant_woman|Крестьянка
 trp_peasant_woman_pl|Крестьянки
 trp_caravan_master|Владелец Каравана
@@ -908,16 +908,16 @@ trp_trainer_khand|Тренер
 trp_trainer_rhun|Тренер
 trp_trainer_harad|Тренер
 trp_trainer_umbar|Тренер
-trp_ransom_broker_1|Посредник
+trp_ransom_broker_1| Посредник
 trp_ransom_broker_2|Посредник
-trp_ransom_broker_3|Посредник
-trp_ransom_broker_4|Посредник
-trp_ransom_broker_5|Посредник
-trp_ransom_broker_6|Посредник
-trp_ransom_broker_7|Посредник
-trp_ransom_broker_8|Посредник
-trp_ransom_broker_9|Посредник
-trp_ransom_broker_10|Посредник
+trp_ransom_broker_3| Посредник
+trp_ransom_broker_4| Посредник
+trp_ransom_broker_5| Посредник
+trp_ransom_broker_6| Посредник 
+trp_ransom_broker_7| Посредник
+trp_ransom_broker_8| Посредник
+trp_ransom_broker_9| Посредник
+trp_ransom_broker_10| Посредник
 trp_tavern_traveler_1|Путешественник
 trp_tavern_traveler_2|Путешественник
 trp_tavern_traveler_3|Путешественник
@@ -1043,7 +1043,7 @@ trp_knight_4_17|Грумрунт Хозяин Хлыста
 trp_knight_4_18|Гримсоб Хлестатель
 trp_knight_5_1|Лорд Халвард
 trp_knight_5_2|Лорд Бард
-trp_knight_5_3|Лорд  Эсгараин
+trp_knight_5_3|Лорд Эсгараин
 trp_knight_5_6|Фулгни Длиннобородый
 trp_knight_5_7|Торин Каменный Шлем
 trp_knight_5_11|Вождь Фудрейм
@@ -1073,7 +1073,7 @@ trp_smith_wosgiliath_pl|Передвижная Кузница
 trp_smith_calembel|Агроном
 trp_smith_calembel_pl|Кузница
 trp_smith_hannun|Фал Рейнджер Кузнец
-trp_smith_hannun_pl|Склад снаряжения Рейнджеров 
+trp_smith_hannun_pl|Склад снаряжения Рейнджеров
 trp_smith_candros|Калимдор
 trp_smith_candros_pl|Кузница
 trp_smith_edoras|Эаоден Мастер по Стали
@@ -1150,7 +1150,7 @@ trp_town_50_weaponsmith|Оружейник
 trp_town_50_weaponsmith_pl|Кузница
 trp_smith_gondor_ac|Бор Оружейник
 trp_smith_gondor_ac_pl|Лагерная Кузница
-trp_smith_rohan_ac|Деор Производитель Шлемов
+trp_smith_rohan_ac|Деор Изготовитель Шлемов
 trp_smith_rohan_ac_pl|Лагерная Кузница
 trp_smith_mordor_ac|Хурбаг Привратный Кузнец
 trp_smith_mordor_ac_pl|Кузница
@@ -1164,7 +1164,7 @@ trp_smith_dwarf_ac|Кузнец Железных Холмов
 trp_smith_dwarf_ac_pl|Гномьи Лагерные Кузнецы
 trp_smith_gundabad_ac|Блург Продавец Снега
 trp_smith_gundabad_ac_pl|Кузница
-trp_smith_rhun_ac|Бранимир Бронник 
+trp_smith_rhun_ac|Бранимир Бронник
 trp_smith_rhun_ac_pl|Передвижная Кузница
 trp_smith_guldur_ac|Штазг Дулбаш
 trp_smith_guldur_ac_pl|Кузница
@@ -1174,9 +1174,9 @@ trp_smith_dunland_ac|Дорровалд Железная Пика
 trp_smith_dunland_ac_pl|Кузница
 trp_smith_harad_ac|Хар Стальные Клещи
 trp_smith_harad_ac_pl|Кузница
-trp_smith_khand_ac|Пушарт Торгаш
+trp_smith_khand_ac|Пушарт, Торгаш
 trp_smith_khand_ac_pl|Кузница
-trp_smith_umbar_ac|Фуинир Кузнец
+trp_smith_umbar_ac|Фуинир, Кузнец
 trp_smith_umbar_ac_pl|Кузница
 trp_barman_mtirith|Трактирщик
 trp_barman_mtirith_pl|Цитадель
@@ -1206,13 +1206,13 @@ trp_barman_aldburg|Трактирщик
 trp_barman_aldburg_pl|Замок
 trp_barman_hornburg|Трактирщик
 trp_barman_hornburg_pl|Королевский Зал
-trp_barman_eastemnet|Хозяин Таверны
+trp_barman_eastemnet|Трактирщик
 trp_barman_eastemnet_pl|Замок
-trp_barman_westfold|Хозяин Таверны
+trp_barman_westfold|Трактирщик
 trp_barman_westfold_pl|Замок
-trp_barman_westemnet|Хозяин Таверны
+trp_barman_westemnet|Трактирщик
 trp_barman_westemnet_pl|Замок
-trp_barman_eastfold|Хозяин Таверны
+trp_barman_eastfold|Трактирщик
 trp_barman_eastfold_pl|Замок
 trp_barman_baraddur|Трактирщик
 trp_barman_baraddur_pl|Замок
@@ -1244,112 +1244,112 @@ trp_barman_erebor|Трактирщик
 trp_barman_erebor_pl|Палатка Лорда
 trp_barman_dolguldur|Трактирщик
 trp_barman_dolguldur_pl|Замок
-trp_merchant_mtirith|Квартирмейстер
-trp_merchant_mtirith_pl|Конюшни и Склад
-trp_merchant_pelargir|Хозяин Запасов
-trp_merchant_pelargir_pl|Конюшни и Склад
-trp_merchant_linhir|Хозяин Запасов
-trp_merchant_linhir_pl|Конюшни и Склад
-trp_merchant_dolamroth|Хозяин Запасов
-trp_merchant_dolamroth_pl|Конюшни и Склад
-trp_merchant_edhellond|Хозяин Запасов
-trp_merchant_edhellond_pl|Конюшни и Склад
-trp_merchant_lossarnach|Хозяин Запасов
-trp_merchant_lossarnach_pl|Конюшни и Склад
-trp_merchant_tarnost|Хозяин Запасов
-trp_merchant_tarnost_pl|Конюшни и Склад
-trp_merchant_erech|Хозяин Запасов
-trp_merchant_erech_pl|Конюшни и Склад
-trp_merchant_pinnath|Хозяин Запасов
-trp_merchant_pinnath_pl|Конюшни и Склад
-trp_merchant_eosgiliath|Хозяин Запасов
-trp_merchant_eosgiliath_pl|Конюшни и Склад
-trp_merchant_wosgiliath|Хозяин Запасов
-trp_merchant_wosgiliath_pl|Конюшни и Склад
-trp_town_12_horse_merchant|Хозяин Запасов
-trp_town_12_horse_merchant_pl|Конюшни и Склад
-trp_town_13_horse_merchant|Хозяин Запасов
-trp_town_13_horse_merchant_pl|Конюшни и Склад
+trp_merchant_mtirith|Поставщик припасов
+trp_merchant_mtirith_pl|стойло и склад
+trp_merchant_pelargir|Поставщик припасов
+trp_merchant_pelargir_pl|стойло и склад
+trp_merchant_linhir|Поставщик припасов
+trp_merchant_linhir_pl|стойло и склад
+trp_merchant_dolamroth|Поставщик припасов
+trp_merchant_dolamroth_pl|стойло и склад
+trp_merchant_edhellond|Поставщик припасов
+trp_merchant_edhellond_pl|стойло и склад
+trp_merchant_lossarnach|Поставщик припасов
+trp_merchant_lossarnach_pl|стойло и склад
+trp_merchant_tarnost|Поставщик припасов
+trp_merchant_tarnost_pl|стойло и склад
+trp_merchant_erech|Поставщик припасов
+trp_merchant_erech_pl|стойло и склад
+trp_merchant_pinnath|Поставщик припасов
+trp_merchant_pinnath_pl|стойло и склад
+trp_merchant_eosgiliath|Поставщик припасов
+trp_merchant_eosgiliath_pl|стойло и склад
+trp_merchant_wosgiliath|Поставщик припасов
+trp_merchant_wosgiliath_pl|стойло и склад
+trp_town_12_horse_merchant|Поставщик припасов
+trp_town_12_horse_merchant_pl|стойло и склад
+trp_town_13_horse_merchant|Поставщик припасов
+trp_town_13_horse_merchant_pl|стойло и склад
 trp_merchant_edoras|Хранительница Припасов
-trp_merchant_edoras_pl|Конюшни и Склад
-trp_merchant_aldburg|Хозяин Запасов
+trp_merchant_edoras_pl|стойло и склад
+trp_merchant_aldburg|Поставщик припасов
 trp_merchant_aldburg_pl|Королевские Конюшни и Склад
-trp_merchant_hornburg|Хозяин Запасов
-trp_merchant_hornburg_pl|Конюшни и Склад
-trp_merchant_eastemnet|Хозяин Запасов
-trp_merchant_eastemnet_pl|Конюшни и Склад
+trp_merchant_hornburg|Поставщик припасов
+trp_merchant_hornburg_pl|стойло и склад
+trp_merchant_eastemnet|Поставщик припасов
+trp_merchant_eastemnet_pl|стойло и склад
 trp_merchant_westfold|Хранительница Припасов
-trp_merchant_westfold_pl|Конюшни и Склад
+trp_merchant_westfold_pl|стойло и склад
 trp_merchant_westemnet|Хранительница Припасов
-trp_merchant_westemnet_pl|Конюшни и Склад
+trp_merchant_westemnet_pl|стойло и склад
 trp_merchant_eastfold|Хранительница Припасов
-trp_merchant_eastfold_pl|Конюшни и Склад
-trp_town_21_horse_merchant|Хозяин Запасов
+trp_merchant_eastfold_pl|стойло и склад
+trp_town_21_horse_merchant|Поставщик припасов
 trp_town_21_horse_merchant_pl|Яма и Склад
-trp_merchant_morannon|Хозяин Запасов
+trp_merchant_morannon|Поставщик припасов
 trp_merchant_morannon_pl|Яма и Склад
-trp_merchant_mmorgul|Хозяин Запасов
+trp_merchant_mmorgul|Поставщик припасов
 trp_merchant_mmorgul_pl|Яма и Склад
-trp_town_24_horse_merchant|Хозяин Запасов
+trp_town_24_horse_merchant|Поставщик припасов
 trp_town_24_horse_merchant_pl|Яма и Склад
-trp_merchant_orc_patrol|Хозяин Запасов
+trp_merchant_orc_patrol|Поставщик припасов
 trp_merchant_orc_patrol_pl|Запасы Лагеря
-trp_merchant_isengard|Хозяин Запасов
+trp_merchant_isengard|Поставщик припасов
 trp_merchant_isengard_pl|Запасы Лагеря
-trp_town_27_horse_merchant|Хозяин Запасов
+trp_town_27_horse_merchant|Поставщик припасов
 trp_town_27_horse_merchant_pl|Волчья Яма и Припасы
-trp_merchant_uoutpost|Хозяин Запасов
+trp_merchant_uoutpost|Поставщик припасов
 trp_merchant_uoutpost_pl|Волчья Яма и Припасы
-trp_merchant_uhcamp|Хозяин Запасов
+trp_merchant_uhcamp|Поставщик припасов
 trp_merchant_uhcamp_pl|Волчья Яма и Припасы
-trp_merchant_urcamp|Хозяин Запасов
+trp_merchant_urcamp|Поставщик припасов
 trp_merchant_urcamp_pl|Волчья Яма и Припасы
-trp_merchant_cgaladhon|Хозяин Запасов
+trp_merchant_cgaladhon|Поставщик припасов
 trp_merchant_cgaladhon_pl|Эльфийские запасы
-trp_merchant_cdolen|Хозяин Запасов
+trp_merchant_cdolen|Поставщик припасов
 trp_merchant_cdolen_pl|Эльфийские запасы
-trp_merchant_camroth|Хозяин Запасов
+trp_merchant_camroth|Поставщик припасов
 trp_merchant_camroth_pl|Эльфийские запасы
-trp_merchant_thranduils_halls|Хозяин Запасов
+trp_merchant_thranduils_halls|Поставщик припасов
 trp_merchant_thranduils_halls_pl|Эльфийские запасы
-trp_merchant_woodelf_camp|Хозяин Запасов
+trp_merchant_woodelf_camp|Поставщик припасов
 trp_merchant_woodelf_camp_pl|Эльфийские запасы
-trp_merchant_woodmen|Хозяин Запасов
-trp_merchant_woodmen_pl|Конюшни и Склад
-trp_merchant_beorn|Хозяин Запасов
-trp_merchant_beorn_pl|Конюшни и Склад
-trp_merchant_moria|Хозяин Запасов
+trp_merchant_woodmen|Поставщик припасов
+trp_merchant_woodmen_pl|стойло и склад
+trp_merchant_beorn|Поставщик припасов
+trp_merchant_beorn_pl|стойло и склад
+trp_merchant_moria|Поставщик припасов
 trp_merchant_moria_pl|Волчья Яма и Припасы
-trp_merchant_dale|Хозяин Запасов
-trp_merchant_dale_pl|Конюшни и Склад
-trp_merchant_esgaroth|Хозяин Запасов
-trp_merchant_esgaroth_pl|Конюшни и Склад
-trp_merchant_erebor|Хозяин Запасов
-trp_merchant_erebor_pl|Гномьи запасы
+trp_merchant_dale|Поставщик припасов
+trp_merchant_dale_pl|стойло и склад
+trp_merchant_esgaroth|Поставщик припасов
+trp_merchant_esgaroth_pl|стойло и склад
+trp_merchant_erebor|Поставщик припасов
+trp_merchant_erebor_pl|Гномьи припасы
 trp_merchant_dunland|Дунландский Управитель Склада
-trp_merchant_dunland_pl|Лагерное Хранилище
+trp_merchant_dunland_pl|Запасы Лагеря
 trp_merchant_harad|Харадский Управитель Склада
-trp_merchant_harad_pl|Лагерное Хранилище
+trp_merchant_harad_pl|Запасы Лагеря
 trp_merchant_khand|Кхандский Управитель Склада
-trp_merchant_khand_pl|Лагерное Хранилище
-trp_merchant_umbar|Хозяин Запасов
-trp_merchant_umbar_pl|Лагерное Хранилище
-trp_merchant_imladris|Хозяин Запасов
+trp_merchant_khand_pl|Запасы Лагеря
+trp_merchant_umbar|Поставщик припасов
+trp_merchant_umbar_pl|Запасы Лагеря
+trp_merchant_imladris|Поставщик припасов
 trp_merchant_imladris_pl|Лагерные Запасы
-trp_merchant_dolguldur|Хозяин Запасов
-trp_merchant_dolguldur_pl|Конюшни и Склад
-trp_merchant_north_rhun|Хозяин Запасов
-trp_merchant_north_rhun_pl|Лагерное Хранилище
-trp_merchant_south_rhun|Хозяин Запасов
-trp_merchant_south_rhun_pl|Лагерное Хранилище
-trp_merchant_gundabad|Хозяин Запасов
-trp_merchant_gundabad_pl|Лагерное Хранилище
-trp_merchant_ironhill|Хозяин Запасов
-trp_merchant_ironhill_pl|Гномьи запасы
-trp_town_50_horse_merchant|Хозяин Запасов
-trp_town_50_horse_merchant_pl|Конюшни и Склад
-trp_merchant_calembel|Хозяин Запасов
-trp_merchant_calembel_pl|Конюшни и Склад
+trp_merchant_dolguldur|Поставщик припасов
+trp_merchant_dolguldur_pl|стойло и склад
+trp_merchant_north_rhun|Поставщик припасов
+trp_merchant_north_rhun_pl|Запасы Лагеря
+trp_merchant_south_rhun|Поставщик припасов
+trp_merchant_south_rhun_pl|Запасы Лагеря
+trp_merchant_gundabad|Поставщик припасов
+trp_merchant_gundabad_pl|Запасы Лагеря
+trp_merchant_ironhill|Поставщик припасов
+trp_merchant_ironhill_pl|Гномьи припасы
+trp_town_50_horse_merchant|Поставщик припасов
+trp_town_50_horse_merchant_pl|стойло и склад
+trp_merchant_calembel|Поставщик припасов
+trp_merchant_calembel_pl|стойло и склад
 trp_elder_mtirith|Гильдмастер Тирита
 trp_elder_mtirith_pl|Белый Город
 trp_elder_pelargir|Гильдмастер Матрос
@@ -1403,7 +1403,7 @@ trp_elder_cdolen_pl|Лагерная Стоянка
 trp_elder_camroth|Лориенский Хранитель Знаний
 trp_elder_camroth_pl|Лагерная Стоянка
 trp_elder_thalls|Старейшина Лихолесья
-trp_elder_thalls_pl| Эльфийские Пещеры
+trp_elder_thalls_pl|Эльфийские Пещеры
 trp_elder_imladris|Ривендельский Начальник Лагеря
 trp_elder_imladris_pl|Лагерь
 trp_elder_wvillage|Пьерре Лесник
@@ -1443,7 +1443,7 @@ trp_elder_isengard_ac_pl|Лагерь
 trp_elder_lorien_ac|Начальник Лагеря
 trp_elder_lorien_ac_pl|Лагерь
 trp_elder_woodelf_ac|Начальник Лагеря
-trp_elder_woodelf_ac_pl|Лагерь 
+trp_elder_woodelf_ac_pl|Лагерь
 trp_elder_imladris_ac|Начальник Лагеря
 trp_elder_imladris_ac_pl|Лагерь
 trp_elder_beorn_ac|Начальник Лагеря
@@ -1461,18 +1461,18 @@ trp_elder_umbar_ac_pl|Лагерь
 trp_elder_moria_ac|Вождь Морийского Лагеря
 trp_elder_moria_ac_pl|Лагерь
 trp_elder_gunda_ac|Вождь Гундабадского Лагеря
-trp_elder_gunda_ac_pl|Лагерь 
-trp_elder_dale_ac|Квартирмейстер Дейла
-trp_elder_dale_ac_pl|Лагерь 
+trp_elder_gunda_ac_pl|Лагерь
+trp_elder_dale_ac|Дейлский Квартирмейстер
+trp_elder_dale_ac_pl|Лагерь
 trp_elder_guldur_ac|Вождь Гулдурского Лагеря
-trp_elder_guldur_ac_pl|Лагерь 
+trp_elder_guldur_ac_pl|Лагерь
 trp_elder_dwarf_ac|Гномий Начальник Лагеря
 trp_elder_dwarf_ac_pl|Лагерь
 trp_village_1_elder|Старейшина Деревни
 trp_tutorial_chest_1|Сундук Оружия Ближнего Боя
 trp_tutorial_chest_2|Сундук Оружия Дальнего Боя
-trp_bonus_chest_1|Бонусный Сундук 
-trp_bonus_chest_2|Бонусный Сундук 
+trp_bonus_chest_1|Бонусный Сундук
+trp_bonus_chest_2|Бонусный Сундук
 trp_bonus_chest_3|Бонусный Сундук
 trp_camp_chest_faction|Сундук Фракции
 trp_camp_chest_none|Ничейный Сундук
@@ -1482,7 +1482,7 @@ trp_local_merchant_pl|Местные Торговцы
 trp_tax_rebel|Мятежный Крестьянин
 trp_tax_rebel_pl|Мятежные Крестьяне
 trp_trainee_peasant|Крестьянин
-trp_trainee_peasant_pl|Крестьяне 
+trp_trainee_peasant_pl|Крестьяне
 trp_fugitive_man|Подозрительный Человек
 trp_fugitive_man_pl|Подозрительные Люди
 trp_fugitive_elf|Подозрительный Эльф
@@ -1495,7 +1495,7 @@ trp_spy|Нервный Пират
 trp_spy_pl|Нервные Пираты
 trp_spy_evil|Нервный Южанин
 trp_spy_evil_pl|Нервные Южане
-trp_spy_partner|Шпион Укратитель 
+trp_spy_partner|Шпион Укратитель
 trp_spy_partner_pl|Шпионы Укратители
 trp_spy_partner_evil|Шпион Укратитель
 trp_spy_partner_evil_pl|Шпионы Укратители
@@ -1504,12 +1504,12 @@ trp_treebeard|Древобород
 trp_ent_1|Брегалад
 trp_ent_2|Финглас
 trp_ent_3|Фладриф
-trp_gandalf|Гэндальф 
+trp_gandalf|Гэндальф
 trp_gandalf_pl|Доморощенные Гендальфы
 trp_nazgul|Назгул
 trp_nazgul_pl|Назгул Прислужник
 trp_barman|Бармен
-trp_elder|Старейшина 
+trp_elder|Старейшина
 trp_gear_merchant|Торговец Снарежением
 trp_goods_merchant|Торговец Разным Товаром
 trp_start_quest_caravaneer|Вожатый Каравана
@@ -1531,9 +1531,9 @@ trp_wolf_rider_of_mirkwood|Волчий Всадник из Лихолесья
 trp_wolf_rider_of_mirkwood_pl|Волчьи Всадники из Лихолесья
 trp_warg_rider_of_mirkwood|Всадник на Варге из Лихолесья
 trp_warg_rider_of_mirkwood_pl|Всадники на Варгах из Лихолесья
-trp_gate_aggravator|Ворота Держатся
-trp_orc_pretender|Орк Претендент
-trp_human_prisoner|Заключённый Человек
+trp_gate_aggravator|Ворота держатся
+trp_orc_pretender|Орк Самозванец
+trp_human_prisoner|Человек Заключенный
 trp_spider|Паук из Лихолесья
 trp_spider_pl|Пауки из Лихолесья
 trp_bear|Медведь
