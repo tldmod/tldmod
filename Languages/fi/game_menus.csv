@@ -1,92 +1,92 @@
-; menu_start_game_1|^^^^^^^^^^What do you fight for?
-; mno_start_good|the DAWN of a new Era
-; mno_start_evil|the TWILIGHT of Man
-; mno_go_bback|Go Back
-; menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
-; mno_go_forth|          Go forth upon you chosen path...
-; menu_start_game_3            |^^^^^^^^Choose your scenario:
-; mno_custom_battle_scenario_1 |Skirmish, Gondor factions vs Harad
-; mno_custom_battle_scenario_12|Choose factions for battle
-; mno_custom_battle_scenario_3 |Skirmish, Elves vs Black Numenoreans
-; mno_custom_battle_scenario_4 |Helms Deep Defense, Rohan vs Isengard
-; mno_custom_battle_scenario_5 |Skirmish, North factions vs Rhûn
-; mno_custom_battle_scenario_6 |Siege Attack, Orcs vs Dwarves
+menu_start_game_1|^^^^^^^^^Minkä puolesta taistelet?
+mno_start_good|uuden aikakauden KOITE
+mno_start_evil|ihmisen HÄMÄRÄ
+mno_go_bback|Mene takaisin
+menu_start_phase_2|^^^^^ Keski-Maa. Varjo kasvaa idässä^ ja esiin tulevat pimeät asiat, jotka ovat pitkän aikaa olleet piilossa. ^ Vapaat ihmiset valmistautuvat sotaan, jonka kaltaista ei olla nähty sukupolveen. ^ Ihmiset, haltiat, kääpiöt ja örkit; kaikki haluavat esittää heidän osaansa. ^^ Mitä osaa, kuitenkin jää nähtäväksi...
+mno_go_forth|Mene eteenpäin kohti valitsemaasi reittiä...
+menu_start_game_3            |^^^^^^^^^Valitse sinun käsikirjoitus:
+mno_custom_battle_scenario_1 |Yhteenotto, Gondorin ryhmittymä vs Harad
+mno_custom_battle_scenario_12|Valitse ryhmittymät taisteluun
+mno_custom_battle_scenario_3 |Yhteenotto, haltiat vs mustat Númenórilaiset
+mno_custom_battle_scenario_4 |Helmin syvänteen puolustus, Rohan vs Isengard
+mno_custom_battle_scenario_5 |Yhteenotto, pohjoisen ryhmittymät vs Rhûn
+mno_custom_battle_scenario_6 |Piirityshyökkäys, örkit vs kääpiöt
 mno_custom_battle_scenario_7 |Väijytys, örkit vastaan Mirkwood
-; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
-; mno_custom_battle_scenario_10|Scenery test battle
-; mno_troll_battle_scenario    |Test Troll Battles
-; mno_warg_battle_scenario     |Test Warg Battles
-; mno_build_your_own_scene     |** Build your own scene for TLD **
-; mno_go_back                  |Go back
-; menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
-; mno_go_back_dot|Go back.
-; mno_view_upkeep_costs|View upkeep costs.
-; mno_view_character_report|View character report.
-; mno_view_party_size_report|View party size report.
-; mno_view_morale_report|View party morale report.
-; mno_view_character_report_02|NPC status check.
-; mno_view_faction_strengths_report|View faction strengths report.
-; mno_view_traits_report|View traits.
+mno_custom_battle_scenario_11|Testitaistelut (Säädön tasapainottamista)
+mno_custom_battle_scenario_10|Maisemien testitaistelu
+mno_troll_battle_scenario    |Testi peikkotaistelut
+mno_warg_battle_scenario     |Testi villisusitaistelut
+mno_build_your_own_scene     |** Rakenna oma taistelupaikkasi TLD:tä varten **
+mno_go_back                  |Mene takaisin
+menu_tutorial|^^ TLD:llä on paljon tuntemattomia ominaisuuksia alkuperäispeliin nähden. Nämä ovat kuvattuna joissakin ei-paljastavissa kuvailuissa PDF:n sisällä, joka tulee julkaisun kanssa. Peruspelimekanismien kurssissa käytä perusmoduulia kiitos
+mno_go_back_dot|Mene takaisin.
+mno_view_upkeep_costs|Katso ylläpitokustannukset.
+mno_view_character_report|Katso henkilöraportti.
+mno_view_party_size_report|Katso seurueen kokonaismääräraportti.
+mno_view_morale_report|Katso seurueen moraaliraportti.
+mno_view_character_report_02|Ei-pelattavien henkilöiden tilanne selvitys.
+mno_view_faction_strengths_report|Katso ryhmittymien voimakkuusraportti.
+mno_view_traits_report|Katso luonteenpiirteet.
 mno_resume_travelling|Jatka matkustamista.
 mno_custom_battle_go|Aloita.
-; mno_leave_custom_battle_2|Cancel.
-; menu_custom_battle_end|^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.
+mno_leave_custom_battle_2|Peruuta.
+menu_custom_battle_end|^^^^^^ Taistelu on ohi. {s1} Sinun puolesi tappoi {reg5} vihollista ja menetti {reg6} sotilasta taistelun aikana.^Itse löit {reg7} vastapuoluelaista taistelussa.
 mno_replay|Pelaa tämä taistelu uudelleen.
 mno_continue_dot|Jatka.
-; menu_quick_battle_general_test|^^^Current battle: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
+menu_quick_battle_general_test|^^^ Nykyinen taistelu: ^tiimi A: {reg10} {s10}^^VS^^ tiimi b: {reg11} {s11}
 mno_tAA|+5 Tiimi A
 mno_tAB|-5 Tiimi A
 mno_tAC|Valitse sotilas A
-; mno_tBA|        +5 Team B
-; mno_tBB|        -5 Team B
-; mno_tBC|        Select Troop B
-; mno_B|         Preset 1
+mno_tBA|+5 tiimi B
+mno_tBB|-5 tiimi B
+mno_tBC|Valitse sotilas B
+mno_B|Esiasetus 1
 mno_F|ALOITA TAISTELU!
-; mno_dot_go_back|.                 Go back
-; menu_quick_battle_troll|^^^^^^^^Choose your troll scenario:
-; mno_troll_battle_scenario_10|          Test: Troll VS Infantry
-; mno_troll_battle_scenario_11|          Test: Troll VS Archers
-; mno_troll_battle_scenario_12|          Test: Troll VS Cavalry
-; mno_troll_battle_scenario_13|          Test: Troll VS Lancers
-; mno_troll_battle_scenario_14|          Test: Troll VS Troll
-; mno_troll_battle_scenario_15|          Toy-Test: player controlled Troll
-; menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:
-; mno_warg_battle_scenario_10|          Against Wargs: 1 vs 1
-; mno_warg_battle_scenario_11|          Against Wargs: 2 vs 3
-; mno_warg_battle_scenario_12|          Against Wargs: many vs many
-; mno_warg_battle_scenario_10b|          Play Wargs: 1 vs 1
-; mno_warg_battle_scenario_11b|          Play Wargs: 2 vs 3
-; mno_warg_battle_scenario_12b|          Play Wargs: many vs many
-; menu_start_good|^^^^^^^^^^Select your race:
+mno_dot_go_back|Mene takaisin
+menu_quick_battle_troll|^^^^^^^^Valitse peikkotaistelusi:
+mno_troll_battle_scenario_10|Testi: peikot VS jalkaväki
+mno_troll_battle_scenario_11|Testi: peikot vs jousimiehet
+mno_troll_battle_scenario_12|Testi: peikot VS ratsuväki
+mno_troll_battle_scenario_13|Testi: peikot VS peitsimiehet 
+mno_troll_battle_scenario_14|Testi: peikot VS peikot
+mno_troll_battle_scenario_15|Lelutesti: pelaajan kontrolloima peikko
+menu_quick_battle_wargs|^^^^^^^^Valitse testi villisusitaistelusi:
+mno_warg_battle_scenario_10|Vastaan villisusia: 1 vs 1
+mno_warg_battle_scenario_11|Vastaan villisusia: 2 vs 3
+mno_warg_battle_scenario_12|Vastaan villisusia: monta vs monta
+mno_warg_battle_scenario_10b|Pelaa villisutena: 1 vs 1
+mno_warg_battle_scenario_11b|Pelaa villisutena: 2 vs 3
+mno_warg_battle_scenario_12b|Pelaa villisutena: monta vs monta
+menu_start_good|^^^^^^^^^^Valitse Rotusi:
 mno_start_ma|IHMINEN
 mno_start_el|HALTIA
 mno_start_dw|KÄÄPIÖ
-; mno_go_back|Go back
-; menu_start_evil|^^^^^^^^^^Whom do you Serve?
+mno_go_back|Mene takaisin
+menu_start_evil|^^^^^^^^^^Ketä luulet Palvelevasi?
 mno_start_eye|Mordorin SAURON, Sormusten herra
 mno_start_hand|Rautapihan SARUMAN, Valkoinen Käsi
-; menu_start_eye|^^^^^^^^^Your Master is the Lidless Eye^Choose your Race
+menu_start_eye|^^^^^^^^^Sinun mestarisi on luometon silmä^Valitse Rotusi
 mno_start_or|ÖRKKI, joka palvelee luometonta silmää
 mno_start_ur|URUK, uusi siitos örkeistä
 mno_start_em|Sauronin alistama IHMINEN
-; menu_start_hand|^^^^^^^^^Your Master is the White Hand^Choose your Race
+menu_start_hand|^^^^^^^^^Sinun mestarisi on Valkokäsi^Valitse Rotusi
 mno_start_whor|ÖRKKI, joka palvelee Valkoista Kättä
 mno_start_isur|URUK-HAI, siitetty Rautapihalla
 mno_start_duma|Dunlandin IHMINEN, läntisiltä tasangoilta
-; menu_start_good_man|^^^^^^^^^^Select your people:
+menu_start_good_man|^^^^^^^^^Valitse väkesi:
 mno_start_go|GONDOR, Valkoisen tornin valtakunta
 mno_start_ro|ROHAN, Hevosihmiset
 mno_start_du|DUNDEAIN, Muinaisten ihmisten dynastia
 mno_start_be|BEORNINGS, Karhu ihmiset
 mno_start_da|DALEN pohjoinen valtakunta
-; menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
+menu_start_good_elf|^^^^^^^^^Missä metsässä asut, kylänvanhin?
 mno_start_ri|Lordi Elrondin RIVENDELL
 mno_start_lo|Leidi Galadrielin LOTHORIEN
 mno_start_mi|MIRKWOOD, Silvan Haltioiden maa
-; menu_start_good_dwarf|^^^^^^^^^^Select your Lineage:
+menu_start_good_dwarf|^^^^^^^^^Valitse sukulinjasi:
 mno_start_er|EREBORIN asukas
 mno_start_ih|RAUTAKUKKULOIDEN kaivosmies
-; menu_start_gondor|^^^^^^^^^^Where are you from, in Gondor?
+menu_start_gondor|^^^^^^^^^Mistä tulet, Gondorissa?
 mno_start_mt|MINAS TIRITH, Pääkaupunki
 mno_start_ls|LOSSARNACH, Kirvesmiesten linnanlääni
 mno_start_la|LAMEDON, Vuoriston klaanimiesten linnanlääni
@@ -94,143 +94,143 @@ mno_start_pg|PINNATH GELIN, vihreiden kukkuloiden linnanlääni
 mno_start_do|DOL AMROTH, Joutsen Ritareiden linnanlääni
 mno_start_pe|PELARGIR, rannikko linnanlääni
 mno_start_bl|BLACKROOT VALE, jousimiesten linnanlääni
-; menu_start_eye_man|^^^^^^^^^^Select your people:
+menu_start_eye_man|^^^^^^^^^Valitse väkesi:
 mno_start_hr|HARADRIM, aavikon ihmiset etelästä
 mno_start_bn|Mustat NUMERONILAISET, lännen kapinalliset
 mno_start_um|UMBAR, Etelän merien piraatit
 mno_start_rh|RHUN, idän barbaarit
 mno_start_kh|KHAND, Kaakon villi-ihmiset
-; menu_start_eye_orc|^^^^^^^^^^Where do you lurk?
-; mno_start_arm|in the armies amassed at MORDOR
+menu_start_eye_orc|^^^^^^^^^Missä sinä piilottelet?
+mno_start_arm|Armeijoiden kasaumassa Mordorissa
 mno_start_cav|DOL GULDURIN luolastoissa
-; menu_start_hand_orc|^^^^^^^^^^Where do you lurk?
-; mno_start_armis|in the Armies amassed at ISENGARD
+menu_start_hand_orc|^^^^^^^^^Missä sinä väijyt?
+mno_start_armis|Armeijoiden kasaumassa Isengardissa
 mno_start_minmo|MORIAN kaivoksissa
-; mno_start_cliff|in the cliffs of Mount GUNDABAD
-; menu_start_gondor_mt|^^^^^^^^^^Select your Lineage
+mno_start_cliff|Gundabadin vuoren kalliojyrkänteellä
+menu_start_gondor_mt|^^^^^^^^^^Valitse sukulinjasi
 mno_start_1_com|Aateliton
 mno_start_2_hib|Jalosukuinen
-; menu_start_haradrim|^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^Olet Haradrimilainen,^Aavikon mies.^Valitse sukulinjasi
 mno_start_1_des|Aavikko mies
-; mno_start_2_far|Far Harad Tribesman
-; menu_choose_gender|^^^^^^^^^^Your gender?
+mno_start_2_far|Kaukaisen Haradin heimolainen
+menu_choose_gender|^^^^^^^^^^Sukupuolesi?
 mno_start_male|Mies
 mno_start_female|Nainen
-; mno_proc|Proceed as normal
+mno_proc|Jatka eteenpäin normaalisti
 mno_continue|Jatka...
-; menu_character_report|^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
-; menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
+menu_character_report|^^^^^Seurueen moraali: {reg8}^Seurueen kokonaismäärärajoitus: {reg7}^{s5}
+menu_camp|^^^^Olet {s1}.{s2}^^Mitä haluat tehdä?
 mno_camp_scene|Kävele ympäriinsä.
-; mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_troop|Esikatselu{reg10? joukot:}{reg12? ja:}{reg11? vangit:}.
 mno_camp_action|Käytä objektia.
 mno_camp_wait_here|Leiriydy tähän vähäksi aikaa.
-; mno_camp_options|Change TLD options.
-; mno_Cheat_enable|Enable cheat/modding options.
-; menu_game_options|^^^^^^^^Click on an option to toggle:
-; mno_game_options_restrict_items|Restricted player equipment:  {s7}
-; mno_game_options_formations|Battle formations and AI:  {s7}
-; mno_game_options_town_menu|Town NPCs always accessible from Menus:  {s7}
-; mno_game_options_cutscenes|Cutscenes:  {s7}
-; mno_game_options_injuries|Injuries for companions:  {s7}.
-; mno_game_options_death|Permanent death for lords and companions:  {s7}.
-; mno_game_options_death2|Permanent death for player (that is YOU!):  {s7}.
-; mno_game_options_morale|Battle morale system:  {s7}
-; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
-; mno_game_options_tweaks|Gameplay tweaks...
+mno_camp_options|Vaihda TLD asetuksia.
+mno_Cheat_enable|Aktivoi huijaus/modaamisen vaihtoehdot.
+menu_game_options|^^^^^^^^Paina vaihtoehtoa vaihtaaksesi:
+mno_game_options_restrict_items|Rajoitetut pelaajan varusteet: {s7}
+mno_game_options_formations|Taistelut muodostelmat ja tekoäly: {s7}
+mno_game_options_town_menu|Kylän ei-pelattavat henkilöt aina saavutettavana valikosta: {s7}
+mno_game_options_cutscenes|Välianimaatiot: {s7}
+mno_game_options_injuries|Vammat seuralaisille: {s7}.
+mno_game_options_death|Pysyvä kuolema aatelisille ja seuralaisille: {s7}.
+mno_game_options_death2|Pysyvä kuolema pelaajalle(eli SINULLE!): {s7}.
+mno_game_options_morale|Taistelumoraalijärjestelmä: {s7}
+mno_game_options_animal_ambushes|Eläin väijytykset: {s7}
+mno_game_options_tweaks|Pelattavuusasetukset...
 mno_game_options_back|Takaisin leiri valikkoon.
-; menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
-; mno_tweak_options_compat|Compatibility tweaks...
-; mno_tweak_options_strat|Strategy tweaks...
+menu_camp_tweaks|^^^^^^^^Valitse vaihtoehto, jota haluaisit säätää.
+mno_tweak_options_compat|Yhteensopivuusasetukset...
+mno_tweak_options_strat|Strategia-asetukset...
 mno_tweak_options_back|Takaisin asetus valikkoon.
-; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
-; mno_game_options_compat_party|Maximum number of parties: {s1}
-; mno_game_options_compat_back|Back to tweaks menu.
-; menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
-; mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
-; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
-; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
-; mno_strat_tweaks_siege_regen_limit|Factions don't regen below: {reg1}
+menu_camp_compat_tweaks|^^^^^^^^Paina hiirellä vaihtoehtoa vaihtaaksesi (Pidä shift-näppäintä pohjassa pienentääksi):^(nämä ovat yhteensopivuutta varten eivätkä ole huijauksia)
+mno_game_options_compat_party|Maksimimäärä seurueita: {s1}
+mno_game_options_compat_back|Takaisin asetusvalikkoon.
+menu_camp_strat_tweaks|^^^^^^^^Paina hiirellä vaihtoehtoa vaihtaaksesi:^(varoitus: nämä ovat huijauksia!)
+mno_strat_tweaks_siege_reqs|Piiritysvahvuusvaatimuksia:  {s7}
+mno_strat_tweaks_siege_relax_rate|Piiritysvahvuusvaatimuksien rentoutumismäärä: {reg1}
+mno_strat_tweaks_regen_rate|Vahvuuden uudelleenpalautumisnopeus: {s7}
+mno_strat_tweaks_siege_regen_limit|Ryhmittäytymät eivät uudelleenpalaudu alle: {reg1}
 ; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
 ; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
-; mno_strat_tweaks_back|Back to tweaks menu.
-; menu_camp_action|^^^^^^^^^     Which object?
-; mno_camp_customize_defilement|Customize Defiled Armor
+mno_strat_tweaks_back|Takaisin asetusvalikkoon.
+menu_camp_action|^^^^^^^^^ Mikä kohde?
+mno_camp_customize_defilement|Kustomoi tärveltyä panssaria
 mno_camp_drink_water|Juo Entin vettä!
-; mno_camp_action_4|Back.
-; menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
+mno_camp_action_4|Takaisin...
+menu_assasins_attack_player_won|Olet onnistuneesti peitonnut salamurhaajat {s2}sta, lähetettynä {s3} puolesta.
 menu_assasins_attack_player_retreat|Pakenit elävänä!
-; menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?
+menu_fangorn_danger|^^^^^^Outoja, uhkaavia ääniä kaikkialla ympärilläsi.^Puhuvatko puut? Ilmassa on havaittavissa syvä viha ja kipu.^Käskysi?
 mno_be_quiet_elf|Kunnioittakaa puitten vihamielisyyttä. Liikkukaamme hiljaa.
 mno_be_quiet|Laskekaa aseenne ja pysykää hiljaa! Nyt ulos täältä!
 mno_be_bold|Jatketaan! Minähän en mitään kasveja tai vanhoja myyttejä pelkää!
 mno_fight_back|Otetaan siitä selvää! Tutkikaa alue! Polttakaa puu tai pari!
-; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-; menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
-; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
-; mno_ow_get_out|Ouch! Let's get out of this cursed place!
-; menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
-; menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
+menu_fangorn_search_fails|Etsit pimeää, paksua metsää, mutta et löydä mitään.^Silti, tunnet itsesi havainnoiduksi ja uhatulta yhä enemmän ja enemmän.
+menu_fangorn_battle_debrief_won|^^^Suuri voitto!^^^Siis nämä kaikki ovat myyttejä, joita Fangorn tarkoitti...
+menu_fangorn_killed_player_only|^^^^^^Vaeltelet paksussa, mustassa metsässä.^Yhtäkkiä sinuun on osunut jokin! Ehkä painava oksa putosi päähäsi?^Ôlet tajuton ainoastaan muutaman minuutin. Olet pahasti vahingoittunut, mutta voit mennä eteenpäin.
+mno_ow_get_out|Aihh! Lähdetään tästä kirotusta paikasta!
+menu_fangorn_killed_troop_and_player|^^^^^^Vaeltelet paksussa, mustassa metsässä.^Yhtäkkiä sinuun on osunut jokin! Ehkä painava oksa putosi päähäsi?^^Kun palaudut iskusta minuutteja myöhemmin, löydät, ettei kaikki joukoistasi olleet yhtä onnekkaita
+menu_fangorn_killed_troop_only|^^^^^^^^Vaeltelet paksussa, mustassa metsässä. Joukkosi ovat peloissaan.^^Yhtäkkiä kuulet huutoja takaa! Kiiruhdat takaisin vain löytääksesi muutaman sotilaasi maasta, veren tahrimasta lammikosta.^^Muutama muu ovat ei missään löydettäviksi...
 mno_get_out|Lähdetään tästä kirotusta paikasta!
 menu_can_capture_troll|Kaatunut villipeikko hengittää vielä!^^Sen pahat silmät tuijottavat sinua, täynnä kipua ja vihaa.^Jopa nyt, kun se on maassa ja makaa avuttomana verilätäkössään, se näyttää todella vaaralliselta...
 mno_killit|Tapa se nyt. Tee varmaksi, että se kuolee.
-; mno_cageit1|Cage it and drag it around.
-; mno_cageit2|Cage it together with the other troll.
-; mno_cheat_disabable|Disable cheat/modding options.
+mno_cageit1|Laita häkkiin ja raahaa ympäriinsä.
+mno_cageit2|Pistä yhdessä häkkiin toisen peikon kanssa.
+mno_cheat_disabable|Kytke pois huijauksen/modaamisen asetukset.
 ; menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
 ; menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
-; mno_i_shall_surv|I... shall... survive!
+mno_i_shall_surv|Minä... pitää... selviytyä!
 ; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
 mno_end_game_bye|Näkemiin.
 menu_cattle_herd|Kohtaat joitakin ihmisiä.
 mno_cattle_drive_away|Käske heidän seurata.
-; mno_cattle_stop|Bring them to a stop.
+mno_cattle_stop|Pysäytä heidät siihen paikkaan.
 mno_leave|Poistu.
 ; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
-; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
-; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
-; mno_special_whip|Rush forward toward them cracking the {s4}.
-; mno_encounter_leave|Disengage.
+mno_encounter_attack|{reg21?Hyökätkää heidän kimppuun:Valmistautukaa kohtaamaan heidät}.
+mno_encounter_order_attack|Käske miestesi liittyä taisteluun {reg21?attack:face} ilman sinua.
+mno_special_whip|Kiiruhda eteenpäin heitä kohti murtaen {s4}.
+mno_encounter_leave|Irroittaudu taistelusta.
 mno_encounter_retreat|Peräänny, jättäen joitakin sotilaita perääsi suojaten vetääntymisesi.
-; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
+menu_encounter_retreat_confirm|^^^^^Seurueen parhaimpana jäsenenä taktisessa taidossa, ({reg2}), {reg3?you devise:{s3} devises} suunnitelma, joka aikoo antaa sinun ja miestesi paeta elävänä, mutta sinun pitää jättää {reg4} sotilaita perään pysäyttääkseen vihollisen ajojahdin.
 mno_leave_behind|Jatka. Näiden miesten uhraaminen pelastaa loput.
 mno_dont_leave_behind|Ei. Emme jätä ketään taakse.
-; menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
-; menu_order_attack_begin|^^^^^^          Your troops prepare to attack the enemy.
+menu_encounter_retreat|^^^^^Kerrot {reg4} joukoistasi pitämään vihollista kun sinä pakenet lopun seurueen kanssa.
+menu_order_attack_begin|^^^^^^ Joukkosi ovat valmiina hyökkäämään vihollisen kimppuun.
 mno_order_attack_begin|Käske aloittaa taistelu.
 mno_call_back|Kutsu heidät takaisin.
-; menu_order_attack_2|^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}
+menu_order_attack_2|^{s4}^Tappiosi: {s8}^^Vihollisen tappiot: {s9}
 mno_order_attack_continue|Käske sotilaittesi jatkaa hyökkäystä.
 mno_order_retreat|Kutsu sotilaasi takaisin.
-; menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_kingdom_army_quest_report_to_army|{s8}  lähettää kirjeen, että hän toivoo sinun liittyvän hänen uuteen sotilaalliseen kampanjaan. Sinun tarvitsee tuoda ainakin {reg13} sotilasta armeijaan ja sinua on ohjeistettu nostamaan enemmän sotilaita, jos sinulla ei ole niitä tarpeeksi.
 mno_reject|Lähetä viesti olet liian kiireinen.
-; mno_send_word|Send word you'll join him shortly.
+mno_send_word|Lähetä viesti, että aiot liittyä hänen joukkoihin piakkoin.
 ; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
 ; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 ; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
 mno_inspect_troll|Tarkastele kaatunutta peikkoa
 ; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
-; mno_pre_join_help_attackers|Move in to help the {s2}.
-; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
+mno_pre_join_help_attackers|Liiku auttaaksesi {s2}.
+mno_pre_join_help_defenders|Kiiruhda auttaaksesi {s1}.
 mno_pre_join_leave|Älä osallistu tähän.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Hyökkää vihollisten kimppuun.
 mno_join_order_attack|Käske sotilaittesi hyökätä liittolaistesi kanssa, samalla kun pysyttelet itse takana.
-; mno_join_leave|Disengage.
+mno_join_leave|Irroittaudu taistelusta.
 ; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
-; mno_enter|Enter.
-; menu_battlefields|^^^^^^^^^Select a field...
-; mno_enter_f1|Field 1
-; mno_enter_f2|Field 2
-; mno_enter_f3|Field 3
-; mno_enter_f4|Field 4
-; mno_enter_f5|Field 5
-; menu_join_siege_outside|^^^^^^{s1} has come under siege by {s2}.
+mno_enter|Astu sisään.
+menu_battlefields|^^^^^^^^^Valitse kenttä...
+mno_enter_f1|Kenttä 1
+mno_enter_f2|Kenttä 2
+mno_enter_f3|Kenttä 3
+mno_enter_f4|Kenttä 4
+mno_enter_f5|Kenttä 5
+menu_join_siege_outside|^^^^^^{s1} on piiritettynä {s2} toimesta.
 mno_approach_besiegers|Lähesty piiritettävää leiriä.
 mno_pass_through_siege|Ohita piiritys linjat ja astu sisään {s1}
-; menu_cut_siege_without_fight|The besiegers let you approach the gates without challenge.
+menu_cut_siege_without_fight|Piirittäjät antavat sinun lähestyä portteja ilman haastetta.
 ; menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,    where you and your troops are welcomed.
-; mno_talk_to_siege_commander| Request a meeting with the commander.
+mno_talk_to_siege_commander|Pyydä tapaamista komentajan kanssa.
 mno_join_siege_with_allies|Liity seuraavaan hyökkäykseen.
 mno_join_siege_stay_back|Käske sotilaittesi osallistua seuraavaan hyökkäykseen ilman sinua.
 ; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
@@ -238,23 +238,23 @@ mno_moria_exit_scene|Etsi tiesi ulos!
 menu_castle_outside|Olet ulkona {s2}.{s11} {s3} {s4}
 mno_moria_enter|Palaa Morian pääsaliin salaisen käytävän kautta.
 mno_moria_enter_door|Astu moriaan.
-; mno_castle_start_siege|Besiege the {reg6?town:castle}.
+mno_castle_start_siege|Piiritä {reg6?town:castle}.
 mno_castle_leave|Poistu.
-; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
-; mno_siege_request_meeting|Call for a meeting with the castle commander.
+menu_castle_besiege|Olet piirittämässä {s1}. {s2} {s3}
+mno_siege_request_meeting|Pyydä tapaamista linnankomentajan kanssa.
 mno_wait_24_hours|Odota huomiseen.
 mno_castle_lead_attack|Johda sotilaasi hyökkäykseen.
 mno_attack_stay_back|Käske sotilaittesi hyökätä samaan aikaan, kun itse pysyttelet takana.
-; mno_build_ladders|Prepare ladders to attack the walls.
+mno_build_ladders|Valmista tikapuut hyökkääkseen muurille.
 mno_lift_siege|Hylkää piiritys.
-; menu_siege_attack_meets_sally|^^^^^^The defenders sally out to meet your assault.
+menu_siege_attack_meets_sally|^^^^^^Puolustajat rynnäköivät ulos kohtaamaan rynnäkkösi.
 ; menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
 mno_build_ladders_cont|Tee se.
 ; menu_castle_attack_walls_simulate|{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}
 ; menu_castle_attack_walls_with_allies_simulate|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
 ; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
-; mno_castle_taken_no_claim|Ask no rewards.
+mno_castle_taken_no_claim|Älä pyydä palkintoa.
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 mno_siege_defender_join_battle|Liity taisteluun.
 mno_siege_defender_troops_join_battle|Käske miestesi liittyä taisteluun ilman sinua.
@@ -263,13 +263,13 @@ mno_siege_defender_troops_join_battle|Käske miestesi liittyä taisteluun ilman 
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-; menu_town|You arrived in {s60}.{s12}{s13}
+menu_town|Saavuit {s60}.{s12}{s13}een
 mno_town_menu_0|Mene jonnekkin.
 mno_town_menu_0_door|Ovu jonnekkin.
-; mno_town_approach|Approach {s1}...
-; mno_town_castle|Go to {s1}.
+mno_town_approach|Lähesty {s1}...
+mno_town_castle|Mene {s1}.
 mno_town_castle_door|Ovi linnaan.
-; mno_town_center|Walk to the main square...
+mno_town_center|Kävele pääaukiolle...
 mno_town_center_door|Ovi kaupungin keskustaan.
 mno_aw_chamber_door|Avaa ovi.
 mno_trade_with_arms_merchant|Vieraile {s40}.
@@ -315,10 +315,10 @@ mno_explore|Tutki tämä paikka.
 mno_help|Auta muukalaisia!
 mno_go_your_way|Jätä heidät oman onnensa nojaan.
 ; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
-; mno_good_equal|Good faction
-; mno_bad_equal|Evil faction
-; mno_replay_prev|Replay previous setup
-; menu_custom_battle_choose_faction2|^^^^^^^^^^Choose good faction
+mno_good_equal|Hyvien ryhmittymä
+mno_bad_equal|Pahojen ryhmittymä
+mno_replay_prev|Uudelleenpelaa edellinen asetus
+menu_custom_battle_choose_faction2|^^^^^^^^^^Valitse hyvä ryhmittymä
 mno_cb_gondor|Gondor
 mno_cb_gondor1|Rohan
 mno_cb_gondor2|Lothlorien
@@ -326,27 +326,27 @@ mno_cb_gondor3|Rivendell
 mno_cb_gondor4|Mirkwood
 mno_cb_gondor5|Kääpiöt
 mno_cb_gondor6|Dalet
-; mno_cb_gondor7|Beornings
-; menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
+mno_cb_gondor7|Beornit
+menu_custom_battle_choose_faction3|^^^^^^^^^^Valitse paha ryhmittymä
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
 mno_cb_mordor2|Dunland
 mno_cb_mordor3|Haradrim
-; mno_cb_mordor4|Easterlings
+mno_cb_mordor4|Itäläiset
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun
-; mno_cb_mordor8|Corsairs
+mno_cb_mordor8|Corsairet
 mno_rescue_mission|Hiivi noidan luolaan yön pimeyden suojassa.
 mno_next_rescue_scene_door|Jatka eteenpäin!
-; mno_pick_troops1|Pick companions for the mission, {reg0} selected
+mno_pick_troops1|Valitse seuralaisesi tehtävään, {reg0} valittuna
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
-; mno_go_forward|End selecting companions and proceed.
+mno_go_forward|Lopeta seuralaisten valitseminen ja jatka eteenpäin.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
-; mno_pay_respects|Kneel and pay your respects.
-; mno_swear_oath|Swear an oath of vengeance!
-; mno_despoil|Desecrate the site
-; mno_leave_mound|Leave the mound.
+mno_pay_respects|Polvistu ja anna kunnioituksesi.
+mno_swear_oath|Vanno koston vala!
+mno_despoil|Häpäise sijainti
+mno_leave_mound|Lähde kukkulalta.
 ; menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
 ; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 ; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.

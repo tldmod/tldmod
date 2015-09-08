@@ -25,14 +25,14 @@ qstr_Ready|戦闘可能
 qstr_Wounded|負傷
 qstr_Dead|死亡
 qstr_Routed|離脱
-qstr_Number_of_men_knocke|気絶した兵士: {reg1}
-qstr_Number_of_men_left:_|戦闘可能な兵士: {reg1}
+qstr_Number_of_men_knocke|気絶した兵: {reg1}
+qstr_Number_of_men_left:_|戦闘可能な兵: {reg1}
 qstr_Opponents_Beaten:_{r|倒した敵兵: {reg1}
 qstr_Opponents_Remaining:|敵兵残り: {reg1}
 qstr_Gauntlet_wave:_1|ガントレット人数:1名
 qstr_Gauntlet_wave:_{reg1|ガントレット:第{reg1}波
-qstr_Remain_in_retirement|このまま引退する。
-qstr_Go_back_to_the_adven|冒険に戻る。
+qstr_Remain_in_retirement|このまま引退する
+qstr_Go_back_to_the_adven|冒険に戻る
 qstr_You_have_retired_at_|{reg5}日間に渡る冒険を終え、 あなたはレベル{reg4}で引退しました。
 qstr_Effect_on_Score|スコア内訳
 qstr_Settlements_owned_by|領有した拠点の数: {reg0}
@@ -56,18 +56,18 @@ qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|トータルスコア: {reg0}
 ; qstr_______|      
 qstr_A_peaceful_village_n|ウェストフォルドから遠くない、とある平和な村・・・
-qstr_The_War_is_upon_Roha|戦争がローハンを襲う！
+qstr_The_War_is_upon_Roha|戦争の魔の手がローハンを襲う！
 qstr_Minas_Tirith___The_W|ミナス・ティリス ― 白の都
 qstr_The_White_Tree_stand|王家の血筋が途絶えて以来、白の木は枯れたままである
 qstr_The_Shadow_grows_eve|東に広がる闇の力は、かつてないほど強くなっている
 qstr_Minas_Morgul___City_|ミナス・モルグル ― ナズグールの都
-qstr_Sauron_s_armies_marc|サウロンの軍勢が戦争へと行進する！
+qstr_Sauron_s_armies_marc|サウロンの軍勢が行軍を開始した！
 qstr_Adventurers_at_audie|冒険者の一行が、執政デネソールに謁見していた・・・
 qstr___What_business_do_y|'さて諸君、君たちの嘆願とは何かね？'
 qstr___Your_Stewardship_w|'執政閣下、我々ははるばる遠い国から・・・ ジャンプしに来ました！'
 qstr___Enough_of_this_mad|'もういい加減にしろ！衛兵！！'
 qstr___I_ve_had_enough_of|'イタズラはもうたくさんだ・・・ 次の連中はひざまずかせろ！'
-; qstr_Chest|Chest
+qstr_Chest|箱
 qstr_Cape|マント
 qstr_Arms|腕
 qstr_Thighs|太もも
@@ -95,8 +95,8 @@ qstr_Useful_Tool_of_{s5}|{s5}の手足
 qstr_Servant_of_{s5}|{s5}の下僕
 qstr_Unknown_to_{s5}|{s5}のよそ者
 qstr_You_have_been_{reg1?|あなたは{s24}({reg0})に{reg1?昇格:降格}しました！
-qstr_You_{reg1?earned:los|{s11}のランクポイントを{reg11}{reg12?、 影響力を{reg12}:}{reg1?獲得し:失い}ました。
-qstr_You_spent_{reg10}_of|{s1}への影響力を{reg10}消費しました。 残りは{reg11}です。
+qstr_You_{reg1?earned:los|{s11}のランクポイントを{reg11}{reg12?、影響力を{reg12}:}{reg1?獲得し:失い}ました。
+qstr_You_spent_{reg10}_of|{s1}への影響力を{reg10}消費しました。残りは{reg11}です。
 qstr_Troop_upkeep:|兵士維持費:
 qstr_{s11}_and_{s10}|{s11}および {s10}
 qstr_their|彼らの
@@ -106,7 +106,7 @@ qstr_Short_of_Resource_Po|リソースポイントが足りません！！
 qstr_{s10}_will_soon_reas|{s10}が、まもなくあなたのパーティから{s12}兵士を呼び戻します！
 qstr_Superior_orders_from|{s11}より、次の兵士の異動命令が下されました:
 qstr_{reg12}_{s10}_left_t|{reg12}名の{s10}がパーティを離れました！
-qstr_Fangorn_claimed_{reg|ファンゴルンの森にて、 あなたの部隊のうち{reg0}名が死亡、 {reg1}名が負傷しました！
+qstr_Fangorn_claimed_{reg|ファンゴルンの森にて、あなたの部隊のうち{reg0}名が死亡、{reg1}名が負傷しました！
 qstr_You_were_wounded_in_|あなたはファンゴルンの森で負傷しました!
 qstr_Volunteers|予備兵
 qstr_{s1}_of_{s3}_was_def|{s3}の{s1}が戦いに敗れました。
@@ -132,7 +132,7 @@ qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_+1_to_Trainer|訓練スキルに+1
-qstr_Recruits_Tribal_Orcs|オークの部族を徴用
+qstr_Recruits_Tribal_Orcs|部族オークを徴用
 qstr_rally|奮い起こして
 qstr_rallies|奮い起こして
 qstr_+{reg1}_{s3}_in_batt|戦闘時に{s3}に+{reg1}
@@ -154,10 +154,10 @@ qstr_nothing|なし
 qstr_Good|良
 qstr_Med|平凡
 qstr_Bad|悪
-qstr_{reg4}_killed_{reg5}|{reg4}名死亡、 {reg5}名負傷、 {reg6}名離脱
-qstr_{reg4}_killed_{reg5}_|{reg4}名死亡、 {reg5}名負傷
-qstr_{reg4}_killed_{reg5}_r|{reg4}名死亡、 {reg5}名離脱
-qstr_{reg4}_wounded_{reg5|{reg4}名負傷、 {reg5}名離脱
+qstr_{reg4}_killed_{reg5}|{reg4}名死亡、{reg5}名負傷、{reg6}名離脱
+qstr_{reg4}_killed_{reg5}_|{reg4}名死亡、{reg5}名負傷
+qstr_{reg4}_killed_{reg5}_r|{reg4}名死亡、{reg5}名離脱
+qstr_{reg4}_wounded_{reg5|{reg4}名負傷、{reg5}名離脱
 qstr_killed|死亡
 qstr_routed|離脱
 qstr_wounded|負傷
@@ -173,8 +173,8 @@ qstr_near_the_Old_Ford_wh|むかしの渡り場の近く、古森街道がアン
 qstr_near_a_big_ford_cros|大きな浅瀬が{s15}の川を渡るところ
 qstr_near_a_small_ford_cr|小さな浅瀬が{s15}の川を渡るところ
 qstr_Battle_Advantage:_{r|この戦闘の優位性: {reg0}。
-qstr_{s9}_wants_you_to_re|{s9}は、次の指示があるまで、 再び彼の軍に同行するよう求めています。
-qstr_Rohan_capital_moved_|ローハンがエドラスから角笛城へ、 遷都をしました！
+qstr_{s9}_wants_you_to_re|{s9}は、次の指示があるまで、再び彼の軍に同行するよう求めています。
+qstr_Rohan_capital_moved_|ローハンがエドラスから角笛城へ、遷都をしました！
 qstr__Being_Raided_|(襲撃されています)
 qstr__Looted_|(略奪済み)
 qstr__Under_Siege_|(包囲攻撃を受けています)
@@ -216,14 +216,14 @@ qstr_This_land_belongs_to|ここは{s20}の領土だ・・・ {s23}が一体、 
 qstr_We_will_stay_as_long|我らが主人の命令がある限り、 我が部隊はここに滞在する！ まあ安心しろ、 おぬしを殺しに来たのではない。
 qstr_You_wear_the_colors_|その身なりは{s20}の者だな。 {s21}に何をしに来た？^さっさと答えろ！
 qstr_We_are_pursuing_our_|敵を追ってきたのだ。 その敵はおぬしらの敵でもある！
-qstr_Maybe._Or_maybe_you_|そうかも知れんが、 おまえたちが密偵である可能性もある。^{s20}の兵士よ、 おまえたちの土地へ帰れ。
+qstr_Maybe._Or_maybe_you_|そうかも知れんが、 おまえたちが間者である可能性もある。^{s20}の兵士よ、 おまえたちの土地へ帰れ。
 qstr_We_are_friends_of_{s|我々は{s21}の友人だ。
 qstr_Time_will_tell_if_yo|おぬしが真実を吐いているかどうかは、 時が教えてくれるだろう。 この時勢では、 敵か友人かを見極めるのは難しい。
 qstr_What_are_you_doing_h|{s20}のクズめ、 {s21}の土地で何をしている？ ここは我々の領土だ、 おぬしらのものではない！
 qstr_You_dare_question_di|{s23}直々の命令に、 文句をつけるつもりか？
 qstr_Guess_not._But_I_sti|そういうわけではない。 だが、 おぬしがこのあたりをうろつくのは気に入らん。^おぬしから目は離さんぞ、 {s20}の{playername}。
 qstr_None_of_your_busines|おまえなどに用は無い、 この豚め！
-qstr_*growls*^You_should_|*ガアア*^我らと主人を同じくした事を幸運に思うがいい、 本来ならば侵入者は許されんぞ！
+qstr_*growls*^You_should_|*咆哮*^我らと主人を同じくした事を幸運に思うがいい、 本来ならば侵入者は許されんぞ！
 qstr_What_are_you_doing_s|{s22}の奴隷が、 はるばるこの地まで来て何をしている？ ここの支配者は{s23}だぞ！
 qstr_Quiet!_I_didn_t_came|わめくな！ おまえの首が目的ではない。 今回は、な。
 qstr_And_I_ve_orders_to_l|まあ、 おぬしの事は見逃すように言われている。 いまのところはな。
@@ -402,13 +402,13 @@ qstr_{s1}_s_Burial_Mound|{s1}の塚
 qstr_{s1}_s_Funeral_Pyre|{s1}の火葬壇
 qstr_{s1}_is_logged_as_de|{s1}は死亡と記録されています
 qstr_You_have_been_discov|城壁を越える前に発見されてしまいました。
-qstr_The_enemy_is_coming_|敵が殺到しています、 逃げなければなりません！
-qstr_Scout_this_area_alon|この一帯は単独で偵察し、 味方と後で合流しなければなりません！
-qstr_Be_stealthy_but_elim|隠密行動を心がけなくてはなりませんが、 脅威となるものは素早く排除しなければなりません！
+qstr_The_enemy_is_coming_|敵が殺到しています、逃げなければなりません！
+qstr_Scout_this_area_alon|この一帯は単独で偵察し、味方と後で合流しなければなりません！
+qstr_Be_stealthy_but_elim|隠密行動を心がけなくてはなりませんが、脅威となるものは素早く排除しなければなりません！
 qstr_You_are_spotted_by_a|衛兵に発見されました！
 qstr_Eliminate_them_befor|応援を呼ばれる前に排除してください！
 qstr_You_have_reached_the|牢獄にたどり着きました！
-qstr_Eliminate_the_guards|衛兵を倒して、 味方を開放してください！
+qstr_Eliminate_the_guards|衛兵を倒して、味方を開放してください！
 qstr_{s1}_has_been_captur|{s1}は敵に捕まりました。
 qstr_Gondor_takes_a_capti|ゴンドールが捕虜を捕まえました
 qstr_Rohan_takes_a_captiv|ローハンが捕虜を捕まえました
@@ -419,7 +419,7 @@ qstr_You_were_grievously_w|あなたは戦闘で重傷を負いました。 部�
 qstr_You_were_grievously_wo|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。 不運な事に、 コンパニオンの数人が捕まり、 {s2}に連行されてしまいました。
 qstr_You_were_grievously_wou|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。 不運な事に、 妖術師は逃げてしまいました。
 qstr_You_were_grievously_woun|ひどい怪我を負ったあなたは、 死体の山に打ち捨てられました。 あなたは隙をみて城壁を乗り越えて逃げましたが、 不運な事に、 妖術師は逃げてしまいました。
-qstr_Some_of_your_compani|コンパニオンの何人かが、 古傷に悩まされています。
+qstr_Some_of_your_compani|コンパニオンの何人かが、古傷に悩まされています。
 qstr_Item_you_just_equipp|あなたがいま装備したアイテムは、 この種族には使えませんので、 まもなくインベントリに戻されます。^^インベントリに空きが確保されていない場合、 そのアイテムは消滅します。
 qstr_Inappropriate_equipm|不適当な装備
 qstr_The_mount_you_just_e|あなたがいま装備した乗り物は、 この種族には扱えません。 この状態で戦闘を行えば、 乗り物の制御に問題がでるでしょう。
@@ -554,9 +554,9 @@ qstr_Report_this_ill_news|この残念な結果を、すぐに夫人に報告し
 qstr_The_sorcerer_is_flee|妖術師が逃げています！はやく倒してください！
 qstr_The_sorcerer_is_dead|妖術師は死亡しました！
 qstr_The_battle_is_won!|戦闘に勝利しました！
-qstr_Look_at_my_over_the_|わしのショルダーショットを見てみい、 {playername}！ 遠目からだとわしも超キレイじゃ！
-qstr_You_wish_old_man_my_|お言葉ですが、ご老体、 私のショルダーショットのほうがずっとキレイですよ！
-qstr_You_should_really_se|おぬしは執政デネソールのフェースブックにある写真を見たか？ ありゃ凄いぞ！
+qstr_Look_at_my_over_the_|わしのショルダーショットを見てみい、{playername}！遠目からだとわしも超キレイじゃ！
+qstr_You_wish_old_man_my_|お言葉ですが、ご老体、私のショルダーショットのほうがずっとキレイですよ！
+qstr_You_should_really_se|おぬしは執政デネソールのフェースブックにある写真を見たか？ありゃ凄いぞ！
 qstr_Press_Space_to_conti|スペースキーを押してください・・・
 qstr_{s24}__{reg13}_|{s24} ({reg13})
 qstr_Influence:^_{reg11}_|影響力:^ {reg11} ({s16})
@@ -565,7 +565,7 @@ qstr_{s11}_{s24}__{reg13}|{s11}、 {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}、 {reg11} ({s16})
 qstr_{s15}_{reg12}__in_{s|{s15}、 {reg12} ({s16})
 qstr_^No_food:___{reg7}|^食料切れ:  -{reg7}
-qstr_Current_party_morale|現在のパーティの士気は{reg5}です。^士気の修正値は次の通りです:^^基本値:  +50^パーティの規模: {s2}{reg1}^統率力: {s3}{reg2}^食事のバラエティ: {s4}{reg3}{s5}^スペシャルアイテム: {s6}{reg6}^直近のイベント: {s7}{reg4}^合計:  {reg5}
+qstr_Current_party_morale|現在のパーティの士気は{reg5}です。^士気の修正値は次の通りです:^^基本値:  +50^パーティの規模: {s2}{reg1}^統率力: {s3}{reg2}^食事のバラエティ: {s4}{reg3}{s5}^宝物: {s6}{reg6}^直近のイベント: {s7}{reg4}^合計:  {reg5}
 qstr_Defending|防衛中
 qstr_Gathering_army|徴兵中
 qstr_Besieging_{s11}|{s11}を包囲攻撃中
@@ -582,15 +582,15 @@ qstr_You_are_suffering_from_|あなたは{s1}、 {s2}、 {s3}および {s4}に�
 qstr_Weekly_upkeep_for_tr|一週間の兵士維持費:^{reg5}リソースポイント^
 qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4}リソースポイント({reg5})
 qstr_No_upkeep_costs|維持費なし
-qstr_Orc_hiring_bonus:_+2|オーク雇用費ボーナス: オーク一匹につき+2/3^
+qstr_Orc_hiring_bonus:_+2|オーク雇用費ボーナス: オーク1匹につき+2/3^
 qstr_Current_party_size_l|現在のパーティの人数上限は{reg5}です。^人数上限の修正値は次の通りです:^^基本値:  +10^統率力: {s2}{reg1}^カリスマ: {s3}{reg2}^ランク: {s4}{reg3}^{s5}合計:  {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|ファクションの勢力一覧:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^ファクションは通常、 勢いが{reg1}を下回ると、 包囲攻撃を受けます。
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特殊能力:^{s2}
-qstr_^^You_are_{s17}.|^^あなたは{s17}です。
-qstr_Assassins_in_the_cam|暗殺者がいます、 身を守ってください！
+qstr_^^You_are_{s17}.|^^あなたは{s17}にいます。
+qstr_Assassins_in_the_cam|暗殺者がいます、身を守ってください！
 qstr_Ally_party_size:_{re|友軍の人数: {reg1}
 qstr_Enemy_party_size:_{r|敵軍の人数: {reg1}
 qstr_Party_count:_{reg0}|パーティの総数: {reg0}
@@ -608,9 +608,9 @@ qstr_Normal|通常
 qstr_Defender_only|防御側のみ
 qstr_Halved|半分
 qstr_Battles_only|戦闘時のみ
-; qstr_Doubled|Doubled
-; qstr_Tripled|Tripled
-; qstr_Quadrupled|Quadrupled
+qstr_Doubled|2倍
+qstr_Tripled|3倍
+qstr_Quadrupled|4倍
 qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
 qstr_Fangorn_search:_fail|ファンゴルンの森探索: 失敗。
 qstr_Troll_caged_in_wheel|トロルは車輪付きの檻に入れられました。
@@ -652,7 +652,7 @@ qstr_^^Ally_Casualties:{s|^^味方の犠牲者:{s0}
 qstr_News_of_your_victory|{s3}に、あなたの{s4}戦の勝利の報せが届きました。
 qstr_{s3}_witnesses_your_|あなたの{s4}戦の勝利を{s3}が見届けました。
 qstr_{s1}_of_{s3}_managed|{s3}の{s1}は逃げのびました。
-qstr_Prisoners_rescued_so|現在までに救出した捕虜の数: {reg1}
+qstr_Prisoners_rescued_so|これまでに救出した捕虜の数: {reg1}
 ; qstr_Victory_comment._Pla|Victory comment. Player was alone
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
@@ -663,7 +663,7 @@ qstr_You_have_trouble_thi|頭を強く打ったせいか、 あなたは慢性�
 qstr_Perhaps_I_m_getting_|最近、 ツキがなくなってきたようだ・・・
 qstr_Retirement_is_starti|あなたは最近、 引退の事を考える時間が多くなってきました。
 qstr_No_matter!_I_will_pe|どんな事があろうと、がんばるぞ！
-qstr_What_did_I_do_to_des|{俺/私}はなぜこんな事をしてる{んだ/のかしら}？
+qstr_What_did_I_do_to_des|私はなぜこんな事をしてる{んだ/のかしら}？
 qstr_I_suppose_it_ll_make|とりあえず、 もう話のタネには困らない{よな/わよね}・・・
 qstr__{s17}|、 {s17}
 qstr_You_retreated_from_b|退却しました。
@@ -728,29 +728,29 @@ qstr_Breaking_camp...|キャンプを撤収しました・・・
 qstr_You_have_left_{s1}.|{s1}を後にしました。
 qstr_You_are_entering_{s1|{s1}({s2})に入りました。
 qstr_You_are_entering_{s1}|{s1}に入りました。
-qstr_The_war_expands_comm|戦火が拡大し、 指揮官たちはより大胆になりました！ (包囲攻撃の必要条件が緩和されました)
+qstr_The_war_expands_comm|戦火が拡大し、指揮官たちはより大胆になりました！(包囲攻撃の必要条件が緩和されました)
 qstr_Your_party_is_spotte|あなたのパーティは{s1}に発見されました。
 qstr_Party_has_nothing_to|食料がありません！
 qstr_You_pay_for_accommod|宿泊代を支払いました。
-qstr_The_troll_outside_{s|{s2}周辺のトロルは倒されました。 任務はキャンセルされました。
-qstr_{s1}_was_killed_on_t|{s1}は戦死しました。 任務はキャンセルされました。
-qstr_{s1}_has_been_defeat|{s1}は敗れました。 任務はキャンセルされました。
+qstr_The_troll_outside_{s|{s2}周辺のトロルは倒されました。任務はキャンセルされました。
+qstr_{s1}_was_killed_on_t|{s1}は戦死しました。任務はキャンセルされました。
+qstr_{s1}_has_been_defeat|{s1}は敗れました。任務はキャンセルされました。
 qstr_You_must_follow_{s1}|あなたは{s1}に同行しなければなりません！
-qstr_You_must_follow_{s1}!|あなたは{s1}に同行しなければなりません！ これは最後の通告です！
+qstr_You_must_follow_{s1}!|あなたは{s1}に同行しなければなりません！これは最後の通告です！
 qstr_Parties_defeated:_{r|倒した部隊の数: {reg1}
 qstr_{s1}_is_scouted.|{s1}の偵察を完了しました。
 qstr_The_Age_of_Men_has_f|人類の時代は、 ついに終わりを告げました。 これよりふたつの塔が残った戦力を結集し、中つ国の覇権を争います！
 qstr_The_War_of_the_Two_T|ふたつの塔の戦いが始まりました！
 qstr_{s2}_was_defeated!|{s2}が敗れました！
-qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！ {s22}は現在、{s23}です。
-qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！ {s22}は現在、{s23}です。
+qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！{s22}は現在、{s23}です。
+qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！{s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
 qstr_Guardians_of_{s6}|{s6}の守護者
 qstr_Guard_Legion_of_{s6}|{s6}近衛軍団
 qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}に大規模な軍勢を集結させ、 首都防衛の最後の試みているとの報告が入りました。
 qstr_The_forces_of_{s2}_e|{s2}が{s15}に前進基地を築きました！
 qstr_{s1}_from_{s2}|{s2}の{s1}
-qstr_When_dealing_with_lo|{s11}の民と取引をする場合、 彼らはあなたの顔を知らず、 あなたの{s10}での功績についても、 必ずしも知っているわけではないという事に 注意してください。^^({s11}の民とのやりとりに使用される リソースポイントは {s11}で稼げるもので、 {s10}で稼いだものとは別です  -- レポート画面も参照してください)
+qstr_When_dealing_with_lo|{s11}の民と取引をする場合、 彼らはあなたの顔を知らず、 あなたの{s10}での功績についても、 必ずしも知っているわけではないという事に 注意してください。^^({s11}の民とのやりとりに使用される リソースポイントは {s11}でのみ稼げるもので、 {s10}で稼いだものとは別です  -- レポート画面も参照してください)
 qstr_Info|情報
 qstr_You_came_into_a_poss|やたらと大きなおわんに入った、 奇妙だけども新鮮そうな水を手に入れた。 ジャコウにちょっと似た香りがする。
 qstr_Obtained:_Ent_water.|入手: エント水。
@@ -776,12 +776,12 @@ qstr_{s27}:_Party_morale_|{s27}: パーティの士気が上がりました。
 qstr_{s27}:_Party_morale_d|{s27}: パーティの士気が下がりました。
 qstr_You_have_failed_to_f|名誉の死を遂げた {s1}の復讐をするという 誓いを達成できませんでした！
 qstr_You_have_fulfilled_y|名誉の死を遂げた {s1}の復讐をするという 誓いを成就させました！
-; qstr_{reg65?my_Lady:my_Lo|{reg65?my Lady:my Lord}
-; qstr_{reg65?My_Lady:My_Lo|{reg65?My Lady:My Lord}
-; qstr_{reg65?mistress:mast|{reg65?mistress:master}
-; qstr_{reg65?Mistress:Mast|{reg65?Mistress:Master}
-; qstr_{reg65?madame:sir}|{reg65?madame:sir}
-; qstr_{reg65?Madame:Sir}|{reg65?Madame:Sir}
+qstr_{reg65?my_Lady:my_Lo|{reg65?閣下:閣下}
+qstr_{reg65?My_Lady:My_Lo|{reg65?閣下:閣下}
+qstr_{reg65?mistress:mast|{reg65?閣下:閣下}
+qstr_{reg65?Mistress:Mast|{reg65?閣下:閣下}
+qstr_{reg65?madame:sir}|{reg65?閣下:閣下}
+qstr_{reg65?Madame:Sir}|{reg65?閣下:閣下}
 ; qstr_How_do_magnets_work?|How do magnets work?
 ; qstr_Um..._by_enchanting_|Um... by enchanting iron?
 ; qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
@@ -837,7 +837,7 @@ qstr_{playername}_s_Reser|{playername}の予備兵
 qstr_Excellent_job_{s23}!|見事だ、 {s23}！ その献身的な仕事ぶりは、 すべての指揮官が見習うべきだ。^
 qstr_Nicely_done_{s23}.|うまくやってくれたな、 {s23}。
 qstr_Good_work_{s23}.|よくやってくれた、 {s23}。
-qstr_The_more_you_capture|捕虜は多ければ多いほど良いな、 {s23}。
+qstr_The_more_you_capture|捕虜は多ければ多いほど良いですな、 {s23}。
 qstr_Caught_a_few_straggl|敗残兵でも捕まえたか、 {s23}？
 qstr_I_am_sorry_no_one_el|申し訳ないが、そちらへまわす余裕はない。 ^{s22}に従ってここを防衛しなければならないのだ。
 qstr_Tough_luck_but_we_do|ついてないな、 今は余裕がない。 また今度来てくれ。
@@ -860,8 +860,8 @@ qstr_It_is_my_duty_to_prot|我らが友軍を守るのは、わたしの義務�
 qstr_I_am_{s4}_{s15}_of_{|私の名は{s4}、 {s6}の{s15}
 qstr_I_am_{s4}_a_commande|私は{s4}、 {s6}の指揮官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?で{s8}の領主である。:だ。
-qstr_Very_well_done_{play|これは素晴らしい、 {playername}！ 私の期待した通り、 密偵と連絡係の二人とも捕まえてくれたのだな。 彼らは身柄を厳重に拘束され、 尋問されるのを待っている、とな。 彼らにはたっぷり質問に答えてもらわねばならん！ とにかく、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これはわたしからの感謝の気持ちだ、 受け取ってくれ。
-qstr_Beautiful_work_{play|よくやった、 {playername}！ 私に言われた通り、 密偵と連絡係の二人とも捕まえてくれたのだな。 彼らは牢獄に厳重に拘束され、 尋問されるのを待っている、とな。 今夜は拷問吏が忙しくなるだろう！ とにかく、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これはわたしからの感謝の気持ちだ、 受け取ってくれ。
+qstr_Very_well_done_{play|これは素晴らしい、 {playername}！ 私の期待した通り、 間者と連絡係の二人とも捕まえてくれたのだな。 彼らは身柄を厳重に拘束され、 尋問されるのを待っている、とな。 彼らにはたっぷり質問に答えてもらわねばならん！ とにかく、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これはわたしからの感謝の気持ちだ、 受け取ってくれ。
+qstr_Beautiful_work_{play|よくやった、 {playername}！ 私に言われた通り、 間者と連絡係の二人とも捕まえてくれたのだな。 彼らは牢獄に厳重に拘束され、 尋問されるのを待っている、とな。 今夜は拷問吏が忙しくなるだろう！ とにかく、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これはわたしからの感謝の気持ちだ、 受け取ってくれ。
 qstr_Your_mission_is_comp|今回の任務は完了しました。 {s9}より、 新たな指示のあるまで再び我が軍に同行せよ、 との命令を受け取りました。
 qstr_{s13}_asked_you_to_g|{s13}より、 {s4}を{reg3}ユニット集めてくるよう、 命令を受けました。
 qstr_{s9}_asked_you_to_sc|{s9}より、 {s13}、 {s14}および {s15}を偵察し、 結果を報告せよ、 との命令を受けました。
@@ -914,12 +914,12 @@ qstr_{s9}_asked_you_to_ta|{s9}より、 {s13}へ手紙を届けるよう、 頼�
 qstr_{s9}_asked_you_to_tak|{s9}より、 {s15}の{s13}へ手紙を届けるよう、 頼まれた。 仕事を引き受けた時点では、 {s13}は{s4}にいた。
 qstr_{s11}_asked_you_to_e|{s11}より、 {s14}まで伝令を護衛するよう、 頼まれた。
 qstr_Lend_your_experience|経験豊富な軍医の{s3}を{s1}に貸す。
-qstr_No_commander_should_|指揮官としてはこのような事は話づらいのだが、 {playername}、 先日わが部隊を閲兵していたところ、 なんと剣の握り方も知らぬ者がいるではないか。 彼らには勇気の意味を 実際に示してやる必要がある。 {playername}、 おぬしは名の知れた戦士だ。 私の代わりに兵士を鍛えてやってくれないか？ 引き受けてくれれば非常に有り難い。
-qstr_No_commander_should_h|指揮官としてはこのような事は話づらいのだが、 {playername}、 先日わが部隊を閲兵していたところ、 何人かを不適格者として処刑するはめになった。 彼らには根性を叩き込んでくれる骨のある人物が必要だ。 根性の足りない者は殺してしまうような人物が。 {playername}、 おぬしは名の知れた戦士だ。 私の代わりに兵士を鍛えてやってくれないか？ 引き受けてくれれば、決して後悔はさせないぞ。
+qstr_No_commander_should_|指揮官としてはこのような事は話づらいのだが、 {playername}、 先日わが部隊を閲兵していたところ、 なんと剣の握り方も知らぬ者がいるではないか。 彼らには勇気の意味を 実際に示してやる必要がある。 {playername}、おぬしは名の知れた戦士だ。 私の代わりに兵士を鍛えてやってくれないか？ 引き受けてくれれば非常に有り難い。
+qstr_No_commander_should_h|指揮官としてはこのような事は話づらいのだが、 {playername}、 先日わが部隊を閲兵していたところ、 何人かを不適格者として処刑するはめになった。 彼らには根性を叩き込んでくれる骨のある人物が必要だ。 根性の足りない者は殺してしまうような人物が。 {playername}、おぬしは名の知れた戦士だ。 私の代わりに兵士を鍛えてやってくれないか？ 引き受けてくれれば、決して後悔はさせないぞ。
 qstr_{s9}_asked_you_to_ra|{s9}より、 {reg1}名の{s14}を鍛え上げ、 彼に引き渡すよう頼まれた。
 qstr_{s9}_asked_you_to_hu|{s9}より、 {s4}という名のおたずね者を捕らえるよう依頼された。 おたずね者は現在、 {s3}に潜んでいるとされている。
 qstr_{s9}_asked_you_to_ca|{s9}より、 みっつのグループに分かれて逃亡中の奴隷どもを、 生きたまま{s4}へ連れ戻すよう、頼まれた。 すべてのグループは{s3}を目指して移動しているらしい。
-qstr_{s11}_asked_you_to_f|{s11}より、 {s12}を離れる予定の密偵を追跡するよう、 頼まれた。 追跡に気付かれてしまうと、 あやしまれて予定を切り上げられてしまう可能性があるため、 注意を要する。 密偵が共謀者と落ち合ったら、 彼らを捕獲して{s11}の許に連行しよう。
+qstr_{s11}_asked_you_to_f|{s11}より、 {s12}を離れる予定の間者を追跡するよう、 頼まれた。 追跡に気付かれてしまうと、 あやしまれて予定を切り上げられてしまう可能性があるため、 注意を要する。 間者が共謀者と落ち合ったら、 彼らを捕獲して{s11}の許に連行しよう。
 qstr_{s11}_asked_you_to_c|{s11}より、 敵の指揮官を捕獲し、 尋問のために{s11}の許へ連行するよう依頼された。
 qstr_{s9}_asked_you_to_le|{s9}に、 コンパニオンの{s3}を一週間貸す約束をした。
 qstr_{s9}_has_requested_y|{s9}より、 彼の許へ敵の捕虜を{reg1}名連れてくるよう、 頼まれた。
@@ -927,10 +927,10 @@ qstr_We_have_reports_that|友軍の偵察隊のいくつかが奇襲を受け、
 qstr_We_have_reports_that_|我々の偵察隊のいくつかが奇襲を受け、 壊滅したとの報告を受けた。 どうせ敵の捕虜となった臆病者どもがいるに違いない。 やつらは消耗品だが、 牢獄で無駄死にさせるのは浪費と言えるだろう。  おぬしには味方の捕虜を{reg1}名救出し、 連中を戦列に復帰させて欲しい。
 qstr_{s9}_has_asked_you_to|{s9}より、 {reg1}名の捕虜救出を依頼された。
 qstr_We_have_reports_that_a|敵部隊が{s13}に集結している可能性があるとの報告を受けた。 敵勢の規模がわからない以上、 これは当然の事ながら私にとって重大な懸念だ。 おぬしには充分な距離まで{s13}に接近し、 出来る限りの情報収集をしてもらいたい。
-qstr_My_spies_tell_me_of_|密偵からの報告によると、 {s13}に大規模な戦士の一団が集結しているらしい。 やつらなど我が軍の敵ではないが、 敵勢の数くらいは把握しておかねばならん。 おぬしには充分な距離まで{s13}に接近し、 できるかぎりの情報を収集してもらいたい。
+qstr_My_spies_tell_me_of_|間者からの報告によると、 {s13}に大規模な戦士の一団が集結しているらしい。 やつらなど我が軍の敵ではないが、 敵勢の数くらいは把握しておかねばならん。 おぬしには充分な距離まで{s13}に接近し、 できるかぎりの情報を収集してもらいたい。
 qstr_{s9}_asked_you_to_sco|{s9}より、 {s13}近辺を偵察するよう依頼された。
 qstr_We_have_reports_of_s|{s13}付近で敵が活動中との報告を受けた。 我々の偵察隊は、 具体的に何が行われているのかを 確認できる位置まで接近できていないようだ。 おぬしには偵察隊を編成し、 {s13}に充分接近した位置から その偵察隊を放ってもらいたい。
-qstr_My_spies_tell_me_the|{s13}付近で敵が活動中との報告を密偵から受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、 念を押すんだ！
+qstr_My_spies_tell_me_the|{s13}付近で敵が活動中との報告を間者から受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、 念を押すんだ！
 qstr_{s9}_asked_you_to_di|{s9}より、 {s13}近辺に偵察隊を放つよう依頼された。^少なくとも{s14}を1名含む、 {s15}の兵7名を連れて {s13}近くまで移動し、 {s14}に話かけて偵察隊を放とう。
 qstr_We_need_to_take_the_|{playername}、 戦いはこちらから仕掛けなくてはならない。 現時点で考えられるのは、 敵の偵察隊と連絡網を叩くことだ。 おぬしには{s13}を{reg1}部隊、 潰してもらいたい。 これで我が軍が主導権を奪い返すことができる。
 qstr_We_need_to_grind_dow|{playername}、 我々は役立たずの敵勢を 粉々にすり潰してやらねばならん。 やつらの偵察隊や補給隊どもが 我々の目と鼻の先をうろうろしておるのは気にさわる。 おぬしには{s13}を{reg1}部隊潰し、 やつらに恐怖というものを教えてやってもらいたい。
@@ -959,7 +959,7 @@ qstr_The_{s9}_of_{s4}_ask|{s4}の{s9}より、 集落の近辺をうろつく迷
 qstr_The_{s9}_of_{s14}_ha|{s14}の{s9}より、 {s14}で悪さを働くゴブリンの一団を退治するよう 頼まれた。 ゴブリンどもは夜のあいだだけ出没し、 一人で通りを歩く者だけを狙うという。
 qstr_refugees|難民
 qstr_slaves|奴隷
-qstr_{s1}_Refugees|{s1} 難民
+qstr_{s1}_Refugees|{s1}の難民
 qstr_{s1}_Slaves|{s1} 奴隷
 qstr_The_{s11}_of_{s10}_a|{s10}の{s11}より、 {s12}を{s13}まで護衛するよう、 頼まれた。
 qstr__Guards_slaughter_hi|衛兵、 この者を殺せ！
@@ -970,14 +970,14 @@ qstr_{s6}_This_place_and_t|{s6} この拠点と周辺一帯は、 {s8}の{s7}の
 qstr_{s3}_and_{s5}|{s3}および {s5}
 qstr_{s3}_{s5}|{s3}、 {s5}
 qstr_{reg20?We_mostly_pro|{reg20?ここで我々は主に{s5}を作っている:最近は大した収穫はない}。 詳しい事を知りたければ、 {reg4?ギルドマスター:村の長老}に話を聞くといい。 彼はすぐ近くのその辺にいるよ。
-qstr_Hey_scum!_I_can_fix_|おい、おまえ！ あごの形を直してやろうか。
-qstr_Watch_where_you_re_g|うろちょろするな、 この虫けらめが！
-qstr_I_don_t_like_your_fa|気にいらん顔つきだな！ 直してやろう。
-qstr_What_are_you_looking|おい、何を見てるんだ？ ああ？
+qstr_Hey_scum!_I_can_fix_|{おい、おまえ/ちょっとあなた}！あごの形を直して{やろうか/あげるわ}。
+qstr_Watch_where_you_re_g|うろちょろ{するな/しないでよ}、この虫けら{めが/}！
+qstr_I_don_t_like_your_fa|{気にいらんない顔つきだな/ぶさいくね}！ 直して{やろう/あげるわ}。
+qstr_What_are_you_looking|{おい/ちょっと}、何を見てる{んだ/のよ}？ {ああ/ええ}？
 qstr_the_white_hand|白の手
 qstr_the_lidless_eye|瞼なき御目
-qstr_I_have_some_of_your_|そちらの兵を数名、 預かっている。 何名かを そちらへまわそう。
-qstr_Some_of_your_stinky_|そちらの兵を数名、 預かっている。 何名かを そちらへまわそう。
+qstr_I_have_some_of_your_|そちらの兵を数名、預かっている。何名かをそちらへまわそう。
+qstr_Some_of_your_stinky_|そちらの兵を数名、預かっている。何名かをそちらへまわそう。
 qstr_{s4}_It_is_always_go|{s4} 同胞に出会うのは、 いつでもいいものだ。
 qstr_a_nearby_town|近くの町
 qstr_that_town_over_there|あそこに見える町
@@ -986,11 +986,11 @@ qstr_{s4}^We_are_{reg1?fo|{s4}^我々は{s11}周辺を、 {reg1?馬糧の徴発:
 qstr_{s4}^We_are_patrolli|{s4}^我々は{s11}周辺を 巡察中だ。
 qstr_{s4}^We_are_carrying|{s4}^我々は{s11}から {s12}まで 補給物資を輸送しているところだ。
 qstr_{s4}^We_are_escortin|{s4}^我々は{s12}へ 捕虜の護送中だ。
-qstr_Greetings_do_you_nee|ごきげんよう、 兵の補充は必要かな？
+qstr_Greetings_do_you_nee|ごきげんよう、兵の補充は必要かな？
 qstr_Goodbye_friends.|では、 ごきげんよう、 わが友人。
-qstr_See_you_later_if_you|また会おう。 おまえが殺されなければな。
+qstr_See_you_later_if_you|また会おう。おまえが殺されなければな。
 qstr__^Oh_and_take_back_t|^おっと、 よそ者は引き取ってくれ。
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?彼ら:あの}勇敢な{reg28?兵士たち:兵}は、 我らが領土を守る 大きな戦力になってくれるだろう。{s32} {s23}^^[{s14}のリソースポイントを{reg14}獲得しました]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?彼ら:あの}活きのいい{reg28?兵士たち:兵}は、 大きな戦力になってくれるだろう。{s32} {s23}^^[{s14}のリソースポイントを{reg14}獲得しました]
 qstr_Good_luck_in_your_tr|旅の無事を祈る。
-qstr_Try_not_getting_your|殺されないよう、 気をつけるのだな。
+qstr_Try_not_getting_your|殺されないよう、気をつけるのだな。

@@ -203,7 +203,7 @@ mno_order_attack_continue|Rozkaż żołnierzom, by nie przerywali ataku.
 mno_order_retreat|Każ się wycofać.
 menu_kingdom_army_quest_report_to_army|{s8} przesyła wiadomość, że życzy sobie, byś przyłączył{/a} się do jego nowej kampanii wojennej. Musisz przybyć wraz z armią składającą się z {reg13} żołnierzy i szybko powin{ieneś/naś} wyszkolić więcej ludzi, jeśli tylu nie posiadasz.
 mno_reject|Send a message you are too busy.
-; mno_send_word|Send word you'll join him shortly.
+mno_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz
 menu_kingdom_army_quest_messenger|{s8} przesyła wiadomość, że życzy sobie rozmawiać z tobą w sprawie pewnego zadania. Żąda, byś spotkał{/a} się z nim najszybciej, jak to tylko możliwe.
 menu_kingdom_army_quest_join_siege_order|{s8} chce, byś pom{ógł/ogła} oblegać {s9} i przygotować szturm. Twoi żołnierze mają zająć {s9} za wszelką cenę.
 menu_kingdom_army_follow_failed|Nie wysłuchał{e/a}ś rozkazów, które wydał ci {s8} i nie podążył{e/a}ś za nim. W gniewie wyrzuca Cię ze swej armii i wysyła groźnie brzmiące ostrzeżenie, iż twe czyny nie zostaną zapomniane.
@@ -351,7 +351,7 @@ menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mou
 menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s1}.   You would relentlessly seek out the forces of {s2} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
 menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
-; mno_leave_pyre|Leave the pyre.
+mno_leave_pyre|Odejdź od stosu.
 menu_town_ruins|When you approach, you see that {s1} is {s2}
 mno_ruin_menu_0|Explore the place.
 mno_ruin_leave|Wyjdz...

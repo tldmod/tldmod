@@ -1,31 +1,31 @@
-; fac_no_faction|No Faction
-; fac_commoners|Commoners
-; fac_outlaws|Savages and Bandits
+fac_no_faction|Suuntautumaton
+fac_commoners|Maallikot
+fac_outlaws|Sivistymättömät ja maantierosvot
 fac_gondor|Gondor
 fac_dwarf|Erebor
 fac_rohan|Rohan
 fac_mordor|Mordor
 fac_isengard|Isengard
 fac_lorien|Lothlorien
-; fac_imladris|Imladris
+fac_imladris|Rivendell
 fac_woodelf|Synkmetsän Haltiat
 fac_dale|Dalet
 fac_harad|Harad
 fac_rhun|Rhun
-; fac_khand|Khand
-; fac_umbar|Umbar
+fac_khand|Khand
+fac_umbar|Umbar
 fac_moria|Moria
 fac_guldur|Dol Guldur
-; fac_gundabad|Mt. Gundabad
-; fac_dunland|Dunlendings
-; fac_beorn|Beornings
-; fac_player_supporters_faction|Player Faction
-; fac_player_faction|Player Faction
-; fac_brigands|Brigands
+fac_gundabad|Gundabadin vuori
+fac_dunland|Mustainmaalaiset
+fac_beorn|Beornit
+fac_player_supporters_faction|Pelaajan ryhmittymä
+fac_player_faction|Pelaajan ryhmä
+fac_brigands|Rosvot
 fac_tribal_orcs|Heimolais-örkit
 fac_innocents|Viattomat
 fac_merchants|Kauppiaat
-; fac_manhunters|Manhunters
-; fac_deserters|Deserters
+fac_manhunters|Ihmisjahtaajat
+fac_deserters|Sotilaskarkurit
 fac_mountain_bandits|Vuoribandiitit
 fac_forest_bandits|Metsäbandiitit

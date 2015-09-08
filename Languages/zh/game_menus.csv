@@ -1,0 +1,368 @@
+menu_start_game_1|^^^^^^^^^^你為哪一方而戰?
+mno_start_good|新紀元的黎明
+mno_start_evil|人類的黃昏
+mno_go_bback|返回
+menu_start_phase_2|^^^^^ 中土世界. 黑暗的陰影正在東方蔓延, ^潛伏了近一個紀元的邪惡勢力重現世間. ^中土的自由之人類是否可以再一次戰勝黑暗. ^人類, 精靈, 矮人和獸人, 各種勢力在這裡繼續角逐^^現在, 正義與邪惡的戰爭即將拉開帷幕...
+mno_go_forth|向你選擇的路前進吧...
+menu_start_game_3            |^^^^^^^^選擇你的戰役:
+mno_custom_battle_scenario_1 |小規模戰役, 剛鐸VS哈拉德.
+mno_custom_battle_scenario_12|選擇你的戰鬥陣營
+mno_custom_battle_scenario_3 |小規模戰役, 精靈VS黑努美諾爾人.
+mno_custom_battle_scenario_4 |聖盔谷防禦戰, 洛汗VS艾辛格.
+mno_custom_battle_scenario_5 |小規模戰役, 北方自由民VS魯恩.
+mno_custom_battle_scenario_6 |攻城戰, 半獸人VS矮人.
+mno_custom_battle_scenario_7 |伏擊戰, 半獸人VS幽暗密林精靈.
+mno_custom_battle_scenario_11|測試戰 (調整平衡!)
+mno_custom_battle_scenario_10|風景測試戰
+mno_troll_battle_scenario    |巨魔測試戰
+mno_warg_battle_scenario     |座狼測試戰
+mno_build_your_own_scene     |**建立你自己的TLD場景**
+mno_go_back                  |返回
+menu_tutorial|^^ TLD有部分功能是M＆乙所沒有的. 一些細節可以在遊戲提示中看到. 遊戲教程同原版一樣. 
+mno_go_back_dot|返回.
+mno_view_upkeep_costs|查看維修費用.
+mno_view_character_report|查看人物報告.
+mno_view_party_size_report|查看部隊上限.
+mno_view_morale_report|查看部隊士氣
+mno_view_character_report_02|NPC狀態.
+mno_view_faction_strengths_report|查看勢力力量.
+mno_view_traits_report|查看人物稱號.
+mno_resume_travelling|繼續旅程.
+mno_custom_battle_go|開始.
+mno_leave_custom_battle_2|取消.
+menu_custom_battle_end|^^^^^^戰鬥結束. {s1} 你的隊伍殺死了{reg5}人, 敵人的隊伍殺死了{reg6}人. 你殺死了{reg7}人.
+mno_replay|重新開始這場戰鬥
+mno_continue_dot|繼續.
+menu_quick_battle_general_test|^^^當前戰鬥: ^隊伍 A: {reg10} {s10}^^對戰^^隊伍 B: {reg11} {s11}
+mno_tAA|+5 隊伍 A
+mno_tAB|-5 隊伍 A
+mno_tAC|選擇部隊 A
+mno_tBA|+5 隊伍 B
+mno_tBB|-5 隊伍 B
+mno_tBC|選擇部隊 B
+mno_B|預置1
+mno_F|開始戰鬥!
+mno_dot_go_back|. 返回
+menu_quick_battle_troll|^^^^^^^^選擇你的食人魔場景:
+mno_troll_battle_scenario_10|測試: 巨魔 vs 步兵
+mno_troll_battle_scenario_11|測試: 巨魔 vs 射手
+mno_troll_battle_scenario_12|測試: 巨魔 vs 騎兵
+mno_troll_battle_scenario_13|測試: 巨魔 vs 槍騎兵
+mno_troll_battle_scenario_14|測試: 巨魔 vs 巨魔
+mno_troll_battle_scenario_15|玩具測試: 玩家控制巨魔
+menu_quick_battle_wargs|^^^^^^^^選擇你的戰役測試場景:
+mno_warg_battle_scenario_10|對抗座狼: 1 vs 1
+mno_warg_battle_scenario_11|對抗座狼: 2 vs 3
+mno_warg_battle_scenario_12|對抗座狼: 很多 vs 很多
+mno_warg_battle_scenario_10b|遊玩座狼: 1 vs 1
+mno_warg_battle_scenario_11b|遊玩座狼: 2 vs 3
+mno_warg_battle_scenario_12b|遊玩座狼: 很多 vs 很多
+menu_start_good|^^^^^^^^^^選擇你的種族:
+mno_start_ma|人類
+mno_start_el|精靈
+mno_start_dw|矮人
+mno_go_back|返回
+menu_start_evil|^^^^^^^^^^你要效忠於誰?
+mno_start_eye|魔多的索倫 , 魔戒之王
+mno_start_hand|艾辛格的薩魯曼 , 白袍巫師
+menu_start_eye|你的主人是索倫之眼^選擇你的種族
+mno_start_or|半獸人 , 魔眼奴僕
+mno_start_ur|強獸人 , 獸人的新品種
+mno_start_em|人類 , 被索倫征服的
+menu_start_hand|^^^^^^^^^你的主人是白袍巫師薩魯曼^選擇你的種族
+mno_start_whor|半獸人 , 白手奴僕
+mno_start_isur|強獸人 , 艾辛格繁衍
+mno_start_duma|登蘭德人 , 西部平原
+menu_start_good_man|^^^^^^^^^^選擇你的人類陣營:
+mno_start_go|剛鐸 , 白塔王國
+mno_start_ro|洛汗 , 驃騎之鄉
+mno_start_du|登丹人 , 古努曼諾爾王朝後裔
+mno_start_be|波寧人 , 熊人後代
+mno_start_da|王國北部河谷鎮
+menu_start_good_elf|^^^^^^^^^^老年人 , 你住在哪個森林?
+mno_start_ri|瑞文戴爾 , 精靈王愛隆
+mno_start_lo|羅斯洛立安 , 精靈女王凱蘭崔爾
+mno_start_mi|幽暗密林 , 木精靈的土地
+menu_start_good_dwarf|^^^^^^^^^^選擇你的出身:
+mno_start_er|孤山的居民
+mno_start_ih|鐵丘陵的礦工
+menu_start_gondor|^^^^^^^^^^你是剛鐸的哪裡人?
+mno_start_mt|米那斯提力斯 , 首都
+mno_start_ls|洛薩那奇 , 戰斧之城
+mno_start_la|剛鐸拉密頓 , 山地騎士之家
+mno_start_pg|皮那斯傑林 , 綠山之域
+mno_start_do|多爾安姆羅斯 , 天鵝聖地
+mno_start_pe|佩拉格 , 沿海城市
+mno_start_bl|黑根谷 , 遊俠聚集地
+menu_start_eye_man|^^^^^^^^^^選擇你的陣營:
+mno_start_hr|哈拉德 , 來自南方沙漠的人
+mno_start_bn|黑暗努曼諾爾 , 從西方來的叛徒
+mno_start_um|昂巴 , 南海的海盜
+mno_start_rh|盧恩 , 來自東方的野蠻人
+mno_start_kh|侃德 , 來自東南的野蠻人
+menu_start_eye_orc|^^^^^^^^^^你來自哪裡?
+mno_start_arm|在魔多的集結軍隊
+mno_start_cav|在多爾哥多的洞穴
+menu_start_hand_orc|^^^^^^^^^^你來自哪裡?
+mno_start_armis|在艾辛格的集結軍隊
+mno_start_minmo|在摩瑞亞的礦山
+mno_start_cliff|在懸崖峭壁的剛達巴山
+menu_start_gondor_mt|^^^^^^^^^^選擇你的出身
+mno_start_1_com|平民
+mno_start_2_hib|貴族
+menu_start_haradrim|^^^^^^^你是一名哈拉德人 , ^沙漠之民. ^選擇你的出身
+mno_start_1_des|沙漠人
+mno_start_2_far|遠哈拉德族人
+menu_choose_gender|^^^^^^^^^^你的性別?
+mno_start_male|男人
+mno_start_female|女人
+mno_proc|正常進行
+mno_continue|繼續...
+menu_character_report|^^^^^部隊士氣: {reg8}^部隊人數上限: {reg7}^{s5}
+menu_camp|^^^^您現在的位置 {s1}.{s2}^^你想要做什麼
+mno_camp_scene|到處走走.
+mno_camp_troop|檢查{reg10? 士兵:}{reg12? 和:}{reg11? 囚犯:}.
+mno_camp_action|幹點事情.
+mno_camp_wait_here|在這裡待一會兒.
+mno_camp_options|更改TLD選項. 
+mno_Cheat_enable|啟用作弊/模組選項.
+menu_game_options|^^^^^^^^點擊更換選項:
+mno_game_options_restrict_items|戰利品繳獲限制: {s7}
+mno_game_options_formations|戰鬥陣型與AI: {s7}
+mno_game_options_town_menu|城鎮NPC一開始就顯示: {s7}
+mno_game_options_cutscenes|過場動畫: {s7}
+mno_game_options_injuries|同伴會受傷: {s7}.
+mno_game_options_death|領主和NPC可能會死: {s7}.
+mno_game_options_death2|玩家可能會死 (這是你自己!): {s7}.
+mno_game_options_morale|戰鬥士氣系統: {s7}
+mno_game_options_animal_ambushes|動物伏擊: {s7}
+mno_game_options_tweaks|遊戲的調整......
+mno_game_options_back|回到營地菜單
+menu_camp_tweaks|^^^^^^^^選擇一個你想調整的選項.
+mno_tweak_options_compat|兼容性調整...
+mno_tweak_options_strat|戰略調整...
+mno_tweak_options_back|回到選項菜單.
+menu_camp_compat_tweaks|^^^^^^^^點擊要更改的選項 (同時按住shift鍵為下降):^(這是調整兼容性 , 不是作弊)
+mno_game_options_compat_party|最大部隊規模: {s1}
+mno_game_options_compat_back|返回調整菜單.
+menu_camp_strat_tweaks|^^^^^^^^點擊切換選項:^(警告: 這屬於作弊!)
+mno_strat_tweaks_siege_reqs|攻城勢力力量的要求: {s7}
+mno_strat_tweaks_siege_relax_rate|圍攻的強度 ,  需求 , 放鬆程度: {reg1}
+mno_strat_tweaks_regen_rate|勢力力量再生速度: {s7}
+mno_strat_tweaks_siege_regen_limit|勢力力量低於多少將不再回复: {reg1}
+mno_strat_tweaks_influence_gain_rate|收益率影響: {s7}
+mno_strat_tweaks_rank_gain_rate|收益率排名: {s7}
+mno_strat_tweaks_back|返回調整菜單.
+menu_camp_action|^^^^^^^^^ 選擇你要做的事?
+mno_camp_customize_defilement|自定義污穢護甲
+mno_camp_drink_water|喝樹人聖水
+mno_camp_action_4|返回.
+menu_assasins_attack_player_won|你殺掉了從 {s2}來的刺客 , {S3} 的手下.
+menu_assasins_attack_player_retreat|你失去了你的生命!
+menu_fangorn_danger|^^^^^^奇怪 , 你聽到四週發出一些奇怪的聲音^這些樹在交談?它們的話語中包含憤怒與痛苦. ^你打算如何?
+mno_be_quiet_elf|這些憤怒的古樹. 悄悄地移動著.
+mno_be_quiet|輕輕地收起武器 , 現在快點離開這!
+mno_be_bold|繼續前行! 我從不害怕這些木頭和相信那些古老的神話! 
+mno_fight_back|在這裡找到那些說話的樹! 毀掉它們!
+menu_fangorn_search_fails|^^^^^^你搜索到天黑 , 但是並沒有找到什麼. ^現在 , 你感到來自四週的威脅越來越多.
+menu_fangorn_battle_debrief_won|^^^一場偉大的勝利! ^^^這就是法貢森林的一個神話...
+menu_fangorn_killed_player_only|^^^^^^你在這個又黑又密的森林迷失方向了. ^突然 , 一個東西砸到你的頭!大概是樹枝吧? ^過了一會 , 你醒了過來 , 雖然頭還是有點痛 , 但並不影響繼續走下去.
+mno_ow_get_out|哎喲! 讓我們離開這個該死的地方!
+menu_fangorn_killed_troop_and_player|^^^^^^你在這個又黑又密的森林迷失方向了. ^突然 , 一個東西砸到你的頭!大概是樹枝吧? ^過了一會 , 你醒了過來 , 你發現你的隊伍中死了一些人 , 他們不是都有你這麼幸運. ^^
+menu_fangorn_killed_troop_only|^^^^^^^^你在這個又黑又密的森林迷失方向了. 你的部下十分恐懼. ^^突然，你從後面聽到一陣慘叫! 你趕快跑過去 , 只在地上發現幾具你部下的屍體和一地血跡. ^^沒有發現其他可疑的東西...
+mno_get_out|讓我們離開這個該死的地方!
+menu_can_capture_troll|被擊敗的野生巨魔仍然活著!^^它充滿痛苦和憤怒的罪惡眼睛盯著你. ^即使是現在 , 它已經被打倒 , 並無奈的倒在其血泊中 , 它看起來還是極其危險的...
+mno_killit|馬上解決它. 確保它死了.
+mno_cageit1|快抓住它! 裝進籠子裡去!
+mno_cageit2|把它和其他巨魔關在一起.
+mno_cheat_disabable|禁止作弊/模組選項.
+menu_drank_ent_water_human|^^^你喝下了那些水. 它讓人感到神清氣爽. ^你感到精神很好. ^^然而 , 你感到一股不自然的感覺. 好像有人要告訴你 , 你最好忘記喝了這水 , 而且不要再喝.
+menu_drank_ent_water_orc|^^^你喝下了那水 , 很甘甜. ^突然 , 你感到你的喉嚨很痛. ^你的呼吸越來越困難 , 你用手慢慢抓著自己的喉嚨.^^你的聲息慢慢沉寂.
+mno_i_shall_surv|我......應......生存!
+menu_end_game|^^^^^你決定結束你的冒險旅程 , 找一個安靜的地方定居下來. 你賣掉你的武器和盔甲 , 帶上所有金幣 , 開始上路....
+mno_end_game_bye|再見.
+menu_cattle_herd|你會遇到一些人.
+mno_cattle_drive_away|讓他們跟隨著你.
+mno_cattle_stop|讓他們停下.
+mno_leave|返回.
+menu_simple_encounter|^^^^^{s2}^你的 {reg22} 名士兵與 {reg11} 個敵軍在 {s3}{s4} 展開對決. 請下達命令!
+mno_encounter_attack|{reg21?攻擊:準備迎敵}.
+mno_encounter_order_attack|你坐鎮指揮命令你的部下 {reg21?攻擊:迎敵}
+mno_special_whip|衝向 {s4}.
+mno_encounter_leave|脫離.
+mno_encounter_retreat|留下一些部隊 , 拖住敵軍 , 好讓主力撤退.
+menu_encounter_retreat_confirm|^^^^^隊伍中最高戰術技能為, ({reg2}) 級 , 因此 {reg3?你制定:{s3}制定} 了一個計劃 , 來讓你的主力部隊能逃脫戰鬥. 但是你必須犧牲 {reg4} 名戰士來進行掩護.
+mno_leave_behind|實行計劃. 犧牲那些人來拯救主力部隊.
+mno_dont_leave_behind|不. 我們不會拋棄任何人.
+menu_encounter_retreat|^^^^^你命令 {reg4} 名戰士負責在主力撤退的時候拖住敵人前進的步伐.
+menu_order_attack_begin|^^^^^^你的部下已經做好了戰鬥準備.
+mno_order_attack_begin|下令攻擊.
+mno_call_back|下令後撤.
+menu_order_attack_2|^{s4}^我軍傷亡: {s8}^^敵軍傷亡: {s9}
+mno_order_attack_continue|命令部隊繼續攻擊.
+mno_order_retreat|下令你的士兵後撤.
+menu_kingdom_army_quest_report_to_army|{s8} 派來信使 , 他希望你能一起參加他的遠徵. 你至少需要帶上 {reg13} 名戰士 , 如果現在不夠的話 , 你要盡快徵召達到要求的人數.
+mno_reject|讓信使回去報告 , 說你們現在很忙 , 抽不了身.
+mno_send_word|寄信 , 很快你會加入他.
+menu_kingdom_army_quest_messenger|{s8} 派信使來告訴你 , 他要指定一個任務給你 , 並要求你盡快去見他.
+menu_kingdom_army_quest_join_siege_order|{s8} 派信使來命令你加入對 {s9} 圍攻. 無論付出多大代價 , 必須拿下 {s9} .
+menu_kingdom_army_follow_failed|在遠徵中你違反了軍令 , 和 {s8} 走散了.他憤怒地宣布將你從軍隊中除名 , 並給予你嚴重警告.
+menu_battle_debrief|{s11}^我軍傷亡:{s8}{s10}^^敵軍傷亡:{s9}
+mno_inspect_troll|查看被擊倒的巨魔
+menu_pre_join|^^^^^你遇到 {s2} 正在攻擊 {s1}. 你決定...
+mno_pre_join_help_attackers|對 {s2} 施以援手.
+mno_pre_join_help_defenders|對 {s1} 施以援手.
+mno_pre_join_leave|不卷入紛爭.
+menu_join_battle|^^^你決定幫助 {s2} 對抗 {s1}.^ 你將有 {reg22} 名士兵參加戰鬥對抗 {reg11} 個敵人.^^這次戰鬥在 {s3}{s4} 展開.
+mno_join_attack|攻入敵陣.
+mno_join_order_attack|僅僅讓你的士兵加入你的盟友.
+mno_join_leave|脫離.
+menu_join_order_attack|{s4}^^我軍傷亡: {s8}^^盟軍傷亡: {s9}^^敵軍傷亡: {s10}
+mno_enter|進入.
+menu_battlefields|^^^^^^^^^選擇一片戰場...
+mno_enter_f1|戰場1
+mno_enter_f2|戰場2
+mno_enter_f3|戰場3
+mno_enter_f4|戰場4
+mno_enter_f5|戰場5
+menu_join_siege_outside|^^^^^^{s1} 正被 {s2} 圍攻.
+mno_approach_besiegers|進入圍城營地.
+mno_pass_through_siege|穿過圍城進入 {s1}.
+menu_cut_siege_without_fight|圍城方放你進入了城堡.
+menu_besiegers_camp_with_allies|{s1} 依然在被圍困中. 你和你的部隊在上空飛揚著 {s2} 旗幟的圍城營地那裡被熱烈的歡迎了.
+mno_talk_to_siege_commander|要求和指揮官會面.
+mno_join_siege_with_allies|加入下一輪的攻城.
+mno_join_siege_stay_back|坐鎮指揮 , 讓你的部隊協助下一輪的攻城.
+menu_moria_must_escape|^^這本書似乎是矮人的最後一次嘗試在摩瑞亞安家的記錄. 仔細閱讀這本書 , 你絆倒了 , '真銀'! 你突然明白 , 這些都是矮人儲物箱的描述上下級地方的頁面. 哈! 那豈不是很酷揭開了久違矮人秘銀!? ^你急切地按照指示 , 進入一個狹窄蜿蜒的隧道... ^...^之後你明白 , 你在摩瑞亞迷失了 , 需要尋找出路.
+mno_moria_exit_scene|找到你的出路!
+menu_castle_outside|你在 {s2} 的外面.{s11} {s3} {s4}
+mno_moria_enter|進入摩瑞亞秘密入口
+mno_moria_enter_door|進入摩瑞亞.
+mno_castle_start_siege|圍攻 {reg6?城鎮:城堡}.
+mno_castle_leave|返回.
+menu_castle_besiege|你已經在圍攻 {s1}. {s2} {s3}
+mno_siege_request_meeting|要求和城堡的指揮官會面.
+mno_wait_24_hours|等到明天.
+mno_castle_lead_attack|親自率領攻城.
+mno_attack_stay_back|坐鎮指揮 , 讓你的部隊攻擊...
+mno_build_ladders|準備攻擊城牆.
+mno_lift_siege|放棄圍攻.
+menu_siege_attack_meets_sally|^^^^^^守城方派了部隊來對你進行還擊.
+menu_construct_ladders|隊員中最高工程技能為 ({reg2}) 級 , 由此 {reg3?你預期:{s3} 預期} 需要 {reg4} 小時來安設雲梯.
+mno_build_ladders_cont|繼續.
+menu_castle_attack_walls_simulate|{s4}^^我軍傷亡:{s8}^^敵軍傷亡: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^我軍傷亡: {s8}^^盟軍傷亡: {s9}^^敵軍傷亡: {s10}
+menu_castle_taken|你的部隊攻陷了 {s3} , 現在你已經完全地掌控了這個 {reg2?town:castle}. {reg1? 看起來已經沒有什麼能阻止你將它據為己有了...:}
+menu_castle_taken_2|你的部隊攻陷了 {s3} , 現在你已經完全地掌控了這個城堡. 現在應該把這個勝利的消息告訴給 {s9} 了. {s5}
+mno_castle_taken_no_claim|什麼也不要求.
+menu_siege_started_defender|{s1} 正在攻擊 {s2} 的城牆. 你方有 {reg22} 士兵可以參戰對抗敵人的 {reg11}士兵. 你決定...
+mno_siege_defender_join_battle|參加戰鬥.
+mno_siege_defender_troops_join_battle|坐鎮指揮 , 讓你的部隊攻擊.
+menu_siege_join_defense|{s4}^^我軍傷亡: {s8}^^盟軍傷亡: {s9}^^敵軍傷亡: {s10}
+menu_village_hunt_down_fugitive_defeated|^^^^^整個世界在你眼前一黑 , 不知過了多久你恢复了意識 , 發現你自己躺在你倒下的地方. 你的敵人一定以為你死了 , 才把你留在原地. 不論怎樣 , 似乎你身上的傷沒有一處是致命的 , 雖然你感到很虛弱 , 但是你發現你自己還是勉強可以堅持站起來行走.
+menu_town_bandits_succeeded|^^^^^你如同割麥子一般幹掉了強盜! 你再次孤身一人站在街頭 , 在你的週圍散布著強盜們的屍體 , 看到這一幕 , 他們的殘黨驚慌地四散而去 , 消失在街道深處. 搜尋屍體後你發現了一袋錢 , 或者它屬於前一個無辜的犧牲者 , 或者是有人想要買你的命.
+menu_town_brawl_lost|^^^^^^你被擊昏倒下 , 人們迅速洗劫了你身上所有的貴重財物.
+menu_town_brawl_won|^^^^^你擊敗了你的對手 , 守衛已經發出警號. 你迅速地從對手屍體身上搜刮出一點貴重物品消失在街口.^也許 , 下次他們會給你帶來更多的麻煩了.
+menu_town|你抵達 {s60}.{s12}{s13}
+mno_town_menu_0|定位某處位置.
+mno_town_menu_0_door|進入某處.
+mno_town_approach|前往 {s1}...
+mno_town_castle|進入 {s1}.
+mno_town_castle_door|進入要塞.
+mno_town_center|在大街上走走...
+mno_town_center_door|進入城鎮中心.
+mno_aw_chamber_door|打開門.
+mno_trade_with_arms_merchant|訪問 {s40}.
+mno_trade_with_horse_merchant|訪問 {s41}.
+mno_town_prison_door|進入監牢.
+mno_dungeon_enter|進入地下室.
+mno_dungeon_enter_door|打開門.
+mno_talk_to_castle_commander|訪問 {s61} 兵營.
+mno_speak_with_elder|和 {s6} 談談.
+mno_isengard_underground|前往地下溶洞.
+mno_tirith_toplevel|爬上頂層.
+mno_town_leave|離開...
+mno_town_leave_door|離開區域
+menu_disembark|想上岸嗎?
+mno_disembark_yes|是
+mno_disembark_no|否
+menu_ship_reembark|想上船嗎?
+mno_reembark_yes|是
+mno_reembark_no|否
+menu_center_reports|鎮名: {s1}^租金收入: {reg1} 第納爾^稅收: {reg2} 第納爾^食物儲備: 供應 {reg3} 日
+menu_sneak_into_town_suceeded|假裝成穿著破爛的朝聖者 , 你騙過了守衛 , 順利的混入城裡.
+menu_sneak_into_town_caught|在你嘗試溜進去時 , 一名守衛發現了你並發出了警報! 你必須在所有守衛都開始搜捕你之前從大門逃出去.
+mno_sneak_caught_fight|殺出一條血路!
+mno_sneak_caught_surrender|投降.
+menu_sneak_into_town_caught_dispersed_guards|你輕易的甩掉了守衛 , 消失在街道的深處.
+menu_sneak_into_town_caught_ran_away|你殺開一條血路終於奪關而走 , 迅速逃到了山上的安全地帶.
+menu_tld_player_defeated|^^^^^突然你的頭部一陣劇痛! \\ 你全身顫抖 , 世界在你眼中越來越黑...^這就是你的終點了?
+menu_recover_after_death_fangorn|你醒了過來 , 發現四週正是一片森林. 你的每個骨頭都痛得厲害 , 你竟然般地還活著.^^你很困惑 , 但這就發生在你眼前. ^你告訴自己必須趕快走出這片該死的林子,^好好活下去. ^^有誰還會相信你?
+menu_recover_after_death_moria|^^^^^你漸漸恢复意識 , 帶著泥土氣息的微風吹在你的臉上 , 你竟然還活著!^那些獸人都喜歡挖個坑把死人的屍體丟進去放著 , 它們當時把認為已經死了的你丟到最底下.^誰又能想到它們挖的坑底下有條地下河 , 這就樣 , 你掉進了地下河 , 河流把你帶來出來.
+mno_whatever|起來!
+menu_recover_after_death_default|^^^^^你漸漸恢复意識 , 你發現你的四週靜悄悄的. 你的敵人一定認為你已經死了 , 就把你丟在這裡. 然而 , 你的傷口似乎並不致命 , 你依然活著. 你感到一絲恐懼 , 你慢慢起來試圖找到一條離開這裡的路.
+menu_recover_after_death_town|^^^^你漸漸恢复意識 , 發現自己身處在一個城鎮裡. 你還活著! 週圍沒有人 , 你要找個機會離開這裡. 你感覺糟糕透了 , 還好沒有一處致命傷 , 你找到了出路.
+menu_recover_after_death_town_alone|你漸漸恢复意識 , 發現自己身處在一個城鎮裡. 你還活著! 週圍沒有人 , 你要找個機會離開這裡. 你的同伴找到了你. 你感覺糟糕透了 , 還好沒有一處致命傷 , 你們找到了出路.
+menu_notification_center_under_siege|{s1} 正被 {s3} 的 {s2} 圍困!
+menu_notification_one_side_left|^^^^^漫長的魔戒戰爭結束了^^ {s1} 方陣營擊敗了所有敵人從而取得了最終的勝利! 讓我們歡呼吧!
+menu_notification_total_defeat|^^^^^對於你來說 , 魔戒戰爭結束了!^^ {s1} 方陣營被他們的敵人所擊敗 , 而你徹底失敗了!
+menu_notification_your_faction_collapsed|^^^^^你的家鄉: {s11} 被摧毀了!^其他盟國仍在戰爭當中. 你可以去幫助任意一個 {s11} 方的盟國 , 這也可以幫助你的陣營獲勝.
+menu_notification_faction_defeated|^^^^^{s1} 被擊敗了!^{s1} 從此將不复存在 , 摧毀它的勢力是 {s13}!
+menu_ruins|^^^^你來到了 {s1}. 昔日兵力強盛的營地現在已經是一片廢墟 , 但你仍可看到防禦工事的殘餘及各種生銹的武器碎片被胡亂丟棄在地上.
+menu_legendary_place|^^^^你遵循傳聞從而發現了 {s1}. 現在你可以探索下這地方，看看傳聞是真是假.
+mno_explore|探索這個地方.
+menu_starting_quest_good|^^^^^^你看到一支小商隊正被一隊半獸人攻擊. 你決定怎麼做?
+mno_help|幫助陌生人!
+mno_go_your_way|別理他們
+menu_custom_battle_choose_faction1|^^^^^^^^^^選擇你的陣營和優勢:
+mno_good_equal|正義陣營
+mno_bad_equal|邪惡陣營
+mno_replay_prev|重選之前的設置
+menu_custom_battle_choose_faction2|^^^^^^^^^^選擇正義陣營
+mno_cb_gondor|剛鐸
+mno_cb_gondor1|洛汗
+mno_cb_gondor2|羅斯洛立安
+mno_cb_gondor3|瑞文戴爾
+mno_cb_gondor4|幽暗密林
+mno_cb_gondor5|矮人
+mno_cb_gondor6|河谷鎮
+mno_cb_gondor7|波寧人
+menu_custom_battle_choose_faction3|^^^^^^^^^^選擇邪惡陣營
+mno_cb_mordor|魔多
+mno_cb_mordor1|艾辛格
+mno_cb_mordor2|登蘭德
+mno_cb_mordor3|哈拉德
+mno_cb_mordor4|東方人
+mno_cb_mordor5|炎魔
+mno_cb_mordor6|剛達巴
+mno_cb_mordor7|盧恩
+mno_cb_mordor8|海盜
+mno_rescue_mission|在夜色的掩護下 , 你悄悄潛入巫師的藏身處.
+mno_next_rescue_scene_door|繼續向前!
+mno_pick_troops1|選擇同伴執行任務 , 已選擇了 {reg0} 人
+menu_pick_troops|你要選擇誰和你一起執行這次行動? 你已選出了 {reg0} 人. 你必須選出10人.
+mno_go_forward|結束選擇同伴 , 然後繼續.
+menu_burial_mound|你來到一處屬於 {s1} 的 {s2} 的埋屍處. 它是由他那些死去的敵人的破損武器堆積而成的.
+mno_pay_respects|跪下並獻上你的敬意.
+mno_swear_oath|發誓復仇的誓言!
+mno_despoil|褻瀆這個場所
+mno_leave_mound|離開土丘.
+menu_burial_mound_respects|你滿懷敬意的在 {s1} 之墓前跪下 , 默默得為其祈禱 , 願其早日往生極樂. 現在是時候繼續你的旅途了.
+menu_burial_mound_oath|你高聲宣誓 , 一定要為 {s4} 的死复仇. 你將堅持不懈的追逐超越 {s3} 的力量 , 並會親手將其殺死. 你的誓言隨風而漾 , 四海皆知.
+menu_burial_mound_despoil|你親手推倒了 {s1} 的墓碑 , 惡毒地詛咒和謾罵 , 對這個石塊做了一些無法形容的暴行. 你的追隨者因感到恐懼而後退 , 但他們卻為你的惡行再一次對你到敬畏.
+menu_funeral_pyre|你來到一處屬於 {s3} 的 {s2} 的火葬堆. 他的遺體被他的親衛隆重地火葬. 沒有一絲殘餘. 
+mno_leave_pyre|離開火堆.
+menu_town_ruins|當你靠近 , 你看到了 {s1} 是 {s2}
+mno_ruin_menu_0|探索這個地方.
+mno_ruin_leave|離開...
+menu_death|你已經被殺害. 儘管戰爭仍在肆虐 , 你將不再是它的一部分.
+menu_animal_ambush|你和你的同伴發現在休息的時候 , 突然分開了...
+menu_animal_ambush_success|{s2} {reg0?fall:falls} 之前 , 你作為小麥鐮刀一樣! 很快 , 所有的攻擊者趴在地上 , 受傷或死亡. {s3}
+menu_animal_ambush_fail|動物咬撕你{reg0?,: 和你的同伴{reg2?s,:,}} 但幸運的是 , 你設法避開他們. 希望他們不會再攻擊你.
+menu_build_your_scene|你可以在這裡編輯你自己的戰鬥場景. 首先請打開編輯模式 , 接著選擇下方顯示的一個槽(存放位置). 你可以把自己的作品提交給TLD--開發制作組 , 如果你做的很好 , 你的場景會在下一版本中的隨機戰鬥中出現. (提交時請寫出名字 , 並提交SCO文件或SceneObj文件夾). 如果可能 , 你可以試著做一個位於中土大陸上的場景.^ 提示: 不要做深水或高山 , 以及任何無法經過的東西--除非你是一個資深的場景制作師並且明白如何用路點使AI自己繞開那些東西.^ (#0-1 項是給攻擊者 , #4 是給守城 , 別碰#5-8
+mno_scene1|場景5 (file scn battlefield5.sco)
+mno_scene2|場景6 (file scn battlefield6.sco)
+mno_scene3|場景7 (file scn battlefield7.sco)
+mno_scene4|場景8 (file scn battlefield8.sco)
+mno_scene5|場景9 (file scn battlefield9.sco)
+mno_back_3dot|返回...

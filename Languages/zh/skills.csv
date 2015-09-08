@@ -1,0 +1,48 @@
+skl_trade|討價還價
+skl_trade_desc|這個技能可以讓你使用更少的資源點獲得更多的物品. (隊伍技能)
+skl_leadership|統禦
+skl_leadership_desc|每點增加部隊命令上限5人 , 提高部隊士氣 , 減少部隊開銷和工資5%%.(領袖技能)
+skl_prisoner_management|俘虜管理
+skl_prisoner_management_desc|每點增加俘虜上限%d. (領袖技能)
+skl_persuasion|說服力
+skl_persuasion_desc|此技能幫助你 , 使你的觀點更容易讓人接受. (個人技能)
+skl_engineer|工程學
+skl_engineer_desc|此技能使你更有效地建造攻城器械和加快封地建設. (隊伍技能)
+skl_first_aid|急救
+skl_first_aid_desc|每點返還給英雄們 5%% 在上次戰鬥中損失的生命值. (隊伍技能)
+skl_surgery|手術
+skl_surgery_desc|每點增加4%%的機會 , 使得本來會死亡的隊伍成員保住性命. (隊伍技能)
+skl_wound_treatment|療傷
+skl_wound_treatment_desc|每點增加隊伍生命值回复速度20%%. (隊伍技能)
+skl_inventory_management|物品管理
+skl_inventory_management_desc|每點物品欄容量+6格. (領袖技能)
+skl_spotting|偵察
+skl_spotting_desc|每點增加隊伍偵察範圍 10%%. (隊伍技能)
+skl_pathfinding|向導
+skl_pathfinding_desc|每點增加隊伍地圖移動速度3%%. (隊伍技能)
+skl_tactics|戰術
+skl_tactics_desc|每2點增加1點戰鬥優勢. (隊伍技能)
+skl_tracking|跟踪
+skl_tracking_desc|從腳印和其它印跡中發現更多信息. (隊伍技能)
+skl_trainer|教練
+skl_trainer_desc|每天每位有該項技能的英雄會增加經驗值給其它級別較低的隊伍成員傳授的經驗值依次為: {0 , 4 , 10 , 16 , 23 , 30 , 38 , 46 , 55 , 65 , 80}. (個人技能)
+skl_looting|掠奪
+skl_looting_desc|每點提高獲得戰利品的數量10%%. (隊伍技能)
+skl_horse_archery|騎射
+skl_horse_archery_desc|減少在馬背上射箭與投擲的精度和傷害損失. (個人技能)
+skl_riding|騎術
+skl_riding_desc|可以騎更好的馬(或其他野獸) , 提高騎行速度和操縱. (個人技能)
+skl_athletics|跑動
+skl_athletics_desc|提高跑動速度. (個人技能)
+skl_shield|盾防
+skl_shield_desc|減少盾的損壞程度(每點減少8%%)和提高盾的格擋速度 , 以及覆蓋範圍. (個人技能)
+skl_weapon_master|武器掌握
+skl_weapon_master_desc|讓武器熟練度提升的更快並且提高武器熟練度的上限上限依次為: 60 , 100 , 140 , 180 , 220 , 260 , 300 , 340 , 380 , 420. (個人技能)
+skl_power_draw|強弓
+skl_power_draw_desc|角色可以使用更強力的弓. (最高有效等級不超過弓的等級加四)每點增加弓箭傷害14%%. (個人技能)
+skl_power_throw|強擲
+skl_power_throw_desc|每點增加10%%的投擲傷害。（個人技能）
+skl_power_strike|強擊
+skl_power_strike_desc|每點增加8%%的格鬥傷害。（個人技能）
+skl_ironflesh|鐵骨
+skl_ironflesh_desc|每點增加2點生命值。（個人技能）

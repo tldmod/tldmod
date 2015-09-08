@@ -181,9 +181,9 @@ menu_drank_ent_water_orc|^^^あなたは水を飲んだ。 ただの水だ。^�
 mno_i_shall_surv|し・・・ 死んで・・・ たまるか！
 menu_end_game|^^^^^あなたはついに冒険者としての生活に 区切りをつける決心をし、 腰を落ち着ける事にした。 あなたは武器や防具を売りさばき、 荷物をまとめると、 馬上の人となって夕日を目指して去っていった・・・
 mno_end_game_bye|さようなら。
-menu_cattle_herd|あなたは数人の群れに出くわした。
+menu_cattle_herd|あなたは難民の一団に会った。
 mno_cattle_drive_away|ついてくるように言う。
-mno_cattle_stop|その場で止まるように言う。
+mno_cattle_stop|その場で待つように言う。
 mno_leave|立ち去る。
 menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部下は{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
