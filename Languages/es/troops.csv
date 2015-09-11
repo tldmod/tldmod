@@ -1299,7 +1299,7 @@ trp_merchant_isengard_pl|alijo del campamento
 trp_town_27_horse_merchant|Jefe de Suministros
 trp_town_27_horse_merchant_pl|foso de huargos y suministros
 trp_merchant_uoutpost|Jefe de Suministros
-trp_merchant_uoutpost_pl|suministros élficos
+trp_merchant_uoutpost_pl|foso de huargos y suministros
 trp_merchant_uhcamp|Jefe de Suministros
 trp_merchant_uhcamp_pl|foso de huargos y suministros
 trp_merchant_urcamp|Jefe de Suministros
@@ -1326,11 +1326,11 @@ trp_merchant_esgaroth|Jefe de Suministros
 trp_merchant_esgaroth_pl|establo y almacén
 trp_merchant_erebor|Jefe de Suministros
 trp_merchant_erebor_pl|suministros Enanos
-trp_merchant_dunland|Mercader Oculto Dunlendino
+trp_merchant_dunland|Contrabandista Dunlendino
 trp_merchant_dunland_pl|alijo del campamento
-trp_merchant_harad|Mercader Oculto Haradrim
+trp_merchant_harad|Contrabandista Haradrim
 trp_merchant_harad_pl|alijo del campamento
-trp_merchant_khand|Mercader Oculto de Khand
+trp_merchant_khand|Contrabandista de Khand
 trp_merchant_khand_pl|alijo del campamento
 trp_merchant_umbar|Jefe de Suministros
 trp_merchant_umbar_pl|alijo del campamento
@@ -1352,27 +1352,27 @@ trp_merchant_calembel|Jefe de Suministros
 trp_merchant_calembel_pl|establo y almacén
 trp_elder_mtirith|Preceptor del Gremio de Tirith
 trp_elder_mtirith_pl| la Ciudad Blanca
-trp_elder_pelargir|Preceptor del Gremio Marinero
+trp_elder_pelargir|Portavoz de los Marineros
 trp_elder_pelargir_pl| la ciudad
-trp_elder_linhir|Preceptor del Gremio de Linhir
+trp_elder_linhir|Portavoz del Gremio de Linhir
 trp_elder_linhir_pl| la ciudad
-trp_elder_dolamroth|Preceptor del Gremio de Dol Amroth
+trp_elder_dolamroth|Portavoz Gremial de Dol Amroth
 trp_elder_dolamroth_pl| la ciudad
-trp_elder_edhellond|Preceptor del Gremio de Edhellond
+trp_elder_edhellond|Portavoz Gremial de Edhellond
 trp_elder_edhellond_pl| la ciudad
-trp_elder_lossarnach|Preceptor del Gremio de Lossarnach
+trp_elder_lossarnach|Portavoz Gremial de Lossarnach
 trp_elder_lossarnach_pl| la ciudad
-trp_elder_tarnost|Preceptor del Gremio de Tarnost
+trp_elder_tarnost|Portavoz Gremial de Tarnost
 trp_elder_tarnost_pl| la ciudad
-trp_elder_erech|Preceptor del Gremio de Erech
+trp_elder_erech|Portavoz Gremial de Erech
 trp_elder_erech_pl| la ciudad
 trp_elder_pinnath|Anciano de la Tribu de Pinnath
 trp_elder_pinnath_pl| la ciudad
-trp_elder_ethring|Preceptor del Gremio de Calembel
+trp_elder_ethring|Portavoz Gremial de Calembel
 trp_elder_ethring_pl| la ciudad
-trp_elder_henneth|Montaraz Preceptor del Gremio
+trp_elder_henneth|Portavoz de los Montaraces
 trp_elder_henneth_pl| la guarida
-trp_elder_cairandros|Preceptor del Gremio de Cair Andros
+trp_elder_cairandros|Portavoz Gremial de Cair Andros
 trp_elder_cairandros_pl| la isla fortificada
 trp_elder_edoras|Thain de Édoras
 trp_elder_edoras_pl| la ciudad
@@ -1486,15 +1486,15 @@ trp_trainee_peasant_pl|Campesinos
 trp_fugitive_man|Hombre Sospechoso
 trp_fugitive_man_pl|Hombres Sospechosos
 trp_fugitive_elf|Elfo Sospechoso
-trp_fugitive_elf_pl|Elfo Sospechoso
-trp_fugitive_dwarf|Enanos Sospechoso
+trp_fugitive_elf_pl|Elfos Sospechosos
+trp_fugitive_dwarf|Enano Sospechoso
 trp_fugitive_dwarf_pl|Enanos Sospechosos
-trp_fugitive_orc|Orco Sospecho
+trp_fugitive_orc|Orco Sospechoso
 trp_fugitive_orc_pl|Orcos Sospechosos
-trp_spy|Corsario Furtivo
-trp_spy_pl|Corsarios Furtivos
-trp_spy_evil|Sureño Furtivo
-trp_spy_evil_pl|Sureños Furtivos
+trp_spy|Corsario inquieto
+trp_spy_pl|Corsarios inquietos
+trp_spy_evil|Sureño inquieto
+trp_spy_evil_pl|Sureños inquietos
 trp_spy_partner|Contacto del Espía
 trp_spy_partner_pl|Contactos de espías
 trp_spy_partner_evil|Contacto del Espía
@@ -1531,7 +1531,7 @@ trp_wolf_rider_of_mirkwood|Jinete de Lobo del Bosque Negro
 trp_wolf_rider_of_mirkwood_pl|Jinetes de Lobo del Bosque Negro
 trp_warg_rider_of_mirkwood|Jinete de Huargo del Bosque Negro
 trp_warg_rider_of_mirkwood_pl|Jinetes de Huargo del Bosque Negro
-trp_gate_aggravator|Mantenemos la puerta
+trp_gate_aggravator|El portón sigue en pie
 trp_orc_pretender|Aspirante a cabecilla Orco
 trp_human_prisoner|Prisionero Humano
 trp_spider|Araña del Bosque Negro 

@@ -454,7 +454,7 @@ qstr_I..._don_t_know!|¡Yo... no... lo conozco!
 qstr_It..._beckonsssssss.|Nosss... llaamaaa...
 qstr_Treachery..._Unforgi|Traicioón... Imperrrdonabbble...
 qstr_But_I...|Pero yo...
-qstr_Noone..._oppossssses|Nadddie... ssse opppone... a Barrrad Dûrrr... ¡y viveee!
+qstr_Noone..._oppossssses|Nadddie... ssse opppone... a Barrrad Dûrrr... ¡y viveee para contarrlo!
 qstr_All..._must..._submi|Todosss... sse.. debennn... ssssommmeter... y... sssservir...
 qstr_I_serve_the_Eye!|¡Yo sirvo al Ojo!
 qstr_I_shall_serve_the_Ey|¡Me someteré al servicio del Ojo!
@@ -922,7 +922,7 @@ qstr_{s9}_asked_you_to_ca|{s9} te ha pedido que atrapes a tres grupos de esclavo
 qstr_{s11}_asked_you_to_f|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado y no dejar que el espía te aviste, o podría sospechar y darse la vuelta. Una vez que el espía se encuentre con su contacto, desbes capturarlos y llevarlos de regreso a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} te ha pedido que captures a un señor enemigo y que luego se lo lleves a {s11} para interrogarlo.
 qstr_{s9}_asked_you_to_le|{s9} te ha pedido que le prestes a tu compañero, {s3}, durante una semana.
-qstr_{s9}_has_requested_y|s9} te ha pedido que le lleves {reg1} prisioneros enemigos.
+qstr_{s9}_has_requested_y|{s9} te ha pedido que le lleves {reg1} prisioneros enemigos.
 qstr_We_have_reports_that|Tenemos informes de que varias patrullas aliadas han sido emboscadas y derrotadas. Algunos hombres pueden estar vivos, capturados por el enemigo. Sin embargo, la moral de mis tropas sufre porque los capturados serán asesinados, encarcelados o algo peor. Quiero rescatar a {reg1} prisioneros y levantar la moral de nuestras tropas.
 qstr_We_have_reports_that_|Tenemos informes de que varias patrullas aliadas han sido emboscadas y derrotadas. Algunos de esos cobardes pueden estar vivos, capturados por el enemigo. Por muy prescindibles que sean, es un desperdicio que mueran en algún agujero. Quiero rescatar a {reg1} prisioneros, y hacer que luchen de nuevo por nosotros.
 qstr_{s9}_has_asked_you_to|{s9} te ha pedido que rescates {reg1} prisioneros.
