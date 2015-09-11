@@ -10,8 +10,8 @@ qst_hunt_down_fugitive|{s4}を追え
 qst_hunt_down_fugitive_text|{s9}に{s4}という名前のおたずね者を 捕まえるよう頼まれた。 おたずね者は現在、 {s3}に潜んでいるとされている。
 qst_bring_back_runaway_serfs|脱走した奴隷を連れ戻せ
 qst_bring_back_runaway_serfs_text|みっつのグループに分かれて逃走中の 奴隷を{s2}に連れ戻すよう、 {s9}に頼まれた。 すべてのグループは {s3}の方角へ逃げているらしい。
-qst_follow_spy|密会現場まで密偵を追跡せよ
-qst_follow_spy_text|{s12}を出発する予定の密偵を追跡するよう、 {s11}に頼まれた。 追跡に気付かれると 密偵が密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 密偵が共謀者と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
+qst_follow_spy|密会現場まで間者を追跡せよ
+qst_follow_spy_text|{s12}を出発する予定の間者を追跡するよう、 {s11}に頼まれた。 追跡に気付かれると 間者が密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 間者が共謀者と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
 qst_capture_enemy_hero|敵の指揮官を捕らえよ
 qst_capture_enemy_hero_text|敵指揮官を捕らえてくるよう、 {s11}に頼まれた。
 qst_lend_companion|コンパニオンの{s3}を{s9}に貸す
@@ -34,7 +34,7 @@ qst_scout_enemy_town|敵の拠点を偵察せよ
 qst_scout_enemy_town_text|{s13}周辺を偵察してくるよう、 {s9}に頼まれた。
 qst_dispatch_scouts|偵察隊を派遣せよ
 qst_dispatch_scouts_text|{s13}付近に偵察隊を派遣するよう、 {s9}に頼まれた。
-qst_eliminate_patrols|敵部隊を{reg1}倒せ
+qst_eliminate_patrols|敵部隊を{reg1}つ倒せ
 qst_eliminate_patrols_text|{s13}の敵部隊を{reg1}殲滅するよう、 {s9}に頼まれた。
 qst_lend_surgeon|軍医の{s3}を{s1}に貸す
 qst_lend_surgeon_text|{s1}に、 経験豊富な軍医の{s3}を貸した。
@@ -56,8 +56,8 @@ qst_deliver_wine|{s4}へ{s6}を{reg5}ユニット届けよ
 qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}ユニット届けるよう、 {s3}の{s9}に頼まれた。
 qst_troublesome_bandits|迷惑なゴブリンを退治せよ
 qst_troublesome_bandits_text|町の周辺にいる迷惑なゴブリンを退治するよう、 {s4}の{s9}に頼まれた。
-qst_deal_with_looters|オークの部族を退治せよ
-qst_deal_with_looters_text|{s4}周辺にいる、 いくつかのオークの部族の群れを退治するよう、 {s4}の長老に頼まれた。
+qst_deal_with_looters|部族オークを退治せよ
+qst_deal_with_looters_text|{s4}周辺にいる、 いくつかの部族オークの群れを退治するよう、 {s4}の長老に頼まれた。
 qst_deal_with_night_bandits|ごろつきゴブリンを退治せよ
 qst_deal_with_night_bandits_text|{s14}に、 夜になると出没するというゴブリンを退治するよう、 {s14}の長老に頼まれた。
 qst_deliver_food|{s3}に食料を{reg5}ユニット供給せよ

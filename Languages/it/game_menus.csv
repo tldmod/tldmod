@@ -307,9 +307,9 @@ menu_notification_center_under_siege|{s1} è stata assediata da {s2} of {s3}!
 menu_notification_one_side_left|^^^^^La Guerra dell'Anello è terminata!^^Il {s1} ha sconfitto tutti i nemici e ora si erge vittorioso!
 menu_notification_total_defeat|^^^^^La Guerra dell'Anello è terminata per te!^^Il {s1} è stato sconfitto dai suoi nemici e tu sei rimasto solo nella sconfitta!
 menu_notification_your_faction_collapsed|^^^^^La tua {s11} madrepatria è stata sconfitta!^Ancora, gli altri alleati rimangono nella guerra. Tu, assieme a qualcuno rimasto di {s11}, potete ancora aiutare la vostra fazione a vincere.
-; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
+menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto!^{s1} non c'è più, essendo sconfitto dal esercito di {s13}!
 ; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
-; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
+menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare e investigare questo posto ora.
 mno_explore|Esplora questo posto.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da una banda di orchi. Cosa fai?
 mno_help|Aiuta gli stranieri!
@@ -340,7 +340,7 @@ mno_cb_mordor8|Corsari
 mno_rescue_mission|Intrufolati nel covo dello stregone con il favore della notte.
 mno_next_rescue_scene_door|Prosegui!
 mno_pick_troops1|Scegli compagni per la missione, {reg0} selezionati
-; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
+menu_pick_troops|Chi sceglierai a venire insieme a te nella missione? Fino ad ora hai scelto {reg0} compagni. Puoi scegliere fino a 10 truppe.
 mno_go_forward|Chiudi la selezione dei compagni e procedi.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Inginocchiati e rendi omaggio.
@@ -359,7 +359,7 @@ menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non po
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+menu_build_your_scene|Qui puoi costruire la tua propria scena da battaglia, usando una delle slot qua sotto e l'Editor del gioco (Devi prima scrocettare il quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare le tue scene che hai costruito (nominate file sco dalla cartella TLD/SceneObj) al team di sviluppo di TLD, e, se la tua scena è buona abbastanza, potrà apparire nelle prossime versioni della mod come un luogo da battaglia a caso!^^ Prova anche in specificare quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: prova ad evitare acqua profonda, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi ch vadano, e quindi mettere l'AI a vagare in altri posti.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8
 mno_scene1|Campo di battaglia 5 (scn_battlefield5.sco)
 mno_scene2|Campo di battaglia 6 (scn_battlefield6.sco)
 mno_scene3|Campo di battaglia 7 (scn_battlefield7.sco)

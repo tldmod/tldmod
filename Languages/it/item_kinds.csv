@@ -456,7 +456,7 @@ itm_mordor_cap_helm|Elmo da Capitano di Mordor
 itm_mordor_helm|Elmo di Mordor
 ; itm_black_num_helm|Black Numenorean Helm
 ; itm_mordor_sword|Bastard Sword of Mordor
-; itm_mordor_longsword|Sword of Mordor
+itm_mordor_longsword|Spada di Mordor
 ; itm_moria_armor_a|Moria Breast Harness
 ; itm_moria_armor_b|Moria Breast and Shoulders
 ; itm_moria_armor_c|Moria Orc Mail
@@ -467,21 +467,21 @@ itm_mordor_helm|Elmo di Mordor
 ; itm_moria_orc_shield_c|Moria Orc Shield
 ; itm_gundabad_armor_a|Gundabad Orc Rags
 ; itm_gundabad_armor_b|Gundabad Orc Fur
-; itm_gundabad_armor_c|Gundabad Orc Armor
-; itm_gundabad_armor_d|Gundabad Orc Armor
+itm_gundabad_armor_c|Armatura da Orco Gundabad
+itm_gundabad_armor_d|Armatura da Orco Gundabad
 ; itm_gundabad_armor_e|Gundabad Orc Heavy Armor
 ; itm_gundabad_helm_a|Gundabad Cap
-; itm_gundabad_helm_b|Gundabad Helm
-; itm_gundabad_helm_c|Gundabad Helm
-; itm_gundabad_helm_d|Gundabad Helm
+itm_gundabad_helm_b|Elmo Gundabad
+itm_gundabad_helm_c|Elmo Gundabad
+itm_gundabad_helm_d|Elmo Gundabad
 ; itm_gundabad_helm_e|Wargrider Helm
 ; itm_dunland_wolfboots|Dunland Wolfboots
-; itm_dunland_armor_a|Dunnish Fur Armor
-; itm_dunland_armor_b|Dunnish Fur Armor
-; itm_dunland_armor_c|Dunnish Fur Armor
-; itm_dunland_armor_d|Dunnish Fur Armor
-; itm_dunland_armor_e|Dunnish Fur Armor
-; itm_dunland_armor_g|Dunnish Fur Armor
+itm_dunland_armor_a|Armatura di pelle Dunniana.
+itm_dunland_armor_b|Armatura di pelle Dunniana.
+itm_dunland_armor_c|Armatura di pelle Dunniana.
+itm_dunland_armor_d|Armatura di pelle Dunniana.
+itm_dunland_armor_e|Armatura di pelle Dunniana.
+itm_dunland_armor_g|Armatura di pelle Dunniana.
 ; itm_dunland_armor_h|Dun Long Fur Armor
 ; itm_dunland_armor_i|Dunnish Hauberk
 ; itm_dunland_armor_j|Dunland Hauberk
@@ -491,8 +491,8 @@ itm_mordor_helm|Elmo di Mordor
 ; itm_dun_helm_c|Dunnish Tall Helm
 ; itm_dun_helm_d|Dunnish Tall Helm
 ; itm_dun_helm_e|Dun Tall War Helm
-; itm_dun_shield_a|Dunnish Shield
-; itm_dun_shield_b|Dunnish Shield
+itm_dun_shield_a|Scudo Dunniano
+itm_dun_shield_b|Scudo Dunniano
 ; itm_dun_berserker|Dunland Chieftain Sword
 ; itm_dunnish_antler_axe|Dunnish Antler Axe
 ; itm_dunnish_war_axe|Dunnish War Axe
@@ -568,7 +568,7 @@ itm_rohan_shield_g|Scudo Reale di Rohan
 ; itm_mirkwood_helm_d|Mirkwood Royal Archer Helm
 ; itm_mirkwood_boots|Mirkwood boots
 ; itm_mirkwood_leather_greaves|Mirkwood Leather Greaves
-; itm_harad_tunic|Harad Tunic
+itm_harad_tunic|Tunica Harad
 ; itm_harad_padded|Harondor Padded Armor
 ; itm_harad_hauberk|Harondor Hauberk
 ; itm_harad_lamellar|Harasjala Armor
@@ -581,7 +581,7 @@ itm_rohan_shield_g|Scudo Reale di Rohan
 ; itm_harad_scale|Harad Scale Armor
 ; itm_harad_tiger_scale|Tiger Guard Armor
 ; itm_harad_lion_scale|Lion Guard Armor
-; itm_harad_dragon_helm|Kiloka Helm
+itm_harad_dragon_helm|Elmo Kiloka
 ; itm_harad_cav_helm_a|Harondor Cavalry Helm
 ; itm_harad_cav_helm_b|Harondor Cavalry Helm
 ; itm_black_snake_helm|Maranka Helm
@@ -608,7 +608,7 @@ itm_rohan_shield_g|Scudo Reale di Rohan
 ; itm_harad_long_shield_c|Harad Sun Shield
 ; itm_harad_long_shield_d|Harad Snake Shield
 ; itm_harad_long_shield_e|Harad Snake Shield
-; itm_harad_shield_a|Harondor Shield
+itm_harad_shield_a|Scudo Harondor
 ; itm_harad_shield_b|Harondor Buckler
 ; itm_harad_shield_c|Harondor Buckler
 ; itm_harad_tribal_a|Far Harad Shield
@@ -863,12 +863,12 @@ itm_good_mace|Mazza
 ; itm_nazgul_sword|Nazgul Sword
 ; itm_cooking_cauldron|Cooking Cauldron
 ; itm_eorl_cavalry_sword|Sword of Eorl
-; itm_garlic_reward|Garlic
+itm_garlic_reward|Garlico
 ; itm_silmarillion_reward|Silmarillion
 ; itm_herbarium_reward|Middle Earth Herbarium
-; itm_book_of_moria|Book of Mazarbul
-; itm_ring_a_reward|Tulcarisil
-; itm_ring_b_reward|Finwarisil
+itm_book_of_moria|Libro di Mazarbul
+itm_ring_a_reward|Tulcarisil
+itm_ring_b_reward|Finwarisil
 ; itm_dale_bow_reward|Bow of Bard
 ; itm_explosive_reward|Isengard Mine
 ; itm_corsair_trident|Trident of Sea Fury
@@ -886,11 +886,11 @@ itm_isen_uruk_heavy_reward|Armatura da generale Uruk-hai
 ; itm_dale_armor_reward|Esgaroth Noble Gorget
 ; itm_leather_gloves_reward|Hunting Gloves
 ; itm_beorn_shield_reward|Woodmen Shield
-; itm_beorn_axe_reward|Bear Axe
+itm_beorn_axe_reward|Ascia d'Orso
 ; itm_moria_arrow_reward|Moria Poisoned Arrows
 ; itm_khamul_helm|Helm of Khamul
-; itm_gandstaff|Wizards Staff
-; itm_sarustaff|Wizards Staff
+itm_gandstaff|Bastone dello Stregone
+itm_sarustaff|Bastone dello Stregone
 ; itm_rohan_armor_th|Rohan Royal Armor
 ; itm_denethor_robe|Stewards Robe
 ; itm_prisoner_coll_chain|Prisoner Chains

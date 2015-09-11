@@ -116,10 +116,10 @@ dlga_companion_objection_response:close_window|ありがとう、{君/あなた}
 dlga_companion_objection_response:close_window.1|もう二度と起こらないように気を付けよう。
 dlga_companion_objection_response:close_window.2|{君/あなた}の意見は分かった{が/けれど}、今はかまっている暇はない{んだ/の}。
 dlga_companion_personalityclash2_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。 {君/あなた}ももうちょっと{reg11?彼女:彼}の事を 評価してやるべき{だ/だわ}。
-dlga_companion_personalityclash2_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?her:him}には、 私から言ってお{こう/くわ}。
+dlga_companion_personalityclash2_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?彼女:彼}には、 私から言ってお{こう/くわ}。
 dlga_companion_personalityclash2_response:close_window.2|つまらない喧嘩に付き合っている暇はない{んだ/の}。
 dlga_companion_personalityclash_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。 {君/あなた}ももうちょっと{reg11?彼女:彼}の事を 評価してやるべき{だ/だわ}。
-dlga_companion_personalityclash_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?her:him}には、 私から言ってお{こう/くわ}。
+dlga_companion_personalityclash_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?彼女:彼}には、 私から言ってお{こう/くわ}。
 dlga_companion_personalityclash_response:close_window.2|つまらない喧嘩に付き合っている暇はない{んだ/の}。
 dlga_companion_personalitymatch_response:close_window|それは良かった{/わね}。
 dlga_event_triggered:companion_faction_demolished|{s5}、 {reg6?我々:私}の故郷の{s6}がこの戦争に押し潰されそうになっています。 我々の部隊が休息をとって準備が出来次第、 あなたには{reg6?我々:私}の同胞たちを なんとか助ける事を考えて欲しい。

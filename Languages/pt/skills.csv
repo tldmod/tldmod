@@ -1,8 +1,8 @@
 skl_trade|Pechincheiro
-; skl_trade_desc|Levels of this skill make it possible to claim more equipment for less Resource Points. (Party skill)
+skl_trade_desc|Níveis dessa habilidade tornam possível reinvidicar mais equipamento por menos Pontos de Recurso. (Habilidade do Grupo)
 skl_leadership|Liderança
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. (Leader skill)
-skl_prisoner_management|Gestão de prisioneiros
+skl_leadership_desc|Cada ponto aumenta o número máximo de tropas que você pode comandar em 5, aumenta a moral do grupo e reduz os salários da tropa em 5%%. (Habilidade de Líder)
+skl_prisoner_management|Gestão de Prisioneiros
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. (Leader skill)
 skl_persuasion|Persuasão
 ; skl_persuasion_desc|This skill helps you make other people accept your point of view. (Personal skill)
@@ -13,7 +13,7 @@ skl_first_aid|Primeiros Socorros
 skl_surgery|Cirurgia
 ; skl_surgery_desc|Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)
 skl_wound_treatment|Tratamento de Feridas
-skl_wound_treatment_desc|A velocidade de cura do bando é aumentada em 20%% por level dessa habilidade. (Habilidade do Bando)
+skl_wound_treatment_desc|A velocidade de cura do grupo é aumentada em 20%% por nível dessa habilidade. (Habilidade do Grupo)
 skl_inventory_management|Gestão de inventário
 skl_inventory_management_desc|Aumenta a capacidade do inventário em +6 por cada level desta habilidade. (Habilidade do Líder)
 skl_spotting|Avistamento
